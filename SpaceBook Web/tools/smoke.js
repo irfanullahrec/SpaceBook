@@ -1,0 +1,130 @@
+﻿const fs = require('fs');
+const vm = require('vm');
+
+const path = require('path');
+const DIR = path.resolve(__dirname, '../js') + path.sep;
+const files = ['data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'dictionary_data.js', 'urdu_data.js', 'english_data.js', 'math_data.js', 'pakstudy_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js'];
+
+function makeEl(id) {
+  const style = {};
+  const el = {
+    _id: id, innerHTML: '', textContent: '', value: '', className: '', title: '', src: '', href: '',
+    style: new Proxy(style, { get: (t, k) => (k in t ? t[k] : ''), set: (t, k, v) => { t[k] = v; return true; } }),
+    classList: { add() { }, remove() { }, toggle() { }, contains() { return false; } },
+    dataset: {}, children: [], scrollHeight: 100, scrollTop: 0, offsetHeight: 100, checked: false, disabled: false,
+    addEventListener() { }, removeEventListener() { }, appendChild() { }, insertBefore() { }, removeChild() { }, remove() { },
+    setAttribute() { }, getAttribute() { return null; }, removeAttribute() { }, focus() { }, click() { }, blur() { },
+    querySelector() { return makeEl(); }, querySelectorAll() { return []; }, closest() { return null; },
+    getBoundingClientRect() { return { top: 0, left: 0, right: 0, bottom: 0, width: 0, height: 0 }; },
+    contains() { return false; }, cloneNode() { return makeEl(); }, matches() { return false; }
+  };
+  return el;
+}
+const registry = {};
+const documentStub = {
+  getElementById(id) { if (!registry[id]) registry[id] = makeEl(id); return registry[id]; },
+  querySelector() { return makeEl(); },
+  querySelectorAll() { return []; },
+  createElement() { return makeEl(); },
+  addEventListener() { }, removeEventListener() { },
+  body: makeEl('body'), documentElement: makeEl('html'), head: makeEl('head'),
+  location: { href: 'http://localhost/', search: '', hash: '' }
+};
+const windowStub = {
+  document: documentStub, location: documentStub.location,
+  localStorage: { getItem: () => null, setItem() { }, removeItem() { } },
+  sessionStorage: { getItem: () => null, setItem() { } },
+  open() { }, addEventListener() { }, removeEventListener() { },
+  requestAnimationFrame() { return 0; }, matchMedia: () => ({ matches: false, addEventListener() { } }),
+  navigator: { userAgent: 'smoke' }, innerWidth: 1400, innerHeight: 900
+};
+windowStub.window = windowStub;
+
+const sb = vm.createContext({
+  console, window: windowStub, document: documentStub,
+  localStorage: windowStub.localStorage, sessionStorage: windowStub.sessionStorage,
+  navigator: windowStub.navigator, location: documentStub.location,
+  setTimeout, clearTimeout, setInterval, clearInterval,
+  requestAnimationFrame: windowStub.requestAnimationFrame,
+  getComputedStyle: () => ({ getPropertyValue: () => '' }),
+  module: undefined, exports: undefined
+});
+const declared = new Set();
+for (const f of files) {
+  const code = fs.readFileSync(DIR + f, 'utf8');
+  const re = /^\s*(?:const|var|let)\s+([A-Za-z_$][\w$]*)/gm;
+  let d; while ((d = re.exec(code))) declared.add(d[1]);
+  vm.runInContext(code, sb, { filename: f, timeout: 60000 });
+}
+vm.runInContext('for (const n of ' + JSON.stringify([...declared]) + ') { try { globalThis[n] = eval(n); } catch (e) {} }', sb);
+// app.js declares functions / let state -> hoist those too
+{
+  const code = fs.readFileSync(DIR + 'app.js', 'utf8');
+  const names = new Set();
+  const re = /^\s*(?:function\s+([A-Za-z_$][\w$]*)|(?:const|let|var)\s+([A-Za-z_$][\w$]*))/gm;
+  let m; while ((m = re.exec(code))) names.add(m[1] || m[2]);
+  vm.runInContext(code, sb, { filename: 'app.js', timeout: 60000 });
+  vm.runInContext('for (const n of ' + JSON.stringify([...names]) + ') { try { globalThis[n] = eval(n); } catch (e) {} }', sb);
+}
+
+let fails = 0;
+function run(label, src) {
+  try { vm.runInContext(src, sb, { timeout: 20000 }); console.log('PASS  ' + label); }
+  catch (e) { fails++; console.log('FAIL  ' + label + ' -> ' + (e && e.message)); }
+}
+
+run("openSubject cls9 isl", `openSubject("cls9","cls9-isl")`);
+run("selectIslChapter(3)", `selectIslChapter(3)`);
+run("switchIslTab('exercise')", `switchIslTab('exercise')`);
+run("switchIslTab('slos')", `switchIslTab('slos')`);
+run("switchIslSloTab('slo-sq')", `switchIslSloTab('slo-sq')`);
+run("switchIslSloTab('slo-lq')", `switchIslSloTab('slo-lq')`);
+run("switchIslTab('ps-trans')", `switchIslTab('ps-trans')`);
+run("switchIslTab('video')", `switchIslTab('video')`);
+run("switchIslTab('pages')", `switchIslTab('pages')`);
+run("selectIslChapter(14)", `selectIslChapter(14)`);
+run("openSubject cls10 isl", `openSubject("cls10","cls10-isl")`);
+run("selectIslChapter(17)", `selectIslChapter(17)`);
+run("showWordMeaning", `showWordMeaning(document.createElement("span"))`);
+run("REGRESSION openSubject cls9 eng", `openSubject("cls9","cls9-eng")`);
+run("REGRESSION selectEngChapter(2)", `selectEngChapter(2)`);
+run("REGRESSION switchEngTab('reading')", `switchEngTab('reading')`);
+run("REGRESSION openSubject cls9 urdu", `openSubject("cls9","cls9-urdu")`);
+run("REGRESSION selectUrduChapter(1)", `selectUrduChapter(1)`);
+run("REGRESSION openSubject cls9 chem", `openSubject("cls9","cls9-chem")`);
+run("REGRESSION selectChemChapter(1)", `selectChemChapter(1)`);
+run("REGRESSION openSubject cls9 bio", `openSubject("cls9","cls9-bio")`);
+run("REGRESSION openSubject cls9 math", `openSubject("cls9","cls9-math")`);
+run("REGRESSION openSubject cls9 pakstudy", `openSubject("cls9","cls9-pakstudy")`);
+run("REGRESSION renderClasses", `renderClasses()`);
+run("REGRESSION handleGlobalSearch('islam')", `handleGlobalSearch("islam")`);
+run("REGRESSION handleGlobalSearch('daffodils')", `handleGlobalSearch("daffodils")`);
+run("REGRESSION handleGlobalSearch('iqbal')", `handleGlobalSearch("iqbal")`);
+
+// ---- Phase 2: Maaz feature ports (vocab / summaries / stats / helpers) ----
+run("PORT ENG_UNIT_VOCAB_WORDS loaded", `if (typeof ENG_UNIT_VOCAB_WORDS === 'undefined' || !ENG_UNIT_VOCAB_WORDS[2]) throw new Error('vocab lexicon missing');`);
+run("PORT lookupEngWord loaded", `if (typeof lookupEngWord !== 'function') throw new Error('lookupEngWord missing');`);
+run("PORT autoScrollToActiveTab defined", `if (typeof autoScrollToActiveTab !== 'function') throw new Error('missing');`);
+run("PORT getUrduChapterList length", `if (getUrduChapterList().length !== 15) throw new Error('got ' + getUrduChapterList().length);`);
+run("PORT eng tabs include English Summary", `openSubject("cls9","cls9-eng"); if (!/English Summary/.test($("engTabsBar").innerHTML)) throw new Error('en-sum tab missing');`);
+run("PORT switchEngTab('vocab') renders", `switchEngTab('vocab', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
+run("PORT switchEngTab('en-sum') renders", `switchEngTab('en-sum', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
+run("PORT switchEngTab('lesson') renders", `switchEngTab('lesson', 0); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
+run("PORT switchEngTab('urdu-trans') renders", `switchEngTab('urdu-trans', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
+run("PORT switchEngTab('pashto-trans') renders", `switchEngTab('pashto-trans', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
+run("PORT switchEngTab('video') renders", `switchEngTab('video', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
+run("PORT switchEngTab('urdu-sum') renders", `switchEngTab('urdu-sum', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
+run("PORT switchEngTab('pashto-sum') renders", `switchEngTab('pashto-sum', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
+run("PORT switchEngTab('slos') renders", `switchEngTab('slos', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
+run("PORT switchEngTab('exercise') renders", `switchEngTab('exercise', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
+run("PORT figurativeLines (unit 8)", `selectEngChapter(7); switchEngTab('exercise', 7); if (!/Figurative/.test($("engTabContent").innerHTML)) throw new Error('figurative block missing');`);
+run("PORT renderHome()", `renderHome()`);
+run("PORT renderBooksView()", `renderBooksView()`);
+run("PORT goToSubjects('cls9')", `goToSubjects('cls9')`);
+run("PORT goToSubjects cls9 lists Islamyat", `goToSubjects('cls9'); const h = (($("dashboard-body").innerHTML || '') + ($("page-content").innerHTML || '')); if (!/Islamyat/i.test(h)) throw new Error('isl subject not listed');`);
+run("PORT handleGlobalSearch('chemistry')", `handleGlobalSearch("chemistry")`);
+run("PORT handleGlobalSearch('solved')", `handleGlobalSearch("solved")`);
+run("PORT handleGlobalSearch no-results path (sanitize)", `handleGlobalSearch("zzzznotfoundqqq"); if (!/No results found/.test($("searchResultsDropdown").innerHTML)) throw new Error('no-results block missing');`);
+run("PORT checkPakStudySloMcq records stats", `openSubject("cls9","cls9-pakstudy"); switchPakStudySloTab('slo-mcqs'); globalThis.__saved = null; localStorage.setItem = (k, v) => { globalThis.__saved = v; }; checkPakStudySloMcq(0, 'a', 'b', encodeURIComponent('because')); if (!globalThis.__saved) throw new Error('stats not saved');`);
+console.log('state after tests = activeSubject=' + vm.runInContext('state.activeSubject', sb) + ' selectedIslChapter=' + vm.runInContext('state.selectedIslChapter', sb));
+process.exit(fails ? 1 : 0);

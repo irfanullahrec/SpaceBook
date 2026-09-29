@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuition Hub — Learning Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260928_1">
+</head>
+<body>
+
+  <!-- Mobile Sidebar Overlay -->
+  <div id="overlay"></div>
+
+  <!-- ══════════════════════════════════════
+       LEFT SIDEBAR (DRAWER)
+       ══════════════════════════════════════ -->
+  <aside id="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">🎓</div>
+      <div>
+        <div class="logo-name">TuitionHub</div>
+        <span class="logo-sub">Learning Portal</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-label">Main Menu</div>
+      <a class="nav-link active" data-page="home">
+        <span class="nav-icon">🏠</span> Home (Dashboard)
+      </a>
+      <a class="nav-link" data-page="subjects">
+        <span class="nav-icon">📖</span> Subjects &amp; Units
+      </a>
+      <a class="nav-link" data-page="books">
+        <span class="nav-icon">📚</span> Textbooks (PDFs)
+      </a>
+      <a class="nav-link" data-page="roadmap">
+        <span class="nav-icon">🗺️</span> Exam Roadmap
+      </a>
+      <a class="nav-link" data-page="study-plan">
+        <span class="nav-icon">📅</span> Study Plan
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      TuitionHub &copy; 2026<br>
+      <span style="color:#64748b;">Academic Year 2025–26 · KPK Board</span>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════════
+       FIXED TOP HEADER
+       ══════════════════════════════════════ -->
+  <header id="top-header">
+    <div class="header-left">
+      <!-- Fixed three lines hamburger button -->
+      <button class="hamburger-btn" id="hamburger" aria-label="Open navigation menu" title="Open Navigation Menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Brand title in header -->
+      <div class="header-brand" onclick="setActiveNav('home'); renderHome();">
+        <div class="header-brand-icon">🎓</div>
+        <div class="header-brand-text">
+          <span class="header-brand-title">TuitionHub</span>
+          <span class="header-brand-sub">KPK Curriculum Portal</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Center Search Bar in Fixed Header -->
+    <div class="header-center">
+      <div class="header-search-box">
+        <span class="header-search-icon">🔍</span>
+        <input type="text" id="globalHubSearch" placeholder="Search Class 9, 10, 11, 12 subjects, chapters, MCQs..."
+               oninput="handleGlobalSearch(this.value)">
+        <button id="clearSearchBtn" onclick="clearGlobalSearch()" style="display:none;" title="Clear search">✕</button>
+        <div id="searchResultsDropdown" class="header-search-dropdown" style="display:none;"></div>
+      </div>
+    </div>
+
+    <!-- Right Header Badges & Actions -->
+    <div class="header-right">
+      <div class="header-badge streak-badge" title="Consecutive active study days">
+        <span class="badge-icon">🔥</span>
+        <span class="badge-text" id="headerStreakText">5-Day Streak</span>
+      </div>
+      <div class="header-badge board-badge" title="Official Khyber Pakhtunkhwa Textbook Board alignment">
+        <span class="badge-icon">🏛️</span>
+        <span class="badge-text">KPK Board</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════
+       HORIZONTAL NAVIGATION TABS BAR
+       ══════════════════════════════════════ -->
+  <nav id="horizontal-tabs-bar">
+    <div class="tabs-container">
+      <a class="nav-tab active" data-page="home">
+        <span class="nav-icon">🏠</span> <span>Home (Dashboard)</span>
+      </a>
+      <a class="nav-tab" data-page="subjects">
+        <span class="nav-icon">📖</span> <span>Subjects &amp; Units</span>
+      </a>
+      <a class="nav-tab" data-page="books">
+        <span class="nav-icon">📚</span> <span>Textbooks (PDFs)</span>
+      </a>
+      <a class="nav-tab" data-page="roadmap">
+        <span class="nav-icon">🗺️</span> <span>Exam Roadmap</span>
+      </a>
+      <a class="nav-tab" data-page="study-plan">
+        <span class="nav-icon">📅</span> <span>Study Plan</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       MAIN WRAPPER & PAGE CONTENT
+       ══════════════════════════════════════ -->
+  <div id="main-wrapper">
+
+    <!-- Subpage contextual header / breadcrumbs (populated dynamically on subpages) -->
+    <div id="subpage-nav-bar" style="display:none;">
+      <div class="breadcrumb" id="breadcrumb"></div>
+      <div class="subpage-title-wrap" id="subpage-title-wrap">
+        <div>
+          <h2 id="dash-title">Subjects</h2>
+          <p id="dash-sub">Choose a class to explore</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN PAGE CONTENT CONTAINER -->
+    <main id="page-content">
+      <div id="dashboard-body"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div>TuitionHub &copy; 2026 · Khyber Pakhtunkhwa Textbook Board Curriculum Portal</div>
+      <span>Empowering students to achieve their best in Board Exams 🚀</span>
+    </footer>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SQ / LQ / MCQ / QUICK PRACTICE MODAL
+       ══════════════════════════════════════ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalHeader">Questions</h3>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Scripts
+       Load order matters: the core registry (js/data.js) first, then every
+       per-subject data file. Each subject file only mutates DATA, so each
+       contributor works in exactly one file (see CONTRIBUTING.md). -->
+  <script src="js/data.js"></script>
+  <script src="js/data_chem.js"></script>
+  <script src="js/data_phys.js"></script>
+  <script src="js/data_eng.js"></script>
+  <script src="js/data_bio.js"></script>
+  <script src="js/dictionary_data.js"></script>
+  <script src="js/urdu_data.js"></script>
+  <script src="js/english_data.js"></script>
+  <script src="js/math_data.js"></script>
+  <script src="js/pakstudy_data.js"></script>
+  <script src="js/bio_data.js"></script>
+  <script src="js/islamyat_data.js"></script>
+  <script src="js/islamyat_10_data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

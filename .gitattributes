@@ -1,0 +1,33 @@
+# ==========================================================================
+# Line-ending policy  (repo root)
+#
+# Everyone commits LF.  Windows/macOS/Linux contributors therefore produce
+# byte-identical blobs and git can merge/rebase their work without the
+# whole-file "every line changed" diffs that CRLF drift causes.
+# ==========================================================================
+* text=auto eol=lf
+
+# --- never convert these -------------------------------------------------
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.svg   text
+*.pdf   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary
+*.mp3   binary
+*.mp4   binary
+*.wav   binary
+*.zip   binary
+*.jar   binary
+*.keystore binary
+
+# --- Windows-only scripts keep CRLF --------------------------------------
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
