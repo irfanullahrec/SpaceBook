@@ -348,6 +348,86 @@ ul { list-style: none; }
 }
 
 
+/* ── COMPACT CLASSES GRID (ALL 15 GRADES IN ONE LOOK) ── */
+.classes-compact-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.55rem;
+  margin: 0.25rem 0 1.5rem 0;
+}
+.class-card-compact {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 9px;
+  padding: 0.5rem 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  user-select: none;
+}
+.class-card-compact:hover {
+  border-color: #0284c7;
+  background: #f0f9ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.16);
+}
+.class-card-compact:active {
+  transform: translateY(0);
+}
+.ccc-icon {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  background: #f1f5f9;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  transition: background 0.18s;
+}
+.class-card-compact:hover .ccc-icon {
+  background: #e0f2fe;
+}
+.ccc-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ccc-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ccc-badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #0284c7;
+  margin-top: 0.1rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .classes-compact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .classes-compact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .section-title { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 1rem; }
 .card-grid {
   display: grid;

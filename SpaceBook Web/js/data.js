@@ -35,6 +35,72 @@ const DATA = {
   ],
   "classes": [
     {
+      "id": "cls-pg",
+      "name": "Play Group",
+      "emoji": "🎨",
+      "subjects": 4
+    },
+    {
+      "id": "cls-nur",
+      "name": "Nursery",
+      "emoji": "🧸",
+      "subjects": 4
+    },
+    {
+      "id": "cls-kg",
+      "name": "KG",
+      "emoji": "🎈",
+      "subjects": 4
+    },
+    {
+      "id": "cls1",
+      "name": "Class 1",
+      "emoji": "✏️",
+      "subjects": 5
+    },
+    {
+      "id": "cls2",
+      "name": "Class 2",
+      "emoji": "📖",
+      "subjects": 5
+    },
+    {
+      "id": "cls3",
+      "name": "Class 3",
+      "emoji": "📚",
+      "subjects": 5
+    },
+    {
+      "id": "cls4",
+      "name": "Class 4",
+      "emoji": "🎒",
+      "subjects": 6
+    },
+    {
+      "id": "cls5",
+      "name": "Class 5",
+      "emoji": "🔬",
+      "subjects": 6
+    },
+    {
+      "id": "cls6",
+      "name": "Class 6",
+      "emoji": "📐",
+      "subjects": 7
+    },
+    {
+      "id": "cls7",
+      "name": "Class 7",
+      "emoji": "🧪",
+      "subjects": 7
+    },
+    {
+      "id": "cls8",
+      "name": "Class 8",
+      "emoji": "⚛️",
+      "subjects": 7
+    },
+    {
       "id": "cls9",
       "name": "Class 9",
       "emoji": "🏫",
@@ -49,17 +115,99 @@ const DATA = {
     {
       "id": "cls11",
       "name": "Class 11",
-      "emoji": "🏫",
+      "emoji": "🏛️",
       "subjects": 5
     },
     {
       "id": "cls12",
       "name": "Class 12",
-      "emoji": "🏫",
+      "emoji": "🎓",
       "subjects": 6
     }
   ],
   "subjects": {
+    "cls-pg": [
+      { "id": "cls-pg-eng",  "name": "English Basics", "nameUrdu": "بنیادی انگریزی", "emoji": "🔤", "chapters": 8 },
+      { "id": "cls-pg-urdu", "name": "Urdu Haroof",    "nameUrdu": "حروفِ تہجی",     "emoji": "📗", "chapters": 8 },
+      { "id": "cls-pg-math", "name": "Basic Math",     "nameUrdu": "بنیادی ریاضی",   "emoji": "🔢", "chapters": 8 },
+      { "id": "cls-pg-art",  "name": "Art & Rhymes",   "nameUrdu": "رنگ و نظمیں",    "emoji": "🎨", "chapters": 6 }
+    ],
+    "cls-nur": [
+      { "id": "cls-nur-eng",  "name": "English",           "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 10 },
+      { "id": "cls-nur-urdu", "name": "Urdu",              "nameUrdu": "اردو",           "emoji": "📗", "chapters": 10 },
+      { "id": "cls-nur-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "🔢", "chapters": 10 },
+      { "id": "cls-nur-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌍", "chapters": 8 }
+    ],
+    "cls-kg": [
+      { "id": "cls-kg-eng",  "name": "English",           "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 12 },
+      { "id": "cls-kg-urdu", "name": "Urdu",              "nameUrdu": "اردو",           "emoji": "📗", "chapters": 12 },
+      { "id": "cls-kg-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "🔢", "chapters": 12 },
+      { "id": "cls-kg-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌱", "chapters": 10 }
+    ],
+    "cls1": [
+      { "id": "cls1-eng",  "name": "English",           "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 12 },
+      { "id": "cls1-urdu", "name": "Urdu",              "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 12 },
+      { "id": "cls1-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 10 },
+      { "id": "cls1-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌍", "chapters": 10 },
+      { "id": "cls1-isl",  "name": "Islamyat",          "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 }
+    ],
+    "cls2": [
+      { "id": "cls2-eng",  "name": "English",           "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 12 },
+      { "id": "cls2-urdu", "name": "Urdu",              "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 12 },
+      { "id": "cls2-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 10 },
+      { "id": "cls2-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌍", "chapters": 10 },
+      { "id": "cls2-isl",  "name": "Islamyat",          "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 }
+    ],
+    "cls3": [
+      { "id": "cls3-eng",  "name": "English",         "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 14 },
+      { "id": "cls3-urdu", "name": "Urdu",            "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 14 },
+      { "id": "cls3-math", "name": "Mathematics",     "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 10 },
+      { "id": "cls3-sci",  "name": "General Science", "nameUrdu": "جنرل سائنس",     "emoji": "🔬", "chapters": 10 },
+      { "id": "cls3-isl",  "name": "Islamyat",        "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 }
+    ],
+    "cls4": [
+      { "id": "cls4-eng",  "name": "English",         "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 14 },
+      { "id": "cls4-urdu", "name": "Urdu",            "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 14 },
+      { "id": "cls4-math", "name": "Mathematics",     "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 10 },
+      { "id": "cls4-sci",  "name": "General Science", "nameUrdu": "جنرل سائنس",     "emoji": "🔬", "chapters": 10 },
+      { "id": "cls4-sst",  "name": "Social Studies",  "nameUrdu": "معاشرتی علوم",   "emoji": "🗺️", "chapters": 8 },
+      { "id": "cls4-isl",  "name": "Islamyat",        "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 }
+    ],
+    "cls5": [
+      { "id": "cls5-eng",  "name": "English",         "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 15 },
+      { "id": "cls5-urdu", "name": "Urdu",            "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 15 },
+      { "id": "cls5-math", "name": "Mathematics",     "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 10 },
+      { "id": "cls5-sci",  "name": "General Science", "nameUrdu": "جنرل سائنس",     "emoji": "🔬", "chapters": 10 },
+      { "id": "cls5-sst",  "name": "Social Studies",  "nameUrdu": "معاشرتی علوم",   "emoji": "🗺️", "chapters": 8 },
+      { "id": "cls5-isl",  "name": "Islamyat",        "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 }
+    ],
+    "cls6": [
+      { "id": "cls6-eng",  "name": "English",             "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 15 },
+      { "id": "cls6-urdu", "name": "Urdu",                "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 15 },
+      { "id": "cls6-math", "name": "Mathematics",         "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 12 },
+      { "id": "cls6-sci",  "name": "General Science",     "nameUrdu": "جنرل سائنس",     "emoji": "🔬", "chapters": 12 },
+      { "id": "cls6-hg",   "name": "History & Geography", "nameUrdu": "تاریخ و جغرافیہ", "emoji": "🌍", "chapters": 10 },
+      { "id": "cls6-comp", "name": "Computer Education",  "nameUrdu": "کمپیوٹر",        "emoji": "💻", "chapters": 8 },
+      { "id": "cls6-isl",  "name": "Islamyat",            "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 12 }
+    ],
+    "cls7": [
+      { "id": "cls7-eng",  "name": "English",             "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 15 },
+      { "id": "cls7-urdu", "name": "Urdu",                "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 15 },
+      { "id": "cls7-math", "name": "Mathematics",         "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 12 },
+      { "id": "cls7-sci",  "name": "General Science",     "nameUrdu": "جنرل سائنس",     "emoji": "🔬", "chapters": 12 },
+      { "id": "cls7-hg",   "name": "History & Geography", "nameUrdu": "تاریخ و جغرافیہ", "emoji": "🌍", "chapters": 10 },
+      { "id": "cls7-comp", "name": "Computer Education",  "nameUrdu": "کمپیوٹر",        "emoji": "💻", "chapters": 8 },
+      { "id": "cls7-isl",  "name": "Islamyat",            "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 12 }
+    ],
+    "cls8": [
+      { "id": "cls8-eng",  "name": "English",             "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 15 },
+      { "id": "cls8-urdu", "name": "Urdu",                "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 15 },
+      { "id": "cls8-math", "name": "Mathematics",         "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 12 },
+      { "id": "cls8-sci",  "name": "General Science",     "nameUrdu": "جنرل سائنس",     "emoji": "🔬", "chapters": 12 },
+      { "id": "cls8-hg",   "name": "History & Geography", "nameUrdu": "تاریخ و جغرافیہ", "emoji": "🌍", "chapters": 10 },
+      { "id": "cls8-comp", "name": "Computer Education",  "nameUrdu": "کمپیوٹر",        "emoji": "💻", "chapters": 8 },
+      { "id": "cls8-isl",  "name": "Islamyat",            "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 12 }
+    ],
     "cls9": [
       {
         "id": "cls9-math",

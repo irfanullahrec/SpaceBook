@@ -590,31 +590,24 @@ function renderClasses() {
     { label: "Subjects", active: true }
   ];
   pageContent().innerHTML = `
-    <div class="subjects-single-line-bar">
-      <div class="sslb-left">
-        <button class="sslb-back-btn" onclick="setActiveNav('home'); renderHome();" title="Back to Home">
-          <span class="back-arrow">←</span> Back to Home
-        </button>
-        <span class="sslb-sep">|</span>
-        <nav class="sslb-breadcrumbs" aria-label="breadcrumb">
-          <span class="sslb-crumb" onclick="setActiveNav('home'); renderHome();">Home</span>
-          <span class="sslb-arrow">›</span>
-          <span class="sslb-crumb active">Subjects &amp; Units</span>
-        </nav>
-        <span class="sslb-sep">|</span>
-        <div class="sslb-title-group">
-          <h2 class="sslb-title">📚 Select a Class</h2>
-        </div>
-      </div>
-      <div class="sslb-right">
-        <span class="sslb-badge">🏛️ KPK Textbook Board</span>
-      </div>
+    <!-- 1. All 15 Classes in One Look (Play Group to 12th) without scrolling down -->
+    <div class="classes-compact-grid">
+      ${DATA.classes.map(c => `
+        <div class="class-card-compact" onclick="goToSubjects('${c.id}')" title="Click to view ${c.name} subjects">
+          <div class="ccc-icon">${c.emoji}</div>
+          <div class="ccc-info">
+            <div class="ccc-name">${c.name}</div>
+            <div class="ccc-badge">${c.subjects} Subjects</div>
+          </div>
+        </div>`).join("")}
     </div>
-    <div class="class-overview-stats-grid">
+
+    <!-- 2. Statistical Cards below the classes (visible with scrolling down) -->
+    <div class="class-overview-stats-grid" style="margin-top: 1.5rem;">
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">🏫</div>
         <div class="csc-content">
-          <div class="csc-value">4 Academic Grades</div>
+          <div class="csc-value">15 Academic Grades</div>
           <div class="csc-label">Secondary &amp; Higher Secondary</div>
           <div class="csc-sub">Class 9, 10, 11 &amp; 12 KPK Board</div>
         </div>
@@ -635,19 +628,6 @@ function renderClasses() {
           <div class="csc-sub">Board exam preparation bank</div>
         </div>
       </div>
-    </div>
-    <div class="subjects-section-bar">
-      <div class="ssb-title">Select Your Academic Grade</div>
-      <div class="ssb-subtitle">Click on any class to view all enrolled subjects, chapters, and verified solutions</div>
-    </div>
-    <div class="card-grid">
-      ${DATA.classes.map(c => `
-        <div class="item-card" onclick="goToSubjects('${c.id}')">
-          <div class="card-emoji">${c.emoji}</div>
-          <div class="card-title">${c.name}</div>
-          <div class="card-sub">KPK Textbook Board</div>
-          <div class="card-pill">${c.subjects} Subjects</div>
-        </div>`).join("")}
     </div>`;
 }
 
