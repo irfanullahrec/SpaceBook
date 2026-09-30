@@ -592,14 +592,17 @@ function renderClasses() {
   pageContent().innerHTML = `
     <!-- 1. All 15 Classes in One Look (Play Group to 12th) without scrolling down -->
     <div class="classes-compact-grid">
-      ${DATA.classes.map(c => `
-        <div class="class-card-compact" onclick="goToSubjects('${c.id}')" title="Click to view ${c.name} subjects">
+      ${DATA.classes.map(c => {
+        const isUploaded = (c.id === "cls9");
+        return `
+        <div class="class-card-compact ${isUploaded ? 'ccc-uploaded' : 'ccc-pending'}" onclick="goToSubjects('${c.id}')" title="Click to view ${c.name} subjects">
           <div class="ccc-icon">${c.emoji}</div>
           <div class="ccc-info">
             <div class="ccc-name">${c.name}</div>
-            <div class="ccc-badge">${c.subjects} Subjects</div>
+            <div class="ccc-badge ${isUploaded ? 'ccc-badge-uploaded' : 'ccc-badge-pending'}">${isUploaded ? '9 Subjects · Uploaded' : 'Not Uploaded Yet'}</div>
           </div>
-        </div>`).join("")}
+        </div>`;
+      }).join("")}
     </div>
 
     <!-- 2. Statistical Cards below the classes (visible with scrolling down) -->
@@ -648,6 +651,75 @@ function goToSubjects(classId) {
     { label: "Subjects", onclick: () => renderClasses() },
     { label: cls.name,   active: true }
   ];
+
+  // If subjects are not uploaded yet for this class (only Class 9 is currently uploaded)
+  if (classId !== "cls9") {
+    pageContent().innerHTML = `
+      <!-- 1. Single-Line Consolidated Header Bar -->
+      <div class="subjects-single-line-bar">
+        <div class="sslb-left">
+          <button class="sslb-back-btn" onclick="renderClasses()" title="Back to All Classes">
+            <span class="back-arrow">←</span> Back to All Classes
+          </button>
+          <span class="sslb-sep">|</span>
+          <nav class="sslb-breadcrumbs" aria-label="breadcrumb">
+            <span class="sslb-crumb" onclick="setActiveNav('home'); renderHome();">Home</span>
+            <span class="sslb-arrow">›</span>
+            <span class="sslb-crumb" onclick="renderClasses();">Subjects</span>
+            <span class="sslb-arrow">›</span>
+            <span class="sslb-crumb active">${cls.name}</span>
+          </nav>
+          <span class="sslb-sep">|</span>
+          <div class="sslb-title-group">
+            <h2 class="sslb-title">${cls.emoji || "📚"} ${cls.name} — Subjects</h2>
+          </div>
+        </div>
+        <div class="sslb-right">
+          <span class="sslb-badge" style="background: rgba(245, 158, 11, 0.12); color: #d97706; border-color: rgba(245, 158, 11, 0.3);">⏳ Not Uploaded Yet</span>
+        </div>
+      </div>
+
+      <!-- 2. Prominent Not Uploaded Yet Notice Container -->
+      <div class="not-uploaded-container">
+        <div class="not-uploaded-card">
+          <div class="not-uploaded-icon-wrap">
+            <span class="not-uploaded-icon">⏳</span>
+          </div>
+          <div class="not-uploaded-badge">Curriculum In Preparation</div>
+          <h2 class="not-uploaded-title">${cls.name} — Subjects Not Uploaded Yet</h2>
+          <p class="not-uploaded-desc">
+            Official KPK Textbook Board syllabus, chapters, and solved textbook notes for <strong>${cls.name}</strong> have not been uploaded yet. Our academic team is actively digitizing verified textbooks and creating SLO-aligned question banks for this grade.
+          </p>
+
+          <div class="not-uploaded-details-box">
+            <div class="nud-item">
+              <div class="nud-label">Grade / Class</div>
+              <div class="nud-val">${cls.name}</div>
+            </div>
+            <div class="nud-item">
+              <div class="nud-label">Curriculum Authority</div>
+              <div class="nud-val">🏛️ KPK Textbook Board</div>
+            </div>
+            <div class="nud-item">
+              <div class="nud-label">Current Status</div>
+              <div class="nud-val status-pending">⏳ Pending Upload</div>
+            </div>
+          </div>
+
+          <div class="not-uploaded-actions">
+            <button class="not-uploaded-btn-primary" onclick="goToSubjects('cls9')">
+              <span>📖 Explore Available Class 9 Subjects (9 Subjects Uploaded)</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <button class="not-uploaded-btn-secondary" onclick="renderClasses()">
+              <span>← Choose Another Class</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+    return;
+  }
 
   // Calculate totals for class overview
   let totalUnits = 0;
@@ -924,6 +996,10 @@ function goToSubjects(classId) {
 
 // ─── SUBJECT ROUTER ──────────────────────
 function openSubject(classId, subjId) {
+  if (classId !== 'cls9') {
+    goToSubjects(classId);
+    return;
+  }
   const subs = DATA.subjects[classId] || [];
   const subj = subs.find(s => s.id === subjId);
   if (!subj) return;

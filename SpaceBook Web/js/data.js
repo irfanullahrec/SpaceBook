@@ -285,7 +285,6 @@ const DATA = {
         "name": "Physics",
         "emoji": "⚡",
         "chapters": 9,
-        "hasPhys": true,
         "hasPhys10": true
       },
       {
@@ -293,7 +292,6 @@ const DATA = {
         "name": "Chemistry",
         "emoji": "🧪",
         "chapters": 8,
-        "hasChem": true,
         "hasChem10": true
       },
       {
@@ -301,7 +299,6 @@ const DATA = {
         "name": "Biology",
         "emoji": "🧬",
         "chapters": 9,
-        "hasBio": true,
         "hasBio10": true
       },
       {
@@ -309,7 +306,6 @@ const DATA = {
         "name": "English",
         "emoji": "📖",
         "chapters": 15,
-        "hasEng": true,
         "hasEng10": true
       },
       {
@@ -323,7 +319,6 @@ const DATA = {
         "name": "Islamyat",
         "emoji": "🕌",
         "chapters": 18,
-        "hasIsl": true,
         "hasIsl10": true
       }
     ],
