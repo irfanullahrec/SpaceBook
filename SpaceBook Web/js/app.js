@@ -198,8 +198,8 @@ function autoScrollToActiveTab(targetEl) {
     const el = targetEl || document.querySelector('.chapter-nav-tabs, #engTabsBar, .bio-tabs-row');
     if (!el) return;
     
-    // Top headers total height is approx 110px. Add a 12px margin so tabs bar is fully visible
-    const topBarHeight = 122;
+    // Top header total height is now 56px. Add a 12px margin so tabs bar is fully visible
+    const topBarHeight = 68;
     const rect = el.getBoundingClientRect();
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const targetY = rect.top + scrollTop - topBarHeight;
