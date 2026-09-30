@@ -8588,7 +8588,6 @@ function openMathView(classId, subj) {
         <span class="mcb-name">${ch.title}</span>
         <span class="mcb-sub">${ch.pageRange || ''}</span>
       </span>
-      <span class="mcb-badge">${ch.badge || '✓ Solved'}</span>
     </button>`).join('');
 
   pageContent().innerHTML = `
@@ -8597,7 +8596,7 @@ function openMathView(classId, subj) {
         <div class="math-ch-sidebar-header">
           <button onclick="goToSubjects('${classId}')" class="math-sidebar-back-btn" title="Back to Subjects">←</button>
           <div class="math-sidebar-title-wrap">
-            <span class="math-sidebar-title">📐 KPK ${gradeLabel} Math</span>
+            <span class="math-sidebar-title">CHAPTERS</span>
             <span class="math-sidebar-sub">17 Complete Solved Units</span>
           </div>
         </div>
@@ -8707,7 +8706,7 @@ function renderMathChapter(index) {
   const pdfFile = 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
 
   area.innerHTML = `
-    <!-- Sleek Compact Chapter Header Bar -->
+    <!-- Sleek Chapter Header Bar with only Unit, Chapter Name, and Urdu Meaning -->
     <div class="math-compact-header-bar">
       <div class="mch-left">
         <span class="mch-unit-pill">Unit ${ch.number}</span>
@@ -8715,13 +8714,6 @@ function renderMathChapter(index) {
           <span class="mch-title">${ch.title}</span>
           ${ch.titleUrdu ? `<span class="mch-urdu">${ch.titleUrdu}</span>` : ''}
         </div>
-        <span class="mch-meta-badge">📖 ${totalSections} Topics · 💡 ${totalExamples} Examples · ✍️ ${totalExercises} Exercises</span>
-      </div>
-      <div class="mch-right">
-        <a href="${pdfFile}" target="_blank" class="mch-pdf-link" title="Open Official Textbook PDF">📥 PDF</a>
-        <button class="mch-back-btn" onclick="goToSubjects('${state.selectedClass || 'cls9'}')" title="Back to Subjects">
-          <span>←</span> Subjects
-        </button>
       </div>
     </div>
 
