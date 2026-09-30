@@ -265,143 +265,119 @@ function renderHome() {
     </div>`).join("");
 
   pageContent().innerHTML = `
-    <div class="home-container">
+    <div class="home-compact-universe">
 
-      <!-- 1. My Study & Performance Statistics Grid -->
-      <div>
-        <div class="dashboard-section-header">
-          <div>
-            <div class="dash-sec-title">📊 My Study Statistics &amp; Performance</div>
-            <div class="dash-sec-sub">Real-time tracking of questions studied, accuracy, and practice metrics</div>
-          </div>
-          <div style="font-size:0.8rem;color:var(--text-muted);">
-            Auto-saves with every question answered
+      <!-- 1. Header Bar -->
+      <div class="home-compact-bar">
+        <div class="hcb-left">
+          <span class="hcb-icon">📊</span>
+          <span class="hcb-title">My Study Statistics &amp; Performance Dashboard</span>
+        </div>
+        <span class="hcb-pill">⚡ Auto-saved Live Metrics</span>
+      </div>
+
+      <!-- 2. The 6 Performance Metrics in One Single Row -->
+      <div class="compact-analytics-grid">
+        <!-- Studied Questions -->
+        <div class="compact-analytics-card">
+          <div class="cac-icon-wrap" style="background: rgba(2, 132, 199, 0.1); color: #0284c7;">📝</div>
+          <div class="cac-content">
+            <div class="cac-label">Studied Qs</div>
+            <div class="cac-val" id="statStudiedVal">${stats.studiedQuestions}</div>
+            <div class="cac-sub">All Subjects</div>
           </div>
         </div>
 
-        <div class="analytics-grid">
-          <!-- Studied Questions -->
-          <div class="analytics-card card-studied">
-            <div class="analytics-card-header">
-              <span class="analytics-label">Studied Questions</span>
-              <div class="analytics-icon-box">📝</div>
-            </div>
-            <div class="analytics-val" id="statStudiedVal">${stats.studiedQuestions}</div>
-            <div class="analytics-footer-text">
-              <span>🎯 Practiced across all subjects</span>
-            </div>
+        <!-- Correct Answers -->
+        <div class="compact-analytics-card">
+          <div class="cac-icon-wrap" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">✅</div>
+          <div class="cac-content">
+            <div class="cac-label">Correct</div>
+            <div class="cac-val" id="statCorrectVal" style="color: #10b981;">${stats.correctAnswers}</div>
+            <div class="cac-sub">Concept Clarity</div>
           </div>
+        </div>
 
-          <!-- Correct Answers -->
-          <div class="analytics-card card-correct">
-            <div class="analytics-card-header">
-              <span class="analytics-label">Correct Answers</span>
-              <div class="analytics-icon-box">✅</div>
-            </div>
-            <div class="analytics-val" id="statCorrectVal" style="color:var(--emerald);">${stats.correctAnswers}</div>
-            <div class="analytics-footer-text">
-              <span>🌟 Strong conceptual clarity</span>
-            </div>
+        <!-- Incorrect Answers -->
+        <div class="compact-analytics-card">
+          <div class="cac-icon-wrap" style="background: rgba(244, 63, 94, 0.1); color: #f43f5e;">❌</div>
+          <div class="cac-content">
+            <div class="cac-label">Incorrect</div>
+            <div class="cac-val" id="statIncorrectVal" style="color: #f43f5e;">${stats.incorrectAnswers}</div>
+            <div class="cac-sub">Revision Queue</div>
           </div>
+        </div>
 
-          <!-- Incorrect Answers -->
-          <div class="analytics-card card-incorrect">
-            <div class="analytics-card-header">
-              <span class="analytics-label">Incorrect Answers</span>
-              <div class="analytics-icon-box">❌</div>
-            </div>
-            <div class="analytics-val" id="statIncorrectVal" style="color:var(--rose);">${stats.incorrectAnswers}</div>
-            <div class="analytics-footer-text">
-              <span>🔄 Logged for revision</span>
-            </div>
+        <!-- Accuracy Rate -->
+        <div class="compact-analytics-card">
+          <div class="cac-icon-wrap" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6;">🎯</div>
+          <div class="cac-content">
+            <div class="cac-label">Accuracy</div>
+            <div class="cac-val" id="statAccuracyVal" style="color: #8b5cf6;">${stats.accuracyRate}%</div>
+            <div class="cac-sub" style="color: ${accuracyColor}; font-weight:700;">${accuracyGrade}</div>
           </div>
+        </div>
 
-          <!-- Accuracy Rate -->
-          <div class="analytics-card card-accuracy">
-            <div class="analytics-card-header">
-              <span class="analytics-label">Accuracy Rate</span>
-              <div class="analytics-icon-box">🎯</div>
-            </div>
-            <div class="analytics-val" id="statAccuracyVal" style="color:var(--purple);">${stats.accuracyRate}%</div>
-            <div class="analytics-footer-text">
-              <strong style="color:${accuracyColor};">${accuracyGrade}</strong>
-            </div>
+        <!-- Daily Study Streak -->
+        <div class="compact-analytics-card">
+          <div class="cac-icon-wrap" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">🔥</div>
+          <div class="cac-content">
+            <div class="cac-label">Streak</div>
+            <div class="cac-val" style="color: #f59e0b;">${stats.streak} <span class="cac-unit">Days</span></div>
+            <div class="cac-sub">Keep Momentum</div>
           </div>
+        </div>
 
-          <!-- Daily Study Streak -->
-          <div class="analytics-card card-streak">
-            <div class="analytics-card-header">
-              <span class="analytics-label">Study Streak</span>
-              <div class="analytics-icon-box">🔥</div>
-            </div>
-            <div class="analytics-val" style="color:var(--amber);">${stats.streak} <span style="font-size:1.1rem;font-weight:700;">Days</span></div>
-            <div class="analytics-footer-text">
-              <span>🔥 Keep up the momentum</span>
-            </div>
-          </div>
-
-          <!-- Daily Study Time -->
-          <div class="analytics-card card-time">
-            <div class="analytics-card-header">
-              <span class="analytics-label">Daily Study Time</span>
-              <div class="analytics-icon-box">⏱️</div>
-            </div>
-            <div class="analytics-val" style="color:#4338ca;">${stats.todayMinutes} <span style="font-size:1.1rem;font-weight:700;">mins</span></div>
-            <div class="analytics-footer-text">
-              <span>📅 Recorded today</span>
-            </div>
+        <!-- Daily Study Time -->
+        <div class="compact-analytics-card">
+          <div class="cac-icon-wrap" style="background: rgba(99, 102, 241, 0.1); color: #6366f1;">⏱️</div>
+          <div class="cac-content">
+            <div class="cac-label">Study Time</div>
+            <div class="cac-val" style="color: #6366f1;">${stats.todayMinutes} <span class="cac-unit">mins</span></div>
+            <div class="cac-sub">Recorded Today</div>
           </div>
         </div>
       </div>
 
-      <!-- 2. Daily Study Statistics & Weekly Activity -->
-      <div class="daily-study-grid">
-        <!-- Weekly Practice Chart -->
-        <div class="chart-card">
-          <div class="chart-header">
-            <div class="chart-header-title">
-              <span>📈</span> 7-Day Study Practice &amp; Activity Statistics
-            </div>
-            <div class="chart-legend">
+      <!-- 3. Side-by-Side: 7-Day Chart & Daily Study Goal -->
+      <div class="compact-study-grid">
+        <!-- 7-Day Activity Chart -->
+        <div class="compact-chart-card">
+          <div class="ccc-header">
+            <div class="ccc-title"><span>📈</span> 7-Day Study Practice &amp; Activity Statistics</div>
+            <div class="ccc-legend">
               <span><span class="legend-dot" style="background:#0284c7;"></span> Past Days</span>
               <span><span class="legend-dot" style="background:#10b981;"></span> Today (Active)</span>
             </div>
           </div>
-          <div class="weekly-chart-wrap">
+          <div class="compact-weekly-chart-wrap">
             ${weeklyBarsHtml}
           </div>
         </div>
 
         <!-- Daily Target & Quick Action -->
-        <div class="daily-goal-card">
-          <div>
-            <div class="goal-header-title">
-              <span>🎯</span> Today's Study Goal
+        <div class="compact-goal-card">
+          <div class="cgc-top">
+            <div class="cgc-title-row">
+              <span class="cgc-title"><span>🎯</span> Today's Study Goal</span>
+              <span class="cgc-target-tag">Target: ${stats.dailyGoal} Qs</span>
             </div>
-            <div style="font-size:0.85rem;color:var(--text-muted);">
-              Daily target: Practice ${stats.dailyGoal} questions every day
-            </div>
-
-            <div class="goal-progress-wrap">
-              <div class="goal-stat-row">
+            <div class="cgc-progress-wrap">
+              <div class="cgc-stat-row">
                 <span>Completed Today</span>
-                <span style="color:var(--blue);">${stats.todayQuestions || 16} / ${stats.dailyGoal} Qs (${todayPercent}%)</span>
+                <span class="cgc-stat-val">${stats.todayQuestions || 16} / ${stats.dailyGoal} Qs (${todayPercent}%)</span>
               </div>
-              <div class="goal-bar-bg">
-                <div class="goal-bar-fill" style="width:${todayPercent}%"></div>
+              <div class="cgc-bar-bg">
+                <div class="cgc-bar-fill" style="width:${todayPercent}%"></div>
               </div>
             </div>
-
-            <div class="goal-tips">
-              💡 <strong>Tuition Tip:</strong> Regular daily practice of 20 questions boosts exam retention by over 80% for board exams.
+            <div class="cgc-tips">
+              💡 <strong>Tuition Tip:</strong> Daily practice of 20 questions boosts exam retention by over 80% for board exams.
             </div>
           </div>
-
-          <div style="margin-top:1.25rem;">
-            <button class="btn-hero-primary" style="width:100%;justify-content:center;" onclick="startQuickDrill()">
-              <span>🚀</span> Continue Daily Practice
-            </button>
-          </div>
+          <button class="cgc-drill-btn" onclick="startQuickDrill()">
+            <span>🚀</span> Continue Daily Practice
+          </button>
         </div>
       </div>
 
@@ -8580,6 +8556,7 @@ function getMathChapterList() {
 
 function openMathView(classId, subj) {
   state.activeSubject = 'math';
+  state.activeView = 'subject-detail';
   state.selectedMathChapter = state.selectedMathChapter || 0;
   state.activeMathTab = state.activeMathTab || 'lesson';
   state.activeMathEx = state.activeMathEx || '1.1';
@@ -8590,42 +8567,48 @@ function openMathView(classId, subj) {
   const gradeLabel = 'Grade 9';
   const pdfFile = 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
 
-  setDashHeader(`📐 ${subj.name} — ${gradeLabel}`, `KPK Textbook Board, Peshawar · 17 Units & Complete Solved Exercises &nbsp;|&nbsp; <a href="${pdfFile}" target="_blank" style="color:#0284c7;font-weight:700;text-decoration:underline;">📥 View/Download Official Math Book PDF</a>`);
-  setBreadcrumb([
+  // Explicitly hide the subpage navigation bar & breadcrumbs banner as requested
+  const subNavBar = $("subpage-nav-bar");
+  if (subNavBar) subNavBar.style.display = "none";
+  const dashHeader = $("dash-header");
+  if (dashHeader) dashHeader.style.display = "none";
+
+  currentNavCrumbs = [
     { label: 'Home',     onclick: () => { setActiveNav('home'); renderHome(); } },
     { label: 'Subjects', onclick: () => renderClasses() },
     { label: cls.name,   onclick: () => goToSubjects(classId) },
     { label: subj.name,  active: true }
-  ]);
+  ];
 
   const chapBtns = chList.map((ch, i) => `
-    <button class="bio-ch-btn ${i === state.selectedMathChapter ? 'active' : ''}" id="math-btn-${i}"
+    <button class="bio-ch-btn math-ch-btn ${i === state.selectedMathChapter ? 'active' : ''}" id="math-btn-${i}"
             onclick="selectMathChapter(${i})">
-      <span class="ch-btn-num" style="background:#0284c7;color:#fff;">${ch.number}</span>
-      <span class="ch-btn-info">
-        <span class="ch-btn-name">${ch.title}</span>
-        <span class="ch-btn-sub">${ch.pageRange || ''}</span>
+      <span class="mcb-num">${ch.number}</span>
+      <span class="mcb-info">
+        <span class="mcb-name">${ch.title}</span>
+        <span class="mcb-sub">${ch.pageRange || ''}</span>
       </span>
-      <span class="ch-btn-status" style="background:#dcfce7;color:#15803d;">
-        ${ch.badge || '✅ Complete'}
-      </span>
+      <span class="mcb-badge">${ch.badge || '✓ Solved'}</span>
     </button>`).join('');
 
   pageContent().innerHTML = `
-    <div class="bio-view">
-      <div class="bio-ch-sidebar">
-        <div class="bio-ch-sidebar-header" style="background:linear-gradient(135deg,#1e1b4b,#312e81);color:#fff;box-shadow:0 2px 8px rgba(30,27,75,0.25);">
-          <button onclick="goToSubjects('${classId}')" class="sidebar-back-icon-btn" title="Back to Subjects" style="background:rgba(255,255,255,0.2);color:#fff;border:1px solid rgba(255,255,255,0.35);">←</button>
-          <span>📐 KPK ${gradeLabel} Mathematics</span>
+    <div class="math-unified-view">
+      <div class="math-ch-sidebar">
+        <div class="math-ch-sidebar-header">
+          <button onclick="goToSubjects('${classId}')" class="math-sidebar-back-btn" title="Back to Subjects">←</button>
+          <div class="math-sidebar-title-wrap">
+            <span class="math-sidebar-title">📐 KPK ${gradeLabel} Math</span>
+            <span class="math-sidebar-sub">17 Complete Solved Units</span>
+          </div>
         </div>
-        <div class="bio-ch-list">${chapBtns}</div>
-        <div style="padding:1rem;background:#f8fafc;border-top:1px solid var(--border);text-align:center;">
-          <a href="${pdfFile}" target="_blank" style="display:block;width:100%;padding:0.55rem;background:#0284c7;color:#fff;border-radius:6px;font-weight:700;font-size:0.82rem;text-decoration:none;box-shadow:0 2px 6px rgba(2,132,199,0.3);">
-            📥 Download Official PDF Book
+        <div class="math-ch-list">${chapBtns}</div>
+        <div class="math-sidebar-footer">
+          <a href="${pdfFile}" target="_blank" class="math-pdf-btn">
+            <span>📥</span> Official Math Book PDF
           </a>
         </div>
       </div>
-      <div class="bio-topic-area" id="mathTopicArea"></div>
+      <div class="math-topic-area" id="mathTopicArea"></div>
     </div>`;
 
   renderMathChapter(state.selectedMathChapter);
@@ -8633,7 +8616,7 @@ function openMathView(classId, subj) {
 
 function selectMathChapter(index) {
   state.selectedMathChapter = index;
-  document.querySelectorAll(".bio-ch-btn").forEach((btn, i) =>
+  document.querySelectorAll(".bio-ch-btn, .math-ch-btn").forEach((btn, i) =>
     btn.classList.toggle("active", i === index));
   const chList = getMathChapterList();
   const ch = chList[index];
@@ -8645,7 +8628,7 @@ function selectMathChapter(index) {
 
 function switchMathTab(tabName, skipScroll) {
   state.activeMathTab = tabName;
-  document.querySelectorAll(".math-top-tab").forEach(btn =>
+  document.querySelectorAll(".math-top-tab, .math-tab-btn, .bio-tab-btn").forEach(btn =>
     btn.classList.toggle("active", btn.dataset.tab === tabName));
 
   const chList = getMathChapterList();
@@ -8665,12 +8648,7 @@ function switchMathTab(tabName, skipScroll) {
     container.innerHTML = renderMathFormulaSheet(ch);
   }
 
-  if (!skipScroll) {
-    const activeBtn = document.querySelector(`.math-top-tab[data-tab="${tabName}"]`);
-    if (activeBtn) {
-      setTimeout(() => autoScrollToActiveTab(activeBtn), 50);
-    }
-  }
+  container.scrollTop = 0;
 }
 
 // ─── MATHEMATICS ACCORDION TOGGLING LOGIC ────────
@@ -8726,53 +8704,48 @@ function renderMathChapter(index) {
   const totalExamples = ch.workedExamples ? ch.workedExamples.length : 0;
   const totalSections = ch.sections ? ch.sections.length : 0;
   const mcqCount = (ch.slos && ch.slos.mcqs) ? ch.slos.mcqs.length : 0;
+  const pdfFile = 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
 
   area.innerHTML = `
-    <!-- Top Chapter Header Banner with High-Contrast Navy/Indigo Palette -->
-    <div class="chapter-title-bar math-chapter-header">
-      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;width:100%;">
-        <div>
-          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.35rem;">
-            <span class="math-badge" style="background:#38bdf8;color:#082f49;">Unit ${ch.number}</span>
-            <span style="color:#e0f2fe;font-size:0.88rem;font-weight:600;">KPK Board Textbook · ${ch.pageRange || ''}</span>
-          </div>
-          <h2 style="color:#ffffff;font-size:1.8rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:0.3rem;">
-            Unit ${ch.number}: ${ch.title}
-          </h2>
-          <div style="direction:rtl;text-align:left;color:#93c5fd;font-family:'Jameel Noori Nastaleeq','Segoe UI',serif;font-size:1.15rem;margin-bottom:0.4rem;">
-            ${ch.titleUrdu || ''}
-          </div>
-          <p style="color:#bae6fd;font-size:0.86rem;margin:0;">
-            ${ch.description || ''} · ${totalSections} Concept Topics · ${totalExamples} Solved Examples · ${totalExercises} Solved Exercises
-          </p>
+    <!-- Sleek Compact Chapter Header Bar -->
+    <div class="math-compact-header-bar">
+      <div class="mch-left">
+        <span class="mch-unit-pill">Unit ${ch.number}</span>
+        <div class="mch-titles">
+          <span class="mch-title">${ch.title}</span>
+          ${ch.titleUrdu ? `<span class="mch-urdu">${ch.titleUrdu}</span>` : ''}
         </div>
-        <button class="btn-back-sm" onclick="goToSubjects('${state.selectedClass || 'cls9'}')" style="background:#ffffff;color:#1e1b4b;font-weight:800;border:none;box-shadow:0 2px 10px rgba(0,0,0,0.15);padding:0.55rem 1.15rem;border-radius:8px;cursor:pointer;transition:all 0.2s;">
-          <span class="back-arrow" style="margin-right:4px;">←</span> Back to Subjects
+        <span class="mch-meta-badge">📖 ${totalSections} Topics · 💡 ${totalExamples} Examples · ✍️ ${totalExercises} Exercises</span>
+      </div>
+      <div class="mch-right">
+        <a href="${pdfFile}" target="_blank" class="mch-pdf-link" title="Open Official Textbook PDF">📥 PDF</a>
+        <button class="mch-back-btn" onclick="goToSubjects('${state.selectedClass || 'cls9'}')" title="Back to Subjects">
+          <span>←</span> Subjects
         </button>
       </div>
     </div>
 
-    <!-- Chapter Section Navigation Tabs (Pedagogical sequence: Concepts -> Examples BEFORE Exercises -> Solved Exercises -> SLOs -> Formulas) -->
-    <div class="chapter-nav-tabs" style="border-bottom: 2px solid #38bdf8; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px;">
-      <button class="bio-tab-btn math-top-tab ${state.activeMathTab === 'lesson' ? 'active' : ''}" data-tab="lesson" onclick="switchMathTab('lesson')">
-        📖 1. Lesson &amp; Concepts (${totalSections})
+    <!-- Chapter Section Navigation Tabs -->
+    <div class="math-nav-tabs">
+      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'lesson' ? 'active' : ''}" data-tab="lesson" onclick="switchMathTab('lesson')">
+        📖 1. Lessons &amp; Concepts (${totalSections})
       </button>
-      <button class="bio-tab-btn math-top-tab ${state.activeMathTab === 'examples' ? 'active' : ''}" data-tab="examples" onclick="switchMathTab('examples')">
+      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'examples' ? 'active' : ''}" data-tab="examples" onclick="switchMathTab('examples')">
         💡 2. Step-by-Step Examples (${totalExamples})
       </button>
-      <button class="bio-tab-btn math-top-tab ${state.activeMathTab === 'exercises' ? 'active' : ''}" data-tab="exercises" onclick="switchMathTab('exercises')">
+      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'exercises' ? 'active' : ''}" data-tab="exercises" onclick="switchMathTab('exercises')">
         ✍️ 3. Solved Exercises (${totalExercises})
       </button>
-      <button class="bio-tab-btn math-top-tab ${state.activeMathTab === 'slos' ? 'active' : ''}" data-tab="slos" onclick="switchMathTab('slos')">
-        🎯 4. Official SLOs &amp; MCQs
+      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'slos' ? 'active' : ''}" data-tab="slos" onclick="switchMathTab('slos')">
+        🎯 4. Official SLOs &amp; MCQs (${mcqCount})
       </button>
-      <button class="bio-tab-btn math-top-tab ${state.activeMathTab === 'formulas' ? 'active' : ''}" data-tab="formulas" onclick="switchMathTab('formulas')">
-        📐 5. Formula &amp; Rules Sheet
+      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'formulas' ? 'active' : ''}" data-tab="formulas" onclick="switchMathTab('formulas')">
+        📐 5. Formulas &amp; Summary
       </button>
     </div>
 
-    <!-- Main Dynamic Tab Content -->
-    <div id="mathTabContent" style="margin-top:1.5rem;"></div>
+    <!-- Main Dynamic Tab Content (with internal smooth scrollbar) -->
+    <div id="mathTabContent" class="math-tab-content-scroll"></div>
   `;
 
   switchMathTab(state.activeMathTab || 'lesson', true);
