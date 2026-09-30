@@ -18,6 +18,7 @@ let state = {
   selectedMathChapter: 0,
   activeMathTab: 'lesson',
   activeMathEx: '1.1',
+  mathTopicLayout: 'list',
   selectedPakStudyChapter: 0,
   activePakStudyTab: 'sections',
   activePakStudySloTab: 'slo-mcqs',
@@ -8825,7 +8826,20 @@ function switchMathTab(tabName, skipScroll) {
     container.innerHTML = renderMathFormulaSheet(ch);
   }
 
+  container.classList.toggle("math-grid-layout", state.mathTopicLayout === "grid");
   container.scrollTop = 0;
+}
+
+function setMathTopicLayout(mode) {
+  state.mathTopicLayout = mode;
+  const container = $("mathTabContent");
+  if (container) {
+    container.classList.toggle("math-grid-layout", mode === "grid");
+  }
+  const listBtn = $("mathListViewBtn");
+  const gridBtn = $("mathGridViewBtn");
+  if (listBtn) listBtn.classList.toggle("active", mode === "list");
+  if (gridBtn) gridBtn.classList.toggle("active", mode === "grid");
 }
 
 // ─── MATHEMATICS ACCORDION TOGGLING LOGIC ────────
@@ -8884,13 +8898,23 @@ function renderMathChapter(index) {
   const pdfFile = 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
 
   area.innerHTML = `
-    <!-- Sleek Chapter Header Bar with only Unit, Chapter Name, and Urdu Meaning -->
+    <!-- Sleek Chapter Header Bar with Unit, Chapter Name, Urdu Meaning & Layout Switcher -->
     <div class="math-compact-header-bar">
       <div class="mch-left">
         <span class="mch-unit-pill">Unit ${ch.number}</span>
         <div class="mch-titles">
           <span class="mch-title">${ch.title}</span>
           ${ch.titleUrdu ? `<span class="mch-urdu">${ch.titleUrdu}</span>` : ''}
+        </div>
+      </div>
+      <div class="mch-right">
+        <div class="math-view-switcher" role="group" aria-label="Layout View">
+          <button class="math-view-btn ${state.mathTopicLayout !== 'grid' ? 'active' : ''}" id="mathListViewBtn" onclick="setMathTopicLayout('list')" title="List View (1 card per row)">
+            <span>☰</span> List View
+          </button>
+          <button class="math-view-btn ${state.mathTopicLayout === 'grid' ? 'active' : ''}" id="mathGridViewBtn" onclick="setMathTopicLayout('grid')" title="Grid View (3 cards per row)">
+            <span>⊞</span> Grid View
+          </button>
         </div>
       </div>
     </div>
@@ -8957,17 +8981,7 @@ function renderMathLesson(ch) {
   `).join('');
 
   return `
-    <div id="mathLessonList">
-      <div class="math-toolbar">
-        <div style="display:flex;align-items:center;gap:0.5rem;">
-          <span style="font-size:1.25rem;">📖</span>
-          <span style="font-size:0.92rem;font-weight:700;color:#1e3a8a;">Lesson Reading &amp; Theory: Click any topic to expand</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:0.5rem;">
-          <button class="math-toolbar-btn" onclick="expandAllMathCards('mathLessonList')">➕ Expand All Topics</button>
-          <button class="math-toolbar-btn" onclick="collapseAllMathCards('mathLessonList')">➖ Collapse All</button>
-        </div>
-      </div>
+    <div id="mathLessonList" class="math-cards-grid-target">
       ${sectionsHtml}
     </div>
   `;
@@ -9018,17 +9032,7 @@ function renderMathExamples(ch) {
   `).join('');
 
   return `
-    <div id="mathExamplesList">
-      <div class="math-toolbar">
-        <div style="display:flex;align-items:center;gap:0.5rem;">
-          <span style="font-size:1.25rem;">💡</span>
-          <span style="font-size:0.92rem;font-weight:700;color:#0369a1;">Prerequisite Worked Examples: Click any example to expand</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:0.5rem;">
-          <button class="math-toolbar-btn" onclick="expandAllMathCards('mathExamplesList')">➕ Expand All Examples</button>
-          <button class="math-toolbar-btn" onclick="collapseAllMathCards('mathExamplesList')">➖ Collapse All</button>
-        </div>
-      </div>
+    <div id="mathExamplesList" class="math-cards-grid-target">
       ${examplesHtml}
     </div>
   `;
