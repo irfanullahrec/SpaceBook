@@ -170,11 +170,13 @@ function setupMobileMenu() {
 }
 
 function renderPage(page) {
-  if (page === "home")            renderHome();
-  else if (page === "subjects")   renderClasses();
-  else if (page === "books")      renderBooksView();
-  else if (page === "study-plan") renderStudyPlan();
-  else if (page === "roadmap")    renderFullRoadmap();
+  if (page === "home")                                      renderHome();
+  else if (page === "subjects")                             renderClasses();
+  else if (page === "tests-preps" || page === "test-preps") renderTestsPreps();
+  else if (page === "papers")                               renderPapersView();
+  else if (page === "study-plan")                           renderStudyPlan();
+  else if (page === "books")                                renderBooksView();
+  else if (page === "roadmap")                              renderFullRoadmap();
 }
 
 function handleGlobalNavBack() {
@@ -623,11 +625,13 @@ function renderClasses() {
           <div class="class-jewel-card ${tm.tierClass}" onclick="goToSubjects('${c.id}')" title="Explore ${c.name} (${tm.tierName})">
             <div class="cjc-icon-wrap">${c.emoji}</div>
             <div class="cjc-body">
-              <div class="cjc-top-row">
+              <div class="cjc-name-wrap">
                 <span class="cjc-name">${c.name}</span>
-                <span class="cjc-tier-tag">${tm.tierName}</span>
               </div>
-              <div class="cjc-badge">${tm.badgeText}</div>
+              <div class="cjc-meta-wrap">
+                <span class="cjc-tier-tag">${tm.tierName}</span>
+                <span class="cjc-badge">${tm.badgeText}</span>
+              </div>
             </div>
             <span class="cjc-arrow">➔</span>
           </div>`;
@@ -8023,6 +8027,180 @@ function clearGlobalSearch() {
   if (clearBtn) clearBtn.style.display = "none";
 }
 
+
+// ═════════════════════════════════════════════════
+//  TESTS PREPS VIEW
+// ═════════════════════════════════════════════════
+function renderTestsPreps() {
+  state.page = "tests-preps";
+  state.activeView = "tests-preps";
+  setActiveNav("tests-preps");
+
+  const subNavBar = $("subpage-nav-bar");
+  if (subNavBar) subNavBar.style.display = "none";
+  const dashHeader = $("dash-header");
+  if (dashHeader) dashHeader.style.display = "none";
+
+  pageContent().innerHTML = `
+    <div class="preps-container">
+      <!-- 1. Header Stage Bar -->
+      <div class="preps-stage-bar">
+        <div class="psb-left">
+          <span class="psb-icon">📝</span>
+          <div>
+            <div class="psb-title">KPK Board Tests Preparation &amp; Assessment Bank</div>
+            <div class="psb-sub">Chapter-wise MCQs, Solved Short Questions, and SLO Model Drills</div>
+          </div>
+        </div>
+        <span class="psb-pill">Class 9 Matric Ready · Verified Syllabi</span>
+      </div>
+
+      <!-- 2. Test Modes Strip (4 Quick Cards) -->
+      <div class="preps-modes-grid">
+        <div class="prep-mode-card" onclick="startQuickDrill()">
+          <div class="pmc-icon" style="background:rgba(2,132,199,0.12);color:#0284c7;">⚡</div>
+          <div class="pmc-info">
+            <div class="pmc-title">Quick 5-Question Drill</div>
+            <div class="pmc-desc">Instant diagnostic across Science &amp; Arts subjects</div>
+          </div>
+          <span class="pmc-btn">Start ➔</span>
+        </div>
+        <div class="prep-mode-card" onclick="openSubjectDetail('cls9', 'cls9-math')">
+          <div class="pmc-icon" style="background:rgba(16,185,129,0.12);color:#10b981;">🎯</div>
+          <div class="pmc-info">
+            <div class="pmc-title">Official SLO Assessments</div>
+            <div class="pmc-desc">Student Learning Objectives test bank with solutions</div>
+          </div>
+          <span class="pmc-btn">Practice ➔</span>
+        </div>
+        <div class="prep-mode-card" onclick="openSubjectDetail('cls9', 'cls9-phy')">
+          <div class="pmc-icon" style="background:rgba(99,102,241,0.12);color:#6366f1;">✍️</div>
+          <div class="pmc-info">
+            <div class="pmc-title">Solved Short Questions (SQ)</div>
+            <div class="pmc-desc">Board pattern concept Q&amp;As with marking keys</div>
+          </div>
+          <span class="pmc-btn">Explore ➔</span>
+        </div>
+        <div class="prep-mode-card" onclick="startQuickDrill()">
+          <div class="pmc-icon" style="background:rgba(245,158,11,0.12);color:#f59e0b;">⏱️</div>
+          <div class="pmc-info">
+            <div class="pmc-title">Timed Practice Test</div>
+            <div class="pmc-desc">Simulated board exam countdown &amp; instant scoring</div>
+          </div>
+          <span class="pmc-btn">Take Test ➔</span>
+        </div>
+      </div>
+
+      <!-- 3. Subject-wise Test Prep Bank (Class 9) -->
+      <div class="preps-subjects-section">
+        <div class="pss-header">
+          <span class="pss-title">📚 Subject-Wise Test Banks — Class 9 (KPK Board)</span>
+          <span class="pss-sub">Select any subject to launch chapter-wise practice tests</span>
+        </div>
+        <div class="preps-subjects-grid">
+          ${(DATA.subjects['cls9'] || []).map(s => `
+            <div class="prep-subj-card" onclick="openSubjectDetail('cls9', '${s.id}')">
+              <div class="psc-top">
+                <span class="psc-emoji">${s.emoji}</span>
+                <span class="psc-badge">${s.units} Units Ready</span>
+              </div>
+              <div class="psc-name">${s.name}</div>
+              <div class="psc-urdu">${s.urduName || ''}</div>
+              <div class="psc-meta">
+                <span>🎯 MCQs &amp; Solved SQs</span>
+                <span>✅ 100% KPK Syllabus</span>
+              </div>
+              <button class="psc-start-btn">Start Test Prep ➔</button>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// ═════════════════════════════════════════════════
+//  PAPERS VIEW (PAST & MODEL PAPERS)
+// ═════════════════════════════════════════════════
+function renderPapersView() {
+  state.page = "papers";
+  state.activeView = "papers";
+  setActiveNav("papers");
+
+  const subNavBar = $("subpage-nav-bar");
+  if (subNavBar) subNavBar.style.display = "none";
+  const dashHeader = $("dash-header");
+  if (dashHeader) dashHeader.style.display = "none";
+
+  pageContent().innerHTML = `
+    <div class="papers-container">
+      <!-- 1. Header Stage Bar -->
+      <div class="papers-stage-bar">
+        <div class="psb-left">
+          <span class="psb-icon">📄</span>
+          <div>
+            <div class="psb-title">KPK Board Past Papers &amp; Model Question Papers</div>
+            <div class="psb-sub">Peshawar · Mardan · Swat · Malakand · Abbottabad · Kohat · Bannu · D.I. Khan</div>
+          </div>
+        </div>
+        <span class="psb-pill">Annual Exams 2020–2025 · Solved &amp; Verified</span>
+      </div>
+
+      <!-- 2. Four Highlight Categories -->
+      <div class="papers-cards-grid">
+        <div class="paper-feature-card">
+          <div class="pfc-icon" style="background:rgba(2,132,199,0.12);color:#0284c7;">🏆</div>
+          <div class="pfc-title">2025 Annual Board Papers</div>
+          <div class="pfc-desc">Latest official question papers with verbatim KPK board solved keys and section breakdowns.</div>
+          <div class="pfc-badge">Class 9 &amp; 10 Available</div>
+        </div>
+        <div class="paper-feature-card">
+          <div class="pfc-icon" style="background:rgba(16,185,129,0.12);color:#10b981;">📜</div>
+          <div class="pfc-title">5-Year Past Papers Archive</div>
+          <div class="pfc-desc">Comprehensive compilation from 2020 to 2024 covering all 8 KPK Educational Boards.</div>
+          <div class="pfc-badge">Solved Short &amp; Long Qs</div>
+        </div>
+        <div class="paper-feature-card">
+          <div class="pfc-icon" style="background:rgba(99,102,241,0.12);color:#6366f1;">📐</div>
+          <div class="pfc-title">Official Model Papers</div>
+          <div class="pfc-desc">Directorate of Curriculum &amp; Teacher Education (DCTE) official model papers with SLO rubrics.</div>
+          <div class="pfc-badge">Scheme of Studies 2026</div>
+        </div>
+        <div class="paper-feature-card">
+          <div class="pfc-icon" style="background:rgba(245,158,11,0.12);color:#f59e0b;">🎯</div>
+          <div class="pfc-title">High-Yield SLO Trends</div>
+          <div class="pfc-desc">Frequency analysis of repeated board examination questions with step-by-step marking schemes.</div>
+          <div class="pfc-badge">Exam Readiness Bank</div>
+        </div>
+      </div>
+
+      <!-- 3. Subject-wise Paper Archives -->
+      <div class="papers-subjects-section">
+        <div class="pss-header">
+          <span class="pss-title">📚 Solved Papers by Subject — Class 9 Matric</span>
+          <span class="pss-sub">Click any subject to practice past exam questions</span>
+        </div>
+        <div class="papers-list-grid">
+          ${(DATA.subjects['cls9'] || []).map(s => `
+            <div class="paper-subj-card" onclick="openSubjectDetail('cls9', '${s.id}')">
+              <div class="psc-top">
+                <span class="psc-emoji">${s.emoji}</span>
+                <span class="psc-badge">2020–2025 Papers</span>
+              </div>
+              <div class="psc-name">${s.name}</div>
+              <div class="psc-urdu">${s.urduName || ''}</div>
+              <div class="psc-meta">
+                <span>📝 Objective (MCQs) Solved</span>
+                <span>✍️ Subjective (SQ &amp; LQ) Keys</span>
+              </div>
+              <button class="psc-start-btn">View Solved Papers ➔</button>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+}
 
 // ─────────────────────────────────────────
 //  TEXTBOOKS & BOOKS LIBRARY VIEW
