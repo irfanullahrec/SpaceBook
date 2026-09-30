@@ -177,6 +177,22 @@ function renderPage(page) {
   else if (page === "roadmap")    renderFullRoadmap();
 }
 
+function handleGlobalNavBack() {
+  if (state.activeView === "subject-detail") {
+    goToSubjects(state.selectedClass || "cls9");
+  } else if (state.activeView === "subjects" && state.selectedClass) {
+    renderClasses();
+  } else if (state.activeView === "classes") {
+    renderHome();
+  } else if (state.page && state.page !== "home") {
+    renderHome();
+  } else {
+    if (window.history.length > 1) {
+      window.history.back();
+    }
+  }
+}
+
 function autoScrollToActiveTab(targetEl) {
   try {
     const el = targetEl || document.querySelector('.chapter-nav-tabs, #engTabsBar, .bio-tabs-row');
@@ -202,6 +218,7 @@ function autoScrollToActiveTab(targetEl) {
 // ─── HOME (NEW REDESIGNED DASHBOARD) ────────
 function renderHome() {
   state.page = "home";
+  state.activeView = "home";
   setActiveNav("home");
   
   // Hide subpage navigation bar on Home
@@ -582,7 +599,9 @@ function checkReviewMcq(qIndex, selectedOpt, correctOpt, encodedExp) {
 
 // ─── CLASSES ─────────────────────────────
 function renderClasses() {
+  state.page = "subjects";
   state.selectedClass = null;
+  state.activeView = "classes";
   const subNavBar = $("subpage-nav-bar");
   if (subNavBar) subNavBar.style.display = "none";
   currentNavCrumbs = [
@@ -637,7 +656,9 @@ function renderClasses() {
 
 // ─── SUBJECTS ────────────────────────────
 function goToSubjects(classId) {
+  state.page = "subjects";
   state.selectedClass = classId;
+  state.activeView = "subjects";
   setActiveNav("subjects");
   const cls  = DATA.classes.find(c => c.id === classId) || { id: classId, name: "Class " + classId.replace("cls","") };
   const subs = DATA.subjects[classId] || [];
@@ -941,6 +962,8 @@ function openSubject(classId, subjId) {
     goToSubjects(classId);
     return;
   }
+  state.activeView = "subject-detail";
+  state.selectedClass = classId;
   const subs = DATA.subjects[classId] || [];
   const subj = subs.find(s => s.id === subjId);
   if (!subj) return;
@@ -6287,6 +6310,8 @@ function toggleCheck(input) {
 
 // ─── 5. FULL ROADMAP DASHBOARD VIEW ───────
 function renderFullRoadmap() {
+  state.page = "roadmap";
+  state.activeView = "roadmap";
   setActiveNav("roadmap");
   setDashHeader("🗺️ KPK Grade 9 Biology — Complete Exam Roadmap", "9 Units · 96 Textbook MCQs · 52 Short Questions · 37 Long Questions");
   setBreadcrumb([
@@ -6666,6 +6691,9 @@ function generateGenericChapters(subjId) {
 
 // ─── STUDY PLAN ──────────────────────────
 function renderStudyPlan() {
+  state.page = "study-plan";
+  state.activeView = "study-plan";
+  setActiveNav("study-plan");
   setDashHeader("📅 Study Plan", "Weekly tuition schedule & progress tracking");
   setBreadcrumb([
     { label: "Home",       onclick: () => { setActiveNav("home"); renderHome(); } },
@@ -7972,7 +8000,9 @@ function clearGlobalSearch() {
 //  TEXTBOOKS & BOOKS LIBRARY VIEW
 // ─────────────────────────────────────────
 function renderBooksView(filterClass = "all") {
+  state.page = "books";
   state.activePage = "books";
+  state.activeView = "books";
   setActiveNav("books");
   setDashHeader("📚 Official KPK Textbooks Library (PDF Books)", "Download and read verified textbooks published by Khyber Pakhtunkhwa Textbook Board");
   setBreadcrumb([
