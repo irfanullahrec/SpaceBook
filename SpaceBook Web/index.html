@@ -6,7 +6,7 @@
   <title>Tuition Hub — Learning Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260930_8">
+  <link rel="stylesheet" href="css/style.css?v=20260930_9">
 </head>
 <body>
 
@@ -76,24 +76,15 @@
     <div class="header-center">
       <div class="header-search-box">
         <span class="header-search-icon">🔍</span>
-        <input type="text" id="globalHubSearch" placeholder="Search Class 9, 10, 11, 12 subjects, chapters, MCQs..."
+        <input type="text" id="globalHubSearch" placeholder="Search subjects, MCQs..."
                oninput="handleGlobalSearch(this.value)">
         <button id="clearSearchBtn" onclick="clearGlobalSearch()" style="display:none;" title="Clear search">✕</button>
         <div id="searchResultsDropdown" class="header-search-dropdown" style="display:none;"></div>
       </div>
     </div>
 
-    <!-- Right Header Badges & Actions -->
-    <div class="header-right">
-      <div class="header-badge streak-badge" title="Consecutive active study days">
-        <span class="badge-icon">🔥</span>
-        <span class="badge-text" id="headerStreakText">5-Day Streak</span>
-      </div>
-      <div class="header-badge board-badge" title="Official Khyber Pakhtunkhwa Textbook Board alignment">
-        <span class="badge-icon">🏛️</span>
-        <span class="badge-text">KPK Board</span>
-      </div>
-    </div>
+    <!-- Right Header Actions (Badges removed per user request) -->
+    <div class="header-right"></div>
   </header>
 
   <!-- ══════════════════════════════════════
