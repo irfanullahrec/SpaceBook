@@ -880,36 +880,36 @@ function goToSubjects(classId) {
   };
 
   pageContent().innerHTML = `
-    <!-- 1. Single-Line Consolidated Contextual Header Bar -->
-    <div class="subjects-single-line-bar">
-      <div class="sslb-left">
-        <button class="sslb-back-btn" onclick="renderClasses()" title="Back to All Classes">
-          <span class="back-arrow">←</span> Back to All Classes
-        </button>
-        <span class="sslb-sep">|</span>
-        <nav class="sslb-breadcrumbs" aria-label="breadcrumb">
-          <span class="sslb-crumb" onclick="setActiveNav('home'); renderHome();">Home</span>
-          <span class="sslb-arrow">›</span>
-          <span class="sslb-crumb" onclick="renderClasses();">Subjects</span>
-          <span class="sslb-arrow">›</span>
-          <span class="sslb-crumb active">${cls.name}</span>
-        </nav>
-        <span class="sslb-sep">|</span>
-        <div class="sslb-title-group">
-          <h2 class="sslb-title">📚 ${cls.name} — Subjects</h2>
-        </div>
-      </div>
-      <div class="sslb-right">
-        <span class="sslb-badge">🏛️ KPK Textbook Board</span>
-      </div>
+    <!-- 1. All 9 Class Subjects in One Look (3x3 Compact Grid) without scrolling down -->
+    <div class="subjects-compact-grid">
+      ${subs.map(s => {
+        const meta = getSubjectMeta(s);
+        const cleanBadge = meta.badgeText ? meta.badgeText.replace(/^[✓🏛️]\s*/, '') : '';
+        return `
+        <div class="subject-card-compact" onclick="openSubject('${classId}','${s.id}')" title="Explore ${s.name} units &amp; solved notes">
+          <div class="scc-icon" style="background: ${meta.headerColor}14; color: ${meta.headerColor}; border: 1px solid ${meta.headerColor}30;">
+            ${s.emoji}
+          </div>
+          <div class="scc-info">
+            <div class="scc-name-row">
+              <span class="scc-name">${s.name}</span>
+              ${meta.urduName ? `<span class="scc-urdu">${meta.urduName}</span>` : ""}
+            </div>
+            <div class="scc-sub">${cleanBadge}</div>
+          </div>
+          <div class="scc-badge-wrap">
+            <span class="scc-pill" style="color: ${meta.headerColor}; background: ${meta.headerColor}12; border: 1px solid ${meta.headerColor}28;">${s.chapters} Units</span>
+          </div>
+        </div>`;
+      }).join("")}
     </div>
 
-    <!-- 2. Class Overview Statistical Cards (Max 3 in a row, right below back button) -->
-    <div class="class-overview-stats-grid">
+    <!-- 2. Statistical Cards below the subjects (visible with scrolling down) -->
+    <div class="class-overview-stats-grid" style="margin-top: 1.5rem;">
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">📚</div>
         <div class="csc-content">
-          <div class="csc-value">${subs.length} Core Subjects</div>
+          <div class="csc-value">9 Core Subjects</div>
           <div class="csc-label">Class Curriculum Track</div>
           <div class="csc-sub">Science &amp; Arts Groups · Verified KPK Syllabi</div>
         </div>
@@ -918,7 +918,7 @@ function goToSubjects(classId) {
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">📖</div>
         <div class="csc-content">
-          <div class="csc-value">${totalUnits}+ Textbook Units</div>
+          <div class="csc-value">100+ Textbook Units</div>
           <div class="csc-label">Verbatim Lessons &amp; Sections</div>
           <div class="csc-sub">Word-by-word official textbook coverage</div>
         </div>
@@ -927,70 +927,11 @@ function goToSubjects(classId) {
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">🎯</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls9 ? '2,800+' : (totalUnits * 20) + '+'} Solved Qs &amp; SLOs</div>
+          <div class="csc-value">2,800+ Solved Qs &amp; SLOs</div>
           <div class="csc-label">Exam Readiness Bank</div>
           <div class="csc-sub">MCQs, Short &amp; Detailed Solved Answers</div>
         </div>
       </div>
-    </div>
-
-    <!-- 3. Subjects Section Header -->
-    <div class="subjects-section-bar">
-      <div class="ssb-title">Explore Class Subjects &amp; Detailed Modules</div>
-      <div class="ssb-subtitle">Select any subject below to access official textbook sections, worked examples, and comprehensive question banks</div>
-    </div>
-
-    <!-- 4. Subject Statistical Cards Grid (Max 3 in a row) -->
-    <div class="subjects-stat-grid">
-      ${subs.map(s => {
-        const meta = getSubjectMeta(s);
-        return `
-        <div class="subject-stat-card" onclick="openSubject('${classId}','${s.id}')">
-          <div class="ssc-top" style="background: linear-gradient(135deg, ${meta.headerColor}14, ${meta.headerColor}08); border-left: 4px solid ${meta.headerColor};">
-            <div class="ssc-header-left">
-              <div class="ssc-icon-circle">${s.emoji}</div>
-              <div class="ssc-name-wrap">
-                <div class="ssc-name">${s.name}</div>
-                ${meta.urduName ? `<div class="ssc-urdu-name">${meta.urduName}</div>` : ""}
-              </div>
-            </div>
-            <div class="ssc-header-right">
-              <span class="ssc-unit-pill">${s.chapters} Units</span>
-            </div>
-          </div>
-
-          <div class="ssc-badge-row">
-            <span class="ssc-badge ${meta.badgeClass}">${meta.badgeText}</span>
-          </div>
-
-          <div class="ssc-metrics-grid">
-            <div class="ssc-metric-item">
-              <div class="ssc-metric-val">${meta.metric1Val}</div>
-              <div class="ssc-metric-lbl">${meta.metric1Lbl}</div>
-            </div>
-            <div class="ssc-metric-item">
-              <div class="ssc-metric-val">${meta.metric2Val}</div>
-              <div class="ssc-metric-lbl">${meta.metric2Lbl}</div>
-            </div>
-            <div class="ssc-metric-item">
-              <div class="ssc-metric-val">${meta.metric3Val}</div>
-              <div class="ssc-metric-lbl">${meta.metric3Lbl}</div>
-            </div>
-          </div>
-
-          <div class="ssc-topics-section">
-            <div class="ssc-topics-label">Syllabus Highlights:</div>
-            <div class="ssc-topics-tags">
-              ${meta.topics.map(t => `<span class="ssc-topic-pill">${t}</span>`).join("")}
-            </div>
-          </div>
-
-          <div class="ssc-footer">
-            <span class="ssc-action-text">Explore Units &amp; Solved Notes</span>
-            <span class="ssc-action-arrow">→</span>
-          </div>
-        </div>`;
-      }).join("")}
     </div>`;
 }
 
