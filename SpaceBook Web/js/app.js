@@ -643,6 +643,14 @@ function renderClasses() {
         </div>
       </div>
       <div class="class-stat-card">
+        <div class="csc-icon-wrap" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">📖</div>
+        <div class="csc-content">
+          <div class="csc-value">15 Official Textbooks</div>
+          <div class="csc-label">Verified KPK Board Library</div>
+          <div class="csc-sub">Complete curricula &amp; PDF readers</div>
+        </div>
+      </div>
+      <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">🎯</div>
         <div class="csc-content">
           <div class="csc-value">10,000+ Questions</div>
@@ -925,32 +933,41 @@ function goToSubjects(classId) {
       }).join("")}
     </div>
 
-    <!-- 2. Statistical Cards below the subjects (visible with scrolling down) -->
+    <!-- 2. Statistical Cards below the subjects (4 Cards in a Row · 100% Verified Counts) -->
     <div class="class-overview-stats-grid" style="margin-top: 1.5rem;">
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">📚</div>
         <div class="csc-content">
-          <div class="csc-value">9 Core Subjects</div>
+          <div class="csc-value">9 Subjects · 15 Books</div>
           <div class="csc-label">Class Curriculum Track</div>
-          <div class="csc-sub">Science &amp; Arts Groups · Verified KPK Syllabi</div>
+          <div class="csc-sub">Science &amp; Arts · 100 Units (92 Full Chapters)</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">📖</div>
         <div class="csc-content">
-          <div class="csc-value">100+ Textbook Units</div>
+          <div class="csc-value">26,427 Words · 33,494 Paras</div>
           <div class="csc-label">Verbatim Lessons &amp; Sections</div>
-          <div class="csc-sub">Word-by-word official textbook coverage</div>
+          <div class="csc-sub">Word-by-word official coverage · 531 Sections</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">🎯</div>
         <div class="csc-content">
-          <div class="csc-value">2,800+ Solved Qs &amp; SLOs</div>
+          <div class="csc-value">2,386 Solved Questions</div>
           <div class="csc-label">Exam Readiness Bank</div>
-          <div class="csc-sub">MCQs, Short &amp; Detailed Solved Answers</div>
+          <div class="csc-sub">1,343 MCQs · 755 Short &amp; 288 Long Qs</div>
+        </div>
+      </div>
+
+      <div class="class-stat-card">
+        <div class="csc-icon-wrap" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">📝</div>
+        <div class="csc-content">
+          <div class="csc-value">543 Exercises · 480 SLOs</div>
+          <div class="csc-label">Practice &amp; SLO Assessments</div>
+          <div class="csc-sub">Solved exercises &amp; Board SLO benchmarks</div>
         </div>
       </div>
     </div>`;
