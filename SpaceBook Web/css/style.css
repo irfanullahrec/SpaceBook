@@ -380,98 +380,306 @@ ul { list-style: none; }
 }
 
 
-/* ── COMPACT CLASSES GRID (ALL 15 GRADES IN ONE LOOK) ── */
-.classes-compact-grid {
+/* ── JOYFUL ACADEMIC JEWEL THEME: CLASSES VIEW (COMPLETELY DISTINCT FROM SUBJECT VIEW) ── */
+.classes-universe-wrapper {
+  padding: 0.15rem 0 0.5rem;
+}
+
+.classes-stage-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 0.4rem 1rem;
+  margin-bottom: 0.65rem;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+}
+
+.csb-left {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.csb-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.csb-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #f8fafc;
+  letter-spacing: 0.015em;
+}
+
+.csb-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.14);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 0.15rem 0.65rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+/* 5 Columns x 3 Rows Jewel Grid */
+.classes-jewel-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 0.55rem;
-  margin: 0.25rem 0 1.5rem 0;
+  gap: 0.55rem 0.65rem;
+  margin-bottom: 0.5rem;
 }
-.class-card-compact {
-  background: #ffffff;
-  border: 1.5px solid #e2e8f0;
-  border-radius: 9px;
-  padding: 0.5rem 0.7rem;
+
+.class-jewel-card {
   display: flex;
   align-items: center;
   gap: 0.65rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 14px;
   cursor: pointer;
-  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  min-height: 60px;
   user-select: none;
 }
-.class-card-compact:hover {
-  border-color: #0284c7;
-  background: #f0f9ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.16);
+
+.class-jewel-card:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
-.class-card-compact:active {
-  transform: translateY(0);
-}
-.ccc-icon {
-  width: 34px;
-  height: 34px;
-  min-width: 34px;
-  background: #f1f5f9;
-  border-radius: 7px;
+
+.cjc-icon-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   flex-shrink: 0;
-  transition: background 0.18s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
 }
-.class-card-compact:hover .ccc-icon {
-  background: #e0f2fe;
+
+.class-jewel-card:hover .cjc-icon-wrap {
+  transform: scale(1.12) rotate(4deg);
 }
-.ccc-info {
+
+.cjc-body {
   flex: 1;
   min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.ccc-name {
+
+.cjc-top-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.cjc-name {
   font-size: 0.88rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #0f172a;
-  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.cjc-tier-tag {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.cjc-badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  margin-top: 0.15rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.ccc-badge {
-  font-size: 0.68rem;
-  font-weight: 600;
-  color: #0284c7;
-  margin-top: 0.1rem;
-  white-space: nowrap;
-}
-.ccc-badge-uploaded {
-  color: #059669;
-  font-weight: 700;
-}
-.ccc-badge-pending {
+
+.cjc-arrow {
+  font-size: 0.78rem;
   color: #94a3b8;
-  font-weight: 500;
+  font-weight: 800;
+  opacity: 0.55;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+  flex-shrink: 0;
 }
-.class-card-compact.ccc-uploaded {
-  border-color: #a7f3d0;
-  background: #f0fdf4;
+
+.class-jewel-card:hover .cjc-arrow {
+  opacity: 1;
+  transform: translateX(2px);
+  color: #0f172a;
 }
-.class-card-compact.ccc-uploaded:hover {
-  border-color: #059669;
-  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.15);
+
+/* Tier Themes */
+/* 1. Early Years */
+.tier-early {
+  background: linear-gradient(135deg, #fffdf5 0%, #fef3c7 100%);
+  border: 1.5px solid #fde68a;
+}
+.tier-early:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.2);
+}
+.tier-early .cjc-icon-wrap {
+  background: linear-gradient(135deg, #fef08a, #fde047);
+  border: 1px solid #facc15;
+}
+.tier-early .cjc-tier-tag {
+  background: #fef08a;
+  color: #854d0e;
+}
+.tier-early .cjc-badge {
+  color: #b45309;
+}
+
+/* 2. Primary */
+.tier-primary {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1.5px solid #bbf7d0;
+}
+.tier-primary:hover {
+  border-color: #10b981;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.2);
+}
+.tier-primary .cjc-icon-wrap {
+  background: linear-gradient(135deg, #a7f3d0, #6ee7b7);
+  border: 1px solid #34d399;
+}
+.tier-primary .cjc-tier-tag {
+  background: #dcfce7;
+  color: #166534;
+}
+.tier-primary .cjc-badge {
+  color: #047857;
+}
+
+/* 3. Middle */
+.tier-middle {
+  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+  border: 1.5px solid #e9d5ff;
+}
+.tier-middle:hover {
+  border-color: #8b5cf6;
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.2);
+}
+.tier-middle .cjc-icon-wrap {
+  background: linear-gradient(135deg, #ddd6fe, #c4b5fd);
+  border: 1px solid #a78bfa;
+}
+.tier-middle .cjc-tier-tag {
+  background: #f3e8ff;
+  color: #5b21b6;
+}
+.tier-middle .cjc-badge {
+  color: #6d28d9;
+}
+
+/* 4. Secondary (Class 10) */
+.tier-secondary {
+  background: linear-gradient(135deg, #ecfeff 0%, #cffafe 100%);
+  border: 1.5px solid #a5f3fc;
+}
+.tier-secondary:hover {
+  border-color: #06b6d4;
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.2);
+}
+.tier-secondary .cjc-icon-wrap {
+  background: linear-gradient(135deg, #bae6fd, #7dd3fc);
+  border: 1px solid #38bdf8;
+}
+.tier-secondary .cjc-tier-tag {
+  background: #cffafe;
+  color: #155e75;
+}
+.tier-secondary .cjc-badge {
+  color: #0e7490;
+}
+
+/* 5. Class 9 Active Hero Grade */
+.tier-hero-active {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 50%, #eff6ff 100%);
+  border: 2px solid #059669;
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.28);
+}
+.tier-hero-active:hover {
+  border-color: #047857;
+  box-shadow: 0 10px 28px rgba(5, 150, 105, 0.38);
+  transform: translateY(-4px) scale(1.03);
+}
+.tier-hero-active .cjc-icon-wrap {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  border: 1px solid #047857;
+}
+.tier-hero-active .cjc-tier-tag {
+  background: #059669;
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 6px rgba(5, 150, 105, 0.3);
+}
+.tier-hero-active .cjc-name {
+  color: #064e3b;
+  font-weight: 900;
+}
+.tier-hero-active .cjc-badge {
+  color: #047857;
+  font-weight: 800;
+}
+.tier-hero-active .cjc-arrow {
+  color: #059669;
+  font-weight: 900;
+  opacity: 1;
+}
+
+/* 6. College (Class 11 & 12) */
+.tier-college {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+  border: 1.5px solid #fecdd3;
+}
+.tier-college:hover {
+  border-color: #f43f5e;
+  box-shadow: 0 8px 20px rgba(244, 63, 94, 0.2);
+}
+.tier-college .cjc-icon-wrap {
+  background: linear-gradient(135deg, #fecdd3, #fda4af);
+  border: 1px solid #fb7185;
+}
+.tier-college .cjc-tier-tag {
+  background: #ffe4e6;
+  color: #9f1239;
+}
+.tier-college .cjc-badge {
+  color: #be123c;
 }
 
 @media (max-width: 1100px) {
-  .classes-compact-grid {
+  .classes-jewel-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 600px) {
-  .classes-compact-grid {
+@media (max-width: 650px) {
+  .classes-jewel-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }

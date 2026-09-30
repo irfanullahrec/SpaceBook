@@ -608,54 +608,89 @@ function renderClasses() {
     { label: "Home", onclick: () => { setActiveNav("home"); renderHome(); } },
     { label: "Subjects", active: true }
   ];
-  pageContent().innerHTML = `
-    <!-- 1. All 15 Classes in One Look (Play Group to 12th) without scrolling down -->
-    <div class="classes-compact-grid">
-      ${DATA.classes.map(c => {
-        const isUploaded = (c.id === "cls9");
-        return `
-        <div class="class-card-compact ${isUploaded ? 'ccc-uploaded' : 'ccc-pending'}" onclick="goToSubjects('${c.id}')" title="Click to view ${c.name} subjects">
-          <div class="ccc-icon">${c.emoji}</div>
-          <div class="ccc-info">
-            <div class="ccc-name">${c.name}</div>
-            <div class="ccc-badge ${isUploaded ? 'ccc-badge-uploaded' : 'ccc-badge-pending'}">${isUploaded ? '9 Subjects · Uploaded' : 'Not Uploaded Yet'}</div>
-          </div>
-        </div>`;
-      }).join("")}
-    </div>
 
-    <!-- 2. Statistical Cards below the classes (visible with scrolling down) -->
-    <div class="class-overview-stats-grid" style="margin-top: 1.5rem;">
-      <div class="class-stat-card">
-        <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">🏫</div>
-        <div class="csc-content">
-          <div class="csc-value">15 Academic Grades</div>
-          <div class="csc-label">Secondary &amp; Higher Secondary</div>
-          <div class="csc-sub">Class 9, 10, 11 &amp; 12 KPK Board</div>
+  const getTierMeta = (c) => {
+    if (['cls-pg', 'cls-nur', 'cls-kg'].includes(c.id)) {
+      return { tierName: 'Early Years', tierClass: 'tier-early', badgeText: 'Preschool Track' };
+    }
+    if (['cls1', 'cls2', 'cls3', 'cls4', 'cls5'].includes(c.id)) {
+      return { tierName: 'Primary', tierClass: 'tier-primary', badgeText: `${c.subjects} Subjects · In Prep` };
+    }
+    if (['cls6', 'cls7', 'cls8'].includes(c.id)) {
+      return { tierName: 'Middle School', tierClass: 'tier-middle', badgeText: `${c.subjects} Subjects · In Prep` };
+    }
+    if (c.id === 'cls9') {
+      return { tierName: '✨ Matric Ready', tierClass: 'tier-hero-active', badgeText: '✓ 9 Core Subjects Uploaded' };
+    }
+    if (c.id === 'cls10') {
+      return { tierName: 'Matric Board', tierClass: 'tier-secondary', badgeText: `${c.subjects} Subjects · In Prep` };
+    }
+    return { tierName: 'HSSC College', tierClass: 'tier-college', badgeText: `${c.subjects} Subjects · In Prep` };
+  };
+
+  pageContent().innerHTML = `
+    <div class="classes-universe-wrapper">
+      <!-- 1. Joyful Academic Levels Stage Bar -->
+      <div class="classes-stage-bar">
+        <div class="csb-left">
+          <span class="csb-icon">🎓</span>
+          <span class="csb-title">KPK Academic Levels · Choose Your Grade to Explore</span>
         </div>
+        <span class="csb-pill">Play Group ➔ Class 12 · 15 Grades</span>
       </div>
-      <div class="class-stat-card">
-        <div class="csc-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">📚</div>
-        <div class="csc-content">
-          <div class="csc-value">25 Core Subjects</div>
-          <div class="csc-label">Science &amp; General Tracks</div>
-          <div class="csc-sub">Complete textbooks &amp; solved notes</div>
+
+      <!-- 2. All 15 Classes in One Look (5x3 Rainbow Jewel Grid) without scrolling down -->
+      <div class="classes-jewel-grid">
+        ${DATA.classes.map(c => {
+          const tm = getTierMeta(c);
+          return `
+          <div class="class-jewel-card ${tm.tierClass}" onclick="goToSubjects('${c.id}')" title="Explore ${c.name} (${tm.tierName})">
+            <div class="cjc-icon-wrap">${c.emoji}</div>
+            <div class="cjc-body">
+              <div class="cjc-top-row">
+                <span class="cjc-name">${c.name}</span>
+                <span class="cjc-tier-tag">${tm.tierName}</span>
+              </div>
+              <div class="cjc-badge">${tm.badgeText}</div>
+            </div>
+            <span class="cjc-arrow">➔</span>
+          </div>`;
+        }).join("")}
+      </div>
+
+      <!-- 3. Statistical Cards below the classes (visible with scrolling down) -->
+      <div class="class-overview-stats-grid" style="margin-top: 1.5rem;">
+        <div class="class-stat-card">
+          <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">🏫</div>
+          <div class="csc-content">
+            <div class="csc-value">15 Academic Grades</div>
+            <div class="csc-label">Secondary &amp; Higher Secondary</div>
+            <div class="csc-sub">Class 9, 10, 11 &amp; 12 KPK Board</div>
+          </div>
         </div>
-      </div>
-      <div class="class-stat-card">
-        <div class="csc-icon-wrap" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">📖</div>
-        <div class="csc-content">
-          <div class="csc-value">15 Official Textbooks</div>
-          <div class="csc-label">Verified KPK Board Library</div>
-          <div class="csc-sub">Complete curricula &amp; PDF readers</div>
+        <div class="class-stat-card">
+          <div class="csc-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">📚</div>
+          <div class="csc-content">
+            <div class="csc-value">25 Core Subjects</div>
+            <div class="csc-label">Science &amp; General Tracks</div>
+            <div class="csc-sub">Complete textbooks &amp; solved notes</div>
+          </div>
         </div>
-      </div>
-      <div class="class-stat-card">
-        <div class="csc-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">🎯</div>
-        <div class="csc-content">
-          <div class="csc-value">10,000+ Questions</div>
-          <div class="csc-label">MCQs, SQs &amp; SLO Assessments</div>
-          <div class="csc-sub">Board exam preparation bank</div>
+        <div class="class-stat-card">
+          <div class="csc-icon-wrap" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">📖</div>
+          <div class="csc-content">
+            <div class="csc-value">15 Official Textbooks</div>
+            <div class="csc-label">Verified KPK Board Library</div>
+            <div class="csc-sub">Complete curricula &amp; PDF readers</div>
+          </div>
+        </div>
+        <div class="class-stat-card">
+          <div class="csc-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">🎯</div>
+          <div class="csc-content">
+            <div class="csc-value">10,000+ Questions</div>
+            <div class="csc-label">MCQs, SQs &amp; SLO Assessments</div>
+            <div class="csc-sub">Board exam preparation bank</div>
+          </div>
         </div>
       </div>
     </div>`;
