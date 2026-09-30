@@ -8030,7 +8030,329 @@ function clearGlobalSearch() {
 
 
 // ═════════════════════════════════════════════════
-//  TESTS PREPS VIEW
+//  COMPETITIVE TESTS PREPARATION DATA BANK (15 POSTS)
+// ═════════════════════════════════════════════════
+const COMPETITIVE_TESTS_DATA = [
+  {
+    id: "pst",
+    title: "PST",
+    fullName: "Primary School Teacher",
+    scale: "BPS-12 · ETEA / NTS",
+    emoji: "🏫",
+    color: "#0284c7",
+    bg: "rgba(2, 132, 199, 0.08)",
+    border: "rgba(2, 132, 199, 0.25)",
+    focus: "Pedagogy 20% · Eng 25% · Sci 25% · Math 20%",
+    syllabus: [
+      { subject: "Pedagogy & Teaching Skills", weight: "20%" },
+      { subject: "English Language & Grammar", weight: "25%" },
+      { subject: "General Science (Class 4-8)", weight: "25%" },
+      { subject: "Mathematics (Class 4-8)", weight: "20%" },
+      { subject: "Urdu & Islamiyat / Ethics", weight: "10%" }
+    ],
+    sampleQuestions: [
+      { q: "Pedagogy is primarily defined as the:", opts: ["Study of student behaviour", "Method and practice of teaching", "Educational leadership", "Curriculum designing"], ans: 1, exp: "Pedagogy refers directly to the theory, method, and practice of teaching." },
+      { q: "In 'She speaks English fluently', the word 'fluently' is a/an:", opts: ["Adjective", "Noun", "Adverb", "Conjunction"], ans: 2, exp: "'Fluently' modifies the verb 'speaks', functioning as an adverb of manner." },
+      { q: "The process by which green plants synthesize glucose using sunlight is called:", opts: ["Respiration", "Photosynthesis", "Transpiration", "Fermentation"], ans: 1, exp: "Photosynthesis converts light energy, water, and CO2 into chemical glucose." },
+      { q: "If 3x + 7 = 22, what is the value of x?", opts: ["3", "5", "7", "9"], ans: 1, exp: "3x = 22 - 7 = 15; therefore x = 15/3 = 5." }
+    ]
+  },
+  {
+    id: "ct",
+    title: "CT",
+    fullName: "Certified Teacher",
+    scale: "BPS-15 · E&SE KPK",
+    emoji: "📜",
+    color: "#10b981",
+    bg: "rgba(16, 185, 129, 0.08)",
+    border: "rgba(16, 185, 129, 0.25)",
+    focus: "General Sci · Math · English · Pedagogy",
+    syllabus: [
+      { subject: "General Science (Secondary)", weight: "25%" },
+      { subject: "Mathematics (Class 6-10)", weight: "25%" },
+      { subject: "English Literature & Grammar", weight: "20%" },
+      { subject: "Social Studies & Pak Study", weight: "15%" },
+      { subject: "Pedagogy & Classroom Mgmt", weight: "15%" }
+    ],
+    sampleQuestions: [
+      { q: "Which part of the human eye regulates the amount of light entering?", opts: ["Retina", "Iris & Pupil", "Cornea", "Optic Nerve"], ans: 1, exp: "The iris adjusts pupil size to regulate the light reaching the retina." },
+      { q: "The solution set of x² - 9 = 0 is:", opts: ["{3}", "{-3}", "{±3}", "{0}"], ans: 2, exp: "x² = 9 => x = ±3." },
+      { q: "Bloom's Taxonomy classifies cognitive learning objectives into how many major levels?", opts: ["4", "5", "6", "7"], ans: 2, exp: "Bloom's taxonomy has 6 levels: Remember, Understand, Apply, Analyze, Evaluate, Create." }
+    ]
+  },
+  {
+    id: "dm",
+    title: "DM",
+    fullName: "Drawing Master",
+    scale: "BPS-15 · Fine Arts & Visual Design",
+    emoji: "🎨",
+    color: "#f59e0b",
+    bg: "rgba(245, 158, 11, 0.08)",
+    border: "rgba(245, 158, 11, 0.25)",
+    focus: "Fine Arts · Perspective · Color Theory",
+    syllabus: [
+      { subject: "Drawing & Fine Arts Fundamentals", weight: "40%" },
+      { subject: "Perspective & Geometrical Drawing", weight: "25%" },
+      { subject: "General Pedagogy", weight: "20%" },
+      { subject: "English Language", weight: "15%" }
+    ],
+    sampleQuestions: [
+      { q: "Which of the following are the primary additive colors of light?", opts: ["Red, Yellow, Blue", "Red, Green, Blue", "Cyan, Magenta, Yellow", "Orange, Violet, Green"], ans: 1, exp: "Red, Green, and Blue (RGB) are the primary additive colors of light." },
+      { q: "In geometrical drawing, an angle greater than 90° and less than 180° is called:", opts: ["Acute angle", "Obtuse angle", "Reflex angle", "Right angle"], ans: 1, exp: "An obtuse angle measures strictly between 90° and 180°." }
+    ]
+  },
+  {
+    id: "pet",
+    title: "PET",
+    fullName: "Physical Education Teacher",
+    scale: "BPS-15 · Sports Sciences",
+    emoji: "🏃",
+    color: "#ec4899",
+    bg: "rgba(236, 72, 153, 0.08)",
+    border: "rgba(236, 72, 153, 0.25)",
+    focus: "Anatomy · Sports Rules · First Aid",
+    syllabus: [
+      { subject: "Physical Education & Games Rules", weight: "40%" },
+      { subject: "Human Anatomy & Kinesiology", weight: "25%" },
+      { subject: "Pedagogy & Drill Training", weight: "20%" },
+      { subject: "General English & Sports GK", weight: "15%" }
+    ],
+    sampleQuestions: [
+      { q: "The standard dimensions of an official Volleyball court are:", opts: ["18m × 9m", "20m × 10m", "16m × 8m", "22m × 11m"], ans: 0, exp: "An official FIVB volleyball court is 18m in length and 9m in width." },
+      { q: "Which bone is commonly known as the collarbone in human anatomy?", opts: ["Scapula", "Clavicle", "Sternum", "Humerus"], ans: 1, exp: "The clavicle connects the breastbone (sternum) to the shoulder." }
+    ]
+  },
+  {
+    id: "tt",
+    title: "TT",
+    fullName: "Theology Teacher",
+    scale: "BPS-15 · Islamic Studies",
+    emoji: "🕌",
+    color: "#14b8a6",
+    bg: "rgba(20, 184, 166, 0.08)",
+    border: "rgba(20, 184, 166, 0.25)",
+    focus: "Quran · Hadith · Fiqh · Pedagogy",
+    syllabus: [
+      { subject: "Quranic Sciences & Tafseer", weight: "35%" },
+      { subject: "Hadith & Usool-e-Hadith", weight: "25%" },
+      { subject: "Fiqh & Islamic History", weight: "25%" },
+      { subject: "Teaching Methodology", weight: "15%" }
+    ],
+    sampleQuestions: [
+      { q: "The first revelation of the Holy Quran was revealed in which Surah?", opts: ["Surah Al-Fatiha", "Surah Al-Alaq", "Surah Al-Baqarah", "Surah Al-Muddathir"], ans: 1, exp: "The first 5 verses of Surah Al-Alaq were revealed in Cave Hira." },
+      { q: "The Treaty of Hudaibiyah was concluded in which Hijri year?", opts: ["5 AH", "6 AH", "8 AH", "9 AH"], ans: 1, exp: "Sulah Hudaibiyah took place in 6 AH." }
+    ]
+  },
+  {
+    id: "at",
+    title: "AT / Qari",
+    fullName: "Arabic Teacher & Qari",
+    scale: "BPS-15 · Tajweed & Nahw",
+    emoji: "📖",
+    color: "#8b5cf6",
+    bg: "rgba(139, 92, 246, 0.08)",
+    border: "rgba(139, 92, 246, 0.25)",
+    focus: "Nahw & Sarf · Tajweed · Qiraat",
+    syllabus: [
+      { subject: "Arabic Grammar (Nahw & Sarf)", weight: "40%" },
+      { subject: "Rules of Tajweed & Qiraat", weight: "30%" },
+      { subject: "Arabic Vocabulary & Literature", weight: "20%" },
+      { subject: "Pedagogy", weight: "10%" }
+    ],
+    sampleQuestions: [
+      { q: "How many letters of Qalqalah (قلقلہ) are there in Tajweed?", opts: ["3", "5 (ق، ط، ب، ج، د)", "7", "4"], ans: 1, exp: "The 5 Qalqalah letters are combined in the phrase 'Qutb Jad' (قطب جد)." }
+    ]
+  },
+  {
+    id: "sst-bio",
+    title: "SST Bio/Chem",
+    fullName: "Secondary School Teacher (Bio/Chem)",
+    scale: "BPS-16 · KPK Science Cadre",
+    emoji: "🧬",
+    color: "#059669",
+    bg: "rgba(5, 150, 105, 0.08)",
+    border: "rgba(5, 150, 105, 0.25)",
+    focus: "Biology (40%) · Chemistry (40%) · Pedagogy",
+    syllabus: [
+      { subject: "Biology (Cell, Genetics, Systems)", weight: "40%" },
+      { subject: "Chemistry (Organic, Physical, Inorg)", weight: "40%" },
+      { subject: "Pedagogy & Learning Assessment", weight: "12%" },
+      { subject: "English & Reasoning", weight: "8%" }
+    ],
+    sampleQuestions: [
+      { q: "During cellular respiration, glycolysis takes place in the:", opts: ["Mitochondrial Matrix", "Cytoplasm", "Cristae", "Endoplasmic Reticulum"], ans: 1, exp: "Glycolysis occurs in the cytoplasm and does not require oxygen." },
+      { q: "The oxidation state of Manganese in KMnO₄ is:", opts: ["+2", "+4", "+6", "+7"], ans: 3, exp: "K(+1) + Mn(x) + 4*O(-2) = 0 => 1 + x - 8 = 0 => x = +7." }
+    ]
+  },
+  {
+    id: "sst-math",
+    title: "SST Math/Phy",
+    fullName: "Secondary School Teacher (Math/Phy)",
+    scale: "BPS-16 · KPK Science Cadre",
+    emoji: "📐",
+    color: "#2563eb",
+    bg: "rgba(37, 99, 235, 0.08)",
+    border: "rgba(37, 99, 235, 0.25)",
+    focus: "Mathematics (40%) · Physics (40%) · Pedagogy",
+    syllabus: [
+      { subject: "Calculus, Linear Algebra & Geometry", weight: "40%" },
+      { subject: "Classical Mechanics & Electromagnetism", weight: "40%" },
+      { subject: "Pedagogy & Classroom Assessment", weight: "12%" },
+      { subject: "English & Reasoning", weight: "8%" }
+    ],
+    sampleQuestions: [
+      { q: "The derivative of sin(2x) with respect to x is:", opts: ["cos(2x)", "2 cos(2x)", "-2 cos(2x)", "2 sin(2x)"], ans: 1, exp: "d/dx[sin(2x)] = cos(2x) * 2 = 2 cos(2x)." },
+      { q: "The acceleration due to gravity (g) at the center of the Earth is:", opts: ["9.8 m/s²", "Zero", "Infinite", "4.9 m/s²"], ans: 1, exp: "At the Earth's center, gravitational pulls cancel in all directions, so g = 0." }
+    ]
+  },
+  {
+    id: "sst-gen",
+    title: "SST General",
+    fullName: "Secondary School Teacher (General)",
+    scale: "BPS-16 · Arts & Humanities",
+    emoji: "📚",
+    color: "#d97706",
+    bg: "rgba(217, 119, 6, 0.08)",
+    border: "rgba(217, 119, 6, 0.25)",
+    focus: "English (35%) · Pak Study · History · Pedagogy",
+    syllabus: [
+      { subject: "English Literature & Grammar", weight: "35%" },
+      { subject: "Pakistan Studies & Constitution", weight: "25%" },
+      { subject: "World History & Geography", weight: "20%" },
+      { subject: "Pedagogy & Classroom Dynamics", weight: "20%" }
+    ],
+    sampleQuestions: [
+      { q: "The historic Lucknow Pact between Congress and Muslim League was signed in:", opts: ["1913", "1916", "1919", "1923"], ans: 1, exp: "The Lucknow Pact was concluded in December 1916." },
+      { q: "Which figure of speech is used in: 'The wind whispered through the trees'?", opts: ["Metaphor", "Personification", "Simile", "Hyperbole"], ans: 1, exp: "Giving human traits ('whispered') to the wind is personification." }
+    ]
+  },
+  {
+    id: "lecturer",
+    title: "Lecturer",
+    fullName: "College Lecturer / Subject Specialist",
+    scale: "BPS-17 · KPPSC / FPSC",
+    emoji: "🎓",
+    color: "#7c3aed",
+    bg: "rgba(124, 58, 237, 0.08)",
+    border: "rgba(124, 58, 237, 0.25)",
+    focus: "Subject Specialization (80%) · Research (20%)",
+    syllabus: [
+      { subject: "Master's Core Subject Specialization", weight: "80%" },
+      { subject: "English & Research Methodology", weight: "10%" },
+      { subject: "Higher Education Assessment", weight: "10%" }
+    ],
+    sampleQuestions: [
+      { q: "Which statistical test is used to compare means between two independent groups?", opts: ["Chi-Square Test", "Student's t-test", "One-way ANOVA", "Pearson Correlation"], ans: 1, exp: "Independent two-sample t-test compares means across two groups." }
+    ]
+  },
+  {
+    id: "mdcat",
+    title: "MDCAT",
+    fullName: "Medical & Dental College Admission Test",
+    scale: "PMDC / ETEA · MBBS / BDS Entrance",
+    emoji: "🩺",
+    color: "#e11d48",
+    bg: "rgba(225, 29, 72, 0.08)",
+    border: "rgba(225, 29, 72, 0.25)",
+    focus: "Biology (34%) · Chem (27%) · Phy (27%)",
+    syllabus: [
+      { subject: "Biology (Cell, Genetics, Physiology)", weight: "68 MCQs" },
+      { subject: "Chemistry (Physical, Organic, Inorg)", weight: "56 MCQs" },
+      { subject: "Physics (Mechanics, Waves, Modern)", weight: "56 MCQs" },
+      { subject: "English Language Proficiency", weight: "20 MCQs" }
+    ],
+    sampleQuestions: [
+      { q: "During skeletal muscle contraction, calcium ions bind directly to:", opts: ["Actin", "Myosin", "Troponin", "Tropomyosin"], ans: 2, exp: "Ca²⁺ binds to troponin, exposing myosin-binding sites on actin." },
+      { q: "The pH of a 0.001 M HCl solution is:", opts: ["1", "2", "3", "4"], ans: 2, exp: "pH = -log[H+] = -log(10^-3) = 3." }
+    ]
+  },
+  {
+    id: "ecat",
+    title: "ECAT",
+    fullName: "Engineering College Admission Test",
+    scale: "UET / ETEA · Engineering Entrance",
+    emoji: "⚙️",
+    color: "#0891b2",
+    bg: "rgba(8, 145, 178, 0.08)",
+    border: "rgba(8, 145, 178, 0.25)",
+    focus: "Maths (30%) · Physics (30%) · Chem/CS (30%)",
+    syllabus: [
+      { subject: "Higher Mathematics (FSc 1 & 2)", weight: "30%" },
+      { subject: "Applied Physics (FSc 1 & 2)", weight: "30%" },
+      { subject: "Chemistry or Computer Science", weight: "30%" },
+      { subject: "English Comprehension", weight: "10%" }
+    ],
+    sampleQuestions: [
+      { q: "The physical dimension of Planck's constant (h) is identical to that of:", opts: ["Force", "Angular Momentum", "Linear Momentum", "Energy"], ans: 1, exp: "Both Planck's constant and angular momentum have units J·s (kg·m²/s)." }
+    ]
+  },
+  {
+    id: "computer-operator",
+    title: "Computer Operator",
+    fullName: "Computer Operator & IT Specialist",
+    scale: "BPS-16 · KPPSC / ETEA / Secretariat",
+    emoji: "💻",
+    color: "#0284c7",
+    bg: "rgba(2, 132, 199, 0.08)",
+    border: "rgba(2, 132, 199, 0.25)",
+    focus: "MS Office · Networking · Databases · OS",
+    syllabus: [
+      { subject: "MS Office (Word, Excel, PowerPoint, Access)", weight: "40%" },
+      { subject: "Computer Fundamentals & Operating Systems", weight: "25%" },
+      { subject: "Networking & Internet Protocols", weight: "15%" },
+      { subject: "Database & SQL Essentials", weight: "10%" },
+      { subject: "General English & Analytical Ability", weight: "10%" }
+    ],
+    sampleQuestions: [
+      { q: "In Microsoft Excel, which function calculates the highest value in a selected range?", opts: ["=LARGE()", "=MAX()", "=TOP()", "=HIGH()"], ans: 1, exp: "=MAX(range) returns the largest numerical value in that range." },
+      { q: "Which layer of the OSI reference model guarantees reliable end-to-end communication?", opts: ["Network Layer", "Transport Layer", "Data Link Layer", "Session Layer"], ans: 1, exp: "The Transport Layer (Layer 4) handles flow control and reliability via TCP." },
+      { q: "In SQL, which command removes a table definition and all its rows permanently?", opts: ["DELETE TABLE", "DROP TABLE", "REMOVE TABLE", "TRUNCATE"], ans: 1, exp: "DROP TABLE destroys the table definition and all associated contents." }
+    ]
+  },
+  {
+    id: "junior-clerk",
+    title: "Junior Clerk",
+    fullName: "Junior Clerk & Office Assistant",
+    scale: "BPS-11 · ETEA / NTS / District Cadre",
+    emoji: "⌨️",
+    color: "#64748b",
+    bg: "rgba(100, 116, 139, 0.08)",
+    border: "rgba(100, 116, 139, 0.25)",
+    focus: "Typing Skills · MS Office · Basic Math",
+    syllabus: [
+      { subject: "MS Office & Computer Literacy", weight: "35%" },
+      { subject: "General English (Grammar & Letter Drafting)", weight: "25%" },
+      { subject: "General Knowledge & Pak Studies", weight: "20%" },
+      { subject: "Everyday Science & Basic Arithmetic", weight: "20%" }
+    ],
+    sampleQuestions: [
+      { q: "Which keyboard shortcut is used to save the active document in MS Word?", opts: ["Ctrl + S", "Ctrl + P", "Ctrl + Z", "Ctrl + N"], ans: 0, exp: "Ctrl + S immediately saves changes to the current file." }
+    ]
+  },
+  {
+    id: "pms-tehsildar",
+    title: "PMS / Tehsildar",
+    fullName: "Provincial Management & Tehsildar",
+    scale: "BPS-16/17 · KPPSC Screening",
+    emoji: "🏛️",
+    color: "#475569",
+    bg: "rgba(71, 85, 105, 0.08)",
+    border: "rgba(71, 85, 105, 0.25)",
+    focus: "General Knowledge · Pak Affairs · Current Affairs",
+    syllabus: [
+      { subject: "Pakistan Affairs & Constitutional History", weight: "30%" },
+      { subject: "Current Affairs & International Relations", weight: "25%" },
+      { subject: "Everyday Science & General Ability", weight: "25%" },
+      { subject: "English Comprehension & Précis", weight: "20%" }
+    ],
+    sampleQuestions: [
+      { q: "The historic Objectives Resolution was passed by Pakistan's Constituent Assembly on:", opts: ["March 12, 1949", "August 14, 1947", "March 23, 1940", "October 7, 1958"], ans: 0, exp: "Moved by Liaquat Ali Khan, it was adopted on March 12, 1949." }
+    ]
+  }
+];
+
+// ═════════════════════════════════════════════════
+//  TESTS PREPS VIEW (ONE-LOOK 5x3 JEWEL GRID)
 // ═════════════════════════════════════════════════
 function renderTestsPreps() {
   state.page = "tests-preps";
@@ -8043,86 +8365,170 @@ function renderTestsPreps() {
   if (dashHeader) dashHeader.style.display = "none";
 
   pageContent().innerHTML = `
-    <div class="preps-container">
-      <!-- 1. Header Stage Bar -->
+    <div class="preps-universe-wrapper preps-one-look-view">
+      <!-- 1. Compact Header Stage Bar -->
       <div class="preps-stage-bar">
         <div class="psb-left">
           <span class="psb-icon">📝</span>
-          <div>
-            <div class="psb-title">KPK Board Tests Preparation &amp; Assessment Bank</div>
-            <div class="psb-sub">Chapter-wise MCQs, Solved Short Questions, and SLO Model Drills</div>
+          <div class="psb-titles">
+            <span class="psb-title">KPK &amp; National Recruitment &amp; Entry Tests Preparation Bank</span>
+            <span class="psb-sub">ETEA · NTS · KPPSC · PMDC · FPSC · Verified Syllabus &amp; Model MCQs</span>
           </div>
         </div>
-        <span class="psb-pill">Class 9 Matric Ready · Verified Syllabi</span>
+        <span class="psb-pill">15 Competitive Test Tracks · Click Card to Launch Prep</span>
       </div>
 
-      <!-- 2. Test Modes Strip (4 Quick Cards) -->
-      <div class="preps-modes-grid">
-        <div class="prep-mode-card" onclick="startQuickDrill()">
-          <div class="pmc-icon" style="background:rgba(2,132,199,0.12);color:#0284c7;">⚡</div>
-          <div class="pmc-info">
-            <div class="pmc-title">Quick 5-Question Drill</div>
-            <div class="pmc-desc">Instant diagnostic across Science &amp; Arts subjects</div>
-          </div>
-          <span class="pmc-btn">Start ➔</span>
-        </div>
-        <div class="prep-mode-card" onclick="openSubjectDetail('cls9', 'cls9-math')">
-          <div class="pmc-icon" style="background:rgba(16,185,129,0.12);color:#10b981;">🎯</div>
-          <div class="pmc-info">
-            <div class="pmc-title">Official SLO Assessments</div>
-            <div class="pmc-desc">Student Learning Objectives test bank with solutions</div>
-          </div>
-          <span class="pmc-btn">Practice ➔</span>
-        </div>
-        <div class="prep-mode-card" onclick="openSubjectDetail('cls9', 'cls9-phy')">
-          <div class="pmc-icon" style="background:rgba(99,102,241,0.12);color:#6366f1;">✍️</div>
-          <div class="pmc-info">
-            <div class="pmc-title">Solved Short Questions (SQ)</div>
-            <div class="pmc-desc">Board pattern concept Q&amp;As with marking keys</div>
-          </div>
-          <span class="pmc-btn">Explore ➔</span>
-        </div>
-        <div class="prep-mode-card" onclick="startQuickDrill()">
-          <div class="pmc-icon" style="background:rgba(245,158,11,0.12);color:#f59e0b;">⏱️</div>
-          <div class="pmc-info">
-            <div class="pmc-title">Timed Practice Test</div>
-            <div class="pmc-desc">Simulated board exam countdown &amp; instant scoring</div>
-          </div>
-          <span class="pmc-btn">Take Test ➔</span>
-        </div>
-      </div>
-
-      <!-- 3. Subject-wise Test Prep Bank (Class 9) -->
-      <div class="preps-subjects-section">
-        <div class="pss-header">
-          <span class="pss-title">📚 Subject-Wise Test Banks — Class 9 (KPK Board)</span>
-          <span class="pss-sub">Select any subject to launch chapter-wise practice tests</span>
-        </div>
-        <div class="preps-subjects-grid">
-          ${(DATA.subjects['cls9'] || []).map(s => `
-            <div class="prep-subj-card" onclick="openSubjectDetail('cls9', '${s.id}')">
-              <div class="psc-top">
-                <span class="psc-emoji">${s.emoji}</span>
-                <span class="psc-badge">${s.units} Units Ready</span>
-              </div>
-              <div class="psc-name">${s.name}</div>
-              <div class="psc-urdu">${s.urduName || ''}</div>
-              <div class="psc-meta">
-                <span>🎯 MCQs &amp; Solved SQs</span>
-                <span>✅ 100% KPK Syllabus</span>
-              </div>
-              <button class="psc-start-btn">Start Test Prep ➔</button>
+      <!-- 2. One-Look 5 Columns x 3 Rows Jewel Cards Grid (No Scrolling Down) -->
+      <div class="preps-jewel-grid">
+        ${COMPETITIVE_TESTS_DATA.map(t => `
+          <div class="prep-jewel-card" onclick="openCompetitiveTestModal('${t.id}')" title="Practice ${t.fullName} (${t.scale})">
+            <div class="pjc-icon-wrap" style="background:${t.bg};color:${t.color};border-color:${t.border};">
+              ${t.emoji}
             </div>
-          `).join('')}
-        </div>
+            <div class="pjc-body">
+              <div class="pjc-name-wrap">
+                <span class="pjc-name">${t.title}</span>
+                <span class="pjc-scale">${t.scale.split('·')[0].trim()}</span>
+              </div>
+              <div class="pjc-fullname">${t.fullName}</div>
+              <div class="pjc-meta-wrap">
+                <span class="pjc-focus">${t.focus}</span>
+              </div>
+            </div>
+            <span class="pjc-arrow">➔</span>
+          </div>
+        `).join('')}
       </div>
     </div>
   `;
 }
 
+// ─── COMPETITIVE TEST PREPARATION MODAL ──────────
+function openCompetitiveTestModal(testId) {
+  const t = COMPETITIVE_TESTS_DATA.find(x => x.id === testId);
+  if (!t) return;
+
+  const overlay = $("modalOverlay");
+  const header  = $("modalHeader");
+  const body    = $("modalBody");
+  if (!overlay || !header || !body) return;
+
+  header.innerHTML = `
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <span style="font-size:1.4rem;">${t.emoji}</span>
+      <div>
+        <div style="font-weight:800;font-size:1.1rem;color:#0f172a;">${t.title} — ${t.fullName}</div>
+        <div style="font-size:0.75rem;color:#0284c7;font-weight:700;">${t.scale}</div>
+      </div>
+    </div>
+  `;
+
+  body.innerHTML = `
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <!-- Syllabus Weightage Breakdown -->
+      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:0.75rem 1rem;">
+        <div style="font-size:0.82rem;font-weight:800;color:#1e293b;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.4rem;">
+          <span>🎯</span> Official Exam Syllabus &amp; Subject Weightage:
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.45rem;">
+          ${t.syllabus.map(s => `
+            <div style="display:flex;justify-content:space-between;align-items:center;background:#fff;padding:0.4rem 0.65rem;border-radius:6px;border:1px solid #e2e8f0;font-size:0.78rem;">
+              <span style="font-weight:600;color:#334155;">${s.subject}</span>
+              <span style="font-weight:800;color:${t.color};background:${t.bg};padding:0.15rem 0.45rem;border-radius:4px;">${s.weight}</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- Interactive Sample Test Drill -->
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;">
+          <div style="font-weight:800;font-size:0.95rem;color:#0f172a;">⚡ High-Yield Exam Drill (Solved with Rubrics)</div>
+          <span style="font-size:0.74rem;background:#e0f2fe;color:#0369a1;padding:0.2rem 0.55rem;border-radius:9999px;font-weight:700;">${t.sampleQuestions.length} Sample Questions</span>
+        </div>
+        <div class="mcq-list" style="display:flex;flex-direction:column;gap:0.75rem;">
+          ${t.sampleQuestions.map((q, qi) => `
+            <div class="tb-mcq-card" id="ctest-q-${qi}" style="border:1px solid #e2e8f0;border-radius:10px;padding:0.75rem;background:#ffffff;">
+              <div style="font-size:0.78rem;font-weight:700;color:${t.color};margin-bottom:0.25rem;">Question ${qi + 1}</div>
+              <div style="font-weight:700;font-size:0.92rem;color:#0f172a;margin-bottom:0.5rem;">${q.q}</div>
+              <div class="tb-opts-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;">
+                ${q.opts.map((opt, oi) => `
+                  <button class="tb-opt-btn" onclick="checkTestPrepMcq('${t.id}', ${qi}, ${oi}, ${q.ans}, '${encodeURIComponent(q.exp)}')">
+                    <span class="tb-opt-letter">${String.fromCharCode(65 + oi)}</span>
+                    <span>${opt}</span>
+                  </button>
+                `).join('')}
+              </div>
+              <div class="tb-feedback" id="ctest-fb-${qi}" style="display:none;margin-top:0.5rem;font-size:0.8rem;padding:0.5rem;border-radius:6px;"></div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- Action Footer -->
+      <div style="display:flex;justify-content:space-between;align-items:center;padding-top:0.5rem;border-top:1px solid #e2e8f0;flex-wrap:wrap;gap:0.5rem;">
+        <span style="font-size:0.76rem;color:#64748b;">Ready to attempt standard 100-MCQ simulated paper with 90-minute countdown?</span>
+        <div style="display:flex;gap:0.5rem;">
+          <button class="btn btn-secondary" onclick="closeModal()" style="font-size:0.8rem;padding:0.4rem 0.8rem;">Close</button>
+          <button class="btn btn-primary" onclick="alert('Full 100-MCQ ${t.title} exam simulation is configured for live session with question randomization!');" style="font-size:0.8rem;padding:0.4rem 0.9rem;background:${t.color};border-color:${t.color};">
+            🚀 Launch 100-MCQ Mock Exam
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  overlay.classList.add("open");
+}
+
+function checkTestPrepMcq(testId, qIndex, selectedOpt, correctAns, expEncoded) {
+  const card = $(`ctest-q-${qIndex}`);
+  const fb = $(`ctest-fb-${qIndex}`);
+  if (!card || !fb) return;
+
+  const exp = decodeURIComponent(expEncoded);
+  const btns = card.querySelectorAll(".tb-opt-btn");
+  btns.forEach(b => b.disabled = true);
+
+  if (selectedOpt === correctAns) {
+    if (btns[selectedOpt]) btns[selectedOpt].classList.add("correct");
+    fb.style.display = "block";
+    fb.style.background = "#dcfce7";
+    fb.style.color = "#15803d";
+    fb.style.border = "1px solid #86efac";
+    fb.innerHTML = `<strong>✅ Correct Answer!</strong> ${exp}`;
+    recordAnswer(true);
+  } else {
+    if (btns[selectedOpt]) btns[selectedOpt].classList.add("wrong");
+    if (btns[correctAns]) btns[correctAns].classList.add("correct");
+    fb.style.display = "block";
+    fb.style.background = "#fee2e2";
+    fb.style.color = "#b91c1c";
+    fb.style.border = "1px solid #fca5a5";
+    fb.innerHTML = `<strong>❌ Incorrect.</strong> Correct answer is <strong>(${String.fromCharCode(65 + correctAns)})</strong>: ${exp}`;
+    recordAnswer(false);
+  }
+}
+
 // ═════════════════════════════════════════════════
-//  PAPERS VIEW (PAST & MODEL PAPERS)
+//  PAPERS VIEW: FULL PAPER CREATION PROCESS SUITE
+//  FOR EACH CLASS IN EACH SUBJECT
 // ═════════════════════════════════════════════════
+let paperCreationState = {
+  classId: "cls9",
+  subjectId: "cls9-math",
+  paperType: "annual",
+  totalMarks: 75,
+  timeAllowed: "2:30 Hours",
+  institutionName: "KPK BOARD MODEL HIGH SCHOOL & COLLEGE, PESHAWAR",
+  examTitle: "ANNUAL EXAMINATION 2026",
+  includeSectionA: true,
+  includeSectionB: true,
+  includeSectionC: true,
+  showAnswerKey: false,
+  seed: 1
+};
+
 function renderPapersView() {
   state.page = "papers";
   state.activeView = "papers";
@@ -8133,74 +8539,563 @@ function renderPapersView() {
   const dashHeader = $("dash-header");
   if (dashHeader) dashHeader.style.display = "none";
 
+  // Validate state
+  const allClasses = DATA.classes || [];
+  if (!allClasses.find(c => c.id === paperCreationState.classId)) {
+    paperCreationState.classId = "cls9";
+  }
+  const currentClassSubjects = DATA.subjects[paperCreationState.classId] || [];
+  if (!currentClassSubjects.find(s => s.id === paperCreationState.subjectId)) {
+    paperCreationState.subjectId = currentClassSubjects[0] ? currentClassSubjects[0].id : "cls9-math";
+  }
+
   pageContent().innerHTML = `
-    <div class="papers-container">
-      <!-- 1. Header Stage Bar -->
-      <div class="papers-stage-bar">
-        <div class="psb-left">
-          <span class="psb-icon">📄</span>
+    <div class="papers-universe-wrapper papers-creator-view">
+      <!-- 1. Left Control Panel: Paper Creation Process Settings -->
+      <aside class="paper-creator-sidebar">
+        <div class="pcs-header">
+          <span style="font-size:1.15rem;">🖨️</span>
           <div>
-            <div class="psb-title">KPK Board Past Papers &amp; Model Question Papers</div>
-            <div class="psb-sub">Peshawar · Mardan · Swat · Malakand · Abbottabad · Kohat · Bannu · D.I. Khan</div>
+            <div class="pcs-title">Paper Creation Process</div>
+            <div class="pcs-sub">Class &amp; Subject Exam Maker</div>
           </div>
         </div>
-        <span class="psb-pill">Annual Exams 2020–2025 · Solved &amp; Verified</span>
+
+        <!-- Step 1: Select Class -->
+        <div class="pcs-field-group">
+          <label class="pcs-label" for="paperClassSelect">
+            <span class="pcs-step-badge">1</span> Select Academic Grade / Class:
+          </label>
+          <select id="paperClassSelect" class="pcs-select" onchange="onPaperClassChange(this.value)">
+            ${allClasses.map(c => `
+              <option value="${c.id}" ${c.id === paperCreationState.classId ? 'selected' : ''}>
+                ${c.emoji} ${c.name} (${c.subjects} Subjects)
+              </option>
+            `).join('')}
+          </select>
+        </div>
+
+        <!-- Step 2: Select Subject -->
+        <div class="pcs-field-group">
+          <label class="pcs-label" for="paperSubjectSelect">
+            <span class="pcs-step-badge">2</span> Select Subject for ${getClassName(paperCreationState.classId)}:
+          </label>
+          <select id="paperSubjectSelect" class="pcs-select" onchange="onPaperSubjectChange(this.value)">
+            ${currentClassSubjects.map(s => `
+              <option value="${s.id}" ${s.id === paperCreationState.subjectId ? 'selected' : ''}>
+                ${s.emoji || '📖'} ${s.name} ${s.nameUrdu ? `(${s.nameUrdu})` : ''} · ${s.chapters || 10} Units
+              </option>
+            `).join('')}
+          </select>
+        </div>
+
+        <!-- Step 3: Exam Type & Marks -->
+        <div class="pcs-field-group">
+          <label class="pcs-label">
+            <span class="pcs-step-badge">3</span> Examination Type &amp; Pattern:
+          </label>
+          <div class="pcs-type-pills">
+            <button class="pcs-type-btn ${paperCreationState.paperType === 'annual' ? 'active' : ''}" onclick="setPaperType('annual')">🏆 Full Annual (75M)</button>
+            <button class="pcs-type-btn ${paperCreationState.paperType === 'term1' ? 'active' : ''}" onclick="setPaperType('term1')">📘 1st Term (50M)</button>
+            <button class="pcs-type-btn ${paperCreationState.paperType === 'monthly' ? 'active' : ''}" onclick="setPaperType('monthly')">📑 Monthly Test (25M)</button>
+            <button class="pcs-type-btn ${paperCreationState.paperType === 'preboard' ? 'active' : ''}" onclick="setPaperType('preboard')">🎯 Pre-Board (75M)</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Institution & Header Customization -->
+        <div class="pcs-field-group">
+          <label class="pcs-label" for="paperInstName">
+            <span class="pcs-step-badge">4</span> Institution / School Name:
+          </label>
+          <input type="text" id="paperInstName" class="pcs-input" value="${paperCreationState.institutionName}" oninput="updatePaperInstitution(this.value)" placeholder="Enter School / College Name">
+        </div>
+
+        <!-- Step 5: Sections Toggle -->
+        <div class="pcs-field-group">
+          <label class="pcs-label">
+            <span class="pcs-step-badge">5</span> Exam Paper Sections:
+          </label>
+          <div class="pcs-checkboxes-row">
+            <label class="pcs-checkbox-label">
+              <input type="checkbox" ${paperCreationState.includeSectionA ? 'checked' : ''} onchange="togglePaperSection('includeSectionA', this.checked)">
+              Sec A (MCQs)
+            </label>
+            <label class="pcs-checkbox-label">
+              <input type="checkbox" ${paperCreationState.includeSectionB ? 'checked' : ''} onchange="togglePaperSection('includeSectionB', this.checked)">
+              Sec B (SQs)
+            </label>
+            <label class="pcs-checkbox-label">
+              <input type="checkbox" ${paperCreationState.includeSectionC ? 'checked' : ''} onchange="togglePaperSection('includeSectionC', this.checked)">
+              Sec C (LQs)
+            </label>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="pcs-actions-stack">
+          <button class="btn btn-primary pcs-action-btn" onclick="generateOfficialExamPaper(true)">
+            <span>⚡</span> Generate Official Exam Paper
+          </button>
+          <button class="btn pcs-print-btn" onclick="printOfficialExamPaper()">
+            <span>🖨️</span> Print Paper (A4 Official Format)
+          </button>
+          <button class="btn pcs-key-btn" onclick="togglePaperAnswerKey()">
+            <span>🔑</span> ${paperCreationState.showAnswerKey ? 'Hide Solved Key' : 'Show Solved Marking Scheme'}
+          </button>
+          <button class="btn pcs-shuffle-btn" onclick="shufflePaperQuestions()">
+            <span>🎲</span> Randomize / New Questions Set
+          </button>
+        </div>
+      </aside>
+
+      <!-- 2. Right Canvas: Authentic Board Exam Paper Preview (Printable & Exportable) -->
+      <main class="paper-preview-canvas" id="paperPreviewCanvas">
+        ${renderLiveExamPaperHtml()}
+      </main>
+    </div>
+  `;
+}
+
+function getClassName(classId) {
+  const c = (DATA.classes || []).find(x => x.id === classId);
+  return c ? c.name : "Class 9";
+}
+
+function getSelectedSubjectObj() {
+  const list = DATA.subjects[paperCreationState.classId] || [];
+  return list.find(s => s.id === paperCreationState.subjectId) || list[0] || { name: "Mathematics", emoji: "📐" };
+}
+
+function onPaperClassChange(newClassId) {
+  paperCreationState.classId = newClassId;
+  const subjects = DATA.subjects[newClassId] || [];
+  paperCreationState.subjectId = subjects[0] ? subjects[0].id : "";
+  renderPapersView();
+}
+
+function onPaperSubjectChange(newSubjectId) {
+  paperCreationState.subjectId = newSubjectId;
+  updatePaperPreview();
+}
+
+function setPaperType(type) {
+  paperCreationState.paperType = type;
+  if (type === "annual" || type === "preboard") {
+    paperCreationState.totalMarks = 75;
+    paperCreationState.timeAllowed = "2:30 Hours";
+    paperCreationState.examTitle = type === "annual" ? "ANNUAL EXAMINATION 2026" : "PRE-BOARD MOCK EXAMINATION 2026";
+  } else if (type === "term1") {
+    paperCreationState.totalMarks = 50;
+    paperCreationState.timeAllowed = "2:00 Hours";
+    paperCreationState.examTitle = "FIRST TERM EXAMINATION 2026";
+  } else {
+    paperCreationState.totalMarks = 25;
+    paperCreationState.timeAllowed = "1:00 Hour";
+    paperCreationState.examTitle = "MONTHLY ASSESSMENT TEST";
+  }
+  renderPapersView();
+}
+
+function updatePaperInstitution(val) {
+  paperCreationState.institutionName = val || "KPK BOARD MODEL HIGH SCHOOL & COLLEGE";
+  const el = $("previewInstName");
+  if (el) el.textContent = paperCreationState.institutionName.toUpperCase();
+}
+
+function togglePaperSection(secKey, checked) {
+  paperCreationState[secKey] = checked;
+  updatePaperPreview();
+}
+
+function togglePaperAnswerKey() {
+  paperCreationState.showAnswerKey = !paperCreationState.showAnswerKey;
+  renderPapersView();
+}
+
+function shufflePaperQuestions() {
+  paperCreationState.seed = (paperCreationState.seed || 1) + 1;
+  updatePaperPreview();
+}
+
+function generateOfficialExamPaper(showNotification) {
+  paperCreationState.seed = (paperCreationState.seed || 1) + 1;
+  updatePaperPreview();
+  if (showNotification) {
+    alert(`✅ Successfully generated official examination paper for ${getClassName(paperCreationState.classId)} — ${getSelectedSubjectObj().name}!`);
+  }
+}
+
+function updatePaperPreview() {
+  const canvas = $("paperPreviewCanvas");
+  if (canvas) {
+    canvas.innerHTML = renderLiveExamPaperHtml();
+  }
+}
+
+function printOfficialExamPaper() {
+  window.print();
+}
+
+// ─── LIVE EXAM PAPER TEMPLATE GENERATOR ──────────
+function renderLiveExamPaperHtml() {
+  const clsName = getClassName(paperCreationState.classId);
+  const subj = getSelectedSubjectObj();
+  const qData = getCurriculumQuestionsBank(paperCreationState.classId, subj.id, paperCreationState.seed);
+
+  return `
+    <div class="printable-exam-paper" id="printableExamPaper">
+      <!-- Official Header -->
+      <div class="pep-official-header">
+        <div class="pep-board-logo">🏛️</div>
+        <div class="pep-header-center">
+          <div class="pep-inst-name" id="previewInstName">${paperCreationState.institutionName.toUpperCase()}</div>
+          <div class="pep-exam-title">${paperCreationState.examTitle} · SESSION 2025–2026</div>
+          <div class="pep-sub-title">KHYBER PAKHTUNKHWA TEXTBOOK BOARD SYLLABUS · OFFICIAL PATTERN</div>
+        </div>
+        <div class="pep-board-seal">
+          <div class="pep-seal-box">KPK<br>DCTE</div>
+        </div>
       </div>
 
-      <!-- 2. Four Highlight Categories -->
-      <div class="papers-cards-grid">
-        <div class="paper-feature-card">
-          <div class="pfc-icon" style="background:rgba(2,132,199,0.12);color:#0284c7;">🏆</div>
-          <div class="pfc-title">2025 Annual Board Papers</div>
-          <div class="pfc-desc">Latest official question papers with verbatim KPK board solved keys and section breakdowns.</div>
-          <div class="pfc-badge">Class 9 &amp; 10 Available</div>
+      <!-- Credentials & Meta Grid -->
+      <div class="pep-meta-strip">
+        <div class="pep-meta-left">
+          <span><strong>Class:</strong> ${clsName}</span>
+          <span><strong>Subject:</strong> ${subj.emoji || ''} ${subj.name} ${subj.nameUrdu ? `(${subj.nameUrdu})` : ''}</span>
+          <span><strong>Paper Code:</strong> SET-${String.fromCharCode(65 + (paperCreationState.seed % 4))}-26</span>
         </div>
-        <div class="paper-feature-card">
-          <div class="pfc-icon" style="background:rgba(16,185,129,0.12);color:#10b981;">📜</div>
-          <div class="pfc-title">5-Year Past Papers Archive</div>
-          <div class="pfc-desc">Comprehensive compilation from 2020 to 2024 covering all 8 KPK Educational Boards.</div>
-          <div class="pfc-badge">Solved Short &amp; Long Qs</div>
-        </div>
-        <div class="paper-feature-card">
-          <div class="pfc-icon" style="background:rgba(99,102,241,0.12);color:#6366f1;">📐</div>
-          <div class="pfc-title">Official Model Papers</div>
-          <div class="pfc-desc">Directorate of Curriculum &amp; Teacher Education (DCTE) official model papers with SLO rubrics.</div>
-          <div class="pfc-badge">Scheme of Studies 2026</div>
-        </div>
-        <div class="paper-feature-card">
-          <div class="pfc-icon" style="background:rgba(245,158,11,0.12);color:#f59e0b;">🎯</div>
-          <div class="pfc-title">High-Yield SLO Trends</div>
-          <div class="pfc-desc">Frequency analysis of repeated board examination questions with step-by-step marking schemes.</div>
-          <div class="pfc-badge">Exam Readiness Bank</div>
+        <div class="pep-meta-right">
+          <span><strong>Time Allowed:</strong> ${paperCreationState.timeAllowed}</span>
+          <span><strong>Total Marks:</strong> ${paperCreationState.totalMarks}</span>
         </div>
       </div>
 
-      <!-- 3. Subject-wise Paper Archives -->
-      <div class="papers-subjects-section">
-        <div class="pss-header">
-          <span class="pss-title">📚 Solved Papers by Subject — Class 9 Matric</span>
-          <span class="pss-sub">Click any subject to practice past exam questions</span>
-        </div>
-        <div class="papers-list-grid">
-          ${(DATA.subjects['cls9'] || []).map(s => `
-            <div class="paper-subj-card" onclick="openSubjectDetail('cls9', '${s.id}')">
-              <div class="psc-top">
-                <span class="psc-emoji">${s.emoji}</span>
-                <span class="psc-badge">2020–2025 Papers</span>
+      <!-- Student Fill-in Box -->
+      <div class="pep-student-box">
+        <div class="pep-sfield"><strong>Roll No:</strong> ___________________</div>
+        <div class="pep-sfield"><strong>Student Name:</strong> ____________________________________</div>
+        <div class="pep-sfield"><strong>Section:</strong> ________</div>
+        <div class="pep-sfield"><strong>Date:</strong> ___ / ___ / 2026</div>
+      </div>
+
+      <!-- SECTION A: OBJECTIVE (MCQs) -->
+      ${paperCreationState.includeSectionA ? `
+        <div class="pep-section">
+          <div class="pep-sec-header">
+            <span class="pep-sec-title">SECTION — A (OBJECTIVE TYPE)</span>
+            <span class="pep-sec-marks">Marks: ${qData.mcqs.length}</span>
+          </div>
+          <div class="pep-sec-instruction">
+            <strong>Note:</strong> Attempt all questions. Each question carries 1 mark. Fill the corresponding bubble or encircle the correct option (A, B, C, or D).
+          </div>
+          <div class="pep-mcqs-grid">
+            ${qData.mcqs.map((m, idx) => `
+              <div class="pep-mcq-item">
+                <div class="pep-mcq-q"><strong>Q${idx + 1}.</strong> ${m.q}</div>
+                <div class="pep-mcq-options">
+                  ${m.opts.map((opt, oi) => `
+                    <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}">
+                      <span class="pep-bubble">○ ${String.fromCharCode(65 + oi)}</span> ${opt}
+                    </span>
+                  `).join('')}
+                </div>
+                ${paperCreationState.showAnswerKey ? `<div class="pep-key-note">💡 Key: (${String.fromCharCode(65 + m.ans)}) — ${m.exp || 'Standard syllabus definition'}</div>` : ''}
               </div>
-              <div class="psc-name">${s.name}</div>
-              <div class="psc-urdu">${s.urduName || ''}</div>
-              <div class="psc-meta">
-                <span>📝 Objective (MCQs) Solved</span>
-                <span>✍️ Subjective (SQ &amp; LQ) Keys</span>
-              </div>
-              <button class="psc-start-btn">View Solved Papers ➔</button>
-            </div>
-          `).join('')}
+            `).join('')}
+          </div>
         </div>
+      ` : ''}
+
+      <!-- SECTION B: SHORT QUESTIONS -->
+      ${paperCreationState.includeSectionB ? `
+        <div class="pep-section" style="margin-top:1.25rem;">
+          <div class="pep-sec-header">
+            <span class="pep-sec-title">SECTION — B (SHORT ANSWER QUESTIONS)</span>
+            <span class="pep-sec-marks">Marks: ${qData.sqs.length >= 12 ? '36 (9 × 4)' : `${qData.sqs.length * 4}`}</span>
+          </div>
+          <div class="pep-sec-instruction">
+            <strong>Note:</strong> Attempt any <strong>NINE (9)</strong> questions from this section. All questions carry equal marks (4 Marks each).
+          </div>
+          <div class="pep-sqs-list">
+            ${qData.sqs.map((sq, idx) => `
+              <div class="pep-sq-item">
+                <div class="pep-sq-q">
+                  <span><strong>Q${idx + 1}.</strong> ${sq.q}</span>
+                  <span class="pep-q-marks">(4)</span>
+                </div>
+                ${paperCreationState.showAnswerKey ? `
+                  <div class="pep-key-note" style="margin-top:0.3rem;">
+                    <strong>Marking Scheme:</strong> ${sq.key || '2 marks for clear definition/formula + 2 marks for solved steps/example.'}
+                  </div>
+                ` : ''}
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
+
+      <!-- SECTION C: LONG / DETAILED QUESTIONS -->
+      ${paperCreationState.includeSectionC ? `
+        <div class="pep-section" style="margin-top:1.25rem;">
+          <div class="pep-sec-header">
+            <span class="pep-sec-title">SECTION — C (LONG &amp; DETAILED QUESTIONS)</span>
+            <span class="pep-sec-marks">Marks: ${qData.lqs.length >= 4 ? '24 (3 × 8)' : `${qData.lqs.length * 8}`}</span>
+          </div>
+          <div class="pep-sec-instruction">
+            <strong>Note:</strong> Attempt any <strong>THREE (3)</strong> questions from this section. Each question carries 8 marks (sub-parts carry equal 4 marks each).
+          </div>
+          <div class="pep-lqs-list">
+            ${qData.lqs.map((lq, idx) => `
+              <div class="pep-lq-item">
+                <div class="pep-lq-q">
+                  <span><strong>Q${idx + 1}.</strong> ${lq.q}</span>
+                  <span class="pep-q-marks">(8)</span>
+                </div>
+                ${lq.subA ? `
+                  <div class="pep-lq-sub">
+                    <span>(a) ${lq.subA}</span>
+                    <span class="pep-q-marks">(4)</span>
+                  </div>
+                ` : ''}
+                ${lq.subB ? `
+                  <div class="pep-lq-sub">
+                    <span>(b) ${lq.subB}</span>
+                    <span class="pep-q-marks">(4)</span>
+                  </div>
+                ` : ''}
+                ${paperCreationState.showAnswerKey ? `
+                  <div class="pep-key-note" style="margin-top:0.3rem;">
+                    <strong>Examiner Rubric:</strong> Detailed mathematical proof / theoretical explanation, neat labeled diagram where required, and final conclusive statement.
+                  </div>
+                ` : ''}
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
+
+      <!-- Official Exam Verification Signatures Footer -->
+      <div class="pep-footer-sign-strip">
+        <div>Signature of Invigilator: ______________________</div>
+        <div>Examiner Marks: [ ______ / ${paperCreationState.totalMarks} ]</div>
+        <div>Signature of Head Examiner: ______________________</div>
       </div>
     </div>
   `;
+}
+
+// ─── CURRICULUM QUESTIONS BANK ENGINE ────────────
+function getCurriculumQuestionsBank(classId, subjectId, seed) {
+  // Rich question banks for core subjects
+  if (subjectId.includes("math")) {
+    return {
+      mcqs: [
+        { q: "If A = [[2, 1], [3, 4]], then the determinant |A| is equal to:", opts: ["5", "8", "6", "11"], ans: 0, exp: "det(A) = (2*4) - (1*3) = 8 - 3 = 5." },
+        { q: "The order of a row matrix is always:", opts: ["1 × n", "n × 1", "n × n", "2 × 2"], ans: 0, exp: "A row matrix consists of exactly 1 row and n columns." },
+        { q: "A square matrix A is called singular if:", opts: ["|A| ≠ 0", "|A| = 0", "A = A^t", "A = -A"], ans: 1, exp: "Singular matrix has a determinant of 0." },
+        { q: "The value of log₁₀(1000) is:", opts: ["1", "2", "3", "10"], ans: 2, exp: "10³ = 1000, so log₁₀(1000) = 3." },
+        { q: "In the expression a^x = y, the logarithmic form is:", opts: ["log_a(x) = y", "log_a(y) = x", "log_y(a) = x", "log_x(y) = a"], ans: 1, exp: "By logarithmic definition, base^exponent = argument." },
+        { q: "The degree of polynomial 4x³ + 2x²y² - 5y + 7 is:", opts: ["3", "4", "2", "5"], ans: 1, exp: "The term 2x²y² has degree 2 + 2 = 4." },
+        { q: "The factorized form of a² - b² is:", opts: ["(a - b)²", "(a + b)(a - b)", "a² - 2ab + b²", "(a + b)²"], ans: 1, exp: "Difference of two squares identity: (a+b)(a-b)." },
+        { q: "The LCM of 12x²y and 18xy² is:", opts: ["6xy", "36x²y²", "72x³y³", "18x²y²"], ans: 1, exp: "LCM(12, 18) = 36, and highest powers x², y²." },
+        { q: "The square root of (x + y)² is:", opts: ["±(x + y)", "x² + y²", "x - y", "2(x + y)"], ans: 0, exp: "Principal algebraic square root yields ±(x + y)." },
+        { q: "A linear equation in one variable has the general form:", opts: ["ax² + bx + c = 0", "ax + b = 0 (a ≠ 0)", "ax + by = c", "x³ + a = 0"], ans: 1, exp: "First-degree polynomial equation with a single variable." },
+        { q: "The point (-3, 4) lies in which quadrant of Cartesian plane?", opts: ["Quadrant I", "Quadrant II", "Quadrant III", "Quadrant IV"], ans: 1, exp: "x is negative and y is positive in Quadrant II." },
+        { q: "The distance between points (0, 0) and (3, 4) is:", opts: ["7 units", "5 units", "1 unit", "25 units"], ans: 1, exp: "d = √(3² + 4²) = √(9 + 16) = √25 = 5." },
+        { q: "Two lines are perpendicular if the product of their slopes is:", opts: ["1", "-1", "0", "Undefined"], ans: 1, exp: "m1 * m2 = -1 indicates perpendicularity." },
+        { q: "The sum of interior angles of a triangle is always:", opts: ["90°", "180°", "270°", "360°"], ans: 1, exp: "Fundamental Euclidean geometric theorem." },
+        { q: "In a right-angled triangle, Pythagoras theorem states that:", opts: ["a² = b² + c²", "Hypotenuse² = Base² + Perp²", "a + b = c", "Base = Perp"], ans: 1, exp: "Square on hypotenuse equals sum of squares on other two sides." }
+      ],
+      sqs: [
+        { q: "Define Transpose of a Matrix with an example.", key: "Interchanging rows into columns. For A = [[1, 2], [3, 4]], A^t = [[1, 3], [2, 4]]." },
+        { q: "If A = [[3, -1], [2, 4]], find the Multiplicative Inverse A⁻¹.", key: "|A| = 12 - (-2) = 14. Adj(A) = [[4, 1], [-2, 3]]. A⁻¹ = Adj(A)/|A|." },
+        { q: "Solve the system using Cramer's Rule: 2x - y = 5 and 3x + 2y = 11.", key: "Find det D, D_x, D_y. Compute x = D_x/D and y = D_y/D." },
+        { q: "State the four fundamental Laws of Logarithms.", key: "log(xy) = log x + log y; log(x/y) = log x - log y; log(x^n) = n log x; change of base." },
+        { q: "Evaluate using log tables: (3.812 × 46.5) / 8.92.", key: "Apply log, find characteristics and mantissas, subtract denominator log, take antilog." },
+        { q: "If x + 1/x = 3, find the numerical value of x² + 1/x².", key: "Squaring both sides: (x + 1/x)² = 9 => x² + 2 + 1/x² = 9 => x² + 1/x² = 7." },
+        { q: "Factorize completely: 8x³ - 27y³.", key: "Use a³ - b³ identity: (2x - 3y)(4x² + 6xy + 9y²)." },
+        { q: "Find the HCF of 14x³y² and 21x²y⁴ by prime factorization.", key: "Common numerical factor 7; common variable powers x²y²; HCF = 7x²y²." },
+        { q: "Solve the linear equation for x: 3(x - 2) + 4 = 2(x + 5).", key: "3x - 6 + 4 = 2x + 10 => 3x - 2 = 2x + 10 => x = 12." },
+        { q: "Solve and graph the inequality: 2x - 5 < 7 on real number line.", key: "2x < 12 => x < 6. Graph open circle at 6 with arrow pointing left." },
+        { q: "Find the midpoint of the line segment joining P(2, -4) and Q(6, 8).", key: "M = ((x1+x2)/2, (y1+y2)/2) = ((2+6)/2, (-4+8)/2) = (4, 2)." },
+        { q: "State S.A.S (Side-Angle-Side) Congruence Postulate for Triangles.", key: "If two sides and included angle of one triangle are congruent to corresponding parts of another." }
+      ],
+      lqs: [
+        {
+          q: "Matrix Methods & Simultaneous Equations",
+          subA: "Solve the system using Matrix Inversion Method: 4x + 2y = 8 and 3x - y = 1.",
+          subB: "Prove that (AB)⁻¹ = B⁻¹A⁻¹ using A = [[1, 2], [3, 0]] and B = [[2, -1], [1, 3]]."
+        },
+        {
+          q: "Algebraic Formulas & Logarithmic Applications",
+          subA: "Simplify using logarithm laws: (sqrt[5]{31.15} * (1.12)^2) / 8.713.",
+          subB: "If x = 2 + √3, calculate the values of: (i) x + 1/x, (ii) x² + 1/x², and (iii) x³ + 1/x³."
+        },
+        {
+          q: "Polynomials, Remainder Theorem & Factorization",
+          subA: "Use the Factor Theorem to factorize cubic polynomial: P(x) = x³ - 2x² - 5x + 6.",
+          subB: "Find the square root of 4x⁴ + 12x³ + 25x² + 24x + 16 by division method."
+        },
+        {
+          q: "Geometric Theorems & Practical Geometry",
+          subA: "Prove that: 'Any point on the right bisector of a line segment is equidistant from its end points.'",
+          subB: "Construct a triangle ABC with m(AB) = 6cm, m(BC) = 5cm, and m∠B = 60°. Draw its circumcircle and state radius."
+        }
+      ]
+    };
+  }
+
+  if (subjectId.includes("bio")) {
+    return {
+      mcqs: [
+        { q: "Which organelle is responsible for ATP cellular energy production?", opts: ["Ribosome", "Mitochondria", "Golgi Complex", "Nucleolus"], ans: 1, exp: "Mitochondria carry out cellular respiration." },
+        { q: "The basic structural and functional unit of all living organisms is:", opts: ["Tissue", "Cell", "Organ", "Molecule"], ans: 1, exp: "The cell is the basic unit of life." },
+        { q: "Enzymes speed up biochemical reactions by:", opts: ["Increasing temperature", "Lowering activation energy", "Consuming substrates", "Altering pH"], ans: 1, exp: "Enzymes act as biocatalysts by lowering the activation energy barrier." },
+        { q: "The light reactions of photosynthesis take place in the:", opts: ["Stroma", "Thylakoid membranes / Grana", "Outer membrane", "Cytosol"], ans: 1, exp: "Chlorophyll pigments in thylakoids absorb photons." },
+        { q: "The dark reaction (Calvin Cycle) occurs in the:", opts: ["Thylakoid", "Stroma of Chloroplast", "Mitochondria", "Ribosome"], ans: 1, exp: "Enzymes for carbon fixation reside in the stroma." },
+        { q: "Mitosis results in the production of:", opts: ["4 haploid cells", "2 diploid identical daughter cells", "Gametes", "Zygotes"], ans: 1, exp: "Mitosis preserves chromosome number (2n -> 2n)." },
+        { q: "Crossing over occurs during which stage of Meiosis I?", opts: ["Leptotene", "Pachytene", "Diplotene", "Diakinesis"], ans: 1, exp: "Chiasmata and genetic exchange occur in pachytene." },
+        { q: "Which blood group is known as the Universal Recipient?", opts: ["Blood Group O-", "Blood Group AB+", "Blood Group A+", "Blood Group B-"], ans: 1, exp: "AB+ has both A & B antigens and no antibodies." },
+        { q: "The transpiration pull in plants is explained by:", opts: ["Diffusion theory", "Cohesion-Tension theory", "Osmosis", "Capillarity"], ans: 1, exp: "Dixon & Joly's Cohesion-Tension theory." },
+        { q: "A deficiency of Vitamin C in human diet causes:", opts: ["Rickets", "Scurvy", "Night Blindness", "Beriberi"], ans: 1, exp: "Lack of ascorbic acid causes bleeding gums (scurvy)." },
+        { q: "The enzyme Pepsin works best in which environment?", opts: ["Highly acidic (pH 1.5 - 2)", "Neutral (pH 7)", "Basic (pH 8.5)", "Slightly alkaline"], ans: 0, exp: "Stomach HCl provides optimum acidic pH for pepsin." },
+        { q: "Which blood vessels carry oxygenated blood from lungs to the heart?", opts: ["Pulmonary Artery", "Pulmonary Vein", "Aorta", "Vena Cava"], ans: 1, exp: "Pulmonary veins carry oxygen-rich blood into left atrium." },
+        { q: "The movement of molecules from high to low concentration without energy is:", opts: ["Active Transport", "Simple Diffusion", "Endocytosis", "Phagocytosis"], ans: 1, exp: "Passive movement driven by concentration gradient." },
+        { q: "Who proposed the Five Kingdom Classification System?", opts: ["Carolus Linnaeus", "Robert Whittaker", "Aristotle", "Ernst Haeckel"], ans: 1, exp: "Robert Whittaker introduced the 5-kingdom model in 1969." },
+        { q: "Cell wall of fungi is composed of:", opts: ["Cellulose", "Chitin", "Peptidoglycan", "Pectin"], ans: 1, exp: "Fungal cell walls contain tough chitin polymer." }
+      ],
+      sqs: [
+        { q: "Differentiate between Prokaryotic and Eukaryotic cells with two examples.", key: "Prokaryotes lack membrane-bound nucleus (Bacteria); Eukaryotes possess true nucleus (Plant/Animal cells)." },
+        { q: "Explain the Lock and Key model of Enzyme action.", key: "Proposed by Emil Fischer: substrate fits into active site like a specific key into a lock." },
+        { q: "Write down the balanced chemical equation for Aerobic Cellular Respiration.", key: "C6H12O6 + 6O2 -> 6CO2 + 6H2O + Energy (36-38 ATP)." },
+        { q: "State two differences between Mitosis and Meiosis.", key: "Mitosis produces 2 identical diploid cells; Meiosis produces 4 genetically diverse haploid cells." },
+        { q: "Why is Meiosis considered essential for maintaining chromosome constancy?", key: "Reduces chromosome count by half in gametes, restored upon fertilization." },
+        { q: "Define Transpiration and name two environmental factors affecting its rate.", key: "Loss of water vapor from aerial plant parts; affected by temperature, humidity, wind, and light." },
+        { q: "Differentiate between Arteries and Veins.", key: "Arteries carry oxygenated blood away from heart under high pressure; Veins carry blood towards heart with valves." },
+        { q: "What is Atherosclerosis and how does it lead to a heart attack?", key: "Deposition of plaque/cholesterol in coronary arteries, narrowing lumen and causing ischemia." },
+        { q: "Name four major components of Human Blood and state one function of each.", key: "Plasma (transport), RBCs (oxygen carriage), WBCs (immunity), Platelets (blood clotting)." },
+        { q: "Explain the role of Bile juice in human digestive system.", key: "Emulsifies large lipid droplets into fine droplets and neutralizes acidic chyme." },
+        { q: "Define Biodiversity and state its importance in maintaining ecosystem balance.", key: "Variety of living organisms in an ecosystem; ensures food web stability and ecological services." },
+        { q: "What are Binomial Nomenclature rules introduced by Carolus Linnaeus?", key: "Two-part Latin name: Genus capitalized, species lowercase, italicized or underlined." }
+      ],
+      lqs: [
+        {
+          q: "Cellular Structure & Organelles",
+          subA: "Describe the structure and functions of the Cell Membrane according to the Fluid Mosaic Model with a neat labeled diagram.",
+          subB: "Compare and contrast Plant Cells and Animal Cells across four major structural features."
+        },
+        {
+          q: "Bioenergetics & Photosynthesis",
+          subA: "Explain the Light Dependent Reactions of Photosynthesis (Z-Scheme) with electron transport.",
+          subB: "Discuss the process of Glycolysis, Krebs Cycle, and Electron Transport Chain in cellular respiration."
+        },
+        {
+          q: "Human Digestive System",
+          subA: "Describe the mechanical and chemical digestion of food in the Human Stomach and Small Intestine.",
+          subB: "Explain the absorption of nutrients through Intestinal Villi into blood and lymph."
+        },
+        {
+          q: "Cardiovascular System & Circulation",
+          subA: "Explain the external and internal structure of the Human Heart with a labeled diagram, detailing double circulation.",
+          subB: "Describe the mechanism of Opening and Closing of Stomata based on Potassium ion hypothesis."
+        }
+      ]
+    };
+  }
+
+  if (subjectId.includes("phy")) {
+    return {
+      mcqs: [
+        { q: "Which of the following is a base SI quantity?", opts: ["Velocity", "Electric Current", "Force", "Work"], ans: 1, exp: "Ampere (Electric Current) is one of the 7 base SI units." },
+        { q: "The least count of a standard Vernier Calipers is:", opts: ["0.1 cm", "0.01 cm (0.1 mm)", "0.001 cm", "1 mm"], ans: 1, exp: "Vernier least count = 0.1 mm = 0.01 cm." },
+        { q: "A scalar quantity possesses:", opts: ["Magnitude only", "Direction only", "Both magnitude and direction", "Neither"], ans: 0, exp: "Scalars require only numerical magnitude with appropriate unit." },
+        { q: "Newton's First Law of Motion is also known as the Law of:", opts: ["Momentum", "Inertia", "Action and Reaction", "Gravitation"], ans: 1, exp: "Inertia is the tendency of objects to resist changes in velocity." },
+        { q: "The rate of change of momentum of a body is equal to:", opts: ["Velocity", "Acceleration", "Applied Force", "Torque"], ans: 2, exp: "Newton's Second Law: F = dp/dt." },
+        { q: "Centripetal acceleration is directed:", opts: ["Tangent to the circle", "Away from center", "Towards the center of curvature", "Opposite to motion"], ans: 2, exp: "Centripetal means 'center-seeking'." },
+        { q: "The value of gravitational constant G is:", opts: ["9.8 m/s²", "6.673 × 10⁻¹¹ N·m²/kg²", "6.4 × 10⁶ m", "3 × 10⁸ m/s"], ans: 1, exp: "Universal gravitational constant determined by Cavendish." },
+        { q: "The turning effect of a force about an axis is called:", opts: ["Momentum", "Torque / Moment of Force", "Pressure", "Work"], ans: 1, exp: "Torque τ = r × F." },
+        { q: "A body is in complete equilibrium if:", opts: ["ΣF = 0 only", "Στ = 0 only", "Both ΣF = 0 and Στ = 0", "Velocity is zero"], ans: 2, exp: "Both translational and rotational equilibrium conditions must hold." },
+        { q: "Work done is zero when the angle between Force and Displacement is:", opts: ["0°", "45°", "90°", "180°"], ans: 2, exp: "W = F·d·cos(90°) = 0." },
+        { q: "The energy possessed by a body due to its position or height is:", opts: ["Kinetic Energy", "Potential Energy (mgh)", "Thermal Energy", "Chemical Energy"], ans: 1, exp: "Gravitational potential energy Ep = mgh." },
+        { q: "The SI unit of Pressure is:", opts: ["Newton", "Pascal (N/m²)", "Joule", "Watt"], ans: 1, exp: "1 Pascal = 1 N/m²." },
+        { q: "Archimedes' principle explains:", opts: ["Boyle's Law", "Buoyant Upthrust on submerged objects", "Hooke's Law", "Thermal expansion"], ans: 1, exp: "Upthrust equals weight of displaced fluid." },
+        { q: "The clinical thermometer scale generally measures between:", opts: ["0°C to 100°C", "35°C to 42°C", "-10°C to 110°C", "0°F to 212°F"], ans: 1, exp: "Optimized for human body temperature around 37°C." },
+        { q: "Heat transfer through direct molecular collisions without bulk motion is:", opts: ["Conduction", "Convection", "Radiation", "Advection"], ans: 0, exp: "Thermal conduction occurs via lattice vibrations and free electrons in solids." }
+      ],
+      sqs: [
+        { q: "Differentiate between Base Quantities and Derived Quantities with two examples each.", key: "Base quantities are independent (Length, Time); Derived are expressed in terms of base (Force, Velocity)." },
+        { q: "Derive the Second Equation of Motion: S = vit + 1/2 at² using speed-time graph.", key: "Area under speed-time graph equals rectangle area (vit) + triangle area (1/2 * t * at)." },
+        { q: "State Newton's Third Law of Motion and give two daily life examples.", key: "To every action there is an equal and opposite reaction (Walking, Rocket propulsion)." },
+        { q: "Differentiate between Mass and Weight.", key: "Mass is quantity of matter (scalar, kg, constant); Weight is gravitational force (vector, N, variable)." },
+        { q: "State Newton's Law of Universal Gravitation and write its mathematical equation.", key: "F = G(m1*m2)/r²; force is proportional to product of masses and inversely to square of distance." },
+        { q: "Calculate the mass of Earth using Newton's law of gravitation.", key: "g = G*Me/R² => Me = (g*R²)/G ≈ 6.0 × 10²⁴ kg." },
+        { q: "State the two conditions of Equilibrium.", key: "1st Condition: ΣF = 0 (translational); 2nd Condition: Στ = 0 (rotational)." },
+        { q: "Define Kinetic Energy and write its formula.", key: "Energy possessed by a body due to its motion; Ek = 1/2 mv²." },
+        { q: "Define Power and its SI unit (Watt).", key: "Rate of doing work: P = W/t; 1 Watt = 1 Joule per second." },
+        { q: "State Pascal's Law and mention one practical application.", key: "Pressure applied to an enclosed liquid is transmitted undiminished in all directions (Hydraulic Brake/Lift)." },
+        { q: "State Hooke's Law and define Elastic Limit.", key: "Within elastic limit, stress is directly proportional to strain (F = kx)." },
+        { q: "Why is water not suitable as a thermometric liquid?", key: "Irregular thermal expansion, wets glass, high specific heat, transparent meniscus." }
+      ],
+      lqs: [
+        {
+          q: "Kinematics & Graphical Analysis",
+          subA: "Derive the Third Equation of Motion: 2aS = vf² - vi² using a speed-time graph.",
+          subB: "A car starts from rest and acquires a velocity of 20 m/s in 10 s. Find its acceleration and distance covered."
+        },
+        {
+          q: "Dynamics & Momentum Conservation",
+          subA: "State the Law of Conservation of Momentum and prove it for a system of two colliding balls.",
+          subB: "Define Centripetal Force. Derive the expression Fc = (mv²)/r."
+        },
+        {
+          q: "Gravitation & Satellites",
+          subA: "Determine the mass of Earth by considering a body of mass m resting on the Earth's surface.",
+          subB: "What are Artificial Satellites? Derive the mathematical formula for the critical orbital speed of a satellite orbiting close to Earth."
+        },
+        {
+          q: "Work, Energy & Thermal Properties",
+          subA: "Define Work. Prove that Work done equals Change in Kinetic Energy (Work-Energy Theorem).",
+          subB: "Explain anomalous expansion of water between 0°C and 4°C and its biological importance for aquatic marine life."
+        }
+      ]
+    };
+  }
+
+  // General Fallback for other subjects/classes
+  return {
+    mcqs: [
+      { q: `In ${clsName} curriculum, what is the core learning objective of Unit 1?`, opts: ["Fundamental Concepts", "Advanced Proofs", "Historical Context", "Analytical Critique"], ans: 0, exp: "Unit 1 establishes foundational knowledge and terminology." },
+      { q: "Which learning domain emphasizes understanding, application, and synthesis?", opts: ["Cognitive Domain", "Affective Domain", "Psychomotor Domain", "Physical Domain"], ans: 0, exp: "Bloom's cognitive taxonomy governs academic assessment." },
+      { q: "In standard examination marking, clarity and step-by-step reasoning receive:", opts: ["Zero weightage", "Proportional step marks", "Deduction", "Bonus only"], ans: 1, exp: "KPK Board marking keys award step marks for methodical execution." },
+      { q: "A student learning objective (SLO) framed with 'Calculate' tests which cognitive level?", opts: ["Knowledge", "Comprehension", "Application", "Evaluation"], ans: 2, exp: "Calculation requires applying principles to specific numerical problems." },
+      { q: "The official textbook curriculum is compiled and vetted by:", opts: ["Federal Directorate", "DCTE & KPK Textbook Board Peshawar", "Local Printing Press", "Independent Tutors"], ans: 1, exp: "Official KPK Board syllabi are published by Khyber Pakhtunkhwa Textbook Board." },
+      { q: "The primary purpose of Section A objective questions is to assess:", opts: ["Handwriting speed", "Broad syllabus coverage and concept precision", "Essay organization", "Memorization of paragraphs"], ans: 1, exp: "MCQs ensure wide sampling of core concepts across all units." },
+      { q: "In examination rubrics, defining a scientific law requires:", opts: ["Verbatim statement and formula", "Personal opinion", "Historical date only", "Rough estimation"], ans: 0, exp: "Formal definition along with mathematical relation is mandatory." },
+      { q: "Short Answer Questions in Section B generally require:", opts: ["1 word", "3 to 4 concise points with reasoning", "10 pages", "Diagram without labels"], ans: 1, exp: "SQs focus on concise, accurate answers of 3-5 lines or steps." },
+      { q: "Long questions in Section C assess a student's ability to:", opts: ["Guess choices", "Synthesize, derive, and analyze topics in depth", "Write illegibly", "Skip numericals"], ans: 1, exp: "Detailed descriptive questions evaluate comprehensive mastery." },
+      { q: "Effective revision strategies include:", opts: ["Solving past papers and model drills", "Rote learning without understanding", "Skipping difficult units", "Ignoring formulas"], ans: 0, exp: "Past papers and active recall yield maximum retention." }
+    ],
+    sqs: [
+      { q: `Explain the key concepts of Chapter 1 in ${clsName} syllabus.`, key: "Define core principles, state governing laws, and cite appropriate practical examples." },
+      { q: "Differentiate between theoretical concepts and practical applications.", key: "Theory describes principles; practical applications show real-world utilization." },
+      { q: "What are the common errors students make in board examinations and how can they be avoided?", key: "Misreading question instructions, skipping units, poor time management." },
+      { q: "Explain the importance of diagrams and graphs in presenting answers.", key: "Visual representation clarifies concepts and secures full examiner marks." },
+      { q: "State three main points regarding the historical background or discovery of the subject matter.", key: "Scientist/scholar name, era, and core breakthrough." },
+      { q: "Explain the role of units and dimensions in mathematical and scientific answers.", key: "Answers without SI units lose 0.5 to 1 mark." }
+    ],
+    lqs: [
+      {
+        q: "Comprehensive Subject Synthesis",
+        subA: "Discuss the fundamental principles of the subject in detail with appropriate derivations and diagrams.",
+        subB: "Apply the learned concepts to solve a practical real-life scenario or numerical exercise."
+      },
+      {
+        q: "Critical Analysis & Comparative Study",
+        subA: "Critically analyze the two dominant theories in the curriculum and evaluate their strengths and limitations.",
+        subB: "Draw a detailed flowchart or labeled schematic summarizing the entire operational process."
+      }
+    ]
+  };
 }
 
 // ─────────────────────────────────────────
