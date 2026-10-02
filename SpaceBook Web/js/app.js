@@ -166,6 +166,17 @@ function setupNavListeners() {
 function setActiveNav(page) {
   document.querySelectorAll("[data-page]").forEach(el =>
     el.classList.toggle("active", el.dataset.page === page));
+  const statH = document.getElementById("paperStatisticalHeader");
+  if (statH) {
+    if (page === "papers") {
+      statH.style.display = "flex";
+      if (typeof renderPaperStatisticalHeader === "function") {
+        renderPaperStatisticalHeader();
+      }
+    } else {
+      statH.style.display = "none";
+    }
+  }
 }
 
 function setupMobileMenu() {
@@ -8868,12 +8879,12 @@ function renderPapersView() {
   pageContent().innerHTML = `
     <div class="papers-universe-wrapper papers-creator-view">
       <!-- 1. Left Wizard Controller Panel -->
-      <aside class="paper-creator-sidebar" id="paperCreatorSidebar" style="position:relative;height:calc(100vh - 78px);overflow-y:auto;display:block;padding:0.85rem;box-sizing:border-box;">
+      <aside class="paper-creator-sidebar" id="paperCreatorSidebar" style="position:relative;height:calc(100vh - 128px);overflow-y:auto;display:block;padding:0.85rem;box-sizing:border-box;">
         ${renderPaperGeneratorLeftPanel()}
       </aside>
 
       <!-- 2. Right Canvas: Authentic Board Exam Paper Live Preview -->
-      <main class="paper-preview-canvas" id="paperPreviewCanvas" style="height:calc(100vh - 78px);overflow-y:auto;">
+      <main class="paper-preview-canvas" id="paperPreviewCanvas" style="height:calc(100vh - 128px);overflow-y:auto;">
         ${renderLiveExamPaperHtml()}
       </main>
     </div>
@@ -8882,6 +8893,8 @@ function renderPapersView() {
     <div id="paperBlueprintModalContainer"></div>
     <div id="qBankModalContainer"></div>
   `;
+
+  renderPaperStatisticalHeader();
 }
 
 // ─── LEFT PANEL GENERATOR RENDERER ─────────────────────────
@@ -9045,6 +9058,135 @@ function renderPaperLiveStatsBox() {
     </div>
   `;
 }
+
+// ─── PAPERS SECONDARY STATISTICAL HEADER (FULL-WIDTH SINGLE LINE) ──────
+function renderPaperStatisticalHeader() {
+  const headerEl = $("paperStatisticalHeader");
+  if (!headerEl) return;
+
+  if (state.page !== "papers" && state.activeView !== "papers") {
+    headerEl.style.display = "none";
+    return;
+  }
+
+  headerEl.style.display = "flex";
+
+  const clsName = getClassName(paperCreationState.classId);
+  const subj = getSelectedSubjectObj();
+  const isSame = (paperCreationState.mcqSettings.samePage !== false);
+  const currentCols = paperCreationState.mcqSettings.columns || 1;
+  const isOmr = (paperCreationState.mcqSettings.omrBased !== false);
+
+  const totalM = Number(paperCreationState.totalMarks) || 75;
+  let selectedM = 0;
+  let completedCatsCount = 0;
+
+  const rows = (paperCreationState.categoriesOrder || []).map((catId, catIdx) => {
+    const meta = getCategoryMeta(catId);
+    const alloc = paperCreationState.categoryAllocations[catId] || { count: 10, marksPerQ: 1, totalMarks: 10 };
+    const selList = paperCreationState.selectedQuestionsByCategory[catId] || [];
+    const count = selList.length;
+    const catMarks = Math.min(count, alloc.count) * (alloc.marksPerQ || 1);
+    selectedM += catMarks;
+
+    const isDone = count >= alloc.count;
+    if (isDone) completedCatsCount++;
+
+    return {
+      catId,
+      catIdx,
+      name: meta.name,
+      icon: meta.icon,
+      count,
+      required: alloc.count,
+      catMarks,
+      totalCategoryMarks: alloc.totalMarks,
+      isDone
+    };
+  });
+
+  const remainingM = Math.max(0, totalM - selectedM);
+  const activeIdx = paperCreationState.activeCategoryIndex || 0;
+
+  headerEl.innerHTML = `
+    <!-- 1. Class -->
+    <span class="psh-item" title="Class: ${clsName}">
+      <span style="font-size:0.92rem;">🎓</span>
+      <span>${clsName}</span>
+    </span>
+
+    <!-- 2. Subject -->
+    <span class="psh-item" title="Subject: ${subj.name}">
+      <span style="font-size:0.92rem;">${subj.emoji || '📖'}</span>
+      <span>${subj.name}</span>
+    </span>
+
+    <!-- 3. MCQs Paper Mode -->
+    <span class="psh-item clickable" onclick="openExamSettingsModal()" title="MCQs Paper Mode: ${isSame ? 'Same Paper' : 'Separated'} (Click to change)">
+      <span>${isSame ? '📄' : '📑'}</span>
+      <span>${isSame ? 'Same Paper' : 'Separated'}</span>
+    </span>
+
+    <!-- 4. MCQ Columns -->
+    <span class="psh-item clickable" onclick="openExamSettingsModal()" title="MCQ Columns: ${currentCols} Column${currentCols > 1 ? 's' : ''} (Click to change)">
+      <span>⊞</span>
+      <span>${currentCols} Col${currentCols > 1 ? 's' : ''}</span>
+    </span>
+
+    <!-- 5. Option Style -->
+    <span class="psh-item clickable" onclick="openExamSettingsModal()" title="Option Style: ${isOmr ? 'OMR Bubbles' : 'Standard (A-D)'} (Click to change)">
+      <span>${isOmr ? '🔘' : '🔤'}</span>
+      <span>${isOmr ? 'OMR Bubbles' : 'Standard'}</span>
+    </span>
+
+    <span class="psh-sep"></span>
+
+    <!-- 6. Total Marks -->
+    <span class="psh-item psh-badge-total" title="Total Marks: ${totalM} Marks">
+      <span>💯</span>
+      <span>${totalM}M</span>
+    </span>
+
+    <!-- 7. Selected Marks -->
+    <span class="psh-item psh-badge-selected" title="Selected Marks: ${selectedM} of ${totalM} Marks">
+      <span>✍️</span>
+      <span>${selectedM}M</span>
+    </span>
+
+    <!-- 8. Remaining Marks -->
+    <span class="psh-item ${remainingM === 0 ? 'psh-badge-done' : 'psh-badge-pending'}" title="Remaining Marks: ${remainingM} Marks">
+      <span>${remainingM === 0 ? '✅' : '⏳'}</span>
+      <span>${remainingM}M</span>
+    </span>
+
+    <span class="psh-sep"></span>
+
+    <!-- 9. Categories Stats (No titles, with icons, horizontally in single line) -->
+    ${rows.map(r => {
+      const isCurrentActive = (activeIdx === r.catIdx);
+      return `
+        <span class="psh-item clickable ${r.isDone ? 'psh-badge-done' : ''} ${isCurrentActive ? 'active' : ''}" 
+              onclick="jumpToCategoryStep(${r.catIdx})" 
+              title="${r.name}: ${r.count} of ${r.required} questions selected (${r.catMarks} of ${r.totalCategoryMarks}M)">
+          <span>${r.isDone ? '✅' : '⏳'}</span>
+          <span>${r.icon}</span>
+          <span>${r.count} / ${r.required} Qs (${r.catMarks} / ${r.totalCategoryMarks}M)</span>
+        </span>
+      `;
+    }).join('')}
+
+    <!-- 10. Quick Action Settings & Print Buttons on Far Right -->
+    <div style="margin-left:auto;display:inline-flex;align-items:center;gap:0.35rem;flex-shrink:0;">
+      <button class="psh-item clickable" onclick="openExamSettingsModal()" title="Paper Layout, Marks &amp; Credentials Settings">
+        <span>⚙️</span>
+      </button>
+      <button class="psh-item clickable psh-btn-print" onclick="printPaperNow()" title="Print Exam Paper">
+        <span>🖨️</span>
+      </button>
+    </div>
+  `;
+}
+window.renderPaperStatisticalHeader = renderPaperStatisticalHeader;
 
 // ─── ACTIVE CATEGORY QUESTION WORK AREA ─────────────────────
 function renderActiveCategoryWorkArea() {
@@ -9384,6 +9526,9 @@ function refreshLeftPanelBody() {
   const sideEl = document.getElementById('paperCreatorSidebar');
   if (sideEl) {
     sideEl.innerHTML = renderPaperGeneratorLeftPanel();
+  }
+  if (typeof renderPaperStatisticalHeader === 'function') {
+    renderPaperStatisticalHeader();
   }
 }
 
@@ -11056,6 +11201,9 @@ function updatePaperPreview() {
   const canvas = $("paperPreviewCanvas");
   if (canvas) {
     canvas.innerHTML = renderLiveExamPaperHtml();
+  }
+  if (typeof renderPaperStatisticalHeader === 'function') {
+    renderPaperStatisticalHeader();
   }
 }
 
