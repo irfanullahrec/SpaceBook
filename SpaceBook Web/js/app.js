@@ -8942,9 +8942,10 @@ function renderPaperGeneratorLeftPanel() {
     ${renderPaperLiveStatsBox()}
 
     <!-- Stepper Navigation Bar -->
-    <div class="q-stepper-strip">
+    <div class="q-stepper-strip" id="paperStepperStrip">
       ${paperCreationState.categoriesOrder.map((catId, idx) => {
         const catMeta = getCategoryMeta(catId);
+        const shortName = getCategoryShortLabel(catId, catMeta);
         const alloc = paperCreationState.categoryAllocations[catId] || { count: 10, totalMarks: 10 };
         const selectedList = paperCreationState.selectedQuestionsByCategory[catId] || [];
         const isComplete = selectedList.length >= alloc.count;
@@ -8952,15 +8953,16 @@ function renderPaperGeneratorLeftPanel() {
         return `
           <button class="q-stepper-pill ${isActive ? 'active' : ''} ${isComplete ? 'completed' : ''}" 
                   onclick="jumpToCategoryStep(${idx})" title="${catMeta.name}">
-            <span>${isComplete ? '✓' : (idx + 1)}.</span>
-            <span>${catMeta.icon} ${catMeta.name.split(' ')[0]}</span>
-            <span style="font-size:0.62rem;opacity:0.85;">(${selectedList.length}/${alloc.count})</span>
+            <span class="q-stepper-num">${isComplete ? '✓' : (idx + 1)}</span>
+            <span class="q-stepper-label">${catMeta.icon} ${shortName}</span>
+            <span class="q-stepper-count-badge ${isComplete ? 'done' : ''}">(${selectedList.length}/${alloc.count})</span>
           </button>
         `;
       }).join('')}
-      <button class="q-stepper-pill ${paperCreationState.workflowStage === 'review' ? 'active' : ''}" 
-              onclick="jumpToReviewStage()" style="font-weight:800;">
-        <span>📄 Review</span>
+      <button class="q-stepper-pill review-pill ${paperCreationState.workflowStage === 'review' ? 'active' : ''}" 
+              onclick="jumpToReviewStage()" title="Review final paper and print options">
+        <span class="q-stepper-num">📄</span>
+        <span class="q-stepper-label">Review &amp; Print</span>
       </button>
     </div>
 
@@ -9257,16 +9259,40 @@ function renderActiveCategoryWorkArea() {
 function renderPaperReviewWorkArea() {
   const clsName = getClassName(paperCreationState.classId);
   const subj = getSelectedSubjectObj();
+  const totalM = Number(paperCreationState.totalMarks) || 75;
+  let selectedM = 0;
+  let completedCatsCount = 0;
+
+  paperCreationState.categoriesOrder.forEach(catId => {
+    const alloc = paperCreationState.categoryAllocations[catId] || { count: 10, totalMarks: 10 };
+    const sel = (paperCreationState.selectedQuestionsByCategory[catId] || []).length;
+    if (sel >= alloc.count) completedCatsCount++;
+    selectedM += Math.min(sel, alloc.count) * (alloc.marksPerQ || 1);
+  });
+
+  const totalCats = paperCreationState.categoriesOrder.length;
+  const isFullyComplete = (selectedM >= totalM) && (completedCatsCount >= totalCats);
 
   return `
     <div style="background:#ffffff;border:1px solid #cbd5e1;border-radius:10px;padding:0.85rem;display:flex;flex-direction:column;gap:0.75rem;">
       <div style="display:flex;align-items:center;gap:0.5rem;padding-bottom:0.5rem;border-bottom:1.5px solid #e2e8f0;">
-        <span style="font-size:1.6rem;">🎉</span>
+        <span style="font-size:1.6rem;">${isFullyComplete ? '🎉' : '📋'}</span>
         <div>
-          <div style="font-weight:900;font-size:0.92rem;color:#166534;">Examination Paper Complete!</div>
+          <div style="font-weight:900;font-size:0.92rem;color:${isFullyComplete ? '#166534' : '#0369a1'};">
+            ${isFullyComplete ? 'Examination Paper Complete!' : 'Paper Review &amp; Actions'}
+          </div>
           <div style="font-size:0.68rem;color:#64748b;">${clsName} · ${subj.name} · KPK Board Standard</div>
         </div>
       </div>
+
+      ${!isFullyComplete ? `
+        <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:6px;padding:0.45rem 0.6rem;font-size:0.72rem;color:#92400e;line-height:1.45;">
+          ⚠️ <b>Paper Incomplete (${completedCatsCount}/${totalCats} Categories · ${selectedM}/${totalM} Marks):</b>
+          <div style="margin-top:0.25rem;">
+            Click on any category step above (e.g. <b>MCQs</b>, <b>Words</b>) to pick and customize questions, or print/export the current draft below.
+          </div>
+        </div>
+      ` : ''}
 
       <div style="display:flex;flex-direction:column;gap:0.4rem;">
         <button class="btn btn-primary" onclick="printOfficialExamPaper()" style="font-size:0.84rem;padding:0.6rem;font-weight:800;">
@@ -9288,7 +9314,7 @@ function renderPaperReviewWorkArea() {
         </div>
 
         <button class="pcs-shuffle-btn" onclick="jumpToCategoryStep(0)" style="margin-top:0.4rem;">
-          ✏️ Back to Edit Questions
+          ✏️ Pick &amp; Edit Questions
         </button>
 
         <button class="pcs-shuffle-btn" onclick="openPaperBlueprintModal()">
@@ -9992,6 +10018,34 @@ function distributeBlueprintMarks(targetTotal, cats, allocationsMap) {
 function getCategoryMeta(catId) {
   const cats = getSubjectCategories(paperCreationState.subjectId, paperCreationState.classId);
   return cats.find(c => c.id === catId) || { id: catId, name: catId, icon: "📝", desc: "" };
+}
+
+function getCategoryShortLabel(catId, catMeta) {
+  if (!catMeta) catMeta = getCategoryMeta(catId);
+  const id = (catId || "").toLowerCase();
+  if (id === 'mcqs') return 'MCQs';
+  if (id === 'wordsmeanings' || id === 'words_meanings') return 'Words: Meanings';
+  if (id === 'wordsopposites' || id === 'words_opposites') return 'Words: Opposites';
+  if (id === 'wordssimilars' || id === 'words_similars') return 'Words: Similars';
+  if (id === 'wordsuse' || id === 'words_use') return 'Words: Sentences';
+  if (id === 'sqs' || id === 'short_questions') return 'Short Questions';
+  if (id === 'lqs' || id === 'long_questions') return 'Long Questions';
+  if (id === 'applications') return 'Applications';
+  if (id === 'stories' || id === 'moral_stories') return 'Moral Stories';
+  if (id === 'essays') return 'Essays';
+  if (id === 'letters') return 'Letters';
+  if (id === 'grammar') return 'Grammar & Tenses';
+  if (id === 'translation') return 'Translation';
+  if (id === 'comprehension') return 'Comprehension';
+
+  if (catMeta && catMeta.name) {
+    if (catMeta.name.includes('—')) {
+      const parts = catMeta.name.split('—').map(s => s.trim());
+      return parts[1] ? `${parts[0]}: ${parts[1].split('/')[0].trim()}` : parts[0];
+    }
+    return catMeta.name;
+  }
+  return catId;
 }
 
 // ─── UNIFIED CURRICULUM QUESTIONS BANK EXTRACTOR ───────────

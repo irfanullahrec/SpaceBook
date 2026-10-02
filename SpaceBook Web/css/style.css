@@ -7187,6 +7187,7 @@ body:has(.papers-creator-view) #page-content {
   flex-direction: column;
   gap: 0.4rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0 !important;
 }
 
 .pls-header {
@@ -7240,51 +7241,101 @@ body:has(.papers-creator-view) #page-content {
   color: #15803d;
 }
 
-/* 3. Horizontal Stepper Tabs */
+/* 3. Horizontal & Wrapped Stepper Tabs */
 .q-stepper-strip {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.35rem;
-  overflow-x: auto;
-  scrollbar-width: none;
-  padding: 0.15rem 0;
-}
-.q-stepper-strip::-webkit-scrollbar {
-  display: none;
+  gap: 0.4rem;
+  padding: 0.45rem 0.55rem;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  flex-shrink: 0 !important;
+  min-height: 44px;
 }
 
 .q-stepper-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.32rem 0.6rem;
-  border-radius: 99px;
-  border: 1px solid #e2e8f0;
+  gap: 0.38rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 7px;
+  border: 1.5px solid #cbd5e1;
   background: #ffffff;
-  color: #64748b;
-  font-size: 0.7rem;
+  color: #334155;
+  font-size: 0.74rem;
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+  line-height: 1.3;
 }
 
 .q-stepper-pill:hover {
   background: #f1f5f9;
+  border-color: #94a3b8;
   color: #0f172a;
+  transform: translateY(-1px);
 }
 
 .q-stepper-pill.active {
-  background: #0284c7;
-  color: #ffffff;
-  border-color: #0284c7;
-  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3);
+  background: #0284c7 !important;
+  color: #ffffff !important;
+  border-color: #0284c7 !important;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.35) !important;
 }
 
 .q-stepper-pill.completed {
-  background: #dcfce7;
+  background: #f0fdf4;
   color: #15803d;
   border-color: #86efac;
+}
+
+.q-stepper-pill.completed.active {
+  background: #16a34a !important;
+  color: #ffffff !important;
+  border-color: #16a34a !important;
+}
+
+.q-stepper-num {
+  font-weight: 800;
+  font-size: 0.7rem;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 0.05rem 0.35rem;
+  border-radius: 99px;
+  border: 1px solid #e2e8f0;
+}
+
+.q-stepper-pill.active .q-stepper-num {
+  background: rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.q-stepper-count-badge {
+  font-size: 0.67rem;
+  font-weight: 800;
+  padding: 0.08rem 0.32rem;
+  border-radius: 99px;
+  background: #f1f5f9;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+}
+
+.q-stepper-count-badge.done {
+  background: #dcfce7;
+  color: #166534;
+  border-color: #bbf7d0;
+}
+
+.q-stepper-pill.active .q-stepper-count-badge {
+  background: rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 /* 4. Filter Toolbar */
