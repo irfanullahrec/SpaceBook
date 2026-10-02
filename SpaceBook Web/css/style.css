@@ -5398,13 +5398,18 @@ body:has(.math-unified-view) #page-content {
   align-items: baseline;
   gap: 0.75rem;
   min-width: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .mch-title {
   font-size: 1.05rem;
   font-weight: 800;
   color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .mch-urdu {
@@ -5412,6 +5417,30 @@ body:has(.math-unified-view) #page-content {
   font-size: 1.1rem;
   color: #93c5fd;
   direction: rtl;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.topic-sub-tabs-bar-fixed {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding: 0.35rem 0.85rem;
+  background: #f8fafc;
+  border-bottom: 2px solid #cbd5e1;
+  flex-shrink: 0;
+  scrollbar-width: thin;
+  z-index: 20;
+}
+
+.topic-sub-tabs-bar-fixed::-webkit-scrollbar {
+  height: 4px;
+}
+
+.topic-sub-tabs-bar-fixed::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
 }
 
 .math-nav-tabs {

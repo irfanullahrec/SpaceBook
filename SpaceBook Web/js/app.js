@@ -12731,23 +12731,13 @@ function renderMathChapter(index) {
   const pdfFile = 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
 
   area.innerHTML = `
-    <!-- Sleek Chapter Header Bar with Unit, Chapter Name, Urdu Meaning & Layout Switcher -->
+    <!-- Sleek Chapter Header Bar with Unit, Chapter Name, Urdu Meaning -->
     <div class="math-compact-header-bar">
-      <div class="mch-left">
+      <div class="mch-left" style="width:100%;min-width:0;">
         <span class="mch-unit-pill">Unit ${ch.number}</span>
-        <div class="mch-titles">
-          <span class="mch-title">${ch.title}</span>
-          ${ch.titleUrdu ? `<span class="mch-urdu">${ch.titleUrdu}</span>` : ''}
-        </div>
-      </div>
-      <div class="mch-right">
-        <div class="math-view-switcher" role="group" aria-label="Layout View">
-          <button class="math-view-btn ${state.mathTopicLayout !== 'grid' ? 'active' : ''}" id="mathListViewBtn" onclick="setMathTopicLayout('list')" title="List View (1 card per row)">
-            <span>☰</span> List View
-          </button>
-          <button class="math-view-btn ${state.mathTopicLayout === 'grid' ? 'active' : ''}" id="mathGridViewBtn" onclick="setMathTopicLayout('grid')" title="Grid View (3 cards per row)">
-            <span>⊞</span> Grid View
-          </button>
+        <div class="mch-titles" style="flex-wrap:nowrap;white-space:nowrap;overflow:hidden;">
+          <span class="mch-title" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${ch.title}</span>
+          ${ch.titleUrdu ? `<span class="mch-urdu" style="white-space:nowrap;">${ch.titleUrdu}</span>` : ''}
         </div>
       </div>
     </div>
@@ -14419,23 +14409,13 @@ function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
 
   area.innerHTML = `
     <div class="math-compact-header-bar" style="background:${theme.gradient};">
-      <div class="mch-left">
+      <div class="mch-left" style="width:100%;min-width:0;">
         <span class="mch-unit-pill" style="background:${theme.pillBg};color:${theme.pillColor};">
           ${theme.tag} ${ch.number || ch.num || (chIdx + 1)}
         </span>
-        <div class="mch-titles">
-          <span class="mch-title">${ch.title || ch.name || ''}</span>
-          ${(ch.titleUrdu || ch.titleUr || ch.nameUr) ? `<span class="mch-urdu">${ch.titleUrdu || ch.titleUr || ch.nameUr}</span>` : ''}
-        </div>
-      </div>
-      <div class="mch-right">
-        <div class="math-view-switcher" role="group" aria-label="Layout View">
-          <button class="math-view-btn ${state.subjectTopicLayout !== 'grid' ? 'active' : ''}" id="subjListViewBtn" onclick="setSubjectTopicLayout('list')">
-            <span>☰</span> List View
-          </button>
-          <button class="math-view-btn ${state.subjectTopicLayout === 'grid' ? 'active' : ''}" id="subjGridViewBtn" onclick="setSubjectTopicLayout('grid')">
-            <span>⊞</span> Grid View
-          </button>
+        <div class="mch-titles" style="flex-wrap:nowrap;white-space:nowrap;overflow:hidden;">
+          <span class="mch-title" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${ch.title || ch.name || ''}</span>
+          ${(ch.titleUrdu || ch.titleUr || ch.nameUr) ? `<span class="mch-urdu" style="white-space:nowrap;">${ch.titleUrdu || ch.titleUr || ch.nameUr}</span>` : ''}
         </div>
       </div>
     </div>
@@ -14447,6 +14427,9 @@ function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
         </button>
       `).join('')}
     </div>
+
+    <!-- Fixed Sub-Tabs Bar: directly touching the line below math-nav-tabs and never hiding when scrolling down -->
+    <div id="subjSubTabsBar" class="topic-sub-tabs-bar-fixed" style="display:none;"></div>
 
     <div id="subjTabContent" class="math-tab-content-scroll ${state.subjectTopicLayout === 'grid' ? 'math-grid-layout' : ''}"></div>
   `;
@@ -14460,10 +14443,6 @@ function setSubjectTopicLayout(mode) {
   if (container) {
     container.classList.toggle("math-grid-layout", mode === "grid");
   }
-  const listBtn = $("subjListViewBtn");
-  const gridBtn = $("subjGridViewBtn");
-  if (listBtn) listBtn.classList.toggle("active", mode === "list");
-  if (gridBtn) gridBtn.classList.toggle("active", mode === "grid");
 }
 
 function switchSubjectTab(subjKey, tabId, chIdx, classId) {
@@ -14474,6 +14453,7 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
   const chList = getSubjectChapterList(subjKey, classId);
   const ch = chList[chIdx] || chList[0];
   const container = $("subjTabContent");
+  const subBar = $("subjSubTabsBar");
   if (!container || !ch) return;
 
   const isEng = (subjKey === 'eng');
@@ -14481,22 +14461,68 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
 
   if (tabId === 'lesson') {
     if (isEng || isUrdu) {
-      container.innerHTML = renderLanguageLessonTab(subjKey, ch);
+      const activeLessonSubTab = state.activeSubjLessonSubTab || 'paragraphs';
+      if (subBar) {
+        subBar.style.display = 'flex';
+        subBar.innerHTML = `
+          <button class="topic-sub-tab-btn ${activeLessonSubTab === 'paragraphs' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'paragraphs')">
+            ${isUrdu ? '📄 پیراگراف و تحریر' : '📄 Paragraphs'}
+          </button>
+          <button class="topic-sub-tab-btn ${activeLessonSubTab === 'translations' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'translations')">
+            ${isUrdu ? '🌐 تراجم (انگریزی، اردو، پشتو)' : '🌐 Translations (Eng, Ur, Ps)'}
+          </button>
+          <button class="topic-sub-tab-btn ${activeLessonSubTab === 'videos' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'videos')">
+            ${isUrdu ? '🎥 ویڈیو لیکچر' : '🎥 Videos'}
+          </button>
+          <button class="topic-sub-tab-btn ${activeLessonSubTab === 'exercise' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'exercise')">
+            ${isUrdu ? '✍️ مشق (حل شدہ)' : '✍️ Exercise (Solved)'}
+          </button>
+          <button class="topic-sub-tab-btn ${activeLessonSubTab === 'slos' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'slos')">
+            🎯 SLOs
+          </button>
+        `;
+      }
+      container.innerHTML = renderLangLessonSubContent(subjKey, ch, activeLessonSubTab);
     } else {
+      if (subBar) {
+        subBar.style.display = 'none';
+        subBar.innerHTML = '';
+      }
       container.innerHTML = renderScienceOrHumanitiesLessons(subjKey, ch);
     }
-  } else if (tabId === 'exercise') {
-    container.innerHTML = renderSubjectExerciseTab(subjKey, ch);
-  } else if (tabId === 'slos') {
-    container.innerHTML = renderSubjectSLOsTab(subjKey, ch);
   } else if (tabId === 'words') {
-    container.innerHTML = renderLanguageWordsTab(subjKey, ch);
-  } else if (tabId === 'grammar') {
-    container.innerHTML = renderLanguageGrammarTab(subjKey, ch);
-  } else if (tabId === 'concepts') {
-    container.innerHTML = renderScienceConceptsTab(subjKey, ch);
-  } else if (tabId === 'formulas') {
-    container.innerHTML = renderScienceOrHumanitiesSummaryTab(subjKey, ch);
+    const activeWordsSubTab = state.activeSubjWordsSubTab || 'meanings';
+    const subTabs = [
+      { id: 'meanings', label: isUrdu ? 'الفاظ معنی' : 'Word Meanings' },
+      { id: 'opposites', label: isUrdu ? 'الفاظ متضاد' : 'Words-Opposites' },
+      { id: 'similars', label: isUrdu ? 'الفاظ مترادف' : 'Words-Similars / مترادف' },
+      { id: 'use', label: isUrdu ? 'الفاظ استعمال / جملے' : 'Words-Use (Sentences)' }
+    ];
+    if (subBar) {
+      subBar.style.display = 'flex';
+      subBar.innerHTML = subTabs.map(t => `
+        <button class="topic-sub-tab-btn ${t.id === activeWordsSubTab ? 'active' : ''}" onclick="switchLangWordsSubTab('${subjKey}', '${t.id}')">
+          ${t.label}
+        </button>
+      `).join('');
+    }
+    container.innerHTML = renderLangWordsSubContent(subjKey, ch, activeWordsSubTab);
+  } else {
+    if (subBar) {
+      subBar.style.display = 'none';
+      subBar.innerHTML = '';
+    }
+    if (tabId === 'exercise') {
+      container.innerHTML = renderSubjectExerciseTab(subjKey, ch);
+    } else if (tabId === 'slos') {
+      container.innerHTML = renderSubjectSLOsTab(subjKey, ch);
+    } else if (tabId === 'grammar') {
+      container.innerHTML = renderLanguageGrammarTab(subjKey, ch);
+    } else if (tabId === 'concepts') {
+      container.innerHTML = renderScienceConceptsTab(subjKey, ch);
+    } else if (tabId === 'formulas') {
+      container.innerHTML = renderScienceOrHumanitiesSummaryTab(subjKey, ch);
+    }
   }
 
   container.scrollTop = 0;
@@ -14504,49 +14530,25 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
 
 // ─── LANGUAGE (ENGLISH & URDU) TAB RENDERERS ─────────────────────
 function renderLanguageLessonTab(subjKey, ch) {
-  const isUrdu = (subjKey === 'urdu');
   const activeSubTab = state.activeSubjLessonSubTab || 'paragraphs';
-
-  return `
-    <div>
-      <!-- Horizontal Sub-Tabs immediately below topic title -->
-      <div class="topic-sub-tabs-bar" style="margin-bottom:1.25rem;">
-        <button class="topic-sub-tab-btn ${activeSubTab === 'paragraphs' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'paragraphs')">
-          ${isUrdu ? '📄 پیراگراف و تحریر' : '📄 Paragraphs'}
-        </button>
-        <button class="topic-sub-tab-btn ${activeSubTab === 'translations' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'translations')">
-          ${isUrdu ? '🌐 تراجم (انگریزی، اردو، پشتو)' : '🌐 Translations (Eng, Ur, Ps)'}
-        </button>
-        <button class="topic-sub-tab-btn ${activeSubTab === 'videos' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'videos')">
-          ${isUrdu ? '🎥 ویڈیو لیکچر' : '🎥 Videos'}
-        </button>
-        <button class="topic-sub-tab-btn ${activeSubTab === 'exercise' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'exercise')">
-          ${isUrdu ? '✍️ مشق (حل شدہ)' : '✍️ Exercise (Solved)'}
-        </button>
-        <button class="topic-sub-tab-btn ${activeSubTab === 'slos' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'slos')">
-          🎯 SLOs
-        </button>
-      </div>
-
-      <div id="langLessonSubContent">
-        ${renderLangLessonSubContent(subjKey, ch, activeSubTab)}
-      </div>
-    </div>
-  `;
+  return renderLangLessonSubContent(subjKey, ch, activeSubTab);
 }
 
 function switchLangLessonSubTab(subjKey, subTab) {
   state.activeSubjLessonSubTab = subTab;
-  const bar = document.querySelector(".topic-sub-tabs-bar");
+  const bar = $("subjSubTabsBar") || document.querySelector(".topic-sub-tabs-bar-fixed") || document.querySelector(".topic-sub-tabs-bar");
   if (bar) {
     bar.querySelectorAll(".topic-sub-tab-btn").forEach(b =>
-      b.classList.toggle("active", b.getAttribute("onclick").includes("'" + subTab + "'")));
+      b.classList.toggle("active", b.getAttribute("onclick") && b.getAttribute("onclick").includes("'" + subTab + "'")));
   }
-  const container = $("langLessonSubContent");
+  const container = $("subjTabContent");
   if (!container) return;
   const chList = getSubjectChapterList(subjKey, state.selectedClass);
   const ch = chList[state.selectedSubjChapter || 0];
-  if (ch) container.innerHTML = renderLangLessonSubContent(subjKey, ch, subTab);
+  if (ch) {
+    container.innerHTML = renderLangLessonSubContent(subjKey, ch, subTab);
+    container.scrollTop = 0;
+  }
 }
 
 function renderLangLessonSubContent(subjKey, ch, subTab) {
@@ -14697,45 +14699,25 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
 
 // ─── WORDS / ALFAZ TAB RENDERER ──────────────────────────────────
 function renderLanguageWordsTab(subjKey, ch) {
-  const isUrdu = (subjKey === 'urdu');
   const activeSubTab = state.activeSubjWordsSubTab || 'meanings';
-
-  const subTabs = [
-    { id: 'meanings', label: isUrdu ? 'الفاظ معنی' : 'Word Meanings' },
-    { id: 'opposites', label: isUrdu ? 'الفاظ متضاد' : 'Words-Opposites' },
-    { id: 'similars', label: isUrdu ? 'الفاظ مترادف' : 'Words-Similars / مترادف' },
-    { id: 'use', label: isUrdu ? 'الفاظ استعمال / جملے' : 'Words-Use (Sentences)' }
-  ];
-
-  return `
-    <div>
-      <div class="topic-sub-tabs-bar" style="margin-bottom:1.25rem;">
-        ${subTabs.map(t => `
-          <button class="topic-sub-tab-btn ${t.id === activeSubTab ? 'active' : ''}" onclick="switchLangWordsSubTab('${subjKey}', '${t.id}')">
-            ${t.label}
-          </button>
-        `).join('')}
-      </div>
-
-      <div id="langWordsSubContent">
-        ${renderLangWordsSubContent(subjKey, ch, activeSubTab)}
-      </div>
-    </div>
-  `;
+  return renderLangWordsSubContent(subjKey, ch, activeSubTab);
 }
 
 function switchLangWordsSubTab(subjKey, subTab) {
   state.activeSubjWordsSubTab = subTab;
-  const bar = document.querySelector(".topic-sub-tabs-bar");
+  const bar = $("subjSubTabsBar") || document.querySelector(".topic-sub-tabs-bar-fixed") || document.querySelector(".topic-sub-tabs-bar");
   if (bar) {
     bar.querySelectorAll(".topic-sub-tab-btn").forEach(b =>
-      b.classList.toggle("active", b.getAttribute("onclick").includes("'" + subTab + "'")));
+      b.classList.toggle("active", b.getAttribute("onclick") && b.getAttribute("onclick").includes("'" + subTab + "'")));
   }
-  const container = $("langWordsSubContent");
+  const container = $("subjTabContent");
   if (!container) return;
   const chList = getSubjectChapterList(subjKey, state.selectedClass);
   const ch = chList[state.selectedSubjChapter || 0];
-  if (ch) container.innerHTML = renderLangWordsSubContent(subjKey, ch, subTab);
+  if (ch) {
+    container.innerHTML = renderLangWordsSubContent(subjKey, ch, subTab);
+    container.scrollTop = 0;
+  }
 }
 
 // ─── WORDS / ALFAZ TAB SUB-CONTENT RENDERER ──────────────────────
