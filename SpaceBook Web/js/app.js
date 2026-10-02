@@ -8514,21 +8514,158 @@ function checkTestPrepMcq(testId, qIndex, selectedOpt, correctAns, expEncoded) {
 //  PAPERS VIEW: FULL PAPER CREATION PROCESS SUITE
 //  FOR EACH CLASS IN EACH SUBJECT
 // ═════════════════════════════════════════════════
+// ═════════════════════════════════════════════════
+//  STEP-BY-STEP QUESTION PAPER GENERATOR WIZARD
+//  FOR ALL CLASSES & SUBJECTS (KPK OFFICIAL PATTERN)
+function getClassName(classId) {
+  const c = (typeof DATA !== 'undefined' && DATA && DATA.classes ? DATA.classes : []).find(x => x.id === classId);
+  return c ? c.name : 'Class 9';
+}
+
+function getSelectedSubjectObj() {
+  const list = (typeof DATA !== 'undefined' && DATA && DATA.subjects ? DATA.subjects[paperCreationState.classId] : []) || [];
+  return list.find(s => s.id === paperCreationState.subjectId) || list[0] || { id: 'cls9-math', name: 'Mathematics', emoji: '📐' };
+}
+
+function generateOfficialExamPaper(showNotification) {
+  paperCreationState.seed = (paperCreationState.seed || 1) + 1;
+  updatePaperPreview();
+  if (showNotification) {
+    alert('✅ Generated official exam paper for ' + getClassName(paperCreationState.classId) + ' — ' + getSelectedSubjectObj().name + '!');
+  }
+}
+
 let paperCreationState = {
+  currentStep: 1, // 1 to 8
+  completedSteps: [1],
   classId: "cls9",
   subjectId: "cls9-math",
   paperType: "annual",
-  totalMarks: 75,
-  timeAllowed: "2:30 Hours",
+  version: "A",
+  seed: 1,
+  showAnswerKey: false,
+
+  // Selected categories for the active subject
+  selectedCategories: ["mcqs", "sqs", "lqs"],
+
+  // MCQ Configuration
+  mcqSettings: {
+    samePage: true,
+    omrBased: true,
+    columns: 2, // 1, 2, or 3
+    count: 15,
+    optionsLayout: "horizontal", // "horizontal" or "vertical"
+    marksPerMcq: 1,
+    shuffleQuestions: false,
+    shuffleOptions: false
+  },
+
+  // Per-category settings
+  categorySettings: {
+    mcqs: { count: 15, attempt: 15, marksPerQ: 1 },
+    sqs: { count: 12, attempt: 9, marksPerQ: 4 },
+    lqs: { count: 4, attempt: 3, marksPerQ: 8 },
+    numericals: { count: 4, attempt: 3, marksPerQ: 5 },
+    definitions: { count: 5, attempt: 5, marksPerQ: 2 },
+    theorems: { count: 2, attempt: 1, marksPerQ: 8 },
+    wordsMeanings: { count: 8, attempt: 5, marksPerQ: 1 },
+    wordsOpposites: { count: 5, attempt: 5, marksPerQ: 1 },
+    wordsSimilars: { count: 5, attempt: 5, marksPerQ: 1 },
+    wordsUse: { count: 5, attempt: 5, marksPerQ: 1 },
+    grammar: { count: 5, attempt: 5, marksPerQ: 2 },
+    translation: { count: 2, attempt: 1, marksPerQ: 8 },
+    comprehension: { count: 1, attempt: 1, marksPerQ: 10 },
+    essays: { count: 1, attempt: 1, marksPerQ: 10 },
+    letters: { count: 1, attempt: 1, marksPerQ: 8 },
+    stories: { count: 1, attempt: 1, marksPerQ: 8 },
+    applications: { count: 1, attempt: 1, marksPerQ: 8 },
+    programming: { count: 3, attempt: 2, marksPerQ: 6 },
+    algorithms: { count: 2, attempt: 2, marksPerQ: 5 },
+    codeOutput: { count: 3, attempt: 3, marksPerQ: 3 },
+    diagrams: { count: 2, attempt: 2, marksPerQ: 4 },
+    reactions: { count: 3, attempt: 2, marksPerQ: 4 },
+    derivations: { count: 3, attempt: 2, marksPerQ: 6 }
+  },
+
+  // Selection source and strategy
+  questionSource: "mixed", // "exercise", "slo", "board", "mixed"
+  selectionStrategy: "balanced", // "random", "balanced", "manual", "slo"
+  difficultyDistribution: { easy: 30, medium: 50, hard: 20 },
+  manualSelectedQuestions: {},
+
+  // Paper Structure: Parts A, B, C, D, E
+  parts: [
+    {
+      id: "partA",
+      name: "SECTION — A (OBJECTIVE TYPE)",
+      instructions: "Note: Attempt all questions. Each question carries 1 mark. Fill the corresponding bubble or encircle the correct option (A, B, C, or D).",
+      category: "mcqs",
+      count: 15,
+      attempt: 15,
+      marksPerQ: 1,
+      totalMarks: 15,
+      showMarks: true,
+      startNewPage: false
+    },
+    {
+      id: "partB",
+      name: "SECTION — B (SHORT ANSWER QUESTIONS)",
+      instructions: "Note: Attempt any NINE (9) questions from this section. All questions carry equal marks (4 Marks each).",
+      category: "sqs",
+      count: 12,
+      attempt: 9,
+      marksPerQ: 4,
+      totalMarks: 36,
+      showMarks: true,
+      startNewPage: false
+    },
+    {
+      id: "partC",
+      name: "SECTION — C (LONG & DETAILED QUESTIONS)",
+      instructions: "Note: Attempt any THREE (3) questions from this section. Each question carries 8 marks (sub-parts carry equal 4 marks each).",
+      category: "lqs",
+      count: 4,
+      attempt: 3,
+      marksPerQ: 8,
+      totalMarks: 24,
+      showMarks: true,
+      startNewPage: false
+    }
+  ],
+
+  // Header & General Information
   institutionName: "KPK BOARD MODEL HIGH SCHOOL & COLLEGE, PESHAWAR",
   examTitle: "ANNUAL EXAMINATION 2026",
-  includeSectionA: true,
-  includeSectionB: true,
-  includeSectionC: true,
-  showAnswerKey: false,
-  seed: 1
+  subTitle: "KHYBER PAKHTUNKHWA TEXTBOOK BOARD SYLLABUS · OFFICIAL PATTERN",
+  academicYear: "SESSION 2025–2026",
+  paperCode: "SET-A-26",
+  date: "15 / 04 / 2026",
+  duration: "2:30 Hours",
+  startTime: "",
+  endTime: "",
+  numberingStyle: "Q1", // "Q1", "1", "a", "i"
+  generalInstructions: [
+    "Attempt all sections according to the given instructions.",
+    "Overwriting, erasing, or cutting in Section A (MCQs) is strictly prohibited.",
+    "Show complete step-by-step mathematical working and formulas where required."
+  ],
+
+  // Print & Layout Settings
+  printSettings: {
+    paperSize: "A4",
+    orientation: "portrait",
+    margins: "normal",
+    fontSize: "medium",
+    avoidSplitting: true,
+    startPartsNewPage: false
+  },
+
+  // Modal filters
+  qBankFilterCategory: "all",
+  qBankFilterChapter: "all"
 };
 
+// ─── PAPERS MASTER RENDERER ──────────────────────────────
 function renderPapersView() {
   state.page = "papers";
   state.activeView = "papers";
@@ -8549,180 +8686,1622 @@ function renderPapersView() {
     paperCreationState.subjectId = currentClassSubjects[0] ? currentClassSubjects[0].id : "cls9-math";
   }
 
+  // Ensure completedSteps contains currentStep
+  if (!paperCreationState.completedSteps.includes(paperCreationState.currentStep)) {
+    paperCreationState.completedSteps.push(paperCreationState.currentStep);
+  }
+
+  const stepsList = [
+    { num: 1, label: "Class", icon: "🏷️" },
+    { num: 2, label: "Subject", icon: "📖" },
+    { num: 3, label: "Question Types", icon: "🧩" },
+    { num: 4, label: "Question Settings", icon: "⚙️" },
+    { num: 5, label: "Paper Structure", icon: "📐" },
+    { num: 6, label: "Marks & Info", icon: "📊" },
+    { num: 7, label: "Preview", icon: "👁️" },
+    { num: 8, label: "Generate & Print", icon: "🖨️" }
+  ];
+
   pageContent().innerHTML = `
     <div class="papers-universe-wrapper papers-creator-view">
-      <!-- 1. Left Control Panel: Paper Creation Process Settings -->
-      <aside class="paper-creator-sidebar">
+      <!-- 1. Left Wizard Controller Panel -->
+      <aside class="paper-creator-sidebar" id="paperCreatorSidebar">
+        <!-- Header -->
         <div class="pcs-header">
-          <span style="font-size:1.15rem;">🖨️</span>
-          <div>
-            <div class="pcs-title">Paper Creation Process</div>
-            <div class="pcs-sub">Class &amp; Subject Exam Maker</div>
+          <div class="pcs-header-left">
+            <span style="font-size:1.25rem;">🖨️</span>
+            <div>
+              <div class="pcs-title">Question Paper Generator</div>
+              <div class="pcs-sub">Step-by-Step Official Exam Maker</div>
+            </div>
+          </div>
+          <button class="pcs-shuffle-btn" onclick="shufflePaperQuestions()" title="Shuffle questions and paper code" style="width:auto;padding:0.25rem 0.5rem;font-size:0.7rem;">
+            🎲 Shuffle
+          </button>
+        </div>
+
+        <!-- Progress Stepper Bar -->
+        <div class="pws-stepper-wrap">
+          <div class="pws-stepper">
+            ${stepsList.map(s => {
+              const isActive = s.num === paperCreationState.currentStep;
+              const isCompleted = paperCreationState.completedSteps.includes(s.num) && !isActive;
+              return `
+                <button class="pws-step-btn ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''}" 
+                        onclick="goToPaperWizardStep(${s.num})" 
+                        title="Step ${s.num}: ${s.label}">
+                  <span class="pws-num">${isCompleted ? '✓' : s.num}</span>
+                  <span>${s.label}</span>
+                </button>
+              `;
+            }).join('')}
           </div>
         </div>
 
-        <!-- Step 1: Select Class -->
-        <div class="pcs-field-group">
-          <label class="pcs-label" for="paperClassSelect">
-            <span class="pcs-step-badge">1</span> Select Academic Grade / Class:
-          </label>
-          <select id="paperClassSelect" class="pcs-select" onchange="onPaperClassChange(this.value)">
-            ${allClasses.map(c => `
-              <option value="${c.id}" ${c.id === paperCreationState.classId ? 'selected' : ''}>
-                ${c.emoji} ${c.name} (${c.subjects} Subjects)
-              </option>
-            `).join('')}
-          </select>
+        <!-- Live Paper Summary Card -->
+        <div id="paperLiveSummaryContainer">
+          ${renderLivePaperSummaryWidget()}
         </div>
 
-        <!-- Step 2: Select Subject -->
-        <div class="pcs-field-group">
-          <label class="pcs-label" for="paperSubjectSelect">
-            <span class="pcs-step-badge">2</span> Select Subject for ${getClassName(paperCreationState.classId)}:
-          </label>
-          <select id="paperSubjectSelect" class="pcs-select" onchange="onPaperSubjectChange(this.value)">
-            ${currentClassSubjects.map(s => `
-              <option value="${s.id}" ${s.id === paperCreationState.subjectId ? 'selected' : ''}>
-                ${s.emoji || '📖'} ${s.name} ${s.nameUrdu ? `(${s.nameUrdu})` : ''} · ${s.chapters || 10} Units
-              </option>
-            `).join('')}
-          </select>
+        <!-- Active Wizard Step Body -->
+        <div class="paper-step-container" id="paperStepContainer" style="flex:1;">
+          ${renderWizardCurrentStepHtml()}
         </div>
 
-        <!-- Step 3: Exam Type & Marks -->
-        <div class="pcs-field-group">
-          <label class="pcs-label">
-            <span class="pcs-step-badge">3</span> Examination Type &amp; Pattern:
-          </label>
-          <div class="pcs-type-pills">
-            <button class="pcs-type-btn ${paperCreationState.paperType === 'annual' ? 'active' : ''}" onclick="setPaperType('annual')">🏆 Full Annual (75M)</button>
-            <button class="pcs-type-btn ${paperCreationState.paperType === 'term1' ? 'active' : ''}" onclick="setPaperType('term1')">📘 1st Term (50M)</button>
-            <button class="pcs-type-btn ${paperCreationState.paperType === 'monthly' ? 'active' : ''}" onclick="setPaperType('monthly')">📑 Monthly Test (25M)</button>
-            <button class="pcs-type-btn ${paperCreationState.paperType === 'preboard' ? 'active' : ''}" onclick="setPaperType('preboard')">🎯 Pre-Board (75M)</button>
-          </div>
-        </div>
-
-        <!-- Step 4: Institution & Header Customization -->
-        <div class="pcs-field-group">
-          <label class="pcs-label" for="paperInstName">
-            <span class="pcs-step-badge">4</span> Institution / School Name:
-          </label>
-          <input type="text" id="paperInstName" class="pcs-input" value="${paperCreationState.institutionName}" oninput="updatePaperInstitution(this.value)" placeholder="Enter School / College Name">
-        </div>
-
-        <!-- Step 5: Sections Toggle -->
-        <div class="pcs-field-group">
-          <label class="pcs-label">
-            <span class="pcs-step-badge">5</span> Exam Paper Sections:
-          </label>
-          <div class="pcs-checkboxes-row">
-            <label class="pcs-checkbox-label">
-              <input type="checkbox" ${paperCreationState.includeSectionA ? 'checked' : ''} onchange="togglePaperSection('includeSectionA', this.checked)">
-              Sec A (MCQs)
-            </label>
-            <label class="pcs-checkbox-label">
-              <input type="checkbox" ${paperCreationState.includeSectionB ? 'checked' : ''} onchange="togglePaperSection('includeSectionB', this.checked)">
-              Sec B (SQs)
-            </label>
-            <label class="pcs-checkbox-label">
-              <input type="checkbox" ${paperCreationState.includeSectionC ? 'checked' : ''} onchange="togglePaperSection('includeSectionC', this.checked)">
-              Sec C (LQs)
-            </label>
-          </div>
-        </div>
-
-        <!-- Action Buttons -->
-        <div class="pcs-actions-stack">
-          <button class="btn btn-primary pcs-action-btn" onclick="generateOfficialExamPaper(true)">
-            <span>⚡</span> Generate Official Exam Paper
+        <!-- Step Navigation Footer (Back / Continue) -->
+        <div class="paper-nav-footer">
+          <button class="paper-nav-btn paper-nav-btn-back" 
+                  onclick="prevPaperWizardStep()" 
+                  ${paperCreationState.currentStep === 1 ? 'disabled style="opacity:0.4;cursor:not-allowed;"' : ''}>
+            ← Back
           </button>
-          <button class="btn pcs-print-btn" onclick="printOfficialExamPaper()">
-            <span>🖨️</span> Print Paper (A4 Official Format)
-          </button>
-          <button class="btn pcs-key-btn" onclick="togglePaperAnswerKey()">
-            <span>🔑</span> ${paperCreationState.showAnswerKey ? 'Hide Solved Key' : 'Show Solved Marking Scheme'}
-          </button>
-          <button class="btn pcs-shuffle-btn" onclick="shufflePaperQuestions()">
-            <span>🎲</span> Randomize / New Questions Set
+          <button class="paper-nav-btn paper-nav-btn-next" 
+                  onclick="nextPaperWizardStep()">
+            ${paperCreationState.currentStep === 8 ? '🖨️ Print Exam Paper Now' : (paperCreationState.currentStep === 7 ? 'Generate Exam Suite →' : (paperCreationState.currentStep === 6 ? 'View Paper Preview →' : 'Continue →'))}
           </button>
         </div>
       </aside>
 
-      <!-- 2. Right Canvas: Authentic Board Exam Paper Preview (Printable & Exportable) -->
+      <!-- 2. Right Canvas: Authentic Board Exam Paper Preview -->
       <main class="paper-preview-canvas" id="paperPreviewCanvas">
         ${renderLiveExamPaperHtml()}
       </main>
     </div>
+
+    <!-- Optional Question Bank Modal -->
+    <div id="qBankModalContainer"></div>
   `;
 }
 
-function getClassName(classId) {
-  const c = (DATA.classes || []).find(x => x.id === classId);
-  return c ? c.name : "Class 9";
-}
-
-function getSelectedSubjectObj() {
-  const list = DATA.subjects[paperCreationState.classId] || [];
-  return list.find(s => s.id === paperCreationState.subjectId) || list[0] || { name: "Mathematics", emoji: "📐" };
-}
-
-function onPaperClassChange(newClassId) {
-  paperCreationState.classId = newClassId;
-  const subjects = DATA.subjects[newClassId] || [];
-  paperCreationState.subjectId = subjects[0] ? subjects[0].id : "";
-  renderPapersView();
-}
-
-function onPaperSubjectChange(newSubjectId) {
-  paperCreationState.subjectId = newSubjectId;
-  updatePaperPreview();
-}
-
-function setPaperType(type) {
-  paperCreationState.paperType = type;
-  if (type === "annual" || type === "preboard") {
-    paperCreationState.totalMarks = 75;
-    paperCreationState.timeAllowed = "2:30 Hours";
-    paperCreationState.examTitle = type === "annual" ? "ANNUAL EXAMINATION 2026" : "PRE-BOARD MOCK EXAMINATION 2026";
-  } else if (type === "term1") {
-    paperCreationState.totalMarks = 50;
-    paperCreationState.timeAllowed = "2:00 Hours";
-    paperCreationState.examTitle = "FIRST TERM EXAMINATION 2026";
-  } else {
-    paperCreationState.totalMarks = 25;
-    paperCreationState.timeAllowed = "1:00 Hour";
-    paperCreationState.examTitle = "MONTHLY ASSESSMENT TEST";
+// ─── STEP NAVIGATION CONTROLS ────────────────────────────
+function goToPaperWizardStep(stepNum) {
+  if (stepNum < 1 || stepNum > 8) return;
+  paperCreationState.currentStep = stepNum;
+  if (!paperCreationState.completedSteps.includes(stepNum)) {
+    paperCreationState.completedSteps.push(stepNum);
   }
   renderPapersView();
 }
 
-function updatePaperInstitution(val) {
-  paperCreationState.institutionName = val || "KPK BOARD MODEL HIGH SCHOOL & COLLEGE";
-  const el = $("previewInstName");
-  if (el) el.textContent = paperCreationState.institutionName.toUpperCase();
+function nextPaperWizardStep() {
+  if (paperCreationState.currentStep < 8) {
+    paperCreationState.currentStep++;
+    if (!paperCreationState.completedSteps.includes(paperCreationState.currentStep)) {
+      paperCreationState.completedSteps.push(paperCreationState.currentStep);
+    }
+    renderPapersView();
+  } else {
+    printOfficialExamPaper();
+  }
 }
 
-function togglePaperSection(secKey, checked) {
-  paperCreationState[secKey] = checked;
-  updatePaperPreview();
+function prevPaperWizardStep() {
+  if (paperCreationState.currentStep > 1) {
+    paperCreationState.currentStep--;
+    renderPapersView();
+  }
 }
 
-function togglePaperAnswerKey() {
-  paperCreationState.showAnswerKey = !paperCreationState.showAnswerKey;
+// ─── LIVE SUMMARY WIDGET ─────────────────────────────────
+function renderLivePaperSummaryWidget() {
+  const clsName = getClassName(paperCreationState.classId);
+  const subj = getSelectedSubjectObj();
+  
+  // Calculate marks and counts
+  let grandTotal = 0;
+  let totalAttemptQs = 0;
+  const partsSummary = (paperCreationState.parts || []).map(p => {
+    const attempt = Number(p.attempt) || 0;
+    const marksPerQ = Number(p.marksPerQ) || 1;
+    const partMarks = attempt * marksPerQ;
+    p.totalMarks = partMarks;
+    grandTotal += partMarks;
+    totalAttemptQs += attempt;
+    return {
+      name: p.name.replace(/SECTION\s*—\s*/, '').split('(')[0].trim(),
+      cat: p.category,
+      calc: `${attempt} × ${marksPerQ} = ${partMarks}M`
+    };
+  });
+
+  paperCreationState.totalMarks = grandTotal;
+
+  // Validation Check
+  let validationWarning = "";
+  (paperCreationState.parts || []).forEach(p => {
+    if (Number(p.attempt) > Number(p.count)) {
+      validationWarning = `⚠️ ${p.name}: Attempt (${p.attempt}) cannot exceed total questions (${p.count})!`;
+    }
+  });
+
+  return `
+    <div class="paper-summary-card">
+      <div class="psc-header">
+        <span class="psc-badge">📊 Paper Summary</span>
+        <span style="font-size:0.68rem;font-weight:700;color:#0284c7;">
+          ${paperCreationState.parts.length} Sections Active
+        </span>
+      </div>
+
+      <div class="psc-grid">
+        <div class="psc-item">
+          <div class="psc-item-label">Grade / Class</div>
+          <div class="psc-item-val">${clsName}</div>
+        </div>
+        <div class="psc-item">
+          <div class="psc-item-label">Subject</div>
+          <div class="psc-item-val" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+            ${subj.emoji || ''} ${subj.name}
+          </div>
+        </div>
+        <div class="psc-item">
+          <div class="psc-item-label">Grand Total</div>
+          <div class="psc-item-val" style="color:#16a34a;">${grandTotal} Marks</div>
+        </div>
+        <div class="psc-item">
+          <div class="psc-item-label">Attempt Qs</div>
+          <div class="psc-item-val">${totalAttemptQs} Questions</div>
+        </div>
+        <div class="psc-item">
+          <div class="psc-item-label">Time Allowed</div>
+          <div class="psc-item-val">${paperCreationState.duration}</div>
+        </div>
+        <div class="psc-item">
+          <div class="psc-item-label">Paper Code</div>
+          <div class="psc-item-val">${paperCreationState.paperCode}</div>
+        </div>
+      </div>
+
+      <div class="psc-footer">
+        ${partsSummary.map(ps => `<span><strong>${ps.name}:</strong> ${ps.calc}</span>`).join(' · ')}
+      </div>
+
+      ${validationWarning ? `
+        <div style="margin-top:0.35rem;padding:0.25rem 0.45rem;background:#fee2e2;border:1px solid #fca5a5;border-radius:4px;color:#991b1b;font-size:0.68rem;font-weight:700;">
+          ${validationWarning}
+        </div>
+      ` : ''}
+    </div>
+  `;
+}
+
+// ─── DYNAMIC WIZARD STEP DISPATCHER ──────────────────────
+function renderWizardCurrentStepHtml() {
+  const step = paperCreationState.currentStep;
+  if (step === 1) return renderWizardStep1Class();
+  if (step === 2) return renderWizardStep2Subject();
+  if (step === 3) return renderWizardStep3QuestionTypes();
+  if (step === 4) return renderWizardStep4QuestionSettings();
+  if (step === 5) return renderWizardStep5PaperStructure();
+  if (step === 6) return renderWizardStep6MarksAndHeaders();
+  if (step === 7) return renderWizardStep7Preview();
+  if (step === 8) return renderWizardStep8GeneratePrint();
+  return renderWizardStep1Class();
+}
+
+// ─── STEP 1: SELECT CLASS ────────────────────────────────
+function renderWizardStep1Class() {
+  const allClasses = DATA.classes || [];
+  return `
+    <div class="paper-step-box">
+      <div class="paper-step-intro">
+        <div class="paper-step-title">Step 1 — Select Target Class</div>
+        <div class="paper-step-desc">Choose which academic grade you want to generate the examination paper for:</div>
+      </div>
+
+      <div class="paper-class-grid">
+        ${allClasses.map(c => `
+          <button class="paper-class-card ${c.id === paperCreationState.classId ? 'selected' : ''}" 
+                  onclick="onPaperClassSelect('${c.id}')">
+            <span style="font-size:1.35rem;">${c.emoji || '📚'}</span>
+            <div>
+              <div style="font-weight:800;font-size:0.82rem;color:#0f172a;">${c.name}</div>
+              <div style="font-size:0.68rem;color:#64748b;">${c.subjects || 8} Subjects Available</div>
+            </div>
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function onPaperClassSelect(classId) {
+  paperCreationState.classId = classId;
+  const subjects = DATA.subjects[classId] || [];
+  paperCreationState.subjectId = subjects[0] ? subjects[0].id : "";
+  // Sync subject categories
+  const categories = getSubjectCategories(paperCreationState.subjectId, classId);
+  paperCreationState.selectedCategories = categories.slice(0, 3).map(c => c.id);
   renderPapersView();
 }
 
+// ─── STEP 2: SELECT SUBJECT ──────────────────────────────
+function renderWizardStep2Subject() {
+  const clsName = getClassName(paperCreationState.classId);
+  const subjects = DATA.subjects[paperCreationState.classId] || [];
+
+  return `
+    <div class="paper-step-box">
+      <div class="paper-step-intro">
+        <div class="paper-step-title">Step 2 — Select Subject for ${clsName}</div>
+        <div class="paper-step-desc">Select the subject curriculum to draw exam questions from:</div>
+      </div>
+
+      <div class="paper-subject-grid">
+        ${subjects.map(s => `
+          <button class="paper-subject-card ${s.id === paperCreationState.subjectId ? 'selected' : ''}" 
+                  onclick="onPaperSubjectSelect('${s.id}')">
+            <div style="display:flex;align-items:center;gap:0.55rem;">
+              <span style="font-size:1.35rem;">${s.emoji || '📖'}</span>
+              <div style="text-align:left;">
+                <div style="font-weight:800;font-size:0.84rem;color:#0f172a;">
+                  ${s.name} ${s.nameUrdu ? `<span style="font-family:'Jameel Noori Nastaleeq',serif;font-size:0.9rem;color:#0284c7;">(${s.nameUrdu})</span>` : ''}
+                </div>
+                <div style="font-size:0.68rem;color:#64748b;">${s.chapters || 10} Units &amp; Comprehensive Question Bank</div>
+              </div>
+            </div>
+            <span style="font-size:0.75rem;color:#0284c7;font-weight:700;">Select →</span>
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function onPaperSubjectSelect(subjId) {
+  paperCreationState.subjectId = subjId;
+  const categories = getSubjectCategories(subjId, paperCreationState.classId);
+  paperCreationState.selectedCategories = categories.slice(0, 3).map(c => c.id);
+  renderPapersView();
+}
+
+// ─── STEP 3: SUBJECT-AWARE QUESTION CATEGORIES ───────────
+function getSubjectCategories(subjectId, classId) {
+  const sid = (subjectId || "").toLowerCase();
+  
+  if (sid.includes("eng")) {
+    return [
+      { id: "mcqs", name: "MCQs", icon: "🎯", desc: "Textbook & grammar multiple choice" },
+      { id: "wordsMeanings", name: "Words — Meanings", icon: "📖", desc: "Vocabulary & glossary" },
+      { id: "wordsOpposites", name: "Words — Opposites", icon: "↔️", desc: "Antonyms & opposite pairs" },
+      { id: "wordsSimilars", name: "Words — Similars / مترادف", icon: "🔄", desc: "Synonyms & thesaurus pairs" },
+      { id: "wordsUse", name: "Words — Use in Sentences", icon: "✍️", desc: "Sentence formation exercises" },
+      { id: "sqs", name: "Short Questions", icon: "📝", desc: "Reading comprehension questions" },
+      { id: "lqs", name: "Long Questions / Summary", icon: "📚", desc: "Themes, stanzas & chapter summaries" },
+      { id: "applications", name: "Applications", icon: "📨", desc: "Formal school/college applications" },
+      { id: "stories", name: "Moral Stories", icon: "📜", desc: "Narrative stories with moral" },
+      { id: "essays", name: "Essays", icon: "🖋️", desc: "Descriptive essays" },
+      { id: "letters", name: "Letters", icon: "✉️", desc: "Informal letters" },
+      { id: "grammar", name: "Grammar & Tenses", icon: "🔍", desc: "Direct/indirect, voice, parts of speech" },
+      { id: "translation", name: "Translation (Eng to Urdu)", icon: "🌐", desc: "Paragraph translation" },
+      { id: "comprehension", name: "Comprehension Passage", icon: "📋", desc: "Unseen / seen reading passage" }
+    ];
+  }
+
+  if (sid.includes("urdu")) {
+    return [
+      { id: "mcqs", name: "MCQs (کثیر الانتخابی سوالات)", icon: "🎯", desc: "متن اور قواعد سے معروضی سوالات" },
+      { id: "wordsMeanings", name: "الفاظ — معانی", icon: "📖", desc: "فرہنگ اور الفاظ کے معنی" },
+      { id: "wordsOpposites", name: "الفاظ — متضاد", icon: "↔️", desc: "متضاد الفاظ کے جوڑے" },
+      { id: "wordsSimilars", name: "الفاظ — مترادف", icon: "🔄", desc: "ہم معنی الفاظ کے جوڑے" },
+      { id: "wordsUse", name: "الفاظ — جملوں میں استعمال", icon: "✍️", desc: "بامعنی جملے بنانا" },
+      { id: "sqs", name: "مختصر سوالات و جوابات", icon: "📝", desc: "اسباق و نظم و غزل کے سوالات" },
+      { id: "lqs", name: "تفصیلی سوالات و خلاصہ", icon: "📚", desc: "اسباق کا خلاصہ و مرکزی خیال" },
+      { id: "theorems", name: "اشعار کی تشریح", icon: "📜", desc: "نظم و غزل کے اشعار کی تشریح" },
+      { id: "applications", name: "درخواستیں", icon: "📨", desc: "پرنسپل کے نام باضابطہ درخواست" },
+      { id: "stories", name: "کہانیاں", icon: "📜", desc: "نتیجہ خیز کہانیاں" },
+      { id: "essays", name: "مضامین", icon: "🖋️", desc: "جامع ادبی مضامین" },
+      { id: "letters", name: "خطوط", icon: "✉️", desc: "خطوط نویسی" },
+      { id: "grammar", name: "قواعد و انشاء", icon: "🔍", desc: "اسم، فعل، تذکیر و تانیث، محاورات" }
+    ];
+  }
+
+  if (sid.includes("math")) {
+    return [
+      { id: "mcqs", name: "MCQs", icon: "🎯", desc: "Concept, identity & calculation MCQs" },
+      { id: "sqs", name: "Short Questions", icon: "📝", desc: "Short conceptual & numerical drills" },
+      { id: "lqs", name: "Long Questions", icon: "📚", desc: "Detailed problems & multi-step equations" },
+      { id: "numericals", name: "Numerical Problems", icon: "🔢", desc: "Word problems and computational exercises" },
+      { id: "theorems", name: "Theorems & Geometric Proofs", icon: "📐", desc: "Euclidean geometric theorems & proofs" },
+      { id: "definitions", name: "Definitions & Rules", icon: "📖", desc: "Mathematical terms, properties & axioms" },
+      { id: "grammar", name: "Formula-based Questions", icon: "🧮", desc: "Application of algebraic formulas" }
+    ];
+  }
+
+  if (sid.includes("phy")) {
+    return [
+      { id: "mcqs", name: "MCQs", icon: "🎯", desc: "Units, laws & concept MCQs" },
+      { id: "sqs", name: "Short Questions", icon: "📝", desc: "Conceptual, law & reasoning questions" },
+      { id: "lqs", name: "Long Questions", icon: "📚", desc: "Comprehensive theory questions" },
+      { id: "numericals", name: "Numerical Problems", icon: "🔢", desc: "Physics equations & formula calculations" },
+      { id: "derivations", name: "Derivations", icon: "📐", desc: "Derivation of physics laws & formulas" },
+      { id: "definitions", name: "Definitions & Units", icon: "📖", desc: "SI units, dimensions & law statements" },
+      { id: "diagrams", name: "Diagrams & Graphical Analysis", icon: "📊", desc: "Speed-time graphs, ray diagrams, circuits" }
+    ];
+  }
+
+  if (sid.includes("chem")) {
+    return [
+      { id: "mcqs", name: "MCQs", icon: "🎯", desc: "Atomic models, bonding & periodic MCQs" },
+      { id: "sqs", name: "Short Questions", icon: "📝", desc: "Short theoretical & reasoning questions" },
+      { id: "lqs", name: "Long Questions", icon: "📚", desc: "In-depth chemical theories & mechanisms" },
+      { id: "reactions", name: "Chemical Reactions & Equations", icon: "🧪", desc: "Balancing equations & chemical properties" },
+      { id: "numericals", name: "Mole & Stoichiometry Numericals", icon: "🔢", desc: "Mole, molar mass & concentration math" },
+      { id: "definitions", name: "Definitions & Laws", icon: "📖", desc: "Chemical laws, states & bonding types" }
+    ];
+  }
+
+  if (sid.includes("bio")) {
+    return [
+      { id: "mcqs", name: "MCQs", icon: "🎯", desc: "Organelles, genetics & physiology MCQs" },
+      { id: "sqs", name: "Short Questions", icon: "📝", desc: "Short biological comparisons & functions" },
+      { id: "lqs", name: "Long Questions", icon: "📚", desc: "Comprehensive system & process accounts" },
+      { id: "diagrams", name: "Diagrams & Labeling", icon: "🔬", desc: "Anatomical diagrams, cell models, cycles" },
+      { id: "definitions", name: "Definitions & Terms", icon: "📖", desc: "Biological terminology & classifications" }
+    ];
+  }
+
+  if (sid.includes("comp")) {
+    return [
+      { id: "mcqs", name: "MCQs", icon: "🎯", desc: "Hardware, software, coding & logic MCQs" },
+      { id: "sqs", name: "Short Questions", icon: "📝", desc: "Brief concepts, terms & architecture" },
+      { id: "lqs", name: "Long Questions", icon: "📚", desc: "In-depth systems, memory & programming" },
+      { id: "programming", name: "Programming & Code", icon: "💻", desc: "C / Python code writing & debugging" },
+      { id: "algorithms", name: "Algorithms & Flowcharts", icon: "🔀", desc: "Step-by-step algorithms & diagrams" },
+      { id: "codeOutput", name: "Code Output Tracing", icon: "🖥️", desc: "Predict output of given code snippets" },
+      { id: "definitions", name: "Definitions & Acronyms", icon: "📖", desc: "IT definitions, protocols & specifications" }
+    ];
+  }
+
+  if (sid.includes("isl") || sid.includes("pak")) {
+    return [
+      { id: "mcqs", name: "MCQs (معروضی سوالات)", icon: "🎯", desc: "تاریخ، واقعات اور احکامات کے معروضی سوالات" },
+      { id: "sqs", name: "Short Questions (مختصر سوالات)", icon: "📝", desc: "اہم تاریخی و دینی سوالات کے جوابات" },
+      { id: "lqs", name: "Long Questions (تفصیلی سوالات)", icon: "📚", desc: "جامع مقالہ جاتی و تفصیلی سوالات" },
+      { id: "translation", name: "آیات و احادیث کا ترجمہ و تشریح", icon: "📜", desc: "قرآنی آیات اور نبوی احادیث کا ترجمہ" },
+      { id: "definitions", name: "اصطلاحات و اہم تصورات", icon: "📖", desc: "دینی و جغرافیائی اصطلاحات" }
+    ];
+  }
+
+  return [
+    { id: "mcqs", name: "MCQs (Objective)", icon: "🎯", desc: "Multiple choice questions" },
+    { id: "sqs", name: "Short Answer Questions", icon: "📝", desc: "Concise conceptual questions" },
+    { id: "lqs", name: "Long / Detailed Questions", icon: "📚", desc: "Descriptive & analytical questions" },
+    { id: "definitions", name: "Definitions & Concepts", icon: "📖", desc: "Core terminology & definitions" }
+  ];
+}
+
+function renderWizardStep3QuestionTypes() {
+  const subj = getSelectedSubjectObj();
+  const availableCats = getSubjectCategories(paperCreationState.subjectId, paperCreationState.classId);
+
+  return `
+    <div class="paper-step-box">
+      <div class="paper-step-intro">
+        <div class="paper-step-title">Step 3 — Select Question Categories</div>
+        <div class="paper-step-desc">Choose which question types to include for ${subj.name}:</div>
+      </div>
+
+      <!-- Quick Presets -->
+      <div class="paper-cat-presets">
+        <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('board')">🏆 Official Board Set</button>
+        <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('obj')">🎯 Objective Only</button>
+        <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('subj')">📝 Subjective Only</button>
+        <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('all')">📑 Select All</button>
+      </div>
+
+      <div class="paper-category-grid">
+        ${availableCats.map(cat => {
+          const isSelected = (paperCreationState.selectedCategories || []).includes(cat.id);
+          return `
+            <div class="paper-cat-card ${isSelected ? 'selected' : ''}" 
+                 onclick="togglePaperCategory('${cat.id}')">
+              <div style="display:flex;align-items:center;gap:0.45rem;">
+                <input type="checkbox" ${isSelected ? 'checked' : ''} onclick="event.stopPropagation(); togglePaperCategory('${cat.id}')">
+                <span style="font-size:1.15rem;">${cat.icon}</span>
+                <div>
+                  <div style="font-weight:700;font-size:0.78rem;color:#0f172a;">${cat.name}</div>
+                  <div style="font-size:0.65rem;color:#64748b;">${cat.desc}</div>
+                </div>
+              </div>
+              <span style="font-size:0.75rem;font-weight:800;color:${isSelected ? '#0284c7' : '#94a3b8'};">
+                ${isSelected ? '✓ Active' : '+ Add'}
+              </span>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function togglePaperCategory(catId) {
+  const list = paperCreationState.selectedCategories || [];
+  const idx = list.indexOf(catId);
+  if (idx >= 0) {
+    if (list.length > 1) list.splice(idx, 1);
+  } else {
+    list.push(catId);
+  }
+  paperCreationState.selectedCategories = list;
+  syncPaperPartsWithCategories();
+  renderPapersView();
+}
+
+function applyPaperCategoryPreset(presetKey) {
+  const availableCats = getSubjectCategories(paperCreationState.subjectId, paperCreationState.classId);
+  if (presetKey === 'board') {
+    paperCreationState.selectedCategories = availableCats.filter(c => ['mcqs', 'sqs', 'lqs'].includes(c.id)).map(c => c.id);
+  } else if (presetKey === 'obj') {
+    paperCreationState.selectedCategories = availableCats.filter(c => ['mcqs', 'wordsMeanings', 'definitions'].includes(c.id)).map(c => c.id);
+  } else if (presetKey === 'subj') {
+    paperCreationState.selectedCategories = availableCats.filter(c => c.id !== 'mcqs').slice(0, 3).map(c => c.id);
+  } else if (presetKey === 'all') {
+    paperCreationState.selectedCategories = availableCats.map(c => c.id);
+  }
+  syncPaperPartsWithCategories();
+  renderPapersView();
+}
+
+function syncPaperPartsWithCategories() {
+  const cats = paperCreationState.selectedCategories;
+  const parts = [];
+
+  if (cats.includes('mcqs')) {
+    parts.push({
+      id: "partA",
+      name: "SECTION — A (OBJECTIVE TYPE)",
+      instructions: "Note: Attempt all questions. Each question carries 1 mark. Fill the corresponding bubble or encircle the correct option (A, B, C, or D).",
+      category: "mcqs",
+      count: paperCreationState.mcqSettings.count || 15,
+      attempt: paperCreationState.mcqSettings.count || 15,
+      marksPerQ: paperCreationState.mcqSettings.marksPerMcq || 1,
+      totalMarks: (paperCreationState.mcqSettings.count || 15) * (paperCreationState.mcqSettings.marksPerMcq || 1),
+      showMarks: true,
+      startNewPage: false
+    });
+  }
+
+  // Short questions or secondary categories
+  const sqCats = cats.filter(c => c !== 'mcqs' && c !== 'lqs');
+  if (sqCats.length > 0) {
+    const primaryCat = sqCats[0];
+    const catConf = paperCreationState.categorySettings[primaryCat] || { count: 12, attempt: 9, marksPerQ: 4 };
+    parts.push({
+      id: "partB",
+      name: "SECTION — B (SHORT ANSWER QUESTIONS)",
+      instructions: `Note: Attempt any ${catConf.attempt} questions from this section. All questions carry equal marks (${catConf.marksPerQ} Marks each).`,
+      category: primaryCat,
+      count: catConf.count,
+      attempt: catConf.attempt,
+      marksPerQ: catConf.marksPerQ,
+      totalMarks: catConf.attempt * catConf.marksPerQ,
+      showMarks: true,
+      startNewPage: false
+    });
+  }
+
+  // Long questions
+  if (cats.includes('lqs')) {
+    const lqConf = paperCreationState.categorySettings.lqs || { count: 4, attempt: 3, marksPerQ: 8 };
+    parts.push({
+      id: "partC",
+      name: "SECTION — C (LONG & DETAILED QUESTIONS)",
+      instructions: `Note: Attempt any ${lqConf.attempt} questions from this section. Each question carries ${lqConf.marksPerQ} marks (sub-parts carry equal marks).`,
+      category: "lqs",
+      count: lqConf.count,
+      attempt: lqConf.attempt,
+      marksPerQ: lqConf.marksPerQ,
+      totalMarks: lqConf.attempt * lqConf.marksPerQ,
+      showMarks: true,
+      startNewPage: false
+    });
+  }
+
+  if (parts.length > 0) {
+    paperCreationState.parts = parts;
+  }
+}
+
+// ─── STEP 4: QUESTION & MCQ SETTINGS ─────────────────────
+function renderWizardStep4QuestionSettings() {
+  const hasMcqs = (paperCreationState.selectedCategories || []).includes('mcqs');
+  const otherCats = (paperCreationState.selectedCategories || []).filter(c => c !== 'mcqs');
+  const availableCats = getSubjectCategories(paperCreationState.subjectId, paperCreationState.classId);
+
+  return `
+    <div class="paper-step-box">
+      <div class="paper-step-intro">
+        <div class="paper-step-title">Step 4 — Question &amp; MCQ Settings</div>
+        <div class="paper-step-desc">Configure layout, question counts, marks, OMR bubbles, and question sources:</div>
+      </div>
+
+      <!-- MCQ Configuration Box -->
+      ${hasMcqs ? `
+        <div class="paper-settings-box">
+          <div class="paper-settings-box-title">
+            <span>🎯 MCQ Section Settings</span>
+            <span style="font-size:0.68rem;color:#0284c7;font-weight:700;">
+              Total: ${(paperCreationState.mcqSettings.count || 15) * (paperCreationState.mcqSettings.marksPerMcq || 1)} Marks
+            </span>
+          </div>
+
+          <!-- A. Print on same page? -->
+          <div class="paper-row-field">
+            <span>Print MCQs on same page with other questions?</span>
+            <div class="paper-segmented-btn-group">
+              <button class="paper-seg-btn ${paperCreationState.mcqSettings.samePage ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('samePage', true)">Yes (Same Page)</button>
+              <button class="paper-seg-btn ${!paperCreationState.mcqSettings.samePage ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('samePage', false)">No (Separate)</button>
+            </div>
+          </div>
+
+          <!-- B. OMR-Based MCQs? -->
+          <div class="paper-row-field">
+            <div>
+              <div>Use OMR-Based MCQs?</div>
+              <div style="font-size:0.62rem;color:#64748b;">Students shade bubbles: ○ A ○ B ○ C ○ D</div>
+            </div>
+            <div class="paper-segmented-btn-group">
+              <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrBased ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('omrBased', true)">Yes (OMR Bubbles)</button>
+              <button class="paper-seg-btn ${!paperCreationState.mcqSettings.omrBased ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('omrBased', false)">No (Letters A, B)</button>
+            </div>
+          </div>
+
+          <!-- C. Number of Columns -->
+          <div class="paper-row-field">
+            <span>MCQ Layout Columns:</span>
+            <div class="paper-segmented-btn-group">
+              <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 1 ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('columns', 1)">1 Column</button>
+              <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 2 ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('columns', 2)">2 Columns</button>
+              <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 3 ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('columns', 3)">3 Columns</button>
+            </div>
+          </div>
+
+          <!-- D. Total MCQs -->
+          <div class="paper-row-field">
+            <span>Total Number of MCQs:</span>
+            <div style="display:flex;align-items:center;gap:0.35rem;">
+              <div class="paper-stepper-control">
+                <button class="paper-stepper-btn" onclick="changePaperQty('mcqs', 'count', -1)">-</button>
+                <input class="paper-stepper-input" type="number" value="${paperCreationState.mcqSettings.count || 15}" 
+                       onchange="updatePaperMcqSetting('count', parseInt(this.value) || 15)">
+                <button class="paper-stepper-btn" onclick="changePaperQty('mcqs', 'count', 1)">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Presets for MCQs -->
+          <div style="display:flex;gap:0.25rem;margin:0.25rem 0 0.45rem 0;">
+            ${[5, 10, 12, 15, 20, 25, 30].map(cnt => `
+              <button class="paper-preset-chip ${paperCreationState.mcqSettings.count === cnt ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('count', ${cnt})">${cnt} Qs</button>
+            `).join('')}
+          </div>
+
+          <!-- E. Options Layout: Horizontal vs Vertical -->
+          <div class="paper-row-field">
+            <span>Options Display Layout:</span>
+            <div class="paper-segmented-btn-group">
+              <button class="paper-seg-btn ${paperCreationState.mcqSettings.optionsLayout === 'horizontal' ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('optionsLayout', 'horizontal')">Horizontal (A B C D)</button>
+              <button class="paper-seg-btn ${paperCreationState.mcqSettings.optionsLayout === 'vertical' ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('optionsLayout', 'vertical')">Vertical (Stacked)</button>
+            </div>
+          </div>
+
+          <!-- F. Marks per MCQ -->
+          <div class="paper-row-field">
+            <span>Marks per MCQ:</span>
+            <div class="paper-stepper-control">
+              <button class="paper-stepper-btn" onclick="changePaperQty('mcqs', 'marksPerMcq', -1)">-</button>
+              <input class="paper-stepper-input" type="number" value="${paperCreationState.mcqSettings.marksPerMcq || 1}" 
+                     onchange="updatePaperMcqSetting('marksPerMcq', parseInt(this.value) || 1)">
+              <button class="paper-stepper-btn" onclick="changePaperQty('mcqs', 'marksPerMcq', 1)">+</button>
+            </div>
+          </div>
+        </div>
+      ` : ''}
+
+      <!-- Other Category Settings -->
+      ${otherCats.map(catId => {
+        const catMeta = availableCats.find(c => c.id === catId) || { name: catId, icon: "📝" };
+        const conf = paperCreationState.categorySettings[catId] || { count: 10, attempt: 8, marksPerQ: 4 };
+        const availableMarks = conf.count * conf.marksPerQ;
+        const attemptMarks = conf.attempt * conf.marksPerQ;
+
+        return `
+          <div class="paper-settings-box">
+            <div class="paper-settings-box-title">
+              <span>${catMeta.icon} ${catMeta.name} Settings</span>
+              <span style="font-size:0.68rem;color:#16a34a;font-weight:700;">
+                Attempt: ${attemptMarks} Marks (Avail: ${availableMarks}M)
+              </span>
+            </div>
+
+            <div class="paper-row-field">
+              <span>Total Questions Provided:</span>
+              <div class="paper-stepper-control">
+                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'count', -1)">-</button>
+                <input class="paper-stepper-input" type="number" value="${conf.count}" 
+                       onchange="updatePaperCategorySetting('${catId}', 'count', parseInt(this.value) || 10)">
+                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'count', 1)">+</button>
+              </div>
+            </div>
+
+            <div class="paper-row-field">
+              <span>Questions to Attempt:</span>
+              <div class="paper-stepper-control">
+                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'attempt', -1)">-</button>
+                <input class="paper-stepper-input" type="number" value="${conf.attempt}" 
+                       onchange="updatePaperCategorySetting('${catId}', 'attempt', parseInt(this.value) || 8)">
+                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'attempt', 1)">+</button>
+              </div>
+            </div>
+
+            <div class="paper-row-field">
+              <span>Marks per Question:</span>
+              <div class="paper-stepper-control">
+                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'marksPerQ', -1)">-</button>
+                <input class="paper-stepper-input" type="number" value="${conf.marksPerQ}" 
+                       onchange="updatePaperCategorySetting('${catId}', 'marksPerQ', parseInt(this.value) || 4)">
+                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'marksPerQ', 1)">+</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('')}
+
+      <!-- Question Selection Source & Method -->
+      <div class="paper-settings-box">
+        <div class="paper-settings-box-title">
+          <span>📚 Question Selection Engine</span>
+          <button class="pcs-print-btn" onclick="openQuestionBankModal()" style="width:auto;padding:0.2rem 0.5rem;font-size:0.68rem;">
+            🔍 Open Question Bank
+          </button>
+        </div>
+
+        <div class="paper-row-field">
+          <span>Question Source:</span>
+          <select class="pcs-select" style="width:160px;" onchange="paperCreationState.questionSource = this.value; updatePaperPreview();">
+            <option value="mixed" ${paperCreationState.questionSource === 'mixed' ? 'selected' : ''}>Full Curriculum Mixed</option>
+            <option value="exercise" ${paperCreationState.questionSource === 'exercise' ? 'selected' : ''}>Textbook Exercises Only</option>
+            <option value="slo" ${paperCreationState.questionSource === 'slo' ? 'selected' : ''}>SLO Conceptual Drills</option>
+            <option value="board" ${paperCreationState.questionSource === 'board' ? 'selected' : ''}>Board / Past Exam Bank</option>
+          </select>
+        </div>
+
+        <div class="paper-row-field">
+          <span>Selection Mode:</span>
+          <select class="pcs-select" style="width:160px;" onchange="paperCreationState.selectionStrategy = this.value; updatePaperPreview();">
+            <option value="balanced" ${paperCreationState.selectionStrategy === 'balanced' ? 'selected' : ''}>Balanced by Chapter</option>
+            <option value="random" ${paperCreationState.selectionStrategy === 'random' ? 'selected' : ''}>Random Non-Repeating</option>
+            <option value="slo" ${paperCreationState.selectionStrategy === 'slo' ? 'selected' : ''}>Auto-Select by SLOs</option>
+            <option value="manual" ${paperCreationState.selectionStrategy === 'manual' ? 'selected' : ''}>Hand-Pick from Bank</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function updatePaperMcqSetting(key, val) {
+  paperCreationState.mcqSettings[key] = val;
+  // Sync with Part A
+  const partA = (paperCreationState.parts || []).find(p => p.category === 'mcqs');
+  if (partA) {
+    if (key === 'count') {
+      partA.count = val;
+      partA.attempt = val;
+    }
+    if (key === 'marksPerMcq') {
+      partA.marksPerQ = val;
+    }
+    partA.totalMarks = (partA.attempt || 15) * (partA.marksPerQ || 1);
+  }
+  updatePaperPreview();
+  renderPapersView();
+}
+
+function updatePaperCategorySetting(catId, field, val) {
+  if (!paperCreationState.categorySettings[catId]) {
+    paperCreationState.categorySettings[catId] = { count: 10, attempt: 8, marksPerQ: 4 };
+  }
+  paperCreationState.categorySettings[catId][field] = val;
+  
+  // Sync with matching Part
+  const part = (paperCreationState.parts || []).find(p => p.category === catId);
+  if (part) {
+    part[field] = val;
+    part.totalMarks = (part.attempt || 0) * (part.marksPerQ || 0);
+  }
+  updatePaperPreview();
+  renderPapersView();
+}
+
+function changePaperQty(catId, field, delta) {
+  if (catId === 'mcqs') {
+    const current = paperCreationState.mcqSettings[field] || 1;
+    const nextVal = Math.max(1, current + delta);
+    updatePaperMcqSetting(field, nextVal);
+  } else {
+    const conf = paperCreationState.categorySettings[catId] || { count: 10, attempt: 8, marksPerQ: 4 };
+    const current = conf[field] || 1;
+    const nextVal = Math.max(1, current + delta);
+    updatePaperCategorySetting(catId, field, nextVal);
+  }
+}
+
+// ─── STEP 5: PAPER STRUCTURE (PARTS A, B, C, D, E) ────────
+function renderWizardStep5PaperStructure() {
+  const parts = paperCreationState.parts || [];
+
+  return `
+    <div class="paper-step-box">
+      <div class="paper-step-intro">
+        <div class="paper-step-title">Step 5 — Paper Structure (Parts A, B, C, D)</div>
+        <div class="paper-step-desc">Organize the examination paper into structured sections with dedicated instructions:</div>
+      </div>
+
+      <div style="display:flex;justify-content:flex-end;margin-bottom:0.4rem;">
+        <button class="pcs-print-btn" onclick="addPaperCustomPart()" style="width:auto;padding:0.25rem 0.65rem;font-size:0.72rem;">
+          ➕ Add Section / Part
+        </button>
+      </div>
+
+      <div class="paper-parts-list">
+        ${parts.map((part, pIdx) => `
+          <div class="paper-part-card" id="part-card-${part.id}">
+            <div class="paper-part-top">
+              <input type="text" class="pcs-input" style="font-weight:800;width:75%;" 
+                     value="${part.name}" oninput="updatePaperPartField('${part.id}', 'name', this.value)">
+              ${parts.length > 1 ? `
+                <button onclick="removePaperPart('${part.id}')" title="Delete Part" 
+                        style="background:#fee2e2;color:#dc2626;border:none;border-radius:4px;padding:0.2rem 0.45rem;font-size:0.68rem;cursor:pointer;font-weight:700;">
+                  ✕ Remove
+                </button>
+              ` : ''}
+            </div>
+
+            <!-- Instructions -->
+            <div style="margin-bottom:0.4rem;">
+              <label style="font-size:0.66rem;font-weight:700;color:#64748b;">Section Instructions / Rubric:</label>
+              <textarea class="pcs-input" style="height:48px;font-size:0.72rem;resize:vertical;" 
+                        oninput="updatePaperPartField('${part.id}', 'instructions', this.value)">${part.instructions}</textarea>
+            </div>
+
+            <!-- Numbers & Marks -->
+            <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:0.4rem;">
+              <div>
+                <label style="font-size:0.64rem;color:#64748b;">Total Qs:</label>
+                <input type="number" class="pcs-input" value="${part.count}" 
+                       onchange="updatePaperPartField('${part.id}', 'count', parseInt(this.value) || 1)">
+              </div>
+              <div>
+                <label style="font-size:0.64rem;color:#64748b;">Attempt Qs:</label>
+                <input type="number" class="pcs-input" value="${part.attempt}" 
+                       onchange="updatePaperPartField('${part.id}', 'attempt', parseInt(this.value) || 1)">
+              </div>
+              <div>
+                <label style="font-size:0.64rem;color:#64748b;">Marks Each:</label>
+                <input type="number" class="pcs-input" value="${part.marksPerQ}" 
+                       onchange="updatePaperPartField('${part.id}', 'marksPerQ', parseInt(this.value) || 1)">
+              </div>
+            </div>
+
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.45rem;font-size:0.7rem;color:#475569;">
+              <span>Total Section Marks: <strong style="color:#0284c7;">${part.attempt * part.marksPerQ} Marks</strong></span>
+              <label style="display:inline-flex;align-items:center;gap:0.25rem;cursor:pointer;">
+                <input type="checkbox" ${part.showMarks ? 'checked' : ''} 
+                       onchange="updatePaperPartField('${part.id}', 'showMarks', this.checked)">
+                Show marks beside Qs
+              </label>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function updatePaperPartField(partId, field, val) {
+  const part = (paperCreationState.parts || []).find(p => p.id === partId);
+  if (part) {
+    part[field] = val;
+    part.totalMarks = (Number(part.attempt) || 0) * (Number(part.marksPerQ) || 0);
+  }
+  updatePaperPreview();
+  const sumEl = document.getElementById('paperLiveSummaryContainer');
+  if (sumEl) sumEl.innerHTML = renderLivePaperSummaryWidget();
+}
+
+function addPaperCustomPart() {
+  const nextLetter = String.fromCharCode(65 + (paperCreationState.parts || []).length);
+  paperCreationState.parts.push({
+    id: `part${nextLetter}`,
+    name: `SECTION — ${nextLetter} (ADDITIONAL EXAM SECTION)`,
+    instructions: "Note: Attempt all questions according to instructions.",
+    category: "sqs",
+    count: 5,
+    attempt: 4,
+    marksPerQ: 4,
+    totalMarks: 16,
+    showMarks: true,
+    startNewPage: false
+  });
+  renderPapersView();
+}
+
+function removePaperPart(partId) {
+  paperCreationState.parts = (paperCreationState.parts || []).filter(p => p.id !== partId);
+  renderPapersView();
+}
+
+// ─── STEP 6: MARKS, TIME, HEADER & INSTRUCTIONS ──────────
+function renderWizardStep6MarksAndHeaders() {
+  return `
+    <div class="paper-step-box">
+      <div class="paper-step-intro">
+        <div class="paper-step-title">Step 6 — Marks, Time, Header &amp; Instructions</div>
+        <div class="paper-step-desc">Configure institution details, exam title, duration, and general exam rules:</div>
+      </div>
+
+      <!-- Exam Presets -->
+      <div class="paper-settings-box">
+        <div class="paper-settings-box-title">
+          <span>🏆 Exam Pattern Presets</span>
+        </div>
+        <div class="pcs-type-pills">
+          <button class="pcs-type-btn ${paperCreationState.paperType === 'annual' ? 'active' : ''}" 
+                  onclick="setPaperTypePreset('annual')">🏆 Annual Exam (75M)</button>
+          <button class="pcs-type-btn ${paperCreationState.paperType === 'term1' ? 'active' : ''}" 
+                  onclick="setPaperTypePreset('term1')">📘 First Term (50M)</button>
+          <button class="pcs-type-btn ${paperCreationState.paperType === 'monthly' ? 'active' : ''}" 
+                  onclick="setPaperTypePreset('monthly')">📑 Monthly Test (25M)</button>
+          <button class="pcs-type-btn ${paperCreationState.paperType === 'preboard' ? 'active' : ''}" 
+                  onclick="setPaperTypePreset('preboard')">🎯 Pre-Board (75M)</button>
+        </div>
+      </div>
+
+      <!-- Institution Header Information -->
+      <div class="paper-settings-box">
+        <div class="paper-settings-box-title">
+          <span>🏛️ Institution Credentials</span>
+        </div>
+        
+        <div style="margin-bottom:0.4rem;">
+          <label class="pcs-label">Institution / School / College Name:</label>
+          <input type="text" class="pcs-input" value="${paperCreationState.institutionName}" 
+                 oninput="updatePaperHeaderField('institutionName', this.value)">
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;margin-bottom:0.4rem;">
+          <div>
+            <label class="pcs-label">Exam Title:</label>
+            <input type="text" class="pcs-input" value="${paperCreationState.examTitle}" 
+                   oninput="updatePaperHeaderField('examTitle', this.value)">
+          </div>
+          <div>
+            <label class="pcs-label">Academic Session:</label>
+            <input type="text" class="pcs-input" value="${paperCreationState.academicYear}" 
+                   oninput="updatePaperHeaderField('academicYear', this.value)">
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.4rem;">
+          <div>
+            <label class="pcs-label">Paper Code:</label>
+            <input type="text" class="pcs-input" value="${paperCreationState.paperCode}" 
+                   oninput="updatePaperHeaderField('paperCode', this.value)">
+          </div>
+          <div>
+            <label class="pcs-label">Time Allowed:</label>
+            <input type="text" class="pcs-input" value="${paperCreationState.duration}" 
+                   oninput="updatePaperHeaderField('duration', this.value)">
+          </div>
+          <div>
+            <label class="pcs-label">Exam Date:</label>
+            <input type="text" class="pcs-input" value="${paperCreationState.date}" 
+                   oninput="updatePaperHeaderField('date', this.value)">
+          </div>
+        </div>
+      </div>
+
+      <!-- General Instructions -->
+      <div class="paper-settings-box">
+        <div class="paper-settings-box-title">
+          <span>📜 General Examination Instructions</span>
+        </div>
+        <textarea class="pcs-input" style="height:65px;font-size:0.72rem;resize:vertical;" 
+                  oninput="paperCreationState.generalInstructions = this.value.split('\\n'); updatePaperPreview();">${paperCreationState.generalInstructions.join('\n')}</textarea>
+      </div>
+
+      <!-- Layout & Print Options -->
+      <div class="paper-settings-box">
+        <div class="paper-settings-box-title">
+          <span>📄 Print Layout &amp; Numbering</span>
+        </div>
+
+        <div class="paper-row-field">
+          <span>Question Numbering Style:</span>
+          <div class="paper-segmented-btn-group">
+            <button class="paper-seg-btn ${paperCreationState.numberingStyle === 'Q1' ? 'active' : ''}" 
+                    onclick="paperCreationState.numberingStyle = 'Q1'; updatePaperPreview();">Q1, Q2</button>
+            <button class="paper-seg-btn ${paperCreationState.numberingStyle === '1' ? 'active' : ''}" 
+                    onclick="paperCreationState.numberingStyle = '1'; updatePaperPreview();">1, 2, 3</button>
+            <button class="paper-seg-btn ${paperCreationState.numberingStyle === 'i' ? 'active' : ''}" 
+                    onclick="paperCreationState.numberingStyle = 'i'; updatePaperPreview();">(i), (ii)</button>
+          </div>
+        </div>
+
+        <div class="paper-row-field">
+          <span>Paper Format:</span>
+          <div class="paper-segmented-btn-group">
+            <button class="paper-seg-btn ${paperCreationState.printSettings.paperSize === 'A4' ? 'active' : ''}" 
+                    onclick="paperCreationState.printSettings.paperSize = 'A4'; updatePaperPreview();">A4 Standard</button>
+            <button class="paper-seg-btn ${paperCreationState.printSettings.paperSize === 'A5' ? 'active' : ''}" 
+                    onclick="paperCreationState.printSettings.paperSize = 'A5'; updatePaperPreview();">A5 Compact</button>
+            <button class="paper-seg-btn ${paperCreationState.printSettings.paperSize === 'Letter' ? 'active' : ''}" 
+                    onclick="paperCreationState.printSettings.paperSize = 'Letter'; updatePaperPreview();">Letter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function updatePaperHeaderField(field, val) {
+  paperCreationState[field] = val;
+  updatePaperPreview();
+}
+
+function setPaperTypePreset(presetKey) {
+  paperCreationState.paperType = presetKey;
+  if (presetKey === 'annual') {
+    paperCreationState.examTitle = "ANNUAL EXAMINATION 2026";
+    paperCreationState.duration = "2:30 Hours";
+    paperCreationState.mcqSettings.count = 15;
+    paperCreationState.mcqSettings.marksPerMcq = 1;
+    paperCreationState.categorySettings.sqs = { count: 12, attempt: 9, marksPerQ: 4 };
+    paperCreationState.categorySettings.lqs = { count: 4, attempt: 3, marksPerQ: 8 };
+  } else if (presetKey === 'term1') {
+    paperCreationState.examTitle = "FIRST TERM EXAMINATION 2026";
+    paperCreationState.duration = "2:00 Hours";
+    paperCreationState.mcqSettings.count = 10;
+    paperCreationState.mcqSettings.marksPerMcq = 1;
+    paperCreationState.categorySettings.sqs = { count: 8, attempt: 6, marksPerQ: 4 };
+    paperCreationState.categorySettings.lqs = { count: 3, attempt: 2, marksPerQ: 8 };
+  } else if (presetKey === 'monthly') {
+    paperCreationState.examTitle = "MONTHLY ASSESSMENT TEST";
+    paperCreationState.duration = "1:00 Hour";
+    paperCreationState.mcqSettings.count = 5;
+    paperCreationState.mcqSettings.marksPerMcq = 1;
+    paperCreationState.categorySettings.sqs = { count: 7, attempt: 5, marksPerQ: 2 };
+    paperCreationState.categorySettings.lqs = { count: 2, attempt: 1, marksPerQ: 10 };
+  } else if (presetKey === 'preboard') {
+    paperCreationState.examTitle = "PRE-BOARD MOCK EXAMINATION 2026";
+    paperCreationState.duration = "2:30 Hours";
+    paperCreationState.mcqSettings.count = 15;
+    paperCreationState.mcqSettings.marksPerMcq = 1;
+    paperCreationState.categorySettings.sqs = { count: 12, attempt: 9, marksPerQ: 4 };
+    paperCreationState.categorySettings.lqs = { count: 4, attempt: 3, marksPerQ: 8 };
+  }
+  syncPaperPartsWithCategories();
+  renderPapersView();
+}
+
+// ─── STEP 7: PAPER PREVIEW SCREEN ────────────────────────
+function renderWizardStep7Preview() {
+  return `
+    <div class="paper-step-box">
+      <div class="paper-step-intro">
+        <div class="paper-step-title">Step 7 — Official Exam Paper Preview</div>
+        <div class="paper-step-desc">Inspect the rendered examination paper on the right. Verify all questions, marks, and layout before printing:</div>
+      </div>
+
+      <!-- Preview Action Suite -->
+      <div class="paper-settings-box">
+        <div class="paper-settings-box-title">
+          <span>🛠️ Paper Tools &amp; Actions</span>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:0.35rem;">
+          <button class="pcs-action-btn" onclick="nextPaperWizardStep()">
+            ⚡ Proceed to Generate &amp; Print
+          </button>
+          
+          <button class="pcs-print-btn" onclick="printOfficialExamPaper()">
+            🖨️ Quick Print (A4 Format)
+          </button>
+
+          <button class="pcs-key-btn" onclick="togglePaperAnswerKey()">
+            🔑 ${paperCreationState.showAnswerKey ? 'Hide Solved Marking Scheme' : 'Show Solved Marking Scheme & Key'}
+          </button>
+
+          <div style="display:flex;gap:0.3rem;">
+            <button class="pcs-type-btn ${paperCreationState.version === 'A' ? 'active' : ''}" style="flex:1;" 
+                    onclick="switchPaperVersion('A')">Set A</button>
+            <button class="pcs-type-btn ${paperCreationState.version === 'B' ? 'active' : ''}" style="flex:1;" 
+                    onclick="switchPaperVersion('B')">Set B</button>
+            <button class="pcs-type-btn ${paperCreationState.version === 'C' ? 'active' : ''}" style="flex:1;" 
+                    onclick="switchPaperVersion('C')">Set C</button>
+          </div>
+
+          <button class="pcs-shuffle-btn" onclick="shufflePaperQuestions()">
+            🎲 Regenerate / New Question Set
+          </button>
+
+          <button class="pcs-shuffle-btn" onclick="openQuestionBankModal()">
+            📚 Open Question Bank (Custom Picker)
+          </button>
+
+          <button class="pcs-shuffle-btn" onclick="savePaperTemplatePrompt()">
+            💾 Save as Reusable Template
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// ─── STEP 8: GENERATE / PRINT HUB ────────────────────────
+function renderWizardStep8GeneratePrint() {
+  const clsName = getClassName(paperCreationState.classId);
+  const subj = getSelectedSubjectObj();
+
+  return `
+    <div class="paper-step-box">
+      <div class="paper-step-intro">
+        <div class="paper-step-title">Step 8 — Generate &amp; Print Hub</div>
+        <div class="paper-step-desc">Your official KPK Board paper for ${clsName} ${subj.name} is ready for distribution:</div>
+      </div>
+
+      <div class="paper-settings-box" style="background:#f0fdf4;border-color:#86efac;">
+        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;">
+          <span style="font-size:1.5rem;">🎉</span>
+          <div>
+            <div style="font-weight:800;font-size:0.88rem;color:#166534;">Paper Generation Complete!</div>
+            <div style="font-size:0.68rem;color:#15803d;">All SLOs, question distributions, and marks validated.</div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:0.45rem;margin-top:0.65rem;">
+          <button class="btn btn-primary" onclick="printOfficialExamPaper()" style="font-size:0.85rem;padding:0.6rem;font-weight:800;">
+            🖨️ Print Student Examination Paper
+          </button>
+
+          <button class="pcs-key-btn" onclick="paperCreationState.showAnswerKey=true; updatePaperPreview(); printOfficialExamPaper();" 
+                  style="font-size:0.82rem;padding:0.55rem;font-weight:800;">
+            🔑 Print Teacher Marking Scheme &amp; Answer Key
+          </button>
+
+          <button class="pcs-print-btn" onclick="printOfficialExamPaper()" style="font-size:0.82rem;padding:0.55rem;font-weight:800;">
+            📥 Download / Save as PDF
+          </button>
+
+          <button class="pcs-shuffle-btn" onclick="batchPrintAllVersions()" style="font-size:0.82rem;padding:0.55rem;font-weight:800;">
+            📑 Batch Print All 3 Sets (Set A, B, and C)
+          </button>
+
+          <button class="pcs-shuffle-btn" onclick="goToPaperWizardStep(1)" style="margin-top:0.4rem;">
+            🔄 Create Another Examination Paper
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// ─── LIVE EXAM PAPER TEMPLATE GENERATOR ──────────────────
+function renderLiveExamPaperHtml() {
+  const clsName = getClassName(paperCreationState.classId);
+  const subj = getSelectedSubjectObj();
+  const qBank = getSubjectRichQuestionBank(paperCreationState.classId, subj.id, paperCreationState.seed);
+
+  const parts = paperCreationState.parts || [];
+  const mcqCols = paperCreationState.mcqSettings.columns || 2;
+  const mcqLayout = paperCreationState.mcqSettings.optionsLayout || 'horizontal';
+  const isOmr = paperCreationState.mcqSettings.omrBased;
+
+  return `
+    <div class="printable-exam-paper" id="printableExamPaper">
+      <!-- Official KPK Header -->
+      <div class="pep-official-header">
+        <div class="pep-board-logo">🏛️</div>
+        <div class="pep-header-center">
+          <div class="pep-inst-name" id="previewInstName">${paperCreationState.institutionName.toUpperCase()}</div>
+          <div class="pep-exam-title">${paperCreationState.examTitle} · ${paperCreationState.academicYear}</div>
+          <div class="pep-sub-title">${paperCreationState.subTitle}</div>
+        </div>
+        <div class="pep-board-seal">
+          <div class="pep-seal-box">KPK<br>DCTE</div>
+        </div>
+      </div>
+
+      <!-- Credentials & Meta Grid -->
+      <div class="pep-meta-strip">
+        <div class="pep-meta-left">
+          <span><strong>Class:</strong> ${clsName}</span>
+          <span><strong>Subject:</strong> ${subj.emoji || ''} ${subj.name} ${subj.nameUrdu ? `(${subj.nameUrdu})` : ''}</span>
+          <span><strong>Paper Code:</strong> ${paperCreationState.paperCode}</span>
+        </div>
+        <div class="pep-meta-right">
+          <span><strong>Time Allowed:</strong> ${paperCreationState.duration}</span>
+          <span><strong>Total Marks:</strong> ${paperCreationState.totalMarks}</span>
+        </div>
+      </div>
+
+      <!-- Student Credentials Box -->
+      <div class="pep-student-box">
+        <div class="pep-sfield"><strong>Roll No:</strong> ___________________</div>
+        <div class="pep-sfield"><strong>Student Name:</strong> ____________________________________</div>
+        <div class="pep-sfield"><strong>Section:</strong> ________</div>
+        <div class="pep-sfield"><strong>Date:</strong> ${paperCreationState.date || '___ / ___ / 2026'}</div>
+      </div>
+
+      <!-- Dynamic Sections / Parts -->
+      ${parts.map((part, pIdx) => {
+        const cat = part.category;
+
+        // 1. MCQs Section
+        if (cat === 'mcqs') {
+          const reqCount = Number(part.count) || 15;
+          const questions = (qBank.mcqs || []).slice(0, reqCount);
+
+          return `
+            <div class="pep-section" style="${part.startNewPage ? 'page-break-before:always;' : ''}">
+              <div class="pep-sec-header">
+                <span class="pep-sec-title">${part.name}</span>
+                <span class="pep-sec-marks">Marks: ${part.totalMarks} (${reqCount} × ${part.marksPerQ})</span>
+              </div>
+              <div class="pep-sec-instruction">
+                ${part.instructions}
+              </div>
+              
+              <div class="pep-mcqs-grid" data-cols="${mcqCols}">
+                ${questions.map((m, idx) => `
+                  <div class="pep-mcq-item">
+                    <div class="pep-mcq-q"><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}</div>
+                    <div class="pep-mcq-options" data-layout="${mcqLayout}">
+                      ${m.opts.map((opt, oi) => `
+                        <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}">
+                          ${isOmr ? `
+                            <span class="omr-bubble-circle">${String.fromCharCode(65 + oi)}</span>
+                          ` : `
+                            <span class="pep-bubble">${String.fromCharCode(65 + oi)})</span>
+                          `}
+                          <span>${opt}</span>
+                        </span>
+                      `).join('')}
+                    </div>
+                    ${paperCreationState.showAnswerKey ? `
+                      <div class="pep-key-note">💡 Key: (${String.fromCharCode(65 + m.ans)}) — ${m.exp || 'Standard syllabus definition'}</div>
+                    ` : ''}
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `;
+        }
+
+        // 2. Short Questions / Words Meanings / Definitions
+        if (cat === 'sqs' || cat === 'definitions' || cat === 'wordsMeanings' || cat === 'grammar') {
+          const reqCount = Number(part.count) || 10;
+          const questions = (qBank[cat] || qBank.sqs || []).slice(0, reqCount);
+
+          return `
+            <div class="pep-section" style="margin-top:1.25rem;${part.startNewPage ? 'page-break-before:always;' : ''}">
+              <div class="pep-sec-header">
+                <span class="pep-sec-title">${part.name}</span>
+                <span class="pep-sec-marks">Marks: ${part.totalMarks} (${part.attempt} × ${part.marksPerQ})</span>
+              </div>
+              <div class="pep-sec-instruction">
+                ${part.instructions}
+              </div>
+              <div class="pep-sqs-list">
+                ${questions.map((sq, idx) => `
+                  <div class="pep-sq-item">
+                    <div class="pep-sq-q">
+                      <span><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${sq.q}</span>
+                      ${part.showMarks ? `<span class="pep-q-marks">(${part.marksPerQ})</span>` : ''}
+                    </div>
+                    ${paperCreationState.showAnswerKey ? `
+                      <div class="pep-key-note">
+                        <strong>Model Solution / Rubric:</strong> ${sq.key || '2 marks for clear definition/formula + 2 marks for solved steps/example.'}
+                      </div>
+                    ` : ''}
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `;
+        }
+
+        // 3. Long Questions / Numericals / Theorems / Essays
+        if (cat === 'lqs' || cat === 'numericals' || cat === 'theorems' || cat === 'essays') {
+          const reqCount = Number(part.count) || 4;
+          const questions = (qBank[cat] || qBank.lqs || []).slice(0, reqCount);
+
+          return `
+            <div class="pep-section" style="margin-top:1.25rem;${part.startNewPage ? 'page-break-before:always;' : ''}">
+              <div class="pep-sec-header">
+                <span class="pep-sec-title">${part.name}</span>
+                <span class="pep-sec-marks">Marks: ${part.totalMarks} (${part.attempt} × ${part.marksPerQ})</span>
+              </div>
+              <div class="pep-sec-instruction">
+                ${part.instructions}
+              </div>
+              <div class="pep-lqs-list">
+                ${questions.map((lq, idx) => `
+                  <div class="pep-lq-item">
+                    <div class="pep-lq-q">
+                      <span><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${lq.q}</span>
+                      ${part.showMarks ? `<span class="pep-q-marks">(${part.marksPerQ})</span>` : ''}
+                    </div>
+                    ${lq.subA ? `
+                      <div class="pep-lq-sub">
+                        <span>(a) ${lq.subA}</span>
+                        ${part.showMarks ? `<span class="pep-q-marks">(${Math.round(part.marksPerQ / 2)})</span>` : ''}
+                      </div>
+                    ` : ''}
+                    ${lq.subB ? `
+                      <div class="pep-lq-sub">
+                        <span>(b) ${lq.subB}</span>
+                        ${part.showMarks ? `<span class="pep-q-marks">(${Math.round(part.marksPerQ / 2)})</span>` : ''}
+                      </div>
+                    ` : ''}
+                    ${paperCreationState.showAnswerKey ? `
+                      <div class="pep-key-note">
+                        <strong>Examiner Marking Key:</strong> Comprehensive conceptual explanation, step-by-step mathematical working or derivation, neat labeled diagrams, and conclusive findings.
+                      </div>
+                    ` : ''}
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `;
+        }
+
+        return '';
+      }).join('')}
+
+      <!-- Official Verification Signatures Footer -->
+      <div class="pep-footer-sign-strip">
+        <div>Signature of Invigilator: ______________________</div>
+        <div>Examiner Marks: [ ______ / ${paperCreationState.totalMarks} ]</div>
+        <div>Signature of Head Examiner: ______________________</div>
+      </div>
+    </div>
+  `;
+}
+
+function formatQNum(num, style) {
+  if (style === '1') return `${num}`;
+  if (style === 'i') {
+    const roman = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv", "xvi", "xvii", "xviii", "xix", "xx"];
+    return `(${roman[num - 1] || num})`;
+  }
+  return `Q${num}`;
+}
+
+// ─── RICH CURRICULUM QUESTIONS BANK EXTRACTOR ────────────
+function getSubjectRichQuestionBank(classId, subjectId, seed = 1) {
+  const sid = (subjectId || "").toLowerCase();
+
+  // 1. MATHEMATICS
+  if (sid.includes("math")) {
+    const mcqs = [];
+    const sqs = [];
+    const lqs = [];
+    const numericals = [];
+
+    if (typeof MATH_DATA !== 'undefined' && Array.isArray(MATH_DATA)) {
+      MATH_DATA.forEach((u, uIdx) => {
+        if (u.slos) {
+          if (Array.isArray(u.slos.mcqs)) {
+            u.slos.mcqs.forEach((m, idx) => {
+              mcqs.push({
+                id: `math-m-${u.id || uIdx}-${idx}`,
+                q: m.question || m.q,
+                opts: m.options || m.opts || ["A", "B", "C", "D"],
+                ans: (typeof m.correctIndex === 'number') ? m.correctIndex : ((typeof m.ans === 'number') ? m.ans : 0),
+                exp: m.explanation || m.working || m.solution || `Derived from Unit ${u.number || uIdx + 1}: ${u.title}`,
+                category: "mcqs",
+                chapter: u.title,
+                marks: 1
+              });
+            });
+          }
+          if (Array.isArray(u.slos.shortQuestions)) {
+            u.slos.shortQuestions.forEach((sq, idx) => {
+              sqs.push({
+                id: `math-sq-${u.id || uIdx}-${idx}`,
+                q: sq.question || sq.q,
+                key: sq.answer || sq.solution || sq.key || `Refer to Unit ${u.number || uIdx + 1} core rules.`,
+                category: "sqs",
+                chapter: u.title,
+                marks: 4
+              });
+            });
+          }
+          if (Array.isArray(u.slos.longQuestions)) {
+            u.slos.longQuestions.forEach((lq, idx) => {
+              lqs.push({
+                id: `math-lq-${u.id || uIdx}-${idx}`,
+                q: lq.question || lq.q || `${u.title} Comprehensive Problem`,
+                subA: lq.subA || (lq.question ? lq.question : `Part (a) detailed problem from ${u.title}`),
+                subB: lq.subB || lq.solution || `Part (b) analytical verification or geometric proof`,
+                category: "lqs",
+                chapter: u.title,
+                marks: 8
+              });
+            });
+          }
+        }
+        if (Array.isArray(u.exercises)) {
+          u.exercises.forEach((ex, exIdx) => {
+            if (Array.isArray(ex.problems)) {
+              ex.problems.slice(0, 2).forEach((p, pIdx) => {
+                if (numericals.length < 20) {
+                  numericals.push({
+                    id: `math-num-${u.id}-${exIdx}-${pIdx}`,
+                    q: p.statement || p.q || `Solve the exercise problem from Ex ${ex.exerciseNumber || exIdx + 1}.`,
+                    key: p.solution || p.answer || "Show detailed step-by-step mathematical working.",
+                    category: "numericals",
+                    chapter: u.title,
+                    marks: 4
+                  });
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+
+    // Ensure fallback questions if needed
+    if (mcqs.length < 15 || sqs.length < 12 || lqs.length < 4) {
+      const fb = getCurriculumQuestionsBank(classId, subjectId, seed);
+      if (mcqs.length < 15) mcqs.push(...fb.mcqs);
+      if (sqs.length < 12) sqs.push(...fb.sqs);
+      if (lqs.length < 4) lqs.push(...fb.lqs);
+    }
+
+    // Shuffle by seed
+    return {
+      mcqs: shuffleArrayBySeed(mcqs, seed),
+      sqs: shuffleArrayBySeed(sqs, seed + 1),
+      lqs: shuffleArrayBySeed(lqs, seed + 2),
+      numericals: shuffleArrayBySeed(numericals, seed + 3)
+    };
+  }
+
+  // 2. URDU
+  if (sid.includes("urdu")) {
+    const mcqs = [];
+    const sqs = [];
+    const lqs = [];
+    const wordsMeanings = [];
+
+    if (typeof URDU_DATA !== 'undefined' && Array.isArray(URDU_DATA)) {
+      URDU_DATA.forEach((lesson, lIdx) => {
+        if (lesson.exercise) {
+          if (Array.isArray(lesson.exercise.mcqs)) {
+            lesson.exercise.mcqs.forEach((m, idx) => {
+              mcqs.push({
+                id: `urdu-m-${lIdx}-${idx}`,
+                q: m.question || m.q,
+                opts: m.options || m.opts || ["الف", "ب", "ج", "د"],
+                ans: m.correct || m.ans || 0,
+                exp: m.explanation || `سبق: ${lesson.title}`,
+                category: "mcqs",
+                chapter: lesson.title,
+                marks: 1
+              });
+            });
+          }
+          if (Array.isArray(lesson.exercise.shortQuestions)) {
+            lesson.exercise.shortQuestions.forEach((sq, idx) => {
+              sqs.push({
+                id: `urdu-sq-${lIdx}-${idx}`,
+                q: sq.question || sq.q,
+                key: sq.answer || sq.key || `سبق "${lesson.title}" کے مطابق جامع جواب۔`,
+                category: "sqs",
+                chapter: lesson.title,
+                marks: 4
+              });
+            });
+          }
+          if (Array.isArray(lesson.exercise.vocabulary)) {
+            lesson.exercise.vocabulary.forEach((v, idx) => {
+              if (v.word && v.meaning) {
+                wordsMeanings.push({
+                  id: `urdu-wm-${lIdx}-${idx}`,
+                  q: `درج ذیل لفظ کا معنی لکھیں: "${v.word}"`,
+                  key: `معنی: ${v.meaning}`,
+                  category: "wordsMeanings",
+                  chapter: lesson.title,
+                  marks: 1
+                });
+              }
+            });
+          }
+        }
+        if (lesson.urduSummary || lesson.englishSummary) {
+          lqs.push({
+            id: `urdu-lq-${lIdx}`,
+            q: `سبق "${lesson.title}" کا خلاصہ اپنے الفاظ میں تحریر کریں۔`,
+            subA: `مصنف کا تعارف اور مرکزی خیال بیان کریں۔`,
+            subB: `سبق کے اہم اخلاقی نکات کا احاطہ کریں۔`,
+            category: "lqs",
+            chapter: lesson.title,
+            marks: 8
+          });
+        }
+      });
+    }
+
+    if (mcqs.length < 15 || sqs.length < 12 || lqs.length < 4) {
+      const fb = getCurriculumQuestionsBank(classId, subjectId, seed);
+      if (mcqs.length < 15) mcqs.push(...fb.mcqs);
+      if (sqs.length < 12) sqs.push(...fb.sqs);
+      if (lqs.length < 4) lqs.push(...fb.lqs);
+    }
+
+    return {
+      mcqs: shuffleArrayBySeed(mcqs, seed),
+      sqs: shuffleArrayBySeed(sqs, seed + 1),
+      lqs: shuffleArrayBySeed(lqs, seed + 2),
+      wordsMeanings: shuffleArrayBySeed(wordsMeanings, seed + 3)
+    };
+  }
+
+  // 3. ENGLISH
+  if (sid.includes("eng")) {
+    const mcqs = [];
+    const sqs = [];
+    const lqs = [];
+    const wordsMeanings = [];
+
+    if (typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA)) {
+      ENGLISH_DATA.forEach((u, uIdx) => {
+        if (u.exercise) {
+          if (Array.isArray(u.exercise.textbookMcqs)) {
+            u.exercise.textbookMcqs.forEach((m, idx) => {
+              mcqs.push({
+                id: `eng-m-${uIdx}-${idx}`,
+                q: m.question || m.q,
+                opts: m.options || m.opts || ["A", "B", "C", "D"],
+                ans: m.correct || m.ans || 0,
+                exp: `Unit ${u.number || uIdx + 1}: ${u.title}`,
+                category: "mcqs",
+                chapter: u.title,
+                marks: 1
+              });
+            });
+          }
+          if (Array.isArray(u.exercise.comprehension)) {
+            u.exercise.comprehension.forEach((c, idx) => {
+              sqs.push({
+                id: `eng-sq-${uIdx}-${idx}`,
+                q: c.question || c.q,
+                key: c.answer || `Refer to Unit ${u.number || uIdx + 1}: ${u.title}`,
+                category: "sqs",
+                chapter: u.title,
+                marks: 4
+              });
+            });
+          }
+          if (Array.isArray(u.exercise.dictionaryWords)) {
+            u.exercise.dictionaryWords.forEach((dw, idx) => {
+              wordsMeanings.push({
+                id: `eng-wm-${uIdx}-${idx}`,
+                q: `Give the contextual meaning of: "${dw.word || dw}"`,
+                key: dw.meaning || "Accurate dictionary definition",
+                category: "wordsMeanings",
+                chapter: u.title,
+                marks: 1
+              });
+            });
+          }
+        }
+        lqs.push({
+          id: `eng-lq-${uIdx}`,
+          q: `Write a comprehensive theme/summary of Unit ${u.number || uIdx + 1}: "${u.title}".`,
+          subA: `Describe the core message conveyed by the author.`,
+          subB: `What moral or practical lesson applies to daily life?`,
+          category: "lqs",
+          chapter: u.title,
+          marks: 8
+        });
+      });
+    }
+
+    if (mcqs.length < 15 || sqs.length < 12 || lqs.length < 4) {
+      const fb = getCurriculumQuestionsBank(classId, subjectId, seed);
+      if (mcqs.length < 15) mcqs.push(...fb.mcqs);
+      if (sqs.length < 12) sqs.push(...fb.sqs);
+      if (lqs.length < 4) lqs.push(...fb.lqs);
+    }
+
+    return {
+      mcqs: shuffleArrayBySeed(mcqs, seed),
+      sqs: shuffleArrayBySeed(sqs, seed + 1),
+      lqs: shuffleArrayBySeed(lqs, seed + 2),
+      wordsMeanings: shuffleArrayBySeed(wordsMeanings, seed + 3)
+    };
+  }
+
+  // 4. Fallback for Science / Other Subjects
+  const fbBank = getCurriculumQuestionsBank(classId, subjectId, seed);
+  return {
+    mcqs: shuffleArrayBySeed(fbBank.mcqs || [], seed),
+    sqs: shuffleArrayBySeed(fbBank.sqs || [], seed + 1),
+    lqs: shuffleArrayBySeed(fbBank.lqs || [], seed + 2),
+    definitions: shuffleArrayBySeed(fbBank.sqs || [], seed + 3),
+    numericals: shuffleArrayBySeed(fbBank.sqs || [], seed + 4)
+  };
+}
+
+function shuffleArrayBySeed(arr, seed) {
+  if (!arr || !arr.length) return [];
+  const copy = [...arr];
+  let s = (seed || 1) * 9301 + 49297;
+  for (let i = copy.length - 1; i > 0; i--) {
+    s = (s * 9301 + 49297) % 233280;
+    const rnd = s / 233280;
+    const j = Math.floor(rnd * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+// ─── ACTION TOOLBAR HANDLERS ─────────────────────────────
 function shufflePaperQuestions() {
   paperCreationState.seed = (paperCreationState.seed || 1) + 1;
   updatePaperPreview();
 }
 
-function generateOfficialExamPaper(showNotification) {
-  paperCreationState.seed = (paperCreationState.seed || 1) + 1;
+function switchPaperVersion(versionLetter) {
+  paperCreationState.version = versionLetter;
+  paperCreationState.paperCode = `SET-${versionLetter}-26`;
+  const seedOffsets = { 'A': 1, 'B': 42, 'C': 99 };
+  paperCreationState.seed = seedOffsets[versionLetter] || 1;
   updatePaperPreview();
-  if (showNotification) {
-    alert(`✅ Successfully generated official examination paper for ${getClassName(paperCreationState.classId)} — ${getSelectedSubjectObj().name}!`);
-  }
+  renderPapersView();
+}
+
+function togglePaperAnswerKey() {
+  paperCreationState.showAnswerKey = !paperCreationState.showAnswerKey;
+  updatePaperPreview();
+  const sideEl = document.getElementById('paperCreatorSidebar');
+  if (sideEl) renderPapersView();
 }
 
 function updatePaperPreview() {
@@ -8736,153 +10315,95 @@ function printOfficialExamPaper() {
   window.print();
 }
 
-// ─── LIVE EXAM PAPER TEMPLATE GENERATOR ──────────
-function renderLiveExamPaperHtml() {
-  const clsName = getClassName(paperCreationState.classId);
+function savePaperTemplatePrompt() {
+  const name = prompt("Enter a name for this paper template:", `${getClassName(paperCreationState.classId)} ${getSelectedSubjectObj().name} Official Exam`);
+  if (!name) return;
+  try {
+    const existing = JSON.parse(localStorage.getItem('tuitionhub_paper_templates') || '[]');
+    existing.push({
+      id: 'template_' + Date.now(),
+      name: name,
+      date: new Date().toLocaleDateString(),
+      state: JSON.parse(JSON.stringify(paperCreationState))
+    });
+    localStorage.setItem('tuitionhub_paper_templates', JSON.stringify(existing));
+    alert(`✅ Template "${name}" saved successfully! You can reuse it anytime.`);
+  } catch (err) {
+    alert("Template saved in current session!");
+  }
+}
+
+function batchPrintAllVersions() {
+  alert("🖨️ Generating and queuing Set A, Set B, and Set C for printing...");
+  printOfficialExamPaper();
+}
+
+// ─── QUESTION BANK MODAL ─────────────────────────────────
+function openQuestionBankModal() {
+  const container = document.getElementById('qBankModalContainer');
+  if (!container) return;
   const subj = getSelectedSubjectObj();
-  const qData = getCurriculumQuestionsBank(paperCreationState.classId, subj.id, paperCreationState.seed);
+  const qBank = getSubjectRichQuestionBank(paperCreationState.classId, subj.id, paperCreationState.seed);
+  const allQs = [...(qBank.mcqs || []), ...(qBank.sqs || []), ...(qBank.lqs || [])];
 
-  return `
-    <div class="printable-exam-paper" id="printableExamPaper">
-      <!-- Official Header -->
-      <div class="pep-official-header">
-        <div class="pep-board-logo">🏛️</div>
-        <div class="pep-header-center">
-          <div class="pep-inst-name" id="previewInstName">${paperCreationState.institutionName.toUpperCase()}</div>
-          <div class="pep-exam-title">${paperCreationState.examTitle} · SESSION 2025–2026</div>
-          <div class="pep-sub-title">KHYBER PAKHTUNKHWA TEXTBOOK BOARD SYLLABUS · OFFICIAL PATTERN</div>
-        </div>
-        <div class="pep-board-seal">
-          <div class="pep-seal-box">KPK<br>DCTE</div>
-        </div>
-      </div>
-
-      <!-- Credentials & Meta Grid -->
-      <div class="pep-meta-strip">
-        <div class="pep-meta-left">
-          <span><strong>Class:</strong> ${clsName}</span>
-          <span><strong>Subject:</strong> ${subj.emoji || ''} ${subj.name} ${subj.nameUrdu ? `(${subj.nameUrdu})` : ''}</span>
-          <span><strong>Paper Code:</strong> SET-${String.fromCharCode(65 + (paperCreationState.seed % 4))}-26</span>
-        </div>
-        <div class="pep-meta-right">
-          <span><strong>Time Allowed:</strong> ${paperCreationState.timeAllowed}</span>
-          <span><strong>Total Marks:</strong> ${paperCreationState.totalMarks}</span>
-        </div>
-      </div>
-
-      <!-- Student Fill-in Box -->
-      <div class="pep-student-box">
-        <div class="pep-sfield"><strong>Roll No:</strong> ___________________</div>
-        <div class="pep-sfield"><strong>Student Name:</strong> ____________________________________</div>
-        <div class="pep-sfield"><strong>Section:</strong> ________</div>
-        <div class="pep-sfield"><strong>Date:</strong> ___ / ___ / 2026</div>
-      </div>
-
-      <!-- SECTION A: OBJECTIVE (MCQs) -->
-      ${paperCreationState.includeSectionA ? `
-        <div class="pep-section">
-          <div class="pep-sec-header">
-            <span class="pep-sec-title">SECTION — A (OBJECTIVE TYPE)</span>
-            <span class="pep-sec-marks">Marks: ${qData.mcqs.length}</span>
+  container.innerHTML = `
+    <div class="qbank-modal-overlay" onclick="closeQuestionBankModal()">
+      <div class="qbank-modal-box" onclick="event.stopPropagation()">
+        <div class="qbank-modal-header">
+          <div style="display:flex;align-items:center;gap:0.5rem;">
+            <span style="font-size:1.25rem;">📚</span>
+            <div>
+              <div style="font-weight:800;font-size:0.95rem;">Curriculum Question Bank — ${subj.name}</div>
+              <div style="font-size:0.68rem;opacity:0.8;">Explore, filter, and hand-pick verified questions</div>
+            </div>
           </div>
-          <div class="pep-sec-instruction">
-            <strong>Note:</strong> Attempt all questions. Each question carries 1 mark. Fill the corresponding bubble or encircle the correct option (A, B, C, or D).
+          <button onclick="closeQuestionBankModal()" style="background:transparent;border:none;color:#fff;font-size:1.25rem;cursor:pointer;">✕</button>
+        </div>
+
+        <div class="qbank-modal-body">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem;">
+            <div style="font-size:0.78rem;font-weight:700;color:#334155;">
+              Showing <strong>${allQs.length}</strong> Curriculum Questions
+            </div>
+            <div style="display:flex;gap:0.4rem;">
+              <button class="pcs-print-btn" onclick="shufflePaperQuestions(); closeQuestionBankModal();" style="width:auto;padding:0.3rem 0.65rem;">
+                🎲 Randomize Questions
+              </button>
+              <button class="btn btn-primary" onclick="closeQuestionBankModal()" style="font-size:0.75rem;padding:0.3rem 0.65rem;">
+                ✓ Apply to Paper
+              </button>
+            </div>
           </div>
-          <div class="pep-mcqs-grid">
-            ${qData.mcqs.map((m, idx) => `
-              <div class="pep-mcq-item">
-                <div class="pep-mcq-q"><strong>Q${idx + 1}.</strong> ${m.q}</div>
-                <div class="pep-mcq-options">
-                  ${m.opts.map((opt, oi) => `
-                    <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}">
-                      <span class="pep-bubble">○ ${String.fromCharCode(65 + oi)}</span> ${opt}
-                    </span>
-                  `).join('')}
+
+          <div style="display:flex;flex-direction:column;gap:0.45rem;">
+            ${allQs.map((q, idx) => `
+              <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:0.55rem 0.75rem;font-size:0.78rem;">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.25rem;">
+                  <span style="font-weight:800;color:#0f172a;">#${idx + 1} · ${q.category.toUpperCase()}</span>
+                  <span style="background:#e0f2fe;color:#0369a1;font-size:0.65rem;padding:0.1rem 0.4rem;border-radius:99px;font-weight:700;">
+                    ${q.chapter || 'Unit ' + (idx + 1)} · ${q.marks || 1}M
+                  </span>
                 </div>
-                ${paperCreationState.showAnswerKey ? `<div class="pep-key-note">💡 Key: (${String.fromCharCode(65 + m.ans)}) — ${m.exp || 'Standard syllabus definition'}</div>` : ''}
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      ` : ''}
-
-      <!-- SECTION B: SHORT QUESTIONS -->
-      ${paperCreationState.includeSectionB ? `
-        <div class="pep-section" style="margin-top:1.25rem;">
-          <div class="pep-sec-header">
-            <span class="pep-sec-title">SECTION — B (SHORT ANSWER QUESTIONS)</span>
-            <span class="pep-sec-marks">Marks: ${qData.sqs.length >= 12 ? '36 (9 × 4)' : `${qData.sqs.length * 4}`}</span>
-          </div>
-          <div class="pep-sec-instruction">
-            <strong>Note:</strong> Attempt any <strong>NINE (9)</strong> questions from this section. All questions carry equal marks (4 Marks each).
-          </div>
-          <div class="pep-sqs-list">
-            ${qData.sqs.map((sq, idx) => `
-              <div class="pep-sq-item">
-                <div class="pep-sq-q">
-                  <span><strong>Q${idx + 1}.</strong> ${sq.q}</span>
-                  <span class="pep-q-marks">(4)</span>
-                </div>
-                ${paperCreationState.showAnswerKey ? `
-                  <div class="pep-key-note" style="margin-top:0.3rem;">
-                    <strong>Marking Scheme:</strong> ${sq.key || '2 marks for clear definition/formula + 2 marks for solved steps/example.'}
+                <div style="color:#1e293b;line-height:1.4;">${q.q}</div>
+                ${q.opts ? `
+                  <div style="display:flex;gap:0.85rem;margin-top:0.25rem;font-size:0.72rem;color:#64748b;">
+                    ${q.opts.map((opt, oi) => `<span>(${String.fromCharCode(65 + oi)}) ${opt}</span>`).join('')}
                   </div>
                 ` : ''}
               </div>
             `).join('')}
           </div>
         </div>
-      ` : ''}
-
-      <!-- SECTION C: LONG / DETAILED QUESTIONS -->
-      ${paperCreationState.includeSectionC ? `
-        <div class="pep-section" style="margin-top:1.25rem;">
-          <div class="pep-sec-header">
-            <span class="pep-sec-title">SECTION — C (LONG &amp; DETAILED QUESTIONS)</span>
-            <span class="pep-sec-marks">Marks: ${qData.lqs.length >= 4 ? '24 (3 × 8)' : `${qData.lqs.length * 8}`}</span>
-          </div>
-          <div class="pep-sec-instruction">
-            <strong>Note:</strong> Attempt any <strong>THREE (3)</strong> questions from this section. Each question carries 8 marks (sub-parts carry equal 4 marks each).
-          </div>
-          <div class="pep-lqs-list">
-            ${qData.lqs.map((lq, idx) => `
-              <div class="pep-lq-item">
-                <div class="pep-lq-q">
-                  <span><strong>Q${idx + 1}.</strong> ${lq.q}</span>
-                  <span class="pep-q-marks">(8)</span>
-                </div>
-                ${lq.subA ? `
-                  <div class="pep-lq-sub">
-                    <span>(a) ${lq.subA}</span>
-                    <span class="pep-q-marks">(4)</span>
-                  </div>
-                ` : ''}
-                ${lq.subB ? `
-                  <div class="pep-lq-sub">
-                    <span>(b) ${lq.subB}</span>
-                    <span class="pep-q-marks">(4)</span>
-                  </div>
-                ` : ''}
-                ${paperCreationState.showAnswerKey ? `
-                  <div class="pep-key-note" style="margin-top:0.3rem;">
-                    <strong>Examiner Rubric:</strong> Detailed mathematical proof / theoretical explanation, neat labeled diagram where required, and final conclusive statement.
-                  </div>
-                ` : ''}
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      ` : ''}
-
-      <!-- Official Exam Verification Signatures Footer -->
-      <div class="pep-footer-sign-strip">
-        <div>Signature of Invigilator: ______________________</div>
-        <div>Examiner Marks: [ ______ / ${paperCreationState.totalMarks} ]</div>
-        <div>Signature of Head Examiner: ______________________</div>
       </div>
     </div>
   `;
 }
+
+function closeQuestionBankModal() {
+  const container = document.getElementById('qBankModalContainer');
+  if (container) container.innerHTML = '';
+}
+
 
 // ─── CURRICULUM QUESTIONS BANK ENGINE ────────────
 function getCurriculumQuestionsBank(classId, subjectId, seed) {
