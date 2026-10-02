@@ -11579,7 +11579,13 @@ document.addEventListener('click', function(e) {
   // If clicked inside popover, do nothing
   if (e.target.closest('#eng-word-popover')) return;
 
-  // If clicked directly on a .tts-word or .dict-clickable-word
+  // If clicked inside an interactive lesson sentence, hide word hover tooltip and let sentence toggle run!
+  if (e.target.closest('.lesson-sentence')) {
+    hideWordHoverTooltip();
+    return;
+  }
+
+  // If clicked directly on a .tts-word or .dict-clickable-word outside a lesson sentence
   if (e.target.classList && (e.target.classList.contains('tts-word') || e.target.classList.contains('dict-clickable-word'))) {
     e.stopPropagation();
     const word = e.target.dataset.word || e.target.textContent.trim();
@@ -11591,7 +11597,7 @@ document.addEventListener('click', function(e) {
 
   // If student clicked on academic text inside topic contents / reading texts / exercises across subjects
   const textContainer = e.target.closest('.math-tab-content-scroll, .math-topic-card, .math-accordion-body, .topic-sub-content, .para-card, .para-text-box, .urdu-section-body, .poetic-line-row, .poetic-stanza-block, .topic-content, #engTabContent, #bioTabContent, #chemTabContent, #physTabContent, .reading-text, .exercise-card, .qa-card, .subtopic-card, .table-container, .solution-steps, .words-table-wrap');
-  if (textContainer && !e.target.closest('button, a, input, select, textarea, .math-acc-header, .topic-sub-tabs-bar, .category-sub-tabs-bar')) {
+  if (textContainer && !e.target.closest('button, a, input, select, textarea, .math-acc-header, .topic-sub-tabs-bar, .category-sub-tabs-bar, .lesson-sentence')) {
     let clickedWord = window.getSelection().toString().trim();
     if (!clickedWord || !/^[a-zA-Z\u0600-\u06FF'-]{2,}$/.test(clickedWord)) {
       clickedWord = getWordAtPoint(e.clientX, e.clientY);
@@ -13732,11 +13738,94 @@ function unhighlightSentence(el) {
   if (el) el.classList.remove('sentence-hovered');
 }
 
-function toggleSentenceTranslation(el, event) {
-  // If student clicked directly on a word inside to look up word definition, don't toggle sentence
-  if (event && event.target && event.target.classList.contains('tts-word')) {
-    return;
+// ─── WORD HOVER MEANING TOOLTIP CONTROLLER ─────────────
+let hoverTooltipEl = null;
+let currentHoveredWordEl = null;
+
+function showWordHoverTooltip(wordEl) {
+  if (!wordEl) return;
+  const word = (wordEl.dataset.word || wordEl.textContent || '').trim();
+  const cleanWord = word.toLowerCase().replace(/[^a-z0-9'-]/g, '');
+  if (!cleanWord || cleanWord.length < 2) return;
+
+  const lookup = (typeof lookupEngWord === 'function') 
+    ? lookupEngWord(cleanWord) 
+    : ((typeof window !== 'undefined' && window.ENG_URDU_DICT && window.ENG_URDU_DICT[cleanWord]) 
+        ? window.ENG_URDU_DICT[cleanWord] 
+        : ((typeof ENG_URDU_DICT !== 'undefined' && ENG_URDU_DICT[cleanWord]) ? ENG_URDU_DICT[cleanWord] : null));
+
+  let urdu = (lookup && lookup.u && lookup.u !== 'اردو معنی' && lookup.u !== 'اردو معنی / مفہوم' && lookup.u.toLowerCase() !== cleanWord) ? lookup.u : '';
+  const pashto = (lookup && lookup.p && lookup.p.toLowerCase() !== cleanWord) ? lookup.p : '';
+
+  if (!urdu && !pashto) return;
+
+  if (!hoverTooltipEl) {
+    hoverTooltipEl = document.createElement('div');
+    hoverTooltipEl.id = 'wordHoverTooltip';
+    hoverTooltipEl.className = 'word-hover-tooltip';
+    document.body.appendChild(hoverTooltipEl);
   }
+
+  hoverTooltipEl.innerHTML = `
+    <div class="wht-top-row">
+      <span class="wht-word">${sanitize(word)}</span>
+      <span class="wht-tag">معنی</span>
+    </div>
+    <div class="wht-urdu">${sanitize(urdu)}</div>
+    ${pashto ? `<div class="wht-pashto"><span class="wht-ps-badge">پښتو</span> ${sanitize(pashto)}</div>` : ''}
+  `;
+
+  currentHoveredWordEl = wordEl;
+  hoverTooltipEl.style.display = 'block';
+  hoverTooltipEl.style.visibility = 'hidden';
+
+  const rect = wordEl.getBoundingClientRect();
+  const tooltipRect = hoverTooltipEl.getBoundingClientRect();
+
+  let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
+  let top = rect.top - tooltipRect.height - 8;
+
+  if (left < 10) left = 10;
+  if (left + tooltipRect.width > window.innerWidth - 10) left = window.innerWidth - tooltipRect.width - 10;
+  if (top < 10) {
+    top = rect.bottom + 8;
+  }
+
+  hoverTooltipEl.style.left = `${left}px`;
+  hoverTooltipEl.style.top = `${top}px`;
+  hoverTooltipEl.style.visibility = 'visible';
+}
+
+function hideWordHoverTooltip() {
+  currentHoveredWordEl = null;
+  if (hoverTooltipEl) {
+    hoverTooltipEl.style.display = 'none';
+  }
+}
+
+// Global mouseover / mouseout delegation and scroll listener for word hover
+document.addEventListener('mouseover', function(e) {
+  const wordEl = e.target.closest('.dict-clickable-word');
+  if (wordEl) {
+    if (currentHoveredWordEl !== wordEl) {
+      showWordHoverTooltip(wordEl);
+    }
+  }
+});
+
+document.addEventListener('mouseout', function(e) {
+  const wordEl = e.target.closest('.dict-clickable-word');
+  if (wordEl && (!e.relatedTarget || !e.relatedTarget.closest || e.relatedTarget.closest('.dict-clickable-word') !== wordEl)) {
+    hideWordHoverTooltip();
+  }
+});
+
+if (typeof window !== 'undefined' && window.addEventListener) {
+  window.addEventListener('scroll', hideWordHoverTooltip, { passive: true });
+}
+
+function toggleSentenceTranslation(el, event) {
+  hideWordHoverTooltip();
   if (!el) return;
   const paraIdx = el.dataset.para;
   const sentIdx = el.dataset.sent;
@@ -13810,29 +13899,145 @@ function switchParaLangTab(paraIdx, lang, btn) {
   }
 }
 
+// ─── SENTENCE TOKENIZER HELPER ──────────────────────────
+function splitSentenceText(text, isUrduOrPashto) {
+  if (!text) return [];
+  const clean = String(text).replace(/\r/g, '').trim();
+  const regex = isUrduOrPashto 
+    ? /([^۔.!?؟]+[۔.!?؟]+["'”’»\)]*(?:\s+|$)|[^۔.!?؟]+$)/g
+    : /([^.!?]+[.!?]+["'”’»\)]*(?:\s+|$)|[^.!?]+$)/g;
+  const matches = clean.match(regex) || [clean];
+  return matches.map(s => s.trim()).filter(s => s && !/^[.\-–—)\]"'\s]+$/.test(s));
+}
+
+// ─── SECTION PARAGRAPH & TRANSLATION ALLOCATOR ──────────
+function getSectionParagraphsWithTranslations(sec, ch) {
+  const urAll = (sec && (sec.urdu || sec.urduTranslation)) || (ch && ch.urduSummary) || '';
+  const psAll = (sec && (sec.pashto || sec.pashtoTranslation)) || (ch && ch.pashtoTranslation) || '';
+
+  if (!sec) return [];
+
+  if (!sec.paras || !Array.isArray(sec.paras) || sec.paras.length <= 1) {
+    const raw = (sec.paras && sec.paras.length === 1) ? sec.paras[0] : (sec.text || '');
+    const text = typeof raw === 'string' ? raw : (raw.text || '');
+    const ur = (typeof raw === 'object' && raw.urdu) ? raw.urdu : urAll;
+    const ps = (typeof raw === 'object' && raw.pashto) ? raw.pashto : psAll;
+    return [{ text: text, urdu: ur, pashto: ps }];
+  }
+
+  const pCount = sec.paras.length;
+  let urParts = urAll ? urAll.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean) : [];
+  let psParts = psAll ? psAll.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean) : [];
+
+  if (urParts.length < pCount && urAll.includes('\n')) {
+    const lines = urAll.split(/\n+/).map(s => s.trim()).filter(Boolean);
+    if (lines.length >= pCount) urParts = lines;
+  }
+  if (psParts.length < pCount && psAll.includes('\n')) {
+    const lines = psAll.split(/\n+/).map(s => s.trim()).filter(Boolean);
+    if (lines.length >= pCount) psParts = lines;
+  }
+
+  if (urParts.length !== pCount && urParts.length === 1) {
+    const allUrSents = splitSentenceText(urAll, true);
+    if (allUrSents.length > 1) {
+      const paraSentCounts = sec.paras.map(p => {
+        const pText = typeof p === 'string' ? p : (p.text || '');
+        return splitSentenceText(pText, false).length;
+      });
+      const totalEnSents = paraSentCounts.reduce((a, b) => a + b, 0) || 1;
+      let curUrIdx = 0;
+      urParts = paraSentCounts.map((sCount, pIdx) => {
+        if (pIdx === pCount - 1) {
+          return allUrSents.slice(curUrIdx).join(' ');
+        }
+        const take = Math.max(1, Math.round((sCount / totalEnSents) * allUrSents.length));
+        const chunk = allUrSents.slice(curUrIdx, curUrIdx + take).join(' ');
+        curUrIdx += take;
+        return chunk;
+      });
+    }
+  }
+
+  if (psParts.length !== pCount && psParts.length === 1) {
+    const allPsSents = splitSentenceText(psAll, true);
+    if (allPsSents.length > 1) {
+      const paraSentCounts = sec.paras.map(p => {
+        const pText = typeof p === 'string' ? p : (p.text || '');
+        return splitSentenceText(pText, false).length;
+      });
+      const totalEnSents = paraSentCounts.reduce((a, b) => a + b, 0) || 1;
+      let curPsIdx = 0;
+      psParts = paraSentCounts.map((sCount, pIdx) => {
+        if (pIdx === pCount - 1) {
+          return allPsSents.slice(curPsIdx).join(' ');
+        }
+        const take = Math.max(1, Math.round((sCount / totalEnSents) * allPsSents.length));
+        const chunk = allPsSents.slice(curPsIdx, curPsIdx + take).join(' ');
+        curPsIdx += take;
+        return chunk;
+      });
+    }
+  }
+
+  return sec.paras.map((p, pIdx) => {
+    const pText = typeof p === 'string' ? p : (p.text || '');
+    const pUr = (typeof p === 'object' && p.urdu) ? p.urdu : (urParts[pIdx] || urAll);
+    const pPs = (typeof p === 'object' && p.pashto) ? p.pashto : (psParts[pIdx] || psAll);
+    return {
+      text: pText,
+      urdu: pUr,
+      pashto: pPs
+    };
+  });
+}
+
 // ─── INTERACTIVE PARAGRAPH TOKENIZER ─────────────────────
 function renderInteractiveParagraphHtml(text, urduText, pashtoText, paraIdx) {
   if (!text) return '';
 
-  const sentRegex = /([^.!?]+[.!?]+(?:\s+|$)|[^.!?]+$)/g;
-  const enSentences = (text.match(sentRegex) || [text]).map(s => s.trim()).filter(Boolean);
+  const enSentences = splitSentenceText(text, false);
+  const urSentences = urduText ? splitSentenceText(urduText, true) : [];
+  const psSentences = pashtoText ? splitSentenceText(pashtoText, true) : [];
 
-  const urSentRegex = /([^۔.!?]+[۔.!?]+(?:\s+|$)|[^۔.!?]+$)/g;
-  const urSentences = urduText ? (urduText.match(urSentRegex) || [urduText]).map(s => s.trim()).filter(Boolean) : [];
-
-  const psSentRegex = /([^۔.!?؟]+[۔.!?؟]+(?:\s+|$)|[^۔.!?؟]+$)/g;
-  const psSentences = pashtoText ? (pashtoText.match(psSentRegex) || [pashtoText]).map(s => s.trim()).filter(Boolean) : [];
+  if (enSentences.length === 0) enSentences.push(text.trim());
 
   return enSentences.map((sentence, sIdx) => {
-    const urSent = urSentences[sIdx] || urSentences[0] || urduText || 'اردو ترجمہ دستیاب ہے۔';
-    const psSent = psSentences[sIdx] || psSentences[0] || pashtoText || 'د پښتو ژباړه شتون لري.';
+    // Precise 1-to-1 sentence matching with smooth index distribution
+    let urSent = '';
+    if (urSentences.length === enSentences.length) {
+      urSent = urSentences[sIdx];
+    } else if (urSentences.length > 0) {
+      if (sIdx < urSentences.length) {
+        urSent = urSentences[sIdx];
+      } else {
+        const mappedUrIdx = Math.min(Math.floor((sIdx / enSentences.length) * urSentences.length), urSentences.length - 1);
+        urSent = urSentences[mappedUrIdx] || urSentences[urSentences.length - 1];
+      }
+    } else {
+      urSent = urduText || 'اردو ترجمہ دستیاب ہے۔';
+    }
 
-    // Tokenize sentence into individual words for click definition & realtime audio sync
+    let psSent = '';
+    if (psSentences.length === enSentences.length) {
+      psSent = psSentences[sIdx];
+    } else if (psSentences.length > 0) {
+      if (sIdx < psSentences.length) {
+        psSent = psSentences[sIdx];
+      } else {
+        const mappedPsIdx = Math.min(Math.floor((sIdx / enSentences.length) * psSentences.length), psSentences.length - 1);
+        psSent = psSentences[mappedPsIdx] || psSentences[psSentences.length - 1];
+      }
+    } else {
+      psSent = pashtoText || 'د پښتو ژباړه شتون لري.';
+    }
+
+    // Tokenize sentence into individual words for mouseenter meaning & realtime audio sync
     const wordsHtml = sentence.split(/(\s+)/).map(token => {
       if (/^\s+$/.test(token)) return token;
       const cleanWord = token.replace(/[^a-zA-Z0-9'-]/g, '');
       if (!cleanWord) return sanitize(token);
-      return `<span class="tts-word dict-clickable-word" data-word="${sanitize(cleanWord)}" title="Click for Urdu &amp; Pashto meaning">${sanitize(token)}</span>`;
+      return `<span class="tts-word dict-clickable-word" data-word="${sanitize(cleanWord)}" onmouseenter="showWordHoverTooltip(this)" onmouseleave="hideWordHoverTooltip()">${sanitize(token)}</span>`;
     }).join('');
 
     return `
@@ -14160,29 +14365,17 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
     const paras = [];
     sections.forEach((sec, sIdx) => {
       const heading = sec.heading || sec.title || `Section ${sIdx + 1}`;
-      const ur = sec.urdu || sec.urduTranslation || ch.urduSummary || '';
-      const ps = sec.pashto || sec.pashtoTranslation || ch.pashtoTranslation || '';
-      if (sec.paras && Array.isArray(sec.paras)) {
-        sec.paras.forEach((p, pIdx) => {
-          paras.push({ 
-            secHeading: heading, 
-            text: typeof p === 'string' ? p : (p.text || ''), 
-            urdu: typeof p === 'object' ? (p.urdu || ur) : ur,
-            pashto: typeof p === 'object' ? (p.pashto || ps) : ps,
-            num: paras.length + 1, 
-            original: p 
-          });
-        });
-      } else if (sec.text) {
+      const paraItems = getSectionParagraphsWithTranslations(sec, ch);
+      paraItems.forEach((pi, pIdx) => {
         paras.push({ 
           secHeading: heading, 
-          text: sec.text, 
-          urdu: ur,
-          pashto: ps,
+          text: pi.text, 
+          urdu: pi.urdu, 
+          pashto: pi.pashto, 
           num: paras.length + 1, 
-          original: sec 
+          original: pi 
         });
-      }
+      });
     });
 
     if (paras.length === 0) {
@@ -14234,9 +14427,8 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
           🌐 <strong>Line-by-Line Verified Translations:</strong> English, Urdu and Pashto corresponding directly to textbook lessons. Use the horizontal tabs above each paragraph to switch translations.
         </div>
         ${sections.map((sec, idx) => {
-          const secText = sec.text || (sec.paras ? sec.paras.join(' ') : '');
           const secUrdu = sec.urdu || sec.urduTranslation || ch.urduSummary || 'اردو ترجمہ مکمل شامل ہے۔';
-          const secPashto = sec.pashto || ch.pashtoTranslation || 'د پښتو ژباړه متن سره سم برابر شوې ده.';
+          const secPashto = sec.pashto || ch.pashtoTranslation || 'د پښتو ژباړه متن کم برابر شوې ده.';
 
           return `
             <div class="math-topic-card" style="margin-bottom:1.25rem;" id="trans-card-${idx}">
@@ -14261,7 +14453,9 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
               <div id="para-lang-en-${idx}" style="margin-bottom:0.75rem;display:block;">
                 <span style="font-size:0.75rem;font-weight:700;color:#0284c7;text-transform:uppercase;">English Original:</span>
                 <div class="para-text-box" style="font-size:0.95rem;color:#1e293b;line-height:1.8;margin-top:0.3rem;">
-                  ${renderInteractiveParagraphHtml(secText, secUrdu, secPashto, 'trans-' + idx)}
+                  ${getSectionParagraphsWithTranslations(sec, ch).map((pi, pSubIdx) => 
+                    renderInteractiveParagraphHtml(pi.text, pi.urdu, pi.pashto, `trans-${idx}-${pSubIdx}`)
+                  ).join('<div style="height:0.85rem;"></div>')}
                 </div>
               </div>
 

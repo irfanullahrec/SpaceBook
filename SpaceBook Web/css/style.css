@@ -6811,6 +6811,107 @@ body:has(.papers-creator-view) #page-content {
   box-shadow: 0 0 0 1.5px #facc15 !important;
 }
 
+/* Ensure child words in hovered sentence remain bold & underlined */
+.lesson-sentence:hover .tts-word,
+.lesson-sentence.sentence-hovered .tts-word {
+  font-weight: inherit !important;
+  text-decoration: inherit !important;
+}
+
+/* Specific word hovered inside sentence gets highlighted amber outline */
+.lesson-sentence:hover .tts-word:hover,
+.lesson-sentence.sentence-hovered .tts-word:hover {
+  background-color: #fde047 !important;
+  color: #0f172a !important;
+  outline: 1.5px solid #d97706 !important;
+  border-radius: 3px !important;
+  cursor: pointer !important;
+}
+
+/* ─── WORD HOVER MEANING FLOATING TOOLTIP ────────────────── */
+.word-hover-tooltip {
+  position: fixed;
+  display: none;
+  z-index: 100010;
+  pointer-events: none;
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  border-top: 3px solid #0284c7;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.18), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  padding: 0.45rem 0.65rem;
+  min-width: 170px;
+  max-width: 320px;
+  font-family: inherit;
+  animation: whtFadeIn 0.12s ease-out;
+}
+
+@keyframes whtFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.word-hover-tooltip .wht-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.word-hover-tooltip .wht-word {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #0369a1;
+  letter-spacing: 0.02em;
+}
+
+.word-hover-tooltip .wht-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #64748b;
+  background: #f8fafc;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+.word-hover-tooltip .wht-urdu {
+  font-family: 'Jameel Noori Nastaleeq', 'Urdu Typesetting', serif;
+  direction: rtl;
+  text-align: right;
+  font-size: 1.18rem;
+  line-height: 1.8;
+  color: #166534;
+  font-weight: 700;
+}
+
+.word-hover-tooltip .wht-pashto {
+  font-family: 'Pashto Koodak', 'Segoe UI', serif;
+  direction: rtl;
+  text-align: right;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #92400e;
+  margin-top: 0.25rem;
+  border-top: 1px dashed #f1f5f9;
+  padding-top: 0.25rem;
+}
+
+.word-hover-tooltip .wht-ps-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #92400e;
+  background: #fef3c7;
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+  margin-left: 0.3rem;
+}
+
+
 
 .sentence-inline-trans-drawer {
   display: block;
