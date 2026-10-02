@@ -6404,10 +6404,11 @@ body:has(.papers-creator-view) #page-content {
   color: #222;
 }
 
-/* Dynamic MCQ Grid Columns (1, 2, or 3) */
+/* Dynamic MCQ Grid Columns & Expanded Layout */
 .pep-mcqs-grid {
   display: grid;
   gap: 0.65rem 1.25rem;
+  width: 100%;
 }
 
 .pep-mcqs-grid[data-cols="1"] {
@@ -6422,10 +6423,30 @@ body:has(.papers-creator-view) #page-content {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.pep-mcqs-grid[data-cols="4"] {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .pep-mcq-item {
-  font-size: 0.82rem;
-  line-height: 1.4;
+  font-size: 0.83rem;
+  line-height: 1.45;
   break-inside: avoid;
+  page-break-inside: avoid;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pep-mcq-item-fullwidth {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+}
+
+.pep-mcq-options-horizontal {
+  display: grid;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding-left: 0.85rem;
+  box-sizing: border-box;
 }
 
 .pep-mcq-options {
@@ -7620,6 +7641,18 @@ body:has(.papers-creator-view) #page-content {
 @media print {
   .pep-empty-section-notice {
     display: none !important;
+  }
+  .pep-mcqs-grid {
+    display: grid !important;
+    width: 100% !important;
+  }
+  .pep-mcq-item-fullwidth {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+  }
+  .pep-mcq-options-horizontal {
+    display: grid !important;
+    width: 100% !important;
   }
 }
 

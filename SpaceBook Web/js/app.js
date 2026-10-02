@@ -9214,13 +9214,17 @@ function renderActiveCategoryWorkArea() {
                         <input type="checkbox" ${isChecked ? 'checked' : ''} onclick="event.stopPropagation(); toggleQuestionChoice('${catId}', '${q.id}')" style="cursor:pointer;margin-top:2px;width:15px;height:15px;accent-color:#0284c7;">
                         <div class="q-item-text" style="flex:1;min-width:0;font-size:0.77rem;color:#0f172a;line-height:1.45;">
                           ${q.q}
-                          ${q.opts ? `
-                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.35rem;margin-top:0.45rem;font-size:0.72rem;color:#334155;background:#f8fafc;padding:0.45rem 0.55rem;border-radius:6px;border:1px solid #f1f5f9;">
-                              ${q.opts.map((opt, oi) => `
-                                <span><strong>(${String.fromCharCode(65 + oi)})</strong> ${opt}</span>
-                              `).join('')}
-                            </div>
-                          ` : ''}
+                          ${q.opts ? (() => {
+                            const maxOptL = Math.max(...q.opts.map(o => String(o || '').length));
+                            const optGridCols = maxOptL > 22 ? '1fr' : '1fr 1fr';
+                            return `
+                              <div style="display:grid;grid-template-columns:${optGridCols};gap:0.35rem 0.65rem;margin-top:0.45rem;font-size:0.72rem;color:#334155;background:#f8fafc;padding:0.45rem 0.55rem;border-radius:6px;border:1px solid #f1f5f9;">
+                                ${q.opts.map((opt, oi) => `
+                                  <span style="display:inline-flex;gap:0.25rem;"><strong>(${String.fromCharCode(65 + oi)})</strong> <span>${opt}</span></span>
+                                `).join('')}
+                              </div>
+                            `;
+                          })() : ''}
                           ${q.subA ? `
                             <div style="margin-top:0.35rem;font-size:0.72rem;color:#334155;background:#f8fafc;padding:0.4rem 0.55rem;border-radius:6px;">
                               <div><strong>(a)</strong> ${q.subA}</div>
@@ -10733,7 +10737,7 @@ function renderLiveExamPaperHtml() {
   const subj = getSelectedSubjectObj();
   const catsOrder = paperCreationState.categoriesOrder || ["mcqs", "sqs", "lqs"];
   const isSamePage = (paperCreationState.mcqSettings.samePage !== false);
-  const mcqCols = paperCreationState.mcqSettings.columns || (isSamePage ? 1 : 4);
+  const mcqCols = paperCreationState.mcqSettings.columns || 1;
   const isOmr = (paperCreationState.mcqSettings.omrBased !== false);
 
   return `
@@ -10805,7 +10809,7 @@ function renderLiveExamPaperHtml() {
         if (catId === 'mcqs') {
           let omrImage2SheetHtml = '';
           if (!isSamePage && isOmr && displayQuestions.length > 0) {
-            const colCount = Math.max(1, Math.min(4, mcqCols));
+            const colCount = Math.min(4, Math.max(2, Math.ceil(displayQuestions.length / 5)));
             const totalQ = displayQuestions.length;
             const perCol = Math.ceil(totalQ / colCount);
 
@@ -10869,71 +10873,63 @@ function renderLiveExamPaperHtml() {
               ` : `
                 ${omrImage2SheetHtml}
 
-                ${isSamePage ? `
-                  <div class="pep-mcqs-grid" data-cols="${mcqCols}" style="display:grid;grid-template-columns:repeat(${mcqCols}, 1fr);gap:0.65rem 1.25rem;">
-                    ${displayQuestions.map((m, idx) => `
-                      <div class="pep-mcq-item" style="break-inside:avoid;font-size:0.82rem;line-height:1.4;margin-bottom:0.45rem;">
-                        <div class="pep-mcq-q" style="margin-bottom:0.25rem;">
+                <div class="pep-mcqs-grid" data-cols="${mcqCols}" style="display:grid;grid-template-columns:repeat(${mcqCols}, 1fr);gap:0.75rem 1.25rem;width:100%;">
+                  ${displayQuestions.map((m, idx) => {
+                    const opts = m.opts || ["A", "B", "C", "D"];
+                    const optLetters = ['A', 'B', 'C', 'D', 'E'];
+                    const activeOpts = opts.slice(0, Math.max(opts.length, 4));
+                    const maxOptLen = Math.max(...activeOpts.map(o => String(o || '').length));
+                    const qLen = String(m.q || '').length;
+
+                    // Automatically expand to fullwidth single-column row across grid if single column or if options/question are sentences/long
+                    const isFullWidth = (mcqCols === 1) || (maxOptLen > 18) || (qLen > 55);
+
+                    // Options horizontal distribution across that full column width
+                    let optGridCols = '1fr';
+                    if (maxOptLen <= 16) {
+                      optGridCols = 'repeat(4, 1fr)';
+                    } else if (maxOptLen <= 42) {
+                      optGridCols = 'repeat(2, 1fr)';
+                    } else {
+                      optGridCols = '1fr';
+                    }
+
+                    if (!isFullWidth && mcqCols > 1) {
+                      optGridCols = (maxOptLen <= 10) ? 'repeat(2, 1fr)' : '1fr';
+                    }
+
+                    return `
+                      <div class="pep-mcq-item ${isFullWidth ? 'pep-mcq-item-fullwidth' : ''}" 
+                           style="break-inside:avoid;page-break-inside:avoid;font-size:0.83rem;line-height:1.45;margin-bottom:0.45rem;width:100%;${isFullWidth ? 'grid-column:1 / -1;' : ''}">
+                        <div class="pep-mcq-q" style="font-weight:700;margin-bottom:0.25rem;color:#0f172a;">
                           <strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}
                         </div>
-                        <div class="pep-mcq-options pep-mcq-options-samepaper" 
-                             style="display:flex;align-items:center;flex-wrap:wrap;gap:1.5rem;padding-left:1.15rem;font-size:0.82rem;margin-top:0.25rem;">
-                          ${(m.opts || ["A", "B", "C", "D"]).map((opt, oi) => `
-                            <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" 
-                                  style="display:inline-flex;align-items:center;gap:0.35rem;">
-                              ${isOmr ? `
-                                <span class="omr-bubble-circle">${String.fromCharCode(65 + oi)}</span>
-                              ` : `
-                                <strong>(${String.fromCharCode(65 + oi)})</strong>
-                              `}
-                              <span>${opt}</span>
-                            </span>
-                          `).join('')}
+                        <div class="pep-mcq-options pep-mcq-options-horizontal" 
+                             style="display:grid;grid-template-columns:${optGridCols};gap:0.35rem 1.25rem;padding-left:1rem;width:100%;box-sizing:border-box;">
+                          ${activeOpts.map((opt, oi) => {
+                            const letter = optLetters[oi] || String.fromCharCode(65 + oi);
+                            return `
+                              <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" 
+                                    style="display:inline-flex;align-items:flex-start;gap:0.35rem;font-size:0.82rem;color:#1e293b;line-height:1.35;word-break:break-word;">
+                                ${isOmr ? `
+                                  <span class="omr-bubble-circle" style="width:17px;height:17px;font-size:0.65rem;border:1.5px solid #000;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;margin-top:1px;">${letter}</span>
+                                ` : `
+                                  <strong style="color:#0f172a;flex-shrink:0;">(${letter})</strong>
+                                `}
+                                <span style="flex:1;">${opt}</span>
+                              </span>
+                            `;
+                          }).join('')}
                         </div>
                         ${paperCreationState.showAnswerKey ? `
-                          <div class="pep-key-note" style="margin-top:0.25rem;font-size:0.75rem;color:#16a34a;">
-                            💡 Key: (${String.fromCharCode(65 + (m.ans || 0))}) — ${m.exp || 'Standard syllabus definition'}
+                          <div class="pep-key-note" style="margin-top:0.25rem;padding-left:1rem;font-size:0.75rem;color:#16a34a;font-weight:600;">
+                            💡 Key: (${optLetters[m.ans || 0] || 'A'}) — ${m.exp || 'Standard syllabus definition'}
                           </div>
                         ` : ''}
                       </div>
-                    `).join('')}
-                  </div>
-                ` : `
-                  <div class="pep-mcqs-grid" data-cols="${mcqCols}" style="display:grid;grid-template-columns:repeat(${mcqCols}, 1fr);gap:0.5rem 0.75rem;">
-                    ${displayQuestions.map((m, idx) => {
-                      const optLetters = ['A', 'B', 'C', 'D', 'E'];
-                      const opts = m.opts || ["A", "B", "C", "D"];
-                      const maxOpts = Math.max(opts.length, 4);
-                      const activeLetters = optLetters.slice(0, Math.min(maxOpts, (opts.length >= 5 ? 5 : 4)));
-
-                      return `
-                        <div class="pep-mcq-item pep-mcq-item-separated" style="break-inside:avoid;font-size:0.78rem;line-height:1.25;margin-bottom:0.4rem;">
-                          <div class="pep-mcq-q" style="font-weight:700;margin-bottom:0.2rem;color:#0f172a;">
-                            <strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}
-                          </div>
-                          <div class="pep-mcq-options pep-mcq-options-compact" 
-                               style="display:flex;align-items:center;flex-wrap:wrap;gap:2px 6px;margin-top:0.15rem;">
-                            ${activeLetters.map((letter, oi) => {
-                              const optVal = opts[oi] !== undefined ? opts[oi] : '';
-                              return `
-                                <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" 
-                                      style="display:inline-flex;align-items:center;gap:2px;margin-right:2px;font-size:0.74rem;">
-                                  <span class="omr-bubble-circle" style="width:15px;height:15px;font-size:0.58rem;">${letter}</span>
-                                  ${optVal ? `<span style="margin-left:1px;">${optVal}</span>` : ''}
-                                </span>
-                              `;
-                            }).join('')}
-                          </div>
-                          ${paperCreationState.showAnswerKey ? `
-                            <div class="pep-key-note" style="font-size:0.68rem;color:#16a34a;margin-top:2px;">
-                              💡 Key: (${String.fromCharCode(65 + (m.ans || 0))}) — ${m.exp || 'Standard syllabus definition'}
-                            </div>
-                          ` : ''}
-                        </div>
-                      `;
-                    }).join('')}
-                  </div>
-                `}
+                    `;
+                  }).join('')}
+                </div>
 
                 ${displayQuestions.length < reqCount ? `
                   <div class="pep-empty-section-notice" style="margin-top:0.85rem;padding:0.45rem 0.65rem;border:1px dashed #cbd5e1;border-radius:6px;font-size:0.72rem;color:#64748b;text-align:center;background:#f8fafc;">
@@ -11143,7 +11139,7 @@ function setPaperMcqSamePage(isSame) {
     paperCreationState.mcqSettings.columns = 1;
     paperCreationState.mcqSettings.optionsLayout = 'horizontal';
   } else {
-    paperCreationState.mcqSettings.columns = 4;
+    paperCreationState.mcqSettings.columns = 1;
     paperCreationState.mcqSettings.optionsLayout = 'horizontal';
     paperCreationState.mcqSettings.omrBased = true;
   }
@@ -11157,7 +11153,7 @@ function openExamSettingsModal() {
   if (!container) return;
 
   const isSame = (paperCreationState.mcqSettings.samePage !== false);
-  const currentCols = paperCreationState.mcqSettings.columns || (isSame ? 1 : 4);
+  const currentCols = paperCreationState.mcqSettings.columns || 1;
   const isOmr = (paperCreationState.mcqSettings.omrBased !== false);
 
   container.innerHTML = `
@@ -12494,22 +12490,33 @@ function printTopicMcqsOnly(secId, unitNum) {
       </div>
 
       <!-- The Questions Listing -->
-      <div style="display:flex;flex-direction:column;gap:16px;">
-        ${mcqs.map((m, idx) => `
-          <div style="page-break-inside:avoid;font-size:0.88rem;line-height:1.45;">
-            <div style="font-weight:700;margin-bottom:5px;color:#000;">
-              <span>Q${idx + 1}.</span> ${m.q}
+      <div style="display:flex;flex-direction:column;gap:14px;width:100%;">
+        ${mcqs.map((m, idx) => {
+          const maxOptLen = Math.max(...m.options.map(o => String(o || '').length));
+          let optGrid = '1fr';
+          if (maxOptLen <= 16) {
+            optGrid = 'repeat(4, 1fr)';
+          } else if (maxOptLen <= 42) {
+            optGrid = 'repeat(2, 1fr)';
+          } else {
+            optGrid = '1fr';
+          }
+          return `
+            <div style="page-break-inside:avoid;font-size:0.88rem;line-height:1.45;width:100%;">
+              <div style="font-weight:700;margin-bottom:5px;color:#000;">
+                <span>Q${idx + 1}.</span> ${m.q}
+              </div>
+              <div style="display:grid;grid-template-columns:${optGrid};gap:0.35rem 1.5rem;padding-left:1.25rem;font-size:0.84rem;margin-top:4px;width:100%;box-sizing:border-box;">
+                ${m.options.map((opt, oIdx) => `
+                  <span style="display:inline-flex;align-items:flex-start;gap:0.35rem;word-break:break-word;">
+                    <strong style="flex-shrink:0;">(${String.fromCharCode(65 + oIdx)})</strong>
+                    <span>${opt}</span>
+                  </span>
+                `).join('')}
+              </div>
             </div>
-            <div style="display:flex;align-items:center;flex-wrap:wrap;gap:1.75rem;padding-left:1.25rem;font-size:0.84rem;margin-top:4px;">
-              ${m.options.map((opt, oIdx) => `
-                <span style="display:inline-flex;align-items:center;gap:0.35rem;">
-                  <strong>(${String.fromCharCode(65 + oIdx)})</strong>
-                  <span>${opt}</span>
-                </span>
-              `).join('')}
-            </div>
-          </div>
-        `).join('')}
+          `;
+        }).join('')}
       </div>
 
       <!-- Verification Footer -->
@@ -12557,13 +12564,23 @@ function renderTopicSloInnerContent(sec, ch, innerTab) {
               <div style="font-weight:700;font-size:0.96rem;color:#0f172a;margin-bottom:0.75rem;line-height:1.5;">
                 ${m.q}
               </div>
-              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0.5rem;margin-bottom:0.65rem;">
-                ${m.options.map((opt, oIdx) => `
-                  <button class="math-mcq-opt" data-opt="${oIdx}" onclick="selectMathMcqOption('${uid}', ${oIdx}, ${oIdx === m.correct}, '${expClean}', ${m.correct})" style="padding:0.55rem 0.8rem;border:1px solid #cbd5e1;background:#fff;border-radius:6px;font-size:0.88rem;text-align:left;cursor:pointer;transition:all 0.15s ease;">
-                    <strong>${['A','B','C','D'][oIdx]}.</strong> ${opt}
-                  </button>
-                `).join('')}
-              </div>
+              ${(() => {
+                const maxOptLen = Math.max(...m.options.map(o => String(o || '').length));
+                const optGridStyle = maxOptLen > 38 
+                  ? 'display:grid;grid-template-columns:1fr;gap:0.5rem;margin-bottom:0.65rem;'
+                  : (maxOptLen > 16 
+                      ? 'display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0.5rem;margin-bottom:0.65rem;'
+                      : 'display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.5rem;margin-bottom:0.65rem;');
+                return `
+                  <div style="${optGridStyle}">
+                    ${m.options.map((opt, oIdx) => `
+                      <button class="math-mcq-opt" data-opt="${oIdx}" onclick="selectMathMcqOption('${uid}', ${oIdx}, ${oIdx === m.correct}, '${expClean}', ${m.correct})" style="padding:0.55rem 0.8rem;border:1px solid #cbd5e1;background:#fff;border-radius:6px;font-size:0.88rem;text-align:left;cursor:pointer;transition:all 0.15s ease;display:flex;align-items:flex-start;gap:0.4rem;word-break:break-word;">
+                        <strong style="flex-shrink:0;">${['A','B','C','D'][oIdx]}.</strong> <span>${opt}</span>
+                      </button>
+                    `).join('')}
+                  </div>
+                `;
+              })()}
               <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.6rem;flex-wrap:wrap;gap:0.5rem;">
                 <button class="math-show-working-btn" onclick="toggleMcqWorking('${uid}', ${m.correct})">
                   💡 Show Working &amp; Correct Answer
