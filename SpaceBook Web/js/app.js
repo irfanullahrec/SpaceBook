@@ -14981,9 +14981,57 @@ function switchLangWordsSubTab(subjKey, subTab) {
   if (!container) return;
   const chList = getSubjectChapterList(subjKey, state.selectedClass);
   const ch = chList[state.selectedSubjChapter || 0];
-  if (ch) {
+  if (!ch) return;
+
+  const table = document.getElementById('lessonWordsGridTable');
+  const isUrdu = (subjKey === 'urdu');
+  const ex = ch.exercise || {};
+
+  // Preserve all scroll positions (container, window, document)
+  const savedContainerScroll = container.scrollTop;
+  const savedWindowY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+
+  if (table) {
+    // 1. Update 4th column header title
+    const headerTh = table.querySelector('thead tr th:nth-child(4)');
+    if (headerTh) {
+      headerTh.innerHTML = getLessonWord4thColumnHeaderTitle(isUrdu, subTab);
+    }
+
+    // 2. Extract distinct words to match rows
+    const allWords = getAllDistinctWordsFromLesson(ch, isUrdu);
+    if (allWords.length === 0) {
+      const rawList = ex.dictionaryWords || ex.vocabulary || [];
+      rawList.forEach(w => {
+        const rawText = w.word || w.term || '';
+        if (rawText) {
+          allWords.push({
+            key: rawText.toLowerCase().trim(),
+            displayWord: rawText,
+            originalToken: rawText,
+            firstSentence: w.example || w.sentence || ''
+          });
+        }
+      });
+    }
+
+    // 3. Update ONLY the 4th column cell (cells[3]) for each row
+    const rows = table.querySelectorAll('tbody tr');
+    rows.forEach((tr, idx) => {
+      const item = allWords[idx];
+      if (item && tr.cells && tr.cells.length >= 4) {
+        tr.cells[3].outerHTML = getLessonWord4thColumnHtml(item, isUrdu, ex, subTab);
+      }
+    });
+
+    // Ensure scroll position is completely untouched
+    container.scrollTop = savedContainerScroll;
+    window.scrollTo(0, savedWindowY);
+  } else {
+    // If table not in DOM, render content and preserve scroll
     container.innerHTML = renderLangWordsSubContent(subjKey, ch, subTab);
-    container.scrollTop = 0;
+    container.scrollTop = savedContainerScroll;
+    window.scrollTo(0, savedWindowY);
   }
 }
 
@@ -15545,6 +15593,56 @@ function getLessonWordExplanation(item, isUrdu, ex) {
   return isUrdu ? 'سبق کے متن کا بنیادی حصہ' : 'Textbook reading passage vocabulary.';
 }
 
+function getLessonWord4thColumnHeaderTitle(isUrdu, subTab) {
+  if (subTab === 'meanings') {
+    return isUrdu ? 'وضاحت / حوالہ' : 'Example / Contextual Explanation';
+  } else if (subTab === 'opposites') {
+    return isUrdu ? 'متضاد (Urdu Antonym)' : 'Antonym / Opposite (متضاد)';
+  } else if (subTab === 'similars') {
+    return isUrdu ? 'مترادف (Urdu Synonym)' : 'Synonym / Similar (مترادف)';
+  } else if (subTab === 'use') {
+    return isUrdu ? 'جملے میں استعمال' : 'Lesson Sentence / جملے میں استعمال';
+  }
+  return '';
+}
+
+function getLessonWord4thColumnHtml(item, isUrdu, ex, subTab) {
+  if (subTab === 'meanings') {
+    const exp = getLessonWordExplanation(item, isUrdu, ex);
+    return `<td style="color:#475569;font-size:0.83rem;line-height:1.5;">${exp}</td>`;
+  } else if (subTab === 'opposites') {
+    const opp = getLessonWordAntonym(item, isUrdu, ex);
+    if (opp.opp && opp.opp !== '—') {
+      return `
+        <td style="line-height:1.45;">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;">
+            <strong style="color:#b91c1c;font-size:0.86rem;">${opp.opp}</strong>
+            <span class="words-urdu-col" style="color:#991b1b;font-weight:700;font-size:0.95rem;">${opp.u}</span>
+          </div>
+        </td>`;
+    } else {
+      return `<td style="color:#94a3b8;font-size:0.8rem;font-style:italic;">—</td>`;
+    }
+  } else if (subTab === 'similars') {
+    const sim = getLessonWordSynonym(item, isUrdu, ex);
+    if (sim.sim && sim.sim !== '—') {
+      return `
+        <td style="line-height:1.45;">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;">
+            <strong style="color:#0f766e;font-size:0.86rem;">${sim.sim}</strong>
+            <span class="words-urdu-col" style="color:#065f46;font-weight:700;font-size:0.95rem;">${sim.u}</span>
+          </div>
+        </td>`;
+    } else {
+      return `<td style="color:#94a3b8;font-size:0.8rem;font-style:italic;">—</td>`;
+    }
+  } else if (subTab === 'use') {
+    const sent = getLessonWordSentenceUse(item, isUrdu, ex);
+    return `<td style="color:#1e293b;font-size:0.84rem;line-height:1.55;">${sent}</td>`;
+  }
+  return `<td style="color:#94a3b8;font-size:0.8rem;font-style:italic;">—</td>`;
+}
+
 function filterWordsGridTable(query) {
   const q = (query || '').toLowerCase().trim();
   const rows = document.querySelectorAll('#lessonWordsGridTable tbody tr');
@@ -15582,16 +15680,7 @@ function renderLangWordsSubContent(subjKey, ch, subTab) {
   }
 
   // Determine dynamic 4th column header title
-  let dynamicHeaderTitle = '';
-  if (subTab === 'meanings') {
-    dynamicHeaderTitle = isUrdu ? 'وضاحت / حوالہ' : 'Example / Contextual Explanation';
-  } else if (subTab === 'opposites') {
-    dynamicHeaderTitle = isUrdu ? 'متضاد (Urdu Antonym)' : 'Antonym / Opposite (متضاد)';
-  } else if (subTab === 'similars') {
-    dynamicHeaderTitle = isUrdu ? 'مترادف (Urdu Synonym)' : 'Synonym / Similar (مترادف)';
-  } else if (subTab === 'use') {
-    dynamicHeaderTitle = isUrdu ? 'جملے میں استعمال' : 'Lesson Sentence / جملے میں استعمال';
-  }
+  const dynamicHeaderTitle = getLessonWord4thColumnHeaderTitle(isUrdu, subTab);
 
   return `
     <div class="words-table-wrap">
@@ -15627,42 +15716,7 @@ function renderLangWordsSubContent(subjKey, ch, subTab) {
             const wordText = item.displayWord;
             const urduMean = getLessonWordUrduMeaning(item, isUrdu, ex);
             const engMean = getLessonWordEnglishMeaning(item, isUrdu, ex);
-
-            // Dynamic 4th column cell
-            let dynamicCellHtml = '';
-            if (subTab === 'meanings') {
-              const exp = getLessonWordExplanation(item, isUrdu, ex);
-              dynamicCellHtml = `<td style="color:#475569;font-size:0.83rem;line-height:1.5;">${exp}</td>`;
-            } else if (subTab === 'opposites') {
-              const opp = getLessonWordAntonym(item, isUrdu, ex);
-              if (opp.opp && opp.opp !== '—') {
-                dynamicCellHtml = `
-                  <td style="line-height:1.45;">
-                    <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;">
-                      <strong style="color:#b91c1c;font-size:0.86rem;">${opp.opp}</strong>
-                      <span class="words-urdu-col" style="color:#991b1b;font-weight:700;font-size:0.95rem;">${opp.u}</span>
-                    </div>
-                  </td>`;
-              } else {
-                dynamicCellHtml = `<td style="color:#94a3b8;font-size:0.8rem;font-style:italic;">—</td>`;
-              }
-            } else if (subTab === 'similars') {
-              const sim = getLessonWordSynonym(item, isUrdu, ex);
-              if (sim.sim && sim.sim !== '—') {
-                dynamicCellHtml = `
-                  <td style="line-height:1.45;">
-                    <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;">
-                      <strong style="color:#0f766e;font-size:0.86rem;">${sim.sim}</strong>
-                      <span class="words-urdu-col" style="color:#065f46;font-weight:700;font-size:0.95rem;">${sim.u}</span>
-                    </div>
-                  </td>`;
-              } else {
-                dynamicCellHtml = `<td style="color:#94a3b8;font-size:0.8rem;font-style:italic;">—</td>`;
-              }
-            } else if (subTab === 'use') {
-              const sent = getLessonWordSentenceUse(item, isUrdu, ex);
-              dynamicCellHtml = `<td style="color:#1e293b;font-size:0.84rem;line-height:1.55;">${sent}</td>`;
-            }
+            const dynamicCellHtml = getLessonWord4thColumnHtml(item, isUrdu, ex, subTab);
 
             return `
               <tr>
