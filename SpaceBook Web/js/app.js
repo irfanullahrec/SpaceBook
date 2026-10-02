@@ -8898,89 +8898,10 @@ function renderPapersView() {
 }
 
 // ─── LEFT PANEL GENERATOR RENDERER ─────────────────────────
+// ─── LEFT PANEL GENERATOR RENDERER ─────────────────────────
 function renderPaperGeneratorLeftPanel() {
-  const clsName = getClassName(paperCreationState.classId);
-  const subj = getSelectedSubjectObj();
-  const allClasses = DATA.classes || [];
-  const subjects = DATA.subjects[paperCreationState.classId] || [];
-
   return `
-    <!-- Top Header -->
-    <div class="pcs-header" style="padding-bottom:0.4rem;border-bottom:1px solid #e2e8f0;">
-      <div class="pcs-header-left">
-        <span style="font-size:1.25rem;">🖨️</span>
-        <div>
-          <div class="pcs-title">Question Paper Generator</div>
-          <div class="pcs-sub">Step-by-Step Official Exam Maker</div>
-        </div>
-      </div>
-      <div style="display:flex;gap:0.3rem;">
-        <button class="pcs-shuffle-btn" onclick="shufflePaperQuestions()" title="Shuffle question numbers and seed" style="width:auto;padding:0.25rem 0.5rem;font-size:0.7rem;">
-          🎲 Shuffle
-        </button>
-        <button class="pcs-print-btn" onclick="openExamSettingsModal()" title="Paper code, date, instructions" style="width:auto;padding:0.25rem 0.5rem;font-size:0.7rem;">
-          ⚙️ Info
-        </button>
-      </div>
-    </div>
-
-    <!-- Class & Subject Quick Selector Bar -->
-    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:0.45rem 0.6rem;display:flex;flex-direction:column;gap:0.35rem;">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;">
-        <div>
-          <label style="font-size:0.62rem;font-weight:700;color:#64748b;display:block;margin-bottom:0.15rem;">Class / Grade:</label>
-          <select class="pcs-select" style="width:100%;font-size:0.74rem;padding:0.25rem 0.4rem;font-weight:700;" onchange="onPaperClassSelect(this.value)">
-            ${allClasses.map(c => `<option value="${c.id}" ${c.id === paperCreationState.classId ? 'selected' : ''}>${c.name}</option>`).join('')}
-          </select>
-        </div>
-        <div>
-          <label style="font-size:0.62rem;font-weight:700;color:#64748b;display:block;margin-bottom:0.15rem;">Subject:</label>
-          <select class="pcs-select" style="width:100%;font-size:0.74rem;padding:0.25rem 0.4rem;font-weight:700;" onchange="onPaperSubjectSelect(this.value)">
-            ${subjects.map(s => `<option value="${s.id}" ${s.id === paperCreationState.subjectId ? 'selected' : ''}>${s.emoji || '📖'} ${s.name}</option>`).join('')}
-          </select>
-        </div>
-      </div>
-
-      <div style="display:flex;align-items:center;justify-content:space-between;padding-top:0.25rem;border-top:1px dashed #e2e8f0;">
-        <span style="font-size:0.68rem;color:#475569;font-weight:700;">
-          ${paperCreationState.categoriesOrder.length} Categories · ${paperCreationState.totalMarks} Marks
-        </span>
-        <button onclick="openPaperBlueprintModal()" class="btn btn-primary" style="padding:0.25rem 0.6rem;font-size:0.7rem;font-weight:800;display:inline-flex;align-items:center;gap:0.25rem;">
-          ✨ Paper Blueprint (Categories &amp; Marks)
-        </button>
-      </div>
-    </div>
-
-    <!-- Live Paper Stats Box -->
-    ${renderPaperLiveStatsBox()}
-
-    <!-- Stepper Navigation Bar -->
-    <div class="q-stepper-strip" id="paperStepperStrip">
-      ${paperCreationState.categoriesOrder.map((catId, idx) => {
-        const catMeta = getCategoryMeta(catId);
-        const shortName = getCategoryShortLabel(catId, catMeta);
-        const alloc = paperCreationState.categoryAllocations[catId] || { count: 10, totalMarks: 10 };
-        const selectedList = paperCreationState.selectedQuestionsByCategory[catId] || [];
-        const isComplete = selectedList.length >= alloc.count;
-        const isActive = (paperCreationState.workflowStage === 'selection' && paperCreationState.activeCategoryIndex === idx);
-        return `
-          <button class="q-stepper-pill ${isActive ? 'active' : ''} ${isComplete ? 'completed' : ''}" 
-                  onclick="jumpToCategoryStep(${idx})" title="${catMeta.name}">
-            <span class="q-stepper-num">${isComplete ? '✓' : (idx + 1)}</span>
-            <span class="q-stepper-label">${catMeta.icon} ${shortName}</span>
-            <span class="q-stepper-count-badge ${isComplete ? 'done' : ''}">(${selectedList.length}/${alloc.count})</span>
-          </button>
-        `;
-      }).join('')}
-      <button class="q-stepper-pill review-pill ${paperCreationState.workflowStage === 'review' ? 'active' : ''}" 
-              onclick="jumpToReviewStage()" title="Review final paper and print options">
-        <span class="q-stepper-num">📄</span>
-        <span class="q-stepper-label">Review &amp; Print</span>
-      </button>
-    </div>
-
-    <!-- Dynamic Work Area -->
-    <div style="display:block;margin-top:0.5rem;">
+    <div style="display:block;">
       ${paperCreationState.workflowStage === 'review' ? renderPaperReviewWorkArea() : renderActiveCategoryWorkArea()}
     </div>
   `;
@@ -9060,6 +8981,63 @@ function renderPaperLiveStatsBox() {
 }
 
 // ─── PAPERS SECONDARY STATISTICAL HEADER (FULL-WIDTH SINGLE LINE) ──────
+function togglePaperMcqSamePage() {
+  if (!paperCreationState.mcqSettings) {
+    paperCreationState.mcqSettings = {};
+  }
+  const isSame = (paperCreationState.mcqSettings.samePage !== false);
+  paperCreationState.mcqSettings.samePage = !isSame;
+  updatePaperPreview();
+  renderPaperStatisticalHeader();
+}
+window.togglePaperMcqSamePage = togglePaperMcqSamePage;
+
+function cyclePaperMcqColumns() {
+  if (!paperCreationState.mcqSettings) {
+    paperCreationState.mcqSettings = {};
+  }
+  const cols = [1, 2, 3, 4];
+  const cur = paperCreationState.mcqSettings.columns || 1;
+  const nextIdx = (cols.indexOf(cur) + 1) % cols.length;
+  paperCreationState.mcqSettings.columns = cols[nextIdx];
+  updatePaperPreview();
+  renderPaperStatisticalHeader();
+}
+window.cyclePaperMcqColumns = cyclePaperMcqColumns;
+
+function togglePaperMcqOptionStyle() {
+  if (!paperCreationState.mcqSettings) {
+    paperCreationState.mcqSettings = {};
+  }
+  const isOmr = (paperCreationState.mcqSettings.omrBased !== false);
+  paperCreationState.mcqSettings.omrBased = !isOmr;
+  updatePaperPreview();
+  renderPaperStatisticalHeader();
+}
+window.togglePaperMcqOptionStyle = togglePaperMcqOptionStyle;
+
+function togglePaperPrintDropdown(e) {
+  if (e) e.stopPropagation();
+  const m = document.getElementById('pshPrintMenu');
+  if (m) m.classList.toggle('show');
+}
+window.togglePaperPrintDropdown = togglePaperPrintDropdown;
+
+function closePaperPrintDropdown() {
+  const m = document.getElementById('pshPrintMenu');
+  if (m) m.classList.remove('show');
+}
+window.closePaperPrintDropdown = closePaperPrintDropdown;
+
+if (!window._pshPrintDismissBound) {
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.psh-print-group')) {
+      closePaperPrintDropdown();
+    }
+  });
+  window._pshPrintDismissBound = true;
+}
+
 function renderPaperStatisticalHeader() {
   const headerEl = $("paperStatisticalHeader");
   if (!headerEl) return;
@@ -9071,6 +9049,8 @@ function renderPaperStatisticalHeader() {
 
   headerEl.style.display = "flex";
 
+  const allClasses = DATA.classes || [];
+  const subjects = DATA.subjects[paperCreationState.classId] || [];
   const clsName = getClassName(paperCreationState.classId);
   const subj = getSelectedSubjectObj();
   const isSame = (paperCreationState.mcqSettings.samePage !== false);
@@ -9109,32 +9089,36 @@ function renderPaperStatisticalHeader() {
   const activeIdx = paperCreationState.activeCategoryIndex || 0;
 
   headerEl.innerHTML = `
-    <!-- 1. Class -->
-    <span class="psh-item" title="Class: ${clsName}">
+    <!-- 1. Class Dropdown -->
+    <span class="psh-item psh-select-wrapper" title="Select Class / Grade">
       <span style="font-size:0.92rem;">🎓</span>
-      <span>${clsName}</span>
+      <select class="psh-inline-select" onchange="onPaperClassSelect(this.value)">
+        ${allClasses.map(c => `<option value="${c.id}" ${c.id === paperCreationState.classId ? 'selected' : ''}>${c.name}</option>`).join('')}
+      </select>
     </span>
 
-    <!-- 2. Subject -->
-    <span class="psh-item" title="Subject: ${subj.name}">
+    <!-- 2. Subject Dropdown -->
+    <span class="psh-item psh-select-wrapper" title="Select Subject">
       <span style="font-size:0.92rem;">${subj.emoji || '📖'}</span>
-      <span>${subj.name}</span>
+      <select class="psh-inline-select" onchange="onPaperSubjectSelect(this.value)">
+        ${subjects.map(s => `<option value="${s.id}" ${s.id === paperCreationState.subjectId ? 'selected' : ''}>${s.emoji || '📖'} ${s.name}</option>`).join('')}
+      </select>
     </span>
 
     <!-- 3. MCQs Paper Mode -->
-    <span class="psh-item clickable" onclick="openExamSettingsModal()" title="MCQs Paper Mode: ${isSame ? 'Same Paper' : 'Separated'} (Click to change)">
+    <span class="psh-item clickable" onclick="togglePaperMcqSamePage()" title="MCQs Paper Mode: ${isSame ? 'Same Paper' : 'Separated'} (Click to toggle)">
       <span>${isSame ? '📄' : '📑'}</span>
       <span>${isSame ? 'Same Paper' : 'Separated'}</span>
     </span>
 
     <!-- 4. MCQ Columns -->
-    <span class="psh-item clickable" onclick="openExamSettingsModal()" title="MCQ Columns: ${currentCols} Column${currentCols > 1 ? 's' : ''} (Click to change)">
+    <span class="psh-item clickable" onclick="cyclePaperMcqColumns()" title="MCQ Columns: ${currentCols} Col${currentCols > 1 ? 's' : ''} (Click to cycle 1-4 columns)">
       <span>⊞</span>
       <span>${currentCols} Col${currentCols > 1 ? 's' : ''}</span>
     </span>
 
     <!-- 5. Option Style -->
-    <span class="psh-item clickable" onclick="openExamSettingsModal()" title="Option Style: ${isOmr ? 'OMR Bubbles' : 'Standard (A-D)'} (Click to change)">
+    <span class="psh-item clickable" onclick="togglePaperMcqOptionStyle()" title="Option Style: ${isOmr ? 'OMR Bubbles' : 'Standard (A-D)'} (Click to toggle)">
       <span>${isOmr ? '🔘' : '🔤'}</span>
       <span>${isOmr ? 'OMR Bubbles' : 'Standard'}</span>
     </span>
@@ -9142,7 +9126,7 @@ function renderPaperStatisticalHeader() {
     <span class="psh-sep"></span>
 
     <!-- 6. Total Marks -->
-    <span class="psh-item psh-badge-total" title="Total Marks: ${totalM} Marks">
+    <span class="psh-item clickable psh-badge-total" onclick="openPaperBlueprintModal()" title="Total Marks: ${totalM} Marks (Click to customize Blueprint &amp; Marks)">
       <span>💯</span>
       <span>${totalM}M</span>
     </span>
@@ -9161,28 +9145,57 @@ function renderPaperStatisticalHeader() {
 
     <span class="psh-sep"></span>
 
-    <!-- 9. Categories Stats (No titles, with icons, horizontally in single line) -->
+    <!-- 9. Categories Stats (No titles, with icons, horizontally in single line: "X/Y MCQs", "X/Y SQs", "X/Y LQs") -->
     ${rows.map(r => {
-      const isCurrentActive = (activeIdx === r.catIdx);
+      const isCurrentActive = (paperCreationState.workflowStage === 'selection' && activeIdx === r.catIdx);
+      let shortCode = "MCQs";
+      if (r.catId === "sqs" || r.catId.includes("short")) shortCode = "SQs";
+      else if (r.catId === "lqs" || r.catId.includes("long")) shortCode = "LQs";
+      else if (r.catId === "mcqs") shortCode = "MCQs";
+      else shortCode = (r.name || "").replace(/[^a-zA-Z]/g, '').slice(0, 4).toUpperCase() || "Qs";
+
       return `
         <span class="psh-item clickable ${r.isDone ? 'psh-badge-done' : ''} ${isCurrentActive ? 'active' : ''}" 
               onclick="jumpToCategoryStep(${r.catIdx})" 
-              title="${r.name}: ${r.count} of ${r.required} questions selected (${r.catMarks} of ${r.totalCategoryMarks}M)">
+              title="${r.name}: ${r.count} of ${r.required} questions selected (${r.catMarks} of ${r.totalCategoryMarks}M) — Click to jump to this category">
           <span>${r.isDone ? '✅' : '⏳'}</span>
           <span>${r.icon}</span>
-          <span>${r.count} / ${r.required} Qs (${r.catMarks} / ${r.totalCategoryMarks}M)</span>
+          <span>${r.count}/${r.required} ${shortCode}</span>
         </span>
       `;
     }).join('')}
 
-    <!-- 10. Quick Action Settings & Print Buttons on Far Right -->
+    <!-- 10. Quick Action Settings, Blueprint, Shuffle & Print Dropdown on Far Right -->
     <div style="margin-left:auto;display:inline-flex;align-items:center;gap:0.35rem;flex-shrink:0;">
-      <button class="psh-item clickable" onclick="openExamSettingsModal()" title="Paper Layout, Marks &amp; Credentials Settings">
+      <button class="psh-item clickable" onclick="shufflePaperQuestions()" title="🎲 Shuffle question numbers and seed">
+        <span>🎲</span>
+        <span>Shuffle</span>
+      </button>
+      <button class="psh-item clickable" onclick="openExamSettingsModal()" title="⚙️ Paper credentials, duration, date &amp; institute">
         <span>⚙️</span>
+        <span>Info</span>
       </button>
-      <button class="psh-item clickable psh-btn-print" onclick="printPaperNow()" title="Print Exam Paper">
-        <span>🖨️</span>
+      <button class="psh-item clickable" onclick="openPaperBlueprintModal()" title="✨ Customize Paper Blueprint &amp; Marks Allocation">
+        <span>✨</span>
+        <span>Blueprint</span>
       </button>
+      <div class="psh-print-group" style="position:relative;display:inline-flex;align-items:center;">
+        <button class="psh-item clickable psh-btn-print" onclick="togglePaperPrintDropdown(event)" title="Print Examination Paper">
+          <span>🖨️</span>
+          <span>Print ▾</span>
+        </button>
+        <div id="pshPrintMenu" class="psh-dropdown-menu" style="display:none;position:absolute;top:calc(100% + 6px);right:0;background:#0f172a;border:1px solid #38bdf8;border-radius:8px;padding:0.4rem;box-shadow:0 8px 24px rgba(0,0,0,0.5);z-index:9999;min-width:220px;flex-direction:column;gap:0.3rem;">
+          <button class="psh-menu-item" onclick="printOfficialExamPaper('all'); closePaperPrintDropdown();">
+            <span>🖨️</span> <span>Print Complete Paper</span>
+          </button>
+          <button class="psh-menu-item" onclick="printOfficialExamPaper('mcqs'); closePaperPrintDropdown();">
+            <span>📄</span> <span>Print Section A (MCQs Only)</span>
+          </button>
+          <button class="psh-menu-item" onclick="printOfficialExamPaper('subjective'); closePaperPrintDropdown();">
+            <span>📑</span> <span>Print Question Book (Subjective)</span>
+          </button>
+        </div>
+      </div>
     </div>
   `;
 }
@@ -9233,48 +9246,21 @@ function renderActiveCategoryWorkArea() {
   const shortageWarning = allCategoryQuestions.length < requiredCount;
 
   return `
-    <!-- Category Target & Progress Bar -->
-    <div style="background:#ffffff;border:1px solid #cbd5e1;border-radius:8px;padding:0.6rem 0.75rem;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.35rem;">
-        <div>
-          <span style="font-size:0.64rem;font-weight:800;color:#0284c7;text-transform:uppercase;letter-spacing:0.5px;">
-            STEP ${catIdx + 1} OF ${paperCreationState.categoriesOrder.length}
-          </span>
-          <div style="font-weight:900;font-size:0.9rem;color:#0f172a;">
-            ${catMeta.icon} ${catMeta.name}
-          </div>
-        </div>
-        <div style="text-align:right;">
-          <div style="font-weight:800;font-size:0.85rem;color:${selectedCount > requiredCount ? '#dc2626' : (selectedCount >= requiredCount ? '#16a34a' : '#0284c7')};">
-            ${selectedCount} / ${requiredCount} Selected
-          </div>
-          <div style="font-size:0.64rem;color:${selectedCount > requiredCount ? '#b91c1c' : '#64748b'};font-weight:${selectedCount > requiredCount ? '700' : '400'};">
-            ${selectedCount > requiredCount ? `⚠️ Limit Exceeded (+${selectedCount - requiredCount})` : (remainingCount > 0 ? `${remainingCount} Remaining` : '✓ Target Met')} · ${alloc.totalMarks} Marks
-          </div>
-        </div>
+    ${selectedCount > requiredCount ? `
+      <div style="margin-bottom:0.5rem;padding:0.45rem 0.65rem;background:#fef2f2;border:1.5px solid #f87171;border-radius:8px;font-size:0.72rem;color:#991b1b;display:flex;align-items:center;gap:0.4rem;font-weight:700;">
+        <span style="font-size:0.95rem;">⚠️</span>
+        <span>Question Limit Exceeded! You have selected ${selectedCount} questions (allocated limit is ${requiredCount} for ${catMeta.name}). Please remove ${selectedCount - requiredCount} question(s) before final printing.</span>
       </div>
+    ` : ''}
 
-      <!-- Mini Progress Meter -->
-      <div style="height:6px;background:#e2e8f0;border-radius:99px;overflow:hidden;margin-bottom:0.25rem;">
-        <div style="height:100%;width:${Math.min(100, (selectedCount / requiredCount) * 100)}%;background:${selectedCount > requiredCount ? '#dc2626' : (selectedCount >= requiredCount ? '#16a34a' : '#0284c7')};transition:width 0.2s ease;"></div>
+    ${shortageWarning ? `
+      <div style="margin-bottom:0.5rem;padding:0.45rem 0.65rem;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;font-size:0.7rem;color:#991b1b;display:flex;align-items:center;justify-content:space-between;">
+        <span>⚠️ Only <strong>${allCategoryQuestions.length}</strong> questions available in bank, but <strong>${requiredCount}</strong> required.</span>
+        <button onclick="reduceRequiredQuestionsToAvailable('${catId}', ${allCategoryQuestions.length})" style="background:#fee2e2;border:1px solid #f87171;color:#b91c1c;padding:0.15rem 0.45rem;border-radius:4px;font-size:0.66rem;font-weight:700;cursor:pointer;">
+          Use ${allCategoryQuestions.length} Qs
+        </button>
       </div>
-
-      ${selectedCount > requiredCount ? `
-        <div style="margin-top:0.45rem;padding:0.4rem 0.6rem;background:#fef2f2;border:1.5px solid #f87171;border-radius:6px;font-size:0.72rem;color:#991b1b;display:flex;align-items:center;gap:0.4rem;font-weight:700;">
-          <span style="font-size:0.95rem;">⚠️</span>
-          <span>Question Limit Exceeded! You have selected ${selectedCount} questions (allocated limit is ${requiredCount} for ${catMeta.name}). Please remove ${selectedCount - requiredCount} question(s) before final printing.</span>
-        </div>
-      ` : ''}
-
-      ${shortageWarning ? `
-        <div style="margin-top:0.4rem;padding:0.4rem 0.6rem;background:#fef2f2;border:1px solid #fecaca;border-radius:6px;font-size:0.7rem;color:#991b1b;display:flex;align-items:center;justify-content:space-between;">
-          <span>⚠️ Only <strong>${allCategoryQuestions.length}</strong> questions available in bank, but <strong>${requiredCount}</strong> required.</span>
-          <button onclick="reduceRequiredQuestionsToAvailable('${catId}', ${allCategoryQuestions.length})" style="background:#fee2e2;border:1px solid #f87171;color:#b91c1c;padding:0.15rem 0.45rem;border-radius:4px;font-size:0.66rem;font-weight:700;cursor:pointer;">
-            Use ${allCategoryQuestions.length} Qs
-          </button>
-        </div>
-      ` : ''}
-    </div>
+    ` : ''}
 
     <!-- Filter & Search Toolbar -->
     <div class="q-picker-toolbar">
@@ -9452,15 +9438,24 @@ function renderPaperReviewWorkArea() {
       ` : ''}
 
       <div style="display:flex;flex-direction:column;gap:0.4rem;">
-        <button class="btn btn-primary" onclick="printOfficialExamPaper()" style="font-size:0.84rem;padding:0.6rem;font-weight:800;">
-          🖨️ Print Student Paper
+        <button class="btn btn-primary" onclick="printOfficialExamPaper('all')" style="font-size:0.84rem;padding:0.6rem;font-weight:800;">
+          🖨️ Print Complete Paper (All Sections)
         </button>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.35rem;">
+          <button class="btn" onclick="printOfficialExamPaper('mcqs')" style="background:#0284c7;color:#fff;border:none;font-size:0.75rem;padding:0.45rem;font-weight:700;border-radius:6px;cursor:pointer;">
+            📄 Section A (MCQs Only)
+          </button>
+          <button class="btn" onclick="printOfficialExamPaper('subjective')" style="background:#7c3aed;color:#fff;border:none;font-size:0.75rem;padding:0.45rem;font-weight:700;border-radius:6px;cursor:pointer;">
+            📑 Question Book (Subjective)
+          </button>
+        </div>
 
         <button class="pcs-key-btn" onclick="togglePaperAnswerKey()" style="font-size:0.8rem;padding:0.5rem;font-weight:800;">
           🔑 ${paperCreationState.showAnswerKey ? 'Hide Solved Marking Scheme' : 'Show Solved Marking Scheme & Key'}
         </button>
 
-        <button class="pcs-print-btn" onclick="printOfficialExamPaper()" style="font-size:0.8rem;padding:0.5rem;font-weight:800;">
+        <button class="pcs-print-btn" onclick="printOfficialExamPaper('all')" style="font-size:0.8rem;padding:0.5rem;font-weight:800;">
           📥 Download / Save as PDF
         </button>
 
@@ -9701,7 +9696,9 @@ function onPaperClassSelect(classId) {
   paperCreationState.activeCategoryIndex = 0;
   paperCreationState.workflowStage = "selection";
 
-  openPaperBlueprintModal();
+  refreshLeftPanelBody();
+  updatePaperPreview();
+  renderPaperStatisticalHeader();
 }
 
 function onPaperSubjectSelect(subjId) {
@@ -9714,7 +9711,9 @@ function onPaperSubjectSelect(subjId) {
   paperCreationState.activeCategoryIndex = 0;
   paperCreationState.workflowStage = "selection";
 
-  openPaperBlueprintModal();
+  refreshLeftPanelBody();
+  updatePaperPreview();
+  renderPaperStatisticalHeader();
 }
 
 // ─── BLUEPRINT MODAL: "WHAT DO YOU WANT IN THIS PAPER?" ────
@@ -11000,7 +10999,7 @@ function renderLiveExamPaperHtml() {
           }
 
           return `
-            <div class="pep-section" style="${catIdx > 0 && !isSamePage ? 'page-break-before:always;break-before:page;' : ''}">
+            <div class="pep-section pep-section-mcqs" style="${catIdx > 0 && !isSamePage ? 'page-break-before:always;break-before:page;' : ''}">
               <div class="pep-sec-header">
                 <span class="pep-sec-title">${secTitle}</span>
                 <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
@@ -11026,8 +11025,8 @@ function renderLiveExamPaperHtml() {
                     const maxOptLen = Math.max(...activeOpts.map(o => String(o || '').length));
                     const qLen = String(m.q || '').length;
 
-                    // Automatically expand to fullwidth single-column row across grid if single column or if options/question are sentences/long
-                    const isFullWidth = (mcqCols === 1) || (maxOptLen > 18) || (qLen > 55);
+                    // Automatically expand to fullwidth single-column row across grid so Q3 and conceptual KPK Board MCQs span horizontally
+                    const isFullWidth = (mcqCols === 1) || (maxOptLen > 6) || (qLen > 25);
 
                     // Options horizontal distribution across that full column width
                     let optGridCols = '1fr';
@@ -11089,7 +11088,7 @@ function renderLiveExamPaperHtml() {
         // 2. Long Questions Section
         if (catId === 'lqs' || catId === 'theorems' || catId === 'essays') {
           return `
-            <div class="pep-section" style="${!isSamePage && catIdx === 1 ? 'page-break-before:always;break-before:page;margin-top:1.5rem;' : 'margin-top:1.25rem;'}">
+            <div class="pep-section pep-section-subjective" style="${!isSamePage && catIdx === 1 ? 'page-break-before:always;break-before:page;margin-top:1.5rem;' : 'margin-top:1.25rem;'}">
               <div class="pep-sec-header">
                 <span class="pep-sec-title">${secTitle}</span>
                 <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
@@ -11145,7 +11144,7 @@ function renderLiveExamPaperHtml() {
 
         // 3. Short Questions / Words / Definitions / Numericals / Grammar
         return `
-          <div class="pep-section" style="${!isSamePage && catIdx === 1 ? 'page-break-before:always;break-before:page;margin-top:1.5rem;' : 'margin-top:1.25rem;'}">
+          <div class="pep-section pep-section-subjective" style="${!isSamePage && catIdx === 1 ? 'page-break-before:always;break-before:page;margin-top:1.5rem;' : 'margin-top:1.25rem;'}">
             <div class="pep-sec-header">
               <span class="pep-sec-title">${secTitle}</span>
               <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
@@ -11228,11 +11227,14 @@ function togglePaperAnswerKey() {
   refreshLeftPanelBody();
 }
 
-function printOfficialExamPaper() {
+function printOfficialExamPaper(printMode = 'all') {
   const incompleteCats = [];
   const exceededCats = [];
 
   (paperCreationState.categoriesOrder || []).forEach(catId => {
+    if (printMode === 'mcqs' && catId !== 'mcqs') return;
+    if (printMode === 'subjective' && catId === 'mcqs') return;
+
     const alloc = paperCreationState.categoryAllocations[catId] || { count: 10 };
     const selectedList = paperCreationState.selectedQuestionsByCategory[catId] || [];
     const meta = getCategoryMeta(catId);
@@ -11275,8 +11277,18 @@ function printOfficialExamPaper() {
     }
   }
 
+  // Remove existing print mode classes
+  document.body.classList.remove('print-mcqs-only', 'print-subjective-only');
+  if (printMode === 'mcqs') {
+    document.body.classList.add('print-mcqs-only');
+  } else if (printMode === 'subjective') {
+    document.body.classList.add('print-subjective-only');
+  }
+
   window.print();
 }
+window.printOfficialExamPaper = printOfficialExamPaper;
+window.printPaperNow = printOfficialExamPaper;
 
 function setPaperMcqSamePage(isSame) {
   if (!paperCreationState.mcqSettings) {
@@ -12683,6 +12695,7 @@ function printTopicMcqsOnly(secId, unitNum) {
 window.printTopicMcqsOnly = printTopicMcqsOnly;
 
 window.addEventListener('afterprint', () => {
+  document.body.classList.remove('print-mcqs-only', 'print-subjective-only');
   const ptp = document.getElementById('printableTopicPaper');
   if (ptp) ptp.innerHTML = '';
 });

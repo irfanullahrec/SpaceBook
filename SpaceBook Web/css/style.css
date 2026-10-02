@@ -5664,9 +5664,87 @@ body:has(.papers-creator-view) #main-wrapper {
   background: #15803d !important;
 }
 
+.psh-select-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.22rem 0.55rem 0.22rem 0.65rem;
+  cursor: pointer;
+}
+
+.psh-inline-select {
+  background: transparent;
+  color: #f1f5f9;
+  border: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%2338bdf8' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.psh-inline-select option {
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 4px 8px;
+}
+
+.psh-dropdown-menu {
+  display: none;
+}
+.psh-dropdown-menu.show {
+  display: flex !important;
+}
+.psh-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.45rem 0.65rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: #f8fafc;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+.psh-menu-item:hover {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #38bdf8;
+}
+
 @media print {
   .paper-statistical-header {
     display: none !important;
+  }
+
+  /* MCQs Only Print Mode */
+  body.print-mcqs-only .pep-section:not(.pep-section-mcqs) {
+    display: none !important;
+  }
+  
+  /* Question Book (Subjective Only) Print Mode */
+  body.print-subjective-only .pep-section-mcqs,
+  body.print-subjective-only .pep-omr-sheet-box {
+    display: none !important;
+  }
+  body.print-subjective-only .pep-section {
+    page-break-before: auto !important;
+    break-before: auto !important;
   }
 }
 
