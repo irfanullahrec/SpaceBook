@@ -8868,7 +8868,7 @@ function renderPapersView() {
   pageContent().innerHTML = `
     <div class="papers-universe-wrapper papers-creator-view">
       <!-- 1. Left Wizard Controller Panel -->
-      <aside class="paper-creator-sidebar" id="paperCreatorSidebar" style="position:relative;height:calc(100vh - 78px);overflow-y:auto;display:flex;flex-direction:column;gap:0.65rem;">
+      <aside class="paper-creator-sidebar" id="paperCreatorSidebar" style="position:relative;height:calc(100vh - 78px);overflow-y:auto;display:block;padding:0.85rem;box-sizing:border-box;">
         ${renderPaperGeneratorLeftPanel()}
       </aside>
 
@@ -8967,7 +8967,7 @@ function renderPaperGeneratorLeftPanel() {
     </div>
 
     <!-- Dynamic Work Area -->
-    <div style="flex:1;display:flex;flex-direction:column;gap:0.55rem;">
+    <div style="display:block;margin-top:0.5rem;">
       ${paperCreationState.workflowStage === 'review' ? renderPaperReviewWorkArea() : renderActiveCategoryWorkArea()}
     </div>
   `;
@@ -9166,7 +9166,7 @@ function renderActiveCategoryWorkArea() {
     </div>
 
     <!-- Question Bank Compact Accordions -->
-    <div class="q-bank-accordion-scroll" style="display:flex;flex-direction:column;gap:0.45rem;max-height:500px;overflow-y:auto;padding-right:4px;">
+    <div class="q-bank-accordion-scroll" style="display:block;padding-right:2px;margin-bottom:0.75rem;">
       ${Object.keys(groupedByChapter).length === 0 ? `
         <div style="text-align:center;padding:1.5rem;background:#f8fafc;border:1px dashed #cbd5e1;border-radius:8px;font-size:0.78rem;color:#64748b;">
           No questions matching your filters. <button onclick="resetQuestionFilters()" style="color:#0284c7;background:none;border:none;cursor:pointer;font-weight:700;">Reset Filters</button>
@@ -9179,41 +9179,43 @@ function renderActiveCategoryWorkArea() {
           : (chIdx === 0 || filterCh !== "all");
 
         return `
-          <div class="q-chapter-accordion">
-            <div class="q-chapter-header" onclick="toggleChapterAccordion('${encodeURIComponent(chTitle)}')">
-              <div style="display:flex;align-items:center;gap:0.4rem;">
-                <span style="font-size:0.75rem;">${isExpanded ? '▼' : '▶'}</span>
-                <span>${chTitle}</span>
+          <div class="q-chapter-accordion" style="display:block;margin-bottom:0.55rem;border:1px solid #cbd5e1;border-radius:8px;background:#ffffff;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+            <div class="q-chapter-header" onclick="toggleChapterAccordion('${encodeURIComponent(chTitle)}', ${isExpanded})" style="min-height:44px;padding:0.65rem 0.85rem;display:flex;align-items:center;justify-content:space-between;cursor:pointer;background:#f8fafc;user-select:none;font-weight:700;font-size:0.78rem;color:#0f172a;border-bottom:${isExpanded ? '1px solid #e2e8f0' : 'none'};">
+              <div style="display:flex;align-items:center;gap:0.45rem;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+                <span style="font-size:0.75rem;color:#64748b;flex-shrink:0;">${isExpanded ? '▼' : '▶'}</span>
+                <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${chTitle}">${chTitle}</span>
               </div>
-              <div style="display:flex;align-items:center;gap:0.4rem;">
+              <div style="display:flex;align-items:center;gap:0.4rem;flex-shrink:0;margin-left:0.5rem;">
                 ${selectedInCh > 0 ? `
-                  <span style="background:#dcfce7;color:#15803d;font-size:0.62rem;font-weight:800;padding:0.1rem 0.35rem;border-radius:99px;">
+                  <span style="background:#dcfce7;color:#15803d;font-size:0.64rem;font-weight:800;padding:0.12rem 0.45rem;border-radius:99px;">
                     ${selectedInCh} Selected
                   </span>
                 ` : ''}
-                <span style="font-size:0.68rem;color:#64748b;">${chQuestions.length} Qs</span>
+                <span style="background:#f1f5f9;border:1px solid #cbd5e1;color:#475569;font-size:0.66rem;font-weight:700;padding:0.12rem 0.45rem;border-radius:99px;">
+                  ${chQuestions.length} Qs
+                </span>
               </div>
             </div>
 
             ${isExpanded ? `
-              <div class="q-chapter-body">
+              <div class="q-chapter-body" style="display:block;padding:0.65rem;background:#ffffff;">
                 ${chQuestions.map((q, qIdx) => {
                   const isChecked = selectedList.includes(q.id);
                   return `
-                    <div class="q-item-card ${isChecked ? 'selected' : ''}" onclick="toggleQuestionChoice('${catId}', '${q.id}')">
-                      <div class="q-item-top">
-                        <input type="checkbox" ${isChecked ? 'checked' : ''} onclick="event.stopPropagation(); toggleQuestionChoice('${catId}', '${q.id}')" style="cursor:pointer;margin-top:2px;">
-                        <div class="q-item-text">
+                    <div class="q-item-card ${isChecked ? 'selected' : ''}" onclick="toggleQuestionChoice('${catId}', '${q.id}')" style="display:block;margin-bottom:0.55rem;border:1.5px solid ${isChecked ? '#0284c7' : '#cbd5e1'};border-radius:8px;padding:0.65rem 0.75rem;background:${isChecked ? '#f0f9ff' : '#ffffff'};cursor:pointer;box-sizing:border-box;">
+                      <div class="q-item-top" style="display:flex;align-items:flex-start;gap:0.5rem;">
+                        <input type="checkbox" ${isChecked ? 'checked' : ''} onclick="event.stopPropagation(); toggleQuestionChoice('${catId}', '${q.id}')" style="cursor:pointer;margin-top:2px;width:15px;height:15px;accent-color:#0284c7;">
+                        <div class="q-item-text" style="flex:1;min-width:0;font-size:0.77rem;color:#0f172a;line-height:1.45;">
                           ${q.q}
                           ${q.opts ? `
-                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.25rem;margin-top:0.35rem;font-size:0.7rem;color:#475569;">
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.35rem;margin-top:0.45rem;font-size:0.72rem;color:#334155;background:#f8fafc;padding:0.45rem 0.55rem;border-radius:6px;border:1px solid #f1f5f9;">
                               ${q.opts.map((opt, oi) => `
                                 <span><strong>(${String.fromCharCode(65 + oi)})</strong> ${opt}</span>
                               `).join('')}
                             </div>
                           ` : ''}
                           ${q.subA ? `
-                            <div style="margin-top:0.25rem;font-size:0.7rem;color:#475569;">
+                            <div style="margin-top:0.35rem;font-size:0.72rem;color:#334155;background:#f8fafc;padding:0.4rem 0.55rem;border-radius:6px;">
                               <div><strong>(a)</strong> ${q.subA}</div>
                               ${q.subB ? `<div><strong>(b)</strong> ${q.subB}</div>` : ''}
                             </div>
@@ -9221,7 +9223,7 @@ function renderActiveCategoryWorkArea() {
                         </div>
                       </div>
 
-                      <div class="q-item-badges">
+                      <div class="q-item-badges" style="display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem;margin-top:0.45rem;padding-left:1.45rem;">
                         <span class="q-badge ${q.source === 'slo' ? 'q-badge-slo' : 'q-badge-ex'}">
                           ${q.source === 'slo' ? '🎯 SLO Based' : '📘 Exercise Based'}
                         </span>
@@ -9237,6 +9239,8 @@ function renderActiveCategoryWorkArea() {
         `;
       }).join('')}
     </div>
+
+    <div style="height:10px;"></div>
 
     <!-- Sticky Navigation Bar in Left Panel -->
     <div class="paper-sticky-bottom-bar">
@@ -9462,10 +9466,16 @@ function resetQuestionFilters() {
   refreshLeftPanelBody();
 }
 
-function toggleChapterAccordion(encodedChTitle) {
+function toggleChapterAccordion(encodedChTitle, currentlyExpanded) {
   const chTitle = decodeURIComponent(encodedChTitle);
-  const current = (paperCreationState.expandedChapters[chTitle] !== undefined) ? paperCreationState.expandedChapters[chTitle] : true;
-  paperCreationState.expandedChapters[chTitle] = !current;
+  if (typeof currentlyExpanded === 'boolean') {
+    paperCreationState.expandedChapters[chTitle] = !currentlyExpanded;
+  } else {
+    const current = (paperCreationState.expandedChapters[chTitle] !== undefined) 
+      ? paperCreationState.expandedChapters[chTitle] 
+      : false;
+    paperCreationState.expandedChapters[chTitle] = !current;
+  }
   refreshLeftPanelBody();
 }
 
@@ -10693,7 +10703,7 @@ function renderLiveExamPaperHtml() {
         const attemptCount = alloc.attempt || reqCount;
         const sectionLetter = String.fromCharCode(65 + catIdx);
 
-        // Fetch questions: prefer user hand-picked, fallback to first N from bank
+        // Fetch questions: strictly user hand-picked! Do NOT auto-fill unselected questions!
         const allBankQs = getCurriculumQuestionsForCategory(paperCreationState.classId, paperCreationState.subjectId, catId);
         const pickedIds = paperCreationState.selectedQuestionsByCategory[catId] || [];
         
@@ -10703,11 +10713,6 @@ function renderLiveExamPaperHtml() {
             const found = allBankQs.find(q => q.id === id);
             if (found) displayQuestions.push(found);
           });
-        }
-        // Fill remaining with curriculum bank so preview is always complete
-        if (displayQuestions.length < reqCount) {
-          const remainingPool = allBankQs.filter(q => !displayQuestions.some(dq => dq.id === q.id));
-          displayQuestions.push(...remainingPool.slice(0, reqCount - displayQuestions.length));
         }
 
         // Section Title & Instructions
@@ -10729,74 +10734,90 @@ function renderLiveExamPaperHtml() {
               </div>
               <div class="pep-sec-instruction">${secInstructions}</div>
 
-              ${isSeparateOmrSheet ? `
-                <div style="margin:0.75rem 0 1rem 0;background:#f8fafc;border:1.5px solid #000;border-radius:6px;padding:0.75rem;">
-                  <div style="font-weight:800;font-size:0.85rem;text-align:center;margin-bottom:0.6rem;text-transform:uppercase;">
-                    OFFICIAL OMR ANSWER SHEET · SECTION ${sectionLetter}
+              ${displayQuestions.length === 0 ? `
+                <div class="pep-empty-section-notice" style="margin:1.25rem 0;padding:1.5rem 1rem;border:2px dashed #cbd5e1;border-radius:8px;text-align:center;background:#f8fafc;color:#64748b;">
+                  <div style="font-size:1.4rem;margin-bottom:0.35rem;">🎯</div>
+                  <div style="font-weight:700;font-size:0.85rem;color:#334155;margin-bottom:0.2rem;">No MCQs Selected Yet</div>
+                  <div style="font-size:0.75rem;color:#64748b;">
+                    Select MCQs in the left panel (0 / ${reqCount} chosen) or click <strong>🎲 Auto-Fill</strong> to automatically pick questions.
                   </div>
-                  <table class="pep-omr-table">
-                    <thead>
-                      <tr>
-                        <th style="width:12%;">Q. No.</th>
-                        <th style="width:38%;">Shade Option Bubble</th>
-                        <th style="width:12%;">Q. No.</th>
-                        <th style="width:38%;">Shade Option Bubble</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      ${Array.from({ length: Math.ceil(displayQuestions.length / 2) }).map((_, rIdx) => {
-                        const q1 = rIdx + 1;
-                        const q2 = rIdx + 1 + Math.ceil(displayQuestions.length / 2);
-                        return `
-                          <tr>
-                            <td><strong>${q1}</strong></td>
-                            <td>
-                              <span class="pep-omr-strip">
-                                ${['A','B','C','D'].map(l => `<span class="omr-bubble-circle">${l}</span>`).join('')}
-                              </span>
-                            </td>
-                            ${q2 <= displayQuestions.length ? `
-                              <td><strong>${q2}</strong></td>
+                </div>
+              ` : `
+                ${isSeparateOmrSheet ? `
+                  <div style="margin:0.75rem 0 1rem 0;background:#f8fafc;border:1.5px solid #000;border-radius:6px;padding:0.75rem;">
+                    <div style="font-weight:800;font-size:0.85rem;text-align:center;margin-bottom:0.6rem;text-transform:uppercase;">
+                      OFFICIAL OMR ANSWER SHEET · SECTION ${sectionLetter}
+                    </div>
+                    <table class="pep-omr-table">
+                      <thead>
+                        <tr>
+                          <th style="width:12%;">Q. No.</th>
+                          <th style="width:38%;">Shade Option Bubble</th>
+                          <th style="width:12%;">Q. No.</th>
+                          <th style="width:38%;">Shade Option Bubble</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        ${Array.from({ length: Math.ceil(displayQuestions.length / 2) }).map((_, rIdx) => {
+                          const q1 = rIdx + 1;
+                          const q2 = rIdx + 1 + Math.ceil(displayQuestions.length / 2);
+                          return `
+                            <tr>
+                              <td><strong>${q1}</strong></td>
                               <td>
                                 <span class="pep-omr-strip">
                                   ${['A','B','C','D'].map(l => `<span class="omr-bubble-circle">${l}</span>`).join('')}
                                 </span>
                               </td>
-                            ` : '<td>-</td><td>-</td>'}
-                          </tr>
-                        `;
-                      }).join('')}
-                    </tbody>
-                  </table>
-                </div>
-              ` : ''}
-
-              <div class="pep-mcqs-grid" data-cols="${mcqCols}">
-                ${displayQuestions.map((m, idx) => `
-                  <div class="pep-mcq-item">
-                    <div class="pep-mcq-q" style="margin-bottom:0.25rem;">
-                      <strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}
-                    </div>
-                    <div class="pep-mcq-options" data-layout="${isOmrPure ? 'horizontal' : mcqLayout}" 
-                         style="${isOmrPure ? 'display:flex;align-items:center;gap:1.15rem;margin-top:0.25rem;padding-left:0.5rem;' : ''}">
-                      ${(m.opts || ["A", "B", "C", "D"]).map((opt, oi) => `
-                        <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" 
-                              style="${isOmrPure ? 'gap:0.2rem;display:inline-flex;align-items:center;' : ''}">
-                          ${isOmr ? `
-                            <span class="omr-bubble-circle">${String.fromCharCode(65 + oi)}</span>
-                          ` : `
-                            <span class="pep-bubble">${String.fromCharCode(65 + oi)})</span>
-                          `}
-                          ${!isOmrPure ? `<span>${opt}</span>` : ''}
-                        </span>
-                      `).join('')}
-                    </div>
-                    ${paperCreationState.showAnswerKey ? `
-                      <div class="pep-key-note">💡 Key: (${String.fromCharCode(65 + (m.ans || 0))}) — ${m.exp || 'Standard syllabus definition'}</div>
-                    ` : ''}
+                              ${q2 <= displayQuestions.length ? `
+                                <td><strong>${q2}</strong></td>
+                                <td>
+                                  <span class="pep-omr-strip">
+                                    ${['A','B','C','D'].map(l => `<span class="omr-bubble-circle">${l}</span>`).join('')}
+                                  </span>
+                                </td>
+                              ` : '<td>-</td><td>-</td>'}
+                            </tr>
+                          `;
+                        }).join('')}
+                      </tbody>
+                    </table>
                   </div>
-                `).join('')}
-              </div>
+                ` : ''}
+
+                <div class="pep-mcqs-grid" data-cols="${mcqCols}">
+                  ${displayQuestions.map((m, idx) => `
+                    <div class="pep-mcq-item">
+                      <div class="pep-mcq-q" style="margin-bottom:0.25rem;">
+                        <strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}
+                      </div>
+                      <div class="pep-mcq-options" data-layout="${isOmrPure ? 'horizontal' : mcqLayout}" 
+                           style="${isOmrPure ? 'display:flex;align-items:center;gap:1.15rem;margin-top:0.25rem;padding-left:0.5rem;' : ''}">
+                        ${(m.opts || ["A", "B", "C", "D"]).map((opt, oi) => `
+                          <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" 
+                                style="${isOmrPure ? 'gap:0.2rem;display:inline-flex;align-items:center;' : ''}">
+                            ${isOmr ? `
+                              <span class="omr-bubble-circle">${String.fromCharCode(65 + oi)}</span>
+                            ` : `
+                              <span class="pep-bubble">${String.fromCharCode(65 + oi)})</span>
+                            `}
+                            ${!isOmrPure ? `<span>${opt}</span>` : ''}
+                          </span>
+                        `).join('')}
+                      </div>
+                      ${paperCreationState.showAnswerKey ? `
+                        <div class="pep-key-note">💡 Key: (${String.fromCharCode(65 + (m.ans || 0))}) — ${m.exp || 'Standard syllabus definition'}</div>
+                      ` : ''}
+                    </div>
+                  `).join('')}
+                </div>
+
+                ${displayQuestions.length < reqCount ? `
+                  <div class="pep-empty-section-notice" style="margin-top:0.85rem;padding:0.45rem 0.65rem;border:1px dashed #cbd5e1;border-radius:6px;font-size:0.72rem;color:#64748b;text-align:center;background:#f8fafc;">
+                    (${displayQuestions.length} of ${reqCount} MCQs selected · select ${reqCount - displayQuestions.length} more in the left panel)
+                  </div>
+                ` : ''}
+              `}
             </div>
           `;
         }
@@ -10810,33 +10831,50 @@ function renderLiveExamPaperHtml() {
                 <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
               </div>
               <div class="pep-sec-instruction">${secInstructions}</div>
-              <div class="pep-lqs-list">
-                ${displayQuestions.map((lq, idx) => `
-                  <div class="pep-lq-item">
-                    <div class="pep-lq-q">
-                      <span><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${lq.q}</span>
-                      <span class="pep-q-marks">(${alloc.marksPerQ})</span>
-                    </div>
-                    ${lq.subA ? `
-                      <div class="pep-lq-sub">
-                        <span>(a) ${lq.subA}</span>
-                        <span class="pep-q-marks">(${Math.round(alloc.marksPerQ / 2)})</span>
-                      </div>
-                    ` : ''}
-                    ${lq.subB ? `
-                      <div class="pep-lq-sub">
-                        <span>(b) ${lq.subB}</span>
-                        <span class="pep-q-marks">(${Math.round(alloc.marksPerQ / 2)})</span>
-                      </div>
-                    ` : ''}
-                    ${paperCreationState.showAnswerKey ? `
-                      <div class="pep-key-note">
-                        <strong>Examiner Marking Key:</strong> Comprehensive conceptual explanation, step-by-step mathematical working or derivation, neat labeled diagrams, and conclusive findings.
-                      </div>
-                    ` : ''}
+
+              ${displayQuestions.length === 0 ? `
+                <div class="pep-empty-section-notice" style="margin:1.25rem 0;padding:1.5rem 1rem;border:2px dashed #cbd5e1;border-radius:8px;text-align:center;background:#f8fafc;color:#64748b;">
+                  <div style="font-size:1.4rem;margin-bottom:0.35rem;">📚</div>
+                  <div style="font-weight:700;font-size:0.85rem;color:#334155;margin-bottom:0.2rem;">No Questions Selected Yet</div>
+                  <div style="font-size:0.75rem;color:#64748b;">
+                    Select questions in the left panel (0 / ${reqCount} chosen) or click <strong>🎲 Auto-Fill</strong>.
                   </div>
-                `).join('')}
-              </div>
+                </div>
+              ` : `
+                <div class="pep-lqs-list">
+                  ${displayQuestions.map((lq, idx) => `
+                    <div class="pep-lq-item">
+                      <div class="pep-lq-q">
+                        <span><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${lq.q}</span>
+                        <span class="pep-q-marks">(${alloc.marksPerQ})</span>
+                      </div>
+                      ${lq.subA ? `
+                        <div class="pep-lq-sub">
+                          <span>(a) ${lq.subA}</span>
+                          <span class="pep-q-marks">(${Math.round(alloc.marksPerQ / 2)})</span>
+                        </div>
+                      ` : ''}
+                      ${lq.subB ? `
+                        <div class="pep-lq-sub">
+                          <span>(b) ${lq.subB}</span>
+                          <span class="pep-q-marks">(${Math.round(alloc.marksPerQ / 2)})</span>
+                        </div>
+                      ` : ''}
+                      ${paperCreationState.showAnswerKey ? `
+                        <div class="pep-key-note">
+                          <strong>Examiner Marking Key:</strong> Comprehensive conceptual explanation, step-by-step mathematical working or derivation, neat labeled diagrams, and conclusive findings.
+                        </div>
+                      ` : ''}
+                    </div>
+                  `).join('')}
+                </div>
+
+                ${displayQuestions.length < reqCount ? `
+                  <div class="pep-empty-section-notice" style="margin-top:0.85rem;padding:0.45rem 0.65rem;border:1px dashed #cbd5e1;border-radius:6px;font-size:0.72rem;color:#64748b;text-align:center;background:#f8fafc;">
+                    (${displayQuestions.length} of ${reqCount} questions selected · select ${reqCount - displayQuestions.length} more in the left panel)
+                  </div>
+                ` : ''}
+              `}
             </div>
           `;
         }
@@ -10849,21 +10887,38 @@ function renderLiveExamPaperHtml() {
               <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
             </div>
             <div class="pep-sec-instruction">${secInstructions}</div>
-            <div class="pep-sqs-list">
-              ${displayQuestions.map((sq, idx) => `
-                <div class="pep-sq-item">
-                  <div class="pep-sq-q">
-                    <span><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${sq.q}</span>
-                    <span class="pep-q-marks">(${alloc.marksPerQ})</span>
-                  </div>
-                  ${paperCreationState.showAnswerKey ? `
-                    <div class="pep-key-note">
-                      <strong>Model Solution / Rubric:</strong> ${sq.key || 'Accurate definition, formula, step-by-step working, or concise translation.'}
-                    </div>
-                  ` : ''}
+
+            ${displayQuestions.length === 0 ? `
+              <div class="pep-empty-section-notice" style="margin:1.25rem 0;padding:1.5rem 1rem;border:2px dashed #cbd5e1;border-radius:8px;text-align:center;background:#f8fafc;color:#64748b;">
+                <div style="font-size:1.4rem;margin-bottom:0.35rem;">📝</div>
+                <div style="font-weight:700;font-size:0.85rem;color:#334155;margin-bottom:0.2rem;">No ${catMeta.name} Selected Yet</div>
+                <div style="font-size:0.75rem;color:#64748b;">
+                  Select questions in the left panel (0 / ${reqCount} chosen) or click <strong>🎲 Auto-Fill</strong>.
                 </div>
-              `).join('')}
-            </div>
+              </div>
+            ` : `
+              <div class="pep-sqs-list">
+                ${displayQuestions.map((sq, idx) => `
+                  <div class="pep-sq-item">
+                    <div class="pep-sq-q">
+                      <span><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${sq.q}</span>
+                      <span class="pep-q-marks">(${alloc.marksPerQ})</span>
+                    </div>
+                    ${paperCreationState.showAnswerKey ? `
+                      <div class="pep-key-note">
+                        <strong>Model Solution / Rubric:</strong> ${sq.key || 'Accurate definition, formula, step-by-step working, or concise translation.'}
+                      </div>
+                    ` : ''}
+                  </div>
+                `).join('')}
+              </div>
+
+              ${displayQuestions.length < reqCount ? `
+                <div class="pep-empty-section-notice" style="margin-top:0.85rem;padding:0.45rem 0.65rem;border:1px dashed #cbd5e1;border-radius:6px;font-size:0.72rem;color:#64748b;text-align:center;background:#f8fafc;">
+                  (${displayQuestions.length} of ${reqCount} questions selected · select ${reqCount - displayQuestions.length} more in the left panel)
+                </div>
+              ` : ''}
+            `}
           </div>
         `;
       }).join('')}
