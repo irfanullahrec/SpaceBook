@@ -14654,189 +14654,696 @@ function switchLangWordsSubTab(subjKey, subTab) {
   if (ch) container.innerHTML = renderLangWordsSubContent(subjKey, ch, subTab);
 }
 
+// ─── WORDS / ALFAZ TAB SUB-CONTENT RENDERER ──────────────────────
+function getAllDistinctWordsFromLesson(ch, isUrdu) {
+  const sections = ch.sections || ch.urduSections || [];
+  const paras = [];
+  sections.forEach(sec => {
+    if (sec.paras && Array.isArray(sec.paras)) {
+      paras.push(...sec.paras);
+    } else if (sec.text) {
+      paras.push(sec.text);
+    }
+  });
+  if (paras.length === 0 && (ch.text || ch.urduText)) {
+    paras.push(ch.urduText || ch.text);
+  }
+
+  const wordsMap = new Map();
+
+  function splitIntoSentences(text) {
+    if (!text) return [];
+    return text.match(/[^.!?\n]+[.!?]+(?:\s|$)|[^.!?\n]+$/g) || [text];
+  }
+
+  paras.forEach(para => {
+    const sentences = splitIntoSentences(para);
+    sentences.forEach(rawSentence => {
+      const sentence = rawSentence.trim();
+      if (!sentence) return;
+
+      const pattern = isUrdu 
+        ? /[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]+/g
+        : /[a-zA-Z]+(?:'[a-zA-Z]+)?/g;
+
+      const matches = sentence.match(pattern);
+      if (matches) {
+        matches.forEach(rawToken => {
+          const token = rawToken.trim();
+          if (!isUrdu && token.length === 1 && !['a', 'i', 'o'].includes(token.toLowerCase())) return;
+          if (token.length === 0) return;
+
+          const key = token.toLowerCase();
+
+          if (!wordsMap.has(key)) {
+            let displayWord = token;
+            if (!isUrdu) {
+              displayWord = token.charAt(0).toUpperCase() + token.slice(1).toLowerCase();
+            }
+            wordsMap.set(key, {
+              key: key,
+              displayWord: displayWord,
+              originalToken: token,
+              firstSentence: sentence
+            });
+          }
+        });
+      }
+    });
+  });
+
+  // Also include explicit vocabulary words from curriculum exercises if any were missed
+  const ex = ch.exercise || {};
+  const dictWords = ex.dictionaryWords || ex.vocabulary || [];
+  dictWords.forEach(dw => {
+    const rawW = dw.word || dw.term || '';
+    if (!rawW) return;
+    const cleanKey = rawW.toLowerCase().replace(/[^a-zA-Z0-9\u0600-\u06FF]/g, '');
+    if (cleanKey && !wordsMap.has(cleanKey)) {
+      wordsMap.set(cleanKey, {
+        key: cleanKey,
+        displayWord: rawW,
+        originalToken: rawW,
+        firstSentence: dw.example || dw.sentence || ''
+      });
+    }
+  });
+
+  return Array.from(wordsMap.values());
+}
+
+function highlightWordInSentence(sentence, wordToken) {
+  if (!sentence || !wordToken) return sentence || '';
+  const escaped = wordToken.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  try {
+    const reg = new RegExp('\\b(' + escaped + ')\\b', 'i');
+    if (reg.test(sentence)) {
+      return sentence.replace(reg, '<mark style="background:#fef08a;color:#0f172a;font-weight:700;padding:0.05rem 0.25rem;border-radius:3px;">$1</mark>');
+    }
+  } catch (e) {}
+  return sentence;
+}
+
+const COMMON_ENG_URDU_MAP = {
+  'the': 'مخصوص / یہ (حرفِ تخصیص)',
+  'of': 'کا / کے / کی / منجملہ',
+  'and': 'اور / نیز',
+  'a': 'ایک / کوئی (حرفِ تنکیر)',
+  'an': 'ایک / کوئی',
+  'to': 'کی طرف / تک / کے لیے',
+  'in': 'میں / اندر / دوران',
+  'is': 'ہے',
+  'you': 'آپ / تم',
+  'that': 'کہ / وہ',
+  'it': 'یہ / وہ',
+  'he': 'وہ (مذکر)',
+  'was': 'تھا / تھی',
+  'for': 'کے لیے / کی خاطر',
+  'on': 'پر / اوپر',
+  'are': 'ہیں',
+  'as': 'جیسے / چونکہ / بطور',
+  'with': 'ساتھ / ہمراہ / کے ذریعے',
+  'his': 'اس کا / اس کی (مذکر)',
+  'they': 'وہ / انہوں نے',
+  'i': 'میں',
+  'at': 'پر / میں / مقام پر',
+  'be': 'ہونا / رہنا',
+  'this': 'یہ',
+  'have': 'رکھنا / پاس ہونا',
+  'from': 'سے / کی جانب سے',
+  'or': 'یا / ورنہ',
+  'one': 'ایک',
+  'had': 'رکھتا تھا / پاس تھا',
+  'by': 'کے ذریعے / کی جانب سے / تک',
+  'word': 'لفظ / کلمہ',
+  'but': 'لیکن / مگر / بلکہ',
+  'not': 'نہیں / نہ',
+  'what': 'کیا / جو کچھ',
+  'all': 'تمام / سب / کل',
+  'were': 'تھے / تھیں',
+  'we': 'ہم',
+  'when': 'جب / کس وقت',
+  'your': 'آپ کا / تمہارا',
+  'can': 'سکنا / قدرت رکھنا',
+  'said': 'کہا / فرمایا',
+  'there': 'وہاں / ادھر',
+  'each': 'ہر ایک / ہر',
+  'which': 'جو کہ / کون سا',
+  'she': 'وہ (مونث)',
+  'do': 'کرنا',
+  'how': 'کیسے / کس طرح',
+  'their': 'ان کا / ان کی',
+  'if': 'اگر / بشرطیکہ',
+  'will': 'گا / گی / گے',
+  'up': 'اوپر / بلند',
+  'other': 'دوسرا / دیگر',
+  'about': 'کے بارے میں / متعلق',
+  'out': 'باہر',
+  'many': 'کئی / بہت سے',
+  'then': 'پھر / تب',
+  'them': 'انہیں / ان کو',
+  'these': 'یہ (جمع)',
+  'so': 'لہٰذا / پس / چنانچہ',
+  'some': 'کچھ / بعض',
+  'her': 'اس کا / اس کی (مونث)',
+  'would': 'ہوتا / کرتا',
+  'make': 'بنانا',
+  'like': 'پسند کرنا / مانند',
+  'him': 'اسے / اس کو (مذکر)',
+  'into': 'کے اندر / میں',
+  'time': 'وقت / زمانہ',
+  'has': 'رکھتا ہے / پاس ہے',
+  'look': 'دیکھنا',
+  'two': 'دو',
+  'more': 'مزید / زیادہ',
+  'write': 'لکھنا',
+  'go': 'جانا',
+  'see': 'دیکھنا',
+  'number': 'نمبر / تعداد',
+  'no': 'نہیں / کوئی نہیں',
+  'way': 'راستہ / طریقہ',
+  'could': 'سکا / سکتی تھی',
+  'people': 'لوگ / قوم',
+  'my': 'میرا / میری',
+  'than': 'سے / بہ نسبت',
+  'first': 'پہلا / اول',
+  'water': 'پانی',
+  'been': 'رہا / ہوا',
+  'call': 'پکارنا / بلانا',
+  'who': 'جو / کون',
+  'oil': 'تیل',
+  'its': 'اس کا / اس کی',
+  'now': 'اب / اس وقت',
+  'find': 'تلاش کرنا / پانا',
+  'day': 'دن / روز',
+  'did': 'کیا',
+  'get': 'حاصل کرنا',
+  'come': 'آنا',
+  'made': 'بنایا',
+  'may': 'شاید / ممکن ہے',
+  'part': 'حصہ / جزو',
+  'tolerance': 'تحمل / رواداری / برداشت',
+  'tolerant': 'روادار / صابر / بردبار',
+  'patience': 'صبر و استقلال / شکیبائی',
+  'patient': 'صابر / شکیبا / مریض',
+  'virtue': 'فضیلت / نیکی / خوبی',
+  'enables': 'قابل بناتا ہے / طاقت دیتا ہے',
+  'forebear': 'برداشت کرنا / صبر کرنا',
+  'forbear': 'صبر کرنا / درگزر کرنا',
+  'forbearance': 'بردباری / حلم و ضبط',
+  'attitude': 'رویہ / اندازِ فکر',
+  'negative': 'منفی / غیر تعمیری',
+  'remarks': 'کلمات / تبصرے / باتیں',
+  'action': 'عمل / اقدام / کارروائی',
+  'calmness': 'سکون / اطمینان / طمأنیت',
+  'calm': 'پرسکون / صابر / ٹھنڈا',
+  'superb': 'شاندار / بے مثال / اعلیٰ',
+  'example': 'مثال / نمونہ / نظیر',
+  'forgive': 'معاف کرنا / درگزر کرنا',
+  'forgiving': 'معاف کرنے والا / عفو پسند',
+  'forgiveness': 'عفو و درگزر / معافی',
+  'worst': 'بدترین / سب سے برا',
+  'enemies': 'دشمن / مخالفین',
+  'enemy': 'دشمن / مخالف',
+  'truly': 'حقیقتاً / بلاشبہ',
+  'epitome': 'پیکر / مجسمہ / کامل نمونہ',
+  'compassion': 'ہمدردی / دلی لگاؤ / شفقت',
+  'mercy': 'رحم و کرم / عنایت',
+  'mankind': 'انسانیت / بنی نوع انسان',
+  'universe': 'کائنات / سنسار / عالم',
+  'believed': 'ایمان لائے / یقین کیا',
+  'believers': 'اہلِ ایمان / مومنین',
+  'prayer': 'نماز / دعا',
+  'lifestyle': 'طرزِ زندگی',
+  'differs': 'مختلف ہے / جدا ہے',
+  'preaching': 'تبلیغ / درس و تدریس',
+  'ostracised': 'سماجی بائیکاٹ کیا گیا',
+  'scarcity': 'شدید قلت / کمی',
+  'income': 'آمدنی / ذریعہ معاش',
+  'tough': 'کٹھن / سخت / دشوار',
+  'situation': 'صورتحال / کیفیت',
+  'revenge': 'انتقام / بدلہ',
+  'conquered': 'فتح کیا / مسخر کیا',
+  'conquest': 'فتح / غلبہ / نصرت',
+  'followers': 'پیروکار / ماننے والے',
+  'army': 'لشکر / فوج',
+  'entered': 'داخل ہوا',
+  'humbly': 'عاجزی سے / انکساری کے ساتھ',
+  'peacefully': 'پرامن طریقے سے',
+  'robbed': 'لوٹا گیا',
+  'insulted': 'بے عزت کیا گیا / توہین کی گئی',
+  'granted': 'عطا فرمایا / اعلان کیا',
+  'amnesty': 'عام معافی / درگزر',
+  'entire': 'پوری / تمام / کل',
+  'population': 'آبادی / باشندے',
+  'gathered': 'اکٹھے ہوئے / جمع ہوئے',
+  'expect': 'توقع رکھتے ہو / امید کرتے ہو',
+  'shouted': 'پکارے / ایک آواز ہو کر بولے',
+  'kindness': 'مہربانی / احسان / شفقت',
+  'pity': 'ترس / رحم',
+  'gracious': 'کریم / مہربان / شفیق',
+  'brother': 'بھائی',
+  'nephew': 'بھتیجا',
+  'disappointed': 'مایوس / نا امید',
+  'plotted': 'سازشیں کیں',
+  'funeral': 'نمازِ جنازہ / تجہیز و تکفین',
+  'companions': 'صحابہ کرام / ساتھی',
+  'cloak': 'چادر مبارک / جبہ',
+  'harsh': 'درشت / سخت / کڑوا',
+  'loan': 'قرض / ادھار',
+  'debts': 'قرضے / واجبات',
+  'delay': 'تاخیر / دیر',
+  'swelled': 'بھر گئیں / پھیل گئیں',
+  'anger': 'غصہ / طیش / غضب',
+  'sincere': 'مخلص / سچا / باوفا',
+  'counselling': 'نصیحت / خیرخواہی / رہنمائی',
+  'scared': 'ڈرایا / خوفزدہ کیا',
+  'frightened': 'خوفزدہ ہوا / ڈر گیا',
+  'dates': 'کھجوریں',
+  'ordered': 'حکم دیا / ہدایت فرمائی',
+  'perseverance': 'استقامت / مستقل مزاجی / صبر',
+  'precedence': 'سبقت / ترجیح / فوقیت',
+  'treatment': 'سلوک / برتاؤ',
+  'renounced': 'ترک کیا / بیزاری اختیار کی',
+  'testified': 'گواہی دی / تصدیق کی',
+  'worship': 'عبادت / بندگی',
+  'bounds': 'حدود / قیود',
+  'rudeness': 'بد اخلاقی / گستاخی',
+  'violence': 'تشدد / جبر',
+  'adversity': 'مصیبت / سختی / تنگی',
+  'honesty': 'دیانت داری / سچائی',
+  'convey': 'پہنچانا / پیغام دینا',
+  'truth': 'سچائی / صداقت',
+  'reward': 'انعام / صلہ / جزا'
+};
+
+const COMMON_ENG_DEFS_MAP = {
+  'tolerance': 'Willingness to accept behavior and beliefs that are different from one\'s own.',
+  'tolerant': 'Showing willingness to allow the existence of opinions one does not agree with.',
+  'patience': 'The capacity to accept or tolerate delay, trouble, or suffering without getting angry.',
+  'patient': 'Able to accept or tolerate delay or suffering with calm endurance.',
+  'virtue': 'Behavior showing high moral standards and goodness.',
+  'enables': 'Gives the means, authority, or ability to do something.',
+  'forebear': 'To endure, bear, or hold back with patience and self-control.',
+  'attitude': 'A settled way of thinking or feeling about someone or something.',
+  'negative': 'Expressing criticism, denial, or hostility.',
+  'remarks': 'Spoken comments or observations made about a person or situation.',
+  'action': 'A thing done; an act, measure, or deed performed.',
+  'calmness': 'The state or quality of being free from agitation, anger, or excitement.',
+  'calm': 'Peaceful, composed, and untroubled in mind or manner.',
+  'superb': 'Very fine or excellent; of the highest quality.',
+  'example': 'A person or thing regarded as a model or pattern worthy of imitation.',
+  'forgive': 'To cease to feel angry or resentful towards an offender; pardon.',
+  'forgiveness': 'The action or process of pardoning an offender or debt.',
+  'worst': 'Of the lowest quality, or the most unpleasant, severe, or hostile.',
+  'enemies': 'Persons actively opposed or hostile to someone.',
+  'truly': 'In a truthful, sincere, or genuine manner; without doubt.',
+  'epitome': 'A person or thing that is a perfect example or embodiment of a quality.',
+  'compassion': 'Sympathetic pity and concern for the sufferings or misfortunes of others.',
+  'mercy': 'Compassion or forgiveness shown toward someone whom it is in one\'s power to punish.',
+  'mankind': 'The human race considered collectively as a whole.',
+  'universe': 'All existing matter and space considered as a cosmos.',
+  'believed': 'Accepted something as true or had religious faith.',
+  'prayer': 'A solemn request or expression of thanks addressed to God (Salah).',
+  'lifestyle': 'The habits, attitudes, and moral standards that constitute a way of living.',
+  'differs': 'To be unlike, dissimilar, or distinct in nature or quality.',
+  'preaching': 'Publicly teaching, advocating, or proclaiming a religious doctrine.',
+  'ostracised': 'Excluded from a society, tribe, or group by general consent.',
+  'scarcity': 'The state of being scarce or in short supply; shortage.',
+  'tough': 'Difficult, arduous, or requiring great endurance.',
+  'revenge': 'The action of inflicting hurt or harm on someone for an injury or wrong suffered.',
+  'conquered': 'Overcame and took control of a place or people by military force.',
+  'conquest': 'The assumption of control of a territory or city through victory.',
+  'followers': 'Adherents, disciples, or believers who follow a leader or creed.',
+  'humbly': 'In a manner that shows a modest estimate of one\'s own importance.',
+  'peacefully': 'Without violence, disturbance, or strife; in an untroubled manner.',
+  'amnesty': 'An official general pardon granted to people who committed offenses.',
+  'entire': 'With no part left out; whole; complete.',
+  'gracious': 'Courteous, kind, generous, and pleasant in behavior.',
+  'disappointed': 'Sad or displeased because one\'s hopes or expectations were not fulfilled.',
+  'funeral': 'A ceremony or Islamic prayer (Janazah) honoring a deceased person before burial.',
+  'cloak': 'An outdoor overgarment, robe, or shawl.',
+  'harsh': 'Unpleasantly rough, severe, or cruel in tone or treatment.',
+  'loan': 'A thing that is borrowed, especially a sum of money that is expected to be paid back.',
+  'debts': 'Sums of money owed or due to be paid to creditors.',
+  'anger': 'A strong feeling of annoyance, displeasure, or hostility.',
+  'swelled': 'Filled up or expanded with intense emotion.',
+  'sincere': 'Free from pretense or deceit; proceeding from genuine feelings.',
+  'counselling': 'The provision of professional or elder advice and guidance.',
+  'frightened': 'Afraid, anxious, or scared by sudden threat or anger.',
+  'perseverance': 'Persistence in doing something despite difficulty or delay in achieving success.',
+  'precedence': 'The condition of being considered more important than someone or something else.',
+  'renounced': 'Formally declared one\'s abandonment of a former religious claim or belief.',
+  'testified': 'Gave evidence as a witness, or recited the Shahada testimony of faith.',
+  'bounds': 'Limitations, constraints, or boundary lines.',
+  'rudeness': 'Lack of manners, courtesy, or consideration for others.',
+  'violence': 'Behavior involving physical force intended to hurt, damage, or kill.',
+  'adversity': 'Difficulties, hardships, or misfortune.',
+  'honesty': 'The quality of being fair, truthful, upright, and sincere.',
+  'convey': 'To transport, communicate, or deliver an idea or message.'
+};
+
+const COMMON_ENG_ANTONYMS = {
+  'tolerance': { opp: 'Intolerance', u: 'عدم برداشت / تنگ نظری' },
+  'tolerant': { opp: 'Intolerant', u: 'تنگ نظر / کم ظرف' },
+  'patience': { opp: 'Impatience', u: 'بے صبری / بے قراری' },
+  'patient': { opp: 'Impatient', u: 'بے صبر / بے چین' },
+  'peace': { opp: 'Conflict / War', u: 'تنازع / جنگ' },
+  'peaceful': { opp: 'Violent / Turbulent', u: 'پر تشدد / ہنگامہ خیز' },
+  'peacefully': { opp: 'Violently / Harshly', u: 'تشدد سے / سختی سے' },
+  'compassion': { opp: 'Cruelty / Callousness', u: 'سنگدلی / ظلم' },
+  'kindness': { opp: 'Harshness / Cruelty', u: 'سختی / درشتی' },
+  'kind': { opp: 'Cruel / Harsh', u: 'ظالم / سخت دل' },
+  'victory': { opp: 'Defeat', u: 'شکست / مات' },
+  'conquest': { opp: 'Defeat / Surrender', u: 'شکست / اطاعت' },
+  'forgiveness': { opp: 'Revenge / Vengeance', u: 'انتقام / بدلہ' },
+  'forgive': { opp: 'Blame / Punish', u: 'الزام لگانا / سزا دینا' },
+  'forgiving': { opp: 'Vindictive / Resentful', u: 'کینہ پرور / انتقام پسند' },
+  'truth': { opp: 'Falsehood / Lie', u: 'جھوٹ / باطل' },
+  'true': { opp: 'False / Untrue', u: 'جھوٹا / باطل' },
+  'truly': { opp: 'Falsely / Deceitfully', u: 'جھوٹے طور پر' },
+  'frightened': { opp: 'Brave / Confident', u: 'بہادر / پر اعتماد' },
+  'fear': { opp: 'Courage / Bravery', u: 'ہمت / شجاعت' },
+  'reward': { opp: 'Punishment / Penalty', u: 'سزا / عتاب' },
+  'harsh': { opp: 'Gentle / Mild', u: 'نرم / شائستہ' },
+  'rude': { opp: 'Polite / Courteous', u: 'شائستہ / با اخلاق' },
+  'rudeness': { opp: 'Politeness / Courtesy', u: 'شائستگی / ادب' },
+  'sincere': { opp: 'Insincere / Deceitful', u: 'منافق / فریبی' },
+  'honesty': { opp: 'Dishonesty / Deceit', u: 'بددیانتی / فریب' },
+  'violence': { opp: 'Non-violence / Peace', u: 'عدم تشدد / امن' },
+  'insult': { opp: 'Praise / Honor', u: 'عزت / تعریف' },
+  'insulted': { opp: 'Honored / Respected', u: 'معزز / قابلِ احترام' },
+  'fair': { opp: 'Unfair / Biased', u: 'نا انصافی / جانبدار' },
+  'calm': { opp: 'Agitated / Furious', u: 'مضطرب / غضبناک' },
+  'calmness': { opp: 'Agitation / Turmoil', u: 'اضطراب / ہنگامہ' },
+  'virtue': { opp: 'Vice / Sin', u: 'برائی / گناہ' },
+  'negative': { opp: 'Positive / Constructive', u: 'مثبت / تعمیری' },
+  'superb': { opp: 'Inferior / Poor', u: 'ادنیٰ / معمولی' },
+  'worst': { opp: 'Best', u: 'بہترین' },
+  'enemies': { opp: 'Friends / Allies', u: 'دوست / احباب' },
+  'enemy': { opp: 'Friend / Ally', u: 'دوست / حامی' },
+  'scarcity': { opp: 'Abundance / Plenty', u: 'کثرت / فراوانی' },
+  'tough': { opp: 'Easy / Soft', u: 'آسان / سہل' },
+  'believers': { opp: 'Disbelievers / Infidels', u: 'منکرین / کفار' },
+  'gracious': { opp: 'Ungracious / Rude', u: 'بے مروت / گستاخ' },
+  'humbly': { opp: 'Arrogantly / Proudly', u: 'تکبر سے / غرور سے' },
+  'adversity': { opp: 'Prosperity / Good Fortune', u: 'خوشحالی / آسودگی' },
+  'anger': { opp: 'Serenity / Good Humor', u: 'سکون / خوش دلی' },
+  'disappointed': { opp: 'Satisfied / Hopeful', u: 'مطمئن / پرامید' },
+  'loan': { opp: 'Gift / Grant', u: 'ہبہ / تحفہ' },
+  'perseverance': { opp: 'Giving Up / Hesitation', u: 'دستبرداری / تذبذب' },
+  'precedence': { opp: 'Subordination / Inferiority', u: 'ماتحتی / ثانوی حیثیت' }
+};
+
+const COMMON_ENG_SYNONYMS = {
+  'tolerance': { sim: 'Forbearance / Endurance', u: 'بردباری / ضبط' },
+  'tolerant': { sim: 'Forbearing / Patient', u: 'صابر / بردبار' },
+  'patience': { sim: 'Perseverance / Steadfastness', u: 'استقامت / ثابت قدمی' },
+  'patient': { sim: 'Enduring / Forbearing', u: 'صابر / متحمل' },
+  'peace': { sim: 'Harmony / Serenity / Tranquility', u: 'امن / سکون / ہم آہنگی' },
+  'compassion': { sim: 'Mercy / Benevolence / Pity', u: 'رحم / ہمدردی / خیرخواہی' },
+  'kindness': { sim: 'Gentleness / Goodwill / Grace', u: 'مہربانی / نرمی / حسن سلوک' },
+  'virtue': { sim: 'Goodness / Morality / Righteousness', u: 'نیکی / اچھائی / پارسائی' },
+  'example': { sim: 'Model / Paragon / Pattern', u: 'نمونہ / مثال' },
+  'forgive': { sim: 'Pardon / Excuse / Absolve', u: 'معاف کرنا / درگزر کرنا' },
+  'forgiveness': { sim: 'Pardon / Clemency / Absolution', u: 'عفو و درگزر / معافی' },
+  'epitome': { sim: 'Embodiment / Personification / Essence', u: 'پیکر / مجسمہ / خلاصہ' },
+  'superb': { sim: 'Magnificent / Splendid / Excellent', u: 'شاندار / بے مثال' },
+  'enemies': { sim: 'Foes / Adversaries / Opponents', u: 'دشمن / مخالفین' },
+  'mercy': { sim: 'Grace / Clemency / Kindness', u: 'رحم و کرم / عنایت' },
+  'mankind': { sim: 'Humanity / Human race', u: 'انسانیت / بنی نوع انسان' },
+  'universe': { sim: 'Cosmos / Creation / World', u: 'کائنات / سنسار' },
+  'preaching': { sim: 'Advocating / Proclaiming / Teaching', u: 'تبلیغ / تلقین' },
+  'ostracised': { sim: 'Boycotted / Banished / Shunned', u: 'بائیکاٹ کیا گیا / خارج شدہ' },
+  'scarcity': { sim: 'Shortage / Dearth / Lack', u: 'قلت / کمی' },
+  'tough': { sim: 'Difficult / Hard / Arduous', u: 'کٹھن / سخت' },
+  'revenge': { sim: 'Vengeance / Retaliation / Retribution', u: 'انتقام / بدلہ' },
+  'conquered': { sim: 'Subdued / Vanquished / Captured', u: 'فتح کیا / مسخر کیا' },
+  'conquest': { sim: 'Victory / Triumph / Vanquishing', u: 'فتح / غلبہ' },
+  'humbly': { sim: 'Meekly / Modestly / Respectfully', u: 'عاجزی سے / انکساری سے' },
+  'peacefully': { sim: 'Calmly / Serenely / Tranquilly', u: 'پر امن طریقے سے' },
+  'amnesty': { sim: 'General pardon / Absolution / Clemency', u: 'عام معافی / درگزر' },
+  'gathered': { sim: 'Assembled / Congregated', u: 'جمع ہوئے / اکٹھے ہوئے' },
+  'gracious': { sim: 'Courteous / Benevolent / Kind', u: 'کریم / مہربان / شفیق' },
+  'disappointed': { sim: 'Dismayed / Crestfallen / Dejected', u: 'مایوس / نا امید' },
+  'funeral': { sim: 'Burial service / Obsequies / Last rites', u: 'نمازِ جنازہ / تدفین' },
+  'harsh': { sim: 'Severe / Stern / Cruel', u: 'سخت / درشت / کڑوا' },
+  'loan': { sim: 'Credit / Advance / Borrowing', u: 'قرض / ادھار' },
+  'debts': { sim: 'Liabilities / Dues / Obligations', u: 'قرضے / واجبات' },
+  'anger': { sim: 'Fury / Wrath / Rage', u: 'غصہ / غضب / طیش' },
+  'swelled': { sim: 'Expanded / Filled / Dilated', u: 'بھر گئی / پھیل گئی' },
+  'sincere': { sim: 'Genuine / Honest / Heartfelt', u: 'مخلص / سچا / بے ریا' },
+  'counselling': { sim: 'Advising / Guidance / Direction', u: 'نصیحت / مشاورت / رہنمائی' },
+  'perseverance': { sim: 'Persistence / Tenacity / Steadfastness', u: 'استقامت / مستقل مزاجی' },
+  'precedence': { sim: 'Priority / Superiority / Preference', u: 'ترجیح / سبقت / فوقیت' },
+  'renounced': { sim: 'Relinquished / Abandoned / Forswore', u: 'ترک کیا / بیزاری اختیار کی' },
+  'testified': { sim: 'Witnessed / Declared / Attested', u: 'گواہی دی / تصدیق کی' },
+  'adversity': { sim: 'Hardship / Misfortune / Distress', u: 'مصیبت / تکلیف / سختی' },
+  'rude': { sim: 'Impolite / Insolent / Discourteous', u: 'بد تمیز / گستاخ' },
+  'truth': { sim: 'Veracity / Fact / Reality', u: 'سچائی / صداقت / حق' },
+  'reward': { sim: 'Prize / Recompense / Bounty', u: 'انعام / صلہ / جزا' },
+  'honesty': { sim: 'Integrity / Probity / Truthfulness', u: 'دیانت داری / سچائی' },
+  'violence': { sim: 'Force / Aggression / Brutality', u: 'تشدد / ظلم و ستم' },
+  'insult': { sim: 'Offense / Affront / Slander', u: 'توہین / بے عزتی' },
+  'convey': { sim: 'Communicate / Impart / Express', u: 'پہنچانا / پیغام دینا' }
+};
+
+function getLessonWordUrduMeaning(item, isUrdu, ex) {
+  if (isUrdu) return item.displayWord;
+  const key = item.key;
+  if (COMMON_ENG_URDU_MAP[key]) return COMMON_ENG_URDU_MAP[key];
+
+  // Check dictionary words from exercise
+  const dwList = ex.dictionaryWords || ex.vocabulary || [];
+  const foundDw = dwList.find(w => (w.word || w.term || '').toLowerCase() === key);
+  if (foundDw && (foundDw.urduMeaning || foundDw.urdu)) return foundDw.urduMeaning || foundDw.urdu;
+
+  // Check dictionary_data.js
+  if (typeof lookupEngWord === 'function') {
+    const lookup = lookupEngWord(key);
+    if (lookup && lookup.u && lookup.u !== 'اردو معنی' && lookup.u !== 'اردو معنی / مفہوم' && lookup.u.toLowerCase() !== key) {
+      return lookup.u;
+    }
+  }
+  if (typeof ENG_URDU_DICT !== 'undefined' && ENG_URDU_DICT[key]) {
+    const entry = ENG_URDU_DICT[key];
+    if (entry.u && entry.u !== 'اردو معنی' && entry.u.toLowerCase() !== key) return entry.u;
+  }
+  return 'اردو مفہوم شامل ہے';
+}
+
+function getLessonWordEnglishMeaning(item, isUrdu, ex) {
+  if (isUrdu) {
+    const dwList = ex.dictionaryWords || ex.vocabulary || [];
+    const foundDw = dwList.find(w => (w.word || w.term || '') === item.displayWord);
+    return (foundDw && foundDw.meaning) ? foundDw.meaning : 'سبق کے متن میں مستعمل کلمہ / ترکیب۔';
+  }
+  const key = item.key;
+  if (COMMON_ENG_DEFS_MAP[key]) return COMMON_ENG_DEFS_MAP[key];
+
+  const dwList = ex.dictionaryWords || ex.vocabulary || [];
+  const foundDw = dwList.find(w => (w.word || w.term || '').toLowerCase() === key);
+  if (foundDw && (foundDw.meaning || foundDw.definition)) return foundDw.meaning || foundDw.definition;
+
+  if (typeof lookupEngWord === 'function') {
+    const lookup = lookupEngWord(key);
+    if (lookup && lookup.def) return lookup.def;
+  }
+  return `Used in textbook context: refers to ${item.displayWord.toLowerCase()}.`;
+}
+
+function getLessonWordAntonym(item, isUrdu, ex) {
+  if (isUrdu) {
+    const oppList = ex.thesaurusAntonyms || [];
+    const found = oppList.find(o => (o.word || '').trim() === item.displayWord.trim());
+    return found ? { opp: found.opposite || '—', u: '' } : { opp: '—', u: '' };
+  }
+  const key = item.key;
+  if (COMMON_ENG_ANTONYMS[key]) return COMMON_ENG_ANTONYMS[key];
+
+  const oppList = ex.thesaurusAntonyms || [];
+  const found = oppList.find(o => (o.word || '').toLowerCase() === key);
+  if (found) {
+    return { opp: found.opposite || '—', u: getLessonWordUrduMeaning({ key: (found.opposite || '').toLowerCase() }, false, ex) };
+  }
+  return { opp: '—', u: '' };
+}
+
+function getLessonWordSynonym(item, isUrdu, ex) {
+  if (isUrdu) {
+    const simList = ex.thesaurusSynonyms || [];
+    const found = simList.find(s => (s.word || '').trim() === item.displayWord.trim());
+    return found ? { sim: found.synonym || found.similar || '—', u: '' } : { sim: '—', u: '' };
+  }
+  const key = item.key;
+  if (COMMON_ENG_SYNONYMS[key]) return COMMON_ENG_SYNONYMS[key];
+
+  const simList = ex.thesaurusSynonyms || [];
+  const found = simList.find(s => (s.word || '').toLowerCase() === key);
+  if (found) {
+    const synText = found.synonyms || found.similar || found.synonym || '—';
+    const firstWord = synText.split(/[\/,]/)[0].trim();
+    return { sim: synText, u: getLessonWordUrduMeaning({ key: firstWord.toLowerCase() }, false, ex) };
+  }
+  return { sim: '—', u: '' };
+}
+
+function getLessonWordSentenceUse(item, isUrdu, ex) {
+  if (item.firstSentence) {
+    return highlightWordInSentence(item.firstSentence, item.originalToken || item.displayWord);
+  }
+  const dwList = ex.dictionaryWords || ex.vocabulary || [];
+  const foundDw = dwList.find(w => (w.word || w.term || '').toLowerCase() === item.key);
+  if (foundDw && foundDw.example) {
+    return highlightWordInSentence(foundDw.example, item.originalToken || item.displayWord);
+  }
+  return isUrdu ? 'سبق کے پیراگراف میں استعمال کیا گیا ہے۔' : `Used in official textbook lesson context.`;
+}
+
+function getLessonWordExplanation(item, isUrdu, ex) {
+  const dwList = ex.dictionaryWords || ex.vocabulary || [];
+  const foundDw = dwList.find(w => (w.word || w.term || '').toLowerCase() === item.key);
+  if (foundDw && foundDw.example) {
+    return highlightWordInSentence(foundDw.example, item.originalToken || item.displayWord);
+  }
+  if (item.firstSentence) {
+    return highlightWordInSentence(item.firstSentence, item.originalToken || item.displayWord);
+  }
+  return isUrdu ? 'سبق کے متن کا بنیادی حصہ' : 'Textbook reading passage vocabulary.';
+}
+
+function filterWordsGridTable(query) {
+  const q = (query || '').toLowerCase().trim();
+  const rows = document.querySelectorAll('#lessonWordsGridTable tbody tr');
+  rows.forEach(tr => {
+    if (!q) {
+      tr.style.display = '';
+      return;
+    }
+    const txt = tr.textContent.toLowerCase();
+    tr.style.display = txt.includes(q) ? '' : 'none';
+  });
+}
+
 function renderLangWordsSubContent(subjKey, ch, subTab) {
   const isUrdu = (subjKey === 'urdu');
   const ex = ch.exercise || {};
-  const wordsList = ex.dictionaryWords || ex.vocabulary || [];
 
-  // Helper for lookup of Urdu meaning for English words or native Urdu words
-  function getUrduMeaning(wStr) {
-    if (!wStr) return '';
-    if (isUrdu) return wStr;
-    const clean = String(wStr).toLowerCase().replace(/[^a-z0-9'-]/g, '');
-    if (typeof ENG_URDU_DICT !== 'undefined' && ENG_URDU_DICT[clean]) {
-      const u = ENG_URDU_DICT[clean].u;
-      if (u && u !== 'اردو معنی' && u.toLowerCase() !== clean) return u;
-    }
-    const knownMap = {
-      'tolerance': 'تحمل / رواداری / برداشت',
-      'intolerance': 'عدم برداشت / تنگ نظری',
-      'patience': 'صبر و تحمل',
-      'impatience': 'بے صبری / بے قراری',
-      'peace': 'امن و امان / سکون',
-      'conflict': 'تنازع / تصادم / جھگڑا',
-      'compassion': 'ہمدردی / دلی لگاؤ',
-      'cruelty': 'ظلم و ستم / سنگدلی',
-      'kindness': 'مہربانی / احسان',
-      'harshness': 'سختی / درشتی',
-      'victory': 'فتح / کامیابی',
-      'defeat': 'شکست / مات',
-      'forgiveness': 'معافی / درگزر',
-      'revenge': 'انتقام / بدلہ',
-      'truth': 'سچائی / صداقت',
-      'falsehood': 'جھوٹ / باطل',
-      'frightened': 'خوفزدہ / ڈرا ہوا',
-      'reward': 'انعام / صلہ',
-      'harsh': 'سخت / تلخ',
-      'rude': 'بد اخلاق / گستاخ',
-      'sincere': 'مخلص / سچا',
-      'forbearance': 'بردباری / ضبط',
-      'endurance': 'برداشت / قوتِ مدافعت',
-      'perseverance': 'استقامت / مسلسل جدوجہد',
-      'steadfastness': 'ثابت قدمی',
-      'mercy': 'رحم و کرم',
-      'benevolence': 'خیر خواہی / فیاضی',
-      'generosity': 'سخاوت / فیاض دلی',
-      'magnanimity': 'عالی ظرفی / فراخ دلی',
-      'grave': 'سنگین / اہم',
-      'dismay': 'مایوسی / افسوس',
-      'exalted': 'بلند رتبہ / سرفراز'
-    };
-    return knownMap[clean] || 'اردو مفہوم شامل ہے';
+  // 1. Extract ALL distinct words appearing across all lesson paragraphs & sections
+  const allWords = getAllDistinctWordsFromLesson(ch, isUrdu);
+
+  // 2. Fallback to exercise vocabulary if paragraphs were empty
+  if (allWords.length === 0) {
+    const rawList = ex.dictionaryWords || ex.vocabulary || [];
+    rawList.forEach(w => {
+      const rawText = w.word || w.term || '';
+      if (rawText) {
+        allWords.push({
+          key: rawText.toLowerCase().trim(),
+          displayWord: rawText,
+          originalToken: rawText,
+          firstSentence: w.example || w.sentence || ''
+        });
+      }
+    });
   }
 
+  // Determine dynamic 4th column header title
+  let dynamicHeaderTitle = '';
   if (subTab === 'meanings') {
-    return `
-      <div class="words-table-wrap">
-        <table class="words-grid-table">
-          <thead>
-            <tr>
-              <th style="width:25%;">${isUrdu ? 'لفظ' : 'Word'}</th>
-              <th style="width:28%;" class="words-urdu-col">اردو معنی (Urdu Meaning)</th>
-              <th style="width:25%;">${isUrdu ? 'سیاق و سباق کا مفہوم' : 'Contextual / English Meaning'}</th>
-              <th>${isUrdu ? 'وضاحت / حوالہ' : 'Example / Explanation'}</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${wordsList.length > 0 ? wordsList.map(w => {
-              const wordText = w.word || w.term || '';
-              const urduMean = isUrdu ? (w.meaning || w.urdu || '') : getUrduMeaning(wordText);
-              const engMean = isUrdu ? (w.context || '') : (w.meaning || w.definition || '');
-              const expText = w.example || w.context || w.sentence || w.def || (isUrdu ? 'سبق میں مستعمل لفظ' : 'Used in textbook unit.');
-
-              return `
-                <tr>
-                  <td><strong>${wordText}</strong></td>
-                  <td class="words-urdu-col" style="font-weight:700;color:#166534;">${urduMean}</td>
-                  <td style="color:#1e293b;">${engMean}</td>
-                  <td style="color:#64748b;font-size:0.86rem;">${expText}</td>
-                </tr>
-              `;
-            }).join('') : `
-              <tr><td colspan="4" style="text-align:center;padding:1.5rem;color:#64748b;">${isUrdu ? 'اس سبق کے لیے الفاظ و معنی کی فہرست لوڈ ہے۔' : 'Comprehensive vocabulary list is loaded for this unit.'}</td></tr>
-            `}
-          </tbody>
-        </table>
-      </div>`;
+    dynamicHeaderTitle = isUrdu ? 'وضاحت / حوالہ' : 'Example / Contextual Explanation';
   } else if (subTab === 'opposites') {
-    const oppList = (ex.thesaurusAntonyms || [
-      { word: 'Tolerance', opposite: 'Intolerance' },
-      { word: 'Patience', opposite: 'Impatience' },
-      { word: 'Peace', opposite: 'Conflict' },
-      { word: 'Compassion', opposite: 'Cruelty' },
-      { word: 'Kindness', opposite: 'Harshness' },
-      { word: 'Victory', opposite: 'Defeat' },
-      { word: 'Forgiveness', opposite: 'Revenge' },
-      { word: 'Truth', opposite: 'Falsehood' }
-    ]);
-    return `
-      <div class="words-table-wrap">
-        <table class="words-grid-table">
-          <thead>
-            <tr>
-              <th style="width:25%;">${isUrdu ? 'لفظ' : 'Word'}</th>
-              <th style="width:28%;" class="words-urdu-col">اردو معنی (Urdu Meaning)</th>
-              <th style="width:25%;">${isUrdu ? 'متضاد' : 'Antonym / Opposite'}</th>
-              <th class="words-urdu-col">${isUrdu ? 'متضاد کا اردو معنی' : 'Opposite Urdu Meaning'}</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${oppList.map(o => `
-              <tr>
-                <td><strong>${o.word}</strong></td>
-                <td class="words-urdu-col" style="font-weight:700;color:#166534;">${getUrduMeaning(o.word)}</td>
-                <td style="color:#b91c1c;font-weight:700;">${o.opposite}</td>
-                <td class="words-urdu-col" style="font-weight:700;color:#991b1b;">${getUrduMeaning(o.opposite)}</td>
-              </tr>
-            `).join('')}
-          </tbody>
-        </table>
-      </div>`;
+    dynamicHeaderTitle = isUrdu ? 'متضاد (Urdu Antonym)' : 'Antonym / Opposite (متضاد)';
   } else if (subTab === 'similars') {
-    const simList = (ex.thesaurusSynonyms || [
-      { word: 'Tolerance', similar: 'Forbearance / Endurance' },
-      { word: 'Patience', similar: 'Perseverance / Steadfastness' },
-      { word: 'Compassion', similar: 'Mercy / Benevolence' },
-      { word: 'Generosity', similar: 'Magnanimity / Kindness' },
-      { word: 'Grave', similar: 'Serious / Critical' },
-      { word: 'Dismay', similar: 'Distress / Sorrow' },
-      { word: 'Exalted', similar: 'Noble / Sublime' }
-    ]);
-    return `
-      <div class="words-table-wrap">
-        <table class="words-grid-table">
-          <thead>
-            <tr>
-              <th style="width:25%;">${isUrdu ? 'لفظ' : 'Word'}</th>
-              <th style="width:28%;" class="words-urdu-col">اردو معنی (Urdu Meaning)</th>
-              <th style="width:25%;">${isUrdu ? 'مترادف' : 'Synonym / مترادف'}</th>
-              <th class="words-urdu-col">${isUrdu ? 'مترادف کا اردو معنی' : 'Synonym Urdu Meaning'}</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${simList.map(s => {
-              const simStr = s.similar || s.synonym || '';
-              const firstSim = simStr.split('/')[0].trim();
-              return `
-                <tr>
-                  <td><strong>${s.word}</strong></td>
-                  <td class="words-urdu-col" style="font-weight:700;color:#166534;">${getUrduMeaning(s.word)}</td>
-                  <td style="color:#0f766e;font-weight:700;">${simStr}</td>
-                  <td class="words-urdu-col" style="font-weight:700;color:#065f46;">${getUrduMeaning(firstSim)}</td>
-                </tr>
-              `;
-            }).join('')}
-          </tbody>
-        </table>
-      </div>`;
+    dynamicHeaderTitle = isUrdu ? 'مترادف (Urdu Synonym)' : 'Synonym / Similar (مترادف)';
   } else if (subTab === 'use') {
-    const useList = (ex.sentenceUse || wordsList.slice(0, 10).map(w => ({
-      word: w.word || 'Tolerance',
-      sentence: w.sentence || (isUrdu ? 'اس لفظ کو جملے میں استعمال کیا گیا ہے۔' : `The Holy Prophet (PBUH) exemplified ${w.word || 'tolerance'} throughout his noble life.`)
-    })));
-    return `
-      <div class="words-table-wrap">
-        <table class="words-grid-table">
-          <thead>
-            <tr>
-              <th style="width:22%;">${isUrdu ? 'لفظ' : 'Word'}</th>
-              <th style="width:25%;" class="words-urdu-col">اردو معنی (Urdu Meaning)</th>
-              <th>${isUrdu ? 'جملے میں استعمال' : 'Example Sentence / جملہ'}</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${useList.map(u => `
-              <tr>
-                <td><strong style="color:#0284c7;">${u.word}</strong></td>
-                <td class="words-urdu-col" style="font-weight:700;color:#166534;">${getUrduMeaning(u.word)}</td>
-                <td style="line-height:1.6;color:#1e293b;">${u.sentence}</td>
-              </tr>
-            `).join('')}
-          </tbody>
-        </table>
-      </div>`;
+    dynamicHeaderTitle = isUrdu ? 'جملے میں استعمال' : 'Lesson Sentence / جملے میں استعمال';
   }
-  return '';
+
+  return `
+    <div class="words-table-wrap">
+      <!-- Search & Distinct Words Stats Bar -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:0.75rem;margin-bottom:0.85rem;flex-wrap:wrap;background:#f8fafc;border:1px solid #e2e8f0;padding:0.55rem 0.85rem;border-radius:8px;">
+        <div style="display:flex;align-items:center;gap:0.45rem;">
+          <span style="background:#e0f2fe;color:#0369a1;font-size:0.75rem;font-weight:800;padding:0.25rem 0.65rem;border-radius:99px;border:1px solid #bae6fd;">
+            📖 ${allWords.length} Distinct Words
+          </span>
+          <span style="font-size:0.72rem;color:#64748b;">
+            All distinct words across all paragraphs in this lesson
+          </span>
+        </div>
+        <div style="flex:1;max-width:340px;min-width:200px;">
+          <input type="text" id="wordsGridFilterInput" class="pcs-input" 
+                 placeholder="🔍 Filter from ${allWords.length} words, Urdu, or English..." 
+                 oninput="filterWordsGridTable(this.value)" 
+                 style="width:100%;font-size:0.76rem;padding:0.35rem 0.6rem;background:#ffffff;">
+        </div>
+      </div>
+
+      <table class="words-grid-table" id="lessonWordsGridTable">
+        <thead>
+          <tr>
+            <th style="width:20%;">${isUrdu ? 'لفظ' : 'Word'}</th>
+            <th style="width:24%;" class="words-urdu-col">${isUrdu ? 'اردو معنی' : 'اردو معنی (Urdu Meaning)'}</th>
+            <th style="width:28%;">${isUrdu ? 'سیاق و سباق کا مفہوم' : 'Contextual / English Meaning'}</th>
+            <th style="width:28%;">${dynamicHeaderTitle}</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${allWords.map((item, idx) => {
+            const wordText = item.displayWord;
+            const urduMean = getLessonWordUrduMeaning(item, isUrdu, ex);
+            const engMean = getLessonWordEnglishMeaning(item, isUrdu, ex);
+
+            // Dynamic 4th column cell
+            let dynamicCellHtml = '';
+            if (subTab === 'meanings') {
+              const exp = getLessonWordExplanation(item, isUrdu, ex);
+              dynamicCellHtml = `<td style="color:#475569;font-size:0.83rem;line-height:1.5;">${exp}</td>`;
+            } else if (subTab === 'opposites') {
+              const opp = getLessonWordAntonym(item, isUrdu, ex);
+              if (opp.opp && opp.opp !== '—') {
+                dynamicCellHtml = `
+                  <td style="line-height:1.45;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;">
+                      <strong style="color:#b91c1c;font-size:0.86rem;">${opp.opp}</strong>
+                      <span class="words-urdu-col" style="color:#991b1b;font-weight:700;font-size:0.95rem;">${opp.u}</span>
+                    </div>
+                  </td>`;
+              } else {
+                dynamicCellHtml = `<td style="color:#94a3b8;font-size:0.8rem;font-style:italic;">—</td>`;
+              }
+            } else if (subTab === 'similars') {
+              const sim = getLessonWordSynonym(item, isUrdu, ex);
+              if (sim.sim && sim.sim !== '—') {
+                dynamicCellHtml = `
+                  <td style="line-height:1.45;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;">
+                      <strong style="color:#0f766e;font-size:0.86rem;">${sim.sim}</strong>
+                      <span class="words-urdu-col" style="color:#065f46;font-weight:700;font-size:0.95rem;">${sim.u}</span>
+                    </div>
+                  </td>`;
+              } else {
+                dynamicCellHtml = `<td style="color:#94a3b8;font-size:0.8rem;font-style:italic;">—</td>`;
+              }
+            } else if (subTab === 'use') {
+              const sent = getLessonWordSentenceUse(item, isUrdu, ex);
+              dynamicCellHtml = `<td style="color:#1e293b;font-size:0.84rem;line-height:1.55;">${sent}</td>`;
+            }
+
+            return `
+              <tr>
+                <td><strong style="color:#0f172a;font-size:0.88rem;">${wordText}</strong></td>
+                <td class="words-urdu-col" style="font-weight:700;color:#166534;font-size:1.05rem;">${urduMean}</td>
+                <td style="color:#1e293b;font-size:0.84rem;line-height:1.45;">${engMean}</td>
+                ${dynamicCellHtml}
+              </tr>
+            `;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>
+  `;
 }
 
 function renderLanguageGrammarTab(subjKey, ch) {
