@@ -9165,12 +9165,8 @@ function renderPaperStatisticalHeader() {
       `;
     }).join('')}
 
-    <!-- 10. Quick Action Settings, Blueprint, Shuffle & Print Dropdown on Far Right -->
+    <!-- 10. Quick Action Settings, Blueprint & Print Dropdown on Far Right -->
     <div style="margin-left:auto;display:inline-flex;align-items:center;gap:0.35rem;flex-shrink:0;">
-      <button class="psh-item clickable" onclick="shufflePaperQuestions()" title="🎲 Shuffle question numbers and seed">
-        <span>🎲</span>
-        <span>Shuffle</span>
-      </button>
       <button class="psh-item clickable" onclick="openExamSettingsModal()" title="⚙️ Paper credentials, duration, date &amp; institute">
         <span>⚙️</span>
         <span>Info</span>
@@ -9184,7 +9180,7 @@ function renderPaperStatisticalHeader() {
           <span>🖨️</span>
           <span>Print ▾</span>
         </button>
-        <div id="pshPrintMenu" class="psh-dropdown-menu" style="display:none;position:absolute;top:calc(100% + 6px);right:0;background:#0f172a;border:1px solid #38bdf8;border-radius:8px;padding:0.4rem;box-shadow:0 8px 24px rgba(0,0,0,0.5);z-index:9999;min-width:220px;flex-direction:column;gap:0.3rem;">
+        <div id="pshPrintMenu" class="psh-dropdown-menu">
           <button class="psh-menu-item" onclick="printOfficialExamPaper('all'); closePaperPrintDropdown();">
             <span>🖨️</span> <span>Print Complete Paper</span>
           </button>
@@ -9277,23 +9273,20 @@ function renderActiveCategoryWorkArea() {
         </select>
       </div>
 
-      <div class="q-picker-row" style="justify-content:space-between;">
+      <div class="q-picker-row" style="display:flex;align-items:center;justify-content:space-between;gap:0.3rem;flex-wrap:nowrap;overflow-x:auto;">
         <!-- Source Filter: Exercise vs SLO -->
-        <div style="display:flex;gap:0.25rem;">
+        <div style="display:inline-flex;align-items:center;gap:0.25rem;flex-shrink:0;">
           <button class="q-source-pill ${filterSrc === 'all' ? 'active' : ''}" onclick="setQuestionSourceFilter('all')">All Sources</button>
           <button class="q-source-pill ${filterSrc === 'exercise' ? 'active' : ''}" onclick="setQuestionSourceFilter('exercise')">📘 Exercise-Based</button>
           <button class="q-source-pill ${filterSrc === 'slo' ? 'active' : ''}" onclick="setQuestionSourceFilter('slo')">🎯 SLO-Based</button>
         </div>
 
-        <!-- Bulk Action Buttons -->
-        <div style="display:flex;gap:0.25rem;">
-          <button onclick="toggleSelectAllFiltered('${catId}', true)" title="Select all filtered questions" style="background:#f1f5f9;border:1px solid #cbd5e1;padding:0.2rem 0.45rem;border-radius:4px;font-size:0.66rem;font-weight:700;cursor:pointer;">
-            ☑️ All
-          </button>
-          <button onclick="toggleSelectAllFiltered('${catId}', false)" title="Deselect all filtered questions" style="background:#f1f5f9;border:1px solid #cbd5e1;padding:0.2rem 0.45rem;border-radius:4px;font-size:0.66rem;font-weight:700;cursor:pointer;">
+        <!-- Single Line Actions: ◻️ Clear & 🎲 Auto-Fill next to filters -->
+        <div style="display:inline-flex;align-items:center;gap:0.3rem;flex-shrink:0;margin-left:auto;">
+          <button onclick="clearCategoryQuestions('${catId}')" title="Clear questions for this category" style="background:#f1f5f9;border:1px solid #cbd5e1;padding:0.24rem 0.55rem;border-radius:5px;font-size:0.68rem;font-weight:700;cursor:pointer;white-space:nowrap;color:#475569;">
             ◻️ Clear
           </button>
-          <button onclick="autoFillRemainingQuestions('${catId}')" title="Auto pick remaining questions" style="background:#e0f2fe;border:1px solid #7dd3fc;color:#0369a1;padding:0.2rem 0.45rem;border-radius:4px;font-size:0.66rem;font-weight:800;cursor:pointer;">
+          <button onclick="autoFillPaperQuestions('${catId}')" title="Randomly select questions from the whole book according to blueprint" style="background:#e0f2fe;border:1px solid #7dd3fc;color:#0369a1;padding:0.24rem 0.6rem;border-radius:5px;font-size:0.68rem;font-weight:800;cursor:pointer;white-space:nowrap;">
             🎲 Auto-Fill
           </button>
         </div>
@@ -9629,24 +9622,91 @@ function toggleSelectAllFiltered(catId, selectAll) {
   updatePaperPreview();
 }
 
-function autoFillRemainingQuestions(catId) {
-  if (!paperCreationState.selectedQuestionsByCategory[catId]) {
-    paperCreationState.selectedQuestionsByCategory[catId] = [];
-  }
-  const alloc = paperCreationState.categoryAllocations[catId] || { count: 10 };
-  const allQs = getCurriculumQuestionsForCategory(paperCreationState.classId, paperCreationState.subjectId, catId);
-  const current = paperCreationState.selectedQuestionsByCategory[catId];
-  const need = Math.max(0, alloc.count - current.length);
+function autoFillPaperQuestions(targetCatId) {
+  // Randomly select questions across the whole book according to the "What do you want in this paper?" modal blueprint
+  const cats = (paperCreationState.categoriesOrder && paperCreationState.categoriesOrder.length > 0)
+    ? paperCreationState.categoriesOrder
+    : [targetCatId || "mcqs"];
 
-  if (need <= 0) return;
+  // Shuffle seed to ensure variants and question randomization
+  paperCreationState.seed = (paperCreationState.seed || 1) + 1;
 
-  const available = allQs.filter(q => !current.includes(q.id));
-  const picked = available.slice(0, need).map(q => q.id);
-  paperCreationState.selectedQuestionsByCategory[catId].push(...picked);
+  cats.forEach(catId => {
+    const alloc = paperCreationState.categoryAllocations[catId] || { count: 10 };
+    const reqCount = alloc.count || 10;
+    const allQs = getCurriculumQuestionsForCategory(paperCreationState.classId, paperCreationState.subjectId, catId);
+    if (!allQs || allQs.length === 0) {
+      paperCreationState.selectedQuestionsByCategory[catId] = [];
+      return;
+    }
+
+    // Group questions by chapter to guarantee uniform distribution across the whole book
+    const chapterMap = {};
+    allQs.forEach(q => {
+      const ch = q.chapter || "General Curriculum";
+      if (!chapterMap[ch]) chapterMap[ch] = [];
+      chapterMap[ch].push(q.id);
+    });
+
+    // Shuffle questions within each chapter
+    Object.keys(chapterMap).forEach(ch => {
+      chapterMap[ch].sort(() => Math.random() - 0.5);
+    });
+
+    // Round-robin selection across all chapters in random order
+    const chKeys = Object.keys(chapterMap).sort(() => Math.random() - 0.5);
+    const picked = [];
+    let chIdx = 0;
+    let attempts = 0;
+    const maxAttempts = allQs.length * 3;
+
+    while (picked.length < reqCount && attempts < maxAttempts) {
+      attempts++;
+      const ch = chKeys[chIdx % chKeys.length];
+      const pool = chapterMap[ch];
+      if (pool && pool.length > 0) {
+        const qId = pool.pop();
+        if (!picked.includes(qId)) {
+          picked.push(qId);
+        }
+      }
+      chIdx++;
+      if (chKeys.every(k => !chapterMap[k] || chapterMap[k].length === 0)) {
+        break;
+      }
+    }
+
+    // If still need more questions, pick from remaining allQs
+    if (picked.length < reqCount) {
+      const remainingQs = allQs.filter(q => !picked.includes(q.id)).sort(() => Math.random() - 0.5);
+      for (const q of remainingQs) {
+        if (picked.length >= reqCount) break;
+        picked.push(q.id);
+      }
+    }
+
+    paperCreationState.selectedQuestionsByCategory[catId] = picked;
+  });
 
   refreshLeftPanelBody();
   updatePaperPreview();
+  renderPaperStatisticalHeader();
 }
+window.autoFillPaperQuestions = autoFillPaperQuestions;
+window.autoFillRemainingQuestions = autoFillPaperQuestions;
+window.autoFillQuestions = autoFillPaperQuestions;
+
+function clearCategoryQuestions(catId) {
+  if (catId) {
+    paperCreationState.selectedQuestionsByCategory[catId] = [];
+  } else {
+    paperCreationState.selectedQuestionsByCategory = {};
+  }
+  refreshLeftPanelBody();
+  updatePaperPreview();
+  renderPaperStatisticalHeader();
+}
+window.clearCategoryQuestions = clearCategoryQuestions;
 
 function reduceRequiredQuestionsToAvailable(catId, availCount) {
   if (!paperCreationState.categoryAllocations[catId]) return;

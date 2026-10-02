@@ -5573,7 +5573,7 @@ body:has(.papers-creator-view) #main-wrapper {
   background: #1e293b;
   border-bottom: 2px solid #0284c7;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.22);
-  z-index: 940;
+  z-index: 990;
   display: flex;
   align-items: center;
   padding: 0 1rem;
@@ -5700,6 +5700,18 @@ body:has(.papers-creator-view) #main-wrapper {
 
 .psh-dropdown-menu {
   display: none;
+  position: fixed !important;
+  top: calc(var(--header-h) + var(--header-h) + 4px) !important;
+  right: 0.85rem !important;
+  background: #0f172a !important;
+  border: 1.5px solid #38bdf8 !important;
+  border-radius: 8px !important;
+  padding: 0.45rem !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.75), 0 0 15px rgba(56, 189, 248, 0.25) !important;
+  min-width: 235px !important;
+  flex-direction: column !important;
+  gap: 0.35rem !important;
+  z-index: 100000 !important;
 }
 .psh-dropdown-menu.show {
   display: flex !important;
