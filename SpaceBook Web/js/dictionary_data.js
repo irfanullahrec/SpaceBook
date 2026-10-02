@@ -31620,6 +31620,74 @@ const ENG_UNIT_VOCAB_WORDS = {
 
 const CHEM_UNIT_VOCAB_WORDS = {};
 
+// Comprehensive KPK Textbook Vocabulary Dictionary (Verified Urdu & Pashto)
+const KPK_TEXTBOOK_FALLBACK_DICT = {
+  'tolerance': { u: 'تحمل / رواداری / برداشت', p: 'زغم / زغمناکتوب' },
+  'tolerant': { u: 'روادار / متحمل / بردبار', p: 'زغم لرونکی' },
+  'intolerance': { u: 'عدم برداشت / تنگ نظری', p: 'نه زغمل' },
+  'patience': { u: 'صبر / شکیبائی / برداشت', p: 'صبر / زغم' },
+  'patient': { u: 'صابر / بردبار', p: 'صابر' },
+  'impatience': { u: 'بے صبری / اضطراب', p: 'بې صبري' },
+  'virtue': { u: 'نیکی / فضیلت / خوبی', p: 'ښېګڼه / نېکي' },
+  'virtuous': { u: 'نیکوکار / متقی', p: 'نېک / پرهېزګار' },
+  'forbear': { u: 'درگزر کرنا / ضبط کرنا', p: 'صبر کول / تېرېدل' },
+  'forebear': { u: 'اجداد / صبر کرنا', p: 'صبر کول' },
+  'forbearance': { u: 'بردباری / ضبط و تحمل', p: 'بردباري / حلم' },
+  'attitude': { u: 'رویہ / طرزِ عمل', p: 'چلند / رویه' },
+  'negative': { u: 'منفی / ناپسندیدہ', p: 'منفي' },
+  'remarks': { u: 'ریمارکس / تبصرہ / کہی گئی باتیں', p: 'خبرې / تبصره' },
+  'actions': { u: 'اعمال / افعال / حرکات', p: 'کړنې / عملونه' },
+  'calmness': { u: 'سکون / اطمینان / وقار', p: 'سکون / آرامتیا' },
+  'calm': { u: 'پرسکون / پرامن', p: 'ارام / پرسکون' },
+  'superb': { u: 'شاندار / بے مثال / عمدہ', p: 'ډېر ښه / غوره' },
+  'example': { u: 'مثال / نمونہ / نظیر', p: 'بېلګه / مثال' },
+  'forgive': { u: 'معاف کرنا / بخش دینا', p: 'بخښنه کول' },
+  'forgiveness': { u: 'معافی / درگزر / بخشش', p: 'بخښنه' },
+  'worst': { u: 'بدترین / سب سے برا', p: 'تر ټولو بد' },
+  'enemies': { u: 'دشمن / اعداء', p: 'دښمنان' },
+  'enemy': { u: 'دشمن', p: 'دښمن' },
+  'epitome': { u: 'کامل نمونہ / مجسم پیکر', p: 'کامل مثال / مجسمه' },
+  'compassion': { u: 'ہمدردی / دلی لگاؤ / شفقت', p: 'زړه سوی / شفقت' },
+  'compassionate': { u: 'رحم دل / مشفق', p: 'مهربان / زړه سواندی' },
+  'mercy': { u: 'رحمت / مہربانی / کرم', p: 'رحمت / مهرباني' },
+  'merciful': { u: 'نہایت رحم والا / رحیم', p: 'ډېر مهربان' },
+  'mankind': { u: 'انسانیت / نوعِ انسانی', p: 'بشریت / انسانان' },
+  'universe': { u: 'کائنات / جہان', p: 'کاینات / نړۍ' },
+  'preaching': { u: 'تبلیغ / وعظ و نصیحت', p: 'تبلیغ کول / ښوونه' },
+  'ostracised': { u: 'بائیکاٹ کیا گیا / بیدخل کیا', p: 'شړل شوی / پرېکون' },
+  'ostracize': { u: 'بائیکاٹ کرنا / معاشرتی قطع تعلق', p: 'پرېکون کول' },
+  'scarcity': { u: 'قلّت / کمی / نایابی', p: 'کمښت / نشتوالی' },
+  'believers': { u: 'مومنین / اہلِ ایمان', p: 'مومنان / باوري خلک' },
+  'revenge': { u: 'بدلہ / انتقام', p: 'بدله / انتقام' },
+  'conquered': { u: 'فتح کیا / مسخر کیا', p: 'فتح کړ / ونیو' },
+  'conquest': { u: 'فتح / غلبہ / نصرت', p: 'فتح / بریا' },
+  'amnesty': { u: 'عام معافی / امان نامہ', p: 'عمومي بخښنه' },
+  'harsh': { u: 'سخت / درشت / کھردرا', p: 'سخت / تریخ' },
+  'harshly': { u: 'سختی سے / کرختگی سے', p: 'په سختۍ سره' },
+  'counselling': { u: 'مخلصانہ نصیحت / مشاورت', p: 'مشوره / نصیحت' },
+  'sublime': { u: 'عظیم الشان / اعلیٰ ترین', p: 'لوړ پوړی / عظیم' },
+  'embraced': { u: 'قبول کیا / گلے لگایا', p: 'ومنله / غېږ کې ونیوه' },
+  'vales': { u: 'وادیاں / گھاٹیاں', p: 'درې / درې' },
+  'daffodils': { u: 'نرگس کے زرد پھول', p: 'د نرګس ګلونه' },
+  'sprightly': { u: 'زندہ دل / چست / خوش باش', p: 'خوځنده / ژوندی' },
+  'solitude': { u: 'تنہائی / خلوت', p: 'یوازیتوب / یوازېوالی' },
+  'bliss': { u: 'روحانی مسرت / بے انتہا خوشی', p: 'لوی نعمت / خوښي' },
+  'pensive': { u: 'فکرمند / گہری سوچ میں گم', p: 'فکرمن / په سوچ کې' },
+  'vacant': { u: 'خالی / فرصت کے لمحات', p: 'تش / بې غمه' },
+  'prophet': { u: 'نبی / پیغمبر علیہ السلام', p: 'نبي / پیغمبر' },
+  'model': { u: 'نمونہ / مثال / اسوہ', p: 'نمونه / بېلګه' },
+  'peace': { u: 'امن / سلامتی / سکون', p: 'سوله / امن' },
+  'truth': { u: 'سچ / صداقت / حق', p: 'حق / رښتیا' },
+  'justice': { u: 'عدل / انصاف / راستی', p: 'عدالت / انصاف' },
+  'freedom': { u: 'آزادی / خودمختاری', p: 'ازادي / خپلواکي' },
+  'sacrifice': { u: 'قربانی / ایثار', p: 'قرباني / سرښندنه' },
+  'honor': { u: 'عزت / وقار / شرف', p: 'عزت / درناوی' },
+  'dignity': { u: 'وقار / عظمت', p: 'وقار / لوړتیا' },
+  'knowledge': { u: 'علم / آگاہی / دانش', p: 'پوهه / علم' },
+  'wisdom': { u: 'حکمت / دانائی', p: 'حکمت / هوښیارتیا' },
+  'faith': { u: 'ایمان / یقین / عقیدہ', p: 'ایمان / باور' },
+  'struggle': { u: 'جدوجہد / کوشش', p: 'مبارزه / هڅه' }
+};
 
 /**
  * Intelligent dictionary lookup for any English word
@@ -31629,8 +31697,17 @@ function lookupEngWord(rawWord) {
   const clean = rawWord.toLowerCase().replace(/[^a-z0-9'-]/g, '').trim();
   if (!clean) return null;
 
+  // 1. Check verified KPK textbook dictionary first
+  if (KPK_TEXTBOOK_FALLBACK_DICT[clean]) {
+    return { word: clean, ...KPK_TEXTBOOK_FALLBACK_DICT[clean], matchType: 'kpk_textbook' };
+  }
+
+  // 2. Check full dictionary if meaning is valid and not a placeholder
   if (typeof ENG_URDU_DICT !== 'undefined' && ENG_URDU_DICT[clean]) {
-    return { word: clean, ...ENG_URDU_DICT[clean], matchType: 'exact' };
+    const entry = ENG_URDU_DICT[clean];
+    if (entry.u && entry.u !== 'اردو معنی' && entry.u !== 'اردو معنی / مفہوم' && entry.u.toLowerCase() !== clean) {
+      return { word: clean, ...entry, matchType: 'exact' };
+    }
   }
 
   // Morphological Stemming Candidates
@@ -31651,10 +31728,19 @@ function lookupEngWord(rawWord) {
   if (clean.endsWith('ness') && clean.length > 5) candidates.push(clean.slice(0, -4));
   if (clean.endsWith('ment') && clean.length > 5) candidates.push(clean.slice(0, -4));
 
+  for (const cand of candidates) {
+    if (KPK_TEXTBOOK_FALLBACK_DICT[cand]) {
+      return { word: clean, rootWord: cand, ...KPK_TEXTBOOK_FALLBACK_DICT[cand], matchType: 'stemmed_kpk' };
+    }
+  }
+
   if (typeof ENG_URDU_DICT !== 'undefined') {
     for (const cand of candidates) {
       if (ENG_URDU_DICT[cand]) {
-        return { word: clean, rootWord: cand, ...ENG_URDU_DICT[cand], matchType: 'stemmed' };
+        const entry = ENG_URDU_DICT[cand];
+        if (entry.u && entry.u !== 'اردو معنی' && entry.u !== 'اردو معنی / مفہوم' && entry.u.toLowerCase() !== cand) {
+          return { word: clean, rootWord: cand, ...entry, matchType: 'stemmed' };
+        }
       }
     }
   }
@@ -31668,5 +31754,8 @@ function lookupEngWord(rawWord) {
 }
 
 if (typeof window !== 'undefined') {
+  window.ENG_URDU_DICT = ENG_URDU_DICT;
   window.lookupEngWord = lookupEngWord;
 }
+
+

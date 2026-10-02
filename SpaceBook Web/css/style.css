@@ -2713,36 +2713,29 @@ ul { list-style: none; }
 }
 
 
-.tts-word.active-word.tts-male {
-  background: linear-gradient(135deg, #fef08a, #fde047) !important;
-  color: #0f172a !important;
+.tts-word.active-word.tts-male,
+.tts-word.active-word.tts-female,
+.tts-word.active-word,
+.tts-word.tts-word-highlight {
+  background-color: #facc15 !important;
+  background-image: none !important;
+  color: #000000 !important;
   font-weight: 800 !important;
-  border-bottom: 2.5px solid #ca8a04 !important;
-  box-shadow: 0 0 12px rgba(202, 138, 4, 0.55), 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-  transform: scale(1.05);
-  display: inline-block;
+  border-radius: 4px !important;
+  box-shadow: 0 0 0 2px #eab308 !important;
+  text-decoration: none !important;
+  transform: none !important;
+  display: inline !important;
+  padding: 1px 3px !important;
+  opacity: 1 !important;
   position: relative;
-  z-index: 2;
-}
-
-
-.tts-word.active-word.tts-female {
-  background: linear-gradient(135deg, #fbcfe8, #f472b6) !important;
-  color: #831843 !important;
-  font-weight: 800 !important;
-  border-bottom: 2.5px solid #db2777 !important;
-  box-shadow: 0 0 12px rgba(219, 39, 119, 0.55), 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-  transform: scale(1.05);
-  display: inline-block;
-  position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 
 .tts-word.active-word::after {
-  content: ' 🔊';
-  font-size: 0.75rem;
-  vertical-align: super;
+  content: none !important;
 }
+
 
 
 .eng-word-popover-backdrop {
@@ -6786,13 +6779,16 @@ body:has(.papers-creator-view) #page-content {
   border-radius: 3px;
   padding: 0 1px;
 }
-.tts-word.tts-word-highlight {
-  background-color: #fde047 !important;
-  color: #0f172a !important;
+.tts-word.tts-word-highlight,
+.tts-word.active-word {
+  background-color: #facc15 !important;
+  color: #000000 !important;
   font-weight: 800 !important;
   border-radius: 4px !important;
-  box-shadow: 0 0 0 2px #facc15 !important;
+  box-shadow: 0 0 0 2px #eab308 !important;
   text-decoration: none !important;
+  display: inline !important;
+  opacity: 1 !important;
 }
 
 /* ─── INTERACTIVE LESSON SENTENCE HOVER & EXPAND ──────────── */
@@ -6806,13 +6802,15 @@ body:has(.papers-creator-view) #page-content {
 }
 .lesson-sentence:hover,
 .lesson-sentence.sentence-hovered {
-  font-weight: 700 !important;
+  font-weight: 800 !important;
   text-decoration: underline !important;
-  text-decoration-thickness: 2px !important;
-  text-underline-offset: 3px !important;
-  background-color: rgba(2, 132, 199, 0.1) !important;
-  color: #0284c7 !important;
+  text-decoration-thickness: 2.5px !important;
+  text-underline-offset: 4px !important;
+  background-color: #fef08a !important;
+  color: #0f172a !important;
+  box-shadow: 0 0 0 1.5px #facc15 !important;
 }
+
 
 .sentence-inline-trans-drawer {
   display: block;
