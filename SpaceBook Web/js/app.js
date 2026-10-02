@@ -12103,12 +12103,6 @@ function getTopicSpecificSLOs(sec, ch) {
           exp: 'Matrix multiplication is not commutative in general (AB ≠ BA). While matrix addition is commutative, multiplication depends on row-by-column combinations, and in general AB ≠ BA.'
         },
         {
-          q: 'If A = [[2, k], [3, 6]] is a singular matrix, what is the value of k?',
-          options: ['4', '1', '-4', '9'],
-          correct: 0,
-          exp: 'For a singular matrix, the determinant must equal 0:\n|A| = (2)(6) - (3)(k) = 0\n12 - 3k = 0 => 3k = 12 => k = 4.\nThus, the correct value of k is 4.'
-        },
-        {
           q: 'Arthur Cayley introduced the concept of matrices in which year?',
           options: ['1845', '1860', '1901', '1820'],
           correct: 1,
@@ -12281,6 +12275,137 @@ function switchTopicSloInnerTab(topicId, innerTab, btn) {
   contentEl.innerHTML = renderTopicSloInnerContent(sec, ch, innerTab);
 }
 
+function printTopicMcqsOnly(secId, unitNum) {
+  const chIdx = (unitNum || 1) - 1;
+  const ch = (typeof mathCurriculumData !== 'undefined' && mathCurriculumData.chapters) 
+    ? mathCurriculumData.chapters[chIdx] 
+    : { number: 1, title: 'Matrices and Determinants' };
+  
+  const sec = (ch && ch.sections ? ch.sections : []).find(s => String(s.id) === String(secId)) 
+    || { id: secId, title: 'Introduction to Matrices, Order & Equality' };
+  
+  const sloData = getTopicSpecificSLOs(sec, ch);
+  const mcqs = sloData.mcqs || [];
+
+  if (mcqs.length === 0) {
+    alert("No MCQs found for this topic to print.");
+    return;
+  }
+
+  let printContainer = document.getElementById('printableTopicPaper');
+  if (!printContainer) {
+    printContainer = document.createElement('div');
+    printContainer.id = 'printableTopicPaper';
+    document.body.appendChild(printContainer);
+  }
+
+  const instName = (typeof paperCreationState !== 'undefined' && paperCreationState.institutionName) 
+    ? paperCreationState.institutionName 
+    : "KPK BOARD MODEL HIGH SCHOOL & COLLEGE, PESHAWAR";
+  const dateStr = (typeof paperCreationState !== 'undefined' && paperCreationState.date) 
+    ? paperCreationState.date 
+    : "15 / 04 / 2026";
+  const totalMarks = mcqs.length;
+
+  printContainer.innerHTML = `
+    <div class="printable-exam-paper" style="border:none;box-shadow:none;padding:15px;max-width:800px;margin:0 auto;background:#fff;font-family:Arial,Helvetica,sans-serif;">
+      <!-- Official Header -->
+      <div class="pep-official-header" style="border-bottom:2px solid #000;padding-bottom:10px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;">
+        <div style="font-size:2.2rem;">🏛️</div>
+        <div style="text-align:center;flex:1;">
+          <div style="font-size:1.15rem;font-weight:900;letter-spacing:0.04em;color:#000;">${instName.toUpperCase()}</div>
+          <div style="font-size:0.92rem;font-weight:800;color:#000;margin-top:2px;">ANNUAL EXAMINATION 2026 · SESSION 2025–2026</div>
+          <div style="font-size:0.82rem;font-weight:700;color:#333;margin-top:2px;">SECTION — A (OBJECTIVE TYPE) · SEPARATE QUESTION PAPER</div>
+        </div>
+        <div style="border:1.5px solid #000;padding:4px 8px;text-align:center;font-size:0.7rem;font-weight:800;">KPK<br>DCTE</div>
+      </div>
+
+      <!-- Metadata Strip -->
+      <div style="display:flex;justify-content:space-between;border-bottom:1.5px solid #000;padding-bottom:6px;margin-bottom:10px;font-size:0.82rem;">
+        <div>
+          <span><strong>Class:</strong> 9th</span> &nbsp;|&nbsp;
+          <span><strong>Subject:</strong> 📐 Mathematics (Science Group)</span> &nbsp;|&nbsp;
+          <span><strong>Paper Code:</strong> SET-M1-26</span>
+        </div>
+        <div style="text-align:right;">
+          <span><strong>Time Allowed:</strong> 15 Minutes</span> &nbsp;|&nbsp;
+          <span><strong>Total Marks:</strong> ${totalMarks}</span>
+        </div>
+      </div>
+
+      <!-- Student Credentials Box -->
+      <div style="display:grid;grid-template-columns:1.5fr 2fr 1fr 1fr;gap:8px;border:1px solid #000;padding:6px 10px;margin-bottom:12px;font-size:0.8rem;">
+        <div><strong>Roll No:</strong> ________________</div>
+        <div><strong>Name:</strong> ________________________</div>
+        <div><strong>Section:</strong> ______</div>
+        <div><strong>Date:</strong> ${dateStr}</div>
+      </div>
+
+      <!-- Instructions & Topic Info -->
+      <div style="background:#f8fafc;border:1px solid #cbd5e1;padding:6px 10px;border-radius:4px;margin-bottom:12px;font-size:0.8rem;line-height:1.4;">
+        <div><strong>Topic:</strong> Unit ${ch.number || 1} (${ch.title}) — Section ${sec.id}: ${sec.title || 'Core Concepts'}</div>
+        <div style="margin-top:2px;color:#333;"><strong>Note:</strong> Attempt all questions. Each question carries 1 mark. Fill the corresponding bubble or mark the correct option. Overwriting, cutting, or using ink-remover is strictly prohibited.</div>
+      </div>
+
+      <!-- OMR Bubble Sheet Grid for this test -->
+      <div style="border:1.5px solid #000;border-radius:6px;padding:8px 12px;margin-bottom:16px;background:#fff;">
+        <div style="font-weight:800;font-size:0.82rem;text-align:center;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:6px;border-bottom:1px solid #000;padding-bottom:4px;">
+          OFFICIAL OMR ANSWER BUBBLE SHEET · SECTION A
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-around;flex-wrap:wrap;gap:12px;">
+          ${mcqs.map((_, qIdx) => `
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span style="font-weight:700;font-size:0.85rem;min-width:26px;text-align:right;">Q${qIdx + 1}.</span>
+              <div style="display:inline-flex;align-items:center;gap:4px;">
+                <span class="omr-bubble-circle" style="width:18px;height:18px;font-size:0.68rem;border:1.5px solid #000;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;">A</span>
+                <span class="omr-bubble-circle" style="width:18px;height:18px;font-size:0.68rem;border:1.5px solid #000;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;">B</span>
+                <span class="omr-bubble-circle" style="width:18px;height:18px;font-size:0.68rem;border:1.5px solid #000;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;">C</span>
+                <span class="omr-bubble-circle" style="width:18px;height:18px;font-size:0.68rem;border:1.5px solid #000;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;">D</span>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- The Questions Listing -->
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        ${mcqs.map((m, idx) => `
+          <div style="page-break-inside:avoid;font-size:0.88rem;line-height:1.45;">
+            <div style="font-weight:700;margin-bottom:5px;color:#000;">
+              <span>Q${idx + 1}.</span> ${m.q}
+            </div>
+            <div style="display:flex;align-items:center;flex-wrap:wrap;gap:1.75rem;padding-left:1.25rem;font-size:0.84rem;margin-top:4px;">
+              ${m.options.map((opt, oIdx) => `
+                <span style="display:inline-flex;align-items:center;gap:0.35rem;">
+                  <strong>(${String.fromCharCode(65 + oIdx)})</strong>
+                  <span>${opt}</span>
+                </span>
+              `).join('')}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+
+      <!-- Verification Footer -->
+      <div style="margin-top:30px;border-top:1.5px solid #000;padding-top:12px;display:flex;justify-content:space-between;font-size:0.78rem;">
+        <div>Signature of Invigilator: ______________________</div>
+        <div>Marks Obtained: [ ______ / ${totalMarks} ]</div>
+        <div>Signature of Examiner: ______________________</div>
+      </div>
+    </div>
+  `;
+
+  setTimeout(() => {
+    window.print();
+  }, 100);
+}
+window.printTopicMcqsOnly = printTopicMcqsOnly;
+
+window.addEventListener('afterprint', () => {
+  const ptp = document.getElementById('printableTopicPaper');
+  if (ptp) ptp.innerHTML = '';
+});
+
 function renderTopicSloInnerContent(sec, ch, innerTab) {
   const data = getTopicSpecificSLOs(sec, ch);
   const mcqs = data.mcqs || [];
@@ -12328,6 +12453,22 @@ function renderTopicSloInnerContent(sec, ch, innerTab) {
               </div>
             </div>`;
         }).join('')}
+
+        <!-- Print Option: Print only these questions on separate paper -->
+        <div class="math-topic-print-strip" style="margin-top:1.25rem;padding:0.9rem 1.15rem;background:#f0fdf4;border:1.5px solid #86efac;border-radius:10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;">
+          <div>
+            <div style="font-weight:800;font-size:0.95rem;color:#166534;display:flex;align-items:center;gap:0.45rem;">
+              <span>🖨️</span> <span>Print Option (Separate Question Paper)</span>
+            </div>
+            <div style="font-size:0.8rem;color:#15803d;margin-top:3px;">
+              Print only these ${mcqs.length} questions on an official separate exam paper with student credentials &amp; OMR bubble grid.
+            </div>
+          </div>
+          <button class="btn btn-primary" onclick="printTopicMcqsOnly('${sec.id || '1.1'}', ${ch.number || 1})" 
+                  style="background:#16a34a;border-color:#16a34a;padding:0.55rem 1.25rem;font-weight:700;font-size:0.88rem;display:inline-flex;align-items:center;gap:0.4rem;box-shadow:0 2px 6px rgba(22,163,74,0.3);cursor:pointer;">
+            <span>🖨️</span> <span>Print These Questions on Separate Paper</span>
+          </button>
+        </div>
       </div>`;
   } else if (innerTab === 'sqs') {
     return `
