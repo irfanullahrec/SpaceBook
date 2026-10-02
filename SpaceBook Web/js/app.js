@@ -9103,19 +9103,26 @@ function renderActiveCategoryWorkArea() {
           </div>
         </div>
         <div style="text-align:right;">
-          <div style="font-weight:800;font-size:0.85rem;color:${selectedCount >= requiredCount ? '#16a34a' : '#0284c7'};">
+          <div style="font-weight:800;font-size:0.85rem;color:${selectedCount > requiredCount ? '#dc2626' : (selectedCount >= requiredCount ? '#16a34a' : '#0284c7')};">
             ${selectedCount} / ${requiredCount} Selected
           </div>
-          <div style="font-size:0.64rem;color:#64748b;">
-            ${remainingCount > 0 ? `${remainingCount} Remaining` : '✓ Target Met'} · ${alloc.totalMarks} Marks
+          <div style="font-size:0.64rem;color:${selectedCount > requiredCount ? '#b91c1c' : '#64748b'};font-weight:${selectedCount > requiredCount ? '700' : '400'};">
+            ${selectedCount > requiredCount ? `⚠️ Limit Exceeded (+${selectedCount - requiredCount})` : (remainingCount > 0 ? `${remainingCount} Remaining` : '✓ Target Met')} · ${alloc.totalMarks} Marks
           </div>
         </div>
       </div>
 
       <!-- Mini Progress Meter -->
       <div style="height:6px;background:#e2e8f0;border-radius:99px;overflow:hidden;margin-bottom:0.25rem;">
-        <div style="height:100%;width:${Math.min(100, (selectedCount / requiredCount) * 100)}%;background:${selectedCount >= requiredCount ? '#16a34a' : '#0284c7'};transition:width 0.2s ease;"></div>
+        <div style="height:100%;width:${Math.min(100, (selectedCount / requiredCount) * 100)}%;background:${selectedCount > requiredCount ? '#dc2626' : (selectedCount >= requiredCount ? '#16a34a' : '#0284c7')};transition:width 0.2s ease;"></div>
       </div>
+
+      ${selectedCount > requiredCount ? `
+        <div style="margin-top:0.45rem;padding:0.4rem 0.6rem;background:#fef2f2;border:1.5px solid #f87171;border-radius:6px;font-size:0.72rem;color:#991b1b;display:flex;align-items:center;gap:0.4rem;font-weight:700;">
+          <span style="font-size:0.95rem;">⚠️</span>
+          <span>Question Limit Exceeded! You have selected ${selectedCount} questions (allocated limit is ${requiredCount} for ${catMeta.name}). Please remove ${selectedCount - requiredCount} question(s) before final printing.</span>
+        </div>
+      ` : ''}
 
       ${shortageWarning ? `
         <div style="margin-top:0.4rem;padding:0.4rem 0.6rem;background:#fef2f2;border:1px solid #fecaca;border-radius:6px;font-size:0.7rem;color:#991b1b;display:flex;align-items:center;justify-content:space-between;">
@@ -9377,15 +9384,61 @@ function refreshLeftPanelBody() {
 }
 
 // ─── QUESTION SELECTION CONTROLS ───────────────────────────
+function showQuestionLimitWarning(catName, limit, currentCount) {
+  let toastEl = document.getElementById('paperLimitWarningToast');
+  if (!toastEl) {
+    toastEl = document.createElement('div');
+    toastEl.id = 'paperLimitWarningToast';
+    toastEl.style.cssText = `
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 100000;
+      background: #991b1b;
+      color: #ffffff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.35);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      border: 1.5px solid #f87171;
+    `;
+    document.body.appendChild(toastEl);
+  }
+  toastEl.innerHTML = `
+    <span style="font-size:1.3rem;">⚠️</span>
+    <div>
+      <div>Question Limit Exceeded for ${catName}!</div>
+      <div style="font-size:0.74rem;font-weight:400;color:#fecaca;margin-top:2px;">
+        Allocated limit is <strong>${limit} Qs</strong> (you have now selected <strong>${currentCount}</strong>).
+      </div>
+    </div>
+  `;
+  toastEl.style.display = 'flex';
+  if (window._paperLimitToastTimer) clearTimeout(window._paperLimitToastTimer);
+  window._paperLimitToastTimer = setTimeout(() => {
+    if (toastEl) toastEl.style.display = 'none';
+  }, 4500);
+}
+
 function toggleQuestionChoice(catId, qId) {
   if (!paperCreationState.selectedQuestionsByCategory[catId]) {
     paperCreationState.selectedQuestionsByCategory[catId] = [];
   }
   const list = paperCreationState.selectedQuestionsByCategory[catId];
   const idx = list.indexOf(qId);
+  const alloc = paperCreationState.categoryAllocations[catId] || { count: 10 };
+  const catMeta = getCategoryMeta(catId);
+
   if (idx >= 0) {
     list.splice(idx, 1);
   } else {
+    if (list.length >= alloc.count) {
+      showQuestionLimitWarning(catMeta.name, alloc.count, list.length + 1);
+    }
     list.push(qId);
   }
   refreshLeftPanelBody();
@@ -9418,6 +9471,12 @@ function toggleSelectAllFiltered(catId, selectAll) {
         paperCreationState.selectedQuestionsByCategory[catId].push(id);
       }
     });
+    const currentCount = paperCreationState.selectedQuestionsByCategory[catId].length;
+    const alloc = paperCreationState.categoryAllocations[catId] || { count: 10 };
+    if (currentCount > alloc.count) {
+      const catMeta = getCategoryMeta(catId);
+      showQuestionLimitWarning(catMeta.name, alloc.count, currentCount);
+    }
   } else {
     paperCreationState.selectedQuestionsByCategory[catId] = paperCreationState.selectedQuestionsByCategory[catId].filter(id => !matchingIds.includes(id));
   }
@@ -9586,19 +9645,36 @@ function renderBlueprintModalContent() {
             <div class="paper-category-grid-modal">
               ${availableCats.map(cat => {
                 const isSelected = blueprintDraft.categoriesOrder.includes(cat.id);
+                const alloc = (blueprintDraft.allocations && blueprintDraft.allocations[cat.id]) || { count: 10, attempt: 10 };
+                const qCount = alloc.count || alloc.attempt || 10;
                 return `
                   <div class="paper-cat-item-card ${isSelected ? 'selected' : ''}" onclick="toggleDraftCategory('${cat.id}')">
-                    <div style="display:flex;align-items:center;gap:0.45rem;">
-                      <input type="checkbox" ${isSelected ? 'checked' : ''} onclick="event.stopPropagation(); toggleDraftCategory('${cat.id}')">
-                      <span style="font-size:1.15rem;">${cat.icon}</span>
-                      <div>
-                        <div style="font-weight:700;font-size:0.78rem;color:#0f172a;">${cat.name}</div>
-                        <div style="font-size:0.64rem;color:#64748b;">${cat.desc}</div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+                      <div style="display:flex;align-items:center;gap:0.45rem;">
+                        <input type="checkbox" ${isSelected ? 'checked' : ''} onclick="event.stopPropagation(); toggleDraftCategory('${cat.id}')">
+                        <span style="font-size:1.15rem;">${cat.icon}</span>
+                        <div>
+                          <div style="font-weight:700;font-size:0.78rem;color:#0f172a;">${cat.name}</div>
+                          <div style="font-size:0.64rem;color:#64748b;">${cat.desc}</div>
+                        </div>
                       </div>
+                      <span style="font-size:0.74rem;font-weight:800;color:${isSelected ? '#16a34a' : '#94a3b8'};">
+                        ${isSelected ? '✓ In Paper' : '+ Add'}
+                      </span>
                     </div>
-                    <span style="font-size:0.74rem;font-weight:800;color:${isSelected ? '#16a34a' : '#94a3b8'};">
-                      ${isSelected ? '✓ In Paper' : '+ Add'}
-                    </span>
+                    ${isSelected ? `
+                      <div style="display:flex;align-items:center;justify-content:space-between;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:5px;padding:0.25rem 0.5rem;margin-top:0.35rem;width:100%;box-sizing:border-box;" onclick="event.stopPropagation();">
+                        <span style="font-size:0.7rem;font-weight:700;color:#166534;">Number of Questions:</span>
+                        <div style="display:flex;align-items:center;gap:0.35rem;">
+                          <input type="number" min="1" max="100" class="pcs-input" 
+                                 value="${qCount}" 
+                                 onchange="updateDraftCategoryAlloc('${cat.id}', 'count', parseInt(this.value) || 1)"
+                                 onclick="event.stopPropagation();"
+                                 style="width:58px;height:24px;text-align:center;font-weight:800;font-size:0.78rem;padding:0.1rem;border:1.5px solid #16a34a;border-radius:4px;background:#ffffff;color:#0f172a;">
+                          <span style="font-size:0.68rem;color:#64748b;font-weight:600;">Qs</span>
+                        </div>
+                      </div>
+                    ` : ''}
                   </div>
                 `;
               }).join('')}
@@ -9822,9 +9898,13 @@ function changeDraftQty(catId, field, delta) {
 
 function updateDraftCategoryAlloc(catId, field, val) {
   if (!blueprintDraft || !blueprintDraft.allocations[catId]) return;
+  val = Math.max(1, parseInt(val) || 1);
   blueprintDraft.allocations[catId][field] = val;
+  if (field === 'count') {
+    blueprintDraft.allocations[catId].attempt = val;
+  }
   if (field === 'attempt') {
-    blueprintDraft.allocations[catId].count = Math.max(val, blueprintDraft.allocations[catId].count);
+    blueprintDraft.allocations[catId].count = Math.max(val, blueprintDraft.allocations[catId].count || val);
   }
   const attempt = blueprintDraft.allocations[catId].attempt || 1;
   const marksPerQ = blueprintDraft.allocations[catId].marksPerQ || 1;
@@ -11005,6 +11085,52 @@ function togglePaperAnswerKey() {
 }
 
 function printOfficialExamPaper() {
+  const incompleteCats = [];
+  const exceededCats = [];
+
+  (paperCreationState.categoriesOrder || []).forEach(catId => {
+    const alloc = paperCreationState.categoryAllocations[catId] || { count: 10 };
+    const selectedList = paperCreationState.selectedQuestionsByCategory[catId] || [];
+    const meta = getCategoryMeta(catId);
+    if (selectedList.length < alloc.count) {
+      incompleteCats.push({
+        name: meta.name,
+        selected: selectedList.length,
+        required: alloc.count,
+        missing: alloc.count - selectedList.length
+      });
+    } else if (selectedList.length > alloc.count) {
+      exceededCats.push({
+        name: meta.name,
+        selected: selectedList.length,
+        required: alloc.count,
+        excess: selectedList.length - alloc.count
+      });
+    }
+  });
+
+  if (incompleteCats.length > 0 || exceededCats.length > 0) {
+    let msg = "⚠️ Official Examination Paper Alert:\n\n";
+    if (incompleteCats.length > 0) {
+      msg += "INCOMPLETE QUESTION SELECTION (FEWER QUESTIONS THAN REQUIRED):\n";
+      incompleteCats.forEach(c => {
+        msg += `• ${c.name}: Only ${c.selected} of ${c.required} questions selected (${c.missing} missing)\n`;
+      });
+      msg += "\n";
+    }
+    if (exceededCats.length > 0) {
+      msg += "EXCEEDED QUESTION LIMITS:\n";
+      exceededCats.forEach(c => {
+        msg += `• ${c.name}: ${c.selected} questions selected (limit is ${c.required}, +${c.excess} extra)\n`;
+      });
+      msg += "\n";
+    }
+    msg += "Do you want to proceed and print anyway?\n\n[Click OK to Print anyway | Click Cancel to go back and complete selection]";
+    if (!confirm(msg)) {
+      return;
+    }
+  }
+
   window.print();
 }
 
