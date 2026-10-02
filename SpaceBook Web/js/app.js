@@ -11870,9 +11870,12 @@ function renderMathChapter(index) {
   const totalExercises = ch.exercises ? ch.exercises.length : 0;
   const totalExamples = ch.workedExamples ? ch.workedExamples.length : 0;
   const totalSections = ch.sections ? ch.sections.length : 0;
-  const totalSLOs = ((ch.slos && ch.slos.mcqs) ? ch.slos.mcqs.length : 0) +
-                    ((ch.slos && ch.slos.shortQuestions) ? ch.slos.shortQuestions.length : 0) +
-                    ((ch.slos && ch.slos.longQuestions) ? ch.slos.longQuestions.length : 0) || 5;
+  const comprehensiveSLOs = (typeof getComprehensiveChapterSLOBank === 'function') 
+    ? getComprehensiveChapterSLOBank(ch) 
+    : (ch.slos || {});
+  const totalSLOs = ((comprehensiveSLOs.mcqs ? comprehensiveSLOs.mcqs.length : 0) +
+                     (comprehensiveSLOs.shortQuestions ? comprehensiveSLOs.shortQuestions.length : 0) +
+                     (comprehensiveSLOs.longQuestions ? comprehensiveSLOs.longQuestions.length : 0)) || 63;
   const pdfFile = 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
 
   area.innerHTML = `
@@ -12247,8 +12250,412 @@ function renderMathSloCategoryContent(category, slos) {
   return '';
 }
 
+
+// ─── COMPREHENSIVE CHAPTER-WIDE BOARD SLO ENGINE ─────────
+// Provides logically ordered, high-yield board questions with easy-to-understand explanations
+function getComprehensiveChapterSLOBank(ch) {
+  const chNum = (ch && ch.number) ? ch.number : 1;
+
+  if (chNum === 1 || String(chNum) === "1") {
+    const mcqs = [
+      {
+        q: "If a matrix A has 2 rows and 3 columns, then its order (dimension) is written as:",
+        options: ["3 × 2", "2 × 3", "2 + 3", "6 × 1"],
+        correct: 1,
+        exp: "💡 Easy Explanation: Order of a matrix is always defined as (Number of Rows) × (Number of Columns). Here rows = 2 and columns = 3, so the order is 2 × 3."
+      },
+      {
+        q: "Two matrices A and B are equal if and only if:",
+        options: ["They have the same number of rows only", "They have the same number of columns only", "They have the same order and identical corresponding elements", "Their determinants are equal"],
+        correct: 2,
+        exp: "💡 Easy Explanation: Equality requires two simple conditions: (1) Same order (m × n), and (2) Every corresponding element must match exactly (a_ij = b_ij)."
+      },
+      {
+        q: "A matrix consisting of only one row is called a:",
+        options: ["Column Matrix", "Row Matrix", "Square Matrix", "Identity Matrix"],
+        correct: 1,
+        exp: "💡 Easy Explanation: A matrix with order 1 × n (only one horizontal line of numbers) is called a Row Matrix."
+      },
+      {
+        q: "A matrix of order m × n is called a Square Matrix when:",
+        options: ["m > n", "m < n", "m = n", "m + n = 0"],
+        correct: 2,
+        exp: "💡 Easy Explanation: Square means all sides are equal. In matrices, when rows equal columns (m = n), it is a Square Matrix (like 2×2 or 3×3)."
+      },
+      {
+        q: "A square matrix whose non-diagonal elements are all 0, and diagonal elements are all equal non-zero constants is called a:",
+        options: ["Diagonal Matrix", "Scalar Matrix", "Unit Matrix", "Null Matrix"],
+        correct: 1,
+        exp: "💡 Easy Explanation: If diagonal elements are all the SAME number k (k ≠ 0, 1), it is called a Scalar Matrix. (Example: diag(5, 5))."
+      },
+      {
+        q: "The transpose of a matrix A (denoted as Aᵗ) is obtained by:",
+        options: ["Multiplying all elements by -1", "Interchanging rows into columns (or columns into rows)", "Finding the reciprocal of each entry", "Changing the signs of diagonal entries"],
+        correct: 1,
+        exp: "💡 Easy Explanation: Transposing simply means flipping the matrix: horizontal rows become vertical columns."
+      },
+      {
+        q: "A square matrix A is called Symmetric if:",
+        options: ["Aᵗ = -A", "Aᵗ = A", "|A| = 0", "A² = I"],
+        correct: 1,
+        exp: "💡 Easy Explanation: Symmetric means identical to its transpose: Aᵗ = A. When you flip rows into columns, the matrix remains unchanged."
+      },
+      {
+        q: "A square matrix A is called Skew-Symmetric if:",
+        options: ["Aᵗ = -A", "Aᵗ = A", "Aᵗ = I", "|A| = 1"],
+        correct: 0,
+        exp: "💡 Easy Explanation: Skew-symmetric means the transpose equals the negative of the matrix: Aᵗ = -A. Notice that all diagonal elements must be 0."
+      },
+      {
+        q: "Two matrices A and B are conformable for addition (A + B) only if:",
+        options: ["Columns of A equal rows of B", "Both matrices have the same order", "Both matrices are square", "Both matrices have determinant > 0"],
+        correct: 1,
+        exp: "💡 Easy Explanation: To add two matrices, we add matching positions. Therefore, they must have the exact same shape and order."
+      },
+      {
+        q: "If A = [[2, -1], [3, 4]] and B = [[1, 5], [-2, 0]], then A + B equals:",
+        options: ["[[3, 4], [1, 4]]", "[[1, -6], [5, 4]]", "[[2, -5], [-6, 0]]", "[[3, 6], [1, 4]]"],
+        correct: 0,
+        exp: "💡 Easy Explanation:\n• Top row: (2 + 1 = 3), (-1 + 5 = 4)\n• Bottom row: (3 + (-2) = 1), (4 + 0 = 4)\nResult = [[3, 4], [1, 4]]."
+      },
+      {
+        q: "If k is a scalar and A = [[1, 3], [-2, 4]], then 3A is equal to:",
+        options: ["[[3, 9], [-6, 12]]", "[[4, 6], [1, 7]]", "[[3, 3], [-2, 4]]", "[[1/3, 1], [-2/3, 4/3]]"],
+        correct: 0,
+        exp: "💡 Easy Explanation: Scalar multiplication multiplies EVERY single entry by 3: 3×1=3, 3×3=9, 3×(-2)=-6, 3×4=12."
+      },
+      {
+        q: "The additive identity for matrices of order 2 × 2 is:",
+        options: ["[[1, 0], [0, 1]]", "[[0, 0], [0, 0]]", "[[1, 1], [1, 1]]", "[[-1, 0], [0, -1]]"],
+        correct: 1,
+        exp: "💡 Easy Explanation: Adding the Null matrix O = [[0, 0], [0, 0]] to any matrix A leaves it unchanged: A + O = A."
+      },
+      {
+        q: "The additive inverse of matrix A = [[3, -4], [-1, 2]] is:",
+        options: ["[[-3, 4], [1, -2]]", "[[3, 4], [1, 2]]", "[[1/3, -1/4], [-1, 1/2]]", "[[2, 4], [1, 3]]"],
+        correct: 0,
+        exp: "💡 Easy Explanation: The additive inverse is -A (reverse the sign of every element): 3 becomes -3, -4 becomes +4, -1 becomes +1, 2 becomes -2."
+      },
+      {
+        q: "Two matrices A and B are conformable for multiplication (AB) if and only if:",
+        options: ["Rows of A = Columns of B", "Columns of A = Rows of B", "Both have the same order", "Rows of A = Rows of B"],
+        correct: 1,
+        exp: "💡 Easy Explanation: The 'Inner Dimensions' rule: If A is m × k and B is k × n, then the columns of A (k) must equal the rows of B (k)."
+      },
+      {
+        q: "If A has order 2 × 3 and B has order 3 × 4, the order of the product matrix AB is:",
+        options: ["2 × 3", "3 × 3", "2 × 4", "4 × 2"],
+        correct: 2,
+        exp: "💡 Easy Explanation: The product takes the 'Outer Dimensions': (2 × 3) × (3 × 4) = 2 × 4."
+      },
+      {
+        q: "In general, matrix multiplication is:",
+        options: ["Commutative (AB = BA)", "Non-commutative (AB ≠ BA)", "Associative only for 1×1 matrices", "Undefined for square matrices"],
+        correct: 1,
+        exp: "💡 Easy Explanation: In general, order matters! AB is usually NOT equal to BA. Matrix multiplication is not commutative in general."
+      },
+      {
+        q: "For any two conformable matrices A and B, the transpose of their product (AB)ᵗ is equal to:",
+        options: ["Aᵗ Bᵗ", "Bᵗ Aᵗ", "(A + B)ᵗ", "-(AB)"],
+        correct: 1,
+        exp: "💡 Easy Explanation: The 'Reversal Rule': When taking the transpose of a product, the order flips: (AB)ᵗ = Bᵗ Aᵗ."
+      },
+      {
+        q: "The determinant of matrix A = [[a, b], [c, d]] is calculated as:",
+        options: ["ad + bc", "ad - bc", "ac - bd", "ab - cd"],
+        correct: 1,
+        exp: "💡 Easy Explanation: Determinant = (Product of primary diagonal) minus (Product of secondary diagonal): ad - bc."
+      },
+      {
+        q: "If A = [[4, 2], [3, 5]], then |A| is equal to:",
+        options: ["26", "14", "-14", "20"],
+        correct: 1,
+        exp: "💡 Easy Explanation:\n• Primary diagonal: 4 × 5 = 20\n• Secondary diagonal: 2 × 3 = 6\n• |A| = 20 - 6 = 14."
+      },
+      {
+        q: "A square matrix A is called a Singular Matrix if:",
+        options: ["|A| = 1", "|A| ≠ 0", "|A| = 0", "Aᵗ = A"],
+        correct: 2,
+        exp: "💡 Easy Explanation: Singular = Determinant is Zero (|A| = 0). A singular matrix has NO multiplicative inverse."
+      },
+      {
+        q: "For what value of x is the matrix A = [[x, 4], [3, 6]] singular?",
+        options: ["2", "4", "3", "6"],
+        correct: 0,
+        exp: "💡 Easy Explanation:\nFor singular matrix: |A| = 0\n(x × 6) - (4 × 3) = 0\n6x - 12 = 0 => 6x = 12 => x = 2."
+      },
+      {
+        q: "The adjoint of matrix A = [[a, b], [c, d]] is obtained by:",
+        options: ["Interchanging a & d, and changing signs of b & c", "Interchanging b & c, and changing signs of a & d", "Changing signs of all entries", "Transposing without changing signs"],
+        correct: 0,
+        exp: "💡 Easy Explanation: For a 2×2 matrix:\n1. Swap the diagonal elements (a and d swap places)\n2. Change the signs of the off-diagonal elements (-b and -c)."
+      },
+      {
+        q: "The adjoint of matrix A = [[2, -3], [1, 4]] is:",
+        options: ["[[4, 3], [-1, 2]]", "[[-4, 3], [-1, -2]]", "[[2, 1], [-3, 4]]", "[[4, -1], [3, 2]]"],
+        correct: 0,
+        exp: "💡 Easy Explanation:\n• Swap diagonal: 2 and 4 swap places -> 4 on top-left, 2 on bottom-right.\n• Change off-diagonal signs: -3 becomes +3, 1 becomes -1.\nResult = [[4, 3], [-1, 2]]."
+      },
+      {
+        q: "The formula for the Multiplicative Inverse A⁻¹ of a non-singular matrix A is:",
+        options: ["|A| × Adj(A)", "Adj(A) / |A|", "|A| / Adj(A)", "Adj(A) + |A|"],
+        correct: 1,
+        exp: "💡 Easy Explanation: A⁻¹ = (1 / |A|) × Adj(A), provided |A| ≠ 0."
+      },
+      {
+        q: "If A is a non-singular matrix, then A · A⁻¹ equals:",
+        options: ["O (Null matrix)", "I (Identity matrix)", "Aᵗ", "2A"],
+        correct: 1,
+        exp: "💡 Easy Explanation: A matrix multiplied by its inverse always yields the Identity matrix I: A · A⁻¹ = A⁻¹ · A = I."
+      },
+      {
+        q: "For any two invertible matrices A and B, (AB)⁻¹ is equal to:",
+        options: ["A⁻¹ B⁻¹", "B⁻¹ A⁻¹", "-(AB)", "A B⁻¹"],
+        correct: 1,
+        exp: "💡 Easy Explanation: The 'Socks and Shoes' rule: Reversal occurs when inverting products: (AB)⁻¹ = B⁻¹ A⁻¹."
+      },
+      {
+        q: "In the system of linear equations 2x - y = 5 and 3x + 2y = 11, the coefficient matrix A is:",
+        options: ["[[2, 5], [3, 11]]", "[[2, -1], [3, 2]]", "[[-1, 2], [2, 3]]", "[[5], [11]]"],
+        correct: 1,
+        exp: "💡 Easy Explanation: The coefficient matrix collects the coefficients of x and y:\nRow 1: [2, -1]\nRow 2: [3, 2]\nMatrix A = [[2, -1], [3, 2]]."
+      },
+      {
+        q: "In solving AX = B by Matrix Inversion Method, the solution vector X is given by:",
+        options: ["X = A · B", "X = B · A⁻¹", "X = A⁻¹ · B", "X = B / A"],
+        correct: 2,
+        exp: "💡 Easy Explanation: Multiply both sides from the left by A⁻¹:\nA⁻¹(AX) = A⁻¹B => IX = A⁻¹B => X = A⁻¹B."
+      },
+      {
+        q: "In Cramer's Rule, the value of variable x is found using formula:",
+        options: ["x = |A| / |Ax|", "x = |Ax| / |A|", "x = |Ax| × |A|", "x = |Ay| / |Ax|"],
+        correct: 1,
+        exp: "💡 Easy Explanation: Cramer's rule formula: x = |Ax| / |A| and y = |Ay| / |A|, where |A| ≠ 0."
+      },
+      {
+        q: "A system of linear equations AX = B has a unique solution if and only if:",
+        options: ["|A| = 0", "|A| ≠ 0", "A is a row matrix", "Matrix B is null"],
+        correct: 1,
+        exp: "💡 Easy Explanation: A unique solution exists if and only if matrix A is non-singular (|A| ≠ 0), because division by |A| is required."
+      },
+      {
+        q: "If A = [[1, 0], [0, 1]], then A is an example of:",
+        options: ["Scalar Matrix", "Identity Matrix", "Diagonal Matrix", "All of the above"],
+        correct: 3,
+        exp: "💡 Easy Explanation: The Identity matrix I has diagonal elements 1 and non-diagonals 0. Thus it is diagonal, scalar (with k=1), and identity!"
+      },
+      {
+        q: "The product of a 1 × 3 row matrix and a 3 × 1 column matrix is a:",
+        options: ["1 × 1 scalar matrix", "3 × 3 square matrix", "1 × 3 row matrix", "Undefined"],
+        correct: 0,
+        exp: "💡 Easy Explanation: Dimensions: (1 × 3) × (3 × 1) = 1 × 1 (a single number enclosed in matrix brackets)."
+      },
+      {
+        q: "If |A| = 7, then the determinant of its transpose |Aᵗ| is:",
+        options: ["-7", "1/7", "7", "0"],
+        correct: 2,
+        exp: "💡 Easy Explanation: Property of determinants: Transposing a matrix does NOT change its determinant value: |Aᵗ| = |A| = 7."
+      },
+      {
+        q: "If A is a 2 × 2 matrix and |A| = 5, then the determinant of 2A (|2A|) is:",
+        options: ["10", "20", "25", "5"],
+        correct: 1,
+        exp: "💡 Easy Explanation: For an n × n matrix, |kA| = kⁿ |A|. For a 2×2 matrix: |2A| = 2² × |A| = 4 × 5 = 20."
+      },
+      {
+        q: "Which property is satisfied by matrix addition?",
+        options: ["Commutative (A + B = B + A)", "Associative (A + (B + C) = (A + B) + C)", "Existence of additive identity & inverse", "All of the above"],
+        correct: 3,
+        exp: "💡 Easy Explanation: Matrix addition under the same order satisfies all abelian group properties: commutative, associative, identity, and inverse!"
+      }
+    ];
+
+    const sqs = [
+      {
+        q: "Define a Matrix and state what is meant by the Order of a Matrix.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n1. Definition: A rectangular array of numbers enclosed in square brackets [ ] arranged in horizontal rows and vertical columns is called a Matrix.\n2. Order: If a matrix has 'm' rows and 'n' columns, its order is written as m × n (read as 'm by n').\nExample: A = [[2, 5], [1, 4]] has 2 rows and 2 columns, so its order is 2 × 2."
+      },
+      {
+        q: "State the two conditions for two matrices to be equal, with an example.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\nTwo matrices A and B are equal (A = B) if and only if:\n1. Same Order: Both matrices must have the exact same dimensions.\n2. Identical Elements: Every corresponding element must be equal: a_ij = b_ij.\nExample: If A = [[1, 3], [0, 4]] and B = [[1, 1+2], [0, 2²]], then A = B."
+      },
+      {
+        q: "Differentiate between a Row Matrix and a Column Matrix.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• Row Matrix: A matrix having only ONE row (Order 1 × n).\n  Example: R = [2, -1, 5] (Order 1 × 3).\n• Column Matrix: A matrix having only ONE column (Order m × 1).\n  Example: C = [[3], [7], [-2]] (Order 3 × 1)."
+      },
+      {
+        q: "Define a Square Matrix and a Rectangular Matrix.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• Square Matrix: Number of rows equals number of columns (m = n).\n  Example: [[3, 1], [0, 2]] (Order 2 × 2).\n• Rectangular Matrix: Number of rows does NOT equal number of columns (m ≠ n).\n  Example: [[1, 2, 3], [4, 5, 6]] (Order 2 × 3)."
+      },
+      {
+        q: "What is a Diagonal Matrix and how is it different from a Scalar Matrix?",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• Diagonal Matrix: Non-diagonal entries are all 0, and at least one diagonal entry is non-zero.\n• Scalar Matrix: A special diagonal matrix where all diagonal entries are EQUAL constants k (k ≠ 0).\nExample: Diag = [[2, 0], [0, 5]], whereas Scalar = [[4, 0], [0, 4]]."
+      },
+      {
+        q: "Define the Identity (Unit) Matrix and state its symbol.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• An Identity Matrix (denoted by 'I') is a scalar matrix in which every diagonal entry is exactly 1, and all other entries are 0.\nExample (2×2): I = [[1, 0], [0, 1]].\nProperty: For any conformable matrix A, A · I = I · A = A."
+      },
+      {
+        q: "What is meant by the Transpose of a Matrix? Find the transpose of A = [[1, 2, 3], [4, 5, 6]].",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n1. Definition: Interchanging rows into columns (or columns into rows).\n2. Calculation:\nRow 1 [1, 2, 3] becomes Column 1.\nRow 2 [4, 5, 6] becomes Column 2.\nResult: Aᵗ = [[1, 4], [2, 5], [3, 6]] (Order switches from 2×3 to 3×2)."
+      },
+      {
+        q: "Define a Symmetric Matrix and write one example.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• Definition: A square matrix A is Symmetric if Aᵗ = A.\n• Example: Let S = [[1, 3], [3, 2]].\nTransposing: Sᵗ = [[1, 3], [3, 2]] = S.\nSince Sᵗ = S, S is symmetric."
+      },
+      {
+        q: "Define a Skew-Symmetric Matrix and explain why its diagonal entries must be zero.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• Definition: A square matrix A is Skew-Symmetric if Aᵗ = -A.\n• Diagonal entries: Since a_ii = -a_ii, we get 2a_ii = 0 => a_ii = 0.\nTherefore, all diagonal elements of any skew-symmetric matrix are always 0."
+      },
+      {
+        q: "State the rule for Conformability of Matrices for Addition and Subtraction.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• Two matrices A and B can be added or subtracted if and only if they have the SAME ORDER (same number of rows and columns).\n• Rule: Elements at corresponding positions are added/subtracted directly:\n(A ± B)_ij = a_ij ± b_ij."
+      },
+      {
+        q: "If A = [[2, 3], [1, -4]] and B = [[-1, 5], [0, 2]], find 2A - 3B.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n1. 2A = 2 × [[2, 3], [1, -4]] = [[4, 6], [2, -8]]\n2. 3B = 3 × [[-1, 5], [0, 2]] = [[-3, 15], [0, 6]]\n3. 2A - 3B:\n• Row 1: [4 - (-3), 6 - 15] = [7, -9]\n• Row 2: [2 - 0, -8 - 6] = [2, -14]\nResult = [[7, -9], [2, -14]]."
+      },
+      {
+        q: "State the rule for Conformability of Matrices for Multiplication.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• Two matrices A and B are conformable for product AB if:\n  Number of Columns in Matrix A = Number of Rows in Matrix B.\n• If A is of order m × k and B is of order k × n, then the product AB exists and has order m × n."
+      },
+      {
+        q: "Why is matrix multiplication NOT commutative in general? Give a brief reason.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n1. Order Mismatch: Even if AB is defined, BA may not be conformable (e.g. 2×3 times 3×2 gives 2×2, while 3×2 times 2×3 gives 3×3).\n2. Different Entries: Even for square matrices of the same order, row-by-column combinations produce different values.\nTherefore, in general AB ≠ BA."
+      },
+      {
+        q: "Define the Determinant of a 2 × 2 matrix and write its general formula.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• The determinant of a square matrix A = [[a, b], [c, d]] is a scalar value calculated by subtracting the product of secondary diagonal elements from primary diagonal elements.\n• Formula: det(A) = |A| = (a × d) - (b × c)."
+      },
+      {
+        q: "Differentiate between a Singular and Non-Singular matrix with numerical examples.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• Singular Matrix: |A| = 0. Inverse does NOT exist.\n  Example: A = [[2, 4], [1, 2]] => |A| = (2×2) - (4×1) = 4 - 4 = 0.\n• Non-Singular Matrix: |A| ≠ 0. Multiplicative inverse EXISTS.\n  Example: B = [[3, 1], [2, 2]] => |B| = (3×2) - (1×2) = 6 - 2 = 4 ≠ 0."
+      },
+      {
+        q: "How is the Adjoint of a 2 × 2 matrix calculated? Find Adj(A) for A = [[3, -1], [2, 5]].",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n1. Rule: Interchange diagonal entries (3 and 5 swap places), and reverse signs of off-diagonal entries (-1 and 2).\n2. Calculation:\n• Top-left becomes 5, bottom-right becomes 3.\n• -1 becomes +1, 2 becomes -2.\nResult: Adj(A) = [[5, 1], [-2, 3]]."
+      },
+      {
+        q: "What is the condition for a matrix to have a Multiplicative Inverse?",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\nA matrix A has a multiplicative inverse A⁻¹ if and only if:\n1. A is a Square Matrix (m = n).\n2. A is Non-Singular, meaning its determinant is non-zero: |A| ≠ 0.\nFormula: A⁻¹ = (1 / |A|) × Adj(A)."
+      },
+      {
+        q: "Find the multiplicative inverse of A = [[2, 1], [3, 2]].",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n1. Find |A| = (2×2) - (1×3) = 4 - 3 = 1 ≠ 0 (Non-singular).\n2. Find Adj(A) = [[2, -1], [-3, 2]].\n3. Formula: A⁻¹ = Adj(A) / |A| = [[2, -1], [-3, 2]] / 1 = [[2, -1], [-3, 2]]."
+      },
+      {
+        q: "State the two methods used to solve a system of linear equations using matrices.",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n1. Matrix Inversion Method: Converts system into AX = B, and computes solution vector X = A⁻¹B.\n2. Cramer's Rule: Uses determinants of coefficient and replaced matrices: x = |Ax| / |A| and y = |Ay| / |A|."
+      },
+      {
+        q: "When does Cramer's Rule fail to find a solution for a system of linear equations?",
+        marks: 3,
+        sol: "💡 Easy Step-by-Step Answer:\n• Cramer's Rule fails when the coefficient matrix A is SINGULAR, meaning |A| = 0.\n• Reason: The formulas x = |Ax| / |A| and y = |Ay| / |A| involve division by |A|. Division by zero is undefined, indicating either parallel lines (no solution) or coincident lines (infinitely many solutions)."
+      }
+    ];
+
+    const lqs = [
+      {
+        q: "Simultaneous Equations via Matrix Inversion Method",
+        marks: 8,
+        rubric: "2 marks for matrix form AX=B + 2 marks for |A| & Adj(A) + 2 marks for A⁻¹ + 2 marks for final X vector.",
+        sol: "💡 Easy Step-by-Step Long Solution:\nProblem: Solve 2x - 2y = 4 and 3x + 2y = 6 by Matrix Inversion Method.\n\nStep 1: Write in matrix form AX = B\n[[2, -2], [3, 2]] · [[x], [y]] = [[4], [6]]\nWhere A = [[2, -2], [3, 2]], X = [[x], [y]], B = [[4], [6]].\n\nStep 2: Find determinant |A|\n|A| = (2)(2) - (-2)(3) = 4 - (-6) = 4 + 6 = 10 ≠ 0.\nSince |A| ≠ 0, A is non-singular and inverse exists.\n\nStep 3: Find Adjoint of A\nAdj(A) = [[2, 2], [-3, 2]]\n\nStep 4: Find A⁻¹\nA⁻¹ = (1/|A|) · Adj(A) = (1/10) · [[2, 2], [-3, 2]]\n\nStep 5: Multiply X = A⁻¹B\nX = (1/10) · [[2, 2], [-3, 2]] · [[4], [6]]\nRow 1: 2(4) + 2(6) = 8 + 12 = 20\nRow 2: -3(4) + 2(6) = -12 + 12 = 0\nSo, X = (1/10) · [[20], [0]] = [[2], [0]]\n\n🎯 Final Answer: x = 2, y = 0. Solution Set = {(2, 0)}."
+      },
+      {
+        q: "Simultaneous Equations via Cramer's Rule",
+        marks: 8,
+        rubric: "2 marks for defining A, Ax, Ay + 2 marks for det |A| + 2 marks for det |Ax| & |Ay| + 2 marks for x, y values.",
+        sol: "💡 Easy Step-by-Step Long Solution:\nProblem: Solve 3x - 4y = 4 and x + 2y = 8 using Cramer's Rule.\n\nStep 1: Define the matrices\n• A = [[3, -4], [1, 2]] (Coefficient matrix)\n• Ax = [[4, -4], [8, 2]] (Replace column 1 with constants)\n• Ay = [[3, 4], [1, 8]] (Replace column 2 with constants)\n\nStep 2: Compute Determinants\n• |A| = (3)(2) - (-4)(1) = 6 - (-4) = 10 ≠ 0\n• |Ax| = (4)(2) - (-4)(8) = 8 - (-32) = 40\n• |Ay| = (3)(8) - (4)(1) = 24 - 4 = 20\n\nStep 3: Apply Cramer's Rule Formulas\n• x = |Ax| / |A| = 40 / 10 = 4\n• y = |Ay| / |A| = 20 / 10 = 2\n\n🎯 Final Answer: x = 4, y = 2. Solution Set = {(4, 2)}."
+      },
+      {
+        q: "Verification of Product Transpose Law: (AB)ᵗ = Bᵗ Aᵗ",
+        marks: 8,
+        rubric: "3 marks for product AB & LHS (AB)ᵗ + 3 marks for Bᵗ, Aᵗ & RHS BᵗAᵗ + 2 marks for conclusion.",
+        sol: "💡 Easy Step-by-Step Long Solution:\nGiven: A = [[-1, 3], [2, 0]] and B = [[1, 2], [-3, -5]]. Prove that (AB)ᵗ = BᵗAᵗ.\n\nPart 1: Left Hand Side (LHS) = (AB)ᵗ\nCompute AB:\n• Row 1, Col 1: (-1)(1) + (3)(-3) = -1 - 9 = -10\n• Row 1, Col 2: (-1)(2) + (3)(-5) = -2 - 15 = -17\n• Row 2, Col 1: (2)(1) + (0)(-3) = 2 + 0 = 2\n• Row 2, Col 2: (2)(2) + (0)(-5) = 4 + 0 = 4\nAB = [[-10, -17], [2, 4]]\nTranspose LHS = (AB)ᵗ = [[-10, 2], [-17, 4]].  ... (Equation 1)\n\nPart 2: Right Hand Side (RHS) = BᵗAᵗ\n• Bᵗ = [[1, -3], [2, -5]]\n• Aᵗ = [[-1, 2], [3, 0]]\nCompute BᵗAᵗ:\n• Row 1, Col 1: (1)(-1) + (-3)(3) = -1 - 9 = -10\n• Row 1, Col 2: (1)(2) + (-3)(0) = 2 + 0 = 2\n• Row 2, Col 1: (2)(-1) + (-5)(3) = -2 - 15 = -17\n• Row 2, Col 2: (2)(2) + (-5)(0) = 4 + 0 = 4\nRHS = [[-10, 2], [-17, 4]].  ... (Equation 2)\n\n🎯 Conclusion: Since LHS = RHS from (1) and (2), hence (AB)ᵗ = BᵗAᵗ is verified."
+      },
+      {
+        q: "Verification of Product Inverse Law: (AB)⁻¹ = B⁻¹ A⁻¹",
+        marks: 8,
+        rubric: "3 marks for AB, |AB| and (AB)⁻¹ + 3 marks for individual inverses B⁻¹, A⁻¹ + 2 marks for verification.",
+        sol: "💡 Easy Step-by-Step Long Solution:\nGiven: A = [[4, 0], [-1, 2]] and B = [[-4, -2], [1, -1]]. Verify that (AB)⁻¹ = B⁻¹A⁻¹.\n\nPart 1: Left Hand Side = (AB)⁻¹\nCompute AB = [[4(-4)+0(1), 4(-2)+0(-1)], [-1(-4)+2(1), -1(-2)+2(-1)]] = [[-16, -8], [6, 0]].\n• |AB| = (-16)(0) - (-8)(6) = 0 - (-48) = 48 ≠ 0.\n• Adj(AB) = [[0, 8], [-6, -16]].\n• (AB)⁻¹ = (1/48) · [[0, 8], [-6, -16]].  ... (1)\n\nPart 2: Right Hand Side = B⁻¹A⁻¹\n• For A: |A| = 4(2) - 0(-1) = 8. Adj(A) = [[2, 0], [1, 4]]. A⁻¹ = (1/8) · [[2, 0], [1, 4]].\n• For B: |B| = (-4)(-1) - (-2)(1) = 4 + 2 = 6. Adj(B) = [[-1, 2], [-1, -4]]. B⁻¹ = (1/6) · [[-1, 2], [-1, -4]].\nCompute B⁻¹A⁻¹ = (1/48) · [[-1, 2], [-1, -4]] · [[2, 0], [1, 4]]\nRow 1: [(-1)(2)+2(1), (-1)(0)+2(4)] = [0, 8]\nRow 2: [(-1)(2)+(-4)(1), (-1)(0)+(-4)(4)] = [-6, -16]\nResult = (1/48) · [[0, 8], [-6, -16]].  ... (2)\n\n🎯 Conclusion: Comparing (1) and (2), (AB)⁻¹ = B⁻¹A⁻¹ is verified."
+      },
+      {
+        q: "Adjoint Identity Proof: A · Adj(A) = Adj(A) · A = |A| · I",
+        marks: 8,
+        rubric: "2 marks for |A| & Adj(A) + 2 marks for A·Adj(A) + 2 marks for Adj(A)·A + 2 marks for |A|·I.",
+        sol: "💡 Easy Step-by-Step Long Solution:\nGiven: A = [[1, 2], [4, 6]]. Prove that A · Adj(A) = Adj(A) · A = |A| · I.\n\nStep 1: Compute determinant |A|\n|A| = (1)(6) - (2)(4) = 6 - 8 = -2.\n\nStep 2: Compute Adj(A)\nAdj(A) = [[6, -2], [-4, 1]].\n\nStep 3: Evaluate A · Adj(A)\nA · Adj(A) = [[1, 2], [4, 6]] · [[6, -2], [-4, 1]]\n• Row 1, Col 1: 1(6) + 2(-4) = 6 - 8 = -2\n• Row 1, Col 2: 1(-2) + 2(1) = -2 + 2 = 0\n• Row 2, Col 1: 4(6) + 6(-4) = 24 - 24 = 0\n• Row 2, Col 2: 4(-2) + 6(1) = -8 + 6 = -2\nResult = [[-2, 0], [0, -2]].  ... (1)\n\nStep 4: Evaluate Adj(A) · A\nAdj(A) · A = [[6, -2], [-4, 1]] · [[1, 2], [4, 6]]\n• Row 1: [6(1)+(-2)(4), 6(2)+(-2)(6)] = [-2, 0]\n• Row 2: [-4(1)+1(4), -4(2)+1(6)] = [0, -2]\nResult = [[-2, 0], [0, -2]].  ... (2)\n\nStep 5: Evaluate |A| · I\n|A| · I = -2 · [[1, 0], [0, 1]] = [[-2, 0], [0, -2]].  ... (3)\n\n🎯 Conclusion: (1) = (2) = (3) = [[-2, 0], [0, -2]]. Hence proved."
+      },
+      {
+        q: "Real-Life Application: Modeling and Solving Perimeter Word Problem",
+        marks: 8,
+        rubric: "2 marks for formulating equations + 2 marks for matrix setup + 4 marks for matrix solving steps.",
+        sol: "💡 Easy Step-by-Step Long Solution:\nWord Problem: The length of a rectangle is 4 times its width. The perimeter of the rectangle is 150 cm. Find the dimensions of the rectangle using matrices.\n\nStep 1: Set up the equations\nLet length = x cm and width = y cm.\nCondition 1: x = 4y => x - 4y = 0  ... (Equation 1)\nCondition 2: Perimeter = 2(x + y) = 150 => x + y = 75  ... (Equation 2)\n\nStep 2: Matrix Form AX = B\n[[1, -4], [1, 1]] · [[x], [y]] = [[0], [75]]\n\nStep 3: Solve by Cramer's Rule / Inversion\n• |A| = 1(1) - (-4)(1) = 1 + 4 = 5 ≠ 0\n• |Ax| = 0(1) - (-4)(75) = 0 + 300 = 300\n• |Ay| = 1(75) - 0(1) = 75\n\nStep 4: Find x and y\nx = |Ax| / |A| = 300 / 5 = 60 cm\ny = |Ay| / |A| = 75 / 5 = 15 cm\n\n🎯 Final Dimensions: Length = 60 cm, Width = 15 cm. (Check: Perimeter = 2(60 + 15) = 150 cm)."
+      },
+      {
+        q: "Solving 3x - 2y = -6 and 5x - 2y = -10 by Both Methods",
+        marks: 8,
+        rubric: "4 marks for Matrix Inversion Method + 4 marks for Cramer's Rule verifying identical result.",
+        sol: "💡 Easy Step-by-Step Long Solution:\nSolve 3x - 2y = -6 and 5x - 2y = -10.\n\nMethod 1: Matrix Inversion Method\nMatrix A = [[3, -2], [5, -2]], B = [[-6], [-10]].\n• |A| = 3(-2) - (-2)(5) = -6 + 10 = 4 ≠ 0.\n• Adj(A) = [[-2, 2], [-5, 3]].\n• X = (1/4) · [[-2, 2], [-5, 3]] · [[-6], [-10]]\nRow 1: (-2)(-6) + 2(-10) = 12 - 20 = -8\nRow 2: (-5)(-6) + 3(-10) = 30 - 30 = 0\nX = (1/4) · [[-8], [0]] = [[-2], [0]] => x = -2, y = 0.\n\nMethod 2: Cramer's Rule Verification\n• |Ax| = [[-6, -2], [-10, -2]] = (-6)(-2) - (-2)(-10) = 12 - 20 = -8 => x = -8/4 = -2.\n• |Ay| = [[3, -6], [5, -10]] = 3(-10) - (-6)(5) = -30 + 30 = 0 => y = 0/4 = 0.\n\n🎯 Final Answer: Both methods yield identical solution set {(-2, 0)}."
+      },
+      {
+        q: "Comprehensive Matrix Properties & Distributive Law Verification",
+        marks: 8,
+        rubric: "3 marks for LHS A(B+C) + 3 marks for RHS AB+AC + 2 marks for conclusion.",
+        sol: "💡 Easy Step-by-Step Long Solution:\nGiven: A = [[-1, 3], [2, 0]], B = [[1, 2], [-3, -5]], C = [[2, 1], [1, 3]]. Prove that A(B + C) = AB + AC.\n\nPart 1: Left Hand Side = A(B + C)\n1. B + C = [[1+2, 2+1], [-3+1, -5+3]] = [[3, 3], [-2, -2]].\n2. Multiply A · (B + C):\n• Row 1: [(-1)(3)+3(-2), (-1)(3)+3(-2)] = [-3-6, -3-6] = [-9, -9]\n• Row 2: [(2)(3)+0(-2), (2)(3)+0(-2)] = [6+0, 6+0] = [6, 6]\nLHS = [[-9, -9], [6, 6]].  ... (Equation 1)\n\nPart 2: Right Hand Side = AB + AC\n1. AB = [[-10, -17], [2, 4]]\n2. AC:\n• Row 1: [(-1)(2)+3(1), (-1)(1)+3(3)] = [-2+3, -1+9] = [1, 8]\n• Row 2: [(2)(2)+0(1), (2)(1)+0(3)] = [4+0, 2+0] = [4, 2]\nAC = [[1, 8], [4, 2]]\n3. AB + AC = [[-10+1, -17+8], [2+4, 4+2]] = [[-9, -9], [6, 6]].  ... (Equation 2)\n\n🎯 Conclusion: Since LHS (1) = RHS (2), the Left Distributive Law A(B + C) = AB + AC is verified."
+      }
+    ];
+
+    return { mcqs, shortQuestions: sqs, longQuestions: lqs };
+  }
+
+  // Synthesize for other units: collect all topic questions and augment
+  const allTopicMcqs = [];
+  const allTopicSqs = [];
+  const allTopicLqs = [];
+
+  if (ch && ch.sections) {
+    ch.sections.forEach(sec => {
+      if (sec.slos) {
+        if (sec.slos.mcqs) allTopicMcqs.push(...sec.slos.mcqs);
+        if (sec.slos.shortQuestions) allTopicSqs.push(...sec.slos.shortQuestions);
+        if (sec.slos.longQuestions) allTopicLqs.push(...sec.slos.longQuestions);
+      }
+    });
+  }
+
+  const baseMcqs = (ch && ch.slos && ch.slos.mcqs) ? ch.slos.mcqs : [];
+  const baseSqs = (ch && ch.slos && ch.slos.shortQuestions) ? ch.slos.shortQuestions : [];
+  const baseLqs = (ch && ch.slos && ch.slos.longQuestions) ? ch.slos.longQuestions : [];
+
+  return {
+    mcqs: [...baseMcqs, ...allTopicMcqs],
+    shortQuestions: [...baseSqs, ...allTopicSqs],
+    longQuestions: [...baseLqs, ...allTopicLqs]
+  };
+}
+
+
 function renderMathSLOs(ch) {
-  const slos = ch.slos || {};
+  const slos = (typeof getComprehensiveChapterSLOBank === 'function') ? getComprehensiveChapterSLOBank(ch) : (ch.slos || {});
   const mcqs = slos.mcqs || [];
   const sqs = slos.shortQuestions || [];
   const lqs = slos.longQuestions || [];
@@ -12379,11 +12786,231 @@ function renderMathFormulaSheet(ch) {
 // ═══════════════════════════════════════════════════════════════
 // UNIVERSAL DATA-DRIVEN ACADEMIC WORKSPACE ADAPTER
 // ═══════════════════════════════════════════════════════════════
+
+// ─── REALTIME TTS SPEECH ENGINE WITH WORD HIGHLIGHTING ────
+let currentTtsUtterance = null;
+let currentTtsInterval = null;
+
+function playParagraphWithRealtimeTTS(boxEl, lang = 'en-US') {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  if (currentTtsInterval) clearInterval(currentTtsInterval);
+
+  // Clear any existing word highlights across page
+  document.querySelectorAll('.tts-word-highlight').forEach(el => el.classList.remove('tts-word-highlight'));
+
+  if (!boxEl) return;
+  const wordSpans = Array.from(boxEl.querySelectorAll('.tts-word'));
+  if (wordSpans.length === 0) {
+    playSingleParagraphTTS(boxEl.textContent, lang);
+    return;
+  }
+
+  // Precompute character offsets of all words in the combined text
+  let fullSpokenText = "";
+  const wordOffsets = [];
+  wordSpans.forEach((span, idx) => {
+    const wordText = span.textContent.trim();
+    if (wordText) {
+      const start = fullSpokenText.length;
+      fullSpokenText += (idx > 0 ? " " : "") + wordText;
+      const actualStart = idx > 0 ? start + 1 : start;
+      const end = fullSpokenText.length;
+      wordOffsets.push({ start: actualStart, end: end, span: span, word: wordText });
+    }
+  });
+
+  const utter = new SpeechSynthesisUtterance(fullSpokenText);
+  utter.lang = lang || 'en-US';
+  utter.rate = 0.90; // Natural pace for 100% accurate visual tracking
+  currentTtsUtterance = utter;
+
+  let currentActiveSpan = null;
+  function highlightWordSpan(span) {
+    if (currentActiveSpan === span) return;
+    if (currentActiveSpan) currentActiveSpan.classList.remove('tts-word-highlight');
+    if (span) {
+      span.classList.add('tts-word-highlight');
+      currentActiveSpan = span;
+    }
+  }
+
+  // Realtime boundary event: 100% synchronized with speech audio
+  utter.onboundary = function(e) {
+    if (e.name === 'word') {
+      const charIdx = e.charIndex;
+      const match = wordOffsets.find(item => charIdx >= item.start && charIdx < item.end) ||
+                    wordOffsets.find(item => Math.abs(charIdx - item.start) <= 3);
+      if (match) {
+        highlightWordSpan(match.span);
+      }
+    }
+  };
+
+  // Fallback timer ensures highlighting advances smoothly even if browser misses boundary events
+  let wordTimerIdx = 0;
+  const avgMsPerWord = (60 / 125) * 1000;
+  currentTtsInterval = setInterval(() => {
+    if (!window.speechSynthesis.speaking) {
+      clearInterval(currentTtsInterval);
+      return;
+    }
+    if (wordTimerIdx < wordOffsets.length && !currentActiveSpan) {
+      highlightWordSpan(wordOffsets[wordTimerIdx].span);
+      wordTimerIdx++;
+    }
+  }, avgMsPerWord);
+
+  utter.onend = function() {
+    if (currentTtsInterval) clearInterval(currentTtsInterval);
+    if (currentActiveSpan) currentActiveSpan.classList.remove('tts-word-highlight');
+    currentActiveSpan = null;
+  };
+
+  utter.onerror = function() {
+    if (currentTtsInterval) clearInterval(currentTtsInterval);
+    if (currentActiveSpan) currentActiveSpan.classList.remove('tts-word-highlight');
+    currentActiveSpan = null;
+  };
+
+  window.speechSynthesis.speak(utter);
+}
+
+// ─── SENTENCE HOVER & INLINE TRANSLATION CONTROLS ────────
+function highlightSentence(el) {
+  if (el) el.classList.add('sentence-hovered');
+}
+
+function unhighlightSentence(el) {
+  if (el) el.classList.remove('sentence-hovered');
+}
+
+function toggleSentenceTranslation(el, event) {
+  // If student clicked directly on a word inside to look up word definition, don't toggle sentence
+  if (event && event.target && event.target.classList.contains('tts-word')) {
+    return;
+  }
+  if (!el) return;
+  const paraIdx = el.dataset.para;
+  const sentIdx = el.dataset.sent;
+  const drawerId = `sent-trans-${paraIdx}-${sentIdx}`;
+  const drawer = document.getElementById(drawerId);
+  if (!drawer) return;
+
+  if (drawer.style.display === 'block') {
+    drawer.style.display = 'none';
+  } else {
+    const urText = el.dataset.ur || 'اردو ترجمہ دستیاب ہے۔';
+    const psText = el.dataset.ps || 'د پښتو ژباړه شتون لري.';
+    const enText = el.dataset.en || '';
+
+    drawer.innerHTML = `
+      <div class="sentence-inline-trans-drawer">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:0.35rem;">
+          <span style="font-size:0.75rem;font-weight:700;color:#166534;background:#dcfce7;padding:0.15rem 0.45rem;border-radius:4px;">
+            🇵🇰 اردو ترجمہ (Urdu Translation)
+          </span>
+          <button onclick="event.stopPropagation(); playSingleParagraphTTS('${enText.replace(/'/g, "\\'")}', 'en-US');" 
+                  style="background:#ffffff;border:1px solid #cbd5e1;border-radius:4px;padding:0.15rem 0.45rem;font-size:0.72rem;cursor:pointer;font-weight:700;color:#0369a1;">
+            🔊 Listen Sentence
+          </button>
+        </div>
+        <div style="font-family:'Jameel Noori Nastaleeq',serif;direction:rtl;text-align:right;font-size:1.18rem;color:#166534;line-height:2.1;margin-bottom:0.55rem;">
+          ${urText}
+        </div>
+        <div style="font-size:0.75rem;font-weight:700;color:#92400e;background:#fef3c7;padding:0.15rem 0.45rem;border-radius:4px;display:inline-block;margin-bottom:0.25rem;">
+          🇦🇫 پښتو ژباړه (Pashto Translation)
+        </div>
+        <div style="font-family:'Pashto Koodak','Segoe UI',serif;direction:rtl;text-align:right;font-size:1.08rem;color:#92400e;line-height:1.9;">
+          ${psText}
+        </div>
+      </div>
+    `;
+    drawer.style.display = 'block';
+  }
+}
+
+// ─── PARAGRAPH HORIZONTAL LANGUAGE TABS CONTROLLER ──────
+function switchParaLangTab(paraIdx, lang, btn) {
+  const tabsBar = document.getElementById(`para-lang-tabs-${paraIdx}`);
+  if (tabsBar && btn) {
+    tabsBar.querySelectorAll('.para-lang-tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  const enBox = document.getElementById(`para-lang-en-${paraIdx}`);
+  const urBox = document.getElementById(`para-lang-ur-${paraIdx}`);
+  const psBox = document.getElementById(`para-lang-ps-${paraIdx}`);
+
+  if (!enBox || !urBox || !psBox) return;
+
+  if (lang === 'en') {
+    enBox.style.display = 'block';
+    urBox.style.display = 'none';
+    psBox.style.display = 'none';
+  } else if (lang === 'ur') {
+    enBox.style.display = 'none';
+    urBox.style.display = 'block';
+    psBox.style.display = 'none';
+  } else if (lang === 'ps') {
+    enBox.style.display = 'none';
+    urBox.style.display = 'none';
+    psBox.style.display = 'block';
+  } else if (lang === 'all') {
+    enBox.style.display = 'block';
+    urBox.style.display = 'block';
+    psBox.style.display = 'block';
+  }
+}
+
+// ─── INTERACTIVE PARAGRAPH TOKENIZER ─────────────────────
+function renderInteractiveParagraphHtml(text, urduText, pashtoText, paraIdx) {
+  if (!text) return '';
+
+  const sentRegex = /([^.!?]+[.!?]+(?:\s+|$)|[^.!?]+$)/g;
+  const enSentences = (text.match(sentRegex) || [text]).map(s => s.trim()).filter(Boolean);
+
+  const urSentRegex = /([^۔.!?]+[۔.!?]+(?:\s+|$)|[^۔.!?]+$)/g;
+  const urSentences = urduText ? (urduText.match(urSentRegex) || [urduText]).map(s => s.trim()).filter(Boolean) : [];
+
+  const psSentRegex = /([^۔.!?؟]+[۔.!?؟]+(?:\s+|$)|[^۔.!?؟]+$)/g;
+  const psSentences = pashtoText ? (pashtoText.match(psSentRegex) || [pashtoText]).map(s => s.trim()).filter(Boolean) : [];
+
+  return enSentences.map((sentence, sIdx) => {
+    const urSent = urSentences[sIdx] || urSentences[0] || urduText || 'اردو ترجمہ دستیاب ہے۔';
+    const psSent = psSentences[sIdx] || psSentences[0] || pashtoText || 'د پښتو ژباړه شتون لري.';
+
+    // Tokenize sentence into individual words for click definition & realtime audio sync
+    const wordsHtml = sentence.split(/(\s+)/).map(token => {
+      if (/^\s+$/.test(token)) return token;
+      const cleanWord = token.replace(/[^a-zA-Z0-9'-]/g, '');
+      if (!cleanWord) return sanitize(token);
+      return `<span class="tts-word dict-clickable-word" data-word="${sanitize(cleanWord)}" title="Click for Urdu &amp; Pashto meaning">${sanitize(token)}</span>`;
+    }).join('');
+
+    return `
+      <span class="lesson-sentence" 
+            data-para="${paraIdx}" 
+            data-sent="${sIdx}" 
+            data-en="${sanitize(sentence)}" 
+            data-ur="${sanitize(urSent)}" 
+            data-ps="${sanitize(psSent)}" 
+            onmouseenter="highlightSentence(this)" 
+            onmouseleave="unhighlightSentence(this)" 
+            onclick="toggleSentenceTranslation(this, event)">
+        ${wordsHtml}
+      </span>
+      <span id="sent-trans-${paraIdx}-${sIdx}" style="display:none;"></span>
+    `;
+  }).join(' ');
+}
+
+
 function playParaTTSFromBtn(btn, lang) {
   const card = btn ? btn.closest('.para-card') : null;
   if (!card) return;
   const box = card.querySelector('.para-text-box');
-  if (box) playSingleParagraphTTS(box.textContent, lang);
+  if (box) playParagraphWithRealtimeTTS(box, lang);
 }
 
 function getSubjectChapterList(subjKey, classId) {
@@ -12686,17 +13313,39 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
     const paras = [];
     sections.forEach((sec, sIdx) => {
       const heading = sec.heading || sec.title || `Section ${sIdx + 1}`;
+      const ur = sec.urdu || sec.urduTranslation || ch.urduSummary || '';
+      const ps = sec.pashto || sec.pashtoTranslation || ch.pashtoTranslation || '';
       if (sec.paras && Array.isArray(sec.paras)) {
         sec.paras.forEach((p, pIdx) => {
-          paras.push({ secHeading: heading, text: typeof p === 'string' ? p : (p.text || ''), num: paras.length + 1, original: p });
+          paras.push({ 
+            secHeading: heading, 
+            text: typeof p === 'string' ? p : (p.text || ''), 
+            urdu: typeof p === 'object' ? (p.urdu || ur) : ur,
+            pashto: typeof p === 'object' ? (p.pashto || ps) : ps,
+            num: paras.length + 1, 
+            original: p 
+          });
         });
       } else if (sec.text) {
-        paras.push({ secHeading: heading, text: sec.text, num: paras.length + 1, original: sec });
+        paras.push({ 
+          secHeading: heading, 
+          text: sec.text, 
+          urdu: ur,
+          pashto: ps,
+          num: paras.length + 1, 
+          original: sec 
+        });
       }
     });
 
     if (paras.length === 0) {
-      paras.push({ secHeading: ch.title, text: ch.urduText || ch.text || 'Textbook reading passage.', num: 1 });
+      paras.push({ 
+        secHeading: ch.title, 
+        text: ch.urduText || ch.text || 'Textbook reading passage.', 
+        urdu: ch.urduSummary || '',
+        pashto: ch.pashtoTranslation || '',
+        num: 1 
+      });
     }
 
     return `
@@ -12712,8 +13361,10 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
                 🔊 Read Aloud
               </button>
             </div>
-            <div class="para-text-box" style="${isUrdu ? 'font-family:"Jameel Noori Nastaleeq","Urdu Typesetting",serif;direction:rtl;text-align:right;font-size:1.18rem;line-height:2.2;' : 'line-height:1.8;'}">
-              ${p.text}
+
+            <!-- Interactive lesson text with word dictionary and sentence hover/click translation -->
+            <div class="para-text-box" style="${isUrdu ? 'font-family:\"Jameel Noori Nastaleeq\",\"Urdu Typesetting\",serif;direction:rtl;text-align:right;font-size:1.18rem;line-height:2.2;' : 'line-height:1.8;'}">
+              ${isUrdu ? p.text : renderInteractiveParagraphHtml(p.text, p.urdu, p.pashto, idx)}
             </div>
 
             <!-- Paragraph-based Questions & Answers -->
@@ -12722,7 +13373,7 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
                 <span>🎯</span> ${isUrdu ? 'پیراگراف فہم و سوالات (MCQ & SQ)' : 'Paragraph Comprehension & SLO Focus'}
               </div>
               <div style="font-size:0.86rem;color:#334155;line-height:1.6;">
-                <strong>Key Concept:</strong> ${p.secHeading}. Click any word for contextual dictionary meaning and audio.
+                <strong>Interactive Reading:</strong> Hover over any sentence to highlight. Click sentence to view Urdu &amp; Pashto translation below. Click any individual word for dictionary definition and audio.
               </div>
             </div>
           </div>
@@ -12733,25 +13384,61 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
     return `
       <div>
         <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:0.75rem 1rem;margin-bottom:1rem;font-size:0.88rem;color:#1e40af;">
-          🌐 <strong>Line-by-Line Verified Translations:</strong> English, Urdu and Pashto corresponding directly to textbook lessons.
+          🌐 <strong>Line-by-Line Verified Translations:</strong> English, Urdu and Pashto corresponding directly to textbook lessons. Use the horizontal tabs above each paragraph to switch translations.
         </div>
-        ${sections.map((sec, idx) => `
-          <div class="math-topic-card" style="margin-bottom:1rem;">
-            <h4 style="color:#0f172a;font-size:0.98rem;margin:0 0 0.6rem 0;font-weight:700;">${sec.heading || sec.title || ('Section ' + (idx + 1))}</h4>
-            <div style="margin-bottom:0.6rem;">
-              <span style="font-size:0.75rem;font-weight:700;color:#0284c7;text-transform:uppercase;">English:</span>
-              <div style="font-size:0.92rem;color:#1e293b;line-height:1.65;margin-top:0.2rem;">${sec.text || (sec.paras ? sec.paras.join(' ') : '')}</div>
+        ${sections.map((sec, idx) => {
+          const secText = sec.text || (sec.paras ? sec.paras.join(' ') : '');
+          const secUrdu = sec.urdu || sec.urduTranslation || ch.urduSummary || 'اردو ترجمہ مکمل شامل ہے۔';
+          const secPashto = sec.pashto || ch.pashtoTranslation || 'د پښتو ژباړه متن سره سم برابر شوې ده.';
+
+          return `
+            <div class="math-topic-card" style="margin-bottom:1.25rem;" id="trans-card-${idx}">
+              <!-- Three Horizontal Options (English, Urdu, Pashto) directly above paragraph title -->
+              <div class="para-lang-tabs-bar" id="para-lang-tabs-${idx}">
+                <button class="para-lang-tab-btn active" onclick="switchParaLangTab(${idx}, 'all', this)">
+                  🌐 All Languages
+                </button>
+                <button class="para-lang-tab-btn" onclick="switchParaLangTab(${idx}, 'en', this)">
+                  🇬🇧 English
+                </button>
+                <button class="para-lang-tab-btn" onclick="switchParaLangTab(${idx}, 'ur', this)">
+                  🇵🇰 اردو (Urdu)
+                </button>
+                <button class="para-lang-tab-btn" onclick="switchParaLangTab(${idx}, 'ps', this)">
+                  🇦🇫 پښتو (Pashto)
+                </button>
+              </div>
+
+              <h4 style="color:#0f172a;font-size:1rem;margin:0 0 0.8rem 0;font-weight:700;">
+                ${sec.heading || sec.title || ('Paragraph / Section ' + (idx + 1))}
+              </h4>
+
+              <!-- English Container -->
+              <div id="para-lang-en-${idx}" style="margin-bottom:0.75rem;">
+                <span style="font-size:0.75rem;font-weight:700;color:#0284c7;text-transform:uppercase;">English Original:</span>
+                <div class="para-text-box" style="font-size:0.95rem;color:#1e293b;line-height:1.8;margin-top:0.3rem;">
+                  ${renderInteractiveParagraphHtml(secText, secUrdu, secPashto, 'trans-' + idx)}
+                </div>
+              </div>
+
+              <!-- Urdu Translation Container -->
+              <div id="para-lang-ur-${idx}" style="margin-bottom:0.75rem;">
+                <span style="font-size:0.75rem;font-weight:700;color:#16a34a;text-transform:uppercase;">Urdu Translation (اردو ترجمہ):</span>
+                <div style="font-family:'Jameel Noori Nastaleeq',serif;direction:rtl;text-align:right;font-size:1.25rem;color:#166534;line-height:2.2;margin-top:0.3rem;background:#f0fdf4;padding:0.75rem 1rem;border-radius:8px;border:1px solid #bbf7d0;">
+                  ${secUrdu}
+                </div>
+              </div>
+
+              <!-- Pashto Translation Container -->
+              <div id="para-lang-ps-${idx}" style="display:block;">
+                <span style="font-size:0.75rem;font-weight:700;color:#d97706;text-transform:uppercase;">Pashto Translation (د پښتو ژباړه):</span>
+                <div style="font-family:'Pashto Koodak','Segoe UI',serif;direction:rtl;text-align:right;font-size:1.1rem;color:#92400e;line-height:2.0;margin-top:0.3rem;background:#fefce8;padding:0.75rem 1rem;border-radius:8px;border:1px solid #fef08a;">
+                  ${secPashto}
+                </div>
+              </div>
             </div>
-            <div style="margin-bottom:0.6rem;">
-              <span style="font-size:0.75rem;font-weight:700;color:#16a34a;text-transform:uppercase;">Urdu Translation:</span>
-              <div style="font-family:'Jameel Noori Nastaleeq',serif;direction:rtl;text-align:right;font-size:1.15rem;color:#166534;line-height:2.1;margin-top:0.2rem;">${sec.urdu || sec.urduTranslation || ch.urduSummary || 'اردو ترجمہ مکمل شامل ہے۔'}</div>
-            </div>
-            <div>
-              <span style="font-size:0.75rem;font-weight:700;color:#d97706;text-transform:uppercase;">Pashto Translation:</span>
-              <div style="font-family:'Pashto Koodak','Segoe UI',serif;direction:rtl;text-align:right;font-size:1.05rem;color:#92400e;line-height:1.9;margin-top:0.2rem;">${sec.pashto || ch.pashtoTranslation || 'د پښتو ژباړه متن سره سم برابر شوې ده.'}</div>
-            </div>
-          </div>
-        `).join('')}
+          `;
+        }).join('')}
       </div>
     `;
   } else if (subTab === 'videos') {

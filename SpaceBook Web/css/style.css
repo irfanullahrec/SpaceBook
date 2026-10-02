@@ -6779,4 +6779,91 @@ body:has(.papers-creator-view) #page-content {
   color: #713f12;
 }
 
+/* ─── REALTIME TTS SPEECH WORD HIGHLIGHTING ───────────────── */
+.tts-word {
+  display: inline;
+  transition: background-color 0.08s ease, color 0.08s ease;
+  border-radius: 3px;
+  padding: 0 1px;
+}
+.tts-word.tts-word-highlight {
+  background-color: #fde047 !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 0 0 2px #facc15 !important;
+  text-decoration: none !important;
+}
+
+/* ─── INTERACTIVE LESSON SENTENCE HOVER & EXPAND ──────────── */
+.lesson-sentence {
+  display: inline;
+  border-radius: 4px;
+  padding: 2px 3px;
+  margin: 0 1px;
+  transition: all 0.12s ease;
+  cursor: pointer;
+}
+.lesson-sentence:hover,
+.lesson-sentence.sentence-hovered {
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 3px !important;
+  background-color: rgba(2, 132, 199, 0.1) !important;
+  color: #0284c7 !important;
+}
+
+.sentence-inline-trans-drawer {
+  display: block;
+  margin: 0.45rem 0 0.65rem 0;
+  padding: 0.65rem 0.95rem;
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-left: 4px solid #16a34a;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  animation: fadeInTrans 0.2s ease-out;
+}
+
+@keyframes fadeInTrans {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── PARAGRAPH HORIZONTAL LANGUAGE TABS ─────────────────── */
+.para-lang-tabs-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+  background: #f1f5f9;
+  padding: 3px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.para-lang-tab-btn {
+  padding: 0.28rem 0.65rem;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.para-lang-tab-btn:hover {
+  color: #0f172a;
+}
+
+.para-lang-tab-btn.active {
+  background: #ffffff;
+  color: #0284c7;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+
 
