@@ -9735,6 +9735,283 @@ function categorizeMathProblem(p) {
   return 'Questions';
 }
 
+
+// ─── INTERACTIVE TOPIC SLOs & MCQ CHECKER ENGINE ─────────────────
+function selectMathMcqOption(uid, optIdx, isCorrect, exp, correctIdx) {
+  const card = document.getElementById('math-mcq-' + uid);
+  if (!card) return;
+
+  const buttons = card.querySelectorAll('.math-mcq-opt');
+  buttons.forEach((b, i) => {
+    b.disabled = true;
+    b.style.pointerEvents = 'none';
+    if (i === optIdx) {
+      if (isCorrect) {
+        b.style.background = '#dcfce7';
+        b.style.borderColor = '#16a34a';
+        b.style.color = '#15803d';
+        b.style.fontWeight = '700';
+        b.innerHTML = b.innerHTML + ' <span style="color:#16a34a;font-weight:800;float:right;">✓ Correct</span>';
+      } else {
+        b.style.background = '#fee2e2';
+        b.style.borderColor = '#ef4444';
+        b.style.color = '#b91c1c';
+        b.style.fontWeight = '700';
+        b.innerHTML = b.innerHTML + ' <span style="color:#ef4444;font-weight:800;float:right;">✗ Incorrect</span>';
+      }
+    } else if (i === correctIdx && !isCorrect) {
+      // Highlight the correct answer indicator
+      b.style.background = '#dcfce7';
+      b.style.borderColor = '#16a34a';
+      b.style.color = '#15803d';
+      b.style.fontWeight = '700';
+      b.innerHTML = b.innerHTML + ' <span style="color:#16a34a;font-weight:800;float:right;">✓ Correct Answer</span>';
+    }
+  });
+
+  const statusEl = document.getElementById('math-mcq-status-' + uid);
+  if (statusEl) {
+    statusEl.innerHTML = isCorrect
+      ? '<span style="color:#15803d;background:#dcfce7;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid #86efac;">✅ Correct Answer!</span>'
+      : '<span style="color:#b91c1c;background:#fee2e2;padding:0.25rem 0.6rem;border-radius:4px;border:1px solid #fca5a5;">❌ Incorrect!</span>';
+  }
+
+  // Automatically reveal the working and explanation box
+  const expBox = document.getElementById('math-mcq-exp-' + uid);
+  if (expBox) {
+    expBox.style.display = 'block';
+  }
+  const workingBtn = card.querySelector('.math-show-working-btn');
+  if (workingBtn) {
+    workingBtn.textContent = '🙈 Hide Working';
+  }
+}
+
+function toggleMcqWorking(uid, correctIdx) {
+  const card = document.getElementById('math-mcq-' + uid);
+  const expBox = document.getElementById('math-mcq-exp-' + uid);
+  if (!expBox) return;
+
+  const isOpen = (expBox.style.display === 'block');
+  if (isOpen) {
+    expBox.style.display = 'none';
+    if (card) {
+      const btn = card.querySelector('.math-show-working-btn');
+      if (btn) btn.textContent = '💡 Show Working & Correct Answer';
+    }
+  } else {
+    expBox.style.display = 'block';
+    if (card) {
+      const btn = card.querySelector('.math-show-working-btn');
+      if (btn) btn.textContent = '🙈 Hide Working';
+      // Also highlight correct answer indicator button if not already chosen
+      const buttons = card.querySelectorAll('.math-mcq-opt');
+      if (typeof correctIdx === 'number' && buttons[correctIdx]) {
+        buttons[correctIdx].style.border = '2px solid #16a34a';
+        buttons[correctIdx].style.background = '#f0fdf4';
+      }
+    }
+  }
+}
+
+function getTopicSpecificSLOs(sec, ch) {
+  const secId = String(sec.id || '1.1');
+  if (secId === '1.1') {
+    return {
+      mcqs: [
+        {
+          q: 'Which of the following is true for any two square matrices A and B of the same order?',
+          options: ['AB = BA always', 'AB ≠ BA in general', '(AB)^t = A^t B^t', '(A + B)^t = A^t - B^t'],
+          correct: 1,
+          exp: 'Matrix multiplication is not commutative in general (AB ≠ BA). While matrix addition is commutative, multiplication depends on row-by-column combinations, and in general AB ≠ BA.'
+        },
+        {
+          q: 'If A = [[2, k], [3, 6]] is a singular matrix, what is the value of k?',
+          options: ['4', '1', '-4', '9'],
+          correct: 0,
+          exp: 'For a singular matrix, the determinant must equal 0:\n|A| = (2)(6) - (3)(k) = 0\n12 - 3k = 0 => 3k = 12 => k = 4.\nThus, the correct value of k is 4.'
+        },
+        {
+          q: 'Arthur Cayley introduced the concept of matrices in which year?',
+          options: ['1845', '1860', '1901', '1820'],
+          correct: 1,
+          exp: 'Arthur Cayley, an eminent English mathematician, first formulated matrix algebra in the year 1860.'
+        },
+        {
+          q: 'What is the order of matrix M = [[1, 2, 3], [4, 5, 6]]?',
+          options: ['3 × 2', '2 × 3', '2 × 2', '3 × 3'],
+          correct: 1,
+          exp: 'Matrix M has 2 horizontal rows and 3 vertical columns. Order is defined as Rows × Columns = 2 × 3.'
+        },
+        {
+          q: 'Two matrices A and B are equal if and only if:',
+          options: ['They have equal rows only', 'They have equal columns only', 'Both have same order and identical corresponding entries', 'Their determinants are equal'],
+          correct: 2,
+          exp: 'Equality of matrices strictly demands two conditions: (1) Both matrices must possess the identical order (m × n), and (2) All corresponding entries must be equal.'
+        }
+      ],
+      shortQuestions: [
+        {
+          q: 'State the two essential conditions for the equality of two matrices with a concrete example.',
+          marks: 3,
+          sol: 'Two matrices A and B are said to be equal (written A = B) if and only if:\n1. Order of A = Order of B (they possess the same number of rows and columns).\n2. Their corresponding elements are equal (a_ij = b_ij for all i, j).\n\nExample:\nLet A = [[2, 3], [0, 5]] and B = [[2, 1+2], [0, 5]].\nBoth have order 2×2, and all corresponding elements are identical. Hence, A = B.'
+        },
+        {
+          q: 'Find the order of matrices A = [2, -1, 5] and B = [[3], [4], [0]] and classify them.',
+          marks: 3,
+          sol: '1. Matrix A = [2, -1, 5]:\n- Rows = 1, Columns = 3 => Order is 1 × 3.\n- Since it has only one row, it is classified as a Row Matrix.\n\n2. Matrix B = [[3], [4], [0]]:\n- Rows = 3, Columns = 1 => Order is 3 × 1.\n- Since it has only one column, it is classified as a Column Matrix.'
+        },
+        {
+          q: 'If [[x + 3, 2], [1, y - 4]] = [[5, 2], [1, 6]], find the values of unknowns x and y.',
+          marks: 3,
+          sol: 'By definition of equal matrices, corresponding elements must be equal:\n1. x + 3 = 5 => x = 5 - 3 => x = 2.\n2. y - 4 = 6 => y = 6 + 4 => y = 10.\n\nVerification:\n[[2 + 3, 2], [1, 10 - 4]] = [[5, 2], [1, 6]]. Correct.\nAnswer: x = 2, y = 10.'
+        }
+      ],
+      longQuestions: [
+        {
+          q: 'Define Square Matrix, Rectangular Matrix, Identity Matrix, and Null Matrix. Give 2×2 and 3×3 real-number examples for each.',
+          marks: 8,
+          rubric: 'Definitions (4 Marks) + Verified Concrete Examples (4 Marks)',
+          sol: '1. Square Matrix:\nA matrix where number of rows equals number of columns (m = n).\nExample: S = [[4, 1], [-2, 3]] (2×2).\n\n2. Rectangular Matrix:\nA matrix where rows do not equal columns (m ≠ n).\nExample: R = [[1, 2, 3], [4, 5, 6]] (2×3).\n\n3. Identity (Unit) Matrix:\nA diagonal square matrix where all principal diagonal elements are 1 and other elements are 0.\nExample: I = [[1, 0], [0, 1]] (2×2).\n\n4. Null (Zero) Matrix:\nA matrix of any order in which all entries are zero. Denoted O.\nExample: O = [[0, 0], [0, 0]] (2×2).'
+        },
+        {
+          q: 'If A = [[a + 3, 1], [0, 2b - 1]] and B = [[6, 1], [0, 7]], prove equality and compute 2A - B.',
+          marks: 8,
+          rubric: 'Equating corresponding elements (4 Marks) + Matrix Scalar Operation (4 Marks)',
+          sol: 'Step 1: Equating corresponding entries for equality:\na + 3 = 6 => a = 3.\n2b - 1 = 7 => 2b = 8 => b = 4.\n\nStep 2: Reconstructing matrix A:\nA = [[3 + 3, 1], [0, 2(4) - 1]] = [[6, 1], [0, 7]] = B.\n\nStep 3: Calculating 2A - B:\n2A = [[12, 2], [0, 14]].\n2A - B = [[12 - 6, 2 - 1], [0 - 0, 14 - 7]] = [[6, 1], [0, 7]] = A.\nAnswer: a = 3, b = 4, and 2A - B = [[6, 1], [0, 7]].'
+        }
+      ]
+    };
+  }
+
+  // Fallback for other topics: derive from chapter SLOs or construct structured SLOs
+  const slos = ch.slos || {};
+  return {
+    mcqs: (slos.mcqs || []).slice(0, 5),
+    shortQuestions: (slos.shortQuestions || []).slice(0, 3),
+    longQuestions: (slos.longQuestions || []).slice(0, 2)
+  };
+}
+
+function switchTopicSloInnerTab(topicId, innerTab, btn) {
+  const bar = btn ? btn.closest('.category-sub-tabs-bar') : null;
+  if (bar) {
+    bar.querySelectorAll('.category-sub-tab-btn').forEach(b => b.classList.toggle('active', b === btn));
+  }
+  const contentEl = document.getElementById('topic-slo-tab-content-' + topicId);
+  if (!contentEl) return;
+  const chList = getMathChapterList();
+  const ch = chList[state.selectedMathChapter || 0];
+  if (!ch || !ch.sections) return;
+  const topicIdx = ch.sections.findIndex(s => s.id === topicId);
+  const sec = ch.sections[topicIdx] || ch.sections[0];
+  contentEl.innerHTML = renderTopicSloInnerContent(sec, ch, innerTab);
+}
+
+function renderTopicSloInnerContent(sec, ch, innerTab) {
+  const data = getTopicSpecificSLOs(sec, ch);
+  const mcqs = data.mcqs || [];
+  const sqs = data.shortQuestions || [];
+  const lqs = data.longQuestions || [];
+
+  if (innerTab === 'mcqs') {
+    return `
+      <div style="margin-bottom:0.5rem;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.85rem;">
+          <h5 style="color:#0f172a;margin:0;font-weight:700;font-size:0.95rem;">🎯 Concept MCQs (${mcqs.length} Total):</h5>
+          <span style="font-size:0.78rem;color:#64748b;">Select an option or click Show Working for answer indicator</span>
+        </div>
+        ${mcqs.map((m, mIdx) => {
+          const uid = 'topic-' + sec.id + '-' + mIdx;
+          const expClean = (m.exp || 'According to textbook rules.').replace(/'/g, "\\'");
+          return `
+            <div class="math-topic-card" id="math-mcq-${uid}" style="margin-bottom:1rem;padding:1rem 1.15rem;border:1px solid #e2e8f0;border-radius:8px;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.5rem;">
+                <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">MCQ ${mIdx + 1}</span>
+                <span style="font-size:0.75rem;color:#64748b;font-weight:600;">1 Mark · KPK Board Standard</span>
+              </div>
+              <div style="font-weight:700;font-size:0.96rem;color:#0f172a;margin-bottom:0.75rem;line-height:1.5;">
+                ${m.q}
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0.5rem;margin-bottom:0.65rem;">
+                ${m.options.map((opt, oIdx) => `
+                  <button class="math-mcq-opt" data-opt="${oIdx}" onclick="selectMathMcqOption('${uid}', ${oIdx}, ${oIdx === m.correct}, '${expClean}', ${m.correct})" style="padding:0.55rem 0.8rem;border:1px solid #cbd5e1;background:#fff;border-radius:6px;font-size:0.88rem;text-align:left;cursor:pointer;transition:all 0.15s ease;">
+                    <strong>${['A','B','C','D'][oIdx]}.</strong> ${opt}
+                  </button>
+                `).join('')}
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.6rem;flex-wrap:wrap;gap:0.5rem;">
+                <button class="math-show-working-btn" onclick="toggleMcqWorking('${uid}', ${m.correct})">
+                  💡 Show Working &amp; Correct Answer
+                </button>
+                <div id="math-mcq-status-${uid}" style="font-size:0.85rem;font-weight:700;"></div>
+              </div>
+              <div id="math-mcq-exp-${uid}" class="mcq-working-box" style="display:none;margin-top:0.75rem;padding:0.75rem 1rem;background:#f8fafc;border-radius:8px;border-left:4px solid #0284c7;font-size:0.88rem;color:#334155;line-height:1.6;">
+                <div style="font-weight:700;color:#15803d;margin-bottom:0.35rem;font-size:0.92rem;">
+                  🎯 Correct Answer: Option ${['A','B','C','D'][m.correct]} (${m.options[m.correct]})
+                </div>
+                <div style="font-weight:700;color:#0369a1;margin-bottom:0.25rem;">📐 Step-by-Step Working &amp; Explanation:</div>
+                <div style="white-space:pre-line;">${m.exp || 'Verified according to KPK Textbook Board concepts.'}</div>
+              </div>
+            </div>`;
+        }).join('')}
+      </div>`;
+  } else if (innerTab === 'sqs') {
+    return `
+      <div style="margin-bottom:0.5rem;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.85rem;">
+          <h5 style="color:#0f172a;margin:0;font-weight:700;font-size:0.95rem;">📝 Conceptual Short Questions (${sqs.length} Total · 3 Marks Each):</h5>
+          <span style="font-size:0.78rem;color:#64748b;">Click question to expand step-by-step solution</span>
+        </div>
+        ${sqs.map((s, sIdx) => `
+          <div class="math-topic-card math-accordion-card" style="margin-bottom:0.65rem;padding:0.85rem 1.1rem;">
+            <div class="math-acc-header" onclick="toggleMathAccordion(this)">
+              <div style="display:flex;align-items:center;gap:0.5rem;">
+                <span class="math-badge" style="background:#dcfce7;color:#15803d;font-size:0.75rem;">SQ ${sIdx + 1}</span>
+                <span style="font-weight:700;color:#0f172a;font-size:0.92rem;">${s.q}</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.4rem;">
+                <span style="font-size:0.75rem;color:#15803d;font-weight:700;">${s.marks || 3} Marks</span>
+                <span class="math-acc-icon">+</span>
+              </div>
+            </div>
+            <div class="math-accordion-body" style="display:none;margin-top:0.75rem;border-top:1px solid #e2e8f0;padding-top:0.75rem;">
+              <div class="math-step-box" style="font-size:0.9rem;line-height:1.75;white-space:pre-line;">${s.sol}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>`;
+  } else if (innerTab === 'lqs') {
+    return `
+      <div style="margin-bottom:0.5rem;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.85rem;">
+          <h5 style="color:#0f172a;margin:0;font-weight:700;font-size:0.95rem;">📚 Board SLO Long Questions (${lqs.length} Total · 8 Marks Each):</h5>
+          <span style="font-size:0.78rem;color:#64748b;">Complete proofs and marking rubrics</span>
+        </div>
+        ${lqs.map((l, lIdx) => `
+          <div class="math-topic-card math-accordion-card" style="margin-bottom:0.65rem;padding:0.85rem 1.1rem;">
+            <div class="math-acc-header" onclick="toggleMathAccordion(this)">
+              <div style="display:flex;align-items:center;gap:0.5rem;">
+                <span class="math-badge" style="background:#fef3c7;color:#92400e;font-size:0.75rem;">LQ ${lIdx + 1}</span>
+                <span style="font-weight:700;color:#0f172a;font-size:0.92rem;">${l.q}</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.4rem;">
+                <span style="font-size:0.75rem;color:#92400e;font-weight:700;">${l.marks || 8} Marks</span>
+                <span class="math-acc-icon">+</span>
+              </div>
+            </div>
+            <div class="math-accordion-body" style="display:none;margin-top:0.75rem;border-top:1px solid #e2e8f0;padding-top:0.75rem;">
+              ${l.rubric ? `<div style="font-size:0.84rem;color:#475569;margin-bottom:0.6rem;background:#f8fafc;padding:0.5rem 0.75rem;border-radius:6px;"><strong>Marking Rubric:</strong> ${l.rubric}</div>` : ''}
+              <div class="math-step-box" style="font-size:0.9rem;line-height:1.75;white-space:pre-line;">${l.sol}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>`;
+  }
+  return '';
+}
+
+
 function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
   if (subTab === 'english') {
     let html = `
@@ -9843,47 +10120,33 @@ function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
         </div>
       </div>`;
   } else if (subTab === 'slos') {
-    const slos = ch.slos || {};
-    const mcqs = (slos.mcqs || []).slice(0, 3);
-    const sqs = (slos.shortQuestions || []).slice(0, 2);
-    const lqs = (slos.longQuestions || []).slice(0, 1);
+    const data = getTopicSpecificSLOs(sec, ch);
+    const mcqCount = (data.mcqs || []).length;
+    const sqCount = (data.shortQuestions || []).length;
+    const lqCount = (data.longQuestions || []).length;
 
     return `
       <div style="margin-bottom:0.5rem;">
         <div style="background:#fefce8;border:1px solid #fef08a;border-radius:6px;padding:0.6rem 0.85rem;margin-bottom:0.85rem;font-size:0.85rem;color:#854d0e;">
           🎯 <strong>Topic-Specific SLOs:</strong> Conceptual and analytical practice questions testing mastery of ${sec.title}.
         </div>
-        <div style="margin-bottom:0.85rem;">
-          <h5 style="color:#0f172a;margin:0 0 0.5rem 0;font-weight:700;font-size:0.92rem;">Concept MCQs:</h5>
-          ${mcqs.map((m, mIdx) => `
-            <div class="math-topic-card" style="margin-bottom:0.65rem;padding:0.85rem 1rem;">
-              <div style="font-weight:700;font-size:0.92rem;color:#0f172a;margin-bottom:0.5rem;">${mIdx+1}. ${m.q}</div>
-              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.4rem;">
-                ${m.options.map((opt, oIdx) => `
-                  <button class="math-mcq-opt" onclick="selectMathMcqOption('topic-${sec.id}-${mIdx}', ${oIdx}, ${oIdx === m.correct}, '${m.exp}')" style="padding:0.45rem 0.75rem;border:1px solid #cbd5e1;background:#fff;border-radius:6px;font-size:0.85rem;text-align:left;cursor:pointer;">
-                    <strong>${['A','B','C','D'][oIdx]}.</strong> ${opt}
-                  </button>
-                `).join('')}
-              </div>
-              <div id="math-mcq-exp-topic-${sec.id}-${mIdx}" style="display:none;margin-top:0.5rem;padding:0.5rem 0.75rem;background:#f8fafc;border-radius:6px;font-size:0.84rem;color:#334155;"></div>
-            </div>
-          `).join('')}
+
+        <!-- The THREE Horizontal Tabs as requested: MCQs, Short Questions, Long Questions -->
+        <div class="category-sub-tabs-bar" style="margin-bottom:1rem;">
+          <button class="category-sub-tab-btn active" onclick="switchTopicSloInnerTab('${sec.id}', 'mcqs', this)">
+            🎯 MCQs (${mcqCount})
+          </button>
+          <button class="category-sub-tab-btn" onclick="switchTopicSloInnerTab('${sec.id}', 'sqs', this)">
+            📝 Short Questions (${sqCount})
+          </button>
+          <button class="category-sub-tab-btn" onclick="switchTopicSloInnerTab('${sec.id}', 'lqs', this)">
+            📚 Long Questions (${lqCount})
+          </button>
         </div>
-        ${sqs.length ? `
-          <div style="margin-bottom:0.85rem;">
-            <h5 style="color:#0f172a;margin:0 0 0.5rem 0;font-weight:700;font-size:0.92rem;">Conceptual Short Questions:</h5>
-            ${sqs.map((s, sIdx) => `
-              <div class="math-topic-card math-accordion-card" style="margin-bottom:0.5rem;padding:0.75rem 1rem;">
-                <div class="math-acc-header" onclick="toggleMathAccordion(this)">
-                  <span style="font-weight:700;color:#0f172a;font-size:0.9rem;">SQ ${sIdx+1}: ${s.q}</span>
-                  <span class="math-acc-icon">+</span>
-                </div>
-                <div class="math-accordion-body" style="display:none;margin-top:0.6rem;border-top:1px solid #e2e8f0;padding-top:0.6rem;">
-                  <div class="math-step-box" style="font-size:0.88rem;line-height:1.7;white-space:pre-line;">${s.sol}</div>
-                </div>
-              </div>
-            `).join('')}
-          </div>` : ''}
+
+        <div id="topic-slo-tab-content-${sec.id}">
+          ${renderTopicSloInnerContent(sec, ch, 'mcqs')}
+        </div>
       </div>`;
   }
   return '';
