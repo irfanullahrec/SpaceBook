@@ -6726,8 +6726,15 @@ body:has(.papers-creator-view) #page-content {
   align-items: center;
   gap: 0.45rem;
   overflow-x: auto;
-  padding: 0.4rem 0.1rem 0.6rem 0.1rem;
+  padding: 0.45rem 0.6rem;
   margin-bottom: 1rem;
+  position: sticky;
+  top: -0.85rem;
+  z-index: 15;
+  background: #ffffff;
+  border-bottom: 1.5px solid #e2e8f0;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   scrollbar-width: thin;
 }
 .category-sub-tabs-bar::-webkit-scrollbar {

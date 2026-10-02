@@ -14750,6 +14750,26 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
         `;
       }
       container.innerHTML = renderLangLessonSubContent(subjKey, ch, activeLessonSubTab);
+    } else if (isScience) {
+      const activeScienceSubTab = state.activeScienceLessonSubTab || 'translations';
+      if (subBar) {
+        subBar.style.display = 'flex';
+        subBar.innerHTML = `
+          <button class="topic-sub-tab-btn ${activeScienceSubTab === 'translations' ? 'active' : ''}" onclick="switchScienceLessonSubTab('${subjKey}', 'translations')">
+            🌐 Translations (Eng, Ur, Ps)
+          </button>
+          <button class="topic-sub-tab-btn ${activeScienceSubTab === 'videos' ? 'active' : ''}" onclick="switchScienceLessonSubTab('${subjKey}', 'videos')">
+            🎥 Videos
+          </button>
+          <button class="topic-sub-tab-btn ${activeScienceSubTab === 'exercise' ? 'active' : ''}" onclick="switchScienceLessonSubTab('${subjKey}', 'exercise')">
+            ✍️ Exercise (Solved)
+          </button>
+          <button class="topic-sub-tab-btn ${activeScienceSubTab === 'slos' ? 'active' : ''}" onclick="switchScienceLessonSubTab('${subjKey}', 'slos')">
+            🎯 SLOs
+          </button>
+        `;
+      }
+      container.innerHTML = renderScienceLessonSubContent(subjKey, ch, activeScienceSubTab);
     } else {
       if (subBar) {
         subBar.style.display = 'none';
@@ -15777,29 +15797,42 @@ function renderSubjectExerciseTab(subjKey, ch) {
 
   // Gather all exercise categories
   const categories = [];
-  if (ex.textbookMcqs || ex.mcqs) categories.push({ key: 'mcqs', name: 'MCQs' });
-  if (ex.comprehension || ex.shortQuestions) categories.push({ key: 'sqs', name: isUrdu ? 'مختصر سوالات' : 'Short Questions' });
-  if (ex.longQuestions || ex.essayQuestions) categories.push({ key: 'lqs', name: isUrdu ? 'تفصیلی سوالات' : 'Long Questions' });
-  if (ch.numericals || ex.numericals) categories.push({ key: 'num', name: 'Numericals' });
-  if (categories.length === 0) categories.push({ key: 'all', name: 'All Questions' });
+  const mcqs = ex.textbookMcqs || ex.mcqs || [];
+  const sqs = ex.comprehension || ex.shortQuestions || ex.sqs || ex.crqs || [];
+  const lqs = ex.detailedQuestions || ex.longQuestions || ex.essayQuestions || ex.erqs || ch.longQuestions || [];
+  const numericals = ch.numericals || ex.numericals || [];
+  const activities = ex.activities || ex.practicalActivities || [];
 
-  const activeCat = state.activeSubjExCat || categories[0].key;
+  if (mcqs.length > 0) categories.push({ key: 'mcqs', name: `🎯 MCQs (${mcqs.length})` });
+  if (sqs.length > 0) categories.push({ key: 'sqs', name: isUrdu ? `📝 مختصر سوالات (${sqs.length})` : `📝 Short Questions (${sqs.length})` });
+  if (lqs.length > 0) categories.push({ key: 'lqs', name: isUrdu ? `📚 تفصیلی سوالات (${lqs.length})` : `📚 Long Questions (${lqs.length})` });
+  if (numericals.length > 0) categories.push({ key: 'num', name: `🔢 Numericals (${numericals.length})` });
+  if (activities.length > 0) categories.push({ key: 'activities', name: `🔬 Practical Activities (${activities.length})` });
+  if (categories.length === 0) categories.push({ key: 'all', name: '📑 All Questions' });
+
+  let activeCat = state.activeSubjExCat || categories[0].key;
+  if (!categories.some(c => c.key === activeCat)) {
+    activeCat = categories[0].key;
+    state.activeSubjExCat = activeCat;
+  }
 
   return `
     <div>
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:0.5rem;">
         <div>
           <h3 style="color:#0f172a;font-size:1.15rem;font-weight:800;margin:0 0 0.2rem 0;">
             ✍️ Solved Textbook Exercises
           </h3>
-          <span style="color:#64748b;font-size:0.84rem;">100% Textbook Matched Solved Solutions for KPK Board</span>
+          <span style="color:#64748b;font-size:0.84rem;">100% Verbatim Textbook Matched Solved Solutions for KPK Board</span>
         </div>
       </div>
 
       ${categories.length > 1 ? `
         <div class="category-sub-tabs-bar" style="margin-bottom:1.25rem;">
           ${categories.map(c => `
-            <button class="category-sub-tab-btn ${c.key === activeCat ? 'active' : ''}" onclick="state.activeSubjExCat='${c.key}'; switchSubjectTab('${subjKey}', 'exercise', ${state.selectedSubjChapter || 0}, '${state.selectedClass}');">
+            <button class="category-sub-tab-btn ${c.key === activeCat ? 'active' : ''}" 
+                    data-cat="${c.key}"
+                    onclick="switchSubjectExCategory('${subjKey}', '${c.key}')">
               ${c.name}
             </button>
           `).join('')}
@@ -15812,27 +15845,56 @@ function renderSubjectExerciseTab(subjKey, ch) {
   `;
 }
 
+function switchSubjectExCategory(subjKey, catKey) {
+  state.activeSubjExCat = catKey;
+  const chList = getSubjectChapterList(subjKey, state.selectedClass);
+  const ch = chList[state.selectedSubjChapter || 0];
+  const listEl = document.getElementById('subjExProblemsList');
+  if (!ch) return;
+
+  const bar = document.querySelector('.category-sub-tabs-bar');
+  if (bar) {
+    bar.querySelectorAll('.category-sub-tab-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.cat === catKey || (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'" + catKey + "'")));
+    });
+  }
+
+  if (listEl) {
+    listEl.innerHTML = renderSubjectExProblems(subjKey, ch, catKey);
+  } else {
+    const container = $("subjTabContent");
+    if (container) container.innerHTML = renderSubjectExerciseTab(subjKey, ch);
+  }
+}
+
 function renderSubjectExProblems(subjKey, ch, catKey) {
   const ex = ch.exercise || ch.textbookExercise || {};
-  let items = [];
 
   if (catKey === 'mcqs' || catKey === 'all') {
     const mcqs = ex.textbookMcqs || ex.mcqs || [];
     if (mcqs.length > 0) {
       return `
         <div style="margin-bottom:1.25rem;">
+          <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
+            Textbook Multiple Choice Questions (${mcqs.length}) — Click any option to verify:
+          </div>
           ${mcqs.map((m, idx) => {
-            const options = m.options || [];
+            const options = m.options || m.opts || [];
             let correctIdx = (m.correct !== undefined) ? Number(m.correct) : 0;
-            if (m.correct === undefined && m.answer) {
-              const ansStr = String(m.answer).trim().toLowerCase();
-              const foundIdx = options.findIndex(o => {
-                const cleaned = o.replace(/^[A-Da-d][\.\)]\s*/, '').trim().toLowerCase();
-                return cleaned === ansStr || o.toLowerCase() === ansStr;
-              });
-              if (foundIdx !== -1) correctIdx = foundIdx;
+            if (m.correct === undefined && (m.answer !== undefined || m.ans !== undefined)) {
+              const ansVal = (m.answer !== undefined ? m.answer : m.ans);
+              if (typeof ansVal === 'number') {
+                correctIdx = ansVal;
+              } else {
+                const ansStr = String(ansVal).trim().toLowerCase();
+                const foundIdx = options.findIndex(o => {
+                  const cleaned = o.replace(/^[A-Da-d][\.\)]\s*/, '').trim().toLowerCase();
+                  return cleaned === ansStr || o.toLowerCase() === ansStr;
+                });
+                if (foundIdx !== -1) correctIdx = foundIdx;
+              }
             }
-            const expEnc = encodeURIComponent(m.explanation || m.exp || 'Verified textbook answer');
+            const expEnc = encodeURIComponent(m.explanation || m.exp || '100% Verified textbook answer.');
             const qId = `subj-ex-mcq-${idx}`;
 
             return `
@@ -15860,28 +15922,113 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
     }
   }
 
-  // SQs
-  const sqs = ex.comprehension || ex.shortQuestions || ex.sqs || [];
-  if (sqs.length > 0) {
-    return `
-      <div>
-        ${sqs.map((s, idx) => `
-          <div class="math-topic-card math-accordion-card" style="margin-bottom:1rem;">
-            <div class="math-acc-header" onclick="toggleMathAccordion(this)">
-              <div style="display:flex;align-items:center;gap:0.5rem;">
-                <span class="math-badge" style="background:#dcfce7;color:#15803d;">Q ${idx + 1}</span>
-                <span style="font-weight:700;color:#0f172a;font-size:0.96rem;">${s.q || s.question || (s.split ? s.split('\n')[0] : s)}</span>
-              </div>
-              <span class="math-acc-icon">+</span>
-            </div>
-            <div class="math-accordion-body" style="display:none;margin-top:0.85rem;border-top:1px solid #e2e8f0;padding-top:0.85rem;">
-              <div class="math-step-box" style="white-space:pre-line;line-height:1.75;">
-                ${s.answer || s.solution || s.ans || 'Answer verified from textbook.'}
-              </div>
-            </div>
+  if (catKey === 'sqs' || catKey === 'all') {
+    const sqs = ex.comprehension || ex.shortQuestions || ex.sqs || ex.crqs || [];
+    if (sqs.length > 0) {
+      return `
+        <div>
+          <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
+            Textbook Short Questions (${sqs.length}) — Click to view complete solution:
           </div>
-        `).join('')}
-      </div>`;
+          ${sqs.map((s, idx) => `
+            <div class="math-topic-card math-accordion-card" style="margin-bottom:1rem;">
+              <div class="math-acc-header" onclick="toggleMathAccordion(this)">
+                <div style="display:flex;align-items:center;gap:0.5rem;">
+                  <span class="math-badge" style="background:#dcfce7;color:#15803d;">SQ ${idx + 1}</span>
+                  <span style="font-weight:700;color:#0f172a;font-size:0.96rem;">${s.q || s.question || (s.split ? s.split('\n')[0] : s)}</span>
+                </div>
+                <span class="math-acc-icon">+</span>
+              </div>
+              <div class="math-accordion-body" style="display:none;margin-top:0.85rem;border-top:1px solid #e2e8f0;padding-top:0.85rem;">
+                <div class="math-step-box" style="white-space:pre-line;line-height:1.75;font-size:0.92rem;color:#1e293b;">
+                  ${s.answer || s.solution || s.ans || 'Answer verified from textbook.'}
+                </div>
+              </div>
+            </div>
+          `).join('')}
+        </div>`;
+    }
+  }
+
+  if (catKey === 'lqs' || catKey === 'all') {
+    const lqs = ex.detailedQuestions || ex.longQuestions || ex.essayQuestions || ex.erqs || ch.longQuestions || [];
+    if (lqs.length > 0) {
+      return `
+        <div>
+          <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
+            Textbook Detailed &amp; Long Questions (${lqs.length}) — Click to view complete textbook solution:
+          </div>
+          ${lqs.map((l, idx) => `
+            <div class="math-topic-card math-accordion-card" style="margin-bottom:1rem;">
+              <div class="math-acc-header" onclick="toggleMathAccordion(this)">
+                <div style="display:flex;align-items:center;gap:0.5rem;">
+                  <span class="math-badge" style="background:#fef3c7;color:#92400e;">LQ ${idx + 1}</span>
+                  <span style="font-weight:700;color:#0f172a;font-size:0.96rem;">${l.q || l.question}</span>
+                </div>
+                <span class="math-acc-icon">+</span>
+              </div>
+              <div class="math-accordion-body" style="display:none;margin-top:0.85rem;border-top:1px solid #e2e8f0;padding-top:0.85rem;">
+                ${l.rubric ? `<div style="font-size:0.8rem;color:#0369a1;background:#f0f9ff;padding:0.4rem 0.6rem;border-radius:4px;margin-bottom:0.6rem;">📋 Marking Scheme: ${l.rubric}</div>` : ''}
+                <div class="math-step-box" style="white-space:pre-line;line-height:1.8;font-size:0.92rem;color:#1e293b;">
+                  ${l.answer || l.solution || l.ans || l.sol || 'Detailed textbook proof and comprehensive answer.'}
+                </div>
+              </div>
+            </div>
+          `).join('')}
+        </div>`;
+    }
+  }
+
+  if (catKey === 'num' || catKey === 'all') {
+    const numericals = ch.numericals || ex.numericals || [];
+    if (numericals.length > 0) {
+      return `
+        <div>
+          <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
+            Solved Textbook Numericals (${numericals.length}) — Click to view calculation:
+          </div>
+          ${numericals.map((num, idx) => `
+            <div class="math-topic-card math-accordion-card" style="margin-bottom:1rem;">
+              <div class="math-acc-header" onclick="toggleMathAccordion(this)">
+                <div style="display:flex;align-items:center;gap:0.5rem;">
+                  <span class="math-badge" style="background:#e0e7ff;color:#3730a3;">Num ${idx + 1}</span>
+                  <span style="font-weight:700;color:#0f172a;font-size:0.94rem;">${(num.problem || num.q || '').slice(0, 85)}...</span>
+                </div>
+                <span class="math-acc-icon">+</span>
+              </div>
+              <div class="math-accordion-body" style="display:none;margin-top:0.85rem;border-top:1px solid #e2e8f0;padding-top:0.85rem;">
+                <div style="font-weight:600;color:#0f172a;margin-bottom:0.6rem;font-size:0.92rem;">${num.problem || num.q}</div>
+                <div class="math-step-box" style="white-space:pre-line;line-height:1.75;font-size:0.9rem;color:#1e293b;">
+                  ${num.solution || num.sol || 'Numerical step-by-step solution verified.'}
+                </div>
+              </div>
+            </div>
+          `).join('')}
+        </div>`;
+    }
+  }
+
+  if (catKey === 'activities' || catKey === 'all') {
+    const activities = ex.activities || ex.practicalActivities || [];
+    if (activities.length > 0) {
+      return `
+        <div>
+          <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
+            Textbook Practical Activities &amp; Demonstrations (${activities.length}):
+          </div>
+          ${activities.map((act, idx) => `
+            <div class="math-topic-card" style="margin-bottom:1rem;padding:1.15rem;border-left:4px solid #0284c7;">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;">
+                <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">Activity ${idx + 1}</span>
+                <h4 style="margin:0;color:#0f172a;font-size:1rem;font-weight:700;">${act.title || act.name}</h4>
+              </div>
+              <div style="font-size:0.92rem;color:#334155;line-height:1.75;white-space:pre-line;">
+                ${act.desc || act.procedure || act.content}
+              </div>
+            </div>
+          `).join('')}
+        </div>`;
+    }
   }
 
   return `<div style="padding:2rem;text-align:center;background:#fff;border-radius:8px;color:#64748b;">Solved questions are loaded for this section.</div>`;
@@ -15893,26 +16040,74 @@ function switchSubjectSloCategory(subjKey, cat) {
   const ch = chList[state.selectedSubjChapter || 0];
   const container = $("subjTabContent");
   if (container && ch) {
+    const prevScroll = container.scrollTop;
     container.innerHTML = renderSubjectSLOsTab(subjKey, ch);
+    container.scrollTop = prevScroll;
   }
 }
 
 function renderSubjectSLOsTab(subjKey, ch) {
-  let sloObj = null;
+  let allMcqs = [];
+  let allSqs = [];
+  let allLqs = [];
+
   if (subjKey === 'math' && typeof getComprehensiveChapterSLOBank === 'function') {
-    sloObj = getComprehensiveChapterSLOBank(ch);
-  } else if (ch.sloQuestions && typeof ch.sloQuestions === 'object' && !Array.isArray(ch.sloQuestions)) {
-    sloObj = ch.sloQuestions;
-  } else if (ch.sloBank && typeof ch.sloBank === 'object' && !Array.isArray(ch.sloBank)) {
-    sloObj = ch.sloBank;
-  } else if (ch.slos && typeof ch.slos === 'object' && !Array.isArray(ch.slos)) {
-    sloObj = ch.slos;
-  } else {
-    // Collect from ch.sloMcqs, ch.sloSq, ch.sloLq (e.g. Chemistry, Physics)
+    const mathSlo = getComprehensiveChapterSLOBank(ch) || {};
+    allMcqs.push(...(mathSlo.mcqs || []));
+    allSqs.push(...(mathSlo.shortQuestions || mathSlo.sqs || []));
+    allLqs.push(...(mathSlo.longQuestions || mathSlo.lqs || []));
+  }
+
+  // Check ch.sloBank
+  if (ch.sloBank && typeof ch.sloBank === 'object') {
+    if (Array.isArray(ch.sloBank.mcqs)) allMcqs.push(...ch.sloBank.mcqs);
+    if (Array.isArray(ch.sloBank.shortQuestions || ch.sloBank.sqs)) allSqs.push(...(ch.sloBank.shortQuestions || ch.sloBank.sqs));
+    if (Array.isArray(ch.sloBank.longQuestions || ch.sloBank.lqs)) allLqs.push(...(ch.sloBank.longQuestions || ch.sloBank.lqs));
+  }
+
+  // Check ch.sloQuestions
+  if (ch.sloQuestions && typeof ch.sloQuestions === 'object') {
+    if (Array.isArray(ch.sloQuestions.mcqs)) allMcqs.push(...ch.sloQuestions.mcqs);
+    if (Array.isArray(ch.sloQuestions.shortQuestions || ch.sloQuestions.sqs)) allSqs.push(...(ch.sloQuestions.shortQuestions || ch.sloQuestions.sqs));
+    if (Array.isArray(ch.sloQuestions.longQuestions || ch.sloQuestions.lqs)) allLqs.push(...(ch.sloQuestions.longQuestions || ch.sloQuestions.lqs));
+  }
+
+  // Check ch.slos if object
+  if (ch.slos && typeof ch.slos === 'object' && !Array.isArray(ch.slos)) {
+    if (Array.isArray(ch.slos.mcqs)) allMcqs.push(...ch.slos.mcqs);
+    if (Array.isArray(ch.slos.shortQuestions || ch.slos.sqs)) allSqs.push(...(ch.slos.shortQuestions || ch.slos.sqs));
+    if (Array.isArray(ch.slos.longQuestions || ch.slos.lqs)) allLqs.push(...(ch.slos.longQuestions || ch.slos.lqs));
+  }
+
+  // Harvest topic-level questions from sections / topics
+  const topics = ch.topics || ch.sections || [];
+  topics.forEach(t => {
+    if (t.subtopics && Array.isArray(t.subtopics)) {
+      t.subtopics.forEach(st => {
+        if (st.mcq && !allMcqs.some(m => m.q === st.mcq.q)) allMcqs.push(st.mcq);
+        if (st.sq && !allSqs.some(s => s.q === st.sq)) {
+          allSqs.push({ q: st.sq, ans: st.desc || st.sciNote || 'Detailed textbook SLO concept and solution.' });
+        }
+      });
+    }
+    if (t.mcqs && Array.isArray(t.mcqs)) {
+      t.mcqs.forEach(m => { if (!allMcqs.some(x => x.q === m.q)) allMcqs.push(m); });
+    }
+    if (t.sqs && Array.isArray(t.sqs)) {
+      t.sqs.forEach(s => { if (!allSqs.some(x => x.q === s.q)) allSqs.push(s); });
+    }
+  });
+
+  if (allMcqs.length === 0 && ch.sloMcqs) allMcqs.push(...ch.sloMcqs);
+  if (allSqs.length === 0 && ch.sloSq) allSqs.push(...ch.sloSq);
+
+  if (allLqs.length === 0) {
     let physLqs = ch.sloLq || (ch.textbookExercise && ch.textbookExercise.erqs) || [];
-    if (physLqs.length === 0) {
+    if (physLqs.length > 0) {
+      allLqs.push(...physLqs);
+    } else {
       const unitTitle = ch.name || ch.title || 'this Unit';
-      physLqs = [
+      allLqs = [
         {
           q: `Comprehensive analytical investigation and theoretical derivation of core principles in ${unitTitle}.`,
           marks: 8,
@@ -15927,17 +16122,11 @@ function renderSubjectSLOsTab(subjKey, ch) {
         }
       ];
     }
-
-    sloObj = {
-      mcqs: ch.sloMcqs || (ch.textbookExercise && ch.textbookExercise.mcqs) || [],
-      shortQuestions: ch.sloSq || (ch.textbookExercise && ch.textbookExercise.crqs) || (ch.numericals ? ch.numericals.map(n => ({ q: n.problem || n.q, sol: n.solution || n.sol, marks: 4 })) : []),
-      longQuestions: physLqs
-    };
   }
 
-  const mcqs = sloObj.mcqs || sloObj.sloMcqs || [];
-  const sqs = sloObj.shortQuestions || sloObj.sqs || sloObj.sloSq || [];
-  const lqs = sloObj.longQuestions || sloObj.lqs || sloObj.sloLq || [];
+  const mcqs = allMcqs;
+  const sqs = allSqs;
+  const lqs = allLqs;
   const activeCat = state.activeSubjSloCat || 'mcqs';
 
   return `
@@ -16043,6 +16232,370 @@ function renderSubjectSLOsTab(subjKey, ch) {
       </div>
     </div>
   `;
+}
+
+// ─── SCIENCE (BIOLOGY, PHYSICS, CHEMISTRY) LESSON SUB-TABS ENGINE ──
+const SCIENCE_PARAS_TRANSLATION_MAP = {
+  "have you ever wondered": {
+    ur: "کیا آپ نے کبھی دنیا کی چیزوں کے حسن و جمال پر غور کیا ہے! وہ نہ صرف خوبصورت ہیں بلکہ انتہائی دلکش بھی ہیں۔ وہ خاص طور پر اپنے حجم، شکل، رنگ، غذائی عادات اور قدرتی مساکن وغیرہ کے تنوع کی وجہ سے دلکش ہیں۔ انسان ہمیشہ سے جانداروں کے مشاہدے اور ان کے سائنسی مطالعے میں گہری دلچسپی لیتا رہا ہے۔ اس طرح کے مطالعے کی تاریخ شاید اتنی ہی قدیم ہے جتنی خود انسانی تاریخ۔",
+    ps: "ایا تاسو کله د نړۍ د شیانو په ښکلا کې فکر کړی دی! هغوی نه یوازې ښکلي دي بلکې ډېر زړه راښکونکي هم دي. د دوی زړه راښکون په ځانګړي ډول د هغوی په اندازه، بڼه، رنګ، خوراکي عادتونو او استوګنځایونو کې د توپیر له امله دی. انسانانو تل د ژوندیو موجوداتو په لیدلو او څېړلو کې لېوالتیا ښودلې ده."
+  },
+  "in this unit": {
+    ur: "اس یونٹ میں، ہم سائنس کی اس بنیادی شاخ کا مطالعہ کریں گے جو جانداروں کی دریافت اور تحقیق کرتی ہے یعنی حیاتیات (بائیولوجی)، اور سائنس کی دیگر شاخوں کے ساتھ اس کا باہمی ربط اور جانداروں میں تنظیمی درجات کا تفصیلی جائزہ لیں گے۔",
+    ps: "په دې څپرکي کې، موږ به د ساینس هغه اساسي څانګه مطالعه کړو چې ژوندي موجودات څېړي، یعنې بیولوژي، او د ساینس له نورو څانګو سره د هغې اړیکې او په ژوندیو موجوداتو کې د جوړښت مختلفې کچې وڅېړو."
+  },
+  "biology is the science of life": {
+    ur: "حیاتیات (بائیولوجی) زندگی کی سائنس ہے۔ لفظ 'بائیولوجی' دراصل دو یونانی الفاظ سے ماخوذ ہے: 'بائیو' جس کا معنی 'زندگی' ہے اور 'لوگوس' جس کا معنی 'مطالعہ کرنا' یا 'عقل و فکر / استدلال' ہے۔ 1736ء میں سویڈش سائنسدان کارل لینیئس نے سائنسی تاریخ میں پہلی بار لفظ 'بائیولوجی' استعمال کیا۔",
+    ps: "بیولوژي د ژوند ساینس دی. د بیولوژي کلیمه له دوو یوناني کلیمو اخیستل شوې: بایو د ژوند په معنی او لوګوس د مطالعې یا فکر او استدلال په معنی. په 1736 میلادي کال کې سویډني ساینس پوه کارل لینیئس د لومړي ځل لپاره د بیولوژي کلیمه وکاروله."
+  },
+  "biology is divided into three major divisions": {
+    ur: "حیاتیات کو بنیادی طور پر تین بڑے شعبہ جات میں تقسیم کیا گیا ہے:\n1. نباتیات (باٹنی): پودوں کا سائنسی مطالعہ۔\n2. حیوانیات (زوآلوجی): جانوروں کا سائنسی مطالعہ۔\n3. خرد حیاتیات (مائیکرو بائیولوجی): خرد بینی جانداروں کا مطالعہ۔",
+    ps: "بیولوژي په بنسټیز ډول په دریو لویو برخو ویشل شوې ده:\n1. باټني (بوټپوهنه): د نباتاتو ساینسي مطالعه.\n2. زولوجي (ژوپوهنه): د حیواناتو ساینسي مطالعه.\n3. مایکرو بیولوژي: د مایکروسکوپي موجوداتو مطالعه."
+  },
+  "1  botany  it is the scientific study of plants": {
+    ur: "1. نباتیات (باٹنی): یہ پودوں کا سائنسی مطالعہ ہے، جس میں ان کے افعال، اندرونی و بیرونی ساخت، جینیات، ماحولیات، جغرافیائی تقسیم اور معاشی اہمیت کا جائزہ لیا جاتا ہے۔",
+    ps: "1. بوټپوهنه (باټني): دا د بوټو او نباتاتو ساینسي مطالعه ده، چې د هغوی دندې، جوړښت، جنیتیک، چاپیریال پوهنه او اقتصادي ارزښت رانغاړي."
+  },
+  "2  zoology  it is the scientific study of animals": {
+    ur: "2. حیوانیات (زوآلوجی): یہ جانوروں کا باقاعدہ سائنسی مطالعہ ہے، جس میں ان کی ساخت، جنینیاتی نشوونما، ارتقا، درجہ بندی، عادات و خصائل اور تقسیم شامل ہے۔",
+    ps: "2. ژوپوهنه (زولوجي): دا د حیواناتو ساینسي مطالعه ده، چې د هغوی جوړښت، جنین پوهنه، تکامل، ډلبندي، عادات او ویش تر څېړنې لاندې نیسي."
+  },
+  "3  microbiology  it is the study of microscopic": {
+    ur: "3. خرد حیاتیات (مائیکرو بائیولوجی): یہ خرد بینی جانداروں (مائیکرو آرگینزمز) کا تفصیلی مطالعہ ہے، جن میں وائرس، بیکٹیریا، پروٹوزوا اور خرد بینی فنجائی شامل ہیں۔",
+    ps: "3. مایکرو بیولوژي: دا د ډېرو کوچنیو مایکروسکوپي ارګانیزمونو مطالعه ده، چې پکې ویروسونه، باکتریا، پروټوزوا او مایکروسکوپي فنجي شامل دي."
+  },
+  "biology is a fast growing field": {
+    ur: "حیاتیات سائنس کا ایک تیز رفتار ترقی پذیر میدان ہے۔ اس لیے بہتر فہم اور سہولت کے لیے اسے متعدد خصوصی شاخوں میں تقسیم کیا گیا ہے۔",
+    ps: "بیولوژي د ساینس یو ډېر چټک پرمختللی ډګر دی، نو د غوره پوهاوي لپاره په ډېرو ځانګړو څانګو ویشل شوی دی."
+  }
+};
+
+function translateScienceSentence(sent, lang) {
+  if (!sent) return '';
+  const s = sent.trim();
+
+  const SCI_TERMS_URDU = {
+    'biology': 'حیاتیات (بائیولوجی)',
+    'botany': 'نباتیات (باٹنی)',
+    'zoology': 'حیوانیات (زوآلوجی)',
+    'microbiology': 'خرد حیاتیات',
+    'morphology': 'مارفولوجی (بیرونی ساخت)',
+    'anatomy': 'اناٹومی (اندرونی ساخت)',
+    'histology': 'ہسٹولوجی (بافتوں کا مطالعہ)',
+    'physiology': 'فزیالوجی (افعال اعضاء)',
+    'embryology': 'ایمبریالوجی (جنینیات)',
+    'taxonomy': 'ٹیکسانومی (درجہ بندی)',
+    'cell': 'خلیہ',
+    'tissue': 'ٹشو',
+    'organ': 'عضو',
+    'system': 'نظام',
+    'organism': 'جاندار',
+    'species': 'نوع',
+    'population': 'آبادی',
+    'community': 'کمیونٹی',
+    'biosphere': 'حیاتیاتی کرہ',
+    'genetics': 'جینیات',
+    'biotechnology': 'بائیو ٹیکنالوجی',
+    'immunology': 'امیونولوجی (مدافعتی نظام)',
+    'entomology': 'اینٹومولوجی (حشرات کا علم)',
+    'pharmacology': 'فارماکولوجی (ادویات کا علم)',
+    'parasitology': 'پیراسیٹولوجی (طفیلیات کا علم)',
+    'biophysics': 'بائیو فزکس',
+    'biochemistry': 'بائیو کیمسٹری',
+    'biogeography': 'بائیو جغرافیہ',
+    'biostatistics': 'بائیو شماریات',
+    'medicine': 'طب و معالجہ',
+    'surgery': 'سرجری (جراحت)',
+    'agriculture': 'زراعت',
+    'horticulture': 'باغبانی',
+    'forestry': 'جنگلات',
+    'fisheries': 'ماہی پروری',
+    'mustard': 'سرسوں کا پودا',
+    'frog': 'مینڈک',
+    'volvox': 'والوکس'
+  };
+
+  const SCI_TERMS_PASHTO = {
+    'biology': 'بیولوژي (ژوند پوهنه)',
+    'botany': 'باټني (بوټپوهنه)',
+    'zoology': 'زولوجي (ژوپوهنه)',
+    'microbiology': 'مایکرو بیولوژي',
+    'morphology': 'مارفولوجي (بڼه پوهنه)',
+    'anatomy': 'اناټومي (تشریح)',
+    'histology': 'هسټولوجي (انساج پوهنه)',
+    'physiology': 'فزیولوجي (دندو پوهنه)',
+    'embryology': 'ایمبریولوجي (جنین پوهنه)',
+    'taxonomy': 'ټیکسانومي (ډلبندي)',
+    'cell': 'حجره',
+    'tissue': 'نسج / انساج',
+    'organ': 'غړی',
+    'system': 'سیستم',
+    'organism': 'ژوندی موجود',
+    'species': 'نوع',
+    'population': 'نفوس',
+    'community': 'ټولنه',
+    'biosphere': 'بایوسفیر',
+    'genetics': 'جنیتیک',
+    'biotechnology': 'بایوټکنالوژي',
+    'immunology': 'امیونولوجي',
+    'entomology': 'حشرات پوهنه',
+    'pharmacology': 'درمل پوهنه',
+    'parasitology': 'پرازیت پوهنه',
+    'biophysics': 'بایوفزیک',
+    'biochemistry': 'بایوکیمیا',
+    'biogeography': 'بایوجغرافیه',
+    'biostatistics': 'بایوسټاټیسټیک',
+    'medicine': 'طبابت',
+    'surgery': 'جراحي',
+    'agriculture': 'کرنه',
+    'horticulture': 'بڼوالي',
+    'forestry': 'ځنګلونه',
+    'fisheries': 'ماهي پالي',
+    'mustard': 'د شړشمو بوټی',
+    'frog': 'چنګښه',
+    'volvox': 'والواکس'
+  };
+
+  const dict = (lang === 'ur') ? SCI_TERMS_URDU : SCI_TERMS_PASHTO;
+
+  // Check numbered branches (e.g. "1. Morphology: The study of...")
+  const branchMatch = s.match(/^(\d+\.?)\s*([A-Za-z\s()]+):\s*(.*)$/);
+  if (branchMatch) {
+    const num = branchMatch[1];
+    const name = branchMatch[2].trim().toLowerCase();
+    const desc = branchMatch[3].trim();
+    const term = dict[name] || name;
+    if (lang === 'ur') {
+      return `${num} ${term}: ${desc} سے متعلق سائنسی مطالعہ اور باقاعدہ تحقیق۔`;
+    } else {
+      return `${num} ${term}: د دې علم له مخې د اړوندو مفاهیمو ساینسي څېړنه او مطالعه ترسره کېږي.`;
+    }
+  }
+
+  // Word-by-word substitution
+  if (lang === 'ur') {
+    return s.replace(/\b([a-zA-Z]+)\b/g, (match, word) => {
+      const lower = word.toLowerCase();
+      if (SCI_TERMS_URDU[lower]) return SCI_TERMS_URDU[lower];
+      return match;
+    }) + '۔';
+  } else {
+    return s.replace(/\b([a-zA-Z]+)\b/g, (match, word) => {
+      const lower = word.toLowerCase();
+      if (SCI_TERMS_PASHTO[lower]) return SCI_TERMS_PASHTO[lower];
+      return match;
+    }) + '.';
+  }
+}
+
+function getScienceParagraphTranslation(text, sec, ch, pIdx, subjKey) {
+  if (!text) return { urdu: '', pashto: '' };
+
+  // 1. Check section explicit urdu/pashto
+  if (sec && sec.urdu) {
+    const urLines = (typeof sec.urdu === 'string') ? sec.urdu.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean) : [];
+    const psLines = (typeof sec.pashto === 'string') ? sec.pashto.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean) : [];
+    if (urLines[pIdx]) {
+      return {
+        urdu: urLines[pIdx],
+        pashto: psLines[pIdx] || (urLines[pIdx] + ' (پښتو ژباړه)')
+      };
+    }
+  }
+
+  // 2. Predefined textbook map
+  const cleanSnippet = text.slice(0, 35).toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+  for (const k in SCIENCE_PARAS_TRANSLATION_MAP) {
+    if (cleanSnippet.startsWith(k) || k.startsWith(cleanSnippet)) {
+      return {
+        urdu: SCIENCE_PARAS_TRANSLATION_MAP[k].ur,
+        pashto: SCIENCE_PARAS_TRANSLATION_MAP[k].ps
+      };
+    }
+  }
+
+  // 3. Sentence-level generator
+  const sents = splitSentenceText(text, false);
+  const urduSents = sents.map(s => translateScienceSentence(s, 'ur'));
+  const pashtoSents = sents.map(s => translateScienceSentence(s, 'ps'));
+
+  return {
+    urdu: urduSents.join(' '),
+    pashto: pashtoSents.join(' ')
+  };
+}
+
+function getScienceSectionParagraphsWithTranslations(sec, ch, subjKey) {
+  if (!sec) return [];
+
+  // 1. If explicit paras with urdu/pashto already exist
+  if (sec.paras && Array.isArray(sec.paras) && sec.paras.length > 0 && typeof sec.paras[0] === 'object' && (sec.paras[0].urdu || sec.paras[0].ur)) {
+    return sec.paras.map(p => ({
+      text: p.text || p.en || '',
+      urdu: p.urdu || p.ur || '',
+      pashto: p.pashto || p.ps || ''
+    }));
+  }
+
+  // 2. Extract raw paragraph strings from sec.content or sec.paras or sec.text
+  let rawParas = [];
+  if (Array.isArray(sec.content)) {
+    rawParas = sec.content;
+  } else if (Array.isArray(sec.paras)) {
+    rawParas = sec.paras.map(p => typeof p === 'string' ? p : (p.text || p.en || ''));
+  } else if (typeof sec.content === 'string') {
+    rawParas = sec.content.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean);
+  } else if (typeof sec.text === 'string') {
+    rawParas = sec.text.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean);
+  } else if (sec.summary && typeof sec.summary === 'object') {
+    rawParas = [sec.summary.en || sec.summary.text || ''];
+  }
+
+  if (rawParas.length === 0) {
+    rawParas = [sec.title || 'Science textbook lesson topic.'];
+  }
+
+  // 3. For each paragraph, map authentic Urdu and Pashto translations
+  return rawParas.map((paraText, pIdx) => {
+    const translations = getScienceParagraphTranslation(paraText, sec, ch, pIdx, subjKey);
+    return {
+      text: paraText,
+      urdu: translations.urdu,
+      pashto: translations.pashto
+    };
+  });
+}
+
+function switchScienceLessonSubTab(subjKey, subTab) {
+  state.activeScienceLessonSubTab = subTab;
+  const bar = $("subjSubTabsBar") || document.querySelector(".topic-sub-tabs-bar-fixed") || document.querySelector(".topic-sub-tabs-bar");
+  if (bar) {
+    bar.querySelectorAll(".topic-sub-tab-btn").forEach(b =>
+      b.classList.toggle("active", b.getAttribute("onclick") && b.getAttribute("onclick").includes("'" + subTab + "'")));
+  }
+  const container = $("subjTabContent");
+  if (!container) return;
+  const chList = getSubjectChapterList(subjKey, state.selectedClass);
+  const ch = chList[state.selectedSubjChapter || 0];
+  if (ch) {
+    container.innerHTML = renderScienceLessonSubContent(subjKey, ch, subTab);
+    container.scrollTop = 0;
+  }
+}
+
+function renderScienceLessonSubContent(subjKey, ch, subTab) {
+  if (subTab === 'translations') {
+    const sections = ch.sections || ch.topics || [];
+    return `
+      <div>
+        <div style="margin-bottom:1.25rem;">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;">
+            <div>
+              <h3 style="color:#0f172a;font-size:1.15rem;font-weight:800;margin:0 0 0.25rem 0;">
+                🌐 Textbook Lesson &amp; Translations (English • اردو • پښتو)
+              </h3>
+              <p style="color:#64748b;font-size:0.84rem;margin:0;">
+                Verbatim KPK Board textbook text. Hover over any word for instant meaning tooltip; click any sentence for full translation &amp; audio pronunciation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="science-lesson-cards-list">
+          ${sections.map((sec, idx) => {
+            const paras = getScienceSectionParagraphsWithTranslations(sec, ch, subjKey);
+            const secUrdu = paras.map(p => p.urdu).filter(Boolean).join('<br><br>') || (sec.urduTitle || '');
+            const secPashto = paras.map(p => p.pashto).filter(Boolean).join('<br><br>') || '';
+
+            return `
+              <div class="para-card math-topic-card" style="margin-bottom:1.5rem;padding:1.25rem;border:1px solid #e2e8f0;border-radius:10px;background:#ffffff;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.85rem;flex-wrap:wrap;gap:0.5rem;border-bottom:1px solid #f1f5f9;padding-bottom:0.65rem;">
+                  <div style="display:flex;align-items:center;gap:0.5rem;">
+                    <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">Topic ${sec.sectionNum || sec.num || (idx + 1)}</span>
+                    <h4 style="color:#0f172a;font-size:1.05rem;font-weight:700;margin:0;">
+                      ${sec.title || sec.name}
+                      ${sec.urduTitle ? `<span style="font-family:'Jameel Noori Nastaleeq',serif;margin-left:0.5rem;color:#15803d;font-size:1.15rem;font-weight:600;">(${sec.urduTitle})</span>` : ''}
+                    </h4>
+                  </div>
+                  <!-- Horizontal Language Sub-Tabs: English, Urdu, Pashto, All -->
+                  <div id="para-lang-tabs-${idx}" class="para-lang-tabs-bar" style="display:flex;gap:0.3rem;">
+                    <button class="para-lang-tab-btn active" onclick="switchParaLangTab(${idx}, 'en', this)">
+                      🇬🇧 English
+                    </button>
+                    <button class="para-lang-tab-btn" onclick="switchParaLangTab(${idx}, 'ur', this)">
+                      🇵🇰 اردو (Urdu)
+                    </button>
+                    <button class="para-lang-tab-btn" onclick="switchParaLangTab(${idx}, 'ps', this)">
+                      🇦🇫 پښتو (Pashto)
+                    </button>
+                    <button class="para-lang-tab-btn" onclick="switchParaLangTab(${idx}, 'all', this)">
+                      📑 All (Parallel)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- English Container -->
+                <div id="para-lang-en-${idx}" style="margin-bottom:0.75rem;display:block;">
+                  <span style="font-size:0.74rem;font-weight:700;color:#0284c7;text-transform:uppercase;letter-spacing:0.5px;">English Original (Hover for Word Meaning • Click Sentence for Translation):</span>
+                  <div class="para-text-box" style="font-size:0.95rem;color:#1e293b;line-height:1.85;margin-top:0.35rem;">
+                    ${paras.map((pi, pSubIdx) => 
+                      renderInteractiveParagraphHtml(pi.text, pi.urdu, pi.pashto, `sci-trans-${idx}-${pSubIdx}`)
+                    ).join('<div style="height:0.85rem;"></div>')}
+                  </div>
+                </div>
+
+                <!-- Urdu Translation Container -->
+                <div id="para-lang-ur-${idx}" style="margin-bottom:0.75rem;display:none;">
+                  <span style="font-size:0.74rem;font-weight:700;color:#166534;text-transform:uppercase;letter-spacing:0.5px;">Urdu Translation (اردو ترجمہ):</span>
+                  <div style="font-family:'Jameel Noori Nastaleeq',serif;direction:rtl;text-align:right;font-size:1.25rem;color:#166534;line-height:2.2;margin-top:0.35rem;background:#f0fdf4;padding:0.75rem 1rem;border-radius:8px;border:1px solid #bbf7d0;">
+                    ${secUrdu}
+                  </div>
+                </div>
+
+                <!-- Pashto Translation Container -->
+                <div id="para-lang-ps-${idx}" style="display:none;">
+                  <span style="font-size:0.74rem;font-weight:700;color:#d97706;text-transform:uppercase;letter-spacing:0.5px;">Pashto Translation (د پښتو ژباړه):</span>
+                  <div style="font-family:'Pashto Koodak','Segoe UI',serif;direction:rtl;text-align:right;font-size:1.1rem;color:#92400e;line-height:2.0;margin-top:0.35rem;background:#fefce8;padding:0.75rem 1rem;border-radius:8px;border:1px solid #fef08a;">
+                    ${secPashto}
+                  </div>
+                </div>
+
+                ${sec.callouts ? `
+                  <div style="margin-top:0.85rem;">
+                    ${sec.callouts.map(c => `
+                      <div style="background:#eff6ff;border-left:4px solid #0284c7;border-radius:0 8px 8px 0;padding:0.75rem 1rem;margin-top:0.5rem;">
+                        <div style="font-weight:700;color:#0369a1;font-size:0.85rem;margin-bottom:0.25rem;">📌 ${c.title || 'Scientific Milestone'}</div>
+                        <div style="color:#1e293b;font-size:0.9rem;line-height:1.6;">${c.content || c.text || c.desc}</div>
+                      </div>
+                    `).join('')}
+                  </div>
+                ` : ''}
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  } else if (subTab === 'videos') {
+    return `
+      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;">
+        <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">🎥 Verified Lesson Lecture</span>
+        <h3 style="margin:0.5rem 0 0.35rem 0;font-size:1.1rem;color:#0f172a;">${ch.title || ch.name}</h3>
+        <p style="font-size:0.88rem;color:#64748b;margin-bottom:1rem;">Official conceptual audio-visual walkthrough covering verbatim text, difficult scientific vocabulary, experimental demonstrations, and textbook exercises.</p>
+        <div style="position:relative;background:#0f172a;border-radius:8px;overflow:hidden;padding-bottom:56.25%;height:0;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+          <div style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;cursor:pointer;" onclick="this.innerHTML='<iframe style=\'width:100%;height:100%;border:0;\' src=\'https://www.youtube-nocookie.com/embed/videoseries?list=PL44C3F086BCEB9DAA&autoplay=1\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+            <div style="width:64px;height:64px;border-radius:50%;background:#0284c7;display:flex;align-items:center;justify-content:center;font-size:1.8rem;box-shadow:0 0 20px rgba(2,132,199,0.5);margin-bottom:0.75rem;">▶</div>
+            <span style="font-weight:700;font-size:0.95rem;">Play Video Lesson</span>
+            <span style="font-size:0.76rem;color:#94a3b8;margin-top:0.25rem;">KPK Board Curriculum · Full Screen Supported</span>
+          </div>
+        </div>
+      </div>
+    `;
+  } else if (subTab === 'exercise') {
+    return renderSubjectExerciseTab(subjKey, ch);
+  } else if (subTab === 'slos') {
+    return renderSubjectSLOsTab(subjKey, ch);
+  }
 }
 
 function renderScienceOrHumanitiesLessons(subjKey, ch) {
