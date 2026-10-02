@@ -9166,7 +9166,7 @@ function renderActiveCategoryWorkArea() {
     </div>
 
     <!-- Question Bank Compact Accordions -->
-    <div style="display:flex;flex-direction:column;gap:0.4rem;max-height:360px;overflow-y:auto;padding-right:2px;scrollbar-width:thin;">
+    <div class="q-bank-accordion-scroll" style="display:flex;flex-direction:column;gap:0.45rem;max-height:500px;overflow-y:auto;padding-right:4px;">
       ${Object.keys(groupedByChapter).length === 0 ? `
         <div style="text-align:center;padding:1.5rem;background:#f8fafc;border:1px dashed #cbd5e1;border-radius:8px;font-size:0.78rem;color:#64748b;">
           No questions matching your filters. <button onclick="resetQuestionFilters()" style="color:#0284c7;background:none;border:none;cursor:pointer;font-weight:700;">Reset Filters</button>
