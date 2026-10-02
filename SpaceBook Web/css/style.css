@@ -6891,3 +6891,467 @@ body:has(.papers-creator-view) #page-content {
   justify-content: center;
   gap: 0.5rem;
 }
+
+/* ─── ENHANCED QUESTION PAPER GENERATOR WIZARD STYLES ───────────── */
+/* 1. Modal: "What do you want in this paper?" */
+.paper-blueprint-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: fadeInModal 0.2s ease-out;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.paper-blueprint-modal {
+  background: #ffffff;
+  border-radius: 14px;
+  width: 95%;
+  max-width: 880px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+}
+
+.paper-blueprint-header {
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #0284c7;
+}
+
+.paper-blueprint-body {
+  padding: 1.25rem;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  scrollbar-width: thin;
+}
+
+.pbm-section-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.55rem;
+  border-bottom: 1.5px solid #e2e8f0;
+  padding-bottom: 0.35rem;
+}
+
+.paper-blueprint-footer {
+  padding: 0.85rem 1.25rem;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+/* Category Grid in Modal */
+.paper-category-grid-modal {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.5rem;
+}
+
+.paper-cat-item-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.75rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.paper-cat-item-card:hover {
+  background: #f0f9ff;
+  border-color: #0284c7;
+}
+
+.paper-cat-item-card.selected {
+  background: #f0fdf4;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 1px #16a34a;
+}
+
+/* Marks Summary Strip */
+.paper-marks-summary-strip {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.paper-dist-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.76rem;
+}
+
+.paper-dist-table th {
+  background: #f1f5f9;
+  padding: 0.45rem 0.5rem;
+  text-align: left;
+  font-weight: 700;
+  color: #334155;
+  border-bottom: 1.5px solid #cbd5e1;
+}
+
+.paper-dist-table td {
+  padding: 0.45rem 0.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+/* Reorder List in Modal */
+.paper-reorder-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.paper-reorder-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.65rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.paper-reorder-btns {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.paper-reorder-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #334155;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.paper-reorder-btn:hover {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+}
+
+/* 2. Compact Live Paper Stats Box in Left Panel */
+.paper-live-stats-box {
+  background: linear-gradient(135deg, #f8fafc, #f0fdf4);
+  border: 1.5px solid #bbf7d0;
+  border-radius: 10px;
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.pls-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #166534;
+  border-bottom: 1px dashed #86efac;
+  padding-bottom: 0.3rem;
+}
+
+.pls-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.3rem;
+}
+
+.pls-metric-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.3rem 0.4rem;
+  text-align: center;
+}
+
+.pls-metric-label {
+  font-size: 0.6rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.pls-metric-val {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.pls-cat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  padding: 0.18rem 0;
+  color: #334155;
+}
+
+.pls-cat-row.completed {
+  font-weight: 700;
+  color: #15803d;
+}
+
+/* 3. Horizontal Stepper Tabs */
+.q-stepper-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0.15rem 0;
+}
+.q-stepper-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.q-stepper-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.32rem 0.6rem;
+  border-radius: 99px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #64748b;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.q-stepper-pill:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.q-stepper-pill.active {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.3);
+}
+
+.q-stepper-pill.completed {
+  background: #dcfce7;
+  color: #15803d;
+  border-color: #86efac;
+}
+
+/* 4. Filter Toolbar */
+.q-picker-toolbar {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.q-picker-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.q-source-pill {
+  padding: 0.22rem 0.55rem;
+  border-radius: 99px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.q-source-pill.active {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+/* 5. Chapter Accordions & Question Cards */
+.q-chapter-accordion {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+  margin-bottom: 0.45rem;
+}
+
+.q-chapter-header {
+  padding: 0.55rem 0.75rem;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 800;
+  font-size: 0.78rem;
+  color: #0f172a;
+  transition: background 0.15s ease;
+}
+
+.q-chapter-header:hover {
+  background: #f1f5f9;
+}
+
+.q-chapter-body {
+  padding: 0.5rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  background: #ffffff;
+}
+
+.q-topic-group-header {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #0284c7;
+  padding: 0.2rem 0.4rem;
+  background: #f0f9ff;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+}
+
+.q-item-card {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.5rem 0.65rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.q-item-card:hover {
+  border-color: #94a3b8;
+  background: #fbfcfe;
+}
+
+.q-item-card.selected {
+  border-color: #0284c7;
+  background: #f0f9ff;
+  box-shadow: 0 1px 4px rgba(2, 132, 199, 0.15);
+}
+
+.q-item-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.q-item-text {
+  font-size: 0.76rem;
+  color: #0f172a;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.q-item-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+}
+
+.q-badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.q-badge-ex {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.q-badge-slo {
+  background: #f3e8ff;
+  color: #7e22ce;
+  border: 1px solid #e9d5ff;
+}
+
+.q-badge-topic {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.q-badge-marks {
+  background: #dcfce7;
+  color: #15803d;
+  font-weight: 800;
+}
+
+/* 6. Sticky Navigation Bar in Left Panel */
+.paper-sticky-bottom-bar {
+  position: sticky;
+  bottom: 0;
+  background: #ffffff;
+  border-top: 1.5px solid #e2e8f0;
+  padding: 0.6rem 0.2rem 0.2rem 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  z-index: 10;
+}
+

@@ -8626,104 +8626,70 @@ function generateOfficialExamPaper(showNotification) {
 }
 
 let paperCreationState = {
-  currentStep: 1, // 1 to 8
-  completedSteps: [1],
+  workflowStage: "selection", // "selection" | "review"
   classId: "cls9",
   subjectId: "cls9-math",
   paperType: "annual",
   version: "A",
   seed: 1,
   showAnswerKey: false,
+  totalMarks: 75,
+  totalMarksOverride: "",
 
-  // Selected categories for the active subject
-  selectedCategories: ["mcqs", "sqs", "lqs"],
+  // User-selected categories in exact custom order
+  categoriesOrder: ["mcqs", "sqs", "lqs"],
+  activeCategoryIndex: 0, // Points to index in categoriesOrder
+
+  // Per-category allocations
+  categoryAllocations: {
+    mcqs: { count: 15, attempt: 15, marksPerQ: 1, totalMarks: 15, manuallyEdited: false },
+    sqs: { count: 9, attempt: 9, marksPerQ: 4, totalMarks: 36, manuallyEdited: false },
+    lqs: { count: 3, attempt: 3, marksPerQ: 8, totalMarks: 24, manuallyEdited: false },
+    wordsMeanings: { count: 10, attempt: 10, marksPerQ: 1, totalMarks: 10, manuallyEdited: false },
+    wordsOpposites: { count: 5, attempt: 5, marksPerQ: 1, totalMarks: 5, manuallyEdited: false },
+    wordsSimilars: { count: 5, attempt: 5, marksPerQ: 1, totalMarks: 5, manuallyEdited: false },
+    wordsUse: { count: 5, attempt: 5, marksPerQ: 1, totalMarks: 5, manuallyEdited: false },
+    grammar: { count: 5, attempt: 5, marksPerQ: 2, totalMarks: 10, manuallyEdited: false },
+    translation: { count: 1, attempt: 1, marksPerQ: 8, totalMarks: 8, manuallyEdited: false },
+    comprehension: { count: 1, attempt: 1, marksPerQ: 10, totalMarks: 10, manuallyEdited: false },
+    applications: { count: 1, attempt: 1, marksPerQ: 8, totalMarks: 8, manuallyEdited: false },
+    stories: { count: 1, attempt: 1, marksPerQ: 8, totalMarks: 8, manuallyEdited: false },
+    essays: { count: 1, attempt: 1, marksPerQ: 10, totalMarks: 10, manuallyEdited: false },
+    letters: { count: 1, attempt: 1, marksPerQ: 8, totalMarks: 8, manuallyEdited: false },
+    numericals: { count: 4, attempt: 3, marksPerQ: 4, totalMarks: 12, manuallyEdited: false },
+    theorems: { count: 2, attempt: 1, marksPerQ: 8, totalMarks: 8, manuallyEdited: false },
+    definitions: { count: 5, attempt: 5, marksPerQ: 2, totalMarks: 10, manuallyEdited: false },
+    derivations: { count: 2, attempt: 2, marksPerQ: 6, totalMarks: 12, manuallyEdited: false },
+    diagrams: { count: 2, attempt: 2, marksPerQ: 4, totalMarks: 8, manuallyEdited: false },
+    reactions: { count: 3, attempt: 2, marksPerQ: 4, totalMarks: 8, manuallyEdited: false },
+    programming: { count: 3, attempt: 2, marksPerQ: 6, totalMarks: 12, manuallyEdited: false },
+    algorithms: { count: 2, attempt: 2, marksPerQ: 5, totalMarks: 10, manuallyEdited: false },
+    codeOutput: { count: 3, attempt: 3, marksPerQ: 3, totalMarks: 9, manuallyEdited: false }
+  },
+
+  // Hand-picked question IDs per category: { [catId]: [qId1, qId2, ...] }
+  selectedQuestionsByCategory: {},
+
+  // Filters for Category Question Selector
+  qPickerSearch: "",
+  qPickerChapter: "all",
+  qPickerTopic: "all",
+  qPickerSource: "all", // "all", "exercise", "slo"
+  expandedChapters: {}, // Accordion state
 
   // MCQ Configuration
   mcqSettings: {
     samePage: true,
     omrBased: true,
-    omrQuestionAbove: true, // "question above the option?"
-    omrShowOptionWords: true, // "show the words in the options? or just A, B, C, D incircle"
-    columns: 2, // 1, 2, 3, or 4
+    omrQuestionAbove: true,
+    omrShowOptionWords: true,
+    columns: 2,
     count: 15,
-    optionsLayout: "horizontal", // "horizontal" or "vertical"
+    optionsLayout: "horizontal",
     marksPerMcq: 1,
     shuffleQuestions: false,
     shuffleOptions: false
   },
-
-  // Per-category settings
-  categorySettings: {
-    mcqs: { count: 15, attempt: 15, marksPerQ: 1 },
-    sqs: { count: 12, attempt: 9, marksPerQ: 4 },
-    lqs: { count: 4, attempt: 3, marksPerQ: 8 },
-    numericals: { count: 4, attempt: 3, marksPerQ: 5 },
-    definitions: { count: 5, attempt: 5, marksPerQ: 2 },
-    theorems: { count: 2, attempt: 1, marksPerQ: 8 },
-    wordsMeanings: { count: 8, attempt: 5, marksPerQ: 1 },
-    wordsOpposites: { count: 5, attempt: 5, marksPerQ: 1 },
-    wordsSimilars: { count: 5, attempt: 5, marksPerQ: 1 },
-    wordsUse: { count: 5, attempt: 5, marksPerQ: 1 },
-    grammar: { count: 5, attempt: 5, marksPerQ: 2 },
-    translation: { count: 2, attempt: 1, marksPerQ: 8 },
-    comprehension: { count: 1, attempt: 1, marksPerQ: 10 },
-    essays: { count: 1, attempt: 1, marksPerQ: 10 },
-    letters: { count: 1, attempt: 1, marksPerQ: 8 },
-    stories: { count: 1, attempt: 1, marksPerQ: 8 },
-    applications: { count: 1, attempt: 1, marksPerQ: 8 },
-    programming: { count: 3, attempt: 2, marksPerQ: 6 },
-    algorithms: { count: 2, attempt: 2, marksPerQ: 5 },
-    codeOutput: { count: 3, attempt: 3, marksPerQ: 3 },
-    diagrams: { count: 2, attempt: 2, marksPerQ: 4 },
-    reactions: { count: 3, attempt: 2, marksPerQ: 4 },
-    derivations: { count: 3, attempt: 2, marksPerQ: 6 }
-  },
-
-  // Selection source and strategy
-  questionSource: "mixed", // "exercise", "slo", "board", "mixed"
-  selectionStrategy: "balanced", // "random", "balanced", "manual", "slo"
-  difficultyDistribution: { easy: 30, medium: 50, hard: 20 },
-  manualSelectedQuestions: {},
-
-  // Paper Structure: Parts A, B, C, D, E
-  parts: [
-    {
-      id: "partA",
-      name: "SECTION — A (OBJECTIVE TYPE)",
-      instructions: "Note: Attempt all questions. Each question carries 1 mark. Fill the corresponding bubble or encircle the correct option (A, B, C, or D).",
-      category: "mcqs",
-      count: 15,
-      attempt: 15,
-      marksPerQ: 1,
-      totalMarks: 15,
-      showMarks: true,
-      startNewPage: false
-    },
-    {
-      id: "partB",
-      name: "SECTION — B (SHORT ANSWER QUESTIONS)",
-      instructions: "Note: Attempt any NINE (9) questions from this section. All questions carry equal marks (4 Marks each).",
-      category: "sqs",
-      count: 12,
-      attempt: 9,
-      marksPerQ: 4,
-      totalMarks: 36,
-      showMarks: true,
-      startNewPage: false
-    },
-    {
-      id: "partC",
-      name: "SECTION — C (LONG & DETAILED QUESTIONS)",
-      instructions: "Note: Attempt any THREE (3) questions from this section. Each question carries 8 marks (sub-parts carry equal 4 marks each).",
-      category: "lqs",
-      count: 4,
-      attempt: 3,
-      marksPerQ: 8,
-      totalMarks: 24,
-      showMarks: true,
-      startNewPage: false
-    }
-  ],
 
   // Header & General Information
   institutionName: "KPK BOARD MODEL HIGH SCHOOL & COLLEGE, PESHAWAR",
@@ -8733,9 +8699,7 @@ let paperCreationState = {
   paperCode: "SET-A-26",
   date: "15 / 04 / 2026",
   duration: "2:30 Hours",
-  startTime: "",
-  endTime: "",
-  numberingStyle: "Q1", // "Q1", "1", "a", "i"
+  numberingStyle: "Q1", // "Q1", "1", "i"
   generalInstructions: [
     "Attempt all sections according to the given instructions.",
     "Overwriting, erasing, or cutting in Section A (MCQs) is strictly prohibited.",
@@ -8747,321 +8711,37 @@ let paperCreationState = {
     paperSize: "A4",
     orientation: "portrait",
     margins: "normal",
-    fontSize: "medium",
-    avoidSplitting: true,
-    startPartsNewPage: false
-  },
-
-  // Modal filters
-  qBankFilterCategory: "all",
-  qBankFilterChapter: "all"
+    fontSize: "medium"
+  }
 };
 
-// ─── PAPERS MASTER RENDERER ──────────────────────────────
-function renderPapersView() {
-  state.page = "papers";
-  state.activeView = "papers";
-  setActiveNav("papers");
-
-  const subNavBar = $("subpage-nav-bar");
-  if (subNavBar) subNavBar.style.display = "none";
-  const dashHeader = $("dash-header");
-  if (dashHeader) dashHeader.style.display = "none";
-
-  // Validate state
-  const allClasses = DATA.classes || [];
-  if (!allClasses.find(c => c.id === paperCreationState.classId)) {
-    paperCreationState.classId = "cls9";
-  }
-  const currentClassSubjects = DATA.subjects[paperCreationState.classId] || [];
-  if (!currentClassSubjects.find(s => s.id === paperCreationState.subjectId)) {
-    paperCreationState.subjectId = currentClassSubjects[0] ? currentClassSubjects[0].id : "cls9-math";
-  }
-
-  // Ensure completedSteps contains currentStep
-  if (!paperCreationState.completedSteps.includes(paperCreationState.currentStep)) {
-    paperCreationState.completedSteps.push(paperCreationState.currentStep);
-  }
-
-  const stepsList = [
-    { num: 1, label: "Class", icon: "🏷️" },
-    { num: 2, label: "Subject", icon: "📖" },
-    { num: 3, label: "Question Types", icon: "🧩" },
-    { num: 4, label: "Question Settings", icon: "⚙️" },
-    { num: 5, label: "Paper Structure", icon: "📐" },
-    { num: 6, label: "Marks & Info", icon: "📊" },
-    { num: 7, label: "Preview", icon: "👁️" },
-    { num: 8, label: "Generate & Print", icon: "🖨️" }
-  ];
-
-  pageContent().innerHTML = `
-    <div class="papers-universe-wrapper papers-creator-view">
-      <!-- 1. Left Wizard Controller Panel -->
-      <aside class="paper-creator-sidebar" id="paperCreatorSidebar">
-        <!-- Header -->
-        <div class="pcs-header">
-          <div class="pcs-header-left">
-            <span style="font-size:1.25rem;">🖨️</span>
-            <div>
-              <div class="pcs-title">Question Paper Generator</div>
-              <div class="pcs-sub">Step-by-Step Official Exam Maker</div>
-            </div>
-          </div>
-          <button class="pcs-shuffle-btn" onclick="shufflePaperQuestions()" title="Shuffle questions and paper code" style="width:auto;padding:0.25rem 0.5rem;font-size:0.7rem;">
-            🎲 Shuffle
-          </button>
-        </div>
-
-        <!-- Progress Stepper Bar -->
-        <div class="pws-stepper-wrap">
-          <div class="pws-stepper">
-            ${stepsList.map(s => {
-              const isActive = s.num === paperCreationState.currentStep;
-              const isCompleted = paperCreationState.completedSteps.includes(s.num) && !isActive;
-              return `
-                <button class="pws-step-btn ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''}" 
-                        onclick="goToPaperWizardStep(${s.num})" 
-                        title="Step ${s.num}: ${s.label}">
-                  <span class="pws-num">${isCompleted ? '✓' : s.num}</span>
-                  <span>${s.label}</span>
-                </button>
-              `;
-            }).join('')}
-          </div>
-        </div>
-
-        <!-- Live Paper Summary Card (Removed per user request, validation warning preserved) -->
-        <div id="paperLiveSummaryContainer">
-          ${renderLivePaperSummaryWidget()}
-        </div>
-
-        <!-- Active Wizard Step Body -->
-        <div class="paper-step-container" id="paperStepContainer" style="flex:1;">
-          ${renderWizardCurrentStepHtml()}
-        </div>
-
-        <!-- Step Navigation Footer (Back / Continue) -->
-        <div class="paper-nav-footer">
-          <button class="paper-nav-btn paper-nav-btn-back" 
-                  onclick="prevPaperWizardStep()" 
-                  ${paperCreationState.currentStep === 1 ? 'disabled style="opacity:0.4;cursor:not-allowed;"' : ''}>
-            ← Back
-          </button>
-          <button class="paper-nav-btn paper-nav-btn-next" 
-                  onclick="nextPaperWizardStep()">
-            ${paperCreationState.currentStep === 8 ? '🖨️ Print Exam Paper Now' : (paperCreationState.currentStep === 7 ? 'Generate Exam Suite →' : (paperCreationState.currentStep === 6 ? 'View Paper Preview →' : 'Continue →'))}
-          </button>
-        </div>
-      </aside>
-
-      <!-- 2. Right Canvas: Authentic Board Exam Paper Preview -->
-      <main class="paper-preview-canvas" id="paperPreviewCanvas">
-        ${renderLiveExamPaperHtml()}
-      </main>
-    </div>
-
-    <!-- Optional Question Bank Modal -->
-    <div id="qBankModalContainer"></div>
-  `;
-}
-
-// ─── STEP NAVIGATION CONTROLS ────────────────────────────
-function goToPaperWizardStep(stepNum) {
-  if (stepNum < 1 || stepNum > 8) return;
-  paperCreationState.currentStep = stepNum;
-  if (!paperCreationState.completedSteps.includes(stepNum)) {
-    paperCreationState.completedSteps.push(stepNum);
-  }
-  renderPapersView();
-}
-
-function nextPaperWizardStep() {
-  if (paperCreationState.currentStep < 8) {
-    paperCreationState.currentStep++;
-    if (!paperCreationState.completedSteps.includes(paperCreationState.currentStep)) {
-      paperCreationState.completedSteps.push(paperCreationState.currentStep);
-    }
-    renderPapersView();
-  } else {
-    printOfficialExamPaper();
-  }
-}
-
-function prevPaperWizardStep() {
-  if (paperCreationState.currentStep > 1) {
-    paperCreationState.currentStep--;
-    renderPapersView();
-  }
-}
-
-// ─── LIVE SUMMARY WIDGET ─────────────────────────────────
-function renderLivePaperSummaryWidget() {
-  const clsName = getClassName(paperCreationState.classId);
-  const subj = getSelectedSubjectObj();
-  
-  // Calculate marks and counts
-  let grandTotal = 0;
-  let totalAttemptQs = 0;
-  const partsSummary = (paperCreationState.parts || []).map(p => {
-    const attempt = Number(p.attempt) || 0;
-    const marksPerQ = Number(p.marksPerQ) || 1;
-    const partMarks = attempt * marksPerQ;
-    p.totalMarks = partMarks;
-    grandTotal += partMarks;
-    totalAttemptQs += attempt;
-    return {
-      name: p.name.replace(/SECTION\s*—\s*/, '').split('(')[0].trim(),
-      cat: p.category,
-      calc: `${attempt} × ${marksPerQ} = ${partMarks}M`
-    };
-  });
-
-  paperCreationState.totalMarks = grandTotal;
-
-  // Validation Check
-  let validationWarning = "";
-  (paperCreationState.parts || []).forEach(p => {
-    if (Number(p.attempt) > Number(p.count)) {
-      validationWarning = `⚠️ ${p.name}: Attempt (${p.attempt}) cannot exceed total questions (${p.count})!`;
-    }
-  });
-
-  // Paper summary card widget is removed per user request.
-  // Return validation alert only if there is an active error.
-  if (validationWarning) {
-    return `
-      <div style="margin-bottom:0.75rem;padding:0.45rem 0.75rem;background:#fee2e2;border:1px solid #fca5a5;border-radius:6px;color:#991b1b;font-size:0.75rem;font-weight:700;">
-        ${validationWarning}
-      </div>
-    `;
-  }
-  return '';
-}
-
-// ─── DYNAMIC WIZARD STEP DISPATCHER ──────────────────────
-function renderWizardCurrentStepHtml() {
-  const step = paperCreationState.currentStep;
-  if (step === 1) return renderWizardStep1Class();
-  if (step === 2) return renderWizardStep2Subject();
-  if (step === 3) return renderWizardStep3QuestionTypes();
-  if (step === 4) return renderWizardStep4QuestionSettings();
-  if (step === 5) return renderWizardStep5PaperStructure();
-  if (step === 6) return renderWizardStep6MarksAndHeaders();
-  if (step === 7) return renderWizardStep7Preview();
-  if (step === 8) return renderWizardStep8GeneratePrint();
-  return renderWizardStep1Class();
-}
-
-// ─── STEP 1: SELECT CLASS ────────────────────────────────
-function renderWizardStep1Class() {
-  const allClasses = DATA.classes || [];
-  return `
-    <div class="paper-step-box">
-      <div class="paper-step-intro">
-        <div class="paper-step-title">Step 1 — Select Target Class</div>
-        <div class="paper-step-desc">Choose which academic grade you want to generate the examination paper for:</div>
-      </div>
-
-      <div class="paper-class-grid">
-        ${allClasses.map(c => `
-          <button class="paper-class-card ${c.id === paperCreationState.classId ? 'selected' : ''}" 
-                  onclick="onPaperClassSelect('${c.id}')">
-            <span style="font-size:1.35rem;">${c.emoji || '📚'}</span>
-            <div>
-              <div style="font-weight:800;font-size:0.82rem;color:#0f172a;">${c.name}</div>
-              <div style="font-size:0.68rem;color:#64748b;">${c.subjects || 8} Subjects Available</div>
-            </div>
-          </button>
-        `).join('')}
-      </div>
-    </div>
-  `;
-}
-
-function onPaperClassSelect(classId) {
-  paperCreationState.classId = classId;
-  const subjects = DATA.subjects[classId] || [];
-  paperCreationState.subjectId = subjects[0] ? subjects[0].id : "";
-  const categories = getSubjectCategories(paperCreationState.subjectId, classId);
-  paperCreationState.selectedCategories = categories.slice(0, 3).map(c => c.id);
-  // Auto advance to next step (Step 2: Subject) and smooth scroll
-  paperCreationState.currentStep = 2;
-  if (!paperCreationState.completedSteps.includes(2)) paperCreationState.completedSteps.push(2);
-  renderPapersView();
-  autoScrollPaperSidebar();
-}
-
-// ─── STEP 2: SELECT SUBJECT ──────────────────────────────
-function renderWizardStep2Subject() {
-  const clsName = getClassName(paperCreationState.classId);
-  const subjects = DATA.subjects[paperCreationState.classId] || [];
-
-  return `
-    <div class="paper-step-box">
-      <div class="paper-step-intro">
-        <div class="paper-step-title">Step 2 — Select Subject for ${clsName}</div>
-        <div class="paper-step-desc">Select the subject curriculum to draw exam questions from:</div>
-      </div>
-
-      <div class="paper-subject-grid">
-        ${subjects.map(s => `
-          <button class="paper-subject-card ${s.id === paperCreationState.subjectId ? 'selected' : ''}" 
-                  onclick="onPaperSubjectSelect('${s.id}')">
-            <div style="display:flex;align-items:center;gap:0.55rem;">
-              <span style="font-size:1.35rem;">${s.emoji || '📖'}</span>
-              <div style="text-align:left;">
-                <div style="font-weight:800;font-size:0.84rem;color:#0f172a;">
-                  ${s.name} ${s.nameUrdu ? `<span style="font-family:'Jameel Noori Nastaleeq',serif;font-size:0.9rem;color:#0284c7;">(${s.nameUrdu})</span>` : ''}
-                </div>
-                <div style="font-size:0.68rem;color:#64748b;">${s.chapters || 10} Units &amp; Comprehensive Question Bank</div>
-              </div>
-            </div>
-            <span style="font-size:0.75rem;color:#0284c7;font-weight:700;">Select →</span>
-          </button>
-        `).join('')}
-      </div>
-    </div>
-  `;
-}
-
-function onPaperSubjectSelect(subjId) {
-  paperCreationState.subjectId = subjId;
-  const categories = getSubjectCategories(subjId, paperCreationState.classId);
-  paperCreationState.selectedCategories = categories.slice(0, 3).map(c => c.id);
-  // Auto advance to next step (Step 3: Question Types) and smooth scroll
-  paperCreationState.currentStep = 3;
-  if (!paperCreationState.completedSteps.includes(3)) paperCreationState.completedSteps.push(3);
-  renderPapersView();
-  autoScrollPaperSidebar();
-}
-
-// ─── STEP 3: SUBJECT-AWARE QUESTION CATEGORIES ───────────
+// ─── SUBJECT CATEGORIES DISCOVERY ────────────────────────
 function getSubjectCategories(subjectId, classId) {
   const sid = (subjectId || "").toLowerCase();
   
   if (sid.includes("eng")) {
     return [
       { id: "mcqs", name: "MCQs", icon: "🎯", desc: "Textbook & grammar multiple choice" },
-      { id: "wordsMeanings", name: "Words — Meanings", icon: "📖", desc: "Vocabulary & glossary" },
+      { id: "wordsMeanings", name: "Words — Meanings / Vocabulary & Glossary", icon: "📖", desc: "Vocabulary & contextual glossary definitions" },
       { id: "wordsOpposites", name: "Words — Opposites", icon: "↔️", desc: "Antonyms & opposite pairs" },
-      { id: "wordsSimilars", name: "Words — Similars / مترادف", icon: "🔄", desc: "Synonyms & thesaurus pairs" },
+      { id: "wordsSimilars", name: "Words — Similars / مترادف", icon: "🔄", desc: "Synonyms & similar meaning words" },
       { id: "wordsUse", name: "Words — Use in Sentences", icon: "✍️", desc: "Sentence formation exercises" },
       { id: "sqs", name: "Short Questions", icon: "📝", desc: "Reading comprehension questions" },
       { id: "lqs", name: "Long Questions / Summary", icon: "📚", desc: "Themes, stanzas & chapter summaries" },
       { id: "applications", name: "Applications", icon: "📨", desc: "Formal school/college applications" },
-      { id: "stories", name: "Moral Stories", icon: "📜", desc: "Narrative stories with moral" },
-      { id: "essays", name: "Essays", icon: "🖋️", desc: "Descriptive essays" },
-      { id: "letters", name: "Letters", icon: "✉️", desc: "Informal letters" },
+      { id: "stories", name: "Moral Stories", icon: "📜", desc: "Narrative stories with moral lesson" },
+      { id: "essays", name: "Essays", icon: "🖋️", desc: "Descriptive essays & compositions" },
+      { id: "letters", name: "Letters", icon: "✉️", desc: "Informal letters & correspondence" },
       { id: "grammar", name: "Grammar & Tenses", icon: "🔍", desc: "Direct/indirect, voice, parts of speech" },
-      { id: "translation", name: "Translation (Eng to Urdu)", icon: "🌐", desc: "Paragraph translation" },
-      { id: "comprehension", name: "Comprehension Passage", icon: "📋", desc: "Unseen / seen reading passage" }
+      { id: "translation", name: "Translation (English → Urdu)", icon: "🌐", desc: "Textbook paragraph translation" },
+      { id: "comprehension", name: "Comprehension Passage", icon: "📋", desc: "Seen / unseen reading passage with questions" }
     ];
   }
 
   if (sid.includes("urdu")) {
     return [
       { id: "mcqs", name: "MCQs (کثیر الانتخابی سوالات)", icon: "🎯", desc: "متن اور قواعد سے معروضی سوالات" },
-      { id: "wordsMeanings", name: "الفاظ — معانی", icon: "📖", desc: "فرہنگ اور الفاظ کے معنی" },
+      { id: "wordsMeanings", name: "الفاظ — معانی / فرہنگ", icon: "📖", desc: "فرہنگ اور الفاظ کے مفاہیم" },
       { id: "wordsOpposites", name: "الفاظ — متضاد", icon: "↔️", desc: "متضاد الفاظ کے جوڑے" },
       { id: "wordsSimilars", name: "الفاظ — مترادف", icon: "🔄", desc: "ہم معنی الفاظ کے جوڑے" },
       { id: "wordsUse", name: "الفاظ — جملوں میں استعمال", icon: "✍️", desc: "بامعنی جملے بنانا" },
@@ -9072,7 +8752,8 @@ function getSubjectCategories(subjectId, classId) {
       { id: "stories", name: "کہانیاں", icon: "📜", desc: "نتیجہ خیز کہانیاں" },
       { id: "essays", name: "مضامین", icon: "🖋️", desc: "جامع ادبی مضامین" },
       { id: "letters", name: "خطوط", icon: "✉️", desc: "خطوط نویسی" },
-      { id: "grammar", name: "قواعد و انشاء", icon: "🔍", desc: "اسم، فعل، تذکیر و تانیث، محاورات" }
+      { id: "grammar", name: "قواعد و انشاء", icon: "🔍", desc: "اسم، فعل، تذکیر و تانیث، محاورات" },
+      { id: "comprehension", name: "عبارت فہمی / تفہیم عبارت", icon: "📋", desc: "پیراگراف پڑھ کر سوالات کے جوابات" }
     ];
   }
 
@@ -9151,474 +8832,211 @@ function getSubjectCategories(subjectId, classId) {
   ];
 }
 
-function renderWizardStep3QuestionTypes() {
+// ─── PAPERS MASTER RENDERER ──────────────────────────────
+function renderPapersView() {
+  state.page = "papers";
+  state.activeView = "papers";
+  setActiveNav("papers");
+
+  const subNavBar = $("subpage-nav-bar");
+  if (subNavBar) subNavBar.style.display = "none";
+  const dashHeader = $("dash-header");
+  if (dashHeader) dashHeader.style.display = "none";
+
+  // Validate Class & Subject
+  const allClasses = DATA.classes || [];
+  if (!allClasses.find(c => c.id === paperCreationState.classId)) {
+    paperCreationState.classId = "cls9";
+  }
+  const currentClassSubjects = DATA.subjects[paperCreationState.classId] || [];
+  if (!currentClassSubjects.find(s => s.id === paperCreationState.subjectId)) {
+    paperCreationState.subjectId = currentClassSubjects[0] ? currentClassSubjects[0].id : "cls9-math";
+  }
+
+  // Ensure default categories order if empty
+  if (!paperCreationState.categoriesOrder || paperCreationState.categoriesOrder.length === 0) {
+    const cats = getSubjectCategories(paperCreationState.subjectId, paperCreationState.classId);
+    paperCreationState.categoriesOrder = cats.slice(0, 3).map(c => c.id);
+    distributeBlueprintMarks(paperCreationState.totalMarks || 75, paperCreationState.categoriesOrder);
+  }
+
+  // Ensure active category index is valid
+  if (paperCreationState.activeCategoryIndex >= paperCreationState.categoriesOrder.length) {
+    paperCreationState.activeCategoryIndex = Math.max(0, paperCreationState.categoriesOrder.length - 1);
+  }
+
+  pageContent().innerHTML = `
+    <div class="papers-universe-wrapper papers-creator-view">
+      <!-- 1. Left Wizard Controller Panel -->
+      <aside class="paper-creator-sidebar" id="paperCreatorSidebar" style="position:relative;height:calc(100vh - 78px);overflow-y:auto;display:flex;flex-direction:column;gap:0.65rem;">
+        ${renderPaperGeneratorLeftPanel()}
+      </aside>
+
+      <!-- 2. Right Canvas: Authentic Board Exam Paper Live Preview -->
+      <main class="paper-preview-canvas" id="paperPreviewCanvas" style="height:calc(100vh - 78px);overflow-y:auto;">
+        ${renderLiveExamPaperHtml()}
+      </main>
+    </div>
+
+    <!-- Modals Container -->
+    <div id="paperBlueprintModalContainer"></div>
+    <div id="qBankModalContainer"></div>
+  `;
+}
+
+// ─── LEFT PANEL GENERATOR RENDERER ─────────────────────────
+function renderPaperGeneratorLeftPanel() {
+  const clsName = getClassName(paperCreationState.classId);
   const subj = getSelectedSubjectObj();
-  const availableCats = getSubjectCategories(paperCreationState.subjectId, paperCreationState.classId);
+  const allClasses = DATA.classes || [];
+  const subjects = DATA.subjects[paperCreationState.classId] || [];
 
   return `
-    <div class="paper-step-box">
-      <div class="paper-step-intro">
-        <div class="paper-step-title">Step 3 — Select Question Categories</div>
-        <div class="paper-step-desc">Choose which question types to include for ${subj.name}:</div>
-      </div>
-
-      <!-- Quick Presets -->
-      <div class="paper-cat-presets">
-        <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('board')">🏆 Official Board Set</button>
-        <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('obj')">🎯 Objective Only</button>
-        <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('subj')">📝 Subjective Only</button>
-        <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('all')">📑 Select All</button>
-        <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('clear')" style="color:#b91c1c;border-color:#fca5a5;">✕ Clear All</button>
-      </div>
-
-      <div class="paper-category-grid">
-        ${availableCats.map(cat => {
-          const isSelected = (paperCreationState.selectedCategories || []).includes(cat.id);
-          return `
-            <div class="paper-cat-card ${isSelected ? 'selected' : ''}" 
-                 onclick="togglePaperCategory('${cat.id}')">
-              <div style="display:flex;align-items:center;gap:0.45rem;">
-                <input type="checkbox" ${isSelected ? 'checked' : ''} onclick="event.stopPropagation(); togglePaperCategory('${cat.id}')">
-                <span style="font-size:1.15rem;">${cat.icon}</span>
-                <div>
-                  <div style="font-weight:700;font-size:0.78rem;color:#0f172a;">${cat.name}</div>
-                  <div style="font-size:0.65rem;color:#64748b;">${cat.desc}</div>
-                </div>
-              </div>
-              <span style="font-size:0.75rem;font-weight:800;color:${isSelected ? '#0284c7' : '#94a3b8'};">
-                ${isSelected ? '✓ Active' : '+ Add'}
-              </span>
-            </div>
-          `;
-        }).join('')}
-      </div>
-    </div>
-  `;
-}
-
-function togglePaperCategory(catId) {
-  const list = paperCreationState.selectedCategories || [];
-  const idx = list.indexOf(catId);
-  if (idx >= 0) {
-    // Allow unchecking completely so user can clear page / selection
-    list.splice(idx, 1);
-  } else {
-    list.push(catId);
-  }
-  paperCreationState.selectedCategories = list;
-  syncPaperPartsWithCategories();
-  renderPapersView();
-}
-
-function applyPaperCategoryPreset(presetKey) {
-  const availableCats = getSubjectCategories(paperCreationState.subjectId, paperCreationState.classId);
-  if (presetKey === 'board') {
-    paperCreationState.selectedCategories = availableCats.filter(c => ['mcqs', 'sqs', 'lqs'].includes(c.id)).map(c => c.id);
-  } else if (presetKey === 'obj') {
-    paperCreationState.selectedCategories = availableCats.filter(c => ['mcqs', 'wordsMeanings', 'definitions'].includes(c.id)).map(c => c.id);
-  } else if (presetKey === 'subj') {
-    paperCreationState.selectedCategories = availableCats.filter(c => c.id !== 'mcqs').slice(0, 3).map(c => c.id);
-  } else if (presetKey === 'all') {
-    paperCreationState.selectedCategories = availableCats.map(c => c.id);
-  } else if (presetKey === 'none' || presetKey === 'clear') {
-    paperCreationState.selectedCategories = [];
-  }
-  syncPaperPartsWithCategories();
-  renderPapersView();
-}
-
-function syncPaperPartsWithCategories() {
-  const cats = paperCreationState.selectedCategories;
-  const parts = [];
-
-  if (cats.includes('mcqs')) {
-    parts.push({
-      id: "partA",
-      name: "SECTION — A (OBJECTIVE TYPE)",
-      instructions: "Note: Attempt all questions. Each question carries 1 mark. Fill the corresponding bubble or encircle the correct option (A, B, C, or D).",
-      category: "mcqs",
-      count: paperCreationState.mcqSettings.count || 15,
-      attempt: paperCreationState.mcqSettings.count || 15,
-      marksPerQ: paperCreationState.mcqSettings.marksPerMcq || 1,
-      totalMarks: (paperCreationState.mcqSettings.count || 15) * (paperCreationState.mcqSettings.marksPerMcq || 1),
-      showMarks: true,
-      startNewPage: false
-    });
-  }
-
-  // Short questions or secondary categories
-  const sqCats = cats.filter(c => c !== 'mcqs' && c !== 'lqs');
-  if (sqCats.length > 0) {
-    const primaryCat = sqCats[0];
-    const catConf = paperCreationState.categorySettings[primaryCat] || { count: 12, attempt: 9, marksPerQ: 4 };
-    parts.push({
-      id: "partB",
-      name: "SECTION — B (SHORT ANSWER QUESTIONS)",
-      instructions: `Note: Attempt any ${catConf.attempt} questions from this section. All questions carry equal marks (${catConf.marksPerQ} Marks each).`,
-      category: primaryCat,
-      count: catConf.count,
-      attempt: catConf.attempt,
-      marksPerQ: catConf.marksPerQ,
-      totalMarks: catConf.attempt * catConf.marksPerQ,
-      showMarks: true,
-      startNewPage: false
-    });
-  }
-
-  // Long questions
-  if (cats.includes('lqs')) {
-    const lqConf = paperCreationState.categorySettings.lqs || { count: 4, attempt: 3, marksPerQ: 8 };
-    parts.push({
-      id: "partC",
-      name: "SECTION — C (LONG & DETAILED QUESTIONS)",
-      instructions: `Note: Attempt any ${lqConf.attempt} questions from this section. Each question carries ${lqConf.marksPerQ} marks (sub-parts carry equal marks).`,
-      category: "lqs",
-      count: lqConf.count,
-      attempt: lqConf.attempt,
-      marksPerQ: lqConf.marksPerQ,
-      totalMarks: lqConf.attempt * lqConf.marksPerQ,
-      showMarks: true,
-      startNewPage: false
-    });
-  }
-
-  if (parts.length > 0) {
-    paperCreationState.parts = parts;
-  }
-}
-
-// ─── STEP 4: QUESTION & MCQ SETTINGS ─────────────────────
-function renderWizardStep4QuestionSettings() {
-  const hasMcqs = (paperCreationState.selectedCategories || []).includes('mcqs');
-  const otherCats = (paperCreationState.selectedCategories || []).filter(c => c !== 'mcqs');
-  const availableCats = getSubjectCategories(paperCreationState.subjectId, paperCreationState.classId);
-
-  return `
-    <div class="paper-step-box">
-      <div class="paper-step-intro">
-        <div class="paper-step-title">Step 4 — Question &amp; MCQ Settings</div>
-        <div class="paper-step-desc">Configure layout, question counts, marks, OMR bubbles, and question sources:</div>
-      </div>
-
-      <!-- MCQ Configuration Box -->
-      ${hasMcqs ? `
-        <div class="paper-settings-box">
-          <div class="paper-settings-box-title">
-            <span>🎯 MCQ Section Settings</span>
-            <span style="font-size:0.68rem;color:#0284c7;font-weight:700;">
-              Total: ${(paperCreationState.mcqSettings.count || 15) * (paperCreationState.mcqSettings.marksPerMcq || 1)} Marks
-            </span>
-          </div>
-
-          <!-- A. Print on same page? -->
-          <div class="paper-row-field">
-            <span>Print MCQs on same page with other questions?</span>
-            <div class="paper-segmented-btn-group">
-              <button class="paper-seg-btn ${paperCreationState.mcqSettings.samePage ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('samePage', true)">Yes (Same Page)</button>
-              <button class="paper-seg-btn ${!paperCreationState.mcqSettings.samePage ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('samePage', false)">No (Separate)</button>
-            </div>
-          </div>
-
-          <!-- B. OMR-Based MCQs? -->
-          <div class="paper-row-field">
-            <div>
-              <div>Use OMR-Based MCQs?</div>
-              <div style="font-size:0.62rem;color:#64748b;">Students shade bubbles: ○ A ○ B ○ C ○ D</div>
-            </div>
-            <div class="paper-segmented-btn-group">
-              <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrBased ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('omrBased', true)">Yes (OMR Bubbles)</button>
-              <button class="paper-seg-btn ${!paperCreationState.mcqSettings.omrBased ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('omrBased', false)">No (Letters A, B)</button>
-            </div>
-          </div>
-
-          <!-- B1. Nested Question: If OMR-Based is Yes -> Question above the option? -->
-          ${paperCreationState.mcqSettings.omrBased ? `
-            <div class="paper-row-field" style="background:#f0fdf4;padding:0.4rem 0.6rem;border-radius:6px;border:1px solid #bbf7d0;">
-              <div>
-                <div style="font-weight:700;color:#166534;">Question above the option?</div>
-                <div style="font-size:0.62rem;color:#15803d;">Position question text directly on top of choices</div>
-              </div>
-              <div class="paper-segmented-btn-group">
-                <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrQuestionAbove !== false ? 'active' : ''}" 
-                        onclick="updatePaperMcqSetting('omrQuestionAbove', true)">Yes (On Top)</button>
-                <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrQuestionAbove === false ? 'active' : ''}" 
-                        onclick="updatePaperMcqSetting('omrQuestionAbove', false)">No (Inline)</button>
-              </div>
-            </div>
-
-            <!-- B2. Nested Question: Show words in options or just A, B, C, D in circle? -->
-            <div class="paper-row-field" style="background:#f0fdf4;padding:0.4rem 0.6rem;border-radius:6px;border:1px solid #bbf7d0;">
-              <div>
-                <div style="font-weight:700;color:#166534;">Options Content Display:</div>
-                <div style="font-size:0.62rem;color:#15803d;">Display choice text or pure circled letters</div>
-              </div>
-              <div class="paper-segmented-btn-group">
-                <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrShowOptionWords !== false ? 'active' : ''}" 
-                        onclick="updatePaperMcqSetting('omrShowOptionWords', true)">Show Words</button>
-                <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrShowOptionWords === false ? 'active' : ''}" 
-                        onclick="updatePaperMcqSetting('omrShowOptionWords', false)">Just A, B, C, D</button>
-              </div>
-            </div>
-          ` : ''}
-
-          <!-- C. Number of Columns (1, 2, 3, 4 Columns) -->
-          <div class="paper-row-field">
-            <span>MCQ Layout Columns:</span>
-            <div class="paper-segmented-btn-group">
-              <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 1 ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('columns', 1)">1 Col</button>
-              <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 2 ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('columns', 2)">2 Cols</button>
-              <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 3 ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('columns', 3)">3 Cols</button>
-              <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 4 ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('columns', 4)">4 Cols</button>
-            </div>
-          </div>
-
-          <!-- D. Total MCQs -->
-          <div class="paper-row-field">
-            <span>Total Number of MCQs:</span>
-            <div style="display:flex;align-items:center;gap:0.35rem;">
-              <div class="paper-stepper-control">
-                <button class="paper-stepper-btn" onclick="changePaperQty('mcqs', 'count', -1)">-</button>
-                <input class="paper-stepper-input" type="number" value="${paperCreationState.mcqSettings.count || 15}" 
-                       onchange="updatePaperMcqSetting('count', parseInt(this.value) || 15)">
-                <button class="paper-stepper-btn" onclick="changePaperQty('mcqs', 'count', 1)">+</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Presets for MCQs -->
-          <div style="display:flex;gap:0.25rem;margin:0.25rem 0 0.45rem 0;">
-            ${[5, 10, 12, 15, 20, 25, 30].map(cnt => `
-              <button class="paper-preset-chip ${paperCreationState.mcqSettings.count === cnt ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('count', ${cnt})">${cnt} Qs</button>
-            `).join('')}
-          </div>
-
-          <!-- E. Options Layout: Horizontal vs Vertical -->
-          <div class="paper-row-field">
-            <span>Options Display Layout:</span>
-            <div class="paper-segmented-btn-group">
-              <button class="paper-seg-btn ${paperCreationState.mcqSettings.optionsLayout === 'horizontal' ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('optionsLayout', 'horizontal')">Horizontal (A B C D)</button>
-              <button class="paper-seg-btn ${paperCreationState.mcqSettings.optionsLayout === 'vertical' ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('optionsLayout', 'vertical')">Vertical (Stacked)</button>
-            </div>
-          </div>
-
-          <!-- F. Marks per MCQ -->
-          <div class="paper-row-field">
-            <span>Marks per MCQ:</span>
-            <div class="paper-stepper-control">
-              <button class="paper-stepper-btn" onclick="changePaperQty('mcqs', 'marksPerMcq', -1)">-</button>
-              <input class="paper-stepper-input" type="number" value="${paperCreationState.mcqSettings.marksPerMcq || 1}" 
-                     onchange="updatePaperMcqSetting('marksPerMcq', parseInt(this.value) || 1)">
-              <button class="paper-stepper-btn" onclick="changePaperQty('mcqs', 'marksPerMcq', 1)">+</button>
-            </div>
-          </div>
-        </div>
-      ` : ''}
-
-      <!-- Other Category Settings -->
-      ${otherCats.map(catId => {
-        const catMeta = availableCats.find(c => c.id === catId) || { name: catId, icon: "📝" };
-        const conf = paperCreationState.categorySettings[catId] || { count: 10, attempt: 8, marksPerQ: 4 };
-        const availableMarks = conf.count * conf.marksPerQ;
-        const attemptMarks = conf.attempt * conf.marksPerQ;
-
-        return `
-          <div class="paper-settings-box">
-            <div class="paper-settings-box-title">
-              <span>${catMeta.icon} ${catMeta.name} Settings</span>
-              <span style="font-size:0.68rem;color:#16a34a;font-weight:700;">
-                Attempt: ${attemptMarks} Marks (Avail: ${availableMarks}M)
-              </span>
-            </div>
-
-            <div class="paper-row-field">
-              <span>Total Questions Provided:</span>
-              <div class="paper-stepper-control">
-                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'count', -1)">-</button>
-                <input class="paper-stepper-input" type="number" value="${conf.count}" 
-                       onchange="updatePaperCategorySetting('${catId}', 'count', parseInt(this.value) || 10)">
-                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'count', 1)">+</button>
-              </div>
-            </div>
-
-            <div class="paper-row-field">
-              <span>Questions to Attempt:</span>
-              <div class="paper-stepper-control">
-                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'attempt', -1)">-</button>
-                <input class="paper-stepper-input" type="number" value="${conf.attempt}" 
-                       onchange="updatePaperCategorySetting('${catId}', 'attempt', parseInt(this.value) || 8)">
-                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'attempt', 1)">+</button>
-              </div>
-            </div>
-
-            <div class="paper-row-field">
-              <span>Marks per Question:</span>
-              <div class="paper-stepper-control">
-                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'marksPerQ', -1)">-</button>
-                <input class="paper-stepper-input" type="number" value="${conf.marksPerQ}" 
-                       onchange="updatePaperCategorySetting('${catId}', 'marksPerQ', parseInt(this.value) || 4)">
-                <button class="paper-stepper-btn" onclick="changePaperQty('${catId}', 'marksPerQ', 1)">+</button>
-              </div>
-            </div>
-          </div>
-        `;
-      }).join('')}
-
-      <!-- Question Selection Source & Method -->
-      <div class="paper-settings-box">
-        <div class="paper-settings-box-title">
-          <span>📚 Question Selection Engine</span>
-          <button class="pcs-print-btn" onclick="openQuestionBankModal()" style="width:auto;padding:0.2rem 0.5rem;font-size:0.68rem;">
-            🔍 Open Question Bank
-          </button>
-        </div>
-
-        <div class="paper-row-field">
-          <span>Question Source:</span>
-          <select class="pcs-select" style="width:160px;" onchange="paperCreationState.questionSource = this.value; updatePaperPreview();">
-            <option value="mixed" ${paperCreationState.questionSource === 'mixed' ? 'selected' : ''}>Full Curriculum Mixed</option>
-            <option value="exercise" ${paperCreationState.questionSource === 'exercise' ? 'selected' : ''}>Textbook Exercises Only</option>
-            <option value="slo" ${paperCreationState.questionSource === 'slo' ? 'selected' : ''}>SLO Conceptual Drills</option>
-            <option value="board" ${paperCreationState.questionSource === 'board' ? 'selected' : ''}>Board / Past Exam Bank</option>
-          </select>
-        </div>
-
-        <div class="paper-row-field">
-          <span>Selection Mode:</span>
-          <select class="pcs-select" style="width:160px;" onchange="paperCreationState.selectionStrategy = this.value; updatePaperPreview();">
-            <option value="balanced" ${paperCreationState.selectionStrategy === 'balanced' ? 'selected' : ''}>Balanced by Chapter</option>
-            <option value="random" ${paperCreationState.selectionStrategy === 'random' ? 'selected' : ''}>Random Non-Repeating</option>
-            <option value="slo" ${paperCreationState.selectionStrategy === 'slo' ? 'selected' : ''}>Auto-Select by SLOs</option>
-            <option value="manual" ${paperCreationState.selectionStrategy === 'manual' ? 'selected' : ''}>Hand-Pick from Bank</option>
-          </select>
+    <!-- Top Header -->
+    <div class="pcs-header" style="padding-bottom:0.4rem;border-bottom:1px solid #e2e8f0;">
+      <div class="pcs-header-left">
+        <span style="font-size:1.25rem;">🖨️</span>
+        <div>
+          <div class="pcs-title">Question Paper Generator</div>
+          <div class="pcs-sub">Step-by-Step Official Exam Maker</div>
         </div>
       </div>
-    </div>
-  `;
-}
-
-function updatePaperMcqSetting(key, val) {
-  paperCreationState.mcqSettings[key] = val;
-  // Sync with Part A
-  const partA = (paperCreationState.parts || []).find(p => p.category === 'mcqs');
-  if (partA) {
-    if (key === 'count') {
-      partA.count = val;
-      partA.attempt = val;
-    }
-    if (key === 'marksPerMcq') {
-      partA.marksPerQ = val;
-    }
-    partA.totalMarks = (partA.attempt || 15) * (partA.marksPerQ || 1);
-  }
-  updatePaperPreview();
-  renderPapersView();
-}
-
-function updatePaperCategorySetting(catId, field, val) {
-  if (!paperCreationState.categorySettings[catId]) {
-    paperCreationState.categorySettings[catId] = { count: 10, attempt: 8, marksPerQ: 4 };
-  }
-  paperCreationState.categorySettings[catId][field] = val;
-  
-  // Sync with matching Part
-  const part = (paperCreationState.parts || []).find(p => p.category === catId);
-  if (part) {
-    part[field] = val;
-    part.totalMarks = (part.attempt || 0) * (part.marksPerQ || 0);
-  }
-  updatePaperPreview();
-  renderPapersView();
-}
-
-function changePaperQty(catId, field, delta) {
-  if (catId === 'mcqs') {
-    const current = paperCreationState.mcqSettings[field] || 1;
-    const nextVal = Math.max(1, current + delta);
-    updatePaperMcqSetting(field, nextVal);
-  } else {
-    const conf = paperCreationState.categorySettings[catId] || { count: 10, attempt: 8, marksPerQ: 4 };
-    const current = conf[field] || 1;
-    const nextVal = Math.max(1, current + delta);
-    updatePaperCategorySetting(catId, field, nextVal);
-  }
-}
-
-// ─── STEP 5: PAPER STRUCTURE (PARTS A, B, C, D, E) ────────
-function renderWizardStep5PaperStructure() {
-  const parts = paperCreationState.parts || [];
-
-  return `
-    <div class="paper-step-box">
-      <div class="paper-step-intro">
-        <div class="paper-step-title">Step 5 — Paper Structure (Parts A, B, C, D)</div>
-        <div class="paper-step-desc">Organize the examination paper into structured sections with dedicated instructions:</div>
-      </div>
-
-      <div style="display:flex;justify-content:flex-end;margin-bottom:0.4rem;">
-        <button class="pcs-print-btn" onclick="addPaperCustomPart()" style="width:auto;padding:0.25rem 0.65rem;font-size:0.72rem;">
-          ➕ Add Section / Part
+      <div style="display:flex;gap:0.3rem;">
+        <button class="pcs-shuffle-btn" onclick="shufflePaperQuestions()" title="Shuffle question numbers and seed" style="width:auto;padding:0.25rem 0.5rem;font-size:0.7rem;">
+          🎲 Shuffle
+        </button>
+        <button class="pcs-print-btn" onclick="openExamSettingsModal()" title="Paper code, date, instructions" style="width:auto;padding:0.25rem 0.5rem;font-size:0.7rem;">
+          ⚙️ Info
         </button>
       </div>
+    </div>
 
-      <div class="paper-parts-list">
-        ${parts.map((part, pIdx) => `
-          <div class="paper-part-card" id="part-card-${part.id}">
-            <div class="paper-part-top">
-              <input type="text" class="pcs-input" style="font-weight:800;width:75%;" 
-                     value="${part.name}" oninput="updatePaperPartField('${part.id}', 'name', this.value)">
-              ${parts.length > 1 ? `
-                <button onclick="removePaperPart('${part.id}')" title="Delete Part" 
-                        style="background:#fee2e2;color:#dc2626;border:none;border-radius:4px;padding:0.2rem 0.45rem;font-size:0.68rem;cursor:pointer;font-weight:700;">
-                  ✕ Remove
-                </button>
-              ` : ''}
-            </div>
+    <!-- Class & Subject Quick Selector Bar -->
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:0.45rem 0.6rem;display:flex;flex-direction:column;gap:0.35rem;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;">
+        <div>
+          <label style="font-size:0.62rem;font-weight:700;color:#64748b;display:block;margin-bottom:0.15rem;">Class / Grade:</label>
+          <select class="pcs-select" style="width:100%;font-size:0.74rem;padding:0.25rem 0.4rem;font-weight:700;" onchange="onPaperClassSelect(this.value)">
+            ${allClasses.map(c => `<option value="${c.id}" ${c.id === paperCreationState.classId ? 'selected' : ''}>${c.name}</option>`).join('')}
+          </select>
+        </div>
+        <div>
+          <label style="font-size:0.62rem;font-weight:700;color:#64748b;display:block;margin-bottom:0.15rem;">Subject:</label>
+          <select class="pcs-select" style="width:100%;font-size:0.74rem;padding:0.25rem 0.4rem;font-weight:700;" onchange="onPaperSubjectSelect(this.value)">
+            ${subjects.map(s => `<option value="${s.id}" ${s.id === paperCreationState.subjectId ? 'selected' : ''}>${s.emoji || '📖'} ${s.name}</option>`).join('')}
+          </select>
+        </div>
+      </div>
 
-            <!-- Instructions -->
-            <div style="margin-bottom:0.4rem;">
-              <label style="font-size:0.66rem;font-weight:700;color:#64748b;">Section Instructions / Rubric:</label>
-              <textarea class="pcs-input" style="height:48px;font-size:0.72rem;resize:vertical;" 
-                        oninput="updatePaperPartField('${part.id}', 'instructions', this.value)">${part.instructions}</textarea>
-            </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding-top:0.25rem;border-top:1px dashed #e2e8f0;">
+        <span style="font-size:0.68rem;color:#475569;font-weight:700;">
+          ${paperCreationState.categoriesOrder.length} Categories · ${paperCreationState.totalMarks} Marks
+        </span>
+        <button onclick="openPaperBlueprintModal()" class="btn btn-primary" style="padding:0.25rem 0.6rem;font-size:0.7rem;font-weight:800;display:inline-flex;align-items:center;gap:0.25rem;">
+          ✨ Paper Blueprint (Categories &amp; Marks)
+        </button>
+      </div>
+    </div>
 
-            <!-- Numbers & Marks -->
-            <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:0.4rem;">
-              <div>
-                <label style="font-size:0.64rem;color:#64748b;">Total Qs:</label>
-                <input type="number" class="pcs-input" value="${part.count}" 
-                       onchange="updatePaperPartField('${part.id}', 'count', parseInt(this.value) || 1)">
-              </div>
-              <div>
-                <label style="font-size:0.64rem;color:#64748b;">Attempt Qs:</label>
-                <input type="number" class="pcs-input" value="${part.attempt}" 
-                       onchange="updatePaperPartField('${part.id}', 'attempt', parseInt(this.value) || 1)">
-              </div>
-              <div>
-                <label style="font-size:0.64rem;color:#64748b;">Marks Each:</label>
-                <input type="number" class="pcs-input" value="${part.marksPerQ}" 
-                       onchange="updatePaperPartField('${part.id}', 'marksPerQ', parseInt(this.value) || 1)">
-              </div>
-            </div>
+    <!-- Live Paper Stats Box -->
+    ${renderPaperLiveStatsBox()}
 
-            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.45rem;font-size:0.7rem;color:#475569;">
-              <span>Total Section Marks: <strong style="color:#0284c7;">${part.attempt * part.marksPerQ} Marks</strong></span>
-              <label style="display:inline-flex;align-items:center;gap:0.25rem;cursor:pointer;">
-                <input type="checkbox" ${part.showMarks ? 'checked' : ''} 
-                       onchange="updatePaperPartField('${part.id}', 'showMarks', this.checked)">
-                Show marks beside Qs
-              </label>
+    <!-- Stepper Navigation Bar -->
+    <div class="q-stepper-strip">
+      ${paperCreationState.categoriesOrder.map((catId, idx) => {
+        const catMeta = getCategoryMeta(catId);
+        const alloc = paperCreationState.categoryAllocations[catId] || { count: 10, totalMarks: 10 };
+        const selectedList = paperCreationState.selectedQuestionsByCategory[catId] || [];
+        const isComplete = selectedList.length >= alloc.count;
+        const isActive = (paperCreationState.workflowStage === 'selection' && paperCreationState.activeCategoryIndex === idx);
+        return `
+          <button class="q-stepper-pill ${isActive ? 'active' : ''} ${isComplete ? 'completed' : ''}" 
+                  onclick="jumpToCategoryStep(${idx})" title="${catMeta.name}">
+            <span>${isComplete ? '✓' : (idx + 1)}.</span>
+            <span>${catMeta.icon} ${catMeta.name.split(' ')[0]}</span>
+            <span style="font-size:0.62rem;opacity:0.85;">(${selectedList.length}/${alloc.count})</span>
+          </button>
+        `;
+      }).join('')}
+      <button class="q-stepper-pill ${paperCreationState.workflowStage === 'review' ? 'active' : ''}" 
+              onclick="jumpToReviewStage()" style="font-weight:800;">
+        <span>📄 Review</span>
+      </button>
+    </div>
+
+    <!-- Dynamic Work Area -->
+    <div style="flex:1;display:flex;flex-direction:column;gap:0.55rem;">
+      ${paperCreationState.workflowStage === 'review' ? renderPaperReviewWorkArea() : renderActiveCategoryWorkArea()}
+    </div>
+  `;
+}
+
+// ─── LIVE PAPER STATS BOX ──────────────────────────────────
+function renderPaperLiveStatsBox() {
+  const totalM = Number(paperCreationState.totalMarks) || 75;
+  let selectedM = 0;
+  let completedCatsCount = 0;
+
+  const rows = paperCreationState.categoriesOrder.map(catId => {
+    const meta = getCategoryMeta(catId);
+    const alloc = paperCreationState.categoryAllocations[catId] || { count: 10, marksPerQ: 1, totalMarks: 10 };
+    const selList = paperCreationState.selectedQuestionsByCategory[catId] || [];
+    const count = selList.length;
+    const catMarks = Math.min(count, alloc.count) * (alloc.marksPerQ || 1);
+    selectedM += catMarks;
+
+    const isDone = count >= alloc.count;
+    if (isDone) completedCatsCount++;
+
+    return {
+      catId,
+      name: meta.name,
+      icon: meta.icon,
+      count,
+      required: alloc.count,
+      catMarks,
+      totalCategoryMarks: alloc.totalMarks,
+      isDone
+    };
+  });
+
+  const remainingM = Math.max(0, totalM - selectedM);
+  const totalCats = paperCreationState.categoriesOrder.length || 1;
+  const pct = Math.round((completedCatsCount / totalCats) * 100);
+
+  return `
+    <div class="paper-live-stats-box">
+      <div class="pls-header">
+        <span>📊 PAPER STATS</span>
+        <span>${completedCatsCount} / ${totalCats} Categories Complete (${pct}%)</span>
+      </div>
+
+      <div class="pls-metrics-grid">
+        <div class="pls-metric-item">
+          <div class="pls-metric-label">Total Marks</div>
+          <div class="pls-metric-val" style="color:#0f172a;">${totalM}</div>
+        </div>
+        <div class="pls-metric-item">
+          <div class="pls-metric-label">Selected Marks</div>
+          <div class="pls-metric-val" style="color:#16a34a;">${selectedM}</div>
+        </div>
+        <div class="pls-metric-item">
+          <div class="pls-metric-label">Remaining Marks</div>
+          <div class="pls-metric-val" style="color:${remainingM > 0 ? '#b91c1c' : '#15803d'};">${remainingM}</div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.15rem;margin-top:0.2rem;">
+        ${rows.map(r => `
+          <div class="pls-cat-row ${r.isDone ? 'completed' : ''}">
+            <div style="display:flex;align-items:center;gap:0.3rem;">
+              <span>${r.isDone ? '✓' : '⏳'}</span>
+              <span>${r.icon} ${r.name}:</span>
             </div>
+            <span>
+              <strong>${r.count}</strong> / ${r.required} Qs 
+              (${r.catMarks} / ${r.totalCategoryMarks}M)
+            </span>
           </div>
         `).join('')}
       </div>
@@ -9626,316 +9044,1556 @@ function renderWizardStep5PaperStructure() {
   `;
 }
 
-function updatePaperPartField(partId, field, val) {
-  const part = (paperCreationState.parts || []).find(p => p.id === partId);
-  if (part) {
-    part[field] = val;
-    part.totalMarks = (Number(part.attempt) || 0) * (Number(part.marksPerQ) || 0);
-  }
-  updatePaperPreview();
-  const sumEl = document.getElementById('paperLiveSummaryContainer');
-  if (sumEl) sumEl.innerHTML = renderLivePaperSummaryWidget();
-}
+// ─── ACTIVE CATEGORY QUESTION WORK AREA ─────────────────────
+function renderActiveCategoryWorkArea() {
+  const catIdx = paperCreationState.activeCategoryIndex || 0;
+  const catId = paperCreationState.categoriesOrder[catIdx] || "mcqs";
+  const catMeta = getCategoryMeta(catId);
+  const alloc = paperCreationState.categoryAllocations[catId] || { count: 10, marksPerQ: 1, totalMarks: 10 };
+  const allCategoryQuestions = getCurriculumQuestionsForCategory(paperCreationState.classId, paperCreationState.subjectId, catId);
 
-function addPaperCustomPart() {
-  const nextLetter = String.fromCharCode(65 + (paperCreationState.parts || []).length);
-  paperCreationState.parts.push({
-    id: `part${nextLetter}`,
-    name: `SECTION — ${nextLetter} (ADDITIONAL EXAM SECTION)`,
-    instructions: "Note: Attempt all questions according to instructions.",
-    category: "sqs",
-    count: 5,
-    attempt: 4,
-    marksPerQ: 4,
-    totalMarks: 16,
-    showMarks: true,
-    startNewPage: false
+  const selectedList = paperCreationState.selectedQuestionsByCategory[catId] || [];
+  const selectedCount = selectedList.length;
+  const requiredCount = alloc.count || 1;
+  const remainingCount = Math.max(0, requiredCount - selectedCount);
+
+  // Filter questions based on search, chapter, source
+  const searchLower = (paperCreationState.qPickerSearch || "").toLowerCase().trim();
+  const filterCh = paperCreationState.qPickerChapter || "all";
+  const filterSrc = paperCreationState.qPickerSource || "all";
+
+  const filteredQuestions = allCategoryQuestions.filter(q => {
+    if (filterCh !== "all" && q.chapter !== filterCh) return false;
+    if (filterSrc !== "all" && q.source !== filterSrc) return false;
+    if (searchLower) {
+      const matchQ = (q.q || "").toLowerCase().includes(searchLower);
+      const matchOpts = (q.opts || []).some(o => o.toLowerCase().includes(searchLower));
+      const matchCh = (q.chapter || "").toLowerCase().includes(searchLower);
+      if (!matchQ && !matchOpts && !matchCh) return false;
+    }
+    return true;
   });
-  renderPapersView();
-}
 
-function removePaperPart(partId) {
-  paperCreationState.parts = (paperCreationState.parts || []).filter(p => p.id !== partId);
-  renderPapersView();
-}
+  // Unique chapters in this category
+  const chaptersList = [...new Set(allCategoryQuestions.map(q => q.chapter))].filter(Boolean);
 
-// ─── STEP 6: MARKS, TIME, HEADER & INSTRUCTIONS ──────────
-function renderWizardStep6MarksAndHeaders() {
+  // Group filtered questions by Chapter
+  const groupedByChapter = {};
+  filteredQuestions.forEach(q => {
+    const ch = q.chapter || "General Curriculum";
+    if (!groupedByChapter[ch]) groupedByChapter[ch] = [];
+    groupedByChapter[ch].push(q);
+  });
+
+  // Shortage warning
+  const shortageWarning = allCategoryQuestions.length < requiredCount;
+
   return `
-    <div class="paper-step-box">
-      <div class="paper-step-intro">
-        <div class="paper-step-title">Step 6 — Marks, Time, Header &amp; Instructions</div>
-        <div class="paper-step-desc">Configure institution details, exam title, duration, and general exam rules:</div>
-      </div>
-
-      <!-- Exam Presets -->
-      <div class="paper-settings-box">
-        <div class="paper-settings-box-title">
-          <span>🏆 Exam Pattern Presets</span>
+    <!-- Category Target & Progress Bar -->
+    <div style="background:#ffffff;border:1px solid #cbd5e1;border-radius:8px;padding:0.6rem 0.75rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.35rem;">
+        <div>
+          <span style="font-size:0.64rem;font-weight:800;color:#0284c7;text-transform:uppercase;letter-spacing:0.5px;">
+            STEP ${catIdx + 1} OF ${paperCreationState.categoriesOrder.length}
+          </span>
+          <div style="font-weight:900;font-size:0.9rem;color:#0f172a;">
+            ${catMeta.icon} ${catMeta.name}
+          </div>
         </div>
-        <div class="pcs-type-pills">
-          <button class="pcs-type-btn ${paperCreationState.paperType === 'annual' ? 'active' : ''}" 
-                  onclick="setPaperTypePreset('annual')">🏆 Annual Exam (75M)</button>
-          <button class="pcs-type-btn ${paperCreationState.paperType === 'term1' ? 'active' : ''}" 
-                  onclick="setPaperTypePreset('term1')">📘 First Term (50M)</button>
-          <button class="pcs-type-btn ${paperCreationState.paperType === 'monthly' ? 'active' : ''}" 
-                  onclick="setPaperTypePreset('monthly')">📑 Monthly Test (25M)</button>
-          <button class="pcs-type-btn ${paperCreationState.paperType === 'preboard' ? 'active' : ''}" 
-                  onclick="setPaperTypePreset('preboard')">🎯 Pre-Board (75M)</button>
+        <div style="text-align:right;">
+          <div style="font-weight:800;font-size:0.85rem;color:${selectedCount >= requiredCount ? '#16a34a' : '#0284c7'};">
+            ${selectedCount} / ${requiredCount} Selected
+          </div>
+          <div style="font-size:0.64rem;color:#64748b;">
+            ${remainingCount > 0 ? `${remainingCount} Remaining` : '✓ Target Met'} · ${alloc.totalMarks} Marks
+          </div>
         </div>
       </div>
 
-      <!-- Institution Header Information -->
-      <div class="paper-settings-box">
-        <div class="paper-settings-box-title">
-          <span>🏛️ Institution Credentials</span>
+      <!-- Mini Progress Meter -->
+      <div style="height:6px;background:#e2e8f0;border-radius:99px;overflow:hidden;margin-bottom:0.25rem;">
+        <div style="height:100%;width:${Math.min(100, (selectedCount / requiredCount) * 100)}%;background:${selectedCount >= requiredCount ? '#16a34a' : '#0284c7'};transition:width 0.2s ease;"></div>
+      </div>
+
+      ${shortageWarning ? `
+        <div style="margin-top:0.4rem;padding:0.4rem 0.6rem;background:#fef2f2;border:1px solid #fecaca;border-radius:6px;font-size:0.7rem;color:#991b1b;display:flex;align-items:center;justify-content:space-between;">
+          <span>⚠️ Only <strong>${allCategoryQuestions.length}</strong> questions available in bank, but <strong>${requiredCount}</strong> required.</span>
+          <button onclick="reduceRequiredQuestionsToAvailable('${catId}', ${allCategoryQuestions.length})" style="background:#fee2e2;border:1px solid #f87171;color:#b91c1c;padding:0.15rem 0.45rem;border-radius:4px;font-size:0.66rem;font-weight:700;cursor:pointer;">
+            Use ${allCategoryQuestions.length} Qs
+          </button>
         </div>
+      ` : ''}
+    </div>
+
+    <!-- Filter & Search Toolbar -->
+    <div class="q-picker-toolbar">
+      <div class="q-picker-row">
+        <input type="text" class="pcs-input" placeholder="🔍 Search ${catMeta.name} questions or topics..." 
+               value="${paperCreationState.qPickerSearch || ''}" 
+               oninput="paperCreationState.qPickerSearch = this.value; refreshLeftPanelBody();"
+               style="flex:1;min-width:160px;font-size:0.75rem;padding:0.3rem 0.55rem;">
         
-        <div style="margin-bottom:0.4rem;">
-          <label class="pcs-label">Institution / School / College Name:</label>
-          <input type="text" class="pcs-input" value="${paperCreationState.institutionName}" 
-                 oninput="updatePaperHeaderField('institutionName', this.value)">
-        </div>
-
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;margin-bottom:0.4rem;">
-          <div>
-            <label class="pcs-label">Exam Title:</label>
-            <input type="text" class="pcs-input" value="${paperCreationState.examTitle}" 
-                   oninput="updatePaperHeaderField('examTitle', this.value)">
-          </div>
-          <div>
-            <label class="pcs-label">Academic Session:</label>
-            <input type="text" class="pcs-input" value="${paperCreationState.academicYear}" 
-                   oninput="updatePaperHeaderField('academicYear', this.value)">
-          </div>
-        </div>
-
-        <div style="margin-bottom:0.4rem;">
-          <label class="pcs-label">Board Syllabus Pattern / Subtitle:</label>
-          <input type="text" class="pcs-input" value="${paperCreationState.subTitle}" 
-                 oninput="updatePaperHeaderField('subTitle', this.value)">
-        </div>
-
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0.4rem;">
-          <div>
-            <label class="pcs-label">Paper Code:</label>
-            <input type="text" class="pcs-input" value="${paperCreationState.paperCode}" 
-                   oninput="updatePaperHeaderField('paperCode', this.value)">
-          </div>
-          <div>
-            <label class="pcs-label">Time Allowed:</label>
-            <input type="text" class="pcs-input" value="${paperCreationState.duration}" 
-                   oninput="updatePaperHeaderField('duration', this.value)">
-          </div>
-          <div>
-            <label class="pcs-label">Exam Date:</label>
-            <input type="text" class="pcs-input" value="${paperCreationState.date}" 
-                   oninput="updatePaperHeaderField('date', this.value)">
-          </div>
-          <div>
-            <label class="pcs-label">Total Marks:</label>
-            <input type="text" class="pcs-input" value="${paperCreationState.totalMarksOverride || paperCreationState.totalMarks || ''}" 
-                   placeholder="${paperCreationState.totalMarks || 75}"
-                   oninput="updatePaperHeaderField('totalMarksOverride', this.value)">
-          </div>
-        </div>
+        <select class="pcs-select" style="font-size:0.72rem;padding:0.3rem 0.45rem;max-width:140px;"
+                onchange="paperCreationState.qPickerChapter = this.value; refreshLeftPanelBody();">
+          <option value="all" ${filterCh === 'all' ? 'selected' : ''}>All Units (${chaptersList.length})</option>
+          ${chaptersList.map(ch => `<option value="${ch}" ${filterCh === ch ? 'selected' : ''}>${ch.length > 22 ? ch.slice(0, 22) + '...' : ch}</option>`).join('')}
+        </select>
       </div>
 
-      <!-- General Instructions -->
-      <div class="paper-settings-box">
-        <div class="paper-settings-box-title">
-          <span>📜 General Examination Instructions</span>
-        </div>
-        <textarea class="pcs-input" style="height:65px;font-size:0.72rem;resize:vertical;" 
-                  oninput="paperCreationState.generalInstructions = this.value.split('\\n'); updatePaperPreview();">${paperCreationState.generalInstructions.join('\n')}</textarea>
-      </div>
-
-      <!-- Layout & Print Options -->
-      <div class="paper-settings-box">
-        <div class="paper-settings-box-title">
-          <span>📄 Print Layout &amp; Numbering</span>
+      <div class="q-picker-row" style="justify-content:space-between;">
+        <!-- Source Filter: Exercise vs SLO -->
+        <div style="display:flex;gap:0.25rem;">
+          <button class="q-source-pill ${filterSrc === 'all' ? 'active' : ''}" onclick="setQuestionSourceFilter('all')">All Sources</button>
+          <button class="q-source-pill ${filterSrc === 'exercise' ? 'active' : ''}" onclick="setQuestionSourceFilter('exercise')">📘 Exercise-Based</button>
+          <button class="q-source-pill ${filterSrc === 'slo' ? 'active' : ''}" onclick="setQuestionSourceFilter('slo')">🎯 SLO-Based</button>
         </div>
 
-        <div class="paper-row-field">
-          <span>Question Numbering Style:</span>
-          <div class="paper-segmented-btn-group">
-            <button class="paper-seg-btn ${paperCreationState.numberingStyle === 'Q1' ? 'active' : ''}" 
-                    onclick="paperCreationState.numberingStyle = 'Q1'; updatePaperPreview();">Q1, Q2</button>
-            <button class="paper-seg-btn ${paperCreationState.numberingStyle === '1' ? 'active' : ''}" 
-                    onclick="paperCreationState.numberingStyle = '1'; updatePaperPreview();">1, 2, 3</button>
-            <button class="paper-seg-btn ${paperCreationState.numberingStyle === 'i' ? 'active' : ''}" 
-                    onclick="paperCreationState.numberingStyle = 'i'; updatePaperPreview();">(i), (ii)</button>
-          </div>
-        </div>
-
-        <div class="paper-row-field">
-          <span>Paper Format:</span>
-          <div class="paper-segmented-btn-group">
-            <button class="paper-seg-btn ${paperCreationState.printSettings.paperSize === 'A4' ? 'active' : ''}" 
-                    onclick="paperCreationState.printSettings.paperSize = 'A4'; updatePaperPreview();">A4 Standard</button>
-            <button class="paper-seg-btn ${paperCreationState.printSettings.paperSize === 'A5' ? 'active' : ''}" 
-                    onclick="paperCreationState.printSettings.paperSize = 'A5'; updatePaperPreview();">A5 Compact</button>
-            <button class="paper-seg-btn ${paperCreationState.printSettings.paperSize === 'Letter' ? 'active' : ''}" 
-                    onclick="paperCreationState.printSettings.paperSize = 'Letter'; updatePaperPreview();">Letter</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-function updatePaperHeaderField(field, val) {
-  paperCreationState[field] = val;
-  updatePaperPreview();
-}
-
-function setPaperTypePreset(presetKey) {
-  paperCreationState.paperType = presetKey;
-  if (presetKey === 'annual') {
-    paperCreationState.examTitle = "ANNUAL EXAMINATION 2026";
-    paperCreationState.duration = "2:30 Hours";
-    paperCreationState.mcqSettings.count = 15;
-    paperCreationState.mcqSettings.marksPerMcq = 1;
-    paperCreationState.categorySettings.sqs = { count: 12, attempt: 9, marksPerQ: 4 };
-    paperCreationState.categorySettings.lqs = { count: 4, attempt: 3, marksPerQ: 8 };
-  } else if (presetKey === 'term1') {
-    paperCreationState.examTitle = "FIRST TERM EXAMINATION 2026";
-    paperCreationState.duration = "2:00 Hours";
-    paperCreationState.mcqSettings.count = 10;
-    paperCreationState.mcqSettings.marksPerMcq = 1;
-    paperCreationState.categorySettings.sqs = { count: 8, attempt: 6, marksPerQ: 4 };
-    paperCreationState.categorySettings.lqs = { count: 3, attempt: 2, marksPerQ: 8 };
-  } else if (presetKey === 'monthly') {
-    paperCreationState.examTitle = "MONTHLY ASSESSMENT TEST";
-    paperCreationState.duration = "1:00 Hour";
-    paperCreationState.mcqSettings.count = 5;
-    paperCreationState.mcqSettings.marksPerMcq = 1;
-    paperCreationState.categorySettings.sqs = { count: 7, attempt: 5, marksPerQ: 2 };
-    paperCreationState.categorySettings.lqs = { count: 2, attempt: 1, marksPerQ: 10 };
-  } else if (presetKey === 'preboard') {
-    paperCreationState.examTitle = "PRE-BOARD MOCK EXAMINATION 2026";
-    paperCreationState.duration = "2:30 Hours";
-    paperCreationState.mcqSettings.count = 15;
-    paperCreationState.mcqSettings.marksPerMcq = 1;
-    paperCreationState.categorySettings.sqs = { count: 12, attempt: 9, marksPerQ: 4 };
-    paperCreationState.categorySettings.lqs = { count: 4, attempt: 3, marksPerQ: 8 };
-  }
-  syncPaperPartsWithCategories();
-  renderPapersView();
-}
-
-// ─── STEP 7: PAPER PREVIEW SCREEN ────────────────────────
-function renderWizardStep7Preview() {
-  return `
-    <div class="paper-step-box">
-      <div class="paper-step-intro">
-        <div class="paper-step-title">Step 7 — Official Exam Paper Preview</div>
-        <div class="paper-step-desc">Inspect the rendered examination paper on the right. Verify all questions, marks, and layout before printing:</div>
-      </div>
-
-      <!-- Preview Action Suite -->
-      <div class="paper-settings-box">
-        <div class="paper-settings-box-title">
-          <span>🛠️ Paper Tools &amp; Actions</span>
-        </div>
-
-        <div style="display:flex;flex-direction:column;gap:0.35rem;">
-          <button class="pcs-action-btn" onclick="nextPaperWizardStep()">
-            ⚡ Proceed to Generate &amp; Print
+        <!-- Bulk Action Buttons -->
+        <div style="display:flex;gap:0.25rem;">
+          <button onclick="toggleSelectAllFiltered('${catId}', true)" title="Select all filtered questions" style="background:#f1f5f9;border:1px solid #cbd5e1;padding:0.2rem 0.45rem;border-radius:4px;font-size:0.66rem;font-weight:700;cursor:pointer;">
+            ☑️ All
           </button>
-          
-          <button class="pcs-print-btn" onclick="printOfficialExamPaper()">
-            🖨️ Quick Print (A4 Format)
+          <button onclick="toggleSelectAllFiltered('${catId}', false)" title="Deselect all filtered questions" style="background:#f1f5f9;border:1px solid #cbd5e1;padding:0.2rem 0.45rem;border-radius:4px;font-size:0.66rem;font-weight:700;cursor:pointer;">
+            ◻️ Clear
           </button>
-
-          <button class="pcs-key-btn" onclick="togglePaperAnswerKey()">
-            🔑 ${paperCreationState.showAnswerKey ? 'Hide Solved Marking Scheme' : 'Show Solved Marking Scheme & Key'}
-          </button>
-
-          <div style="display:flex;gap:0.3rem;">
-            <button class="pcs-type-btn ${paperCreationState.version === 'A' ? 'active' : ''}" style="flex:1;" 
-                    onclick="switchPaperVersion('A')">Set A</button>
-            <button class="pcs-type-btn ${paperCreationState.version === 'B' ? 'active' : ''}" style="flex:1;" 
-                    onclick="switchPaperVersion('B')">Set B</button>
-            <button class="pcs-type-btn ${paperCreationState.version === 'C' ? 'active' : ''}" style="flex:1;" 
-                    onclick="switchPaperVersion('C')">Set C</button>
-          </div>
-
-          <button class="pcs-shuffle-btn" onclick="shufflePaperQuestions()">
-            🎲 Regenerate / New Question Set
-          </button>
-
-          <button class="pcs-shuffle-btn" onclick="openQuestionBankModal()">
-            📚 Open Question Bank (Custom Picker)
-          </button>
-
-          <button class="pcs-shuffle-btn" onclick="savePaperTemplatePrompt()">
-            💾 Save as Reusable Template
+          <button onclick="autoFillRemainingQuestions('${catId}')" title="Auto pick remaining questions" style="background:#e0f2fe;border:1px solid #7dd3fc;color:#0369a1;padding:0.2rem 0.45rem;border-radius:4px;font-size:0.66rem;font-weight:800;cursor:pointer;">
+            🎲 Auto-Fill
           </button>
         </div>
       </div>
     </div>
+
+    <!-- Question Bank Compact Accordions -->
+    <div style="display:flex;flex-direction:column;gap:0.4rem;max-height:360px;overflow-y:auto;padding-right:2px;scrollbar-width:thin;">
+      ${Object.keys(groupedByChapter).length === 0 ? `
+        <div style="text-align:center;padding:1.5rem;background:#f8fafc;border:1px dashed #cbd5e1;border-radius:8px;font-size:0.78rem;color:#64748b;">
+          No questions matching your filters. <button onclick="resetQuestionFilters()" style="color:#0284c7;background:none;border:none;cursor:pointer;font-weight:700;">Reset Filters</button>
+        </div>
+      ` : Object.keys(groupedByChapter).map((chTitle, chIdx) => {
+        const chQuestions = groupedByChapter[chTitle];
+        const selectedInCh = chQuestions.filter(q => selectedList.includes(q.id)).length;
+        const isExpanded = (paperCreationState.expandedChapters[chTitle] !== undefined) 
+          ? paperCreationState.expandedChapters[chTitle] 
+          : (chIdx === 0 || filterCh !== "all");
+
+        return `
+          <div class="q-chapter-accordion">
+            <div class="q-chapter-header" onclick="toggleChapterAccordion('${encodeURIComponent(chTitle)}')">
+              <div style="display:flex;align-items:center;gap:0.4rem;">
+                <span style="font-size:0.75rem;">${isExpanded ? '▼' : '▶'}</span>
+                <span>${chTitle}</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.4rem;">
+                ${selectedInCh > 0 ? `
+                  <span style="background:#dcfce7;color:#15803d;font-size:0.62rem;font-weight:800;padding:0.1rem 0.35rem;border-radius:99px;">
+                    ${selectedInCh} Selected
+                  </span>
+                ` : ''}
+                <span style="font-size:0.68rem;color:#64748b;">${chQuestions.length} Qs</span>
+              </div>
+            </div>
+
+            ${isExpanded ? `
+              <div class="q-chapter-body">
+                ${chQuestions.map((q, qIdx) => {
+                  const isChecked = selectedList.includes(q.id);
+                  return `
+                    <div class="q-item-card ${isChecked ? 'selected' : ''}" onclick="toggleQuestionChoice('${catId}', '${q.id}')">
+                      <div class="q-item-top">
+                        <input type="checkbox" ${isChecked ? 'checked' : ''} onclick="event.stopPropagation(); toggleQuestionChoice('${catId}', '${q.id}')" style="cursor:pointer;margin-top:2px;">
+                        <div class="q-item-text">
+                          ${q.q}
+                          ${q.opts ? `
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.25rem;margin-top:0.35rem;font-size:0.7rem;color:#475569;">
+                              ${q.opts.map((opt, oi) => `
+                                <span><strong>(${String.fromCharCode(65 + oi)})</strong> ${opt}</span>
+                              `).join('')}
+                            </div>
+                          ` : ''}
+                          ${q.subA ? `
+                            <div style="margin-top:0.25rem;font-size:0.7rem;color:#475569;">
+                              <div><strong>(a)</strong> ${q.subA}</div>
+                              ${q.subB ? `<div><strong>(b)</strong> ${q.subB}</div>` : ''}
+                            </div>
+                          ` : ''}
+                        </div>
+                      </div>
+
+                      <div class="q-item-badges">
+                        <span class="q-badge ${q.source === 'slo' ? 'q-badge-slo' : 'q-badge-ex'}">
+                          ${q.source === 'slo' ? '🎯 SLO Based' : '📘 Exercise Based'}
+                        </span>
+                        ${q.topic ? `<span class="q-badge q-badge-topic">${q.topic}</span>` : ''}
+                        <span class="q-badge q-badge-marks">${q.marks || alloc.marksPerQ || 1}M</span>
+                      </div>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            ` : ''}
+          </div>
+        `;
+      }).join('')}
+    </div>
+
+    <!-- Sticky Navigation Bar in Left Panel -->
+    <div class="paper-sticky-bottom-bar">
+      <button class="paper-nav-btn paper-nav-btn-back" onclick="goToPrevCategoryStep()">
+        ← Back
+      </button>
+
+      <span style="font-size:0.72rem;font-weight:700;color:${selectedCount >= requiredCount ? '#16a34a' : '#0284c7'};">
+        ${selectedCount} / ${requiredCount} Selected ${selectedCount >= requiredCount ? '✓' : ''}
+      </span>
+
+      <button class="paper-nav-btn paper-nav-btn-next" onclick="saveAndNextCategoryStep()">
+        ${catIdx === paperCreationState.categoriesOrder.length - 1 ? 'Save &amp; Review Paper 📄 →' : 'Save &amp; Next Category →'}
+      </button>
+    </div>
   `;
 }
 
-// ─── STEP 8: GENERATE / PRINT HUB ────────────────────────
-function renderWizardStep8GeneratePrint() {
+// ─── FINAL REVIEW WORK AREA ────────────────────────────────
+function renderPaperReviewWorkArea() {
   const clsName = getClassName(paperCreationState.classId);
   const subj = getSelectedSubjectObj();
 
   return `
-    <div class="paper-step-box">
-      <div class="paper-step-intro">
-        <div class="paper-step-title">Step 8 — Generate &amp; Print Hub</div>
-        <div class="paper-step-desc">Your official KPK Board paper for ${clsName} ${subj.name} is ready for distribution:</div>
+    <div style="background:#ffffff;border:1px solid #cbd5e1;border-radius:10px;padding:0.85rem;display:flex;flex-direction:column;gap:0.75rem;">
+      <div style="display:flex;align-items:center;gap:0.5rem;padding-bottom:0.5rem;border-bottom:1.5px solid #e2e8f0;">
+        <span style="font-size:1.6rem;">🎉</span>
+        <div>
+          <div style="font-weight:900;font-size:0.92rem;color:#166534;">Examination Paper Complete!</div>
+          <div style="font-size:0.68rem;color:#64748b;">${clsName} · ${subj.name} · KPK Board Standard</div>
+        </div>
       </div>
 
-      <div class="paper-settings-box" style="background:#f0fdf4;border-color:#86efac;">
-        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;">
-          <span style="font-size:1.5rem;">🎉</span>
+      <div style="display:flex;flex-direction:column;gap:0.4rem;">
+        <button class="btn btn-primary" onclick="printOfficialExamPaper()" style="font-size:0.84rem;padding:0.6rem;font-weight:800;">
+          🖨️ Print Student Paper
+        </button>
+
+        <button class="pcs-key-btn" onclick="togglePaperAnswerKey()" style="font-size:0.8rem;padding:0.5rem;font-weight:800;">
+          🔑 ${paperCreationState.showAnswerKey ? 'Hide Solved Marking Scheme' : 'Show Solved Marking Scheme & Key'}
+        </button>
+
+        <button class="pcs-print-btn" onclick="printOfficialExamPaper()" style="font-size:0.8rem;padding:0.5rem;font-weight:800;">
+          📥 Download / Save as PDF
+        </button>
+
+        <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:0.3rem;">
+          <button class="pcs-type-btn ${paperCreationState.version === 'A' ? 'active' : ''}" onclick="switchPaperVersion('A')">Set A</button>
+          <button class="pcs-type-btn ${paperCreationState.version === 'B' ? 'active' : ''}" onclick="switchPaperVersion('B')">Set B</button>
+          <button class="pcs-type-btn ${paperCreationState.version === 'C' ? 'active' : ''}" onclick="switchPaperVersion('C')">Set C</button>
+        </div>
+
+        <button class="pcs-shuffle-btn" onclick="jumpToCategoryStep(0)" style="margin-top:0.4rem;">
+          ✏️ Back to Edit Questions
+        </button>
+
+        <button class="pcs-shuffle-btn" onclick="openPaperBlueprintModal()">
+          ⚙️ Change Categories &amp; Blueprint
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+// ─── STEPPER & NAVIGATION CONTROLS ─────────────────────────
+function jumpToCategoryStep(stepIdx) {
+  paperCreationState.workflowStage = "selection";
+  paperCreationState.activeCategoryIndex = stepIdx;
+  refreshLeftPanelBody();
+  updatePaperPreview();
+}
+
+function jumpToReviewStage() {
+  paperCreationState.workflowStage = "review";
+  refreshLeftPanelBody();
+  updatePaperPreview();
+}
+
+function saveAndNextCategoryStep() {
+  const catIdx = paperCreationState.activeCategoryIndex || 0;
+  if (catIdx < paperCreationState.categoriesOrder.length - 1) {
+    paperCreationState.activeCategoryIndex++;
+    paperCreationState.workflowStage = "selection";
+    refreshLeftPanelBody();
+    updatePaperPreview();
+  } else {
+    paperCreationState.workflowStage = "review";
+    refreshLeftPanelBody();
+    updatePaperPreview();
+  }
+}
+
+function goToPrevCategoryStep() {
+  const catIdx = paperCreationState.activeCategoryIndex || 0;
+  if (catIdx > 0) {
+    paperCreationState.activeCategoryIndex--;
+    paperCreationState.workflowStage = "selection";
+    refreshLeftPanelBody();
+    updatePaperPreview();
+  } else {
+    openPaperBlueprintModal();
+  }
+}
+
+function refreshLeftPanelBody() {
+  const sideEl = document.getElementById('paperCreatorSidebar');
+  if (sideEl) {
+    sideEl.innerHTML = renderPaperGeneratorLeftPanel();
+  }
+}
+
+// ─── QUESTION SELECTION CONTROLS ───────────────────────────
+function toggleQuestionChoice(catId, qId) {
+  if (!paperCreationState.selectedQuestionsByCategory[catId]) {
+    paperCreationState.selectedQuestionsByCategory[catId] = [];
+  }
+  const list = paperCreationState.selectedQuestionsByCategory[catId];
+  const idx = list.indexOf(qId);
+  if (idx >= 0) {
+    list.splice(idx, 1);
+  } else {
+    list.push(qId);
+  }
+  refreshLeftPanelBody();
+  updatePaperPreview();
+}
+
+function toggleSelectAllFiltered(catId, selectAll) {
+  if (!paperCreationState.selectedQuestionsByCategory[catId]) {
+    paperCreationState.selectedQuestionsByCategory[catId] = [];
+  }
+  const allQs = getCurriculumQuestionsForCategory(paperCreationState.classId, paperCreationState.subjectId, catId);
+  const searchLower = (paperCreationState.qPickerSearch || "").toLowerCase().trim();
+  const filterCh = paperCreationState.qPickerChapter || "all";
+  const filterSrc = paperCreationState.qPickerSource || "all";
+
+  const matchingIds = allQs.filter(q => {
+    if (filterCh !== "all" && q.chapter !== filterCh) return false;
+    if (filterSrc !== "all" && q.source !== filterSrc) return false;
+    if (searchLower) {
+      const matchQ = (q.q || "").toLowerCase().includes(searchLower);
+      const matchOpts = (q.opts || []).some(o => o.toLowerCase().includes(searchLower));
+      if (!matchQ && !matchOpts) return false;
+    }
+    return true;
+  }).map(q => q.id);
+
+  if (selectAll) {
+    matchingIds.forEach(id => {
+      if (!paperCreationState.selectedQuestionsByCategory[catId].includes(id)) {
+        paperCreationState.selectedQuestionsByCategory[catId].push(id);
+      }
+    });
+  } else {
+    paperCreationState.selectedQuestionsByCategory[catId] = paperCreationState.selectedQuestionsByCategory[catId].filter(id => !matchingIds.includes(id));
+  }
+
+  refreshLeftPanelBody();
+  updatePaperPreview();
+}
+
+function autoFillRemainingQuestions(catId) {
+  if (!paperCreationState.selectedQuestionsByCategory[catId]) {
+    paperCreationState.selectedQuestionsByCategory[catId] = [];
+  }
+  const alloc = paperCreationState.categoryAllocations[catId] || { count: 10 };
+  const allQs = getCurriculumQuestionsForCategory(paperCreationState.classId, paperCreationState.subjectId, catId);
+  const current = paperCreationState.selectedQuestionsByCategory[catId];
+  const need = Math.max(0, alloc.count - current.length);
+
+  if (need <= 0) return;
+
+  const available = allQs.filter(q => !current.includes(q.id));
+  const picked = available.slice(0, need).map(q => q.id);
+  paperCreationState.selectedQuestionsByCategory[catId].push(...picked);
+
+  refreshLeftPanelBody();
+  updatePaperPreview();
+}
+
+function reduceRequiredQuestionsToAvailable(catId, availCount) {
+  if (!paperCreationState.categoryAllocations[catId]) return;
+  paperCreationState.categoryAllocations[catId].count = availCount;
+  paperCreationState.categoryAllocations[catId].attempt = Math.min(paperCreationState.categoryAllocations[catId].attempt, availCount);
+  paperCreationState.categoryAllocations[catId].totalMarks = paperCreationState.categoryAllocations[catId].attempt * paperCreationState.categoryAllocations[catId].marksPerQ;
+  refreshLeftPanelBody();
+  updatePaperPreview();
+}
+
+function setQuestionSourceFilter(src) {
+  paperCreationState.qPickerSource = src;
+  refreshLeftPanelBody();
+}
+
+function resetQuestionFilters() {
+  paperCreationState.qPickerSearch = "";
+  paperCreationState.qPickerChapter = "all";
+  paperCreationState.qPickerSource = "all";
+  refreshLeftPanelBody();
+}
+
+function toggleChapterAccordion(encodedChTitle) {
+  const chTitle = decodeURIComponent(encodedChTitle);
+  const current = (paperCreationState.expandedChapters[chTitle] !== undefined) ? paperCreationState.expandedChapters[chTitle] : true;
+  paperCreationState.expandedChapters[chTitle] = !current;
+  refreshLeftPanelBody();
+}
+
+// ─── CLASS & SUBJECT SELECTION TRIGGERS ─────────────────────
+function onPaperClassSelect(classId) {
+  paperCreationState.classId = classId;
+  const subjects = DATA.subjects[classId] || [];
+  paperCreationState.subjectId = subjects[0] ? subjects[0].id : "";
+  paperCreationState.selectedQuestionsByCategory = {};
+  
+  // Re-sync categories
+  const cats = getSubjectCategories(paperCreationState.subjectId, classId);
+  paperCreationState.categoriesOrder = cats.slice(0, 3).map(c => c.id);
+  distributeBlueprintMarks(paperCreationState.totalMarks || 75, paperCreationState.categoriesOrder);
+  paperCreationState.activeCategoryIndex = 0;
+  paperCreationState.workflowStage = "selection";
+
+  openPaperBlueprintModal();
+}
+
+function onPaperSubjectSelect(subjId) {
+  paperCreationState.subjectId = subjId;
+  paperCreationState.selectedQuestionsByCategory = {};
+
+  const cats = getSubjectCategories(subjId, paperCreationState.classId);
+  paperCreationState.categoriesOrder = cats.slice(0, 3).map(c => c.id);
+  distributeBlueprintMarks(paperCreationState.totalMarks || 75, paperCreationState.categoriesOrder);
+  paperCreationState.activeCategoryIndex = 0;
+  paperCreationState.workflowStage = "selection";
+
+  openPaperBlueprintModal();
+}
+
+// ─── BLUEPRINT MODAL: "WHAT DO YOU WANT IN THIS PAPER?" ────
+let blueprintDraft = null;
+
+function openPaperBlueprintModal() {
+  const container = document.getElementById('paperBlueprintModalContainer') || document.body;
+  const availableCats = getSubjectCategories(paperCreationState.subjectId, paperCreationState.classId);
+
+  // Initialize draft state from paperCreationState
+  blueprintDraft = {
+    classId: paperCreationState.classId,
+    subjectId: paperCreationState.subjectId,
+    totalMarks: paperCreationState.totalMarks || 75,
+    categoriesOrder: [...paperCreationState.categoriesOrder],
+    allocations: JSON.parse(JSON.stringify(paperCreationState.categoryAllocations)),
+    manuallyEdited: new Set()
+  };
+
+  // Ensure every available category has an allocation record
+  availableCats.forEach(c => {
+    if (!blueprintDraft.allocations[c.id]) {
+      blueprintDraft.allocations[c.id] = { count: 10, attempt: 8, marksPerQ: 2, totalMarks: 16, manuallyEdited: false };
+    }
+  });
+
+  renderBlueprintModalContent();
+}
+
+function renderBlueprintModalContent() {
+  const container = document.getElementById('paperBlueprintModalContainer');
+  if (!container) return;
+
+  const clsName = getClassName(blueprintDraft.classId);
+  const subj = getSelectedSubjectObj();
+  const availableCats = getSubjectCategories(blueprintDraft.subjectId, blueprintDraft.classId);
+
+  // Calculate allocated marks
+  let allocatedTotal = 0;
+  blueprintDraft.categoriesOrder.forEach(catId => {
+    const a = blueprintDraft.allocations[catId] || { totalMarks: 10 };
+    allocatedTotal += Number(a.totalMarks) || 0;
+  });
+
+  const diff = (blueprintDraft.totalMarks || 75) - allocatedTotal;
+
+  container.innerHTML = `
+    <div class="paper-blueprint-modal-overlay" onclick="closePaperBlueprintModal()">
+      <div class="paper-blueprint-modal" onclick="event.stopPropagation()">
+        <!-- Header -->
+        <div class="paper-blueprint-header">
+          <div style="display:flex;align-items:center;gap:0.55rem;">
+            <span style="font-size:1.4rem;">🎯</span>
+            <div>
+              <div style="font-weight:900;font-size:1.05rem;letter-spacing:-0.2px;">What do you want in this paper?</div>
+              <div style="font-size:0.7rem;opacity:0.85;">Choose question categories, set total marks, and arrange question paper order for ${clsName} ${subj.name}</div>
+            </div>
+          </div>
+          <button onclick="closePaperBlueprintModal()" style="background:transparent;border:none;color:#fff;font-size:1.35rem;cursor:pointer;">✕</button>
+        </div>
+
+        <!-- Body -->
+        <div class="paper-blueprint-body">
+          <!-- 1. Question Categories Selection -->
           <div>
-            <div style="font-weight:800;font-size:0.88rem;color:#166534;">Paper Generation Complete!</div>
-            <div style="font-size:0.68rem;color:#15803d;">All SLOs, question distributions, and marks validated.</div>
+            <div class="pbm-section-title">
+              <span>1. Select Question Categories for ${subj.name}</span>
+              <div style="display:flex;gap:0.25rem;">
+                <button class="paper-preset-chip" onclick="applyDraftPreset('board')">🏆 Official Board Set</button>
+                <button class="paper-preset-chip" onclick="applyDraftPreset('obj')">🎯 Objective Only</button>
+                <button class="paper-preset-chip" onclick="applyDraftPreset('subj')">📝 Subjective Only</button>
+                <button class="paper-preset-chip" onclick="applyDraftPreset('all')">📑 Select All</button>
+                <button class="paper-preset-chip" onclick="applyDraftPreset('clear')" style="color:#b91c1c;">✕ Clear All</button>
+              </div>
+            </div>
+
+            <div class="paper-category-grid-modal">
+              ${availableCats.map(cat => {
+                const isSelected = blueprintDraft.categoriesOrder.includes(cat.id);
+                return `
+                  <div class="paper-cat-item-card ${isSelected ? 'selected' : ''}" onclick="toggleDraftCategory('${cat.id}')">
+                    <div style="display:flex;align-items:center;gap:0.45rem;">
+                      <input type="checkbox" ${isSelected ? 'checked' : ''} onclick="event.stopPropagation(); toggleDraftCategory('${cat.id}')">
+                      <span style="font-size:1.15rem;">${cat.icon}</span>
+                      <div>
+                        <div style="font-weight:700;font-size:0.78rem;color:#0f172a;">${cat.name}</div>
+                        <div style="font-size:0.64rem;color:#64748b;">${cat.desc}</div>
+                      </div>
+                    </div>
+                    <span style="font-size:0.74rem;font-weight:800;color:${isSelected ? '#16a34a' : '#94a3b8'};">
+                      ${isSelected ? '✓ In Paper' : '+ Add'}
+                    </span>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+
+          <!-- 2. Total Paper Marks & Auto-Distribution -->
+          <div>
+            <div class="pbm-section-title">
+              <span>2. Total Paper Marks &amp; Marks Distribution</span>
+              <div style="display:flex;align-items:center;gap:0.4rem;">
+                <span style="font-size:0.74rem;font-weight:700;color:#334155;">Set Total:</span>
+                ${[25, 50, 75, 100].map(tm => `
+                  <button class="paper-preset-chip ${blueprintDraft.totalMarks === tm ? 'active' : ''}" 
+                          onclick="updateDraftTotalMarks(${tm})">${tm}M</button>
+                `).join('')}
+                <input type="number" class="pcs-input" value="${blueprintDraft.totalMarks}" 
+                       onchange="updateDraftTotalMarks(parseInt(this.value) || 75)" 
+                       style="width:55px;text-align:center;font-weight:800;font-size:0.76rem;padding:0.2rem;">
+              </div>
+            </div>
+
+            <!-- Distribution Table -->
+            <div class="paper-marks-summary-strip">
+              <div style="display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;font-weight:800;padding-bottom:0.35rem;border-bottom:1px solid #e2e8f0;">
+                <span>Category → Questions → Marks Distribution:</span>
+                <span style="color:${diff === 0 ? '#16a34a' : '#b91c1c'};">
+                  ${diff === 0 ? '✓ Balanced (Total: ' + blueprintDraft.totalMarks + 'M)' : '⚠️ Allocated: ' + allocatedTotal + 'M / ' + blueprintDraft.totalMarks + 'M (' + (diff > 0 ? '+' + diff + 'M unallocated' : diff + 'M excess') + ')'}
+                </span>
+              </div>
+
+              <table class="paper-dist-table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th style="width:110px;">Questions to Attempt</th>
+                    <th style="width:90px;">Marks per Q</th>
+                    <th style="width:110px;">Category Marks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${blueprintDraft.categoriesOrder.map(catId => {
+                    const meta = getCategoryMeta(catId);
+                    const alloc = blueprintDraft.allocations[catId] || { count: 10, attempt: 8, marksPerQ: 2, totalMarks: 16 };
+                    return `
+                      <tr>
+                        <td>
+                          <div style="display:flex;align-items:center;gap:0.35rem;font-weight:700;">
+                            <span>${meta.icon}</span>
+                            <span>${meta.name}</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="paper-stepper-control">
+                            <button class="paper-stepper-btn" onclick="changeDraftQty('${catId}', 'attempt', -1)">-</button>
+                            <input class="paper-stepper-input" type="number" value="${alloc.attempt}" 
+                                   onchange="updateDraftCategoryAlloc('${catId}', 'attempt', parseInt(this.value) || 1)">
+                            <button class="paper-stepper-btn" onclick="changeDraftQty('${catId}', 'attempt', 1)">+</button>
+                          </div>
+                        </td>
+                        <td>
+                          <input type="number" class="pcs-input" value="${alloc.marksPerQ}" 
+                                 onchange="updateDraftCategoryAlloc('${catId}', 'marksPerQ', parseInt(this.value) || 1)"
+                                 style="width:50px;text-align:center;font-weight:800;">
+                        </td>
+                        <td>
+                          <input type="number" class="pcs-input" value="${alloc.totalMarks}" 
+                                 onchange="updateDraftCategoryTotalMarks('${catId}', parseInt(this.value) || 0)"
+                                 style="width:70px;text-align:center;font-weight:800;color:#0284c7;">
+                        </td>
+                      </tr>
+                    `;
+                  }).join('')}
+                </tbody>
+              </table>
+
+              <!-- Live Summary Line -->
+              <div style="display:flex;align-items:center;justify-content:space-between;font-size:0.74rem;background:#ffffff;padding:0.4rem 0.6rem;border-radius:6px;border:1px solid #e2e8f0;">
+                <div>
+                  <strong>Live Summary:</strong>
+                  ${blueprintDraft.categoriesOrder.map(cid => {
+                    const m = getCategoryMeta(cid);
+                    const a = blueprintDraft.allocations[cid] || { totalMarks: 0 };
+                    return `<span style="margin-left:0.5rem;color:#475569;">${m.name.split(' ')[0]}: <strong>${a.totalMarks}M</strong></span>`;
+                  }).join(' · ')}
+                </div>
+                ${diff !== 0 ? `
+                  <button onclick="autoBalanceDraftMarks()" style="background:#0284c7;color:#fff;border:none;padding:0.2rem 0.55rem;border-radius:4px;font-size:0.68rem;font-weight:800;cursor:pointer;">
+                    Auto-Balance Remainder
+                  </button>
+                ` : ''}
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Arrange Question Paper Order -->
+          <div>
+            <div class="pbm-section-title">
+              <span>3. Arrange Question Paper Order</span>
+              <span style="font-size:0.68rem;color:#64748b;font-weight:600;">The exact order here determines Section A, Section B, Section C...</span>
+            </div>
+
+            <div class="paper-reorder-list">
+              ${blueprintDraft.categoriesOrder.map((catId, idx) => {
+                const meta = getCategoryMeta(catId);
+                const alloc = blueprintDraft.allocations[catId] || { attempt: 10, totalMarks: 10 };
+                return `
+                  <div class="paper-reorder-item">
+                    <div style="display:flex;align-items:center;gap:0.5rem;">
+                      <span style="background:#0284c7;color:#fff;width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:0.68rem;font-weight:800;">
+                        ${idx + 1}
+                      </span>
+                      <span>${meta.icon} ${meta.name}</span>
+                      <span style="font-size:0.68rem;color:#64748b;font-weight:600;">
+                        (${alloc.attempt} Questions · ${alloc.totalMarks} Marks)
+                      </span>
+                    </div>
+
+                    <div class="paper-reorder-btns">
+                      <button class="paper-reorder-btn" onclick="moveDraftCategoryOrder(${idx}, -1)" ${idx === 0 ? 'disabled style="opacity:0.3;cursor:not-allowed;"' : ''} title="Move Up">▲</button>
+                      <button class="paper-reorder-btn" onclick="moveDraftCategoryOrder(${idx}, 1)" ${idx === blueprintDraft.categoriesOrder.length - 1 ? 'disabled style="opacity:0.3;cursor:not-allowed;"' : ''} title="Move Down">▼</button>
+                    </div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
           </div>
         </div>
 
-        <div style="display:flex;flex-direction:column;gap:0.45rem;margin-top:0.65rem;">
-          <button class="btn btn-primary" onclick="printOfficialExamPaper()" style="font-size:0.85rem;padding:0.6rem;font-weight:800;">
-            🖨️ Print Student Examination Paper
+        <!-- Footer -->
+        <div class="paper-blueprint-footer">
+          <button class="paper-nav-btn paper-nav-btn-back" onclick="closePaperBlueprintModal()">
+            ✕ Cancel
           </button>
-
-          <button class="pcs-key-btn" onclick="paperCreationState.showAnswerKey=true; updatePaperPreview(); printOfficialExamPaper();" 
-                  style="font-size:0.82rem;padding:0.55rem;font-weight:800;">
-            🔑 Print Teacher Marking Scheme &amp; Answer Key
-          </button>
-
-          <button class="pcs-print-btn" onclick="printOfficialExamPaper()" style="font-size:0.82rem;padding:0.55rem;font-weight:800;">
-            📥 Download / Save as PDF
-          </button>
-
-          <button class="pcs-shuffle-btn" onclick="batchPrintAllVersions()" style="font-size:0.82rem;padding:0.55rem;font-weight:800;">
-            📑 Batch Print All 3 Sets (Set A, B, and C)
-          </button>
-
-          <button class="pcs-shuffle-btn" onclick="goToPaperWizardStep(1)" style="margin-top:0.4rem;">
-            🔄 Create Another Examination Paper
-          </button>
+          
+          <div style="display:flex;align-items:center;gap:0.75rem;">
+            <span style="font-size:0.75rem;font-weight:800;color:#0f172a;">
+              Total: ${blueprintDraft.totalMarks} Marks · ${blueprintDraft.categoriesOrder.length} Categories
+            </span>
+            <button class="btn btn-primary" onclick="confirmPaperBlueprintModal()" style="font-weight:800;font-size:0.82rem;padding:0.45rem 1rem;">
+              Start Selecting Questions →
+            </button>
+          </div>
         </div>
       </div>
     </div>
   `;
+}
+
+function closePaperBlueprintModal() {
+  const container = document.getElementById('paperBlueprintModalContainer');
+  if (container) container.innerHTML = '';
+}
+
+function confirmPaperBlueprintModal() {
+  if (!blueprintDraft) return;
+
+  // Save to paperCreationState
+  paperCreationState.totalMarks = blueprintDraft.totalMarks;
+  paperCreationState.categoriesOrder = [...blueprintDraft.categoriesOrder];
+  paperCreationState.categoryAllocations = JSON.parse(JSON.stringify(blueprintDraft.allocations));
+  paperCreationState.activeCategoryIndex = 0;
+  paperCreationState.workflowStage = "selection";
+
+  // Sync Part A MCQ settings if present
+  if (paperCreationState.categoryAllocations.mcqs) {
+    paperCreationState.mcqSettings.count = paperCreationState.categoryAllocations.mcqs.count;
+    paperCreationState.mcqSettings.marksPerMcq = paperCreationState.categoryAllocations.mcqs.marksPerQ;
+  }
+
+  closePaperBlueprintModal();
+  renderPapersView();
+}
+
+function toggleDraftCategory(catId) {
+  if (!blueprintDraft) return;
+  const idx = blueprintDraft.categoriesOrder.indexOf(catId);
+  if (idx >= 0) {
+    blueprintDraft.categoriesOrder.splice(idx, 1);
+  } else {
+    blueprintDraft.categoriesOrder.push(catId);
+  }
+  // Auto-distribute marks across newly selected categories
+  distributeDraftMarks();
+  renderBlueprintModalContent();
+}
+
+function applyDraftPreset(presetKey) {
+  if (!blueprintDraft) return;
+  const availableCats = getSubjectCategories(blueprintDraft.subjectId, blueprintDraft.classId);
+
+  if (presetKey === 'board') {
+    blueprintDraft.categoriesOrder = availableCats.filter(c => ['mcqs', 'sqs', 'lqs'].includes(c.id)).map(c => c.id);
+  } else if (presetKey === 'obj') {
+    blueprintDraft.categoriesOrder = availableCats.filter(c => ['mcqs', 'wordsMeanings', 'definitions'].includes(c.id)).map(c => c.id);
+  } else if (presetKey === 'subj') {
+    blueprintDraft.categoriesOrder = availableCats.filter(c => c.id !== 'mcqs').slice(0, 3).map(c => c.id);
+  } else if (presetKey === 'all') {
+    blueprintDraft.categoriesOrder = availableCats.map(c => c.id);
+  } else if (presetKey === 'clear') {
+    blueprintDraft.categoriesOrder = [];
+  }
+
+  distributeDraftMarks();
+  renderBlueprintModalContent();
+}
+
+function updateDraftTotalMarks(newTotal) {
+  if (!blueprintDraft) return;
+  blueprintDraft.totalMarks = Math.max(10, newTotal);
+  distributeDraftMarks();
+  renderBlueprintModalContent();
+}
+
+function changeDraftQty(catId, field, delta) {
+  if (!blueprintDraft || !blueprintDraft.allocations[catId]) return;
+  const cur = blueprintDraft.allocations[catId][field] || 1;
+  const next = Math.max(1, cur + delta);
+  updateDraftCategoryAlloc(catId, field, next);
+}
+
+function updateDraftCategoryAlloc(catId, field, val) {
+  if (!blueprintDraft || !blueprintDraft.allocations[catId]) return;
+  blueprintDraft.allocations[catId][field] = val;
+  if (field === 'attempt') {
+    blueprintDraft.allocations[catId].count = Math.max(val, blueprintDraft.allocations[catId].count);
+  }
+  const attempt = blueprintDraft.allocations[catId].attempt || 1;
+  const marksPerQ = blueprintDraft.allocations[catId].marksPerQ || 1;
+  blueprintDraft.allocations[catId].totalMarks = attempt * marksPerQ;
+  blueprintDraft.manuallyEdited.add(catId);
+
+  // Recalculate other unedited categories
+  rebalanceDraftMarksExcluding(catId);
+  renderBlueprintModalContent();
+}
+
+function updateDraftCategoryTotalMarks(catId, val) {
+  if (!blueprintDraft || !blueprintDraft.allocations[catId]) return;
+  const marksPerQ = blueprintDraft.allocations[catId].marksPerQ || 1;
+  blueprintDraft.allocations[catId].totalMarks = val;
+  blueprintDraft.allocations[catId].attempt = Math.max(1, Math.round(val / marksPerQ));
+  blueprintDraft.allocations[catId].count = Math.max(blueprintDraft.allocations[catId].attempt, blueprintDraft.allocations[catId].count);
+  blueprintDraft.manuallyEdited.add(catId);
+
+  rebalanceDraftMarksExcluding(catId);
+  renderBlueprintModalContent();
+}
+
+function moveDraftCategoryOrder(idx, delta) {
+  if (!blueprintDraft) return;
+  const target = idx + delta;
+  if (target < 0 || target >= blueprintDraft.categoriesOrder.length) return;
+  const temp = blueprintDraft.categoriesOrder[idx];
+  blueprintDraft.categoriesOrder[idx] = blueprintDraft.categoriesOrder[target];
+  blueprintDraft.categoriesOrder[target] = temp;
+  renderBlueprintModalContent();
+}
+
+// ─── MARKS DISTRIBUTION ENGINE ─────────────────────────────
+function distributeDraftMarks() {
+  if (!blueprintDraft) return;
+  const total = blueprintDraft.totalMarks || 75;
+  const cats = blueprintDraft.categoriesOrder || [];
+  if (cats.length === 0) return;
+
+  distributeBlueprintMarks(total, cats, blueprintDraft.allocations);
+}
+
+function rebalanceDraftMarksExcluding(changedCatId) {
+  if (!blueprintDraft) return;
+  const total = blueprintDraft.totalMarks || 75;
+  const cats = blueprintDraft.categoriesOrder || [];
+  const lockedCats = Array.from(blueprintDraft.manuallyEdited);
+
+  let lockedSum = 0;
+  lockedCats.forEach(cid => {
+    if (cats.includes(cid) && blueprintDraft.allocations[cid]) {
+      lockedSum += Number(blueprintDraft.allocations[cid].totalMarks) || 0;
+    }
+  });
+
+  const remainingMarks = Math.max(0, total - lockedSum);
+  const unlockedCats = cats.filter(cid => !lockedCats.includes(cid));
+
+  if (unlockedCats.length > 0) {
+    distributeBlueprintMarks(remainingMarks, unlockedCats, blueprintDraft.allocations);
+  }
+}
+
+function autoBalanceDraftMarks() {
+  if (!blueprintDraft) return;
+  blueprintDraft.manuallyEdited.clear();
+  distributeDraftMarks();
+  renderBlueprintModalContent();
+}
+
+function distributeBlueprintMarks(targetTotal, cats, allocationsMap) {
+  if (!cats || cats.length === 0) return;
+  const alloc = allocationsMap || paperCreationState.categoryAllocations;
+
+  // Standard category weights
+  const weights = {
+    mcqs: 20,
+    sqs: 48,
+    lqs: 32,
+    wordsMeanings: 12,
+    wordsOpposites: 8,
+    wordsSimilars: 8,
+    wordsUse: 8,
+    grammar: 12,
+    translation: 12,
+    comprehension: 15,
+    applications: 12,
+    stories: 12,
+    essays: 15,
+    letters: 12,
+    numericals: 20,
+    theorems: 15,
+    definitions: 12,
+    derivations: 15,
+    diagrams: 12,
+    reactions: 12,
+    programming: 15,
+    algorithms: 12,
+    codeOutput: 10
+  };
+
+  const defaultMarksPerQ = {
+    mcqs: 1,
+    sqs: (targetTotal <= 30 ? 2 : 4),
+    lqs: 8,
+    wordsMeanings: 1,
+    wordsOpposites: 1,
+    wordsSimilars: 1,
+    wordsUse: 1,
+    grammar: 2,
+    translation: 8,
+    comprehension: 10,
+    applications: 8,
+    stories: 8,
+    essays: 10,
+    letters: 8,
+    numericals: 4,
+    theorems: 8,
+    definitions: 2,
+    derivations: 6,
+    diagrams: 4,
+    reactions: 4,
+    programming: 6,
+    algorithms: 5,
+    codeOutput: 3
+  };
+
+  // 1. Check for standard KPK Board pattern (MCQs, SQs, LQs)
+  if (cats.length === 3 && cats.includes('mcqs') && cats.includes('sqs') && cats.includes('lqs')) {
+    if (targetTotal === 75) {
+      alloc.mcqs = { count: 15, attempt: 15, marksPerQ: 1, totalMarks: 15, manuallyEdited: false };
+      alloc.sqs = { count: 12, attempt: 9, marksPerQ: 4, totalMarks: 36, manuallyEdited: false };
+      alloc.lqs = { count: 4, attempt: 3, marksPerQ: 8, totalMarks: 24, manuallyEdited: false };
+      return;
+    }
+    if (targetTotal === 50) {
+      alloc.mcqs = { count: 10, attempt: 10, marksPerQ: 1, totalMarks: 10, manuallyEdited: false };
+      alloc.sqs = { count: 8, attempt: 6, marksPerQ: 4, totalMarks: 24, manuallyEdited: false };
+      alloc.lqs = { count: 3, attempt: 2, marksPerQ: 8, totalMarks: 16, manuallyEdited: false };
+      return;
+    }
+    if (targetTotal === 100) {
+      alloc.mcqs = { count: 20, attempt: 20, marksPerQ: 1, totalMarks: 20, manuallyEdited: false };
+      alloc.sqs = { count: 15, attempt: 12, marksPerQ: 4, totalMarks: 48, manuallyEdited: false };
+      alloc.lqs = { count: 5, attempt: 4, marksPerQ: 8, totalMarks: 32, manuallyEdited: false };
+      return;
+    }
+  }
+
+  // 2. General dynamic allocation
+  let totalWeight = 0;
+  cats.forEach(c => totalWeight += (weights[c] || 15));
+
+  let currentAssigned = 0;
+  cats.forEach((catId, idx) => {
+    const w = weights[catId] || 15;
+    const mpq = defaultMarksPerQ[catId] || 1;
+    let shareMarks = 0;
+
+    if (idx === cats.length - 1) {
+      shareMarks = Math.max(mpq, targetTotal - currentAssigned);
+    } else {
+      shareMarks = Math.max(mpq, Math.round((targetTotal * (w / totalWeight)) / mpq) * mpq);
+      const remainingSlots = (cats.length - 1 - idx);
+      if (currentAssigned + shareMarks + remainingSlots > targetTotal) {
+        shareMarks = Math.max(mpq, targetTotal - currentAssigned - remainingSlots);
+      }
+    }
+
+    const attempt = Math.max(1, Math.round(shareMarks / mpq));
+    const actualMarks = attempt * mpq;
+    currentAssigned += actualMarks;
+    const count = (catId === 'mcqs' || catId.startsWith('words')) ? attempt : Math.ceil(attempt * 1.33);
+
+    alloc[catId] = {
+      count,
+      attempt,
+      marksPerQ: mpq,
+      totalMarks: actualMarks,
+      manuallyEdited: false
+    };
+  });
+
+  // Final exact balancing step: if currentAssigned !== targetTotal, adjust the category with the smallest marksPerQ
+  let diff = targetTotal - currentAssigned;
+  if (diff !== 0) {
+    let adjustableCat = cats.find(c => (alloc[c] && alloc[c].marksPerQ === 1)) || cats[0];
+    if (adjustableCat && alloc[adjustableCat]) {
+      const mpq = alloc[adjustableCat].marksPerQ || 1;
+      const adjustQs = Math.round(diff / mpq);
+      if (alloc[adjustableCat].attempt + adjustQs >= 1) {
+        alloc[adjustableCat].attempt += adjustQs;
+        alloc[adjustableCat].count = Math.max(alloc[adjustableCat].count, alloc[adjustableCat].attempt);
+        alloc[adjustableCat].totalMarks = alloc[adjustableCat].attempt * mpq;
+      }
+    }
+  }
+}
+
+function getCategoryMeta(catId) {
+  const cats = getSubjectCategories(paperCreationState.subjectId, paperCreationState.classId);
+  return cats.find(c => c.id === catId) || { id: catId, name: catId, icon: "📝", desc: "" };
+}
+
+// ─── UNIFIED CURRICULUM QUESTIONS BANK EXTRACTOR ───────────
+function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
+  const sid = (subjectId || "").toLowerCase();
+  const result = [];
+
+  // 1. MATHEMATICS
+  if (sid.includes("math")) {
+    if (typeof MATH_DATA !== 'undefined' && Array.isArray(MATH_DATA)) {
+      MATH_DATA.forEach((u, uIdx) => {
+        const chTitle = `Unit ${u.number || uIdx + 1}: ${u.title}`;
+
+        // Topic-wise SLO questions
+        if (Array.isArray(u.sections)) {
+          u.sections.forEach(sec => {
+            const topicTitle = sec.title || `Topic ${sec.id}`;
+            if (typeof getTopicSpecificSLOs === 'function') {
+              const slos = getTopicSpecificSLOs(sec, u);
+              if (catId === 'mcqs' && Array.isArray(slos.mcqs)) {
+                slos.mcqs.forEach((m, mIdx) => {
+                  result.push({
+                    id: `math-slo-m-${u.number}-${sec.id}-${mIdx}`,
+                    q: m.question || m.q,
+                    opts: m.options || m.opts || ["A", "B", "C", "D"],
+                    ans: (typeof m.correctIndex === 'number') ? m.correctIndex : ((typeof m.ans === 'number') ? m.ans : 0),
+                    exp: m.explanation || m.working || `Derived from ${topicTitle}`,
+                    chapter: chTitle,
+                    topic: topicTitle,
+                    source: "slo",
+                    marks: 1
+                  });
+                });
+              }
+              if (catId === 'sqs' && Array.isArray(slos.shortQuestions)) {
+                slos.shortQuestions.forEach((sq, sIdx) => {
+                  result.push({
+                    id: `math-slo-sq-${u.number}-${sec.id}-${sIdx}`,
+                    q: sq.question || sq.q,
+                    key: sq.answer || sq.solution || sq.key,
+                    chapter: chTitle,
+                    topic: topicTitle,
+                    source: "slo",
+                    marks: 4
+                  });
+                });
+              }
+              if (catId === 'lqs' && Array.isArray(slos.longQuestions)) {
+                slos.longQuestions.forEach((lq, lIdx) => {
+                  result.push({
+                    id: `math-slo-lq-${u.number}-${sec.id}-${lIdx}`,
+                    q: lq.question || lq.q,
+                    subA: lq.subA,
+                    subB: lq.subB,
+                    chapter: chTitle,
+                    topic: topicTitle,
+                    source: "slo",
+                    marks: 8
+                  });
+                });
+              }
+            }
+          });
+        }
+
+        // Exercise-based problems
+        if (Array.isArray(u.exercises)) {
+          u.exercises.forEach((ex, exIdx) => {
+            const topicTitle = `Exercise ${ex.exerciseNumber || exIdx + 1}`;
+            if (Array.isArray(ex.problems)) {
+              ex.problems.forEach((p, pIdx) => {
+                if (catId === 'sqs' || catId === 'numericals') {
+                  result.push({
+                    id: `math-ex-p-${u.number}-${exIdx}-${pIdx}`,
+                    q: p.statement || p.q || `Solve the problem from ${topicTitle}`,
+                    key: p.solution || p.answer || "Show detailed step-by-step working.",
+                    chapter: chTitle,
+                    topic: topicTitle,
+                    source: "exercise",
+                    marks: 4
+                  });
+                }
+              });
+            }
+          });
+        }
+
+        // Review exercise MCQs and problems
+        if (Array.isArray(u.exercises)) {
+          const revEx = u.exercises.find(e => (e.title || e.exercise || '').toLowerCase().includes('review'));
+          if (revEx && Array.isArray(revEx.problems)) {
+            if (catId === 'mcqs' && revEx.problems[0] && revEx.problems[0].question) {
+              const subRegex = new RegExp('\\(([ivx]+)\\)\\s+([^\\(]+?)\\s+\\(a\\)\\s+([^\\(]+?)\\s+\\(b\\)\\s+([^\\(]+?)\\s+\\(c\\)\\s+([^\\(]+?)\\s+\\(d\\)\\s+([^\\n\\r]+)', 'g');
+              let sm;
+              let sIdx = 0;
+              while ((sm = subRegex.exec(revEx.problems[0].question)) !== null) {
+                result.push({
+                  id: `math-rev-m-${u.number}-${sIdx}`,
+                  q: sm[2].trim(),
+                  opts: [sm[3].trim(), sm[4].trim(), sm[5].trim(), sm[6].trim()],
+                  ans: 0,
+                  exp: `Textbook Review Exercise ${u.number} (${sm[1]})`,
+                  chapter: chTitle,
+                  topic: `Review Exercise ${u.number}`,
+                  source: "exercise",
+                  marks: 1
+                });
+                sIdx++;
+              }
+            }
+          }
+        }
+
+        // Chapter synthesis SLOs
+        if (u.slos) {
+          if (catId === 'mcqs' && Array.isArray(u.slos.mcqs)) {
+            u.slos.mcqs.forEach((m, mIdx) => {
+              result.push({
+                id: `math-ch-m-${u.number}-${mIdx}`,
+                q: m.question || m.q,
+                opts: m.options || m.opts || ["A", "B", "C", "D"],
+                ans: (typeof m.correctIndex === 'number') ? m.correctIndex : ((typeof m.ans === 'number') ? m.ans : 0),
+                exp: m.explanation || `Unit ${u.number} Synthesis`,
+                chapter: chTitle,
+                topic: "Unit Examination SLOs",
+                source: "slo",
+                marks: 1
+              });
+            });
+          }
+          if (catId === 'sqs' && Array.isArray(u.slos.shortQuestions)) {
+            u.slos.shortQuestions.forEach((sq, sIdx) => {
+              result.push({
+                id: `math-ch-sq-${u.number}-${sIdx}`,
+                q: sq.question || sq.q,
+                key: sq.answer || sq.solution,
+                chapter: chTitle,
+                topic: "Unit Examination SLOs",
+                source: "slo",
+                marks: 4
+              });
+            });
+          }
+          if (catId === 'lqs' && Array.isArray(u.slos.longQuestions)) {
+            u.slos.longQuestions.forEach((lq, lIdx) => {
+              result.push({
+                id: `math-ch-lq-${u.number}-${lIdx}`,
+                q: lq.question || lq.q,
+                subA: lq.subA,
+                subB: lq.subB,
+                chapter: chTitle,
+                topic: "Unit Examination SLOs",
+                source: "slo",
+                marks: 8
+              });
+            });
+          }
+        }
+      });
+    }
+  }
+
+  // 2. ENGLISH
+  else if (sid.includes("eng")) {
+    if (typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA)) {
+      ENGLISH_DATA.forEach((u, uIdx) => {
+        const chTitle = `Unit ${u.number || uIdx + 1}: ${u.title}`;
+
+        if (u.exercise) {
+          // Exercise MCQs
+          if (catId === 'mcqs' && Array.isArray(u.exercise.textbookMcqs)) {
+            u.exercise.textbookMcqs.forEach((m, mIdx) => {
+              result.push({
+                id: `eng-ex-m-${u.number}-${mIdx}`,
+                q: m.question || m.q,
+                opts: m.options || m.opts || ["A", "B", "C", "D"],
+                ans: m.correct || m.ans || 0,
+                exp: m.explanation || `Textbook Exercise Unit ${u.number}`,
+                chapter: chTitle,
+                topic: "Textbook Exercise MCQs",
+                source: "exercise",
+                marks: 1
+              });
+            });
+          }
+
+          // English SLO MCQs
+          if (catId === 'mcqs') {
+            result.push({
+              id: `eng-slo-m-${u.number}-1`,
+              q: `What is the central ethical and thematic competency developed in Unit ${u.number} ("${u.title.slice(0, 35)}")?`,
+              opts: [
+                `Moral integrity, societal harmony and emulation of good character`,
+                "Mere historical memorization without behavioral reflection",
+                "Theoretical lexical analysis devoid of practical life impact",
+                "Technical terminology without contextual synthesis"
+              ],
+              ans: 0,
+              exp: `Board SLO thematic assessment for Unit ${u.number}`,
+              chapter: chTitle,
+              topic: "SLO Concept Drills",
+              source: "slo",
+              marks: 1
+            });
+          }
+
+          // Exercise Short Questions (Comprehension)
+          if (catId === 'sqs' && Array.isArray(u.exercise.comprehension)) {
+            u.exercise.comprehension.forEach((c, cIdx) => {
+              result.push({
+                id: `eng-ex-sq-${u.number}-${cIdx}`,
+                q: c.question || c.q,
+                key: c.answer || `Refer to Unit ${u.number} text.`,
+                chapter: chTitle,
+                topic: "Reading Comprehension",
+                source: "exercise",
+                marks: 4
+              });
+            });
+          }
+
+          // English SLO Short Questions
+          if (catId === 'sqs') {
+            result.push({
+              id: `eng-slo-sq-${u.number}-1`,
+              q: `How does the lesson in Unit ${u.number} encourage critical thinking and empathy in modern civic life?`,
+              key: "It instructs readers to act with patience, justice, mutual respect, and active civic responsibility.",
+              chapter: chTitle,
+              topic: "SLO Critical Thinking",
+              source: "slo",
+              marks: 4
+            });
+          }
+
+          // Words Meanings
+          if (catId === 'wordsMeanings' && Array.isArray(u.exercise.dictionaryWords)) {
+            u.exercise.dictionaryWords.forEach((dw, dIdx) => {
+              result.push({
+                id: `eng-wm-${u.number}-${dIdx}`,
+                q: `Give the contextual textbook meaning of: "${dw.word || dw}"`,
+                key: `Meaning: ${dw.meaning || 'Accurate definition'} (Part of Speech: ${dw.pos || 'N/A'})`,
+                chapter: chTitle,
+                topic: "Vocabulary & Glossary",
+                source: "exercise",
+                marks: 1
+              });
+            });
+          }
+
+          // Words Opposites
+          if (catId === 'wordsOpposites' && Array.isArray(u.exercise.dictionaryWords)) {
+            u.exercise.dictionaryWords.forEach((dw, dIdx) => {
+              result.push({
+                id: `eng-wo-${u.number}-${dIdx}`,
+                q: `Write the antonym (opposite word) of: "${dw.word || dw}"`,
+                key: `Opposite: Contextual antonym based on Unit ${u.number}`,
+                chapter: chTitle,
+                topic: "Antonyms & Opposites",
+                source: "slo",
+                marks: 1
+              });
+            });
+          }
+
+          // Words Similars (Synonyms)
+          if (catId === 'wordsSimilars' && Array.isArray(u.exercise.dictionaryWords)) {
+            u.exercise.dictionaryWords.forEach((dw, dIdx) => {
+              result.push({
+                id: `eng-ws-${u.number}-${dIdx}`,
+                q: `Write a synonym (similar word / مترادف) for: "${dw.word || dw}"`,
+                key: `Synonym: ${dw.meaning || 'Contextual similar term'}`,
+                chapter: chTitle,
+                topic: "Synonyms & Similars",
+                source: "slo",
+                marks: 1
+              });
+            });
+          }
+
+          // Words Use in Sentences
+          if (catId === 'wordsUse' && Array.isArray(u.exercise.dictionaryWords)) {
+            u.exercise.dictionaryWords.forEach((dw, dIdx) => {
+              result.push({
+                id: `eng-wu-${u.number}-${dIdx}`,
+                q: `Use the following word in a meaningful sentence: "${dw.word || dw}"`,
+                key: `Model sentence: ${dw.example || ('He demonstrated great ' + (dw.word || dw) + ' in his character.')}`,
+                chapter: chTitle,
+                topic: "Sentence Formation",
+                source: "exercise",
+                marks: 1
+              });
+            });
+          }
+        }
+
+        // Long Questions / Summary
+        if (catId === 'lqs') {
+          result.push({
+            id: `eng-lq-${u.number}-theme`,
+            q: `Write a comprehensive theme/summary of Unit ${u.number || uIdx + 1}: "${u.title}".`,
+            subA: "Describe the core moral lesson conveyed by the author.",
+            subB: "How does this lesson apply to daily life and civic society?",
+            chapter: chTitle,
+            topic: "Theme & Stanza Analysis",
+            source: "exercise",
+            marks: 8
+          });
+        }
+
+        // Grammar & Tenses
+        if (catId === 'grammar') {
+          result.push({
+            id: `eng-gram-${u.number}`,
+            q: `Identify the part of speech and rewrite the sentences according to grammatical rules for Unit ${u.number}.`,
+            key: "Correct grammatical rules, tense agreement, and punctuation.",
+            chapter: chTitle,
+            topic: "Grammar & Tenses",
+            source: "slo",
+            marks: 2
+          });
+        }
+
+        // Translation (Eng to Urdu)
+        if (catId === 'translation') {
+          result.push({
+            id: `eng-trans-${u.number}`,
+            q: `Translate the following paragraph from Unit ${u.number} into idiomatic Urdu:`,
+            key: u.urduSummary || "Accurate line-by-line Urdu translation.",
+            chapter: chTitle,
+            topic: "Paragraph Translation",
+            source: "exercise",
+            marks: 8
+          });
+        }
+      });
+    }
+  }
+
+  // 3. URDU
+  else if (sid.includes("urdu")) {
+    if (typeof URDU_DATA !== 'undefined' && Array.isArray(URDU_DATA)) {
+      URDU_DATA.forEach((lesson, lIdx) => {
+        const chTitle = `سبق نمبر ${lIdx + 1}: ${lesson.title}`;
+
+        if (lesson.exercise) {
+          if (catId === 'mcqs' && Array.isArray(lesson.exercise.mcqs)) {
+            lesson.exercise.mcqs.forEach((m, mIdx) => {
+              result.push({
+                id: `urdu-m-${lIdx}-${mIdx}`,
+                q: m.question || m.q,
+                opts: m.options || m.opts || ["الف", "ب", "ج", "د"],
+                ans: m.correct || m.ans || 0,
+                exp: m.explanation || chTitle,
+                chapter: chTitle,
+                topic: "معروضی سوالات",
+                source: "exercise",
+                marks: 1
+              });
+            });
+          }
+          if (catId === 'sqs' && Array.isArray(lesson.exercise.shortQuestions)) {
+            lesson.exercise.shortQuestions.forEach((sq, sIdx) => {
+              result.push({
+                id: `urdu-sq-${lIdx}-${sIdx}`,
+                q: sq.question || sq.q,
+                key: sq.answer || sq.key,
+                chapter: chTitle,
+                topic: "مختصر سوالات",
+                source: "exercise",
+                marks: 4
+              });
+            });
+          }
+          if (catId === 'wordsMeanings' && Array.isArray(lesson.exercise.vocabulary)) {
+            lesson.exercise.vocabulary.forEach((v, vIdx) => {
+              result.push({
+                id: `urdu-wm-${lIdx}-${vIdx}`,
+                q: `درج ذیل لفظ کا فرہنگ کے مطابق معنی لکھیں: "${v.word}"`,
+                key: `معنی: ${v.meaning}`,
+                chapter: chTitle,
+                topic: "الفاظ — معانی",
+                source: "exercise",
+                marks: 1
+              });
+            });
+          }
+        }
+
+        if (catId === 'lqs') {
+          result.push({
+            id: `urdu-lq-${lIdx}`,
+            q: `سبق "${lesson.title}" کا خلاصہ اپنے الفاظ میں تحریر کریں۔`,
+            subA: "مصنف کا تعارف اور مرکزی خیال بیان کریں۔",
+            subB: "سبق سے حاصل ہونے والے اخلاقی اسباق کا احاطہ کریں۔",
+            chapter: chTitle,
+            topic: "سبق کا خلاصہ",
+            source: "exercise",
+            marks: 8
+          });
+        }
+      });
+    }
+  }
+
+  // 4. CHEMISTRY
+  else if (sid.includes("chem")) {
+    const chList = (DATA && DATA.chemChapters) ? DATA.chemChapters : [];
+    chList.forEach((ch, cIdx) => {
+      const chTitle = `Chapter ${ch.num || cIdx + 1}: ${ch.name}`;
+
+      if (ch.textbookExercise) {
+        if (catId === 'mcqs' && Array.isArray(ch.textbookExercise.mcqs)) {
+          ch.textbookExercise.mcqs.forEach((m, mIdx) => {
+            result.push({
+              id: `chem-ex-m-${cIdx}-${mIdx}`,
+              q: m.question || m.q,
+              opts: m.options || m.opts || ["A", "B", "C", "D"],
+              ans: m.correctIndex !== undefined ? m.correctIndex : (m.ans || 0),
+              exp: m.explanation || chTitle,
+              chapter: chTitle,
+              topic: "Textbook Exercise MCQs",
+              source: "exercise",
+              marks: 1
+            });
+          });
+        }
+        if (catId === 'sqs' && Array.isArray(ch.textbookExercise.shortQuestions)) {
+          ch.textbookExercise.shortQuestions.forEach((sq, sIdx) => {
+            result.push({
+              id: `chem-ex-sq-${cIdx}-${sIdx}`,
+              q: sq.question || sq.q,
+              key: sq.answer || sq.key,
+              chapter: chTitle,
+              topic: "Exercise Short Questions",
+              source: "exercise",
+              marks: 4
+            });
+          });
+        }
+        if (catId === 'lqs' && Array.isArray(ch.textbookExercise.comprehensiveQuestions)) {
+          ch.textbookExercise.comprehensiveQuestions.forEach((lq, lIdx) => {
+            result.push({
+              id: `chem-ex-lq-${cIdx}-${lIdx}`,
+              q: lq.question || lq.q,
+              subA: lq.subA,
+              subB: lq.subB,
+              chapter: chTitle,
+              topic: "Comprehensive Theory",
+              source: "exercise",
+              marks: 8
+            });
+          });
+        }
+      }
+
+      if (catId === 'mcqs' && Array.isArray(ch.sloMcqs)) {
+        ch.sloMcqs.forEach((m, mIdx) => {
+          result.push({
+            id: `chem-slo-m-${cIdx}-${mIdx}`,
+            q: m.question || m.q,
+            opts: m.options || m.opts || ["A", "B", "C", "D"],
+            ans: m.ans || 0,
+            exp: m.explanation || "SLO Concept Drill",
+            chapter: chTitle,
+            topic: "SLO Concept Drills",
+            source: "slo",
+            marks: 1
+          });
+        });
+      }
+      if (catId === 'sqs' && Array.isArray(ch.sloSq)) {
+        ch.sloSq.forEach((sq, sIdx) => {
+          result.push({
+            id: `chem-slo-sq-${cIdx}-${sIdx}`,
+            q: sq.question || sq.q,
+            key: sq.answer || sq.key,
+            chapter: chTitle,
+            topic: "SLO Reasoning Questions",
+            source: "slo",
+            marks: 4
+          });
+        });
+      }
+      if (catId === 'lqs' && Array.isArray(ch.sloLq)) {
+        ch.sloLq.forEach((lq, lIdx) => {
+          result.push({
+            id: `chem-slo-lq-${cIdx}-${lIdx}`,
+            q: lq.question || lq.q,
+            subA: lq.subA,
+            subB: lq.subB,
+            chapter: chTitle,
+            topic: "SLO Analytical Questions",
+            source: "slo",
+            marks: 8
+          });
+        });
+      }
+    });
+  }
+
+  // 5. PHYSICS
+  else if (sid.includes("phys")) {
+    const chList = (DATA && DATA.physChapters) ? DATA.physChapters : [];
+    chList.forEach((ch, cIdx) => {
+      const chTitle = `Chapter ${ch.num || cIdx + 1}: ${ch.name}`;
+
+      if (ch.textbookExercise) {
+        if (catId === 'mcqs' && Array.isArray(ch.textbookExercise.mcqs)) {
+          ch.textbookExercise.mcqs.forEach((m, mIdx) => {
+            result.push({
+              id: `phys-ex-m-${cIdx}-${mIdx}`,
+              q: m.question || m.q,
+              opts: m.options || m.opts || ["A", "B", "C", "D"],
+              ans: m.correctIndex !== undefined ? m.correctIndex : (m.ans || 0),
+              exp: m.explanation || chTitle,
+              chapter: chTitle,
+              topic: "Exercise MCQs",
+              source: "exercise",
+              marks: 1
+            });
+          });
+        }
+        if (catId === 'sqs' && Array.isArray(ch.textbookExercise.shortQuestions)) {
+          ch.textbookExercise.shortQuestions.forEach((sq, sIdx) => {
+            result.push({
+              id: `phys-ex-sq-${cIdx}-${sIdx}`,
+              q: sq.question || sq.q,
+              key: sq.answer || sq.key,
+              chapter: chTitle,
+              topic: "Conceptual Questions",
+              source: "exercise",
+              marks: 4
+            });
+          });
+        }
+        if ((catId === 'numericals' || catId === 'sqs') && Array.isArray(ch.textbookExercise.numericalProblems)) {
+          ch.textbookExercise.numericalProblems.forEach((num, nIdx) => {
+            result.push({
+              id: `phys-num-${cIdx}-${nIdx}`,
+              q: num.statement || num.q || num.question,
+              key: num.solution || num.answer || "Apply relevant physics formulas with SI units.",
+              chapter: chTitle,
+              topic: "Numerical Problems",
+              source: "exercise",
+              marks: 4
+            });
+          });
+        }
+        if (catId === 'lqs' && Array.isArray(ch.textbookExercise.comprehensiveQuestions)) {
+          ch.textbookExercise.comprehensiveQuestions.forEach((lq, lIdx) => {
+            result.push({
+              id: `phys-lq-${cIdx}-${lIdx}`,
+              q: lq.question || lq.q,
+              subA: lq.subA,
+              subB: lq.subB,
+              chapter: chTitle,
+              topic: "Comprehensive Theory",
+              source: "exercise",
+              marks: 8
+            });
+          });
+        }
+      }
+    });
+  }
+
+  // Fallback: Populate from getCurriculumQuestionsBank if results are sparse
+  if (result.length < 5) {
+    const fb = getCurriculumQuestionsBank(classId, subjectId, paperCreationState.seed || 1);
+    const fbPool = (catId === 'mcqs') ? (fb.mcqs || []) : ((catId === 'lqs') ? (fb.lqs || []) : (fb.sqs || []));
+    fbPool.forEach((q, idx) => {
+      result.push({
+        id: `fb-${catId}-${idx}`,
+        q: q.q || q.question,
+        opts: q.opts || q.options,
+        ans: q.ans !== undefined ? q.ans : 0,
+        exp: q.exp || "Curriculum standard definition",
+        key: q.key || q.answer,
+        subA: q.subA,
+        subB: q.subB,
+        chapter: `General Curriculum ${idx + 1}`,
+        topic: "Core Board Concepts",
+        source: (idx % 2 === 0 ? "exercise" : "slo"),
+        marks: (catId === 'mcqs' ? 1 : (catId === 'lqs' ? 8 : 4))
+      });
+    });
+  }
+
+  return result;
 }
 
 // ─── LIVE EXAM PAPER TEMPLATE GENERATOR ──────────────────
 function renderLiveExamPaperHtml() {
   const clsName = getClassName(paperCreationState.classId);
   const subj = getSelectedSubjectObj();
-  const qBank = getSubjectRichQuestionBank(paperCreationState.classId, subj.id, paperCreationState.seed);
-
-  const parts = paperCreationState.parts || [];
+  const catsOrder = paperCreationState.categoriesOrder || ["mcqs", "sqs", "lqs"];
   const mcqCols = paperCreationState.mcqSettings.columns || 2;
   const mcqLayout = paperCreationState.mcqSettings.optionsLayout || 'horizontal';
   const isOmr = paperCreationState.mcqSettings.omrBased;
+  const isSamePage = (paperCreationState.mcqSettings.samePage !== false);
+  const isOmrPure = isOmr && (paperCreationState.mcqSettings.omrShowOptionWords === false);
+  const isSeparateOmrSheet = (!isSamePage && isOmr);
 
   return `
     <div class="printable-exam-paper" id="printableExamPaper">
@@ -9973,64 +10631,81 @@ function renderLiveExamPaperHtml() {
         <div class="pep-sfield"><strong>Date:</strong> ${paperCreationState.date || '___ / ___ / 2026'}</div>
       </div>
 
-      <!-- Dynamic Sections / Parts -->
-      ${parts.map((part, pIdx) => {
-        const cat = part.category;
+      <!-- Dynamic Sections rendered in exact user-defined order -->
+      ${catsOrder.map((catId, catIdx) => {
+        const catMeta = getCategoryMeta(catId);
+        const alloc = paperCreationState.categoryAllocations[catId] || { count: 10, attempt: 8, marksPerQ: 2, totalMarks: 16 };
+        const reqCount = alloc.count || 10;
+        const attemptCount = alloc.attempt || reqCount;
+        const sectionLetter = String.fromCharCode(65 + catIdx);
+
+        // Fetch questions: prefer user hand-picked, fallback to first N from bank
+        const allBankQs = getCurriculumQuestionsForCategory(paperCreationState.classId, paperCreationState.subjectId, catId);
+        const pickedIds = paperCreationState.selectedQuestionsByCategory[catId] || [];
+        
+        let displayQuestions = [];
+        if (pickedIds.length > 0) {
+          pickedIds.forEach(id => {
+            const found = allBankQs.find(q => q.id === id);
+            if (found) displayQuestions.push(found);
+          });
+        }
+        // Fill remaining with curriculum bank so preview is always complete
+        if (displayQuestions.length < reqCount) {
+          const remainingPool = allBankQs.filter(q => !displayQuestions.some(dq => dq.id === q.id));
+          displayQuestions.push(...remainingPool.slice(0, reqCount - displayQuestions.length));
+        }
+
+        // Section Title & Instructions
+        let secTitle = `SECTION — ${sectionLetter} (${catMeta.name.toUpperCase()})`;
+        let secInstructions = `Note: Attempt any ${attemptCount} questions from this section. Each question carries ${alloc.marksPerQ} marks.`;
+
+        if (catId === 'mcqs') {
+          secTitle = `SECTION — A (OBJECTIVE TYPE / MULTIPLE CHOICE QUESTIONS)`;
+          secInstructions = `Note: Attempt all ${attemptCount} questions. Each question carries ${alloc.marksPerQ} mark. Fill the corresponding bubble or encircle the correct option (A, B, C, or D).`;
+        }
 
         // 1. MCQs Section
-        if (cat === 'mcqs') {
-          const reqCount = Number(part.count) || 15;
-          const questions = (qBank.mcqs || []).slice(0, reqCount);
-          const isSamePage = (paperCreationState.mcqSettings.samePage !== false);
-          const isOmrPure = isOmr && (paperCreationState.mcqSettings.omrShowOptionWords === false);
-          const isSeparateOmrSheet = (!isSamePage && isOmr);
-
+        if (catId === 'mcqs') {
           return `
-            <div class="pep-section" style="${part.startNewPage || !isSamePage ? 'page-break-before:always;' : ''}">
+            <div class="pep-section" style="${catIdx > 0 && !isSamePage ? 'page-break-before:always;' : ''}">
               <div class="pep-sec-header">
-                <span class="pep-sec-title">${part.name}</span>
-                <span class="pep-sec-marks">Marks: ${part.totalMarks} (${reqCount} × ${part.marksPerQ})</span>
+                <span class="pep-sec-title">${secTitle}</span>
+                <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
               </div>
-              <div class="pep-sec-instruction">
-                ${part.instructions}
-              </div>
+              <div class="pep-sec-instruction">${secInstructions}</div>
 
               ${isSeparateOmrSheet ? `
-                <!-- SEPARATE OMR ANSWER SHEET: Number on left and Options next to it -->
                 <div style="margin:0.75rem 0 1rem 0;background:#f8fafc;border:1.5px solid #000;border-radius:6px;padding:0.75rem;">
-                  <div style="font-weight:800;font-size:0.85rem;text-align:center;margin-bottom:0.6rem;text-transform:uppercase;letter-spacing:0.04em;">
-                    OFFICIAL OMR ANSWER SHEET · SECTION A
+                  <div style="font-weight:800;font-size:0.85rem;text-align:center;margin-bottom:0.6rem;text-transform:uppercase;">
+                    OFFICIAL OMR ANSWER SHEET · SECTION ${sectionLetter}
                   </div>
                   <table class="pep-omr-table">
                     <thead>
                       <tr>
                         <th style="width:12%;">Q. No.</th>
-                        <th style="width:38%;">Shade Correct Option Bubble</th>
+                        <th style="width:38%;">Shade Option Bubble</th>
                         <th style="width:12%;">Q. No.</th>
-                        <th style="width:38%;">Shade Correct Option Bubble</th>
+                        <th style="width:38%;">Shade Option Bubble</th>
                       </tr>
                     </thead>
                     <tbody>
-                      ${Array.from({ length: Math.ceil(reqCount / 2) }).map((_, rIdx) => {
+                      ${Array.from({ length: Math.ceil(displayQuestions.length / 2) }).map((_, rIdx) => {
                         const q1 = rIdx + 1;
-                        const q2 = rIdx + 1 + Math.ceil(reqCount / 2);
+                        const q2 = rIdx + 1 + Math.ceil(displayQuestions.length / 2);
                         return `
                           <tr>
                             <td><strong>${q1}</strong></td>
                             <td>
                               <span class="pep-omr-strip">
-                                ${['A','B','C','D'].map(letter => `
-                                  <span class="omr-bubble-circle">${letter}</span>
-                                `).join('')}
+                                ${['A','B','C','D'].map(l => `<span class="omr-bubble-circle">${l}</span>`).join('')}
                               </span>
                             </td>
-                            ${q2 <= reqCount ? `
+                            ${q2 <= displayQuestions.length ? `
                               <td><strong>${q2}</strong></td>
                               <td>
                                 <span class="pep-omr-strip">
-                                  ${['A','B','C','D'].map(letter => `
-                                    <span class="omr-bubble-circle">${letter}</span>
-                                  `).join('')}
+                                  ${['A','B','C','D'].map(l => `<span class="omr-bubble-circle">${l}</span>`).join('')}
                                 </span>
                               </td>
                             ` : '<td>-</td><td>-</td>'}
@@ -10041,16 +10716,18 @@ function renderLiveExamPaperHtml() {
                   </table>
                 </div>
               ` : ''}
-              
+
               <div class="pep-mcqs-grid" data-cols="${mcqCols}">
-                ${questions.map((m, idx) => `
+                ${displayQuestions.map((m, idx) => `
                   <div class="pep-mcq-item">
                     <div class="pep-mcq-q" style="margin-bottom:0.25rem;">
                       <strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}
                     </div>
-                    <div class="pep-mcq-options" data-layout="${isOmrPure ? 'horizontal' : mcqLayout}" style="${isOmrPure ? 'display:flex;align-items:center;gap:1.15rem;margin-top:0.25rem;padding-left:0.5rem;' : ''}">
-                      ${m.opts.map((opt, oi) => `
-                        <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" style="${isOmrPure ? 'gap:0.2rem;display:inline-flex;align-items:center;' : ''}">
+                    <div class="pep-mcq-options" data-layout="${isOmrPure ? 'horizontal' : mcqLayout}" 
+                         style="${isOmrPure ? 'display:flex;align-items:center;gap:1.15rem;margin-top:0.25rem;padding-left:0.5rem;' : ''}">
+                      ${(m.opts || ["A", "B", "C", "D"]).map((opt, oi) => `
+                        <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" 
+                              style="${isOmrPure ? 'gap:0.2rem;display:inline-flex;align-items:center;' : ''}">
                           ${isOmr ? `
                             <span class="omr-bubble-circle">${String.fromCharCode(65 + oi)}</span>
                           ` : `
@@ -10061,7 +10738,7 @@ function renderLiveExamPaperHtml() {
                       `).join('')}
                     </div>
                     ${paperCreationState.showAnswerKey ? `
-                      <div class="pep-key-note">💡 Key: (${String.fromCharCode(65 + m.ans)}) — ${m.exp || 'Standard syllabus definition'}</div>
+                      <div class="pep-key-note">💡 Key: (${String.fromCharCode(65 + (m.ans || 0))}) — ${m.exp || 'Standard syllabus definition'}</div>
                     ` : ''}
                   </div>
                 `).join('')}
@@ -10070,70 +10747,32 @@ function renderLiveExamPaperHtml() {
           `;
         }
 
-        // 2. Short Questions / Words Meanings / Definitions
-        if (cat === 'sqs' || cat === 'definitions' || cat === 'wordsMeanings' || cat === 'grammar') {
-          const reqCount = Number(part.count) || 10;
-          const questions = (qBank[cat] || qBank.sqs || []).slice(0, reqCount);
-
+        // 2. Long Questions Section
+        if (catId === 'lqs' || catId === 'theorems' || catId === 'essays') {
           return `
-            <div class="pep-section" style="margin-top:1.25rem;${part.startNewPage ? 'page-break-before:always;' : ''}">
+            <div class="pep-section" style="margin-top:1.25rem;">
               <div class="pep-sec-header">
-                <span class="pep-sec-title">${part.name}</span>
-                <span class="pep-sec-marks">Marks: ${part.totalMarks} (${part.attempt} × ${part.marksPerQ})</span>
+                <span class="pep-sec-title">${secTitle}</span>
+                <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
               </div>
-              <div class="pep-sec-instruction">
-                ${part.instructions}
-              </div>
-              <div class="pep-sqs-list">
-                ${questions.map((sq, idx) => `
-                  <div class="pep-sq-item">
-                    <div class="pep-sq-q">
-                      <span><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${sq.q}</span>
-                      ${part.showMarks ? `<span class="pep-q-marks">(${part.marksPerQ})</span>` : ''}
-                    </div>
-                    ${paperCreationState.showAnswerKey ? `
-                      <div class="pep-key-note">
-                        <strong>Model Solution / Rubric:</strong> ${sq.key || '2 marks for clear definition/formula + 2 marks for solved steps/example.'}
-                      </div>
-                    ` : ''}
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-          `;
-        }
-
-        // 3. Long Questions / Numericals / Theorems / Essays
-        if (cat === 'lqs' || cat === 'numericals' || cat === 'theorems' || cat === 'essays') {
-          const reqCount = Number(part.count) || 4;
-          const questions = (qBank[cat] || qBank.lqs || []).slice(0, reqCount);
-
-          return `
-            <div class="pep-section" style="margin-top:1.25rem;${part.startNewPage ? 'page-break-before:always;' : ''}">
-              <div class="pep-sec-header">
-                <span class="pep-sec-title">${part.name}</span>
-                <span class="pep-sec-marks">Marks: ${part.totalMarks} (${part.attempt} × ${part.marksPerQ})</span>
-              </div>
-              <div class="pep-sec-instruction">
-                ${part.instructions}
-              </div>
+              <div class="pep-sec-instruction">${secInstructions}</div>
               <div class="pep-lqs-list">
-                ${questions.map((lq, idx) => `
+                ${displayQuestions.map((lq, idx) => `
                   <div class="pep-lq-item">
                     <div class="pep-lq-q">
                       <span><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${lq.q}</span>
-                      ${part.showMarks ? `<span class="pep-q-marks">(${part.marksPerQ})</span>` : ''}
+                      <span class="pep-q-marks">(${alloc.marksPerQ})</span>
                     </div>
                     ${lq.subA ? `
                       <div class="pep-lq-sub">
                         <span>(a) ${lq.subA}</span>
-                        ${part.showMarks ? `<span class="pep-q-marks">(${Math.round(part.marksPerQ / 2)})</span>` : ''}
+                        <span class="pep-q-marks">(${Math.round(alloc.marksPerQ / 2)})</span>
                       </div>
                     ` : ''}
                     ${lq.subB ? `
                       <div class="pep-lq-sub">
                         <span>(b) ${lq.subB}</span>
-                        ${part.showMarks ? `<span class="pep-q-marks">(${Math.round(part.marksPerQ / 2)})</span>` : ''}
+                        <span class="pep-q-marks">(${Math.round(alloc.marksPerQ / 2)})</span>
                       </div>
                     ` : ''}
                     ${paperCreationState.showAnswerKey ? `
@@ -10148,14 +10787,154 @@ function renderLiveExamPaperHtml() {
           `;
         }
 
-        return '';
+        // 3. Short Questions / Words / Definitions / Numericals / Grammar
+        return `
+          <div class="pep-section" style="margin-top:1.25rem;">
+            <div class="pep-sec-header">
+              <span class="pep-sec-title">${secTitle}</span>
+              <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
+            </div>
+            <div class="pep-sec-instruction">${secInstructions}</div>
+            <div class="pep-sqs-list">
+              ${displayQuestions.map((sq, idx) => `
+                <div class="pep-sq-item">
+                  <div class="pep-sq-q">
+                    <span><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${sq.q}</span>
+                    <span class="pep-q-marks">(${alloc.marksPerQ})</span>
+                  </div>
+                  ${paperCreationState.showAnswerKey ? `
+                    <div class="pep-key-note">
+                      <strong>Model Solution / Rubric:</strong> ${sq.key || 'Accurate definition, formula, step-by-step working, or concise translation.'}
+                    </div>
+                  ` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
       }).join('')}
 
-      <!-- Official Verification Signatures Footer -->
+      <!-- Verification Signatures Footer -->
       <div class="pep-footer-sign-strip">
         <div>Signature of Invigilator: ______________________</div>
         <div>Examiner Marks: [ ______ / ${paperCreationState.totalMarks} ]</div>
         <div>Signature of Head Examiner: ______________________</div>
+      </div>
+    </div>
+  `;
+}
+
+function updatePaperPreview() {
+  const canvas = $("paperPreviewCanvas");
+  if (canvas) {
+    canvas.innerHTML = renderLiveExamPaperHtml();
+  }
+}
+
+function shufflePaperQuestions() {
+  paperCreationState.seed = (paperCreationState.seed || 1) + 1;
+  updatePaperPreview();
+  refreshLeftPanelBody();
+}
+
+function switchPaperVersion(versionLetter) {
+  paperCreationState.version = versionLetter;
+  paperCreationState.paperCode = `SET-${versionLetter}-26`;
+  const seedOffsets = { 'A': 1, 'B': 42, 'C': 99 };
+  paperCreationState.seed = seedOffsets[versionLetter] || 1;
+  updatePaperPreview();
+  refreshLeftPanelBody();
+}
+
+function togglePaperAnswerKey() {
+  paperCreationState.showAnswerKey = !paperCreationState.showAnswerKey;
+  updatePaperPreview();
+  refreshLeftPanelBody();
+}
+
+function printOfficialExamPaper() {
+  window.print();
+}
+
+function openExamSettingsModal() {
+  const container = document.getElementById('paperBlueprintModalContainer');
+  if (!container) return;
+
+  container.innerHTML = `
+    <div class="paper-blueprint-modal-overlay" onclick="closePaperBlueprintModal()">
+      <div class="paper-blueprint-modal" style="max-width:620px;" onclick="event.stopPropagation()">
+        <div class="paper-blueprint-header">
+          <div style="font-weight:900;font-size:1rem;">⚙️ Paper Credentials &amp; Layout Settings</div>
+          <button onclick="closePaperBlueprintModal()" style="background:transparent;border:none;color:#fff;font-size:1.35rem;cursor:pointer;">✕</button>
+        </div>
+
+        <div class="paper-blueprint-body">
+          <div>
+            <label class="pcs-label">Institution / College Name:</label>
+            <input type="text" class="pcs-input" value="${paperCreationState.institutionName}" 
+                   oninput="paperCreationState.institutionName = this.value; updatePaperPreview();">
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.45rem;">
+            <div>
+              <label class="pcs-label">Exam Title:</label>
+              <input type="text" class="pcs-input" value="${paperCreationState.examTitle}" 
+                     oninput="paperCreationState.examTitle = this.value; updatePaperPreview();">
+            </div>
+            <div>
+              <label class="pcs-label">Academic Session:</label>
+              <input type="text" class="pcs-input" value="${paperCreationState.academicYear}" 
+                     oninput="paperCreationState.academicYear = this.value; updatePaperPreview();">
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.45rem;">
+            <div>
+              <label class="pcs-label">Paper Code:</label>
+              <input type="text" class="pcs-input" value="${paperCreationState.paperCode}" 
+                     oninput="paperCreationState.paperCode = this.value; updatePaperPreview();">
+            </div>
+            <div>
+              <label class="pcs-label">Time Allowed:</label>
+              <input type="text" class="pcs-input" value="${paperCreationState.duration}" 
+                     oninput="paperCreationState.duration = this.value; updatePaperPreview();">
+            </div>
+            <div>
+              <label class="pcs-label">Exam Date:</label>
+              <input type="text" class="pcs-input" value="${paperCreationState.date}" 
+                     oninput="paperCreationState.date = this.value; updatePaperPreview();">
+            </div>
+          </div>
+
+          <!-- MCQ Layout Options -->
+          <div style="background:#f8fafc;padding:0.6rem;border-radius:8px;border:1px solid #e2e8f0;">
+            <div style="font-weight:800;font-size:0.75rem;margin-bottom:0.4rem;color:#0f172a;">MCQ Print Options:</div>
+            
+            <div class="paper-row-field">
+              <span>MCQ Columns:</span>
+              <div class="paper-segmented-btn-group">
+                ${[1, 2, 3, 4].map(c => `
+                  <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === c ? 'active' : ''}" 
+                          onclick="paperCreationState.mcqSettings.columns = ${c}; updatePaperPreview(); refreshLeftPanelBody(); closePaperBlueprintModal();">${c} Col${c > 1 ? 's' : ''}</button>
+                `).join('')}
+              </div>
+            </div>
+
+            <div class="paper-row-field">
+              <span>OMR Bubble Format:</span>
+              <div class="paper-segmented-btn-group">
+                <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrBased ? 'active' : ''}" 
+                        onclick="paperCreationState.mcqSettings.omrBased = true; updatePaperPreview(); closePaperBlueprintModal();">OMR Bubbles</button>
+                <button class="paper-seg-btn ${!paperCreationState.mcqSettings.omrBased ? 'active' : ''}" 
+                        onclick="paperCreationState.mcqSettings.omrBased = false; updatePaperPreview(); closePaperBlueprintModal();">A, B, C, D</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="paper-blueprint-footer" style="justify-content:flex-end;">
+          <button class="btn btn-primary" onclick="closePaperBlueprintModal()">✓ Save &amp; Close</button>
+        </div>
       </div>
     </div>
   `;
@@ -10170,403 +10949,10 @@ function formatQNum(num, style) {
   return `Q${num}`;
 }
 
-// ─── RICH CURRICULUM QUESTIONS BANK EXTRACTOR ────────────
-function getSubjectRichQuestionBank(classId, subjectId, seed = 1) {
-  const sid = (subjectId || "").toLowerCase();
-
-  // 1. MATHEMATICS
-  if (sid.includes("math")) {
-    const mcqs = [];
-    const sqs = [];
-    const lqs = [];
-    const numericals = [];
-
-    if (typeof MATH_DATA !== 'undefined' && Array.isArray(MATH_DATA)) {
-      MATH_DATA.forEach((u, uIdx) => {
-        if (u.slos) {
-          if (Array.isArray(u.slos.mcqs)) {
-            u.slos.mcqs.forEach((m, idx) => {
-              mcqs.push({
-                id: `math-m-${u.id || uIdx}-${idx}`,
-                q: m.question || m.q,
-                opts: m.options || m.opts || ["A", "B", "C", "D"],
-                ans: (typeof m.correctIndex === 'number') ? m.correctIndex : ((typeof m.ans === 'number') ? m.ans : 0),
-                exp: m.explanation || m.working || m.solution || `Derived from Unit ${u.number || uIdx + 1}: ${u.title}`,
-                category: "mcqs",
-                chapter: u.title,
-                marks: 1
-              });
-            });
-          }
-          if (Array.isArray(u.slos.shortQuestions)) {
-            u.slos.shortQuestions.forEach((sq, idx) => {
-              sqs.push({
-                id: `math-sq-${u.id || uIdx}-${idx}`,
-                q: sq.question || sq.q,
-                key: sq.answer || sq.solution || sq.key || `Refer to Unit ${u.number || uIdx + 1} core rules.`,
-                category: "sqs",
-                chapter: u.title,
-                marks: 4
-              });
-            });
-          }
-          if (Array.isArray(u.slos.longQuestions)) {
-            u.slos.longQuestions.forEach((lq, idx) => {
-              lqs.push({
-                id: `math-lq-${u.id || uIdx}-${idx}`,
-                q: lq.question || lq.q || `${u.title} Comprehensive Problem`,
-                subA: lq.subA || (lq.question ? lq.question : `Part (a) detailed problem from ${u.title}`),
-                subB: lq.subB || lq.solution || `Part (b) analytical verification or geometric proof`,
-                category: "lqs",
-                chapter: u.title,
-                marks: 8
-              });
-            });
-          }
-        }
-        if (Array.isArray(u.exercises)) {
-          u.exercises.forEach((ex, exIdx) => {
-            if (Array.isArray(ex.problems)) {
-              ex.problems.slice(0, 2).forEach((p, pIdx) => {
-                if (numericals.length < 20) {
-                  numericals.push({
-                    id: `math-num-${u.id}-${exIdx}-${pIdx}`,
-                    q: p.statement || p.q || `Solve the exercise problem from Ex ${ex.exerciseNumber || exIdx + 1}.`,
-                    key: p.solution || p.answer || "Show detailed step-by-step mathematical working.",
-                    category: "numericals",
-                    chapter: u.title,
-                    marks: 4
-                  });
-                }
-              });
-            }
-          });
-        }
-      });
-    }
-
-    // Ensure fallback questions if needed
-    if (mcqs.length < 15 || sqs.length < 12 || lqs.length < 4) {
-      const fb = getCurriculumQuestionsBank(classId, subjectId, seed);
-      if (mcqs.length < 15) mcqs.push(...fb.mcqs);
-      if (sqs.length < 12) sqs.push(...fb.sqs);
-      if (lqs.length < 4) lqs.push(...fb.lqs);
-    }
-
-    // Shuffle by seed
-    return {
-      mcqs: shuffleArrayBySeed(mcqs, seed),
-      sqs: shuffleArrayBySeed(sqs, seed + 1),
-      lqs: shuffleArrayBySeed(lqs, seed + 2),
-      numericals: shuffleArrayBySeed(numericals, seed + 3)
-    };
-  }
-
-  // 2. URDU
-  if (sid.includes("urdu")) {
-    const mcqs = [];
-    const sqs = [];
-    const lqs = [];
-    const wordsMeanings = [];
-
-    if (typeof URDU_DATA !== 'undefined' && Array.isArray(URDU_DATA)) {
-      URDU_DATA.forEach((lesson, lIdx) => {
-        if (lesson.exercise) {
-          if (Array.isArray(lesson.exercise.mcqs)) {
-            lesson.exercise.mcqs.forEach((m, idx) => {
-              mcqs.push({
-                id: `urdu-m-${lIdx}-${idx}`,
-                q: m.question || m.q,
-                opts: m.options || m.opts || ["الف", "ب", "ج", "د"],
-                ans: m.correct || m.ans || 0,
-                exp: m.explanation || `سبق: ${lesson.title}`,
-                category: "mcqs",
-                chapter: lesson.title,
-                marks: 1
-              });
-            });
-          }
-          if (Array.isArray(lesson.exercise.shortQuestions)) {
-            lesson.exercise.shortQuestions.forEach((sq, idx) => {
-              sqs.push({
-                id: `urdu-sq-${lIdx}-${idx}`,
-                q: sq.question || sq.q,
-                key: sq.answer || sq.key || `سبق "${lesson.title}" کے مطابق جامع جواب۔`,
-                category: "sqs",
-                chapter: lesson.title,
-                marks: 4
-              });
-            });
-          }
-          if (Array.isArray(lesson.exercise.vocabulary)) {
-            lesson.exercise.vocabulary.forEach((v, idx) => {
-              if (v.word && v.meaning) {
-                wordsMeanings.push({
-                  id: `urdu-wm-${lIdx}-${idx}`,
-                  q: `درج ذیل لفظ کا معنی لکھیں: "${v.word}"`,
-                  key: `معنی: ${v.meaning}`,
-                  category: "wordsMeanings",
-                  chapter: lesson.title,
-                  marks: 1
-                });
-              }
-            });
-          }
-        }
-        if (lesson.urduSummary || lesson.englishSummary) {
-          lqs.push({
-            id: `urdu-lq-${lIdx}`,
-            q: `سبق "${lesson.title}" کا خلاصہ اپنے الفاظ میں تحریر کریں۔`,
-            subA: `مصنف کا تعارف اور مرکزی خیال بیان کریں۔`,
-            subB: `سبق کے اہم اخلاقی نکات کا احاطہ کریں۔`,
-            category: "lqs",
-            chapter: lesson.title,
-            marks: 8
-          });
-        }
-      });
-    }
-
-    if (mcqs.length < 15 || sqs.length < 12 || lqs.length < 4) {
-      const fb = getCurriculumQuestionsBank(classId, subjectId, seed);
-      if (mcqs.length < 15) mcqs.push(...fb.mcqs);
-      if (sqs.length < 12) sqs.push(...fb.sqs);
-      if (lqs.length < 4) lqs.push(...fb.lqs);
-    }
-
-    return {
-      mcqs: shuffleArrayBySeed(mcqs, seed),
-      sqs: shuffleArrayBySeed(sqs, seed + 1),
-      lqs: shuffleArrayBySeed(lqs, seed + 2),
-      wordsMeanings: shuffleArrayBySeed(wordsMeanings, seed + 3)
-    };
-  }
-
-  // 3. ENGLISH
-  if (sid.includes("eng")) {
-    const mcqs = [];
-    const sqs = [];
-    const lqs = [];
-    const wordsMeanings = [];
-
-    if (typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA)) {
-      ENGLISH_DATA.forEach((u, uIdx) => {
-        if (u.exercise) {
-          if (Array.isArray(u.exercise.textbookMcqs)) {
-            u.exercise.textbookMcqs.forEach((m, idx) => {
-              mcqs.push({
-                id: `eng-m-${uIdx}-${idx}`,
-                q: m.question || m.q,
-                opts: m.options || m.opts || ["A", "B", "C", "D"],
-                ans: m.correct || m.ans || 0,
-                exp: `Unit ${u.number || uIdx + 1}: ${u.title}`,
-                category: "mcqs",
-                chapter: u.title,
-                marks: 1
-              });
-            });
-          }
-          if (Array.isArray(u.exercise.comprehension)) {
-            u.exercise.comprehension.forEach((c, idx) => {
-              sqs.push({
-                id: `eng-sq-${uIdx}-${idx}`,
-                q: c.question || c.q,
-                key: c.answer || `Refer to Unit ${u.number || uIdx + 1}: ${u.title}`,
-                category: "sqs",
-                chapter: u.title,
-                marks: 4
-              });
-            });
-          }
-          if (Array.isArray(u.exercise.dictionaryWords)) {
-            u.exercise.dictionaryWords.forEach((dw, idx) => {
-              wordsMeanings.push({
-                id: `eng-wm-${uIdx}-${idx}`,
-                q: `Give the contextual meaning of: "${dw.word || dw}"`,
-                key: dw.meaning || "Accurate dictionary definition",
-                category: "wordsMeanings",
-                chapter: u.title,
-                marks: 1
-              });
-            });
-          }
-        }
-        lqs.push({
-          id: `eng-lq-${uIdx}`,
-          q: `Write a comprehensive theme/summary of Unit ${u.number || uIdx + 1}: "${u.title}".`,
-          subA: `Describe the core message conveyed by the author.`,
-          subB: `What moral or practical lesson applies to daily life?`,
-          category: "lqs",
-          chapter: u.title,
-          marks: 8
-        });
-      });
-    }
-
-    if (mcqs.length < 15 || sqs.length < 12 || lqs.length < 4) {
-      const fb = getCurriculumQuestionsBank(classId, subjectId, seed);
-      if (mcqs.length < 15) mcqs.push(...fb.mcqs);
-      if (sqs.length < 12) sqs.push(...fb.sqs);
-      if (lqs.length < 4) lqs.push(...fb.lqs);
-    }
-
-    return {
-      mcqs: shuffleArrayBySeed(mcqs, seed),
-      sqs: shuffleArrayBySeed(sqs, seed + 1),
-      lqs: shuffleArrayBySeed(lqs, seed + 2),
-      wordsMeanings: shuffleArrayBySeed(wordsMeanings, seed + 3)
-    };
-  }
-
-  // 4. Fallback for Science / Other Subjects
-  const fbBank = getCurriculumQuestionsBank(classId, subjectId, seed);
-  return {
-    mcqs: shuffleArrayBySeed(fbBank.mcqs || [], seed),
-    sqs: shuffleArrayBySeed(fbBank.sqs || [], seed + 1),
-    lqs: shuffleArrayBySeed(fbBank.lqs || [], seed + 2),
-    definitions: shuffleArrayBySeed(fbBank.sqs || [], seed + 3),
-    numericals: shuffleArrayBySeed(fbBank.sqs || [], seed + 4)
-  };
-}
-
-function shuffleArrayBySeed(arr, seed) {
-  if (!arr || !arr.length) return [];
-  const copy = [...arr];
-  let s = (seed || 1) * 9301 + 49297;
-  for (let i = copy.length - 1; i > 0; i--) {
-    s = (s * 9301 + 49297) % 233280;
-    const rnd = s / 233280;
-    const j = Math.floor(rnd * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
-// ─── ACTION TOOLBAR HANDLERS ─────────────────────────────
-function shufflePaperQuestions() {
-  paperCreationState.seed = (paperCreationState.seed || 1) + 1;
-  updatePaperPreview();
-}
-
-function switchPaperVersion(versionLetter) {
-  paperCreationState.version = versionLetter;
-  paperCreationState.paperCode = `SET-${versionLetter}-26`;
-  const seedOffsets = { 'A': 1, 'B': 42, 'C': 99 };
-  paperCreationState.seed = seedOffsets[versionLetter] || 1;
-  updatePaperPreview();
-  renderPapersView();
-}
-
-function togglePaperAnswerKey() {
-  paperCreationState.showAnswerKey = !paperCreationState.showAnswerKey;
-  updatePaperPreview();
-  const sideEl = document.getElementById('paperCreatorSidebar');
-  if (sideEl) renderPapersView();
-}
-
-function updatePaperPreview() {
-  const canvas = $("paperPreviewCanvas");
-  if (canvas) {
-    canvas.innerHTML = renderLiveExamPaperHtml();
-  }
-}
-
-function printOfficialExamPaper() {
-  window.print();
-}
-
-function savePaperTemplatePrompt() {
-  const name = prompt("Enter a name for this paper template:", `${getClassName(paperCreationState.classId)} ${getSelectedSubjectObj().name} Official Exam`);
-  if (!name) return;
-  try {
-    const existing = JSON.parse(localStorage.getItem('tuitionhub_paper_templates') || '[]');
-    existing.push({
-      id: 'template_' + Date.now(),
-      name: name,
-      date: new Date().toLocaleDateString(),
-      state: JSON.parse(JSON.stringify(paperCreationState))
-    });
-    localStorage.setItem('tuitionhub_paper_templates', JSON.stringify(existing));
-    alert(`✅ Template "${name}" saved successfully! You can reuse it anytime.`);
-  } catch (err) {
-    alert("Template saved in current session!");
-  }
-}
-
-function batchPrintAllVersions() {
-  alert("🖨️ Generating and queuing Set A, Set B, and Set C for printing...");
-  printOfficialExamPaper();
-}
-
-// ─── QUESTION BANK MODAL ─────────────────────────────────
-function openQuestionBankModal() {
-  const container = document.getElementById('qBankModalContainer');
-  if (!container) return;
-  const subj = getSelectedSubjectObj();
-  const qBank = getSubjectRichQuestionBank(paperCreationState.classId, subj.id, paperCreationState.seed);
-  const allQs = [...(qBank.mcqs || []), ...(qBank.sqs || []), ...(qBank.lqs || [])];
-
-  container.innerHTML = `
-    <div class="qbank-modal-overlay" onclick="closeQuestionBankModal()">
-      <div class="qbank-modal-box" onclick="event.stopPropagation()">
-        <div class="qbank-modal-header">
-          <div style="display:flex;align-items:center;gap:0.5rem;">
-            <span style="font-size:1.25rem;">📚</span>
-            <div>
-              <div style="font-weight:800;font-size:0.95rem;">Curriculum Question Bank — ${subj.name}</div>
-              <div style="font-size:0.68rem;opacity:0.8;">Explore, filter, and hand-pick verified questions</div>
-            </div>
-          </div>
-          <button onclick="closeQuestionBankModal()" style="background:transparent;border:none;color:#fff;font-size:1.25rem;cursor:pointer;">✕</button>
-        </div>
-
-        <div class="qbank-modal-body">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem;">
-            <div style="font-size:0.78rem;font-weight:700;color:#334155;">
-              Showing <strong>${allQs.length}</strong> Curriculum Questions
-            </div>
-            <div style="display:flex;gap:0.4rem;">
-              <button class="pcs-print-btn" onclick="shufflePaperQuestions(); closeQuestionBankModal();" style="width:auto;padding:0.3rem 0.65rem;">
-                🎲 Randomize Questions
-              </button>
-              <button class="btn btn-primary" onclick="closeQuestionBankModal()" style="font-size:0.75rem;padding:0.3rem 0.65rem;">
-                ✓ Apply to Paper
-              </button>
-            </div>
-          </div>
-
-          <div style="display:flex;flex-direction:column;gap:0.45rem;">
-            ${allQs.map((q, idx) => `
-              <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:0.55rem 0.75rem;font-size:0.78rem;">
-                <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.25rem;">
-                  <span style="font-weight:800;color:#0f172a;">#${idx + 1} · ${q.category.toUpperCase()}</span>
-                  <span style="background:#e0f2fe;color:#0369a1;font-size:0.65rem;padding:0.1rem 0.4rem;border-radius:99px;font-weight:700;">
-                    ${q.chapter || 'Unit ' + (idx + 1)} · ${q.marks || 1}M
-                  </span>
-                </div>
-                <div style="color:#1e293b;line-height:1.4;">${q.q}</div>
-                ${q.opts ? `
-                  <div style="display:flex;gap:0.85rem;margin-top:0.25rem;font-size:0.72rem;color:#64748b;">
-                    ${q.opts.map((opt, oi) => `<span>(${String.fromCharCode(65 + oi)}) ${opt}</span>`).join('')}
-                  </div>
-                ` : ''}
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-function closeQuestionBankModal() {
-  const container = document.getElementById('qBankModalContainer');
-  if (container) container.innerHTML = '';
-}
-
 
 // ─── CURRICULUM QUESTIONS BANK ENGINE ────────────
 function getCurriculumQuestionsBank(classId, subjectId, seed) {
+  const clsName = getClassName(classId);
   // Rich question banks for core subjects
   if (subjectId.includes("math")) {
     return {
