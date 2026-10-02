@@ -6161,4 +6161,192 @@ body:has(.papers-creator-view) #page-content {
   }
 }
 
+/* ─── REUSABLE DATA-DRIVEN ACADEMIC WORKSPACE STYLES ────────────── */
+.topic-sub-tabs-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding: 0.35rem 0.2rem 0.65rem 0.2rem;
+  margin-bottom: 0.85rem;
+  border-bottom: 1px solid #e2e8f0;
+  scrollbar-width: thin;
+}
+.topic-sub-tabs-bar::-webkit-scrollbar {
+  height: 4px;
+}
+.topic-sub-tabs-bar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.topic-sub-tab-btn {
+  padding: 0.38rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.topic-sub-tab-btn:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #1e293b;
+}
+.topic-sub-tab-btn.active {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+  box-shadow: 0 1px 4px rgba(2, 132, 199, 0.2);
+}
+.topic-sub-content {
+  animation: fadeIn 0.15s ease;
+}
+
+/* Category sub-tabs inside exercises/topics */
+.category-sub-tabs-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  overflow-x: auto;
+  padding: 0.4rem 0.1rem 0.6rem 0.1rem;
+  margin-bottom: 1rem;
+  scrollbar-width: thin;
+}
+.category-sub-tabs-bar::-webkit-scrollbar {
+  height: 4px;
+}
+.category-sub-tab-btn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #f8fafc;
+  color: #475569;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+.category-sub-tab-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+.category-sub-tab-btn.active {
+  background: #1e293b;
+  color: #ffffff;
+  border-color: #1e293b;
+}
+
+/* Words / Vocabulary Clean Grid Tables */
+.words-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  margin-bottom: 1.25rem;
+}
+.words-grid-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.words-grid-table th {
+  background: #f8fafc;
+  color: #334155;
+  font-weight: 700;
+  padding: 0.65rem 1rem;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
+  font-size: 0.84rem;
+  letter-spacing: 0.02em;
+}
+.words-grid-table td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+  line-height: 1.5;
+}
+.words-grid-table tr:last-child td {
+  border-bottom: none;
+}
+.words-grid-table tr:hover {
+  background: #f8fafc;
+}
+.words-urdu-col {
+  direction: rtl;
+  text-align: right !important;
+  font-family: 'Jameel Noori Nastaleeq', 'Urdu Typesetting', 'Segoe UI', serif;
+  font-size: 1.05rem;
+}
+
+/* Paragraph reading card with single TTS */
+.para-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.15rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.para-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+.para-audio-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #0284c7;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.para-audio-btn:hover {
+  background: #f0f9ff;
+  border-color: #0284c7;
+}
+.para-text-box {
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: #1e293b;
+  margin-bottom: 0.85rem;
+}
+.para-qa-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-top: 0.75rem;
+}
+
+/* Dotted underline indication for interactive dictionary words */
+.dict-clickable-word {
+  cursor: pointer;
+  transition: background-color 0.12s ease;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.dict-clickable-word:hover {
+  background-color: #fef08a;
+  color: #713f12;
+}
+
 
