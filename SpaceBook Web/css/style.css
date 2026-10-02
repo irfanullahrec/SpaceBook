@@ -6440,6 +6440,40 @@ body:has(.papers-creator-view) #page-content {
   user-select: none;
 }
 
+.pep-bubble-filled {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+.pep-omr-img2-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 0;
+}
+
+.pep-mcq-item-separated {
+  break-inside: avoid;
+}
+
+.pep-mcq-options-compact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px 6px;
+}
+
+.pep-mcq-options-samepaper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-left: 1.15rem;
+  font-size: 0.82rem;
+  margin-top: 0.25rem;
+}
+
 .pep-bubble {
   font-weight: bold;
   font-family: monospace;

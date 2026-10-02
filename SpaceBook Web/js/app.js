@@ -8683,7 +8683,7 @@ let paperCreationState = {
     omrBased: true,
     omrQuestionAbove: true,
     omrShowOptionWords: true,
-    columns: 2,
+    columns: 1,
     count: 15,
     optionsLayout: "horizontal",
     marksPerMcq: 1,
@@ -10652,12 +10652,9 @@ function renderLiveExamPaperHtml() {
   const clsName = getClassName(paperCreationState.classId);
   const subj = getSelectedSubjectObj();
   const catsOrder = paperCreationState.categoriesOrder || ["mcqs", "sqs", "lqs"];
-  const mcqCols = paperCreationState.mcqSettings.columns || 2;
-  const mcqLayout = paperCreationState.mcqSettings.optionsLayout || 'horizontal';
-  const isOmr = paperCreationState.mcqSettings.omrBased;
   const isSamePage = (paperCreationState.mcqSettings.samePage !== false);
-  const isOmrPure = isOmr && (paperCreationState.mcqSettings.omrShowOptionWords === false);
-  const isSeparateOmrSheet = (!isSamePage && isOmr);
+  const mcqCols = paperCreationState.mcqSettings.columns || (isSamePage ? 1 : 4);
+  const isOmr = (paperCreationState.mcqSettings.omrBased !== false);
 
   return `
     <div class="printable-exam-paper" id="printableExamPaper">
@@ -10721,13 +10718,60 @@ function renderLiveExamPaperHtml() {
 
         if (catId === 'mcqs') {
           secTitle = `SECTION — A (OBJECTIVE TYPE / MULTIPLE CHOICE QUESTIONS)`;
-          secInstructions = `Note: Attempt all ${attemptCount} questions. Each question carries ${alloc.marksPerQ} mark. Fill the corresponding bubble or encircle the correct option (A, B, C, or D).`;
+          secInstructions = `Note: Attempt all ${attemptCount} questions. Each question carries ${alloc.marksPerQ} mark. Fill the corresponding bubble or encircle the correct option (A, B, C, D, or E).`;
         }
 
         // 1. MCQs Section
         if (catId === 'mcqs') {
+          let omrImage2SheetHtml = '';
+          if (!isSamePage && isOmr && displayQuestions.length > 0) {
+            const colCount = Math.max(1, Math.min(4, mcqCols));
+            const totalQ = displayQuestions.length;
+            const perCol = Math.ceil(totalQ / colCount);
+
+            let columnsHtml = [];
+            for (let c = 0; c < colCount; c++) {
+              const startIdx = c * perCol;
+              const endIdx = Math.min(startIdx + perCol, totalQ);
+              let colRows = [];
+              for (let i = startIdx; i < endIdx; i++) {
+                const qNum = formatQNum(i + 1, paperCreationState.numberingStyle);
+                const m = displayQuestions[i];
+                const correctAns = m ? m.ans : -1;
+                colRows.push(`
+                  <div class="pep-omr-img2-row" style="display:flex;align-items:center;gap:6px;padding:2px 0;">
+                    <span style="font-weight:700;font-size:0.78rem;min-width:24px;text-align:right;font-family:Arial,sans-serif;color:#0f172a;">${qNum}.</span>
+                    <div style="display:inline-flex;align-items:center;gap:3px;">
+                      ${['A', 'B', 'C', 'D', 'E'].map((letter, oi) => `
+                        <span class="omr-bubble-circle ${paperCreationState.showAnswerKey && oi === correctAns ? 'pep-bubble-filled' : ''}" 
+                              title="Q${i + 1}: (${letter})" 
+                              style="width:16px;height:16px;font-size:0.6rem;font-weight:800;border:1.5px solid #000;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;">${letter}</span>
+                      `).join('')}
+                    </div>
+                  </div>
+                `);
+              }
+              columnsHtml.push(`
+                <div class="pep-omr-img2-col" style="display:flex;flex-direction:column;">
+                  ${colRows.join('')}
+                </div>
+              `);
+            }
+
+            omrImage2SheetHtml = `
+              <div class="pep-omr-sheet-box" style="margin:0.6rem 0 1rem 0;background:#ffffff;border:1.5px solid #000;border-radius:6px;padding:0.6rem 0.8rem;">
+                <div style="font-weight:800;font-size:0.82rem;text-align:center;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.5rem;border-bottom:1px solid #cbd5e1;padding-bottom:0.3rem;">
+                  OFFICIAL OMR ANSWER BUBBLE SHEET · SECTION A
+                </div>
+                <div class="pep-omr-img2-columns" style="display:grid;grid-template-columns:repeat(${colCount}, 1fr);gap:0.4rem 1.25rem;">
+                  ${columnsHtml.join('')}
+                </div>
+              </div>
+            `;
+          }
+
           return `
-            <div class="pep-section" style="${catIdx > 0 && !isSamePage ? 'page-break-before:always;' : ''}">
+            <div class="pep-section" style="${catIdx > 0 && !isSamePage ? 'page-break-before:always;break-before:page;' : ''}">
               <div class="pep-sec-header">
                 <span class="pep-sec-title">${secTitle}</span>
                 <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
@@ -10743,74 +10787,73 @@ function renderLiveExamPaperHtml() {
                   </div>
                 </div>
               ` : `
-                ${isSeparateOmrSheet ? `
-                  <div style="margin:0.75rem 0 1rem 0;background:#f8fafc;border:1.5px solid #000;border-radius:6px;padding:0.75rem;">
-                    <div style="font-weight:800;font-size:0.85rem;text-align:center;margin-bottom:0.6rem;text-transform:uppercase;">
-                      OFFICIAL OMR ANSWER SHEET · SECTION ${sectionLetter}
-                    </div>
-                    <table class="pep-omr-table">
-                      <thead>
-                        <tr>
-                          <th style="width:12%;">Q. No.</th>
-                          <th style="width:38%;">Shade Option Bubble</th>
-                          <th style="width:12%;">Q. No.</th>
-                          <th style="width:38%;">Shade Option Bubble</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        ${Array.from({ length: Math.ceil(displayQuestions.length / 2) }).map((_, rIdx) => {
-                          const q1 = rIdx + 1;
-                          const q2 = rIdx + 1 + Math.ceil(displayQuestions.length / 2);
-                          return `
-                            <tr>
-                              <td><strong>${q1}</strong></td>
-                              <td>
-                                <span class="pep-omr-strip">
-                                  ${['A','B','C','D'].map(l => `<span class="omr-bubble-circle">${l}</span>`).join('')}
-                                </span>
-                              </td>
-                              ${q2 <= displayQuestions.length ? `
-                                <td><strong>${q2}</strong></td>
-                                <td>
-                                  <span class="pep-omr-strip">
-                                    ${['A','B','C','D'].map(l => `<span class="omr-bubble-circle">${l}</span>`).join('')}
-                                  </span>
-                                </td>
-                              ` : '<td>-</td><td>-</td>'}
-                            </tr>
-                          `;
-                        }).join('')}
-                      </tbody>
-                    </table>
-                  </div>
-                ` : ''}
+                ${omrImage2SheetHtml}
 
-                <div class="pep-mcqs-grid" data-cols="${mcqCols}">
-                  ${displayQuestions.map((m, idx) => `
-                    <div class="pep-mcq-item">
-                      <div class="pep-mcq-q" style="margin-bottom:0.25rem;">
-                        <strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}
+                ${isSamePage ? `
+                  <div class="pep-mcqs-grid" data-cols="${mcqCols}" style="display:grid;grid-template-columns:repeat(${mcqCols}, 1fr);gap:0.65rem 1.25rem;">
+                    ${displayQuestions.map((m, idx) => `
+                      <div class="pep-mcq-item" style="break-inside:avoid;font-size:0.82rem;line-height:1.4;margin-bottom:0.45rem;">
+                        <div class="pep-mcq-q" style="margin-bottom:0.25rem;">
+                          <strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}
+                        </div>
+                        <div class="pep-mcq-options pep-mcq-options-samepaper" 
+                             style="display:flex;align-items:center;flex-wrap:wrap;gap:1.5rem;padding-left:1.15rem;font-size:0.82rem;margin-top:0.25rem;">
+                          ${(m.opts || ["A", "B", "C", "D"]).map((opt, oi) => `
+                            <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" 
+                                  style="display:inline-flex;align-items:center;gap:0.35rem;">
+                              ${isOmr ? `
+                                <span class="omr-bubble-circle">${String.fromCharCode(65 + oi)}</span>
+                              ` : `
+                                <strong>(${String.fromCharCode(65 + oi)})</strong>
+                              `}
+                              <span>${opt}</span>
+                            </span>
+                          `).join('')}
+                        </div>
+                        ${paperCreationState.showAnswerKey ? `
+                          <div class="pep-key-note" style="margin-top:0.25rem;font-size:0.75rem;color:#16a34a;">
+                            💡 Key: (${String.fromCharCode(65 + (m.ans || 0))}) — ${m.exp || 'Standard syllabus definition'}
+                          </div>
+                        ` : ''}
                       </div>
-                      <div class="pep-mcq-options" data-layout="${isOmrPure ? 'horizontal' : mcqLayout}" 
-                           style="${isOmrPure ? 'display:flex;align-items:center;gap:1.15rem;margin-top:0.25rem;padding-left:0.5rem;' : ''}">
-                        ${(m.opts || ["A", "B", "C", "D"]).map((opt, oi) => `
-                          <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" 
-                                style="${isOmrPure ? 'gap:0.2rem;display:inline-flex;align-items:center;' : ''}">
-                            ${isOmr ? `
-                              <span class="omr-bubble-circle">${String.fromCharCode(65 + oi)}</span>
-                            ` : `
-                              <span class="pep-bubble">${String.fromCharCode(65 + oi)})</span>
-                            `}
-                            ${!isOmrPure ? `<span>${opt}</span>` : ''}
-                          </span>
-                        `).join('')}
-                      </div>
-                      ${paperCreationState.showAnswerKey ? `
-                        <div class="pep-key-note">💡 Key: (${String.fromCharCode(65 + (m.ans || 0))}) — ${m.exp || 'Standard syllabus definition'}</div>
-                      ` : ''}
-                    </div>
-                  `).join('')}
-                </div>
+                    `).join('')}
+                  </div>
+                ` : `
+                  <div class="pep-mcqs-grid" data-cols="${mcqCols}" style="display:grid;grid-template-columns:repeat(${mcqCols}, 1fr);gap:0.5rem 0.75rem;">
+                    ${displayQuestions.map((m, idx) => {
+                      const optLetters = ['A', 'B', 'C', 'D', 'E'];
+                      const opts = m.opts || ["A", "B", "C", "D"];
+                      const maxOpts = Math.max(opts.length, 4);
+                      const activeLetters = optLetters.slice(0, Math.min(maxOpts, (opts.length >= 5 ? 5 : 4)));
+
+                      return `
+                        <div class="pep-mcq-item pep-mcq-item-separated" style="break-inside:avoid;font-size:0.78rem;line-height:1.25;margin-bottom:0.4rem;">
+                          <div class="pep-mcq-q" style="font-weight:700;margin-bottom:0.2rem;color:#0f172a;">
+                            <strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}
+                          </div>
+                          <div class="pep-mcq-options pep-mcq-options-compact" 
+                               style="display:flex;align-items:center;flex-wrap:wrap;gap:2px 6px;margin-top:0.15rem;">
+                            ${activeLetters.map((letter, oi) => {
+                              const optVal = opts[oi] !== undefined ? opts[oi] : '';
+                              return `
+                                <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" 
+                                      style="display:inline-flex;align-items:center;gap:2px;margin-right:2px;font-size:0.74rem;">
+                                  <span class="omr-bubble-circle" style="width:15px;height:15px;font-size:0.58rem;">${letter}</span>
+                                  ${optVal ? `<span style="margin-left:1px;">${optVal}</span>` : ''}
+                                </span>
+                              `;
+                            }).join('')}
+                          </div>
+                          ${paperCreationState.showAnswerKey ? `
+                            <div class="pep-key-note" style="font-size:0.68rem;color:#16a34a;margin-top:2px;">
+                              💡 Key: (${String.fromCharCode(65 + (m.ans || 0))}) — ${m.exp || 'Standard syllabus definition'}
+                            </div>
+                          ` : ''}
+                        </div>
+                      `;
+                    }).join('')}
+                  </div>
+                `}
 
                 ${displayQuestions.length < reqCount ? `
                   <div class="pep-empty-section-notice" style="margin-top:0.85rem;padding:0.45rem 0.65rem;border:1px dashed #cbd5e1;border-radius:6px;font-size:0.72rem;color:#64748b;text-align:center;background:#f8fafc;">
@@ -10825,7 +10868,7 @@ function renderLiveExamPaperHtml() {
         // 2. Long Questions Section
         if (catId === 'lqs' || catId === 'theorems' || catId === 'essays') {
           return `
-            <div class="pep-section" style="margin-top:1.25rem;">
+            <div class="pep-section" style="${!isSamePage && catIdx === 1 ? 'page-break-before:always;break-before:page;margin-top:1.5rem;' : 'margin-top:1.25rem;'}">
               <div class="pep-sec-header">
                 <span class="pep-sec-title">${secTitle}</span>
                 <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
@@ -10881,7 +10924,7 @@ function renderLiveExamPaperHtml() {
 
         // 3. Short Questions / Words / Definitions / Numericals / Grammar
         return `
-          <div class="pep-section" style="margin-top:1.25rem;">
+          <div class="pep-section" style="${!isSamePage && catIdx === 1 ? 'page-break-before:always;break-before:page;margin-top:1.5rem;' : 'margin-top:1.25rem;'}">
             <div class="pep-sec-header">
               <span class="pep-sec-title">${secTitle}</span>
               <span class="pep-sec-marks">Marks: ${alloc.totalMarks} (${attemptCount} × ${alloc.marksPerQ})</span>
@@ -10965,9 +11008,31 @@ function printOfficialExamPaper() {
   window.print();
 }
 
+function setPaperMcqSamePage(isSame) {
+  if (!paperCreationState.mcqSettings) {
+    paperCreationState.mcqSettings = {};
+  }
+  paperCreationState.mcqSettings.samePage = isSame;
+  if (isSame) {
+    paperCreationState.mcqSettings.columns = 1;
+    paperCreationState.mcqSettings.optionsLayout = 'horizontal';
+  } else {
+    paperCreationState.mcqSettings.columns = 4;
+    paperCreationState.mcqSettings.optionsLayout = 'horizontal';
+    paperCreationState.mcqSettings.omrBased = true;
+  }
+  updatePaperPreview();
+  openExamSettingsModal();
+}
+window.setPaperMcqSamePage = setPaperMcqSamePage;
+
 function openExamSettingsModal() {
   const container = document.getElementById('paperBlueprintModalContainer');
   if (!container) return;
+
+  const isSame = (paperCreationState.mcqSettings.samePage !== false);
+  const currentCols = paperCreationState.mcqSettings.columns || (isSame ? 1 : 4);
+  const isOmr = (paperCreationState.mcqSettings.omrBased !== false);
 
   container.innerHTML = `
     <div class="paper-blueprint-modal-overlay" onclick="closePaperBlueprintModal()">
@@ -11015,27 +11080,46 @@ function openExamSettingsModal() {
             </div>
           </div>
 
-          <!-- MCQ Layout Options -->
-          <div style="background:#f8fafc;padding:0.6rem;border-radius:8px;border:1px solid #e2e8f0;">
-            <div style="font-weight:800;font-size:0.75rem;margin-bottom:0.4rem;color:#0f172a;">MCQ Print Options:</div>
-            
-            <div class="paper-row-field">
-              <span>MCQ Columns:</span>
+          <!-- MCQ Layout & Paper Placement Options -->
+          <div style="background:#f8fafc;padding:0.75rem;border-radius:8px;border:1px solid #e2e8f0;margin-top:0.75rem;">
+            <div style="font-weight:800;font-size:0.82rem;margin-bottom:0.55rem;color:#0f172a;display:flex;align-items:center;gap:0.35rem;">
+              <span>🎯</span> <span>MCQ Layout &amp; Paper Placement:</span>
+            </div>
+
+            <!-- Paper Mode Selection: Same Paper vs Separated -->
+            <div style="margin-bottom:0.65rem;">
+              <div style="font-size:0.72rem;font-weight:700;color:#64748b;margin-bottom:0.3rem;text-transform:uppercase;letter-spacing:0.04em;">MCQs Paper Mode:</div>
+              <div class="paper-segmented-btn-group" style="display:grid;grid-template-columns:1fr 1fr;gap:0.45rem;width:100%;">
+                <button type="button" class="paper-seg-btn ${isSame ? 'active' : ''}" 
+                        style="padding:0.5rem 0.6rem;font-size:0.75rem;font-weight:700;text-align:center;display:flex;align-items:center;justify-content:center;gap:0.35rem;"
+                        onclick="setPaperMcqSamePage(true)">
+                  <span>📄</span> <span>MCQs Questions on the same paper</span>
+                </button>
+                <button type="button" class="paper-seg-btn ${!isSame ? 'active' : ''}" 
+                        style="padding:0.5rem 0.6rem;font-size:0.75rem;font-weight:700;text-align:center;display:flex;align-items:center;justify-content:center;gap:0.35rem;"
+                        onclick="setPaperMcqSamePage(false)">
+                  <span>📑</span> <span>MCQs Questions Separated</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="paper-row-field" style="display:flex;align-items:center;justify-content:space-between;margin-top:0.5rem;">
+              <span style="font-size:0.75rem;font-weight:700;color:#334155;">MCQ Columns:</span>
               <div class="paper-segmented-btn-group">
                 ${[1, 2, 3, 4].map(c => `
-                  <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === c ? 'active' : ''}" 
-                          onclick="paperCreationState.mcqSettings.columns = ${c}; updatePaperPreview(); refreshLeftPanelBody(); closePaperBlueprintModal();">${c} Col${c > 1 ? 's' : ''}</button>
+                  <button type="button" class="paper-seg-btn ${currentCols === c ? 'active' : ''}" 
+                          onclick="paperCreationState.mcqSettings.columns = ${c}; updatePaperPreview(); openExamSettingsModal();">${c} Col${c > 1 ? 's' : ''}</button>
                 `).join('')}
               </div>
             </div>
 
-            <div class="paper-row-field">
-              <span>OMR Bubble Format:</span>
+            <div class="paper-row-field" style="display:flex;align-items:center;justify-content:space-between;margin-top:0.5rem;">
+              <span style="font-size:0.75rem;font-weight:700;color:#334155;">Option Style:</span>
               <div class="paper-segmented-btn-group">
-                <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrBased ? 'active' : ''}" 
-                        onclick="paperCreationState.mcqSettings.omrBased = true; updatePaperPreview(); closePaperBlueprintModal();">OMR Bubbles</button>
-                <button class="paper-seg-btn ${!paperCreationState.mcqSettings.omrBased ? 'active' : ''}" 
-                        onclick="paperCreationState.mcqSettings.omrBased = false; updatePaperPreview(); closePaperBlueprintModal();">A, B, C, D</button>
+                <button type="button" class="paper-seg-btn ${isOmr ? 'active' : ''}" 
+                        onclick="paperCreationState.mcqSettings.omrBased = true; updatePaperPreview(); openExamSettingsModal();">OMR Bubbles (A, B, C, D, E)</button>
+                <button type="button" class="paper-seg-btn ${!isOmr ? 'active' : ''}" 
+                        onclick="paperCreationState.mcqSettings.omrBased = false; updatePaperPreview(); openExamSettingsModal();">Standard (A, B, C, D)</button>
               </div>
             </div>
           </div>
