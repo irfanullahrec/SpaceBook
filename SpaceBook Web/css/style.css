@@ -6865,5 +6865,31 @@ body:has(.papers-creator-view) #page-content {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+/* 4 Column MCQ Grid Support */
+.pep-mcqs-grid[data-cols="4"] {
+  grid-template-columns: repeat(4, 1fr);
+}
 
-
+/* OMR Separate Answer Sheet Grid */
+.pep-omr-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+}
+.pep-omr-table th, .pep-omr-table td {
+  border: 1px solid #cbd5e1;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.pep-omr-table th {
+  background: #f8fafc;
+  font-weight: 700;
+  color: #334155;
+}
+.pep-omr-strip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}

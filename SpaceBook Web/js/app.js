@@ -1,3 +1,16 @@
+
+function autoScrollPaperSidebar(targetEl) {
+  setTimeout(() => {
+    const sidebar = document.getElementById('paperCreatorSidebar');
+    if (!sidebar) return;
+    if (targetEl && targetEl.scrollIntoView) {
+      targetEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } else {
+      sidebar.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, 60);
+}
+
 // ─── APP.JS — Tuition Hub Controller (Enhanced with Full Exam Roadmap) ──────────
 
 let state = {
@@ -3412,24 +3425,39 @@ function renderEngExercise(ch) {
         </div>
         <div class="slo-accordion-body" style="padding:1.25rem;">
           <div class="slo-accordion-list">
-            ${tbMcqs.map((m, idx) => `
-              <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem;margin-bottom:0.85rem;">
-                <div style="font-weight:700;color:#1e293b;margin-bottom:0.6rem;font-size:0.96rem;">
-                  ${m.question}
+            ${tbMcqs.map((m, idx) => {
+              const options = m.options || [];
+              let correctIdx = (m.correct !== undefined) ? Number(m.correct) : 0;
+              if (m.correct === undefined && m.answer) {
+                const ansStr = String(m.answer).trim().toLowerCase();
+                const foundIdx = options.findIndex(o => {
+                  const cleaned = o.replace(/^[A-Da-d][\.\)]\s*/, '').trim().toLowerCase();
+                  return cleaned === ansStr || o.toLowerCase() === ansStr;
+                });
+                if (foundIdx !== -1) correctIdx = foundIdx;
+              }
+              const expEnc = encodeURIComponent(m.explanation || 'Verified textbook answer');
+              const qId = `eng-tb-mcq-${idx}`;
+
+              return `
+                <div id="${qId}" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem;margin-bottom:0.85rem;">
+                  <div style="font-weight:700;color:#1e293b;margin-bottom:0.6rem;font-size:0.96rem;">
+                    ${m.question}
+                  </div>
+                  <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:0.5rem;margin-bottom:0.6rem;">
+                    ${options.map((opt, oIdx) => `
+                      <button class="universal-mcq-opt-btn" 
+                              onclick="checkInteractiveUniversalMcq('${qId}', ${oIdx}, ${correctIdx}, '${expEnc}')"
+                              style="padding:0.55rem 0.85rem;background:#ffffff;border:1.5px solid #cbd5e1;border-radius:6px;font-size:0.9rem;color:#334155;cursor:pointer;text-align:left;display:flex;align-items:center;gap:0.5rem;transition:all 0.15s;">
+                        <span style="font-weight:800;color:#0284c7;background:#e0f2fe;border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:0.78rem;flex-shrink:0;">${['A','B','C','D'][oIdx] || (oIdx + 1)}</span>
+                        <span>${opt}</span>
+                      </button>
+                    `).join('')}
+                  </div>
+                  <div class="universal-mcq-exp-box" style="display:none;padding:0.6rem 0.85rem;border-radius:6px;font-size:0.88rem;"></div>
                 </div>
-                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:0.5rem;margin-bottom:0.6rem;">
-                  ${m.options.map((opt) => `
-                    <div style="padding:0.45rem 0.75rem;background:#ffffff;border:1px solid #cbd5e1;border-radius:6px;font-size:0.9rem;color:#334155;">
-                      ${opt}
-                    </div>
-                  `).join('')}
-                </div>
-                <div style="background:#dcfce7;border-left:4px solid #16a34a;padding:0.5rem 0.85rem;border-radius:4px;font-size:0.9rem;color:#14532d;">
-                  <strong>✓ Correct Answer:</strong> ${m.answer}
-                  ${m.explanation ? `<div style="margin-top:0.25rem;font-size:0.85rem;color:#15803d;"><em>Explanation:</em> ${m.explanation}</div>` : ''}
-                </div>
-              </div>
-            `).join('')}
+              `;
+            }).join('')}
           </div>
         </div>
       </div>`;
@@ -3578,7 +3606,7 @@ function renderEngExercise(ch) {
         <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:0.5rem;">
           ${allSynonyms.map(s => `
             <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:0.5rem 0.75rem;font-size:0.9rem;">
-              <strong style="color:#0f766e;">${s.word}:</strong> ${s.synonyms ? s.synonyms.join(', ') : s.synonym}
+              <strong style="color:#0f766e;">${s.word}:</strong> ${Array.isArray(s.synonyms) ? s.synonyms.join(', ') : (s.synonyms || s.synonym || '')}
             </div>
           `).join('')}
         </div>
@@ -3593,7 +3621,7 @@ function renderEngExercise(ch) {
         <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:0.5rem;">
           ${allAntonyms.map(a => `
             <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:6px;padding:0.5rem 0.75rem;font-size:0.9rem;">
-              <strong style="color:#991b1b;">${a.word}:</strong> ${a.antonyms ? a.antonyms.join(', ') : a.antonym}
+              <strong style="color:#991b1b;">${a.word}:</strong> ${Array.isArray(a.antonyms) ? a.antonyms.join(', ') : (a.antonyms || a.antonym || '')}
             </div>
           `).join('')}
         </div>
@@ -6239,6 +6267,64 @@ function renderSLOsAndConcepts(ch) {
     </div>`;
 }
 
+
+// ─── UNIVERSAL INTERACTIVE MCQ ENGINE ────────────────────────────
+function checkInteractiveUniversalMcq(qId, selectedIdx, correctIdx, expEncoded) {
+  const card = document.getElementById(qId);
+  if (!card) return;
+  const optBtns = card.querySelectorAll('.universal-mcq-opt-btn');
+  const expBox = card.querySelector('.universal-mcq-exp-box');
+  const exp = expEncoded ? decodeURIComponent(expEncoded) : '';
+
+  optBtns.forEach((btn, idx) => {
+    btn.disabled = true;
+    btn.style.pointerEvents = 'none';
+    if (idx === correctIdx) {
+      btn.classList.add('correct');
+      btn.style.background = '#dcfce7';
+      btn.style.borderColor = '#16a34a';
+      btn.style.color = '#15803d';
+      btn.style.fontWeight = '700';
+      if (!btn.querySelector('.correct-check-tag')) {
+        const tag = document.createElement('span');
+        tag.className = 'correct-check-tag';
+        tag.style.cssText = 'color:#16a34a;font-weight:800;float:right;margin-left:auto;';
+        tag.textContent = '✓ Correct Answer';
+        btn.appendChild(tag);
+      }
+    } else if (idx === selectedIdx && selectedIdx !== correctIdx) {
+      btn.classList.add('wrong');
+      btn.style.background = '#fee2e2';
+      btn.style.borderColor = '#ef4444';
+      btn.style.color = '#b91c1c';
+      btn.style.fontWeight = '700';
+      if (!btn.querySelector('.wrong-check-tag')) {
+        const tag = document.createElement('span');
+        tag.className = 'wrong-check-tag';
+        tag.style.cssText = 'color:#ef4444;font-weight:800;float:right;margin-left:auto;';
+        tag.textContent = '✗ Incorrect';
+        btn.appendChild(tag);
+      }
+    } else {
+      btn.style.opacity = '0.65';
+    }
+  });
+
+  if (expBox) {
+    const isCorrect = (selectedIdx === correctIdx);
+    expBox.style.display = 'block';
+    expBox.style.background = isCorrect ? '#f0fdf4' : '#fef2f2';
+    expBox.style.border = isCorrect ? '1px solid #86efac' : '1px solid #fca5a5';
+    expBox.style.color = isCorrect ? '#14532d' : '#991b1b';
+    expBox.innerHTML = `
+      <div style="font-weight:800;font-size:0.86rem;margin-bottom:0.25rem;">
+        ${isCorrect ? '✅ Correct Answer!' : '❌ Incorrect!'} Correct Option: <strong>${['A','B','C','D'][correctIdx] || (correctIdx + 1)}</strong>
+      </div>
+      ${exp ? `<div style="font-size:0.82rem;line-height:1.5;margin-top:0.2rem;">💡 <em>Explanation:</em> ${exp}</div>` : ''}
+    `;
+  }
+}
+
 function checkSloMcq(qIndex, selectedOpt, correctOpt, encodedExp) {
   const card = $(`slo-mcq-${qIndex}`);
   if (!card) return;
@@ -8552,7 +8638,9 @@ let paperCreationState = {
   mcqSettings: {
     samePage: true,
     omrBased: true,
-    columns: 2, // 1, 2, or 3
+    omrQuestionAbove: true, // "question above the option?"
+    omrShowOptionWords: true, // "show the words in the options? or just A, B, C, D incircle"
+    columns: 2, // 1, 2, 3, or 4
     count: 15,
     optionsLayout: "horizontal", // "horizontal" or "vertical"
     marksPerMcq: 1,
@@ -8738,7 +8826,7 @@ function renderPapersView() {
           </div>
         </div>
 
-        <!-- Live Paper Summary Card -->
+        <!-- Live Paper Summary Card (Removed per user request, validation warning preserved) -->
         <div id="paperLiveSummaryContainer">
           ${renderLivePaperSummaryWidget()}
         </div>
@@ -8834,55 +8922,16 @@ function renderLivePaperSummaryWidget() {
     }
   });
 
-  return `
-    <div class="paper-summary-card">
-      <div class="psc-header">
-        <span class="psc-badge">📊 Paper Summary</span>
-        <span style="font-size:0.68rem;font-weight:700;color:#0284c7;">
-          ${paperCreationState.parts.length} Sections Active
-        </span>
+  // Paper summary card widget is removed per user request.
+  // Return validation alert only if there is an active error.
+  if (validationWarning) {
+    return `
+      <div style="margin-bottom:0.75rem;padding:0.45rem 0.75rem;background:#fee2e2;border:1px solid #fca5a5;border-radius:6px;color:#991b1b;font-size:0.75rem;font-weight:700;">
+        ${validationWarning}
       </div>
-
-      <div class="psc-grid">
-        <div class="psc-item">
-          <div class="psc-item-label">Grade / Class</div>
-          <div class="psc-item-val">${clsName}</div>
-        </div>
-        <div class="psc-item">
-          <div class="psc-item-label">Subject</div>
-          <div class="psc-item-val" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
-            ${subj.emoji || ''} ${subj.name}
-          </div>
-        </div>
-        <div class="psc-item">
-          <div class="psc-item-label">Grand Total</div>
-          <div class="psc-item-val" style="color:#16a34a;">${grandTotal} Marks</div>
-        </div>
-        <div class="psc-item">
-          <div class="psc-item-label">Attempt Qs</div>
-          <div class="psc-item-val">${totalAttemptQs} Questions</div>
-        </div>
-        <div class="psc-item">
-          <div class="psc-item-label">Time Allowed</div>
-          <div class="psc-item-val">${paperCreationState.duration}</div>
-        </div>
-        <div class="psc-item">
-          <div class="psc-item-label">Paper Code</div>
-          <div class="psc-item-val">${paperCreationState.paperCode}</div>
-        </div>
-      </div>
-
-      <div class="psc-footer">
-        ${partsSummary.map(ps => `<span><strong>${ps.name}:</strong> ${ps.calc}</span>`).join(' · ')}
-      </div>
-
-      ${validationWarning ? `
-        <div style="margin-top:0.35rem;padding:0.25rem 0.45rem;background:#fee2e2;border:1px solid #fca5a5;border-radius:4px;color:#991b1b;font-size:0.68rem;font-weight:700;">
-          ${validationWarning}
-        </div>
-      ` : ''}
-    </div>
-  `;
+    `;
+  }
+  return '';
 }
 
 // ─── DYNAMIC WIZARD STEP DISPATCHER ──────────────────────
@@ -8929,10 +8978,13 @@ function onPaperClassSelect(classId) {
   paperCreationState.classId = classId;
   const subjects = DATA.subjects[classId] || [];
   paperCreationState.subjectId = subjects[0] ? subjects[0].id : "";
-  // Sync subject categories
   const categories = getSubjectCategories(paperCreationState.subjectId, classId);
   paperCreationState.selectedCategories = categories.slice(0, 3).map(c => c.id);
+  // Auto advance to next step (Step 2: Subject) and smooth scroll
+  paperCreationState.currentStep = 2;
+  if (!paperCreationState.completedSteps.includes(2)) paperCreationState.completedSteps.push(2);
   renderPapersView();
+  autoScrollPaperSidebar();
 }
 
 // ─── STEP 2: SELECT SUBJECT ──────────────────────────────
@@ -8972,7 +9024,11 @@ function onPaperSubjectSelect(subjId) {
   paperCreationState.subjectId = subjId;
   const categories = getSubjectCategories(subjId, paperCreationState.classId);
   paperCreationState.selectedCategories = categories.slice(0, 3).map(c => c.id);
+  // Auto advance to next step (Step 3: Question Types) and smooth scroll
+  paperCreationState.currentStep = 3;
+  if (!paperCreationState.completedSteps.includes(3)) paperCreationState.completedSteps.push(3);
   renderPapersView();
+  autoScrollPaperSidebar();
 }
 
 // ─── STEP 3: SUBJECT-AWARE QUESTION CATEGORIES ───────────
@@ -9108,6 +9164,7 @@ function renderWizardStep3QuestionTypes() {
         <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('obj')">🎯 Objective Only</button>
         <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('subj')">📝 Subjective Only</button>
         <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('all')">📑 Select All</button>
+        <button class="paper-preset-chip" onclick="applyPaperCategoryPreset('clear')" style="color:#b91c1c;border-color:#fca5a5;">✕ Clear All</button>
       </div>
 
       <div class="paper-category-grid">
@@ -9139,7 +9196,8 @@ function togglePaperCategory(catId) {
   const list = paperCreationState.selectedCategories || [];
   const idx = list.indexOf(catId);
   if (idx >= 0) {
-    if (list.length > 1) list.splice(idx, 1);
+    // Allow unchecking completely so user can clear page / selection
+    list.splice(idx, 1);
   } else {
     list.push(catId);
   }
@@ -9158,6 +9216,8 @@ function applyPaperCategoryPreset(presetKey) {
     paperCreationState.selectedCategories = availableCats.filter(c => c.id !== 'mcqs').slice(0, 3).map(c => c.id);
   } else if (presetKey === 'all') {
     paperCreationState.selectedCategories = availableCats.map(c => c.id);
+  } else if (presetKey === 'none' || presetKey === 'clear') {
+    paperCreationState.selectedCategories = [];
   }
   syncPaperPartsWithCategories();
   renderPapersView();
@@ -9271,16 +9331,48 @@ function renderWizardStep4QuestionSettings() {
             </div>
           </div>
 
-          <!-- C. Number of Columns -->
+          <!-- B1. Nested Question: If OMR-Based is Yes -> Question above the option? -->
+          ${paperCreationState.mcqSettings.omrBased ? `
+            <div class="paper-row-field" style="background:#f0fdf4;padding:0.4rem 0.6rem;border-radius:6px;border:1px solid #bbf7d0;">
+              <div>
+                <div style="font-weight:700;color:#166534;">Question above the option?</div>
+                <div style="font-size:0.62rem;color:#15803d;">Position question text directly on top of choices</div>
+              </div>
+              <div class="paper-segmented-btn-group">
+                <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrQuestionAbove !== false ? 'active' : ''}" 
+                        onclick="updatePaperMcqSetting('omrQuestionAbove', true)">Yes (On Top)</button>
+                <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrQuestionAbove === false ? 'active' : ''}" 
+                        onclick="updatePaperMcqSetting('omrQuestionAbove', false)">No (Inline)</button>
+              </div>
+            </div>
+
+            <!-- B2. Nested Question: Show words in options or just A, B, C, D in circle? -->
+            <div class="paper-row-field" style="background:#f0fdf4;padding:0.4rem 0.6rem;border-radius:6px;border:1px solid #bbf7d0;">
+              <div>
+                <div style="font-weight:700;color:#166534;">Options Content Display:</div>
+                <div style="font-size:0.62rem;color:#15803d;">Display choice text or pure circled letters</div>
+              </div>
+              <div class="paper-segmented-btn-group">
+                <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrShowOptionWords !== false ? 'active' : ''}" 
+                        onclick="updatePaperMcqSetting('omrShowOptionWords', true)">Show Words</button>
+                <button class="paper-seg-btn ${paperCreationState.mcqSettings.omrShowOptionWords === false ? 'active' : ''}" 
+                        onclick="updatePaperMcqSetting('omrShowOptionWords', false)">Just A, B, C, D</button>
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- C. Number of Columns (1, 2, 3, 4 Columns) -->
           <div class="paper-row-field">
             <span>MCQ Layout Columns:</span>
             <div class="paper-segmented-btn-group">
               <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 1 ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('columns', 1)">1 Column</button>
+                      onclick="updatePaperMcqSetting('columns', 1)">1 Col</button>
               <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 2 ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('columns', 2)">2 Columns</button>
+                      onclick="updatePaperMcqSetting('columns', 2)">2 Cols</button>
               <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 3 ? 'active' : ''}" 
-                      onclick="updatePaperMcqSetting('columns', 3)">3 Columns</button>
+                      onclick="updatePaperMcqSetting('columns', 3)">3 Cols</button>
+              <button class="paper-seg-btn ${paperCreationState.mcqSettings.columns === 4 ? 'active' : ''}" 
+                      onclick="updatePaperMcqSetting('columns', 4)">4 Cols</button>
             </div>
           </div>
 
@@ -9614,7 +9706,13 @@ function renderWizardStep6MarksAndHeaders() {
           </div>
         </div>
 
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.4rem;">
+        <div style="margin-bottom:0.4rem;">
+          <label class="pcs-label">Board Syllabus Pattern / Subtitle:</label>
+          <input type="text" class="pcs-input" value="${paperCreationState.subTitle}" 
+                 oninput="updatePaperHeaderField('subTitle', this.value)">
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0.4rem;">
           <div>
             <label class="pcs-label">Paper Code:</label>
             <input type="text" class="pcs-input" value="${paperCreationState.paperCode}" 
@@ -9629,6 +9727,12 @@ function renderWizardStep6MarksAndHeaders() {
             <label class="pcs-label">Exam Date:</label>
             <input type="text" class="pcs-input" value="${paperCreationState.date}" 
                    oninput="updatePaperHeaderField('date', this.value)">
+          </div>
+          <div>
+            <label class="pcs-label">Total Marks:</label>
+            <input type="text" class="pcs-input" value="${paperCreationState.totalMarksOverride || paperCreationState.totalMarks || ''}" 
+                   placeholder="${paperCreationState.totalMarks || 75}"
+                   oninput="updatePaperHeaderField('totalMarksOverride', this.value)">
           </div>
         </div>
       </div>
@@ -9853,7 +9957,7 @@ function renderLiveExamPaperHtml() {
         </div>
         <div class="pep-meta-right">
           <span><strong>Time Allowed:</strong> ${paperCreationState.duration}</span>
-          <span><strong>Total Marks:</strong> ${paperCreationState.totalMarks}</span>
+          <span><strong>Total Marks:</strong> ${paperCreationState.totalMarksOverride || paperCreationState.totalMarks}</span>
         </div>
       </div>
 
@@ -9873,9 +9977,12 @@ function renderLiveExamPaperHtml() {
         if (cat === 'mcqs') {
           const reqCount = Number(part.count) || 15;
           const questions = (qBank.mcqs || []).slice(0, reqCount);
+          const isSamePage = (paperCreationState.mcqSettings.samePage !== false);
+          const isOmrPure = isOmr && (paperCreationState.mcqSettings.omrShowOptionWords === false);
+          const isSeparateOmrSheet = (!isSamePage && isOmr);
 
           return `
-            <div class="pep-section" style="${part.startNewPage ? 'page-break-before:always;' : ''}">
+            <div class="pep-section" style="${part.startNewPage || !isSamePage ? 'page-break-before:always;' : ''}">
               <div class="pep-sec-header">
                 <span class="pep-sec-title">${part.name}</span>
                 <span class="pep-sec-marks">Marks: ${part.totalMarks} (${reqCount} × ${part.marksPerQ})</span>
@@ -9883,20 +9990,69 @@ function renderLiveExamPaperHtml() {
               <div class="pep-sec-instruction">
                 ${part.instructions}
               </div>
+
+              ${isSeparateOmrSheet ? `
+                <!-- SEPARATE OMR ANSWER SHEET: Number on left and Options next to it -->
+                <div style="margin:0.75rem 0 1rem 0;background:#f8fafc;border:1.5px solid #000;border-radius:6px;padding:0.75rem;">
+                  <div style="font-weight:800;font-size:0.85rem;text-align:center;margin-bottom:0.6rem;text-transform:uppercase;letter-spacing:0.04em;">
+                    OFFICIAL OMR ANSWER SHEET · SECTION A
+                  </div>
+                  <table class="pep-omr-table">
+                    <thead>
+                      <tr>
+                        <th style="width:12%;">Q. No.</th>
+                        <th style="width:38%;">Shade Correct Option Bubble</th>
+                        <th style="width:12%;">Q. No.</th>
+                        <th style="width:38%;">Shade Correct Option Bubble</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${Array.from({ length: Math.ceil(reqCount / 2) }).map((_, rIdx) => {
+                        const q1 = rIdx + 1;
+                        const q2 = rIdx + 1 + Math.ceil(reqCount / 2);
+                        return `
+                          <tr>
+                            <td><strong>${q1}</strong></td>
+                            <td>
+                              <span class="pep-omr-strip">
+                                ${['A','B','C','D'].map(letter => `
+                                  <span class="omr-bubble-circle">${letter}</span>
+                                `).join('')}
+                              </span>
+                            </td>
+                            ${q2 <= reqCount ? `
+                              <td><strong>${q2}</strong></td>
+                              <td>
+                                <span class="pep-omr-strip">
+                                  ${['A','B','C','D'].map(letter => `
+                                    <span class="omr-bubble-circle">${letter}</span>
+                                  `).join('')}
+                                </span>
+                              </td>
+                            ` : '<td>-</td><td>-</td>'}
+                          </tr>
+                        `;
+                      }).join('')}
+                    </tbody>
+                  </table>
+                </div>
+              ` : ''}
               
               <div class="pep-mcqs-grid" data-cols="${mcqCols}">
                 ${questions.map((m, idx) => `
                   <div class="pep-mcq-item">
-                    <div class="pep-mcq-q"><strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}</div>
-                    <div class="pep-mcq-options" data-layout="${mcqLayout}">
+                    <div class="pep-mcq-q" style="margin-bottom:0.25rem;">
+                      <strong>${formatQNum(idx + 1, paperCreationState.numberingStyle)}.</strong> ${m.q}
+                    </div>
+                    <div class="pep-mcq-options" data-layout="${isOmrPure ? 'horizontal' : mcqLayout}" style="${isOmrPure ? 'display:flex;align-items:center;gap:1.15rem;margin-top:0.25rem;padding-left:0.5rem;' : ''}">
                       ${m.opts.map((opt, oi) => `
-                        <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}">
+                        <span class="pep-mcq-opt ${paperCreationState.showAnswerKey && oi === m.ans ? 'pep-key-correct' : ''}" style="${isOmrPure ? 'gap:0.2rem;display:inline-flex;align-items:center;' : ''}">
                           ${isOmr ? `
                             <span class="omr-bubble-circle">${String.fromCharCode(65 + oi)}</span>
                           ` : `
                             <span class="pep-bubble">${String.fromCharCode(65 + oi)})</span>
                           `}
-                          <span>${opt}</span>
+                          ${!isOmrPure ? `<span>${opt}</span>` : ''}
                         </span>
                       `).join('')}
                     </div>
@@ -13512,26 +13668,81 @@ function renderLangWordsSubContent(subjKey, ch, subTab) {
   const ex = ch.exercise || {};
   const wordsList = ex.dictionaryWords || ex.vocabulary || [];
 
+  // Helper for lookup of Urdu meaning for English words or native Urdu words
+  function getUrduMeaning(wStr) {
+    if (!wStr) return '';
+    if (isUrdu) return wStr;
+    const clean = String(wStr).toLowerCase().replace(/[^a-z0-9'-]/g, '');
+    if (typeof ENG_URDU_DICT !== 'undefined' && ENG_URDU_DICT[clean]) {
+      const u = ENG_URDU_DICT[clean].u;
+      if (u && u !== 'اردو معنی' && u.toLowerCase() !== clean) return u;
+    }
+    const knownMap = {
+      'tolerance': 'تحمل / رواداری / برداشت',
+      'intolerance': 'عدم برداشت / تنگ نظری',
+      'patience': 'صبر و تحمل',
+      'impatience': 'بے صبری / بے قراری',
+      'peace': 'امن و امان / سکون',
+      'conflict': 'تنازع / تصادم / جھگڑا',
+      'compassion': 'ہمدردی / دلی لگاؤ',
+      'cruelty': 'ظلم و ستم / سنگدلی',
+      'kindness': 'مہربانی / احسان',
+      'harshness': 'سختی / درشتی',
+      'victory': 'فتح / کامیابی',
+      'defeat': 'شکست / مات',
+      'forgiveness': 'معافی / درگزر',
+      'revenge': 'انتقام / بدلہ',
+      'truth': 'سچائی / صداقت',
+      'falsehood': 'جھوٹ / باطل',
+      'frightened': 'خوفزدہ / ڈرا ہوا',
+      'reward': 'انعام / صلہ',
+      'harsh': 'سخت / تلخ',
+      'rude': 'بد اخلاق / گستاخ',
+      'sincere': 'مخلص / سچا',
+      'forbearance': 'بردباری / ضبط',
+      'endurance': 'برداشت / قوتِ مدافعت',
+      'perseverance': 'استقامت / مسلسل جدوجہد',
+      'steadfastness': 'ثابت قدمی',
+      'mercy': 'رحم و کرم',
+      'benevolence': 'خیر خواہی / فیاضی',
+      'generosity': 'سخاوت / فیاض دلی',
+      'magnanimity': 'عالی ظرفی / فراخ دلی',
+      'grave': 'سنگین / اہم',
+      'dismay': 'مایوسی / افسوس',
+      'exalted': 'بلند رتبہ / سرفراز'
+    };
+    return knownMap[clean] || 'اردو مفہوم شامل ہے';
+  }
+
   if (subTab === 'meanings') {
     return `
       <div class="words-table-wrap">
         <table class="words-grid-table">
           <thead>
             <tr>
-              <th style="width:25%;">Word</th>
-              <th style="width:35%;" class="${isUrdu ? 'words-urdu-col' : ''}">Contextual Meaning</th>
-              <th>Example / Explanation</th>
+              <th style="width:25%;">${isUrdu ? 'لفظ' : 'Word'}</th>
+              <th style="width:28%;" class="words-urdu-col">اردو معنی (Urdu Meaning)</th>
+              <th style="width:25%;">${isUrdu ? 'سیاق و سباق کا مفہوم' : 'Contextual / English Meaning'}</th>
+              <th>${isUrdu ? 'وضاحت / حوالہ' : 'Example / Explanation'}</th>
             </tr>
           </thead>
           <tbody>
-            ${wordsList.length > 0 ? wordsList.map(w => `
-              <tr>
-                <td><strong>${w.word || w.term || ''}</strong></td>
-                <td class="${isUrdu ? 'words-urdu-col' : ''}">${w.meaning || w.urdu || w.definition || ''}</td>
-                <td style="color:#64748b;font-size:0.86rem;">${w.context || w.sentence || w.def || 'Used in textbook unit.'}</td>
-              </tr>
-            `).join('') : `
-              <tr><td colspan="3" style="text-align:center;padding:1.5rem;color:#64748b;">Comprehensive vocabulary list is loaded for this unit.</td></tr>
+            ${wordsList.length > 0 ? wordsList.map(w => {
+              const wordText = w.word || w.term || '';
+              const urduMean = isUrdu ? (w.meaning || w.urdu || '') : getUrduMeaning(wordText);
+              const engMean = isUrdu ? (w.context || '') : (w.meaning || w.definition || '');
+              const expText = w.example || w.context || w.sentence || w.def || (isUrdu ? 'سبق میں مستعمل لفظ' : 'Used in textbook unit.');
+
+              return `
+                <tr>
+                  <td><strong>${wordText}</strong></td>
+                  <td class="words-urdu-col" style="font-weight:700;color:#166534;">${urduMean}</td>
+                  <td style="color:#1e293b;">${engMean}</td>
+                  <td style="color:#64748b;font-size:0.86rem;">${expText}</td>
+                </tr>
+              `;
+            }).join('') : `
+              <tr><td colspan="4" style="text-align:center;padding:1.5rem;color:#64748b;">${isUrdu ? 'اس سبق کے لیے الفاظ و معنی کی فہرست لوڈ ہے۔' : 'Comprehensive vocabulary list is loaded for this unit.'}</td></tr>
             `}
           </tbody>
         </table>
@@ -13552,17 +13763,19 @@ function renderLangWordsSubContent(subjKey, ch, subTab) {
         <table class="words-grid-table">
           <thead>
             <tr>
-              <th style="width:35%;">Word</th>
-              <th style="width:35%;">Antonym / Opposite</th>
-              <th>Usage Note</th>
+              <th style="width:25%;">${isUrdu ? 'لفظ' : 'Word'}</th>
+              <th style="width:28%;" class="words-urdu-col">اردو معنی (Urdu Meaning)</th>
+              <th style="width:25%;">${isUrdu ? 'متضاد' : 'Antonym / Opposite'}</th>
+              <th class="words-urdu-col">${isUrdu ? 'متضاد کا اردو معنی' : 'Opposite Urdu Meaning'}</th>
             </tr>
           </thead>
           <tbody>
             ${oppList.map(o => `
               <tr>
                 <td><strong>${o.word}</strong></td>
+                <td class="words-urdu-col" style="font-weight:700;color:#166534;">${getUrduMeaning(o.word)}</td>
                 <td style="color:#b91c1c;font-weight:700;">${o.opposite}</td>
-                <td style="color:#64748b;font-size:0.86rem;">Board textbook opposite pair</td>
+                <td class="words-urdu-col" style="font-weight:700;color:#991b1b;">${getUrduMeaning(o.opposite)}</td>
               </tr>
             `).join('')}
           </tbody>
@@ -13583,40 +13796,48 @@ function renderLangWordsSubContent(subjKey, ch, subTab) {
         <table class="words-grid-table">
           <thead>
             <tr>
-              <th style="width:35%;">Word</th>
-              <th style="width:35%;">Synonym / مترادف</th>
-              <th>Lexical Field</th>
+              <th style="width:25%;">${isUrdu ? 'لفظ' : 'Word'}</th>
+              <th style="width:28%;" class="words-urdu-col">اردو معنی (Urdu Meaning)</th>
+              <th style="width:25%;">${isUrdu ? 'مترادف' : 'Synonym / مترادف'}</th>
+              <th class="words-urdu-col">${isUrdu ? 'مترادف کا اردو معنی' : 'Synonym Urdu Meaning'}</th>
             </tr>
           </thead>
           <tbody>
-            ${simList.map(s => `
-              <tr>
-                <td><strong>${s.word}</strong></td>
-                <td style="color:#0f766e;font-weight:700;">${s.similar || s.synonym}</td>
-                <td style="color:#64748b;font-size:0.86rem;">Textbook vocabulary match</td>
-              </tr>
-            `).join('')}
+            ${simList.map(s => {
+              const simStr = s.similar || s.synonym || '';
+              const firstSim = simStr.split('/')[0].trim();
+              return `
+                <tr>
+                  <td><strong>${s.word}</strong></td>
+                  <td class="words-urdu-col" style="font-weight:700;color:#166534;">${getUrduMeaning(s.word)}</td>
+                  <td style="color:#0f766e;font-weight:700;">${simStr}</td>
+                  <td class="words-urdu-col" style="font-weight:700;color:#065f46;">${getUrduMeaning(firstSim)}</td>
+                </tr>
+              `;
+            }).join('')}
           </tbody>
         </table>
       </div>`;
   } else if (subTab === 'use') {
     const useList = (ex.sentenceUse || wordsList.slice(0, 10).map(w => ({
       word: w.word || 'Tolerance',
-      sentence: w.sentence || `The Holy Prophet (PBUH) exemplified ${w.word || 'tolerance'} throughout his noble life.`
+      sentence: w.sentence || (isUrdu ? 'اس لفظ کو جملے میں استعمال کیا گیا ہے۔' : `The Holy Prophet (PBUH) exemplified ${w.word || 'tolerance'} throughout his noble life.`)
     })));
     return `
       <div class="words-table-wrap">
         <table class="words-grid-table">
           <thead>
             <tr>
-              <th style="width:25%;">Word</th>
-              <th>Example Sentence / جملہ</th>
+              <th style="width:22%;">${isUrdu ? 'لفظ' : 'Word'}</th>
+              <th style="width:25%;" class="words-urdu-col">اردو معنی (Urdu Meaning)</th>
+              <th>${isUrdu ? 'جملے میں استعمال' : 'Example Sentence / جملہ'}</th>
             </tr>
           </thead>
           <tbody>
             ${useList.map(u => `
               <tr>
                 <td><strong style="color:#0284c7;">${u.word}</strong></td>
+                <td class="words-urdu-col" style="font-weight:700;color:#166534;">${getUrduMeaning(u.word)}</td>
                 <td style="line-height:1.6;color:#1e293b;">${u.sentence}</td>
               </tr>
             `).join('')}
@@ -13627,7 +13848,6 @@ function renderLangWordsSubContent(subjKey, ch, subTab) {
   return '';
 }
 
-// ─── LANGUAGE GRAMMAR TAB RENDERER ───────────────────────────────
 function renderLanguageGrammarTab(subjKey, ch) {
   const isUrdu = (subjKey === 'urdu');
   const ex = ch.exercise || {};
@@ -13716,25 +13936,41 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
     if (mcqs.length > 0) {
       return `
         <div style="margin-bottom:1.25rem;">
-          ${mcqs.map((m, idx) => `
-            <div class="math-topic-card" style="margin-bottom:1rem;padding:1rem;">
-              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
-                <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">MCQ ${idx + 1}</span>
+          ${mcqs.map((m, idx) => {
+            const options = m.options || [];
+            let correctIdx = (m.correct !== undefined) ? Number(m.correct) : 0;
+            if (m.correct === undefined && m.answer) {
+              const ansStr = String(m.answer).trim().toLowerCase();
+              const foundIdx = options.findIndex(o => {
+                const cleaned = o.replace(/^[A-Da-d][\.\)]\s*/, '').trim().toLowerCase();
+                return cleaned === ansStr || o.toLowerCase() === ansStr;
+              });
+              if (foundIdx !== -1) correctIdx = foundIdx;
+            }
+            const expEnc = encodeURIComponent(m.explanation || m.exp || 'Verified textbook answer');
+            const qId = `subj-ex-mcq-${idx}`;
+
+            return `
+              <div id="${qId}" class="math-topic-card" style="margin-bottom:1rem;padding:1rem;">
+                <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+                  <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">MCQ ${idx + 1}</span>
+                </div>
+                <div style="font-weight:700;color:#0f172a;font-size:0.98rem;margin-bottom:0.65rem;">${m.q || m.question}</div>
+                ${options.length ? `
+                  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.5rem;margin-bottom:0.65rem;">
+                    ${options.map((opt, oIdx) => `
+                      <button class="universal-mcq-opt-btn"
+                              onclick="checkInteractiveUniversalMcq('${qId}', ${oIdx}, ${correctIdx}, '${expEnc}')"
+                              style="background:#f8fafc;border:1.5px solid #cbd5e1;padding:0.55rem 0.75rem;border-radius:6px;font-size:0.88rem;cursor:pointer;text-align:left;display:flex;align-items:center;gap:0.5rem;transition:all 0.15s;">
+                        <span style="font-weight:800;color:#0284c7;background:#e0f2fe;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:0.75rem;flex-shrink:0;">${['A','B','C','D'][oIdx] || (oIdx + 1)}</span>
+                        <span>${opt}</span>
+                      </button>
+                    `).join('')}
+                  </div>` : ''}
+                <div class="universal-mcq-exp-box" style="display:none;padding:0.6rem 0.85rem;border-radius:6px;font-size:0.88rem;"></div>
               </div>
-              <div style="font-weight:700;color:#0f172a;font-size:0.98rem;margin-bottom:0.65rem;">${m.q || m.question}</div>
-              ${m.options ? `
-                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.5rem;margin-bottom:0.5rem;">
-                  ${m.options.map((opt, oIdx) => `
-                    <div style="background:#f8fafc;border:1px solid #cbd5e1;padding:0.5rem 0.75rem;border-radius:6px;font-size:0.88rem;">
-                      <strong>${['A','B','C','D'][oIdx]}.</strong> ${opt}
-                    </div>
-                  `).join('')}
-                </div>` : ''}
-              <div class="math-result-pill" style="font-size:0.85rem;">
-                <strong>🎯 Verified Answer:</strong> ${m.answer || m.correctOption || 'Provided in textbook'}
-              </div>
-            </div>
-          `).join('')}
+            `;
+          }).join('')}
         </div>`;
     }
   }
@@ -13767,10 +14003,12 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
 }
 
 function renderSubjectSLOsTab(subjKey, ch) {
-  const slos = ch.slos || ch.sloQuestions || ch.sloBank || {};
-  const mcqs = slos.mcqs || slos.sloMcqs || [];
-  const sqs = slos.shortQuestions || slos.sqs || slos.sloSq || [];
-  const lqs = slos.longQuestions || slos.lqs || slos.sloLq || [];
+  const sloObj = (ch.sloQuestions && typeof ch.sloQuestions === 'object' && !Array.isArray(ch.sloQuestions)) 
+    ? ch.sloQuestions 
+    : ((ch.slos && typeof ch.slos === 'object' && !Array.isArray(ch.slos)) ? ch.slos : (ch.sloBank || {}));
+  const mcqs = sloObj.mcqs || sloObj.sloMcqs || [];
+  const sqs = sloObj.shortQuestions || sloObj.sqs || sloObj.sloSq || [];
+  const lqs = sloObj.longQuestions || sloObj.lqs || sloObj.sloLq || [];
 
   return `
     <div>
@@ -13785,14 +14023,29 @@ function renderSubjectSLOsTab(subjKey, ch) {
 
       <div style="margin-bottom:1.5rem;">
         <h4 style="color:#0f172a;font-size:1rem;font-weight:700;margin-bottom:0.75rem;">🎯 SLO Multiple Choice Questions (${mcqs.length}):</h4>
-        ${mcqs.slice(0, 8).map((m, idx) => `
-          <div class="math-topic-card" style="margin-bottom:0.85rem;padding:0.9rem;">
-            <div style="font-weight:700;color:#0f172a;font-size:0.94rem;margin-bottom:0.5rem;">${idx + 1}. ${m.q || m.question}</div>
-            <div class="math-result-pill" style="font-size:0.85rem;display:inline-block;">
-              <strong>🎯 Correct Answer:</strong> ${m.answer || m.ans || (m.options && m.correct !== undefined ? m.options[m.correct] : 'Verified')}
+        ${mcqs.slice(0, 8).map((m, idx) => {
+          const options = m.options || m.opts || ['A', 'B', 'C', 'D'];
+          const correctIdx = (m.correct !== undefined) ? Number(m.correct) : 0;
+          const expEnc = encodeURIComponent(m.explanation || m.exp || 'Verified SLO answer');
+          const qId = `slo-bank-mcq-${idx}`;
+
+          return `
+            <div id="${qId}" class="math-topic-card" style="margin-bottom:0.85rem;padding:0.9rem;">
+              <div style="font-weight:700;color:#0f172a;font-size:0.94rem;margin-bottom:0.5rem;">${idx + 1}. ${m.q || m.question}</div>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.5rem;margin-bottom:0.6rem;">
+                ${options.map((opt, oIdx) => `
+                  <button class="universal-mcq-opt-btn" 
+                          onclick="checkInteractiveUniversalMcq('${qId}', ${oIdx}, ${correctIdx}, '${expEnc}')"
+                          style="background:#f8fafc;border:1.5px solid #cbd5e1;padding:0.5rem 0.75rem;border-radius:6px;font-size:0.88rem;cursor:pointer;text-align:left;display:flex;align-items:center;gap:0.5rem;transition:all 0.15s;">
+                    <span style="font-weight:800;color:#0284c7;background:#e0f2fe;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:0.75rem;flex-shrink:0;">${['A','B','C','D'][oIdx] || (oIdx + 1)}</span>
+                    <span>${opt}</span>
+                  </button>
+                `).join('')}
+              </div>
+              <div class="universal-mcq-exp-box" style="display:none;padding:0.6rem 0.85rem;border-radius:6px;font-size:0.88rem;"></div>
             </div>
-          </div>
-        `).join('')}
+          `;
+        }).join('')}
       </div>
 
       ${sqs.length ? `
