@@ -260,9 +260,10 @@ const DATA = {
       },
       {
         "id": "cls9-comp",
-        "name": "Computer Sci",
+        "name": "Computer Science",
         "emoji": "💻",
-        "chapters": 8
+        "chapters": 7,
+        "hasComp": true
       },
       {
         "id": "cls9-pakstudy",

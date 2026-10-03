@@ -1048,6 +1048,9 @@ function openSubject(classId, subjId) {
   } else if (subj.hasIsl || subjId === 'cls9-isl' || subjId === 'cls10-isl') {
     state.activeSubject = "isl";
     openSubjectWorkspace(classId, "isl", subj);
+  } else if (subj.hasComp || subjId === 'cls9-comp' || subjId === 'cls10-comp') {
+    state.activeSubject = "comp";
+    openSubjectWorkspace(classId, "comp", subj);
   } else {
     state.activeSubject = subj.id;
     goToChapters(classId, subjId, subj.name);
@@ -10909,6 +10912,59 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
       }
     });
   }
+  else if (sid.includes("comp")) {
+    const compChapters = (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];
+    compChapters.forEach((ch, cIdx) => {
+      const chTitle = `Unit ${ch.num || cIdx + 1}: ${ch.name}`;
+      const ex = ch.exercise || ch.textbookExercise || {};
+      const slo = ch.sloQuestions || {};
+
+      if (catId === 'mcqs') {
+        const mcqs = [ ...(ex.mcqs || []), ...(slo.mcqs || []) ];
+        mcqs.forEach((m, mIdx) => {
+          result.push({
+            id: `comp-m-${cIdx}-${mIdx}`,
+            q: m.q || m.question,
+            opts: m.opts || m.options || ["A", "B", "C", "D"],
+            ans: (typeof m.ans === 'number') ? m.ans : ((typeof m.correctIndex === 'number') ? m.correctIndex : 0),
+            exp: m.exp || m.explanation || `Concept from ${chTitle}`,
+            chapter: chTitle,
+            topic: ch.name,
+            source: (mIdx < (ex.mcqs || []).length ? "exercise" : "slo"),
+            marks: 1
+          });
+        });
+      }
+      if (catId === 'sqs') {
+        const sqs = [ ...(ex.shortQuestions || []), ...(slo.shortQuestions || []) ];
+        sqs.forEach((sq, sIdx) => {
+          result.push({
+            id: `comp-sq-${cIdx}-${sIdx}`,
+            q: sq.q || sq.question,
+            key: sq.ans || sq.answer || sq.key || "Detailed textbook concept and solution.",
+            chapter: chTitle,
+            topic: ch.name,
+            source: (sIdx < (ex.shortQuestions || []).length ? "exercise" : "slo"),
+            marks: 4
+          });
+        });
+      }
+      if (catId === 'lqs') {
+        const lqs = [ ...(ex.longQuestions || []), ...(slo.longQuestions || []) ];
+        lqs.forEach((lq, lIdx) => {
+          result.push({
+            id: `comp-lq-${cIdx}-${lIdx}`,
+            q: lq.q || lq.question,
+            key: lq.ans || lq.answer || lq.key,
+            chapter: chTitle,
+            topic: ch.name,
+            source: (lIdx < (ex.longQuestions || []).length ? "exercise" : "slo"),
+            marks: 8
+          });
+        });
+      }
+    });
+  }
 
   // Fallback: Populate from getCurriculumQuestionsBank if results are sparse
   if (result.length < 5) {
@@ -14790,6 +14846,9 @@ function getSubjectChapterList(subjKey, classId) {
       ? ISLAMYAT_DATA
       : ((typeof DATA !== "undefined" && DATA && (DATA.islChapters || DATA.islData)) ? (DATA.islChapters || DATA.islData) : []);
   }
+  if (subjKey === 'comp') {
+    return (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];
+  }
   return [];
 }
 
@@ -17076,27 +17135,14 @@ function renderScienceOrHumanitiesSummaryTab(subjKey, ch) {
 }
 
 // ─── REWIRE SUBJECT VIEW OPENERS ─────────────────────────────────
-function openEngView(classId, subj) {
-  openSubjectWorkspace(classId, 'eng', subj);
-}
-function openUrduView(classId, subj) {
-  openSubjectWorkspace(classId, 'urdu', subj);
-}
-function openPhysView(classId, subj) {
-  openSubjectWorkspace(classId, 'phys', subj);
-}
-function openChemView(classId, subj) {
-  openSubjectWorkspace(classId, 'chem', subj);
-}
-function openBioView(classId, subj) {
-  openSubjectWorkspace(classId, 'bio', subj);
-}
-function openPakStudyView(classId, subj) {
-  openSubjectWorkspace(classId, 'pakstudy', subj);
-}
-function openIslView(classId, subj) {
-  openSubjectWorkspace(classId, 'isl', subj);
-}
+window.openEngView = function(classId, subj) { openSubjectWorkspace(classId, 'eng', subj); };
+window.openUrduView = function(classId, subj) { openSubjectWorkspace(classId, 'urdu', subj); };
+window.openPhysView = function(classId, subj) { openSubjectWorkspace(classId, 'phys', subj); };
+window.openChemView = function(classId, subj) { openSubjectWorkspace(classId, 'chem', subj); };
+window.openBioView = function(classId, subj) { openSubjectWorkspace(classId, 'bio', subj); };
+window.openPakStudyView = function(classId, subj) { openSubjectWorkspace(classId, 'pakstudy', subj); };
+window.openIslView = function(classId, subj) { openSubjectWorkspace(classId, 'isl', subj); };
+window.openCompView = function(classId, subj) { openSubjectWorkspace(classId, 'comp', subj); };
 
 
 function getPakStudyChapterList() {

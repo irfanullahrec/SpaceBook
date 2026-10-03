@@ -3,7 +3,7 @@ const vm = require('vm');
 
 const path = require('path');
 const DIR = path.resolve(__dirname, '../js') + path.sep;
-const files = ['data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'dictionary_data.js', 'urdu_data.js', 'english_data.js', 'math_data.js', 'pakstudy_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js'];
+const files = ['data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'english_data.js', 'math_data.js', 'pakstudy_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js'];
 
 function makeEl(id) {
   const style = {};
@@ -96,6 +96,12 @@ run("REGRESSION selectChemChapter(1)", `selectChemChapter(1)`);
 run("REGRESSION openSubject cls9 bio", `openSubject("cls9","cls9-bio")`);
 run("REGRESSION openSubject cls9 math", `openSubject("cls9","cls9-math")`);
 run("REGRESSION openSubject cls9 pakstudy", `openSubject("cls9","cls9-pakstudy")`);
+run("REGRESSION openSubject cls9 comp", `openSubject("cls9","cls9-comp")`);
+run("REGRESSION comp switchSubjectTab('concepts')", `switchSubjectTab('comp', 'concepts', 0, 'cls9')`);
+run("REGRESSION comp switchSubjectTab('exercise')", `switchSubjectTab('comp', 'exercise', 0, 'cls9')`);
+run("REGRESSION comp switchSubjectTab('slos')", `switchSubjectTab('comp', 'slos', 0, 'cls9')`);
+run("REGRESSION comp switchSubjectTab('formulas')", `switchSubjectTab('comp', 'formulas', 0, 'cls9')`);
+run("REGRESSION comp selectSubjectChapter(1)", `selectSubjectChapter('comp', 1, 'cls9')`);
 run("REGRESSION renderClasses", `renderClasses()`);
 run("REGRESSION handleGlobalSearch('islam')", `handleGlobalSearch("islam")`);
 run("REGRESSION handleGlobalSearch('daffodils')", `handleGlobalSearch("daffodils")`);

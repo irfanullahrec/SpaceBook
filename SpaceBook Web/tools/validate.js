@@ -15,6 +15,7 @@ const INDEX = path.join(ROOT, 'index.html');
 
 const DATA_FILES = [
   'data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js',
+  'data_comp.js',
   'dictionary_data.js', 'urdu_data.js', 'english_data.js', 'math_data.js',
   'pakstudy_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js'
 ];
@@ -77,6 +78,7 @@ if (D) {
   check('phys10Chapters = 9', D.phys10Chapters && D.phys10Chapters.length === 9, 'got ' + (D.phys10Chapters || []).length);
   check('engChapters = 15', D.engChapters && D.engChapters.length === 15, 'got ' + (D.engChapters || []).length);
   check('eng10Chapters = 15', D.eng10Chapters && D.eng10Chapters.length === 15, 'got ' + (D.eng10Chapters || []).length);
+  check('compChapters = 7', D.compChapters && D.compChapters.length === 7, 'got ' + (D.compChapters || []).length);
   check('chapters roadmap map has 14 entries', D.chapters && Object.keys(D.chapters).length === 14, 'got ' + (D.chapters ? Object.keys(D.chapters).length : 0));
   check('DATA.urduChapters = 19 (from urdu_data.js)', D.urduChapters && (D.urduChapters.length === 19 || D.urduChapters.length === 15), 'got ' + (D.urduChapters || []).length);
   check('DATA.islamyatChapters = 15', D.islamyatChapters && D.islamyatChapters.length === 15, 'got ' + (D.islamyatChapters || []).length);
@@ -108,7 +110,7 @@ const html = fs.readFileSync(INDEX, 'utf8');
 const srcs = [...html.matchAll(/<script\s+src="([^"]+)"/g)].map(m => m[1].split('?')[0]);
 check('index.html references app.js', srcs.includes('js/app.js'));
 check('index.html loads core registry before subjects', srcs.indexOf('js/data.js') >= 0 && srcs.indexOf('js/data.js') < srcs.indexOf('js/app.js'));
-['js/data_chem.js', 'js/data_phys.js', 'js/data_eng.js', 'js/data_bio.js'].forEach(s => check('index.html loads ' + s, srcs.includes(s)));
+['js/data_chem.js', 'js/data_phys.js', 'js/data_eng.js', 'js/data_bio.js', 'js/data_comp.js'].forEach(s => check('index.html loads ' + s, srcs.includes(s)));
 const missingSrc = srcs.filter(s => !fs.existsSync(path.join(ROOT, s)));
 check('every <script src> exists', missingSrc.length === 0, 'missing: ' + missingSrc.join(','));
 const cssHref = (html.match(/<link\s+rel="stylesheet"\s+href="([^"]+)"/g) || []).map(s => s.match(/href="([^"]+)"/)[1]);
