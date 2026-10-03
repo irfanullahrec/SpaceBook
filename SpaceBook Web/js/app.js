@@ -14782,6 +14782,10 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && DATA.pakstudyChapters) ? DATA.pakstudyChapters : []);
   }
   if (subjKey === 'isl') {
+    const isCls10 = (classId === 'cls10');
+    if (isCls10 && typeof ISLAMYAT_10_DATA !== 'undefined' && Array.isArray(ISLAMYAT_10_DATA)) {
+      return ISLAMYAT_10_DATA;
+    }
     return (typeof ISLAMYAT_DATA !== 'undefined' && Array.isArray(ISLAMYAT_DATA))
       ? ISLAMYAT_DATA
       : ((typeof DATA !== "undefined" && DATA && (DATA.islChapters || DATA.islData)) ? (DATA.islChapters || DATA.islData) : []);
@@ -15009,6 +15013,39 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
         `;
       }
       container.innerHTML = renderScienceLessonSubContent(subjKey, ch, activeScienceSubTab);
+    } else if (subjKey === 'isl') {
+      const activeIslSubTab = state.activeIslLessonSubTab || 'lesson';
+      if (subBar) {
+        subBar.style.display = 'flex';
+        subBar.innerHTML = `
+          <button class="topic-sub-tab-btn ${activeIslSubTab === 'lesson' ? 'active' : ''}" onclick="switchIslLessonSubTab('${subjKey}', 'lesson')">
+            📖 متن و تراجم (آیات / احادیث)
+          </button>
+          <button class="topic-sub-tab-btn ${activeIslSubTab === 'ps-trans' ? 'active' : ''}" onclick="switchIslLessonSubTab('${subjKey}', 'ps-trans')">
+            🇦🇫 پښتو ژباړه (Pashto)
+          </button>
+          <button class="topic-sub-tab-btn ${activeIslSubTab === 'en-trans' ? 'active' : ''}" onclick="switchIslLessonSubTab('${subjKey}', 'en-trans')">
+            🇬🇧 English Translation
+          </button>
+          <button class="topic-sub-tab-btn ${activeIslSubTab === 'video' ? 'active' : ''}" onclick="switchIslLessonSubTab('${subjKey}', 'video')">
+            🎥 ویڈیو لیکچر
+          </button>
+          <button class="topic-sub-tab-btn ${activeIslSubTab === 'pages' ? 'active' : ''}" onclick="switchIslLessonSubTab('${subjKey}', 'pages')">
+            🖼️ اصل درسی صفحات
+          </button>
+        `;
+      }
+      if (activeIslSubTab === 'ps-trans') {
+        container.innerHTML = renderIslPashtoTranslation(ch);
+      } else if (activeIslSubTab === 'en-trans') {
+        container.innerHTML = renderIslEnglishTranslation(ch);
+      } else if (activeIslSubTab === 'video') {
+        container.innerHTML = renderIslVideo(ch);
+      } else if (activeIslSubTab === 'pages') {
+        container.innerHTML = renderIslPageImages(ch);
+      } else {
+        container.innerHTML = renderIslLesson(ch);
+      }
     } else {
       if (subBar) {
         subBar.style.display = 'none';
@@ -16722,6 +16759,33 @@ function switchScienceLessonSubTab(subjKey, subTab) {
   }
 }
 
+function switchIslLessonSubTab(subjKey, subTab) {
+  state.activeIslLessonSubTab = subTab;
+  const subBar = $("subjSubTabsBar");
+  if (subBar) {
+    subBar.querySelectorAll(".topic-sub-tab-btn").forEach(b =>
+      b.classList.toggle("active", b.getAttribute("onclick") && b.getAttribute("onclick").includes("'" + subTab + "'")));
+  }
+  const container = $("subjTabContent");
+  if (!container) return;
+  const chList = getSubjectChapterList(subjKey, state.selectedClass);
+  const ch = chList[state.selectedSubjChapter || 0];
+  if (!ch) return;
+
+  if (subTab === 'ps-trans') {
+    container.innerHTML = renderIslPashtoTranslation(ch);
+  } else if (subTab === 'en-trans') {
+    container.innerHTML = renderIslEnglishTranslation(ch);
+  } else if (subTab === 'video') {
+    container.innerHTML = renderIslVideo(ch);
+  } else if (subTab === 'pages') {
+    container.innerHTML = renderIslPageImages(ch);
+  } else {
+    container.innerHTML = renderIslLesson(ch);
+  }
+  container.scrollTop = 0;
+}
+
 function renderScienceLessonSubContent(subjKey, ch, subTab) {
   if (subTab === 'translations') {
     const sections = ch.sections || ch.topics || [];
@@ -16838,21 +16902,28 @@ function renderScienceLessonSubContent(subjKey, ch, subTab) {
 }
 
 function renderScienceOrHumanitiesLessons(subjKey, ch) {
+  if (subjKey === 'isl') {
+    return typeof renderIslLesson === 'function' ? renderIslLesson(ch) : '';
+  }
   const topics = ch.topics || ch.sections || [];
   return `
     <div id="scienceLessonsList" class="math-cards-grid-target">
-      ${topics.map((t, idx) => `
+      ${topics.map((t, idx) => {
+        const titleStr = t.title || t.name || t.heading || t.titleUrdu || t.titleEn || (t.ayahNo ? ('آیت نمبر ' + t.ayahNo) : '') || (t.hadithNo ? ('حدیث نمبر ' + t.hadithNo) : '') || (t.exerciseNo ? ('Exercise ' + t.exerciseNo) : '') || ('Topic ' + (t.num || t.sectionNum || (idx + 1)));
+        const contentStr = t.content || t.text || t.theory || t.urduTranslation || t.arabic || (Array.isArray(t.paras) ? t.paras.join('\n\n') : '') || 'Detailed textbook theory and explanation.';
+        const numBadge = t.num || t.sectionNum || t.ayahNo || t.hadithNo || (idx + 1);
+        return `
         <div class="math-topic-card math-accordion-card" style="margin-bottom:1rem;">
           <div class="math-acc-header" onclick="toggleMathAccordion(this)">
             <div style="display:flex;align-items:center;gap:0.6rem;">
-              <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">Topic ${t.num || (idx + 1)}</span>
-              <h3 style="color:#0f172a;font-size:1.05rem;font-weight:700;margin:0;">${t.title || t.name}</h3>
+              <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">Topic ${numBadge}</span>
+              <h3 style="color:#0f172a;font-size:1.05rem;font-weight:700;margin:0;">${titleStr}</h3>
             </div>
             <span class="math-acc-icon">+</span>
           </div>
           <div class="math-accordion-body" style="display:none;margin-top:1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
             <div style="font-size:0.95rem;line-height:1.8;color:#334155;white-space:pre-line;margin-bottom:1rem;">
-              ${t.content || t.text || t.theory || 'Detailed textbook theory and explanation.'}
+              ${contentStr}
             </div>
             ${t.keyPoints || t.rules ? `
               <div style="background:#f0fdf4;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:0.75rem 1rem;">
@@ -16861,12 +16932,51 @@ function renderScienceOrHumanitiesLessons(subjKey, ch) {
               </div>` : ''}
           </div>
         </div>
-      `).join('')}
+        `;
+      }).join('')}
     </div>
   `;
 }
 
 function renderScienceConceptsTab(subjKey, ch) {
+  if (subjKey === 'isl') {
+    const wordList = [];
+    (ch.sections || []).forEach(sec => {
+      if (Array.isArray(sec.wordMeanings)) {
+        sec.wordMeanings.forEach(wm => {
+          if (wm.word && wm.meaning) {
+            wordList.push({
+              term: wm.word,
+              def: wm.meaning,
+              ayah: sec.ayahNo ? `آیت ${sec.ayahNo}` : ''
+            });
+          }
+        });
+      }
+    });
+    if (wordList.length > 0) {
+      return `
+        <div>
+          <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;">
+            <span style="font-weight:800;color:#15803d;font-size:1.05rem;">📖 قرآنی مفردات و اہم الفاظ کے معانی (${ch.title || ''})</span>
+            <div style="font-size:0.88rem;color:#166534;margin-top:0.35rem;">اس سبق میں وارد ہونے والے اہم الفاظ اور ان کے با محاورہ اردو معانی:</div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0.75rem;">
+            ${wordList.map(w => `
+              <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:0.85rem;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.35rem;">
+                  <strong style="color:#0d9488;font-size:1.2rem;font-family:'Amiri','Traditional Arabic',serif;">${w.term}</strong>
+                  ${w.ayah ? `<span style="font-size:0.75rem;background:#ccfbf1;color:#0f766e;padding:0.15rem 0.45rem;border-radius:4px;">${w.ayah}</span>` : ''}
+                </div>
+                <div style="font-size:0.95rem;color:#334155;font-family:'Jameel Noori Nastaleeq',serif;direction:rtl;text-align:right;">${w.def}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+  }
+
   const definitions = ch.definitions || [];
   const numericals = ch.numericals || [];
 
@@ -16877,7 +16987,7 @@ function renderScienceConceptsTab(subjKey, ch) {
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0.75rem;">
           ${definitions.length > 0 ? definitions.map(d => `
             <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:0.85rem;">
-              <strong style="color:#0284c7;font-size:0.95rem;">${d.term || d.title}:</strong>
+              <strong style="color:#0284c7;font-size:0.95rem;">${d.term || d.title || ''}:</strong>
               <div style="font-size:0.88rem;color:#334155;line-height:1.6;margin-top:0.35rem;">${d.def || d.definition || d.desc || d.content || ''}</div>
             </div>
           `).join('') : `
@@ -16892,12 +17002,12 @@ function renderScienceConceptsTab(subjKey, ch) {
           ${numericals.map((num, idx) => `
             <div class="math-topic-card math-accordion-card" style="margin-bottom:0.75rem;">
               <div class="math-acc-header" onclick="toggleMathAccordion(this)">
-                <span style="font-weight:700;color:#0f172a;">Numerical ${idx + 1}: ${(num.problem || num.q || '').slice(0, 75)}...</span>
+                <span style="font-weight:700;color:#0f172a;">Numerical ${idx + 1}: ${(num.statement || num.problem || num.q || num.question || '').slice(0, 75)}...</span>
                 <span class="math-acc-icon">+</span>
               </div>
               <div class="math-accordion-body" style="display:none;margin-top:0.75rem;border-top:1px solid #e2e8f0;padding-top:0.75rem;">
-                <div style="margin-bottom:0.5rem;font-size:0.9rem;line-height:1.6;">${num.problem || num.q}</div>
-                <div class="math-step-box" style="white-space:pre-line;line-height:1.75;">${num.solution || num.sol}</div>
+                <div style="margin-bottom:0.5rem;font-size:0.9rem;line-height:1.6;">${num.statement || num.problem || num.q || num.question || ''}</div>
+                <div class="math-step-box" style="white-space:pre-line;line-height:1.75;">${num.solution || num.sol || (num.answer ? ('Answer: ' + num.answer) : '')}</div>
               </div>
             </div>
           `).join('')}
@@ -16907,6 +17017,40 @@ function renderScienceConceptsTab(subjKey, ch) {
 }
 
 function renderScienceOrHumanitiesSummaryTab(subjKey, ch) {
+  if (subjKey === 'isl' || ch.urduSummary || ch.englishSummary || ch.pashtoSummary) {
+    return `
+      <div>
+        <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;">
+          <span style="font-weight:800;color:#1e40af;font-size:1.05rem;">📋 سبق کا خلاصہ و مرکزی خیال (Summary &amp; Key Points)</span>
+          <div style="font-size:0.88rem;color:#334155;margin-top:0.35rem;">${ch.title || ch.name || ''}</div>
+        </div>
+        ${ch.urduSummary ? `
+          <div style="margin-bottom:1.5rem;">
+            <h4 style="color:#0f172a;font-weight:800;font-size:1rem;margin-bottom:0.75rem;">🇵🇰 اردو خلاصہ (Urdu Summary):</h4>
+            <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:1.25rem;font-family:'Jameel Noori Nastaleeq',serif;direction:rtl;text-align:right;font-size:1.2rem;line-height:2.2;color:#1e293b;border-left:4px solid #16a34a;">
+              ${ch.urduSummary}
+            </div>
+          </div>
+        ` : ''}
+        ${ch.pashtoSummary ? `
+          <div style="margin-bottom:1.5rem;">
+            <h4 style="color:#0f172a;font-weight:800;font-size:1rem;margin-bottom:0.75rem;">🇦🇫 د پښتو لنډيز (Pashto Summary):</h4>
+            <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:1.25rem;font-family:'Pashto Koodak','Segoe UI',serif;direction:rtl;text-align:right;font-size:1.1rem;line-height:2.0;color:#92400e;background:#fefce8;border-left:4px solid #d97706;">
+              ${ch.pashtoSummary}
+            </div>
+          </div>
+        ` : ''}
+        ${ch.englishSummary ? `
+          <div style="margin-bottom:1.5rem;">
+            <h4 style="color:#0f172a;font-weight:800;font-size:1rem;margin-bottom:0.75rem;">🇬🇧 English Summary:</h4>
+            <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:1.25rem;font-size:0.95rem;line-height:1.8;color:#334155;border-left:4px solid #0284c7;">
+              ${ch.englishSummary}
+            </div>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }
   const formulas = ch.formulas || [];
   return `
     <div>
