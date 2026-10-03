@@ -3,7 +3,7 @@ const vm = require('vm');
 
 const path = require('path');
 const DIR = path.resolve(__dirname, '../js') + path.sep;
-const files = ['data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'english_data.js', 'math_data.js', 'pakstudy_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js'];
+const files = ['data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'english_data.js', 'math_data.js', 'pakstudy_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'math_10_data.js'];
 
 function makeEl(id) {
   const style = {};
@@ -85,6 +85,14 @@ run("switchIslTab('pages')", `switchIslTab('pages')`);
 run("selectIslChapter(14)", `selectIslChapter(14)`);
 run("openSubject cls10 isl", `openSubject("cls10","cls10-isl")`);
 run("selectIslChapter(17)", `selectIslChapter(17)`);
+run("openSubject cls10 math", `openSubject("cls10","cls10-math")`);
+run("selectMathChapter(0)", `selectMathChapter(0)`);
+run("switchMathTab('lesson')", `switchMathTab('lesson')`);
+run("switchMathTab('examples')", `switchMathTab('examples')`);
+run("switchMathTab('exercises')", `switchMathTab('exercises')`);
+run("switchMathTab('slos')", `switchMathTab('slos')`);
+run("switchMathTab('formulas')", `switchMathTab('formulas')`);
+run("selectMathChapter(12)", `selectMathChapter(12)`);
 run("showWordMeaning", `showWordMeaning(document.createElement("span"))`);
 run("REGRESSION openSubject cls9 eng", `openSubject("cls9","cls9-eng")`);
 run("REGRESSION selectEngChapter(2)", `selectEngChapter(2)`);

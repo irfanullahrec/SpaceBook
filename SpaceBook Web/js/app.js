@@ -812,6 +812,21 @@ function goToSubjects(classId) {
         topics: ["Cell Biology", "Biodiversity", "Bioenergetics", "Cell Cycle", "Nutrition", "Transport", "Practicals"]
       };
     }
+    if (s.id === "cls10-math" || (s.hasMath && (classId === "cls10" || state.selectedClass === "cls10"))) {
+      return {
+        headerColor: "#2563eb",
+        urduName: "ریاضی",
+        badgeText: "✓ 100% Solved Exercises & Theorems",
+        badgeClass: "badge-blue",
+        metric1Val: "13 Units",
+        metric1Lbl: "38+ Theory Sections",
+        metric2Val: "80+ Examples",
+        metric2Lbl: "Worked Step-by-Step",
+        metric3Val: "300+ Solved Qs",
+        metric3Lbl: "Exercises & Review Sets",
+        topics: ["Quadratic Equations", "Variations", "Partial Fractions", "Sets & Functions", "Basic Statistics", "Trigonometry", "Theorems"]
+      };
+    }
     if (s.id === "cls9-math" || s.hasMath) {
       return {
         headerColor: "#2563eb",
@@ -10356,8 +10371,11 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
 
   // 1. MATHEMATICS
   if (sid.includes("math")) {
-    if (typeof MATH_DATA !== 'undefined' && Array.isArray(MATH_DATA)) {
-      MATH_DATA.forEach((u, uIdx) => {
+    const mathDataset = (sid === 'cls10-math' || classId === 'cls10')
+      ? ((typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) ? MATH_10_DATA : ((typeof DATA !== 'undefined' && DATA.math10Chapters) ? DATA.math10Chapters : []))
+      : ((typeof MATH_DATA !== 'undefined' && Array.isArray(MATH_DATA)) ? MATH_DATA : ((typeof DATA !== 'undefined' && DATA.mathChapters) ? DATA.mathChapters : []));
+    if (Array.isArray(mathDataset)) {
+      mathDataset.forEach((u, uIdx) => {
         const chTitle = `Unit ${u.number || uIdx + 1}: ${u.title}`;
 
         // Topic-wise SLO questions
@@ -13117,7 +13135,12 @@ function filterTopicExCategory(topicId, category, btn) {
 
 
 
-function getMathChapterList() {
+function getMathChapterList(classId) {
+  const cid = classId || state.selectedClass;
+  if (cid === 'cls10') {
+    if (typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) return MATH_10_DATA;
+    if (typeof DATA !== 'undefined' && DATA.math10Chapters) return DATA.math10Chapters;
+  }
   if (typeof MATH_DATA !== 'undefined' && Array.isArray(MATH_DATA)) return MATH_DATA;
   if (typeof DATA !== 'undefined' && DATA.mathChapters) return DATA.mathChapters;
   if (typeof window !== 'undefined' && window.MATH_DATA) return window.MATH_DATA;
@@ -13132,9 +13155,11 @@ function openMathView(classId, subj) {
   state.activeMathEx = state.activeMathEx || '1.1';
   state.selectedClass = classId;
   setActiveNav('subjects');
-  const cls = DATA.classes.find(c => c.id === classId) || { name: 'Class 9' };
-  const chList = getMathChapterList();
-  const pdfFile = 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
+  const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls10' ? 'Class 10' : 'Class 9') };
+  const chList = getMathChapterList(classId);
+  const pdfFile = (classId === 'cls10')
+    ? 'file://DESKTOP-R2HQSAV/SpaceBook/10th Maths/PDF/10th Maths.pdf'
+    : 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
 
   const subNavBar = $('subpage-nav-bar');
   if (subNavBar) subNavBar.style.display = 'none';
@@ -13165,7 +13190,7 @@ function openMathView(classId, subj) {
           <button onclick="goToSubjects('${classId}')" class="math-sidebar-back-btn" title="Back to Subjects">←</button>
           <div class="math-sidebar-title-wrap">
             <span class="math-sidebar-title">CHAPTERS</span>
-            <span class="math-sidebar-sub">17 Complete Solved Units</span>
+            <span class="math-sidebar-sub">${chList.length} Complete Solved Units</span>
           </div>
         </div>
         <div class="math-ch-list">${chapBtns}</div>
@@ -13289,7 +13314,9 @@ function renderMathChapter(index) {
   const totalSLOs = ((comprehensiveSLOs.mcqs ? comprehensiveSLOs.mcqs.length : 0) +
                      (comprehensiveSLOs.shortQuestions ? comprehensiveSLOs.shortQuestions.length : 0) +
                      (comprehensiveSLOs.longQuestions ? comprehensiveSLOs.longQuestions.length : 0)) || 63;
-  const pdfFile = 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
+  const pdfFile = (state.selectedClass === 'cls10')
+    ? 'file://DESKTOP-R2HQSAV/SpaceBook/10th Maths/PDF/10th Maths.pdf'
+    : 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
 
   area.innerHTML = `
     <!-- Sleek Chapter Header Bar with Unit, Chapter Name, Urdu Meaning -->
@@ -14810,7 +14837,7 @@ function playParaTTSFromBtn(btn, lang) {
 }
 
 function getSubjectChapterList(subjKey, classId) {
-  if (subjKey === 'math') return getMathChapterList();
+  if (subjKey === 'math') return getMathChapterList(classId);
   if (subjKey === 'eng') {
     return (typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA))
       ? ENGLISH_DATA

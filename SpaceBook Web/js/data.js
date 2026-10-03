@@ -279,7 +279,8 @@ const DATA = {
         "id": "cls10-math",
         "name": "Mathematics",
         "emoji": "📐",
-        "chapters": 13
+        "chapters": 13,
+        "hasMath": true
       },
       {
         "id": "cls10-phy",

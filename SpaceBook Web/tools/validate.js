@@ -17,7 +17,8 @@ const DATA_FILES = [
   'data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js',
   'data_comp.js',
   'dictionary_data.js', 'urdu_data.js', 'english_data.js', 'math_data.js',
-  'pakstudy_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js'
+  'pakstudy_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js',
+  'math_10_data.js'
 ];
 
 let pass = 0, fail = 0;
@@ -84,6 +85,7 @@ if (D) {
   check('DATA.islamyatChapters = 15', D.islamyatChapters && D.islamyatChapters.length === 15, 'got ' + (D.islamyatChapters || []).length);
   check('DATA.islamyat10Chapters = 18', D.islamyat10Chapters && D.islamyat10Chapters.length === 18, 'got ' + (D.islamyat10Chapters || []).length);
   check('DATA.mathChapters present (from math_data.js)', Array.isArray(D.mathChapters) && D.mathChapters.length > 0, 'got ' + (D.mathChapters ? D.mathChapters.length : 0));
+  check('DATA.math10Chapters = 13 (from math_10_data.js)', (sb.MATH_10_DATA && sb.MATH_10_DATA.length === 13) || (D.math10Chapters && D.math10Chapters.length === 13), 'got ' + ((sb.MATH_10_DATA || D.math10Chapters || []).length));
   check('islamic subjects registered', ['cls9-isl', 'cls10-isl'].every(id => [].concat(D.subjects.cls9, D.subjects.cls10).some(s => s.id === id)));
   check('islamic books registered', ['b-cls9-isl', 'b-cls10-isl'].every(id => D.books.some(b => b.id === id)));
 } else {
