@@ -747,71 +747,88 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Chemistry",
-          "def": "Chemistry is a branch of physical science that deals with the composition, structure, and properties of matter, the changes occurring in matter, and the laws and principles governing these changes."
+          "def": "Chemistry is a branch of physical science that deals with the composition, structure, and properties of matter, the changes occurring in matter, and the laws and principles governing these changes.",
+          "definition": "Chemistry is a branch of physical science that deals with the composition, structure, and properties of matter, the changes occurring in matter, and the laws and principles governing these changes."
         },
         {
           "term": "Substance",
-          "def": "A piece of matter in pure form having fixed and constant composition and distinct characteristic properties (e.g., pure water, pure gold)."
+          "def": "A piece of matter in pure form having fixed and constant composition and distinct characteristic properties (e.g., pure water, pure gold).",
+          "definition": "A piece of matter in pure form having fixed and constant composition and distinct characteristic properties (e.g., pure water, pure gold)."
         },
         {
           "term": "Element",
-          "def": "A pure substance which cannot be split up into other simpler substances by any ordinary physical or chemical processes."
+          "def": "A pure substance which cannot be split up into other simpler substances by any ordinary physical or chemical processes.",
+          "definition": "A pure substance which cannot be split up into other simpler substances by any ordinary physical or chemical processes."
         },
         {
           "term": "Compound",
-          "def": "A pure substance consisting of two or more different types of elements chemically combined together in a fixed ratio by mass."
+          "def": "A pure substance consisting of two or more different types of elements chemically combined together in a fixed ratio by mass.",
+          "definition": "A pure substance consisting of two or more different types of elements chemically combined together in a fixed ratio by mass."
         },
         {
           "term": "Mixture",
-          "def": "A physical combination of two or more substances (elements, compounds, or both) in any variable ratio, where constituents retain their original properties."
+          "def": "A physical combination of two or more substances (elements, compounds, or both) in any variable ratio, where constituents retain their original properties.",
+          "definition": "A physical combination of two or more substances (elements, compounds, or both) in any variable ratio, where constituents retain their original properties."
         },
         {
           "term": "Atomic Number (Z)",
-          "def": "The total number of protons present in the nucleus of an atom of that element."
+          "def": "The total number of protons present in the nucleus of an atom of that element.",
+          "definition": "The total number of protons present in the nucleus of an atom of that element."
         },
         {
           "term": "Mass Number (A)",
-          "def": "The total sum of protons and neutrons (nucleons) present in the nucleus of an atom (A = Z + N)."
+          "def": "The total sum of protons and neutrons (nucleons) present in the nucleus of an atom (A = Z + N).",
+          "definition": "The total sum of protons and neutrons (nucleons) present in the nucleus of an atom (A = Z + N)."
         },
         {
           "term": "Relative Atomic Mass",
-          "def": "The mass of an atom of an element relative to the mass of 1/12th of a standard Carbon-12 atom."
+          "def": "The mass of an atom of an element relative to the mass of 1/12th of a standard Carbon-12 atom.",
+          "definition": "The mass of an atom of an element relative to the mass of 1/12th of a standard Carbon-12 atom."
         },
         {
           "term": "Atomic Mass Unit (amu)",
-          "def": "The mass equal to exactly 1/12th the mass of one Carbon-12 atom (1 amu = 1.67 × 10^-24 g)."
+          "def": "The mass equal to exactly 1/12th the mass of one Carbon-12 atom (1 amu = 1.67 × 10^-24 g).",
+          "definition": "The mass equal to exactly 1/12th the mass of one Carbon-12 atom (1 amu = 1.67 × 10^-24 g)."
         },
         {
           "term": "Empirical Formula",
-          "def": "The simplest chemical formula showing the smallest whole-number ratio of atoms of different elements in a compound."
+          "def": "The simplest chemical formula showing the smallest whole-number ratio of atoms of different elements in a compound.",
+          "definition": "The simplest chemical formula showing the smallest whole-number ratio of atoms of different elements in a compound."
         },
         {
           "term": "Molecular Formula",
-          "def": "The chemical formula expressing the actual number of atoms of each element present in one molecule of a compound."
+          "def": "The chemical formula expressing the actual number of atoms of each element present in one molecule of a compound.",
+          "definition": "The chemical formula expressing the actual number of atoms of each element present in one molecule of a compound."
         },
         {
           "term": "Formula Unit",
-          "def": "The smallest repeating stoichiometric unit of an ionic crystal lattice showing the simplest ratio between ions."
+          "def": "The smallest repeating stoichiometric unit of an ionic crystal lattice showing the simplest ratio between ions.",
+          "definition": "The smallest repeating stoichiometric unit of an ionic crystal lattice showing the simplest ratio between ions."
         },
         {
           "term": "Cation",
-          "def": "A positively charged chemical species formed when an atom loses one or more electrons from its valence shell."
+          "def": "A positively charged chemical species formed when an atom loses one or more electrons from its valence shell.",
+          "definition": "A positively charged chemical species formed when an atom loses one or more electrons from its valence shell."
         },
         {
           "term": "Anion",
-          "def": "A negatively charged chemical species formed when an atom gains one or more electrons into its valence shell."
+          "def": "A negatively charged chemical species formed when an atom gains one or more electrons into its valence shell.",
+          "definition": "A negatively charged chemical species formed when an atom gains one or more electrons into its valence shell."
         },
         {
           "term": "Free Radical",
-          "def": "An atom or group of atoms possessing an unpaired (odd) electron in its outer shell with no net electrical charge, formed by homolytic fission."
+          "def": "An atom or group of atoms possessing an unpaired (odd) electron in its outer shell with no net electrical charge, formed by homolytic fission.",
+          "definition": "An atom or group of atoms possessing an unpaired (odd) electron in its outer shell with no net electrical charge, formed by homolytic fission."
         },
         {
           "term": "Avogadro's Number (NA)",
-          "def": "The fundamental constant representing the number of particles in exactly one mole of any pure substance, equal to 6.023 × 10^23 particles."
+          "def": "The fundamental constant representing the number of particles in exactly one mole of any pure substance, equal to 6.023 × 10^23 particles.",
+          "definition": "The fundamental constant representing the number of particles in exactly one mole of any pure substance, equal to 6.023 × 10^23 particles."
         },
         {
           "term": "Mole (mol)",
-          "def": "The atomic mass, molecular mass, or formula mass of any chemical substance expressed in grams, containing 6.023 × 10^23 particles."
+          "def": "The atomic mass, molecular mass, or formula mass of any chemical substance expressed in grams, containing 6.023 × 10^23 particles.",
+          "definition": "The atomic mass, molecular mass, or formula mass of any chemical substance expressed in grams, containing 6.023 × 10^23 particles."
         }
       ],
       "differences": [
@@ -1075,7 +1092,275 @@ Object.assign(DATA, {
             ]
           ]
         }
-      ]
+      ],
+      "sloQuestions": {
+        "mcqs": [
+          {
+            "q": "Which branch of chemistry deals with the study of metabolic reactions of biomolecules in plants and animals?",
+            "opts": [
+              "Biochemistry",
+              "Organic Chemistry",
+              "Analytical Chemistry",
+              "Physical Chemistry"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "The industrial process for manufacturing ammonia from nitrogen and hydrogen is studied under:",
+            "opts": [
+              "Industrial Chemistry",
+              "Environmental Chemistry",
+              "Nuclear Chemistry",
+              "Biochemistry"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Which of the following is a pure substance?",
+            "opts": [
+              "Distilled Water",
+              "Air",
+              "Brass",
+              "Milk"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "The symbol 'K' for Potassium is derived from its Latin name:",
+            "opts": [
+              "Kalium",
+              "Natrium",
+              "Cuprum",
+              "Ferrum"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "An atom has 11 protons, 11 electrons, and 12 neutrons. Its mass number (A) is:",
+            "opts": [
+              "23",
+              "11",
+              "12",
+              "34"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Carbon-12 isotope is assigned a relative atomic mass of exactly:",
+            "opts": [
+              "12.000 amu",
+              "1.008 amu",
+              "16.000 amu",
+              "14.000 amu"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "The empirical formula of hydrogen peroxide (H2O2) is:",
+            "opts": [
+              "HO",
+              "H2O",
+              "H2O2",
+              "O2H"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "What is the formula mass of Sodium chloride (NaCl)? (Na=23, Cl=35.5)",
+            "opts": [
+              "58.5 amu",
+              "50 amu",
+              "71 amu",
+              "40 amu"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "When a sodium atom loses one electron, the resulting ion is called:",
+            "opts": [
+              "Sodium cation (Na+)",
+              "Sodium anion (Na-)",
+              "Molecular ion",
+              "Free radical"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "A free radical contains:",
+            "opts": [
+              "An unpaired odd electron",
+              "A net positive charge",
+              "A net negative charge",
+              "An electron pair"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Ozone (O3) gas is classified as a:",
+            "opts": [
+              "Homoatomic triatomic molecule",
+              "Heteroatomic triatomic molecule",
+              "Monoatomic molecule",
+              "Diatomic molecule"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "One mole of any substance contains exactly:",
+            "opts": [
+              "6.022 × 10^23 particles",
+              "3.011 × 10^23 particles",
+              "1.204 × 10^24 particles",
+              "9.11 × 10^-31 particles"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "The mass of one mole of glucose (C6H12O6) is:",
+            "opts": [
+              "180 grams",
+              "90 grams",
+              "360 grams",
+              "18 grams"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "How many moles are present in 88 grams of Carbon dioxide (CO2)? (Molar mass = 44 g/mol)",
+            "opts": [
+              "2.0 moles",
+              "1.0 mole",
+              "0.5 mole",
+              "4.0 moles"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "The number of molecules in 0.5 mole of nitrogen gas (N2) is:",
+            "opts": [
+              "3.011 × 10^23",
+              "6.022 × 10^23",
+              "1.204 × 10^24",
+              "1.505 × 10^23"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Which of the following is a heteroatomic diatomic molecule?",
+            "opts": [
+              "HCl",
+              "O2",
+              "H2",
+              "N2"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "The value of 'n' for glucose (Molecular Mass = 180 amu, Empirical Formula = CH2O) is:",
+            "opts": [
+              "6",
+              "1",
+              "2",
+              "12"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Which branch of chemistry deals with determining the qualitative and quantitative composition of matter?",
+            "opts": [
+              "Analytical Chemistry",
+              "Physical Chemistry",
+              "Inorganic Chemistry",
+              "Nuclear Chemistry"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Which of the following represents a cationic molecular ion?",
+            "opts": [
+              "CH4+",
+              "SO4 2-",
+              "Cl-",
+              "Na+"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "The number of neutrons in 13_6 C is:",
+            "opts": [
+              "7",
+              "6",
+              "13",
+              "1"
+            ],
+            "ans": 0
+          }
+        ],
+        "shortQuestions": [
+          {
+            "q": "1. Define Chemistry and state its significance in daily human life.",
+            "a": "Chemistry is the branch of natural science that deals with the study of the composition, structure, properties, and reactions of matter, along with the laws governing these transformations. It provides fertilizers and pesticides for food, medicines for health, polymers and synthetic fibers for clothing, and clean energy sources."
+          },
+          {
+            "q": "2. Differentiate between qualitative and quantitative analysis with examples.",
+            "a": "Qualitative Analysis identifies *what* chemical elements, ions, or functional groups are present in a sample (e.g., detecting presence of glucose in blood). Quantitative Analysis measures *how much* or the exact percentage/concentration of each component is present (e.g., determining fasting blood glucose is 95 mg/dL)."
+          },
+          {
+            "q": "3. What is valency? How is the valency of variable-valence elements like iron (Fe) written?",
+            "a": "Valency is the combining capacity of an element with other elements. Iron exhibits variable valency: Fe2+ is ferrous (valency 2) as in FeCl2 (Iron(II) chloride), and Fe3+ is ferric (valency 3) as in FeCl3 (Iron(III) chloride)."
+          },
+          {
+            "q": "4. Why is air considered a mixture rather than a compound?",
+            "a": "Air is a mixture because: (1) Its constituent gases (N2, O2, CO2, Ar) are physically mixed in variable proportions; (2) Each gas retains its chemical properties (e.g., O2 still supports combustion); (3) It can be separated by fractional distillation of liquid air; (4) No energy is evolved or absorbed during its formation."
+          },
+          {
+            "q": "5. Differentiate between an atom and an ion.",
+            "a": "An atom is the smallest electrically neutral unit of an element having equal numbers of protons and electrons with an incomplete valence shell (except noble gases). An ion is an electrically charged species formed by loss or gain of electrons, having unequal protons and electrons and usually a stable noble gas octet."
+          },
+          {
+            "q": "6. What is a free radical and why is it so chemically reactive?",
+            "a": "A free radical is an atom or group of atoms carrying an unpaired (odd) electron (e.g., Cl•, CH3•). Because of the unpaired electron, it has a strong tendency to complete its electron pair, making it extremely unstable and reactive."
+          },
+          {
+            "q": "7. How do homoatomic molecules differ from heteroatomic molecules? Give two examples each.",
+            "a": "Homoatomic molecules are formed from identical atoms of the same element (e.g., H2, O3, P4). Heteroatomic molecules are formed from atoms of different elements chemically bonded (e.g., H2O, NH3, CO2)."
+          },
+          {
+            "q": "8. Define the Mole. Why is it called a chemist's counting unit?",
+            "a": "A mole is the amount of a substance that contains exactly 6.022 × 10^23 elementary entities. It connects the microscopic atomic world (amu) to macroscopic measurable quantities (grams) in the laboratory."
+          },
+          {
+            "q": "9. Calculate the formula mass of Potassium chlorate (KClO3). (K=39, Cl=35.5, O=16)",
+            "a": "Formula Mass = 1(39) + 1(35.5) + 3(16) = 39 + 35.5 + 48 = 122.5 amu."
+          },
+          {
+            "q": "10. Convert 54 grams of water into number of moles and molecules.",
+            "a": "Moles n = 54 g / 18 g/mol = 3.0 moles. Number of molecules N = 3.0 × 6.022 × 10^23 = 1.8066 × 10^24 molecules."
+          }
+        ],
+        "longQuestions": [
+          {
+            "q": "1. Comprehensive Account of the 8 Branches of Chemistry with Industrial & Real-World Applications.",
+            "a": "Detailed discussion covering: (1) Physical Chemistry (kinetics, thermodynamics, equilibrium); (2) Organic Chemistry (petrochemicals, pharmaceuticals, polymers); (3) Inorganic Chemistry (metallurgy, ceramics, cement); (4) Biochemistry (proteins, DNA/RNA, medicine); (5) Industrial Chemistry (H2SO4, NH3, NaOH production); (6) Nuclear Chemistry (radiotherapy, nuclear energy, carbon dating); (7) Environmental Chemistry (pollution abatement, ozone preservation); (8) Analytical Chemistry (forensic analysis, spectroscopy, titrimetry)."
+          },
+          {
+            "q": "2. Detailed Classification of Matter: Elements, Compounds, Homogeneous & Heterogeneous Mixtures with 8 Distinct Differences.",
+            "a": "Comprehensive breakdown with complete classification flowcharts, properties of pure substances vs mixtures, and full 8-point comparison table between compounds and mixtures."
+          },
+          {
+            "q": "3. The Chemical Species Master Guide: Formation, Characteristics, and Contrasts between Atoms, Cations, Anions, Molecular Ions, and Free Radicals.",
+            "a": "Exhaustive chemical equations for ion formation, homolytic vs heterolytic fission, orbital representations, stability considerations, and comparison tables."
+          },
+          {
+            "q": "4. Stoichiometry Masterclass: The Relationship between Mass, Moles, Molar Mass, Avogadro's Number, and Particle Counts with 5 Solved Board Examples.",
+            "a": "Complete derivation of all 4 stoichiometric conversion formulas, dimensional analysis methods, and step-by-step model solutions."
+          },
+          {
+            "q": "5. Empirical vs Molecular Formula Determination: Theory, Steps of Calculation, and 3 Detailed Solved Numerical Examples.",
+            "a": "Mathematical rules for calculating percentage composition, atomic ratios, simplest integer ratios, empirical formula mass, factor 'n', and molecular formula."
+          }
+        ]
+      }
     },
     {
       "id": "chem-ch2",
@@ -1609,47 +1894,58 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Cathode Rays",
-          "def": "Stream of negatively charged particles (electrons) emitted from the cathode in a discharge tube at low pressure."
+          "def": "Stream of negatively charged particles (electrons) emitted from the cathode in a discharge tube at low pressure.",
+          "definition": "Stream of negatively charged particles (electrons) emitted from the cathode in a discharge tube at low pressure."
         },
         {
           "term": "Anode Rays (Canal Rays)",
-          "def": "Stream of positively charged particles discovered by Goldstein originating from the ionization of gas in a discharge tube."
+          "def": "Stream of positively charged particles discovered by Goldstein originating from the ionization of gas in a discharge tube.",
+          "definition": "Stream of positively charged particles discovered by Goldstein originating from the ionization of gas in a discharge tube."
         },
         {
           "term": "Plum Pudding Model",
-          "def": "J.J. Thomson's model describing the atom as a positively charged sphere embedded with negatively charged electrons like plums in a pudding."
+          "def": "J.J. Thomson's model describing the atom as a positively charged sphere embedded with negatively charged electrons like plums in a pudding.",
+          "definition": "J.J. Thomson's model describing the atom as a positively charged sphere embedded with negatively charged electrons like plums in a pudding."
         },
         {
           "term": "Rutherford's Atomic Model",
-          "def": "Nuclear planetary model stating that an atom consists of a tiny, dense, positively charged nucleus surrounded by orbiting electrons."
+          "def": "Nuclear planetary model stating that an atom consists of a tiny, dense, positively charged nucleus surrounded by orbiting electrons.",
+          "definition": "Nuclear planetary model stating that an atom consists of a tiny, dense, positively charged nucleus surrounded by orbiting electrons."
         },
         {
           "term": "Bohr's Atomic Theory",
-          "def": "Quantum atomic model stating electrons revolve only in fixed circular orbits (energy levels) with quantized angular momentum (mvr = nh/2π)."
+          "def": "Quantum atomic model stating electrons revolve only in fixed circular orbits (energy levels) with quantized angular momentum (mvr = nh/2π).",
+          "definition": "Quantum atomic model stating electrons revolve only in fixed circular orbits (energy levels) with quantized angular momentum (mvr = nh/2π)."
         },
         {
           "term": "Energy Level (Shell)",
-          "def": "A fixed circular path around the nucleus in which an electron revolves with a discrete energy value, designated as K, L, M, N..."
+          "def": "A fixed circular path around the nucleus in which an electron revolves with a discrete energy value, designated as K, L, M, N...",
+          "definition": "A fixed circular path around the nucleus in which an electron revolves with a discrete energy value, designated as K, L, M, N..."
         },
         {
           "term": "Subshell",
-          "def": "Subdivisions of principal energy levels denoted by s, p, d, f capable of holding a maximum of 2, 6, 10, and 14 electrons respectively."
+          "def": "Subdivisions of principal energy levels denoted by s, p, d, f capable of holding a maximum of 2, 6, 10, and 14 electrons respectively.",
+          "definition": "Subdivisions of principal energy levels denoted by s, p, d, f capable of holding a maximum of 2, 6, 10, and 14 electrons respectively."
         },
         {
           "term": "Electronic Configuration",
-          "def": "The systematic arrangement and distribution of electrons in various shells and subshells of an atom according to increasing energy levels."
+          "def": "The systematic arrangement and distribution of electrons in various shells and subshells of an atom according to increasing energy levels.",
+          "definition": "The systematic arrangement and distribution of electrons in various shells and subshells of an atom according to increasing energy levels."
         },
         {
           "term": "Isotopes",
-          "def": "Atoms of the same element having the same atomic number (Z) but different mass numbers (A) due to different numbers of neutrons."
+          "def": "Atoms of the same element having the same atomic number (Z) but different mass numbers (A) due to different numbers of neutrons.",
+          "definition": "Atoms of the same element having the same atomic number (Z) but different mass numbers (A) due to different numbers of neutrons."
         },
         {
           "term": "Radioactivity",
-          "def": "The spontaneous emission of penetrating ionizing radiation (alpha, beta, or gamma rays) by unstable atomic nuclei."
+          "def": "The spontaneous emission of penetrating ionizing radiation (alpha, beta, or gamma rays) by unstable atomic nuclei.",
+          "definition": "The spontaneous emission of penetrating ionizing radiation (alpha, beta, or gamma rays) by unstable atomic nuclei."
         },
         {
           "term": "Carbon Dating",
-          "def": "A radiometric technique using the radioactive decay of Carbon-14 (half-life 5730 years) to estimate the age of ancient organic archaeological samples."
+          "def": "A radiometric technique using the radioactive decay of Carbon-14 (half-life 5730 years) to estimate the age of ancient organic archaeological samples.",
+          "definition": "A radiometric technique using the radioactive decay of Carbon-14 (half-life 5730 years) to estimate the age of ancient organic archaeological samples."
         }
       ],
       "differences": [
@@ -1920,7 +2216,295 @@ Object.assign(DATA, {
             ]
           ]
         }
-      ]
+      ],
+      "sloQuestions": {
+        "mcqs": [
+          {
+            "q": "Which scientist proposed that an atom is an indivisible solid sphere in 1808?",
+            "opts": [
+              "(a) J.J. Thomson",
+              "(b) John Dalton",
+              "(c) Ernest Rutherford",
+              "(d) Neil Bohr"
+            ],
+            "ans": "(b) John Dalton",
+            "exp": "Dalton proposed 'A New System of Chemical Philosophy' in 1808 stating that atoms are indivisible solid spheres."
+          },
+          {
+            "q": "In Rutherford's alpha scattering experiment, the source of alpha particles was:",
+            "opts": [
+              "(a) Uranium metal",
+              "(b) Polonium metal",
+              "(c) Radium chloride",
+              "(d) Lead block"
+            ],
+            "ans": "(b) Polonium metal",
+            "exp": "Textbook Section 2.1.1: Rutherford used a radioactive source of Polonium metal placed in a lead cavity."
+          },
+          {
+            "q": "The thickness of gold foil used by Lord Rutherford was approximately:",
+            "opts": [
+              "(a) 0.004 cm",
+              "(b) 0.0004 cm",
+              "(c) 0.00004 cm",
+              "(d) 0.000004 cm"
+            ],
+            "ans": "(c) 0.00004 cm",
+            "exp": "Gold foil thickness = 0.00004 cm (4 × 10⁻⁵ cm or 400 nm)."
+          },
+          {
+            "q": "Rutherford's atomic model is also known as:",
+            "opts": [
+              "(a) Plum pudding model",
+              "(b) Planetary model",
+              "(c) Quantum mechanical model",
+              "(d) Solid ball model"
+            ],
+            "ans": "(b) Planetary model",
+            "exp": "Because electrons revolve around the nucleus just like planets revolve around the Sun."
+          },
+          {
+            "q": "The main failure of Rutherford's model was its inability to explain:",
+            "opts": [
+              "(a) Discovery of nucleus",
+              "(b) Charge on proton",
+              "(c) Stability of atom and line spectrum",
+              "(d) Presence of electrons"
+            ],
+            "ans": "(c) Stability of atom and line spectrum",
+            "exp": "Classical electrodynamics predicted continuous energy radiation leading to collapse and continuous spectra, conflicting with reality."
+          },
+          {
+            "q": "Neil Bohr presented his atomic theory in:",
+            "opts": [
+              "(a) 1897",
+              "(b) 1911",
+              "(c) 1913",
+              "(d) 1932"
+            ],
+            "ans": "(c) 1913",
+            "exp": "Bohr proposed his quantum model of hydrogen in 1913."
+          },
+          {
+            "q": "According to Bohr's theory, the angular momentum of an electron in an orbit is equal to:",
+            "opts": [
+              "(a) nh / π",
+              "(b) nh / 2π",
+              "(c) 2π / nh",
+              "(d) n²h / 2π"
+            ],
+            "ans": "(b) nh / 2π",
+            "exp": "Bohr's quantization condition: mvr = nh / (2π)."
+          },
+          {
+            "q": "The value of Planck's constant (h) is:",
+            "opts": [
+              "(a) 6.6262 × 10⁻³⁴ J·s",
+              "(b) 6.022 × 10²³ J·s",
+              "(c) 1.6022 × 10⁻¹⁹ J·s",
+              "(d) 9.11 × 10⁻³¹ J·s"
+            ],
+            "ans": "(a) 6.6262 × 10⁻³⁴ J·s",
+            "exp": "Planck's constant h = 6.6262 × 10⁻³⁴ J·s."
+          },
+          {
+            "q": "A proton is approximately how many times heavier than an electron?",
+            "opts": [
+              "(a) 100 times",
+              "(b) 1837 times",
+              "(c) 1842 times",
+              "(d) 2000 times"
+            ],
+            "ans": "(b) 1837 times",
+            "exp": "Proton mass (~1.00728 amu) is 1837 times the electron mass (0.0005486 amu)."
+          },
+          {
+            "q": "A neutron is approximately how many times heavier than an electron?",
+            "opts": [
+              "(a) 1837 times",
+              "(b) 1842 times",
+              "(c) 1840 times",
+              "(d) 1848 times"
+            ],
+            "ans": "(b) 1842 times",
+            "exp": "Neutron mass (~1.00867 amu) is 1842 times the electron mass."
+          },
+          {
+            "q": "The maximum number of electrons in N-shell (n = 4) is:",
+            "opts": [
+              "(a) 8",
+              "(b) 18",
+              "(c) 32",
+              "(d) 50"
+            ],
+            "ans": "(c) 32",
+            "exp": "2n² = 2(4)² = 2(16) = 32 electrons."
+          },
+          {
+            "q": "The spectroscopic term 'd' in d-subshell stands for:",
+            "opts": [
+              "(a) Sharp",
+              "(b) Principal",
+              "(c) Diffused",
+              "(d) Fundamental"
+            ],
+            "ans": "(c) Diffused",
+            "exp": "s = sharp, p = principal, d = diffused, f = fundamental."
+          },
+          {
+            "q": "The maximum capacity of a p-subshell is:",
+            "opts": [
+              "(a) 2 electrons",
+              "(b) 6 electrons",
+              "(c) 10 electrons",
+              "(d) 14 electrons"
+            ],
+            "ans": "(b) 6 electrons",
+            "exp": "p-subshell has 3 degenerate orbitals (px, py, pz), holding 2 × 3 = 6 electrons."
+          },
+          {
+            "q": "Which principle states that electrons fill lower-energy subshells before higher ones?",
+            "opts": [
+              "(a) Hund's Rule",
+              "(b) Pauli's Exclusion Principle",
+              "(c) Aufbau Principle",
+              "(d) Le Chatelier's Principle"
+            ],
+            "ans": "(c) Aufbau Principle",
+            "exp": "Aufbau principle governs ground state filling order from lowest to highest energy."
+          },
+          {
+            "q": "The electronic configuration of Potassium (Z = 19) is:",
+            "opts": [
+              "(a) 1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹",
+              "(b) 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹",
+              "(c) 1s² 2s² 2p⁶ 3s² 3p⁵ 4s²",
+              "(d) 1s² 2s² 2p⁶ 3s¹ 3p⁶ 4s²"
+            ],
+            "ans": "(b) 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹",
+            "exp": "4s fills before 3d because 4s has lower energy (n+l = 4+0 = 4) than 3d (3+2 = 5)."
+          },
+          {
+            "q": "The most abundant isotope of Hydrogen is:",
+            "opts": [
+              "(a) Deuterium",
+              "(b) Tritium",
+              "(c) Protium",
+              "(d) Heavy hydrogen"
+            ],
+            "ans": "(c) Protium",
+            "exp": "Protium (¹₁H) accounts for 99.985% of natural hydrogen."
+          },
+          {
+            "q": "The density of heavy water (D₂O) at 20°C is:",
+            "opts": [
+              "(a) 0.998 g/cm³",
+              "(b) 1.000 g/cm³",
+              "(c) 1.106 g/cm³",
+              "(d) 1.200 g/cm³"
+            ],
+            "ans": "(c) 1.106 g/cm³",
+            "exp": "Table 2.6: D₂O density is 1.106 g/cm³ compared to 0.998 g/cm³ for normal water."
+          },
+          {
+            "q": "The radioisotope used to diagnose and cure Goiter is:",
+            "opts": [
+              "(a) Cobalt-60",
+              "(b) Iodine-131",
+              "(c) Sodium-24",
+              "(d) Carbon-14"
+            ],
+            "ans": "(b) Iodine-131",
+            "exp": "I-131 concentrates in the thyroid gland and is used to treat goiter."
+          },
+          {
+            "q": "Americium-241 is commonly used in:",
+            "opts": [
+              "(a) Smoke detectors",
+              "(b) Cancer radiotherapy",
+              "(c) Carbon dating",
+              "(d) Nuclear power generation"
+            ],
+            "ans": "(a) Smoke detectors",
+            "exp": "Am-241 alpha emitter is standard in residential ionization smoke alarms."
+          },
+          {
+            "q": "The half-life of Carbon-14 used in archaeological radiocarbon dating is:",
+            "opts": [
+              "(a) 12.3 years",
+              "(b) 1000 years",
+              "(c) 5730 years",
+              "(d) 4.5 billion years"
+            ],
+            "ans": "(c) 5730 years",
+            "exp": "C-14 has a half-life of ~5,730 years, ideal for dating biological artifacts up to 50,000 years old."
+          }
+        ],
+        "shortQuestions": [
+          {
+            "q": "1. Why was Dalton's concept of indivisible atoms modified by later discoveries?",
+            "a": "Dalton postulated that atoms are indivisible solid balls. The discovery of subatomic particles (electrons by Thomson, protons by Goldstein/Rutherford, and neutrons by Chadwick) proved that atoms are divisible into smaller fundamental constituents."
+          },
+          {
+            "q": "2. State three major observations of Rutherford's gold foil experiment.",
+            "a": "1. 19,990 out of 20,000 α-particles passed straight without deflection.\n2. A few α-particles (~8) deflected through small angles.\n3. An extremely small number (~2) rebounded back at 180°."
+          },
+          {
+            "q": "3. Explain how Bohr's model explained the stability of an atom.",
+            "a": "Bohr stated that electrons revolve in stationary non-radiating orbits with fixed quantized energy. As long as an electron stays in an orbit, it neither radiates nor absorbs energy, preventing the electron from collapsing into the nucleus."
+          },
+          {
+            "q": "4. What is the difference between a continuous spectrum and a line spectrum?",
+            "a": "- **Continuous Spectrum:** A spectrum where colors or wavelengths merge into one another without distinct boundaries (like a rainbow).\n- **Line Spectrum:** A spectrum containing sharp, well-defined bright lines on a dark background corresponding to discrete electronic transitions in atoms."
+          },
+          {
+            "q": "5. Differentiate between a shell and a subshell.",
+            "a": "- **Shell (Orbit):** The main energy path (n = 1, 2, 3...) with capacity 2n².\n- **Subshell:** A division of a shell (s, p, d, f) representing orbitals with distinct shapes and angular momentum."
+          },
+          {
+            "q": "6. Why does 4s fill before 3d in potassium and calcium?",
+            "a": "According to the Aufbau principle and (n+l) rule, 4s (4+0=4) has lower energy than 3d (3+2=5). Electrons always fill lower-energy orbitals first."
+          },
+          {
+            "q": "7. Write the symbols and neutron counts of the three isotopes of Carbon.",
+            "a": "1. Carbon-12 (¹²₆C): Neutrons = 12 - 6 = 6\n2. Carbon-13 (¹³₆C): Neutrons = 13 - 6 = 7\n3. Carbon-14 (¹⁴₆C): Neutrons = 14 - 6 = 8"
+          },
+          {
+            "q": "8. What is heavy water and why does it have higher boiling and melting points than normal water?",
+            "a": "Heavy water (D₂O) contains Deuterium (²H) instead of Protium (¹H). Due to greater molecular mass (20.03 vs 18.02 amu) and stronger deuterium bonds, it requires more thermal energy to melt (3.82°C) and boil (101.42°C)."
+          },
+          {
+            "q": "9. Explain the medical use of Cobalt-60 (Co-60).",
+            "a": "Cobalt-60 is a powerful emitter of high-energy gamma (γ) rays. It is used in teletherapy to destroy cancerous tumors and malignant cells without surgical intervention."
+          },
+          {
+            "q": "10. What is Carbon Dating and what isotope is used in it?",
+            "a": "Carbon Dating is an archaeological method to determine the age of fossilized animal and plant remains by measuring the residual ratio of radioactive Carbon-14 (¹⁴C) to stable Carbon-12 (¹²C)."
+          }
+        ],
+        "longQuestions": [
+          {
+            "q": "1. Compare Rutherford's atomic model and Bohr's atomic theory in detail (Postulates, Basis, Energy concept, Spectrum, and Stability).",
+            "a": "**Comprehensive Comparison:**\n\n| Feature | Rutherford's Atomic Model (1911) | Bohr's Atomic Theory (1913) |\n|---|---|---|\n| **Theoretical Basis** | Classical mechanics & gravitational laws | Max Planck's Quantum Theory of radiation |\n| **Electron Movement** | Revolves like planets without fixed energy levels | Revolves in fixed quantized stationary orbits (energy levels) |\n| **Energy Emission** | Emits energy continuously during revolution | No energy emission in stationary orbit; emits/absorbs only upon transition ($\\Delta E = h\\nu$) |\n| **Atomic Stability** | Could not explain stability (predicted collapse) | Successfully explained stability through quantized non-radiating states |\n| **Spectrum Type** | Predicted a continuous spectrum | Correctly explained discrete atomic line spectrum |\n| **Angular Momentum** | No condition specified | Quantized: $mvr = \\frac{nh}{2\\pi}$ |"
+          },
+          {
+            "q": "2. Explain the Aufbau Principle and write the detailed electronic configurations for elements with atomic numbers 1 to 18.",
+            "a": "**1. The Aufbau Principle:**\n- *Aufbau* is German for 'building up'.\n- **Principle:** In the ground state of an atom, electrons occupy orbitals in order of increasing energy, filling the lowest available subshell first.\n- **Energy Order:** $1s < 2s < 2p < 3s < 3p < 4s < 3d\\dots$\n\n**2. Electronic Configurations (Z = 1 to 18):**\n- $H (1): 1s^1$\n- $He (2): 1s^2$\n- $Li (3): 1s^2 2s^1$\n- $Be (4): 1s^2 2s^2$\n- $B (5): 1s^2 2s^2 2p^1$\n- $C (6): 1s^2 2s^2 2p^2$\n- $N (7): 1s^2 2s^2 2p^3$\n- $O (8): 1s^2 2s^2 2p^4$\n- $F (9): 1s^2 2s^2 2p^5$\n- $Ne (10): 1s^2 2s^2 2p^6$\n- $Na (11): 1s^2 2s^2 2p^6 3s^1$\n- $Mg (12): 1s^2 2s^2 2p^6 3s^2$\n- $Al (13): 1s^2 2s^2 2p^6 3s^2 3p^1$\n- $Si (14): 1s^2 2s^2 2p^6 3s^2 3p^2$\n- $P (15): 1s^2 2s^2 2p^6 3s^2 3p^3$\n- $S (16): 1s^2 2s^2 2p^6 3s^2 3p^4$\n- $Cl (17): 1s^2 2s^2 2p^6 3s^2 3p^5$\n- $Ar (18): 1s^2 2s^2 2p^6 3s^2 3p^6$"
+          },
+          {
+            "q": "3. Describe the isotopes of Hydrogen and Uranium. Explain how isotopes find crucial applications in medicine, industry, agriculture, and dating.",
+            "a": "**1. Isotopes of Hydrogen:**\n- **Protium ($^1_1\\text{H}$):** $1p, 0n, 1e$ ($99.985\\%$). Standard light hydrogen.\n- **Deuterium ($^2_1\\text{H}$):** $1p, 1n, 1e$ ($0.015\\%$). Heavy hydrogen; forms $D_2O$.\n- **Tritium ($^3_1\\text{H}$):** $1p, 2n, 1e$ (Trace). Radioactive.\n\n**2. Isotopes of Uranium:**\n- **U-234 ($^{234}_{92}\\text{U}$):** $92p, 142n$ ($0.05\\%$).\n- **U-235 ($^{235}_{92}\\text{U}$):** $92p, 143n$ ($0.75\\%$). Fissile fuel for nuclear fission.\n- **U-238 ($^{238}_{92}\\text{U}$):** $92p, 146n$ ($99.245\\%$). Fertile material, rock dating.\n\n**3. Major Applications:**\n- **Medicine:** Iodine-131 cures thyroid goiter; Cobalt-60 destroys malignant tumors; Sodium-24 diagnoses circulatory blocks.\n- **Agriculture:** Phosphorus-32 and Carbon-14 trace fertilizer uptake and photosynthesis mechanisms.\n- **Industry:** Americium-241 operates smoke detectors; Californium-252 scans soil moisture and explosive detection.\n- **Dating:** Carbon-14 dates archaeological fossils up to 50,000 years; Uranium-238 measures geological rock ages."
+          },
+          {
+            "q": "4. Describe the discovery and properties of fundamental subatomic particles: electrons, protons, and neutrons.",
+            "a": "**1. Electron ($e^-$):**\n- Discovered by J.J. Thomson (1897) in cathode ray discharge tubes.\n- Charge = $-1.6022 \\times 10^{-19}\\text{ C}$ (Unit negative).\n- Mass = $9.11 \\times 10^{-31}\\text{ kg}$ ($0.0005486\\text{ amu}$).\n- Revolves in shells outside the nucleus.\n\n**2. Proton ($p^+$):**\n- Discovered by Goldstein / Rutherford in canal ray experiments.\n- Charge = $+1.6022 \\times 10^{-19}\\text{ C}$ (Unit positive).\n- Mass = $1.6726 \\times 10^{-27}\\text{ kg}$ ($1.00728\\text{ amu}$, 1837 times heavier than electron).\n- Located in the nucleus.\n\n**3. Neutron ($n^0$):**\n- Discovered by James Chadwick (1932) by bombarding Beryllium with $\\alpha$-particles ($^9_4\\text{Be} + ^4_2\\text{He} \\rightarrow ^{12}_6\\text{C} + ^1_0\\text{n}$).\n- Charge = $0$ (Neutral).\n- Mass = $1.6749 \\times 10^{-27}\\text{ kg}$ ($1.00867\\text{ amu}$, 1842 times heavier than electron).\n- Located in the nucleus."
+          },
+          {
+            "q": "5. Write detailed notes on: (a) Carbon Dating (b) Quantization of Energy and Angular Momentum (c) Heavy Water.",
+            "a": "**(a) Carbon Dating:**\n- Technique developed by Willard Libby using radioactive Carbon-14 ($t_{1/2} = 5730\\text{ years}$).\n- Living organisms maintain a constant $^{14}\\text{C}/^{12}\\text{C}$ ratio through atmospheric exchange.\n- After death, $^{14}\\text{C}$ decays steadily without replenishment. By measuring the remaining activity of $^{14}\\text{C}$, the archaeological age of fossils, wood, and organic remains can be calculated.\n\n**(b) Quantization of Energy and Angular Momentum:**\n- In Bohr's theory, energy and angular momentum are restricted to discrete values called quanta.\n- **Energy:** Radiation emitted/absorbed equals discrete packet $\\Delta E = h\\nu$.\n- **Angular Momentum:** $mvr = \\frac{nh}{2\\pi}$ ($n = 1, 2, 3\\dots$). Electrons can only revolve in orbits where angular momentum is a whole-number multiple of $\\frac{h}{2\\pi}$.\n\n**(c) Heavy Water ($D_2O$):**\n- Compound of Deuterium ($^2_1H$) and Oxygen ($D_2O$, molar mass $20.03\\text{ g/mol}$).\n- Denser than normal water ($1.106\\text{ g/cm}^3$), freezes at $3.82^\\circ\\text{C}$ and boils at $101.42^\\circ\\text{C}$.\n- Widely used as a neutron moderator and coolant in CANDU nuclear reactors."
+          }
+        ]
+      }
     },
     {
       "id": "chem-ch3",
@@ -2407,59 +2991,73 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Modern Periodic Law",
-          "def": "The physical and chemical properties of elements are periodic functions of their atomic numbers (Z)."
+          "def": "The physical and chemical properties of elements are periodic functions of their atomic numbers (Z).",
+          "definition": "The physical and chemical properties of elements are periodic functions of their atomic numbers (Z)."
         },
         {
           "term": "Period",
-          "def": "A horizontal row of elements in the periodic table; there are 7 periods in total."
+          "def": "A horizontal row of elements in the periodic table; there are 7 periods in total.",
+          "definition": "A horizontal row of elements in the periodic table; there are 7 periods in total."
         },
         {
           "term": "Group (Family)",
-          "def": "A vertical column of elements in the periodic table having the same number of valence electrons and similar chemical properties."
+          "def": "A vertical column of elements in the periodic table having the same number of valence electrons and similar chemical properties.",
+          "definition": "A vertical column of elements in the periodic table having the same number of valence electrons and similar chemical properties."
         },
         {
           "term": "Representative Elements",
-          "def": "All elements belonging to the s-block and p-block (Groups IA to VIIIA) of the periodic table."
+          "def": "All elements belonging to the s-block and p-block (Groups IA to VIIIA) of the periodic table.",
+          "definition": "All elements belonging to the s-block and p-block (Groups IA to VIIIA) of the periodic table."
         },
         {
           "term": "Transition Elements",
-          "def": "Elements belonging to the d-block showing variable oxidation states and forming colored compounds."
+          "def": "Elements belonging to the d-block showing variable oxidation states and forming colored compounds.",
+          "definition": "Elements belonging to the d-block showing variable oxidation states and forming colored compounds."
         },
         {
           "term": "Lanthanides (Rare Earths)",
-          "def": "The series of 14 elements (58Ce to 71Lu) following Lanthanum placed in the 4f block at the bottom of the table."
+          "def": "The series of 14 elements (58Ce to 71Lu) following Lanthanum placed in the 4f block at the bottom of the table.",
+          "definition": "The series of 14 elements (58Ce to 71Lu) following Lanthanum placed in the 4f block at the bottom of the table."
         },
         {
           "term": "Actinides",
-          "def": "The series of 14 radioactive elements (90Th to 103Lr) following Actinium placed in the 5f block at the bottom of the table."
+          "def": "The series of 14 radioactive elements (90Th to 103Lr) following Actinium placed in the 5f block at the bottom of the table.",
+          "definition": "The series of 14 radioactive elements (90Th to 103Lr) following Actinium placed in the 5f block at the bottom of the table."
         },
         {
           "term": "Periodicity of Properties",
-          "def": "The repetition of similar physical and chemical properties of elements at regular intervals when arranged by increasing atomic number."
+          "def": "The repetition of similar physical and chemical properties of elements at regular intervals when arranged by increasing atomic number.",
+          "definition": "The repetition of similar physical and chemical properties of elements at regular intervals when arranged by increasing atomic number."
         },
         {
           "term": "Atomic Radius",
-          "def": "The distance between the center of the nucleus and the outermost valence electron shell of an atom."
+          "def": "The distance between the center of the nucleus and the outermost valence electron shell of an atom.",
+          "definition": "The distance between the center of the nucleus and the outermost valence electron shell of an atom."
         },
         {
           "term": "Covalent Radius",
-          "def": "Half the distance between the nuclei of two identical atoms joined by a single covalent bond (r = d / 2)."
+          "def": "Half the distance between the nuclei of two identical atoms joined by a single covalent bond (r = d / 2).",
+          "definition": "Half the distance between the nuclei of two identical atoms joined by a single covalent bond (r = d / 2)."
         },
         {
           "term": "Ionization Energy (IE)",
-          "def": "The minimum energy required to remove the most loosely bound valence electron from an isolated gaseous atom in its ground state."
+          "def": "The minimum energy required to remove the most loosely bound valence electron from an isolated gaseous atom in its ground state.",
+          "definition": "The minimum energy required to remove the most loosely bound valence electron from an isolated gaseous atom in its ground state."
         },
         {
           "term": "Electron Affinity (EA)",
-          "def": "The amount of energy released when an electron is added to the outermost valence shell of an isolated neutral gaseous atom to form an anion."
+          "def": "The amount of energy released when an electron is added to the outermost valence shell of an isolated neutral gaseous atom to form an anion.",
+          "definition": "The amount of energy released when an electron is added to the outermost valence shell of an isolated neutral gaseous atom to form an anion."
         },
         {
           "term": "Shielding Effect",
-          "def": "The screening of valence electrons from the attractive positive pull of the nucleus by inner intervening core electrons."
+          "def": "The screening of valence electrons from the attractive positive pull of the nucleus by inner intervening core electrons.",
+          "definition": "The screening of valence electrons from the attractive positive pull of the nucleus by inner intervening core electrons."
         },
         {
           "term": "Electronegativity (EN)",
-          "def": "The relative tendency of an atom in a molecule to attract the shared pair of electrons towards itself in a covalent bond."
+          "def": "The relative tendency of an atom in a molecule to attract the shared pair of electrons towards itself in a covalent bond.",
+          "definition": "The relative tendency of an atom in a molecule to attract the shared pair of electrons towards itself in a covalent bond."
         }
       ],
       "differences": [
@@ -2639,7 +3237,295 @@ Object.assign(DATA, {
             ]
           ]
         }
-      ]
+      ],
+      "sloQuestions": {
+        "mcqs": [
+          {
+            "q": "Who proposed the Law of Octaves in 1864?",
+            "opts": [
+              "(a) Dobereiner",
+              "(b) John Newlands",
+              "(c) Dmitri Mendeleev",
+              "(d) Henry Moseley"
+            ],
+            "ans": "(b) John Newlands",
+            "exp": "Newlands arranged elements in order of atomic mass and found every 8th element had similar properties."
+          },
+          {
+            "q": "In Mendeleev's periodic table, elements were arranged according to increasing:",
+            "opts": [
+              "(a) Atomic number",
+              "(b) Atomic mass",
+              "(c) Density",
+              "(d) Electronegativity"
+            ],
+            "ans": "(b) Atomic mass",
+            "exp": "Mendeleev based his periodic law on atomic mass."
+          },
+          {
+            "q": "The fundamental property of elements discovered by Moseley is:",
+            "opts": [
+              "(a) Atomic mass",
+              "(b) Atomic number",
+              "(c) Mass number",
+              "(d) Density"
+            ],
+            "ans": "(b) Atomic number",
+            "exp": "Moseley showed that atomic number Z is the true fundamental periodic property."
+          },
+          {
+            "q": "The total number of periods in the modern periodic table is:",
+            "opts": [
+              "(a) 8",
+              "(b) 7",
+              "(c) 18",
+              "(d) 16"
+            ],
+            "ans": "(b) 7",
+            "exp": "There are 7 horizontal periods in the modern periodic table."
+          },
+          {
+            "q": "The total number of groups in the modern IUPAC periodic table is:",
+            "opts": [
+              "(a) 8",
+              "(b) 16",
+              "(c) 18",
+              "(d) 32"
+            ],
+            "ans": "(c) 18",
+            "exp": "There are 18 vertical columns (groups) in the IUPAC periodic table."
+          },
+          {
+            "q": "Elements in Group 1 of the periodic table are known as:",
+            "opts": [
+              "(a) Alkaline earth metals",
+              "(b) Alkali metals",
+              "(c) Halogens",
+              "(d) Transition metals"
+            ],
+            "ans": "(b) Alkali metals",
+            "exp": "Group 1 elements (Li, Na, K, Rb, Cs, Fr) are alkali metals."
+          },
+          {
+            "q": "Noble gases belong to which group of the periodic table?",
+            "opts": [
+              "(a) Group 1",
+              "(b) Group 2",
+              "(c) Group 17",
+              "(d) Group 18"
+            ],
+            "ans": "(d) Group 18",
+            "exp": "Group 18 (VIIIA) contains chemically inert noble gases with complete valence octets."
+          },
+          {
+            "q": "Transition elements are located in which block of the periodic table?",
+            "opts": [
+              "(a) s-block",
+              "(b) p-block",
+              "(c) d-block",
+              "(d) f-block"
+            ],
+            "ans": "(c) d-block",
+            "exp": "Groups 3 to 12 form the d-block outer transition metals."
+          },
+          {
+            "q": "Lanthanides and Actinides are located in the:",
+            "opts": [
+              "(a) s-block",
+              "(b) p-block",
+              "(c) d-block",
+              "(d) f-block"
+            ],
+            "ans": "(d) f-block",
+            "exp": "Lanthanides (4f) and Actinides (5f) are inner transition elements in the f-block."
+          },
+          {
+            "q": "Across a period from left to right, atomic radius:",
+            "opts": [
+              "(a) Increases",
+              "(b) Decreases",
+              "(c) Remains constant",
+              "(d) First increases then decreases"
+            ],
+            "ans": "(b) Decreases",
+            "exp": "Atomic radius contracts across a period due to increasing effective nuclear charge."
+          },
+          {
+            "q": "Down a group from top to bottom, atomic radius:",
+            "opts": [
+              "(a) Increases",
+              "(b) Decreases",
+              "(c) Remains constant",
+              "(d) Becomes zero"
+            ],
+            "ans": "(a) Increases",
+            "exp": "Atomic radius expands down a group because new shells are added and shielding increases."
+          },
+          {
+            "q": "The shielding effect down a group:",
+            "opts": [
+              "(a) Decreases",
+              "(b) Increases",
+              "(c) Remains unchanged",
+              "(d) Fluctuate randomly"
+            ],
+            "ans": "(b) Increases",
+            "exp": "Successive inner electron shells enhance shielding down a group."
+          },
+          {
+            "q": "The element with the lowest first ionization energy in Group 1 is:",
+            "opts": [
+              "(a) Lithium",
+              "(b) Sodium",
+              "(c) Potassium",
+              "(d) Cesium"
+            ],
+            "ans": "(d) Cesium",
+            "exp": "Cesium has the largest atomic size in Group 1, holding its valence electron least tightly."
+          },
+          {
+            "q": "The unit of ionization energy is:",
+            "opts": [
+              "(a) kJ/mol",
+              "(b) g/mol",
+              "(c) amu",
+              "(d) Newton"
+            ],
+            "ans": "(a) kJ/mol",
+            "exp": "Ionization energy and electron affinity are expressed in kilojoules per mole (kJ/mol)."
+          },
+          {
+            "q": "Which element has the highest electron affinity in the periodic table?",
+            "opts": [
+              "(a) Fluorine",
+              "(b) Chlorine",
+              "(c) Bromine",
+              "(d) Iodine"
+            ],
+            "ans": "(b) Chlorine",
+            "exp": "Chlorine has EA = -349 kJ/mol, the highest negative electron affinity."
+          },
+          {
+            "q": "The electronegativity of Fluorine on Pauling's scale is:",
+            "opts": [
+              "(a) 3.5",
+              "(b) 4.0",
+              "(c) 3.0",
+              "(d) 2.5"
+            ],
+            "ans": "(b) 4.0",
+            "exp": "Fluorine is the standard for maximum electronegativity at 4.0."
+          },
+          {
+            "q": "The 6th period contains how many elements?",
+            "opts": [
+              "(a) 8",
+              "(b) 18",
+              "(c) 32",
+              "(d) 50"
+            ],
+            "ans": "(c) 32",
+            "exp": "The 6th period is a very long period with 32 elements (including 14 lanthanides)."
+          },
+          {
+            "q": "The letter that does NOT appear in the Periodic Table is:",
+            "opts": [
+              "(a) Q",
+              "(b) J",
+              "(c) X",
+              "(d) Z"
+            ],
+            "ans": "(b) J",
+            "exp": "Textbook Section 3.1: 'J' is the only letter not in the periodic table."
+          },
+          {
+            "q": "An element with electronic configuration 1s² 2s² 2p⁶ 3s² 3p⁴ belongs to:",
+            "opts": [
+              "(a) Period 2, Group 14",
+              "(b) Period 3, Group 16",
+              "(c) Period 3, Group 14",
+              "(d) Period 4, Group 16"
+            ],
+            "ans": "(b) Period 3, Group 16",
+            "exp": "n=3 (Period 3), valence electrons = 2+4 = 6 (Group 16, Sulphur)."
+          },
+          {
+            "q": "Which group contains elements known as salt formers?",
+            "opts": [
+              "(a) Alkali metals",
+              "(b) Alkaline earth metals",
+              "(c) Halogens",
+              "(d) Chalcogens"
+            ],
+            "ans": "(c) Halogens",
+            "exp": "Halogen is derived from Greek words meaning 'salt former'."
+          }
+        ],
+        "shortQuestions": [
+          {
+            "q": "1. What were the main achievements of Dmitri Mendeleev?",
+            "a": "Mendeleev organized 63 elements systematically by atomic mass, left blank spaces predicting undiscovered elements (Sc, Ga, Ge) and corrected doubtful atomic masses."
+          },
+          {
+            "q": "2. Explain why atomic number is a superior organizing principle than atomic mass.",
+            "a": "Atomic number is unique to each element, increases by regular integers of 1, correlates directly with electronic configuration, and naturally resolves isotope positioning."
+          },
+          {
+            "q": "3. What are representative elements?",
+            "a": "Elements of the s-block (Groups 1-2) and p-block (Groups 13-18) where outermost s and p subshells are filling are called representative or normal elements."
+          },
+          {
+            "q": "4. Why is the 1st period called the shortest period?",
+            "a": "Because it contains only 2 elements (Hydrogen and Helium) filling only the 1s subshell."
+          },
+          {
+            "q": "5. Why do elements in the same group possess similar chemical reactivity?",
+            "a": "Because chemical reactions involve valence electrons, and all elements in a given group have the same number of valence electrons and identical outer configuration."
+          },
+          {
+            "q": "6. Define Covalent Radius with an example.",
+            "a": "Half the distance between the nuclei of two identical bonded atoms. For Cl₂, internuclear distance is 1.98 Å, so covalent radius is 0.99 Å (99 pm)."
+          },
+          {
+            "q": "7. Why does electron affinity decrease down a group?",
+            "a": "Because the addition of new shells increases atomic radius and inner shielding, weakening the positive nuclear pull on an incoming electron."
+          },
+          {
+            "q": "8. What is the difference between Ionization Energy and Electronegativity?",
+            "a": "- **Ionization Energy:** Energy required to remove an electron from an isolated gaseous atom.\n- **Electronegativity:** Relative tendency of a bonded atom to attract shared electron pairs in a chemical molecule."
+          },
+          {
+            "q": "9. Why are noble gases chemically unreactive?",
+            "a": "Noble gases have completely filled valence shells (duplet in He: 1s²; octet in others: ns² np⁶), giving them maximum electronic stability."
+          },
+          {
+            "q": "10. Which period contains the Lanthanide series and where are they placed?",
+            "a": "Lanthanides (14 elements from Ce-58 to Lu-71) belong to Period 6 and are placed at the bottom of the table to preserve a compact structure."
+          }
+        ],
+        "longQuestions": [
+          {
+            "q": "1. Trace the historical evolution of the periodic table from Dobereiner to Henry Moseley.",
+            "a": "**Historical Evolution:**\n1. **Dobereiner's Triads (1829):** Grouped elements in sets of 3 where middle mass was average of outer two.\n2. **Newlands' Law of Octaves (1864):** Ordered by mass; properties repeated every 8th element.\n3. **Mendeleev's Periodic Table (1869):** Created first full periodic table based on atomic mass; predicted Ga, Ge, Sc.\n4. **Moseley's Modern Law (1913):** Used X-rays to establish atomic number as the true organizing criterion."
+          },
+          {
+            "q": "2. Explain the periodic variation of Atomic Radius across periods and down groups with scientific rationale.",
+            "a": "**1. Definition:** Half the internuclear distance between bonded identical atoms ($r = d/2$).\n\n**2. Trend Across Periods (Decreases):** Nuclear charge ($Z$) increases while electrons enter the same shell ($n$ constant). Higher effective nuclear charge ($Z_{eff}$) draws valence electrons inward.\n\n**3. Trend Down Groups (Increases):** Each step down adds a new shell ($n$ increases) and expands inner shielding, pushing the valence cloud outwards."
+          },
+          {
+            "q": "3. Define Ionization Energy. Explain factors that influence it and its variation across periods and groups.",
+            "a": "**1. Definition:** $\\text{M}_{(g)} + IE_1 \\rightarrow \\text{M}^+_{(g)} + e^-$.\n\n**2. Influencing Factors:**\n- Atomic Radius ($IE \\propto 1/r$)\n- Nuclear Charge ($IE \\propto Z_{eff}$)\n- Shielding Effect ($IE \\propto 1/\\text{Shielding}$)\n\n**3. Trends:** Increases across periods (stronger nuclear pull, smaller radius); decreases down groups (larger radius, greater shielding)."
+          },
+          {
+            "q": "4. Compare Electron Affinity and Electronegativity. Discuss their trends and significance in chemical bonding.",
+            "a": "**1. Electron Affinity ($EA$):** Quantitative energy released when an isolated atom gains an electron ($\text{kJ/mol}$). Trend: increases across period, decreases down group.\n\n**2. Electronegativity ($EN$):** Qualitative relative pull on shared bonding electrons (dimensionless Pauling scale 0.7 to 4.0).\n\n**3. Bonding Significance:** The electronegativity difference ($\\Delta EN$) determines whether a chemical bond is nonpolar covalent ($\\Delta EN < 0.4$), polar covalent ($0.4 < \\Delta EN < 1.7$), or ionic ($\\Delta EN > 1.7$)."
+          },
+          {
+            "q": "5. Describe the classification of the periodic table into s, p, d, and f blocks with their general characteristics.",
+            "a": "**1. s-block (Groups 1-2):** Reactive metals, low ionization energy, form $+1$ and $+2$ cations ($ns^{1-2}$).\n\n**2. p-block (Groups 13-18):** Contains metals, metalloids, non-metals, and noble gases ($ns^2 np^{1-6}$).\n\n**3. d-block (Groups 3-12):** Outer transition metals with variable oxidation states, coloured compounds, and catalytic properties ($(n-1)d^{1-10} ns^{1-2}$).\n\n**4. f-block (Lanthanides & Actinides):** Inner transition elements with high density, radioactivity (actinides), and complex spectra ($(n-2)f^{1-14} (n-1)d^{0-1} ns^2$)."
+          }
+        ]
+      }
     },
     {
       "id": "chem-ch4",
@@ -3311,51 +4197,63 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Chemical Bond",
-          "def": "The attractive force which holds the atoms or ions together to form a molecule or compound."
+          "def": "The attractive force which holds the atoms or ions together to form a molecule or compound.",
+          "definition": "The attractive force which holds the atoms or ions together to form a molecule or compound."
         },
         {
           "term": "Octet Rule (Rule of Eight)",
-          "def": "The tendency of atoms to attain eight electrons in their outermost valence shell in order to achieve maximum chemical stability."
+          "def": "The tendency of atoms to attain eight electrons in their outermost valence shell in order to achieve maximum chemical stability.",
+          "definition": "The tendency of atoms to attain eight electrons in their outermost valence shell in order to achieve maximum chemical stability."
         },
         {
           "term": "Duplet Rule (Rule of Two)",
-          "def": "The tendency of atoms (such as H, Li, Be) to attain two electrons in their valence shell, achieving the stable electronic configuration of Helium."
+          "def": "The tendency of atoms (such as H, Li, Be) to attain two electrons in their valence shell, achieving the stable electronic configuration of Helium.",
+          "definition": "The tendency of atoms (such as H, Li, Be) to attain two electrons in their valence shell, achieving the stable electronic configuration of Helium."
         },
         {
           "term": "Ionic Bond (Electrovalent Bond)",
-          "def": "The chemical bond formed due to the complete transfer of one or more electrons from one atom (metal) to another atom (non-metal)."
+          "def": "The chemical bond formed due to the complete transfer of one or more electrons from one atom (metal) to another atom (non-metal).",
+          "definition": "The chemical bond formed due to the complete transfer of one or more electrons from one atom (metal) to another atom (non-metal)."
         },
         {
           "term": "Covalent Bond",
-          "def": "The chemical bond formed by the mutual sharing of valence electrons between two atoms."
+          "def": "The chemical bond formed by the mutual sharing of valence electrons between two atoms.",
+          "definition": "The chemical bond formed by the mutual sharing of valence electrons between two atoms."
         },
         {
           "term": "Coordinate Covalent (Dative) Bond",
-          "def": "A type of covalent bond in which the shared pair of electrons is donated by only one of the bonded atoms (the donor) to an electron-deficient species (the acceptor)."
+          "def": "A type of covalent bond in which the shared pair of electrons is donated by only one of the bonded atoms (the donor) to an electron-deficient species (the acceptor).",
+          "definition": "A type of covalent bond in which the shared pair of electrons is donated by only one of the bonded atoms (the donor) to an electron-deficient species (the acceptor)."
         },
         {
           "term": "Polar Covalent Bond",
-          "def": "A covalent bond formed between atoms with different electronegativities (ΔEN > 0.5), causing unequal electron sharing and partial charges (δ+ and δ-)."
+          "def": "A covalent bond formed between atoms with different electronegativities (ΔEN > 0.5), causing unequal electron sharing and partial charges (δ+ and δ-).",
+          "definition": "A covalent bond formed between atoms with different electronegativities (ΔEN > 0.5), causing unequal electron sharing and partial charges (δ+ and δ-)."
         },
         {
           "term": "Non-Polar Covalent Bond",
-          "def": "A covalent bond formed between atoms of identical or similar electronegativities (ΔEN < 0.5) where electrons are shared equally."
+          "def": "A covalent bond formed between atoms of identical or similar electronegativities (ΔEN < 0.5) where electrons are shared equally.",
+          "definition": "A covalent bond formed between atoms of identical or similar electronegativities (ΔEN < 0.5) where electrons are shared equally."
         },
         {
           "term": "Metallic Bond",
-          "def": "The chemical bonding that results from the electrostatic attraction between positively charged metal ions and the surrounding sea of mobile delocalized electrons."
+          "def": "The chemical bonding that results from the electrostatic attraction between positively charged metal ions and the surrounding sea of mobile delocalized electrons.",
+          "definition": "The chemical bonding that results from the electrostatic attraction between positively charged metal ions and the surrounding sea of mobile delocalized electrons."
         },
         {
           "term": "Intermolecular Forces",
-          "def": "The attractive forces acting between separate molecules of a substance, collectively known as Van der Waals forces."
+          "def": "The attractive forces acting between separate molecules of a substance, collectively known as Van der Waals forces.",
+          "definition": "The attractive forces acting between separate molecules of a substance, collectively known as Van der Waals forces."
         },
         {
           "term": "Hydrogen Bond",
-          "def": "The attractive force between a highly electron-deficient hydrogen atom covalently bonded to F, O, or N in one molecule and a lone pair on a nearby F, O, or N atom."
+          "def": "The attractive force between a highly electron-deficient hydrogen atom covalently bonded to F, O, or N in one molecule and a lone pair on a nearby F, O, or N atom.",
+          "definition": "The attractive force between a highly electron-deficient hydrogen atom covalently bonded to F, O, or N in one molecule and a lone pair on a nearby F, O, or N atom."
         },
         {
           "term": "Malleability & Ductility",
-          "def": "Malleability is the property of metals to be hammered into thin sheets; Ductility is the property to be drawn into wires without breaking."
+          "def": "Malleability is the property of metals to be hammered into thin sheets; Ductility is the property to be drawn into wires without breaking.",
+          "definition": "Malleability is the property of metals to be hammered into thin sheets; Ductility is the property to be drawn into wires without breaking."
         }
       ],
       "differences": [
@@ -3623,7 +4521,295 @@ Object.assign(DATA, {
             ]
           ]
         }
-      ]
+      ],
+      "sloQuestions": {
+        "mcqs": [
+          {
+            "q": "The Duplet rule refers to having how many valence electrons?",
+            "opts": [
+              "(a) 2",
+              "(b) 4",
+              "(c) 6",
+              "(d) 8"
+            ],
+            "ans": "(a) 2",
+            "exp": "Duplet rule is the attainment of 2 valence electrons as seen in Helium."
+          },
+          {
+            "q": "Which type of bond is formed by complete transfer of electrons?",
+            "opts": [
+              "(a) Covalent bond",
+              "(b) Ionic bond",
+              "(c) Coordinate covalent bond",
+              "(d) Metallic bond"
+            ],
+            "ans": "(b) Ionic bond",
+            "exp": "Ionic bonding occurs via complete transfer of electrons from metal to non-metal."
+          },
+          {
+            "q": "The bond in Hydrogen gas (H₂) is:",
+            "opts": [
+              "(a) Single covalent",
+              "(b) Double covalent",
+              "(c) Triple covalent",
+              "(d) Ionic"
+            ],
+            "ans": "(a) Single covalent",
+            "exp": "H₂ shares 1 pair of electrons forming a single covalent bond."
+          },
+          {
+            "q": "The bond in Oxygen gas (O₂) is:",
+            "opts": [
+              "(a) Single covalent",
+              "(b) Double covalent",
+              "(c) Triple covalent",
+              "(d) Coordinate"
+            ],
+            "ans": "(b) Double covalent",
+            "exp": "O₂ shares 2 pairs of electrons forming a double covalent bond (O=O)."
+          },
+          {
+            "q": "A Nitrogen molecule (N₂) contains:",
+            "opts": [
+              "(a) 1 shared pair",
+              "(b) 2 shared pairs",
+              "(c) 3 shared pairs",
+              "(d) 4 shared pairs"
+            ],
+            "ans": "(c) 3 shared pairs",
+            "exp": "N₂ contains a triple covalent bond (N≡N) with 3 shared pairs (6 electrons)."
+          },
+          {
+            "q": "When ΔEN between two bonded atoms is greater than 1.7, the bond is:",
+            "opts": [
+              "(a) Pure covalent",
+              "(b) Polar covalent",
+              "(c) Predominantly ionic",
+              "(d) Metallic"
+            ],
+            "ans": "(c) Predominantly ionic",
+            "exp": "A ΔEN > 1.7 signifies predominantly ionic bonding character."
+          },
+          {
+            "q": "In Hydronium ion (H₃O⁺), the bond between H₂O and H⁺ is:",
+            "opts": [
+              "(a) Ionic",
+              "(b) Polar covalent",
+              "(c) Coordinate covalent",
+              "(d) Metallic"
+            ],
+            "ans": "(c) Coordinate covalent",
+            "exp": "Oxygen donates a lone pair to H⁺ forming a coordinate covalent bond."
+          },
+          {
+            "q": "Metallic luster is caused by:",
+            "opts": [
+              "(a) High density",
+              "(b) Reflection of light by mobile electrons",
+              "(c) Ionic lattice",
+              "(d) Heavy protons"
+            ],
+            "ans": "(b) Reflection of light by mobile electrons",
+            "exp": "Oscillating mobile surface electrons absorb and re-radiate incident light."
+          },
+          {
+            "q": "Hydrogen bonding occurs between Hydrogen and:",
+            "opts": [
+              "(a) F, O, N",
+              "(b) C, S, P",
+              "(c) Na, K, Li",
+              "(d) Cl, Br, I"
+            ],
+            "ans": "(a) F, O, N",
+            "exp": "H-bonding requires small, highly electronegative atoms: Fluorine, Oxygen, or Nitrogen."
+          },
+          {
+            "q": "The boiling point of water is 100°C primarily due to:",
+            "opts": [
+              "(a) Covalent bonds",
+              "(b) Ionic bonds",
+              "(c) Hydrogen bonding",
+              "(d) London forces"
+            ],
+            "ans": "(c) Hydrogen bonding",
+            "exp": "Extensive intermolecular hydrogen bonding elevates water's boiling point to 100°C."
+          },
+          {
+            "q": "Which of the following has a giant covalent network structure?",
+            "opts": [
+              "(a) NaCl",
+              "(b) Diamond",
+              "(c) Ice",
+              "(d) Copper"
+            ],
+            "ans": "(b) Diamond",
+            "exp": "Diamond consists of a continuous 3D network of covalent C-C bonds."
+          },
+          {
+            "q": "Ionic compounds are generally soluble in:",
+            "opts": [
+              "(a) Petrol",
+              "(b) Benzene",
+              "(c) Water",
+              "(d) Ether"
+            ],
+            "ans": "(c) Water",
+            "exp": "Water's high dielectric constant and polar dipoles hydrate and dissolve ionic compounds."
+          },
+          {
+            "q": "The shape of a water molecule is:",
+            "opts": [
+              "(a) Linear",
+              "(b) Bent / V-shaped",
+              "(c) Trigonal planar",
+              "(d) Octahedral"
+            ],
+            "ans": "(b) Bent / V-shaped",
+            "exp": "Water has a bent angular geometry with a 104.5° bond angle due to 2 lone pairs."
+          },
+          {
+            "q": "Which of the following compounds has the highest melting point?",
+            "opts": [
+              "(a) CH₄",
+              "(b) H₂O",
+              "(c) NaCl",
+              "(d) CCl₄"
+            ],
+            "ans": "(c) NaCl",
+            "exp": "NaCl is an ionic compound with a high melting point of 801°C."
+          },
+          {
+            "q": "Malleability is the property of being:",
+            "opts": [
+              "(a) Drawn into wires",
+              "(b) Beaten into thin sheets",
+              "(c) Dissolved in water",
+              "(d) Vaporized easily"
+            ],
+            "ans": "(b) Beaten into thin sheets",
+            "exp": "Malleability is the mechanical property of being hammered or rolled into thin sheets."
+          },
+          {
+            "q": "In Ammonia (NH₃), how many lone pairs exist on the Nitrogen atom?",
+            "opts": [
+              "(a) 0",
+              "(b) 1",
+              "(c) 2",
+              "(d) 3"
+            ],
+            "ans": "(b) 1",
+            "exp": "Nitrogen has 5 valence electrons: 3 are shared with Hydrogens, leaving 1 non-bonding lone pair."
+          },
+          {
+            "q": "Which molecule contains a triple covalent bond?",
+            "opts": [
+              "(a) O₂",
+              "(b) Cl₂",
+              "(c) N₂",
+              "(d) CH₄"
+            ],
+            "ans": "(c) N₂",
+            "exp": "N₂ contains a triple bond (N≡N) with 3 shared electron pairs."
+          },
+          {
+            "q": "The attractive forces holding positive metal ions in a sea of electrons is:",
+            "opts": [
+              "(a) Covalent bond",
+              "(b) Ionic bond",
+              "(c) Metallic bond",
+              "(d) Hydrogen bond"
+            ],
+            "ans": "(c) Metallic bond",
+            "exp": "Metallic bonding is defined by the electron sea model."
+          },
+          {
+            "q": "Which bond is present in NH₄Cl?",
+            "opts": [
+              "(a) Ionic and Covalent only",
+              "(b) Covalent and Coordinate only",
+              "(c) Ionic, Covalent, and Coordinate covalent",
+              "(d) Metallic only"
+            ],
+            "ans": "(c) Ionic, Covalent, and Coordinate covalent",
+            "exp": "NH₄⁺ has covalent and coordinate bonds; attraction between NH₄⁺ and Cl⁻ is ionic."
+          },
+          {
+            "q": "Ice is less dense than liquid water because of:",
+            "opts": [
+              "(a) Linear bonding",
+              "(b) Open cage-like crystal structure",
+              "(c) Covalent breaking",
+              "(d) High vaporization"
+            ],
+            "ans": "(b) Open cage-like crystal structure",
+            "exp": "Rigid H-bonds create open hexagonal cavities in ice, expanding volume and lowering density."
+          }
+        ],
+        "shortQuestions": [
+          {
+            "q": "1. Why do atoms react with one another?",
+            "a": "Atoms react to attain electronic stability by acquiring 2 (duplet) or 8 (octet) valence electrons resembling the nearest stable noble gas."
+          },
+          {
+            "q": "2. How does an electropositive metal form an ionic bond with an electronegative non-metal?",
+            "a": "The metal loses valence electrons forming a cation; the non-metal accepts those electrons forming an anion; electrostatic attraction binds them into an ionic lattice."
+          },
+          {
+            "q": "3. What is a lone pair of electrons?",
+            "a": "A valence shell electron pair that is not shared with another atom in a covalent bond (e.g., the 1 lone pair on N in NH₃ or 2 lone pairs on O in H₂O)."
+          },
+          {
+            "q": "4. Why is Nitrogen gas chemically unreactive at room temperature?",
+            "a": "Because two nitrogen atoms are held together by an extremely strong triple covalent bond (N≡N) with a very high bond dissociation energy of 946 kJ/mol."
+          },
+          {
+            "q": "5. What happens to electron clouds in polar covalent molecules?",
+            "a": "The shared electron cloud is pulled asymmetrically toward the more electronegative atom, generating partial charges (δ⁺ and δ⁻)."
+          },
+          {
+            "q": "6. Give two examples of coordinate covalent compounds.",
+            "a": "1. Ammonium ion (NH₄⁺), formed between NH₃ and H⁺.\n2. Hydronium ion (H₃O⁺), formed between H₂O and H⁺."
+          },
+          {
+            "q": "7. Why can metals conduct electricity in the solid state while ionic salts cannot?",
+            "a": "Metals possess a sea of freely mobile delocalized electrons that move under voltage. Solid ionic salts have ions locked rigidly in lattice positions."
+          },
+          {
+            "q": "8. What are dipole-dipole forces?",
+            "a": "Electrostatic attractive forces operating between the partially positive end of one polar molecule and the partially negative end of a neighboring polar molecule."
+          },
+          {
+            "q": "9. Explain the biological role of Hydrogen bonds in DNA.",
+            "a": "Hydrogen bonds link complementary purine and pyrimidine base pairs (A=T with 2 H-bonds, G≡C with 3 H-bonds), holding the double helix together."
+          },
+          {
+            "q": "10. Why do covalent compounds generally have low boiling points?",
+            "a": "Because covalent molecules are held together in the liquid state by weak intermolecular forces (van der Waals / dipole-dipole) that require little energy to break."
+          }
+        ],
+        "longQuestions": [
+          {
+            "q": "1. Explain the formation of Ionic and Covalent bonds with appropriate examples and electronic structures.",
+            "a": "**1. Ionic Bond Formation:**\n- Complete electron transfer from electropositive metal to electronegative non-metal.\n- *Example (NaCl):* $\\text{Na} (2,8,1) \\rightarrow \\text{Na}^+ (2,8) + e^-$; $\\text{Cl} (2,8,7) + e^- \\rightarrow \\text{Cl}^- (2,8,8)$.\n\n**2. Covalent Bond Formation:**\n- Mutual electron sharing between non-metals.\n- *Single Bond:* $\\text{H}-\\text{H}$ in $\\text{H}_2$ (1 pair shared).\n- *Double Bond:* $\\text{O}=\\text{O}$ in $\\text{O}_2$ (2 pairs shared).\n- *Triple Bond:* $\\text{N}\\equiv\\text{N}$ in $\\text{N}_2$ (3 pairs shared)."
+          },
+          {
+            "q": "2. Explain Coordinate Covalent Bonding with detailed formation mechanisms for NH₄⁺ and H₃O⁺.",
+            "a": "**1. Principle:** A bond where one atom (donor) supplies both electrons of the shared pair to an acceptor.\n\n**2. Ammonium Ion ($\\text{NH}_4^+$):**\n$$\\text{H}_3\\text{N}: + \\text{H}^+ \\longrightarrow [\\text{H}_3\\text{N}\\rightarrow\\text{H}]^+$$\nNitrogen uses its lone pair to bond with bare proton $\\text{H}^+$.\n\n**3. Hydronium Ion ($\\text{H}_3\\text{O}^+$):**\n$$\\text{H}_2\\text{O}: + \\text{H}^+ \\longrightarrow [\\text{H}_2\\text{O}\\rightarrow\\text{H}]^+$$\nOxygen donates one of its two lone pairs to $\\text{H}^+$."
+          },
+          {
+            "q": "3. Describe the Electron Sea Model for Metallic Bonding and explain four characteristic properties of metals.",
+            "a": "**1. Electron Sea Model:** Cations in a regular lattice submerged in a delocalized pool of free valence electrons.\n\n**2. Four Properties:**\n- **Electrical Conductivity:** Free electrons flow easily under potential difference.\n- **Thermal Conductivity:** Rapid electronic kinetic energy transfer.\n- **Malleability & Ductility:** Mobile electron cushion prevents repulsions when planes of cations glide under stress.\n- **Luster:** Mobile surface electrons absorb and re-emit light instantly."
+          },
+          {
+            "q": "4. What is Hydrogen Bonding? Discuss its origin and its crucial consequences on the physical properties of water and ice.",
+            "a": "**1. Origin:** Electrostatic attraction between $\\text{H}^{\\delta+}$ attached to F, O, or N and a lone pair on a nearby electronegative atom.\n\n**2. Consequences:**\n- **High Boiling Point of Water ($100^\\circ\\text{C}$):** Requires large thermal energy to disrupt 3D hydrogen bonding networks.\n- **Anomalous Expansion of Ice:** Ice forms an open hexagonal cage network, making ice ~9% less dense than water so it floats, insulating aquatic life in winter."
+          },
+          {
+            "q": "5. Compare the physical and chemical properties of Ionic, Covalent, and Metallic compounds in tabular form.",
+            "a": "**Tabular Comparison:**\n\n| Property | Ionic Compounds | Covalent Compounds | Metallic Solids |\n|---|---|---|---|\n| **Bond Nature** | Electrostatic ion attraction | Shared electron pairs | Delocalized electron sea |\n| **Melting Points** | High (NaCl: 801°C) | Low (CH₄: -182°C) | High (Fe: 1538°C) |\n| **Electrical Conduction** | Molten/Aqueous only | Non-conductors | Solid and molten states |\n| **Solubility** | Soluble in polar water | Soluble in organic solvents | Insoluble |"
+          }
+        ]
+      }
     },
     {
       "id": "chem-ch5",
@@ -4177,67 +5363,83 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Matter",
-          "def": "Anything that has mass and occupies space."
+          "def": "Anything that has mass and occupies space.",
+          "definition": "Anything that has mass and occupies space."
         },
         {
           "term": "Diffusion",
-          "def": "The spontaneous mixing of molecules of different substances from a region of higher concentration to lower concentration by random motion and collisions."
+          "def": "The spontaneous mixing of molecules of different substances from a region of higher concentration to lower concentration by random motion and collisions.",
+          "definition": "The spontaneous mixing of molecules of different substances from a region of higher concentration to lower concentration by random motion and collisions."
         },
         {
           "term": "Effusion",
-          "def": "The escape of gas molecules one by one without collision through a microscopic hole of molecular dimensions."
+          "def": "The escape of gas molecules one by one without collision through a microscopic hole of molecular dimensions.",
+          "definition": "The escape of gas molecules one by one without collision through a microscopic hole of molecular dimensions."
         },
         {
           "term": "Pressure (P)",
-          "def": "The force exerted per unit area (P = F/A). SI unit is Pascal (N/m^2)."
+          "def": "The force exerted per unit area (P = F/A). SI unit is Pascal (N/m^2).",
+          "definition": "The force exerted per unit area (P = F/A). SI unit is Pascal (N/m^2)."
         },
         {
           "term": "Boyle's Law",
-          "def": "The volume of a given mass of gas is inversely proportional to its pressure at constant temperature (P1V1 = P2V2)."
+          "def": "The volume of a given mass of gas is inversely proportional to its pressure at constant temperature (P1V1 = P2V2).",
+          "definition": "The volume of a given mass of gas is inversely proportional to its pressure at constant temperature (P1V1 = P2V2)."
         },
         {
           "term": "Charles's Law",
-          "def": "The volume of a given mass of gas is directly proportional to its absolute temperature in Kelvin at constant pressure (V1/T1 = V2/T2)."
+          "def": "The volume of a given mass of gas is directly proportional to its absolute temperature in Kelvin at constant pressure (V1/T1 = V2/T2).",
+          "definition": "The volume of a given mass of gas is directly proportional to its absolute temperature in Kelvin at constant pressure (V1/T1 = V2/T2)."
         },
         {
           "term": "Absolute Temperature",
-          "def": "Temperature measured on the Kelvin scale (K = °C + 273), where 0 K represents absolute zero."
+          "def": "Temperature measured on the Kelvin scale (K = °C + 273), where 0 K represents absolute zero.",
+          "definition": "Temperature measured on the Kelvin scale (K = °C + 273), where 0 K represents absolute zero."
         },
         {
           "term": "Evaporation",
-          "def": "The spontaneous conversion of a liquid into its vapours from the surface at any temperature without external boiling."
+          "def": "The spontaneous conversion of a liquid into its vapours from the surface at any temperature without external boiling.",
+          "definition": "The spontaneous conversion of a liquid into its vapours from the surface at any temperature without external boiling."
         },
         {
           "term": "Vapour Pressure",
-          "def": "The pressure exerted by the vapours of a liquid in dynamic equilibrium with its liquid state at a given temperature."
+          "def": "The pressure exerted by the vapours of a liquid in dynamic equilibrium with its liquid state at a given temperature.",
+          "definition": "The pressure exerted by the vapours of a liquid in dynamic equilibrium with its liquid state at a given temperature."
         },
         {
           "term": "Boiling Point",
-          "def": "The temperature at which the vapour pressure of a liquid becomes equal to the external atmospheric pressure."
+          "def": "The temperature at which the vapour pressure of a liquid becomes equal to the external atmospheric pressure.",
+          "definition": "The temperature at which the vapour pressure of a liquid becomes equal to the external atmospheric pressure."
         },
         {
           "term": "Freezing Point",
-          "def": "The temperature at which the liquid and solid states of a substance coexist in dynamic equilibrium."
+          "def": "The temperature at which the liquid and solid states of a substance coexist in dynamic equilibrium.",
+          "definition": "The temperature at which the liquid and solid states of a substance coexist in dynamic equilibrium."
         },
         {
           "term": "Melting Point",
-          "def": "The temperature at which a solid starts melting and exists in dynamic equilibrium with its liquid state."
+          "def": "The temperature at which a solid starts melting and exists in dynamic equilibrium with its liquid state.",
+          "definition": "The temperature at which a solid starts melting and exists in dynamic equilibrium with its liquid state."
         },
         {
           "term": "Amorphous Solid",
-          "def": "A solid in which particles lack regular three-dimensional geometric order and melt over a range of temperature (e.g. glass, plastic)."
+          "def": "A solid in which particles lack regular three-dimensional geometric order and melt over a range of temperature (e.g. glass, plastic).",
+          "definition": "A solid in which particles lack regular three-dimensional geometric order and melt over a range of temperature (e.g. glass, plastic)."
         },
         {
           "term": "Crystalline Solid",
-          "def": "A solid in which particles are arranged in a regular, repeating three-dimensional geometric lattice with sharp melting points (e.g. NaCl, diamond)."
+          "def": "A solid in which particles are arranged in a regular, repeating three-dimensional geometric lattice with sharp melting points (e.g. NaCl, diamond).",
+          "definition": "A solid in which particles are arranged in a regular, repeating three-dimensional geometric lattice with sharp melting points (e.g. NaCl, diamond)."
         },
         {
           "term": "Allotropy",
-          "def": "The existence of an element in more than one physical form having different physical properties but identical chemical properties."
+          "def": "The existence of an element in more than one physical form having different physical properties but identical chemical properties.",
+          "definition": "The existence of an element in more than one physical form having different physical properties but identical chemical properties."
         },
         {
           "term": "Transition Temperature",
-          "def": "The temperature at which two allotropic forms of an element coexist in dynamic equilibrium."
+          "def": "The temperature at which two allotropic forms of an element coexist in dynamic equilibrium.",
+          "definition": "The temperature at which two allotropic forms of an element coexist in dynamic equilibrium."
         }
       ],
       "differences": [
@@ -4494,7 +5696,295 @@ Object.assign(DATA, {
             ]
           ]
         }
-      ]
+      ],
+      "sloQuestions": {
+        "mcqs": [
+          {
+            "q": "Which state of matter has indefinite shape but definite volume?",
+            "opts": [
+              "(a) Solid",
+              "(b) Liquid",
+              "(c) Gas",
+              "(d) Plasma"
+            ],
+            "ans": "(b) Liquid",
+            "exp": "Liquids adopt container shape while retaining a fixed definite volume."
+          },
+          {
+            "q": "The SI unit of pressure is:",
+            "opts": [
+              "(a) Atmosphere",
+              "(b) Pascal (N/m²)",
+              "(c) Torr",
+              "(d) Bar"
+            ],
+            "ans": "(b) Pascal (N/m²)",
+            "exp": "Pascal (1 Pa = 1 N/m²) is the official SI unit of pressure."
+          },
+          {
+            "q": "Diffusion of gases occurs due to:",
+            "opts": [
+              "(a) High density",
+              "(b) Random kinetic motion and collisions",
+              "(c) Gravity",
+              "(d) Static charge"
+            ],
+            "ans": "(b) Random kinetic motion and collisions",
+            "exp": "Gas particles move in continuous random straight lines colliding elastically."
+          },
+          {
+            "q": "If the temperature of a gas is doubled at constant pressure, its volume will:",
+            "opts": [
+              "(a) Double",
+              "(b) Halve",
+              "(c) Quadruple",
+              "(d) Remain same"
+            ],
+            "ans": "(a) Double",
+            "exp": "Charles's Law: V ∝ T (volume is directly proportional to absolute temperature)."
+          },
+          {
+            "q": "The temperature at which molecular motion completely ceases is:",
+            "opts": [
+              "(a) 0 °C",
+              "(b) 0 K (-273.15 °C)",
+              "(c) 100 °C",
+              "(d) -100 °C"
+            ],
+            "ans": "(b) 0 K (-273.15 °C)",
+            "exp": "0 K is Absolute Zero, the thermodynamic limit where kinetic motion stops."
+          },
+          {
+            "q": "Evaporation is an:",
+            "opts": [
+              "(a) Endothermic cooling process",
+              "(b) Exothermic heating process",
+              "(c) Isothermal process",
+              "(d) Isobaric process"
+            ],
+            "ans": "(a) Endothermic cooling process",
+            "exp": "Evaporation absorbs heat energy from surrounding liquid, producing cooling."
+          },
+          {
+            "q": "Which liquid has the highest vapor pressure at room temperature?",
+            "opts": [
+              "(a) Water",
+              "(b) Diethyl ether",
+              "(c) Glycerol",
+              "(d) Honey"
+            ],
+            "ans": "(b) Diethyl ether",
+            "exp": "Ether has very weak intermolecular forces and boils at 34.6°C, giving it high vapor pressure."
+          },
+          {
+            "q": "When external pressure is reduced, the boiling point of a liquid:",
+            "opts": [
+              "(a) Increases",
+              "(b) Decreases",
+              "(c) Remains constant",
+              "(d) Becomes zero"
+            ],
+            "ans": "(b) Decreases",
+            "exp": "Boiling point drops because less thermal vapor pressure is needed to equal external pressure."
+          },
+          {
+            "q": "Which of the following is an isotropic solid without a sharp melting point?",
+            "opts": [
+              "(a) Ice",
+              "(b) Glass",
+              "(c) Sodium chloride",
+              "(d) Copper"
+            ],
+            "ans": "(b) Glass",
+            "exp": "Glass is an amorphous solid that softens gradually over a temperature range."
+          },
+          {
+            "q": "The allotrope of carbon that has a soccer-ball cage structure is:",
+            "opts": [
+              "(a) Diamond",
+              "(b) Graphite",
+              "(c) Buckyball (C₆₀)",
+              "(d) Coal"
+            ],
+            "ans": "(c) Buckyball (C₆₀)",
+            "exp": "Fullerenes/Buckyballs comprise 60 carbon atoms in a spherical cage."
+          },
+          {
+            "q": "1 torr is equal to:",
+            "opts": [
+              "(a) 1 mmHg",
+              "(b) 760 mmHg",
+              "(c) 101325 Pa",
+              "(d) 1 atm"
+            ],
+            "ans": "(a) 1 mmHg",
+            "exp": "By definition, 1 torr = 1 mmHg."
+          },
+          {
+            "q": "Which gas diffuses fastest at room temperature?",
+            "opts": [
+              "(a) H₂ (2 g/mol)",
+              "(b) O₂ (32 g/mol)",
+              "(c) CO₂ (44 g/mol)",
+              "(d) Cl₂ (71 g/mol)"
+            ],
+            "ans": "(a) H₂ (2 g/mol)",
+            "exp": "According to Graham's law, the lightest gas (H₂) has the highest diffusion rate."
+          },
+          {
+            "q": "The density of gases is expressed in:",
+            "opts": [
+              "(a) g/cm³",
+              "(b) g/dm³",
+              "(c) kg/m³",
+              "(d) mg/cm³"
+            ],
+            "ans": "(b) g/dm³",
+            "exp": "Gas densities are very low, conventionally reported in g/dm³ (g/L)."
+          },
+          {
+            "q": "The curve obtained in Boyle's law (P vs V at constant T) is called an:",
+            "opts": [
+              "(a) Isobar",
+              "(b) Isotherm",
+              "(c) Isochore",
+              "(d) Adiabat"
+            ],
+            "ans": "(b) Isotherm",
+            "exp": "A constant-temperature curve is termed an isotherm."
+          },
+          {
+            "q": "At what temperature does water boil on the top of Mount Everest (~8848 m)?",
+            "opts": [
+              "(a) 100 °C",
+              "(b) ~70 °C",
+              "(c) 120 °C",
+              "(d) 0 °C"
+            ],
+            "ans": "(b) ~70 °C",
+            "exp": "Atmospheric pressure on Everest is only ~250 mmHg, lowering water's boiling point to ~70°C."
+          },
+          {
+            "q": "In a pressure cooker, food cooks quickly because:",
+            "opts": [
+              "(a) Heat is trapped",
+              "(b) Boiling point of water increases to ~120°C",
+              "(c) Water evaporates faster",
+              "(d) Steam is dry"
+            ],
+            "ans": "(b) Boiling point of water increases to ~120°C",
+            "exp": "Higher pressure elevates boiling point to 120°C, transferring heat faster to cook food."
+          },
+          {
+            "q": "Monoclinic sulphur is stable in which temperature range?",
+            "opts": [
+              "(a) Below 96 °C",
+              "(b) 96 °C to 119 °C",
+              "(c) Above 119 °C",
+              "(d) At 0 °C"
+            ],
+            "ans": "(b) 96 °C to 119 °C",
+            "exp": "Monoclinic sulphur exists stably between 96°C and its melting point 119°C."
+          },
+          {
+            "q": "Diamond is a non-conductor of electricity because:",
+            "opts": [
+              "(a) It is hard",
+              "(b) All 4 valence electrons are tightly locked in single covalent bonds",
+              "(c) It is transparent",
+              "(d) It has high density"
+            ],
+            "ans": "(b) All 4 valence electrons are tightly locked in single covalent bonds",
+            "exp": "With sp³ hybridization, no free mobile delocalized electrons exist in diamond."
+          },
+          {
+            "q": "Dynamic equilibrium in a closed liquid-vapor system implies:",
+            "opts": [
+              "(a) Evaporation stops",
+              "(b) Rate of evaporation equals rate of condensation",
+              "(c) Liquid freezes",
+              "(d) Pressure drops to zero"
+            ],
+            "ans": "(b) Rate of evaporation equals rate of condensation",
+            "exp": "Equilibrium occurs when the two opposing rates become exactly equal."
+          },
+          {
+            "q": "Convert 37°C (normal human body temperature) into Kelvin:",
+            "opts": [
+              "(a) 273 K",
+              "(b) 300 K",
+              "(c) 310.15 K",
+              "(d) 373 K"
+            ],
+            "ans": "(c) 310.15 K",
+            "exp": "37 + 273.15 = 310.15 K."
+          }
+        ],
+        "shortQuestions": [
+          {
+            "q": "1. Why can gases be easily compressed while solids cannot?",
+            "a": "Gases have massive empty spaces between particles (~10 times particle diameter). Solids have particles packed in fixed, touching crystal lattices with zero compressible space."
+          },
+          {
+            "q": "2. Explain why gas density increases when it is cooled.",
+            "a": "Cooling reduces particle kinetic energy, contracting volume ($V \\propto T$). Since mass remains constant, density ($d = m/V$) increases."
+          },
+          {
+            "q": "3. State the mathematical form of Boyle's Law and Charles's Law.",
+            "a": "- **Boyle's Law:** $P_1 V_1 = P_2 V_2$ (at constant $T$).\n- **Charles's Law:** $\\frac{V_1}{T_1} = \\frac{V_2}{T_2}$ (at constant $P$)."
+          },
+          {
+            "q": "4. What is Absolute Zero and what happens at this temperature?",
+            "a": "Absolute Zero ($0\\text{ K} = -273.15^\\circ\\text{C}$) is the lowest possible temperature where all translational molecular motion ceases and gas volume hypothetically drops to zero."
+          },
+          {
+            "q": "5. Why does an earthen pot keep water cool during summer?",
+            "a": "Water seeps through porous pot walls and continuously evaporates, drawing latent heat of vaporization from the remaining water."
+          },
+          {
+            "q": "6. Define Vapor Pressure.",
+            "a": "The pressure exerted by vapors in dynamic equilibrium with their liquid phase in a closed container at a given constant temperature."
+          },
+          {
+            "q": "7. Why does boiling point vary with geographic altitude?",
+            "a": "Because boiling occurs when vapor pressure equals external atmospheric pressure, and atmospheric pressure decreases with increasing altitude."
+          },
+          {
+            "q": "8. Give two major differences between Amorphous and Crystalline solids.",
+            "a": "1. **Arrangement:** Crystalline has regular repeating 3D geometry; Amorphous is randomly disordered.\n2. **Melting:** Crystalline has sharp melting points; Amorphous softens gradually over a range."
+          },
+          {
+            "q": "9. Why is Graphite a good conductor of electricity?",
+            "a": "Carbon atoms in graphite are $sp^2$ hybridized, leaving one unbonded delocalized $\\pi$-electron per carbon free to migrate between hexagonal sheets."
+          },
+          {
+            "q": "10. What is the Transition Temperature of Sulphur?",
+            "a": "$96^\\circ\\text{C}$ is the transition temperature where Rhombic ($S_\\alpha$) and Monoclinic ($S_\\beta$) allotropes coexist in dynamic equilibrium."
+          }
+        ],
+        "longQuestions": [
+          {
+            "q": "1. State Boyle's Law. Explain its experimental verification, graphical representation, and practical significance.",
+            "a": "**1. Statement:** Volume is inversely proportional to pressure at constant temperature ($P_1 V_1 = P_2 V_2$).\n\n**2. Verification:** Doubling pressure halves volume; the product $PV = k$.\n\n**3. Graph:** Plot of $P$ vs $V$ gives a hyperbolic isotherm curve.\n\n**4. Significance:** Governs breathing mechanics (expanding lungs decrease pressure, inhaling air) and syringe operation."
+          },
+          {
+            "q": "2. State Charles's Law. Derive the Kelvin absolute temperature scale and explain the concept of Absolute Zero.",
+            "a": "**1. Statement:** Volume is directly proportional to absolute Kelvin temperature ($V_1/T_1 = V_2/T_2$).\n\n**2. Absolute Zero:** Graphing volume vs Celsius temperature extrapolates to zero volume at $-273.15^\\circ\\text{C}$. This defines $0\\text{ K}$.\n\n**3. Conversion:** $T(\\text{K}) = t(^\\circ\\text{C}) + 273.15$."
+          },
+          {
+            "q": "3. Explain Evaporation, its cooling effect, and factors that influence the rate of evaporation.",
+            "a": "**1. Definition:** Surface vaporization occurring at all temperatures.\n\n**2. Cooling Rationale:** High-energy molecules escape, reducing average K.E. and temperature of remaining liquid.\n\n**3. Factors:** Surface area (direct), Temperature (direct), Intermolecular forces (inverse)."
+          },
+          {
+            "q": "4. What is Boiling Point? Explain how external pressure influences boiling and its applications in pressure cookers and vacuum distillation.",
+            "a": "**1. Definition:** Temperature where liquid vapor pressure matches external atmospheric pressure.\n\n**2. Pressure Dependence:** Higher external pressure raises boiling point; lower pressure lowers it.\n\n**3. Applications:** Pressure cooker cooks food fast at $120^\\circ\\text{C}$ ($2\\text{ atm}$); vacuum distillation purifies heat-sensitive chemicals at low temperatures."
+          },
+          {
+            "q": "5. Compare Amorphous and Crystalline solids in detail. Discuss the structural allotropes of Carbon and Sulphur.",
+            "a": "**1. Solids Comparison:** Crystalline solids have ordered lattices, sharp melting points, and clean cleavage planes; Amorphous solids lack order and soften over a temperature range.\n\n**2. Carbon Allotropes:** Diamond (3D tetrahedral, hardest non-conductor), Graphite (2D sheets, conductor), Buckyballs ($C_{60}$ cages).\n\n**3. Sulphur Allotropes:** Rhombic ($S_\\alpha$) $\\rightleftharpoons$ Monoclinic ($S_\\beta$) at $96^\\circ\\text{C}$ transition temperature."
+          }
+        ]
+      }
     },
     {
       "id": "chem-ch6",
@@ -5119,67 +6609,83 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Solution",
-          "def": "A homogeneous mixture of two or more than two substances whose composition can vary within certain limits."
+          "def": "A homogeneous mixture of two or more than two substances whose composition can vary within certain limits.",
+          "definition": "A homogeneous mixture of two or more than two substances whose composition can vary within certain limits."
         },
         {
           "term": "Solute",
-          "def": "The component of a solution present in smaller quantity which is dissolved by the solvent."
+          "def": "The component of a solution present in smaller quantity which is dissolved by the solvent.",
+          "definition": "The component of a solution present in smaller quantity which is dissolved by the solvent."
         },
         {
           "term": "Solvent",
-          "def": "The component of a solution present in larger quantity in which the solute dissolves."
+          "def": "The component of a solution present in larger quantity in which the solute dissolves.",
+          "definition": "The component of a solution present in larger quantity in which the solute dissolves."
         },
         {
           "term": "Aqueous Solution",
-          "def": "A solution in which water acts as the solvent."
+          "def": "A solution in which water acts as the solvent.",
+          "definition": "A solution in which water acts as the solvent."
         },
         {
           "term": "Saturated Solution",
-          "def": "A solution that contains the maximum amount of dissolved solute and cannot dissolve any more solute at that specific temperature."
+          "def": "A solution that contains the maximum amount of dissolved solute and cannot dissolve any more solute at that specific temperature.",
+          "definition": "A solution that contains the maximum amount of dissolved solute and cannot dissolve any more solute at that specific temperature."
         },
         {
           "term": "Unsaturated Solution",
-          "def": "A solution that contains less solute than required for saturation and has capacity to dissolve more solute at that temperature."
+          "def": "A solution that contains less solute than required for saturation and has capacity to dissolve more solute at that temperature.",
+          "definition": "A solution that contains less solute than required for saturation and has capacity to dissolve more solute at that temperature."
         },
         {
           "term": "Supersaturated Solution",
-          "def": "A meta-stable solution containing more dissolved solute than a saturated solution at that temperature."
+          "def": "A meta-stable solution containing more dissolved solute than a saturated solution at that temperature.",
+          "definition": "A meta-stable solution containing more dissolved solute than a saturated solution at that temperature."
         },
         {
           "term": "Molarity (M)",
-          "def": "A concentration unit defined as the number of moles of solute dissolved per cubic decimeter (dm^3 or liter) of solution."
+          "def": "A concentration unit defined as the number of moles of solute dissolved per cubic decimeter (dm^3 or liter) of solution.",
+          "definition": "A concentration unit defined as the number of moles of solute dissolved per cubic decimeter (dm^3 or liter) of solution."
         },
         {
           "term": "Percentage Composition",
-          "def": "The concentration of a solution expressed as parts of solute per 100 parts of solution (% m/m, % m/v, % v/m, % v/v)."
+          "def": "The concentration of a solution expressed as parts of solute per 100 parts of solution (% m/m, % m/v, % v/m, % v/v).",
+          "definition": "The concentration of a solution expressed as parts of solute per 100 parts of solution (% m/m, % m/v, % v/m, % v/v)."
         },
         {
           "term": "Solubility",
-          "def": "The maximum mass of solute in grams that can dissolve in 100 grams of solvent to form a saturated solution at a given temperature."
+          "def": "The maximum mass of solute in grams that can dissolve in 100 grams of solvent to form a saturated solution at a given temperature.",
+          "definition": "The maximum mass of solute in grams that can dissolve in 100 grams of solvent to form a saturated solution at a given temperature."
         },
         {
           "term": "Hydration",
-          "def": "The process in which polar water molecules surround, stabilize, and separate dissolved solute ions or molecules."
+          "def": "The process in which polar water molecules surround, stabilize, and separate dissolved solute ions or molecules.",
+          "definition": "The process in which polar water molecules surround, stabilize, and separate dissolved solute ions or molecules."
         },
         {
           "term": "Miscibility",
-          "def": "The property of two liquids to mix freely and dissolve in one another in all proportions to form a single phase."
+          "def": "The property of two liquids to mix freely and dissolve in one another in all proportions to form a single phase.",
+          "definition": "The property of two liquids to mix freely and dissolve in one another in all proportions to form a single phase."
         },
         {
           "term": "Colloid",
-          "def": "A heterogeneous mixture with dispersed particles intermediate in size (1 to 1000 nm) between solutions and suspensions."
+          "def": "A heterogeneous mixture with dispersed particles intermediate in size (1 to 1000 nm) between solutions and suspensions.",
+          "definition": "A heterogeneous mixture with dispersed particles intermediate in size (1 to 1000 nm) between solutions and suspensions."
         },
         {
           "term": "Tyndall Effect",
-          "def": "The scattering of a beam of visible light by dispersed colloidal particles in a transparent medium."
+          "def": "The scattering of a beam of visible light by dispersed colloidal particles in a transparent medium.",
+          "definition": "The scattering of a beam of visible light by dispersed colloidal particles in a transparent medium."
         },
         {
           "term": "Suspension",
-          "def": "A heterogeneous mixture containing large undissolved particles (>1000 nm) that settle down upon standing."
+          "def": "A heterogeneous mixture containing large undissolved particles (>1000 nm) that settle down upon standing.",
+          "definition": "A heterogeneous mixture containing large undissolved particles (>1000 nm) that settle down upon standing."
         },
         {
           "term": "Sedimentation",
-          "def": "The process whereby suspended solid particles settle down at the bottom of a liquid under the pull of gravity."
+          "def": "The process whereby suspended solid particles settle down at the bottom of a liquid under the pull of gravity.",
+          "definition": "The process whereby suspended solid particles settle down at the bottom of a liquid under the pull of gravity."
         }
       ],
       "differences": [
@@ -5456,7 +6962,295 @@ Object.assign(DATA, {
             ]
           ]
         }
-      ]
+      ],
+      "sloQuestions": {
+        "mcqs": [
+          {
+            "q": "Which of the following is a homogeneous mixture?",
+            "opts": [
+              "(a) Milk",
+              "(b) Brine (salt in water)",
+              "(c) Muddy water",
+              "(d) Smoke"
+            ],
+            "ans": "(b) Brine (salt in water)",
+            "exp": "Brine is a true homogeneous solution with single uniform phase."
+          },
+          {
+            "q": "In an aqueous solution, the solvent is always:",
+            "opts": [
+              "(a) Alcohol",
+              "(b) Water",
+              "(c) Benzene",
+              "(d) Ether"
+            ],
+            "ans": "(b) Water",
+            "exp": "By definition, aqueous solutions have water as solvent."
+          },
+          {
+            "q": "An alloy like Steel is an example of which type of solution?",
+            "opts": [
+              "(a) Solid in Liquid",
+              "(b) Solid in Solid",
+              "(c) Liquid in Solid",
+              "(d) Gas in Solid"
+            ],
+            "ans": "(b) Solid in Solid",
+            "exp": "Steel is a solid solution of carbon in iron."
+          },
+          {
+            "q": "What is the molarity of a solution containing 1 mole of solute in 1 dm³ of solution?",
+            "opts": [
+              "(a) 0.1 M",
+              "(b) 0.5 M",
+              "(c) 1.0 M",
+              "(d) 2.0 M"
+            ],
+            "ans": "(c) 1.0 M",
+            "exp": "1 mole per 1 dm³ defines 1.0 Molar solution."
+          },
+          {
+            "q": "The formula used to dilute a concentrated solution is:",
+            "opts": [
+              "(a) P₁V₁ = P₂V₂",
+              "(b) M₁V₁ = M₂V₂",
+              "(c) V₁/T₁ = V₂/T₂",
+              "(d) d = m/V"
+            ],
+            "ans": "(b) M₁V₁ = M₂V₂",
+            "exp": "Dilution equation: M₁V₁ = M₂V₂."
+          },
+          {
+            "q": "The Tyndall effect is shown by:",
+            "opts": [
+              "(a) True solutions",
+              "(b) Colloids",
+              "(c) Pure water",
+              "(d) Alcohol"
+            ],
+            "ans": "(b) Colloids",
+            "exp": "Colloids scatter light beams exhibiting the Tyndall effect."
+          },
+          {
+            "q": "Which of the following solutes is soluble in polar water?",
+            "opts": [
+              "(a) Grease",
+              "(b) Cooking oil",
+              "(c) Sodium chloride (NaCl)",
+              "(d) Naphthalene"
+            ],
+            "ans": "(c) Sodium chloride (NaCl)",
+            "exp": "Ionic NaCl dissolves in polar water via ion-dipole hydration."
+          },
+          {
+            "q": "The solubility of gases in liquids with increasing temperature:",
+            "opts": [
+              "(a) Increases",
+              "(b) Decreases",
+              "(c) Remains unchanged",
+              "(d) Doubles"
+            ],
+            "ans": "(b) Decreases",
+            "exp": "Gas molecules gain kinetic energy and escape liquid as temperature rises."
+          },
+          {
+            "q": "Milk of Magnesia is an example of:",
+            "opts": [
+              "(a) Colloid",
+              "(b) Suspension",
+              "(c) True solution",
+              "(d) Gas in liquid"
+            ],
+            "ans": "(b) Suspension",
+            "exp": "Milk of magnesia is a suspension of solid magnesium hydroxide in water."
+          },
+          {
+            "q": "What happens when a seed crystal is added to a supersaturated solution?",
+            "opts": [
+              "(a) Dissolves",
+              "(b) No change",
+              "(c) Triggers rapid crystallization of excess solute",
+              "(d) Solution boils"
+            ],
+            "ans": "(c) Triggers rapid crystallization of excess solute",
+            "exp": "Supersaturated solutions are unstable; a seed crystal induces rapid crystallization."
+          },
+          {
+            "q": "Mass percentage (% m/m) is defined as:",
+            "opts": [
+              "(a) (Mass of solute / Mass of solution) × 100",
+              "(b) (Mass of solute / Volume of solution) × 100",
+              "(c) (Volume of solute / Mass of solution) × 100",
+              "(d) Moles / dm³"
+            ],
+            "ans": "(a) (Mass of solute / Mass of solution) × 100",
+            "exp": "% m/m = (mass of solute / total mass of solution) × 100."
+          },
+          {
+            "q": "Which of the following pairs is immiscible?",
+            "opts": [
+              "(a) Alcohol and water",
+              "(b) Oil and water",
+              "(c) Salt and water",
+              "(d) Sugar and water"
+            ],
+            "ans": "(b) Oil and water",
+            "exp": "Non-polar oil and polar water do not mix (immiscible liquids)."
+          },
+          {
+            "q": "Colloidal particle size lies in the range:",
+            "opts": [
+              "(a) < 1 nm",
+              "(b) 1 nm to 1000 nm",
+              "(c) > 1000 nm",
+              "(d) > 1 mm"
+            ],
+            "ans": "(b) 1 nm to 1000 nm",
+            "exp": "Colloidal size range is 1 to 1000 nm (10⁻⁷ to 10⁻⁵ cm)."
+          },
+          {
+            "q": "A 1 M solution of H₂SO₄ contains how many grams of H₂SO₄ per dm³? (Molar mass = 98 g/mol)",
+            "opts": [
+              "(a) 49 g",
+              "(b) 98 g",
+              "(c) 196 g",
+              "(d) 40 g"
+            ],
+            "ans": "(b) 98 g",
+            "exp": "1 M solution requires 1 mole (98 g) per dm³."
+          },
+          {
+            "q": "Opening a warm soda can produces vigorous fizzing because:",
+            "opts": [
+              "(a) CO₂ solubility decreases at lower pressure and higher temperature",
+              "(b) Soda boils",
+              "(c) Water evaporates",
+              "(d) Acid decomposes"
+            ],
+            "ans": "(a) CO₂ solubility decreases at lower pressure and higher temperature",
+            "exp": "Henry's law and temperature effect combine to release excess dissolved CO₂ rapidly."
+          },
+          {
+            "q": "Which salt exhibits an almost constant solubility across temperature?",
+            "opts": [
+              "(a) KNO₃",
+              "(b) Ce₂(SO₄)₃",
+              "(c) NaCl",
+              "(d) NaNO₃"
+            ],
+            "ans": "(c) NaCl",
+            "exp": "NaCl solubility changes minimally from 35.7 g to 39.8 g per 100 g water between 0°C and 100°C."
+          },
+          {
+            "q": "The component of solution in larger quantity that determines physical state is:",
+            "opts": [
+              "(a) Solute",
+              "(b) Solvent",
+              "(c) Precipitate",
+              "(d) Dispersed phase"
+            ],
+            "ans": "(b) Solvent",
+            "exp": "Solvent is the major component defining solution state."
+          },
+          {
+            "q": "Suspension particles can be separated by:",
+            "opts": [
+              "(a) Ordinary filtration",
+              "(b) Boiling only",
+              "(c) Tyndall effect",
+              "(d) Magnetic field"
+            ],
+            "ans": "(a) Ordinary filtration",
+            "exp": "Large suspension particles (>1000 nm) are trapped by ordinary filter paper."
+          },
+          {
+            "q": "Butter and jelly are examples of which type of colloidal system?",
+            "opts": [
+              "(a) Sol",
+              "(b) Gel (liquid dispersed in solid)",
+              "(c) Aerosol",
+              "(d) Foam"
+            ],
+            "ans": "(b) Gel (liquid dispersed in solid)",
+            "exp": "Gels have liquid droplets trapped inside a solid network."
+          },
+          {
+            "q": "The units of molarity are:",
+            "opts": [
+              "(a) mol/g",
+              "(b) mol/dm³ (mol/L)",
+              "(c) g/dm³",
+              "(d) g/mol"
+            ],
+            "ans": "(b) mol/dm³ (mol/L)",
+            "exp": "Molarity is moles of solute per cubic decimeter (mol/dm³)."
+          }
+        ],
+        "shortQuestions": [
+          {
+            "q": "1. Why is a solution considered a mixture rather than a compound?",
+            "a": "Because its components retain their individual chemical properties, can be mixed in variable proportions, and can be separated by physical methods (distillation, evaporation)."
+          },
+          {
+            "q": "2. Explain the term 'Aqueous Solution'.",
+            "a": "Any solution in which water serves as the solvent medium (e.g., aqueous solution of sugar or hydrochloric acid)."
+          },
+          {
+            "q": "3. What is a saturated solution?",
+            "a": "A solution that contains the maximum amount of dissolved solute in equilibrium with undissolved solute at a specific temperature."
+          },
+          {
+            "q": "4. How does temperature affect the solubility of KNO₃?",
+            "a": "Dissolution of KNO₃ is endothermic (absorbs heat); therefore, its solubility increases dramatically with rising temperature."
+          },
+          {
+            "q": "5. Define Henry's Law.",
+            "a": "The mass or solubility of a gas dissolved in a given volume of liquid is directly proportional to the partial pressure of that gas above the liquid."
+          },
+          {
+            "q": "6. Why can we see sunbeams through a dusty room?",
+            "a": "Due to the Tyndall effect: microscopic airborne dust particles (colloidal suspension) scatter incoming light rays into our eyes."
+          },
+          {
+            "q": "7. What is an alloy? Give two examples.",
+            "a": "A solid-in-solid homogeneous solution of two or more metals. Examples: Brass (Cu + Zn) and Bronze (Cu + Sn)."
+          },
+          {
+            "q": "8. Write the formula for calculating Molarity when volume is in cm³.",
+            "a": "$$M = \\frac{\\text{Mass of Solute (g)} \\times 1000}{\\text{Molar Mass (g/mol)} \\times V (\\text{cm}^3)}$$"
+          },
+          {
+            "q": "9. Why does oil float on water without dissolving?",
+            "a": "Oil is non-polar and less dense than water. It cannot form hydrogen bonds with water molecules ('Like Dissolves Like')."
+          },
+          {
+            "q": "10. Differentiate between dilute and concentrated solutions.",
+            "a": "- **Dilute Solution:** Contains a relatively small amount of dissolved solute in a large volume of solvent.\n- **Concentrated Solution:** Contains a relatively large amount of dissolved solute in a given amount of solvent."
+          }
+        ],
+        "longQuestions": [
+          {
+            "q": "1. Explain the preparation and dilution of molar solutions with mathematical equations and solved practical examples.",
+            "a": "**1. Preparation Method:** Calculate required mass ($m = M \\times M_m \\times V$), dissolve in minimal water in a volumetric flask, and dilute to mark.\n\n**2. Dilution Equation:** $M_1 V_1 = M_2 V_2$. Amount of solute moles remains unchanged upon adding solvent."
+          },
+          {
+            "q": "2. Describe the Nine Types of Solutions with complete physical state explanations and two examples for each.",
+            "a": "**Comprehensive Review of 9 Types:**\n- Gas-Gas (Air), Gas-Liquid ($CO_2$ in soda), Gas-Solid ($H_2$ in Pd).\n- Liquid-Gas (Fog), Liquid-Liquid (Vinegar), Liquid-Solid (Amalgam).\n- Solid-Gas (Smoke), Solid-Liquid (Brine), Solid-Solid (Brass alloy)."
+          },
+          {
+            "q": "3. What is Solubility? Discuss factors affecting solubility: 'Like Dissolves Like', Temperature, and Pressure.",
+            "a": "**1. Definition:** Grams of solute per 100 g solvent at specified temperature.\n\n**2. Factors:**\n- **Nature of Solute/Solvent:** Polar dissolves in polar; non-polar in non-polar.\n- **Temperature:** Endothermic ($\\Delta H>0$) increases; Exothermic ($\\Delta H<0$) decreases; NaCl remains constant.\n- **Pressure (Henry's Law):** $S \\propto P$ for gases in liquids."
+          },
+          {
+            "q": "4. Compare True Solutions, Colloids, and Suspensions in detail (Particle size, filtration, stability, and optical properties).",
+            "a": "**Detailed Comparative Analysis:**\n- **True Solution:** $<1\\text{ nm}$, transparent, passes all filters, stable, negative Tyndall.\n- **Colloid:** $1-1000\\text{ nm}$, translucent, passes filter paper, stable via Brownian motion, positive Tyndall effect.\n- **Suspension:** $>1000\\text{ nm}$, opaque, retained by filter paper, unstable (settles), blocks light."
+          },
+          {
+            "q": "5. Write detailed notes on: (a) Concentration units (%m/m, %m/v, %v/v) (b) Saturated vs Supersaturated solutions (c) Tyndall Effect.",
+            "a": "**(a) Percentage Units:** Mathematical definitions and calculations for %m/m, %m/v, %v/v.\n\n**(b) Saturated vs Supersaturated:** Saturated is in dynamic equilibrium; Supersaturated holds excess solute and is metastable.\n\n**(c) Tyndall Effect:** Light scattering by colloidal particles discovered by John Tyndall."
+          }
+        ]
+      }
     },
     {
       "id": "chem-ch7",
@@ -6058,67 +7852,83 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Electrochemistry",
-          "def": "The branch of chemistry that deals with the relationship and interconversion between chemical energy and electrical energy."
+          "def": "The branch of chemistry that deals with the relationship and interconversion between chemical energy and electrical energy.",
+          "definition": "The branch of chemistry that deals with the relationship and interconversion between chemical energy and electrical energy."
         },
         {
           "term": "Oxidation",
-          "def": "A chemical process involving the addition of oxygen, removal of hydrogen, or loss of one or more electrons by a substance."
+          "def": "A chemical process involving the addition of oxygen, removal of hydrogen, or loss of one or more electrons by a substance.",
+          "definition": "A chemical process involving the addition of oxygen, removal of hydrogen, or loss of one or more electrons by a substance."
         },
         {
           "term": "Reduction",
-          "def": "A chemical process involving the removal of oxygen, addition of hydrogen, or gain of one or more electrons by a substance."
+          "def": "A chemical process involving the removal of oxygen, addition of hydrogen, or gain of one or more electrons by a substance.",
+          "definition": "A chemical process involving the removal of oxygen, addition of hydrogen, or gain of one or more electrons by a substance."
         },
         {
           "term": "Redox Reaction",
-          "def": "A chemical reaction in which oxidation and reduction occur simultaneously with transfer of electrons."
+          "def": "A chemical reaction in which oxidation and reduction occur simultaneously with transfer of electrons.",
+          "definition": "A chemical reaction in which oxidation and reduction occur simultaneously with transfer of electrons."
         },
         {
           "term": "Oxidation Number (Oxidation State)",
-          "def": "The apparent electrical charge, positive or negative, assigned to an atom of an element in a molecule or ion according to a set of formal rules."
+          "def": "The apparent electrical charge, positive or negative, assigned to an atom of an element in a molecule or ion according to a set of formal rules.",
+          "definition": "The apparent electrical charge, positive or negative, assigned to an atom of an element in a molecule or ion according to a set of formal rules."
         },
         {
           "term": "Oxidizing Agent (Oxidant)",
-          "def": "A substance that oxidizes another substance by accepting electrons, undergoing reduction itself (decrease in oxidation number)."
+          "def": "A substance that oxidizes another substance by accepting electrons, undergoing reduction itself (decrease in oxidation number).",
+          "definition": "A substance that oxidizes another substance by accepting electrons, undergoing reduction itself (decrease in oxidation number)."
         },
         {
           "term": "Reducing Agent (Reductant)",
-          "def": "A substance that reduces another substance by donating electrons, undergoing oxidation itself (increase in oxidation number)."
+          "def": "A substance that reduces another substance by donating electrons, undergoing oxidation itself (increase in oxidation number).",
+          "definition": "A substance that reduces another substance by donating electrons, undergoing oxidation itself (increase in oxidation number)."
         },
         {
           "term": "Electrolyte",
-          "def": "A substance that dissociates or ionizes into positive and negative ions in aqueous solution or molten state and conducts electricity."
+          "def": "A substance that dissociates or ionizes into positive and negative ions in aqueous solution or molten state and conducts electricity.",
+          "definition": "A substance that dissociates or ionizes into positive and negative ions in aqueous solution or molten state and conducts electricity."
         },
         {
           "term": "Electrolytic Cell",
-          "def": "An electrochemical device that uses an external electric current to drive a non-spontaneous redox reaction."
+          "def": "An electrochemical device that uses an external electric current to drive a non-spontaneous redox reaction.",
+          "definition": "An electrochemical device that uses an external electric current to drive a non-spontaneous redox reaction."
         },
         {
           "term": "Galvanic (Voltaic) Cell",
-          "def": "An electrochemical cell in which a spontaneous chemical redox reaction generates electrical energy (e.g. Daniell Cell)."
+          "def": "An electrochemical cell in which a spontaneous chemical redox reaction generates electrical energy (e.g. Daniell Cell).",
+          "definition": "An electrochemical cell in which a spontaneous chemical redox reaction generates electrical energy (e.g. Daniell Cell)."
         },
         {
           "term": "Salt Bridge",
-          "def": "A U-shaped tube containing an inert electrolyte gel (K2SO4 or KCl in agar) that connects two half-cells, maintaining electrical neutrality."
+          "def": "A U-shaped tube containing an inert electrolyte gel (K2SO4 or KCl in agar) that connects two half-cells, maintaining electrical neutrality.",
+          "definition": "A U-shaped tube containing an inert electrolyte gel (K2SO4 or KCl in agar) that connects two half-cells, maintaining electrical neutrality."
         },
         {
           "term": "Corrosion",
-          "def": "The slow and continuous deterioration of a metal due to spontaneous chemical or electrochemical reaction with its environment."
+          "def": "The slow and continuous deterioration of a metal due to spontaneous chemical or electrochemical reaction with its environment.",
+          "definition": "The slow and continuous deterioration of a metal due to spontaneous chemical or electrochemical reaction with its environment."
         },
         {
           "term": "Rusting",
-          "def": "The specific corrosion of iron and its alloys in the presence of oxygen and moisture, forming hydrated ferric oxide (Fe2O3·xH2O)."
+          "def": "The specific corrosion of iron and its alloys in the presence of oxygen and moisture, forming hydrated ferric oxide (Fe2O3·xH2O).",
+          "definition": "The specific corrosion of iron and its alloys in the presence of oxygen and moisture, forming hydrated ferric oxide (Fe2O3·xH2O)."
         },
         {
           "term": "Cathodic Protection",
-          "def": "A technique used to prevent corrosion by connecting a more reactive sacrificial metal (Mg or Zn) as an anode to make the protected metal the cathode."
+          "def": "A technique used to prevent corrosion by connecting a more reactive sacrificial metal (Mg or Zn) as an anode to make the protected metal the cathode.",
+          "definition": "A technique used to prevent corrosion by connecting a more reactive sacrificial metal (Mg or Zn) as an anode to make the protected metal the cathode."
         },
         {
           "term": "Electroplating",
-          "def": "The electrolytic deposition of a thin, protective or decorative layer of a metal onto the surface of another metal object."
+          "def": "The electrolytic deposition of a thin, protective or decorative layer of a metal onto the surface of another metal object.",
+          "definition": "The electrolytic deposition of a thin, protective or decorative layer of a metal onto the surface of another metal object."
         },
         {
           "term": "Anode Sludge (Anode Mud)",
-          "def": "The insoluble residue containing precious noble metals (Au, Ag, Pt) that settles beneath the anode during electrolytic copper refining."
+          "def": "The insoluble residue containing precious noble metals (Au, Ag, Pt) that settles beneath the anode during electrolytic copper refining.",
+          "definition": "The insoluble residue containing precious noble metals (Au, Ag, Pt) that settles beneath the anode during electrolytic copper refining."
         }
       ],
       "differences": [
@@ -6386,7 +8196,295 @@ Object.assign(DATA, {
             ]
           ]
         }
-      ]
+      ],
+      "sloQuestions": {
+        "mcqs": [
+          {
+            "q": "The loss of electrons is called:",
+            "opts": [
+              "(a) Reduction",
+              "(b) Oxidation",
+              "(c) Hydration",
+              "(d) Neutralization"
+            ],
+            "ans": "(b) Oxidation",
+            "exp": "By electronic definition, oxidation is the loss of electrons (OIL)."
+          },
+          {
+            "q": "The oxidation number of an uncombined free element is always:",
+            "opts": [
+              "(a) +1",
+              "(b) -1",
+              "(c) 0",
+              "(d) +2"
+            ],
+            "ans": "(c) 0",
+            "exp": "Free elements (Na, O₂, S₈) always have an oxidation state of 0."
+          },
+          {
+            "q": "The oxidation number of Oxygen in H₂O₂ (Hydrogen peroxide) is:",
+            "opts": [
+              "(a) -2",
+              "(b) -1",
+              "(c) +2",
+              "(d) 0"
+            ],
+            "ans": "(b) -1",
+            "exp": "In peroxides (like H₂O₂), oxygen has an exceptional oxidation state of -1."
+          },
+          {
+            "q": "Which of the following is a strong electrolyte?",
+            "opts": [
+              "(a) CH₃COOH",
+              "(b) Pure water",
+              "(c) NaCl",
+              "(d) Sugar"
+            ],
+            "ans": "(c) NaCl",
+            "exp": "NaCl completely dissociates into Na⁺ and Cl⁻ ions in water."
+          },
+          {
+            "q": "In a Galvanic cell, oxidation takes place at the:",
+            "opts": [
+              "(a) Positive cathode",
+              "(b) Negative anode",
+              "(c) Salt bridge",
+              "(d) Electrolyte"
+            ],
+            "ans": "(b) Negative anode",
+            "exp": "In galvanic cells, anode is the negative electrode where oxidation occurs."
+          },
+          {
+            "q": "The salt bridge in a Daniel cell contains:",
+            "opts": [
+              "(a) Pure water",
+              "(b) KCl or KNO₃ in agar-agar gel",
+              "(c) Fused NaCl",
+              "(d) Dilute H₂SO₄"
+            ],
+            "ans": "(b) KCl or KNO₃ in agar-agar gel",
+            "exp": "KCl/KNO₃ electrolyte in agar maintains half-cell electrical neutrality."
+          },
+          {
+            "q": "In Down's cell, why is CaCl₂ added to NaCl?",
+            "opts": [
+              "(a) To increase conductivity",
+              "(b) To lower melting point from 801°C to 600°C",
+              "(c) To produce calcium",
+              "(d) To purify salt"
+            ],
+            "ans": "(b) To lower melting point from 801°C to 600°C",
+            "exp": "CaCl₂ acts as a flux, reducing operating temperature and energy costs."
+          },
+          {
+            "q": "Nelson's cell uses an asbestos diaphragm to:",
+            "opts": [
+              "(a) Heat the cell",
+              "(b) Separate chlorine and hydroxide ions",
+              "(c) Conduct current",
+              "(d) Collect hydrogen"
+            ],
+            "ans": "(b) Separate chlorine and hydroxide ions",
+            "exp": "The diaphragm prevents mixing of OH⁻ and Cl₂ which would otherwise react."
+          },
+          {
+            "q": "During copper electro-refining, pure copper deposits on the:",
+            "opts": [
+              "(a) Impure anode",
+              "(b) Pure cathode",
+              "(c) Bottom sludge",
+              "(d) Solution"
+            ],
+            "ans": "(b) Pure cathode",
+            "exp": "Cu²⁺ ions in solution reduce and plate onto the pure cathode sheet."
+          },
+          {
+            "q": "Rusting of iron requires the simultaneous presence of:",
+            "opts": [
+              "(a) Oxygen only",
+              "(b) Water only",
+              "(c) Oxygen and Water (Moisture)",
+              "(d) Nitrogen and Carbon"
+            ],
+            "ans": "(c) Oxygen and Water (Moisture)",
+            "exp": "Both O₂ and H₂O must be present for the electrochemical rusting cycle."
+          },
+          {
+            "q": "Sacrificial protection of steel ships uses blocks of:",
+            "opts": [
+              "(a) Copper",
+              "(b) Magnesium / Zinc",
+              "(c) Tin",
+              "(d) Lead"
+            ],
+            "ans": "(b) Magnesium / Zinc",
+            "exp": "More active Mg or Zn corrodes preferentially, saving the steel hull."
+          },
+          {
+            "q": "The oxidation number of Hydrogen in Sodium hydride (NaH) is:",
+            "opts": [
+              "(a) +1",
+              "(b) -1",
+              "(c) 0",
+              "(d) +2"
+            ],
+            "ans": "(b) -1",
+            "exp": "In metal hydrides (NaH, CaH₂), hydrogen exists as hydride ion (H⁻, -1)."
+          },
+          {
+            "q": "The chemical used to silver plate cutlery is:",
+            "opts": [
+              "(a) AgNO₃",
+              "(b) Na[Ag(CN)₂]",
+              "(c) AgCl",
+              "(d) Ag₂O"
+            ],
+            "ans": "(b) Na[Ag(CN)₂]",
+            "exp": "Sodium argentocyanide provides smooth, adherent silver plating."
+          },
+          {
+            "q": "Anode mud collected below the anode during copper refining contains:",
+            "opts": [
+              "(a) Zinc and Iron",
+              "(b) Gold and Silver (Precious metals)",
+              "(c) Carbon",
+              "(d) Copper oxide"
+            ],
+            "ans": "(b) Gold and Silver (Precious metals)",
+            "exp": "Insoluble noble metals (Au, Ag, Pt) drop to the bottom as anode slime."
+          },
+          {
+            "q": "Which gas is evolved at the cathode in Nelson's cell?",
+            "opts": [
+              "(a) Chlorine (Cl₂)",
+              "(b) Hydrogen (H₂)",
+              "(c) Oxygen (O₂)",
+              "(d) Nitrogen (N₂)"
+            ],
+            "ans": "(b) Hydrogen (H₂)",
+            "exp": "Water reduction at the cathode produces Hydrogen gas (H₂)."
+          },
+          {
+            "q": "The overall cell voltage of the Daniel cell is:",
+            "opts": [
+              "(a) 0.50 V",
+              "(b) 1.10 V",
+              "(c) 1.50 V",
+              "(d) 2.00 V"
+            ],
+            "ans": "(b) 1.10 V",
+            "exp": "Zn-Cu Daniel cell generates exactly +1.10 V under standard conditions."
+          },
+          {
+            "q": "In an electrolytic cell, oxidation always takes place at the:",
+            "opts": [
+              "(a) Anode",
+              "(b) Cathode",
+              "(c) Electrolyte",
+              "(d) Battery"
+            ],
+            "ans": "(a) Anode",
+            "exp": "By definition, oxidation always occurs at the anode (AN OX)."
+          },
+          {
+            "q": "Tinning is the process of coating iron with:",
+            "opts": [
+              "(a) Zinc",
+              "(b) Tin (Sn)",
+              "(c) Chromium",
+              "(d) Lead"
+            ],
+            "ans": "(b) Tin (Sn)",
+            "exp": "Tinning is electroplating iron sheets with non-toxic tin for food cans."
+          },
+          {
+            "q": "Which of the following acts as an oxidizing agent?",
+            "opts": [
+              "(a) KMnO₄",
+              "(b) Na metal",
+              "(c) H₂ gas",
+              "(d) Zn metal"
+            ],
+            "ans": "(a) KMnO₄",
+            "exp": "KMnO₄ contains Mn(+7) which readily accepts electrons (strong oxidant)."
+          },
+          {
+            "q": "What is the oxidation number of Nitrogen in HNO₃?",
+            "opts": [
+              "(a) +3",
+              "(b) +5",
+              "(c) +1",
+              "(d) -3"
+            ],
+            "ans": "(b) +5",
+            "exp": "1(+1) + N + 3(-2) = 0 → N = +5."
+          }
+        ],
+        "shortQuestions": [
+          {
+            "q": "1. What is a Redox reaction? Give one example.",
+            "a": "A chemical reaction in which oxidation (electron loss) and reduction (electron gain) take place simultaneously. Example: $\\text{Zn} + \\text{CuSO}_4 \\rightarrow \\text{ZnSO}_4 + \\text{Cu}$."
+          },
+          {
+            "q": "2. State three rules for assigning oxidation numbers.",
+            "a": "1. Free elements have oxidation number = 0.\n2. Hydrogen is +1 (except in metal hydrides where it is -1).\n3. Sum of all oxidation numbers in a neutral molecule is 0."
+          },
+          {
+            "q": "3. Identify the oxidizing and reducing agents in: H₂S + Cl₂ → 2HCl + S.",
+            "a": "- **$\\text{H}_2\\text{S}$ is the Reducing Agent** (Sulphur oxidized from -2 to 0).\n- **$\\text{Cl}_2$ is the Oxidizing Agent** (Chlorine reduced from 0 to -1)."
+          },
+          {
+            "q": "4. Why is an iron cathode used in Down's cell?",
+            "a": "Iron is chemically unreactive with molten sodium and acts as a stable conductive cathode for sodium ion reduction."
+          },
+          {
+            "q": "5. What is the function of the asbestos diaphragm in Nelson's cell?",
+            "a": "It separates the anode and cathode compartments, preventing caustic soda (NaOH) and $OH^-$ ions from contacting chlorine gas to avoid byproduct formation."
+          },
+          {
+            "q": "6. How is blister copper refined to 99.99% purity?",
+            "a": "By electrolysis using impure copper as anode, pure copper as cathode, and acidified $CuSO_4$ electrolyte. Copper dissolves from anode and deposits purely on cathode."
+          },
+          {
+            "q": "7. Define Electroplating and state two of its purposes.",
+            "a": "Electrolytic deposition of a thin protective metal layer on a base metal object.\n1. **Corrosion Prevention:** Shields reactive metals from moist air.\n2. **Decoration:** Imparts brilliant, lustrous finish (silver, gold, chrome)."
+          },
+          {
+            "q": "8. Write the chemical formula of Rust.",
+            "a": "Hydrated Iron(III) oxide: **$\\text{Fe}_2\\text{O}_3\\cdot x\\text{H}_2\\text{O}$**."
+          },
+          {
+            "q": "9. Why is galvanized iron protected from rusting even if the zinc layer is damaged?",
+            "a": "Zinc is more electropositive than iron and acts as a sacrificial anode, corroding preferentially and protecting the exposed iron cathode."
+          },
+          {
+            "q": "10. What is a weak electrolyte? Give two examples.",
+            "a": "An electrolyte that ionizes only partially in aqueous solution, conducting electricity poorly. Examples: Acetic acid ($\\text{CH}_3\\text{COOH}$) and Ammonium hydroxide ($\\text{NH}_4\\text{OH}$)."
+          }
+        ],
+        "longQuestions": [
+          {
+            "q": "1. Explain the Daniel Cell (Galvanic Cell) in detail, including half-reactions, salt bridge function, and standard cell potential calculation.",
+            "a": "**1. Setup:** Zn in $ZnSO_4$ (Anode) and Cu in $CuSO_4$ (Cathode) connected by salt bridge.\n\n**2. Reactions:**\n- Anode: $\\text{Zn} \\rightarrow \\text{Zn}^{2+} + 2e^-$ ($E^\\circ = +0.76\\text{ V}$)\n- Cathode: $\\text{Cu}^{2+} + 2e^- \\rightarrow \\text{Cu}$ ($E^\\circ = +0.34\\text{ V}$)\n- Overall: $\\text{Zn} + \\text{Cu}^{2+} \\rightarrow \\text{Zn}^{2+} + \\text{Cu}$ ($E^\\circ_{\\text{cell}} = 1.10\\text{ V}$)\n\n**3. Salt Bridge:** Neutralizes accumulating charges via ion migration."
+          },
+          {
+            "q": "2. Describe the extraction of Sodium in Down's Cell with cell diagram, components, and electrode reactions.",
+            "a": "**1. Down's Cell Construction:** Central carbon anode, cylindrical iron cathode, wire gauze separator, molten $NaCl + CaCl_2$ (600°C).\n\n**2. Reactions:** Anode: $2Cl^- \\rightarrow Cl_2(g) + 2e^-$; Cathode: $2Na^+ + 2e^- \\rightarrow 2Na(l)$.\n\n**3. Products:** Molten sodium floats and is collected; chlorine gas vents from dome."
+          },
+          {
+            "q": "3. Describe the manufacture of NaOH and Chlorine in Nelson's Cell with reactions and safety features.",
+            "a": "**1. Nelson's Cell:** Graphite anode in brine, U-shaped perforated iron cathode lined with asbestos diaphragm.\n\n**2. Reactions:** Anode: $2Cl^- \\rightarrow Cl_2 + 2e^-$; Cathode: $2H_2O + 2e^- \\rightarrow H_2 + 2OH^-$.\n\n**3. Product Collection:** $NaOH$ solution collected in basin; $Cl_2$ and $H_2$ collected separately."
+          },
+          {
+            "q": "4. Explain the Electrochemical Mechanism of Rusting of Iron and methods of prevention.",
+            "a": "**1. Mechanism:** Anode: $Fe \\rightarrow Fe^{2+} + 2e^-$; Cathode: $O_2 + 4H^+ + 4e^- \\rightarrow 2H_2O$; Rust: $4Fe^{2+} + O_2 + 4H_2O + 2xH_2O \\rightarrow 2Fe_2O_3\\cdot xH_2O + 8H^+$.\n\n**2. Prevention:** Galvanizing (sacrificial Zn), Tinning (non-toxic food cans), Cathodic protection (Mg blocks on pipelines)."
+          },
+          {
+            "q": "5. Compare Electrolytic and Galvanic cells. Explain the process and rules of Electroplating.",
+            "a": "**1. Cell Comparison:** Electrolytic consumes electricity for non-spontaneous reactions; Galvanic produces electricity from spontaneous redox.\n\n**2. Electroplating Rules:** Object = Cathode (-); Plating metal = Anode (+); Electrolyte = Soluble salt of plating metal."
+          }
+        ]
+      }
     },
     {
       "id": "chem-ch8",
@@ -6938,51 +9036,63 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Chemical Reactivity",
-          "def": "The tendency of a chemical substance to undergo a chemical reaction, either by itself or with other materials, accompanied by an energy change."
+          "def": "The tendency of a chemical substance to undergo a chemical reaction, either by itself or with other materials, accompanied by an energy change.",
+          "definition": "The tendency of a chemical substance to undergo a chemical reaction, either by itself or with other materials, accompanied by an energy change."
         },
         {
           "term": "Electropositivity (Metallic Character)",
-          "def": "The tendency of an element's atom to lose valence electrons and form positively charged cations."
+          "def": "The tendency of an element's atom to lose valence electrons and form positively charged cations.",
+          "definition": "The tendency of an element's atom to lose valence electrons and form positively charged cations."
         },
         {
           "term": "Electronegativity",
-          "def": "A measure of the ability of an atom in a molecule to attract the shared pair of electrons toward itself."
+          "def": "A measure of the ability of an atom in a molecule to attract the shared pair of electrons toward itself.",
+          "definition": "A measure of the ability of an atom in a molecule to attract the shared pair of electrons toward itself."
         },
         {
           "term": "Alkali Metals",
-          "def": "The elements of Group IA (Li, Na, K, Rb, Cs, Fr) except Hydrogen, having one valence electron (ns^1) and forming strong basic hydroxides (alkalies)."
+          "def": "The elements of Group IA (Li, Na, K, Rb, Cs, Fr) except Hydrogen, having one valence electron (ns^1) and forming strong basic hydroxides (alkalies).",
+          "definition": "The elements of Group IA (Li, Na, K, Rb, Cs, Fr) except Hydrogen, having one valence electron (ns^1) and forming strong basic hydroxides (alkalies)."
         },
         {
           "term": "Alkaline Earth Metals",
-          "def": "The elements of Group IIA (Be, Mg, Ca, Sr, Ba, Ra), having two valence electrons (ns^2), forming basic oxides and widely distributed in the Earth's crust."
+          "def": "The elements of Group IIA (Be, Mg, Ca, Sr, Ba, Ra), having two valence electrons (ns^2), forming basic oxides and widely distributed in the Earth's crust.",
+          "definition": "The elements of Group IIA (Be, Mg, Ca, Sr, Ba, Ra), having two valence electrons (ns^2), forming basic oxides and widely distributed in the Earth's crust."
         },
         {
           "term": "Soft Metals",
-          "def": "Metals of Groups IA and IIA that have low ionization energies, low densities, and weak metallic bonds, allowing them to be cut with a knife."
+          "def": "Metals of Groups IA and IIA that have low ionization energies, low densities, and weak metallic bonds, allowing them to be cut with a knife.",
+          "definition": "Metals of Groups IA and IIA that have low ionization energies, low densities, and weak metallic bonds, allowing them to be cut with a knife."
         },
         {
           "term": "Hard Metals",
-          "def": "Transition metals characterized by high ionization energies, high densities, strong metallic bonding involving d-electrons, and high tensile strength (e.g. Iron)."
+          "def": "Transition metals characterized by high ionization energies, high densities, strong metallic bonding involving d-electrons, and high tensile strength (e.g. Iron).",
+          "definition": "Transition metals characterized by high ionization energies, high densities, strong metallic bonding involving d-electrons, and high tensile strength (e.g. Iron)."
         },
         {
           "term": "Noble Metals",
-          "def": "Metals that resist oxidation and chemical corrosion in moist air, found in the native free state in nature (e.g. Au, Pt, Ag, Ru, Rh, Pd, Os, Ir)."
+          "def": "Metals that resist oxidation and chemical corrosion in moist air, found in the native free state in nature (e.g. Au, Pt, Ag, Ru, Rh, Pd, Os, Ir).",
+          "definition": "Metals that resist oxidation and chemical corrosion in moist air, found in the native free state in nature (e.g. Au, Pt, Ag, Ru, Rh, Pd, Os, Ir)."
         },
         {
           "term": "Precious Metals",
-          "def": "Rare, highly valuable metallic elements having high economic worth, durability, and commercial use in jewelry, currency, and high technology (Gold, Platinum, Silver)."
+          "def": "Rare, highly valuable metallic elements having high economic worth, durability, and commercial use in jewelry, currency, and high technology (Gold, Platinum, Silver).",
+          "definition": "Rare, highly valuable metallic elements having high economic worth, durability, and commercial use in jewelry, currency, and high technology (Gold, Platinum, Silver)."
         },
         {
           "term": "Halogens",
-          "def": "The elements of Group VIIA (F, Cl, Br, I, At), having seven valence electrons (ns^2 np^5) that react with metals to form ionic salts (halides)."
+          "def": "The elements of Group VIIA (F, Cl, Br, I, At), having seven valence electrons (ns^2 np^5) that react with metals to form ionic salts (halides).",
+          "definition": "The elements of Group VIIA (F, Cl, Br, I, At), having seven valence electrons (ns^2 np^5) that react with metals to form ionic salts (halides)."
         },
         {
           "term": "Halogen Displacement Reaction",
-          "def": "A redox reaction in which a more reactive halogen displaces a less reactive halide ion from its aqueous salt solution."
+          "def": "A redox reaction in which a more reactive halogen displaces a less reactive halide ion from its aqueous salt solution.",
+          "definition": "A redox reaction in which a more reactive halogen displaces a less reactive halide ion from its aqueous salt solution."
         },
         {
           "term": "Metalloid",
-          "def": "An element whose physical and chemical properties are intermediate between those of typical metals and non-metals (e.g. Silicon, Germanium, Boron, Arsenic)."
+          "def": "An element whose physical and chemical properties are intermediate between those of typical metals and non-metals (e.g. Silicon, Germanium, Boron, Arsenic).",
+          "definition": "An element whose physical and chemical properties are intermediate between those of typical metals and non-metals (e.g. Silicon, Germanium, Boron, Arsenic)."
         }
       ],
       "differences": [
@@ -7238,7 +9348,295 @@ Object.assign(DATA, {
             ]
           ]
         }
-      ]
+      ],
+      "sloQuestions": {
+        "mcqs": [
+          {
+            "q": "The electropositive character of metals down a group:",
+            "opts": [
+              "(a) Decreases",
+              "(b) Increases",
+              "(c) Remains constant",
+              "(d) Becomes zero"
+            ],
+            "ans": "(b) Increases",
+            "exp": "Down a group, atomic radius expands and ionization energy drops, increasing electropositivity."
+          },
+          {
+            "q": "Which of the following metals can be easily sliced with a kitchen knife?",
+            "opts": [
+              "(a) Iron",
+              "(b) Copper",
+              "(c) Sodium",
+              "(d) Magnesium"
+            ],
+            "ans": "(c) Sodium",
+            "exp": "Alkali metals (Na, K) are soft and easily cut with a knife."
+          },
+          {
+            "q": "What is the oxidation state of Alkali Metals (Group 1) in their compounds?",
+            "opts": [
+              "(a) +1",
+              "(b) +2",
+              "(c) +3",
+              "(d) -1"
+            ],
+            "ans": "(a) +1",
+            "exp": "Group 1 metals lose 1 valence electron to exhibit a fixed +1 oxidation state."
+          },
+          {
+            "q": "What is the flame test color produced by Sodium?",
+            "opts": [
+              "(a) Crimson red",
+              "(b) Golden yellow",
+              "(c) Lilac violet",
+              "(d) Apple green"
+            ],
+            "ans": "(b) Golden yellow",
+            "exp": "Sodium imparts a persistent, brilliant golden-yellow color to a Bunsen flame."
+          },
+          {
+            "q": "Which alkali metal forms a normal monoxide (Li₂O) when burned in air?",
+            "opts": [
+              "(a) Lithium",
+              "(b) Sodium",
+              "(c) Potassium",
+              "(d) Rubidium"
+            ],
+            "ans": "(a) Lithium",
+            "exp": "Due to its small size, Lithium forms normal oxide Li₂O; Na forms peroxide; K forms superoxide."
+          },
+          {
+            "q": "The purity of 18-Carat gold is:",
+            "opts": [
+              "(a) 50%",
+              "(b) 75%",
+              "(c) 91.6%",
+              "(d) 100%"
+            ],
+            "ans": "(b) 75%",
+            "exp": "(18 / 24) × 100 = 75.0% pure gold."
+          },
+          {
+            "q": "Aqua Regia is prepared by mixing concentrated HCl and concentrated HNO₃ in ratio:",
+            "opts": [
+              "(a) 1:1",
+              "(b) 1:3",
+              "(c) 3:1",
+              "(d) 4:1"
+            ],
+            "ans": "(c) 3:1",
+            "exp": "Aqua Regia consists of 3 parts conc. HCl and 1 part conc. HNO₃."
+          },
+          {
+            "q": "The only liquid non-metal at standard conditions is:",
+            "opts": [
+              "(a) Mercury",
+              "(b) Bromine",
+              "(c) Chlorine",
+              "(d) Iodine"
+            ],
+            "ans": "(b) Bromine",
+            "exp": "Bromine (Br₂) is the only liquid non-metal (Mercury is a liquid metal)."
+          },
+          {
+            "q": "Which halogen possesses the greatest oxidizing power and reactivity?",
+            "opts": [
+              "(a) Fluorine",
+              "(b) Chlorine",
+              "(c) Bromine",
+              "(d) Iodine"
+            ],
+            "ans": "(a) Fluorine",
+            "exp": "Fluorine (F₂) is the most electronegative and powerful oxidizing halogen."
+          },
+          {
+            "q": "Liquid Nitrogen is used in medicine and laboratories for:",
+            "opts": [
+              "(a) Disinfection",
+              "(b) Cryogenic preservation at -196°C",
+              "(c) Breathing therapy",
+              "(d) Water softening"
+            ],
+            "ans": "(b) Cryogenic preservation at -196°C",
+            "exp": "Liquid N₂ boils at -196°C and preserves biological cells, organs, and semen."
+          },
+          {
+            "q": "Which gas is used in the hydrogenation of vegetable oil to make Banaspati Ghee?",
+            "opts": [
+              "(a) Oxygen",
+              "(b) Hydrogen",
+              "(c) Nitrogen",
+              "(d) Carbon dioxide"
+            ],
+            "ans": "(b) Hydrogen",
+            "exp": "Catalytic hydrogenation with H₂ gas converts unsaturated liquid oil into solid ghee."
+          },
+          {
+            "q": "Which metal is used to make aircraft bodies due to its high strength and low density?",
+            "opts": [
+              "(a) Lead",
+              "(b) Aluminium (and Magnalium)",
+              "(c) Copper",
+              "(d) Gold"
+            ],
+            "ans": "(b) Aluminium (and Magnalium)",
+            "exp": "Aluminium and its magnesium alloy Magnalium are lightweight, corrosion-resistant, and strong."
+          },
+          {
+            "q": "The chemical formula of Milk of Magnesia used as an antacid is:",
+            "opts": [
+              "(a) MgSO₄",
+              "(b) Mg(OH)₂",
+              "(c) MgO",
+              "(d) MgCl₂"
+            ],
+            "ans": "(b) Mg(OH)₂",
+            "exp": "Magnesium hydroxide suspension is milk of magnesia."
+          },
+          {
+            "q": "Which non-metal is an electrical conductor?",
+            "opts": [
+              "(a) Diamond",
+              "(b) Graphite",
+              "(c) Sulphur",
+              "(d) Phosphorus"
+            ],
+            "ans": "(b) Graphite",
+            "exp": "Graphite conducts electricity due to free mobile π-electrons between sheets."
+          },
+          {
+            "q": "Oxy-acetylene welding torches achieve flame temperatures up to:",
+            "opts": [
+              "(a) 1000 °C",
+              "(b) 2000 °C",
+              "(c) 3000 °C",
+              "(d) 5000 °C"
+            ],
+            "ans": "(c) 3000 °C",
+            "exp": "Burning acetylene in pure oxygen reaches ~3000°C for cutting and welding steel."
+          },
+          {
+            "q": "Which halogen sublimes directly from a dark solid to purple vapor?",
+            "opts": [
+              "(a) Fluorine",
+              "(b) Chlorine",
+              "(c) Bromine",
+              "(d) Iodine"
+            ],
+            "ans": "(d) Iodine",
+            "exp": "Iodine crystals sublime into rich purple-violet vapors upon heating."
+          },
+          {
+            "q": "Which metal is stored under kerosene oil?",
+            "opts": [
+              "(a) Magnesium",
+              "(b) Sodium",
+              "(c) Calcium",
+              "(d) Iron"
+            ],
+            "ans": "(b) Sodium",
+            "exp": "Sodium is stored under kerosene to prevent instant oxidation by moist air."
+          },
+          {
+            "q": "In the reaction Cl₂ + 2KI → 2KCl + I₂, Chlorine acts as an:",
+            "opts": [
+              "(a) Oxidizing agent",
+              "(b) Reducing agent",
+              "(c) Catalyst",
+              "(d) Acid"
+            ],
+            "ans": "(a) Oxidizing agent",
+            "exp": "Chlorine accepts electrons from iodide ions, acting as the oxidizing agent."
+          },
+          {
+            "q": "The anti-cancer chemotherapy drug Cisplatin contains which noble metal?",
+            "opts": [
+              "(a) Gold",
+              "(b) Silver",
+              "(c) Platinum",
+              "(d) Copper"
+            ],
+            "ans": "(c) Platinum",
+            "exp": "Cisplatin is a platinum-based coordination complex widely used in cancer therapy."
+          },
+          {
+            "q": "Which element has the highest thermal and electrical conductivity among all metals?",
+            "opts": [
+              "(a) Copper",
+              "(b) Silver (Ag)",
+              "(c) Gold",
+              "(d) Aluminium"
+            ],
+            "ans": "(b) Silver (Ag)",
+            "exp": "Silver has the highest electrical and thermal conductivity of all known metals."
+          }
+        ],
+        "shortQuestions": [
+          {
+            "q": "1. What is meant by Electropositive character?",
+            "a": "The tendency of an atom to lose its valence electrons and form a positive cation. High electropositivity is the defining characteristic of metals."
+          },
+          {
+            "q": "2. Why is pure Gold alloyed with Copper or Silver?",
+            "a": "Pure 24K gold is too soft and malleable to retain shapes in jewelry. Alloying with Cu or Ag increases hardness, rigidity, and durability."
+          },
+          {
+            "q": "3. What is the composition of Aqua Regia?",
+            "a": "A 3:1 volumetric mixture of concentrated Hydrochloric acid ($\\text{HCl}$) and concentrated Nitric acid ($\\text{HNO}_3$)."
+          },
+          {
+            "q": "4. Write the reaction of Chlorine with Potassium Bromide solution.",
+            "a": "$$\\text{Cl}_2(g) + 2\\text{KBr}_{(aq)} \\longrightarrow 2\\text{KCl}_{(aq)} + \\text{Br}_2(l)$$\nChlorine oxidizes bromide ions to elemental reddish-brown bromine."
+          },
+          {
+            "q": "5. Why are noble metals unreactive under normal conditions?",
+            "a": "Noble metals (Cu, Ag, Au, Pt) have high ionization energies, high positive reduction potentials, and low hydration energies, making them chemically inert."
+          },
+          {
+            "q": "6. State two medical uses of Non-Metals.",
+            "a": "1. **Oxygen ($O_2$):** Hospital inhalation cylinders for critical respiratory patients.\n2. **Iodine ($I_2$):** Tincture of iodine antiseptic and Thyroid hormone regulation."
+          },
+          {
+            "q": "7. What is Magnalium and where is it used?",
+            "a": "An alloy of Aluminium (95%) and Magnesium (5%). It is lightweight, tough, and used in aircraft and missile construction."
+          },
+          {
+            "q": "8. Why does Magnesium burn in air with a dazzling white flame?",
+            "a": "The combustion of magnesium is violently exothermic ($2\\text{Mg} + \\text{O}_2 \\rightarrow 2\\text{MgO}$), heating the solid product to incandescence and producing intense white light."
+          },
+          {
+            "q": "9. Calculate the percentage purity of 21-Carat gold.",
+            "a": "$$\\% \\text{ Purity} = \\frac{21}{24} \\times 100 = \\mathbf{87.5\\%}$$"
+          },
+          {
+            "q": "10. Name the gases used in oxy-acetylene welding.",
+            "a": "Acetylene (Ethyne, $\\text{C}_2\\text{H}_2$) and pure Oxygen ($\\text{O}_2$)."
+          }
+        ],
+        "longQuestions": [
+          {
+            "q": "1. Discuss the chemical properties of Alkali Metals (Li, Na, K) and Alkaline Earth Metals (Mg, Ca) including their reactions with Water, Oxygen, and Halogens.",
+            "a": "**1. Reactions with Water:**\n- Alkali: $2M + 2H_2O \\rightarrow 2MOH + H_2$ (Violent, exothermic).\n- Alkaline Earth: $Mg + H_2O(g) \\rightarrow MgO + H_2$ (Requires steam); $Ca + 2H_2O \\rightarrow Ca(OH)_2 + H_2$.\n\n**2. Reactions with Oxygen:**\n- $4Li + O_2 \\rightarrow 2Li_2O$; $2Na + O_2 \\rightarrow Na_2O_2$; $K + O_2 \\rightarrow KO_2$.\n- $2Mg + O_2 \\rightarrow 2MgO$ (Dazzling white light); $2Ca + O_2 \\rightarrow 2CaO$.\n\n**3. Reactions with Halogens:**\n- $2Na + Cl_2 \\rightarrow 2NaCl$; $Mg + Cl_2 \\rightarrow MgCl_2$."
+          },
+          {
+            "q": "2. Explain the Noble Metals (Cu, Ag, Au, Pt), the dissolution mechanism in Aqua Regia, and calculate gold purities using the 24-Carat system.",
+            "a": "**1. Noble Metals:** Inert metals with high reduction potentials resisting corrosion.\n\n**2. Aqua Regia Dissolution:**\n$$3\\text{HCl} + \\text{HNO}_3 \\longrightarrow \\text{NOCl} + 2\\text{H}_2\\text{O} + 2[\\text{Cl}]$$\n$$\\text{Au} + 3[\\text{Cl}] + \\text{HCl} \\longrightarrow \\text{HAuCl}_4$$\n\n**3. Carat Calculations:**\n- $24\\text{ K} = 100\\%$\n- $22\\text{ K} = (22/24) \\times 100 = 91.67\\%$\n- $18\\text{ K} = (18/24) \\times 100 = 75.00\\%$\n- $14\\text{ K} = (14/24) \\times 100 = 58.33\\%$."
+          },
+          {
+            "q": "3. Describe the chemical reactivity of Halogens, their periodic trends, and halogen displacement reactions with four balanced chemical equations.",
+            "a": "**1. Reactivity:** $F_2 > Cl_2 > Br_2 > I_2$. High electronegativity pulls electrons forming halide anions ($X^-$).\n\n**2. Displacement Reactions:**\n- $\\text{Cl}_2 + 2\\text{KBr} \\rightarrow 2\\text{KCl} + \\text{Br}_2$\n- $\\text{Cl}_2 + 2\\text{KI} \\rightarrow 2\\text{KCl} + \\text{I}_2$\n- $\\text{Br}_2 + 2\\text{KI} \\rightarrow 2\\text{KBr} + \\text{I}_2$\n- $I_2$ cannot displace $Br_2$ or $Cl_2$."
+          },
+          {
+            "q": "4. Detail the everyday and industrial applications of major Metals: Sodium, Magnesium, Aluminium, Iron, Copper, and Platinum.",
+            "a": "**1. Sodium:** Fast reactor coolant, yellow street lamps, $NaCN$.\n**2. Magnesium:** Aircraft magnalium, fireworks, antacid milk of magnesia.\n**3. Aluminium:** Airplane frames, high-voltage power lines, foil, thermite welding.\n**4. Iron:** Steel construction, bridges, railways, blood hemoglobin.\n**5. Copper:** Wiring, plumbing, brass ($Cu+Zn$) and bronze ($Cu+Sn$).\n**6. Platinum:** Car catalytic converters, pacemakers, Cisplatin cancer chemotherapy."
+          },
+          {
+            "q": "5. Detail the essential applications of Non-Metals: Hydrogen, Carbon, Nitrogen, Oxygen, and Chlorine.",
+            "a": "**1. Hydrogen:** Ammonia synthesis (Haber process), ghee hydrogenation, rocket fuel.\n**2. Carbon:** Diamond cutting, graphite electrodes, charcoal filtration.\n**3. Nitrogen:** Snack food packaging, urea fertilizer synthesis, liquid $N_2$ cryo-preservation (-196°C).\n**4. Oxygen:** Biological respiration, hospital therapy, steel blast furnaces, oxy-acetylene welding (3000°C).\n**5. Chlorine:** Municipal water disinfection, bleaching powder, PVC plastics."
+          }
+        ]
+      }
     }
   ],
   "chem10Chapters": [
@@ -7664,35 +10062,43 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Chemical Equilibrium",
-          "def": "A state in a reversible reaction in a closed system where the forward and reverse reaction rates are equal, and the concentrations of reactants and products remain constant."
+          "def": "A state in a reversible reaction in a closed system where the forward and reverse reaction rates are equal, and the concentrations of reactants and products remain constant.",
+          "definition": "A state in a reversible reaction in a closed system where the forward and reverse reaction rates are equal, and the concentrations of reactants and products remain constant."
         },
         {
           "term": "Reversible Reaction",
-          "def": "A chemical reaction in which the products can react together under the same conditions to regenerate the original reactants, denoted by ⇌."
+          "def": "A chemical reaction in which the products can react together under the same conditions to regenerate the original reactants, denoted by ⇌.",
+          "definition": "A chemical reaction in which the products can react together under the same conditions to regenerate the original reactants, denoted by ⇌."
         },
         {
           "term": "Irreversible Reaction",
-          "def": "A reaction that proceeds only in one direction until reactants are completely converted into products, denoted by →."
+          "def": "A reaction that proceeds only in one direction until reactants are completely converted into products, denoted by →.",
+          "definition": "A reaction that proceeds only in one direction until reactants are completely converted into products, denoted by →."
         },
         {
           "term": "Dynamic Equilibrium",
-          "def": "An equilibrium state where forward and reverse reactions continue simultaneously at equal rates with zero net change in macroscopic properties."
+          "def": "An equilibrium state where forward and reverse reactions continue simultaneously at equal rates with zero net change in macroscopic properties.",
+          "definition": "An equilibrium state where forward and reverse reactions continue simultaneously at equal rates with zero net change in macroscopic properties."
         },
         {
           "term": "Active Mass",
-          "def": "The molar concentration of a reacting substance expressed in moles per cubic decimeter (mol·dm⁻³) in a dilute solution, denoted by [ ]."
+          "def": "The molar concentration of a reacting substance expressed in moles per cubic decimeter (mol·dm⁻³) in a dilute solution, denoted by [ ].",
+          "definition": "The molar concentration of a reacting substance expressed in moles per cubic decimeter (mol·dm⁻³) in a dilute solution, denoted by [ ]."
         },
         {
           "term": "Law of Mass Action",
-          "def": "Formulated by Guldberg and Waage (1869), stating that the rate of a chemical reaction is directly proportional to the product of active masses of reacting substances."
+          "def": "Formulated by Guldberg and Waage (1869), stating that the rate of a chemical reaction is directly proportional to the product of active masses of reacting substances.",
+          "definition": "Formulated by Guldberg and Waage (1869), stating that the rate of a chemical reaction is directly proportional to the product of active masses of reacting substances."
         },
         {
           "term": "Equilibrium Constant (Kc)",
-          "def": "The ratio of the product of equilibrium concentrations of products to reactants, each raised to the power of its stoichiometric coefficient in the balanced equation."
+          "def": "The ratio of the product of equilibrium concentrations of products to reactants, each raised to the power of its stoichiometric coefficient in the balanced equation.",
+          "definition": "The ratio of the product of equilibrium concentrations of products to reactants, each raised to the power of its stoichiometric coefficient in the balanced equation."
         },
         {
           "term": "Reaction Quotient (Qc)",
-          "def": "The ratio of concentrations of products to reactants at any given instant before equilibrium is reached, used to predict reaction direction."
+          "def": "The ratio of concentrations of products to reactants at any given instant before equilibrium is reached, used to predict reaction direction.",
+          "definition": "The ratio of concentrations of products to reactants at any given instant before equilibrium is reached, used to predict reaction direction."
         }
       ],
       "differences": [
@@ -8259,43 +10665,53 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Arrhenius Acid",
-          "def": "A substance that dissociates in aqueous solution to give hydrogen ions (H⁺)."
+          "def": "A substance that dissociates in aqueous solution to give hydrogen ions (H⁺).",
+          "definition": "A substance that dissociates in aqueous solution to give hydrogen ions (H⁺)."
         },
         {
           "term": "Arrhenius Base",
-          "def": "A substance that dissociates in aqueous solution to give hydroxide ions (OH⁻)."
+          "def": "A substance that dissociates in aqueous solution to give hydroxide ions (OH⁻).",
+          "definition": "A substance that dissociates in aqueous solution to give hydroxide ions (OH⁻)."
         },
         {
           "term": "Bronsted-Lowry Acid",
-          "def": "A chemical species that donates or tends to donate a proton (H⁺) to another substance."
+          "def": "A chemical species that donates or tends to donate a proton (H⁺) to another substance.",
+          "definition": "A chemical species that donates or tends to donate a proton (H⁺) to another substance."
         },
         {
           "term": "Bronsted-Lowry Base",
-          "def": "A chemical species that accepts or tends to accept a proton (H⁺) from another substance."
+          "def": "A chemical species that accepts or tends to accept a proton (H⁺) from another substance.",
+          "definition": "A chemical species that accepts or tends to accept a proton (H⁺) from another substance."
         },
         {
           "term": "Lewis Acid",
-          "def": "A chemical species that can accept an electron pair to form a coordinate covalent bond (e.g. BF₃, AlCl₃, H⁺)."
+          "def": "A chemical species that can accept an electron pair to form a coordinate covalent bond (e.g. BF₃, AlCl₃, H⁺).",
+          "definition": "A chemical species that can accept an electron pair to form a coordinate covalent bond (e.g. BF₃, AlCl₃, H⁺)."
         },
         {
           "term": "Lewis Base",
-          "def": "A chemical species that can donate an electron pair to form a coordinate covalent bond (e.g. :NH₃, H₂O, OH⁻)."
+          "def": "A chemical species that can donate an electron pair to form a coordinate covalent bond (e.g. :NH₃, H₂O, OH⁻).",
+          "definition": "A chemical species that can donate an electron pair to form a coordinate covalent bond (e.g. :NH₃, H₂O, OH⁻)."
         },
         {
           "term": "Amphoteric Substance",
-          "def": "A substance capable of behaving either as an acid or as a base depending on the reaction medium (e.g. H₂O)."
+          "def": "A substance capable of behaving either as an acid or as a base depending on the reaction medium (e.g. H₂O).",
+          "definition": "A substance capable of behaving either as an acid or as a base depending on the reaction medium (e.g. H₂O)."
         },
         {
           "term": "Auto-ionization of Water",
-          "def": "The self-ionization of two water molecules producing hydronium (H₃O⁺) and hydroxide (OH⁻) ions."
+          "def": "The self-ionization of two water molecules producing hydronium (H₃O⁺) and hydroxide (OH⁻) ions.",
+          "definition": "The self-ionization of two water molecules producing hydronium (H₃O⁺) and hydroxide (OH⁻) ions."
         },
         {
           "term": "pH",
-          "def": "The negative logarithm to base 10 of the molar hydrogen ion concentration: pH = -log[H⁺]."
+          "def": "The negative logarithm to base 10 of the molar hydrogen ion concentration: pH = -log[H⁺].",
+          "definition": "The negative logarithm to base 10 of the molar hydrogen ion concentration: pH = -log[H⁺]."
         },
         {
           "term": "Neutralization",
-          "def": "A reaction between an acid and a base producing a salt and water: Acid + Base → Salt + Water."
+          "def": "A reaction between an acid and a base producing a salt and water: Acid + Base → Salt + Water.",
+          "definition": "A reaction between an acid and a base producing a salt and water: Acid + Base → Salt + Water."
         }
       ],
       "differences": [
@@ -8902,35 +11318,43 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Organic Chemistry",
-          "def": "The branch of chemistry that deals with the study of hydrocarbons and their derivatives."
+          "def": "The branch of chemistry that deals with the study of hydrocarbons and their derivatives.",
+          "definition": "The branch of chemistry that deals with the study of hydrocarbons and their derivatives."
         },
         {
           "term": "Vital Force Theory",
-          "def": "Early theory proposed by Berzelius stating that organic compounds could only be synthesized within living organisms under a supernatural vital force."
+          "def": "Early theory proposed by Berzelius stating that organic compounds could only be synthesized within living organisms under a supernatural vital force.",
+          "definition": "Early theory proposed by Berzelius stating that organic compounds could only be synthesized within living organisms under a supernatural vital force."
         },
         {
           "term": "Catenation",
-          "def": "The self-linking ability of carbon atoms through covalent bonds to form long open chains and rings."
+          "def": "The self-linking ability of carbon atoms through covalent bonds to form long open chains and rings.",
+          "definition": "The self-linking ability of carbon atoms through covalent bonds to form long open chains and rings."
         },
         {
           "term": "Isomerism",
-          "def": "The phenomenon where two or more compounds share the same molecular formula but possess different structural arrangements."
+          "def": "The phenomenon where two or more compounds share the same molecular formula but possess different structural arrangements.",
+          "definition": "The phenomenon where two or more compounds share the same molecular formula but possess different structural arrangements."
         },
         {
           "term": "Homologous Series",
-          "def": "A family of organic compounds sharing the same general formula and functional group, where adjacent members differ by -CH₂- (14 a.m.u.)."
+          "def": "A family of organic compounds sharing the same general formula and functional group, where adjacent members differ by -CH₂- (14 a.m.u.).",
+          "definition": "A family of organic compounds sharing the same general formula and functional group, where adjacent members differ by -CH₂- (14 a.m.u.)."
         },
         {
           "term": "Alkyl Radical",
-          "def": "A group of atoms formed by removing one hydrogen atom from an alkane molecule, represented by R- with general formula CnH2n+1."
+          "def": "A group of atoms formed by removing one hydrogen atom from an alkane molecule, represented by R- with general formula CnH2n+1.",
+          "definition": "A group of atoms formed by removing one hydrogen atom from an alkane molecule, represented by R- with general formula CnH2n+1."
         },
         {
           "term": "Functional Group",
-          "def": "An atom or group of atoms responsible for the characteristic chemical properties of an organic compound."
+          "def": "An atom or group of atoms responsible for the characteristic chemical properties of an organic compound.",
+          "definition": "An atom or group of atoms responsible for the characteristic chemical properties of an organic compound."
         },
         {
           "term": "Destructive Distillation",
-          "def": "The process of heating coal to high temperatures (500–1000°C) in the absence of air to produce coal gas, ammoniacal liquor, coal tar, and coke."
+          "def": "The process of heating coal to high temperatures (500–1000°C) in the absence of air to produce coal gas, ammoniacal liquor, coal tar, and coke.",
+          "definition": "The process of heating coal to high temperatures (500–1000°C) in the absence of air to produce coal gas, ammoniacal liquor, coal tar, and coke."
         }
       ],
       "differences": [
@@ -9516,35 +11940,43 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Hydrocarbon",
-          "def": "An organic compound consisting entirely of hydrogen and carbon atoms."
+          "def": "An organic compound consisting entirely of hydrogen and carbon atoms.",
+          "definition": "An organic compound consisting entirely of hydrogen and carbon atoms."
         },
         {
           "term": "Alkane",
-          "def": "A saturated open-chain hydrocarbon containing only carbon-carbon single covalent bonds with general formula CnH2n+2."
+          "def": "A saturated open-chain hydrocarbon containing only carbon-carbon single covalent bonds with general formula CnH2n+2.",
+          "definition": "A saturated open-chain hydrocarbon containing only carbon-carbon single covalent bonds with general formula CnH2n+2."
         },
         {
           "term": "Alkene",
-          "def": "An unsaturated open-chain hydrocarbon containing at least one carbon-carbon double bond with general formula CnH2n."
+          "def": "An unsaturated open-chain hydrocarbon containing at least one carbon-carbon double bond with general formula CnH2n.",
+          "definition": "An unsaturated open-chain hydrocarbon containing at least one carbon-carbon double bond with general formula CnH2n."
         },
         {
           "term": "Alkyne",
-          "def": "An unsaturated open-chain hydrocarbon containing at least one carbon-carbon triple bond with general formula CnH2n-2."
+          "def": "An unsaturated open-chain hydrocarbon containing at least one carbon-carbon triple bond with general formula CnH2n-2.",
+          "definition": "An unsaturated open-chain hydrocarbon containing at least one carbon-carbon triple bond with general formula CnH2n-2."
         },
         {
           "term": "Dehydration",
-          "def": "A chemical reaction involving the elimination of a molecule of water from an alcohol using conc. H₂SO₄ at 170°C."
+          "def": "A chemical reaction involving the elimination of a molecule of water from an alcohol using conc. H₂SO₄ at 170°C.",
+          "definition": "A chemical reaction involving the elimination of a molecule of water from an alcohol using conc. H₂SO₄ at 170°C."
         },
         {
           "term": "Dehydrohalogenation",
-          "def": "The removal of a hydrogen atom and a halogen atom from adjacent carbon atoms of an alkyl halide using alcoholic KOH."
+          "def": "The removal of a hydrogen atom and a halogen atom from adjacent carbon atoms of an alkyl halide using alcoholic KOH.",
+          "definition": "The removal of a hydrogen atom and a halogen atom from adjacent carbon atoms of an alkyl halide using alcoholic KOH."
         },
         {
           "term": "Baeyer's Test",
-          "def": "The diagnostic oxidation test for unsaturation using cold, dilute alkaline KMnO₄ solution, which decolourises to form a vicinal glycol."
+          "def": "The diagnostic oxidation test for unsaturation using cold, dilute alkaline KMnO₄ solution, which decolourises to form a vicinal glycol.",
+          "definition": "The diagnostic oxidation test for unsaturation using cold, dilute alkaline KMnO₄ solution, which decolourises to form a vicinal glycol."
         },
         {
           "term": "Oxyacetylene Flame",
-          "def": "An intensely hot flame (>3000°C) produced by burning ethyne (acetylene) in pure oxygen, utilized for welding and cutting metals."
+          "def": "An intensely hot flame (>3000°C) produced by burning ethyne (acetylene) in pure oxygen, utilized for welding and cutting metals.",
+          "definition": "An intensely hot flame (>3000°C) produced by burning ethyne (acetylene) in pure oxygen, utilized for welding and cutting metals."
         }
       ],
       "differences": [
@@ -10076,43 +12508,53 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Biochemistry",
-          "def": "The branch of chemistry dealing with chemical substances and vital processes occurring in living organisms."
+          "def": "The branch of chemistry dealing with chemical substances and vital processes occurring in living organisms.",
+          "definition": "The branch of chemistry dealing with chemical substances and vital processes occurring in living organisms."
         },
         {
           "term": "Carbohydrate",
-          "def": "A polyhydroxy aldehyde or ketone, or substance that yields them upon hydrolysis, with general formula Cx(H₂O)y."
+          "def": "A polyhydroxy aldehyde or ketone, or substance that yields them upon hydrolysis, with general formula Cx(H₂O)y.",
+          "definition": "A polyhydroxy aldehyde or ketone, or substance that yields them upon hydrolysis, with general formula Cx(H₂O)y."
         },
         {
           "term": "Monosaccharide",
-          "def": "A simple sugar containing 3 to 9 carbon atoms that cannot be hydrolyzed into simpler sugars (e.g. Glucose, Fructose)."
+          "def": "A simple sugar containing 3 to 9 carbon atoms that cannot be hydrolyzed into simpler sugars (e.g. Glucose, Fructose).",
+          "definition": "A simple sugar containing 3 to 9 carbon atoms that cannot be hydrolyzed into simpler sugars (e.g. Glucose, Fructose)."
         },
         {
           "term": "Polysaccharide",
-          "def": "A high molecular mass polymer consisting of hundreds or thousands of monosaccharide units joined by glycosidic bonds (e.g. Starch, Cellulose)."
+          "def": "A high molecular mass polymer consisting of hundreds or thousands of monosaccharide units joined by glycosidic bonds (e.g. Starch, Cellulose).",
+          "definition": "A high molecular mass polymer consisting of hundreds or thousands of monosaccharide units joined by glycosidic bonds (e.g. Starch, Cellulose)."
         },
         {
           "term": "Amino Acid",
-          "def": "A bifunctional organic compound containing an amino group (-NH₂) and a carboxyl group (-COOH) attached to the same alpha carbon."
+          "def": "A bifunctional organic compound containing an amino group (-NH₂) and a carboxyl group (-COOH) attached to the same alpha carbon.",
+          "definition": "A bifunctional organic compound containing an amino group (-NH₂) and a carboxyl group (-COOH) attached to the same alpha carbon."
         },
         {
           "term": "Peptide Bond",
-          "def": "The covalent amide linkage (-CO-NH-) formed between the carboxyl group of one amino acid and the amino group of another."
+          "def": "The covalent amide linkage (-CO-NH-) formed between the carboxyl group of one amino acid and the amino group of another.",
+          "definition": "The covalent amide linkage (-CO-NH-) formed between the carboxyl group of one amino acid and the amino group of another."
         },
         {
           "term": "Denaturation",
-          "def": "The structural unfolding of a native protein resulting in loss of secondary and tertiary shape and biological activity."
+          "def": "The structural unfolding of a native protein resulting in loss of secondary and tertiary shape and biological activity.",
+          "definition": "The structural unfolding of a native protein resulting in loss of secondary and tertiary shape and biological activity."
         },
         {
           "term": "Triglyceride",
-          "def": "A lipid ester formed from one molecule of glycerol and three long-chain fatty acid molecules."
+          "def": "A lipid ester formed from one molecule of glycerol and three long-chain fatty acid molecules.",
+          "definition": "A lipid ester formed from one molecule of glycerol and three long-chain fatty acid molecules."
         },
         {
           "term": "Nucleotide",
-          "def": "The monomer building block of nucleic acids consisting of a pentose sugar, a nitrogenous base, and a phosphate group."
+          "def": "The monomer building block of nucleic acids consisting of a pentose sugar, a nitrogenous base, and a phosphate group.",
+          "definition": "The monomer building block of nucleic acids consisting of a pentose sugar, a nitrogenous base, and a phosphate group."
         },
         {
           "term": "Vitamin",
-          "def": "An essential organic micronutrient required in tiny amounts in the diet for normal physiological function and disease prevention."
+          "def": "An essential organic micronutrient required in tiny amounts in the diet for normal physiological function and disease prevention.",
+          "definition": "An essential organic micronutrient required in tiny amounts in the diet for normal physiological function and disease prevention."
         }
       ],
       "differences": [
@@ -10676,39 +13118,48 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Atmosphere",
-          "def": "The thick blanket of gases and air surrounding Earth held by terrestrial gravity that sustains life and moderates planetary temperature."
+          "def": "The thick blanket of gases and air surrounding Earth held by terrestrial gravity that sustains life and moderates planetary temperature.",
+          "definition": "The thick blanket of gases and air surrounding Earth held by terrestrial gravity that sustains life and moderates planetary temperature."
         },
         {
           "term": "Troposphere",
-          "def": "The lowest atmospheric layer (0–12 km) containing 80% of air mass and all weather phenomena, where temperature drops by 6.5°C/km."
+          "def": "The lowest atmospheric layer (0–12 km) containing 80% of air mass and all weather phenomena, where temperature drops by 6.5°C/km.",
+          "definition": "The lowest atmospheric layer (0–12 km) containing 80% of air mass and all weather phenomena, where temperature drops by 6.5°C/km."
         },
         {
           "term": "Stratosphere",
-          "def": "The atmospheric layer (12–50 km) containing the protective ozone layer, where temperature rises from -56°C to -2°C due to UV absorption."
+          "def": "The atmospheric layer (12–50 km) containing the protective ozone layer, where temperature rises from -56°C to -2°C due to UV absorption.",
+          "definition": "The atmospheric layer (12–50 km) containing the protective ozone layer, where temperature rises from -56°C to -2°C due to UV absorption."
         },
         {
           "term": "Primary Pollutant",
-          "def": "A harmful substance emitted directly into the atmosphere from an identifiable source (e.g. CO, SO₂, NO, unburnt hydrocarbons)."
+          "def": "A harmful substance emitted directly into the atmosphere from an identifiable source (e.g. CO, SO₂, NO, unburnt hydrocarbons).",
+          "definition": "A harmful substance emitted directly into the atmosphere from an identifiable source (e.g. CO, SO₂, NO, unburnt hydrocarbons)."
         },
         {
           "term": "Secondary Pollutant",
-          "def": "A harmful substance formed in the atmosphere through chemical reactions between primary pollutants and normal air constituents (e.g. H₂SO₄, HNO₃, O₃, PAN)."
+          "def": "A harmful substance formed in the atmosphere through chemical reactions between primary pollutants and normal air constituents (e.g. H₂SO₄, HNO₃, O₃, PAN).",
+          "definition": "A harmful substance formed in the atmosphere through chemical reactions between primary pollutants and normal air constituents (e.g. H₂SO₄, HNO₃, O₃, PAN)."
         },
         {
           "term": "Acid Rain",
-          "def": "Any precipitation with a pH less than 5.6 caused by the dissolution of atmospheric sulphur dioxide and nitrogen oxides forming H₂SO₄ and HNO₃."
+          "def": "Any precipitation with a pH less than 5.6 caused by the dissolution of atmospheric sulphur dioxide and nitrogen oxides forming H₂SO₄ and HNO₃.",
+          "definition": "Any precipitation with a pH less than 5.6 caused by the dissolution of atmospheric sulphur dioxide and nitrogen oxides forming H₂SO₄ and HNO₃."
         },
         {
           "term": "Greenhouse Effect",
-          "def": "The natural process by which atmospheric greenhouse gases trap outgoing longwave infrared radiation, keeping Earth's surface warm."
+          "def": "The natural process by which atmospheric greenhouse gases trap outgoing longwave infrared radiation, keeping Earth's surface warm.",
+          "definition": "The natural process by which atmospheric greenhouse gases trap outgoing longwave infrared radiation, keeping Earth's surface warm."
         },
         {
           "term": "Global Warming",
-          "def": "The continuous increase in Earth's average surface temperature caused by the buildup of human-emitted greenhouse gases."
+          "def": "The continuous increase in Earth's average surface temperature caused by the buildup of human-emitted greenhouse gases.",
+          "definition": "The continuous increase in Earth's average surface temperature caused by the buildup of human-emitted greenhouse gases."
         },
         {
           "term": "Ozone Shield",
-          "def": "A high concentration of ozone gas in the stratosphere (25–30 km) that filters out over 99% of lethal solar UV radiation."
+          "def": "A high concentration of ozone gas in the stratosphere (25–30 km) that filters out over 99% of lethal solar UV radiation.",
+          "definition": "A high concentration of ozone gas in the stratosphere (25–30 km) that filters out over 99% of lethal solar UV radiation."
         }
       ],
       "differences": [
@@ -11297,39 +13748,48 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Soft Water",
-          "def": "Water that produces rich lather readily with ordinary soap and is free from dissolved Ca²⁺ and Mg²⁺ salts."
+          "def": "Water that produces rich lather readily with ordinary soap and is free from dissolved Ca²⁺ and Mg²⁺ salts.",
+          "definition": "Water that produces rich lather readily with ordinary soap and is free from dissolved Ca²⁺ and Mg²⁺ salts."
         },
         {
           "term": "Hard Water",
-          "def": "Water that does not produce lather easily with soap and forms an insoluble sticky curd (scum) due to dissolved Ca²⁺ and Mg²⁺ ions."
+          "def": "Water that does not produce lather easily with soap and forms an insoluble sticky curd (scum) due to dissolved Ca²⁺ and Mg²⁺ ions.",
+          "definition": "Water that does not produce lather easily with soap and forms an insoluble sticky curd (scum) due to dissolved Ca²⁺ and Mg²⁺ ions."
         },
         {
           "term": "Temporary Hardness",
-          "def": "Hardness caused by dissolved bicarbonates of calcium and magnesium, which can be removed by simple boiling."
+          "def": "Hardness caused by dissolved bicarbonates of calcium and magnesium, which can be removed by simple boiling.",
+          "definition": "Hardness caused by dissolved bicarbonates of calcium and magnesium, which can be removed by simple boiling."
         },
         {
           "term": "Permanent Hardness",
-          "def": "Hardness caused by dissolved chlorides and sulphates of calcium and magnesium, requiring chemical or ion-exchange treatment."
+          "def": "Hardness caused by dissolved chlorides and sulphates of calcium and magnesium, requiring chemical or ion-exchange treatment.",
+          "definition": "Hardness caused by dissolved chlorides and sulphates of calcium and magnesium, requiring chemical or ion-exchange treatment."
         },
         {
           "term": "Clark's Method",
-          "def": "A municipal softening method for temporary hard water involving the addition of a calculated amount of slaked lime (Ca(OH)₂)."
+          "def": "A municipal softening method for temporary hard water involving the addition of a calculated amount of slaked lime (Ca(OH)₂).",
+          "definition": "A municipal softening method for temporary hard water involving the addition of a calculated amount of slaked lime (Ca(OH)₂)."
         },
         {
           "term": "Zeolite (Permutit)",
-          "def": "Hydrated sodium aluminium silicate (Na₂Z) used to soften permanent hard water via cation exchange."
+          "def": "Hydrated sodium aluminium silicate (Na₂Z) used to soften permanent hard water via cation exchange.",
+          "definition": "Hydrated sodium aluminium silicate (Na₂Z) used to soften permanent hard water via cation exchange."
         },
         {
           "term": "Boiler Scale",
-          "def": "A hard, insulating crust of insoluble salts (CaCO₃, CaSO₄) deposited inside steam boilers and hot-water pipes."
+          "def": "A hard, insulating crust of insoluble salts (CaCO₃, CaSO₄) deposited inside steam boilers and hot-water pipes.",
+          "definition": "A hard, insulating crust of insoluble salts (CaCO₃, CaSO₄) deposited inside steam boilers and hot-water pipes."
         },
         {
           "term": "Eutrophication",
-          "def": "Excessive nutrient enrichment of water bodies by nitrates and phosphates causing rapid algal blooms and dissolved oxygen depletion."
+          "def": "Excessive nutrient enrichment of water bodies by nitrates and phosphates causing rapid algal blooms and dissolved oxygen depletion.",
+          "definition": "Excessive nutrient enrichment of water bodies by nitrates and phosphates causing rapid algal blooms and dissolved oxygen depletion."
         },
         {
           "term": "Water-Borne Disease",
-          "def": "An infectious disease transmitted through the ingestion of water contaminated by pathogenic microorganisms (e.g. Cholera, Typhoid)."
+          "def": "An infectious disease transmitted through the ingestion of water contaminated by pathogenic microorganisms (e.g. Cholera, Typhoid).",
+          "definition": "An infectious disease transmitted through the ingestion of water contaminated by pathogenic microorganisms (e.g. Cholera, Typhoid)."
         }
       ],
       "differences": [
@@ -11869,43 +14329,53 @@ Object.assign(DATA, {
       "definitions": [
         {
           "term": "Mineral",
-          "def": "A naturally occurring inorganic solid substance found in the Earth's crust containing a metal combined with earthy gangue."
+          "def": "A naturally occurring inorganic solid substance found in the Earth's crust containing a metal combined with earthy gangue.",
+          "definition": "A naturally occurring inorganic solid substance found in the Earth's crust containing a metal combined with earthy gangue."
         },
         {
           "term": "Ore",
-          "def": "A mineral from which a metal can be extracted easily, profitably, and economically on a commercial scale."
+          "def": "A mineral from which a metal can be extracted easily, profitably, and economically on a commercial scale.",
+          "definition": "A mineral from which a metal can be extracted easily, profitably, and economically on a commercial scale."
         },
         {
           "term": "Gangue",
-          "def": "The rocky, sandy, clayey, and non-metallic waste impurities mixed with ores in mineral deposits."
+          "def": "The rocky, sandy, clayey, and non-metallic waste impurities mixed with ores in mineral deposits.",
+          "definition": "The rocky, sandy, clayey, and non-metallic waste impurities mixed with ores in mineral deposits."
         },
         {
           "term": "Metallurgy",
-          "def": "The commercial science and engineering process of extracting pure metals from ores, refining them, and preparing alloys."
+          "def": "The commercial science and engineering process of extracting pure metals from ores, refining them, and preparing alloys.",
+          "definition": "The commercial science and engineering process of extracting pure metals from ores, refining them, and preparing alloys."
         },
         {
           "term": "Roasting",
-          "def": "Heating concentrated ore strongly in excess air below its melting point to eliminate volatile impurities and convert sulphides to oxides."
+          "def": "Heating concentrated ore strongly in excess air below its melting point to eliminate volatile impurities and convert sulphides to oxides.",
+          "definition": "Heating concentrated ore strongly in excess air below its melting point to eliminate volatile impurities and convert sulphides to oxides."
         },
         {
           "term": "Smelting",
-          "def": "Heating roasted ore at high temperatures with flux and reducing agent to melt metal and remove gangue as slag."
+          "def": "Heating roasted ore at high temperatures with flux and reducing agent to melt metal and remove gangue as slag.",
+          "definition": "Heating roasted ore at high temperatures with flux and reducing agent to melt metal and remove gangue as slag."
         },
         {
           "term": "Matte",
-          "def": "A molten mixture of cuprous sulphide and ferrous sulphide (Cu₂S + FeS) obtained during copper smelting."
+          "def": "A molten mixture of cuprous sulphide and ferrous sulphide (Cu₂S + FeS) obtained during copper smelting.",
+          "definition": "A molten mixture of cuprous sulphide and ferrous sulphide (Cu₂S + FeS) obtained during copper smelting."
         },
         {
           "term": "Blister Copper",
-          "def": "Approximately 98% pure copper obtained from bessemerization, named for surface blisters caused by escaping SO₂ gas."
+          "def": "Approximately 98% pure copper obtained from bessemerization, named for surface blisters caused by escaping SO₂ gas.",
+          "definition": "Approximately 98% pure copper obtained from bessemerization, named for surface blisters caused by escaping SO₂ gas."
         },
         {
           "term": "Solvay Process",
-          "def": "An industrial process for manufacturing sodium carbonate (soda ash) from brine, limestone, and ammonia."
+          "def": "An industrial process for manufacturing sodium carbonate (soda ash) from brine, limestone, and ammonia.",
+          "definition": "An industrial process for manufacturing sodium carbonate (soda ash) from brine, limestone, and ammonia."
         },
         {
           "term": "Prilling",
-          "def": "The process of cooling molten urea droplets in a high cooling tower into uniform spherical solid prills."
+          "def": "The process of cooling molten urea droplets in a high cooling tower into uniform spherical solid prills.",
+          "definition": "The process of cooling molten urea droplets in a high cooling tower into uniform spherical solid prills."
         }
       ],
       "differences": [

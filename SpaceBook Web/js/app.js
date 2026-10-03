@@ -14963,6 +14963,7 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
 
   const isEng = (subjKey === 'eng');
   const isUrdu = (subjKey === 'urdu');
+  const isScience = (subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp');
 
   if (tabId === 'lesson') {
     if (isEng || isUrdu) {
@@ -16877,7 +16878,7 @@ function renderScienceConceptsTab(subjKey, ch) {
           ${definitions.length > 0 ? definitions.map(d => `
             <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:0.85rem;">
               <strong style="color:#0284c7;font-size:0.95rem;">${d.term || d.title}:</strong>
-              <div style="font-size:0.88rem;color:#334155;line-height:1.6;margin-top:0.35rem;">${d.definition || d.desc || d.content}</div>
+              <div style="font-size:0.88rem;color:#334155;line-height:1.6;margin-top:0.35rem;">${d.def || d.definition || d.desc || d.content || ''}</div>
             </div>
           `).join('') : `
             <div style="padding:1rem;color:#64748b;">Textbook concepts and definitions loaded.</div>

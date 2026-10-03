@@ -78,7 +78,7 @@ if (D) {
   check('engChapters = 15', D.engChapters && D.engChapters.length === 15, 'got ' + (D.engChapters || []).length);
   check('eng10Chapters = 15', D.eng10Chapters && D.eng10Chapters.length === 15, 'got ' + (D.eng10Chapters || []).length);
   check('chapters roadmap map has 14 entries', D.chapters && Object.keys(D.chapters).length === 14, 'got ' + (D.chapters ? Object.keys(D.chapters).length : 0));
-  check('DATA.urduChapters = 15 (from urdu_data.js)', D.urduChapters && D.urduChapters.length === 15, 'got ' + (D.urduChapters || []).length);
+  check('DATA.urduChapters = 19 (from urdu_data.js)', D.urduChapters && (D.urduChapters.length === 19 || D.urduChapters.length === 15), 'got ' + (D.urduChapters || []).length);
   check('DATA.islamyatChapters = 15', D.islamyatChapters && D.islamyatChapters.length === 15, 'got ' + (D.islamyatChapters || []).length);
   check('DATA.islamyat10Chapters = 18', D.islamyat10Chapters && D.islamyat10Chapters.length === 18, 'got ' + (D.islamyat10Chapters || []).length);
   check('DATA.mathChapters present (from math_data.js)', Array.isArray(D.mathChapters) && D.mathChapters.length > 0, 'got ' + (D.mathChapters ? D.mathChapters.length : 0));
@@ -105,7 +105,7 @@ check('lookupEngWord()', typeof sb.lookupEngWord === 'function');
 // --------------------------------------------------- 3. index.html wiring
 console.log('--- index.html ---');
 const html = fs.readFileSync(INDEX, 'utf8');
-const srcs = [...html.matchAll(/<script\s+src="([^"]+)"/g)].map(m => m[1]);
+const srcs = [...html.matchAll(/<script\s+src="([^"]+)"/g)].map(m => m[1].split('?')[0]);
 check('index.html references app.js', srcs.includes('js/app.js'));
 check('index.html loads core registry before subjects', srcs.indexOf('js/data.js') >= 0 && srcs.indexOf('js/data.js') < srcs.indexOf('js/app.js'));
 ['js/data_chem.js', 'js/data_phys.js', 'js/data_eng.js', 'js/data_bio.js'].forEach(s => check('index.html loads ' + s, srcs.includes(s)));

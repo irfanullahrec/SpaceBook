@@ -248,7 +248,7 @@ const DATA = {
         "id": "cls9-urdu",
         "name": "Urdu",
         "emoji": "📗",
-        "chapters": 15,
+        "chapters": 19,
         "hasUrdu": true
       },
       {

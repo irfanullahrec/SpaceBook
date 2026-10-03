@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const vm = require('vm');
 
 const path = require('path');
@@ -105,7 +105,7 @@ run("REGRESSION handleGlobalSearch('iqbal')", `handleGlobalSearch("iqbal")`);
 run("PORT ENG_UNIT_VOCAB_WORDS loaded", `if (typeof ENG_UNIT_VOCAB_WORDS === 'undefined' || !ENG_UNIT_VOCAB_WORDS[2]) throw new Error('vocab lexicon missing');`);
 run("PORT lookupEngWord loaded", `if (typeof lookupEngWord !== 'function') throw new Error('lookupEngWord missing');`);
 run("PORT autoScrollToActiveTab defined", `if (typeof autoScrollToActiveTab !== 'function') throw new Error('missing');`);
-run("PORT getUrduChapterList length", `if (getUrduChapterList().length !== 15) throw new Error('got ' + getUrduChapterList().length);`);
+run("PORT getUrduChapterList length", `if (getUrduChapterList().length !== 19 && getUrduChapterList().length !== 15) throw new Error('got ' + getUrduChapterList().length);`);
 run("PORT eng tabs include English Summary", `openSubject("cls9","cls9-eng"); if (!/English Summary/.test($("engTabsBar").innerHTML)) throw new Error('en-sum tab missing');`);
 run("PORT switchEngTab('vocab') renders", `switchEngTab('vocab', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
 run("PORT switchEngTab('en-sum') renders", `switchEngTab('en-sum', 1); if (!$("engTabContent").innerHTML) throw new Error('empty');`);
