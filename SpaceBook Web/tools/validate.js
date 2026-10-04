@@ -17,8 +17,8 @@ const DATA_FILES = [
   'data.js', 'drawing_1_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js',
   'data_comp.js',
   'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js',
-  'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js',
-  'math_10_data.js'
+  'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js',
+  'math_10_data.js', 'math_1_data.js'
 ];
 
 let pass = 0, fail = 0;
@@ -71,7 +71,7 @@ if (D) {
   })());
   check('class counts match subject arrays', D.classes.every(c => c.subjects === (D.subjects[c.id] || []).length),
     D.classes.map(c => c.id + ':' + c.subjects + ' vs ' + ((D.subjects[c.id] || []).length)).join(' '));
-  check('books = ' + D.books.length, D.books.length === 19, 'got ' + D.books.length);
+  check('books = ' + D.books.length, D.books.length === 20, 'got ' + D.books.length);
   check('book ids unique', new Set(D.books.map(b => b.id)).size === D.books.length);
   check('book subjects resolvable', D.books.every(b => b.classId || b.class_id), 'missing classId/class_id on ' + D.books.filter(b => !(b.classId || b.class_id)).map(b => b.id).join(','));
   check('chemChapters = 8', D.chemChapters && D.chemChapters.length === 8, 'got ' + (D.chemChapters || []).length);
@@ -87,19 +87,25 @@ if (D) {
   check('DATA.urdu10Chapters = 22 (from urdu_10_data.js)', (sb.URDU_10_DATA && sb.URDU_10_DATA.length === 22) || (D.urdu10Chapters && D.urdu10Chapters.length === 22), 'got ' + ((sb.URDU_10_DATA || D.urdu10Chapters || []).length));
   check('DATA.islamyatChapters = 15', D.islamyatChapters && D.islamyatChapters.length === 15, 'got ' + (D.islamyatChapters || []).length);
   check('DATA.islamyat10Chapters = 18', D.islamyat10Chapters && D.islamyat10Chapters.length === 18, 'got ' + (D.islamyat10Chapters || []).length);
+  check('DATA.islamyat1Chapters = 27', (sb.ISLAMYAT_1_DATA && sb.ISLAMYAT_1_DATA.length === 27) || (D.islamyat1Chapters && D.islamyat1Chapters.length === 27), 'got ' + ((sb.ISLAMYAT_1_DATA || D.islamyat1Chapters || []).length));
   check('DATA.mathChapters present (from math_data.js)', Array.isArray(D.mathChapters) && D.mathChapters.length > 0, 'got ' + (D.mathChapters ? D.mathChapters.length : 0));
   check('DATA.math10Chapters = 13 (from math_10_data.js)', (sb.MATH_10_DATA && sb.MATH_10_DATA.length === 13) || (D.math10Chapters && D.math10Chapters.length === 13), 'got ' + ((sb.MATH_10_DATA || D.math10Chapters || []).length));
-  check('islamic subjects registered', ['cls9-isl', 'cls10-isl'].every(id => [].concat(D.subjects.cls9, D.subjects.cls10).some(s => s.id === id)));
-  check('islamic books registered', ['b-cls9-isl', 'b-cls10-isl'].every(id => D.books.some(b => b.id === id)));
+  check('islamic subjects registered', ['cls9-isl', 'cls10-isl', 'cls1-isl'].every(id => [].concat(D.subjects.cls9, D.subjects.cls10, D.subjects.cls1).some(s => s.id === id)));
+  check('islamic books registered', ['b-cls9-isl', 'b-cls10-isl', 'b-cls1-isl'].every(id => D.books.some(b => b.id === id)));
 } else {
   check('DATA registry present', false, 'DATA is undefined');
 }
 
 const EN = sb.ENGLISH_DATA;
 check('Class 1 Drawing activities = 32', Array.isArray(sb.DRAWING_1_DATA) && sb.DRAWING_1_DATA.length === 32, 'got ' + ((sb.DRAWING_1_DATA || []).length));
+check('Class 1 Maths units = 6', Array.isArray(sb.MATH_1_DATA) && sb.MATH_1_DATA.length === 6, 'got ' + ((sb.MATH_1_DATA || []).length));
+check('Class 1 Maths units have lessons, examples, solved exercises and exam questions', Array.isArray(sb.MATH_1_DATA) && sb.MATH_1_DATA.every(ch => ch.sections.length && ch.workedExamples.length && ch.exercises.length && ch.slos.mcqs.length && ch.slos.shortQuestions.length && ch.slos.longQuestions.length));
+check('Class 1 Maths lessons have topic-matched Urdu text and rules', Array.isArray(sb.MATH_1_DATA) && sb.MATH_1_DATA.every(ch => ch.sections.every(sec => sec.theoryUrdu && sec.rulesUrdu && sec.rulesUrdu.length === sec.rules.length)));
 check('Drawing activities have trilingual tips', Array.isArray(sb.DRAWING_1_DATA) && sb.DRAWING_1_DATA.every(x => x.en && x.ur && x.ps && x.artwork));
 check('Drawing lessons use vector art without source scans', Array.isArray(sb.DRAWING_1_DATA) && sb.DRAWING_1_DATA.every(x => !x.image && x.artwork) && !fs.existsSync(path.join(ROOT, 'assets', 'drawing-class1')));
 check('Drawing exam practice bank complete', !!(sb.DRAWING_1_EXAM && sb.DRAWING_1_EXAM.mcqs.length && sb.DRAWING_1_EXAM.sqs.length && sb.DRAWING_1_EXAM.lqs.length));
+check('Drawing MCQs have four trilingual options', !!(sb.DRAWING_1_EXAM && sb.DRAWING_1_EXAM.mcqs.every(q => q.options.length === 4 && q.optionsUr.length === 4 && q.optionsPs.length === 4 && q.qUr && q.qPs)));
+check('Drawing SQs and LQs have trilingual questions and answers', !!(sb.DRAWING_1_EXAM && [...sb.DRAWING_1_EXAM.sqs, ...sb.DRAWING_1_EXAM.lqs].every(q => q.qUr && q.qPs && q.aUr && q.aPs)));
 
 if (EN) {
   check('ENGLISH_DATA units = 15', EN.length === 15, 'got ' + EN.length);
@@ -129,6 +135,17 @@ if (EN1) {
   check('ENGLISH_1_DATA registered on DATA.eng1Chapters', Array.isArray(D.eng1Chapters) && D.eng1Chapters.length === 11);
 } else {
   check('ENGLISH_1_DATA present', false);
+}
+
+const ISL1 = sb.ISLAMYAT_1_DATA;
+if (ISL1) {
+  check('ISLAMYAT_1_DATA units = 27', ISL1.length === 27, 'got ' + ISL1.length);
+  check('ISLAMYAT_1_DATA unit 1 has sections', ISL1[0] && Array.isArray(ISL1[0].sections) && ISL1[0].sections.length > 0);
+  check('ISLAMYAT_1_DATA unit 1 has exercise', ISL1[0] && !!ISL1[0].exercise);
+  check('ISLAMYAT_1_DATA unit 1 has sloQuestions', ISL1[0] && !!(ISL1[0].sloQuestions || ISL1[0].slos));
+  check('ISLAMYAT_1_DATA registered on DATA.islamyat1Chapters', Array.isArray(D.islamyat1Chapters) && D.islamyat1Chapters.length === 27);
+} else {
+  check('ISLAMYAT_1_DATA present', false);
 }
 
 const PS = sb.PAKSTUDY_DATA;
@@ -168,6 +185,8 @@ check('index.html references app.js', srcs.includes('js/app.js'));
 check('index.html loads core registry before subjects', srcs.indexOf('js/data.js') >= 0 && srcs.indexOf('js/data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Drawing data', srcs.includes('js/drawing_1_data.js') && srcs.indexOf('js/drawing_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 English data', srcs.includes('js/english_1_data.js') && srcs.indexOf('js/english_1_data.js') < srcs.indexOf('js/app.js'));
+check('index.html loads Class 1 Maths data', srcs.includes('js/math_1_data.js') && srcs.indexOf('js/math_1_data.js') < srcs.indexOf('js/app.js'));
+check('index.html loads Class 1 Islamyat data', srcs.includes('js/islamyat_1_data.js') && srcs.indexOf('js/islamyat_1_data.js') < srcs.indexOf('js/app.js'));
 ['js/data_chem.js', 'js/data_phys.js', 'js/data_eng.js', 'js/data_bio.js', 'js/data_comp.js'].forEach(s => check('index.html loads ' + s, srcs.includes(s)));
 const missingSrc = srcs.filter(s => !fs.existsSync(path.join(ROOT, s)));
 check('every <script src> exists', missingSrc.length === 0, 'missing: ' + missingSrc.join(','));

@@ -8040,12 +8040,36 @@ body:has(.papers-creator-view) #main-wrapper {
 .drawing-page-controls button:disabled { opacity:.45; cursor:not-allowed; }
 .drawing-question-group { margin:1rem 0 1.3rem; }
 .drawing-question-group h3 { margin:.5rem 0; color:#9d174d; }
-.drawing-question { margin:.5rem 0; padding:.7rem .9rem; background:#fff; border:1px solid #e2e8f0; border-radius:11px; }
-.drawing-question summary { display:flex; gap:.7rem; align-items:baseline; cursor:pointer; font-weight:700; }
-.drawing-question summary span { flex:0 0 auto; color:#be185d; font-size:.82rem; }
-.drawing-options,.drawing-answer { margin:.6rem 0 .2rem 1.4rem; line-height:1.7; }
-.drawing-answer-tag { color:#15803d; font-size:.83rem; }
-.drawing-answer { padding:.65rem; background:#f0fdf4; border-radius:8px; }
+.drawing-practice-tabs { display:flex; gap:.5rem; padding:.2rem 0 .85rem; border-bottom:1px solid #e2e8f0; }
+.drawing-practice-tabs button { min-width:88px; padding:.6rem 1rem; border:1px solid #e2e8f0; border-radius:10px; background:#fff; color:#475569; font:inherit; font-weight:800; cursor:pointer; }
+.drawing-practice-tabs button.active { background:#be185d; border-color:#be185d; color:#fff; box-shadow:0 3px 10px #be185d30; }
+.drawing-exam-list { padding:.4rem 0 1.2rem; }
+.drawing-trilingual { display:grid; gap:.28rem; min-width:0; }
+.drawing-trilingual p { display:flex; flex-wrap:wrap; gap:.35rem .55rem; align-items:baseline; margin:0; line-height:1.65; }
+.drawing-trilingual b { color:#64748b; font-size:.73rem; flex:0 0 auto; }
+.drawing-question-number { margin:.1rem 0 .45rem; color:#9d174d; font-size:.86rem; font-weight:900; }
+.drawing-question-text { color:#172554; font-weight:700; }
+.drawing-mcq-card { margin:.75rem 0; padding:.9rem; background:#fff; border:1px solid #e2e8f0; border-radius:13px; box-shadow:0 2px 8px #0f172a08; }
+.drawing-option-list { display:grid; gap:.5rem; margin-top:.75rem; }
+.drawing-option { display:grid; grid-template-columns:32px minmax(0,1fr) 25px; gap:.7rem; align-items:center; width:100%; padding:.62rem .75rem; text-align:left; border:1px solid #cbd5e1; border-radius:10px; background:#fff; color:#172554; font:inherit; cursor:pointer; transition:background .15s,border-color .15s; }
+.drawing-option:hover { border-color:#be185d; background:#fff7fb; }
+.drawing-option-mark { display:grid; place-items:center; width:28px; height:28px; border-radius:50%; background:#f1f5f9; color:#475569; font-weight:900; }
+.drawing-option.is-correct { border-color:#16a34a; background:#dcfce7; color:#14532d; }
+.drawing-option.is-correct .drawing-option-mark { background:#16a34a; color:#fff; }
+.drawing-option.is-wrong { border-color:#dc2626; background:#fee2e2; color:#7f1d1d; }
+.drawing-option.is-wrong .drawing-option-mark { background:#dc2626; color:#fff; }
+.drawing-feedback { margin:.7rem 0 0; padding:.65rem .8rem; border-radius:9px; font-weight:700; }
+.drawing-feedback.is-correct { background:#f0fdf4; color:#166534; }
+.drawing-feedback.is-wrong { background:#fef2f2; color:#991b1b; }
+.drawing-question { margin:.65rem 0; padding:.75rem .9rem; background:#fff; border:1px solid #e2e8f0; border-radius:11px; }
+.drawing-question summary { display:flex; gap:.75rem; align-items:flex-start; cursor:pointer; list-style:none; }
+.drawing-question summary::-webkit-details-marker { display:none; }
+.drawing-question summary::after { content:"＋"; margin-left:auto; color:#be185d; font-size:1.2rem; font-weight:900; }
+.drawing-question[open] summary::after { content:"−"; }
+.drawing-question summary .drawing-question-number { flex:0 0 55px; margin:.1rem 0 0; }
+.drawing-suggested-answer { margin:.85rem 0 .1rem 4.1rem; padding:.75rem; background:#f8fafc; border-radius:9px; }
+.drawing-suggested-answer h4 { margin:0 0 .4rem; color:#9d174d; }
+.drawing-answer-text { line-height:1.7; }
 @media (max-width:760px) {
   .drawing-workspace { display:block; height:auto; max-height:none; overflow:visible; }
   .drawing-workspace .math-ch-sidebar { height:auto; max-height:38vh; }
@@ -8053,5 +8077,9 @@ body:has(.papers-creator-view) #main-wrapper {
   .drawing-workspace .math-ch-list .bio-ch-btn { flex:0 0 230px; }
   .drawing-topic-area { height:auto; max-height:none; padding:1rem .75rem; }
   .drawing-tip-grid { grid-template-columns:1fr; }
+  .drawing-practice-tabs { position:sticky; top:0; z-index:2; background:#fff; }
+  .drawing-practice-tabs button { flex:1; min-width:0; padding:.58rem .4rem; }
+  .drawing-suggested-answer { margin-left:0; }
+  .drawing-option { grid-template-columns:29px minmax(0,1fr) 20px; gap:.45rem; padding:.55rem; }
   .drawing-lesson-head { align-items:flex-start; }
 }

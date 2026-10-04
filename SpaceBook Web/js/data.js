@@ -147,9 +147,9 @@ const DATA = {
     "cls1": [
       { "id": "cls1-eng",  "name": "English",           "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 11, "hasEng": true, "hasEng1": true },
       { "id": "cls1-urdu", "name": "Urdu",              "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 12 },
-      { "id": "cls1-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 10 },
+      { "id": "cls1-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 6 },
       { "id": "cls1-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌍", "chapters": 10 },
-      { "id": "cls1-isl",  "name": "Islamyat",          "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 },
+      { "id": "cls1-isl",  "name": "Islamyat & Nazira", "nameUrdu": "اسلامیات و ناظرہ قرآن", "emoji": "🕌", "chapters": 27, "hasIsl": true, "hasIsl1": true },
       { "id": "cls1-drawing", "name": "Drawing",         "nameUrdu": "تخلیقی فنون و ڈرائنگ", "emoji": "🎨", "chapters": 32, "hasDrawing": true }
     ],
     "cls2": [
@@ -1478,6 +1478,26 @@ const DATA = {
       "action": "cls1-eng",
       "hub_action": "cls1-eng",
       "subject_id": 1
+    },
+    {
+      "id": "b-cls1-isl",
+      "classId": "cls1",
+      "class_id": "cls1",
+      "className": "Class 1",
+      "class_name": "Class 1",
+      "subject": "Islamyat & Nazira Quran",
+      "title": "Islamyat & Nazira Quran 1st Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "15.34 MB",
+      "pages": "Complete 27 Units (Tajweed & General Islamyat)",
+      "pdfPath": "assets/books/Class-1-Islamyat-KPK.pdf",
+      "pdf_path": "assets/books/Class-1-Islamyat-KPK.pdf",
+      "color": "#0d9488",
+      "icon": "🕌",
+      "available": true,
+      "action": "cls1-isl",
+      "hub_action": "cls1-isl",
+      "subject_id": 5
     },
     {
       "id": "b-cls10-eng",

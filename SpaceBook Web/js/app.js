@@ -828,6 +828,21 @@ function goToSubjects(classId) {
         topics: ["Shapes", "Colouring", "Animals", "Step-by-step drawing"]
       };
     }
+    if (s.id === "cls1-isl" || (s.hasIsl && classId === "cls1")) {
+      return {
+        headerColor: "#0d9488",
+        urduName: "اسلامیات و ناظرہ قرآن (پہلی جماعت)",
+        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeClass: "badge-green",
+        metric1Val: "27 اسباق",
+        metric1Lbl: "ناظرہ قرآن و درسی اسلامیات",
+        metric2Val: "140+ Solved Qs",
+        metric2Lbl: "مشقی سوالات و ایس ایل اوز",
+        metric3Val: "تجوید و سورتیں",
+        metric3Lbl: "حروف، حرکات و آخری ۴ سورتیں",
+        topics: ["عربی حروف و مخارج", "حرکات و تنوین", "حروفِ مدہ و لین", "قواعدِ تجوید و غنہ", "آخری ۴ سورتیں", "حفظ و ترجمہ", "ایمانیات و عبادات", "سیرت طیبہ ﷺ", "اخلاق و آداب"]
+      };
+    }
     if (s.id === "cls10-bio" || (s.hasBio && isCls10)) {
       return {
         headerColor: "#059669",
@@ -1114,36 +1129,36 @@ function goToSubjects(classId) {
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">📚</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '6 Subjects · 11 Units English & Drawing' : '9 Subjects · 15 Books'}</div>
+          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '6 Subjects · English, Islamyat & Nazira, Drawing' : '9 Subjects · 15 Books'}</div>
           <div class="csc-label">Class Curriculum Track</div>
-          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English Textbook & Drawing Workbook' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
+          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English, Islamyat &amp; Nazira (27 Units) &amp; Drawing' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">📖</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? '28,150 Words · 31,420 Paras' : classId === 'cls1' ? '14,200 Words · 1,850 Lines' : '26,427 Words · 33,494 Paras'}</div>
+          <div class="csc-value">${isCls10 ? '28,150 Words · 31,420 Paras' : classId === 'cls1' ? '35,000+ Words · 3,800+ Paras' : '26,427 Words · 33,494 Paras'}</div>
           <div class="csc-label">Verbatim Lessons &amp; Sections</div>
-          <div class="csc-sub">${isCls10 ? 'Word-by-word official coverage · 480 Sections' : classId === 'cls1' ? 'Word-by-word official text & Line-by-line Audio TTS' : 'Word-by-word official coverage · 531 Sections'}</div>
+          <div class="csc-sub">${isCls10 ? 'Word-by-word official coverage · 480 Sections' : classId === 'cls1' ? 'Word-by-word official text, Uthmani Arabic &amp; Line-by-line Translations' : 'Word-by-word official coverage · 531 Sections'}</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">🎯</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? '2,450 Solved Questions' : classId === 'cls1' ? '850+ Solved Questions' : '2,386 Solved Questions'}</div>
+          <div class="csc-value">${isCls10 ? '2,450 Solved Questions' : classId === 'cls1' ? '1,050+ Solved Questions' : '2,386 Solved Questions'}</div>
           <div class="csc-label">Exam Readiness Bank</div>
-          <div class="csc-sub">${isCls10 ? '1,380 MCQs · 760 Short &amp; 310 Long Qs' : classId === 'cls1' ? 'Phonics, Comprehension, MCQs & 4 Reviews' : '1,343 MCQs · 755 Short &amp; 288 Long Qs'}</div>
+          <div class="csc-sub">${isCls10 ? '1,380 MCQs · 760 Short &amp; 310 Long Qs' : classId === 'cls1' ? 'Tajweed exercises, Textbook MCQs, SQs &amp; SLO question banks' : '1,343 MCQs · 755 Short &amp; 288 Long Qs'}</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">📝</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? '510 Exercises · 460 SLOs' : classId === 'cls1' ? '180 Exercises · 120 SLOs' : '543 Exercises · 480 SLOs'}</div>
+          <div class="csc-value">${isCls10 ? '510 Exercises · 460 SLOs' : classId === 'cls1' ? '240 Exercises · 160 SLOs' : '543 Exercises · 480 SLOs'}</div>
           <div class="csc-label">Practice &amp; SLO Assessments</div>
-          <div class="csc-sub">${classId === 'cls1' ? 'Textbook exercises, Sight Words & 4 Review assessments' : 'Solved exercises &amp; Board SLO benchmarks'}</div>
+          <div class="csc-sub">${classId === 'cls1' ? 'Textbook exercises, Tajweed phonics &amp; Board SLO benchmarks' : 'Solved exercises &amp; Board SLO benchmarks'}</div>
         </div>
       </div>
     </div>`;
@@ -1156,6 +1171,8 @@ function openSubject(classId, subjId) {
     state.activeSubject = 'drawing';
     state.activeView = 'subject-detail';
     state.selectedDrawingPage = state.selectedDrawingPage || 0;
+    state.activeDrawingTab = 'practice';
+    state.activeDrawingExamTab = state.activeDrawingExamTab || 'mcqs';
     renderDrawingView();
     return;
   }
@@ -1183,13 +1200,13 @@ function openSubject(classId, subjId) {
   } else if (subj.hasUrdu || subjId === 'cls9-urdu' || subjId === 'cls10-urdu') {
     state.activeSubject = "urdu";
     openSubjectWorkspace(classId, "urdu", subj);
-  } else if (subj.hasMath || subjId === 'cls9-math' || subjId === 'cls10-math') {
+  } else if (subj.hasMath || subjId === 'cls1-math' || subjId === 'cls9-math' || subjId === 'cls10-math') {
     state.activeSubject = "math";
     openMathView(classId, subj);
   } else if (subj.hasPakStudy || subjId === 'cls9-pakstudy' || subjId === 'cls10-pakstudy') {
     state.activeSubject = "pakstudy";
     openSubjectWorkspace(classId, "pakstudy", subj);
-  } else if (subj.hasIsl || subjId === 'cls9-isl' || subjId === 'cls10-isl') {
+  } else if (subj.hasIsl || subjId === 'cls9-isl' || subjId === 'cls10-isl' || subjId === 'cls1-isl') {
     state.activeSubject = "isl";
     openSubjectWorkspace(classId, "isl", subj);
   } else if (subj.hasComp || subjId === 'cls9-comp' || subjId === 'cls10-comp') {
@@ -1239,7 +1256,7 @@ function renderDrawingArtwork(kind, title) {
   };
   const labels = { "shape-person":"Shapes make a picture", "shape-friends":"Square and circle friends", "shape-faces":"Happy shape faces", rainbow:"Rainbow and sun", bird:"Bird", ship:"Sailing boat", "angry-bird":"Bird with a bold face", bee:"Honey bee", cap:"Cap", tulip:"Tulip", ant:"Ant", goat:"Goat", umbrella:"Umbrella", purse:"Purse", pineapple:"Pineapple", parrot:"Parrot", watermelon:"Watermelon", frock:"Frock", grapes:"Grapes", camel:"Camel", duck:"Duck", scissors:"Scissors", donkey:"Donkey", ladybug:"Ladybug", scenery:"House and scenery", puppy:"Puppy", sunglasses:"Sunglasses", flower:"Flower", bananas:"Bananas", "bear-steps":"Bear face steps", "house-steps":"House drawing steps", "cat-origami":"Folded cat face" };
   const illustration = svg[kind] || '';
-  return `<figure class="drawing-vector-card"><svg viewBox="0 0 600 760" role="img" aria-label="${sanitize(labels[kind] || title)}: coloured example and dotted tracing practice"><title>${sanitize(title)}</title><rect class="drawing-example-panel" x="3" y="3" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="27" text-anchor="middle">LOOK · COLOUR IDEA</text><g class="drawing-sample" transform="translate(15 30) scale(.95)">${illustration}</g><path d="M28 380h544" class="drawing-panel-divider"/><rect class="drawing-trace-panel" x="3" y="390" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="415" text-anchor="middle">YOUR TURN · TRACE AND COLOUR</text><g class="drawing-trace" transform="translate(15 415) scale(.95)">${illustration}</g></svg><figcaption>${sanitize(labels[kind] || title)} · coloured example and dotted practice</figcaption></figure>`;
+  return `<figure class="drawing-vector-card"><svg viewBox="0 0 600 760" role="img" aria-label="${sanitize(labels[kind] || title)}: coloured example and dotted tracing practice"><title>${sanitize(title)}</title><rect class="drawing-example-panel" x="3" y="3" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="27" text-anchor="middle">LOOK · COLOUR IDEA</text><g class="drawing-sample" transform="translate(15 30) scale(.95)">${illustration}</g><path d="M28 380h544" class="drawing-panel-divider"/><rect class="drawing-trace-panel" x="3" y="390" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="415" text-anchor="middle">YOUR TURN · TRACE AND COLOUR</text><g class="drawing-trace" transform="translate(15 415) scale(.95)">${illustration}</g></svg></figure>`;
 }
 
 function renderDrawingPractice() {
@@ -1304,9 +1321,6 @@ function renderDrawingView() {
       <span class="mcb-info"><span class="mcb-name">${sanitize(item.title)}</span><span class="mcb-sub">Workbook page ${item.sourcePage}</span></span>
     </button>`).join('');
   const topicArea = state.activeDrawingTab === 'practice' ? renderDrawingPractice() : `
-    <div class="drawing-lesson-head">
-      <div><span class="drawing-kicker">CLASS 1 · CREATIVE ARTS & DRAWING</span><h2>${sanitize(lesson.title)}</h2><p>Workbook activity ${lesson.number} · Page ${lesson.sourcePage}</p></div>
-    </div>
     ${renderDrawingArtwork(lesson.artwork, lesson.title)}
     <div class="drawing-tips"><h3>Easy tips</h3><div class="drawing-tip-grid"><article><strong>English</strong><p>${sanitize(lesson.en)}</p></article><article lang="ur" dir="rtl"><strong>اردو</strong><p>${sanitize(lesson.ur)}</p></article><article lang="ps" dir="rtl"><strong>پښتو</strong><p>${sanitize(lesson.ps)}</p></article></div></div>
     ${lesson.teacherNote ? `<div class="drawing-teacher-note"><strong>Teacher note</strong><p>${sanitize(lesson.teacherNote)}</p></div>` : ''}
@@ -7258,6 +7272,12 @@ function openGenericChapterDetails(classId, subjId, subjName, chNum) {
 // ─────────────────────────────────────────
 function _getIslChapters() {
   const isCls10 = (state.selectedClass === "cls10");
+  const isCls1 = (state.selectedClass === "cls1");
+  if (isCls1) {
+    return (typeof DATA !== 'undefined' && DATA.islamyat1Chapters) || 
+           (typeof window !== 'undefined' && window.ISLAMYAT_1_DATA) || 
+           (typeof ISLAMYAT_1_DATA !== 'undefined' ? ISLAMYAT_1_DATA : []);
+  }
   if (isCls10) {
     return (typeof DATA !== 'undefined' && DATA.islamyat10Chapters) || 
            (typeof window !== 'undefined' && window.ISLAMYAT_10_DATA) || 
@@ -7276,13 +7296,16 @@ function openIslView(classId, subj) {
   state.selectedClass = classId;
   setActiveNav("subjects");
   const isCls10 = (classId === "cls10");
-  const cls = DATA.classes.find(c => c.id === classId) || { name: isCls10 ? "Class 10" : "Class 9" };
+  const isCls1 = (classId === "cls1");
+  const cls = DATA.classes.find(c => c.id === classId) || { name: isCls1 ? "Class 1" : (isCls10 ? "Class 10" : "Class 9") };
   const chList = _getIslChapters();
-  const gradeLabel = isCls10 ? "Grade 10 (Part B)" : "Grade 9 (Part A)";
-  const pdfFile = "assets/books/Class-9-Islamyat-KPK.pdf";
-  const desc = isCls10
-    ? `KPK Textbook Board, Peshawar · ${chList.length} Units (Surah Al-Ahzab, Surah Al-Mumtahina, Ahadith & Thematic Study)`
-    : `KPK Textbook Board, Peshawar · ${chList.length} Units (Surah Al-Anfal, Ahadith & Thematic Study)`;
+  const gradeLabel = isCls1 ? "Grade 1 (Nazira & Darsi)" : (isCls10 ? "Grade 10 (Part B)" : "Grade 9 (Part A)");
+  const pdfFile = isCls1 ? "assets/books/Class-1-Islamyat-KPK.pdf" : (isCls10 ? "assets/books/Class-10-Islamyat-KPK.pdf" : "assets/books/Class-9-Islamyat-KPK.pdf");
+  const desc = isCls1
+    ? `KPK Textbook Board, Peshawar · ${chList.length} Units (Nazira Quran, Tajweed, Duain, Ahadith & Islamic Studies)`
+    : (isCls10
+      ? `KPK Textbook Board, Peshawar · ${chList.length} Units (Surah Al-Ahzab, Surah Al-Mumtahina, Ahadith & Thematic Study)`
+      : `KPK Textbook Board, Peshawar · ${chList.length} Units (Surah Al-Anfal, Ahadith & Thematic Study)`);
 
   setDashHeader(`🕌 ${subj ? subj.name : 'Islamyat'} — ${gradeLabel}`, `${desc} &nbsp;|&nbsp; <a href="${pdfFile}" target="_blank" style="color:#0d9488;font-weight:700;text-decoration:underline;">📥 View/Download Official Islamyat Book PDF</a>`);
   setBreadcrumb([
@@ -7296,14 +7319,17 @@ function openIslView(classId, subj) {
     let badgeText = '';
     let badgeBg = '#0d9488';
     if (ch.type === 'quran' || ch.type === 'surah') {
-      badgeText = 'رکوع ' + (ch.ruku || ch.number);
+      badgeText = isCls1 ? ('سورت ' + ch.number) : ('رکوع ' + (ch.ruku || ch.number));
       badgeBg = '#0d9488';
     } else if (ch.type === 'hadith') {
       badgeText = 'احادیث';
       badgeBg = '#0f766e';
-    } else {
-      badgeText = 'موضوع ' + (ch.number > 13 ? (ch.number - 13) : (ch.number - 11));
+    } else if (ch.type === 'tajweed') {
+      badgeText = 'تجوید ' + ch.number;
       badgeBg = '#0284c7';
+    } else {
+      badgeText = 'سبق ' + (ch.number || (i + 1));
+      badgeBg = '#059669';
     }
 
     return `
@@ -11317,6 +11343,67 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
       });
     }
   }
+  else if (sid.includes("isl")) {
+    const isCls10 = (classId === 'cls10' || sid === 'cls10-isl');
+    const isCls1 = (classId === 'cls1' || sid === 'cls1-isl');
+    const islDataset = isCls10
+      ? ((typeof ISLAMYAT_10_DATA !== 'undefined' && Array.isArray(ISLAMYAT_10_DATA)) ? ISLAMYAT_10_DATA : ((typeof ISLAMYAT_DATA !== 'undefined' && Array.isArray(ISLAMYAT_DATA)) ? ISLAMYAT_DATA : []))
+      : isCls1
+      ? ((typeof ISLAMYAT_1_DATA !== 'undefined' && Array.isArray(ISLAMYAT_1_DATA)) ? ISLAMYAT_1_DATA : [])
+      : ((typeof ISLAMYAT_DATA !== 'undefined' && Array.isArray(ISLAMYAT_DATA)) ? ISLAMYAT_DATA : []);
+    if (Array.isArray(islDataset)) {
+      islDataset.forEach((u, uIdx) => {
+        const chTitle = `سبق ${u.number || uIdx + 1}: ${u.title}`;
+        const ex = u.exercise || {};
+        const slo = u.sloQuestions || u.sloAssessments || u.sloBank || {};
+
+        if (catId === 'mcqs') {
+          const mcqs = [ ...(ex.textbookMcqs || ex.mcqs || []), ...(slo.mcqs || []) ];
+          mcqs.forEach((m, mIdx) => {
+            result.push({
+              id: `isl-m-${u.number || uIdx + 1}-${mIdx}`,
+              q: m.question || m.q,
+              opts: m.options || m.opts || ["الف", "ب", "ج", "د"],
+              ans: (typeof m.correct === 'number') ? m.correct : ((typeof m.ans === 'number') ? m.ans : 0),
+              exp: m.explanation || m.exp || `اسلامیات سبق ${u.number || uIdx + 1}`,
+              chapter: chTitle,
+              topic: u.title,
+              source: (mIdx < (ex.textbookMcqs || ex.mcqs || []).length ? "exercise" : "slo"),
+              marks: 1
+            });
+          });
+        }
+        if (catId === 'sqs') {
+          const sqs = [ ...(ex.shortQuestions || []), ...(slo.shortQuestions || []) ];
+          sqs.forEach((sq, sIdx) => {
+            result.push({
+              id: `isl-sq-${u.number || uIdx + 1}-${sIdx}`,
+              q: sq.question || sq.q,
+              key: sq.answer || sq.ans || "درست نصابی جواب",
+              chapter: chTitle,
+              topic: u.title,
+              source: (sIdx < (ex.shortQuestions || []).length ? "exercise" : "slo"),
+              marks: 4
+            });
+          });
+        }
+        if (catId === 'lqs') {
+          const lqs = [ ...(ex.longQuestions || []), ...(slo.longQuestions || []) ];
+          lqs.forEach((lq, lIdx) => {
+            result.push({
+              id: `isl-lq-${u.number || uIdx + 1}-${lIdx}`,
+              q: lq.question || lq.q,
+              key: lq.answer || lq.ans,
+              chapter: chTitle,
+              topic: u.title,
+              source: (lIdx < (ex.longQuestions || []).length ? "exercise" : "slo"),
+              marks: 8
+            });
+          });
+        }
+      });
+    }
+  }
 
   // Fallback: Populate from getCurriculumQuestionsBank if results are sparse
   if (result.length < 5) {
@@ -13325,7 +13412,7 @@ function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
         ${urduTheory}
       </div>`;
     if (sec.rules && sec.rules.length > 0) {
-      const urduRules = getMathTopicUrduRules(sec.rules);
+      const urduRules = sec.rulesUrdu || getMathTopicUrduRules(sec.rules);
       html += `
         <div style="background:#f0fdf4;border-right:4px solid #16a34a;border-radius:8px 0 0 8px;padding:0.75rem 1rem;direction:rtl;text-align:right;margin-top:0.75rem;">
           <div style="font-weight:700;color:#15803d;font-size:1rem;margin-bottom:0.35rem;font-family:'Jameel Noori Nastaleeq',serif;">📌 اہم اصول اور بنیادی کلیات:</div>
@@ -13336,6 +13423,10 @@ function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
     }
     return html;
   } else if (subTab === 'video') {
+    if (state.selectedClass === 'cls1') return `
+      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.15rem;color:#475569;line-height:1.7;">
+        <strong>Learn with a grown-up:</strong> Use counters, coins, a clock, classroom objects or a hand-drawn number line to practise this topic together.
+      </div>`;
     return `
       <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.15rem;margin-bottom:0.5rem;">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem;">
@@ -13475,6 +13566,10 @@ function filterTopicExCategory(topicId, category, btn) {
 
 function getMathChapterList(classId) {
   const cid = classId || state.selectedClass;
+  if (cid === 'cls1') {
+    if (typeof MATH_1_DATA !== 'undefined' && Array.isArray(MATH_1_DATA)) return MATH_1_DATA;
+    if (typeof DATA !== 'undefined' && DATA.math1Chapters) return DATA.math1Chapters;
+  }
   if (cid === 'cls10') {
     if (typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) return MATH_10_DATA;
     if (typeof DATA !== 'undefined' && DATA.math10Chapters) return DATA.math10Chapters;
@@ -13486,6 +13581,13 @@ function getMathChapterList(classId) {
 }
 
 function openMathView(classId, subj) {
+  if (state.mathClassId !== classId) {
+    state.selectedMathChapter = 0;
+    state.activeMathTab = 'lesson';
+    state.activeMathEx = '1.1';
+    state.activeMathSloCategory = 'mcqs';
+  }
+  state.mathClassId = classId;
   state.activeSubject = 'math';
   state.activeView = 'subject-detail';
   state.selectedMathChapter = state.selectedMathChapter || 0;
@@ -13493,11 +13595,13 @@ function openMathView(classId, subj) {
   state.activeMathEx = state.activeMathEx || '1.1';
   state.selectedClass = classId;
   setActiveNav('subjects');
-  const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls10' ? 'Class 10' : 'Class 9') };
+  const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls1' ? 'Class 1' : (classId === 'cls10' ? 'Class 10' : 'Class 9')) };
   const chList = getMathChapterList(classId);
-  const pdfFile = (classId === 'cls10')
-    ? 'file://DESKTOP-R2HQSAV/SpaceBook/10th Maths/PDF/10th Maths.pdf'
-    : 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
+  const pdfFile = (classId === 'cls1')
+    ? 'file:///D:/SpaceBook/Books/1st/1st%20Maths/PDF/Math%20book%201%20KPTBB.pdf'
+    : ((classId === 'cls10')
+      ? 'file://DESKTOP-R2HQSAV/SpaceBook/10th Maths/PDF/10th Maths.pdf'
+      : 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf');
 
   const subNavBar = $('subpage-nav-bar');
   if (subNavBar) subNavBar.style.display = 'none';
@@ -14888,6 +14992,8 @@ function renderMathSloCategoryContent(category, slos) {
 function getComprehensiveChapterSLOBank(ch) {
   const chNum = (ch && ch.number) ? ch.number : 1;
 
+  if (state.selectedClass === 'cls1' && ch && ch.slos) return ch.slos;
+
   if (chNum === 1 || String(chNum) === "1") {
     const mcqs = [
       {
@@ -16092,6 +16198,10 @@ function getSubjectChapterList(subjKey, classId) {
     const isCls10 = (classId === 'cls10');
     if (isCls10 && typeof ISLAMYAT_10_DATA !== 'undefined' && Array.isArray(ISLAMYAT_10_DATA)) {
       return ISLAMYAT_10_DATA;
+    }
+    const isCls1 = (classId === 'cls1');
+    if (isCls1 && typeof ISLAMYAT_1_DATA !== 'undefined' && Array.isArray(ISLAMYAT_1_DATA)) {
+      return ISLAMYAT_1_DATA;
     }
     return (typeof ISLAMYAT_DATA !== 'undefined' && Array.isArray(ISLAMYAT_DATA))
       ? ISLAMYAT_DATA
