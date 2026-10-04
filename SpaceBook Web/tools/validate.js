@@ -18,7 +18,8 @@ const DATA_FILES = [
   'data_comp.js',
   'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js',
   'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js',
-  'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js'
+  'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js', 'drawing_2_data.js', 'math_2_data.js',
+  'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js'
 ];
 
 let pass = 0, fail = 0;
@@ -89,6 +90,12 @@ if (D) {
   check('DATA.islamyat10Chapters = 18', D.islamyat10Chapters && D.islamyat10Chapters.length === 18, 'got ' + (D.islamyat10Chapters || []).length);
   check('DATA.islamyat1Chapters = 10', (sb.ISLAMYAT_1_DATA && sb.ISLAMYAT_1_DATA.length === 10) || (D.islamyat1Chapters && D.islamyat1Chapters.length === 10), 'got ' + ((sb.ISLAMYAT_1_DATA || D.islamyat1Chapters || []).length));
   check('DATA.nazira1Chapters = 17', (sb.NAZIRA_1_DATA && sb.NAZIRA_1_DATA.length === 17) || (D.nazira1Chapters && D.nazira1Chapters.length === 17), 'got ' + ((sb.NAZIRA_1_DATA || D.nazira1Chapters || []).length));
+  check('DATA.eng2Chapters = 12', (sb.ENGLISH_2_DATA && sb.ENGLISH_2_DATA.length === 12) || (D.eng2Chapters && D.eng2Chapters.length === 12), 'got ' + ((sb.ENGLISH_2_DATA || D.eng2Chapters || []).length));
+  check('DATA.urdu2Chapters = 22', (sb.URDU_2_DATA && sb.URDU_2_DATA.length === 22) || (D.urdu2Chapters && D.urdu2Chapters.length === 22), 'got ' + ((sb.URDU_2_DATA || D.urdu2Chapters || []).length));
+  check('DATA.islamyat2Chapters = 11', (sb.ISLAMYAT_2_DATA && sb.ISLAMYAT_2_DATA.length === 11) || (D.islamyat2Chapters && D.islamyat2Chapters.length === 11), 'got ' + ((sb.ISLAMYAT_2_DATA || D.islamyat2Chapters || []).length));
+  check('DATA.nazira2Chapters = 15', (sb.NAZIRA_2_DATA && sb.NAZIRA_2_DATA.length === 15) || (D.nazira2Chapters && D.nazira2Chapters.length === 15), 'got ' + ((sb.NAZIRA_2_DATA || D.nazira2Chapters || []).length));
+  check('DATA.gk2Chapters = 16', (sb.GK_2_DATA && sb.GK_2_DATA.length === 16) || (D.gk2Chapters && D.gk2Chapters.length === 16), 'got ' + ((sb.GK_2_DATA || D.gk2Chapters || []).length));
+  check('DATA.pashto2Chapters = 28', (sb.PASHTO_2_DATA && sb.PASHTO_2_DATA.length === 28) || (D.pashto2Chapters && D.pashto2Chapters.length === 28), 'got ' + ((sb.PASHTO_2_DATA || D.pashto2Chapters || []).length));
   check('DATA.mathChapters present (from math_data.js)', Array.isArray(D.mathChapters) && D.mathChapters.length > 0, 'got ' + (D.mathChapters ? D.mathChapters.length : 0));
   check('DATA.math10Chapters = 13 (from math_10_data.js)', (sb.MATH_10_DATA && sb.MATH_10_DATA.length === 13) || (D.math10Chapters && D.math10Chapters.length === 13), 'got ' + ((sb.MATH_10_DATA || D.math10Chapters || []).length));
   check('islamic subjects registered', ['cls9-isl', 'cls10-isl', 'cls1-isl', 'cls1-nazira'].every(id => [].concat(D.subjects.cls9, D.subjects.cls10, D.subjects.cls1).some(s => s.id === id)));
@@ -100,6 +107,11 @@ if (D) {
 const EN = sb.ENGLISH_DATA;
 check('Class 1 Drawing activities = 32', Array.isArray(sb.DRAWING_1_DATA) && sb.DRAWING_1_DATA.length === 32, 'got ' + ((sb.DRAWING_1_DATA || []).length));
 check('Class 1 Maths units = 6', Array.isArray(sb.MATH_1_DATA) && sb.MATH_1_DATA.length === 6, 'got ' + ((sb.MATH_1_DATA || []).length));
+check('Class 2 Drawing has 32 vector activities and trilingual tips', Array.isArray(sb.DRAWING_2_DATA) && sb.DRAWING_2_DATA.length === 32 && sb.DRAWING_2_DATA.every((x,i) => x.number === i + 1 && x.en && x.ur && x.ps && sb.DRAWING_2_ART[x.artwork]));
+check('Class 2 Drawing has trilingual exam practice', !!(sb.DRAWING_2_EXAM && sb.DRAWING_2_EXAM.mcqs.every(q => q.options.length === 4 && q.optionsUr.length === 4 && q.optionsPs.length === 4 && q.qUr && q.qPs) && sb.DRAWING_2_EXAM.sqs.every(q => q.qUr && q.qPs && q.aUr && q.aPs) && sb.DRAWING_2_EXAM.lqs.every(q => q.qUr && q.qPs && q.aUr && q.aPs)));
+check('Class 2 Maths units = 6', Array.isArray(sb.MATH_2_DATA) && sb.MATH_2_DATA.length === 6, 'got ' + ((sb.MATH_2_DATA || []).length));
+check('Class 2 Maths units have lessons, worked examples, solved exercises and three question banks', Array.isArray(sb.MATH_2_DATA) && sb.MATH_2_DATA.every(ch => ch.sections.length && ch.workedExamples.length && ch.exercises.length && ch.slos.mcqs.length && ch.slos.shortQuestions.length && ch.slos.longQuestions.length));
+check('Class 2 Drawing vectors and questions remain a lightweight content dataset', !!(sb.DRAWING_2_DATA && JSON.stringify(sb.DRAWING_2_DATA).length < 40000 && JSON.stringify(sb.DRAWING_2_ART).length < 18000));
 check('Class 1 Maths units have lessons, examples, solved exercises and exam questions', Array.isArray(sb.MATH_1_DATA) && sb.MATH_1_DATA.every(ch => ch.sections.length && ch.workedExamples.length && ch.exercises.length && ch.slos.mcqs.length && ch.slos.shortQuestions.length && ch.slos.longQuestions.length));
 check('Class 1 Maths lessons have topic-matched Urdu text and rules', Array.isArray(sb.MATH_1_DATA) && sb.MATH_1_DATA.every(ch => ch.sections.every(sec => sec.theoryUrdu && sec.rulesUrdu && sec.rulesUrdu.length === sec.rules.length)));
 check('Drawing activities have trilingual tips', Array.isArray(sb.DRAWING_1_DATA) && sb.DRAWING_1_DATA.every(x => x.en && x.ur && x.ps && x.artwork));
@@ -199,6 +211,63 @@ if (UR10) {
 } else {
   check('URDU_10_DATA present', false);
 }
+
+const EN2 = sb.ENGLISH_2_DATA;
+if (EN2) {
+  check('ENGLISH_2_DATA units = 12', EN2.length === 12, 'got ' + EN2.length);
+  check('ENGLISH_2_DATA unit 1 has sections', EN2[0] && Array.isArray(EN2[0].sections) && EN2[0].sections.length > 0);
+  check('ENGLISH_2_DATA unit 1 has exercise', EN2[0] && !!EN2[0].exercise);
+  check('ENGLISH_2_DATA registered on DATA.eng2Chapters', Array.isArray(D.eng2Chapters) && D.eng2Chapters.length === 12);
+} else {
+  check('ENGLISH_2_DATA present', false);
+}
+
+const UR2 = sb.URDU_2_DATA;
+if (UR2) {
+  check('URDU_2_DATA units = 22', UR2.length === 22, 'got ' + UR2.length);
+  check('URDU_2_DATA ch 1 has sections', UR2[0] && Array.isArray(UR2[0].sections) && UR2[0].sections.length > 0);
+  check('URDU_2_DATA ch 1 has exercise', UR2[0] && !!UR2[0].exercise);
+  check('URDU_2_DATA registered on DATA.urdu2Chapters', Array.isArray(D.urdu2Chapters) && D.urdu2Chapters.length === 22);
+} else {
+  check('URDU_2_DATA present', false);
+}
+
+const ISL2 = sb.ISLAMYAT_2_DATA;
+if (ISL2) {
+  check('ISLAMYAT_2_DATA units = 11', ISL2.length === 11, 'got ' + ISL2.length);
+  check('ISLAMYAT_2_DATA unit 1 has sections', ISL2[0] && Array.isArray(ISL2[0].sections) && ISL2[0].sections.length > 0);
+  check('ISLAMYAT_2_DATA registered on DATA.islamyat2Chapters', Array.isArray(D.islamyat2Chapters) && D.islamyat2Chapters.length === 11);
+} else {
+  check('ISLAMYAT_2_DATA present', false);
+}
+
+const NAZ2 = sb.NAZIRA_2_DATA;
+if (NAZ2) {
+  check('NAZIRA_2_DATA lessons = 15', NAZ2.length === 15, 'got ' + NAZ2.length);
+  check('NAZIRA_2_DATA lesson 1 has sections', NAZ2[0] && Array.isArray(NAZ2[0].sections) && NAZ2[0].sections.length > 0);
+  check('NAZIRA_2_DATA registered on DATA.nazira2Chapters', Array.isArray(D.nazira2Chapters) && D.nazira2Chapters.length === 15);
+} else {
+  check('NAZIRA_2_DATA present', false);
+}
+
+const GK2 = sb.GK_2_DATA;
+if (GK2) {
+  check('GK_2_DATA chapters = 16', GK2.length === 16, 'got ' + GK2.length);
+  check('GK_2_DATA chapter 1 has sections', GK2[0] && Array.isArray(GK2[0].sections) && GK2[0].sections.length > 0);
+  check('GK_2_DATA registered on DATA.gk2Chapters', Array.isArray(D.gk2Chapters) && D.gk2Chapters.length === 16);
+} else {
+  check('GK_2_DATA present', false);
+}
+
+const PS2 = sb.PASHTO_2_DATA;
+if (PS2) {
+  check('PASHTO_2_DATA units = 28', PS2.length === 28, 'got ' + PS2.length);
+  check('PASHTO_2_DATA unit 1 has sections', PS2[0] && Array.isArray(PS2[0].sections) && PS2[0].sections.length > 0);
+  check('PASHTO_2_DATA registered on DATA.pashto2Chapters', Array.isArray(D.pashto2Chapters) && D.pashto2Chapters.length === 28);
+} else {
+  check('PASHTO_2_DATA present', false);
+}
+
 check('ENG_UNIT_VOCAB_WORDS lexicon', !!(sb.ENG_UNIT_VOCAB_WORDS && sb.ENG_UNIT_VOCAB_WORDS[2]), 'missing from dictionary_data.js');
 check('lookupEngWord()', typeof sb.lookupEngWord === 'function');
 
@@ -211,9 +280,14 @@ check('index.html loads core registry before subjects', srcs.indexOf('js/data.js
 check('index.html loads Class 1 Drawing data', srcs.includes('js/drawing_1_data.js') && srcs.indexOf('js/drawing_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 English data', srcs.includes('js/english_1_data.js') && srcs.indexOf('js/english_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Maths data', srcs.includes('js/math_1_data.js') && srcs.indexOf('js/math_1_data.js') < srcs.indexOf('js/app.js'));
+check('index.html loads Class 2 Drawing and Maths data', ['js/drawing_2_data.js','js/math_2_data.js'].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 1 Islamyat data', srcs.includes('js/islamyat_1_data.js') && srcs.indexOf('js/islamyat_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Nazira data', srcs.includes('js/nazira_1_data.js') && srcs.indexOf('js/nazira_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Pashto data', srcs.includes('js/pashto_1_data.js') && srcs.indexOf('js/pashto_1_data.js') < srcs.indexOf('js/app.js'));
+check('index.html loads Class 2 English, Urdu, Islamyat, Nazira, GK, Pashto datasets', [
+  'js/english_2_data.js', 'js/urdu_2_data.js', 'js/islamyat_2_data.js',
+  'js/nazira_2_data.js', 'js/gk_2_data.js', 'js/pashto_2_data.js'
+].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 ['js/data_chem.js', 'js/data_phys.js', 'js/data_eng.js', 'js/data_bio.js', 'js/data_comp.js'].forEach(s => check('index.html loads ' + s, srcs.includes(s)));
 const missingSrc = srcs.filter(s => !fs.existsSync(path.join(ROOT, s)));
 check('every <script src> exists', missingSrc.length === 0, 'missing: ' + missingSrc.join(','));

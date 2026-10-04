@@ -3,7 +3,7 @@ const vm = require('vm');
 
 const path = require('path');
 const DIR = path.resolve(__dirname, '../js') + path.sep;
-const files = ['data.js', 'drawing_1_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js'];
+const files = ['data.js', 'drawing_1_data.js', 'drawing_2_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js', 'math_2_data.js', 'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js'];
 
 function makeEl(id) {
   const style = {};
@@ -110,6 +110,16 @@ run("CLASS 1 Maths solved exercises render", `switchMathTab('exercises'); if (!/
 run("CLASS 1 Maths exam bank uses its own MCQs", `switchMathTab('slos'); if (!/What number comes after 59/.test($('mathTabContent').innerHTML)) throw new Error('Class 1 exam MCQs missing');`);
 run("CLASS 1 Maths MCQ answer feedback renders", `switchMathSloCategory('mcqs'); selectMathMcqOption(0, 1, true, 'Count one more than 59: the answer is 60.'); if (!/math-mcq/.test($('mathSloContentArea').innerHTML)) throw new Error('MCQ feedback controls missing');`);
 run("CLASS 1 Maths summary renders", `switchMathTab('formulas'); if (!/Place value/.test($('mathTabContent').innerHTML)) throw new Error('revision summary missing');`);
+run("CLASS 2 Drawing opens with Exam Practice", `openSubject('cls2','cls2-drawing'); if (state.selectedClass!=='cls2' || !/Join the dots and colour the shapes/.test($('dashboard-body').innerHTML) || !/MCQs/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 Drawing view or practice missing');`);
+run("CLASS 2 Drawing has 32 trilingual vector activities", `state.activeDrawingTab='activities'; renderDrawingView(); if (DRAWING_2_DATA.length!==32 || !/پښتو/.test($('dashboard-body').innerHTML) || !/<svg/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 Drawing activities missing');`);
+run("CLASS 2 Drawing answer feedback works", `state.activeDrawingTab='practice'; answerDrawingMcq(0,2); if (!/is-correct/.test($('dashboard-body').innerHTML) || !/Correct! Well done./.test($('dashboard-body').innerHTML)) throw new Error('Class 2 MCQ feedback missing');`);
+run("CLASS 2 Drawing SQ and LQ answers expand in three languages", `state.activeDrawingTab='practice'; selectDrawingExamTab('sqs'); if (!/Name three tools/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 SQ bank missing'); selectDrawingExamTab('lqs'); if (!/paper-folding models/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 LQ bank missing');`);
+run("CLASS 2 Mathematics opens six workbook units", `openSubject('cls2','cls2-math'); if (getMathChapterList('cls2').length!==6 || !/Whole Numbers/.test($('mathTopicArea').innerHTML)) throw new Error('Class 2 Maths did not open');`);
+run("CLASS 2 Mathematics addition lessons and Urdu render", `selectMathChapter(1); switchMathTab('lesson'); const m2chapter=getMathChapterList('cls2')[1]; const m2urdu=renderMathTopicSubContent(m2chapter.sections[0],m2chapter,'urdu',0); if (!/Addition of Three-Digit Numbers/.test($('mathTabContent').innerHTML) || !/اکائیوں/.test(m2urdu)) throw new Error('Class 2 Maths lesson or Urdu translation missing');`);
+run("CLASS 2 Mathematics solved exercises render", `selectMathChapter(1); switchMathTab('exercises'); if (!/Ex 2.1/.test($('mathTabContent').innerHTML)) throw new Error('Class 2 Maths exercise missing');`);
+run("CLASS 2 Mathematics board bank uses Class 2 questions", `selectMathChapter(0); switchMathTab('slos'); if (!/What is the value of 5 in 352/.test($('mathTabContent').innerHTML)) throw new Error('Class 2 exam bank missing');`);
+run("CLASS 2 Mathematics wrong MCQ shows red choice and green answer", `switchMathSloCategory('mcqs'); const m2card=document.getElementById('math-mcq-0'); const m2buttons=[0,1,2,3].map(()=>({style:{},innerHTML:'Option',disabled:false})); m2card.querySelectorAll=()=>m2buttons; selectMathMcqOption(0,0,false,'Try again.',1); if (m2buttons[0].style.background!=='#fee2e2' || m2buttons[1].style.background!=='#dcfce7') throw new Error('Class 2 wrong answer feedback missing');`);
+run("CLASS 2 Mathematics formulas render", `selectMathChapter(3); switchMathTab('formulas'); if (!/1 m/.test($('mathTabContent').innerHTML)) throw new Error('Class 2 measurement summary missing');`);
 run("showWordMeaning", `showWordMeaning(document.createElement("span"))`);
 run("REGRESSION openSubject cls9 eng", `openSubject("cls9","cls9-eng")`);
 run("REGRESSION selectEngChapter(2)", `selectEngChapter(2)`);
@@ -139,6 +149,8 @@ run("CLASS 10 openSubject cls10 bio", `openSubject("cls10","cls10-bio")`);
 run("CLASS 10 goToSubjects cls10", `goToSubjects('cls10')`);
 run("CLASS 10 renderBooksView cls10", `renderBooksView('cls10')`);
 run("CLASS 1 goToSubjects lists Drawing", `goToSubjects('cls1'); if (!/Drawing/.test($('dashboard-body').innerHTML)) throw new Error('Drawing subject card missing');`);
+run("CLASS 2 subjects are reachable and list Maths and Drawing", `goToSubjects('cls2'); if (!/Mathematics/.test($('dashboard-body').innerHTML) || !/Drawing/.test($('dashboard-body').innerHTML) || /Subjects Not Uploaded Yet/.test($('dashboard-body').innerHTML)) throw new Error('Class 2 subjects are still behind the upload gate');`);
+run("CLASS 3 retains the not-uploaded notice", `goToSubjects('cls3'); if (!/Subjects Not Uploaded Yet/.test($('dashboard-body').innerHTML)) throw new Error('Not-uploaded gate changed for Class 3');`);
 run("CLASS 1 opens with expanded Exam Practice", `openSubject('cls1','cls1-drawing'); if (state.activeDrawingTab!=='practice' || state.activeDrawingExamTab!=='mcqs' || !/drawing-practice-tabs/.test($('dashboard-body').innerHTML) || !/drawing-option/.test($('dashboard-body').innerHTML) || /Drawing Exam Practice|CLASS 1 · REVISION|Practice questions based on the workbook activities/.test($('dashboard-body').innerHTML)) throw new Error('expanded Exam Practice or compact layout missing');`);
 run("CLASS 1 Activities omit lesson heading and caption", `state.activeDrawingTab='activities'; renderDrawingView(); const body=$('dashboard-body').innerHTML; if (!/<svg/.test(body) || !/drawing-trace/.test(body) || !/English/.test(body) || !/پښتو/.test(body) || /CLASS 1 · CREATIVE ARTS & DRAWING|Workbook activity 1 · Page 1|<figcaption/.test(body) || /\.jpg|\.png/.test(body)) throw new Error('Activity view still has removed text or is missing vector tips');`);
 run("CLASS 1 Drawing selects activity 32", `selectDrawingPage(31); if (!/Making a cat face/.test($('dashboard-body').innerHTML) || !/Folded cat face/.test($('dashboard-body').innerHTML)) throw new Error('final activity missing');`);
@@ -182,6 +194,53 @@ run("CLASS 1 switchSubjectTab pashto slos", `switchSubjectTab('pashto', 'slos', 
 run("CLASS 1 switchSubjectTab pashto words", `switchSubjectTab('pashto', 'words', 0, 'cls1')`);
 run("CLASS 1 switchSubjectTab pashto grammar", `switchSubjectTab('pashto', 'grammar', 0, 'cls1')`);
 run("CLASS 1 selectSubjectChapter pashto 22 (Unit 23)", `selectSubjectChapter('pashto', 22, 'cls1')`);
+
+// ---- Class 2 Subject Port Verification ----
+run("CLASS 2 goToSubjects lists all 8 subjects", `goToSubjects('cls2'); const c2Html = $('dashboard-body').innerHTML; if (!/English/.test(c2Html) || !/Urdu|اردو/.test(c2Html) || !/Mathematics/.test(c2Html) || !/General Knowledge|واقفیتِ عامہ/.test(c2Html) || !/Islamyat|اسلامیات/.test(c2Html) || !/Nazira|ناظرہ/.test(c2Html) || !/Pashto|پښتو/.test(c2Html) || !/Drawing/.test(c2Html)) throw new Error('Class 2 missing subject cards: ' + c2Html);`);
+run("CLASS 2 openSubject cls2-eng", `openSubject('cls2','cls2-eng')`);
+run("CLASS 2 selectSubjectChapter eng 0", `selectSubjectChapter('eng', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab eng lesson", `switchSubjectTab('eng', 'lesson', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab eng exercise", `switchSubjectTab('eng', 'exercise', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab eng slos", `switchSubjectTab('eng', 'slos', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab eng words", `switchSubjectTab('eng', 'words', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab eng grammar", `switchSubjectTab('eng', 'grammar', 0, 'cls2')`);
+run("CLASS 2 selectSubjectChapter eng 11 (Unit 12)", `selectSubjectChapter('eng', 11, 'cls2')`);
+
+run("CLASS 2 openSubject cls2-urdu", `openSubject('cls2','cls2-urdu')`);
+run("CLASS 2 selectSubjectChapter urdu 0", `selectSubjectChapter('urdu', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab urdu lesson", `switchSubjectTab('urdu', 'lesson', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab urdu exercise", `switchSubjectTab('urdu', 'exercise', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab urdu slos", `switchSubjectTab('urdu', 'slos', 0, 'cls2')`);
+run("CLASS 2 selectSubjectChapter urdu 21 (Lesson 22)", `selectSubjectChapter('urdu', 21, 'cls2')`);
+
+run("CLASS 2 openSubject cls2-isl", `openSubject('cls2','cls2-isl')`);
+run("CLASS 2 selectSubjectChapter isl 0", `selectSubjectChapter('isl', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab isl lesson", `switchSubjectTab('isl', 'lesson', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab isl exercise", `switchSubjectTab('isl', 'exercise', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab isl slos", `switchSubjectTab('isl', 'slos', 0, 'cls2')`);
+run("CLASS 2 selectSubjectChapter isl 10 (Unit 11)", `selectSubjectChapter('isl', 10, 'cls2')`);
+
+run("CLASS 2 openSubject cls2-nazira", `openSubject('cls2','cls2-nazira')`);
+run("CLASS 2 selectSubjectChapter nazira 0", `selectSubjectChapter('nazira', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab nazira lesson", `switchSubjectTab('nazira', 'lesson', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab nazira exercise", `switchSubjectTab('nazira', 'exercise', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab nazira slos", `switchSubjectTab('nazira', 'slos', 0, 'cls2')`);
+run("CLASS 2 selectSubjectChapter nazira 14 (Lesson 15)", `selectSubjectChapter('nazira', 14, 'cls2')`);
+
+run("CLASS 2 openSubject cls2-gk", `openSubject('cls2','cls2-gk')`);
+run("CLASS 2 selectSubjectChapter gk 0", `selectSubjectChapter('gk', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab gk lesson", `switchSubjectTab('gk', 'lesson', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab gk exercise", `switchSubjectTab('gk', 'exercise', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab gk slos", `switchSubjectTab('gk', 'slos', 0, 'cls2')`);
+run("CLASS 2 selectSubjectChapter gk 15 (Chapter 16)", `selectSubjectChapter('gk', 15, 'cls2')`);
+
+run("CLASS 2 openSubject cls2-pashto", `openSubject('cls2','cls2-pashto')`);
+run("CLASS 2 selectSubjectChapter pashto 0", `selectSubjectChapter('pashto', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab pashto lesson", `switchSubjectTab('pashto', 'lesson', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab pashto exercise", `switchSubjectTab('pashto', 'exercise', 0, 'cls2')`);
+run("CLASS 2 switchSubjectTab pashto slos", `switchSubjectTab('pashto', 'slos', 0, 'cls2')`);
+run("CLASS 2 selectSubjectChapter pashto 27 (Lesson 28)", `selectSubjectChapter('pashto', 27, 'cls2')`);
+
 run("REGRESSION renderClasses", `renderClasses()`);
 run("REGRESSION handleGlobalSearch('islam')", `handleGlobalSearch("islam")`);
 run("REGRESSION handleGlobalSearch('daffodils')", `handleGlobalSearch("daffodils")`);

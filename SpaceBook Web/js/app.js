@@ -617,7 +617,10 @@ function renderClasses() {
       return { tierName: 'Early Years', tierClass: 'tier-early', badgeText: 'Preschool Track' };
     }
     if (['cls1', 'cls2', 'cls3', 'cls4', 'cls5'].includes(c.id)) {
-      return { tierName: 'Primary', tierClass: 'tier-primary', badgeText: c.id === 'cls1' ? 'Drawing ready · 5 subjects in prep' : `${c.subjects} Subjects · In Prep` };
+      const badgeText = c.id === 'cls1' ? 'Drawing ready · 5 subjects in prep'
+        : c.id === 'cls2' ? 'Maths & Drawing ready · 4 subjects in prep'
+          : `${c.subjects} Subjects · In Prep`;
+      return { tierName: 'Primary', tierClass: 'tier-primary', badgeText };
     }
     if (['cls6', 'cls7', 'cls8'].includes(c.id)) {
       return { tierName: 'Middle School', tierClass: 'tier-middle', badgeText: `${c.subjects} Subjects · In Prep` };
@@ -721,8 +724,8 @@ function goToSubjects(classId) {
     { label: cls.name,   active: true }
   ];
 
-  // If subjects are not uploaded yet for this class (only Class 9 and 10 are currently uploaded)
-    if (classId !== "cls9" && classId !== "cls10" && classId !== "cls1") {
+  // Class 1 and 2 have integrated subject content; retain the preparation gate for other grades.
+  if (!['cls1', 'cls2', 'cls9', 'cls10'].includes(classId)) {
     pageContent().innerHTML = `
       <!-- 1. Single-Line Consolidated Header Bar -->
       <div class="subjects-single-line-bar">
@@ -1231,10 +1234,10 @@ function openSubject(classId, subjId) {
   } else if (subj.hasPhys || subjId === 'cls9-phy' || subjId === 'cls10-phy') {
     state.activeSubject = "phys";
     openSubjectWorkspace(classId, "phys", subj);
-  } else if (subj.hasEng || subjId === 'cls9-eng' || subjId === 'cls10-eng' || subjId === 'cls1-eng') {
+  } else if (subj.hasEng || subjId === 'cls9-eng' || subjId === 'cls10-eng' || subjId === 'cls1-eng' || subjId === 'cls2-eng') {
     state.activeSubject = "eng";
     openSubjectWorkspace(classId, "eng", subj);
-  } else if (subj.hasUrdu || subjId === 'cls9-urdu' || subjId === 'cls10-urdu') {
+  } else if (subj.hasUrdu || subjId === 'cls9-urdu' || subjId === 'cls10-urdu' || subjId === 'cls2-urdu') {
     state.activeSubject = "urdu";
     openSubjectWorkspace(classId, "urdu", subj);
   } else if (subj.hasMath || subjId === 'cls1-math' || subjId === 'cls2-math' || subjId === 'cls9-math' || subjId === 'cls10-math') {
@@ -1243,15 +1246,18 @@ function openSubject(classId, subjId) {
   } else if (subj.hasPakStudy || subjId === 'cls9-pakstudy' || subjId === 'cls10-pakstudy') {
     state.activeSubject = "pakstudy";
     openSubjectWorkspace(classId, "pakstudy", subj);
-  } else if (subj.hasNazira || subjId === 'cls1-nazira') {
+  } else if (subj.hasNazira || subjId === 'cls1-nazira' || subjId === 'cls2-nazira') {
     state.activeSubject = "nazira";
     openSubjectWorkspace(classId, "nazira", subj);
-  } else if (subj.hasPashto || subjId === 'cls1-pashto') {
+  } else if (subj.hasPashto || subjId === 'cls1-pashto' || subjId === 'cls2-pashto') {
     state.activeSubject = "pashto";
     openSubjectWorkspace(classId, "pashto", subj);
-  } else if (subj.hasIsl || subjId === 'cls9-isl' || subjId === 'cls10-isl' || subjId === 'cls1-isl') {
+  } else if (subj.hasIsl || subjId === 'cls9-isl' || subjId === 'cls10-isl' || subjId === 'cls1-isl' || subjId === 'cls2-isl') {
     state.activeSubject = "isl";
     openSubjectWorkspace(classId, "isl", subj);
+  } else if (subj.hasGk || subjId === 'cls2-gk' || subjId === 'cls1-gk') {
+    state.activeSubject = "gk";
+    openSubjectWorkspace(classId, "gk", subj);
   } else if (subj.hasComp || subjId === 'cls9-comp' || subjId === 'cls10-comp') {
     state.activeSubject = "comp";
     openSubjectWorkspace(classId, "comp", subj);
@@ -12883,6 +12889,13 @@ const SUBJECT_THEMES = {
     pillColor: '#134e4a',
     accentColor: '#0d9488',
     tag: 'سبق'
+  },
+  gk: {
+    gradient: 'linear-gradient(135deg, #065f46 0%, #047857 100%)',
+    pillBg: '#6ee7b7',
+    pillColor: '#022c22',
+    accentColor: '#059669',
+    tag: 'سبق'
   }
 };
 
@@ -14981,7 +14994,7 @@ function renderMathSloCategoryContent(category, slos) {
             </div>
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.6rem;margin-bottom:0.5rem;">
               ${m.options.map((opt, oIdx) => `
-                <button class="math-mcq-opt" onclick="selectMathMcqOption(${idx}, ${oIdx}, ${oIdx === m.correct}, '${m.exp}')" style="padding:0.6rem 0.85rem;border:1px solid #cbd5e1;background:#ffffff;border-radius:8px;font-size:0.9rem;text-align:left;cursor:pointer;transition:all 0.15s ease;">
+                <button class="math-mcq-opt" onclick="selectMathMcqOption(${idx}, ${oIdx}, ${oIdx === m.correct}, '${m.exp}', ${m.correct})" style="padding:0.6rem 0.85rem;border:1px solid #cbd5e1;background:#ffffff;border-radius:8px;font-size:0.9rem;text-align:left;cursor:pointer;transition:all 0.15s ease;">
                   <strong>${['A', 'B', 'C', 'D'][oIdx]}.</strong> ${opt}
                 </button>
               `).join('')}
@@ -15063,7 +15076,7 @@ function renderMathSloCategoryContent(category, slos) {
 function getComprehensiveChapterSLOBank(ch) {
   const chNum = (ch && ch.number) ? ch.number : 1;
 
-  if (state.selectedClass === 'cls1' && ch && ch.slos) return ch.slos;
+  if ((state.selectedClass === 'cls1' || state.selectedClass === 'cls2') && ch && ch.slos) return ch.slos;
 
   if (chNum === 1 || String(chNum) === "1") {
     const mcqs = [
@@ -16222,6 +16235,10 @@ function getSubjectChapterList(subjKey, classId) {
     if (isCls10 && typeof ENGLISH_10_DATA !== 'undefined' && Array.isArray(ENGLISH_10_DATA)) {
       return ENGLISH_10_DATA;
     }
+    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    if (isCls2 && typeof ENGLISH_2_DATA !== 'undefined' && Array.isArray(ENGLISH_2_DATA)) {
+      return ENGLISH_2_DATA;
+    }
     const isCls1 = (classId === 'cls1' || state.selectedClass === 'cls1');
     if (isCls1 && typeof ENGLISH_1_DATA !== 'undefined' && Array.isArray(ENGLISH_1_DATA)) {
       return ENGLISH_1_DATA;
@@ -16234,6 +16251,10 @@ function getSubjectChapterList(subjKey, classId) {
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof URDU_10_DATA !== 'undefined' && Array.isArray(URDU_10_DATA)) {
       return URDU_10_DATA;
+    }
+    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    if (isCls2 && typeof URDU_2_DATA !== 'undefined' && Array.isArray(URDU_2_DATA)) {
+      return URDU_2_DATA;
     }
     return (typeof URDU_DATA !== 'undefined' && Array.isArray(URDU_DATA))
       ? URDU_DATA
@@ -16270,6 +16291,10 @@ function getSubjectChapterList(subjKey, classId) {
     if (isCls10 && typeof ISLAMYAT_10_DATA !== 'undefined' && Array.isArray(ISLAMYAT_10_DATA)) {
       return ISLAMYAT_10_DATA;
     }
+    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    if (isCls2 && typeof ISLAMYAT_2_DATA !== 'undefined' && Array.isArray(ISLAMYAT_2_DATA)) {
+      return ISLAMYAT_2_DATA;
+    }
     const isCls1 = (classId === 'cls1');
     if (isCls1 && typeof ISLAMYAT_1_DATA !== 'undefined' && Array.isArray(ISLAMYAT_1_DATA)) {
       return ISLAMYAT_1_DATA;
@@ -16279,16 +16304,31 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && (DATA.islChapters || DATA.islData)) ? (DATA.islChapters || DATA.islData) : []);
   }
   if (subjKey === 'nazira') {
+    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    if (isCls2 && typeof NAZIRA_2_DATA !== 'undefined' && Array.isArray(NAZIRA_2_DATA)) {
+      return NAZIRA_2_DATA;
+    }
     if (typeof NAZIRA_1_DATA !== 'undefined' && Array.isArray(NAZIRA_1_DATA)) {
       return NAZIRA_1_DATA;
     }
     return (typeof DATA !== 'undefined' && DATA && DATA.nazira1Chapters) ? DATA.nazira1Chapters : [];
   }
   if (subjKey === 'pashto') {
+    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    if (isCls2 && typeof PASHTO_2_DATA !== 'undefined' && Array.isArray(PASHTO_2_DATA)) {
+      return PASHTO_2_DATA;
+    }
     if (typeof PASHTO_1_DATA !== 'undefined' && Array.isArray(PASHTO_1_DATA)) {
       return PASHTO_1_DATA;
     }
     return (typeof DATA !== 'undefined' && DATA && DATA.pashto1Chapters) ? DATA.pashto1Chapters : [];
+  }
+  if (subjKey === 'gk') {
+    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    if (isCls2 && typeof GK_2_DATA !== 'undefined' && Array.isArray(GK_2_DATA)) {
+      return GK_2_DATA;
+    }
+    return (typeof DATA !== 'undefined' && DATA && DATA.gk2Chapters) ? DATA.gk2Chapters : [];
   }
   if (subjKey === 'comp') {
     return (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];

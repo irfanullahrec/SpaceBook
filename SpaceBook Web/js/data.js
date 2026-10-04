@@ -62,7 +62,7 @@ const DATA = {
       "id": "cls2",
       "name": "Class 2",
       "emoji": "📖",
-      "subjects": 6
+      "subjects": 8
     },
     {
       "id": "cls3",
@@ -155,12 +155,14 @@ const DATA = {
       { "id": "cls1-drawing", "name": "Drawing",         "nameUrdu": "تخلیقی فنون و ڈرائنگ", "emoji": "🎨", "chapters": 32, "hasDrawing": true }
     ],
     "cls2": [
-      { "id": "cls2-eng",  "name": "English",           "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 12 },
-      { "id": "cls2-urdu", "name": "Urdu",              "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 12 },
-      { "id": "cls2-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 6 },
-      { "id": "cls2-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌍", "chapters": 10 },
-      { "id": "cls2-isl",  "name": "Islamyat",          "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 },
-      { "id": "cls2-drawing", "name": "Drawing",       "nameUrdu": "تخلیقی فنون و ڈرائنگ", "emoji": "🎨", "chapters": 32, "hasDrawing": true }
+      { "id": "cls2-eng",     "name": "English",           "nameUrdu": "انگریزی",             "emoji": "📖", "chapters": 12, "hasEng": true, "hasEng2": true },
+      { "id": "cls2-urdu",    "name": "Urdu",              "nameUrdu": "اردو لازمی",          "emoji": "📗", "chapters": 22, "hasUrdu": true, "hasUrdu2": true },
+      { "id": "cls2-math",    "name": "Mathematics",       "nameUrdu": "ریاضی",               "emoji": "📐", "chapters": 6,  "hasMath": true, "hasMath2": true },
+      { "id": "cls2-gk",      "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",        "emoji": "🌍", "chapters": 16, "hasGk": true, "hasGk2": true },
+      { "id": "cls2-isl",     "name": "Islamyat",          "nameUrdu": "اسلامیات",            "emoji": "🕌", "chapters": 11, "hasIsl": true, "hasIsl2": true },
+      { "id": "cls2-nazira",  "name": "Nazira Quran",      "nameUrdu": "ناظرہ قرآن",          "emoji": "📖", "chapters": 15, "hasNazira": true, "hasNazira2": true },
+      { "id": "cls2-pashto",  "name": "Pashto",            "nameUrdu": "پښتو (لازمي)",        "emoji": "📚", "chapters": 28, "hasPashto": true, "hasPashto2": true },
+      { "id": "cls2-drawing", "name": "Drawing",           "nameUrdu": "تخلیقی فنون و ڈرائنگ", "emoji": "🎨", "chapters": 32, "hasDrawing": true }
     ],
     "cls3": [
       { "id": "cls3-eng",  "name": "English",         "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 14 },
