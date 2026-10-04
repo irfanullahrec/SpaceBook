@@ -831,16 +831,31 @@ function goToSubjects(classId) {
     if (s.id === "cls1-isl" || (s.hasIsl && classId === "cls1")) {
       return {
         headerColor: "#0d9488",
-        urduName: "اسلامیات و ناظرہ قرآن (پہلی جماعت)",
+        urduName: "اسلامیات (پہلی جماعت)",
         badgeText: "✓ 100% Verbatim KPK Textbook",
         badgeClass: "badge-green",
-        metric1Val: "27 اسباق",
-        metric1Lbl: "ناظرہ قرآن و درسی اسلامیات",
-        metric2Val: "140+ Solved Qs",
+        metric1Val: "10 اسباق",
+        metric1Lbl: "درسی اسلامیات (۵ ابواب)",
+        metric2Val: "60+ Solved Qs",
         metric2Lbl: "مشقی سوالات و ایس ایل اوز",
-        metric3Val: "تجوید و سورتیں",
-        metric3Lbl: "حروف، حرکات و آخری ۴ سورتیں",
-        topics: ["عربی حروف و مخارج", "حرکات و تنوین", "حروفِ مدہ و لین", "قواعدِ تجوید و غنہ", "آخری ۴ سورتیں", "حفظ و ترجمہ", "ایمانیات و عبادات", "سیرت طیبہ ﷺ", "اخلاق و آداب"]
+        metric3Val: "حفظ و ارکان",
+        metric3Lbl: "ایمانیات، عبادات و سیرت طیبہ",
+        topics: ["حفظ و ترجمہ سورتیں", "حدیث و مسنون دعائیں", "ایمانیات و کلمہ طیبہ", "مسجد و نماز", "سیرت طیبہ ﷺ", "اخلاق و آداب"]
+      };
+    }
+    if (s.id === "cls1-nazira" || (s.hasNazira && classId === "cls1")) {
+      return {
+        headerColor: "#059669",
+        urduName: "ناظرہ قرآن (پہلی جماعت)",
+        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeClass: "badge-green",
+        metric1Val: "17 اسباق",
+        metric1Lbl: "تجوید و ناظرہ قرآن",
+        metric2Val: "80+ Solved Qs",
+        metric2Lbl: "تجوید مشقیں و صوتی پہچان",
+        metric3Val: "قواعد و سورتیں",
+        metric3Lbl: "مخارج، حرکات و آخری ۴ سورتیں",
+        topics: ["عربی حروف و مخارج", "مرکبات و اشکال", "حرکات و تنوین", "حروفِ مدہ و لین", "سکون و تشدید", "قواعدِ تجوید و غنہ", "آخری ۴ سورتیں"]
       };
     }
     if (s.id === "cls10-bio" || (s.hasBio && isCls10)) {
@@ -1129,9 +1144,9 @@ function goToSubjects(classId) {
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">📚</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '6 Subjects · English, Islamyat & Nazira, Drawing' : '9 Subjects · 15 Books'}</div>
+          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '7 Subjects · English, Islamyat, Nazira, Drawing' : '9 Subjects · 15 Books'}</div>
           <div class="csc-label">Class Curriculum Track</div>
-          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English, Islamyat &amp; Nazira (27 Units) &amp; Drawing' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
+          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English, Islamyat (10 Units), Nazira (17 Lessons) &amp; Drawing' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
         </div>
       </div>
 
@@ -1206,6 +1221,9 @@ function openSubject(classId, subjId) {
   } else if (subj.hasPakStudy || subjId === 'cls9-pakstudy' || subjId === 'cls10-pakstudy') {
     state.activeSubject = "pakstudy";
     openSubjectWorkspace(classId, "pakstudy", subj);
+  } else if (subj.hasNazira || subjId === 'cls1-nazira') {
+    state.activeSubject = "nazira";
+    openSubjectWorkspace(classId, "nazira", subj);
   } else if (subj.hasIsl || subjId === 'cls9-isl' || subjId === 'cls10-isl' || subjId === 'cls1-isl') {
     state.activeSubject = "isl";
     openSubjectWorkspace(classId, "isl", subj);
@@ -11343,10 +11361,13 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
       });
     }
   }
-  else if (sid.includes("isl")) {
+  else if (sid.includes("isl") || sid.includes("nazira")) {
+    const isNazira = (sid.includes("nazira") || sid === 'cls1-nazira');
     const isCls10 = (classId === 'cls10' || sid === 'cls10-isl');
     const isCls1 = (classId === 'cls1' || sid === 'cls1-isl');
-    const islDataset = isCls10
+    const islDataset = isNazira
+      ? ((typeof NAZIRA_1_DATA !== 'undefined' && Array.isArray(NAZIRA_1_DATA)) ? NAZIRA_1_DATA : ((typeof DATA !== 'undefined' && DATA.nazira1Chapters) ? DATA.nazira1Chapters : []))
+      : isCls10
       ? ((typeof ISLAMYAT_10_DATA !== 'undefined' && Array.isArray(ISLAMYAT_10_DATA)) ? ISLAMYAT_10_DATA : ((typeof ISLAMYAT_DATA !== 'undefined' && Array.isArray(ISLAMYAT_DATA)) ? ISLAMYAT_DATA : []))
       : isCls1
       ? ((typeof ISLAMYAT_1_DATA !== 'undefined' && Array.isArray(ISLAMYAT_1_DATA)) ? ISLAMYAT_1_DATA : [])
@@ -12818,6 +12839,13 @@ const SUBJECT_THEMES = {
     pillColor: '#422006',
     accentColor: '#d97706',
     tag: 'باب'
+  },
+  nazira: {
+    gradient: 'linear-gradient(135deg, #064e3b 0%, #065f46 100%)',
+    pillBg: '#34d399',
+    pillColor: '#022c22',
+    accentColor: '#059669',
+    tag: 'سبق'
   }
 };
 
@@ -16207,6 +16235,12 @@ function getSubjectChapterList(subjKey, classId) {
       ? ISLAMYAT_DATA
       : ((typeof DATA !== "undefined" && DATA && (DATA.islChapters || DATA.islData)) ? (DATA.islChapters || DATA.islData) : []);
   }
+  if (subjKey === 'nazira') {
+    if (typeof NAZIRA_1_DATA !== 'undefined' && Array.isArray(NAZIRA_1_DATA)) {
+      return NAZIRA_1_DATA;
+    }
+    return (typeof DATA !== 'undefined' && DATA && DATA.nazira1Chapters) ? DATA.nazira1Chapters : [];
+  }
   if (subjKey === 'comp') {
     return (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];
   }
@@ -16281,7 +16315,7 @@ function selectSubjectChapter(subjKey, index, classId) {
   document.querySelectorAll(".bio-ch-btn, .math-ch-btn").forEach((btn, i) =>
     btn.classList.toggle("active", i === index));
   const subs = DATA.subjects[classId] || [];
-  const subjObj = subs.find(s => s.id === state.activeSubject || s.hasEng || s.hasUrdu || s.hasBio || s.hasChem || s.hasPhys || s.hasPakStudy || s.hasIsl);
+  const subjObj = subs.find(s => s.id === state.activeSubject || s.hasEng || s.hasUrdu || s.hasBio || s.hasChem || s.hasPhys || s.hasPakStudy || s.hasIsl || s.hasNazira);
   renderSubjectChapterView(subjKey, index, classId, subjObj);
 }
 
@@ -16433,7 +16467,7 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
         `;
       }
       container.innerHTML = renderScienceLessonSubContent(subjKey, ch, activeScienceSubTab);
-    } else if (subjKey === 'isl') {
+    } else if (subjKey === 'isl' || subjKey === 'nazira') {
       const activeIslSubTab = state.activeIslLessonSubTab || 'lesson';
       if (subBar) {
         subBar.style.display = 'flex';
@@ -18322,7 +18356,7 @@ function renderScienceLessonSubContent(subjKey, ch, subTab) {
 }
 
 function renderScienceOrHumanitiesLessons(subjKey, ch) {
-  if (subjKey === 'isl') {
+  if (subjKey === 'isl' || subjKey === 'nazira') {
     return typeof renderIslLesson === 'function' ? renderIslLesson(ch) : '';
   }
   const topics = ch.topics || ch.sections || [];
@@ -18359,7 +18393,7 @@ function renderScienceOrHumanitiesLessons(subjKey, ch) {
 }
 
 function renderScienceConceptsTab(subjKey, ch) {
-  if (subjKey === 'isl') {
+  if (subjKey === 'isl' || subjKey === 'nazira') {
     const wordList = [];
     (ch.sections || []).forEach(sec => {
       if (Array.isArray(sec.wordMeanings)) {
@@ -18437,7 +18471,7 @@ function renderScienceConceptsTab(subjKey, ch) {
 }
 
 function renderScienceOrHumanitiesSummaryTab(subjKey, ch) {
-  if (subjKey === 'isl' || ch.urduSummary || ch.englishSummary || ch.pashtoSummary) {
+  if (subjKey === 'isl' || subjKey === 'nazira' || ch.urduSummary || ch.englishSummary || ch.pashtoSummary) {
     return `
       <div>
         <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;">

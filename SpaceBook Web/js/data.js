@@ -56,7 +56,7 @@ const DATA = {
       "id": "cls1",
       "name": "Class 1",
       "emoji": "✏️",
-      "subjects": 6
+      "subjects": 7
     },
     {
       "id": "cls2",
@@ -149,7 +149,8 @@ const DATA = {
       { "id": "cls1-urdu", "name": "Urdu",              "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 12 },
       { "id": "cls1-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 6 },
       { "id": "cls1-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌍", "chapters": 10 },
-      { "id": "cls1-isl",  "name": "Islamyat & Nazira", "nameUrdu": "اسلامیات و ناظرہ قرآن", "emoji": "🕌", "chapters": 27, "hasIsl": true, "hasIsl1": true },
+      { "id": "cls1-isl",  "name": "Islamyat",          "nameUrdu": "اسلامیات",            "emoji": "🕌", "chapters": 10, "hasIsl": true, "hasIsl1": true },
+      { "id": "cls1-nazira", "name": "Nazira Quran",    "nameUrdu": "ناظرہ قرآن",          "emoji": "📖", "chapters": 17, "hasNazira": true, "hasNazira1": true },
       { "id": "cls1-drawing", "name": "Drawing",         "nameUrdu": "تخلیقی فنون و ڈرائنگ", "emoji": "🎨", "chapters": 32, "hasDrawing": true }
     ],
     "cls2": [
@@ -1485,11 +1486,11 @@ const DATA = {
       "class_id": "cls1",
       "className": "Class 1",
       "class_name": "Class 1",
-      "subject": "Islamyat & Nazira Quran",
-      "title": "Islamyat & Nazira Quran 1st Class Textbook",
+      "subject": "Islamyat (Compulsory)",
+      "title": "Islamyat 1st Class Textbook",
       "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
       "size": "15.34 MB",
-      "pages": "Complete 27 Units (Tajweed & General Islamyat)",
+      "pages": "Complete 10 Units (5 Babs)",
       "pdfPath": "assets/books/Class-1-Islamyat-KPK.pdf",
       "pdf_path": "assets/books/Class-1-Islamyat-KPK.pdf",
       "color": "#0d9488",
@@ -1498,6 +1499,26 @@ const DATA = {
       "action": "cls1-isl",
       "hub_action": "cls1-isl",
       "subject_id": 5
+    },
+    {
+      "id": "b-cls1-nazira",
+      "classId": "cls1",
+      "class_id": "cls1",
+      "className": "Class 1",
+      "class_name": "Class 1",
+      "subject": "Nazira Quran",
+      "title": "Nazira Quran 1st Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "12.16 MB",
+      "pages": "Complete 17 Lessons (Tajweed & Surahs)",
+      "pdfPath": "assets/books/Class-1-Nazira-KPK.pdf",
+      "pdf_path": "assets/books/Class-1-Nazira-KPK.pdf",
+      "color": "#059669",
+      "icon": "📖",
+      "available": true,
+      "action": "cls1-nazira",
+      "hub_action": "cls1-nazira",
+      "subject_id": 6
     },
     {
       "id": "b-cls10-eng",

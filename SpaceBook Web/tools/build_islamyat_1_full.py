@@ -17,7 +17,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 NAZIRA_PATH = r"D:\SpaceBook\Books\1st\1st Nazera\Word\Nazira.docx"
 ISL_PATH = r"D:\SpaceBook\Books\1st\1st Islamyat\Word\درسی کتاب.docx"
-OUT_JS_PATH = r"D:\SpaceBook\SpaceBook Web\js\islamyat_1_data.js"
+OUT_ISL_PATH = r"D:\SpaceBook\SpaceBook Web\js\islamyat_1_data.js"
+OUT_NAZ_PATH = r"D:\SpaceBook\SpaceBook Web\js\nazira_1_data.js"
 
 def extract_docx_paras(path):
     with zipfile.ZipFile(path) as z:
@@ -79,15 +80,16 @@ def get_paras_slice(paras, start_kw, end_kw=None):
     return paras[start_idx:end_idx]
 
 # Build unit definitions
-units_data = []
+nazira_data = []
+islamyat_data = []
 
 # =========================================================================
 # UNIT 1: عربی حروفِ تہجی و اصوات
 # =========================================================================
 p_u1 = get_paras_slice(naz_clean, "سبق 1", "سبق 2")
 text_u1 = "\n".join(p_u1[:35])
-units_data.append({
-    "id": "cls1-isl-ch01",
+nazira_data.append({
+    "id": "cls1-naz-ch01",
     "number": 1,
     "type": "tajweed",
     "title": "سبق ۱: عربی حروفِ تہجی و مخارج",
@@ -296,8 +298,8 @@ tajweed_specs = [
 for (num, title_ur, title_en, title_ps, skw, ekw, desc, u_secs, arabic_samp, arabic_means, sum_ur) in tajweed_specs:
     p_sub = get_paras_slice(naz_clean, skw, ekw)
     txt_content = "\n".join(p_sub[:30]) if p_sub else desc
-    units_data.append({
-        "id": f"cls1-isl-ch{num:02d}",
+    nazira_data.append({
+        "id": f"cls1-naz-ch{num:02d}",
         "number": num,
         "type": "tajweed",
         "title": f"سبق {num}: {title_ur}",
@@ -389,8 +391,8 @@ for (num, title_ur, title_en, title_ps, skw, ekw, desc, u_secs, arabic_samp, ara
 # =========================================================================
 # UNIT 17: قرآن مجید کی آخری چار سورتیں
 # =========================================================================
-units_data.append({
-    "id": "cls1-isl-ch17",
+nazira_data.append({
+    "id": "cls1-naz-ch17",
     "number": 17,
     "type": "surah",
     "title": "سبق ۱۷: قرآن مجید کی آخری چار سورتیں (سورة اللهب، الاخلاص، الفلق، الناس)",
@@ -548,9 +550,9 @@ units_data.append({
 # =========================================================================
 
 darsi_specs = [
-    (18, "باب اوّل: ناظرہ و حفظِ قرآن مجید (سورۃ الفاتحہ، سورۃ الاخلاص)",
-     "Unit 18: Chapter 1 - Quranic Recitation & Memorization (Surah Al-Fatihah & Al-Ikhlas)",
-     "۱۸ لوست: ۱ باب - د قرآن مجيد ناظره او حفظ", "thematic",
+    (1, "باب اوّل: ناظرہ و حفظِ قرآن مجید (سورۃ الفاتحہ، سورۃ الاخلاص)",
+     "Unit 1: Chapter 1 - Quranic Recitation & Memorization (Surah Al-Fatihah & Al-Ikhlas)",
+     "۱ لوست: ۱ باب - د قرآن مجيد ناظره او حفظ", "thematic",
      "باب اوّل قرآن مجید و حدیث نبوى", "(ب) حفظ قرآن مجید",
      "قرآن مجید اللہ تعالیٰ کی آخری آسمانی کتاب ہے جو ہمارے پیارے نبی حضرت محمد رسول اللہ خاتم النبیین ﷺ پر نازل ہوئی۔ اس سبق میں سورۃ الفاتحہ اور سورۃ الاخلاص کا حفظ اور ناظرہ شامل ہے۔",
      ["قرآن مجید کا تعارف اور احترام", "سورۃ الفاتحہ کا حفظ اور ترجمہ", "سورۃ الاخلاص کا حفظ اور مفہوم", "روزمرہ نماز میں سورتوں کی تلاوت"],
@@ -572,9 +574,9 @@ darsi_specs = [
      ],
      "سورۃ الفاتحہ اور سورۃ الاخلاص قرآن مجید کی بنیادی سورتیں ہیں۔ سورۃ الفاتحہ دعا اور ہدایت ہے جبکہ سورۃ الاخلاص توحید کا خالص بیان ہے۔"),
 
-    (19, "باب اوّل: حدیثِ نبوی ﷺ اور مسنون دعائیں",
-     "Unit 19: Chapter 1 - Prophetic Hadith & Daily Masnoon Supplications",
-     "۱۹ لوست: نبوي حديث او مسنونې دعاګانې", "hadith",
+    (2, "باب اوّل: حدیثِ نبوی ﷺ اور مسنون دعائیں",
+     "Unit 2: Chapter 1 - Prophetic Hadith & Daily Masnoon Supplications",
+     "۲ لوست: نبوي حديث او مسنونې دعاګانې", "hadith",
      "(ج) حفظ و ترجمہ", "باب دوم",
      "حدیث مبارک: قَالَ رَسُولُ اللّٰهِ صَلَّى اللّٰهُ عَلَيْهِ وَعَلَى آلِهِ وَأَصْحَابِهِ وَسَلَّمَ: خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ (تم میں سے بہترین شخص وہ ہے جو قرآن سیکھے اور دوسروں کو سکھائے)۔ مسنون دعائیں: علم میں اضافے کی دعا، کھانے پینے اور سونے جاگنے کی دعائیں۔",
      ["حدیثِ نبوی ﷺ کا حفظ و ترجمہ", "علم میں اضافے کی دعا (رَّبِّ زِدْنِیْ عِلْمًا)", "کھانے سے پہلے اور بعد کی دعا", "سونے اور بیدار ہونے کی دعا", "چھینک آنے کے آداب (الحمد للہ و یرحمک اللہ)"],
@@ -609,9 +611,9 @@ darsi_specs = [
      ],
      "رسول اللہ ﷺ کی حدیث کے مطابق قرآن سیکھنے اور سکھانے والا بہترین انسان ہے۔ روزمرہ مسنون دعائیں پڑھنے سے زندگی میں برکت پیدا ہوتی ہے۔"),
 
-    (20, "باب دوم: ایمانیات — توحید اور کلمہ طیبہ",
-     "Unit 20: Chapter 2 - Faith & Belief: Tawheed & Kalima Tayyibah",
-     "۲۰ لوست: ۲ باب - ايمانيات: توحيد او کلمه طيبه", "thematic",
+    (3, "باب دوم: ایمانیات — توحید اور کلمہ طیبہ",
+     "Unit 3: Chapter 2 - Faith & Belief: Tawheed & Kalima Tayyibah",
+     "۳ لوست: ۲ باب - ايمانيات: توحيد او کلمه طيبه", "thematic",
      "باب دوم", "(2) نبوت و رسالت",
      "توحید کا مطلب ہے کہ اللہ تعالیٰ کو ایک ماننا۔ اللہ تعالیٰ کا کوئی شریک نہیں، نہ اس کی کوئی اولاد ہے اور نہ اس کے ماں باپ۔ وہ ہر چیز کا خالق اور مالک ہے۔ کلمہ طیبہ: لَا إِلٰهَ إِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ۔",
      ["عقیدہ توحید کی پہچان", "اللہ تعالیٰ تمام کائنات کا اکیلا خالق و مالک ہے", "کلمہ طیبہ کا مفہوم و ترجمہ", "اللہ تعالیٰ کی نعمتوں پر شکر گزاری"],
@@ -633,9 +635,9 @@ darsi_specs = [
      ],
      "اللہ تعالیٰ اکیلا ہے، اس کا کوئی شریک نہیں۔ وہی زمین، آسمان، چاند اور سورج کا پیدا کرنے والا ہے۔ کلمہ طیبہ اسلام کا پہلا کلمہ ہے۔"),
 
-    (21, "باب دوم: ایمانیات — نبوت و رسالت",
-     "Unit 21: Chapter 2 - Prophethood: Belief in the Messengers of Allah",
-     "۲۱ لوست: ۲ باب - د نبوت او رسالت پېژندنه", "thematic",
+    (4, "باب دوم: ایمانیات — نبوت و رسالت",
+     "Unit 4: Chapter 2 - Prophethood: Belief in the Messengers of Allah",
+     "۴ لوست: ۲ باب - د نبوت او رسالت پېژندنه", "thematic",
      "(2) نبوت و رسالت", "(ب) عبادات",
      "اللہ تعالیٰ نے انسانوں کی ہدایت اور سیدھا راستہ دکھانے کے لیے نبی اور رسول بھیجے۔ پہلے نبی حضرت آدم علیہ السلام اور آخری نبی حضرت محمد رسول اللہ خاتم النبیین ﷺ ہیں۔",
      ["نبوت اور رسالت کا تعارف", "انبیاء کرام علیہم السلام کی پاکیزہ تعلیمات", "حضرت محمد ﷺ اللہ تعالیٰ کے آخری نبی (خاتم النبیین)", "نبی کریم ﷺ سے محبت اور اطاعت"],
@@ -655,9 +657,9 @@ darsi_specs = [
      ],
      "انبیاء کرام اللہ تعالیٰ کے سچے بندے ہیں۔ ہمارے نبی حضرت محمد ﷺ اللہ کے آخری نبی ہیں۔ ہمیں آپ ﷺ کی بتائی ہوئی باتوں پر عمل کرنا چاہیے۔"),
 
-    (22, "باب دوم: عبادات — مسجد کا تعارف اور آداب",
-     "Unit 22: Chapter 2 - Worship: The Mosque & Its Etiquette",
-     "۲۲ لوست: ۲ باب - د جومات پېژندنه او آداب", "thematic",
+    (5, "باب دوم: عبادات — مسجد کا تعارف اور آداب",
+     "Unit 5: Chapter 2 - Worship: The Mosque & Its Etiquette",
+     "۵ لوست: ۲ باب - د جومات پېژندنه او آداب", "thematic",
      "(ب) عبادات (1) مسجد", "(2) اذان",
      "مسجد اللہ تعالیٰ کا پاک گھر ہے جہاں مسلمان دن میں پانچ وقت نماز ادا کرتے ہیں۔ مسجد میں داخل ہوتے وقت دایاں پاؤں رکھنا، دعا پڑھنا اور شور نہ مچانا مسجد کے اہم آداب ہیں۔",
      ["مسجد اللہ تعالیٰ کا گھر ہے", "مسجد میں باجماعت نماز اور قرآن کی تلاوت", "مسجد میں داخل ہونے اور نکلنے کی دعائیں", "مسجد کے ادب اور صفائی کی پابندی"],
@@ -678,9 +680,9 @@ darsi_specs = [
      ],
      "مسجد اللہ کا گھر ہے جہاں مسلمان نماز پڑھتے ہیں۔ مسجد میں داخل ہوتے وقت دعا پڑھنی چاہیے اور وہاں مکمل خاموشی اور ادب کا خیال رکھنا چاہیے۔"),
 
-    (23, "باب دوم: عبادات — اذان (نماز کی پکار)",
-     "Unit 23: Chapter 2 - Worship: The Adhan (Call to Prayer)",
-     "۲۳ لوست: ۲ باب - اذان (د لمانځه بلنه)", "thematic",
+    (6, "باب دوم: عبادات — اذان (نماز کی پکار)",
+     "Unit 6: Chapter 2 - Worship: The Adhan (Call to Prayer)",
+     "۶ لوست: ۲ باب - اذان (د لمانځه بلنه)", "thematic",
      "(2) اذان", "(3) نماز",
      "نماز کے لیے پکارنے کو اذان کہتے ہیں۔ دن میں پانچ مرتبہ مسجد سے اذان کی آواز آتی ہے۔ اذان سن کر مؤذن کے کلمات کا جواب دینا اور مسجد جانا بڑا ثواب ہے۔",
      ["اذان کا تعارف اور اہمیت", "اذان کے مبارک کلمات", "اذان کا جواب دینے کا طریقہ", "اذان سن کر نماز کی تیاری کرنا"],
@@ -701,9 +703,9 @@ darsi_specs = [
      ],
      "اذان نماز کی پکار کا نام ہے۔ اذان میں اللہ کی بڑائی اور توحید و رسالت کا اعلان ہوتا ہے۔ اذان سن کر احترام سے سننا اور جواب دینا چاہیے۔"),
 
-    (24, "باب دوم: عبادات — نماز پنجگانہ",
-     "Unit 24: Chapter 2 - Worship: The Five Daily Prayers (Salah)",
-     "۲۴ لوست: ۲ باب - پينځه وخته لمونځ", "thematic",
+    (7, "باب دوم: عبادات — نماز پنجگانہ",
+     "Unit 7: Chapter 2 - Worship: The Five Daily Prayers (Salah)",
+     "۷ لوست: ۲ باب - پينځه وخته لمونځ", "thematic",
      "(3) نماز", "باب سوم سیرت",
      "نماز اسلام کا دوسرا بنیادی رکن ہے۔ اللہ تعالیٰ نے ہر مسلمان پر دن رات میں پانچ نمازیں فرض فرمائی ہیں: فجر، ظہر، عصر، مغرب اور عشاء۔ نماز پڑھنے سے اللہ تعالیٰ خوش ہوتے ہیں۔",
      ["نماز اسلام کا ستون ہے", "پنجگانہ نمازوں کے نام اور اوقات (فجر، ظہر، عصر، مغرب، عشاء)", "نماز کے لیے طہارت اور وضو کی اہمیت", "نماز کی پابندی کے فوائد"],
@@ -723,9 +725,9 @@ darsi_specs = [
      ],
      "نماز اسلام کا سب سے اہم رکن ہے۔ دن میں پانچ نمازیں فرض ہیں: فجر (صبح)، ظہر (دوپہر)، عصر (تیسری پہر)، مغرب (غروب آفتاب)، عشاء (رات)۔"),
 
-    (25, "باب سوم: سیرتِ طیبہ ﷺ — ولادتِ مبارکہ، بچپن اور مقدس گھرانہ",
-     "Unit 25: Chapter 3 - Seerah: Blessed Birth, Childhood & Holy Family",
-     "۲۵ لوست: ۳ باب - د رسول الله ﷺ مبارک پيدايښت او ماشومتوب", "thematic",
+    (8, "باب سوم: سیرتِ طیبہ ﷺ — ولادتِ مبارکہ، بچپن اور مقدس گھرانہ",
+     "Unit 8: Chapter 3 - Seerah: Blessed Birth, Childhood & Holy Family",
+     "۸ لوست: ۳ باب - د رسول الله ﷺ مبارک پيدايښت او ماشومتوب", "thematic",
      "باب سوم سیرت", "اخلاق حسنہ",
      "ہمارے پیارے نبی حضرت محمد رسول اللہ خاتم النبیین ﷺ ۱۲ ربیع الاول کو مکہ مکرمہ میں پیدا ہوئے۔ آپ ﷺ کے والد محترم حضرت عبداللہ اور والدہ ماجدہ حضرت آمنہ تھیں۔ آپ ﷺ کے دادا کا نام حضرت عبدالمطلب اور چچا کا نام حضرت ابوطالب تھا۔",
      ["ولادتِ باسعادت (۱۲ ربیع الاول مکہ مکرمہ)", "مقدس خاندان کے نام (والد، والدہ، دادا، چچا)", "دائی حلیمہ سعدیہؓ کے پاس پرورش", "بچپن کی پاکیزہ اور سچی عادات"],
@@ -746,9 +748,9 @@ darsi_specs = [
      ],
      "ہمارے پیارے نبی حضرت محمد ﷺ مکہ مکرمہ میں پیدا ہوئے۔ آپ ﷺ تمام جہانوں کے لیے رحمت بن کر تشریف لائے۔ آپ ﷺ بچپن ہی سے نہایت نیک، سچے اور بااخلاق تھے۔"),
 
-    (26, "باب سوم: سیرتِ طیبہ ﷺ — اخلاقِ حسنہ (صادق اور امین)",
-     "Unit 26: Chapter 3 - Seerah: Noble Character (As-Sadiq & Al-Amin)",
-     "۲۶ لوست: ۳ باب - د رسول الله ﷺ غوره اخلاق (صادق او امين)", "thematic",
+    (9, "باب سوم: سیرتِ طیبہ ﷺ — اخلاقِ حسنہ (صادق اور امین)",
+     "Unit 9: Chapter 3 - Seerah: Noble Character (As-Sadiq & Al-Amin)",
+     "۹ لوست: ۳ باب - د رسول الله ﷺ غوره اخلاق (صادق او امين)", "thematic",
      "اخلاق حسنہ", "باب چهارم",
      "ہمارے نبی حضرت محمد ﷺ بچپن ہی سے ہمیشہ سچ بولتے اور امانتوں کی حفاظت فرماتے۔ مکہ کے کافر بھی آپ ﷺ کو 'صادق' (سچا) اور 'امین' (امانت دار) کہتے تھے۔ آپ ﷺ جانوروں اور پرندوں پر بھی رحم فرماتے تھے۔",
      ["صادق (سچ بولنے والے) اور امین (امانت دار) کا لقب", "کوہِ صفا پر سچائی کی گواہی کا واقعہ", "چڑیا کے بچوں پر رحم فرمانے کا واقعہ", "جانوروں، پرندوں اور انسانوں پر شفقت"],
@@ -768,9 +770,9 @@ darsi_specs = [
      ],
      "ہمارے پیارے نبی ﷺ صادق اور امین تھے۔ آپ ﷺ ہمیشہ سچ بولتے، امانت کا پاس رکھتے اور تمام مخلوق پر رحم فرماتے تھے۔ ہمیں بھی آپ ﷺ کی سنت پر عمل کرنا چاہیے۔"),
 
-    (27, "باب چہارم و پنجم: اخلاق و آداب اور انبیاء کرام علیہم السلام",
-     "Unit 27: Chapters 4 & 5 - Ethics, Salam & The Prophets of Allah",
-     "۲۷ لوست: ۴ او ۵ باب - اخلاق، سلام او انبياء کرام", "thematic",
+    (10, "باب چہارم و پنجم: اخلاق و آداب اور انبیاء کرام علیہم السلام",
+     "Unit 10: Chapters 4 & 5 - Ethics, Salam & The Prophets of Allah",
+     "۱۰ لوست: ۴ او ۵ باب - اخلاق، سلام او انبياء کرام", "thematic",
      "باب چهارم اخلاق و آداب", None,
      "اچھے اخلاق: ہمیشہ سچ بولنا، صفائی کا خیال رکھنا، بڑوں کا ادب کرنا۔ سلام کرنا: آپس میں ملتے وقت 'السلام علیکم ورحمۃ اللہ وبرکاتہ' کہنا سنتِ نبوی ہے۔ انبیاء کرام علیہم السلام: اللہ نے انسانوں کی ہدایت کے لیے تقریباً ایک لاکھ چوبیس ہزار انبیاء بھیجے جن میں حضرت آدمؑ، نوحؑ، ابراہیمؑ، موسیٰؑ، عیسیٰؑ اور خاتم النبیین حضرت محمد ﷺ شامل ہیں۔",
      ["اچھے اخلاق کی اہمیت (سچائی، صفائی، والدین کا ادب)", "سلام کرنے کا مسنون طریقہ اور جواب کے آداب", "سلام پھیلانے کی برکات اور باہمی محبت", "انبیاء کرام علیہم السلام کا تعارف اور ان پر ایمان"],
@@ -807,7 +809,7 @@ darsi_specs = [
 for (num, title_ur, title_en, title_ps, ch_type, skw, ekw, desc, u_secs, sec_list, sum_ur) in darsi_specs:
     p_sub = get_paras_slice(isl_clean, skw, ekw)
     txt_content = "\n".join(p_sub[:30]) if p_sub else desc
-    units_data.append({
+    islamyat_data.append({
         "id": f"cls1-isl-ch{num:02d}",
         "number": num,
         "type": ch_type,
@@ -884,26 +886,45 @@ for (num, title_ur, title_en, title_ps, ch_type, skw, ekw, desc, u_secs, sec_lis
         }
     })
 
-print(f"Total units constructed: {len(units_data)}")
+print(f"Total Nazira lessons: {len(nazira_data)}")
+print(f"Total Islamyat units: {len(islamyat_data)}")
 
-# Output JS file
-header_comment = """/**
- * SpaceBook Web - Class 1 Islamyat & Nazira Quran Dataset (KPK Textbook Board)
+# Output Nazira JS file
+naz_header = """/**
+ * SpaceBook Web - Class 1 Nazira Quran Dataset (KPK Textbook Board)
  * 100% Verbatim & Complete Material Directly Sourced from:
- * 1) D:\\SpaceBook\\Books\\1st\\1st Nazera\\Word\\Nazira.docx (Lessons 1 to 17)
- * 2) D:\\SpaceBook\\Books\\1st\\1st Islamyat\\Word\\درسی کتاب.docx (Lessons 18 to 27 / 5 Babs)
+ * D:\\SpaceBook\\Books\\1st\\1st Nazera\\Word\\Nazira.docx (17 Lessons)
+ * Covers Arabic Alphabet, Phonics, Harakaat, Tanween, Madd, Leen, Sukoon, Tashdeed,
+ * Noon & Meem Mushaddad, and the Last Four Surahs of the Holy Quran.
+ */
+
+"""
+naz_js = naz_header + "var NAZIRA_1_DATA = " + json.dumps(nazira_data, ensure_ascii=False, indent=2) + ";\n\n"
+naz_js += "if (typeof DATA !== 'undefined') {\n  DATA.nazira1Chapters = NAZIRA_1_DATA;\n}\n"
+naz_js += "if (typeof window !== 'undefined') {\n  window.NAZIRA_1_DATA = NAZIRA_1_DATA;\n}\n"
+
+with open(OUT_NAZ_PATH, "w", encoding="utf-8") as f:
+    f.write(naz_js)
+
+size_naz_kb = os.path.getsize(OUT_NAZ_PATH) / 1024
+print(f"Generated {OUT_NAZ_PATH} successfully! File size: {size_naz_kb:.2f} KB")
+
+# Output Islamyat JS file
+isl_header = """/**
+ * SpaceBook Web - Class 1 Islamyat Dataset (KPK Textbook Board)
+ * 100% Verbatim & Complete Material Directly Sourced from:
+ * D:\\SpaceBook\\Books\\1st\\1st Islamyat\\Word\\درسی کتاب.docx (10 Lessons / 5 Babs)
  * Full Line-by-Line Uthmani Arabic Text, Trilingual Translations (Urdu, English, Pashto),
  * Solved Textbook Exercises, and Comprehensive SLO Assessments.
  */
 
 """
+isl_js = isl_header + "var ISLAMYAT_1_DATA = " + json.dumps(islamyat_data, ensure_ascii=False, indent=2) + ";\n\n"
+isl_js += "if (typeof DATA !== 'undefined') {\n  DATA.islamyat1Chapters = ISLAMYAT_1_DATA;\n}\n"
+isl_js += "if (typeof window !== 'undefined') {\n  window.ISLAMYAT_1_DATA = ISLAMYAT_1_DATA;\n}\n"
 
-js_code = header_comment + "var ISLAMYAT_1_DATA = " + json.dumps(units_data, ensure_ascii=False, indent=2) + ";\n\n"
-js_code += "if (typeof DATA !== 'undefined') {\n  DATA.islamyat1Chapters = ISLAMYAT_1_DATA;\n}\n"
-js_code += "if (typeof window !== 'undefined') {\n  window.ISLAMYAT_1_DATA = ISLAMYAT_1_DATA;\n}\n"
+with open(OUT_ISL_PATH, "w", encoding="utf-8") as f:
+    f.write(isl_js)
 
-with open(OUT_JS_PATH, "w", encoding="utf-8") as f:
-    f.write(js_code)
-
-size_kb = os.path.getsize(OUT_JS_PATH) / 1024
-print(f"Generated {OUT_JS_PATH} successfully! File size: {size_kb:.2f} KB")
+size_isl_kb = os.path.getsize(OUT_ISL_PATH) / 1024
+print(f"Generated {OUT_ISL_PATH} successfully! File size: {size_isl_kb:.2f} KB")

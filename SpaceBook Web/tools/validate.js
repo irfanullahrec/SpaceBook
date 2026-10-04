@@ -18,7 +18,7 @@ const DATA_FILES = [
   'data_comp.js',
   'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js',
   'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js',
-  'math_10_data.js', 'math_1_data.js'
+  'nazira_1_data.js', 'math_10_data.js', 'math_1_data.js'
 ];
 
 let pass = 0, fail = 0;
@@ -71,7 +71,7 @@ if (D) {
   })());
   check('class counts match subject arrays', D.classes.every(c => c.subjects === (D.subjects[c.id] || []).length),
     D.classes.map(c => c.id + ':' + c.subjects + ' vs ' + ((D.subjects[c.id] || []).length)).join(' '));
-  check('books = ' + D.books.length, D.books.length === 20, 'got ' + D.books.length);
+  check('books = ' + D.books.length, D.books.length === 21, 'got ' + D.books.length);
   check('book ids unique', new Set(D.books.map(b => b.id)).size === D.books.length);
   check('book subjects resolvable', D.books.every(b => b.classId || b.class_id), 'missing classId/class_id on ' + D.books.filter(b => !(b.classId || b.class_id)).map(b => b.id).join(','));
   check('chemChapters = 8', D.chemChapters && D.chemChapters.length === 8, 'got ' + (D.chemChapters || []).length);
@@ -87,11 +87,12 @@ if (D) {
   check('DATA.urdu10Chapters = 22 (from urdu_10_data.js)', (sb.URDU_10_DATA && sb.URDU_10_DATA.length === 22) || (D.urdu10Chapters && D.urdu10Chapters.length === 22), 'got ' + ((sb.URDU_10_DATA || D.urdu10Chapters || []).length));
   check('DATA.islamyatChapters = 15', D.islamyatChapters && D.islamyatChapters.length === 15, 'got ' + (D.islamyatChapters || []).length);
   check('DATA.islamyat10Chapters = 18', D.islamyat10Chapters && D.islamyat10Chapters.length === 18, 'got ' + (D.islamyat10Chapters || []).length);
-  check('DATA.islamyat1Chapters = 27', (sb.ISLAMYAT_1_DATA && sb.ISLAMYAT_1_DATA.length === 27) || (D.islamyat1Chapters && D.islamyat1Chapters.length === 27), 'got ' + ((sb.ISLAMYAT_1_DATA || D.islamyat1Chapters || []).length));
+  check('DATA.islamyat1Chapters = 10', (sb.ISLAMYAT_1_DATA && sb.ISLAMYAT_1_DATA.length === 10) || (D.islamyat1Chapters && D.islamyat1Chapters.length === 10), 'got ' + ((sb.ISLAMYAT_1_DATA || D.islamyat1Chapters || []).length));
+  check('DATA.nazira1Chapters = 17', (sb.NAZIRA_1_DATA && sb.NAZIRA_1_DATA.length === 17) || (D.nazira1Chapters && D.nazira1Chapters.length === 17), 'got ' + ((sb.NAZIRA_1_DATA || D.nazira1Chapters || []).length));
   check('DATA.mathChapters present (from math_data.js)', Array.isArray(D.mathChapters) && D.mathChapters.length > 0, 'got ' + (D.mathChapters ? D.mathChapters.length : 0));
   check('DATA.math10Chapters = 13 (from math_10_data.js)', (sb.MATH_10_DATA && sb.MATH_10_DATA.length === 13) || (D.math10Chapters && D.math10Chapters.length === 13), 'got ' + ((sb.MATH_10_DATA || D.math10Chapters || []).length));
-  check('islamic subjects registered', ['cls9-isl', 'cls10-isl', 'cls1-isl'].every(id => [].concat(D.subjects.cls9, D.subjects.cls10, D.subjects.cls1).some(s => s.id === id)));
-  check('islamic books registered', ['b-cls9-isl', 'b-cls10-isl', 'b-cls1-isl'].every(id => D.books.some(b => b.id === id)));
+  check('islamic subjects registered', ['cls9-isl', 'cls10-isl', 'cls1-isl', 'cls1-nazira'].every(id => [].concat(D.subjects.cls9, D.subjects.cls10, D.subjects.cls1).some(s => s.id === id)));
+  check('islamic books registered', ['b-cls9-isl', 'b-cls10-isl', 'b-cls1-isl', 'b-cls1-nazira'].every(id => D.books.some(b => b.id === id)));
 } else {
   check('DATA registry present', false, 'DATA is undefined');
 }
@@ -139,13 +140,24 @@ if (EN1) {
 
 const ISL1 = sb.ISLAMYAT_1_DATA;
 if (ISL1) {
-  check('ISLAMYAT_1_DATA units = 27', ISL1.length === 27, 'got ' + ISL1.length);
+  check('ISLAMYAT_1_DATA units = 10', ISL1.length === 10, 'got ' + ISL1.length);
   check('ISLAMYAT_1_DATA unit 1 has sections', ISL1[0] && Array.isArray(ISL1[0].sections) && ISL1[0].sections.length > 0);
   check('ISLAMYAT_1_DATA unit 1 has exercise', ISL1[0] && !!ISL1[0].exercise);
   check('ISLAMYAT_1_DATA unit 1 has sloQuestions', ISL1[0] && !!(ISL1[0].sloQuestions || ISL1[0].slos));
-  check('ISLAMYAT_1_DATA registered on DATA.islamyat1Chapters', Array.isArray(D.islamyat1Chapters) && D.islamyat1Chapters.length === 27);
+  check('ISLAMYAT_1_DATA registered on DATA.islamyat1Chapters', Array.isArray(D.islamyat1Chapters) && D.islamyat1Chapters.length === 10);
 } else {
   check('ISLAMYAT_1_DATA present', false);
+}
+
+const NAZ1 = sb.NAZIRA_1_DATA;
+if (NAZ1) {
+  check('NAZIRA_1_DATA lessons = 17', NAZ1.length === 17, 'got ' + NAZ1.length);
+  check('NAZIRA_1_DATA lesson 1 has sections', NAZ1[0] && Array.isArray(NAZ1[0].sections) && NAZ1[0].sections.length > 0);
+  check('NAZIRA_1_DATA lesson 1 has exercise', NAZ1[0] && !!NAZ1[0].exercise);
+  check('NAZIRA_1_DATA lesson 1 has sloQuestions', NAZ1[0] && !!(NAZ1[0].sloQuestions || NAZ1[0].slos));
+  check('NAZIRA_1_DATA registered on DATA.nazira1Chapters', Array.isArray(D.nazira1Chapters) && D.nazira1Chapters.length === 17);
+} else {
+  check('NAZIRA_1_DATA present', false);
 }
 
 const PS = sb.PAKSTUDY_DATA;
@@ -187,6 +199,7 @@ check('index.html loads Class 1 Drawing data', srcs.includes('js/drawing_1_data.
 check('index.html loads Class 1 English data', srcs.includes('js/english_1_data.js') && srcs.indexOf('js/english_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Maths data', srcs.includes('js/math_1_data.js') && srcs.indexOf('js/math_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Islamyat data', srcs.includes('js/islamyat_1_data.js') && srcs.indexOf('js/islamyat_1_data.js') < srcs.indexOf('js/app.js'));
+check('index.html loads Class 1 Nazira data', srcs.includes('js/nazira_1_data.js') && srcs.indexOf('js/nazira_1_data.js') < srcs.indexOf('js/app.js'));
 ['js/data_chem.js', 'js/data_phys.js', 'js/data_eng.js', 'js/data_bio.js', 'js/data_comp.js'].forEach(s => check('index.html loads ' + s, srcs.includes(s)));
 const missingSrc = srcs.filter(s => !fs.existsSync(path.join(ROOT, s)));
 check('every <script src> exists', missingSrc.length === 0, 'missing: ' + missingSrc.join(','));

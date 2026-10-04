@@ -3,7 +3,7 @@ const vm = require('vm');
 
 const path = require('path');
 const DIR = path.resolve(__dirname, '../js') + path.sep;
-const files = ['data.js', 'drawing_1_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'math_10_data.js', 'math_1_data.js'];
+const files = ['data.js', 'drawing_1_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'nazira_1_data.js', 'math_10_data.js', 'math_1_data.js'];
 
 function makeEl(id) {
   const style = {};
@@ -157,6 +157,7 @@ run("CLASS 1 switchSubjectTab eng words", `switchSubjectTab('eng', 'words', 0, '
 run("CLASS 1 switchSubjectTab eng grammar", `switchSubjectTab('eng', 'grammar', 0, 'cls1')`);
 run("CLASS 1 selectSubjectChapter eng 10 (Unit 11)", `selectSubjectChapter('eng', 10, 'cls1')`);
 run("CLASS 1 goToSubjects lists Islamyat", `goToSubjects('cls1'); if (!/Islamyat|اسلامیات/.test($('dashboard-body').innerHTML)) throw new Error('Islamyat subject card missing for Class 1');`);
+run("CLASS 1 goToSubjects lists Nazira", `goToSubjects('cls1'); if (!/Nazira|ناظرہ/.test($('dashboard-body').innerHTML)) throw new Error('Nazira subject card missing for Class 1');`);
 run("CLASS 1 openSubject cls1-isl", `openSubject('cls1','cls1-isl')`);
 run("CLASS 1 selectSubjectChapter isl 0", `selectSubjectChapter('isl', 0, 'cls1')`);
 run("CLASS 1 switchSubjectTab isl lesson", `switchSubjectTab('isl', 'lesson', 0, 'cls1')`);
@@ -164,8 +165,14 @@ run("CLASS 1 switchSubjectTab isl concepts", `switchSubjectTab('isl', 'concepts'
 run("CLASS 1 switchSubjectTab isl exercise", `switchSubjectTab('isl', 'exercise', 0, 'cls1')`);
 run("CLASS 1 switchSubjectTab isl slos", `switchSubjectTab('isl', 'slos', 0, 'cls1')`);
 run("CLASS 1 switchSubjectTab isl formulas", `switchSubjectTab('isl', 'formulas', 0, 'cls1')`);
-run("CLASS 1 selectSubjectChapter isl 16 (Surahs)", `selectSubjectChapter('isl', 16, 'cls1')`);
-run("CLASS 1 selectSubjectChapter isl 26 (Unit 27)", `selectSubjectChapter('isl', 26, 'cls1')`);
+run("CLASS 1 selectSubjectChapter isl 9 (Unit 10)", `selectSubjectChapter('isl', 9, 'cls1')`);
+run("CLASS 1 openSubject cls1-nazira", `openSubject('cls1','cls1-nazira')`);
+run("CLASS 1 selectSubjectChapter nazira 0", `selectSubjectChapter('nazira', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab nazira lesson", `switchSubjectTab('nazira', 'lesson', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab nazira concepts", `switchSubjectTab('nazira', 'concepts', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab nazira exercise", `switchSubjectTab('nazira', 'exercise', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab nazira slos", `switchSubjectTab('nazira', 'slos', 0, 'cls1')`);
+run("CLASS 1 selectSubjectChapter nazira 16 (Surahs)", `selectSubjectChapter('nazira', 16, 'cls1')`);
 run("REGRESSION renderClasses", `renderClasses()`);
 run("REGRESSION handleGlobalSearch('islam')", `handleGlobalSearch("islam")`);
 run("REGRESSION handleGlobalSearch('daffodils')", `handleGlobalSearch("daffodils")`);
