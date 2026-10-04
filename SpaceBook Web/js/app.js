@@ -858,6 +858,21 @@ function goToSubjects(classId) {
         topics: ["عربی حروف و مخارج", "مرکبات و اشکال", "حرکات و تنوین", "حروفِ مدہ و لین", "سکون و تشدید", "قواعدِ تجوید و غنہ", "آخری ۴ سورتیں"]
       };
     }
+    if (s.id === "cls1-pashto" || (s.hasPashto && classId === "cls1")) {
+      return {
+        headerColor: "#0d9488",
+        urduName: "پښتو لازمي (پہلی جماعت)",
+        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeClass: "badge-green",
+        metric1Val: "23 اسباق",
+        metric1Lbl: "نظمونه، لوستونه او قیصې",
+        metric2Val: "100+ Solved Qs",
+        metric2Lbl: "مشغولتیاوې او مشقونه",
+        metric3Val: "شمېرې او توري",
+        metric3Lbl: "۱ تر ۱۰۰ شمېرې، توري او ګرامر",
+        topics: ["حمد او نعت", "زمونږ پیغمبر ﷺ", "ښه صفتونه", "مور", "درې مهیان", "صفائي", "د خبرو اترو اداب", "کار او کار کوونکي", "باز او چرګ", "عبد الرحمان بابا", "حجره او کمپیوټر", "رښتونې قیصه", "هنرونه او دعا"]
+      };
+    }
     if (s.id === "cls10-bio" || (s.hasBio && isCls10)) {
       return {
         headerColor: "#059669",
@@ -1144,9 +1159,9 @@ function goToSubjects(classId) {
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">📚</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '7 Subjects · English, Islamyat, Nazira, Drawing' : '9 Subjects · 15 Books'}</div>
+          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '8 Subjects · English, Islamyat, Nazira, Pashto, Drawing' : '9 Subjects · 15 Books'}</div>
           <div class="csc-label">Class Curriculum Track</div>
-          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English, Islamyat (10 Units), Nazira (17 Lessons) &amp; Drawing' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
+          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English, Islamyat, Nazira, Pashto (23 Units) &amp; Drawing' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
         </div>
       </div>
 
@@ -1181,17 +1196,24 @@ function goToSubjects(classId) {
 
 // ─── SUBJECT ROUTER ──────────────────────
 function openSubject(classId, subjId) {
-  if (classId === 'cls1' && subjId === 'cls1-drawing') {
+  if ((classId === 'cls1' && subjId === 'cls1-drawing') || (classId === 'cls2' && subjId === 'cls2-drawing')) {
+    const changedClass = state.drawingClassId !== classId;
+    state.drawingClassId = classId;
     state.selectedClass = classId;
     state.activeSubject = 'drawing';
     state.activeView = 'subject-detail';
+    if (changedClass) {
+      state.selectedDrawingPage = 0;
+      state.activeDrawingExamTab = 'mcqs';
+      state.drawingMcqAnswers = {};
+    }
     state.selectedDrawingPage = state.selectedDrawingPage || 0;
     state.activeDrawingTab = 'practice';
     state.activeDrawingExamTab = state.activeDrawingExamTab || 'mcqs';
     renderDrawingView();
     return;
   }
-  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls1') {
+  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls1' && classId !== 'cls2') {
     goToSubjects(classId);
     return;
   }
@@ -1215,7 +1237,7 @@ function openSubject(classId, subjId) {
   } else if (subj.hasUrdu || subjId === 'cls9-urdu' || subjId === 'cls10-urdu') {
     state.activeSubject = "urdu";
     openSubjectWorkspace(classId, "urdu", subj);
-  } else if (subj.hasMath || subjId === 'cls1-math' || subjId === 'cls9-math' || subjId === 'cls10-math') {
+  } else if (subj.hasMath || subjId === 'cls1-math' || subjId === 'cls2-math' || subjId === 'cls9-math' || subjId === 'cls10-math') {
     state.activeSubject = "math";
     openMathView(classId, subj);
   } else if (subj.hasPakStudy || subjId === 'cls9-pakstudy' || subjId === 'cls10-pakstudy') {
@@ -1224,6 +1246,9 @@ function openSubject(classId, subjId) {
   } else if (subj.hasNazira || subjId === 'cls1-nazira') {
     state.activeSubject = "nazira";
     openSubjectWorkspace(classId, "nazira", subj);
+  } else if (subj.hasPashto || subjId === 'cls1-pashto') {
+    state.activeSubject = "pashto";
+    openSubjectWorkspace(classId, "pashto", subj);
   } else if (subj.hasIsl || subjId === 'cls9-isl' || subjId === 'cls10-isl' || subjId === 'cls1-isl') {
     state.activeSubject = "isl";
     openSubjectWorkspace(classId, "isl", subj);
@@ -1273,12 +1298,14 @@ function renderDrawingArtwork(kind, title) {
     "cat-origami": '<g stroke="#334155" stroke-width="5" fill="#fde68a"><path d="M65 170 165 70l100 100-100 110z"/><path d="M255 170 355 70l100 100-100 110z"/><path d="M445 170 545 70l45 80-45 130z"/></g><g fill="#334155"><circle cx="145" cy="165" r="5"/><circle cx="185" cy="165" r="5"/><circle cx="335" cy="165" r="5"/><circle cx="375" cy="165" r="5"/><circle cx="520" cy="165" r="5"/><circle cx="560" cy="165" r="5"/></g><path d="M150 195q15 10 30 0m150 0q15 10 30 0m150 0q15 10 30 0" ' + common + '/><text x="165" y="320" text-anchor="middle">1</text><text x="355" y="320" text-anchor="middle">2</text><text x="535" y="320" text-anchor="middle">3</text>'
   };
   const labels = { "shape-person":"Shapes make a picture", "shape-friends":"Square and circle friends", "shape-faces":"Happy shape faces", rainbow:"Rainbow and sun", bird:"Bird", ship:"Sailing boat", "angry-bird":"Bird with a bold face", bee:"Honey bee", cap:"Cap", tulip:"Tulip", ant:"Ant", goat:"Goat", umbrella:"Umbrella", purse:"Purse", pineapple:"Pineapple", parrot:"Parrot", watermelon:"Watermelon", frock:"Frock", grapes:"Grapes", camel:"Camel", duck:"Duck", scissors:"Scissors", donkey:"Donkey", ladybug:"Ladybug", scenery:"House and scenery", puppy:"Puppy", sunglasses:"Sunglasses", flower:"Flower", bananas:"Bananas", "bear-steps":"Bear face steps", "house-steps":"House drawing steps", "cat-origami":"Folded cat face" };
-  const illustration = svg[kind] || '';
+  const illustration = state.selectedClass === 'cls2' && typeof DRAWING_2_ART !== 'undefined'
+    ? (DRAWING_2_ART[kind] || '')
+    : (svg[kind] || '');
   return `<figure class="drawing-vector-card"><svg viewBox="0 0 600 760" role="img" aria-label="${sanitize(labels[kind] || title)}: coloured example and dotted tracing practice"><title>${sanitize(title)}</title><rect class="drawing-example-panel" x="3" y="3" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="27" text-anchor="middle">LOOK · COLOUR IDEA</text><g class="drawing-sample" transform="translate(15 30) scale(.95)">${illustration}</g><path d="M28 380h544" class="drawing-panel-divider"/><rect class="drawing-trace-panel" x="3" y="390" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="415" text-anchor="middle">YOUR TURN · TRACE AND COLOUR</text><g class="drawing-trace" transform="translate(15 415) scale(.95)">${illustration}</g></svg></figure>`;
 }
 
 function renderDrawingPractice() {
-  const exam = DRAWING_1_EXAM;
+  const exam = state.selectedClass === 'cls2' ? DRAWING_2_EXAM : DRAWING_1_EXAM;
   const active = state.activeDrawingExamTab || 'mcqs';
   const tabs = [
     ['mcqs', 'MCQs'],
@@ -1316,7 +1343,8 @@ function selectDrawingExamTab(tab) {
 }
 
 function answerDrawingMcq(questionIndex, optionIndex) {
-  const item = DRAWING_1_EXAM.mcqs[questionIndex];
+  const exam = state.selectedClass === 'cls2' ? DRAWING_2_EXAM : DRAWING_1_EXAM;
+  const item = exam.mcqs[questionIndex];
   if (!item || optionIndex < 0 || optionIndex >= item.options.length) return;
   const panel = document.querySelector('.drawing-topic-area');
   const scrollTop = panel ? panel.scrollTop : 0;
@@ -1328,7 +1356,9 @@ function answerDrawingMcq(questionIndex, optionIndex) {
 }
 
 function renderDrawingView() {
-  const lessons = (typeof DRAWING_1_DATA !== 'undefined') ? DRAWING_1_DATA : [];
+  const lessons = state.selectedClass === 'cls2'
+    ? ((typeof DRAWING_2_DATA !== 'undefined') ? DRAWING_2_DATA : [])
+    : ((typeof DRAWING_1_DATA !== 'undefined') ? DRAWING_1_DATA : []);
   if (!lessons.length) return;
   const index = Math.max(0, Math.min(state.selectedDrawingPage || 0, lessons.length - 1));
   state.selectedDrawingPage = index;
@@ -1352,11 +1382,11 @@ function renderDrawingView() {
   currentNavCrumbs = [
     { label: 'Home', onclick: () => { setActiveNav('home'); renderHome(); } },
     { label: 'Subjects', onclick: () => renderClasses() },
-    { label: 'Class 1', onclick: () => goToSubjects('cls1') },
+    { label: state.selectedClass === 'cls2' ? 'Class 2' : 'Class 1', onclick: () => goToSubjects(state.selectedClass === 'cls2' ? 'cls2' : 'cls1') },
     { label: 'Drawing', active: true }
   ];
   pageContent().innerHTML = `<div class="drawing-view-tabs"><button class="${state.activeDrawingTab !== 'practice' ? 'active' : ''}" onclick="state.activeDrawingTab='activities';renderDrawingView()">🎨 Activities</button><button class="${state.activeDrawingTab === 'practice' ? 'active' : ''}" onclick="state.activeDrawingTab='practice';renderDrawingView()">📝 Exam Practice</button></div><div class="math-unified-view drawing-workspace">
-    <aside class="math-ch-sidebar"><div class="math-ch-sidebar-header" style="background:linear-gradient(135deg,#be185d,#ec4899);"><button onclick="goToSubjects('cls1')" class="math-sidebar-back-btn" aria-label="Back to Class 1 subjects">←</button><div class="math-sidebar-title-wrap"><span class="math-sidebar-title">ACTIVITIES</span><span class="math-sidebar-sub">${lessons.length} Workbook Activities</span></div></div><div class="math-ch-list">${lessonButtons}</div></aside>
+    <aside class="math-ch-sidebar"><div class="math-ch-sidebar-header" style="background:linear-gradient(135deg,#be185d,#ec4899);"><button onclick="goToSubjects('${state.selectedClass}')" class="math-sidebar-back-btn" aria-label="Back to subjects">←</button><div class="math-sidebar-title-wrap"><span class="math-sidebar-title">ACTIVITIES</span><span class="math-sidebar-sub">${lessons.length} Workbook Activities</span></div></div><div class="math-ch-list">${lessonButtons}</div></aside>
     <section class="math-topic-area drawing-topic-area">${topicArea}</section></div>`;
 }
 
@@ -12846,6 +12876,13 @@ const SUBJECT_THEMES = {
     pillColor: '#022c22',
     accentColor: '#059669',
     tag: 'سبق'
+  },
+  pashto: {
+    gradient: 'linear-gradient(135deg, #0f766e 0%, #134e4a 100%)',
+    pillBg: '#5eead4',
+    pillColor: '#134e4a',
+    accentColor: '#0d9488',
+    tag: 'سبق'
   }
 };
 
@@ -13598,6 +13635,10 @@ function getMathChapterList(classId) {
     if (typeof MATH_1_DATA !== 'undefined' && Array.isArray(MATH_1_DATA)) return MATH_1_DATA;
     if (typeof DATA !== 'undefined' && DATA.math1Chapters) return DATA.math1Chapters;
   }
+  if (cid === 'cls2') {
+    if (typeof MATH_2_DATA !== 'undefined' && Array.isArray(MATH_2_DATA)) return MATH_2_DATA;
+    if (typeof DATA !== 'undefined' && DATA.math2Chapters) return DATA.math2Chapters;
+  }
   if (cid === 'cls10') {
     if (typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) return MATH_10_DATA;
     if (typeof DATA !== 'undefined' && DATA.math10Chapters) return DATA.math10Chapters;
@@ -13623,10 +13664,12 @@ function openMathView(classId, subj) {
   state.activeMathEx = state.activeMathEx || '1.1';
   state.selectedClass = classId;
   setActiveNav('subjects');
-  const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls1' ? 'Class 1' : (classId === 'cls10' ? 'Class 10' : 'Class 9')) };
+  const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls1' ? 'Class 1' : (classId === 'cls2' ? 'Class 2' : (classId === 'cls10' ? 'Class 10' : 'Class 9'))) };
   const chList = getMathChapterList(classId);
   const pdfFile = (classId === 'cls1')
     ? 'file:///D:/SpaceBook/Books/1st/1st%20Maths/PDF/Math%20book%201%20KPTBB.pdf'
+    : (classId === 'cls2')
+      ? 'file:///D:/SpaceBook/Books/2nd/2nd%20Maths/PDF/Math%20Book%20for%202%20class%20KPTBB.pdf'
     : ((classId === 'cls10')
       ? 'file://DESKTOP-R2HQSAV/SpaceBook/10th Maths/PDF/10th Maths.pdf'
       : 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf');
@@ -16241,6 +16284,12 @@ function getSubjectChapterList(subjKey, classId) {
     }
     return (typeof DATA !== 'undefined' && DATA && DATA.nazira1Chapters) ? DATA.nazira1Chapters : [];
   }
+  if (subjKey === 'pashto') {
+    if (typeof PASHTO_1_DATA !== 'undefined' && Array.isArray(PASHTO_1_DATA)) {
+      return PASHTO_1_DATA;
+    }
+    return (typeof DATA !== 'undefined' && DATA && DATA.pashto1Chapters) ? DATA.pashto1Chapters : [];
+  }
   if (subjKey === 'comp') {
     return (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];
   }
@@ -16315,7 +16364,7 @@ function selectSubjectChapter(subjKey, index, classId) {
   document.querySelectorAll(".bio-ch-btn, .math-ch-btn").forEach((btn, i) =>
     btn.classList.toggle("active", i === index));
   const subs = DATA.subjects[classId] || [];
-  const subjObj = subs.find(s => s.id === state.activeSubject || s.hasEng || s.hasUrdu || s.hasBio || s.hasChem || s.hasPhys || s.hasPakStudy || s.hasIsl || s.hasNazira);
+  const subjObj = subs.find(s => s.id === state.activeSubject || s.hasEng || s.hasUrdu || s.hasBio || s.hasChem || s.hasPhys || s.hasPakStudy || s.hasIsl || s.hasNazira || s.hasPashto);
   renderSubjectChapterView(subjKey, index, classId, subjObj);
 }
 
@@ -16328,6 +16377,7 @@ function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
   const theme = SUBJECT_THEMES[subjKey] || SUBJECT_THEMES.math;
   const isEng = (subjKey === 'eng');
   const isUrdu = (subjKey === 'urdu');
+  const isPashto = (subjKey === 'pashto');
   const isScience = (subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp');
 
   // Define Subject-Specific Main Tabs according to requirements
@@ -16347,6 +16397,14 @@ function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
       { id: 'slos', label: '🎯 SLOs' },
       { id: 'words', label: '🔤 الفاظ' },
       { id: 'grammar', label: '📐 Grammar' }
+    ];
+  } else if (isPashto) {
+    tabs = [
+      { id: 'lesson', label: '📖 لوست (Lesson)' },
+      { id: 'exercise', label: '✍️ مشغولتيا (Exercise)' },
+      { id: 'slos', label: '🎯 زده کړې نتيجې (SLOs)' },
+      { id: 'words', label: '🔤 خاص لفظونه (Words)' },
+      { id: 'grammar', label: '📐 قواعد او ژبه (Grammar)' }
     ];
   } else if (isScience) {
     tabs = [
@@ -16421,25 +16479,26 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
 
   const isEng = (subjKey === 'eng');
   const isUrdu = (subjKey === 'urdu');
+  const isPashto = (subjKey === 'pashto');
   const isScience = (subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp');
 
   if (tabId === 'lesson') {
-    if (isEng || isUrdu) {
+    if (isEng || isUrdu || isPashto) {
       const activeLessonSubTab = state.activeSubjLessonSubTab || 'paragraphs';
       if (subBar) {
         subBar.style.display = 'flex';
         subBar.innerHTML = `
           <button class="topic-sub-tab-btn ${activeLessonSubTab === 'paragraphs' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'paragraphs')">
-            ${isUrdu ? '📄 پیراگراف و تحریر' : '📄 Paragraphs'}
+            ${isPashto ? '📄 درسي عبارت او شعرونه' : isUrdu ? '📄 پیراگراف و تحریر' : '📄 Paragraphs'}
           </button>
           <button class="topic-sub-tab-btn ${activeLessonSubTab === 'translations' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'translations')">
-            ${isUrdu ? '🌐 تراجم (انگریزی، اردو، پشتو)' : '🌐 Translations (Eng, Ur, Ps)'}
+            ${isPashto ? '🌐 ژباړې (اردو، انګلیسي)' : isUrdu ? '🌐 تراجم (انگریزی، اردو، پشتو)' : '🌐 Translations (Eng, Ur, Ps)'}
           </button>
           <button class="topic-sub-tab-btn ${activeLessonSubTab === 'videos' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'videos')">
-            ${isUrdu ? '🎥 ویڈیو لیکچر' : '🎥 Videos'}
+            ${isPashto ? '🎥 ویډیو' : isUrdu ? '🎥 ویڈیو لیکچر' : '🎥 Videos'}
           </button>
           <button class="topic-sub-tab-btn ${activeLessonSubTab === 'exercise' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'exercise')">
-            ${isUrdu ? '✍️ مشق (حل شدہ)' : '✍️ Exercise (Solved)'}
+            ${isPashto ? '✍️ حل شوې مشغولتیا' : isUrdu ? '✍️ مشق (حل شدہ)' : '✍️ Exercise (Solved)'}
           </button>
           <button class="topic-sub-tab-btn ${activeLessonSubTab === 'slos' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'slos')">
             🎯 SLOs
@@ -16509,11 +16568,12 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
     }
   } else if (tabId === 'words') {
     const activeWordsSubTab = state.activeSubjWordsSubTab || 'meanings';
+    const isPashto = (subjKey === 'pashto');
     const subTabs = [
-      { id: 'meanings', label: isUrdu ? 'الفاظ معنی' : 'Word Meanings' },
-      { id: 'opposites', label: isUrdu ? 'الفاظ متضاد' : 'Words-Opposites' },
-      { id: 'similars', label: isUrdu ? 'الفاظ مترادف' : 'Words-Similars / مترادف' },
-      { id: 'use', label: isUrdu ? 'الفاظ استعمال / جملے' : 'Words-Use (Sentences)' }
+      { id: 'meanings', label: isPashto ? 'لغتونه او معنې' : (isUrdu ? 'الفاظ معنی' : 'Word Meanings') },
+      { id: 'opposites', label: isPashto ? 'ضدونه (متضاد)' : (isUrdu ? 'الفاظ متضاد' : 'Words-Opposites') },
+      { id: 'similars', label: isPashto ? 'هم ماني (مترادف)' : (isUrdu ? 'الفاظ مترادف' : 'Words-Similars / مترادف') },
+      { id: 'use', label: isPashto ? 'په جملو کښې کارول' : (isUrdu ? 'الفاظ استعمال / جملے' : 'Words-Use (Sentences)') }
     ];
     if (subBar) {
       subBar.style.display = 'flex';
@@ -16570,6 +16630,7 @@ function switchLangLessonSubTab(subjKey, subTab) {
 
 function renderLangLessonSubContent(subjKey, ch, subTab) {
   const isUrdu = (subjKey === 'urdu');
+  const isPashto = (subjKey === 'pashto');
   const sections = ch.sections || ch.urduSections || [];
 
   if (subTab === 'paragraphs') {
@@ -16609,14 +16670,14 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
                 <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">Paragraph ${p.num}</span>
                 <span style="font-weight:700;font-size:0.88rem;color:#0f172a;">${p.secHeading}</span>
               </div>
-              <button class="para-audio-btn" onclick="playParaTTSFromBtn(this, '${isUrdu ? 'ur-PK' : 'en-US'}')">
+              <button class="para-audio-btn" onclick="playParaTTSFromBtn(this, '${isPashto ? 'ps-AF' : isUrdu ? 'ur-PK' : 'en-US'}')">
                 🔊 Read Aloud
               </button>
             </div>
 
             <!-- Interactive lesson text with word dictionary and sentence hover/click translation -->
-            <div class="para-text-box" style="${isUrdu ? 'font-family:\"Jameel Noori Nastaleeq\",\"Urdu Typesetting\",serif;direction:rtl;text-align:right;font-size:1.18rem;line-height:2.2;' : 'line-height:1.8;'}">
-              ${isUrdu ? p.text : renderInteractiveParagraphHtml(p.text, p.urdu, p.pashto, idx)}
+            <div class="para-text-box" style="${isUrdu || isPashto ? 'font-family:\"Jameel Noori Nastaleeq\",\"Pashto Kror Asmat\",\"Noto Naskh Arabic\",serif;direction:rtl;text-align:right;font-size:1.18rem;line-height:2.2;' : 'line-height:1.8;'}">
+              ${isUrdu || isPashto ? p.text : renderInteractiveParagraphHtml(p.text, p.urdu, p.pashto, idx)}
             </div>
 
             <!-- Paragraph-based Questions & Answers -->

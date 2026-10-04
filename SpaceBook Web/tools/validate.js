@@ -18,7 +18,7 @@ const DATA_FILES = [
   'data_comp.js',
   'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js',
   'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js',
-  'nazira_1_data.js', 'math_10_data.js', 'math_1_data.js'
+  'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js'
 ];
 
 let pass = 0, fail = 0;
@@ -71,7 +71,7 @@ if (D) {
   })());
   check('class counts match subject arrays', D.classes.every(c => c.subjects === (D.subjects[c.id] || []).length),
     D.classes.map(c => c.id + ':' + c.subjects + ' vs ' + ((D.subjects[c.id] || []).length)).join(' '));
-  check('books = ' + D.books.length, D.books.length === 21, 'got ' + D.books.length);
+  check('books = ' + D.books.length, D.books.length === 22, 'got ' + D.books.length);
   check('book ids unique', new Set(D.books.map(b => b.id)).size === D.books.length);
   check('book subjects resolvable', D.books.every(b => b.classId || b.class_id), 'missing classId/class_id on ' + D.books.filter(b => !(b.classId || b.class_id)).map(b => b.id).join(','));
   check('chemChapters = 8', D.chemChapters && D.chemChapters.length === 8, 'got ' + (D.chemChapters || []).length);
@@ -160,6 +160,19 @@ if (NAZ1) {
   check('NAZIRA_1_DATA present', false);
 }
 
+const PS1 = sb.PASHTO_1_DATA;
+if (PS1) {
+  check('PASHTO_1_DATA units = 23', PS1.length === 23, 'got ' + PS1.length);
+  check('PASHTO_1_DATA unit 1 has sections', PS1[0] && Array.isArray(PS1[0].sections) && PS1[0].sections.length > 0);
+  check('PASHTO_1_DATA unit 1 has exercise', PS1[0] && !!PS1[0].exercise);
+  check('PASHTO_1_DATA unit 1 has sloQuestions', PS1[0] && !!(PS1[0].sloQuestions || PS1[0].slos));
+  check('PASHTO_1_DATA registered on DATA.pashto1Chapters', Array.isArray(D.pashto1Chapters) && D.pashto1Chapters.length === 23);
+  check('Class 1 Pashto registered in subjects', D.subjects && D.subjects.cls1 && D.subjects.cls1.some(s => s.id === 'cls1-pashto' && s.hasPashto));
+  check('Class 1 Pashto book registered', D.books.some(b => b.id === 'b-cls1-pashto'));
+} else {
+  check('PASHTO_1_DATA present', false);
+}
+
 const PS = sb.PAKSTUDY_DATA;
 if (PS) {
   check('PAKSTUDY_DATA units = 4', PS.length === 4, 'got ' + PS.length);
@@ -200,6 +213,7 @@ check('index.html loads Class 1 English data', srcs.includes('js/english_1_data.
 check('index.html loads Class 1 Maths data', srcs.includes('js/math_1_data.js') && srcs.indexOf('js/math_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Islamyat data', srcs.includes('js/islamyat_1_data.js') && srcs.indexOf('js/islamyat_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Nazira data', srcs.includes('js/nazira_1_data.js') && srcs.indexOf('js/nazira_1_data.js') < srcs.indexOf('js/app.js'));
+check('index.html loads Class 1 Pashto data', srcs.includes('js/pashto_1_data.js') && srcs.indexOf('js/pashto_1_data.js') < srcs.indexOf('js/app.js'));
 ['js/data_chem.js', 'js/data_phys.js', 'js/data_eng.js', 'js/data_bio.js', 'js/data_comp.js'].forEach(s => check('index.html loads ' + s, srcs.includes(s)));
 const missingSrc = srcs.filter(s => !fs.existsSync(path.join(ROOT, s)));
 check('every <script src> exists', missingSrc.length === 0, 'missing: ' + missingSrc.join(','));

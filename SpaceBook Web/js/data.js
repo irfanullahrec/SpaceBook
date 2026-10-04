@@ -56,13 +56,13 @@ const DATA = {
       "id": "cls1",
       "name": "Class 1",
       "emoji": "✏️",
-      "subjects": 7
+      "subjects": 8
     },
     {
       "id": "cls2",
       "name": "Class 2",
       "emoji": "📖",
-      "subjects": 5
+      "subjects": 6
     },
     {
       "id": "cls3",
@@ -151,14 +151,16 @@ const DATA = {
       { "id": "cls1-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌍", "chapters": 10 },
       { "id": "cls1-isl",  "name": "Islamyat",          "nameUrdu": "اسلامیات",            "emoji": "🕌", "chapters": 10, "hasIsl": true, "hasIsl1": true },
       { "id": "cls1-nazira", "name": "Nazira Quran",    "nameUrdu": "ناظرہ قرآن",          "emoji": "📖", "chapters": 17, "hasNazira": true, "hasNazira1": true },
+      { "id": "cls1-pashto", "name": "Pashto",          "nameUrdu": "پښتو (لازمي)",        "emoji": "📚", "chapters": 23, "hasPashto": true, "hasPashto1": true },
       { "id": "cls1-drawing", "name": "Drawing",         "nameUrdu": "تخلیقی فنون و ڈرائنگ", "emoji": "🎨", "chapters": 32, "hasDrawing": true }
     ],
     "cls2": [
       { "id": "cls2-eng",  "name": "English",           "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 12 },
       { "id": "cls2-urdu", "name": "Urdu",              "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 12 },
-      { "id": "cls2-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 10 },
+      { "id": "cls2-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 6 },
       { "id": "cls2-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌍", "chapters": 10 },
-      { "id": "cls2-isl",  "name": "Islamyat",          "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 }
+      { "id": "cls2-isl",  "name": "Islamyat",          "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 },
+      { "id": "cls2-drawing", "name": "Drawing",       "nameUrdu": "تخلیقی فنون و ڈرائنگ", "emoji": "🎨", "chapters": 32, "hasDrawing": true }
     ],
     "cls3": [
       { "id": "cls3-eng",  "name": "English",         "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 14 },
@@ -1519,6 +1521,26 @@ const DATA = {
       "action": "cls1-nazira",
       "hub_action": "cls1-nazira",
       "subject_id": 6
+    },
+    {
+      "id": "b-cls1-pashto",
+      "classId": "cls1",
+      "class_id": "cls1",
+      "className": "Class 1",
+      "class_name": "Class 1",
+      "subject": "Pashto (Compulsory)",
+      "title": "Pashto 1st Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "29.17 MB",
+      "pages": "Complete 23 Units (88 Pages)",
+      "pdfPath": "assets/books/Class-1-Pashto-KPK.pdf",
+      "pdf_path": "assets/books/Class-1-Pashto-KPK.pdf",
+      "color": "#0d9488",
+      "icon": "📚",
+      "available": true,
+      "action": "cls1-pashto",
+      "hub_action": "cls1-pashto",
+      "subject_id": 7
     },
     {
       "id": "b-cls10-eng",

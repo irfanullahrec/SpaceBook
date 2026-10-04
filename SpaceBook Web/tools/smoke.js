@@ -3,7 +3,7 @@ const vm = require('vm');
 
 const path = require('path');
 const DIR = path.resolve(__dirname, '../js') + path.sep;
-const files = ['data.js', 'drawing_1_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'nazira_1_data.js', 'math_10_data.js', 'math_1_data.js'];
+const files = ['data.js', 'drawing_1_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js'];
 
 function makeEl(id) {
   const style = {};
@@ -173,6 +173,15 @@ run("CLASS 1 switchSubjectTab nazira concepts", `switchSubjectTab('nazira', 'con
 run("CLASS 1 switchSubjectTab nazira exercise", `switchSubjectTab('nazira', 'exercise', 0, 'cls1')`);
 run("CLASS 1 switchSubjectTab nazira slos", `switchSubjectTab('nazira', 'slos', 0, 'cls1')`);
 run("CLASS 1 selectSubjectChapter nazira 16 (Surahs)", `selectSubjectChapter('nazira', 16, 'cls1')`);
+run("CLASS 1 goToSubjects lists Pashto", `goToSubjects('cls1'); if (!/Pashto|پښتو/.test($('dashboard-body').innerHTML)) throw new Error('Pashto subject card missing for Class 1');`);
+run("CLASS 1 openSubject cls1-pashto", `openSubject('cls1','cls1-pashto')`);
+run("CLASS 1 selectSubjectChapter pashto 0", `selectSubjectChapter('pashto', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab pashto lesson", `switchSubjectTab('pashto', 'lesson', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab pashto exercise", `switchSubjectTab('pashto', 'exercise', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab pashto slos", `switchSubjectTab('pashto', 'slos', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab pashto words", `switchSubjectTab('pashto', 'words', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab pashto grammar", `switchSubjectTab('pashto', 'grammar', 0, 'cls1')`);
+run("CLASS 1 selectSubjectChapter pashto 22 (Unit 23)", `selectSubjectChapter('pashto', 22, 'cls1')`);
 run("REGRESSION renderClasses", `renderClasses()`);
 run("REGRESSION handleGlobalSearch('islam')", `handleGlobalSearch("islam")`);
 run("REGRESSION handleGlobalSearch('daffodils')", `handleGlobalSearch("daffodils")`);
