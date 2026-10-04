@@ -56,7 +56,7 @@ const DATA = {
       "id": "cls1",
       "name": "Class 1",
       "emoji": "✏️",
-      "subjects": 5
+      "subjects": 6
     },
     {
       "id": "cls2",
@@ -145,11 +145,12 @@ const DATA = {
       { "id": "cls-kg-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌱", "chapters": 10 }
     ],
     "cls1": [
-      { "id": "cls1-eng",  "name": "English",           "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 12 },
+      { "id": "cls1-eng",  "name": "English",           "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 11, "hasEng": true, "hasEng1": true },
       { "id": "cls1-urdu", "name": "Urdu",              "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 12 },
       { "id": "cls1-math", "name": "Mathematics",       "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 10 },
       { "id": "cls1-gk",   "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",   "emoji": "🌍", "chapters": 10 },
-      { "id": "cls1-isl",  "name": "Islamyat",          "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 }
+      { "id": "cls1-isl",  "name": "Islamyat",          "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 },
+      { "id": "cls1-drawing", "name": "Drawing",         "nameUrdu": "تخلیقی فنون و ڈرائنگ", "emoji": "🎨", "chapters": 32, "hasDrawing": true }
     ],
     "cls2": [
       { "id": "cls2-eng",  "name": "English",           "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 12 },
@@ -1458,6 +1459,26 @@ const DATA = {
     }
   ],
   "books": [
+    {
+      "id": "b-cls1-eng",
+      "classId": "cls1",
+      "class_id": "cls1",
+      "className": "Class 1",
+      "class_name": "Class 1",
+      "subject": "English (Compulsory)",
+      "title": "English 1st Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "9.47 MB",
+      "pages": "Complete 11 Units & 4 Reviews",
+      "pdfPath": "assets/books/Class-1-English-KPK.pdf",
+      "pdf_path": "assets/books/Class-1-English-KPK.pdf",
+      "color": "#4f46e5",
+      "icon": "📖",
+      "available": true,
+      "action": "cls1-eng",
+      "hub_action": "cls1-eng",
+      "subject_id": 1
+    },
     {
       "id": "b-cls10-eng",
       "classId": "cls10",

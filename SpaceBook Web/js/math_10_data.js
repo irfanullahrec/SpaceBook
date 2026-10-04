@@ -407,6 +407,119 @@ var MATH_10_DATA = [
             "method": "Omega Properties"
           }
         ]
+      },
+{
+      "exercise": "2.3",
+      "title": "Exercise 2.3 — Sum and Product of Roots",
+      "problems": [
+            {
+                  "num": "Q1",
+                  "question": "Without solving the equation, find the sum and product of the roots of each quadratic equation.\n(i) 4x² − 4x − 3 = 0\n(ii) 2x² + 5x + 6 = 0\n(iii) 3x² + 2x − 5 = 0",
+                  "solution": "For ax² + bx + c = 0, sum = −b/a and product = c/a.\n(i) Sum = 1; product = −3/4.\n(ii) Sum = −5/2; product = 3.\n(iii) Sum = −2/3; product = −5/3.",
+                  "answer": "(i) Sum 1, product −3/4; (ii) sum −5/2, product 3; (iii) sum −2/3, product −5/3."
+            },
+            {
+                  "num": "Q2",
+                  "question": "Find k if the sum of the roots of 2x² + kx + 6 = 0 equals their product.",
+                  "solution": "Sum = −k/2 and product = 3. Thus −k/2 = 3.",
+                  "answer": "k = −6."
+            },
+            {
+                  "num": "Q3",
+                  "question": "Find k if the sum of the squares of the roots of x² − 5kx + 6k² = 0 is 13.",
+                  "solution": "Let the roots be α and β. α + β = 5k and αβ = 6k². Then α² + β² = (α + β)² − 2αβ = 13k² = 13.",
+                  "answer": "k = ±1."
+            },
+            {
+                  "num": "Q4",
+                  "question": "Find k if the roots of x² − 5x + k = 0 differ by unity.",
+                  "solution": "The roots sum to 5. Two roots differing by 1 are 2 and 3; their product is k.",
+                  "answer": "k = 6."
+            },
+            {
+                  "num": "Q5",
+                  "question": "Find k if the roots of x² − 9x + k + 2 = 0 differ by three.",
+                  "solution": "The roots sum to 9. Two roots differing by 3 are 3 and 6, so their product is k + 2.",
+                  "answer": "k = 16."
+            },
+            {
+                  "num": "Q6",
+                  "question": "If α and β are the roots of x² − 5x + k = 0, find k such that 3α + 2β = 12.",
+                  "solution": "α + β = 5. Subtracting 2(α + β) = 10 gives α = 2 and β = 3. Their product is k.",
+                  "answer": "k = 6."
+            },
+            {
+                  "num": "Q7",
+                  "question": "Find m and n if the sum and product of the roots of mx² − 3x − n = 0 are both 3/5.",
+                  "solution": "3/m = 3/5 gives m = 5. Also −n/m = 3/5, so n = −3.",
+                  "answer": "m = 5, n = −3."
+            }
+      ]
+},
+      {
+        "exercise": "2.4",
+        "title": "Exercise 2.4 — Relations Between Roots and Coefficients",
+        "problems": [
+          {"num":"Q1","question":"If α and β are the roots of ax² + bx + c = 0, find: (i) α³β + β³α; (ii) (α − β)².","solution":"For the roots, α + β = −b/a and αβ = c/a. (i) α³β + β³α = αβ(α² + β²) = (c/a)[(α + β)² − 2αβ] = c(b² − 2ac)/a³. (ii) (α − β)² = (α + β)² − 4αβ = (b² − 4ac)/a².","finalAnswer":"(i) c(b² − 2ac)/a³; (ii) (b² − 4ac)/a²."},
+          {"num":"Q2","question":"Find the quadratic equation whose roots are: (i) 1, 1/2; (ii) −3, 4; (iii) 3 + √2, 3 − √2; (iv) a, −2a.","solution":"Use x² − (sum of roots)x + (product of roots) = 0. (i) Sum 3/2, product 1/2. (ii) Sum 1, product −12. (iii) Sum 6, product 7. (iv) Sum −a, product −2a².","finalAnswer":"(i) 2x² − 3x + 1 = 0; (ii) x² − x − 12 = 0; (iii) x² − 6x + 7 = 0; (iv) x² + ax − 2a² = 0."},
+          {"num":"Q3","question":"Form a quadratic equation whose roots are the squares of the roots of ax² + bx + c = 0, where a ≠ 0.","solution":"If the original roots are α, β, then the new roots have sum α² + β² = (b² − 2ac)/a² and product α²β² = c²/a². Form the equation from this sum and product.","finalAnswer":"a²x² − (b² − 2ac)x + c² = 0."},
+          {"num":"Q4","question":"If α and β are the roots of 2x² + 3x + 1 = 0, find: (i) α/β + β/α; (ii) 1/α² + 1/β²; (iii) α²/β + β²/α.","solution":"Here S = α + β = −3/2 and P = αβ = 1/2, so α² + β² = S² − 2P = 5/4 and α³ + β³ = S³ − 3PS = −9/8. (i) (α² + β²)/P = 5/2. (ii) (α² + β²)/P² = 5. (iii) (α³ + β³)/P = −9/4.","finalAnswer":"(i) 5/2; (ii) 5; (iii) −9/4."},
+          {"num":"Q5","question":"If α and β are the roots of 3x² − 2x + 5 = 0, find the equation whose roots are α/β and β/α.","solution":"α + β = 2/3 and αβ = 5/3. The new roots have product 1 and sum (α² + β²)/(αβ) = [(α + β)² − 2αβ]/(αβ) = −26/15. Form the quadratic equation from this sum and product.","finalAnswer":"15x² + 26x + 15 = 0."},
+          {"num":"Q6","question":"If α and β are the roots of x² − 4x + 2 = 0, find the equation whose roots are α + 1/α and β + 1/β.","solution":"α + β = 4 and αβ = 2. The new roots have sum (α + β) + (1/α + 1/β) = 4 + (α + β)/(αβ) = 6, and product (α + 1/α)(β + 1/β) = αβ + α/β + β/α + 1/(αβ) = 2 + [(α + β)² − 2αβ]/(αβ) + 1/2 = 17/2.","finalAnswer":"2x² − 12x + 17 = 0."}
+        ]
+      },
+      {
+        "exercise": "2.5",
+        "title": "Exercise 2.5 — Synthetic Division",
+        "problems": [
+          {"num":"Q1","question":"Use synthetic division to find quotient Q(x) and remainder R when: (i) 3x³ + 2x² − x − 1 is divided by x + 3; (ii) 2x³ − 7x² + 12x − 27 is divided by x − 3; (iii) 2x⁴ − 3x² + 5x − 7 is divided by x + 2.","solution":"Use synthetic roots −3, 3, and −2 respectively. (i) Coefficients 3, 2, −1, −1 give quotient coefficients 3, −7, 20 and remainder −61. (ii) Coefficients 2, −7, 12, −27 give quotient coefficients 2, −1, 9 and remainder 0. (iii) Include the missing x³ coefficient: 2, 0, −3, 5, −7; synthetic division gives quotient coefficients 2, −4, 5, −5 and remainder 3.","finalAnswer":"(i) Q(x) = 3x² − 7x + 20, R = −61; (ii) Q(x) = 2x² − x + 9, R = 0; (iii) Q(x) = 2x³ − 4x² + 5x − 5, R = 3."},
+          {"num":"Q2","question":"Use synthetic division to find k if −2 is a zero of x³ + 4x² + kx + 8.","solution":"Since −2 is a zero, substitute it: (−2)³ + 4(−2)² − 2k + 8 = 0. Thus 16 − 2k = 0.","finalAnswer":"k = 8."},
+          {"num":"Q3","question":"Find p and q if x + 1 and x − 2 are factors of x³ + px² + qx + 6.","solution":"By the factor theorem, f(−1) = −1 + p − q + 6 = 0, so p − q = −5. Also f(2) = 8 + 4p + 2q + 6 = 0, so 2p + q = −7. Solving gives p = −4 and q = 1.","finalAnswer":"p = −4, q = 1."},
+          {"num":"Q4","question":"If x + 1 and x − 2 are factors of x³ + ax² + bx + 2, find a and b using synthetic division.","solution":"The factor theorem gives f(−1) = −1 + a − b + 2 = 0, so a − b = −1. Also f(2) = 8 + 4a + 2b + 2 = 0, so 2a + b = −5. Solving gives a = −2 and b = −1.","finalAnswer":"a = −2, b = −1."},
+          {"num":"Q5","question":"One root of x³ − 7x − 6 = 0 is 3. Use synthetic division to find the other roots.","solution":"Divide by x − 3 using coefficients 1, 0, −7, −6 to obtain quotient x² + 3x + 2 = (x + 1)(x + 2).","finalAnswer":"The other roots are −1 and −2."},
+          {"num":"Q6","question":"If −1 and 2 are roots of x⁴ − 5x³ + 3x² + 7x − 2 = 0, use synthetic division to find the other roots.","solution":"Divide successively by x + 1 and x − 2. The remaining factor is x² − 4x + 1 = 0. By the quadratic formula, x = [4 ± √(16 − 4)]/2.","finalAnswer":"The other roots are 2 + √3 and 2 − √3."}
+        ]
+      },
+      {
+        "exercise": "2.6",
+        "title": "Exercise 2.6 — Simultaneous Equations",
+        "problems": [
+          {"num":"Q1","question":"Solve each system: (i) 2x − y = 3, x² + y² = 2; (ii) x + 2y = 0, x² + 4y² = 32; (iii) 2x − y = −8, x² + 4x = y; (iv) 2x + y = 4, x² − 2x + y² = 3; (v) 4x² + 5y² = 4, 3x² + y² = 3; (vi) 5x² = y² + 9, x² = −y² + 45; (vii) 4x² + 3y² − 5 = 0, 2x² + 3y² − 4 = 0.","solution":"(i) Set y = 2x − 3. Then 5x² − 12x + 7 = 0, giving (x,y) = (1,−1), (7/5,−1/5). (ii) x = −2y gives 8y² = 32, so (x,y) = (−4,2), (4,−2). (iii) y = 2x + 8; substitution gives x² + 2x − 8 = 0, so (x,y) = (2,12), (−4,0). (iv) y = 4 − 2x; substitution gives 5x² − 18x + 13 = 0, so (x,y) = (1,2), (13/5,−6/5). (v) Put X = x² and Y = y². Solving 4X + 5Y = 4 and 3X + Y = 3 gives X = 1, Y = 0. (vi) x² + y² = 45 and 5x² − y² = 9 give x² = 9, y² = 36. (vii) Subtract the equations to get 2x² = 1, then y² = 1.","finalAnswer":"(i) (1,−1), (7/5,−1/5); (ii) (−4,2), (4,−2); (iii) (2,12), (−4,0); (iv) (1,2), (13/5,−6/5); (v) (−1,0), (1,0); (vi) (3,6), (−3,6), (3,−6), (−3,−6); (vii) (±1/√2, ±1), with independent signs."},
+          {"num":"Q2","question":"Challenge: solve (i) x + y = 9, x² + 3xy + 2y² = 0; (ii) y − x = 4, 2x² + xy + y² = 8.","solution":"(i) Factor the quadratic expression: (x + y)(x + 2y) = 0. Since x + y = 9, x + 2y = 0; hence (x,y) = (18,−9). (ii) Put y = x + 4. Substitution gives 4x² + 12x + 8 = 0 = 4(x + 1)(x + 2), so x = −1 or −2 and y = 3 or 2 respectively.","finalAnswer":"(i) (18,−9); (ii) (−1,3), (−2,2)."}
+        ]
+      },
+      {
+        "exercise": "2.7",
+        "title": "Exercise 2.7 — Real Life Applications of Quadratic Equations",
+        "problems": [
+          {"num":"Q1","question":"Find two consecutive positive integers whose product is 72.","solution":"Let the integers be n and n + 1. Then n(n + 1) = 72, so n² + n − 72 = 0 = (n − 8)(n + 9). The positive solution is n = 8.","finalAnswer":"8 and 9."},
+          {"num":"Q2","question":"The sum of the squares of three consecutive integers is 50. Find the integers.","solution":"Let the integers be n, n + 1, n + 2. Then n² + (n + 1)² + (n + 2)² = 50, giving 3n² + 6n − 45 = 0, or (n + 5)(n − 3) = 0. Thus n = 3 or n = −5.","finalAnswer":"3, 4, 5 or −5, −4, −3."},
+          {"num":"Q3","question":"The length of a hall is 5 meters more than its width. If its area is 36 square meters, find the length and width.","solution":"Let the width be w m; the length is w + 5 m. Then w(w + 5) = 36, so w² + 5w − 36 = 0 = (w − 4)(w + 9). A length cannot be negative, so w = 4.","finalAnswer":"Width 4 m; length 9 m."},
+          {"num":"Q4","question":"The sum of two numbers is 11 and the sum of their squares is 65. Find the numbers.","solution":"Let the numbers be x and y. x + y = 11 and x² + y² = 65. Since (x + y)² = x² + y² + 2xy, 121 = 65 + 2xy, so xy = 28. The numbers are roots of t² − 11t + 28 = 0 = (t − 4)(t − 7).","finalAnswer":"4 and 7."},
+          {"num":"Q5","question":"The sum of the squares of two numbers is 100. One number is 2 more than the other. Find the numbers.","solution":"Let the numbers be x and x + 2. Then x² + (x + 2)² = 100, so 2x² + 4x − 96 = 0 = 2(x − 6)(x + 8). Thus x = 6 or x = −8.","finalAnswer":"6 and 8, or −8 and −6."},
+          {"num":"Q6","question":"The area of a rectangular field is 252 square meters. Its length is 9 meters longer than its width. Find its sides.","solution":"Let the width be w m and the length be w + 9 m. Then w(w + 9) = 252, so w² + 9w − 252 = 0 = (w − 12)(w + 21). Take the positive width w = 12.","finalAnswer":"12 m by 21 m."},
+          {"num":"Q7","question":"One side of a rectangle is 3 centimeters less than twice the other. If its area is 54 square centimeters, find its sides.","solution":"Let one side be x cm; the other is 2x − 3 cm. Then x(2x − 3) = 54, so 2x² − 3x − 54 = 0 = (2x + 9)(x − 6). The positive solution is x = 6.","finalAnswer":"6 cm and 9 cm."},
+          {"num":"Q8","question":"The length of one side of a right triangle exceeds the length of the other by 3 centimeters. If the hypotenuse is 15 centimeters, find the lengths of the sides.","solution":"Let the shorter leg be x cm and the longer leg x + 3 cm. By Pythagoras, x² + (x + 3)² = 15², so x² + 3x − 108 = 0 = (x − 9)(x + 12). The positive leg lengths are 9 and 12.","finalAnswer":"The legs are 9 cm and 12 cm; the hypotenuse is 15 cm."},
+          {"num":"Q9","question":"The sides of a right triangle in centimeters are x − 1, x, and x + 1. Find the sides.","solution":"The largest side x + 1 is the hypotenuse. Thus (x − 1)² + x² = (x + 1)². Simplifying gives x² − 4x = 0, so x = 4 (the positive non-degenerate value).","finalAnswer":"3 cm, 4 cm, and 5 cm."},
+          {"num":"Q10","question":"A shepherd bought some goats for Rs. 9000. If he had paid Rs. 100 less for each, he would have received 3 more goats for the same amount. How many goats did he buy, if the price per goat was uniform?","solution":"Let the original price per goat be p rupees. The number bought is 9000/p. At p − 100 rupees each, he would buy three more: 9000/(p − 100) = 9000/p + 3. Simplifying gives p² − 100p − 300000 = 0 = (p − 600)(p + 500). Since p > 100, p = 600, so 9000/600 = 15 goats.","finalAnswer":"15 goats (at Rs. 600 each)."}
+        ]
+      },
+      {
+        "exercise": "Review Exercise 2",
+        "title": "Review Exercise 2",
+        "problems": [
+          {"num":"Q1","question":"Choose the correct answer: (i) If the sum of the roots of (a + 1)x² + (2a + 3)x + (3a + 4) = 0 is −7/3, find a. (ii) A quadratic equation has root sum 2 and sum of cubes of roots 98; identify the equation. (iii) If a, b, c are positive real numbers, what can always be said about the roots of ax² + bx + c = 0? (iv) If a and b are the roots of 4x² − 3x + 7 = 0, find 1/a + 1/b.","solution":"(i) −(2a + 3)/(a + 1) = −7/3 gives a = 2. (ii) If the product is P, then α³ + β³ = (α + β)³ − 3αβ(α + β) = 8 − 6P = 98, so P = −15 and the equation is x² − 2x − 15 = 0. (iii) A positive discriminant is not guaranteed; the roots may be non-real, so none of the listed properties is always true. (iv) 1/a + 1/b = (a + b)/(ab) = (3/4)/(7/4) = 3/7.","finalAnswer":"(i) a = 2; (ii) x² − 2x − 15 = 0; (iii) none of these; (iv) 3/7."},
+          {"num":"Q2","question":"For what value of k are the roots of 3x² − 5x + k = 0 equal?","solution":"Equal roots require the discriminant to be zero: (−5)² − 4(3)(k) = 0, so 25 − 12k = 0.","finalAnswer":"k = 25/12."},
+          {"num":"Q3","question":"Evaluate (−1 + √−3)⁷ + (−1 − √−3)⁷.","solution":"Write √−3 = i√3. The numbers −1 ± i√3 equal 2ω and 2ω², where ω³ = 1 and 1 + ω + ω² = 0. Thus the sum is 2⁷(ω⁷ + ω¹⁴) = 128(ω + ω²) = −128.","finalAnswer":"−128."},
+          {"num":"Q4","question":"Without solving, find the sum and product of the roots: (i) 4x² − 1 = 0; (ii) 3x² + 4x = 0.","solution":"For Ax² + Bx + C = 0, root sum = −B/A and product = C/A.","finalAnswer":"(i) Sum 0, product −1/4; (ii) sum −4/3, product 0."},
+          {"num":"Q5","question":"Find k so that the sum of the roots of 3x² + (2k + 1)x + k − 5 = 0 equals their product.","solution":"The sum is −(2k + 1)/3 and the product is (k − 5)/3. Equating gives −2k − 1 = k − 5.","finalAnswer":"k = 4/3."},
+          {"num":"Q6","question":"Find k if the roots of x² − 3x + k + 1 = 0 differ by unity.","solution":"The sum of the roots is 3. Roots differing by 1 are 1 and 2; their product is 2 = k + 1.","finalAnswer":"k = 1."},
+          {"num":"Q7","question":"Find the quadratic equation whose roots are the multiplicative inverses of the roots of 12x² − 17x + 6 = 0.","solution":"The original roots have sum 17/12 and product 1/2. The reciprocal roots have sum (17/12)/(1/2) = 17/6 and product 2. Form the monic equation and clear denominators.","finalAnswer":"6x² − 17x + 12 = 0."},
+          {"num":"Q8","question":"If one root of 2x² + kx + 4 = 0 is 2, find the other root and k.","solution":"Substituting x = 2 gives 8 + 2k + 4 = 0, so k = −6. The product of the roots is 4/2 = 2, so the other root is 1.","finalAnswer":"The other root is 1; k = −6."},
+          {"num":"Q9","question":"One root of x³ + 6x² + 11x + 6 = 0 is −3. Use synthetic division to find the other roots.","solution":"Dividing by x + 3 gives x² + 3x + 2 = (x + 1)(x + 2).","finalAnswer":"The other roots are −1 and −2."},
+          {"num":"Q10","question":"Solve the systems: (i) x + y = 3, x² − 3xy + y² = 29; (ii) 7x² − 4 = 5y², 3x² + 2 = 4y².","solution":"(i) Let p = xy. Then x² + y² = 9 − 2p, so 9 − 5p = 29 and p = −4. Thus x and y are roots of t² − 3t − 4 = 0, giving the ordered pairs (4,−1) and (−1,4). (ii) Put X = x² and Y = y². Solve 7X − 5Y = 4 and 3X − 4Y = −2 to get X = Y = 2.","finalAnswer":"(i) (4,−1), (−1,4); (ii) (√2,√2), (−√2,√2), (√2,−√2), (−√2,−√2)."},
+          {"num":"Q11","question":"The area of a rectangle is 48 cm². If its length and width are each increased by 4 cm, the area of the larger rectangle is 120 cm². Find the length and width of the original rectangle.","solution":"Let the original dimensions be l and w. lw = 48 and (l + 4)(w + 4) = 120, so l + w = 14. The dimensions are roots of t² − 14t + 48 = 0 = (t − 6)(t − 8).","finalAnswer":"6 cm and 8 cm."}
+        ]
       }
     ],
     "slos": [
@@ -434,8 +547,8 @@ var MATH_10_DATA = [
       },
       {
         "name": "Equation from Roots",
-        "formula": "x² - Sx + P = 0",
-        "note": "S = α + β = -b/a, P = αβ = c/a."
+        "formula": "x² − Sx + P = 0",
+        "note": "S = α + β = −b/a, P = αβ = c/a."
       }
     ],
     "classId": "cls10"
@@ -547,6 +660,82 @@ var MATH_10_DATA = [
             ],
             "method": "Proportion Law"
           }
+        ]
+      },
+      {
+        "exercise": "3.2",
+        "title": "Exercise 3.2 — Continued Proportion and Mean Proportionals",
+        "problems": [
+          {"num":"Q1","question":"Which of these quantities are in continued proportion? (i) 4, 12, 36; (ii) 3, 12, 39; (iii) 72, 24, 8.","solution":"Three quantities a, b, c are in continued proportion when b² = ac. (i) 12² = 4·36. (ii) 12² ≠ 3·39. (iii) 24² = 72·8.","finalAnswer":"(i) and (iii)."},
+          {"num":"Q2","question":"Find the mean proportional of 12 and 3.","solution":"If m is the mean proportional, m² = 12·3 = 36. Taking the positive mean proportional gives m = 6.","finalAnswer":"6."},
+          {"num":"Q3","question":"If 5, 15, x are in continued proportion, find x.","solution":"15² = 5x, so x = 225/5.","finalAnswer":"x = 45."},
+          {"num":"Q4","question":"If 3x − 1, 5, 35 are in continued proportion, find x.","solution":"5² = (3x − 1)(35). Thus 25 = 105x − 35, so 105x = 60.","finalAnswer":"x = 4/7."},
+          {"num":"Q5","question":"Find the mean proportional of a² − b² and (a + b)/(a − b).","solution":"The mean proportional is the square root of the product: √[(a² − b²)(a + b)/(a − b)] = √[(a + b)²].","finalAnswer":"a + b (under the usual positive-value assumptions)."},
+          {"num":"Q6","question":"If a/b = c/d, prove that (ac + bd)/(ac − bd) = (a² + b²)/(a² − b²).","solution":"Let a/b = c/d = k. Then a = bk and c = dk. The left side becomes (bk·dk + bd)/(bk·dk − bd) = (k² + 1)/(k² − 1). The right side is ((bk)² + b²)/((bk)² − b²) = (k² + 1)/(k² − 1).","finalAnswer":"Both sides are equal, when the denominators are nonzero."},
+          {"num":"Q7","question":"Solve: (i) [√(3x + 2) + √x]/[√(3x + 2) − √x] = 4; (ii) [(x − 1)² + (x + 2)²]/[(x − 1)² − (x + 2)²] = 17/8; (iii) [√(x² + a²) − √(x² − a²)]/[√(x² + a²) + √(x² − a²)] = 1/3.","solution":"(i) Cross-multiplication gives 3√(3x + 2) = 5√x. Squaring gives x = −9, which is outside the real domain x ≥ 0; therefore the printed equation has no real solution. (The transcribed answer key’s −9 is extraneous.) (ii) Simplification gives 16x² + 118x + 91 = 0 = (2x + 7)(8x + 13), so x = −7/2 or −13/8. (iii) Put A = √(x² + a²), B = √(x² − a²). A − B = (A + B)/3 implies A = 2B. Squaring gives 3x² = 5a²; apply the radical domain x² ≥ a².","finalAnswer":"(i) No real solution; x = −9 is extraneous. (ii) x = −7/2 or −13/8. (iii) x = ±a√(5/3), subject to the real-domain condition."}
+        ]
+      },
+      {
+        "exercise": "3.3",
+        "title": "Exercise 3.3 — Joint Variation",
+        "problems": [
+          {"num":"Q1","question":"If y varies jointly as x and z, and y = 33 when x = 9 and z = 12, find y when x = 16 and z = 22.","solution":"y = kxz. From 33 = k(9)(12), k = 11/36. Thus y = (11/36)(16)(22).","finalAnswer":"y = 242/9."},
+          {"num":"Q2","question":"If f varies jointly as g and the cube of h, and f = 200 when g = 5 and h = 4, find f when g = 3 and h = 6.","solution":"f = kgh³. From 200 = k(5)(4³), k = 5/8. Then f = (5/8)(3)(6³).","finalAnswer":"f = 405."},
+          {"num":"Q3","question":"Suppose a is jointly proportional to b and c. If a = 4 when b = 8 and c = 9, find a when b = 2 and c = 18.","solution":"a = kbc. The initial values give k = 4/(8·9) = 1/18. Therefore a = (1/18)(2)(18).","finalAnswer":"a = 2."},
+          {"num":"Q4","question":"If p varies jointly as q and r², and p = 225 when q = 4 and r = 3, find p when q = 6 and r = 8.","solution":"p = kqr². The first values give k = 225/(4·3²) = 25/4. Thus p = (25/4)(6)(8²).","finalAnswer":"p = 2400."},
+          {"num":"Q5","question":"If a varies jointly as b³ and c, and a = 36 when b = 4 and c = 6, find a when b = 2 and c = 14.","solution":"a = kb³c. The first values give k = 36/(4³·6) = 3/32. Then a = (3/32)(2³)(14).","finalAnswer":"a = 10.5."},
+          {"num":"Q6","question":"If z varies jointly as x and y and z = 12 when x = 2 and y = 4, find the constant of variation.","solution":"z = kxy, so 12 = k(2)(4).","finalAnswer":"k = 3/2."},
+          {"num":"Q7","question":"If y varies jointly as x² and z, and y = 6 when x = 4 and z = 9, write y as a function of x and z and find y when x = −8 and z = 12.","solution":"y = kx²z. From the given values, k = 6/(4²·9) = 1/24. Substitute x = −8 and z = 12.","finalAnswer":"y = x²z/24; the requested value is 32."},
+          {"num":"Q8","question":"If p varies jointly as q and r and inversely as s and t², and p = 40 when q = 8, r = 5, s = 3, and t = 2, find p in terms of q, r, s, t. Then find p when q = −2, r = 4, s = 3, and t = −1.","solution":"p = kqr/(st²). Using the initial values gives k = 40(3)(2²)/(8·5) = 12. For the new values, p = 12(−2)(4)/(3·(−1)²).","finalAnswer":"p = 12qr/(st²); the requested value is −32."}
+        ]
+      },
+      {
+        "exercise": "3.4",
+        "title": "Exercise 3.4 — Proportions and the k-Method",
+        "problems": [
+          {"num":"Q1","question":"If a:b = c:d, prove (i) (2a + 3b)/(2a − 3b) = (2c + 3d)/(2c − 3d); (ii) pa + qb : ma − nb = pc + qd : mc − nd.","solution":"Let a/b = c/d = k, so a = bk and c = dk. Substitute these expressions into each side and cancel the common factors.","finalAnswer":"Both stated proportion identities follow by substitution of a = bk and c = dk."},
+          {"num":"Q2","question":"Prove that if a/b = c/d = e/f, then this common ratio equals √[(p a² + q c² + e²)/(p b² + q d² + f²)].","solution":"Let a/b = c/d = e/f = k. Then a = bk, c = dk, e = fk. The numerator under the radical becomes k²(pb² + qd² + f²). Thus the radical is √(k²) = |k|.","finalAnswer":"The equality holds for a nonnegative common ratio k; in general the radical equals |k|."},
+          {"num":"Q3","question":"If (x − y)/z = (y − z)/x = (z − x)/y, prove x = y = z, where x, y, z are nonzero and x + y + z ≠ 0.","solution":"Let the common ratio be k. Adding the three numerator equations gives 0 = k(x + y + z). Since x + y + z ≠ 0, k = 0. Therefore x − y = y − z = z − x = 0.","finalAnswer":"x = y = z."},
+          {"num":"Q4","question":"If (2y + 2z − x)/a = (2z + 2x − y)/b = (2x + 2y − z)/c, prove x/(2b + 2c − a) = y/(2c + 2a − b) = z/(2a + 2b − c).","solution":"Let each given ratio equal k and put S = x + y + z. The three numerators are 2S − 3x = ak, 2S − 3y = bk, 2S − 3z = ck. Adding gives 3S = k(a + b + c). Hence x = k(2b + 2c − a)/9, y = k(2c + 2a − b)/9, z = k(2a + 2b − c)/9.","finalAnswer":"The three required ratios are equal."},
+          {"num":"Q5","question":"If (x + y)/(a + b) = (y + z)/(b + c) = (z + x)/(c + a), prove that each fraction equals (x + y + z)/(a + b + c).","solution":"Let the common value be k. Then x + y = k(a + b), y + z = k(b + c), z + x = k(c + a). Adding gives 2(x + y + z) = 2k(a + b + c).","finalAnswer":"Each fraction equals (x + y + z)/(a + b + c)."},
+          {"num":"Q6","question":"If (bz + cy)/(b − c) = (cx + az)/(c − a) = (ay + bx)/(a − b), prove (a + b + c)(x + y + z) = ax + by + cz.","solution":"Let the common value be k. Add the three numerator equalities: (bz + cy) + (cx + az) + (ay + bx) = k[(b − c) + (c − a) + (a − b)] = 0. The left side is (a + b + c)(x + y + z) − (ax + by + cz).","finalAnswer":"(a + b + c)(x + y + z) = ax + by + cz."},
+          {"num":"Q7","question":"If x/(b + c − a) = y/(c + a − b) = z/(a + b − c), prove (b − c)x + (c − a)y + (a − b)z = 0.","solution":"Let the common ratio be k. Substitute x = k(b + c − a), y = k(c + a − b), z = k(a + b − c) into the required expression. The coefficients cancel in pairs.","finalAnswer":"(b − c)x + (c − a)y + (a − b)z = 0."},
+          {"num":"Q8","question":"If 2x + 3y : 3y + 4z : 4z + 5x = 4a − 5b : 3b − a : 2b − 3a, prove 7x + 6y + 8z = 0.","solution":"Let the three ratios equal k. Add their numerator equalities: (2x + 3y) + (3y + 4z) + (4z + 5x) = k[(4a − 5b) + (3b − a) + (2b − 3a)] = 0. The left side is 7x + 6y + 8z.","finalAnswer":"7x + 6y + 8z = 0."},
+          {"num":"Q9","question":"Challenge: If (a − b)/(d − e) = (b − c)/(e − f), prove that each of these fractions equals [b(f − d) + (cd − af)]/[e(f − d)].","solution":"Let the common ratio be k. Then a = b + k(d − e) and c = b + k(f − e). Substituting gives b(f − d) + cd − af = ke(f − d). Dividing by e(f − d) gives k.","finalAnswer":"Both fractions equal [b(f − d) + (cd − af)]/[e(f − d)]."}
+        ]
+      },
+      {
+        "exercise": "3.5",
+        "title": "Exercise 3.5 — Applications of Variation",
+        "problems": [
+          {"num":"Q1","question":"The thickness T of a hedge varies directly as the number N of wooden planks. Four planks make a 12 cm thick hedge. Find (i) the thickness for 6 planks; (ii) the number of planks for a thickness of 9 cm.","solution":"T = kN. From 12 = 4k, k = 3 cm per plank. (i) T = 3(6). (ii) 9 = 3N.","finalAnswer":"(i) 18 cm; (ii) 3 planks."},
+          {"num":"Q2","question":"Water pressure P at an internal point in a fountain varies directly as depth d. Pressure is 51 N/cm² at a depth of 3 cm. Find the pressure at 7 cm depth.","solution":"P = kd; k = 51/3 = 17. At d = 7, P = 17(7).","finalAnswer":"119 N/cm²."},
+          {"num":"Q3","question":"Gas pressure P in a container varies directly as temperature T. When P = 50 N/m², T = 75°C. Find P when T = 150°C.","solution":"P = kT, so doubling the temperature from 75°C to 150°C doubles the pressure.","finalAnswer":"100 N/m²."},
+          {"num":"Q4","question":"If 8 persons complete a work in 10 days, how many days would 10 persons take to complete the same work?","solution":"For fixed work, persons and days vary inversely. The work is 8·10 = 80 person-days, so 10d = 80.","finalAnswer":"8 days."},
+          {"num":"Q5","question":"The volume V of a gas varies inversely as pressure P. P = 300 N/m² when V = 4 m³. Find P when V = 3 m³.","solution":"PV = k = 300·4 = 1200. For V = 3, P = 1200/3.","finalAnswer":"400 N/m²."},
+          {"num":"Q6","question":"The attraction force F between two magnets varies inversely as the square of the distance d between them. F = 18 N when d = 2 cm. Find the distance when F = 2 N.","solution":"F = k/d². From 18 = k/4, k = 72. For F = 2, d² = 72/2 = 36. Distance is positive.","finalAnswer":"6 cm."},
+          {"num":"Q7","question":"The volume V of a right circular cylinder varies jointly as its height h and the square of its radius r. A cylinder with radius 4 cm and height 7 cm has volume 352 cm³. Find the volume of a cylinder with radius 8 cm and height 14 cm.","solution":"V = khr². The first cylinder gives k = 352/(7·4²) = 22/7. For the second, V = (22/7)(14)(8²).","finalAnswer":"2816 cm³."}
+        ]
+      },
+      {
+        "exercise": "Review Exercise 3",
+        "title": "Review Exercise 3",
+        "problems": [
+          {"num":"Q1","question":"Choose the correct answer: (i) Direct variation between a and b is expressed as what relation? (ii) If m ∝ 1/n, what is constant? (iii) Which ratio differs from the other three: 30/45, 4:6, 2:3, 3:2? (iv) If a/b = c/d, which equality follows by alternendo? (v) If 7:9 = x:27, find x. (vi) Find the third proportional to x and y. (vii) If x ∝ 1/y and y ∝ 1/z, how does x vary with z? (viii) If (2a + 1):21 = 4:7, find a. (ix) If a/b = c/d = e/f, which weighted ratio equals the common value? (x) Which relation represents direct variation of x as y?","solution":"(i) a ∝ b. (ii) mn = k. (iii) 30/45, 4:6, and 2:3 all equal 2/3; 3:2 differs. (iv) a/c = b/d. (v) 7/9 = x/27 gives x = 21. (vi) x:y = y:t gives t = y²/x. (vii) y = k/z and x = c/y, so x ∝ z. (viii) (2a + 1)/21 = 4/7 gives a = 11/2. (ix) Set a = bk, c = dk, e = fk; then (la + mc + ne)/(lb + md + nf) = k. (x) Direct variation has form x = ky.","finalAnswer":"(i) a ∝ b; (ii) mn = k; (iii) 3:2; (iv) a/c = b/d; (v) 21; (vi) y²/x; (vii) x ∝ z; (viii) 11/2; (ix) (la + mc + ne)/(lb + md + nf); (x) x = (7/16)y."},
+          {"num":"Q2","question":"Find the constant of variation when s ∝ t² and t = 10 when s = 5.","solution":"s = kt², so 5 = 100k.","finalAnswer":"k = 1/20."},
+          {"num":"Q3","question":"y ∝ 1/x². If y = 4 when x = 3, find x when y = 9.","solution":"y = k/x². From 4 = k/9, k = 36. Then 9 = 36/x², so x² = 4.","finalAnswer":"x = ±2 algebraically; for a positive quantity, x = 2 (as in the book answer key)."},
+          {"num":"Q4","question":"Pressure of gas in a closed vessel varies directly as temperature. If pressure is 150 units when temperature is 70 units, find pressure when temperature is 140 units.","solution":"Direct variation means P/T is constant. Doubling temperature doubles pressure.","finalAnswer":"300 units."},
+          {"num":"Q5","question":"In an electric circuit, current varies inversely as resistance. If current is 44 A at resistance 30 Ω, find the current when resistance is 22 Ω.","solution":"IR = k = 44·30 = 1320. At R = 22 Ω, I = 1320/22.","finalAnswer":"60 A."},
+          {"num":"Q6","question":"a varies jointly as b and √c. If a = 21 when b = 5 and c = 36, find a when b = 12 and c = 225.","solution":"a = kb√c. From the first values, k = 21/(5·6) = 7/10. For b = 12 and √c = 15, a = (7/10)(12)(15).","finalAnswer":"a = 126."},
+          {"num":"Q7","question":"What number should be added to each of 3, 8, 11, and 20 to make them a proportion?","solution":"Let the number be n. Then (3 + n)/(8 + n) = (11 + n)/(20 + n). Cross-multiplication gives 60 + 23n + n² = 88 + 19n + n².","finalAnswer":"n = 7."},
+          {"num":"Q8","question":"What number must be subtracted from each of 6, 8, 7, and 11 so that the resulting numbers are in proportion?","solution":"Let the number be n. Then (6 − n)/(8 − n) = (7 − n)/(11 − n). Cross-multiplication gives 66 − 17n + n² = 56 − 15n + n².","finalAnswer":"n = 5."},
+          {"num":"Q9","question":"The ratio between two numbers is 8:3 and their difference is 20. Find the numbers.","solution":"The difference is 5 equal parts, so one part is 20/5 = 4. The numbers are 8·4 and 3·4.","finalAnswer":"32 and 12."},
+          {"num":"Q10","question":"Find three numbers in continued proportion such that their sum is 14 and the sum of their squares is 84.","solution":"The numbers 8, 4, 2 are in continued proportion because 4² = 8·2. Their sum is 14 and their squares sum to 64 + 16 + 4 = 84.","finalAnswer":"8, 4, and 2."},
+          {"num":"Q11","question":"The mean proportional between two numbers is 6 and their sum is 13. Find the numbers.","solution":"Their product is 6² = 36 and their sum is 13. They are roots of t² − 13t + 36 = 0 = (t − 4)(t − 9).","finalAnswer":"4 and 9."},
+          {"num":"Q12","question":"Find the angles of a triangle which are in the ratio 3:4:5.","solution":"The ratio has 12 parts. Each part is 180°/12 = 15°.","finalAnswer":"45°, 60°, and 75°."},
+          {"num":"Q13","question":"If a/b = c/d, prove ac(a + c)/[bd(b + d)] = (a + c)³/(b + d)³.","solution":"Let a/b = c/d = k, so a = bk and c = dk. Then the left side is (bdk²)(k(b + d))/[bd(b + d)] = k³. The right side is [k(b + d)]³/(b + d)³ = k³.","finalAnswer":"Both sides equal k³."},
+          {"num":"Q14","question":"If a, b, c are in continued proportion, prove a/c = (a² + ab + b²)/(b² + bc + c²) = (a² − b²)/(b² − c²).","solution":"Let a/b = b/c = k, so a = bk and b = ck. Then a² + ab + b² = b²(k² + k + 1), b² + bc + c² = c²(k² + k + 1), and a/c = k². Also (a² − b²)/(b² − c²) = [b²(k² − 1)]/[c²(k² − 1)] = k².","finalAnswer":"Each ratio equals a/c = k²."},
+          {"num":"Q15","question":"If a/b = c/d = e/f, prove (a³ + c³ + e³)/(b³ + d³ + f³) = ace/(bdf).","solution":"Let the common ratio be k, so a = bk, c = dk, e = fk. The left side is k³(b³ + d³ + f³)/(b³ + d³ + f³) = k³. The right side is (bd f k³)/(bdf) = k³.","finalAnswer":"Both sides equal k³."}
         ]
       }
     ],
@@ -922,6 +1111,17 @@ var MATH_10_DATA = [
         ]
       },
       {
+        "exercise": "5.3",
+        "title": "Exercise 5.3 — Venn Diagrams and Set Identities",
+        "problems": [
+          {"num":"Q1","question":"If A = {1, 2, 3, 4, 5} and B = {2, 3, 6, 7}, draw Venn diagrams for (i) A ∪ B; (ii) A ∩ B.","solution":"Place 1, 4, 5 in the A-only region; 2, 3 in A ∩ B; and 6, 7 in the B-only region. Shade the requested regions.","finalAnswer":"A ∪ B = {1, 2, 3, 4, 5, 6, 7}; A ∩ B = {2, 3}."},
+          {"num":"Q2","question":"For A = {1, 2, 3, 4, 5, 6}, B = {3, 4, 5, 6, 7, 8}, C = {5, 6, 9, 10}, verify by Venn diagrams: (i) A ∪ (B ∪ C) = (A ∪ B) ∪ C; (ii) A ∩ (B ∩ C) = (A ∩ B) ∩ C; (iii) A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C); (iv) A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C).","solution":"(i) Both sides give {1,2,3,4,5,6,7,8,9,10}. (ii) Both sides give {5,6}. (iii) B ∩ C = {5,6}; both sides give {1,2,3,4,5,6}. (iv) Both sides give {3,4,5,6}. In each identity, the Venn diagrams shade the same regions.","finalAnswer":"All four set identities are verified."},
+          {"num":"Q3","question":"Let U = {1,2,3,4,5,6,7}, A = {1,2,3,4}, B = {3,4,5}. Draw Venn diagrams for A, B, A′ ∪ B, and A′ ∩ B′, and verify (i) (A ∪ B)′ = A′ ∩ B′; (ii) (A ∩ B)′ = A′ ∪ B′.","solution":"A only = {1,2}; A ∩ B = {3,4}; B only = {5}; outside both = {6,7}. Thus A′ = {5,6,7}, B′ = {1,2,6,7}. Compute each complement and intersection/union.","finalAnswer":"(A ∪ B)′ = A′ ∩ B′ = {6,7}; (A ∩ B)′ = A′ ∪ B′ = {1,2,5,6,7}."},
+          {"num":"Q4","question":"Let U = {a,b,c,1,2,3,4}, A = {c,3}, and B = {a,3,4}. Draw Venn diagrams for A, B, A\B, and B\A.","solution":"The common region is A ∩ B = {3}. A-only contains c; B-only contains a and 4; b, 1, 2 lie outside both sets.","finalAnswer":"A\B = {c}; B\A = {a,4}."},
+          {"num":"Q5","question":"Let U = {a,b,c,d,e,f,g}, A = {a,b,c}, B = {c,d,e}. Verify De Morgan’s laws with Venn diagrams.","solution":"A′ = {d,e,f,g} and B′ = {a,b,f,g}. A ∪ B = {a,b,c,d,e}, while A ∩ B = {c}. Compare the two sides of each law.","finalAnswer":"(A ∪ B)′ = A′ ∩ B′ = {f,g}; (A ∩ B)′ = A′ ∪ B′ = {a,b,d,e,f,g}."}
+        ]
+      },
+      {
         "exercise": "5.4",
         "title": "Exercise 5.4 — Cartesian Products & Ordered Pairs",
         "problems": [
@@ -937,6 +1137,37 @@ var MATH_10_DATA = [
             ],
             "method": "Ordered Pair Equality"
           }
+        ]
+      },
+      {
+        "exercise": "5.5",
+        "title": "Exercise 5.5 — Functions",
+        "problems": [
+          {"num":"Q1","question":"A = {1,2,3,4}, B = {6,7}. For each relation from A to B, state whether it is a function; if so, identify its type: R₁ = {(1,6),(2,7),(3,6)}, R₂ = {(1,6),(2,6),(3,7),(4,7)}, R₃ = {(1,6),(2,6),(3,6),(4,6)}.","solution":"A relation is a function from A only if every element of A has exactly one image. R₁ omits 4. R₂ maps all of A and reaches both elements of B, but two inputs share images. R₃ maps all of A to 6 and misses 7.","finalAnswer":"R₁ is not a function; R₂ is an onto many-to-one function; R₃ is a many-to-one function into B, not onto."},
+          {"num":"Q2","question":"Which relations on {a,b,c,d} are functions? State their types: (i) {(a,b),(c,d),(b,d),(d,b)}; (ii) {(b,a),(c,b),(a,b),(d,d)}; (iii) {(d,c),(c,b),(a,b),(d,d)}; (iv) {(a,b),(b,c),(c,b),(d,a)}.","solution":"Check that every domain element occurs exactly once as a first coordinate. For each function, compare the range with the codomain and check whether distinct inputs have distinct outputs.","finalAnswer":"(i) Function, many-to-one and into; (ii) function, many-to-one and into; (iii) not a function because d has two images; (iv) function, many-to-one and onto."},
+          {"num":"Q3","question":"A = {0,1,2,3}, B = {x,y,z,p}. Do these relations define a one-one correspondence? (i) {(0,x),(2,z),(3,y),(1,p)}; (ii) {(0,x),(1,z),(2,y),(3,z)}. Give reasons.","solution":"A one-one correspondence must map every element of A to a distinct element of B and cover B.","finalAnswer":"(i) Yes, it is bijective. (ii) No: z is repeated and p is not an image."},
+          {"num":"Q4","question":"A = {a,b,c}, B = {2,3,4,5}. For each relation, state whether it is a one-one correspondence; if not, identify the relation type: (i) {(a,2),(b,3),(c,4)}; (ii) {(a,3),(b,4),(c,3)}.","solution":"A and B have different cardinalities, so a relation from A to B cannot be onto B and therefore cannot be a one-one correspondence. In (i) all three images are distinct. In (ii) a and c share an image.","finalAnswer":"Neither is a one-one correspondence. (i) One-one into; (ii) many-to-one into."},
+          {"num":"Q5","question":"For X = {1,2,3,4} and Y = {5,6,7,8}, give examples of: (i) a function X→Y; (ii) a one-one function X→Y; (iii) a one-one correspondence between X and Y; (iv) an onto function Y→X; (v) a bijective function Y→X; (vi) a function X→Y that is neither one-one nor onto.","solution":"Use explicit ordered pairs, ensuring each input in the domain appears once and that the images have the required repetition/coverage properties.","finalAnswer":"(i) {(1,5),(2,5),(3,5),(4,5)}; (ii) {(1,5),(2,6),(3,7),(4,8)}; (iii) same as (ii); (iv) {(5,1),(6,2),(7,3),(8,4)}; (v) same as (iv); (vi) same as (i)."},
+          {"num":"Q6","question":"For A = {1,2,3,4,5}, decide whether each relation is a function on A; if it is, give its range and state whether it is onto: (i) {(1,5),(2,3),(3,3),(4,2),(5,1)}; (ii) {(1,1),(2,4),(3,2),(4,1),(5,3)}; (iii) {(1,2),(2,1),(3,1),(4,4),(5,5)}.","solution":"Each relation assigns exactly one image to every element of A. List the distinct second coordinates to find its range, then compare with A.","finalAnswer":"All are functions. (i) Range {1,2,3,5}, not onto; (ii) range {1,2,3,4}, not onto; (iii) range {1,2,4,5}, not onto."}
+        ]
+      },
+      {
+        "exercise":"Review Exercise 5","title":"Review Exercise 5 — Sets and Functions","problems":[
+          {"num":"Q1(i)","question":"A={1,2,3}, B={4,5}, R={(1,4),(2,5),(3,4)}. Classify R.","finalAnswer":"Onto function A→B; it is not one-to-one."},
+          {"num":"Q1(ii)","question":"A has 2 elements and B has 3. How many binary relations A→B?","solution":"|A×B|=6 and every subset is a relation.","finalAnswer":"2⁶=64"},
+          {"num":"Q1(iii)","question":"Which pair is disjoint? (a) {0,1,2,3},{3,2,1,0}; (b) {0,3,6,9},{9,16,25,36}; (c) {0,2,4,6},{2,4,6,8}; (d) {0,4,8,12},{6,10,14,18}.","finalAnswer":"(d) {0,4,8,12} and {6,10,14,18}."},
+          {"num":"Q1(iv)","question":"U is the positive odd integers below 30; R={1,5,7}, S={1,3,7,11,13}. Find n((R∩S)').","finalAnswer":"13"},
+          {"num":"Q1(v)","question":"For f:A→B, what condition makes f onto?","finalAnswer":"Range f=B."},
+          {"num":"Q1(vi)","question":"Find Dom R for R={(0,0),(8,2),(10,3),(14,12)}.","finalAnswer":"{0,8,10,14}"},
+          {"num":"Q2","question":"U={1,…,100}, A={positive even numbers up to 100}, B={positive odd numbers up to 100}. Find A'∪B', A'∩B', A∩B', A'∩B.","finalAnswer":"U; ∅; A={2,4,…,100}; B={1,3,…,99}."},
+          {"num":"Q3","question":"For A={1,2,3,5,7}, B={2,4,6}, C={2,5,9}, verify the associative laws and distributive laws listed in the book.","solution":"A∪B∪C={1,2,3,4,5,6,7,9}; (A∩B)∩C=A∩(B∩C)={2}; A∪(B∩C)=(A∪B)∩(A∪C)={1,2,3,5,7}.","finalAnswer":"The standard associative and distributive identities hold. The printed fourth item says “union over union”; this wording is likely a textbook typo for intersection over union."},
+          {"num":"Q4","question":"Verify De Morgan’s laws for U={x∈N:1≤x≤40}, A={1,6,11,16,21,26,31}, B={2,5,8,11,14,17,20,23,26,29,32}.","finalAnswer":"(A∪B)'=A'∩B' and (A∩B)'=A'∪B'; both hold relative to U."},
+          {"num":"Q5","question":"For U={1,2,3,5,6,7}, A={2,5,6}, B={1,2,3}, verify De Morgan’s laws with Venn diagrams.","finalAnswer":"(A∪B)'={7}=A'∩B'; (A∩B)'={1,3,5,6,7}=A'∪B'."},
+          {"num":"Q6","question":"For U={1,…,10}, A={1,2,3,4}, B={3,4,5,6}, C={3,4,7,8}, verify both distributive laws with Venn diagrams.","finalAnswer":"A∪(B∩C)=(A∪B)∩(A∪C)={1,2,3,4}; A∩(B∪C)=(A∩B)∪(A∩C)={3,4}."},
+          {"num":"Q7","question":"For A={−2,−1,0,1,2}, B={a,b,c,d,e}, classify the four relations printed in the source.","finalAnswer":"(i) function, neither one-to-one nor onto; (ii) bijective; (iii) bijective; (iv) not a function (−2 repeats and 2 is omitted)."},
+          {"num":"Q8","question":"For A={1,2,3,4,5}, classify the four listed relations as functions, give ranges and identify onto maps.","finalAnswer":"(i) function, range {1,2,3,5}, not onto; (ii) function, range {1,2,3,4}, not onto; (iii) function, range {1,2,4,5}, not onto; (iv) not a function because input 1 has two images."},
+          {"num":"Q9","question":"Let X={−6,−5,−4,−3}, Y={1,2,3,4}. Give examples of a one-to-one function; an onto function; a bijection; and a function that is neither one-to-one nor onto.","finalAnswer":"Examples: {(-6,1),(-5,2),(-4,3),(-3,4)}; {(-6,2),(-5,1),(-4,4),(-3,3)}; {(-6,4),(-5,3),(-4,2),(-3,1)}; {(-6,1),(-5,1),(-4,2),(-3,2)}."},
+          {"num":"Project","question":"Give a function that remains a function when its x- and y-values are switched.","finalAnswer":"A bijection, e.g. {(1,1),(2,2),(3,3)}."}
         ]
       }
     ],
@@ -1093,6 +1324,18 @@ var MATH_10_DATA = [
         ]
       },
       {
+        "exercise": "6.2",
+        "title": "Exercise 6.2 — Cumulative Frequency and Ogives",
+        "problems": [
+          {"num":"Q1","question":"The wages (Rs) of 20 workers are 60, 75, 80, 85, 90, 84, 70, 73, 76, 84, 95, 100, 150, 66, 58, 90, 98, 120, 77, 90. Using class interval 10, prepare (i) a cumulative frequency distribution; (ii) a cumulative frequency polygon.","solution":"Use classes 50–59 through 150–159. Frequencies are 1, 2, 5, 4, 5, 1, 0, 1, 0, 0, 1; cumulative frequencies are 1, 3, 8, 12, 17, 18, 18, 19, 19, 19, 20. Plot the less-than ogive at the upper class boundaries, beginning with (49.5,0).","finalAnswer":"Classes/frequencies: 50–59:1, 60–69:2, 70–79:5, 80–89:4, 90–99:5, 100–109:1, 110–119:0, 120–129:1, 130–139:0, 140–149:0, 150–159:1. Cumulative frequencies: 1,3,8,12,17,18,18,19,19,19,20."},
+          {"num":"Q2","question":"Make a cumulative frequency table: Age (years) 20–24, 25–29, 30–39, 40–44, 45–49, 50–54, 55–59; number of persons 1, 2, 26, 22, 20, 15, 14.","solution":"Add the frequencies successively across the age classes.","finalAnswer":"Cumulative frequencies: 1, 3, 29, 51, 71, 86, 100."},
+          {"num":"Q3","question":"Rainfall in a city during the first week of August was: Sunday 70 ml, Monday 40 ml, Tuesday 30 ml, Wednesday 35 ml, Thursday 50 ml, Friday 55 ml, Saturday 80 ml. Construct a cumulative frequency graph.","solution":"Treat each day as one observation and sort rainfall in ascending order: 30, 35, 40, 50, 55, 70, 80 ml. The cumulative counts at these observations are 1, 2, 3, 4, 5, 6, 7. Plot the corresponding less-than cumulative frequency points.","finalAnswer":"Ogive points: (30,1), (35,2), (40,3), (50,4), (55,5), (70,6), (80,7), with a starting point below 30 at cumulative frequency 0."},
+          {"num":"Q4","question":"Draw the less-than and more-than cumulative frequency polygons for marks 40–49, 50–59, 60–69, 70–79, 80–89, 90–99 with numbers of students 1, 2, 3, 4, 5, 6 respectively.","solution":"Use continuous class boundaries 39.5, 49.5, 59.5, 69.5, 79.5, 89.5, 99.5. Accumulate frequencies from the first class for the less-than polygon and from the total downward for the more-than polygon.","finalAnswer":"Less-than points: (39.5,0),(49.5,1),(59.5,3),(69.5,6),(79.5,10),(89.5,15),(99.5,21). More-than points: (39.5,21),(49.5,20),(59.5,18),(69.5,15),(79.5,11),(89.5,6),(99.5,0)."},
+          {"num":"Q5","question":"Using the data of Q4, find (i) the number of students with more than 50 marks; (ii) the number with less than 70 marks; (iii) the number with marks between 50 and 70; (iv) the class interval; (v) the lower class boundary of the fifth class.","solution":"There are 21 students in total. From the grouped frequency table, the classes 50–59, 60–69, and 80–89, 90–99 have frequencies 2, 3, 5, 6 respectively. The class width is 10, and the continuous boundary for 80–89 begins at 79.5.","finalAnswer":"(i) 20; (ii) 6; (iii) 5; (iv) 10 marks; (v) 79.5 marks."},
+          {"num":"Q6","question":"Construct an ogive for the salary and worker data: Rs 4000–5000: 3; 5001–6000: 5; 6001–7000: 12; 7001–8000: 9; 8001–9000: 5; 9001–10000: 4; 10001–11000: 2.","solution":"Add the frequencies cumulatively across the salary classes and plot them against the upper class boundaries for a less-than ogive.","finalAnswer":"Cumulative workers: 3, 8, 20, 29, 34, 38, 40. Plot against upper boundaries 5000.5, 6000.5, 7000.5, 8000.5, 9000.5, 10000.5, 11000.5 (starting below the first class at cumulative 0)."}
+        ]
+      },
+      {
         "exercise": "6.3",
         "title": "Exercise 6.3 — Measures of Central Tendency",
         "problems": [
@@ -1128,6 +1371,34 @@ var MATH_10_DATA = [
             ],
             "method": "Measures of Dispersion"
           }
+        ]
+      },
+      {
+        "exercise": "Review Exercise 6",
+        "title": "Review Exercise 6 — Basic Statistics",
+        "problems": [
+          {"num":"Q1(i)","question":"The difference between upper limits of two consecutive classes in a frequency table is called: class limit, class interval, class mark, or range?","finalAnswer":"Class interval"},
+          {"num":"Q1(ii)","question":"A cumulative frequency histogram is also called a histogram, ogive, pie chart, or frequency polygon?","finalAnswer":"Ogive"},
+          {"num":"Q1(iii)","question":"The number of times a value appears in a data set is called frequency, average, mode, or median?","finalAnswer":"Frequency"},
+          {"num":"Q1(iv)","question":"Find the mode: 3, 2, 1, 1, 1, 5, 3, 1, 2, 1, 2.","finalAnswer":"1"},
+          {"num":"Q1(v)","question":"Which data set has mean, median, mode, and range all equal: (i) 1,2,3,3,2,1,2; (ii) 1,3,3,3,2,3,1; (iii) 1,2,3,1,2,3,1; (iv) 2,2,1,2,3,2,3?","finalAnswer":"(i) 1, 2, 3, 3, 2, 1, 2"},
+          {"num":"Q1(vi)","question":"The nth root of the product of n values is called the arithmetic, harmonic, geometric, or standard-deviation measure?","finalAnswer":"Geometric mean"},
+          {"num":"Q1(vii)","question":"Find the median of 63, 65, 66, 67, 69.","finalAnswer":"66"},
+          {"num":"Q1(viii)","question":"Find the median of 41, 43, 47, 51, 57, 52, 59.","finalAnswer":"51"},
+          {"num":"Q1(ix)","question":"Find the mode of 5, 7, 7, 5, 3, 7, 2, 8, 2.","finalAnswer":"7"},
+          {"num":"Q1(x)","question":"Find the standard deviation of 5, 5, 5, 5, 5, 5, 5.","finalAnswer":"0"},
+          {"num":"Q1(xi)","question":"The average pocket money of 30 students is Rs. 20. Find the total amount.","finalAnswer":"Rs. 600"},
+          {"num":"Q1(xii)","question":"The sum of 30 observations is 1500. Find their average.","finalAnswer":"50"},
+          {"num":"Q1(xiii)","question":"The difference between the largest and smallest data values is called mean, mode, range, or standard deviation?","finalAnswer":"Range"},
+          {"num":"Q1(xiv)","question":"What does the formula Σx/n determine?","finalAnswer":"Arithmetic mean"},
+          {"num":"Q1(xv)","question":"Find mean(Set B) − median(Set A), where A={2,−1,7,−4,11,3} and B={12,5,−3,4,7,−7}.","solution":"The mean of B is 18/6=3. Sorting A gives −4,−1,2,3,7,11, so its median is (2+3)/2=2.5.","finalAnswer":"0.5"},
+          {"num":"Q1(xvi)","question":"What is Σf(x−x̄)²/Σf called: range, median, standard deviation, or variance?","finalAnswer":"Variance"},
+          {"num":"Q1(xvii)","question":"The most frequent value in a data set is called its mean, median, mode, or geometric mean?","finalAnswer":"Mode"},
+          {"num":"Q2","question":"The ages (in years) of 27 students are 17,17,16,16,17,16,16,17,18,18,15,17,19,18,18,17,16,15,16,17,15,19,19,15,15,16,18. Prepare a frequency distribution using a suitable class interval.","solution":"Tally the occurrences of each age.","finalAnswer":"Age 15: 5; 16: 7; 17: 7; 18: 5; 19: 3 (total 27)."},
+          {"num":"Q3","question":"Prepare a histogram for monthly car sales: brands A, B, C, D, E sold 100, 120, 110, 72, and 169 cars, respectively.","finalAnswer":"Draw adjacent bars for A–E with heights 100, 120, 110, 72, 169."},
+          {"num":"Q4","question":"Prepare a frequency polygon for test-score intervals and frequencies: 0–10:2; 11–21:7; 22–32:25; 33–43:11; 44–50:5.","solution":"Use class midpoints 5, 16, 27, 38, and 47, then join the plotted points.","finalAnswer":"Plot (5,2), (16,7), (27,25), (38,11), (47,5), joining the endpoints to the horizontal axis to close the polygon."},
+          {"num":"Q5","question":"Represent the weights of 250 boys by a cumulative-frequency polygon: 44.0–47.9:13; 48.0–51.9:17; 52.0–55.9:50; 56.0–59.9:81; 60.0–63.9:57; 64.0–67.9:23; 68.0–71.9:9.","solution":"Form cumulative totals 13, 30, 80, 161, 218, 241, 250 at the upper class boundaries.","finalAnswer":"Plot the less-than cumulative-frequency points (43.95,0), (47.95,13), (51.95,30), (55.95,80), (59.95,161), (63.95,218), (67.95,241), (71.95,250), then connect them."},
+          {"num":"Project","question":"For the 60-item test scores 25,30,34,37,41,42,46,49,53; 26,31,34,37,41,42,46,50,53; 28,31,35,37,41,43,47,51,54; 29,33,36,38,41,44,48,52,54; 30,33,36,39,41,44,48,52,55; 30,33,37,40,42,45,48,52, complete parts (a)–(j): group into class intervals of size 2 beginning at 24.5–25.5; make the frequency table; draw the histogram, frequency polygon and ogive; find cumulative frequencies, range, mean, standard deviation and variance.","solution":"The source specifies the grouping and asks for the corresponding frequency table and graphs, then the data’s range and descriptive statistics. The 60-item phrase describes the test, and the scan lists 53 students' scores. The printed first interval 24.5–25.5 conflicts with the requested class width of 2; for the grouped answer use width-2 continuous classes beginning 24.5–26.5 and record this correction.","finalAnswer":"For the 53 listed scores: minimum 25, maximum 55, range 30, mean = 2164/53 ≈ 40.83, population variance ≈ 66.29, and population standard deviation ≈ 8.14. Using corrected width-2 classes 24.5–26.5, 26.5–28.5, …, 54.5–56.5 gives frequencies 2,1,4,2,5,3,5,2,8,3,3,4,2,4,4,1. Plot these as histogram bars; frequency-polygon midpoints are 25.5,27.5,…,55.5. Less-than ogive points are (24.5,0),(26.5,2),(28.5,3),(30.5,7),(32.5,9),(34.5,14),(36.5,17),(38.5,22),(40.5,24),(42.5,32),(44.5,35),(46.5,38),(48.5,42),(50.5,44),(52.5,48),(54.5,52),(56.5,53)."}
         ]
       }
     ],
@@ -1321,6 +1592,35 @@ var MATH_10_DATA = [
         ]
       },
       {
+        "exercise": "7.3",
+        "title": "Exercise 7.3 — Coterminal Angles and Quadrants",
+        "problems": [
+          {"num":"Q1(i)","question":"Find two coterminal angles of 55°.","solution":"Coterminal angles differ by multiples of 360°.","finalAnswer":"415° and −305°"},
+          {"num":"Q1(ii)","question":"Find two coterminal angles of −45°.","solution":"Add 360° and subtract 360°.","finalAnswer":"315° and −405°"},
+          {"num":"Q1(iii)","question":"Find two coterminal angles of 5π/4.","solution":"Add and subtract 2π.","finalAnswer":"13π/4 and −3π/4"},
+          {"num":"Q1(iv)","question":"Find two coterminal angles of π/6.","solution":"Add and subtract 2π.","finalAnswer":"13π/6 and −11π/6"},
+          {"num":"Q2(i)","question":"State the quadrant of −3π/8.","solution":"−3π/8 is coterminal with 13π/8, which lies between 3π/2 and 2π.","finalAnswer":"Fourth quadrant"},
+          {"num":"Q2(ii)","question":"State the quadrant of 75°.","solution":"75° lies between 0° and 90°.","finalAnswer":"First quadrant"},
+          {"num":"Q2(iii)","question":"State the quadrant of −818°.","solution":"Add 1080° to obtain 262°, which lies between 180° and 270°.","finalAnswer":"Third quadrant"},
+          {"num":"Q2(iv)","question":"State the quadrant of −5π/4.","solution":"Add 2π to obtain 3π/4, which lies between π/2 and π.","finalAnswer":"Second quadrant"},
+          {"num":"Q2(v)","question":"State the quadrant of 103°.","solution":"103° lies between 90° and 180°.","finalAnswer":"Second quadrant"}
+        ]
+      },
+      {
+        "exercise": "7.4",
+        "title": "Exercise 7.4 — Trigonometric Ratios and Quadrants",
+        "problems": [
+          {"num":"Q1","question":"Find the sign of each ratio and state its quadrant: (i) sin 98°; (ii) sin 160°; (iii) tan 200°; (iv) sec 120°; (v) cosec 198°; (vi) sin 460°.","solution":"Reduce angles to a coterminal angle between 0° and 360°, then apply the signs of sine, cosine, and tangent in that quadrant.","finalAnswer":"(i) Positive, QII; (ii) positive, QII; (iii) positive, QIII; (iv) negative, QII; (v) negative, QIII; (vi) positive, since 460° is coterminal with 100° in QII."},
+          {"num":"Q2","question":"Find all six trigonometric ratios for: (i) −180°; (ii) −270°; (iii) 720°; (iv) 1470°.","solution":"Reduce each angle modulo 360°: (i) 180°; (ii) 90°; (iii) 0°; (iv) 30°. Use the unit-circle coordinates and reciprocal definitions.","finalAnswer":"(i) sin 0, cos −1, tan 0, cot undefined, sec −1, cosec undefined. (ii) sin 1, cos 0, tan undefined, cot 0, sec undefined, cosec 1. (iii) sin 0, cos 1, tan 0, cot undefined, sec 1, cosec undefined. (iv) sin 1/2, cos √3/2, tan 1/√3, cot √3, sec 2/√3, cosec 2."},
+          {"num":"Q3","question":"If sec θ = 2 and θ lies in the fourth quadrant, find the other trigonometric ratios.","solution":"cos θ = 1/2. Since θ is in QIV, sin θ is negative. From sin²θ + cos²θ = 1, sin θ = −√3/2.","finalAnswer":"sin θ = −√3/2; cos θ = 1/2; tan θ = −√3; cot θ = −1/√3; sec θ = 2; cosec θ = −2/√3."},
+          {"num":"Q4","question":"If sin θ = 4/5 and π/2 < θ < π, find the other trigonometric ratios.","solution":"θ is in quadrant II, so cosine is negative. From sin²θ + cos²θ = 1, cos θ = −3/5.","finalAnswer":"cos θ = −3/5; tan θ = −4/3; cot θ = −3/4; sec θ = −5/3; cosec θ = 5/4."},
+          {"num":"Q5","question":"Evaluate: (i) 2 sin45° cos45°; (ii) (tan60° − tan30°)/(1 + tan60° tan30°); (iii) cos45°/(sin45° + tan45°); (iv) tan30° tan60° + tan45°; (v) cos(π/3)cos(π/6) − sin(π/3)sin(π/6).","solution":"Substitute the standard values for 30°, 45°, and 60°. For (v), use cos A cos B − sin A sin B = cos(A + B).","finalAnswer":"(i) 1; (ii) 1/√3; (iii) √2 − 1; (iv) 2; (v) 0."},
+          {"num":"Q6","question":"State the quadrant(s) in which θ lies: (i) sin θ > 0, tan θ > 0; (ii) sin θ < 0, cot θ > 0; (iii) sin θ > 0, cos θ < 0; (iv) cos θ > 0, cosec θ < 0; (v) tan θ < 0, sec θ > 0; (vi) cos θ < 0, tan θ < 0.","solution":"Use the signs of sine, cosine, and tangent in each quadrant; reciprocal ratios have the same sign as their corresponding ratios.","finalAnswer":"(i) QI; (ii) QIII; (iii) QII; (iv) QIV; (v) QIV; (vi) QII."},
+          {"num":"Q7","question":"For each right triangle, find the missing measure to two decimal places: (i) hypotenuse 32, angle 53°, find the side opposite the angle; (ii) hypotenuse 73, angle 21°, find the opposite side x; (iii) angle 33°, adjacent side 12, find the opposite side x.","solution":"Use sine for the opposite side when hypotenuse is known, and tangent when the adjacent side is known: (i) x = 32sin53°; (ii) x = 73sin21°; (iii) x = 12tan33°.","finalAnswer":"(i) x ≈ 25.56; (ii) x ≈ 26.17; (iii) x ≈ 7.79."},
+          {"num":"Q8","question":"A lake is shown as an irregular blue shape. A surveyor measures a 24° angle and a 750 yd baseline along the shore as in the diagram. Find the distance a across the lake.","solution":"The diagram forms a right triangle with adjacent side 750 yd and opposite side a. tan24° = a/750.","finalAnswer":"a = 750tan24° ≈ 333.96 yd."}
+        ]
+      },
+      {
         "exercise": "7.5",
         "title": "Exercise 7.5 — Proving Trigonometric Identities",
         "problems": [
@@ -1349,6 +1649,19 @@ var MATH_10_DATA = [
             ],
             "method": "Quotient Identities"
           }
+        ]
+      },
+      {
+        "exercise": "7.6",
+        "title": "Exercise 7.6 — Applications of Trigonometry",
+        "problems": [
+          {"num":"Q1","question":"A building 21 metres tall casts a shadow 25 metres long. Find the angle of elevation of the sun to the nearest degree.","solution":"tan θ = opposite/adjacent = 21/25, so θ = tan⁻¹(21/25).","finalAnswer":"θ ≈ 40°."},
+          {"num":"Q2","question":"A lighthouse is 150 m above sea level. The angle of depression of a boat from its top is 60°. Find the distance between the boat and the lighthouse.","solution":"Let d be the horizontal sea-level distance from the lighthouse base to the boat. tan 60° = 150/d, so d = 150/√3. The line-of-sight distance is 150/sin 60°.","finalAnswer":"Horizontal distance = 50√3 m ≈ 86.60 m; line of sight = 100√3 m ≈ 173.21 m."},
+          {"num":"Q3","question":"A tree is 50 m high. Find the angle of elevation of its top from a point on the ground 100 m from its foot.","solution":"tan θ = 50/100 = 1/2, so θ = tan⁻¹(1/2).","finalAnswer":"θ ≈ 26.57° (about 27°)."},
+          {"num":"Q4","question":"From the top of a hill 240 m high, the angles of depression to the top and bottom of a minaret are 30° and 60° respectively. Find the height of the minaret.","solution":"If the horizontal distance is d, then tan 60° = 240/d, so d = 80√3. The vertical drop to the minaret top is d tan 30° = 80 m. Therefore the minaret height is 240 − 80.","finalAnswer":"160 m."},
+          {"num":"Q5","question":"A police helicopter is flying at 800 feet. A stolen car is sighted at an angle of depression of 72°. Find, to the nearest foot, the car’s horizontal distance from the point directly below the helicopter.","solution":"For horizontal distance d, tan 72° = 800/d, so d = 800/tan 72°.","finalAnswer":"d ≈ 260 ft."},
+          {"num":"Q6","question":"A lighthouse is 300 m above sea level. The angles of depression of two boats are 30° and 45°. The line joining the boats passes through the foot of the lighthouse. Find the distance between the boats when they are on opposite sides of the lighthouse.","solution":"The horizontal distances from the lighthouse foot are d₁ = 300/tan 30° = 300√3 and d₂ = 300/tan 45° = 300. On opposite sides, add these distances.","finalAnswer":"300(√3 + 1) m ≈ 819.62 m."},
+          {"num":"Q7","question":"The angle of elevation of the top of a cliff is 30°. After walking 210 m toward the cliff, the angle of elevation becomes 45°. Find the height of the cliff.","solution":"Let the nearer horizontal distance be x m and cliff height h. tan 45° = h/x gives x = h. The farther distance is x + 210, and tan 30° = h/(x + 210). Thus x + 210 = √3h; using x = h gives h = 210/(√3 − 1).","finalAnswer":"h = 105(√3 + 1) m ≈ 286.87 m."}
         ]
       }
     ],
@@ -1657,6 +1970,15 @@ var MATH_10_DATA = [
             "method": "Parallel Chords Distance"
           }
         ]
+      },
+      {
+        "exercise": "9.2",
+        "title": "Exercise 9.2 — Chords of a Circle",
+        "problems": [
+          {"num":"Q1","question":"In a circle of radius 5 cm, two parallel chords have lengths 8 cm and 6 cm. Calculate the distance between the chords.","solution":"The perpendicular distances from the centre to the chords are √(5² − 4²) = 3 cm and √(5² − 3²) = 4 cm. Depending on whether the chords lie on the same or opposite sides of the centre, their separation is the difference or the sum of these distances.","finalAnswer":"1 cm if the chords are on the same side of the centre; 7 cm if on opposite sides."},
+          {"num":"Q2","question":"Two parallel chords PQ and MN are 3 cm apart on the same side of a circle. PQ = 7 cm and MN = 14 cm. Calculate the circle’s radius.","solution":"Let the distances from the centre to the chords of lengths 7 and 14 be d₇ and d₁₄. Since the longer chord is nearer the centre, d₇ − d₁₄ = 3. By the right-triangle chord formula, d₇² = r² − (7/2)² and d₁₄² = r² − 7². Subtracting gives (d₇ − d₁₄)(d₇ + d₁₄) = 36.75, so d₇ + d₁₄ = 12.25. Hence d₇ = 7.625 and r² = 7.625² + 3.5².","finalAnswer":"r ≈ 8.39 cm."},
+          {"num":"Q3","question":"Circle C has radius 10. Chord QT is 5 units from C and chord PR is 8 units from C. (a) Compare the chord lengths PR and QT. (b) Compare their distances from C.","solution":"A chord at distance d from the centre has length 2√(r² − d²). QT = 2√(100 − 25) = 10√3 ≈ 17.32; PR = 2√(100 − 64) = 12. The distances from C are given as 5 and 8.","finalAnswer":"(a) QT > PR. (b) PR is farther from C than QT."}
+        ]
       }
     ],
     "slos": [
@@ -1784,6 +2106,20 @@ var MATH_10_DATA = [
             ],
             "method": "Concentric Circles Tangent"
           }
+        ]
+      },
+      {
+        "exercise": "10.2",
+        "title": "Exercise 10.2 — Tangents and Chords",
+        "problems": [
+          {"num":"Q1","question":"Two circles with radii 8 cm and 3 cm touch externally. Find the distance between their centres.","solution":"For externally tangent circles, the centre distance is the sum of the radii.","finalAnswer":"11 cm."},
+          {"num":"Q2","question":"The centres of two internally tangent circles are 5 cm apart. The larger circle has radius 17 cm. Find the smaller radius.","solution":"For internal tangency, the centre distance equals the difference of the radii: 17 − r = 5.","finalAnswer":"12 cm."},
+          {"num":"Q3","question":"A 10 cm chord is 12 cm from the centre of a circle. Find the length of a chord 5 cm from the centre.","solution":"The first chord’s half-length is 5 cm, so r² = 5² + 12² = 169 and r = 13 cm. The second chord has half-length √(13² − 5²) = 12 cm.","finalAnswer":"24 cm."},
+          {"num":"Q4","question":"A chord is 18 cm long and the circle’s radius is 15 cm. Find the distance from the centre to the chord’s midpoint.","solution":"The perpendicular from the centre bisects the chord. Its half-length is 9 cm, so the distance is √(15² − 9²).","finalAnswer":"12 cm."},
+          {"num":"Q5","question":"Find the length of a chord 6 cm from the centre of a circle with radius 10 cm.","solution":"Half the chord is √(10² − 6²) = 8 cm.","finalAnswer":"16 cm."},
+          {"num":"Q6","question":"A chord is 3 cm from the centre of a circle and is 8 cm long. Find the diameter.","solution":"The perpendicular bisects the chord, giving half-chord 4 cm. The radius is √(3² + 4²) = 5 cm.","finalAnswer":"10 cm."},
+          {"num":"Q7","question":"A circle has radius 8 cm and a chord 12 cm long. Find the distance of the chord from the centre.","solution":"The half-chord is 6 cm. The perpendicular distance is √(8² − 6²) = √28.","finalAnswer":"2√7 cm."},
+          {"num":"Q8","question":"A chord of a circle with radius 7.5 cm is 9 cm long. Find its distance from the centre.","solution":"Half the chord is 4.5 cm. The distance is √(7.5² − 4.5²) = √36.","finalAnswer":"6 cm."}
         ]
       }
     ],
@@ -2116,6 +2452,22 @@ var MATH_10_DATA = [
             ],
             "method": "Circumcircle Construction"
           }
+        ]
+      },
+      {
+        "exercise": "13.2",
+        "title": "Exercise 13.2 — Squares and Regular Hexagons with Circles",
+        "problems": [
+          {"num":"Q1","question":"Circumscribe a square about a circle of radius 5 cm.","solution":"Draw two perpendicular diameters through the centre. At their four endpoints, draw tangents perpendicular to the corresponding radii. Their intersections form the required square.","finalAnswer":"The square has side 10 cm."},
+          {"num":"Q2","question":"Inscribe a square in a circle of radius 6 cm.","solution":"Draw two perpendicular diameters. Join their four endpoints consecutively to form the inscribed square.","finalAnswer":"The diagonal is 12 cm and each side is 6√2 cm."},
+          {"num":"Q3","question":"Draw a square of side 6 cm. Circumscribe a circle about it and inscribe a circle in the same square. Measure both radii.","solution":"Draw the square. The circumcentre is the intersection of its diagonals; the circumradius is half a diagonal. The incircle centre is the same point; its radius is the perpendicular distance to a side.","finalAnswer":"Circumradius = 3√2 cm ≈ 4.24 cm; inradius = 3 cm."},
+          {"num":"Q4","question":"Draw a circle of suitable radius so that the square circumscribed about it has sides of length 8 units.","solution":"Construct a square of side 8 units and draw its diagonals to locate the centre. The required circle is centred there and tangent to all four sides.","finalAnswer":"Circle radius = 4 units."},
+          {"num":"Q5","question":"Inscribe a square of side 10 cm in a circle. Find the radius.","solution":"Draw the square and its diagonals; the centre is their intersection. The radius is half the diagonal, which is 10√2/2.","finalAnswer":"Radius = 5√2 cm ≈ 7.07 cm."},
+          {"num":"Q6","question":"Inscribe a regular hexagon in a circle of radius 4 cm.","solution":"Set the compass to the circle’s radius. Starting at any point on the circumference, step this chord length around the circumference six times and join consecutive points.","finalAnswer":"Each side of the regular hexagon is 4 cm."},
+          {"num":"Q7","question":"Construct a circle of radius 4 cm and draw a regular hexagon about the circle.","solution":"Construct six equally spaced sides tangent to the circle. The perpendicular from the centre to each side is the apothem, 4 cm; each central half-angle is 30°. The side length is 2(4)tan30°.","finalAnswer":"The circumscribed regular hexagon has side 8/√3 cm ≈ 4.62 cm."},
+          {"num":"Q8","question":"Draw a circle of radius 8 cm. Circumscribe a regular hexagon about it and inscribe a regular hexagon in it. Find the areas and compare them.","solution":"For the inscribed hexagon, each side is 8 cm, so area = 6(√3/4)(8²). For the circumscribed hexagon, apothem = 8 cm and each side is 16/√3 cm, so area = (perimeter × apothem)/2.","finalAnswer":"Inscribed area = 96√3 cm² ≈ 166.28 cm²; circumscribed area = 128√3 cm² ≈ 221.70 cm². The circumscribed area is 4/3 of the inscribed area."},
+          {"num":"Q9","question":"Draw regular hexagons with perimeters 6 cm and 30 cm. Find their centres and construct perpendiculars from the centres to a side of each. What is the relation between the perpendiculars?","solution":"The side lengths are 1 cm and 5 cm. For a regular hexagon the perpendicular distance from its centre to a side is (√3/2) times the side length.","finalAnswer":"The perpendiculars are √3/2 cm and 5√3/2 cm; the second is five times the first."},
+          {"num":"Q10","question":"Can you construct a square whose area equals the area of a given circle? Discuss.","solution":"For circle radius r, equal-area square side would have to be √(πr²) = r√π. Exact straightedge-and-compass construction of r√π would construct √π, which is impossible because π is transcendental and √π is not a constructible length.","finalAnswer":"No exact classical straightedge-and-compass construction exists."}
         ]
       },
       {

@@ -655,7 +655,7 @@ var MATH_DATA = [
         },
         {
           "qNo": "Question 8",
-          "question": "If A = [[-1], [1]], B = [1, -2], and C = [[3, 1], [-1, 2]], find (AB)C and A(BC). Determine whether they are equal and name the law this verifies.",
+          "question": "If A = [[-1], [1]], B = [1, -2], C = [[3, 1], [-1, 2]], then find (AB)C and A(BC).\ni) Find (AB)C and A(BC).\nii) Determine whether (AB)C = A(BC).\niii) Interpret which law of multiplication this result shows.",
           "solution": "AB = [[-1, 2], [1, -2]].\n(AB)C = [[-1, 2], [1, -2]][[3, 1], [-1, 2]] = [[-5, 3], [5, -3]].\nBC = [1, -2][[3, 1], [-1, 2]] = [5, -3].\nA(BC) = [[-1], [1]][5, -3] = [[-5, 3], [5, -3]].\nThus (AB)C = A(BC); this verifies the associative law of matrix multiplication.",
           "answer": "(AB)C = A(BC) = [[-5, 3], [5, -3]]; associative law."
         },
@@ -667,19 +667,19 @@ var MATH_DATA = [
         },
         {
           "qNo": "Question 10",
-          "question": "Let I = [[1, 0], [0, 1]], A = [[5, -3], [4, 6]], and B = [[-7, 3], [2, 8]]. Find (i) AI and (ii) BI.",
+          "question": "Let I = [[1, 0], [0, 1]], A = [[5, -3], [4, 6]], B = [[-7, 3], [2, 8]].\nFind (i) AI  (ii) BI.",
           "solution": "Multiplication by the identity matrix leaves a matrix unchanged:\n(i) AI = A = [[5, -3], [4, 6]].\n(ii) BI = B = [[-7, 3], [2, 8]].",
           "answer": "(i) AI = [[5, -3], [4, 6]]; (ii) BI = [[-7, 3], [2, 8]]."
         },
         {
           "qNo": "Question 11",
-          "question": "Prove that (A+B)^t = A^t+B^t and (A-B)^t = A^t-B^t for:\n(i) A = [3, 2, 1], B = [-3, 4, 2]\n(ii) C = [[7, -3], [2, -1]], D = [[1, 1], [2, 2]]",
-          "solution": "(i) A+B = [0, 6, 3], so (A+B)^t = [[0], [6], [3]] = A^t+B^t. A-B = [6, -2, -1], so (A-B)^t = [[6], [-2], [-1]] = A^t-B^t.\n(ii) Transposition distributes over addition and subtraction entry by entry, so (C+D)^t = C^t+D^t and (C-D)^t = C^t-D^t for the given C and D.",
+          "question": "Prove that\n(i) A = [3, 2, 1], B = [-3, 4, 2],\n(A+B)^t = A^t+B^t and (A-B)^t = A^t-B^t\n(ii) C = [[7, -3], [2, -1]], D = [[1, 1], [2, 2]],\n(C+D)^t = C^t+D^t and (C-D)^t = C^t-D^t.",
+          "solution": "(i) A+B = [0, 6, 3], so (A+B)^t = [[0], [6], [3]] = A^t+B^t. A-B = [6, -2, -1], so (A-B)^t = [[6], [-2], [-1]] = A^t-B^t.\n(ii) C+D = [[8, -2], [4, 1]], so (C+D)^t = [[8, 4], [-2, 1]]. Also C^t = [[7, 2], [-3, -1]] and D^t = [[1, 2], [1, 2]], hence C^t+D^t = [[8, 4], [-2, 1]].\nC-D = [[6, -4], [0, -3]], so (C-D)^t = [[6, 0], [-4, -3]]. Also C^t-D^t = [[6, 0], [-4, -3]].",
           "answer": "Both transpose identities (A + B)^t = A^t + B^t and (A - B)^t = A^t - B^t are proved."
         },
         {
           "qNo": "Question 12",
-          "question": "Verify the following transpose properties:\n(i) If A = [[2, 5], [-3, 4]] and B = [[-1, 1], [2, 3]], show that (AB)^t = B^t A^t.\n(ii) If C = [[a, b], [c, d]], show that (C^t)^t = C.\n(iii) If A = [[1, 0, -1], [2, 0, 6]] and B = [[1, 7], [-8, 4], [0, 1]], compare (AB)^t and A^t B^t as printed in the textbook.",
+          "question": "Prove that\n(i) If A = [[2, 5], [-3, 4]], B = [[-1, 1], [2, 3]], show that (AB)^t = B^t A^t.\n(ii) If C = [[a, b], [c, d]], show that (C^t)^t = C.\n(iii) If A = [[1, 0, -1], [2, 0, 6]], B = [[1, 7], [-8, 4], [0, 1]], show that (AB)^t = A^t B^t.",
           "solution": "(i) AB = [[8, 17], [11, 9]], so (AB)^t = [[8, 11], [17, 9]]. Also B^t = [[-1, 2], [1, 3]] and A^t = [[2, -3], [5, 4]], hence B^t A^t = [[8, 11], [17, 9]].\n(ii) C^t = [[a, c], [b, d]], and (C^t)^t = [[a, b], [c, d]] = C.\n(iii) AB = [[1, 6], [2, 20]], so (AB)^t = [[1, 2], [6, 20]] (2x2). But A^t is 3x2 and B^t is 2x3, so A^t B^t is 3x3 and cannot equal (AB)^t. The general identity is (AB)^t = B^t A^t; the printed statement with A^t B^t appears to be a textbook error.",
           "answer": "(i) (AB)^t = B^t A^t; (ii) (C^t)^t = C; (iii) the printed equality is false: the two sides have different orders. The correct identity is (AB)^t = B^t A^t."
         }
@@ -691,39 +691,39 @@ var MATH_DATA = [
       "problems": [
         {
           "qNo": "Question 1",
-          "question": "Find the determinant of following matrices and evaluate them:\n(i) A = [[5, 6], [-4, 1]]\n(ii) B = [[4, 1], [3, 2]]\n(iii) C = [[11, 7], [5, -6]]\n(iv) D = [[5, 4], [-2, -3]]\n(v) E = [[2p, -3q], [r, -s]]\n(vi) F = [[0, 0], [1, 1]]\n(vii) G = [[6, 5], [-1, -4]]\n(viii) H = [[a, b], [0, c]]",
-          "solution": "Formula: |M| = ad - bc:\n(i) |A| = 5(1) - 6(-4) = 5 + 24 = 29.\n(ii) |B| = 4(2) - 1(3) = 8 - 3 = 5.\n(iii) |C| = 11(-6) - 7(5) = -66 - 35 = -101 (textbook answer evaluates to -101).\n(iv) |D| = 5(-3) - 4(-2) = -15 + 8 = -7.\n(v) |E| = 2p(-s) - (-3q)(r) = -2ps + 3qr.\n(vi) |F| = 0(1) - 0(1) = 0.\n(vii) |G| = 6(-4) - 5(-1) = -24 + 5 = -19.\n(viii) |H| = a(c) - b(0) = ac.",
-          "answer": "(i) 29, (ii) 5, (iii) -101, (iv) -7, (v) -2ps + 3qr, (vi) 0, (vii) -19, (viii) ac."
+          "question": "Find the determinant of following matrices and evaluate them:\n(i) A = [[5, 6], [-4, 1]]\n(ii) B = [[4, -2], [5, 13]]\n(iii) C = [[11, 7], [-6, 5]]\n(iv) D = [[5, 6], [-8, -9]]\n(v) E = [[2p, -3q], [r, -s]]\n(vi) F = [[1, 0], [0, 1]]\n(vii) G = [[6, -11], [-1, -3]]\n(viii) H = [[ac, 0], [0, b]]",
+          "solution": "Formula: |M| = ad - bc:\n(i) |A| = 5(1) - 6(-4) = 29.\n(ii) |B| = 4(13) - (-2)(5) = 62.\n(iii) |C| = 11(5) - 7(-6) = 97.\n(iv) |D| = 5(-9) - 6(-8) = 3.\n(v) |E| = 2p(-s) - (-3q)(r) = -2ps + 3qr.\n(vi) |F| = 1(1) - 0(0) = 1.\n(vii) |G| = 6(-3) - (-11)(-1) = -29.\n(viii) |H| = (ac)(b) - 0(0) = abc.",
+          "answer": "(i) 29, (ii) 62, (iii) 97, (iv) 3, (v) -2ps + 3qr, (vi) 1, (vii) -29, (viii) abc."
         },
         {
           "qNo": "Question 2",
           "question": "Find which of the following matrices are singular and which are non-singular:\n(i) A = [[5, 3], [2, 1]]\n(ii) B = [[3, -6], [-2, 4]]\n(iii) C = [[3a, -2b], [2a, b]]\n(iv) D = [[-3, 6], [2, -4]]",
-          "solution": "(i) |A| = 5(1) - 3(2) = -1 ≠ 0 => Non-singular.\n(ii) |B| = 3(4) - (-6)(-2) = 12 - 12 = 0 => Singular.\n(iii) |C| = 3a(b) - (-2b)(2a) = 3ab + 4ab = 7ab ≠ 0 => Non-singular.\n(iv) |D| = -3(-4) - 6(2) = 12 - 12 = 0 => Singular.",
-          "answer": "Singular: (ii) B, (iv) D. Non-singular: (i) A, (iii) C."
+          "solution": "(i) |A| = 5(1) - 3(2) = -1 ≠ 0 => Non-singular.\n(ii) |B| = 3(4) - (-6)(-2) = 12 - 12 = 0 => Singular.\n(iii) |C| = 3ab - (-2b)(2a) = 7ab. Thus C is non-singular when ab ≠ 0, and singular when a = 0 or b = 0.\n(iv) |D| = -3(-4) - 6(2) = 12 - 12 = 0 => Singular.",
+          "answer": "Singular: (ii) B and (iv) D. Non-singular: (i) A; (iii) C is non-singular only when ab ≠ 0."
         },
         {
           "qNo": "Question 3",
-          "question": "Find the adjoint of the following matrices:\n(i) A = [[1, 3], [-2, 4]]\n(ii) B = [[2, -3], [3, 4]]\n(iii) C = [[3, 2], [1, -3]]\n(iv) D = [[3, -2], [2, 4]]",
-          "solution": "adj(M) = [[d, -b], [-c, a]]:\n(i) adj(A) = [[4, -3], [2, 1]].\n(ii) adj(B) = [[4, 3], [-3, 2]].\n(iii) adj(C) = [[-3, -2], [-1, 3]].\n(iv) adj(D) = [[4, 2], [-2, 3]].",
-          "answer": "(i) adj A = [[4, -3], [2, 1]], (ii) adj B = [[4, 3], [-3, 2]], (iii) adj C = [[-3, -2], [-1, 3]], (iv) adj D = [[4, 2], [-2, 3]]."
+          "question": "Find the adjoint of the following matrices:\n(i) A = [[1, 2], [3, 4]]\n(ii) B = [[-3, -1], [2, 3]]\n(iii) C = [[2, -4], [3, 1]]\n(iv) D = [[-3, 6], [2, -4]]",
+          "solution": "adj(M) = [[d, -b], [-c, a]]:\n(i) adj(A) = [[4, -2], [-3, 1]].\n(ii) adj(B) = [[3, 1], [-2, -3]].\n(iii) adj(C) = [[1, 4], [-3, 2]].\n(iv) adj(D) = [[-4, -6], [-2, -3]].",
+          "answer": "(i) adj A = [[4, -2], [-3, 1]], (ii) adj B = [[3, 1], [-2, -3]], (iii) adj C = [[1, 4], [-3, 2]], (iv) adj D = [[-4, -6], [-2, -3]]."
         },
         {
           "qNo": "Question 4",
-          "question": "Find the multiplicative inverses of the following matrices if they exist:\n(i) A = [[4, 1], [3, 1]]\n(ii) B = [[2, 3], [4, 6]]\n(iii) C = [[2, 3], [-1, 1]]\n(iv) D = [[2, 1], [4, 3]]",
-          "solution": "M^-1 = (1/|M|) · adj(M):\n(i) |A| = 4 - 3 = 1 => A^-1 = [[1, -1], [-3, 4]].\n(ii) |B| = 12 - 12 = 0 => Singular, inverse does NOT exist.\n(iii) |C| = 2 - (-3) = 5 => C^-1 = (1/5) · [[1, -3], [1, 2]] = [[1/5, -3/5], [1/5, 2/5]].\n(iv) |D| = 6 - 4 = 2 => D^-1 = (1/2) · [[3, -1], [-4, 2]] = [[3/2, -1/2], [-2, 1]].",
-          "answer": "(i) A^-1 = [[1, -1], [-3, 4]]; (ii) Does not exist (singular); (iii) C^-1 = [[1/5, -3/5], [1/5, 2/5]]; (iv) D^-1 = [[3/2, -1/2], [-2, 1]]."
+          "question": "Find the multiplicative inverses of the following matrices if they exist:\n(i) A = [[4, 1], [3, 1]]\n(ii) B = [[3, 4], [1, 2]]\n(iii) C = [[4, -3], [-1, 2]]\n(iv) D = [[0, -3], [2, 4]]\n(v) I = [[1, 0], [0, 1]]",
+          "solution": "M^-1 = (1/|M|) · adj(M):\n(i) |A| = 4(1)-1(3)=1, so A^-1 = [[1, -1], [-3, 4]].\n(ii) |B| = 3(2)-4(1)=2, so B^-1 = (1/2)[[2, -4], [-1, 3]] = [[1, -2], [-1/2, 3/2]].\n(iii) |C| = 4(2)-(-3)(-1)=5, so C^-1 = (1/5)[[2, 3], [1, 4]] = [[2/5, 3/5], [1/5, 4/5]].\n(iv) |D| = 0(4)-(-3)(2)=6, so D^-1 = (1/6)[[4, 3], [-2, 0]] = [[2/3, 1/2], [-1/3, 0]].\n(v) I^-1 = I = [[1, 0], [0, 1]].",
+          "answer": "(i) [[1, -1], [-3, 4]]; (ii) [[1, -2], [-1/2, 3/2]]; (iii) [[2/5, 3/5], [1/5, 4/5]]; (iv) [[2/3, 1/2], [-1/3, 0]]; (v) I."
         },
         {
           "qNo": "Question 5",
-          "question": "If A = [[2, 0], [0, 1]] and B = [[1, 3], [2, 1]], find:\n(i) AB and BA\n(ii) A^-1 and B^-1\n(iii) Show that (AB)^t = B^t · A^t and (BA)^t = A^t · B^t.",
-          "solution": "(i) AB = [[2, 6], [2, 1]],  BA = [[2, 3], [4, 1]].\n(ii) |A| = 2 => A^-1 = [[1/2, 0], [0, 1]].\n    |B| = -5 => B^-1 = [[-1/5, 3/5], [2/5, -1/5]].\n(iii) (AB)^t = [[2, 2], [6, 1]] = B^t · A^t. Verified!",
-          "answer": "(i) AB = [[2, 6], [2, 1]], BA = [[2, 3], [4, 1]]; (ii) A^-1 = [[1/2, 0], [0, 1]], B^-1 = [[-1/5, 3/5], [2/5, -1/5]]; (iii) Verified."
+          "question": "If A = [[2, 0], [-3, 1]], B = [[1, -1], [-1, 3]], find\n(i) AB  (ii) BA  (iii) A^-1 and B^-1,\nthen show that (AB)^-1 = B^-1 A^-1 and (BA)^-1 = A^-1 B^-1.",
+          "solution": "AB = [[2, -2], [-4, 6]], BA = [[5, -1], [-11, 3]].\nA^-1 = [[1/2, 0], [3/2, 1]], B^-1 = [[3/2, 1/2], [1/2, 1/2]].\n(AB)^-1 = [[3/2, 1/2], [1, 1/2]] = B^-1 A^-1.\n(BA)^-1 = [[3/4, 1/4], [11/4, 5/4]] = A^-1 B^-1.",
+          "answer": "AB = [[2, -2], [-4, 6]], BA = [[5, -1], [-11, 3]]; (AB)^-1 = B^-1 A^-1 and (BA)^-1 = A^-1 B^-1."
         },
         {
           "qNo": "Question 6",
-          "question": "If A = [[2, 1], [3, 2]] and B = [[1, 3], [-2, 4]], show that (AB)^-1 = B^-1 · A^-1.",
-          "solution": "AB = [[0, 10], [-1, 17]].\n|AB| = 10,  adj(AB) = [[17, -10], [1, 0]].\n(AB)^-1 = (1/10) · [[17, -10], [1, 0]] = [[17/10, -1], [1/10, 0]].\n\n|B| = 10, adj(B) = [[4, -3], [2, 1]] => B^-1 = (1/10) · [[4, -3], [2, 1]].\n|A| = 1, adj(A) = [[2, -1], [-3, 2]] => A^-1 = [[2, -1], [-3, 2]].\nB^-1 · A^-1 = (1/10) · [[17, -10], [1, 0]] = [[17/10, -1], [1/10, 0]].\nLHS = RHS. Proved!",
-          "answer": "LHS = RHS = [[17/10, -1], [1/10, 0]]. Hence (AB)^-1 = B^-1 · A^-1 is proved."
+          "question": "If A = [[0, -1], [2, 1]], B = [[2, 3], [1, 0]], then show that (AB)^-1 = B^-1 A^-1 and (BA)^-1 = A^-1 B^-1.",
+          "solution": "A^-1 = [[1/2, 1/2], [-1, 0]], B^-1 = [[0, 1], [1/3, -2/3]].\nAB = [[-1, 0], [5, 6]], so (AB)^-1 = [[-1, 0], [5/6, 1/6]].\nB^-1 A^-1 = [[-1, 0], [5/6, 1/6]], verifying (AB)^-1 = B^-1 A^-1.\nBA = [[6, 1], [0, -1]], so (BA)^-1 = [[1/6, 1/6], [0, -1]].\nA^-1 B^-1 = [[1/6, 1/6], [0, -1]], verifying (BA)^-1 = A^-1 B^-1.",
+          "answer": "(AB)^-1 = B^-1 A^-1 = [[-1, 0], [5/6, 1/6]]; (BA)^-1 = A^-1 B^-1 = [[1/6, 1/6], [0, -1]]."
         }
       ]
     },
@@ -733,13 +733,13 @@ var MATH_DATA = [
       "problems": [
         {
           "qNo": "Question 1",
-          "question": "Solve the following system of linear equations using the Matrix Inversion Method:\n(i) 2x + 3y = -1,  x - y = 2\n(ii) x + 2y = -13,  3x + 6y = 11\n(iii) x + 2y = 1,  2x + 3y = 5/2\n(iv) x - 2y - 1 = 0,  2x + y + 3 = 0",
+          "question": "Solve the following system of linear equations using inversion method.\n(i) 2x + 3y = -1,  x - y = 2\n(ii) x + 2y = -13,  3x + 6y = 11\n(iii) x + 2y = 1,  2x + 3y = 5/2\n(iv) x - 2y - 1 = 0,  2x + y + 3 = 0",
           "solution": "Formula: AX = B  =>  X = A^-1 B = (1/|A|) adj(A) B.\n\n(i) A = [[2, 3], [1, -1]], B = [[-1], [2]].\n    |A| = -2 - 3 = -5 ≠ 0. adj(A) = [[-1, -3], [-1, 2]].\n    X = (-1/5) · [[(-1)(-1)+(-3)(2)], [(-1)(-1)+2(2)]] = (-1/5) · [[-5], [5]] = [[1], [-1]].\n    => x = 1, y = -1.\n\n(ii) A = [[1, 2], [3, 6]], B = [[-13], [11]].\n    |A| = 6 - 6 = 0.\n    Since |A| = 0, matrix A is singular. A^-1 does not exist. The system is non-solvable.\n\n(iii) A = [[1, 2], [2, 3]], B = [[1], [5/2]].\n    |A| = 3 - 4 = -1 ≠ 0. adj(A) = [[3, -2], [-2, 1]].\n    X = (-1) · [[3(1) - 2(5/2)], [-2(1) + 1(5/2)]] = (-1) · [[-2], [1/2]] = [[2], [-1/2]].\n    => x = 2, y = -1/2.\n\n(iv) x - 2y = 1,  2x + y = -3.\n    A = [[1, -2], [2, 1]], B = [[1], [-3]].\n    |A| = 1 + 4 = 5 ≠ 0. adj(A) = [[1, 2], [-2, 1]].\n    X = (1/5) · [[1(1) + 2(-3)], [-2(1) + 1(-3)]] = (1/5) · [[-5], [-5]] = [[-1], [-1]].\n    => x = -1, y = -1.",
           "answer": "(i) x = 1, y = -1; (ii) Non-solvable (|A| = 0); (iii) x = 2, y = -1/2; (iv) x = -1, y = -1."
         },
         {
           "qNo": "Question 2",
-          "question": "Solve the following system of linear equations using Cramer's Rule:\n(i) x - 2y = 5,  2x - y = 6\n(ii) 4x + 3y = -2,  x - 2y = 5\n(iii) 5x + 7y = 3,  3x + y = 5",
+          "question": "Solve the following system of linear equations using Cramer's Rule.\n(i) x - 2y = 5,  2x - y = 6\n(ii) 4x + 3y = -2,  x - 2y = 5\n(iii) 5x + 7y = 3,  3x + y = 5",
           "solution": "Cramer's Rule: x = |A_x| / |A|,  y = |A_y| / |A|.\n\n(i) A = [[1, -2], [2, -1]] => |A| = -1 + 4 = 3 ≠ 0.\n    A_x = [[5, -2], [6, -1]] => |A_x| = -5 + 12 = 7 => x = 7/3.\n    A_y = [[1, 5], [2, 6]] => |A_y| = 6 - 10 = -4 => y = -4/3.\n\n(ii) A = [[4, 3], [1, -2]] => |A| = -8 - 3 = -11 ≠ 0.\n    A_x = [[-2, 3], [5, -2]] => |A_x| = 4 - 15 = -11 => x = 1.\n    A_y = [[4, -2], [1, 5]] => |A_y| = 20 + 2 = 22 => y = -2.\n\n(iii) A = [[5, 7], [3, 1]] => |A| = 5 - 21 = -16 ≠ 0.\n    A_x = [[3, 7], [5, 1]] => |A_x| = 3 - 35 = -32 => x = 2.\n    A_y = [[5, 3], [3, 5]] => |A_y| = 25 - 9 = 16 => y = -1.",
           "answer": "(i) x = 7/3, y = -4/3; (ii) x = 1, y = -2; (iii) x = 2, y = -1."
         },
@@ -787,7 +787,7 @@ var MATH_DATA = [
         },
         {
           "qNo": "Question 3",
-          "question": "Find the product if possible: [[-6, 5, 8], [0, 4, -1]] · [[-5], [3]].",
+          "question": "Find the product if possible:\n[[1], [-5], [3]] · [[-6, 5, 8], [0, 4, -1]].",
           "solution": "Order of 1st matrix: 2×3 (3 columns).\nOrder of 2nd matrix: 2×1 (2 rows).\nSince number of columns of 1st (3) ≠ number of rows of 2nd (2), multiplication is NOT possible.",
           "answer": "Not possible (not conformable for multiplication)."
         },
@@ -1364,15 +1364,15 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "In Questions 1-10, consider the numbers:\n2.5, 3, 5/7, -1.96, 0, √36, -7/6, √3, -9, 1, √7, -√14, π, 4 2/3, 0.333...\n\n1. Which are whole numbers?",
-            "solution": "Whole numbers are non-negative integers: 𝕎 = {0, 1, 2, 3, ...}\nInspecting the list:\n• 0 is a whole number.\n• 1 is a whole number.\n• 3 is a whole number.\n• √36 = 6 is a whole number.\nFractions, negative numbers, decimals, and roots of non-squares are not whole numbers.",
-            "answer": "3, 0, √36 (= 6), 1"
+            "question": "In Questions 1-10, consider the numbers:\n2.5, 3, 5/7, -1.96, √36, -7/6, √3, -9, 1, √7, -√14, π, 4 2/3, 0.333...\n\n1. Which are whole numbers?",
+            "solution": "Whole numbers are non-negative integers: 𝕎 = {0, 1, 2, 3, ...}\nInspecting the list:\n• 1 is a whole number.\n• 3 is a whole number.\n• √36 = 6 is a whole number.\nFractions, negative numbers, decimals, and roots of non-squares are not whole numbers.",
+            "answer": "3, √36 (= 6), 1"
           },
           {
             "qNo": "Q2",
             "question": "2. Which of the numbers are integers?",
-            "solution": "Integers are positive and negative whole numbers including zero: ℤ = {..., -3, -2, -1, 0, 1, 2, 3, ...}\nFrom the list:\n• -9 is an integer.\n• 0 is an integer.\n• 1 is an integer.\n• 3 is an integer.\n• √36 = 6 is an integer.",
-            "answer": "-9, 0, 1, 3, √36 (= 6)"
+            "solution": "Integers are positive and negative whole numbers including zero: ℤ = {..., -3, -2, -1, 0, 1, 2, 3, ...}\nFrom the list:\n• -9 is an integer.\n• 1 is an integer.\n• 3 is an integer.\n• √36 = 6 is an integer.",
+            "answer": "3, √36 (= 6), -9, 1"
           },
           {
             "qNo": "Q3",
@@ -1389,14 +1389,14 @@ var MATH_DATA = [
           {
             "qNo": "Q5",
             "question": "5. Which are rational numbers?",
-            "solution": "Rational numbers (ℚ) are numbers that can be written as p/q where p, q ∈ ℤ and q ≠ 0 (terminating or recurring decimals):\n• 2.5 = 5/2\n• 3 = 3/1\n• 5/7\n• -1.96 = -196/100 = -49/25\n• 0 = 0/1\n• √36 = 6 = 6/1\n• -7/6\n• -9 = -9/1\n• 1 = 1/1\n• 4 2/3 = 14/3\n• 0.333... = 1/3",
-            "answer": "2.5, 3, 5/7, -1.96, 0, √36, -7/6, -9, 1, 4 2/3, 0.333..."
+            "solution": "Rational numbers (ℚ) are numbers that can be written as p/q where p, q ∈ ℤ and q ≠ 0 (terminating or recurring decimals):\n• 2.5 = 5/2\n• 3 = 3/1\n• 5/7\n• -1.96 = -196/100 = -49/25\n• √36 = 6 = 6/1\n• -7/6\n• -9 = -9/1\n• 1 = 1/1\n• 4 2/3 = 14/3\n• 0.333... = 1/3",
+            "answer": "2.5, 3, 5/7, -1.96, √36, -7/6, -9, 1, 4 2/3, 0.333..."
           },
           {
             "qNo": "Q6",
             "question": "6. Which are real numbers?",
             "solution": "The set of real numbers ℝ is the union of all rational and irrational numbers: ℝ = ℚ ∪ ℚ′.\nEvery single number given in the list is either rational or irrational.",
-            "answer": "All of them (2.5, 3, 5/7, -1.96, 0, √36, -7/6, √3, -9, 1, √7, -√14, π, 4 2/3, 0.333...)"
+            "answer": "All of them (2.5, 3, 5/7, -1.96, √36, -7/6, √3, -9, 1, √7, -√14, π, 4 2/3, 0.333...)"
           },
           {
             "qNo": "Q7",
@@ -1407,19 +1407,19 @@ var MATH_DATA = [
           {
             "qNo": "Q8",
             "question": "8. Which are integers but not whole numbers?",
-            "solution": "Whole numbers are 𝕎 = {0, 1, 2, ...}. The integers that are not whole numbers are strictly the negative integers.\nFrom the integers list {-9, 0, 1, 3, √36=6}, the only negative integer is -9.",
+            "solution": "Whole numbers are 𝕎 = {0, 1, 2, ...}. The integers that are not whole numbers are strictly the negative integers.\nFrom the integers in the given list {-9, 1, 3, √36=6}, the only negative integer is -9.",
             "answer": "-9"
           },
           {
             "qNo": "Q9",
             "question": "9. Which are integers but not natural numbers?",
-            "solution": "Natural numbers are ℕ = {1, 2, 3, ...}. The integers that are not natural numbers are zero and negative integers:\nFrom the list: 0 and -9.",
-            "answer": "0, -9"
+            "solution": "The only integer in the given list that is not a natural number is -9.",
+            "answer": "-9"
           },
           {
             "qNo": "Q10",
             "question": "10. Which are real numbers but not integers?",
-            "solution": "Exclude all integers {-9, 0, 1, 3, √36} from the set of all given real numbers:\nRemaining numbers:\n2.5, 5/7, -1.96, -7/6, √3, √7, -√14, π, 4 2/3, 0.333...",
+            "solution": "Exclude all integers {-9, 1, 3, √36} from the set of all given real numbers:\nRemaining numbers:\n2.5, 5/7, -1.96, -7/6, √3, √7, -√14, π, 4 2/3, 0.333...",
             "answer": "2.5, 5/7, -1.96, -7/6, √3, √7, -√14, π, 4 2/3, 0.333..."
           },
           {

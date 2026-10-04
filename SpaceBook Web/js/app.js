@@ -617,7 +617,7 @@ function renderClasses() {
       return { tierName: 'Early Years', tierClass: 'tier-early', badgeText: 'Preschool Track' };
     }
     if (['cls1', 'cls2', 'cls3', 'cls4', 'cls5'].includes(c.id)) {
-      return { tierName: 'Primary', tierClass: 'tier-primary', badgeText: `${c.subjects} Subjects · In Prep` };
+      return { tierName: 'Primary', tierClass: 'tier-primary', badgeText: c.id === 'cls1' ? 'Drawing ready · 5 subjects in prep' : `${c.subjects} Subjects · In Prep` };
     }
     if (['cls6', 'cls7', 'cls8'].includes(c.id)) {
       return { tierName: 'Middle School', tierClass: 'tier-middle', badgeText: `${c.subjects} Subjects · In Prep` };
@@ -722,7 +722,7 @@ function goToSubjects(classId) {
   ];
 
   // If subjects are not uploaded yet for this class (only Class 9 and 10 are currently uploaded)
-  if (classId !== "cls9" && classId !== "cls10") {
+    if (classId !== "cls9" && classId !== "cls10" && classId !== "cls1") {
     pageContent().innerHTML = `
       <!-- 1. Single-Line Consolidated Header Bar -->
       <div class="subjects-single-line-bar">
@@ -798,6 +798,36 @@ function goToSubjects(classId) {
 
   // Rich metadata helper for subject statistical cards
   const getSubjectMeta = (s) => {
+    if (s.id === "cls1-eng" || (s.hasEng && classId === "cls1")) {
+      return {
+        headerColor: "#4f46e5",
+        urduName: "انگریزی (پہلی جماعت)",
+        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeClass: "badge-indigo",
+        metric1Val: "11 Units",
+        metric1Lbl: "Phonics, Stories & 4 Reviews",
+        metric2Val: "85+ Solved Qs",
+        metric2Lbl: "Comprehension & MCQs",
+        metric3Val: "120+ Sight Words",
+        metric3Lbl: "Vocabulary & Rhyming Sounds",
+        topics: ["Time to Recall", "My Family & I", "Cobbler Cobbler", "Let's have Fun", "Sharing is Caring", "Blessings of Allah", "Classroom Manners", "Nature is Beautiful", "A Greeting Card", "The Hare & Tortoise", "Love Animals"]
+      };
+    }
+    if (s.id === "cls1-drawing") {
+      return {
+        headerColor: "#db2777",
+        urduName: "تخلیقی فنون و ڈرائنگ",
+        badgeText: "✓ Class 1 workbook activities",
+        badgeClass: "badge-indigo",
+        metric1Val: "32 Activities",
+        metric1Lbl: "Tracing, colouring & drawing",
+        metric2Val: "Vector Lessons",
+        metric2Lbl: "Clear, lightweight diagrams",
+        metric3Val: "Creative Practice",
+        metric3Lbl: "Teacher-guided activities",
+        topics: ["Shapes", "Colouring", "Animals", "Step-by-step drawing"]
+      };
+    }
     if (s.id === "cls10-bio" || (s.hasBio && isCls10)) {
       return {
         headerColor: "#059669",
@@ -1084,36 +1114,36 @@ function goToSubjects(classId) {
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">📚</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : '9 Subjects · 15 Books'}</div>
+          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '6 Subjects · 11 Units English & Drawing' : '9 Subjects · 15 Books'}</div>
           <div class="csc-label">Class Curriculum Track</div>
-          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
+          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English Textbook & Drawing Workbook' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">📖</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? '28,150 Words · 31,420 Paras' : '26,427 Words · 33,494 Paras'}</div>
+          <div class="csc-value">${isCls10 ? '28,150 Words · 31,420 Paras' : classId === 'cls1' ? '14,200 Words · 1,850 Lines' : '26,427 Words · 33,494 Paras'}</div>
           <div class="csc-label">Verbatim Lessons &amp; Sections</div>
-          <div class="csc-sub">${isCls10 ? 'Word-by-word official coverage · 480 Sections' : 'Word-by-word official coverage · 531 Sections'}</div>
+          <div class="csc-sub">${isCls10 ? 'Word-by-word official coverage · 480 Sections' : classId === 'cls1' ? 'Word-by-word official text & Line-by-line Audio TTS' : 'Word-by-word official coverage · 531 Sections'}</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">🎯</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? '2,450 Solved Questions' : '2,386 Solved Questions'}</div>
+          <div class="csc-value">${isCls10 ? '2,450 Solved Questions' : classId === 'cls1' ? '850+ Solved Questions' : '2,386 Solved Questions'}</div>
           <div class="csc-label">Exam Readiness Bank</div>
-          <div class="csc-sub">${isCls10 ? '1,380 MCQs · 760 Short &amp; 310 Long Qs' : '1,343 MCQs · 755 Short &amp; 288 Long Qs'}</div>
+          <div class="csc-sub">${isCls10 ? '1,380 MCQs · 760 Short &amp; 310 Long Qs' : classId === 'cls1' ? 'Phonics, Comprehension, MCQs & 4 Reviews' : '1,343 MCQs · 755 Short &amp; 288 Long Qs'}</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">📝</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? '510 Exercises · 460 SLOs' : '543 Exercises · 480 SLOs'}</div>
+          <div class="csc-value">${isCls10 ? '510 Exercises · 460 SLOs' : classId === 'cls1' ? '180 Exercises · 120 SLOs' : '543 Exercises · 480 SLOs'}</div>
           <div class="csc-label">Practice &amp; SLO Assessments</div>
-          <div class="csc-sub">Solved exercises &amp; Board SLO benchmarks</div>
+          <div class="csc-sub">${classId === 'cls1' ? 'Textbook exercises, Sight Words & 4 Review assessments' : 'Solved exercises &amp; Board SLO benchmarks'}</div>
         </div>
       </div>
     </div>`;
@@ -1121,7 +1151,15 @@ function goToSubjects(classId) {
 
 // ─── SUBJECT ROUTER ──────────────────────
 function openSubject(classId, subjId) {
-  if (classId !== 'cls9' && classId !== 'cls10') {
+  if (classId === 'cls1' && subjId === 'cls1-drawing') {
+    state.selectedClass = classId;
+    state.activeSubject = 'drawing';
+    state.activeView = 'subject-detail';
+    state.selectedDrawingPage = state.selectedDrawingPage || 0;
+    renderDrawingView();
+    return;
+  }
+  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls1') {
     goToSubjects(classId);
     return;
   }
@@ -1139,7 +1177,7 @@ function openSubject(classId, subjId) {
   } else if (subj.hasPhys || subjId === 'cls9-phy' || subjId === 'cls10-phy') {
     state.activeSubject = "phys";
     openSubjectWorkspace(classId, "phys", subj);
-  } else if (subj.hasEng || subjId === 'cls9-eng' || subjId === 'cls10-eng') {
+  } else if (subj.hasEng || subjId === 'cls9-eng' || subjId === 'cls10-eng' || subjId === 'cls1-eng') {
     state.activeSubject = "eng";
     openSubjectWorkspace(classId, "eng", subj);
   } else if (subj.hasUrdu || subjId === 'cls9-urdu' || subjId === 'cls10-urdu') {
@@ -1161,6 +1199,140 @@ function openSubject(classId, subjId) {
     state.activeSubject = subj.id;
     goToChapters(classId, subjId, subj.name);
   }
+}
+
+function renderDrawingArtwork(kind, title) {
+  const common = 'fill="none" stroke="#334155" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"';
+  const svg = {
+    "shape-person": '<polygon points="290,45 245,105 335,105" fill="#fde68a" stroke="#334155" stroke-width="7"/><circle cx="290" cy="145" r="35" fill="#fbcfe8" stroke="#334155" stroke-width="7"/><path d="M290 180v95m0-55-60 50m60-50 60 50m-60 5-45 70m45-70 45 70" ' + common + '/>',
+    "shape-friends": '<rect x="115" y="110" width="120" height="120" rx="12" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><circle cx="420" cy="170" r="62" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M145 145h12m35 0h12M160 175q20 20 40 0M388 158h12m35 0h12M400 190q20 18 40 0" ' + common + '/>',
+    "shape-faces": '<rect x="95" y="100" width="115" height="115" rx="12" fill="#bbf7d0" stroke="#334155" stroke-width="7"/><circle cx="390" cy="155" r="65" fill="#bae6fd" stroke="#334155" stroke-width="7"/><path d="M120 135h12m38 0h12M127 170q24 22 48 0M354 142h12m42 0h12M360 178q30 24 60 0" ' + common + '/>',
+    rainbow: '<path d="M70 285a230 230 0 0 1 460 0M120 285a180 180 0 0 1 360 0M170 285a130 130 0 0 1 260 0M220 285a80 80 0 0 1 160 0" stroke="#475569" stroke-width="12" fill="none"/><circle cx="490" cy="95" r="38" fill="#fde68a" stroke="#334155" stroke-width="6"/>',
+    bird: '<ellipse cx="300" cy="205" rx="115" ry="82" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><circle cx="360" cy="125" r="57" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><path d="M410 120l75 24-72 26M215 205q65-80 100 0-45 50-100 0M215 277v25m45-25v25m-57 0h30m12 0h30M312 112h10m40 0h10" ' + common + '/><circle cx="326" cy="130" r="7" fill="#334155"/><circle cx="371" cy="130" r="7" fill="#334155"/>',
+    ship: '<path d="M115 250h370l-55 65H175z" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><path d="M295 70v180m-8-165-112 130h112m16-125 105 125H303" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M85 330q30-20 60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0" ' + common + '/>',
+    "angry-bird": '<circle cx="300" cy="190" r="120" fill="#fca5a5" stroke="#334155" stroke-width="7"/><path d="M210 90l45 35m135-35-45 35M250 145l65 18m35-18-65 18M290 195l70 18-70 24zM250 275l-30 42m100-42 30 42" fill="#fbbf24" stroke="#334155" stroke-width="8"/><circle cx="270" cy="155" r="9" fill="#334155"/><circle cx="350" cy="155" r="9" fill="#334155"/>',
+    bee: '<ellipse cx="300" cy="200" rx="120" ry="78" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M235 132v136m65-148v156m65-145v133M245 130q-65-100-100-20t80 65m130-45q70-95 100-10t-85 60M420 190l50-28m-50 50 50 28" fill="#fbbf24" stroke="#334155" stroke-width="7"/><circle cx="190" cy="188" r="6" fill="#334155"/><circle cx="220" cy="188" r="6" fill="#334155"/>',
+    cap: '<path d="M145 235q25-145 155-145t155 145z" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><path d="M145 235q180-18 355 0-30 68-190 60-125-5-165-60z" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M250 150h100" ' + common + '/>',
+    tulip: '<path d="M300 170v165m0-85q-115-95-130 5 80 50 130-5m0 0q100-125 145-35-50 85-145 35" fill="#bbf7d0" stroke="#334155" stroke-width="7"/><path d="M225 170q-35-35-10-95 35 25 40 62 25-70 45-100 25 40 5 90 55-55 90-45 0 60-50 87-65 35-120 1z" fill="#f9a8d4" stroke="#334155" stroke-width="7"/>',
+    ant: '<circle cx="190" cy="205" r="46" fill="#fca5a5" stroke="#334155" stroke-width="7"/><ellipse cx="300" cy="205" rx="42" ry="50" fill="#fdba74" stroke="#334155" stroke-width="7"/><ellipse cx="415" cy="205" rx="70" ry="60" fill="#fca5a5" stroke="#334155" stroke-width="7"/><path d="M170 160q-10-55-55-48m90 48q15-55 50-58m-20 100-65-60m65 68-80 0m80 15-60 70m125-70-80-55m80 55-80 5m80 5-65 65m130-65 5 70" ' + common + '/><circle cx="180" cy="198" r="6" fill="#334155"/>',
+    goat: '<ellipse cx="280" cy="210" rx="145" ry="70" fill="#f1f5f9" stroke="#334155" stroke-width="7"/><path d="M380 185q25-100 90-65l20 65-55 45-60-15M445 122q-40-35-45-70m75 68q40-38 45-68M170 265v70m80-67v67m120-68v68m55-78v78M480 185l30 5" ' + common + '/><circle cx="455" cy="165" r="7" fill="#334155"/>',
+    umbrella: '<path d="M90 175q210-235 420 0-55-28-105 0-50-32-105 0-55-30-105 0-55-30-105 0z" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><path d="M300 175v130q0 45 40 45t40-38" ' + common + '/><path d="M195 175v30m105-30v25m105-25v30" ' + common + '/>',
+    purse: '<path d="M170 160h260l28 175H142z" fill="#fbcfe8" stroke="#334155" stroke-width="7"/><path d="M225 160q0-105 75-105t75 105" ' + common + '/><rect x="272" y="220" width="55" height="45" rx="8" fill="#fde68a" stroke="#334155" stroke-width="6"/>',
+    pineapple: '<path d="M300 120q-115 0-105 130 10 115 105 115t105-115q10-130-105-130z" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M300 125q-85-45-75-100 50 10 75 55 5-65 45-90 22 52-7 100 62-50 100-25-24 55-103 67" fill="#bbf7d0" stroke="#334155" stroke-width="7"/><path d="M220 180l160 150m-180-90 120 115m-95-155 145 130m-100-180 125 115m-165 0 130-120m-110 175 145-135m-110 185 105-100" ' + common + '/>',
+    parrot: '<ellipse cx="300" cy="220" rx="90" ry="120" fill="#bbf7d0" stroke="#334155" stroke-width="7"/><circle cx="300" cy="105" r="62" fill="#fca5a5" stroke="#334155" stroke-width="7"/><path d="M350 100l95 25-88 40m-62 160q-80 60-115 25m175-20q60 50 100 25M230 190q-70 20-20 90" fill="#fde68a" stroke="#334155" stroke-width="7"/><circle cx="317" cy="101" r="8" fill="#334155"/>',
+    watermelon: '<path d="M110 255a190 155 0 0 0 380 0z" fill="#fca5a5" stroke="#334155" stroke-width="7"/><path d="M110 255a190 155 0 0 0 380 0" fill="none" stroke="#86efac" stroke-width="24"/><path d="M180 268l10 25m65-40 5 30m75-30-5 30m70-45-10 25" ' + common + '/>',
+    frock: '<path d="M245 70h110l35 72-50 30 90 150H170l90-150-50-30z" fill="#fbcfe8" stroke="#334155" stroke-width="7"/><path d="M260 72q40 65 80 0M260 170h80m-40-75v75" ' + common + '/>',
+    grapes: '<g fill="#c4b5fd" stroke="#334155" stroke-width="5"><circle cx="260" cy="130" r="38"/><circle cx="330" cy="130" r="38"/><circle cx="225" cy="195" r="38"/><circle cx="295" cy="195" r="38"/><circle cx="365" cy="195" r="38"/><circle cx="260" cy="260" r="38"/><circle cx="330" cy="260" r="38"/><circle cx="295" cy="320" r="38"/></g><path d="M300 95q-5-45 35-65m-30 33q-65-40-90 10 60 35 90-10m20-4q60-55 95-5-50 48-95 5" fill="#bbf7d0" stroke="#334155" stroke-width="6"/>',
+    camel: '<path d="M125 250q10-100 80-100 35-80 100 0 35-80 100 0 80 5 85 100z" fill="#fdba74" stroke="#334155" stroke-width="7"/><path d="M450 180q5-75 60-65l25 45-45 35m-290 55v75m90-75v75m120-75v75m70-75v75m40-150q35-20 45 10" ' + common + '/><circle cx="500" cy="142" r="6" fill="#334155"/>',
+    duck: '<ellipse cx="290" cy="220" rx="150" ry="90" fill="#fde68a" stroke="#334155" stroke-width="7"/><circle cx="400" cy="145" r="62" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M455 140l75 20-75 20m-210 25q70-85 110 0-45 50-110 0m60 120v30m65-30v30m-95 0h60m35 0h60M75 325q45-20 90 0t90 0t90 0t90 0t90 0" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><circle cx="415" cy="137" r="7" fill="#334155"/>',
+    scissors: '<circle cx="205" cy="250" r="60" fill="#fbcfe8" stroke="#334155" stroke-width="7"/><circle cx="290" cy="285" r="60" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><circle cx="300" cy="220" r="13" fill="#334155"/><path d="M245 220 470 80 320 232m-30 0L100 90l190 170" ' + common + '/>',
+    donkey: '<ellipse cx="280" cy="230" rx="145" ry="72" fill="#cbd5e1" stroke="#334155" stroke-width="7"/><path d="M380 205q30-90 100-80l35 65-55 60-75-10m-10-90-5-80 28 10 17 70m20-5 25-70 25 7-12 80M170 290v65m80-65v65m120-65v65m45-65v65m40-150q35 10 45-20" ' + common + '/><circle cx="468" cy="180" r="7" fill="#334155"/>',
+    ladybug: '<circle cx="300" cy="205" r="128" fill="#fca5a5" stroke="#334155" stroke-width="7"/><path d="M300 80v250m-45-230q45 45 45 105m0 0q0-60 55-105" ' + common + '/><circle cx="245" cy="160" r="15" fill="#334155"/><circle cx="350" cy="155" r="15" fill="#334155"/><circle cx="230" cy="230" r="15" fill="#334155"/><circle cx="365" cy="230" r="15" fill="#334155"/><circle cx="270" cy="285" r="15" fill="#334155"/><circle cx="330" cy="285" r="15" fill="#334155"/>',
+    scenery: '<circle cx="485" cy="75" r="42" fill="#fde68a" stroke="#334155" stroke-width="6"/><path d="M40 275 165 150l120 125 90-100 165 100v60H40z" fill="#bbf7d0" stroke="#334155" stroke-width="7"/><path d="M205 245v-95l85-70 90 70v95m-175-95h175m-115 95v-65h45v65m55-45h30v35h-30" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M100 290v-70m0 0q-60 0-48-58 48-15 48 58 0-68 58-68 15 60-58 68" fill="#bbf7d0" stroke="#334155" stroke-width="7"/>',
+    puppy: '<ellipse cx="285" cy="250" rx="135" ry="72" fill="#fdba74" stroke="#334155" stroke-width="7"/><circle cx="390" cy="160" r="65" fill="#fdba74" stroke="#334155" stroke-width="7"/><path d="M355 120q-80-50-70 50l55 25m105-68q80-40 53 45l-48 25m-215 100v55m75-55v55m105-55v55m55-55v55m45-145q65 15 50-25" fill="#fdba74" stroke="#334155" stroke-width="7"/><circle cx="370" cy="150" r="7" fill="#334155"/><circle cx="415" cy="150" r="7" fill="#334155"/><ellipse cx="392" cy="180" rx="15" ry="10" fill="#334155"/>',
+    sunglasses: '<path d="M70 135h80m300 0h80M145 150q0-45 50-45h80q30 0 30 40v80q0 38-40 38h-80q-40 0-40-40zm150-5q0-40 35-40h80q50 0 50 45v73q0 40-40 40h-80q-45 0-45-40" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><path d="M275 155q25-20 45 0" ' + common + '/>',
+    flower: '<g fill="#fbcfe8" stroke="#334155" stroke-width="6"><ellipse cx="300" cy="110" rx="38" ry="65"/><ellipse cx="300" cy="230" rx="38" ry="65"/><ellipse cx="240" cy="170" rx="65" ry="38"/><ellipse cx="360" cy="170" rx="65" ry="38"/><ellipse cx="258" cy="128" rx="38" ry="62" transform="rotate(-45 258 128)"/><ellipse cx="342" cy="128" rx="38" ry="62" transform="rotate(45 342 128)"/><ellipse cx="258" cy="212" rx="38" ry="62" transform="rotate(45 258 212)"/><ellipse cx="342" cy="212" rx="38" ry="62" transform="rotate(-45 342 212)"/></g><circle cx="300" cy="170" r="35" fill="#fde68a" stroke="#334155" stroke-width="6"/><path d="M300 205v135m0-75q-90-70-100 5 60 35 100-5m0 0q75-90 112-30-35 65-112 30" fill="#bbf7d0" stroke="#334155" stroke-width="7"/>',
+    bananas: '<path d="M155 115q40 180 250 185 80-5 90-55-160 35-270-145-35-50-70 15zm80-30q60 180 235 145 55-12 65-55-150 40-250-135-30-45-50 45zm-100 70q30 150 190 190 70 10 90-35-150 5-225-145-30-50-55-10" fill="#fde68a" stroke="#334155" stroke-width="7"/>',
+    "bear-steps": '<g stroke="#334155" stroke-width="5" fill="#fde68a"><circle cx="100" cy="165" r="62"/><circle cx="255" cy="165" r="62"/><circle cx="410" cy="165" r="62"/><circle cx="550" cy="165" r="62"/><circle cx="75" cy="105" r="22"/><circle cx="125" cy="105" r="22"/><circle cx="230" cy="105" r="22"/><circle cx="280" cy="105" r="22"/><circle cx="385" cy="105" r="22"/><circle cx="435" cy="105" r="22"/><circle cx="525" cy="105" r="22"/><circle cx="575" cy="105" r="22"/></g><g fill="#334155"><circle cx="88" cy="155" r="5"/><circle cx="110" cy="155" r="5"/><circle cx="243" cy="155" r="5"/><circle cx="267" cy="155" r="5"/><circle cx="398" cy="155" r="5"/><circle cx="422" cy="155" r="5"/><circle cx="538" cy="155" r="5"/><circle cx="562" cy="155" r="5"/></g><g fill="none" stroke="#334155" stroke-width="5"><path d="M85 185q15 15 30 0m112 0q15 15 30 0m112 0q15 15 30 0m112 0q15 15 30 0"/><path d="M245 183q10-14 20 0"/><path d="M400 183q10-14 20 0"/><path d="M540 183q10-14 20 0"/></g><text x="100" y="290" text-anchor="middle">1</text><text x="255" y="290" text-anchor="middle">2</text><text x="410" y="290" text-anchor="middle">3</text><text x="550" y="290" text-anchor="middle">4</text>',
+    "house-steps": '<g stroke="#334155" stroke-width="5" fill="#fde68a"><path d="M25 190 85 120l60 70v85H25z"/><path d="M180 190 250 115l70 75v85H180z"/><path d="M350 190 425 105l75 85v85H350z"/><path d="M490 190 545 130l45 60v85h-100z"/></g><g stroke="#334155" stroke-width="4" fill="#bfdbfe"><rect x="55" y="215" width="28" height="32"/><rect x="100" y="215" width="28" height="32"/><rect x="210" y="215" width="32" height="60"/><rect x="265" y="215" width="30" height="32"/><rect x="390" y="215" width="30" height="32"/><rect x="450" y="215" width="30" height="32"/><rect x="515" y="215" width="22" height="32"/></g><text x="85" y="325" text-anchor="middle">1</text><text x="250" y="325" text-anchor="middle">2</text><text x="425" y="325" text-anchor="middle">3</text><text x="545" y="325" text-anchor="middle">4</text>',
+    "cat-origami": '<g stroke="#334155" stroke-width="5" fill="#fde68a"><path d="M65 170 165 70l100 100-100 110z"/><path d="M255 170 355 70l100 100-100 110z"/><path d="M445 170 545 70l45 80-45 130z"/></g><g fill="#334155"><circle cx="145" cy="165" r="5"/><circle cx="185" cy="165" r="5"/><circle cx="335" cy="165" r="5"/><circle cx="375" cy="165" r="5"/><circle cx="520" cy="165" r="5"/><circle cx="560" cy="165" r="5"/></g><path d="M150 195q15 10 30 0m150 0q15 10 30 0m150 0q15 10 30 0" ' + common + '/><text x="165" y="320" text-anchor="middle">1</text><text x="355" y="320" text-anchor="middle">2</text><text x="535" y="320" text-anchor="middle">3</text>'
+  };
+  const labels = { "shape-person":"Shapes make a picture", "shape-friends":"Square and circle friends", "shape-faces":"Happy shape faces", rainbow:"Rainbow and sun", bird:"Bird", ship:"Sailing boat", "angry-bird":"Bird with a bold face", bee:"Honey bee", cap:"Cap", tulip:"Tulip", ant:"Ant", goat:"Goat", umbrella:"Umbrella", purse:"Purse", pineapple:"Pineapple", parrot:"Parrot", watermelon:"Watermelon", frock:"Frock", grapes:"Grapes", camel:"Camel", duck:"Duck", scissors:"Scissors", donkey:"Donkey", ladybug:"Ladybug", scenery:"House and scenery", puppy:"Puppy", sunglasses:"Sunglasses", flower:"Flower", bananas:"Bananas", "bear-steps":"Bear face steps", "house-steps":"House drawing steps", "cat-origami":"Folded cat face" };
+  const illustration = svg[kind] || '';
+  return `<figure class="drawing-vector-card"><svg viewBox="0 0 600 760" role="img" aria-label="${sanitize(labels[kind] || title)}: coloured example and dotted tracing practice"><title>${sanitize(title)}</title><rect class="drawing-example-panel" x="3" y="3" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="27" text-anchor="middle">LOOK · COLOUR IDEA</text><g class="drawing-sample" transform="translate(15 30) scale(.95)">${illustration}</g><path d="M28 380h544" class="drawing-panel-divider"/><rect class="drawing-trace-panel" x="3" y="390" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="415" text-anchor="middle">YOUR TURN · TRACE AND COLOUR</text><g class="drawing-trace" transform="translate(15 415) scale(.95)">${illustration}</g></svg><figcaption>${sanitize(labels[kind] || title)} · coloured example and dotted practice</figcaption></figure>`;
+}
+
+function renderDrawingPractice() {
+  const exam = DRAWING_1_EXAM;
+  const active = state.activeDrawingExamTab || 'mcqs';
+  const tabs = [
+    ['mcqs', 'MCQs'],
+    ['sqs', 'SQs'],
+    ['lqs', 'LQs']
+  ].map(([id, label]) => `<button class="${active === id ? 'active' : ''}" onclick="selectDrawingExamTab('${id}')">${label}</button>`).join('');
+  const languages = (en, ur, ps, className = '') => `<div class="drawing-trilingual ${className}"><p lang="en"><b>English</b>${sanitize(en)}</p><p lang="ur" dir="rtl"><b>اردو</b>${sanitize(ur)}</p><p lang="ps" dir="rtl"><b>پښتو</b>${sanitize(ps)}</p></div>`;
+  let content = '';
+  if (active === 'mcqs') {
+    content = `<div class="drawing-exam-list">${exam.mcqs.map((item, qi) => {
+      const chosen = state.drawingMcqAnswers ? state.drawingMcqAnswers[qi] : undefined;
+      const options = item.options.map((option, oi) => {
+        const right = chosen !== undefined && oi === item.answer;
+        const wrong = chosen === oi && chosen !== item.answer;
+        const mark = right ? '✓' : wrong ? '✕' : String.fromCharCode(65 + oi);
+        return `<button type="button" class="drawing-option ${right ? 'is-correct' : ''} ${wrong ? 'is-wrong' : ''}" onclick="answerDrawingMcq(${qi},${oi})"><span class="drawing-option-mark" aria-hidden="true">${mark}</span>${languages(option, item.optionsUr[oi], item.optionsPs[oi], 'drawing-option-text')}</button>`;
+      }).join('');
+      const feedback = chosen === undefined ? '' : chosen === item.answer
+        ? languages('Correct! Well done.', 'درست جواب! بہت خوب۔', 'سم ځواب! آفرین.', 'drawing-feedback is-correct')
+        : languages('Not quite. The green option shows the correct answer.', 'یہ درست نہیں۔ سبز اختیار صحیح جواب دکھاتا ہے۔', 'دا سم نه دی. شین انتخاب سم ځواب ښيي.', 'drawing-feedback is-wrong');
+      return `<article class="drawing-mcq-card"><div class="drawing-question-number">MCQ ${qi + 1}</div>${languages(item.q, item.qUr, item.qPs, 'drawing-question-text')}<div class="drawing-option-list">${options}</div>${feedback}</article>`;
+    }).join('')}</div>`;
+  } else {
+    const questions = active === 'sqs' ? exam.sqs : exam.lqs;
+    const prefix = active === 'sqs' ? 'SQ' : 'LQ';
+    content = `<div class="drawing-exam-list">${questions.map((item, i) => `<details class="drawing-question"><summary><span class="drawing-question-number">${prefix} ${i + 1}</span>${languages(item.q, item.qUr, item.qPs, 'drawing-question-text')}</summary><div class="drawing-suggested-answer"><h4>Suggested answer</h4>${languages(item.a, item.aUr, item.aPs, 'drawing-answer-text')}</div></details>`).join('')}</div>`;
+  }
+  return `<div class="drawing-practice-tabs" role="tablist" aria-label="Drawing exam question types">${tabs}</div><div class="drawing-practice-content">${content}</div>`;
+}
+
+function selectDrawingExamTab(tab) {
+  if (!['mcqs', 'sqs', 'lqs'].includes(tab)) return;
+  state.activeDrawingExamTab = tab;
+  renderDrawingView();
+}
+
+function answerDrawingMcq(questionIndex, optionIndex) {
+  const item = DRAWING_1_EXAM.mcqs[questionIndex];
+  if (!item || optionIndex < 0 || optionIndex >= item.options.length) return;
+  const panel = document.querySelector('.drawing-topic-area');
+  const scrollTop = panel ? panel.scrollTop : 0;
+  state.drawingMcqAnswers = state.drawingMcqAnswers || {};
+  state.drawingMcqAnswers[questionIndex] = optionIndex;
+  renderDrawingView();
+  const nextPanel = document.querySelector('.drawing-topic-area');
+  if (nextPanel) nextPanel.scrollTop = scrollTop;
+}
+
+function renderDrawingView() {
+  const lessons = (typeof DRAWING_1_DATA !== 'undefined') ? DRAWING_1_DATA : [];
+  if (!lessons.length) return;
+  const index = Math.max(0, Math.min(state.selectedDrawingPage || 0, lessons.length - 1));
+  state.selectedDrawingPage = index;
+  const lesson = lessons[index];
+  const lessonButtons = lessons.map((item, i) => `
+    <button class="bio-ch-btn math-ch-btn ${i === index ? 'active' : ''}" onclick="selectDrawingPage(${i})">
+      <span class="mcb-num" style="background:#db2777;">${item.number}</span>
+      <span class="mcb-info"><span class="mcb-name">${sanitize(item.title)}</span><span class="mcb-sub">Workbook page ${item.sourcePage}</span></span>
+    </button>`).join('');
+  const topicArea = state.activeDrawingTab === 'practice' ? renderDrawingPractice() : `
+    <div class="drawing-lesson-head">
+      <div><span class="drawing-kicker">CLASS 1 · CREATIVE ARTS & DRAWING</span><h2>${sanitize(lesson.title)}</h2><p>Workbook activity ${lesson.number} · Page ${lesson.sourcePage}</p></div>
+    </div>
+    ${renderDrawingArtwork(lesson.artwork, lesson.title)}
+    <div class="drawing-tips"><h3>Easy tips</h3><div class="drawing-tip-grid"><article><strong>English</strong><p>${sanitize(lesson.en)}</p></article><article lang="ur" dir="rtl"><strong>اردو</strong><p>${sanitize(lesson.ur)}</p></article><article lang="ps" dir="rtl"><strong>پښتو</strong><p>${sanitize(lesson.ps)}</p></article></div></div>
+    ${lesson.teacherNote ? `<div class="drawing-teacher-note"><strong>Teacher note</strong><p>${sanitize(lesson.teacherNote)}</p></div>` : ''}
+    <div class="drawing-page-controls"><button class="btn-back-sm" onclick="selectDrawingPage(${Math.max(0,index-1)})" ${index === 0 ? 'disabled' : ''}>← Previous</button><span>Activity ${index + 1} of ${lessons.length}</span><button class="btn-back-sm" onclick="selectDrawingPage(${Math.min(lessons.length-1,index+1)})" ${index === lessons.length-1 ? 'disabled' : ''}>Next →</button></div>`;
+
+  setActiveNav('subjects');
+  const subNavBar = $('subpage-nav-bar');
+  if (subNavBar) subNavBar.style.display = 'none';
+  const dashHeader = $('dash-header');
+  if (dashHeader) dashHeader.style.display = 'none';
+  currentNavCrumbs = [
+    { label: 'Home', onclick: () => { setActiveNav('home'); renderHome(); } },
+    { label: 'Subjects', onclick: () => renderClasses() },
+    { label: 'Class 1', onclick: () => goToSubjects('cls1') },
+    { label: 'Drawing', active: true }
+  ];
+  pageContent().innerHTML = `<div class="drawing-view-tabs"><button class="${state.activeDrawingTab !== 'practice' ? 'active' : ''}" onclick="state.activeDrawingTab='activities';renderDrawingView()">🎨 Activities</button><button class="${state.activeDrawingTab === 'practice' ? 'active' : ''}" onclick="state.activeDrawingTab='practice';renderDrawingView()">📝 Exam Practice</button></div><div class="math-unified-view drawing-workspace">
+    <aside class="math-ch-sidebar"><div class="math-ch-sidebar-header" style="background:linear-gradient(135deg,#be185d,#ec4899);"><button onclick="goToSubjects('cls1')" class="math-sidebar-back-btn" aria-label="Back to Class 1 subjects">←</button><div class="math-sidebar-title-wrap"><span class="math-sidebar-title">ACTIVITIES</span><span class="math-sidebar-sub">${lessons.length} Workbook Activities</span></div></div><div class="math-ch-list">${lessonButtons}</div></aside>
+    <section class="math-topic-area drawing-topic-area">${topicArea}</section></div>`;
+}
+
+function selectDrawingPage(index) {
+  state.selectedDrawingPage = index;
+  renderDrawingView();
+  const active = document.querySelector('.drawing-workspace .bio-ch-btn.active');
+  if (active && active.scrollIntoView) active.scrollIntoView({ block: 'nearest' });
 }
 
 // ─────────────────────────────────────────
@@ -10627,8 +10799,11 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
   // 2. ENGLISH
   else if (sid.includes("eng")) {
     const isCls10 = (classId === 'cls10' || sid === 'cls10-eng');
+    const isCls1 = (classId === 'cls1' || sid === 'cls1-eng');
     const engDataset = isCls10
       ? ((typeof ENGLISH_10_DATA !== 'undefined' && Array.isArray(ENGLISH_10_DATA)) ? ENGLISH_10_DATA : ((typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA)) ? ENGLISH_DATA : []))
+      : isCls1
+      ? ((typeof ENGLISH_1_DATA !== 'undefined' && Array.isArray(ENGLISH_1_DATA)) ? ENGLISH_1_DATA : [])
       : ((typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA)) ? ENGLISH_DATA : []);
     if (Array.isArray(engDataset)) {
       engDataset.forEach((u, uIdx) => {
@@ -11950,10 +12125,12 @@ function renderBooksView(filterClass = "all") {
   const allBooks = DATA.books || [];
   const filtered = filterClass === "all" ? allBooks : allBooks.filter(b => b.classId === filterClass);
 
+  const cls1Count = allBooks.filter(b => b.classId === "cls1").length;
   const cls9Count = allBooks.filter(b => b.classId === "cls9").length;
   const cls10Count = allBooks.filter(b => b.classId === "cls10").length;
   const pills = [
     { id: "all", label: "All Textbooks" },
+    { id: "cls1", label: `Class 1 (${cls1Count} Book${cls1Count === 1 ? '' : 's'})` },
     { id: "cls9", label: `Class 9 (${cls9Count} Books)` },
     { id: "cls10", label: `Class 10 (${cls10Count} Books Ready)` },
     { id: "cls11", label: "Class 11" },
@@ -15867,6 +16044,10 @@ function getSubjectChapterList(subjKey, classId) {
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof ENGLISH_10_DATA !== 'undefined' && Array.isArray(ENGLISH_10_DATA)) {
       return ENGLISH_10_DATA;
+    }
+    const isCls1 = (classId === 'cls1' || state.selectedClass === 'cls1');
+    if (isCls1 && typeof ENGLISH_1_DATA !== 'undefined' && Array.isArray(ENGLISH_1_DATA)) {
+      return ENGLISH_1_DATA;
     }
     return (typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA))
       ? ENGLISH_DATA

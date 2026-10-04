@@ -3,7 +3,7 @@ const vm = require('vm');
 
 const path = require('path');
 const DIR = path.resolve(__dirname, '../js') + path.sep;
-const files = ['data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'math_10_data.js'];
+const files = ['data.js', 'drawing_1_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'math_10_data.js'];
 
 function makeEl(id) {
   const style = {};
@@ -129,6 +129,19 @@ run("CLASS 10 openSubject cls10 phy", `openSubject("cls10","cls10-phy")`);
 run("CLASS 10 openSubject cls10 bio", `openSubject("cls10","cls10-bio")`);
 run("CLASS 10 goToSubjects cls10", `goToSubjects('cls10')`);
 run("CLASS 10 renderBooksView cls10", `renderBooksView('cls10')`);
+run("CLASS 1 goToSubjects lists Drawing", `goToSubjects('cls1'); if (!/Drawing/.test($('dashboard-body').innerHTML)) throw new Error('Drawing subject card missing');`);
+run("CLASS 1 open vector Drawing lesson", `openSubject('cls1','cls1-drawing'); if (!/Workbook activity 1/.test($('dashboard-body').innerHTML) || !/<svg/.test($('dashboard-body').innerHTML) || !/drawing-trace/.test($('dashboard-body').innerHTML) || !/English/.test($('dashboard-body').innerHTML) || !/پښتو/.test($('dashboard-body').innerHTML) || /\.jpg|\.png/.test($('dashboard-body').innerHTML)) throw new Error('Drawing lesson, dotted vector practice, multilingual tips, or no-scan requirement failed');`);
+run("CLASS 1 Drawing selects activity 32", `selectDrawingPage(31); if (!/Making a cat face/.test($('dashboard-body').innerHTML) || !/Folded cat face/.test($('dashboard-body').innerHTML)) throw new Error('final activity missing');`);
+run("CLASS 1 Drawing exam practice renders", `state.activeDrawingTab='practice'; renderDrawingView(); if (!/Multiple-choice questions/.test($('dashboard-body').innerHTML) || !/Long questions/.test($('dashboard-body').innerHTML)) throw new Error('exam practice missing'); state.activeDrawingTab='activities';`);
+run("CLASS 1 goToSubjects lists English", `goToSubjects('cls1'); if (!/English/.test($('dashboard-body').innerHTML)) throw new Error('English subject card missing for Class 1');`);
+run("CLASS 1 openSubject cls1-eng", `openSubject('cls1','cls1-eng')`);
+run("CLASS 1 selectSubjectChapter eng 0", `selectSubjectChapter('eng', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab eng lesson", `switchSubjectTab('eng', 'lesson', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab eng exercise", `switchSubjectTab('eng', 'exercise', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab eng slos", `switchSubjectTab('eng', 'slos', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab eng words", `switchSubjectTab('eng', 'words', 0, 'cls1')`);
+run("CLASS 1 switchSubjectTab eng grammar", `switchSubjectTab('eng', 'grammar', 0, 'cls1')`);
+run("CLASS 1 selectSubjectChapter eng 10 (Unit 11)", `selectSubjectChapter('eng', 10, 'cls1')`);
 run("REGRESSION renderClasses", `renderClasses()`);
 run("REGRESSION handleGlobalSearch('islam')", `handleGlobalSearch("islam")`);
 run("REGRESSION handleGlobalSearch('daffodils')", `handleGlobalSearch("daffodils")`);

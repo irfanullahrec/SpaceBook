@@ -8007,3 +8007,51 @@ body:has(.papers-creator-view) #main-wrapper {
   line-height: 1;
   padding: 0 0.04em;
 }
+/* Class 1 Drawing workbook viewer */
+.drawing-workspace { height:calc(100vh - var(--top-total-h) - 78px); max-height:calc(100vh - var(--top-total-h) - 78px); min-height:62vh; }
+.drawing-workspace .math-ch-list { max-height: calc(100vh - 190px); overflow-y: auto; }
+.drawing-workspace .math-topic-area { min-width: 0; }
+.drawing-view-tabs { display:flex; gap:.55rem; margin:0 0 .7rem; }
+.drawing-view-tabs button { border:1px solid #fbcfe8; background:#fff; color:#9d174d; border-radius:10px; padding:.58rem .9rem; font:inherit; font-weight:800; cursor:pointer; }
+.drawing-view-tabs button.active { background:#be185d; border-color:#be185d; color:white; }
+.drawing-topic-area { overflow-y:auto; }
+.drawing-lesson-head { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:1rem; }
+.drawing-kicker { color:#be185d; font-size:.72rem; font-weight:800; letter-spacing:.08em; }
+.drawing-lesson-head h2 { margin:.3rem 0; color:#172554; font-size:clamp(1.2rem,2vw,1.7rem); }
+.drawing-lesson-head p { margin:0; color:#64748b; }
+.drawing-vector-card { display:flex; flex-direction:column; align-items:center; gap:.5rem; margin:0 0 1rem; padding:1rem; background:linear-gradient(145deg,#fff7ed,#fdf2f8); border:1px solid #fbcfe8; border-radius:16px; }
+.drawing-vector-card svg { display:block; width:min(100%,600px); height:auto; }
+.drawing-example-panel,.drawing-trace-panel { fill:#fff; stroke:#fbcfe8; stroke-width:2; }
+.drawing-trace-panel { fill:#fffdf7; stroke:#cbd5e1; stroke-dasharray:8 7; }
+.drawing-panel-divider { fill:none; stroke:#fbcfe8; stroke-width:2; stroke-dasharray:7 7; }
+.drawing-panel-label { fill:#9d174d; font-size:15px; font-weight:800; letter-spacing:1px; }
+.drawing-vector-card .drawing-trace * { fill:#fff !important; stroke:#64748b !important; stroke-dasharray:1 9 !important; stroke-width:5 !important; stroke-linecap:round !important; }
+.drawing-vector-card .drawing-trace text { fill:#475569 !important; stroke:none !important; font-size:18px; font-weight:800; }
+.drawing-vector-card figcaption { color:#475569; font-weight:800; }
+.drawing-tips { padding:1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:14px; }
+.drawing-tips h3 { margin:0 0 .7rem; color:#9d174d; }
+.drawing-tip-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.7rem; }
+.drawing-tip-grid article { padding:.75rem; background:white; border:1px solid #e2e8f0; border-radius:10px; }
+.drawing-tip-grid article strong { color:#be185d; }
+.drawing-tip-grid article p { margin:.35rem 0 0; line-height:1.7; }
+.drawing-teacher-note { margin-top:1rem; padding:1rem 1.2rem; background:#fff7ed; border:1px solid #fed7aa; border-radius:12px; color:#7c2d12; }
+.drawing-teacher-note p { margin:.35rem 0 0; }
+.drawing-page-controls { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin:1rem 0; color:#64748b; font-weight:700; }
+.drawing-page-controls button:disabled { opacity:.45; cursor:not-allowed; }
+.drawing-question-group { margin:1rem 0 1.3rem; }
+.drawing-question-group h3 { margin:.5rem 0; color:#9d174d; }
+.drawing-question { margin:.5rem 0; padding:.7rem .9rem; background:#fff; border:1px solid #e2e8f0; border-radius:11px; }
+.drawing-question summary { display:flex; gap:.7rem; align-items:baseline; cursor:pointer; font-weight:700; }
+.drawing-question summary span { flex:0 0 auto; color:#be185d; font-size:.82rem; }
+.drawing-options,.drawing-answer { margin:.6rem 0 .2rem 1.4rem; line-height:1.7; }
+.drawing-answer-tag { color:#15803d; font-size:.83rem; }
+.drawing-answer { padding:.65rem; background:#f0fdf4; border-radius:8px; }
+@media (max-width:760px) {
+  .drawing-workspace { display:block; height:auto; max-height:none; overflow:visible; }
+  .drawing-workspace .math-ch-sidebar { height:auto; max-height:38vh; }
+  .drawing-workspace .math-ch-list { display:flex; max-height:28vh; overflow:auto; }
+  .drawing-workspace .math-ch-list .bio-ch-btn { flex:0 0 230px; }
+  .drawing-topic-area { height:auto; max-height:none; padding:1rem .75rem; }
+  .drawing-tip-grid { grid-template-columns:1fr; }
+  .drawing-lesson-head { align-items:flex-start; }
+}
