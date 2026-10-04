@@ -619,7 +619,7 @@ function renderClasses() {
     if (['cls1', 'cls2', 'cls3', 'cls4', 'cls5'].includes(c.id)) {
       const badgeText = c.id === 'cls1' ? 'Drawing ready · 5 subjects in prep'
         : c.id === 'cls2' ? 'Maths & Drawing ready · 4 subjects in prep'
-          : c.id === 'cls3' ? 'Islamyat, Nazira & Drawing ready · 4 subjects in prep'
+          : c.id === 'cls3' ? 'English, GK, Islamyat, Nazira, Pashto & Drawing ready'
           : `${c.subjects} Subjects · In Prep`;
       return { tierName: 'Primary', tierClass: 'tier-primary', badgeText };
     }
@@ -893,6 +893,51 @@ function goToSubjects(classId) {
         topics: ["تجوید قواعد اعادہ (مخارج و حرکات)", "پارہ ۳: تلک الرسل", "پارہ ۴: لن تنالوا", "پارہ ۵: والمحصنت", "پارہ ۶: لا یحب اللہ", "پارہ ۷: واذا سمعوا", "پارہ ۸: ولو اننا"]
       };
     }
+    if (s.id === "cls3-eng" || (s.hasEng && classId === "cls3")) {
+      return {
+        headerColor: "#4f46e5",
+        urduName: "انگریزی (تیسری جماعت)",
+        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeClass: "badge-indigo",
+        metric1Val: "11 Units",
+        metric1Lbl: "Phonics, Stories & 3 Reviews",
+        metric2Val: "90+ Solved Qs",
+        metric2Lbl: "Comprehension & MCQs",
+        metric3Val: "Trilingual",
+        metric3Lbl: "English, Urdu & Pashto",
+        topics: ["All are Welcome", "Gifts of Nature", "The People I Love", "Kindness to Children", "Road Safety", "Day of Silence", "What I Like to Play", "Saving Resources", "My Culture", "Family Picnic", "Healthy Habits"]
+      };
+    }
+    if (s.id === "cls3-gk" || (s.hasGk && classId === "cls3")) {
+      return {
+        headerColor: "#0284c7",
+        urduName: "واقفیتِ عامہ (تیسری جماعت)",
+        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeClass: "badge-sky",
+        metric1Val: "16 ابواب",
+        metric1Lbl: "سائنس، معاشرت و شہریت",
+        metric2Val: "80+ Solved Qs",
+        metric2Lbl: "مشقی سوالات و ایس ایل اوز",
+        metric3Val: "سائنسی فہم",
+        metric3Lbl: "مادہ، توانائی، مسکن اور ایجادات",
+        topics: ["سورج اور سمتیں", "وسائل اور تحفظ", "قائد اعظم و اقبال", "جاندار اور مسکن", "حکومت و شہری", "مادہ و توانائی", "ایجادات و مشینیں", "حفاظت"]
+      };
+    }
+    if (s.id === "cls3-pashto" || (s.hasPashto && classId === "cls3")) {
+      return {
+        headerColor: "#0d9488",
+        urduName: "پښتو لازمي (تیسری جماعت)",
+        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeClass: "badge-green",
+        metric1Val: "33 اسباق",
+        metric1Lbl: "نظمونه، لوستونه، قیصې او متلونه",
+        metric2Val: "140+ Solved Qs",
+        metric2Lbl: "مشغولتیاوې او مشقونه",
+        metric3Val: "ادب او لغت",
+        metric3Lbl: "۳۳ درسي لوستونه او بشپړ فرهنگ",
+        topics: ["حمد او نعت", "حضرت محمد ﷺ او خدیجه رض", "پوره صله او سپرلے", "رحمان بابا او اقبال", "ابلاغي ذريعې او چاپېرچل", "اخترونه او د وعدې پابندي", "کسبونه او د مور مینه"]
+      };
+    }
     if (s.id === "cls1-pashto" || (s.hasPashto && classId === "cls1")) {
       return {
         headerColor: "#0d9488",
@@ -936,6 +981,21 @@ function goToSubjects(classId) {
         metric3Val: "162 SLO Bank",
         metric3Lbl: "90 MCQs · 54 SQs · 18 LQs",
         topics: ["Cell Biology", "Biodiversity", "Bioenergetics", "Cell Cycle", "Nutrition", "Transport", "Practicals"]
+      };
+    }
+    if (s.id === "cls3-math" || (s.hasMath3 && state.selectedClass === "cls3")) {
+      return {
+        headerColor: "#2563eb",
+        urduName: "ریاضی",
+        badgeText: "✓ KPTBB Class 3 Textbook · 7 Units",
+        badgeClass: "badge-blue",
+        metric1Val: "7 Textbook Units",
+        metric1Lbl: "Whole Numbers to Data Handling",
+        metric2Val: "189 Scanned Pages",
+        metric2Lbl: "Lightweight text and vector lessons",
+        metric3Val: "63 Exam Questions",
+        metric3Lbl: "MCQs · Short & Long Questions",
+        topics: ["Whole Numbers", "Number Operations", "Fractions", "Measurement", "Time", "Geometry", "Data Handling"]
       };
     }
     if (s.id === "cls10-math" || (s.hasMath && (isCls10 || state.selectedClass === "cls10"))) {
@@ -1266,13 +1326,13 @@ function openSubject(classId, subjId) {
   } else if (subj.hasPhys || subjId === 'cls9-phy' || subjId === 'cls10-phy') {
     state.activeSubject = "phys";
     openSubjectWorkspace(classId, "phys", subj);
-  } else if (subj.hasEng || subjId === 'cls9-eng' || subjId === 'cls10-eng' || subjId === 'cls1-eng' || subjId === 'cls2-eng') {
+  } else if (subj.hasEng || subjId === 'cls9-eng' || subjId === 'cls10-eng' || subjId === 'cls1-eng' || subjId === 'cls2-eng' || subjId === 'cls3-eng') {
     state.activeSubject = "eng";
     openSubjectWorkspace(classId, "eng", subj);
   } else if (subj.hasUrdu || subjId === 'cls9-urdu' || subjId === 'cls10-urdu' || subjId === 'cls2-urdu') {
     state.activeSubject = "urdu";
     openSubjectWorkspace(classId, "urdu", subj);
-  } else if (subj.hasMath || subjId === 'cls1-math' || subjId === 'cls2-math' || subjId === 'cls9-math' || subjId === 'cls10-math') {
+  } else if (subj.hasMath || subjId === 'cls1-math' || subjId === 'cls2-math' || subjId === 'cls3-math' || subjId === 'cls9-math' || subjId === 'cls10-math') {
     state.activeSubject = "math";
     openMathView(classId, subj);
   } else if (subj.hasPakStudy || subjId === 'cls9-pakstudy' || subjId === 'cls10-pakstudy') {
@@ -1281,13 +1341,13 @@ function openSubject(classId, subjId) {
   } else if (subj.hasNazira || subjId === 'cls1-nazira' || subjId === 'cls2-nazira' || subjId === 'cls3-nazira') {
     state.activeSubject = "nazira";
     openSubjectWorkspace(classId, "nazira", subj);
-  } else if (subj.hasPashto || subjId === 'cls1-pashto' || subjId === 'cls2-pashto') {
+  } else if (subj.hasPashto || subjId === 'cls1-pashto' || subjId === 'cls2-pashto' || subjId === 'cls3-pashto') {
     state.activeSubject = "pashto";
     openSubjectWorkspace(classId, "pashto", subj);
   } else if (subj.hasIsl || subjId === 'cls9-isl' || subjId === 'cls10-isl' || subjId === 'cls1-isl' || subjId === 'cls2-isl' || subjId === 'cls3-isl') {
     state.activeSubject = "isl";
     openSubjectWorkspace(classId, "isl", subj);
-  } else if (subj.hasGk || subjId === 'cls2-gk' || subjId === 'cls1-gk') {
+  } else if (subj.hasGk || subjId === 'cls2-gk' || subjId === 'cls1-gk' || subjId === 'cls3-gk') {
     state.activeSubject = "gk";
     openSubjectWorkspace(classId, "gk", subj);
   } else if (subj.hasComp || subjId === 'cls9-comp' || subjId === 'cls10-comp') {
@@ -13700,6 +13760,9 @@ function getMathChapterList(classId) {
     if (typeof MATH_2_DATA !== 'undefined' && Array.isArray(MATH_2_DATA)) return MATH_2_DATA;
     if (typeof DATA !== 'undefined' && DATA.math2Chapters) return DATA.math2Chapters;
   }
+  if (cid === 'cls3') {
+    if (typeof MATH_3_DATA !== 'undefined' && Array.isArray(MATH_3_DATA)) return MATH_3_DATA;
+  }
   if (cid === 'cls10') {
     if (typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) return MATH_10_DATA;
     if (typeof DATA !== 'undefined' && DATA.math10Chapters) return DATA.math10Chapters;
@@ -13725,12 +13788,14 @@ function openMathView(classId, subj) {
   state.activeMathEx = state.activeMathEx || '1.1';
   state.selectedClass = classId;
   setActiveNav('subjects');
-  const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls1' ? 'Class 1' : (classId === 'cls2' ? 'Class 2' : (classId === 'cls10' ? 'Class 10' : 'Class 9'))) };
+  const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls1' ? 'Class 1' : (classId === 'cls2' ? 'Class 2' : (classId === 'cls3' ? 'Class 3' : (classId === 'cls10' ? 'Class 10' : 'Class 9')))) };
   const chList = getMathChapterList(classId);
   const pdfFile = (classId === 'cls1')
     ? 'file:///D:/SpaceBook/Books/1st/1st%20Maths/PDF/Math%20book%201%20KPTBB.pdf'
     : (classId === 'cls2')
       ? 'file:///D:/SpaceBook/Books/2nd/2nd%20Maths/PDF/Math%20Book%20for%202%20class%20KPTBB.pdf'
+    : (classId === 'cls3')
+      ? 'file:///D:/SpaceBook/Books/3rd/3rd%20Maths/PDF/Math%20book%203%20class%20KPK_page_part_01_of_05.pdf'
     : ((classId === 'cls10')
       ? 'file://DESKTOP-R2HQSAV/SpaceBook/10th Maths/PDF/10th Maths.pdf'
       : 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf');
@@ -14652,6 +14717,21 @@ function renderMathDiagram(item, chapterNumber) {
   if (angle) inner += text(270, 88, angle[1] + "°");
   return figure(inner);
 }
+function renderMath3Textbook(ch) {
+  const escapeText = value => String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[char]));
+  const paragraphs = items => (items || []).map(line => `<p style="margin:0 0 0.45rem;line-height:1.65;white-space:pre-wrap;">${escapeText(line)}</p>`).join('');
+  const front = ch.textbookFrontMatter && ch.textbookFrontMatter.length
+    ? `<details class="math-topic-card" style="margin-bottom:1rem;"><summary style="cursor:pointer;font-weight:700;padding:0.8rem;">Book title, approval and contents pages (${ch.textbookFrontMatter.length} source lines)</summary><div style="padding:0.9rem 1.1rem;color:#334155;">${paragraphs(ch.textbookFrontMatter)}</div></details>`
+    : '';
+  const back = ch.textbookBackMatter && ch.textbookBackMatter.length
+    ? `<details class="math-topic-card" style="margin-top:1rem;"><summary style="cursor:pointer;font-weight:700;padding:0.8rem;">Book appendices and closing pages (${ch.textbookBackMatter.length} source lines)</summary><div style="padding:0.9rem 1.1rem;color:#334155;">${paragraphs(ch.textbookBackMatter)}</div></details>`
+    : '';
+  return `<div class="math3-book-text">
+    <div class="math-toolbar" style="margin-bottom:1rem;"><div><h3 style="margin:0 0 0.3rem;color:#0f172a;">Complete Book Text · Unit ${ch.number}</h3><span style="color:#64748b;font-size:0.86rem;">Text paragraphs from the supplied Word companion, in source order. Scanned workbook images are not loaded by this page.</span></div></div>
+    ${front}<article class="math-topic-card" style="padding:1.15rem 1.3rem;color:#334155;">${paragraphs(ch.textbookText)}</article>${back}
+  </div>`;
+}
+
 function switchMathTab(tabName, skipScroll) {
   state.activeMathTab = tabName;
   document.querySelectorAll('.math-top-tab, .math-tab-btn, .bio-tab-btn').forEach(btn =>
@@ -14672,6 +14752,8 @@ function switchMathTab(tabName, skipScroll) {
     container.innerHTML = renderMathSLOs(ch);
   } else if (tabName === 'formulas') {
     container.innerHTML = renderMathFormulaSheet(ch);
+  } else if (tabName === 'textbook') {
+    container.innerHTML = renderMath3Textbook(ch);
   }
 
   typesetChapterMath(container);
@@ -14782,6 +14864,7 @@ function renderMathChapter(index) {
       <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'formulas' ? 'active' : ''}" data-tab="formulas" onclick="switchMathTab('formulas')">
         📐 5. Formulas &amp; Summary
       </button>
+      ${state.selectedClass === 'cls3' ? `<button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'textbook' ? 'active' : ''}" data-tab="textbook" onclick="switchMathTab('textbook')">📚 Complete Book Text</button>` : ''}
     </div>
 
     <!-- Main Dynamic Tab Content (with internal smooth scrollbar) -->
@@ -14819,7 +14902,7 @@ function renderMathLesson(ch) {
           <button class="topic-sub-tab-btn" data-subtab="exercise" onclick="switchMathTopicSubTab('${sec.id}', 'exercise', this)">✍️ Topic Exercise</button>
           <button class="topic-sub-tab-btn" data-subtab="slos" onclick="switchMathTopicSubTab('${sec.id}', 'slos', this)">🎯 Topic SLOs</button>
         </div>
-        ${renderMathDiagram(sec, ch.number) || renderPrimaryMathDiagram(state.selectedClass, ch.number, sec.id, sec)}
+        ${(state.selectedClass === 'cls3' && typeof renderClass3MathDiagram === 'function' ? renderClass3MathDiagram(sec) : '') || renderMathDiagram(sec, ch.number) || renderPrimaryMathDiagram(state.selectedClass, ch.number, sec.id, sec)}
         <div id="math-topic-sub-content-${sec.id}" class="topic-sub-content">
           ${renderMathTopicSubContent(sec, ch, 'english', idx)}
         </div>
@@ -16286,6 +16369,10 @@ function getSubjectChapterList(subjKey, classId) {
     if (isCls10 && typeof ENGLISH_10_DATA !== 'undefined' && Array.isArray(ENGLISH_10_DATA)) {
       return ENGLISH_10_DATA;
     }
+    const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
+    if (isCls3 && typeof ENGLISH_3_DATA !== 'undefined' && Array.isArray(ENGLISH_3_DATA)) {
+      return ENGLISH_3_DATA;
+    }
     const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
     if (isCls2 && typeof ENGLISH_2_DATA !== 'undefined' && Array.isArray(ENGLISH_2_DATA)) {
       return ENGLISH_2_DATA;
@@ -16373,6 +16460,10 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.nazira1Chapters) ? DATA.nazira1Chapters : [];
   }
   if (subjKey === 'pashto') {
+    const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
+    if (isCls3 && typeof PASHTO_3_DATA !== 'undefined' && Array.isArray(PASHTO_3_DATA)) {
+      return PASHTO_3_DATA;
+    }
     const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
     if (isCls2 && typeof PASHTO_2_DATA !== 'undefined' && Array.isArray(PASHTO_2_DATA)) {
       return PASHTO_2_DATA;
@@ -16383,6 +16474,10 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.pashto1Chapters) ? DATA.pashto1Chapters : [];
   }
   if (subjKey === 'gk') {
+    const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
+    if (isCls3 && typeof GK_3_DATA !== 'undefined' && Array.isArray(GK_3_DATA)) {
+      return GK_3_DATA;
+    }
     const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
     if (isCls2 && typeof GK_2_DATA !== 'undefined' && Array.isArray(GK_2_DATA)) {
       return GK_2_DATA;

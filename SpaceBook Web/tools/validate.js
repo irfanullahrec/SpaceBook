@@ -20,7 +20,7 @@ const DATA_FILES = [
   'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js',
   'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'math_2_data.js',
   'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js',
-  'islamyat_3_data.js', 'nazira_3_data.js'
+  'islamyat_3_data.js', 'nazira_3_data.js', 'english_3_data.js', 'gk_3_data.js', 'pashto_3_data.js'
 ];
 
 let pass = 0, fail = 0;
@@ -99,6 +99,10 @@ if (D) {
   check('DATA.pashto2Chapters = 28', (sb.PASHTO_2_DATA && sb.PASHTO_2_DATA.length === 28) || (D.pashto2Chapters && D.pashto2Chapters.length === 28), 'got ' + ((sb.PASHTO_2_DATA || D.pashto2Chapters || []).length));
   check('DATA.islamyat3Chapters = 18', (sb.ISLAMYAT_3_DATA && sb.ISLAMYAT_3_DATA.length === 18) || (D.islamyat3Chapters && D.islamyat3Chapters.length === 18), 'got ' + ((sb.ISLAMYAT_3_DATA || D.islamyat3Chapters || []).length));
   check('DATA.nazira3Chapters = 16', (sb.NAZIRA_3_DATA && sb.NAZIRA_3_DATA.length === 16) || (D.nazira3Chapters && D.nazira3Chapters.length === 16), 'got ' + ((sb.NAZIRA_3_DATA || D.nazira3Chapters || []).length));
+  check('DATA.eng3Chapters = 11', (sb.ENGLISH_3_DATA && sb.ENGLISH_3_DATA.length === 11) || (D.eng3Chapters && D.eng3Chapters.length === 11), 'got ' + ((sb.ENGLISH_3_DATA || D.eng3Chapters || []).length));
+  check('DATA.gk3Chapters = 16', (sb.GK_3_DATA && sb.GK_3_DATA.length === 16) || (D.gk3Chapters && D.gk3Chapters.length === 16), 'got ' + ((sb.GK_3_DATA || D.gk3Chapters || []).length));
+  check('DATA.pashto3Chapters = 33', (sb.PASHTO_3_DATA && sb.PASHTO_3_DATA.length === 33) || (D.pashto3Chapters && D.pashto3Chapters.length === 33), 'got ' + ((sb.PASHTO_3_DATA || D.pashto3Chapters || []).length));
+  check('Class 3 subjects registered', ['cls3-eng', 'cls3-gk', 'cls3-pashto', 'cls3-isl', 'cls3-nazira', 'cls3-drawing'].every(id => (D.subjects.cls3 || []).some(s => s.id === id)));
   check('DATA.mathChapters present (from math_data.js)', Array.isArray(D.mathChapters) && D.mathChapters.length > 0, 'got ' + (D.mathChapters ? D.mathChapters.length : 0));
   check('DATA.math10Chapters = 13 (from math_10_data.js)', (sb.MATH_10_DATA && sb.MATH_10_DATA.length === 13) || (D.math10Chapters && D.math10Chapters.length === 13), 'got ' + ((sb.MATH_10_DATA || D.math10Chapters || []).length));
   check('islamic subjects registered', ['cls9-isl', 'cls10-isl', 'cls1-isl', 'cls1-nazira', 'cls2-isl', 'cls2-nazira', 'cls3-isl', 'cls3-nazira'].every(id => [].concat(D.subjects.cls9, D.subjects.cls10, D.subjects.cls1, D.subjects.cls2, D.subjects.cls3).some(s => s.id === id)));
@@ -293,6 +297,34 @@ if (NAZ3) {
   check('NAZIRA_3_DATA present', false);
 }
 
+const EN3 = sb.ENGLISH_3_DATA;
+if (EN3) {
+  check('ENGLISH_3_DATA units = 11', EN3.length === 11, 'got ' + EN3.length);
+  check('ENGLISH_3_DATA unit 1 has sections', EN3[0] && Array.isArray(EN3[0].sections) && EN3[0].sections.length > 0);
+  check('ENGLISH_3_DATA unit 1 has exercise', EN3[0] && !!EN3[0].exercise);
+  check('ENGLISH_3_DATA registered on DATA.eng3Chapters', Array.isArray(D.eng3Chapters) && D.eng3Chapters.length === 11);
+} else {
+  check('ENGLISH_3_DATA present', false);
+}
+
+const GK3 = sb.GK_3_DATA;
+if (GK3) {
+  check('GK_3_DATA chapters = 16', GK3.length === 16, 'got ' + GK3.length);
+  check('GK_3_DATA chapter 1 has sections', GK3[0] && Array.isArray(GK3[0].sections) && GK3[0].sections.length > 0);
+  check('GK_3_DATA registered on DATA.gk3Chapters', Array.isArray(D.gk3Chapters) && D.gk3Chapters.length === 16);
+} else {
+  check('GK_3_DATA present', false);
+}
+
+const PS3 = sb.PASHTO_3_DATA;
+if (PS3) {
+  check('PASHTO_3_DATA units = 33', PS3.length === 33, 'got ' + PS3.length);
+  check('PASHTO_3_DATA unit 1 has sections', PS3[0] && Array.isArray(PS3[0].sections) && PS3[0].sections.length > 0);
+  check('PASHTO_3_DATA registered on DATA.pashto3Chapters', Array.isArray(D.pashto3Chapters) && D.pashto3Chapters.length === 33);
+} else {
+  check('PASHTO_3_DATA present', false);
+}
+
 check('ENG_UNIT_VOCAB_WORDS lexicon', !!(sb.ENG_UNIT_VOCAB_WORDS && sb.ENG_UNIT_VOCAB_WORDS[2]), 'missing from dictionary_data.js');
 check('lookupEngWord()', typeof sb.lookupEngWord === 'function');
 
@@ -316,6 +348,9 @@ check('index.html loads Class 2 English, Urdu, Islamyat, Nazira, GK, Pashto data
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 3 Islamyat and Nazira datasets', [
   'js/islamyat_3_data.js', 'js/nazira_3_data.js'
+].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
+check('index.html loads Class 3 English, GK, Pashto datasets', [
+  'js/english_3_data.js', 'js/gk_3_data.js', 'js/pashto_3_data.js'
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 ['js/data_chem.js', 'js/data_phys.js', 'js/data_eng.js', 'js/data_bio.js', 'js/data_comp.js'].forEach(s => check('index.html loads ' + s, srcs.includes(s)));
 const missingSrc = srcs.filter(s => !fs.existsSync(path.join(ROOT, s)));

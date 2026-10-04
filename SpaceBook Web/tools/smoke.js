@@ -3,7 +3,7 @@ const vm = require('vm');
 
 const path = require('path');
 const DIR = path.resolve(__dirname, '../js') + path.sep;
-const files = ['data.js', 'drawing_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js', 'math_2_data.js', 'math_primary_visuals.js', 'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js', 'islamyat_3_data.js', 'nazira_3_data.js'];
+const files = ['data.js', 'drawing_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js', 'math_2_data.js', 'math_primary_visuals.js', 'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js', 'islamyat_3_data.js', 'nazira_3_data.js', 'english_3_data.js', 'gk_3_data.js', 'pashto_3_data.js'];
 
 function makeEl(id) {
   const style = {};
@@ -265,6 +265,31 @@ run("CLASS 3 switchSubjectTab nazira lesson", `switchSubjectTab('nazira', 'lesso
 run("CLASS 3 switchSubjectTab nazira exercise", `switchSubjectTab('nazira', 'exercise', 0, 'cls3')`);
 run("CLASS 3 switchSubjectTab nazira slos", `switchSubjectTab('nazira', 'slos', 0, 'cls3')`);
 run("CLASS 3 selectSubjectChapter nazira 15 (Lesson 16)", `selectSubjectChapter('nazira', 15, 'cls3')`);
+
+run("CLASS 3 openSubject cls3-eng", `openSubject('cls3','cls3-eng')`);
+run("CLASS 3 selectSubjectChapter eng 0", `selectSubjectChapter('eng', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab eng lesson", `switchSubjectTab('eng', 'lesson', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab eng exercise", `switchSubjectTab('eng', 'exercise', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab eng slos", `switchSubjectTab('eng', 'slos', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab eng words", `switchSubjectTab('eng', 'words', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab eng grammar", `switchSubjectTab('eng', 'grammar', 0, 'cls3')`);
+run("CLASS 3 selectSubjectChapter eng 10 (Unit 11)", `selectSubjectChapter('eng', 10, 'cls3')`);
+
+run("CLASS 3 openSubject cls3-gk", `openSubject('cls3','cls3-gk')`);
+run("CLASS 3 selectSubjectChapter gk 0", `selectSubjectChapter('gk', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab gk lesson", `switchSubjectTab('gk', 'lesson', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab gk exercise", `switchSubjectTab('gk', 'exercise', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab gk slos", `switchSubjectTab('gk', 'slos', 0, 'cls3')`);
+run("CLASS 3 selectSubjectChapter gk 15 (Chapter 16)", `selectSubjectChapter('gk', 15, 'cls3')`);
+
+run("CLASS 3 openSubject cls3-pashto", `openSubject('cls3','cls3-pashto')`);
+run("CLASS 3 selectSubjectChapter pashto 0", `selectSubjectChapter('pashto', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab pashto lesson", `switchSubjectTab('pashto', 'lesson', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab pashto exercise", `switchSubjectTab('pashto', 'exercise', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab pashto slos", `switchSubjectTab('pashto', 'slos', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab pashto words", `switchSubjectTab('pashto', 'words', 0, 'cls3')`);
+run("CLASS 3 switchSubjectTab pashto grammar", `switchSubjectTab('pashto', 'grammar', 0, 'cls3')`);
+run("CLASS 3 selectSubjectChapter pashto 32 (Lesson 33)", `selectSubjectChapter('pashto', 32, 'cls3')`);
 
 run("REGRESSION renderClasses", `renderClasses()`);
 run("REGRESSION handleGlobalSearch('islam')", `handleGlobalSearch("islam")`);
