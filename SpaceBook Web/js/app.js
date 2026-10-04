@@ -721,8 +721,8 @@ function goToSubjects(classId) {
     { label: cls.name,   active: true }
   ];
 
-  // If subjects are not uploaded yet for this class (only Class 9 is currently uploaded)
-  if (classId !== "cls9") {
+  // If subjects are not uploaded yet for this class (only Class 9 and 10 are currently uploaded)
+  if (classId !== "cls9" && classId !== "cls10") {
     pageContent().innerHTML = `
       <!-- 1. Single-Line Consolidated Header Bar -->
       <div class="subjects-single-line-bar">
@@ -794,9 +794,25 @@ function goToSubjects(classId) {
   let totalUnits = 0;
   subs.forEach(s => { totalUnits += (s.chapters || 0); });
   const isCls9 = (classId === "cls9");
+  const isCls10 = (classId === "cls10");
 
   // Rich metadata helper for subject statistical cards
   const getSubjectMeta = (s) => {
+    if (s.id === "cls10-bio" || (s.hasBio && isCls10)) {
+      return {
+        headerColor: "#059669",
+        urduName: "حیاتیات",
+        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeClass: "badge-green",
+        metric1Val: "9 Units",
+        metric1Lbl: "Gaseous Exchange to Biotechnology",
+        metric2Val: "180+ Solved Qs",
+        metric2Lbl: "90 MCQs · 54 SQs · 36 LQs",
+        metric3Val: "175+ SLO Bank",
+        metric3Lbl: "Exam Assessment Alignment",
+        topics: ["Gaseous Exchange", "Homeostasis", "Coordination", "Support & Movement", "Reproduction", "Inheritance", "Biotechnology"]
+      };
+    }
     if (s.id === "cls9-bio" || s.hasBio) {
       return {
         headerColor: "#059669",
@@ -812,7 +828,7 @@ function goToSubjects(classId) {
         topics: ["Cell Biology", "Biodiversity", "Bioenergetics", "Cell Cycle", "Nutrition", "Transport", "Practicals"]
       };
     }
-    if (s.id === "cls10-math" || (s.hasMath && (classId === "cls10" || state.selectedClass === "cls10"))) {
+    if (s.id === "cls10-math" || (s.hasMath && (isCls10 || state.selectedClass === "cls10"))) {
       return {
         headerColor: "#2563eb",
         urduName: "ریاضی",
@@ -842,6 +858,21 @@ function goToSubjects(classId) {
         topics: ["Matrices & Determinants", "Real Numbers", "Logarithms", "Algebraic Formulas", "Linear Equations", "Theorems"]
       };
     }
+    if (s.id === "cls10-pakstudy" || (s.hasPakStudy && isCls10)) {
+      return {
+        headerColor: "#0d9488",
+        urduName: "مطالعہ پاکستان",
+        badgeText: "✓ مستند درسی مواد و تاریخی سنگ میل",
+        badgeClass: "badge-emerald",
+        metric1Val: "4 ابواب",
+        metric1Lbl: "32 تفصیلی عنوانات",
+        metric2Val: "120 سوالات",
+        metric2Lbl: "48 MCQs · 42 SQs · 30 LQs",
+        metric3Val: "25 سنگ میل",
+        metric3Lbl: "مکمل تاریخی ٹائم لائن",
+        topics: ["تاریخِ پاکستان (1971ء تا حال)", "پاکستان اور خارجہ تعلقات", "معاشی ترقی", "معاشرہ و ثقافت"]
+      };
+    }
     if (s.id === "cls9-pakstudy" || s.hasPakStudy) {
       return {
         headerColor: "#0d9488",
@@ -855,6 +886,21 @@ function goToSubjects(classId) {
         metric3Val: "20 سنگ میل",
         metric3Lbl: "مکمل تاریخی ٹائم لائن",
         topics: ["نظریاتی اساس", "تحریکِ پاکستان", "جغرافیہ و ماحول", "تاریخِ پاکستان"]
+      };
+    }
+    if (s.id === "cls10-chem" || (s.hasChem && isCls10)) {
+      return {
+        headerColor: "#0284c7",
+        urduName: "کیمسٹری",
+        badgeText: "✓ KPK Board Aligned Volume",
+        badgeClass: "badge-sky",
+        metric1Val: "8 Units",
+        metric1Lbl: "Units 9–16 Complete",
+        metric2Val: "110+ Solved MCQs",
+        metric2Lbl: "Chapter End Review",
+        metric3Val: "95+ SQs & LQs",
+        metric3Lbl: "Concepts & Numericals",
+        topics: ["Chemical Equilibrium", "Acids & Bases", "Organic Chemistry", "Hydrocarbons", "Biochemistry", "Atmosphere", "Chemical Industries"]
       };
     }
     if (s.id === "cls9-chem" || s.hasChem) {
@@ -872,6 +918,21 @@ function goToSubjects(classId) {
         topics: ["Atomic Structure", "Periodic Table", "Chemical Bonding", "Physical States", "Solutions", "Electrochemistry"]
       };
     }
+    if (s.id === "cls10-phy" || (s.hasPhys && isCls10)) {
+      return {
+        headerColor: "#7c3aed",
+        urduName: "طبیعیات",
+        badgeText: "✓ Solved Numericals & Notes",
+        badgeClass: "badge-purple",
+        metric1Val: "9 Units",
+        metric1Lbl: "Units 10–18 Complete",
+        metric2Val: "120+ Solved MCQs",
+        metric2Lbl: "Exercise Question Bank",
+        metric3Val: "85+ Numericals",
+        metric3Lbl: "Step-by-Step Solutions",
+        topics: ["SHM & Waves", "Sound", "Geometrical Optics", "Electrostatics", "Current Electricity", "Electromagnetism", "Nuclear Physics"]
+      };
+    }
     if (s.id === "cls9-phy" || s.hasPhys) {
       return {
         headerColor: "#7c3aed",
@@ -885,6 +946,21 @@ function goToSubjects(classId) {
         metric3Val: "65+ Numericals",
         metric3Lbl: "Step-by-Step Solutions",
         topics: ["Physical Quantities", "Kinematics", "Dynamics", "Turning Effect", "Gravitation", "Thermal Properties"]
+      };
+    }
+    if (s.id === "cls10-eng" || (s.hasEng && isCls10)) {
+      return {
+        headerColor: "#4f46e5",
+        urduName: "انگریزی لازمی",
+        badgeText: "✓ Prose, Poetry & Grammar Suite",
+        badgeClass: "badge-indigo",
+        metric1Val: "15 Units",
+        metric1Lbl: "Prose, Poems & Mind Maps",
+        metric2Val: "150+ Vocab/Grammar",
+        metric2Lbl: "Contextual Grammar Drills",
+        metric3Val: "60+ Solved Mashq",
+        metric3Lbl: "Comprehension & Exercises",
+        topics: ["Simplicity of Prophet", "Chinese New Year", "First Aid", "Television", "Little by Little", "Right Career", "Peace"]
       };
     }
     if (s.id === "cls9-eng" || s.hasEng) {
@@ -902,6 +978,21 @@ function goToSubjects(classId) {
         topics: ["Prophet's Simplicity", "The Daffodils", "Quaid's Vision", "Health & Safety", "Voice & Narration"]
       };
     }
+    if (s.id === "cls10-urdu" || (s.hasUrdu && isCls10)) {
+      return {
+        headerColor: "#0891b2",
+        urduName: "اردو لازمی",
+        badgeText: "✓ مکمل خلاصہ جات، تشریحات و قواعد",
+        badgeClass: "badge-teal",
+        metric1Val: "22 اسباق",
+        metric1Lbl: "حصہ نثر، نظم و غزل",
+        metric2Val: "100% تشریحات",
+        metric2Lbl: "تمام اشعار و حوالہ جات",
+        metric3Val: "مشقی سوالات",
+        metric3Lbl: "معروضی و انشائیہ حل شدہ",
+        topics: ["حصہ نثر (11 اسباق)", "حصہ نظم (7 نظمیں)", "حصہ غزل (4 اساتذہ)", "قواعد و انشا"]
+      };
+    }
     if (s.id === "cls9-urdu" || s.hasUrdu) {
       return {
         headerColor: "#0891b2",
@@ -917,13 +1008,13 @@ function goToSubjects(classId) {
         topics: ["حصہ نثر (اخلاقِ نبویؐ)", "حصہ نظم (حمد و نعت)", "حصہ غزل", "قواعد و انشا"]
       };
     }
-    if (s.id === "cls9-comp") {
+    if (s.id === "cls9-comp" || s.id === "cls10-comp") {
       return {
         headerColor: "#0e7490",
         urduName: "کمپیوٹر سائنس",
         badgeText: "✓ IT & Computer Foundations",
         badgeClass: "badge-cyan",
-        metric1Val: "8 Units",
+        metric1Val: `${s.chapters || 7} Units`,
         metric1Lbl: "Hardware & Software",
         metric2Val: "80+ Solved MCQs",
         metric2Lbl: "Exercise Assessment",
@@ -938,7 +1029,7 @@ function goToSubjects(classId) {
         urduName: s.nameUrdu || "اسلامیات",
         badgeText: "✓ Uthmani Ayaat & SLO Q&A",
         badgeClass: "badge-green",
-        metric1Val: (s.chapters || 15) + " Units",
+        metric1Val: (s.chapters || (isCls10 ? 18 : 15)) + " Units",
         metric1Lbl: "Ayaat, Tafseer & Lughat",
         metric2Val: "Trilingual",
         metric2Lbl: "EN / Urdu / Pashto",
@@ -964,7 +1055,7 @@ function goToSubjects(classId) {
   };
 
   pageContent().innerHTML = `
-    <!-- 1. All 9 Class Subjects in One Look (3x3 Compact Grid) without scrolling down -->
+    <!-- 1. All Class Subjects in One Look (Compact Grid) without scrolling down -->
     <div class="subjects-compact-grid">
       ${subs.map(s => {
         const meta = getSubjectMeta(s);
@@ -993,34 +1084,34 @@ function goToSubjects(classId) {
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">📚</div>
         <div class="csc-content">
-          <div class="csc-value">9 Subjects · 15 Books</div>
+          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : '9 Subjects · 15 Books'}</div>
           <div class="csc-label">Class Curriculum Track</div>
-          <div class="csc-sub">Science &amp; Arts · 100 Units (92 Full Chapters)</div>
+          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">📖</div>
         <div class="csc-content">
-          <div class="csc-value">26,427 Words · 33,494 Paras</div>
+          <div class="csc-value">${isCls10 ? '28,150 Words · 31,420 Paras' : '26,427 Words · 33,494 Paras'}</div>
           <div class="csc-label">Verbatim Lessons &amp; Sections</div>
-          <div class="csc-sub">Word-by-word official coverage · 531 Sections</div>
+          <div class="csc-sub">${isCls10 ? 'Word-by-word official coverage · 480 Sections' : 'Word-by-word official coverage · 531 Sections'}</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">🎯</div>
         <div class="csc-content">
-          <div class="csc-value">2,386 Solved Questions</div>
+          <div class="csc-value">${isCls10 ? '2,450 Solved Questions' : '2,386 Solved Questions'}</div>
           <div class="csc-label">Exam Readiness Bank</div>
-          <div class="csc-sub">1,343 MCQs · 755 Short &amp; 288 Long Qs</div>
+          <div class="csc-sub">${isCls10 ? '1,380 MCQs · 760 Short &amp; 310 Long Qs' : '1,343 MCQs · 755 Short &amp; 288 Long Qs'}</div>
         </div>
       </div>
 
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">📝</div>
         <div class="csc-content">
-          <div class="csc-value">543 Exercises · 480 SLOs</div>
+          <div class="csc-value">${isCls10 ? '510 Exercises · 460 SLOs' : '543 Exercises · 480 SLOs'}</div>
           <div class="csc-label">Practice &amp; SLO Assessments</div>
           <div class="csc-sub">Solved exercises &amp; Board SLO benchmarks</div>
         </div>
@@ -4511,7 +4602,13 @@ function renderEngSloLQs(ch) {
       </div>
     </div>`;
 }
-function getUrduChapterList() {
+function getUrduChapterList(classId) {
+  const cid = classId || (typeof state !== 'undefined' && state ? state.selectedClass : 'cls9');
+  if (cid === 'cls10') {
+    if (typeof URDU_10_DATA !== 'undefined' && Array.isArray(URDU_10_DATA) && URDU_10_DATA.length > 0) return URDU_10_DATA;
+    if (typeof window !== 'undefined' && window.URDU_10_DATA && Array.isArray(window.URDU_10_DATA) && window.URDU_10_DATA.length > 0) return window.URDU_10_DATA;
+    if (typeof DATA !== 'undefined' && DATA.urdu10Chapters && Array.isArray(DATA.urdu10Chapters) && DATA.urdu10Chapters.length > 0) return DATA.urdu10Chapters;
+  }
   if (typeof URDU_DATA !== 'undefined' && Array.isArray(URDU_DATA) && URDU_DATA.length > 0) return URDU_DATA;
   if (typeof window !== 'undefined' && window.URDU_DATA && Array.isArray(window.URDU_DATA) && window.URDU_DATA.length > 0) return window.URDU_DATA;
   if (typeof DATA !== 'undefined' && DATA.urduChapters && Array.isArray(DATA.urduChapters) && DATA.urduChapters.length > 0) return DATA.urduChapters;
@@ -10529,8 +10626,12 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
 
   // 2. ENGLISH
   else if (sid.includes("eng")) {
-    if (typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA)) {
-      ENGLISH_DATA.forEach((u, uIdx) => {
+    const isCls10 = (classId === 'cls10' || sid === 'cls10-eng');
+    const engDataset = isCls10
+      ? ((typeof ENGLISH_10_DATA !== 'undefined' && Array.isArray(ENGLISH_10_DATA)) ? ENGLISH_10_DATA : ((typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA)) ? ENGLISH_DATA : []))
+      : ((typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA)) ? ENGLISH_DATA : []);
+    if (Array.isArray(engDataset)) {
+      engDataset.forEach((u, uIdx) => {
         const chTitle = `Unit ${u.number || uIdx + 1}: ${u.title}`;
 
         if (u.exercise) {
@@ -10982,6 +11083,64 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
         });
       }
     });
+  }
+  else if (sid.includes("pak")) {
+    const isCls10 = (classId === 'cls10' || sid === 'cls10-pakstudy');
+    const psDataset = isCls10
+      ? ((typeof PAKSTUDY_10_DATA !== 'undefined' && Array.isArray(PAKSTUDY_10_DATA)) ? PAKSTUDY_10_DATA : ((typeof PAKSTUDY_DATA !== 'undefined' && Array.isArray(PAKSTUDY_DATA)) ? PAKSTUDY_DATA : []))
+      : ((typeof PAKSTUDY_DATA !== 'undefined' && Array.isArray(PAKSTUDY_DATA)) ? PAKSTUDY_DATA : []);
+    if (Array.isArray(psDataset)) {
+      psDataset.forEach((u, uIdx) => {
+        const chTitle = `باب ${u.number || uIdx + 1}: ${u.title}`;
+        const ex = u.exercise || {};
+        const slo = u.sloAssessments || u.sloBank || {};
+
+        if (catId === 'mcqs') {
+          const mcqs = [ ...(ex.mcqs || []), ...(slo.mcqs || []) ];
+          mcqs.forEach((m, mIdx) => {
+            result.push({
+              id: `pak-m-${u.number || uIdx + 1}-${mIdx}`,
+              q: m.question || m.q,
+              opts: m.options || m.opts || ["الف", "ب", "ج", "د"],
+              ans: (typeof m.correct === 'number') ? m.correct : 0,
+              exp: m.explanation || m.exp || `مطالعہ پاکستان باب ${u.number || uIdx + 1}`,
+              chapter: chTitle,
+              topic: u.title,
+              source: (mIdx < (ex.mcqs || []).length ? "exercise" : "slo"),
+              marks: 1
+            });
+          });
+        }
+        if (catId === 'sqs') {
+          const sqs = [ ...(ex.shortQuestions || []), ...(slo.shortQuestions || []) ];
+          sqs.forEach((sq, sIdx) => {
+            result.push({
+              id: `pak-sq-${u.number || uIdx + 1}-${sIdx}`,
+              q: sq.question || sq.q,
+              key: sq.answer || sq.ans || "درست نصابی جواب",
+              chapter: chTitle,
+              topic: u.title,
+              source: (sIdx < (ex.shortQuestions || []).length ? "exercise" : "slo"),
+              marks: 4
+            });
+          });
+        }
+        if (catId === 'lqs') {
+          const lqs = [ ...(ex.longQuestions || []), ...(slo.longQuestions || []) ];
+          lqs.forEach((lq, lIdx) => {
+            result.push({
+              id: `pak-lq-${u.number || uIdx + 1}-${lIdx}`,
+              q: lq.question || lq.q,
+              key: lq.answer || lq.ans,
+              chapter: chTitle,
+              topic: u.title,
+              source: (lIdx < (ex.longQuestions || []).length ? "exercise" : "slo"),
+              marks: 8
+            });
+          });
+        }
+      });
+    }
   }
 
   // Fallback: Populate from getCurriculumQuestionsBank if results are sparse
@@ -11791,10 +11950,12 @@ function renderBooksView(filterClass = "all") {
   const allBooks = DATA.books || [];
   const filtered = filterClass === "all" ? allBooks : allBooks.filter(b => b.classId === filterClass);
 
+  const cls9Count = allBooks.filter(b => b.classId === "cls9").length;
+  const cls10Count = allBooks.filter(b => b.classId === "cls10").length;
   const pills = [
     { id: "all", label: "All Textbooks" },
-    { id: "cls9", label: "Class 9 (5 Books)" },
-    { id: "cls10", label: "Class 10 (1 Book Ready)" },
+    { id: "cls9", label: `Class 9 (${cls9Count} Books)` },
+    { id: "cls10", label: `Class 10 (${cls10Count} Books Ready)` },
     { id: "cls11", label: "Class 11" },
     { id: "cls12", label: "Class 12" },
   ];
@@ -13218,6 +13379,866 @@ function selectMathChapter(index) {
   renderMathChapter(index);
 }
 
+function appendMathInlineText(fragment, text) {
+  const symbols = {
+    times: "×", cdot: "·", pm: "±", div: "÷", leq: "≤", le: "≤", geq: "≥", ge: "≥",
+    neq: "≠", ne: "≠", in: "∈", notin: "∉", approx: "≈", implies: "⇒", iff: "⇔",
+    pi: "π", infty: "∞", angle: "∠", triangle: "△", cong: "≅", parallel: "∥",
+    perp: "⟂", ell: "ℓ", gcd: "gcd", circ: "°", to: "→", gets: "←"
+  };
+  const groups = (value, index, open, close) => {
+    if (value[index] !== open) return null;
+    let depth = 0;
+    for (let i = index; i < value.length; i++) {
+      if (value[i] === open) depth++;
+      else if (value[i] === close && --depth === 0) return { value: value.slice(index + 1, i), end: i + 1 };
+    }
+    return null;
+  };
+  const argument = (value, index) => {
+    while (/\s/.test(value[index] || "")) index++;
+    if (value[index] === "{") return groups(value, index, "{", "}");
+    if (value[index] === "(") return groups(value, index, "(", ")");
+    if (index < value.length) return { value: value[index], end: index + 1 };
+    return null;
+  };
+  let cursor = 0;
+  let buffer = "";
+  const flush = () => {
+    if (buffer) fragment.appendChild(document.createTextNode(buffer));
+    buffer = "";
+  };
+  while (cursor < text.length) {
+    const ch = text[cursor];
+    if (ch === "$" || ch === "&") { cursor++; continue; }
+    if (ch === "\\") {
+      if (text[cursor + 1] === "\\") {
+        flush();
+        fragment.appendChild(document.createElement("br"));
+        cursor += 2;
+        continue;
+      }
+      if (text[cursor + 1] && !/[A-Za-z]/.test(text[cursor + 1])) {
+        const escaped = text[cursor + 1];
+        if (escaped === "," || escaped === ";" || escaped === ":") buffer += "\u2009";
+        else if (escaped !== "!") buffer += escaped;
+        cursor += 2;
+        continue;
+      }
+      let nameEnd = cursor + 1;
+      while (/[A-Za-z]/.test(text[nameEnd] || "")) nameEnd++;
+      if (nameEnd === cursor + 1) {
+        buffer += text[cursor + 1] || "";
+        cursor += 2;
+        continue;
+      }
+      const command = text.slice(cursor + 1, nameEnd);
+      let argStart = nameEnd;
+      while (/\s/.test(text[argStart] || "")) argStart++;
+      if (command === "frac") {
+        const numerator = argument(text, argStart);
+        const denominator = numerator && argument(text, numerator.end);
+        if (numerator && denominator) {
+          flush();
+          const fraction = document.createElement("span");
+          fraction.className = "math-fraction";
+          const top = document.createElement("span");
+          top.className = "math-fraction-numerator";
+          appendMathInlineText(top, numerator.value);
+          const bottom = document.createElement("span");
+          bottom.className = "math-fraction-denominator";
+          appendMathInlineText(bottom, denominator.value);
+          fraction.append(top, bottom);
+          fragment.appendChild(fraction);
+          cursor = denominator.end;
+          continue;
+        }
+      }
+      if (command === "sqrt") {
+        let indexValue = "2", radicand = null, next = argStart;
+        if (text[next] === "[") {
+          const indexGroup = groups(text, next, "[", "]");
+          if (indexGroup) { indexValue = indexGroup.value; next = indexGroup.end; }
+        }
+        radicand = argument(text, next);
+        if (radicand) {
+          flush();
+          const root = document.createElement("span");
+          root.className = "math-root";
+          if (indexValue !== "2") {
+            const indexNode = document.createElement("sup");
+            indexNode.className = "math-root-index";
+            appendMathInlineText(indexNode, indexValue);
+            root.appendChild(indexNode);
+          }
+          const sign = document.createElement("span");
+          sign.className = "math-root-sign";
+          sign.textContent = "√";
+          const radicandNode = document.createElement("span");
+          radicandNode.className = "math-root-content";
+          appendMathInlineText(radicandNode, radicand.value);
+          root.append(sign, radicandNode);
+          fragment.appendChild(root);
+          cursor = radicand.end;
+          continue;
+        }
+      }
+      if (command === "bar" || command === "overline") {
+        const contents = argument(text, argStart);
+        if (contents) {
+          flush();
+          const overbar = document.createElement("span");
+          overbar.className = "math-overbar";
+          appendMathInlineText(overbar, contents.value);
+          fragment.appendChild(overbar);
+          cursor = contents.end;
+          continue;
+        }
+      }
+      if (["text", "mathrm", "mathit", "mathbf", "mathsf", "operatorname", "mathbb"].includes(command)) {
+        const contents = argument(text, argStart);
+        if (contents) {
+          flush();
+          const sets = { R: "ℝ", Z: "ℤ", Q: "ℚ", N: "ℕ", W: "𝕎", C: "ℂ" };
+          if (command === "mathbb" && sets[contents.value]) fragment.appendChild(document.createTextNode(sets[contents.value]));
+          else appendMathInlineText(fragment, contents.value);
+          cursor = contents.end;
+          continue;
+        }
+      }
+      if (command === "quad" || command === "qquad") {
+        buffer += command === "quad" ? "\u00a0\u00a0" : "\u00a0\u00a0\u00a0\u00a0";
+        cursor = nameEnd;
+        continue;
+      }
+      if (command === "left" || command === "right" || command === "displaystyle" || command === "textstyle" || command === "limits" || command === "begin" || command === "end") {
+        if (command === "begin" || command === "end") {
+          const environment = argument(text, argStart);
+          cursor = environment ? environment.end : nameEnd;
+        } else cursor = nameEnd;
+        continue;
+      }
+      if (symbols[command]) buffer += symbols[command];
+      else buffer += "\\" + command;
+      cursor = nameEnd;
+      continue;
+    }
+    if (ch === "^" || ch === "_") {
+      const contents = argument(text, cursor + 1);
+      if (contents) {
+        flush();
+        const script = document.createElement(ch === "^" ? "sup" : "sub");
+        appendMathInlineText(script, contents.value);
+        fragment.appendChild(script);
+        cursor = contents.end;
+        continue;
+      }
+    }
+    buffer += ch;
+    cursor++;
+  }
+  flush();
+}
+function splitMathTopLevel(text) {
+  const parts = [];
+  let depth = 0;
+  let start = 0;
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === "[") depth++;
+    else if (text[i] === "]") depth--;
+    else if (text[i] === "," && depth === 0) {
+      parts.push(text.slice(start, i).trim());
+      start = i + 1;
+    }
+  }
+  parts.push(text.slice(start).trim());
+  return parts;
+}
+
+function readMathMatrix(text, start) {
+  if (text.slice(start, start + 2) !== "[[") return null;
+  let depth = 0;
+  let end = -1;
+  for (let i = start; i < text.length; i++) {
+    if (text[i] === "[") depth++;
+    else if (text[i] === "]" && --depth === 0) { end = i + 1; break; }
+  }
+  if (end < 0) return null;
+  const rowParts = splitMathTopLevel(text.slice(start + 1, end - 1));
+  if (!rowParts.length || rowParts.some(row => row.length < 2 || row[0] !== "[" || row[row.length - 1] !== "]")) return null;
+  const rows = rowParts.map(row => splitMathTopLevel(row.slice(1, -1)));
+  if (!rows.length || rows.some(row => row.length !== rows[0].length)) return null;
+  return { end, rows };
+}
+
+function typesetMathTextNode(node) {
+  const text = node.nodeValue;
+  const fragment = document.createDocumentFragment();
+  let cursor = 0;
+  let found = false;
+  for (let i = 0; i < text.length - 1; i++) {
+    if (text[i] !== "[" || text[i + 1] !== "[") continue;
+    const matrix = readMathMatrix(text, i);
+    if (!matrix) continue;
+    appendMathInlineText(fragment, text.slice(cursor, i));
+    const wrapper = document.createElement("span");
+    wrapper.className = "math-proper-matrix";
+    wrapper.setAttribute("role", "img");
+    wrapper.setAttribute("aria-label", matrix.rows.map(row => row.join(", ")).join("; "));
+    const left = document.createElement("span");
+    left.className = "math-matrix-bracket";
+    left.style.fontSize = `${Math.max(1.8, matrix.rows.length * 1.35)}em`;
+    left.textContent = "[";
+    const table = document.createElement("table");
+    table.setAttribute("aria-hidden", "true");
+    matrix.rows.forEach(row => {
+      const tr = document.createElement("tr");
+      row.forEach(cell => {
+        const td = document.createElement("td");
+        const cellContent = document.createDocumentFragment();
+        appendMathInlineText(cellContent, cell);
+        td.appendChild(cellContent);
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+    const right = left.cloneNode(false);
+    right.textContent = "]";
+    wrapper.append(left, table, right);
+    fragment.appendChild(wrapper);
+    cursor = matrix.end;
+    i = matrix.end - 1;
+    found = true;
+  }
+  if (!found) {
+    const inline = document.createDocumentFragment();
+    appendMathInlineText(inline, text);
+    if (inline.childNodes.length === 1 && inline.firstChild.nodeType === Node.TEXT_NODE) return;
+    node.parentNode.replaceChild(inline, node);
+    return;
+  }
+  appendMathInlineText(fragment, text.slice(cursor));
+  node.parentNode.replaceChild(fragment, node);
+}
+
+function typesetChapterMath(container) {
+  if (window.mathTypesetterObserver) {
+    window.mathTypesetterObserver.disconnect();
+    window.mathTypesetterObserver = null;
+  }
+  if (!container) return;
+  const render = root => {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!parent || parent.closest(".math-proper-matrix,script,style,textarea")) return NodeFilter.FILTER_REJECT;
+        return node.nodeValue.includes("[[") || /[\^_$]/.test(node.nodeValue) || /\\[A-Za-z]+/.test(node.nodeValue)
+          ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(typesetMathTextNode);
+  };
+  render(container);
+  if (typeof MutationObserver !== "undefined") {
+    window.mathTypesetterObserver = new MutationObserver(records => {
+      records.forEach(record => record.addedNodes.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) typesetMathTextNode(node);
+        else if (node.nodeType === Node.ELEMENT_NODE) render(node);
+      }));
+    });
+    window.mathTypesetterObserver.observe(container, { childList: true, subtree: true });
+  }
+}
+
+function renderMathDiagram(item, chapterNumber) {
+  const unit = Number(chapterNumber);
+  const prompt = String(item.problem || item.question || item.statement || item.theory || "");
+  const detail = [item.title, prompt, item.given, item.method, item.solution, item.theory, (item.steps || []).join(" ")].join(" ");
+  const diagramEnabled = unit >= 8 || (unit === 4 && /rectangle|area model/i.test(detail)) || (unit <= 3 && /number line|real line/i.test(detail)) || (unit === 7 && /number line|coordinate graph|plot/i.test(detail));
+  if (!diagramEnabled || !/(triangle|segment|parallelogram|quadrilateral|perpendicular|bisect(?:or|s|ing)?|median|altitude|pythag|coordinate|graph|construct|congruen|similar|parallel|figure|rectangle|square|number line|real line)/i.test(detail)) return "";
+  const esc = value => sanitize(String(value));
+  const id = "md-" + String(item.id || item.qNo || item.title || "figure").replace(/[^A-Za-z0-9_-]/g, "");
+  const text = (x, y, value, anchor) => '<text x="' + x + '" y="' + y + '" text-anchor="' + (anchor || "middle") + '" class="math-diagram-label">' + esc(value) + "</text>";
+  const line = (x1, y1, x2, y2, css) => '<line class="' + (css || "math-diagram-shape") + '" x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '"/>';
+  const figure = (inner, caption) => '<figure class="math-diagram"><figcaption>' + esc(caption || "Diagram — schematic, not to scale") + '</figcaption><svg viewBox="0 0 480 280" role="img" aria-labelledby="' + id + '"><title id="' + id + '">' + esc(item.title || prompt.slice(0, 100) || "Mathematics diagram") + "</title>" + inner + "</svg></figure>";
+  if (unit === 16 && item.qNo === "Q1") {
+    const A=[240,35],B=[90,240],C=[390,240],P=[157.5,137.5],Q=[322.5,137.5],R=[240,188.75];
+    let inner='<polygon class="math-diagram-shape" points="'+A.join(",")+" "+B.join(",")+" "+C.join(",")+'"/>';
+    inner+=line(P[0],P[1],Q[0],Q[1],"math-diagram-construction")+line(B[0],B[1],Q[0],Q[1],"math-diagram-diagonal")+line(C[0],C[1],P[0],P[1],"math-diagram-diagonal");
+    [[A,"A",240,24],[B,"B",76,257],[C,"C",404,257],[P,"P",146,132],[Q,"Q",334,132],[R,"R",240,207]].forEach(([pt,label,x,y])=>inner+='<circle class="math-diagram-point" cx="'+pt[0]+'" cy="'+pt[1]+'" r="3"/>'+text(x,y,label));
+    return figure(inner,"PQ ∥ BC; cevians BQ and CP intersect at R");
+  }
+  if (unit === 16 && item.qNo === "Q2") {
+    const P=[95,70],Q=[345,70],R=[385,210],S=[135,210],A=[220,70],B=[115,140];
+    let inner='<polygon class="math-diagram-shape" points="'+[P,Q,R,S].map(pt=>pt.join(",")).join(" ")+'"/>';
+    inner+=line(P[0],P[1],R[0],R[1],"math-diagram-diagonal")+line(Q[0],Q[1],S[0],S[1],"math-diagram-diagonal")+line(A[0],A[1],B[0],B[1],"math-diagram-construction")+line(B[0],B[1],R[0],R[1],"math-diagram-construction");
+    [[P,"P",83,62],[Q,"Q",355,62],[R,"R",397,222],[S,"S",125,232],[A,"A",220,55],[B,"B",100,143]].forEach(([pt,label,x,y])=>inner+='<circle class="math-diagram-point" cx="'+pt[0]+'" cy="'+pt[1]+'" r="3"/>'+text(x,y,label));
+    return figure(inner,"Parallelogram PQRS with A and B the midpoints of PQ and PS");
+  }
+  if (unit === 16 && item.qNo === "Q3") {
+    let inner='<polygon class="math-diagram-shape" points="105,215 150,65 375,65 400,215"/>';
+    inner+=line(105,215,375,65,"math-diagram-diagonal")+line(150,65,400,215,"math-diagram-diagonal")+'<circle class="math-diagram-point" cx="259" cy="130" r="4"/>';
+    inner+=text(94,233,"A")+text(142,55,"B")+text(387,55,"C")+text(410,233,"D")+text(259,148,"E");
+    return figure(inner,"Quadrilateral ABCD with diagonals AC and BD meeting at E");
+  }
+  if (unit === 15 && item.qNo === "Q5") {
+    let inner='<polygon class="math-diagram-shape" points="110,55 110,220 385,220"/>';
+    inner+=line(110,208,122,208,"math-diagram-axis")+line(122,208,122,220,"math-diagram-axis");
+    inner+=text(97,48,"B")+text(97,239,"C")+text(397,239,"A");
+    inner+=text(95,145,"a","end")+text(248,239,"b")+text(248,123,"c");
+    return figure(inner,"Right triangle ABC, ∠C = 90°; a and b are the legs and c is the hypotenuse");
+  }
+  if (unit === 15 && item.exercise === "Review 15" && item.qNo === "Q2") {
+    let inner='<polygon class="math-diagram-shape" points="115,220 365,220 240,70"/>';
+    inner+=line(240,70,240,220,"math-diagram-construction")+line(226,220,226,206,"math-diagram-axis")+line(226,206,240,206,"math-diagram-axis");
+    inner+=text(105,239,"A")+text(375,239,"B")+text(240,58,"C")+text(240,240,"4 cm")+text(252,145,"h");
+    return figure(inner,"Altitude of an equilateral triangle bisects its base");
+  }
+  if (unit === 15 && item.exercise === "Review 15" && item.qNo === "Q3") {
+    let inner='<polygon class="math-diagram-shape" points="110,220 370,220 240,65"/>';
+    inner+=line(240,65,240,220,"math-diagram-construction")+line(228,220,228,208,"math-diagram-axis")+line(228,208,240,208,"math-diagram-axis");
+    inner+=text(100,239,"A")+text(380,239,"B")+text(240,53,"C")+text(240,240,"10 cm")+text(252,145,"12 cm");
+    return figure(inner,"Isosceles triangle with the perpendicular from its vertex bisecting the base");
+  }
+  if (unit === 15 && item.exercise === "Review 15" && item.qNo === "Q4") {
+    let inner='<polygon class="math-diagram-shape" points="110,70 370,70 370,220 110,220"/>';
+    inner+=line(110,70,370,220,"math-diagram-diagonal")+line(370,70,110,220,"math-diagram-diagonal")+'<circle class="math-diagram-point" cx="240" cy="145" r="4"/>';
+    inner+='<path class="math-diagram-axis" d="M232 135l8 7 -7 8" fill="none"/>';
+    inner+=text(98,64,"A")+text(382,64,"B")+text(382,239,"C")+text(98,239,"D")+text(250,140,"O");
+    return figure(inner,"Quadrilateral with perpendicular diagonals AC and BD intersecting at O");
+  }
+  if (unit === 17 && item.qNo === "Q8") {
+    let inner = '<polygon class="math-diagram-shape" points="95,220 385,220 285,65"/>';
+    inner += line(55,65,425,65,"math-diagram-construction") + line(55,65,95,220,"math-diagram-diagonal") + line(55,65,385,220,"math-diagram-diagonal");
+    inner += text(95,242,"P") + text(385,242,"Q") + text(285,53,"R") + text(55,53,"S");
+    inner += text(135,263,"PQ = 5.6 cm") + text(336,151,"4.5 cm") + text(174,148,"3.4 cm");
+    return figure(inner,"Equal-area construction: SPQ and RPQ share base PQ and lie between parallels");
+  }
+  if (unit === 17 && item.qNo === "Q9") {
+    let inner = '<polygon class="math-diagram-shape" points="120,65 360,65 360,215 120,215"/>';
+    inner += line(120,215,120,65,"math-diagram-construction") + line(360,65,360,215,"math-diagram-construction");
+    inner += '<path class="math-diagram-axis" d="M120 205h10v10M350 65v10h10" fill="none"/>';
+    inner += text(110,233,"A") + text(370,58,"B") + text(370,233,"C") + text(110,58,"D");
+    inner += text(240,239,"5 cm") + text(93,145,"2.5 cm","end");
+    return figure(inner,"Rectangle with adjacent sides 5 cm and 2.5 cm");
+  }
+  if (unit === 17 && ["Q4","Q5","Q6","Q7"].includes(item.qNo)) {
+    const A=[100,220], B=[380,220], C=[245,55];
+    const mid=(p,q)=>[(p[0]+q[0])/2,(p[1]+q[1])/2];
+    const D=mid(B,C), E=mid(A,C), F=mid(A,B);
+    const vertexNames=item.qNo==="Q5"?["P","R","Q"]:item.qNo==="Q6"?["U","W","V"]:item.qNo==="Q7"?["X","Z","Y"]:["A","B","C"];
+    let inner='<polygon class="math-diagram-shape" points="'+A.join(",")+" "+B.join(",")+" "+C.join(",")+'"/>';
+    const point=(p,n)=>text(p[0],p[1],n);
+    if(item.qNo==="Q4"){
+      const I=[244,163]; inner+=line(A[0],A[1],I[0],I[1],"math-diagram-construction")+line(B[0],B[1],I[0],I[1],"math-diagram-construction")+line(C[0],C[1],I[0],I[1],"math-diagram-construction");
+      inner+='<circle class="math-diagram-point" cx="244" cy="163" r="4"/>'+point([257,158],"I");
+    } else if(item.qNo==="Q5"){
+      inner+=line(245,55,245,220,"math-diagram-construction")+line(100,220,268,83,"math-diagram-construction")+line(380,220,222,81,"math-diagram-construction");
+      inner+='<circle class="math-diagram-point" cx="245" cy="102" r="4"/>'+point([257,97],"H");
+    } else if(item.qNo==="Q6"){
+      [[A,B],[B,C],[C,A]].forEach(([p,q])=>{const m=mid(p,q),dx=q[0]-p[0],dy=q[1]-p[1],len=Math.hypot(dx,dy);inner+=line(m[0]-dy/len*130,m[1]+dx/len*130,m[0]+dy/len*130,m[1]-dx/len*130,"math-diagram-construction");});
+      inner+='<circle class="math-diagram-point" cx="240" cy="136" r="4"/>'+point([252,131],"O");
+    } else {
+      inner+=line(A[0],A[1],D[0],D[1],"math-diagram-construction")+line(B[0],B[1],E[0],E[1],"math-diagram-construction")+line(C[0],C[1],F[0],F[1],"math-diagram-construction");
+      inner+='<circle class="math-diagram-point" cx="241" cy="165" r="4"/>'+point([253,160],"G");
+    }
+    inner+=point([88,239],vertexNames[0])+point([392,239],vertexNames[1])+point([245,43],vertexNames[2]);
+    if(item.qNo==="Q4")inner+=text(240,260,"AB = 5.3 cm · ∠A = ∠B = 45°");
+    if(item.qNo==="Q5")inner+=text(240,260,"PR = 5.8 cm · ∠P = 45° · ∠Q = 105°");
+    if(item.qNo==="Q6")inner+=text(240,260,"UW = 5.8 cm · ∠U = 45° · ∠V = 105°");
+    if(item.qNo==="Q7")inner+=text(240,260,"XZ = 6 cm · ∠Y = 60° · ∠Z = 75°");
+    return figure(inner,item.qNo==="Q4"?"Triangle angle bisectors meeting at the incentre":item.qNo==="Q5"?"Triangle altitudes meeting at the orthocentre":item.qNo==="Q6"?"Perpendicular bisectors meeting at the circumcentre":"Triangle medians meeting at the centroid");
+  }
+  if (unit === 13 && item.qNo === "Q1") {
+    let inner = '<polygon class="math-diagram-shape" points="85,220 390,220 285,65"/>';
+    inner += text(205,244,"12") + text(173,132,"7") + text(345,132,"x");
+    return figure(inner,"Triangle with side lengths 7, 12, and x");
+  }
+  if (unit === 13 && item.qNo === "Q5") {
+    let inner = '<polygon class="math-diagram-shape" points="95,235 180,55 405,220"/>';
+    inner += '<circle class="math-diagram-point" cx="137" cy="145" r="3"/>';
+    inner += line(137,145,405,220,"math-diagram-diagonal");
+    inner += text(180,45,"P") + text(85,245,"Q") + text(415,230,"R","start") + text(125,142,"S","end");
+    inner += text(156,95,"m") + text(108,197,"n") + text(280,170,"x") + text(270,240,"y");
+    return figure(inner,"Point S on PQ and segment SR");
+  }
+  if (unit === 13 && item.qNo === "Q9") {
+    let inner = line(80,80,400,80,"math-diagram-axis") + line(80,220,400,220,"math-diagram-axis");
+    inner += '<path class="math-diagram-axis" d="M400 80l-10-6v12zM400 220l-10-6v12zM80 80l10-6v12zM80 220l10-6v12z" fill="#334155"/>';
+    inner += line(180,80,180,220,"math-diagram-shape") + line(300,80,300,220,"math-diagram-shape");
+    inner += '<path class="math-diagram-axis" d="M180 80h10v10h-10M300 80h10v10h-10" fill="none"/>';
+    inner += text(160,70,"P") + text(300,70,"Q") + text(180,240,"L") + text(300,240,"M");
+    inner += text(100,66,"A","start") + text(385,66,"B","end") + text(100,240,"C","start") + text(385,240,"D","end");
+    return figure(inner,"Equal perpendicular distances between parallel lines AB and CD");
+  }
+  if (unit === 12 && item.qNo === "Q6") {
+    let inner = "";
+    [80,240,400].forEach((cx,i) => {
+      const F=[cx-30,72], G=[cx-30,208], H=[cx-30,140], E=[cx+42,140];
+      inner += line(F[0],F[1],E[0],E[1]) + line(E[0],E[1],G[0],G[1]) + line(F[0],F[1],G[0],G[1]) + line(H[0],H[1],E[0],E[1],"math-diagram-diagonal");
+      inner += '<circle class="math-diagram-point" cx="' + H[0] + '" cy="' + H[1] + '" r="3"/>';
+      inner += text(F[0]-7,F[1]-7,"F") + text(G[0]-7,G[1]+15,"G") + text(H[0]-9,H[1]+15,"H") + text(E[0]+9,E[1]+5,"E");
+      if (i === 0) {
+        inner += '<path class="math-diagram-axis" d="M' + H[0] + ' ' + (H[1]-8) + 'h8v8" fill="none"/>';
+        inner += line(H[0]-6,106,H[0]+6,106,"math-diagram-axis") + line(H[0]-6,174,H[0]+6,174,"math-diagram-axis");
+      }
+      if (i === 1) {
+        inner += '<path class="math-diagram-axis" d="M' + (cx-33) + ' 78h9v9M' + (cx-33) + ' 202h9v-9" fill="none"/>';
+        inner += line(cx-31,104,cx-22,104,"math-diagram-axis") + line(cx-31,176,cx-22,176,"math-diagram-axis");
+      }
+      if (i === 2) {
+        inner += line(cx-31,104,cx-22,104,"math-diagram-axis") + line(cx-31,176,cx-22,176,"math-diagram-axis");
+      }
+      inner += text(cx,250,"(" + ["i","ii","iii"][i] + ")");
+    });
+    return figure(inner,"Three marked cases for testing whether EH bisects angle FEG");
+  }
+  if (unit === 11 && item.qNo === "Q5" && /midsegment/i.test(prompt)) {
+    const tri = (x1, x2, sideName, sideLabel, midLabel) => {
+      const A = [x1,220], B = [(x1+x2)/2,75], C = [x2,220];
+      const midpoint = (p,q) => [(p[0]+q[0])/2,(p[1]+q[1])/2];
+      const D = sideName === "BC" ? midpoint(A,B) : midpoint(B,C);
+      const E = midpoint(A,C);
+      let out = '<polygon class="math-diagram-shape" points="' + A.join(",") + " " + B.join(",") + " " + C.join(",") + '"/>';
+      out += line(D[0],D[1],E[0],E[1],"math-diagram-diagonal");
+      out += text(A[0]-8,A[1]+15,"A","end") + text(B[0],B[1]-8,"B") + text(C[0]+8,C[1]+15,"C","start");
+      out += text(D[0]-7,D[1]-7,"D") + text(E[0]+7,E[1]+13,"E");
+      const sideMid = sideName === "BC" ? midpoint(B,C) : midpoint(A,B);
+      out += text(sideMid[0]+(sideName === "BC" ? 15 : -12),sideMid[1],sideLabel,sideName === "BC" ? "start" : "end");
+      out += text((D[0]+E[0])/2,(D[1]+E[1])/2-8,midLabel);
+      return out;
+    };
+    let inner = tri(45,175,"BC","26","x") + tri(180,310,"AB","x","5") + tri(315,445,"AB","6","x");
+    return figure(inner,"Three triangle midsegment cases from Exercise 11.1 Q5");
+  }
+  if (unit === 10 && item.qNo === "Q2") {
+    let inner = line(105,70,375,70) + line(105,210,375,210) + line(105,70,375,210,"math-diagram-diagonal") + line(105,210,375,70,"math-diagram-diagonal");
+    inner += '<circle class="math-diagram-point" cx="240" cy="140" r="4"/>';
+    inner += text(95,62,"D") + text(385,62,"E") + text(95,228,"A") + text(385,228,"B") + text(240,158,"C");
+    return figure(inner,"Intersecting segments with equal sides AC and CE");
+  }
+  if (unit === 10 && item.qNo === "Q3") {
+    let inner = line(95,145,240,145) + line(240,145,385,145) + line(145,65,335,225,"math-diagram-diagonal");
+    inner += '<circle class="math-diagram-point" cx="240" cy="145" r="4"/>';
+    inner += text(85,150,"A","end") + text(140,55,"B") + text(240,132,"C") + text(395,150,"D","start") + text(345,238,"E");
+    return figure(inner,"Triangles ABC and DEC with C the midpoint of BE");
+  }
+  if (unit === 10 && item.qNo === "Q7") {
+    let inner = '<polygon class="math-diagram-shape" points="240,45 125,140 240,235 355,140"/>';
+    inner += line(240,45,240,235,"math-diagram-diagonal");
+    inner += '<path class="math-diagram-axis" d="M137 130l10 -12 12 10M343 130l-10 -12 -12 10" fill="none"/>';
+    inner += text(240,35,"A") + text(112,143,"B","end") + text(240,257,"C") + text(368,143,"D","start");
+    return figure(inner,"Right triangles ABC and ADC share hypotenuse AC");
+  }
+  if (unit === 10 && item.qNo === "Q6" && /square\s+PQRS/i.test(prompt)) {
+    let inner = '<polygon class="math-diagram-shape" points="130,55 350,55 350,245 130,245"/>';
+    inner += '<polygon class="math-diagram-construction" points="130,55 240,55 350,150"/><polygon class="math-diagram-construction" points="130,245 240,245 350,150"/>';
+    inner += line(240,55,350,150,"math-diagram-diagonal") + line(240,245,350,150,"math-diagram-diagonal");
+    inner += text(118,48,"P") + text(362,48,"Q") + text(362,258,"R") + text(118,258,"S");
+    inner += text(240,43,"X") + text(365,155,"Y","start") + text(240,265,"Z");
+    return figure(inner,"Square PQRS with midpoint triangles PXY and SZY");
+  }
+  if (unit === 10 && item.qNo === "Q8" && /QUAD is a rectangle/i.test(prompt)) {
+    let inner = '<polygon class="math-diagram-shape" points="125,65 355,65 355,215 125,215"/>';
+    inner += line(125,65,355,215,"math-diagram-diagonal") + line(355,65,125,215,"math-diagram-diagonal");
+    inner += '<circle class="math-diagram-point" cx="240" cy="140" r="4"/>';
+    inner += text(115,58,"Q") + text(365,58,"U") + text(365,230,"A") + text(115,230,"D") + text(240,158,"C");
+    inner += text(195,122,"x") + text(180,174,"3x - 8");
+    return figure(inner,"Rectangle QUAD with bisecting, equal diagonals");
+  }
+  const namedPoints = [];
+  const namedPattern = /\b([A-Z])\s*\(\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*\)/g;
+  let named;
+  while ((named = namedPattern.exec(prompt)) && namedPoints.length < 12) {
+    const x = Number(named[2]), y = Number(named[3]);
+    if (!namedPoints.some(p => p.label === named[1])) namedPoints.push({ label: named[1], x, y });
+  }
+  const pairs = [];
+  const pairPattern = /\(\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*\)/g;
+  let pairMatch;
+  while ((pairMatch = pairPattern.exec(prompt)) && pairs.length < 12) {
+    const point = [Number(pairMatch[1]), Number(pairMatch[2])];
+    if (!pairs.some(p => p[0] === point[0] && p[1] === point[1])) pairs.push(point);
+  }
+  if (/number line|real line/i.test(detail) && !pairs.length) {
+    const values = Array.from(prompt.matchAll(/(?<![A-Za-z])(-?\d+(?:\.\d+)?(?:\/\d+)?)(?![A-Za-z])/g), m => m[1]).slice(0, 8);
+    let inner = line(85, 145, 395, 145, "math-diagram-axis");
+    inner += '<path class="math-diagram-axis" d="M395 145l-10-6v12zM85 145l10-6v12z" fill="#334155"/>';
+    for (let i = 0; i <= 10; i++) {
+      const x = 95 + i * 29;
+      inner += line(x, 137, x, 153, "math-diagram-axis");
+      if (i > 0 && i < 10) inner += text(x, 171, String(i - 5));
+    }
+    const numeric = value => {
+      const parts = String(value).split("/");
+      return parts.length === 2 ? Number(parts[0]) / Number(parts[1]) : Number(value);
+    };
+    const source = String(item.answer || item.solution || "");
+    const entries = source.split(/;\s*/).map(part => part.replace(/^\s*\([ivx]+\)\s*/i, "").trim()).filter(Boolean);
+    const intervals = [];
+    entries.forEach(entry => {
+      let match = /(-?\d+(?:\.\d+)?(?:\/\d+)?)\s*(<=|<)\s*x\s*(<=|<)\s*(-?\d+(?:\.\d+)?(?:\/\d+)?)/i.exec(entry);
+      if (match) {
+        intervals.push({ lo: numeric(match[1]), hi: numeric(match[4]), loClosed: match[2] === "<=", hiClosed: match[3] === "<=" });
+        return;
+      }
+      match = /x\s*(<=|<|>=|>)\s*(-?\d+(?:\.\d+)?(?:\/\d+)?)/i.exec(entry);
+      if (match) {
+        const n = numeric(match[2]);
+        intervals.push(match[1] === "<" || match[1] === "<="
+          ? { lo: -Infinity, hi: n, hiClosed: match[1] === "<=" }
+          : { lo: n, hi: Infinity, loClosed: match[1] === ">=" });
+        return;
+      }
+      match = /[[(]\s*(-?\d+(?:\.\d+)?(?:\/\d+)?)\s*,\s*(-?\d+(?:\.\d+)?(?:\/\d+)?)\s*[)\]]/.exec(entry);
+      if (match) intervals.push({ lo: numeric(match[1]), hi: numeric(match[2]), loClosed: entry.trim().startsWith("["), hiClosed: entry.trim().endsWith("]") });
+    });
+    if (intervals.length) {
+      const rowGap = Math.min(22, 190 / intervals.length);
+      const top = intervals.length === 1 ? 145 : 48;
+      inner = "";
+      intervals.slice(0, 10).forEach((range, i) => {
+        const y = top + i * rowGap;
+        inner += line(95, y, 385, y, "math-diagram-axis");
+        for (let tick = -5; tick <= 5; tick++) {
+          const x = 240 + tick * 29;
+          inner += line(x, y - 4, x, y + 4, "math-diagram-axis");
+          if (i === 0) inner += text(x, y - 10, String(tick));
+        }
+        const lo = Math.max(-5, range.lo), hi = Math.min(5, range.hi);
+        if (lo <= hi) inner += line(240 + lo * 29, y, 240 + hi * 29, y, "math-diagram-shape");
+        if (range.lo <= -5) inner += '<path class="math-diagram-shape" d="M95 ' + y + 'l10 -6v12z"/>';
+        if (range.hi >= 5) inner += '<path class="math-diagram-shape" d="M385 ' + y + 'l-10 -6v12z"/>';
+        [[range.lo, range.loClosed], [range.hi, range.hiClosed]].forEach(([v, closed]) => {
+          if (!Number.isFinite(v) || v < -5 || v > 5) return;
+          const x = 240 + v * 29;
+          inner += '<circle class="' + (closed ? "math-diagram-point" : "math-diagram-open-point") + '" cx="' + x + '" cy="' + y + '" r="4"/>';
+        });
+        const label = entries[i] || "";
+        inner += text(75, y + 4, label.slice(0, 12), "end");
+      });
+      return figure(inner, "Number line showing the solved interval(s)");
+    }
+    values.forEach((value, i) => {
+      const number = numeric(value);
+      if (!Number.isFinite(number) || number < -5 || number > 5) return;
+      const x = 240 + number * 29;
+      inner += '<circle class="math-diagram-point" cx="' + x + '" cy="145" r="4"/>' + text(x, 126 - (i % 2) * 18, value);
+    });
+    return figure(inner, "Number line from the stated values");
+  }
+  if ((unit === 8 || unit === 9) && (pairs.length || /graph|coordinate/i.test(detail))) {
+    const xMin = Math.min(-4, ...pairs.map(p => p[0])), xMax = Math.max(4, ...pairs.map(p => p[0]));
+    const yMin = Math.min(-4, ...pairs.map(p => p[1])), yMax = Math.max(4, ...pairs.map(p => p[1]));
+    const scale = Math.min(36, 320 / Math.max(1, xMax - xMin), 190 / Math.max(1, yMax - yMin));
+    const ox = 240 - scale * (xMin + xMax) / 2, oy = 140 + scale * (yMin + yMax) / 2;
+    let inner = "";
+    const xStep = Math.max(1, Math.ceil((xMax - xMin) / 16)), yStep = Math.max(1, Math.ceil((yMax - yMin) / 12));
+    for (let n = Math.ceil(xMin / xStep) * xStep; n <= Math.floor(xMax); n += xStep) {
+      inner += line(ox + n * scale, 35, ox + n * scale, 245, "math-diagram-grid");
+      if (n !== 0) inner += text(ox + n * scale, oy + 16, String(n));
+    }
+    for (let n = Math.ceil(yMin / yStep) * yStep; n <= Math.floor(yMax); n += yStep) {
+      inner += line(70, oy - n * scale, 410, oy - n * scale, "math-diagram-grid");
+      if (n !== 0) inner += text(ox - 10, oy - n * scale + 4, String(n), "end");
+    }
+    inner += line(70, oy, 415, oy, "math-diagram-axis") + line(ox, 245, ox, 30, "math-diagram-axis");
+    inner += text(423, oy - 6, "x", "start") + text(ox + 9, 27, "y", "start");
+    const connectShape = /(join|connect|line segment|triangle|quadrilateral|rectangle|square|vertices of)/i.test(detail);
+    if (pairs.length > 1 && connectShape) {
+      const pts = namedPoints.length === pairs.length ? namedPoints.map(p => [p.x, p.y]) : pairs;
+      let poly = pts.map(p => (ox + p[0] * scale) + "," + (oy - p[1] * scale)).join(" ");
+      if (/(rectangle|square|triangle|quadrilateral)/i.test(detail)) poly += " " + (ox + pts[0][0] * scale) + "," + (oy - pts[0][1] * scale);
+      inner += /rectangle|square|triangle|quadrilateral/i.test(detail)
+        ? '<polygon class="math-diagram-shape" points="' + poly + '"/>'
+        : '<polyline class="math-diagram-graphline" points="' + poly + '"/>';
+    } else if (!pairs.length && /x\s*=\s*(-?\d+(?:\.\d+)?|a)\b/i.test(detail)) {
+      const match = /x\s*=\s*(-?\d+(?:\.\d+)?|a)\b/i.exec(detail);
+      const xValue = Number(match[1]);
+      const x = Number.isFinite(xValue) ? ox + xValue * scale : 300;
+      inner += line(x, 38, x, 242, "math-diagram-shape");
+    } else if (!pairs.length && /y\s*=\s*(-?\d+(?:\.\d+)?|c)\b/i.test(detail)) {
+      const match = /y\s*=\s*(-?\d+(?:\.\d+)?|c)\b/i.exec(detail);
+      const yValue = Number(match[1]);
+      const y = Number.isFinite(yValue) ? oy - yValue * scale : 102;
+      inner += line(85, y, 405, y, "math-diagram-shape");
+    } else if (!pairs.length && /y\s*=\s*(-?\d+(?:\.\d+)?)?\s*x(?:\s*([+-])\s*(\d+(?:\.\d+)?))?/i.test(detail)) {
+      const match = /y\s*=\s*(-?\d+(?:\.\d+)?)?\s*x(?:\s*([+-])\s*(\d+(?:\.\d+)?))?/i.exec(detail);
+      const slope = match[1] === undefined || match[1] === "" ? 1 : Number(match[1]);
+      const intercept = match[3] ? (match[2] === "-" ? -1 : 1) * Number(match[3]) : 0;
+      const x1 = 85, x2 = 405;
+      const y1 = oy - (slope * ((x1 - ox) / scale) + intercept) * scale;
+      const y2 = oy - (slope * ((x2 - ox) / scale) + intercept) * scale;
+      inner += line(x1, y1, x2, y2, "math-diagram-shape");
+    }
+    const plotLabels = namedPoints.length === pairs.length ? namedPoints.map(p => p.label) : pairs.map((_, i) => String.fromCharCode(65 + i));
+    pairs.forEach((p, i) => {
+      const x = ox + p[0] * scale, y = oy - p[1] * scale;
+      inner += '<circle class="math-diagram-point" cx="' + x + '" cy="' + y + '" r="4"/>' + text(x + 10, y - 8, plotLabels[i], "start");
+    });
+    return figure(inner, "Coordinate graph from the stated points; axes are schematic");
+  }
+
+  const triangleMatch = /(?:△|triangle\s+)([A-Z]{3})/i.exec(detail);
+  const labels = triangleMatch ? triangleMatch[1].toUpperCase().split("") : ["A", "B", "C"];
+  const sides = Object.create(null);
+  const sidePattern = /(?:m\s*)?(?:\(([A-Z]{2})\)|\b([A-Z]{2})\b)\s*=\s*(\d+(?:\.\d+)?)\s*cm/gi;
+  let sideMatch;
+  while ((sideMatch = sidePattern.exec(detail))) {
+    const pair = (sideMatch[1] || sideMatch[2]).toUpperCase();
+    sides[pair.split("").sort().join("")] = Number(sideMatch[3]);
+  }
+  const side = (a, b) => sides[[a, b].sort().join("")];
+  const angles = Object.create(null);
+  const angleDetail = [item.problem, item.question, item.given].filter(Boolean).join(" ");
+  const anglePattern = /∠\s*([A-Z]{1,3})\s*=\s*(\d+(?:\.\d+)?)\s*°/g;
+  let angleMatch;
+  while ((angleMatch = anglePattern.exec(angleDetail))) {
+    const letters = angleMatch[1].toUpperCase();
+    const vertex = letters.length === 3 ? letters[1] : letters[0];
+    if (labels.includes(vertex) && angles[vertex] === undefined) angles[vertex] = Number(angleMatch[2]);
+  }
+  const vertices = Object.create(null);
+  let extraVertices = [];
+  let measuredTriangle = false;
+  let noTriangle = false;
+  const radians = deg => deg * Math.PI / 180;
+  const put = (name, x, y) => { vertices[name] = { x, y }; };
+  if (labels.every((v, i) => labels.slice(i + 1).every(w => side(v, w) !== undefined))) {
+    const [a, b, c] = labels;
+    const ab = side(a, b), ac = side(a, c), bc = side(b, c);
+    if (ab > 0 && ac > 0 && bc > 0) {
+      const x = (ab * ab + ac * ac - bc * bc) / (2 * ab);
+      const y2 = ac * ac - x * x;
+      if (y2 >= -0.01) {
+        put(a, 0, 0); put(b, ab, 0); put(c, x, Math.sqrt(Math.max(0, y2)));
+        measuredTriangle = true;
+      }
+    }
+  }
+  if (!measuredTriangle) {
+    for (const v of labels) {
+      const neighbors = labels.filter(w => w !== v && side(v, w) > 0);
+      if (neighbors.length >= 2 && angles[v] !== undefined) {
+        const [a, b] = neighbors;
+        const da = side(v, a), db = side(v, b), theta = radians(angles[v]);
+        put(v, 0, 0); put(a, da, 0); put(b, db * Math.cos(theta), db * Math.sin(theta));
+        measuredTriangle = true;
+        break;
+      }
+    }
+  }
+  if (!measuredTriangle) {
+    for (const v of labels) {
+      if (angles[v] === undefined) continue;
+      for (const a of labels.filter(w => w !== v && side(v, w) > 0)) {
+        for (const c of labels.filter(w => w !== v && w !== a && side(a, w) > 0)) {
+          const d = side(v, a), r = side(a, c), theta = radians(angles[v]);
+          const discriminant = d * d * Math.cos(theta) ** 2 - (d * d - r * r);
+          if (discriminant < -0.01) {
+            put(v, 0, 0); put(a, d, 0);
+            extraVertices = [];
+            noTriangle = measuredTriangle = true;
+            break;
+          }
+          const roots = [d * Math.cos(theta) - Math.sqrt(Math.max(0, discriminant)), d * Math.cos(theta) + Math.sqrt(Math.max(0, discriminant))]
+            .filter(t => t > 0.01).filter((t, i, all) => all.findIndex(other => Math.abs(other - t) < 0.01) === i);
+          if (roots.length) {
+            put(v, 0, 0); put(a, d, 0);
+            const makePoint = (t, suffix) => {
+              const name = c + (suffix ? "′" : "");
+              const p = { x: t * Math.cos(theta), y: t * Math.sin(theta) };
+              if (suffix) extraVertices.push({ label: name, point: p });
+              else put(c, p.x, p.y);
+            };
+            makePoint(roots[0], false);
+            if (roots.length > 1) makePoint(roots[1], true);
+            measuredTriangle = true;
+            break;
+          }
+        }
+        if (measuredTriangle) break;
+      }
+      if (measuredTriangle) break;
+    }
+  }
+  if (!measuredTriangle) {
+    for (let i = 0; i < labels.length; i++) {
+      const a = labels[i], b = labels[(i + 1) % labels.length], c = labels[(i + 2) % labels.length];
+      const base = side(a, b);
+      const known = [angles[a], angles[b], angles[c]].filter(value => value !== undefined);
+      if (!base || known.length < 2) continue;
+      const angleA = angles[a] !== undefined ? angles[a] : 180 - known.reduce((sum, value) => sum + value, 0);
+      const angleB = angles[b] !== undefined ? angles[b] : 180 - known.reduce((sum, value) => sum + value, 0);
+      const angleC = 180 - angleA - angleB;
+      if (angleA <= 0 || angleB <= 0 || angleC <= 0) continue;
+      put(a, 0, 0); put(b, base, 0);
+      const ac = base * Math.sin(radians(angleB)) / Math.sin(radians(angleC));
+      put(c, ac * Math.cos(radians(angleA)), ac * Math.sin(radians(angleA)));
+      measuredTriangle = true;
+      break;
+    }
+  }
+
+  const perpendicular = /perpendicular bisector|right bisector/i.test(detail);
+  const quadrilateral = /parallelogram|quadrilateral|rectangle/i.test(detail);
+  const right = /right[- ]angled|right angle|hypotenuse|pythag/i.test(detail) || Object.values(angles).some(a => a === 90);
+  const bisector = /angle bisector|bisects angle/i.test(detail);
+  const median = /median|centroid|trisection/i.test(detail);
+  const altitude = /altitude|perpendicular from/i.test(detail);
+  let inner = "";
+  if (/triangle equal in area.*quadrilateral|equal in area to (?:the )?quadrilateral/i.test(detail)) {
+    inner = '<polygon class="math-diagram-shape" points="115,205 155,70 365,70 385,205"/>';
+    inner += line(115, 205, 365, 70, "math-diagram-diagonal");
+    inner += line(155, 70, 55, 205, "math-diagram-construction");
+    inner += line(55, 205, 365, 70, "math-diagram-construction");
+    inner += line(55, 205, 365, 205, "math-diagram-shape");
+    inner += line(365, 70, 365, 205, "math-diagram-diagonal");
+    inner += text(105, 222, "A") + text(151, 58, "D") + text(376, 62, "C") + text(397, 222, "B") + text(45, 222, "P");
+    inner += text(230, 54, "DP ∥ AC");
+    return figure(inner, "Equivalent-area triangle construction from the textbook method");
+  }
+  if (/rectangle equal in area to.*triangle|rectangle equivalent in area to.*triangle/i.test(detail)) {
+    inner = '<polygon class="math-diagram-shape" points="110,205 360,205 245,65"/>';
+    inner += '<polygon class="math-diagram-construction" points="110,205 235,205 235,65 110,65"/>';
+    inner += line(110, 205, 110, 65, "math-diagram-construction") + line(235, 205, 235, 65, "math-diagram-construction");
+    inner += text(100, 222, "A") + text(370, 222, "B") + text(245, 54, "C") + text(226, 223, "D") + text(98, 60, "H") + text(241, 60, "G");
+    return figure(inner, "Rectangle construction with the same area as the given triangle");
+  }
+  if (/square equal in area to.*rectangle|square equivalent in area to.*rectangle/i.test(detail)) {
+    inner = '<polygon class="math-diagram-shape" points="85,185 245,185 245,105 85,105"/>';
+    inner += '<path class="math-diagram-construction" d="M85 185 A160 160 0 0 1 405 185"/>';
+    inner += line(245, 185, 245, 55, "math-diagram-construction") + line(245, 185, 320, 185, "math-diagram-construction");
+    inner += '<polygon class="math-diagram-construction" points="245,185 320,185 320,110 245,110"/>';
+    inner += text(75, 202, "A") + text(255, 202, "B") + text(255, 97, "C") + text(75, 97, "D") + text(321, 202, "E") + text(331, 108, "M");
+    return figure(inner, "Geometric-mean construction of an equal-area square");
+  }
+  if (/triangle having (?:a )?base|triangle with base/i.test(detail) && /area equivalent|equivalent area|equal area/i.test(detail)) {
+    inner = '<polygon class="math-diagram-shape" points="95,205 385,205 240,75"/>';
+    inner += line(95, 205, 300, 75, "math-diagram-diagonal") + line(240, 75, 385, 75, "math-diagram-construction");
+    inner += '<polygon class="math-diagram-construction" points="95,205 385,205 300,75"/>';
+    inner += text(85, 222, "B") + text(395, 222, "C") + text(240, 64, "A") + text(300, 63, "M") + text(240, 224, "base x");
+    return figure(inner, "Equal-area triangle on the specified base");
+  }
+  if (noTriangle && Object.keys(vertices).length >= 2) {
+    const names = Object.keys(vertices), v = names[0], a = names[1];
+    const d = Math.hypot(vertices[a].x - vertices[v].x, vertices[a].y - vertices[v].y) || 1;
+    const scale = Math.min(28, 250 / d);
+    const base1 = { x: 135, y: 205 }, base2 = { x: 135 + d * scale, y: 205 };
+    const theta = radians(angles[v] || 45);
+    const ray2 = { x: base1.x + 170 * Math.cos(theta), y: base1.y - 170 * Math.sin(theta) };
+    const third = labels.find(name => name !== v && name !== a);
+    const radius = third ? side(a, third) : undefined;
+    inner += line(base1.x, base1.y, base2.x, base2.y);
+    inner += line(base1.x, base1.y, ray2.x, ray2.y, "math-diagram-construction");
+    if (radius) inner += '<circle class="math-diagram-construction" cx="' + base2.x + '" cy="' + base2.y + '" r="' + radius * scale + '"/>';
+    inner += text(base1.x - 10, base1.y + 20, v) + text(base2.x + 12, base2.y + 20, a, "start") + text(230, 258, "No triangle satisfies these measurements");
+    inner += text(base1.x + 40, base1.y - 22, (angles[v] || "") + "°");
+    return figure(inner, "No triangle can be constructed from the given measurements");
+  }
+  if (measuredTriangle && Object.keys(vertices).length >= 3) {
+    const all = labels.filter(v => vertices[v]).map(v => ({ label: v, ...vertices[v] }));
+    const candidates = all.concat(extraVertices.map(v => ({ label: v.label, ...v.point })));
+    const xs = candidates.map(p => p.x), ys = candidates.map(p => p.y);
+    const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
+    const scale = Math.min(300 / Math.max(0.1, maxX - minX), 165 / Math.max(0.1, maxY - minY));
+    const mx = (minX + maxX) / 2, my = (minY + maxY) / 2;
+    const screen = p => ({ x: 240 + (p.x - mx) * scale, y: 140 - (p.y - my) * scale });
+    const trianglePoints = labels.map(v => screen(vertices[v]));
+    const centroid = { x: trianglePoints.reduce((n, p) => n + p.x, 0) / 3, y: trianglePoints.reduce((n, p) => n + p.y, 0) / 3 };
+    const poly = pts => '<polygon class="math-diagram-shape" points="' + pts.map(p => p.x + "," + p.y).join(" ") + '"/>';
+    inner += poly(trianglePoints);
+    const labelVertex = (name, p) => {
+      const dx = p.x - centroid.x, dy = p.y - centroid.y;
+      inner += text(p.x + (dx < 0 ? -11 : 11), p.y + (dy < 0 ? -9 : 17), name, dx < 0 ? "end" : "start");
+    };
+    labels.forEach((name, i) => labelVertex(name, trianglePoints[i]));
+    if (labels.every(v => vertices[v])) {
+      for (let i = 0; i < labels.length; i++) {
+        const aName = labels[i], bName = labels[(i + 1) % labels.length];
+        const length = side(aName, bName);
+        if (length) {
+          const a = trianglePoints[i], b = trianglePoints[(i + 1) % labels.length];
+          const dx = b.x - a.x, dy = b.y - a.y, len = Math.hypot(dx, dy) || 1;
+          const normal = (dx * (centroid.y - (a.y + b.y) / 2) - dy * (centroid.x - (a.x + b.x) / 2)) > 0 ? 1 : -1;
+          inner += text((a.x + b.x) / 2 - dy / len * 13 * normal, (a.y + b.y) / 2 + dx / len * 13 * normal, length + " cm");
+        }
+        if (angles[aName] !== undefined) {
+          const p = trianglePoints[i];
+          inner += text(p.x + (centroid.x - p.x) * 0.26, p.y + (centroid.y - p.y) * 0.26, angles[aName] + "°");
+          const a = trianglePoints[(i + 1) % 3], b = trianglePoints[(i + 2) % 3];
+          const va = { x: a.x - p.x, y: a.y - p.y }, vb = { x: b.x - p.x, y: b.y - p.y };
+          const la = Math.hypot(va.x, va.y) || 1, lb = Math.hypot(vb.x, vb.y) || 1;
+          const ua = { x: va.x / la, y: va.y / la }, ub = { x: vb.x / lb, y: vb.y / lb };
+          const radius = 19, sweep = ua.x * ub.y - ua.y * ub.x > 0 ? 1 : 0;
+          inner += '<path class="math-diagram-angle" d="M' + (p.x + ua.x * radius) + ' ' + (p.y + ua.y * radius) + ' A' + radius + ' ' + radius + ' 0 0 ' + sweep + ' ' + (p.x + ub.x * radius) + ' ' + (p.y + ub.y * radius) + '"/>';
+          if (angles[aName] === 90) {
+            const size = 10;
+            const q1 = { x: p.x + ua.x * size, y: p.y + ua.y * size };
+            const q3 = { x: p.x + ub.x * size, y: p.y + ub.y * size };
+            const q2 = { x: q1.x + ub.x * size, y: q1.y + ub.y * size };
+            inner += '<path class="math-diagram-right-angle" d="M' + q1.x + ' ' + q1.y + ' L' + q2.x + ' ' + q2.y + ' L' + q3.x + ' ' + q3.y + '"/>';
+          }
+        }
+      }
+    }
+    extraVertices.forEach(v => {
+      const p = screen(v.point);
+      inner += '<polygon class="math-diagram-construction" points="' + trianglePoints[0].x + ',' + trianglePoints[0].y + ' ' + trianglePoints[1].x + ',' + trianglePoints[1].y + ' ' + p.x + ',' + p.y + '"/>';
+      labelVertex(v.label, p);
+    });
+    if (median || altitude || bisector || perpendicular) {
+      const midpoints = [];
+      for (let i = 0; i < 3; i++) {
+        const a = trianglePoints[(i + 1) % 3], b = trianglePoints[(i + 2) % 3];
+        midpoints.push({ x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 });
+      }
+      if (median) trianglePoints.forEach((p, i) => inner += line(p.x, p.y, midpoints[i].x, midpoints[i].y, "math-diagram-construction"));
+      if (altitude) trianglePoints.forEach((p, i) => {
+        const a = trianglePoints[(i + 1) % 3], b = trianglePoints[(i + 2) % 3];
+        const dx = b.x - a.x, dy = b.y - a.y, t = ((p.x - a.x) * dx + (p.y - a.y) * dy) / (dx * dx + dy * dy || 1);
+        inner += line(p.x, p.y, a.x + t * dx, a.y + t * dy, "math-diagram-construction");
+      });
+      if (perpendicular) trianglePoints.forEach((p, i) => {
+        const a = trianglePoints[(i + 1) % 3], b = trianglePoints[(i + 2) % 3], m = midpoints[i];
+        const dx = b.x - a.x, dy = b.y - a.y, len = Math.hypot(dx, dy) || 1;
+        inner += line(m.x - dy / len * 130, m.y + dx / len * 130, m.x + dy / len * 130, m.y - dx / len * 130, "math-diagram-construction");
+      });
+      if (bisector) {
+        const lengths = [
+          Math.hypot(trianglePoints[1].x - trianglePoints[2].x, trianglePoints[1].y - trianglePoints[2].y),
+          Math.hypot(trianglePoints[0].x - trianglePoints[2].x, trianglePoints[0].y - trianglePoints[2].y),
+          Math.hypot(trianglePoints[0].x - trianglePoints[1].x, trianglePoints[0].y - trianglePoints[1].y)
+        ];
+        const sum = lengths.reduce((a, b) => a + b, 0) || 1;
+        const center = { x: trianglePoints.reduce((v, p, i) => v + p.x * lengths[i], 0) / sum, y: trianglePoints.reduce((v, p, i) => v + p.y * lengths[i], 0) / sum };
+        trianglePoints.forEach(p => inner += line(p.x, p.y, center.x, center.y, "math-diagram-construction"));
+        inner += '<circle class="math-diagram-point" cx="' + center.x + '" cy="' + center.y + '" r="4"/>' + text(center.x + 9, center.y - 5, "I", "start");
+      }
+    }
+    if (noTriangle) inner += text(240, 258, "No triangle satisfies these measurements");
+    return figure(inner, extraVertices.length ? "Two triangles from the given SSA measurements" : noTriangle ? "No triangle can be constructed from the given measurements" : measuredTriangle ? "Triangle drawn from the stated side lengths and angles" : undefined);
+  }
+  if (perpendicular) {
+    inner = line(105, 190, 375, 190) + line(240, 55, 240, 245, "math-diagram-construction") + line(240, 85, 105, 190) + line(240, 85, 375, 190);
+    inner += text(95, 210, "A") + text(385, 210, "B") + text(240, 212, "M") + text(240, 73, "P");
+  } else if (quadrilateral) {
+    inner = '<polygon class="math-diagram-shape" points="95,205 155,65 385,65 325,205"/>' + text(82, 222, "A") + text(143, 57, "B") + text(397, 57, "C") + text(338, 222, "D");
+    if (/diagonal|bisect each other|intersection/i.test(detail)) inner += line(95, 205, 385, 65, "math-diagram-diagonal") + line(155, 65, 325, 205, "math-diagram-diagonal") + text(240, 137, "O");
+  } else if (/two triangles|congruent triangles|corresponding triangles/i.test(detail)) {
+    inner = '<polygon class="math-diagram-shape" points="65,210 125,65 205,210"/>' + text(58, 228, "A") + text(125, 55, "B") + text(212, 228, "C");
+    inner += '<polygon class="math-diagram-shape" points="275,210 335,65 415,210"/>' + text(268, 228, "D") + text(335, 55, "E") + text(422, 228, "F");
+  } else {
+    inner = '<polygon class="math-diagram-shape" points="240,40 75,225 405,225"/>' + text(240, 30, labels[0]) + text(62, 244, labels[1]) + text(418, 244, labels[2]);
+  }
+  const lengths = Array.from(detail.matchAll(/(\d+(?:\.\d+)?)\s*cm/gi)).slice(0, 2);
+  if (lengths.length) inner += text(130, 264, lengths[0][1] + " cm");
+  const angle = /(\d+(?:\.\d+)?)\s*°/.exec(prompt);
+  if (angle) inner += text(270, 88, angle[1] + "°");
+  return figure(inner);
+}
 function switchMathTab(tabName, skipScroll) {
   state.activeMathTab = tabName;
   document.querySelectorAll('.math-top-tab, .math-tab-btn, .bio-tab-btn').forEach(btn =>
@@ -13240,6 +14261,7 @@ function switchMathTab(tabName, skipScroll) {
     container.innerHTML = renderMathFormulaSheet(ch);
   }
 
+  typesetChapterMath(container);
   container.classList.toggle('math-grid-layout', state.mathTopicLayout === 'grid');
   container.scrollTop = 0;
 }
@@ -13384,6 +14406,7 @@ function renderMathLesson(ch) {
           <button class="topic-sub-tab-btn" data-subtab="exercise" onclick="switchMathTopicSubTab('${sec.id}', 'exercise', this)">✍️ Topic Exercise</button>
           <button class="topic-sub-tab-btn" data-subtab="slos" onclick="switchMathTopicSubTab('${sec.id}', 'slos', this)">🎯 Topic SLOs</button>
         </div>
+        ${renderMathDiagram(sec, ch.number)}
         <div id="math-topic-sub-content-${sec.id}" class="topic-sub-content">
           ${renderMathTopicSubContent(sec, ch, 'english', idx)}
         </div>
@@ -13429,6 +14452,7 @@ function renderMathExamples(ch) {
             <strong>Method:</strong> ${ex.method}
           </div>
         </div>
+        ${renderMathDiagram(ex, ch.number)}
         <div class="math-step-box">
           <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">Detailed Step-by-Step Execution:</div>
           <ol style="margin:0;padding-left:1.25rem;line-height:1.8;">
@@ -13521,6 +14545,7 @@ function switchMathEx(exKey, activeCat) {
             <div style="font-weight:700;font-size:1.02rem;color:#0f172a;margin-bottom:0.85rem;white-space:pre-line;line-height:1.65;background:#f8fafc;padding:0.85rem 1.1rem;border-radius:8px;border:1px solid #e2e8f0;">
               ${p.question}
             </div>
+            ${renderMathDiagram(p, ch.number)}
             <div class="math-step-box" style="white-space:pre-line;line-height:1.8;margin-bottom:0.85rem;">
               <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">Full Mathematical Solution:</div>
               ${p.solution}
@@ -14839,27 +15864,45 @@ function playParaTTSFromBtn(btn, lang) {
 function getSubjectChapterList(subjKey, classId) {
   if (subjKey === 'math') return getMathChapterList(classId);
   if (subjKey === 'eng') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && typeof ENGLISH_10_DATA !== 'undefined' && Array.isArray(ENGLISH_10_DATA)) {
+      return ENGLISH_10_DATA;
+    }
     return (typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA))
       ? ENGLISH_DATA
       : ((typeof DATA !== "undefined" && DATA && (DATA.englishChapters || DATA.engChapters)) ? (DATA.englishChapters || DATA.engChapters) : []);
   }
   if (subjKey === 'urdu') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && typeof URDU_10_DATA !== 'undefined' && Array.isArray(URDU_10_DATA)) {
+      return URDU_10_DATA;
+    }
     return (typeof URDU_DATA !== 'undefined' && Array.isArray(URDU_DATA))
       ? URDU_DATA
       : ((typeof DATA !== "undefined" && DATA && (DATA.urduChapters || DATA.urduLessons)) ? (DATA.urduChapters || DATA.urduLessons) : []);
   }
   if (subjKey === 'phys') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && DATA && DATA.phys10Chapters) return DATA.phys10Chapters;
     return (DATA && DATA.physChapters) ? DATA.physChapters : [];
   }
   if (subjKey === 'chem') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && DATA && DATA.chem10Chapters) return DATA.chem10Chapters;
     return (DATA && DATA.chemChapters) ? DATA.chemChapters : [];
   }
   if (subjKey === 'bio') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && DATA && DATA.bio10Chapters) return DATA.bio10Chapters;
     return (typeof BIO_DATA !== 'undefined' && Array.isArray(BIO_DATA))
       ? BIO_DATA
       : ((typeof DATA !== "undefined" && DATA && (DATA.bioChapters || DATA.bio10Chapters)) ? (DATA.bioChapters || DATA.bio10Chapters) : []);
   }
   if (subjKey === 'pakstudy') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && typeof PAKSTUDY_10_DATA !== 'undefined' && Array.isArray(PAKSTUDY_10_DATA)) {
+      return PAKSTUDY_10_DATA;
+    }
     return (typeof PAKSTUDY_DATA !== 'undefined' && Array.isArray(PAKSTUDY_DATA))
       ? PAKSTUDY_DATA
       : ((typeof DATA !== "undefined" && DATA && DATA.pakstudyChapters) ? DATA.pakstudyChapters : []);
@@ -17172,7 +18215,13 @@ window.openIslView = function(classId, subj) { openSubjectWorkspace(classId, 'is
 window.openCompView = function(classId, subj) { openSubjectWorkspace(classId, 'comp', subj); };
 
 
-function getPakStudyChapterList() {
+function getPakStudyChapterList(classId) {
+  const cid = classId || state.selectedClass;
+  if (cid === 'cls10') {
+    if (typeof PAKSTUDY_10_DATA !== "undefined" && Array.isArray(PAKSTUDY_10_DATA)) {
+      return PAKSTUDY_10_DATA;
+    }
+  }
   if (typeof PAKSTUDY_DATA !== "undefined" && Array.isArray(PAKSTUDY_DATA)) {
     return PAKSTUDY_DATA;
   }
@@ -17187,9 +18236,9 @@ function openPakStudyView(classId, subj) {
   state.selectedClass = classId;
   setActiveNav("subjects");
 
-  const cls = DATA.classes.find(c => c.id === classId) || { name: "Class 9" };
-  const chList = getPakStudyChapterList();
-  const gradeLabel = "Grade 9";
+  const cls = DATA.classes.find(c => c.id === classId) || { name: classId === "cls10" ? "Class 10" : "Class 9" };
+  const chList = getPakStudyChapterList(classId);
+  const gradeLabel = classId === "cls10" ? "Grade 10" : "Grade 9";
 
   setDashHeader(`🇵🇰 ${subj.name} (${subj.nameUrdu || 'مطالعہ پاکستان'}) — ${gradeLabel}`, `KPK Textbook Board, Peshawar · مکمل 4 ابواب، حل شدہ مشقیں اور ایس ایل او بینک`);
   setBreadcrumb([
@@ -17545,7 +18594,7 @@ function renderPakStudyExercise(ch) {
   // MCQs
   const mcqHtml = mcqs.map((m, idx) => {
     const optionsHtml = m.options.map((opt) => {
-      const isCorrect = (opt.trim() === (m.answer || '').trim());
+      const isCorrect = (opt.trim() === (m.answer || '').trim()) || ((m.answer || '').includes(opt.trim())) || (typeof m.correct === 'number' && m.options[m.correct] === opt);
       return `
         <div style="padding:0.5rem 0.85rem;border-radius:6px;border:1.5px solid ${isCorrect ? '#16a34a' : '#e2e8f0'};background:${isCorrect ? '#f0fdf4' : '#ffffff'};color:${isCorrect ? '#15803d' : '#334155'};font-weight:${isCorrect ? '700' : '400'};display:flex;align-items:center;justify-content:space-between;direction:rtl;text-align:right;">
           <span>${opt}</span>

@@ -110,7 +110,7 @@ const DATA = {
       "id": "cls10",
       "name": "Class 10",
       "emoji": "🏫",
-      "subjects": 7
+      "subjects": 8
     },
     {
       "id": "cls11",
@@ -308,20 +308,34 @@ const DATA = {
         "name": "English",
         "emoji": "📖",
         "chapters": 15,
+        "hasEng": true,
         "hasEng10": true
       },
       {
-        "id": "cls10-pak",
-        "name": "Pak Studies",
-        "emoji": "🌙",
-        "chapters": 7
+        "id": "cls10-pakstudy",
+        "name": "Pakistan Studies",
+        "nameUrdu": "مطالعہ پاکستان",
+        "emoji": "🇵🇰",
+        "chapters": 4,
+        "hasPakStudy": true,
+        "hasPakStudy10": true
       },
       {
         "id": "cls10-isl",
         "name": "Islamyat",
         "emoji": "🕌",
         "chapters": 18,
+        "hasIsl": true,
         "hasIsl10": true
+      },
+      {
+        "id": "cls10-urdu",
+        "name": "Urdu",
+        "nameUrdu": "اردو لازمی",
+        "emoji": "📗",
+        "chapters": 22,
+        "hasUrdu": true,
+        "hasUrdu10": true
       }
     ],
     "cls11": [
@@ -1606,7 +1620,7 @@ const DATA = {
       "subject": "Chemistry",
       "title": "Chemistry 10th Class Textbook",
       "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-      "icon": "fa-vial",
+      "icon": "🧪",
       "color": "#0284c7",
       "size": "48.9 MB",
       "pages": "8 Units (9–16) Complete",
@@ -1633,6 +1647,51 @@ const DATA = {
       "icon": "🔬",
       "available": false,
       "action": "cls10-bio"
+    },
+    {
+      "id": "b-cls10-math",
+      "classId": "cls10",
+      "className": "Class 10",
+      "subject": "Mathematics",
+      "title": "Mathematics 10th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "19.5 MB",
+      "pages": "Complete 13 Units",
+      "pdfPath": "assets/books/Class-10-Mathematics-KPK.pdf",
+      "color": "#2563eb",
+      "icon": "📐",
+      "available": true,
+      "action": "cls10-math"
+    },
+    {
+      "id": "b-cls10-pakstudy",
+      "classId": "cls10",
+      "className": "Class 10",
+      "subject": "Pakistan Studies",
+      "title": "Pakistan Studies 10th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "16.2 MB",
+      "pages": "Complete 4 Chapters",
+      "pdfPath": "assets/books/Class-10-Pakistan-Studies-KPK.pdf",
+      "color": "#0d9488",
+      "icon": "🇵🇰",
+      "available": true,
+      "action": "cls10-pakstudy"
+    },
+    {
+      "id": "b-cls10-urdu",
+      "classId": "cls10",
+      "className": "Class 10",
+      "subject": "Urdu (Compulsory)",
+      "title": "Urdu 10th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "24.5 MB",
+      "pages": "Complete 22 Lessons & Poetry",
+      "pdfPath": "assets/books/Class-10-Urdu-KPK.pdf",
+      "color": "#0891b2",
+      "icon": "📗",
+      "available": true,
+      "action": "cls10-urdu"
     },
     {
       "id": "b-cls11-phys",

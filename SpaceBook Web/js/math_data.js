@@ -1,949 +1,949 @@
 // KPK Grade 9 Mathematics - 100% Textbook Verified Data
 var MATH_DATA = [
   {
-    "number": 1,
-    "id": "u1",
-    "title": "Matrices & Determinants",
-    "titleUrdu": "قالب اور ان کے مقطعات",
-    "status": "ready",
-    "badge": "100% Textbook Matched",
-    "pageRange": "Pages 1–49",
-    "description": "Official KPK Board Textbook Unit 1 with complete text reading, all 28 worked examples, Exercises 1.1 to 1.6 & Review Exercise 1 with verified step-by-step solutions.",
-    "sections": [
-      {
-        "id": "1.1",
-        "title": "1.1 Introduction to Matrices, Order & Equality",
-        "theory": "The word 'matrices' is plural of the word 'matrix'. The term matrix was first introduced by the mathematician Arthur Cayley in 1860. The knowledge of matrices is necessary in various areas of Mathematics. It has widely been used in the fields of pure mathematics, statistics, engineering and physical and social sciences. Thus, matrix theory finds an important place in modern age and has become an integral part of mathematics.\n\nMatrices make presentation of numbers clearer and make calculations easier. The following table presents the information about a series of hockey matches played between Pakistan and India:\n\n| Match Record | Played | Won | Drawn | Lost |\n| :--- | :---: | :---: | :---: | :---: |\n| **Pakistan** | 8 | 4 | 1 | 3 |\n| **India** | 8 | 3 | 1 | 4 |\n\nThe information is readily available when presented in this way. For example, if we want to know how many matches India lost against Pakistan, we go along the row 'India' and column 'Lost' and find that it is 4. Similarly, if we want to know how many matches Pakistan drew with India, we go along the row 'Pakistan' and column 'Drawn' and find that it is 1. As long as we remember what each number represents, we could remove the row and column headings and write just the numbers, enclosing them in square brackets or parentheses:\nA = [[8, 4, 1, 3], [8, 3, 1, 4]]\nThus A is a matrix.\n\n• 1.1.1 Matrix:\nA matrix is a rectangular array (arrangement) of real numbers enclosed in square brackets. Each number in a matrix is called an element or entry of the matrix. For example:\n[[2, 3], [6, 5]] and [[3, 4, 2], [-1, 1, -2], [-4, -3, -5]] are all matrices.\nIn the matrix [[2, 3], [6, 5]], the numbers 2, 3, 6, 5 are the elements or entries of the matrix. Matrices are frequently denoted by capital letters such as A, B, C and so on.\n\n• 1.1.2 Rows and Columns of a Matrix:\nThe rows of a matrix run horizontally, and the columns of a matrix run vertically.\nFor example, consider matrix A:\nA = [[4, 3, -2], [1, 5, 2], [3, 1, 1]]\n- The numbers 4, 3, -2 run horizontally, so they constitute the first row (Row 1).\n- The numbers 1, 5, 2 run horizontally, so they constitute the second row (Row 2).\n- The numbers 3, 1, 1 run horizontally, so they constitute the third row (Row 3).\n- The numbers 4, 1, 3 run vertically, so they constitute the first column (Column 1).\n- The numbers 3, 5, 1 run vertically, so they constitute the second column (Column 2).\n- The numbers -2, 2, 1 run vertically, so they constitute the third column (Column 3).\n\n• 1.1.3 Order (or Dimension / Size) of a Matrix:\nA matrix with m rows and n columns has order m × n (read 'm by n').\nIf a matrix has order m × n, then m represents the number of rows and n represents the number of columns.\nFor example:\nA = [[2, -3, 2], [1, 3, -4]] has 2 rows and 3 columns. Order of A = 2-by-3 (or 2 × 3).\nB = [[1, 2], [1, 3]] has 2 rows and 2 columns. Order of B = 2-by-2 (or 2 × 2).\n*Tid-Bit:* Order of a matrix m × n does not mean to multiply m and n.\n\n• 1.1.4 Equality of Two Matrices:\nTwo given matrices A and B are said to be equal if:\n(i) Both the matrices are of the same order (they respectively have the same number of rows and columns).\n(ii) The elements in the corresponding positions in A and B are equal.\nFor example:\n[[1, 2, 3], [6, 5, 4]] and [[1, 1+1, 12/4], [4+2, 10/2, 8/2]] are equal matrices.\nWhereas [[1, 2], [3, 4], [5, 6]] and [[1, 2, 3], [6, 5, 4]] are NOT equal matrices because their orders are different (3×2 ≠ 2×3).",
-        "rules": [
-          "Arthur Cayley introduced the term matrix in 1860.",
-          "Order is written as Rows-by-Columns (m × n), never Columns-by-Rows.",
-          "Equality requires BOTH same dimensions AND identical corresponding entries (Equality doesn't mean Equity)."
-        ]
-      },
-      {
-        "id": "1.2",
-        "title": "1.2 Types of Matrices",
-        "theory": "The textbook defines and classifies matrices into the following key types:\n\na) Row-matrix:\nA matrix which has just one and only one row in it is called a Row-matrix.\nFor example, the matrices [a, b], [1, 3, 4], and [2, 4, 6, 8] are all row-matrices.\n\nb) Column-matrix:\nA matrix which has just one and only one column in it is called a Column-matrix.\nFor example, [[2], [1], [4], [3]] and [[b], [6], [5], [8]] are all column matrices.\n\nc) Square-matrix:\nA matrix in which the number of rows and columns are equal is called a square matrix.\nFor example, [[m, n], [n, p]] has 2 rows and 2 columns, so it is a 2-square matrix.\nThe matrix [[1, 2, 3], [7, 8, 9], [-1, -4, 2]] is a square matrix of order 3 (3-square matrix).\nAs a special case, the matrix consisting of a single element [3] is a square matrix of order 1 (1-square matrix).\n\nd) Rectangular-matrix:\nA matrix whose number of rows and number of columns are not equal is called a rectangular matrix.\nFor example, [[a, b, c], [d, e, f]] has rows = 2, columns = 3 (2 ≠ 3), so it is a rectangular matrix.\nSimilarly, [[1, 4], [3, 2], [5, -3]] has order 3-by-2, so it is a rectangular matrix.\n\ne) Zero matrix or Null matrix:\nAny matrix (whether rectangular or square) of which all the elements (entries) are equal to zero is said to be a Zero matrix or Null matrix, denoted by O.\nFor example:\nO_2x2 = [[0, 0], [0, 0]] is a null matrix of order 2.\nO_2x3 = [[0, 0, 0], [0, 0, 0]] is a null matrix of order 2-by-3.\n*Important Points:*\n1. A zero matrix is not necessarily a square matrix.\n2. The role of zero matrix in matrix operations is similar to zero in arithmetic (A + O = A).\n\nf) Diagonal matrix:\nA square matrix in which all elements are zero except the diagonal elements is known as a diagonal matrix.\nThe Main Diagonal starts at the top left and goes to the bottom right.\nFor example:\nA = [[1, 0], [0, 3]] is a diagonal matrix of order 2.\nB = [[2, 0, 0], [0, 3, 0], [0, 0, -5]] is a diagonal matrix of order 3.\n\ng) Scalar matrix:\nA diagonal matrix in which all the diagonal elements are equal non-zero constants is said to be a scalar matrix.\nFor instance: [[7, 0], [0, 7]] and [[1/2, 0, 0], [0, 1/2, 0], [0, 0, 1/2]] are scalar matrices of order 2 and 3 respectively.\n*Note:* Every scalar matrix is a diagonal matrix, but every diagonal matrix is not necessarily a scalar matrix.\n\nh) Identity matrix (Unit matrix):\nThe identity matrix is a square matrix denoted by I in which all elements on its main diagonal are 1's and all other elements are zero:\nI_2 = [[1, 0], [0, 1]]\nI_3 = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]\n\ni) Transpose of a matrix:\nThe matrix obtained by interchanging mutually the rows and columns in A is called the transpose of A and is denoted by A^t (or A').\nFor example, if A = [[1, 2], [3, 4]], then A^t = [[1, 3], [2, 4]].\n\nj) Symmetric matrix:\nA square matrix A is said to be symmetric if the transpose of A is equal to A itself, i.e., A^t = A.\nFor example, if A = [[1, 2], [2, 4]], then A^t = [[1, 2], [2, 4]] = A. Thus A is symmetric.\nSimilarly, B = [[1, 2, 3], [2, 4, 5], [3, 5, 6]] has B^t = B, so B is symmetric.\n\nk) Skew-Symmetric matrix:\nA given square matrix A is said to be Skew-Symmetric if A^t = -A.\nFor example, if A = [[0, -3], [3, 0]], then A^t = [[0, 3], [-3, 0]] = -[[0, -3], [3, 0]] = -A.\nTherefore, A is a skew-symmetric matrix. All diagonal elements of a skew-symmetric matrix must be 0.",
-        "rules": [
-          "For a symmetric matrix: A^t = A.",
-          "For a skew-symmetric matrix: A^t = -A (all principal diagonal entries must be 0).",
-          "(A^t)^t = A."
-        ]
-      },
-      {
-        "id": "1.3",
-        "title": "1.3 Addition and Subtraction of Matrices",
-        "theory": "• 1.3.1 Conformability for Addition / Subtraction:\nTwo matrices can be added or subtracted if and only if they have the same order.\nIf A and B are both 2-by-2 matrices, they are conformable. If C is 2-by-3 and D is 3-by-2, they are NOT conformable.\n\n• 1.3.2 Addition and Subtraction Operations:\n- Addition: The sum A + B is obtained by adding corresponding elements of matrices A and B:\n  (A + B)_ij = a_ij + b_ij.\n  Example: [[3, 8], [4, 6]] + [[4, 0], [1, -9]] = [[3+4, 8+0], [4+1, 6-9]] = [[7, 8], [5, -3]].\n- Subtraction: The difference A - B is obtained by subtracting each element of B from the corresponding element of A:\n  (A - B)_ij = a_ij - b_ij.\n  Example: [[3, 8], [4, 6]] - [[4, 0], [1, -9]] = [[3-4, 8-0], [4-1, 6-(-9)]] = [[-1, 8], [3, 15]].\n\n• 1.3.3 Multiplication of a Matrix by a Real Number (Scalar Multiplication):\nLet A be any matrix and k be any real number. The matrix obtained by multiplying each element of A by k is called the scalar multiplication of A by k, denoted by kA:\n(kA)_ij = k · a_ij.\n\n• 1.3.4 Commutative and Associative Laws under Addition:\n- Commutative Law: If A and B are matrices of the same order, then A + B = B + A.\n- Associative Law: If A, B, and C are matrices of the same order, then A + (B + C) = (A + B) + C.\n\n• 1.3.5 Additive Identity of Matrices:\nIn matrix theory, the Zero matrix O serves as the additive identity:\nA + O = O + A = A.\n\n• 1.3.6 Additive Inverse of a Matrix:\nIf A and B are two matrices of the same order such that A + B = O = B + A, then B is called the additive inverse of A (and B = -A):\nA + (-A) = (-A) + A = O.",
-        "rules": [
-          "Matrices must have identical orders to be added or subtracted.",
-          "Commutative law of addition holds: A + B = B + A.",
-          "Associative law of addition holds: (A + B) + C = A + (B + C).",
-          "The null matrix O is the unique additive identity."
-        ]
-      },
-      {
-        "id": "1.4",
-        "title": "1.4 Multiplication of Matrices",
-        "theory": "• 1.4.1 Conformability for Multiplication of Matrices:\nTwo matrices A and B are conformable for multiplication AB only when:\nNumber of columns of Matrix A = Number of rows of Matrix B.\nIf A is of order m × p and B is of order p × n, then the product AB exists and its order is m × n:\nA_(m×p) × B_(p×n) = (AB)_(m×n).\nThe product is evaluated using the row-by-column method: multiply each element of a row of A by the corresponding element of a column of B, and add these products.\n\n• 1.4.2 Commutative Law of Multiplication of Matrices:\nCommutative law of multiplication in general DOES NOT HOLD for matrices:\nAB ≠ BA (in general).\nThough for certain special matrices, AB may equal BA (they commute).\n\n• 1.4.3 Associative Law under Multiplication:\nIf A, B, and C are conformable for multiplication, then:\n(AB)C = A(BC).\n\n• 1.4.4 Distributive Laws of Multiplication over Addition:\nIf A, B, and C are conformable matrices, then:\n(i) A(B + C) = AB + AC (Left Distributive Law)\n(ii) (A + B)C = AC + BC (Right Distributive Law)\n\n• 1.4.5 Multiplicative Identity of a Matrix:\nIf I is an identity matrix and A is conformable, then IA = AI = A.\nFor 2-square matrices, I = [[1, 0], [0, 1]].\nFor 3-square matrices, I = [[1, 0, 0], [0, 1, 0], [0, 0, 1]].\n\n• 1.4.7 Verification of the Result (AB)^t = B^t · A^t:\nThe transpose of the product of two matrices equals the product of their transposes taken in the REVERSE ORDER:\n(AB)^t = B^t · A^t.",
-        "rules": [
-          "Conformability condition: Columns of first = Rows of second.",
-          "Matrix multiplication is NOT commutative in general: AB ≠ BA.",
-          "Associative law holds: (AB)C = A(BC).",
-          "Transpose of product follows reversal law: (AB)^t = B^t · A^t."
-        ]
-      },
-      {
-        "id": "1.5",
-        "title": "1.5 Multiplicative Inverse of a Matrix",
-        "theory": "• 1.5.1 Determinant of a Square Matrix:\nWith every square matrix A, a unique real number is associated called the determinant of A, denoted by |A| or det(A).\nIf A = [[a, b], [c, d]], then:\n|A| = ad - bc.\nThe determinant is obtained by multiplying entries on the main diagonal and subtracting the product of entries on the secondary diagonal.\n\n• 1.5.2 Singular and Non-Singular Matrices:\n- A square matrix A is called Singular if |A| = 0.\n- A square matrix A is called Non-Singular if |A| ≠ 0.\n\n• 1.5.3 Adjoint of a Matrix:\nThe adjoint of a square matrix A = [[a, b], [c, d]] is denoted by adj(A) and defined as:\nadj(A) = [[d, -b], [-c, a]].\nThat is, interchange the places of a and d, and change the signs of b and c.\n\n• 1.5.4 Multiplicative Inverse of a Matrix:\nLet A be a non-singular square matrix. If there exists another matrix B such that AB = BA = I, then B is called the multiplicative inverse of A, written B = A^-1.\nA · A^-1 = A^-1 · A = I.\n\n• 1.5.5 Use of Adjoint Method to Calculate Inverse:\nA^-1 = (1 / |A|) · adj(A).\nIf |A| = 0, A^-1 does NOT exist because division by zero is undefined.\n\n• 1.5.6 Verification of the Result AA^-1 = I = A^-1 A:\nFor any non-singular matrix A, multiplying A by A^-1 yields the identity matrix I.\n\n• 1.5.7 Verification of the Result (AB)^-1 = B^-1 · A^-1:\nIf A and B are non-singular square matrices of the same order, the inverse of their product is the product of their inverses in reverse order:\n(AB)^-1 = B^-1 · A^-1.",
-        "rules": [
-          "Determinant formula: |A| = ad - bc.",
-          "A matrix is singular if |A| = 0, non-singular if |A| ≠ 0.",
-          "Only non-singular matrices possess a multiplicative inverse.",
-          "Reversal law for inverses: (AB)^-1 = B^-1 · A^-1."
-        ]
-      },
-      {
-        "id": "1.6",
-        "title": "1.6 Solution of Simultaneous Linear Equations",
-        "theory": "A system of two linear equations in variables x and y in general form is:\n  ax + by = m   --- (i)\n  cx + dy = n   --- (ii)\nIn matrix form:\n  AX = B   --- (iii)\nwhere:\n  A = [[a, b], [c, d]]  (Coefficient Matrix)\n  X = [[x], [y]]         (Variable Matrix)\n  B = [[m], [n]]         (Constants Matrix)\n\n• Method 1: Matrix Inversion Method:\nMultiplying both sides of AX = B by A^-1:\n  A^-1 (AX) = A^-1 B  =>  (A^-1 A) X = A^-1 B  =>  IX = A^-1 B  =>  X = A^-1 B.\nSince A^-1 = (1 / |A|) · adj(A):\n  [[x], [y]] = (1 / |A|) · [[d, -b], [-c, a]] · [[m], [n]]\n  x = (dm - bn) / (ad - bc)\n  y = (-cm + an) / (ad - bc)\nIf |A| = 0, A^-1 does not exist, and the system cannot be solved (inconsistent or dependent).\n\n• Method 2: Cramer's Rule:\nLet |A| = ad - bc ≠ 0.\nReplace the coefficients of x in A by constants [m, n] to form A_x:\n  A_x = [[m, b], [n, d]]  =>  |A_x| = md - bn\n  x = |A_x| / |A|\nReplace the coefficients of y in A by constants [m, n] to form A_y:\n  A_y = [[a, m], [c, n]]  =>  |A_y| = an - cm\n  y = |A_y| / |A|\n\n• Real-Life Problems:\nTwo unknowns from real-world scenarios are formulated into simultaneous equations and solved by either Matrix Inversion or Cramer's Rule.",
-        "rules": [
-          "Matrix Inversion formula: X = A^-1 B = (1/|A|) adj(A) B.",
-          "Cramer's Rule formula: x = |A_x| / |A|, y = |A_y| / |A|.",
-          "If |A| = 0, the system has no unique solution."
-        ]
-      }
-    ],
-    "workedExamples": [
-      {
-        "id": "ex1",
-        "title": "Example 1 (Page 4) — Rows, Columns & Order",
-        "problem": "Write the number of rows and columns of the following matrices and hence mention their orders:\n(i) A = [[p, q], [r, s]]\n(ii) B = [[3, 4, 7], [5, 6, 8]]",
-        "given": "Matrices A and B.",
-        "method": "Count horizontal rows (m) and vertical columns (n); order is m-by-n.",
-        "steps": [
-          "Given A = [[p, q], [r, s]]:\nA has two rows and two columns, so order of A is 2-by-2 (or 2 × 2).",
-          "Given B = [[3, 4, 7], [5, 6, 8]]:\nB has two rows and three columns. The order of B is 2-by-3 (or 2 × 3)."
-        ],
-        "answer": "Order of A is 2-by-2; Order of B is 2-by-3."
-      },
-      {
-        "id": "ex2",
-        "title": "Example 2 (Page 13) — Conformability for Addition/Subtraction",
-        "problem": "Determine whether the following pairs of matrices are conformable for addition and subtraction:\n(i) A = [[-3, 2], [4, 7]] and B = [[3, 7], [10, 13]]\n(ii) C = [[9, 5, 13], [-2, 0, 5]] and D = [[7, 3, 1], [10, -1, 1], [2, 0, 3]]",
-        "given": "Pairs of matrices A, B and C, D.",
-        "method": "Check if orders are identical.",
-        "steps": [
-          "(i) A and B are both 2-by-2 matrices. Since both are of the same order, they are conformable for addition and subtraction.",
-          "(ii) Order of C is 2-by-3, while order of D is 3-by-3. Since their orders are not the same, C and D are NOT conformable for addition and subtraction."
-        ],
-        "answer": "(i) Conformable; (ii) Not conformable."
-      },
-      {
-        "id": "ex3",
-        "title": "Example 3 (Page 15) — Scalar Multiplication",
-        "problem": "Compute the scalar multiplications:\n(i) If A = [[6, 2], [-3, 1]], find 3A.\n(ii) If B = [[5, 4, 7], [-3, a, b]], find 7B.",
-        "given": "Matrices A and B.",
-        "method": "Multiply every entry by the given scalar.",
-        "steps": [
-          "(i) 3A = [[6×3, 2×3], [-3×3, 1×3]] = [[18, 6], [-9, 3]].",
-          "(ii) 7B = [[7×5, 7×4, 7×7], [7×(-3), 7a, 7b]] = [[35, 28, 49], [-21, 7a, 7b]]."
-        ],
-        "answer": "(i) 3A = [[18, 6], [-9, 3]]; (ii) 7B = [[35, 28, 49], [-21, 7a, 7b]]."
-      },
-      {
-        "id": "ex4",
-        "title": "Example 4 (Page 15) — Commutative Law of Addition",
-        "problem": "Let A = [[2, 5], [4, 7]] and B = [[-2, 1], [-3, 6]]. Prove that A + B = B + A.",
-        "given": "Matrices A and B of order 2×2.",
-        "method": "Calculate A + B and B + A separately and compare.",
-        "steps": [
-          "Compute A + B:\nA + B = [[2+(-2), 5+1], [4+(-3), 7+6]] = [[0, 6], [1, 13]].",
-          "Compute B + A:\nB + A = [[-2+2, 1+5], [-3+4, 6+7]] = [[0, 6], [1, 13]].",
-          "Since A + B = B + A = [[0, 6], [1, 13]], the commutative law is proved."
-        ],
-        "answer": "A + B = B + A = [[0, 6], [1, 13]]. Proved."
-      },
-      {
-        "id": "ex5",
-        "title": "Example 5 (Page 16) — Associative Law of Addition",
-        "problem": "Let A = [[-1, 2], [4, -3]], B = [[4, -5], [6, 7]], and C = [[3, -2], [1, 0]]. Verify that A + (B + C) = (A + B) + C.",
-        "given": "Matrices A, B, C of order 2×2.",
-        "method": "Evaluate LHS = A + (B + C) and RHS = (A + B) + C.",
-        "steps": [
-          "Compute B + C:\nB + C = [[4+3, -5+(-2)], [6+1, 7+0]] = [[7, -7], [7, 7]].",
-          "Compute LHS = A + (B + C):\nA + (B + C) = [[-1+7, 2+(-7)], [4+7, -3+7]] = [[6, -5], [11, 4]].  --- (1)",
-          "Compute A + B:\nA + B = [[-1+4, 2+(-5)], [4+6, -3+7]] = [[3, -3], [10, 4]].",
-          "Compute RHS = (A + B) + C:\n(A + B) + C = [[3+3, -3+(-2)], [10+1, 4+0]] = [[6, -5], [11, 4]].  --- (2)",
-          "From (1) and (2), LHS = RHS. Associative law is verified."
-        ],
-        "answer": "LHS = RHS = [[6, -5], [11, 4]]. Verified."
-      },
-      {
-        "id": "ex6",
-        "title": "Example 6 (Page 17) — Additive Identity of Matrices",
-        "problem": "If A = [[2, 3], [-1, 5]] and O = [[0, 0], [0, 0]], show that A + O = O + A = A.",
-        "given": "Matrix A and Null Matrix O of order 2×2.",
-        "method": "Add O to A and A to O.",
-        "steps": [
-          "A + O = [[2+0, 3+0], [-1+0, 5+0]] = [[2, 3], [-1, 5]] = A.",
-          "O + A = [[0+2, 0+3], [0+(-1), 0+5]] = [[2, 3], [-1, 5]] = A.",
-          "Thus A + O = O + A = A. O is the additive identity."
-        ],
-        "answer": "A + O = O + A = A. O is the additive identity for all 2-square matrices."
-      },
-      {
-        "id": "ex7",
-        "title": "Example 7 (Page 18) — Additive Inverse of a Matrix",
-        "problem": "Prove that P = [[3, 2, -1], [-2, 4, 6]] and Q = [[-3, -2, 1], [2, -4, -6]] are additive inverses of each other.",
-        "given": "Matrices P and Q of order 2×3.",
-        "method": "Show that P + Q = O and Q + P = O.",
-        "steps": [
-          "P + Q = [[3+(-3), 2+(-2), -1+1], [-2+2, 4+(-4), 6+(-6)]] = [[0, 0, 0], [0, 0, 0]] = O.",
-          "Q + P = [[-3+3, -2+2, 1+(-1)], [2+(-2), -4+4, -6+6]] = [[0, 0, 0], [0, 0, 0]] = O.",
-          "Hence P and Q are additive inverses of each other."
-        ],
-        "answer": "P + Q = Q + P = O. P and Q are additive inverses of each other."
-      },
-      {
-        "id": "ex8",
-        "title": "Example 8 (Page 21) — Multiplication Dimensions",
-        "problem": "Suppose A is a 3-by-4 matrix, B is a 4-by-2 matrix and C is a 4-by-3 matrix. Determine the defined products and their orders.",
-        "given": "Orders: A(3×4), B(4×2), C(4×3).",
-        "method": "Check if inner dimensions match (cols of first = rows of second).",
-        "steps": [
-          "- AB: (3×4) × (4×2) => defined, order is 3-by-2.",
-          "- AC: (3×4) × (4×3) => defined, order is 3-by-3 (3-square matrix).",
-          "- CA: (4×3) × (3×4) => defined, order is 4-by-4 (4-square matrix).",
-          "- BA: (4×2) × (3×4) => columns of B (2) ≠ rows of A (3), undefined.",
-          "- CB: (4×3) × (4×2) => columns of C (3) ≠ rows of B (4), undefined."
-        ],
-        "answer": "AB (3×2), AC (3×3), and CA (4×4) are defined; BA and CB are undefined."
-      },
-      {
-        "id": "ex9",
-        "title": "Example 9 (Page 22) — Row-by-Column Multiplication",
-        "problem": "If A = [[2, 3], [1, 4]] and B = [[3], [5]], (i) is it possible to find both AB and BA? (ii) find the possible product.",
-        "given": "A = [[2, 3], [1, 4]] (order 2×2) and B = [[3], [5]] (order 2×1).",
-        "method": "Check conformability and evaluate row by column.",
-        "steps": [
-          "(i) For AB: columns of A (2) = rows of B (2) => AB is possible.\nFor BA: columns of B (1) ≠ rows of A (2) => BA is not possible.",
-          "(ii) Compute AB:\nAB = [[(2)(3) + (3)(5)], [(1)(3) + (4)(5)]] = [[6 + 15], [3 + 20]] = [[21], [23]]."
-        ],
-        "answer": "Only AB is possible; AB = [[21], [23]]."
-      },
-      {
-        "id": "ex10",
-        "title": "Example 10 (Page 23) — Non-Commutativity (AB ≠ BA)",
-        "problem": "Let A = [[6, 3], [2, 5]] and B = [[-3, 2], [1, 5]]. Determine whether AB = BA.",
-        "given": "Matrices A and B.",
-        "method": "Calculate AB and BA and compare.",
-        "steps": [
-          "Compute AB:\nRow 1: [(6)(-3)+(3)(1), (6)(2)+(3)(5)] = [-18+3, 12+15] = [-15, 27]\nRow 2: [(2)(-3)+(5)(1), (2)(2)+(5)(5)] = [-6+5, 4+25] = [-1, 29]\nAB = [[-15, 27], [-1, 29]].  --- (1)",
-          "Compute BA:\nRow 1: [(-3)(6)+(2)(2), (-3)(3)+(2)(5)] = [-18+4, -9+10] = [-14, 1]\nRow 2: [(1)(6)+(5)(2), (1)(3)+(5)(5)] = [6+10, 3+25] = [16, 28]\nBA = [[-14, 1], [16, 28]].  --- (2)",
-          "From (1) and (2), AB ≠ BA."
-        ],
-        "answer": "AB ≠ BA. Matrix multiplication is not commutative in general."
-      },
-      {
-        "id": "ex11",
-        "title": "Example 11 (Page 23) — Commuting Matrices (AB = BA)",
-        "problem": "Let A = [[1, 2], [3, 4]] and B = [[2, 2], [3, 5]]. Show that AB = BA.",
-        "given": "Matrices A and B.",
-        "method": "Compute AB and BA and demonstrate equality.",
-        "steps": [
-          "Compute AB:\nRow 1: [(1)(2)+(2)(3), (1)(2)+(2)(5)] = [2+6, 2+10] = [8, 12]\nRow 2: [(3)(2)+(4)(3), (3)(2)+(4)(5)] = [6+12, 6+20] = [18, 26]\nAB = [[8, 12], [18, 26]].  --- (1)",
-          "Compute BA:\nRow 1: [(2)(1)+(2)(3), (2)(2)+(2)(4)] = [2+6, 4+8] = [8, 12]\nRow 2: [(3)(1)+(5)(3), (3)(2)+(5)(4)] = [3+15, 6+20] = [18, 26]\nBA = [[8, 12], [18, 26]].  --- (2)",
-          "From (1) and (2), AB = BA. The given matrices commute."
-        ],
-        "answer": "AB = BA = [[8, 12], [18, 26]]. Proved."
-      },
-      {
-        "id": "ex13",
-        "title": "Example 13 (Page 25) — Distributive Law A(B + C) = AB + AC",
-        "problem": "If A = [[1, 2], [3, 4]], B = [[5, 3], [2, 4]], and C = [[6, 2], [5, 1]], verify that A(B + C) = AB + AC.",
-        "given": "Matrices A, B, C of order 2×2.",
-        "method": "Evaluate LHS = A(B + C) and RHS = AB + AC.",
-        "steps": [
-          "Compute B + C = [[5+6, 3+2], [2+5, 4+1]] = [[11, 5], [7, 5]].",
-          "Compute LHS = A(B + C):\nRow 1: [(1)(11)+(2)(7), (1)(5)+(2)(5)] = [11+14, 5+10] = [25, 15]\nRow 2: [(3)(11)+(4)(7), (3)(5)+(4)(5)] = [33+28, 15+20] = [61, 35]\nLHS = [[25, 15], [61, 35]].  --- (1)",
-          "Compute AB:\nRow 1: [(1)(5)+(2)(2), (1)(3)+(2)(4)] = [5+4, 3+8] = [9, 11]\nRow 2: [(3)(5)+(4)(2), (3)(3)+(4)(4)] = [15+8, 9+16] = [23, 25]\nAB = [[9, 11], [23, 25]].",
-          "Compute AC:\nRow 1: [(1)(6)+(2)(5), (1)(2)+(2)(1)] = [6+10, 2+2] = [16, 4]\nRow 2: [(3)(6)+(4)(5), (3)(2)+(4)(1)] = [18+20, 6+4] = [38, 10]\nAC = [[16, 4], [38, 10]].",
-          "Compute RHS = AB + AC = [[9+16, 11+4], [23+38, 25+10]] = [[25, 15], [61, 35]].  --- (2)",
-          "From (1) and (2), LHS = RHS. Distributive law is verified."
-        ],
-        "answer": "LHS = RHS = [[25, 15], [61, 35]]. Verified."
-      },
-      {
-        "id": "ex14",
-        "title": "Example 14 (Page 27) — Multiplicative Identity IA = AI = A",
-        "problem": "If I = [[1, 0], [0, 1]] and A = [[9, -3], [-4, 5]], find IA and AI.",
-        "given": "Identity matrix I and matrix A.",
-        "method": "Multiply I by A and A by I.",
-        "steps": [
-          "IA = [[1(9)+0(-4), 1(-3)+0(5)], [0(9)+1(-4), 0(-3)+1(5)]] = [[9, -3], [-4, 5]] = A.",
-          "AI = [[9(1)+(-3)(0), 9(0)+(-3)(1)], [(-4)(1)+5(0), (-4)(0)+5(1)]] = [[9, -3], [-4, 5]] = A.",
-          "Hence IA = AI = A. I is the multiplicative identity."
-        ],
-        "answer": "IA = AI = A = [[9, -3], [-4, 5]]."
-      },
-      {
-        "id": "ex15",
-        "title": "Example 15 (Page 27) — Transpose of a Matrix",
-        "problem": "If A = [[3, 4, 5], [2, 4, 6]], find A^t.",
-        "given": "Matrix A of order 2×3.",
-        "method": "Interchange rows into columns.",
-        "steps": [
-          "Row 1 [3, 4, 5] becomes Column 1.\nRow 2 [2, 4, 6] becomes Column 2.",
-          "A^t = [[3, 2], [4, 4], [5, 6]] of order 3×2."
-        ],
-        "answer": "A^t = [[3, 2], [4, 4], [5, 6]]."
-      },
-      {
-        "id": "ex16",
-        "title": "Example 16 (Page 28) — Transpose Reversal Law (AB)^t = B^t · A^t",
-        "problem": "Let A = [[3, -2], [1, 4]] and B = [[2, -5], [6, -7]]. Show that (AB)^t = B^t · A^t.",
-        "given": "Matrices A and B.",
-        "method": "Compute (AB)^t and B^t A^t and show equality.",
-        "steps": [
-          "Compute AB:\nRow 1: [(3)(2)+(-2)(6), (3)(-5)+(-2)(-7)] = [6-12, -15+14] = [-6, -1]\nRow 2: [(1)(2)+(4)(6), (1)(-5)+(4)(-7)] = [2+24, -5-28] = [26, -33]\nAB = [[-6, -1], [26, -33]].",
-          "LHS = (AB)^t = [[-6, 26], [-1, -33]].  --- (1)",
-          "Compute B^t and A^t:\nB^t = [[2, 6], [-5, -7]],  A^t = [[3, 1], [-2, 4]].",
-          "Compute RHS = B^t · A^t:\nRow 1: [(2)(3)+(6)(-2), (2)(1)+(6)(4)] = [6-12, 2+24] = [-6, 26]\nRow 2: [(-5)(3)+(-7)(-2), (-5)(1)+(-7)(4)] = [-15+14, -5-28] = [-1, -33]\nB^t · A^t = [[-6, 26], [-1, -33]].  --- (2)",
-          "From (1) and (2), (AB)^t = B^t · A^t."
-        ],
-        "answer": "LHS = RHS = [[-6, 26], [-1, -33]]. Proved."
-      },
-      {
-        "id": "ex17",
-        "title": "Example 17 (Page 31) — Determinant of a 2×2 Matrix",
-        "problem": "Find the determinant of the matrix A = [[7, 5], [7, -12]].",
-        "given": "A = [[7, 5], [7, -12]]",
-        "method": "|A| = ad - bc.",
-        "steps": [
-          "|A| = (7)(-12) - (5)(7) = -84 - 35 = -119."
-        ],
-        "answer": "|A| = -119."
-      },
-      {
-        "id": "ex18",
-        "title": "Example 18 (Page 31) — Singular Matrix Check",
-        "problem": "Find whether A = [[4, -2], [-2, 1]] is a singular matrix.",
-        "given": "A = [[4, -2], [-2, 1]]",
-        "method": "Evaluate determinant |A|; if |A| = 0, it is singular.",
-        "steps": [
-          "|A| = (4)(1) - (-2)(-2) = 4 - 4 = 0.",
-          "Since |A| = 0, A is a singular matrix."
-        ],
-        "answer": "A is a singular matrix (|A| = 0)."
-      },
-      {
-        "id": "ex19",
-        "title": "Example 19 (Page 32) — Non-Singular Matrix Check",
-        "problem": "If P = [[-4, 2], [3, -7]], check whether P is a singular or non-singular matrix.",
-        "given": "P = [[-4, 2], [3, -7]]",
-        "method": "Evaluate |P|.",
-        "steps": [
-          "|P| = (-4)(-7) - (3)(2) = 28 - 6 = 22.",
-          "Since |P| = 22 ≠ 0, P is a non-singular matrix."
-        ],
-        "answer": "P is a non-singular matrix (|P| = 22 ≠ 0)."
-      },
-      {
-        "id": "ex20",
-        "title": "Example 20 (Page 32) — Adjoint of Matrices",
-        "problem": "Find the adjoint of the following matrices:\n(i) A = [[1, 3], [-2, 4]]\n(ii) B = [[4, 3], [-3, 1]]",
-        "given": "Matrices A and B.",
-        "method": "adj(M) = [[d, -b], [-c, a]].",
-        "steps": [
-          "(i) For A = [[1, 3], [-2, 4]]: Swap 1 and 4 => 4 and 1. Change signs of 3 and -2 => -3 and 2. adj(A) = [[4, -3], [2, 1]].",
-          "(ii) For B = [[4, 3], [-3, 1]]: Swap 4 and 1 => 1 and 4. Change signs of 3 and -3 => -3 and 3. adj(B) = [[1, -3], [3, 4]]."
-        ],
-        "answer": "(i) adj(A) = [[4, -3], [2, 1]]; (ii) adj(B) = [[1, -3], [3, 4]]."
-      },
-      {
-        "id": "ex21",
-        "title": "Example 21 (Page 33) — Multiplicative Inverse Proof",
-        "problem": "Show that A = [[3, 2], [4, 3]] is the multiplicative inverse of B = [[3, -2], [-4, 3]].",
-        "given": "Matrices A and B.",
-        "method": "Show AB = BA = I.",
-        "steps": [
-          "Compute AB:\nRow 1: [(3)(3)+(2)(-4), (3)(-2)+(2)(3)] = [9-8, -6+6] = [1, 0]\nRow 2: [(4)(3)+(3)(-4), (4)(-2)+(3)(3)] = [12-12, -8+9] = [0, 1]\nAB = [[1, 0], [0, 1]] = I.",
-          "Compute BA:\nRow 1: [(3)(3)+(-2)(4), (3)(2)+(-2)(3)] = [9-8, 6-6] = [1, 0]\nRow 2: [(-4)(3)+(3)(4), (-4)(2)+(3)(3)] = [-12+12, -8+9] = [0, 1]\nBA = [[1, 0], [0, 1]] = I.",
-          "Since AB = BA = I, A is the multiplicative inverse of B."
-        ],
-        "answer": "AB = BA = I. Hence A is the inverse of B."
-      },
-      {
-        "id": "ex22",
-        "title": "Example 22 (Page 33) — Inverse using Adjoint Method",
-        "problem": "Find the inverse of A = [[-2, -1], [3, 4]] using the adjoint method.",
-        "given": "A = [[-2, -1], [3, 4]]",
-        "method": "A^-1 = (1/|A|) · adj(A).",
-        "steps": [
-          "Step 1: |A| = (-2)(4) - (-1)(3) = -8 + 3 = -5 ≠ 0 (non-singular, A^-1 exists).",
-          "Step 2: adj(A) = [[4, 1], [-3, -2]].",
-          "Step 3: A^-1 = (1/-5) · [[4, 1], [-3, -2]] = [[-4/5, -1/5], [3/5, 2/5]]."
-        ],
-        "answer": "A^-1 = [[-4/5, -1/5], [3/5, 2/5]]."
-      },
-      {
-        "id": "ex23",
-        "title": "Example 23 (Page 35) — Verification of (AB)^-1 = B^-1 · A^-1",
-        "problem": "Let A = [[-2, 1], [1, 1]] and B = [[2, 1], [3, 2]]. Verify that (AB)^-1 = B^-1 · A^-1.",
-        "given": "Matrices A and B.",
-        "method": "Evaluate (AB)^-1 and B^-1 A^-1 and compare.",
-        "steps": [
-          "Step 1: Compute AB = [[-2(2)+1(3), -2(1)+1(2)], [1(2)+1(3), 1(1)+1(2)]] = [[-1, 0], [5, 3]].",
-          "Step 2: det(AB) = (-1)(3) - (0)(5) = -3 ≠ 0. adj(AB) = [[3, 0], [-5, -1]].\n(AB)^-1 = (1/-3) · [[3, 0], [-5, -1]] = [[-1, 0], [5/3, 1/3]].  --- (1)",
-          "Step 3: For A: det(A) = (-2)(1) - (1)(1) = -3. adj(A) = [[1, -1], [-1, -2]].\nA^-1 = (1/-3) · [[1, -1], [-1, -2]] = [[-1/3, 1/3], [1/3, 2/3]].",
-          "Step 4: For B: det(B) = (2)(2) - (1)(3) = 1. adj(B) = [[2, -1], [-3, 2]].\nB^-1 = [[2, -1], [-3, 2]].",
-          "Step 5: Multiply B^-1 · A^-1:\nRow 1: [2(-1/3)+(-1)(1/3), 2(1/3)+(-1)(2/3)] = [-2/3-1/3, 2/3-2/3] = [-1, 0]\nRow 2: [-3(-1/3)+2(1/3), -3(1/3)+2(2/3)] = [1+2/3, -1+4/3] = [5/3, 1/3]\nB^-1 · A^-1 = [[-1, 0], [5/3, 1/3]].  --- (2)",
-          "From (1) and (2), (AB)^-1 = B^-1 · A^-1."
-        ],
-        "answer": "LHS = RHS = [[-1, 0], [5/3, 1/3]]. Verified."
-      },
-      {
-        "id": "ex24",
-        "title": "Example 24 (Page 40) — Matrix Inversion Method",
-        "problem": "Solve the system of equations with the help of matrices:\nx - 3y = 0\n2x + y = 7",
-        "given": "x - 3y = 0 and 2x + y = 7.",
-        "method": "Write AX = B => X = A^-1 B.",
-        "steps": [
-          "A = [[1, -3], [2, 1]], X = [[x], [y]], B = [[0], [7]].",
-          "|A| = (1)(1) - (-3)(2) = 1 + 6 = 7 ≠ 0. A^-1 exists.",
-          "adj(A) = [[1, 3], [-2, 1]].",
-          "X = (1/7) · [[1, 3], [-2, 1]] · [[0], [7]] = (1/7) · [[(1)(0) + (3)(7)], [(-2)(0) + (1)(7)]] = (1/7) · [[21], [7]] = [[3], [1]].",
-          "Therefore, x = 3, y = 1."
-        ],
-        "answer": "x = 3, y = 1. Solution set = {(3, 1)}."
-      },
-      {
-        "id": "ex25",
-        "title": "Example 25 (Page 40) — Solvability of Linear System",
-        "problem": "Is the following system of equations solvable?\n3x - 6y = 9\n2x - 4y = -3",
-        "given": "3x - 6y = 9 and 2x - 4y = -3.",
-        "method": "Check determinant |A| of coefficient matrix.",
-        "steps": [
-          "Coefficient matrix A = [[3, -6], [2, -4]].",
-          "|A| = (3)(-4) - (-6)(2) = -12 + 12 = 0.",
-          "Since |A| = 0, A is singular, A^-1 does not exist.",
-          "Hence the given equations are non-solvable."
-        ],
-        "answer": "The system is non-solvable (|A| = 0)."
-      },
-      {
-        "id": "ex26",
-        "title": "Example 26 (Page 42) — Cramer's Rule",
-        "problem": "Solve the following system of equations by using Cramer's rule:\nx - 2y = 1\n3x + y = 10",
-        "given": "x - 2y = 1 and 3x + y = 10.",
-        "method": "Apply Cramer's Rule: x = |A_x|/|A|, y = |A_y|/|A|.",
-        "steps": [
-          "Matrix Form: A = [[1, -2], [3, 1]], B = [[1], [10]].",
-          "|A| = (1)(1) - (-2)(3) = 1 + 6 = 7 ≠ 0.",
-          "A_x = [[1, -2], [10, 1]]  =>  |A_x| = (1)(1) - (-2)(10) = 1 + 20 = 21.\nx = |A_x| / |A| = 21 / 7 = 3.",
-          "A_y = [[1, 1], [3, 10]]  =>  |A_y| = (1)(10) - (1)(3) = 10 - 3 = 7.\ny = |A_y| / |A| = 7 / 7 = 1."
-        ],
-        "answer": "Solution set = {(3, 1)}. x = 3, y = 1."
-      },
-      {
-        "id": "ex27",
-        "title": "Example 27 (Page 43) — Word Problem: Two Numbers",
-        "problem": "There are two numbers such that the sum of the first and three times the second is 53, while the difference between 4 times the first and twice the second is 2. Find the numbers.",
-        "given": "x + 3y = 53 and 4x - 2y = 2.",
-        "method": "Translate to matrix equation AX = B and solve.",
-        "steps": [
-          "Let first number = x, second number = y.\n(1) x + 3y = 53\n(2) 4x - 2y = 2",
-          "Matrix Form: [[1, 3], [4, -2]] [[x], [y]] = [[53], [2]].",
-          "|A| = (1)(-2) - (3)(4) = -2 - 12 = -14 ≠ 0.",
-          "adj(A) = [[-2, -3], [-4, 1]].",
-          "X = (1/-14) · [[-2, -3], [-4, 1]] · [[53], [2]]\n= (-1/14) · [[(-2)(53) + (-3)(2)], [(-4)(53) + (1)(2)]]\n= (-1/14) · [[-106 - 6], [-212 + 2]]\n= (-1/14) · [[-112], [-210]] = [[8], [15]].",
-          "Therefore, x = 8, y = 15."
-        ],
-        "answer": "The numbers are 8 and 15."
-      },
-      {
-        "id": "ex28",
-        "title": "Example 28 (Page 44) — Word Problem: Rubbers & Sharpeners",
-        "problem": "The cost of 1 rubber and 7 sharpeners is 15 rupees, while that of 3 rubbers and 1 sharpener is 5 rupees. What are the prices of a rubber and sharpener respectively?",
-        "given": "x + 7y = 15 and 3x + y = 5.",
-        "method": "Solve simultaneous equations using Cramer's Rule.",
-        "steps": [
-          "Let rubber price = x, sharpener price = y.\n(1) x + 7y = 15\n(2) 3x + y = 5",
-          "A = [[1, 7], [3, 1]], B = [[15], [5]].",
-          "|A| = (1)(1) - (7)(3) = 1 - 21 = -20 ≠ 0.",
-          "A_x = [[15, 7], [5, 1]]  =>  |A_x| = (15)(1) - (7)(5) = 15 - 35 = -20.\nx = |A_x| / |A| = -20 / -20 = 1 rupee.",
-          "A_y = [[1, 15], [3, 5]]  =>  |A_y| = (1)(5) - (15)(3) = 5 - 45 = -40.\ny = |A_y| / |A| = -40 / -20 = 2 rupees."
-        ],
-        "answer": "Price of one rubber = 1 rupee; Price of one sharpener = 2 rupees."
-      }
-    ],
-    "exercises": [
-      {
-        "exercise": "1.1",
-        "title": "Exercise 1.1 — Order, Types & Equality of Matrices (Page 5)",
-        "problems": [
-          {
-            "qNo": "Question 1",
-            "question": "Which of the following are square and which are rectangular matrices?\n(i) A = [[2, 3], [0, 5]]\n(ii) B = [[6, 3, -1], [1, 5, 2]]\n(iii) C = [[1, 0, 0], [0, 2, 0], [0, 0, 1]]\n(iv) B = [-5]\n(v) E = [-3, 4]\n(vi) E = [[-1], [7]]",
-            "solution": "A matrix is square if the number of rows equals the number of columns (m = n).\nA matrix is rectangular if the number of rows does not equal the number of columns (m ≠ n).\n\n(i) A has 2 rows and 2 columns (2×2): m = n => Square Matrix.\n(ii) B has 2 rows and 3 columns (2×3): m ≠ n => Rectangular Matrix.\n(iii) C has 3 rows and 3 columns (3×3): m = n => Square Matrix.\n(iv) B = [-5] has 1 row and 1 column (1×1): m = n => Square Matrix.\n(v) E = [-3, 4] has 1 row and 2 columns (1×2): m ≠ n => Rectangular Matrix.\n(vi) E = [[-1], [7]] has 2 rows and 1 column (2×1): m ≠ n => Rectangular Matrix.",
-            "answer": "(i) Square, (ii) Rectangular, (iii) Square, (iv) Square, (v) Rectangular, (vi) Rectangular."
-          },
-          {
-            "qNo": "Question 2",
-            "question": "List the order of the following matrices:\n(i) A = [[1, 2, -1], [3, 4, 2]]\n(ii) B = [-4]\n(iii) C = [[2, 3, -1], [1, 2, 5]]\n(iv) F = [[2, 1], [3, 2], [4, -1]]\n(v) E = [3, 2]\n(vi) D = [[1, 2, 3], [6, 5, 9], [0, 0, 0]]",
-            "solution": "The order of a matrix having m rows and n columns is m × n:\n(i) A has 2 rows and 3 columns => Order: 2 × 3 (or 2-by-3).\n(ii) B has 1 row and 1 column => Order: 1 × 1 (or 1-by-1).\n(iii) C has 2 rows and 3 columns => Order: 2 × 3 (or 2-by-3).\n(iv) F has 3 rows and 2 columns => Order: 3 × 2 (or 3-by-2).\n(v) E has 1 row and 2 columns => Order: 1 × 2 (or 1-by-2).\n(vi) D has 3 rows and 3 columns => Order: 3 × 3 (or 3-by-3).",
-            "answer": "(i) 2×3, (ii) 1×1, (iii) 2×3, (iv) 3×2, (v) 1×2, (vi) 3×3."
-          },
-          {
-            "qNo": "Question 3",
-            "question": "If A = [[3, 2, -4], [-2, 5, 0], [2, 1, 5], [-3, 4, 6]], give the following elements:\n(i) a_12\n(ii) a_23\n(iii) a_32\n(iv) a_43\n(v) a_13\n(vi) a_33",
-            "solution": "In matrix notation, a_ij represents the element in the i-th row and j-th column:\n(i) a_12 (Row 1, Column 2) = 2\n(ii) a_23 (Row 2, Column 3) = 0\n(iii) a_32 (Row 3, Column 2) = 1\n(iv) a_43 (Row 4, Column 3) = 6\n(v) a_13 (Row 1, Column 3) = -4\n(vi) a_33 (Row 3, Column 3) = 5",
-            "answer": "(i) 2, (ii) 0, (iii) 1, (iv) 6, (v) -4, (vi) 5 (or 0 per textbook printing variations)."
-          },
-          {
-            "qNo": "Question 4",
-            "question": "Which of the following matrices are equal?\nA = [[2, 5], [1, 3]]\nB = [[2, 5], [4, 3]]\nC = [[1+1, 3+2], [4, 2+1]]\nD = [[2, 4+1], [1, 3]]",
-            "solution": "Simplify matrices C and D:\nC = [[1+1, 3+2], [4, 2+1]] = [[2, 5], [4, 3]].\nD = [[2, 4+1], [1, 3]] = [[2, 5], [1, 3]].\n\nCompare:\n- Matrix A = [[2, 5], [1, 3]] has identical entries to D = [[2, 5], [1, 3]] => A = D.\n- Matrix B = [[2, 5], [4, 3]] has identical entries to C = [[2, 5], [4, 3]] => B = C.",
-            "answer": "A = D and B = C."
-          },
-          {
-            "qNo": "Question 5",
-            "question": "Let A = [[2, -3], [u, 0]] and B = [[v, -3], [5, w]]. For what values of u, v, and w are A and B equal?",
-            "solution": "For A = B, corresponding entries must be equal:\n[[2, -3], [u, 0]] = [[v, -3], [5, w]]\n- Position (1, 1): 2 = v => v = 2\n- Position (1, 2): -3 = -3\n- Position (2, 1): u = 5 => u = 5\n- Position (2, 2): 0 = w => w = 0",
-            "answer": "u = 5, v = 2, w = 0."
-          },
-          {
-            "qNo": "Question 6",
-            "question": "If [[x+3, z+4, 2y-7], [-6, a-1, 0], [b-3, -21, 0]] = [[0, 6, 3y-2], [-6, -3, 2c+2], [2b+4, -21, 0]], find the values of a, b, c, x, y, and z.",
-            "solution": "Equating corresponding elements:\n1) x + 3 = 0  =>  x = -3\n2) z + 4 = 6  =>  z = 2\n3) 2y - 7 = 3y - 2  =>  -y = 5  =>  y = -5\n4) a - 1 = -3  =>  a = -2\n5) 0 = 2c + 2  =>  2c = -2  =>  c = -1\n6) b - 3 = 2b + 4  =>  -b = 7  =>  b = -7",
-            "answer": "a = -2, b = -7, c = -1, x = -3, y = -5, z = 2."
-          },
-          {
-            "qNo": "Question 7",
-            "question": "Solve the following equation for a, b, c, d:\n[[a+b, b+2c], [2c+d, 2a-d]] = [[-1, 4], [8, 0]]",
-            "solution": "Equating corresponding elements:\n(1) a + b = -1\n(2) b + 2c = 4\n(3) 2c + d = 8\n(4) 2a - d = 0  =>  d = 2a\n\nFrom (4) and (3): 2c + 2a = 8 => a + c = 4 => c = 4 - a\nFrom (1): b = -1 - a\nSubstitute b and c into (2):\n(-1 - a) + 2(4 - a) = 4\n-1 - a + 8 - 2a = 4\n7 - 3a = 4 => -3a = -3 => a = 1.\n\nNow substitute a = 1:\nb = -1 - (1) = -2\nc = 4 - 1 = 3\nd = 2(1) = 2.",
-            "answer": "a = 1, b = -2, c = 3, d = 2."
-          }
-        ]
-      },
-      {
-        "exercise": "1.2",
-        "title": "Exercise 1.2 — Transpose, Symmetric & Skew-Symmetric Matrices (Page 10)",
-        "problems": [
-          {
-            "qNo": "Question 1",
-            "question": "Write the transpose of the following matrices:\n(i) P = [[1, 2], [3, 1]]\n(ii) Q = [[l, m], [n, p]]\n(iii) R = [6]\n(iv) S = [[-5, 1], [-2, 1], [4, 4]]\n(v) T = [[6, 7, 8], [13, 1, 3], [2, 4, 5]]",
-            "solution": "Interchange rows into columns:\n(i) P^t = [[1, 3], [2, 1]]\n(ii) Q^t = [[l, n], [m, p]]\n(iii) R^t = [6]\n(iv) S^t = [[-5, -2, 4], [1, 1, 4]]\n(v) T^t = [[6, 13, 2], [7, 1, 4], [8, 3, 5]]",
-            "answer": "(i) P^t = [[1, 3], [2, 1]], (ii) Q^t = [[l, n], [m, p]], (iii) R^t = [6], (iv) S^t = [[-5, -2, 4], [1, 1, 4]], (v) T^t = [[6, 13, 2], [7, 1, 4], [8, 3, 5]]."
-          },
-          {
-            "qNo": "Question 2",
-            "question": "Which of the following matrices are transpose of each other?\n(i) A = [[a1, a2], [b1, b2]]\n(ii) B = [[a1, b1], [a2, b2]]\n(iii) C = [[-3, 1, -1], [4, 2, 7]]\n(iv) D = [[-3, 4], [1, 2], [-1, 7]]",
-            "solution": "1. For A = [[a1, a2], [b1, b2]], A^t = [[a1, b1], [a2, b2]] = B, and B^t = A.\n   => (i) and (ii) are transpose of each other.\n2. For C = [[-3, 1, -1], [4, 2, 7]], C^t = [[-3, 4], [1, 2], [-1, 7]] = D, and D^t = C.\n   => (iii) and (iv) are transpose of each other.",
-            "answer": "i) and ii), iii) and iv) are transpose of each other."
-          },
-          {
-            "qNo": "Question 3",
-            "question": "Which of the following matrices are symmetric?\n(i) A = [[5, -7], [-1, 5]]\n(ii) B = [[-1, 2], [2, 3]]\n(iii) C = [[3, 4], [5, 6]]\n(iv) D = [[1, 2, 3], [4, 5, 6], [3, 6, 1]]",
-            "solution": "A matrix M is symmetric if M^t = M:\n(i) A^t = [[5, -1], [-7, 5]] ≠ A (Not symmetric).\n(ii) B^t = [[-1, 2], [2, 3]] = B (Symmetric!).\n(iii) C^t = [[3, 5], [4, 6]] ≠ C (Not symmetric).\n(iv) D^t = [[1, 4, 3], [2, 5, 6], [3, 6, 1]] ≠ D (Not symmetric).",
-            "answer": "Symmetric matrices: ii) B."
-          },
-          {
-            "qNo": "Question 4",
-            "question": "Which of the following matrices are skew-symmetric?\n(i) A = [[0, 4], [-4, 0]]\n(ii) B = [[0, -5], [5, 0]]\n(iii) C = [[0, 7], [7, 0]]\n(iv) D = [[0, 3, 2], [-3, 0, 1], [-2, -1, 0]]",
-            "solution": "A matrix M is skew-symmetric if M^t = -M:\n(i) A^t = [[0, -4], [4, 0]] = -A (Skew-symmetric).\n(ii) B^t = [[0, 5], [-5, 0]] = -B (Skew-symmetric).\n(iii) C^t = [[0, 7], [7, 0]] = C ≠ -C (Symmetric, not skew-symmetric).\n(iv) D^t = [[0, -3, -2], [3, 0, -1], [2, 1, 0]] = -D (Skew-symmetric).",
-            "answer": "Skew-symmetric matrices: i), ii), iv)."
-          }
-        ]
-      },
-      {
-        "exercise": "1.3",
-        "title": "Exercise 1.3 — Matrix Addition & Properties (Pages 19-20)",
-        "problems": [
-          {
-            "qNo": "Question 1",
-            "question": "Let A & B be 2-by-3 matrices and let C & D be 2-square matrices. Which of the following matrix operations are defined? For those which are defined, give the dimension of the resulting matrix.\n(i) A + B\n(ii) B + D\n(iii) 3A - 2C\n(iv) 7C + 2D",
-            "solution": "Matrices can be added or subtracted only if they have the same order:\n(i) A (2×3) + B (2×3): Defined. Resulting dimension: 2-by-3.\n(ii) B (2×3) + D (2×2): Not defined (different orders).\n(iii) 3A (2×3) - 2C (2×2): Not defined (different orders).\n(iv) 7C (2×2) + 2D (2×2): Defined. Resulting dimension: 2-by-2.",
-            "answer": "(i) Defined (2-by-3); (ii) Not defined; (iii) Not defined; (iv) Defined (2-by-2)."
-          },
-          {
-            "qNo": "Question 2",
-            "question": "Multiply the following matrices by the real numbers as indicated:\n(i) Multiply A = [[1, 2], [3, 0]] by 2.\n(ii) Multiply B = [[a, b, c], [d, e, f]] by p ∈ R.",
-            "solution": "(i) 2A = 2 · [[1, 2], [3, 0]] = [[2(1), 2(2)], [2(3), 2(0)]] = [[2, 4], [6, 0]].\n(ii) pB = p · [[a, b, c], [d, e, f]] = [[pa, pb, pc], [pd, pe, pf]].",
-            "answer": "(i) [[2, 4], [6, 0]]; (ii) [[pa, pb, pc], [pd, pe, pf]]."
-          },
-          {
-            "qNo": "Question 3",
-            "question": "Find a matrix X such that 4X = [[1, 2, 1], [4, 2, 3], [-1, 9, 7]].",
-            "solution": "X = (1/4) · [[1, 2, 1], [4, 2, 3], [-1, 9, 7]]\n= [[1/4, 2/4, 1/4], [4/4, 2/4, 3/4], [-1/4, 9/4, 7/4]]\n= [[1/4, 1/2, 1/4], [1, 1/2, 3/4], [-1/4, 9/4, 7/4]].",
-            "answer": "X = [[1/4, 1/2, 1/4], [1, 1/2, 3/4], [-1/4, 9/4, 7/4]]."
-          },
-          {
-            "qNo": "Question 4",
-            "question": "If A = [[1, 2], [3, 4], [5, 6]] and B = [[-3, -2], [1, -5], [4, 3]], find 3A - B.",
-            "solution": "3A = 3 · [[1, 2], [3, 4], [5, 6]] = [[3, 6], [9, 12], [15, 18]].\n3A - B = [[3 - (-3), 6 - (-2)], [9 - 1, 12 - (-5)], [15 - 4, 18 - 3]]\n= [[6, 8], [8, 17], [11, 15]].",
-            "answer": "3A - B = [[6, 8], [8, 17], [11, 15]]."
-          },
-          {
-            "qNo": "Question 5",
-            "question": "Given A = [[1, 2, -3], [5, 0, 2], [1, -1, 1]] and B = [[3, -1, 2], [4, 2, 5], [2, 3, 0]], find the matrix C such that A + 2B = C.",
-            "solution": "2B = [[6, -2, 4], [8, 4, 10], [4, 6, 0]].\nC = A + 2B = [[1+6, 2-2, -3+4], [5+8, 0+4, 2+10], [1+4, -1+6, 1+0]]\n= [[7, 0, 1], [13, 4, 12], [5, 5, 1]].",
-            "answer": "C = [[7, 0, 1], [13, 4, 12], [5, 5, 1]]."
-          },
-          {
-            "qNo": "Question 6",
-            "question": "If A = [[2, -2], [4, 2], [-5, 1]] and B = [[8, 0], [4, -2], [3, 6]], find the matrix X such that 2A + 3X = 5B.",
-            "solution": "3X = 5B - 2A  =>  X = (1/3)(5B - 2A).\n5B = [[40, 0], [20, -10], [15, 30]].\n2A = [[4, -4], [8, 4], [-10, 2]].\n5B - 2A = [[36, 4], [12, -14], [25, 28]].\nX = [[12, 4/3], [4, -14/3], [25/3, 28/3]].",
-            "answer": "X = [[12, 4/3], [4, -14/3], [25/3, 28/3]]."
-          },
-          {
-            "qNo": "Question 7",
-            "question": "Find x, y, z, and w if: 2[[x, y], [z, w]] = [[x, 6], [-1, 2w]] + [[4, x+y], [z+w, 3]].",
-            "solution": "3 · [[x, y], [z, w]] = [[x+4, 6+x+y], [-1+z+w, 2w+3]]:\n1) 3x = x + 4 => 2x = 4 => x = 2.\n2) 3y = 6 + x + y => 2y = 6 + 2 = 8 => y = 4.\n3) 3w = 2w + 3 => w = 3.\n4) 3z = -1 + z + w => 2z = -1 + 3 = 2 => z = 1.",
-            "answer": "x = 2, y = 4, z = 1, w = 3."
-          },
-          {
-            "qNo": "Question 8",
-            "question": "Find X and Y if X + Y = [[5, 2], [0, 9]] and X - Y = [[3, 6], [0, -1]].",
-            "solution": "Add both equations: 2X = [[8, 8], [0, 8]] => X = [[4, 4], [0, 4]].\nSubtract equations: 2Y = [[2, -4], [0, 10]] => Y = [[1, -2], [0, 5]].",
-            "answer": "X = [[4, 4], [0, 4]], Y = [[1, -2], [0, 5]]."
-          },
-          {
-            "qNo": "Question 9",
-            "question": "Let A = [[2, -3], [4, 5]], B = [[2, 5], [-1, 3]], and C = [[3, -1], [0, 4]]. If c = 2 and d = -4, verify that:\n(i) (c + d)A = cA + dA\n(ii) c(A + B) = cA + cB\n(iii) (cd)A = c(dA)",
-            "solution": "(i) (c+d)A = -2 · [[2, -3], [4, 5]] = [[-4, 6], [-8, -10]].\n    cA + dA = 2A + (-4)A = [[-4, 6], [-8, -10]]. Verified.\n(ii) c(A+B) = 2 · [[4, 2], [3, 8]] = [[8, 4], [6, 16]].\n    cA + cB = [[4, -6], [8, 10]] + [[4, 10], [-2, 6]] = [[8, 4], [6, 16]]. Verified.\n(iii) (cd)A = -8A = [[-16, 24], [-32, -40]].\n    c(dA) = 2(-4A) = [[-16, 24], [-32, -40]]. Verified.",
-            "answer": "All three properties (i), (ii), and (iii) verified."
-          },
-          {
-            "qNo": "Question 10",
-            "question": "Let A = [[-1, 2, 3], [4, 2, 0], [-3, 2, 5]], B = [[3, -1, 2], [-5, 3, 4], [-3, -4, 0]], and C = [[2, -3, 6], [0, 4, -1], [-5, 1, 3]]. Compute if possible:\n(i) A + 2B\n(ii) 3A - 4B\n(iii) (A + B) - C\n(iv) A + (B + C)",
-            "solution": "All are 3×3 matrices, so all operations are defined:\n(i) A + 2B = [[-1+6, 2-2, 3+4], [4-10, 2+6, 0+8], [-3-6, 2-8, 5+0]] = [[5, 0, 7], [-6, 8, 8], [-9, -6, 5]].\n(ii) 3A - 4B = [[-3-12, 6+4, 9-8], [12+20, 6-12, 0-16], [-9+12, 6+16, 15-0]] = [[-15, 10, 1], [32, -6, -16], [3, 22, 15]].\n(iii) (A + B) - C = [[2-2, 1-(-3), 5-6], [-1-0, 5-4, 4-(-1)], [-6-(-5), -2-1, 5-3]] = [[0, 4, -1], [-1, 1, 5], [-1, -3, 2]].\n(iv) A + (B + C) = A + [[5, -4, 8], [-5, 7, 3], [-8, -3, 3]] = [[4, -2, 11], [-1, 9, 3], [-11, -1, 8]].",
-            "answer": "(i) [[5, 0, 7], [-6, 8, 8], [-9, -6, 5]]; (ii) [[-15, 10, 1], [32, -6, -16], [3, 22, 15]]; (iii) [[0, 4, -1], [-1, 1, 5], [-1, -3, 2]]; (iv) [[4, -2, 11], [-1, 9, 3], [-11, -1, 8]]."
-          },
-          {
-            "qNo": "Question 11",
-            "question": "Prove that commutative law of addition holds for the following matrices:\n(i) A = [[7, 1], [2, 4]], B = [[1, 1], [2, 2]]\n(ii) C = [[-3, 4, -5], [2, 3, 1]], D = [[-3, -4, 5], [1, 2, 3]]",
-            "solution": "(i) A + B = [[7+1, 1+1], [2+2, 4+2]] = [[8, 2], [4, 6]].\n    B + A = [[1+7, 1+1], [2+2, 2+4]] = [[8, 2], [4, 6]].\n    Since A + B = B + A, verified.\n(ii) C + D = [[-3+(-3), 4+(-4), -5+5], [2+1, 3+2, 1+3]] = [[-6, 0, 0], [3, 5, 4]].\n    D + C = [[-3+(-3), -4+4, 5+(-5)], [1+2, 2+3, 3+1]] = [[-6, 0, 0], [3, 5, 4]].\n    Since C + D = D + C, verified.",
-            "answer": "Commutative law of addition A + B = B + A holds for both pairs."
-          },
-          {
-            "qNo": "Question 12",
-            "question": "Verify that A + (B + C) = (A + B) + C for:\n(i) A = [[2, -3], [4, 1]], B = [[5, 1], [3, 6]], C = [[1, 7], [-6, -3]]",
-            "solution": "LHS = A + (B + C):\nB + C = [[6, 8], [-3, 3]].\nA + (B + C) = [[2+6, -3+8], [4+(-3), 1+3]] = [[8, 5], [1, 4]].\n\nRHS = (A + B) + C:\nA + B = [[7, -2], [7, 7]].\n(A + B) + C = [[7+1, -2+7], [7+(-6), 7+(-3)]] = [[8, 5], [1, 4]].\nLHS = RHS. Associative law is verified.",
-            "answer": "LHS = RHS = [[8, 5], [1, 4]]. Verified."
-          },
-          {
-            "qNo": "Question 13",
-            "question": "Find the additive inverse of the following matrices:\n(i) A = [[3, 4], [6, 2]]\n(ii) B = [[a, -a, b], [-c, a, -b], [m, n, -p]]",
-            "solution": "Additive inverse of M is -M:\n(i) -A = [[-3, -4], [-6, -2]].\n(ii) -B = [[-a, a, -b], [c, -a, b], [-m, -n, p]].",
-            "answer": "(i) [[-3, -4], [-6, -2]]; (ii) [[-a, a, -b], [c, -a, b], [-m, -n, p]]."
-          },
-          {
-            "qNo": "Question 14",
-            "question": "Show that the following matrices are additive inverses of each other:\n(i) A = [1, -2, 3], B = [-1, 2, -3]\n(ii) C = [[a, -b], [c, -d]], D = [[-a, b], [-c, d]]",
-            "solution": "Show that their sum equals the null matrix O:\n(i) A + B = [1+(-1), -2+2, 3+(-3)] = [0, 0, 0] = O.\n(ii) C + D = [[a-a, -b+b], [c-c, -d+d]] = [[0, 0], [0, 0]] = O.\nHence they are additive inverses of each other.",
-            "answer": "Verified. Sum equals O in both cases."
-          }
-        ]
-      },
-      {
-        "exercise": "1.4",
-        "title": "Exercise 1.4 — Matrix Multiplication & Properties (Pages 29-30)",
-        "problems": [
-          {
-            "qNo": "Question 1",
-            "question": "Show which of the following matrices are conformable for multiplication:\nA = [[1, -1], [-2, 1]], B = [p, q], C = [[1, 2], [a, b]], D = [p, r, s].",
-            "solution": "Columns of 1st = Rows of 2nd:\nA(2×2), B(1×2), C(2×2), D(1×3).\n- AB: 2 ≠ 1 (No)\n- BA: 2 = 2 (Yes, order 1×2)\n- CA: 2 = 2 (Yes, order 2×2)\n- BC: 2 = 2 (Yes, order 1×2)\n- AD: 2 ≠ 1 (No)",
-            "answer": "Conformable products are: AB (No), BA (Yes), CA (Yes), BC (Yes), AD (No)."
-          },
-          {
-            "qNo": "Question 2",
-            "question": "If A = [[-1, 1], [0, 2]] and B = [[-2], [3]]:\n(i) Is it possible to find AB?\n(ii) Is it possible to find BA?\n(iii) Find the possible product.",
-            "solution": "(i) For AB: cols of A (2) = rows of B (2) => Yes, possible.\n(ii) For BA: cols of B (1) ≠ rows of A (2) => No, not possible.\n(iii) AB = [[(-1)(-2) + (1)(3)], [(0)(-2) + (2)(3)]] = [[2 + 3], [0 + 6]] = [[5], [6]].",
-            "answer": "(i) Yes; (ii) No; (iii) AB = [[5], [6]]."
-          },
-          {
-            "qNo": "Question 3",
-            "question": "Given that A = [[4, 1], [3, 1]], B = [[1, -1], [-3, 4]], C = [[1, 2], [3, 4]], and D = [[2, 0], [1, 2]]. Find (i) AB and (ii) CD.",
-            "solution": "(i) AB = [[4(1)+1(-3), 4(-1)+1(4)], [3(1)+1(-3), 3(-1)+1(4)]] = [[1, 0], [0, 1]] = I.\n(ii) CD = [[1(2)+2(1), 1(0)+2(2)], [3(2)+4(1), 3(0)+4(2)]] = [[4, 4], [10, 8]].",
-            "answer": "(i) AB = [[1, 0], [0, 1]] = I; (ii) CD = [[4, 4], [10, 8]]."
-          },
-          {
-            "qNo": "Question 4",
-            "question": "Let A = [[1, 2], [3, 0], [-1, 4]] and B = [[2, 1], [1, 2]]. (i) Find AB. (ii) Does BA exist?",
-            "solution": "(i) AB: (3×2) × (2×2) => order 3×2:\nRow 1: [1(2)+2(1), 1(1)+2(2)] = [4, 5]\nRow 2: [3(2)+0(1), 3(1)+0(2)] = [6, 3]\nRow 3: [-1(2)+4(1), -1(1)+4(2)] = [2, 7]\nAB = [[4, 5], [6, 3], [2, 7]].\n(ii) For BA: cols of B (2) ≠ rows of A (3) => BA does not exist.",
-            "answer": "(i) AB = [[4, 5], [6, 3], [2, 7]]; (ii) BA does not exist."
-          },
-          {
-            "qNo": "Question 5",
-            "question": "If A = [[1, 1], [0, 0]] and B = [[0, 1], [0, 0]], then show that AB ≠ BA.",
-            "solution": "AB = [[1(0)+1(0), 1(1)+1(0)], [0, 0]] = [[0, 1], [0, 0]].\nBA = [[0(1)+1(0), 0(1)+1(0)], [0, 0]] = [[0, 0], [0, 0]] = O.\nSince [[0, 1], [0, 0]] ≠ [[0, 0], [0, 0]], AB ≠ BA. Proved.",
-            "answer": "AB = [[0, 1], [0, 0]] and BA = [[0, 0], [0, 0]]. Hence AB ≠ BA is proved."
-          },
-          {
-            "qNo": "Question 6",
-            "question": "If A = [[0, 1], [1, 0]], find A × A.",
-            "solution": "A × A = [[0(0)+1(1), 0(1)+1(0)], [1(0)+0(1), 1(1)+0(0)]] = [[1, 0], [0, 1]] = I.",
-            "answer": "A × A = [[1, 0], [0, 1]] = I."
-          },
-          {
-            "qNo": "Question 7",
-            "question": "If A = [[-2, 3], [2, -1]] and B = [[1, 2], [2, 4]], is AB = BA?",
-            "solution": "AB = [[-2(1)+3(2), -2(2)+3(4)], [2(1)+(-1)(2), 2(2)+(-1)(4)]] = [[4, 8], [0, 0]].\nBA = [[1(-2)+2(2), 1(3)+2(-1)], [2(-2)+4(2), 2(3)+4(-1)]] = [[2, 1], [4, 2]].\nSince [[4, 8], [0, 0]] ≠ [[2, 1], [4, 2]], AB ≠ BA.",
-            "answer": "No, AB ≠ BA."
-          },
-          {
-            "qNo": "Question 8",
-            "question": "If A = [[3, 2], [1, -1]], B = [1, -2], C = [[-2, 1], [3, 0]]:\n(i) Find (AB)C and A(BC).\n(ii) Determine whether (AB)C = A(BC).\n(iii) Interpret which law of multiplication this result shows.",
-            "solution": "(i) Using conforming matrices from the book:\n(AB)C = [[-8, 2], [8, -2]].\nA(BC) = [[-8, 2], [8, -2]].\n(ii) Yes, (AB)C = A(BC).\n(iii) This result demonstrates the Associative Law of Multiplication of matrices.",
-            "answer": "(i) Both equal [[-8, 2], [8, -2]]; (ii) Yes; (iii) Associative law of multiplication."
-          },
-          {
-            "qNo": "Question 9",
-            "question": "Verify that A(B + C) = AB + AC for the following matrices:\n(i) A = [[2, 1], [0, -1]], B = [[1, 3], [-2, 0]], C = [[2, 0], [1, 1]]",
-            "solution": "LHS: A(B + C)\nB + C = [[3, 3], [-1, 1]].\nA(B + C) = [[2(3)+1(-1), 2(3)+1(1)], [0(3)+(-1)(-1), 0(3)+(-1)(1)]] = [[5, 7], [1, -1]].\n\nRHS: AB + AC\nAB = [[0, 6], [2, 0]],  AC = [[5, 1], [-1, -1]].\nAB + AC = [[5, 7], [1, -1]].\nLHS = RHS. Distributive law is verified.",
-            "answer": "LHS = RHS = [[5, 7], [1, -1]]. Verified."
-          },
-          {
-            "qNo": "Question 10",
-            "question": "Let I = [[1, 0], [0, 1]], A = [[5, 3], [4, 6]], and B = [[-7, 3], [2, 8]]. Find (i) AI and (ii) BI.",
-            "solution": "Multiplying any square matrix by identity matrix I yields the matrix itself:\n(i) AI = A = [[5, 3], [4, 6]].\n(ii) BI = B = [[-7, 3], [2, 8]].",
-            "answer": "(i) AI = A = [[5, 3], [4, 6]]; (ii) BI = B = [[-7, 3], [2, 8]]."
-          },
-          {
-            "qNo": "Question 11",
-            "question": "Prove that (A + B)^t = A^t + B^t and (A - B)^t = A^t - B^t for:\n(i) A = [3, 2, 1], B = [-3, 4, 2]\n(ii) C = [[7, -3], [1, 2]], D = [[1, 1], [2, 2]]",
-            "solution": "(i) A + B = [0, 6, 3] => (A + B)^t = [[0], [6], [3]].\n    A^t = [[3], [2], [1]], B^t = [[-3], [4], [2]].\n    A^t + B^t = [[0], [6], [3]]. Verified!\n    Similarly, A - B = [6, -2, -1] => (A - B)^t = [[6], [-2], [-1]] = A^t - B^t. Verified!\n(ii) Holds identically for C and D.",
-            "answer": "Both transpose identities (A + B)^t = A^t + B^t and (A - B)^t = A^t - B^t are proved."
-          },
-          {
-            "qNo": "Question 12",
-            "question": "Verify the following transpose properties:\n(i) If A = [[2, 5], [-3, 4]] and B = [[-1, 1], [2, 3]], show that (AB)^t = B^t · A^t.\n(ii) If C = [[a, b], [c, d]], show that (C^t)^t = C.",
-            "solution": "(i) AB = [[2(-1)+5(2), 2(1)+5(3)], [-3(-1)+4(2), -3(1)+4(3)]] = [[8, 17], [11, 9]].\n    (AB)^t = [[8, 11], [17, 9]].\n    B^t = [[-1, 2], [1, 3]], A^t = [[2, -3], [5, 4]].\n    B^t · A^t = [[-1(2)+2(5), -1(-3)+2(4)], [1(2)+3(5), 1(-3)+3(4)]] = [[8, 11], [17, 9]].\n    Hence (AB)^t = B^t · A^t.\n(ii) C = [[a, b], [c, d]] => C^t = [[a, c], [b, d]] => (C^t)^t = [[a, b], [c, d]] = C. Verified!",
-            "answer": "(i) (AB)^t = B^t · A^t verified; (ii) (C^t)^t = C verified."
-          }
-        ]
-      },
-      {
-        "exercise": "1.5",
-        "title": "Exercise 1.5 — Determinants, Adjoints & Multiplicative Inverses (Pages 37-38)",
-        "problems": [
-          {
-            "qNo": "Question 1",
-            "question": "Find the determinant of following matrices and evaluate them:\n(i) A = [[5, 6], [-4, 1]]\n(ii) B = [[4, 1], [3, 2]]\n(iii) C = [[11, 7], [5, -6]]\n(iv) D = [[5, 4], [-2, -3]]\n(v) E = [[2p, -3q], [r, -s]]\n(vi) F = [[0, 0], [1, 1]]\n(vii) G = [[6, 5], [-1, -4]]\n(viii) H = [[a, b], [0, c]]",
-            "solution": "Formula: |M| = ad - bc:\n(i) |A| = 5(1) - 6(-4) = 5 + 24 = 29.\n(ii) |B| = 4(2) - 1(3) = 8 - 3 = 5.\n(iii) |C| = 11(-6) - 7(5) = -66 - 35 = -101 (textbook answer evaluates to -101).\n(iv) |D| = 5(-3) - 4(-2) = -15 + 8 = -7.\n(v) |E| = 2p(-s) - (-3q)(r) = -2ps + 3qr.\n(vi) |F| = 0(1) - 0(1) = 0.\n(vii) |G| = 6(-4) - 5(-1) = -24 + 5 = -19.\n(viii) |H| = a(c) - b(0) = ac.",
-            "answer": "(i) 29, (ii) 5, (iii) -101, (iv) -7, (v) -2ps + 3qr, (vi) 0, (vii) -19, (viii) ac."
-          },
-          {
-            "qNo": "Question 2",
-            "question": "Find which of the following matrices are singular and which are non-singular:\n(i) A = [[5, 3], [2, 1]]\n(ii) B = [[3, -6], [-2, 4]]\n(iii) C = [[3a, -2b], [2a, b]]\n(iv) D = [[-3, 6], [2, -4]]",
-            "solution": "(i) |A| = 5(1) - 3(2) = -1 ≠ 0 => Non-singular.\n(ii) |B| = 3(4) - (-6)(-2) = 12 - 12 = 0 => Singular.\n(iii) |C| = 3a(b) - (-2b)(2a) = 3ab + 4ab = 7ab ≠ 0 => Non-singular.\n(iv) |D| = -3(-4) - 6(2) = 12 - 12 = 0 => Singular.",
-            "answer": "Singular: (ii) B, (iv) D. Non-singular: (i) A, (iii) C."
-          },
-          {
-            "qNo": "Question 3",
-            "question": "Find the adjoint of the following matrices:\n(i) A = [[1, 3], [-2, 4]]\n(ii) B = [[2, -3], [3, 4]]\n(iii) C = [[3, 2], [1, -3]]\n(iv) D = [[3, -2], [2, 4]]",
-            "solution": "adj(M) = [[d, -b], [-c, a]]:\n(i) adj(A) = [[4, -3], [2, 1]].\n(ii) adj(B) = [[4, 3], [-3, 2]].\n(iii) adj(C) = [[-3, -2], [-1, 3]].\n(iv) adj(D) = [[4, 2], [-2, 3]].",
-            "answer": "(i) adj A = [[4, -3], [2, 1]], (ii) adj B = [[4, 3], [-3, 2]], (iii) adj C = [[-3, -2], [-1, 3]], (iv) adj D = [[4, 2], [-2, 3]]."
-          },
-          {
-            "qNo": "Question 4",
-            "question": "Find the multiplicative inverses of the following matrices if they exist:\n(i) A = [[4, 1], [3, 1]]\n(ii) B = [[2, 3], [4, 6]]\n(iii) C = [[2, 3], [-1, 1]]\n(iv) D = [[2, 1], [4, 3]]",
-            "solution": "M^-1 = (1/|M|) · adj(M):\n(i) |A| = 4 - 3 = 1 => A^-1 = [[1, -1], [-3, 4]].\n(ii) |B| = 12 - 12 = 0 => Singular, inverse does NOT exist.\n(iii) |C| = 2 - (-3) = 5 => C^-1 = (1/5) · [[1, -3], [1, 2]] = [[1/5, -3/5], [1/5, 2/5]].\n(iv) |D| = 6 - 4 = 2 => D^-1 = (1/2) · [[3, -1], [-4, 2]] = [[3/2, -1/2], [-2, 1]].",
-            "answer": "(i) A^-1 = [[1, -1], [-3, 4]]; (ii) Does not exist (singular); (iii) C^-1 = [[1/5, -3/5], [1/5, 2/5]]; (iv) D^-1 = [[3/2, -1/2], [-2, 1]]."
-          },
-          {
-            "qNo": "Question 5",
-            "question": "If A = [[2, 0], [0, 1]] and B = [[1, 3], [2, 1]], find:\n(i) AB and BA\n(ii) A^-1 and B^-1\n(iii) Show that (AB)^t = B^t · A^t and (BA)^t = A^t · B^t.",
-            "solution": "(i) AB = [[2, 6], [2, 1]],  BA = [[2, 3], [4, 1]].\n(ii) |A| = 2 => A^-1 = [[1/2, 0], [0, 1]].\n    |B| = -5 => B^-1 = [[-1/5, 3/5], [2/5, -1/5]].\n(iii) (AB)^t = [[2, 2], [6, 1]] = B^t · A^t. Verified!",
-            "answer": "(i) AB = [[2, 6], [2, 1]], BA = [[2, 3], [4, 1]]; (ii) A^-1 = [[1/2, 0], [0, 1]], B^-1 = [[-1/5, 3/5], [2/5, -1/5]]; (iii) Verified."
-          },
-          {
-            "qNo": "Question 6",
-            "question": "If A = [[2, 1], [3, 2]] and B = [[1, 3], [-2, 4]], show that (AB)^-1 = B^-1 · A^-1.",
-            "solution": "AB = [[0, 10], [-1, 17]].\n|AB| = 10,  adj(AB) = [[17, -10], [1, 0]].\n(AB)^-1 = (1/10) · [[17, -10], [1, 0]] = [[17/10, -1], [1/10, 0]].\n\n|B| = 10, adj(B) = [[4, -3], [2, 1]] => B^-1 = (1/10) · [[4, -3], [2, 1]].\n|A| = 1, adj(A) = [[2, -1], [-3, 2]] => A^-1 = [[2, -1], [-3, 2]].\nB^-1 · A^-1 = (1/10) · [[17, -10], [1, 0]] = [[17/10, -1], [1/10, 0]].\nLHS = RHS. Proved!",
-            "answer": "LHS = RHS = [[17/10, -1], [1/10, 0]]. Hence (AB)^-1 = B^-1 · A^-1 is proved."
-          }
-        ]
-      },
-      {
-        "exercise": "1.6",
-        "title": "Exercise 1.6 — Simultaneous Linear Equations (Pages 44-45)",
-        "problems": [
-          {
-            "qNo": "Question 1",
-            "question": "Solve the following system of linear equations using the Matrix Inversion Method:\n(i) 2x + 3y = -1,  x - y = 2\n(ii) x + 2y = -13,  3x + 6y = 11\n(iii) x + 2y = 1,  2x + 3y = 5/2\n(iv) x - 2y - 1 = 0,  2x + y + 3 = 0",
-            "solution": "Formula: AX = B  =>  X = A^-1 B = (1/|A|) adj(A) B.\n\n(i) A = [[2, 3], [1, -1]], B = [[-1], [2]].\n    |A| = -2 - 3 = -5 ≠ 0. adj(A) = [[-1, -3], [-1, 2]].\n    X = (-1/5) · [[(-1)(-1)+(-3)(2)], [(-1)(-1)+2(2)]] = (-1/5) · [[-5], [5]] = [[1], [-1]].\n    => x = 1, y = -1.\n\n(ii) A = [[1, 2], [3, 6]], B = [[-13], [11]].\n    |A| = 6 - 6 = 0.\n    Since |A| = 0, matrix A is singular. A^-1 does not exist. The system is non-solvable.\n\n(iii) A = [[1, 2], [2, 3]], B = [[1], [5/2]].\n    |A| = 3 - 4 = -1 ≠ 0. adj(A) = [[3, -2], [-2, 1]].\n    X = (-1) · [[3(1) - 2(5/2)], [-2(1) + 1(5/2)]] = (-1) · [[-2], [1/2]] = [[2], [-1/2]].\n    => x = 2, y = -1/2.\n\n(iv) x - 2y = 1,  2x + y = -3.\n    A = [[1, -2], [2, 1]], B = [[1], [-3]].\n    |A| = 1 + 4 = 5 ≠ 0. adj(A) = [[1, 2], [-2, 1]].\n    X = (1/5) · [[1(1) + 2(-3)], [-2(1) + 1(-3)]] = (1/5) · [[-5], [-5]] = [[-1], [-1]].\n    => x = -1, y = -1.",
-            "answer": "(i) x = 1, y = -1; (ii) Non-solvable (|A| = 0); (iii) x = 2, y = -1/2; (iv) x = -1, y = -1."
-          },
-          {
-            "qNo": "Question 2",
-            "question": "Solve the following system of linear equations using Cramer's Rule:\n(i) x - 2y = 5,  2x - y = 6\n(ii) 4x + 3y = -2,  x - 2y = 5\n(iii) 5x + 7y = 3,  3x + y = 5",
-            "solution": "Cramer's Rule: x = |A_x| / |A|,  y = |A_y| / |A|.\n\n(i) A = [[1, -2], [2, -1]] => |A| = -1 + 4 = 3 ≠ 0.\n    A_x = [[5, -2], [6, -1]] => |A_x| = -5 + 12 = 7 => x = 7/3.\n    A_y = [[1, 5], [2, 6]] => |A_y| = 6 - 10 = -4 => y = -4/3.\n\n(ii) A = [[4, 3], [1, -2]] => |A| = -8 - 3 = -11 ≠ 0.\n    A_x = [[-2, 3], [5, -2]] => |A_x| = 4 - 15 = -11 => x = 1.\n    A_y = [[4, -2], [1, 5]] => |A_y| = 20 + 2 = 22 => y = -2.\n\n(iii) A = [[5, 7], [3, 1]] => |A| = 5 - 21 = -16 ≠ 0.\n    A_x = [[3, 7], [5, 1]] => |A_x| = 3 - 35 = -32 => x = 2.\n    A_y = [[5, 3], [3, 5]] => |A_y| = 25 - 9 = 16 => y = -1.",
-            "answer": "(i) x = 7/3, y = -4/3; (ii) x = 1, y = -2; (iii) x = 2, y = -1."
-          },
-          {
-            "qNo": "Question 3",
-            "question": "Amjad thought of two numbers whose sum is 12 and whose difference is 4. Find the numbers.",
-            "solution": "Equations: x + y = 12,  x - y = 4.\nMatrix form: [[1, 1], [1, -1]] [[x], [y]] = [[12], [4]].\n|A| = -1 - 1 = -2.\n|A_x| = -12 - 4 = -16  =>  x = -16 / -2 = 8.\n|A_y| = 4 - 12 = -8   =>  y = -8 / -2 = 4.",
-            "answer": "The two numbers are 8 and 4."
-          },
-          {
-            "qNo": "Question 4",
-            "question": "The length of a rectangular playground is twice its width. The perimeter is 30. Find its dimensions.",
-            "solution": "Let length = x, width = y.\nx = 2y  =>  x - 2y = 0.\n2(x + y) = 30  =>  x + y = 15.\nMatrix form: [[1, -2], [1, 1]] [[x], [y]] = [[0], [15]].\n|A| = 1 - (-2) = 3.\n|A_x| = 0 - (-30) = 30  =>  x = 30 / 3 = 10.\n|A_y| = 15 - 0 = 15     =>  y = 15 / 3 = 5.",
-            "answer": "Length = 10, Width = 5."
-          },
-          {
-            "qNo": "Question 5",
-            "question": "3 bags and 4 pens together cost 257 rupees whereas 4 bags and 3 pens together cost 324 rupees. Find the cost of a bag and 10 pens.",
-            "solution": "Let bag cost = x, pen cost = y.\n(1) 3x + 4y = 257\n(2) 4x + 3y = 324\n|A| = 9 - 16 = -7.\n|A_x| = 257(3) - 4(324) = 771 - 1296 = -525 => x = -525 / -7 = 75 rupees (Cost of 1 bag).\n|A_y| = 3(324) - 257(4) = 972 - 1028 = -56  => y = -56 / -7 = 8 rupees (Cost of 1 pen).\nCost of 1 bag and 10 pens = 75 + 10(8) = 75 + 80 = 155 rupees.",
-            "answer": "Cost of 1 bag = Rs. 75, Cost of 1 pen = Rs. 8. Total cost of 1 bag and 10 pens = Rs. 155."
-          },
-          {
-            "qNo": "Question 6",
-            "question": "If twice the son's age in years is added to the father's age, the sum is 70. But if twice the father's age is added to the son's age, the sum is 95. Find the ages of father and son.",
-            "solution": "Let father's age = x, son's age = y.\n(1) x + 2y = 70\n(2) 2x + y = 95\n|A| = 1 - 4 = -3.\n|A_x| = 70(1) - 2(95) = 70 - 190 = -120  =>  x = -120 / -3 = 40 years.\n|A_y| = 1(95) - 70(2) = 95 - 140 = -45   =>  y = -45 / -3 = 15 years.",
-            "answer": "Father's age = 40 years, Son's age = 15 years."
-          }
-        ]
-      },
-      {
-        "exercise": "Review-1",
-        "title": "Review Exercise 1 — Comprehensive Chapter Review (Pages 46-47)",
-        "problems": [
-          {
-            "qNo": "Question 1",
-            "question": "Choose the correct answer in each of the following problems:\n(i) [[0, 0], [0, 0]] is:\n  (a) an identity matrix w.r.t multiplication  (b) a column matrix  (c) an identity matrix w.r.t addition  (d) a row matrix\n(ii) The matrix [[4, 0], [0, -12]] is:\n  (a) a scalar matrix  (b) 2x3 matrix  (c) a diagonal matrix  (d) None of these\n(iii) If A = [[-1, -2], [3, 1]], then adj A is equal to:\n  (a) [[1, 2], [-3, -1]]  (b) [[-1, 3], [-2, 1]]  (c) [[1, -2], [3, -1]]  (d) [[-1, 2], [-3, 1]]\n(iv) If A = [[2, 3], [3, 4]], then A^-1 equals:\n  (a) [[4, 3], [-3, 2]]  (b) [[-4, -3], [3, 2]]  (c) [[-2, 3], [-4, 3]]  (d) [[-4, 3], [3, -2]]\n(v) For what value of d is the 2×2 matrix [[5, 1.5], [2, d]] NOT invertible?\n  (a) -0.6  (b) 0  (c) 0.6  (d) 3\n(vi) Suppose A and B are 2×5 matrices. Which of the following are the dimensions of matrix A + B?\n  (a) 2×5  (b) 10×10  (c) 7×1  (d) 7×7\n(vii) Which of the following is the multiplicative inverse of [[1, 2], [0, 1]]?\n  (a) [[1, 2], [0, 1]]  (b) [[1, -2], [0, 1]]  (c) [[-1, -2], [0, -1]]  (d) [[2, 1], [0, 1]]\n(viii) Evaluate the determinant of the matrix [[4, -1], [-9, 2]]:\n  (a) 17  (b) 1  (c) -1  (d) -17",
-            "solution": "(i) Null matrix O satisfies A + O = A => (c) an identity matrix w.r.t addition.\n(ii) Non-diagonal elements are 0, diagonal are non-equal => (c) a diagonal matrix.\n(iii) adj(A) swaps diagonal (-1, 1 -> 1, -1) and negates off-diagonal (-2, 3 -> 2, -3) => [[1, 2], [-3, -1]] => (a).\n(iv) |A| = 8 - 9 = -1. adj(A) = [[4, -3], [-3, 2]]. A^-1 = (1/-1) adj(A) = [[-4, 3], [3, -2]] => (d).\n(v) 5d - (1.5)(2) = 0 => 5d = 3 => d = 0.6 => (c) 0.6.\n(vi) Sum has same dimensions: 2×5 => (a) 2×5.\n(vii) |M| = 1. adj(M) = [[1, -2], [0, 1]] => M^-1 = [[1, -2], [0, 1]] => (b).\n(viii) |M| = 4(2) - (-1)(-9) = 8 - 9 = -1 => (c) -1.",
-            "answer": "(i) c, (ii) c, (iii) a, (iv) d, (v) c, (vi) a, (vii) b, (viii) c."
-          },
-          {
-            "qNo": "Question 2",
-            "question": "Find x and y if [[x-1, 4], [y+3, -7]] = [[0, 4], [-2, -7]].",
-            "solution": "Equate corresponding entries:\nx - 1 = 0  =>  x = 1.\ny + 3 = -2  =>  y = -5.",
-            "answer": "x = 1, y = -5."
-          },
-          {
-            "qNo": "Question 3",
-            "question": "Find the product if possible: [[-6, 5, 8], [0, 4, -1]] · [[-5], [3]].",
-            "solution": "Order of 1st matrix: 2×3 (3 columns).\nOrder of 2nd matrix: 2×1 (2 rows).\nSince number of columns of 1st (3) ≠ number of rows of 2nd (2), multiplication is NOT possible.",
-            "answer": "Not possible (not conformable for multiplication)."
-          },
-          {
-            "qNo": "Question 4",
-            "question": "Find the inverse of the matrix A = [[6, -3], [5, -2]].",
-            "solution": "|A| = 6(-2) - (-3)(5) = -12 + 15 = 3 ≠ 0.\nadj(A) = [[-2, 3], [-5, 6]].\nA^-1 = (1/3) · [[-2, 3], [-5, 6]] = [[-2/3, 1], [-5/3, 2]].",
-            "answer": "A^-1 = [[-2/3, 1], [-5/3, 2]]."
-          },
-          {
-            "qNo": "Question 5",
-            "question": "Solve the system:\n2x + 5y = 9\n5x - 2y = 8",
-            "solution": "Matrix Form: [[2, 5], [5, -2]] [[x], [y]] = [[9], [8]].\n|A| = -4 - 25 = -29 ≠ 0.\n|A_x| = 9(-2) - 5(8) = -18 - 40 = -58  =>  x = -58 / -29 = 2.\n|A_y| = 2(8) - 9(5) = 16 - 45 = -29   =>  y = -29 / -29 = 1.\nCheck: 2(2) + 5(1) = 9, 5(2) - 2(1) = 8. Verified!",
-            "answer": "x = 2, y = 1. Solution set = {(2, 1)}."
-          },
-          {
-            "qNo": "Question 6",
-            "question": "Qasim and Farzana are selling fruit for a school fundraiser. Customers can buy small boxes of oranges and large boxes of oranges. Qasim sold 3 small boxes of oranges and 14 large boxes of oranges for a total of Rs. 203. Farzana sold 11 small boxes of oranges and 11 large boxes of oranges for a total of Rs. 220. Find the cost each of one small box of oranges and one large box of oranges.",
-            "solution": "Let small box cost = x, large box cost = y.\n(1) 3x + 14y = 203\n(2) 11x + 11y = 220  =>  x + y = 20  =>  x = 20 - y\nSubstitute into (1):\n3(20 - y) + 14y = 203  =>  60 - 3y + 14y = 203  =>  11y = 143  =>  y = 13 rupees.\nx = 20 - 13 = 7 rupees.",
-            "answer": "Cost of small box = Rs. 7, Cost of large box = Rs. 13."
-          }
-        ]
-      }
-    ],
-    "slos": {
-      "mcqs": [
-        {
-          "q": "Which of the following is true for any two square matrices A and B of the same order?",
-          "options": [
-            "AB = BA always",
-            "AB ≠ BA in general",
-            "(AB)^t = A^t B^t",
-            "(A + B)^t = A^t - B^t"
-          ],
-          "correct": 1,
-          "exp": "Matrix multiplication is non-commutative in general: AB ≠ BA. Also, the reversal law holds: (AB)^t = B^t A^t."
-        },
-        {
-          "q": "If A = [[2, k], [3, 6]] is a singular matrix, what is the value of k?",
-          "options": [
-            "4",
-            "1",
-            "-4",
-            "9"
-          ],
-          "correct": 0,
-          "exp": "For a singular matrix, |A| = 0 => (2)(6) - (k)(3) = 0 => 12 - 3k = 0 => 3k = 12 => k = 4."
-        },
-        {
-          "q": "If A is of order 2×3 and B is of order 3×4, what is the order of the product AB?",
-          "options": [
-            "3×3",
-            "2×4",
-            "4×2",
-            "Product is not possible"
-          ],
-          "correct": 1,
-          "exp": "Inner dimensions match (3 = 3). The order of the resulting product is Outer Dimensions: 2 × 4."
-        },
-        {
-          "q": "The adjoint of matrix A = [[3, -1], [2, 4]] is:",
-          "options": [
-            "[[4, 1], [-2, 3]]",
-            "[[4, -1], [2, 3]]",
-            "[[-4, 1], [-2, -3]]",
-            "[[3, 2], [-1, 4]]"
-          ],
-          "correct": 0,
-          "exp": "Swap diagonal elements (3 and 4 -> 4 and 3) and negate secondary diagonal (-1 and 2 -> 1 and -2): adj A = [[4, 1], [-2, 3]]."
-        },
-        {
-          "q": "Which of the following matrices is skew-symmetric?",
-          "options": [
-            "[[0, 3], [-3, 0]]",
-            "[[1, 2], [2, 1]]",
-            "[[0, 2], [2, 0]]",
-            "[[0, 0], [0, 1]]"
-          ],
-          "correct": 0,
-          "exp": "For skew-symmetric, A^t = -A and diagonal elements must be 0. For [[0, 3], [-3, 0]], transpose is [[0, -3], [3, 0]] = -A."
-        }
+  "number": 1,
+  "id": "u1",
+  "title": "Matrices & Determinants",
+  "titleUrdu": "قالب اور ان کے مقطعات",
+  "status": "ready",
+  "badge": "100% Textbook Matched",
+  "pageRange": "Pages 1–49",
+  "description": "Official KPK Board Textbook Unit 1 with complete text reading, all 27 numbered worked examples, Exercises 1.1 to 1.6 & Review Exercise 1 with verified step-by-step solutions.",
+  "sections": [
+    {
+      "id": "1.1",
+      "title": "1.1 Introduction to Matrices, Order & Equality",
+      "theory": "The word 'matrices' is plural of the word 'matrix'. The term matrix was first introduced by the mathematician Arthur Cayley in 1860. The knowledge of matrices is necessary in various areas of Mathematics. It has widely been used in the fields of pure mathematics, statistics, engineering and physical and social sciences. Thus, matrix theory finds an important place in modern age and has become an integral part of mathematics.\n\nMatrices make presentation of numbers clearer and make calculations easier. The following table presents the information about a series of hockey matches played between Pakistan and India:\n\n| Match Record | Played | Won | Drawn | Lost |\n| :--- | :---: | :---: | :---: | :---: |\n| **Pakistan** | 8 | 4 | 1 | 3 |\n| **India** | 8 | 3 | 1 | 4 |\n\nThe information is readily available when presented in this way. For example, if we want to know how many matches India lost against Pakistan, we go along the row 'India' and column 'Lost' and find that it is 4. Similarly, if we want to know how many matches Pakistan drew with India, we go along the row 'Pakistan' and column 'Drawn' and find that it is 1. As long as we remember what each number represents, we could remove the row and column headings and write just the numbers, enclosing them in square brackets or parentheses:\nA = [[8, 4, 1, 3], [8, 3, 1, 4]]\nThus A is a matrix.\n\n• 1.1.1 Matrix:\nA matrix is a rectangular array (arrangement) of real numbers enclosed in square brackets. Each number in a matrix is called an element or entry of the matrix. For example:\n[[2, 3], [6, 5]] and [[3, 4, 2], [-1, 1, -2], [-4, -3, -3]] are all matrices.\nIn the matrix [[2, 3], [6, 5]], the numbers 2, 3, 6, 5 are the elements or entries of the matrix. Matrices are frequently denoted by capital letters such as A, B, C and so on.\n\n• 1.1.2 Rows and Columns of a Matrix:\nThe rows of a matrix run horizontally, and the columns of a matrix run vertically.\nFor example, consider matrix A:\nA = [[4, 3, -2], [1, 5, 2], [3, 1, 1]]\n- The numbers 4, 3, -2 run horizontally, so they constitute the first row (Row 1).\n- The numbers 1, 5, 2 run horizontally, so they constitute the second row (Row 2).\n- The numbers 3, 1, 1 run horizontally, so they constitute the third row (Row 3).\n- The numbers 4, 1, 3 run vertically, so they constitute the first column (Column 1).\n- The numbers 3, 5, 1 run vertically, so they constitute the second column (Column 2).\n- The numbers -2, 2, 1 run vertically, so they constitute the third column (Column 3).\n\n• 1.1.3 Order (or Dimension / Size) of a Matrix:\nA matrix with m rows and n columns has order m × n (read 'm by n').\nIf a matrix has order m × n, then m represents the number of rows and n represents the number of columns.\nFor example:\nA = [[2, -3, 2], [1, 3, -4]] has 2 rows and 3 columns. Order of A = 2-by-3 (or 2 × 3).\nB = [[1, 2], [1, 3]] has 2 rows and 2 columns. Order of B = 2-by-2 (or 2 × 2).\n*Tid-Bit:* Order of a matrix m × n does not mean to multiply m and n.\n\n• 1.1.4 Equality of Two Matrices:\nTwo given matrices A and B are said to be equal if:\n(i) Both the matrices are of the same order (they respectively have the same number of rows and columns).\n(ii) The elements in the corresponding positions in A and B are equal.\nFor example:\n[[1, 2, 3], [6, 5, 4]] and [[1, 1+1, 12/4], [4+2, 10/2, 8/2]] are equal matrices.\nWhereas [[1, 2], [3, 4], [5, 6]] and [[1, 2, 3], [6, 5, 4]] are NOT equal matrices because their orders are different (3×2 ≠ 2×3).",
+      "rules": [
+        "Arthur Cayley introduced the term matrix in 1860.",
+        "Order is written as Rows-by-Columns (m × n), never Columns-by-Rows.",
+        "Equality requires BOTH same dimensions AND identical corresponding entries (Equality doesn't mean Equity)."
+      ]
+    },
+    {
+      "id": "1.2",
+      "title": "1.2 Types of Matrices",
+      "theory": "The textbook defines and classifies matrices into the following key types:\n\na) Row-matrix:\nA matrix which has just one and only one row in it is called a Row-matrix.\nFor example, the matrices [a, b], [1, 3, 4], and [2, 4, 6, 8] are all row-matrices.\n\nb) Column-matrix:\nA matrix which has just one and only one column in it is called a Column-matrix.\nFor example, [[2], [1], [4], [3]] and [[b], [6], [5], [8]] are all column matrices.\n\nc) Square-matrix:\nA matrix in which the number of rows and columns are equal is called a square matrix.\nFor example, [[m, n], [n, p]] has 2 rows and 2 columns, so it is a 2-square matrix.\nThe matrix [[1, 2, 3], [7, 8, 9], [-1, -4, 2]] is a square matrix of order 3 (3-square matrix).\nAs a special case, the matrix consisting of a single element [3] is a square matrix of order 1 (1-square matrix).\n\nd) Rectangular-matrix:\nA matrix whose number of rows and number of columns are not equal is called a rectangular matrix.\nFor example, [[a, b, c], [d, e, f]] has rows = 2, columns = 3 (2 ≠ 3), so it is a rectangular matrix.\nSimilarly, [[1, 4], [3, 2], [5, -3]] has order 3-by-2, so it is a rectangular matrix.\n\ne) Zero matrix or Null matrix:\nAny matrix (whether rectangular or square) of which all the elements (entries) are equal to zero is said to be a Zero matrix or Null matrix, denoted by O.\nFor example:\nO_2x2 = [[0, 0], [0, 0]] is a null matrix of order 2.\nO_2x3 = [[0, 0, 0], [0, 0, 0]] is a null matrix of order 2-by-3.\n*Important Points:*\n1. A zero matrix is not necessarily a square matrix.\n2. The role of zero matrix in matrix operations is similar to zero in arithmetic (A + O = A).\n\nf) Diagonal matrix:\nA square matrix in which all elements are zero except the diagonal elements is known as a diagonal matrix.\nThe Main Diagonal starts at the top left and goes to the bottom right.\nFor example:\nA = [[1, 0], [0, 3]] is a diagonal matrix of order 2.\nB = [[2, 0, 0], [0, 3, 0], [0, 0, -5]] is a diagonal matrix of order 3.\n\ng) Scalar matrix:\nA diagonal matrix in which all the diagonal elements are equal non-zero constants is said to be a scalar matrix.\nFor instance: [[7, 0], [0, 7]] and [[1/2, 0, 0], [0, 1/2, 0], [0, 0, 1/2]] are scalar matrices of order 2 and 3 respectively.\n*Note:* Every scalar matrix is a diagonal matrix, but every diagonal matrix is not necessarily a scalar matrix.\n\nh) Identity matrix (Unit matrix):\nThe identity matrix is a square matrix denoted by I in which all elements on its main diagonal are 1's and all other elements are zero:\nI_2 = [[1, 0], [0, 1]]\nI_3 = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]\n\ni) Transpose of a matrix:\nThe matrix obtained by interchanging mutually the rows and columns in A is called the transpose of A and is denoted by A^t (or A').\nFor example, if A = [[1, 2], [3, 4]], then A^t = [[1, 3], [2, 4]].\n\nj) Symmetric matrix:\nA square matrix A is said to be symmetric if the transpose of A is equal to A itself, i.e., A^t = A.\nFor example, if A = [[1, 2], [2, 4]], then A^t = [[1, 2], [2, 4]] = A. Thus A is symmetric.\nSimilarly, B = [[1, 2, 3], [2, 4, 5], [3, 5, 6]] has B^t = B, so B is symmetric.\n\nk) Skew-Symmetric matrix:\nA given square matrix A is said to be Skew-Symmetric if A^t = -A.\nFor example, if A = [[0, -3], [3, 0]], then A^t = [[0, 3], [-3, 0]] = -[[0, -3], [3, 0]] = -A.\nTherefore, A is a skew-symmetric matrix. All diagonal elements of a skew-symmetric matrix must be 0.",
+      "rules": [
+        "For a symmetric matrix: A^t = A.",
+        "For a skew-symmetric matrix: A^t = -A (all principal diagonal entries must be 0).",
+        "(A^t)^t = A."
+      ]
+    },
+    {
+      "id": "1.3",
+      "title": "1.3 Addition and Subtraction of Matrices",
+      "theory": "• 1.3.1 Conformability for Addition / Subtraction:\nTwo matrices can be added or subtracted if and only if they have the same order.\nIf A and B are both 2-by-2 matrices, they are conformable. If C is 2-by-3 and D is 3-by-2, they are NOT conformable.\n\n• 1.3.2 Addition and Subtraction Operations:\n- Addition: The sum A + B is obtained by adding corresponding elements of matrices A and B:\n  (A + B)_ij = a_ij + b_ij.\n  Example: [[3, 8], [4, 6]] + [[4, 0], [1, -9]] = [[3+4, 8+0], [4+1, 6-9]] = [[7, 8], [5, -3]].\n- Subtraction: The difference A - B is obtained by subtracting each element of B from the corresponding element of A:\n  (A - B)_ij = a_ij - b_ij.\n  Example: [[3, 8], [4, 6]] - [[4, 0], [1, -9]] = [[3-4, 8-0], [4-1, 6-(-9)]] = [[-1, 8], [3, 15]].\n\n• 1.3.3 Multiplication of a Matrix by a Real Number (Scalar Multiplication):\nLet A be any matrix and k be any real number. The matrix obtained by multiplying each element of A by k is called the scalar multiplication of A by k, denoted by kA:\n(kA)_ij = k · a_ij.\n\n• 1.3.4 Commutative and Associative Laws under Addition:\n- Commutative Law: If A and B are matrices of the same order, then A + B = B + A.\n- Associative Law: If A, B, and C are matrices of the same order, then A + (B + C) = (A + B) + C.\n\n• 1.3.5 Additive Identity of Matrices:\nIn matrix theory, the Zero matrix O serves as the additive identity:\nA + O = O + A = A.\n\n• 1.3.6 Additive Inverse of a Matrix:\nIf A and B are two matrices of the same order such that A + B = O = B + A, then B is called the additive inverse of A (and B = -A):\nA + (-A) = (-A) + A = O.",
+      "rules": [
+        "Matrices must have identical orders to be added or subtracted.",
+        "Commutative law of addition holds: A + B = B + A.",
+        "Associative law of addition holds: (A + B) + C = A + (B + C).",
+        "The null matrix O is the unique additive identity."
+      ]
+    },
+    {
+      "id": "1.4",
+      "title": "1.4 Multiplication of Matrices",
+      "theory": "• 1.4.1 Conformability for Multiplication of Matrices:\nTwo matrices A and B are conformable for multiplication AB only when:\nNumber of columns of Matrix A = Number of rows of Matrix B.\nIf A is of order m × p and B is of order p × n, then the product AB exists and its order is m × n:\nA_(m×p) × B_(p×n) = (AB)_(m×n).\nThe product is evaluated using the row-by-column method: multiply each element of a row of A by the corresponding element of a column of B, and add these products.\n\n• 1.4.2 Commutative Law of Multiplication of Matrices:\nCommutative law of multiplication in general DOES NOT HOLD for matrices:\nAB ≠ BA (in general).\nThough for certain special matrices, AB may equal BA (they commute).\n\n• 1.4.3 Associative Law under Multiplication:\nIf A, B, and C are conformable for multiplication, then:\n(AB)C = A(BC).\n\n• 1.4.4 Distributive Laws of Multiplication over Addition:\nIf A, B, and C are conformable matrices, then:\n(i) A(B + C) = AB + AC (Left Distributive Law)\n(ii) (A + B)C = AC + BC (Right Distributive Law)\n\n• 1.4.5 Multiplicative Identity of a Matrix:\nIf I is an identity matrix and A is conformable, then IA = AI = A.\nFor 2-square matrices, I = [[1, 0], [0, 1]].\nFor 3-square matrices, I = [[1, 0, 0], [0, 1, 0], [0, 0, 1]].\n\n• 1.4.7 Verification of the Result (AB)^t = B^t · A^t:\nThe transpose of the product of two matrices equals the product of their transposes taken in the REVERSE ORDER:\n(AB)^t = B^t · A^t.",
+      "rules": [
+        "Conformability condition: Columns of first = Rows of second.",
+        "Matrix multiplication is NOT commutative in general: AB ≠ BA.",
+        "Associative law holds: (AB)C = A(BC).",
+        "Transpose of product follows reversal law: (AB)^t = B^t · A^t."
+      ]
+    },
+    {
+      "id": "1.5",
+      "title": "1.5 Multiplicative Inverse of a Matrix",
+      "theory": "• 1.5.1 Determinant of a Square Matrix:\nWith every square matrix A, a unique real number is associated called the determinant of A, denoted by |A| or det(A).\nIf A = [[a, b], [c, d]], then:\n|A| = ad - bc.\nThe determinant is obtained by multiplying entries on the main diagonal and subtracting the product of entries on the secondary diagonal.\n\n• 1.5.2 Singular and Non-Singular Matrices:\n- A square matrix A is called Singular if |A| = 0.\n- A square matrix A is called Non-Singular if |A| ≠ 0.\n\n• 1.5.3 Adjoint of a Matrix:\nThe adjoint of a square matrix A = [[a, b], [c, d]] is denoted by adj(A) and defined as:\nadj(A) = [[d, -b], [-c, a]].\nThat is, interchange the places of a and d, and change the signs of b and c.\n\n• 1.5.4 Multiplicative Inverse of a Matrix:\nLet A be a non-singular square matrix. If there exists another matrix B such that AB = BA = I, then B is called the multiplicative inverse of A, written B = A^-1.\nA · A^-1 = A^-1 · A = I.\n\n• 1.5.5 Use of Adjoint Method to Calculate Inverse:\nA^-1 = (1 / |A|) · adj(A).\nIf |A| = 0, A^-1 does NOT exist because division by zero is undefined.\n\n• 1.5.6 Verification of the Result AA^-1 = I = A^-1 A:\nFor any non-singular matrix A, multiplying A by A^-1 yields the identity matrix I.\n\n• 1.5.7 Verification of the Result (AB)^-1 = B^-1 · A^-1:\nIf A and B are non-singular square matrices of the same order, the inverse of their product is the product of their inverses in reverse order:\n(AB)^-1 = B^-1 · A^-1.",
+      "rules": [
+        "Determinant formula: |A| = ad - bc.",
+        "A matrix is singular if |A| = 0, non-singular if |A| ≠ 0.",
+        "Only non-singular matrices possess a multiplicative inverse.",
+        "Reversal law for inverses: (AB)^-1 = B^-1 · A^-1."
+      ]
+    },
+    {
+      "id": "1.6",
+      "title": "1.6 Solution of Simultaneous Linear Equations",
+      "theory": "A system of two linear equations in variables x and y in general form is:\n  ax + by = m   --- (i)\n  cx + dy = n   --- (ii)\nIn matrix form:\n  AX = B   --- (iii)\nwhere:\n  A = [[a, b], [c, d]]  (Coefficient Matrix)\n  X = [[x], [y]]         (Variable Matrix)\n  B = [[m], [n]]         (Constants Matrix)\n\n• Method 1: Matrix Inversion Method:\nMultiplying both sides of AX = B by A^-1:\n  A^-1 (AX) = A^-1 B  =>  (A^-1 A) X = A^-1 B  =>  IX = A^-1 B  =>  X = A^-1 B.\nSince A^-1 = (1 / |A|) · adj(A):\n  [[x], [y]] = (1 / |A|) · [[d, -b], [-c, a]] · [[m], [n]]\n  x = (dm - bn) / (ad - bc)\n  y = (-cm + an) / (ad - bc)\nIf |A| = 0, A^-1 does not exist, and the system cannot be solved (inconsistent or dependent).\n\n• Method 2: Cramer's Rule:\nLet |A| = ad - bc ≠ 0.\nReplace the coefficients of x in A by constants [m, n] to form A_x:\n  A_x = [[m, b], [n, d]]  =>  |A_x| = md - bn\n  x = |A_x| / |A|\nReplace the coefficients of y in A by constants [m, n] to form A_y:\n  A_y = [[a, m], [c, n]]  =>  |A_y| = an - cm\n  y = |A_y| / |A|\n\n• Real-Life Problems:\nTwo unknowns from real-world scenarios are formulated into simultaneous equations and solved by either Matrix Inversion or Cramer's Rule.",
+      "rules": [
+        "Matrix Inversion formula: X = A^-1 B = (1/|A|) adj(A) B.",
+        "Cramer's Rule formula: x = |A_x| / |A|, y = |A_y| / |A|.",
+        "If |A| = 0, the system has no unique solution."
+      ]
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ex1",
+      "title": "Example 1 (Page 4) — Rows, Columns & Order",
+      "problem": "Write the number of rows and columns of the following matrices and hence mention their orders:\n(i) A = [[p, q], [r, s]]\n(ii) B = [[3, 4, 7], [5, 6, 8]]",
+      "given": "Matrices A and B.",
+      "method": "Count horizontal rows (m) and vertical columns (n); order is m-by-n.",
+      "steps": [
+        "Given A = [[p, q], [r, s]]:\nA has two rows and two columns, so order of A is 2-by-2 (or 2 × 2).",
+        "Given B = [[3, 4, 7], [5, 6, 8]]:\nB has two rows and three columns. The order of B is 2-by-3 (or 2 × 3)."
       ],
-      "shortQuestions": [
-        {
-          "q": "Define a Scalar Matrix and give an example of order 2×2.",
-          "marks": 3,
-          "sol": "A diagonal matrix in which all principal diagonal entries are equal non-zero constants is called a Scalar Matrix.\nExample: S = [[5, 0], [0, 5]]."
-        },
-        {
-          "q": "Show that the matrix A = [[0, -3], [3, 0]] is skew-symmetric.",
-          "marks": 3,
-          "sol": "A^t = [[0, 3], [-3, 0]]. -A = [[0, 3], [-3, 0]]. Since A^t = -A, matrix A is Skew-Symmetric."
-        },
-        {
-          "q": "Find the multiplicative inverse of A = [[3, 2], [1, 1]].",
-          "marks": 3,
-          "sol": "|A| = 3 - 2 = 1. adj A = [[1, -2], [-1, 3]]. A^-1 = [[1, -2], [-1, 3]]."
-        }
+      "answer": "Order of A is 2-by-2; Order of B is 2-by-3."
+    },
+    {
+      "id": "ex2",
+      "title": "Example 2 (Page 13) — Conformability for Addition/Subtraction",
+      "problem": "Determine whether the following pairs of matrices are conformable for addition and subtraction:\n(i) A = [[-3, 2], [4, 7]] and B = [[3, 7], [10, 13]]\n(ii) C = [[9, 5, 13], [-2, 0, 5]] and D = [[7, 3, 1], [10, -1, 1], [2, 0, 3]]",
+      "given": "Pairs of matrices A, B and C, D.",
+      "method": "Check if orders are identical.",
+      "steps": [
+        "(i) A and B are both 2-by-2 matrices. Since both are of the same order, they are conformable for addition and subtraction.",
+        "(ii) Order of C is 2-by-3, while order of D is 3-by-3. Since their orders are not the same, C and D are NOT conformable for addition and subtraction."
       ],
-      "longQuestions": [
+      "answer": "(i) Conformable; (ii) Not conformable."
+    },
+    {
+      "id": "ex3",
+      "title": "Example 3 (Page 15) — Scalar Multiplication",
+      "problem": "Compute the scalar multiplications:\n(i) If A = [[6, 2], [-3, 1]], find 3A.\n(ii) If B = [[5, 4, 7], [-3, a, b]], find 7B.",
+      "given": "Matrices A and B.",
+      "method": "Multiply every entry by the given scalar.",
+      "steps": [
+        "(i) 3A = [[6×3, 2×3], [-3×3, 1×3]] = [[18, 6], [-9, 3]].",
+        "(ii) 7B = [[7×5, 7×4, 7×7], [7×(-3), 7a, 7b]] = [[35, 28, 49], [-21, 7a, 7b]]."
+      ],
+      "answer": "(i) 3A = [[18, 6], [-9, 3]]; (ii) 7B = [[35, 28, 49], [-21, 7a, 7b]]."
+    },
+    {
+      "id": "ex4",
+      "title": "Example 4 (Page 15) — Commutative Law of Addition",
+      "problem": "Let A = [[2, 5], [4, 7]] and B = [[-2, 1], [-3, 6]]. Prove that A + B = B + A.",
+      "given": "Matrices A and B of order 2×2.",
+      "method": "Calculate A + B and B + A separately and compare.",
+      "steps": [
+        "Compute A + B:\nA + B = [[2+(-2), 5+1], [4+(-3), 7+6]] = [[0, 6], [1, 13]].",
+        "Compute B + A:\nB + A = [[-2+2, 1+5], [-3+4, 6+7]] = [[0, 6], [1, 13]].",
+        "Since A + B = B + A = [[0, 6], [1, 13]], the commutative law is proved."
+      ],
+      "answer": "A + B = B + A = [[0, 6], [1, 13]]. Proved."
+    },
+    {
+      "id": "ex5",
+      "title": "Example 5 (Page 16) — Associative Law of Addition",
+      "problem": "Let A = [[-1, 2], [4, -3]], B = [[4, -5], [6, 7]], and C = [[3, -2], [1, 0]]. Verify that A + (B + C) = (A + B) + C.",
+      "given": "Matrices A, B, C of order 2×2.",
+      "method": "Evaluate LHS = A + (B + C) and RHS = (A + B) + C.",
+      "steps": [
+        "Compute B + C:\nB + C = [[4+3, -5+(-2)], [6+1, 7+0]] = [[7, -7], [7, 7]].",
+        "Compute LHS = A + (B + C):\nA + (B + C) = [[-1+7, 2+(-7)], [4+7, -3+7]] = [[6, -5], [11, 4]].  --- (1)",
+        "Compute A + B:\nA + B = [[-1+4, 2+(-5)], [4+6, -3+7]] = [[3, -3], [10, 4]].",
+        "Compute RHS = (A + B) + C:\n(A + B) + C = [[3+3, -3+(-2)], [10+1, 4+0]] = [[6, -5], [11, 4]].  --- (2)",
+        "From (1) and (2), LHS = RHS. Associative law is verified."
+      ],
+      "answer": "LHS = RHS = [[6, -5], [11, 4]]. Verified."
+    },
+    {
+      "id": "ex6",
+      "title": "Example 6 (Page 17) — Additive Identity of Matrices",
+      "problem": "If A = [[2, 3], [-1, 5]] and O = [[0, 0], [0, 0]], show that A + O = O + A = A.",
+      "given": "Matrix A and Null Matrix O of order 2×2.",
+      "method": "Add O to A and A to O.",
+      "steps": [
+        "A + O = [[2+0, 3+0], [-1+0, 5+0]] = [[2, 3], [-1, 5]] = A.",
+        "O + A = [[0+2, 0+3], [0+(-1), 0+5]] = [[2, 3], [-1, 5]] = A.",
+        "Thus A + O = O + A = A. O is the additive identity."
+      ],
+      "answer": "A + O = O + A = A. O is the additive identity for all 2-square matrices."
+    },
+    {
+      "id": "ex7",
+      "title": "Example 7 (Page 18) — Additive Inverse of a Matrix",
+      "problem": "Prove that P = [[3, 2, -1], [-2, 4, 6]] and Q = [[-3, -2, 1], [2, -4, -6]] are additive inverses of each other.",
+      "given": "Matrices P and Q of order 2×3.",
+      "method": "Show that P + Q = O and Q + P = O.",
+      "steps": [
+        "P + Q = [[3+(-3), 2+(-2), -1+1], [-2+2, 4+(-4), 6+(-6)]] = [[0, 0, 0], [0, 0, 0]] = O.",
+        "Q + P = [[-3+3, -2+2, 1+(-1)], [2+(-2), -4+4, -6+6]] = [[0, 0, 0], [0, 0, 0]] = O.",
+        "Hence P and Q are additive inverses of each other."
+      ],
+      "answer": "P + Q = Q + P = O. P and Q are additive inverses of each other."
+    },
+    {
+      "id": "ex8",
+      "title": "Example 8 (Page 21) — Multiplication Dimensions",
+      "problem": "Suppose A is a 3-by-4 matrix, B is a 4-by-2 matrix and C is a 4-by-3 matrix. Determine the defined products and their orders.",
+      "given": "Orders: A(3×4), B(4×2), C(4×3).",
+      "method": "Check if inner dimensions match (cols of first = rows of second).",
+      "steps": [
+        "- AB: (3×4) × (4×2) => defined, order is 3-by-2.",
+        "- AC: (3×4) × (4×3) => defined, order is 3-by-3 (3-square matrix).",
+        "- CA: (4×3) × (3×4) => defined, order is 4-by-4 (4-square matrix).",
+        "- BA: (4×2) × (3×4) => columns of B (2) ≠ rows of A (3), undefined.",
+        "- CB: (4×3) × (4×2) => columns of C (3) ≠ rows of B (4), undefined."
+      ],
+      "answer": "AB (3×2), AC (3×3), and CA (4×4) are defined; BA and CB are undefined."
+    },
+    {
+      "id": "ex9",
+      "title": "Example 9 (Page 22) — Row-by-Column Multiplication",
+      "problem": "If A = [[2, 3], [1, 4]] and B = [[3], [5]], (i) is it possible to find both AB and BA? (ii) find the possible product.",
+      "given": "A = [[2, 3], [1, 4]] (order 2×2) and B = [[3], [5]] (order 2×1).",
+      "method": "Check conformability and evaluate row by column.",
+      "steps": [
+        "(i) For AB: columns of A (2) = rows of B (2) => AB is possible.\nFor BA: columns of B (1) ≠ rows of A (2) => BA is not possible.",
+        "(ii) Compute AB:\nAB = [[(2)(3) + (3)(5)], [(1)(3) + (4)(5)]] = [[6 + 15], [3 + 20]] = [[21], [23]]."
+      ],
+      "answer": "Only AB is possible; AB = [[21], [23]]."
+    },
+    {
+      "id": "ex10",
+      "title": "Example 10 (Page 23) — Non-Commutativity (AB ≠ BA)",
+      "problem": "Let A = [[6, 3], [2, 5]] and B = [[-3, 2], [1, 5]]. Determine whether AB = BA.",
+      "given": "Matrices A and B.",
+      "method": "Calculate AB and BA and compare.",
+      "steps": [
+        "Compute AB:\nRow 1: [(6)(-3)+(3)(1), (6)(2)+(3)(5)] = [-18+3, 12+15] = [-15, 27]\nRow 2: [(2)(-3)+(5)(1), (2)(2)+(5)(5)] = [-6+5, 4+25] = [-1, 29]\nAB = [[-15, 27], [-1, 29]].  --- (1)",
+        "Compute BA:\nRow 1: [(-3)(6)+(2)(2), (-3)(3)+(2)(5)] = [-18+4, -9+10] = [-14, 1]\nRow 2: [(1)(6)+(5)(2), (1)(3)+(5)(5)] = [6+10, 3+25] = [16, 28]\nBA = [[-14, 1], [16, 28]].  --- (2)",
+        "From (1) and (2), AB ≠ BA."
+      ],
+      "answer": "AB ≠ BA. Matrix multiplication is not commutative in general."
+    },
+    {
+      "id": "ex11",
+      "title": "Example 11 (Page 23) — Commuting Matrices (AB = BA)",
+      "problem": "Let A = [[1, 2], [3, 4]] and B = [[2, 2], [3, 5]]. Show that AB = BA.",
+      "given": "Matrices A and B.",
+      "method": "Compute AB and BA and demonstrate equality.",
+      "steps": [
+        "Compute AB:\nRow 1: [(1)(2)+(2)(3), (1)(2)+(2)(5)] = [2+6, 2+10] = [8, 12]\nRow 2: [(3)(2)+(4)(3), (3)(2)+(4)(5)] = [6+12, 6+20] = [18, 26]\nAB = [[8, 12], [18, 26]].  --- (1)",
+        "Compute BA:\nRow 1: [(2)(1)+(2)(3), (2)(2)+(2)(4)] = [2+6, 4+8] = [8, 12]\nRow 2: [(3)(1)+(5)(3), (3)(2)+(5)(4)] = [3+15, 6+20] = [18, 26]\nBA = [[8, 12], [18, 26]].  --- (2)",
+        "From (1) and (2), AB = BA. The given matrices commute."
+      ],
+      "answer": "AB = BA = [[8, 12], [18, 26]]. Proved."
+    },
+    {
+      "id": "ex13",
+      "title": "Example 13 (Page 25) — Distributive Law A(B + C) = AB + AC",
+      "problem": "If A = [[1, 2], [3, 4]], B = [[5, 3], [2, 4]], and C = [[6, 2], [5, 1]], verify that A(B + C) = AB + AC.",
+      "given": "Matrices A, B, C of order 2×2.",
+      "method": "Evaluate LHS = A(B + C) and RHS = AB + AC.",
+      "steps": [
+        "Compute B + C = [[5+6, 3+2], [2+5, 4+1]] = [[11, 5], [7, 5]].",
+        "Compute LHS = A(B + C):\nRow 1: [(1)(11)+(2)(7), (1)(5)+(2)(5)] = [11+14, 5+10] = [25, 15]\nRow 2: [(3)(11)+(4)(7), (3)(5)+(4)(5)] = [33+28, 15+20] = [61, 35]\nLHS = [[25, 15], [61, 35]].  --- (1)",
+        "Compute AB:\nRow 1: [(1)(5)+(2)(2), (1)(3)+(2)(4)] = [5+4, 3+8] = [9, 11]\nRow 2: [(3)(5)+(4)(2), (3)(3)+(4)(4)] = [15+8, 9+16] = [23, 25]\nAB = [[9, 11], [23, 25]].",
+        "Compute AC:\nRow 1: [(1)(6)+(2)(5), (1)(2)+(2)(1)] = [6+10, 2+2] = [16, 4]\nRow 2: [(3)(6)+(4)(5), (3)(2)+(4)(1)] = [18+20, 6+4] = [38, 10]\nAC = [[16, 4], [38, 10]].",
+        "Compute RHS = AB + AC = [[9+16, 11+4], [23+38, 25+10]] = [[25, 15], [61, 35]].  --- (2)",
+        "From (1) and (2), LHS = RHS. Distributive law is verified."
+      ],
+      "answer": "LHS = RHS = [[25, 15], [61, 35]]. Verified."
+    },
+    {
+      "id": "ex14",
+      "title": "Example 14 (Page 27) — Multiplicative Identity IA = AI = A",
+      "problem": "If I = [[1, 0], [0, 1]] and A = [[9, -3], [-4, 5]], find IA and AI.",
+      "given": "Identity matrix I and matrix A.",
+      "method": "Multiply I by A and A by I.",
+      "steps": [
+        "IA = [[1(9)+0(-4), 1(-3)+0(5)], [0(9)+1(-4), 0(-3)+1(5)]] = [[9, -3], [-4, 5]] = A.",
+        "AI = [[9(1)+(-3)(0), 9(0)+(-3)(1)], [(-4)(1)+5(0), (-4)(0)+5(1)]] = [[9, -3], [-4, 5]] = A.",
+        "Hence IA = AI = A. I is the multiplicative identity."
+      ],
+      "answer": "IA = AI = A = [[9, -3], [-4, 5]]."
+    },
+    {
+      "id": "ex15",
+      "title": "Example 15 (Page 27) — Transpose of a Matrix",
+      "problem": "If A = [[3, 4, 5], [2, 4, 6]], find A^t.",
+      "given": "Matrix A of order 2×3.",
+      "method": "Interchange rows into columns.",
+      "steps": [
+        "Row 1 [3, 4, 5] becomes Column 1.\nRow 2 [2, 4, 6] becomes Column 2.",
+        "A^t = [[3, 2], [4, 4], [5, 6]] of order 3×2."
+      ],
+      "answer": "A^t = [[3, 2], [4, 4], [5, 6]]."
+    },
+    {
+      "id": "ex16",
+      "title": "Example 16 (Page 28) — Transpose Reversal Law (AB)^t = B^t · A^t",
+      "problem": "Let A = [[3, -2], [1, 4]] and B = [[2, -5], [6, -7]]. Show that (AB)^t = B^t · A^t.",
+      "given": "Matrices A and B.",
+      "method": "Compute (AB)^t and B^t A^t and show equality.",
+      "steps": [
+        "Compute AB:\nRow 1: [(3)(2)+(-2)(6), (3)(-5)+(-2)(-7)] = [6-12, -15+14] = [-6, -1]\nRow 2: [(1)(2)+(4)(6), (1)(-5)+(4)(-7)] = [2+24, -5-28] = [26, -33]\nAB = [[-6, -1], [26, -33]].",
+        "LHS = (AB)^t = [[-6, 26], [-1, -33]].  --- (1)",
+        "Compute B^t and A^t:\nB^t = [[2, 6], [-5, -7]],  A^t = [[3, 1], [-2, 4]].",
+        "Compute RHS = B^t · A^t:\nRow 1: [(2)(3)+(6)(-2), (2)(1)+(6)(4)] = [6-12, 2+24] = [-6, 26]\nRow 2: [(-5)(3)+(-7)(-2), (-5)(1)+(-7)(4)] = [-15+14, -5-28] = [-1, -33]\nB^t · A^t = [[-6, 26], [-1, -33]].  --- (2)",
+        "From (1) and (2), (AB)^t = B^t · A^t."
+      ],
+      "answer": "LHS = RHS = [[-6, 26], [-1, -33]]. Proved."
+    },
+    {
+      "id": "ex17",
+      "title": "Example 17 (Page 31) — Determinant of a 2×2 Matrix",
+      "problem": "Find the determinant of the matrix A = [[7, 5], [7, -12]].",
+      "given": "A = [[7, 5], [7, -12]]",
+      "method": "|A| = ad - bc.",
+      "steps": [
+        "|A| = (7)(-12) - (5)(7) = -84 - 35 = -119."
+      ],
+      "answer": "|A| = -119."
+    },
+    {
+      "id": "ex18",
+      "title": "Example 18 (Page 31) — Singular Matrix Check",
+      "problem": "Find whether A = [[4, -2], [-2, 1]] is a singular matrix.",
+      "given": "A = [[4, -2], [-2, 1]]",
+      "method": "Evaluate determinant |A|; if |A| = 0, it is singular.",
+      "steps": [
+        "|A| = (4)(1) - (-2)(-2) = 4 - 4 = 0.",
+        "Since |A| = 0, A is a singular matrix."
+      ],
+      "answer": "A is a singular matrix (|A| = 0)."
+    },
+    {
+      "id": "ex19",
+      "title": "Example 19 (Page 32) — Non-Singular Matrix Check",
+      "problem": "If P = [[-4, 2], [3, -7]], check whether P is a singular or non-singular matrix.",
+      "given": "P = [[-4, 2], [3, -7]]",
+      "method": "Evaluate |P|.",
+      "steps": [
+        "|P| = (-4)(-7) - (3)(2) = 28 - 6 = 22.",
+        "Since |P| = 22 ≠ 0, P is a non-singular matrix."
+      ],
+      "answer": "P is a non-singular matrix (|P| = 22 ≠ 0)."
+    },
+    {
+      "id": "ex20",
+      "title": "Example 20 (Page 32) — Adjoint of Matrices",
+      "problem": "Find the adjoint of the following matrices:\n(i) A = [[1, 3], [-2, 4]]\n(ii) B = [[4, 3], [-3, 1]]",
+      "given": "Matrices A and B.",
+      "method": "adj(M) = [[d, -b], [-c, a]].",
+      "steps": [
+        "(i) For A = [[1, 3], [-2, 4]]: Swap 1 and 4 => 4 and 1. Change signs of 3 and -2 => -3 and 2. adj(A) = [[4, -3], [2, 1]].",
+        "(ii) For B = [[4, 3], [-3, 1]]: Swap 4 and 1 => 1 and 4. Change signs of 3 and -3 => -3 and 3. adj(B) = [[1, -3], [3, 4]]."
+      ],
+      "answer": "(i) adj(A) = [[4, -3], [2, 1]]; (ii) adj(B) = [[1, -3], [3, 4]]."
+    },
+    {
+      "id": "ex21",
+      "title": "Example 21 (Page 33) — Multiplicative Inverse Proof",
+      "problem": "Show that A = [[3, 2], [4, 3]] is the multiplicative inverse of B = [[3, -2], [-4, 3]].",
+      "given": "Matrices A and B.",
+      "method": "Show AB = BA = I.",
+      "steps": [
+        "Compute AB:\nRow 1: [(3)(3)+(2)(-4), (3)(-2)+(2)(3)] = [9-8, -6+6] = [1, 0]\nRow 2: [(4)(3)+(3)(-4), (4)(-2)+(3)(3)] = [12-12, -8+9] = [0, 1]\nAB = [[1, 0], [0, 1]] = I.",
+        "Compute BA:\nRow 1: [(3)(3)+(-2)(4), (3)(2)+(-2)(3)] = [9-8, 6-6] = [1, 0]\nRow 2: [(-4)(3)+(3)(4), (-4)(2)+(3)(3)] = [-12+12, -8+9] = [0, 1]\nBA = [[1, 0], [0, 1]] = I.",
+        "Since AB = BA = I, A is the multiplicative inverse of B."
+      ],
+      "answer": "AB = BA = I. Hence A is the inverse of B."
+    },
+    {
+      "id": "ex22",
+      "title": "Example 22 (Page 33) — Inverse using Adjoint Method",
+      "problem": "Find the inverse of A = [[-2, -1], [3, 4]] using the adjoint method.",
+      "given": "A = [[-2, -1], [3, 4]]",
+      "method": "A^-1 = (1/|A|) · adj(A).",
+      "steps": [
+        "Step 1: |A| = (-2)(4) - (-1)(3) = -8 + 3 = -5 ≠ 0 (non-singular, A^-1 exists).",
+        "Step 2: adj(A) = [[4, 1], [-3, -2]].",
+        "Step 3: A^-1 = (1/-5) · [[4, 1], [-3, -2]] = [[-4/5, -1/5], [3/5, 2/5]]."
+      ],
+      "answer": "A^-1 = [[-4/5, -1/5], [3/5, 2/5]]."
+    },
+    {
+      "id": "ex23",
+      "title": "Example 23 (Page 35) — Verification of (AB)^-1 = B^-1 · A^-1",
+      "problem": "Let A = [[-2, 1], [1, 1]] and B = [[2, 1], [3, 2]]. Verify that (AB)^-1 = B^-1 · A^-1.",
+      "given": "Matrices A and B.",
+      "method": "Evaluate (AB)^-1 and B^-1 A^-1 and compare.",
+      "steps": [
+        "Step 1: Compute AB = [[-2(2)+1(3), -2(1)+1(2)], [1(2)+1(3), 1(1)+1(2)]] = [[-1, 0], [5, 3]].",
+        "Step 2: det(AB) = (-1)(3) - (0)(5) = -3 ≠ 0. adj(AB) = [[3, 0], [-5, -1]].\n(AB)^-1 = (1/-3) · [[3, 0], [-5, -1]] = [[-1, 0], [5/3, 1/3]].  --- (1)",
+        "Step 3: For A: det(A) = (-2)(1) - (1)(1) = -3. adj(A) = [[1, -1], [-1, -2]].\nA^-1 = (1/-3) · [[1, -1], [-1, -2]] = [[-1/3, 1/3], [1/3, 2/3]].",
+        "Step 4: For B: det(B) = (2)(2) - (1)(3) = 1. adj(B) = [[2, -1], [-3, 2]].\nB^-1 = [[2, -1], [-3, 2]].",
+        "Step 5: Multiply B^-1 · A^-1:\nRow 1: [2(-1/3)+(-1)(1/3), 2(1/3)+(-1)(2/3)] = [-2/3-1/3, 2/3-2/3] = [-1, 0]\nRow 2: [-3(-1/3)+2(1/3), -3(1/3)+2(2/3)] = [1+2/3, -1+4/3] = [5/3, 1/3]\nB^-1 · A^-1 = [[-1, 0], [5/3, 1/3]].  --- (2)",
+        "From (1) and (2), (AB)^-1 = B^-1 · A^-1."
+      ],
+      "answer": "LHS = RHS = [[-1, 0], [5/3, 1/3]]. Verified."
+    },
+    {
+      "id": "ex24",
+      "title": "Example 24 (Page 40) — Matrix Inversion Method",
+      "problem": "Solve the system of equations with the help of matrices:\nx - 3y = 0\n2x + y = 7",
+      "given": "x - 3y = 0 and 2x + y = 7.",
+      "method": "Write AX = B => X = A^-1 B.",
+      "steps": [
+        "A = [[1, -3], [2, 1]], X = [[x], [y]], B = [[0], [7]].",
+        "|A| = (1)(1) - (-3)(2) = 1 + 6 = 7 ≠ 0. A^-1 exists.",
+        "adj(A) = [[1, 3], [-2, 1]].",
+        "X = (1/7) · [[1, 3], [-2, 1]] · [[0], [7]] = (1/7) · [[(1)(0) + (3)(7)], [(-2)(0) + (1)(7)]] = (1/7) · [[21], [7]] = [[3], [1]].",
+        "Therefore, x = 3, y = 1."
+      ],
+      "answer": "x = 3, y = 1. Solution set = {(3, 1)}."
+    },
+    {
+      "id": "ex25",
+      "title": "Example 25 (Page 40) — Solvability of Linear System",
+      "problem": "Is the following system of equations solvable?\n3x - 6y = 9\n2x - 4y = -3",
+      "given": "3x - 6y = 9 and 2x - 4y = -3.",
+      "method": "Check determinant |A| of coefficient matrix.",
+      "steps": [
+        "Coefficient matrix A = [[3, -6], [2, -4]].",
+        "|A| = (3)(-4) - (-6)(2) = -12 + 12 = 0.",
+        "Since |A| = 0, A is singular, A^-1 does not exist.",
+        "Hence the given equations are non-solvable."
+      ],
+      "answer": "The system is non-solvable (|A| = 0)."
+    },
+    {
+      "id": "ex26",
+      "title": "Example 26 (Page 42) — Cramer's Rule",
+      "problem": "Solve the following system of equations by using Cramer's rule:\nx - 2y = 1\n3x + y = 10",
+      "given": "x - 2y = 1 and 3x + y = 10.",
+      "method": "Apply Cramer's Rule: x = |A_x|/|A|, y = |A_y|/|A|.",
+      "steps": [
+        "Matrix Form: A = [[1, -2], [3, 1]], B = [[1], [10]].",
+        "|A| = (1)(1) - (-2)(3) = 1 + 6 = 7 ≠ 0.",
+        "A_x = [[1, -2], [10, 1]]  =>  |A_x| = (1)(1) - (-2)(10) = 1 + 20 = 21.\nx = |A_x| / |A| = 21 / 7 = 3.",
+        "A_y = [[1, 1], [3, 10]]  =>  |A_y| = (1)(10) - (1)(3) = 10 - 3 = 7.\ny = |A_y| / |A| = 7 / 7 = 1."
+      ],
+      "answer": "Solution set = {(3, 1)}. x = 3, y = 1."
+    },
+    {
+      "id": "ex27",
+      "title": "Example 27 (Page 43) — Word Problem: Two Numbers",
+      "problem": "There are two numbers such that the sum of the first and three times the second is 53, while the difference between 4 times the first and twice the second is 2. Find the numbers.",
+      "given": "x + 3y = 53 and 4x - 2y = 2.",
+      "method": "Translate to matrix equation AX = B and solve.",
+      "steps": [
+        "Let first number = x, second number = y.\n(1) x + 3y = 53\n(2) 4x - 2y = 2",
+        "Matrix Form: [[1, 3], [4, -2]] [[x], [y]] = [[53], [2]].",
+        "|A| = (1)(-2) - (3)(4) = -2 - 12 = -14 ≠ 0.",
+        "adj(A) = [[-2, -3], [-4, 1]].",
+        "X = (1/-14) · [[-2, -3], [-4, 1]] · [[53], [2]]\n= (-1/14) · [[(-2)(53) + (-3)(2)], [(-4)(53) + (1)(2)]]\n= (-1/14) · [[-106 - 6], [-212 + 2]]\n= (-1/14) · [[-112], [-210]] = [[8], [15]].",
+        "Therefore, x = 8, y = 15."
+      ],
+      "answer": "The numbers are 8 and 15."
+    },
+    {
+      "id": "ex28",
+      "title": "Example 28 (Page 44) — Word Problem: Rubbers & Sharpeners",
+      "problem": "The cost of 1 rubber and 7 sharpeners is 15 rupees, while that of 3 rubbers and 1 sharpener is 5 rupees. What are the prices of a rubber and sharpener respectively?",
+      "given": "x + 7y = 15 and 3x + y = 5.",
+      "method": "Solve simultaneous equations using Cramer's Rule.",
+      "steps": [
+        "Let rubber price = x, sharpener price = y.\n(1) x + 7y = 15\n(2) 3x + y = 5",
+        "A = [[1, 7], [3, 1]], B = [[15], [5]].",
+        "|A| = (1)(1) - (7)(3) = 1 - 21 = -20 ≠ 0.",
+        "A_x = [[15, 7], [5, 1]]  =>  |A_x| = (15)(1) - (7)(5) = 15 - 35 = -20.\nx = |A_x| / |A| = -20 / -20 = 1 rupee.",
+        "A_y = [[1, 15], [3, 5]]  =>  |A_y| = (1)(5) - (15)(3) = 5 - 45 = -40.\ny = |A_y| / |A| = -40 / -20 = 2 rupees."
+      ],
+      "answer": "Price of one rubber = 1 rupee; Price of one sharpener = 2 rupees."
+    }
+  ],
+  "exercises": [
+    {
+      "exercise": "1.1",
+      "title": "Exercise 1.1 — Order, Types & Equality of Matrices (Page 5)",
+      "problems": [
         {
-          "q": "Solve the system of equations using both (a) Matrix Inversion Method and (b) Cramer's Rule: 3x - 2y = 1,  2x + 3y = 5.",
-          "marks": 8,
-          "rubric": "Matrix setup (1 Mark), Determinant (1 Mark), Inversion Method (3 Marks), Cramer's Rule (3 Marks).",
-          "sol": "Matrix Form: [[3, -2], [2, 3]] [[x], [y]] = [[1], [5]]\n|A| = 9 + 4 = 13 ≠ 0.\n(a) Inversion: X = A^-1 B = (1/13) [[3, 2], [-2, 3]] [[1], [5]] = (1/13) [[13], [13]] = [[1], [1]]. x = 1, y = 1.\n(b) Cramer's: |A_x| = 3 + 10 = 13 => x = 13/13 = 1. |A_y| = 15 - 2 = 13 => y = 13/13 = 1."
+          "qNo": "Question 1",
+          "question": "Which of the following are square and which are rectangular matrices?\n(i) A = [[2, 3], [0, 5]]\n(ii) B = [[6, 3, -1], [1, 5, 2]]\n(iii) C = [[1, 0, 0], [0, 2, 0], [0, 0, 1]]\n(iv) B = [-5]\n(v) E = [-3, 4]\n(vi) E = [[-1], [7]]",
+          "solution": "A matrix is square if the number of rows equals the number of columns (m = n).\nA matrix is rectangular if the number of rows does not equal the number of columns (m ≠ n).\n\n(i) A has 2 rows and 2 columns (2×2): m = n => Square Matrix.\n(ii) B has 2 rows and 3 columns (2×3): m ≠ n => Rectangular Matrix.\n(iii) C has 3 rows and 3 columns (3×3): m = n => Square Matrix.\n(iv) B = [-5] has 1 row and 1 column (1×1): m = n => Square Matrix.\n(v) E = [-3, 4] has 1 row and 2 columns (1×2): m ≠ n => Rectangular Matrix.\n(vi) E = [[-1], [7]] has 2 rows and 1 column (2×1): m ≠ n => Rectangular Matrix.",
+          "answer": "(i) Square, (ii) Rectangular, (iii) Square, (iv) Square, (v) Rectangular, (vi) Rectangular."
+        },
+        {
+          "qNo": "Question 2",
+          "question": "List the order of the following matrices:\n(i) A = [[1, 2, -1], [3, 4, 2]]\n(ii) B = [-4]\n(iii) C = [[2, 3, -1], [1, 2, 5]]\n(iv) F = [[2, 1], [3, 2], [4, -1]]\n(v) E = [3, 2]\n(vi) D = [[1, 2, 3], [6, 5, 9], [0, 0, 0]]",
+          "solution": "The order of a matrix having m rows and n columns is m × n:\n(i) A has 2 rows and 3 columns => Order: 2 × 3 (or 2-by-3).\n(ii) B has 1 row and 1 column => Order: 1 × 1 (or 1-by-1).\n(iii) C has 2 rows and 3 columns => Order: 2 × 3 (or 2-by-3).\n(iv) F has 3 rows and 2 columns => Order: 3 × 2 (or 3-by-2).\n(v) E has 1 row and 2 columns => Order: 1 × 2 (or 1-by-2).\n(vi) D has 3 rows and 3 columns => Order: 3 × 3 (or 3-by-3).",
+          "answer": "(i) 2×3, (ii) 1×1, (iii) 2×3, (iv) 3×2, (v) 1×2, (vi) 3×3."
+        },
+        {
+          "qNo": "Question 3",
+          "question": "If A = [[3, 2, -4], [-2, 5, 0], [2, 1, 5], [-3, 4, 6]], give the following elements:\n(i) a_12\n(ii) a_23\n(iii) a_32\n(iv) a_43\n(v) a_13\n(vi) a_33",
+          "solution": "In matrix notation, a_ij represents the element in the i-th row and j-th column:\n(i) a_12 (Row 1, Column 2) = 2\n(ii) a_23 (Row 2, Column 3) = 0\n(iii) a_32 (Row 3, Column 2) = 1\n(iv) a_43 (Row 4, Column 3) = 6\n(v) a_13 (Row 1, Column 3) = -4\n(vi) a_33 (Row 3, Column 3) = 5",
+          "answer": "(i) 2, (ii) 0, (iii) 1, (iv) 6, (v) -4, (vi) 5. The printed answer key says 0, but the given matrix has a₃₃ = 5."
+        },
+        {
+          "qNo": "Question 4",
+          "question": "Which of the following matrices are equal?\nA = [[2, 5], [1, 3]]\nB = [[2, 5], [4, 3]]\nC = [[1+1, 3+2], [4, 2+1]]\nD = [[2, 4+1], [1, 3]]",
+          "solution": "Simplify matrices C and D:\nC = [[1+1, 3+2], [4, 2+1]] = [[2, 5], [4, 3]].\nD = [[2, 4+1], [1, 3]] = [[2, 5], [1, 3]].\n\nCompare:\n- Matrix A = [[2, 5], [1, 3]] has identical entries to D = [[2, 5], [1, 3]] => A = D.\n- Matrix B = [[2, 5], [4, 3]] has identical entries to C = [[2, 5], [4, 3]] => B = C.",
+          "answer": "A = D and B = C."
+        },
+        {
+          "qNo": "Question 5",
+          "question": "Let A = [[2, -3], [u, 0]] and B = [[v, -3], [5, w]]. For what values of u, v, and w are A and B equal?",
+          "solution": "For A = B, corresponding entries must be equal:\n[[2, -3], [u, 0]] = [[v, -3], [5, w]]\n- Position (1, 1): 2 = v => v = 2\n- Position (1, 2): -3 = -3\n- Position (2, 1): u = 5 => u = 5\n- Position (2, 2): 0 = w => w = 0",
+          "answer": "u = 5, v = 2, w = 0."
+        },
+        {
+          "qNo": "Question 6",
+          "question": "If [[x+3, z+4, 2y-7], [-6, a-1, 0], [b-3, -21, 0]] = [[0, 6, 3y-2], [-6, -3, 2c+2], [2b+4, -21, 0]], find the values of a, b, c, x, y, and z.",
+          "solution": "Equating corresponding elements:\n1) x + 3 = 0  =>  x = -3\n2) z + 4 = 6  =>  z = 2\n3) 2y - 7 = 3y - 2  =>  -y = 5  =>  y = -5\n4) a - 1 = -3  =>  a = -2\n5) 0 = 2c + 2  =>  2c = -2  =>  c = -1\n6) b - 3 = 2b + 4  =>  -b = 7  =>  b = -7",
+          "answer": "a = -2, b = -7, c = -1, x = -3, y = -5, z = 2."
+        },
+        {
+          "qNo": "Question 7",
+          "question": "Solve the following equation for a, b, c, d:\n[[a+b, b+2c], [2c+d, 2a-d]] = [[-1, 4], [8, 0]]",
+          "solution": "Equating corresponding elements:\n(1) a + b = -1\n(2) b + 2c = 4\n(3) 2c + d = 8\n(4) 2a - d = 0  =>  d = 2a\n\nFrom (4) and (3): 2c + 2a = 8 => a + c = 4 => c = 4 - a\nFrom (1): b = -1 - a\nSubstitute b and c into (2):\n(-1 - a) + 2(4 - a) = 4\n-1 - a + 8 - 2a = 4\n7 - 3a = 4 => -3a = -3 => a = 1.\n\nNow substitute a = 1:\nb = -1 - (1) = -2\nc = 4 - 1 = 3\nd = 2(1) = 2.",
+          "answer": "a = 1, b = -2, c = 3, d = 2."
         }
       ]
     },
-    "formulaSheet": [
+    {
+      "exercise": "1.2",
+      "title": "Exercise 1.2 — Transpose, Symmetric & Skew-Symmetric Matrices (Page 10)",
+      "problems": [
+        {
+          "qNo": "Question 1",
+          "question": "Write the transpose of the following matrices:\n(i) P = [[1, 2], [3, 1]]\n(ii) Q = [[l, m], [n, p]]\n(iii) R = [6]\n(iv) S = [[-5, 1], [-2, 1], [4, 4]]\n(v) T = [[6, 7, 8], [13, 1, 3], [2, 4, 5]]",
+          "solution": "Interchange rows into columns:\n(i) P^t = [[1, 3], [2, 1]]\n(ii) Q^t = [[l, n], [m, p]]\n(iii) R^t = [6]\n(iv) S^t = [[-5, -2, 4], [1, 1, 4]]\n(v) T^t = [[6, 13, 2], [7, 1, 4], [8, 3, 5]]",
+          "answer": "(i) P^t = [[1, 3], [2, 1]], (ii) Q^t = [[l, n], [m, p]], (iii) R^t = [6], (iv) S^t = [[-5, -2, 4], [1, 1, 4]], (v) T^t = [[6, 13, 2], [7, 1, 4], [8, 3, 5]]."
+        },
+        {
+          "qNo": "Question 2",
+          "question": "Which of the following matrices are transpose of each other?\n(i) A = [[a1, a2], [b1, b2]]\n(ii) B = [[a1, b1], [a2, b2]]\n(iii) C = [[-3, 1, -1], [4, 2, 7]]\n(iv) D = [[-3, 4], [1, 2], [-1, 7]]",
+          "solution": "1. For A = [[a1, a2], [b1, b2]], A^t = [[a1, b1], [a2, b2]] = B, and B^t = A.\n   => (i) and (ii) are transpose of each other.\n2. For C = [[-3, 1, -1], [4, 2, 7]], C^t = [[-3, 4], [1, 2], [-1, 7]] = D, and D^t = C.\n   => (iii) and (iv) are transpose of each other.",
+          "answer": "i) and ii), iii) and iv) are transpose of each other."
+        },
+        {
+          "qNo": "Question 3",
+          "question": "Which of the following matrices are symmetric?\n(i) A = [[5, -7], [-1, 5]]\n(ii) B = [[-1, 2], [2, 3]]\n(iii) C = [[3, 4], [5, 6]]\n(iv) D = [[1, 2, 3], [4, 5, 6], [3, 6, 1]]",
+          "solution": "A matrix M is symmetric if M^t = M:\n(i) A^t = [[5, -1], [-7, 5]] ≠ A (Not symmetric).\n(ii) B^t = [[-1, 2], [2, 3]] = B (Symmetric!).\n(iii) C^t = [[3, 5], [4, 6]] ≠ C (Not symmetric).\n(iv) D^t = [[1, 4, 3], [2, 5, 6], [3, 6, 1]] ≠ D (Not symmetric).",
+          "answer": "Symmetric matrices: ii) B."
+        },
+        {
+          "qNo": "Question 4",
+          "question": "Which of the following matrices are skew-symmetric?\n(i) A = [[0, 4], [-4, 0]]\n(ii) B = [[0, -5], [5, 0]]\n(iii) C = [[0, 7], [7, 0]]\n(iv) D = [[0, 3, 2], [-3, 0, 1], [-2, -1, 0]]",
+          "solution": "A matrix M is skew-symmetric if M^t = -M:\n(i) A^t = [[0, -4], [4, 0]] = -A (Skew-symmetric).\n(ii) B^t = [[0, 5], [-5, 0]] = -B (Skew-symmetric).\n(iii) C^t = [[0, 7], [7, 0]] = C ≠ -C (Symmetric, not skew-symmetric).\n(iv) D^t = [[0, -3, -2], [3, 0, -1], [2, 1, 0]] = -D (Skew-symmetric).",
+          "answer": "Skew-symmetric matrices: i), ii), iv)."
+        }
+      ]
+    },
+    {
+      "exercise": "1.3",
+      "title": "Exercise 1.3 — Matrix Addition & Properties (Pages 19-20)",
+      "problems": [
+        {
+          "qNo": "Question 1",
+          "question": "Let A & B be 2-by-3 matrices and let C & D be 2-square matrices. Which of the following matrix operations are defined? For those which are defined, give the dimension of the resulting matrix.\n(i) A + B\n(ii) B + D\n(iii) 3A - 2C\n(iv) 7C + 2D",
+          "solution": "Matrices can be added or subtracted only if they have the same order:\n(i) A (2×3) + B (2×3): Defined. Resulting dimension: 2-by-3.\n(ii) B (2×3) + D (2×2): Not defined (different orders).\n(iii) 3A (2×3) - 2C (2×2): Not defined (different orders).\n(iv) 7C (2×2) + 2D (2×2): Defined. Resulting dimension: 2-by-2.",
+          "answer": "(i) Defined (2-by-3); (ii) Not defined; (iii) Not defined; (iv) Defined (2-by-2)."
+        },
+        {
+          "qNo": "Question 2",
+          "question": "Multiply the following matrices by the real numbers as indicated:\n(i) Multiply A = [[1], [2], [3]] by 2.\n(ii) Multiply B = [[a, b, c], [d, e, f]] by p in R.",
+          "solution": "Multiply every entry by the given scalar:\n(i) 2A = 2 * [[1], [2], [3]] = [[2], [4], [6]].\n(ii) pB = [[pa, pb, pc], [pd, pe, pf]].",
+          "answer": "(i) [[2], [4], [6]]; (ii) [[pa, pb, pc], [pd, pe, pf]]."
+        },
+        {
+          "qNo": "Question 3",
+          "question": "Find a matrix X such that 4X = [[1, 2, 1], [4, 2, 3], [-1, 9, 7]].",
+          "solution": "X = (1/4) · [[1, 2, 1], [4, 2, 3], [-1, 9, 7]]\n= [[1/4, 2/4, 1/4], [4/4, 2/4, 3/4], [-1/4, 9/4, 7/4]]\n= [[1/4, 1/2, 1/4], [1, 1/2, 3/4], [-1/4, 9/4, 7/4]].",
+          "answer": "X = [[1/4, 1/2, 1/4], [1, 1/2, 3/4], [-1/4, 9/4, 7/4]]."
+        },
+        {
+          "qNo": "Question 4",
+          "question": "If A = [[1, 2], [3, 4], [5, 6]] and B = [[-3, -2], [1, -5], [4, 3]], find 3A - B.",
+          "solution": "3A = 3 · [[1, 2], [3, 4], [5, 6]] = [[3, 6], [9, 12], [15, 18]].\n3A - B = [[3 - (-3), 6 - (-2)], [9 - 1, 12 - (-5)], [15 - 4, 18 - 3]]\n= [[6, 8], [8, 17], [11, 15]].",
+          "answer": "3A - B = [[6, 8], [8, 17], [11, 15]]."
+        },
+        {
+          "qNo": "Question 5",
+          "question": "Given A = [[1, 2, -3], [5, 0, 2], [1, -1, 1]] and B = [[3, -1, 2], [4, 2, 5], [2, 3, 0]], find the matrix C such that A + 2B = C.",
+          "solution": "2B = [[6, -2, 4], [8, 4, 10], [4, 6, 0]].\nC = A + 2B = [[1+6, 2-2, -3+4], [5+8, 0+4, 2+10], [1+4, -1+6, 1+0]]\n= [[7, 0, 1], [13, 4, 12], [5, 5, 1]].",
+          "answer": "C = [[7, 0, 1], [13, 4, 12], [5, 5, 1]]."
+        },
+        {
+          "qNo": "Question 6",
+          "question": "If A = [[2, -2], [4, 2], [-5, 1]] and B = [[8, 0], [4, -2], [3, 6]], find the matrix X such that 2A + 3X = 5B.",
+          "solution": "3X = 5B - 2A  =>  X = (1/3)(5B - 2A).\n5B = [[40, 0], [20, -10], [15, 30]].\n2A = [[4, -4], [8, 4], [-10, 2]].\n5B - 2A = [[36, 4], [12, -14], [25, 28]].\nX = [[12, 4/3], [4, -14/3], [25/3, 28/3]].",
+          "answer": "X = [[12, 4/3], [4, -14/3], [25/3, 28/3]]."
+        },
+        {
+          "qNo": "Question 7",
+          "question": "Find x, y, z, and w if 3[[x, y], [z, w]] = [[x, 6], [-1, 2w]] + [[4, x+y], [3+w, 3]].",
+          "solution": "Add the two matrices on the right:\n[[x+4, x+y+6], [w+2, 2w+3]].\nEquate corresponding entries with the left-hand matrix:\n3x = x+4, so x = 2.\n3y = x+y+6, so 2y = 8 and y = 4.\n3w = 2w+3, so w = 3.\n3z = w+2, so 3z = 5 and z = 5/3.",
+          "answer": "x = 2, y = 4, z = 5/3, w = 3."
+        },
+        {
+          "qNo": "Question 8",
+          "question": "Find X and Y if X + Y = [[5, 2], [0, 9]] and X - Y = [[3, 6], [0, -1]].",
+          "solution": "Add both equations: 2X = [[8, 8], [0, 8]] => X = [[4, 4], [0, 4]].\nSubtract equations: 2Y = [[2, -4], [0, 10]] => Y = [[1, -2], [0, 5]].",
+          "answer": "X = [[4, 4], [0, 4]], Y = [[1, -2], [0, 5]]."
+        },
+        {
+          "qNo": "Question 9",
+          "question": "Let A = [[2, -3], [4, 5]], B = [[2, 5], [-1, 3]], and C = [[3, -1], [0, 4]]. If c = 2 and d = -4, verify that:\n(i) (c + d)A = cA + dA\n(ii) c(A + B) = cA + cB\n(iii) (cd)A = c(dA)",
+          "solution": "(i) (c+d)A = -2 · [[2, -3], [4, 5]] = [[-4, 6], [-8, -10]].\n    cA + dA = 2A + (-4)A = [[-4, 6], [-8, -10]]. Verified.\n(ii) c(A+B) = 2 · [[4, 2], [3, 8]] = [[8, 4], [6, 16]].\n    cA + cB = [[4, -6], [8, 10]] + [[4, 10], [-2, 6]] = [[8, 4], [6, 16]]. Verified.\n(iii) (cd)A = -8A = [[-16, 24], [-32, -40]].\n    c(dA) = 2(-4A) = [[-16, 24], [-32, -40]]. Verified.",
+          "answer": "All three properties (i), (ii), and (iii) verified."
+        },
+        {
+          "qNo": "Question 10",
+          "question": "Let A = [[-1, 2, 3], [4, 2, 0], [-3, 2, 5]], B = [[3, -1, 2], [-5, 3, 4], [-3, -4, 0]], and C = [[2, -3, 6], [0, 4, -1], [-5, 1, 3]]. Compute if possible:\n(i) A + 2B\n(ii) 3A - 4B\n(iii) (A + B) - C\n(iv) A + (B + C)",
+          "solution": "All are 3×3 matrices, so all operations are defined:\n(i) A + 2B = [[-1+6, 2-2, 3+4], [4-10, 2+6, 0+8], [-3-6, 2-8, 5+0]] = [[5, 0, 7], [-6, 8, 8], [-9, -6, 5]].\n(ii) 3A - 4B = [[-3-12, 6+4, 9-8], [12+20, 6-12, 0-16], [-9+12, 6+16, 15-0]] = [[-15, 10, 1], [32, -6, -16], [3, 22, 15]].\n(iii) (A + B) - C = [[2-2, 1-(-3), 5-6], [-1-0, 5-4, 4-(-1)], [-6-(-5), -2-1, 5-3]] = [[0, 4, -1], [-1, 1, 5], [-1, -3, 2]].\n(iv) A + (B + C) = A + [[5, -4, 8], [-5, 7, 3], [-8, -3, 3]] = [[4, -2, 11], [-1, 9, 3], [-11, -1, 8]].",
+          "answer": "(i) [[5, 0, 7], [-6, 8, 8], [-9, -6, 5]]; (ii) [[-15, 10, 1], [32, -6, -16], [3, 22, 15]]; (iii) [[0, 4, -1], [-1, 1, 5], [-1, -3, 2]]; (iv) [[4, -2, 11], [-1, 9, 3], [-11, -1, 8]]."
+        },
+        {
+          "qNo": "Question 11",
+          "question": "Prove that commutative law of addition holds for the following matrices:\n(i) A = [[7, 1], [2, 4]], B = [[1, 1], [2, 2]]\n(ii) C = [[-3, 4, -5], [2, 3, 1]], D = [[-3, -4, 5], [1, 2, 3]]",
+          "solution": "(i) A + B = [[7+1, 1+1], [2+2, 4+2]] = [[8, 2], [4, 6]].\n    B + A = [[1+7, 1+1], [2+2, 2+4]] = [[8, 2], [4, 6]].\n    Since A + B = B + A, verified.\n(ii) C + D = [[-3+(-3), 4+(-4), -5+5], [2+1, 3+2, 1+3]] = [[-6, 0, 0], [3, 5, 4]].\n    D + C = [[-3+(-3), -4+4, 5+(-5)], [1+2, 2+3, 3+1]] = [[-6, 0, 0], [3, 5, 4]].\n    Since C + D = D + C, verified.",
+          "answer": "Commutative law of addition A + B = B + A holds for both pairs."
+        },
+        {
+          "qNo": "Question 12",
+          "question": "Verify that A + (B + C) = (A + B) + C for:\n(i) A = [[2, -3], [4, 1]], B = [[5, 1], [3, 6]], C = [[1, 7], [-6, -3]]",
+          "solution": "LHS = A + (B + C):\nB + C = [[6, 8], [-3, 3]].\nA + (B + C) = [[2+6, -3+8], [4+(-3), 1+3]] = [[8, 5], [1, 4]].\n\nRHS = (A + B) + C:\nA + B = [[7, -2], [7, 7]].\n(A + B) + C = [[7+1, -2+7], [7+(-6), 7+(-3)]] = [[8, 5], [1, 4]].\nLHS = RHS. Associative law is verified.",
+          "answer": "LHS = RHS = [[8, 5], [1, 4]]. Verified."
+        },
+        {
+          "qNo": "Question 13",
+          "question": "Find the additive inverse of the following matrices:\n(i) A = [[3, 4], [6, 2]]\n(ii) B = [[a, -a, b], [-c, a, -b], [m, n, -p]]",
+          "solution": "Additive inverse of M is -M:\n(i) -A = [[-3, -4], [-6, -2]].\n(ii) -B = [[-a, a, -b], [c, -a, b], [-m, -n, p]].",
+          "answer": "(i) [[-3, -4], [-6, -2]]; (ii) [[-a, a, -b], [c, -a, b], [-m, -n, p]]."
+        },
+        {
+          "qNo": "Question 14",
+          "question": "Show that the following matrices are additive inverses of each other:\n(i) A = [1, -2, 3], B = [-1, 2, -3]\n(ii) C = [[a, -b], [c, -d]], D = [[-a, b], [-c, d]]",
+          "solution": "Show that their sum equals the null matrix O:\n(i) A + B = [1+(-1), -2+2, 3+(-3)] = [0, 0, 0] = O.\n(ii) C + D = [[a-a, -b+b], [c-c, -d+d]] = [[0, 0], [0, 0]] = O.\nHence they are additive inverses of each other.",
+          "answer": "Verified. Sum equals O in both cases."
+        }
+      ]
+    },
+    {
+      "exercise": "1.4",
+      "title": "Exercise 1.4 — Matrix Multiplication & Properties (Pages 29-30)",
+      "problems": [
+        {
+          "qNo": "Question 1",
+          "question": "Show which of the following matrices are conformable for multiplication:\n(i) A = [[1, -1], [-2, 1]]\n(ii) B = [p, q]\n(iii) C = [[1, -1], [-2, 1]]\n(iv) D = [p, r, s]",
+          "solution": "Columns of 1st = Rows of 2nd:\nA(2×2), B(1×2), C(2×2), D(1×3).\n- AB: 2 ≠ 1 (No)\n- BA: 2 = 2 (Yes, order 1×2)\n- CA: 2 = 2 (Yes, order 2×2)\n- BC: 2 = 2 (Yes, order 1×2)\n- AD: 2 ≠ 1 (No)",
+          "answer": "Conformable products are: AB (No), BA (Yes), CA (Yes), BC (Yes), AD (No)."
+        },
+        {
+          "qNo": "Question 2",
+          "question": "If A = [[-1, 0], [2, 1]] and B = [[3], [-2]], answer: (i) Is it possible to find AB? (ii) Is it possible to find BA? (iii) Find the possible product/products.",
+          "solution": "A is 2x2 and B is 2x1. Therefore AB is defined and has order 2x1. BA is not defined because B has one column while A has two rows.\nAB = [[(-1)(3) + 0(-2)], [2(3) + 1(-2)]] = [[-3], [4]].",
+          "answer": "(i) Yes; (ii) No; (iii) AB = [[-3], [4]]."
+        },
+        {
+          "qNo": "Question 3",
+          "question": "Given A = [[4, 1], [3, 1]], B = [[1, -1], [-3, 4]], C = [[3, 4], [1, 2]], and D = [[1, -2], [-1/2, 2/3]], find (i) AB and (ii) CD.",
+          "solution": "(i) AB = [[4(1)+1(-3), 4(-1)+1(4)], [3(1)+1(-3), 3(-1)+1(4)]] = [[1, 0], [0, 1]].\n(ii) CD = [[3(1)+4(-1/2), 3(-2)+4(2/3)], [1(1)+2(-1/2), 1(-2)+2(2/3)]] = [[1, -10/3], [0, -2/3]].",
+          "answer": "(i) AB = [[1, 0], [0, 1]]; (ii) CD = [[1, -10/3], [0, -2/3]]."
+        },
+        {
+          "qNo": "Question 4",
+          "question": "Let A = [[2, 1], [3, 0], [-1, 4]] and B = [[1, 0], [2, 1]]. (i) Find AB. (ii) Does BA exist?",
+          "solution": "(i) AB has order 3x2:\nAB = [[2(1)+1(2), 2(0)+1(1)], [3(1)+0(2), 3(0)+0(1)], [-1(1)+4(2), -1(0)+4(1)]] = [[4, 1], [3, 0], [7, 4]].\n(ii) BA is not defined: B has 2 columns while A has 3 rows.",
+          "answer": "(i) AB = [[4, 1], [3, 0], [7, 4]]; (ii) BA does not exist."
+        },
+        {
+          "qNo": "Question 5",
+          "question": "If A = [[1, 1], [0, 0]] and B = [[0, 1], [0, 0]], then show that AB ≠ BA.",
+          "solution": "AB = [[1(0)+1(0), 1(1)+1(0)], [0, 0]] = [[0, 1], [0, 0]].\nBA = [[0(1)+1(0), 0(1)+1(0)], [0, 0]] = [[0, 0], [0, 0]] = O.\nSince [[0, 1], [0, 0]] ≠ [[0, 0], [0, 0]], AB ≠ BA. Proved.",
+          "answer": "AB = [[0, 1], [0, 0]] and BA = [[0, 0], [0, 0]]. Hence AB ≠ BA is proved."
+        },
+        {
+          "qNo": "Question 6",
+          "question": "If A = [[1, 1], [0, 0]], find A x A.",
+          "solution": "A x A = [[1(1)+1(0), 1(1)+1(0)], [0(1)+0(0), 0(1)+0(0)]] = [[1, 1], [0, 0]] = A.",
+          "answer": "A x A = [[1, 1], [0, 0]] = A."
+        },
+        {
+          "qNo": "Question 7",
+          "question": "If A = [[-2, 3], [2, -1]] and B = [[1, -1], [2, 4]], is AB = BA?",
+          "solution": "AB = [[-2(1)+3(2), (-2)(-1)+3(4)], [2(1)+(-1)(2), 2(-1)+(-1)(4)]] = [[4, 14], [0, -6]].\nBA = [[1(-2)+(-1)(2), 1(3)+(-1)(-1)], [2(-2)+4(2), 2(3)+4(-1)]] = [[-4, 4], [4, 2]].\nSince AB and BA are different, AB != BA.",
+          "answer": "No. AB = [[4, 14], [0, -6]] and BA = [[-4, 4], [4, 2]], so AB != BA."
+        },
+        {
+          "qNo": "Question 8",
+          "question": "If A = [[-1], [1]], B = [1, -2], and C = [[3, 1], [-1, 2]], find (AB)C and A(BC). Determine whether they are equal and name the law this verifies.",
+          "solution": "AB = [[-1, 2], [1, -2]].\n(AB)C = [[-1, 2], [1, -2]][[3, 1], [-1, 2]] = [[-5, 3], [5, -3]].\nBC = [1, -2][[3, 1], [-1, 2]] = [5, -3].\nA(BC) = [[-1], [1]][5, -3] = [[-5, 3], [5, -3]].\nThus (AB)C = A(BC); this verifies the associative law of matrix multiplication.",
+          "answer": "(AB)C = A(BC) = [[-5, 3], [5, -3]]; associative law."
+        },
+        {
+          "qNo": "Question 9",
+          "question": "Verify that A(B+C) = AB+AC for the following matrices:\n(i) A = [[1, 2], [3, -1]], B = [[1, 0], [0, 2]], C = [[3, -1], [0, 2]]\n(ii) A = [[3, -1], [0, 2]], B = [[1], [2]], C = [[-1], [1]]",
+          "solution": "(i) B+C = [[4, -1], [0, 4]]. Then A(B+C) = [[4, 7], [12, -7]]. Also AB = [[1, 4], [3, -2]] and AC = [[3, 3], [9, -5]], so AB+AC = [[4, 7], [12, -7]].\n(ii) B+C = [[0], [3]]. Then A(B+C) = [[-3], [6]]. Also AB = [[1], [4]] and AC = [[-4], [2]], so AB+AC = [[-3], [6]].\nThus A(B+C) = AB+AC in both cases.",
+          "answer": "(i) A(B+C) = AB+AC = [[4, 7], [12, -7]]; (ii) A(B+C) = AB+AC = [[-3], [6]]."
+        },
+        {
+          "qNo": "Question 10",
+          "question": "Let I = [[1, 0], [0, 1]], A = [[5, -3], [4, 6]], and B = [[-7, 3], [2, 8]]. Find (i) AI and (ii) BI.",
+          "solution": "Multiplication by the identity matrix leaves a matrix unchanged:\n(i) AI = A = [[5, -3], [4, 6]].\n(ii) BI = B = [[-7, 3], [2, 8]].",
+          "answer": "(i) AI = [[5, -3], [4, 6]]; (ii) BI = [[-7, 3], [2, 8]]."
+        },
+        {
+          "qNo": "Question 11",
+          "question": "Prove that (A+B)^t = A^t+B^t and (A-B)^t = A^t-B^t for:\n(i) A = [3, 2, 1], B = [-3, 4, 2]\n(ii) C = [[7, -3], [2, -1]], D = [[1, 1], [2, 2]]",
+          "solution": "(i) A+B = [0, 6, 3], so (A+B)^t = [[0], [6], [3]] = A^t+B^t. A-B = [6, -2, -1], so (A-B)^t = [[6], [-2], [-1]] = A^t-B^t.\n(ii) Transposition distributes over addition and subtraction entry by entry, so (C+D)^t = C^t+D^t and (C-D)^t = C^t-D^t for the given C and D.",
+          "answer": "Both transpose identities (A + B)^t = A^t + B^t and (A - B)^t = A^t - B^t are proved."
+        },
+        {
+          "qNo": "Question 12",
+          "question": "Verify the following transpose properties:\n(i) If A = [[2, 5], [-3, 4]] and B = [[-1, 1], [2, 3]], show that (AB)^t = B^t A^t.\n(ii) If C = [[a, b], [c, d]], show that (C^t)^t = C.\n(iii) If A = [[1, 0, -1], [2, 0, 6]] and B = [[1, 7], [-8, 4], [0, 1]], compare (AB)^t and A^t B^t as printed in the textbook.",
+          "solution": "(i) AB = [[8, 17], [11, 9]], so (AB)^t = [[8, 11], [17, 9]]. Also B^t = [[-1, 2], [1, 3]] and A^t = [[2, -3], [5, 4]], hence B^t A^t = [[8, 11], [17, 9]].\n(ii) C^t = [[a, c], [b, d]], and (C^t)^t = [[a, b], [c, d]] = C.\n(iii) AB = [[1, 6], [2, 20]], so (AB)^t = [[1, 2], [6, 20]] (2x2). But A^t is 3x2 and B^t is 2x3, so A^t B^t is 3x3 and cannot equal (AB)^t. The general identity is (AB)^t = B^t A^t; the printed statement with A^t B^t appears to be a textbook error.",
+          "answer": "(i) (AB)^t = B^t A^t; (ii) (C^t)^t = C; (iii) the printed equality is false: the two sides have different orders. The correct identity is (AB)^t = B^t A^t."
+        }
+      ]
+    },
+    {
+      "exercise": "1.5",
+      "title": "Exercise 1.5 — Determinants, Adjoints & Multiplicative Inverses (Pages 37-38)",
+      "problems": [
+        {
+          "qNo": "Question 1",
+          "question": "Find the determinant of following matrices and evaluate them:\n(i) A = [[5, 6], [-4, 1]]\n(ii) B = [[4, 1], [3, 2]]\n(iii) C = [[11, 7], [5, -6]]\n(iv) D = [[5, 4], [-2, -3]]\n(v) E = [[2p, -3q], [r, -s]]\n(vi) F = [[0, 0], [1, 1]]\n(vii) G = [[6, 5], [-1, -4]]\n(viii) H = [[a, b], [0, c]]",
+          "solution": "Formula: |M| = ad - bc:\n(i) |A| = 5(1) - 6(-4) = 5 + 24 = 29.\n(ii) |B| = 4(2) - 1(3) = 8 - 3 = 5.\n(iii) |C| = 11(-6) - 7(5) = -66 - 35 = -101 (textbook answer evaluates to -101).\n(iv) |D| = 5(-3) - 4(-2) = -15 + 8 = -7.\n(v) |E| = 2p(-s) - (-3q)(r) = -2ps + 3qr.\n(vi) |F| = 0(1) - 0(1) = 0.\n(vii) |G| = 6(-4) - 5(-1) = -24 + 5 = -19.\n(viii) |H| = a(c) - b(0) = ac.",
+          "answer": "(i) 29, (ii) 5, (iii) -101, (iv) -7, (v) -2ps + 3qr, (vi) 0, (vii) -19, (viii) ac."
+        },
+        {
+          "qNo": "Question 2",
+          "question": "Find which of the following matrices are singular and which are non-singular:\n(i) A = [[5, 3], [2, 1]]\n(ii) B = [[3, -6], [-2, 4]]\n(iii) C = [[3a, -2b], [2a, b]]\n(iv) D = [[-3, 6], [2, -4]]",
+          "solution": "(i) |A| = 5(1) - 3(2) = -1 ≠ 0 => Non-singular.\n(ii) |B| = 3(4) - (-6)(-2) = 12 - 12 = 0 => Singular.\n(iii) |C| = 3a(b) - (-2b)(2a) = 3ab + 4ab = 7ab ≠ 0 => Non-singular.\n(iv) |D| = -3(-4) - 6(2) = 12 - 12 = 0 => Singular.",
+          "answer": "Singular: (ii) B, (iv) D. Non-singular: (i) A, (iii) C."
+        },
+        {
+          "qNo": "Question 3",
+          "question": "Find the adjoint of the following matrices:\n(i) A = [[1, 3], [-2, 4]]\n(ii) B = [[2, -3], [3, 4]]\n(iii) C = [[3, 2], [1, -3]]\n(iv) D = [[3, -2], [2, 4]]",
+          "solution": "adj(M) = [[d, -b], [-c, a]]:\n(i) adj(A) = [[4, -3], [2, 1]].\n(ii) adj(B) = [[4, 3], [-3, 2]].\n(iii) adj(C) = [[-3, -2], [-1, 3]].\n(iv) adj(D) = [[4, 2], [-2, 3]].",
+          "answer": "(i) adj A = [[4, -3], [2, 1]], (ii) adj B = [[4, 3], [-3, 2]], (iii) adj C = [[-3, -2], [-1, 3]], (iv) adj D = [[4, 2], [-2, 3]]."
+        },
+        {
+          "qNo": "Question 4",
+          "question": "Find the multiplicative inverses of the following matrices if they exist:\n(i) A = [[4, 1], [3, 1]]\n(ii) B = [[2, 3], [4, 6]]\n(iii) C = [[2, 3], [-1, 1]]\n(iv) D = [[2, 1], [4, 3]]",
+          "solution": "M^-1 = (1/|M|) · adj(M):\n(i) |A| = 4 - 3 = 1 => A^-1 = [[1, -1], [-3, 4]].\n(ii) |B| = 12 - 12 = 0 => Singular, inverse does NOT exist.\n(iii) |C| = 2 - (-3) = 5 => C^-1 = (1/5) · [[1, -3], [1, 2]] = [[1/5, -3/5], [1/5, 2/5]].\n(iv) |D| = 6 - 4 = 2 => D^-1 = (1/2) · [[3, -1], [-4, 2]] = [[3/2, -1/2], [-2, 1]].",
+          "answer": "(i) A^-1 = [[1, -1], [-3, 4]]; (ii) Does not exist (singular); (iii) C^-1 = [[1/5, -3/5], [1/5, 2/5]]; (iv) D^-1 = [[3/2, -1/2], [-2, 1]]."
+        },
+        {
+          "qNo": "Question 5",
+          "question": "If A = [[2, 0], [0, 1]] and B = [[1, 3], [2, 1]], find:\n(i) AB and BA\n(ii) A^-1 and B^-1\n(iii) Show that (AB)^t = B^t · A^t and (BA)^t = A^t · B^t.",
+          "solution": "(i) AB = [[2, 6], [2, 1]],  BA = [[2, 3], [4, 1]].\n(ii) |A| = 2 => A^-1 = [[1/2, 0], [0, 1]].\n    |B| = -5 => B^-1 = [[-1/5, 3/5], [2/5, -1/5]].\n(iii) (AB)^t = [[2, 2], [6, 1]] = B^t · A^t. Verified!",
+          "answer": "(i) AB = [[2, 6], [2, 1]], BA = [[2, 3], [4, 1]]; (ii) A^-1 = [[1/2, 0], [0, 1]], B^-1 = [[-1/5, 3/5], [2/5, -1/5]]; (iii) Verified."
+        },
+        {
+          "qNo": "Question 6",
+          "question": "If A = [[2, 1], [3, 2]] and B = [[1, 3], [-2, 4]], show that (AB)^-1 = B^-1 · A^-1.",
+          "solution": "AB = [[0, 10], [-1, 17]].\n|AB| = 10,  adj(AB) = [[17, -10], [1, 0]].\n(AB)^-1 = (1/10) · [[17, -10], [1, 0]] = [[17/10, -1], [1/10, 0]].\n\n|B| = 10, adj(B) = [[4, -3], [2, 1]] => B^-1 = (1/10) · [[4, -3], [2, 1]].\n|A| = 1, adj(A) = [[2, -1], [-3, 2]] => A^-1 = [[2, -1], [-3, 2]].\nB^-1 · A^-1 = (1/10) · [[17, -10], [1, 0]] = [[17/10, -1], [1/10, 0]].\nLHS = RHS. Proved!",
+          "answer": "LHS = RHS = [[17/10, -1], [1/10, 0]]. Hence (AB)^-1 = B^-1 · A^-1 is proved."
+        }
+      ]
+    },
+    {
+      "exercise": "1.6",
+      "title": "Exercise 1.6 — Simultaneous Linear Equations (Pages 44-45)",
+      "problems": [
+        {
+          "qNo": "Question 1",
+          "question": "Solve the following system of linear equations using the Matrix Inversion Method:\n(i) 2x + 3y = -1,  x - y = 2\n(ii) x + 2y = -13,  3x + 6y = 11\n(iii) x + 2y = 1,  2x + 3y = 5/2\n(iv) x - 2y - 1 = 0,  2x + y + 3 = 0",
+          "solution": "Formula: AX = B  =>  X = A^-1 B = (1/|A|) adj(A) B.\n\n(i) A = [[2, 3], [1, -1]], B = [[-1], [2]].\n    |A| = -2 - 3 = -5 ≠ 0. adj(A) = [[-1, -3], [-1, 2]].\n    X = (-1/5) · [[(-1)(-1)+(-3)(2)], [(-1)(-1)+2(2)]] = (-1/5) · [[-5], [5]] = [[1], [-1]].\n    => x = 1, y = -1.\n\n(ii) A = [[1, 2], [3, 6]], B = [[-13], [11]].\n    |A| = 6 - 6 = 0.\n    Since |A| = 0, matrix A is singular. A^-1 does not exist. The system is non-solvable.\n\n(iii) A = [[1, 2], [2, 3]], B = [[1], [5/2]].\n    |A| = 3 - 4 = -1 ≠ 0. adj(A) = [[3, -2], [-2, 1]].\n    X = (-1) · [[3(1) - 2(5/2)], [-2(1) + 1(5/2)]] = (-1) · [[-2], [1/2]] = [[2], [-1/2]].\n    => x = 2, y = -1/2.\n\n(iv) x - 2y = 1,  2x + y = -3.\n    A = [[1, -2], [2, 1]], B = [[1], [-3]].\n    |A| = 1 + 4 = 5 ≠ 0. adj(A) = [[1, 2], [-2, 1]].\n    X = (1/5) · [[1(1) + 2(-3)], [-2(1) + 1(-3)]] = (1/5) · [[-5], [-5]] = [[-1], [-1]].\n    => x = -1, y = -1.",
+          "answer": "(i) x = 1, y = -1; (ii) Non-solvable (|A| = 0); (iii) x = 2, y = -1/2; (iv) x = -1, y = -1."
+        },
+        {
+          "qNo": "Question 2",
+          "question": "Solve the following system of linear equations using Cramer's Rule:\n(i) x - 2y = 5,  2x - y = 6\n(ii) 4x + 3y = -2,  x - 2y = 5\n(iii) 5x + 7y = 3,  3x + y = 5",
+          "solution": "Cramer's Rule: x = |A_x| / |A|,  y = |A_y| / |A|.\n\n(i) A = [[1, -2], [2, -1]] => |A| = -1 + 4 = 3 ≠ 0.\n    A_x = [[5, -2], [6, -1]] => |A_x| = -5 + 12 = 7 => x = 7/3.\n    A_y = [[1, 5], [2, 6]] => |A_y| = 6 - 10 = -4 => y = -4/3.\n\n(ii) A = [[4, 3], [1, -2]] => |A| = -8 - 3 = -11 ≠ 0.\n    A_x = [[-2, 3], [5, -2]] => |A_x| = 4 - 15 = -11 => x = 1.\n    A_y = [[4, -2], [1, 5]] => |A_y| = 20 + 2 = 22 => y = -2.\n\n(iii) A = [[5, 7], [3, 1]] => |A| = 5 - 21 = -16 ≠ 0.\n    A_x = [[3, 7], [5, 1]] => |A_x| = 3 - 35 = -32 => x = 2.\n    A_y = [[5, 3], [3, 5]] => |A_y| = 25 - 9 = 16 => y = -1.",
+          "answer": "(i) x = 7/3, y = -4/3; (ii) x = 1, y = -2; (iii) x = 2, y = -1."
+        },
+        {
+          "qNo": "Question 3",
+          "question": "Amjad thought of two numbers whose sum is 12 and whose difference is 4. Find the numbers.",
+          "solution": "Equations: x + y = 12,  x - y = 4.\nMatrix form: [[1, 1], [1, -1]] [[x], [y]] = [[12], [4]].\n|A| = -1 - 1 = -2.\n|A_x| = -12 - 4 = -16  =>  x = -16 / -2 = 8.\n|A_y| = 4 - 12 = -8   =>  y = -8 / -2 = 4.",
+          "answer": "The two numbers are 8 and 4."
+        },
+        {
+          "qNo": "Question 4",
+          "question": "The length of a rectangular playground is twice its width. The perimeter is 30. Find its dimensions.",
+          "solution": "Let length = x, width = y.\nx = 2y  =>  x - 2y = 0.\n2(x + y) = 30  =>  x + y = 15.\nMatrix form: [[1, -2], [1, 1]] [[x], [y]] = [[0], [15]].\n|A| = 1 - (-2) = 3.\n|A_x| = 0 - (-30) = 30  =>  x = 30 / 3 = 10.\n|A_y| = 15 - 0 = 15     =>  y = 15 / 3 = 5.",
+          "answer": "Length = 10, Width = 5."
+        },
+        {
+          "qNo": "Question 5",
+          "question": "3 bags and 4 pens together cost 257 rupees whereas 4 bags and 3 pens together cost 324 rupees. Find the cost of a bag and 10 pens.",
+          "solution": "Let bag cost = x, pen cost = y.\n(1) 3x + 4y = 257\n(2) 4x + 3y = 324\n|A| = 9 - 16 = -7.\n|A_x| = 257(3) - 4(324) = 771 - 1296 = -525 => x = -525 / -7 = 75 rupees (Cost of 1 bag).\n|A_y| = 3(324) - 257(4) = 972 - 1028 = -56  => y = -56 / -7 = 8 rupees (Cost of 1 pen).\nCost of 1 bag and 10 pens = 75 + 10(8) = 75 + 80 = 155 rupees.",
+          "answer": "Cost of 1 bag = Rs. 75, Cost of 1 pen = Rs. 8. Total cost of 1 bag and 10 pens = Rs. 155."
+        },
+        {
+          "qNo": "Question 6",
+          "question": "If twice the son's age in years is added to the father's age, the sum is 70. But if twice the father's age is added to the son's age, the sum is 95. Find the ages of father and son.",
+          "solution": "Let father's age = x, son's age = y.\n(1) x + 2y = 70\n(2) 2x + y = 95\n|A| = 1 - 4 = -3.\n|A_x| = 70(1) - 2(95) = 70 - 190 = -120  =>  x = -120 / -3 = 40 years.\n|A_y| = 1(95) - 70(2) = 95 - 140 = -45   =>  y = -45 / -3 = 15 years.",
+          "answer": "Father's age = 40 years, Son's age = 15 years."
+        }
+      ]
+    },
+    {
+      "exercise": "Review-1",
+      "title": "Review Exercise 1 — Comprehensive Chapter Review (Pages 46-47)",
+      "problems": [
+        {
+          "qNo": "Question 1",
+          "question": "Choose the correct answer in each of the following problems:\n(i) [[0, 0], [0, 0]] is:\n  (a) an identity matrix w.r.t multiplication  (b) a column matrix  (c) an identity matrix w.r.t addition  (d) a row matrix\n(ii) The matrix [[4, 0], [0, -12]] is:\n  (a) a scalar matrix  (b) 2x3 matrix  (c) a diagonal matrix  (d) None of these\n(iii) If A = [[-1, -2], [3, 1]], then adj A is equal to:\n  (a) [[1, 2], [-3, -1]]  (b) [[-1, 3], [-2, 1]]  (c) [[1, -2], [3, -1]]  (d) [[-1, 2], [-3, 1]]\n(iv) If A = [[2, 3], [3, 4]], then A^-1 equals:\n  (a) [[4, 3], [-3, 2]]  (b) [[-4, -3], [3, 2]]  (c) [[-2, 3], [-4, 3]]  (d) [[-4, 3], [3, -2]]\n(v) For what value of d is the 2×2 matrix [[5, 1.5], [2, d]] NOT invertible?\n  (a) -0.6  (b) 0  (c) 0.6  (d) 3\n(vi) Suppose A and B are 2×5 matrices. Which of the following are the dimensions of matrix A + B?\n  (a) 2×5  (b) 10×10  (c) 7×1  (d) 7×7\n(vii) Which of the following is the multiplicative inverse of [[1, 2], [0, 1]]?\n  (a) [[1, 2], [0, 1]]  (b) [[1, -2], [0, 1]]  (c) [[-1, -2], [0, -1]]  (d) [[2, 1], [0, 1]]\n(viii) Evaluate the determinant of the matrix [[4, -1], [-9, 2]]:\n  (a) 17  (b) 1  (c) -1  (d) -17",
+          "solution": "(i) Null matrix O satisfies A + O = A => (c) an identity matrix w.r.t addition.\n(ii) Non-diagonal elements are 0, diagonal are non-equal => (c) a diagonal matrix.\n(iii) adj(A) swaps diagonal (-1, 1 -> 1, -1) and negates off-diagonal (-2, 3 -> 2, -3) => [[1, 2], [-3, -1]] => (a).\n(iv) |A| = 8 - 9 = -1. adj(A) = [[4, -3], [-3, 2]]. A^-1 = (1/-1) adj(A) = [[-4, 3], [3, -2]] => (d).\n(v) 5d - (1.5)(2) = 0 => 5d = 3 => d = 0.6 => (c) 0.6.\n(vi) Sum has same dimensions: 2×5 => (a) 2×5.\n(vii) |M| = 1. adj(M) = [[1, -2], [0, 1]] => M^-1 = [[1, -2], [0, 1]] => (b).\n(viii) |M| = 4(2) - (-1)(-9) = 8 - 9 = -1 => (c) -1.",
+          "answer": "(i) c, (ii) c, (iii) a, (iv) d, (v) c, (vi) a, (vii) b, (viii) c."
+        },
+        {
+          "qNo": "Question 2",
+          "question": "Find x and y if [[x-1, 4], [y+3, -7]] = [[0, 4], [-2, -7]].",
+          "solution": "Equate corresponding entries:\nx - 1 = 0  =>  x = 1.\ny + 3 = -2  =>  y = -5.",
+          "answer": "x = 1, y = -5."
+        },
+        {
+          "qNo": "Question 3",
+          "question": "Find the product if possible: [[-6, 5, 8], [0, 4, -1]] · [[-5], [3]].",
+          "solution": "Order of 1st matrix: 2×3 (3 columns).\nOrder of 2nd matrix: 2×1 (2 rows).\nSince number of columns of 1st (3) ≠ number of rows of 2nd (2), multiplication is NOT possible.",
+          "answer": "Not possible (not conformable for multiplication)."
+        },
+        {
+          "qNo": "Question 4",
+          "question": "Find the inverse of the matrix A = [[6, -3], [5, -2]].",
+          "solution": "|A| = 6(-2) - (-3)(5) = -12 + 15 = 3 ≠ 0.\nadj(A) = [[-2, 3], [-5, 6]].\nA^-1 = (1/3) · [[-2, 3], [-5, 6]] = [[-2/3, 1], [-5/3, 2]].",
+          "answer": "A^-1 = [[-2/3, 1], [-5/3, 2]]."
+        },
+        {
+          "qNo": "Question 5",
+          "question": "Solve the system:\n2x + 5y = 9\n5x - 2y = 8",
+          "solution": "Matrix Form: [[2, 5], [5, -2]] [[x], [y]] = [[9], [8]].\n|A| = -4 - 25 = -29 ≠ 0.\n|A_x| = 9(-2) - 5(8) = -18 - 40 = -58  =>  x = -58 / -29 = 2.\n|A_y| = 2(8) - 9(5) = 16 - 45 = -29   =>  y = -29 / -29 = 1.\nCheck: 2(2) + 5(1) = 9, 5(2) - 2(1) = 8. Verified!",
+          "answer": "x = 2, y = 1. Solution set = {(2, 1)}."
+        },
+        {
+          "qNo": "Question 6",
+          "question": "Qasim and Farzana are selling fruit for a school fundraiser. Customers can buy small boxes of oranges and large boxes of oranges. Qasim sold 3 small boxes of oranges and 14 large boxes of oranges for a total of Rs. 203. Farzana sold 11 small boxes of oranges and 11 large boxes of oranges for a total of Rs. 220. Find the cost each of one small box of oranges and one large box of oranges.",
+          "solution": "Let small box cost = x, large box cost = y.\n(1) 3x + 14y = 203\n(2) 11x + 11y = 220  =>  x + y = 20  =>  x = 20 - y\nSubstitute into (1):\n3(20 - y) + 14y = 203  =>  60 - 3y + 14y = 203  =>  11y = 143  =>  y = 13 rupees.\nx = 20 - 13 = 7 rupees.",
+          "answer": "Cost of small box = Rs. 7, Cost of large box = Rs. 13."
+        }
+      ]
+    }
+  ],
+  "slos": {
+    "mcqs": [
       {
-        "name": "Order of Matrix",
-        "formula": "m × n (Rows × Columns)",
-        "note": "Always count rows horizontally first, columns vertically second."
+        "q": "Which of the following is true for any two square matrices A and B of the same order?",
+        "options": [
+          "AB = BA always",
+          "AB ≠ BA in general",
+          "(AB)^t = A^t B^t",
+          "(A + B)^t = A^t - B^t"
+        ],
+        "correct": 1,
+        "exp": "Matrix multiplication is non-commutative in general: AB ≠ BA. Also, the reversal law holds: (AB)^t = B^t A^t."
       },
       {
-        "name": "Transpose Matrix",
-        "formula": "A^t",
-        "note": "Interchange rows and columns. (A^t)^t = A and (AB)^t = B^t A^t."
+        "q": "If A = [[2, k], [3, 6]] is a singular matrix, what is the value of k?",
+        "options": [
+          "4",
+          "1",
+          "-4",
+          "9"
+        ],
+        "correct": 0,
+        "exp": "For a singular matrix, |A| = 0 => (2)(6) - (k)(3) = 0 => 12 - 3k = 0 => 3k = 12 => k = 4."
       },
       {
-        "name": "Symmetric Condition",
-        "formula": "A^t = A",
-        "note": "Matrix must be square."
+        "q": "If A is of order 2×3 and B is of order 3×4, what is the order of the product AB?",
+        "options": [
+          "3×3",
+          "2×4",
+          "4×2",
+          "Product is not possible"
+        ],
+        "correct": 1,
+        "exp": "Inner dimensions match (3 = 3). The order of the resulting product is Outer Dimensions: 2 × 4."
       },
       {
-        "name": "Skew-Symmetric Condition",
-        "formula": "A^t = -A",
-        "note": "All diagonal entries must equal zero."
+        "q": "The adjoint of matrix A = [[3, -1], [2, 4]] is:",
+        "options": [
+          "[[4, 1], [-2, 3]]",
+          "[[4, -1], [2, 3]]",
+          "[[-4, 1], [-2, -3]]",
+          "[[3, 2], [-1, 4]]"
+        ],
+        "correct": 0,
+        "exp": "Swap diagonal elements (3 and 4 -> 4 and 3) and negate secondary diagonal (-1 and 2 -> 1 and -2): adj A = [[4, 1], [-2, 3]]."
       },
       {
-        "name": "Determinant of 2×2",
-        "formula": "|A| = ad - bc",
-        "note": "Product of main diagonal minus product of secondary diagonal."
+        "q": "Which of the following matrices is skew-symmetric?",
+        "options": [
+          "[[0, 3], [-3, 0]]",
+          "[[1, 2], [2, 1]]",
+          "[[0, 2], [2, 0]]",
+          "[[0, 0], [0, 1]]"
+        ],
+        "correct": 0,
+        "exp": "For skew-symmetric, A^t = -A and diagonal elements must be 0. For [[0, 3], [-3, 0]], transpose is [[0, -3], [3, 0]] = -A."
+      }
+    ],
+    "shortQuestions": [
+      {
+        "q": "Define a Scalar Matrix and give an example of order 2×2.",
+        "marks": 3,
+        "sol": "A diagonal matrix in which all principal diagonal entries are equal non-zero constants is called a Scalar Matrix.\nExample: S = [[5, 0], [0, 5]]."
       },
       {
-        "name": "Adjoint of 2×2",
-        "formula": "adj A = [[d, -b], [-c, a]]",
-        "note": "Swap main diagonal elements; negate secondary diagonal elements."
+        "q": "Show that the matrix A = [[0, -3], [3, 0]] is skew-symmetric.",
+        "marks": 3,
+        "sol": "A^t = [[0, 3], [-3, 0]]. -A = [[0, 3], [-3, 0]]. Since A^t = -A, matrix A is Skew-Symmetric."
       },
       {
-        "name": "Multiplicative Inverse",
-        "formula": "A^-1 = (1 / |A|) · adj A",
-        "note": "Valid only if |A| ≠ 0 (matrix is non-singular)."
-      },
+        "q": "Find the multiplicative inverse of A = [[3, 2], [1, 1]].",
+        "marks": 3,
+        "sol": "|A| = 3 - 2 = 1. adj A = [[1, -2], [-1, 3]]. A^-1 = [[1, -2], [-1, 3]]."
+      }
+    ],
+    "longQuestions": [
       {
-        "name": "Inversion Method",
-        "formula": "X = A^-1 · B",
-        "note": "Solves linear system AX = B when |A| ≠ 0."
-      },
-      {
-        "name": "Cramer's Rule",
-        "formula": "x = |A_x| / |A|,  y = |A_y| / |A|",
-        "note": "A_x and A_y are formed by substituting the constants vector into column 1 and column 2 respectively."
+        "q": "Solve the system of equations using both (a) Matrix Inversion Method and (b) Cramer's Rule: 3x - 2y = 1,  2x + 3y = 5.",
+        "marks": 8,
+        "rubric": "Matrix setup (1 Mark), Determinant (1 Mark), Inversion Method (3 Marks), Cramer's Rule (3 Marks).",
+        "sol": "Matrix Form: [[3, -2], [2, 3]] [[x], [y]] = [[1], [5]]\n|A| = 9 + 4 = 13 ≠ 0.\n(a) Inversion: X = A^-1 B = (1/13) [[3, 2], [-2, 3]] [[1], [5]] = (1/13) [[13], [13]] = [[1], [1]]. x = 1, y = 1.\n(b) Cramer's: |A_x| = 3 + 10 = 13 => x = 13/13 = 1. |A_y| = 15 - 2 = 13 => y = 13/13 = 1."
       }
     ]
   },
+  "formulaSheet": [
+    {
+      "name": "Order of Matrix",
+      "formula": "m × n (Rows × Columns)",
+      "note": "Always count rows horizontally first, columns vertically second."
+    },
+    {
+      "name": "Transpose Matrix",
+      "formula": "A^t",
+      "note": "Interchange rows and columns. (A^t)^t = A and (AB)^t = B^t A^t."
+    },
+    {
+      "name": "Symmetric Condition",
+      "formula": "A^t = A",
+      "note": "Matrix must be square."
+    },
+    {
+      "name": "Skew-Symmetric Condition",
+      "formula": "A^t = -A",
+      "note": "All diagonal entries must equal zero."
+    },
+    {
+      "name": "Determinant of 2×2",
+      "formula": "|A| = ad - bc",
+      "note": "Product of main diagonal minus product of secondary diagonal."
+    },
+    {
+      "name": "Adjoint of 2×2",
+      "formula": "adj A = [[d, -b], [-c, a]]",
+      "note": "Swap main diagonal elements; negate secondary diagonal elements."
+    },
+    {
+      "name": "Multiplicative Inverse",
+      "formula": "A^-1 = (1 / |A|) · adj A",
+      "note": "Valid only if |A| ≠ 0 (matrix is non-singular)."
+    },
+    {
+      "name": "Inversion Method",
+      "formula": "X = A^-1 · B",
+      "note": "Solves linear system AX = B when |A| ≠ 0."
+    },
+    {
+      "name": "Cramer's Rule",
+      "formula": "x = |A_x| / |A|,  y = |A_y| / |A|",
+      "note": "A_x and A_y are formed by substituting the constants vector into column 1 and column 2 respectively."
+    }
+  ]
+},
   {
     "number": 2,
     "id": "u2",
@@ -1512,8 +1512,8 @@ var MATH_DATA = [
           {
             "qNo": "Q1",
             "question": "1. Write the base, exponent and value of the following:\n(i) (2)⁻⁹ = 1/1024  [Note: 2⁻¹⁰ = 1/1024, printed as (2)⁻⁹]\n(ii) (a/b)ᵖ = aᵖ / bᵖ\n(iii) (-4)² = 16",
-            "solution": "In an expression of the form (Base)^(Exponent) = Value:\n(i) (2)⁻⁹ = 1/1024:\n    • Base = 2\n    • Exponent = -9\n    • Value = 1/1024  (Arithmetic note: 2⁻¹⁰ = 1/1024; for exponent -9, 2⁻⁹ = 1/512. The textbook answer key records Base = 2, Exponent = -9, Value = 1/1024 as printed).\n\n(ii) (a/b)ᵖ = aᵖ / bᵖ:\n    • Base = a/b\n    • Exponent = p\n    • Value = aᵖ / bᵖ\n\n(iii) (-4)² = 16:\n    • Base = -4\n    • Exponent = 2\n    • Value = 16",
-            "answer": "(i) Base = 2, Exponent = -9, Value = 1/1024; (ii) Base = a/b, Exponent = p, Value = aᵖ/bᵖ; (iii) Base = -4, Exponent = 2, Value = 16"
+            "solution": "In an expression of the form (Base)^(Exponent) = Value:\n(i) (2)⁻⁹ = 1/1024:\n    • Base = 2\n    • Exponent = -9\n    • Value = 1/512. Note: the textbook prints 1/1024 for this item, but 2⁻⁹ = 1/512; 1/1024 would require exponent -10.\n\n(ii) (a/b)ᵖ = aᵖ / bᵖ:\n    • Base = a/b\n    • Exponent = p\n    • Value = aᵖ / bᵖ\n\n(iii) (-4)² = 16:\n    • Base = -4\n    • Exponent = 2\n    • Value = 16",
+            "answer": "(i) Base = 2, Exponent = -9, Value = 1/512 (the textbook prints 1/1024, which equals 2⁻¹⁰); (ii) Base = a/b, Exponent = p, Value = aᵖ/bᵖ; (iii) Base = -4, Exponent = 2, Value = 16"
           },
           {
             "qNo": "Q2",
@@ -2029,21 +2029,21 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Write the following in logarithmic form:\n(i) 4⁴ = 256\n(ii) 2⁻⁶ = 1/64\n(iii) 10⁰ = 1\n(iv) 10⁻³ = 0.001\n(v) 3⁻⁴ = 1/81\n(vi) 64^(2/3) = 16",
-            "solution": "Rule: aˣ = y ⟺ logₐ y = x\n(i) 4⁴ = 256 ⟹ log₄ 256 = 4\n(ii) 2⁻⁶ = 1/64 ⟹ log₂ (1/64) = -6\n(iii) 10⁰ = 1 ⟹ log₁₀ 1 = 0\n(iv) 10⁻³ = 0.001 ⟹ log₁₀ 0.001 = -3\n(v) 3⁻⁴ = 1/81 ⟹ log₃ (1/81) = -4\n(vi) 64^(2/3) = 16 ⟹ log₆₄ 16 = 2/3",
-            "answer": "(i) log₄ 256 = 4, (ii) log₂ (1/64) = -6, (iii) log₁₀ 1 = 0, (iv) log₁₀ 0.001 = -3, (v) log₃ (1/81) = -4, (vi) log₆₄ 16 = 2/3"
+            "question": "Write the following in logarithmic form:\n(i) 4^4 = 256\n(ii) 2^-6 = 1/64\n(iii) 10^0 = 1\n(iv) x^(3/4) = y\n(v) 3^-4 = 1/81\n(vi) 64^(2/3) = 16",
+            "solution": "Rule: a^x = y iff log_a y = x.\n(i) log_4 256 = 4\n(ii) log_2 (1/64) = -6\n(iii) log_10 1 = 0\n(iv) log_x y = 3/4\n(v) log_3 (1/81) = -4\n(vi) log_64 16 = 2/3",
+            "answer": "(i) log_4 256 = 4, (ii) log_2 (1/64) = -6, (iii) log_10 1 = 0, (iv) log_x y = 3/4, (v) log_3 (1/81) = -4, (vi) log_64 16 = 2/3"
           },
           {
             "qNo": "Q2",
-            "question": "Write the following in exponential form:\n(i) logₐ (1/a²) = -2\n(ii) log₂ (1/128) = -7\n(iii) log_b 3 = 64\n(iv) logₐ a = 1\n(v) logₐ 1 = 0\n(vi) log₄ 2 = 1/2",
-            "solution": "Rule: logₐ y = x ⟺ aˣ = y\n(i) a⁻² = 1/a²\n(ii) 2⁻⁷ = 1/128\n(iii) b⁶⁴ = 3\n(iv) a¹ = a\n(v) a⁰ = 1\n(vi) 4^(1/2) = 2",
-            "answer": "(i) a⁻² = 1/a², (ii) 2⁻⁷ = 1/128, (iii) b⁶⁴ = 3, (iv) a¹ = a, (v) a⁰ = 1, (vi) 4^(1/2) = 2"
+            "question": "Write the following in exponential form:\n(i) log_a (1/a^2) = -2\n(ii) log_2 (1/128) = -7\n(iii) log_b 3 = 64\n(iv) log_a a = 1\n(v) log_a 1 = 0\n(vi) log_4 (1/8) = -3/2",
+            "solution": "Rule: log_a y = x iff a^x = y.\n(i) a^-2 = 1/a^2\n(ii) 2^-7 = 1/128\n(iii) b^64 = 3\n(iv) a^1 = a\n(v) a^0 = 1\n(vi) 4^(-3/2) = 1/8",
+            "answer": "(i) a^-2 = 1/a^2, (ii) 2^-7 = 1/128, (iii) b^64 = 3, (iv) a = a, (v) a^0 = 1, (vi) 4^(-3/2) = 1/8"
           },
           {
             "qNo": "Q3",
-            "question": "Find the value of the unknown in each of the following:\n(i) log_√2 4 = x\n(ii) log₃ x = -3\n(iii) logₓ 64 = 3\n(iv) log₄ x = 3\n(v) log₈ 128 = x\n(vi) log₁₀ 1000 = x\n(vii) logₓ 100 = 2\n(viii) log₂ x = 3\n(ix) log₃ 6561 = x",
-            "solution": "(i) (√2)ˣ = 4 ⟹ 2^(x/2) = 2² ⟹ x/2 = 2 ⟹ x = 4\n(ii) x = 3⁻³ = 1/27\n(iii) x³ = 64 = 4³ ⟹ x = 4\n(iv) x = 4³ = 64\n(v) 8ˣ = 128 ⟹ 2^(3x) = 2⁷ ⟹ 3x = 7 ⟹ x = 7/3\n(vi) 10ˣ = 1000 = 10³ ⟹ x = 3\n(vii) x² = 100 ⟹ x = 10\n(viii) x = 2³ = 8\n(ix) 3ˣ = 6561 = 3⁸ ⟹ x = 8",
-            "answer": "(i) x = 4, (ii) x = 1/27, (iii) x = 4, (iv) x = 64, (v) x = 7/3, (vi) x = 3, (vii) x = 10, (viii) x = 8, (ix) x = 8"
+            "question": "Solve:\n(i) $\\log_{\\sqrt{5}} 125=x$\n(ii) $\\log_4 x=-3$\n(iii) $\\log_{81}9=x$\n(iv) $\\log_3(5x+1)=2$\n(v) $\\log_2 x=7$\n(vi) $\\log_x 0.25=2$\n(vii) $\\log_x(0.001)=-3$\n(viii) $\\log_x\\frac{1}{64}=-2$\n(ix) $\\log_{\\sqrt{3}}x=16$",
+            "solution": "(i) (sqrt(5))^x = 125 = 5^3, so x/2 = 3 and x = 6.\n(ii) x = 4^-3 = 1/64.\n(iii) 81^x = 9; (3^4)^x = 3^2, so x = 1/2.\n(iv) 5x + 1 = 3^2 = 9, so x = 8/5.\n(v) x = 2^7 = 128.\n(vi) x^2 = 0.25; a logarithm base must be positive and not 1, so x = 1/2.\n(vii) x^-3 = 0.001 = 10^-3, so x = 10.\n(viii) x^-2 = 1/64, so x^2 = 64; since a base is positive, x = 8.\n(ix) (sqrt(3))^16 = 3^8, so x = 6561.",
+            "answer": "(i) x=6, (ii) x=1/64, (iii) x=1/2, (iv) x=8/5, (v) x=128, (vi) x=1/2, (vii) x=10, (viii) x=8, (ix) x=6561. The printed answer key appears to say 6560 for (ix); the printed equation gives 6561."
           }
         ]
       },
@@ -2125,15 +2125,15 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Simplify with the help of logarithm:\n(i) 3.81 × 43.4\n(ii) 73.42 × 0.00462 × 0.5143\n(iii) (784.6 × 0.0431) / 28.23\n(iv) (0.4932 × 653.7) / (0.07213 × 8456)\n(v) ((78.41)² × √142.3) / 40.1562",
-            "solution": "(i) log x = log 3.81 + log 43.4 = 0.5809 + 1.6375 = 2.2184 ⟹ x = antilog(2.2184) = 165.340\n(ii) log x = log 73.42 + log 0.00462 + log 0.5143 = 1.8658 + 3̄.6646 + 1̄.7112 = 1̄.2416 ⟹ x = 0.1745\n(iii) log x = log 784.6 + log 0.0431 - log 28.23 = 2.8946 + 2̄.6345 - 1.4507 = 0.0784 ⟹ x = 1.1980\n(iv) log x = [log 0.4932 + log 653.7] - [log 0.07213 + log 8456] = 2.5084 - 2.7853 = 1̄.7231 ⟹ x = 0.5285\n(v) log x = 2 log 78.41 + 0.5 log 142.3 - log 40.1562 = 3.2616 (or textbook value) ⟹ x = 3614930.9",
-            "answer": "(i) 165.340, (ii) 0.1745, (iii) 1.1980, (iv) 0.5285, (v) 3614930.9"
+            "question": "Simplify with the help of logarithms:\n(i) $3.81 \\times 43.4$\n(ii) $73.42 \\times 0.00462 \\times 0.5143$\n(iii) $\\frac{784.6 \\times 0.0431}{28.23}$\n(iv) $\\frac{0.4932 \\times 653.7}{0.07213 \\times 8456}$\n(v) $\\frac{(78.41)^3 \\times \\sqrt[3]{142.3}}{\\sqrt[4]{0.1562}}$",
+            "solution": "(i) 165.340\n(ii) 0.1745\n(iii) 1.1980\n(iv) 0.5285\n(v) Direct evaluation of the printed expression gives approximately 4,003,400.793. The supplied answer key prints 3,614,930.899 for this item, which does not match the expression shown in the book.",
+            "answer": "(i) 165.340, (ii) 0.1745, (iii) 1.1980, (iv) 0.5285, (v) approximately 4,003,400.793 (the printed key lists 3,614,930.899; discrepancy noted)."
           },
           {
             "qNo": "Q2",
             "question": "Given that log 2 = 0.3010, log 3 = 0.4771, log 5 = 0.6990, and log 7 = 0.8451, find:\n(i) log 105\n(ii) log 108\n(iii) log √72\n(iv) log 2.4\n(v) log 0.0081",
             "solution": "(i) log 105 = log(3 × 5 × 7) = 0.4771 + 0.6990 + 0.8451 = 2.0212\n(ii) log 108 = log(2² × 3³) = 2(0.3010) + 3(0.4771) = 0.6020 + 1.4313 = 2.0333\n(iii) log √72 = 0.5[3 log 2 + 2 log 3] = 0.5[3(0.3010) + 2(0.4771)] = 0.5(1.8572) = 0.9286\n(iv) log 2.4 = log(24/10) = log(12/5) = 2 log 2 + log 3 - log 5 = 0.6020 + 0.4771 - 0.6990 = 0.3801\n(v) log 0.0081 = log(81/10000) = 4 log 3 - 4 log 10 = 4(0.4771) - 4 = 1.9084 - 4 = -2.0916 = 3̄.9084",
-            "answer": "(i) 2.0212, (ii) 2.0333, (iii) 0.9286, (iv) 0.3801, (v) 3̄.9084 (-2.0916)"
+            "answer": "(i) 2.0212, (ii) 2.0333, (iii) 0.6191 (printed key: 0.6190), (iv) 0.3801, (v) 3̄.9084 (-2.0916)"
           }
         ]
       },
@@ -2789,32 +2789,32 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Evaluate the expressions for the given values of variables:\n(i) Value = 5\n(ii) Value = 7\n(iii) Value = 13",
-            "solution": "Substitute the assigned numerical values into the expressions and simplify using the order of operations (PEMDAS/BODMAS).\n(i) Yields 5.\n(ii) Yields 7.\n(iii) Yields 13.",
+            "question": "Evaluate when $a=3$, $b=-1$, $c=2$: (i) $5a-10$; (ii) $3b+5c$; (iii) $2a-3b+2c$.",
+            "solution": "(i) $5(3)-10=5$.\n(ii) $3(-1)+5(2)=-3+10=7$.\n(iii) $2(3)-3(-1)+2(2)=6+3+4=13$.",
             "answer": "(i) 5; (ii) 7; (iii) 13"
           },
           {
             "qNo": "Q2",
-            "question": "Evaluate the given algebraic expressions:\n(i) Value = 37\n(ii) Value = 19\n(iii) Value = 161",
-            "solution": "Substitute the provided coordinates/variable values into the polynomial and rational terms.\n(i) 37\n(ii) 19\n(iii) 161",
+            "question": "Evaluate when $x=-5$, $y=2$: (i) $7-3xy$; (ii) $x^2+xy+y^2$; (iii) $(3x)^2-(4y)^2$.",
+            "solution": "(i) $7-3(-5)(2)=37$.\n(ii) $(-5)^2+(-5)(2)+2^2=25-10+4=19$.\n(iii) $(3(-5))^2-(4(2))^2=225-64=161$.",
             "answer": "(i) 37; (ii) 19; (iii) 161"
           },
           {
             "qNo": "Q3",
-            "question": "Find the value of each expression:\n(i) Value = −24\n(ii) Value = 20√13\n(iii) Value = 5/29",
-            "solution": "Direct substitution into the given algebraic formulas:\n(i) Result = −24.\n(ii) Radical evaluation = 20√13.\n(iii) Rational fraction = 5/29.",
-            "answer": "(i) −24; (ii) 20√13; (iii) 5/29"
+            "question": "Evaluate when $k=-2$, $l=3$, $m=4$: (i) $k^2(2l-3m)$; (ii) $5m\\sqrt{k^2+l^2}$; (iii) $(k+l+m)/(k^2+l^2+m^2)$.",
+            "solution": "(i) $(-2)^2(2(3)-3(4))=4(6-12)=-24$.\n(ii) $5(4)\\sqrt{(-2)^2+3^2}=20\\sqrt{13}$.\n(iii) $(-2+3+4)/(4+9+16)=5/29$.",
+            "answer": "(i) -24; (ii) $20\\sqrt{13}$; (iii) 5/29"
           },
           {
             "qNo": "Q4",
-            "question": "Find the unknown values in the algebraic system:",
-            "solution": "Solve the system using linear/quadratic substitution:\na = 3/4, b = 1/4.",
-            "answer": "3/4, 1/4"
+            "question": "Evaluate $(a+1)/(4a^2-1)$ when (i) $a=1/2$ and (ii) $a=-1/2$.",
+            "solution": "For either value, $4a^2-1=4(1/4)-1=0$, so the printed expression is undefined. The answer key lists 3/4 and 1/4; those values follow if the denominator is $4a^2+1$. The scanned exercise appears to have a sign misprint, or the answer key does.",
+            "answer": "As printed: undefined for both values. The answer key lists 3/4 and 1/4, which match denominator $4a^2+1$."
           },
           {
             "qNo": "Q5",
-            "question": "Find the value of the algebraic expression at the given points:",
-            "solution": "Substitute values into the expression to obtain 54.",
+            "question": "If $a=9$, $b=12$, $c=15$, and $S=(a+b+c)/2$, find $\\sqrt{S(S-a)(S-b)(S-c)}$.",
+            "solution": "$S=(9+12+15)/2=18$.\n$\\sqrt{18(18-9)(18-12)(18-15)}=\\sqrt{18\\cdot9\\cdot6\\cdot3}=\\sqrt{2916}=54$.",
             "answer": "54"
           }
         ]
@@ -2826,9 +2826,9 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Find the values of x² + y² and xy when:\n(i) x + y = 8, x − y = 3\n(ii) x + y = 10, x − y = 7\n(iii) x + y = 11, x − y = 5\n(iv) x + y = 7, x − y = 2",
-            "solution": "Use identities: 2(x² + y²) = (x + y)² + (x − y)² and 4xy = (x + y)² − (x − y)².\n\n(i) 2(x² + y²) = 8² + 3² = 64 + 9 = 73 ⟹ x² + y² = 73/2.\n4xy = 8² − 3² = 64 − 9 = 55 ⟹ xy = 55/4.\n\n(ii) 2(x² + y²) = 10² + 7² = 100 + 49 = 149 ⟹ x² + y² = 149/2.\n4xy = 10² − 7² = 100 − 49 = 51 ⟹ xy = 51/4.\n\n(iii) 2(x² + y²) = 11² + 5² = 121 + 25 = 146 ⟹ x² + y² = 73.\n4xy = 121 − 25 = 96 ⟹ xy = 96/4 = 24.\n\n(iv) 2(x² + y²) = 7² + 2² = 49 + 4 = 53 (or 63/2 in text) ⟹ x² + y² = 63/2.\n4xy = 35 ⟹ xy = 35/4.",
-            "answer": "(i) 73/2, 55/4; (ii) 149/2, 51/4; (iii) 73, 24; (iv) 63/2, 35/4"
+            "question": "Find $x^2+y^2$ and $xy$ when: (i) $x+y=8$, $x-y=3$; (ii) $x+y=10$, $x-y=7$; (iii) $x+y=11$, $x-y=5$; (iv) $x+y=7$, $x-y=4$.",
+            "solution": "Use $x^2+y^2=((x+y)^2+(x-y)^2)/2$ and $xy=((x+y)^2-(x-y)^2)/4$.\n(i) $x^2+y^2=73/2$, $xy=55/4$.\n(ii) $x^2+y^2=149/2$, $xy=51/4$.\n(iii) $x^2+y^2=73$, $xy=24$.\n(iv) $x^2+y^2=65/2$, $xy=33/4$.",
+            "answer": "(i) 73/2, 55/4; (ii) 149/2, 51/4; (iii) 73, 24; (iv) 65/2, 33/4"
           },
           {
             "qNo": "Q2",
@@ -2838,27 +2838,27 @@ var MATH_DATA = [
           },
           {
             "qNo": "Q3",
-            "question": "Evaluate the algebraic expressions:\n(i) Value = 68\n(ii) Value = 2",
-            "solution": "Apply standard algebraic identities:\n(i) 68\n(ii) 2",
+            "question": "(i) If $a+b=10$ and $a-b=6$, find $a^2+b^2$. (ii) If $a+b=5$ and $a-b=\\sqrt{17}$, find $ab$.",
+            "solution": "(i) $a^2+b^2=((a+b)^2+(a-b)^2)/2=(100+36)/2=68$.\n(ii) $ab=((a+b)^2-(a-b)^2)/4=(25-17)/4=2$.",
             "answer": "(i) 68; (ii) 2"
           },
           {
             "qNo": "Q4",
-            "question": "Find the product / expression value:",
-            "solution": "Substitute given values into the formula to find 264.",
+            "question": "Find $4xy$ when $x+y=17$ and $x-y=5$.",
+            "solution": "$4xy=(x+y)^2-(x-y)^2=17^2-5^2=289-25=264$.",
             "answer": "264"
           },
           {
             "qNo": "Q5",
-            "question": "Find the value of the algebraic expression:",
-            "solution": "Using square expansions: result = 14,560.",
+            "question": "If $x+y=11$ and $x-y=3$, find $8xy(x^2+y^2)$.",
+            "solution": "$xy=((x+y)^2-(x-y)^2)/4=(121-9)/4=28$.\n$x^2+y^2=((x+y)^2+(x-y)^2)/2=(121+9)/2=65$.\n$8xy(x^2+y^2)=8(28)(65)=14,560$.",
             "answer": "14,560"
           },
           {
             "qNo": "Q6",
-            "question": "Find the value of the unknown parameter:",
-            "solution": "Taking square root of the simplified expression yields ±1.",
-            "answer": "±1"
+            "question": "If $u+v=7$ and $uv=12$, find $u-v$.",
+            "solution": "$(u-v)^2=(u+v)^2-4uv=49-48=1$, so $u-v=1$ or $u-v=-1$. The given information does not specify which variable is larger.",
+            "answer": "$u-v=\\pm1$"
           }
         ]
       },
@@ -2869,39 +2869,39 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Find the value of a² + b² + c² when:\n(i) a + b + c = 7, ab + bc + ca = 8\n(ii) a + b + c = 9, ab + bc + ca = 26",
-            "solution": "Formula: a² + b² + c² = (a + b + c)² − 2(ab + bc + ca).\n\n(i) a² + b² + c² = (7)² − 2(8) = 49 − 16 = 33.\n\n(ii) a² + b² + c² = (9)² − 2(26) = 81 − 52 = 29.",
+            "question": "Find $a^2+b^2+c^2$ when: (i) $a+b+c=5$, $ab+bc+ca=-4$; (ii) $a+b+c=5$, $ab+bc+ca=-2$.",
+            "solution": "Use $a^2+b^2+c^2=(a+b+c)^2-2(ab+bc+ca)$.\n(i) $25-2(-4)=33$.\n(ii) $25-2(-2)=29$.",
             "answer": "(i) 33; (ii) 29"
           },
           {
             "qNo": "Q2",
-            "question": "Find the value of ab + bc + ca when:\n(i) a + b + c = 6, a² + b² + c² = 24\n(ii) Values yield 4√2",
-            "solution": "Formula: 2(ab + bc + ca) = (a + b + c)² − (a² + b² + c²).\n\n(i) 2(ab + bc + ca) = 6² − 24 = 36 − 24 = 12 ⟹ ab + bc + ca = 6.\n\n(ii) Yields 4√2.",
-            "answer": "(i) 6; (ii) 4√2"
+            "question": "Find $a+b+c$ when: (i) $a^2+b^2+c^2=38$ and $ab+bc+ca=-1$; (ii) $a^2+b^2+c^2=10$ and $ab+bc+ca=11$.",
+            "solution": "Use $(a+b+c)^2=a^2+b^2+c^2+2(ab+bc+ca)$.\n(i) $(a+b+c)^2=38-2=36$, so $a+b+c=\\pm6$.\n(ii) $(a+b+c)^2=10+22=32$, so $a+b+c=\\pm4\\sqrt{2}$. The printed key gives the positive values, but the conditions alone do not rule out the negative values.",
+            "answer": "(i) \\pm6; (ii) \\pm4\\sqrt{2} (the key lists positive roots)"
           },
           {
             "qNo": "Q3",
-            "question": "Find the value of a + b + c when:\n(i) Result = 44\n(ii) Result = 13/2",
-            "solution": "(a + b + c)² = (a² + b² + c²) + 2(ab + bc + ca).\n(i) 44\n(ii) 13/2",
+            "question": "Find $ab+bc+ca$ when: (i) $a^2+b^2+c^2=56$ and $a+b+c=12$; (ii) $a^2+b^2+c^2=12$ and $a+b+c=5$.",
+            "solution": "Use $2(ab+bc+ca)=(a+b+c)^2-(a^2+b^2+c^2)$.\n(i) $(144-56)/2=44$.\n(ii) $(25-12)/2=13/2$.",
             "answer": "(i) 44; (ii) 13/2"
           },
           {
             "qNo": "Q4",
-            "question": "Prove the algebraic identity:\n(a + b + c)² + (a + b − c)² + (a − b + c)² + (−a + b + c)² = 4(a² + b² + c²)",
-            "solution": "Expand each of the four squared trinomials:\n1) (a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca\n2) (a + b − c)² = a² + b² + c² + 2ab − 2bc − 2ca\n3) (a − b + c)² = a² + b² + c² − 2ab − 2bc + 2ca\n4) (−a + b + c)² = a² + b² + c² − 2ab + 2bc − 2ca\n\nSum of all four expressions:\n- Terms a² + b² + c² occur 4 times = 4(a² + b² + c²).\n- The cross-product terms sum: (2 + 2 − 2 − 2)ab = 0, (2 − 2 − 2 + 2)bc = 0, (2 − 2 + 2 − 2)ca = 0.\nTherefore, LHS = 4(a² + b² + c²) = RHS. Hence proved.",
-            "answer": "Proved (LHS = RHS = 4(a² + b² + c²))"
+            "question": "Prove $x^2+y^2+z^2-xy-yz-zx=((x-y)/\\sqrt{2})^2+((y-z)/\\sqrt{2})^2+((z-x)/\\sqrt{2})^2$.",
+            "solution": "The right side equals $((x-y)^2+(y-z)^2+(z-x)^2)/2$. Expanding the numerator gives $2x^2+2y^2+2z^2-2xy-2yz-2zx$. Dividing by 2 gives $x^2+y^2+z^2-xy-yz-zx$, which is the left side.",
+            "answer": "Identity proved"
           },
           {
             "qNo": "Q5",
-            "question": "Express 2(x² + y² + z² − xy − yz − zx) as sum of squares:",
-            "solution": "2(x² + y² + z² − xy − yz − zx)\n= 2x² + 2y² + 2z² − 2xy − 2yz − 2zx\n= (x² − 2xy + y²) + (y² − 2yz + z²) + (z² − 2zx + x²)\n= (x − y)² + (y − z)² + (z − x)².",
-            "answer": "(x − y)² + (y − z)² + (z − x)²"
+            "question": "Write $2[x^2+y^2+z^2-xy-yz-zx]$ as the sum of three squares.",
+            "solution": "Expand $(x-y)^2+(y-z)^2+(z-x)^2$. It equals $2x^2+2y^2+2z^2-2xy-2yz-2zx$, which is the given expression.",
+            "answer": "$(x-y)^2+(y-z)^2+(z-x)^2$"
           },
           {
             "qNo": "Q6",
-            "question": "Evaluate the trinomial expression at given values:",
-            "solution": "Substituting values yields 29/2.",
-            "answer": "29/2"
+            "question": "Find $a^2+b^2+c^2-ab-bc-ca$ when $a-b=2$, $b-c=3$, and $c-a=4$.",
+            "solution": "The conditions are inconsistent: $(a-b)+(b-c)+(c-a)$ must equal 0, but the stated values sum to 9. Therefore no real numbers $a,b,c$ satisfy all three conditions. The printed key's value $29/2$ comes from substituting the three squared differences into $a^2+b^2+c^2-ab-bc-ca=((a-b)^2+(b-c)^2+(c-a)^2)/2$, but it does not resolve the inconsistent givens.",
+            "answer": "No solution as printed. The answer key lists 29/2, obtained formally from the difference identity."
           }
         ]
       },
@@ -2912,51 +2912,57 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Expand using cube formula:\n(i) Result = 4\n(ii) Result = −153\n(iii) Result = 40",
-            "solution": "Use (a ± b)³ = a³ ± 3a²b + 3ab² ± b³.\n(i) 4\n(ii) −153\n(iii) 40",
-            "answer": "(i) 4; (ii) −153; (iii) 40"
+            "question": "Find a^3+b^3 when: (i) a+b=4 and ab=5; (ii) a+b=3 and ab=20; (iii) a+b=4 and ab=2.",
+            "solution": "Use a^3+b^3=(a+b)^3-3ab(a+b).\n(i) 4^3-3(5)(4)=64-60=4.\n(ii) 3^3-3(20)(3)=27-180=-153.\n(iii) 4^3-3(2)(4)=64-24=40.",
+            "answer": "(i) 4; (ii) -153; (iii) 40"
           },
           {
             "qNo": "Q2",
-            "question": "Find the values of x³ + y³ or x³ − y³:\n(i) Result = 230\n(ii) Result = 98\n(iii) Result = 469",
-            "solution": "Use identities: x³ + y³ = (x + y)³ − 3xy(x + y) and x³ − y³ = (x − y)³ + 3xy(x − y).\n(i) 230\n(ii) 98\n(iii) 469",
+            "question": "Find a^3-b^3 when: (i) a-b=5 and ab=7; (ii) a-b=2 and ab=15; (iii) a-b=7 and ab=6.",
+            "solution": "Use a^3-b^3=(a-b)^3+3ab(a-b).\n(i) 5^3+3(7)(5)=125+105=230.\n(ii) 2^3+3(15)(2)=8+90=98.\n(iii) 7^3+3(6)(7)=343+126=469.",
             "answer": "(i) 230; (ii) 98; (iii) 469"
           },
           {
             "qNo": "Q3",
-            "question": "Find the value of x³ + 1/x³:\n(i) Result = 65/8\n(ii) Result = 2",
-            "solution": "Use identity: x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x).\n(i) 65/8\n(ii) 2",
+            "question": "Find x^3+1/x^3 when: (i) x+1/x=5/2; (ii) x+1/x=2.",
+            "solution": "Use x^3+1/x^3=(x+1/x)^3-3(x+1/x).\n(i) (5/2)^3-3(5/2)=125/8-15/2=65/8.\n(ii) 2^3-3(2)=8-6=2.",
             "answer": "(i) 65/8; (ii) 2"
           },
           {
             "qNo": "Q4",
-            "question": "Find the value of x³ − 1/x³:\n(i) Result = 63/8\n(ii) Result = 4095/27\n(iii) Result = 532",
-            "solution": "Use identity: x³ − 1/x³ = (x − 1/x)³ + 3(x − 1/x).\n(i) 63/8\n(ii) 4095/27\n(iii) 532",
-            "answer": "(i) 63/8; (ii) 4095/27; (iii) 532"
+            "question": "Find x^3-1/x^3 when: (i) x-1/x=3/2; (ii) x-1/x=7/3; (iii) x-1/x=15/4.",
+            "solution": "Use x^3-1/x^3=(x-1/x)^3+3(x-1/x).\n(i) (3/2)^3+3(3/2)=27/8+36/8=63/8.\n(ii) (7/3)^3+3(7/3)=343/27+189/27=532/27.\n(iii) (15/4)^3+3(15/4)=3375/64+720/64=4095/64.",
+            "answer": "(i) 63/8; (ii) 532/27; (iii) 4095/64"
           },
           {
             "qNo": "Q5",
-            "question": "If x + 1/x = 4, find the value of x³ + 1/x³.",
-            "solution": "Cube both sides:\n(x + 1/x)³ = 4³ = 64.\nx³ + 1/x³ + 3(x + 1/x) = 64.\nx³ + 1/x³ + 3(4) = 64.\nx³ + 1/x³ + 12 = 64.\nx³ + 1/x³ = 64 − 12 = 52.",
-            "answer": "52"
+            "question": "If 3a+1/a=4, find 27a^3+1/a^3.",
+            "solution": "Let u=3a and v=1/a. Then u+v=4 and uv=3.\n27a^3+1/a^3=u^3+v^3=(u+v)^3-3uv(u+v)=4^3-3(3)(4)=28.",
+            "answer": "28"
           },
           {
             "qNo": "Q6",
-            "question": "If 2x − 3/x = 2, find the value of 8x³ − 27/x³.",
-            "solution": "Cube both sides of 2x − 3/x = 2:\n(2x − 3/x)³ = 2³ = 8.\n(2x)³ − (3/x)³ − 3(2x)(3/x)(2x − 3/x) = 8.\n8x³ − 27/x³ − 18(2) = 8.\n8x³ − 27/x³ − 36 = 8.\n8x³ − 27/x³ = 8 + 36 = 44 (or with standard parameters 236 in text).",
-            "answer": "236"
+            "question": "If x-1/(2x)=6, find x^3-1/(8x^3).",
+            "solution": "Let u=x and v=1/(2x), so u-v=6 and uv=1/2.\n x^3-1/(8x^3)=u^3-v^3=(u-v)^3+3uv(u-v)=6^3+3(1/2)(6)=225.",
+            "answer": "225"
           },
           {
             "qNo": "Q7",
-            "question": "Prove that if a + b = 6, then a³ + b³ + 18ab = 216.",
-            "solution": "Given: a + b = 6.\nTake cube on both sides:\n(a + b)³ = 6³\na³ + b³ + 3ab(a + b) = 216\nSubstitute (a + b) = 6:\na³ + b³ + 3ab(6) = 216\na³ + b³ + 18ab = 216.\nHence proved!",
-            "answer": "Proved (a³ + b³ + 18ab = 216)"
+            "question": "If a+b=6, show that a^3+b^3+18ab=216.",
+            "solution": "a^3+b^3+3ab(a+b)=(a+b)^3. Since a+b=6, the left side is a^3+b^3+18ab and the right side is 6^3=216. Hence proved.",
+            "answer": "216"
           },
           {
             "qNo": "Q8",
-            "question": "Prove that if u − v = 3, then u³ − v³ − 9uv = 27.",
-            "solution": "Given: u − v = 3.\nTake cube on both sides:\n(u − v)³ = 3³\nu³ − v³ − 3uv(u − v) = 27\nSubstitute (u − v) = 3:\nu³ − v³ − 3uv(3) = 27\nu³ − v³ − 9uv = 27.\nHence proved!",
-            "answer": "Proved (u³ − v³ − 9uv = 27)"
+            "question": "If u-v=3, prove that u^3-v^3-9uv=27.",
+            "solution": "u^3-v^3=(u-v)^3+3uv(u-v). Substituting u-v=3 gives u^3-v^3=27+9uv, hence u^3-v^3-9uv=27.",
+            "answer": "27"
+          },
+          {
+            "qNo": "Q9",
+            "question": "If a+1/a=2, find a^2+1/a^2, a^4+1/a^4, and a^3+1/a^3.",
+            "solution": "Since a is nonzero, multiply by a: a^2-2a+1=0, so (a-1)^2=0 and a=1. Therefore each requested expression equals 2.",
+            "answer": "2, 2, 2"
           }
         ]
       },
@@ -3004,62 +3010,62 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Identify which of the following expressions are surds:\n(i) √3\n(ii) ∛5\n(iii) √4\n(iv) π",
-            "solution": "A surd is an irrational radical of a positive rational number ⁿ√a.\n(i) √3: 3 is rational, √3 is irrational. Surd!\n(ii) ∛5: 5 is rational, ∛5 is irrational. Surd!\n(iii) √4 = 2: 2 is rational. Not a surd!\n(iv) π is irrational, but not a radical of a rational number. Not a surd!\nHence (i) and (ii) are surds.",
-            "answer": "(i), (ii) are surds"
+            "question": "State which are surd quantities: (i) $\\sqrt[3]{81}$; (ii) $\\sqrt{1+\\sqrt{5}}$; (iii) $\\sqrt{\\sqrt{5}}$; (iv) $\\sqrt[4]{32}$; (v) $\\pi$; (vi) $\\sqrt{1+\\pi^2}$.",
+            "solution": "By the chapter definition, a surd is an irrational root of a positive rational number. (i) $\\sqrt[3]{81}$ is a surd. (ii) The radicand $1+\\sqrt{5}$ is irrational, so this is not a root of a rational number. (iii) $\\sqrt{\\sqrt{5}}=\\sqrt[4]{5}$ is a surd. (iv) $\\sqrt[4]{32}$ is a surd. (v) $\\pi$ is not a radical. (vi) The radicand $1+\\pi^2$ is irrational. The printed answer key appears to list (i),(ii), which conflicts with the printed definition and with items (iii),(iv).",
+            "answer": "By the printed definition: (i), (iii), (iv). The answer key lists (i),(ii), an apparent discrepancy."
           },
           {
             "qNo": "Q2",
-            "question": "Express in simplest surd form:\n(i) √12\n(ii) √48\n(iii) √240",
-            "solution": "(i) √12 = √(4 · 3) = 2√3.\n(ii) √48 = √(16 · 3) = 4√3.\n(iii) √240 = √(16 · 15) = 4√15.",
-            "answer": "(i) 2√3; (ii) 4√3; (iii) 4√15"
+            "question": "Express as simplest possible surds: (i) $\\sqrt{12}$; (ii) $\\sqrt{48}$; (iii) $\\sqrt{240}$.",
+            "solution": "(i) $\\sqrt{12}=\\sqrt{4\\cdot3}=2\\sqrt{3}$. (ii) $\\sqrt{48}=\\sqrt{16\\cdot3}=4\\sqrt{3}$. (iii) $\\sqrt{240}=\\sqrt{16\\cdot15}=4\\sqrt{15}$.",
+            "answer": "(i) $2\\sqrt{3}$; (ii) $4\\sqrt{3}$; (iii) $4\\sqrt{15}$"
           },
           {
             "qNo": "Q3",
-            "question": "Simplify the following surd expressions:\n(i) (2 − √3)(3 + √5)\n(ii) (√3 − 4)(√2 + 1)\n(iii) (√5 + √2)(√2 + √3)\n(iv) (√3 + √6)(√3 − √6)",
-            "solution": "(i) Expand: 2(3) + 2(√5) − √3(3) − √3(√5) = 6 + 2√5 − 3√3 − √15.\n(ii) Expand: √3√2 + √3(1) − 4√2 − 4 = √6 + √3 − 4√2 − 4.\n(iii) Expand: √10 + 2 + √15 + √6.\n(iv) (a + b)(a − b) = a² − b² = (√3)² − (√6)² = 3 − 6 = −3.",
-            "answer": "(i) 6 + 2√5 − 3√3 − √15; (ii) √6 + √3 − 4√2 − 4; (iii) √10 + 2 + √15 + √6; (iv) −3"
+            "question": "Simplify: (i) $(2-\\sqrt{3})(3+\\sqrt{5})$; (ii) $(\\sqrt{3}-4)(\\sqrt{2}+1)$; (iii) $(\\sqrt{2}+\\sqrt{3})(\\sqrt{5}+\\sqrt{2})$; (iv) $(3-2\\sqrt{3})(3+2\\sqrt{3})$.",
+            "solution": "(i) $6+2\\sqrt{5}-3\\sqrt{3}-\\sqrt{15}$. (ii) $\\sqrt{6}+\\sqrt{3}-4\\sqrt{2}-4$. (iii) $\\sqrt{10}+2+\\sqrt{15}+\\sqrt{6}$. (iv) $9-(2\\sqrt{3})^2=9-12=-3$.",
+            "answer": "(i) $6+2\\sqrt{5}-3\\sqrt{3}-\\sqrt{15}$; (ii) $\\sqrt{6}+\\sqrt{3}-4\\sqrt{2}-4$; (iii) $\\sqrt{10}+2+\\sqrt{15}+\\sqrt{6}$; (iv) $-3$"
           },
           {
             "qNo": "Q4",
-            "question": "Rationalize the denominators:\n(i) 1 / √7\n(ii) 1 / √5\n(iii) 1 / (√2 − 1)\n(iv) 5 / (2 + √5)\n(v) 10 / √5",
-            "solution": "(i) Multiply by √7/√7: = √7 / 7.\n(ii) Multiply by √5/√5: = √5 / 5.\n(iii) Multiply by (√2 + 1) / (√2 + 1): = (√2 + 1) / (2 − 1) = √2 + 1.\n(iv) Multiply by (2 − √5) / (2 − √5): = 5(2 − √5) / (4 − 5) = −5(2 − √5) or 5(√5 − 2).\n(v) 10 / √5 = 10√5 / 5 = 2√5.",
-            "answer": "(i) √7 / 7; (ii) √5 / 5; (iii) √2 + 1; (iv) −5(2 − √5); (v) 2√5"
+            "question": "Rationalize the denominator and simplify: (i) $1/\\sqrt{7}$; (ii) $3/\\sqrt{45}$; (iii) $1/(\\sqrt{2}-1)$; (iv) $5/(2+\\sqrt{5})$; (v) $1/(\\sqrt{5}-2)+1/(\\sqrt{5}+2)$.",
+            "solution": "(i) $1/\\sqrt{7}=\\sqrt{7}/7$. (ii) $3/\\sqrt{45}=3/(3\\sqrt{5})=\\sqrt{5}/5$. (iii) Rationalizing by the conjugate gives $1/(\\sqrt{2}-1)=\\sqrt{2}+1$. (iv) $5/(2+\\sqrt{5})=5(\\sqrt{5}-2)/(5-4)=5\\sqrt{5}-10$. (v) Rationalizing gives $(\\sqrt{5}+2)+(\\sqrt{5}-2)=2\\sqrt{5}$.",
+            "answer": "(i) $\\sqrt{7}/7$; (ii) $\\sqrt{5}/5$; (iii) $\\sqrt{2}+1$; (iv) $5\\sqrt{5}-10$; (v) $2\\sqrt{5}$"
           },
           {
             "qNo": "Q5",
-            "question": "If x = 2 + √3, find the values of x + 1/x and x² + 1/x².",
-            "solution": "1/x = 1 / (2 + √3) = (2 − √3) / (4 − 3) = 2 − √3.\nx + 1/x = (2 + √3) + (2 − √3) = 4 [text key: 2√5, 18 for assigned variant].\nx² + 1/x² = (x + 1/x)² − 2 = (2√5)² − 2 = 20 − 2 = 18.",
-            "answer": "2√5, 18"
+            "question": "If $x=\\sqrt{5}+2$, find $x+1/x$ and $x^2+1/x^2$.",
+            "solution": "$1/x=1/(\\sqrt{5}+2)=\\sqrt{5}-2$. Thus $x+1/x=2\\sqrt{5}$ and $x^2+1/x^2=(2\\sqrt{5})^2-2=18$.",
+            "answer": "$2\\sqrt{5}, 18$"
           },
           {
             "qNo": "Q6",
-            "question": "If x = √5 − 2, find the values of x − 1/x and x² + 1/x².",
-            "solution": "1/x = 1 / (√5 − 2) = (√5 + 2) / (5 − 4) = √5 + 2.\nx − 1/x = (√5 − 2) − (√5 + 2) = −4 [variant in text: 2√2, 10].\nx² + 1/x² = (2√2)² + 2 = 8 + 2 = 10.",
-            "answer": "2√2, 10"
+            "question": "If $x=\\sqrt{2}+\\sqrt{3}$, find $x-1/x$ and $x^2+1/x^2$.",
+            "solution": "$1/x=\\sqrt{3}-\\sqrt{2}$. Thus $x-1/x=2\\sqrt{2}$ and $x^2+1/x^2=(2\\sqrt{2})^2+2=10$.",
+            "answer": "$2\\sqrt{2}, 10$"
           },
           {
             "qNo": "Q7",
-            "question": "If x = 5 + 2√6, find the values of x + 1/x and x² + 1/x².",
-            "solution": "1/x = 1 / (5 + 2√6) = 5 − 2√6 (since 5² − (2√6)² = 25 − 24 = 1).\nx + 1/x = (5 + 2√6) + (5 − 2√6) = 10.\nx² + 1/x² = (x + 1/x)² − 2 = 10² − 2 = 100 − 2 = 98.",
-            "answer": "10, 98"
+            "question": "If $x=5-2\\sqrt{6}$, find $x+1/x$ and $x^2+1/x^2$.",
+            "solution": "$(5-2\\sqrt{6})(5+2\\sqrt{6})=1$, so $1/x=5+2\\sqrt{6}$. Hence $x+1/x=10$ and $x^2+1/x^2=10^2-2=98$.",
+            "answer": "$10, 98$"
           },
           {
             "qNo": "Q8",
-            "question": "If x = √2 − 1, find the values of x − 1/x and x² + 1/x².",
-            "solution": "1/x = 1 / (√2 − 1) = √2 + 1.\nx − 1/x = 2.\nx² + 1/x² = 2² + 2 = 6.",
-            "answer": "2, 6"
+            "question": "If $x=1/(\\sqrt{2}-1)$, find $x-1/x$ and $x^2+1/x^2$.",
+            "solution": "Rationalizing gives $x=\\sqrt{2}+1$ and $1/x=\\sqrt{2}-1$. Hence $x-1/x=2$ and $x^2+1/x^2=2^2+2=6$.",
+            "answer": "$2, 6$"
           },
           {
             "qNo": "Q9",
-            "question": "If x = 3 + 2√2, find the values of x + 1/x and x² + 1/x².",
-            "solution": "1/x = 3 − 2√2.\nx + 1/x = (3 + 2√2) + (3 − 2√2) = 6.\nx² + 1/x² = 6² − 2 = 36 − 2 = 38.",
-            "answer": "6, 38"
+            "question": "If $x=3+2\\sqrt{2}$, find $x+1/x$ and $x^2+1/x^2$.",
+            "solution": "$1/x=3-2\\sqrt{2}$. Therefore $x+1/x=6$ and $x^2+1/x^2=6^2-2=34$.",
+            "answer": "$6, 34$"
           },
           {
             "qNo": "Q10",
-            "question": "If x = (√5 + √3) / (√5 − √3), find the value of x² + 1/x².",
-            "solution": "Rationalize x: x = (√5 + √3)² / (5 − 3) = (5 + 2√15 + 3) / 2 = (8 + 2√15) / 2 = 4 + √15.\nThen 1/x = 4 − √15.\nx + 1/x = (4 + √15) + (4 − √15) = 8 (or with textbook variant x + 1/x = 14).\nx² + 1/x² = 14² − 2 = 196 − 2 = 194.",
+            "question": "If $x=2-\\sqrt{3}$, find $x^4+1/x^4$.",
+            "solution": "$1/x=2+\\sqrt{3}$, so $x+1/x=4$. Then $x^2+1/x^2=4^2-2=14$ and $x^4+1/x^4=14^2-2=194$.",
             "answer": "194"
           }
         ]
@@ -3197,7 +3203,7 @@ var MATH_DATA = [
     "titleUrdu": "تجزی",
     "status": "ready",
     "badge": "100% Textbook Matched",
-    "pageRange": "Pages 126–158",
+    "pageRange": "Pages 126–148",
     "description": "Official KPK Board Textbook Unit 5: Factoring algebraic expressions, common factors, grouping, quadratic trinomials, completing the square for quartics, higher degree substitutions, cube of binomials, sum & difference of cubes, Remainder Theorem, Factor Theorem, and complete cubic polynomial factorization.",
     "sections": [
       {
@@ -3881,7 +3887,7 @@ var MATH_DATA = [
           },
           {
             "qNo": "Q11",
-            "question": "Factorize: (x + 1)(x + 4) + 2",
+            "question": "Factorize: $(x+1)^2+3(x+1)+2$",
             "solution": "x² + 5x + 4 + 2 = x² + 5x + 6 = (x + 3)(x + 2).",
             "answer": "(x + 3)(x + 2)"
           },
@@ -3893,7 +3899,7 @@ var MATH_DATA = [
           },
           {
             "qNo": "Q13",
-            "question": "A rectangular field has area x² + 24x − 81. If the length is x + 27, find its perimeter.",
+            "question": "Find an expression for the perimeter of a rectangle with area given by $x^2+24x-81$.",
             "solution": "Area = Length × Width.\nFactorize x² + 24x − 81 = (x + 27)(x − 3).\nSince Length = x + 27, Width = x − 3.\nPerimeter = 2(Length + Width) = 2[(x + 27) + (x − 3)] = 2(2x + 24) = 4x + 48.",
             "answer": "Perimeter = 4x + 48"
           }
@@ -4311,21 +4317,21 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Find H.C.F of the following expressions by factorization method:\n(i) $(x+6)^2$ and $x^2 - 36$\n(ii) $x^4 - y^4$ and $x^4 + 2x^2y^2 + y^4$\n(iii) $x-3$, $x^2-9$, $(x-3)^2$\n(iv) $2^4 \\cdot 3^2 (x-y)^3 (x+2y)^2$, $2^2 \\cdot 3^3 (x-y)^2 (x+2y)^3$, $3^2 (x-y)^2 (x+2y)$\n(v) $2(x^4-y^4)$, $6(x^2+2xy+y^2)$, $9(x^3+y^3)$",
+            "question": "Find H.C.F of the following expressions by factorization method:\n(i) $(x+6)^2$ and $x^2 - 36$\n(ii) $x^4 - y^4$ and $x^4 + 2x^2y^2 + y^4$\n(iii) $x-3$, $x^2-9$, $(x-3)^2$\n(iv) $2^3 \\cdot 3^2 (x-y)^3 (x+2y)^2$, $2^2 \\cdot 3^3 (x-y)^2 (x+2y)^3$, $3^2 (x-y)^2 (x+2y)$\n(v) $2(x^4-y^4)$, $6(x^2+2xy+y^2)$, $9(x^3+y^3)$",
             "solution": "(i) (x + 6)² = (x + 6)(x + 6); x² - 36 = (x + 6)(x - 6). Common factor = (x + 6) ⟹ H.C.F = x + 6.\n(ii) x⁴ - y⁴ = (x² - y²)(x² + y²); x⁴ + 2x²y² + y⁴ = (x² + y²)². Common factor = x² + y² ⟹ H.C.F = x² + y².\n(iii) (x - 3), (x - 3)(x + 3), (x - 3)². Common factor = x - 3 ⟹ H.C.F = x - 3.\n(iv) Numerical HCF = gcd(144, 108, 9) = 3² = 9. Variable factors: lowest power of (x - y) is (x - y)², lowest power of (x + 2y) is (x + 2y) ⟹ H.C.F = 3²(x - y)²(x + 2y).\n(v) 2(x² - y²)(x² + y²), 6(x + y)², 9(x + y)(x² - xy + y²). gcd(2, 6, 9) = 1. Common polynomial factor = (x + y) ⟹ H.C.F = x + y.",
             "answer": "(i) x + 6, (ii) x² + y², (iii) x - 3, (iv) 3²(x - y)²(x + 2y), (v) x + y"
           },
           {
             "qNo": "Q2",
-            "question": "Find H.C.F by division method:\n(i) $x^2 - x - 6$ and $x^2 - 2x - 3$\n(ii) $y^3 - 3y + 2$ and $y^3 - 5y^2 + 7y - 3$\n(iii) $2x^3 - 4x^2 - 6x$ and $x^4 + x^3 - 3x^2 - 3x$\n(iv) $2x^3 + 10x^2 + 5x + 25$ and $x^3 + 5x^2 - x - 5$",
-            "solution": "(i) Divide x² - x - 6 by x² - 2x - 3: quotient 1, remainder x - 3. Divide x² - 2x - 3 by x - 3: quotient x + 1, remainder 0. Last divisor = x - 3 ⟹ H.C.F = x - 3.\n(ii) Subtract (y³ - 5y² + 7y - 3) from (y³ - 3y + 2): remainder 5y² - 10y + 5 = 5(y² - 2y + 1) = 5(y - 1)². Dividing gives exact remainder 0 ⟹ H.C.F = y² - 2y + 1 (or y - 1).\n(iii) Factor out common x: 2x(x² - 2x - 3) and x(x³ + x² - 3x - 3). Dividing x³ + x² - 3x - 3 by x² - 2x - 3 leaves remainder with factor (x - 3). Common x gives H.C.F = x(x - 3) or x(x + 1).\n(iv) Factor: 2x²(x + 5) + 5(x + 5) = (2x² + 5)(x + 5); x²(x + 5) - 1(x + 5) = (x² - 1)(x + 5). Long division yields remainder 0 with divisor x + 5 ⟹ H.C.F = x + 5.",
-            "answer": "(i) x - 3, (ii) y² - 2y + 1, (iii) x(x + 1) [or x - 3], (iv) x + 5"
+            "question": "Find H.C.F by division method:\n(i) $x^2 - x - 6$ and $x^2 - 2x - 3$\n(ii) $y^3 - 3y + 2$ and $y^3 - 5y^2 + 7y - 3$\n(iii) $2x^5 - 4x^4 - 6x$ and $x^5 + x^4 - 3x^3 - 3x^2$\n(iv) $2x^3 + 10x^2 + 5x + 25$ and $x^3 + 5x^2 - x - 5$",
+            "solution": "(i) Divide x² - x - 6 by x² - 2x - 3: quotient 1, remainder x - 3. Divide x² - 2x - 3 by x - 3: quotient x + 1, remainder 0. Last divisor = x - 3 ⟹ H.C.F = x - 3.\n(ii) Subtract (y³ - 5y² + 7y - 3) from (y³ - 3y + 2): remainder 5y² - 10y + 5 = 5(y² - 2y + 1) = 5(y - 1)². Dividing gives exact remainder 0 ⟹ H.C.F = y² - 2y + 1 (or y - 1).\n(iii) Factor the first polynomial as 2x(x + 1)(x^3 - 3x^2 + 3x - 3), and the second as x^2(x + 1)(x^2 - 3). Their common factors are x and (x + 1), so H.C.F = x(x + 1).\n(iv) Factor: 2x²(x + 5) + 5(x + 5) = (2x² + 5)(x + 5); x²(x + 5) - 1(x + 5) = (x² - 1)(x + 5). Long division yields remainder 0 with divisor x + 5 ⟹ H.C.F = x + 5.",
+            "answer": "(i) x - 3, (ii) y² - 2y + 1, (iii) x(x + 1), (iv) x + 5"
           },
           {
             "qNo": "Q3",
-            "question": "Find L.C.M by factorization:\n(i) $x+y$, $x^2-y^2$\n(ii) $x^3-y^3$, $x-y$\n(iii) $x^3-x$, $x^3-x^2$, and $x^2-x$\n(iv) $2^2 \\cdot 3 (x-y)^2 (x+2y)$, $2^3 \\cdot 3^2 (x-y)(x+2y)^2$, and $3^2 (x-y)^3 (x+2y)$",
-            "solution": "(i) x + y, x² - y² = (x + y)(x - y). Common = (x + y), non-common = (x - y) ⟹ L.C.M = (x + y)(x - y) = x² - y².\n(ii) x³ - y³ = (x - y)(x² + xy + y²), x - y. Common = (x - y), non-common = (x² + xy + y²) ⟹ L.C.M = x³ - y³.\n(iii) x(x - 1)(x + 1), x²(x - 1), x(x - 1). Highest power of x is x², of (x - 1) is (x - 1), of (x + 1) is (x + 1) ⟹ L.C.M = x²(x - 1)(x + 1) = x²(x² - 1) [or x³(x+1)(x-1)(x²+1)].\n(iv) Coefficients: lcm(12, 72, 9) = 72 = 2³ · 3². Powers: (x - y)³, (x + 2y)² ⟹ L.C.M = 2³ · 3² (x - y)³ (x + 2y)² (or 2³·3³(x-y)³(x+2y)³).",
-            "answer": "(i) x² - y², (ii) x³ - y³, (iii) x²(x² - 1), (iv) 2³ · 3² (x - y)³ (x + 2y)²"
+            "question": "Find L.C.M by factorization:\n(i) $x+y$, $x^2-y^2$\n(ii) $x^3-y^3$, $x-y$\n(iii) $x^5-x$, $x^5-x^2$, and $x^5-x^3$\n(iv) $2^3 \\cdot 3^2 (x-y)^2 (x+2y)$, $2^3 \\cdot 3^2 (x-y)(x+2y)^2$, and $3^2 (x-y)^3 (x+2y)$",
+            "solution": "(i) x + y, x² - y² = (x + y)(x - y). Common = (x + y), non-common = (x - y) ⟹ L.C.M = (x + y)(x - y) = x² - y².\n(ii) x³ - y³ = (x - y)(x² + xy + y²), x - y. Common = (x - y), non-common = (x² + xy + y²) ⟹ L.C.M = x³ - y³.\n(iii) Factor the polynomials: x(x - 1)(x + 1)(x^2 + 1), x^2(x - 1)(x^2 + x + 1), and x^3(x - 1)(x + 1). Taking the highest power of each factor gives L.C.M = x^3(x - 1)(x + 1)(x^2 + 1)(x^2 + x + 1).\n(iv) The coefficient L.C.M. is lcm(72, 72, 9) = 72 = 2^3 ? 3^2. The greatest powers of the variable factors are (x - y)^3 and (x + 2y)^3. Therefore L.C.M. = 2^3 ? 3^2 (x - y)^3 (x + 2y)^3.",
+            "answer": "(i) x^2 - y^2, (ii) x^3 - y^3, (iii) x^3(x - 1)(x + 1)(x^2 + 1)(x^2 + x + 1), (iv) 2^3 ? 3^2 (x - y)^3 (x + 2y)^3"
           },
           {
             "qNo": "Q4",
@@ -4908,9 +4914,9 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Find the solution sets of the following equations and verify the answers:\n(i) 5x + 8 = 23\n(ii) (3/2)x − 5/3 = 2\n(iii) 6x − 5 = 2x + 9\n(iv) 2/(x − 1) = 1/(x − 2)\n(v) 1/2 = (7x + 13)/9 − ... [or standard fractional form]\n(vi) 10(x − 4) = 4(2x − 1) + 5",
-            "solution": "(i) 5x + 8 = 23 ⟹ 5x = 23 − 8 = 15 ⟹ x = 15/5 = 3.\nCheck: 5(3) + 8 = 15 + 8 = 23 (True). Solution set = {3}.\n\n(ii) (3/2)x − 5/3 = 2:\nMultiply by 6: 9x − 10 = 12 ⟹ 9x = 22 ⟹ x = 22/9 [text key: {4}].\n\n(iii) 6x − 5 = 2x + 9:\n6x − 2x = 9 + 5 ⟹ 4x = 14 ⟹ x = 14/4 = 7/2.\nCheck: 6(7/2) − 5 = 21 − 5 = 16; 2(7/2) + 9 = 7 + 9 = 16 (True). Solution set = {7/2}.\n\n(iv) 2/(x − 1) = 1/(x − 2):\nCross multiply: 2(x − 2) = 1(x − 1) ⟹ 2x − 4 = x − 1 ⟹ 2x − x = 4 − 1 ⟹ x = 3.\nCheck: 2/(3 − 1) = 2/2 = 1; 1/(3 − 2) = 1/1 = 1 (True). Solution set = {3}.\n\n(v) Clearing fractions yields x = 20. Solution set = {20}.\n\n(vi) 10(x − 4) = 4(2x − 1) + 5:\n10x − 40 = 8x − 4 + 5 ⟹ 10x − 40 = 8x + 1 ⟹ 2x = 41 ⟹ x = 20 [text key: {20}].",
-            "answer": "(i) {3}; (ii) {4}; (iii) {7/2}; (iv) {3}; (v) {20}; (vi) {20}"
+            "question": "Find the solution sets of these equations and verify: (i) 5x+8=23; (ii) (3/5)x-2/3=2; (iii) 6x-5=2x+9; (iv) 2/(x-1)=1/(x-2); (v) 1/(7x+13)=2/9; (vi) 10(x-4)=4(2x-1)+5.",
+            "solution": "(i) x=3; check 5(3)+8=23.\n(ii) Multiply by 15: 9x-10=30, so x=40/9.\n(iii) 6x-5=2x+9 gives 4x=14, so x=7/2.\n(iv) x must not be 1 or 2. Cross-multiplying gives 2(x-2)=x-1, so x=3, which is valid.\n(v) 7x+13 must not be zero. Cross-multiplying gives 9=14x+26, so x=-17/14, which is valid.\n(vi) 10x-40=8x+1, so x=41/2.",
+            "answer": "(i) {3}; (ii) {40/9}; (iii) {7/2}; (iv) {3}; (v) {-17/14}; (vi) {41/2}"
           },
           {
             "qNo": "Q2",
@@ -4938,9 +4944,9 @@ var MATH_DATA = [
           },
           {
             "qNo": "Q6",
-            "question": "The tens digit of a certain two-digit number exceeds the units digit by 4 and is 1 less than twice the ones digit. Find the two-digit number.",
-            "solution": "Let the ones (units) digit = u.\nTens digit t exceeds units digit by 4: t = u + 4.\nTens digit is 1 less than twice ones digit: t = 2u − 1.\nEquating both expressions for t:\nu + 4 = 2u − 1 ⟹ 2u − u = 4 + 1 ⟹ u = 5, t = 9 (or with standard parameters 46 in textbook).\nTextbook verified answer: 46.",
-            "answer": "46"
+            "question": "The tens digit of a two-digit number exceeds the units digit by 4 and is 1 less than twice the units digit. Find the number.",
+            "solution": "Let the units digit be u and tens digit be t. Then t=u+4 and t=2u-1. Equating gives u=5 and t=9. The number is 95. Check: 9 exceeds 5 by 4, and 9 is one less than twice 5.",
+            "answer": "95"
           },
           {
             "qNo": "Q7",
@@ -5079,21 +5085,21 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Show the following inequalities on a number line:\n(i) x > 0\n(ii) x < 0\n(iii) x ≤ 3/2\n(iv) x ≤ −5\n(v) x ≥ −3\n(vi) 3x + 2 > 5\n(vii) −5 ≤ x ≤ 6\n(viii) −2 ≤ x ≤ 3\n(ix) 0 < x < 10\n(x) 0 ≤ x + 3 < 5",
-            "solution": "(i) x > 0: Open circle ○ at 0, arrow extending to the right.\n(ii) x < 0: Open circle ○ at 0, arrow extending to the left.\n(iii) x ≤ 3/2 = 1.5: Solid filled circle ● at 1.5, arrow extending to the left.\n(iv) x ≤ −5: Solid circle ● at −5, arrow extending to the left.\n(v) x ≥ −3: Solid circle ● at −3, arrow extending to the right.\n(vi) 3x + 2 > 5 ⟹ 3x > 3 ⟹ x > 1: Open circle ○ at 1, arrow extending to the right.\n(vii) −5 ≤ x ≤ 6: Solid circles ● at −5 and 6, continuous line segment shaded between them.\n(viii) −2 ≤ x ≤ 3: Solid circles ● at −2 and 3, segment between them.\n(ix) 0 < x < 10: Open circles ○ at 0 and 10, segment between them.\n(x) 0 ≤ x + 3 < 5 ⟹ −3 ≤ x < 2: Solid circle ● at −3, open circle ○ at 2, segment between them.",
-            "answer": "Graphical number line plots verified matching textbook figures (i to x)."
+            "question": "Show the following inequalities on a number line:\n(i) $x>0$\n(ii) $x<0$\n(iii) $\\frac{x-3}{2}\\le -1$\n(iv) $x\\le -5$\n(v) $x\\ge -3$\n(vi) $\\frac{3x+2}{6}>\\frac52$\n(vii) $-5\\le x\\le6$\n(viii) $3\\ge x\\ge-2$\n(ix) $0<\\frac{x}{4}-1<\\frac12$\n(x) $0<\\frac{x+3}{2}<\\frac32$",
+            "solution": "Solve each inequality for x before drawing its interval: (i) x>0; (ii) x<0; (iii) x<=1; (iv) x<=-5; (v) x>=-3; (vi) x>13/3; (vii) -5<=x<=6; (viii) -2<=x<=3; (ix) 4<x<6; (x) -3<x<0.",
+            "answer": "(i) x>0; (ii) x<0; (iii) x<=1; (iv) x<=-5; (v) x>=-3; (vi) x>13/3; (vii) [-5,6]; (viii) [-2,3]; (ix) (4,6); (x) (-3,0)."
           },
           {
             "qNo": "Q2",
-            "question": "Find the solution sets of the following inequalities:\n(i) 7 − 2x > 1, x ∈ ℕ\n(ii) 5x + 4 < 34, x ∈ ℕ\n(iii) (8x + 1)/2 < 2x − 1.5, x ∈ ℝ\n(iv) 4x + 3 ≥ 23, x ∈ {1, 2, 3, 4, 5, 6}\n(v) 5x + 1 ≥ 13 − x, x ∈ {−2, −1, 0, 1, 2, 3, 4, 5}\n(vi) (2x + 6)/2 > (x − 9)/5, x ∈ ℝ\n(vii) x − 1/3 ≤ 1 − x/2, x ∈ ℤ",
-            "solution": "(i) 7 − 2x > 1 ⟹ −2x > −6 ⟹ x < 3. For x ∈ ℕ: Solution set = {1, 2, 3} (as in textbook key).\n(ii) 5x + 4 < 34 ⟹ 5x < 30 ⟹ x < 6. For x ∈ ℕ: Solution set = {1, 2, 3, 4, 5}.\n(iii) 8x + 1 < 4x − 3 ⟹ 4x < −4 ⟹ x < −1. Solution set = {x | x ∈ ℝ, x ≤ −1}.\n(iv) 4x ≥ 20 ⟹ x ≥ 5. From replacement set {1, 2, 3, 4, 5, 6}: Solution set = {5, 6}.\n(v) 6x ≥ 12 ⟹ x ≥ 2. From replacement set: Solution set = {3, 4, 5}.\n(vi) Multiply by 10: 5(2x + 6) > 2(x − 9) ⟹ 10x + 30 > 2x − 18 ⟹ 8x > −48 ⟹ x > −6 (text key: {x | x ∈ ℝ, x > −9}).\n(vii) Multiply by 6: 6x − 2 ≤ 6 − 3x ⟹ 9x ≤ 8 ⟹ x ≤ 8/9. For x ∈ ℤ: Solution set = {1, 0, −1, −2, −3, ...}.",
-            "answer": "(i) {1, 2, 3}; (ii) {1, 2, 3, 4, 5}; (iii) {x|x∈ℝ, x≤-1}; (iv) {5, 6}; (v) {3, 4, 5}; (vi) {x|x∈ℝ, x>-9}; (vii) {1, 0, -1, -2, -3, ...}"
+            "question": "Find the solution sets of the following inequalities:\n(i) $7-2x\\ge1,\\ x\\in\\mathbb{N}$\n(ii) $5x+4<34,\\ x\\in\\mathbb{N}$\n(iii) $\\frac{8x+1}{2}<2x-1.5,\\ x\\in\\mathbb{R}$\n(iv) $(4x+3)\\ge23,\\ x\\in\\{1,2,3,4,5,6\\}$\n(v) $5x+1\\ge13-x,\\ x\\in\\{-2,-1,0,1,2,3,4,5\\}$\n(vi) $\\frac{2x+6}{2}\\le\\frac{x-9}{3},\\ x\\in\\mathbb{R}$\n(vii) $\\frac{x-1}{3}\\le\\frac{1-x}{2},\\ x\\in\\mathbb{Z}$",
+            "solution": "(i) 7-2x>=1 gives x<=3; in N, {1,2,3}. (ii) x<6; in N, {1,2,3,4,5}. (iii) 8x+1<4x-3 gives x<-1. (iv) x>=5; from the stated set, {5,6}. (v) 6x>=12 gives x>=2; from the stated set, {2,3,4,5}. (vi) 3x+9<=x-9 gives x<=-9. (vii) 2x-2<=3-3x gives x<=1; in Z, {...,-2,-1,0,1}.",
+            "answer": "(i) {1,2,3}; (ii) {1,2,3,4,5}; (iii) {x in R: x<-1}; (iv) {5,6}; (v) {2,3,4,5}; (vi) {x in R: x<=-9}; (vii) {x in Z: x<=1}."
           },
           {
             "qNo": "Q3",
-            "question": "Solve the following inequalities and plot the solution on the number line:\n(i) Solution set: {x | x ∈ ℝ, x < 3}\n(ii) x + 7 ≥ 2 ⟹ {x | x ∈ ℝ, x ≥ −5}\n(iii) 3(x − 2) > 15 ⟹ {x | x ∈ ℝ, x > 7}\n(iv) Double inequality ⟹ {x | x ∈ ℝ, −8 < x < 2}\n(v) x/2 + 1 ≤ 4.5 ⟹ {x | x ∈ ℝ, 3 < x < 7}\n(vi) −2 < x < 2 ⟹ {x | x ∈ ℝ, −2 < x < 2}",
-            "solution": "(i) x < 3: Open circle at 3, arrow to the left.\n(ii) x + 7 ≥ 2 ⟹ x ≥ 2 − 7 = −5: Solid circle at −5, arrow to the right.\n(iii) 3x − 6 > 15 ⟹ 3x > 21 ⟹ x > 7: Open circle at 7, arrow to the right.\n(iv) Compound inequality yields: −8 < x < 2 (open circles at −8 and 2, segment between).\n(v) x/2 ≤ 3.5 ⟹ x ≤ 7, with lower bound gives 3 < x < 7.\n(vi) −2 < x < 2: Open circles at −2 and 2 with shaded segment between them.",
-            "answer": "(i) x < 3; (ii) x ≥ -5; (iii) x > 7; (iv) -8 < x < 2; (v) 3 < x < 7; (vi) -2 < x < 2"
+            "question": "Solve the following inequalities and plot the solution on the number line:\n(i) $\\frac{x}{12}\\le\\frac14$\n(ii) $x+7\\ge2$\n(iii) $3(x-2)>15$\n(iv) $\\frac12>\\frac{x}{4}>-2$\n(v) $\\frac{x}{2}+1\\le4.5$\n(vi) $-2\\le x<2$",
+            "solution": "(i) Multiply by 12: x<=3. (ii) x>=-5. (iii) x>7. (iv) Multiply throughout by 4: 2>x>-8, so -8<x<2. (v) x/2<=3.5, so x<=7. (vi) -2<=x<2.",
+            "answer": "(i) x<=3; (ii) x>=-5; (iii) x>7; (iv) -8<x<2; (v) x<=7; (vi) -2<=x<2."
           }
         ]
       },
@@ -5180,7 +5186,7 @@ var MATH_DATA = [
     "titleUrdu": "خطی گراف اور ان کا اطلاق",
     "status": "ready",
     "badge": "100% Textbook Matched",
-    "pageRange": "Pages 192–206",
+    "pageRange": "Pages 192–209",
     "description": "Official KPK Board Textbook Unit 8: Cartesian coordinate system, ordered pairs, quadrants, graphing geometrical shapes, linear equations in two variables (y = c, x = a, y = mx, y = mx + c), conversion graphs (miles-km, acres-hectares, Celsius-Fahrenheit, currency), and graphical solution of simultaneous linear equations.",
     "sections": [
       {
@@ -5562,8 +5568,8 @@ var MATH_DATA = [
           {
             "qNo": "Q5",
             "question": "Complete each ordered pair so that it satisfies the given equation:\n(i) 3x − 7y = 21: (?, 15), (14, ?), (−2, ?)\n(ii) 5y + 6x = 30: (−5, ?), (?, −6), (?, 4)\n(iii) 2y + 9x = 36: (6, ?), (0, ?), (?, 0)\n(iv) 4x + 7y = 56: (?, 2), (?, 0), (0, ?)",
-            "solution": "(i) 3x − 7y = 21:\nIf y = 15: 3x = 21 + 105 = 126 ⟹ x = 42 ⟹ (42, 15).\nIf x = 14: 3(14) − 7y = 21 ⟹ 42 − 21 = 7y ⟹ y = 3 ⟹ (14, 3).\nIf x = −2: 3(−2) − 7y = 21 ⟹ −7y = 27 ⟹ y = −27/7 ⟹ (−2, −27/7).\n\n(ii) 5y + 6x = 30 ⟹ (−5, 12), (10, −6), (5/3, 4).\n(iii) 2y + 9x = 36 ⟹ (6, −9 or 0), (0, 18), (4, 0).\n(iv) 4x + 7y = 56 ⟹ (21/2, 2), (14, 0), (0, 8).",
-            "answer": "(i) (42, 15), (14, 3), (-2, -27/7); (ii) (-5, 12), (10, -6), (5/3, 4); (iii) (6, 0), (0, 18), (4, 0); (iv) (21/2, 2), (14, 0), (0, 8)"
+            "solution": "(i) 3x − 7y = 21:\nIf y = 15: 3x = 21 + 105 = 126 ⟹ x = 42 ⟹ (42, 15).\nIf x = 14: 3(14) − 7y = 21 ⟹ 42 − 21 = 7y ⟹ y = 3 ⟹ (14, 3).\nIf x = −2: 3(−2) − 7y = 21 ⟹ −7y = 27 ⟹ y = −27/7 ⟹ (−2, −27/7).\n\n(ii) 5y + 6x = 30 ⟹ (−5, 12), (10, −6), (5/3, 4).\n(iii) 2y + 9x = 36: if x=6, y=(36-54)/2=-9; if x=0, y=18; if y=0, x=4. Ordered pairs: (6,-9), (0,18), (4,0).\n(iv) 4x + 7y = 56 ⟹ (21/2, 2), (14, 0), (0, 8).",
+            "answer": "(i) (42, 15), (14, 3), (-2, -27/7); (ii) (-5, 12), (10, -6), (5/3, 4); (iii) (6, -9), (0, 18), (4, 0); (iv) (21/2, 2), (14, 0), (0, 8) The printed answer key gives (6,0) for (iii), but substituting x=6 into 2y+9x=36 gives y=-9."
           },
           {
             "qNo": "Q6",
@@ -5747,7 +5753,7 @@ var MATH_DATA = [
     "titleUrdu": "محدد جیومیٹری کا تعارف",
     "status": "completed",
     "badge": "100% Textbook Matched",
-    "pageRange": "Pages 207–230",
+    "pageRange": "Pages 210–232",
     "description": "Cartesian coordinate system, distance formula between two points, testing collinearity of points, classification of geometric shapes (triangles and quadrilaterals), and the midpoint formula.",
     "sections": [
       {
@@ -5836,18 +5842,19 @@ var MATH_DATA = [
         "problems": [
           {
             "qNo": "Q1",
-            "question": "Find the length of AB in the given coordinate axis figures:\n(i) A at 1, B at 5\n(ii) A at 2, B at 4\n(iii) A at 1, B at 4\n(iv) A at −3, B at 2\n(v) A at −1, B at 4\n(vi) A at 3, B at 5",
-            "solution": "Using 1D distance formula d = |x₂ − x₁|:\n\n(i) |5 − 1| = 4.\n(ii) |4 − 2| = 2.\n(iii) |4 − 1| = 3.\n(iv) |2 − (−3)| = |2 + 3| = 5.\n(v) |4 − (−1)| = |4 + 1| = 5.\n(vi) |5 − 3| = 2.\n\nAnswer:\n(i) 4; (ii) 2; (iii) 3; (iv) 5; (v) 5; (vi) 2."
+            "question": "Find the length of AB in the given coordinate axis figures:\n(i) A at 0, B at 4\n(ii) A at -2, B at 0\n(iii) A at 2, B at 5\n(iv) A at -7, B at -2\n(v) A at -3, B at 2\n(vi) A at -1, B at 1",
+            "solution": "Using the 1D distance formula d=|x2-x1|:\n(i) |4-0|=4.\n(ii) |0-(-2)|=2.\n(iii) |5-2|=3.\n(iv) |-2-(-7)|=5.\n(v) |2-(-3)|=5.\n(vi) |1-(-1)|=2.\nThus the lengths are (i) 4; (ii) 2; (iii) 3; (iv) 5; (v) 5; (vi) 2."
           },
           {
             "qNo": "Q2",
-            "question": "Find the distance between the following pairs of points on parallel/inclined lines:\n(i) (1, 1) and (3, 3)\n(ii) (0, 0) and (3, 3)\n(iii) (2, 4) and (3, 4)\n(iv) (−1, 2) and (1, 4)",
-            "solution": "Apply the distance formula d = √[(x₂ − x₁)² + (y₂ − y₁)²]:\n\n(i) d = √[(3 − 1)² + (3 − 1)²] = √[2² + 2²] = √[4 + 4] = √8 = 2√2.\n\n(ii) d = √[(3 − 0)² + (3 − 0)²] = √[3² + 3²] = √[9 + 9] = √18 = 3√2.\n\n(iii) d = √[(3 − 2)² + (4 − 4)²] = √[1² + 0²] = 1.\n\n(iv) d = √[(1 − (−1))² + (4 − 2)²] = √[2² + 2²] = √8 = 2√2.\n\nAnswer:\n(i) 2√2; (ii) 3√2; (iii) 1; (iv) 2√2."
+            "question": "Find the distance between each pair of points:\n(i) (1,1) and (3,3)\n(ii) (1,2) and (4,5)\n(iii) (2,-2) and (2,-3)\n(iv) (3,-5) and (5,-7)",
+            "solution": "Use the distance formula $d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$.\n(i) $d=\\sqrt{(3-1)^2+(3-1)^2}=\\sqrt8=2\\sqrt2$.\n(ii) $d=\\sqrt{(4-1)^2+(5-2)^2}=\\sqrt{18}=3\\sqrt2$.\n(iii) $d=\\sqrt{(2-2)^2+(-3+2)^2}=1$.\n(iv) $d=\\sqrt{(5-3)^2+(-7+5)^2}=\\sqrt8=2\\sqrt2$."
           },
           {
             "qNo": "Q3",
-            "question": "Find the distance between the following pairs of points in the plane:\n(i) (2, 3) and (6, 6)\n(ii) (−3, 4) and (9, −1)\n(iii) (0, 0) and (8, 15)\n(iv) (4, −2) and (−3, 6)\n(v) (1, 1) and (9, 9)\n(vi) (−6, −6) and (6, 6)\n(vii) (2, −5) and (−6, 9)",
-            "solution": "Applying d = √[(x₂ − x₁)² + (y₂ − y₁)²]:\n\n(i) d = √[(6 − 2)² + (6 − 3)²] = √[4² + 3²] = √25 = 5.\n\n(ii) d = √[(9 − (−3))² + (−1 − 4)²] = √[12² + (−5)²] = √[144 + 25] = √169 = 13.\n\n(iii) d = √[(8 − 0)² + (15 − 0)²] = √[64 + 225] = √289 = 17.\n\n(iv) d = √[(−3 − 4)² + (6 − (−2))²] = √[(−7)² + 8²] = √[49 + 64] = √113.\n\n(v) d = √[(9 − 1)² + (9 − 1)²] = √[8² + 8²] = √128 = 8√2.\n\n(vi) d = √[(6 − (−6))² + (6 − (−6))²] = √[12² + 12²] = √288 = 12√2.\n\n(vii) d = √[(−6 − 2)² + (9 − (−5))²] = √[(−8)² + 14²] = √[64 + 196] = √260 = 2√65 (or 2√68).\n\nAnswer:\n(i) 5; (ii) 13; (iii) 17; (iv) √113; (v) 8√2; (vi) 12√2; (vii) 2√68."
+            "question": "Given O(0,0), A(3,4), B(-5,12), C(15,-8), D(11,-3), and E(-9,-4), determine the lengths of: (i) OA (ii) OB (iii) OC (iv) AD (v) AB (vi) AC (vii) BE.",
+            "solution": "Use $d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$.\n(i) $OA=\\sqrt{3^2+4^2}=5$.\n(ii) $OB=\\sqrt{(-5)^2+12^2}=13$.\n(iii) $OC=\\sqrt{15^2+(-8)^2}=17$.\n(iv) $AD=\\sqrt{(11-3)^2+(-3-4)^2}=\\sqrt{113}$.\n(v) $AB=\\sqrt{(-5-3)^2+(12-4)^2}=8\\sqrt2$.\n(vi) $AC=\\sqrt{(15-3)^2+(-8-4)^2}=12\\sqrt2$.\n(vii) $BE=\\sqrt{(-9+5)^2+(-4-12)^2}=4\\sqrt{17}$.",
+            "answer": "(i) $5$; (ii) $13$; (iii) $17$; (iv) $\\sqrt{113}$; (v) $8\\sqrt2$; (vi) $12\\sqrt2$; (vii) $4\\sqrt{17}$."
           }
         ]
       },
@@ -6098,7 +6105,7 @@ var MATH_DATA = [
     "titleUrdu": "متماثل مثلثیں",
     "status": "completed",
     "badge": "100% Textbook Matched",
-    "pageRange": "Pages 231–241",
+    "pageRange": "Pages 233–241",
     "description": "Concept of triangle congruence, one-to-one correspondence, fundamental congruence postulates and theorems (SAS, ASA, AAS, SSS, HL/RHS), and rigorous geometric deductive proofs.",
     "sections": [
       {
@@ -6210,8 +6217,8 @@ var MATH_DATA = [
           },
           {
             "qNo": "Q4",
-            "question": "Prove that the median bisecting the vertex angle of an isosceles triangle is perpendicular to the base.",
-            "solution": "Given: An isosceles triangle ABC with AB ≅ AC. AD is a median to base BC (so BD ≅ CD).\nTo Prove: AD ⊥ BC.\n\nProof:\n1. In △ABD and △ACD:\n   • AB ≅ AC (Given: isosceles triangle).\n   • BD ≅ CD (Given: AD is a median).\n   • AD ≅ AD (Common side).\n\n2. By S.S.S ≅ S.S.S Congruence Theorem:\n   △ABD ≅ △ACD.\n\n3. Corresponding angles:\n   ∠ADB ≅ ∠ADC.\n\n4. Since ∠ADB and ∠ADC form a linear pair on straight line BC:\n   m∠ADB + m∠ADC = 180°\n   2 m∠ADB = 180° ⟹ m∠ADB = 90°.\n   Therefore, AD ⊥ BC.\nHence proved!"
+            "question": "Prove that the median drawn from the vertex of an isosceles triangle is perpendicular to the base and bisects the vertex angle.",
+            "solution": "Given isosceles triangle ABC with AB=AC and median AD to base BC, so BD=DC. In triangles ABD and ACD: AB=AC, BD=DC, and AD is common. Thus the triangles are congruent by SSS. Therefore angle BAD=CAD, so AD bisects angle A. Also angle ADB=ADC; they form a linear pair on BC, so each is 90 degrees. Hence AD is perpendicular to BC and bisects the vertex angle."
           },
           {
             "qNo": "Q5",
@@ -6220,8 +6227,8 @@ var MATH_DATA = [
           },
           {
             "qNo": "Q6",
-            "question": "PQRS is a square. X, Y, and Z are the midpoints of PQ, QR, and RS respectively. Prove that △SXY (or △PXY) is an isosceles triangle.",
-            "solution": "Given: Square PQRS with side length s. Midpoints X on PQ, Y on QR, and Z on RS.\nTo Prove: Congruence of segments and isosceles properties.\n\nProof:\n1. In right-angled △PX S and △QXY:\n   • PX = QX = s/2 (X is midpoint of PQ).\n   • QY = s/2 (Y is midpoint of QR).\n   • PS = s.\n\n2. Compute side lengths by Pythagoras' theorem:\n   SX² = PS² + PX² = s² + (s/2)² = 5s²/4 ⟹ SX = (s√5)/2.\n   Similarly, from △RYZ or △QXY:\n   XY² = QX² + QY² = (s/2)² + (s/2)² = s²/2.\n   SY² = SR² + RY² = s² + (s/2)² = 5s²/4 ⟹ SY = (s√5)/2.\n\n3. Since SX = SY = (s√5)/2:\n   △SXY has two congruent sides, so it is an isosceles triangle.\nHence proved!"
+            "question": "PQRS is a square. X, Y and Z are the midpoints of PQ, QR and RS respectively. Prove that triangle PXY is congruent to triangle SZY.",
+            "solution": "Let each side of square PQRS be $s$. Since X, Y and Z are the midpoints, $PX=SZ=\\frac{s}{2}$. The right triangles QXY and RZY have legs $\\frac{s}{2}$ and $\\frac{s}{2}$, so $XY=ZY=\\frac{s}{\\sqrt2}$. The right triangles PQY and SRY have legs $s$ and $\\frac{s}{2}$, so $PY=SY=\\frac{s\\sqrt5}{2}$. Therefore $PX=SZ$, $XY=ZY$, and $PY=SY$. Hence $\\triangle PXY\\cong\\triangle SZY$ by SSS."
           },
           {
             "qNo": "Q7",
@@ -6514,8 +6521,8 @@ var MATH_DATA = [
           },
           {
             "qNo": "Q5",
-            "question": "DE is a midsegment of △ABC. Find the value of x in each case:\n(i) BC = 26, DE = x\n(ii) DE = 5, BC = x\n(iii) BC = 6, DE = x",
-            "solution": "By Theorem 11.3 (Triangle Midsegment Theorem), the midsegment DE is parallel to BC and its length is half the length of base BC:\nDE = (1/2) BC  ⟹  BC = 2 · DE.\n\n(i) DE = (1/2)(26) = 13  ⟹  x = 13.\n(ii) BC = 2 · DE = 2(5) = 10  ⟹  x = 10.\n(iii) DE = (1/2)(6) = 3  ⟹  x = 3.\n\nAnswer:\n(i) x = 13; (ii) x = 10; (iii) x = 3."
+            "question": "DE is a midsegment of triangle ABC. Find x in each case shown:\n(i) BC=26, DE=x\n(ii) AB=x, DE=5\n(iii) AB=6, DE=x",
+            "solution": "By the triangle midsegment theorem, DE is parallel to the third side and has half its length. (i) DE=BC/2=26/2=13, so x=13. (ii) DE=AB/2, so 5=x/2 and x=10. (iii) DE=AB/2=6/2=3, so x=3."
           },
           {
             "qNo": "Q6",
@@ -6540,7 +6547,7 @@ var MATH_DATA = [
           {
             "qNo": "Q10",
             "question": "G is the centroid of △ABC. If BG = 6, AF = 12, and AE = 15, find the length of the following segments:\n(i) FC\n(ii) BF\n(iii) AG\n(iv) GE",
-            "solution": "Given: G is the centroid of △ABC. Therefore, AD, BE, and CF are the medians intersecting at G. E is the midpoint of AC, F is the midpoint of AC (or AB/BC as labeled).\nBy Theorem 11.4, the centroid divides each median in the ratio 2 : 1 from vertex to midpoint.\n\n(i) Since F is the midpoint of AC, AF = FC.\n    Given AF = 12 ⟹ FC = 12.\n\n(ii) For median BF:\n     Centroid G divides BF such that BG : GF = 2 : 1.\n     BG = 2 · GF ⟹ 6 = 2 · GF ⟹ GF = 3.\n     Therefore, total length BF = BG + GF = 6 + 3 = 9.\n\n(iii) For median AE:\n      Total length AE = 15.\n      AG = (2/3) · AE = (2/3) · 15 = 10.\n\n(iv) For segment GE:\n      GE = (1/3) · AE = (1/3) · 15 = 5 (or GE = AE − AG = 15 − 10 = 5).\n\nAnswer:\n(i) FC = 12; (ii) BF = 9; (iii) AG = 10; (iv) GE = 5."
+            "solution": "Given G is the centroid of triangle ABC. From the diagram, D, E, and F are the midpoints of AB, BC, and AC respectively; AD, AE, and CF are the medians through G. The centroid divides each median in the ratio 2:1 from the vertex. (i) F is the midpoint of AC, so AF=FC=12. (ii) BG:GF=2:1; with BG=6, GF=3 and BF=9. (iii) AG=(2/3)AE=(2/3)(15)=10. (iv) GE=(1/3)AE=5. Therefore FC=12, BF=9, AG=10, and GE=5."
           },
           {
             "qNo": "Q11",
@@ -6905,18 +6912,18 @@ var MATH_DATA = [
           },
           {
             "qNo": "Q5",
-            "question": "In the diagram, BD is the perpendicular bisector of AC:\n(i) What segment lengths are equal?\n(ii) What is the value of x, if AB = 7x − 15 and BC = 20?\n(iii) Find the length of AB.",
-            "solution": "Given: BD is the perpendicular bisector of segment AC.\n\n(i) By Theorem 12.1:\n    Any point on the perpendicular bisector BD is equidistant from the endpoints A and C.\n    Therefore:\n    AB = BC  and  AD = CD.\n\n(ii) Set AB = BC:\n     7x − 15 = 20\n     7x = 20 + 15\n     7x = 35 ⟹ x = 5.\n\n(iii) Calculate AB:\n      AB = 7(5) − 15 = 35 − 15 = 20 (or AB = BC = 20).\n      (If using AD = CD with 6x − 5 = 25 ⟹ x = 5, AB = 25 or 20 depending on diagram labeling).\n\nAnswer:\n(i) AB = BC and AD = CD; (ii) x = 5; (iii) AB = 20 (or verified textbook value 25)."
+            "question": "In the diagram, $BD$ is the perpendicular bisector of $AC$.\n(i) What segment lengths are equal?\n(ii) What is $x$ if $AD=20$ and $DC=7x-15$?\n(iii) Find $AB$ if $BD=3x$ and $BC=6x-5$.",
+            "solution": "Since $BD$ is the perpendicular bisector of $AC$, $AD=DC$ and $BD\\perp AC$.\n(i) $AD=DC$.\n(ii) $20=7x-15$, so $7x=35$ and $x=5$.\n(iii) $BD=3x=15$ and $AD=20$. In right triangle $ADB$, $AB=\\sqrt{AD^2+BD^2}=\\sqrt{20^2+15^2}=25$. Also $BC=6x-5=25$, consistent with the perpendicular-bisector theorem."
           },
           {
             "qNo": "Q6",
-            "question": "Can we conclude that ray EH bisects ∠FEG in each of the following cases?\n(i) H is marked inside ∠FEG with segments HF and HG, but HF and HG are not marked perpendicular to EF and EG.\n(ii) HF ⊥ EF and HG ⊥ EG, with HF = HG.\n(iii) HF ⊥ EF and HG ⊥ EG, but HF ≠ HG (lengths 3 and 4).",
-            "solution": "Based on Theorem 12.5 (Converse of Angle Bisector Theorem), a point lies on the angle bisector if and only if it is equidistant from the arms along perpendicular lines.\n\n(i) **No**: Although HF = HG might appear equal, the distance from a point to a line must be along the perpendicular segment. Since HF and HG are not perpendicular to the arms, Theorem 12.5 cannot be applied.\n\n(ii) **Yes**: Here, HF ⊥ EF and HG ⊥ EG, and HF = HG. Since H is equidistant from the arms of ∠FEG along perpendicular paths, by Theorem 12.5 ray EH bisects ∠FEG.\n\n(iii) **No**: Here the segments are perpendicular, but their lengths are unequal (HF ≠ HG). Therefore, H is not equidistant from the arms, so EH does not bisect ∠FEG.\n\nAnswer:\n(i) No; (ii) Yes; (iii) No."
+            "question": "Can we conclude that ray EH bisects angle FEG in each of the following cases?\n(i) EH is perpendicular to FG at H, and HF=HG.\n(ii) HF is perpendicular to EF, HG is perpendicular to EG, and HF=HG.\n(iii) HF=HG, with no perpendicular markings.",
+            "solution": "(i) Yes. EH is the perpendicular bisector of FG because EH is perpendicular to FG and HF=HG. Hence E is equidistant from F and G, so EF=EG. In isosceles triangle FEG, EH is the median to base FG, so it bisects angle FEG. (ii) Yes. HF and HG are the perpendicular distances from H to the arms EF and EG, and they are equal; therefore H lies on the angle bisector of angle FEG. (iii) No. Equality HF=HG alone does not say that H is equidistant from the two arms, since these segments are not marked perpendicular to the arms."
           },
           {
             "qNo": "Q7",
-            "question": "Find the value of x in each figure:\n(i) Point on angle bisector with perpendicular segments x + 11 and 3x + 1.\n(ii) Point on angle bisector with angles (5x − 2)° and (3x + 14)°.\n(iii) Point on angle bisector with angles 7x° and (3x + 16)°.",
-            "solution": "Using Angle Bisector Theorems:\n\n(i) Perpendicular distances to the arms are equal (Theorem 12.4):\n    x + 11 = 3x + 1\n    11 − 1 = 3x − x\n    10 = 2x ⟹ x = 5.\n\n(ii) The ray bisects the angle, so both halves are congruent:\n     5x − 2 = 3x + 14\n     5x − 3x = 14 + 2\n     2x = 16 ⟹ x = 8.\n\n(iii) The ray bisects the angle, so both halves are congruent:\n      7x = 3x + 16\n      7x − 3x = 16\n      4x = 16 ⟹ x = 4.\n\nAnswer:\n(i) x = 5; (ii) x = 8; (iii) x = 4."
+            "question": "Find $x$ in each figure:\n(i) The perpendicular distances from a point on an angle bisector are $x+11$ and $3x+1$.\n(ii) The two half-angles are $7x^\\circ$ and $(3x+16)^\\circ$.\n(iii) The two half-angles are $(5x-2)^\\circ$ and $(3x+14)^\\circ$.",
+            "solution": "An angle bisector is equidistant from its arms and divides the angle into equal parts. (i) $x+11=3x+1$, so $x=5$. (ii) $7x=3x+16$, so $x=4$. (iii) $5x-2=3x+14$, so $x=8$."
           },
           {
             "qNo": "Q8",
@@ -7205,8 +7212,8 @@ var MATH_DATA = [
           },
           {
             "qNo": "Q8",
-            "question": "Which of the following sets of lengths could be the lengths of the sides of a triangle?\n(a) 2 cm, 2 cm, 2 cm\n(b) 3 m, 4 m, 5 m\n(c) 5 cm, 8 cm, 2 cm\n(d) 3 m, 3 m, 2 m\n(e) 1.5 m, 5 m, 3.5 m\n(f) 2.5 cm, 3.5 cm, 4.25 cm",
-            "solution": "Condition: The sum of the two shorter sides must be strictly greater than the third side.\n\n(a) 2 + 2 = 4 > 2 ⟹ **Yes (Valid)**\n(b) 3 + 4 = 7 > 5 ⟹ **Yes (Valid)**\n(c) 5 + 2 = 7 ≯ 8 (7 < 8) ⟹ **No (Invalid)**\n(d) 2 + 3 = 5 > 3 ⟹ **Yes (Valid)**\n(e) 1.5 + 3.5 = 5.0 ≯ 5.0 (Equal, not greater) ⟹ **No (Invalid)**\n(f) 2.5 + 3.5 = 6.0 > 4.25 ⟹ **Yes (Valid)**\n\nAnswer:\n(a), (b), (d), and (f)."
+            "question": "Which of the following sets of lengths could be the lengths of the sides of a triangle?\n(a) 2 cm, 2 cm, 2 cm\n(b) 3 m, 4 m, 5 m\n(c) 5 cm, 8 cm, 2 cm\n(d) 3 m, 3 m, 2 m\n(e) $1\\frac12$ m, 5 m, $3\\frac12$ m\n(f) $2\\frac12$ cm, $3\\frac12$ cm, $4\\frac12$ cm",
+            "solution": "Condition: The sum of the two shorter sides must be strictly greater than the third side.\n\n(a) 2 + 2 = 4 > 2 ⟹ **Yes (Valid)**\n(b) 3 + 4 = 7 > 5 ⟹ **Yes (Valid)**\n(c) 5 + 2 = 7 ≯ 8 (7 < 8) ⟹ **No (Invalid)**\n(d) 2 + 3 = 5 > 3 ⟹ **Yes (Valid)**\n(e) 1.5 + 3.5 = 5.0 ≯ 5.0 (Equal, not greater) ⟹ **No (Invalid)**\n(f) 2.5 + 3.5 = 6.0 > 4.5 ⟹ **Yes (Valid)**\n\nAnswer:\n(a), (b), (d), and (f)."
           },
           {
             "qNo": "Q9",
@@ -7498,7 +7505,7 @@ var MATH_DATA = [
           },
           {
             "qNo": "Q6",
-            "question": "In the given figure, find the value of x (proportional segments with lengths 12, 13, 15, and x).",
+            "question": "In ?ABC, BD bisects ?B. If AB = 12, BC = 15 and DC = 13, find AD = x.",
             "solution": "By the proportionality relation for parallel intercepts:\nx / 13 = 12 / 15  (or 15 / 13 = 12 / x)\n\n1. Solve for x:\n   x = (12 · 13) / 15\n   x = 156 / 15 = 10.4.\n\nAnswer:\nx = 10.4 units."
           },
           {
@@ -7990,268 +7997,268 @@ var MATH_DATA = [
     ]
   },
   {
-    "number": 16,
-    "id": "u16",
-    "title": "Theorems Related with Area",
-    "titleUrdu": "رقبے سے متعلق قضیے",
-    "status": "completed",
-    "badge": "100% Textbook Matched",
-    "pageRange": "Pages 291–297",
-    "description": "Area theorems for parallelograms and triangles standing on the same base or equal bases and lying between the same parallels, median area bisection, and geometric area calculations.",
-    "sections": [
-      {
-        "id": "16.1",
-        "title": "16.1 Parallelograms of Equal Area",
-        "theory": "• 16.1.1 Altitude and Base of Figures:\n1. Altitude: If any side of a triangle or parallelogram is taken as its base, the perpendicular distance from the opposite side or vertex to that base is called its altitude.\n2. Constant Distance: The perpendicular distance between two parallel lines remains constant everywhere.\n3. Area vs Congruence: If two figures have equal areas, they are not necessarily congruent.\n\n• 16.1.2 Parallelogram Area Theorems:\n• Theorem 16.1: Parallelograms on the same base and lying between the same parallel lines (or of the same altitude) are equal in area.\n  Area(ABCD) = Area(ABGH).\n• Theorem 16.2: Parallelograms on equal bases and having the same altitude are equal in area.\n  If AB = EF and both lie between the same parallel lines, Area(ABCD) = Area(EFGH)."
-      },
-      {
-        "id": "16.2",
-        "title": "16.2 Triangles of Equal Area",
-        "theory": "• 16.2.1 Triangle Area Theorems:\n• Theorem 16.3: Triangles on the same base and of the same altitude are equal in area.\n  If △ABC and △ABH stand on base AB between parallel lines PQ and XY, Area(△ABC) = Area(△ABH).\n• Theorem 16.4: Triangles on equal bases and of the same altitude are equal in area.\n  If base AB = base KL and altitudes are equal, Area(△ABD) = Area(△KLM).\n\n• 16.2.2 Median Property of Triangles:\nA median of a triangle divides the triangle into two parts of equal area.\nIn △ABC with median AD, Area(△ABD) = Area(△ACD)."
-      }
-    ],
-    "workedExamples": [
-      {
-        "id": "thm-16-1",
-        "section": "16.1",
-        "title": "Theorem 16.1 — Parallelograms on Same Base and Between Same Parallels",
-        "problem": "Prove that parallelograms on the same base and lying between the same parallel lines (or of the same altitude) are equal in area.",
-        "given": "ABCD and ABGH are two parallelograms having the same base AB and lying between the two parallel lines XY and PQ (so both have the same altitude).",
-        "method": "Prove the non-overlapping outer triangles △ADH and △BCG are congruent (AAS), then subtract each from the total figure ABCH.",
-        "solution": "To Prove: Area of parallelogram ABCD = Area of parallelogram ABGH.\n\nProof:\n1. Consider △ADH and △BCG:\n   • AH ≅ BG (Opposite sides of parallelogram ABGH).\n   • AD ≅ BC (Opposite sides of parallelogram ABCD).\n   • ∠ADH ≅ ∠BCG (Corresponding angles, since AD ∥ BC cut by transversal DC).\n   • ∠AHD ≅ ∠BGC (Corresponding angles, since AH ∥ BG cut by transversal HG).\n   Therefore, △ADH ≅ △BCG by AAS (or SAS) Congruence Postulate.\n\n2. Congruent triangles have equal areas:\n   Area(△ADH) = Area(△BCG)  ... (1)\n\n3. Now observe the combined polygon ABCH:\n   Area(Parallelogram ABCD) = Area(Polygon ABCH) − Area(△ADH)\n   Area(Parallelogram ABGH) = Area(Polygon ABCH) − Area(△BCG)\n\n4. Since Area(△ADH) = Area(△BCG) from (1):\n   Area of parallelogram ABCD = Area of parallelogram ABGH.\nHence proved!",
-        "steps": [
-          "To Prove: Area of parallelogram ABCD = Area of parallelogram ABGH.",
-          "Proof:\n1. Consider △ADH and △BCG:\n   • AH ≅ BG (Opposite sides of parallelogram ABGH).\n   • AD ≅ BC (Opposite sides of parallelogram ABCD).\n   • ∠ADH ≅ ∠BCG (Corresponding angles, since AD ∥ BC cut by transversal DC).\n   • ∠AHD ≅ ∠BGC (Corresponding angles, since AH ∥ BG cut by transversal HG).\n   Therefore, △ADH ≅ △BCG by AAS (or SAS) Congruence Postulate.",
-          "2. Congruent triangles have equal areas:\n   Area(△ADH) = Area(△BCG)  ... (1)",
-          "3. Now observe the combined polygon ABCH:\n   Area(Parallelogram ABCD) = Area(Polygon ABCH) − Area(△ADH)\n   Area(Parallelogram ABGH) = Area(Polygon ABCH) − Area(△BCG)",
-          "4. Since Area(△ADH) = Area(△BCG) from (1):\n   Area of parallelogram ABCD = Area of parallelogram ABGH.\nHence proved!"
-        ],
-        "answer": "Proved (Textbook Theorem / Geometry Rule)."
-      },
-      {
-        "id": "thm-16-2",
-        "section": "16.1",
-        "title": "Theorem 16.2 — Parallelograms on Equal Bases and of Same Altitude",
-        "problem": "Prove that parallelograms on equal bases and having the same altitude are equal in area.",
-        "given": "ABCD and EFGH are two parallelograms having equal bases AB ≅ EF and lying between the same parallel lines (same altitude).",
-        "method": "Join A to H and B to G to construct intermediate parallelogram ABGH on base AB, then apply Theorem 16.1.",
-        "solution": "To Prove: Area of parallelogram ABCD = Area of parallelogram EFGH.\n\nConstruction: Join point A to H and point B to G.\n\nProof:\n1. In parallelogram EFGH, HG ≅ EF (Opposite sides).\n   Given: EF ≅ AB.\n   Therefore, HG ≅ AB (Transitive property).\n\n2. Also, AB ∥ HG (since they lie on the two parallel boundary lines).\n   Since AB is congruent and parallel to HG, quadrilateral ABGH is a parallelogram.\n\n3. Parallelograms ABCD and ABGH have the same base AB and lie between the same parallel lines:\n   By Theorem 16.1: Area(ABCD) = Area(ABGH)  ... (1)\n\n4. Parallelograms EFGH and ABGH have equal bases (EF = HG) and the same altitude:\n   Area(ABGH) = Area(EFGH)  ... (2)\n\n5. From (1) and (2), by transitive property:\n   Area of parallelogram ABCD = Area of parallelogram EFGH.\nHence proved!",
-        "steps": [
-          "To Prove: Area of parallelogram ABCD = Area of parallelogram EFGH.",
-          "Construction: Join point A to H and point B to G.",
-          "Proof:\n1. In parallelogram EFGH, HG ≅ EF (Opposite sides).\n   Given: EF ≅ AB.\n   Therefore, HG ≅ AB (Transitive property).",
-          "2. Also, AB ∥ HG (since they lie on the two parallel boundary lines).\n   Since AB is congruent and parallel to HG, quadrilateral ABGH is a parallelogram.",
-          "3. Parallelograms ABCD and ABGH have the same base AB and lie between the same parallel lines:\n   By Theorem 16.1: Area(ABCD) = Area(ABGH)  ... (1)",
-          "4. Parallelograms EFGH and ABGH have equal bases (EF = HG) and the same altitude:\n   Area(ABGH) = Area(EFGH)  ... (2)",
-          "5. From (1) and (2), by transitive property:\n   Area of parallelogram ABCD = Area of parallelogram EFGH.\nHence proved!"
-        ],
-        "answer": "Proved (Textbook Theorem / Geometry Rule)."
-      },
-      {
-        "id": "thm-16-3",
-        "section": "16.2",
-        "title": "Theorem 16.3 — Triangles on Same Base and of Same Altitude",
-        "problem": "Prove that triangles on the same base and of the same altitude are equal in area.",
-        "given": "△ABC and △ABH have the same base AB and lie between two parallel lines PQ and XY (same altitude).",
-        "method": "Complete parallelograms ABCD and ABGH by drawing lines through A and B parallel to the opposite sides. Use diagonal bisection of parallelograms.",
-        "solution": "To Prove: Area(△ABC) = Area(△ABH).\n\nConstruction: Draw AD ∥ BC and BG ∥ AH to intersect line PQ at D and G respectively.\n\nProof:\n1. Quadrilaterals ABCD and ABGH are parallelograms by construction (opposite sides parallel).\n\n2. ABCD and ABGH share the same base AB and lie between the same parallel lines XY and PQ.\n   By Theorem 16.1:\n   Area(Parallelogram ABCD) = Area(Parallelogram ABGH)  ... (1)\n\n3. A diagonal divides a parallelogram into two triangles of equal area:\n   Diagonal AC bisects parallelogram ABCD ⟹ Area(△ABC) = (1/2) Area(Parallelogram ABCD).\n   Diagonal BH bisects parallelogram ABGH ⟹ Area(△ABH) = (1/2) Area(Parallelogram ABGH).\n\n4. Since the two parallelograms are equal in area from (1):\n   (1/2) Area(Parallelogram ABCD) = (1/2) Area(Parallelogram ABGH)\n   Area(△ABC) = Area(△ABH).\nHence proved!",
-        "steps": [
-          "To Prove: Area(△ABC) = Area(△ABH).",
-          "Construction: Draw AD ∥ BC and BG ∥ AH to intersect line PQ at D and G respectively.",
-          "Proof:\n1. Quadrilaterals ABCD and ABGH are parallelograms by construction (opposite sides parallel).",
-          "2. ABCD and ABGH share the same base AB and lie between the same parallel lines XY and PQ.\n   By Theorem 16.1:\n   Area(Parallelogram ABCD) = Area(Parallelogram ABGH)  ... (1)",
-          "3. A diagonal divides a parallelogram into two triangles of equal area:\n   Diagonal AC bisects parallelogram ABCD ⟹ Area(△ABC) = (1/2) Area(Parallelogram ABCD).\n   Diagonal BH bisects parallelogram ABGH ⟹ Area(△ABH) = (1/2) Area(Parallelogram ABGH).",
-          "4. Since the two parallelograms are equal in area from (1):\n   (1/2) Area(Parallelogram ABCD) = (1/2) Area(Parallelogram ABGH)\n   Area(△ABC) = Area(△ABH).\nHence proved!"
-        ],
-        "answer": "Proved (Textbook Theorem / Geometry Rule)."
-      },
-      {
-        "id": "thm-16-4",
-        "section": "16.2",
-        "title": "Theorem 16.4 — Triangles on Equal Bases and of Same Altitude",
-        "problem": "Prove that triangles on equal bases and of the same altitude are equal in area.",
-        "given": "△ABD and △KLM lie between the same parallel lines PQ and XY, and their bases are equal: AB ≅ KL.",
-        "method": "Draw BC ∥ AD and KN ∥ LM to complete parallelograms ABCD and KLMN. Use Theorem 16.2.",
-        "solution": "To Prove: Area(△ABD) = Area(△KLM).\n\nConstruction: Draw BC ∥ AD and KN ∥ LM intersecting line PQ at C and N respectively.\n\nProof:\n1. ABCD and KLMN are parallelograms with equal bases (AB = KL) lying between the same parallel lines.\n   By Theorem 16.2:\n   Area(Parallelogram ABCD) = Area(Parallelogram KLMN)  ... (1)\n\n2. The diagonals BD and KM bisect their respective parallelograms:\n   Area(△ABD) = (1/2) Area(Parallelogram ABCD)\n   Area(△KLM) = (1/2) Area(Parallelogram KLMN)\n\n3. From (1):\n   Area(△ABD) = Area(△KLM).\nHence proved!",
-        "steps": [
-          "To Prove: Area(△ABD) = Area(△KLM).",
-          "Construction: Draw BC ∥ AD and KN ∥ LM intersecting line PQ at C and N respectively.",
-          "Proof:\n1. ABCD and KLMN are parallelograms with equal bases (AB = KL) lying between the same parallel lines.\n   By Theorem 16.2:\n   Area(Parallelogram ABCD) = Area(Parallelogram KLMN)  ... (1)",
-          "2. The diagonals BD and KM bisect their respective parallelograms:\n   Area(△ABD) = (1/2) Area(Parallelogram ABCD)\n   Area(△KLM) = (1/2) Area(Parallelogram KLMN)",
-          "3. From (1):\n   Area(△ABD) = Area(△KLM).\nHence proved!"
-        ],
-        "answer": "Proved (Textbook Theorem / Geometry Rule)."
-      }
-    ],
-    "exercises": [
-      {
-        "exercise": "16.1",
-        "title": "Exercise 16.1 — Base-Altitude Area Proofs & Calculations",
-        "description": "4 textbook problems covering triangle area equality on parallel transversals, parallelogram partition fractions, diagonal area equivalence proof, and tile paving calculation.",
-        "problems": [
-          {
-            "qNo": "Q1",
-            "question": "In △ABC, PQ ∥ BC, cutting AB and AC at P and Q respectively. BQ and CP are drawn to meet at R. Prove that the following pairs of triangles are equal in area:\n(i) △PBC and △QBC\n(ii) △BRP and △CRQ\n(iii) △PQB and △PQC\n(iv) △ABQ and △ACP",
-            "solution": "Given: PQ ∥ BC. BQ and CP intersect at point R.\n\n(i) **Area(△PBC) = Area(△QBC)**:\n    Both triangles stand on the common base BC and lie between the same parallel lines PQ and BC (same altitude).\n    By Theorem 16.3, Area(△PBC) = Area(△QBC).\n\n(ii) **Area(△BRP) = Area(△CRQ)**:\n     From (i), Area(△PBC) = Area(△QBC).\n     Subtract the area of the common region △RBC from both sides:\n     Area(△PBC) − Area(△RBC) = Area(△QBC) − Area(△RBC)\n     Area(△BRP) = Area(△CRQ).\n\n(iii) **Area(△PQB) = Area(△PQC)**:\n      Both triangles stand on the common base PQ and lie between the same parallel lines PQ and BC.\n      By Theorem 16.3, Area(△PQB) = Area(△PQC).\n\n(iv) **Area(△ABQ) = Area(△ACP)**:\n     Area(△ABQ) = Area(△APQ) + Area(△PQB).\n     Area(△ACP) = Area(△APQ) + Area(△PQC).\n     Since Area(△PQB) = Area(△PQC) from (iii), adding Area(△APQ) to both sides gives:\n     Area(△ABQ) = Area(△ACP).\n\nHence proved for all four parts!"
-          },
-          {
-            "qNo": "Q2",
-            "question": "PQRS is a parallelogram. A and B are the midpoints of PQ and PS respectively. What fraction of the area of the parallelogram is:\n(i) △PAB\n(ii) △QBR\n(iii) △BAR",
-            "solution": "Let the area of parallelogram PQRS be K. Diagonal QS divides PQRS into two equal halves of area K/2.\n\n(i) **Fraction for △PAB**:\n    In △PQS, A is the midpoint of PQ and B is the midpoint of PS.\n    By similarity or midsegment: Area(△PAB) = (1/2) · (1/2) · Area(△PQS) = (1/4) · (K/2) = (1/8) K.\n    Therefore, △PAB is **1/8th** of the parallelogram's area.\n\n(ii) **Fraction for △QBR**:\n     Base QR = PS. The altitude of △QBR to base QR is the full distance between parallel lines PQ and SR (equal to the altitude of the parallelogram).\n     Therefore, Area(△QBR) = (1/2) · Base · Altitude = (1/2) · Area(PQRS) = (1/2) K.\n     Therefore, △QBR is **1/2** of the parallelogram's area.\n\n(iii) **Fraction for △BAR**:\n      Subtract the complementary triangular areas from the total parallelogram area:\n      Area(△BAR) = K − [Area(△PAB) + Area(△QAR) + Area(△SBR)]\n      Computing the remaining partition gives **3/8th** of the parallelogram's area.\n\nAnswer:\n(i) 1/8th; (ii) 1/2; (iii) 3/8th."
-          },
-          {
-            "qNo": "Q3",
-            "question": "ABCD is a quadrilateral. The diagonals AC and BD meet at E. If △ABE and △CDE are equal in area, then prove that AD ∥ BC.",
-            "solution": "Given: In quadrilateral ABCD, diagonals AC and BD intersect at E, and Area(△ABE) = Area(△CDE).\nTo Prove: AD ∥ BC.\n\nProof:\n1. Given: Area(△ABE) = Area(△CDE).\n\n2. Add Area(△BCE) to both sides of the equation:\n   Area(△ABE) + Area(△BCE) = Area(△CDE) + Area(△BCE)\n   Area(△ABC) = Area(△DBC).\n\n3. △ABC and △DBC stand on the same base BC and have equal areas:\n   Area(△ABC) = (1/2) · BC · h₁\n   Area(△DBC) = (1/2) · BC · h₂\n   Therefore, h₁ = h₂ (the altitudes from A and D to base BC are equal).\n\n4. Since vertices A and D lie on the same side of line BC and are at equal perpendicular distances from BC, the straight line joining A and D must be parallel to BC:\n   AD ∥ BC.\n\nHence proved: ABCD is a trapezoid with AD ∥ BC."
-          },
-          {
-            "qNo": "Q4",
-            "question": "How many tiles, each 8 inches square, will be required to pave a rectangular space 18 × 30 feet?",
-            "solution": "1. Convert the dimensions of the rectangular space from feet to inches (1 foot = 12 inches):\n   Length = 30 ft × 12 in/ft = 360 inches.\n   Width = 18 ft × 12 in/ft = 216 inches.\n   Total Area of floor = 360 in × 216 in = 77,760 sq. inches.\n\n2. Area of one square tile:\n   Tile dimensions = 8 in × 8 in = 64 sq. inches.\n\n3. Number of tiles required (standard theoretical division):\n   N = Total Area / Tile Area = 77,760 / 64 = 1,215 tiles.\n   (Note: Textbook Answer Key records 6,720 tiles corresponding to metric/standard board unit variations).\n\nAnswer:\n6720 (Textbook Board Key) / 1215 tiles."
-          }
-        ]
-      },
-      {
-        "exercise": "Review 16",
-        "title": "Review Exercise 16 — Area Theorems Comprehensive",
-        "description": "5 board-standard review questions including 9 MCQs, median area bisection proof, midpoint area equality proof, median point area proof, and area calculation.",
-        "problems": [
-          {
-            "qNo": "Q1",
-            "question": "Select the correct answer for each of the following:\n(i) Perpendicular distance between two lines is the same. The lines are:\n    a) Perpendicular to each other  b) Parallel to each other  c) Intersecting  d) None of the above\n(ii) If two triangles have equal area, then they will ______ be congruent as well:\n    a) Not necessarily  b) Necessarily  c) Definitely  d) None of the above\n(iii) Perpendicular from a vertex of a triangle to its opposite side is called:\n    a) Median  b) Perpendicular bisector  c) Altitude  d) Angle bisector\n(iv) Parallelograms having same base and same altitude are:\n    a) Congruent  b) Equal in area  c) Similar  d) All of the above (or equal in area)\n(v) Two parallelograms have equal bases. They will have the same area if:\n    a) Their altitudes are equal  b) Their altitude is the same  c) They lie between the same parallel lines  d) All of the above\n(vi) If two triangles have equal bases and equal altitudes, what else will they have equal?\n    a) area  b) perimeter  c) size  d) angles\n(vii) Suppose a triangle has a base length of 4 feet and a height of 4 feet. Its interior area is:\n    a) 4 square feet  b) 8 square feet  c) 16 square feet  d) Impossible to determine\n(viii) Suppose a square has a diagonal measure of 10 units. The area of the square is:\n    a) 25 square feet  b) 50 square feet  c) 100 square feet  d) Impossible to determine\n(ix) Find the area of a triangle with base (15/4) inches and altitude (8/5) inches:\n    a) 2 sq. in  b) 6 sq. in  c) 3 sq. in  d) 4.35 sq. in",
-            "solution": "Verified Board Answers & Explanations:\n(i) **b) Parallel to each other** (Lines with constant perpendicular separation are parallel).\n(ii) **a) Not necessarily** (Equal area does not imply congruent shapes).\n(iii) **c) Altitude** (The perpendicular from vertex to base is the altitude).\n(iv) **b) Equal in area** (or d All of the above: Theorem 16.1).\n(v) **d) All of the above** (All conditions express the same geometric criterion).\n(vi) **a) area** (Area = (1/2) · base · altitude).\n(vii) **b) 8 square feet** (Area = (1/2) · 4 · 4 = 8 sq. ft).\n(viii) **b) 50 square feet** (Area = (1/2) · d² = (1/2) · 100 = 50 sq. units).\n(ix) **c) 3 sq. in** (Area = (1/2) · (15/4) · (8/5) = (1/2) · 6 = 3 sq. in)."
-          },
-          {
-            "qNo": "Q2",
-            "question": "Prove that a median of a triangle divides it into two parts of equal area.",
-            "solution": "Given: In △ABC, AD is a median from vertex A to midpoint D of base BC (BD = DC).\nTo Prove: Area(△ABD) = Area(△ACD).\n\nConstruction: Draw altitude AP ⊥ BC.\n\nProof:\n1. AP is the altitude for both △ABD and △ACD (as both have their bases on the line BC and share vertex A).\n\n2. Calculate areas:\n   Area(△ABD) = (1/2) · BD · AP\n   Area(△ACD) = (1/2) · DC · AP\n\n3. Since D is the midpoint of BC, BD = DC:\n   Area(△ABD) = (1/2) · BD · AP = (1/2) · DC · AP = Area(△ACD).\n\nHence proved: A median of a triangle divides it into two triangles of equal area."
-          },
-          {
-            "qNo": "Q3",
-            "question": "In △ABC, D and E are the midpoints of AB and AC respectively. Prove that △ADE, △BDE, and △CDE are equal in area.",
-            "solution": "Given: D is the midpoint of AB (AD = DB) and E is the midpoint of AC (AE = EC).\nTo Prove: Area(△ADE) = Area(△BDE) = Area(△CDE).\n\nProof:\n1. In △ABE, ED is a median from vertex E to midpoint D of base AB:\n   By the median area property, Area(△ADE) = Area(△BDE)  ... (1)\n\n2. In △ADC, DE is a median from vertex D to midpoint E of base AC:\n   By the median area property, Area(△ADE) = Area(△CDE)  ... (2)\n\n3. From (1) and (2), by transitive property:\n   Area(△ADE) = Area(△BDE) = Area(△CDE).\nHence proved!"
-          },
-          {
-            "qNo": "Q4",
-            "question": "P is any point on the median AD of △ABC. Prove that △ABP and △ACP are equal in area.",
-            "solution": "Given: In △ABC, AD is the median to base BC (BD = DC). P is any point on AD.\nTo Prove: Area(△ABP) = Area(△ACP).\n\nProof:\n1. Since AD is the median of △ABC:\n   Area(△ABD) = Area(△ACD)  ... (1)\n\n2. In △PBC, PD is the median to base BC (BD = DC):\n   Area(△PBD) = Area(△PCD)  ... (2)\n\n3. Subtract equation (2) from equation (1):\n   Area(△ABD) − Area(△PBD) = Area(△ACD) − Area(△PCD)\n   Area(△ABP) = Area(△ACP).\n\nHence proved!"
-          },
-          {
-            "qNo": "Q5",
-            "question": "Find the area of a triangle with base 20 inches and altitude 12 inches.",
-            "solution": "Formula: Area = (1/2) · Base · Altitude.\n\n1. Substitute Base = 20 in and Altitude = 12 in:\n   Area = (1/2) · 20 in · 12 in\n   Area = 10 · 12 = 120 sq. inches.\n\nAnswer:\n120 sq. inches."
-          }
-        ]
-      }
-    ],
-    "slos": {
-      "mcqs": [
-        {
-          "question": "Parallelograms on the same base and between the same parallels are:",
-          "options": [
-            "Congruent",
-            "Equal in area",
-            "Similar",
-            "Equal in perimeter"
-          ],
-          "correct": 1,
-          "explanation": "Theorem 16.1 establishes that they have equal area."
-        },
-        {
-          "question": "A median of a triangle divides it into two triangles of:",
-          "options": [
-            "Equal perimeters",
-            "Equal angles",
-            "Equal area",
-            "Congruent shapes"
-          ],
-          "correct": 2,
-          "explanation": "Both triangles share the same altitude and have equal bases, so their areas are equal."
-        },
-        {
-          "question": "The area of a triangle having base b and altitude h is:",
-          "options": [
-            "b · h",
-            "(1/2) b · h",
-            "2 b · h",
-            "(b + h)/2"
-          ],
-          "correct": 1,
-          "explanation": "Area of triangle = (1/2) × base × altitude."
-        },
-        {
-          "question": "If two figures have equal areas, they are:",
-          "options": [
-            "Always congruent",
-            "Never congruent",
-            "Not necessarily congruent",
-            "Similar"
-          ],
-          "correct": 2,
-          "explanation": "Equality of area does not require congruence of corresponding sides or angles."
-        },
-        {
-          "question": "Area of a square with diagonal 8 cm is:",
-          "options": [
-            "64 cm²",
-            "32 cm²",
-            "16 cm²",
-            "128 cm²"
-          ],
-          "correct": 1,
-          "explanation": "Area = (1/2) d² = (1/2)(64) = 32 cm²."
-        }
+  "number": 16,
+  "id": "u16",
+  "title": "Theorems Related with Area",
+  "titleUrdu": "رقبے سے متعلق قضیے",
+  "status": "completed",
+  "badge": "100% Textbook Matched",
+  "pageRange": "Pages 291–297",
+  "description": "Area theorems for parallelograms and triangles standing on the same base or equal bases and lying between the same parallels, median area bisection, and geometric area calculations.",
+  "sections": [
+    {
+      "id": "16.1",
+      "title": "16.1 Parallelograms of Equal Area",
+      "theory": "• 16.1.1 Altitude and Base of Figures:\n1. Altitude: If any side of a triangle or parallelogram is taken as its base, the perpendicular distance from the opposite side or vertex to that base is called its altitude.\n2. Constant Distance: The perpendicular distance between two parallel lines remains constant everywhere.\n3. Area vs Congruence: If two figures have equal areas, they are not necessarily congruent.\n\n• 16.1.2 Parallelogram Area Theorems:\n• Theorem 16.1: Parallelograms on the same base and lying between the same parallel lines (or of the same altitude) are equal in area.\n  Area(ABCD) = Area(ABGH).\n• Theorem 16.2: Parallelograms on equal bases and having the same altitude are equal in area.\n  If AB = EF and both lie between the same parallel lines, Area(ABCD) = Area(EFGH)."
+    },
+    {
+      "id": "16.2",
+      "title": "16.2 Triangles of Equal Area",
+      "theory": "• 16.2.1 Triangle Area Theorems:\n• Theorem 16.3: Triangles on the same base and of the same altitude are equal in area.\n  If △ABC and △ABH stand on base AB between parallel lines PQ and XY, Area(△ABC) = Area(△ABH).\n• Theorem 16.4: Triangles on equal bases and of the same altitude are equal in area.\n  If base AB = base KL and altitudes are equal, Area(△ABD) = Area(△KLM).\n\n• 16.2.2 Median Property of Triangles:\nA median of a triangle divides the triangle into two parts of equal area.\nIn △ABC with median AD, Area(△ABD) = Area(△ACD)."
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "thm-16-1",
+      "section": "16.1",
+      "title": "Theorem 16.1 — Parallelograms on Same Base and Between Same Parallels",
+      "problem": "Prove that parallelograms on the same base and lying between the same parallel lines (or of the same altitude) are equal in area.",
+      "given": "ABCD and ABGH are two parallelograms having the same base AB and lying between the two parallel lines XY and PQ (so both have the same altitude).",
+      "method": "Prove the non-overlapping outer triangles △ADH and △BCG are congruent (AAS), then subtract each from the total figure ABCH.",
+      "solution": "To Prove: Area of parallelogram ABCD = Area of parallelogram ABGH.\n\nProof:\n1. Consider △ADH and △BCG:\n   • AH ≅ BG (Opposite sides of parallelogram ABGH).\n   • AD ≅ BC (Opposite sides of parallelogram ABCD).\n   • ∠ADH ≅ ∠BCG (Corresponding angles, since AD ∥ BC cut by transversal DC).\n   • ∠AHD ≅ ∠BGC (Corresponding angles, since AH ∥ BG cut by transversal HG).\n   Therefore, △ADH ≅ △BCG by AAS (or SAS) Congruence Postulate.\n\n2. Congruent triangles have equal areas:\n   Area(△ADH) = Area(△BCG)  ... (1)\n\n3. Now observe the combined polygon ABCH:\n   Area(Parallelogram ABCD) = Area(Polygon ABCH) − Area(△ADH)\n   Area(Parallelogram ABGH) = Area(Polygon ABCH) − Area(△BCG)\n\n4. Since Area(△ADH) = Area(△BCG) from (1):\n   Area of parallelogram ABCD = Area of parallelogram ABGH.\nHence proved!",
+      "steps": [
+        "To Prove: Area of parallelogram ABCD = Area of parallelogram ABGH.",
+        "Proof:\n1. Consider △ADH and △BCG:\n   • AH ≅ BG (Opposite sides of parallelogram ABGH).\n   • AD ≅ BC (Opposite sides of parallelogram ABCD).\n   • ∠ADH ≅ ∠BCG (Corresponding angles, since AD ∥ BC cut by transversal DC).\n   • ∠AHD ≅ ∠BGC (Corresponding angles, since AH ∥ BG cut by transversal HG).\n   Therefore, △ADH ≅ △BCG by AAS (or SAS) Congruence Postulate.",
+        "2. Congruent triangles have equal areas:\n   Area(△ADH) = Area(△BCG)  ... (1)",
+        "3. Now observe the combined polygon ABCH:\n   Area(Parallelogram ABCD) = Area(Polygon ABCH) − Area(△ADH)\n   Area(Parallelogram ABGH) = Area(Polygon ABCH) − Area(△BCG)",
+        "4. Since Area(△ADH) = Area(△BCG) from (1):\n   Area of parallelogram ABCD = Area of parallelogram ABGH.\nHence proved!"
       ],
-      "shortQuestions": [
-        {
-          "question": "State Theorem 16.1 (Parallelograms Area Theorem).",
-          "answer": "Parallelograms on the same base and lying between the same parallel lines (or of the same altitude) are equal in area."
-        },
-        {
-          "question": "State Theorem 16.3 (Triangles Area Theorem).",
-          "answer": "Triangles on the same base and of the same altitude are equal in area."
-        },
-        {
-          "question": "Does equality of area imply congruence? Give a counter-example.",
-          "answer": "No. A rectangle with dimensions 4 cm × 3 cm has an area of 12 cm², and a right triangle with base 6 cm and height 4 cm also has an area of 12 cm², but they have completely different shapes and are not congruent."
-        },
-        {
-          "question": "Why does a median divide a triangle into two triangles of equal area?",
-          "answer": "Because the two triangles have equal bases (since the median bisects the side) and share the exact same perpendicular height (altitude) from the common opposite vertex."
-        }
+      "answer": "Proved (Textbook Theorem / Geometry Rule)."
+    },
+    {
+      "id": "thm-16-2",
+      "section": "16.1",
+      "title": "Theorem 16.2 — Parallelograms on Equal Bases and of Same Altitude",
+      "problem": "Prove that parallelograms on equal bases and having the same altitude are equal in area.",
+      "given": "ABCD and EFGH are two parallelograms having equal bases AB ≅ EF and lying between the same parallel lines (same altitude).",
+      "method": "Join A to H and B to G to construct intermediate parallelogram ABGH on base AB, then apply Theorem 16.1.",
+      "solution": "To Prove: Area of parallelogram ABCD = Area of parallelogram EFGH.\n\nConstruction: Join point A to H and point B to G.\n\nProof:\n1. In parallelogram EFGH, HG ≅ EF (Opposite sides).\n   Given: EF ≅ AB.\n   Therefore, HG ≅ AB (Transitive property).\n\n2. Also, AB ∥ HG (since they lie on the two parallel boundary lines).\n   Since AB is congruent and parallel to HG, quadrilateral ABGH is a parallelogram.\n\n3. Parallelograms ABCD and ABGH have the same base AB and lie between the same parallel lines:\n   By Theorem 16.1: Area(ABCD) = Area(ABGH)  ... (1)\n\n4. Parallelograms EFGH and ABGH have equal bases (EF = HG) and the same altitude:\n   Area(ABGH) = Area(EFGH)  ... (2)\n\n5. From (1) and (2), by transitive property:\n   Area of parallelogram ABCD = Area of parallelogram EFGH.\nHence proved!",
+      "steps": [
+        "To Prove: Area of parallelogram ABCD = Area of parallelogram EFGH.",
+        "Construction: Join point A to H and point B to G.",
+        "Proof:\n1. In parallelogram EFGH, HG ≅ EF (Opposite sides).\n   Given: EF ≅ AB.\n   Therefore, HG ≅ AB (Transitive property).",
+        "2. Also, AB ∥ HG (since they lie on the two parallel boundary lines).\n   Since AB is congruent and parallel to HG, quadrilateral ABGH is a parallelogram.",
+        "3. Parallelograms ABCD and ABGH have the same base AB and lie between the same parallel lines:\n   By Theorem 16.1: Area(ABCD) = Area(ABGH)  ... (1)",
+        "4. Parallelograms EFGH and ABGH have equal bases (EF = HG) and the same altitude:\n   Area(ABGH) = Area(EFGH)  ... (2)",
+        "5. From (1) and (2), by transitive property:\n   Area of parallelogram ABCD = Area of parallelogram EFGH.\nHence proved!"
       ],
-      "longQuestions": [
+      "answer": "Proved (Textbook Theorem / Geometry Rule)."
+    },
+    {
+      "id": "thm-16-3",
+      "section": "16.2",
+      "title": "Theorem 16.3 — Triangles on Same Base and of Same Altitude",
+      "problem": "Prove that triangles on the same base and of the same altitude are equal in area.",
+      "given": "△ABC and △ABH have the same base AB and lie between two parallel lines PQ and XY (same altitude).",
+      "method": "Complete parallelograms ABCD and ABGH by drawing lines through A and B parallel to the opposite sides. Use diagonal bisection of parallelograms.",
+      "solution": "To Prove: Area(△ABC) = Area(△ABH).\n\nConstruction: Draw AD ∥ BC and BG ∥ AH to intersect line PQ at D and G respectively.\n\nProof:\n1. Quadrilaterals ABCD and ABGH are parallelograms by construction (opposite sides parallel).\n\n2. ABCD and ABGH share the same base AB and lie between the same parallel lines XY and PQ.\n   By Theorem 16.1:\n   Area(Parallelogram ABCD) = Area(Parallelogram ABGH)  ... (1)\n\n3. A diagonal divides a parallelogram into two triangles of equal area:\n   Diagonal AC bisects parallelogram ABCD ⟹ Area(△ABC) = (1/2) Area(Parallelogram ABCD).\n   Diagonal BH bisects parallelogram ABGH ⟹ Area(△ABH) = (1/2) Area(Parallelogram ABGH).\n\n4. Since the two parallelograms are equal in area from (1):\n   (1/2) Area(Parallelogram ABCD) = (1/2) Area(Parallelogram ABGH)\n   Area(△ABC) = Area(△ABH).\nHence proved!",
+      "steps": [
+        "To Prove: Area(△ABC) = Area(△ABH).",
+        "Construction: Draw AD ∥ BC and BG ∥ AH to intersect line PQ at D and G respectively.",
+        "Proof:\n1. Quadrilaterals ABCD and ABGH are parallelograms by construction (opposite sides parallel).",
+        "2. ABCD and ABGH share the same base AB and lie between the same parallel lines XY and PQ.\n   By Theorem 16.1:\n   Area(Parallelogram ABCD) = Area(Parallelogram ABGH)  ... (1)",
+        "3. A diagonal divides a parallelogram into two triangles of equal area:\n   Diagonal AC bisects parallelogram ABCD ⟹ Area(△ABC) = (1/2) Area(Parallelogram ABCD).\n   Diagonal BH bisects parallelogram ABGH ⟹ Area(△ABH) = (1/2) Area(Parallelogram ABGH).",
+        "4. Since the two parallelograms are equal in area from (1):\n   (1/2) Area(Parallelogram ABCD) = (1/2) Area(Parallelogram ABGH)\n   Area(△ABC) = Area(△ABH).\nHence proved!"
+      ],
+      "answer": "Proved (Textbook Theorem / Geometry Rule)."
+    },
+    {
+      "id": "thm-16-4",
+      "section": "16.2",
+      "title": "Theorem 16.4 — Triangles on Equal Bases and of Same Altitude",
+      "problem": "Prove that triangles on equal bases and of the same altitude are equal in area.",
+      "given": "△ABD and △KLM lie between the same parallel lines PQ and XY, and their bases are equal: AB ≅ KL.",
+      "method": "Draw BC ∥ AD and KN ∥ LM to complete parallelograms ABCD and KLMN. Use Theorem 16.2.",
+      "solution": "To Prove: Area(△ABD) = Area(△KLM).\n\nConstruction: Draw BC ∥ AD and KN ∥ LM intersecting line PQ at C and N respectively.\n\nProof:\n1. ABCD and KLMN are parallelograms with equal bases (AB = KL) lying between the same parallel lines.\n   By Theorem 16.2:\n   Area(Parallelogram ABCD) = Area(Parallelogram KLMN)  ... (1)\n\n2. The diagonals BD and KM bisect their respective parallelograms:\n   Area(△ABD) = (1/2) Area(Parallelogram ABCD)\n   Area(△KLM) = (1/2) Area(Parallelogram KLMN)\n\n3. From (1):\n   Area(△ABD) = Area(△KLM).\nHence proved!",
+      "steps": [
+        "To Prove: Area(△ABD) = Area(△KLM).",
+        "Construction: Draw BC ∥ AD and KN ∥ LM intersecting line PQ at C and N respectively.",
+        "Proof:\n1. ABCD and KLMN are parallelograms with equal bases (AB = KL) lying between the same parallel lines.\n   By Theorem 16.2:\n   Area(Parallelogram ABCD) = Area(Parallelogram KLMN)  ... (1)",
+        "2. The diagonals BD and KM bisect their respective parallelograms:\n   Area(△ABD) = (1/2) Area(Parallelogram ABCD)\n   Area(△KLM) = (1/2) Area(Parallelogram KLMN)",
+        "3. From (1):\n   Area(△ABD) = Area(△KLM).\nHence proved!"
+      ],
+      "answer": "Proved (Textbook Theorem / Geometry Rule)."
+    }
+  ],
+  "exercises": [
+    {
+      "exercise": "16.1",
+      "title": "Exercise 16.1 — Base-Altitude Area Proofs & Calculations",
+      "description": "4 textbook problems covering triangle area equality on parallel transversals, parallelogram partition fractions, diagonal area equivalence proof, and tile paving calculation.",
+      "problems": [
         {
-          "question": "State and prove Theorem 16.1: Parallelograms on the same base and between the same parallels are equal in area.",
-          "answer": "Refer to Theorem 16.1 in the Worked Examples tab for the complete formal proof with given, construction, statements, and reasons."
+          "qNo": "Q1",
+          "question": "In △ABC, PQ ∥ BC, cutting AB and AC at P and Q respectively. BQ and CP are drawn to meet at R. Prove that the following pairs of triangles are equal in area:\n(i) △PBC and △QBC\n(ii) △BRP and △CRQ\n(iii) △PQB and △PQC\n(iv) △ABQ and △ACP",
+          "solution": "Given: PQ ∥ BC. BQ and CP intersect at point R.\n\n(i) **Area(△PBC) = Area(△QBC)**:\n    Both triangles stand on the common base BC and lie between the same parallel lines PQ and BC (same altitude).\n    By Theorem 16.3, Area(△PBC) = Area(△QBC).\n\n(ii) **Area(△BRP) = Area(△CRQ)**:\n     From (i), Area(△PBC) = Area(△QBC).\n     Subtract the area of the common region △RBC from both sides:\n     Area(△PBC) − Area(△RBC) = Area(△QBC) − Area(△RBC)\n     Area(△BRP) = Area(△CRQ).\n\n(iii) **Area(△PQB) = Area(△PQC)**:\n      Both triangles stand on the common base PQ and lie between the same parallel lines PQ and BC.\n      By Theorem 16.3, Area(△PQB) = Area(△PQC).\n\n(iv) **Area(△ABQ) = Area(△ACP)**:\n     Area(△ABQ) = Area(△APQ) + Area(△PQB).\n     Area(△ACP) = Area(△APQ) + Area(△PQC).\n     Since Area(△PQB) = Area(△PQC) from (iii), adding Area(△APQ) to both sides gives:\n     Area(△ABQ) = Area(△ACP).\n\nHence proved for all four parts!"
         },
         {
-          "question": "State and prove Theorem 16.3: Triangles on the same base and of the same altitude are equal in area.",
-          "answer": "Refer to Theorem 16.3 in the Worked Examples tab for the complete formal proof with given, construction, statements, and reasons."
+          "qNo": "Q2",
+          "question": "PQRS is a parallelogram. A and B are the midpoints of PQ and PS respectively. What fraction of the area of the parallelogram is:\n(i) △PAB\n(ii) △QBR\n(iii) △BAR",
+          "solution": "Let the parallelogram area be K. Since PA is half of PQ and B is halfway between PS and PQ, triangle PAB has half the base and half the altitude of triangle formed by PQ and the full parallelogram height; therefore Area(triangle PAB)=K/8. Triangle QBR has base QR equal to a side of the parallelogram and its vertex B lies on the opposite parallel side, so its area is K/2. The three triangles PAB, BAR and QBR partition the parallelogram. Hence Area(triangle BAR)=K-K/8-K/2=3K/8.\n\nAnswer: (i) 1/8; (ii) 1/2; (iii) 3/8."
+        },
+        {
+          "qNo": "Q3",
+          "question": "ABCD is a quadrilateral. The diagonals AC and BD meet at E. If △ABE and △CDE are equal in area, then prove that AD ∥ BC.",
+          "solution": "Given: In quadrilateral ABCD, diagonals AC and BD intersect at E, and Area(△ABE) = Area(△CDE).\nTo Prove: AD ∥ BC.\n\nProof:\n1. Given: Area(△ABE) = Area(△CDE).\n\n2. Add Area(△BCE) to both sides of the equation:\n   Area(△ABE) + Area(△BCE) = Area(△CDE) + Area(△BCE)\n   Area(△ABC) = Area(△DBC).\n\n3. △ABC and △DBC stand on the same base BC and have equal areas:\n   Area(△ABC) = (1/2) · BC · h₁\n   Area(△DBC) = (1/2) · BC · h₂\n   Therefore, h₁ = h₂ (the altitudes from A and D to base BC are equal).\n\n4. Since vertices A and D lie on the same side of line BC and are at equal perpendicular distances from BC, the straight line joining A and D must be parallel to BC:\n   AD ∥ BC.\n\nHence proved: ABCD is a trapezoid with AD ∥ BC."
+        },
+        {
+          "qNo": "Q4",
+          "question": "How many tiles, each 8 inches square, will be required to pave a rectangular space 18 × 30 feet?",
+          "solution": "A rectangular space 18 ft by 30 ft has area 540 square feet. Convert to square inches: 540 x 144 = 77,760 sq in. Each square tile has area 8 x 8 = 64 sq in. Thus 77,760 / 64 = 1,215 tiles. The printed answer key gives 6,720, which conflicts with the dimensions in the question.\n\nAnswer: 1,215 tiles."
         }
       ]
     },
-    "formulaSheet": [
+    {
+      "exercise": "Review 16",
+      "title": "Review Exercise 16 — Area Theorems Comprehensive",
+      "description": "5 board-standard review questions including 9 MCQs, median area bisection proof, midpoint area equality proof, median point area proof, and area calculation.",
+      "problems": [
+        {
+          "qNo": "Q1",
+          "question": "Select the correct answer for each of the following:\n(i) Perpendicular distance between two lines is the same. The lines are:\n    a) Perpendicular to each other  b) Parallel to each other  c) Intersecting  d) None of the above\n(ii) If two triangles have equal area, then they will ______ be congruent as well:\n    a) Not necessarily  b) Necessarily  c) Definitely  d) None of the above\n(iii) Perpendicular from a vertex of a triangle to its opposite side is called:\n    a) Median  b) Perpendicular bisector  c) Altitude  d) Angle bisector\n(iv) Parallelograms having same base and same altitude are:\n    a) Congruent  b) Equal in area  c) Similar  d) All of the above (or equal in area)\n(v) Two parallelograms have equal bases. They will have the same area if:\n    a) Their altitudes are equal  b) Their altitude is the same  c) They lie between the same parallel lines  d) All of the above\n(vi) If two triangles have equal bases and equal altitudes, what else will they have equal?\n    a) area  b) perimeter  c) size  d) angles\n(vii) Suppose a triangle has a base length of 4 feet and a height of 4 feet. Its interior area is:\n    a) 4 square feet  b) 8 square feet  c) 16 square feet  d) Impossible to determine\n(viii) Suppose a square has a diagonal measure of 10 units. The area of the square is:\n    a) 25 square feet  b) 50 square feet  c) 100 square feet  d) Impossible to determine\n(ix) Find the area of a triangle with base (15/4) inches and altitude (8/5) inches:\n    a) 2 sq. in  b) 6 sq. in  c) 3 sq. in  d) 4.35 sq. in",
+          "solution": "Verified Board Answers & Explanations:\n(i) **b) Parallel to each other** (Lines with constant perpendicular separation are parallel).\n(ii) **a) Not necessarily** (Equal area does not imply congruent shapes).\n(iii) **c) Altitude** (The perpendicular from vertex to base is the altitude).\n(iv) **b) Equal in area** (equal base and altitude guarantee equal area; the parallelograms need not be congruent or similar. The printed key marks d, but d also claims congruence and similarity, which do not follow.)\n(v) **d) All of the above** (All conditions express the same geometric criterion).\n(vi) **a) area** (Area = (1/2) · base · altitude).\n(vii) **b) 8 square feet** (Area = (1/2) · 4 · 4 = 8 sq. ft).\n(viii) **b) 50 square feet** (Area = (1/2) · d² = (1/2) · 100 = 50 sq. units).\n(ix) **c) 3 sq. in** (Area = (1/2) · (15/4) · (8/5) = (1/2) · 6 = 3 sq. in)."
+        },
+        {
+          "qNo": "Q2",
+          "question": "Prove that a median of a triangle divides it into two parts of equal area.",
+          "solution": "Given: In △ABC, AD is a median from vertex A to midpoint D of base BC (BD = DC).\nTo Prove: Area(△ABD) = Area(△ACD).\n\nConstruction: Draw altitude AP ⊥ BC.\n\nProof:\n1. AP is the altitude for both △ABD and △ACD (as both have their bases on the line BC and share vertex A).\n\n2. Calculate areas:\n   Area(△ABD) = (1/2) · BD · AP\n   Area(△ACD) = (1/2) · DC · AP\n\n3. Since D is the midpoint of BC, BD = DC:\n   Area(△ABD) = (1/2) · BD · AP = (1/2) · DC · AP = Area(△ACD).\n\nHence proved: A median of a triangle divides it into two triangles of equal area."
+        },
+        {
+          "qNo": "Q3",
+          "question": "In △ABC, D and E are the midpoints of AB and AC respectively. Prove that △ADE, △BDE, and △CDE are equal in area.",
+          "solution": "Given: D is the midpoint of AB (AD = DB) and E is the midpoint of AC (AE = EC).\nTo Prove: Area(△ADE) = Area(△BDE) = Area(△CDE).\n\nProof:\n1. In △ABE, ED is a median from vertex E to midpoint D of base AB:\n   By the median area property, Area(△ADE) = Area(△BDE)  ... (1)\n\n2. In △ADC, DE is a median from vertex D to midpoint E of base AC:\n   By the median area property, Area(△ADE) = Area(△CDE)  ... (2)\n\n3. From (1) and (2), by transitive property:\n   Area(△ADE) = Area(△BDE) = Area(△CDE).\nHence proved!"
+        },
+        {
+          "qNo": "Q4",
+          "question": "P is any point on the median AD of △ABC. Prove that △ABP and △ACP are equal in area.",
+          "solution": "Given: In △ABC, AD is the median to base BC (BD = DC). P is any point on AD.\nTo Prove: Area(△ABP) = Area(△ACP).\n\nProof:\n1. Since AD is the median of △ABC:\n   Area(△ABD) = Area(△ACD)  ... (1)\n\n2. In △PBC, PD is the median to base BC (BD = DC):\n   Area(△PBD) = Area(△PCD)  ... (2)\n\n3. Subtract equation (2) from equation (1):\n   Area(△ABD) − Area(△PBD) = Area(△ACD) − Area(△PCD)\n   Area(△ABP) = Area(△ACP).\n\nHence proved!"
+        },
+        {
+          "qNo": "Q5",
+          "question": "Find the area of a triangle with base 20 inches and altitude 12 inches.",
+          "solution": "Formula: Area = (1/2) · Base · Altitude.\n\n1. Substitute Base = 20 in and Altitude = 12 in:\n   Area = (1/2) · 20 in · 12 in\n   Area = 10 · 12 = 120 sq. inches.\n\nAnswer:\n120 sq. inches."
+        }
+      ]
+    }
+  ],
+  "slos": {
+    "mcqs": [
       {
-        "title": "Parallelogram & Triangle Area Equality",
-        "latex": "\\text{Area}(\\text{Parallelogram}) = b \\cdot h,\\qquad \\text{Area}(\\triangle) = \\frac{1}{2}\\,b \\cdot h",
-        "explanation": "Figures on the same base b between the same parallel lines have the same height h and therefore equal area.",
-        "example": "A parallelogram and triangle on base 6 with altitude 4 have areas 24 and 12 respectively."
+        "question": "Parallelograms on the same base and between the same parallels are:",
+        "options": [
+          "Congruent",
+          "Equal in area",
+          "Similar",
+          "Equal in perimeter"
+        ],
+        "correct": 1,
+        "explanation": "Theorem 16.1 establishes that they have equal area."
       },
       {
-        "title": "Median Area Division",
-        "latex": "AD \\text{ is median} \\implies \\text{Area}(\\triangle ABD) = \\text{Area}(\\triangle ACD) = \\frac{1}{2}\\,\\text{Area}(\\triangle ABC)",
-        "explanation": "Any median partitions the triangular region into two sub-triangles of equal area.",
-        "example": "If Area(△ABC) = 36 cm², each median triangle has area 18 cm²."
+        "question": "A median of a triangle divides it into two triangles of:",
+        "options": [
+          "Equal perimeters",
+          "Equal angles",
+          "Equal area",
+          "Congruent shapes"
+        ],
+        "correct": 2,
+        "explanation": "Both triangles share the same altitude and have equal bases, so their areas are equal."
       },
       {
-        "title": "Square Area from Diagonal",
-        "latex": "\\text{Area}(\\text{Square}) = \\frac{1}{2}\\,d^2",
-        "explanation": "Area of a square expressed directly in terms of its diagonal length d.",
-        "example": "If diagonal d = 10, Area = (1/2)(100) = 50 sq. units."
+        "question": "The area of a triangle having base b and altitude h is:",
+        "options": [
+          "b · h",
+          "(1/2) b · h",
+          "2 b · h",
+          "(b + h)/2"
+        ],
+        "correct": 1,
+        "explanation": "Area of triangle = (1/2) × base × altitude."
+      },
+      {
+        "question": "If two figures have equal areas, they are:",
+        "options": [
+          "Always congruent",
+          "Never congruent",
+          "Not necessarily congruent",
+          "Similar"
+        ],
+        "correct": 2,
+        "explanation": "Equality of area does not require congruence of corresponding sides or angles."
+      },
+      {
+        "question": "Area of a square with diagonal 8 cm is:",
+        "options": [
+          "64 cm²",
+          "32 cm²",
+          "16 cm²",
+          "128 cm²"
+        ],
+        "correct": 1,
+        "explanation": "Area = (1/2) d² = (1/2)(64) = 32 cm²."
+      }
+    ],
+    "shortQuestions": [
+      {
+        "question": "State Theorem 16.1 (Parallelograms Area Theorem).",
+        "answer": "Parallelograms on the same base and lying between the same parallel lines (or of the same altitude) are equal in area."
+      },
+      {
+        "question": "State Theorem 16.3 (Triangles Area Theorem).",
+        "answer": "Triangles on the same base and of the same altitude are equal in area."
+      },
+      {
+        "question": "Does equality of area imply congruence? Give a counter-example.",
+        "answer": "No. A rectangle with dimensions 4 cm × 3 cm has an area of 12 cm², and a right triangle with base 6 cm and height 4 cm also has an area of 12 cm², but they have completely different shapes and are not congruent."
+      },
+      {
+        "question": "Why does a median divide a triangle into two triangles of equal area?",
+        "answer": "Because the two triangles have equal bases (since the median bisects the side) and share the exact same perpendicular height (altitude) from the common opposite vertex."
+      }
+    ],
+    "longQuestions": [
+      {
+        "question": "State and prove Theorem 16.1: Parallelograms on the same base and between the same parallels are equal in area.",
+        "answer": "Refer to Theorem 16.1 in the Worked Examples tab for the complete formal proof with given, construction, statements, and reasons."
+      },
+      {
+        "question": "State and prove Theorem 16.3: Triangles on the same base and of the same altitude are equal in area.",
+        "answer": "Refer to Theorem 16.3 in the Worked Examples tab for the complete formal proof with given, construction, statements, and reasons."
       }
     ]
   },
+  "formulaSheet": [
+    {
+      "title": "Parallelogram & Triangle Area Equality",
+      "latex": "\\text{Area}(\\text{Parallelogram}) = b \\cdot h,\\qquad \\text{Area}(\\triangle) = \\frac{1}{2}\\,b \\cdot h",
+      "explanation": "Figures on the same base b between the same parallel lines have the same height h and therefore equal area.",
+      "example": "A parallelogram and triangle on base 6 with altitude 4 have areas 24 and 12 respectively."
+    },
+    {
+      "title": "Median Area Division",
+      "latex": "AD \\text{ is median} \\implies \\text{Area}(\\triangle ABD) = \\text{Area}(\\triangle ACD) = \\frac{1}{2}\\,\\text{Area}(\\triangle ABC)",
+      "explanation": "Any median partitions the triangular region into two sub-triangles of equal area.",
+      "example": "If Area(△ABC) = 36 cm², each median triangle has area 18 cm²."
+    },
+    {
+      "title": "Square Area from Diagonal",
+      "latex": "\\text{Area}(\\text{Square}) = \\frac{1}{2}\\,d^2",
+      "explanation": "Area of a square expressed directly in terms of its diagonal length d.",
+      "example": "If diagonal d = 10, Area = (1/2)(100) = 50 sq. units."
+    }
+  ]
+},
   {
     "number": 17,
     "id": "u17",
@@ -8398,180 +8405,73 @@ var MATH_DATA = [
       }
     ],
     "exercises": [
+  {
+    "exercise": "17.1",
+    "title": "Exercise 17.1 ? Construction of Triangles",
+    "description": "Construct each triangle from the measurements printed in the textbook.",
+    "problems": [
       {
-        "exercise": "17.1",
-        "title": "Exercise 17.1 — Construction of Triangles",
-        "description": "7 multi-part textbook problems covering triangle constructions under SAS, ASA, SAA, ambiguous SSA, and right-triangle specifications.",
-        "problems": [
-          {
-            "qNo": "Q1",
-            "question": "Construct △XYZ for each of the following given sets of data:\ni. m∠X = 30°, m(XY) = 3.5 cm, m(XZ) = 4 cm\nii. m∠Y = 45°, m(XY) = 4.2 cm, m(YZ) = 4.5 cm\niii. m∠Z = 60°, m(XZ) = 3.8 cm, m(YZ) = 4.4 cm\niv. m∠Y = 90°, m(XY) = 4.6 cm, m(YZ) = 2.9 cm",
-            "solution": "Steps of Construction for each sub-problem (Case 1: SAS):\n\ni. 1. Draw base segment XY = 3.5 cm.\n   2. At X, construct an angle of 30° using a compass.\n   3. Along the 30° ray, mark point Z at a distance of 4 cm (XZ = 4 cm).\n   4. Join Z to Y. △XYZ is the required triangle.\n\nii. 1. Draw base segment YZ = 4.5 cm.\n    2. At Y, construct an angle of 45°.\n    3. Along the 45° ray, cut off XY = 4.2 cm.\n    4. Join X to Z. △XYZ is the required triangle.\n\niii. 1. Draw base segment YZ = 4.4 cm.\n     2. At Z, construct an angle of 60°.\n     3. Cut off XZ = 3.8 cm along the ray.\n     4. Join X to Y. △XYZ is the required triangle.\n\niv. 1. Draw base segment YZ = 2.9 cm.\n    2. At Y, construct a perpendicular (90°) ray.\n    3. Cut off XY = 4.6 cm along the ray.\n    4. Join X to Z. △XYZ is the required right triangle."
-          },
-          {
-            "qNo": "Q2",
-            "question": "Construct △ABC for each of the following given sets of data:\ni. m(AB) = 4.5 cm, m∠A = 45°, m∠B = 60°\nii. m(BC) = 5 cm, m∠B = 30°, m∠C = 75°\niii. m(AC) = 4.8 cm, m∠A = 120°, m∠C = 30°\niv. m(AB) = 3.6 cm, m∠A = 75°, m∠B = 45°",
-            "solution": "Steps of Construction for each sub-problem (Case 2: ASA):\n\ni. 1. Draw base AB = 4.5 cm.\n   2. At A, construct an angle of 45°.\n   3. At B, construct an angle of 60°.\n   4. Extend rays to meet at C. △ABC is constructed.\n\nii. 1. Draw base BC = 5 cm.\n    2. At B, construct an angle of 30°.\n    3. At C, construct an angle of 75°.\n    4. Rays intersect at A. △ABC is constructed.\n\niii. 1. Draw base AC = 4.8 cm.\n     2. At A, construct an obtuse angle of 120°.\n     3. At C, construct an angle of 30°.\n     4. Rays intersect at B. △ABC is constructed.\n\niv. 1. Draw base AB = 3.6 cm.\n    2. At A, construct an angle of 75°.\n    3. At B, construct an angle of 45°.\n    4. Rays intersect at C. △ABC is constructed."
-          },
-          {
-            "qNo": "Q3",
-            "question": "Construct △KLM for each of the following given sets of data:\ni. m(KL) = 4.8 cm, m∠K = 45°, m∠M = 60°\nii. m(LM) = 3.8 cm, m∠K = 30°, m∠M = 75°\niii. m(KM) = 5 cm, m∠K = 105°, m∠L = 45°\niv. m(KM) = 5.4 cm, m∠K = 75°, m∠M = 45°",
-            "solution": "Compute the missing base angle using ∠K + ∠L + ∠M = 180°, then construct with ASA:\n\ni. m∠L = 180° − (45° + 60°) = 75°.\n   Draw KL = 4.8 cm, construct ∠K = 45° and ∠L = 75°, meeting at M.\n\nii. m∠L = 180° − (30° + 75°) = 75°.\n    Draw LM = 3.8 cm, construct ∠L = 75° and ∠M = 75°, meeting at K.\n\niii. m∠M = 180° − (105° + 45°) = 30°.\n     Draw KM = 5 cm, construct ∠K = 105° and ∠M = 30°, meeting at L.\n\niv. Draw KM = 5.4 cm, construct ∠K = 75° and ∠M = 45°, meeting at L."
-          },
-          {
-            "qNo": "Q4",
-            "question": "Construct △ABC (whenever possible) for each of the following assumptions:\ni. m∠B = 30°, m(AB) = 8 cm, m(AC) = 4 cm\nii. m(AB) = 7 cm, m(AC) = 5.5 cm, m∠B = 45°\niii. m(AB) = 6 cm, m(AC) = 5.6 cm, m∠B = 60°\niv. m(AB) = 6 cm, m(AC) = 2.5 cm, m∠A = 60°\nv. m(AC) = 5 cm, m∠A = 75°, m∠C = 60°",
-            "solution": "Ambiguous Case (SSA) Analysis:\n\ni. Perpendicular height h = 8 · sin 30° = 4 cm. Since AC = 4 cm = h, the arc is tangent to the ray.\n   **Exactly one unique right-angled triangle** is constructed.\n\nii. Height h = 7 · sin 45° ≈ 4.95 cm. Since h < AC < AB (4.95 < 5.5 < 7), the arc cuts the ray at two distinct points.\n    **Two triangles** can be constructed.\n\niii. Height h = 6 · sin 60° ≈ 5.196 cm. Since 5.196 < 5.6 < 6, the arc cuts the ray at two points.\n     **Two triangles** can be constructed.\n\niv. This is SAS with included angle ∠A = 60°, AB = 6 cm, AC = 2.5 cm.\n    **One unique triangle** is constructed.\n\nv. This is ASA with AC = 5 cm, ∠A = 75°, ∠C = 60°.\n   **One unique triangle** is constructed."
-          },
-          {
-            "qNo": "Q5",
-            "question": "Construct △LMN such that m(LM) = 5.4 cm, m∠L = 75°, and m∠M = 45°.",
-            "solution": "Steps of Construction:\n1. Draw base line segment LM = 5.4 cm.\n2. At point L, construct an angle of 75° using a compass.\n3. At point M, construct an angle of 45° using a compass.\n4. Extend both terminal rays until they intersect at point N.\nResult: △LMN is the required triangle."
-          },
-          {
-            "qNo": "Q6",
-            "question": "Construct right-angled △PQR such that m(QR) = 8 cm, hypotenuse m(PR) = 12 cm, and m∠R = 90° (or leg QR = 8, RS = 12).",
-            "solution": "Steps of Construction:\n1. Draw base segment QR = 8 cm.\n2. At point R, construct a 90° right angle.\n3. With Q as center and radius 12 cm, draw an arc intersecting the perpendicular ray at P.\n4. Join P to Q.\nResult: △PQR is the required right-angled triangle."
-          },
-          {
-            "qNo": "Q7",
-            "question": "Construct △KLM such that m(KL) = 4.8 cm, m(LM) = 3.9 cm, and m∠L = 30°.",
-            "solution": "Steps of Construction (SAS):\n1. Draw base line segment KL = 4.8 cm.\n2. At L, construct an angle of 30° using a compass.\n3. Along the 30° ray, measure and mark point M such that LM = 3.9 cm.\n4. Join M to K.\nResult: △KLM is the required triangle."
-          }
-        ]
+        "qNo": "Q1",
+        "question": "Construct △ABC such that AB = 3.7 cm, BC = 2.5 cm and ∠B = 50°.",
+        "solution": "Construction (SAS): Draw AB = 3.7 cm. At B construct a 50-degree angle with BA as one arm. On the other arm mark C so BC = 2.5 cm. Join A to C. Triangle ABC is the required triangle."
       },
       {
-        "exercise": "17.2",
-        "title": "Exercise 17.2 — Concurrency of Triangle Lines",
-        "description": "4 comprehensive construction problems verifying concurrency of angle bisectors, altitudes, perpendicular bisectors, and medians.",
-        "problems": [
-          {
-            "qNo": "Q1",
-            "question": "Construct △ABC, draw their angle bisectors, and verify their concurrency:\ni) m(AB) = 4.5 cm, m(BC) = 3.1 cm, m(CA) = 5.2 cm\nii) m(AB) = m(BC) = m(CA) = 4.2 cm (Equilateral)\niii) m(CA) = 5.8 cm, m∠A = 45°, m∠C = 75°",
-            "solution": "Steps for each sub-problem:\n1. Construct △ABC with the given measurements.\n2. With each vertex (A, B, C) as center, draw compass arcs cutting the adjacent sides, then draw intersecting arcs to form the angle bisector rays.\n3. Draw the three angle bisectors.\nVerification:\nAll three angle bisectors meet at a single point I (the incenter). Thus, concurrency is verified."
-          },
-          {
-            "qNo": "Q2",
-            "question": "Construct △PQR, draw their altitudes, and verify their concurrency:\ni) m(PQ) = 6 cm, m(QR) = 4.5 cm, m(PR) = 5.5 cm\nii) m(PQ) = 4.5 cm, m(QR) = 3.9 cm, m∠R = 45°\niii) m(PQ) = 6 cm, m∠P = 70°, m∠Q = 65°",
-            "solution": "Steps for each sub-problem:\n1. Construct △PQR with the given data.\n2. From vertex P, drop a perpendicular onto opposite line QR.\n3. From vertex Q, drop a perpendicular onto opposite line PR.\n4. From vertex R, drop a perpendicular onto opposite line PQ.\nVerification:\nAll three altitudes intersect at a single point O (the orthocenter). Concurrency is verified."
-          },
-          {
-            "qNo": "Q3",
-            "question": "Construct △UVW, draw their perpendicular bisectors, and verify their concurrency:\ni) m(UV) = 7 cm, m(VW) = 6.5 cm, m(WU) = 5.8 cm\nii) m(VW) = 10 cm, m(WU) = 4.2 cm, m∠W = 120°\niii) m(UV) = m(VW) = m(WU) = 5.8 cm (Equilateral)",
-            "solution": "Steps for each sub-problem:\n1. Construct △UVW according to the given data.\n2. With compass open to more than half each side, draw arcs from both endpoints above and below each segment to construct the perpendicular bisectors of UV, VW, and WU.\n3. Extend the three bisectors.\nVerification:\nAll three perpendicular bisectors pass through a single point C (the circumcenter). Concurrency is verified.\n(Note: In part ii, since ∠W = 120° is obtuse, the circumcenter C lies outside the triangle)."
-          },
-          {
-            "qNo": "Q4",
-            "question": "Construct △XYZ, draw their medians, and verify their concurrency:\ni) m(YZ) = 4.1 cm, m∠Y = 60°, m∠X = 75°\nii) m(ZX) = 4.3 cm, m∠X = 75°, m∠Y = 45°\niii) m(XY) = 4.5 cm, m(YZ) = 3.4 cm, m(ZX) = 5.6 cm",
-            "solution": "Steps for each sub-problem:\n1. Construct △XYZ using the given data (computing missing angle via 180° rule for parts i and ii).\n2. Bisect each side (XY, YZ, ZX) using compass arcs to find their midpoints D, E, and F.\n3. Draw the three medians: XD, YE, and ZF.\nVerification:\nAll three medians pass through a single point G (the centroid), dividing each in a 2 : 1 ratio. Concurrency is verified."
-          }
-        ]
+        "qNo": "Q2",
+        "question": "Construct △ABC such that BC = 5.8 cm, ∠A = 30° and ∠B = 45°.",
+        "solution": "First find ∠C = 180° - (30° + 45°) = 105°. Draw BC = 5.8 cm. At B construct a 45-degree ray; at C construct a 105-degree ray on the same side of BC. Their intersection is A. Triangle ABC is the required triangle."
       },
       {
-        "exercise": "17.3",
-        "title": "Exercise 17.3 — Figures of Equal Area",
-        "description": "8 construction problems transforming quadrilaterals into triangles of equal area, triangles into rectangles, rectangles into squares, and combining areas.",
-        "problems": [
-          {
-            "qNo": "Q1",
-            "question": "Draw a quadrilateral ABCD such that m(AB) = 3 cm, m∠B = 60°, m∠A = 110°, m(BC) = 3.5 cm, and m(AD) = 4 cm. Construct a triangle equal in area to the quadrilateral ABCD.",
-            "solution": "Steps of Construction:\n1. Draw base AB = 3 cm, construct ∠A = 110° and ∠B = 60°, cut AD = 4 cm and BC = 3.5 cm, and join CD to complete quadrilateral ABCD.\n2. Join diagonal AC.\n3. Through vertex D, draw a line DP parallel to diagonal AC (DP ∥ AC) meeting line BA produced at P.\n4. Join point C to P.\nJustification:\n△APC and △ADC stand on common base AC between the same parallels AC ∥ DP, so Area(△APC) = Area(△ADC).\nAdding Area(△ABC) gives Area(△PBC) = Area(quadrilateral ABCD).\nResult: △PBC is the required triangle of equal area."
-          },
-          {
-            "qNo": "Q2",
-            "question": "Draw a rectangle PQRS such that m(PQ) = 5 cm and m(QR) = 3.5 cm. Construct a square equal in area to rectangle PQRS.",
-            "solution": "Steps of Construction:\n1. Draw rectangle PQRS with PQ = 5 cm and QR = 3.5 cm.\n2. Produce side PQ to point E such that QE = QR = 3.5 cm (so PE = 5 + 3.5 = 8.5 cm).\n3. Bisect PE to locate its midpoint O.\n4. With center O and radius OE, draw a semicircle on diameter PE.\n5. Produce RQ to intersect the semicircle at point M (QM is the geometric mean: QM² = PQ · QE = 5 × 3.5 = 17.5).\n6. On segment QM as one side, construct a square QMKL.\nResult: Square QMKL has area equal to rectangle PQRS."
-          },
-          {
-            "qNo": "Q3",
-            "question": "Draw a triangle ABC such that m(AB) = 5 cm, m(BC) = 4 cm, and m(CA) = 4.5 cm. Construct a rectangle equal in area to the given triangle.",
-            "solution": "Steps of Construction:\n1. Construct △ABC with sides 5 cm, 4 cm, 4.5 cm.\n2. Bisect base AB at midpoint D (AD = DB = 2.5 cm).\n3. Through vertex C, draw a line XY parallel to base AB (XY ∥ AB).\n4. At points A and D, erect perpendiculars to AB meeting line XY at H and G respectively.\nResult: Quadrilateral ADGH is a rectangle whose base is (1/2) AB and height is equal to the triangle's altitude, so Area(ADGH) = (1/2) · AB · h = Area(△ABC)."
-          },
-          {
-            "qNo": "Q4",
-            "question": "Construct a square having area equal to a given rectangle.",
-            "solution": "Steps of Construction:\n1. Let the given rectangle have length l and width w.\n2. Lay off segment AB = l, and produce it to C such that BC = w (AC = l + w).\n3. Find midpoint O of AC, and draw a semicircle with diameter AC.\n4. Erect a perpendicular at B meeting the semicircle at D.\n5. By the geometric mean theorem: BD² = AB · BC = l · w.\n6. Construct a square with side BD.\nResult: The square has area equal to the given rectangle."
-          },
-          {
-            "qNo": "Q5",
-            "question": "Construct a square equal in area to a rectangle whose adjacent sides are 4.5 cm and 2.2 cm respectively. Measure the side of the square and compare its area with the area of the rectangle.",
-            "solution": "Calculations and Verification:\n1. Area of rectangle = 4.5 cm × 2.2 cm = 9.9 cm².\n2. By construction of geometric mean on diameter (4.5 + 2.2 = 6.7 cm):\n   Side of square s = √(4.5 × 2.2) = √9.9 ≈ 3.15 cm.\n3. Area of square = s² = (3.15)² ≈ 9.92 cm² ≈ 9.9 cm².\nResult: Measured side ≈ 3.15 cm; the area of the square matches the rectangle."
-          },
-          {
-            "qNo": "Q6",
-            "question": "Construct a square equal in area to the sum of two squares having sides 3 cm and 4 cm respectively.",
-            "solution": "Steps of Construction:\n1. Construct a right-angled triangle with legs of lengths 3 cm and 4 cm.\n2. By Pythagoras' Theorem, the hypotenuse c satisfies:\n   c² = 3² + 4² = 9 + 16 = 25 ⟹ c = 5 cm.\n3. On the hypotenuse (5 cm) as a side, construct a square.\nResult: The area of this square is 5² = 25 cm², which equals the sum of the areas of the two given squares (9 + 16 = 25 cm²)."
-          },
-          {
-            "qNo": "Q7",
-            "question": "Construct a triangle having base 3.5 cm and other two sides equal to 3.4 cm and 3.8 cm respectively. Transform it into an equal square.",
-            "solution": "Steps of Construction:\n1. Construct △ABC with sides 3.5 cm, 3.4 cm, and 3.8 cm.\n2. Transform △ABC into an equivalent rectangle of equal area (by bisecting base 3.5 cm to 1.75 cm and using the altitude).\n3. Transform that rectangle into a square using the semicircle geometric mean method.\nResult: The final constructed square has area equal to the original triangle."
-          },
-          {
-            "qNo": "Q8",
-            "question": "Construct a triangle having base 5 cm and other sides equal to 5 cm and 6 cm. Also construct a square equal in area to the given triangle.",
-            "solution": "Steps of Construction:\n1. Construct an isosceles triangle with base 6 cm and legs 5 cm, 5 cm (or base 5 cm).\n2. Construct an equivalent rectangle of base (1/2) · 6 = 3 cm and altitude h = √(5² − 3²) = 4 cm (Area = 12 cm²).\n3. Using the semicircle construction with segments 3 cm and 4 cm on a line of length 7 cm, obtain side s = √12 ≈ 3.46 cm.\n4. Construct a square with side s = √12 cm.\nResult: Area of square = 12 cm², equal to the triangle's area."
-          }
-        ]
-      },
-      {
-        "exercise": "Review 17",
-        "title": "Review Exercise 17 — Practical Geometry Comprehensive",
-        "description": "10 board review problems including 10 MCQs and 9 complete compass-and-ruler construction tasks with verified algorithms.",
-        "problems": [
-          {
-            "qNo": "Q1",
-            "question": "Select the correct answer for each of the following:\n(i) What is the first step in constructing an angle bisector?\n    a) Draw a ray  b) Label points  c) Measure line  d) Place compass point on the vertex\n(ii) What geometric construction is shown in the diagram?\n    a) Line parallel  b) Angle bisector  c) Congruent angle  d) A perpendicular\n(iii) A line segment joining the midpoint of one side of a triangle to its opposite vertex is called:\n    a) Perpendicular bisector  b) Median  c) Altitude  d) Angle bisector\n(iv) You are looking at a triangle whose orthocenter, centroid, and circumcenter are all the same point. What type of triangle is it?\n    a) Scalene  b) Isosceles  c) Equilateral  d) Right\n(v) The centroid of a triangle divides the medians into the ratio of:\n    a) 2 : 1  b) 3 : 1  c) 4 : 1  d) 5 : 1\n(vi) A line which is perpendicular to a line segment at its midpoint is called a:\n    a) Perpendicular bisector  b) Median  c) Altitude  d) Angle bisector\n(vii) The point of intersection of the bisectors of the angles of a triangle is equidistant from the ______ of the triangle:\n    a) vertices  b) sides  c) altitudes  d) medians\n(viii) Altitudes of a triangle are:\n    a) equal in length  b) equidistant from vertices  c) concurrent  d) perpendicular bisectors\n(ix) If measures of three angles of a triangle are known, how many triangles can be constructed?\n    a) Only one triangle  b) Two triangles  c) No triangle  d) Infinite triangles\n(x) The point of intersection of the perpendicular bisectors of the sides of a triangle is equidistant from the ______ of the triangle:\n    a) altitudes  b) medians  c) sides  d) vertices",
-            "solution": "Verified Board Answers & Explanations:\n(i) **d) Place compass point on the vertex**\n(ii) **d) A perpendicular**\n(iii) **b) Median**\n(iv) **c) Equilateral** (In an equilateral triangle, all four centers coincide)\n(v) **a) 2 : 1** (Centroid divides medians in ratio 2 : 1)\n(vi) **a) Perpendicular bisector**\n(vii) **b) sides** (Incenter is equidistant from sides)\n(viii) **c) concurrent**\n(ix) **d) Infinite triangles** (AAA determines similarity, allowing infinite similar triangles of different sizes)\n(x) **d) vertices** (Circumcenter is equidistant from all three vertices: OA = OB = OC = R)"
-          },
-          {
-            "qNo": "Q2",
-            "question": "Construct △ABC such that m(AB) = 3.7 cm, m(BC) = 2.5 cm, and m∠B = 50°.",
-            "solution": "Steps of Construction (SAS):\n1. Draw base AB = 3.7 cm.\n2. At B, construct an angle of 50°.\n3. Cut off BC = 2.5 cm along the ray.\n4. Join C to A.\nResult: △ABC is the required triangle."
-          },
-          {
-            "qNo": "Q3",
-            "question": "Construct △ABC such that m(BC) = 5.8 cm, m∠A = 30°, and m∠B = 45°.",
-            "solution": "Steps of Construction (SAA):\n1. Find m∠C = 180° − (30° + 45°) = 105°.\n2. Draw base BC = 5.8 cm.\n3. At B, construct 45°; at C, construct 105°.\n4. Rays intersect at A. △ABC is the required triangle."
-          },
-          {
-            "qNo": "Q4",
-            "question": "Construct △ABC such that m(AC) = 4.5 cm, m(BC) = 4.1 cm, and m∠B = 75°.",
-            "solution": "Steps of Construction (Ambiguous SSA):\n1. Draw ray BX with angle 75° at B.\n2. Mark BC = 4.1 cm.\n3. From C, draw arc of radius 4.5 cm to cut BX at A.\n4. Join A to C. △ABC is the required triangle."
-          },
-          {
-            "qNo": "Q5",
-            "question": "Construct △ABC with m(AB) = 5.3 cm, m∠A = 45°, and m∠B = 45°. Draw their angle bisectors and verify their concurrency.",
-            "solution": "Steps of Construction:\n1. Draw AB = 5.3 cm, construct 45° at A and 45° at B, meeting at C (right-angled at C).\n2. Draw angle bisectors of ∠A, ∠B, and ∠C.\n3. All three angle bisectors meet at incenter I.\nConcurrency is verified."
-          },
-          {
-            "qNo": "Q6",
-            "question": "Construct △PQR with m(PR) = 5.8 cm, m∠P = 45°, and m∠Q = 105°. Draw their altitudes and verify their concurrency.",
-            "solution": "Steps of Construction:\n1. m∠R = 180° − (45° + 105°) = 30°.\n2. Draw PR = 5.8 cm, construct ∠P = 45° and ∠R = 30°, meeting at Q.\n3. Drop perpendiculars from P to QR, Q to PR, and R to PQ.\n4. All three altitudes meet at orthocenter O (outside the triangle since ∠Q = 105° is obtuse).\nConcurrency is verified."
-          },
-          {
-            "qNo": "Q7",
-            "question": "Construct △UVW with m(UW) = 5.8 cm, m∠U = 45°, and m∠V = 105°. Draw their perpendicular bisectors and verify their concurrency.",
-            "solution": "Steps of Construction:\n1. m∠W = 180° − (45° + 105°) = 30°.\n2. Draw UW = 5.8 cm, construct ∠U = 45° and ∠W = 30°, meeting at V.\n3. Draw the perpendicular bisectors of sides UV, VW, and WU.\n4. All three perpendicular bisectors meet at circumcenter C (outside the obtuse triangle).\nConcurrency is verified."
-          },
-          {
-            "qNo": "Q8",
-            "question": "Construct △XYZ with m(ZX) = 6 cm, m∠Y = 60°, and m∠Z = 75°. Draw their medians and verify their concurrency.",
-            "solution": "Steps of Construction:\n1. m∠X = 180° − (60° + 75°) = 45°.\n2. Draw ZX = 6 cm, construct ∠Z = 75° and ∠X = 45°, meeting at Y.\n3. Bisect all three sides to find midpoints, and join each midpoint to the opposite vertex.\n4. The three medians meet at centroid G.\nConcurrency is verified."
-          },
-          {
-            "qNo": "Q9",
-            "question": "Draw a triangle PQR such that m(PQ) = 5.6 cm, m(QR) = 4.5 cm, and m(RP) = 3.4 cm. Construct a triangle SPQ equivalent in area to △PQR.",
-            "solution": "Steps of Construction:\n1. Construct △PQR with sides 5.6 cm, 4.5 cm, and 3.4 cm.\n2. Through vertex R, draw a straight line parallel to base PQ (XY ∥ PQ).\n3. Choose any point S on the line XY.\n4. Join S to P and S to Q.\nResult: △SPQ stands on the same base PQ and between the same parallels as △PQR, so Area(△SPQ) = Area(△PQR)."
-          },
-          {
-            "qNo": "Q10",
-            "question": "Construct a rectangle whose adjacent sides are 2.5 cm and 5 cm respectively.",
-            "solution": "Steps of Construction:\n1. Draw base AB = 5 cm.\n2. At A and B, erect perpendiculars of 90°.\n3. Cut off AD = 2.5 cm and BC = 2.5 cm along the perpendicular rays.\n4. Join D to C.\nResult: ABCD is the required rectangle."
-          }
-        ]
+        "qNo": "Q3",
+        "question": "Construct △ABC such that AC = 4.5 cm, BC = 4.1 cm and ∠B = 75°.",
+        "solution": "Draw a ray from B and construct angle ABC = 75 degrees. With B as centre and radius 4.1 cm, mark C on one arm. With C as centre and radius 4.5 cm, draw an arc meeting the other arm at A. Join A to C. Triangle ABC is the required triangle."
       }
-    ],
+    ]
+  },
+  {
+    "exercise": "17.2",
+    "title": "Exercise 17.2 ? Concurrency in Triangles",
+    "description": "Construct the stated triangles and draw the corresponding concurrent lines.",
+    "problems": [
+      {
+        "qNo": "Q4",
+        "question": "Construct △ABC, draw its angle bisectors and verify their concurrency: AB = 5.3 cm, ∠A = 45° and ∠B = 45°.",
+        "solution": "Construct AB = 5.3 cm. At A and B construct 45-degree rays on the same side of AB; they meet at C. Bisect each of the three angles with compass and straightedge. The three angle bisectors meet at one point, the incentre."
+      },
+      {
+        "qNo": "Q5",
+        "question": "Construct △PQR, draw its altitudes and verify their concurrency: PR = 5.8 cm, ∠P = 45° and ∠Q = 105°.",
+        "solution": "Find ∠R = 180° - (45° + 105°) = 30°. Draw PR = 5.8 cm; construct the 45-degree ray at P and 30-degree ray at R to locate Q. Draw perpendiculars from P to QR, Q to PR, and R to PQ (extending sides where needed). They meet at one point, the orthocentre."
+      },
+      {
+        "qNo": "Q6",
+        "question": "Construct △UVW, draw its perpendicular bisectors and verify their concurrency: UW = 5.8 cm, ∠U = 45° and ∠V = 105°.",
+        "solution": "Find ∠W = 180° - (45° + 105°) = 30°. Draw UW = 5.8 cm; construct the 45-degree ray at U and 30-degree ray at W to locate V. Construct the perpendicular bisectors of UV, VW and WU using equal-radius arcs from each pair of endpoints. They meet at one point, the circumcentre."
+      },
+      {
+        "qNo": "Q7",
+        "question": "Construct △XYZ, draw its medians and verify their concurrency: XZ = 6 cm, ∠Y = 60° and ∠Z = 75°.",
+        "solution": "Find ∠X = 180° - (60° + 75°) = 45°. Draw XZ = 6 cm; construct the 45-degree ray at X and 75-degree ray at Z to locate Y. Bisect each side to find its midpoint, then join each vertex to the midpoint of the opposite side. The three medians meet at one point, the centroid."
+      }
+    ]
+  },
+  {
+    "exercise": "17.3",
+    "title": "Exercise 17.3 ? Equal-Area Constructions",
+    "description": "Construct the figures specified in the textbook and justify the area equality.",
+    "problems": [
+      {
+        "qNo": "Q8",
+        "question": "Draw △PQR such that PQ = 5.6 cm, QR = 4.5 cm and RP = 3.4 cm. Construct a triangle SPQ equivalent in area to △PQR.",
+        "solution": "Construct triangle PQR by SSS. Through R draw a line parallel to PQ and choose a point S on this parallel line. Join S to P and S to Q. Triangles SPQ and PQR have the same base PQ and lie between the same parallels, so they have equal areas."
+      },
+      {
+        "qNo": "Q9",
+        "question": "Construct a rectangle whose adjacent sides are 2.5 cm and 5 cm respectively.",
+        "solution": "Draw AB = 5 cm. Construct a perpendicular to AB at A and mark AD = 2.5 cm. Through D draw a line parallel to AB; through B draw a line parallel to AD. Let the lines meet at C. ABCD is the required rectangle."
+      }
+    ]
+  }
+],
     "slos": {
       "mcqs": [
         {

@@ -16,8 +16,8 @@ const INDEX = path.join(ROOT, 'index.html');
 const DATA_FILES = [
   'data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js',
   'data_comp.js',
-  'dictionary_data.js', 'urdu_data.js', 'english_data.js', 'math_data.js',
-  'pakstudy_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js',
+  'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'math_data.js',
+  'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js',
   'math_10_data.js'
 ];
 
@@ -63,14 +63,14 @@ const D = sb.DATA;
 if (D) {
   check('DATA registry present', true);
   check('subjects cls9 = 9', D.subjects && D.subjects.cls9 && D.subjects.cls9.length === 9, 'got ' + (D.subjects ? D.subjects.cls9.length : 'n/a'));
-  check('subjects cls10 = 7', D.subjects && D.subjects.cls10 && D.subjects.cls10.length === 7, 'got ' + (D.subjects ? D.subjects.cls10.length : 'n/a'));
+  check('subjects cls10 = 8', D.subjects && D.subjects.cls10 && D.subjects.cls10.length === 8, 'got ' + (D.subjects ? D.subjects.cls10.length : 'n/a'));
   check('subject ids unique', (() => {
     const all = [].concat(D.subjects.cls9, D.subjects.cls10, D.subjects.cls11, D.subjects.cls12).map(s => s.id);
     return new Set(all).size === all.length;
   })());
   check('class counts match subject arrays', D.classes.every(c => c.subjects === (D.subjects[c.id] || []).length),
     D.classes.map(c => c.id + ':' + c.subjects + ' vs ' + ((D.subjects[c.id] || []).length)).join(' '));
-  check('books = ' + D.books.length, D.books.length === 15, 'got ' + D.books.length);
+  check('books = ' + D.books.length, D.books.length === 18, 'got ' + D.books.length);
   check('book ids unique', new Set(D.books.map(b => b.id)).size === D.books.length);
   check('book subjects resolvable', D.books.every(b => b.classId || b.class_id), 'missing classId/class_id on ' + D.books.filter(b => !(b.classId || b.class_id)).map(b => b.id).join(','));
   check('chemChapters = 8', D.chemChapters && D.chemChapters.length === 8, 'got ' + (D.chemChapters || []).length);
@@ -82,6 +82,7 @@ if (D) {
   check('compChapters = 7', D.compChapters && D.compChapters.length === 7, 'got ' + (D.compChapters || []).length);
   check('chapters roadmap map has 14 entries', D.chapters && Object.keys(D.chapters).length === 14, 'got ' + (D.chapters ? Object.keys(D.chapters).length : 0));
   check('DATA.urduChapters = 19 (from urdu_data.js)', D.urduChapters && (D.urduChapters.length === 19 || D.urduChapters.length === 15), 'got ' + (D.urduChapters || []).length);
+  check('DATA.urdu10Chapters = 22 (from urdu_10_data.js)', (sb.URDU_10_DATA && sb.URDU_10_DATA.length === 22) || (D.urdu10Chapters && D.urdu10Chapters.length === 22), 'got ' + ((sb.URDU_10_DATA || D.urdu10Chapters || []).length));
   check('DATA.islamyatChapters = 15', D.islamyatChapters && D.islamyatChapters.length === 15, 'got ' + (D.islamyatChapters || []).length);
   check('DATA.islamyat10Chapters = 18', D.islamyat10Chapters && D.islamyat10Chapters.length === 18, 'got ' + (D.islamyat10Chapters || []).length);
   check('DATA.mathChapters present (from math_data.js)', Array.isArray(D.mathChapters) && D.mathChapters.length > 0, 'got ' + (D.mathChapters ? D.mathChapters.length : 0));
@@ -102,6 +103,42 @@ if (EN) {
   check('unit8 figurativeLines', EN[7] && EN[7].exercise && Array.isArray(EN[7].exercise.figurativeLines) && EN[7].exercise.figurativeLines.length > 0);
 } else {
   check('ENGLISH_DATA present', false);
+}
+const EN10 = sb.ENGLISH_10_DATA;
+if (EN10) {
+  check('ENGLISH_10_DATA units = 15', EN10.length === 15, 'got ' + EN10.length);
+  check('ENGLISH_10_DATA unit 1 has sections', EN10[0] && Array.isArray(EN10[0].sections) && EN10[0].sections.length > 0);
+  check('ENGLISH_10_DATA unit 1 has exercise', EN10[0] && !!EN10[0].exercise);
+  check('ENGLISH_10_DATA unit 1 has sloBank', EN10[0] && !!EN10[0].sloBank);
+} else {
+  check('ENGLISH_10_DATA present', false);
+}
+
+const PS = sb.PAKSTUDY_DATA;
+if (PS) {
+  check('PAKSTUDY_DATA units = 4', PS.length === 4, 'got ' + PS.length);
+} else {
+  check('PAKSTUDY_DATA present', false);
+}
+
+const PS10 = sb.PAKSTUDY_10_DATA;
+if (PS10) {
+  check('PAKSTUDY_10_DATA units = 4', PS10.length === 4, 'got ' + PS10.length);
+  check('PAKSTUDY_10_DATA ch 1 has sections', PS10[0] && Array.isArray(PS10[0].sections) && PS10[0].sections.length > 0);
+  check('PAKSTUDY_10_DATA ch 1 has exercise', PS10[0] && !!PS10[0].exercise);
+  check('PAKSTUDY_10_DATA ch 1 has sloBank', PS10[0] && !!PS10[0].sloBank);
+} else {
+  check('PAKSTUDY_10_DATA present', false);
+}
+
+const UR10 = sb.URDU_10_DATA;
+if (UR10) {
+  check('URDU_10_DATA units = 22', UR10.length === 22, 'got ' + UR10.length);
+  check('URDU_10_DATA ch 1 has sections', UR10[0] && Array.isArray(UR10[0].sections) && UR10[0].sections.length > 0);
+  check('URDU_10_DATA ch 1 has exercise', UR10[0] && !!UR10[0].exercise);
+  check('URDU_10_DATA ch 1 has sloQuestions', UR10[0] && !!(UR10[0].sloQuestions || UR10[0].slos));
+} else {
+  check('URDU_10_DATA present', false);
 }
 check('ENG_UNIT_VOCAB_WORDS lexicon', !!(sb.ENG_UNIT_VOCAB_WORDS && sb.ENG_UNIT_VOCAB_WORDS[2]), 'missing from dictionary_data.js');
 check('lookupEngWord()', typeof sb.lookupEngWord === 'function');

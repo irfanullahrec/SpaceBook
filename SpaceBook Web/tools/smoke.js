@@ -3,7 +3,7 @@ const vm = require('vm');
 
 const path = require('path');
 const DIR = path.resolve(__dirname, '../js') + path.sep;
-const files = ['data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'english_data.js', 'math_data.js', 'pakstudy_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'math_10_data.js'];
+const files = ['data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'math_10_data.js'];
 
 function makeEl(id) {
   const style = {};
@@ -21,11 +21,18 @@ function makeEl(id) {
   return el;
 }
 const registry = {};
+const NodeFilter = {
+  SHOW_TEXT: 4,
+  FILTER_ACCEPT: 1,
+  FILTER_REJECT: 2,
+  FILTER_SKIP: 3
+};
 const documentStub = {
   getElementById(id) { if (!registry[id]) registry[id] = makeEl(id); return registry[id]; },
   querySelector() { return makeEl(); },
   querySelectorAll() { return []; },
   createElement() { return makeEl(); },
+  createTreeWalker() { return { nextNode: () => null }; },
   addEventListener() { }, removeEventListener() { },
   body: makeEl('body'), documentElement: makeEl('html'), head: makeEl('head'),
   location: { href: 'http://localhost/', search: '', hash: '' }
@@ -36,12 +43,13 @@ const windowStub = {
   sessionStorage: { getItem: () => null, setItem() { } },
   open() { }, addEventListener() { }, removeEventListener() { },
   requestAnimationFrame() { return 0; }, matchMedia: () => ({ matches: false, addEventListener() { } }),
-  navigator: { userAgent: 'smoke' }, innerWidth: 1400, innerHeight: 900
+  navigator: { userAgent: 'smoke' }, innerWidth: 1400, innerHeight: 900,
+  NodeFilter
 };
 windowStub.window = windowStub;
 
 const sb = vm.createContext({
-  console, window: windowStub, document: documentStub,
+  console, window: windowStub, document: documentStub, NodeFilter,
   localStorage: windowStub.localStorage, sessionStorage: windowStub.sessionStorage,
   navigator: windowStub.navigator, location: documentStub.location,
   setTimeout, clearTimeout, setInterval, clearInterval,
@@ -110,6 +118,17 @@ run("REGRESSION comp switchSubjectTab('exercise')", `switchSubjectTab('comp', 'e
 run("REGRESSION comp switchSubjectTab('slos')", `switchSubjectTab('comp', 'slos', 0, 'cls9')`);
 run("REGRESSION comp switchSubjectTab('formulas')", `switchSubjectTab('comp', 'formulas', 0, 'cls9')`);
 run("REGRESSION comp selectSubjectChapter(1)", `selectSubjectChapter('comp', 1, 'cls9')`);
+run("CLASS 10 openSubject cls10 eng", `openSubject("cls10","cls10-eng")`);
+run("CLASS 10 selectSubjectChapter eng 14", `selectSubjectChapter('eng', 14, 'cls10')`);
+run("CLASS 10 openSubject cls10 pakstudy", `openSubject("cls10","cls10-pakstudy")`);
+run("CLASS 10 selectSubjectChapter pakstudy 3", `selectSubjectChapter('pakstudy', 3, 'cls10')`);
+run("CLASS 10 openSubject cls10 urdu", `openSubject("cls10","cls10-urdu")`);
+run("CLASS 10 selectSubjectChapter urdu 0", `selectSubjectChapter('urdu', 0, 'cls10')`);
+run("CLASS 10 openSubject cls10 chem", `openSubject("cls10","cls10-chem")`);
+run("CLASS 10 openSubject cls10 phy", `openSubject("cls10","cls10-phy")`);
+run("CLASS 10 openSubject cls10 bio", `openSubject("cls10","cls10-bio")`);
+run("CLASS 10 goToSubjects cls10", `goToSubjects('cls10')`);
+run("CLASS 10 renderBooksView cls10", `renderBooksView('cls10')`);
 run("REGRESSION renderClasses", `renderClasses()`);
 run("REGRESSION handleGlobalSearch('islam')", `handleGlobalSearch("islam")`);
 run("REGRESSION handleGlobalSearch('daffodils')", `handleGlobalSearch("daffodils")`);

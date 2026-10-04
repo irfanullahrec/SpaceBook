@@ -1,0 +1,22 @@
+# SpaceBook Root .gitignore
+
+# Raw textbooks and large binary media (3.3+ GB)
+Books/
+backup/
+Other-Users-Work/
+SpaceBook App/
+
+# Temporary root scripts and image artifacts
+/*.png
+/build_*.py
+/inspect_*.js
+/__pycache__/
+/circle_crops/
+/circle_hires/
+/dome_crops/
+/verification_strips/
+
+# OS files and logs
+.DS_Store
+Thumbs.db
+*.log
