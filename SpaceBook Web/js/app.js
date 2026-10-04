@@ -619,6 +619,7 @@ function renderClasses() {
     if (['cls1', 'cls2', 'cls3', 'cls4', 'cls5'].includes(c.id)) {
       const badgeText = c.id === 'cls1' ? 'Drawing ready · 5 subjects in prep'
         : c.id === 'cls2' ? 'Maths & Drawing ready · 4 subjects in prep'
+          : c.id === 'cls3' ? 'Islamyat, Nazira & Drawing ready · 4 subjects in prep'
           : `${c.subjects} Subjects · In Prep`;
       return { tierName: 'Primary', tierClass: 'tier-primary', badgeText };
     }
@@ -724,8 +725,8 @@ function goToSubjects(classId) {
     { label: cls.name,   active: true }
   ];
 
-  // Class 1 and 2 have integrated subject content; retain the preparation gate for other grades.
-  if (!['cls1', 'cls2', 'cls9', 'cls10'].includes(classId)) {
+  // Classes 1, 2, and 3 have integrated content and subjects ready
+  if (!['cls1', 'cls2', 'cls3', 'cls9', 'cls10'].includes(classId)) {
     pageContent().innerHTML = `
       <!-- 1. Single-Line Consolidated Header Bar -->
       <div class="subjects-single-line-bar">
@@ -795,7 +796,8 @@ function goToSubjects(classId) {
 
   // Calculate totals for class overview
   let totalUnits = 0;
-  subs.forEach(s => { totalUnits += (s.chapters || 0); });
+  const displaySubs = subs;
+  displaySubs.forEach(s => { totalUnits += (s.chapters || 0); });
   const isCls9 = (classId === "cls9");
   const isCls10 = (classId === "cls10");
 
@@ -859,6 +861,36 @@ function goToSubjects(classId) {
         metric3Val: "قواعد و سورتیں",
         metric3Lbl: "مخارج، حرکات و آخری ۴ سورتیں",
         topics: ["عربی حروف و مخارج", "مرکبات و اشکال", "حرکات و تنوین", "حروفِ مدہ و لین", "سکون و تشدید", "قواعدِ تجوید و غنہ", "آخری ۴ سورتیں"]
+      };
+    }
+    if (s.id === "cls3-isl" || (s.hasIsl && classId === "cls3")) {
+      return {
+        headerColor: "#0d9488",
+        urduName: "اسلامیات (تیسری جماعت)",
+        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeClass: "badge-green",
+        metric1Val: "18 اسباق",
+        metric1Lbl: "درسی اسلامیات (۷ ابواب)",
+        metric2Val: "100+ Solved Qs",
+        metric2Lbl: "مشقی سوالات و ایس ایل اوز",
+        metric3Val: "عربی متن و ترجمہ",
+        metric3Lbl: "ایمانیات، عبادات، اخلاق و سیرت",
+        topics: ["قرآن مجید و حدیث", "ایمانیات و عبادات (توحید، نبوت، اذان، نماز)", "سیرت طیبہ ﷺ", "اخلاق و آداب و حسن معاملات", "ہدایت کے سرچشمے"]
+      };
+    }
+    if (s.id === "cls3-nazira" || (s.hasNazira && classId === "cls3")) {
+      return {
+        headerColor: "#059669",
+        urduName: "ناظرہ قرآن (تیسری جماعت)",
+        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeClass: "badge-green",
+        metric1Val: "16 اسباق",
+        metric1Lbl: "تجوید اعادہ و پارے ۳ تا ۸ تلاوت",
+        metric2Val: "90+ Solved Qs",
+        metric2Lbl: "تجوید و فہم سوالات و ایس ایل اوز",
+        metric3Val: "تجوید و رموزِ اوقاف",
+        metric3Lbl: "احکام ترتیل، مخارج و وقوف",
+        topics: ["تجوید قواعد اعادہ (مخارج و حرکات)", "پارہ ۳: تلک الرسل", "پارہ ۴: لن تنالوا", "پارہ ۵: والمحصنت", "پارہ ۶: لا یحب اللہ", "پارہ ۷: واذا سمعوا", "پارہ ۸: ولو اننا"]
       };
     }
     if (s.id === "cls1-pashto" || (s.hasPashto && classId === "cls1")) {
@@ -1135,7 +1167,7 @@ function goToSubjects(classId) {
   pageContent().innerHTML = `
     <!-- 1. All Class Subjects in One Look (Compact Grid) without scrolling down -->
     <div class="subjects-compact-grid">
-      ${subs.map(s => {
+      ${displaySubs.map(s => {
         const meta = getSubjectMeta(s);
         const cleanBadge = meta.badgeText ? meta.badgeText.replace(/^[✓🏛️]\s*/, '') : '';
         return `
@@ -1162,9 +1194,9 @@ function goToSubjects(classId) {
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">📚</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '8 Subjects · English, Islamyat, Nazira, Pashto, Drawing' : '9 Subjects · 15 Books'}</div>
+          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '8 Subjects · English, Islamyat, Nazira, Pashto, Drawing' : classId === 'cls3' ? '7 Subjects · Islamyat, Nazira & Drawing ready' : '9 Subjects · 15 Books'}</div>
           <div class="csc-label">Class Curriculum Track</div>
-          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English, Islamyat, Nazira, Pashto (23 Units) &amp; Drawing' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
+          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English, Islamyat, Nazira, Pashto (23 Units) &amp; Drawing' : classId === 'cls3' ? 'Other Class 3 subjects are still in preparation' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
         </div>
       </div>
 
@@ -1199,7 +1231,7 @@ function goToSubjects(classId) {
 
 // ─── SUBJECT ROUTER ──────────────────────
 function openSubject(classId, subjId) {
-  if ((classId === 'cls1' && subjId === 'cls1-drawing') || (classId === 'cls2' && subjId === 'cls2-drawing')) {
+  if ((classId === 'cls1' && subjId === 'cls1-drawing') || (classId === 'cls2' && subjId === 'cls2-drawing') || (classId === 'cls3' && subjId === 'cls3-drawing')) {
     const changedClass = state.drawingClassId !== classId;
     state.drawingClassId = classId;
     state.selectedClass = classId;
@@ -1216,7 +1248,7 @@ function openSubject(classId, subjId) {
     renderDrawingView();
     return;
   }
-  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls1' && classId !== 'cls2') {
+  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls1' && classId !== 'cls2' && classId !== 'cls3') {
     goToSubjects(classId);
     return;
   }
@@ -1246,13 +1278,13 @@ function openSubject(classId, subjId) {
   } else if (subj.hasPakStudy || subjId === 'cls9-pakstudy' || subjId === 'cls10-pakstudy') {
     state.activeSubject = "pakstudy";
     openSubjectWorkspace(classId, "pakstudy", subj);
-  } else if (subj.hasNazira || subjId === 'cls1-nazira' || subjId === 'cls2-nazira') {
+  } else if (subj.hasNazira || subjId === 'cls1-nazira' || subjId === 'cls2-nazira' || subjId === 'cls3-nazira') {
     state.activeSubject = "nazira";
     openSubjectWorkspace(classId, "nazira", subj);
   } else if (subj.hasPashto || subjId === 'cls1-pashto' || subjId === 'cls2-pashto') {
     state.activeSubject = "pashto";
     openSubjectWorkspace(classId, "pashto", subj);
-  } else if (subj.hasIsl || subjId === 'cls9-isl' || subjId === 'cls10-isl' || subjId === 'cls1-isl' || subjId === 'cls2-isl') {
+  } else if (subj.hasIsl || subjId === 'cls9-isl' || subjId === 'cls10-isl' || subjId === 'cls1-isl' || subjId === 'cls2-isl' || subjId === 'cls3-isl') {
     state.activeSubject = "isl";
     openSubjectWorkspace(classId, "isl", subj);
   } else if (subj.hasGk || subjId === 'cls2-gk' || subjId === 'cls1-gk') {
@@ -1304,14 +1336,16 @@ function renderDrawingArtwork(kind, title) {
     "cat-origami": '<g stroke="#334155" stroke-width="5" fill="#fde68a"><path d="M65 170 165 70l100 100-100 110z"/><path d="M255 170 355 70l100 100-100 110z"/><path d="M445 170 545 70l45 80-45 130z"/></g><g fill="#334155"><circle cx="145" cy="165" r="5"/><circle cx="185" cy="165" r="5"/><circle cx="335" cy="165" r="5"/><circle cx="375" cy="165" r="5"/><circle cx="520" cy="165" r="5"/><circle cx="560" cy="165" r="5"/></g><path d="M150 195q15 10 30 0m150 0q15 10 30 0m150 0q15 10 30 0" ' + common + '/><text x="165" y="320" text-anchor="middle">1</text><text x="355" y="320" text-anchor="middle">2</text><text x="535" y="320" text-anchor="middle">3</text>'
   };
   const labels = { "shape-person":"Shapes make a picture", "shape-friends":"Square and circle friends", "shape-faces":"Happy shape faces", rainbow:"Rainbow and sun", bird:"Bird", ship:"Sailing boat", "angry-bird":"Bird with a bold face", bee:"Honey bee", cap:"Cap", tulip:"Tulip", ant:"Ant", goat:"Goat", umbrella:"Umbrella", purse:"Purse", pineapple:"Pineapple", parrot:"Parrot", watermelon:"Watermelon", frock:"Frock", grapes:"Grapes", camel:"Camel", duck:"Duck", scissors:"Scissors", donkey:"Donkey", ladybug:"Ladybug", scenery:"House and scenery", puppy:"Puppy", sunglasses:"Sunglasses", flower:"Flower", bananas:"Bananas", "bear-steps":"Bear face steps", "house-steps":"House drawing steps", "cat-origami":"Folded cat face" };
-  const illustration = state.selectedClass === 'cls2' && typeof DRAWING_2_ART !== 'undefined'
-    ? (DRAWING_2_ART[kind] || '')
-    : (svg[kind] || '');
+  const illustration = state.selectedClass === 'cls3' && typeof DRAWING_3_ART !== 'undefined'
+    ? (DRAWING_3_ART[kind] || '')
+    : state.selectedClass === 'cls2' && typeof DRAWING_2_ART !== 'undefined'
+      ? (DRAWING_2_ART[kind] || '')
+      : (svg[kind] || '');
   return `<figure class="drawing-vector-card"><svg viewBox="0 0 600 760" role="img" aria-label="${sanitize(labels[kind] || title)}: coloured example and dotted tracing practice"><title>${sanitize(title)}</title><rect class="drawing-example-panel" x="3" y="3" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="27" text-anchor="middle">LOOK · COLOUR IDEA</text><g class="drawing-sample" transform="translate(15 30) scale(.95)">${illustration}</g><path d="M28 380h544" class="drawing-panel-divider"/><rect class="drawing-trace-panel" x="3" y="390" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="415" text-anchor="middle">YOUR TURN · TRACE AND COLOUR</text><g class="drawing-trace" transform="translate(15 415) scale(.95)">${illustration}</g></svg></figure>`;
 }
 
 function renderDrawingPractice() {
-  const exam = state.selectedClass === 'cls2' ? DRAWING_2_EXAM : DRAWING_1_EXAM;
+  const exam = state.selectedClass === 'cls3' ? DRAWING_3_EXAM : state.selectedClass === 'cls2' ? DRAWING_2_EXAM : DRAWING_1_EXAM;
   const active = state.activeDrawingExamTab || 'mcqs';
   const tabs = [
     ['mcqs', 'MCQs'],
@@ -1349,7 +1383,7 @@ function selectDrawingExamTab(tab) {
 }
 
 function answerDrawingMcq(questionIndex, optionIndex) {
-  const exam = state.selectedClass === 'cls2' ? DRAWING_2_EXAM : DRAWING_1_EXAM;
+  const exam = state.selectedClass === 'cls3' ? DRAWING_3_EXAM : state.selectedClass === 'cls2' ? DRAWING_2_EXAM : DRAWING_1_EXAM;
   const item = exam.mcqs[questionIndex];
   if (!item || optionIndex < 0 || optionIndex >= item.options.length) return;
   const panel = document.querySelector('.drawing-topic-area');
@@ -1362,9 +1396,11 @@ function answerDrawingMcq(questionIndex, optionIndex) {
 }
 
 function renderDrawingView() {
-  const lessons = state.selectedClass === 'cls2'
-    ? ((typeof DRAWING_2_DATA !== 'undefined') ? DRAWING_2_DATA : [])
-    : ((typeof DRAWING_1_DATA !== 'undefined') ? DRAWING_1_DATA : []);
+  const lessons = state.selectedClass === 'cls3'
+    ? ((typeof DRAWING_3_DATA !== 'undefined') ? DRAWING_3_DATA : [])
+    : state.selectedClass === 'cls2'
+      ? ((typeof DRAWING_2_DATA !== 'undefined') ? DRAWING_2_DATA : [])
+      : ((typeof DRAWING_1_DATA !== 'undefined') ? DRAWING_1_DATA : []);
   if (!lessons.length) return;
   const index = Math.max(0, Math.min(state.selectedDrawingPage || 0, lessons.length - 1));
   state.selectedDrawingPage = index;
@@ -1388,7 +1424,7 @@ function renderDrawingView() {
   currentNavCrumbs = [
     { label: 'Home', onclick: () => { setActiveNav('home'); renderHome(); } },
     { label: 'Subjects', onclick: () => renderClasses() },
-    { label: state.selectedClass === 'cls2' ? 'Class 2' : 'Class 1', onclick: () => goToSubjects(state.selectedClass === 'cls2' ? 'cls2' : 'cls1') },
+    { label: `Class ${state.selectedClass.replace('cls','')}`, onclick: () => goToSubjects(state.selectedClass) },
     { label: 'Drawing', active: true }
   ];
   pageContent().innerHTML = `<div class="drawing-view-tabs"><button class="${state.activeDrawingTab !== 'practice' ? 'active' : ''}" onclick="state.activeDrawingTab='activities';renderDrawingView()">🎨 Activities</button><button class="${state.activeDrawingTab === 'practice' ? 'active' : ''}" onclick="state.activeDrawingTab='practice';renderDrawingView()">📝 Exam Practice</button></div><div class="math-unified-view drawing-workspace">
@@ -7326,7 +7362,19 @@ function openGenericChapterDetails(classId, subjId, subjName, chNum) {
 // ─────────────────────────────────────────
 function _getIslChapters() {
   const isCls10 = (state.selectedClass === "cls10");
+  const isCls3 = (state.selectedClass === "cls3");
+  const isCls2 = (state.selectedClass === "cls2");
   const isCls1 = (state.selectedClass === "cls1");
+  if (isCls3) {
+    return (typeof DATA !== 'undefined' && DATA.islamyat3Chapters) || 
+           (typeof window !== 'undefined' && window.ISLAMYAT_3_DATA) || 
+           (typeof ISLAMYAT_3_DATA !== 'undefined' ? ISLAMYAT_3_DATA : []);
+  }
+  if (isCls2) {
+    return (typeof DATA !== 'undefined' && DATA.islamyat2Chapters) || 
+           (typeof window !== 'undefined' && window.ISLAMYAT_2_DATA) || 
+           (typeof ISLAMYAT_2_DATA !== 'undefined' ? ISLAMYAT_2_DATA : []);
+  }
   if (isCls1) {
     return (typeof DATA !== 'undefined' && DATA.islamyat1Chapters) || 
            (typeof window !== 'undefined' && window.ISLAMYAT_1_DATA) || 
@@ -14771,7 +14819,7 @@ function renderMathLesson(ch) {
           <button class="topic-sub-tab-btn" data-subtab="exercise" onclick="switchMathTopicSubTab('${sec.id}', 'exercise', this)">✍️ Topic Exercise</button>
           <button class="topic-sub-tab-btn" data-subtab="slos" onclick="switchMathTopicSubTab('${sec.id}', 'slos', this)">🎯 Topic SLOs</button>
         </div>
-        ${renderMathDiagram(sec, ch.number)}
+        ${renderMathDiagram(sec, ch.number) || renderPrimaryMathDiagram(state.selectedClass, ch.number, sec.id, sec)}
         <div id="math-topic-sub-content-${sec.id}" class="topic-sub-content">
           ${renderMathTopicSubContent(sec, ch, 'english', idx)}
         </div>
@@ -14817,7 +14865,7 @@ function renderMathExamples(ch) {
             <strong>Method:</strong> ${ex.method}
           </div>
         </div>
-        ${renderMathDiagram(ex, ch.number)}
+        ${renderMathDiagram(ex, ch.number) || ((state.selectedClass === 'cls1' || state.selectedClass === 'cls2') && ch.sections && ch.sections.length ? renderPrimaryMathDiagram(state.selectedClass, ch.number, ch.sections[idx % ch.sections.length].id, ex) : '')}
         <div class="math-step-box">
           <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">Detailed Step-by-Step Execution:</div>
           <ol style="margin:0;padding-left:1.25rem;line-height:1.8;">
@@ -14850,6 +14898,9 @@ function switchMathEx(exKey, activeCat) {
 
   const currentEx = ch.exercises.find(e => e.exercise === exKey) || ch.exercises[0];
   if (!currentEx) return;
+  const visualSection = (ch.sections || []).find(sec => sec.id === exKey)
+    || (ch.sections || [])[ch.exercises.indexOf(currentEx)]
+    || (ch.sections || [])[0];
 
   // Group problems by category
   const catMap = {};
@@ -14910,7 +14961,7 @@ function switchMathEx(exKey, activeCat) {
             <div style="font-weight:700;font-size:1.02rem;color:#0f172a;margin-bottom:0.85rem;white-space:pre-line;line-height:1.65;background:#f8fafc;padding:0.85rem 1.1rem;border-radius:8px;border:1px solid #e2e8f0;">
               ${p.question}
             </div>
-            ${renderMathDiagram(p, ch.number)}
+            ${renderMathDiagram(p, ch.number) || (visualSection && (state.selectedClass === 'cls1' || state.selectedClass === 'cls2') ? renderPrimaryMathDiagram(state.selectedClass, ch.number, visualSection.id, p) : '')}
             <div class="math-step-box" style="white-space:pre-line;line-height:1.8;margin-bottom:0.85rem;">
               <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">Full Mathematical Solution:</div>
               ${p.solution}
@@ -16291,6 +16342,10 @@ function getSubjectChapterList(subjKey, classId) {
     if (isCls10 && typeof ISLAMYAT_10_DATA !== 'undefined' && Array.isArray(ISLAMYAT_10_DATA)) {
       return ISLAMYAT_10_DATA;
     }
+    const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
+    if (isCls3 && typeof ISLAMYAT_3_DATA !== 'undefined' && Array.isArray(ISLAMYAT_3_DATA)) {
+      return ISLAMYAT_3_DATA;
+    }
     const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
     if (isCls2 && typeof ISLAMYAT_2_DATA !== 'undefined' && Array.isArray(ISLAMYAT_2_DATA)) {
       return ISLAMYAT_2_DATA;
@@ -16304,6 +16359,10 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && (DATA.islChapters || DATA.islData)) ? (DATA.islChapters || DATA.islData) : []);
   }
   if (subjKey === 'nazira') {
+    const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
+    if (isCls3 && typeof NAZIRA_3_DATA !== 'undefined' && Array.isArray(NAZIRA_3_DATA)) {
+      return NAZIRA_3_DATA;
+    }
     const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
     if (isCls2 && typeof NAZIRA_2_DATA !== 'undefined' && Array.isArray(NAZIRA_2_DATA)) {
       return NAZIRA_2_DATA;

@@ -68,7 +68,7 @@ const DATA = {
       "id": "cls3",
       "name": "Class 3",
       "emoji": "📚",
-      "subjects": 5
+      "subjects": 7
     },
     {
       "id": "cls4",
@@ -165,11 +165,13 @@ const DATA = {
       { "id": "cls2-drawing", "name": "Drawing",           "nameUrdu": "تخلیقی فنون و ڈرائنگ", "emoji": "🎨", "chapters": 32, "hasDrawing": true }
     ],
     "cls3": [
-      { "id": "cls3-eng",  "name": "English",         "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 14 },
-      { "id": "cls3-urdu", "name": "Urdu",            "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 14 },
-      { "id": "cls3-math", "name": "Mathematics",     "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 10 },
-      { "id": "cls3-sci",  "name": "General Science", "nameUrdu": "جنرل سائنس",     "emoji": "🔬", "chapters": 10 },
-      { "id": "cls3-isl",  "name": "Islamyat",        "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 10 }
+      { "id": "cls3-eng",     "name": "English",         "nameUrdu": "انگریزی",             "emoji": "📖", "chapters": 14 },
+      { "id": "cls3-urdu",    "name": "Urdu",            "nameUrdu": "اردو لازمی",          "emoji": "📗", "chapters": 14 },
+      { "id": "cls3-math",    "name": "Mathematics",     "nameUrdu": "ریاضی",               "emoji": "📐", "chapters": 10 },
+      { "id": "cls3-sci",     "name": "General Science", "nameUrdu": "جنرل سائنس",          "emoji": "🔬", "chapters": 10 },
+      { "id": "cls3-isl",     "name": "Islamyat",        "nameUrdu": "اسلامیات",            "emoji": "🕌", "chapters": 18, "hasIsl": true, "hasIsl3": true },
+      { "id": "cls3-nazira",  "name": "Nazira Quran",    "nameUrdu": "ناظرہ قرآن",          "emoji": "📖", "chapters": 16, "hasNazira": true, "hasNazira3": true },
+      { "id": "cls3-drawing", "name": "Drawing",         "nameUrdu": "تخلیقی فنون و ڈرائنگ", "emoji": "🎨", "chapters": 32, "hasDrawing": true }
     ],
     "cls4": [
       { "id": "cls4-eng",  "name": "English",         "nameUrdu": "انگریزی",        "emoji": "📖", "chapters": 14 },
