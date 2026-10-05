@@ -619,7 +619,7 @@ function renderClasses() {
     if (['cls1', 'cls2', 'cls3', 'cls4', 'cls5'].includes(c.id)) {
       const badgeText = c.id === 'cls1' ? 'Drawing ready · 5 subjects in prep'
         : c.id === 'cls2' ? 'Maths & Drawing ready · 4 subjects in prep'
-          : c.id === 'cls3' ? 'English, GK, Islamyat, Nazira, Pashto & Drawing ready'
+          : c.id === 'cls3' ? 'Maths, English, GK, Islamyat, Nazira, Pashto & Drawing ready'
           : `${c.subjects} Subjects · In Prep`;
       return { tierName: 'Primary', tierClass: 'tier-primary', badgeText };
     }
@@ -726,7 +726,7 @@ function goToSubjects(classId) {
   ];
 
   // Classes 1, 2, and 3 have integrated content and subjects ready
-  if (!['cls1', 'cls2', 'cls3', 'cls9', 'cls10'].includes(classId)) {
+  if (!['cls1', 'cls2', 'cls3', 'cls9', 'cls10', 'cls12'].includes(classId)) {
     pageContent().innerHTML = `
       <!-- 1. Single-Line Consolidated Header Bar -->
       <div class="subjects-single-line-bar">
@@ -991,8 +991,8 @@ function goToSubjects(classId) {
         badgeClass: "badge-blue",
         metric1Val: "7 Textbook Units",
         metric1Lbl: "Whole Numbers to Data Handling",
-        metric2Val: "189 Scanned Pages",
-        metric2Lbl: "Lightweight text and vector lessons",
+        metric2Val: "193 Source PDF Pages",
+        metric2Lbl: "Text and vector visuals; page photos excluded",
         metric3Val: "63 Exam Questions",
         metric3Lbl: "MCQs · Short & Long Questions",
         topics: ["Whole Numbers", "Number Operations", "Fractions", "Measurement", "Time", "Geometry", "Data Handling"]
@@ -1254,9 +1254,9 @@ function goToSubjects(classId) {
       <div class="class-stat-card">
         <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">📚</div>
         <div class="csc-content">
-          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '8 Subjects · English, Islamyat, Nazira, Pashto, Drawing' : classId === 'cls3' ? '7 Subjects · Islamyat, Nazira & Drawing ready' : '9 Subjects · 15 Books'}</div>
+          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '8 Subjects · English, Islamyat, Nazira, Pashto, Drawing' : classId === 'cls3' ? '8 Subjects · Maths, English, GK, Islamyat, Nazira, Pashto & Drawing ready' : '9 Subjects · 15 Books'}</div>
           <div class="csc-label">Class Curriculum Track</div>
-          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English, Islamyat, Nazira, Pashto (23 Units) &amp; Drawing' : classId === 'cls3' ? 'Other Class 3 subjects are still in preparation' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
+          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English, Islamyat, Nazira, Pashto (23 Units) &amp; Drawing' : classId === 'cls3' ? 'Maths is available; Urdu and General Science are still in preparation' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
         </div>
       </div>
 
@@ -1308,7 +1308,7 @@ function openSubject(classId, subjId) {
     renderDrawingView();
     return;
   }
-  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls1' && classId !== 'cls2' && classId !== 'cls3') {
+  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls1' && classId !== 'cls2' && classId !== 'cls3' && classId !== 'cls12') {
     goToSubjects(classId);
     return;
   }
@@ -1317,25 +1317,25 @@ function openSubject(classId, subjId) {
   const subs = DATA.subjects[classId] || [];
   const subj = subs.find(s => s.id === subjId);
   if (!subj) return;
-  if (subj.hasBio || subjId === 'cls9-bio' || subjId === 'cls10-bio') {
+  if (subj.hasBio || subjId === 'cls9-bio' || subjId === 'cls10-bio' || subjId === 'cls12-bio') {
     state.activeSubject = "bio";
     openSubjectWorkspace(classId, "bio", subj);
-  } else if (subj.hasChem || subjId === 'cls9-chem' || subjId === 'cls10-chem') {
+  } else if (subj.hasChem || subjId === 'cls9-chem' || subjId === 'cls10-chem' || subjId === 'cls12-chem') {
     state.activeSubject = "chem";
     openSubjectWorkspace(classId, "chem", subj);
-  } else if (subj.hasPhys || subjId === 'cls9-phy' || subjId === 'cls10-phy') {
+  } else if (subj.hasPhys || subjId === 'cls9-phy' || subjId === 'cls10-phy' || subjId === 'cls12-phy') {
     state.activeSubject = "phys";
     openSubjectWorkspace(classId, "phys", subj);
-  } else if (subj.hasEng || subjId === 'cls9-eng' || subjId === 'cls10-eng' || subjId === 'cls1-eng' || subjId === 'cls2-eng' || subjId === 'cls3-eng') {
+  } else if (subj.hasEng || subjId === 'cls9-eng' || subjId === 'cls10-eng' || subjId === 'cls1-eng' || subjId === 'cls2-eng' || subjId === 'cls3-eng' || subjId === 'cls12-eng') {
     state.activeSubject = "eng";
     openSubjectWorkspace(classId, "eng", subj);
-  } else if (subj.hasUrdu || subjId === 'cls9-urdu' || subjId === 'cls10-urdu' || subjId === 'cls2-urdu') {
+  } else if (subj.hasUrdu || subjId === 'cls9-urdu' || subjId === 'cls10-urdu' || subjId === 'cls2-urdu' || subjId === 'cls12-urdu') {
     state.activeSubject = "urdu";
     openSubjectWorkspace(classId, "urdu", subj);
-  } else if (subj.hasMath || subjId === 'cls1-math' || subjId === 'cls2-math' || subjId === 'cls3-math' || subjId === 'cls9-math' || subjId === 'cls10-math') {
+  } else if (subj.hasMath || subjId === 'cls1-math' || subjId === 'cls2-math' || subjId === 'cls3-math' || subjId === 'cls9-math' || subjId === 'cls10-math' || subjId === 'cls12-math') {
     state.activeSubject = "math";
     openMathView(classId, subj);
-  } else if (subj.hasPakStudy || subjId === 'cls9-pakstudy' || subjId === 'cls10-pakstudy') {
+  } else if (subj.hasPakStudy || subjId === 'cls9-pakstudy' || subjId === 'cls10-pakstudy' || subjId === 'cls12-pak' || subjId === 'cls12-pakstudy') {
     state.activeSubject = "pakstudy";
     openSubjectWorkspace(classId, "pakstudy", subj);
   } else if (subj.hasNazira || subjId === 'cls1-nazira' || subjId === 'cls2-nazira' || subjId === 'cls3-nazira') {
@@ -1350,9 +1350,30 @@ function openSubject(classId, subjId) {
   } else if (subj.hasGk || subjId === 'cls2-gk' || subjId === 'cls1-gk' || subjId === 'cls3-gk') {
     state.activeSubject = "gk";
     openSubjectWorkspace(classId, "gk", subj);
-  } else if (subj.hasComp || subjId === 'cls9-comp' || subjId === 'cls10-comp') {
+  } else if (subj.hasComp || subjId === 'cls9-comp' || subjId === 'cls10-comp' || subjId === 'cls12-comp') {
     state.activeSubject = "comp";
     openSubjectWorkspace(classId, "comp", subj);
+  } else if (subjId === 'cls12-stat') {
+    state.activeSubject = "stat";
+    openSubjectWorkspace(classId, "stat", subj);
+  } else if (subj.hasCivics || subjId === 'cls12-civics') {
+    state.activeSubject = "civics";
+    openSubjectWorkspace(classId, "civics", subj);
+  } else if (subj.hasEcon || subjId === 'cls12-econ') {
+    state.activeSubject = "econ";
+    openSubjectWorkspace(classId, "econ", subj);
+  } else if (subj.hasHpe || subjId === 'cls12-hpe') {
+    state.activeSubject = "hpe";
+    openSubjectWorkspace(classId, "hpe", subj);
+  } else if (subj.hasIslopt || subjId === 'cls12-islopt') {
+    state.activeSubject = "islopt";
+    openSubjectWorkspace(classId, "islopt", subj);
+  } else if (subj.hasIslhist || subjId === 'cls12-islhist') {
+    state.activeSubject = "islhist";
+    openSubjectWorkspace(classId, "islhist", subj);
+  } else if (subj.hasQuran || subjId === 'cls12-quran') {
+    state.activeSubject = "quran";
+    openSubjectWorkspace(classId, "quran", subj);
   } else {
     state.activeSubject = subj.id;
     goToChapters(classId, subjId, subj.name);
@@ -13004,6 +13025,55 @@ const SUBJECT_THEMES = {
     pillColor: '#022c22',
     accentColor: '#059669',
     tag: 'سبق'
+  },
+  stat: {
+    gradient: 'linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%)',
+    pillBg: '#c4b5fd',
+    pillColor: '#2e1065',
+    accentColor: '#7c3aed',
+    tag: 'Unit'
+  },
+  civics: {
+    gradient: 'linear-gradient(135deg, #1e293b 0%, #334155 100%)',
+    pillBg: '#cbd5e1',
+    pillColor: '#0f172a',
+    accentColor: '#475569',
+    tag: 'باب'
+  },
+  econ: {
+    gradient: 'linear-gradient(135deg, #065f46 0%, #047857 100%)',
+    pillBg: '#a7f3d0',
+    pillColor: '#064e3b',
+    accentColor: '#059669',
+    tag: 'باب'
+  },
+  hpe: {
+    gradient: 'linear-gradient(135deg, #9a3412 0%, #c2410c 100%)',
+    pillBg: '#fed7aa',
+    pillColor: '#7c2d12',
+    accentColor: '#ea580c',
+    tag: 'باب'
+  },
+  islopt: {
+    gradient: 'linear-gradient(135deg, #14532d 0%, #166534 100%)',
+    pillBg: '#bbf7d0',
+    pillColor: '#052e16',
+    accentColor: '#15803d',
+    tag: 'باب'
+  },
+  islhist: {
+    gradient: 'linear-gradient(135deg, #78350f 0%, #92400e 100%)',
+    pillBg: '#fde68a',
+    pillColor: '#451a03',
+    accentColor: '#b45309',
+    tag: 'باب'
+  },
+  quran: {
+    gradient: 'linear-gradient(135deg, #064e3b 0%, #065f46 100%)',
+    pillBg: '#6ee7b7',
+    pillColor: '#022c22',
+    accentColor: '#059669',
+    tag: 'باب'
   }
 };
 
@@ -13577,6 +13647,18 @@ function renderTopicSloInnerContent(sec, ch, innerTab) {
 
 function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
   if (subTab === 'english') {
+    if (sec.construction && Array.isArray(sec.construction.steps)) {
+      const construction = sec.construction;
+      return `
+        <div class="math-textbook-construction" style="font-size:0.96rem;line-height:1.75;color:#263238;">
+          <p style="margin:0 0 .65rem;"><strong style="color:#075985;">Given:</strong> ${construction.given}</p>
+          <p style="margin:0 0 .9rem;"><strong style="color:#075985;">Required:</strong> ${construction.required}</p>
+          <h4 style="margin:0 0 .45rem;color:#0f172a;font-size:1rem;">Steps of Construction</h4>
+          <ol style="margin:0;padding-left:1.6rem;">
+            ${construction.steps.map(step => `<li style="padding-left:.2rem;margin:.3rem 0;">${step}</li>`).join('')}
+          </ol>
+        </div>`;
+    }
     let html = `
       <div style="font-size:0.95rem;line-height:1.8;color:#334155;white-space:pre-line;margin-bottom:1rem;">
         ${sec.theory}
@@ -13656,7 +13738,7 @@ function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
       <div style="margin-bottom:0.5rem;">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
           <h4 style="margin:0;color:#0f172a;font-size:0.98rem;font-weight:700;">✍️ ${exMatch.title}</h4>
-          <span style="font-size:0.8rem;color:#15803d;font-weight:700;background:#dcfce7;padding:0.2rem 0.5rem;border-radius:4px;">100% Solved</span>
+          <span style="font-size:0.8rem;color:#15803d;font-weight:700;background:#dcfce7;padding:0.2rem 0.5rem;border-radius:4px;">${state.selectedClass === 'cls10' ? 'Textbook questions' : '100% Solved'}</span>
         </div>
         ${catTabs}
         <div id="topic-ex-list-${sec.id}">
@@ -13767,6 +13849,7 @@ function getMathChapterList(classId) {
     if (typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) return MATH_10_DATA;
     if (typeof DATA !== 'undefined' && DATA.math10Chapters) return DATA.math10Chapters;
   }
+  if (cid === 'cls12' && typeof MATH_12_DATA !== 'undefined' && Array.isArray(MATH_12_DATA)) return MATH_12_DATA;
   if (typeof MATH_DATA !== 'undefined' && Array.isArray(MATH_DATA)) return MATH_DATA;
   if (typeof DATA !== 'undefined' && DATA.mathChapters) return DATA.mathChapters;
   if (typeof window !== 'undefined' && window.MATH_DATA) return window.MATH_DATA;
@@ -13790,7 +13873,9 @@ function openMathView(classId, subj) {
   setActiveNav('subjects');
   const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls1' ? 'Class 1' : (classId === 'cls2' ? 'Class 2' : (classId === 'cls3' ? 'Class 3' : (classId === 'cls10' ? 'Class 10' : 'Class 9')))) };
   const chList = getMathChapterList(classId);
-  const pdfFile = (classId === 'cls1')
+  const pdfFile = (classId === 'cls12')
+    ? 'file:///D:/SpaceBook/Books/12th/12th%20Maths/PDF/Math%20Book%20for%2012%20class%20KPTBB.pdf'
+    : (classId === 'cls1')
     ? 'file:///D:/SpaceBook/Books/1st/1st%20Maths/PDF/Math%20book%201%20KPTBB.pdf'
     : (classId === 'cls2')
       ? 'file:///D:/SpaceBook/Books/2nd/2nd%20Maths/PDF/Math%20Book%20for%202%20class%20KPTBB.pdf'
@@ -13835,7 +13920,7 @@ function openMathView(classId, subj) {
         <div class="math-ch-list">${chapBtns}</div>
         <div class="math-sidebar-footer">
           <a href="${pdfFile}" target="_blank" class="math-pdf-btn">
-            <span>📥</span> Official Math Book PDF
+            <span>📥</span> Official Math Book PDF${classId === 'cls3' ? ' · Part 1 of 5' : classId === 'cls12' ? ' · Part 1 of 5' : ''}
           </a>
         </div>
       </div>
@@ -14134,6 +14219,537 @@ function renderMathDiagram(item, chapterNumber) {
   const unit = Number(chapterNumber);
   const prompt = String(item.problem || item.question || item.statement || item.theory || "");
   const detail = [item.title, prompt, item.given, item.method, item.solution, item.theory, (item.steps || []).join(" ")].join(" ");
+  const textbookDiagram = item.diagram;
+  if (unit === 1 && textbookDiagram) {
+    const safe = value => sanitize(String(value == null ? "" : value));
+    const diagramId = "md-" + String(item.id || item.title || "figure").replace(/[^A-Za-z0-9_-]/g, "");
+    const label = (x, y, value, anchor) => '<text x="' + x + '" y="' + y + '" text-anchor="' + (anchor || "middle") + '" class="math-diagram-label">' + safe(value) + "</text>";
+    const caption = value => '<figure class="math-diagram"><figcaption>' + safe(value) + '</figcaption><svg viewBox="0 0 480 280" role="img" aria-labelledby="' + diagramId + '"><title id="' + diagramId + '">' + safe(item.title || prompt.slice(0, 100)) + '</title>';
+    if (textbookDiagram.type === "quadratic-graph") {
+      const g = textbookDiagram, x0 = Number(g.xMin), x1 = Number(g.xMax), y0 = Number(g.yMin), y1 = Number(g.yMax);
+      const px = x => 72 + (x - x0) * 336 / (x1 - x0), py = y => 238 - (y - y0) * 202 / (y1 - y0);
+      let svg = "";
+      for (let x = Math.ceil(x0); x <= x1; x++) { svg += '<line class="math-diagram-grid" x1="' + px(x) + '" y1="36" x2="' + px(x) + '" y2="238"/>'; svg += label(px(x), py(0) + 17, x); }
+      for (let y = Math.ceil(y0 / 2) * 2; y <= y1; y += 2) { svg += '<line class="math-diagram-grid" x1="72" y1="' + py(y) + '" x2="408" y2="' + py(y) + '"/>'; if (y !== 0) svg += label(61, py(y) + 4, y, "end"); }
+      svg += '<line class="math-diagram-axis" x1="72" y1="' + py(0) + '" x2="412" y2="' + py(0) + '"/><line class="math-diagram-axis" x1="' + px(0) + '" y1="238" x2="' + px(0) + '" y2="32"/>';
+      svg += label(420, py(0) - 7, g.xLabel || "x", "start") + label(px(0) + 10, 31, g.yLabel || "y", "start");
+      let d = "";
+      for (let i = 0; i <= 100; i++) { const x = x0 + (x1 - x0) * i / 100, y = g.a * x * x + g.b * x + g.c; d += (i ? " L" : "M") + px(x) + " " + py(y); }
+      svg += '<path class="math-diagram-graphline" d="' + d + '"/>';
+      (g.points || []).forEach(point => { svg += '<circle class="math-diagram-point" cx="' + px(point.x) + '" cy="' + py(point.y) + '" r="4"/>' + label(px(point.x) + 8, py(point.y) - 9, point.label, "start"); });
+      return caption("Height of the ball against time; marked intercepts and starting point") + svg + '</svg></figure>';
+    }
+    if (textbookDiagram.type === "completing-square") {
+      const b = Number(textbookDiagram.coefficient), half = Math.abs(b / 2), sign = b < 0 ? "−" : "+";
+      let svg = '<rect class="math-diagram-shape" x="36" y="75" width="74" height="74"/><text class="math-diagram-label" x="73" y="116">x²</text><rect class="math-diagram-shape" x="110" y="75" width="74" height="36"/><text class="math-diagram-label" x="147" y="98">' + safe((2 * half) + 'x') + '</text>';
+      svg += '<path class="math-diagram-axis" d="M195 112h26m-8-7 8 7-8 7" fill="none"/>';
+      svg += '<rect class="math-diagram-shape" x="231" y="75" width="74" height="74"/><rect class="math-diagram-shape" x="305" y="75" width="74" height="37"/><rect class="math-diagram-shape" x="231" y="149" width="74" height="37"/><rect class="math-diagram-construction" x="305" y="149" width="37" height="37"/><text class="math-diagram-label" x="268" y="116">x²</text><text class="math-diagram-label" x="342" y="98">x(' + safe(sign + half) + ')</text><text class="math-diagram-label" x="323" y="173">(' + safe(half) + ')²</text>';
+      svg += '<path class="math-diagram-axis" d="M388 112h24m-8-7 8 7-8 7" fill="none"/><rect class="math-diagram-shape" x="420" y="75" width="42" height="111"/><text class="math-diagram-label" x="441" y="122">(x ' + safe(sign + half) + ')²</text>';
+      return caption("Completing the square by splitting the x-term into equal rectangles") + svg + '</svg></figure>';
+    }
+    if (textbookDiagram.type === "rectangle-frame") {
+      const g = textbookDiagram;
+      const svg = '<rect class="math-diagram-shape" x="86" y="52" width="308" height="176"/><rect x="130" y="91" width="220" height="98" fill="#fff" stroke="#64748b" stroke-width="2"/><line class="math-diagram-construction" x1="86" y1="37" x2="130" y2="37"/><line class="math-diagram-construction" x1="350" y1="37" x2="394" y2="37"/><line class="math-diagram-construction" x1="61" y1="52" x2="61" y2="91"/><line class="math-diagram-construction" x1="61" y1="189" x2="61" y2="228"/>' + label(240, 145, g.outerWidth + ' cm × ' + g.outerHeight + ' cm opening') + label(240, 166, 'frame width x on each side') + label(108, 31, 'x') + label(372, 31, 'x') + label(47, 75, 'x') + label(47, 214, 'x');
+      return caption("Uniform frame around the 11 cm by 6 cm inner rectangle") + svg + '</svg></figure>';
+    }
+  }
+  if (unit === 2 && textbookDiagram) {
+    const safe = value => sanitize(String(value == null ? "" : value));
+    const diagramId = "md-" + String(item.id || item.num || item.title || "figure").replace(/[^A-Za-z0-9_-]/g, "");
+    const text = (x, y, value, anchor) => '<text x="' + x + '" y="' + y + '" text-anchor="' + (anchor || "middle") + '" class="math-diagram-label">' + safe(value) + "</text>";
+    const figure = (inner, caption) => '<figure class="math-diagram"><figcaption>' + safe(caption) + '</figcaption><svg viewBox="0 0 480 240" role="img" aria-labelledby="' + diagramId + '"><title id="' + diagramId + '">' + safe(textbookDiagram.title || item.title || prompt.slice(0, 100)) + "</title>" + inner + "</svg></figure>";
+    if (textbookDiagram.type === "rectangle-area") {
+      const g = textbookDiagram;
+      const inner = '<rect class="math-diagram-shape" x="112" y="48" width="256" height="144"/>' +
+        '<line class="math-diagram-construction" x1="112" y1="32" x2="368" y2="32"/><path class="math-diagram-axis" d="M112 32l10-5v10zM368 32l-10-5v10z"/>' +
+        '<line class="math-diagram-construction" x1="88" y1="48" x2="88" y2="192"/><path class="math-diagram-axis" d="M88 48l-5 10h10zM88 192l-5-10h10z"/>' +
+        text(240, 24, g.length) + text(77, 124, g.width) + text(240, 124, 'Area = ' + g.area) +
+        text(240, 218, 'Schematic: dimensions shown, drawing not to scale');
+      return figure(inner, "Rectangular area model");
+    }
+    if (textbookDiagram.type === "right-triangle") {
+      const g = textbookDiagram;
+      const inner = '<polygon class="math-diagram-shape" points="108,190 368,190 368,54"/>' +
+        '<path class="math-diagram-axis" d="M348 190v-20h20" fill="none"/>' +
+        text(228, 218, g.base) + text(389, 126, g.height) + text(220, 105, g.hypotenuse) +
+        text(240, 24, 'Right triangle (schematic)');
+      return figure(inner, "Right triangle with the side labels from the question");
+    }
+    if (textbookDiagram.type === "synthetic-division") {
+      const g = textbookDiagram;
+      const coefficients = g.coefficients || [], products = g.products || [], bottom = g.bottom || [];
+      const count = Math.max(coefficients.length, products.length, bottom.length), spacing = Math.min(72, 336 / Math.max(1, count - 1));
+      const start = 100 + (336 - spacing * (count - 1)) / 2;
+      let inner = '<line class="math-diagram-shape" x1="69" y1="42" x2="69" y2="192"/><line class="math-diagram-shape" x1="69" y1="139" x2="' + (start + (count - 1) * spacing + 28) + '" y2="139"/>';
+      inner += text(44, 87, g.root) + text(235, 28, 'Coefficients') + text(235, 222, 'Bottom row gives quotient coefficients and remainder');
+      for (let i = 0; i < count; i++) {
+        const x = start + i * spacing;
+        inner += text(x, 87, coefficients[i]);
+        if (products[i] != null) inner += text(x, 126, products[i]);
+        if (bottom[i] != null) inner += text(x, 169, bottom[i]);
+      }
+      return figure(inner, "Synthetic division by " + (g.root >= 0 ? "x − " + g.root : "x + " + Math.abs(g.root)));
+    }
+  }
+  if (unit === 6 && textbookDiagram) {
+    const safe = value => sanitize(String(value == null ? "" : value));
+    const id = "m6-" + String(item.id || item.num || item.title || "chart").replace(/[^A-Za-z0-9_-]/g, "") + "-" + Math.random().toString(36).slice(2, 8);
+    const fig = (content, caption) => '<figure class="math-diagram"><figcaption>' + safe(caption || textbookDiagram.title || "Statistics diagram") + '</figcaption>' + content + '</figure>';
+    const fmt = value => Number.isFinite(Number(value)) ? String(Math.round(Number(value) * 100) / 100) : String(value == null ? "" : value);
+    const chartSvg = (g, suffix) => {
+      if (g.type === "frequency-table") {
+        const rows = g.rows || [];
+        let headers = g.headers;
+        if (!headers) {
+          const n = rows[0] ? rows[0].length : 0, title = String(g.title || "").toLowerCase();
+          if (/quiz marks/.test(title)) headers = ["Class interval", "Class mark", "Frequency"];
+          else if (/cumulative/.test(title)) headers = n === 4 ? ["Value / class", "Boundary", "Frequency", "Cumulative frequency"] : ["Value / class", "Frequency", "Cumulative frequency"];
+          else if (/fx|marks, frequencies|scores, frequenc/.test(title)) headers = ["Value / class", "Frequency", "fx"];
+          else if (/boundary|class mark/.test(title)) headers = ["Class limits", "Class boundaries", "Class mark", "Frequency"];
+          else if (/prices/.test(title)) headers = ["Class", "Midpoint", "Frequency", "fx"];
+          else if (/median class/.test(title)) headers = ["Class", "Frequency", "Cumulative frequency"];
+          else if (n === 2) headers = ["Value / class", "Frequency"];
+          else if (n === 3) headers = ["Value / class", "Frequency", "Cumulative frequency"];
+          else headers = Array.from({ length: n }, (_, i) => i === 0 ? "Class / value" : "Column " + (i + 1));
+        }
+        const cell = value => '<td style="border:1px solid #94a3b8;padding:.38rem .55rem;text-align:center;white-space:nowrap">' + safe(fmt(value)) + '</td>';
+        const head = headers.map(value => '<th style="border:1px solid #64748b;background:#dbeafe;padding:.42rem .55rem;text-align:center">' + safe(value) + '</th>').join("");
+        const body = rows.map(row => '<tr>' + row.map(cell).join("") + '</tr>').join("");
+        return fig('<div style="overflow-x:auto"><table style="border-collapse:collapse;margin:auto;font-size:.88rem;max-width:100%"><thead><tr>' + head + '</tr></thead><tbody>' + body + '</tbody></table></div>', g.title || "Frequency table");
+      }
+      if (g.type === "graphical-summary") {
+        const ogive = chartSvg({ type:"ogive", points:g.points || [], title:"Ogive: median and quartiles", horizontalMarks:[g.points && g.points.length ? g.points[g.points.length - 1][1] / 4 : 0, g.points && g.points.length ? g.points[g.points.length - 1][1] * 3 / 4 : 0], verticalMarks:[g.q1,g.q3], markLabel:"Q₁, median, Q₃" }, suffix + "o");
+        const mode = chartSvg({ type:"mode-histogram", bars:g.bars || [], mode:g.mode, title:"Histogram: graphical mode" }, suffix + "h");
+        return fig('<div style="display:grid;grid-template-columns:minmax(0,1fr);gap:.5rem">' + ogive.replace(/^<figure[^>]*>|<\/figure>$/g, "") + mode.replace(/^<figure[^>]*>|<\/figure>$/g, "") + '</div>', g.title || "Graphical estimates");
+      }
+      const bars = g.bars || [], points = g.points || [], series = g.series || [];
+      const category = g.type === "category-bars";
+      const continuousBars = /histogram/.test(g.type) || g.type === "mode-histogram";
+      const allXs = [...bars.flatMap(b => [Number(b.lower), Number(b.upper)]), ...points.map(p => Number(p[0])), ...series.flatMap(s => (s.points || []).map(p => Number(p[0])))].filter(Number.isFinite);
+      const xMin = Number.isFinite(Number(g.xMin)) ? Number(g.xMin) : (allXs.length ? Math.min(...allXs) : 0);
+      const xMax = Number.isFinite(Number(g.xMax)) ? Number(g.xMax) : (allXs.length ? Math.max(...allXs) : Math.max(1, (g.labels || []).length));
+      const maxValue = Math.max(1, ...bars.map(b => Number(b.height == null ? b.frequency : b.height) || 0), ...points.map(p => Number(p[1]) || 0), ...series.flatMap(s => (s.points || []).map(p => Number(p[1]) || 0)));
+      const yMax = Number(g.yMax) || maxValue * 1.12;
+      const left = 62, right = 452, top = 42, bottom = 238, plotW = right - left, plotH = bottom - top;
+      const px = x => left + ((x - xMin) / (xMax - xMin || 1)) * plotW;
+      const py = y => bottom - (y / yMax) * plotH;
+      const text = (x, y, value, anchor = "middle", size = 10) => '<text x="' + x + '" y="' + y + '" text-anchor="' + anchor + '" style="font-size:' + size + 'px;font-weight:600;fill:#334155">' + safe(value) + '</text>';
+      let svg = '<svg viewBox="0 0 480 300" role="img" aria-label="' + safe(g.title || "Statistics chart") + '"><title>' + safe(g.title || "Statistics chart") + '</title>';
+      for (let i = 0; i <= 5; i++) {
+        const value = yMax * i / 5, y = py(value);
+        svg += '<line class="math-diagram-grid" x1="' + left + '" y1="' + y + '" x2="' + right + '" y2="' + y + '"/>' + text(left - 8, y + 4, fmt(value), 'end', 9);
+      }
+      svg += '<line class="math-diagram-axis" x1="' + left + '" y1="' + bottom + '" x2="' + right + '" y2="' + bottom + '"/><line class="math-diagram-axis" x1="' + left + '" y1="' + top + '" x2="' + left + '" y2="' + bottom + '"/>';
+      if (category) {
+        const labels = g.labels || [], values = g.values || [], slot = plotW / Math.max(1, labels.length), bw = Math.min(42, slot * .66);
+        labels.forEach((label, i) => {
+          const x = left + i * slot + (slot - bw) / 2, y = py(Number(values[i]) || 0), height = bottom - y;
+          svg += '<rect x="' + x + '" y="' + y + '" width="' + bw + '" height="' + height + '" fill="#93c5fd" stroke="#2563eb" stroke-width="1.4"/>' + text(x + bw / 2, bottom + 15, label, 'middle', 9);
+        });
+      } else if (continuousBars) {
+        bars.forEach(bar => {
+          const x1 = px(Number(bar.lower)), x2 = px(Number(bar.upper)), val = Number(bar.height == null ? bar.frequency : bar.height) || 0, y = py(val);
+          svg += '<rect x="' + x1 + '" y="' + y + '" width="' + Math.max(0, x2 - x1) + '" height="' + (bottom - y) + '" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.4"/>';
+        });
+      }
+      const drawLine = (pts, color, pointColor = color) => {
+        if (!pts || pts.length < 2) return "";
+        let markup = '<polyline points="' + pts.map(p => px(Number(p[0])) + ',' + py(Number(p[1]))).join(' ') + '" fill="none" stroke="' + color + '" stroke-width="2.4" stroke-linejoin="round"/>';
+        pts.forEach(p => { markup += '<circle cx="' + px(Number(p[0])) + '" cy="' + py(Number(p[1])) + '" r="3.2" fill="' + pointColor + '" stroke="#fff" stroke-width="1"/>'; });
+        return markup;
+      };
+      if (points.length) svg += drawLine(points, '#dc2626');
+      const palette = ['#dc2626','#7c3aed','#059669'];
+      series.forEach((s, i) => {
+        svg += drawLine(s.points || [], palette[i % palette.length]);
+        svg += '<line x1="' + (left + 12) + '" y1="' + (top + 14 + i * 15) + '" x2="' + (left + 32) + '" y2="' + (top + 14 + i * 15) + '" stroke="' + palette[i % palette.length] + '" stroke-width="2.4"/>' + text(left + 38, top + 17 + i * 15, s.name || ('Series ' + (i + 1)), 'start', 9);
+      });
+      if (g.type === "mode-histogram" && bars.length) {
+        const i = bars.reduce((best, b, n) => Number(b.frequency) > Number(bars[best].frequency) ? n : best, 0), b = bars[i], prev = bars[Math.max(0, i - 1)], next = bars[Math.min(bars.length - 1, i + 1)];
+        const x1 = px(Number(b.lower)), x2 = px(Number(b.upper)), yTop = py(Number(b.frequency)), yPrev = py(Number(prev.frequency)), yNext = py(Number(next.frequency));
+        svg += '<line class="math-diagram-construction" x1="' + x1 + '" y1="' + yPrev + '" x2="' + x2 + '" y2="' + yTop + '"/><line class="math-diagram-construction" x1="' + x1 + '" y1="' + yTop + '" x2="' + x2 + '" y2="' + yNext + '"/>';
+        if (Number.isFinite(Number(g.mode))) svg += '<line x1="' + px(Number(g.mode)) + '" y1="' + yTop + '" x2="' + px(Number(g.mode)) + '" y2="' + bottom + '" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 4"/>' + text(px(Number(g.mode)), top - 7, 'Mode ' + fmt(g.mode), 'middle', 10);
+      }
+      (g.horizontalMarks || (g.horizontalMark == null ? [] : [g.horizontalMark])).forEach(value => {
+        const y = py(Number(value));
+        svg += '<line x1="' + left + '" y1="' + y + '" x2="' + right + '" y2="' + y + '" stroke="#7c3aed" stroke-dasharray="5 4" stroke-width="1.4"/>' + text(left + 4, y - 4, fmt(value), 'start', 9);
+      });
+      (g.verticalMarks || (g.verticalMark == null ? [] : [g.verticalMark])).forEach(value => {
+        const x = px(Number(value));
+        svg += '<line x1="' + x + '" y1="' + top + '" x2="' + x + '" y2="' + bottom + '" stroke="#7c3aed" stroke-dasharray="5 4" stroke-width="1.4"/>' + text(x, bottom + 27, fmt(value), 'middle', 9);
+      });
+      if (continuousBars) {
+        const boundaries = [...new Set(bars.flatMap(b => [Number(b.lower), Number(b.upper)]))].sort((a,b)=>a-b), step = Math.max(1, Math.ceil(boundaries.length / 8));
+        boundaries.forEach((value, i) => { if (i % step === 0 || i === boundaries.length - 1) svg += '<line class="math-diagram-grid" x1="' + px(value) + '" y1="' + bottom + '" x2="' + px(value) + '" y2="' + (bottom + 4) + '"/>' + text(px(value), bottom + 15, fmt(value), 'middle', 8); });
+      } else if (!category) {
+        const xs = [...new Set([...points.map(p=>Number(p[0])),...series.flatMap(s=>(s.points||[]).map(p=>Number(p[0])))] )].filter(Number.isFinite).sort((a,b)=>a-b), step = Math.max(1,Math.ceil(xs.length/8));
+        xs.forEach((value,i)=>{if(i%step===0||i===xs.length-1)svg+=text(px(value),bottom+15,fmt(value),'middle',8);});
+      }
+      svg += text((left + right) / 2, 288, g.xLabel || 'Class boundary / value', 'middle', 11) + '<text x="15" y="' + ((top + bottom) / 2) + '" transform="rotate(-90 15 ' + ((top + bottom) / 2) + ')" text-anchor="middle" style="font-size:11px;font-weight:600;fill:#334155">' + safe(g.yLabel || 'Frequency') + '</text></svg>';
+      return fig(svg, g.title || "Statistics chart");
+    };
+    if (textbookDiagram.type === "frequency-table") return chartSvg(textbookDiagram,id);
+    if (["category-bars","histogram","frequency-polygon","ogive","ogive-pair","histogram-polygon","mode-histogram","graphical-summary"].includes(textbookDiagram.type)) return chartSvg(textbookDiagram,id);
+  }
+  if (unit === 7 && textbookDiagram) {
+    const g = textbookDiagram;
+    const safe = value => sanitize(String(value == null ? "" : value));
+    const id = "m7-" + String(item.id || item.num || item.title || "figure").replace(/[^A-Za-z0-9_-]/g, "") + "-" + Math.random().toString(36).slice(2, 8);
+    const label = (x,y,value,size=13,anchor="middle") => '<text x="'+x+'" y="'+y+'" text-anchor="'+anchor+'" style="font-size:'+size+'px;font-weight:650;fill:#0f172a">'+safe(value)+'</text>';
+    const line = (x1,y1,x2,y2,color="#334155",dash="") => '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="'+color+'" stroke-width="2.4" '+(dash?'stroke-dasharray="'+dash+'"':'')+'/>';
+    const fig = (content,caption) => '<figure class="math-diagram"><figcaption>'+safe(caption||g.title||"Trigonometry diagram")+'</figcaption><svg viewBox="0 0 480 280" role="img" aria-labelledby="'+id+'"><title id="'+id+'">'+safe(caption||g.title||"Trigonometry diagram")+'</title>'+content+'</svg></figure>';
+    if (g.type === "sector") {
+      const raw=String(g.angle||"60°"), rad=raw.match(/([0-9.]+)?\s*π(?:\s*\/\s*([0-9.]+))?/i), deg=raw.match(/(-?[0-9.]+)\s*°/), rads=raw.match(/(-?[0-9.]+)\s*rad/i);
+      let degrees=60;
+      if(rad) degrees=(Number(rad[1]||1)*180/Number(rad[2]||1)); else if(deg) degrees=Number(deg[1]); else if(rads) degrees=Number(rads[1])*180/Math.PI;
+      degrees=Math.max(8,Math.min(330,Math.abs(degrees)));
+      const cx=240,cy=150,r=92,a1=-90*Math.PI/180,a2=(degrees-90)*Math.PI/180,x1=cx+r*Math.cos(a1),y1=cy+r*Math.sin(a1),x2=cx+r*Math.cos(a2),y2=cy+r*Math.sin(a2),large=degrees>180?1:0;
+      const path='M '+cx+' '+cy+' L '+x1+' '+y1+' A '+r+' '+r+' 0 '+large+' 1 '+x2+' '+y2+' Z';
+      let svg='<path d="'+path+'" fill="#bfdbfe" fill-opacity=".68" stroke="#2563eb" stroke-width="2.5"/><circle cx="'+cx+'" cy="'+cy+'" r="3.5" fill="#0f172a"/>';
+      svg+=line(cx,cy,x1,y1)+line(cx,cy,x2,y2)+label(cx+35,cy-10,'r = '+(g.radius||'r'))+label(cx+10,cy-35,'θ = '+raw,12,'start');
+      return fig(svg,g.title||"Circular sector");
+    }
+    if (g.type === "unit-circle" || g.type === "quadrants") {
+      const cx=240,cy=142,r=94;
+      let svg=line(76,cy,404,cy,"#64748b")+line(cx,34,cx,254,"#64748b")+'<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>';
+      svg+=label(408,cy+5,"x",12)+label(cx+7,31,"y",12);
+      if(g.type==="unit-circle"){
+        let px,py;
+        if(Number.isFinite(Number(g.x))&&Number.isFinite(Number(g.y))){const scale=72/Math.max(Math.abs(Number(g.x)),Math.abs(Number(g.y)),1);px=cx+Number(g.x)*scale;py=cy-Number(g.y)*scale;}
+        else {const a=(Number(g.angle)||45)*Math.PI/180;px=cx+r*Math.cos(a);py=cy-r*Math.sin(a);}
+        svg+=line(cx,cy,px,py,"#dc2626")+'<circle cx="'+px+'" cy="'+py+'" r="5" fill="#dc2626"/>'+label(px+(px<cx?-8:8),py-9,g.x!=null?'P('+g.x+','+g.y+')':'P',12,px<cx?'end':'start')+label(cx+18,cy-16,'θ');
+      }else if(g.quadrant){
+        const a=({1:45,2:135,3:225,4:315})[Number(g.quadrant)]||45,px=cx+r*.84*Math.cos(a*Math.PI/180),py=cy-r*.84*Math.sin(a*Math.PI/180);
+        svg+=line(cx,cy,px,py,"#dc2626")+'<circle cx="'+px+'" cy="'+py+'" r="5" fill="#dc2626"/>'+label(px+(px<cx?-8:8),py-9,'θ',12,px<cx?'end':'start');
+      }else{
+        const angles=[45,135,225,315];angles.forEach((a,i)=>{const x=cx+75*Math.cos(a*Math.PI/180),y=cy-75*Math.sin(a*Math.PI/180);svg+=line(cx,cy,x,y,"#94a3b8","4 4")+label(x+(x<cx?-8:8),y-6,'Q'+(i===0?1:i===1?2:i===2?3:4),11,x<cx?'end':'start');});
+      }
+      return fig(svg,g.title||"Coordinate plane and terminal side");
+    }
+    if (g.type === "right-triangle") {
+      const x1=104,y1=214,x2=104,y2=68,x3=372,y3=214;
+      let svg='<polygon points="'+x1+','+y1+' '+x2+','+y2+' '+x3+','+y3+'" fill="#dbeafe" fill-opacity=".5" stroke="#2563eb" stroke-width="2.5"/>';
+      svg+='<path d="M '+(x1+16)+' '+y1+' L '+(x1+16)+' '+(y1-16)+' L '+x1+' '+(y1-16)+'" fill="none" stroke="#334155" stroke-width="2"/>';
+      svg+=label(x1-10,y2-8,'A')+label(x1-10,y1+18,'B')+label(x3+10,y1+18,'C');
+      svg+=label((x1+x2)/2-22,(y1+y2)/2,g.opposite||'opposite',11)+label((x1+x3)/2,y1+22,g.adjacent||'adjacent',11)+label((x2+x3)/2+14,(y2+y3)/2,g.hypotenuse||'hypotenuse',11);
+      svg+=label(x3-38,y1-14,g.angle||'θ',12);
+      return fig(svg,g.title||"Right triangle");
+    }
+    if (g.type === "elevation") {
+      const xObs=84,xBase=390,yGround=215,yTop=68,yEye=198;
+      let svg=line(44,yGround,430,yGround,"#64748b")+line(xBase,yGround,xBase,yTop,"#2563eb")+line(xObs,yEye,xBase,yTop,"#dc2626")+line(xObs,yEye,xBase,yEye,"#94a3b8","5 4");
+      svg+='<path d="M '+(xObs+28)+' '+yEye+' A 28 28 0 0 0 '+(xObs+25)+' '+(yEye-15)+'" fill="none" stroke="#0f766e" stroke-width="2"/>';
+      svg+=label((xObs+xBase)/2,yGround+20,g.distance||'horizontal distance',11)+label(xBase+27,(yTop+yGround)/2,g.height||'h',12,'start')+label(xObs+47,yEye-17,g.angle||'θ',12,'start')+label(xObs,yEye+21,'observer',11)+label(xBase+8,yTop+12,'object',11,'start');
+      return fig(svg,g.title||"Angle of elevation or depression");
+    }
+  }
+  if (unit >= 8 && textbookDiagram) {
+    const g = textbookDiagram;
+    const safe = value => sanitize(String(value == null ? "" : value));
+    const id = "mgeo-" + String(unit) + "-" + String(item.id || item.qNo || item.title || "figure").replace(/[^A-Za-z0-9_-]/g, "") + "-" + Math.random().toString(36).slice(2, 7);
+    const label = (x, y, value, anchor = "middle", size = 13) => '<text x="' + x + '" y="' + y + '" text-anchor="' + anchor + '" style="font-size:' + size + 'px;font-weight:650;fill:#0f172a">' + safe(value) + '</text>';
+    const line = (x1, y1, x2, y2, css = "math-diagram-shape") => '<line class="' + css + '" x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '"/>';
+    const circle = (cx, cy, r, css = "math-diagram-shape", fill = "none") => '<circle class="' + css + '" cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + fill + '"/>';
+    const dot = (x, y) => '<circle class="math-diagram-point" cx="' + x + '" cy="' + y + '" r="3.5"/>';
+    const poly = (pts, css = "math-diagram-shape") => '<polygon class="' + css + '" points="' + pts.map(p => p[0] + ',' + p[1]).join(' ') + '"/>';
+    const figure = content => '<figure class="math-diagram"><figcaption>' + safe(g.title || item.title || prompt.slice(0, 100) || "Geometry diagram") + '</figcaption><svg viewBox="0 0 480 280" role="img" aria-labelledby="' + id + '"><title id="' + id + '">' + safe(g.title || item.title || "Geometry diagram") + '</title>' + content + '</svg></figure>';
+    if (g.type === "right-triangle") {
+      const a=[90,205], b=[370,205], top=[225,55], foot=[255,205];
+      let svg=poly([a,top,b]);
+      svg+=line(top[0],top[1],foot[0],foot[1],"math-diagram-construction")+line(80,220,410,220,"math-diagram-axis");
+      svg+=label(a[0]-10,a[1]+19,"B")+label(top[0],top[1]-10,"A")+label(b[0]+10,b[1]+18,"C")+label(foot[0],foot[1]+19,"D");
+      svg+=label(160,220,"projection", "middle", 11)+label(365,115,"side", "start", 11)+label(161,116,"c", "middle", 12);
+      svg+='<path class="math-diagram-right-angle" d="M255 205v-14h14v14" fill="none"/>';
+      return figure(svg);
+    }
+    if (g.type === "circle-chord") {
+      const cx=240,cy=138,r=91,offset=34,y=cy+offset,half=Math.sqrt(r*r-offset*offset),lx=cx-half,rx=cx+half;
+      let svg=circle(cx,cy,r,"math-diagram-shape","#eff6ff")+line(lx,y,rx,y)+line(cx,cy,cx,y,"math-diagram-construction")+line(cx,cy,lx,y,"math-diagram-diagonal")+line(cx,cy,rx,y,"math-diagram-diagonal");
+      svg+=dot(cx,cy)+label(cx+9,cy-8,"O","start")+label(lx-8,y+17,"A","end")+label(rx+8,y+17,"B","start")+label(cx+10,y+17,"N","start");
+      svg+='<path class="math-diagram-right-angle" d="M240 '+(y-14)+'h14v14" fill="none"/>';
+      if(g.radius!=null)svg+=label(cx+53,cy-25,"r="+g.radius,"start",11);
+      if(g.distance!=null)svg+=label(cx+6,cy+offset/2,"d="+g.distance,"start",11);
+      if(g.chord!=null)svg+=label(cx,y-7,"chord="+g.chord,"middle",11);
+      return figure(svg);
+    }
+    if (g.type === "tangent") {
+      const title=String(g.title||"").toLowerCase(), cx=210,cy=146,r=68,tx=cx+r,ty=cy,px=395,py=ty;
+      let svg=circle(cx,cy,r,"math-diagram-shape","#eff6ff");
+      if(title.includes("midpoint of an arc")){
+        const P=[210,78],A=[154,165],B=[266,165];
+        svg+=line(A[0],A[1],B[0],B[1])+line(210,146,210,78,"math-diagram-construction")+line(115,78,305,78)+dot(P[0],P[1])+label(P[0]+10,P[1]-8,"P","start")+label(A[0]-8,A[1]+14,"A")+label(B[0]+8,B[1]+14,"B","start")+label(314,75,"tangent","start",11);
+      }else if(title.includes("endpoint of an arc")){
+        const P=[tx,cy],A=[145,90],Q=[158,204];
+        svg+=line(A[0],A[1],P[0],P[1])+line(Q[0],Q[1],P[0],P[1])+line(A[0],A[1],Q[0],Q[1],"math-diagram-construction")+line(P[0],38,P[0],244)+dot(P[0],P[1])+label(P[0]+10,P[1]-8,"P","start")+label(A[0]-8,A[1]-5,"A")+label(Q[0]-8,Q[1]+17,"Q")+label(318,136,"tangent","start",11);
+      }else if(title.includes("outside")||title.includes("external point")||title.includes("from an external")){
+        const P=[407,132],base=Math.atan2(P[1]-cy,P[0]-cx),offset=Math.acos(r/Math.hypot(P[0]-cx,P[1]-cy)),T1=[cx+r*Math.cos(base-offset),cy+r*Math.sin(base-offset)],T2=[cx+r*Math.cos(base+offset),cy+r*Math.sin(base+offset)];
+        const tangent=(T)=>{const dx=P[0]-T[0],dy=P[1]-T[1],len=Math.hypot(dx,dy);return [T[0]-dx/len*45,T[1]-dy/len*45,P[0]+dx/len*18,P[1]+dy/len*18];};
+        [T1,T2].forEach(T=>{const z=tangent(T);svg+=line(z[0],z[1],z[2],z[3])+line(cx,cy,T[0],T[1],"math-diagram-construction")+dot(T[0],T[1]);});
+        svg+=dot(cx,cy)+dot(P[0],P[1])+label(cx-8,cy-10,"O")+label(P[0]+8,P[1]+5,"P","start")+label(T1[0]-8,T1[1]-8,"T","end")+label(T2[0]-8,T2[1]+17,"F","end");
+      }else{
+        svg+=line(cx,cy,tx,ty,"math-diagram-diagonal")+line(tx,45,tx,238,"math-diagram-construction")+line(tx,ty,px,py)+line(cx,cy,px,py,"math-diagram-diagonal");
+        svg+=dot(cx,cy)+dot(tx,ty)+label(cx-8,cy-10,"O")+label(tx+8,ty-10,"T","start")+label(px+8,py+5,"P","start")+label((cx+tx)/2,cy-12,"r", "middle", 11)+label(tx+26,105,"tangent", "start", 11);
+        svg+='<path class="math-diagram-right-angle" d="M'+tx+' '+(ty-13)+'h13v13" fill="none"/>';
+      }
+      return figure(svg);
+    }
+    if (g.type === "pair-circles") {
+      const title=String(g.title||"").toLowerCase();
+      let svg="";
+      if(title.includes("internal")){
+        svg=circle(230,140,105,"math-diagram-shape","#eff6ff")+circle(285,140,50,"math-diagram-construction","#dbeafe")+line(125,140,335,140,"math-diagram-diagonal")+dot(230,140)+dot(285,140)+label(230,157,"O")+label(285,157,"O′")+label(337,134,"T","start");
+      }else if(title.includes("three pairwise")){
+        const centers=[[240,82],[191,167],[289,167]],r=49;
+        centers.forEach((p,i)=>{svg+=circle(p[0],p[1],r,"math-diagram-shape",i===0?"#eff6ff":"#dbeafe")+dot(p[0],p[1])+label(p[0],p[1]+16,["O","P","Q"][i]);});
+        svg+=line(240,75,154,214,"math-diagram-construction")+line(240,75,326,214,"math-diagram-construction")+line(154,214,326,214,"math-diagram-construction");
+      }else if(title.includes("touch")){
+        const a=[172,145],b=[276,145],r1=66,r2=38,t=[238,145];
+        svg=circle(a[0],a[1],r1,"math-diagram-shape","#eff6ff")+circle(b[0],b[1],r2,"math-diagram-construction","#dbeafe")+line(a[0],a[1],b[0],b[1],"math-diagram-diagonal")+line(t[0],48,t[0],241)+dot(a[0],a[1])+dot(b[0],b[1])+dot(t[0],t[1])+label(a[0],a[1]+17,"O")+label(b[0],b[1]+17,"O′")+label(t[0]+10,t[1]-7,"T","start");
+      }else if(title.includes("direct common tangent")&&title.includes("equal circles")){
+        const c1=160,c2=320,cy=148,r=52,y=cy-r;
+        svg=circle(c1,cy,r,"math-diagram-shape","#eff6ff")+circle(c2,cy,r,"math-diagram-construction","#dbeafe")+line(c1,cy,c2,cy,"math-diagram-diagonal")+line(c1,y,c2,y)+line(c1,cy,c1,y,"math-diagram-construction")+line(c2,cy,c2,y,"math-diagram-construction")+dot(c1,cy)+dot(c2,cy)+label(c1,cy+17,"O")+label(c2,cy+17,"P")+label(c1,y-8,"A")+label(c2,y-8,"B");
+      }else if(title.includes("transverse")){
+        const a=[160,145],b=[320,145],r=44,m=0.615,y=145;
+        svg=circle(a[0],a[1],r,"math-diagram-shape","#eff6ff")+circle(b[0],b[1],r,"math-diagram-construction","#dbeafe")+line(85,y-m*(85-240),395,y-m*(395-240))+line(85,y+m*(85-240),395,y+m*(395-240))+line(a[0],a[1],b[0],b[1],"math-diagram-axis")+dot(a[0],a[1])+dot(b[0],b[1])+label(a[0],a[1]+17,"O")+label(b[0],b[1]+17,"P");
+      }else if(title.includes("direct common tangent")||title.includes("external tangent")||title.includes("unequal")){
+        const a=[165,150],b=[325,150],r1=66,r2=42,dx=b[0]-a[0],dr=r1-r2,m=dr/Math.sqrt(dx*dx-dr*dr),nx=-dr/dx,ny=Math.sqrt(1-nx*nx),p1=[a[0]+r1*nx,a[1]-r1*ny],p2=[b[0]+r2*nx,b[1]-r2*ny];
+        svg=circle(a[0],a[1],r1,"math-diagram-shape","#eff6ff")+circle(b[0],b[1],r2,"math-diagram-construction","#dbeafe")+line(a[0]-15,p1[1]-m*15,b[0]+15,p2[1]+m*15)+line(a[0],a[1],b[0],b[1],"math-diagram-axis")+line(a[0],a[1],p1[0],p1[1],"math-diagram-construction")+line(b[0],b[1],p2[0],p2[1],"math-diagram-construction")+dot(a[0],a[1])+dot(b[0],b[1])+label(a[0],a[1]+16,"O")+label(b[0],b[1]+16,"P")+label(p1[0]-6,p1[1]-8,"A")+label(p2[0]+6,p2[1]-8,"B");
+      }else if(title.includes("intersecting")){
+        const a=[190,145],b=[286,145],r1=72,r2=55,dx=b[0]-a[0],dr=r1-r2,m=dr/Math.sqrt(dx*dx-dr*dr),nx=-dr/dx,ny=Math.sqrt(1-nx*nx),p1=[a[0]+r1*nx,a[1]-r1*ny],p2=[b[0]+r2*nx,b[1]-r2*ny];
+        svg=circle(a[0],a[1],r1,"math-diagram-shape","#eff6ff")+circle(b[0],b[1],r2,"math-diagram-construction","#dbeafe")+line(a[0]-12,p1[1]-m*12,b[0]+12,p2[1]+m*12)+line(a[0],a[1],b[0],b[1],"math-diagram-axis")+line(a[0],a[1],p1[0],p1[1],"math-diagram-construction")+line(b[0],b[1],p2[0],p2[1],"math-diagram-construction")+dot(a[0],a[1])+dot(b[0],b[1])+label(a[0],a[1]+16,"O")+label(b[0],b[1]+16,"P");
+      }else{
+        const c1=160,c2=320,cy=148,r=52,y=cy-r;
+        svg=circle(c1,cy,r,"math-diagram-shape","#eff6ff")+circle(c2,cy,r,"math-diagram-construction","#dbeafe")+line(c1,cy,c2,cy,"math-diagram-diagonal")+line(c1,y,c2,y)+line(c1,cy,c1,y,"math-diagram-construction")+line(c2,cy,c2,y,"math-diagram-construction")+dot(c1,cy)+dot(c2,cy)+label(c1,cy+17,"O")+label(c2,cy+17,"P")+label(c1,y-8,"A")+label(c2,y-8,"B");
+      }
+      return figure(svg);
+    }
+    if (g.type === "inscribed-angle") {
+      const cx=240,cy=145,r=93;
+      const pts=[[-72,-42],[72,-42],[75,53],[-76,53]].map(([x,y])=>[cx+x,cy+y]);
+      let svg=circle(cx,cy,r,"math-diagram-shape","#eff6ff")+poly(pts,"math-diagram-diagonal");
+      svg+=line(cx,cy,pts[0][0],pts[0][1],"math-diagram-construction")+line(cx,cy,pts[1][0],pts[1][1],"math-diagram-construction")+dot(cx,cy)+label(cx+8,cy+14,"O","start");
+      ["A","B","C","D"].forEach((v,i)=>svg+=dot(pts[i][0],pts[i][1])+label(pts[i][0]+(i<2?-7:7),pts[i][1]+(i<2?-8:18),v,i<2?"end":"start"));
+      if(g.centralAngle!=null)svg+=label(cx,cy-17,g.centralAngle+"°");
+      if(g.inscribedAngle!=null)svg+=label(pts[2][0]-5,pts[2][1]-12,g.inscribedAngle+"°");
+      return figure(svg);
+    }
+    if (g.type === "inscribed-angle-grid" || g.type === "circle-chord-grid" || g.type === "tangent-grid") {
+      const items=Array.isArray(g.items)&&g.items.length?g.items:[{}],cols=items.length>2?3:items.length,rows=Math.ceil(items.length/cols),w=480/cols,h=270/rows;
+      let svg="";
+      items.forEach((d,i)=>{
+        const col=i%cols,row=Math.floor(i/cols),cx=w*(col+.5),cy=h*(row+.5),r=Math.min(w*.28,h*.31),type=g.type;
+        if(type==="tangent-grid"){
+          const tx=cx+r,py=cy;
+          svg+=circle(cx,cy,r,"math-diagram-shape","#eff6ff")+line(cx,cy,tx,py,"math-diagram-diagonal")+line(tx,cy-r-12,tx,cy+r+12,"math-diagram-construction")+dot(cx,cy)+dot(tx,py)+label(cx-6,cy-7,"O")+label(tx+8,py-6,"T","start");
+          if(d.external){const P=[cx+r+35,cy-r*.72];svg+=line(tx,py,P[0],P[1])+dot(P[0],P[1])+label(P[0]+7,P[1]-3,"P","start");}
+          if(d.value!=null)svg+=label(cx,cy+r+25,d.value,"middle",11);
+        }else if(type==="circle-chord-grid"){
+          const y=cy+r*.34,xoff=Math.sqrt(r*r-(r*.34)*(r*.34));
+          svg+=circle(cx,cy,r,"math-diagram-shape","#eff6ff")+line(cx-xoff,y,cx+xoff,y)+line(cx,cy,cx,y,"math-diagram-construction")+line(cx,cy,cx+xoff,y,"math-diagram-diagonal")+dot(cx,cy)+label(cx+7,cy-7,"O","start",10)+label(cx-xoff-5,y+13,"A","end",9)+label(cx+xoff+5,y+13,"B","start",9);
+          svg+='<path class="math-diagram-right-angle" d="M'+cx+' '+(y-9)+'h9v9" fill="none"/>';
+          if(d.labels) d.labels.forEach((v,j)=>svg+=label(cx+(j%2?18:-18),cy+(j%2?25:-20),v,"middle",10));
+        }else{
+          const pts=[[cx-r*.7,cy-r*.55],[cx+r*.7,cy-r*.55],[cx+r*.78,cy+r*.46],[cx-r*.78,cy+r*.46]];
+          svg+=circle(cx,cy,r,"math-diagram-shape","#eff6ff")+poly(pts,"math-diagram-diagonal")+line(cx,cy,pts[0][0],pts[0][1],"math-diagram-construction")+line(cx,cy,pts[2][0],pts[2][1],"math-diagram-construction")+dot(cx,cy)+label(cx+5,cy+10,"O","start",9);
+          const labels=d.labels||[];
+          pts.forEach((p,j)=>{const lx=p[0]+(j===0||j===3?-8:8),ly=p[1]+(j<2?-6:14);svg+=dot(p[0],p[1])+label(lx,ly,labels[j]||["A","B","C","D"][j],j===0||j===3?"end":"start",9);});
+          if(d.centralAngle!=null)svg+=label(cx,cy-11,d.centralAngle,"middle",10);
+          if(d.inscribedAngle!=null)svg+=label(pts[2][0]-7,pts[2][1]-8,d.inscribedAngle,"middle",10);
+        }
+        if(d.caption)svg+=label(cx,h*(row+1)-4,d.caption,"middle",10);
+      });
+      return figure(svg);
+    }
+    if (g.type === "construction-center" || g.type === "construction-circle") {
+      const cx=240,cy=140,r=86;
+      let svg=circle(cx,cy,r,"math-diagram-shape","#eff6ff");
+      if(g.type === "construction-center"){
+        const A=[181,76],B=[173,202],C=[315,180];
+        svg+=line(A[0],A[1],B[0],B[1])+line(A[0],A[1],C[0],C[1])+line(B[0],B[1],C[0],C[1]);
+        svg+=line(135,135,230,145,"math-diagram-construction")+line(232,78,259,213,"math-diagram-construction")+dot(cx,cy)+label(cx+8,cy-8,"O","start");
+        [[A,"A"],[B,"B"],[C,"C"]].forEach(([p,v])=>svg+=dot(p[0],p[1])+label(p[0]+8,p[1]-7,v,"start"));
+      }else{
+        const pts=[[169,114],[206,73],[251,60],[294,77],[324,111],[330,154],[305,193],[263,218],[217,212],[177,183]];
+        for(let i=0;i<pts.length-1;i++)svg+=line(pts[i][0],pts[i][1],pts[i+1][0],pts[i+1][1],"math-diagram-construction");
+        svg+=line(169,114,214,132,"math-diagram-diagonal")+line(214,132,251,60,"math-diagram-diagonal")+label(cx,cy+105,"equal chord steps","middle",11);
+      }
+      return figure(svg);
+    }
+    if (g.type === "triangle-circle") {
+      const title=String(g.title||"").toLowerCase();
+      let svg="";
+      if(title.includes("circumscribed about a circle")){
+        const center=[240,140],r=44,tri=[[240,52],[316,184],[164,184]];
+        svg=circle(center[0],center[1],r,"math-diagram-construction","#dbeafe")+poly(tri)+label(240,43,"D")+label(153,199,"B")+label(327,199,"C")+dot(center[0],center[1])+label(250,137,"O","start");
+      }else if(title.includes("inscribed in a given circle")){
+        const center=[240,140],r=94,tri=[[-90,240],[30,240],[150,240]].map(([a,x])=>[center[0]+r*Math.cos(a*Math.PI/180),center[1]+r*Math.sin(a*Math.PI/180)]);
+        svg=circle(center[0],center[1],r,"math-diagram-shape","#eff6ff")+poly(tri)+label(tri[0][0],tri[0][1]-9,"A")+label(tri[1][0]+9,tri[1][1]+15,"B")+label(tri[2][0]-9,tri[2][1]+15,"C")+dot(center[0],center[1])+label(250,137,"O","start");
+      }else if(title.includes("escribed")){
+        const tri=[[240,20],[208,76],[272,76]];
+        svg=poly(tri)+label(240,15,"A")+label(198,91,"B")+label(282,91,"C")+circle(240,132,56,"math-diagram-construction","#dbeafe")+dot(240,132)+label(251,128,"O","start")+line(188,76,292,76,"math-diagram-axis");
+      }else{
+        const tri=[[240,58],[144,224],[336,224]];
+        svg=poly(tri)+label(240,49,"A")+label(132,240,"B")+label(348,240,"C");
+        if(title.includes("incircle")){
+          svg+=circle(240,169,55,"math-diagram-construction","#dbeafe")+dot(240,169)+label(250,165,"I","start")+line(240,169,240,224,"math-diagram-construction")+'<path class="math-diagram-right-angle" d="M240 210v14h14v-14" fill="none"/>';
+        }else{
+          svg+=circle(240,169,111,"math-diagram-construction")+dot(240,169)+label(250,165,"O","start")+line(240,169,144,224,"math-diagram-construction");
+        }
+      }
+      return figure(svg);
+    }
+    if (g.type === "construction-square" || g.type === "construction-hexagon") {
+      const cx=240,cy=140,r=66,title=String(g.title||"").toLowerCase(),hex=g.type==="construction-hexagon", circumscribed=title.includes("circumscribed");
+      const count=hex?6:4, radius=circumscribed?r/Math.cos(Math.PI/count):r, startAngle=circumscribed&&!hex?-45:-90, points=Array.from({length:count},(_,i)=>{const a=(startAngle+i*360/count)*Math.PI/180;return [cx+radius*Math.cos(a),cy+radius*Math.sin(a)];});
+      let svg=circle(cx,cy,r,"math-diagram-shape","#eff6ff")+poly(points,circumscribed?"math-diagram-construction":"math-diagram-shape")+dot(cx,cy)+label(cx+9,cy+14,"O","start");
+      if(!hex){const d1=points[0],d2=points[2];svg+=line(d1[0],d1[1],d2[0],d2[1],"math-diagram-diagonal")+line(points[1][0],points[1][1],points[3][0],points[3][1],"math-diagram-construction");}
+      return figure(svg);
+    }
+    if (g.type === "angle-circle") {
+      const title=String(g.title||"").toLowerCase(), B=[76,222], A=[406,45], C=[438,222];
+      const u1=[(A[0]-B[0])/Math.hypot(A[0]-B[0],A[1]-B[1]),(A[1]-B[1])/Math.hypot(A[0]-B[0],A[1]-B[1])],u2=[1,0];
+      const bis=[u1[0]+u2[0],u1[1]+u2[1]],bl=Math.hypot(...bis),v=[bis[0]/bl,bis[1]/bl],throughPoint=title.includes("given point")||title.includes("passes through"),alpha=Math.acos(v[0]),k=throughPoint?75/(1-Math.sin(alpha)):178,O=[B[0]+v[0]*k,B[1]+v[1]*k];
+      const dist=Math.abs((A[0]-B[0])*(O[1]-B[1])-(A[1]-B[1])*(O[0]-B[0]))/Math.hypot(A[0]-B[0],A[1]-B[1]);
+      const r=throughPoint?k*Math.sin(alpha):dist,F=[O[0],B[1]],D=throughPoint?[B[0]+v[0]*75,B[1]+v[1]*75]:null;
+      let svg=line(B[0],B[1],A[0],A[1])+line(B[0],B[1],C[0],C[1])+line(B[0],B[1],O[0]+v[0]*40,O[1]+v[1]*40,"math-diagram-construction")+circle(O[0],O[1],r,"math-diagram-shape","#dbeafe")+line(O[0],O[1],F[0],F[1],"math-diagram-construction");
+      if(throughPoint){const H=[O[0]-r*.55,O[1]-r*.84];svg+=line(B[0],B[1],D[0],D[1],"math-diagram-axis")+line(H[0],H[1],O[0],O[1],"math-diagram-diagonal")+dot(D[0],D[1])+label(D[0]-8,D[1]-8,"D","end")+label(H[0]-7,H[1]-7,"H","end");}
+      svg+='<path class="math-diagram-right-angle" d="M'+(F[0]-12)+' '+F[1]+'v-12h12" fill="none"/>';
+      svg+=dot(O[0],O[1])+dot(F[0],F[1])+label(B[0],B[1]+18,"B")+label(A[0]+8,A[1],"A","start")+label(C[0]+8,C[1]+4,"C","start")+label(O[0]+10,O[1]-7,"O","start")+label(F[0]+9,F[1]-7,"F","start");
+      return figure(svg);
+    }
+  }
+  if (unit === 5 && textbookDiagram) {
+    const safe = value => sanitize(String(value == null ? "" : value));
+    const id = "m5-" + String(item.id || item.num || item.title || "figure").replace(/[^A-Za-z0-9_-]/g, "") + "-" + Math.random().toString(36).slice(2, 8);
+    const label = (x, y, value, size = 14, anchor = "middle") => '<text x="' + x + '" y="' + y + '" text-anchor="' + anchor + '" style="font-size:' + size + 'px;font-weight:600;fill:#0f172a">' + safe(value) + "</text>";
+    const circlesFor = three => three
+      ? { A:{x:185,y:126,rx:92,ry:78}, B:{x:295,y:126,rx:92,ry:78}, C:{x:240,y:186,rx:92,ry:78} }
+      : { A:{x:190,y:139,rx:94,ry:83}, B:{x:290,y:139,rx:94,ry:83} };
+    const clipFor = (circles, bits, suffix) => {
+      const names = Object.keys(circles);
+      const active = names.filter((_, i) => bits & (1 << i));
+      const clipId = suffix + "clip" + (active.length ? active.join("") : "None");
+      if (!active.length) return { id: "", markup: "" };
+      let markup = "", parent = "";
+      active.forEach((name, i) => {
+        const shape = circles[name];
+        const current = suffix + "clip" + active.slice(0, i + 1).join("");
+        if (i === 0) markup += '<clipPath id="' + current + '"><ellipse cx="' + shape.x + '" cy="' + shape.y + '" rx="' + shape.rx + '" ry="' + shape.ry + '"/></clipPath>';
+        else markup += '<clipPath id="' + current + '"><ellipse cx="' + shape.x + '" cy="' + shape.y + '" rx="' + shape.rx + '" ry="' + shape.ry + '" clip-path="url(#' + parent + ')"/></clipPath>';
+        parent = current;
+      });
+      return { id: clipId, markup };
+    };
+    const vennSvg = (g, suffix) => {
+      const names = Object.keys(g.sets || {}).slice(0, 3);
+      const three = names.length > 2;
+      const circles = circlesFor(three);
+      const maximum = 1 << names.length;
+      const memberships = Object.fromEntries(names.map(name => [name, new Set((g.sets[name] || []).map(String))]));
+      const all = (g.universe || [...new Set(names.flatMap(name => [...memberships[name]]))]).map(String);
+      const cells = Array.from({ length: maximum }, () => []);
+      all.forEach(value => {
+        let bits = 0;
+        names.forEach((name, index) => { if (memberships[name].has(value)) bits |= 1 << index; });
+        cells[bits].push(value);
+      });
+      const op = g.op || "union";
+      const selected = bits => {
+        if (op === "union") return bits !== 0;
+        if (op === "intersection") return names.length > 2 ? (bits & 3) === 3 : bits === 3;
+        if (op === "intersection3") return bits === 7;
+        if (op === "AunionBC") return !!(bits & 1) || (bits & 6) === 6;
+        if (op === "AinterBC") return !!(bits & 1) && !!(bits & 6);
+        if (op === "complementA") return !(bits & 1);
+        if (op === "complementB") return !(bits & 2);
+        if (op === "demorganUnion") return bits === 0;
+        if (op === "demorganIntersection") return (bits & 3) !== 3;
+        if (op === "differenceA") return !!(bits & 1) && !(bits & 2);
+        if (op === "differenceB") return !!(bits & 2) && !(bits & 1);
+        return false;
+      };
+      const outerId = suffix + "maskOuter";
+      let defs = "";
+      const clipIds = {};
+      for (let bits = 1; bits < maximum; bits++) {
+        const clip = clipFor(circles, bits, suffix);
+        defs += clip.markup;
+        clipIds[bits] = clip.id;
+      }
+      const masks = [];
+      let overlay = "";
+      for (let bits = 0; bits < maximum; bits++) {
+        if (!selected(bits)) continue;
+        const maskId = suffix + "mask" + bits;
+        let white = '<rect x="20" y="18" width="440" height="244" fill="white"';
+        if (bits) white += ' clip-path="url(#' + clipIds[bits] + ')"';
+        white += '/>';
+        let black = "";
+        names.forEach((name, i) => { if (!(bits & (1 << i))) { const c = circles[name]; black += '<ellipse cx="' + c.x + '" cy="' + c.y + '" rx="' + c.rx + '" ry="' + c.ry + '" fill="black"/>'; } });
+        masks.push('<mask id="' + maskId + '" maskUnits="userSpaceOnUse" x="0" y="0" width="480" height="280"><rect x="0" y="0" width="480" height="280" fill="black"/>' + white + black + '</mask>');
+        overlay += '<rect x="20" y="18" width="440" height="244" fill="#60a5fa" fill-opacity=".68" mask="url(#' + maskId + ')"/>';
+      }
+      defs += masks.join("");
+      let drawing = '<rect x="20" y="18" width="440" height="244" fill="#fff" fill-opacity=".25" stroke="#334155" stroke-width="1.5"/>' + overlay;
+      names.forEach((name, i) => {
+        const c = circles[name];
+        drawing += '<ellipse cx="' + c.x + '" cy="' + c.y + '" rx="' + c.rx + '" ry="' + c.ry + '" fill="none" stroke="#2563eb" stroke-width="2.2"/>';
+        drawing += label(three ? (i === 0 ? 125 : i === 1 ? 355 : 240) : (i === 0 ? 142 : 338), three ? (i === 2 ? 266 : 43) : 44, name, 14);
+      });
+      const pos2 = { 0:[240,244],1:[132,143],2:[348,143],3:[240,143] };
+      const pos3 = { 0:[240,254],1:[130,119],2:[350,119],3:[240,105],4:[240,230],5:[178,181],6:[302,181],7:[240,158] };
+      cells.forEach((values, bits) => {
+        if (!values.length) return;
+        const pos = (three ? pos3 : pos2)[bits] || [240,240];
+        const content = values.join(", ");
+        const size = content.length > 30 ? 8 : content.length > 17 ? 9 : 11;
+        drawing += label(pos[0], pos[1], content, size);
+      });
+      return '<svg viewBox="0 0 480 280" role="img" aria-label="' + safe(g.title || g.label || "Venn diagram") + '"><defs>' + defs + '</defs>' + drawing + (g.label ? label(240, 277, g.label, 12) : "") + '</svg>';
+    };
+    const mappingSvg = (g, suffix) => {
+      const domain = (g.domain || []).map(String), codomain = (g.codomain || []).map(String), pairs = g.pairs || [];
+      const ys = values => values.map((_, i) => values.length === 1 ? 140 : 52 + i * 176 / Math.max(1, values.length - 1));
+      const dy = ys(domain), cy = ys(codomain), left = 132, right = 350;
+      const marker = suffix + "arrow";
+      let svg = '<defs><marker id="' + marker + '" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#475569"/></marker></defs><text x="' + left + '" y="24" class="math-diagram-label">A</text><text x="' + right + '" y="24" class="math-diagram-label">B</text>';
+      pairs.forEach((p, i) => {
+        const a = domain.indexOf(String(p[0])), b = codomain.indexOf(String(p[1]));
+        if (a < 0 || b < 0) return;
+        svg += '<path d="M' + (left + 10) + ' ' + dy[a] + ' Q240 ' + (dy[a] + cy[b]) / 2 + ' ' + (right - 11) + ' ' + cy[b] + '" fill="none" stroke="#475569" stroke-width="1.6" marker-end="url(#' + marker + ')"/>';
+      });
+      domain.forEach((value, i) => { svg += '<circle cx="' + left + '" cy="' + dy[i] + '" r="13" fill="#fff" stroke="#2563eb" stroke-width="2"/>' + label(left, dy[i] + 4, value, 11); });
+      codomain.forEach((value, i) => { svg += '<circle cx="' + right + '" cy="' + cy[i] + '" r="13" fill="#fff" stroke="#2563eb" stroke-width="2"/>' + label(right, cy[i] + 4, value, 11); });
+      return '<svg viewBox="0 0 480 280" role="img" aria-label="' + safe(g.title || "Mapping diagram") + '"><title>' + safe(g.title || "Mapping diagram") + '</title>' + svg + '</svg>';
+    };
+    const figure = (content, caption) => '<figure class="math-diagram"><figcaption>' + safe(caption || textbookDiagram.title || "Textbook diagram") + '</figcaption>' + content + '</figure>';
+    if (textbookDiagram.type === "venn") return figure(vennSvg(textbookDiagram, id), textbookDiagram.title || "Venn diagram");
+    if (textbookDiagram.type === "venn-gallery") {
+      const items = textbookDiagram.items || [];
+      const columns = items.length > 4 ? 2 : 2, rows = Math.ceil(items.length / columns), height = rows * 294;
+      const tiles = items.map((g, i) => '<svg x="' + ((i % columns) * 480) + '" y="' + (Math.floor(i / columns) * 294) + '" width="480" height="294" viewBox="0 0 480 280">' + vennSvg({ ...g, title: g.label || textbookDiagram.title }, id + "v" + i).replace(/^<svg[^>]*>|<\/svg>$/g, "") + '</svg>').join("");
+      return figure('<svg viewBox="0 0 960 ' + height + '" role="img" aria-label="' + safe(textbookDiagram.title || "Venn diagram examples") + '"><title>' + safe(textbookDiagram.title || "Venn diagram examples") + '</title>' + tiles + '</svg>', textbookDiagram.title || "Venn diagram examples");
+    }
+    if (textbookDiagram.type === "mapping") return figure(mappingSvg(textbookDiagram, id), textbookDiagram.title || "Mapping diagram");
+    if (textbookDiagram.type === "mapping-gallery") {
+      const maps = textbookDiagram.maps || [], tiles = maps.map((g, i) => '<svg x="' + ((i % 2) * 480) + '" y="' + (Math.floor(i / 2) * 294) + '" width="480" height="294" viewBox="0 0 480 280">' + mappingSvg({ domain: textbookDiagram.domain, codomain: textbookDiagram.codomain, ...g }, id + "map" + i).replace(/^<svg[^>]*>|<\/svg>$/g, "") + label(240, 270, g.label, 12) + '</svg>').join("");
+      return figure('<svg viewBox="0 0 960 ' + (Math.ceil(maps.length / 2) * 294) + '" role="img" aria-label="Mapping examples">' + tiles + '</svg>', "Mapping diagrams for the four relations");
+    }
+    if (textbookDiagram.type === "product") {
+      const A = (textbookDiagram.A || []).map(String), B = (textbookDiagram.B || []).map(String);
+      let svg = '<svg viewBox="0 0 480 280" role="img" aria-label="Cartesian product table"><title>' + safe(textbookDiagram.title || "Cartesian product") + '</title><text x="240" y="28" class="math-diagram-label">A × B</text>';
+      const cellW = Math.min(104, 360 / Math.max(1, B.length)), cellH = Math.min(38, 178 / Math.max(1, A.length));
+      const width = cellW * (B.length + 1), height = cellH * (A.length + 1), x0 = (480 - width) / 2, y0 = 55;
+      for (let row = 0; row <= A.length; row++) for (let col = 0; col <= B.length; col++) {
+        const x = x0 + col * cellW, y = y0 + row * cellH;
+        svg += '<rect x="' + x + '" y="' + y + '" width="' + cellW + '" height="' + cellH + '" fill="' + (row === 0 || col === 0 ? '#dbeafe' : '#fff') + '" stroke="#64748b"/>';
+        if (row === 0 && col > 0) svg += label(x + cellW / 2, y + cellH / 2 + 5, B[col - 1], 12);
+        else if (col === 0 && row > 0) svg += label(x + cellW / 2, y + cellH / 2 + 5, A[row - 1], 12);
+        else if (row > 0 && col > 0) svg += label(x + cellW / 2, y + cellH / 2 + 5, '(' + A[row - 1] + ', ' + B[col - 1] + ')', 10);
+      }
+      return figure(svg + '</svg>', textbookDiagram.title || "Cartesian product arranged as a table");
+    }
+  }
   const diagramEnabled = unit >= 8 || (unit === 4 && /rectangle|area model/i.test(detail)) || (unit <= 3 && /number line|real line/i.test(detail)) || (unit === 7 && /number line|coordinate graph|plot/i.test(detail));
   if (!diagramEnabled || !/(triangle|segment|parallelogram|quadrilateral|perpendicular|bisect(?:or|s|ing)?|median|altitude|pythag|coordinate|graph|construct|congruen|similar|parallel|figure|rectangle|square|number line|real line)/i.test(detail)) return "";
   const esc = value => sanitize(String(value));
@@ -14864,7 +15480,7 @@ function renderMathChapter(index) {
       <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'formulas' ? 'active' : ''}" data-tab="formulas" onclick="switchMathTab('formulas')">
         📐 5. Formulas &amp; Summary
       </button>
-      ${state.selectedClass === 'cls3' ? `<button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'textbook' ? 'active' : ''}" data-tab="textbook" onclick="switchMathTab('textbook')">📚 Complete Book Text</button>` : ''}
+      ${state.selectedClass === 'cls3' || state.selectedClass === 'cls12' ? `<button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'textbook' ? 'active' : ''}" data-tab="textbook" onclick="switchMathTab('textbook')">📚 Complete Book Text</button>` : ''}
     </div>
 
     <!-- Main Dynamic Tab Content (with internal smooth scrollbar) -->
@@ -14919,7 +15535,13 @@ function renderMathLesson(ch) {
 
 function renderMathExamples(ch) {
   if (!ch.workedExamples || ch.workedExamples.length === 0) {
-    return `<div style="padding:2.5rem;text-align:center;background:#fff;border-radius:12px;border:1px solid var(--border);">Step-by-step examples for Unit ${ch.number} will be loaded here.</div>`;
+    const unit = Number(ch.number);
+    const note = unit === 8
+      ? 'The textbook develops the projection theorems through proofs in Lessons 8.1–8.3. It does not include a numbered worked-example section for this unit.'
+      : unit === 13
+        ? 'The textbook teaches these compass-and-straightedge constructions in Lessons 13.1–13.3. It does not include a numbered worked-example section for this unit.'
+        : `No numbered worked examples are listed for Unit ${ch.number} in the scanned textbook.`;
+    return `<div style="padding:2.5rem;text-align:center;background:#fff;border-radius:12px;border:1px solid var(--border);line-height:1.7;color:#475569;">${note}</div>`;
   }
 
   const examplesHtml = ch.workedExamples.map((ex, idx) => `
@@ -14956,7 +15578,7 @@ function renderMathExamples(ch) {
           </ol>
         </div>
         <div class="math-result-pill" style="margin-top:0.75rem;">
-          <strong>🎯 Textbook Final Answer:</strong> ${ex.answer || 'Proved.'}
+          <strong>Answer:</strong> ${ex.answer || 'Proved.'}
         </div>
       </div>
     </div>
@@ -14993,9 +15615,10 @@ function switchMathEx(exKey, activeCat) {
     catMap[c].push(p);
   });
   const cats = Object.keys(catMap);
-  const selectedCat = activeCat || (cats.length > 0 ? cats[0] : 'All');
+  const keepPrintedOrder = state.selectedClass === 'cls10';
+  const selectedCat = keepPrintedOrder ? 'All' : (activeCat || 'All');
 
-  const catTabsHtml = (cats.length > 1) ? `
+  const catTabsHtml = (!keepPrintedOrder && cats.length > 1) ? `
     <div class="category-sub-tabs-bar" style="margin-top:0.75rem;">
       <button class="category-sub-tab-btn ${selectedCat === 'All' ? 'active' : ''}" onclick="switchMathEx('${exKey}', 'All')">
         All Questions (${currentEx.problems.length})
@@ -15016,7 +15639,7 @@ function switchMathEx(exKey, activeCat) {
           ${currentEx.title}
         </h3>
         <span style="color:#64748b;font-size:0.84rem;">
-          ${currentEx.problems.length} Textbook Questions with 100% verified solutions. Click any question to expand.
+          ${currentEx.problems.length} questions in printed order. Open a question to see its solution.
         </span>
       </div>
       <div style="display:flex;align-items:center;gap:0.5rem;">
@@ -15036,7 +15659,7 @@ function switchMathEx(exKey, activeCat) {
               </span>
             </div>
             <div style="display:flex;align-items:center;gap:0.55rem;">
-              <span style="font-size:0.78rem;color:#15803d;font-weight:700;background:#dcfce7;padding:0.2rem 0.55rem;border-radius:4px;">✅ Solved</span>
+                  <span style="font-size:0.78rem;color:#15803d;font-weight:700;background:#dcfce7;padding:0.2rem 0.55rem;border-radius:4px;">Solution</span>
               <span class="math-acc-icon">+</span>
             </div>
           </div>
@@ -15044,13 +15667,14 @@ function switchMathEx(exKey, activeCat) {
             <div style="font-weight:700;font-size:1.02rem;color:#0f172a;margin-bottom:0.85rem;white-space:pre-line;line-height:1.65;background:#f8fafc;padding:0.85rem 1.1rem;border-radius:8px;border:1px solid #e2e8f0;">
               ${p.question}
             </div>
+            ${Array.isArray(p.options) && p.options.length ? `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.45rem;margin:0 0 .85rem;padding:.65rem .8rem;background:#fff;border:1px solid #cbd5e1;border-radius:8px;">${p.options.map(option => `<div style="display:flex;align-items:flex-start;gap:.55rem;padding:.3rem .2rem;line-height:1.5;"><span aria-hidden="true" style="width:14px;height:14px;flex:0 0 14px;border:1.5px solid #475569;border-radius:50%;margin-top:3px;"></span><span>${option}</span></div>`).join('')}</div>` : ''}
             ${renderMathDiagram(p, ch.number) || (visualSection && (state.selectedClass === 'cls1' || state.selectedClass === 'cls2') ? renderPrimaryMathDiagram(state.selectedClass, ch.number, visualSection.id, p) : '')}
             <div class="math-step-box" style="white-space:pre-line;line-height:1.8;margin-bottom:0.85rem;">
-              <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">Full Mathematical Solution:</div>
+              <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">Solution:</div>
               ${p.solution}
             </div>
             <div class="math-result-pill">
-              <strong>🎯 Textbook Verified Answer:</strong> ${p.answer}
+              <strong>Answer:</strong> ${p.answer}
             </div>
           </div>
         </div>
@@ -16365,6 +16989,10 @@ function playParaTTSFromBtn(btn, lang) {
 function getSubjectChapterList(subjKey, classId) {
   if (subjKey === 'math') return getMathChapterList(classId);
   if (subjKey === 'eng') {
+    const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
+    if (isCls12 && typeof ENGLISH_12_DATA !== 'undefined' && Array.isArray(ENGLISH_12_DATA)) {
+      return ENGLISH_12_DATA;
+    }
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof ENGLISH_10_DATA !== 'undefined' && Array.isArray(ENGLISH_10_DATA)) {
       return ENGLISH_10_DATA;
@@ -16386,6 +17014,10 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && (DATA.englishChapters || DATA.engChapters)) ? (DATA.englishChapters || DATA.engChapters) : []);
   }
   if (subjKey === 'urdu') {
+    const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
+    if (isCls12 && typeof URDU_12_DATA !== 'undefined' && Array.isArray(URDU_12_DATA)) {
+      return URDU_12_DATA;
+    }
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof URDU_10_DATA !== 'undefined' && Array.isArray(URDU_10_DATA)) {
       return URDU_10_DATA;
@@ -16399,16 +17031,23 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && (DATA.urduChapters || DATA.urduLessons)) ? (DATA.urduChapters || DATA.urduLessons) : []);
   }
   if (subjKey === 'phys') {
+    if (classId === 'cls12' && typeof PHYS_12_DATA !== 'undefined') return PHYS_12_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && DATA && DATA.phys10Chapters) return DATA.phys10Chapters;
     return (DATA && DATA.physChapters) ? DATA.physChapters : [];
   }
   if (subjKey === 'chem') {
+    if (classId === 'cls12' && typeof CHEM_12_DATA !== 'undefined') return CHEM_12_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && DATA && DATA.chem10Chapters) return DATA.chem10Chapters;
     return (DATA && DATA.chemChapters) ? DATA.chemChapters : [];
   }
+  if (subjKey === 'stat' && classId === 'cls12' && typeof STAT_12_DATA !== 'undefined') return STAT_12_DATA;
   if (subjKey === 'bio') {
+    const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
+    if (isCls12 && typeof BIOLOGY_12_DATA !== 'undefined' && Array.isArray(BIOLOGY_12_DATA)) {
+      return BIOLOGY_12_DATA;
+    }
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && DATA && DATA.bio10Chapters) return DATA.bio10Chapters;
     return (typeof BIO_DATA !== 'undefined' && Array.isArray(BIO_DATA))
@@ -16416,6 +17055,10 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && (DATA.bioChapters || DATA.bio10Chapters)) ? (DATA.bioChapters || DATA.bio10Chapters) : []);
   }
   if (subjKey === 'pakstudy') {
+    const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
+    if (isCls12 && typeof PAKSTUDY_12_DATA !== 'undefined' && Array.isArray(PAKSTUDY_12_DATA)) {
+      return PAKSTUDY_12_DATA;
+    }
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof PAKSTUDY_10_DATA !== 'undefined' && Array.isArray(PAKSTUDY_10_DATA)) {
       return PAKSTUDY_10_DATA;
@@ -16485,7 +17128,35 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.gk2Chapters) ? DATA.gk2Chapters : [];
   }
   if (subjKey === 'comp') {
+    const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
+    if (isCls12 && typeof COMP_12_DATA !== 'undefined' && Array.isArray(COMP_12_DATA)) {
+      return COMP_12_DATA;
+    }
     return (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];
+  }
+  if (subjKey === 'civics') {
+    if (typeof CIVICS_12_DATA !== 'undefined') return CIVICS_12_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.civics12Chapters) ? DATA.civics12Chapters : [];
+  }
+  if (subjKey === 'econ') {
+    if (typeof ECON_12_DATA !== 'undefined') return ECON_12_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.econ12Chapters) ? DATA.econ12Chapters : [];
+  }
+  if (subjKey === 'hpe') {
+    if (typeof HPE_12_DATA !== 'undefined') return HPE_12_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.hpe12Chapters) ? DATA.hpe12Chapters : [];
+  }
+  if (subjKey === 'islopt') {
+    if (typeof ISLAMIAT_OPT_12_DATA !== 'undefined') return ISLAMIAT_OPT_12_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.islamiatOpt12Chapters) ? DATA.islamiatOpt12Chapters : [];
+  }
+  if (subjKey === 'islhist') {
+    if (typeof ISLAMIC_HISTORY_12_DATA !== 'undefined') return ISLAMIC_HISTORY_12_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.islHist12Chapters) ? DATA.islHist12Chapters : [];
+  }
+  if (subjKey === 'quran') {
+    if (typeof QURAN_12_DATA !== 'undefined') return QURAN_12_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.quran12Chapters) ? DATA.quran12Chapters : [];
   }
   return [];
 }
@@ -16558,7 +17229,7 @@ function selectSubjectChapter(subjKey, index, classId) {
   document.querySelectorAll(".bio-ch-btn, .math-ch-btn").forEach((btn, i) =>
     btn.classList.toggle("active", i === index));
   const subs = DATA.subjects[classId] || [];
-  const subjObj = subs.find(s => s.id === state.activeSubject || s.hasEng || s.hasUrdu || s.hasBio || s.hasChem || s.hasPhys || s.hasPakStudy || s.hasIsl || s.hasNazira || s.hasPashto);
+  const subjObj = subs.find(s => s.id === state.activeSubject || s.id === 'cls12-' + subjKey || (subjKey === 'pakstudy' && (s.id === 'cls12-pak' || s.id === 'cls12-pakstudy')) || (subjKey === 'phys' && s.id === 'cls12-phy') || s.hasEng || s.hasUrdu || s.hasBio || s.hasChem || s.hasPhys || s.hasPakStudy || s.hasIsl || s.hasNazira || s.hasPashto || s.hasStat || s.hasComp || s.hasCivics || s.hasEcon || s.hasHpe || s.hasIslopt || s.hasIslhist || s.hasQuran);
   renderSubjectChapterView(subjKey, index, classId, subjObj);
 }
 
@@ -16572,7 +17243,7 @@ function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
   const isEng = (subjKey === 'eng');
   const isUrdu = (subjKey === 'urdu');
   const isPashto = (subjKey === 'pashto');
-  const isScience = (subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp');
+  const isScience = (subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp' || subjKey === 'stat');
 
   // Define Subject-Specific Main Tabs according to requirements
   let tabs = [];
@@ -16606,7 +17277,8 @@ function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
       { id: 'concepts', label: '💡 Concepts & Examples' },
       { id: 'exercise', label: '✍️ Solved Exercises' },
       { id: 'slos', label: '🎯 Board SLO Based & MCQs, SQs, LQs' },
-      { id: 'formulas', label: subjKey === 'bio' ? '🔬 Diagrams & Summary' : '📐 Summary & Formulas' }
+      { id: 'formulas', label: subjKey === 'bio' ? '🔬 Diagrams & Summary' : '📐 Summary & Formulas' },
+      ...(classId === 'cls12' ? [{ id: 'booktext', label: '📚 Complete Book Text' }] : [])
     ];
   } else {
     // Humanities (Pak Studies, Islamiat, etc.)
@@ -16674,9 +17346,12 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
   const isEng = (subjKey === 'eng');
   const isUrdu = (subjKey === 'urdu');
   const isPashto = (subjKey === 'pashto');
-  const isScience = (subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp');
+  const isScience = (subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp' || subjKey === 'stat');
 
-  if (tabId === 'lesson') {
+  if (tabId === 'booktext' && classId === 'cls12') {
+    if (subBar) { subBar.style.display = 'none'; subBar.innerHTML = ''; }
+    container.innerHTML = renderMath3Textbook(ch);
+  } else if (tabId === 'lesson') {
     if (isEng || isUrdu || isPashto) {
       const activeLessonSubTab = state.activeSubjLessonSubTab || 'paragraphs';
       if (subBar) {
@@ -18582,6 +19257,7 @@ function renderScienceLessonSubContent(subjKey, ch, subTab) {
                     `).join('')}
                   </div>
                 ` : ''}
+                ${sec.diagramSvg || ''}
               </div>
             `;
           }).join('')}

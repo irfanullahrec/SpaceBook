@@ -18,9 +18,14 @@ const DATA_FILES = [
   'data_comp.js',
   'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js',
   'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js',
-  'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'math_2_data.js',
+  'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'math_2_data.js', 'math_3_book_text.js', 'math_3_data.js', 'math_primary_visuals.js',
   'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js',
-  'islamyat_3_data.js', 'nazira_3_data.js', 'english_3_data.js', 'gk_3_data.js', 'pashto_3_data.js'
+  'islamyat_3_data.js', 'nazira_3_data.js', 'english_3_data.js', 'gk_3_data.js', 'pashto_3_data.js',
+  'math_12_data.js', 'phys_12_data.js', 'chem_12_data.js', 'stat_12_data.js',
+  'english_12_data.js', 'pakstudy_12_data.js', 'urdu_12_data.js',
+  'biology_12_data.js', 'computer_12_data.js', 'civics_12_data.js',
+  'economics_12_data.js', 'hpe_12_data.js', 'islamiat_ikhtiari_12_data.js',
+  'islamic_history_12_data.js', 'quran_12_data.js'
 ];
 
 let pass = 0, fail = 0;
@@ -73,7 +78,7 @@ if (D) {
   })());
   check('class counts match subject arrays', D.classes.every(c => c.subjects === (D.subjects[c.id] || []).length),
     D.classes.map(c => c.id + ':' + c.subjects + ' vs ' + ((D.subjects[c.id] || []).length)).join(' '));
-  check('books = ' + D.books.length, D.books.length === 22, 'got ' + D.books.length);
+  check('Class 12 books are included in the registry', D.books.length >= 24, 'got ' + D.books.length);
   check('book ids unique', new Set(D.books.map(b => b.id)).size === D.books.length);
   check('book subjects resolvable', D.books.every(b => b.classId || b.class_id), 'missing classId/class_id on ' + D.books.filter(b => !(b.classId || b.class_id)).map(b => b.id).join(','));
   check('chemChapters = 8', D.chemChapters && D.chemChapters.length === 8, 'got ' + (D.chemChapters || []).length);
@@ -84,7 +89,9 @@ if (D) {
   check('eng10Chapters = 15', D.eng10Chapters && D.eng10Chapters.length === 15, 'got ' + (D.eng10Chapters || []).length);
   check('eng1Chapters = 11', D.eng1Chapters && D.eng1Chapters.length === 11, 'got ' + (D.eng1Chapters || []).length);
   check('compChapters = 7', D.compChapters && D.compChapters.length === 7, 'got ' + (D.compChapters || []).length);
-  check('chapters roadmap map has 14 entries', D.chapters && Object.keys(D.chapters).length === 14, 'got ' + (D.chapters ? Object.keys(D.chapters).length : 0));
+  check('chapters roadmap includes the Class 12 map', D.chapters && Object.keys(D.chapters).length >= 15 && D.chapters['cls12-stat'], 'got ' + (D.chapters ? Object.keys(D.chapters).length : 0));
+  check('Class 12 all 15 subjects registered', D.subjects && D.subjects.cls12 && D.subjects.cls12.length === 15 && ['cls12-math','cls12-phy','cls12-chem','cls12-stat','cls12-eng','cls12-urdu','cls12-bio','cls12-pak','cls12-comp','cls12-civics','cls12-econ','cls12-hpe','cls12-islopt','cls12-islhist','cls12-quran'].every(id => D.subjects.cls12.some(s => s.id === id)));
+  check('Class 12 textbook PDF links available for all 15 books', ['b-cls12-math','b-cls12-phys','b-cls12-chem','b-cls12-stat','b-cls12-eng','b-cls12-urdu','b-cls12-bio','b-cls12-pak','b-cls12-comp','b-cls12-civics','b-cls12-econ','b-cls12-hpe','b-cls12-islopt','b-cls12-islhist','b-cls12-quran'].every(id => D.books.some(b => b.id === id && b.available && b.pdfPath)));
   check('DATA.urduChapters = 19 (from urdu_data.js)', D.urduChapters && (D.urduChapters.length === 19 || D.urduChapters.length === 15), 'got ' + (D.urduChapters || []).length);
   check('DATA.urdu10Chapters = 22 (from urdu_10_data.js)', (sb.URDU_10_DATA && sb.URDU_10_DATA.length === 22) || (D.urdu10Chapters && D.urdu10Chapters.length === 22), 'got ' + ((sb.URDU_10_DATA || D.urdu10Chapters || []).length));
   check('DATA.islamyatChapters = 15', D.islamyatChapters && D.islamyatChapters.length === 15, 'got ' + (D.islamyatChapters || []).length);
@@ -105,6 +112,10 @@ if (D) {
   check('Class 3 subjects registered', ['cls3-eng', 'cls3-gk', 'cls3-pashto', 'cls3-isl', 'cls3-nazira', 'cls3-drawing'].every(id => (D.subjects.cls3 || []).some(s => s.id === id)));
   check('DATA.mathChapters present (from math_data.js)', Array.isArray(D.mathChapters) && D.mathChapters.length > 0, 'got ' + (D.mathChapters ? D.mathChapters.length : 0));
   check('DATA.math10Chapters = 13 (from math_10_data.js)', (sb.MATH_10_DATA && sb.MATH_10_DATA.length === 13) || (D.math10Chapters && D.math10Chapters.length === 13), 'got ' + ((sb.MATH_10_DATA || D.math10Chapters || []).length));
+  check('Class 12 Maths has 12 text-backed units, formulas and vector figures', Array.isArray(sb.MATH_12_DATA) && sb.MATH_12_DATA.length === 12 && sb.MATH_12_DATA.every(ch => ch.textbookText.length && ch.formulaSheet && /<svg/.test(ch.diagramSvg)), 'got ' + ((sb.MATH_12_DATA || []).length));
+  check('Class 12 Physics has 10 text-backed units and vector figures', Array.isArray(sb.PHYS_12_DATA) && sb.PHYS_12_DATA.length === 10 && sb.PHYS_12_DATA.every(ch => ch.textbookText.length && /<svg/.test(ch.diagramSvg)), 'got ' + ((sb.PHYS_12_DATA || []).length));
+  check('Class 12 Chemistry has 12 text-backed units and vector figures', Array.isArray(sb.CHEM_12_DATA) && sb.CHEM_12_DATA.length === 12 && sb.CHEM_12_DATA.every(ch => ch.textbookText.length && /<svg/.test(ch.diagramSvg)), 'got ' + ((sb.CHEM_12_DATA || []).length));
+  check('Class 12 Statistics has 9 text-backed units and vector figures', Array.isArray(sb.STAT_12_DATA) && sb.STAT_12_DATA.length === 9 && sb.STAT_12_DATA.every(ch => ch.textbookText.length && /<svg/.test(ch.diagramSvg)), 'got ' + ((sb.STAT_12_DATA || []).length));
   check('islamic subjects registered', ['cls9-isl', 'cls10-isl', 'cls1-isl', 'cls1-nazira', 'cls2-isl', 'cls2-nazira', 'cls3-isl', 'cls3-nazira'].every(id => [].concat(D.subjects.cls9, D.subjects.cls10, D.subjects.cls1, D.subjects.cls2, D.subjects.cls3).some(s => s.id === id)));
   check('islamic books registered', ['b-cls9-isl', 'b-cls10-isl', 'b-cls1-isl', 'b-cls1-nazira'].every(id => D.books.some(b => b.id === id)));
 } else {
@@ -121,6 +132,11 @@ check('Class 3 Drawing is registered in its subject list', sb.DATA.subjects.cls3
 check('Class 2 Drawing has trilingual exam practice', !!(sb.DRAWING_2_EXAM && sb.DRAWING_2_EXAM.mcqs.every(q => q.options.length === 4 && q.optionsUr.length === 4 && q.optionsPs.length === 4 && q.qUr && q.qPs) && sb.DRAWING_2_EXAM.sqs.every(q => q.qUr && q.qPs && q.aUr && q.aPs) && sb.DRAWING_2_EXAM.lqs.every(q => q.qUr && q.qPs && q.aUr && q.aPs)));
 check('Class 2 Maths units = 6', Array.isArray(sb.MATH_2_DATA) && sb.MATH_2_DATA.length === 6, 'got ' + ((sb.MATH_2_DATA || []).length));
 check('Class 2 Maths units have lessons, worked examples, solved exercises and three question banks', Array.isArray(sb.MATH_2_DATA) && sb.MATH_2_DATA.every(ch => ch.sections.length && ch.workedExamples.length && ch.exercises.length && ch.slos.mcqs.length && ch.slos.shortQuestions.length && ch.slos.longQuestions.length));
+check('Class 3 Maths has all 7 textbook units', Array.isArray(sb.MATH_3_DATA) && sb.MATH_3_DATA.length === 7, 'got ' + ((sb.MATH_3_DATA || []).length));
+check('Class 3 Maths units include source text, lessons, examples, exercises and exam banks', Array.isArray(sb.MATH_3_DATA) && sb.MATH_3_DATA.every(ch => ch.textbookText.length > 0 && ch.sections.length && ch.workedExamples.length && ch.exercises.length && ch.slos.mcqs.length === 4 && ch.slos.shortQuestions.length === 3 && ch.slos.longQuestions.length === 2));
+check('Class 3 Maths transcription includes front and back matter', !!(sb.MATH_3_DATA && sb.MATH_3_DATA[0].textbookFrontMatter.length && sb.MATH_3_DATA[6].textbookBackMatter.length));
+check('Class 3 Maths lessons have lightweight vector figure keys', Array.isArray(sb.MATH_3_DATA) && sb.MATH_3_DATA.every(ch => ch.sections.every(sec => !!sec.diagram)) && fs.statSync(path.join(JS,'math_3_book_text.js')).size < 180000);
+check('Class 3 Maths subject is registered to open the maths workspace', D.subjects.cls3.some(s => s.id === 'cls3-math' && s.hasMath3 && s.chapters === 7));
 check('Class 2 Drawing vectors and questions remain a lightweight content dataset', !!(sb.DRAWING_2_DATA && JSON.stringify(sb.DRAWING_2_DATA).length < 40000 && JSON.stringify(sb.DRAWING_2_ART).length < 18000));
 check('Class 3 Drawing vectors and questions remain lightweight', !!(sb.DRAWING_3_DATA && JSON.stringify(sb.DRAWING_3_DATA).length < 30000 && JSON.stringify(sb.DRAWING_3_ART).length < 30000));
 check('Class 1 Maths units have lessons, examples, solved exercises and exam questions', Array.isArray(sb.MATH_1_DATA) && sb.MATH_1_DATA.every(ch => ch.sections.length && ch.workedExamples.length && ch.exercises.length && ch.slos.mcqs.length && ch.slos.shortQuestions.length && ch.slos.longQuestions.length));
@@ -328,6 +344,19 @@ if (PS3) {
 check('ENG_UNIT_VOCAB_WORDS lexicon', !!(sb.ENG_UNIT_VOCAB_WORDS && sb.ENG_UNIT_VOCAB_WORDS[2]), 'missing from dictionary_data.js');
 check('lookupEngWord()', typeof sb.lookupEngWord === 'function');
 
+check('ENGLISH_12_DATA units = 19', Array.isArray(sb.ENGLISH_12_DATA) && sb.ENGLISH_12_DATA.length === 19 && sb.ENGLISH_12_DATA.every(ch => ch.sections && ch.exercise));
+check('PAKSTUDY_12_DATA chapters = 11', Array.isArray(sb.PAKSTUDY_12_DATA) && sb.PAKSTUDY_12_DATA.length === 11 && sb.PAKSTUDY_12_DATA.every(ch => ch.sections && ch.exercise));
+check('URDU_12_DATA chapters = 22', Array.isArray(sb.URDU_12_DATA) && sb.URDU_12_DATA.length === 22 && sb.URDU_12_DATA.every(ch => ch.sections && ch.exercise));
+check('BIOLOGY_12_DATA units = 14', Array.isArray(sb.BIOLOGY_12_DATA) && sb.BIOLOGY_12_DATA.length === 14 && sb.BIOLOGY_12_DATA.every(ch => ch.sections && ch.exercise));
+check('COMP_12_DATA units = 9', Array.isArray(sb.COMP_12_DATA) && sb.COMP_12_DATA.length === 9 && sb.COMP_12_DATA.every(ch => ch.sections && ch.exercise));
+check('CIVICS_12_DATA chapters = 8', Array.isArray(sb.CIVICS_12_DATA) && sb.CIVICS_12_DATA.length === 8 && sb.CIVICS_12_DATA.every(ch => ch.sections && ch.exercise));
+check('ECON_12_DATA chapters = 12', Array.isArray(sb.ECON_12_DATA) && sb.ECON_12_DATA.length === 12 && sb.ECON_12_DATA.every(ch => ch.sections && ch.exercise));
+check('HPE_12_DATA chapters = 6', Array.isArray(sb.HPE_12_DATA) && sb.HPE_12_DATA.length === 6 && sb.HPE_12_DATA.every(ch => ch.sections && ch.exercise));
+check('ISLAMIAT_OPT_12_DATA chapters = 6', Array.isArray(sb.ISLAMIAT_OPT_12_DATA) && sb.ISLAMIAT_OPT_12_DATA.length === 6 && sb.ISLAMIAT_OPT_12_DATA.every(ch => ch.sections && ch.exercise));
+check('ISLAMIC_HISTORY_12_DATA chapters = 6', Array.isArray(sb.ISLAMIC_HISTORY_12_DATA) && sb.ISLAMIC_HISTORY_12_DATA.length === 6 && sb.ISLAMIC_HISTORY_12_DATA.every(ch => ch.sections && ch.exercise));
+check('QURAN_12_DATA chapters = 8', Array.isArray(sb.QURAN_12_DATA) && sb.QURAN_12_DATA.length === 8 && sb.QURAN_12_DATA.every(ch => ch.sections && ch.exercise));
+
+
 // --------------------------------------------------- 3. index.html wiring
 console.log('--- index.html ---');
 const html = fs.readFileSync(INDEX, 'utf8');
@@ -338,6 +367,8 @@ check('index.html loads Class 1 Drawing data', srcs.includes('js/drawing_1_data.
 check('index.html loads Class 1 English data', srcs.includes('js/english_1_data.js') && srcs.indexOf('js/english_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Maths data', srcs.includes('js/math_1_data.js') && srcs.indexOf('js/math_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 2 Drawing and Maths data', ['js/drawing_2_data.js','js/math_2_data.js'].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
+check('index.html loads Class 3 Maths text, lessons, and vector figures before app.js', ['js/math_3_book_text.js','js/math_3_data.js','js/math_primary_visuals.js'].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
+check('index.html loads all 15 Class 12 textbooks before app.js', ['js/math_12_data.js','js/phys_12_data.js','js/chem_12_data.js','js/stat_12_data.js','js/english_12_data.js','js/pakstudy_12_data.js','js/urdu_12_data.js','js/biology_12_data.js','js/computer_12_data.js','js/civics_12_data.js','js/economics_12_data.js','js/hpe_12_data.js','js/islamiat_ikhtiari_12_data.js','js/islamic_history_12_data.js','js/quran_12_data.js'].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 3 Drawing data before app.js', srcs.includes('js/drawing_3_data.js') && srcs.indexOf('js/drawing_3_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Islamyat data', srcs.includes('js/islamyat_1_data.js') && srcs.indexOf('js/islamyat_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Nazira data', srcs.includes('js/nazira_1_data.js') && srcs.indexOf('js/nazira_1_data.js') < srcs.indexOf('js/app.js'));

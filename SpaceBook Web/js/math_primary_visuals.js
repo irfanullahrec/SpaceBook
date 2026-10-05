@@ -205,3 +205,145 @@ function renderPrimaryMathDiagram(classId, chapterNumber, sectionId, subject) {
   }
   return frame(title, s);
 }
+
+// Class 3 workbook figures are rendered as compact inline SVG; no page photos are bundled.
+function renderClass3MathDiagram(section) {
+  if (!section || !section.diagram) return '';
+  const key = section.diagram;
+  const escape = value => String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const text = (x,y,value,size=17,anchor='middle',fill='#26364a') => `<text x="${x}" y="${y}" text-anchor="${anchor}" font-size="${size}" font-weight="700" fill="${fill}">${escape(value)}</text>`;
+  const line = (x1,y1,x2,y2,color='#526579',width=3,dash='') => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="${width}" stroke-linecap="round" ${dash ? `stroke-dasharray="${dash}"` : ''}/>`;
+  const rect = (x,y,w,h,fill='#eaf4ff',stroke='#526579',rx=7) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${fill}" stroke="${stroke}" stroke-width="2"/>`;
+  const circle = (cx,cy,r=9,fill='#93c5fd') => `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${fill}" stroke="#526579" stroke-width="1.5"/>`;
+  const colors=['#fda4af','#fcd34d','#86efac','#93c5fd','#c4b5fd','#fdba74'];
+  const frame = (title,inner) => `<figure class="math-diagram primary-math-visual"><figcaption>Class 3 visual · ${escape(title)}</figcaption><svg viewBox="0 0 800 300" role="img" aria-label="${escape(title)}"><style>text{font-family:Arial,'Segoe UI',sans-serif}.m3grid{stroke:#d4dde7;stroke-width:1}</style>${inner}</svg></figure>`;
+  let s='', title='';
+  if (key==='roman20') {
+    title='Roman numerals from 1 to 20';
+    const vals=['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX'];
+    vals.forEach((v,i)=>{const x=72+(i%5)*132,y=48+Math.floor(i/5)*55;s+=rect(x,y,112,40,colors[i%6],'#9aaabd',6)+text(x+56,y+17,String(i+1),12)+text(x+56,y+34,v,17);});
+  } else if (key==='oddEven') {
+    title='Pairing counters to see even and odd numbers';
+    for(let i=0;i<9;i++){const row=Math.floor(i/5),col=i%5;s+=circle(120+col*55,92+row*48,15,colors[i%6])+text(120+col*55,97+row*48,String(i+1),12);}
+    s+=text(510,98,'8 counters → 4 pairs',22,'middle','#167453')+text(510,145,'9 counters → 4 pairs + 1 left',19,'middle','#b45309')+text(510,210,'Even · no one left over',16)+text(510,242,'Odd · one left over',16);
+  } else if (key==='placeValue4') {
+    title='Thousands, hundreds, tens and ones';
+    [['Thousands','4,000',4,'#bfdbfe'],['Hundreds','300',3,'#fde68a'],['Tens','70',7,'#bbf7d0'],['Ones','2',2,'#fecdd3']].forEach((d,i)=>{const x=65+i*182;s+=rect(x,65,155,128,d[3],'#75879a')+text(x+77,92,d[0],15)+text(x+77,127,d[1],22,'middle','#1e3a5f')+text(x+77,165,`${d[2]} blocks`,14);});
+    s+=text(400,245,'4,372 = 4,000 + 300 + 70 + 2',24,'middle','#167453');
+  } else if (key==='numberLine100') {
+    title='Number line from 0 to 100';s+=line(72,145,728,145,'#465a70',4);
+    for(let i=0;i<=10;i++){const x=76+i*65.2;s+=line(x,135,x,158,'#465a70',2)+text(x,186,String(i*10),13);}
+    [20,50,80].forEach((v,i)=>{const x=76+v*6.52;s+=circle(x,145,8,colors[i])+text(x,115,String(v),15);});
+    s+=text(400,235,'Values get greater →',17);
+  } else if (key==='rounding') {
+    title='Rounding on a number line';s+=line(100,150,700,150,'#465a70',4);
+    [800,820,840,846,850,860,880,900].forEach((v,i)=>{const x=120+i*80;s+=line(x,140,x,162,'#465a70',2)+text(x,190,String(v),14);});
+    s+=circle(120+3*80,150,9,'#ef4444')+text(360,92,'846 is nearer 850',21,'middle','#b91c1c');
+  } else if (key==='add4') {
+    title='Column addition with regrouping';
+    const cols=[['Thousands','2 + 1','3'],['Hundreds','4 + 3 + 1','8'],['Tens','6 + 5 + 1','2'],['Ones','8 + 7','5']];
+    cols.forEach((d,i)=>{const x=74+i*165;s+=rect(x,62,145,130,['#dbeafe','#fef3c7','#dcfce7','#fce7f3'][i]) + text(x+72,92,d[0],14)+text(x+72,132,d[1],14)+text(x+72,169,d[2],22,'middle','#167453');});
+    s+=text(400,242,'2,468 + 1,357 = 3,825',25,'middle','#167453');
+  } else if (key==='subtract4') {
+    title='Column subtraction and regrouping';
+    s+=text(400,65,'6,203 − 2,847',24,'middle','#1e3a5f');
+    [['Thousands','5 − 2','3'],['Hundreds','11 − 8','3'],['Tens','9 − 4','5'],['Ones','13 − 7','6']].forEach((d,i)=>{const x=65+i*176;s+=rect(x,95,155,110,['#dbeafe','#fef3c7','#dcfce7','#fce7f3'][i])+text(x+77,126,d[0],14)+text(x+77,155,d[1],15)+text(x+77,187,d[2],20,'middle','#167453');});
+    s+=text(400,254,'Check: 3,356 + 2,847 = 6,203',19);
+  } else if (key==='multiplicationArray') {
+    title='Equal rows show multiplication';
+    for(let r=0;r<4;r++)for(let c=0;c<6;c++)s+=circle(180+c*40,75+r*39,12,colors[r]);
+    s+=text(550,104,'4 rows of 6',20)+text(550,150,'6 + 6 + 6 + 6',18)+text(550,202,'4 × 6 = 24',26,'middle','#167453');
+  } else if (key==='divisionGroups') {
+    title='Share 24 counters into 4 equal groups';
+    for(let g=0;g<4;g++){const x=125+g*155;s+=rect(x,65,125,142,'#f8fafc','#8ba0b5',12)+text(x+62,94,`Group ${g+1}`,14);for(let j=0;j<6;j++)s+=circle(x+31+(j%3)*31,126+Math.floor(j/3)*34,10,colors[g]);}
+    s+=text(400,252,'24 ÷ 4 = 6 in each group',22,'middle','#167453');
+  } else if (key==='fractionParts'||key==='fractionStrip') {
+    title='Equal parts represent a fraction';
+    const x=110,y=85,w=580,h=82,n=key==='fractionParts'?8:4,sh=key==='fractionParts'?3:1,cw=w/n;
+    for(let i=0;i<n;i++)s+=rect(x+i*cw,y,cw,h,i<sh?'#f9a8d4':'#f8fafc','#64748b',0);
+    s+=text(400,215,`${sh}/${n} shaded · ${n-sh}/${n} unshaded`,22,'middle','#1e3a5f');
+  } else if (key==='equivalentFractions') {
+    title='Equivalent fractions show the same share';
+    [[2,1],[4,2],[8,4]].forEach((d,row)=>{const x=235,y=48+row*66,w=330,h=42,cw=w/d[0];for(let i=0;i<d[0];i++)s+=rect(x+i*cw,y,cw,42,i<d[1]?'#86efac':'#fff','#61758a',0);s+=text(600,y+27,`${d[1]}/${d[0]}`,19,'start');});
+    s+=text(400,270,'1/2 = 2/4 = 4/8',22,'middle','#167453');
+  } else if (key==='fractionCompare') {
+    title='Compare fractions of equal wholes';
+    [[2,1,'1/2'],[4,1,'1/4']].forEach((d,row)=>{const x=180,y=74+row*94,w=440,h=55,cw=w/d[0];for(let i=0;i<d[0];i++)s+=rect(x+i*cw,y,cw,h,i===0?colors[row]:'#fff','#61758a',0);s+=text(665,y+35,d[2],20,'start');});
+    s+=text(400,270,'One half is greater than one quarter',18);
+  } else if (key==='metricRuler'||key==='segmentRuler') {
+    title=key==='segmentRuler'?'Measure a line segment from zero':'Metric length units and ruler marks';
+    const x0=95,y=165;s+=line(x0,y,705,y,'#7a5d3b',6);
+    for(let i=0;i<=20;i++){const x=x0+i*30;s+=line(x,y,x,y-(i%5===0?52:25),'#705d46',2);if(i%5===0)s+=text(x,y+25,String(i),13);}
+    s+=text(400,67,key==='segmentRuler'?'Align the zero mark with the first endpoint':'100 cm = 1 m · 1,000 m = 1 km',18,'middle','#1e3a5f');
+    if(key==='segmentRuler'){s+=line(95,120,365,120,'#e88140',5)+circle(95,120,5,'#b45309')+circle(365,120,5,'#b45309')+text(230,108,'9 cm',16);}
+  } else if (key==='lengthColumns') {
+    title='Add measurements with matching units';
+    [['km','2 km + 3 km','5 km'],['m','350 m − 120 m','230 m'],['cm','45 cm + 35 cm','80 cm']].forEach((d,i)=>{const y=58+i*65;s+=rect(115,y,570,48,['#dbeafe','#fef3c7','#dcfce7'][i])+text(160,y+30,d[0],17)+text(400,y+30,d[1],17)+text(600,y+30,d[2],18,'middle','#167453');});
+  } else if (key==='massBalance') {
+    title='Compare mass using a balance';
+    s+=line(400,55,400,215,'#7c5a3b',7)+line(315,215,485,215,'#7c5a3b',6)+line(230,115,570,115,'#50657a',5);
+    s+=line(260,115,228,178)+line(260,115,292,178)+line(540,115,508,178)+line(540,115,572,178);
+    s+='<path d="M200 178q60 35 120 0M480 178q60 35 120 0" fill="#fff0c9" stroke="#805d2b" stroke-width="3"/>';
+    s+=circle(260,145,19,'#ffcd69')+circle(540,145,12,'#a8d8f0')+text(260,170,'1 kg',15)+text(540,170,'500 g',15)+text(400,265,'The heavier side moves down',17);
+  } else if (key==='capacityVessels') {
+    title='Litres and millilitres measure capacity';
+    [[170,120,95,'1 L'],[330,90,110,'500 mL'],[520,70,125,'2 L'],[680,40,105,'1,000 mL']].forEach(([x,top,w,label],i)=>{s+=rect(x-w/2,top,w,135-top,'#dff5ff','#547087',10)+line(x-w/2,top+82,x+w/2,top+82,'#49a2c8',3)+text(x,267,label,15);});
+    s+=text(400,42,'1 L = 1,000 mL',20,'middle','#1e3a5f');
+  } else if (key==='clockFace') {
+    title='Analogue clock: hour and minute hands';
+    const cx=275,cy=145,r=88;s+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="#fffdf4" stroke="#53677d" stroke-width="4"/>`;
+    for(let i=1;i<=12;i++){const a=i*Math.PI/6-Math.PI/2;s+=text(cx+68*Math.cos(a),cy+5+68*Math.sin(a),String(i),14);}
+    s+=line(cx,cy,cx+38,cy-45,'#e35d6a',6)+line(cx,cy,cx+5,cy-67,'#2767a1',4)+circle(cx,cy,5,'#334155');
+    s+=rect(440,87,230,100,'#e8f7ec','#4a8060')+text(555,132,'7:30 p.m.',26,'middle','#167453')+text(555,162,'after noon',15);
+  } else if (key==='calendarGrid') {
+    title='Calendar arranged in weekday columns';
+    const days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];days.forEach((d,i)=>{const x=98+i*88;s+=rect(x,53,80,34,'#dbeafe','#91a4b8',4)+text(x+40,76,d,13);});
+    for(let r=0;r<4;r++)for(let c=0;c<7;c++){const x=98+c*88,y=91+r*38;s+=rect(x,y,80,34,'#fff','#d4dde7',2);const v=r*7+c+1;s+=text(x+40,y+22,String(v),12);}
+    s+=text(400,272,'Follow a column to find the same weekday',16);
+  } else if (key==='timeLine') {
+    title='Add elapsed time in hours and minutes';
+    s+=line(125,145,675,145,'#64748b',4);
+    [[125,'8:15 a.m.'],[345,'11:15 a.m.'],[535,'12:00 noon'],[675,'12:05 p.m.']].forEach(([x,label])=>{s+=line(x,132,x,159,'#64748b',3)+circle(x,145,8,'#38bdf8')+text(x,193,label,14);});
+    s+=text(400,80,'+3 hours',17,'middle','#167453')+text(610,116,'+50 min',15,'middle','#167453');
+  } else if (key==='lineRaySegment') {
+    title='Line, ray and line segment';
+    const arrow=(x1,y1,x2,y2)=>line(x1,y1,x2,y2,'#3c6a91',4);
+    arrow(130,80,660,80);s+='<path d="M130 80l14-8v16zM660 80l-14-8v16z" fill="#3c6a91"/>'+text(400,60,'Line · extends both ways',16);
+    arrow(210,152,650,152);s+='<path d="M650 152l-14-8v16z" fill="#3c6a91"/>'+circle(210,152,7,'#ef4444')+text(400,132,'Ray · one endpoint',16);
+    arrow(250,225,550,225);s+=circle(250,225,7,'#ef4444')+circle(550,225,7,'#ef4444')+text(400,258,'Segment · two endpoints',16);
+  } else if (key==='shapeGallery') {
+    title='Flat shapes, sides and vertices';
+    s+='<polygon points="100,185 150,80 200,185" fill="#fde68a" stroke="#526579" stroke-width="3"/>'+rect(270,85,120,100,'#bbf7d0')+rect(455,95,155,85,'#fecdd3')+`<circle cx="700" cy="135" r="50" fill="#bfdbfe" stroke="#526579" stroke-width="3"/>`;
+    s+=text(150,221,'Triangle · 3',15)+text(330,221,'Square · 4',15)+text(532,221,'Rectangle · 4',15)+text(700,221,'Circle · 0',15);
+  } else if (key==='perimeterSymmetry') {
+    title='Perimeter and a line of symmetry';
+    s+=rect(135,68,220,145,'#fde68a','#526579',2)+line(245,68,245,213,'#dc2626',4,'8 6')+text(245,244,'matching halves',15)+text(245,48,'Perimeter follows every outside side',15);
+    s+=text(570,111,'P = 2 × (length + width)',18,'middle','#167453')+text(570,153,'P = 2 × (8 + 5) = 26 cm',17);
+  } else if (key==='solidShapes') {
+    title='Cube, sphere, cone and cylinder';
+    s+=rect(70,78,110,110,'#bfdbfe','#526579',4)+line(95,55,205,55,'#526579',2)+text(125,227,'Cube',16);
+    s+=`<circle cx="315" cy="133" r="56" fill="#fde68a" stroke="#526579" stroke-width="3"/><ellipse cx="296" cy="112" rx="17" ry="9" fill="#fff9db"/>`+text(315,227,'Sphere',16);
+    s+='<path d="M440 190L500 73l61 117z" fill="#bbf7d0" stroke="#526579" stroke-width="3"/>'+`<ellipse cx="500" cy="190" rx="61" ry="14" fill="none" stroke="#526579" stroke-width="3"/>`+text(500,227,'Cone',16);
+    s+=rect(638,95,90,93,'#e9d5ff','#526579',2)+`<ellipse cx="683" cy="95" rx="45" ry="13" fill="#f3e8ff" stroke="#526579" stroke-width="3"/><ellipse cx="683" cy="188" rx="45" ry="13" fill="#e9d5ff" stroke="#526579" stroke-width="3"/>`+text(683,227,'Cylinder',16);
+  } else if (key==='carrollDiagram') {
+    title='Carroll diagram: sort by two properties';
+    const x=230,y=82,w=230,h=58;s+=text(345,47,'Has four sides?',18);
+    s+=rect(x,y,w,h,'#dbeafe')+rect(x+w,y,w,h,'#fef3c7')+rect(x,y+h,w,h,'#dcfce7')+rect(x+w,y+h,w,h,'#fce7f3');
+    s+=text(x+w/2,y+35,'Triangle',17)+text(x+1.5*w,y+35,'Square',17)+text(x+w/2,y+h+35,'Circle',17)+text(x+1.5*w,y+h+35,'Rectangle',17);
+    s+=text(345,268,'Read both labels to choose the correct box',15);
+  } else if (key==='tallyChart') {
+    title='Tally marks are grouped in fives';
+    [['Red',7],['Blue',4],['Green',9]].forEach((d,i)=>{const y=82+i*58;s+=text(165,y+5,d[0],17,'end')+rect(190,y-20,430,42,'#fff','#d4dde7',4);for(let n=0;n<d[1];n++){const x=230+n*38;s+=line(x,y-12,x,y+12,'#2563eb',3);}for(let g=0;g<Math.floor(d[1]/5);g++)s+=line(230+g*190,y+13,230+g*190+4*38,y-13,'#dc2626',3);s+=text(660,y+5,String(d[1]),17,'start','#167453');});
+  } else if (key==='pictureGraph') {
+    title='Picture graph with a key';
+    const rows=[['Cats',4],['Dogs',3],['Birds',2]];rows.forEach((r,i)=>{const y=82+i*54;s+=text(155,y+7,r[0],16,'end');for(let n=0;n<r[1];n++)s+=`<circle cx="${220+n*48}" cy="${y}" r="15" fill="${colors[i]}" stroke="#53677d" stroke-width="2"/><circle cx="${220+n*48}" cy="${y}" r="3" fill="#53677d"/>`;});
+    s+=rect(525,205,210,44,'#f8fafc')+text(630,233,'Key: 1 picture = 2',15);
+  } else if (key==='barGraph') {
+    title='Bar graph compares categories';
+    const x0=125,y0=230,scale=22;s+=line(x0,y0,x0+550,y0,'#53677d',3)+line(x0,y0,x0,y0-170,'#53677d',3);
+    for(let n=0;n<=7;n++){const y=y0-n*scale;s+=line(x0,y,x0+550,y,'#ccd6e1',1,'3 5')+text(103,y+5,String(n*2),12,'end');}
+    [['Red',4],['Blue',6],['Green',3],['Yellow',5]].forEach((d,i)=>{const x=185+i*115,h=d[1]*scale;s+=rect(x,y0-h,62,h,['#fda4af','#93c5fd','#86efac','#fcd34d'][i],'#526579',4)+text(x+31,255,d[0],14);});
+    s+=text(75,56,'Count',14);
+  } else return '';
+  return frame(title,s);
+}
