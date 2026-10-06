@@ -612,29 +612,6 @@ function renderClasses() {
     { label: "Subjects", active: true }
   ];
 
-  const getTierMeta = (c) => {
-    if (['cls-pg', 'cls-nur', 'cls-kg'].includes(c.id)) {
-      return { tierName: 'Early Years', tierClass: 'tier-early', badgeText: 'Preschool Track' };
-    }
-    if (['cls1', 'cls2', 'cls3', 'cls4', 'cls5'].includes(c.id)) {
-      const badgeText = c.id === 'cls1' ? 'Drawing ready · 5 subjects in prep'
-        : c.id === 'cls2' ? 'Maths & Drawing ready · 4 subjects in prep'
-          : c.id === 'cls3' ? 'Maths, English, GK, Islamyat, Nazira, Pashto & Drawing ready'
-          : `${c.subjects} Subjects · In Prep`;
-      return { tierName: 'Primary', tierClass: 'tier-primary', badgeText };
-    }
-    if (['cls6', 'cls7', 'cls8'].includes(c.id)) {
-      return { tierName: 'Middle School', tierClass: 'tier-middle', badgeText: `${c.subjects} Subjects · In Prep` };
-    }
-    if (c.id === 'cls9') {
-      return { tierName: '✨ Matric Ready', tierClass: 'tier-hero-active', badgeText: '✓ 9 Core Subjects Uploaded' };
-    }
-    if (c.id === 'cls10') {
-      return { tierName: 'Matric Board', tierClass: 'tier-secondary', badgeText: `${c.subjects} Subjects · In Prep` };
-    }
-    return { tierName: 'HSSC College', tierClass: 'tier-college', badgeText: `${c.subjects} Subjects · In Prep` };
-  };
-
   pageContent().innerHTML = `
     <div class="classes-universe-wrapper">
       <!-- 1. Joyful Academic Levels Stage Bar -->
@@ -646,61 +623,24 @@ function renderClasses() {
         <span class="csb-pill">Play Group ➔ Class 12 · 15 Grades</span>
       </div>
 
-      <!-- 2. All 15 Classes in One Look (5x3 Rainbow Jewel Grid) without scrolling down -->
+      <!-- 2. Full-cover class cards -->
       <div class="classes-jewel-grid">
-        ${DATA.classes.map(c => {
-          const tm = getTierMeta(c);
-          return `
-          <div class="class-jewel-card ${tm.tierClass}" onclick="goToSubjects('${c.id}')" title="Explore ${c.name} (${tm.tierName})">
-            <div class="cjc-icon-wrap">${c.emoji}</div>
-            <div class="cjc-body">
-              <div class="cjc-name-wrap">
-                <span class="cjc-name">${c.name}</span>
-              </div>
-              <div class="cjc-meta-wrap">
-                <span class="cjc-tier-tag">${tm.tierName}</span>
-                <span class="cjc-badge">${tm.badgeText}</span>
-              </div>
-            </div>
-            <span class="cjc-arrow">➔</span>
-          </div>`;
-        }).join("")}
-      </div>
-
-      <!-- 3. Statistical Cards below the classes (visible with scrolling down) -->
-      <div class="class-overview-stats-grid" style="margin-top: 1.5rem;">
-        <div class="class-stat-card">
-          <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">🏫</div>
-          <div class="csc-content">
-            <div class="csc-value">15 Academic Grades</div>
-            <div class="csc-label">Secondary &amp; Higher Secondary</div>
-            <div class="csc-sub">Class 9, 10, 11 &amp; 12 KPK Board</div>
-          </div>
-        </div>
-        <div class="class-stat-card">
-          <div class="csc-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">📚</div>
-          <div class="csc-content">
-            <div class="csc-value">25 Core Subjects</div>
-            <div class="csc-label">Science &amp; General Tracks</div>
-            <div class="csc-sub">Complete textbooks &amp; solved notes</div>
-          </div>
-        </div>
-        <div class="class-stat-card">
-          <div class="csc-icon-wrap" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">📖</div>
-          <div class="csc-content">
-            <div class="csc-value">15 Official Textbooks</div>
-            <div class="csc-label">Verified KPK Board Library</div>
-            <div class="csc-sub">Complete curricula &amp; PDF readers</div>
-          </div>
-        </div>
-        <div class="class-stat-card">
-          <div class="csc-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">🎯</div>
-          <div class="csc-content">
-            <div class="csc-value">10,000+ Questions</div>
-            <div class="csc-label">MCQs, SQs &amp; SLO Assessments</div>
-            <div class="csc-sub">Board exam preparation bank</div>
-          </div>
-        </div>
+        ${(() => {
+          const clsCardCoverMap = {
+            'cls-pg': 'Play Group.jpg', 'cls-nur': 'Nursery.jpg', 'cls-kg': 'Play Group.jpg',
+            'cls1': '1.jpg', 'cls2': '2.jpg', 'cls3': '3.jpg', 'cls4': '4.jpg',
+            'cls5': '5.jpg', 'cls6': '6.jpg', 'cls7': '7.jpg', 'cls8': '8.jpg',
+            'cls9': '9.jpg', 'cls10': '10.jpg', 'cls11': '11.jpg', 'cls12': '12.jpg'
+          };
+          return DATA.classes.map(c => {
+            const clsCoverFile = clsCardCoverMap[c.id];
+            if (!clsCoverFile) return '';
+            return `
+            <button type="button" class="class-jewel-card" onclick="goToSubjects('${c.id}')" aria-label="Open ${c.name}">
+              <img class="cjc-cover-bg" src="../Books/Cover Pages/Classes Cards/${clsCoverFile}" alt="${c.name} textbook cover" loading="lazy">
+            </button>`;
+          }).join("");
+        })()}
       </div>
     </div>`;
 }
@@ -1224,69 +1164,110 @@ function goToSubjects(classId) {
     };
   };
 
-  pageContent().innerHTML = `
-    <!-- 1. All Class Subjects in One Look (Compact Grid) without scrolling down -->
-    <div class="subjects-compact-grid">
+  const coverPageMap = {
+    "cls1-eng": "Books/1st/Futuristic English Class 1 Cover.png",
+    "cls1-urdu": "Books/1st/Gemini_Generated_Image_rug1r6rug1r6rug1.jfif",
+    "cls1-math": "Books/1st/Gemini_Generated_Image_qbm1djqbm1djqbm1.jfif",
+    "cls1-gk": "Books/1st/Gemini_Generated_Image_wlxxp7wlxxp7wlxx.jfif",
+    "cls1-isl": "Books/1st/Gemini_Generated_Image_ecenaxecenaxecen.jfif",
+    "cls1-nazira": "Books/1st/Gemini_Generated_Image_baq9e3baq9e3baq9.jfif",
+    "cls1-pashto": "Books/1st/Gemini_Generated_Image_xrql7oxrql7oxrql.jfif",
+    "cls1-drawing": "Books/1st/Gemini_Generated_Image_moaefjmoaefjmoae.jfif",
+    "cls2-eng": "2nd English.jpg", "cls2-urdu": "2nd Urdu.jpg", "cls2-math": "2nd Maths.jpg",
+    "cls2-gk": "2nd GK.jpg", "cls2-isl": "2nd Islamyat.jpg", "cls2-nazira": "2nd Nazira.jpg",
+    "cls2-pashto": "2nd Pashto.jpg", "cls2-drawing": "2nd Drawing.jpg",
+    "cls3-eng": "3rd English.jpg", "cls3-urdu": "3rd Urdu.jpg", "cls3-math": "3rd Maths.jpg",
+    "cls3-gk": "3rd  GK.jpg", "cls3-isl": "3rd ISlamyat.jpg", "cls3-nazira": "3rd Nazira.jpg",
+    "cls3-pashto": "3rd Pashto.jpg", "cls3-drawing": "3rd Drawing.jpg",
+    "cls5-eng": "5th English.jpg", "cls5-urdu": "5th Urdu.jpg", "cls5-math": "5th Maths.jpg",
+    "cls5-sci": "5th General Science.jpg", "cls5-sst": "5th Social Study.jpg", "cls5-isl": "5th Islamiat.jpg",
+    "cls5-pashto": "5th Pashto.jpg",
+    "cls6-eng": "English.jpg", "cls6-urdu": "Urdu.jpg", "cls6-math": "Math.jpg",
+    "cls6-sci": "General science.jpg", "cls6-hg": "History.jpg", "cls6-comp": "Computer.jpg",
+    "cls6-isl": "Islamiat.jpg", "cls6-pashto": "Pashto.jpg",
+    "cls7-eng": "7th English.jpg", "cls7-urdu": "7th Urdu.jpg", "cls7-math": "7th MAths.jpg",
+    "cls7-sci": "7th General Science.jpg", "cls7-hg": "7th History.jpg", "cls7-comp": "7th CS.jpg",
+    "cls7-isl": "7th Islamiat.jpg", "cls7-pashto": "7th PAshto.jpg",
+    "cls8-eng": "8th English.jpg", "cls8-urdu": "Urdu.jpg", "cls8-math": "8th MAths.jpg",
+    "cls8-sci": "8th General Science.jpg", "cls8-hg": "8th History.jpg", "cls8-comp": "8th CS.jpg",
+    "cls8-isl": "8th Islamiat.jpg", "cls8-pashto": "8th PAshto.jpg",
+    "cls9-math": "Books/9th/Gemini_Generated_Image_w8lq8vw8lq8vw8lq.jfif",
+    "cls9-phy": "Books/9th/Gemini_Generated_Image_pw7qnrpw7qnrpw7q.jfif",
+    "cls9-chem": "Books/9th/Gemini_Generated_Image_30qsex30qsex30qs.jfif",
+    "cls9-bio": "Books/9th/Gemini_Generated_Image_boa8wdboa8wdboa8.jfif",
+    "cls9-eng": "Books/9th/Gemini_Generated_Image_rnk4elrnk4elrnk4.jfif",
+    "cls9-urdu": "Books/9th/Gemini_Generated_Image_ad08umad08umad08.jfif",
+    "cls9-isl": "Books/9th/Gemini_Generated_Image_75g27n75g27n75g2.jfif",
+    "cls9-comp": "Books/9th/Gemini_Generated_Image_vtqsonvtqsonvtqs.jfif",
+    "cls9-pakstudy": "Books/9th/Gemini_Generated_Image_db55esdb55esdb55.jfif",
+    "cls10-math": "Books/10th/Gemini_Generated_Image_vyx6guvyx6guvyx6.jfif",
+    "cls10-phy": "Books/10th/Gemini_Generated_Image_4h1fv24h1fv24h1f.jfif",
+    "cls10-chem": "Books/10th/Gemini_Generated_Image_gzpnyrgzpnyrgzpn.jfif",
+    "cls10-bio": "Books/10th/Gemini_Generated_Image_dcv58kdcv58kdcv5.jfif",
+    "cls10-eng": "Books/10th/Gemini_Generated_Image_cghnsfcghnsfcghn.jfif",
+    "cls10-pakstudy": "Books/10th/Gemini_Generated_Image_rq47jrrq47jrrq47.jfif",
+    "cls10-isl": "Books/10th/Gemini_Generated_Image_yxqnvmyxqnvmyxqn.jfif",
+    "cls10-urdu": "Books/10th/Gemini_Generated_Image_9uv30s9uv30s9uv3.jfif",
+    "cls11-math": "Books/11th/Gemini_Generated_Image_pfh7dwpfh7dwpfh7.jfif",
+    "cls11-phy": "Books/11th/Gemini_Generated_Image_o245eto245eto245.jfif",
+    "cls11-chem": "Books/11th/Gemini_Generated_Image_lmncvllmncvllmnc.jfif",
+    "cls11-bio": "Books/11th/Gemini_Generated_Image_jw91ygjw91ygjw91.jfif",
+    "cls11-eng": "Books/11th/Gemini_Generated_Image_ol8qruol8qruol8q.jfif",
+    "cls12-math": "Books/12th/Mathematics.jpg",
+    "cls12-phy": "Books/12th/Physics.jpg",
+    "cls12-chem": "Books/12th/Chemistry.jpg",
+    "cls12-stat": "Books/12th/Statistics.jpg",
+    "cls12-eng": "Books/12th/English.jpg",
+    "cls12-urdu": "Books/12th/Urdu.jpg",
+    "cls12-bio": "Books/12th/Biology.jpg",
+    "cls12-pak": "Books/12th/Pakistan Studies.jpg",
+    "cls12-comp": "Books/12th/Computer Science.jpg",
+    "cls12-civics": "Books/12th/Civics.jpg",
+    "cls12-econ": "Books/12th/Economics.jfif",
+    "cls12-hpe": "Books/12th/HPE.jpg",
+    "cls12-islopt": "Books/12th/Islamiat Ikhtiari.jfif",
+    "cls12-islhist": "Books/12th/Islamic History.jfif",
+    "cls12-quran": "Books/12th/Motalia Quran.jfif"
+  };
+
+  const getCoverPage = (subjId) => {
+    const filename = coverPageMap[subjId];
+    if (!filename) return null;
+    return `../Books/Cover Pages/${filename}`;
+  };
+
+  const getGridColsClass = (count) => {
+    if (count <= 6) return 'cols-3';
+    if (count <= 8) return 'cols-4';
+    if (count <= 10) return 'cols-5';
+    if (count <= 12) return 'cols-6';
+    if (count <= 14) return 'cols-7';
+    return 'cols-8';
+  };
+
+  const gridColsClass = getGridColsClass(displaySubs.length);
+
+pageContent().innerHTML = `
+    <div class="subjects-compact-grid ${gridColsClass}">
       ${displaySubs.map(s => {
         const meta = getSubjectMeta(s);
-        const cleanBadge = meta.badgeText ? meta.badgeText.replace(/^[✓🏛️]\s*/, '') : '';
+        const coverSrc = getCoverPage(s.id);
+        const imgHtml = coverSrc ? `<img class="scc-cover" src="${coverSrc}" alt="${s.name} cover" loading="lazy" onerror="this.parentElement.style.display='none'">` : `<div class="scc-placeholder">${s.emoji}</div>`;
         return `
-        <div class="subject-card-compact" onclick="openSubject('${classId}','${s.id}')" title="Explore ${s.name} units &amp; solved notes">
-          <div class="scc-icon" style="background: ${meta.headerColor}14; color: ${meta.headerColor}; border: 1px solid ${meta.headerColor}30;">
-            ${s.emoji}
-          </div>
-          <div class="scc-info">
-            <div class="scc-name-row">
-              <span class="scc-name">${s.name}</span>
-              ${meta.urduName ? `<span class="scc-urdu">${meta.urduName}</span>` : ""}
+        <div class="subject-card-wrapper" onclick="openSubject('${classId}','${s.id}')" title="Explore ${s.name} units & solved notes">
+          <div class="subject-card-compact">
+            <div class="scc-cover-wrap">
+              ${imgHtml}
             </div>
-            <div class="scc-sub">${cleanBadge}</div>
           </div>
-          <div class="scc-badge-wrap">
-            <span class="scc-pill" style="color: ${meta.headerColor}; background: ${meta.headerColor}12; border: 1px solid ${meta.headerColor}28;">${s.chapters} Units</span>
+          <div class="scc-title-row">
+            <span class="scc-name">${s.name}</span>
+            ${meta.urduName ? `<span class="scc-urdu">${meta.urduName}</span>` : ""}
           </div>
         </div>`;
       }).join("")}
     </div>
-
-    <!-- 2. Statistical Cards below the subjects (4 Cards in a Row · 100% Verified Counts) -->
-    <div class="class-overview-stats-grid" style="margin-top: 1.5rem;">
-      <div class="class-stat-card">
-        <div class="csc-icon-wrap" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">📚</div>
-        <div class="csc-content">
-          <div class="csc-value">${isCls10 ? `${subs.length} Subjects · 8 Books` : classId === 'cls1' ? '8 Subjects · English, Islamyat, Nazira, Pashto, Drawing' : classId === 'cls3' ? '8 Subjects · Maths, English, GK, Islamyat, Nazira, Pashto & Drawing ready' : '9 Subjects · 15 Books'}</div>
-          <div class="csc-label">Class Curriculum Track</div>
-          <div class="csc-sub">${isCls10 ? `Science &amp; Arts · ${totalUnits} Units (Full Syllabus)` : classId === 'cls1' ? 'Primary Grade 1 · Full English, Islamyat, Nazira, Pashto (23 Units) &amp; Drawing' : classId === 'cls3' ? 'Maths is available; Urdu and General Science are still in preparation' : 'Science &amp; Arts · 100 Units (92 Full Chapters)'}</div>
-        </div>
-      </div>
-
-      <div class="class-stat-card">
-        <div class="csc-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">📖</div>
-        <div class="csc-content">
-          <div class="csc-value">${isCls10 ? '28,150 Words · 31,420 Paras' : classId === 'cls1' ? '35,000+ Words · 3,800+ Paras' : '26,427 Words · 33,494 Paras'}</div>
-          <div class="csc-label">Verbatim Lessons &amp; Sections</div>
-          <div class="csc-sub">${isCls10 ? 'Word-by-word official coverage · 480 Sections' : classId === 'cls1' ? 'Word-by-word official text, Uthmani Arabic &amp; Line-by-line Translations' : 'Word-by-word official coverage · 531 Sections'}</div>
-        </div>
-      </div>
-
-      <div class="class-stat-card">
-        <div class="csc-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">🎯</div>
-        <div class="csc-content">
-          <div class="csc-value">${isCls10 ? '2,450 Solved Questions' : classId === 'cls1' ? '1,050+ Solved Questions' : '2,386 Solved Questions'}</div>
-          <div class="csc-label">Exam Readiness Bank</div>
-          <div class="csc-sub">${isCls10 ? '1,380 MCQs · 760 Short &amp; 310 Long Qs' : classId === 'cls1' ? 'Tajweed exercises, Textbook MCQs, SQs &amp; SLO question banks' : '1,343 MCQs · 755 Short &amp; 288 Long Qs'}</div>
-        </div>
-      </div>
-
-      <div class="class-stat-card">
-        <div class="csc-icon-wrap" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">📝</div>
-        <div class="csc-content">
-          <div class="csc-value">${isCls10 ? '510 Exercises · 460 SLOs' : classId === 'cls1' ? '240 Exercises · 160 SLOs' : '543 Exercises · 480 SLOs'}</div>
-          <div class="csc-label">Practice &amp; SLO Assessments</div>
-          <div class="csc-sub">${classId === 'cls1' ? 'Textbook exercises, Tajweed phonics &amp; Board SLO benchmarks' : 'Solved exercises &amp; Board SLO benchmarks'}</div>
-        </div>
-      </div>
-    </div>`;
+    ${classId === 'cls3' ? `<div style="margin-top:0.75rem;padding:0.6rem 0.9rem;background:#fef9c3;border:1.5px solid #fde047;border-radius:10px;font-size:0.82rem;color:#854d0e;">&#128218; <strong>Note:</strong> Urdu and General Science are still in preparation for Class 3 and will be available soon.</div>` : ''}`;
 }
 
 // ─── SUBJECT ROUTER ──────────────────────
@@ -7382,6 +7363,13 @@ function goBack() {
 
 // ─── GENERIC CHAPTER DETAILS MODAL (Class 10, 11, 12) ─────────
 function openGenericChapterDetails(classId, subjId, subjName, chNum) {
+  if (classId === 'cls12' && (subjId === 'math' || subjId === 'cls12-math')) {
+    openMathView('cls12', { name: subjName || 'Mathematics' });
+    const unitIndex = getMathChapterList('cls12').findIndex(unit => Number(unit.number) === Number(chNum));
+    if (unitIndex >= 0 && unitIndex !== state.selectedMathChapter) selectMathChapter(unitIndex);
+    return;
+  }
+
   const cls = DATA.classes.find(c => c.id === classId);
   const chList = DATA.chapters[subjId] || generateGenericChapters(subjId);
   const ch = chList.find(c => c.num === chNum) || chList[chNum - 1] || { num: chNum, name: `Chapter ${chNum}`, topics: "Core Topics" };
@@ -13873,9 +13861,7 @@ function openMathView(classId, subj) {
   setActiveNav('subjects');
   const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls1' ? 'Class 1' : (classId === 'cls2' ? 'Class 2' : (classId === 'cls3' ? 'Class 3' : (classId === 'cls10' ? 'Class 10' : 'Class 9')))) };
   const chList = getMathChapterList(classId);
-  const pdfFile = (classId === 'cls12')
-    ? 'file:///D:/SpaceBook/Books/12th/12th%20Maths/PDF/Math%20Book%20for%2012%20class%20KPTBB.pdf'
-    : (classId === 'cls1')
+  const pdfFile = (classId === 'cls1')
     ? 'file:///D:/SpaceBook/Books/1st/1st%20Maths/PDF/Math%20book%201%20KPTBB.pdf'
     : (classId === 'cls2')
       ? 'file:///D:/SpaceBook/Books/2nd/2nd%20Maths/PDF/Math%20Book%20for%202%20class%20KPTBB.pdf'
@@ -13883,7 +13869,7 @@ function openMathView(classId, subj) {
       ? 'file:///D:/SpaceBook/Books/3rd/3rd%20Maths/PDF/Math%20book%203%20class%20KPK_page_part_01_of_05.pdf'
     : ((classId === 'cls10')
       ? 'file://DESKTOP-R2HQSAV/SpaceBook/10th Maths/PDF/10th Maths.pdf'
-      : 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf');
+      : null);
 
   const subNavBar = $('subpage-nav-bar');
   if (subNavBar) subNavBar.style.display = 'none';
@@ -13914,14 +13900,16 @@ function openMathView(classId, subj) {
           <button onclick="goToSubjects('${classId}')" class="math-sidebar-back-btn" title="Back to Subjects">←</button>
           <div class="math-sidebar-title-wrap">
             <span class="math-sidebar-title">CHAPTERS</span>
-            <span class="math-sidebar-sub">${chList.length} Complete Solved Units</span>
+            <span class="math-sidebar-sub">${classId === 'cls12' ? `${chList.length} textbook units` : `${chList.length} Complete Solved Units`}</span>
           </div>
         </div>
         <div class="math-ch-list">${chapBtns}</div>
         <div class="math-sidebar-footer">
-          <a href="${pdfFile}" target="_blank" class="math-pdf-btn">
-            <span>📥</span> Official Math Book PDF${classId === 'cls3' ? ' · Part 1 of 5' : classId === 'cls12' ? ' · Part 1 of 5' : ''}
-          </a>
+          ${classId === 'cls12'
+            ? `<div class="math-pdf-btn" aria-label="Class 12 mathematics lessons use typeset equations"><span>∑</span> Interactive lessons with typeset math</div>`
+            : classId === 'cls9'
+              ? `<div class="math-pdf-btn" aria-label="Class 9 mathematics lessons use typeset equations"><span>∑</span> Interactive lessons with typeset math</div>`
+              : `<a href="${pdfFile}" target="_blank" class="math-pdf-btn"><span>📥</span> Official Math Book PDF${classId === 'cls3' ? ' · Part 1 of 5' : ''}</a>`}
         </div>
       </div>
       <div class="math-topic-area" id="mathTopicArea"></div>
@@ -13937,7 +13925,7 @@ function selectMathChapter(index) {
   const chList = getMathChapterList();
   const ch = chList[index];
   if (ch && ch.exercises && ch.exercises.length > 0) {
-    state.activeMathEx = ch.exercises[0].exercise;
+    state.activeMathEx = state.selectedClass === 'cls12' ? '0' : ch.exercises[0].exercise;
   }
   renderMathChapter(index);
 }
@@ -15348,6 +15336,141 @@ function renderMath3Textbook(ch) {
   </div>`;
 }
 
+function math12PrintedPageSource(page) {
+  const printedPage = Number(page);
+  const ranges = (typeof MATH_12_PRINTED_PAGE_SOURCES !== 'undefined')
+    ? MATH_12_PRINTED_PAGE_SOURCES : [];
+  const segment = ranges.find(range => printedPage >= range.start && printedPage <= range.end);
+  if (!segment) return null;
+  const part = (MATH_12_BOOK_PARTS || []).find(item => item.number === segment.part);
+  if (!part) return null;
+  return { printedPage, pdfPage: segment.pdfPageStart + printedPage - segment.start, part, segment };
+}
+
+function math12FirstAvailablePage(start, end, direction) {
+  const step = direction < 0 ? -1 : 1;
+  for (let page = start; direction < 0 ? page >= end : page <= end; page += step) {
+    if (math12PrintedPageSource(page)) return page;
+  }
+  return null;
+}
+
+function math12PageControlOptions(start, end, selectedPage) {
+  const options = [];
+  for (let page = start; page <= end; page++) {
+    const source = math12PrintedPageSource(page);
+    options.push(`<option value="${page}" ${page === selectedPage ? 'selected' : ''} ${source ? '' : 'disabled'}>${source ? `Printed page ${page}` : `Printed page ${page} · scan missing`}</option>`);
+  }
+  return options.join('');
+}
+
+function renderMath12BookReader(ch, tabName) {
+  const fullBook = tabName === 'textbook';
+  const start = fullBook ? 1 : Number(ch.pageStart);
+  const end = fullBook ? MATH_12_BOOK_META.printedPageEnd : Number(ch.pageEnd);
+  const requestedPage = fullBook
+    ? 1
+    : tabName === 'examples'
+      ? Number(ch.examplePageStart || ch.pageStart)
+      : tabName === 'exercises'
+        ? Number(ch.exercisePageStart || ch.pageStart)
+        : Number(ch.pageStart);
+  const firstPage = math12PrintedPageSource(requestedPage)
+    ? requestedPage
+    : math12FirstAvailablePage(requestedPage, end, 1);
+  const source = firstPage == null ? null : math12PrintedPageSource(firstPage);
+  const previousPage = firstPage == null ? null : math12FirstAvailablePage(firstPage - 1, start, -1);
+  const followingPage = firstPage == null ? null : math12FirstAvailablePage(firstPage + 1, end, 1);
+  const missing = (MATH_12_BOOK_META.missingPrintedPages || [])
+    .filter(range => range.start <= end && range.end >= start);
+  const tabCopy = {
+    lesson: 'Read this unit in the original printed order. The page scans retain the book’s equations, diagrams, graphs, examples and exercises.',
+    examples: 'Worked examples and their solutions appear in the original book pages below, in printed order and with their original figures.',
+    exercises: 'Textbook exercises appear in the original book pages below, in printed order and with the printed question layout.',
+    textbook: 'Browse the original scanned textbook by its printed page number. The page reader uses the supplied PDF parts in book order.'
+  }[tabName] || '';
+  const missingNote = missing.length
+    ? `<div role="note" style="background:#fff7ed;border:1px solid #fdba74;color:#9a3412;border-radius:9px;padding:.75rem .9rem;margin:.75rem 0;line-height:1.55;">The supplied scans are missing printed pages ${missing.map(range => `${range.start}–${range.end}`).join(', ')}. The reader skips this gap and continues at the next available scanned page.</div>`
+    : '';
+  const endNote = fullBook
+    ? `<div style="color:#64748b;font-size:.82rem;margin-top:.55rem;">The available numbered scans end at printed page ${MATH_12_BOOK_META.printedPageEnd}.</div>`
+    : '';
+  const pageRangeLabel = fullBook ? 'Printed pages 1–349' : ch.pageRange;
+  const sourceNote = source
+    ? `Showing ${source.part.label}, PDF page ${source.pdfPage} · printed page ${firstPage}`
+    : 'No scan is available for this printed page range.';
+  const iframe = source
+    ? `<iframe id="math12BookFrame" title="${fullBook ? 'Scanned Class 12 mathematics book' : `Unit ${ch.number} scanned textbook pages`}" src="${source.part.url}#page=${source.pdfPage}&zoom=page-fit" style="display:block;width:100%;height:min(78vh,900px);min-height:540px;border:1px solid #cbd5e1;border-radius:10px;background:#fff;" loading="lazy"></iframe>`
+    : `<div style="padding:2rem;text-align:center;background:#fff;border:1px solid #e2e8f0;border-radius:10px;color:#64748b;">No scanned page is available for this unit.</div>`;
+
+  state.math12ReaderRange = { start, end };
+  state.math12CurrentPage = firstPage;
+  return `
+    <section class="math12-scanned-book">
+      <div class="math-toolbar" style="align-items:flex-start;gap:1rem;">
+        <div style="min-width:220px;">
+          <h3 style="margin:0 0 .25rem;color:#0f172a;font-size:1.12rem;">${fullBook ? 'Original scanned textbook' : `${tabName === 'examples' ? 'Worked examples' : tabName === 'exercises' ? 'Textbook exercises' : `Unit ${ch.number} · ${ch.title}`}`}</h3>
+          <span style="color:#64748b;font-size:.85rem;">${pageRangeLabel} · ${tabCopy}</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:.45rem;">
+          <button type="button" class="math-toolbar-btn math12-page-step" data-direction="-1" onclick="stepMath12PrintedPage(-1)" ${previousPage == null ? 'disabled' : ''}>← Previous</button>
+          <label for="math12PrintedPageSelect" style="font-size:.84rem;color:#334155;font-weight:650;">Go to</label>
+          <select id="math12PrintedPageSelect" onchange="openMath12PrintedPage(this.value)" style="max-width:220px;padding:.45rem .55rem;border:1px solid #cbd5e1;border-radius:7px;background:#fff;">
+            ${math12PageControlOptions(start, end, firstPage)}
+          </select>
+          <button type="button" class="math-toolbar-btn math12-page-step" data-direction="1" onclick="stepMath12PrintedPage(1)" ${followingPage == null ? 'disabled' : ''}>Next →</button>
+          ${source ? `<a id="math12OpenPageLink" class="math-toolbar-btn" href="${source.part.url}#page=${source.pdfPage}&zoom=page-fit" target="_blank" rel="noopener">Open page</a>` : ''}
+        </div>
+      </div>
+      ${missingNote}
+      <div id="math12PageLabel" style="font-size:.8rem;color:#64748b;margin:0 0 .55rem;">${sourceNote}</div>
+      ${iframe}
+      ${endNote}
+    </section>`;
+}
+
+function openMath12PrintedPage(page) {
+  const nextPage = Number(page);
+  const range = state.math12ReaderRange;
+  const source = math12PrintedPageSource(nextPage);
+  if (!range || nextPage < range.start || nextPage > range.end || !source) return;
+  const frame = $('math12BookFrame');
+  if (frame) frame.src = `${source.part.url}#page=${source.pdfPage}&zoom=page-fit`;
+  const label = $('math12PageLabel');
+  if (label) label.textContent = `Showing ${source.part.label}, PDF page ${source.pdfPage} · printed page ${nextPage}`;
+  const openLink = $('math12OpenPageLink');
+  if (openLink) openLink.href = `${source.part.url}#page=${source.pdfPage}&zoom=page-fit`;
+  state.math12CurrentPage = nextPage;
+  const selector = $('math12PrintedPageSelect');
+  if (selector) selector.value = String(nextPage);
+  const buttons = document.querySelectorAll('.math12-page-step');
+  buttons.forEach(button => {
+    const direction = Number(button.dataset.direction);
+    button.disabled = math12FirstAvailablePage(nextPage + direction, direction < 0 ? range.start : range.end, direction) == null;
+  });
+}
+
+function stepMath12PrintedPage(direction) {
+  const range = state.math12ReaderRange;
+  if (!range) return;
+  const current = Number(state.math12CurrentPage || range.start);
+  const next = math12FirstAvailablePage(current + direction, direction < 0 ? range.start : range.end, direction);
+  if (next != null) openMath12PrintedPage(next);
+}
+
+function renderMath12Lesson(ch) {
+  const sectionList = (ch.sections || []).map(section => `
+    <li style="padding:.36rem 0;color:#1e293b;line-height:1.45;">
+      <span style="display:inline-block;min-width:3.4rem;color:#0369a1;font-weight:750;">${section.id}</span>${section.title}
+    </li>`).join('');
+  return `
+    <div class="math-topic-card" style="margin-bottom:1rem;">
+      <h3 style="margin:0 0 .5rem;color:#0f172a;font-size:1.05rem;">Lessons in printed order</h3>
+      <ol style="margin:0;padding-left:1.15rem;">${sectionList}</ol>
+    </div>
+    ${renderMath12BookReader(ch, 'lesson')}`;
+}
+
 function switchMathTab(tabName, skipScroll) {
   state.activeMathTab = tabName;
   document.querySelectorAll('.math-top-tab, .math-tab-btn, .bio-tab-btn').forEach(btn =>
@@ -15441,15 +15564,23 @@ function renderMathChapter(index) {
   const totalExercises = ch.exercises ? ch.exercises.length : 0;
   const totalExamples = ch.workedExamples ? ch.workedExamples.length : 0;
   const totalSections = ch.sections ? ch.sections.length : 0;
-  const comprehensiveSLOs = (typeof getComprehensiveChapterSLOBank === 'function') 
+  const comprehensiveSLOs = (typeof getComprehensiveChapterSLOBank === 'function')
     ? getComprehensiveChapterSLOBank(ch) 
     : (ch.slos || {});
   const totalSLOs = ((comprehensiveSLOs.mcqs ? comprehensiveSLOs.mcqs.length : 0) +
                      (comprehensiveSLOs.shortQuestions ? comprehensiveSLOs.shortQuestions.length : 0) +
-                     (comprehensiveSLOs.longQuestions ? comprehensiveSLOs.longQuestions.length : 0)) || 63;
-  const pdfFile = (state.selectedClass === 'cls10')
-    ? 'file://DESKTOP-R2HQSAV/SpaceBook/10th Maths/PDF/10th Maths.pdf'
-    : 'file://DESKTOP-R2HQSAV/SpaceBook/9th MTHA/PDF/9th maaths.pdf';
+                     (comprehensiveSLOs.longQuestions ? comprehensiveSLOs.longQuestions.length : 0)) || (state.selectedClass === 'cls12' ? 0 : 63);
+  if (state.selectedClass === 'cls12' && !['lesson', 'examples', 'exercises', 'slos', 'formulas'].includes(state.activeMathTab)) {
+    state.activeMathTab = 'lesson';
+  }
+  const mathTabs = `
+      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'lesson' ? 'active' : ''}" data-tab="lesson" onclick="switchMathTab('lesson')">📖 1. Lessons (${totalSections})</button>
+      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'examples' ? 'active' : ''}" data-tab="examples" onclick="switchMathTab('examples')">💡 2. Examples (${totalExamples})</button>
+      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'exercises' ? 'active' : ''}" data-tab="exercises" onclick="switchMathTab('exercises')">✍️ 3. Exercises (${totalExercises})</button>
+      ${state.selectedClass === 'cls12' && totalSLOs === 0 ? '' : `<button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'slos' ? 'active' : ''}" data-tab="slos" onclick="switchMathTab('slos')">🎯 4. Board SLO Based &amp; MCQs, SQs and LQs (${totalSLOs})</button>`}
+      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'formulas' ? 'active' : ''}" data-tab="formulas" onclick="switchMathTab('formulas')">📐 5. Formulas &amp; Summary</button>
+      ${state.selectedClass === 'cls3' ? `<button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'textbook' ? 'active' : ''}" data-tab="textbook" onclick="switchMathTab('textbook')">📚 Complete Book Text</button>` : ''}
+    `;
 
   area.innerHTML = `
     <!-- Sleek Chapter Header Bar with Unit, Chapter Name, Urdu Meaning -->
@@ -15464,24 +15595,7 @@ function renderMathChapter(index) {
     </div>
 
     <!-- Chapter Section Navigation Tabs with Updated Accurate Labels -->
-    <div class="math-nav-tabs">
-      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'lesson' ? 'active' : ''}" data-tab="lesson" onclick="switchMathTab('lesson')">
-        📖 1. Lessons (${totalSections})
-      </button>
-      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'examples' ? 'active' : ''}" data-tab="examples" onclick="switchMathTab('examples')">
-        💡 2. Examples (${totalExamples})
-      </button>
-      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'exercises' ? 'active' : ''}" data-tab="exercises" onclick="switchMathTab('exercises')">
-        ✍️ 3. Exercises (${totalExercises})
-      </button>
-      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'slos' ? 'active' : ''}" data-tab="slos" onclick="switchMathTab('slos')">
-        🎯 4. Board SLO Based &amp; MCQs, SQs and LQs (${totalSLOs})
-      </button>
-      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'formulas' ? 'active' : ''}" data-tab="formulas" onclick="switchMathTab('formulas')">
-        📐 5. Formulas &amp; Summary
-      </button>
-      ${state.selectedClass === 'cls3' || state.selectedClass === 'cls12' ? `<button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'textbook' ? 'active' : ''}" data-tab="textbook" onclick="switchMathTab('textbook')">📚 Complete Book Text</button>` : ''}
-    </div>
+    <div class="math-nav-tabs">${mathTabs}</div>
 
     <!-- Main Dynamic Tab Content (with internal smooth scrollbar) -->
     <div id="mathTabContent" class="math-tab-content-scroll"></div>
@@ -15512,11 +15626,13 @@ function renderMathLesson(ch) {
       <div class="math-accordion-body" style="display:none;margin-top:1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
         <!-- Horizontal Sub-Tabs immediately below topic title -->
         <div class="topic-sub-tabs-bar" data-topic="${sec.id}">
-          <button class="topic-sub-tab-btn active" data-subtab="english" onclick="switchMathTopicSubTab('${sec.id}', 'english', this)">📖 English</button>
-          <button class="topic-sub-tab-btn" data-subtab="urdu" onclick="switchMathTopicSubTab('${sec.id}', 'urdu', this)">🌐 Urdu</button>
-          <button class="topic-sub-tab-btn" data-subtab="video" onclick="switchMathTopicSubTab('${sec.id}', 'video', this)">🎥 Video</button>
-          <button class="topic-sub-tab-btn" data-subtab="exercise" onclick="switchMathTopicSubTab('${sec.id}', 'exercise', this)">✍️ Topic Exercise</button>
-          <button class="topic-sub-tab-btn" data-subtab="slos" onclick="switchMathTopicSubTab('${sec.id}', 'slos', this)">🎯 Topic SLOs</button>
+          ${state.selectedClass === 'cls12'
+            ? `<button class="topic-sub-tab-btn active" data-subtab="english" onclick="switchMathTopicSubTab('${sec.id}', 'english', this)">📖 Lesson</button>`
+            : `<button class="topic-sub-tab-btn active" data-subtab="english" onclick="switchMathTopicSubTab('${sec.id}', 'english', this)">📖 English</button>
+              <button class="topic-sub-tab-btn" data-subtab="urdu" onclick="switchMathTopicSubTab('${sec.id}', 'urdu', this)">🌐 Urdu</button>
+              <button class="topic-sub-tab-btn" data-subtab="video" onclick="switchMathTopicSubTab('${sec.id}', 'video', this)">🎥 Video</button>
+              <button class="topic-sub-tab-btn" data-subtab="exercise" onclick="switchMathTopicSubTab('${sec.id}', 'exercise', this)">✍️ Topic Exercise</button>
+              <button class="topic-sub-tab-btn" data-subtab="slos" onclick="switchMathTopicSubTab('${sec.id}', 'slos', this)">🎯 Topic SLOs</button>`}
         </div>
         ${(state.selectedClass === 'cls3' && typeof renderClass3MathDiagram === 'function' ? renderClass3MathDiagram(sec) : '') || renderMathDiagram(sec, ch.number) || renderPrimaryMathDiagram(state.selectedClass, ch.number, sec.id, sec)}
         <div id="math-topic-sub-content-${sec.id}" class="topic-sub-content">
@@ -15601,10 +15717,12 @@ function switchMathEx(exKey, activeCat) {
   const container = $("mathExerciseContent");
   if (!container || !ch || !ch.exercises) return;
 
-  const currentEx = ch.exercises.find(e => e.exercise === exKey) || ch.exercises[0];
+  const currentEx = state.selectedClass === 'cls12'
+    ? ch.exercises[Number(exKey)]
+    : ch.exercises.find(e => e.exercise === exKey) || ch.exercises[0];
   if (!currentEx) return;
   const visualSection = (ch.sections || []).find(sec => sec.id === exKey)
-    || (ch.sections || [])[ch.exercises.indexOf(currentEx)]
+    || (ch.sections || [])[state.selectedClass === 'cls12' ? Number(exKey) : ch.exercises.indexOf(currentEx)]
     || (ch.sections || [])[0];
 
   // Group problems by category
@@ -15615,7 +15733,7 @@ function switchMathEx(exKey, activeCat) {
     catMap[c].push(p);
   });
   const cats = Object.keys(catMap);
-  const keepPrintedOrder = state.selectedClass === 'cls10';
+  const keepPrintedOrder = state.selectedClass === 'cls10' || state.selectedClass === 'cls12';
   const selectedCat = keepPrintedOrder ? 'All' : (activeCat || 'All');
 
   const catTabsHtml = (!keepPrintedOrder && cats.length > 1) ? `
@@ -15636,10 +15754,10 @@ function switchMathEx(exKey, activeCat) {
     <div class="math-toolbar">
       <div>
         <h3 style="color:#0f172a;font-size:1.15rem;font-weight:800;margin:0 0 0.2rem 0;">
-          ${currentEx.title}
+          ${currentEx.title || 'Exercise'}
         </h3>
         <span style="color:#64748b;font-size:0.84rem;">
-          ${currentEx.problems.length} questions in printed order. Open a question to see its solution.
+          ${currentEx.problems.length} questions in printed order. Open a question to view the textbook material.
         </span>
       </div>
       <div style="display:flex;align-items:center;gap:0.5rem;">
@@ -15670,11 +15788,11 @@ function switchMathEx(exKey, activeCat) {
             ${Array.isArray(p.options) && p.options.length ? `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.45rem;margin:0 0 .85rem;padding:.65rem .8rem;background:#fff;border:1px solid #cbd5e1;border-radius:8px;">${p.options.map(option => `<div style="display:flex;align-items:flex-start;gap:.55rem;padding:.3rem .2rem;line-height:1.5;"><span aria-hidden="true" style="width:14px;height:14px;flex:0 0 14px;border:1.5px solid #475569;border-radius:50%;margin-top:3px;"></span><span>${option}</span></div>`).join('')}</div>` : ''}
             ${renderMathDiagram(p, ch.number) || (visualSection && (state.selectedClass === 'cls1' || state.selectedClass === 'cls2') ? renderPrimaryMathDiagram(state.selectedClass, ch.number, visualSection.id, p) : '')}
             <div class="math-step-box" style="white-space:pre-line;line-height:1.8;margin-bottom:0.85rem;">
-              <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">Solution:</div>
-              ${p.solution}
+              <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">${p.solution || p.answer ? 'Solution:' : 'Source solution not included:'}</div>
+              ${p.solution || p.answer ? (p.solution || p.answer) : 'This source transcription contains the question only.'}
             </div>
             <div class="math-result-pill">
-              <strong>Answer:</strong> ${p.answer}
+              ${p.answer ? `<strong>Answer:</strong> ${p.answer}` : ''}
             </div>
           </div>
         </div>
@@ -15690,22 +15808,34 @@ function switchMathEx(exKey, activeCat) {
 
 function renderMathExercises(ch) {
   if (!ch.exercises || ch.exercises.length === 0) {
-    return `<div style="padding:2.5rem;text-align:center;background:#fff;border-radius:12px;border:1px solid var(--border);">Textbook exercises for Unit ${ch.number} will be displayed here.</div>`;
+    const message = state.selectedClass === 'cls12' && Number(ch.number) === 1
+      ? 'The printed textbook has no separate exercise set for Unit 1.'
+      : `Textbook exercises for Unit ${ch.number} will be displayed here.`;
+    return `<div style="padding:2.5rem;text-align:center;background:#fff;border-radius:12px;border:1px solid var(--border);">${message}</div>`;
   }
 
-  const activeEx = (ch.exercises.some(e => e.exercise === state.activeMathEx))
-    ? state.activeMathEx
-    : (ch.exercises[0] ? ch.exercises[0].exercise : '1.1');
+  const isClass12 = state.selectedClass === 'cls12';
+  const activeEx = isClass12
+    ? (Number.isInteger(Number(state.activeMathEx)) && Number(state.activeMathEx) >= 0 && Number(state.activeMathEx) < ch.exercises.length ? String(state.activeMathEx) : '0')
+    : ((ch.exercises.some(e => e.exercise === state.activeMathEx)) ? state.activeMathEx : (ch.exercises[0] ? ch.exercises[0].exercise : '1.1'));
 
   const subTabsHtml = `
     <div class="math-sub-tabs">
-      ${ch.exercises.map(ex => `
-        <button class="math-sub-tab-btn ${ex.exercise === activeEx ? 'active' : ''}"
-                data-ex="${ex.exercise}"
-                onclick="switchMathEx('${ex.exercise}')">
-          ${ex.exercise.startsWith('Review') ? ('🌟 ' + ex.exercise) : 'Ex ' + ex.exercise}
+      ${ch.exercises.map((ex, index) => {
+        const key = isClass12 ? String(index) : ex.exercise;
+        const rawTitle = ex.title || ex.exercise || 'Exercise';
+        const sectionMarker = (ex.problems || []).map(problem => String(problem.question || '').trim()).find(question => /^\d+\.\d+$/.test(question));
+        const title = isClass12 && rawTitle === 'Exercise'
+          ? (sectionMarker ? `Exercise ${sectionMarker}` : `Exercise set ${index + 1}`)
+          : rawTitle;
+        const displayTitle = title.startsWith('Exercise ') ? title.slice(9) : title;
+        return `
+        <button class="math-sub-tab-btn ${key === activeEx ? 'active' : ''}"
+                data-ex="${key}"
+                onclick="switchMathEx('${key}')">
+          ${displayTitle.startsWith('Review') ? ('🌟 ' + displayTitle) : (displayTitle.startsWith('Ex ') ? displayTitle : 'Ex ' + displayTitle)}
         </button>
-      `).join('')}
+      `;}).join('')}
     </div>
     <div id="mathExerciseContent"></div>
   `;
@@ -19112,7 +19242,7 @@ function getScienceSectionParagraphsWithTranslations(sec, ch, subjKey) {
   }
 
   if (rawParas.length === 0) {
-    rawParas = [sec.title || 'Science textbook lesson topic.'];
+    rawParas = [sec.title || sec.name || sec.heading || 'Science textbook lesson topic.'];
   }
 
   // 3. For each paragraph, map authentic Urdu and Pashto translations
@@ -19191,8 +19321,8 @@ function renderScienceLessonSubContent(subjKey, ch, subTab) {
         <div class="science-lesson-cards-list">
           ${sections.map((sec, idx) => {
             const paras = getScienceSectionParagraphsWithTranslations(sec, ch, subjKey);
-            const secUrdu = paras.map(p => p.urdu).filter(Boolean).join('<br><br>') || (sec.urduTitle || '');
-            const secPashto = paras.map(p => p.pashto).filter(Boolean).join('<br><br>') || '';
+            const secUrdu = paras.map(p => p.urdu).filter(Boolean).join('<br><br>') || (sec.urduTitle || sec.headingUrdu || '');
+            const secPashto = paras.map(p => p.pashto).filter(Boolean).join('<br><br>') || (sec.headingPashto || sec.pashtoTitle || '');
 
             return `
               <div class="para-card math-topic-card" style="margin-bottom:1.5rem;padding:1.25rem;border:1px solid #e2e8f0;border-radius:10px;background:#ffffff;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
@@ -19200,8 +19330,8 @@ function renderScienceLessonSubContent(subjKey, ch, subTab) {
                   <div style="display:flex;align-items:center;gap:0.5rem;">
                     <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">Topic ${sec.sectionNum || sec.num || (idx + 1)}</span>
                     <h4 style="color:#0f172a;font-size:1.05rem;font-weight:700;margin:0;">
-                      ${sec.title || sec.name}
-                      ${sec.urduTitle ? `<span style="font-family:'Jameel Noori Nastaleeq',serif;margin-left:0.5rem;color:#15803d;font-size:1.15rem;font-weight:600;">(${sec.urduTitle})</span>` : ''}
+                      ${sec.title || sec.name || sec.heading || ''}
+                      ${(sec.urduTitle || sec.headingUrdu) ? `<span style="font-family:'Jameel Noori Nastaleeq',serif;margin-left:0.5rem;color:#15803d;font-size:1.15rem;font-weight:600;">(${sec.urduTitle || sec.headingUrdu})</span>` : ''}
                     </h4>
                   </div>
                   <!-- Horizontal Language Sub-Tabs: English, Urdu, Pashto, All -->
