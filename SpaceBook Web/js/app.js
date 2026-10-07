@@ -139,7 +139,10 @@ const dashHeaderSub   = () => $("dash-sub");
 // ─── Init ────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
   updateHeaderStats();
-  renderHome();
+  const hash = (window.location.hash || "").replace("#", "");
+  const startPage = (hash && ["home", "subjects", "tests-preps", "papers", "study-plan"].includes(hash)) ? hash : "subjects";
+  setActiveNav(startPage);
+  renderPage(startPage);
   setupNavListeners();
   setupMobileMenu();
   setupModal();
@@ -616,28 +619,35 @@ function renderClasses() {
     <div class="classes-universe-wrapper">
       <!-- 1. Joyful Academic Levels Stage Bar -->
       <div class="classes-stage-bar">
-        <div class="csb-left">
-          <span class="csb-icon">🎓</span>
-          <span class="csb-title">KPK Academic Levels · Choose Your Grade to Explore</span>
-        </div>
-        <span class="csb-pill">Play Group ➔ Class 12 · 15 Grades</span>
+        <img class="classes-stage-banner-img" src="banner_kpk_academic.png" alt="KPK Academic Levels · Choose Your Grade to Explore">
       </div>
 
       <!-- 2. Full-cover class cards -->
       <div class="classes-jewel-grid">
         ${(() => {
           const clsCardCoverMap = {
-            'cls-pg': 'Play Group.jpg', 'cls-nur': 'Nursery.jpg', 'cls-kg': 'Play Group.jpg',
-            'cls1': '1.jpg', 'cls2': '2.jpg', 'cls3': '3.jpg', 'cls4': '4.jpg',
-            'cls5': '5.jpg', 'cls6': '6.jpg', 'cls7': '7.jpg', 'cls8': '8.jpg',
-            'cls9': '9.jpg', 'cls10': '10.jpg', 'cls11': '11.jpg', 'cls12': '12.jpg'
+            'cls-pg': 'PG.png',
+            'cls-nur': 'Nursery.png',
+            'cls-kg': 'KG.png',
+            'cls1': '1.png',
+            'cls2': '2.png',
+            'cls3': '3.png',
+            'cls4': '4.png',
+            'cls5': '5.png',
+            'cls6': '6.png',
+            'cls7': '7.png',
+            'cls8': '8.png',
+            'cls9': '9.png',
+            'cls10': '10.png',
+            'cls11': '11.png',
+            'cls12': '12.png'
           };
           return DATA.classes.map(c => {
             const clsCoverFile = clsCardCoverMap[c.id];
             if (!clsCoverFile) return '';
             return `
             <button type="button" class="class-jewel-card" onclick="goToSubjects('${c.id}')" aria-label="Open ${c.name}">
-              <img class="cjc-cover-bg" src="../Books/Cover Pages/Classes Cards/${clsCoverFile}" alt="${c.name} textbook cover" loading="lazy">
+              <img class="cjc-cover-bg" src="../Books/Cover Pages/Classes Cards/Another-Look/${clsCoverFile}" alt="${c.name} textbook cover" loading="lazy">
             </button>`;
           }).join("");
         })()}
@@ -1200,6 +1210,11 @@ function goToSubjects(classId) {
     "cls9-isl": "Books/9th/Gemini_Generated_Image_75g27n75g27n75g2.jfif",
     "cls9-comp": "Books/9th/Gemini_Generated_Image_vtqsonvtqsonvtqs.jfif",
     "cls9-pakstudy": "Books/9th/Gemini_Generated_Image_db55esdb55esdb55.jfif",
+    "cls9-sci": "9th General Science.jpg",
+    "cls9-hpe": "9th  HPE.jpg",
+    "cls9-drawing": "Books/9th/Gemini_Generated_Image_nn0i77nn0i77nn0i.jfif",
+    "cls9-islopt": "Books/9th/Gemini_Generated_Image_5i15sy5i15sy5i15.jfif",
+    "cls9-quran": "Books/9th/Gemini_Generated_Image_wguwwowguwwowguw.jfif",
     "cls10-math": "Books/10th/Gemini_Generated_Image_vyx6guvyx6guvyx6.jfif",
     "cls10-phy": "Books/10th/Gemini_Generated_Image_4h1fv24h1fv24h1f.jfif",
     "cls10-chem": "Books/10th/Gemini_Generated_Image_gzpnyrgzpnyrgzpn.jfif",
@@ -1349,22 +1364,22 @@ function openSubject(classId, subjId) {
   } else if (subj.hasEcon || subjId === 'cls12-econ') {
     state.activeSubject = "econ";
     openSubjectWorkspace(classId, "econ", subj);
-  } else if (subj.hasHpe || subjId === 'cls12-hpe' || subjId === 'cls10-hpe') {
+  } else if (subj.hasHpe || subjId === 'cls12-hpe' || subjId === 'cls10-hpe' || subjId === 'cls9-hpe') {
     state.activeSubject = "hpe";
     openSubjectWorkspace(classId, "hpe", subj);
-  } else if (subj.hasIslopt || subjId === 'cls12-islopt' || subjId === 'cls10-islopt') {
+  } else if (subj.hasIslopt || subjId === 'cls12-islopt' || subjId === 'cls10-islopt' || subjId === 'cls9-islopt') {
     state.activeSubject = "islopt";
     openSubjectWorkspace(classId, "islopt", subj);
   } else if (subj.hasIslhist || subjId === 'cls12-islhist') {
     state.activeSubject = "islhist";
     openSubjectWorkspace(classId, "islhist", subj);
-  } else if (subj.hasQuran || subjId === 'cls12-quran' || subjId === 'cls10-quran') {
+  } else if (subj.hasQuran || subjId === 'cls12-quran' || subjId === 'cls10-quran' || subjId === 'cls9-quran') {
     state.activeSubject = "quran";
     openSubjectWorkspace(classId, "quran", subj);
-  } else if (subj.hasGenSci || subjId === 'cls10-sci') {
+  } else if (subj.hasGenSci || subjId === 'cls10-sci' || subjId === 'cls9-sci') {
     state.activeSubject = "sci";
     openSubjectWorkspace(classId, "sci", subj);
-  } else if (subj.hasDrawing || subjId === 'cls10-drawing') {
+  } else if (subj.hasDrawing || subjId === 'cls10-drawing' || subjId === 'cls9-drawing') {
     state.activeSubject = "drawing";
     openSubjectWorkspace(classId, "drawing", subj);
   } else {
@@ -14530,6 +14545,10 @@ function renderMathDiagram(item, chapterNumber) {
       }
       return fig(svg,g.title||"Coordinate plane and terminal side");
     }
+    if (g.type === "quarter-circle") {
+      const content = '<path d="M92 218 L92 66 A152 152 0 0 1 396 218 Z" fill="#dbeafe" fill-opacity=".7" stroke="#2563eb" stroke-width="2.5"/><line class="math-diagram-axis" x1="75" y1="218" x2="415" y2="218"/><line class="math-diagram-axis" x1="92" y1="235" x2="92" y2="48"/><text x="245" y="248" text-anchor="middle" class="math-diagram-label">x</text><text x="80" y="58" text-anchor="middle" class="math-diagram-label">y</text><text x="249" y="115" text-anchor="middle" class="math-diagram-label">y = √(1 − x²)</text><text x="254" y="198" text-anchor="middle" class="math-diagram-label">' + safe(g.rule || "Quarter-circle") + ' rule, n=' + safe(g.n || 4) + '</text>';
+      return figure(content);
+    }
     if (g.type === "right-triangle") {
       const x1=104,y1=214,x2=104,y2=68,x3=372,y3=214;
       let svg='<polygon points="'+x1+','+y1+' '+x2+','+y2+' '+x3+','+y3+'" fill="#dbeafe" fill-opacity=".5" stroke="#2563eb" stroke-width="2.5"/>';
@@ -17402,9 +17421,13 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];
   }
   if (subjKey === 'sci') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && typeof GENERAL_SCIENCE_10_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_10_DATA)) return GENERAL_SCIENCE_10_DATA;
+    const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    if (isCls9 && typeof GENERAL_SCIENCE_9_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_9_DATA)) return GENERAL_SCIENCE_9_DATA;
     if (typeof GENERAL_SCIENCE_10_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_10_DATA)) return GENERAL_SCIENCE_10_DATA;
     if (typeof GENERAL_SCIENCE_9_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_9_DATA)) return GENERAL_SCIENCE_9_DATA;
-    return (typeof DATA !== 'undefined' && DATA && (DATA.genSci10Chapters || DATA.genSci9Chapters)) ? (DATA.genSci10Chapters || DATA.genSci9Chapters) : [];
+    return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.genSci10Chapters : DATA.genSci9Chapters)) ? (isCls10 ? DATA.genSci10Chapters : DATA.genSci9Chapters) : [];
   }
   if (subjKey === 'civics') {
     if (typeof CIVICS_12_DATA !== 'undefined') return CIVICS_12_DATA;
@@ -17417,22 +17440,25 @@ function getSubjectChapterList(subjKey, classId) {
   if (subjKey === 'hpe') {
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof HPE_10_DATA !== 'undefined' && Array.isArray(HPE_10_DATA)) return HPE_10_DATA;
+    const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    if (isCls9 && typeof HPE_9_DATA !== 'undefined' && Array.isArray(HPE_9_DATA)) return HPE_9_DATA;
     if (typeof HPE_12_DATA !== 'undefined') return HPE_12_DATA;
-    if (typeof HPE_9_DATA !== 'undefined') return HPE_9_DATA;
-    return (typeof DATA !== 'undefined' && DATA && (DATA.hpe10Chapters || DATA.hpe12Chapters || DATA.hpe9Chapters)) ? (DATA.hpe10Chapters || DATA.hpe12Chapters || DATA.hpe9Chapters) : [];
+    return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.hpe10Chapters : (isCls9 ? DATA.hpe9Chapters : DATA.hpe12Chapters))) ? (isCls10 ? DATA.hpe10Chapters : (isCls9 ? DATA.hpe9Chapters : DATA.hpe12Chapters)) : [];
   }
   if (subjKey === 'drawing') {
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof DRAWING_10_DATA !== 'undefined' && Array.isArray(DRAWING_10_DATA)) return DRAWING_10_DATA;
-    if (typeof DRAWING_9_DATA !== 'undefined') return DRAWING_9_DATA;
-    return (typeof DATA !== 'undefined' && DATA && (DATA.drawing10Chapters || DATA.drawing9Chapters)) ? (DATA.drawing10Chapters || DATA.drawing9Chapters) : [];
+    const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    if (isCls9 && typeof DRAWING_9_DATA !== 'undefined' && Array.isArray(DRAWING_9_DATA)) return DRAWING_9_DATA;
+    return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.drawing10Chapters : DATA.drawing9Chapters)) ? (isCls10 ? DATA.drawing10Chapters : DATA.drawing9Chapters) : [];
   }
   if (subjKey === 'islopt') {
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof ISLAMIAT_IKHTIARI_10_DATA !== 'undefined' && Array.isArray(ISLAMIAT_IKHTIARI_10_DATA)) return ISLAMIAT_IKHTIARI_10_DATA;
+    const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    if (isCls9 && typeof ISLAMIAT_IKHTIARI_9_DATA !== 'undefined' && Array.isArray(ISLAMIAT_IKHTIARI_9_DATA)) return ISLAMIAT_IKHTIARI_9_DATA;
     if (typeof ISLAMIAT_OPT_12_DATA !== 'undefined') return ISLAMIAT_OPT_12_DATA;
-    if (typeof ISLAMIAT_IKHTIARI_9_DATA !== 'undefined') return ISLAMIAT_IKHTIARI_9_DATA;
-    return (typeof DATA !== 'undefined' && DATA && (DATA.islopt10Chapters || DATA.islamiatOpt12Chapters || DATA.islopt9Chapters)) ? (DATA.islopt10Chapters || DATA.islamiatOpt12Chapters || DATA.islopt9Chapters) : [];
+    return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.islopt10Chapters : (isCls9 ? DATA.islopt9Chapters : DATA.islamiatOpt12Chapters))) ? (isCls10 ? DATA.islopt10Chapters : (isCls9 ? DATA.islopt9Chapters : DATA.islamiatOpt12Chapters)) : [];
   }
   if (subjKey === 'islhist') {
     if (typeof ISLAMIC_HISTORY_12_DATA !== 'undefined') return ISLAMIC_HISTORY_12_DATA;
@@ -17441,9 +17467,10 @@ function getSubjectChapterList(subjKey, classId) {
   if (subjKey === 'quran') {
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof MUTALIA_QURAN_10_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_10_DATA)) return MUTALIA_QURAN_10_DATA;
+    const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    if (isCls9 && typeof MUTALIA_QURAN_9_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_9_DATA)) return MUTALIA_QURAN_9_DATA;
     if (typeof QURAN_12_DATA !== 'undefined') return QURAN_12_DATA;
-    if (typeof MUTALIA_QURAN_9_DATA !== 'undefined') return MUTALIA_QURAN_9_DATA;
-    return (typeof DATA !== 'undefined' && DATA && (DATA.quran10Chapters || DATA.quran12Chapters || DATA.quran9Chapters)) ? (DATA.quran10Chapters || DATA.quran12Chapters || DATA.quran9Chapters) : [];
+    return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.quran10Chapters : (isCls9 ? DATA.quran9Chapters : DATA.quran12Chapters))) ? (isCls10 ? DATA.quran10Chapters : (isCls9 ? DATA.quran9Chapters : DATA.quran12Chapters)) : [];
   }
   return [];
 }
@@ -18854,11 +18881,12 @@ function switchSubjectExCategory(subjKey, catKey) {
 
 function renderSubjectExProblems(subjKey, ch, catKey) {
   const ex = ch.exercise || ch.textbookExercise || {};
+  let res = '';
 
   if (catKey === 'mcqs' || catKey === 'all') {
     const mcqs = ex.textbookMcqs || ex.mcqs || [];
     if (mcqs.length > 0) {
-      return `
+      const chunk = `
         <div style="margin-bottom:1.25rem;">
           <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
             Textbook Multiple Choice Questions (${mcqs.length}) — Click any option to verify:
@@ -18904,13 +18932,15 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
             `;
           }).join('')}
         </div>`;
+      if (catKey === 'mcqs') return chunk;
+      res += chunk;
     }
   }
 
   if (catKey === 'sqs' || catKey === 'all') {
     const sqs = ex.comprehension || ex.shortQuestions || ex.sqs || ex.crqs || [];
     if (sqs.length > 0) {
-      return `
+      const chunk = `
         <div>
           <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
             Textbook Short Questions (${sqs.length}) — Click to view complete solution:
@@ -18932,13 +18962,15 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
             </div>
           `).join('')}
         </div>`;
+      if (catKey === 'sqs') return chunk;
+      res += chunk;
     }
   }
 
   if (catKey === 'lqs' || catKey === 'all') {
     const lqs = ex.detailedQuestions || ex.longQuestions || ex.essayQuestions || ex.erqs || ch.longQuestions || [];
     if (lqs.length > 0) {
-      return `
+      const chunk = `
         <div>
           <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
             Textbook Detailed &amp; Long Questions (${lqs.length}) — Click to view complete textbook solution:
@@ -18961,13 +18993,15 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
             </div>
           `).join('')}
         </div>`;
+      if (catKey === 'lqs') return chunk;
+      res += chunk;
     }
   }
 
   if (catKey === 'num' || catKey === 'all') {
     const numericals = ch.numericals || ex.numericals || [];
     if (numericals.length > 0) {
-      return `
+      const chunk = `
         <div>
           <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
             Solved Textbook Numericals (${numericals.length}) — Click to view calculation:
@@ -18990,13 +19024,15 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
             </div>
           `).join('')}
         </div>`;
+      if (catKey === 'num') return chunk;
+      res += chunk;
     }
   }
 
   if (catKey === 'activities' || catKey === 'all') {
     const activities = ex.activities || ex.practicalActivities || [];
     if (activities.length > 0) {
-      return `
+      const chunk = `
         <div>
           <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
             Textbook Practical Activities &amp; Demonstrations (${activities.length}):
@@ -19013,10 +19049,12 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
             </div>
           `).join('')}
         </div>`;
+      if (catKey === 'activities') return chunk;
+      res += chunk;
     }
   }
 
-  return `<div style="padding:2rem;text-align:center;background:#fff;border-radius:8px;color:#64748b;">Solved questions are loaded for this section.</div>`;
+  return res || `<div style="padding:2rem;text-align:center;background:#fff;border-radius:8px;color:#64748b;">Solved questions are loaded for this section.</div>`;
 }
 
 function switchSubjectSloCategory(subjKey, cat) {

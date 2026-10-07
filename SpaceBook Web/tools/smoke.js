@@ -3,7 +3,7 @@ const vm = require('vm');
 
 const path = require('path');
 const DIR = path.resolve(__dirname, '../js') + path.sep;
-const files = ['data.js', 'drawing_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'computer_10_data.js', 'general_science_10_data.js', 'hpe_10_data.js', 'drawing_10_data.js', 'islamiat_ikhtiari_10_data.js', 'mutalia_quran_10_data.js', 'math_1_data.js', 'math_2_data.js', 'math_3_book_text.js', 'math_3_data.js', 'math_primary_visuals.js', 'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js', 'islamyat_3_data.js', 'nazira_3_data.js', 'english_3_data.js', 'gk_3_data.js', 'pashto_3_data.js', 'math_12_data.js', 'phys_12_data.js', 'chem_12_data.js', 'stat_12_data.js', 'english_12_data.js', 'pakstudy_12_data.js', 'urdu_12_data.js', 'biology_12_data.js', 'computer_12_data.js', 'civics_12_data.js', 'economics_12_data.js', 'hpe_12_data.js', 'islamiat_ikhtiari_12_data.js', 'islamic_history_12_data.js', 'quran_12_data.js'];
+const files = ['data.js', 'drawing_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'data_chem.js', 'data_phys.js', 'data_eng.js', 'data_bio.js', 'data_comp.js', 'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js', 'pakstudy_data.js', 'general_science_9_data.js', 'hpe_9_data.js', 'drawing_9_data.js', 'islamiat_ikhtiari_9_data.js', 'mutalia_quran_9_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js', 'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'computer_10_data.js', 'general_science_10_data.js', 'hpe_10_data.js', 'drawing_10_data.js', 'islamiat_ikhtiari_10_data.js', 'mutalia_quran_10_data.js', 'math_1_data.js', 'math_2_data.js', 'math_3_book_text.js', 'math_3_data.js', 'math_primary_visuals.js', 'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js', 'islamyat_3_data.js', 'nazira_3_data.js', 'english_3_data.js', 'gk_3_data.js', 'pashto_3_data.js', 'math_12_data.js', 'phys_12_data.js', 'chem_12_data.js', 'stat_12_data.js', 'english_12_data.js', 'pakstudy_12_data.js', 'urdu_12_data.js', 'biology_12_data.js', 'computer_12_data.js', 'civics_12_data.js', 'economics_12_data.js', 'hpe_12_data.js', 'islamiat_ikhtiari_12_data.js', 'islamic_history_12_data.js', 'quran_12_data.js'];
 
 function makeEl(id) {
   const style = {};
@@ -146,6 +146,11 @@ run("REGRESSION comp switchSubjectTab('exercise')", `switchSubjectTab('comp', 'e
 run("REGRESSION comp switchSubjectTab('slos')", `switchSubjectTab('comp', 'slos', 0, 'cls9')`);
 run("REGRESSION comp switchSubjectTab('formulas')", `switchSubjectTab('comp', 'formulas', 0, 'cls9')`);
 run("REGRESSION comp selectSubjectChapter(1)", `selectSubjectChapter('comp', 1, 'cls9')`);
+run("CLASS 9 openSubject cls9 sci", `openSubject("cls9","cls9-sci")`);
+run("CLASS 9 openSubject cls9 hpe", `openSubject("cls9","cls9-hpe")`);
+run("CLASS 9 openSubject cls9 drawing", `openSubject("cls9","cls9-drawing")`);
+run("CLASS 9 openSubject cls9 islopt", `openSubject("cls9","cls9-islopt")`);
+run("CLASS 9 openSubject cls9 quran", `openSubject("cls9","cls9-quran")`);
 run("CLASS 10 openSubject cls10 eng", `openSubject("cls10","cls10-eng")`);
 run("CLASS 10 selectSubjectChapter eng 14", `selectSubjectChapter('eng', 14, 'cls10')`);
 run("CLASS 10 openSubject cls10 pakstudy", `openSubject("cls10","cls10-pakstudy")`);

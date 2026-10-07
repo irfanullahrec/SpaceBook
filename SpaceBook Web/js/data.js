@@ -104,7 +104,7 @@ const DATA = {
       "id": "cls9",
       "name": "Class 9",
       "emoji": "🏫",
-      "subjects": 9
+      "subjects": 14
     },
     {
       "id": "cls10",
@@ -281,6 +281,51 @@ const DATA = {
         "emoji": "🇵🇰",
         "chapters": 4,
         "hasPakStudy": true
+      },
+      {
+        "id": "cls9-sci",
+        "name": "General Science",
+        "nameUrdu": "جنرل سائنس",
+        "emoji": "🔬",
+        "chapters": 5,
+        "hasGenSci": true,
+        "hasGenSci9": true
+      },
+      {
+        "id": "cls9-hpe",
+        "name": "Health & Physical Education",
+        "nameUrdu": "صحت و جسمانی تعلیم",
+        "emoji": "🏃",
+        "chapters": 8,
+        "hasHpe": true,
+        "hasHpe9": true
+      },
+      {
+        "id": "cls9-drawing",
+        "name": "Art & Model Drawing",
+        "nameUrdu": "ڈرائنگ و ماڈل آرٹ",
+        "emoji": "🎨",
+        "chapters": 4,
+        "hasDrawing": true,
+        "hasDrawing9": true
+      },
+      {
+        "id": "cls9-islopt",
+        "name": "Islamiat Ikhtiari",
+        "nameUrdu": "اسلامیات اختیاری",
+        "emoji": "🕌",
+        "chapters": 7,
+        "hasIslopt": true,
+        "hasIslopt9": true
+      },
+      {
+        "id": "cls9-quran",
+        "name": "Mutalia-e-Quran",
+        "nameUrdu": "مطالعہ قرآن حکیم",
+        "emoji": "📖",
+        "chapters": 6,
+        "hasQuran": true,
+        "hasQuran9": true
       }
     ],
     "cls10": [
@@ -1810,6 +1855,111 @@ const DATA = {
       "icon": "🕌",
       "available": true,
       "action": "cls9-isl"
+    },
+    {
+      "id": "b-cls9-comp",
+      "classId": "cls9",
+      "className": "Class 9",
+      "subject": "Computer Science",
+      "title": "Computer Science 9th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "24.1 MB",
+      "pages": "Complete 7 Units",
+      "pdfPath": "Books/9th/9th Computer Science/pdf/9th Computer Science.pdf",
+      "color": "#0ea5e9",
+      "icon": "💻",
+      "available": true,
+      "action": "cls9-comp"
+    },
+    {
+      "id": "b-cls9-pakstudy",
+      "classId": "cls9",
+      "className": "Class 9",
+      "subject": "Pakistan Studies",
+      "title": "Pakistan Studies 9th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "19.5 MB",
+      "pages": "Complete 4 Chapters",
+      "pdfPath": "Books/9th/9th Pak Study/PDF/pakstudy1.pdf",
+      "color": "#16a34a",
+      "icon": "🇵🇰",
+      "available": true,
+      "action": "cls9-pakstudy"
+    },
+    {
+      "id": "b-cls9-sci",
+      "classId": "cls9",
+      "className": "Class 9",
+      "subject": "General Science",
+      "title": "General Science 9th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "58.2 MB",
+      "pages": "Complete 5 Units (1–5)",
+      "pdfPath": "Books/9th/9th General Science/PDF/General Science 9th book EM.pdf",
+      "color": "#14b8a6",
+      "icon": "🔬",
+      "available": true,
+      "action": "cls9-sci"
+    },
+    {
+      "id": "b-cls9-hpe",
+      "classId": "cls9",
+      "className": "Class 9",
+      "subject": "Health & Physical Education",
+      "title": "Health & Physical Education 9th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "16.4 MB",
+      "pages": "Complete 8 Units",
+      "pdfPath": "Books/9th/9th  HPE/PDF/HPE book UM 9th class KPK.pdf",
+      "color": "#f97316",
+      "icon": "🏃",
+      "available": true,
+      "action": "cls9-hpe"
+    },
+    {
+      "id": "b-cls9-drawing",
+      "classId": "cls9",
+      "className": "Class 9",
+      "subject": "Art & Model Drawing",
+      "title": "Art & Model Drawing 9th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "22.3 MB",
+      "pages": "Complete 4 Chapters",
+      "pdfPath": "Books/9th/9th Drawing/PDF/Art and Model Drawing 9th class kpk EM.pdf",
+      "color": "#ec4899",
+      "icon": "🎨",
+      "available": true,
+      "action": "cls9-drawing"
+    },
+    {
+      "id": "b-cls9-islopt",
+      "classId": "cls9",
+      "className": "Class 9",
+      "subject": "Islamiat Ikhtiari",
+      "title": "Islamiat Ikhtiari 9th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "34.7 MB",
+      "pages": "Complete 7 Units",
+      "pdfPath": "Books/9th/9th Islamiat Ikhtiari/PDF/Islamiat Ikhtiare book 9th kpk.pdf",
+      "color": "#10b981",
+      "icon": "🕌",
+      "available": true,
+      "action": "cls9-islopt"
+    },
+    {
+      "id": "b-cls9-quran",
+      "classId": "cls9",
+      "className": "Class 9",
+      "subject": "Mutalia-e-Quran",
+      "title": "Mutalia-e-Quran 9th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "41.8 MB",
+      "pages": "Complete 6 Surahs",
+      "pdfPath": "Books/9th/9th MQ/PDF/Mutlia_e_Quran_Book_KPK_9.pdf",
+      "color": "#8b5cf6",
+      "icon": "📖",
+      "available": true,
+      "action": "cls9-quran"
     },
     {
       "id": "b-cls10-isl",

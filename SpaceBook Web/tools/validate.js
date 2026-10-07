@@ -18,6 +18,7 @@ const DATA_FILES = [
   'data_comp.js',
   'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js',
   'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js',
+  'general_science_9_data.js', 'hpe_9_data.js', 'drawing_9_data.js', 'islamiat_ikhtiari_9_data.js', 'mutalia_quran_9_data.js',
   'computer_10_data.js', 'general_science_10_data.js', 'hpe_10_data.js', 'drawing_10_data.js', 'islamiat_ikhtiari_10_data.js', 'mutalia_quran_10_data.js',
   'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'math_2_data.js', 'math_3_book_text.js', 'math_3_data.js', 'math_primary_visuals.js',
   'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js',
@@ -70,7 +71,7 @@ vm.runInContext('for (const n of ' + JSON.stringify([...declared]) + ') { try { 
 const D = sb.DATA;
 if (D) {
   check('DATA registry present', true);
-  check('subjects cls9 = 9', D.subjects && D.subjects.cls9 && D.subjects.cls9.length === 9, 'got ' + (D.subjects ? D.subjects.cls9.length : 'n/a'));
+  check('subjects cls9 = 14', D.subjects && D.subjects.cls9 && D.subjects.cls9.length === 14, 'got ' + (D.subjects ? D.subjects.cls9.length : 'n/a'));
   check('subjects cls10 = 14', D.subjects && D.subjects.cls10 && D.subjects.cls10.length === 14, 'got ' + (D.subjects ? D.subjects.cls10.length : 'n/a'));
   check('Class 1 Drawing registered', D.subjects && D.subjects.cls1 && D.subjects.cls1.some(s => s.id === 'cls1-drawing' && s.hasDrawing));
   check('subject ids unique', (() => {
@@ -383,6 +384,10 @@ check('index.html loads Class 3 Islamyat and Nazira datasets', [
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 3 English, GK, Pashto datasets', [
   'js/english_3_data.js', 'js/gk_3_data.js', 'js/pashto_3_data.js'
+].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
+check('index.html loads Class 9 new datasets before app.js', [
+  'js/general_science_9_data.js', 'js/hpe_9_data.js',
+  'js/drawing_9_data.js', 'js/islamiat_ikhtiari_9_data.js', 'js/mutalia_quran_9_data.js'
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 10 new datasets before app.js', [
   'js/computer_10_data.js', 'js/general_science_10_data.js', 'js/hpe_10_data.js',
