@@ -2472,7 +2472,36 @@ const MATH_12_DATA = [
         "exercise": "Exercise 3.5",
         "title": "Exercise 3.5",
         "description": "",
-        "problems": [],
+        "problems": [
+          {
+            "id": "ex-3-5-q1",
+            "qNo": "1",
+            "question": "Use first principles to differentiate: (a) e^{2x}; (b) (1/3)e^{3x}; (c) (5/8)e^{x²}+1; (d) 2^x; (e) 4^{x+4}; (f) log(x+1); (g) log_a(x²); (h) sinh(2x).",
+            "solution": "The first-principle limit gives the standard exponential and logarithmic derivatives. (a) 2e^{2x}. (b) e^{3x}. (c) (5/4)xe^{x²}. (d) 2^x ln2. (e) 4^{x+4}ln4. (f) 1/[(x+1)ln10] if log is base 10. (g) 2/(x ln a). (h) 2cosh(2x).",
+            "diagram": null
+          },
+          {
+            "id": "ex-3-5-q2",
+            "qNo": "2",
+            "question": "Find f'(x) if f(x) is: (a) 11^{(x²−4x)}; (b) e^{√(x−3)}; (c) x³e^{1/x}; (d) e^{2x}/(e^{−2x}+1); (e) ln(e^{mx}−e^{−mx}); (f) (e^{mx}−e^{−mx})/(e^{mx}+e^{−mx}).",
+            "solution": "Use the chain rule, and the quotient rule where needed. (a) f'=11^{x²−4x}(2x−4)ln11. (b) f'=e^{√(x−3)}/[2√(x−3)]. (c) f'=e^{1/x}(3x²−x). (d) Let u=e^{2x}; then f=u²/(u+1), so f'=2e^{2x}(e^{2x}+2)/(e^{2x}+1)². (e) f'=m(e^{mx}+e^{−mx})/(e^{mx}−e^{−mx}). (f) f'=4m/(e^{mx}+e^{−mx})².",
+            "diagram": null
+          },
+          {
+            "id": "ex-3-5-q3",
+            "qNo": "3",
+            "question": "Differentiate: (a) y=x³ ln√x; (b) y=x²√(ln x); (c) y=ln√((x²+1)/(x²−1)); (d) y=ln(x−√(x²+1)); (e) y=e^{−2x}cos(2x); (f) y=x²e^{sin x}.",
+            "solution": "(a) ln√x=(1/2)ln x, so y'=x²[(3/2)ln x+1/2]. (b) y'=2x√(ln x)+x/[2√(ln x)]. (c) y'=−2x/[(x²+1)(x²−1)]. (d) Formal differentiation gives y'=−1/√(x²+1); note the printed logarithm has no real domain because x−√(x²+1)<0. (e) y'=−2e^{−2x}[cos(2x)+sin(2x)]. (f) y'=e^{sin x}(2x+x²cos x).",
+            "diagram": null
+          },
+          {
+            "id": "ex-3-5-q4",
+            "qNo": "4",
+            "question": "Differentiate: (a) y=log((x+2)³); (b) y=cosh(3x); (c) y=sinh^{−1}(cos x); (d) y=tanh^{−1}(x/2); (e) y=ln(coth x); (f) y=x cosh^{−1}(x)−√(x²−1).",
+            "solution": "(a) y'=3/[(x+2)ln10] for common logarithm. (b) y'=3sinh(3x). (c) y'=−sin x/√(1+cos²x). (d) Using d/dx artanh(u)=u'/(1−u²), y'=2/(4−x²). (e) y'=−1/(sinh x cosh x). (f) Product rule gives cosh^{−1}(x)+x/√(x²−1)−x/√(x²−1)=cosh^{−1}(x).",
+            "diagram": null
+          }
+        ],
         "pageStart": 63,
         "pageEnd": 100
       },
@@ -3786,7 +3815,78 @@ const MATH_12_DATA = [
         "exercise": "Review Exercise 6",
         "title": "Review Exercise 6",
         "description": "",
-        "problems": [],
+        "problems": [
+          {
+            "id": "ex-6-review-q1",
+            "qNo": "i",
+            "question": "The process of finding an antiderivative is called what?",
+            "solution": "Integration. An antiderivative reverses differentiation.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-review-q2",
+            "qNo": "ii",
+            "question": "Evaluate ∫tan θ dθ.",
+            "solution": "tanθ=sinθ/cosθ. Let u=cosθ, du=−sinθdθ, so the integral is −ln|cosθ|+C.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-review-q3",
+            "qNo": "iii",
+            "question": "Evaluate ∫dx/√(a²−x²).",
+            "solution": "This is the standard inverse-sine integral: sin^{−1}(x/a)+C, for a>0 and |x|<a.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-review-q4",
+            "qNo": "iv",
+            "question": "Evaluate ∫dx/√(x²−36).",
+            "solution": "The standard formula gives ln|x+√(x²−36)|+C.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-review-q5",
+            "qNo": "v",
+            "question": "Evaluate ∫(x²−4)dx.",
+            "solution": "x³/3−4x+C.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-review-q6",
+            "qNo": "vi",
+            "question": "If d/dx[f(x)g(x)] is expanded, what is the corresponding antiderivative product relation?",
+            "solution": "Product rule: (fg)'=f'g+fg'. Therefore ∫f(x)g'(x)dx=f(x)g(x)−∫f'(x)g(x)dx+C.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-review-q7",
+            "qNo": "vii",
+            "question": "Evaluate ∫tan²x dx.",
+            "solution": "Use tan²x=sec²x−1. Thus ∫tan²x dx=tan x−x+C.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-review-q8",
+            "qNo": "viii",
+            "question": "Evaluate ∫(x+8)/(x²−64) dx.",
+            "solution": "Factor denominator (x−8)(x+8); cancel x+8 to get ∫dx/(x−8)=ln|x−8|+C.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-review-q9",
+            "qNo": "ix",
+            "question": "Evaluate ∫₀¹e^{2x}dx.",
+            "solution": "[e^{2x}/2]₀¹=(e²−1)/2.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-review-q10",
+            "qNo": "x",
+            "question": "Evaluate ∫₁²x dx.",
+            "solution": "[x²/2]₁²=(4−1)/2=3/2.",
+            "diagram": null
+          }
+        ],
         "pageStart": 142,
         "pageEnd": 177
       },
@@ -3826,7 +3926,36 @@ const MATH_12_DATA = [
         "exercise": "Exercise 6.3",
         "title": "Exercise 6.3",
         "description": "",
-        "problems": [],
+        "problems": [
+          {
+            "id": "ex-6-3-q1",
+            "qNo": "1",
+            "question": "Integrate by partial fractions: (a) ∫dx/[x(x−3)]; (b) ∫(3x²+2x−1)/[x(x+1)]; (c) ∫(4x³+4x²+x−1)/[x²(x+1)²]; (d) ∫dx/(x³−1); (e) ∫(x⁴−x²+2)/[x²(x−1)]; (f) ∫dx/(x²−1); (g) ∫(−x−3)/(2x²−x−1)dx; (h) ∫(x²−1)/(x²−2x−15)dx; (i) ∫x/[(x+1)(x²+1)]dx; (j) ∫(x²+2)/(x²+1)² dx.",
+            "solution": "(a) (1/3)ln|(x−3)/x|+C. (b) Divide first: 3x²+2x−1 over x²+x =3−1/x−? Decompose and integrate after polynomial division. (c) Decompose into A/x+B/x²+C/(x+1)+D/(x+1)², then integrate each term. (d) 1/(x³−1)=1/[3(x−1)]−(x+2)/[3(x²+x+1)]; integrate the logarithmic and arctangent terms. (e) Polynomial division plus partial fractions. (f) (1/2)ln|(x−1)/(x+1)|+C. (g) Factor denominator (2x+1)(x−1), decompose and integrate. (h) Divide and factor (x−5)(x+3), then integrate. (i) Decompose A/(x+1)+(Bx+C)/(x²+1), then integrate. (j) Write (x²+2)/(x²+1)²=1/(x²+1)+1/(x²+1)²; result=(1/2)tan^{−1}x+x/[2(x²+1)]+(1/2)tan^{−1}x+C=x/(2(x²+1))+tan^{−1}x+C.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-3-q2",
+            "qNo": "2",
+            "question": "The drug elimination rate is R'(t)=60t/((t+1)²(t+2)) milligrams per hour, with R(0)=0. Find how much is eliminated in the first hour and after four hours.",
+            "solution": "Decompose: 60t/((t+1)²(t+2))=120/(t+1)−60/(t+1)²−120/(t+2). Integrating from 0 to T gives R(T)=120ln(2(T+1)/(T+2))+60/(T+1)−60. Thus R(1)=120ln(4/3)−30≈4.52 mg, and R(4)=120ln(5/3)−48≈13.32 mg.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-3-q3",
+            "qNo": "3",
+            "question": "The voting population rate is dN/dt=100t/(1+t²)² thousand people per year. If N(0) is current, how much will population increase over three years?",
+            "solution": "Integrate from 0 to 3: ΔN=∫₀³100t/(1+t²)²dt. Let u=1+t², du=2t dt; ΔN=50[−1/u]₁^{10}=45 thousand people.",
+            "diagram": null
+          },
+          {
+            "id": "ex-6-3-q4",
+            "qNo": "4",
+            "question": "An oil slick radius grows at dr/dt=100/√(r²+9) feet per minute. If r=0 at t=0, find the radius after four minutes.",
+            "solution": "Separate and integrate: √(r²+9)dr=100dt. Since ∫√(r²+9)dr=(1/2)[r√(r²+9)+9ln(r+√(r²+9))], set this equal to 100t and evaluate at t=4. Solve r√(r²+9)+9ln((r+√(r²+9))/3)=800 numerically; r≈25.9 ft.",
+            "diagram": null
+          }
+        ],
         "pageStart": 142,
         "pageEnd": 177
       },
@@ -5216,7 +5345,64 @@ const MATH_12_DATA = [
         "exercise": "Exercise 8.1",
         "title": "Exercise 8.1",
         "description": "",
-        "problems": [],
+        "problems": [
+          {
+            "id": "ex-8-1-q1",
+            "qNo": "1",
+            "question": "Find circle equations: (a) center (0,0), r=4; (b) center (3,2), r=1; (c) center (−4,−3), r=4; (d) center (−a,−b), r=a+b.",
+            "solution": "Use (x−h)²+(y−k)²=r². (a) x²+y²=16. (b) (x−3)²+(y−2)²=1. (c) (x+4)²+(y+3)²=16. (d) (x+a)²+(y+b)²=(a+b)².",
+            "diagram": null
+          },
+          {
+            "id": "ex-8-1-q2",
+            "qNo": "2",
+            "question": "Find the circle equations: (a) center (0,0), tangent to x=−5; (b) center (0,0), tangent to y=6; (c) center (6,−6), passing through origin; (d) center (−9,−6), passing through (−20,8); (e) center (−5,4), tangent to x-axis; (f) center (5,3), tangent to y-axis.",
+            "solution": "The radius is the perpendicular distance to the tangent or to the given point. (a) r=5: x²+y²=25. (b) r=6: x²+y²=36. (c) r²=6²+(−6)²=72: (x−6)²+(y+6)²=72. (d) r²=(−11)²+14²=317: (x+9)²+(y+6)²=317. (e) r=4: (x+5)²+(y−4)²=16. (f) r=5: (x−5)²+(y−3)²=25.",
+            "diagram": null
+          },
+          {
+            "id": "ex-8-1-q3",
+            "qNo": "3",
+            "question": "Find center and radius: (a) x²+y²−8x−6y+9=0; (b) 4x²+4y²+16x−12y−7=0; (c) x²+y²+4x−6y+13=0; (d) x²+y²−x−8y+18=0.",
+            "solution": "Complete squares. (a) (x−4)²+(y−3)²=16; center (4,3), r=4. (b) Divide by 4: (x+2)²+(y−3/2)²=35/4; center (−2,3/2), r=√35/2. (c) (x+2)²+(y−3)²=0; point circle centered (−2,3), radius 0. (d) (x−1/2)²+(y−4)²=−1/4; no real circle.",
+            "diagram": null
+          },
+          {
+            "id": "ex-8-1-q4",
+            "qNo": "4",
+            "question": "Find the circle through: (a) (−3,0),(5,4),(6,−3); (b) (7,−1),(5,3),(−4,6); (c) (1,2),(3,−4),(5,−6).",
+            "solution": "Substitute the three points into x²+y²+2gx+2fy+c=0 and solve for g,f,c. (a) x²+y²−4x−21=0. (b) x²+y²+4x+6y−72=0. (c) x²+y²−22x−4y+25=0.",
+            "diagram": null
+          },
+          {
+            "id": "ex-8-1-q5",
+            "qNo": "5",
+            "question": "Find circle equations through the indicated point(s) with center on the stated line: (a) through (2,6),(6,4), center on 3x+2y−1=0; (b) through (4,1),(6,5), center on 4x+y−16=0.",
+            "solution": "Let center (h,k) lie on the given line and equate squared distances from the center to the two points. (a) 2h−k=3 and 3h+2k=1 give center (1,−1), r²=50; equation (x−1)²+(y+1)²=50. (b) h+2k=11 and 4h+k=16 give center (3,4), r²=8; equation (x−3)²+(y−4)²=8.",
+            "diagram": null
+          },
+          {
+            "id": "ex-8-1-q6",
+            "qNo": "6",
+            "question": "Find a circle through: (a) (0,0),(0,3), with 4x−5y=0 tangent at (0,0); (b) (0,−1),(3,0), with 3x+y+9=0 tangent at (3,0).",
+            "solution": "(a) The center is both on the line through (0,0) normal to the tangent (direction (4,−5)) and on the perpendicular bisector y=3/2 of the chord from (0,0) to (0,3). This gives center (−6/5,3/2), so x²+y²+(12/5)x−3y=0. (b) As printed, the line 3x+y+9=0 does not pass through (3,0), so it cannot be tangent there; the statement contains a typo.",
+            "diagram": null
+          },
+          {
+            "id": "ex-8-1-q7",
+            "qNo": "7",
+            "question": "Find a concentric circle tangent to the given line: (a) x²+y²+16x−7y=0, tangent to y-axis; (b) x²+y²−8x+4=0, tangent to x+2y+6=0; (c) x²+y²+6x−10y+33=0, tangent to x-axis.",
+            "solution": "Keep the center fixed and set radius equal to distance from the center to the tangent line. (a) Center (−8,7/2), distance to y-axis 8, so (x+8)²+(y−7/2)²=64. (b) Center (4,0); distance to line x+2y+6=0 is 10/√5=2√5, so (x−4)²+y²=20. (c) Center (−3,5), tangent distance 5, so (x+3)²+(y−5)²=25.",
+            "diagram": null
+          },
+          {
+            "id": "ex-8-1-q8",
+            "qNo": "8",
+            "question": "Find a circle through the origin whose axis intercepts are (a) 3 and 4; (b) 2 and 4.",
+            "solution": "A circle through the origin has form x²+y²+Dx+Ey=0. If its nonzero axis intercepts are a and b, then D=−a and E=−b. (a) x²+y²−3x−4y=0. (b) x²+y²−2x−4y=0.",
+            "diagram": null
+          }
+        ],
         "pageStart": 213,
         "pageEnd": 240
       },
@@ -5975,7 +6161,64 @@ const MATH_12_DATA = [
         "exercise": "Exercise 9.1",
         "title": "Exercise 9.1",
         "description": "",
-        "problems": [],
+        "problems": [
+          {
+            "id": "ex-9-1-q1",
+            "qNo": "1",
+            "question": "For each parabola, sketch it and state vertex, focus, latus rectum endpoints, and axis: (a) x²=2y; (b) y²=−3(x+1); (c) (y−3)²=x.",
+            "solution": "Use (x−h)²=4p(y−k) or (y−k)²=4p(x−h). (a) h=k=0, 4p=2 so p=1/2; vertex (0,0), focus (0,1/2), latus rectum endpoints (±1,1/2), axis x=0. (b) 4p=−3; vertex (−1,0), focus (−7/4,0), endpoints (−7/4,±3/2), axis y=0. (c) 4p=1; vertex (0,3), focus (1/4,3), endpoints (1/4,1), (1/4,5), axis y=3.",
+            "diagram": null
+          },
+          {
+            "id": "ex-9-1-q2",
+            "qNo": "2",
+            "question": "Find the equations of the parabolas shown in the textbook graphs (a) and (b).",
+            "solution": "Read each vertex and focus/directrix from the graph, then substitute into standard form. (a) The marked vertex is (2,−1), focus (6,1), so axis has direction (4,2); because this is not axis-aligned, use rotated-coordinate form from the plotted focus/directrix. (b) The graph shows vertex (0,0), vertical axis x=−2 as directrix and focal points at (6,±12) inconsistent with a single standard parabola; verify the plotted labels before transcribing an equation.",
+            "diagram": null
+          },
+          {
+            "id": "ex-9-1-q3",
+            "qNo": "3",
+            "question": "Write each parabola equation: (a) focus (0,3), directrix y=−3; (b) focus (4,0), directrix x=−4; (c) vertex (0,0), axis of symmetry x-axis, through (3,6); (d) vertex (0,0), y-axis symmetry, through (−12,−3); (e) vertical axis through (−3,4), vertex (5,1); (f) horizontal axis through (7,9), vertex (3,−7).",
+            "solution": "(a) Equidistance from focus and directrix gives x²=12y. (b) y²=16x. (c) x²=4py; 9=24p gives p=3/8, so x²=3y/2. (d) y²=4px; 9=−48p gives p=−3/16, so y²=−3x/4. (e) Vertical axis x=−3 and vertex (5,1) are inconsistent; an axis of a parabola must pass through the vertex. (f) Horizontal axis y=9 and vertex (3,−7) are inconsistent for the same reason; check the book statement.",
+            "diagram": null
+          },
+          {
+            "id": "ex-9-1-q4",
+            "qNo": "4",
+            "question": "Find the locus of points equidistant from focus (4,3) and directrix x=−2.",
+            "solution": "Set distance to focus equal to distance to directrix: √((x−4)²+(y−3)²)=|x+2|. Squaring and simplifying gives (y−3)²=12(x−1), a parabola with vertex (1,3).",
+            "diagram": null
+          },
+          {
+            "id": "ex-9-1-q5",
+            "qNo": "5",
+            "question": "Find a parabola with focal chord length 6, focus (4,−2), and directrix parallel to the y-axis.",
+            "solution": "A directrix parallel to the y-axis makes the axis horizontal. The latus rectum length is |4p|=6, so |p|=3/2. The vertex lies 3/2 units horizontally from the focus and the directrix is another 3/2 units beyond it. The directrix position/orientation sign is not specified; the two possible parabolas are (y+2)²=±6(x−(4∓3/2)).",
+            "diagram": null
+          },
+          {
+            "id": "ex-9-1-q6",
+            "qNo": "6",
+            "question": "Find intersections: (a) y²+3x=−8 with x−y+2=0; (b) x²=2y with x−y−2=0.",
+            "solution": "(a) From the line x=y−2. Substitute: y²+3y−6=0, so y=(−3±√33)/2 and x=y−2. (b) y=x−2; substitute x²=2x−4 gives x²−2x+4=0, whose discriminant is negative; there are no real intersections.",
+            "diagram": null
+          },
+          {
+            "id": "ex-9-1-q7",
+            "qNo": "7",
+            "question": "Find c for tangency: (a) x−y+c=0 to y²=9x; (b) x−y+c=0 to x²=(2/3)y.",
+            "solution": "(a) Put x=y−c into y²=9x: y²−9y+9c=0. Tangency requires discriminant 81−36c=0, so c=9/4. (b) Put y=x+c into x²=(2/3)y: 3x²−2x−2c=0. Tangency requires discriminant 4+24c=0, so c=−1/6.",
+            "diagram": null
+          },
+          {
+            "id": "ex-9-1-q8",
+            "qNo": "8",
+            "question": "Find tangent and normal equations: (a) at (3,6) to y²=12x; (b) at (1/2,−2/3) to x²=−3y.",
+            "solution": "(a) For y²=4px, tangent yy₁=2p(x+x₁); here 4p=12, so 6y=6(x+3), or y=x+3. Normal slope is −y₁/(2p)=−1, so y−6=−(x−3). (b) For x²=4py, 4p=−3; tangent xx₁=2p(y+y₁), giving x/2=−3/2(y−2/3), hence x+3y−2=0. Normal slope=−x₁/(2p)=1/3, so y+2/3=(x−1/2)/3.",
+            "diagram": null
+          }
+        ],
         "pageStart": 241,
         "pageEnd": 285
       },
@@ -6362,7 +6605,57 @@ const MATH_12_DATA = [
         "exercise": "Review Exercise 10",
         "title": "Review Exercise 10",
         "description": "",
-        "problems": [],
+        "problems": [
+          {
+            "id": "ex-10-review-q1",
+            "qNo": "i",
+            "question": "Find the order of 3(dy/dx)+2y=5.",
+            "solution": "The highest derivative is the first derivative. Order = 1.",
+            "diagram": null
+          },
+          {
+            "id": "ex-10-review-q2",
+            "qNo": "ii",
+            "question": "Find the degree of (d²y/dx²)²−dy/dx+y=0.",
+            "solution": "The highest-order derivative is y''. Its power is 2, so the degree is 2.",
+            "diagram": null
+          },
+          {
+            "id": "ex-10-review-q3",
+            "qNo": "iii",
+            "question": "What is a solution containing an arbitrary constant called?",
+            "solution": "It is a general solution.",
+            "diagram": null
+          },
+          {
+            "id": "ex-10-review-q4",
+            "qNo": "iv",
+            "question": "Solve dy/dx=sin x with y(0)=1.",
+            "solution": "Integrate: y=−cos x+C. Since y(0)=1, C=2. Thus y=2−cos x.",
+            "diagram": null
+          },
+          {
+            "id": "ex-10-review-q5",
+            "qNo": "v",
+            "question": "Solve y(dy/dx)=cos x with y(0)=−1.",
+            "solution": "Multiply by 2: d(y²)/dx=2cos x. Integrate: y²=2sin x+C. The initial condition gives C=1, so y=−√(2sin x+1) on the branch consistent with y(0)=−1.",
+            "diagram": null
+          },
+          {
+            "id": "ex-10-review-q6",
+            "qNo": "vi",
+            "question": "Find the differential equation of the orthogonal trajectories of x²+y²=c.",
+            "solution": "Differentiate: 2x+2y y'=0, so the family slope is −x/y. The orthogonal slope is y/x, giving dy/dx=y/x. Integrating dy/y=dx/x gives y=Cx, the straight lines through the origin.",
+            "diagram": null
+          },
+          {
+            "id": "ex-10-review-q7",
+            "qNo": "vii",
+            "question": "Find the orthogonal trajectories of y²=4ax.",
+            "solution": "Differentiate y²=4ax: 2y y'=4a. Since a=y²/(4x), the slope is y'=y/(2x). Orthogonal slope is −2x/y. Solve dy/dx=−2x/y: y dy=−2x dx, hence x²+y²=C.",
+            "diagram": null
+          }
+        ],
         "pageStart": 286,
         "pageEnd": 299
       }
@@ -6562,7 +6855,43 @@ const MATH_12_DATA = [
         "exercise": "Exercise 11.2",
         "title": "Exercise 11.2",
         "description": "",
-        "problems": [],
+        "problems": [
+          {
+            "id": "ex-11-2-q1",
+            "qNo": "1",
+            "question": "Determine whether the functions in parts (a–d) are homogeneous, as asked in Exercise 11.2.",
+            "solution": "Test each expression by replacing x,y with tx,ty and checking whether the result is t^n times the original expression for a fixed n. From the scan, part (d), (x²+3y²)^{1/3}, is homogeneous of degree 2/3. The low-resolution scan obscures symbols in parts (a–c); their exact formulas need a clearer page image for a reliable classification.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-2-q2",
+            "qNo": "2",
+            "question": "Verify Euler’s theorem for: (a) z=ax²+2hxy+by²; (b) z=(x²+xy+y²)^{−1}.",
+            "solution": "(a) z is homogeneous of degree 2. Its partials are z_x=2ax+2hy and z_y=2hx+2by. Then xz_x+yz_y=2ax²+4hxy+2by²=2z. (b) Let Q=x²+xy+y² and z=Q^{−1}. Then xz_x+yz_y=−Q^{−2}[x(2x+y)+y(x+2y)]=−2Q/Q²=−2z, agreeing with degree −2.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-2-q3",
+            "qNo": "3",
+            "question": "If u=f(y/x), show that x(∂u/∂x)+y(∂u/∂y)=0.",
+            "solution": "Let v=y/x. Then u_x=f'(v)(−y/x²) and u_y=f'(v)/x. Hence xu_x+yu_y=−(y/x)f'(v)+(y/x)f'(v)=0.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-2-q4",
+            "qNo": "4",
+            "question": "If z=xy f(x/y), show that x(∂z/∂x)+y(∂z/∂y)=2z.",
+            "solution": "The factor xy has degree 2 and x/y is unchanged when (x,y) is scaled by the same factor. Thus z(tx,ty)=t²z(x,y), so z is homogeneous of degree 2. Euler’s theorem gives xz_x+yz_y=2z.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-2-q5",
+            "qNo": "5",
+            "question": "If u=tan^{−1}((x²+y²)/(x+y)), show that xu_x+yu_y=sin(u)cos(u).",
+            "solution": "Set v=(x²+y²)/(x+y)=tan u. The numerator has degree 2 and denominator degree 1, so v is homogeneous of degree 1. Euler’s theorem gives xv_x+yv_y=v. Since u=tan^{−1}v, u_x=v_x/(1+v²) and u_y=v_y/(1+v²). Therefore xu_x+yu_y=v/(1+v²)=tan u/(1+tan²u)=sin u cos u.",
+            "diagram": null
+          }
+        ],
         "pageStart": 300,
         "pageEnd": 308
       },
@@ -6571,7 +6900,71 @@ const MATH_12_DATA = [
         "exercise": "Review Exercise 11",
         "title": "Review Exercise 11",
         "description": "",
-        "problems": [],
+        "problems": [
+          {
+            "id": "ex-11-review-q1",
+            "qNo": "i",
+            "question": "In z=f(x,y), x and y are called what?",
+            "solution": "They are independent variables; z is the dependent variable.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-review-q2",
+            "qNo": "ii",
+            "question": "If f(x,y)=√(x²+y²−1), find f(1,5).",
+            "solution": "f(1,5)=√(1+25−1)=√25=5.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-review-q3",
+            "qNo": "iii",
+            "question": "If f(x,y)=x²+y², find ∂f/∂x.",
+            "solution": "Treat y as constant: f_x=2x.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-review-q4",
+            "qNo": "iv",
+            "question": "Find ∂/∂x [1/(x+y)].",
+            "solution": "Treat y as constant: −1/(x+y)².",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-review-q5",
+            "qNo": "v",
+            "question": "State Euler’s theorem for a homogeneous function z=f(x,y) of degree n.",
+            "solution": "Euler’s theorem states x f_x+y f_y=nf(x,y).",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-review-q6",
+            "qNo": "vi",
+            "question": "A function of more than one independent variable is called what?",
+            "solution": "A multivariable function.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-review-q7",
+            "qNo": "vii",
+            "question": "If f(x,y)=√(x³+y²), find f(1,0).",
+            "solution": "f(1,0)=√(1+0)=1.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-review-q8",
+            "qNo": "viii",
+            "question": "If f(x,y)=cos y·e^x, find f_y.",
+            "solution": "Treat e^x as constant: f_y=−e^x sin y.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-review-q9",
+            "qNo": "ix",
+            "question": "If f(x,y)=3xy²+x²y², find f_x.",
+            "solution": "Treat y as constant: f_x=3y²+2xy².",
+            "diagram": null
+          }
+        ],
         "pageStart": 300,
         "pageEnd": 308
       }
@@ -6748,7 +7141,85 @@ const MATH_12_DATA = [
         "exercise": "Review Exercise 12",
         "title": "Review Exercise 12",
         "description": "",
-        "problems": [],
+        "problems": [
+          {
+            "id": "ex-12-review-q1",
+            "qNo": "i",
+            "question": "Find the roots of 6x²+5x−6=0.",
+            "solution": "Factor: (3x−2)(2x+3)=0. Thus x=2/3 or x=−3/2.",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-review-q2",
+            "qNo": "ii",
+            "question": "Approximate the root of f(x)=x²+6x−5=0 as shown among the choices.",
+            "solution": "The quadratic formula gives x=−3±√14, approximately 0.742 and −6.742. Neither matches the values visible in the printed options, so the question or choices appear misprinted; verify the polynomial and options against the original page.",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-review-q3",
+            "qNo": "iii",
+            "question": "The Newton–Raphson method is also called which method?",
+            "solution": "It is the tangent method: each next estimate is where the tangent at the current point meets the x-axis.",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-review-q4",
+            "qNo": "iv",
+            "question": "State the Newton–Raphson iterative formula for x₃.",
+            "solution": "Set x_{n+1}=x_n−f(x_n)/f'(x_n). In particular, x₃=x₂−f(x₂)/f'(x₂).",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-review-q5",
+            "qNo": "v",
+            "question": "If f(a) and f(c) have opposite signs, where does the root lie?",
+            "solution": "For a continuous function, the Intermediate Value Theorem guarantees at least one root in the interval (a,c).",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-review-q6",
+            "qNo": "vi",
+            "question": "At which points does the Newton–Raphson method fail?",
+            "solution": "It fails when f'(x_n)=0, which occurs at a stationary point, because the iteration would require division by zero.",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-review-q7",
+            "qNo": "vii",
+            "question": "Approximate the positive root of 3t−cos t−1=0 to three decimal places using Regula Falsi.",
+            "solution": "Let f(t)=3t−cos t−1. Since f(0)=−2 and f(1)=2−cos1>0, the root is bracketed in [0,1]. Applying Regula Falsi gives t≈0.607 (to three decimal places).",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-review-q8",
+            "qNo": "viii",
+            "question": "Which Maple command solves x²−5x+3=0?",
+            "solution": "Use fsolve(x²−5x+3=0, x). It returns the numerical roots (5−√13)/2≈0.697 and (5+√13)/2≈4.303.",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-review-q9",
+            "qNo": "ix",
+            "question": "Use bisection on x−sin x−1/2=0 in 1<x<2 to select the listed root approximation.",
+            "solution": "Let f(x)=x−sin x−1/2. It is increasing since f'(x)=1−cos x≥0. Numerical bisection gives x≈1.498, so select the closest listed value.",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-review-q10",
+            "qNo": "x",
+            "question": "What is another name for the bisection method?",
+            "solution": "It is also called the binary chopping method, because each iteration halves the bracketing interval.",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-review-project",
+            "qNo": "Project",
+            "question": "Create a quadratic, find its roots with Newton–Raphson, and plot it in Maple; then approximate an integral from −1 to 2 with the trapezoidal rule.",
+            "solution": "For example, choose f(x)=x²−1. Its roots are −1 and 1; Newton’s iteration is x_{n+1}=x_n−(x_n²−1)/(2x_n), which converges from a suitable nonzero starting value. Plot f with Maple’s plot command. For the integration part choose g(x)=x², n=6, h=0.5. The trapezoidal estimate is T=0.5[1/2+0.25+0+0.25+1+2.25+4/2]=3.125, compared with exact ∫_{−1}^{2}x²dx=3.",
+            "diagram": null
+          }
+        ],
         "pageStart": 309,
         "pageEnd": 325
       },
@@ -6766,10 +7237,38 @@ const MATH_12_DATA = [
             "diagram": null
           },
           {
+            "id": "ex-12-1-q2",
+            "qNo": "2",
+            "question": "Compute four bisection iterates for the functions and intervals: (a) e^x−2−x on [1,1.8]; (b) cos x+1−x on [0.8,1.6]; (c) ln x−5+x on [3.2,4]; (d) x²−10x+23 on [3.2,4].",
+            "solution": "At each step take the midpoint and keep the half interval where endpoint signs differ. The first four midpoints are: (a) 1.4, 1.2, 1.1, 1.15; (b) 1.2, 1.4, 1.3, 1.25; (c) 3.6, 3.8, 3.7, 3.65; (d) 3.6, 3.4, 3.5, 3.55.",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-1-q3",
+            "qNo": "3",
+            "question": "Compute four Regula Falsi iterates for: (a) f(x)=e^x−x on [−2.4,−1.6]; (b) f(x)=cos x+1−x on [0.8,1.6]; (c) f(x)=x²−10x+23 on [−2.4,−1.6].",
+            "solution": "The displayed scan appears to have sign or interval inconsistencies in parts (a) and (c): the stated endpoint values do not have opposite signs, so Regula Falsi cannot be started as printed. For (b), apply x_n=(a f(b)−b f(a))/(f(b)−f(a)), retaining the sign-changing subinterval. The four approximations are x₁≈1.270124, x₂≈1.283233, x₃≈1.283426, x₄≈1.283429.",
+            "diagram": null
+          },
+          {
             "id": "ex-12-1-q4",
             "qNo": "4",
             "question": "What happens if bisection is applied to f(x)=1/(x−2) on (a) [3,7] and (b) [1,7]?",
             "solution": "(a) f(3)>0 and f(7)>0, so the endpoint signs are not opposite and the bisection method cannot start. (b) The endpoint signs are opposite, but f is discontinuous at x=2 and has no zero. Bisection’s continuity requirement fails; repeated midpoints can approach the vertical asymptote rather than a root.",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-1-q5",
+            "qNo": "5",
+            "question": "Find the third Newton–Raphson iterate x₃ for: (a) f(x)=x³−3, x₀=1; (b) f(x)=sin x, x₀=1; (c) f(x)=x³+2x−1, x₀=0; (d) f(x)=sin x, x₀=−2.",
+            "solution": "Use x_{n+1}=x_n−f(x_n)/f'(x_n). (a) x₁=1.666667, x₂≈1.471111, x₃≈1.442812. (b) x₁≈−0.557408, x₂≈0.065936, x₃≈−0.000096. (c) x₁=0.5, x₂≈0.454545, x₃≈0.453398. (d) x₁≈−4.185040, x₂≈−2.467894, x₃≈−3.266186.",
+            "diagram": null
+          },
+          {
+            "id": "ex-12-1-q6",
+            "qNo": "6",
+            "question": "Use Newton–Raphson to approximate the roots, continuing until consecutive iterates agree to three decimal places: (a) x³+3x−1=0 on (0,1); (b) x³+2x²−x+1=0 on (−3,−2); (c) ∛(x−3)=x+1 on [−3,−2].",
+            "solution": "For each equation set F(x)=0 and iterate x_{n+1}=x_n−F(x_n)/F'(x_n), starting within the stated interval. (a) The root is approximately 0.322. (b) The root of x³+2x²−x+1=0 in (−3,−2) is approximately −2.547. (c) Cubing both sides gives (x+1)³=x−3, or F(x)=x³+3x²+2x+4; the root in [−3,−2] is approximately −2.796. Continue the iteration until successive values round to the same three decimals.",
             "diagram": null
           },
           {

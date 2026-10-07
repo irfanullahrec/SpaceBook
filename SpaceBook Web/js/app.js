@@ -675,8 +675,8 @@ function goToSubjects(classId) {
     { label: cls.name,   active: true }
   ];
 
-  // Classes 1, 2, and 3 have integrated content and subjects ready
-  if (!['cls1', 'cls2', 'cls3', 'cls9', 'cls10', 'cls12'].includes(classId)) {
+  // Classes 1, 2, 3, 6, 9, 10, and 12 have integrated content and subjects ready
+  if (!['cls1', 'cls2', 'cls3', 'cls6', 'cls9', 'cls10', 'cls12'].includes(classId)) {
     pageContent().innerHTML = `
       <!-- 1. Single-Line Consolidated Header Bar -->
       <div class="subjects-single-line-bar">
@@ -753,6 +753,203 @@ function goToSubjects(classId) {
 
   // Rich metadata helper for subject statistical cards
   const getSubjectMeta = (s) => {
+    if (classId === "cls6" || (s.id && s.id.startsWith("cls6-"))) {
+      if (s.id === "cls6-math") {
+        return {
+          headerColor: "#2563eb",
+          urduName: "ریاضی (چھٹی جماعت)",
+          badgeText: "✓ 100% Solved KPK Textbook",
+          badgeClass: "badge-blue",
+          metric1Val: "11 Units",
+          metric1Lbl: "Multiples to Data Handling",
+          metric2Val: "120+ Solved Qs",
+          metric2Lbl: "Short & Long Exercises",
+          metric3Val: "Complete MCQs",
+          metric3Lbl: "Concepts & Solutions",
+          topics: ["Multiples & Factors", "Integers", "Laws & Operations", "Rate, Ratio & %", "Sets", "Algebra", "Linear Equations", "Geometry"]
+        };
+      }
+      if (s.id === "cls6-sci") {
+        return {
+          headerColor: "#059669",
+          urduName: "جنرل سائنس (چھٹی جماعت)",
+          badgeText: "✓ 100% Verbatim KPK Textbook",
+          badgeClass: "badge-green",
+          metric1Val: "11 Units",
+          metric1Lbl: "Cellular to Everyday Tech",
+          metric2Val: "110+ Solved Qs",
+          metric2Lbl: "Exercise Question Bank",
+          metric3Val: "Scientific Concepts",
+          metric3Lbl: "MCQs & Explanations",
+          topics: ["Cellular Organization", "Plant Reproduction", "Balanced Diet", "Digestive System", "Matter", "Elements", "Energy", "Electricity"]
+        };
+      }
+      if (s.id === "cls6-eng") {
+        return {
+          headerColor: "#4f46e5",
+          urduName: "انگریزی (چھٹی جماعت)",
+          badgeText: "✓ 100% Verbatim KPK Textbook",
+          badgeClass: "badge-indigo",
+          metric1Val: "10 Units",
+          metric1Lbl: "Character to Modern Tech",
+          metric2Val: "90+ Solved Qs",
+          metric2Lbl: "Comprehension & Grammar",
+          metric3Val: "Vocabulary & MCQs",
+          metric3Lbl: "Trilingual Translations",
+          topics: ["Character & Courage", "Environment", "Health & Fitness", "Wonders of Nature", "Inventions", "Dignity of Labour", "Cultural Heritage"]
+        };
+      }
+      if (s.id === "cls6-urdu") {
+        return {
+          headerColor: "#16a34a",
+          urduName: "اردو لازمی (چھٹی جماعت)",
+          badgeText: "✓ 100% درسی متن و مشقیں",
+          badgeClass: "badge-green",
+          metric1Val: "15 اسباق",
+          metric1Lbl: "حمد، نعت، اسباق و نظمیں",
+          metric2Val: "120+ حل شدہ سوالات",
+          metric2Lbl: "مشقی سوالات و جوابات",
+          metric3Val: "قواعد و تشریح",
+          metric3Lbl: "الفاظ معنی، گرامر و کثیر الانتخابی",
+          topics: ["حمد باری تعالیٰ", "نعت رسول مقبول ﷺ", "تاریخ کا سنہرا باب", "صحت و صفائی", "علامہ اقبال کا پیغام", "محنت کی عظمت", "حکایاتِ سعدیؒ"]
+        };
+      }
+      if (s.id === "cls6-isl") {
+        return {
+          headerColor: "#0d9488",
+          urduName: "اسلامیات لازمی (چھٹی جماعت)",
+          badgeText: "✓ مستند قرآنی و نبوی تعلیمات",
+          badgeClass: "badge-teal",
+          metric1Val: "7 ابواب",
+          metric1Lbl: "قرآن، ایمانیات، سیرت و اخلاق",
+          metric2Val: "70+ حل شدہ سوالات",
+          metric2Lbl: "مشقی و موضوعاتی سوالات",
+          metric3Val: "ایمان و عمل",
+          metric3Lbl: "احادیث، عبادات و مشاہیر اسلام",
+          topics: ["قرآن مجید و حدیث", "ایمانیات و عبادات", "سیرت طیبہ ﷺ", "اخلاق و آداب", "حسنِ معاملات", "مشاہیر اسلام", "عصرِ حاضر کے تقاضے"]
+        };
+      }
+      if (s.id === "cls6-comp") {
+        return {
+          headerColor: "#0284c7",
+          urduName: "کمپیوٹر ایجوکیشن (چھٹی جماعت)",
+          badgeText: "✓ ICT & Programming Foundations",
+          badgeClass: "badge-cyan",
+          metric1Val: "6 Units",
+          metric1Lbl: "ICT Fundamentals to Scratch",
+          metric2Val: "60+ Solved Qs",
+          metric2Lbl: "Practical & Exercise Bank",
+          metric3Val: "Digital Skills",
+          metric3Lbl: "Safety & Problem Solving",
+          topics: ["ICT Fundamentals", "Digital Skills", "Algorithmic Thinking", "Visual Programming (Scratch)", "Digital Citizenship", "Entrepreneurship"]
+        };
+      }
+      if (s.id === "cls6-geo") {
+        return {
+          headerColor: "#d97706",
+          urduName: "جغرافیہ (چھٹی جماعت)",
+          badgeText: "✓ Physical Geography & Maps",
+          badgeClass: "badge-amber",
+          metric1Val: "4 Units",
+          metric1Lbl: "Earth Structure to Forests",
+          metric2Val: "45+ Solved Qs",
+          metric2Lbl: "Conceptual Landforms",
+          metric3Val: "World Climate & Rocks",
+          metric3Lbl: "Exercise Question Bank",
+          topics: ["Structure of Earth & Rocks", "Mountains, Plateaus & Valleys", "Climatic Regions of World", "Forests & Conservation"]
+        };
+      }
+      if (s.id === "cls6-hist") {
+        return {
+          headerColor: "#b45309",
+          urduName: "تاریخ (چھٹی جماعت)",
+          badgeText: "✓ Ancient Civilizations & Heritage",
+          badgeClass: "badge-orange",
+          metric1Val: "5 Units",
+          metric1Lbl: "Indus Valley to Islamic Era",
+          metric2Val: "55+ Solved Qs",
+          metric2Lbl: "Historical Analysis",
+          metric3Val: "Archaeology & Heritage",
+          metric3Lbl: "Complete MCQs & SQs",
+          topics: ["Ancient Civilizations", "Cultural Heritage", "Persians, Greeks & Romans", "Aryans, Kushans & Guptas", "Rise of Islamic Civilization"]
+        };
+      }
+      if (s.id === "cls6-hpe") {
+        return {
+          headerColor: "#ea580c",
+          urduName: "صحت و جسمانی تعلیم (چھٹی جماعت)",
+          badgeText: "✓ صحت، تندرستی اور کھیل",
+          badgeClass: "badge-orange",
+          metric1Val: "6 ابواب",
+          metric1Lbl: "صحت و صفائی تا تفریحات",
+          metric2Val: "50+ حل شدہ سوالات",
+          metric2Lbl: "ابتدائی طبی امداد و قوانین",
+          metric3Val: "کھیل و جسمانی لچک",
+          metric3Lbl: "ایتھلیٹکس، جمناسٹک و اصول",
+          topics: ["صحت و صفائی و بیماریاں", "جسمانی نشوونما و غذا", "ابتدائی طبی امداد", "کھیل اور قوانین", "جمناسٹک و لچک", "صحت مند طرز زندگی"]
+        };
+      }
+      if (s.id === "cls6-drawing") {
+        return {
+          headerColor: "#ec4899",
+          urduName: "ڈرائنگ / فنونِ لطیفہ (چھٹی جماعت)",
+          badgeText: "✓ Visual Arts & Islamic Patterns",
+          badgeClass: "badge-pink",
+          metric1Val: "6 Chapters",
+          metric1Lbl: "Elements of Art to Calligraphy",
+          metric2Val: "50+ Drawing Prompts",
+          metric2Lbl: "Techniques & Concepts",
+          metric3Val: "Color & Perspective",
+          metric3Lbl: "Still Life, Nature & Geometry",
+          topics: ["Basic Elements of Art", "Color Theory & Shading", "Perspective & Still Life", "Nature & Landscapes", "Geometric Patterns", "Islamic Calligraphy"]
+        };
+      }
+      if (s.id === "cls6-arabic") {
+        return {
+          headerColor: "#047857",
+          urduName: "عربی (چھٹی جماعت)",
+          badgeText: "✓ لغت، مکالمہ اور آسان قواعد",
+          badgeClass: "badge-green",
+          metric1Val: "8 اسباق",
+          metric1Lbl: "التحیات تا حب الوطن",
+          metric2Val: "60+ حل شدہ سوالات",
+          metric2Lbl: "عربی گفتگو اور مشقیں",
+          metric3Val: "قواعد و تراجم",
+          metric3Lbl: "کثیر الانتخابی و مفردات",
+          topics: ["التحيات والتعارف", "المدرسة والصف", "الاسرة والبيت", "في السوق والتجارة", "الصلاة والمسجد", "الطبيعة وفصول السنة", "الصحة والغذاء", "حب الوطن"]
+        };
+      }
+      if (s.id === "cls6-quran") {
+        return {
+          headerColor: "#065f46",
+          urduName: "مطالعہ قرآن حکیم (چھٹی جماعت)",
+          badgeText: "✓ فہم قرآن و قصص الانبیاء",
+          badgeClass: "badge-emerald",
+          metric1Val: "8 اسباق",
+          metric1Lbl: "منتخب سورتیں و دعائیں",
+          metric2Val: "70+ حل شدہ سوالات",
+          metric2Lbl: "ترجمہ، تفسیر و مضامین",
+          metric3Val: "ہدایت و عمل",
+          metric3Lbl: "قصصِ انبیاء و قرآنی دعائیں",
+          topics: ["تعارف قرآن و الفاتحہ", "الانعام و قصص انبیاء", "سورۃ یوسفؑ", "سورۃ الکہف", "سورۃ مریم و طہ", "سورۃ الانبیاء و الحج", "سورۃ الفرقان", "قصار السور و دعائیں"]
+        };
+      }
+      if (s.id === "cls6-pashto") {
+        return {
+          headerColor: "#0f766e",
+          urduName: "پښتو لازمي (شپږم ټولګی)",
+          badgeText: "✓ 100% درسي متن او مشقونه",
+          badgeClass: "badge-teal",
+          metric1Val: "12 اسباق",
+          metric1Lbl: "حمد، نعت، لوستونه او نظمونه",
+          metric2Val: "90+ حل شوي سوالونه",
+          metric2Lbl: "مشغولتیاوې او درسي پوښتنې",
+          metric3Val: "ادب او ګرامر",
+          metric3Lbl: "رحمان بابا، تاریخ او اخلاق",
+          topics: ["حمد (عبد العظیم بابا)", "نعت شریف", "خوږ وطن پاکستان", "د علم اهمیت", "روغتیا او صفائي", "پښتونخوا تاریخي سیمې", "محنت", "مېلمه پالنه", "رحمان بابا"]
+        };
+      }
+    }
     if (s.id === "cls1-eng" || (s.hasEng && classId === "cls1")) {
       return {
         headerColor: "#4f46e5",
@@ -1192,9 +1389,11 @@ function goToSubjects(classId) {
     "cls5-eng": "5th English.jpg", "cls5-urdu": "5th Urdu.jpg", "cls5-math": "5th Maths.jpg",
     "cls5-sci": "5th General Science.jpg", "cls5-sst": "5th Social Study.jpg", "cls5-isl": "5th Islamiat.jpg",
     "cls5-pashto": "5th Pashto.jpg",
-    "cls6-eng": "English.jpg", "cls6-urdu": "Urdu.jpg", "cls6-math": "Math.jpg",
-    "cls6-sci": "General science.jpg", "cls6-hg": "History.jpg", "cls6-comp": "Computer.jpg",
-    "cls6-isl": "Islamiat.jpg", "cls6-pashto": "Pashto.jpg",
+    "cls6-math": "Math.jpg", "cls6-sci": "General science.jpg", "cls6-eng": "English.jpg",
+    "cls6-urdu": "Urdu.jpg", "cls6-isl": "Islamiat.jpg", "cls6-comp": "Computer.jpg",
+    "cls6-geo": "Geography.jpg", "cls6-hist": "History.jpg", "cls6-hpe": "Hpe.jpg",
+    "cls6-drawing": "Drawing.jpg", "cls6-arabic": "Arabic.jpg", "cls6-quran": "M-Q.jpg",
+    "cls6-pashto": "Pashto.jpg",
     "cls7-eng": "7th English.jpg", "cls7-urdu": "7th Urdu.jpg", "cls7-math": "7th MAths.jpg",
     "cls7-sci": "7th General Science.jpg", "cls7-hg": "7th History.jpg", "cls7-comp": "7th CS.jpg",
     "cls7-isl": "7th Islamiat.jpg", "cls7-pashto": "7th PAshto.jpg",
@@ -1310,7 +1509,7 @@ function openSubject(classId, subjId) {
     renderDrawingView();
     return;
   }
-  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls1' && classId !== 'cls2' && classId !== 'cls3' && classId !== 'cls12') {
+  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls6' && classId !== 'cls1' && classId !== 'cls2' && classId !== 'cls3' && classId !== 'cls12') {
     goToSubjects(classId);
     return;
   }
@@ -1319,6 +1518,52 @@ function openSubject(classId, subjId) {
   const subs = DATA.subjects[classId] || [];
   const subj = subs.find(s => s.id === subjId);
   if (!subj) return;
+  if (classId === 'cls6') {
+    if (subjId === 'cls6-math' || subj.hasMath) {
+      state.activeSubject = "math";
+      openSubjectWorkspace(classId, "math", subj);
+    } else if (subjId === 'cls6-sci' || subj.hasGenSci) {
+      state.activeSubject = "sci";
+      openSubjectWorkspace(classId, "sci", subj);
+    } else if (subjId === 'cls6-eng' || subj.hasEng) {
+      state.activeSubject = "eng";
+      openSubjectWorkspace(classId, "eng", subj);
+    } else if (subjId === 'cls6-urdu' || subj.hasUrdu) {
+      state.activeSubject = "urdu";
+      openSubjectWorkspace(classId, "urdu", subj);
+    } else if (subjId === 'cls6-isl' || subj.hasIsl) {
+      state.activeSubject = "isl";
+      openSubjectWorkspace(classId, "isl", subj);
+    } else if (subjId === 'cls6-comp' || subj.hasComp) {
+      state.activeSubject = "comp";
+      openSubjectWorkspace(classId, "comp", subj);
+    } else if (subjId === 'cls6-geo' || subj.hasGeo) {
+      state.activeSubject = "geo";
+      openSubjectWorkspace(classId, "geo", subj);
+    } else if (subjId === 'cls6-hist' || subj.hasHist) {
+      state.activeSubject = "hist";
+      openSubjectWorkspace(classId, "hist", subj);
+    } else if (subjId === 'cls6-hpe' || subj.hasHpe) {
+      state.activeSubject = "hpe";
+      openSubjectWorkspace(classId, "hpe", subj);
+    } else if (subjId === 'cls6-drawing' || subj.hasDrawing) {
+      state.activeSubject = "drawing";
+      openSubjectWorkspace(classId, "drawing", subj);
+    } else if (subjId === 'cls6-arabic' || subj.hasArabic) {
+      state.activeSubject = "arabic";
+      openSubjectWorkspace(classId, "arabic", subj);
+    } else if (subjId === 'cls6-quran' || subj.hasQuran) {
+      state.activeSubject = "quran";
+      openSubjectWorkspace(classId, "quran", subj);
+    } else if (subjId === 'cls6-pashto' || subj.hasPashto) {
+      state.activeSubject = "pashto";
+      openSubjectWorkspace(classId, "pashto", subj);
+    } else {
+      state.activeSubject = subj.id;
+      openSubjectWorkspace(classId, subj.id.replace('cls6-', ''), subj);
+    }
+    return;
+  }
   if (subj.hasBio || subjId === 'cls9-bio' || subjId === 'cls10-bio' || subjId === 'cls12-bio') {
     state.activeSubject = "bio";
     openSubjectWorkspace(classId, "bio", subj);
@@ -13107,6 +13352,41 @@ const SUBJECT_THEMES = {
     pillColor: '#022c22',
     accentColor: '#059669',
     tag: 'باب'
+  },
+  sci: {
+    gradient: 'linear-gradient(135deg, #064e3b 0%, #047857 100%)',
+    pillBg: '#6ee7b7',
+    pillColor: '#022c22',
+    accentColor: '#059669',
+    tag: 'Unit'
+  },
+  geo: {
+    gradient: 'linear-gradient(135deg, #78350f 0%, #b45309 100%)',
+    pillBg: '#fde68a',
+    pillColor: '#451a03',
+    accentColor: '#d97706',
+    tag: 'Unit'
+  },
+  hist: {
+    gradient: 'linear-gradient(135deg, #451a03 0%, #78350f 100%)',
+    pillBg: '#fed7aa',
+    pillColor: '#431407',
+    accentColor: '#b45309',
+    tag: 'Unit'
+  },
+  drawing: {
+    gradient: 'linear-gradient(135deg, #831843 0%, #db2777 100%)',
+    pillBg: '#fbcfe8',
+    pillColor: '#500724',
+    accentColor: '#ec4899',
+    tag: 'Chapter'
+  },
+  arabic: {
+    gradient: 'linear-gradient(135deg, #064e3b 0%, #0f766e 100%)',
+    pillBg: '#a7f3d0',
+    pillColor: '#022c22',
+    accentColor: '#047857',
+    tag: 'الدرس'
   }
 };
 
@@ -13907,6 +14187,10 @@ function getMathChapterList(classId) {
   }
   if (cid === 'cls3') {
     if (typeof MATH_3_DATA !== 'undefined' && Array.isArray(MATH_3_DATA)) return MATH_3_DATA;
+  }
+  if (cid === 'cls6') {
+    if (typeof MATH_6_DATA !== 'undefined' && Array.isArray(MATH_6_DATA)) return MATH_6_DATA;
+    if (typeof DATA !== 'undefined' && DATA.math6Chapters) return DATA.math6Chapters;
   }
   if (cid === 'cls10') {
     if (typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) return MATH_10_DATA;
@@ -17271,6 +17555,10 @@ function playParaTTSFromBtn(btn, lang) {
 function getSubjectChapterList(subjKey, classId) {
   if (subjKey === 'math') return getMathChapterList(classId);
   if (subjKey === 'eng') {
+    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    if (isCls6 && typeof ENGLISH_6_DATA !== 'undefined' && Array.isArray(ENGLISH_6_DATA)) {
+      return ENGLISH_6_DATA;
+    }
     const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
     if (isCls12 && typeof ENGLISH_12_DATA !== 'undefined' && Array.isArray(ENGLISH_12_DATA)) {
       return ENGLISH_12_DATA;
@@ -17296,6 +17584,10 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && (DATA.englishChapters || DATA.engChapters)) ? (DATA.englishChapters || DATA.engChapters) : []);
   }
   if (subjKey === 'urdu') {
+    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    if (isCls6 && typeof URDU_6_DATA !== 'undefined' && Array.isArray(URDU_6_DATA)) {
+      return URDU_6_DATA;
+    }
     const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
     if (isCls12 && typeof URDU_12_DATA !== 'undefined' && Array.isArray(URDU_12_DATA)) {
       return URDU_12_DATA;
@@ -17350,6 +17642,10 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && DATA.pakstudyChapters) ? DATA.pakstudyChapters : []);
   }
   if (subjKey === 'isl') {
+    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    if (isCls6 && typeof ISLAMIAT_6_DATA !== 'undefined' && Array.isArray(ISLAMIAT_6_DATA)) {
+      return ISLAMIAT_6_DATA;
+    }
     const isCls10 = (classId === 'cls10');
     if (isCls10 && typeof ISLAMYAT_10_DATA !== 'undefined' && Array.isArray(ISLAMYAT_10_DATA)) {
       return ISLAMYAT_10_DATA;
@@ -17385,6 +17681,10 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.nazira1Chapters) ? DATA.nazira1Chapters : [];
   }
   if (subjKey === 'pashto') {
+    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    if (isCls6 && typeof PASHTO_6_DATA !== 'undefined' && Array.isArray(PASHTO_6_DATA)) {
+      return PASHTO_6_DATA;
+    }
     const isCls3 = (classId === 'cls3' || state.selectedClass === 'cls3');
     if (isCls3 && typeof PASHTO_3_DATA !== 'undefined' && Array.isArray(PASHTO_3_DATA)) {
       return PASHTO_3_DATA;
@@ -17410,6 +17710,10 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.gk2Chapters) ? DATA.gk2Chapters : [];
   }
   if (subjKey === 'comp') {
+    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    if (isCls6 && typeof COMPUTER_6_DATA !== 'undefined' && Array.isArray(COMPUTER_6_DATA)) {
+      return COMPUTER_6_DATA;
+    }
     const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
     if (isCls12 && typeof COMP_12_DATA !== 'undefined' && Array.isArray(COMP_12_DATA)) {
       return COMP_12_DATA;
@@ -17421,6 +17725,8 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];
   }
   if (subjKey === 'sci') {
+    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    if (isCls6 && typeof GENERAL_SCIENCE_6_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_6_DATA)) return GENERAL_SCIENCE_6_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof GENERAL_SCIENCE_10_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_10_DATA)) return GENERAL_SCIENCE_10_DATA;
     const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
@@ -17428,6 +17734,14 @@ function getSubjectChapterList(subjKey, classId) {
     if (typeof GENERAL_SCIENCE_10_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_10_DATA)) return GENERAL_SCIENCE_10_DATA;
     if (typeof GENERAL_SCIENCE_9_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_9_DATA)) return GENERAL_SCIENCE_9_DATA;
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.genSci10Chapters : DATA.genSci9Chapters)) ? (isCls10 ? DATA.genSci10Chapters : DATA.genSci9Chapters) : [];
+  }
+  if (subjKey === 'geo') {
+    if (typeof GEOGRAPHY_6_DATA !== 'undefined' && Array.isArray(GEOGRAPHY_6_DATA)) return GEOGRAPHY_6_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.geo6Chapters) ? DATA.geo6Chapters : [];
+  }
+  if (subjKey === 'hist') {
+    if (typeof HISTORY_6_DATA !== 'undefined' && Array.isArray(HISTORY_6_DATA)) return HISTORY_6_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.hist6Chapters) ? DATA.hist6Chapters : [];
   }
   if (subjKey === 'civics') {
     if (typeof CIVICS_12_DATA !== 'undefined') return CIVICS_12_DATA;
@@ -17438,6 +17752,8 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.econ12Chapters) ? DATA.econ12Chapters : [];
   }
   if (subjKey === 'hpe') {
+    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    if (isCls6 && typeof HPE_6_DATA !== 'undefined' && Array.isArray(HPE_6_DATA)) return HPE_6_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof HPE_10_DATA !== 'undefined' && Array.isArray(HPE_10_DATA)) return HPE_10_DATA;
     const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
@@ -17446,11 +17762,17 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.hpe10Chapters : (isCls9 ? DATA.hpe9Chapters : DATA.hpe12Chapters))) ? (isCls10 ? DATA.hpe10Chapters : (isCls9 ? DATA.hpe9Chapters : DATA.hpe12Chapters)) : [];
   }
   if (subjKey === 'drawing') {
+    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    if (isCls6 && typeof DRAWING_6_DATA !== 'undefined' && Array.isArray(DRAWING_6_DATA)) return DRAWING_6_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof DRAWING_10_DATA !== 'undefined' && Array.isArray(DRAWING_10_DATA)) return DRAWING_10_DATA;
     const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
     if (isCls9 && typeof DRAWING_9_DATA !== 'undefined' && Array.isArray(DRAWING_9_DATA)) return DRAWING_9_DATA;
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.drawing10Chapters : DATA.drawing9Chapters)) ? (isCls10 ? DATA.drawing10Chapters : DATA.drawing9Chapters) : [];
+  }
+  if (subjKey === 'arabic') {
+    if (typeof ARABIC_6_DATA !== 'undefined' && Array.isArray(ARABIC_6_DATA)) return ARABIC_6_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.arabic6Chapters) ? DATA.arabic6Chapters : [];
   }
   if (subjKey === 'islopt') {
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
@@ -17465,6 +17787,8 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.islHist12Chapters) ? DATA.islHist12Chapters : [];
   }
   if (subjKey === 'quran') {
+    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    if (isCls6 && typeof MUTALIA_QURAN_6_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_6_DATA)) return MUTALIA_QURAN_6_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof MUTALIA_QURAN_10_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_10_DATA)) return MUTALIA_QURAN_10_DATA;
     const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');

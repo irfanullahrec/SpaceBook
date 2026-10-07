@@ -27,7 +27,11 @@ const DATA_FILES = [
   'english_12_data.js', 'pakstudy_12_data.js', 'urdu_12_data.js',
   'biology_12_data.js', 'computer_12_data.js', 'civics_12_data.js',
   'economics_12_data.js', 'hpe_12_data.js', 'islamiat_ikhtiari_12_data.js',
-  'islamic_history_12_data.js', 'quran_12_data.js'
+  'islamic_history_12_data.js', 'quran_12_data.js',
+  'math_6_data.js', 'general_science_6_data.js', 'english_6_data.js', 'urdu_6_data.js',
+  'islamiat_6_data.js', 'computer_6_data.js', 'geography_6_data.js', 'history_6_data.js',
+  'hpe_6_data.js', 'drawing_6_data.js', 'arabic_6_data.js', 'mutalia_quran_6_data.js',
+  'pashto_6_data.js'
 ];
 
 let pass = 0, fail = 0;
@@ -71,11 +75,12 @@ vm.runInContext('for (const n of ' + JSON.stringify([...declared]) + ') { try { 
 const D = sb.DATA;
 if (D) {
   check('DATA registry present', true);
+  check('subjects cls6 = 13', D.subjects && D.subjects.cls6 && D.subjects.cls6.length === 13, 'got ' + (D.subjects ? D.subjects.cls6.length : 'n/a'));
   check('subjects cls9 = 14', D.subjects && D.subjects.cls9 && D.subjects.cls9.length === 14, 'got ' + (D.subjects ? D.subjects.cls9.length : 'n/a'));
   check('subjects cls10 = 14', D.subjects && D.subjects.cls10 && D.subjects.cls10.length === 14, 'got ' + (D.subjects ? D.subjects.cls10.length : 'n/a'));
   check('Class 1 Drawing registered', D.subjects && D.subjects.cls1 && D.subjects.cls1.some(s => s.id === 'cls1-drawing' && s.hasDrawing));
   check('subject ids unique', (() => {
-    const all = [].concat(D.subjects.cls9, D.subjects.cls10, D.subjects.cls11, D.subjects.cls12).map(s => s.id);
+    const all = [].concat(D.subjects.cls6, D.subjects.cls9, D.subjects.cls10, D.subjects.cls11, D.subjects.cls12).map(s => s.id);
     return new Set(all).size === all.length;
   })());
   check('class counts match subject arrays', D.classes.every(c => c.subjects === (D.subjects[c.id] || []).length),
@@ -384,6 +389,13 @@ check('index.html loads Class 3 Islamyat and Nazira datasets', [
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 3 English, GK, Pashto datasets', [
   'js/english_3_data.js', 'js/gk_3_data.js', 'js/pashto_3_data.js'
+].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
+check('index.html loads Class 6 new datasets before app.js', [
+  'js/math_6_data.js', 'js/general_science_6_data.js', 'js/english_6_data.js',
+  'js/urdu_6_data.js', 'js/islamiat_6_data.js', 'js/computer_6_data.js',
+  'js/geography_6_data.js', 'js/history_6_data.js', 'js/hpe_6_data.js',
+  'js/drawing_6_data.js', 'js/arabic_6_data.js', 'js/mutalia_quran_6_data.js',
+  'js/pashto_6_data.js'
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 9 new datasets before app.js', [
   'js/general_science_9_data.js', 'js/hpe_9_data.js',
