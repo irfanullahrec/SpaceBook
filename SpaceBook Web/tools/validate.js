@@ -28,6 +28,8 @@ const DATA_FILES = [
   'biology_12_data.js', 'computer_12_data.js', 'civics_12_data.js',
   'economics_12_data.js', 'hpe_12_data.js', 'islamiat_ikhtiari_12_data.js',
   'islamic_history_12_data.js', 'quran_12_data.js',
+  'math_5_data.js', 'general_science_5_data.js', 'english_5_data.js', 'urdu_5_data.js',
+  'islamiat_5_data.js', 'social_studies_5_data.js', 'social_studies_um_5_data.js', 'pashto_5_data.js',
   'math_6_data.js', 'general_science_6_data.js', 'english_6_data.js', 'urdu_6_data.js',
   'islamiat_6_data.js', 'computer_6_data.js', 'geography_6_data.js', 'history_6_data.js',
   'hpe_6_data.js', 'drawing_6_data.js', 'arabic_6_data.js', 'mutalia_quran_6_data.js',
@@ -363,6 +365,17 @@ check('ISLAMIAT_OPT_12_DATA chapters = 6', Array.isArray(sb.ISLAMIAT_OPT_12_DATA
 check('ISLAMIC_HISTORY_12_DATA chapters = 6', Array.isArray(sb.ISLAMIC_HISTORY_12_DATA) && sb.ISLAMIC_HISTORY_12_DATA.length === 6 && sb.ISLAMIC_HISTORY_12_DATA.every(ch => ch.sections && ch.exercise));
 check('QURAN_12_DATA chapters = 8', Array.isArray(sb.QURAN_12_DATA) && sb.QURAN_12_DATA.length === 8 && sb.QURAN_12_DATA.every(ch => ch.sections && ch.exercise));
 
+check('MATH_5_DATA units = 9', Array.isArray(sb.MATH_5_DATA) && sb.MATH_5_DATA.length === 9);
+check('GENERAL_SCIENCE_5_DATA units = 10', Array.isArray(sb.GENERAL_SCIENCE_5_DATA) && sb.GENERAL_SCIENCE_5_DATA.length === 10);
+check('ENGLISH_5_DATA units = 14', Array.isArray(sb.ENGLISH_5_DATA) && sb.ENGLISH_5_DATA.length === 14);
+check('URDU_5_DATA units = 21', Array.isArray(sb.URDU_5_DATA) && sb.URDU_5_DATA.length === 21);
+check('ISLAMIAT_5_DATA units = 7', Array.isArray(sb.ISLAMIAT_5_DATA) && sb.ISLAMIAT_5_DATA.length === 7);
+check('SOCIAL_STUDIES_5_DATA units = 6', Array.isArray(sb.SOCIAL_STUDIES_5_DATA) && sb.SOCIAL_STUDIES_5_DATA.length === 6);
+check('SOCIAL_STUDIES_UM_5_DATA units = 6', Array.isArray(sb.SOCIAL_STUDIES_UM_5_DATA) && sb.SOCIAL_STUDIES_UM_5_DATA.length === 6);
+check('PASHTO_5_DATA units = 28', Array.isArray(sb.PASHTO_5_DATA) && sb.PASHTO_5_DATA.length === 28);
+check('Class 5 all 8 subjects registered', D.subjects && D.subjects.cls5 && D.subjects.cls5.length === 8 && ['cls5-math','cls5-sci','cls5-eng','cls5-urdu','cls5-isl','cls5-sst','cls5-sstum','cls5-pashto'].every(id => D.subjects.cls5.some(s => s.id === id)));
+check('Class 5 textbook PDF links available for all 8 books', ['b-cls5-math','b-cls5-sci','b-cls5-eng','b-cls5-urdu','b-cls5-isl','b-cls5-sst','b-cls5-sstum','b-cls5-pashto'].every(id => D.books.some(b => b.id === id && b.available && b.pdfPath)));
+
 
 // --------------------------------------------------- 3. index.html wiring
 console.log('--- index.html ---');
@@ -389,6 +402,11 @@ check('index.html loads Class 3 Islamyat and Nazira datasets', [
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 3 English, GK, Pashto datasets', [
   'js/english_3_data.js', 'js/gk_3_data.js', 'js/pashto_3_data.js'
+].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
+check('index.html loads Class 5 new datasets before app.js', [
+  'js/math_5_data.js', 'js/general_science_5_data.js', 'js/english_5_data.js',
+  'js/urdu_5_data.js', 'js/islamiat_5_data.js', 'js/social_studies_5_data.js',
+  'js/social_studies_um_5_data.js', 'js/pashto_5_data.js'
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 6 new datasets before app.js', [
   'js/math_6_data.js', 'js/general_science_6_data.js', 'js/english_6_data.js',

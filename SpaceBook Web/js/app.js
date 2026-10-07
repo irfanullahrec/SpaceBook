@@ -675,8 +675,8 @@ function goToSubjects(classId) {
     { label: cls.name,   active: true }
   ];
 
-  // Classes 1, 2, 3, 6, 9, 10, and 12 have integrated content and subjects ready
-  if (!['cls1', 'cls2', 'cls3', 'cls6', 'cls9', 'cls10', 'cls12'].includes(classId)) {
+  // Classes with subject book grids and integrated study content.
+  if (!['cls1', 'cls2', 'cls3', 'cls5', 'cls6', 'cls7', 'cls9', 'cls10', 'cls12'].includes(classId)) {
     pageContent().innerHTML = `
       <!-- 1. Single-Line Consolidated Header Bar -->
       <div class="subjects-single-line-bar">
@@ -753,6 +753,143 @@ function goToSubjects(classId) {
 
   // Rich metadata helper for subject statistical cards
   const getSubjectMeta = (s) => {
+    if (classId === "cls7" && s.id === "cls7-math") {
+      return {
+        headerColor: "#2563eb",
+        urduName: "ریاضی (ساتویں جماعت)",
+        badgeText: "KPTBB Class 7 textbook available",
+        badgeClass: "badge-blue",
+        metric1Val: "13 Textbook Units",
+        metric1Lbl: "162 Lesson Sections",
+        metric2Val: "82 Exercise Sets",
+        metric2Lbl: "Textbook source transcription",
+        metric3Val: "Official PDF",
+        metric3Lbl: "KPTBB Mathematics Book",
+        topics: ["Rational Numbers", "Laws of Operations", "Square Roots", "Ratio & Proportion", "Financial Arithmetic", "Sets", "Algebra", "Linear Equations", "Mensuration", "Geometry", "Data Management"]
+      };
+    }
+    if (classId === "cls5" || (s.id && s.id.startsWith("cls5-"))) {
+      if (s.id === "cls5-math") {
+        return {
+          headerColor: "#2563eb",
+          urduName: "ریاضی (پانچویں جماعت)",
+          badgeText: "✓ 100% Solved KPK Textbook",
+          badgeClass: "badge-blue",
+          metric1Val: "9 Units",
+          metric1Lbl: "Whole Numbers to Data Handling",
+          metric2Val: "90+ Solved Qs",
+          metric2Lbl: "Short & Long Exercises",
+          metric3Val: "Complete MCQs",
+          metric3Lbl: "Concepts & Solutions",
+          topics: ["Whole Numbers & Operations", "HCF & LCM", "Fractions", "Decimals & Percentage", "Distance & Time", "Unitary Method", "Geometry", "Perimeter & Area", "Data Handling"]
+        };
+      }
+      if (s.id === "cls5-sci") {
+        return {
+          headerColor: "#059669",
+          urduName: "جنرل سائنس (پانچویں جماعت)",
+          badgeText: "✓ 100% Verbatim KPK Textbook",
+          badgeClass: "badge-green",
+          metric1Val: "10 Units",
+          metric1Lbl: "Classification to Daily Tech",
+          metric2Val: "100+ Solved Qs",
+          metric2Lbl: "Exercise Question Bank",
+          metric3Val: "Scientific Concepts",
+          metric3Lbl: "MCQs & Explanations",
+          topics: ["Classification of Living Things", "Microorganisms", "Flowers & Seeds", "Environmental Pollution", "Matter Changes", "Light & Sound", "Electricity & Magnetism", "Earth Structure", "Space & Satellites", "Everyday Tech"]
+        };
+      }
+      if (s.id === "cls5-eng") {
+        return {
+          headerColor: "#4f46e5",
+          urduName: "انگریزی (پانچویں جماعت)",
+          badgeText: "✓ 100% Verbatim KPK Textbook",
+          badgeClass: "badge-indigo",
+          metric1Val: "14 Units",
+          metric1Lbl: "Patience to Two Little Kittens",
+          metric2Val: "115+ Solved Qs",
+          metric2Lbl: "Comprehension & Grammar",
+          metric3Val: "Vocabulary & MCQs",
+          metric3Lbl: "Trilingual Translations",
+          topics: ["Patience", "Be Grateful", "Women Role Models", "Unforgettable Moments", "Save the Earth", "Healthy Life", "Nation's Strength", "Eid-ul-Azha"]
+        };
+      }
+      if (s.id === "cls5-urdu") {
+        return {
+          headerColor: "#16a34a",
+          urduName: "اردو لازمی (پانچویں جماعت)",
+          badgeText: "✓ 100% درسی متن و مشقیں",
+          badgeClass: "badge-green",
+          metric1Val: "21 اسباق",
+          metric1Lbl: "حمد، نعت، اسباق و نظمیں",
+          metric2Val: "150+ حل شدہ سوالات",
+          metric2Lbl: "مشقی سوالات و جوابات",
+          metric3Val: "قواعد و تشریح",
+          metric3Lbl: "الفاظ معنی، گرامر و کثیر الانتخابی",
+          topics: ["حمد باری تعالیٰ", "نعت رسول مقبول ﷺ", "ایفائے عہد", "خدمت خلق", "ہوا چلی", "میری پہچان ہے تو", "ہمارے پیشے", "حضرت عثمان غنیؓ", "پیغامِ اقبالؒ"]
+        };
+      }
+      if (s.id === "cls5-isl") {
+        return {
+          headerColor: "#0d9488",
+          urduName: "اسلامیات لازمی (پانچویں جماعت)",
+          badgeText: "✓ مستند قرآنی و نبوی تعلیمات",
+          badgeClass: "badge-teal",
+          metric1Val: "7 ابواب",
+          metric1Lbl: "قرآن، ایمانیات، سیرت و اخلاق",
+          metric2Val: "70+ حل شدہ سوالات",
+          metric2Lbl: "مشقی و موضوعاتی سوالات",
+          metric3Val: "ایمان و عمل",
+          metric3Lbl: "احادیث، عبادات و مشاہیر اسلام",
+          topics: ["قرآن مجید و حدیث", "ایمانیات و عبادات", "سیرت طیبہ ﷺ", "اخلاق و آداب", "حسنِ معاملات", "مشاہیر اسلام", "عصرِ حاضر کے تقاضے"]
+        };
+      }
+      if (s.id === "cls5-sst") {
+        return {
+          headerColor: "#0d9488",
+          urduName: "سوشل اسٹڈیز (انگلش میڈیم)",
+          badgeText: "✓ Citizenship & History",
+          badgeClass: "badge-teal",
+          metric1Val: "6 Units",
+          metric1Lbl: "Citizenship to Economics",
+          metric2Val: "60+ Solved Qs",
+          metric2Lbl: "Civic & History Qs",
+          metric3Val: "Geography & Economy",
+          metric3Lbl: "MCQs & Explanations",
+          topics: ["Citizenship & Human Rights", "Culture & Diversity", "State & Government", "History & Pakistan Movement", "Geography & Natural Regions", "Economics & Trade"]
+        };
+      }
+      if (s.id === "cls5-sstum") {
+        return {
+          headerColor: "#059669",
+          urduName: "معاشرتی علوم (اردو میڈیم)",
+          badgeText: "✓ شہریت، تاریخ و جغرافیہ",
+          badgeClass: "badge-green",
+          metric1Val: "6 ابواب",
+          metric1Lbl: "شہریت تا معاشیات",
+          metric2Val: "60+ حل شدہ سوالات",
+          metric2Lbl: "مشقی و معلوماتی سوالات",
+          metric3Val: "پاکستان اور دنیا",
+          metric3Lbl: "کثیر الانتخابی و تفہیم",
+          topics: ["شہریت اور انسانی حقوق", "ریاست اور حکومت", "پاکستانی ثقافت", "تاریخ اور تحریک پاکستان", "جغرافیہ اور قدرتی خطے", "معاشیات اور تجارت"]
+        };
+      }
+      if (s.id === "cls5-pashto") {
+        return {
+          headerColor: "#0f766e",
+          urduName: "پښتو لازمي (پنځم ټولګی)",
+          badgeText: "✓ 100% درسي متن او مشقونه",
+          badgeClass: "badge-teal",
+          metric1Val: "28 اسباق",
+          metric1Lbl: "حمد، نعت، لوستونه او نظمونه",
+          metric2Val: "160+ حل شوي سوالونه",
+          metric2Lbl: "مشغولتیاوې او درسي پوښتنې",
+          metric3Val: "ادب او ګرامر",
+          metric3Lbl: "خوشحال بابا، کلتور او اخلاق",
+          topics: ["حمد او نعت", "زغم او بخښنه", "حضرت خدیجه رض", "د وطن نه روانګي", "د اټک قلا", "خوشحال خان خټک", "پښتونولي", "شېر خان شهید", "دعا"]
+        };
+      }
+    }
     if (classId === "cls6" || (s.id && s.id.startsWith("cls6-"))) {
       if (s.id === "cls6-math") {
         return {
@@ -1388,7 +1525,7 @@ function goToSubjects(classId) {
     "cls3-pashto": "3rd Pashto.jpg", "cls3-drawing": "3rd Drawing.jpg",
     "cls5-eng": "5th English.jpg", "cls5-urdu": "5th Urdu.jpg", "cls5-math": "5th Maths.jpg",
     "cls5-sci": "5th General Science.jpg", "cls5-sst": "5th Social Study.jpg", "cls5-isl": "5th Islamiat.jpg",
-    "cls5-pashto": "5th Pashto.jpg",
+    "cls5-sstum": "5th Social Study UM.jpg", "cls5-pashto": "5th Pashto.jpg",
     "cls6-math": "Math.jpg", "cls6-sci": "General science.jpg", "cls6-eng": "English.jpg",
     "cls6-urdu": "Urdu.jpg", "cls6-isl": "Islamiat.jpg", "cls6-comp": "Computer.jpg",
     "cls6-geo": "Geography.jpg", "cls6-hist": "History.jpg", "cls6-hpe": "Hpe.jpg",
@@ -1509,7 +1646,7 @@ function openSubject(classId, subjId) {
     renderDrawingView();
     return;
   }
-  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls6' && classId !== 'cls1' && classId !== 'cls2' && classId !== 'cls3' && classId !== 'cls12') {
+  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls5' && classId !== 'cls6' && classId !== 'cls7' && classId !== 'cls1' && classId !== 'cls2' && classId !== 'cls3' && classId !== 'cls12') {
     goToSubjects(classId);
     return;
   }
@@ -1518,6 +1655,37 @@ function openSubject(classId, subjId) {
   const subs = DATA.subjects[classId] || [];
   const subj = subs.find(s => s.id === subjId);
   if (!subj) return;
+  if (classId === 'cls5') {
+    if (subjId === 'cls5-math' || subj.hasMath) {
+      state.activeSubject = "math";
+      openSubjectWorkspace(classId, "math", subj);
+    } else if (subjId === 'cls5-sci' || subj.hasGenSci) {
+      state.activeSubject = "sci";
+      openSubjectWorkspace(classId, "sci", subj);
+    } else if (subjId === 'cls5-eng' || subj.hasEng) {
+      state.activeSubject = "eng";
+      openSubjectWorkspace(classId, "eng", subj);
+    } else if (subjId === 'cls5-urdu' || subj.hasUrdu) {
+      state.activeSubject = "urdu";
+      openSubjectWorkspace(classId, "urdu", subj);
+    } else if (subjId === 'cls5-isl' || subj.hasIsl) {
+      state.activeSubject = "isl";
+      openSubjectWorkspace(classId, "isl", subj);
+    } else if (subjId === 'cls5-sst' || subj.hasSst) {
+      state.activeSubject = "sst";
+      openSubjectWorkspace(classId, "sst", subj);
+    } else if (subjId === 'cls5-sstum' || subj.hasSstum) {
+      state.activeSubject = "sstum";
+      openSubjectWorkspace(classId, "sstum", subj);
+    } else if (subjId === 'cls5-pashto' || subj.hasPashto) {
+      state.activeSubject = "pashto";
+      openSubjectWorkspace(classId, "pashto", subj);
+    } else {
+      state.activeSubject = subj.id;
+      openSubjectWorkspace(classId, subj.id.replace('cls5-', ''), subj);
+    }
+    return;
+  }
   if (classId === 'cls6') {
     if (subjId === 'cls6-math' || subj.hasMath) {
       state.activeSubject = "math";
@@ -1579,7 +1747,7 @@ function openSubject(classId, subjId) {
   } else if (subj.hasUrdu || subjId === 'cls9-urdu' || subjId === 'cls10-urdu' || subjId === 'cls2-urdu' || subjId === 'cls12-urdu') {
     state.activeSubject = "urdu";
     openSubjectWorkspace(classId, "urdu", subj);
-  } else if (subj.hasMath || subjId === 'cls1-math' || subjId === 'cls2-math' || subjId === 'cls3-math' || subjId === 'cls9-math' || subjId === 'cls10-math' || subjId === 'cls12-math') {
+  } else if (subj.hasMath || subjId === 'cls1-math' || subjId === 'cls2-math' || subjId === 'cls3-math' || subjId === 'cls7-math' || subjId === 'cls9-math' || subjId === 'cls10-math' || subjId === 'cls12-math') {
     state.activeSubject = "math";
     openMathView(classId, subj);
   } else if (subj.hasPakStudy || subjId === 'cls9-pakstudy' || subjId === 'cls10-pakstudy' || subjId === 'cls12-pak' || subjId === 'cls12-pakstudy') {
@@ -11127,7 +11295,9 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
 
   // 1. MATHEMATICS
   if (sid.includes("math")) {
-    const mathDataset = (sid === 'cls10-math' || classId === 'cls10')
+    const mathDataset = (sid === 'cls7-math' || classId === 'cls7')
+      ? ((typeof MATH_7_DATA !== 'undefined' && Array.isArray(MATH_7_DATA)) ? MATH_7_DATA : [])
+      : (sid === 'cls10-math' || classId === 'cls10')
       ? ((typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) ? MATH_10_DATA : ((typeof DATA !== 'undefined' && DATA.math10Chapters) ? DATA.math10Chapters : []))
       : ((typeof MATH_DATA !== 'undefined' && Array.isArray(MATH_DATA)) ? MATH_DATA : ((typeof DATA !== 'undefined' && DATA.mathChapters) ? DATA.mathChapters : []));
     if (Array.isArray(mathDataset)) {
@@ -13387,6 +13557,20 @@ const SUBJECT_THEMES = {
     pillColor: '#022c22',
     accentColor: '#047857',
     tag: 'الدرس'
+  },
+  sst: {
+    gradient: 'linear-gradient(135deg, #0f766e 0%, #0d9488 100%)',
+    pillBg: '#99f6e4',
+    pillColor: '#134e4a',
+    accentColor: '#0d9488',
+    tag: 'Chapter'
+  },
+  sstum: {
+    gradient: 'linear-gradient(135deg, #064e3b 0%, #047857 100%)',
+    pillBg: '#a7f3d0',
+    pillColor: '#064e3b',
+    accentColor: '#059669',
+    tag: 'باب'
   }
 };
 
@@ -13960,10 +14144,14 @@ function renderTopicSloInnerContent(sec, ch, innerTab) {
 }
 
 
-function renderTextbookLessonBody(text) {
-  const escape = value => String(value).replace(/[&<>"']/g, ch => ({
+function renderMathEscapedText(value) {
+  return String(value || '').replace(/[&<>"']/g, ch => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   })[ch]);
+}
+
+function renderTextbookLessonBody(text) {
+  const escape = renderMathEscapedText;
   const blocks = String(text || '').split(/\n\s*\n/).map(s => s.trim()).filter(Boolean);
   let listOpen = false;
   const out = [];
@@ -14081,7 +14269,7 @@ function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
       <div style="margin-bottom:0.5rem;">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
           <h4 style="margin:0;color:#0f172a;font-size:0.98rem;font-weight:700;">✍️ ${exMatch.title}</h4>
-          <span style="font-size:0.8rem;color:#15803d;font-weight:700;background:#dcfce7;padding:0.2rem 0.5rem;border-radius:4px;">${state.selectedClass === 'cls10' ? 'Textbook questions' : '100% Solved'}</span>
+          <span style="font-size:0.8rem;color:#15803d;font-weight:700;background:#dcfce7;padding:0.2rem 0.5rem;border-radius:4px;">${state.selectedClass === 'cls10' || state.selectedClass === 'cls7' ? 'Textbook questions' : '100% Solved'}</span>
         </div>
         ${catTabs}
         <div id="topic-ex-list-${sec.id}">
@@ -14188,10 +14376,15 @@ function getMathChapterList(classId) {
   if (cid === 'cls3') {
     if (typeof MATH_3_DATA !== 'undefined' && Array.isArray(MATH_3_DATA)) return MATH_3_DATA;
   }
+  if (cid === 'cls5') {
+    if (typeof MATH_5_DATA !== 'undefined' && Array.isArray(MATH_5_DATA)) return MATH_5_DATA;
+    if (typeof DATA !== 'undefined' && DATA.math5Chapters) return DATA.math5Chapters;
+  }
   if (cid === 'cls6') {
     if (typeof MATH_6_DATA !== 'undefined' && Array.isArray(MATH_6_DATA)) return MATH_6_DATA;
     if (typeof DATA !== 'undefined' && DATA.math6Chapters) return DATA.math6Chapters;
   }
+  if (cid === 'cls7' && typeof MATH_7_DATA !== 'undefined' && Array.isArray(MATH_7_DATA)) return MATH_7_DATA;
   if (cid === 'cls10') {
     if (typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) return MATH_10_DATA;
     if (typeof DATA !== 'undefined' && DATA.math10Chapters) return DATA.math10Chapters;
@@ -14226,6 +14419,12 @@ function openMathView(classId, subj) {
       ? 'file:///D:/SpaceBook/Books/2nd/2nd%20Maths/PDF/Math%20Book%20for%202%20class%20KPTBB.pdf'
     : (classId === 'cls3')
       ? 'file:///D:/SpaceBook/Books/3rd/3rd%20Maths/PDF/Math%20book%203%20class%20KPK_page_part_01_of_05.pdf'
+    : (classId === 'cls5')
+      ? 'file:///D:/SpaceBook/Books/5th/5th%20Maths/PDF/Math%20Book%20for%205%20class%20KPTBB.pdf'
+    : (classId === 'cls6')
+      ? 'file:///D:/SpaceBook/Books/6th/Math/pdf/Math%20Book%20for%206%20class%20KPTBB.pdf'
+    : (classId === 'cls7')
+      ? 'file:///D:/SpaceBook/Books/7th/7th%20MAths/PDF/Math%20Book%20for%207%20class%20KPTBB.pdf'
     : ((classId === 'cls10')
       ? 'file://DESKTOP-R2HQSAV/SpaceBook/10th Maths/PDF/10th Maths.pdf'
       : null);
@@ -14259,7 +14458,7 @@ function openMathView(classId, subj) {
           <button onclick="goToSubjects('${classId}')" class="math-sidebar-back-btn" title="Back to Subjects">←</button>
           <div class="math-sidebar-title-wrap">
             <span class="math-sidebar-title">CHAPTERS</span>
-            <span class="math-sidebar-sub">${classId === 'cls12' ? `${chList.length} textbook units` : `${chList.length} Complete Solved Units`}</span>
+          <span class="math-sidebar-sub">${classId === 'cls12' || classId === 'cls7' ? `${chList.length} textbook units` : `${chList.length} Complete Solved Units`}</span>
           </div>
         </div>
         <div class="math-ch-list">${chapBtns}</div>
@@ -15988,7 +16187,7 @@ function renderMathChapter(index) {
     : (ch.slos || {});
   const totalSLOs = ((comprehensiveSLOs.mcqs ? comprehensiveSLOs.mcqs.length : 0) +
                      (comprehensiveSLOs.shortQuestions ? comprehensiveSLOs.shortQuestions.length : 0) +
-                     (comprehensiveSLOs.longQuestions ? comprehensiveSLOs.longQuestions.length : 0)) || (state.selectedClass === 'cls12' ? 0 : 63);
+                     (comprehensiveSLOs.longQuestions ? comprehensiveSLOs.longQuestions.length : 0)) || ((state.selectedClass === 'cls12' || state.selectedClass === 'cls7') ? 0 : 63);
   if (state.selectedClass === 'cls12' && !['lesson', 'examples', 'exercises', 'slos', 'formulas'].includes(state.activeMathTab)) {
     state.activeMathTab = 'lesson';
   }
@@ -16032,7 +16231,7 @@ function renderMathLesson(ch) {
     <div class="math-topic-card math-accordion-card" id="math-topic-${sec.id || idx}">
       <div class="math-acc-header" onclick="toggleMathAccordion(this)">
         <div style="display:flex;align-items:center;gap:0.75rem;">
-          <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">Topic ${sec.id}</span>
+          <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">${state.selectedClass === 'cls7' ? (String(sec.id).match(/^\d/) ? `Lesson ${sec.id}` : sec.title) : `Topic ${sec.id}`}</span>
           <h3 style="color:#0f172a;font-size:1.1rem;font-weight:700;margin:0;">
             ${sec.title}
           </h3>
@@ -16045,7 +16244,7 @@ function renderMathLesson(ch) {
       <div class="math-accordion-body" style="display:none;margin-top:1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
         <!-- Horizontal Sub-Tabs immediately below topic title -->
         <div class="topic-sub-tabs-bar" data-topic="${sec.id}">
-          ${state.selectedClass === 'cls12'
+          ${state.selectedClass === 'cls12' || state.selectedClass === 'cls7'
             ? `<button class="topic-sub-tab-btn active" data-subtab="english" onclick="switchMathTopicSubTab('${sec.id}', 'english', this)">📖 Lesson</button>`
             : `<button class="topic-sub-tab-btn active" data-subtab="english" onclick="switchMathTopicSubTab('${sec.id}', 'english', this)">📖 English</button>
               <button class="topic-sub-tab-btn" data-subtab="urdu" onclick="switchMathTopicSubTab('${sec.id}', 'urdu', this)">🌐 Urdu</button>
@@ -16070,6 +16269,9 @@ function renderMathLesson(ch) {
 
 function renderMathExamples(ch) {
   if (!ch.workedExamples || ch.workedExamples.length === 0) {
+    if (state.selectedClass === 'cls7') {
+      return `<div style="padding:2.5rem;text-align:center;background:#fff;border-radius:12px;border:1px solid var(--border);line-height:1.7;color:#475569;">No numbered worked examples were captured for this unit in the textbook transcription.</div>`;
+    }
     const unit = Number(ch.number);
     const note = unit === 8
       ? 'The textbook develops the projection theorems through proofs in Lessons 8.1–8.3. It does not include a numbered worked-example section for this unit.'
@@ -16077,6 +16279,27 @@ function renderMathExamples(ch) {
         ? 'The textbook teaches these compass-and-straightedge constructions in Lessons 13.1–13.3. It does not include a numbered worked-example section for this unit.'
         : `No numbered worked examples are listed for Unit ${ch.number} in the scanned textbook.`;
     return `<div style="padding:2.5rem;text-align:center;background:#fff;border-radius:12px;border:1px solid var(--border);line-height:1.7;color:#475569;">${note}</div>`;
+  }
+
+  if (state.selectedClass === 'cls7') {
+    return `<div id="mathExamplesList" class="math-cards-grid-target">
+      ${ch.workedExamples.map((ex, idx) => `
+        <div class="math-topic-card math-accordion-card" id="math-ex-${ex.id || idx}" style="border-left:4px solid #0284c7;">
+          <div class="math-acc-header" onclick="toggleMathAccordion(this)">
+            <div style="display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;">
+              <span class="math-badge" style="background:#0284c7;color:#fff;">${renderMathEscapedText(ex.title)}</span>
+              <span style="font-weight:700;color:#0f172a;">${renderMathEscapedText((ex.problem || '').split(String.fromCharCode(10))[0].slice(0, 110))}</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:.5rem;">
+              <span style="font-size:.78rem;color:#0284c7;font-weight:700;background:#e0f2fe;padding:.2rem .55rem;border-radius:4px;">Textbook example</span>
+              <span class="math-acc-icon">+</span>
+            </div>
+          </div>
+          <div class="math-accordion-body" style="display:none;margin-top:1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
+            ${ex.solution ? `<h4 style="margin:.2rem 0 .5rem;color:#0f172a;">Question</h4>${renderTextbookLessonBody(ex.problem || '')}<h4 style="margin:1rem 0 .5rem;color:#0369a1;">Textbook solution</h4>${renderTextbookLessonBody(ex.solution)}` : `<h4 style="margin:.2rem 0 .5rem;color:#0f172a;">Textbook example</h4>${renderTextbookLessonBody(ex.problem || '')}`}
+          </div>
+        </div>`).join('')}
+    </div>`;
   }
 
   const examplesHtml = ch.workedExamples.map((ex, idx) => `
@@ -16192,17 +16415,17 @@ function switchMathEx(exKey, activeCat) {
             <div style="display:flex;align-items:center;gap:0.6rem;flex-wrap:wrap;">
               <span class="math-badge" style="background:#0284c7;color:#fff;">${p.qNo || ('Q' + (pIdx + 1))}</span>
               <span style="font-weight:700;color:#0f172a;font-size:0.96rem;">
-                ${p.question.split('\n')[0].slice(0, 95)}${p.question.length > 95 ? '...' : ''}
+                ${renderMathEscapedText(p.question.split('\n')[0].slice(0, 95))}${p.question.length > 95 ? '...' : ''}
               </span>
             </div>
             <div style="display:flex;align-items:center;gap:0.55rem;">
-                  <span style="font-size:0.78rem;color:#15803d;font-weight:700;background:#dcfce7;padding:0.2rem 0.55rem;border-radius:4px;">Solution</span>
+                  <span style="font-size:0.78rem;color:#15803d;font-weight:700;background:#dcfce7;padding:0.2rem 0.55rem;border-radius:4px;">${p.solution || p.answer ? 'Solution' : 'Textbook source'}</span>
               <span class="math-acc-icon">+</span>
             </div>
           </div>
           <div class="math-accordion-body" style="display:none;margin-top:1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
             <div style="font-weight:700;font-size:1.02rem;color:#0f172a;margin-bottom:0.85rem;white-space:pre-line;line-height:1.65;background:#f8fafc;padding:0.85rem 1.1rem;border-radius:8px;border:1px solid #e2e8f0;">
-              ${p.question}
+              ${state.selectedClass === 'cls7' ? renderTextbookLessonBody(p.question) : p.question}
             </div>
             ${Array.isArray(p.options) && p.options.length ? `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.45rem;margin:0 0 .85rem;padding:.65rem .8rem;background:#fff;border:1px solid #cbd5e1;border-radius:8px;">${p.options.map(option => `<div style="display:flex;align-items:flex-start;gap:.55rem;padding:.3rem .2rem;line-height:1.5;"><span aria-hidden="true" style="width:14px;height:14px;flex:0 0 14px;border:1.5px solid #475569;border-radius:50%;margin-top:3px;"></span><span>${option}</span></div>`).join('')}</div>` : ''}
             ${renderMathDiagram(p, ch.number) || (visualSection && (state.selectedClass === 'cls1' || state.selectedClass === 'cls2') ? renderPrimaryMathDiagram(state.selectedClass, ch.number, visualSection.id, p) : '')}
@@ -16288,8 +16511,11 @@ function renderMathSloCategoryContent(category, slos) {
   const lqs = slos.longQuestions || [];
 
   if (!mcqs.length && !sqs.length && !lqs.length) {
+    const emptyMessage = state.selectedClass === 'cls7'
+      ? 'A verified board SLO question bank has not been transcribed for this unit yet.'
+      : 'The scanned Chapter 1 textbook pages do not contain a separate SLO question bank. This section will show verified Chapter 1 questions when they are added.';
     return `<div class="math-topic-card" style="padding:1.25rem;color:#475569;line-height:1.7;">
-      The scanned Chapter 1 textbook pages do not contain a separate SLO question bank. This section will show verified Chapter 1 questions when they are added.
+      ${emptyMessage}
     </div>`;
   }
 
@@ -16399,6 +16625,7 @@ function getComprehensiveChapterSLOBank(ch) {
   // Class 12 uses textbook-specific question data. Do not reuse the legacy
   // Class 9 matrix bank merely because both chapters are numbered Unit 1.
   if (state.selectedClass === 'cls12') return (ch && ch.slos) || {};
+  if (state.selectedClass === 'cls7') return (ch && ch.slos) || {};
 
   if ((state.selectedClass === 'cls1' || state.selectedClass === 'cls2') && ch && ch.slos) return ch.slos;
 
@@ -17555,6 +17782,10 @@ function playParaTTSFromBtn(btn, lang) {
 function getSubjectChapterList(subjKey, classId) {
   if (subjKey === 'math') return getMathChapterList(classId);
   if (subjKey === 'eng') {
+    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    if (isCls5 && typeof ENGLISH_5_DATA !== 'undefined' && Array.isArray(ENGLISH_5_DATA)) {
+      return ENGLISH_5_DATA;
+    }
     const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
     if (isCls6 && typeof ENGLISH_6_DATA !== 'undefined' && Array.isArray(ENGLISH_6_DATA)) {
       return ENGLISH_6_DATA;
@@ -17584,6 +17815,10 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && (DATA.englishChapters || DATA.engChapters)) ? (DATA.englishChapters || DATA.engChapters) : []);
   }
   if (subjKey === 'urdu') {
+    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    if (isCls5 && typeof URDU_5_DATA !== 'undefined' && Array.isArray(URDU_5_DATA)) {
+      return URDU_5_DATA;
+    }
     const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
     if (isCls6 && typeof URDU_6_DATA !== 'undefined' && Array.isArray(URDU_6_DATA)) {
       return URDU_6_DATA;
@@ -17642,6 +17877,10 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && DATA.pakstudyChapters) ? DATA.pakstudyChapters : []);
   }
   if (subjKey === 'isl') {
+    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    if (isCls5 && typeof ISLAMIAT_5_DATA !== 'undefined' && Array.isArray(ISLAMIAT_5_DATA)) {
+      return ISLAMIAT_5_DATA;
+    }
     const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
     if (isCls6 && typeof ISLAMIAT_6_DATA !== 'undefined' && Array.isArray(ISLAMIAT_6_DATA)) {
       return ISLAMIAT_6_DATA;
@@ -17681,6 +17920,10 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.nazira1Chapters) ? DATA.nazira1Chapters : [];
   }
   if (subjKey === 'pashto') {
+    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    if (isCls5 && typeof PASHTO_5_DATA !== 'undefined' && Array.isArray(PASHTO_5_DATA)) {
+      return PASHTO_5_DATA;
+    }
     const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
     if (isCls6 && typeof PASHTO_6_DATA !== 'undefined' && Array.isArray(PASHTO_6_DATA)) {
       return PASHTO_6_DATA;
@@ -17813,8 +18056,8 @@ function openSubjectWorkspace(classId, subjKey, subjObj) {
   const theme = SUBJECT_THEMES[subjKey] || SUBJECT_THEMES.math;
   const chList = getSubjectChapterList(subjKey, classId);
   const subjName = (subjObj && subjObj.name) ? subjObj.name : (subjKey.toUpperCase());
-  const subjUrdu = (subjObj && (subjObj.nameUrdu || subjObj.nameUr)) ? (subjObj.nameUrdu || subjObj.nameUr) : '';
-  const pdfFile = (subjObj && subjObj.pdf) ? subjObj.pdf : `assets/books/${cls.name.replace(' ', '-')}-${subjName}-KPK.pdf`;
+  const matchedBook = (typeof DATA !== 'undefined' && DATA.books) ? DATA.books.find(b => (b.action === (subjObj ? subjObj.id : '') || b.id === `b-${subjObj ? subjObj.id : ''}`)) : null;
+  const pdfFile = (subjObj && subjObj.pdf) ? subjObj.pdf : (matchedBook && matchedBook.pdfPath ? matchedBook.pdfPath : `assets/books/${cls.name.replace(' ', '-')}-${subjName}-KPK.pdf`);
 
   // Explicitly hide any breadcrumb/dashboard banners to keep exact layout
   const subNavBar = $("subpage-nav-bar");

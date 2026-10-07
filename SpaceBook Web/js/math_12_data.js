@@ -3443,7 +3443,36 @@ const MATH_12_DATA = [
         "exercise": "Exercise 5.1",
         "title": "Exercise 5.1",
         "description": "",
-        "problems": [],
+        "problems": [
+          {
+            "id": "ex-5-1-q1",
+            "qNo": "1",
+            "question": "Find the domain: (a) F(t)=2t i−3t j+t²k; (b) F(t)=(1−t)i+√t j−(t−2)²k; (c) F(t)=sin t i+cos t j+tan t k; (d) F(t)=cos t i−cot t j+csc t k.",
+            "solution": "The domain is the intersection of the component domains. (a) All real t. (b) t≥0 because of √t. (c) t≠π/2+nπ, n∈ℤ, because tan t is undefined there. (d) t≠nπ, n∈ℤ, because cot t and csc t are undefined there.",
+            "diagram": null
+          },
+          {
+            "id": "ex-5-1-q2",
+            "qNo": "2",
+            "question": "For F(t)=2t i−5j+t²k, G(t)=(1−t)i+(1/t)k, and H(t)=sin t i+e^t j, find: (a) 2F−3G; (b) 3F+4G; (c) G·H; (d) F×H.",
+            "solution": "Operate componentwise. (a) (7t−3)i−10j+(2t²−3/t)k. (b) (2t+4)i−15j+(3t²+4/t)k. (c) (1−t)sin t. (d) −t²e^t i+t²sin t j+(2te^t+5sin t)k.",
+            "diagram": null
+          },
+          {
+            "id": "ex-5-1-q3",
+            "qNo": "3",
+            "question": "Evaluate: (a) lim_{t→0}[3t i+e^{2t}j+sin(πt)k]; (b) lim_{t→1}[(t²−1)/(t−1)i+(t²−3t+2)/(t²+t−2)j+(t²+1)e^{−t²}k]; (c) lim_{t→0}[sin t/t i+(1−cos t)/t² j+e^{−t²}k]; (d) lim_{t→0}[sin(2t)/(2t)i+ln(4+t)j].",
+            "solution": "Evaluate each component limit. (a) j. (b) The components are t+1→2, (t−2)/(t+2)→−1/3, and (t²+1)e^{−t²}→2/e; result 2i−(1/3)j+(2/e)k. (c) i+(1/2)j+k, using the standard trigonometric limits. (d) i+ln4 j.",
+            "diagram": null
+          },
+          {
+            "id": "ex-5-1-q4",
+            "qNo": "4",
+            "question": "Test continuity for all real t: (a) F(t)=t i+3j−(1−t)k; (b) G(t)=t i−t^{−1}k; (c) F(t)=e^t(ti+t²j+3k); (d) G(t)=(t i+√t j)/(√t+t).",
+            "solution": "A vector function is continuous where all components are defined and continuous. (a) Continuous for every real t. (b) Not defined at t=0; continuous for t≠0. (c) Continuous for every real t. (d) Defined for t>0 and continuous there; at t=0 the displayed expression is 0/0 and is undefined, although its right-hand limit exists and equals j, so it is not continuous at 0 as written.",
+            "diagram": null
+          }
+        ],
         "pageStart": 130,
         "pageEnd": 141
       }
@@ -6826,6 +6855,27 @@ const MATH_12_DATA = [
         "description": "",
         "problems": [
           {
+            "id": "ex-11-1-q1",
+            "qNo": "1",
+            "question": "If f(x,y)=x²y+xy² and t is real, find: (a) f(0,0); (b) f(−1,0); (c) f(0,−1); (d) f(t,0); (e) f(t,t²); (f) f(1−t,t).",
+            "solution": "Use f(x,y)=xy(x+y). (a) 0. (b) 0. (c) 0. (d) 0. (e) t·t²·(t+t²)=t⁴+t⁵. (f) with x=1−t,y=t, x+y=1, so f=t(1−t).",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-1-q2",
+            "qNo": "2",
+            "question": "For f(x,y,z)=x²ye^{2z}+(x+y−z)², find: (a) f(0,0,0); (b) f(1,−1,1); (c) f(−1,1,−1); (d) ∂f/∂x at (x,x,x); (e) ∂f/∂y at (1,y,1); (f) ∂f/∂z at (1,1,z²).",
+            "solution": "(a) 0. (b) 1−e². (c) 1+e^{−2}. The partial derivatives are f_x=2xye^{2z}+2(x+y−z), f_y=x²e^{2z}+2(x+y−z), and f_z=2x²ye^{2z}−2(x+y−z). (d) Substitution gives 2x²e^{2x}+2x. (e) e²+2y. (f) 2e^{2z²}+2z²−4.",
+            "diagram": null
+          },
+          {
+            "id": "ex-11-1-q3",
+            "qNo": "3",
+            "question": "Find f_x and f_y: (a) f=sin(x²)cos y; (b) f=√(3x²+y⁴); (c) f=xy²tan^{−1}y; (d) f=x³+x²y+xy²+y³; (e) f=sin^{−1}(xy); (f) f=x²e^{x+y}cos y.",
+            "solution": "Treat the other variable as constant. (a) f_x=2x cos(x²)cos y; f_y=−sin(x²)sin y. (b) f_x=3x/√(3x²+y⁴); f_y=2y³/√(3x²+y⁴). (c) f_x=y²tan^{−1}y; f_y=2xy tan^{−1}y+xy²/(1+y²). (d) f_x=3x²+2xy+y²; f_y=x²+2xy+3y². (e) f_x=y/√(1−x²y²); f_y=x/√(1−x²y²). (f) f_x=e^{x+y}(2x+x²)cos y; f_y=x²e^{x+y}(cos y−sin y).",
+            "diagram": null
+          },
+          {
             "id": "ex-11-1-q4",
             "qNo": "4",
             "question": "A production function is z=f(x,y)=x^{0.7}y^{0.3}, where x is labor and y is capital. Find the marginal productivity of labor and capital.",
@@ -6842,8 +6892,8 @@ const MATH_12_DATA = [
           {
             "id": "ex-11-1-q6",
             "qNo": "6",
-            "question": "For f(x,y)=x²y+xy², find f_x and f_y from the definition of partial derivatives.",
-            "solution": "By definition, f_x=lim_{h→0}[f(x+h,y)−f(x,y)]/h. Expanding gives [(x+h)²y+(x+h)y²−x²y−xy²]/h=2xy+hy+y²; as h→0, f_x=2xy+y². Similarly, f_y=lim_{k→0}[f(x,y+k)−f(x,y)]/k=x²+2xy.",
+            "question": "For f(x,y)=x³y+xy³, find f_x and f_y by the definition of partial derivatives.",
+            "solution": "By definition, f_x=lim_{h→0}[f(x+h,y)−f(x,y)]/h. Expanding and cancelling gives f_x=3x²y+y³. Similarly, f_y=lim_{k→0}[f(x,y+k)−f(x,y)]/k=x³+3xy².",
             "diagram": null
           }
         ],
