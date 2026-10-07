@@ -1206,8 +1206,14 @@ function goToSubjects(classId) {
     "cls10-bio": "Books/10th/Gemini_Generated_Image_dcv58kdcv58kdcv5.jfif",
     "cls10-eng": "Books/10th/Gemini_Generated_Image_cghnsfcghnsfcghn.jfif",
     "cls10-pakstudy": "Books/10th/Gemini_Generated_Image_rq47jrrq47jrrq47.jfif",
-    "cls10-isl": "Books/10th/Gemini_Generated_Image_yxqnvmyxqnvmyxqn.jfif",
+    "cls10-isl": "Books/10th/Gemini_Generated_Image_njeatcnjeatcnjea.jfif",
     "cls10-urdu": "Books/10th/Gemini_Generated_Image_9uv30s9uv30s9uv3.jfif",
+    "cls10-comp": "Books/10th/Gemini_Generated_Image_bws44hbws44hbws4.jfif",
+    "cls10-sci": "Books/10th/Gemini_Generated_Image_kxwjfpkxwjfpkxwj.jfif",
+    "cls10-hpe": "Books/10th/Gemini_Generated_Image_qr2ordqr2ordqr2o.jfif",
+    "cls10-drawing": "Books/10th/Gemini_Generated_Image_huah56huah56huah.jfif",
+    "cls10-islopt": "Books/10th/Gemini_Generated_Image_yxqnvmyxqnvmyxqn.jfif",
+    "cls10-quran": "Books/10th/Gemini_Generated_Image_a9o2uea9o2uea9o2.jfif",
     "cls11-math": "Books/11th/Gemini_Generated_Image_pfh7dwpfh7dwpfh7.jfif",
     "cls11-phy": "Books/11th/Gemini_Generated_Image_o245eto245eto245.jfif",
     "cls11-chem": "Books/11th/Gemini_Generated_Image_lmncvllmncvllmnc.jfif",
@@ -1343,18 +1349,24 @@ function openSubject(classId, subjId) {
   } else if (subj.hasEcon || subjId === 'cls12-econ') {
     state.activeSubject = "econ";
     openSubjectWorkspace(classId, "econ", subj);
-  } else if (subj.hasHpe || subjId === 'cls12-hpe') {
+  } else if (subj.hasHpe || subjId === 'cls12-hpe' || subjId === 'cls10-hpe') {
     state.activeSubject = "hpe";
     openSubjectWorkspace(classId, "hpe", subj);
-  } else if (subj.hasIslopt || subjId === 'cls12-islopt') {
+  } else if (subj.hasIslopt || subjId === 'cls12-islopt' || subjId === 'cls10-islopt') {
     state.activeSubject = "islopt";
     openSubjectWorkspace(classId, "islopt", subj);
   } else if (subj.hasIslhist || subjId === 'cls12-islhist') {
     state.activeSubject = "islhist";
     openSubjectWorkspace(classId, "islhist", subj);
-  } else if (subj.hasQuran || subjId === 'cls12-quran') {
+  } else if (subj.hasQuran || subjId === 'cls12-quran' || subjId === 'cls10-quran') {
     state.activeSubject = "quran";
     openSubjectWorkspace(classId, "quran", subj);
+  } else if (subj.hasGenSci || subjId === 'cls10-sci') {
+    state.activeSubject = "sci";
+    openSubjectWorkspace(classId, "sci", subj);
+  } else if (subj.hasDrawing || subjId === 'cls10-drawing') {
+    state.activeSubject = "drawing";
+    openSubjectWorkspace(classId, "drawing", subj);
   } else {
     state.activeSubject = subj.id;
     goToChapters(classId, subjId, subj.name);
@@ -13159,7 +13171,9 @@ function selectMathMcqOption(uid, optIdx, isCorrect, exp, correctIdx) {
   // Automatically reveal the working and explanation box
   const expBox = document.getElementById('math-mcq-exp-' + uid);
   if (expBox) {
+    expBox.innerHTML = '<strong>Answer and solution:</strong> ' + String(exp || 'See the highlighted correct option.');
     expBox.style.display = 'block';
+    typesetChapterMath(expBox);
   }
   const workingBtn = card.querySelector('.math-show-working-btn');
   if (workingBtn) {
@@ -13651,6 +13665,37 @@ function renderTopicSloInnerContent(sec, ch, innerTab) {
 }
 
 
+function renderTextbookLessonBody(text) {
+  const escape = value => String(value).replace(/[&<>"']/g, ch => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[ch]);
+  const blocks = String(text || '').split(/\n\s*\n/).map(s => s.trim()).filter(Boolean);
+  let listOpen = false;
+  const out = [];
+  const closeList = () => { if (listOpen) { out.push('</ul>'); listOpen = false; } };
+  for (const block of blocks) {
+    const safe = escape(block).replace(/\n/g, '<br>');
+    if (/^(?:\d+(?:\.\d+)+\s+.+|[A-Z]\.\s+.+|Example\s*\d+|Solution|Command|Context menu result|[A-Z][A-Za-z /&-]{2,45})\s*$/i.test(block)) {
+      closeList();
+      out.push(`<h4 class="math-book-subheading">${safe}</h4>`);
+    } else if (/^Figure\s+\d+(?:\.\d+)?\b/i.test(block)) {
+      closeList();
+      out.push(`<p class="math-book-caption">${safe}</p>`);
+    } else if (block.split(/\n/).every(line => /^(?:[•▪☐*-]|\d+[.)])\s*/.test(line.trim()))) {
+      if (!listOpen) { out.push('<ul class="math-book-list">'); listOpen = true; }
+      block.split(/\n/).forEach(line => {
+        out.push(`<li>${escape(line.trim().replace(/^(?:[•▪☐*-]|\d+[.)])\s*/, ''))}</li>`);
+      });
+    } else {
+      closeList();
+      const labelMatch = block.match(/^([A-Za-z][A-Za-z -]{1,32}:)([\s\S]*)$/);
+      out.push(`<p class="math-book-paragraph">${labelMatch ? `<strong>${escape(labelMatch[1])}</strong>${escape(labelMatch[2]).replace(/\n/g, '<br>')}` : safe}</p>`);
+    }
+  }
+  closeList();
+  return `<div class="math-book-body">${out.join('')}</div>`;
+}
+
 function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
   if (subTab === 'english') {
     if (sec.construction && Array.isArray(sec.construction.steps)) {
@@ -13665,10 +13710,7 @@ function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
           </ol>
         </div>`;
     }
-    let html = `
-      <div style="font-size:0.95rem;line-height:1.8;color:#334155;white-space:pre-line;margin-bottom:1rem;">
-        ${sec.theory}
-      </div>`;
+    let html = renderTextbookLessonBody(sec.theory);
     if (sec.rules && sec.rules.length > 0) {
       html += `
         <div style="background:#f0fdf4;border-left:4px solid #16a34a;border-radius:0 8px 8px 0;padding:0.75rem 1rem;">
@@ -13952,9 +13994,10 @@ function appendMathInlineText(fragment, text) {
   const symbols = {
     times: "×", cdot: "·", pm: "±", div: "÷", leq: "≤", le: "≤", geq: "≥", ge: "≥",
     neq: "≠", ne: "≠", in: "∈", notin: "∉", approx: "≈", implies: "⇒", iff: "⇔",
-    pi: "π", infty: "∞", angle: "∠", triangle: "△", cong: "≅", parallel: "∥",
+    pi: "π", infty: "∞", int: "∫", sum: "∑", prod: "∏", angle: "∠", triangle: "△", cong: "≅", parallel: "∥",
     perp: "⟂", ell: "ℓ", gcd: "gcd", circ: "°", to: "→", gets: "←"
   };
+  const operators = new Set(["sin", "cos", "tan", "sec", "csc", "cot", "arcsin", "arccos", "arctan", "ln", "log", "lim", "max", "min", "exp"]);
   const groups = (value, index, open, close) => {
     if (value[index] !== open) return null;
     let depth = 0;
@@ -14088,6 +14131,7 @@ function appendMathInlineText(fragment, text) {
         continue;
       }
       if (symbols[command]) buffer += symbols[command];
+      else if (operators.has(command)) buffer += command;
       else buffer += "\\" + command;
       cursor = nameEnd;
       continue;
@@ -14141,7 +14185,10 @@ function readMathMatrix(text, start) {
 }
 
 function typesetMathTextNode(node) {
-  const text = node.nodeValue;
+  // Word transcriptions commonly flatten superscripts (for example x2 for
+  // x²). Restore the textbook exponent form when a letter or closing
+  // parenthesis is immediately followed by digits in an expression.
+  const text = node.nodeValue.replace(/([A-Za-z\)])(\d{1,3})(?=\s*(?:[+\-*/=),.;\]}]|$))/g, "$1^{$2}");
   const fragment = document.createDocumentFragment();
   let cursor = 0;
   let found = false;
@@ -14201,7 +14248,7 @@ function typesetChapterMath(container) {
       acceptNode(node) {
         const parent = node.parentElement;
         if (!parent || parent.closest(".math-proper-matrix,script,style,textarea")) return NodeFilter.FILTER_REJECT;
-        return node.nodeValue.includes("[[") || /[\^_$]/.test(node.nodeValue) || /\\[A-Za-z]+/.test(node.nodeValue)
+        return node.nodeValue.includes("[[") || /[\^_$]/.test(node.nodeValue) || /\\[A-Za-z]+/.test(node.nodeValue) || /[A-Za-z\)]\d{1,3}(?=\s*(?:[+\-*/=),.;\]}]|$))/.test(node.nodeValue)
           ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
       }
     });
@@ -14223,7 +14270,7 @@ function typesetChapterMath(container) {
 
 function renderMathDiagram(item, chapterNumber) {
   const unit = Number(chapterNumber);
-  const prompt = String(item.problem || item.question || item.statement || item.theory || "");
+  const prompt = String(item.problem || item.question || item.q || item.statement || item.theory || "");
   const detail = [item.title, prompt, item.given, item.method, item.solution, item.theory, (item.steps || []).join(" ")].join(" ");
   const textbookDiagram = item.diagram;
   if (unit === 1 && textbookDiagram) {
@@ -14243,7 +14290,33 @@ function renderMathDiagram(item, chapterNumber) {
       for (let i = 0; i <= 100; i++) { const x = x0 + (x1 - x0) * i / 100, y = g.a * x * x + g.b * x + g.c; d += (i ? " L" : "M") + px(x) + " " + py(y); }
       svg += '<path class="math-diagram-graphline" d="' + d + '"/>';
       (g.points || []).forEach(point => { svg += '<circle class="math-diagram-point" cx="' + px(point.x) + '" cy="' + py(point.y) + '" r="4"/>' + label(px(point.x) + 8, py(point.y) - 9, point.label, "start"); });
-      return caption("Height of the ball against time; marked intercepts and starting point") + svg + '</svg></figure>';
+      return caption(g.title || "Graph of a quadratic function") + svg + '</svg></figure>';
+    }
+    if (textbookDiagram.type === "unit-circle") {
+      const cx = 240, cy = 140, r = 82;
+      let svg = '<line class="math-diagram-axis" x1="75" y1="' + cy + '" x2="405" y2="' + cy + '"/><line class="math-diagram-axis" x1="' + cx + '" y1="32" x2="' + cx + '" y2="248"/>';
+      svg += '<circle class="math-diagram-graphline" cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none"/><circle class="math-diagram-point" cx="' + (cx + r) + '" cy="' + cy + '" r="4"/>';
+      svg += label(415, cy - 7, "x", "start") + label(cx + 10, 28, "y", "start") + label(cx + r + 10, cy - 8, "(1,0)", "start");
+      return caption(textbookDiagram.title || "Unit circle") + svg + '</svg></figure>';
+    }
+    if (textbookDiagram.type === "secant-graph") {
+      const x0 = -2 * Math.PI, x1 = 2 * Math.PI, y0 = -4, y1 = 4;
+      const px = x => 66 + (x - x0) * 348 / (x1 - x0), py = y => 238 - (y - y0) * 198 / (y1 - y0);
+      let svg = '<line class="math-diagram-axis" x1="60" y1="' + py(0) + '" x2="420" y2="' + py(0) + '"/><line class="math-diagram-axis" x1="' + px(0) + '" y1="30" x2="' + px(0) + '" y2="244"/>';
+      const ticks = [[-2*Math.PI,"−2π"],[-1.5*Math.PI,"−3π/2"],[-Math.PI,"−π"],[-.5*Math.PI,"−π/2"],[0,"0"],[.5*Math.PI,"π/2"],[Math.PI,"π"],[1.5*Math.PI,"3π/2"],[2*Math.PI,"2π"]];
+      ticks.forEach(([x,t]) => { svg += '<line class="math-diagram-grid" x1="' + px(x) + '" y1="34" x2="' + px(x) + '" y2="238"/>' + label(px(x), py(0) + 17, t); });
+      let d = "", drawing = false;
+      for (let i = 0; i <= 900; i++) {
+        const x = x0 + (x1 - x0) * i / 900, y = 1 / Math.cos(x);
+        if (Math.abs(y) > 4) { drawing = false; continue; }
+        d += (drawing ? " L" : " M") + px(x) + " " + py(y); drawing = true;
+      }
+      svg += '<path class="math-diagram-graphline" d="' + d + '"/>' + label(424, 37, "y=sec(x)", "start");
+      for (let k = -3; k <= 3; k += 2) {
+        const x = k * Math.PI / 2;
+        svg += '<line class="math-diagram-construction" x1="' + px(x) + '" y1="34" x2="' + px(x) + '" y2="238" stroke-dasharray="5 4"/>';
+      }
+      return caption(textbookDiagram.title || "Graph of the secant function") + svg + '</svg></figure>';
     }
     if (textbookDiagram.type === "completing-square") {
       const b = Number(textbookDiagram.coefficient), half = Math.abs(b / 2), sign = b < 0 ? "−" : "+";
@@ -14281,6 +14354,18 @@ function renderMathDiagram(item, chapterNumber) {
         text(240, 24, 'Right triangle (schematic)');
       return figure(inner, "Right triangle with the side labels from the question");
     }
+    if (textbookDiagram.type === "absolute-value-set") {
+      const g = textbookDiagram, x0 = -6, x1 = 6, y0 = -3, y1 = 15;
+      const px = x => 48 + (x - x0) * 380 / (x1 - x0), py = y => 210 - (y - y0) * 174 / (y1 - y0);
+      let inner = '<line class="math-diagram-axis" x1="48" y1="' + py(0) + '" x2="432" y2="' + py(0) + '"/><line class="math-diagram-axis" x1="' + px(0) + '" y1="28" x2="' + px(0) + '" y2="210"/>', labels = [];
+      (g.functions || []).forEach((fn, index) => {
+        const vertex = -fn.c / fn.b, value = fn.d, d = 'M' + px(x0) + ' ' + py(fn.a * Math.abs(fn.b*x0 + fn.c) + fn.d) + ' L' + px(vertex) + ' ' + py(value) + ' L' + px(x1) + ' ' + py(fn.a * Math.abs(fn.b*x1 + fn.c) + fn.d);
+        inner += '<path class="math-diagram-graphline" d="' + d + '"/><circle class="math-diagram-point" cx="' + px(vertex) + '" cy="' + py(value) + '" r="3"/>';
+        labels.push(fn.label + ': (' + vertex + ', ' + value + ')');
+      });
+      inner += text(240, 232, labels.join('   '));
+      return figure(inner, g.title || 'Absolute-value graphs');
+    }
     if (textbookDiagram.type === "synthetic-division") {
       const g = textbookDiagram;
       const coefficients = g.coefficients || [], products = g.products || [], bottom = g.bottom || [];
@@ -14297,6 +14382,19 @@ function renderMathDiagram(item, chapterNumber) {
       return figure(inner, "Synthetic division by " + (g.root >= 0 ? "x − " + g.root : "x + " + Math.abs(g.root)));
     }
   }
+  if (unit === 3 && textbookDiagram && textbookDiagram.type === "tangent-line") {
+    const g = textbookDiagram, x0 = Number(g.xMin), x1 = Number(g.xMax), y0 = -12, y1 = 24;
+    const px = x => 52 + (x - x0) * 376 / (x1 - x0), py = y => 210 - (y - y0) * 174 / (y1 - y0);
+    const f = x => g.a*x*x + g.b*x + g.c, m = 2*g.a*g.x0 + g.b, y = f(g.x0);
+    let svg = '<figure class="math-diagram"><figcaption>' + String(g.title || "Tangent line") + '</figcaption><svg viewBox="0 0 480 250" role="img" aria-label="Quadratic curve and tangent line">';
+    svg += '<line class="math-diagram-axis" x1="48" y1="' + py(0) + '" x2="432" y2="' + py(0) + '"/><line class="math-diagram-axis" x1="' + px(0) + '" y1="30" x2="' + px(0) + '" y2="220"/>';
+    let curve = "", tangent = "";
+    for (let i = 0; i <= 120; i++) { const x = x0 + (x1-x0)*i/120; curve += (i ? " L" : "M") + px(x) + " " + py(f(x)); const ty = y + m*(x-g.x0); tangent += (i ? " L" : "M") + px(x) + " " + py(ty); }
+    svg += '<path class="math-diagram-graphline" d="' + curve + '"/><path class="math-diagram-construction" d="' + tangent + '"/><circle class="math-diagram-point" cx="' + px(g.x0) + '" cy="' + py(y) + '" r="4"/>';
+    svg += '<text x="' + (px(g.x0)+8) + '" y="' + (py(y)-8) + '" class="math-diagram-label">P(' + g.x0 + ', ' + y + ')</text><text x="325" y="34" class="math-diagram-label">f(x)</text><text x="325" y="50" class="math-diagram-label">tangent</text></svg></figure>';
+    return svg;
+  }
+
   if (unit === 6 && textbookDiagram) {
     const safe = value => sanitize(String(value == null ? "" : value));
     const id = "m6-" + String(item.id || item.num || item.title || "chart").replace(/[^A-Za-z0-9_-]/g, "") + "-" + Math.random().toString(36).slice(2, 8);
@@ -15595,7 +15693,7 @@ function renderMathChapter(index) {
       <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'lesson' ? 'active' : ''}" data-tab="lesson" onclick="switchMathTab('lesson')">📖 1. Lessons (${totalSections})</button>
       <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'examples' ? 'active' : ''}" data-tab="examples" onclick="switchMathTab('examples')">💡 2. Examples (${totalExamples})</button>
       <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'exercises' ? 'active' : ''}" data-tab="exercises" onclick="switchMathTab('exercises')">✍️ 3. Exercises (${totalExercises})</button>
-      ${state.selectedClass === 'cls12' && totalSLOs === 0 ? '' : `<button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'slos' ? 'active' : ''}" data-tab="slos" onclick="switchMathTab('slos')">🎯 4. Board SLO Based &amp; MCQs, SQs and LQs (${totalSLOs})</button>`}
+      <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'slos' ? 'active' : ''}" data-tab="slos" onclick="switchMathTab('slos')">🎯 4. Board SLO Based &amp; MCQs, SQs and LQs (${totalSLOs})</button>
       <button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'formulas' ? 'active' : ''}" data-tab="formulas" onclick="switchMathTab('formulas')">📐 5. Formulas &amp; Summary</button>
       ${state.selectedClass === 'cls3' ? `<button class="math-top-tab math-tab-btn bio-tab-btn ${state.activeMathTab === 'textbook' ? 'active' : ''}" data-tab="textbook" onclick="switchMathTab('textbook')">📚 Complete Book Text</button>` : ''}
     `;
@@ -15874,13 +15972,23 @@ function switchMathSloCategory(category) {
   const chList = getMathChapterList();
   const ch = chList[state.selectedMathChapter || 0];
   if (!ch) return;
-  container.innerHTML = renderMathSloCategoryContent(category, ch.slos || {});
+  const slos = (typeof getComprehensiveChapterSLOBank === 'function')
+    ? getComprehensiveChapterSLOBank(ch)
+    : (ch.slos || {});
+  container.innerHTML = renderMathSloCategoryContent(category, slos);
+  typesetChapterMath(container);
 }
 
 function renderMathSloCategoryContent(category, slos) {
   const mcqs = slos.mcqs || [];
   const sqs = slos.shortQuestions || [];
   const lqs = slos.longQuestions || [];
+
+  if (!mcqs.length && !sqs.length && !lqs.length) {
+    return `<div class="math-topic-card" style="padding:1.25rem;color:#475569;line-height:1.7;">
+      The scanned Chapter 1 textbook pages do not contain a separate SLO question bank. This section will show verified Chapter 1 questions when they are added.
+    </div>`;
+  }
 
   if (category === 'mcqs') {
     return `
@@ -15898,9 +16006,10 @@ function renderMathSloCategoryContent(category, slos) {
             <div style="font-weight:700;font-size:1.02rem;color:#0f172a;margin-bottom:0.85rem;">
               ${m.q}
             </div>
+            ${renderMathDiagram(m, 1)}
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.6rem;margin-bottom:0.5rem;">
               ${m.options.map((opt, oIdx) => `
-                <button class="math-mcq-opt" onclick="selectMathMcqOption(${idx}, ${oIdx}, ${oIdx === m.correct}, '${m.exp}', ${m.correct})" style="padding:0.6rem 0.85rem;border:1px solid #cbd5e1;background:#ffffff;border-radius:8px;font-size:0.9rem;text-align:left;cursor:pointer;transition:all 0.15s ease;">
+                <button class="math-mcq-opt" onclick="selectMathMcqOption(${idx}, ${oIdx}, ${oIdx === m.correct}, '${String(m.exp || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\r?\n/g, '\\n').replace(/\"/g, '&quot;')}', ${m.correct})" style="padding:0.6rem 0.85rem;border:1px solid #cbd5e1;background:#ffffff;border-radius:8px;font-size:0.9rem;text-align:left;cursor:pointer;transition:all 0.15s ease;">
                   <strong>${['A', 'B', 'C', 'D'][oIdx]}.</strong> ${opt}
                 </button>
               `).join('')}
@@ -15936,6 +16045,7 @@ function renderMathSloCategoryContent(category, slos) {
                 <strong>Marking Rubric:</strong> ${l.rubric}
               </div>
               <div class="math-step-box" style="white-space:pre-line;line-height:1.75;">
+                ${renderMathDiagram(l, 1)}
                 ${l.sol}
               </div>
             </div>
@@ -15966,6 +16076,7 @@ function renderMathSloCategoryContent(category, slos) {
             </div>
             <div class="math-accordion-body" style="display:none;margin-top:1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
               <div class="math-step-box" style="white-space:pre-line;line-height:1.75;">
+                ${renderMathDiagram(s, 1)}
                 ${s.sol}
               </div>
             </div>
@@ -15981,6 +16092,10 @@ function renderMathSloCategoryContent(category, slos) {
 // Provides logically ordered, high-yield board questions with easy-to-understand explanations
 function getComprehensiveChapterSLOBank(ch) {
   const chNum = (ch && ch.number) ? ch.number : 1;
+
+  // Class 12 uses textbook-specific question data. Do not reuse the legacy
+  // Class 9 matrix bank merely because both chapters are numbered Unit 1.
+  if (state.selectedClass === 'cls12') return (ch && ch.slos) || {};
 
   if ((state.selectedClass === 'cls1' || state.selectedClass === 'cls2') && ch && ch.slos) return ch.slos;
 
@@ -17280,7 +17395,16 @@ function getSubjectChapterList(subjKey, classId) {
     if (isCls12 && typeof COMP_12_DATA !== 'undefined' && Array.isArray(COMP_12_DATA)) {
       return COMP_12_DATA;
     }
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && typeof COMPUTER_10_DATA !== 'undefined' && Array.isArray(COMPUTER_10_DATA)) {
+      return COMPUTER_10_DATA;
+    }
     return (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];
+  }
+  if (subjKey === 'sci') {
+    if (typeof GENERAL_SCIENCE_10_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_10_DATA)) return GENERAL_SCIENCE_10_DATA;
+    if (typeof GENERAL_SCIENCE_9_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_9_DATA)) return GENERAL_SCIENCE_9_DATA;
+    return (typeof DATA !== 'undefined' && DATA && (DATA.genSci10Chapters || DATA.genSci9Chapters)) ? (DATA.genSci10Chapters || DATA.genSci9Chapters) : [];
   }
   if (subjKey === 'civics') {
     if (typeof CIVICS_12_DATA !== 'undefined') return CIVICS_12_DATA;
@@ -17291,20 +17415,35 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.econ12Chapters) ? DATA.econ12Chapters : [];
   }
   if (subjKey === 'hpe') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && typeof HPE_10_DATA !== 'undefined' && Array.isArray(HPE_10_DATA)) return HPE_10_DATA;
     if (typeof HPE_12_DATA !== 'undefined') return HPE_12_DATA;
-    return (typeof DATA !== 'undefined' && DATA && DATA.hpe12Chapters) ? DATA.hpe12Chapters : [];
+    if (typeof HPE_9_DATA !== 'undefined') return HPE_9_DATA;
+    return (typeof DATA !== 'undefined' && DATA && (DATA.hpe10Chapters || DATA.hpe12Chapters || DATA.hpe9Chapters)) ? (DATA.hpe10Chapters || DATA.hpe12Chapters || DATA.hpe9Chapters) : [];
+  }
+  if (subjKey === 'drawing') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && typeof DRAWING_10_DATA !== 'undefined' && Array.isArray(DRAWING_10_DATA)) return DRAWING_10_DATA;
+    if (typeof DRAWING_9_DATA !== 'undefined') return DRAWING_9_DATA;
+    return (typeof DATA !== 'undefined' && DATA && (DATA.drawing10Chapters || DATA.drawing9Chapters)) ? (DATA.drawing10Chapters || DATA.drawing9Chapters) : [];
   }
   if (subjKey === 'islopt') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && typeof ISLAMIAT_IKHTIARI_10_DATA !== 'undefined' && Array.isArray(ISLAMIAT_IKHTIARI_10_DATA)) return ISLAMIAT_IKHTIARI_10_DATA;
     if (typeof ISLAMIAT_OPT_12_DATA !== 'undefined') return ISLAMIAT_OPT_12_DATA;
-    return (typeof DATA !== 'undefined' && DATA && DATA.islamiatOpt12Chapters) ? DATA.islamiatOpt12Chapters : [];
+    if (typeof ISLAMIAT_IKHTIARI_9_DATA !== 'undefined') return ISLAMIAT_IKHTIARI_9_DATA;
+    return (typeof DATA !== 'undefined' && DATA && (DATA.islopt10Chapters || DATA.islamiatOpt12Chapters || DATA.islopt9Chapters)) ? (DATA.islopt10Chapters || DATA.islamiatOpt12Chapters || DATA.islopt9Chapters) : [];
   }
   if (subjKey === 'islhist') {
     if (typeof ISLAMIC_HISTORY_12_DATA !== 'undefined') return ISLAMIC_HISTORY_12_DATA;
     return (typeof DATA !== 'undefined' && DATA && DATA.islHist12Chapters) ? DATA.islHist12Chapters : [];
   }
   if (subjKey === 'quran') {
+    const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
+    if (isCls10 && typeof MUTALIA_QURAN_10_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_10_DATA)) return MUTALIA_QURAN_10_DATA;
     if (typeof QURAN_12_DATA !== 'undefined') return QURAN_12_DATA;
-    return (typeof DATA !== 'undefined' && DATA && DATA.quran12Chapters) ? DATA.quran12Chapters : [];
+    if (typeof MUTALIA_QURAN_9_DATA !== 'undefined') return MUTALIA_QURAN_9_DATA;
+    return (typeof DATA !== 'undefined' && DATA && (DATA.quran10Chapters || DATA.quran12Chapters || DATA.quran9Chapters)) ? (DATA.quran10Chapters || DATA.quran12Chapters || DATA.quran9Chapters) : [];
   }
   return [];
 }

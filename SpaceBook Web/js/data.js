@@ -110,7 +110,7 @@ const DATA = {
       "id": "cls10",
       "name": "Class 10",
       "emoji": "🏫",
-      "subjects": 8
+      "subjects": 14
     },
     {
       "id": "cls11",
@@ -345,6 +345,60 @@ const DATA = {
         "chapters": 22,
         "hasUrdu": true,
         "hasUrdu10": true
+      },
+      {
+        "id": "cls10-comp",
+        "name": "Computer Science",
+        "nameUrdu": "کمپیوٹر سائنس",
+        "emoji": "💻",
+        "chapters": 7,
+        "hasComp": true,
+        "hasComp10": true
+      },
+      {
+        "id": "cls10-sci",
+        "name": "General Science",
+        "nameUrdu": "جنرل سائنس",
+        "emoji": "🔬",
+        "chapters": 6,
+        "hasGenSci": true,
+        "hasGenSci10": true
+      },
+      {
+        "id": "cls10-hpe",
+        "name": "Health & Physical Education",
+        "nameUrdu": "صحت و جسمانی تعلیم",
+        "emoji": "🏃",
+        "chapters": 8,
+        "hasHpe": true,
+        "hasHpe10": true
+      },
+      {
+        "id": "cls10-drawing",
+        "name": "Art & Model Drawing",
+        "nameUrdu": "ڈرائنگ و ماڈل آرٹ",
+        "emoji": "🎨",
+        "chapters": 4,
+        "hasDrawing": true,
+        "hasDrawing10": true
+      },
+      {
+        "id": "cls10-islopt",
+        "name": "Islamiat Ikhtiari",
+        "nameUrdu": "اسلامیات اختیاری",
+        "emoji": "🕌",
+        "chapters": 4,
+        "hasIslopt": true,
+        "hasIslopt10": true
+      },
+      {
+        "id": "cls10-quran",
+        "name": "Mutalia-e-Quran",
+        "nameUrdu": "مطالعہ قرآن حکیم",
+        "emoji": "📖",
+        "chapters": 8,
+        "hasQuran": true,
+        "hasQuran10": true
       }
     ],
     "cls11": [
@@ -1866,6 +1920,96 @@ const DATA = {
       "icon": "📗",
       "available": true,
       "action": "cls10-urdu"
+    },
+    {
+      "id": "b-cls10-comp",
+      "classId": "cls10",
+      "className": "Class 10",
+      "subject": "Computer Science",
+      "title": "Computer Science 10th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "21.4 MB",
+      "pages": "Complete 7 Units",
+      "pdfPath": "Books/10th/10th CS/PDF/Computer-Science Book for 10 class KPTBB.pdf",
+      "color": "#0ea5e9",
+      "icon": "💻",
+      "available": true,
+      "action": "cls10-comp"
+    },
+    {
+      "id": "b-cls10-sci",
+      "classId": "cls10",
+      "className": "Class 10",
+      "subject": "General Science",
+      "title": "General Science 10th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "64.3 MB",
+      "pages": "Complete 6 Units (6–11)",
+      "pdfPath": "Books/10th/10th General Science/PDF/General Science 10th book EM.pdf",
+      "color": "#14b8a6",
+      "icon": "🔬",
+      "available": true,
+      "action": "cls10-sci"
+    },
+    {
+      "id": "b-cls10-hpe",
+      "classId": "cls10",
+      "className": "Class 10",
+      "subject": "Health & Physical Education",
+      "title": "Health & Physical Education 10th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "18.9 MB",
+      "pages": "Complete 8 Units",
+      "pdfPath": "Books/10th/10th HPE/PDF/HPE book UM 10th class KPK.pdf",
+      "color": "#f97316",
+      "icon": "🏃",
+      "available": true,
+      "action": "cls10-hpe"
+    },
+    {
+      "id": "b-cls10-drawing",
+      "classId": "cls10",
+      "className": "Class 10",
+      "subject": "Art & Model Drawing",
+      "title": "Art & Model Drawing 10th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "24.8 MB",
+      "pages": "Complete 4 Chapters",
+      "pdfPath": "Books/10th/10th  Drawing/PDF/Drawing book 10th EM KPK_page_part_01_of_03.pdf",
+      "color": "#ec4899",
+      "icon": "🎨",
+      "available": true,
+      "action": "cls10-drawing"
+    },
+    {
+      "id": "b-cls10-islopt",
+      "classId": "cls10",
+      "className": "Class 10",
+      "subject": "Islamiat Ikhtiari",
+      "title": "Islamiat Ikhtiari 10th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "36.1 MB",
+      "pages": "Complete 4 Units",
+      "pdfPath": "Books/10th/10th Ismaiat Ikhtiari/PDF/Islamiat Elective book 10th kpk.pdf",
+      "color": "#10b981",
+      "icon": "🕌",
+      "available": true,
+      "action": "cls10-islopt"
+    },
+    {
+      "id": "b-cls10-quran",
+      "classId": "cls10",
+      "className": "Class 10",
+      "subject": "Mutalia-e-Quran",
+      "title": "Mutalia-e-Quran 10th Class Textbook",
+      "board": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
+      "size": "45.0 MB",
+      "pages": "Complete 8 Surahs",
+      "pdfPath": "Books/10th/10th M Q/PDF/Mutlia_e_Quran_Book_KPK_10.pdf",
+      "color": "#8b5cf6",
+      "icon": "📖",
+      "available": true,
+      "action": "cls10-quran"
     },
     {
       "id": "b-cls11-phys",

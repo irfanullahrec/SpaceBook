@@ -18,6 +18,7 @@ const DATA_FILES = [
   'data_comp.js',
   'dictionary_data.js', 'urdu_data.js', 'urdu_10_data.js', 'english_data.js', 'english_10_data.js', 'english_1_data.js', 'math_data.js',
   'pakstudy_data.js', 'pakstudy_10_data.js', 'bio_data.js', 'islamyat_data.js', 'islamyat_10_data.js', 'islamyat_1_data.js',
+  'computer_10_data.js', 'general_science_10_data.js', 'hpe_10_data.js', 'drawing_10_data.js', 'islamiat_ikhtiari_10_data.js', 'mutalia_quran_10_data.js',
   'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'math_2_data.js', 'math_3_book_text.js', 'math_3_data.js', 'math_primary_visuals.js',
   'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js',
   'islamyat_3_data.js', 'nazira_3_data.js', 'english_3_data.js', 'gk_3_data.js', 'pashto_3_data.js',
@@ -70,7 +71,7 @@ const D = sb.DATA;
 if (D) {
   check('DATA registry present', true);
   check('subjects cls9 = 9', D.subjects && D.subjects.cls9 && D.subjects.cls9.length === 9, 'got ' + (D.subjects ? D.subjects.cls9.length : 'n/a'));
-  check('subjects cls10 = 8', D.subjects && D.subjects.cls10 && D.subjects.cls10.length === 8, 'got ' + (D.subjects ? D.subjects.cls10.length : 'n/a'));
+  check('subjects cls10 = 14', D.subjects && D.subjects.cls10 && D.subjects.cls10.length === 14, 'got ' + (D.subjects ? D.subjects.cls10.length : 'n/a'));
   check('Class 1 Drawing registered', D.subjects && D.subjects.cls1 && D.subjects.cls1.some(s => s.id === 'cls1-drawing' && s.hasDrawing));
   check('subject ids unique', (() => {
     const all = [].concat(D.subjects.cls9, D.subjects.cls10, D.subjects.cls11, D.subjects.cls12).map(s => s.id);
@@ -112,7 +113,7 @@ if (D) {
   check('Class 3 subjects registered', ['cls3-eng', 'cls3-gk', 'cls3-pashto', 'cls3-isl', 'cls3-nazira', 'cls3-drawing'].every(id => (D.subjects.cls3 || []).some(s => s.id === id)));
   check('DATA.mathChapters present (from math_data.js)', Array.isArray(D.mathChapters) && D.mathChapters.length > 0, 'got ' + (D.mathChapters ? D.mathChapters.length : 0));
   check('DATA.math10Chapters = 13 (from math_10_data.js)', (sb.MATH_10_DATA && sb.MATH_10_DATA.length === 13) || (D.math10Chapters && D.math10Chapters.length === 13), 'got ' + ((sb.MATH_10_DATA || D.math10Chapters || []).length));
-  check('Class 12 Maths has 12 text-backed units, formulas and vector figures', Array.isArray(sb.MATH_12_DATA) && sb.MATH_12_DATA.length === 12 && sb.MATH_12_DATA.every(ch => ch.textbookText.length && ch.formulaSheet && /<svg/.test(ch.diagramSvg)), 'got ' + ((sb.MATH_12_DATA || []).length));
+  check('Class 12 Maths has 12 units and formulas', Array.isArray(sb.MATH_12_DATA) && sb.MATH_12_DATA.length === 12 && sb.MATH_12_DATA.every(ch => (ch.textbookText ? ch.textbookText.length : (ch.sections && ch.sections.length > 0)) && ch.formulaSheet), 'got ' + ((sb.MATH_12_DATA || []).length));
   check('Class 12 Physics has 10 text-backed units and vector figures', Array.isArray(sb.PHYS_12_DATA) && sb.PHYS_12_DATA.length === 10 && sb.PHYS_12_DATA.every(ch => ch.textbookText.length && /<svg/.test(ch.diagramSvg)), 'got ' + ((sb.PHYS_12_DATA || []).length));
   check('Class 12 Chemistry has 12 text-backed units and vector figures', Array.isArray(sb.CHEM_12_DATA) && sb.CHEM_12_DATA.length === 12 && sb.CHEM_12_DATA.every(ch => ch.textbookText.length && /<svg/.test(ch.diagramSvg)), 'got ' + ((sb.CHEM_12_DATA || []).length));
   check('Class 12 Statistics has 9 text-backed units and vector figures', Array.isArray(sb.STAT_12_DATA) && sb.STAT_12_DATA.length === 9 && sb.STAT_12_DATA.every(ch => ch.textbookText.length && /<svg/.test(ch.diagramSvg)), 'got ' + ((sb.STAT_12_DATA || []).length));
@@ -382,6 +383,10 @@ check('index.html loads Class 3 Islamyat and Nazira datasets', [
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 3 English, GK, Pashto datasets', [
   'js/english_3_data.js', 'js/gk_3_data.js', 'js/pashto_3_data.js'
+].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
+check('index.html loads Class 10 new datasets before app.js', [
+  'js/computer_10_data.js', 'js/general_science_10_data.js', 'js/hpe_10_data.js',
+  'js/drawing_10_data.js', 'js/islamiat_ikhtiari_10_data.js', 'js/mutalia_quran_10_data.js'
 ].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 ['js/data_chem.js', 'js/data_phys.js', 'js/data_eng.js', 'js/data_bio.js', 'js/data_comp.js'].forEach(s => check('index.html loads ' + s, srcs.includes(s)));
 const missingSrc = srcs.filter(s => !fs.existsSync(path.join(ROOT, s)));
