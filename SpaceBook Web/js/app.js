@@ -3749,31 +3749,49 @@ function renderEngPashtoTranslation(ch) {
 
 // ─── 4. VIDEO LECTURES VIEW ───
 function renderEngVideo(ch) {
-  const vid = ch.videoLesson || {};
+  const videoBasePath = "Books/Cover Pages/Videos/";
+  const tabs = [
+    { id: "eng-vid-english",   label: "📺 English Video",    file: videoBasePath + "English.mp4" },
+    { id: "eng-vid-urdu",      label: "🎬 Urdu Video",       file: videoBasePath + "URdu.mp4" },
+    { id: "eng-vid-para1",     label: "📖 1st Paragraph",    file: videoBasePath + "1st Paraghraph.mp4" }
+  ];
+  const uniqueId = "engvid-" + (ch.id || ch.title || "ch").replace(/[^A-Za-z0-9]/g, "").slice(0, 12) + "-" + Math.random().toString(36).slice(2, 7);
+
+  const tabButtons = tabs.map((t, i) =>
+    `<button class="eng-vid-tab-btn${i === 0 ? ' active' : ''}" data-target="${uniqueId}-${t.id}"
+      onclick="(function(btn){
+        btn.closest('.eng-vid-tabs-wrapper').querySelectorAll('.eng-vid-tab-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        btn.closest('.eng-vid-tabs-wrapper').querySelectorAll('.eng-vid-panel').forEach(p=>p.style.display='none');
+        document.getElementById('${uniqueId}-${t.id}').style.display='block';
+      })(this)"
+      style="padding:0.45rem 1.1rem;border:2px solid ${i === 0 ? '#2563eb' : '#cbd5e1'};background:${i === 0 ? '#2563eb' : '#f8fafc'};color:${i === 0 ? '#fff' : '#475569'};border-radius:7px;font-size:0.88rem;font-weight:600;cursor:pointer;transition:all .18s;">
+      ${t.label}
+    </button>`
+  ).join("");
+
+  const tabPanels = tabs.map((t, i) =>
+    `<div id="${uniqueId}-${t.id}" class="eng-vid-panel" style="display:${i === 0 ? 'block' : 'none'};">
+      <video controls style="width:100%;border-radius:10px;background:#0f172a;box-shadow:0 4px 15px rgba(0,0,0,0.15);max-height:420px;"
+        preload="metadata">
+        <source src="${t.file}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>`
+  ).join("");
+
   return `
     <div class="urdu-section-card open" style="margin-bottom:2rem;">
       <div class="urdu-section-header" style="background:#eff6ff;">
         <span class="urdu-sec-badge" style="background:#2563eb;">ویڈیو لیکچر</span>
-        <span class="urdu-sec-title" style="color:#1e40af;font-size:1.1rem;font-weight:700;">🎥 ${vid.title || ch.title + ' — Video Lecture'}</span>
+        <span class="urdu-sec-title" style="color:#1e40af;font-size:1.1rem;font-weight:700;">🎥 ${ch.title} — Video Lessons</span>
       </div>
       <div class="urdu-section-body" style="padding:1.5rem;">
-        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#0f172a;box-shadow:0 4px 15px rgba(0,0,0,0.15);margin-bottom:1.25rem;">
-          <iframe 
-            src="${vid.embedUrl || 'https://www.youtube.com/embed/dQw4w9WgXcQ'}" 
-            title="Unit Video Lecture"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;background:#f8fafc;padding:0.85rem 1.25rem;border-radius:8px;border:1px solid #e2e8f0;">
-          <div>
-            <div style="font-weight:700;color:#1e293b;">Instructor: ${vid.instructor || 'Senior Subject Specialist'}</div>
-            <div style="font-size:0.82rem;color:#64748b;">Duration: ${vid.duration || '24:30'} &nbsp;|&nbsp; Quality: 1080p HD</div>
+        <div class="eng-vid-tabs-wrapper">
+          <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-bottom:1rem;">
+            ${tabButtons}
           </div>
-          <a href="${vid.url || '#'}" target="_blank" style="padding:0.5rem 1rem;background:#2563eb;color:#fff;border-radius:6px;font-size:0.85rem;font-weight:600;text-decoration:none;">
-            📺 Open on YouTube
-          </a>
+          ${tabPanels}
         </div>
       </div>
     </div>`;
@@ -17610,6 +17628,41 @@ function renderLanguageLessonTab(subjKey, ch) {
   return renderLangLessonSubContent(subjKey, ch, activeSubTab);
 }
 
+function renderClass9EnglishVideoTabs(ch, activeTab) {
+  const selectedTab = activeTab || state.activeClass9EnglishVideoTab || 'english';
+  const englishVideos = [
+    { title: 'English Video', file: 'English.mp4' },
+    { title: 'First Paragraph Video', file: '1st%20Paraghraph.mp4' }
+  ];
+  const videoCard = video => `
+    <article class="class9-english-video-card">
+      <h3>${video.title}</h3>
+      <video controls playsinline preload="metadata" aria-label="${video.title} for ${ch.title}">
+        <source src="../Books/Cover Pages/Videos/${video.file}" type="video/mp4">
+        Your browser does not support local MP4 playback.
+      </video>
+    </article>`;
+
+  return `
+    <div class="class9-english-video-view">
+      <div class="class9-english-video-tabs" role="tablist" aria-label="English lesson videos">
+        <button type="button" role="tab" aria-selected="${selectedTab === 'english'}" class="topic-sub-tab-btn ${selectedTab === 'english' ? 'active' : ''}" onclick="switchClass9EnglishVideoTab('english')">🇬🇧 English Video</button>
+        <button type="button" role="tab" aria-selected="${selectedTab === 'urdu'}" class="topic-sub-tab-btn ${selectedTab === 'urdu' ? 'active' : ''}" onclick="switchClass9EnglishVideoTab('urdu')">🇵🇰 Urdu Video</button>
+      </div>
+      ${selectedTab === 'english'
+        ? `<div class="class9-english-video-grid">${englishVideos.map(videoCard).join('')}</div>`
+        : `<div class="class9-english-video-grid">${videoCard({ title: 'Urdu Video', file: 'URdu.mp4' })}</div>`}
+    </div>`;
+}
+
+function switchClass9EnglishVideoTab(tab) {
+  state.activeClass9EnglishVideoTab = tab === 'urdu' ? 'urdu' : 'english';
+  const chapters = getSubjectChapterList('eng', 'cls9');
+  const chapter = chapters[state.selectedSubjChapter || 0] || chapters[0];
+  const container = $('subjTabContent');
+  if (chapter && container) container.innerHTML = renderClass9EnglishVideoTabs(chapter, state.activeClass9EnglishVideoTab);
+}
+
 function switchLangLessonSubTab(subjKey, subTab) {
   state.activeSubjLessonSubTab = subTab;
   const bar = $("subjSubTabsBar") || document.querySelector(".topic-sub-tabs-bar-fixed") || document.querySelector(".topic-sub-tabs-bar");
@@ -17752,6 +17805,9 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
       </div>
     `;
   } else if (subTab === 'videos') {
+    if (subjKey === 'eng' && state.selectedClass === 'cls9' && Number(ch.number) === 1) {
+      return renderClass9EnglishVideoTabs(ch);
+    }
     return `
       <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem;">
         <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">🎥 Verified Lesson Lecture</span>
