@@ -1,0 +1,32 @@
+@printed 73
+exercise 2.4
+q 1 | Solve the following system of equations by matrix inversion method. || درج ذیل مساواتوں کے نظام کو قالب کے معکوس کے طریقے سے حل کریں۔ || د معادلو لاندې سیسټم د میټریکس د معکوس په طریقه حل کړئ.
+qp (i) | $4x-3y+z=11,\quad 2x+y-4z=-1,\quad x+2y-2z=1$
+qp (ii) | $x+y+z=1,\quad x+y-2z=3,\quad 2x+y+z=2$
+q 2 | Solve the following system of equations by the Gauss elimination method and Gauss–Jordan method. || درج ذیل مساواتوں کے نظام کو گاؤس حذف کے طریقے اور گاؤس–جارڈن طریقے سے حل کریں۔ || د معادلو لاندې سیسټم د ګاوس د حذف او ګاوس–جورډن په طریقو حل کړئ.
+qp (i) | $x-y+4z=4,\quad 2x+2y-z=2,\quad 3x-2y+3z=-3$
+qp (ii) | $2x+4y-z=0,\quad x-2y-2z=2,\quad -5x-8y+3z=-2$
+q 3 | Use Cramer's rule to solve the following system of equations. || درج ذیل مساواتوں کے نظام کو حل کرنے کے لیے کریمر کا اصول استعمال کریں۔ || د معادلو د لاندې سیسټم د حل لپاره د کرامر قاعده وکاروئ.
+qp (i) | $x-2y=-4,\quad 3x+y=-5,\quad 2x+z=-1$
+qp (ii) | $x-y+2z=10,\quad 2x+y-2z=-4,\quad 3x+y+z=7$
+q 4 | Solve the following system of homogeneous equations. || درج ذیل متجانس مساواتوں کا نظام حل کریں۔ || د متجانسو معادلو لاندې سیسټم حل کړئ.
+qp (i) | $x_1-x_2+x_3=0,\quad x_1+2x_2-x_3=0,\quad 2x_1+x_2+3x_3=0$
+qp (ii) | $x_1+x_2+2x_3=0,\quad -2x_1+x_2-x_3=0,\quad -x_1+5x_2+4x_3=0$
+q 5 | For what value of $\lambda$, the following system of homogeneous equations has a non-trivial solution. Solve the system. $x_1+5x_2+3x_3=0,\ 5x_1+x_2-\lambda x_3=0,\ x_1+2x_2+\lambda x_3=0$ || $\lambda$ کی کس قیمت کے لیے درج ذیل متجانس مساواتوں کے نظام کا غیر معمولی حل ہے؟ نظام حل کریں۔ $x_1+5x_2+3x_3=0,\ 5x_1+x_2-\lambda x_3=0,\ x_1+2x_2+\lambda x_3=0$ || د $\lambda$ په کوم قیمت د متجانسو معادلو لاندې سیسټم غیر عادي حل لري؟ سیسټم حل کړئ. $x_1+5x_2+3x_3=0,\ 5x_1+x_2-\lambda x_3=0,\ x_1+2x_2+\lambda x_3=0$
+endexercise
+svg Solutions of Systems of Equations: One Solution — intersect at 1 point (Consistent, Independent); No Solution — parallel lines (Inconsistent); Infinite solutions — same line (Consistent, Dependent) || مساواتوں کے نظام کے حل: ایک حل — ایک نقطے پر قطع (ہم آہنگ، آزاد)؛ کوئی حل نہیں — متوازی خطوط (غیر ہم آہنگ)؛ لامحدود حل — ایک ہی خط (ہم آہنگ، منحصر) || د معادلو د سیسټمونو حلونه: یو حل — په یوه ټکي کې قطع (همغږی، خپلواک)؛ هېڅ حل — موازي کرښې (ناهمغږی)؛ بې شمېره حلونه — یوه کرښه (همغږی، تړلی)
+<svg viewBox="0 0 600 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three panels: intersecting lines with one solution, parallel lines with no solution, the same line with infinitely many solutions">
+<rect x="2" y="2" width="596" height="226" rx="6" fill="#fff" stroke="#334155"/>
+<text x="300" y="26" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700">Solutions of Systems of Equations</text>
+<g font-family="Segoe UI, sans-serif" font-size="11" text-anchor="middle" fill="#0f172a">
+<rect x="20" y="40" width="175" height="180" rx="10" fill="#fef3c7"/><rect x="212" y="40" width="175" height="180" rx="10" fill="#fef3c7"/><rect x="404" y="40" width="175" height="180" rx="10" fill="#fef3c7"/>
+<text x="107" y="178">One Solution</text><text x="107" y="194">Intersect at 1 point</text><text x="107" y="210">Consistent Independent</text>
+<text x="300" y="178">No Solution</text><text x="300" y="194">Parallel Lines</text><text x="300" y="210">Inconsistent</text>
+<text x="492" y="178">Infinite solutions</text><text x="492" y="194">Same Line</text><text x="492" y="210">Consistent Dependent</text>
+</g>
+<g stroke="#0f172a" stroke-width="1.3"><path d="M35 120 H180 M75 60 V160"/><path d="M227 120 H372 M267 60 V160"/><path d="M419 120 H564 M459 60 V160"/></g>
+<g stroke-width="2"><line x1="40" y1="70" x2="170" y2="150" stroke="#dc2626"/><line x1="45" y1="150" x2="170" y2="75" stroke="#0f172a"/>
+<line x1="235" y1="150" x2="345" y2="70" stroke="#dc2626"/><line x1="255" y1="160" x2="370" y2="78" stroke="#0f172a"/>
+<line x1="450" y1="160" x2="530" y2="62" stroke="#0f172a" stroke-width="3"/><line x1="450" y1="160" x2="530" y2="62" stroke="#dc2626" stroke-dasharray="6 6"/></g>
+</svg>
+endsvg

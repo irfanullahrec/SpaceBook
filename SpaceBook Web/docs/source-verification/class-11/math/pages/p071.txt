@@ -1,0 +1,10 @@
+@printed 71
+m where $A=\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix},\ X=\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}$ and $B=\begin{bmatrix}k_1\\k_2\\k_3\end{bmatrix}$.
+p If $|A|\neq0$, then $A^{-1}$ exists and (2) can be written as $X=A^{-1}B$. || اگر $|A|\neq0$ ہو تو $A^{-1}$ موجود ہے اور (2) کو $X=A^{-1}B$ لکھا جا سکتا ہے۔ || که $|A|\neq0$ وي، نو $A^{-1}$ شتون لري او (2) د $X=A^{-1}B$ په توګه لیکل کېدای شي.
+m Since $A^{-1}=\dfrac{1}{|A|}\,\text{adj}\,A$, we have $X=A^{-1}B=\left(\dfrac{1}{|A|}\,\text{adj}\,A\right)B$
+m $=\dfrac{1}{|A|}\begin{bmatrix}A_{11}&A_{21}&A_{31}\\A_{12}&A_{22}&A_{32}\\A_{13}&A_{23}&A_{33}\end{bmatrix}\begin{bmatrix}k_1\\k_2\\k_3\end{bmatrix}=\dfrac{1}{|A|}\begin{bmatrix}A_{11}k_1+A_{21}k_2+A_{31}k_3\\A_{12}k_1+A_{22}k_2+A_{32}k_3\\A_{13}k_1+A_{23}k_2+A_{33}k_3\end{bmatrix}$
+m that is $\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}=\begin{bmatrix}\dfrac{A_{11}k_1+A_{21}k_2+A_{31}k_3}{|A|}\\\dfrac{A_{12}k_1+A_{22}k_2+A_{32}k_3}{|A|}\\\dfrac{A_{13}k_1+A_{23}k_2+A_{33}k_3}{|A|}\end{bmatrix}$
+m Thus $x_1=\dfrac{k_1A_{11}+k_2A_{21}+k_3A_{31}}{|A|}=\dfrac{\begin{vmatrix}k_1&a_{12}&a_{13}\\k_2&a_{22}&a_{23}\\k_3&a_{32}&a_{33}\end{vmatrix}}{|A|},$
+m $x_2=\dfrac{k_1A_{12}+k_2A_{22}+k_3A_{32}}{|A|}=\dfrac{\begin{vmatrix}a_{11}&k_1&a_{13}\\a_{21}&k_2&a_{23}\\a_{31}&k_3&a_{33}\end{vmatrix}}{|A|},$
+m $x_3=\dfrac{k_1A_{13}+k_2A_{23}+k_3A_{33}}{|A|}=\dfrac{\begin{vmatrix}a_{11}&a_{12}&k_1\\a_{21}&a_{22}&k_2\\a_{31}&a_{32}&k_3\end{vmatrix}}{|A|}.$
+p This method of finding the solution of the system is called Cramer's Rule. || نظام کا حل معلوم کرنے کا یہ طریقہ کریمر کا اصول کہلاتا ہے۔ || د سیسټم د حل پیدا کولو دې طریقې ته د کرامر قاعده وايي.

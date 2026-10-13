@@ -1,0 +1,16 @@
+@printed 66
+p so it is consistent. || اس لیے یہ ہم آہنگ ہے۔ || نو همغږی دی.
+p (ii) Consider system (II). The augmented matrix of the system is $\left[\begin{array}{ccc|c}1&-2&1&2\\-1&-1&2&1\\1&-5&4&5\end{array}\right]$ || (ii) نظام (II) پر غور کریں۔ اس نظام کا توسیعی قالب $\left[\begin{array}{ccc|c}1&-2&1&2\\-1&-1&2&1\\1&-5&4&5\end{array}\right]$ ہے || (ii) (II) سیسټم په پام کې ونیسئ. د سیسټم پراخ میټریکس $\left[\begin{array}{ccc|c}1&-2&1&2\\-1&-1&2&1\\1&-5&4&5\end{array}\right]$ دی
+m then $\left[\begin{array}{ccc|c}1&-2&1&2\\-1&-1&2&1\\1&-5&4&5\end{array}\right]\overset{R}{\sim}\left[\begin{array}{ccc|c}1&-2&1&2\\0&-3&3&3\\0&-3&3&3\end{array}\right]$ by $R_2+R_1$ and $R_3-R_1$
+m $\overset{R}{\sim}\left[\begin{array}{ccc|c}1&-2&1&2\\0&-3&3&3\\0&0&0&0\end{array}\right]$ by $R_3-R_2$
+m $\overset{R}{\sim}\left[\begin{array}{ccc|c}1&-2&1&2\\0&-1&1&1\\0&0&0&0\end{array}\right]$ by $\frac{1}{3}R_2$.
+p The system (II) is reduced to the equivalent system || نظام (II) اس مساوی نظام میں بدل جاتا ہے || (II) سیسټم دې معادل سیسټم ته راکمېږي
+m $x-2y+z=2\quad$ (i)
+m $-y+z=1\quad$ (ii)
+m $0z=0\quad$ (iii)
+p Equation (iii) is obviously satisfied for all choices of $z$. Equations (i) and (ii) yield || مساوات (iii) ظاہر ہے کہ $z$ کی تمام قیمتوں کے لیے پوری ہوتی ہے۔ مساوات (i) اور (ii) سے حاصل ہوتا ہے || (iii) معادله ښکاره ده چې د $z$ د ټولو قیمتونو لپاره پوره کېږي. له (i) او (ii) معادلو څخه لاسته راځي
+m $x=2+2y-z\quad$ (iv)
+m $y=z-1\quad$ (v)
+p Since $z$ is arbitrary, from equations (iv) and (v) we can find infinitely many values of $x$ and $y$. This is equivalent to saying that the system has infinitely many solutions. Thus the system is consistent. || چونکہ $z$ اختیاری ہے، مساوات (iv) اور (v) سے ہم $x$ اور $y$ کی لامحدود قیمتیں معلوم کر سکتے ہیں۔ یہ کہنے کے مترادف ہے کہ نظام کے لامحدود حل ہیں۔ یوں نظام ہم آہنگ ہے۔ || ځکه $z$ اختیاري دی، له (iv) او (v) معادلو څخه د $x$ او $y$ بې شمېره قیمتونه پیدا کولی شو. دا د دې ویلو سره برابر دی چې سیسټم بې شمېره حلونه لري. په دې توګه سیسټم همغږی دی.
+p (3) Consider system (III). The augmented matrix of the system is $\left[\begin{array}{ccc|c}1&-2&3&1\\-2&5&-4&-2\\1&-4&-1&5\end{array}\right]$ || (3) نظام (III) پر غور کریں۔ اس نظام کا توسیعی قالب $\left[\begin{array}{ccc|c}1&-2&3&1\\-2&5&-4&-2\\1&-4&-1&5\end{array}\right]$ ہے || (3) (III) سیسټم په پام کې ونیسئ. د سیسټم پراخ میټریکس $\left[\begin{array}{ccc|c}1&-2&3&1\\-2&5&-4&-2\\1&-4&-1&5\end{array}\right]$ دی
+m then $\left[\begin{array}{ccc|c}1&-2&3&1\\-2&5&-4&-2\\1&-4&-1&5\end{array}\right]\overset{R}{\sim}\left[\begin{array}{ccc|c}1&-2&3&1\\0&1&2&0\\0&-2&-4&4\end{array}\right]$ by $R_2+2R_1$ and $R_3-R_1$

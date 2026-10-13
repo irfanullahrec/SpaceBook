@@ -1,0 +1,35 @@
+@printed 9
+p **A-2 Addition is associative** i.e. $z_1+(z_2+z_3)=(z_1+z_2)+z_3$ || **A-2 جمع تلازمی ہے** یعنی $z_1+(z_2+z_3)=(z_1+z_2)+z_3$ || **A-2 جمع اتحادي ده** یعنې $z_1+(z_2+z_3)=(z_1+z_2)+z_3$
+p If $z_1=a+bi,\ z_2=c+di$ and $z_3=e+fi$, then || اگر $z_1=a+bi,\ z_2=c+di$ اور $z_3=e+fi$ ہوں تو || که $z_1=a+bi,\ z_2=c+di$ او $z_3=e+fi$ وي، نو
+m $z_1+(z_2+z_3)=(a+bi)+[(c+di)+(e+fi)]$
+m $=(a+bi)+[(c+e)+(d+f)i]$
+m $=a+(c+e)+[b+(d+f)]i$
+m $=(a+c)+e+[(b+d)+f]i$ (by associative property for addition in $R$)
+m $=[(a+c)+(b+d)i]+e+fi$
+m $=[(a+bi)+(c+di)]+e+fi$
+m $=(z_1+z_2)+z_3$
+m Thus $z_1+(z_2+z_3)=(z_1+z_2)+z_3$
+example 9 | If $z_1=1+2i,\ z_2=-2+3i$ and $z_3=-3-5i$, then $z_1+(z_2+z_3)=(z_1+z_2)+z_3$ || اگر $z_1=1+2i,\ z_2=-2+3i$ اور $z_3=-3-5i$ ہوں تو $z_1+(z_2+z_3)=(z_1+z_2)+z_3$ || که $z_1=1+2i,\ z_2=-2+3i$ او $z_3=-3-5i$ وي، نو $z_1+(z_2+z_3)=(z_1+z_2)+z_3$
+p **Solution:** || **حل:** || **حل:**
+m $z_1+(z_2+z_3)=(1+2i)+[(-2+3i)+(-3-5i)]$
+m $=(1+2i)+[(-2-3)+(3-5)i]=(1+2i)+(-5-2i)$
+m $=(1-5)+(2-2)i=-4+0i$
+m $(z_1+z_2)+z_3=[(1+2i)+(-2+3i)]+(-3-5i)$
+m $=[(1-2)+(2+3)i]+(-3-5i)=(-1+5i)+(-3-5i)$
+m $=(-1-3)+(5-5)i=-4+0i$
+m Hence $z_1+(z_2+z_3)=(z_1+z_2)+z_3$
+endexample
+p **(ii) Properties of Multiplication** || **(ii) ضرب کی خصوصیات** || **(ii) د ضرب ځانګړتیاوې**
+p **M-1 Multiplication is commutative** i.e. $z_1z_2=z_2z_1$ || **M-1 ضرب مبادلہ ہے** یعنی $z_1z_2=z_2z_1$ || **M-1 ضرب تبادلوي ده** یعنې $z_1z_2=z_2z_1$
+p If $z_1=a+bi$ and $z_2=c+di$, then $z_1z_2=(a+bi)\cdot(c+di)=(ac-bd)+(ad+bc)i$ (by definition of multiplication of complex numbers) || اگر $z_1=a+bi$ اور $z_2=c+di$ ہوں تو $z_1z_2=(a+bi)\cdot(c+di)=(ac-bd)+(ad+bc)i$ (مختلط اعداد کی ضرب کی تعریف سے) || که $z_1=a+bi$ او $z_2=c+di$ وي، نو $z_1z_2=(a+bi)\cdot(c+di)=(ac-bd)+(ad+bc)i$ (د مختلطو عددونو د ضرب د تعریف له مخې)
+p and $z_2z_1=(c+di)(a+bi)=(ca-db)+(cb+da)i=(ac-bd)+(ad+bc)i$ (by commutative properties of multiplication and addition of real numbers). Thus, $z_1z_2=z_2z_1$ || اور $z_2z_1=(c+di)(a+bi)=(ca-db)+(cb+da)i=(ac-bd)+(ad+bc)i$ (حقیقی اعداد کی ضرب اور جمع کی مبادلہ خصوصیات سے)۔ یوں $z_1z_2=z_2z_1$ || او $z_2z_1=(c+di)(a+bi)=(ca-db)+(cb+da)i=(ac-bd)+(ad+bc)i$ (د حقیقي عددونو د ضرب او جمع د تبادلوي ځانګړتیاوو له مخې). په دې توګه $z_1z_2=z_2z_1$
+example 10 | If $z_1=2-3i$ and $z_2=-1+2i$, then $z_1z_2=z_2z_1$ || اگر $z_1=2-3i$ اور $z_2=-1+2i$ ہوں تو $z_1z_2=z_2z_1$ || که $z_1=2-3i$ او $z_2=-1+2i$ وي، نو $z_1z_2=z_2z_1$
+p **Solution:** || **حل:** || **حل:**
+m $z_1z_2=(2-3i)(-1+2i)=2(-1+2i)-3i(-1+2i)$
+m $=-2+4i+3i-6i^2=-2+7i+6\quad(\because i^2=-1)$
+m $=4+7i$
+m and $z_2z_1=(-1+2i)(2-3i)=-1(2-3i)+2i(2-3i)$
+m $=-2+3i+4i-6i^2=-2+7i+6\quad(\because i^2=-1)$
+m $=4+7i$
+m Hence $z_1z_2=z_2z_1$
+endexample

@@ -1,0 +1,17 @@
+@printed 42
+@deco footer stamp "Not For Sale"; a finger is visible at the top-left corner of the photo
+example 3 | Let $A=\begin{bmatrix}1&2&3\\6&5&4\\7&8&9\end{bmatrix}$. Find the minors $M_{11}, M_{12}, M_{13}$ and $M_{22}$ of the matrix $A$. || فرض کریں $A=\begin{bmatrix}1&2&3\\6&5&4\\7&8&9\end{bmatrix}$ ۔ قالب $A$ کے مائنرز $M_{11}, M_{12}, M_{13}$ اور $M_{22}$ معلوم کریں۔ || فرض کړئ $A=\begin{bmatrix}1&2&3\\6&5&4\\7&8&9\end{bmatrix}$. د میټریکس $A$ ماینرونه $M_{11}, M_{12}, M_{13}$ او $M_{22}$ پیدا کړئ.
+p **Solution:** We have || **حل:** ہمارے پاس ہے || **حل:** موږ لرو
+m $M_{11}=\begin{vmatrix}5&4\\8&9\end{vmatrix}=45-32=13,\quad M_{12}=\begin{vmatrix}6&4\\7&9\end{vmatrix}=54-28=26,$
+m $M_{13}=\begin{vmatrix}6&5\\7&8\end{vmatrix}=48-35=13,\quad M_{22}=\begin{vmatrix}1&3\\7&9\end{vmatrix}=9-21=-12.$
+endexample
+p **(ii) Cofactor of an element** || **(ii) کسی عنصر کا کوفیکٹر** || **(ii) د یو عنصر کوفکټر**
+p Let $A$ be a square matrix of order $n$. The cofactor of the element $a_{ij}$, denoted by $A_{ij}$, is defined by $A_{ij}=(-1)^{i+j}M_{ij}$, where $M_{ij}$ is the minor of $a_{ij}$. || فرض کریں $A$ درجہ $n$ کا مربع قالب ہے۔ عنصر $a_{ij}$ کا کوفیکٹر جسے $A_{ij}$ سے ظاہر کرتے ہیں، $A_{ij}=(-1)^{i+j}M_{ij}$ سے بیان کیا جاتا ہے جہاں $M_{ij}$ ، $a_{ij}$ کا مائنر ہے۔ || فرض کړئ $A$ د $n$ ترتیب مربع میټریکس دی. د عنصر $a_{ij}$ کوفکټر چې په $A_{ij}$ ښودل کېږي، په $A_{ij}=(-1)^{i+j}M_{ij}$ تعریف کېږي، چېرې چې $M_{ij}$ د $a_{ij}$ ماینر دی.
+m Thus if $A=\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}$, then
+m cofactor of $a_{11}=A_{11}=(-1)^{1+1}M_{11}=(-1)^2\begin{vmatrix}a_{22}&a_{23}\\a_{32}&a_{33}\end{vmatrix}=1\times(a_{22}a_{33}-a_{23}a_{32})=a_{22}a_{33}-a_{23}a_{32}$
+m cofactor of $a_{23}=A_{23}=(-1)^{2+3}M_{23}=(-1)^5\begin{vmatrix}a_{11}&a_{12}\\a_{31}&a_{32}\end{vmatrix}=-1\times(a_{11}a_{32}-a_{12}a_{31})=-(a_{11}a_{32}-a_{12}a_{31})$ and so on.
+example 4 | Let $A=\begin{bmatrix}1&-2&5\\3&0&-1\\5&2&0\end{bmatrix}$. Find the cofactor $A_{13}$ and $A_{21}$. || فرض کریں $A=\begin{bmatrix}1&-2&5\\3&0&-1\\5&2&0\end{bmatrix}$ ۔ کوفیکٹر $A_{13}$ اور $A_{21}$ معلوم کریں۔ || فرض کړئ $A=\begin{bmatrix}1&-2&5\\3&0&-1\\5&2&0\end{bmatrix}$. کوفکټرونه $A_{13}$ او $A_{21}$ پیدا کړئ.
+p **Solution:** || **حل:** || **حل:**
+m We have $A_{13}=(-1)^{1+3}M_{13}=(-1)^4\begin{vmatrix}3&0\\5&2\end{vmatrix}=1\times(3\times2-0\times5)=6,$
+m and $A_{21}=(-1)^{2+1}M_{21}=(-1)^3\begin{vmatrix}-2&5\\2&0\end{vmatrix}=-1\times(-2\times0-5\times2)=10.$
+endexample

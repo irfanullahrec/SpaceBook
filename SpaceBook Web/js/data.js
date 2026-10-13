@@ -457,8 +457,10 @@ const DATA = {
       {
         "id": "cls11-math",
         "name": "Mathematics",
+        "nameUrdu": "ریاضی",
         "emoji": "📐",
-        "chapters": 14
+        "chapters": 12,
+        "hasMath": true
       },
       {
         "id": "cls11-phy",

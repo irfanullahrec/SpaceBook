@@ -1,0 +1,14 @@
+@printed 50
+@deco a finger is visible at the top-left corner of the photo
+p If $A=\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}$ then $B=\begin{bmatrix}a_{11}+ka_{12}&a_{12}&a_{13}\\a_{21}+ka_{22}&a_{22}&a_{23}\\a_{31}+ka_{32}&a_{32}&a_{33}\end{bmatrix}$ is the matrix obtained by multiplying every element of the second column of $A$ and then adding to the corresponding element of the first column of $A$, then || اگر $A=\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}$ ہو تو $B=\begin{bmatrix}a_{11}+ka_{12}&a_{12}&a_{13}\\a_{21}+ka_{22}&a_{22}&a_{23}\\a_{31}+ka_{32}&a_{32}&a_{33}\end{bmatrix}$ وہ قالب ہے جو $A$ کے دوسرے کالم کے ہر عنصر کو ضرب دے کر $A$ کے پہلے کالم کے متعلقہ عنصر میں جمع کرنے سے حاصل ہو، تو || که $A=\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}$ وي نو $B=\begin{bmatrix}a_{11}+ka_{12}&a_{12}&a_{13}\\a_{21}+ka_{22}&a_{22}&a_{23}\\a_{31}+ka_{32}&a_{32}&a_{33}\end{bmatrix}$ هغه میټریکس دی چې د $A$ د دویم ستون هر عنصر ضرب او بیا د $A$ د لومړي ستون اړوند عنصر ته جمع کولو له لارې لاسته راغلی، نو
+m $|B|=\begin{vmatrix}a_{11}+ka_{12}&a_{12}&a_{13}\\a_{21}+ka_{22}&a_{22}&a_{23}\\a_{31}+ka_{32}&a_{32}&a_{33}\end{vmatrix}=\begin{vmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{vmatrix}+\begin{vmatrix}ka_{12}&a_{12}&a_{13}\\ka_{22}&a_{22}&a_{23}\\ka_{32}&a_{32}&a_{33}\end{vmatrix}$ by property (6)
+m $=\begin{vmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{vmatrix}+k\begin{vmatrix}a_{12}&a_{12}&a_{13}\\a_{22}&a_{22}&a_{23}\\a_{32}&a_{32}&a_{33}\end{vmatrix}$ by property (5)
+m $=\begin{vmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{vmatrix}+k(0)$ by property (4)
+m $=\begin{vmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{vmatrix}=|A|.$
+exercise 2.2
+q 1 | If $A=\begin{bmatrix}1&3&1\\-1&2&0\\2&0&-2\end{bmatrix}$, then find $A_{11}, A_{21}, A_{23}, A_{31}, A_{32}, A_{33}$. Also find $|A|$. || اگر $A=\begin{bmatrix}1&3&1\\-1&2&0\\2&0&-2\end{bmatrix}$ ہو تو $A_{11}, A_{21}, A_{23}, A_{31}, A_{32}, A_{33}$ معلوم کریں۔ $|A|$ بھی معلوم کریں۔ || که $A=\begin{bmatrix}1&3&1\\-1&2&0\\2&0&-2\end{bmatrix}$ وي، نو $A_{11}, A_{21}, A_{23}, A_{31}, A_{32}, A_{33}$ پیدا کړئ. $|A|$ هم پیدا کړئ.
+q 2 | Without evaluating state the reasons for the following equalities. || قیمت معلوم کیے بغیر درج ذیل مساوات کی وجوہات بیان کریں۔ || پرته له محاسبې د لاندې برابریو دلیلونه بیان کړئ.
+qp (i) | $\begin{vmatrix}1&2&0\\3&1&0\\-1&2&0\end{vmatrix}=0$
+qp (ii) | $\begin{vmatrix}1&2&3\\-8&4&-12\\2&-1&3\end{vmatrix}=0$
+qp (iii) | $\begin{vmatrix}1&3&-2\\3&-1&1\\2&1&4\end{vmatrix}=\begin{vmatrix}1&3&2\\3&-1&1\\-2&1&4\end{vmatrix}$
+qp (iv) | $\begin{vmatrix}3&2&0\\1&1&-3\\2&4&-6\end{vmatrix}=-3\begin{vmatrix}3&2&0\\1&1&1\\2&4&2\end{vmatrix}$

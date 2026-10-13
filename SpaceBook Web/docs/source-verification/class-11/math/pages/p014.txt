@@ -1,0 +1,31 @@
+@printed 12
+@deco footer stamp "Not For Sale"
+@issue Example 14 prints "Here a = 2, b = −3" although $z=-2-3i$ gives $a=-2$; the printed working that follows uses $a=-2$. Transcribed as printed, with the correct value noted in brackets.
+example 13 | Find additive inverse of $5-3i$ || $5-3i$ کا جمعی معکوس معلوم کریں || د $5-3i$ د جمع معکوس پیدا کړئ
+p **Solution:** Let $z=5-3i$ || **حل:** فرض کریں $z=5-3i$ || **حل:** فرض کړئ $z=5-3i$
+m $\therefore\ -z=-(5-3i)=-5+3i$
+p Thus the additive inverse of $5-3i$ is $-5+3i$. || یوں $5-3i$ کا جمعی معکوس $-5+3i$ ہے۔ || په دې توګه د $5-3i$ د جمع معکوس $-5+3i$ دی.
+endexample
+p **Multiplicative Inverse** A complex number $c+di$ is called the **multiplicative inverse** of the complex number $a+bi$ if $(a+bi)(c+di)=1+0i$ i.e. the multiplicative identity. || **ضربی معکوس** مختلط عدد $c+di$ ، مختلط عدد $a+bi$ کا **ضربی معکوس** کہلاتا ہے اگر $(a+bi)(c+di)=1+0i$ ہو یعنی ضربی شناخت۔ || **د ضرب معکوس** مختلط عدد $c+di$ د مختلط عدد $a+bi$ **د ضرب معکوس** بلل کېږي که $(a+bi)(c+di)=1+0i$ وي، یعنې د ضرب هویت.
+m We have $(a+bi)(c+di)=1+0i\Rightarrow(ac-bd)+(ad+bc)i=1+0i$
+m $\Rightarrow\ ac-bd=1\quad$ (i)
+m and $ad+bc=0\quad$ (ii)
+p From (ii), we have || (ii) سے ہمارے پاس ہے || له (ii) څخه لرو
+m $ad=-bc$ or $d=-\dfrac{bc}{a}\quad$ (iii)
+p Putting the value of $d$ in (i), we get || (i) میں $d$ کی قیمت رکھنے سے ہمیں ملتا ہے || په (i) کې د $d$ قیمت ږدو، لاسته راځي
+m $ac+b\left(\dfrac{bc}{a}\right)=1\Rightarrow\dfrac{a^2c+b^2c}{a}=1$
+m $\Rightarrow(a^2+b^2)c=a\Rightarrow c=\dfrac{a}{a^2+b^2}\quad$ (iv)
+p Putting the value of $c$ in (iii), we get || (iii) میں $c$ کی قیمت رکھنے سے ہمیں ملتا ہے || په (iii) کې د $c$ قیمت ږدو، لاسته راځي
+m $d=-\dfrac{b\cdot a}{a(a^2+b^2)}\Rightarrow d=-\dfrac{b}{a^2+b^2}\quad$ (v)
+p From (iv) and (v), we have || (iv) اور (v) سے ہمارے پاس ہے || له (iv) او (v) څخه لرو
+m $c+di=\dfrac{a}{a^2+b^2}-\dfrac{b}{a^2+b^2}i$
+p Thus the multiplicative inverse of $a+bi$ is || یوں $a+bi$ کا ضربی معکوس یہ ہے || په دې توګه د $a+bi$ د ضرب معکوس دا دی
+eq \dfrac{a}{a^2+b^2}-\dfrac{b}{a^2+b^2}i
+box info | Did You Know || کیا آپ جانتے ہیں || آیا پوهېږئ
+p The complex numbers possess all the properties that real numbers possess except for the order relation, that is, we can not say that one complex number is greater than the other complex number. || مختلط اعداد میں وہ تمام خصوصیات موجود ہیں جو حقیقی اعداد میں ہیں سوائے ترتیب کے تعلق کے، یعنی ہم یہ نہیں کہہ سکتے کہ ایک مختلط عدد دوسرے مختلط عدد سے بڑا ہے۔ || مختلط عددونه ټولې هغه ځانګړتیاوې لري چې حقیقي عددونه یې لري پرته له ترتیبي اړیکې، یعنې موږ نه شو ویلی چې یو مختلط عدد له بل مختلط عدد څخه لوی دی.
+endbox
+example 14 | Find multiplicative inverse of $-2-3i$ || $-2-3i$ کا ضربی معکوس معلوم کریں || د $-2-3i$ د ضرب معکوس پیدا کړئ
+p **Solution:** Let $z=-2-3i$. Here $a=2$ [read $a=-2$], $b=-3$ || **حل:** فرض کریں $z=-2-3i$۔ یہاں $a=2$ [درست: $a=-2$]، $b=-3$ || **حل:** فرض کړئ $z=-2-3i$. دلته $a=2$ [سم: $a=-2$]، $b=-3$
+m $\therefore\ z^{-1}=\left(\dfrac{a}{a^2+b^2},-\dfrac{b}{a^2+b^2}\right)=\left(\dfrac{-2}{(-2)^2+(-3)^2},-\dfrac{-3}{(-2)^2+(-3)^2}\right)=\left(\dfrac{-2}{13},\dfrac{3}{13}\right)=\dfrac{-2}{13}+\dfrac{3}{13}i$
+p Thus $-\dfrac{2}{13}+\dfrac{3}{13}i$ is the multiplicative inverse of $-2-3i$. || یوں $-\dfrac{2}{13}+\dfrac{3}{13}i$ ، $-2-3i$ کا ضربی معکوس ہے۔ || په دې توګه $-\dfrac{2}{13}+\dfrac{3}{13}i$ د $-2-3i$ د ضرب معکوس دی.
+endexample

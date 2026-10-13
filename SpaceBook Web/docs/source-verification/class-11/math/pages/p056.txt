@@ -1,0 +1,15 @@
+@printed 56
+p reduced echelon form but $\begin{bmatrix}0&1&0&3\\0&0&1&2\\0&0&0&4\end{bmatrix}$ and $\begin{bmatrix}1&2&0\\0&0&3\\0&0&0\\0&0&0\end{bmatrix}$ are not in (row) reduced echelon form. || مختصر ایچیلون شکل میں ہیں لیکن $\begin{bmatrix}0&1&0&3\\0&0&1&2\\0&0&0&4\end{bmatrix}$ اور $\begin{bmatrix}1&2&0\\0&0&3\\0&0&0\\0&0&0\end{bmatrix}$ (قطاری) مختصر ایچیلون شکل میں نہیں۔ || لنډه اېچلون بڼه دي، خو $\begin{bmatrix}0&1&0&3\\0&0&1&2\\0&0&0&4\end{bmatrix}$ او $\begin{bmatrix}1&2&0\\0&0&3\\0&0&0\\0&0&0\end{bmatrix}$ په (قطاري) لنډه اېچلون بڼه نه دي.
+@sec 2.5.3 | Reduce a matrix to its echelon and reduced echelon form || قالب کو ایچیلون اور مختصر ایچیلون شکل میں لانا || میټریکس اېچلون او لنډې اېچلون بڼې ته راوستل
+### 2.5.3 Reduce a matrix to its echelon and reduced echelon form || 2.5.3 قالب کو ایچیلون اور مختصر ایچیلون شکل میں لانا || 2.5.3 میټریکس اېچلون او لنډې اېچلون بڼې ته راوستل
+example 8 | Reduce $A=\begin{bmatrix}2&3&-4\\3&1&-1\\1&-2&-5\end{bmatrix}$ to echelon form and then to reduced echelon form. || $A=\begin{bmatrix}2&3&-4\\3&1&-1\\1&-2&-5\end{bmatrix}$ کو ایچیلون شکل اور پھر مختصر ایچیلون شکل میں لائیں۔ || $A=\begin{bmatrix}2&3&-4\\3&1&-1\\1&-2&-5\end{bmatrix}$ اېچلون بڼې او بیا لنډې اېچلون بڼې ته راولئ.
+m **Solution:** $\begin{bmatrix}2&3&-4\\3&1&-1\\1&-2&-5\end{bmatrix}\overset{R}{\sim}\begin{bmatrix}1&-2&-5\\3&1&-1\\2&3&-4\end{bmatrix}$ by $R_1\leftrightarrow R_3$
+m $\overset{R}{\sim}\begin{bmatrix}1&-2&-5\\0&7&14\\2&3&-4\end{bmatrix}$ by $R_2-3R_1\ \overset{R}{\sim}\begin{bmatrix}1&-2&-5\\0&7&14\\0&7&6\end{bmatrix}$ by $R_3-2R_1$
+m $\overset{R}{\sim}\begin{bmatrix}1&-2&-5\\0&1&2\\0&7&6\end{bmatrix}$ by $\frac{1}{7}R_2\ \overset{R}{\sim}\begin{bmatrix}1&-2&-5\\0&1&2\\0&0&-8\end{bmatrix}$ by $R_3-7R_2\qquad$ (1)
+m $\overset{R}{\sim}\begin{bmatrix}1&-2&-5\\0&1&2\\0&0&1\end{bmatrix}$ by $-\frac{1}{8}R_3\ \overset{R}{\sim}\begin{bmatrix}1&0&-1\\0&1&2\\0&0&1\end{bmatrix}$ by $R_1+2R_2$
+m $\overset{R}{\sim}\begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix}$ by $R_1+R_3$ and $R_2-2R_3\qquad$ (2)
+p The matrices in (1) and (2) are in echelon form and reduced echelon form of the given matrix $A$ respectively. || (1) اور (2) والے قالب بالترتیب دیے گئے قالب $A$ کی ایچیلون شکل اور مختصر ایچیلون شکل ہیں۔ || په (1) او (2) کې میټریکسونه په ترتیب سره د ورکړل شوي میټریکس $A$ اېچلون بڼه او لنډه اېچلون بڼه ده.
+endexample
+@sec 2.5.4 | Rank of a Matrix || قالب کا رینک || د میټریکس رتبه
+### 2.5.4 Rank of a Matrix || 2.5.4 قالب کا رینک || 2.5.4 د میټریکس رتبه
+p Let $A$ be a non-zero matrix. The rank of the matrix $A$ is the number of non-zero rows in its (row) echelon form. || فرض کریں $A$ ایک غیر صفر قالب ہے۔ قالب $A$ کا رینک اس کی (قطاری) ایچیلون شکل میں غیر صفر قطاروں کی تعداد ہے۔ || فرض کړئ $A$ یو غیر صفر میټریکس دی. د میټریکس $A$ رتبه د هغه په (قطاري) اېچلون بڼه کې د غیر صفر قطارونو شمېر دی.

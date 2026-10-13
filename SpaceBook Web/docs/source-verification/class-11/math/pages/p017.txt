@@ -1,0 +1,19 @@
+@printed 15
+@sec 1.2.5 | Real and imaginary parts of complex numbers of the form $(x+iy)^n$ and $\left(\frac{x_1+iy_1}{x_2+iy_2}\right)^n$ || $(x+iy)^n$ اور $\left(\frac{x_1+iy_1}{x_2+iy_2}\right)^n$ قسم کے مختلط اعداد کے حقیقی اور خیالی حصے || د $(x+iy)^n$ او $\left(\frac{x_1+iy_1}{x_2+iy_2}\right)^n$ ډول مختلطو عددونو حقیقي او خیالي برخې
+### 1.2.5 Real and imaginary parts of the complex number of the form || 1.2.5 درج ذیل قسم کے مختلط عدد کے حقیقی اور خیالی حصے || 1.2.5 د لاندې ډول مختلط عدد حقیقي او خیالي برخې
+m (i) $(x+iy)^n\qquad$ (ii) $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^n,\ x_2+iy_2\neq0$ where $n=\pm1$ and $\pm2$
+p **i. Real and imaginary parts of $(x+iy)^n$ where $n=\pm1$ and $\pm2$** || **i. $(x+iy)^n$ کے حقیقی اور خیالی حصے جہاں $n=\pm1$ اور $\pm2$** || **i. د $(x+iy)^n$ حقیقي او خیالي برخې چېرې چې $n=\pm1$ او $\pm2$**
+p When $n=1$, $(x+iy)^n$ reduces to $x+iy$. Therefore, real part $=x$ and imaginary part $=y$ || جب $n=1$ ہو تو $(x+iy)^n$ کم ہو کر $x+iy$ بن جاتا ہے۔ لہٰذا حقیقی حصہ $=x$ اور خیالی حصہ $=y$ || کله چې $n=1$ وي، $(x+iy)^n$ په $x+iy$ بدلېږي. نو حقیقي برخه $=x$ او خیالي برخه $=y$
+p When $n=-1$, $(x+iy)^n$ reduces to $(x+iy)^{-1}$. We have, || جب $n=-1$ ہو تو $(x+iy)^n$ ، $(x+iy)^{-1}$ بن جاتا ہے۔ ہمارے پاس ہے، || کله چې $n=-1$ وي، $(x+iy)^n$ په $(x+iy)^{-1}$ بدلېږي. موږ لرو،
+m $(x+iy)^{-1}=\dfrac{1}{(x+iy)}=\dfrac{1}{(x+iy)}\times\dfrac{x-iy}{x-iy}$ (by rationalization)
+m $=\dfrac{x-iy}{x^2+y^2}=\dfrac{x}{x^2+y^2}-i\dfrac{y}{x^2+y^2}$
+m Therefore real part $=\dfrac{x}{x^2+y^2}$ and imaginary part $=\dfrac{-y}{x^2+y^2}$
+p When $n=2$, $(x+iy)^n$ reduces to $(x+iy)^2$, we have || جب $n=2$ ہو تو $(x+iy)^n$ ، $(x+iy)^2$ بن جاتا ہے، ہمارے پاس ہے || کله چې $n=2$ وي، $(x+iy)^n$ په $(x+iy)^2$ بدلېږي، موږ لرو
+m $(x+iy)^2=x^2+2ixy+i^2y^2$
+m $=x^2+2ixy-y^2\quad(\because i^2=-1)$
+m $=(x^2-y^2)+2ixy$
+m Therefore real part $=x^2-y^2$ and imaginary part $=2xy$
+p When $n=-2$, $(x+iy)^n$ reduces to $(x+iy)^{-2}$. We have, || جب $n=-2$ ہو تو $(x+iy)^n$ ، $(x+iy)^{-2}$ بن جاتا ہے۔ ہمارے پاس ہے، || کله چې $n=-2$ وي، $(x+iy)^n$ په $(x+iy)^{-2}$ بدلېږي. موږ لرو،
+m $(x+iy)^{-2}=\dfrac{1}{(x+iy)^2}=\dfrac{1}{(x+iy)^2}\times\dfrac{(x-iy)^2}{(x-iy)^2}=\dfrac{x^2-y^2-2ixy}{(x+iy)^2(x-iy)^2}$
+m $=\dfrac{x^2-y^2-2ixy}{(x^2+y^2)^2}=\dfrac{x^2-y^2}{(x^2+y^2)^2}-i\dfrac{2xy}{(x^2+y^2)^2}$
+m Therefore real part $=\dfrac{x^2-y^2}{(x^2+y^2)^2}$ and imaginary part $=\dfrac{-2xy}{(x^2+y^2)^2}$

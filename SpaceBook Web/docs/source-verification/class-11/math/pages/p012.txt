@@ -1,0 +1,35 @@
+@printed 10
+@deco footer stamp "Not For Sale"
+p **M-2 Multiplication is associative** i.e. $z_1(z_2z_3)=(z_1z_2)z_3$ || **M-2 ضرب تلازمی ہے** یعنی $z_1(z_2z_3)=(z_1z_2)z_3$ || **M-2 ضرب اتحادي ده** یعنې $z_1(z_2z_3)=(z_1z_2)z_3$
+p If $z_1=a+bi,\ z_2=c+di$ and $z_3=e+fi$, then || اگر $z_1=a+bi,\ z_2=c+di$ اور $z_3=e+fi$ ہوں تو || که $z_1=a+bi,\ z_2=c+di$ او $z_3=e+fi$ وي، نو
+m $z_1(z_2z_3)=(a+bi)\{(c+di)(e+fi)\}=(a+bi)\{(ce-df)+(cf+de)i\}$
+m $=[a(ce-df)-b(cf+de)]+[a(cf+de)+b(ce-df)]i$
+m and $(z_1z_2)z_3=[(a+bi)(c+di)](e+fi)=[(ac-bd)+(ad+bc)i](e+fi)$
+m $=[(ac-bd)e-(ad+bc)f]+[(ac-bd)f+(ad+bc)e]i$
+m $=[(ace-adf)-(bde+bcf)]+[(acf+ade)+(bce-bdf)]i$
+m $=[a(ce-df)-b(cf+de)]+[a(cf+de)+b(ce-df)]i$
+m Thus, $z_1(z_2z_3)=(z_1z_2)z_3$
+example 11 | If $z_1=1-i,\ z_2=-1+2i$ and $z_3=2-3i$, then $z_1(z_2z_3)=(z_1z_2)z_3$ || اگر $z_1=1-i,\ z_2=-1+2i$ اور $z_3=2-3i$ ہوں تو $z_1(z_2z_3)=(z_1z_2)z_3$ || که $z_1=1-i,\ z_2=-1+2i$ او $z_3=2-3i$ وي، نو $z_1(z_2z_3)=(z_1z_2)z_3$
+p **Solution:** We have || **حل:** ہمارے پاس ہے || **حل:** موږ لرو
+m $z_1(z_2z_3)=(1-i)[(-1+2i)(2-3i)]=(1-i)[-1(2-3i)+2i(2-3i)]$
+m $=(1-i)(-2+3i+4i-6i^2)=(1-i)(-2+7i+6)$
+m $=(1-i)(4+7i)=1(4+7i)-i(4+7i)$
+m $=4+7i-4i-7i^2=4+3i+7=11+3i$
+m and $(z_1z_2)z_3=[(1-i)(-1+2i)](2-3i)=[1(-1+2i)-i(-1+2i)](2-3i)$
+m $=(-1+2i+i-2i^2)(2-3i)=(-1+3i+2)(2-3i)$
+m $=(1+3i)(2-3i)=1(2-3i)+3i(2-3i)$
+m $=2-3i+6i-9i^2=2+3i+9=11+3i$
+m Hence $z_1(z_2z_3)=(z_1z_2)z_3$
+endexample
+p **(iii) Multiplication–Addition Property (The Distributive Property)** || **(iii) ضرب و جمع کی خاصیت (تقسیمی خاصیت)** || **(iii) د ضرب او جمع ځانګړتیا (وېشونکې ځانګړتیا)**
+p This property is more explicitly stated as follows: || یہ خاصیت زیادہ واضح طور پر یوں بیان کی جاتی ہے: || دا ځانګړتیا په ښکاره ډول داسې بیانېږي:
+p **M–A. Multiplication is distributive over addition** i.e. $z_1(z_2+z_3)=z_1z_2+z_1z_3$ || **M–A. ضرب، جمع پر تقسیمی ہے** یعنی $z_1(z_2+z_3)=z_1z_2+z_1z_3$ || **M–A. ضرب پر جمع وېشونکی دی** یعنې $z_1(z_2+z_3)=z_1z_2+z_1z_3$
+p If $z_1=a+bi$, and $z_2=c+di$ and $z_3=e+fi$, then || اگر $z_1=a+bi$ ، $z_2=c+di$ اور $z_3=e+fi$ ہوں تو || که $z_1=a+bi$، $z_2=c+di$ او $z_3=e+fi$ وي، نو
+m $z_1(z_2+z_3)=(a+bi)[(c+di)+(e+fi)]$
+m $=(a+bi)[(c+e)+(d+f)i]$
+m $=[a(c+e)-b(d+f)]+[a(d+f)+b(c+e)]i$
+m and $z_1z_2+z_1z_3=(a+bi)(c+di)+(a+bi)(e+fi)$
+m $=[(ac-bd)+(ad+bc)i]+[(ae-bf)+(af+be)i]$
+m $=[(ac+ae)+(-bd-bf)]+[(ad+af)i+(bc+be)i]$
+m $=[a(c+e)-b(d+f)]+[a(d+f)+b(c+e)]i$
+m Thus, $z_1(z_2+z_3)=z_1z_2+z_1z_3$

@@ -1,0 +1,13 @@
+@printed 17
+p When $n=-1$, $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^n$ reduces to $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^{-1}$ || جب $n=-1$ ہو تو یہ $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^{-1}$ بن جاتا ہے || کله چې $n=-1$ وي، دا په $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^{-1}$ بدلېږي
+m We have $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^{-1}=\dfrac{x_2+iy_2}{x_1+iy_1}=\dfrac{x_2+iy_2}{x_1+iy_1}\times\dfrac{x_1-iy_1}{x_1-iy_1}$ (by rationalization)
+m $=\dfrac{x_2x_1+y_2y_1}{x_1^2+y_1^2}+i\dfrac{y_2x_1-x_2y_1}{x_1^2+y_1^2}$ (by routine calculation)
+m Therefore, real part $=\dfrac{x_2x_1+y_2y_1}{x_1^2+y_1^2}$ and imaginary part $=\dfrac{y_2x_1-x_2y_1}{x_1^2+y_1^2}$
+p When $n=2$, $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^n$ reduces to $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^2$. We have, || جب $n=2$ ہو تو یہ $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^2$ بن جاتا ہے۔ ہمارے پاس ہے، || کله چې $n=2$ وي، دا په $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^2$ بدلېږي. موږ لرو،
+m $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^2=\dfrac{(x_1+iy_1)^2}{(x_2+iy_2)^2}=\dfrac{(x_1+iy_1)^2}{(x_2+iy_2)^2}\times\dfrac{(x_2-iy_2)^2}{(x_2-iy_2)^2}$ (By rationalization)
+m $=\dfrac{[(x_1^2-y_1^2)+2ix_1y_1]\,[(x_2^2-y_2^2)-2ix_2y_2]}{(x_2+iy_2)^2(x_2-iy_2)^2}$
+m $=\dfrac{[(x_1^2-y_1^2)(x_2^2-y_2^2)+4x_1x_2y_1y_2]+2i[x_1y_1(x_2^2-y_2^2)-x_2y_2(x_1^2-y_1^2)]}{(x_2^2+y_2^2)^2}$
+m Therefore, real part $=\dfrac{(x_1^2-y_1^2)(x_2^2-y_2^2)+4x_1x_2y_1y_2}{(x_2^2+y_2^2)^2}$
+m imaginary part $=2\,\dfrac{x_1y_1(x_2^2-y_2^2)-x_2y_2(x_1^2-y_1^2)}{(x_2^2+y_2^2)^2}$
+p When $n=-2$, $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^n$ reduces to $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^{-2}$ || جب $n=-2$ ہو تو یہ $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^{-2}$ بن جاتا ہے || کله چې $n=-2$ وي، دا په $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^{-2}$ بدلېږي
+m We have $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^{-2}=\dfrac{(x_2+iy_2)^2}{(x_1+iy_1)^2}=\dfrac{(x_2+iy_2)^2}{(x_1+iy_1)^2}\times\dfrac{(x_1-iy_1)^2}{(x_1-iy_1)^2}$

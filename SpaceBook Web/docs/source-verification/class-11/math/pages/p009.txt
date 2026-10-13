@@ -1,0 +1,52 @@
+@printed 7
+example 7 | Compute the absolute value of the given complex numbers: (a) $i$ (b) $3$ (c) $2-5i$ || دیے گئے مختلط اعداد کی مطلق قیمت معلوم کریں: (a) $i$ (b) $3$ (c) $2-5i$ || د ورکړل شویو مختلطو عددونو مطلق قیمت پیدا کړئ: (a) $i$ (b) $3$ (c) $2-5i$
+p **Solution:** (a) Let $z=i$ or $z=0+i$. Then by definition || **حل:** (a) فرض کریں $z=i$ یا $z=0+i$۔ تب تعریف کی رو سے || **حل:** (a) فرض کړئ $z=i$ یا $z=0+i$. نو د تعریف له مخې
+m $|z|=\sqrt{(0)^2+(1)^2}=\sqrt{1^2}=1$
+m (b) Let $z=3$ or $z=3+0i$. Then $|z|=\sqrt{(3)^2+(0)^2}=\sqrt{9}=3$
+m (c) Let $z=2-5i$. Then $|z|=\sqrt{(2)^2+(-5)^2}=\sqrt{4+25}=\sqrt{29}$
+endexample
+box info | For Your Information || آپ کی معلومات کے لیے || ستاسو د معلوماتو لپاره
+p The complex number $z=x+iy$ and its conjugate $\bar{z}=x-iy$ are respectively represented by the points $P(x,y)$ and $Q(x,-y)$. Geometrically, the point $Q(x,-y)$ is the mirror image of the point $P(x,y)$ on the x-axis and vice versa. || مختلط عدد $z=x+iy$ اور اس کا مزدوج $\bar{z}=x-iy$ بالترتیب نقاط $P(x,y)$ اور $Q(x,-y)$ سے ظاہر کیے جاتے ہیں۔ جیومیٹری کے لحاظ سے نقطہ $Q(x,-y)$ ، x-محور پر نقطہ $P(x,y)$ کا عکس ہے اور اس کے برعکس بھی۔ || مختلط عدد $z=x+iy$ او د هغه مزدوج $\bar{z}=x-iy$ په ترتیب سره د $P(x,y)$ او $Q(x,-y)$ ټکو په واسطه ښودل کېږي. له هندسي پلوه ټکی $Q(x,-y)$ د x محور پر سر د $P(x,y)$ ټکي انعکاس دی او برعکس.
+svg A point $P(x,y)$ and its mirror image $Q(x,-y)$ in the x-axis || نقطہ $P(x,y)$ اور x-محور میں اس کا عکس $Q(x,-y)$ || ټکی $P(x,y)$ او د x محور پر سر د هغه انعکاس $Q(x,-y)$
+<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="P(x, y) above the x-axis and its reflection Q(x, -y) below it, both joined to the origin">
+<defs><marker id="m11fyi" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f172a"/></marker></defs>
+<line x1="20" y1="110" x2="285" y2="110" stroke="#0f172a" stroke-width="1.5" marker-end="url(#m11fyi)"/>
+<line x1="285" y1="110" x2="20" y2="110" stroke="#0f172a" stroke-width="1.5" marker-end="url(#m11fyi)"/>
+<line x1="120" y1="205" x2="120" y2="12" stroke="#0f172a" stroke-width="1.5" marker-end="url(#m11fyi)"/>
+<line x1="120" y1="12" x2="120" y2="205" stroke="#0f172a" stroke-width="1.5" marker-end="url(#m11fyi)"/>
+<line x1="120" y1="110" x2="220" y2="35" stroke="#0284c7" stroke-width="1.8"/>
+<line x1="120" y1="110" x2="220" y2="185" stroke="#0284c7" stroke-width="1.8"/>
+<line x1="220" y1="35" x2="220" y2="185" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<circle cx="220" cy="35" r="3.5"/><circle cx="220" cy="185" r="3.5"/>
+<text x="196" y="26" font-size="14" font-style="italic">P(x, y)</text>
+<text x="196" y="204" font-size="14" font-style="italic">Q(x, −y)</text>
+<text x="108" y="126" font-size="13">O</text>
+<text x="272" y="128" font-size="13">X</text><text x="22" y="100" font-size="13">X′</text>
+<text x="126" y="22" font-size="13">Y</text><text x="126" y="202" font-size="13">Y′</text>
+</svg>
+endsvg
+endbox
+exercise 1.1
+q 1 | Simplify the following || درج ذیل کو مختصر کریں || لاندې ساده کړئ
+qp (i) | $i^9+i^{19}$
+qp (ii) | $(-i)^{23}$
+qp (iii) | $(-1)^{-\frac{23}{2}}$
+qp (iv) | $(-1)^{\frac{15}{2}}$
+q 2 | Prove that $i^{107}+i^{112}+i^{122}+i^{153}=0$ || ثابت کریں کہ $i^{107}+i^{112}+i^{122}+i^{153}=0$ || ثابت کړئ چې $i^{107}+i^{112}+i^{122}+i^{153}=0$
+q 3 | Add the following complex numbers || درج ذیل مختلط اعداد کو جمع کریں || لاندې مختلط عددونه جمع کړئ
+qp (i) | $3(1+2i),\ -2(1-3i)$
+qp (ii) | $\frac{1}{2}-\frac{2}{3}i,\ \frac{1}{4}-\frac{1}{3}i$
+qp (iii) | $(\sqrt{2},1),\ (1,\sqrt{2})$
+q 4 | Subtract the second complex number from first || دوسرے مختلط عدد کو پہلے میں سے تفریق کریں || دویم مختلط عدد له لومړي څخه تفریق کړئ
+qp (i) | $(a,0),\ (2,-b)$
+qp (ii) | $(-3,\frac{1}{2}),\ (3,\frac{1}{2})$
+qp (iii) | $3\sqrt{3}-5\sqrt{7}i,\ \sqrt{3}+2\sqrt{7}i$
+q 5 | Multiply the following complex numbers || درج ذیل مختلط اعداد کو ضرب دیں || لاندې مختلط عددونه ضرب کړئ
+qp (i) | $8i+11,\ -7+5i$
+qp (ii) | $3i,\ 2(1-i)$
+qp (iii) | $\sqrt{2}+\sqrt{3}i,\ 2\sqrt{2}-\sqrt{3}i$
+q 6 | Perform the indicated division and write the answer in the form $a+bi$ || بتائی گئی تقسیم کریں اور جواب $a+bi$ کی شکل میں لکھیں || ښودل شوی وېش ترسره کړئ او ځواب د $a+bi$ په بڼه ولیکئ
+qp (i) | $\dfrac{4+i}{3+5i}$
+qp (ii) | $\dfrac{1}{-8+i}$
+qp (iii) | $\dfrac{1}{7-3i}$
+qp (iv) | $\dfrac{6+i}{i}$

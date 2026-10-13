@@ -1,0 +1,34 @@
+@printed 11
+@deco footer stamp "Not For Sale"
+example 12 | If $z_1=-1+2i,\ z_2=3+4i$ and $z_3=-2+5i$, then $z_1(z_2+z_3)=z_1z_2+z_1z_3$ || اگر $z_1=-1+2i,\ z_2=3+4i$ اور $z_3=-2+5i$ ہوں تو $z_1(z_2+z_3)=z_1z_2+z_1z_3$ || که $z_1=-1+2i,\ z_2=3+4i$ او $z_3=-2+5i$ وي، نو $z_1(z_2+z_3)=z_1z_2+z_1z_3$
+p **Solution:** We have || **حل:** ہمارے پاس ہے || **حل:** موږ لرو
+m $z_1(z_2+z_3)=(-1+2i)[(3+4i)+(-2+5i)]$
+m $=(-1+2i)[3+4i-2+5i]$
+m $=(-1+2i)(1+9i)=-1-9i+2i+18i^2$
+m $=-1-7i-18=-19-7i\quad(\because i^2=-1)$
+m and $z_1z_2+z_1z_3=(-1+2i)(3+4i)+(-1+2i)(-2+5i)$
+m $=-3-4i+6i+8i^2+2-5i-4i+10i^2$
+m $=-1-7i-8-10=-19-7i$
+m Hence $z_1(z_2+z_3)=z_1z_2+z_1z_3$
+endexample
+box note | Note || نوٹ || یادونه
+p According to the commutative property for multiplication $iy=yi$. Hence we can write $z=x+iy$ instead of $z=x+yi$ || ضرب کی مبادلہ خاصیت کے مطابق $iy=yi$ ہے۔ اس لیے ہم $z=x+yi$ کی بجائے $z=x+iy$ لکھ سکتے ہیں || د ضرب د تبادلوي ځانګړتیا له مخې $iy=yi$. نو موږ کولی شو د $z=x+yi$ پر ځای $z=x+iy$ ولیکو
+endbox
+@sec 1.2.2 | Additive identity and multiplicative identity of complex numbers || مختلط اعداد کی جمعی شناخت اور ضربی شناخت || د مختلطو عددونو د جمع هویت او د ضرب هویت
+### 1.2.2 Additive identity and multiplicative identity of complex numbers || 1.2.2 مختلط اعداد کی جمعی شناخت اور ضربی شناخت || 1.2.2 د مختلطو عددونو د جمع هویت او د ضرب هویت
+p A complex number $c+di$ is called the **additive identity** of the complex number $a+bi$ if $(a+bi)+(c+di)=(c+di)+(a+bi)=a+bi$ || مختلط عدد $c+di$ ، مختلط عدد $a+bi$ کی **جمعی شناخت** کہلاتا ہے اگر $(a+bi)+(c+di)=(c+di)+(a+bi)=a+bi$ ہو || مختلط عدد $c+di$ د مختلط عدد $a+bi$ **د جمع هویت** بلل کېږي که $(a+bi)+(c+di)=(c+di)+(a+bi)=a+bi$ وي
+p Let $a+bi$ be any complex number and $c+di=0+0i$ be the zero complex number. Then || فرض کریں $a+bi$ کوئی مختلط عدد ہے اور $c+di=0+0i$ صفر مختلط عدد ہے۔ تب || فرض کړئ $a+bi$ هر مختلط عدد دی او $c+di=0+0i$ صفر مختلط عدد دی. نو
+m $(a+bi)+(0+0i)=(a+0)+(b+0)i$ (by definition of addition) $=a+bi$
+m Similarly $(0+0i)+(a+bi)=a+bi$
+p Thus the additive identity in $C$ is the zero complex number i.e. $0+0i$ || یوں $C$ میں جمعی شناخت صفر مختلط عدد یعنی $0+0i$ ہے || په دې توګه په $C$ کې د جمع هویت صفر مختلط عدد یعنې $0+0i$ دی
+p A complex number $c+di$ is called the **multiplicative identity** of the complex number $a+bi$ if $(a+bi)(c+di)=(c+di)(a+bi)=a+bi$ || مختلط عدد $c+di$ ، مختلط عدد $a+bi$ کی **ضربی شناخت** کہلاتا ہے اگر $(a+bi)(c+di)=(c+di)(a+bi)=a+bi$ ہو || مختلط عدد $c+di$ د مختلط عدد $a+bi$ **د ضرب هویت** بلل کېږي که $(a+bi)(c+di)=(c+di)(a+bi)=a+bi$ وي
+p Let $a+bi$ be any complex number and $c+di=1+0i$ be the unit complex number. Then || فرض کریں $a+bi$ کوئی مختلط عدد ہے اور $c+di=1+0i$ اکائی مختلط عدد ہے۔ تب || فرض کړئ $a+bi$ هر مختلط عدد دی او $c+di=1+0i$ واحد مختلط عدد دی. نو
+m $(a+bi)(1+0i)=(a\cdot1-b\cdot0)+(a\cdot0+b\cdot1)i=a+bi$ (by definition of multiplication of complex numbers)
+m Similarly $(1+0i)(a+bi)=a+bi$
+p Thus the multiplicative identity in $C$ is the unit complex number $1+0i$. || یوں $C$ میں ضربی شناخت اکائی مختلط عدد $1+0i$ ہے۔ || په دې توګه په $C$ کې د ضرب هویت واحد مختلط عدد $1+0i$ دی.
+@sec 1.2.3 | Additive inverse and multiplicative inverse of complex numbers || مختلط اعداد کا جمعی معکوس اور ضربی معکوس || د مختلطو عددونو د جمع معکوس او د ضرب معکوس
+### 1.2.3 Additive inverse and multiplicative inverse of complex numbers || 1.2.3 مختلط اعداد کا جمعی معکوس اور ضربی معکوس || 1.2.3 د مختلطو عددونو د جمع معکوس او د ضرب معکوس
+p A complex number $c+di$ is called the **additive inverse** of the complex number $a+bi$ if $(a+bi)+(c+di)=0+0i$ i.e. the additive identity. || مختلط عدد $c+di$ ، مختلط عدد $a+bi$ کا **جمعی معکوس** کہلاتا ہے اگر $(a+bi)+(c+di)=0+0i$ ہو یعنی جمعی شناخت۔ || مختلط عدد $c+di$ د مختلط عدد $a+bi$ **د جمع معکوس** بلل کېږي که $(a+bi)+(c+di)=0+0i$ وي، یعنې د جمع هویت.
+m We have $(a+bi)+(c+di)=0+0i\Rightarrow(a+c)+(b+d)i=0+0i$
+m $\Rightarrow a+c=0$ and $b+d=0\Rightarrow c=-a$ and $d=-b$
+p so that $c+di=-a-bi$. Thus the additive inverse of $a+bi$ is $-a-bi$. || تاکہ $c+di=-a-bi$۔ یوں $a+bi$ کا جمعی معکوس $-a-bi$ ہے۔ || نو $c+di=-a-bi$. په دې توګه د $a+bi$ د جمع معکوس $-a-bi$ دی.

@@ -1,0 +1,13 @@
+@printed 58
+m $\overset{R}{\sim}\left[\begin{array}{ccc|ccc}1&0&\frac{-6}{7}&0&\frac{-1}{7}&\frac{-2}{7}\\0&1&\frac{-4}{7}&0&\frac{1}{14}&\frac{5}{14}\\0&0&-3&-1&\frac{-1}{6}&\frac{-7}{6}\end{array}\right]$ by $R_1-2R_2$ and $R_3-7R_2$ (as printed)
+m $\overset{R}{\sim}\left[\begin{array}{ccc|ccc}1&0&0&\frac{-6}{7}&\frac{-4}{7}&\frac{-29}{7}\\0&1&0&\frac{2}{3}&\frac{-5}{8}&\frac{-1}{18}\\0&0&1&\frac{1}{3}&\frac{-1}{18}&\frac{7}{18}\end{array}\right]$ by $R_1+\frac{6}{7}R_3$ and $R_2+\frac{4}{7}R_3$ (as printed)
+m Thus $A^{-1}=\begin{bmatrix}\frac{-6}{7}&\frac{-4}{7}&\frac{-29}{7}\\\frac{2}{3}&\frac{-5}{8}&\frac{-1}{18}\\\frac{1}{3}&\frac{-1}{18}&\frac{7}{18}\end{bmatrix}$ (as printed) [correct: $A^{-1}=\begin{bmatrix}-\frac{6}{7}&\frac{4}{7}&\frac{1}{7}\\\frac{4}{7}&-\frac{3}{14}&\frac{1}{14}\\1&-\frac{1}{2}&-\frac{1}{2}\end{bmatrix}$]
+endexample
+p **(b) To find rank of a matrix** || **(b) قالب کا رینک معلوم کرنا** || **(b) د میټریکس رتبه پیدا کول**
+example 10 | Find the rank of $A=\begin{bmatrix}4&5&6\\1&2&3\\7&8&9\end{bmatrix}$ || $A=\begin{bmatrix}4&5&6\\1&2&3\\7&8&9\end{bmatrix}$ کا رینک معلوم کریں || د $A=\begin{bmatrix}4&5&6\\1&2&3\\7&8&9\end{bmatrix}$ رتبه پیدا کړئ
+m **Solution:** $A=\begin{bmatrix}4&5&6\\1&2&3\\7&8&9\end{bmatrix}\overset{R}{\sim}\begin{bmatrix}1&2&3\\4&5&6\\7&8&9\end{bmatrix}$ by $R_1\leftrightarrow R_2$
+m $\overset{R}{\sim}\begin{bmatrix}1&2&3\\0&-3&-6\\0&-6&-12\end{bmatrix}$ by $R_2-4R_1$ and $R_3-7R_1$
+m $\overset{R}{\sim}\begin{bmatrix}1&2&3\\0&1&2\\0&0&0\end{bmatrix}$ by $R_3-2R_2$
+p The last matrix is the echelon form of $A$ having 2 non-zero rows. Hence the rank of $A$ is 2. || آخری قالب $A$ کی ایچیلون شکل ہے جس میں 2 غیر صفر قطاریں ہیں۔ لہٰذا $A$ کا رینک 2 ہے۔ || وروستی میټریکس د $A$ اېچلون بڼه ده چې 2 غیر صفر قطارونه لري. نو د $A$ رتبه 2 ده.
+endexample
+@issue Example 10: the printed step "by $R_3-2R_2$" also needs $-\frac{1}{3}R_2$ to reach the row $0\ 1\ 2$; transcribed as printed.

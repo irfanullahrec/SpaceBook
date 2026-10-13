@@ -1,0 +1,30 @@
+@printed 76
+@deco footer stamp "Not For Sale"; unit opener: orange "UNIT 3" tag and a triangle of vectors $a$, $b$ and $a+b$; side strip "STUDENTS LEARNING OUTCOMES"
+@unit 3 | Vectors || سمتیے || وېکټورونه
+@sec 3.0 | Unit opening: Student Learning Outcomes || باب کا آغاز: طلبہ کے حاصلاتِ تعلم || د څپرکي پیل: د زده کوونکو د زده کړې پایلې
+# UNIT 3 Vectors || باب 3 سمتیے || څپرکی 3 وېکټورونه
+svg Vectors $a$ and $b$ placed head to tail; $a+b$ joins the tail of $a$ to the head of $b$ || سمتیے $a$ اور $b$ سر سے دم ملا کر؛ $a+b$ ، $a$ کی دم کو $b$ کے سر سے ملاتا ہے || وېکټورونه $a$ او $b$ سر په لکۍ؛ $a+b$ د $a$ لکۍ د $b$ له سر سره نښلوي
+<svg viewBox="0 0 360 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Triangle law: a then b gives a+b">
+<defs><marker id="m11v3a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="currentColor"/></marker></defs>
+<line x1="20" y1="125" x2="250" y2="30" stroke="#4338ca" stroke-width="3" color="#4338ca" marker-end="url(#m11v3a)"/>
+<line x1="250" y1="30" x2="335" y2="115" stroke="#dc2626" stroke-width="3" color="#dc2626" marker-end="url(#m11v3a)"/>
+<line x1="20" y1="125" x2="335" y2="118" stroke="#15803d" stroke-width="3" color="#15803d" marker-end="url(#m11v3a)"/>
+<g font-family="Times New Roman, serif" font-size="20" font-weight="700"><text x="120" y="70">a</text><text x="300" y="60">b</text><text x="165" y="112">a+b</text></g>
+</svg>
+endsvg
+p After reading this unit, the students will be able to: || اس باب کو پڑھنے کے بعد طلبہ اس قابل ہو جائیں گے کہ: || د دې څپرکي له لوستلو وروسته به زده کوونکي وکولی شي چې:
+slo Define a scalar and a vector. || عددیہ اور سمتیہ کی تعریف کریں۔ || سکالر او وېکټور تعریف کړئ.
+slo Give geometrical representation of a vector. || سمتیے کی جیومیٹریائی نمائندگی کریں۔ || د وېکټور هندسي ښودنه وکړئ.
+slo Give the following fundamental definitions using geometrical representation: magnitude of a vector, equal vectors, negative of a vector, unit vector, zero/null vector, position vector, parallel vectors, addition and subtraction of vectors, triangle, parallelogram and polygon laws of addition, scalar multiplication. || جیومیٹریائی نمائندگی سے درج ذیل بنیادی تعریفیں دیں: سمتیے کی مقدار، برابر سمتیے، سمتیے کا منفی، اکائی سمتیہ، صفر/خالی سمتیہ، مقامی سمتیہ، متوازی سمتیے، سمتیوں کی جمع اور تفریق، جمع کے مثلث، متوازی الاضلاع اور کثیر الاضلاع قوانین، عددی ضرب۔ || د هندسي ښودنې په کارولو لاندې اساسي تعریفونه ورکړئ: د وېکټور اندازه، برابر وېکټورونه، د وېکټور منفي، واحد وېکټور، صفر/تش وېکټور، موقعیتي وېکټور، موازي وېکټورونه، د وېکټورونو جمع او تفریق، د جمع د مثلث، متوازي الاضلاع او کثیر الاضلاع قوانین، سکالر ضرب.
+slo Represent a vector in a Cartesian plane by defining fundamental unit vectors $i$ and $j$. || بنیادی اکائی سمتیے $i$ اور $j$ کی تعریف کر کے کارتیسی مستوی میں سمتیے کو ظاہر کریں۔ || د اساسي واحد وېکټورونو $i$ او $j$ په تعریفولو سره په کارتیزي مستوي کې وېکټور وښایئ.
+slo Recognize all above definitions using analytical representation. || تجزیاتی نمائندگی سے اوپر کی تمام تعریفیں پہچانیں۔ || د تحلیلي ښودنې په مرسته پورته ټول تعریفونه وپېژنئ.
+slo Find a unit vector in the direction of another given vector. || کسی دیے گئے سمتیے کی سمت میں اکائی سمتیہ معلوم کریں۔ || د بل ورکړل شوي وېکټور په لوري واحد وېکټور پیدا کړئ.
+slo Find the position vector of a point which divides the line segment joining two points in a given ratio. || اس نقطے کا مقامی سمتیہ معلوم کریں جو دو نقاط کو ملانے والے قطعہ خط کو دی گئی نسبت میں تقسیم کرے۔ || د هغه ټکي موقعیتي وېکټور پیدا کړئ چې د دوو ټکو نښلونکې کرښه په ورکړل شوې نسبت ووېشي.
+slo Use vectors to prove simple theorems of descriptive geometry. || توضیحی جیومیٹری کے سادہ مسائل ثابت کرنے کے لیے سمتیے استعمال کریں۔ || د توضیحي هندسې د ساده قضیو د ثبوت لپاره وېکټورونه وکاروئ.
+slo Recognize rectangular coordinate system in space. || فضا میں قائم الزاویہ محدد نظام پہچانیں۔ || په فضا کې قایم الزاویه کوارډینېټ سیسټم وپېژنئ.
+slo Define unit vectors $i, j$ and $k$. || اکائی سمتیوں $i, j$ اور $k$ کی تعریف کریں۔ || واحد وېکټورونه $i, j$ او $k$ تعریف کړئ.
+slo Recognize components of a vector. || سمتیے کے اجزاء پہچانیں۔ || د وېکټور اجزاوې وپېژنئ.
+slo Give analytic representation of a vector. || سمتیے کی تجزیاتی نمائندگی کریں۔ || د وېکټور تحلیلي ښودنه وکړئ.
+slo Find magnitude of a vector. || سمتیے کی مقدار معلوم کریں۔ || د وېکټور اندازه پیدا کړئ.
+slo Repeat all fundamental definitions for vectors in space which, in the plane, have already been discussed. || فضا میں سمتیوں کے لیے وہ تمام بنیادی تعریفیں دہرائیں جن پر مستوی میں پہلے ہی بات ہو چکی ہے۔ || په فضا کې د وېکټورونو لپاره هغه ټول اساسي تعریفونه تکرار کړئ چې په مستوي کې مخکې بحث شوي.
+slo State and prove: commutative law for vector addition; associative law for vector addition. || بیان کریں اور ثابت کریں: سمتیوں کی جمع کا مبادلہ قانون؛ سمتیوں کی جمع کا تلازمی قانون۔ || بیان او ثابت یې کړئ: د وېکټورونو د جمع تبادلوي قانون؛ د وېکټورونو د جمع اتحادي قانون.

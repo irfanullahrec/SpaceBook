@@ -1,0 +1,26 @@
+@printed 22
+@deco a finger is visible at the top-left corner of the photo; left margin slightly clipped
+example 17 | Factorize the polynomial $P(z)=z^3+5z^2+19z-25$ into linear factors. || کثیر رقمی $P(z)=z^3+5z^2+19z-25$ کو خطی اجزائے ضربی میں تجزی کریں۔ || څو حدي $P(z)=z^3+5z^2+19z-25$ په خطي عواملو تجزیه کړئ.
+p **Solution:** In factorizing the given polynomial $P(z)$ into linear factors, we use the factor theorem. To do so, we note that $z=1$ is a root of $P(z)$, since || **حل:** دی گئی کثیر رقمی $P(z)$ کو خطی اجزائے ضربی میں تجزی کرنے کے لیے ہم مسئلہ جزو ضربی استعمال کرتے ہیں۔ اس مقصد کے لیے ہم دیکھتے ہیں کہ $z=1$ ، $P(z)$ کا جذر ہے کیونکہ || **حل:** د ورکړل شوې څو حدي $P(z)$ په خطي عواملو تجزیه کې د عامل قضیه کاروو. د دې لپاره ګورو چې $z=1$ د $P(z)$ جذر دی، ځکه
+m $P(1)=(1)^3+5(1)^2+19(1)-25=1+5+19-25=0$
+p By factor theorem $z-1$ is a factor of $P(z)$. We therefore arrange the terms in such a way that we can find a common factor $z-1$ as follows: || مسئلہ جزو ضربی کی رو سے $z-1$ ، $P(z)$ کا جزو ضربی ہے۔ اس لیے ہم ارکان کو اس طرح ترتیب دیتے ہیں کہ مشترک جزو ضربی $z-1$ نکالا جا سکے: || د عامل قضیې له مخې $z-1$ د $P(z)$ عامل دی. نو حدونه داسې ترتیبوو چې ګډ عامل $z-1$ وویستل شي:
+m $P(z)=z^3+5z^2+19z-25$
+m $=(z^3-1)+(5z^2+19z-24)$
+m $=(z-1)(z^2+z+1)+(5z^2-5z+24z-24)\quad\because a^3-b^3=(a-b)(a^2+ab+b^2)$
+m $=(z-1)(z^2+z+1)+(5z^2-5z)+(24z-24)$
+m $=(z-1)(z^2+z+1)+5z(z-1)+24(z-1)$
+m $=(z-1)[(z^2+z+1)+5z+24]=(z-1)(z^2+6z+25)$
+m $=(z-1)(z^2+6z+9+16)=(z-1)[(z^2+6z+9)+16]$
+m $=(z-1)[(z^2+6z+9)-(-16)]$
+m $=(z-1)[(z+3)^2-(4i)^2]\quad(\because i^2=-1)$
+m $=(z-1)[(z+3)+4i][(z+3)-4i]\quad(\because a^2-b^2=(a+b)(a-b))$
+m $=(z-1)(z+3+4i)(z+3-4i)$
+endexample
+@sec 1.3.3 | Quadratic equation of the form $pz^2+qz+r=0$ || $pz^2+qz+r=0$ قسم کی دو درجی مساوات || د $pz^2+qz+r=0$ ډول دوه درجه یي معادله
+### 1.3.3 Quadratic equation of the form $pz^2+qz+r=0$ || 1.3.3 $pz^2+qz+r=0$ قسم کی دو درجی مساوات || 1.3.3 د $pz^2+qz+r=0$ ډول دوه درجه یي معادله
+p Consider the quadratic equation of the form || اس قسم کی دو درجی مساوات پر غور کریں || د دې ډول دوه درجه یي معادله په پام کې ونیسئ
+m $pz^2+qz+r=0\qquad$ (1)
+p where $p,q,r$ are real numbers $p\neq0$ and $z$ is a complex variable. || جہاں $p,q,r$ حقیقی اعداد ہیں، $p\neq0$ اور $z$ ایک مختلط متغیر ہے۔ || چېرې چې $p,q,r$ حقیقي عددونه دي، $p\neq0$ او $z$ یو مختلط متحول دی.
+p We see that $z^2-z+3=0,\ 3z^2-4z+2=0,\ 5z^2+6z=0,\ z^2-3=0,\ 2z^2=3z-1$ and $z^2=0$ are all examples of quadratic equation in the variable $z$. Equation (1) is called the standard form of the quadratic equation. || ہم دیکھتے ہیں کہ $z^2-z+3=0,\ 3z^2-4z+2=0,\ 5z^2+6z=0,\ z^2-3=0,\ 2z^2=3z-1$ اور $z^2=0$ سب متغیر $z$ میں دو درجی مساوات کی مثالیں ہیں۔ مساوات (1) کو دو درجی مساوات کی معیاری شکل کہتے ہیں۔ || وینو چې $z^2-z+3=0,\ 3z^2-4z+2=0,\ 5z^2+6z=0,\ z^2-3=0,\ 2z^2=3z-1$ او $z^2=0$ ټول په $z$ متحول کې د دوه درجه یي معادلې بېلګې دي. (1) معادلې ته د دوه درجه یي معادلې معیاري بڼه وايي.
+p **Solution of quadratic equations** || **دو درجی مساواتوں کا حل** || **د دوه درجه یي معادلو حل**
+p Recall that all those values of $z$ for which the given equation is true are called **solutions** or **roots** of the equation, and the set of all solutions is called **solution set**. || یاد کریں کہ $z$ کی وہ تمام قیمتیں جن کے لیے دی گئی مساوات درست ہو، مساوات کے **حل** یا **جذر** کہلاتی ہیں اور تمام حلوں کے سیٹ کو **حل کا سیٹ** کہتے ہیں۔ || را په یاد کړئ چې د $z$ ټول هغه قیمتونه چې ورکړل شوې معادله پرې سمه وي د معادلې **حلونه** یا **جذرونه** بلل کېږي، او د ټولو حلونو سېټ ته **د حل سېټ** وايي.

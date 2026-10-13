@@ -1,0 +1,16 @@
+@printed 47
+@deco left edge of the photo is clipped (labels such as "Thus", "Next", "Since", "2.3.6" and "Property 1" restored from context)
+m $A_{22}=(-1)^{2+2}\begin{vmatrix}1&1\\-1&0\end{vmatrix}=1\cdot(0+1)=1,\quad A_{23}=(-1)^{2+3}\begin{vmatrix}1&-2\\-1&2\end{vmatrix}=-1\cdot(2-2)=0$
+m $A_{31}=(-1)^{3+1}\begin{vmatrix}-2&1\\1&-2\end{vmatrix}=1\cdot(4-1)=3,\quad A_{32}=(-1)^{3+2}\begin{vmatrix}1&1\\0&-2\end{vmatrix}=-1\cdot(-2-0)=2$
+m $A_{33}=(-1)^{3+3}\begin{vmatrix}1&-2\\0&1\end{vmatrix}=1\cdot(1+0)=1$
+m Thus adj $A=\begin{bmatrix}4&2&3\\2&1&2\\1&0&1\end{bmatrix}$
+p Next we find $|A|$. || اب ہم $|A|$ معلوم کرتے ہیں۔ || بیا $|A|$ پیدا کوو.
+m Since $|A|=a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}$
+m $=1\cdot(4)-2(2)+1(1)=4-4+1=1\neq0.$
+m Thus $A^{-1}=\dfrac{1}{|A|}\,\text{adj}\,A=1\cdot\begin{bmatrix}4&2&3\\2&1&2\\1&0&1\end{bmatrix}=\begin{bmatrix}4&2&3\\2&1&2\\1&0&1\end{bmatrix}$
+endexample
+@sec 2.3.6 | Properties of determinants || مقطع کی خصوصیات || د ډیټرمینانټونو ځانګړتیاوې
+### 2.3.6 Properties of determinants || 2.3.6 مقطع کی خصوصیات || 2.3.6 د ډیټرمینانټونو ځانګړتیاوې
+p We shall state some of the useful properties of determinants which simplify the evaluation of determinants. || ہم مقطع کی کچھ مفید خصوصیات بیان کریں گے جو مقطع کی قیمت معلوم کرنا آسان بناتی ہیں۔ || د ډیټرمینانټونو ځینې ګټورې ځانګړتیاوې بیانوو چې د ډیټرمینانټونو محاسبه اسانوي.
+p **Property 1.** If every element in a row or column of a square matrix $A$ is zero, $|A|=0$. || **خاصیت 1۔** اگر مربع قالب $A$ کی کسی قطار یا کالم کا ہر عنصر صفر ہو تو $|A|=0$ ۔ || **ځانګړتیا 1.** که د مربع میټریکس $A$ د یو قطار یا ستون هر عنصر صفر وي، نو $|A|=0$.
+p If $A=\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}$ and every element in the first row is zero, $A=\begin{bmatrix}0&0&0\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}$ || اگر $A=\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}$ ہو اور پہلی قطار کا ہر عنصر صفر ہو، $A=\begin{bmatrix}0&0&0\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}$ || که $A=\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}$ وي او د لومړي قطار هر عنصر صفر وي، $A=\begin{bmatrix}0&0&0\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}$

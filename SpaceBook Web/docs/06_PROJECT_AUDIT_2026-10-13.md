@@ -12,6 +12,8 @@ Scope: every class (PG → 12) and every subject registered in `js/data.js`, com
 | Class 3 | Urdu | Now shows the same "Textbook not available yet" page as Class 1 (it used to show fake placeholder units) |
 | Class 7 | Pashto | `Books/7th/7th PAshto/` exists but is **empty (0 files)**. Not listed in the app. |
 
+> Also not gaps: Class 10 Mathematics is complete (13/13 units, textbook pp. 1–269 with all worked examples and exercises; only its file header still says "in progress"). Class 12 Mathematics is complete (12/12 units, pp. 1–325; unit 1 is the Maple chapter, which has no exercise).
+>
 > Not a gap: KPK uses one Islamiat (compulsory) book for Classes 9 and 10, and one Islamiat Ikhtiari book for both years. `cls6_book_reader.js` already opens the Class 9 book for Class 10 Islamiat and the Class 10 book for Class 9 Ikhtiari.
 
 ## 2. Books that exist as scans but are missing or incomplete in the app
@@ -25,9 +27,7 @@ Scope: every class (PG → 12) and every subject registered in `js/data.js`, com
 | 12 | Islamiat Ikhtiari | 265 | Raw docx dump (for example a stray "وجی" OCR error in unit 1). Not page-verified. |
 | 12 | Islamic History | 238 | Raw docx dump with stray text ("42 کتابیار", "away"). Not page-verified. |
 | 12 | Mutalia-e-Quran | 248 | Raw docx dump, 8 units. Not page-verified. |
-| 10 | Mathematics | 332 | File header says "reconstruction in progress". Only about 0.33 MB of content for 332 pages. |
 | 4 | Pashto | 154 | Data exists (23 lessons), but it uses the old reader and is not in `CLS4_BOOKS`. Its structure differs from Pashto in Classes 1–3, 5, 6 and 8. |
-| 12 | Mathematics | 368 | Unit 1 shows "Exercises (0)". Worth checking. |
 
 Every other book is complete: Classes 2, 5 and 6 entirely, and all books whose memory/pipeline notes say COMPLETE.
 
@@ -116,7 +116,7 @@ The standard below is the layout most classes already use. Rows marked ✗ diffe
 ## 5. Recommended next steps (largest benefit first)
 
 1. **Class 11 main tabs.** Class 11 books (except Physics, Chemistry, Biology, Statistics and English) still show only سبق · سوالات, so they lack the standard family tabs (for example Urdu: سبق · مشق · SLOs · الفاظ · Grammar). This is the Class 11 pipeline's renderer.
-2. Fill the data gaps in section 2, in this order: Class 11 Math, the Class 12 humanities rebuild (Economics, Islamiat Ikhtiari, Islamic History, Mutalia), Class 10 Math, Class 11 Islamic History.
+2. Fill the data gaps in section 2, in this order: Class 11 Math, the Class 12 humanities rebuild (Economics, Islamiat Ikhtiari, Islamic History, Mutalia), Class 11 Islamic History.
 3. Collect the missing source scans (section 1) or hide those placeholder subjects so students don't open empty books.
 4. Ease of use:
    - in-book search

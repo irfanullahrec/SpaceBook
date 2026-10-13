@@ -1,0 +1,24 @@
+@printed 21
+@deco left margin of the photo is clipped (first letters of some lines missing in the scan, restored from context)
+m $\Rightarrow (7+9i)w=-18+14i\ \Rightarrow w=\dfrac{-18+14i}{7+9i}$
+m $\Rightarrow w=\dfrac{-18+14i}{7+9i}\times\dfrac{7-9i}{7-9i}$ (By Rationalization)
+m $\Rightarrow w=\dfrac{260i}{130}=2i$
+p Substituting the value of $w$ in (1), we have || $w$ کی قیمت (1) میں رکھنے پر ہمارے پاس ہے || د $w$ قیمت په (1) کې ږدو، لرو
+m $5z-(3+i)(2i)=7-i\ \Rightarrow\ 5z-(6i+2i^2)=7-i$
+m $\Rightarrow 5z-(6i-2)=7-i\ \Rightarrow\ 5z=7-i+6i-2$
+m $\Rightarrow 5z=5+5i\ \Rightarrow\ z=\dfrac{5+5i}{5}=1+i$
+p Thus $(z,w)$ where $z=1+i$ and $w=2i$ is the solution of the simultaneous linear equations. || یوں $(z,w)$ جہاں $z=1+i$ اور $w=2i$ ، ان ہمزاد خطی مساواتوں کا حل ہے۔ || په دې توګه $(z,w)$ چې $z=1+i$ او $w=2i$ وي، د دې همزمانو خطي معادلو حل دی.
+endexample
+@sec 1.3.2 | Expression of the polynomial $P(z)$ as a product of linear factors || کثیر رقمی $P(z)$ کو خطی اجزائے ضربی کے حاصلِ ضرب کے طور پر لکھنا || د څو حدي $P(z)$ د خطي عواملو د حاصل ضرب په توګه لیکل
+### 1.3.2 Expression of the polynomial P(z) as a product of linear factors || 1.3.2 کثیر رقمی P(z) کو خطی اجزائے ضربی کے حاصلِ ضرب کے طور پر لکھنا || 1.3.2 د څو حدي P(z) د خطي عواملو د حاصل ضرب په توګه لیکل
+p Recall that an expression of the form || یاد کریں کہ اس شکل کا اظہاریہ || را په یاد کړئ چې د دې بڼې افاده
+eq P(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0,\quad a_n\neq0
+p where $n$ is a positive integer or zero and the coefficients $a_n, a_{n-1},\ldots,a_1$ and $a_0$ are constants that are either to be real or complex numbers, is a polynomial of **degree $n$**. || جہاں $n$ ایک مثبت صحیح عدد یا صفر ہے اور سر $a_n, a_{n-1},\ldots,a_1$ اور $a_0$ مستقل ہیں جو حقیقی یا مختلط اعداد ہو سکتے ہیں، **درجہ $n$** کی کثیر رقمی ہے۔ || چېرې چې $n$ مثبت صحیح عدد یا صفر دی او ضریبونه $a_n, a_{n-1},\ldots,a_1$ او $a_0$ ثابتونه دي چې حقیقي یا مختلط عددونه کېدای شي، د **درجې $n$** څو حدي ده.
+p For example, $2x+3,\ 3x^2+2x+1$ and $5x^3-6x^2+5x-1$ are polynomials of degree 1, 2 and 3 respectively. || مثال کے طور پر $2x+3,\ 3x^2+2x+1$ اور $5x^3-6x^2+5x-1$ بالترتیب درجہ 1، 2 اور 3 کی کثیر رقمیاں ہیں۔ || د بېلګې په توګه $2x+3,\ 3x^2+2x+1$ او $5x^3-6x^2+5x-1$ په ترتیب سره د 1، 2 او 3 درجې څو حدي دي.
+p Here we are concerned with finding the linear factors of the following two types of polynomials. || یہاں ہمارا تعلق درج ذیل دو قسم کی کثیر رقمیوں کے خطی اجزائے ضربی معلوم کرنے سے ہے۔ || دلته زموږ کار د لاندې دوو ډولو څو حدیو د خطي عواملو پیدا کول دي.
+m (i) $P(z)=z^2+a^2$, where $a$ is a real number.
+m (ii) $P(z)=az^3+bz^2+cz+d$ where $a, b, c$ and $d$ are real numbers.
+p In factorizing polynomials of type (i) we simply use the fact that $i^2=-1$ so that to find linear factors. || قسم (i) کی کثیر رقمیوں کی تجزی میں ہم خطی اجزائے ضربی معلوم کرنے کے لیے صرف یہ حقیقت استعمال کرتے ہیں کہ $i^2=-1$۔ || د (i) ډول څو حدیو په تجزیه کې د خطي عواملو د پیدا کولو لپاره یوازې دا حقیقت کاروو چې $i^2=-1$.
+p For example, $P(z)=z^2+a^2=z^2-i^2a^2=(z+ia)(z-ia)$. However, in factorizing polynomials of type (ii), we use the factor theorem which has already been proved in the previous class and stated below. || مثال کے طور پر $P(z)=z^2+a^2=z^2-i^2a^2=(z+ia)(z-ia)$۔ البتہ قسم (ii) کی کثیر رقمیوں کی تجزی میں ہم مسئلہ جزو ضربی استعمال کرتے ہیں جو پچھلی جماعت میں ثابت کیا جا چکا ہے اور نیچے بیان کیا گیا ہے۔ || د بېلګې په توګه $P(z)=z^2+a^2=z^2-i^2a^2=(z+ia)(z-ia)$. خو د (ii) ډول څو حدیو په تجزیه کې د عامل قضیه کاروو چې په تېر ټولګي کې ثابته شوې او لاندې بیان شوې ده.
+p **The factor theorem:** Let $P(x)$ be any polynomial. Then $x-a$ is a factor of $P(x)$ if and only if $P(a)=0$ || **مسئلہ جزو ضربی:** فرض کریں $P(x)$ کوئی کثیر رقمی ہے۔ تب $x-a$ ، $P(x)$ کا جزو ضربی ہے اگر اور صرف اگر $P(a)=0$ ہو || **د عامل قضیه:** فرض کړئ $P(x)$ هره څو حدي ده. نو $x-a$ د $P(x)$ عامل دی که او یوازې که $P(a)=0$ وي
+p The method for factorizing the polynomials of type (ii) into linear factors is explained through the following example. || قسم (ii) کی کثیر رقمیوں کو خطی اجزائے ضربی میں تجزی کرنے کا طریقہ درج ذیل مثال سے واضح کیا گیا ہے۔ || د (ii) ډول څو حدیو په خطي عواملو کې د تجزیې طریقه د لاندې بېلګې له لارې روښانه شوې ده.

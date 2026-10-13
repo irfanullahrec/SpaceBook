@@ -1,0 +1,26 @@
+@printed 5
+example 4 | Let $z_1=2+4i$ and $z_2=1-3i$. Compute $z_1-3z_2$ || فرض کریں $z_1=2+4i$ اور $z_2=1-3i$۔ $z_1-3z_2$ معلوم کریں || فرض کړئ $z_1=2+4i$ او $z_2=1-3i$. $z_1-3z_2$ محاسبه کړئ
+p **Solution:** Putting values of $z_1$ and $z_2$ in the given expression, || **حل:** دیے گئے اظہاریے میں $z_1$ اور $z_2$ کی قیمتیں رکھنے سے، || **حل:** په ورکړل شوې افاده کې د $z_1$ او $z_2$ قیمتونه ږدو،
+m $z_1-3z_2=(2+4i)-3(1-3i)$
+m $=2+4i-3+9i=-1+13i$
+endexample
+p **(iii) Multiplication** || **(iii) ضرب** || **(iii) ضرب**
+p Multiplication of two complex numbers $z_1=a+ib$ and $z_2=c+id$ is defined as || دو مختلط اعداد $z_1=a+ib$ اور $z_2=c+id$ کی ضرب یوں بیان کی جاتی ہے || د دوو مختلطو عددونو $z_1=a+ib$ او $z_2=c+id$ ضرب داسې تعریف کېږي
+eq z_1z_2=(a+ib)(c+id)=(ac-bd)+i(ad+bc)
+p **Illustration:** If $z_1=4+3i$ and $z_2=3-2i$, then || **وضاحت:** اگر $z_1=4+3i$ اور $z_2=3-2i$ ہوں تو || **روښانتیا:** که $z_1=4+3i$ او $z_2=3-2i$ وي، نو
+m $z_1z_2=(4+3i)(3-2i)$
+m $=[4\times3-3\times(-2)]+i[4\times(-2)+3\times3]=18+i$
+example 5 | Find the product of $2-3i$ and $7+5i$. || $2-3i$ اور $7+5i$ کا حاصلِ ضرب معلوم کریں۔ || د $2-3i$ او $7+5i$ حاصل ضرب پیدا کړئ.
+p **Solution:** || **حل:** || **حل:**
+m $(2-3i)(7+5i)=2(7+5i)-3i(7+5i)$
+m $=14+10i-21i-15i^2$
+m $=14-11i-15(-1)\quad(\because i^2=-1)$
+m $=14-11i+15=29-11i$
+endexample
+p **(iv) Division** || **(iv) تقسیم** || **(iv) وېش**
+p The division of one complex number by another complex number can not be carried out, because the denominator consists of two independent terms. This difficulty can be overcome by multiplying the numerator and denominator by the conjugate of the complex number in the denominator. This process is called **rationalization**. || ایک مختلط عدد کو دوسرے مختلط عدد سے براہِ راست تقسیم نہیں کیا جا سکتا کیونکہ نسب نما دو آزاد ارکان پر مشتمل ہوتا ہے۔ اس مشکل کو شمار کنندہ اور نسب نما دونوں کو نسب نما والے مختلط عدد کے مزدوج سے ضرب دے کر دور کیا جا سکتا ہے۔ اس عمل کو **ناطق بنانا** کہتے ہیں۔ || یو مختلط عدد په بل مختلط عدد مستقیماً نه وېشل کېږي، ځکه چې مخرج له دوو خپلواکو حدونو جوړ دی. دا ستونزه د صورت او مخرج دواړو د مخرج د مختلط عدد په مزدوج سره د ضربولو له لارې حلېږي. دې عملیې ته **ناطق کول** وايي.
+p We have || ہمارے پاس ہے || موږ لرو
+m $\dfrac{z_1}{z_2}=\dfrac{a+bi}{c+di}=\dfrac{a+bi}{c+di}\times\dfrac{c-di}{c-di}$ (By rationalization)
+m $=\dfrac{(a+bi)(c-di)}{(c+di)(c-di)}=\dfrac{ac-adi+bci-bdi^2}{c^2+d^2}$
+m $=\dfrac{(ac+bd)-(ad-bc)i}{c^2+d^2}\quad(\because i^2=-1)$
+m $=\dfrac{ac+bd}{c^2+d^2}+\dfrac{bc-ad}{c^2+d^2}i.$ Thus $\dfrac{z_1}{z_2}=\dfrac{a+bi}{c+di}=\dfrac{ac+bd}{c^2+d^2}+\dfrac{bc-ad}{c^2+d^2}i$

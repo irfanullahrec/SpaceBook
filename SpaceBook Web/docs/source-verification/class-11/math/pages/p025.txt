@@ -1,0 +1,31 @@
+@printed 23
+@deco footer stamp "Not For Sale"; left margin of the photo is clipped
+@issue Example 19: the printed final step reads $-1\pm i\dfrac{\sqrt{3}}{2}$; the correct value of $\dfrac{-1\pm\sqrt{1^2-4}}{2}$ is $-\dfrac{1}{2}\pm i\dfrac{\sqrt{3}}{2}$. Printed value transcribed, correction noted.
+p For example, $z^2+4=0$ or $z^2-(2i)^2=0$ is true only for $z=2i$ or $z=-2i$, hence $z=2i$ and $z=-2i$ are the solutions or roots of the given quadratic equation and $\{2i,-2i\}$ is the **solution set**. || مثال کے طور پر $z^2+4=0$ یا $z^2-(2i)^2=0$ صرف $z=2i$ یا $z=-2i$ کے لیے درست ہے، لہٰذا $z=2i$ اور $z=-2i$ دی گئی دو درجی مساوات کے حل یا جذر ہیں اور $\{2i,-2i\}$ **حل کا سیٹ** ہے۔ || د بېلګې په توګه $z^2+4=0$ یا $z^2-(2i)^2=0$ یوازې د $z=2i$ یا $z=-2i$ لپاره سمه ده، نو $z=2i$ او $z=-2i$ د ورکړل شوې دوه درجه یي معادلې حلونه یا جذرونه دي او $\{2i,-2i\}$ **د حل سېټ** دی.
+p To find the solutions of equations of the form (1), we use a method known as "completing the square" which is described as follows: || (1) قسم کی مساواتوں کے حل معلوم کرنے کے لیے ہم "مربع مکمل کرنے" کا طریقہ استعمال کرتے ہیں جو یوں ہے: || د (1) ډول معادلو د حلونو د پیدا کولو لپاره د "مربع بشپړولو" طریقه کاروو چې داسې ده:
+- **Step-1** Write the quadratic equation in its standard form. || **قدم-1** دو درجی مساوات کو اس کی معیاری شکل میں لکھیں۔ || **ګام-1** دوه درجه یي معادله په معیاري بڼه ولیکئ.
+- **Step-2** Divide both sides of the equation by the coefficient of $z^2$ if it is other than 1. || **قدم-2** اگر $z^2$ کا سر 1 کے علاوہ ہو تو مساوات کے دونوں اطراف کو اس سے تقسیم کریں۔ || **ګام-2** که د $z^2$ ضریب له 1 پرته وي، د معادلې دواړه خواوې پرې ووېشئ.
+- **Step-3** Shift the constant term to the right hand side of the equation. || **قدم-3** مستقل رکن کو مساوات کی دائیں طرف منتقل کریں۔ || **ګام-3** ثابت حد د معادلې ښي لوري ته ولېږدوئ.
+- **Step-4** Add a number which is the square of half of the coefficient of $z$ to both sides of the equation. || **قدم-4** مساوات کے دونوں اطراف میں وہ عدد جمع کریں جو $z$ کے سر کے نصف کا مربع ہو۔ || **ګام-4** د معادلې دواړو خواوو ته هغه عدد جمع کړئ چې د $z$ د ضریب د نیمایي مربع وي.
+- **Step-5** Write the left hand side of the equation as a perfect square and simplify the right hand side. || **قدم-5** مساوات کی بائیں طرف کو مکمل مربع کے طور پر لکھیں اور دائیں طرف کو مختصر کریں۔ || **ګام-5** د معادلې کیڼ لوری د بشپړ مربع په توګه ولیکئ او ښی لوری ساده کړئ.
+- **Step-6** Take square root of both sides of the equation and solve the resulting equation to find the solutions of the equation. || **قدم-6** مساوات کے دونوں اطراف کا جذر المربع لیں اور حاصل شدہ مساوات کو حل کر کے مساوات کے حل معلوم کریں۔ || **ګام-6** د معادلې د دواړو خواوو مربع جذر واخلئ او لاسته راغلې معادله حل کړئ څو د معادلې حلونه پیدا شي.
+p The method is explained in the following example. || یہ طریقہ درج ذیل مثال میں واضح کیا گیا ہے۔ || دا طریقه په لاندې بېلګه کې روښانه شوې ده.
+example 18 | Solve the quadratic equation $z^2+6z+25=0$ || دو درجی مساوات $z^2+6z+25=0$ حل کریں || دوه درجه یي معادله $z^2+6z+25=0$ حل کړئ
+p **Solution:** We have || **حل:** ہمارے پاس ہے || **حل:** موږ لرو
+m $z^2+6z+25=0\quad$ (Step-1)
+m $\Rightarrow z^2+6z=-25\quad$ (Step-2 and Step-3)
+m $\Rightarrow z^2+6z+9=-25+9\quad$ (Step-4)
+m $\Rightarrow (z+3)^2=-16\quad$ (Step-5)
+m $\Rightarrow (z+3)^2=(4i)^2$
+m $\Rightarrow z+3=\pm 2i\quad$ (Step-6) [correct: $\pm4i$]
+m $\Rightarrow z=-3+2i$ or $z=-3-2i$ [correct: $-3\pm4i$]
+p Thus the solutions of given equation are $-3+2i,\ -3-2i$ and solution set is $\{-3+2i,\ -3-2i\}$ [correct: $\{-3+4i,\ -3-4i\}$] || یوں دی گئی مساوات کے حل $-3+2i,\ -3-2i$ ہیں اور حل کا سیٹ $\{-3+2i,\ -3-2i\}$ ہے [درست: $\{-3+4i,\ -3-4i\}$] || په دې توګه د ورکړل شوې معادلې حلونه $-3+2i,\ -3-2i$ دي او د حل سېټ $\{-3+2i,\ -3-2i\}$ دی [سم: $\{-3+4i,\ -3-4i\}$]
+endexample
+@issue Example 18: the scan prints "$z+3=\pm2i$", "$z=-3+2i$ or $z=-3-2i$" and solution set $\{-3+2i,-3-2i\}$; since $(z+3)^2=(4i)^2$, the correct values are $\pm4i$ and $-3\pm4i$. Printed values transcribed with the correction in brackets.
+box info | Did You Know || کیا آپ جانتے ہیں || آیا پوهېږئ
+p The coefficient of $z^2$ must not be zero otherwise it becomes linear || $z^2$ کا سر صفر نہیں ہونا چاہیے ورنہ مساوات خطی بن جاتی ہے || د $z^2$ ضریب باید صفر نه وي، که نه معادله خطي کېږي
+endbox
+example 19 | Solve the equation $z^2+z+1=0$ || مساوات $z^2+z+1=0$ حل کریں || معادله $z^2+z+1=0$ حل کړئ
+p **Solution:** According to the quadratic formula, the answer is || **حل:** دو درجی فارمولے کے مطابق جواب یہ ہے || **حل:** د دوه درجه یي فورمول له مخې ځواب دا دی
+m $z=\dfrac{-1\pm\sqrt{1^2-4}}{2}=-1\pm i\dfrac{\sqrt{3}}{2}$ [correct value: $-\dfrac{1}{2}\pm i\dfrac{\sqrt{3}}{2}$]
+endexample

@@ -14389,6 +14389,7 @@ function getMathChapterList(classId) {
     if (typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) return MATH_10_DATA;
     if (typeof DATA !== 'undefined' && DATA.math10Chapters) return DATA.math10Chapters;
   }
+  if (cid === 'cls11' && typeof MATH_11_DATA !== 'undefined' && Array.isArray(MATH_11_DATA)) return MATH_11_DATA;
   if (cid === 'cls12' && typeof MATH_12_DATA !== 'undefined' && Array.isArray(MATH_12_DATA)) return MATH_12_DATA;
   if (typeof MATH_DATA !== 'undefined' && Array.isArray(MATH_DATA)) return MATH_DATA;
   if (typeof DATA !== 'undefined' && DATA.mathChapters) return DATA.mathChapters;

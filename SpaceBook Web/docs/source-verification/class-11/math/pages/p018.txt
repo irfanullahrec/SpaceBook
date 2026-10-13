@@ -1,0 +1,20 @@
+@printed 16
+example 15 | Find the real and imaginary parts of the following complex numbers. (i) $2-3i$ (ii) $(5-3i)^{-1}$ (iii) $(3+i)^2$ (iv) $(1+2i)^{-2}$ || درج ذیل مختلط اعداد کے حقیقی اور خیالی حصے معلوم کریں۔ (i) $2-3i$ (ii) $(5-3i)^{-1}$ (iii) $(3+i)^2$ (iv) $(1+2i)^{-2}$ || د لاندې مختلطو عددونو حقیقي او خیالي برخې پیدا کړئ. (i) $2-3i$ (ii) $(5-3i)^{-1}$ (iii) $(3+i)^2$ (iv) $(1+2i)^{-2}$
+p **Solution:** || **حل:** || **حل:**
+m (i) Let $z=2-3i$. Therefore real part of $z=2$ and imaginary part of $z=-3$
+m (ii) Let $z=(5-3i)^{-1}$. Here $x=5$ and $y=-3$
+m Therefore, real part of $z=\dfrac{x}{x^2+y^2}=\dfrac{5}{(5)^2+(-3)^2}=\dfrac{5}{25+9}=\dfrac{5}{34}$
+m and imaginary part of $z=\dfrac{-y}{x^2+y^2}=\dfrac{-(-3)}{(5)^2+(-3)^2}=\dfrac{3}{25+9}=\dfrac{3}{34}$
+m (iii) Let $z=(3+i)^2$. Here $x=3$ and $y=1$
+m Therefore, real part of $z=x^2-y^2=(3)^2-(1)^2=9-1=8$
+m imaginary part of $z=2xy=2(3)(1)=6$
+m (iv) Let $z=(1+2i)^{-2}$. Here $x=1$ and $y=2$
+m Therefore, real part of $z=\dfrac{x^2-y^2}{(x^2+y^2)^2}=\dfrac{(1)^2-(2)^2}{[(1)^2+(2)^2]^2}=\dfrac{1-4}{(5)^2}=\dfrac{-3}{25}$
+m imaginary part of $z=\dfrac{-2xy}{(x^2+y^2)^2}=\dfrac{-2(1)(2)}{[(1)^2+(2)^2]^2}=\dfrac{-4}{(5)^2}=\dfrac{-4}{25}$
+endexample
+p **ii. Real and imaginary parts of $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^n$ where $n=\pm1$ and $\pm2$** || **ii. $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^n$ کے حقیقی اور خیالی حصے جہاں $n=\pm1$ اور $\pm2$** || **ii. د $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^n$ حقیقي او خیالي برخې چېرې چې $n=\pm1$ او $\pm2$**
+p When $n=1$, $\left(\dfrac{x_1+iy_1}{x_2+iy_2}\right)^n$ reduces to $\dfrac{x_1+iy_1}{x_2+iy_2}$. We have, || جب $n=1$ ہو تو یہ $\dfrac{x_1+iy_1}{x_2+iy_2}$ بن جاتا ہے۔ ہمارے پاس ہے، || کله چې $n=1$ وي، دا په $\dfrac{x_1+iy_1}{x_2+iy_2}$ بدلېږي. موږ لرو،
+m $\dfrac{x_1+iy_1}{x_2+iy_2}=\dfrac{x_1+iy_1}{x_2+iy_2}\times\dfrac{x_2-iy_2}{x_2-iy_2}$ (By rationalization)
+m $=\dfrac{x_1x_2-ix_1y_2+iy_1x_2-i^2y_1y_2}{x_2^2-i^2y_2^2}=\dfrac{x_1x_2+i(y_1x_2-x_1y_2)+y_1y_2}{x_2^2+y_2^2}\quad(\because i^2=-1)$
+m $=\dfrac{(x_1x_2+y_1y_2)+i(y_1x_2-x_1y_2)}{x_2^2+y_2^2}=\dfrac{x_1x_2+y_1y_2}{x_2^2+y_2^2}+i\dfrac{y_1x_2-x_1y_2}{x_2^2+y_2^2}$
+m Therefore, real part $=\dfrac{x_1x_2+y_1y_2}{x_2^2+y_2^2}$ and imaginary part $=\dfrac{y_1x_2-x_1y_2}{x_2^2+y_2^2}$

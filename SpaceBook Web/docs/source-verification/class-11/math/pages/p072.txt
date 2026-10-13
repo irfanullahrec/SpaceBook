@@ -1,0 +1,11 @@
+@printed 72
+example 16 | Use Cramer's rule to solve the following system. $x_1-2x_2+x_3=2,\ 2x_1+2x_2-x_3=4,\ x_1+x_2=0$ || کریمر کا اصول استعمال کر کے درج ذیل نظام حل کریں۔ $x_1-2x_2+x_3=2,\ 2x_1+2x_2-x_3=4,\ x_1+x_2=0$ || د کرامر قاعده وکاروئ او لاندې سیسټم حل کړئ. $x_1-2x_2+x_3=2,\ 2x_1+2x_2-x_3=4,\ x_1+x_2=0$
+m **Solution:** We have $|A|=\begin{vmatrix}1&-2&1\\2&2&-1\\1&1&0\end{vmatrix}=3\neq0$
+m Now $x_1=\dfrac{\begin{vmatrix}k_1&a_{12}&a_{13}\\k_2&a_{22}&a_{23}\\k_3&a_{32}&a_{33}\end{vmatrix}}{|A|}=\dfrac{\begin{vmatrix}2&-2&1\\4&2&-1\\0&1&0\end{vmatrix}}{3}=-\dfrac{\begin{vmatrix}2&1\\4&-1\end{vmatrix}}{3}=\dfrac{6}{3}=2,$ (Expanding by third row)
+m $x_2=\dfrac{\begin{vmatrix}a_{11}&k_1&a_{13}\\a_{21}&k_2&a_{23}\\a_{31}&k_3&a_{33}\end{vmatrix}}{|A|}=\dfrac{\begin{vmatrix}1&2&1\\2&4&-1\\1&0&0\end{vmatrix}}{3}=\dfrac{\begin{vmatrix}2&1\\4&-1\end{vmatrix}}{3}=\dfrac{-6}{3}=-2,$ (Expanding by third row)
+m and $x_3=\dfrac{\begin{vmatrix}a_{11}&a_{12}&k_1\\a_{21}&a_{22}&k_2\\a_{31}&a_{32}&k_3\end{vmatrix}}{|A|}=\dfrac{\begin{vmatrix}1&-2&2\\2&2&4\\1&1&0\end{vmatrix}}{3}=-\dfrac{\begin{vmatrix}1&-3&2\\2&0&4\\1&0&0\end{vmatrix}}{3}=\dfrac{3\begin{vmatrix}2&4\\1&0\end{vmatrix}}{3}=-4$ (Expanding by 2nd Column)
+p Thus $x_1=2,\ x_2=-2$ and $x_3=-4$ is the solution of the given system. || یوں $x_1=2,\ x_2=-2$ اور $x_3=-4$ دیے گئے نظام کا حل ہے۔ || په دې توګه $x_1=2,\ x_2=-2$ او $x_3=-4$ د ورکړل شوي سیسټم حل دی.
+endexample
+box note | Note || نوٹ || یادونه
+p We observe that the solution of the given system obtained by any of the above four methods are the same. || ہم دیکھتے ہیں کہ اوپر کے چاروں طریقوں میں سے کسی سے بھی حاصل ہونے والا حل ایک ہی ہے۔ || وینو چې د پورته څلورو طریقو له هرې یوې څخه لاسته راغلی حل یو شان دی.
+endbox

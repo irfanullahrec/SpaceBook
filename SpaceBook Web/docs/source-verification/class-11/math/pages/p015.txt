@@ -1,0 +1,22 @@
+@printed 13
+@sec 1.2.4 | Some properties of the conjugate and modulus of complex numbers || مختلط اعداد کے مزدوج اور مقیاس کی چند خصوصیات || د مختلطو عددونو د مزدوج او مقیاس ځینې ځانګړتیاوې
+### 1.2.4 Some properties of the conjugate and modulus of complex numbers || 1.2.4 مختلط اعداد کے مزدوج اور مقیاس کی چند خصوصیات || 1.2.4 د مختلطو عددونو د مزدوج او مقیاس ځینې ځانګړتیاوې
+p In the following theorem we prove some properties pertaining to conjugation and modulus of complex numbers. || درج ذیل مسئلے میں ہم مختلط اعداد کے مزدوج اور مقیاس سے متعلق کچھ خصوصیات ثابت کرتے ہیں۔ || په لاندې قضیه کې د مختلطو عددونو د مزدوج او مقیاس اړوند ځینې ځانګړتیاوې ثابتوو.
+p **Theorem:** For all $z_1, z_2, z_3$ in $C$ || **مسئلہ:** $C$ میں تمام $z_1, z_2, z_3$ کے لیے || **قضیه:** په $C$ کې د ټولو $z_1, z_2, z_3$ لپاره
+m (a) $|z|=|-z|=|\bar{z}|=|-\bar{z}|$ (b) $\bar{\bar{z}}=z$ (c) $z\bar{z}=|z|^2$
+m (d) $\overline{z_1+z_2}=\bar{z}_1+\bar{z}_2$ (e) $\overline{z_1z_2}=\bar{z}_1\bar{z}_2$ (f) $\overline{\left(\dfrac{z_1}{z_2}\right)}=\dfrac{\bar{z}_1}{\bar{z}_2},\ z_2\neq0$
+p **Proof (a)** Let $z=a+bi$. Then $-z=-a-bi,\ \bar{z}=a-bi$ and $-\bar{z}=-a+bi$. Therefore by definition || **ثبوت (a)** فرض کریں $z=a+bi$۔ تب $-z=-a-bi,\ \bar{z}=a-bi$ اور $-\bar{z}=-a+bi$۔ لہٰذا تعریف کی رو سے || **ثبوت (a)** فرض کړئ $z=a+bi$. نو $-z=-a-bi,\ \bar{z}=a-bi$ او $-\bar{z}=-a+bi$. نو د تعریف له مخې
+m $|z|=\sqrt{a^2+b^2}\quad$ (i)
+m $|-z|=\sqrt{(-a)^2+(-b)^2}=\sqrt{a^2+b^2}\quad$ (ii)
+m $|\bar{z}|=\sqrt{(a)^2+(-b)^2}=\sqrt{a^2+b^2}\quad$ (iii)
+m $|-\bar{z}|=\sqrt{(-a)^2+(b)^2}=\sqrt{a^2+b^2}\quad$ (iv)
+p Equation (i), (ii), (iii) and (iv) yield that $|z|=|-z|=|\bar{z}|=|-\bar{z}|$ || مساوات (i)، (ii)، (iii) اور (iv) سے حاصل ہوتا ہے کہ $|z|=|-z|=|\bar{z}|=|-\bar{z}|$ || له (i)، (ii)، (iii) او (iv) معادلو څخه لاسته راځي چې $|z|=|-z|=|\bar{z}|=|-\bar{z}|$
+p **(b)** Let $z=a+bi$, then $\bar{z}=a-bi$, and so $\bar{\bar{z}}=a+bi=z$. Thus $\bar{\bar{z}}=z$ || **(b)** فرض کریں $z=a+bi$ ، تب $\bar{z}=a-bi$ ، لہٰذا $\bar{\bar{z}}=a+bi=z$۔ یوں $\bar{\bar{z}}=z$ || **(b)** فرض کړئ $z=a+bi$، نو $\bar{z}=a-bi$، او په دې توګه $\bar{\bar{z}}=a+bi=z$. نو $\bar{\bar{z}}=z$
+p **(c)** Let $z=a+bi$. Then $\bar{z}=a-bi$. Therefore || **(c)** فرض کریں $z=a+bi$۔ تب $\bar{z}=a-bi$۔ لہٰذا || **(c)** فرض کړئ $z=a+bi$. نو $\bar{z}=a-bi$. نو
+m $z\bar{z}=(a+bi)(a-bi)=a^2-abi+bai-b^2i^2$
+m $=a^2-(-1)b^2\quad(\because i^2=-1)$
+m $=a^2+b^2=|z|^2\quad\left(\because |z|=\sqrt{a^2+b^2}\right)$
+m Thus $z\bar{z}=|z|^2$
+p **(d)** Let $z_1=a+bi$ and $z_2=c+di$. Then $\bar{z}_1=a-bi,\ \bar{z}_2=c-di$ and || **(d)** فرض کریں $z_1=a+bi$ اور $z_2=c+di$۔ تب $\bar{z}_1=a-bi,\ \bar{z}_2=c-di$ اور || **(d)** فرض کړئ $z_1=a+bi$ او $z_2=c+di$. نو $\bar{z}_1=a-bi,\ \bar{z}_2=c-di$ او
+m $z_1+z_2=(a+bi)+(c+di)=(a+c)+(b+d)i$
+m Therefore $\overline{z_1+z_2}=(a+c)-(b+d)i$

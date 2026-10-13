@@ -1,0 +1,34 @@
+@printed 4
+@issue the printed definition reads "z = x − iy" with the bar drawn over y; transcribed as the intended $\bar{z}=x-iy$
+p **Illustration:** If $x+iy=3-4i$, then $x=3$ and $y=-4$ || **وضاحت:** اگر $x+iy=3-4i$ ہو تو $x=3$ اور $y=-4$ || **روښانتیا:** که $x+iy=3-4i$ وي، نو $x=3$ او $y=-4$
+@sec 1.1.3 | Conjugate of a complex number || مختلط عدد کا مزدوج || د مختلط عدد مزدوج
+### 1.1.3 Conjugate of a complex number || 1.1.3 مختلط عدد کا مزدوج || 1.1.3 د مختلط عدد مزدوج
+p The conjugate of a complex number $z=x+iy$ is denoted by $\bar{z}$, and is defined as $\bar{z}=x-iy$ || مختلط عدد $z=x+iy$ کے مزدوج کو $\bar{z}$ سے ظاہر کیا جاتا ہے اور اس کی تعریف $\bar{z}=x-iy$ ہے || د مختلط عدد $z=x+iy$ مزدوج په $\bar{z}$ ښودل کېږي او داسې تعریف شوی دی: $\bar{z}=x-iy$
+p **Illustration:** || **وضاحت:** || **روښانتیا:**
+m (i) Let $z=5-3i$, then $\bar{z}=5+3i$
+m (ii) Let $z=2=2+0i$, then $\bar{z}=2-0i=2$
+m (iii) Let $z=3i=0+3i$, then $\bar{z}=0-3i=-3i$
+@sec 1.1.4 | Basic algebraic operation on complex numbers || مختلط اعداد پر بنیادی الجبری عملیات || پر مختلطو عددونو اساسي الجبري عملیې
+### 1.1.4 Basic algebraic operation on complex numbers || 1.1.4 مختلط اعداد پر بنیادی الجبری عملیات || 1.1.4 پر مختلطو عددونو اساسي الجبري عملیې
+p **(i) Addition** || **(i) جمع** || **(i) جمع**
+p For two complex numbers, $z_1=a_1+ib_1$ and $z_2=a_2+ib_2$, their sum is defined as: || دو مختلط اعداد $z_1=a_1+ib_1$ اور $z_2=a_2+ib_2$ کا مجموعہ یوں بیان کیا جاتا ہے: || د دوو مختلطو عددونو $z_1=a_1+ib_1$ او $z_2=a_2+ib_2$ مجموعه داسې تعریف کېږي:
+eq z=z_1+z_2=(a_1+a_2)+i(b_1+b_2)
+p **Illustration:** If $z_1=4+5i$ and $z_2=2-3i$, then $z_1+z_2=(4+2)+(5-3)i=6+2i$ || **وضاحت:** اگر $z_1=4+5i$ اور $z_2=2-3i$ ہوں تو $z_1+z_2=(4+2)+(5-3)i=6+2i$ || **روښانتیا:** که $z_1=4+5i$ او $z_2=2-3i$ وي، نو $z_1+z_2=(4+2)+(5-3)i=6+2i$
+example 3 | Add the complex numbers $z_1=3+4i$ and $z_2=2-7i$ || مختلط اعداد $z_1=3+4i$ اور $z_2=2-7i$ کو جمع کریں || مختلط عددونه $z_1=3+4i$ او $z_2=2-7i$ جمع کړئ
+p **Solution:** || **حل:** || **حل:**
+m $z_1+z_2=(3+4i)+(2-7i)$
+m $=(3+2)+(4-7)i=5-3i$
+endexample
+box note | Remember || یاد رکھیں || په یاد ولرئ
+p For any two real numbers $a$ and $b$, $\sqrt{a}\sqrt{b}=\sqrt{ab}$ is true only when at least one of $a$ and $b$ is either zero or positive. If both $a$ and $b$ are positive real numbers, then the calculation $\sqrt{-a}\sqrt{-b}=\sqrt{(-a)(-b)}=\sqrt{ab}$ is wrong. The correct calculation is || کسی بھی دو حقیقی اعداد $a$ اور $b$ کے لیے $\sqrt{a}\sqrt{b}=\sqrt{ab}$ صرف اس وقت درست ہے جب $a$ اور $b$ میں سے کم از کم ایک صفر یا مثبت ہو۔ اگر $a$ اور $b$ دونوں مثبت حقیقی اعداد ہوں تو حساب $\sqrt{-a}\sqrt{-b}=\sqrt{(-a)(-b)}=\sqrt{ab}$ غلط ہے۔ درست حساب یہ ہے || د هر دوه حقیقي عددونو $a$ او $b$ لپاره $\sqrt{a}\sqrt{b}=\sqrt{ab}$ یوازې هغه وخت سم دی چې له $a$ او $b$ څخه لږ تر لږه یو یې صفر یا مثبت وي. که $a$ او $b$ دواړه مثبت حقیقي عددونه وي، نو محاسبه $\sqrt{-a}\sqrt{-b}=\sqrt{(-a)(-b)}=\sqrt{ab}$ غلطه ده. سمه محاسبه دا ده
+m $\sqrt{-a}\sqrt{-b}=\left(\sqrt{-1}\sqrt{a}\right)\left(\sqrt{-1}\sqrt{b}\right)=\left(i\sqrt{a}\right)\left(i\sqrt{b}\right)$
+m $=i^2\left(\sqrt{a}\sqrt{b}\right)=(-1)\left(\sqrt{ab}\right)=-\sqrt{ab}$
+p Thus, the calculation $\sqrt{-2}\sqrt{-3}=\sqrt{(-2)(-3)}=\sqrt{6}$ is wrong. The correct result is || یوں حساب $\sqrt{-2}\sqrt{-3}=\sqrt{(-2)(-3)}=\sqrt{6}$ غلط ہے۔ درست نتیجہ یہ ہے || په دې توګه محاسبه $\sqrt{-2}\sqrt{-3}=\sqrt{(-2)(-3)}=\sqrt{6}$ غلطه ده. سمه پایله دا ده
+m $\sqrt{-2}\sqrt{-3}=\left(i\sqrt{2}\right)\left(i\sqrt{3}\right)=i^2\left(\sqrt{2}\sqrt{3}\right)=-\sqrt{6}$
+endbox
+p **(ii) Subtraction** || **(ii) تفریق** || **(ii) تفریق**
+p For two complex numbers $z_1=a_1+ib_1$ and $z_2=a_2+ib_2$, the subtraction of $z_2$ from $z_1$ is defined as: || دو مختلط اعداد $z_1=a_1+ib_1$ اور $z_2=a_2+ib_2$ کے لیے $z_1$ میں سے $z_2$ کی تفریق یوں بیان کی جاتی ہے: || د دوو مختلطو عددونو $z_1=a_1+ib_1$ او $z_2=a_2+ib_2$ لپاره له $z_1$ څخه د $z_2$ تفریق داسې تعریف کېږي:
+eq z_1-z_2=(a_1-a_2)+i(b_1-b_2)
+p **Illustration:** If $z_1=1-i$ and $z_2=5+2i$, then || **وضاحت:** اگر $z_1=1-i$ اور $z_2=5+2i$ ہوں تو || **روښانتیا:** که $z_1=1-i$ او $z_2=5+2i$ وي، نو
+m $z_1-z_2=(1-i)-(5+2i)=(1-i)+(-5-2i)$
+m $=(1-5)+i(-1-2)=-4-3i$

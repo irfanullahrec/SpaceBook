@@ -1,0 +1,20 @@
+@printed 67
+m $\overset{R}{\sim}\left[\begin{array}{ccc|c}1&-2&3&1\\0&1&2&0\\0&0&0&4\end{array}\right]$ by $R_3+2R_2$
+p The system (III) is reduced to the equivalent system || نظام (III) اس مساوی نظام میں بدل جاتا ہے || (III) سیسټم دې معادل سیسټم ته راکمېږي
+m $x-2y+3z=1\quad$ (i)
+m $y+2z=0\quad$ (ii)
+m $0z=4\quad$ (iii)
+p We see that the equation (iii) has no solution. Therefore, this system of equations has no solution. Hence the system is inconsistent. From the above, we note that the system of linear equations may have no solution, have only one solution, or have infinitely many solutions. || ہم دیکھتے ہیں کہ مساوات (iii) کا کوئی حل نہیں۔ لہٰذا مساواتوں کے اس نظام کا کوئی حل نہیں۔ اس لیے نظام غیر ہم آہنگ ہے۔ اوپر سے ہم دیکھتے ہیں کہ خطی مساواتوں کے نظام کا یا تو کوئی حل نہیں ہوتا، یا صرف ایک حل ہوتا ہے، یا لامحدود حل ہوتے ہیں۔ || وینو چې (iii) معادله هېڅ حل نه لري. نو د معادلو دا سیسټم هېڅ حل نه لري. له دې امله سیسټم ناهمغږی دی. له پورته څخه یادونه کوو چې د خطي معادلو سیسټم یا هېڅ حل نه لري، یا یوازې یو حل لري، یا بې شمېره حلونه لري.
+@sec 2.6.4 | Solution of a non-homogeneous linear equations || غیر متجانس خطی مساواتوں کا حل || د غیر متجانسو خطي معادلو حل
+### 2.6.4 Solution of a non-homogeneous linear equations || 2.6.4 غیر متجانس خطی مساواتوں کا حل || 2.6.4 د غیر متجانسو خطي معادلو حل
+p A system of non-homogeneous linear equations may be solved by using the following methods. || غیر متجانس خطی مساواتوں کا نظام درج ذیل طریقوں سے حل کیا جا سکتا ہے۔ || د غیر متجانسو خطي معادلو سیسټم د لاندې طریقو په کارولو حلېدای شي.
+- (a) Matrix Inversion Method i.e. $AX=B\Rightarrow X=A^{-1}B$ || (a) قالب کے معکوس کا طریقہ یعنی $AX=B\Rightarrow X=A^{-1}B$ || (a) د میټریکس د معکوس طریقه یعنې $AX=B\Rightarrow X=A^{-1}B$
+- (b) Gauss Elimination Method (echelon form) || (b) گاؤس حذف کا طریقہ (ایچیلون شکل) || (b) د ګاوس د حذف طریقه (اېچلون بڼه)
+- (c) Gauss–Jordan Method (reduced echelon form) || (c) گاؤس–جارڈن طریقہ (مختصر ایچیلون شکل) || (c) د ګاوس–جورډن طریقه (لنډه اېچلون بڼه)
+- (d) Cramer's Rule. || (d) کریمر کا اصول۔ || (d) د کرامر قاعده.
+p **(a) Matrix Inversion Method** || **(a) قالب کے معکوس کا طریقہ** || **(a) د میټریکس د معکوس طریقه**
+p Consider the following system of three non-homogeneous linear equations in three variables $x_1, x_2$ and $x_3$. || تین متغیرات $x_1, x_2$ اور $x_3$ میں تین غیر متجانس خطی مساواتوں کے درج ذیل نظام پر غور کریں۔ || په درې متحولونو $x_1, x_2$ او $x_3$ کې د درې غیر متجانسو خطي معادلو لاندې سیسټم په پام کې ونیسئ.
+m $\begin{rcases}a_{11}x_1+a_{12}x_2+a_{13}x_3=k_1\\a_{21}x_1+a_{22}x_2+a_{23}x_3=k_2\\a_{31}x_1+a_{32}x_2+a_{33}x_3=k_3\end{rcases}$
+p This system is equivalent to the matrix equation. || یہ نظام اس قالبی مساوات کے مساوی ہے۔ || دا سیسټم له دې میټریکسي معادلې سره معادل دی.
+m $\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix}\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}=\begin{bmatrix}k_1\\k_2\\k_3\end{bmatrix}$ or $AX=B$, where
+m $A=\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{bmatrix},\ X=\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}$ and $B=\begin{bmatrix}k_1\\k_2\\k_3\end{bmatrix}$.

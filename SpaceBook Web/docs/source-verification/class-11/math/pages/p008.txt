@@ -1,0 +1,37 @@
+@printed 6
+p **Illustration:** Solve $(x+iy)(2-3i)=4+i$, where $x$ and $y$ are real. || **وضاحت:** $(x+iy)(2-3i)=4+i$ کو حل کریں، جہاں $x$ اور $y$ حقیقی ہیں۔ || **روښانتیا:** $(x+iy)(2-3i)=4+i$ حل کړئ، چېرې چې $x$ او $y$ حقیقي دي.
+p **Solution:** We have, $(x+iy)(2-3i)=4+i$ || **حل:** ہمارے پاس ہے، $(x+iy)(2-3i)=4+i$ || **حل:** موږ لرو، $(x+iy)(2-3i)=4+i$
+m $\Rightarrow x+iy=\dfrac{4+i}{2-3i}=\dfrac{4+i}{2-3i}\times\dfrac{2+3i}{2+3i}=\dfrac{(8-3)+i(12+2)}{2^2-(3i)^2}=\dfrac{5+14i}{13}=\dfrac{5}{13}+\dfrac{14}{13}i$
+m $\therefore\ x=\dfrac{5}{13}$ and $y=\dfrac{14}{13}$
+example 6 | Write $\dfrac{3+2i}{4-3i}$ in the form $a+bi$. || $\dfrac{3+2i}{4-3i}$ کو $a+bi$ کی شکل میں لکھیں۔ || $\dfrac{3+2i}{4-3i}$ د $a+bi$ په بڼه ولیکئ.
+p **Solution:** || **حل:** || **حل:**
+m $\dfrac{3+2i}{4-3i}=\dfrac{3+2i}{4-3i}\times\dfrac{4+3i}{4+3i}$ (By rationalization)
+m $=\dfrac{(3+2i)(4+3i)}{(4-3i)(4+3i)}=\dfrac{12+9i+8i+6i^2}{16+12i-12i-9i^2}=\dfrac{12+17i+6(-1)}{16-9(-1)}\quad(\because i^2=-1)$
+m $=\dfrac{6+17i}{25}=\dfrac{6}{25}+\dfrac{17}{25}i$
+endexample
+@sec 1.1.5 | Absolute value or modulus of a complex number || مختلط عدد کی مطلق قیمت یا مقیاس || د مختلط عدد مطلق قیمت یا مقیاس
+### 1.1.5 Absolute value or modulus of a complex number || 1.1.5 مختلط عدد کی مطلق قیمت یا مقیاس || 1.1.5 د مختلط عدد مطلق قیمت یا مقیاس
+p Let $z=(a,b)=a+bi$ be a complex number. Then absolute value (or **modulus**) of $z$, denoted by $|z|$, is defined by $|z|=\sqrt{a^2+b^2}$. || فرض کریں $z=(a,b)=a+bi$ ایک مختلط عدد ہے۔ تب $z$ کی مطلق قیمت (یا **مقیاس**) جسے $|z|$ سے ظاہر کرتے ہیں، $|z|=\sqrt{a^2+b^2}$ سے بیان کی جاتی ہے۔ || فرض کړئ $z=(a,b)=a+bi$ یو مختلط عدد دی. نو د $z$ مطلق قیمت (یا **مقیاس**) چې په $|z|$ ښودل کېږي، په $|z|=\sqrt{a^2+b^2}$ سره تعریف کېږي.
+p In the adjoining figure $P$ represents $a+bi$. $\overline{PM}$ is a perpendicular drawn on $\overline{OX}$. Therefore $\overline{OM}=a$ and $\overline{PM}=b$. In the right angled-triangle OMP, we have by Pythagoras theorem || ساتھ دی گئی شکل میں $P$ عدد $a+bi$ کو ظاہر کرتا ہے۔ $\overline{PM}$ ، $\overline{OX}$ پر کھینچا گیا عمود ہے۔ لہٰذا $\overline{OM}=a$ اور $\overline{PM}=b$۔ قائمۃ الزاویہ مثلث OMP میں مسئلہ فیثاغورث سے ہمارے پاس ہے || په څنګ کې شکل کې $P$ عدد $a+bi$ ښيي. $\overline{PM}$ پر $\overline{OX}$ رسم شوی عمود دی. نو $\overline{OM}=a$ او $\overline{PM}=b$. په قایم الزاویه مثلث OMP کې د فیثاغورث د قضیې له مخې لرو
+svg Figure 1.1 || شکل 1.1 || ۱.۱ شکل
+<svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Figure 1.1: point P(a, b) joined to the origin O, with perpendicular PM to the x-axis; OM = a, PM = b, OP = |z|">
+<defs><marker id="m11f11a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f172a"/></marker></defs>
+<line x1="40" y1="200" x2="300" y2="200" stroke="#0f172a" stroke-width="1.6" marker-end="url(#m11f11a)"/>
+<line x1="70" y1="225" x2="70" y2="20" stroke="#0f172a" stroke-width="1.6" marker-end="url(#m11f11a)"/>
+<line x1="70" y1="200" x2="230" y2="70" stroke="#0284c7" stroke-width="2"/>
+<line x1="230" y1="70" x2="230" y2="200" stroke="#0f172a" stroke-width="1.4" stroke-dasharray="5 4"/>
+<rect x="220" y="190" width="10" height="10" fill="none" stroke="#0f172a"/>
+<circle cx="230" cy="70" r="3.5" fill="#0f172a"/>
+<text x="238" y="62" font-size="15" font-style="italic">P(a, b)</text>
+<text x="56" y="218" font-size="15">O</text>
+<text x="224" y="220" font-size="15">M</text>
+<text x="292" y="220" font-size="15">X</text>
+<text x="78" y="28" font-size="15">Y</text>
+<text x="146" y="216" font-size="14" font-style="italic">a</text>
+<text x="238" y="140" font-size="14" font-style="italic">b</text>
+<text x="132" y="126" font-size="14" font-style="italic">|z|</text>
+</svg>
+endsvg
+m $\left|\overline{OP}\right|^2=\left|\overline{OM}\right|^2+\left|\overline{PM}\right|^2=a^2+b^2$
+m $\therefore\ \left|\overline{OP}\right|=\sqrt{a^2+b^2}=|z|.$
+p Thus, the modulus of a complex number is the distance from the origin to the point representing the number. || یوں مختلط عدد کا مقیاس مبدا سے اس نقطے تک کا فاصلہ ہے جو اس عدد کو ظاہر کرتا ہے۔ || په دې توګه د مختلط عدد مقیاس له مبدا څخه تر هغه ټکي پورې واټن دی چې دا عدد ښيي.

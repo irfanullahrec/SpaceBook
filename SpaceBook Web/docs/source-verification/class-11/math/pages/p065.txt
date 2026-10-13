@@ -1,0 +1,18 @@
+@printed 65
+@issue System (I) reduction: the printed right-hand column changes between steps (the second row reads 0, then 6, then 0 again); transcribed as printed. The final triangular system and solution $x=2,\ y=-2,\ z=-4$ are as printed.
+m $\begin{rcases}x-2y+3z=1\\-2x+5y-4z=-2\\x-4y-z=5\end{rcases}\quad(III)$
+p We solve these systems now by performing the elementary row operations on the augmented matrices of these systems to reduce them to (row) echelon form. || اب ہم ان نظاموں کے توسیعی قالبوں پر ابتدائی قطاری عملیات کر کے انہیں (قطاری) ایچیلون شکل میں لا کر حل کرتے ہیں۔ || اوس دا سیسټمونه د هغوی پر پراخو میټریکسونو د ابتدايي قطار عملیو په ترسره کولو او (قطاري) اېچلون بڼې ته د راوستلو له لارې حلوو.
+p (i) Consider system (I). The augmented matrix of the systems is || (i) نظام (I) پر غور کریں۔ اس نظام کا توسیعی قالب یہ ہے || (i) (I) سیسټم په پام کې ونیسئ. د سیسټم پراخ میټریکس دا دی
+m $[A|B]=\left[\begin{array}{ccc|c}2&2&-1&4\\1&-2&1&2\\1&1&0&0\end{array}\right]\overset{R}{\sim}\left[\begin{array}{ccc|c}1&-2&1&2\\2&2&-1&4\\1&1&0&0\end{array}\right]$ by $R_1\leftrightarrow R_2$
+m $\overset{R}{\sim}\left[\begin{array}{ccc|c}1&-2&1&2\\0&6&-3&0\\1&1&0&0\end{array}\right]$ by $R_2-2R_1$
+m $\overset{R}{\sim}\left[\begin{array}{ccc|c}1&-2&1&2\\0&6&-3&6\\0&3&-1&-2\end{array}\right]$ by $R_3-R_1$ (as printed)
+m $\overset{R}{\sim}\left[\begin{array}{ccc|c}1&-2&1&2\\0&6&-3&0\\0&-6&2&4\end{array}\right]$ by $-2R_3$
+m $\overset{R}{\sim}\left[\begin{array}{ccc|c}1&-2&1&2\\0&6&-3&0\\0&0&-1&4\end{array}\right]$ by $R_3+R_2$
+p The system (I) is reduced to **equivalent system**, || نظام (I) **مساوی نظام** میں بدل جاتا ہے، || (I) سیسټم **معادل سیسټم** ته راکمېږي،
+m $x-2y+z=2\quad$ (i)
+m $0+6y-3z=0\quad$ (ii)
+m $0+0-z=4\quad$ (iii)
+box note | Remember || یاد رکھیں || په یاد ولرئ
+p Two systems of equations are said to be equivalent if they have the same solution set. || مساواتوں کے دو نظام مساوی کہلاتے ہیں اگر ان کا حل کا سیٹ ایک ہی ہو۔ || د معادلو دوه سیسټمونه معادل ویل کېږي که د حل سېټ یې یو وي.
+endbox
+p The system is now in triangular form. In this form the system can be easily solved. By equation (iii) we get $z=-4$. Substituting the value of $z$ in equation (ii) we get $y=-2$. Now substituting the values of $y$ and $z$ in equation (i), we get $x=2$. Thus the solution of the system is $x=2,\ y=-2$ and $z=-4$. Since the system has a solution, || نظام اب مثلثی شکل میں ہے۔ اس شکل میں نظام آسانی سے حل ہو سکتا ہے۔ مساوات (iii) سے $z=-4$ ملتا ہے۔ $z$ کی قیمت مساوات (ii) میں رکھنے پر $y=-2$ ملتا ہے۔ اب $y$ اور $z$ کی قیمتیں مساوات (i) میں رکھنے پر $x=2$ ملتا ہے۔ یوں نظام کا حل $x=2,\ y=-2$ اور $z=-4$ ہے۔ چونکہ نظام کا حل موجود ہے، || سیسټم اوس په مثلثي بڼه دی. په دې بڼه سیسټم په اسانۍ حلېږي. له (iii) معادلې څخه $z=-4$ لاسته راځي. د $z$ قیمت په (ii) معادله کې ږدو، $y=-2$ لاسته راځي. اوس د $y$ او $z$ قیمتونه په (i) معادله کې ږدو، $x=2$ لاسته راځي. په دې توګه د سیسټم حل $x=2,\ y=-2$ او $z=-4$ دی. ځکه چې سیسټم حل لري،

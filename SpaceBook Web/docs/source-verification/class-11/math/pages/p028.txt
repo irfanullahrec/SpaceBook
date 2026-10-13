@@ -1,0 +1,27 @@
+@printed 26
+@deco unit opener: yellow tag "UNIT 2", illustration of multiplying a 3×2 matrix [A B; C D; E F] by a column [G; H] = [A×G + B×H; C×G + D×H; E×G + F×H] with curved arrows; side strip "STUDENTS LEARNING OUTCOMES"
+@unit 2 | Matrices and Determinants || قالب اور مقطع || میټریکسونه او ډیټرمینانټونه
+@sec 2.0 | Unit opening: Student Learning Outcomes || باب کا آغاز: طلبہ کے حاصلاتِ تعلم || د څپرکي پیل: د زده کوونکو د زده کړې پایلې
+# UNIT 2 MATRICES AND DETERMINANTS || باب 2 قالب اور مقطع || څپرکی 2 میټریکسونه او ډیټرمینانټونه
+m $\begin{bmatrix}A&B\\C&D\\E&F\end{bmatrix}\times\begin{bmatrix}G\\H\end{bmatrix}=\begin{bmatrix}A\times G+B\times H\\C\times G+D\times H\\E\times G+F\times H\end{bmatrix}$
+p After reading this unit, the students will be able to: || اس باب کو پڑھنے کے بعد طلبہ اس قابل ہو جائیں گے کہ: || د دې څپرکي له لوستلو وروسته به زده کوونکي وکولی شي چې:
+slo Recall the concept of: a matrix and its notation, order of a matrix, equality of two matrices. || ان تصورات کو یاد کریں: قالب اور اس کی علامت، قالب کا درجہ، دو قالبوں کی مساوات۔ || دا مفاهیم را یاد کړئ: میټریکس او د هغه نښه، د میټریکس ترتیب، د دوو میټریکسونو برابري.
+slo Define row matrix, column matrix, square matrix, rectangular matrix, zero/null matrix, identity matrix, scalar matrix, diagonal matrix, upper and lower triangular matrix, transpose of a matrix, symmetric matrix and skew-symmetric matrix. || قطاری قالب، کالمی قالب، مربع قالب، مستطیلی قالب، صفر/خالی قالب، شناختی قالب، عددیہ قالب، وتری قالب، بالائی اور زیریں مثلثی قالب، قالب کا تبدیل، متشاکل قالب اور منحرف متشاکل قالب کی تعریف کریں۔ || د قطار میټریکس، ستون میټریکس، مربع میټریکس، مستطیلي میټریکس، صفر/تش میټریکس، واحد میټریکس، سکالر میټریکس، قطري میټریکس، پورتنی او لاندینی مثلثي میټریکس، د میټریکس ټرانسپوز، متناظر میټریکس او کږ متناظر میټریکس تعریف وکړئ.
+slo Carry out scalar multiplication, addition/subtraction of matrices, multiplication of matrices with real and complex entries. || حقیقی اور مختلط اندراجات والے قالبوں کی عددی ضرب، جمع/تفریق اور ضرب انجام دیں۔ || د حقیقي او مختلطو عناصرو لرونکو میټریکسونو سکالر ضرب، جمع/تفریق او ضرب ترسره کړئ.
+slo Show that commutative property holds under addition and does not hold under multiplication, in general. || دکھائیں کہ مبادلہ خاصیت جمع کے تحت درست ہے اور عموماً ضرب کے تحت درست نہیں۔ || وښایئ چې تبادلوي ځانګړتیا د جمع لاندې سمه ده او په عمومي ډول د ضرب لاندې سمه نه ده.
+slo Verify that $(AB)^t=B^tA^t$ || تصدیق کریں کہ $(AB)^t=B^tA^t$ || تصدیق کړئ چې $(AB)^t=B^tA^t$
+slo Describe determinant of a square matrix, minor and cofactor of an element of a matrix. || مربع قالب کا مقطع، اور قالب کے کسی عنصر کا مائنر اور کوفیکٹر بیان کریں۔ || د مربع میټریکس ډیټرمینانټ، او د میټریکس د یو عنصر ماینر او کوفکټر بیان کړئ.
+slo Evaluate determinant of a square matrix using cofactors. || کوفیکٹرز کی مدد سے مربع قالب کا مقطع معلوم کریں۔ || د کوفکټرونو په مرسته د مربع میټریکس ډیټرمینانټ محاسبه کړئ.
+slo Define singular and non-singular matrices. || نادر اور غیر نادر قالبوں کی تعریف کریں۔ || منفرد او غیر منفرد میټریکسونه تعریف کړئ.
+slo Know the adjoint of a square matrix. || مربع قالب کا ملحقہ (ایڈجوائنٹ) جانیں۔ || د مربع میټریکس ملحق (اډجوینټ) وپېژنئ.
+slo Use adjoint method to calculate inverse of a square matrix. || مربع قالب کا معکوس معلوم کرنے کے لیے ملحقہ طریقہ استعمال کریں۔ || د مربع میټریکس د معکوس د محاسبې لپاره د ملحق طریقه وکاروئ.
+slo Verify the result $(AB)^{-1}=B^{-1}A^{-1}$. || نتیجہ $(AB)^{-1}=B^{-1}A^{-1}$ کی تصدیق کریں۔ || پایله $(AB)^{-1}=B^{-1}A^{-1}$ تصدیق کړئ.
+slo State and prove the properties of determinants. || مقطع کی خصوصیات بیان کریں اور ثابت کریں۔ || د ډیټرمینانټونو ځانګړتیاوې بیان او ثابت کړئ.
+slo Evaluate the determinant without expansion (i.e. using properties of determinants). || پھیلائے بغیر مقطع کی قیمت معلوم کریں (یعنی مقطع کی خصوصیات استعمال کر کے)۔ || پرته له پراختیا ډیټرمینانټ محاسبه کړئ (یعنې د ډیټرمینانټ د ځانګړتیاوو په کارولو).
+slo Know the row and column operations on matrices. || قالبوں پر قطاری اور کالمی عملیات جانیں۔ || پر میټریکسونو د قطار او ستون عملیې وپېژنئ.
+slo Define echelon and reduced echelon form of a matrix. || قالب کی ایچیلون اور مختصر ایچیلون شکل کی تعریف کریں۔ || د میټریکس اېچلون او لنډه اېچلون بڼه تعریف کړئ.
+slo Reduce a matrix to its echelon and reduced echelon form. || قالب کو اس کی ایچیلون اور مختصر ایچیلون شکل میں لائیں۔ || میټریکس د هغه اېچلون او لنډې اېچلون بڼې ته راولئ.
+slo Recognize the rank of a matrix. || قالب کا رینک پہچانیں۔ || د میټریکس رتبه وپېژنئ.
+slo Use row operations to find the inverse and the rank of a matrix. || قطاری عملیات کے ذریعے قالب کا معکوس اور رینک معلوم کریں۔ || د قطار عملیو په مرسته د میټریکس معکوس او رتبه پیدا کړئ.
+slo Distinguish between homogeneous and non-homogeneous linear equations in 2 and 3 unknowns. || 2 اور 3 نامعلوم والی متجانس اور غیر متجانس خطی مساواتوں میں فرق کریں۔ || په 2 او 3 نامعلومو کې د متجانسو او غیر متجانسو خطي معادلو ترمنځ توپیر وکړئ.
+slo Solve a system of three homogeneous linear equations in three unknowns. || تین نامعلوم والی تین متجانس خطی مساواتوں کا نظام حل کریں۔ || په درې نامعلومو کې د درې متجانسو خطي معادلو سیسټم حل کړئ.

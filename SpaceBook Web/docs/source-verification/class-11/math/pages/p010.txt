@@ -1,0 +1,33 @@
+@printed 8
+q 7 | If $z_1=1+2i$ and $z_2=2+3i$, evaluate || اگر $z_1=1+2i$ اور $z_2=2+3i$ ہوں تو قیمت معلوم کریں || که $z_1=1+2i$ او $z_2=2+3i$ وي، قیمت یې پیدا کړئ
+qp (i) | $|z_1+z_2|$
+qp (ii) | $|z_1z_2|$
+qp (iii) | $\left|\dfrac{z_1}{z_2}\right|$
+q 8 | Express the following in the standard form $a+ib$ || درج ذیل کو معیاری شکل $a+ib$ میں ظاہر کریں || لاندې په معیاري بڼه $a+ib$ وښایئ
+qp (i) | $\dfrac{1-2i}{2+i}+\dfrac{4-i}{3+2i}$
+qp (ii) | $\dfrac{2+\sqrt{-9}}{-5-\sqrt{-16}}$
+qp (iii) | $\dfrac{(1+i)^2}{4+3i}$
+q 9 | Find the conjugate of $\dfrac{(3-2i)(2+3i)}{(1+2i)(2-i)}$ || $\dfrac{(3-2i)(2+3i)}{(1+2i)(2-i)}$ کا مزدوج معلوم کریں || د $\dfrac{(3-2i)(2+3i)}{(1+2i)(2-i)}$ مزدوج پیدا کړئ
+q 10 | Evaluate $\left[i^{18}+\left(\dfrac{1}{i}\right)^{25}\right]^3$ || $\left[i^{18}+\left(\dfrac{1}{i}\right)^{25}\right]^3$ کی قیمت معلوم کریں || د $\left[i^{18}+\left(\dfrac{1}{i}\right)^{25}\right]^3$ قیمت پیدا کړئ
+q 11 | Let $z_1=2-i,\ z_2=-2+i$, find || فرض کریں $z_1=2-i,\ z_2=-2+i$ ، معلوم کریں || فرض کړئ $z_1=2-i,\ z_2=-2+i$، پیدا کړئ
+qp (i) | $Re\left(\dfrac{z_1z_2}{\bar{z}_1}\right)$
+qp (ii) | $Im\left(\dfrac{1}{z_1\bar{z}_1}\right)$
+endexercise
+@sec 1.2 | Properties of complex numbers || مختلط اعداد کی خصوصیات || د مختلطو عددونو ځانګړتیاوې
+## 1.2 Properties of complex numbers || 1.2 مختلط اعداد کی خصوصیات || 1.2 د مختلطو عددونو ځانګړتیاوې
+### 1.2.1 Properties of complex numbers with respect to addition and multiplication || 1.2.1 جمع اور ضرب کے لحاظ سے مختلط اعداد کی خصوصیات || 1.2.1 د جمع او ضرب په اړه د مختلطو عددونو ځانګړتیاوې
+p Like real numbers, properties of addition and multiplication also hold in complex numbers. || حقیقی اعداد کی طرح جمع اور ضرب کی خصوصیات مختلط اعداد میں بھی درست ہیں۔ || د حقیقي عددونو په څېر د جمع او ضرب ځانګړتیاوې په مختلطو عددونو کې هم سمې دي.
+p **(i) Properties of Addition** || **(i) جمع کی خصوصیات** || **(i) د جمع ځانګړتیاوې**
+p **A-1 Addition is commutative** i.e. $z_1+z_2=z_2+z_1$ || **A-1 جمع مبادلہ ہے** یعنی $z_1+z_2=z_2+z_1$ || **A-1 جمع تبادلوي ده** یعنې $z_1+z_2=z_2+z_1$
+p If $z_1=a+bi$ and $z_2=c+di$, then || اگر $z_1=a+bi$ اور $z_2=c+di$ ہوں تو || که $z_1=a+bi$ او $z_2=c+di$ وي، نو
+m $z_1+z_2=(a+bi)+(c+di)$
+m $=(a+c)+(b+d)i$
+m $=(c+a)+(d+b)i$ (by commutative property for addition in $R$)
+m $=(c+di)+(a+bi)=z_2+z_1$
+m Thus $z_1+z_2=z_2+z_1$
+example 8 | If $z_1=1+3i$ and $z_2=3-5i$, then $z_1+z_2=z_2+z_1$ || اگر $z_1=1+3i$ اور $z_2=3-5i$ ہوں تو $z_1+z_2=z_2+z_1$ || که $z_1=1+3i$ او $z_2=3-5i$ وي، نو $z_1+z_2=z_2+z_1$
+p **Solution:** || **حل:** || **حل:**
+m $z_1+z_2=(1+3i)+(3-5i)=(1+3)+(3-5)i=4-2i$
+m and $z_2+z_1=(3-5i)+(1+3i)=(3+1)+(-5+3)i=4-2i$
+m Hence $z_1+z_2=z_2+z_1$
+endexample

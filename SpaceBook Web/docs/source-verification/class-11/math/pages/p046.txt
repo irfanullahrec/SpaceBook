@@ -1,0 +1,29 @@
+@printed 44
+@deco footer stamp "Not For Sale"
+m $=-a_{21}(a_{12}a_{33}-a_{13}a_{32})+a_{22}(a_{11}a_{33}-a_{13}a_{31})-a_{23}(a_{11}a_{32}-a_{12}a_{31})$
+m $=-a_{21}a_{12}a_{33}+a_{21}a_{13}a_{32}+a_{22}a_{11}a_{33}-a_{22}a_{13}a_{31}-a_{23}a_{11}a_{32}+a_{23}a_{12}a_{31}$
+m $=a_{11}a_{22}a_{33}+a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32}-a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}\qquad$ (4)
+p Similarly, we can find $|A|$ for other values of $i$ and $j$. || اسی طرح ہم $i$ اور $j$ کی دوسری قیمتوں کے لیے $|A|$ معلوم کر سکتے ہیں۔ || همدارنګه د $i$ او $j$ د نورو قیمتونو لپاره $|A|$ پیدا کولی شو.
+p The expansion of $|A|$ in (4) can also be remembered by the following procedure. Rewrite the first two columns of the matrix $A$ after the third column and use the following diagram, if $A$ is a $3\times3$ matrix. || (4) میں $|A|$ کے پھیلاؤ کو درج ذیل طریقے سے بھی یاد رکھا جا سکتا ہے۔ اگر $A$ ایک $3\times3$ قالب ہو تو قالب $A$ کے پہلے دو کالموں کو تیسرے کالم کے بعد دوبارہ لکھیں اور درج ذیل خاکہ استعمال کریں۔ || په (4) کې د $|A|$ پراختیا د لاندې طریقې په مرسته هم په یاد ساتل کېدای شي. که $A$ یو $3\times3$ میټریکس وي، د میټریکس $A$ لومړي دوه ستونونه له دریم ستون وروسته بیا ولیکئ او لاندې ډیاګرام وکاروئ.
+svg (5) The first two columns rewritten after the third; three downward diagonals give the positive products and three upward diagonals give the negative products || (5) پہلے دو کالم تیسرے کے بعد دوبارہ لکھے گئے؛ نیچے جانے والے تین وتر مثبت حاصلِ ضرب اور اوپر جانے والے تین وتر منفی حاصلِ ضرب دیتے ہیں || (5) لومړي دوه ستونونه له دریم وروسته بیا لیکل شوي؛ ښکته تلونکي درې قطرونه مثبت حاصل ضربونه او پورته تلونکي درې قطرونه منفي حاصل ضربونه ورکوي
+<svg viewBox="0 0 420 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rule of Sarrus diagram for a 3 by 3 determinant">
+<defs><marker id="m11sar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f172a"/></marker></defs>
+<g font-family="Times New Roman, serif" font-style="italic" font-size="18" fill="#0f172a" text-anchor="middle">
+<text x="40" y="40">a₁₁</text><text x="110" y="40">a₁₂</text><text x="180" y="40">a₁₃</text><text x="250" y="40" fill="#64748b">a₁₁</text><text x="320" y="40" fill="#64748b">a₁₂</text>
+<text x="40" y="90">a₂₁</text><text x="110" y="90">a₂₂</text><text x="180" y="90">a₂₃</text><text x="250" y="90" fill="#64748b">a₂₁</text><text x="320" y="90" fill="#64748b">a₂₂</text>
+<text x="40" y="140">a₃₁</text><text x="110" y="140">a₃₂</text><text x="180" y="140">a₃₃</text><text x="250" y="140" fill="#64748b">a₃₁</text><text x="320" y="140" fill="#64748b">a₃₂</text>
+</g>
+<g stroke="#0284c7" stroke-width="1.6" marker-end="url(#m11sar)"><line x1="52" y1="46" x2="172" y2="126"/><line x1="122" y1="46" x2="242" y2="126"/><line x1="192" y1="46" x2="312" y2="126"/></g>
+<g stroke="#dc2626" stroke-width="1.6" marker-end="url(#m11sar)"><line x1="52" y1="126" x2="172" y2="46"/><line x1="122" y1="126" x2="242" y2="46"/><line x1="192" y1="126" x2="312" y2="46"/></g>
+<text x="400" y="95" font-size="15" text-anchor="end" font-family="Segoe UI, sans-serif">(5)</text>
+</svg>
+endsvg
+p The arrows pointing downward represent the three products having a positive sign and the arrows pointing upward represent the three products having a negative sign. || نیچے کی طرف تیر مثبت علامت والے تین حاصلِ ضرب اور اوپر کی طرف تیر منفی علامت والے تین حاصلِ ضرب ظاہر کرتے ہیں۔ || ښکته خواته غشي د مثبتې نښې درې حاصل ضربونه او پورته خواته غشي د منفي نښې درې حاصل ضربونه ښيي.
+example 5 | If $A=\begin{bmatrix}3&-1&2\\3&1&0\\1&0&-1\end{bmatrix}$, then find $|A|$. || اگر $A=\begin{bmatrix}3&-1&2\\3&1&0\\1&0&-1\end{bmatrix}$ ہو تو $|A|$ معلوم کریں۔ || که $A=\begin{bmatrix}3&-1&2\\3&1&0\\1&0&-1\end{bmatrix}$ وي، نو $|A|$ پیدا کړئ.
+m **Solution:** $|A|=\begin{vmatrix}3&-1&2\\3&1&0\\1&0&-1\end{vmatrix}$
+p We expand the determinant by using the elements of the first row, we have || ہم پہلی قطار کے عناصر استعمال کر کے مقطع کو پھیلاتے ہیں، ہمارے پاس ہے || ډیټرمینانټ د لومړي قطار د عناصرو په کارولو پراخوو، لرو
+m $|A|=a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}\qquad$ (1)
+m But $A_{11}=(-1)^{1+1}M_{11}=M_{11}=\begin{vmatrix}1&0\\0&-1\end{vmatrix}$
+m $A_{12}=(-1)^{1+2}M_{12}=-M_{12}=-\begin{vmatrix}3&0\\1&-1\end{vmatrix}$
+m $A_{13}=(-1)^{1+3}M_{13}=M_{13}=\begin{vmatrix}3&1\\1&0\end{vmatrix}$
+p Putting these values in (1), we obtain || ان قیمتوں کو (1) میں رکھنے سے ہمیں ملتا ہے || دا قیمتونه په (1) کې ږدو، لاسته راځي
