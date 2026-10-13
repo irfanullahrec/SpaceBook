@@ -50,6 +50,19 @@ bm.VOCAB = HERE / 'math' / 'vocab.tsv'
 bm.HERE = HERE  # ocr_recall() looks for class-11/math/ocr (absent -> skipped)
 
 
+def _tri(raw):
+    # languages are separated by ' || ' (with spaces) so LaTeX such as |a||b| stays intact
+    parts = [x.strip() for x in raw.split(' || ')]
+    if len(parts) == 1:
+        return {'en': parts[0]}
+    if len(parts) != 3:
+        raise ValueError(f'expected EN || UR || PS, got {len(parts)} parts: {raw[:80]}')
+    return {'en': parts[0], 'ur': parts[1], 'ps': parts[2]}
+
+
+bm.tri = _tri
+
+
 def jpg_name(i):
     return f'{i // 2 + 1:03}_page_{i % 2 + 1}.jpg'
 
