@@ -1,0 +1,12 @@
+@printed 143
+@issue Example 31: the second sum prints $\frac{-732}{-4}=183$ (correct: $\frac{-729-3}{-4}=183$)
+m $\dfrac{129}{4}=\dfrac{\frac{3}{4}-48r}{1-r}\Rightarrow129-129r=3-192r\Rightarrow63r=-126\Rightarrow r=-2$
+m From (i) we have $(-2)^{n-1}=64\Rightarrow(-2)^{n-1}=(-2)^6\Rightarrow n-1=6\Rightarrow n=7$
+endexample
+example 31 | Suppose that the third term of a geometric sequence is 27 and the fifth term is 243. Find $a_1$, $r$ and $S_5$. || فرض کریں ہندسی ترتیب کا تیسرا رکن 27 اور پانچواں رکن 243 ہے۔ $a_1$ ، $r$ اور $S_5$ معلوم کریں۔ || فرض کړئ د هندسي ترتیب دریم حد 27 او پنځم حد 243 دی. $a_1$، $r$ او $S_5$ پیدا کړئ.
+m **Solution:** Since $a_3=27$ and $a_5=243$. Then we have $a_1r^2=27$ (i), $a_1r^4=243$ (ii), $\therefore\ a_n=a_1r^{n-1}$
+m Dividing (ii) by (i) we obtain $\dfrac{a_1r^4}{a_1r^2}=\dfrac{243}{27}\Rightarrow r^2=9\Rightarrow r=\pm3$
+p We obtain two different solutions since there are two values of $r$. || ہمیں دو مختلف حل ملتے ہیں کیونکہ $r$ کی دو قیمتیں ہیں۔ || دوه بېلابېل حلونه لاسته راځي ځکه د $r$ دوه قیمتونه دي.
+m For $r=3$: $a_1r^2=27\Rightarrow a_1(3)^2=27\Rightarrow a_1\cdot9=27\Rightarrow a_1=3$. The first sequence is $3, 9, 27, 81, 243,\ldots$; $S_5=\dfrac{ra_5-a_1}{r-1}=\dfrac{(3)(243)-3}{3-1}=\dfrac{729-3}{2}=363$
+m For $r=-3$: $a_1r^2=27\Rightarrow a_1(-3)^2=27\Rightarrow a_1\cdot9=27\Rightarrow a_1=3$. The second sequence is $3, -9, 27, -81, 243,\ldots$; $S_5=\dfrac{ra_5-a_1}{r-1}=\dfrac{(-3)(243)-3}{-3-1}=\dfrac{-732}{-4}=183$
+endexample

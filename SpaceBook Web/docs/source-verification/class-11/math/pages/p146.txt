@@ -1,0 +1,16 @@
+@printed 146
+p follows that $S_n$ approaches $\dfrac{a_1}{1-r}$ as n increases without a bound and we write $S_\infty=\dfrac{a_1}{1-r}$ || اس سے یہ نتیجہ نکلتا ہے کہ جیسے جیسے n بغیر حد کے بڑھتا ہے $S_n$ ، $\dfrac{a_1}{1-r}$ کے قریب ہوتا جاتا ہے اور ہم لکھتے ہیں $S_\infty=\dfrac{a_1}{1-r}$ || له دې څرګندېږي چې لکه څنګه چې n بې حده زیاتېږي $S_n$ د $\dfrac{a_1}{1-r}$ خوا ته ځي او لیکو $S_\infty=\dfrac{a_1}{1-r}$
+m Mathematically, it can be shown as $\lim_{n\to\infty}S_n=\lim_{n\to\infty}\left(\dfrac{a_1}{1-r}-\dfrac{a_1r^n}{1-r}\right)=\dfrac{a_1}{1-r}-\dfrac{a_1}{1-r}\lim_{n\to\infty}r^n=\dfrac{a_1}{1-r}-\dfrac{a_1}{1-r}(0)$
+m $S_\infty=\dfrac{a_1}{1-r}$
+p This gives us the following: || اس سے ہمیں درج ذیل ملتا ہے: || دا موږ ته لاندې راکوي:
+box note | Theorem || مسئلہ || قضیه
+p If $|r|<1$, then the infinite geometric series: $a_1+a_1r+a_1r^2+\cdots+a_1r^{n-1}+\cdots$ has the sum: $\dfrac{a_1}{1-r}$ || اگر $|r|<1$ ہو تو لامتناہی ہندسی سلسلے $a_1+a_1r+a_1r^2+\cdots+a_1r^{n-1}+\cdots$ کا مجموعہ $\dfrac{a_1}{1-r}$ ہے || که $|r|<1$ وي، نو د نامحدودې هندسي لړۍ $a_1+a_1r+a_1r^2+\cdots+a_1r^{n-1}+\cdots$ مجموعه $\dfrac{a_1}{1-r}$ ده
+endbox
+example 33 | Find the sum of the infinite geometric series: $\frac{3}{8}-\frac{3}{16}+\frac{3}{32}-\frac{3}{64}+\cdots$ || لامتناہی ہندسی سلسلے کا مجموعہ معلوم کریں: $\frac{3}{8}-\frac{3}{16}+\frac{3}{32}-\frac{3}{64}+\cdots$ || د نامحدودې هندسي لړۍ مجموعه پیدا کړئ: $\frac{3}{8}-\frac{3}{16}+\frac{3}{32}-\frac{3}{64}+\cdots$
+p **Solution:** Before finding the sum, we must find the common ratio. || **حل:** مجموعہ معلوم کرنے سے پہلے ہمیں مشترک نسبت معلوم کرنی ہوگی۔ || **حل:** د مجموعې له پیدا کولو مخکې باید ګډ نسبت پیدا کړو.
+m $r=\dfrac{a_2}{a_1}=-\dfrac{3/16}{3/8}=-\dfrac{3}{16}\cdot\dfrac{8}{3}=-\dfrac{1}{2}$
+p Because $r=-1/2$, the condition that $|r|<1$ is met. Thus, the infinite geometric series has a sum || چونکہ $r=-1/2$ ، اس لیے شرط $|r|<1$ پوری ہوتی ہے۔ لہٰذا لامتناہی ہندسی سلسلے کا مجموعہ موجود ہے || ځکه $r=-1/2$، نو د $|r|<1$ شرط پوره ده. نو نامحدوده هندسي لړۍ مجموعه لري
+m $S=\dfrac{a_1}{1-r}$ (This is the formula for the sum of an infinite geometric series. Here $a_1=3/8$ and $r=-1/2$)
+m $=\dfrac{3/8}{1-(-1/2)}=\dfrac{3/8}{3/2}=\dfrac{3}{8}\cdot\dfrac{2}{3}=\dfrac{1}{4}$
+p Thus, the sum of $\frac{3}{8}-\frac{3}{16}+\frac{3}{32}+\cdots$ is $\frac{1}{4}$. Put in an informal way, as we continue to add more and more terms, the sum is approximately $\frac{1}{4}$. || لہٰذا $\frac{3}{8}-\frac{3}{16}+\frac{3}{32}+\cdots$ کا مجموعہ $\frac{1}{4}$ ہے۔ غیر رسمی انداز میں، جیسے جیسے ہم زیادہ سے زیادہ ارکان جمع کرتے جاتے ہیں، مجموعہ تقریباً $\frac{1}{4}$ ہوتا ہے۔ || نو د $\frac{3}{8}-\frac{3}{16}+\frac{3}{32}+\cdots$ مجموعه $\frac{1}{4}$ ده. په غیررسمي ډول، لکه څنګه چې ډېر او ډېر حدونه جمع کوو، مجموعه نږدې $\frac{1}{4}$ کېږي.
+endexample

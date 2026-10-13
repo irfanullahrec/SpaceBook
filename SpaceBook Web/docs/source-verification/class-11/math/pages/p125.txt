@@ -1,0 +1,24 @@
+@printed 125
+@deco footer stamp "Not For Sale"
+@sec 4.2.2 | The nth term of an Arithmetic Sequence || حسابی ترتیب کا nواں رکن || د حسابي ترتیب nم حد
+### 4.2.2 The nth term of an Arithmetic Sequence || 4.2.2 حسابی ترتیب کا nواں رکن || 4.2.2 د حسابي ترتیب nم حد
+p We find a formula for the nth term of an arithmetic sequence. Let $a_1$ be its first term and $d$ be its common difference. Then consecutive terms of the sequence are given by || ہم حسابی ترتیب کے nویں رکن کا فارمولا معلوم کرتے ہیں۔ فرض کریں $a_1$ اس کا پہلا رکن اور $d$ مشترک فرق ہے۔ تب ترتیب کے متواتر ارکان یہ ہیں || د حسابي ترتیب د nم حد فورمول پیدا کوو. فرض کړئ $a_1$ یې لومړی حد او $d$ یې ګډ توپیر دی. نو د ترتیب پرله پسې حدونه دا دي
+m $a_1=a_1+0\cdot d=a_1+(1-1)d$
+m $a_2=a_1+d=a_1+1\cdot d=a_1+(2-1)d$
+m $a_3=a_2+d=(a_1+d)+d=a_1+2\cdot d=a_1+(3-1)d$
+m $a_4=a_3+d=(a_1+2\cdot d)+d=a_1+3\cdot d=a_1+(4-1)d$
+m $a_5=a_4+d=(a_1+3\cdot d)+d=a_1+4\cdot d=a_1+(5-1)d$
+m $\vdots$
+eq \Rightarrow a_n=a_1+(n-1)d
+example 7 | Find the $15^{th}$ term of the arithmetic sequence whose first three terms are 20, 16.5 and 13. || اس حسابی ترتیب کا 15واں رکن معلوم کریں جس کے پہلے تین ارکان 20، 16.5 اور 13 ہیں۔ || د هغه حسابي ترتیب 15م حد پیدا کړئ چې لومړي درې حدونه یې 20، 16.5 او 13 دي.
+p **Solution:** Here $a_1=20,\ d=16.5-20=-3.5$ and $n=15$. Substituting these values in the formula: $a_n=a_1+(n-1)d$ We obtain, $a_{15}=20+(15-1)(-3.5)=20-49=-29$ || **حل:** یہاں $a_1=20,\ d=16.5-20=-3.5$ اور $n=15$ ۔ یہ قیمتیں فارمولے $a_n=a_1+(n-1)d$ میں رکھنے سے ہمیں ملتا ہے $a_{15}=20+(15-1)(-3.5)=20-49=-29$ || **حل:** دلته $a_1=20,\ d=16.5-20=-3.5$ او $n=15$. دا قیمتونه په فورمول $a_n=a_1+(n-1)d$ کې ږدو، لاسته راځي $a_{15}=20+(15-1)(-3.5)=20-49=-29$
+endexample
+p If any two terms of an Arithmetic **sequence** be given, the series can be completely determined; for the data furnish two simultaneous equations, the solution of which will give the first term and the common difference. || اگر حسابی **ترتیب** کے کوئی دو ارکان دیے گئے ہوں تو سلسلہ مکمل طور پر متعین کیا جا سکتا ہے؛ کیونکہ معلومات دو ہمزاد مساواتیں دیتی ہیں جن کا حل پہلا رکن اور مشترک فرق دے گا۔ || که د حسابي **ترتیب** هر دوه حدونه ورکړل شوي وي، لړۍ په بشپړ ډول ټاکل کېدای شي؛ ځکه معلومات دوه همزمانې معادلې ورکوي چې حل یې لومړی حد او ګډ توپیر ورکوي.
+example 8 | The $8^{th}$ term of an arithmetic sequence is 75 and the $20^{th}$ term is 39. Find the first term and the common difference. Give a recursive formula for the sequence. || حسابی ترتیب کا 8واں رکن 75 اور 20واں رکن 39 ہے۔ پہلا رکن اور مشترک فرق معلوم کریں۔ ترتیب کا تکراری فارمولا لکھیں۔ || د یو حسابي ترتیب 8م حد 75 او 20م حد 39 دی. لومړی حد او ګډ توپیر پیدا کړئ. د ترتیب تکراري فورمول ولیکئ.
+p **Solution:** We know that $a_n=a_1+(n-1)d$ then || **حل:** ہم جانتے ہیں کہ $a_n=a_1+(n-1)d$ تب || **حل:** پوهېږو چې $a_n=a_1+(n-1)d$ نو
+m $a_8=a_1+7d=75\quad$ (i) and $a_{20}=a_1+19d=39\quad$ (ii)
+p Subtracting (ii) from (i), we obtain $-12d=36\Rightarrow d=-3$. From (i) we get $a_1+7(-3)=75$ or $a_1=96$ || (i) میں سے (ii) تفریق کرنے پر $-12d=36\Rightarrow d=-3$ ۔ (i) سے $a_1+7(-3)=75$ یا $a_1=96$ || له (i) څخه (ii) تفریق کوو، $-12d=36\Rightarrow d=-3$. له (i) څخه $a_1+7(-3)=75$ یا $a_1=96$
+m Since $a_n=a_1+(n-1)d=96+(n-1)(-3)=99-3n$
+m $a_{n+1}=99-3(n+1)=99-3n-3=96-3n=(99-3n)-3=a_n-3$
+p $\therefore\ a_{n+1}=a_n-3$, is the required recursive formula for the given arithmetic sequence. || $\therefore\ a_{n+1}=a_n-3$ دی گئی حسابی ترتیب کا مطلوبہ تکراری فارمولا ہے۔ || $\therefore\ a_{n+1}=a_n-3$ د ورکړل شوي حسابي ترتیب غوښتل شوی تکراري فورمول دی.
+endexample

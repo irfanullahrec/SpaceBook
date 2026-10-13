@@ -1,0 +1,29 @@
+@printed 124
+exercise 4.1
+q 1 | Classify the following into finite and infinite sequences. || درج ذیل کو محدود اور لامحدود ترتیبوں میں تقسیم کریں۔ || لاندې په محدودو او بې پایه ترتیبونو ووېشئ.
+qp (i) | $2,4,6,8,\ldots,50$
+qp (ii) | $1,0,1,0,1,\ldots$
+qp (iii) | $\ldots,-4,0,4,8,\ldots,60$
+qp (iv) | $1,-\frac{1}{3},\frac{1}{9},-\frac{1}{27},\ldots,-\frac{1}{2187}$
+q 2 | Find the first four terms of a sequence with the given general terms: || دیے گئے عمومی ارکان والی ترتیب کے پہلے چار ارکان معلوم کریں: || د ورکړل شویو عمومي حدونو لرونکي ترتیب لومړي څلور حدونه پیدا کړئ:
+qp (i) | $\dfrac{n(n+1)}{2}$
+qp (ii) | $(-1)^{n-1}2^{n+1}$
+qp (iii) | $\left(\dfrac{1}{3}\right)^n$
+qp (iv) | $\dfrac{n(n-1)(n-2)}{6}$
+q 3 | Write down the nth term of each sequence as suggested by the pattern. || نمونے کے مطابق ہر ترتیب کا nواں رکن لکھیں۔ || د بڼې له مخې د هر ترتیب nم حد ولیکئ.
+qp (i) | $\frac{1}{2},\frac{2}{3},\frac{3}{4},\frac{4}{5},\ldots$
+qp (ii) | $2,-4,6,-8,10,\ldots$
+qp (iii) | $1,-1,1,-1,\ldots$
+q 4 | Write down the first five terms of each sequence defined recursively. || تکراری طور پر بیان کی گئی ہر ترتیب کے پہلے پانچ ارکان لکھیں۔ || د هر تکراري تعریف شوي ترتیب لومړي پنځه حدونه ولیکئ.
+qp (i) | $a_1=3,\ a_{n+1}=5-a_n$
+qp (ii) | $a_1=3,\ a_{n+1}=\dfrac{a_n}{n}$
+q 5 | Write each of the following series in expanded form. || درج ذیل سلسلوں میں سے ہر ایک کو پھیلی ہوئی شکل میں لکھیں۔ || لاندې هره لړۍ په پراخه بڼه ولیکئ.
+qp (i) | $\sum_{j=1}^{6}(2j-3)$
+qp (ii) | $\sum_{k=1}^{5}(-1)^k2^{k-1}$
+qp (iii) | $\sum_{j=1}^{\infty}\dfrac{1}{2^j}$
+qp (iv) | $\sum_{k=0}^{\infty}\left(\dfrac{3}{2}\right)^k$
+q 6 | Find the Pascal sequences for: (i) $n=5$ (ii) $n=6$ (iii) $n=8$ by using its general recursive definition. || عمومی تکراری تعریف استعمال کر کے پاسکل ترتیبیں معلوم کریں: (i) $n=5$ (ii) $n=6$ (iii) $n=8$ || د عمومي تکراري تعریف په کارولو پاسکال ترتیبونه پیدا کړئ: (i) $n=5$ (ii) $n=6$ (iii) $n=8$
+endexercise
+@sec 4.2 | Arithmetic Sequence (A.P) || حسابی ترتیب (A.P) || حسابي ترتیب (A.P)
+## 4.2 Arithmetic Sequence (A.P) || 4.2 حسابی ترتیب (A.P) || 4.2 حسابي ترتیب (A.P)
+p **4.2.1.** Numbers are said to be in **Arithmetic Sequence (A.S)** or **Arithmetic Progression (A.P)** when its terms increase or decrease by a common difference. Thus each of the following **sequence** forms an Arithmetic Progression: $3, 7, 11, 15,\ldots$; $8, 2, -4, -10,\ldots$; $a, a+d, a+2d, a+3d,\ldots$. The common difference is found by subtracting any term of the series from that which follows it. In the first of the above examples the common difference is 4; in the second it is $-6$; in the third it is $d$. || **4.2.1.** اعداد **حسابی ترتیب (A.S)** یا **حسابی تواتر (A.P)** میں کہلاتے ہیں جب ان کے ارکان ایک مشترک فرق سے بڑھیں یا گھٹیں۔ یوں درج ذیل ہر **ترتیب** حسابی تواتر بناتی ہے: $3, 7, 11, 15,\ldots$ ؛ $8, 2, -4, -10,\ldots$ ؛ $a, a+d, a+2d, a+3d,\ldots$ ۔ مشترک فرق سلسلے کے کسی رکن کو اس کے بعد والے رکن میں سے تفریق کر کے معلوم کیا جاتا ہے۔ اوپر کی پہلی مثال میں مشترک فرق 4، دوسری میں $-6$ اور تیسری میں $d$ ہے۔ || **4.2.1.** عددونه په **حسابي ترتیب (A.S)** یا **حسابي پرمختګ (A.P)** کې ویل کېږي کله چې حدونه یې په یوه ګډ توپیر زیاتېږي یا کمېږي. په دې توګه لاندې هر **ترتیب** حسابي پرمختګ جوړوي: $3, 7, 11, 15,\ldots$؛ $8, 2, -4, -10,\ldots$؛ $a, a+d, a+2d, a+3d,\ldots$. ګډ توپیر د لړۍ د هر حد په تفریق کولو له هغه حد څخه چې ورپسې راځي پیدا کېږي. په پورته لومړۍ بېلګه کې ګډ توپیر 4، په دویمه کې $-6$ او په دریمه کې $d$ دی.

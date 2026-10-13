@@ -1,0 +1,14 @@
+@printed 142
+@issue Example 28: the printed simplification gives $\frac{463}{95}$; $\frac{2}{3}\times\frac{2315}{128}\times\frac{2}{5}=\frac{463}{96}$. Transcribed as printed.
+example 28 | Sum the series $\frac{2}{3}, -1, \frac{3}{2},\ldots$ to 7 terms. || سلسلے $\frac{2}{3}, -1, \frac{3}{2},\ldots$ کو 7 ارکان تک جمع کریں۔ || لړۍ $\frac{2}{3}, -1, \frac{3}{2},\ldots$ تر 7 حدونو پورې جمع کړئ.
+p **Solution:** The common ratio $=-\frac{3}{2}$; hence by formula $\dfrac{a_1(1-r^n)}{1-r}$ || **حل:** مشترک نسبت $=-\frac{3}{2}$ ؛ لہٰذا فارمولے $\dfrac{a_1(1-r^n)}{1-r}$ سے || **حل:** ګډ نسبت $=-\frac{3}{2}$؛ نو د فورمول $\dfrac{a_1(1-r^n)}{1-r}$ له مخې
+m The sum $=\dfrac{\frac{2}{3}\left\{1-\left(-\frac{3}{2}\right)^7\right\}}{1+\frac{3}{2}}=\dfrac{\frac{2}{3}\left\{1+\frac{2187}{128}\right\}}{\frac{5}{2}}=\dfrac{2}{3}\times\dfrac{2315}{128}\times\dfrac{2}{5}=\dfrac{463}{95}$
+endexample
+example 29 | Compute: $2+6+18+54+162+486$ || معلوم کریں: $2+6+18+54+162+486$ || محاسبه کړئ: $2+6+18+54+162+486$
+p **Solution:** In this case $a_1=2;\ r=\frac{6}{2}=3>1,\ n=6$. Substituting the values in $S_n=\dfrac{a_1(r^n-1)}{r-1}$ || **حل:** اس صورت میں $a_1=2;\ r=\frac{6}{2}=3>1,\ n=6$ ۔ قیمتیں $S_n=\dfrac{a_1(r^n-1)}{r-1}$ میں رکھنے سے || **حل:** په دې حالت کې $a_1=2;\ r=\frac{6}{2}=3>1,\ n=6$. قیمتونه په $S_n=\dfrac{a_1(r^n-1)}{r-1}$ کې ږدو
+m $S_6=\dfrac{2(3^6-1)}{3-1}=729-1=728$
+endexample
+example 30 | Given that $a_1=\frac{3}{4},\ a_n=48$ and $S_n=32\frac{1}{4}$, find $r$ and $n$ || دیا گیا ہے کہ $a_1=\frac{3}{4},\ a_n=48$ اور $S_n=32\frac{1}{4}$ ، $r$ اور $n$ معلوم کریں || ورکړل شوي چې $a_1=\frac{3}{4},\ a_n=48$ او $S_n=32\frac{1}{4}$، $r$ او $n$ پیدا کړئ
+m **Solution:** Since $a_1=\dfrac{3}{4},\ a_n=48$. Then $a_1r^{n-1}=48$ and $\dfrac{3}{4}r^{n-1}=48\Rightarrow r^{n-1}=64\quad$ (i)
+m Also, we have $S_n=\dfrac{a_1-ra_n}{1-r}$
+@issue Example 30: $S_n=32\frac{1}{4}=\frac{129}{4}$ but the next page uses $\frac{129}{4}$ consistently

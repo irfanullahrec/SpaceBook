@@ -1,0 +1,17 @@
+@printed 153
+m $a, H_1, H_2, H_3,\ldots,H_n, b$ are in H.P.
+p Then obviously: $\dfrac{1}{a}, \dfrac{1}{H_1}, \dfrac{1}{H_2}, \dfrac{1}{H_3},\ldots,\dfrac{1}{H_n}, \dfrac{1}{b}$ are in A.P with n+2 terms. || تو ظاہر ہے کہ $\dfrac{1}{a}, \dfrac{1}{H_1}, \dfrac{1}{H_2}, \dfrac{1}{H_3},\ldots,\dfrac{1}{H_n}, \dfrac{1}{b}$ حسابی تصاعد میں ہیں جس کے n+2 ارکان ہیں۔ || نو څرګنده ده چې $\dfrac{1}{a}, \dfrac{1}{H_1}, \dfrac{1}{H_2}, \dfrac{1}{H_3},\ldots,\dfrac{1}{H_n}, \dfrac{1}{b}$ په حسابي تصاعد کې دي چې n+2 حدونه لري.
+m $\therefore\ \dfrac{1}{a}+(n+2-1)d=\dfrac{1}{b}$, utilizing $a_n=a_1+(n-1)d\ \Rightarrow\ d=\dfrac{a-b}{ab(n+1)}$
+m Thus $\dfrac{1}{H_1}=\dfrac{1}{a}+\dfrac{a-b}{ab(n+1)}$ or $H_1=\dfrac{ab(n+1)}{nb+a}$
+m $\dfrac{1}{H_2}=\dfrac{1}{a}+2\dfrac{a-b}{ab(n+1)}$ or $H_2=\dfrac{ab(n+1)}{(n-1)b+2a}$
+m $\dfrac{1}{H_3}=\dfrac{1}{a}+3\dfrac{a-b}{ab(n+1)}$ or $H_3=\dfrac{ab(n+1)}{(n-2)b+3a}$
+m $\vdots$
+m $\dfrac{1}{H_n}=\dfrac{1}{a}+n\dfrac{a-b}{ab(n+1)}$ or $H_n=\dfrac{ab(n+1)}{b+na}$
+p by using $\dfrac{1}{H_i}=a_1+id,\ i=1,2,3,\ldots,n$. Hence $H_1, H_2, H_3,\ldots,H_n$, are the n H.Ms between $a$ and $b$. || $\dfrac{1}{H_i}=a_1+id,\ i=1,2,3,\ldots,n$ استعمال کر کے۔ لہٰذا $H_1, H_2, H_3,\ldots,H_n$ ، $a$ اور $b$ کے درمیان n ہارمونک اوسط ہیں۔ || د $\dfrac{1}{H_i}=a_1+id,\ i=1,2,3,\ldots,n$ په کارولو سره. نو $H_1, H_2, H_3,\ldots,H_n$ د $a$ او $b$ ترمنځ n هارمونیک منځني دي.
+example 43 | Find the harmonic mean of 24 and 16 || 24 اور 16 کا ہارمونک اوسط معلوم کریں || د 24 او 16 هارمونیک منځنی پیدا کړئ
+m **Solution:** $H=\dfrac{2ab}{a+b}$, where $a=24,\ b=16$
+m Then $H=\dfrac{2(24)(16)}{24+16}=\dfrac{2\times24\times16}{40}=\dfrac{96}{5}$
+endexample
+example 44 | Insert four harmonic means between $-\frac{1}{2}$ and $\frac{1}{13}$. || $-\frac{1}{2}$ اور $\frac{1}{13}$ کے درمیان چار ہارمونک اوسط داخل کریں۔ || د $-\frac{1}{2}$ او $\frac{1}{13}$ ترمنځ څلور هارمونیک منځني ورګډ کړئ.
+p **Solution:** Let $H_1, H_2, H_3$ and $H_4$ be the required H.Ms, then $-\dfrac{1}{2}, H_1, H_2, H_3, H_4, \dfrac{1}{13}$ are in H.P || **حل:** فرض کریں $H_1, H_2, H_3$ اور $H_4$ مطلوبہ ہارمونک اوسط ہیں، تو $-\dfrac{1}{2}, H_1, H_2, H_3, H_4, \dfrac{1}{13}$ ہارمونک تصاعد میں ہیں || **حل:** فرض کړئ $H_1, H_2, H_3$ او $H_4$ غوښتل شوي هارمونیک منځني دي، نو $-\dfrac{1}{2}, H_1, H_2, H_3, H_4, \dfrac{1}{13}$ په هارمونیک تصاعد کې دي
+m $\therefore\ -2, \dfrac{1}{H_1}, \dfrac{1}{H_2}, \dfrac{1}{H_3}, \dfrac{1}{H_4}, 13$ are in A.P

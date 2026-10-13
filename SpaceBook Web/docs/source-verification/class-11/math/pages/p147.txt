@@ -1,0 +1,23 @@
+@printed 147
+@issue Section number printed as "7.4" (cropped); read 4.7.4
+example 34 | The sum of an infinite number of terms in G.P. is 15, and the sum of their squares is 45. Find the series. || ہندسی تصاعد کے لامتناہی ارکان کا مجموعہ 15 ہے اور ان کے مربعوں کا مجموعہ 45 ہے۔ سلسلہ معلوم کریں۔ || په هندسي تصاعد کې د نامحدودو حدونو مجموعه 15 ده او د هغوی د مربعګانو مجموعه 45 ده. لړۍ پیدا کړئ.
+p **Solution:** Let $a$ denote the first term, $r$ the common ratio; then the sum of the terms is $\dfrac{a}{1-r}$; and the sum of their squares is $\dfrac{a^2}{1-r^2}$. || **حل:** فرض کریں $a$ پہلا رکن اور $r$ مشترک نسبت ہے؛ تو ارکان کا مجموعہ $\dfrac{a}{1-r}$ اور ان کے مربعوں کا مجموعہ $\dfrac{a^2}{1-r^2}$ ہے۔ || **حل:** فرض کړئ $a$ لومړی حد او $r$ ګډ نسبت دی؛ نو د حدونو مجموعه $\dfrac{a}{1-r}$ او د مربعګانو مجموعه $\dfrac{a^2}{1-r^2}$ ده.
+m Hence $\dfrac{a}{1-r}=15\quad(1)$ and $\dfrac{a^2}{1-r^2}=45\quad(2)$
+m Dividing (2) by (1): $\dfrac{a}{1+r}=3\quad(3)$
+m And from (1) and (3): $\dfrac{1+r}{1-r}=5\ \Rightarrow\ r=\dfrac{2}{3}$, and therefore $a=5$.
+m Thus the series is $5, \dfrac{10}{3}, \dfrac{20}{9},\ldots$
+endexample
+example 35 | Find the sum of the infinite geometric sequence: $1, \frac{1}{3}, \frac{1}{9},\ldots,\frac{1}{3^n},\ldots$ || لامتناہی ہندسی ترتیب کا مجموعہ معلوم کریں: $1, \frac{1}{3}, \frac{1}{9},\ldots,\frac{1}{3^n},\ldots$ || د نامحدود هندسي ترتیب مجموعه پیدا کړئ: $1, \frac{1}{3}, \frac{1}{9},\ldots,\frac{1}{3^n},\ldots$
+m **Solution:** Here $a_1=1,\ r=\dfrac{1}{3}$ and $|r|=\dfrac{1}{3}<1$
+p Thus the sum exists and is given by the formula: || لہٰذا مجموعہ موجود ہے اور فارمولے سے دیا جاتا ہے: || نو مجموعه شته او د فورمول له مخې ورکول کېږي:
+m $S_\infty=\dfrac{a_1}{1-r}=\dfrac{1}{1-\frac{1}{3}}=\dfrac{3}{2}$
+endexample
+@sec 4.7.4 | Conversion of recurring Decimals into an equivalent fraction || دہرائی جانے والی اعشاریہ کو مساوی کسر میں تبدیل کرنا || د تکراري اعشاریو مساوي کسر ته اړول
+### 4.7.4 Conversion of recurring Decimals into an equivalent fraction || 4.7.4 دہرائی جانے والی اعشاریہ کو مساوی کسر میں تبدیل کرنا || 4.7.4 د تکراري اعشاریو مساوي کسر ته اړول
+p Recurring decimals furnish a good illustration of infinite Geometrical Progressions. || دہرائی جانے والی اعشاریہ لامتناہی ہندسی تصاعد کی اچھی مثال پیش کرتی ہیں۔ || تکراري اعشاریې د نامحدودو هندسي تصاعدونو ښه بېلګه وړاندې کوي.
+example 36 | Convert $2.3\overline{4}$ to a common fraction. || $2.3\overline{4}$ کو عام کسر میں تبدیل کریں۔ || $2.3\overline{4}$ په عادي کسر بدل کړئ.
+m **Solution:** Since $2.3\overline{4}=2.3+0.0\overline{4}=\dfrac{23}{10}+0.04444\ldots$
+m $=\dfrac{23}{10}+0.04+0.004+0.0004+\cdots$
+m $=\dfrac{23}{10}+\left(\dfrac{a_1}{1-r}\right),\ a_1=0.04,\ |r|=0.1<1$
+m $=\dfrac{23}{10}+\left(\dfrac{0.04}{1-0.1}\right)=\dfrac{23}{10}+\dfrac{4}{90}=\dfrac{211}{90}$
+endexample

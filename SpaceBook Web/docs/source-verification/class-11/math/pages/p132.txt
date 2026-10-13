@@ -1,0 +1,17 @@
+@printed 132
+@issue Example 18 asks for 9 years but the printed working sums 10 terms ($S_{10}$, $a_1$ to $a_{10}$); transcribed as printed
+m Which gives $S_{50}=\dfrac{50}{2}(105+595)=25(700)=17500$
+endexample
+@sec 4.4.3 | Relation of A.M of two numbers with n A.Ms between them || دو اعداد کے حسابی اوسط کا ان کے درمیان n حسابی اوسطوں سے تعلق || د دوو عددونو د حسابي منځني اړیکه د هغوی ترمنځ له n حسابي منځنیو سره
+### 4.4.3 Relation of A.M of two numbers with n A.Ms between them || 4.4.3 دو اعداد کے حسابی اوسط کا ان کے درمیان n حسابی اوسطوں سے تعلق || 4.4.3 د دوو عددونو د حسابي منځني اړیکه د هغوی ترمنځ له n حسابي منځنیو سره
+p **Theorem:** The sum of n arithmetic means between two numbers is equal to n times their arithmetic mean. || **مسئلہ:** دو اعداد کے درمیان n حسابی اوسطوں کا مجموعہ ان کے حسابی اوسط کے n گنا کے برابر ہے۔ || **قضیه:** د دوو عددونو ترمنځ د n حسابي منځنیو مجموعه د هغوی د حسابي منځني له n چنده سره برابره ده.
+p **Proof:** Let there be n arithmetic means between $a$ and $b$ such that $a, a+d, a+2d,\ldots,a+nd, b$ forms an arithmetic sequence with $n+2$ terms. Then || **ثبوت:** فرض کریں $a$ اور $b$ کے درمیان n حسابی اوسط ایسے ہیں کہ $a, a+d, a+2d,\ldots,a+nd, b$ ، $n+2$ ارکان کی حسابی ترتیب بناتے ہیں۔ تب || **ثبوت:** فرض کړئ د $a$ او $b$ ترمنځ n حسابي منځني داسې دي چې $a, a+d, a+2d,\ldots,a+nd, b$ د $n+2$ حدونو حسابي ترتیب جوړوي. نو
+m $a+(a+d)+(a+2d)+\cdots+(a+nd)+b=\dfrac{n+2}{2}[2a+(n+2-1)d]=\dfrac{n+2}{2}[a+\{a+(n+1)d\}]=\dfrac{n+2}{2}[a+b],\ b=a+(n+1)d$
+m $(a+d)+(a+2d)+\cdots+(a+nd)=\dfrac{n+2}{2}(a+b)-(a+b)=(a+b)\left[\dfrac{n+2}{2}-1\right]=n\left(\dfrac{a+b}{2}\right)$
+p Thus the sum of n arithmetic means $=$ n (arithmetic mean) || یوں n حسابی اوسطوں کا مجموعہ $=$ n (حسابی اوسط) || په دې توګه د n حسابي منځنیو مجموعه $=$ n (حسابي منځنی)
+@sec 4.4.4 | Real life problems involving arithmetic series || حسابی سلسلے والے حقیقی زندگی کے مسائل || د حسابي لړۍ د ورځني ژوند پوښتنې
+### 4.4.4 Real life problems involving arithmetic series || 4.4.4 حسابی سلسلے والے حقیقی زندگی کے مسائل || 4.4.4 د حسابي لړۍ د ورځني ژوند پوښتنې
+example 18 | Finding the sum of a finite arithmetic series. A person has a starting annual salary of Rs.300,000 and receives a 1500 raise each year. (a) Calculate the total amount earned over 9 years. (b) Verify this value using a calculator. || محدود حسابی سلسلے کا مجموعہ معلوم کرنا۔ ایک شخص کی ابتدائی سالانہ تنخواہ 300,000 روپے ہے اور اسے ہر سال 1500 اضافہ ملتا ہے۔ (a) 9 سالوں میں کمائی گئی کل رقم معلوم کریں۔ (b) کیلکولیٹر سے اس قیمت کی تصدیق کریں۔ || د محدودې حسابي لړۍ د مجموعې پیدا کول. یو کس پیل کې کلنی معاش 300,000 روپۍ لري او هر کال 1500 زیاتوالی ترلاسه کوي. (a) په 9 کلونو کې ټوله ګټل شوې پیسه محاسبه کړئ. (b) دا قیمت د کیلکولېټر په مرسته تصدیق کړئ.
+m **Solution:** (a) Using $S_n=\dfrac{n}{2}\{2a_1+(n-1)d\}$, $S_{10}=\dfrac{10}{2}\{2\times300000+(10-1)1500\}=3{,}067{,}500$
+m (b) To verify this result with a calculator, compute the sum $a_1+a_2+a_3+\cdots+a_{10}=300000+301500+303000+304500+306000+307500+309000+310500+312000+313500=3{,}067{,}500$
+endexample

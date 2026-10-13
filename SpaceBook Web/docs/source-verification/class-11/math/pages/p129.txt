@@ -1,0 +1,16 @@
+@printed 129
+@sec 4.4.2 | Sum of first n terms of an Arithmetic Series || حسابی سلسلے کے پہلے n ارکان کا مجموعہ || د حسابي لړۍ د لومړیو n حدونو مجموعه
+### 4.4.2 Sum of first n terms of an Arithmetic Series || 4.4.2 حسابی سلسلے کے پہلے n ارکان کا مجموعہ || 4.4.2 د حسابي لړۍ د لومړیو n حدونو مجموعه
+p The next result gives a formula for finding the sum of the first n terms of an arithmetic sequence. || اگلا نتیجہ حسابی ترتیب کے پہلے n ارکان کا مجموعہ معلوم کرنے کا فارمولا دیتا ہے۔ || راتلونکې پایله د حسابي ترتیب د لومړیو n حدونو د مجموعې د پیدا کولو فورمول ورکوي.
+p **Theorem:** For an arithmetic sequence $\{a_n\}$, the sum $S_n$ of the first n terms is given by $S_n=\dfrac{n}{2}[2a_1+(n-1)d]=\dfrac{n}{2}(a_1+a_n)$ || **مسئلہ:** حسابی ترتیب $\{a_n\}$ کے لیے پہلے n ارکان کا مجموعہ $S_n$ یہ ہے $S_n=\dfrac{n}{2}[2a_1+(n-1)d]=\dfrac{n}{2}(a_1+a_n)$ || **قضیه:** د حسابي ترتیب $\{a_n\}$ لپاره د لومړیو n حدونو مجموعه $S_n$ دا ده $S_n=\dfrac{n}{2}[2a_1+(n-1)d]=\dfrac{n}{2}(a_1+a_n)$
+p **Proof:** The sum of the first n terms of an arithmetic sequence is denoted by $S_n$. Let $S_n=a_1+a_2+a_3+\cdots+a_n$. Since $d$ is the common difference between terms, $S_n$ can be written forward and backward as follows. || **ثبوت:** حسابی ترتیب کے پہلے n ارکان کا مجموعہ $S_n$ سے ظاہر کیا جاتا ہے۔ فرض کریں $S_n=a_1+a_2+a_3+\cdots+a_n$ ۔ چونکہ $d$ ارکان کے درمیان مشترک فرق ہے، $S_n$ کو آگے اور پیچھے کی طرف یوں لکھا جا سکتا ہے۔ || **ثبوت:** د حسابي ترتیب د لومړیو n حدونو مجموعه په $S_n$ ښودل کېږي. فرض کړئ $S_n=a_1+a_2+a_3+\cdots+a_n$. ځکه $d$ د حدونو ترمنځ ګډ توپیر دی، $S_n$ مخ ته او شا ته داسې لیکل کېدای شي.
+m Forward (start with the first term $a_1$, keep adding $d$): $S_n=a_1+(a_1+d)+(a_1+2d)+\cdots+a_n$
+m Backward (start with the last term $a_n$, keep subtracting $d$): $S_n=a_n+(a_n-d)+(a_n-2d)+\cdots+a_1$
+m Add the two equations: $2S_n=(a_1+a_n)+(a_1+a_n)+(a_1+a_n)+\cdots+(a_1+a_n)=n$ sums of $(a_1+a_n)$
+m $2S_n=n(a_1+a_n)\Rightarrow S_n=\dfrac{n}{2}(a_1+a_n)$ (solve for $S_n$, dividing both sides by 2)
+m $a_n=a_1+(n-1)d,\quad\therefore\ S_n=\dfrac{n}{2}\{a_1+a_1+(n-1)d\}\quad\therefore\ S_n=\dfrac{n}{2}\{2a_1+(n-1)d\}.$
+example 11 | Finding the sum of a finite arithmetic series. Use a formula to find the sum of the arithmetic series $2+4+6+8+\cdots+100$. || محدود حسابی سلسلے کا مجموعہ معلوم کرنا۔ فارمولا استعمال کر کے حسابی سلسلے $2+4+6+8+\cdots+100$ کا مجموعہ معلوم کریں۔ || د محدودې حسابي لړۍ د مجموعې پیدا کول. د فورمول په کارولو د حسابي لړۍ $2+4+6+8+\cdots+100$ مجموعه پیدا کړئ.
+p **Solution:** The series $2+4+6+8+\cdots+100$ has $n=50$ terms with $a_1=2$ and $a_{50}=100$. We can use the formula $S_n=\frac{n}{2}(a_1+a_n)$ to find its sum. || **حل:** سلسلے $2+4+6+8+\cdots+100$ کے $n=50$ ارکان ہیں جن میں $a_1=2$ اور $a_{50}=100$ ۔ اس کا مجموعہ معلوم کرنے کے لیے ہم فارمولا $S_n=\frac{n}{2}(a_1+a_n)$ استعمال کر سکتے ہیں۔ || **حل:** لړۍ $2+4+6+8+\cdots+100$ $n=50$ حدونه لري چې $a_1=2$ او $a_{50}=100$. د مجموعې د پیدا کولو لپاره فورمول $S_n=\frac{n}{2}(a_1+a_n)$ کارولی شو.
+m $S_{50}=\dfrac{50}{2}(2+100)=2550$
+m We can also use the formula $S_n=\dfrac{n}{2}\{2a_1+(n-1)d\}$: $S_{50}=50/2\,(2(2)+(50-1)2)=2550$
+endexample

@@ -1,0 +1,16 @@
+@printed 136
+m 4th term $=a_4=a_3r=a_1r^3=a_1r^{4-1}$
+m $\vdots$
+m nth term $=a_n=a_1r^{n-1}$
+example 21 | Find the first five terms and the tenth term of the geometric sequence having first term 3 and common ratio $-\frac{1}{2}$. || اس ہندسی ترتیب کے پہلے پانچ ارکان اور دسواں رکن معلوم کریں جس کا پہلا رکن 3 اور مشترک نسبت $-\frac{1}{2}$ ہو۔ || د هغه هندسي ترتیب لومړي پنځه حدونه او لسم حد پیدا کړئ چې لومړی حد یې 3 او ګډ نسبت یې $-\frac{1}{2}$ وي.
+p **Solution:** Here $a_1=3,\ r=-\frac{1}{2}$. Then the first five terms are $3, -\frac{3}{2}, \frac{3}{4}, -\frac{3}{8}, \frac{3}{16}$ || **حل:** یہاں $a_1=3,\ r=-\frac{1}{2}$ ۔ تب پہلے پانچ ارکان $3, -\frac{3}{2}, \frac{3}{4}, -\frac{3}{8}, \frac{3}{16}$ ہیں || **حل:** دلته $a_1=3,\ r=-\frac{1}{2}$. نو لومړي پنځه حدونه $3, -\frac{3}{2}, \frac{3}{4}, -\frac{3}{8}, \frac{3}{16}$ دي
+m Substituting the values in the formula $a_n=a_1r^{n-1}$ we have $a_{10}=(3)\left(-\frac{1}{2}\right)^{10-1}$ with $n=10$
+m $=3\left(-\frac{1}{2}\right)^9=-\dfrac{3}{512}$
+endexample
+example 22 | Show that the sequence $\{a_n\}=2^{-n}$ is geometric and find its common ratio. || دکھائیں کہ ترتیب $\{a_n\}=2^{-n}$ ہندسی ہے اور اس کی مشترک نسبت معلوم کریں۔ || وښایئ چې ترتیب $\{a_n\}=2^{-n}$ هندسي دی او ګډ نسبت یې پیدا کړئ.
+m **Solution:** Since $a_n=2^{-n}$ then $a_{n+1}=2^{-(n+1)}$ and $r=\dfrac{a_{n+1}}{a_n}=\dfrac{2^{-(n+1)}}{2^{-n}}=\dfrac{1}{2}$
+p The ratio of successive terms is a nonzero number independent of $n$, thus $\{a_n\}$ is geometric sequence with $r=\frac{1}{2}$ || متواتر ارکان کی نسبت $n$ سے آزاد ایک غیر صفر عدد ہے، لہٰذا $\{a_n\}$ ، $r=\frac{1}{2}$ والی ہندسی ترتیب ہے || د پرله پسې حدونو نسبت له $n$ څخه خپلواک یو غیر صفر عدد دی، نو $\{a_n\}$ د $r=\frac{1}{2}$ هندسي ترتیب دی
+endexample
+example 23 | If the third term of a geometric sequence is 5 and the sixth term is $-40$, find the eighth term. || اگر ہندسی ترتیب کا تیسرا رکن 5 اور چھٹا رکن $-40$ ہو تو آٹھواں رکن معلوم کریں۔ || که د یو هندسي ترتیب دریم حد 5 او شپږم حد $-40$ وي، اتم حد پیدا کړئ.
+m **Solution:** Here $a_3=5$ and $a_6=-40$ then, we have $a_1r^{3-1}=5$ and $a_1r^{6-1}=-40$
+m or $a_1r^2=5\quad$ (i) and $a_1r^5=-40\quad$ (ii)

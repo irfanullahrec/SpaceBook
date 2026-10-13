@@ -1,0 +1,20 @@
+@printed 140
+@deco footer stamp "Not For Sale"
+q 10 | Find two numbers if the difference between them is 48 and their A.M. exceeds their G.M. by 18. || دو اعداد معلوم کریں اگر ان کا فرق 48 ہو اور ان کا حسابی اوسط ہندسی اوسط سے 18 زیادہ ہو۔ || دوه عددونه پیدا کړئ که توپیر یې 48 وي او حسابي منځنی یې له هندسي منځني څخه 18 زیات وي.
+q 11 | Prove that the product of n geometric means between $a$ and $b$ is equal to the nth power of the single geometric mean between them. || ثابت کریں کہ $a$ اور $b$ کے درمیان n ہندسی اوسطوں کا حاصلِ ضرب ان کے درمیان ایک ہندسی اوسط کی nویں قوت کے برابر ہے۔ || ثابت کړئ چې د $a$ او $b$ ترمنځ د n هندسي منځنیو حاصل ضرب د هغوی ترمنځ د یو هندسي منځني له nم توان سره برابر دی.
+q 12 | For what value of $n$, $\dfrac{a^{n+1}+b^{n+1}}{a^n+b^n}$ is the geometric mean between $a$ and $b$? || $n$ کی کس قیمت کے لیے $\dfrac{a^{n+1}+b^{n+1}}{a^n+b^n}$ ، $a$ اور $b$ کے درمیان ہندسی اوسط ہے؟ || د $n$ په کوم قیمت $\dfrac{a^{n+1}+b^{n+1}}{a^n+b^n}$ د $a$ او $b$ ترمنځ هندسي منځنی دی؟
+endexercise
+@sec 4.7 | Geometric Series || ہندسی سلسلہ || هندسي لړۍ
+## 4.7 Geometric Series || 4.7 ہندسی سلسلہ || 4.7 هندسي لړۍ
+p **4.7.1** Since with any geometric sequence we have an associated geometric series, which is the indicated sum of the terms of the geometric sequence. Let $\{a_n\}$ is a geometric sequence, then $\sum_{i=1}^{\infty}a_i=a_1+a_2+\cdots+a_n+\cdots$ is called a geometric series. If $r$ is the common ratio, then the above series can be written in the form $\sum_{i=1}^{\infty}a_1r^{i-1}=a_1+a_1r+a_1r^2+\cdots+a_1r^{n-1}+\cdots\quad(1)$ known as the general form of the geometric series. || **4.7.1** چونکہ ہر ہندسی ترتیب سے ایک ہندسی سلسلہ وابستہ ہے جو ہندسی ترتیب کے ارکان کا ظاہر کردہ مجموعہ ہے۔ فرض کریں $\{a_n\}$ ہندسی ترتیب ہے تو $\sum_{i=1}^{\infty}a_i=a_1+a_2+\cdots+a_n+\cdots$ ہندسی سلسلہ کہلاتا ہے۔ اگر $r$ مشترک نسبت ہو تو اوپر کے سلسلے کو یوں لکھا جا سکتا ہے $\sum_{i=1}^{\infty}a_1r^{i-1}=a_1+a_1r+a_1r^2+\cdots+a_1r^{n-1}+\cdots\quad(1)$ جسے ہندسی سلسلے کی عمومی شکل کہتے ہیں۔ || **4.7.1** ځکه له هر هندسي ترتیب سره یوه هندسي لړۍ تړلې ده چې د هندسي ترتیب د حدونو ښودل شوې مجموعه ده. فرض کړئ $\{a_n\}$ هندسي ترتیب دی، نو $\sum_{i=1}^{\infty}a_i=a_1+a_2+\cdots+a_n+\cdots$ هندسي لړۍ بلل کېږي. که $r$ ګډ نسبت وي، پورته لړۍ داسې لیکل کېدای شي $\sum_{i=1}^{\infty}a_1r^{i-1}=a_1+a_1r+a_1r^2+\cdots+a_1r^{n-1}+\cdots\quad(1)$ چې د هندسي لړۍ عمومي بڼه بلل کېږي.
+@sec 4.7.2 | Sum of first n terms of a Geometric Series || ہندسی سلسلے کے پہلے n ارکان کا مجموعہ || د هندسي لړۍ د لومړیو n حدونو مجموعه
+### 4.7.2 Sum of first n terms of a Geometric Series || 4.7.2 ہندسی سلسلے کے پہلے n ارکان کا مجموعہ || 4.7.2 د هندسي لړۍ د لومړیو n حدونو مجموعه
+p **Theorem:** For a geometric sequence with first term $a_1$ and common ratio $r\neq1$, the sum $S_n$ of the first n terms is: $S_n=\dfrac{a_1(1-r^n)}{1-r}\quad(2)$ || **مسئلہ:** پہلے رکن $a_1$ اور مشترک نسبت $r\neq1$ والی ہندسی ترتیب کے پہلے n ارکان کا مجموعہ $S_n$ یہ ہے: $S_n=\dfrac{a_1(1-r^n)}{1-r}\quad(2)$ || **قضیه:** د لومړي حد $a_1$ او ګډ نسبت $r\neq1$ لرونکي هندسي ترتیب د لومړیو n حدونو مجموعه $S_n$ دا ده: $S_n=\dfrac{a_1(1-r^n)}{1-r}\quad(2)$
+p **Proof:** || **ثبوت:** || **ثبوت:**
+m Let $S_n=a_1+a_1r+a_1r^2+\cdots+a_1r^{n-1}$
+m $S_n=a_1+a_1r+a_1r^2+\cdots+a_1r^{n-2}+a_1r^{n-1}$ ($S_n$ is the sum of the first n terms of the sequence.)
+m $rS_n=a_1r+a_1r^2+a_1r^3+\cdots+a_1r^{n-1}+a_1r^n$ (Multiply both sides of the equation by $r$.)
+m $S_n-rS_n=a_1-a_1r^n$ (Subtract the second equation from the first equation)
+m $S_n(1-r)=a_1(1-r^n)$ (Factor out $S_n$ on the left and $a_1$ on the right.)
+m $S_n=\dfrac{a_1(1-r^n)}{1-r}$ (Solve for $S_n$ by dividing both sides by $1-r$, assuming that $r\neq1$).
+p which is the required sum of the first n terms of a geometric sequence. || جو ہندسی ترتیب کے پہلے n ارکان کا مطلوبہ مجموعہ ہے۔ || چې د هندسي ترتیب د لومړیو n حدونو غوښتل شوې مجموعه ده.

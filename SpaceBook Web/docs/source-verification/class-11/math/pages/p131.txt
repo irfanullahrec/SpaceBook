@@ -1,0 +1,21 @@
+@printed 131
+m $=77$
+m $S_n=\dfrac{n}{2}(a_1+a_n)$
+m $S_{18}=\dfrac{18}{2}(-8+77)$ putting values of $a_1$ & $a_n$
+m $=9(69)=621$
+endexample
+example 16 | The 10th term of an arithmetic sequence is 32 and the $18^{th}$ term is 48, what is the sum of the first twelve terms? || حسابی ترتیب کا 10واں رکن 32 اور 18واں رکن 48 ہے، پہلے بارہ ارکان کا مجموعہ کیا ہے؟ || د یو حسابي ترتیب 10م حد 32 او 18م حد 48 دی، د لومړیو دولسو حدونو مجموعه څومره ده؟
+p **Solution:** Let $a_1$ be the first term, $d$ be the common difference and $n$ be the number of terms of the given arithmetic sequence. Then $a_{10}=32,\ a_{18}=48$ || **حل:** فرض کریں $a_1$ پہلا رکن، $d$ مشترک فرق اور $n$ دی گئی حسابی ترتیب کے ارکان کی تعداد ہے۔ تب $a_{10}=32,\ a_{18}=48$ || **حل:** فرض کړئ $a_1$ لومړی حد، $d$ ګډ توپیر او $n$ د ورکړل شوي حسابي ترتیب د حدونو شمېر دی. نو $a_{10}=32,\ a_{18}=48$
+m $a_1+(10-1)d=32,\quad a_1+(18-1)d=48$
+m $a_1+9d=32\quad$ (i)
+m $a_1+17d=48\quad$ (ii)
+m Subtracting (i) from (ii) we obtain $8d=16\Rightarrow d=2$
+m (i) gives that $a_1+18=32\Rightarrow a_1=14$
+m Now $S_n=\dfrac{n}{2}\{2a_1+(n-1)d\}$
+m $S_{12}=\dfrac{12}{2}\{2(14)+11(2)\}=6\{28+22\}=300$
+endexample
+example 17 | Find the sum of all the integers lying between 100 and 600 that end in 5. || 100 اور 600 کے درمیان 5 پر ختم ہونے والے تمام صحیح اعداد کا مجموعہ معلوم کریں۔ || د 100 او 600 ترمنځ د ټولو هغو صحیح عددونو مجموعه پیدا کړئ چې په 5 پای ته رسېږي.
+p **Solution:** The integers lying between 100 and 600 that end in 5 are $105, 115, 125,\ldots, 595$ which form an arithmetic sequence with $a_1=105,\ d=10,\ a_n=595$ then || **حل:** 100 اور 600 کے درمیان 5 پر ختم ہونے والے صحیح اعداد $105, 115, 125,\ldots, 595$ ہیں جو $a_1=105,\ d=10,\ a_n=595$ کے ساتھ حسابی ترتیب بناتے ہیں، تب || **حل:** د 100 او 600 ترمنځ هغه صحیح عددونه چې په 5 پای ته رسېږي $105, 115, 125,\ldots, 595$ دي چې د $a_1=105,\ d=10,\ a_n=595$ سره حسابي ترتیب جوړوي، نو
+m $a_n=a_1+(n-1)d\Rightarrow595=105+10n-10$
+m $10n=595-105+10=500\Rightarrow n=50$
+m Since $S_n=\dfrac{n}{2}(a_1+a_n)$

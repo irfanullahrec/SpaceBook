@@ -1,0 +1,15 @@
+@printed 141
+@issue Example 27(b): the printed value of $S_8$ is $-255$; with $a_1=3$ the formula gives $3\cdot\frac{1-256}{3}=-255$ (correct). The Remember box (i) is partly faded and is restored as $S_n=\frac{a_1(1-r^n)}{1-r}$.
+m Since $S_n=\dfrac{a_1(1-r^n)}{1-r}=\dfrac{a_1-a_1r^n}{1-r}=\dfrac{a_1-(a_1r^{n-1})r}{1-r}$
+m $=\dfrac{a_1-a_nr}{1-r},\ a_n=a_1r^{n-1}$ is the last term
+m $=\dfrac{a_1-a_nr}{1-r},\ r\neq1\qquad(3)$
+p is the alternative form of the result given in (2) || (2) میں دیے گئے نتیجے کی متبادل شکل ہے || په (2) کې د ورکړل شوې پایلې بدیله بڼه ده
+box note | Remember || یاد رکھیں || په یاد ولرئ
+p (i) It is better to use the forms $S_n=\dfrac{a_1(1-r^n)}{1-r}$ and $S_n=\dfrac{a_1-a_nr}{1-r}$, whenever $|r|<1$ (ii) If $|r|>1$ then the following forms are used $S_n=\dfrac{a_1(r^n-1)}{r-1}$ and $S_n=\dfrac{a_nr-a_1}{r-1}$ because the numerators and denominators are positive. (iii) If $r=1$, we have the trivial geometric series: $S_n=a_1+a_1+\cdots+a_1=na_1$ || (i) جب بھی $|r|<1$ ہو تو بہتر ہے کہ $S_n=\dfrac{a_1(1-r^n)}{1-r}$ اور $S_n=\dfrac{a_1-a_nr}{1-r}$ شکلیں استعمال کریں (ii) اگر $|r|>1$ ہو تو یہ شکلیں استعمال ہوتی ہیں $S_n=\dfrac{a_1(r^n-1)}{r-1}$ اور $S_n=\dfrac{a_nr-a_1}{r-1}$ کیونکہ شمار کنندہ اور نسب نما مثبت ہوتے ہیں۔ (iii) اگر $r=1$ ہو تو ہمارے پاس معمولی ہندسی سلسلہ ہے: $S_n=a_1+a_1+\cdots+a_1=na_1$ || (i) هرکله چې $|r|<1$ وي، غوره ده چې $S_n=\dfrac{a_1(1-r^n)}{1-r}$ او $S_n=\dfrac{a_1-a_nr}{1-r}$ بڼې وکارول شي (ii) که $|r|>1$ وي، دا بڼې کارول کېږي $S_n=\dfrac{a_1(r^n-1)}{r-1}$ او $S_n=\dfrac{a_nr-a_1}{r-1}$ ځکه صورتونه او مخرجونه مثبت دي. (iii) که $r=1$ وي، عادي هندسي لړۍ لرو: $S_n=a_1+a_1+\cdots+a_1=na_1$
+endbox
+example 27 | Approximate the sum for the given values of n. (a) $1+1/2+1/4+\cdots+(1/2)^{n-1}$; $n=5, 10$, and 20 (b) $3-6+12-24+48-\cdots+3(-2)^{n-1}$; $n=3, 8$, and 13 || n کی دی گئی قیمتوں کے لیے مجموعے کا تخمینہ لگائیں۔ (a) $1+1/2+1/4+\cdots+(1/2)^{n-1}$ ؛ $n=5, 10$ اور 20 (b) $3-6+12-24+48-\cdots+3(-2)^{n-1}$ ؛ $n=3, 8$ اور 13 || د n د ورکړل شویو قیمتونو لپاره مجموعه اټکل کړئ. (a) $1+1/2+1/4+\cdots+(1/2)^{n-1}$؛ $n=5, 10$ او 20 (b) $3-6+12-24+48-\cdots+3(-2)^{n-1}$؛ $n=3, 8$ او 13
+p **Solution:** (a) This geometric series has $a_1=1$ and $r=\frac{1}{2}=0.5$. || **حل:** (a) اس ہندسی سلسلے میں $a_1=1$ اور $r=\frac{1}{2}=0.5$ ۔ || **حل:** (a) دا هندسي لړۍ $a_1=1$ او $r=\frac{1}{2}=0.5$ لري.
+m $S_5=\dfrac{1(1-0.5^5)}{1-0.5}=1.9375,\quad S_{10}=\dfrac{1(1-0.5^{10})}{1-0.5}=1.998047,\quad S_{20}=\dfrac{1(1-0.5^{20})}{1-0.5}=1.999998$
+m (b) This geometric series has $a_1=3$ and $r=\dfrac{-6}{3}=-2$
+m $S_3=\dfrac{3(1-(-2)^3)}{1-(-2)}=9,\quad S_8=\dfrac{3(1-(-2)^8)}{1-(-2)}=-255,\quad S_{13}=\dfrac{3(1-(-2)^{13})}{1-(-2)}=8193$
+endexample

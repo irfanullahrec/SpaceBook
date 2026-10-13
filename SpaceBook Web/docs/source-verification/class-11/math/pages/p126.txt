@@ -1,0 +1,17 @@
+@printed 126
+@sec 4.3 | Arithmetic Mean (A.M) || حسابی اوسط (A.M) || حسابي منځنی (A.M)
+## 4.3 Arithmetic Mean (A.M) || 4.3 حسابی اوسط (A.M) || 4.3 حسابي منځنی (A.M)
+p **4.3.1** When three numbers are in Arithmetic Progression, the middle one is said to be the arithmetic mean of the other two. Thus arithmetic mean of two numbers $a$ and $b$ is $\dfrac{a+b}{2}$, where $a$ and $b$ are called the extremes. Mathematically, it is derived in the following way: Let A be the arithmetic mean between two numbers $a$ and $b$, then $a, A, b$, form an arithmetic sequence. By definition, we have || **4.3.1** جب تین اعداد حسابی تواتر میں ہوں تو درمیانی عدد کو باقی دو کا حسابی اوسط کہتے ہیں۔ یوں دو اعداد $a$ اور $b$ کا حسابی اوسط $\dfrac{a+b}{2}$ ہے، جہاں $a$ اور $b$ کو انتہائیں کہتے ہیں۔ ریاضیاتی طور پر اسے یوں اخذ کیا جاتا ہے: فرض کریں A دو اعداد $a$ اور $b$ کے درمیان حسابی اوسط ہے، تب $a, A, b$ حسابی ترتیب بناتے ہیں۔ تعریف کی رو سے ہمارے پاس ہے || **4.3.1** کله چې درې عددونه په حسابي پرمختګ کې وي، منځنی یې د نورو دوو حسابي منځنی ویل کېږي. په دې توګه د دوو عددونو $a$ او $b$ حسابي منځنی $\dfrac{a+b}{2}$ دی، چېرې چې $a$ او $b$ ته انتهاوې وايي. په ریاضي ډول داسې لاسته راځي: فرض کړئ A د دوو عددونو $a$ او $b$ ترمنځ حسابي منځنی دی، نو $a, A, b$ حسابي ترتیب جوړوي. د تعریف له مخې لرو
+m $A-a=b-A\Rightarrow2A=a+b$. Hence $A=\dfrac{a+b}{2}$
+p Thus the arithmetic mean of two numbers is equal to one–half of their sum. || یوں دو اعداد کا حسابی اوسط ان کے مجموعے کے نصف کے برابر ہے۔ || په دې توګه د دوو عددونو حسابي منځنی د هغوی د مجموعې له نیمایي سره برابر دی.
+example 9 | Find the arithmetic mean of $\sqrt{2}-3$ and $\sqrt{2}+3$ || $\sqrt{2}-3$ اور $\sqrt{2}+3$ کا حسابی اوسط معلوم کریں || د $\sqrt{2}-3$ او $\sqrt{2}+3$ حسابي منځنی پیدا کړئ
+m **Solution:** Here $a=\sqrt{2}-3,\ b=\sqrt{2}+3$, $A=\dfrac{a+b}{2}=\dfrac{\sqrt{2}-3+\sqrt{2}+3}{2}=\sqrt{2}$
+endexample
+p Between two given numbers it is always possible to insert any number of terms such that the whole series thus formed shall be an A. P.; the terms thus inserted are called the arithmetic means. || دو دیے گئے اعداد کے درمیان ہمیشہ کتنے ہی ارکان اس طرح داخل کیے جا سکتے ہیں کہ اس طرح بننے والا پورا سلسلہ A.P. ہو؛ اس طرح داخل کیے گئے ارکان کو حسابی اوسط کہتے ہیں۔ || د دوو ورکړل شویو عددونو ترمنځ تل هر شمېر حدونه داسې ورګډولی شو چې جوړه شوې ټوله لړۍ A.P. وي؛ ورګډ شویو حدونو ته حسابي منځني وايي.
+@sec 4.3.2 | Inserting n Arithmetic Means (A.Ms) || n حسابی اوسط داخل کرنا || د n حسابي منځنیو ورګډول
+### 4.3.2 Inserting n Arithmetic Means (A.Ms) || 4.3.2 n حسابی اوسط داخل کرنا || 4.3.2 د n حسابي منځنیو ورګډول
+p Let $A_1, A_2,\ldots,A_n$ be n A.Ms between $a$ and $b$ then $a, A_1, A_2,\ldots,A_n, b$ form a finite arithmetic sequence of $n+2$ terms, that is: || فرض کریں $A_1, A_2,\ldots,A_n$ ، $a$ اور $b$ کے درمیان n حسابی اوسط ہیں تو $a, A_1, A_2,\ldots,A_n, b$ ، $n+2$ ارکان کی محدود حسابی ترتیب بناتے ہیں، یعنی: || فرض کړئ $A_1, A_2,\ldots,A_n$ د $a$ او $b$ ترمنځ n حسابي منځني دي، نو $a, A_1, A_2,\ldots,A_n, b$ د $n+2$ حدونو محدود حسابي ترتیب جوړوي، یعنې:
+m $a_{n+2}=b\Rightarrow a+(n+2-1)d=b$, where $d$ is the common difference
+m $(n+1)d=b-a\quad\therefore\ d=\dfrac{b-a}{n+1}$
+m Thus $A_1=a+d=a+\dfrac{b-a}{n+1},\quad A_2=a+2d=a+2\left(\dfrac{b-a}{n+1}\right),\quad A_3=a+3\left(\dfrac{b-a}{n+1}\right)$
+m Similarly $A_4=a+4\left(\dfrac{b-a}{n+1}\right)$
