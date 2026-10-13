@@ -1,0 +1,20 @@
+@printed 162
+@issue Case (iii): the printed line "$\sum(4j^3+6j^24j+1)=(n+1)^4-1^4$ by(1)" drops a plus sign and cites (1); read $4j^3+6j^2+4j+1$, by (3)
+m Hence $\sum_{j=1}^{n}j^2=\dfrac{1}{6}\left[n(n+1)(2n+1)\right]$
+m (iii) Let $b_j=j^4\qquad(3)$
+m then $b_{j+1}-b_j=(j+1)^4-j^4=4j^3+6j^2+4j+1$
+m we take $a_j=4j^3+6j^2+4j+1$
+m Now, using the following $\sum_{j=1}^{n}a_j=b_{n+1}-b_1$
+m $\sum_{j=1}^{n}(4j^3+6j^24j+1)=(n+1)^4-1^4$ by(1)
+m $4\sum_{j=1}^{n}j^3+6\sum_{j=1}^{n}j^2+4\sum_{j=1}^{n}j+\sum_{j=1}^{n}1=(n+1)^4-1$
+m $4\sum_{j=1}^{n}j^3+6\left(\dfrac{n(n+1)(2n+1)}{6}\right)+4\left(\dfrac{n(n+1)}{2}\right)+n=(n+1)^4-1$
+m $4\sum_{j=1}^{n}j^3=(n+1)^4-1-n(n+1)(2n+1)-2n(n+1)-n$
+m $=(n+1)^4-(n+1)-n(n+1)(2n+1)-2n(n+1)$
+m $=(n+1)\left[(n+1)^3-1-2n^2-n-2n\right]$
+m $=(n+1)\left[n^3+3n^2+3n+1-1-2n^2-3n\right]=(n+1)\left[n^3+n^2\right]$
+m $=n^2(n+1)^2$
+m Hence $\sum_{j=1}^{n}j^3=\dfrac{n^2(n+1)^2}{4}$
+m $\sum_{j=1}^{n}j^3=\left[\dfrac{n(n+1)}{2}\right]^2$
+example 3 | Find the sum of the n terms of the series. $1\cdot2+2\cdot3+3\cdot4+\cdots$ || سلسلے $1\cdot2+2\cdot3+3\cdot4+\cdots$ کے n ارکان کا مجموعہ معلوم کریں۔ || د لړۍ $1\cdot2+2\cdot3+3\cdot4+\cdots$ د n حدونو مجموعه پیدا کړئ.
+p **Solution:** Let $T_j$ be the general term of the given series, then $T_j=j(j+1)$ || **حل:** فرض کریں $T_j$ دیے گئے سلسلے کا عمومی رکن ہے، تو $T_j=j(j+1)$ || **حل:** فرض کړئ $T_j$ د ورکړل شوې لړۍ عمومي حد دی، نو $T_j=j(j+1)$
+m and $\sum_{j=1}^{n}T_j=\sum_{j=1}^{n}(j^2+j)$

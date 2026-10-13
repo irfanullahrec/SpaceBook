@@ -1,0 +1,22 @@
+@printed 164
+m $=\left[\dfrac{1(2^n-1)}{2-1}\right]+8\left[\dfrac{n^2(n+1)^2}{4}\right]-6\left[\dfrac{n(n+1)(2n+1)}{6}\right]$
+m $=2^n-1+n(n+1)\left[2n^2+2n-2n-1\right]=2^n-1+n(n+1)(2n^2-1)$
+endexample
+exercise 5.1
+q 1 | Sum the following series up to n terms (i) $1^2+3^2+5^2+7^2+\cdots$ (ii) $1^2+(1^2+2^2)+(1^2+2^2+3^2)+\cdots$ (iii) $2^2+4^2+6^2+\cdots$ (iv) $1^3+3^3+5^3+\cdots$ (v) $1^3+5^3+9^3+\cdots$ || درج ذیل سلسلوں کو n ارکان تک جمع کریں (i) $1^2+3^2+5^2+7^2+\cdots$ (ii) $1^2+(1^2+2^2)+(1^2+2^2+3^2)+\cdots$ (iii) $2^2+4^2+6^2+\cdots$ (iv) $1^3+3^3+5^3+\cdots$ (v) $1^3+5^3+9^3+\cdots$ || لاندې لړۍ تر n حدونو جمع کړئ (i) $1^2+3^2+5^2+7^2+\cdots$ (ii) $1^2+(1^2+2^2)+(1^2+2^2+3^2)+\cdots$ (iii) $2^2+4^2+6^2+\cdots$ (iv) $1^3+3^3+5^3+\cdots$ (v) $1^3+5^3+9^3+\cdots$
+q 2 | Find the sum $1\cdot2+2\cdot3+3\cdot4+\cdots+99\cdot100$ || مجموعہ معلوم کریں $1\cdot2+2\cdot3+3\cdot4+\cdots+99\cdot100$ || مجموعه پیدا کړئ $1\cdot2+2\cdot3+3\cdot4+\cdots+99\cdot100$
+q 3 | Find the sum $1^2+3^2+5^2+7^2+\cdots+99^2$ || مجموعہ معلوم کریں $1^2+3^2+5^2+7^2+\cdots+99^2$ || مجموعه پیدا کړئ $1^2+3^2+5^2+7^2+\cdots+99^2$
+q 4 | Find the sum $2+(2+5)+(2+5+8)+\cdots$ to n terms || مجموعہ معلوم کریں $2+(2+5)+(2+5+8)+\cdots$ n ارکان تک || مجموعه پیدا کړئ $2+(2+5)+(2+5+8)+\cdots$ تر n حدونو
+q 5 | Sum $2+5+10+17+\cdots$ to n terms || $2+5+10+17+\cdots$ کو n ارکان تک جمع کریں || $2+5+10+17+\cdots$ تر n حدونو جمع کړئ
+q 6 | Sum to n terms. $1\cdot2\cdot3+2\cdot3\cdot4+3\cdot4\cdot5+\cdots$ || n ارکان تک جمع کریں۔ $1\cdot2\cdot3+2\cdot3\cdot4+3\cdot4\cdot5+\cdots$ || تر n حدونو جمع کړئ. $1\cdot2\cdot3+2\cdot3\cdot4+3\cdot4\cdot5+\cdots$
+q 7 | Sum to n terms $1\cdot5\cdot9+2\cdot6\cdot10+3\cdot7\cdot11+\cdots$ || n ارکان تک جمع کریں $1\cdot5\cdot9+2\cdot6\cdot10+3\cdot7\cdot11+\cdots$ || تر n حدونو جمع کړئ $1\cdot5\cdot9+2\cdot6\cdot10+3\cdot7\cdot11+\cdots$
+q 8 | Find the sum to 2n terms of the series whose nth term is $4n^2+5n+1$ || اس سلسلے کے 2n ارکان کا مجموعہ معلوم کریں جس کا nواں رکن $4n^2+5n+1$ ہے || د هغې لړۍ د 2n حدونو مجموعه پیدا کړئ چې nم حد یې $4n^2+5n+1$ دی
+q 9 | Find the sum of n terms of the series whose nth term is: (i) $n^2(2n+3)$ (ii) $3(4^n+2n^2)-4n^3$ || اس سلسلے کے n ارکان کا مجموعہ معلوم کریں جس کا nواں رکن ہے: (i) $n^2(2n+3)$ (ii) $3(4^n+2n^2)-4n^3$ || د هغې لړۍ د n حدونو مجموعه پیدا کړئ چې nم حد یې دی: (i) $n^2(2n+3)$ (ii) $3(4^n+2n^2)-4n^3$
+endexercise
+@sec 5.2 | Arithmetico-Geometric series || حسابی-ہندسی سلسلہ || حسابي-هندسي لړۍ
+## 5.2 Arithmetico-Geometric series || 5.2 حسابی-ہندسی سلسلہ || 5.2 حسابي-هندسي لړۍ
+p Since we are already familiar with the arithmetic and geometric sequences and their related series. Now, we discuss here another important sequence and its related series, which we obtain from arithmetic and geometric sequences. || چونکہ ہم حسابی اور ہندسی ترتیبوں اور ان سے متعلقہ سلسلوں سے پہلے ہی واقف ہیں۔ اب ہم یہاں ایک اور اہم ترتیب اور اس سے متعلقہ سلسلے پر بات کرتے ہیں جو ہم حسابی اور ہندسی ترتیبوں سے حاصل کرتے ہیں۔ || څرنګه چې موږ دمخه له حسابي او هندسي ترتیبونو او د هغوی له اړوندو لړیو سره بلد یو. اوس دلته یو بل مهم ترتیب او د هغه اړونده لړۍ بحث کوو چې له حسابي او هندسي ترتیبونو څخه یې لاسته راوړو.
+p **5.2.1** A series which is obtained by multiplying the corresponding terms of an arithmetic series and a geometric series is called **Arithmetico–Geometric series**. For example, || **5.2.1** وہ سلسلہ جو حسابی سلسلے اور ہندسی سلسلے کے متعلقہ ارکان کو ضرب دے کر حاصل ہو **حسابی-ہندسی سلسلہ** کہلاتا ہے۔ مثال کے طور پر، || **5.2.1** هغه لړۍ چې د حسابي لړۍ او هندسي لړۍ د اړوندو حدونو په ضربولو لاسته راځي **حسابي-هندسي لړۍ** بلل کېږي. د بېلګې په توګه،
+m $\left[a+(a+d)+(a+2d)+\cdots+(a+(n-1)d)\right]\left[1+r+r^2+\cdots+r^{n-1}\right]$
+m $=a+(a+d)r+(a+2d)r^2+\cdots+(a+(n-1)d)\,r^{n-1}$
+p which is arithmetico-geometric series. || جو حسابی-ہندسی سلسلہ ہے۔ || چې حسابي-هندسي لړۍ ده.

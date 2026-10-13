@@ -1,0 +1,16 @@
+@printed 167
+example 9 | Show that $2^{\frac{1}{4}}\times4^{\frac{1}{8}}\times8^{\frac{1}{16}}\times16^{\frac{1}{32}}\times\cdots\infty=2$ || دکھائیں کہ $2^{\frac{1}{4}}\times4^{\frac{1}{8}}\times8^{\frac{1}{16}}\times16^{\frac{1}{32}}\times\cdots\infty=2$ || وښایئ چې $2^{\frac{1}{4}}\times4^{\frac{1}{8}}\times8^{\frac{1}{16}}\times16^{\frac{1}{32}}\times\cdots\infty=2$
+m **Solution:** Let $x=2^{\frac{1}{4}}\times4^{\frac{1}{8}}\times8^{\frac{1}{16}}\times16^{\frac{1}{32}}\times\cdots\infty$
+m $\log x=\log2^{\frac{1}{4}}+\log4^{\frac{1}{8}}+\log8^{\frac{1}{16}}+\log16^{\frac{1}{32}}+\cdots\infty$
+m $\log x=\dfrac{1}{4}\log2+\dfrac{1}{8}\log4+\dfrac{1}{16}\log8+\dfrac{1}{32}\log16+\cdots\infty$
+m $\log x=\dfrac{1}{4}\log2+\dfrac{1}{8}\log2^2+\dfrac{1}{16}\log2^3+\dfrac{1}{32}\log2^4+\cdots\infty$
+m $\log x=\dfrac{1}{4}\log2+\dfrac{2}{8}\log2+\dfrac{3}{16}\log2+\dfrac{4}{32}\log2+\cdots\infty$
+m $\log x=\left(\dfrac{1}{4}+\dfrac{2}{8}+\dfrac{3}{16}+\dfrac{4}{32}+\cdots\infty\right)\log2\qquad$ (i)
+p Now, $\frac{1}{4}+\frac{2}{8}+\frac{3}{16}+\frac{4}{32}+\cdots\infty$ is an arithmetico-geometric series || اب $\frac{1}{4}+\frac{2}{8}+\frac{3}{16}+\frac{4}{32}+\cdots\infty$ ایک حسابی-ہندسی سلسلہ ہے || اوس $\frac{1}{4}+\frac{2}{8}+\frac{3}{16}+\frac{4}{32}+\cdots\infty$ یوه حسابي-هندسي لړۍ ده
+m Let $S=\dfrac{1}{4}+\dfrac{2}{8}+\dfrac{3}{16}+\dfrac{4}{32}+\cdots\infty\qquad$ (ii)
+m $\dfrac{1}{2}S=\dfrac{1}{8}+\dfrac{2}{16}+\dfrac{3}{32}+\dfrac{4}{64}+\cdots\infty\qquad$ (iii)
+m On subtracting Eq(iii) from Eq(ii), we get $\dfrac{1}{2}S=\dfrac{1}{4}+\dfrac{1}{8}+\dfrac{1}{16}+\dfrac{1}{32}+\cdots\infty$
+m $\Rightarrow\dfrac{1}{2}S=\dfrac{1}{2^2}+\dfrac{1}{2^3}+\dfrac{1}{2^4}+\dfrac{1}{2^5}+\cdots\infty$
+m $\dfrac{1}{2}S=\dfrac{\frac{1}{2^2}}{1-\frac{1}{2}}\Rightarrow\dfrac{1}{2}S=\dfrac{1}{2}\Rightarrow S=1$
+m $\therefore$ (i) $\Rightarrow\log x=1\times\log2\Rightarrow\log x=\log2\quad\therefore\ x=2.$
+endexample

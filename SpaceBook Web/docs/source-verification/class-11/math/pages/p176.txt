@@ -1,0 +1,22 @@
+@printed 176
+@sec 6.1 | Introduction || تعارف || پېژندنه
+## 6.1 Introduction || 6.1 تعارف || 6.1 پېژندنه
+p Counting is one of the most fundamental skills. People start to count on their fingers when they are in kindergarten or even earlier. But how to count quickly, correctly, and systematically is a lifelong course. In order to study probability, it is first necessary to learn about combinatorics, the theory of counting. || گنتی سب سے بنیادی مہارتوں میں سے ایک ہے۔ لوگ کنڈرگارٹن میں یا اس سے بھی پہلے انگلیوں پر گننا شروع کر دیتے ہیں۔ لیکن تیزی سے، درست اور منظم طریقے سے کیسے گنا جائے، یہ عمر بھر کا سبق ہے۔ احتمال کا مطالعہ کرنے کے لیے پہلے کمبینیٹورکس یعنی گنتی کے نظریے کو سیکھنا ضروری ہے۔ || شمېرنه یو له تر ټولو بنسټیزو مهارتونو څخه ده. خلک په وړکتون کې یا تر هغه مخکې په ګوتو شمېرل پیلوي. خو څنګه چټک، سم او منظم وشمېرو، دا د ټول عمر درس دی. د احتمال د زده کړې لپاره لومړی اړینه ده چې کمبیناتوریکس، یعنې د شمېرنې نظریه، زده کړو.
+p In this unit, we will develop techniques and formulae for counting the number of objects in a set. These formulae are used in computer science to analyze algorithms. They are also used to determine probabilities, the likelihood that a certain outcome of a random experiment will occur. || اس باب میں ہم کسی سیٹ میں اشیاء کی تعداد گننے کے طریقے اور فارمولے تیار کریں گے۔ یہ فارمولے کمپیوٹر سائنس میں الگورتھم کا تجزیہ کرنے کے لیے استعمال ہوتے ہیں۔ یہ احتمالات معلوم کرنے کے لیے بھی استعمال ہوتے ہیں، یعنی یہ امکان کہ کسی بے ترتیب تجربے کا کوئی خاص نتیجہ واقع ہوگا۔ || په دې څپرکي کې به د یوه سېټ د شیانو د شمېر د شمېرلو لپاره طریقې او فورمولونه جوړ کړو. دا فورمولونه په کمپیوټر ساینس کې د الګوریتمونو د شننې لپاره کارول کېږي. همدارنګه د احتمالونو د ټاکلو لپاره کارول کېږي، یعنې دا امکان چې د یوې تصادفي تجربې یوه ټاکلې پایله به رامنځته شي.
+@sec 6.1.1 | Kramp's Factorial notation || کرامپ کی فیکٹوریل علامت || د کرامپ د فاکتوریل نښه
+### 6.1.1 Kramp's Factorial notation to express the product of first n natural numbers by n! || 6.1.1 پہلے n قدرتی اعداد کے حاصلِ ضرب کو n! سے ظاہر کرنے کے لیے کرامپ کی فیکٹوریل علامت || 6.1.1 د لومړیو n طبیعي عددونو د حاصل ضرب د n! په ښودلو لپاره د کرامپ د فاکتوریل نښه
+p **Factorial Notation.** If n is a positive integer, the notation n! (read "n factorial") is the product of all positive integers from n down through 1. || **فیکٹوریل علامت۔** اگر n مثبت صحیح عدد ہو تو علامت n! (پڑھیں "n فیکٹوریل") n سے لے کر 1 تک تمام مثبت صحیح اعداد کا حاصلِ ضرب ہے۔ || **د فاکتوریل نښه.** که n مثبت صحیح عدد وي، نښه n! (ولولئ "n فاکتوریل") له n څخه تر 1 پورې د ټولو مثبتو صحیح عددونو حاصل ضرب دی.
+m $n!=n(n-1)(n-2)\cdots(3)(2)(1)$
+m $0!$ (zero factorial), by definition, $0!=1$
+box note | Remember: The First Ten Factorials || یاد رکھیں: پہلے دس فیکٹوریل || په یاد ولرئ: لومړي لس فاکتوریلونه
+m $0!=1,\quad1!=1,\quad2!=2\cdot1=2,\quad3!=3\cdot2\cdot1=6,\quad4!=4\cdot3\cdot2\cdot1=24,\quad5!=5\cdot4\cdot3\cdot2\cdot1=120$
+m $6!=6\cdot5\cdot4\cdot3\cdot2\cdot1=720,\quad7!=7\cdot6\cdot5\cdot4\cdot3\cdot2\cdot1=5{,}040$
+m $8!=8\cdot7\cdot6\cdot5\cdot4\cdot3\cdot2\cdot1=40{,}320,\quad9!=9\cdot8\cdot7\cdot6\cdot5\cdot4\cdot3\cdot2\cdot1=362{,}880$
+endbox
+box info | Technology || ٹیکنالوجی || ټکنالوژي
+p Most calculators have factorial keys. To find 5!, most calculators use one of the following: Many Scientific Calculators: 5 [x!]. Many Graphing Calculators: 5 [!] [ENTER] || زیادہ تر کیلکولیٹرز میں فیکٹوریل کی کلید ہوتی ہے۔ 5! معلوم کرنے کے لیے زیادہ تر کیلکولیٹر ان میں سے کوئی ایک طریقہ استعمال کرتے ہیں: بہت سے سائنسی کیلکولیٹر: 5 [x!]۔ بہت سے گرافنگ کیلکولیٹر: 5 [!] [ENTER] || ډېری کیلکولېټرونه د فاکتوریل تڼۍ لري. د 5! د پیدا کولو لپاره ډېری کیلکولېټرونه له دې څخه یو کاروي: ډېری ساینسي کیلکولېټرونه: 5 [x!]. ډېری ګرافي کیلکولېټرونه: 5 [!] [ENTER]
+endbox
+box note | Note The Difference || فرق نوٹ کریں || توپیر ته پام وکړئ
+m $2\cdot3!=2(3\cdot2\cdot1)=12$
+m $(2\cdot3)!=6!=6\cdot5\cdot4\cdot3\cdot2\cdot1=720$
+endbox

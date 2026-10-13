@@ -1,0 +1,17 @@
+@printed 160
+m $=\dfrac{1}{2}+\sum_{k=3}^{10}\dfrac{1}{k}-\sum_{k=3}^{10}\dfrac{1}{k}=\dfrac{1}{2}$
+p This example illustrates how changing the index can simplify expressions involving several sums. || یہ مثال واضح کرتی ہے کہ اشاریہ بدلنے سے کئی مجموعوں پر مشتمل اظہارات کیسے سادہ ہو سکتے ہیں۔ || دا بېلګه ښيي چې د اندکس بدلول څنګه د څو مجموعو لرونکي افادې ساده کولی شي.
+endexample
+@sec 5.1.2 | Evaluation of sum of the first n natural numbers, squares and cubes || پہلے n قدرتی اعداد، مربعوں اور مکعبوں کا مجموعہ || د لومړیو n طبیعي عددونو، مربعګانو او مکعبونو مجموعه
+### 5.1.2 Evaluation of sum of the first n || 5.1.2 پہلے n کے مجموعے کی قیمت || 5.1.2 د لومړیو n د مجموعې ارزونه
+- i. Natural numbers ii. Squares of natural numbers iii. Cubes of natural numbers || i. قدرتی اعداد ii. قدرتی اعداد کے مربع iii. قدرتی اعداد کے مکعب || i. طبیعي عددونه ii. د طبیعي عددونو مربعګانې iii. د طبیعي عددونو مکعبونه
+p Before evaluation of the above mentioned sums, here we discuss a general principle that will allow us to compute a wide variety of sums. Suppose $b_1, b_2,\ldots,b_{n+1}$ is a sequence and $a_j=b_{j+1}-b_j$ || اوپر بیان کردہ مجموعوں کی قیمت نکالنے سے پہلے ہم یہاں ایک عمومی اصول پر بات کرتے ہیں جو ہمیں بہت سے مختلف مجموعے نکالنے کے قابل بنائے گا۔ فرض کریں $b_1, b_2,\ldots,b_{n+1}$ ایک ترتیب ہے اور $a_j=b_{j+1}-b_j$ || د پورته یادو شویو مجموعو له ارزونې مخکې دلته یو عمومي اصل بحث کوو چې موږ ته به د ډول ډول مجموعو د محاسبې وړتیا راکړي. فرض کړئ $b_1, b_2,\ldots,b_{n+1}$ یو ترتیب دی او $a_j=b_{j+1}-b_j$
+m then $\sum_{j=1}^{n}a_j=\sum_{j=1}^{n}(b_{j+1}-b_j)=(b_2-b_1)+(b_3-b_2)+\cdots+(b_{n+1}-b_n)$
+m $=-b_1+(b_2-b_2)+(b_3-b_3)+\cdots+(b_n-b_n)+b_{n+1}=b_{n+1}-b_1$
+m Thus if $a_j=b_{j+1}-b_j$ then $\sum_{j=1}^{n}a_j=b_{n+1}-b_1$
+p This statement seems very simple, yet in practice it can be very powerful. Suppose we want to compute $\sum_{j=1}^{n}a_j$. If we can find a sequence $b_1, b_2,\ldots$ such that $b_{j+1}-b_j=a_j$, then we can write down the answer immediately, that is $b_{n+1}-b_1$. || یہ بیان بہت سادہ لگتا ہے، لیکن عملاً یہ بہت طاقتور ہو سکتا ہے۔ فرض کریں ہم $\sum_{j=1}^{n}a_j$ نکالنا چاہتے ہیں۔ اگر ہم ایسی ترتیب $b_1, b_2,\ldots$ تلاش کر لیں کہ $b_{j+1}-b_j=a_j$ ، تو ہم فوراً جواب لکھ سکتے ہیں یعنی $b_{n+1}-b_1$ ۔ || دا بیان ډېر ساده ښکاري، خو په عمل کې ډېر پیاوړی کېدای شي. فرض کړئ غواړو $\sum_{j=1}^{n}a_j$ محاسبه کړو. که داسې ترتیب $b_1, b_2,\ldots$ پیدا کړو چې $b_{j+1}-b_j=a_j$، نو سمدستي ځواب لیکلی شو، یعنې $b_{n+1}-b_1$.
+m (i) Let $b_j=j^2\qquad(1)$
+m then $b_{j+1}-b_j=(j+1)^2-j^2=2j+1$
+m thus here, we take $a_j=2j+1$
+m Now using $\sum_{j=1}^{n}a_j=b_{n+1}-b_1$
+m $\sum_{j=1}^{n}(2j+1)=(n+1)^2-1^2\qquad$ by (1)

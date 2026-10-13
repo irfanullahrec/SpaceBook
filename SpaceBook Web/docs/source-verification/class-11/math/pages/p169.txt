@@ -1,0 +1,21 @@
+@printed 169
+@issue Example 10: the printed step "$\Rightarrow a_n=a_1+(n-1)(2n-2)$" should read $(n-1)(2n+2)$; the next line uses the correct value
+m $a_n-a_1=\dfrac{n-1}{2}\left[2\cdot6+(n-2)\cdot4\right]$
+m $a_n-a_1=\dfrac{n-1}{2}\left[12+4n-8\right]=\dfrac{n-1}{2}\left[4n+4\right]=(n-1)(2n+2)\Rightarrow a_n=a_1+(n-1)(2n-2)$
+m $\therefore\ a_n=1+2(n-1)(n+1)\qquad[\because a_1=1]$
+m $\therefore\ a_n=2n^2-1\qquad\therefore\ a_r=2r^2-1$
+m $\therefore\ \sum_{1}^{n}a_r=2\sum_{1}^{n}r^2-\sum_{1}^{n}1=2\cdot\dfrac{n(n+1)(2n+1)}{6}-n=\dfrac{n(n+1)(2n+1)}{3}-n$
+m $=\dfrac{n(n+1)(2n+1)-3n}{3}=\dfrac{n(n+2)(2n-1)}{3}$
+m $\therefore$ the required sum $=\dfrac{n(n+2)(2n-1)}{3}$
+endexample
+example 11 | Find the nth term and the sum to n terms of the series $3+5+9+17+31+\cdots$ || سلسلے $3+5+9+17+31+\cdots$ کا nواں رکن اور n ارکان تک مجموعہ معلوم کریں || د لړۍ $3+5+9+17+31+\cdots$ nم حد او تر n حدونو مجموعه پیدا کړئ
+@issue Example 11: the series is printed as $3+5+9+17+31+\cdots$; with differences $2, 4, 8, 16$ the fifth term is 33, not 31. Transcribed as printed.
+m **Solution:** We have $a_2-a_1=2,\quad a_3-a_2=4,\quad a_4-a_3=8,\quad\ldots,\quad a_n-a_{n-1}=(n-1)$th term of the sequence $2, 4, 8,\ldots$
+p Which is a G.P. Adding column-wise, we get || جو ہندسی تصاعد ہے۔ کالم وار جمع کرنے پر ہمیں ملتا ہے || چې هندسي تصاعد دی. د ستنو له مخې جمع کولو سره لرو
+m $a_n-a_1=2+4+8+\cdots$ to $(n-1)$ terms,
+m $a_n-a_1=\dfrac{2(2^{n-1}-1)}{2-1}=2^n-2$
+m $\therefore\ a_n=2^n-2+3\qquad[\because a_1=3]$
+m $\therefore\ a_n=2^n+1\qquad\therefore\ a_r=2^r+1$
+m $\therefore\ \sum_{1}^{n}a_r=\left[2+2^2+2^3+2^4+\cdots+2^n\right]+\sum1=\dfrac{2(2^n-1)}{2-1}+n=2^{n+1}+n-2$
+m $\therefore$ the required sum $=2^{n+1}+n-2$.
+endexample

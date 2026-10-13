@@ -1,0 +1,18 @@
+@printed 161
+m $2\sum_{j=1}^{n}j+\sum_{j=1}^{n}1=n^2+2n$
+m $2\sum_{j=1}^{n}j+n=n^2+2n$
+m $2\sum_{j=1}^{n}j=n^2+2n-n$
+m $2\sum_{j=1}^{n}j=n^2+n$
+m Hence $\sum_{j=1}^{n}j=\dfrac{n(n+1)}{2}$
+m (ii) let $b_j=j^3\qquad(2)$
+m then $b_{j+1}-b_j=(j+1)^3-j^3=3j^2+3j+1$
+m thus here $a_j=3j^2+3j+1$.
+m Now, using the following $\sum_{j=1}^{n}a_j=b_{n+1}-b_1$
+m $\sum_{j=1}^{n}(3j^2+3j+1)=(n+1)^3-1^3\qquad$ by (2)
+m $3\sum_{j=1}^{n}j^2+3\sum_{j=1}^{n}j+\sum_{j=1}^{n}1=(n+1)^3-1$
+m $3\sum_{j=1}^{n}j^2+3\left(\dfrac{n(n+1)}{2}\right)+n=(n+1)^3-1$
+m $3\sum_{j=1}^{n}j^2=(n+1)^3-1-3\left(\dfrac{n(n+1)}{2}\right)-n$
+m $=(n+1)^3-(n+1)-\dfrac{3}{2}n(n+1)$
+m $=\dfrac{n+1}{2}\left[2(n+1)^2-2-3n\right]$
+m $=\dfrac{n+1}{2}\left[2n^2+2+4n-2-3n\right]=\dfrac{n+1}{2}\left[2n^2+n\right]$
+m $=\dfrac{n(n+1)(2n+1)}{2}$

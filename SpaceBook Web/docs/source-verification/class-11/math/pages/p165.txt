@@ -1,0 +1,20 @@
+@printed 165
+### nth term of Arithmetico-Geometric Series || حسابی-ہندسی سلسلے کا nواں رکن || د حسابي-هندسي لړۍ nم حد
+p A series which is formed by multiplying the corresponding terms of an A.P. and a G.P. is called an arithmetico-geometric series. Thus nth term of such series has the form $[a+(n-1)d]\times r^{n-1}$ || وہ سلسلہ جو حسابی تصاعد اور ہندسی تصاعد کے متعلقہ ارکان کو ضرب دے کر بنتا ہے حسابی-ہندسی سلسلہ کہلاتا ہے۔ لہٰذا ایسے سلسلے کا nواں رکن $[a+(n-1)d]\times r^{n-1}$ کی شکل کا ہوتا ہے || هغه لړۍ چې د حسابي تصاعد او هندسي تصاعد د اړوندو حدونو په ضربولو جوړېږي حسابي-هندسي لړۍ بلل کېږي. نو د داسې لړۍ nم حد د $[a+(n-1)d]\times r^{n-1}$ بڼه لري
+@sec 5.2.2 | Sum of n terms of Arithmetico-Geometric Series || حسابی-ہندسی سلسلے کے n ارکان کا مجموعہ || د حسابي-هندسي لړۍ د n حدونو مجموعه
+### 5.2.2 Sum of n terms of Arithmetico-Geometric Series || 5.2.2 حسابی-ہندسی سلسلے کے n ارکان کا مجموعہ || 5.2.2 د حسابي-هندسي لړۍ د n حدونو مجموعه
+m Let $S_n=a+(a+d)r+(a+2d)r^2+\cdots+[a+(n-1)d]\,r^{n-1}\qquad(1)$
+m then $rS_n=ar+(a+d)r^2+\cdots+[a+(n-2)d]\,r^{n-1}+[a+(n-1)d]\,r^n\qquad(2)$
+m subtracting (2) from (1) we obtain $(1-r)S_n=a+(dr+dr^2+\cdots+dr^{n-1})-[a+(n-1)d]\,r^n$
+m $\therefore\ S_n=\dfrac{a}{1-r}+\dfrac{1}{1-r}\left[\dfrac{dr(1-r^{n-1})}{1-r}\right]-\dfrac{1}{1-r}[a+(n-1)d]\,r^n$
+m $=\dfrac{a}{1-r}+\dfrac{dr}{(1-r)^2}-\dfrac{dr^n}{(1-r)^2}-\dfrac{[a+(n-1)d]r^n}{(1-r)}\qquad(3)$
+p which is the required sum of the n terms of arithmetico–geometric series. || جو حسابی-ہندسی سلسلے کے n ارکان کا مطلوبہ مجموعہ ہے۔ || چې د حسابي-هندسي لړۍ د n حدونو غوښتل شوې مجموعه ده.
+box note | Note || نوٹ || یادونه
+p **Sum to infinity of an Arithmetico–Geometric Series.** Let $|r|<1$. Then $r^n\to0$ as $n\to\infty$. $\therefore$ Equation (3) reduces to $S_\infty=\dfrac{a}{1-r}+\dfrac{dr}{(1-r)^2}$ which is the required sum to infinity of arithmetico–geometric series || **حسابی-ہندسی سلسلے کا لامتناہی تک مجموعہ۔** فرض کریں $|r|<1$ ۔ تو جب $n\to\infty$ ہو $r^n\to0$ ۔ $\therefore$ مساوات (3) یوں رہ جاتی ہے $S_\infty=\dfrac{a}{1-r}+\dfrac{dr}{(1-r)^2}$ جو حسابی-ہندسی سلسلے کا لامتناہی تک مطلوبہ مجموعہ ہے || **د حسابي-هندسي لړۍ مجموعه تر بې‌نهایته.** فرض کړئ $|r|<1$. نو کله چې $n\to\infty$ وي $r^n\to0$. $\therefore$ معادله (3) داسې کېږي $S_\infty=\dfrac{a}{1-r}+\dfrac{dr}{(1-r)^2}$ چې د حسابي-هندسي لړۍ تر بې‌نهایته غوښتل شوې مجموعه ده
+endbox
+example 6 | Sum the series $1+\frac{4}{5}+\frac{7}{5^2}+\frac{10}{5^3}+\cdots$ to n terms. || سلسلے $1+\frac{4}{5}+\frac{7}{5^2}+\frac{10}{5^3}+\cdots$ کو n ارکان تک جمع کریں۔ || لړۍ $1+\frac{4}{5}+\frac{7}{5^2}+\frac{10}{5^3}+\cdots$ تر n حدونو جمع کړئ.
+m **Solution:** Let $S=1+\dfrac{4}{5}+\dfrac{7}{5^2}+\dfrac{10}{5^3}+\cdots+\dfrac{3n-2}{5^{n-1}}$
+m $\therefore\ \dfrac{1}{5}S=\dfrac{1}{5}+\dfrac{4}{5^2}+\dfrac{7}{5^3}+\cdots+\dfrac{3n-5}{5^{n-1}}+\dfrac{3n-2}{5^n}$
+m $\therefore\ \dfrac{4}{5}S=1+\left(\dfrac{3}{5}+\dfrac{3}{5^2}+\dfrac{3}{5^3}+\cdots+\dfrac{3}{5^{n-1}}\right)-\dfrac{3n-2}{5^n}$
+m $=1+\dfrac{3}{5}\left(1+\dfrac{1}{5}+\dfrac{1}{5^2}+\cdots+\dfrac{1}{5^{n-2}}\right)-\dfrac{3n-2}{5^n}$
+m $=1+\dfrac{3}{5}\left(\dfrac{1-\frac{1}{5^{n-1}}}{1-\frac{1}{5}}\right)-\dfrac{3n-2}{5^n}$

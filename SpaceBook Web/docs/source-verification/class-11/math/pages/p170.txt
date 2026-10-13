@@ -1,0 +1,21 @@
+@printed 170
+@deco footer stamp "Not For Sale"
+exercise 5.3
+p Find the nth term and the sum to n terms of each of the following series: || درج ذیل ہر سلسلے کا nواں رکن اور n ارکان تک مجموعہ معلوم کریں: || د لاندې هرې لړۍ nم حد او تر n حدونو مجموعه پیدا کړئ:
+q 1 | $4+13+28+49+76+\cdots$ || $4+13+28+49+76+\cdots$ || $4+13+28+49+76+\cdots$
+q 2 | $4+14+30+52+80+114+\cdots$ || $4+14+30+52+80+114+\cdots$ || $4+14+30+52+80+114+\cdots$
+q 3 | $4+10+18+28+40+\cdots$ || $4+10+18+28+40+\cdots$ || $4+10+18+28+40+\cdots$
+q 4 | $3+5+11+29+83+245+\cdots$ || $3+5+11+29+83+245+\cdots$ || $3+5+11+29+83+245+\cdots$
+q 5 | $3+9+21+45+93+189+\cdots$ || $3+9+21+45+93+189+\cdots$ || $3+9+21+45+93+189+\cdots$
+q 6 | $28+32+52+152+652+\cdots$ || $28+32+52+152+652+\cdots$ || $28+32+52+152+652+\cdots$
+endexercise
+@sec 5.4 | Summation by the method of Partial Fractions || جزوی کسور کے طریقے سے جمع || د جزوي کسرونو په طریقه جمع
+## 5.4 Summation by the method of Partial Fractions || 5.4 جزوی کسور کے طریقے سے جمع || 5.4 د جزوي کسرونو په طریقه جمع
+p If the general term of a series consists of the products of the reciprocals of two or more consecutive terms of an A.P., then the term can be split up into partial fractions and the series can be summed. The method is illustrated in the following examples. || اگر کسی سلسلے کا عمومی رکن حسابی تصاعد کے دو یا زیادہ متواتر ارکان کے معکوسوں کے حاصلِ ضرب پر مشتمل ہو تو رکن کو جزوی کسور میں توڑا جا سکتا ہے اور سلسلے کو جمع کیا جا سکتا ہے۔ یہ طریقہ درج ذیل مثالوں میں واضح کیا گیا ہے۔ || که د یوې لړۍ عمومي حد د حسابي تصاعد د دوو یا ډېرو پرلپسې حدونو د معکوسونو له حاصل ضرب څخه جوړ وي، نو حد په جزوي کسرونو وېشل کېدای شي او لړۍ جمع کېدای شي. دا طریقه په لاندې بېلګو کې روښانه شوې.
+example 12 | Sum the series $\dfrac{1}{3\cdot7}+\dfrac{1}{7\cdot11}+\dfrac{1}{11\cdot15}+\dfrac{1}{15\cdot19}+\cdots$ to n terms || سلسلے $\dfrac{1}{3\cdot7}+\dfrac{1}{7\cdot11}+\dfrac{1}{11\cdot15}+\dfrac{1}{15\cdot19}+\cdots$ کو n ارکان تک جمع کریں || لړۍ $\dfrac{1}{3\cdot7}+\dfrac{1}{7\cdot11}+\dfrac{1}{11\cdot15}+\dfrac{1}{15\cdot19}+\cdots$ تر n حدونو جمع کړئ
+p **Solution:** Here, the factors in the denominators are the products of two successive terms of an A.P 3, 7, 11, 15, 19, || **حل:** یہاں نسب نماؤں کے اجزائے ضربی حسابی تصاعد 3, 7, 11, 15, 19 کے دو متواتر ارکان کے حاصلِ ضرب ہیں، || **حل:** دلته د مخرجونو عاملونه د حسابي تصاعد 3, 7, 11, 15, 19 د دوو پرلپسې حدونو حاصل ضربونه دي،
+m $\therefore$ rth term of the given series, $a_r=\dfrac{1}{(4r-1)(4r+3)}$
+p Expressing $a_r$ as the difference of its partial fractions, we have || $a_r$ کو اس کے جزوی کسور کے فرق کے طور پر ظاہر کرنے سے ہمیں ملتا ہے || د $a_r$ د جزوي کسرونو د توپیر په توګه ښودلو سره لرو
+m $a_r=\dfrac{1}{4}\left[\dfrac{1}{4r-1}-\dfrac{1}{4r+3}\right]$
+p By putting $r=1,2,3,\ldots,(n-1),n$ in succession, we get || $r=1,2,3,\ldots,(n-1),n$ بالترتیب رکھنے سے ہمیں ملتا ہے || په ترتیب سره د $r=1,2,3,\ldots,(n-1),n$ ایښودلو سره لرو
+m $a_1=\dfrac{1}{4}\left[\dfrac{1}{3}-\dfrac{1}{7}\right],\quad a_2=\dfrac{1}{4}\left[\dfrac{1}{7}-\dfrac{1}{11}\right],\quad a_3=\dfrac{1}{4}\left[\dfrac{1}{11}-\dfrac{1}{15}\right],\quad\ldots$
