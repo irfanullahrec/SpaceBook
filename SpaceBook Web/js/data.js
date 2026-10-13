@@ -92,7 +92,7 @@ const DATA = {
       "id": "cls7",
       "name": "Class 7",
       "emoji": "🧪",
-      "subjects": 7
+      "subjects": 6
     },
     {
       "id": "cls8",
@@ -166,7 +166,7 @@ const DATA = {
     ],
     "cls3": [
       { "id": "cls3-eng",     "name": "English",           "nameUrdu": "انگریزی",             "emoji": "📖", "chapters": 11, "hasEng": true, "hasEng3": true },
-      { "id": "cls3-urdu",    "name": "Urdu",              "nameUrdu": "اردو لازمی",          "emoji": "📗", "chapters": 14 },
+      { "id": "cls3-urdu",    "name": "Urdu",              "nameUrdu": "اردو لازمی",          "emoji": "📗", "chapters": 1, "hasUrdu": true, "hasUrdu3": true },
       { "id": "cls3-math",    "name": "Mathematics",       "nameUrdu": "ریاضی",               "emoji": "📐", "chapters": 7, "hasMath": true, "hasMath3": true },
       { "id": "cls3-gk",      "name": "General Knowledge", "nameUrdu": "واقفیتِ عامہ",        "emoji": "🌍", "chapters": 16, "hasGk": true, "hasGk3": true },
       { "id": "cls3-isl",     "name": "Islamyat",          "nameUrdu": "اسلامیات",            "emoji": "🕌", "chapters": 18, "hasIsl": true, "hasIsl3": true },
@@ -212,7 +212,6 @@ const DATA = {
       { "id": "cls7-urdu", "name": "Urdu",                "nameUrdu": "اردو لازمی",     "emoji": "📗", "chapters": 15 },
       { "id": "cls7-math", "name": "Mathematics",         "nameUrdu": "ریاضی",          "emoji": "📐", "chapters": 13 },
       { "id": "cls7-sci",  "name": "General Science",     "nameUrdu": "جنرل سائنس",     "emoji": "🔬", "chapters": 12 },
-      { "id": "cls7-hg",   "name": "History & Geography", "nameUrdu": "تاریخ و جغرافیہ", "emoji": "🌍", "chapters": 10 },
       { "id": "cls7-comp", "name": "Computer Education",  "nameUrdu": "کمپیوٹر",        "emoji": "💻", "chapters": 8 },
       { "id": "cls7-isl",  "name": "Islamyat",            "nameUrdu": "اسلامیات",       "emoji": "🕌", "chapters": 12 }
     ],
