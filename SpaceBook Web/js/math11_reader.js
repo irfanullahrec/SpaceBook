@@ -196,7 +196,7 @@
     return solLoad;
   }
   const plain = text => String(text || '').replace(/\$([^$]*)\$/g, (_, m) => m.replace(/\\times/g, '×').replace(/\\div/g, '÷').replace(/\^\{([^}]*)\}/g, '^$1').replace(/\\text\{([^}]*)\}/g, '$1').replace(/[{}\\]/g, ''));
-  const LANG = {en: {name: 'English', dir: 'ltr', voice: 'en'}, ur: {name: 'اردو', dir: 'rtl', voice: 'ur'}, ps: {name: 'پښتو', dir: 'rtl', voice: 'ps'}};
+  const LANG = {en: {name: 'English', dir: 'ltr', voice: 'en'}, ur: {name: 'اردو', dir: 'rtl', voice: 'ur'}, ps: {name: 'پښتو', dir: 'rtl', voice: 'ps'}, ar: {name: 'العربية', dir: 'rtl', voice: 'ar'}};
   const reduced = () => window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   const stepText = (panel, i) => panel._sol.steps[i][panel._lang] || panel._sol.steps[i].en;
   window.m11SolOpen = function (btn, id) {
@@ -227,6 +227,12 @@
         panel._lang = b.dataset.l;
         panel.querySelectorAll('[data-l]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
         panel.querySelectorAll('.m8-step').forEach((li, i) => { if (!li.hidden) setSay(panel, li, i); });
+        // Arabic is machine-translated from the English steps on first use (cached on the step)
+        if (panel._lang === 'ar' && window.SBTranslate && SBTranslate.prepareSteps) {
+          SBTranslate.prepareSteps(panel._sol.steps).then(() => {
+            if (panel._lang === 'ar') panel.querySelectorAll('.m8-step').forEach((li, i) => { if (!li.hidden) setSay(panel, li, i); });
+          });
+        }
         return;
       }
       const a = b.dataset.a;

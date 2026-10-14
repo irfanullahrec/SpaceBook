@@ -240,7 +240,7 @@
       stopAll(card);
       card.addEventListener('click', e => {
         const b = e.target.closest('button');
-        if (!b) return;
+        if (!b) { if (card.dataset.via === 'hover') hideCard(); return; }
         const l = b.dataset.lang, out = l ? (state.outs[l] || '') : '';
         if (b.dataset.act === 'close') hideCard();
         else if (b.dataset.act === 'speak-src') speak(state.text, state.src);
@@ -531,5 +531,21 @@
     };
   }
 
-  window.SBTranslate = { translate, detectLang, speak, open: (text, tgt) => openCard(text, tgt, null), languages: LANGS };
+  // Arabic for step-by-step solution panels (steps carry en/ur/ps only):
+  // translate the prose around $…$ maths, keep the maths untouched, cache on the step
+  function prepareSteps(steps) {
+    return Promise.all((steps || []).map(s => {
+      if (!s || s.ar || !s.en) return null;
+      if (s._arP) return s._arP;
+      const parts = String(s.en).split(/(\$\$[^$]*\$\$|\$[^$]*\$)/);
+      s._arP = Promise.all(parts.map(part => {
+        if (/^\$/.test(part) || !/[A-Za-z]/.test(part)) return part;
+        const lead = part.match(/^\s*/)[0], tail = part.match(/\s*$/)[0];
+        return translate(part.trim(), 'en', 'ar', true).then(r => r.text ? lead + r.text + tail : part);
+      })).then(out => { s.ar = out.join(''); return s.ar; });
+      return s._arP;
+    }));
+  }
+
+  window.SBTranslate = { translate, detectLang, speak, open: (text, tgt) => openCard(text, tgt, null), prepareSteps, languages: LANGS };
 })();

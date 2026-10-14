@@ -87,20 +87,20 @@
 }
 .ut-ic:hover, .ut-ic:focus-visible { background: var(--ut-line); color: var(--ut-ink); opacity: 1; outline: none; }
 
-.ut-rows { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; padding: 3px 4px 4px; }
+/* labels on the right, listen/copy on the left */
+.ut-rows { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; padding: 3px 4px 4px; direction: rtl; }
 .ut-row { display: contents; }
 .ut-lab {
-  justify-self: stretch; text-align: center; margin: 2px 8px 2px 4px; padding: 1px 8px; border-radius: 6px;
+  justify-self: stretch; text-align: center; margin: 2px 4px 2px 8px; padding: 1px 8px; border-radius: 6px;
   background: var(--ut-accent-soft); color: #075985;
   font-size: 0.82rem; line-height: 1.7; white-space: nowrap;
 }
 .ut-lab.ut-en { font-size: 0.72rem; font-weight: 700; }
 .ut-lab.ut-ur { font-size: 1.15rem; line-height: 1.3; }
 .ut-mean {
-  min-width: 0; padding: 1px 4px 1px 0; text-align: start;
+  min-width: 0; padding: 1px 0 1px 4px; text-align: right;
   font-size: 1rem; line-height: 1.6; color: var(--ut-ink); overflow-wrap: anywhere;
 }
-.ut-mean[dir="rtl"] { text-align: left; }
 .ut-mean.ut-ur { font-size: 1.12rem; line-height: 1.9; }
 .ut-mean.ut-ps, .ut-mean.ut-ar { font-size: 1.05rem; line-height: 1.8; }
 .ut-row .ut-ic { width: 22px; height: 22px; font-size: 0.72rem; }
