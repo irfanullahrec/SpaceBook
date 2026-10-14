@@ -241,11 +241,11 @@
       card.addEventListener('click', e => {
         const b = e.target.closest('button');
         if (!b) return;
-        if (b.dataset.lang) { state.tgt = b.dataset.lang; store.set('pref:' + state.src, state.tgt); renderCard(); }
-        else if (b.dataset.act === 'close') hideCard();
+        const l = b.dataset.lang, out = l ? (state.outs[l] || '') : '';
+        if (b.dataset.act === 'close') hideCard();
         else if (b.dataset.act === 'speak-src') speak(state.text, state.src);
-        else if (b.dataset.act === 'speak-out') speak(card.dataset.out || '', state.tgt);
-        else if (b.dataset.act === 'copy') copyText(card.dataset.out || '');
+        else if (b.dataset.act === 'speak') speak(out, l);
+        else if (b.dataset.act === 'copy') copyText(out);
         else if (b.dataset.act === 'more') card.classList.toggle('ut-expand');
       });
       document.body.appendChild(card);
@@ -254,52 +254,45 @@
     renderCard();
   }
 
+  // one row per other language: label on the left, its meaning right next to it
   function renderCard() {
-    const src = state.src, tgt = state.tgt, S = LANGS[src], T = LANGS[tgt];
+    const src = state.src, S = LANGS[src];
     const long = state.text.length > 140;
-    card.dataset.out = '';
+    state.outs = {};
     card.innerHTML =
       '<div class="ut-card-head">' +
-        '<div class="ut-tabs" role="tablist">' +
-          targetsFor(src).map(l =>
-            '<button type="button" role="tab" aria-selected="' + (l === tgt) + '" class="ut-tab ' + LANGS[l].cls + (l === tgt ? ' ut-on' : '') + '" data-lang="' + l + '">' + LANGS[l].native + '</button>'
-          ).join('') +
-        '</div>' +
-        '<button type="button" class="ut-x" data-act="close" aria-label="Close">✕</button>' +
-      '</div>' +
-      '<div class="ut-src ' + S.cls + (long ? ' ut-clamp' : '') + '" dir="' + S.dir + '">' +
-        '<span class="ut-chip">' + esc(S.name) + '</span>' + esc(state.text) +
+        '<span class="ut-chip">' + esc(S.native) + '</span>' +
+        '<span class="ut-src ' + S.cls + (long ? ' ut-clamp' : '') + '" dir="' + S.dir + '">' + esc(state.text) + '</span>' +
+        '<button type="button" class="ut-ic" data-act="speak-src" title="Listen" aria-label="Listen">🔊</button>' +
+        '<button type="button" class="ut-ic ut-x" data-act="close" title="Close" aria-label="Close">✕</button>' +
       '</div>' +
       (long ? '<button type="button" class="ut-more" data-act="more">Show full text</button>' : '') +
-      '<div class="ut-out ' + T.cls + '" dir="' + T.dir + '" aria-live="polite"><span class="ut-loading">Translating…</span></div>' +
-      '<div class="ut-foot">' +
-        '<button type="button" class="ut-act" data-act="speak-out" title="Listen to translation">🔊 Listen</button>' +
-        '<button type="button" class="ut-act" data-act="copy" title="Copy translation">⧉ Copy</button>' +
-        '<span class="ut-note"></span>' +
-      '</div>';
+      '<div class="ut-rows">' +
+        targetsFor(src).map(l =>
+          '<div class="ut-row" data-row="' + l + '">' +
+            '<span class="ut-lab ' + LANGS[l].cls + '">' + LANGS[l].native + '</span>' +
+            '<span class="ut-mean ' + LANGS[l].cls + '" dir="' + LANGS[l].dir + '" aria-live="polite"><span class="ut-loading">…</span></span>' +
+            '<button type="button" class="ut-ic" data-act="speak" data-lang="' + l + '" title="Listen" aria-label="Listen to ' + LANGS[l].name + '">🔊</button>' +
+            '<button type="button" class="ut-ic" data-act="copy" data-lang="' + l + '" title="Copy" aria-label="Copy ' + LANGS[l].name + '">⧉</button>' +
+          '</div>'
+        ).join('') +
+      '</div>' +
+      (src === 'ar' && count(state.text, RX.harakat) > 4 ? '<div class="ut-quran-note">For Quranic ayat, follow the approved translation in your textbook.</div>' : '');
     card.classList.add('ut-show');
     place(card, state.rect);
 
     const reqId = ++state.req;
-    translate(state.text, src, tgt, state.sure).then(r => {
-      if (reqId !== state.req || !card) return;
-      const out = card.querySelector('.ut-out');
-      const note = card.querySelector('.ut-note');
-      if (!r.text) {
-        out.innerHTML = '<span class="ut-err">Translation needs an internet connection. Try again when online.</span>';
-        out.setAttribute('dir', 'ltr');
-      } else {
-        card.dataset.out = r.text;
-        let html = esc(r.text);
-        if (r.dict && r.dict !== r.text) html += '<div class="ut-dict"><span>Textbook dictionary:</span> ' + esc(r.dict) + '</div>';
-        out.innerHTML = html;
-        note.textContent = r.source === 'dictionary' ? 'Dictionary meaning' : 'Machine translation';
-        if (src === 'ar' && count(state.text, RX.harakat) > 4) {
-          html += '<div class="ut-dict ut-quran-note">For Quranic ayat, follow the approved translation in your textbook.</div>';
-          out.innerHTML = html;
-        }
-      }
-      place(card, state.rect);
+    targetsFor(src).forEach(l => {
+      translate(state.text, src, l, state.sure).then(r => {
+        if (reqId !== state.req || !card) return;
+        const cell = card.querySelector('.ut-row[data-row="' + l + '"] .ut-mean');
+        if (!cell) return;
+        if (!r.text) { cell.innerHTML = '<span class="ut-err">offline</span>'; return; }
+        state.outs[l] = r.text;
+        cell.textContent = r.text;
+        cell.title = r.source === 'dictionary' ? 'Dictionary meaning' : 'Machine translation';
+        place(card, state.rect);
+      });
     });
   }
 
