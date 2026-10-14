@@ -373,6 +373,75 @@
     }
   }, true);
 
+  // ── press-and-hold on any word opens the card for that word ─────────────
+  const HOLD_MS = 450, HOLD_SLOP = 8;
+  const WORD_CH = /[\p{L}\p{M}\p{N}'’\-]/u;
+  let hold = null, swallowClick = false;
+
+  function wordAt(x, y) {
+    let node, off;
+    if (document.caretRangeFromPoint) {
+      const r = document.caretRangeFromPoint(x, y);
+      if (!r) return null;
+      node = r.startContainer; off = r.startOffset;
+    } else if (document.caretPositionFromPoint) {
+      const p = document.caretPositionFromPoint(x, y);
+      if (!p) return null;
+      node = p.offsetNode; off = p.offset;
+    } else return null;
+    if (!node || node.nodeType !== 3) return null;
+    const host = node.parentElement;
+    if (!host || host.closest(IGNORE_SEL)) return null;
+    const s = node.data;
+    let a = off, b = off;
+    while (a > 0 && WORD_CH.test(s[a - 1])) a--;
+    while (b < s.length && WORD_CH.test(s[b])) b++;
+    const word = s.slice(a, b).replace(/^['’\-]+|['’\-]+$/g, '');
+    if (!word || !/\p{L}/u.test(word)) return null;
+    const range = document.createRange();
+    range.setStart(node, a); range.setEnd(node, b);
+    const rect = range.getBoundingClientRect();
+    // caret APIs snap to the nearest text, so make sure the pointer is really on the word
+    if (!rect || x < rect.left - 4 || x > rect.right + 4 || y < rect.top - 4 || y > rect.bottom + 4) return null;
+    return { word, range, rect };
+  }
+
+  function cancelHold() { if (hold) { clearTimeout(hold.t); hold = null; } }
+
+  document.addEventListener('pointerdown', e => {
+    cancelHold();
+    if (e.button !== 0 || !e.isPrimary) return;
+    if (e.target.closest && e.target.closest(IGNORE_SEL)) return;
+    const x = e.clientX, y = e.clientY;
+    hold = { x, y, t: setTimeout(() => {
+      hold = null;
+      const w = wordAt(x, y);
+      if (!w) return;
+      swallowClick = true;
+      const sel = window.getSelection && window.getSelection();
+      if (sel && e.pointerType === 'mouse') sel.removeAllRanges();
+      state.range = w.range;
+      openCard(w.word, null, { left: w.rect.left, right: w.rect.right, top: w.rect.top, bottom: w.rect.bottom, width: w.rect.width });
+    }, HOLD_MS) };
+  }, true);
+  document.addEventListener('pointermove', e => {
+    if (hold && Math.hypot(e.clientX - hold.x, e.clientY - hold.y) > HOLD_SLOP) cancelHold();
+  }, true);
+  document.addEventListener('pointerup', cancelHold, true);
+  document.addEventListener('pointercancel', cancelHold, true);
+  window.addEventListener('scroll', cancelHold, true);
+  // the release after a hold must not also click the word (open a drawer, follow a link…)
+  document.addEventListener('click', e => {
+    if (!swallowClick) return;
+    swallowClick = false;
+    if (e.target.closest && e.target.closest('.ut-root')) return;
+    e.preventDefault(); e.stopPropagation();
+  }, true);
+  document.addEventListener('pointerdown', () => { swallowClick = false; });
+  document.addEventListener('contextmenu', e => {
+    if (card && card.classList.contains('ut-show') && swallowClick) e.preventDefault();
+  }, true);
+
   // outside click closes the card; Esc closes everything
   document.addEventListener('mousedown', e => {
     if (card && card.classList.contains('ut-show') && !(e.target.closest && e.target.closest('.ut-root'))) hideCard();
