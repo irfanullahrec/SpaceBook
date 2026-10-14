@@ -250,6 +250,7 @@
       });
       document.body.appendChild(card);
     }
+    card.dataset.via = 'select';
     renderCard();
   }
 
@@ -373,7 +374,7 @@
     }
   }, true);
 
-  // ── press-and-hold on any word opens the card for that word ─────────────
+  // ── finding the word under the pointer ─────────────
   const HOLD_MS = 450, HOLD_SLOP = 8;
   const WORD_CH = /[\p{L}\p{M}\p{N}'’\-]/u;
   let hold = null, swallowClick = false;
@@ -406,11 +407,51 @@
     return { word, range, rect };
   }
 
-  function cancelHold() { if (hold) { clearTimeout(hold.t); hold = null; } }
+  const asRect = r => ({ left: r.left, right: r.right, top: r.top, bottom: r.bottom, width: r.width });
+  function hasSelection() { const s = window.getSelection && window.getSelection(); return !!(s && !s.isCollapsed && s.toString().trim()); }
 
+  // ── mouse: resting the pointer on a word opens its card; clicks are left alone ──
+  const HOVER_MS = 280, HIDE_MS = 380;
+  let hoverKey = '', hoverOpenT = 0, hoverHideT = 0, hoverRaf = false, lastMove = null;
+  function hoverCardOpen() { return card && card.classList.contains('ut-show') && card.dataset.via === 'hover'; }
+  function scheduleHide() {
+    clearTimeout(hoverHideT);
+    if (hoverCardOpen()) hoverHideT = setTimeout(() => { if (hoverCardOpen()) { hideCard(); hoverKey = ''; } }, HIDE_MS);
+  }
+  function onHoverFrame() {
+    hoverRaf = false;
+    const e = lastMove;
+    if (!e) return;
+    if (e.target.closest && e.target.closest('.ut-root')) { clearTimeout(hoverHideT); clearTimeout(hoverOpenT); return; }
+    if (e.buttons || hasSelection() || (pill && pill.classList.contains('ut-show'))) { clearTimeout(hoverOpenT); return; }
+    if (card && card.classList.contains('ut-show') && card.dataset.via !== 'hover') return; // a card opened from a selection stays put
+    const w = wordAt(e.clientX, e.clientY);
+    if (!w) { clearTimeout(hoverOpenT); hoverKey = ''; scheduleHide(); return; }
+    const key = w.word + '@' + Math.round(w.rect.left) + ',' + Math.round(w.rect.top);
+    if (key === hoverKey) { clearTimeout(hoverHideT); return; }
+    hoverKey = key;
+    clearTimeout(hoverOpenT);
+    hoverOpenT = setTimeout(() => {
+      if (hoverKey !== key || hasSelection()) return;
+      clearTimeout(hoverHideT);
+      state.range = w.range;
+      openCard(w.word, null, asRect(w.rect));
+      card.dataset.via = 'hover';
+    }, HOVER_MS);
+  }
+  document.addEventListener('pointermove', e => {
+    if (e.pointerType !== 'mouse') return;
+    lastMove = e;
+    if (!hoverRaf) { hoverRaf = true; requestAnimationFrame(onHoverFrame); }
+  }, { passive: true });
+  document.addEventListener('mouseleave', () => { clearTimeout(hoverOpenT); hoverKey = ''; scheduleHide(); });
+  window.addEventListener('scroll', () => { clearTimeout(hoverOpenT); hoverKey = ''; }, true);
+
+  // ── touch (no hover): press-and-hold on a word opens its card ──
+  function cancelHold() { if (hold) { clearTimeout(hold.t); hold = null; } }
   document.addEventListener('pointerdown', e => {
     cancelHold();
-    if (e.button !== 0 || !e.isPrimary) return;
+    if (e.pointerType === 'mouse' || !e.isPrimary) return;
     if (e.target.closest && e.target.closest(IGNORE_SEL)) return;
     const x = e.clientX, y = e.clientY;
     hold = { x, y, t: setTimeout(() => {
@@ -418,10 +459,9 @@
       const w = wordAt(x, y);
       if (!w) return;
       swallowClick = true;
-      const sel = window.getSelection && window.getSelection();
-      if (sel && e.pointerType === 'mouse') sel.removeAllRanges();
       state.range = w.range;
-      openCard(w.word, null, { left: w.rect.left, right: w.rect.right, top: w.rect.top, bottom: w.rect.bottom, width: w.rect.width });
+      openCard(w.word, null, asRect(w.rect));
+      card.dataset.via = 'touch';
     }, HOLD_MS) };
   }, true);
   document.addEventListener('pointermove', e => {
@@ -430,7 +470,7 @@
   document.addEventListener('pointerup', cancelHold, true);
   document.addEventListener('pointercancel', cancelHold, true);
   window.addEventListener('scroll', cancelHold, true);
-  // the release after a hold must not also click the word (open a drawer, follow a link…)
+  // the release after a hold must not also tap the word (open a drawer, follow a link…)
   document.addEventListener('click', e => {
     if (!swallowClick) return;
     swallowClick = false;
@@ -474,44 +514,27 @@
     return null;
   }
 
+  // Clicking a word keeps whatever the page already does on click (sentence
+  // translation, drawers…); word translation now opens on hover / long-press.
+  // Only an explicit vocabulary card still opens the card when clicked.
   window.showWordLookupPopover = function (wordText, targetEl, event) {
+    if (!(targetEl && targetEl.closest && targetEl.closest('.vocab-card'))) return;
     const word = String(wordText || '').trim().replace(/^[^\w؀-ۿ]+|[^\w؀-ۿ]+$/g, '');
     if (!word) return;
-    // a sentence is being selected — let the selection bar handle it
-    const sel = window.getSelection && window.getSelection();
-    if (sel && !sel.isCollapsed && /\s/.test(sel.toString().trim())) return;
     state.range = null;
-    try {
-      if (sel && sel.rangeCount && !sel.isCollapsed) state.range = sel.getRangeAt(0).cloneRange();
-    } catch (e) { state.range = null; }
     openCard(word, null, rectOf(targetEl, event));
   };
   window.closeWordLookupPopover = function () {
     const old = document.getElementById('eng-word-popover');
     if (old) old.remove();
-    hideCard();
+    if (card && card.dataset.via === 'select') hideCard();
   };
 
-  // app.js' quick hover tooltip on English words shows Urdu + Pashto from the dictionary;
-  // add the fourth language (Arabic) underneath once it arrives (cached after the first time)
+  // app.js' small hover tooltip (Urdu + Pashto) would sit on top of the hover
+  // card, which already shows all four languages — keep it hidden
   if (typeof window.showWordHoverTooltip === 'function') {
-    const origHover = window.showWordHoverTooltip;
-    window.showWordHoverTooltip = function (wordEl) {
-      const out = origHover.apply(this, arguments);
-      try {
-        const tip = document.getElementById('wordHoverTooltip');
-        const word = wordEl && (wordEl.dataset.word || wordEl.textContent || '').trim();
-        if (tip && word && tip.style.display === 'block' && !tip.querySelector('.ut-hover-ar')) {
-          tip.dataset.utWord = word;
-          translate(word, 'en', 'ar', true).then(r => {
-            if (!r.text || tip.dataset.utWord !== word || tip.style.display !== 'block' || tip.querySelector('.ut-hover-ar')) return;
-            const row = el('div', 'ut-hover-ar ut-ar', '<span class="ut-hover-badge">العربية</span> ' + esc(r.text));
-            row.setAttribute('dir', 'rtl');
-            tip.appendChild(row);
-          });
-        }
-      } catch (e) { /* tooltip is optional */ }
-      return out;
+    window.showWordHoverTooltip = function () {
+      if (typeof window.hideWordHoverTooltip === 'function') window.hideWordHoverTooltip();
     };
   }
 
