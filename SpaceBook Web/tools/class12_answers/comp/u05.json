@@ -1,0 +1,30 @@
+{
+"mcqs": [
+ ["B", "An array is a collection of items of the same data type stored in contiguous memory locations."],
+ ["A", "getline(cin, mystring) reads a whole line (including spaces) from cin into mystring."],
+ ["D", "String streams (stringstream) are declared in the header <sstream>."],
+ ["C", "The position number of an element in an array is its index (subscript)."],
+ ["C", "A C-string ends with the null character '\\0'."]
+],
+"objective": [
+ ["0 (zero)", "Array indexing in C/C++ starts from 0, so the first element is x[0]."],
+ ["10 elements (40 bytes when an int is 4 bytes)", "int x[10] holds 10 integers, x[0] to x[9]."],
+ ["a multi-dimensional (five-dimensional)", "It has five subscripts [100][365][24][60][60]."],
+ ["a string", "An array of characters (ending in '\\0') is called a string."],
+ ["float", "float x[12] is a one-dimensional array of 12 float elements."],
+ ["B", "False — an array is a collection of homogeneous data (all elements of the same type)."],
+ ["A", "True — e.g. int a[3] = {1, 2, 3}; initializes the array at declaration time."],
+ ["B", "False — char vowel[5] declares a character-type array, not an integer array."],
+ ["A", "True — loops (especially for loops) are the best tool to process every element of a large array using the index."],
+ ["B", "False — array elements are stored in contiguous (adjacent) memory locations, not wherever free space is available."]
+],
+"longQuestions": [
+ ["float highTemp[365] = {0};", "or, using a loop:\nfloat highTemp[365];\nfor (int day = 0; day < 365; day++)\n    highTemp[day] = 0.0;", "float is used because the temperature is stored to the nearest tenth of a degree."],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    int A[3][2], B[2][3], C[3][3];\n    cout << \"Enter elements of matrix A (3x2):\" << endl;\n    for (int i = 0; i < 3; i++)\n        for (int j = 0; j < 2; j++) cin >> A[i][j];\n    cout << \"Enter elements of matrix B (2x3):\" << endl;\n    for (int i = 0; i < 2; i++)\n        for (int j = 0; j < 3; j++) cin >> B[i][j];\n    for (int i = 0; i < 3; i++)\n        for (int j = 0; j < 3; j++) {\n            C[i][j] = 0;\n            for (int k = 0; k < 2; k++)\n                C[i][j] += A[i][k] * B[k][j];\n        }\n    cout << \"Product A x B (3x3):\" << endl;\n    for (int i = 0; i < 3; i++) {\n        for (int j = 0; j < 3; j++) cout << C[i][j] << \"\\t\";\n        cout << endl;\n    }\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    int A[3][3], B[3][3], S[3][3], D[3][3];\n    cout << \"Enter matrix A (3x3):\" << endl;\n    for (int i = 0; i < 3; i++)\n        for (int j = 0; j < 3; j++) cin >> A[i][j];\n    cout << \"Enter matrix B (3x3):\" << endl;\n    for (int i = 0; i < 3; i++)\n        for (int j = 0; j < 3; j++) cin >> B[i][j];\n    for (int i = 0; i < 3; i++)\n        for (int j = 0; j < 3; j++) {\n            S[i][j] = A[i][j] + B[i][j];\n            D[i][j] = A[i][j] - B[i][j];\n        }\n    cout << \"A + B:\" << endl;\n    for (int i = 0; i < 3; i++) {\n        for (int j = 0; j < 3; j++) cout << S[i][j] << \"\\t\";\n        cout << endl;\n    }\n    cout << \"A - B:\" << endl;\n    for (int i = 0; i < 3; i++) {\n        for (int j = 0; j < 3; j++) cout << D[i][j] << \"\\t\";\n        cout << endl;\n    }\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    int A[3][3], T[3][3];\n    cout << \"Enter matrix A (3x3):\" << endl;\n    for (int i = 0; i < 3; i++)\n        for (int j = 0; j < 3; j++) cin >> A[i][j];\n    for (int i = 0; i < 3; i++)\n        for (int j = 0; j < 3; j++)\n            T[j][i] = A[i][j];\n    cout << \"Transpose of A:\" << endl;\n    for (int i = 0; i < 3; i++) {\n        for (int j = 0; j < 3; j++) cout << T[i][j] << \"\\t\";\n        cout << endl;\n    }\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    string days[7] = {\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\", \"Sunday\"};\n    float temp[7];\n    int hottest = 0;\n    for (int i = 0; i < 7; i++) {\n        cout << \"Enter temperature of \" << days[i] << \": \";\n        cin >> temp[i];\n        if (temp[i] > temp[hottest]) hottest = i;\n    }\n    cout << \"Hottest day is \" << days[hottest] << \" with \" << temp[hottest] << \" degrees.\" << endl;\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    char a[10], t;\n    cout << \"Enter ten alphabets: \";\n    for (int i = 0; i < 10; i++) cin >> a[i];\n    for (int i = 0; i < 9; i++)\n        for (int j = i + 1; j < 10; j++)\n            if (a[i] < a[j]) { t = a[i]; a[i] = a[j]; a[j] = t; }\n    cout << \"In descending order: \";\n    for (int i = 0; i < 10; i++) cout << a[i] << \" \";\n    cout << endl;\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    int Test[2][3], sum = 0;\n    cout << \"Enter 6 values for Test[2][3]:\" << endl;\n    for (int i = 0; i < 2; i++)\n        for (int j = 0; j < 3; j++) {\n            cin >> Test[i][j];\n            sum += Test[i][j];\n        }\n    cout << \"Sum of all values = \" << sum << endl;\n    return 0;\n}"]
+]
+}

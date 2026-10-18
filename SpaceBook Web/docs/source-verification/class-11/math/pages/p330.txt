@@ -1,0 +1,24 @@
+@printed 330
+@sec 11.2(c) | Area of a triangle when measures of all the sides of a triangle are given (Hero's formula) || رقبہ جب مثلث کے تمام اضلاع کی پیمائشیں دی گئی ہوں (ہیرو کا کلیہ) || د درې ګوني ساحه کله چې د ټولو ضلعو اندازې ورکړل شي (د هیرو فورمول)
+@deco Unit-running header, "Not For Sale" notice, folio and decorative footer band excluded
+p Similarly we have $\Delta=\dfrac12b^2\dfrac{\sin\alpha\sin\gamma}{\sin\beta}=\dfrac12c^2\dfrac{\sin\alpha\sin\beta}{\sin\gamma}$ || اسی طرح ہمارے پاس ہے $\Delta=\dfrac12b^2\dfrac{\sin\alpha\sin\gamma}{\sin\beta}=\dfrac12c^2\dfrac{\sin\alpha\sin\beta}{\sin\gamma}$ || په ورته ډول موږ لرو $\Delta=\dfrac12b^2\dfrac{\sin\alpha\sin\gamma}{\sin\beta}=\dfrac12c^2\dfrac{\sin\alpha\sin\beta}{\sin\gamma}$
+p (c) Area of a triangle when measures of all the sides of a triangle are given. We know that the area $\Delta$ is given by || (c) مثلث کا رقبہ جب مثلث کے تمام اضلاع کی پیمائشیں دی گئی ہوں۔ ہم جانتے ہیں کہ رقبہ $\Delta$ دیا جاتا ہے || (c) د درې ګوني ساحه کله چې د درې ګوني د ټولو ضلعو اندازې ورکړل شي. موږ پوهېږو چې ساحه $\Delta$ ورکول کېږي
+m $\Delta=\dfrac12bc\sin\alpha=\dfrac12bc\times2\sin\dfrac\alpha2\cos\dfrac\alpha2=bc\sin\dfrac\alpha2\cos\dfrac\alpha2$
+m $\text{Using half angle formulae }\Delta=bc\sqrt{\dfrac{(S-b)(S-c)}{bc}}\times\sqrt{\dfrac{S(S-a)}{bc}}=\sqrt{S(S-a)(S-b)(S-c)}\qquad(3)$
+p This formula is known as **Hero's formula** (alternatively known as Heron's formula). We now find the area of a triangle by using the above mentioned formula. || یہ کلیہ **ہیرو کا کلیہ** (متبادل طور پر ہیرن کا کلیہ) کہلاتا ہے۔ اب ہم مذکورہ کلیے سے مثلث کا رقبہ معلوم کرتے ہیں۔ || دا فورمول **د هیرو فورمول** (په بدیل ډول د هیرون فورمول) بلل کېږي. اوس موږ د پورتني فورمول په کارولو د درې ګوني ساحه پیدا کوو.
+example 15 | Find the area of the $\triangle ABC$ where $\alpha=18.4^\circ,\ b=154$ft and $c=211$ft. || $\triangle ABC$ کا رقبہ معلوم کریں جہاں $\alpha=18.4^\circ,\ b=154$ فٹ اور $c=211$ فٹ ہے۔ || د $\triangle ABC$ ساحه پیدا کړئ چېرته چې $\alpha=18.4^\circ,\ b=154$ فوټه او $c=211$ فوټه دي.
+p **Solution:** || **حل:** || **حل:**
+m $\Delta=\dfrac12bc\sin\alpha=\dfrac12(154)(211)(\sin18.4^\circ)=5128.349$
+p To two decimal places the area is 5128.35 square feet. || دو اعشاریہ مقامات تک رقبہ 5128.35 مربع فٹ ہے۔ || تر دوو اعشاري ځایونو ساحه 5128.35 مربع فوټه ده.
+endexample
+example 16 | Find the area of a triangle with angles $20^\circ,\ 50^\circ$ and $110^\circ$ if the side opposite the $50^\circ$ angle is 24 inches long. || اس مثلث کا رقبہ معلوم کریں جس کے زاویے $20^\circ,\ 50^\circ$ اور $110^\circ$ ہیں اگر $50^\circ$ زاویے کے سامنے والا ضلع 24 انچ لمبا ہو۔ || د هغه درې ګوني ساحه پیدا کړئ چې زاویې یې $20^\circ,\ 50^\circ$ او $110^\circ$ دي که د $50^\circ$ زاویې مقابل ضلع 24 انچه اوږد وي.
+p **Solution:** || **حل:** || **حل:**
+m $\text{Let }\alpha=20^\circ,\ \beta=50^\circ,\ \gamma=110^\circ.\ \text{Now }b\text{ is given which is 24 inches. Hence the area }\Delta\text{ is}$
+m $\Delta=\dfrac12b^2\dfrac{\sin\alpha\sin\gamma}{\sin\beta}=\dfrac12(24)^2\dfrac{\sin20^\circ\sin110^\circ}{\sin50^\circ}=120.83\text{ square inches.}$
+endexample
+example 17 | Find the area of a triangle having sides of 43ft, 89ft and 120ft. || اس مثلث کا رقبہ معلوم کریں جس کے اضلاع 43 فٹ، 89 فٹ اور 120 فٹ ہیں۔ || د هغه درې ګوني ساحه پیدا کړئ چې ضلعې یې 43 فوټه، 89 فوټه او 120 فوټه دي.
+p **Solution:** Since three sides (but none of the angles) are known, we need Hero's formula to find area. Let $a=43,\ b=89$ and $c=120$, then || **حل:** چونکہ تین اضلاع (مگر کوئی زاویہ نہیں) معلوم ہیں، رقبہ معلوم کرنے کے لیے ہمیں ہیرو کا کلیہ درکار ہے۔ فرض کریں $a=43,\ b=89$ اور $c=120$، تب || **حل:** ځکه چې درې ضلعې (خو هیڅ زاویه نه) معلومې دي، د ساحې د موندلو لپاره موږ ته د هیرو فورمول په کار دی. فرض کړئ $a=43,\ b=89$ او $c=120$، بیا
+m $S=\dfrac12(43+89+120)=126$
+m $\Delta=\sqrt{126(126-43)(126-89)(126-120)}\simeq1523.70$
+p To two decimal places the area is 1523 square ft (as printed). || دو اعشاریہ مقامات تک رقبہ 1523 مربع فٹ ہے (جیسا چھپا ہے)۔ || تر دوو اعشاري ځایونو ساحه 1523 مربع فوټه ده (لکه چې چاپ شوی).
+endexample

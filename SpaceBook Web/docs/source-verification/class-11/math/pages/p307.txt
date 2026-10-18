@@ -1,0 +1,24 @@
+@printed 307
+@deco Unit-running header, folio and decorative footer band excluded
+m \therefore\ \sin16^\circ+\sin12^\circ=2\sin\dfrac{16^\circ+12^\circ}2\cos\dfrac{16^\circ-12^\circ}2=2\sin\dfrac{28^\circ}2\cos\dfrac{4^\circ}2=2\sin14^\circ\cos4^\circ
+endexample
+example 20 | Express $\cos4\theta-\cos2\theta$ as a product. || $\cos4\theta-\cos2\theta$ کو حاصل ضرب کی صورت میں ظاہر کریں۔ || $\cos4\theta-\cos2\theta$ د ضرب په بڼه وښیئ.
+p **Solution:** || **حل:** || **حل:**
+m $\text{We have }\cos\theta-\cos\phi=-2\sin\dfrac{\theta+\phi}2\sin\dfrac{\theta-\phi}2$
+m $\therefore\ \cos4\theta-\cos2\theta=-2\sin\dfrac{4\theta+2\theta}2\sin\dfrac{4\theta-2\theta}2=-2\sin\dfrac{6\theta}2\sin\dfrac{2\theta}2=-2\sin3\theta\sin\theta$
+endexample
+example 21 | Show that $\dfrac{\cos\alpha-\cos\beta}{\sin\alpha+\sin\beta}=-\tan\dfrac12(\alpha-\beta)$ || دکھائیں کہ $\dfrac{\cos\alpha-\cos\beta}{\sin\alpha+\sin\beta}=-\tan\dfrac12(\alpha-\beta)$ || وښایاست چې $\dfrac{\cos\alpha-\cos\beta}{\sin\alpha+\sin\beta}=-\tan\dfrac12(\alpha-\beta)$
+p **Solution:** || **حل:** || **حل:**
+m $\text{L.H.S}=\dfrac{\cos\alpha-\cos\beta}{\sin\alpha+\sin\beta}=\dfrac{-2\sin\frac{\alpha+\beta}2\sin\frac{\alpha-\beta}2}{2\sin\frac{\alpha+\beta}2\cos\frac{\alpha-\beta}2}=\dfrac{-\sin\frac{\alpha-\beta}2}{\cos\frac{\alpha-\beta}2}=-\tan\dfrac{\alpha-\beta}2=-\tan\dfrac12(\alpha-\beta)=\text{R.H.S}$
+endexample
+example 22 | Show that $\sin5\theta+2\sin3\theta+\sin\theta=4\sin3\theta\cos^2\theta$ || دکھائیں کہ $\sin5\theta+2\sin3\theta+\sin\theta=4\sin3\theta\cos^2\theta$ || وښایاست چې $\sin5\theta+2\sin3\theta+\sin\theta=4\sin3\theta\cos^2\theta$
+p **Solution:** || **حل:** || **حل:**
+m $\text{L.H.S}=\sin5\theta+2\sin3\theta+\sin\theta=(\sin5\theta+\sin3\theta)+(\sin3\theta+\sin\theta)$
+m $=2\sin\left(\dfrac{5\theta+3\theta}2\right)\cos\left(\dfrac{5\theta-3\theta}2\right)+2\sin\left(\dfrac{3\theta+\theta}2\right)\cos\left(\dfrac{3\theta-\theta}2\right)$
+m $=2\sin\dfrac{8\theta}2\cos\dfrac{2\theta}2+2\sin\dfrac{4\theta}2\cos\dfrac{2\theta}2=2\sin4\theta\cos\theta+2\sin2\theta\cos\theta$
+m $=2\cos\theta(\sin4\theta+\sin2\theta)=2\cos\theta\left[2\sin\left(\dfrac{4\theta+2\theta}2\right)\cos\left(\dfrac{4\theta-2\theta}2\right)\right]$
+m $=2\cos\theta(2\sin3\theta\cos\theta)=4\sin3\theta\cos^2\theta=\text{R.H.S.}$
+endexample
+example 23 | Show that $\left(\dfrac{\sin3\theta+\sin\theta}{\sin3\theta-\sin\theta}\right)\left(\dfrac{\cos\theta+\cos\theta}{\cos3\theta-\cos\theta}\right)=-\cot^2\theta$ (the second factor is printed as $\dfrac{\cos3\theta+\cos\theta}{\cos3\theta-\cos\theta}$) || دکھائیں کہ $\left(\dfrac{\sin3\theta+\sin\theta}{\sin3\theta-\sin\theta}\right)\left(\dfrac{\cos3\theta+\cos\theta}{\cos3\theta-\cos\theta}\right)=-\cot^2\theta$ || وښایاست چې $\left(\dfrac{\sin3\theta+\sin\theta}{\sin3\theta-\sin\theta}\right)\left(\dfrac{\cos3\theta+\cos\theta}{\cos3\theta-\cos\theta}\right)=-\cot^2\theta$
+p **Solution:** || **حل:** || **حل:**
+m $\text{L.H.S}=\left(\dfrac{\sin3\theta+\sin\theta}{\sin3\theta-\sin\theta}\right)\left(\dfrac{\cos3\theta+\cos\theta}{\cos3\theta-\cos\theta}\right)=\left(\dfrac{2\sin2\theta\cos\theta}{2\sin\theta\cos2\theta}\right)\left(\dfrac{2\cos2\theta\cos\theta}{-2\sin2\theta\sin\theta}\right)$

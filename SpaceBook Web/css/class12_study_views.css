@@ -14,3 +14,4 @@
 
 /* Very long units (e.g. Physics Unit 11: 108k nodes, 358 diagrams) crash the tab when painted at once; paint cards lazily. */
 .science-lesson-cards-list > *{content-visibility:auto;contain-intrinsic-size:auto 700px;}
+[data-class12-subject] .class12-answer-code{white-space:pre;overflow-x:auto;background:var(--code-bg,rgba(127,127,127,.12));padding:.6em .8em;border-radius:6px;font-size:.92em;line-height:1.45;margin:.3em 0;}

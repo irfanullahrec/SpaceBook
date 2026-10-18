@@ -1,0 +1,363 @@
+{
+ "mcqs": [
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "D",
+   "s": [
+    "Correct choice: (d) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "D",
+   "s": [
+    "Correct choice: (d) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "Correct choice: (a) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "D",
+   "s": [
+    "Correct choice: (d) — answer key in the textbook."
+   ]
+  }
+ ],
+ "objective": [
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  [
+   "two",
+   "Answer from the textbook key."
+  ],
+  [
+   "one",
+   "Answer from the textbook key."
+  ],
+  [
+   "n",
+   "Answer from the textbook key."
+  ],
+  [
+   "n and p",
+   "Answer from the textbook key."
+  ],
+  [
+   "np, npq",
+   "Answer from the textbook key."
+  ],
+  [
+   "n",
+   "Answer from the textbook key."
+  ],
+  [
+   "0 and 1",
+   "Answer from the textbook key."
+  ],
+  [
+   "random numbers",
+   "Answer from the textbook key."
+  ],
+  [
+   "independent",
+   "Answer from the textbook key."
+  ],
+  [
+   "varies/changes",
+   "Answer from the textbook key."
+  ]
+ ],
+ "longQuestions": [
+  [
+   "A discrete uniform distribution gives equal probability to each of k possible values x₁, …, x_k: f(x) = 1/k.",
+   "Example: the number on a fair die, f(x) = 1/6 for x = 1, …, 6. Mean = (k+1)/2 and variance = (k²−1)/12 for values 1 to k."
+  ],
+  [
+   "Random digits are the digits 0–9 each occurring with equal probability 1/10, independently of one another.",
+   "Random numbers are numbers formed from random digits; a random number generator is a device or computer program (e.g. RAND in a calculator/computer) that produces such numbers; a random number table is a printed table of random digits arranged in rows and columns, used to select random samples."
+  ],
+  [
+   "Number the colleges from 001 to 206 (three-digit numbers).",
+   "Start at any point of the random number table and read three-digit numbers in a fixed direction (row or column).",
+   "Select a college whenever the number lies between 001 and 206; ignore numbers above 206 and repetitions; continue until 10 different colleges are selected — these form the random sample."
+  ],
+  [
+   "i) Bernoulli experiment — a trial with only two possible outcomes, success or failure, with P(success) = p.",
+   "ii) Bernoulli random variable — X = 1 for success and 0 for failure.",
+   "iii) Binomial experiment — n independent Bernoulli trials with the same probability of success p.",
+   "iv) Binomial random variable — X = number of successes in n trials, X = 0, 1, …, n."
+  ],
+  [
+   "Bernoulli distribution: f(x) = pˣq¹⁻ˣ, x = 0, 1, where q = 1 − p.",
+   "Mean E(X) = 0·q + 1·p = p; E(X²) = p, so variance = p − p² = pq; standard deviation = √(pq)."
+  ],
+  [
+   "i) A binomial experiment consists of n repeated trials with conditions: (1) fixed number of trials n; (2) each trial has two outcomes, success and failure; (3) probability of success p is constant; (4) trials are independent.",
+   "ii) For X ~ b(n, p), f(x) = ⁿCₓ pˣ qⁿ⁻ˣ. Mean = Σ x f(x) = np (taking np out and summing the remaining binomial terms to 1); E[X(X−1)] = n(n−1)p², so variance = n(n−1)p² + np − n²p² = npq."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     4
+    ]
+   ]
+  },
+  [
+   "P(X = x) = ⁵Cₓ (3/8)ˣ (5/8)⁵⁻ˣ, with denominator 8⁵ = 32768.",
+   "x = 0: 3125/32768 = 0.0954; x = 1: 9375/32768 = 0.2861; x = 2: 11250/32768 = 0.3433; x = 3: 6750/32768 = 0.2060; x = 4: 2025/32768 = 0.0618; x = 5: 243/32768 = 0.0074; total = 1.",
+   "Mean = np = 15/8 = 1.875; variance = npq = 75/64 = 1.17."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     6
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     7
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     8
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     9
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     10
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     11
+    ]
+   ]
+  },
+  [
+   "a) A binomial distribution gives the probability of x successes in n independent trials each with success probability p: f(x) = ⁿCₓ pˣ qⁿ⁻ˣ, x = 0, 1, …, n. It arises in practice whenever a fixed number of independent two-outcome trials is made — e.g. number of defective items in a sample, number of heads in coin tosses, number of patients cured.",
+   "b) Mean = np and S.D = √(npq) (derived by E(X) = np and E[X(X−1)] = n(n−1)p², giving variance npq)."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     12
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     13
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     14
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     15
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     16
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     17
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     18
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     19
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     20
+    ]
+   ]
+  },
+  [
+   "Hypergeometric experiment — n items are drawn without replacement from a finite population of N items of which k are 'successes' and N − k 'failures'; the trials are dependent.",
+   "Hypergeometric random variable — X = number of successes among the n items drawn.",
+   "Hypergeometric probability distribution — P(X = x) = ᵏCₓ·ᴺ⁻ᵏCₙ₋ₓ / ᴺCₙ, x = max(0, n−N+k), …, min(n, k); mean nk/N and variance n(k/N)(1 − k/N)(N − n)/(N − 1)."
+  ],
+  [
+   "For a hypergeometric distribution (n items drawn without replacement from N items of which k are successes): f(x) = ᵏCₓ·ᴺ⁻ᵏCₙ₋ₓ / ᴺCₙ.",
+   "Mean = n·k/N.",
+   "Variance = n·(k/N)·(1 − k/N)·(N − n)/(N − 1)."
+  ],
+  [
+   "N = 11 balls, k = 7 black, n = 5 drawn; P(X = x) = ⁷Cₓ·⁴C₅₋ₓ / ¹¹C₅ with ¹¹C₅ = 462; X can be 1 to 5 (there are only 4 white balls).",
+   "x = 1: 7/462; x = 2: 84/462; x = 3: 210/462; x = 4: 140/462; x = 5: 21/462 — total 462/462 = 1.",
+   "Mean = Σx f(x) = 1470/462 = 3.18; by formula nk/N = 35/11 = 3.18. Variance = Σx² f(x) − mean² = 4998/462 − 10.12 = 0.694; by formula n(k/N)(1−k/N)(N−n)/(N−1) = 5(7/11)(4/11)(6/10) = 0.694 — both agree."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     23
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex3",
+     24
+    ]
+   ]
+  }
+ ]
+}

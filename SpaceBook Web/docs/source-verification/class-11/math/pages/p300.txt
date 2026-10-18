@@ -1,0 +1,20 @@
+@printed 300
+@sec 10.3.3 | Triple Angle Identities || تہرے زاویے کی مماثلتیں || د درې چنده زاویې هویتونه
+@deco Unit-running header, folio and decorative footer band excluded
+### 10.3.3. Triple Angle Identities || 10.3.3۔ تہرے زاویے کی مماثلتیں || 10.3.3. د درې چنده زاویې هویتونه
+p We have $\sin3\alpha=\sin(2\alpha+\alpha)=\sin2\alpha\cos\alpha+\cos2\alpha\sin\alpha$ || ہمارے پاس ہے $\sin3\alpha=\sin(2\alpha+\alpha)=\sin2\alpha\cos\alpha+\cos2\alpha\sin\alpha$ || موږ لرو $\sin3\alpha=\sin(2\alpha+\alpha)=\sin2\alpha\cos\alpha+\cos2\alpha\sin\alpha$
+m $=2\sin\alpha\cos\alpha\cos\alpha+(1-2\sin^2\alpha)\sin\alpha\qquad(\text{By (3) and (5)})$
+m $=2\sin\alpha\cos^2\alpha+\sin\alpha-2\sin^3\alpha$
+m $=2\sin\alpha(1-\sin^2\alpha)+\sin\alpha-2\sin^3\alpha\qquad(\because\sin^2\alpha+\cos^2\alpha=1)$
+m $=2\sin\alpha-2\sin^3\alpha+\sin\alpha-2\sin^3\alpha=3\sin\alpha-4\sin^3\alpha$
+m $\therefore\ \sin3\alpha=3\sin\alpha-4\sin^3\alpha\qquad(12)$
+m $\cos3\alpha=\cos(2\alpha+\alpha)=\cos2\alpha\cos\alpha-\sin2\alpha\sin\alpha=(2\cos^2\alpha-1)\cos\alpha-2\sin\alpha\cos\alpha\sin\alpha\qquad(\text{by (3) and (6)})$
+m $=2\cos^3\alpha-\cos\alpha-2\sin^2\alpha\cos\alpha=2\cos^3\alpha-\cos\alpha-2(1-\cos^2\alpha)\cos\alpha\qquad(\because\sin^2\alpha+\cos^2\alpha=1)$
+m $=2\cos^3\alpha-\cos\alpha-2\cos\alpha+2\cos^3\alpha=4\cos^3\alpha-3\cos\alpha$
+m $\therefore\ \cos3\alpha=4\cos^3\alpha-3\cos\alpha\qquad(13)$
+m $\tan3\alpha=\tan(2\alpha+\alpha)=\dfrac{\tan2\alpha+\tan\alpha}{1-\tan2\alpha\tan\alpha}=\dfrac{\frac{2\tan\alpha}{1-\tan^2\alpha}+\tan\alpha}{1-\frac{2\tan\alpha}{1-\tan^2\alpha}\cdot\tan\alpha}\qquad(\text{By (7)})$
+m $=\dfrac{\frac{2\tan\alpha+\tan\alpha(1-\tan^2\alpha)}{1-\tan^2\alpha}}{\frac{1-\tan^2\alpha-2\tan^2\alpha}{1-\tan^2\alpha}}=\dfrac{3\tan\alpha-\tan^3\alpha}{1-3\tan^2\alpha}$
+m $\therefore\ \tan3\alpha=\dfrac{3\tan\alpha-\tan^3\alpha}{1-3\tan^2\alpha}\qquad(14)$
+example 11 | Prove the identity $\dfrac{\sin2x}{\sin x}-\dfrac{\cos2x}{\cos x}=\sec x$. || مماثلت ثابت کریں $\dfrac{\sin2x}{\sin x}-\dfrac{\cos2x}{\cos x}=\sec x$۔ || هویت ثابت کړئ $\dfrac{\sin2x}{\sin x}-\dfrac{\cos2x}{\cos x}=\sec x$.
+p **Solution:** || **حل:** || **حل:**
+m $\dfrac{\sin2x}{\sin x}-\dfrac{\cos2x}{\cos x}=\dfrac{2\sin x\cos x}{\sin x}-\dfrac{\cos^2x-\sin^2x}{\cos x}\qquad(\text{using double-angle identities})$

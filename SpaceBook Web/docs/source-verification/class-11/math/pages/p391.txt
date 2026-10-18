@@ -1,0 +1,25 @@
+@printed 391
+@deco Running header, folio and decorative footer band excluded
+p Thus $\dfrac y2=\text{Tan}^{-1}\sqrt{\dfrac{1-x}{1+x}}$, as required. || یوں $\dfrac y2=\text{Tan}^{-1}\sqrt{\dfrac{1-x}{1+x}}$، جیسا کہ مطلوب تھا۔ || په دې توګه $\dfrac y2=\text{Tan}^{-1}\sqrt{\dfrac{1-x}{1+x}}$، لکه چې غوښتل شوی و.
+endexample
+@sec 12.4.4 | Addition and Subtraction Formulae of Inverse Trigonometric Functions || معکوس مثلثیاتی تفاعل کے جمع اور تفریق کے کلیات || د معکوس مثلثاتي تابعګانو د جمع او تفریق فورمولونه
+### 12.4.4 Addition and Subtraction Formulae of Inverse Trigonometric Functions || 12.4.4 معکوس مثلثیاتی تفاعل کے جمع اور تفریق کے کلیات || 12.4.4 د معکوس مثلثاتي تابعګانو د جمع او تفریق فورمولونه
+p In this section we aim at to prove some important addition and subtraction formulae of inverse trigonometric functions. || اس حصے میں ہمارا مقصد معکوس مثلثیاتی تفاعل کے چند اہم جمع اور تفریق کے کلیات ثابت کرنا ہے۔ || پدې برخه کې موږ غواړو د معکوس مثلثاتي تابعګانو ځینې مهم د جمع او تفریق فورمولونه ثابت کړو.
+box theorem | 1.
+m $\text{Sin}^{-1}A+\text{Sin}^{-1}B=\text{Sin}^{-1}\left(A\sqrt{1-B^2}+B\sqrt{1-A^2}\right)$
+endbox
+p Let $x=\text{Sin}^{-1}A\Rightarrow\sin x=A$ and $y=\text{Sin}^{-1}B\Rightarrow\sin y=B$. Since $\cos^2x+\sin^2x=1$, so $\cos x=\pm\sqrt{1-\sin^2x}=\pm\sqrt{1-A^2}$. For $\sin x=A$, domain is $\left[-\dfrac\pi2,\dfrac\pi2\right]$ in which cosine is positive, so $\cos x=\sqrt{1-A^2}$. Similarly $\cos y=\sqrt{1-B^2}$. We have $\sin(x+y)=\sin x\cos y+\cos x\sin y$. || فرض کریں $x=\text{Sin}^{-1}A\Rightarrow\sin x=A$ اور $y=\text{Sin}^{-1}B\Rightarrow\sin y=B$۔ چونکہ $\cos^2x+\sin^2x=1$، اس لیے $\cos x=\pm\sqrt{1-\sin^2x}=\pm\sqrt{1-A^2}$۔ $\sin x=A$ کے لیے دائرۂ کار $\left[-\dfrac\pi2,\dfrac\pi2\right]$ ہے جس میں کوسائن مثبت ہے، لہٰذا $\cos x=\sqrt{1-A^2}$۔ اسی طرح $\cos y=\sqrt{1-B^2}$۔ ہمارے پاس $\sin(x+y)=\sin x\cos y+\cos x\sin y$ ہے۔ || فرض کړئ $x=\text{Sin}^{-1}A\Rightarrow\sin x=A$ او $y=\text{Sin}^{-1}B\Rightarrow\sin y=B$. ځکه چې $\cos^2x+\sin^2x=1$، نو $\cos x=\pm\sqrt{1-\sin^2x}=\pm\sqrt{1-A^2}$. د $\sin x=A$ لپاره ډومېن $\left[-\dfrac\pi2,\dfrac\pi2\right]$ دی چې په کې کوساین مثبت دی، نو $\cos x=\sqrt{1-A^2}$. په ورته ډول $\cos y=\sqrt{1-B^2}$. موږ لرو $\sin(x+y)=\sin x\cos y+\cos x\sin y$.
+m \Rightarrow\sin(x+y)=A\sqrt{1-B^2}+B\sqrt{1-A^2}\Rightarrow x+y=\text{Sin}^{-1}\left(A\sqrt{1-B^2}+B\sqrt{1-A^2}\right)
+m \Rightarrow\text{Sin}^{-1}A+\text{Sin}^{-1}B=\text{Sin}^{-1}\left(A\sqrt{1-B^2}+B\sqrt{1-A^2}\right)
+@issue The printed proof of formula 1 writes sin(x+y) = A√(1−A²) + B√(1−B²) and ends with a minus sign; both slips are corrected above to match the formula as stated (A√(1−B²) + B√(1−A²)).
+box theorem | 2.
+m $\text{Sin}^{-1}A-\text{Sin}^{-1}B=\text{Sin}^{-1}\left(A\sqrt{1-B^2}-B\sqrt{1-A^2}\right)$
+endbox
+p Proof of this formula is similar to (1), so is left as an exercise. || اس کلیے کا ثبوت (1) کی طرح ہے، اس لیے مشق کے طور پر چھوڑا گیا ہے۔ || د دې فورمول ثبوت د (1) په څېر دی، نو تمرین ته پرېښودل شوی.
+p (Printed form of formula 2: $\text{Sin}^{-1}A-\text{Sin}^{-1}B=\text{Sin}^{-1}\left(A\sqrt{1-A^2}-B\sqrt{1-B^2}\right)$; the radicals are interchanged in print, as in formula 1.) || (کلیہ 2 کی چھپی ہوئی صورت: $\text{Sin}^{-1}A-\text{Sin}^{-1}B=\text{Sin}^{-1}\left(A\sqrt{1-A^2}-B\sqrt{1-B^2}\right)$؛ کلیہ 1 کی طرح چھپائی میں جذور آپس میں بدلے ہوئے ہیں۔) || (د 2 فورمول چاپ شوی بڼه: $\text{Sin}^{-1}A-\text{Sin}^{-1}B=\text{Sin}^{-1}\left(A\sqrt{1-A^2}-B\sqrt{1-B^2}\right)$؛ د 1 فورمول په څېر په چاپ کې جذرونه سره بدل شوي.)
+box theorem | 3.
+m $\text{Cos}^{-1}A+\text{Cos}^{-1}B=\text{Cos}^{-1}\left(AB-\sqrt{1-A^2}\sqrt{1-B^2}\right)$
+endbox
+p Let $x=\text{Cos}^{-1}A\Rightarrow\cos x=A$ and $y=\text{Cos}^{-1}B\Rightarrow\cos y=B$. We have $\sin x=\pm\sqrt{1-\cos^2x}=\pm\sqrt{1-A^2}$. For $\cos x=A$, domain is $[0,\pi]$ in which sine is positive, so $\sin x=\sqrt{1-A^2}$. Similarly $\sin y=\sqrt{1-B^2}$. Now $\cos(x+y)=\cos x\cos y-\sin x\sin y$ || فرض کریں $x=\text{Cos}^{-1}A\Rightarrow\cos x=A$ اور $y=\text{Cos}^{-1}B\Rightarrow\cos y=B$۔ ہمارے پاس $\sin x=\pm\sqrt{1-\cos^2x}=\pm\sqrt{1-A^2}$ ہے۔ $\cos x=A$ کے لیے دائرۂ کار $[0,\pi]$ ہے جس میں سائن مثبت ہے، لہٰذا $\sin x=\sqrt{1-A^2}$۔ اسی طرح $\sin y=\sqrt{1-B^2}$۔ اب $\cos(x+y)=\cos x\cos y-\sin x\sin y$ || فرض کړئ $x=\text{Cos}^{-1}A\Rightarrow\cos x=A$ او $y=\text{Cos}^{-1}B\Rightarrow\cos y=B$. موږ لرو $\sin x=\pm\sqrt{1-\cos^2x}=\pm\sqrt{1-A^2}$. د $\cos x=A$ لپاره ډومېن $[0,\pi]$ دی چې په کې ساین مثبت دی، نو $\sin x=\sqrt{1-A^2}$. په ورته ډول $\sin y=\sqrt{1-B^2}$. اوس $\cos(x+y)=\cos x\cos y-\sin x\sin y$
+m \Rightarrow\cos(x+y)=AB-\sqrt{1-A^2}\sqrt{1-B^2}\Rightarrow x+y=\text{Cos}^{-1}\left(AB-\sqrt{1-A^2}\sqrt{1-B^2}\right)
+m \Rightarrow\text{Cos}^{-1}A+\text{Cos}^{-1}B=\text{Cos}^{-1}\left(AB-\sqrt{1-A^2}\sqrt{1-B^2}\right)

@@ -1,0 +1,34 @@
+{
+"mcqs": [
+ ["C", "Functions with the same name but a different number or types of parameters are overloaded functions — function overloading."],
+ ["C", "A function that returns no value is declared with the return type void."],
+ ["A", "Arguments (parameters) of a function are separated by commas, e.g. sum(int a, int b)."],
+ ["A", "Parameters declared inside the parentheses are local to that function."],
+ ["D", "b = 2 is a default argument: b gets the value 2 only if no value is passed for it in the call, e.g. divide(10) uses b = 2, divide(10, 5) uses b = 5."]
+],
+"objective": [
+ ["one (a single)", "A function can normally return only one value through the return statement."],
+ ["a semicolon (;)", "The prototype ends with a semicolon, e.g. int sum(int, int); the declarator (first line of the definition) does not."],
+ ["the whole program (all functions in the file)", "A global variable is declared outside all functions and is accessible throughout the program."],
+ ["function overloading", "Function overloading lets several functions share the same name with different parameter lists."],
+ ["void", "A function returning a value must have a return type like int or float, not void."],
+ ["A", "True — functions that differ only in return type cannot be overloaded; the parameter list must differ."],
+ ["B", "False — if all the parameters are the same, changing only the return type does not overload the function; it is a compile error."],
+ ["B", "False — inline functions are expanded wherever they are called, which usually increases program size but saves the time of function calls."],
+ ["B", "False — int sum(int x, int y) returns an int value."],
+ ["A", "True — when the address is passed (pointer/reference), the function works on the original variable and can change it."]
+],
+"longQuestions": [
+ ["#include <iostream>\nusing namespace std;\nint add(int a, int b) {\n    return a + b;\n}\nint main() {\n    int x, y;\n    cout << \"Enter two integers: \";\n    cin >> x >> y;\n    cout << \"Sum = \" << add(x, y) << endl;\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nfloat mean() {\n    int a, b, c;\n    cout << \"Enter three integers: \";\n    cin >> a >> b >> c;\n    return (a + b + c) / 3.0;\n}\nint main() {\n    cout << \"Arithmetic mean = \" << mean() << endl;\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nfloat rectangle() {\n    float length, width;\n    cout << \"Enter length and width: \";\n    cin >> length >> width;\n    return length * width;\n}\nint main() {\n    float area = rectangle();\n    cout << \"Area of rectangle = \" << area << endl;\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nfloat area(float side) {\n    return side * side;\n}\nfloat perimeter(float side) {\n    return 4 * side;\n}\nint main() {\n    float s;\n    cout << \"Enter side of the square: \";\n    cin >> s;\n    cout << \"Area = \" << area(s) << endl;\n    cout << \"Perimeter = \" << perimeter(s) << endl;\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nvoid checkPrime(int n) {\n    if (n < 2) { cout << n << \" is neither prime nor composite\" << endl; return; }\n    for (int i = 2; i * i <= n; i++)\n        if (n % i == 0) { cout << n << \" is a composite number\" << endl; return; }\n    cout << n << \" is a prime number\" << endl;\n}\nint main() {\n    int num;\n    cout << \"Enter a number: \";\n    cin >> num;\n    checkPrime(num);\n    return 0;\n}"],
+ {"s": ["#include <iostream>\nusing namespace std;\nvoid table(int n) {\n    for (int i = 1; i <= 10; i++)\n        cout << n << \" x \" << i << \" = \" << n * i << endl;\n}\nint main() {\n    int num;\n    cout << \"Enter a number: \";\n    cin >> num;\n    table(num);\n    return 0;\n}"], "n": "The book's exercise numbering jumps from Q.8 to Q.10; there is no printed Q.9."},
+ ["A function is a named block of statements that performs a specific task; it can take arguments and return a value, and can be called many times.", "Built-in (library) functions are already defined in C++ header files and are used directly, e.g. sqrt(), pow() in <cmath>, strlen() in <cstring>, getch() in <conio.h>.", "User-defined functions are written by the programmer for a particular task, e.g.\nint square(int x) {\n    return x * x;\n}\ncalled as cout << square(5);"],
+ ["The function prototype (declaration) tells the compiler the function's name, return type and parameter types before it is used; it ends with a semicolon and may omit parameter names: int sum(int, int);", "The function declarator is the first line of the function definition; it has no semicolon and is followed by the function body: int sum(int a, int b) { return a + b; }", "So the only difference is the semicolon (and that the prototype need not name the parameters)."],
+ ["A default argument is a value given to a parameter in the function declaration; it is used automatically when the caller does not pass that argument, e.g. void line(char ch = '*', int n = 10); — line(); prints 10 stars, line('#', 5); prints 5 #.", "Advantages: the same function can be called with fewer arguments; simplifies calls when values are usually the same; reduces the need to write overloaded functions; makes programs easier to extend.", "Disadvantages: default arguments must be the rightmost parameters; can make the meaning of a call less clear; may cause ambiguity with overloaded functions; a wrong default may silently give wrong results."],
+ ["Function overloading means defining two or more functions with the same name but different parameter lists (number, type or order of parameters). The compiler decides which one to call from the arguments.", "#include <iostream>\nusing namespace std;\nint area(int side) { return side * side; }\nint area(int l, int w) { return l * w; }\nfloat area(float r) { return 3.14159 * r * r; }\nint main() {\n    cout << \"Square: \" << area(4) << endl;\n    cout << \"Rectangle: \" << area(4, 6) << endl;\n    cout << \"Circle: \" << area(2.5f) << endl;\n    return 0;\n}"],
+ ["Data types of arguments — functions can have the same name if their parameter types differ: void show(int x); void show(float x); show(5) calls the first, show(2.5f) the second.", "Number of arguments — functions can be overloaded by a different number of parameters: int sum(int a, int b); int sum(int a, int b, int c);", "Order of arguments — if the types appear in a different order the functions are different: void print(int a, char c); void print(char c, int a); The return type alone cannot be used to overload."]
+]
+}

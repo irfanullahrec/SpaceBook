@@ -1,0 +1,24 @@
+@printed 397
+@deco Running header, folio, "Not For Sale" mark and decorative footer band excluded
+m \cos\theta=0\qquad\text{or}\qquad\cos\theta=-1
+m \theta=\pi/2,\ 3\pi/2\qquad\text{or}\qquad\theta=\pi
+p We have three possible solutions, some of which may be extraneous because we squared both sides of the equation in step 2. Any time we raise both sides of an equation to an even power, we have the possibility of introducing extraneous solutions. We must check each possible solution in our original equation. || ہمارے پاس تین ممکنہ حل ہیں جن میں سے کچھ فالتو ہو سکتے ہیں کیونکہ ہم نے مرحلہ 2 میں مساوات کے دونوں اطراف کا مربع لیا تھا۔ جب بھی ہم مساوات کے دونوں اطراف کو جفت طاقت پر لے جاتے ہیں تو فالتو حل داخل ہونے کا امکان ہوتا ہے۔ ہمیں ہر ممکنہ حل کو اصل مساوات میں جانچنا ہوگا۔ || موږ درې ممکنه حلونه لرو چې ځینې یې ممکن زیات وي ځکه چې موږ په 2 ګام کې د معادلې دواړه اړخونه مربع کړل. هر کله چې د معادلې دواړه اړخونه جفت توان ته پورته کړو، د زیاتو حلونو د داخلېدو امکان شته. موږ باید هر ممکنه حل په اصلي معادله کې وازمایو.
+m \text{Checking }\theta=\pi/2:\ \sin\tfrac\pi2-\cos\tfrac\pi2=1-0=1\ \text{(true)}\ \Rightarrow\ \theta=\pi/2\text{ is a solution}
+m \text{Checking }\theta=\pi:\ \sin\pi-\cos\pi=0-(-1)=1\ \text{(true)}\ \Rightarrow\ \theta=\pi\text{ is a solution}
+m \text{Checking }\theta=3\pi/2:\ \sin\tfrac{3\pi}2-\cos\tfrac{3\pi}2=-1-0=-1\ne1\ \text{(false)}\ \Rightarrow\ \theta=3\pi/2\text{ is not a solution}
+endexample
+p **3. Using Quadratic Formula** || **3۔ دو درجی کلیے کا استعمال** || **3. د دوه درجې فورمول کارول**
+example 38 | Solve $\cos2x=3(\sin x-1)$ for all real values of $x$. || $x$ کی تمام حقیقی قیمتوں کے لیے حل کریں $\cos2x=3(\sin x-1)$ || د $x$ د ټولو حقیقي ارزښتونو لپاره حل کړئ $\cos2x=3(\sin x-1)$
+p **Solution:** || **حل:** || **حل:**
+m \cos2x=3(\sin x-1)\qquad[\text{given}]
+m 1-2\sin^2x=3\sin x-3\qquad[\text{double angle formula}]
+m 2\sin^2x+3\sin x-4=0\qquad[\text{quadratic equation}]
+m \sin x=\dfrac{-3\pm\sqrt{9-(4)(2)(-4)}}{(2)(2)}\qquad[\text{quadratic formula}]
+m \sin x=\dfrac{-3\pm\sqrt{41}}4
+m \sin x=-2.351\ \text{ or }\ 0.8508
+p The first answer, $-2.351$, is not a solution, since the sine function must range between $-1$ and $1$. The second answer, $0.8508$, is a valid value. $x=\sin^{-1}0.8508+2k\pi,\quad x=\pi-\sin^{-1}0.8508+2k\pi$. In radian form, $x=1.0175+2k\pi,\quad x=2.124+2k\pi$. || پہلا جواب $-2.351$ حل نہیں کیونکہ سائن تفاعل کی حد $-1$ اور $1$ کے درمیان ہوتی ہے۔ دوسرا جواب $0.8508$ درست قیمت ہے۔ $x=\sin^{-1}0.8508+2k\pi,\quad x=\pi-\sin^{-1}0.8508+2k\pi$۔ ریڈین میں $x=1.0175+2k\pi,\quad x=2.124+2k\pi$۔ || لومړی ځواب $-2.351$ حل نه دی، ځکه چې د ساین تابع حد باید د $-1$ او $1$ ترمنځ وي. دوهم ځواب $0.8508$ سم ارزښت دی. $x=\sin^{-1}0.8508+2k\pi,\quad x=\pi-\sin^{-1}0.8508+2k\pi$. په ریډیان کې $x=1.0175+2k\pi,\quad x=2.124+2k\pi$.
+@issue Example 38 prints "0.85–8" for 0.8508 in the line sin x = −2.351 or …, "0.8505" in the last general-solution line and "1–0175" for 1.0175; corrected to the computed values (−3+√41)/4 = 0.8508, arcsin 0.8508 = 1.0175, π − 1.0175 = 2.124.
+endexample
+example 39 | Find the general solution of the equation $2\sin^2x+3\sin x-2=0$ || مساوات $2\sin^2x+3\sin x-2=0$ کا عمومی حل معلوم کریں || د معادلې $2\sin^2x+3\sin x-2=0$ عمومي حل پیدا کړئ
+p **Solution:** The equation is quadratic in $\sin x$, we get || **حل:** مساوات $\sin x$ میں دو درجی ہے، ہمیں ملتا ہے || **حل:** معادله په $\sin x$ کې دوه درجه ده، موږ ترلاسه کوو
+m \sin x=\dfrac{-3\pm\sqrt{9+16}}4=\dfrac{-3\pm5}4

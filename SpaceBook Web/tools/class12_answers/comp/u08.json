@@ -1,0 +1,30 @@
+{
+"mcqs": [
+ ["B", "A constructor is called automatically whenever an object of the class is created."],
+ ["C", "A destructor frees the memory/resources allocated to an object when it is destroyed."],
+ ["D", "A destructor has the class name preceded by a tilde, e.g. ~Student()."],
+ ["C", "Constructors are mainly used to initialize the data members of objects."],
+ ["C", "Inheritance lets a new class reuse the members of an existing class — code reusability."]
+],
+"objective": [
+ ["Constructor", "A constructor is called automatically when an object is created."],
+ ["inheritance (reusability)", "Reusing code of an existing class for a new purpose is inheritance/code reusability."],
+ ["code reusability", "Inheritance allows derived classes to reuse and extend base-class code, saving time and effort."],
+ ["class", "An object is a variable (instance) of a class type."],
+ ["polymorphism (compile-time polymorphism)", "Using the same function name for different tasks is polymorphism."],
+ ["B", "False — C++ is not a pure object-oriented language; it supports both procedural and object-oriented programming (main() and global functions exist outside classes)."],
+ ["A", "True — data hiding (encapsulation) is a main feature of OOP; private members cannot be accessed from outside the class."],
+ ["A", "True — if no constructor is written, the compiler provides a default constructor automatically."],
+ ["B", "False — a constructor is called when an object is created; the destructor is called when it is destroyed/deleted."],
+ ["A", "True — function overloading is compile-time (static) polymorphism."]
+],
+"longQuestions": [
+ ["#include <iostream>\nusing namespace std;\nclass Circle {\n  private:\n    float radius;\n  public:\n    void GetRadius() {\n        cout << \"Enter radius of the circle: \";\n        cin >> radius;\n    }\n    void CalArea() {\n        float area = 3.14159 * radius * radius;\n        cout << \"Area of circle = \" << area << endl;\n    }\n};\nint main() {\n    Circle c;\n    c.GetRadius();\n    c.CalArea();\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nclass Employee {\n  protected:\n    int id;\n    string name;\n    float salary;\n  public:\n    void getEmployee() {\n        cout << \"Enter ID, name and salary: \";\n        cin >> id >> name >> salary;\n    }\n    void showEmployee() {\n        cout << \"ID: \" << id << \"  Name: \" << name << \"  Salary: \" << salary << endl;\n    }\n};\nclass Manager : public Employee {\n    string department;\n  public:\n    void getManager() {\n        getEmployee();\n        cout << \"Enter department: \";\n        cin >> department;\n    }\n    void showManager() {\n        showEmployee();\n        cout << \"Department: \" << department << endl;\n    }\n};\nint main() {\n    Manager m;\n    m.getManager();\n    m.showManager();\n    return 0;\n}"],
+ ["Shape is the base class at the top; Circle, Rectangle, Triangle and Square are derived from it (hierarchical inheritance). The arrows point from each derived class to the base class.", "                 +---------+\n                 |  Shape  |   (base class)\n                 +---------+\n                      ^\n       +-------------+-+-----------+-------------+\n       |             |             |             |\n  +--------+  +-----------+  +----------+  +--------+\n  | Circle |  | Rectangle |  | Triangle |  | Square |\n  +--------+  +-----------+  +----------+  +--------+\n                 (derived classes)", "In C++: class Circle : public Shape { … }; class Rectangle : public Shape { … }; and so on."],
+ ["#include <iostream>\nusing namespace std;\nclass ConstDest {\n  public:\n    ConstDest() {\n        cout << \"Constructor called: object created\" << endl;\n    }\n    ~ConstDest() {\n        cout << \"Destructor called: object destroyed\" << endl;\n    }\n};\nint main() {\n    ConstDest obj;\n    cout << \"Inside main()\" << endl;\n    return 0;\n}", "Output:\nConstructor called: object created\nInside main()\nDestructor called: object destroyed"],
+ ["#include <iostream>\nusing namespace std;\nclass Time {\n    int hours, minutes, seconds;\n  public:\n    Time(int h, int m, int s) {\n        hours = h; minutes = m; seconds = s;\n    }\n    void ToSecond() {\n        long total = hours * 3600L + minutes * 60 + seconds;\n        cout << hours << \":\" << minutes << \":\" << seconds << \" = \" << total << \" seconds\" << endl;\n    }\n};\nint main() {\n    int h, m, s;\n    cout << \"Enter hours, minutes and seconds: \";\n    cin >> h >> m >> s;\n    Time t(h, m, s);\n    t.ToSecond();\n    return 0;\n}"],
+ ["An object is an instance of a class — a variable of the class type that has its own copy of the data members and can use the member functions. A class is a blueprint; objects are the real entities made from it.", "Objects are created by declaring them with the class name: class_name object_name; e.g. Student s1, s2; Members are accessed with the dot (member access) operator: s1.getData(); s1.show(); (only public members can be accessed from outside the class; with a pointer the arrow operator is used: p->show();)."],
+ ["Inheritance is the process of creating a new (derived) class from an existing (base) class; the derived class gets the members of the base class and can add its own, giving code reusability. Example: class Car : public Vehicle { … }; Car inherits speed and start() from Vehicle and adds airConditioner.", "Polymorphism means 'many forms' — the same name behaves differently in different situations. Compile-time polymorphism: function overloading (area(int), area(int, int)) and operator overloading. Run-time polymorphism: virtual functions overridden in derived classes, e.g. Shape has virtual void draw(); Circle and Square each define draw() differently, and a Shape* calls the right one at run time."]
+]
+}

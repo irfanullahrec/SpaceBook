@@ -1,0 +1,20 @@
+@printed 337
+@deco Exercise banner, unit-running header, folio and decorative footer band excluded
+p Area of the triangle is given by || مثلث کا رقبہ دیا جاتا ہے || د درې ګوني ساحه ورکول کېږي
+m $\Delta=\sqrt{S(S-c)^3}=\sqrt{\dfrac{3c}2\left(\dfrac{3c}2-c\right)^3}=\sqrt{\dfrac{3c}2\times\dfrac{c^3}8}=\dfrac{\sqrt3c^2}4$
+m $R=\dfrac{abc}{4\Delta}=\dfrac{c^3}{4\cdot\frac{\sqrt3}4c^2}=\dfrac c{\sqrt3}$
+m $r=\dfrac\Delta S=\dfrac{\sqrt3c^2}4\times\dfrac2{3c}=\dfrac c{2\sqrt3}$
+m $\text{Now }r_1=\dfrac\Delta{S-a}=\dfrac{\frac{\sqrt3}4c^2}{\frac{3c}2-c}=\dfrac{\sqrt3c^2}4\times\dfrac2c=\dfrac{\sqrt3c}2$
+m $\text{Hence, }r:R:r_1=\dfrac c{2\sqrt3}:\dfrac c{\sqrt3}:\dfrac{\sqrt3c}2=\dfrac c{2\sqrt3}\times\dfrac{\sqrt3}c:\dfrac c{\sqrt3}\times\dfrac{\sqrt3}c:\dfrac{\sqrt3c}2\times\dfrac{\sqrt3}c=\dfrac12:1:\dfrac32=1:2:3$
+endexample
+example 24 | Find the area of the inscribed circle of the triangle whose sides measure 7, 8 and 9 unit. || اس مثلث کے محاط دائرے کا رقبہ معلوم کریں جس کے اضلاع 7، 8 اور 9 اکائی ہیں۔ || د هغه درې ګوني د محاط دایرې ساحه پیدا کړئ چې ضلعې یې 7، 8 او 9 واحده دي.
+p **Solution:** Here $S=\dfrac{7+8+9}2=12$. Area of triangle with sides 7, 8 and 9: $\Delta=\sqrt{S(S-a)(S-b)(S-c)}=\sqrt{12\times5\times4\times3}=26.83\ \text{unit}^2$. $r=\dfrac\Delta S=\dfrac{26.83}{12}=2.24$ unit. Area of inscribed circle $=\pi r^2=(3.1416)(2.24)^2=15.76\ \text{unit}^2$. || **حل:** یہاں $S=\dfrac{7+8+9}2=12$۔ اضلاع 7، 8 اور 9 والے مثلث کا رقبہ: $\Delta=\sqrt{S(S-a)(S-b)(S-c)}=\sqrt{12\times5\times4\times3}=26.83\ \text{unit}^2$۔ $r=\dfrac\Delta S=\dfrac{26.83}{12}=2.24$ اکائی۔ محاط دائرے کا رقبہ $=\pi r^2=(3.1416)(2.24)^2=15.76\ \text{unit}^2$۔ || **حل:** دلته $S=\dfrac{7+8+9}2=12$. د ضلعو 7، 8 او 9 لرونکي درې ګوني ساحه: $\Delta=\sqrt{S(S-a)(S-b)(S-c)}=\sqrt{12\times5\times4\times3}=26.83\ \text{unit}^2$. $r=\dfrac\Delta S=\dfrac{26.83}{12}=2.24$ واحده. د محاط دایرې ساحه $=\pi r^2=(3.1416)(2.24)^2=15.76\ \text{unit}^2$.
+endexample
+exercise 11.4
+q 1 | Compute the in-radius ($r$) and circum-radius ($R$) of the triangles whose sides are given; || ان مثلثوں کا اندرونی رداس ($r$) اور محیطی رداس ($R$) شمار کریں جن کے اضلاع دیے گئے ہیں؛ || د هغو درې ګونو دننه شعاع ($r$) او محیطي شعاع ($R$) محاسبه کړئ چې ضلعې یې ورکړل شوې دي؛
+qp (i) | 3, 5, 6 || 3, 5, 6 || 3, 5, 6
+qp (ii) | 21, 20, 29 || 21, 20, 29 || 21, 20, 29
+q 2 | Find the area of the inscribed circle of the triangle with measures of the sides 55m, 25m and 70m. || اس مثلث کے محاط دائرے کا رقبہ معلوم کریں جس کے اضلاع کی پیمائشیں 55 میٹر، 25 میٹر اور 70 میٹر ہیں۔ || د هغه درې ګوني د محاط دایرې ساحه پیدا کړئ چې د ضلعو اندازې یې 55 متره، 25 متره او 70 متره دي.
+q 3 | The measures of the sides of a triangle are 20, 25 and 30 decimeter. Find the radius of the described circles || مثلث کے اضلاع کی پیمائشیں 20، 25 اور 30 ڈیسی میٹر ہیں۔ بیان کردہ دائروں کا رداس معلوم کریں || د درې ګوني د ضلعو اندازې 20، 25 او 30 ډیسي متره دي. د بیان شویو دایرو شعاع پیدا کړئ
+qp (i) | Opposite to larger side || Opposite to larger side || Opposite to larger side
+qp (ii) | Opposite to smaller side || Opposite to smaller side || Opposite to smaller side

@@ -1,0 +1,19 @@
+@printed 318
+@deco Unit-running header, folio and decorative footer band excluded
+m $\cos\alpha=\dfrac{b^2+c^2-a^2}{2bc},\qquad\cos\beta=\dfrac{a^2+c^2-b^2}{2ac},\qquad\cos\gamma=\dfrac{a^2+b^2-c^2}{2ab}$
+box info | Did You Know? || کیا آپ جانتے ہیں؟ || ایا تاسو پوهېږئ؟
+p S.S.S. and S.A.S. possibilities could be tackled by using cosine law. However in S.A.S., where two sides and included angle is given, it is necessary that the given angle must be less than $180^\circ$. || S.S.S. اور S.A.S. کے امکانات قانونِ کوسائن سے نمٹائے جا سکتے ہیں۔ تاہم S.A.S. میں، جہاں دو اضلاع اور درمیانی زاویہ دیا گیا ہو، ضروری ہے کہ دیا گیا زاویہ $180^\circ$ سے کم ہو۔ || د S.S.S. او S.A.S. امکانات د کوساینو قانون په کارولو سره حلېدای شي. خو په S.A.S. کې، چېرته چې دوه ضلعې او منځنۍ زاویه ورکړل شوې وي، اړینه ده چې ورکړل شوې زاویه له $180^\circ$ نه کمه وي.
+endbox
+example 6 | (SSS): What is the smallest angle of a triangle whose sides measure 25, 18 and 21ft? || (SSS): اس مثلث کا سب سے چھوٹا زاویہ کیا ہے جس کے اضلاع 25، 18 اور 21 فٹ ہیں؟ || (SSS): د هغه درې ګوني تر ټولو کوچنی زاویه څه ده چې ضلعې یې 25، 18 او 21 فوټه دي؟
+p **Solution:** If $\gamma$ represent the smallest angle, then $c$ (the side opposite) $\gamma$ must be the smallest side, so $c=18$. Then || **حل:** اگر $\gamma$ سب سے چھوٹے زاویے کو ظاہر کرے تو $c$ (سامنے والا ضلع) سب سے چھوٹا ضلع ہونا چاہیے، لہٰذا $c=18$۔ تب || **حل:** که $\gamma$ تر ټولو کوچنۍ زاویه وښيي نو $c$ (مقابل ضلع) باید تر ټولو کوچنی ضلع وي، نو $c=18$. بیا
+m $\cos\gamma=\dfrac{a^2+b^2-c^2}{2ab}=\dfrac{(25)^2+(21)^2-(18)^2}{2(25)(21)}=0.707\Rightarrow\gamma=\cos^{-1}(0.707)=45^\circ$
+endexample
+example 7 | (S.A.S.): Find $c$ where $a=52,\ b=28.3,\ \gamma=38.5^\circ$ || (S.A.S.): $c$ معلوم کریں جہاں $a=52,\ b=28.3,\ \gamma=38.5^\circ$ || (S.A.S.): $c$ پیدا کړئ چېرته چې $a=52,\ b=28.3,\ \gamma=38.5^\circ$
+p **Solution:** $\gamma$ is the angle included between $a$ and $b$. || **حل:** $\gamma$ ضلع $a$ اور $b$ کے درمیان زاویہ ہے۔ || **حل:** $\gamma$ د $a$ او $b$ ترمنځ زاویه ده.
+m $c^2=a^2+b^2-2ab\cos\gamma=(52)^2+(28.3)^2-2(52)(28.3)\cos38.5^\circ\Rightarrow c^2\simeq918.355\Rightarrow c\simeq30.30\text{ unit}$
+endexample
+example 8 | A body is acted upon by the forces 10N and 20N making an angle $25^\circ35'$ with each other. Find the magnitude of the resultant of the forces. || ایک جسم پر 10N اور 20N کی قوتیں عمل کرتی ہیں جو آپس میں $25^\circ35'$ کا زاویہ بناتی ہیں۔ قوتوں کے حاصل کی مقدار معلوم کریں۔ || په یوه جسم 10N او 20N ځواکونه عمل کوي چې یو له بل سره $25^\circ35'$ زاویه جوړوي. د ځواکونو د حاصل لوی والی پیدا کړئ.
+p **Solution:** || **حل:** || **حل:**
+svg Figure 11.10 (a): the forces 10 N (AB) and 20 N (AC) making an angle of $25^\circ35'$ at A. || شکل 11.10 (a): قوتیں 10 N (AB) اور 20 N (AC) جو A پر $25^\circ35'$ کا زاویہ بناتی ہیں۔ || شکل 11.10 (a): ځواکونه 10 N (AB) او 20 N (AC) چې په A کې $25^\circ35'$ زاویه جوړوي.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 190" role="img" aria-label="Figure 11.10 (a): forces 20 N and 10 N making an angle of 25 degrees 35 minutes at A"><title>Figure 11.10 (a): forces 20 N and 10 N making an angle of 25 degrees 35 minutes at A</title><polygon points="40,150 240,150 250,30" fill="#e0f2fe" fill-opacity=".5" stroke="#2563eb" stroke-width="2.4"/><text x="250" y="24" font-size="14" fill="#0f172a" font-family="sans-serif">C</text><text x="22" y="162" font-size="14" fill="#0f172a" font-family="sans-serif">A</text><text x="246" y="166" font-size="14" fill="#0f172a" font-family="sans-serif">B</text><text x="110" y="80" font-size="14" fill="#0f172a" font-family="sans-serif">20N</text><text x="130" y="166" font-size="14" fill="#0f172a" font-family="sans-serif">10N</text><text x="80" y="146" font-size="14" fill="#0f172a" font-family="sans-serif">25°35'</text></svg>
+endsvg

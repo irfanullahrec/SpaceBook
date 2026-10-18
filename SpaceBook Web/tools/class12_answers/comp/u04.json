@@ -1,0 +1,34 @@
+{
+"mcqs": [
+ ["C", "'x = 100' is an assignment, not a comparison; the equal-to operator '==' must be used: if (x == 100)."],
+ ["B", "Looping means repeating the specified lines of code a number of times or while a condition is true."],
+ ["B", "C++ has while, do-while and for loops; there is no 'until' loop."],
+ ["D", "switch is a selection statement; break, goto and exit (and continue, return) transfer control (jump)."],
+ ["D", "switch is the selection statement among the choices (if, if-else and switch are selection statements)."],
+ ["C", "continue skips the remaining statements of the loop body in the current iteration and starts the next iteration."],
+ ["A", "Both fragments print 'x is 1' for 1, 'x is 2' for 2 and 'value of x unknown' otherwise — the same behaviour."],
+ ["C", "case 2 falls through to case 3's statements (no break between them), so 'x is between 1 .. 3' is displayed."],
+ ["C", "C++ does not allow a range in a case label such as case 1..3; each case needs a single constant value."]
+],
+"objective": [
+ ["enclosed in braces { } (a compound statement/block)", "Several statements under if must be placed in a block { }."],
+ ["the value of an expression (a variable)", "switch selects the case whose label matches the value of its expression."],
+ ["default", "If no case label matches, the statements under default execute."],
+ ["break", "A break statement exits the switch statement."],
+ ["iteration (pass)", "Each repetition of a loop is called an iteration."],
+ ["B", "False — decision-making structures can be nested (an if inside another if or switch)."],
+ ["A", "True — do-while checks its condition after the body, so the body runs at least once even if the condition is false."],
+ ["A", "True — the initialization expression is executed once, when the for statement begins."],
+ ["A", "True — when one variable is compared with many constant values, switch is clearer than a long nested if-else chain."],
+ {"c": "B", "s": ["False — the correct syntax is: if (condition) { statements } else { statements }; else must come after the if block."]}
+],
+"longQuestions": [
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    int a, b;\n    char op;\n    cout << \"Enter two integers: \";\n    cin >> a >> b;\n    cout << \"Enter an operator (+, -, *, /): \";\n    cin >> op;\n    switch (op) {\n        case '+': cout << a << \" + \" << b << \" = \" << a + b << endl; break;\n        case '-': cout << a << \" - \" << b << \" = \" << a - b << endl; break;\n        case '*': cout << a << \" * \" << b << \" = \" << a * b << endl; break;\n        case '/':\n            if (b != 0) cout << a << \" / \" << b << \" = \" << (float)a / b << endl;\n            else cout << \"Division by zero is not allowed.\" << endl;\n            break;\n        default: cout << \"Invalid operator!\" << endl;\n    }\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    for (int i = 0; i <= 20; i += 2)\n        cout << i << \" \";\n    cout << endl;\n    return 0;\n}", "Output: 0 2 4 6 8 10 12 14 16 18 20"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    int nValue, i = 1, sum = 0;\n    cout << \"Enter nValue: \";\n    cin >> nValue;\n    while (i <= nValue) {\n        sum = sum + i;\n        i++;\n    }\n    cout << \"Sum = \" << sum << endl;\n    return 0;\n}", "For nValue = 5 the output is Sum = 15 (1 + 2 + 3 + 4 + 5)."],
+ ["nCount is declared unsigned int, so it can never be negative: the condition nCount >= 0 is always true. After 0, nCount-- wraps round to the largest unsigned value (4294967295), so the loop never ends — an infinite loop.", "Correction: use a signed int —\nfor (int nCount = 9; nCount >= 0; nCount--)\n    cout << nCount << \" \";"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    char ch;\n    cout << \"Enter the address (type . to finish):\" << endl;\n    do {\n        cin.get(ch);\n        if (ch != '.') cout << ch;\n    } while (ch != '.');\n    cout << endl << \"Address entered.\" << endl;\n    return 0;\n}"],
+ ["#include <iostream>\n#include <cmath>\nusing namespace std;\nint main() {\n    float a, b, c, s, area;\n    cout << \"Enter the three sides of the triangle: \";\n    cin >> a >> b >> c;\n    if (a == 0 || b == 0 || c == 0)\n        cout << \"There is no triangle\" << endl;\n    else {\n        s = (a + b + c) / 2;\n        area = sqrt(s * (s - a) * (s - b) * (s - c));\n        cout << \"Area of triangle = \" << area << endl;\n    }\n    return 0;\n}", "Heron's formula is used: area = √(s(s − a)(s − b)(s − c)), where s is half the perimeter."],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    char ch;\n    cout << \"Enter an alphabet: \";\n    cin >> ch;\n    switch (ch) {\n        case 'a': case 'e': case 'i': case 'o': case 'u':\n        case 'A': case 'E': case 'I': case 'O': case 'U':\n            cout << ch << \" is a Vowel\" << endl; break;\n        default:\n            if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))\n                cout << ch << \" is a Consonant\" << endl;\n            else\n                cout << ch << \" is not an alphabet\" << endl;\n    }\n    return 0;\n}"]
+]
+}

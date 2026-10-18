@@ -1,0 +1,20 @@
+@printed 382
+@issue The printed Example 22 (i) solves Sec θ = 2 and prints θ = π/2 (should read π/3, since sec(π/3) = 2); the working "Sec π/3 = 2" on the same line shows the intended value. (ii) lists θ1 = π − π/3 = 2π/3 and θ2 = π + π/3 = 4π/3 for sec θ = −2.
+@deco Unit-running header, folio and decorative footer band excluded
+table Domains and ranges of principal trigonometric functions and their inverses || بنیادی مثلثیاتی تفاعل اور ان کے معکوس کے دائرے اور سعتیں || د اصلي مثلثاتي تابعګانو او د هغو د معکوسونو ډومینونه او رینجونه
+th | Functions | Domains | Range
+tr | $y=\text{Sin}\,x$ | $-\frac\pi2\le x\le\frac\pi2$ | $-1\le y\le1$
+tr | $y=\text{Sin}^{-1}x$ | $-1\le x\le1$ | $-\frac\pi2\le y\le\frac\pi2$
+tr | $y=\text{Cos}\,x$ | $0\le x\le\pi$ | $-1\le y\le1$
+tr | $y=\text{Cos}^{-1}x$ | $-1\le x\le1$ | $0\le y\le\pi$
+tr | $y=\text{Tan}\,x$ | $-\frac\pi2<x<\frac\pi2$ | $y\in R$
+tr | $y=\text{Tan}^{-1}x$ | $x\in R$ | $-\frac\pi2<y<\frac\pi2$
+tr | $y=\text{Cosec}\,x$ | $x\in\left[-\frac\pi2,\frac\pi2\right]-\{0\}$ | $y\le-1,\ y\ge1$
+tr | $y=\text{Cosec}^{-1}x$ | $x\le-1,\ x\ge1$ | $y\in\left[-\frac\pi2,\frac\pi2\right]-\{0\}$
+tr | $y=\text{Sec}\,x$ | $x\in[0,\pi]-\left\{\frac\pi2\right\}$ | $y\le-1,\ y\ge1$
+tr | $y=\text{Sec}^{-1}x$ | $x\le-1,\ x\ge1$ | $y\in[0,\pi]-\left\{\frac\pi2\right\}$
+tr | $y=\text{Cot}\,x$ | $x\in(0,\pi)$ | $y\in R$
+tr | $y=\text{Cot}^{-1}x$ | $x\in R$ | $y\in(0,\pi)$
+endtable
+example 22 | Evaluate: (i) $\text{Arc}\sec2$ (ii) $\text{Arc}\sec(-2)$ (iii) $\text{Arc}\tan(3.5)$ (iv) $\text{Arc}\tan(-2.3)$ || قیمت معلوم کریں: (i) $\text{Arc}\sec2$ (ii) $\text{Arc}\sec(-2)$ (iii) $\text{Arc}\tan(3.5)$ (iv) $\text{Arc}\tan(-2.3)$ || ارزښت پیدا کړئ: (i) $\text{Arc}\sec2$ (ii) $\text{Arc}\sec(-2)$ (iii) $\text{Arc}\tan(3.5)$ (iv) $\text{Arc}\tan(-2.3)$
+p **Solution:** (i) Let $\theta=\text{Arc}\sec2$, which is an inverse function. By definition, $\sec\theta=2$, where $\theta\in[0,\pi]-\left\{\dfrac\pi2\right\}$. We know that $\sec\dfrac\pi3=2\Rightarrow\theta=\dfrac\pi3$ (printed as $\dfrac\pi2$) $\in[0,\pi]$. (ii) Let $\theta=\text{Arc}\sec(-2)$. This is an inverse relation not a function. Therefore, there are infinitely many values for $\theta$. Since $\sec\theta$ is negative, the reference angle lies both in the quadrants (II) and (III) which are $\theta_1=\pi-\dfrac\pi3=\dfrac{2\pi}3$ and $\theta_2=\pi+\dfrac\pi3=\dfrac{4\pi}3$. || **حل:** (i) فرض کریں $\theta=\text{Arc}\sec2$ جو معکوس تفاعل ہے۔ تعریف کے مطابق $\sec\theta=2$، جہاں $\theta\in[0,\pi]-\left\{\dfrac\pi2\right\}$۔ ہم جانتے ہیں کہ $\sec\dfrac\pi3=2\Rightarrow\theta=\dfrac\pi3$ (چھپا ہوا $\dfrac\pi2$) $\in[0,\pi]$۔ (ii) فرض کریں $\theta=\text{Arc}\sec(-2)$۔ یہ معکوس نسبت ہے تفاعل نہیں۔ لہٰذا $\theta$ کی لامحدود قیمتیں ہیں۔ چونکہ $\sec\theta$ منفی ہے، حوالہ زاویہ ربع (II) اور (III) دونوں میں ہے جو ہیں $\theta_1=\pi-\dfrac\pi3=\dfrac{2\pi}3$ اور $\theta_2=\pi+\dfrac\pi3=\dfrac{4\pi}3$۔ || **حل:** (i) فرض کړئ $\theta=\text{Arc}\sec2$ چې معکوس تابع ده. د تعریف له مخې $\sec\theta=2$، چېرته چې $\theta\in[0,\pi]-\left\{\dfrac\pi2\right\}$. موږ پوهېږو چې $\sec\dfrac\pi3=2\Rightarrow\theta=\dfrac\pi3$ (چاپ شوی $\dfrac\pi2$) $\in[0,\pi]$. (ii) فرض کړئ $\theta=\text{Arc}\sec(-2)$. دا معکوسه اړیکه ده، تابع نه ده. له دې امله د $\theta$ بې شمېره ارزښتونه شته. ځکه چې $\sec\theta$ منفي دی، مرجع زاویه په (II) او (III) دواړو ربعو کې ده چې دي $\theta_1=\pi-\dfrac\pi3=\dfrac{2\pi}3$ او $\theta_2=\pi+\dfrac\pi3=\dfrac{4\pi}3$.

@@ -1,0 +1,28 @@
+{
+"mcqs": [
+ ["B", "eof stands for end-of-file."],
+ ["B", "open() is used to open a file and associate it with a stream object."],
+ ["A", "ofstream opens files for output by default — ios::out."],
+ ["C", "A plain text file normally has the extension .txt."],
+ ["C", "ios::binary opens the file in binary mode (no character translation)."]
+],
+"objective": [
+ ["fstream (<fstream>)", "File-handling classes ifstream, ofstream and fstream are declared in <fstream>."],
+ ["close()", "close() closes a file. (The book prints 'closing a function'; it means closing a file.)"],
+ ["xyz.txt", "The file named xyz.txt is opened in output mode."],
+ ["ios::app", "ios::app (append) makes all output go to the end of the file."],
+ ["stream", "A stream is a continuous flow of bytes/characters between a program and a device or file."],
+ ["A", "True — a string stream (stringstream) reads from or writes to a string as if it were a stream."],
+ ["B", "False — eof() returns true when there are no more data to read (end of file reached) and false otherwise; also it is a function, not a pointer."],
+ ["A", "True — a file is opened in binary mode by including ios::binary in the mode."],
+ ["B", "False — close() closes an open file; open() is used to open a file."],
+ ["A", "True — text files store data as readable characters, e.g. .txt files."]
+],
+"longQuestions": [
+ ["A file is a named collection of related data stored permanently on a secondary storage device (hard disk, USB) so that it remains after the program ends.", "Types: (1) Text files — store data as readable ASCII characters in lines ending with newline; can be opened in a text editor (.txt). (2) Binary files — store data in the same binary form as in memory; not human-readable, but faster and more compact (.bin, .dat, images, executables).", "By access, files may be sequential (read from start to end) or random-access (any record read directly using seekg/seekp)."],
+ ["Operations on files: (1) Creating/opening a file — open() or the stream constructor, e.g. ofstream f(\"data.txt\"); (2) Writing data — using << or put()/write(); (3) Reading data — using >>, get(), getline() or read().", "(4) Appending — adding data at the end with ios::app; (5) Searching/moving within the file — seekg(), seekp(), tellg(), tellp(); (6) Checking end of file — eof(); (7) Closing the file — close(); also deleting or renaming files (remove(), rename())."],
+ ["A stream is a sequence (flow) of bytes between a program and an input/output device or file. C++ handles all I/O through streams.", "Input stream — data flows from a source (keyboard or file) into the program; cin is the standard input stream (istream), and ifstream is used to read from files using >>, get(), getline().", "Output stream — data flows from the program to a destination (screen, printer or file); cout is the standard output stream (ostream), and ofstream writes to files using <<, put(). fstream supports both input and output."],
+ ["The mode of file opening specifies the purpose for which a file is opened (reading, writing, appending etc.); it is passed as the second argument of open(), e.g. f.open(\"a.txt\", ios::out);", "Modes: ios::in — open for reading; ios::out — open for writing (creates the file or erases old contents); ios::app — append, all output at the end; ios::ate — open and move to the end of file; ios::trunc — delete existing contents; ios::binary — open in binary mode; ios::nocreate / ios::noreplace (older compilers). Modes can be combined with |, e.g. ios::out | ios::binary."],
+ ["File handling is the process of storing data in files and retrieving it using a program, so that data is kept permanently instead of being lost when the program ends.", "In C++ it uses the header <fstream> with the classes ofstream (write), ifstream (read) and fstream (both). Steps: include <fstream> → create a stream object → open the file with a mode → read/write data → check errors/eof → close the file.", "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ofstream out(\"data.txt\");\n    out << \"Hello file\" << endl;\n    out.close();\n    ifstream in(\"data.txt\");\n    string line;\n    while (getline(in, line)) cout << line << endl;\n    in.close();\n    return 0;\n}"]
+]
+}

@@ -1,0 +1,23 @@
+@printed 392
+@deco Running header, folio and decorative footer band excluded
+box theorem | 4.
+m $\text{Cos}^{-1}A-\text{Cos}^{-1}B=\text{Cos}^{-1}\left(AB+\sqrt{1-A^2}\sqrt{1-B^2}\right)$
+endbox
+p Proof is left as an exercise. || ثبوت مشق کے طور پر چھوڑا گیا ہے۔ || ثبوت تمرین ته پرېښودل شوی.
+box theorem | 5.
+m $\text{Tan}^{-1}A+\text{Tan}^{-1}B=\text{Tan}^{-1}\dfrac{A+B}{1-AB}$
+endbox
+p Let $x=\text{Tan}^{-1}A\Rightarrow\tan x=A$ and $y=\text{Tan}^{-1}B\Rightarrow\tan y=B$. We have $\tan(x+y)=\dfrac{\tan x+\tan y}{1-\tan x\tan y}$, hence $\tan(x+y)=\dfrac{A+B}{1-AB}\Rightarrow\text{Tan}^{-1}A+\text{Tan}^{-1}B=\text{Tan}^{-1}\dfrac{A+B}{1-AB}$. || فرض کریں $x=\text{Tan}^{-1}A\Rightarrow\tan x=A$ اور $y=\text{Tan}^{-1}B\Rightarrow\tan y=B$۔ ہمارے پاس $\tan(x+y)=\dfrac{\tan x+\tan y}{1-\tan x\tan y}$ ہے، لہٰذا $\tan(x+y)=\dfrac{A+B}{1-AB}\Rightarrow\text{Tan}^{-1}A+\text{Tan}^{-1}B=\text{Tan}^{-1}\dfrac{A+B}{1-AB}$۔ || فرض کړئ $x=\text{Tan}^{-1}A\Rightarrow\tan x=A$ او $y=\text{Tan}^{-1}B\Rightarrow\tan y=B$. موږ لرو $\tan(x+y)=\dfrac{\tan x+\tan y}{1-\tan x\tan y}$، نو $\tan(x+y)=\dfrac{A+B}{1-AB}\Rightarrow\text{Tan}^{-1}A+\text{Tan}^{-1}B=\text{Tan}^{-1}\dfrac{A+B}{1-AB}$.
+box theorem | 6.
+m $\text{Tan}^{-1}A-\text{Tan}^{-1}B=\text{Tan}^{-1}\dfrac{A-B}{1+AB}$
+endbox
+p Proof is left as an exercise. || ثبوت مشق کے طور پر چھوڑا گیا ہے۔ || ثبوت تمرین ته پرېښودل شوی.
+example 32 | Show that $2\,\text{Tan}^{-1}A=\text{Tan}^{-1}\dfrac{2A}{1-A^2}$ || ثابت کریں $2\,\text{Tan}^{-1}A=\text{Tan}^{-1}\dfrac{2A}{1-A^2}$ || وښیئ $2\,\text{Tan}^{-1}A=\text{Tan}^{-1}\dfrac{2A}{1-A^2}$
+p **Solution:** Put $B=A$ in the inverse trigonometric formula $\text{Tan}^{-1}A+\text{Tan}^{-1}B=\text{Tan}^{-1}\dfrac{A+B}{1-AB}$, we have || **حل:** معکوس مثلثیاتی کلیے $\text{Tan}^{-1}A+\text{Tan}^{-1}B=\text{Tan}^{-1}\dfrac{A+B}{1-AB}$ میں $B=A$ رکھیں، ہمیں ملتا ہے || **حل:** په معکوس مثلثاتي فورمول $\text{Tan}^{-1}A+\text{Tan}^{-1}B=\text{Tan}^{-1}\dfrac{A+B}{1-AB}$ کې $B=A$ ږدو، موږ ترلاسه کوو
+m \text{Tan}^{-1}A+\text{Tan}^{-1}A=\text{Tan}^{-1}\dfrac{A+A}{1-A\cdot A}=\text{Tan}^{-1}\dfrac{2A}{1-A^2}
+endexample
+example 33 | Show that $\text{Tan}^{-1}\dfrac34+\text{Tan}^{-1}\dfrac35-\text{Tan}^{-1}\dfrac8{19}=\dfrac\pi4$ || ثابت کریں $\text{Tan}^{-1}\dfrac34+\text{Tan}^{-1}\dfrac35-\text{Tan}^{-1}\dfrac8{19}=\dfrac\pi4$ || وښیئ $\text{Tan}^{-1}\dfrac34+\text{Tan}^{-1}\dfrac35-\text{Tan}^{-1}\dfrac8{19}=\dfrac\pi4$
+p **Solution:** Using addition and subtraction formulae for $\tan^{-1}$, we have || **حل:** $\tan^{-1}$ کے جمع اور تفریق کے کلیات استعمال کرنے پر ہمیں ملتا ہے || **حل:** د $\tan^{-1}$ د جمع او تفریق فورمولونو په کارولو موږ ترلاسه کوو
+m \text{Tan}^{-1}\dfrac34+\text{Tan}^{-1}\dfrac35-\text{Tan}^{-1}\dfrac8{19}=\left(\text{Tan}^{-1}\dfrac34+\text{Tan}^{-1}\dfrac35\right)-\text{Tan}^{-1}\dfrac8{19}
+m =\text{Tan}^{-1}\dfrac{\dfrac34+\dfrac35}{1-\dfrac34\times\dfrac35}-\text{Tan}^{-1}\dfrac8{19}
+m =\text{Tan}^{-1}\dfrac{\dfrac{15+12}{20}}{1-\dfrac9{20}}-\text{Tan}^{-1}\dfrac8{19}

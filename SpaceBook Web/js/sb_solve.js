@@ -154,6 +154,7 @@
   .sbs-teacher{position:absolute;inset-inline-start:.4rem;top:2.05rem;font-size:.95rem;opacity:0;transition:opacity .3s}
   .sbs-step.cur .sbs-teacher{opacity:1;animation:sbsbob 1s ease-in-out infinite}
   .sbs-say{min-height:1.4em}
+  @media (min-width:760px){.sbs-step.sbs-hasm{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);column-gap:1.1rem;align-items:start}.sbs-step.sbs-hasm .sbs-show{grid-column:1;grid-row:1;margin:0}.sbs-step.sbs-hasm .sbs-say{grid-column:2;grid-row:1;align-self:center;padding-inline-start:.9rem;border-inline-start:3px solid #99f6e4;color:#334155}}
   .sbs-say[dir="rtl"],.sbs-line[dir="rtl"]{font-size:1.1rem;line-height:2.05}
   .sbs-show{margin:.3rem 0;overflow-x:auto;direction:ltr}
   .sbs-show svg{max-width:100%;height:auto}
@@ -262,7 +263,7 @@
       <span class="sbs-langs" role="group" aria-label="Language">${Object.keys(LANG).map(k => `<button type="button" data-l="${k}" lang="${k}" aria-pressed="${k === med.text}">${LANG[k].name}</button>`).join('')}</span></div>
       ${hasSteps ? `<div class="sbs-ctl"><button type="button" data-a="play" title="Pause / play">⏸ Pause</button><button type="button" data-a="next" title="Next step">⏭ Next</button><button type="button" data-a="all" title="Show all steps">⏬ All</button><button type="button" data-a="restart" title="Restart">↺</button><button type="button" data-a="voice" aria-pressed="false" title="Read aloud">🔊</button></div>` : ''}
       <div class="sbs-body" dir="${LANG[med.text].dir}">
-      ${hasSteps ? `<ol class="sbs-steps">${panel._steps.map(s => `<li class="sbs-step" hidden><span class="sbs-teacher" aria-hidden="true">🧑‍🏫</span><div class="sbs-say" aria-live="polite"></div>${s.m ? `<div class="sbs-show" hidden>${inl('$$' + s.m + '$$', false)}</div>` : ''}${s.svg ? `<div class="sbs-show" hidden>${s.svg}</div>` : ''}</li>`).join('')}</ol>` : ''}
+      ${hasSteps ? `<ol class="sbs-steps">${panel._steps.map(s => `<li class="sbs-step${s.m ? ' sbs-hasm' : ''}" hidden><span class="sbs-teacher" aria-hidden="true">🧑‍🏫</span><div class="sbs-say" aria-live="polite"></div>${s.m ? `<div class="sbs-show" hidden>${inl('$$' + s.m + '$$', false)}</div>` : ''}${s.svg ? `<div class="sbs-show" hidden>${s.svg}</div>` : ''}</li>`).join('')}</ol>` : ''}
       <p class="sbs-src"></p>
       <div class="sbs-final"${hasSteps ? ' hidden' : ''}>${finalHtml(panel)}</div>
       <p class="sbs-note" dir="ltr">SpaceBook ${hasSteps ? 'explanation' : 'answer'} · not printed in the textbook</p></div>`;

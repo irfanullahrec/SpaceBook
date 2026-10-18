@@ -1,0 +1,368 @@
+{
+ "mcqs": [
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "D",
+   "s": [
+    "Correct choice: (d) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "D",
+   "s": [
+    "Correct choice: (d) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "D",
+   "s": [
+    "Correct choice: (d) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  }
+ ],
+ "objective": [
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  [
+   "impossible",
+   "Answer from the textbook key."
+  ],
+  [
+   "sample space",
+   "Answer from the textbook key."
+  ],
+  [
+   "permutations",
+   "Answer from the textbook key."
+  ],
+  [
+   "0 to 1",
+   "Answer from the textbook key."
+  ],
+  [
+   "gambling",
+   "Answer from the textbook key."
+  ],
+  [
+   "addition",
+   "Answer from the textbook key."
+  ],
+  [
+   "P(A) + P(B)",
+   "Answer from the textbook key."
+  ],
+  [
+   "independent",
+   "Answer from the textbook key."
+  ],
+  [
+   "1−P(A)",
+   "Answer from the textbook key."
+  ],
+  [
+   "$\\frac{6}{36}$",
+   "Answer from the textbook key."
+  ]
+ ],
+ "longQuestions": [
+  [
+   "Factorial: the product of all positive integers from 1 to n, written n! = n(n−1)(n−2)…3·2·1; by definition 0! = 1. Example: 5! = 120.",
+   "Permutation: an ordered arrangement of r objects chosen from n distinct objects; the number is ⁿPᵣ = n!/(n−r)!. Example: ⁵P₂ = 20 (AB and BA are different).",
+   "Combination: a selection of r objects from n without regard to order; ⁿCᵣ = n!/[r!(n−r)!]. Example: ⁵C₂ = 10 (AB and BA are the same). Note ⁿPᵣ = r!·ⁿCᵣ."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     5
+    ]
+   ]
+  },
+  [
+   "(i) Permutations of 2 letters from A, B, C, D: ⁴P₂ = 4!/2! = 12 — AB, BA, AC, CA, AD, DA, BC, CB, BD, DB, CD, DC.",
+   "(ii) Combinations: ⁴C₂ = 4!/(2!·2!) = 6 — AB, AC, AD, BC, BD, CD."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     6
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     7
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     8
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     9
+    ]
+   ]
+  },
+  [
+   "Probability is a numerical measure of the chance (likelihood) that an event will occur. It lies between 0 and 1: 0 means the event is impossible and 1 means it is certain.",
+   "Classical definition: if an experiment has n equally likely, mutually exclusive outcomes and m of them favour event A, then P(A) = m/n.",
+   "Relative-frequency definition: if an experiment is repeated n times and A occurs m times, P(A) = lim (m/n) as n → ∞. Probability is used in gambling, insurance, business decisions, quality control and science."
+  ],
+  [
+   "(i) Random experiment — an experiment whose outcome cannot be predicted in advance, though all possible outcomes are known (tossing a coin).",
+   "(ii) Sample space — the set of all possible outcomes of a random experiment, S = {H, T}. (iii) Outcomes — the individual results of the experiment (sample points).",
+   "(iv) Event — any subset of the sample space, e.g. getting an even number when a die is rolled = {2, 4, 6}.",
+   "(v) Impossible event — an event that cannot occur, the empty set φ, P = 0 (getting 7 on a die). (vi) Sure event — an event that always occurs, the whole sample space S, P = 1."
+  ],
+  [
+   "(i) Mutually exclusive events cannot occur together in a single trial (A∩B = φ), so P(A∪B) = P(A) + P(B); not mutually exclusive events can occur together, so P(A∪B) = P(A) + P(B) − P(A∩B).",
+   "(ii) Independent events: the occurrence of one does not affect the probability of the other, P(A∩B) = P(A)P(B); dependent events: the occurrence of one changes the probability of the other, P(A∩B) = P(A)P(B/A).",
+   "(iii) Probability P(A) is measured on the whole sample space; conditional probability P(A/B) = P(A∩B)/P(B) is the probability of A when it is known that B has occurred (the sample space is reduced to B)."
+  ],
+  [
+   "Equally likely events — events that have the same chance of occurring, e.g. head and tail of a fair coin.",
+   "Compound events — events consisting of two or more sample points, e.g. getting an odd number on a die {1, 3, 5}.",
+   "Exhaustive events — events whose union is the whole sample space, so that at least one of them must occur, e.g. {1, 2, 3} and {4, 5, 6} when a die is rolled."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     10
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     11
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     12
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     13
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     14
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-a",
+     15
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-b",
+     0
+    ]
+   ],
+   "s": [
+    "(a) Addition law for not mutually exclusive events: P(A∪B) = P(A) + P(B) − P(A∩B). Proof: A∪B = A ∪ (Ā∩B), where A and Ā∩B are mutually exclusive, so P(A∪B) = P(A) + P(Ā∩B). Also B = (A∩B) ∪ (Ā∩B), so P(Ā∩B) = P(B) − P(A∩B). Substituting gives the result."
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-b",
+     1
+    ]
+   ]
+  },
+  [
+   "Multiplication law for independent events: if A and B are independent, P(A∩B) = P(A)·P(B). Proof (classical): if A can occur in m₁ of n₁ ways and B in m₂ of n₂ ways independently, then both occur in m₁m₂ of n₁n₂ ways, so P(A∩B) = (m₁m₂)/(n₁n₂) = P(A)P(B).",
+   "Multiplication law for dependent events: P(A∩B) = P(A)·P(B/A) = P(B)·P(A/B). Proof: by definition P(B/A) = P(A∩B)/P(A), so P(A∩B) = P(A)P(B/A)."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-b",
+     2
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-b",
+     3
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-b",
+     4
+    ]
+   ],
+   "s": [
+    "(a) Conditional probability is the probability of an event A when it is known that another event B has already occurred: P(A/B) = P(A∩B)/P(B), P(B) > 0."
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-b",
+     5
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-b",
+     6
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-b",
+     7
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex1-b",
+     8
+    ]
+   ]
+  }
+ ]
+}

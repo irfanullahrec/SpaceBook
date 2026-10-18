@@ -1,0 +1,14 @@
+@printed 291
+@deco Unit-running header, folio and decorative footer band excluded
+example 3 | Given $\sin\alpha=\dfrac{12}{13}$ and $\cos\beta=\dfrac35$, where $\alpha$ and $\beta$ are in the first quadrant. Find in which quadrant does $(\alpha+\beta)$ lie. || دیا گیا ہے $\sin\alpha=\dfrac{12}{13}$ اور $\cos\beta=\dfrac35$، جہاں $\alpha$ اور $\beta$ پہلے ربع میں ہیں۔ معلوم کریں کہ $(\alpha+\beta)$ کس ربع میں واقع ہے۔ || ورکړل شوي دي $\sin\alpha=\dfrac{12}{13}$ او $\cos\beta=\dfrac35$، چېرته چې $\alpha$ او $\beta$ په لومړي ربع کې دي. پیدا کړئ چې $(\alpha+\beta)$ په کوم ربع کې پروت دی.
+p **Solution:** Given that $\alpha,\beta$ are both in the first quadrant. Since cosine is positive in the first quadrant and negative in the second quadrant, therefore, $\cos(\alpha+\beta)$ will decide the quadrant in which $(\alpha+\beta)$ lies? || **حل:** دیا گیا ہے کہ $\alpha,\beta$ دونوں پہلے ربع میں ہیں۔ چونکہ کوسائن پہلے ربع میں مثبت اور دوسرے ربع میں منفی ہوتا ہے اس لیے $\cos(\alpha+\beta)$ فیصلہ کرے گا کہ $(\alpha+\beta)$ کس ربع میں ہے۔ || **حل:** ورکړل شوي دي چې $\alpha,\beta$ دواړه په لومړي ربع کې دي. ځکه چې کوساین په لومړي ربع کې مثبت او په دویم ربع کې منفي وي، نو $\cos(\alpha+\beta)$ به پرېکړه وکړي چې $(\alpha+\beta)$ په کوم ربع کې پروت دی.
+m $\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta\qquad(1)$
+m $\text{As }\cos^2\alpha=1-\sin^2\alpha,\ \text{putting }\sin^2\alpha=\left(\dfrac{12}{13}\right)^2=\dfrac{144}{169}$
+m $\cos^2\alpha=1-\dfrac{144}{169}=\dfrac{169-144}{169}=\dfrac{25}{169}$
+m $\cos\alpha=\pm\dfrac5{13}.\ \text{But }\cos\alpha\text{ is +ve in the 1st quadrant, }\therefore\cos\alpha=+\dfrac5{13}$
+m $\text{As }\sin^2\beta=1-\cos^2\beta,\ \text{putting in it }\cos^2\beta=\dfrac9{25}$
+m $\sin^2\beta=1-\dfrac9{25}=\dfrac{25-9}{25}=\dfrac{16}{25}=\pm\dfrac45$
+p But $\sin\beta$ is +ve in the 1st quadrant, $\therefore\sin\beta=\dfrac45$. Putting values of $\sin\alpha,\cos\alpha,\sin\beta$ and $\cos\beta$ in (1) || لیکن پہلے ربع میں $\sin\beta$ مثبت ہے، $\therefore\sin\beta=\dfrac45$۔ $\sin\alpha,\cos\alpha,\sin\beta$ اور $\cos\beta$ کی قیمتیں (1) میں رکھنے پر || خو په لومړي ربع کې $\sin\beta$ مثبت دی، $\therefore\sin\beta=\dfrac45$. د $\sin\alpha,\cos\alpha,\sin\beta$ او $\cos\beta$ ارزښتونه په (1) کې ایښودو سره
+m $\cos(\alpha+\beta)=\left(\dfrac5{13}\right)\left(\dfrac35\right)-\left(\dfrac{12}{13}\right)\left(\dfrac45\right)=\dfrac{15}{65}-\dfrac{48}{65}=\dfrac{15-48}{65}=\dfrac{-33}{65}$
+p Since $\cos(\alpha+\beta)$ is negative, it follows that $(\alpha+\beta)$ is in the second quadrant. || چونکہ $\cos(\alpha+\beta)$ منفی ہے اس سے نتیجہ نکلتا ہے کہ $(\alpha+\beta)$ دوسرے ربع میں ہے۔ || ځکه چې $\cos(\alpha+\beta)$ منفي دی، له دې پایله اخیستل کېږي چې $(\alpha+\beta)$ په دویم ربع کې دی.
+endexample

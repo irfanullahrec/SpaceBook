@@ -1,0 +1,40 @@
+{
+"mcqs": [
+ ["C", "The first step of SDLC is problem identification (planning) — defining the problem and objectives."],
+ ["D", "The organised set of steps followed to develop an information system is the System Development Life Cycle."],
+ ["A", "Enhancements, upgrades and bug fixes are done in the maintenance (and evaluation) phase."],
+ ["A", "The feasibility study determines whether the project should go forward (technical, economic, operational feasibility)."],
+ ["B", "System analysts spend most of their time in the early stages — meeting users, gathering requirements, documenting and proposing solutions."],
+ ["A", "Stakeholders are the people/organisations who influence or are affected by the project."],
+ ["D", "Maintenance is performed in response to business changes, hardware and software changes, and users' requests for new features."]
+],
+"objective": [
+ ["functional", "Functional requirements define what the system must do (its functions); non-functional ones define qualities like speed and security."],
+ ["deployment", "All activities that make the software available for use (installation, configuration, release) are called software deployment."],
+ ["programmer (software developer)", "A programmer/developer knows a variety of programming languages, operating systems and hardware."],
+ ["programmer (software engineer)", "A software tester is basically a programmer/software engineer who specialises in testing programs."],
+ ["project management", "A project manager is a professional in project management — planning, organising and controlling the project."],
+ ["A", "True — a stakeholder is any person or organisation with a direct or indirect interest in the project."],
+ ["B", "False — requirements are gathered in the analysis phase; maintenance is done after deployment to correct and improve the system."],
+ ["A", "True — the planning phase answers what is to be done, how, when, by whom and at what cost."],
+ ["B", "False — algorithms, pseudo code and flowcharts are used in the design phase, before implementation (coding)."],
+ ["A", "True — in the classical (waterfall) SDLC each phase is completed as a separate step before the next begins."]
+],
+"longQuestions": [
+ ["SDLC (Software/System Development Life Cycle) is a structured process of phases followed to plan, create, test, deploy and maintain an information system: planning/problem identification → feasibility study → analysis (requirements) → design → development (coding) → testing → deployment (implementation) → maintenance.", "Objectives: to develop high-quality software that meets user requirements; to complete the project within time and budget; to give a clear plan with defined deliverables for each phase; to reduce risks and errors; to make management, control and documentation easier; and to make the system easy to maintain."],
+ ["A system is a set of interrelated components (people, hardware, software, data and procedures) working together to achieve a common goal, e.g. a payroll system or a library management system.", "Testing activities really begin early — test planning starts in the requirements/analysis phase (writing test cases from requirements) and design reviews, while actual execution of tests takes place after the coding phase in the testing phase (unit, integration, system and acceptance testing)."],
+ ["SDLC is important because it provides a clear, step-by-step framework so that nothing is missed; it helps understand user requirements before coding; it allows planning of time, cost and resources; each phase has defined outputs, making progress easy to monitor; errors are found early when they are cheaper to fix; it improves quality and documentation; and it makes the software easier to maintain and upgrade."],
+ ["Stakeholders are people or organisations who are involved in or affected by the project.", "Responsibilities: Customer/users — state requirements, give feedback and accept the system; Project manager — plans, schedules, budgets and controls the project and team; System analyst — studies the existing system, gathers requirements and designs the solution; Programmers/developers — write and document the code.", "Software testers — test the software to find errors; Database administrator — designs and maintains the database; Network engineer — sets up hardware and networks; Management/sponsors — provide funds and approve decisions."],
+ ["A software requirement is a description of a service the system must provide or a constraint under which it must operate — what users need from the software.", "Functional requirements describe what the system should do — its functions and behaviour, e.g. 'the system shall calculate students' grades', 'users can log in'.", "Non-functional requirements describe how well the system performs — quality attributes such as speed, reliability, security, usability, availability and maintainability, e.g. 'the page shall load within 2 seconds'."],
+ {"s": ["Flowchart (top to bottom): Start → [Process] sum = 0, N = 5, x = 1 → ◇ Is x ≤ N? → Yes → [Process] sum = sum + x → [Process] x = x + 1 → back to the decision ◇; No → [Output] print sum → Stop.", "Start (oval)\n   |\nsum = 0, N = 5, x = 1   (rectangle)\n   |\n< x <= N ? >  --No-->  [ print sum ]  -->  Stop\n   | Yes\nsum = sum + x\n   |\nx = x + 1\n   |\n(back to x <= N ?)", "Output: sum = 1 + 2 + 3 + 4 + 5 = 15."]}
+],
+"activities": [
+ ["Group project guide: each group takes one of the five projects and prepares a description of the SDLC phases for it — problem identification, feasibility, analysis (requirements), design, development, testing, deployment and maintenance — and lists the personnel involved (project manager, system analyst, programmers, testers, DBA, users)."],
+ ["Stock control system for automotive parts: Problem — manual records cause errors and stock shortages. Feasibility — benefits of computerisation vs cost. Analysis — requirements: record parts, suppliers, stock levels, reorder alerts, reports. Design — database tables (Parts, Suppliers, Orders), screens and reports. Development — code the system. Testing — check stock entries and reorder alerts. Deployment — install, train staff, convert old records. Maintenance — fix errors and add features."],
+ ["Hospital appointment system: requirements — register patients, book/cancel appointments with doctors, show doctor schedules, send reminders, print daily lists. Phases as above; personnel: project manager, system analyst, programmers, tester, DBA, hospital staff as users."],
+ ["College grades and attendance system — personnel involved: project manager (plans and controls), system analyst (meets lecturers and administration, gathers requirements), designers and programmers (build database and screens), database administrator (student, course, grade and attendance tables), software tester, network administrator (college LAN/web access), trainer, and the lecturers and students as end-users."],
+ ["Online cinema booking upgrade: requirements — show films and timings, display seat map, select seats, pay online, issue e-tickets, prevent double booking, admin reports. Phases: feasibility (website and payment gateway cost), analysis, design (web pages, database, security), development, testing (load and payment tests), deployment on a web server, and maintenance."],
+ ["Travel agency booking system upgrade: study the old system's problems (slow, outdated), gather requirements (online seat booking for flights/buses, customer records, payments, cancellations, reports), design a new database and user interface, develop and test it, migrate old data, train staff, deploy, and maintain/upgrade regularly."],
+ ["Flowchart practice: students draw flowcharts for the five projects — e.g. for cinema booking: Start → Select film and time → Show seat map → Seats available? → Yes: select seats → enter payment → Payment successful? → Yes: issue ticket → Stop; No: show error and retry. The teacher assigns further flowcharts (largest of three numbers, grade calculation, ATM withdrawal)."]
+]
+}

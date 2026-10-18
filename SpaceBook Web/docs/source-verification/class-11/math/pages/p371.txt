@@ -1,0 +1,23 @@
+@printed 371
+@sec 12.4 | Inverse Trigonometric Functions || معکوس مثلثیاتی تفاعل || معکوس مثلثاتي تابعګانې
+@sec 12.4.1 | Inverse trigonometric functions and their domain and range || معکوس مثلثیاتی تفاعل اور ان کا دائرہ اور سعت || معکوس مثلثاتي تابعګانې او د هغو ډومین او رینج
+@deco Unit-running header, folio and decorative footer band excluded
+m $\Rightarrow0.71-\dfrac{3.14}4=0\qquad(\because\pi=\tfrac{22}7=3.14\text{ (Approx.)})$
+m $\Rightarrow0.71-0.79=0\ \Rightarrow\ -0.08=0$
+p This agreement seems quite good for a graphical approximation. || یہ مطابقت ترسیمی تخمینے کے لیے کافی اچھی لگتی ہے۔ || دا همغږي د ګرافي اټکل لپاره ډېره ښه ښکاري.
+box note | Note || نوٹ || یادښت
+p (1) If the graphs intersect at more than one point, the other solutions of the equation may similarly be estimated. (2) We could have estimated the solution as coordinate pair $(\theta,y)$. However, the variable $y$ does not appear in the original equation. Hence, we are interested only in values of the angle that satisfy the equation. (3) A process of successive trial and error with use of trigonometric tables or scientific calculator would give the $x$-coordinate of the intersecting point as accurately as desired. || (1) اگر گراف ایک سے زیادہ نقاط پر ایک دوسرے کو کاٹیں تو مساوات کے دوسرے حل بھی اسی طرح تخمینہ کیے جا سکتے ہیں۔ (2) ہم حل کا تخمینہ محددی جوڑے $(\theta,y)$ کے طور پر بھی لگا سکتے تھے۔ تاہم متغیر $y$ اصل مساوات میں نہیں آتا۔ لہٰذا ہمیں صرف زاویے کی ان قیمتوں سے دلچسپی ہے جو مساوات کو پورا کرتی ہیں۔ (3) مثلثیاتی جدولوں یا سائنسی کیلکولیٹر کے استعمال سے متواتر کوشش اور غلطی کا عمل نقطۂ تقاطع کا $x$-محدد جتنی چاہیں درستگی سے دے گا۔ || (1) که ګرافونه په یو ډېر ټکي کې سره مخېږي نو د معادلې نور حلونه هم په ورته ډول اټکلېدای شي. (2) موږ کولای شو حل د همغږي جوړې $(\theta,y)$ په توګه اټکل کړو. خو تغیر پذیر $y$ په اصلي معادله کې نه راځي. له دې امله موږ یوازې د زاویې په هغو ارزښتونو لیوالتیا لرو چې معادله پوره کوي. (3) د مثلثاتي جدولونو یا ساینسي کلکولیټر په کارولو د پرله پسې هڅې او تېروتنې بهیر به د تقاطع ټکي $x$-همغږی هومره دقیق ورکړي لکه څومره چې وغواړو.
+endbox
+endexample
+exercise 12.3
+q 1 | Find all solutions of the trigonometric functions graphically. || مثلثیاتی تفاعل کے تمام حل ترسیمی طور پر معلوم کریں۔ || د مثلثاتي تابعګانو ټول حلونه ګرافي ډول پیدا کړئ.
+qp (i) | $\sin\theta=\dfrac{\sqrt2}2$ || $\sin\theta=\dfrac{\sqrt2}2$ || $\sin\theta=\dfrac{\sqrt2}2$
+qp (ii) | $\cos\theta=-\dfrac{\sqrt3}2$ || $\cos\theta=-\dfrac{\sqrt3}2$ || $\cos\theta=-\dfrac{\sqrt3}2$
+qp (iii) | $\tan\theta=\sqrt3$ || $\tan\theta=\sqrt3$ || $\tan\theta=\sqrt3$
+qp (iv) | $\cos\theta=\dfrac12$ || $\cos\theta=\dfrac12$ || $\cos\theta=\dfrac12$
+qp (v) | $\tan\theta=-1$ || $\tan\theta=-1$ || $\tan\theta=-1$
+qp (vi) | $\sin\theta=-\dfrac12$ || $\sin\theta=-\dfrac12$ || $\sin\theta=-\dfrac12$
+endexercise
+### 12.4 Inverse Trigonometric Functions || 12.4 معکوس مثلثیاتی تفاعل || 12.4 معکوس مثلثاتي تابعګانې
+### 12.4.1 Inverse trigonometric functions and their domain and range || 12.4.1 معکوس مثلثیاتی تفاعل اور ان کا دائرہ اور سعت || 12.4.1 معکوس مثلثاتي تابعګانې او د هغو ډومین او رینج
+p We know that if $f:x\to y$ is one to one and onto, then there exists a unique function $g:y\to x$ such that $g(y)=x$, where $x\in X$ is such that $y=f(x)$. Thus, the domain of $g=$ range of $f$ and range of $g=$ domain of $f$. The function $g$ is called the inverse of $f$ and is denoted by $f^{-1}$. Thus, $f(x)=y\Rightarrow f^{-1}(y)=x$ || ہم جانتے ہیں کہ اگر $f:x\to y$ ایک ایک اور پر ہو تو ایک یکتا تفاعل $g:y\to x$ موجود ہے جس کے لیے $g(y)=x$، جہاں $x\in X$ ایسا ہے کہ $y=f(x)$۔ یوں $g$ کا دائرہ $=f$ کی سعت اور $g$ کی سعت $=f$ کا دائرہ۔ تفاعل $g$ کو $f$ کا معکوس کہا جاتا ہے اور $f^{-1}$ سے ظاہر کیا جاتا ہے۔ یوں $f(x)=y\Rightarrow f^{-1}(y)=x$ || موږ پوهېږو چې که $f:x\to y$ یو-یو او پر وي نو یوه بې ساري تابع $g:y\to x$ شته چې $g(y)=x$، چېرته چې $x\in X$ داسې دی چې $y=f(x)$. په دې توګه د $g$ ډومین $=f$ رینج او د $g$ رینج $=f$ ډومین. تابع $g$ د $f$ معکوس بلل کېږي او په $f^{-1}$ ښودل کېږي. په دې توګه $f(x)=y\Rightarrow f^{-1}(y)=x$

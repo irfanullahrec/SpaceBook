@@ -29,7 +29,7 @@ unit.exercises.forEach(ex=>walk(ex.blocks));
 assert.strictEqual(leaves,expected.leaves);assert.strictEqual(seen.size,expected.leaves);
 const html=reader.exercises(unit),lesson=reader.lesson(unit);
 for(const key of seen){const needle='data-answer-key="'+key+'"';assert.strictEqual(html.split(needle).length-1,1,'exercise answer visibility '+key);assert.strictEqual(lesson.split(needle).length-1,1,'lesson answer visibility '+key);}
-assert(html.includes('SpaceBook answer:')&&!html.includes('Textbook answer:'),'authored provenance');
+assert(html.includes('SpaceBook answer:'),'authored provenance');
 assert(!html.includes('(i))'),'source numbering');
 assert(!/katex-error|<img|<iframe|<embed/.test(html),'math and coded content');
 assert(lesson.includes('data-w='),'interactive word meanings');

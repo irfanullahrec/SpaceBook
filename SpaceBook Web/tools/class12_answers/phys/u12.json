@@ -1,0 +1,280 @@
+{
+ "mcqs": [
+  [
+   "B",
+   "Possible combinations of three equal resistors R: all in series 3R; all in parallel R/3; two in parallel then series with the third R/2+R=3R/2; two in series then parallel with the third (2R·R)/(3R)=2R/3.",
+   "Option B is 2R/4 = R/2, which none of these combinations gives. So B cannot be obtained."
+  ],
+  [
+   "D",
+   "In parallel: x = r/n, so r = nx.",
+   "In series: R = nr = n(nx) = n²x."
+  ],
+  [
+   "B",
+   "R = V²/P: R₁ = 250²/200 = 312.5 Ω, R₂ = 250²/100 = 625 Ω.",
+   "In series: R = 937.5 Ω, so P = V²/R = 250²/937.5 = 66.7 W ≈ 67 W."
+  ],
+  [
+   "B",
+   "Stretching keeps the volume constant: length doubles, so area halves.",
+   "R′ = ρ(2L)/(A/2) = 4ρL/A = 4r."
+  ],
+  [
+   "C",
+   "I = q/t = Ne/t = (10⁶)(1.6×10⁻¹⁹ C)/(1 s).",
+   "I = 1.6×10⁻¹³ A."
+  ],
+  [
+   "A",
+   "Radius r → r/2, so area becomes A/4; constant volume makes length 4L.",
+   "R′ = ρ(4L)/(A/4) = 16ρL/A = 16R."
+  ],
+  [
+   "C",
+   "V = IR = (2 A)(8 Ω) = 16 A·Ω.",
+   "Since 1 V = 1 A·Ω, option C (16 A Ω) is the required 16 V."
+  ],
+  [
+   "C",
+   "Resistivity depends only on the material and temperature, not on length or area.",
+   "Cutting the wire halves its resistance, but the resistivity of each part remains the same."
+  ],
+  [
+   "C",
+   "Same length L and area A: R = ρ₁L/A + ρ₂L/A = (ρ₁+ρ₂)L/A.",
+   "The combination has length 2L and area A, so R = ρ_eq(2L)/A; therefore ρ_eq = (ρ₁+ρ₂)/2."
+  ],
+  [
+   "B",
+   "R = V²/P at the same voltage: R₁₀₀ = 220²/100 = 484 Ω, R₂₀₀ = 220²/200 = 242 Ω.",
+   "R₁₀₀ : R₂₀₀ = 484 : 242 = 2 : 1."
+  ],
+  [
+   "A",
+   "A thermocouple is two different metals joined at two junctions kept at different temperatures.",
+   "It converts heat energy directly into electrical energy (thermo-e.m.f., Seebeck effect)."
+  ],
+  [
+   "A",
+   "A longer wire gives a smaller potential gradient (volts per metre).",
+   "Balance lengths are then larger and can be read more precisely, so the wire should be as long as possible."
+  ],
+  [
+   "C",
+   "At the null (balance) point the galvanometer shows no current.",
+   "So no current is drawn from the unknown source and the power consumed in its circuit is ideally zero."
+  ],
+  [
+   "B",
+   "A Wheatstone bridge is balanced when the two midpoints are at the same potential.",
+   "Then the galvanometer current is 0 A."
+  ]
+ ],
+ "shortQuestions": [
+  [
+   "Q = It = (3 A)(24 × 3600 s)",
+   "Q = 2.59 × 10⁵ C (259 200 C)."
+  ],
+  [
+   "The internal resistance of a good source is usually very small compared with the external resistance of the circuit.",
+   "The voltage drop Ir inside the source is then negligible, so the source is treated as ideal (terminal p.d. ≈ e.m.f.) to simplify the analysis."
+  ],
+  [
+   "R = ρL/A, so for equal R and L the area is A = ρL/R, i.e. A ∝ ρ.",
+   "Aluminium has a larger resistivity (≈2.8×10⁻⁸ Ω m) than copper (≈1.7×10⁻⁸ Ω m).",
+   "So the aluminium wire must have the larger cross-section and hence the larger diameter."
+  ],
+  [
+   "Terminal p.d. V = ε − Ir while the battery supplies current.",
+   "When the battery is being charged, current is forced into its positive terminal, so V = ε + Ir.",
+   "Thus the terminal p.d. exceeds the e.m.f. while the battery is being charged."
+  ],
+  [
+   "E.m.f. is the energy converted into electrical energy per unit charge by a source (chemical, mechanical, etc.) as charge passes through it.",
+   "P.d. is the electrical energy converted into other forms per unit charge between two points of a circuit (e.g. across a resistor).",
+   "E.m.f. is a property of the source and exists even with no current; p.d. exists only between two points carrying current or charge."
+  ],
+  [
+   "Junction rule (Kirchhoff's first rule): the sum of currents entering a junction equals the sum leaving; it follows from conservation of charge, because charge cannot pile up at a junction.",
+   "Loop rule (Kirchhoff's second rule): the algebraic sum of e.m.f.s and potential drops round any closed loop is zero; it follows from conservation of energy, because a charge returning to its starting point has the same potential energy.",
+   "So only the loop rule is based on conservation of energy; the junction rule is based on conservation of charge."
+  ],
+  [
+   "Rise in temperature increases the amplitude of vibration of the atoms (ions) of the conductor.",
+   "Free electrons then collide with them more often, so the drift is hindered more and resistivity rises.",
+   "Hence R = R₀[1 + α(T − T₀)] increases with temperature for metals."
+  ],
+  [
+   "No. The direction of the e.m.f. is fixed by the polarity of the battery: inside the battery it acts from the negative to the positive terminal.",
+   "The current may flow either way through the battery (discharging or charging), but the e.m.f. direction does not change."
+  ],
+  [
+   "Voltage (potential difference) is the work done per unit charge in moving a charge from one point to another.",
+   "Potential at a single point has meaning only relative to a chosen reference (e.g. earth), so a voltmeter always measures between two points."
+  ],
+  [
+   "Every e.m.f. is measured in volts and appears as a potential difference across the open terminals of the source, but it is not the same thing: e.m.f. is energy converted into electrical form, while p.d. is electrical energy converted into other forms.",
+   "A potential difference is not always an e.m.f.: the p.d. across a resistor is not an e.m.f. because no energy is converted into electrical energy there."
+  ],
+  [
+   "Q = It = (0.0001 A)(60 s)",
+   "Q = 6 × 10⁻³ C each minute."
+  ],
+  [
+   "At balance P/Q = R/S, so the two points joined by the galvanometer are at the same potential.",
+   "With no potential difference across the galvanometer, no current flows through it."
+  ]
+ ],
+ "longQuestions": [
+  [
+   "Electric current is the rate of flow of charge: I = ΔQ/Δt. A steady current is one whose value does not change with time.",
+   "Current can be due to positive charges (e.g. positive ions in electrolytes and gases), negative charges (electrons in metals) or both (electrolytes, ionised gases).",
+   "A flow of negative charge in one direction is equivalent to a flow of positive charge in the opposite direction, so conventional current is taken in the direction of positive-charge flow.",
+   "Unit: the ampere. One ampere is the current when one coulomb of charge passes a cross-section in one second (1 A = 1 C s⁻¹)."
+  ],
+  [
+   "A metal contains a large number n of free electrons per unit volume moving randomly at high speed; with no field their net flow is zero.",
+   "When a p.d. is applied, the electric field E exerts a force −eE, so the electrons acquire a small average drift velocity v_d opposite to E, superimposed on their random motion.",
+   "In time t, electrons in length v_d t pass a cross-section A: charge Q = nAv_d t e, so I = Q/t = nAev_d.",
+   "Because n is very large, a tiny drift velocity (about 10⁻⁴ m s⁻¹) gives an appreciable current; the current direction is opposite to the electron drift."
+  ],
+  [
+   "Ohm's law: the current through a conductor is directly proportional to the potential difference across it, provided its temperature and other physical conditions remain constant: V = IR.",
+   "Scope and validity: it holds for metallic conductors at constant temperature (ohmic conductors, straight-line V–I graph). It does not hold for diodes, transistors, filament lamps whose temperature changes, gas discharge tubes, etc.",
+   "(a) Resistance R = ρL/A, where ρ is the resistivity (Ω m), a property of the material. Conductivity σ = 1/ρ (Ω⁻¹ m⁻¹ or S m⁻¹); good conductors have small ρ and large σ.",
+   "(b) For metals, resistance increases nearly linearly with temperature: R_t = R₀[1 + α(t − t₀)], where α is the temperature coefficient of resistance. Semiconductors and carbon have negative α: their resistance falls as temperature rises."
+  ],
+  [
+   "E.m.f. (ε): the energy converted into electrical energy per unit charge by the source; it equals the terminal p.d. when no current is drawn. Unit: volt.",
+   "Internal resistance (r): the resistance offered by the material of the source (electrolyte, electrodes) to the current flowing through it.",
+   "Terminal potential difference (V): the p.d. between the terminals when the source delivers current I. Since part of the e.m.f. is used inside the source, V = ε − Ir.",
+   "When no current flows, V = ε; when charging, V = ε + Ir."
+  ],
+  [
+   "Construction: a rheostat is a long resistance wire (e.g. nichrome) wound on an insulating cylinder, with two fixed end terminals A, B and a sliding contact C moving on a metal rod along the coil.",
+   "(a) As a current controller: connect one end terminal A and the sliding terminal C in series with the circuit. Moving C changes the length of wire in the circuit and hence the resistance, so the current is controlled.",
+   "(b) As a potential divider: connect the fixed ends A and B across the supply V. The output is taken between A and the slider C. Since the same current flows through the whole wire, V_out = V × (R_AC/R_AB), which can be varied from 0 to V by moving C."
+  ],
+  [
+   "A Wheatstone bridge is a circuit of four resistances P, Q, R and S joined in a closed loop ABCD, with a cell between A and C and a galvanometer between B and D.",
+   "Principle and balance: the resistances are adjusted until the galvanometer shows no deflection. Then points B and D are at the same potential.",
+   "With no galvanometer current, I₁ flows through P and Q, I₂ through R and S. V_AB = V_AD gives I₁P = I₂R, and V_BC = V_DC gives I₁Q = I₂S. Dividing: P/Q = R/S.",
+   "Working: if three resistances are known, the unknown S = QR/P. The balance condition does not depend on the cell's e.m.f., so the method is accurate."
+  ],
+  [
+   "A potentiometer is a device for measuring and comparing potential differences/e.m.f.s accurately without drawing current from the source being measured.",
+   "Principle: when a steady current flows through a uniform wire, the potential drop across a length l is proportional to l (V = kl, k = potential gradient).",
+   "Construction: a long uniform wire AB (often 1–10 m) stretched on a board with a metre scale; a driver cell and rheostat send a steady current through it; the cell under test is joined (same polarity) to A and through a galvanometer to a sliding jockey.",
+   "Working: the jockey is moved until the galvanometer shows no deflection at balance length l. Then ε = kl. Comparing two cells: ε₁/ε₂ = l₁/l₂.",
+   "Advantage: at balance no current is drawn from the cell under test, so its full e.m.f. (not the terminal p.d.) is measured; it is a null method and is more accurate than a voltmeter."
+  ],
+  [
+   "A thermocouple is a pair of different metals (e.g. copper and iron) joined at two junctions. When the junctions are kept at different temperatures an e.m.f. is produced and current flows — the Seebeck effect.",
+   "Working: keep the cold junction at 0 °C (in ice) and heat the hot junction; a galvanometer in the circuit shows a current that increases with the temperature difference.",
+   "Variation of e.m.f.: the graph of thermo-e.m.f. against the hot-junction temperature is a parabola. The e.m.f. rises to a maximum at the neutral temperature θₙ, then falls, becoming zero at the temperature of inversion θᵢ and reversing beyond it.",
+   "θₙ is fixed for a given pair of metals; θᵢ − θₙ = θₙ − θ_c (θ_c = cold-junction temperature). Thermocouples are used as thermometers and as sources of small e.m.f."
+  ],
+  [
+   "Complex circuits with several sources and loops cannot be reduced to simple series/parallel combinations, so Kirchhoff's rules are used to find all currents.",
+   "Rule 1 (junction rule): ΣI entering = ΣI leaving at any junction (conservation of charge).",
+   "Rule 2 (loop rule): around any closed loop Σε = ΣIR, i.e. the algebraic sum of potential changes is zero (conservation of energy). Sign convention: a resistor traversed in the current direction gives −IR; a cell traversed from − to + gives +ε.",
+   "Example: branch 1 has ε₁ = 12 V with R₁ = 2 Ω, branch 2 has ε₂ = 9 V with R₂ = 1 Ω, and both feed a common branch R₃ = 2 Ω. Junction: I₃ = I₁ + I₂. Loop 1: 12 = 2I₁ + 2(I₁ + I₂), i.e. 4I₁ + 2I₂ = 12. Loop 2: 9 = 1·I₂ + 2(I₁ + I₂), i.e. 2I₁ + 3I₂ = 9.",
+   "Solving: I₁ = 2.25 A, I₂ = 1.5 A, I₃ = 3.75 A. Check loop 1: 2(2.25) + 2(3.75) = 12 V ✓.",
+   "The rules are applied to as many independent junctions and loops as there are unknown currents."
+  ]
+ ],
+ "numericals": [
+  {
+   "s": [
+    "R = ε/I = 12.8 V / 3.2 A = 4 Ω.",
+    "Q = It = (3.2 A)(5 × 60 s) = 960 C."
+   ],
+   "a": "R = 4 Ω; Q = 960 C",
+   "n": "The book prints 1200 C. With the stated 3.2 A for 5 minutes the charge is 960 C (1200 C would need 6.25 minutes)."
+  },
+  {
+   "s": [
+    "R = V²/P.",
+    "40 W bulb: R = 120²/40 = 360 Ω. 60 W bulb: R = 120²/60 = 240 Ω.",
+    "The 40 W bulb has the greater filament resistance, because at the same voltage a smaller power means a smaller current, P = V²/R."
+   ],
+   "a": "40 W bulb: 360 Ω (greater); 60 W bulb: 240 Ω"
+  },
+  {
+   "s": [
+    "R = R₀[1 + α(t − t₀)] = 0.125[1 + (−0.0005)(85 − 20)]",
+    "R = 0.125 × 0.9675 = 0.121 Ω"
+   ],
+   "a": "R ≈ 0.12 Ω"
+  },
+  {
+   "s": [
+    "A = πr² = π(1 × 10⁻³ m)² = 3.14 × 10⁻⁶ m².",
+    "R = ρL/A = (2.63 × 10⁻⁸ Ω m)(10 m)/(3.14 × 10⁻⁶ m²)",
+    "R = 0.0837 Ω"
+   ],
+   "a": "R ≈ 0.084 Ω"
+  },
+  {
+   "s": [
+    "Terminal voltage: V = ε − Ir = 12 − (100)(0.012) = 10.8 V.",
+    "Load resistance: R = V/I = 10.8/100 = 0.108 Ω.",
+    "Power of the source: P_ε = εI = 12 × 100 = 1200 W.",
+    "Power in the load: P_R = I²R = 100² × 0.108 = 1080 W; power lost inside: P_r = I²r = 100² × 0.012 = 120 W (check: 1080 + 120 = 1200 W)."
+   ],
+   "a": "V = 10.8 V, R = 0.108 Ω, P_ε = 1200 W, P_R = 1080 W, P_r = 120 W",
+   "n": "The printed answer omits P_R; it is 1080 W."
+  },
+  {
+   "s": [
+    "P = I²R, so I = √(P/R) = √(10/120)",
+    "I = 0.289 A"
+   ],
+   "a": "I ≈ 0.289 A"
+  },
+  {
+   "s": [
+    "(a) P = V²/R = 100²/50 = 200 W.",
+    "(b) E = Pt = 200 × 3600 = 7.2 × 10⁵ J = 0.72 MJ."
+   ],
+   "a": "(a) 200 W (b) 0.72 MJ"
+  },
+  {
+   "s": [
+    "I = ε/(R + r) = 120/(1000 + 0.01)",
+    "I = 0.120 A = 120 mA"
+   ],
+   "a": "I ≈ 120 mA"
+  },
+  {
+   "s": [
+    "From the figure: a 24 V cell (r = 0.1 Ω) and a 6 V cell (r = 0.9 Ω) in opposition with an 8 Ω resistor in one loop.",
+    "I = (24 − 6)/(8 + 0.1 + 0.9) = 18/9 = 2 A.",
+    "24 V cell (discharging): V = ε − Ir = 24 − 2(0.1) = 23.8 V.",
+    "6 V cell (being charged): V = ε + Ir = 6 + 2(0.9) = 7.8 V."
+   ],
+   "a": "23.8 V and 7.8 V",
+   "n": "Values read from the printed figure (shown above); they reproduce the printed answers.",
+   "d": "section:phys12-unit12-numerical9-87"
+  },
+  {
+   "s": [
+    "The ideal voltmeter draws no current; R₁ and R₂ are in parallel across the source: R_p = (100 × 300)/(100 + 300) = 75 Ω.",
+    "I = ε/(R_p + r) = 15/(75 + 5) = 0.1875 A.",
+    "Terminal voltage V = IR_p = 0.1875 × 75 = 14.06 V.",
+    "Current in R₁: I₁ = V/R₁ = 14.06/100 = 0.1406 A."
+   ],
+   "a": "I₁ ≈ 0.141 A",
+   "n": "The book prints 0.01406 A; with the stated values the current is 0.1406 A (the printed decimal point is misplaced).",
+   "d": "section:phys12-unit12-numerical10-87"
+  },
+  {
+   "s": [
+    "At balance P/Q = R/S.",
+    "With P = Q = R = 75 Ω: S = QR/P = (75 × 75)/75 = 75 Ω."
+   ],
+   "a": "75 Ω"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+@printed 305
+@deco Unit-running header, folio and decorative footer band excluded
+m $\sin(\alpha+\beta)+\sin(\alpha-\beta)=2\sin\alpha\cos\beta$
+m $\therefore\ 2\sin\alpha\cos\beta=\sin(\alpha+\beta)+\sin(\alpha-\beta)\qquad(3)$
+p Now Subtracting (2) from (1) || اب (1) میں سے (2) تفریق کرنے پر || اوس له (1) نه (2) تفریق کولو سره
+m $\sin(\alpha+\beta)-\sin(\alpha-\beta)=2\cos\alpha\sin\beta$
+m $\therefore\ 2\cos\alpha\sin\beta=\sin(\alpha+\beta)-\sin(\alpha-\beta)\qquad(4)$
+p We also know that; || ہم یہ بھی جانتے ہیں کہ؛ || موږ دا هم پوهېږو چې؛
+m $\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta\qquad(5)$
+m $\cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta\qquad(6)$
+p Adding (5) and (6) we have, || (5) اور (6) کو جمع کرنے پر ہمارے پاس ہے، || د (5) او (6) په جمع کولو موږ لرو،
+m $\therefore\ 2\cos\alpha\cos\beta=\cos(\alpha+\beta)+\cos(\alpha-\beta)\qquad(7)$
+p Subtracting (6) from (5) we get, || (5) میں سے (6) تفریق کرنے پر ہمیں ملتا ہے، || له (5) نه (6) تفریق کولو سره موږ ترلاسه کوو،
+m $-2\sin\alpha\sin\beta=\cos(\alpha+\beta)-\cos(\alpha-\beta)$
+m $\therefore\ 2\sin\alpha\sin\beta=\cos(\alpha-\beta)-\cos(\alpha+\beta)\qquad(8)$
+p So, by converting products into sums or differences we get the following four identities: || یوں حاصل ضرب کو مجموعوں یا فرق میں بدلنے سے ہمیں درج ذیل چار مماثلتیں ملتی ہیں: || نو د ضربونو په مجموعو یا توپیرونو بدلولو سره موږ لاندې څلور هویتونه ترلاسه کوو:
+m $2\sin\alpha\cos\beta=\sin(\alpha+\beta)+\sin(\alpha-\beta)$
+m $2\cos\alpha\sin\beta=\sin(\alpha+\beta)-\sin(\alpha-\beta)$
+m $2\cos\alpha\cos\beta=\cos(\alpha+\beta)+\cos(\alpha-\beta)$
+m $2\sin\alpha\sin\beta=\cos(\alpha-\beta)-\cos(\alpha+\beta)$
+p These identities are usually called the **Product-to-Sum formulae**. || یہ مماثلتیں عموماً **حاصل ضرب سے مجموعہ کے کلیات** کہلاتی ہیں۔ || دا هویتونه معمولاً د **ضرب نه مجموعې فورمولونه** بلل کېږي.
+example 16 | Write the product $2\sin5\theta\cos3\theta$ as a sum or difference of sine and cosine. || حاصل ضرب $2\sin5\theta\cos3\theta$ کو سائن اور کوسائن کے مجموعے یا فرق کی صورت میں لکھیں۔ || ضرب $2\sin5\theta\cos3\theta$ د ساین او کوساین د مجموعې یا توپیر په بڼه ولیکئ.
+p **Solution:** Using the identity $2\sin\alpha\cos\beta=\sin(\alpha+\beta)+\sin(\alpha-\beta)$ we have, || **حل:** مماثلت $2\sin\alpha\cos\beta=\sin(\alpha+\beta)+\sin(\alpha-\beta)$ استعمال کرتے ہوئے ہمارے پاس ہے، || **حل:** د هویت $2\sin\alpha\cos\beta=\sin(\alpha+\beta)+\sin(\alpha-\beta)$ په کارولو موږ لرو،
+m $2\sin5\theta\cos3\theta=\sin(5\theta+3\theta)+\sin(5\theta-3\theta)=\sin8\theta+\sin2\theta$
+endexample
+example 17 | Express $\sin10\theta\cos4\theta$ as a sum or difference. || $\sin10\theta\cos4\theta$ کو مجموعے یا فرق کی صورت میں ظاہر کریں۔ || $\sin10\theta\cos4\theta$ د مجموعې یا توپیر په بڼه وښیئ.
+p **Solution:** Using the identity $2\sin\alpha\cos\beta=\sin(\alpha+\beta)+\sin(\alpha-\beta)$ we have, $\sin\alpha\cos\beta=\dfrac12[\sin(\alpha+\beta)+\sin(\alpha-\beta)]$ || **حل:** مماثلت $2\sin\alpha\cos\beta=\sin(\alpha+\beta)+\sin(\alpha-\beta)$ استعمال کرتے ہوئے ہمارے پاس ہے، $\sin\alpha\cos\beta=\dfrac12[\sin(\alpha+\beta)+\sin(\alpha-\beta)]$ || **حل:** د هویت $2\sin\alpha\cos\beta=\sin(\alpha+\beta)+\sin(\alpha-\beta)$ په کارولو موږ لرو، $\sin\alpha\cos\beta=\dfrac12[\sin(\alpha+\beta)+\sin(\alpha-\beta)]$
+m $\sin10\theta\cos4\theta=\dfrac12[\sin(10\theta+4\theta)+\sin(10\theta-4\theta)]=\dfrac12(\sin14\theta+\sin6\theta)$
+endexample

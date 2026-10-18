@@ -1,0 +1,17 @@
+@printed 299
+@deco Unit-running header, folio and decorative footer band excluded
+m $\cos\dfrac\theta2=\pm\sqrt{\dfrac{1+\cos\left(2\cdot\frac\theta2\right)}2}$
+m $\cos\dfrac\theta2=\pm\sqrt{\dfrac{1+\cos\theta}2}\qquad(10)$
+p From (9) and (10), we have $\tan\dfrac\theta2=\dfrac{\sin\frac\theta2}{\cos\frac\theta2}=\pm\sqrt{\dfrac{1-\cos\theta}{1+\cos\theta}}$. || (9) اور (10) سے ہمیں $\tan\dfrac\theta2=\dfrac{\sin\frac\theta2}{\cos\frac\theta2}=\pm\sqrt{\dfrac{1-\cos\theta}{1+\cos\theta}}$ ملتا ہے۔ || د (9) او (10) نه موږ لرو $\tan\dfrac\theta2=\dfrac{\sin\frac\theta2}{\cos\frac\theta2}=\pm\sqrt{\dfrac{1-\cos\theta}{1+\cos\theta}}$.
+m $\tan\dfrac\theta2=\pm\sqrt{\dfrac{1-\cos\theta}{1+\cos\theta}}\qquad(11)$
+example 9 | Find $\tan(\pi/8)$ exactly. || $\tan(\pi/8)$ کی صحیح قیمت معلوم کریں۔ || د $\tan(\pi/8)$ دقیق ارزښت پیدا کړئ.
+p **Solution:** || **حل:** || **حل:**
+m $\tan\dfrac\pi8=\tan\left(\dfrac{\frac\pi4}2\right)=\sqrt{\dfrac{1-\cos\frac\pi4}{1+\cos\frac\pi4}}=\sqrt{\dfrac{1-\frac1{\sqrt2}}{1+\frac1{\sqrt2}}}=\sqrt{\dfrac{\sqrt2-1}{\sqrt2+1}}=\sqrt{\dfrac{\sqrt2(\sqrt2-1)}{\sqrt2(\sqrt2+1)}}=\sqrt{\dfrac{2-\sqrt2}{2+\sqrt2}}$
+m $=\sqrt{\dfrac{2-\sqrt2}{2+\sqrt2}\cdot\dfrac{2-\sqrt2}{2-\sqrt2}}=\sqrt{\dfrac{4-2\sqrt2-2\sqrt2+2}{4-2}}=\sqrt{\dfrac{6-4\sqrt2}2}=\sqrt{3-2\sqrt2}$
+endexample
+p The identities that we have developed are also useful for simplifying trigonometric expressions. || ہماری اخذ کی ہوئی مماثلتیں مثلثیاتی اظہارات کو سادہ بنانے کے لیے بھی مفید ہیں۔ || هغه هویتونه چې موږ پیدا کړي دي د مثلثاتي عبارتونو د ساده کولو لپاره هم ګټور دي.
+example 10 | Simplify each of the following. a) $\dfrac{\sin x\cos x}{\frac12\cos2x}$ b) $2\sin^2\dfrac x2+\cos x$ || ہر ایک کو سادہ کریں۔ a) $\dfrac{\sin x\cos x}{\frac12\cos2x}$ b) $2\sin^2\dfrac x2+\cos x$ || هر یو ساده کړئ. a) $\dfrac{\sin x\cos x}{\frac12\cos2x}$ b) $2\sin^2\dfrac x2+\cos x$
+p **Solution:** || **حل:** || **حل:**
+m $\text{a) }\dfrac{\sin x\cos x}{\frac12\cos2x}=\dfrac22\cdot\dfrac{\sin x\cos x}{\frac12\cos2x}=\dfrac{2\sin x\cos x}{\cos2x}=\dfrac{\sin2x}{\cos2x}=\tan2x\quad(\text{using }\sin2x=2\sin x\cos x)$
+m $\text{b) }2\sin^2\dfrac x2+\cos x=2\left(\dfrac{1-\cos x}2\right)+\cos x=1-\cos x+\cos x=1\quad\left(\text{using }\sin^2\dfrac x2=\dfrac{1-\cos x}2\right)$
+endexample

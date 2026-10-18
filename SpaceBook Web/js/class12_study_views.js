@@ -44,8 +44,7 @@
     return result;
   };
   window.getClass12SubjectTabs=function(key,tabs){
-    const labels={exercise:'✍️ Exercises & Answers',slos:'🎯 MCQs, Short & Long Questions'};
-    const result=tabs.filter(tab=>tab.id!=='booktext').map(tab=>({...tab,label:labels[tab.id]||tab.label}));
+    const result=tabs.filter(tab=>tab.id!=='booktext'); // same tab names as Class 9/10
     if(!result.some(tab=>tab.id===state.activeSubjTab))state.activeSubjTab='lesson';
     return result;
   };
@@ -68,10 +67,10 @@
     return {options,correct};
   }
   window.getClass12QuestionBank=function(chapter,kind='exercise'){
-    const bank={mcqs:[],shortQuestions:[],longQuestions:[],numericals:[],activities:[]};
+    const bank={mcqs:[],objective:[],shortQuestions:[],longQuestions:[],numericals:[],activities:[]};
     const canonical=kind==='exercise'?chapter.class12Exercise:chapter.class12StudyBank||chapter.class12Exercise;
     const holders=canonical?[canonical]:kind==='exercise'?[chapter.exercise||chapter.textbookExercise||{}]:[chapter.sloBank,chapter.slos,chapter.sloQuestions,chapter.exercise||chapter.textbookExercise].filter(item=>item&&!Array.isArray(item));
-    const aliases={mcqs:['textbookMcqs','mcqs'],shortQuestions:['comprehension','shortQuestions','sqs','crqs','sq'],longQuestions:['detailedQuestions','longQuestions','essayQuestions','erqs','lqs','lq'],numericals:['numericals'],activities:['activities','practicalActivities']};
+    const aliases={mcqs:['textbookMcqs','mcqs'],shortQuestions:['comprehension','shortQuestions','sqs','crqs','sq'],longQuestions:['detailedQuestions','longQuestions','essayQuestions','erqs','lqs','lq'],objective:['objective'],numericals:['numericals'],activities:['activities','practicalActivities']};
     for(const [category,fields] of Object.entries(aliases)){
       const seen=new Map();
       for(const holder of holders)for(const field of fields)for(const item of array(holder[field])){
@@ -90,7 +89,10 @@
   const translation=(item,answer=false)=>{
     const ur=answer?(item.solUrdu||item.expUrdu||item.answerUrdu||item.ansUrdu):[item.qUrdu||item.questionUrdu,...array(item.optionsUrdu)].filter(Boolean).join('\n');
     const ps=answer?(item.solPashto||item.expPashto||item.answerPashto||item.ansPashto):[item.qPashto||item.questionPashto,...array(item.optionsPashto)].filter(Boolean).join('\n');
-    return ur||ps?`<details class="class12-language"><summary>${answer?'Answer':'Question'} in Urdu / Pashto</summary>${ur?`<p dir="rtl" lang="ur">${safe(ur)}</p>`:''}${ps?`<p dir="rtl" lang="ps">${safe(ps)}</p>`:''}</details>`:'';
+    // Urdu-medium books show the Urdu original as the question and give English as a translation.
+    const en=answer?(item.solEnglish||item.answerEnglish):[item.qEnglish,...array(item.optionsEnglish)].filter(Boolean).join('\n');
+    const label=[en&&'English',ur&&'Urdu',ps&&'Pashto'].filter(Boolean).join(' / ');
+    return en||ur||ps?`<details class="class12-language"><summary>${answer?'Answer':'Question'} in ${label}</summary>${en?`<p lang="en">${safe(en)}</p>`:''}${ur?`<p dir="rtl" lang="ur">${safe(ur)}</p>`:''}${ps?`<p dir="rtl" lang="ps">${safe(ps)}</p>`:''}</details>`:'';
   };
   function answerBody(item,choice){
     const text=item.sol||item.solution||item.explanation||item.exp||item.plainAnswer||(typeof item.answer==='string'?item.answer:typeof item.ans==='string'?item.ans:'')||item.desc||'';
@@ -99,7 +101,7 @@
     const hasAnswer=text||steps.length||choice.correct!==null;
     return `${item.answerOrigin||item.solutionOrigin?`<p class="class12-study-note">${safe(item.answerOrigin||item.solutionOrigin)}</p>`:''}${item.sourceClarification?`<p class="class12-study-note">${safe(item.sourceClarification)}</p>`:''}
       ${choice.correct!==null?`<p><strong>Correct answer: ${String.fromCharCode(65+choice.correct)}. ${safe(choice.options[choice.correct])}</strong></p>`:''}
-      ${steps.length?`<ol>${steps.map(step=>`<li>${safe(typeof step==='string'?step:step.text||'')}</li>`).join('')}</ol>`:text?`<div class="class12-answer-text">${text}</div>`:''}
+      ${steps.length?`<ol>${steps.map(step=>{const s=typeof step==='string'?step:step.text||'';return /\n/.test(s)?`<li><pre class="class12-answer-code"><code>${safe(s)}</code></pre></li>`:`<li>${safe(s)}</li>`;}).join('')}</ol>`:text?`<div class="class12-answer-text">${text}</div>`:''}
       ${steps.length&&final?`<p><strong>Answer:</strong> ${final}</p>`:''}
       ${translation(item,true)}
       ${!hasAnswer?'<p class="class12-study-note" data-answer-pending="true">The answer to this saved question still needs to be completed.</p>':''}`;
@@ -111,8 +113,8 @@
       ${item.origin==='SpaceBook supplementary practice'?'<p class="class12-study-note">SpaceBook supplementary practice</p>':''}
       <div class="class12-question-text" dir="auto">${item.q}</div>${translation(item)}
       ${item.diagramSvg||''}
-      ${choice.options.length?`<div class="class12-choices">${choice.options.map((option,i)=>canQuiz?`<button type="button" class="math-mcq-opt" data-option="${i}" data-correct="${choice.correct}" onclick="class12CheckAnswer(this)"><strong>${String.fromCharCode(65+i)}.</strong> ${option}</button>`:`<div><strong>${String.fromCharCode(65+i)}.</strong> ${option}</div>`).join('')}</div><p role="status"></p>`:''}
-      <details class="class12-answer"><summary>Show answer and explanation</summary>${answerBody(item,choice)}</details>
+      ${choice.options.length?`<div class="class12-choices"${item.lang==='ur'?' dir="rtl"':''}>${choice.options.map((option,i)=>canQuiz?`<button type="button" class="math-mcq-opt" data-option="${i}" data-correct="${choice.correct}" onclick="class12CheckAnswer(this)"><strong>${String.fromCharCode(65+i)}.</strong> ${option}</button>`:`<div><strong>${String.fromCharCode(65+i)}.</strong> ${option}</div>`).join('')}</div><p role="status"></p>`:''}
+      <details class="class12-answer"${item.lang==='ur'?' dir="rtl"':''}><summary>Show answer and explanation</summary>${answerBody(item,choice)}</details>
     </article>`;
   }
   window.class12CheckAnswer=function(button){
@@ -123,22 +125,23 @@
   };
   function renderBank(key,chapter,kind){
     const bank=getClass12QuestionBank(chapter,kind);
-    const fields=[['mcqs','MCQs'],['shortQuestions','Short Questions'],['longQuestions','Long Questions'],['numericals','Numericals'],['activities','Activities']];
+    const fields=[['mcqs','🎯 MCQs'],['objective','🧩 Fill in, True/False & Matching'],['shortQuestions','📝 Short Questions'],['longQuestions','📚 Long Questions'],['numericals','🔢 Numericals'],['activities','🛠️ Activities']]; // Class 9 wording
     const available=fields.filter(([field])=>bank[field].length);
     if(!available.length)return null;
     const stateKey=kind==='exercise'?'class12ExerciseCategory':'class12StudyCategory';
     const active=available.find(([field])=>field===state[stateKey])?.[0]||available[0][0];state[stateKey]=active;
-    return `<section class="class12-study-bank"><h3>${kind==='exercise'?'Textbook Exercises & Answers':'Chapter Questions & Answers'}</h3><div class="category-sub-tabs-bar">${available.map(([field,label])=>`<button type="button" class="category-sub-tab-btn ${active===field?'active':''}" data-category="${field}" onclick="class12SwitchQuestionCategory('${safe(key)}','${kind}','${field}')">${label} (${bank[field].length})</button>`).join('')}</div><div class="class12-question-list">${bank[active].map((item,index)=>card(item,index,'class12-'+key+'-'+kind)).join('')}</div></section>`;
+    return `<section class="class12-study-bank"><h3>${kind==='exercise'?'✍️ Solved Textbook Exercises':'🎯 Board SLO Based Examination Bank'}</h3><div class="category-sub-tabs-bar">${available.map(([field,label])=>`<button type="button" class="category-sub-tab-btn ${active===field?'active':''}" data-category="${field}" onclick="class12SwitchQuestionCategory('${safe(key)}','${kind}','${field}')">${label} (${bank[field].length})</button>`).join('')}</div><div class="class12-question-list">${bank[active].map((item,index)=>card(item,index,'class12-'+key+'-'+kind)).join('')}</div></section>`;
   }
   window.class12SwitchQuestionCategory=function(key,kind,category){
     state[kind==='exercise'?'class12ExerciseCategory':'class12StudyCategory']=category;
-    const ch=getSubjectChapterList(key,'cls12')[state.selectedSubjChapter||0],container=document.getElementById('subjTabContent');
+    const ch=getSubjectChapterList(key,state.selectedClass)[state.selectedSubjChapter||0],container=document.getElementById('subjTabContent');
     container.innerHTML=kind==='exercise'?renderSubjectExerciseTab(key,ch):renderSubjectSLOsTab(key,ch);
     typesetChapterMath(container);
   };
+  const studyClass=ch=>state.selectedClass==='cls12'||(state.selectedClass==='cls11'&&ch&&ch.class11Adapted);
   const oldExercise=renderSubjectExerciseTab;
   renderSubjectExerciseTab=function(key,ch){
-    if(state.selectedClass!=='cls12')return oldExercise(key,ch);
+    if(!studyClass(ch))return oldExercise(key,ch);
     const bank=renderBank(key,ch,'exercise');
     if(bank)return bank;
     // Leave source questions visible where structured question/answer matching
@@ -149,7 +152,7 @@
   };
   const oldStudy=renderSubjectSLOsTab;
   renderSubjectSLOsTab=function(key,ch){
-    if(state.selectedClass!=='cls12')return oldStudy(key,ch);
+    if(!studyClass(ch))return oldStudy(key,ch);
     return renderBank(key,ch,'study')||'<p class="class12-study-note">No separate chapter question bank is saved for this unit. The textbook questions are available under Exercises.</p>';
   };
 })();

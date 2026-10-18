@@ -1,0 +1,31 @@
+@printed 396
+@deco Running header, folio and decorative footer band excluded
+m 4\cos^2x+4\sin x-5=0
+m 4(1-\sin^2x)+4\sin x-5=0\qquad\qquad[\cos^2x=1-\sin^2x]
+m 4-4\sin^2x+4\sin x-5=0\qquad\qquad[\text{distributive property}]
+m -4\sin^2x+4\sin x-1=0\qquad\qquad[\text{add }4\text{ and }-5]
+m 4\sin^2x-4\sin x+1=0\qquad\qquad[\text{multiply each side by }-1]
+m (2\sin x-1)^2=0\qquad\qquad[\text{factor}]
+m 2\sin x-1=0\qquad\qquad[\text{set factor to }0]
+m \sin x=\tfrac12
+m x=\pi/6,\ 5\pi/6
+endexample
+example 36 | Solve $\sin2x\cos x+\cos2x\sin x=\dfrac1{\sqrt2}$ || حل کریں $\sin2x\cos x+\cos2x\sin x=\dfrac1{\sqrt2}$ || حل کړئ $\sin2x\cos x+\cos2x\sin x=\dfrac1{\sqrt2}$
+p **Solution:** We can simplify the left side by using the formula for $\sin(A+B)$ || **حل:** ہم بائیں طرف کو $\sin(A+B)$ کے کلیے سے سادہ کر سکتے ہیں || **حل:** موږ کیڼ اړخ د $\sin(A+B)$ د فورمول په کارولو ساده کولای شو
+m \sin2x\cos x+\cos2x\sin x=\dfrac1{\sqrt2}
+m \sin(2x+x)=\dfrac1{\sqrt2}
+m \sin(3x)=\dfrac1{\sqrt2}
+p First we find all possible solutions for $x$: || پہلے ہم $x$ کے تمام ممکنہ حل معلوم کرتے ہیں: || لومړی موږ د $x$ ټول ممکنه حلونه پیدا کوو:
+m 3x=\dfrac\pi4+2k\pi\quad\text{or}\quad3x=\dfrac{3\pi}4+2k\pi\qquad k\text{ is any integer}
+m x=\dfrac\pi{12}+\dfrac{2k\pi}3\quad\text{or}\quad x=\dfrac\pi4+\dfrac{2k\pi}3\qquad\text{(divide by 3)}
+endexample
+example 37 | Solve $\sin\theta-\cos\theta=1$, if $0\le\theta<2\pi$ || حل کریں $\sin\theta-\cos\theta=1$، اگر $0\le\theta<2\pi$ || حل کړئ $\sin\theta-\cos\theta=1$، که $0\le\theta<2\pi$
+p **Solution:** If we separate $\sin\theta-\cos\theta$ on opposite sides of the equal sign, and then square both sides of the equation, we will be able to use an identity to write the equation in terms of one trigonometric function only. || **حل:** اگر ہم $\sin\theta-\cos\theta$ کو مساوات کے الگ الگ اطراف میں کر دیں اور پھر دونوں اطراف کا مربع لیں تو ہم کسی مماثلت کی مدد سے مساوات کو صرف ایک مثلثیاتی تفاعل میں لکھ سکیں گے۔ || **حل:** که موږ $\sin\theta-\cos\theta$ د مساوات په مخالفو اړخونو کې جلا کړو او بیا دواړه اړخونه مربع کړو، نو موږ به د یو هویت په مرسته معادله یوازې په یو مثلثاتي تابع کې ولیکلای شو.
+m \sin\theta-\cos\theta=1
+m \sin\theta=1+\cos\theta\qquad[\text{add }\cos\theta\text{ to each side}]
+m \sin^2\theta=(1+\cos\theta)^2\qquad[\text{square each side}]
+m \sin^2\theta=1+2\cos\theta+\cos^2\theta\qquad[\text{expand }(1+\cos\theta)^2]
+m 1-\cos^2\theta=1+2\cos\theta+\cos^2\theta\qquad[\sin^2\theta=1-\cos^2\theta]
+m 0=2\cos\theta+2\cos^2\theta\qquad[\text{standard form}]
+m 0=2\cos\theta(1+\cos\theta)\qquad[\text{factorize}]
+m 2\cos\theta=0\quad\text{or}\quad1+\cos\theta=0\qquad[\text{set factors to }0]

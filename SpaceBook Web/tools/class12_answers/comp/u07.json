@@ -1,0 +1,27 @@
+{
+"mcqs": [
+ ["A", "int *Ptr; declares Ptr as a pointer to an integer type variable."],
+ ["C", "A pointer is a variable that stores the memory address of another variable."],
+ ["A", "The dereference operator * gives the value at the address stored in a pointer."],
+ ["C", "j is declared as int * and initialized with &i, so j is a pointer to int holding the address of i."],
+ ["B", "*ptr refers to the value stored in the variable that the pointer points to."]
+],
+"objective": [
+ ["the memory addresses", "Pointers store the addresses of other variables."],
+ ["int * (pointer to int)", "A pointer to an int variable is declared as int *p = &n;"],
+ ["pointer initialization", "Giving a pointer an address when it is declared is pointer initialization."],
+ ["address-of (reference)", "& gives the memory address of a variable."],
+ ["dereference (indirection)", "* is the dereference operator, read as 'value pointed by'."],
+ ["B", "False — int *ptr; defines a pointer variable that holds the address of an int, not an ordinary variable."],
+ ["B", "False — the code assigns the address of Temp (&Temp) to PTemp, not the value of Temp."],
+ ["A", "True — e.g. int x; int *p = &x; initializes the pointer with the address of x."],
+ ["A", "True — the address-of operator & is used to obtain the address that is assigned to a pointer."],
+ ["A", "True — on declaration the compiler reserves a memory location (of the size of the data type) for the variable."]
+],
+"longQuestions": [
+ ["A pointer is a variable that holds the memory address of another variable of a given type, declared as type *name; e.g. int *p = &x;", "Advantages: allow direct access and manipulation of memory; let functions change the caller's variables (pass by address) and return more than one value; make array and string handling efficient; are required for dynamic memory allocation (new/delete); allow building data structures such as linked lists and trees; can save memory and increase speed."],
+ ["The reference (address-of) operator & gives the memory address of a variable; the dereference operator * gives the value stored at the address held by a pointer.", "int x = 25;\nint *p = &x;        // & : p gets the address of x\ncout << p;          // prints an address, e.g. 0x7ffd5c\ncout << *p;         // * : prints 25, the value at that address\n*p = 40;            // changes x to 40 through the pointer"],
+ ["Pointer initialization means assigning an address to a pointer at the time of its declaration, so it does not hold a garbage address.", "#include <iostream>\nusing namespace std;\nint main() {\n    int num = 50;\n    int *ptr = &num;    // pointer initialized with the address of num\n    cout << \"Value of num = \" << num << endl;\n    cout << \"Address of num = \" << ptr << endl;\n    cout << \"Value through pointer = \" << *ptr << endl;\n    return 0;\n}"],
+ ["An ordinary variable declaration reserves memory to store a data value: int a; — a holds an integer value.", "A pointer declaration uses an asterisk (*) before the name: int *p; — p holds the address of an integer variable, not an integer value. The data type of a pointer is the type of variable it points to, and it is given an address with &: p = &a;"]
+]
+}

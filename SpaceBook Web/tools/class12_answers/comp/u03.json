@@ -1,0 +1,31 @@
+{
+"mcqs": [
+ ["B", "% and * have higher precedence than + and associate left to right: 5 * 4 = 20, 20 % 3 = 2, then 6 + 2 = 8."],
+ ["A", "(true && true) = true; true || false = true."],
+ ["A", "Post-increment: the current value of i is assigned to C first, then i is increased by 1."],
+ {"c": "A", "s": ["C is the language on which C++ is built; C++ is a superset of C, so C is (mostly) a subset of C++."], "n": "Strictly, almost all C is valid C++; 'subset' is used loosely in the book."},
+ ["C", "'3' in single quotes is a character constant (ASCII value 51), not the integer 3."]
+],
+"objective": [
+ ["0x (zero-x)", "A hexadecimal constant is written with the prefix 0x or 0X, e.g. 0x1F."],
+ ["conditional (ternary)", "?: is the conditional (ternary) operator: condition ? value1 : value2."],
+ ["true or false (1 or 0)", "Relational and logical operators give a Boolean result — true (1) or false (0)."],
+ ["initialization", "Assigning a value when a variable is declared is called initialization, e.g. int x = 10;"],
+ ["main()", "Every C++ program has a main() function where execution begins."],
+ ["B", "False — cout is defined in the header file iostream (iostream.h), not conio.h."],
+ ["B", "False — a C++ statement ends with a semicolon (;)."],
+ ["B", "False — a variable name cannot begin with a digit; 20sum is invalid (sum20 is valid)."],
+ ["A", "True — a += 20 is the compound assignment form of a = a + 20."],
+ ["B", "False — short int usually occupies 2 bytes."]
+],
+"longQuestions": [
+ ["1) (false && true) || true → false || true → true", "2) (false && true) || false || true → false || false || true → true", "3) (5 > 6 || 4 > 3) && (7 > 8) → (false || true) && false → true && false → false", "4) !(7 > 6 || 3 > 4) → !(true || false) → !true → false"],
+ ["Invalid declarations: 3) int my variable name; — spaces are not allowed in an identifier. 4) int void = 5; — void is a reserved keyword. 6) int 3some; — an identifier cannot start with a digit.", "Valid: 1) int sum; 2) int cats=5, dogs=5; 5) int nAngle; 7) int meters_of_pipe; 8) int length, width=5;"],
+ ["From the list: valid — int sum; int cats=5, dogs=5; int nAngle; int meters_of_pipe; int length, width=5;", "Invalid — int my variable name; (contains spaces), int void = 5; (void is a keyword), int 3some; (starts with a digit)."],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    float m1, m2, m3, m4, m5, m6, total, average, percentage;\n    cout << \"Enter marks of six subjects (out of 100 each): \";\n    cin >> m1 >> m2 >> m3 >> m4 >> m5 >> m6;\n    total = m1 + m2 + m3 + m4 + m5 + m6;\n    average = total / 6;\n    percentage = total / 600 * 100;\n    cout << \"Total = \" << total << endl;\n    cout << \"Average = \" << average << endl;\n    cout << \"Percentage = \" << percentage << \"%\" << endl;\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    int a, b, c, max;\n    cout << \"Enter three integers: \";\n    cin >> a >> b >> c;\n    max = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);\n    cout << \"Maximum value = \" << max << endl;\n    return 0;\n}"],
+ ["#include <iostream>\n#include <cmath>\nusing namespace std;\nint main() {\n    double a, b, c, d, r1, r2;\n    cout << \"Enter a, b and c of ax^2 + bx + c = 0: \";\n    cin >> a >> b >> c;\n    d = b * b - 4 * a * c;\n    if (d > 0) {\n        r1 = (-b + sqrt(d)) / (2 * a);\n        r2 = (-b - sqrt(d)) / (2 * a);\n        cout << \"Real and different roots: \" << r1 << \" and \" << r2 << endl;\n    } else if (d == 0) {\n        r1 = -b / (2 * a);\n        cout << \"Real and equal roots: \" << r1 << endl;\n    } else {\n        double real = -b / (2 * a), imag = sqrt(-d) / (2 * a);\n        cout << \"Complex roots: \" << real << \" + \" << imag << \"i and \" << real << \" - \" << imag << \"i\" << endl;\n    }\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    float length, width, area;\n    cout << \"Enter length and width of the rectangle: \";\n    cin >> length >> width;\n    area = length * width;\n    cout << \"Area of rectangle = \" << area << endl;\n    return 0;\n}"],
+ ["#include <iostream>\nusing namespace std;\nint main() {\n    int age;\n    cout << \"Enter your age: \";\n    cin >> age;\n    cout << \"Your age is \" << age << \" years.\" << endl;\n    return 0;\n}"]
+]
+}

@@ -1,0 +1,337 @@
+{
+ "mcqs": [
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "Correct choice: (a) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "D",
+   "s": [
+    "Correct choice: (d) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "D",
+   "s": [
+    "Correct choice: (d) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "Correct choice: (a) — answer key in the textbook."
+   ]
+  }
+ ],
+ "objective": [
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  [
+   "random variable",
+   "Answer from the textbook key."
+  ],
+  [
+   "estimate",
+   "Answer from the textbook key."
+  ],
+  [
+   "estimator",
+   "Answer from the textbook key."
+  ],
+  [
+   "point",
+   "Answer from the textbook key."
+  ],
+  [
+   "unbiased",
+   "Answer from the textbook key."
+  ],
+  [
+   "efficient",
+   "Answer from the textbook key."
+  ],
+  [
+   "shortest",
+   "Answer from the textbook key."
+  ],
+  [
+   "increasing",
+   "Answer from the textbook key."
+  ],
+  [
+   "two",
+   "Answer from the textbook key."
+  ],
+  [
+   "confidence coefficient",
+   "Answer from the textbook key."
+  ]
+ ],
+ "longQuestions": [
+  [
+   "Estimation is the process of using sample data to obtain values (point or interval) for unknown population parameters.",
+   "An estimator is the rule, formula or statistic used to estimate a parameter (x̄ = Σx/n); an estimate is the numerical value obtained by applying the estimator to a particular sample (x̄ = 52.4)."
+  ],
+  [
+   "i) Statistical inference — drawing conclusions about a population from sample information; its two branches are estimation and testing of hypotheses.",
+   "ii) Types of estimates — point estimate: a single value used as the estimate of the parameter (x̄ = 50); interval estimate: a range of values with a stated confidence that it contains the parameter (48 < μ < 52 with 95% confidence)."
+  ],
+  [
+   "i) A point estimate is a single number used as the estimate of a parameter; an interval estimate is a range (L, U) together with a confidence level that it contains the parameter.",
+   "ii) An estimator is the formula or statistic (a random variable); an estimate is the particular value of the estimator obtained from a given sample."
+  ],
+  [
+   "i) Unbiasedness — an estimator T is unbiased for θ if E(T) = θ; e.g. x̄ is unbiased for μ and s² = Σ(x−x̄)²/(n−1) is unbiased for σ².",
+   "ii) Efficiency — of two unbiased estimators, the one with smaller variance is more efficient; e.g. for a normal population the mean is more efficient than the median.",
+   "iii) Consistency — T is consistent if it approaches θ as n increases (its variance tends to 0); x̄ is consistent for μ.",
+   "iv) Sufficiency — T is sufficient if it uses all the information in the sample about θ; Σx (or x̄) is sufficient for μ."
+  ],
+  [
+   "Bias is the difference between the expected value of an estimator and the true value of the parameter: Bias = E(T) − θ.",
+   "Factors introducing bias: faulty sampling methods (non-random selection), an incomplete or outdated sampling frame, non-response, wrong questions or interviewer influence, deliberate wrong answers, faulty measuring instruments and wrong formulas of estimation."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     0
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     1
+    ]
+   ]
+  },
+  [
+   "E(T₁) = (μ + 2μ + μ)/4 = μ and E(T₂) = (μ + μ + μ)/3 = μ, so both T₁ and T₂ are unbiased.",
+   "Var(T₁) = (1 + 4 + 1)σ²/16 = 6σ²/16 = 0.375σ²; Var(T₂) = 3σ²/9 = σ²/3 ≈ 0.333σ².",
+   "Since Var(T₂) < Var(T₁), T₂ (the sample mean) is the more efficient estimator."
+  ],
+  [
+   "Confidence interval estimation gives a range of values (L, U), computed from sample data, that is expected to contain the unknown parameter with a stated probability (confidence level 1 − α), e.g. x̄ ± z_{α/2}·σ/√n for μ.",
+   "A 95% confidence interval means that if many samples were taken and intervals made in the same way, about 95% of them would contain the true parameter."
+  ],
+  [
+   "i) Confidence limits — the lower and upper end points L and U of a confidence interval.",
+   "ii) Confidence coefficient — the probability (1 − α) that the interval contains the parameter, e.g. 0.95.",
+   "iii) Level of significance (α) — the probability that the interval does not contain the parameter (risk of error), e.g. 0.05.",
+   "iv) Precision of a confidence interval — measured by its width; a narrower interval is more precise (precision increases with larger n and smaller σ)."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     2
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     3
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     4
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     5
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     6
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     7
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     8
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     9
+    ]
+   ]
+  },
+  [
+   "The t-distribution is used instead of Z when the population standard deviation σ is unknown and is estimated by s, and the sample size is small (n < 30), the population being approximately normal.",
+   "Then the interval is x̄ ± t_{α/2,(n−1)}·s/√n; for large samples Z can be used even when σ is unknown."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     10
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     11
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     12
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     13
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     14
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex6-b",
+     15
+    ]
+   ]
+  }
+ ]
+}

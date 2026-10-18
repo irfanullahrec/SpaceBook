@@ -15434,7 +15434,7 @@ function typesetChapterMath(container) {
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode(node) {
         const parent = node.parentElement;
-        if (!parent || parent.closest(".math-proper-matrix,script,style,textarea")) return NodeFilter.FILTER_REJECT;
+        if (!parent || parent.closest(".math-proper-matrix,script,style,textarea,pre,code")) return NodeFilter.FILTER_REJECT;
         return node.nodeValue.includes("[[") || node.nodeValue.includes('\\(') || node.nodeValue.includes('\\[') || /[\^_$]/.test(node.nodeValue) || /\\[A-Za-z]+/.test(node.nodeValue) || /[A-Za-z\)]\d{1,3}(?=\s*(?:[+\-*/=),.;\]}]|$))/.test(node.nodeValue)
           ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
       }
@@ -15447,7 +15447,7 @@ function typesetChapterMath(container) {
   if (typeof MutationObserver !== "undefined") {
     window.mathTypesetterObserver = new MutationObserver(records => {
       records.forEach(record => record.addedNodes.forEach(node => {
-        if (node.nodeType === Node.TEXT_NODE) typesetMathTextNode(node);
+        if (node.nodeType === Node.TEXT_NODE) { if (!(node.parentElement && node.parentElement.closest("pre,code"))) typesetMathTextNode(node); }
         else if (node.nodeType === Node.ELEMENT_NODE) render(node);
       }));
     });
@@ -19111,21 +19111,24 @@ function toggleSentenceTranslation(el, event) {
     const urText = el.dataset.ur || 'اردو ترجمہ دستیاب ہے۔';
     const psText = el.dataset.ps || 'د پښتو ژباړه شتون لري.';
     const enText = el.dataset.en || '';
+    // Urdu-medium books: the sentence itself is Urdu, so its translation is English
+    const fromUrdu = el.dataset.sourceLanguage === 'ur' && !!enText;
+    const speakText = fromUrdu ? el.textContent.trim() : enText, speakLang = fromUrdu ? 'ur-PK' : 'en-US';
 
     drawer.innerHTML = `
       <div class="sentence-inline-trans-drawer">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:0.35rem;">
           <span style="font-size:0.75rem;font-weight:700;color:#166534;background:#dcfce7;padding:0.15rem 0.45rem;border-radius:4px;">
-            🇵🇰 اردو ترجمہ (Urdu Translation)
+            ${fromUrdu ? '🇬🇧 English Translation' : '🇵🇰 اردو ترجمہ (Urdu Translation)'}
           </span>
-          <button onclick="event.stopPropagation(); playSingleParagraphTTS('${enText.replace(/'/g, "\\'")}', 'en-US');" 
+          <button onclick="event.stopPropagation(); playSingleParagraphTTS('${speakText.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', '${speakLang}');" 
                   style="background:#ffffff;border:1px solid #cbd5e1;border-radius:4px;padding:0.15rem 0.45rem;font-size:0.72rem;cursor:pointer;font-weight:700;color:#0369a1;">
             🔊 Listen Sentence
           </button>
         </div>
-        <div style="font-family:'Jameel Noori Nastaleeq',serif;direction:rtl;text-align:right;font-size:1.18rem;color:#166534;line-height:2.1;margin-bottom:0.55rem;">
+        ${fromUrdu ? `<div dir="ltr" lang="en" style="text-align:left;font-size:0.98rem;color:#166534;line-height:1.7;margin-bottom:0.55rem;">${enText}</div>` : `<div style="font-family:'Jameel Noori Nastaleeq',serif;direction:rtl;text-align:right;font-size:1.18rem;color:#166534;line-height:2.1;margin-bottom:0.55rem;">
           ${urText}
-        </div>
+        </div>`}
         <div style="font-size:0.75rem;font-weight:700;color:#92400e;background:#fef3c7;padding:0.15rem 0.45rem;border-radius:4px;display:inline-block;margin-bottom:0.25rem;">
           🇦🇫 پښتو ژباړه (Pashto Translation)
         </div>
@@ -20145,7 +20148,8 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
       <div class="para-card" id="para-item-${sIdx}">
         <div class="para-card-header"><div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
           <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">${sanitize(String(sec.sourcePageLabel || ('Part ' + (sIdx + 1))))}</span>
-          <span style="font-weight:700;font-size:0.88rem;color:#0f172a;">${sanitize(sec.title || sec.heading || '')}</span></div></div>
+          <span style="font-weight:700;font-size:0.88rem;color:#0f172a;">${sanitize(sec.title || sec.heading || '')}</span></div>
+          <button class="para-audio-btn" onclick="playParaTTSFromBtn(this, '${srcLang(sec) === 'ur' ? 'ur-PK' : srcLang(sec) === 'ps' ? 'ps-AF' : 'en-US'}')">🔊 Read Aloud</button></div>
         <div class="para-text-box" style="line-height:1.8;${srcLang(sec) !== 'en' ? 'direction:rtl;text-align:right;font-family:&quot;Jameel Noori Nastaleeq&quot;,&quot;Noto Naskh Arabic&quot;,serif;font-size:1.15rem;line-height:2.1;' : ''}">
           ${sec.sourceLayout ? renderScienceSourceLayout(sec, getScienceSectionParagraphsWithTranslations(sec, ch, subjKey), srcLang(sec), sIdx) : getSectionParagraphsWithTranslations(sec, ch).map(p => sanitize(p.text || '')).join('<br><br>')}
         </div>
@@ -20378,7 +20382,8 @@ function getAllDistinctWordsFromLesson(ch, isUrdu) {
   const paras = [];
   sections.forEach(sec => {
     if (sec.paras && Array.isArray(sec.paras)) {
-      paras.push(...sec.paras);
+      // Class 11/12 source records keep each paragraph as {text, urdu, pashto}
+      paras.push(...sec.paras.map(p => typeof p === 'string' ? p : String((isUrdu ? (p.urdu || p.original || p.text) : (p.text || p.original)) || '')));
     } else if (sec.text) {
       paras.push(sec.text);
     }
@@ -22201,7 +22206,7 @@ function renderScienceOrHumanitiesLessons(subjKey, ch) {
             <span class="math-acc-icon">+</span>
           </div>
           <div class="math-accordion-body" style="display:none;margin-top:1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
-            <div style="font-size:0.95rem;line-height:1.8;color:#334155;white-space:pre-line;margin-bottom:1rem;">
+            <div style="font-size:0.95rem;line-height:1.8;color:#334155;white-space:${t.sourceLayout && t.sourceClass12Source === true ? 'normal' : 'pre-line'};margin-bottom:1rem;">
               ${contentStr}
             </div>
             ${t.keyPoints || t.rules ? `

@@ -1,0 +1,18 @@
+@printed 290
+@deco Unit-running header, folio and decorative footer band excluded
+m $\tan(\alpha+\beta)=\dfrac{\frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta}}{\frac{\cos\alpha\cos\beta-\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}=\dfrac{\frac{\sin\alpha\cos\beta}{\cos\alpha\cos\beta}+\frac{\cos\alpha\sin\beta}{\cos\alpha\cos\beta}}{\frac{\cos\alpha\cos\beta}{\cos\alpha\cos\beta}-\frac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}$
+m $=\dfrac{\frac{\sin\alpha}{\cos\alpha}+\frac{\sin\beta}{\cos\beta}}{1-\frac{\sin\alpha}{\cos\alpha}\cdot\frac{\sin\beta}{\cos\beta}}$
+m $\tan(\alpha+\beta)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}$
+p (x) $\tan(\alpha-\beta)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}$ || (x) $\tan(\alpha-\beta)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}$ || (x) $\tan(\alpha-\beta)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}$
+p By identity (ix), $\tan(\alpha+\beta)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}$. Replacing $\beta$ by $-\beta$, we get || مماثلت (ix) سے $\tan(\alpha+\beta)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}$۔ $\beta$ کی جگہ $-\beta$ رکھنے پر ہمیں ملتا ہے || د هویت (ix) له مخې $\tan(\alpha+\beta)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}$. د $\beta$ پر ځای $-\beta$ ایښودو سره موږ ترلاسه کوو
+m $\tan(\alpha+(-\beta))=\dfrac{\tan\alpha+\tan(-\beta)}{1-\tan\alpha\tan(-\beta)}$
+m $\Rightarrow\tan(\alpha-\beta)=\dfrac{\tan\alpha+(-\tan\beta)}{1-\tan\alpha(-\tan\beta)}\quad(\because\tan(-\beta)=-\tan\beta)$
+m $\therefore\ \tan(\alpha-\beta)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}$
+example 1 | Find $\tan15^\circ$ exactly. || $\tan15^\circ$ کی صحیح قیمت معلوم کریں۔ || د $\tan15^\circ$ دقیق ارزښت پیدا کړئ.
+p **Solution:** We rewrite $15^\circ$ as $45^\circ-30^\circ$ and using the identity $\tan(\alpha-\beta)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}$ || **حل:** ہم $15^\circ$ کو $45^\circ-30^\circ$ لکھتے ہیں اور مماثلت $\tan(\alpha-\beta)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}$ استعمال کرتے ہیں || **حل:** موږ $15^\circ$ د $45^\circ-30^\circ$ په توګه لیکو او هویت $\tan(\alpha-\beta)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}$ کاروو
+m $\tan15^\circ=\tan(45^\circ-30^\circ)=\dfrac{\tan45^\circ-\tan30^\circ}{1+\tan45^\circ\tan30^\circ}=\dfrac{1-\frac1{\sqrt3}}{1+1\cdot\frac1{\sqrt3}}=\dfrac{\sqrt3-1}{\sqrt3+1}=\dfrac{3-\sqrt3}{3+\sqrt3}$
+endexample
+example 2 | Find the exact value of: $\sin42^\circ\cos12^\circ-\cos42^\circ\sin12^\circ$. || صحیح قیمت معلوم کریں: $\sin42^\circ\cos12^\circ-\cos42^\circ\sin12^\circ$۔ || دقیق ارزښت پیدا کړئ: $\sin42^\circ\cos12^\circ-\cos42^\circ\sin12^\circ$.
+p **Solution:** Using the identity $\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta$ || **حل:** مماثلت $\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta$ استعمال کرتے ہوئے || **حل:** د هویت $\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta$ په کارولو سره
+m $\sin42^\circ\cos12^\circ-\cos42^\circ\sin12^\circ=\sin(42^\circ-12^\circ)=\sin30^\circ=\dfrac12.$
+endexample

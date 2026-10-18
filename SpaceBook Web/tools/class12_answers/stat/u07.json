@@ -1,0 +1,339 @@
+{
+ "mcqs": [
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "Correct choice: (a) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "Correct choice: (a) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "Correct choice: (a) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "C",
+   "s": [
+    "Correct choice: (c) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "Correct choice: (b) — answer key in the textbook."
+   ]
+  }
+ ],
+ "objective": [
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "A",
+   "s": [
+    "True (answer key in the textbook)."
+   ]
+  },
+  {
+   "c": "B",
+   "s": [
+    "False (answer key in the textbook)."
+   ]
+  },
+  [
+   "assertion",
+   "Answer from the textbook key."
+  ],
+  [
+   "null",
+   "Answer from the textbook key."
+  ],
+  [
+   "alternative",
+   "Answer from the textbook key."
+  ],
+  [
+   "composite",
+   "Answer from the textbook key."
+  ],
+  [
+   "first, second",
+   "Answer from the textbook key."
+  ],
+  [
+   "level of significance",
+   "Answer from the textbook key."
+  ],
+  [
+   "0, 1",
+   "Answer from the textbook key."
+  ],
+  [
+   "rejection region",
+   "Answer from the textbook key."
+  ],
+  [
+   "rule",
+   "Answer from the textbook key."
+  ],
+  [
+   "degrees of freedom",
+   "Answer from the textbook key."
+  ]
+ ],
+ "longQuestions": [
+  [
+   "Hypothesis — an assumption or statement about something that may be true or false.",
+   "Statistical hypothesis — a statement about a population parameter or the form of a distribution, e.g. H₀: μ = 50.",
+   "Testing of hypothesis — the procedure of deciding, on the basis of sample data, whether to reject or not reject a statistical hypothesis."
+  ],
+  [
+   "(i) Hypothesis testing decides whether a claim about a parameter is supported by sample evidence; (ii) estimation finds the (point or interval) value of an unknown parameter from a sample.",
+   "Principal steps of testing: (1) state H₀ and H₁; (2) choose the level of significance α; (3) select the test statistic (Z, t, χ², F); (4) find the critical (rejection) region; (5) compute the test statistic from the sample; (6) decide: reject H₀ if the value falls in the critical region, otherwise do not reject; (7) state the conclusion."
+  ],
+  [
+   "(i) Null hypothesis H₀ is the statement being tested, usually of no difference (μ = μ₀); alternative hypothesis H₁ is accepted when H₀ is rejected (μ ≠ μ₀, μ > μ₀ or μ < μ₀).",
+   "(ii) A simple hypothesis specifies the distribution completely (μ = 50 with σ known); a composite hypothesis does not (μ > 50).",
+   "(iii) Type-I error: rejecting a true H₀ (probability α); Type-II error: accepting a false H₀ (probability β).",
+   "(iv) Acceptance region: values of the test statistic for which H₀ is not rejected; rejection (critical) region: values for which H₀ is rejected."
+  ],
+  [
+   "(a) Level of significance α — the probability of rejecting a true null hypothesis (Type-I error), usually 5% or 1%.",
+   "(b) Test statistic — a statistic computed from the sample whose distribution under H₀ is known (Z, t, χ², F); a test of significance is the procedure that uses it to decide whether the observed difference is significant or due to chance.",
+   "(c) A small sample usually has n < 30 (exact tests like t are used); a large sample has n ≥ 30 (normal approximation, Z-test, can be used)."
+  ],
+  [
+   "A one-sided (one-tailed) test has the critical region in one tail of the sampling distribution, used when H₁ is directional (H₁: μ > μ₀ — right tail, or μ < μ₀ — left tail).",
+   "A two-sided (two-tailed) test has critical regions in both tails, each of area α/2, used when H₁: μ ≠ μ₀.",
+   "Diagram: draw the normal curve; for a right-tailed test shade the area α beyond +z_α; for a two-tailed test shade α/2 beyond −z_{α/2} and +z_{α/2}."
+  ],
+  [
+   "Testing H₀: μ = μ₀ when σ is known (normal population): (1) H₀: μ = μ₀ against H₁: μ ≠ μ₀ (or > / <); (2) choose α; (3) test statistic Z = (x̄ − μ₀)/(σ/√n); (4) critical region |Z| ≥ z_{α/2} (or Z ≥ z_α / Z ≤ −z_α); (5) compute Z from the sample; (6) reject H₀ if Z falls in the critical region, otherwise accept; (7) conclusion."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     4
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     5
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     6
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     7
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     8
+    ]
+   ]
+  },
+  [
+   "When σ is unknown and n is small: (1) H₀: μ = μ₀, H₁: μ ≠ μ₀; (2) α; (3) test statistic t = (x̄ − μ₀)/(s/√n) with n − 1 degrees of freedom, s = √[Σ(x − x̄)²/(n − 1)]; (4) critical region |t| ≥ t_{α/2,(n−1)}; (5) compute t; (6) decide and conclude."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     9
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     10
+    ]
+   ]
+  },
+  [
+   "Testing H₀: μ₁ = μ₂ when σ₁ and σ₂ are known: (1) H₀: μ₁ − μ₂ = 0, H₁: μ₁ − μ₂ ≠ 0; (2) α; (3) Z = (x̄₁ − x̄₂)/√(σ₁²/n₁ + σ₂²/n₂); (4) critical region |Z| ≥ z_{α/2}; (5) compute; (6) decide and conclude."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     11
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     12
+    ]
+   ]
+  },
+  [
+   "When σ₁ = σ₂ = σ is unknown and samples are small: (1) H₀: μ₁ = μ₂, H₁: μ₁ ≠ μ₂; (2) α; (3) t = (x̄₁ − x̄₂)/[s_p√(1/n₁ + 1/n₂)] with pooled s_p² = [(n₁−1)s₁² + (n₂−1)s₂²]/(n₁ + n₂ − 2) and n₁ + n₂ − 2 d.f.; (4) critical region |t| ≥ t_{α/2}; (5) compute; (6) decide and conclude."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     13
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     14
+    ]
+   ]
+  },
+  [
+   "For a large sample: (1) H₀: P = P₀, H₁: P ≠ P₀ (or > / <); (2) α; (3) Z = (p̂ − P₀)/√(P₀Q₀/n); (4) critical region |Z| ≥ z_{α/2}; (5) compute Z; (6) reject H₀ if in the critical region; (7) conclusion."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     15
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     16
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     17
+    ]
+   ]
+  },
+  [
+   "For large samples: (1) H₀: P₁ = P₂, H₁: P₁ ≠ P₂; (2) α; (3) Z = (p̂₁ − p̂₂)/√[p̂q̂(1/n₁ + 1/n₂)] with pooled p̂ = (x₁ + x₂)/(n₁ + n₂), q̂ = 1 − p̂; (4) critical region |Z| ≥ z_{α/2}; (5) compute; (6) decide and conclude."
+  ],
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     18
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     "stat12-answers-ex7",
+     19
+    ]
+   ]
+  }
+ ]
+}

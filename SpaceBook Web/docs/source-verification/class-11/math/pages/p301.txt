@@ -1,0 +1,19 @@
+@printed 301
+@deco Unit-running header, folio and decorative footer band excluded
+m $=2\cos x-\dfrac{\cos^2x-\sin^2x}{\cos x}\qquad(\text{simplifying})$
+m $=\dfrac{2\cos^2x-\cos^2x+\sin^2x}{\cos x}\qquad(\text{taking LCM and simplifying})$
+m $=\dfrac{\cos^2x+\sin^2x}{\cos x}=\dfrac1{\cos x}=\sec x$
+p We started with the left side and obtained the right side, so the proof is complete. || ہم نے بائیں طرف سے آغاز کیا اور دائیں طرف حاصل کی، اس لیے ثبوت مکمل ہے۔ || موږ له کیڼې خوا پیل وکړ او ښي خوا مو ترلاسه کړه، نو ثبوت بشپړ دی.
+endexample
+example 12 | Prove the identity $\sin^2x\tan^2x=\tan^2x-\sin^2x$. || مماثلت ثابت کریں $\sin^2x\tan^2x=\tan^2x-\sin^2x$۔ || هویت ثابت کړئ $\sin^2x\tan^2x=\tan^2x-\sin^2x$.
+p **Solution:** For this proof, we are going to work with each side separately. We try to obtain the same expression on each side. || **حل:** اس ثبوت کے لیے ہم ہر طرف پر الگ الگ کام کریں گے۔ ہم ہر طرف سے ایک ہی اظہار حاصل کرنے کی کوشش کرتے ہیں۔ || **حل:** د دې ثبوت لپاره موږ پر هرې خوا جلا کار کوو. موږ هڅه کوو چې له هرې خوا یو شان عبارت ترلاسه کړو.
+m $\sin^2x\tan^2x=\sin^2x\left(\dfrac{\sin^2x}{\cos^2x}\right)=\dfrac{\sin^4x}{\cos^2x}\qquad\cdots(1)$
+m $\tan^2x-\sin^2x=\dfrac{\sin^2x}{\cos^2x}-\sin^2x\qquad\left(\because\tan x=\dfrac{\sin x}{\cos x}\right)$
+m $=\dfrac{\sin^2x-\sin^2x\cos^2x}{\cos^2x}\qquad(\text{Taking LCM})$
+m $=\dfrac{\sin^2x(1-\cos^2x)}{\cos^2x}\qquad(\text{Factoring})$
+m $=\dfrac{\sin^2x\sin^2x}{\cos^2x}\qquad(\text{Recalling the identity }1-\cos^2x=\sin^2x)$
+m $=\dfrac{\sin^4x}{\cos^2x}\qquad\cdots(2)$
+p We have obtained the same expression from each side, so the proof is complete. || ہم نے ہر طرف سے ایک ہی اظہار حاصل کیا ہے، اس لیے ثبوت مکمل ہے۔ || موږ له هرې خوا یو شان عبارت ترلاسه کړ، نو ثبوت بشپړ دی.
+endexample
+example 13 | Find the exact value of $\cos105^\circ$. || $\cos105^\circ$ کی صحیح قیمت معلوم کریں۔ || د $\cos105^\circ$ دقیق ارزښت پیدا کړئ.
+p **Solution:** Because $105^\circ=\dfrac12(210^\circ)$ we can find $\cos105^\circ$ by using the half-angle identity for $\cos\alpha/2$ with $\alpha=210^\circ$. The angle $\alpha/2=105^\circ$ lies in Quadrant II, and the cosine function is negative in Quadrant II. Thus $\cos105^\circ<0$, and we must select || **حل:** چونکہ $105^\circ=\dfrac12(210^\circ)$ ہے ہم $\alpha=210^\circ$ کے ساتھ $\cos\alpha/2$ کی نصف زاویے کی مماثلت سے $\cos105^\circ$ معلوم کر سکتے ہیں۔ زاویہ $\alpha/2=105^\circ$ دوسرے ربع میں واقع ہے اور کوسائن تفاعل دوسرے ربع میں منفی ہے۔ یوں $\cos105^\circ<0$ ہے اور ہمیں منتخب کرنا ہوگا || **حل:** ځکه چې $105^\circ=\dfrac12(210^\circ)$ دی موږ کولای شو د $\alpha=210^\circ$ سره د $\cos\alpha/2$ د نیمایي زاویې هویت په کارولو سره $\cos105^\circ$ پیدا کړو. زاویه $\alpha/2=105^\circ$ په دویم ربع کې ده او کوساین تابع په دویم ربع کې منفي دی. په دې توګه $\cos105^\circ<0$ دی او موږ باید وټاکو
