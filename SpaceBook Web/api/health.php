@@ -2,6 +2,15 @@
 // Deployment check: GET api/health.php -> {"ok":true,"db":true,"tables":[...]}.
 // Reports whether the database is reachable; never prints credentials.
 
+// a fatal error (old PHP, missing extension) would otherwise leave an empty 500 body
+register_shutdown_function(function () {
+    $e = error_get_last();
+    if ($e && in_array($e['type'], [E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR], true)) {
+        echo json_encode(['ok' => false, 'db' => false, 'php' => PHP_VERSION,
+            'fatal' => basename($e['file']) . ':' . $e['line'] . ' ' . preg_replace('/\s+/', ' ', substr($e['message'], 0, 160))]);
+    }
+});
+
 require __DIR__ . '/db.php';
 
 header('Content-Type: application/json; charset=utf-8');
@@ -23,4 +32,4 @@ try {
         : (preg_match('/could not find driver/i', $msg) ? 'PHP pdo_mysql extension missing' : 'database error'))));
     http_response_code(500);
 }
-echo json_encode($out);
+echo json_encode($out, JSON_PARTIAL_OUTPUT_ON_ERROR);
