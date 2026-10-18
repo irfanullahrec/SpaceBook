@@ -16,10 +16,11 @@ try {
     $out['ok'] = false;
     $msg = $e->getMessage();
     // say which kind of failure without echoing hosts or user names
-    $out['error'] = str_contains($msg, 'config.php') ? 'config.php missing'
+    $out['error'] = strpos($msg, 'config.php') !== false ? 'config.php missing'
         : (preg_match('/Access denied/i', $msg) ? 'access denied (user, password, or Remote MySQL host not allowed)'
         : (preg_match('/timed out|Connection refused|getaddrinfo|No route|2002/i', $msg) ? 'cannot reach the database server'
-        : (preg_match('/Unknown database/i', $msg) ? 'database does not exist' : 'database error')));
+        : (preg_match('/Unknown database/i', $msg) ? 'database does not exist'
+        : (preg_match('/could not find driver/i', $msg) ? 'PHP pdo_mysql extension missing' : 'database error'))));
     http_response_code(500);
 }
 echo json_encode($out);

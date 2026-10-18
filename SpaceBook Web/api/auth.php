@@ -41,7 +41,7 @@ function input(): array
 function normalize_whatsapp(string $raw): ?string
 {
     $d = preg_replace('/\D+/', '', $raw);
-    if (str_starts_with($d, '00')) $d = substr($d, 2);
+    if (strpos($d, '00') === 0) $d = substr($d, 2);
     if (preg_match('/^03\d{9}$/', $d)) $d = '92' . substr($d, 1);
     elseif (preg_match('/^3\d{9}$/', $d)) $d = '92' . $d;
     return preg_match('/^\d{10,15}$/', $d) ? $d : null;
