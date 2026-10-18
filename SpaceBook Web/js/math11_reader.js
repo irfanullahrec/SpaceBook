@@ -11,102 +11,83 @@
   const BOOK = typeof MATH_11_BOOK !== 'undefined' ? MATH_11_BOOK : {answers:{}};
 
   const css = `
-  .m8-root{color:#1e293b;line-height:1.75;font-size:.98rem}
-  .m8-root .katex{font-size:1.05em}
-  .m8-page{display:flex;align-items:center;gap:.5rem;margin:1.1rem 0 .5rem;color:#64748b;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
-  .m8-page::after{content:"";flex:1;border-top:1px dashed #cbd5e1}
-  .m8-s{cursor:pointer;border-radius:6px;padding:.1rem .25rem;margin:0 -.25rem}
-  .m8-s:hover,.m8-s:focus-visible{background:#f0f9ff;outline:none}
-  .m8-s[aria-expanded="true"]{background:#e0f2fe}
-  .m8-tr{margin:.3rem 0 .7rem;padding:.55rem .8rem;border-inline-start:3px solid #0284c7;background:#f8fafc;border-radius:0 6px 6px 0}
-  .m8-tr p{margin:.15rem 0;text-align:right;direction:rtl}
-  .m8-tr .m8-ur{font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Urdu Typesetting',serif;font-size:1.12rem;line-height:2.1}
-  .m8-tr .m8-ps{font-family:'Noto Naskh Arabic','Segoe UI',Tahoma,serif;font-size:1.05rem;line-height:1.9}
-  .m8-tr .m8-lang{font-size:.7rem;color:#0369a1;font-weight:700;margin-inline-end:.4rem;font-family:system-ui,sans-serif}
-  .m8-root.m8-show-all .m8-tr{display:block!important}
-  .m8-root[data-sbmode="0"] .m8-hsub{display:none}
-  .m8-root[data-sbmode="1"] .m8-tr,.m8-root[data-sbmode="2"] .m8-tr{display:block!important}
-  .m8-root[data-sbmode="1"] .m8-tr .m8-ps,.m8-root[data-sbmode="2"] .m8-tr .m8-ur{display:none}
-  .m8-root[data-sbmode="1"] .m8-hsub,.m8-root[data-sbmode="2"] .m8-hsub{font-size:0}
-  .m8-root[data-sbmode="1"] .m8-hsub>span:first-of-type,.m8-root[data-sbmode="2"] .m8-hsub>span:last-of-type{font-size:.92rem}
-  .m8-root[data-sbmode="1"] .m8-hsub>span:last-of-type,.m8-root[data-sbmode="2"] .m8-hsub>span:first-of-type{display:none}
-  .m8-root[data-sbmode="1"] .m8-hsub>span,.m8-root[data-sbmode="2"] .m8-hsub>span{display:block}
-  .m8-root .m8-hsub>span[lang="en"]{direction:ltr;text-align:left}
-  .m8-root .m8-hsub>span[lang="ur"],.m8-root .m8-hsub>span[lang="ps"]{direction:rtl;text-align:right}
-  .m8-tabs{display:flex;gap:.45rem;flex-wrap:wrap;margin:0 0 .55rem}
-  .m8-tabs button{border:1px solid #bae6fd;background:#fff;color:#0369a1;border-radius:999px;padding:.38rem .95rem;font:inherit;font-size:.9rem;font-weight:700;cursor:pointer}
-  .m8-tabs button[aria-pressed="true"]{background:#0369a1;color:#fff;border-color:#0369a1}
-  .m8-w{text-decoration:underline dotted #0284c7;text-underline-offset:4px;cursor:help}
-  .m8-h3{font-size:1.08rem;font-weight:750;color:#0f172a;margin:1rem 0 .3rem}
-  .m8-h4{font-size:1rem;font-weight:700;color:#075985;margin:.9rem 0 .25rem}
-  .m8-hsub{display:block;font-weight:500;font-size:.92rem;color:#475569;direction:rtl;text-align:right}
-  .m8-m{margin:.25rem 0 .25rem 1rem;font-variant-numeric:tabular-nums}
-  .m8-eq{margin:.6rem 0;text-align:center;overflow-x:auto}
-  .m8-ul{margin:.3rem 0 .6rem;padding-inline-start:1.3rem}
-  .m8-ul li{margin:.15rem 0;list-style:disc}
-  .m8-ul li.lv2{margin-inline-start:1.2rem;list-style:circle}
-  .m8-ul li.lv3{margin-inline-start:2.4rem;list-style:square}
-  .m8-box{border:1px solid #bae6fd;background:#f0f9ff;border-radius:10px;padding:.6rem .9rem;margin:.8rem 0}
-  .m8-box.note{border-color:#99f6e4;background:#f0fdfa}
-  .m8-box.check{border-color:#fde68a;background:#fffbeb}
-  .m8-box.prior{border-color:#c7d2fe;background:#eef2ff}
-  .m8-box.teach{border-color:#fecaca;background:#fef2f2}
-  .m8-box-t{font-weight:750;font-size:.85rem;color:#0f172a;margin-bottom:.2rem}
-  .m8-example{border:1px solid #e2e8f0;border-inline-start:4px solid #16a34a;border-radius:8px;padding:.6rem .9rem;margin:.9rem 0;background:#fff}
-  .m8-example-t{font-weight:750;color:#15803d}
-  .m8-exercise{border:1px solid #e2e8f0;border-inline-start:4px solid #7c3aed;border-radius:8px;padding:.6rem .9rem;margin:.9rem 0;background:#fff}
-  .m8-exercise-t{font-weight:800;color:#6d28d9;font-size:1.02rem}
-  .m8-q{margin:.55rem 0}
-  .m8-qno{font-weight:750;color:#6d28d9;margin-inline-end:.35rem}
-  .m8-parts{display:flex;flex-wrap:wrap;gap:.2rem 1.6rem;margin:.2rem 0 .2rem 1.6rem}
-  .m8-parts.block{display:block}
-  .m8-ans{margin:.25rem 0 .2rem 1.6rem;font-size:.9rem;color:#166534;background:#f0fdf4;border-radius:6px;padding:.25rem .55rem}
-  .m8-ans.none{color:#64748b;background:#f8fafc}
-  .m8-fig{margin:.8rem 0;text-align:center}
-  .m8-fig svg{max-width:100%;height:auto}
-  .m8-fig figcaption{font-size:.85rem;color:#475569;margin-top:.25rem}
-  .m8-table{overflow-x:auto;margin:.7rem 0}
-  .m8-table table{border-collapse:collapse;margin:0 auto;min-width:50%}
-  .m8-table th,.m8-table td{border:1px solid #94a3b8;padding:.3rem .65rem;text-align:center}
-  .m8-table th{background:#e0f2fe}
-  .m8-table caption{font-size:.85rem;color:#475569;caption-side:top;margin-bottom:.25rem}
-  .m8-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.2rem 0 .7rem}
-  .m8-tools button{font:inherit;font-size:.8rem;border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:.2rem .7rem;cursor:pointer}
-  .m8-help{font-size:.82rem;color:#64748b;margin:.2rem 0 .6rem}
-  #m8-word{max-width:calc(100vw - 2rem);width:340px;border:1px solid #94a3b8;border-radius:12px;padding:1rem}
-  #m8-word p{margin:.3rem 0}
-  .m8-part{margin:.25rem 0}
-  .m8-solbtn{font:inherit;font-size:.78rem;margin-inline-start:.6rem;border:1px solid #16a34a;color:#166534;background:#f0fdf4;border-radius:999px;padding:.1rem .65rem;cursor:pointer}
-  .m8-solbtn:hover{background:#dcfce7}
-  .m8-solve{margin:.5rem 0 .8rem;border:1px solid #bbf7d0;border-radius:12px;background:linear-gradient(180deg,#f0fdf4,#fff);padding:.6rem .6rem;min-width:0}
-  .m8-root{container-type:inline-size}
-  @container (max-width: 560px){.m8-exercise,.m8-example,.m8-box{padding:.5rem .55rem}.m8-parts{margin-inline-start:.4rem}.m8-ans{margin-inline-start:.4rem}.m8-solve{margin-inline:-.3rem}.m8-sol-lang{margin-inline-start:0}}
-  .m8-sol-head{display:flex;flex-direction:column;gap:.4rem;margin-bottom:.4rem}
-  .m8-sol-tag{font-size:.72rem;font-weight:700;color:#15803d;text-transform:uppercase;letter-spacing:.03em}
-  .m8-sol-ctl{display:flex;flex-wrap:wrap;gap:.35rem}
-  .m8-sol-ctl button{font:inherit;font-size:.75rem;border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:.15rem .6rem;cursor:pointer}
-  .m8-sol-ctl button[aria-pressed="true"]{background:#0284c7;color:#fff;border-color:#0284c7}
-  .m8-sol-lang{display:inline-flex;gap:.25rem;margin-inline-start:auto}
-  .m8-steps{list-style:none;margin:0;padding:0;counter-reset:st}
-  .m8-step{position:relative;margin:.45rem 0;padding:.45rem .5rem .45rem 2.3rem;border-radius:8px;transition:background .3s;list-style:none}
-  .m8-step.cur{background:#ecfeff;box-shadow:0 0 0 1px #a5f3fc}
-  .m8-step::before{counter-increment:st;content:counter(st);position:absolute;left:.5rem;top:.5rem;width:1.4rem;height:1.4rem;border-radius:50%;background:#16a34a;color:#fff;font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center}
-  .m8-teacher{position:absolute;left:.45rem;top:2.05rem;font-size:.95rem;opacity:0;transition:opacity .3s}
-  .m8-step.cur .m8-teacher{opacity:1;animation:m8bob 1s ease-in-out infinite}
-  .m8-say{min-height:1.4em}
-  .m8-say[dir="rtl"]{text-align:right;font-size:1.08rem;line-height:2}
-  .m8-show{margin:.3rem 0;overflow-x:auto}
-  .m8-final{margin-top:.6rem;padding:.45rem .7rem;border-radius:8px;background:#dcfce7;color:#14532d}
-  .m8-enter{animation:m8in .45s ease-out}
-  .m8-pop{animation:m8pop .5s ease-out}
+  .m11-root{color:#1e293b;line-height:1.75;font-size:.98rem}
+  .m11-root .katex{font-size:1.05em}
+  .m11-page{display:flex;align-items:center;gap:.5rem;margin:1.1rem 0 .5rem;color:#64748b;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+  .m11-page::after{content:"";flex:1;border-top:1px dashed #cbd5e1}
+  .m11-s{cursor:pointer;border-radius:6px;padding:.1rem .25rem;margin:0 -.25rem}
+  .m11-s:hover,.m11-s:focus-visible{background:#f0f9ff;outline:none}
+  .m11-s[aria-expanded="true"]{background:#e0f2fe}
+  .m11-tr{margin:.3rem 0 .7rem;padding:.55rem .8rem;border-inline-start:3px solid #0284c7;background:#f8fafc;border-radius:0 6px 6px 0}
+  .m11-tr p{margin:.15rem 0;text-align:right;direction:rtl}
+  .m11-tr .m11-ur{font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Urdu Typesetting',serif;font-size:1.12rem;line-height:2.1}
+  .m11-tr .m11-ps{font-family:'Noto Naskh Arabic','Segoe UI',Tahoma,serif;font-size:1.05rem;line-height:1.9}
+  .m11-tr .m11-lang{font-size:.7rem;color:#0369a1;font-weight:700;margin-inline-end:.4rem;font-family:system-ui,sans-serif}
+  .m11-root.m11-show-all .m11-tr{display:block!important}
+  .m11-root[data-sbmode="0"] .m11-hsub{display:none}
+  .m11-root[data-sbmode="1"] .m11-tr,.m11-root[data-sbmode="2"] .m11-tr{display:block!important}
+  .m11-root[data-sbmode="1"] .m11-tr .m11-ps,.m11-root[data-sbmode="2"] .m11-tr .m11-ur{display:none}
+  .m11-root[data-sbmode="1"] .m11-hsub,.m11-root[data-sbmode="2"] .m11-hsub{font-size:0}
+  .m11-root[data-sbmode="1"] .m11-hsub>span:first-of-type,.m11-root[data-sbmode="2"] .m11-hsub>span:last-of-type{font-size:.92rem}
+  .m11-root[data-sbmode="1"] .m11-hsub>span:last-of-type,.m11-root[data-sbmode="2"] .m11-hsub>span:first-of-type{display:none}
+  .m11-root[data-sbmode="1"] .m11-hsub>span,.m11-root[data-sbmode="2"] .m11-hsub>span{display:block}
+  .m11-root .m11-hsub>span[lang="en"]{direction:ltr;text-align:left}
+  .m11-root .m11-hsub>span[lang="ur"],.m11-root .m11-hsub>span[lang="ps"]{direction:rtl;text-align:right}
+  .m11-tools:empty{display:none}
+  .m11-root .m11-h3,.m11-root .m11-h4{cursor:pointer}
+  .m11-root[data-sbmode="0"] .sb-hopen>.m11-hsub{display:block!important}
+  .m11-tabs{display:flex;gap:.45rem;flex-wrap:wrap;margin:0 0 .55rem}
+  .m11-tabs button{border:1px solid #bae6fd;background:#fff;color:#0369a1;border-radius:999px;padding:.38rem .95rem;font:inherit;font-size:.9rem;font-weight:700;cursor:pointer}
+  .m11-tabs button[aria-pressed="true"]{background:#0369a1;color:#fff;border-color:#0369a1}
+  .m11-w{text-decoration:underline dotted #0284c7;text-underline-offset:4px;cursor:help}
+  .m11-h3{font-size:1.08rem;font-weight:750;color:#0f172a;margin:1rem 0 .3rem}
+  .m11-h4{font-size:1rem;font-weight:700;color:#075985;margin:.9rem 0 .25rem}
+  .m11-hsub{display:block;font-weight:500;font-size:.92rem;color:#475569;direction:rtl;text-align:right}
+  .m11-m{margin:.25rem 0 .25rem 1rem;font-variant-numeric:tabular-nums}
+  .m11-eq{margin:.6rem 0;text-align:center;overflow-x:auto}
+  .m11-ul{margin:.3rem 0 .6rem;padding-inline-start:1.3rem}
+  .m11-ul li{margin:.15rem 0;list-style:disc}
+  .m11-ul li.lv2{margin-inline-start:1.2rem;list-style:circle}
+  .m11-ul li.lv3{margin-inline-start:2.4rem;list-style:square}
+  .m11-box{border:1px solid #bae6fd;background:#f0f9ff;border-radius:10px;padding:.6rem .9rem;margin:.8rem 0}
+  .m11-box.note{border-color:#99f6e4;background:#f0fdfa}
+  .m11-box.check{border-color:#fde68a;background:#fffbeb}
+  .m11-box.prior{border-color:#c7d2fe;background:#eef2ff}
+  .m11-box.teach{border-color:#fecaca;background:#fef2f2}
+  .m11-box-t{font-weight:750;font-size:.85rem;color:#0f172a;margin-bottom:.2rem}
+  .m11-example{border:1px solid #e2e8f0;border-inline-start:4px solid #16a34a;border-radius:8px;padding:.6rem .9rem;margin:.9rem 0;background:#fff}
+  .m11-example-t{font-weight:750;color:#15803d}
+  .m11-exercise{border:1px solid #e2e8f0;border-inline-start:4px solid #7c3aed;border-radius:8px;padding:.6rem .9rem;margin:.9rem 0;background:#fff}
+  .m11-exercise-t{font-weight:800;color:#6d28d9;font-size:1.02rem}
+  .m11-q{margin:.55rem 0}
+  .m11-qno{font-weight:750;color:#6d28d9;margin-inline-end:.35rem}
+  .m11-parts{display:flex;flex-wrap:wrap;gap:.2rem 1.6rem;margin:.2rem 0 .2rem 1.6rem}
+  .m11-parts.block{display:block}
+  .m11-ans{margin:.25rem 0 .2rem 1.6rem;font-size:.9rem;color:#166534;background:#f0fdf4;border-radius:6px;padding:.25rem .55rem}
+  .m11-ans.none{color:#64748b;background:#f8fafc}
+  .m11-fig{margin:.8rem 0;text-align:center}
+  .m11-fig svg{max-width:100%;height:auto}
+  .m11-fig figcaption{font-size:.85rem;color:#475569;margin-top:.25rem}
+  .m11-table{overflow-x:auto;margin:.7rem 0}
+  .m11-table table{border-collapse:collapse;margin:0 auto;min-width:50%}
+  .m11-table th,.m11-table td{border:1px solid #94a3b8;padding:.3rem .65rem;text-align:center}
+  .m11-table th{background:#e0f2fe}
+  .m11-table caption{font-size:.85rem;color:#475569;caption-side:top;margin-bottom:.25rem}
+  .m11-tools{display:flex;gap:.5rem;flex-wrap:wrap;margin:.2rem 0 .7rem}
+  .m11-tools button{font:inherit;font-size:.8rem;border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:.2rem .7rem;cursor:pointer}
+  .m11-help{font-size:.82rem;color:#64748b;margin:.2rem 0 .6rem}
+  #m11-word{max-width:calc(100vw - 2rem);width:340px;border:1px solid #94a3b8;border-radius:12px;padding:1rem}
+  #m11-word p{margin:.3rem 0}
+  .m11-part{margin:.25rem 0}
+  .m11-root{container-type:inline-size}
+  @container (max-width: 560px){.m11-exercise,.m11-example,.m11-box{padding:.5rem .55rem}.m11-parts{margin-inline-start:.4rem}.m11-ans{margin-inline-start:.4rem}}
   @keyframes m8in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
   @keyframes m8pop{0%{opacity:0;transform:scale(.92)}70%{opacity:1;transform:scale(1.03)}100%{transform:none}}
   @keyframes m8bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-  @media (prefers-reduced-motion: reduce){.m8-enter,.m8-pop,.m8-step.cur .m8-teacher{animation:none}}
   `;
-  if (typeof document !== 'undefined' && !document.getElementById('m8-style')) {
+  if (typeof document !== 'undefined' && !document.getElementById('m11-style')) {
     const style = document.createElement('style');
-    style.id = 'm8-style';
+    style.id = 'm11-style';
     style.textContent = css;
     document.head.appendChild(style);
   }
@@ -116,7 +97,7 @@
     return text.split(/([A-Za-z]+(?:'[a-z]+)?)/).map(token => {
       const key = token.toLowerCase();
       const m = /^[A-Za-z]/.test(token) && WORDS[key];
-      return m ? `<span class="m8-w" role="button" tabindex="0" data-w="${esc(key)}" title="اردو: ${esc(m[0])} | پښتو: ${esc(m[1])}" onclick="m11Word(this,event)" onkeydown="if(event.key==='Enter'){m11Word(this,event)}">${esc(token)}</span>` : esc(token);
+      return m ? `<span class="m11-w" role="button" tabindex="0" data-w="${esc(key)}" title="اردو: ${esc(m[0])} | پښتو: ${esc(m[1])}" onclick="m11Word(this,event)" onkeydown="if(event.key==='Enter'){m11Word(this,event)}">${esc(token)}</span>` : esc(token);
     }).join('');
   }
   const bold = html => html.replace(/\*\*([\s\S]+?)\*\*/g, '<strong>$1</strong>');
@@ -127,20 +108,31 @@
   }
   function translations(rec) {
     if (!rec || !rec.ur) return '';
-    return `<div class="m8-tr" hidden><p class="m8-ur" lang="ur" dir="rtl"><span class="m8-lang">اردو</span>${inline(rec.ur, false)}</p><p class="m8-ps" lang="ps" dir="rtl"><span class="m8-lang">پښتو</span>${inline(rec.ps, false)}</p></div>`;
+    return `<div class="m11-tr" hidden><p class="m11-ur" lang="ur" dir="rtl"><span class="m11-lang">اردو</span>${inline(rec.ur, false)}</p><p class="m11-ps" lang="ps" dir="rtl"><span class="m11-lang">پښتو</span>${inline(rec.ps, false)}</p></div>`;
   }
   // A sentence/paragraph that opens its translation when clicked.
+  const SB_SPLIT = /(?<=[.!?؟۔])\s+(?=\S)/;
   function sentence(rec, tag, cls) {
+    if (rec && rec.ur && rec.ps && typeof rec.en === 'string' && rec.en.indexOf('$') < 0) {
+      const a = rec.en.split(SB_SPLIT), b = String(rec.ur).split(SB_SPLIT), c = String(rec.ps).split(SB_SPLIT);
+      if (a.length > 1 && a.length === b.length && a.length === c.length) {
+        const w = (tag || 'p') === 'span' ? 'span' : 'div';
+        return `<${w} class="m11-para ${cls || ''}">` + a.map((x, k) => sentenceWhole({en: x, ur: b[k], ps: c[k]}, 'span', 'm11-sent')).join(' ') + `</${w}>`;
+      }
+    }
+    return sentenceWhole(rec, tag, cls);
+  }
+  function sentenceWhole(rec, tag, cls) {
     tag = tag || 'p';
     if (!rec.ur) return `<${tag} class="${cls || ''}">${inline(rec.en, true)}</${tag}>`;
-    return `<${tag} class="m8-s ${cls || ''}" role="button" tabindex="0" aria-expanded="false" onclick="m11Toggle(this,event)" onkeydown="if(event.key==='Enter'||event.key===' '){m11Toggle(this,event)}">${inline(rec.en, true)}</${tag}>${translations(rec)}`;
+    return `<${tag} class="m11-s ${cls || ''}" role="button" tabindex="0" aria-expanded="false" onclick="m11Toggle(this,event)" onkeydown="if(event.key==='Enter'||event.key===' '){m11Toggle(this,event)}">${inline(rec.en, true)}</${tag}>${translations(rec)}`;
   }
 
   window.m11Toggle = function (el, event) {
-    if (event && event.target && event.target.closest('.m8-w')) return;
+    if (event && event.target && event.target.closest('.m11-w')) return;
     if (event && event.type === 'keydown') event.preventDefault();
     const panel = el.nextElementSibling;
-    if (!panel || !panel.classList.contains('m8-tr')) return;
+    if (!panel || !panel.classList.contains('m11-tr')) return;
     const open = panel.hidden;
     panel.hidden = !open;
     el.setAttribute('aria-expanded', String(open));
@@ -149,23 +141,23 @@
     event.preventDefault(); event.stopPropagation();
     const key = el.dataset.w, m = WORDS[key];
     if (!m) return;
-    let panel = document.getElementById('m8-word');
-    if (!panel) { panel = document.createElement('dialog'); panel.id = 'm8-word'; document.body.appendChild(panel); }
+    let panel = document.getElementById('m11-word');
+    if (!panel) { panel = document.createElement('dialog'); panel.id = 'm11-word'; document.body.appendChild(panel); }
     panel.innerHTML = `<button type="button" style="float:right" aria-label="Close" onclick="this.closest('dialog').close()">×</button><h3 style="margin:.1rem 0 .5rem">${esc(el.textContent)}</h3><p lang="ur" dir="rtl" style="font-size:1.15rem"><strong>اردو:</strong> ${esc(m[0])}</p><p lang="ps" dir="rtl" style="font-size:1.1rem"><strong>پښتو:</strong> ${esc(m[1])}</p>`;
     if (panel.showModal) panel.showModal(); else panel.setAttribute('open', '');
   };
-  window.m8ShowAll = function (btn) {
-    const root = btn.closest('.m8-root');
-    const on = !root.classList.contains('m8-show-all');
-    root.classList.toggle('m8-show-all', on);
+  window.m11ShowAll = function (btn) {
+    const root = btn.closest('.m11-root');
+    const on = !root.classList.contains('m11-show-all');
+    root.classList.toggle('m11-show-all', on);
     btn.setAttribute('aria-pressed', String(on));
     btn.textContent = on ? 'Hide all Urdu / Pashto' : 'Show all Urdu / Pashto';
   };
 
   const BOX_LABEL = {note: 'Note it down', check: 'Quick Check', prior: 'Previous Knowledge Check', teach: 'Teaching Point', info: ''};
   function heading(b) {
-    const cls = b.l <= 3 ? 'm8-h3' : 'm8-h4';
-    const sub = b.ur ? `<span class="m8-hsub"><span lang="ur">${esc(b.ur)}</span> · <span lang="ps">${esc(b.ps)}</span></span>` : '';
+    const cls = b.l <= 3 ? 'm11-h3' : 'm11-h4';
+    const sub = b.ur ? `<span class="m11-hsub"><span lang="ur">${esc(b.ur)}</span> · <span lang="ps">${esc(b.ps)}</span></span>` : '';
     return `<div role="heading" aria-level="${b.l}" class="${cls}">${inline(b.en, true)}${sub}</div>`;
   }
   function answersFor(exId) {
@@ -174,10 +166,10 @@
     list.forEach(a => { map[a.q] = a; });
     return map;
   }
-  // ---- animated step-by-step SpaceBook solutions ----
+  // ---- SpaceBook answers: the Ans button opens the shared step-by-step panel (js/sb_solve.js) ----
   function solButton(sid) {
     if (!sid) return '';
-    return `<button type="button" class="m8-solbtn" aria-expanded="false" onclick="m11SolOpen(this,'${esc(sid)}')">▶ Explain step by step</button><div class="m8-solve" hidden></div>`;
+    return `<button type="button" class="sb-ans" aria-expanded="false" title="Answer and step-by-step explanation" onclick="event.stopPropagation();m11SolOpen(this,'${esc(sid)}')">Ans</button><div class="sb-solve" hidden></div>`;
   }
   let solLoad = null;
   function loadSolutions() {
@@ -185,7 +177,7 @@
     if (!solLoad) {
       solLoad = new Promise((resolve, reject) => {
         const s = document.createElement('script');
-        const own = [...document.scripts].find(x => /math8_reader\.js/.test(x.src));
+        const own = [...document.scripts].find(x => /math11_reader\.js/.test(x.src));
         const v = own && own.src.includes('?') ? own.src.slice(own.src.indexOf('?')) : '';
         s.src = 'js/math_11_solutions.js' + v;
         s.onload = () => resolve(window.MATH_11_SOLUTIONS);
@@ -196,147 +188,58 @@
     return solLoad;
   }
   const plain = text => String(text || '').replace(/\$([^$]*)\$/g, (_, m) => m.replace(/\\times/g, '×').replace(/\\div/g, '÷').replace(/\^\{([^}]*)\}/g, '^$1').replace(/\\text\{([^}]*)\}/g, '$1').replace(/[{}\\]/g, ''));
-  const LANG = {en: {name: 'English', dir: 'ltr', voice: 'en'}, ur: {name: 'اردو', dir: 'rtl', voice: 'ur'}, ps: {name: 'پښتو', dir: 'rtl', voice: 'ps'}, ar: {name: 'العربية', dir: 'rtl', voice: 'ar'}};
-  const reduced = () => window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const stepText = (panel, i) => panel._sol.steps[i][panel._lang] || panel._sol.steps[i].en;
   window.m11SolOpen = function (btn, id) {
-    const panel = btn.nextElementSibling;
-    const open = panel.hidden;
-    panel.hidden = !open;
-    btn.setAttribute('aria-expanded', String(open));
-    btn.textContent = open ? '✕ Close solution' : '▶ Explain step by step';
-    if (!open) { stop(panel); return; }
     if (!window.MATH_11_SOLUTIONS) {
-      panel.innerHTML = '<p class="m8-help">Loading the solution…</p>';
-      loadSolutions().then(() => { panel.hidden = true; m11SolOpen(btn, id); }).catch(() => { panel.innerHTML = '<p class="m8-help">The solution could not be loaded. Please check your connection and try again.</p>'; });
+      const panel = SBSolve.loading(btn, 'Loading the solution…');
+      loadSolutions().then(() => { panel.hidden = true; m11SolOpen(btn, id); }).catch(() => { panel.innerHTML = '<p class="sbs-help">The solution could not be loaded. Please check your connection and try again.</p>'; });
       return;
     }
-    const sol = window.MATH_11_SOLUTIONS[id];
-    if (!sol) { panel.innerHTML = '<p class="m8-help">Solution not available.</p>'; return; }
-    panel.innerHTML = `<div class="m8-sol-head"><span class="m8-sol-tag">SpaceBook step-by-step solution · not printed in the textbook</span>
-      <div class="m8-sol-ctl"><button type="button" data-a="play">⏸ Pause</button><button type="button" data-a="next">⏭ Next step</button><button type="button" data-a="all">⏬ Show all</button><button type="button" data-a="restart">↺ Restart</button><button type="button" data-a="voice" aria-pressed="false">🔊 Read aloud</button>
-      <span class="m8-sol-lang" role="group" aria-label="Explanation language">${Object.keys(LANG).map(k => `<button type="button" data-l="${k}" aria-pressed="${k === 'en'}">${LANG[k].name}</button>`).join('')}</span></div></div>
-      <ol class="m8-steps">${sol.steps.map(s => `<li class="m8-step" hidden><span class="m8-teacher" aria-hidden="true">🧑‍🏫</span><div class="m8-say" aria-live="polite"></div>${s.m ? `<div class="m8-show" hidden>${inline('$$' + s.m + '$$', false)}</div>` : ''}${s.svg ? `<div class="m8-show m8-fig" hidden>${s.svg}</div>` : ''}</li>`).join('')}</ol>
-      <div class="m8-final" hidden>✅ <strong>Answer:</strong> ${inline(sol.answer, false)}</div>`;
-    Object.assign(panel, {_sol: sol, _i: -1, _lang: 'en', _playing: true, _voice: false});
-    const playBtn = panel.querySelector('[data-a="play"]');
-    const pause = () => { panel._playing = false; playBtn.textContent = '▶ Play'; };
-    panel.querySelector('.m8-sol-ctl').onclick = e => {
-      const b = e.target.closest('button'); if (!b) return;
-      if (b.dataset.l) {
-        panel._lang = b.dataset.l;
-        panel.querySelectorAll('[data-l]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
-        panel.querySelectorAll('.m8-step').forEach((li, i) => { if (!li.hidden) setSay(panel, li, i); });
-        // Arabic is machine-translated from the English steps on first use (cached on the step)
-        if (panel._lang === 'ar' && window.SBTranslate && SBTranslate.prepareSteps) {
-          SBTranslate.prepareSteps(panel._sol.steps).then(() => {
-            if (panel._lang === 'ar') panel.querySelectorAll('.m8-step').forEach((li, i) => { if (!li.hidden) setSay(panel, li, i); });
-          });
-        }
-        return;
-      }
-      const a = b.dataset.a;
-      if (a === 'play') { panel._playing = !panel._playing; playBtn.textContent = panel._playing ? '⏸ Pause' : '▶ Play'; if (panel._playing && !panel._busy) advance(panel); }
-      if (a === 'next') { pause(); finish(panel); advance(panel); }
-      if (a === 'all') { stop(panel); pause(); finish(panel); while (panel._i < sol.steps.length - 1) reveal(panel, ++panel._i, true); advance(panel); }
-      if (a === 'restart') { stop(panel); panel.querySelectorAll('.m8-step').forEach(x => { x.hidden = true; x.classList.remove('cur'); }); panel.querySelector('.m8-final').hidden = true; panel._i = -1; panel._playing = true; playBtn.textContent = '⏸ Pause'; advance(panel); }
-      if (a === 'voice') { panel._voice = !panel._voice; b.setAttribute('aria-pressed', String(panel._voice)); if (!panel._voice && window.speechSynthesis) speechSynthesis.cancel(); }
-    };
-    advance(panel);
+    SBSolve.toggle(btn, window.MATH_11_SOLUTIONS[id], {inline, plain});
   };
-  function stop(panel) { clearTimeout(panel._t); clearInterval(panel._type); panel._busy = false; if (window.speechSynthesis) speechSynthesis.cancel(); }
-  function setSay(panel, li, i) {
-    const say = li.querySelector('.m8-say');
-    say.dir = LANG[panel._lang].dir;
-    say.innerHTML = inline(stepText(panel, i), false);
-  }
-  function finish(panel) {
-    clearInterval(panel._type); clearTimeout(panel._t); panel._busy = false;
-    const li = panel.querySelectorAll('.m8-step')[panel._i];
-    if (!li) return;
-    setSay(panel, li, panel._i);
-    li.querySelectorAll('.m8-show').forEach(x => { x.hidden = false; });
-  }
-  function reveal(panel, i, instant) {
-    const items = panel.querySelectorAll('.m8-step');
-    items.forEach(x => x.classList.remove('cur'));
-    const li = items[i];
-    li.hidden = false; li.classList.add('cur', 'm8-enter');
-    if (instant || reduced()) { setSay(panel, li, i); li.querySelectorAll('.m8-show').forEach(x => { x.hidden = false; }); if (!instant) after(panel, li); return; }
-    li.scrollIntoView({block: 'nearest', behavior: 'smooth'});
-    const say = li.querySelector('.m8-say');
-    say.dir = LANG[panel._lang].dir;
-    const p = plain(stepText(panel, i));
-    let k = 0;
-    panel._busy = true;
-    say.textContent = '';
-    panel._type = setInterval(() => {
-      k += 2;
-      say.textContent = p.slice(0, k);
-      if (k < p.length) return;
-      clearInterval(panel._type);
-      setSay(panel, li, i);
-      li.querySelectorAll('.m8-show').forEach(x => { x.hidden = false; x.classList.add('m8-pop'); });
-      after(panel, li);
-    }, 28);
-  }
-  function after(panel, li) {
-    const done = () => { panel._busy = false; if (panel._playing) panel._t = setTimeout(() => advance(panel), li.querySelector('.m8-show') ? 1600 : 900); };
-    if (panel._voice && window.speechSynthesis) {
-      const u = new SpeechSynthesisUtterance(plain(stepText(panel, panel._i)));
-      const v = speechSynthesis.getVoices().find(x => x.lang.toLowerCase().startsWith(LANG[panel._lang].voice));
-      if (v) { u.voice = v; u.lang = v.lang; }
-      u.rate = .9; u.onend = done; u.onerror = done;
-      speechSynthesis.speak(u);
-    } else done();
-  }
-  function advance(panel) {
-    if (panel.hidden) return;
-    if (panel._i >= panel._sol.steps.length - 1) {
-      const fin = panel.querySelector('.m8-final');
-      fin.hidden = false; fin.classList.add('m8-pop');
-      panel.querySelectorAll('.m8-step').forEach(x => x.classList.remove('cur'));
-      return;
-    }
-    reveal(panel, ++panel._i, false);
-  }
 
+  const questionNumber = no => no ? esc(no) + (/^[0-9A-Za-z]+$/.test(no) ? '.' : '') : '';
+  function authoredAnswer(rec) {
+    if (!rec || !rec.authoredAnswer) return '';
+    const a = rec.authoredAnswer;
+    const paired = a.ur !== a.en || a.ps !== a.en;
+    return `<div class="m11-ans" data-answer-key="${esc(rec.answerKey || '')}"><strong>SpaceBook answer:</strong> ${paired ? sentence(a, 'div') : inline(a.en, false)}</div>`;
+  }
   function question(q, ans, showAns) {
     const hasSol = q.parts && q.parts.some(p => p.solId);
-    const parts = q.parts && q.parts.length ? `<div class="m8-parts${hasSol || q.parts.some(p => p.ur || (p.en || '').length > 28) ? ' block' : ''}">${q.parts.map(p => `<div class="m8-part">${p.no ? `<strong>${esc(p.no)})</strong> ` : ''}${p.ur ? sentence(p, 'span') : inline(p.en, true)}${showAns ? solButton(p.solId) : ''}</div>`).join('')}</div>` : '';
+    const parts = q.parts && q.parts.length ? `<div class="m11-parts${hasSol || q.parts.some(p => p.ur || (p.en || '').length > 28) ? ' block' : ''}">${q.parts.map(p => `<div class="m11-part">${p.no ? `<strong>${questionNumber(p.no)}</strong> ` : ''}${p.ur ? sentence(p, 'span') : inline(p.en, true)}${showAns ? authoredAnswer(p) + solButton(p.solId) : ''}</div>`).join('')}</div>` : '';
     let a = '';
     if (showAns) {
       const hit = ans[q.no];
-      a = hit ? `<div class="m8-ans"><strong>Textbook answer:</strong> ${inline(hit.a, false)} <span style="color:#64748b">(p. ${esc(hit.printed)})</span></div>` : '';
+      a = hit ? `<div class="m11-ans"><strong>Textbook answer:</strong> ${inline(hit.a, false)} <span style="color:#64748b">(p. ${esc(hit.printed)})</span></div>` : '';
     }
     const head = q.en ? (q.ur ? sentence(q, 'span') : inline(q.en, true)) : '';
-    return `<div class="m8-q"><span class="m8-qno">${esc(q.no)}${/^[0-9A-Za-z]+$/.test(q.no) ? "." : ""}</span>${head}${showAns ? solButton(q.solId) : ''}${parts}${a}</div>`;
+    return `<div class="m11-q"><span class="m11-qno">${questionNumber(q.no)}</span>${head}${showAns ? authoredAnswer(q) + solButton(q.solId) : ''}${parts}${a}</div>`;
   }
   function blocks(list, ctx) {
     ctx = ctx || {};
     return (list || []).map(b => {
       switch (b.t) {
-        case 'page': return ctx.noPages ? '' : `<div class="m8-page" aria-label="Source page">${b.printed != null ? `Textbook page ${esc(b.printed)}` : 'Unnumbered page'} · PDF page ${esc(b.pdf)}</div>`;
+        case 'page': return ctx.noPages ? '' : `<div class="m11-page" aria-label="Source page">${b.printed != null ? `Textbook page ${esc(b.printed)}` : 'Unnumbered page'} · PDF page ${esc(b.pdf)}</div>`;
         case 'h': return heading(b);
         case 'p': return sentence(b, 'p');
-        case 'm': return `<p class="m8-m">${inline(b.en, false)}</p>`;
-        case 'eq': return b.ur ? `<div class="m8-eq m8-s" role="button" tabindex="0" aria-expanded="false" onclick="m11Toggle(this,event)">${inline('$$' + b.tex + '$$', false)}</div>${translations(b)}` : `<div class="m8-eq">${inline('$$' + b.tex + '$$', false)}</div>`;
-        case 'ul': return `<ul class="m8-ul">${b.items.map(i => `<li class="lv${i.lv || 1}">${sentence(i, 'span')}</li>`).join('')}</ul>`;
+        case 'm': return `<p class="m11-m">${inline(b.en, false)}</p>`;
+        case 'eq': return b.ur ? `<div class="m11-eq m11-s" role="button" tabindex="0" aria-expanded="false" onclick="m11Toggle(this,event)">${inline('$$' + b.tex + '$$', false)}</div>${translations(b)}` : `<div class="m11-eq">${inline('$$' + b.tex + '$$', false)}</div>`;
+        case 'ul': return `<ul class="m11-ul">${b.items.map(i => `<li class="lv${i.lv || 1}">${sentence(i, 'span')}</li>`).join('')}</ul>`;
         case 'box': {
           const label = b.title ? b.title : (BOX_LABEL[b.kind] ? {en: BOX_LABEL[b.kind]} : null);
-          return `<aside class="m8-box ${esc(b.kind)}">${label ? `<div class="m8-box-t">${label.ur ? sentence(label, 'span') : esc(label.en)}</div>` : ''}${blocks(b.blocks, ctx)}</aside>`;
+          return `<aside class="m11-box ${esc(b.kind)}">${label ? `<div class="m11-box-t">${label.ur ? sentence(label, 'span') : esc(label.en)}</div>` : ''}${blocks(b.blocks, ctx)}</aside>`;
         }
-        case 'example': return `<section class="m8-example"><div class="m8-example-t">Example ${esc(b.no)}${b.title ? ': ' : ''}${b.title ? (b.title.ur ? sentence(b.title, 'span') : inline(b.title.en, true)) : ''}</div>${blocks(b.blocks, ctx)}</section>`;
+        case 'example': return `<section class="m11-example"><div class="m11-example-t">Example ${esc(b.no)}${b.title ? ': ' : ''}${b.title ? (b.title.ur ? sentence(b.title, 'span') : inline(b.title.en, true)) : ''}</div>${blocks(b.blocks, ctx)}</section>`;
         case 'exercise': {
           const ans = answersFor(b.id);
-          return `<section class="m8-exercise"><div class="m8-exercise-t">${/^\d/.test(b.id) ? 'Exercise ' : ''}${esc(b.id)}</div>${blocks(b.blocks, Object.assign({}, ctx, {ans}))}</section>`;
+          return `<section class="m11-exercise"><div class="m11-exercise-t">${/^\d/.test(b.id) ? 'Exercise ' : ''}${esc(b.id)}</div>${blocks(b.blocks, Object.assign({}, ctx, {ans}))}</section>`;
         }
         case 'q': return question(b, ctx.ans || {}, !!ctx.showAnswers);
-        case 'parts': return question({no: '', parts: b.parts}, {}, false).replace('<span class="m8-qno">.</span>', '');
-        case 'svg': return `<figure class="m8-fig">${b.svg}${b.cap ? `<figcaption>${b.cap.ur ? sentence(b.cap, 'span') : inline(b.cap.en, true)}</figcaption>` : ''}</figure>`;
+        case 'parts': return question({no: '', parts: b.parts}, {}, false).replace('<span class="m11-qno">.</span>', '');
+        case 'svg': return `<figure class="m11-fig">${b.svg}${b.cap ? `<figcaption>${b.cap.ur ? sentence(b.cap, 'span') : inline(b.cap.en, true)}</figcaption>` : ''}</figure>`;
         case 'table': {
           const head = b.rows.slice(0, b.head), body = b.rows.slice(b.head);
-          return `<div class="m8-table"><table>${b.cap ? `<caption>${b.cap.ur ? sentence(b.cap, 'span') : esc(b.cap.en)}</caption>` : ''}${head.length ? `<thead>${head.map(r => `<tr>${r.map(c => `<th scope="col">${inline(c, false)}</th>`).join('')}</tr>`).join('')}</thead>` : ''}<tbody>${body.map(r => `<tr>${r.map(c => `<td>${inline(c, false)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+          return `<div class="m11-table"><table>${b.cap ? `<caption>${b.cap.ur ? sentence(b.cap, 'span') : esc(b.cap.en)}</caption>` : ''}${head.length ? `<thead>${head.map(r => `<tr>${r.map(c => `<th scope="col">${inline(c, false)}</th>`).join('')}</tr>`).join('')}</thead>` : ''}<tbody>${body.map(r => `<tr>${r.map(c => `<td>${inline(c, false)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
         }
         default: return '';
       }
@@ -351,9 +254,8 @@
       document.querySelectorAll('.sb-langtab').forEach(b => b.setAttribute('aria-pressed', String(Number(b.dataset.m) === n)));
     };
   }
-  const tools = () => { const cur = window.SB_LANG_MODE || 0; const tab = (n, label) => `<button type="button" class="sb-langtab" data-m="${n}" aria-pressed="${cur === n}" onclick="SBLangMode(${n})">${label}</button>`;
-    return `<div class="m8-tools m8-tabs" role="group" aria-label="Text language">${tab(0, '📖 Original (English)')}${tab(1, 'English + Urdu')}${tab(2, 'English + Pashto')}</div><p class="m8-help">Original: the textbook text only. The other tabs show each original line with its translation below it. Tap a dotted word for its meaning.</p>`; };
-  const root = inner => `<div class="m8-root" data-sbmode="${window.SB_LANG_MODE || 0}">${tools()}${inner}</div>`;
+  const tools = () => `<div class="m11-tools"></div><p class="m11-help">Click any sentence to see its translation just below it. Point at a word for its meaning.</p>`;
+  const root = inner => `<div class="m11-root" data-sbmode="${window.SB_LANG_MODE || 0}">${tools()}${inner}</div>`;
 
   function card(id, badge, title, body, open) {
     return `<div class="math-topic-card math-accordion-card${open ? ' open' : ''}" id="math-topic-${esc(id)}">
@@ -370,7 +272,7 @@
   function lesson(ch) {
     let html = '';
     if (ch.number === 1 && BOOK.frontMatter && BOOK.frontMatter.length) {
-      html += card('m8-front', 'Book', 'Cover, credits and contents', root(blocks(BOOK.frontMatter)), false);
+      html += card('m11-front', 'Book', 'Cover, credits and contents', root(blocks(BOOK.frontMatter)), false);
     }
     if (!ch.sections.length) return html + pending(ch);
     html += ch.sections.map((sec, i) => card(sec.id, /^\d+\.\d/.test(sec.id) ? `Topic ${sec.id}` : (/summary/i.test(sec.id) ? 'Summary' : (/review/i.test(sec.id) ? 'Review' : 'Unit opening')), sec.title + (sec.titleUrdu ? ` · ${sec.titleUrdu}` : ''), root(blocks(sec.blocks, {showAnswers: true})), i === 0)).join('');
@@ -382,20 +284,59 @@
   }
   function exercises(ch) {
     if (!ch.exercises.length) return pending(ch);
-    const reviewedAnswers = (BOOK.answerPdfPages || []).length > 0;
     return ch.exercises.map(ex => card('ex-' + ex.id, /^\d/.test(ex.id) ? `Exercise ${ex.id}` : ex.id, `Textbook page ${ex.printed}`,
-      root((reviewedAnswers ? '' : '<p class="m8-help">Textbook answers are attached as the answer pages are reviewed.</p>') + blocks([ex], {showAnswers: true, noPages: true})), false)).join('');
+      root(blocks([ex], {showAnswers: true, noPages: true})), false)).join('');
   }
+  const bankCache = new WeakMap();
+  window.getMath11QuestionBank = function (ch) {
+    if (!ch || !MATH_11_DATA.includes(ch)) return {};
+    if (bankCache.has(ch)) return bankCache.get(ch);
+    const bank = {mcqs: [], shortQuestions: [], longQuestions: []};
+    (ch.exercises || []).forEach(ex => {
+      const walk = list => (list || []).forEach(q => {
+        if (q.t === 'q') {
+          const isMcq = /choose the correct option/i.test(q.en || '');
+          if (isMcq) {
+            (q.parts || []).forEach(p => bank.mcqs.push({
+              q: p.en, record: p, exercise: ex.id, printed: ex.printed,
+              label: `${q.no} ${p.no}`, answer: p.authoredAnswer && p.authoredAnswer.en
+            }));
+          } else {
+            const category = /prove|show that|verify|simultaneous|factorize/i.test(q.en || '') || (q.parts || []).length > 1 ? 'longQuestions' : 'shortQuestions';
+            bank[category].push({q: q.en, record: q, exercise: ex.id, printed: ex.printed, label: q.no, answer: q.authoredAnswer && q.authoredAnswer.en});
+          }
+        }
+        if (q.blocks) walk(q.blocks);
+      });
+      walk(ex.blocks);
+    });
+    bankCache.set(ch, bank);
+    return bank;
+  };
   function slos(ch) {
-    if (!ch.slos.length) return pending(ch);
-    return root(`<div class="m8-h3">Student Learning Outcomes</div><p class="m8-help">From the textbook unit opening page.</p><ul class="m8-ul">${ch.slos.map(i => `<li class="lv${i.lv || 1}">${sentence(i, 'span')}</li>`).join('')}</ul>`);
+    const bank = window.getMath11QuestionBank(ch);
+    const categories = [['mcqs','🎯 MCQs',bank.mcqs || []], ['lqs','📚 Long Questions',bank.longQuestions || []], ['sqs','📝 Short Questions',bank.shortQuestions || []]];
+    const active = categories.find(c => c[0] === state.activeMathSloCategory) || categories[0];
+    const tabs = categories.map(c => `<button class="category-sub-tab-btn slo-sub-cat-btn ${active[0] === c[0] ? 'active' : ''}" data-cat="${c[0]}" onclick="m11QuestionCategory('${c[0]}',${ch.number})">${c[1]} (${c[2].length})</button>`).join('');
+    const items = active[2].map((item,i) => {
+      const record = Object.assign({}, item.record, {no: item.label});
+      return card('m11-bank-' + ch.number + '-' + active[0] + '-' + i, 'Q ' + item.label, 'Exercise ' + item.exercise + ' · Textbook page ' + item.printed, question(record, {}, true), false);
+    }).join('');
+    return root(`<h3 class="m11-h3">Chapter Questions &amp; Learning Outcomes</h3><p class="m11-help">Questions from this chapter's textbook exercises. SpaceBook answers are labelled separately.</p><div class="category-sub-tabs-bar">${tabs}</div><div id="mathSloContentArea">${items || '<p>No questions of this type are available in this chapter yet.</p>'}</div><details class="m11-box"><summary>Student Learning Outcomes</summary><ul class="m11-ul">${(ch.slos || []).map(i => `<li class="lv${i.lv || 1}">${sentence(i, 'span')}</li>`).join('')}</ul></details>`);
   }
+  window.m11QuestionCategory = function (category, unit) {
+    const ch = MATH_11_DATA.find(c => c.number === unit);
+    if (!ch || !['mcqs','lqs','sqs'].includes(category)) return;
+    state.activeMathSloCategory = category;
+    const container = document.getElementById('mathTabContent') || document.getElementById('subjTabContent');
+    if (container) container.innerHTML = slos(ch);
+  };
   function summary(ch) {
     const sec = ch.sections.find(s => /summary/i.test(s.id) || /summary/i.test(s.title));
     const eqs = [];
     ch.sections.forEach(s => (function walk(list) { (list || []).forEach(b => { if (b.t === 'eq') eqs.push(b); if (b.blocks) walk(b.blocks); }); })(s.blocks));
     if (!sec && !eqs.length) return pending(ch);
-    return root((sec ? blocks(sec.blocks, {noPages: true}) : '') + (eqs.length ? `<div class="m8-h3">Equations shown in this unit</div>${blocks(eqs)}` : ''));
+    return root((sec ? blocks(sec.blocks, {noPages: true}) : '') + (eqs.length ? `<div class="m11-h3">Equations shown in this unit</div>${blocks(eqs)}` : ''));
   }
 
   const wrap = (name, fn) => {
@@ -434,12 +375,12 @@
   if (typeof window.typesetChapterMath === 'function') {
     const originalTypeset = window.typesetChapterMath;
     window.typesetChapterMath = function (container) {
-      if (container && container.querySelector && container.querySelector('.m8-root')) {
+      if (container && container.querySelector && container.querySelector('.m11-root')) {
         if (window.mathTypesetterObserver) { window.mathTypesetterObserver.disconnect(); window.mathTypesetterObserver = null; }
         return;
       }
       return originalTypeset.apply(this, arguments);
     };
   }
-  window.MATH11_READER = {blocks, inline};
+  window.MATH11_READER = {blocks, inline, lesson, examples, exercises, slos, summary};
 })();

@@ -1,14 +1,6 @@
 // Lightweight SVG teaching figures based on the visual models in the KPTBB
 // Class 1 and Class 2 mathematics workbooks. No workbook scans are bundled.
 var PRIMARY_MATH_VISUALS = {
-  cls1: {
-    '1.1':'count','1.2':'blocks2','1.3':'line','1.4':'compare2','1.5':'ordinal',
-    '2.1':'join','2.2':'tenframe','2.3':'addColumns','2.4':'takeaway','2.5':'missing',
-    '3.1':'length','3.2':'length','3.3':'height','3.4':'balance',
-    '4.1':'money','4.2':'moneyCount','4.3':'moneyWays','4.4':'change',
-    '5.1':'clock','5.2':'clockDigital','5.3':'dayNight','5.4':'week','5.5':'months',
-    '6.1':'flatShapes','6.2':'shapeObjects','6.3':'pattern','6.4':'position','6.5':'path'
-  },
   cls2: {
     '1.1':'ordinal20','1.2':'count100','1.3':'blocks3','1.4':'compare3','1.5':'skipCount',
     '2.1':'addColumns3','2.2':'subtract3','2.3':'multiply','2.4':'division',

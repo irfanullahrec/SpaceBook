@@ -1,8 +1,7 @@
 /**
- * TuitionHub - Class 1 English Comprehensive Dataset (KPK Textbook Board)
- * Complete 11 Units + 4 Review Assessments with verbatim textbook text word by word,
- * line-by-line reading cards, Urdu & Pashto translations, phonics drills,
- * vocabulary banks, grammar activities, and Board SLO Suites.
+ * TuitionHub - Class 1 English source-aligned data (KPK Textbook Board).
+ * Sections are being checked against scanned source pages; do not label unverified
+ * OCR or supplemental material as verbatim textbook content.
  */
 
 var ENGLISH_1_DATA = [
@@ -13,18 +12,31 @@ var ENGLISH_1_DATA = [
     "titlePashto": "د یادونې وخت (د الفبا توري او بنسټیز غږونه)",
     "type": "prose",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: The Alphabet & Phonics Foundations\n\nOfficial Learning Outcomes:\n• Articulate the sounds of letters of the alphabet in series and in random order.\n• Hold a pencil correctly and trace vertical, horizontal, slanted, curved lines.\n• Recognise that English is written from left to right.\n• Trace and write capital and small letters following proper writing models.\n• Recognise individual sounds in simple three-letter CVC words (e.g. sun, ant, pan, rat, jug, hen).",
+    "authorInfo": "Theme: The Alphabet & Phonics Foundations\n\nOfficial Learning Outcomes (verbatim, printed page 1):\n• articulate the sounds of letters of the alphabet in series and in random order.\n• hold a pencil correctly.\n• trace and draw vertical, horizontal, slanted, curved lines forwards and backwards.\n• trace and draw circles and curves.\n• colour within lines and create simple patterns.\n• recognise that English is written from left to right.\n• trace and write small and capital letters following appropriate writing models of regular shape and size.\n• write small and capital letters in series and in random order.\n• take dictation of the alphabet.\n• recognise individual sounds in a word, e.g. /p/, /l/, /n/ in pin.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Learning Outcomes\n\nGetting Started\n\nLook and say the names.\n\nLet's Talk",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• articulate the sounds of letters of the alphabet in series and in random order.\n• hold a pencil correctly.\n• trace and draw vertical, horizontal, slanted, curved lines forwards and backwards.\n• trace and draw circles and curves.\n• colour within lines and create simple patterns.\n• recognise that English is written from left to right.\n• trace and write small and capital letters following appropriate writing models of regular shape and size.\n• write small and capital letters in series and in random order.\n• take dictation of the alphabet.\n• recognise individual sounds in a word, e.g. /p/, /l/, /n/ in pin.\n\nGetting Started\nLook and say the names.\n\nLet's Talk\n• Say the initial sounds of the given words.\n• Name any five objects in your surroundings.",
         "paras": [
           "Learning Outcomes",
+          "After completing this unit, you will be able to:",
+          "• articulate the sounds of letters of the alphabet in series and in random order.",
+          "• hold a pencil correctly.",
+          "• trace and draw vertical, horizontal, slanted, curved lines forwards and backwards.",
+          "• trace and draw circles and curves.",
+          "• colour within lines and create simple patterns.",
+          "• recognise that English is written from left to right.",
+          "• trace and write small and capital letters following appropriate writing models of regular shape and size.",
+          "• write small and capital letters in series and in random order.",
+          "• take dictation of the alphabet.",
+          "• recognise individual sounds in a word, e.g. /p/, /l/, /n/ in pin.",
           "Getting Started",
           "Look and say the names.",
-          "Let's Talk"
+          "Let's Talk",
+          "• Say the initial sounds of the given words.",
+          "• Name any five objects in your surroundings."
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -426,24 +438,39 @@ var ENGLISH_1_DATA = [
     "titlePashto": "زما کورنۍ او زه",
     "type": "prose",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: Self, Family & Daily Life\n\nOfficial Learning Outcomes:\n• Use pre-reading strategies to predict story from pictures.\n• Introduce oneself using basic formulaic expressions.\n• Identify family members and their roles.\n• Understand subjective pronouns: I, we, you, he, she, it, they.\n• Read and spell CVC one-syllable words (fan, box, cup, net, pin, cat).",
+    "authorInfo": "Theme: Self, Family & Daily Life\n\nOfficial Learning Outcomes (verbatim, printed page 9):\n• use pre-reading strategies to predict a story by looking at picture(s) in the text.\n• interact with the text and use reading strategies (while-reading) to use pictures or rebus in texts to increase their understanding.\n• pronounce and match the initial sounds of common words depicted in pictures with corresponding letters.\n• recognise individual sounds in a word, e.g. /p/, /i/, /n/ in pin, etc.\n• respond to text (post-reading) to express understanding of the story through pantomime.\n• demonstrate the use of common conventions and dynamics of group oral interactions in a group to introduce themselves.\n• point out/name some common objects in a picture or an illustration.\n• describe them in a word or two, or a sentence.\n• spell simple one/two-syllable words.\n• recognise the different categories of some: numbers in words etc.\n• trace and copy familiar words learnt in class.\n• provide the missing letter in simple one/two-syllable words.\n• recall and match common naming words with pictures from the immediate environment.\n• recognise and use substitution words as subjective case: I, we, you, he, she, it and they.\n• copy and write simple one-syllable words with correct spelling. Leave a regular space between words.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Learning Outcomes\n\n⚫trace and copy familiar words learnt in class.\n\nGetting Started\n\nLet's Talk\n\n1. Learning the Sounds\n\n2. Learning to Speak\n\nto learn by reading or attending school\n\nC1 (1) Ask students to learn vocabulary with their meanings and try to use them in their daily conversations. C1 (ii) Ask students to count different things present in the classroom.\n\niv. Read the words below and learn their spelling. Also trace\n\n2. Learning to Spell",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• use pre-reading strategies to predict a story by looking at picture(s) in the text.\n• interact with the text and use reading strategies (while-reading) to use pictures or rebus in texts to increase their understanding.\n• pronounce and match the initial sounds of common words depicted in pictures with corresponding letters.\n• recognise individual sounds in a word, e.g. /p/, /i/, /n/ in pin, etc.\n• respond to text (post-reading) to express understanding of the story through pantomime.\n• demonstrate the use of common conventions and dynamics of group oral interactions in a group to introduce themselves.\n• point out/name some common objects in a picture or an illustration.\n• describe them in a word or two, or a sentence.\n• spell simple one/two-syllable words.\n• recognise the different categories of some: numbers in words etc.\n• trace and copy familiar words learnt in class.\n• provide the missing letter in simple one/two-syllable words.\n• recall and match common naming words with pictures from the immediate environment.\n• recognise and use substitution words as subjective case: I, we, you, he, she, it and they.\n• copy and write simple one-syllable words with correct spelling. Leave a regular space between words.\n\nGetting Started\nLook at the picture and answer the questions orally.\n\nLet's Talk\n• What is written on the banner?\n• How are they feeling?\n• Do you share your birthday gifts with your siblings?\n• What is the shape of the cake?\n• How many bottles are there on the table?",
         "paras": [
           "Learning Outcomes",
-          "⚫trace and copy familiar words learnt in class.",
+          "After completing this unit, you will be able to:",
+          "• use pre-reading strategies to predict a story by looking at picture(s) in the text.",
+          "• interact with the text and use reading strategies (while-reading) to use pictures or rebus in texts to increase their understanding.",
+          "• pronounce and match the initial sounds of common words depicted in pictures with corresponding letters.",
+          "• recognise individual sounds in a word, e.g. /p/, /i/, /n/ in pin, etc.",
+          "• respond to text (post-reading) to express understanding of the story through pantomime.",
+          "• demonstrate the use of common conventions and dynamics of group oral interactions in a group to introduce themselves.",
+          "• point out/name some common objects in a picture or an illustration.",
+          "• describe them in a word or two, or a sentence.",
+          "• spell simple one/two-syllable words.",
+          "• recognise the different categories of some: numbers in words etc.",
+          "• trace and copy familiar words learnt in class.",
+          "• provide the missing letter in simple one/two-syllable words.",
+          "• recall and match common naming words with pictures from the immediate environment.",
+          "• recognise and use substitution words as subjective case: I, we, you, he, she, it and they.",
+          "• copy and write simple one-syllable words with correct spelling. Leave a regular space between words.",
           "Getting Started",
+          "Look at the picture and answer the questions orally.",
           "Let's Talk",
-          "1. Learning the Sounds",
-          "2. Learning to Speak",
-          "to learn by reading or attending school",
-          "C1 (1) Ask students to learn vocabulary with their meanings and try to use them in their daily conversations. C1 (ii) Ask students to count different things present in the classroom.",
-          "iv. Read the words below and learn their spelling. Also trace",
-          "2. Learning to Spell"
+          "• What is written on the banner?",
+          "• How are they feeling?",
+          "• Do you share your birthday gifts with your siblings?",
+          "• What is the shape of the cake?",
+          "• How many bottles are there on the table?"
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -1007,22 +1034,35 @@ var ENGLISH_1_DATA = [
     "titlePashto": "موچي، موچي ... (نظم او مسلکونه)",
     "type": "poem",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: Community Helpers & Nursery Rhymes\n\nOfficial Learning Outcomes:\n• Recite nursery rhyme 'Cobbler, Cobbler, Mend My Shoe' with actions.\n• Recognise consonant blends (bl, cl, br, dr).\n• Identify common community professions (doctor, teacher, cobbler, farmer, carpenter).\n• Differentiate naming words (nouns) and action words (verbs).\n• Consolidate learning through Review 1 activities.",
+    "authorInfo": "Theme: Community Helpers & Nursery Rhymes\n\nOfficial Learning Outcomes (verbatim, printed page 19):\n• recite short poems or nursery rhymes with actions.\n• respond to the text (post reading) to express likes/dislikes about the poem.\n• recognise and identify consonants and vowels in the English alphabet using common consonant blends (/bl/, /cl/, /br/ and /dr/).\n• articulate, recognise and use some formulaic expressions to offer and respond to basic routine greetings, express and offer a few basic social courtesies.\n• demonstrate the use of common conventions and dynamics of group oral interactions in a group to recite poems.\n• recognise and produce individual sounds, and blend the individual.\n• identify naming words and action words.\n• read common naming words and action words and match with pictures.\n• articulate and identify simple rhyming words in a text.\n• use naming words in their speech and writing.\n• recognise and use substitution words as subjective case: I, we, you, he, she, it and they.\n• trace and write simple sentences leaving space between words using correct capitalisation, punctuation and spelling.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Learning Outcomes\n\nGetting Started\n\nLet's Talk\n\n1. Learning the Sounds\n\n2. Learning to Speak\n\nB (iv) Ask students to match the pictures with their action words. C1 (1) Ask students to learn the vocabulary with meanings and try to use new words in their daily conversations.\n\n2. Learning to Spell\n\n1. Learning to Write",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• recite short poems or nursery rhymes with actions.\n• respond to the text (post reading) to express likes/dislikes about the poem.\n• recognise and identify consonants and vowels in the English alphabet using common consonant blends (/bl/, /cl/, /br/ and /dr/).\n• articulate, recognise and use some formulaic expressions to offer and respond to basic routine greetings, express and offer a few basic social courtesies.\n• demonstrate the use of common conventions and dynamics of group oral interactions in a group to recite poems.\n• recognise and produce individual sounds, and blend the individual.\n• identify naming words and action words.\n• read common naming words and action words and match with pictures.\n• articulate and identify simple rhyming words in a text.\n• use naming words in their speech and writing.\n• recognise and use substitution words as subjective case: I, we, you, he, she, it and they.\n• trace and write simple sentences leaving space between words using correct capitalisation, punctuation and spelling.\n\nGetting Started\nLook at the given pictures. Can you tell who these people are?\n\nLet's Talk\n• Who helps you in your studies?\n• What does a doctor do?\n• Where do you see a policeman?\n• Think and tell the names of any two professions.",
         "paras": [
           "Learning Outcomes",
+          "After completing this unit, you will be able to:",
+          "• recite short poems or nursery rhymes with actions.",
+          "• respond to the text (post reading) to express likes/dislikes about the poem.",
+          "• recognise and identify consonants and vowels in the English alphabet using common consonant blends (/bl/, /cl/, /br/ and /dr/).",
+          "• articulate, recognise and use some formulaic expressions to offer and respond to basic routine greetings, express and offer a few basic social courtesies.",
+          "• demonstrate the use of common conventions and dynamics of group oral interactions in a group to recite poems.",
+          "• recognise and produce individual sounds, and blend the individual.",
+          "• identify naming words and action words.",
+          "• read common naming words and action words and match with pictures.",
+          "• articulate and identify simple rhyming words in a text.",
+          "• use naming words in their speech and writing.",
+          "• recognise and use substitution words as subjective case: I, we, you, he, she, it and they.",
+          "• trace and write simple sentences leaving space between words using correct capitalisation, punctuation and spelling.",
           "Getting Started",
+          "Look at the given pictures. Can you tell who these people are?",
           "Let's Talk",
-          "1. Learning the Sounds",
-          "2. Learning to Speak",
-          "B (iv) Ask students to match the pictures with their action words. C1 (1) Ask students to learn the vocabulary with meanings and try to use new words in their daily conversations.",
-          "2. Learning to Spell",
-          "1. Learning to Write"
+          "• Who helps you in your studies?",
+          "• What does a doctor do?",
+          "• Where do you see a policeman?",
+          "• Think and tell the names of any two professions."
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -1609,21 +1649,35 @@ var ENGLISH_1_DATA = [
     "titlePashto": "راځئ چې خوند واخلو! (کاغذي هنر او مرسته)",
     "type": "prose",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: Creativity, Craft & Helping Others\n\nOfficial Learning Outcomes:\n• Predict story content from illustrations and headings.\n• Read how Huma helps her sister Hina create pencil shaving art.\n• Pronounce consonant digraphs in initial position (sh, ch, th, wh, ph).\n• Use demonstrative words: this, that, these, those.\n• Recognise polite expressions and requests (please, thank you, sorry).",
+    "authorInfo": "Theme: Creativity, Craft & Helping Others\n\nOfficial Learning Outcomes (verbatim, printed page 31):\n• use pre-reading strategies to predict a story by looking at picture(s) in the text.\n• interact with a text and use reading strategies (while reading) to guess what follows in a story.\n• respond to the text (post reading) to express likes/dislikes about the story.\n• recognise and pronounce some common consonant digraphs in initial position (/th/, /ph/, /ch/).\n• articulate, recognise and use some formulaic expressions to listen and respond to a few commands.\n• identify initial consonant clusters.\n• articulate, recognise and use some common phrases and formulaic expressions to offer and respond to basic routine greetings/courtesies.\n• recognise and change the number of simple naming words by adding or removing \"s\" (singular/plural).\n• recognise and use words that point to something: this, that\n• identify 'a' or 'an' as articles.\n• write appropriate naming and action word(s) to identify an object or an action in a picture.\n• show a series of actions in a picture by writing action verbs.\n• construct simple sentences of three/four words using correct capitalisation, punctuation and spelling.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Learning Outcomes\n\nGetting Started\n\nLet's Talk\n\n1. Learning the Sounds\n\n2. Learning to Speak\n\n2. Learning to Spell\n\n1. Learning to Write",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• use pre-reading strategies to predict a story by looking at picture(s) in the text.\n• interact with a text and use reading strategies (while reading) to guess what follows in a story.\n• respond to the text (post reading) to express likes/dislikes about the story.\n• recognise and pronounce some common consonant digraphs in initial position (/th/, /ph/, /ch/).\n• articulate, recognise and use some formulaic expressions to listen and respond to a few commands.\n• identify initial consonant clusters.\n• articulate, recognise and use some common phrases and formulaic expressions to offer and respond to basic routine greetings/courtesies.\n• recognise and change the number of simple naming words by adding or removing \"s\" (singular/plural).\n• recognise and use words that point to something: this, that\n• identify 'a' or 'an' as articles.\n• write appropriate naming and action word(s) to identify an object or an action in a picture.\n• show a series of actions in a picture by writing action verbs.\n• construct simple sentences of three/four words using correct capitalisation, punctuation and spelling.\n\nGetting Started\nWe all do little things at home, school or in the classroom. We have some chores to do. Look at the pictures below. All kids like doing their favourite activities. They enjoy these activities.\n\nLet's Talk\n• What is your favourite activity?\n• Do you enjoy working with others?\n• Are you fond of reading? What kind of books do you like to read?",
         "paras": [
           "Learning Outcomes",
+          "After completing this unit, you will be able to:",
+          "• use pre-reading strategies to predict a story by looking at picture(s) in the text.",
+          "• interact with a text and use reading strategies (while reading) to guess what follows in a story.",
+          "• respond to the text (post reading) to express likes/dislikes about the story.",
+          "• recognise and pronounce some common consonant digraphs in initial position (/th/, /ph/, /ch/).",
+          "• articulate, recognise and use some formulaic expressions to listen and respond to a few commands.",
+          "• identify initial consonant clusters.",
+          "• articulate, recognise and use some common phrases and formulaic expressions to offer and respond to basic routine greetings/courtesies.",
+          "• recognise and change the number of simple naming words by adding or removing \"s\" (singular/plural).",
+          "• recognise and use words that point to something: this, that",
+          "• identify 'a' or 'an' as articles.",
+          "• write appropriate naming and action word(s) to identify an object or an action in a picture.",
+          "• show a series of actions in a picture by writing action verbs.",
+          "• construct simple sentences of three/four words using correct capitalisation, punctuation and spelling.",
           "Getting Started",
+          "We all do little things at home, school or in the classroom. We have some chores to do. Look at the pictures below. All kids like doing their favourite activities. They enjoy these activities.",
           "Let's Talk",
-          "1. Learning the Sounds",
-          "2. Learning to Speak",
-          "2. Learning to Spell",
-          "1. Learning to Write"
+          "• What is your favourite activity?",
+          "• Do you enjoy working with others?",
+          "• Are you fond of reading? What kind of books do you like to read?"
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -2162,22 +2216,36 @@ var ENGLISH_1_DATA = [
     "titlePashto": "ګډول او پاملرنه (نظم او ښه عادتونه)",
     "type": "poem",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: Kindness, Generosity & Friendship\n\nOfficial Learning Outcomes:\n• Recite the poem 'Let others share your toys, my son' with emotion.\n• Understand the social and ethical value of sharing with classmates and siblings.\n• Learn indefinite articles: 'a' and 'an'.\n• Identify colors and basic geometric shapes (circle, square, triangle, rectangle).\n• Complete Review 2 revision exercises.",
+    "authorInfo": "Theme: Kindness, Generosity & Friendship\n\nOfficial Learning Outcomes (verbatim, printed page 42):\n• recite short poems or nursery rhymes with actions.\n• respond to the text (post reading) to express understanding of the poem.\n• articulate, recognise and use some formulaic expressions to express limited needs.\n• demonstrate the use of common conventions and dynamics of group oral interactions in a group to recite poems.\n• pronounce and match spoken words with the written words.\n• recognise that as letters of words change, so do the sounds.\n• identify digraphs in initial and final position in a word.\n• articulate and identify simple rhyming words in text.\n• recognise the different categories of some colours, shapes and sizes.\n• identify gender of naming words from the immediate environment (masculine/feminine).\n• use words that point to something: these, those.\n• choose between 'a' or 'an'.\n• write appropriate naming and action words (s) to identify an object or an action in a picture.\n• show a series of actions in a picture by writing action verbs.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Learning Outcomes\n\nGetting Started\n\nLet's Talk\n\n1. Learning the Sounds\n\n2. Learning to Speak\n\nexpressions you have learnt above.\n\n2. Learning to Spell\n\n1. Learning to Write",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• recite short poems or nursery rhymes with actions.\n• respond to the text (post reading) to express understanding of the poem.\n• articulate, recognise and use some formulaic expressions to express limited needs.\n• demonstrate the use of common conventions and dynamics of group oral interactions in a group to recite poems.\n• pronounce and match spoken words with the written words.\n• recognise that as letters of words change, so do the sounds.\n• identify digraphs in initial and final position in a word.\n• articulate and identify simple rhyming words in text.\n• recognise the different categories of some colours, shapes and sizes.\n• identify gender of naming words from the immediate environment (masculine/feminine).\n• use words that point to something: these, those.\n• choose between 'a' or 'an'.\n• write appropriate naming and action words (s) to identify an object or an action in a picture.\n• show a series of actions in a picture by writing action verbs.\n\nGetting Started\nLook at the picture. What is happening? The people are taking care of each other. When we live together, we help each other and share our things. We need to be kind to each other and forgive each other's mistakes.\n\nLet's Talk\n• How do you care for your family and friends?\n• Would you like to help someone in need? Why?\n• Have you ever given your favourite toy to one of your friends? Why?",
         "paras": [
           "Learning Outcomes",
+          "After completing this unit, you will be able to:",
+          "• recite short poems or nursery rhymes with actions.",
+          "• respond to the text (post reading) to express understanding of the poem.",
+          "• articulate, recognise and use some formulaic expressions to express limited needs.",
+          "• demonstrate the use of common conventions and dynamics of group oral interactions in a group to recite poems.",
+          "• pronounce and match spoken words with the written words.",
+          "• recognise that as letters of words change, so do the sounds.",
+          "• identify digraphs in initial and final position in a word.",
+          "• articulate and identify simple rhyming words in text.",
+          "• recognise the different categories of some colours, shapes and sizes.",
+          "• identify gender of naming words from the immediate environment (masculine/feminine).",
+          "• use words that point to something: these, those.",
+          "• choose between 'a' or 'an'.",
+          "• write appropriate naming and action words (s) to identify an object or an action in a picture.",
+          "• show a series of actions in a picture by writing action verbs.",
           "Getting Started",
+          "Look at the picture. What is happening? The people are taking care of each other. When we live together, we help each other and share our things. We need to be kind to each other and forgive each other's mistakes.",
           "Let's Talk",
-          "1. Learning the Sounds",
-          "2. Learning to Speak",
-          "expressions you have learnt above.",
-          "2. Learning to Spell",
-          "1. Learning to Write"
+          "• How do you care for your family and friends?",
+          "• Would you like to help someone in need? Why?",
+          "• Have you ever given your favourite toy to one of your friends? Why?"
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -2779,21 +2847,37 @@ var ENGLISH_1_DATA = [
     "titlePashto": "د الله تعالی نعمتونه (میوې، سبزي او روغتیا)",
     "type": "prose",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: Gratitude, Nature & Healthy Diet\n\nOfficial Learning Outcomes:\n• Acknowledge the endless blessings of Allah (SWT) in our surroundings.\n• Read the story about fruits and vegetables discussing their health benefits.\n• Identify words that begin and end with the same sound.\n• Differentiate between common nouns and proper nouns.\n• Ask and answer simple questions using question words (What, Who, Where).",
+    "authorInfo": "Theme: Gratitude, Nature & Healthy Diet\n\nOfficial Learning Outcomes (verbatim, printed page 56):\n• use pre-reading strategies to predict a story by looking at picture(s) in the text.\n• interact with the text and use reading strategies (while reading) to locate specific factual information.\n• respond to the text (post-reading) to express likes /dislikes about the story.\n• identify words that begin with the same sound.\n• identify words that end with the same sound.\n• demonstrate the use of common conventions and dynamics of group oral interactions in a group to express basic emotions (happiness, sadness, anger, etc.)\n• read aloud three-letter words with a reasonable level of accuracy in pronunciation.\n• recognise and practice that words combine to make sentences.\n• recognise the different categories of some naming words e.g. fruits and vegetables.\n• recognise that people and places have particular names.\n• recognise and use questioning words: what, who, where.\n• physically respond to, and use some common action words.\n• recognise that plural nouns do not take the articles a or an.\n• write numbers from 1 to 10 in words.\n• construct simple sentences of three/four words using correct capitalisation, punctuation and spelling.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Learning Outcomes\n\nGetting Started\n\nLet's Talk\n\n1. Learning the Sounds\n\n2. Learning to Speak\n\n2. Learning to Spell\n\n1. Learning to Write",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• use pre-reading strategies to predict a story by looking at picture(s) in the text.\n• interact with the text and use reading strategies (while reading) to locate specific factual information.\n• respond to the text (post-reading) to express likes /dislikes about the story.\n• identify words that begin with the same sound.\n• identify words that end with the same sound.\n• demonstrate the use of common conventions and dynamics of group oral interactions in a group to express basic emotions (happiness, sadness, anger, etc.)\n• read aloud three-letter words with a reasonable level of accuracy in pronunciation.\n• recognise and practice that words combine to make sentences.\n• recognise the different categories of some naming words e.g. fruits and vegetables.\n• recognise that people and places have particular names.\n• recognise and use questioning words: what, who, where.\n• physically respond to, and use some common action words.\n• recognise that plural nouns do not take the articles a or an.\n• write numbers from 1 to 10 in words.\n• construct simple sentences of three/four words using correct capitalisation, punctuation and spelling.\n\nGetting Started\nLook at the picture below and think about all the things that Allah (سبحانه و تعالى) has created for us; trees for shade, water to drink and the sun for light.\n\nLet's Talk\n• Think about some other things created by Allah (سبحانه و تعالى) and share with class.\n• Think about other natural things that give us benefits.\n• Are fruits and vegetables good for us? How?",
         "paras": [
           "Learning Outcomes",
+          "After completing this unit, you will be able to:",
+          "• use pre-reading strategies to predict a story by looking at picture(s) in the text.",
+          "• interact with the text and use reading strategies (while reading) to locate specific factual information.",
+          "• respond to the text (post-reading) to express likes /dislikes about the story.",
+          "• identify words that begin with the same sound.",
+          "• identify words that end with the same sound.",
+          "• demonstrate the use of common conventions and dynamics of group oral interactions in a group to express basic emotions (happiness, sadness, anger, etc.)",
+          "• read aloud three-letter words with a reasonable level of accuracy in pronunciation.",
+          "• recognise and practice that words combine to make sentences.",
+          "• recognise the different categories of some naming words e.g. fruits and vegetables.",
+          "• recognise that people and places have particular names.",
+          "• recognise and use questioning words: what, who, where.",
+          "• physically respond to, and use some common action words.",
+          "• recognise that plural nouns do not take the articles a or an.",
+          "• write numbers from 1 to 10 in words.",
+          "• construct simple sentences of three/four words using correct capitalisation, punctuation and spelling.",
           "Getting Started",
+          "Look at the picture below and think about all the things that Allah (سبحانه و تعالى) has created for us; trees for shade, water to drink and the sun for light.",
           "Let's Talk",
-          "1. Learning the Sounds",
-          "2. Learning to Speak",
-          "2. Learning to Spell",
-          "1. Learning to Write"
+          "• Think about some other things created by Allah (سبحانه و تعالى) and share with class.",
+          "• Think about other natural things that give us benefits.",
+          "• Are fruits and vegetables good for us? How?"
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -3334,22 +3418,37 @@ var ENGLISH_1_DATA = [
     "titlePashto": "د ټولګي اخلاق او آداب (د ښوونځي لومړۍ ورځ)",
     "type": "prose",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: Discipline, Social Courtesy & School Rules\n\nOfficial Learning Outcomes:\n• Read the story of Zara's first day in her new school.\n• Follow classroom rules: queuing, raising hand, listening quietly, keeping clean.\n• Exchange morning greetings: 'Assalaamu Alaikum' and 'Good morning'.\n• Use helping verbs: is, am, are in sentences.\n• Recognise adjectives of size (big, small, tall, short).",
+    "authorInfo": "Theme: Discipline, Social Courtesy & School Rules\n\nOfficial Learning Outcomes (verbatim, printed page 66):\n• respond to the text (post reading) to express understanding of the story through pantomime.\n• identify one-syllable words that rhyme.\n• demonstrate the use of common conventions and dynamics of group oral interactions in group to:\n•   • exchange basic routine greetings.\n•   • exchange some social courtesies.\n• change the first sound of a word to make rhyming words, e.g. fan, van, ran, man. etc.\n• read familiar words appearing on a variety of reading material such as food labels, toy boxes, etc.\n• recognise the different categories of some nouns: in pictures, classroom, at home and in the immediate environment and direction (left/right).\n• use questioning words: when, why.\n• comprehend and respond to simple wh-questions.\n• use am, is, are in short sentences to identify and describe a person, place, and thing, e.g. I am.\n• use some describing words showing size.\n• list items of a similar category from a given text.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Learning Outcomes\n\nGetting Started\n\nLet's Talk\n\n1. Learning the Sounds\n\n2. Learning to Speak\n\n2. Learning to Spell\n\nii. Write the sight words learnt earlier in the shape boxes that fit.\n\n1. Learning to Write",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• respond to the text (post reading) to express understanding of the story through pantomime.\n• identify one-syllable words that rhyme.\n• demonstrate the use of common conventions and dynamics of group oral interactions in group to:\n•   • exchange basic routine greetings.\n•   • exchange some social courtesies.\n• change the first sound of a word to make rhyming words, e.g. fan, van, ran, man. etc.\n• read familiar words appearing on a variety of reading material such as food labels, toy boxes, etc.\n• recognise the different categories of some nouns: in pictures, classroom, at home and in the immediate environment and direction (left/right).\n• use questioning words: when, why.\n• comprehend and respond to simple wh-questions.\n• use am, is, are in short sentences to identify and describe a person, place, and thing, e.g. I am.\n• use some describing words showing size.\n• list items of a similar category from a given text.\n\nGetting Started\nLook at the pictures and describe what is happening. (Class A / Class B)\n\nLet's Talk\n• Which classroom would you like to be in, Class A or Class B?\n• Is it good to fight over small things?\n• Is it good to follow your teacher's instructions?\n• How do you behave in your classroom?\n• Do you keep your school clean? How?",
         "paras": [
           "Learning Outcomes",
+          "After completing this unit, you will be able to:",
+          "• respond to the text (post reading) to express understanding of the story through pantomime.",
+          "• identify one-syllable words that rhyme.",
+          "• demonstrate the use of common conventions and dynamics of group oral interactions in group to:",
+          "•   • exchange basic routine greetings.",
+          "•   • exchange some social courtesies.",
+          "• change the first sound of a word to make rhyming words, e.g. fan, van, ran, man. etc.",
+          "• read familiar words appearing on a variety of reading material such as food labels, toy boxes, etc.",
+          "• recognise the different categories of some nouns: in pictures, classroom, at home and in the immediate environment and direction (left/right).",
+          "• use questioning words: when, why.",
+          "• comprehend and respond to simple wh-questions.",
+          "• use am, is, are in short sentences to identify and describe a person, place, and thing, e.g. I am.",
+          "• use some describing words showing size.",
+          "• list items of a similar category from a given text.",
           "Getting Started",
+          "Look at the pictures and describe what is happening. (Class A / Class B)",
           "Let's Talk",
-          "1. Learning the Sounds",
-          "2. Learning to Speak",
-          "2. Learning to Spell",
-          "ii. Write the sight words learnt earlier in the shape boxes that fit.",
-          "1. Learning to Write"
+          "• Which classroom would you like to be in, Class A or Class B?",
+          "• Is it good to fight over small things?",
+          "• Is it good to follow your teacher's instructions?",
+          "• How do you behave in your classroom?",
+          "• Do you keep your school clean? How?"
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -3878,21 +3977,34 @@ var ENGLISH_1_DATA = [
     "titlePashto": "طبیعت ښکلی دی (د پسرلي ښکلا)",
     "type": "poem",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: Seasons, Weather & Green Environment\n\nOfficial Learning Outcomes:\n• Recite the poem 'It's Spring' expressing joy at the arrival of pleasant weather.\n• Identify the four seasons: summer, winter, autumn, and spring.\n• Arrange words in alphabetical order (A to Z).\n• Use adjectives of quality (sweet, fresh, green, bright, cold, hot).\n• Appreciate nature and care for green plants.",
+    "authorInfo": "Theme: Seasons, Weather & Green Environment\n\nOfficial Learning Outcomes (verbatim, printed page 77):\n• pronounce familiar one-syllable words.\n• demonstrate the use of common conventions and dynamics of group oral interactions in a group to participate in conversation, to take turns.\n• demonstrate the use of common conventions and dynamics of group oral interactions to recite poems.\n• arrange a list of words in alphabetical order.\n• brainstorm to gather ideas for various activities/tasks.\n• recite short poems or nursery rhymes with actions.\n• articulate and identify simple rhyming words in text.\n• recognise the different categories of some parts of the body.\n• use am, is, are in short sentences to identify and describe a person, place, and thing e.g. I am.\n• use some describing words showing quality, size and colour.\n• apply capitalisation to the initial letter of the first word of a sentence.\n• write date and captions on page top.\n• fill in missing information to complete simple sentences.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Learning Outcomes\n\nGetting Started\n\nLet's Talk\n\n1. Learning the Sounds\n\n2. Learning to Speak\n\n2. Learning to Spell\n\n1. Learning to Write",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• pronounce familiar one-syllable words.\n• demonstrate the use of common conventions and dynamics of group oral interactions in a group to participate in conversation, to take turns.\n• demonstrate the use of common conventions and dynamics of group oral interactions to recite poems.\n• arrange a list of words in alphabetical order.\n• brainstorm to gather ideas for various activities/tasks.\n• recite short poems or nursery rhymes with actions.\n• articulate and identify simple rhyming words in text.\n• recognise the different categories of some parts of the body.\n• use am, is, are in short sentences to identify and describe a person, place, and thing e.g. I am.\n• use some describing words showing quality, size and colour.\n• apply capitalisation to the initial letter of the first word of a sentence.\n• write date and captions on page top.\n• fill in missing information to complete simple sentences.\n\nGetting Started\nLook at the given pictures and write the names of different types of Weather.\n\nLet's Talk\n• Why are the trees moving towards the left?\n• How do you feel when the wind blows?",
         "paras": [
           "Learning Outcomes",
+          "After completing this unit, you will be able to:",
+          "• pronounce familiar one-syllable words.",
+          "• demonstrate the use of common conventions and dynamics of group oral interactions in a group to participate in conversation, to take turns.",
+          "• demonstrate the use of common conventions and dynamics of group oral interactions to recite poems.",
+          "• arrange a list of words in alphabetical order.",
+          "• brainstorm to gather ideas for various activities/tasks.",
+          "• recite short poems or nursery rhymes with actions.",
+          "• articulate and identify simple rhyming words in text.",
+          "• recognise the different categories of some parts of the body.",
+          "• use am, is, are in short sentences to identify and describe a person, place, and thing e.g. I am.",
+          "• use some describing words showing quality, size and colour.",
+          "• apply capitalisation to the initial letter of the first word of a sentence.",
+          "• write date and captions on page top.",
+          "• fill in missing information to complete simple sentences.",
           "Getting Started",
+          "Look at the given pictures and write the names of different types of Weather.",
           "Let's Talk",
-          "1. Learning the Sounds",
-          "2. Learning to Speak",
-          "2. Learning to Spell",
-          "1. Learning to Write"
+          "• Why are the trees moving towards the left?",
+          "• How do you feel when the wind blows?"
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -4381,21 +4493,33 @@ var ENGLISH_1_DATA = [
     "titlePashto": "د مبارکۍ کارډ (د اختر کارډ جوړول)",
     "type": "prose",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: Celebration, Friendship & Ordinal Numbers\n\nOfficial Learning Outcomes:\n• Read how Ayyan and Maham make an Eid greeting card step by step.\n• Learn ordinal numbers: first, second, third, fourth, fifth.\n• Use adjectives of color (red, blue, yellow, green).\n• Apply punctuation rules: full stop (.) at the end of a sentence.\n• Complete Review 3 assessment activities.",
+    "authorInfo": "Theme: Celebration, Friendship & Ordinal Numbers\n\nOfficial Learning Outcomes (verbatim, printed page 86):\n• use pre-reading strategies to predict a story by looking at picture(s) in the text.\n• interact with the text and use reading strategies (while-reading) to follow a sequence in a simple procedure or a picture map. respond to the text (post reading) to express understanding of the story.\n• demonstrate use of common conventions and dynamics of group oral interactions in a group to express needs.\n• pronounce familiar common irregular sight words.\n• identify a book by looking at its title.\n• locate texts/lessons by looking at titles and pictures.\n• recognise the different categories of some words: first, second and third, etc.\n• use some describing words showing colour.\n• recognise and use a full stop at the end of a statement.\n• recognise, physically/orally respond to simple sentences showing requests in a school scenario.\n• recognise the conventions of a greeting card and make/fill in through guided activity, simple greeting cards: draw illustrations to make greeting cards, write names of addressee and sender, write appropriate words and formulaic expressions.\n• write name and phone number.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Getting Started\n\nLet's Talk\n\n1. Learning the Sounds\n\n2. Learning to Speak\n\nathing B (iv) Encourage students to read the lesson again and fill in the blanks with the correct answers, C1 (1) Ask them to learn vocabulary with their meanings and use these words in their daily conversation. C1 () Tell students that ordinal numbers tell the order of things. Give an example of the seating positions of students in the classroom.\n\n2. Learning to Spell\n\n1. Learning to Write",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• use pre-reading strategies to predict a story by looking at picture(s) in the text.\n• interact with the text and use reading strategies (while-reading) to follow a sequence in a simple procedure or a picture map. respond to the text (post reading) to express understanding of the story.\n• demonstrate use of common conventions and dynamics of group oral interactions in a group to express needs.\n• pronounce familiar common irregular sight words.\n• identify a book by looking at its title.\n• locate texts/lessons by looking at titles and pictures.\n• recognise the different categories of some words: first, second and third, etc.\n• use some describing words showing colour.\n• recognise and use a full stop at the end of a statement.\n• recognise, physically/orally respond to simple sentences showing requests in a school scenario.\n• recognise the conventions of a greeting card and make/fill in through guided activity, simple greeting cards: draw illustrations to make greeting cards, write names of addressee and sender, write appropriate words and formulaic expressions.\n• write name and phone number.\n\nGetting Started\nLook at the picture and imagine that you have the Eid celebrations at your home.\n\nLet's Talk\n• Who do you celebrate Eid with?\n• Do you share your gifts with your brother and sister?",
         "paras": [
+          "Learning Outcomes",
+          "After completing this unit, you will be able to:",
+          "• use pre-reading strategies to predict a story by looking at picture(s) in the text.",
+          "• interact with the text and use reading strategies (while-reading) to follow a sequence in a simple procedure or a picture map. respond to the text (post reading) to express understanding of the story.",
+          "• demonstrate use of common conventions and dynamics of group oral interactions in a group to express needs.",
+          "• pronounce familiar common irregular sight words.",
+          "• identify a book by looking at its title.",
+          "• locate texts/lessons by looking at titles and pictures.",
+          "• recognise the different categories of some words: first, second and third, etc.",
+          "• use some describing words showing colour.",
+          "• recognise and use a full stop at the end of a statement.",
+          "• recognise, physically/orally respond to simple sentences showing requests in a school scenario.",
+          "• recognise the conventions of a greeting card and make/fill in through guided activity, simple greeting cards: draw illustrations to make greeting cards, write names of addressee and sender, write appropriate words and formulaic expressions.",
+          "• write name and phone number.",
           "Getting Started",
+          "Look at the picture and imagine that you have the Eid celebrations at your home.",
           "Let's Talk",
-          "1. Learning the Sounds",
-          "2. Learning to Speak",
-          "athing B (iv) Encourage students to read the lesson again and fill in the blanks with the correct answers, C1 (1) Ask them to learn vocabulary with their meanings and use these words in their daily conversation. C1 () Tell students that ordinal numbers tell the order of things. Give an example of the seating positions of students in the classroom.",
-          "2. Learning to Spell",
-          "1. Learning to Write"
+          "• Who do you celebrate Eid with?",
+          "• Do you share your gifts with your brother and sister?"
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -4946,22 +5070,37 @@ var ENGLISH_1_DATA = [
     "titlePashto": "سويه او کيشپ (د ځنګله مشهوره کیسه)",
     "type": "prose",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: Humility, Persistence & Fair Play\n\nOfficial Learning Outcomes:\n• Read and comprehend the fable 'The Hare and the Tortoise'.\n• Understand that pride leads to failure while slow and steady wins the race.\n• Identify animal names and their actions.\n• Recognise question marks (?) and exclamation marks (!).\n• Practise speech bubbles and story retellings.",
+    "authorInfo": "Theme: Humility, Persistence & Fair Play\n\nOfficial Learning Outcomes (verbatim, printed page 99):\n• use pre-reading strategies to predict the story by looking at picture(s) in the text.\n• interact with the text and use reading strategies (while reading) to guess what follows in a story.\n• recognise and classify into different categories, some simple action and naming words from pictures and immediate surroundings e.g. animals.\n• respond to the text (post reading) to express likes /dislikes about the story.\n• listen to a story/fairytale of a few sentences read aloud by the teacher.\n• read aloud the same story/fairytale themselves.\n• identify names and characters.\n• respond orally in yes or no, their likes or dislikes about the story/character.\n• identify, recognise and articulate common two to three-lettered sight words and words with common spelling patterns.\n• recognise words ending with an 's' sound in the plural form of a word.\n• use words showing possession, e.g. my, your, our.\n• use and physically respond to simple sentences showing command in a school scenario.\n• express enjoyment while playing.\n• recognise and use a question mark at the end of a question.\n• fill in speech bubbles with given appropriate words and formulaic expressions.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Learning Outcomes\n\nGetting Started\n\nLet's Talk\n\nWhy did the hare say sorry at the end? What lesson did you learn from the story?\n\n1. Learning the Sounds\n\n2. Learning to Speak\n\n2. Learning to Spell\n\n1. Learning to Write",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• use pre-reading strategies to predict the story by looking at picture(s) in the text.\n• interact with the text and use reading strategies (while reading) to guess what follows in a story.\n• recognise and classify into different categories, some simple action and naming words from pictures and immediate surroundings e.g. animals.\n• respond to the text (post reading) to express likes /dislikes about the story.\n• listen to a story/fairytale of a few sentences read aloud by the teacher.\n• read aloud the same story/fairytale themselves.\n• identify names and characters.\n• respond orally in yes or no, their likes or dislikes about the story/character.\n• identify, recognise and articulate common two to three-lettered sight words and words with common spelling patterns.\n• recognise words ending with an 's' sound in the plural form of a word.\n• use words showing possession, e.g. my, your, our.\n• use and physically respond to simple sentences showing command in a school scenario.\n• express enjoyment while playing.\n• recognise and use a question mark at the end of a question.\n• fill in speech bubbles with given appropriate words and formulaic expressions.\n\nGetting Started\nLook at the picture and read the words to make sense. (Yes / We / Can)\n\nLet's Talk\n• What can you do at home to help your mother?\n• What do you do to help your teacher in your classroom?\n• What can you do to make yourself a good child?",
         "paras": [
           "Learning Outcomes",
+          "After completing this unit, you will be able to:",
+          "• use pre-reading strategies to predict the story by looking at picture(s) in the text.",
+          "• interact with the text and use reading strategies (while reading) to guess what follows in a story.",
+          "• recognise and classify into different categories, some simple action and naming words from pictures and immediate surroundings e.g. animals.",
+          "• respond to the text (post reading) to express likes /dislikes about the story.",
+          "• listen to a story/fairytale of a few sentences read aloud by the teacher.",
+          "• read aloud the same story/fairytale themselves.",
+          "• identify names and characters.",
+          "• respond orally in yes or no, their likes or dislikes about the story/character.",
+          "• identify, recognise and articulate common two to three-lettered sight words and words with common spelling patterns.",
+          "• recognise words ending with an 's' sound in the plural form of a word.",
+          "• use words showing possession, e.g. my, your, our.",
+          "• use and physically respond to simple sentences showing command in a school scenario.",
+          "• express enjoyment while playing.",
+          "• recognise and use a question mark at the end of a question.",
+          "• fill in speech bubbles with given appropriate words and formulaic expressions.",
           "Getting Started",
+          "Look at the picture and read the words to make sense. (Yes / We / Can)",
           "Let's Talk",
-          "Why did the hare say sorry at the end? What lesson did you learn from the story?",
-          "1. Learning the Sounds",
-          "2. Learning to Speak",
-          "2. Learning to Spell",
-          "1. Learning to Write"
+          "• What can you do at home to help your mother?",
+          "• What do you do to help your teacher in your classroom?",
+          "• What can you do to make yourself a good child?"
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -5461,22 +5600,33 @@ var ENGLISH_1_DATA = [
     "titlePashto": "له څارویو سره مینه (د پیشو نظم او پالنه)",
     "type": "poem",
     "author": "Khyber Pakhtunkhwa Textbook Board, Peshawar",
-    "authorInfo": "Theme: Compassion to Animals & Plural Sounds\n\nOfficial Learning Outcomes:\n• Recite the poem 'My Kitty Cat' with affection and expression.\n• Understand human responsibility to care for pets and domestic animals.\n• Recognise regular plural nouns ending with /s/ and /z/ sounds.\n• Use possessive words showing ownership (my, your, his, her).\n• Complete comprehensive Review 4 activities.",
+    "authorInfo": "Theme: Compassion to Animals & Plural Sounds\n\nOfficial Learning Outcomes (verbatim, printed page 108):\n• recite short poems or nursery rhymes with actions.\n• respond to the text (post-reading) to express understanding of the poem.\n• use appropriate body language for different communicative functions.\n• demonstrate use of common conventions and dynamics of group oral interactions in a group to recite poems.\n• recognise words ending with /s/ and /z/ sounds in the plural form of a word.\n• point out specific information in a calendar like the name of the month, and day of the week using sight reading strategies.\n• identify punctuation marks in a sentence (e.g. capitalisation, comma, full stop, question mark, etc.)\n• articulate and identify simple rhyming words in text.\n• articulate, recognise and use some common phrases and formulaic expressions to express limited needs.\n• identify and use words showing possession, e.g. his, her, their\n• recognise and use of a comma in a list.\n• recognise and write rhyming words from a poem.",
     "sections": [
       {
-        "heading": "1. Getting Started & Learning Outcomes",
+        "heading": "1. Learning Outcomes & Getting Started",
         "headingUrdu": "۱۔ آغازِ سبق اور تعلیمی مقاصد",
         "headingPashto": "۱. د درس پیل او ښوونیزې موخې",
-        "text": "Learning Outcomes\n\nGetting Started\n\nLet's Talk\n\n1. Learning the Sounds\n\n2. Learning to Speak\n\nC1 (1) Ask students to learn vocabulary with their meanings. Ask them to use these words in their daily conversation. C1 (ii) Have students recall the concept of rhyming words by writing some examples on the board.\n\n2. Learning to Spell\n\n1. Learning to Write",
+        "text": "Learning Outcomes\n\nAfter completing this unit, you will be able to:\n\n• recite short poems or nursery rhymes with actions.\n• respond to the text (post-reading) to express understanding of the poem.\n• use appropriate body language for different communicative functions.\n• demonstrate use of common conventions and dynamics of group oral interactions in a group to recite poems.\n• recognise words ending with /s/ and /z/ sounds in the plural form of a word.\n• point out specific information in a calendar like the name of the month, and day of the week using sight reading strategies.\n• identify punctuation marks in a sentence (e.g. capitalisation, comma, full stop, question mark, etc.)\n• articulate and identify simple rhyming words in text.\n• articulate, recognise and use some common phrases and formulaic expressions to express limited needs.\n• identify and use words showing possession, e.g. his, her, their\n• recognise and use of a comma in a list.\n• recognise and write rhyming words from a poem.\n\nGetting Started\nLook at the picture below and tell how you would feel if you are caged in. Of course you won't feel good. In a similar way, animals like to be free. We should not keep them in cages.\n\nLet's Talk\n• Do you have any pet animal at home?\n• How do you take care of it?",
         "paras": [
           "Learning Outcomes",
+          "After completing this unit, you will be able to:",
+          "• recite short poems or nursery rhymes with actions.",
+          "• respond to the text (post-reading) to express understanding of the poem.",
+          "• use appropriate body language for different communicative functions.",
+          "• demonstrate use of common conventions and dynamics of group oral interactions in a group to recite poems.",
+          "• recognise words ending with /s/ and /z/ sounds in the plural form of a word.",
+          "• point out specific information in a calendar like the name of the month, and day of the week using sight reading strategies.",
+          "• identify punctuation marks in a sentence (e.g. capitalisation, comma, full stop, question mark, etc.)",
+          "• articulate and identify simple rhyming words in text.",
+          "• articulate, recognise and use some common phrases and formulaic expressions to express limited needs.",
+          "• identify and use words showing possession, e.g. his, her, their",
+          "• recognise and use of a comma in a list.",
+          "• recognise and write rhyming words from a poem.",
           "Getting Started",
+          "Look at the picture below and tell how you would feel if you are caged in. Of course you won't feel good. In a similar way, animals like to be free. We should not keep them in cages.",
           "Let's Talk",
-          "1. Learning the Sounds",
-          "2. Learning to Speak",
-          "C1 (1) Ask students to learn vocabulary with their meanings. Ask them to use these words in their daily conversation. C1 (ii) Have students recall the concept of rhyming words by writing some examples on the board.",
-          "2. Learning to Spell",
-          "1. Learning to Write"
+          "• Do you have any pet animal at home?",
+          "• How do you take care of it?"
         ],
         "urdu": "اس سبق کے اہم تعلیمی مقاصد، تصاویر کی مدد سے فہم، بنیادی صوتیات اور باہمی گفتگو کے طریقے ہیں۔",
         "pashto": "د دې درس مهمې موخې، د انځورونو په مرسته درک، بنسټیز غږونه او د خبرو اترو زده کړه ده."
@@ -6031,6 +6181,736 @@ var ENGLISH_1_DATA = [
     }
   }
 ];
+
+// Source correction pass: Class 1 English Unit 1, printed pages 2–8.
+// Keep each page's distinct task and visual association with its own source page.
+if (ENGLISH_1_DATA[0]) {
+  ENGLISH_1_DATA[0].sections = [
+    {
+      heading: 'Printed page 2 — Look, say and talk',
+      headingUrdu: 'صفحہ ۲ — دیکھیں، نام بتائیں اور گفتگو کریں',
+      headingPashto: '۲ مخ — وګورئ، نومونه ووایئ او خبرې وکړئ',
+      text: 'Look at the pictures and say their names: cat, chicken, flowerpot, hat, racket, sun, top and bed.\n\nLet’s Talk: Say the initial sounds of the given words. Name any five objects in your surroundings.',
+      paras: ['Look at the pictures and say their names: cat, chicken, flowerpot, hat, racket, sun, top and bed.', 'Let’s Talk: Say the initial sounds of the given words. Name any five objects in your surroundings.'],
+      sourcePages: [2],
+      urdu: 'تصویروں میں بلی، مرغی، گملہ، ٹوپی، ریکٹ، سورج، لٹو اور بستر دکھائے گئے ہیں۔ الفاظ کے ابتدائی حروف کی آواز بتائیں اور اپنے اردگرد کی پانچ چیزوں کے نام لیں۔',
+      pashto: 'په انځورونو کې پیشو، چرګه، د ګل لوښی، خولۍ، رېکېټ، لمر، څرخي او کټ دي. د کلمو لومړني غږونه ووایئ او د خپل چاپېریال د پنځو شیانو نومونه واخلئ.'
+    },
+    {
+      heading: 'Printed page 3 — Read the alphabet',
+      headingUrdu: 'صفحہ ۳ — حروفِ تہجی پڑھیں',
+      headingPashto: '۳ مخ — الفبا ولولئ',
+      text: '1. Read aloud the given letters and say their sounds. The chart shows the capital and small letters Aa, Bb, Cc, Dd, Ee, Ff, Gg, Hh, Ii, Jj, Kk, Ll, Mm, Nn, Oo, Pp, Qq, Rr, Ss, Tt, Uu, Vv, Ww, Xx, Yy and Zz in alphabetical order.',
+      paras: ['1. Read aloud the given letters and say their sounds.', 'Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz'],
+      sourcePages: [3], urdu: 'حروفِ تہجی کو ترتیب سے بلند آواز میں پڑھیں اور ہر حرف کی آواز بتائیں۔', pashto: 'توري په الفبايي ترتیب په لوړ غږ ولولئ او د هر توري غږ ووایئ.'
+    },
+    {
+      heading: 'Printed page 4 — Letter sounds and line tracing',
+      headingUrdu: 'صفحہ ۴ — حروف کی آوازیں اور لکیروں کی مشق',
+      headingPashto: '۴ مخ — د تورو غږونه او د کرښو تمرین',
+      text: '2. Say the sounds of the six given letters: z, d, h, t, l and n.\n\n3. Trace the printed line patterns: horizontal, vertical, slanting, zigzag, curved and circular patterns.',
+      paras: ['2. Say the sounds of the six given letters: z, d, h, t, l and n.', '3. Trace the printed line patterns: horizontal, vertical, slanting, zigzag, curved and circular patterns.'],
+      sourcePages: [4], urdu: 'چھ حروف z، d، h، t، l اور n کی آوازیں کہیں۔ پھر صفحے پر بنی سیدھی، کھڑی، ترچھی، ٹیڑھی اور خم دار لکیروں پر قلم پھیریں۔', pashto: 'د z، d، h، t، l او n شپږو تورو غږونه ووایئ. بیا پر افقي، عمودي، کږو او تاو شویو کرښو قلم تېر کړئ.'
+    },
+    {
+      heading: 'Printed page 5 — Trace the train',
+      headingUrdu: 'صفحہ ۵ — ریل گاڑی پر قلم پھیریں',
+      headingPashto: '۵ مخ — پر اورګاډي کرښې تعقیب کړئ',
+      text: 'Continue tracing the wavy line patterns. 4. Trace and colour the given picture: a train with dotted outlines and wavy smoke.',
+      paras: ['Continue tracing the wavy line patterns.', '4. Trace and colour the given picture: a train with dotted outlines and wavy smoke.'],
+      sourcePages: [5], urdu: 'لہردار لکیروں کی مشق جاری رکھیں۔ سوال ۴ میں نقطوں والی ریل گاڑی اور اس کے لہردار دھوئیں پر قلم پھیریں اور تصویر میں رنگ بھریں۔', pashto: 'د څپو په څېر کرښو تمرین بشپړ کړئ. په ۴ تمرین کې پر نقطه‌يي اورګاډي او تاو شوي لوګي کرښې تېرې او انځور رنګ کړئ.'
+    },
+    {
+      heading: 'Printed page 6 — Copy capital and small letters',
+      headingUrdu: 'صفحہ ۶ — بڑے اور چھوٹے حروف نقل کریں',
+      headingPashto: '۶ مخ — غټ او واړه توري ولیکئ',
+      text: '5. Trace and copy the capital and small letters in the printed groups: Aa–Ee, Ff–Jj, Kk–Oo, Pp–Tt, Uu–Xx and Yy–Zz.',
+      paras: ['5. Trace and copy the capital and small letters in the printed groups: Aa–Ee, Ff–Jj, Kk–Oo, Pp–Tt, Uu–Xx and Yy–Zz.'],
+      sourcePages: [6], urdu: 'دیے گئے گروہوں میں بڑے اور چھوٹے حروف کو پہلے نقطوں پر قلم پھیریں، پھر نقل کریں۔', pashto: 'په ورکړل شوو ډلو کې غټ او واړه توري لومړی تعقیب او بیا ولیکئ.'
+    },
+    {
+      heading: 'Printed page 7 — Alphabetical order and missing neighbours',
+      headingUrdu: 'صفحہ ۷ — حروف کی ترتیب اور پہلے/بعد کے حروف',
+      headingPashto: '۷ مخ — الفبايي ترتیب او مخکې/وروسته توري',
+      text: '6. Write capital letters in alphabetical order. 7. Write the letter that comes before or after each given letter: ___ M, ___ B, E ___, Y ___.',
+      paras: ['6. Write capital letters in alphabetical order.', '7. Write the letter that comes before or after each given letter: ___ M, ___ B, E ___, Y ___.'],
+      sourcePages: [7], urdu: 'بڑے حروف تہجی کی ترتیب سے لکھیں۔ خالی جگہوں میں بالترتیب M اور B سے پہلے، اور E اور Y کے بعد آنے والے حروف لکھیں۔', pashto: 'غټ توري په الفبايي ترتیب ولیکئ. تش ځایونه د M او B نه مخکې، او د E او Y نه وروسته په راتلونکو تورو ډک کړئ.'
+    },
+    {
+      heading: 'Printed page 8 — Dictation and word tracing',
+      headingUrdu: 'صفحہ ۸ — املا اور الفاظ کی نقل',
+      headingPashto: '۸ مخ — املا او د کلمو لیکل',
+      text: 'Dictation. 8. Write the letters of the pronounced sounds in the six star spaces (the teacher supplies the sounds). 9. Trace and copy the words: sun, ant, pan, rat, jug and hen.',
+      paras: ['Dictation.', '8. Write the letters of the pronounced sounds in the six star spaces (the teacher supplies the sounds).', '9. Trace and copy the words: sun, ant, pan, rat, jug and hen.'],
+      sourcePages: [8], urdu: 'استاد کی سنائی ہوئی آوازوں کے حروف چھ ستاروں میں لکھیں۔ پھر sun، ant، pan، rat، jug اور hen پر قلم پھیریں اور نقل کریں۔', pashto: 'د ښوونکي د ویلو غږونو توري په شپږو ستورو کې ولیکئ. بیا sun، ant، pan، rat، jug او hen تعقیب او نقل کړئ.'
+    }
+  ];
+  ENGLISH_1_DATA[0].exercise = {
+    textbookMcqs: [],
+    comprehension: [
+      { question: 'Printed p. 2, Let’s Talk: What are the initial sounds in cat, chicken, flowerpot, hat, racket, sun, top and bed?', answer: ' /k/, /ch/, /f/, /h/, /r/, /s/, /t/ and /b/ respectively.' },
+      { question: 'Printed p. 3, Exercise 1: Read the alphabet chart aloud. How many letter pairs are shown?', answer: '26 pairs, from Aa through Zz. Each pair shows one capital and its small letter.' },
+      { question: 'Printed p. 4, Exercise 2: Which six letters are shown for sound practice?', answer: 'z, d, h, t, l and n.' },
+      { question: 'Printed p. 4, Exercise 3: What should you do with the line patterns?', answer: 'Trace the different printed line patterns, including straight, slanting, zigzag and curved forms.' },
+      { question: 'Printed p. 5, Exercise 4: What picture should you trace and colour?', answer: 'The dotted train picture with wavy smoke.' },
+      { question: 'Printed p. 6, Exercise 5: Which letter pairs are practised?', answer: 'Aa–Ee, Ff–Jj, Kk–Oo, Pp–Tt, Uu–Xx and Yy–Zz.' },
+      { question: 'Printed p. 7, Exercise 7: Fill the missing letters: ___ M, ___ B, E ___, Y ___.', answer: 'L M, A B, E F, Y Z. The missing letters are L, A, F and Z.' },
+      { question: 'Printed p. 8, Exercise 8: What is the answer to the dictation?', answer: 'The teacher reads the sounds aloud, so the six written letters depend on the dictation given in class.' },
+      { question: 'Printed p. 8, Exercise 9: Which words should be traced and copied?', answer: 'sun, ant, pan, rat, jug and hen.' }
+    ]
+  };
+  ENGLISH_1_DATA[0].englishSummary = 'Source-checked transcription and answers for printed pages 2–8. The rest of Unit 1 is still awaiting page-by-page verification.';
+  ENGLISH_1_DATA[0].urduSummary = 'مطبوعہ صفحات ۲ تا ۸ کی ماخذ سے جانچی گئی عبارت اور جوابات۔ یونٹ ۱ کے باقی صفحات کی جانچ جاری ہے۔';
+  ENGLISH_1_DATA[0].pashtoSummary = 'د ۲–۸ چاپ شوو مخونو له سرچینې سره کتل شوی متن او ځوابونه. د لومړي یونټ پاتې مخونه لا د کتنې په حال کې دي.';
+  // Remove generated exam questions that are not present on the scanned pages.
+  ENGLISH_1_DATA[0].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+}
+
+// Source correction pass: Class 1 English Unit 2, printed pages 9–18.
+if (ENGLISH_1_DATA[1]) {
+  ENGLISH_1_DATA[1].sections = [
+    {
+      heading: 'Printed page 9 — Unit opening and learning outcomes',
+      headingUrdu: 'صفحہ ۹ — یونٹ کا آغاز اور تعلیمی مقاصد',
+      headingPashto: '۹ مخ — د یونټ پیل او ښوونیزې موخې',
+      text: 'Unit 2: My Family and I. The opening page presents the unit learning outcomes above an illustration of family members together outdoors.',
+      paras: ['Unit 2: My Family and I.', 'The opening page presents the unit learning outcomes above an illustration of family members together outdoors.'],
+      sourcePages: [9], urdu: 'یونٹ ۲: میرا خاندان اور میں۔ ابتدائی صفحے پر یونٹ کے تعلیمی مقاصد اور خاندان کی تصویر ہے۔', pashto: 'دوهم یونټ: زما کورنۍ او زه. په لومړي مخ کې د یونټ موخې او د کورنۍ انځور دی.'
+    },
+    {
+      heading: 'Printed page 10 — Getting Started: birthday picture',
+      headingUrdu: 'صفحہ ۱۰ — آغاز: سالگرہ کی تصویر', headingPashto: '۱۰ مخ — پیل: د زوکړې انځور',
+      text: 'Look at the picture and answer orally. The illustration shows a family birthday gathering with a “HAPPY BIRTHDAY” banner, cake, gifts, cups, plates and bottles.\n\nLet’s Talk: What is written on the banner? How are they feeling? Do you share your birthday gifts with your siblings? What is the shape of the cake? How many bottles are on the table?',
+      paras: ['Look at the picture and answer the questions orally.', 'What is written on the banner?', 'How are they feeling?', 'Do you share your birthday gifts with your siblings?', 'What is the shape of the cake?', 'How many bottles are on the table?'],
+      sourcePages: [10], urdu: 'تصویر میں سالگرہ کی تقریب ہے۔ بینر پر “HAPPY BIRTHDAY” لکھا ہے۔ بچے اور گھر والے خوش ہیں۔ تحفے بانٹنے کا جواب طالب علم کے ذاتی تجربے کے مطابق ہے۔ کیک گول ہے اور میز پر تین بوتلیں ہیں۔', pashto: 'په انځور کې د زوکړې مېلمستیا ده. پر بینر “HAPPY BIRTHDAY” لیکل شوي. خلک خوشحاله دي. د ډالیو شریکولو ځواب شخصي دی. کیک ګرد دی او پر مېز درې بوتلونه دي.'
+    },
+    {
+      heading: 'Printed page 11 — Reading: My Family and I',
+      headingUrdu: 'صفحہ ۱۱ — مطالعہ: میرا خاندان اور میں', headingPashto: '۱۱ مخ — لوستل: زما کورنۍ او زه',
+      text: 'Pre-reading: Look at the pictures and title and guess what you will study.\n\nMy name is Saad. Mother calls me “sadi”. I am six years old. I read in class one. I play football with my friends. I help my grandpa in watering plants. I want to be a teacher like my father.\n\nMy family lives in a small village. I have two brothers and a sister. They are nice and kind to me. My mother cooks yummy dishes for us. My father helps us with our homework. I take dinner with my family. My granny tells us bedtime stories. I love my family very much.\n\nWhile-reading: What does Saad want to be? Post-reading: Make a list of Saad’s family members. What kind of stories do you like?',
+      paras: ['Pre-reading: Look at the pictures and title and guess what you will study.', 'My name is Saad. Mother calls me “sadi”. I am six years old. I read in class one. I play football with my friends. I help my grandpa in watering plants. I want to be a teacher like my father.', 'My family lives in a small village. I have two brothers and a sister. They are nice and kind to me. My mother cooks yummy dishes for us. My father helps us with our homework. I take dinner with my family. My granny tells us bedtime stories. I love my family very much.', 'While-reading: What does Saad want to be?', 'Post-reading: Make a list of Saad’s family members. What kind of stories do you like?'],
+      sourcePages: [11], urdu: 'سعد استاد بننا چاہتا ہے۔ اس کے خاندان کے افراد: سعد، اس کے والدین، دو بھائی، ایک بہن، دادا اور دادی ہیں۔ پسندیدہ کہانی کا جواب طالب علم اپنی پسند کے مطابق دے۔', pashto: 'سعد غواړي ښوونکی شي. د هغه د کورنۍ غړي سعد، مور او پلار، دوه وروڼه، یوه خور، نیکه او انا دي. د خوښې کیسې ځواب د زده کوونکي په خپله خوښه دی.'
+    },
+    {
+      heading: 'Printed page 12 — Letter sounds, CVC words and dialogue',
+      headingUrdu: 'صفحہ ۱۲ — حروف کی آوازیں، تین حرفی الفاظ اور مکالمہ', headingPashto: '۱۲ مخ — د تورو غږونه، درې‌توري کلمې او خبرې',
+      text: 'A) Oral Communication. 1. Learning the Sounds: Match the pictured objects to the initial letter sounds a, u, v, j, e and s. Read the word patterns fan, cup, pin, box, net and cat.\n\n2. Learning to Speak: Read and practise the dialogue. Mariam: “Assalaamu Alaikum! I am Mariam. How are you?” Sara: “Wa Alaikum Assalaam! I am Sara. I am fine. Thank you!” On the next page, read the dialogue and practise introducing yourself in class.',
+      paras: ['Match the pictured objects to the initial letter sounds a, u, v, j, e and s.', 'Read the word patterns: fan, cup, pin, box, net and cat.', 'Mariam: “Assalaamu Alaikum! I am Mariam. How are you?” Sara: “Wa Alaikum Assalaam! I am Sara. I am fine. Thank you!”', 'Read the dialogue and practise introducing yourself in class.'],
+      sourcePages: [12, 13], urdu: 'تصویروں کو a، u، v، j، e اور s کی ابتدائی آوازوں سے ملائیں۔ الفاظ fan، cup، pin، box، net اور cat پڑھیں۔ مریم اور سارہ کا مکالمہ پڑھ کر اپنی پہچان کروانے کی مشق کریں۔', pashto: 'انځورونه د a، u، v، j، e او s له لومړنیو غږونو سره وتړئ. fan، cup، pin، box، net او cat ولولئ. د مریم او سارا خبرې ولولئ او ځان په ټولګي کې ور وپېژنئ.'
+    },
+    {
+      heading: 'Printed page 13 — Reading comprehension and fruit blanks',
+      headingUrdu: 'صفحہ ۱۳ — فہمِ عبارت اور پھل سے متعلق خالی جگہیں', headingPashto: '۱۳ مخ — د لوست درک او د مېوې تش ځایونه',
+      text: 'Answer these questions: Where does Saad live? Who tells Saad bedtime stories? What does Saad like to play?\n\nFill the blanks using the word bank green, orange, like: “This is an ___.” “Its leaves are ___.” “I ___ it.”\n\nChoose the correct options: Saad is ___ years old (four, five, six or seven). Saad has ___ family members (six, seven, eight or nine).',
+      paras: ['Where does Saad live?', 'Who tells Saad bedtime stories?', 'What does Saad like to play?', 'Use green, orange, like: This is an ___. Its leaves are ___. I ___ it.', 'Saad is ___ years old: four, five, six or seven.', 'Saad has ___ family members: six, seven, eight or nine.'],
+      sourcePages: [13], urdu: 'سعد ایک چھوٹے گاؤں میں رہتا ہے؛ دادی اسے کہانیاں سناتی ہیں؛ وہ فٹ بال کھیلنا پسند کرتا ہے۔ خالی جگہیں: orange، green، like۔ سعد چھ سال کا ہے اور اس کے آٹھ افرادِ خاندان ہیں۔', pashto: 'سعد په یوه کوچني کلي کې اوسېږي؛ انا یې د خوب کیسې ورته وايي؛ فوټبال لوبول خوښوي. تش ځایونه: orange، green، like. سعد شپږ کلن دی او د کورنۍ غړي یې اته دي.'
+    },
+    {
+      heading: 'Printed page 14 — Vocabulary and number words',
+      headingUrdu: 'صفحہ ۱۴ — الفاظ کے معنی اور عددی الفاظ', headingPashto: '۱۴ مخ — د کلمو ماناوې او شمېرې',
+      text: 'Read the words with their meanings: study — to learn by reading or attending school; complete — to finish a task; yummy — pleasing to taste; siblings — brothers and sisters.\n\nRead the number words one to ten with the pictured groups. Read the unit again and circle the numbers you find in the text.',
+      paras: ['study — to learn by reading or attending school', 'complete — to finish a task', 'yummy — pleasing to taste', 'siblings — brothers and sisters', 'Read the number words one to ten with the pictured groups.', 'Circle the number words found in the lesson text.'],
+      sourcePages: [14], urdu: 'study: پڑھ کر یا اسکول جا کر سیکھنا؛ complete: کام ختم کرنا؛ yummy: ذائقے میں خوشگوار؛ siblings: بھائی بہن۔ سبق میں one، two اور six آتے ہیں۔', pashto: 'study: د لوست یا ښوونځي له لارې زده کول؛ complete: کار بشپړول؛ yummy: خوندور؛ siblings: وروڼه او خویندې. په لوست کې one، two او six راغلي.'
+    },
+    {
+      heading: 'Printed page 15 — Copy words, complete spellings and read sight words',
+      headingUrdu: 'صفحہ ۱۵ — الفاظ نقل کریں، املا مکمل کریں اور عام الفاظ پڑھیں', headingPashto: '۱۵ مخ — کلمې نقل، املا بشپړول او عامې کلمې لوستل',
+      text: 'Trace and copy: study, lunch, play, school, mother. Fill the missing letters: Sh__e, st__ry, __ister, e__t, tr__in. Read the sight words: to, and, he, you, I, the. Put each sight word in the matching letter-shape boxes; the first word, “the”, is completed as the example.',
+      paras: ['Trace and copy: study, lunch, play, school, mother.', 'Fill the missing letters: Sh__e, st__ry, __ister, e__t, tr__in.', 'Read the sight words: to, and, he, you, I, the.', 'Put each sight word in the matching letter-shape boxes; the first word, “the”, is completed as the example.'],
+      sourcePages: [15], urdu: 'study، lunch، play، school اور mother نقل کریں۔ ادھورے الفاظ shoe، story، sister، eat اور train مکمل کریں۔ sight words پڑھیں: to، and، he، you، I، the۔', pashto: 'study، lunch، play، school او mother نقل کړئ. نیمګړې کلمې shoe، story، sister، eat او train بشپړې کړئ. sight words ولولئ: to، and، he، you، I، the.'
+    },
+    {
+      heading: 'Printed page 16 — Correct spellings and naming words',
+      headingUrdu: 'صفحہ ۱۶ — درست ہجے اور اسم', headingPashto: '۱۶ مخ — سمې املاوې او نوم‌کلمې',
+      text: 'Circle the correct spelling in each row: paly/play/playy; clock/cloock/clcok; terain/trrain/train; story/stoory/storry; brothar/beother/brother.\n\nNouns (Naming Words): Read the sentences “My name is Saad”, “I like oranges” and “I live in a village.” Match the nouns boy, cow, ball, elephant, banana and girl to their pictures.',
+      paras: ['Correct spellings: play, clock, train, story, brother.', 'Match boy, cow, ball, elephant, banana and girl to their corresponding pictures.'],
+      sourcePages: [16], urdu: 'درست ہجے: play، clock، train، story، brother۔ اسموں کو تصویروں سے ملائیں: boy لڑکا، cow گائے، ball گیند، elephant ہاتھی، banana کیلا، girl لڑکی۔', pashto: 'سمې املاوې: play، clock، train، story، brother. نومونه له انځورونو سره وتړئ: boy هلک، cow غوا، ball توپ، elephant فیل، banana کېله، girl نجلۍ.'
+    },
+    {
+      heading: 'Printed page 17 — Pronouns and punctuation',
+      headingUrdu: 'صفحہ ۱۷ — ضمیر اور رموزِ اوقاف', headingPashto: '۱۷ مخ — ضمیرونه او نښې',
+      text: 'Read the pronouns I, you, he, she, we, they and it in the pictured sentences. Fill the blanks: ___ is a girl (She/He); ___ are a student (It/You); ___ is a good boy (He/She); ___ are in class one (I/We); ___ am a teacher (You/I); ___ is a rabbit (It/They).\n\nPunctuation: use a full stop at the end of a statement, a comma to separate items, and a question mark at the end of a question. Add punctuation to the seven printed sentences.',
+      paras: ['Pronouns in the picture sentences include I, you, he, she, we, they and it.', 'Fill the six pronoun blanks using the given choices.', 'Punctuation: full stop (.), comma (,) and question mark (?).', 'Add punctuation to the seven printed sentences.'],
+      sourcePages: [17], urdu: 'خالی جگہوں کے درست ضمیر: She، You، He، We، I، It۔ بیانات کے آخر میں نقطہ، سوال کے آخر میں سوالیہ نشان، اور فہرست میں اشیا جدا کرنے کے لیے کاما لگائیں۔', pashto: 'د تشو ځایونو ضمیرونه: She، You، He، We، I، It. د بیان په پای کې ټکی، د پوښتنې په پای کې د پوښتنې نښه او د لړۍ د توکو ترمنځ کامه وکاروئ.'
+    },
+    {
+      heading: 'Printed page 18 — Writing and a personal interview',
+      headingUrdu: 'صفحہ ۱۸ — لکھائی اور ذاتی انٹرویو', headingPashto: '۱۸ مخ — لیکنه او شخصي مرکه',
+      text: 'Copy the one-syllable words: sun, van, hat, jug, cup and log. Read the passage about Saad and his pet cat Tom; find five one-syllable words and write them in the boxes. Then interview a friend and fill in the form: Name, Age, Class, Father’s name, Mother’s name and Favourite toy.',
+      paras: ['Copy: sun, van, hat, jug, cup, log.', 'Find five one-syllable words in the passage: “I am Saad. I have a pet cat. Its name is Tom. It sits on a big mat. It likes to play with a red ball. It loves to drink milk.”', 'Interview a friend and record name, age, class, father’s name, mother’s name and favourite toy.'],
+      sourcePages: [18], urdu: 'sun، van، hat، jug، cup اور log نقل کریں۔ عبارت میں سے مثال کے طور پر cat، pet، Tom، red اور ball ایک ہجائی الفاظ لکھیں۔ انٹرویو کے جوابات دوست کی معلومات کے مطابق ہوں گے۔', pashto: 'sun، van، hat، jug، cup او log نقل کړئ. له متن څخه د بېلګې په توګه cat، pet، Tom، red او ball یو-هجايي کلمې ولیکئ. د مرکې ځوابونه د ملګري د معلوماتو له مخې دي.'
+    }
+  ];
+  ENGLISH_1_DATA[1].exercise = {
+    textbookMcqs: [],
+    comprehension: [
+      { question: 'Printed p. 10: What does the birthday banner say?', answer: 'HAPPY BIRTHDAY.' },
+      { question: 'Printed p. 10: How do the people feel?', answer: 'They look happy. Sharing gifts with siblings is a personal-response question.' },
+      { question: 'Printed p. 10: What shape is the cake, and how many bottles are on the table?', answer: 'The cake is round; there are three bottles.' },
+      { question: 'Printed p. 11: What does Saad want to be?', answer: 'He wants to be a teacher like his father.' },
+      { question: 'Printed p. 11: Make a list of Saad’s family members.', answer: 'Saad, his mother, his father, two brothers, one sister, his grandpa and his granny.' },
+      { question: 'Printed p. 12: What are the six initial letters in the picture-matching activity?', answer: 'a—apple, u—umbrella, v—van, j—jug, e—elephant and s—sun.' },
+      { question: 'Printed p. 12: Read the six word patterns.', answer: 'fan, cup, pin, box, net and cat.' },
+      { question: 'Printed p. 12: Complete Sara’s reply: “I am Sara. I am fine. ___!”', answer: 'Thank you!' },
+      { question: 'Printed p. 13: Where does Saad live? Who tells him bedtime stories? What does he like to play?', answer: 'He lives in a small village. His granny tells him bedtime stories. He likes to play football.' },
+      { question: 'Printed p. 13: Fill the fruit blanks using green, orange and like.', answer: 'This is an orange. Its leaves are green. I like it.' },
+      { question: 'Printed p. 13: Choose Saad’s age and number of family members.', answer: 'Six years old; eight family members.' },
+      { question: 'Printed p. 14: Give the textbook meanings of study, complete, yummy and siblings.', answer: 'Study: to learn by reading or attending school. Complete: to finish a task. Yummy: pleasing to taste. Siblings: brothers and sisters.' },
+      { question: 'Printed p. 14: Which number words from the provided choices appear in the lesson text?', answer: 'one, two and six.' },
+      { question: 'Printed p. 15: Complete the five spellings.', answer: 'shoe, story, sister, eat, train.' },
+      { question: 'Printed p. 15: Which sight words should be read?', answer: 'to, and, he, you, I, the.' },
+      { question: 'Printed p. 16: Choose the correct spelling in each row.', answer: 'play, clock, train, story, brother.' },
+      { question: 'Printed p. 16: Match the six naming words to the pictures.', answer: 'boy—boy picture; cow—cow picture; ball—ball picture; elephant—elephant picture; banana—banana picture; girl—girl picture.' },
+      { question: 'Printed p. 17: Fill the six pronoun blanks.', answer: '1 She, 2 You, 3 He, 4 We, 5 I, 6 It.' },
+      { question: 'Printed p. 17: Add punctuation to the printed sentences.', answer: '1. Rashid likes bananas. 2. Sara is in Grade 1. 3. I am going to market. 4. Are you going to Super Market? 5. Do you like potatoes? 6. My teacher is a kind, tall and thin lady. 7. Baba bought me candies, chocolates and jelly beans.' },
+      { question: 'Printed p. 18: Write five one-syllable words from the passage.', answer: 'One correct set is cat, pet, Tom, red and ball.' },
+      { question: 'Printed p. 18: Complete the friend interview form.', answer: 'Answers vary by friend; fill in their name, age, class, parents’ names and favourite toy.' }
+    ]
+  };
+  ENGLISH_1_DATA[1].englishSummary = 'Source-checked transcription and answers for printed pages 9–18. Later pages of Unit 2 are still awaiting verification.';
+  ENGLISH_1_DATA[1].urduSummary = 'مطبوعہ صفحات ۹ تا ۱۸ کی ماخذ سے جانچی گئی عبارت اور جوابات۔ یونٹ ۲ کے باقی صفحات کی جانچ جاری ہے۔';
+  ENGLISH_1_DATA[1].pashtoSummary = 'د ۹–۱۸ چاپ شوو مخونو له سرچینې سره کتل شوی متن او ځوابونه. د دوهم یونټ پاتې مخونه لا د کتنې په حال کې دي.';
+  ENGLISH_1_DATA[1].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+}
+
+// Source correction pass: Class 1 English Unit 3, printed pages 19–30.
+if (ENGLISH_1_DATA[2]) {
+  ENGLISH_1_DATA[2].sections = [
+    {
+      heading: 'Printed page 19 — Unit opening and learning outcomes', headingUrdu: 'صفحہ ۱۹ — یونٹ کا آغاز اور تعلیمی مقاصد', headingPashto: '۱۹ مخ — د یونټ پیل او موخې',
+      text: 'Unit 3: Cobbler, Cobbler ... The opening illustration shows a cobbler repairing a boy’s shoe.', paras: ['Unit 3: Cobbler, Cobbler ...', 'The opening illustration shows a cobbler repairing a boy’s shoe.'], sourcePages: [19],
+      urdu: 'یونٹ ۳: موچی، موچی۔۔۔ ابتدائی تصویر میں موچی ایک لڑکے کا جوتا ٹھیک کر رہا ہے۔', pashto: 'درېیم یونټ: موچي، موچي... په لومړي انځور کې موچي د هلک بوټ رغوي.'
+    },
+    {
+      heading: 'Printed page 20 — Getting Started: community helpers', headingUrdu: 'صفحہ ۲۰ — آغاز: معاشرے کے مددگار', headingPashto: '۲۰ مخ — پیل: د ټولنې مرستندویان',
+      text: 'Look at the pictures: a farmer working with a tractor, a doctor, a policeman and a teacher. Let’s Talk: Who helps you in your studies? What does a doctor do? Where do you see a policeman? Name any two professions.', paras: ['Who helps you in your studies?', 'What does a doctor do?', 'Where do you see a policeman?', 'Think and tell the names of any two professions.'], sourcePages: [20],
+      urdu: 'پڑھائی میں استاد مدد کرتا ہے۔ ڈاکٹر مریضوں کا علاج کرتا ہے۔ پولیس والا سڑکوں اور عوامی مقامات پر نظر آتا ہے۔ دو پیشے: استاد اور ڈاکٹر۔', pashto: 'ښوونکی په زده کړو کې مرسته کوي. ډاکټر د ناروغانو درملنه کوي. پولیسوال په سړکونو او عامه ځایونو کې لیدل کېږي. دوه مسلکونه: ښوونکی او ډاکټر.'
+    },
+    {
+      heading: 'Printed page 21 — Poem: Cobbler, Cobbler, Mend My Shoe', headingUrdu: 'صفحہ ۲۱ — نظم: موچی، میرا جوتا سی دو', headingPashto: '۲۱ مخ — نظم: موچي، زما بوټ وګنډه',
+      text: 'Pre-reading: Look at the picture and tell what the poem can be about. Have you ever seen a cobbler in your town?\n\nCobbler, Cobbler, mend my shoe.\nGet it done by half past two.\n\nHalf past two is much too late!\nGet it done by half past eight.\n\nStitch it up and stitch it down.\nAnd I’ll give you half a crown.\n\nWhile-reading: “I went to the cobbler to mend my ___.” Post-reading: What does a cobbler do? Did you like the poem?', paras: ['Cobbler, Cobbler, mend my shoe.', 'Get it done by half past two.', 'Half past two is much too late!', 'Get it done by half past eight.', 'Stitch it up and stitch it down.', 'And I’ll give you half a crown.', 'What does a cobbler do? Did you like the poem?'], sourcePages: [21],
+      urdu: 'موچی جوتے مرمت کرتا ہے۔ خالی جگہ: shoe (جوتا)۔ نظم پسند آنے یا نہ آنے کا جواب ذاتی رائے ہے۔', pashto: 'موچي بوټونه رغوي. تش ځای: shoe (بوټ). د نظم د خوښې ځواب شخصي نظر دی.'
+    },
+    {
+      heading: 'Printed page 22 — Consonant blends and polite dialogue', headingUrdu: 'صفحہ ۲۲ — حروف کے مرکب اور مؤدبانہ مکالمہ', headingPashto: '۲۲ مخ — د بې غږه تورو ګډ غږونه او مؤدبانه خبرې',
+      text: 'Read the consonant blends and words: cl—class, clap, clip; bl—black, blind, blue; dr—dry, drink, dream; br—brown, branch, broom. Fill the picture words with cl, bl, dr or br: __ead, __ock, __um, __ock.\n\nPractise the dialogue: Ayan: “Assalaamu Alaikum! / Hello! How are you?” Sana: “Wa Alaikum Assalaam! / Hi! I am fine. Thank you!” Ayan: “Could I please have your crayons?” Sana: “Sure. Here they are.” Ayan: “Thank you very much!” Sana: “You are welcome!”', paras: ['cl—class, clap, clip', 'bl—black, blind, blue', 'dr—dry, drink, dream', 'br—brown, branch, broom', 'Complete the picture words using cl, bl, dr or br.', 'Read and practise the Ayan and Sana dialogue about borrowing crayons.'], sourcePages: [22],
+      urdu: 'تصویری الفاظ: bread، clock، drum، block۔ مکالمے میں ایان سنا سے crayons مانگتا ہے؛ سنا دیتی ہے اور ایان شکریہ ادا کرتا ہے۔', pashto: 'د انځور کلمې: bread، clock، drum، block. په خبرو کې ایان له سنا crayons غواړي؛ سنا یې ورکوي او ایان مننه کوي.'
+    },
+    {
+      heading: 'Printed page 23 — Poem questions, word pairs and picture names', headingUrdu: 'صفحہ ۲۳ — نظم کے سوالات، لفظوں کی اقسام اور تصویری نام', headingPashto: '۲۳ مخ — د نظم پوښتنې، کلمې او انځورونه',
+      text: 'Answer: Why did the boy go to the cobbler? Find the rhyming pairs. How many times did the boy go to the cobbler? Read the naming/action-word pairs: cobbler/mend, park/play, duck/swim, book/read. Match the pictures to rabbit, girl, car and house.', paras: ['Why did the boy go to the cobbler?', 'Find and write the pairs of rhyming words in the poem.', 'How many times did the boy go to the cobbler?', 'Naming words: cobbler, park, duck, book. Action words: mend, play, swim, read.', 'Match the pictures to rabbit, girl, car and house.'], sourcePages: [23],
+      urdu: 'لڑکا جوتا ٹھیک کروانے گیا۔ ہم قافیہ جوڑے: shoe/two، late/eight، down/crown۔ نظم میں وہ دو وقت بتاتا ہے، اس لیے دو بار آنے کا مفہوم نکلتا ہے۔ تصویریں: خرگوش، لڑکی، گاڑی، گھر۔', pashto: 'هلک د بوټ د رغولو لپاره موچي ته ولاړ. قافیه لرونکي جوړې: shoe/two، late/eight، down/crown. د نظم له مخې دوه ځله راتګ ترې اټکل کېږي. انځورونه: سوی، نجلۍ، موټر، کور.'
+    },
+    {
+      heading: 'Printed page 24 — Action words, poem blanks and vocabulary', headingUrdu: 'صفحہ ۲۴ — فعل، نظم کے خالی مقامات اور الفاظ', headingPashto: '۲۴ مخ — کړنې، د نظم تش ځایونه او لغتونه',
+      text: 'Read the action words and match each to its picture: cook, drink, read, brush. Complete the poem with the word bank eight, down, crown, shoe, two. Read the meanings: cobbler—a person who repairs shoes; mend—to fix; stitch—to sew; crown—coin, money.', paras: ['Match cook, drink, read and brush to the four separate pictures.', 'Cobbler, cobbler, mend my ___.', 'Stitch it up and stitch it ___.', 'Half past ___ is much too late!', 'Get it done by half past ___.', 'And I’ll give you half a ___.', 'cobbler—a person who repairs shoes; mend—to fix; stitch—to sew; crown—coin, money.'], sourcePages: [24],
+      urdu: 'تصویری ترتیب: drink، read، cook، brush۔ خالی جگہیں: shoe، down، two، eight، crown۔ cobbler: جوتے مرمت کرنے والا؛ mend: ٹھیک کرنا؛ stitch: سینا؛ crown: سکہ/رقم۔', pashto: 'د انځورونو ترتیب: drink، read، cook، brush. تش ځایونه: shoe، down، two، eight، crown. cobbler: د بوټونو رغوونکی؛ mend: رغول؛ stitch: ګنډل؛ crown: سکه/پیسې.'
+    },
+    {
+      heading: 'Printed page 25 — Rhymes, sight words and spelling', headingUrdu: 'صفحہ ۲۵ — ہم قافیہ الفاظ، عام الفاظ اور املا', headingPashto: '۲۵ مخ — قافیې، sight words او املا',
+      text: 'Read the pictured rhyming pairs: shoe/two, pen/hen, down/crown. Match: cook—book, late—eight, grow—blow. Read the sight words: it, of, in, was, said, with. Fill the missing letters: c__bbler, __end, eig__t, st__tch, cro__n.', paras: ['Rhyming pairs: shoe/two, pen/hen, down/crown.', 'Match cook/book, late/eight, grow/blow.', 'Sight words: it, of, in, was, said, with.', 'Complete: cobbler, mend, eight, stitch, crown.'], sourcePages: [25],
+      urdu: 'جوڑے: shoe/two، pen/hen، down/crown؛ ملائیں: cook—book، late—eight، grow—blow۔ املا: cobbler، mend، eight، stitch، crown۔', pashto: 'جوړې: shoe/two، pen/hen، down/crown؛ وتړئ: cook—book، late—eight، grow—blow. املا: cobbler، mend، eight، stitch، crown.'
+    },
+    {
+      heading: 'Printed page 26 — Naming words, pronouns and capital letters', headingUrdu: 'صفحہ ۲۶ — اسم، ضمیر اور بڑے حروف', headingPashto: '۲۶ مخ — نوم‌کلمې، ضمیرونه او غټ توري',
+      text: 'Fill in naming words using the pictures: She is a ___. Sajid has a pet ___. Maha has two ___. Rearrange the words and circle the pronouns: “am I cobbler a”; “a teacher are you”; “cricket we play”; “a doctor he is”; “are standing they”. Rewrite with initial capital letters: it is very hot today. a cool breeze is blowing. uzma has beautiful eyes. the children like to play in the garden.', paras: ['She is a girl. Sajid has a pet cat. Maha has two pencils.', 'I am a cobbler. You are a teacher. We play cricket. He is a doctor. They are standing.', 'It is very hot today. A cool breeze is blowing. Uzma has beautiful eyes. The children like to play in the garden.'], sourcePages: [26],
+      urdu: 'خالی جگہیں: girl، cat، pencils۔ درست جملے: I am a cobbler؛ You are a teacher؛ We play cricket؛ He is a doctor؛ They are standing۔ جملے کے پہلے لفظ کا پہلا حرف بڑا لکھیں۔', pashto: 'تش ځایونه: girl، cat، pencils. سمې جملې: I am a cobbler؛ You are a teacher؛ We play cricket؛ He is a doctor؛ They are standing. د جملې لومړی توری غټ ولیکئ.'
+    },
+    {
+      heading: 'Printed page 27 — Copy sentences and complete professions', headingUrdu: 'صفحہ ۲۷ — جملے نقل کریں اور پیشے مکمل کریں', headingPashto: '۲۷ مخ — جملې نقل او مسلکونه بشپړ کړئ',
+      text: 'Trace and copy: “I am a boy/girl.” “I love my country.” “I am a student.” “I go to school every day.” Complete: A person who mends shoes is a ___. A person who teaches is a ___. A person who treats ill people is a ___. A person who works in a garden is a ___.', paras: ['I am a boy/girl.', 'I love my country.', 'I am a student.', 'I go to school every day.', 'Answers for the professions: cobbler, teacher, doctor, gardener.'], sourcePages: [27],
+      urdu: 'پیشے: جوتے مرمت کرنے والا cobbler، پڑھانے والا teacher، بیماروں کا علاج کرنے والا doctor، باغ میں کام کرنے والا gardener۔ پہلی چار سطریں نقل کریں۔', pashto: 'مسلکونه: د بوټونو رغوونکی cobbler، ښوونکی teacher، د ناروغانو ډاکټر doctor، په بڼ کې کارکوونکی gardener. لومړۍ څلور جملې نقل کړئ.'
+    },
+    {
+      heading: 'Printed page 28 — Review 1: blends, initial sounds and personal answers', headingUrdu: 'صفحہ ۲۸ — اعادہ ۱: مرکب حروف اور ابتدائی آوازیں', headingPashto: '۲۸ مخ — بیاکتنه ۱: ګډ غږونه او لومړني توري',
+      text: 'Pronounce the words and underline the consonant blends: brick, block, drop, blue, dream, class, brain, clock. Look at the three pictures and circle the initial sounds for book, moon and zebra. Answer personally: How many brothers and sisters do you have? What are three things you do in school? When do you get up in the morning?', paras: ['Underline the initial consonant blends: br, bl, dr, bl, dr, cl, br, cl.', 'Picture initials: book—b (not c), moon—m (not k), zebra—z (not s).', 'The three personal questions have answers that vary by student.'], sourcePages: [28],
+      urdu: 'مرکب آوازیں: br، bl، dr، bl، dr، cl، br، cl۔ تصویروں کے درست ابتدائی حروف: book میں b، moon میں m، zebra میں z۔ ذاتی سوالات کے جواب طالب علم کے مطابق ہیں۔', pashto: 'ګډ غږونه: br، bl، dr، bl، dr، cl، br، cl. د انځورونو سم لومړني توري: book کې b، moon کې m، zebra کې z. شخصي پوښتنې د زده کوونکي له مخې ځوابېږي.'
+    },
+    {
+      heading: 'Printed page 29 — Review 1: nouns, action words and vocabulary', headingUrdu: 'صفحہ ۲۹ — اعادہ ۱: اسم، فعل اور الفاظ', headingPashto: '۲۹ مخ — بیاکتنه ۱: نوم‌کلمې، کړنې او لغتونه',
+      text: 'Underline naming words and circle action words: The boy goes to school. I love my country. Granny tells us stories. I play with my brothers. The rabbit jumps. Give meanings for cobbler, complete and stitch. Name the six pictured objects: cat, girl, pencil, shoes, boy and parrot.', paras: ['The boy goes to school. — nouns: boy, school; action: goes.', 'I love my country. — noun: country; action: love.', 'Granny tells us stories. — nouns: Granny, stories; action: tells.', 'I play with my brothers. — noun: brothers; action: play.', 'The rabbit jumps. — noun: rabbit; action: jumps.', 'Pictures: cat, girl, pencil, shoes, boy, parrot.'], sourcePages: [29],
+      urdu: 'cobbler: جوتے مرمت کرنے والا؛ complete: مکمل کرنا؛ stitch: سینا۔ تصاویر کے نام: cat، girl، pencil، shoes، boy، parrot۔ جملوں میں اوپر دیے گئے اسم اور افعال نشان زد ہیں۔', pashto: 'cobbler: د بوټونو رغوونکی؛ complete: بشپړول؛ stitch: ګنډل. د انځورونو نومونه: cat، girl، pencil، shoes، boy، parrot. په جملو کې پورته نومونه او کړنې نښه شوي.'
+    },
+    {
+      heading: 'Printed page 30 — Review 1: pronouns and writing', headingUrdu: 'صفحہ ۳۰ — اعادہ ۱: ضمیر اور تحریر', headingPashto: '۳۰ مخ — بیاکتنه ۱: ضمیرونه او لیکنه',
+      text: 'Choose the correct pronouns: Hira and Asma are playing. ___ are good friends (He/They). Vicky is a boy. ___ is a good student (He/She). Hi, Rita! ___ look happy (They/You). Complete the writing prompts about what you would like to be and do when you grow up. Write three one-syllable words.', paras: ['They are good friends.', 'He is a good student.', 'Hi, Rita! You look happy.', 'Open response: I would like to be ___. I will ___. ___ help ___.', 'Write any three one-syllable words.'], sourcePages: [30],
+      urdu: 'ضمیر: They، He، You۔ بڑے ہو کر کیا بننا/کرنا ہے اور تین ایک ہجائی الفاظ کے جواب طالب علم اپنی پسند سے دے۔', pashto: 'ضمیرونه: They، He، You. د لویېدو وروسته د مسلک/کار او درې یو-هجايي کلمو ځوابونه د زده کوونکي خپلې خوښې دي.'
+    }
+  ];
+  ENGLISH_1_DATA[2].exercise = {
+    textbookMcqs: [],
+    comprehension: [
+      { question: 'Printed p. 20: Answer the four Let’s Talk questions.', answer: 'A teacher helps with studies. A doctor treats sick people. You see a policeman on roads/in public places. Examples of professions: teacher and doctor.' },
+      { question: 'Printed p. 21: What does a cobbler do? Complete the line “I went to the cobbler to mend my ___.”', answer: 'A cobbler repairs shoes. The missing word is shoe.' },
+      { question: 'Printed p. 22: Complete the four picture words with cl, bl, dr or br.', answer: 'bread, clock, drum, block.' },
+      { question: 'Printed p. 22: What does Ayan ask Sana for?', answer: 'He politely asks to borrow her crayons.' },
+      { question: 'Printed p. 23: Why did the boy go to the cobbler? Give the rhyming pairs.', answer: 'He went to have his shoe mended. The pairs are shoe/two, late/eight and down/crown.' },
+      { question: 'Printed p. 23: How many times did the boy go to the cobbler?', answer: 'The poem suggests two visits: one for half past two and another after that time was missed. This answer is inferred from the poem.' },
+      { question: 'Printed p. 23: Match the pictured names.', answer: 'rabbit—rabbit, girl—girl, car—car, house—house.' },
+      { question: 'Printed p. 24: Match the action words to the four pictures from top-left to bottom-right.', answer: 'drink, read, cook, brush.' },
+      { question: 'Printed p. 24: Complete the poem using the word bank.', answer: 'shoe, down, two, eight, crown.' },
+      { question: 'Printed p. 24: Give the meanings of cobbler, mend, stitch and crown.', answer: 'Cobbler: a person who repairs shoes. Mend: to fix. Stitch: to sew. Crown: coin, money.' },
+      { question: 'Printed p. 25: Match the rhyming words.', answer: 'cook—book, late—eight, grow—blow.' },
+      { question: 'Printed p. 25: Complete the spellings.', answer: 'cobbler, mend, eight, stitch, crown.' },
+      { question: 'Printed p. 26: Fill the naming-word blanks.', answer: 'girl, cat, pencils.' },
+      { question: 'Printed p. 26: Rearrange the words and identify the pronouns.', answer: 'I am a cobbler (I); You are a teacher (You); We play cricket (We); He is a doctor (He); They are standing (They).' },
+      { question: 'Printed p. 26: Rewrite the sentences with capital letters.', answer: 'It is very hot today. A cool breeze is blowing. Uzma has beautiful eyes. The children like to play in the garden.' },
+      { question: 'Printed p. 27: Complete the four profession names.', answer: 'cobbler, teacher, doctor, gardener.' },
+      { question: 'Printed p. 28: Underline the consonant blends and circle picture initials.', answer: 'Blends: br, bl, dr, bl, dr, cl, br, cl. Picture initials: b, m and z.' },
+      { question: 'Printed p. 28: Answer the three questions about your family, school day and morning routine.', answer: 'Answers vary by student. Example: I have one brother and one sister. I read, write and play at school. I get up at 7 o’clock.' },
+      { question: 'Printed p. 29: Identify nouns and action words in the five sentences.', answer: 'The boy goes to school: nouns boy/school, action goes. I love my country: noun country, action love. Granny tells us stories: nouns Granny/stories, action tells. I play with my brothers: noun brothers, action play. The rabbit jumps: noun rabbit, action jumps.' },
+      { question: 'Printed p. 29: Give the meanings of cobbler, complete and stitch, and name the pictured objects.', answer: 'Cobbler: a person who repairs shoes. Complete: finish. Stitch: sew. Pictures: cat, girl, pencil, shoes, boy, parrot.' },
+      { question: 'Printed p. 30: Choose the correct pronouns.', answer: 'They, He, You.' },
+      { question: 'Printed p. 30: Complete the growing-up writing prompts and give three one-syllable words.', answer: 'Answers vary. Example: I would like to be a doctor. I will help people. I will help my community. One-syllable words: cat, sun, book.' }
+    ]
+  };
+  ENGLISH_1_DATA[2].englishSummary = 'Source-checked transcription and answers for printed pages 19–30. Later pages of Unit 3 are still awaiting verification.';
+  ENGLISH_1_DATA[2].urduSummary = 'مطبوعہ صفحات ۱۹ تا ۳۰ کی ماخذ سے جانچی گئی عبارت اور جوابات۔ یونٹ ۳ کے باقی صفحات کی جانچ جاری ہے۔';
+  ENGLISH_1_DATA[2].pashtoSummary = 'د ۱۹–۳۰ چاپ شوو مخونو له سرچینې سره کتل شوی متن او ځوابونه. د درېیم یونټ پاتې مخونه لا د کتنې په حال کې دي.';
+  ENGLISH_1_DATA[2].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+}
+
+// Source correction pass: Class 1 English Unit 4, printed pages 31–41.
+if (ENGLISH_1_DATA[3]) {
+  ENGLISH_1_DATA[3].sections = [
+    {
+      heading: 'Printed page 31 — Unit opening: Let’s have Fun!', headingUrdu: 'صفحہ ۳۱ — یونٹ کا آغاز: آئیے مزہ کریں', headingPashto: '۳۱ مخ — یونټ پیل: راځئ ساتېري وکړو',
+      text: 'Unit 4: Let’s have Fun! The opening illustration shows a child with a pencil and three pencil-shaving flower pictures.', paras: ['Unit 4: Let’s have Fun!', 'The opening illustration shows a child with a pencil and three pencil-shaving flower pictures.'], sourcePages: [31],
+      urdu: 'یونٹ ۴: آئیے مزہ کریں! ابتدائی تصویر میں ایک بچہ پنسل اور پنسل کے برادے سے بنے پھول دکھا رہا ہے۔', pashto: 'څلورم یونټ: راځئ ساتېري وکړو! په انځور کې ماشوم پنسل او د پنسل د تراشو ګلان ښيي.'
+    },
+    {
+      heading: 'Printed page 32 — Getting Started: favourite activities', headingUrdu: 'صفحہ ۳۲ — آغاز: پسندیدہ سرگرمیاں', headingPashto: '۳۲ مخ — پیل: خوښې چارې',
+      text: 'We all do little things at home, school or in the classroom. We have some chores to do. Look at the pictures. All kids like doing their favourite activities. They enjoy these activities. The four pictures show reading, playing cricket, cycling and painting. Let’s Talk: What is your favourite activity? Do you enjoy working with others? Are you fond of reading? What kind of books do you like to read?', paras: ['The pictures show a child reading, children playing cricket, a child cycling and a child painting.', 'What is your favourite activity?', 'Do you enjoy working with others?', 'Are you fond of reading? What kind of books do you like to read?'], sourcePages: [32],
+      urdu: 'تصویروں میں پڑھنا، کرکٹ کھیلنا، سائیکل چلانا اور تصویر بنانا دکھایا گیا ہے۔ گفتگو کے جوابات ہر طالب علم کی پسند کے مطابق ہیں۔', pashto: 'په انځورونو کې لوستل، کرکټ، بایسکل چلول او انځور جوړول ښودل شوي. د خبرو ځوابونه د زده کوونکي د خوښې له مخې دي.'
+    },
+    {
+      heading: 'Printed page 33 — Reading: making pencil-shaving flowers', headingUrdu: 'صفحہ ۳۳ — مطالعہ: پنسل کے برادے سے پھول', headingPashto: '۳۳ مخ — لوستل: د پنسل له تراشو ګلان جوړول',
+      text: 'Huma is a good girl. She likes helping others. Today, she is helping her sister Hina. They are making flowers with pencil shavings. Things we need: lead pencil, sharpener, colour pencils, glue and paper. Method: 1. Sharpen the colour pencils. 2. Collect the pencil shavings. 3. Take a piece of paper and draw small flowers on it with a lead pencil. 4. Paste the pencil shavings on the flowers with glue. While-reading: What can be the next step after step 2?', paras: ['Huma helps her sister Hina make flowers using pencil shavings.', 'Materials: lead pencil, sharpener, colour pencils, glue, paper.', '1. Sharpen the colour pencils. 2. Collect the pencil shavings. 3. Draw small flowers on paper with a lead pencil. 4. Paste the pencil shavings onto the flowers with glue.', 'After step 2, draw small flowers on paper.'], sourcePages: [33],
+      urdu: 'ہما اپنی بہن حنا کی مدد کر رہی ہے۔ پہلے رنگین پنسلیں تیز کریں، برادہ جمع کریں، کاغذ پر چھوٹے پھول بنائیں، پھر گوند سے برادہ پھولوں پر چپکائیں۔', pashto: 'هما له خپلې خور حنا سره مرسته کوي. لومړی رنګین پنسلونه تېره کړئ، تراشې راټولې کړئ، پر کاغذ واړه ګلان رسم کړئ، بیا یې په سریښ ور ونښلوئ.'
+    },
+    {
+      heading: 'Printed page 34 — Flower artwork and consonant digraphs', headingUrdu: 'صفحہ ۳۴ — پھولوں کا فن پارہ اور مرکب حروف', headingPashto: '۳۴ مخ — د ګلونو انځور او ګډ توري',
+      text: 'The page shows the finished pencil-shaving flower artwork. Post-reading: Is it good to help others? Why? Would you like to make your own artwork? What things will you use? Read the initial-position consonant digraphs: ch—child, check, chart; ph—phone, photo, phonics; th—think, they, thumb.', paras: ['The pictured flowers are made from pencil shavings.', 'ch: child, check, chart.', 'ph: phone, photo, phonics.', 'th: think, they, thumb.', 'Post-reading questions invite personal answers.'], sourcePages: [34],
+      urdu: 'دوسروں کی مدد کرنا اچھا ہے کیونکہ اس سے کام میں مدد ملتی ہے۔ ذاتی فن پارے کے مواد کا جواب مختلف ہو سکتا ہے۔ ch، ph اور th کے دیے ہوئے الفاظ پڑھیں۔', pashto: 'له نورو سره مرسته ښه ده ځکه کار اسانه کوي. د خپل هنر د توکو ځواب بدلېدای شي. د ch، ph او th ورکړل شوې کلمې ولولئ.'
+    },
+    {
+      heading: 'Printed page 35 — Polite commands and comprehension', headingUrdu: 'صفحہ ۳۵ — مؤدبانہ ہدایات اور فہمِ عبارت', headingPashto: '۳۵ مخ — مؤدبانه غوښتنې او د لوست درک',
+      text: 'Practise the dialogues: “Fahad, please go and change your clothes.” “Yes! Mother.” “Meesha, kindly go and wash your hands with soap.” “Yes! Father.” Group work: discuss ways to keep ourselves clean. Answer: Who did Huma help? What did they do before collecting pencil shavings? Name any two materials needed.', paras: ['Fahad’s mother asks him to change his clothes; he agrees.', 'Meesha’s father asks her to wash her hands with soap; she agrees.', 'Huma helped her sister Hina.', 'They sharpened the colour pencils before collecting the shavings.', 'Two materials: colour pencils and paper (other correct choices: pencil, sharpener, glue).'], sourcePages: [35],
+      urdu: 'ہما نے حنا کی مدد کی۔ برادہ جمع کرنے سے پہلے رنگین پنسلیں تیز کیں۔ درکار چیزوں میں سے دو: رنگین پنسلیں اور کاغذ۔', pashto: 'هما له حنا سره مرسته وکړه. د تراشو تر راټولولو مخکې یې رنګین پنسلونه تېره کړل. دوه توکي: رنګین پنسلونه او کاغذ.'
+    },
+    {
+      heading: 'Printed page 36 — Consonant clusters and lesson questions', headingUrdu: 'صفحہ ۳۶ — حروف کے جھرمٹ اور سبق کے سوالات', headingPashto: '۳۶ مخ — د تورو ډلې او د لوست پوښتنې',
+      text: 'Read the clusters: bl—blend, blank; cl—clean, clap; br—brain, broom; dr—dry, drink. Underline the clusters in blink, draw, climb, close, bring, dress, brown, black, blew. Choose: We use scissors for cutting __ (wood/fruits/pencil/paper). She is helping her __ (sister/brother/friend/cousin). They need __ things to complete their artwork (two/five/seven/ten). Hina draws __ on paper (leaves/lines/circles/flowers).', paras: ['Clusters: bl, cl, br, dr and the listed example words.', 'Words to mark: blink (bl), draw (dr), climb (cl), close (cl), bring (br), dress (dr), brown (br), black (bl), blew (bl).', 'Multiple choice answers: paper, sister, five, flowers.'], sourcePages: [36],
+      urdu: 'درست جوابات: کاغذ کاٹنے کے لیے scissors؛ ہما اپنی sister کی مدد کر رہی ہے؛ انہیں five چیزیں درکار ہیں؛ حنا کاغذ پر flowers بناتی ہے۔', pashto: 'سم ځوابونه: scissors د paper پرې کولو لپاره؛ هغې له خپلې sister سره مرسته کوي؛ دوی پنځه توکي غواړي؛ حنا پر کاغذ flowers رسموي.'
+    },
+    {
+      heading: 'Printed page 37 — Vocabulary, courtesy dialogue and sight words', headingUrdu: 'صفحہ ۳۷ — الفاظ، مؤدبانہ مکالمہ اور عام الفاظ', headingPashto: '۳۷ مخ — لغت، مؤدبانه خبرې او sight words',
+      text: 'Read the meanings: collect—to gather something; draw—to make pictures; paste—to stick something; sharpen—to make something sharper/to become sharper. Practise the dialogue: Alex: “Good morning! How are you?” David: “Good morning, Alex. I am fine. Thank you.” Alex: “Do you have extra colour pencils?” David: “Yes. Here they are. We can share these.” Alex: “Thank you very much.” David: “You are welcome.” Read the sight words: had, but, they, that, for, on, she, his.', paras: ['collect—to gather something; draw—to make pictures; paste—to stick something; sharpen—to make something sharper.', 'Read and practise the Alex and David dialogue about sharing colour pencils.', 'Sight words: had, but, they, that, for, on, she, his.'], sourcePages: [37],
+      urdu: 'collect: جمع کرنا؛ draw: تصویر بنانا؛ paste: چپکانا؛ sharpen: نوک تیز کرنا۔ الیکس اور ڈیوڈ رنگین پنسلیں بانٹتے ہیں۔ sight words: had، but، they، that، for، on، she، his۔', pashto: 'collect: راټولول؛ draw: انځور جوړول؛ paste: نښلول؛ sharpen: تېره کول. الیکس او ډیوډ رنګین پنسلونه شریکوي. sight words: had، but، they، that، for، on، she، his.'
+    },
+    {
+      heading: 'Printed pages 38–39 — Spelling, plurals, this/that and a/an', headingUrdu: 'صفحات ۳۸–۳۹ — املا، جمع، this/that اور a/an', headingPashto: '۳۸–۳۹ مخونه — املا، جمع، this/that او a/an',
+      text: 'Circle the correct spellings: respect, collect, flower, lead, glue. Read singular/plural pairs: pencil/pencils, chair/chairs, flower/flowers, hat/hats. Write plurals: cup, pencil, colour, boat, tree, paper. Choose this or that for the pictured orange, table, clock and car, using this for a nearby thing and that for a farther thing. Read a pencil, an egg, a book, an apple, a girl, an axe. Fill: ___ orange, ___ lamp, ___ umbrella, ___ horse, ___ ant, ___ cat.', paras: ['Correct spellings: respect, collect, flower, lead, glue.', 'Plural forms: cups, pencils, colours, boats, trees, papers.', 'Pictured choices: This is an orange. That is a table. This is a clock. That is a car.', 'a pencil, an egg, a book, an apple, a girl, an axe.', 'an orange, a lamp, an umbrella, a horse, an ant, a cat.'], sourcePages: [38, 39],
+      urdu: 'درست املا: respect، collect، flower، lead، glue۔ جمع: cups، pencils، colours، boats، trees، papers۔ a/an کے جوابات: an orange، a lamp، an umbrella، a horse، an ant، a cat۔', pashto: 'سمه املا: respect، collect، flower، lead، glue. جمع: cups، pencils، colours، boats، trees، papers. د a/an ځوابونه: an orange، a lamp، an umbrella، a horse، an ant، a cat.'
+    },
+    {
+      heading: 'Printed pages 40–41 — Picture writing and ordered steps', headingUrdu: 'صفحات ۴۰–۴۱ — تصویری تحریر اور ترتیب وار مراحل', headingPashto: '۴۰–۴۱ مخونه — انځوریزه لیکنه او پرله‌پسې پړاوونه',
+      text: 'Write one naming word and one action word for each of the two pictures. In the park picture, write any three action words. Write five sentences about your daily routine. Put the lemonade steps in order: take a glass of room-temperature water; squeeze a lemon into it; add one tablespoon of sugar and a pinch of salt; add three ice cubes and mix well. The next task asks you to write steps for a sequence using the pictured glass, ingredients and finished lemonade.', paras: ['Picture answers may vary; name an object and an action shown in each picture.', 'Park action examples: cycling, playing, eating.', 'Daily routine: answers vary by student.', 'Lemonade order: water, squeeze lemon, add sugar and salt, add ice and mix.'], sourcePages: [40, 41],
+      urdu: 'لیموں پانی کی ترتیب: کمرے کے درجہ حرارت کا پانی لیں، لیموں نچوڑیں، چینی اور چٹکی بھر نمک ڈالیں، تین برف کے ٹکڑے ڈال کر ملائیں۔ روزمرہ معمول اور تصویری افعال کے جواب مختلف ہو سکتے ہیں۔', pashto: 'د لیمو اوبو ترتیب: د خونې د حرارت اوبه واخلئ، لیمو پکې وځبېښئ، بوره او لږ مالګه ورواچوئ، درې یخ ټوټې ورزیاتې او ښه یې ګډ کړئ. د ورځني کار او انځورونو ځوابونه بدلېدای شي.'
+    }
+  ];
+  ENGLISH_1_DATA[3].exercise = {
+    textbookMcqs: [],
+    comprehension: [
+      { question: 'Printed p. 32: Name the four activities in the pictures.', answer: 'Reading, playing cricket, cycling and painting.' },
+      { question: 'Printed p. 32: Answer the favourite-activity questions.', answer: 'Answers vary by student.' },
+      { question: 'Printed p. 33: Who is Huma helping, and what are they making?', answer: 'She is helping her sister Hina. They are making flowers from pencil shavings.' },
+      { question: 'Printed p. 33: List the materials needed.', answer: 'Lead pencil, sharpener, colour pencils, glue and paper.' },
+      { question: 'Printed p. 33: What is the next step after collecting pencil shavings?', answer: 'Draw small flowers on a piece of paper with a lead pencil.' },
+      { question: 'Printed p. 33: Put the four method steps in order.', answer: '1 Sharpen colour pencils. 2 Collect the shavings. 3 Draw small flowers on paper. 4 Paste the shavings on the flowers with glue.' },
+      { question: 'Printed p. 34: Read the digraph examples.', answer: 'ch: child, check, chart; ph: phone, photo, phonics; th: think, they, thumb.' },
+      { question: 'Printed p. 34: Answer the post-reading questions.', answer: 'Helping others is good because it supports them. The artwork materials are a personal choice; the textbook method uses pencil shavings, paper, colour pencils and glue.' },
+      { question: 'Printed p. 35: Who did Huma help? What did they do before collecting shavings? Name two materials.', answer: 'She helped her sister Hina. They sharpened the colour pencils first. Two materials: colour pencils and paper.' },
+      { question: 'Printed p. 36: Choose the four correct words for the blanks.', answer: 'paper, sister, five, flowers.' },
+      { question: 'Printed p. 36: Underline the consonant clusters in the nine words.', answer: 'blink—bl; draw—dr; climb—cl; close—cl; bring—br; dress—dr; brown—br; black—bl; blew—bl.' },
+      { question: 'Printed p. 37: Give the meanings of collect, draw, paste and sharpen.', answer: 'Collect—to gather something. Draw—to make pictures. Paste—to stick something. Sharpen—to make something sharper.' },
+      { question: 'Printed p. 37: What do Alex and David share?', answer: 'They share extra colour pencils.' },
+      { question: 'Printed p. 38: Choose the correct spellings and write the six plurals.', answer: 'respect, collect, flower, lead, glue; cups, pencils, colours, boats, trees, papers.' },
+      { question: 'Printed p. 39: Choose this or that for the four pictured objects.', answer: 'This is an orange. That is a table. This is a clock. That is a car.' },
+      { question: 'Printed p. 39: Fill in a or an.', answer: 'an orange, a lamp, an umbrella, a horse, an ant, a cat.' },
+      { question: 'Printed p. 40: Give three action words from the park picture and write five daily-routine sentences.', answer: 'Actions: cycling, playing, eating. Example: I wake up. I wash my face. I eat breakfast. I go to school. I read a book.' },
+      { question: 'Printed p. 41: Put the lemonade steps in order.', answer: '1 Take room-temperature water. 2 Squeeze a lemon into it. 3 Add sugar and a pinch of salt. 4 Add three ice cubes and mix well.' },
+      { question: 'Printed p. 41: Write the second pictured sequence in order.', answer: 'Suggested sequence from the pictures: take a glass of water, squeeze in lemon, add sugar and salt, then add ice and mix.' }
+    ]
+  };
+  ENGLISH_1_DATA[3].englishSummary = 'Source-checked transcription and answers for printed pages 31–41. Later pages of Unit 4 are still awaiting verification.';
+  ENGLISH_1_DATA[3].urduSummary = 'مطبوعہ صفحات ۳۱ تا ۴۱ کی ماخذ سے جانچی گئی عبارت اور جوابات۔ یونٹ ۴ کے باقی صفحات کی جانچ جاری ہے۔';
+  ENGLISH_1_DATA[3].pashtoSummary = 'د ۳۱–۴۱ چاپ شوو مخونو له سرچینې سره کتل شوی متن او ځوابونه. د څلورم یونټ پاتې مخونه لا د کتنې په حال کې دي.';
+  ENGLISH_1_DATA[3].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+}
+
+// Source correction pass: Class 1 English Unit 5, printed pages 42–52.
+if (ENGLISH_1_DATA[4]) {
+  ENGLISH_1_DATA[4].sections = [
+    {
+      heading: 'Printed page 42 — Unit opening: Sharing is Caring', headingUrdu: 'صفحہ ۴۲ — یونٹ کا آغاز: بانٹنے میں بھلائی ہے', headingPashto: '۴۲ مخ — یونټ پیل: شریکول پاملرنه ده',
+      text: 'Unit 5: Sharing is Caring. The illustration shows two children sharing toy vehicles.', paras: ['Unit 5: Sharing is Caring.', 'The illustration shows two children sharing toy vehicles.'], sourcePages: [42],
+      urdu: 'یونٹ ۵: بانٹنے میں بھلائی ہے۔ تصویر میں دو بچے کھلونے بانٹ رہے ہیں۔', pashto: 'پنځم یونټ: شریکول پاملرنه ده. په انځور کې دوه ماشومان د لوبو شیان شریکوي.'
+    },
+    {
+      heading: 'Printed page 43 — Getting Started: caring for others', headingUrdu: 'صفحہ ۴۳ — آغاز: دوسروں کا خیال', headingPashto: '۴۳ مخ — پیل: د نورو پاملرنه',
+      text: 'The picture shows people helping a person in need. The page says people take care of each other, help one another and share their things; be kind and forgive each other’s mistakes. Let’s Talk: How do you care for family and friends? Would you help someone in need? Have you given a favourite toy to a friend?', paras: ['The illustration shows people helping a person who has fallen.', 'People should care for, help and share with one another, be kind and forgive mistakes.', 'Personal responses: How do you care for family and friends? Would you help someone in need? Have you shared a favourite toy?'], sourcePages: [43],
+      urdu: 'تصویر میں لوگ ایک ضرورت مند کی مدد کر رہے ہیں۔ خاندان اور دوستوں کا خیال رکھنے اور چیزیں بانٹنے کے جوابات طالب علم کی ذاتی مثالوں پر مبنی ہیں۔', pashto: 'په انځور کې خلک له اړمن کس سره مرسته کوي. له کورنۍ او ملګرو سره د پاملرنې او شریکولو ځوابونه د زده کوونکي شخصي مثالونه دي.'
+    },
+    {
+      heading: 'Printed page 44 — Poem: Let Others Share', headingUrdu: 'صفحہ ۴۴ — نظم: دوسروں کو بھی بانٹنے دو', headingPashto: '۴۴ مخ — نظم: نورو ته هم د شریکولو اجازه ورکړئ',
+      text: 'Pre-reading: Look at the picture and tell what the poem is about. Do you share things with your siblings?\n\nLet others share your toys, my son,\nDo not insist on all the fun.\nFor if you don’t it’s certain that\nYou’ll grow to be an adult brat.\n\nEdward Anthony\n\nWhile-reading: Do you share your things with your classmates? Post-reading: How many rhyming words are in the poem? Have you ever shared your lunch box with your classmates?', paras: ['Let others share your toys, my son,', 'Do not insist on all the fun.', 'For if you don’t it’s certain that', 'You’ll grow to be an adult brat.', '— Edward Anthony'], sourcePages: [44],
+      urdu: 'نظم بچوں کو کھلونے اور خوشی دوسروں سے بانٹنے کی تلقین کرتی ہے۔ قافیہ والے الفاظ کے دو جوڑے ہیں: son/fun اور that/brat (کل چار ہم قافیہ الفاظ)۔', pashto: 'نظم ماشومان هڅوي چې لوبې او خوښي له نورو سره شریکه کړي. دوه قافیه لرونکې جوړې دي: son/fun او that/brat (ټولې څلور قافیه لرونکې کلمې).'
+    },
+    {
+      heading: 'Printed page 45 — Initial sounds and a snack dialogue', headingUrdu: 'صفحہ ۴۵ — ابتدائی آوازیں اور ناشتے کا مکالمہ', headingPashto: '۴۵ مخ — لومړني غږونه او د خوراک خبرې',
+      text: 'Colour yellow the words from the poem: brat, found, adult, sky, toy. Read the word families: run, gun, fun; hat, cat, mat; ten, hen, pen. Practise: “Father, please buy me some snacks?” “Yes, sure!” “Thank you, father!” “You are welcome.” Then tell your parents what you need using polite expressions.', paras: ['Words from the poem among the choices: brat, adult, toy.', 'Word families: run/gun/fun; hat/cat/mat; ten/hen/pen.', 'Father, please buy me some snacks? Yes, sure! Thank you, father! You are welcome.', 'The parent role-play is an open speaking activity.'], sourcePages: [45],
+      urdu: 'نظم میں دیے گئے choices میں brat، adult اور toy شامل ہیں۔ الفاظ کے خاندان: run/gun/fun، hat/cat/mat، ten/hen/pen۔ مکالمے میں بچہ والد سے ناشتے مانگتا اور شکریہ ادا کرتا ہے۔', pashto: 'په انتخابونو کې brat، adult او toy د نظم کلمې دي. د کلمو کورنۍ: run/gun/fun، hat/cat/mat، ten/hen/pen. ماشوم له پلار څخه خوراک غواړي او مننه کوي.'
+    },
+    {
+      heading: 'Printed page 46 — Sharing comprehension and digraphs', headingUrdu: 'صفحہ ۴۶ — نظم کی فہم اور مرکب حروف', headingPashto: '۴۶ مخ — د نظم درک او ګډ توري',
+      text: 'Answer: Is sharing a good habit? Would you share your things with friends? What do you like to share? Read digraphs in initial and final positions: ch—chips, chick / much, each; sh—ship, shape / fish, wish; ph—photo, phase / graph, digraph; th—thick, thank / bath, math. Choose: The poem is written by Edward Anthony, Ryan Gibbs, William Wordsworth or Robert Frost.', paras: ['The poem is by Edward Anthony.', 'ch initial: chips, chick; final: much, each.', 'sh initial: ship, shape; final: fish, wish.', 'ph initial: photo, phase; final: graph, digraph.', 'th initial: thick, thank; final: bath, math.', 'Sharing questions ask for personal responses.'], sourcePages: [46],
+      urdu: 'نظم کے شاعر Edward Anthony ہیں۔ ch، sh، ph اور th کے ابتدائی اور آخری مقام کے الفاظ اوپر درج ہیں۔ بانٹنے کے سوال ذاتی جواب چاہتے ہیں۔', pashto: 'د نظم شاعر Edward Anthony دی. د ch، sh، ph او th لومړني او وروستي ځای کلمې پورته لیکل شوې. د شریکولو پوښتنې شخصي ځوابونه غواړي.'
+    },
+    {
+      heading: 'Printed page 47 — Rhymes, vocabulary and colours', headingUrdu: 'صفحہ ۴۷ — قافیہ، الفاظ کے معنی اور رنگ', headingPashto: '۴۷ مخ — قافیې، لغتونه او رنګونه',
+      text: 'Choose the rhyming word for fun: fur, but, fed or son. Complete: “You’ll grow to be an/a ___ brat”: older, elder, young or adult. Read meanings: insist—to demand something happen; certain—having no doubts; brat—a child who behaves badly. Read rhyming pairs: son/fun, rain/train, that/brat. Find rhymes: well—smell; lack—rack; float—coat. Name the colours red, green, blue, yellow and brown.', paras: ['The correct rhyme for fun is son.', 'The missing word is adult.', 'insist—to demand something happen; certain—having no doubts; brat—a child who behaves badly.', 'Rhyming pairs: son/fun, rain/train, that/brat.', 'Row rhymes: well/smell, lack/rack, float/coat.', 'Colours: red, green, blue, yellow, brown.'], sourcePages: [47],
+      urdu: 'fun کا قافیہ son ہے؛ “adult brat”۔ insist: اصرار کرنا؛ certain: یقین ہونا؛ brat: بدتمیز بچہ۔ رنگ: red، green، blue، yellow، brown۔', pashto: 'د fun قافیه son ده؛ “adult brat”. insist: ټینګار کول؛ certain: ډاډه؛ brat: بدچلنده ماشوم. رنګونه: red، green، blue، yellow، brown.'
+    },
+    {
+      heading: 'Printed page 48 — Shapes, flower colour key and sight words', headingUrdu: 'صفحہ ۴۸ — اشکال، پھول کے رنگ اور عام الفاظ', headingPashto: '۴۸ مخ — شکلونه، د ګل رنګونه او sight words',
+      text: 'Name the shapes: square, circle, triangle, rectangle, oval. Colour the flower parts using the key: rectangle brown, triangle green, circle yellow, oval red. Read the sight words and fit them into the pictured shape boxes: is, up, all, look, her, there, be, some.', paras: ['Shapes, left to right: square, circle, triangle, rectangle, oval.', 'Flower colour key: rectangle—brown; triangles—green; circle—yellow; oval petals—red.', 'Sight-word box activity: is, up, all, look, her, there, be, some.'], sourcePages: [48],
+      urdu: 'شکلیں: مربع، دائرہ، مثلث، مستطیل، بیضوی۔ پھول میں مستطیل بھورا، مثلث سبز، دائرہ پیلا اور بیضوی پتیاں سرخ رنگیں۔', pashto: 'شکلونه: مربع، دایره، مثلث، مستطیل، بیضوي. په ګل کې مستطیل نسواري، مثلثونه شنه، دایره ژېړه او بیضوي پاڼې سرې رنګ کړئ.'
+    },
+    {
+      heading: 'Printed page 49 — Missing letters and masculine/feminine nouns', headingUrdu: 'صفحہ ۴۹ — خالی حروف اور مذکر/مونث اسم', headingPashto: '۴۹ مخ — ورک توري او مذکر/مونث نومونه',
+      text: 'Complete: in__ist, __ertain, ad__lt, br__t, gro__. Read masculine/feminine pairs: boy/girl, bull/cow, man/woman, uncle/aunt. Match: father, uncle, lion, king with lioness, queen, mother, aunt.', paras: ['Complete the words: insist, certain, adult, brat, grow.', 'Pairs: boy/girl, bull/cow, man/woman, uncle/aunt.', 'Match father—mother; uncle—aunt; lion—lioness; king—queen.'], sourcePages: [49],
+      urdu: 'الفاظ: insist، certain، adult، brat، grow۔ جوڑے: boy/girl، bull/cow، man/woman، uncle/aunt۔ ملائیں: father—mother، uncle—aunt، lion—lioness، king—queen۔', pashto: 'کلمې: insist، certain، adult، brat، grow. جوړې: boy/girl، bull/cow، man/woman، uncle/aunt. وتړئ: father—mother، uncle—aunt، lion—lioness، king—queen.'
+    },
+    {
+      heading: 'Printed pages 50–52 — These/those, a/an and writing', headingUrdu: 'صفحات ۵۰–۵۲ — These/those، a/an اور تحریر', headingPashto: '۵۰–۵۲ مخونه — These/those، a/an او لیکنه',
+      text: 'Choose these or those for the pictured groups of cars, books, watches, colour pencils and cups, using these for nearby things and those for farther things. Read: a butterfly, an umbrella, an apple, a tree, an insect, a flower. Label: ___ car, ___ pencil, ___ aeroplane, ___ orange, ___ ice cream, ___ ball. In the garden picture, write four naming words and four action words. Write at least four sentences about My Family using love, help, play, father.', paras: ['Pointing words: these for nearby groups; those for farther groups. Apply the picture distance to cars, books, watches, colour pencils and cups.', 'a butterfly, an umbrella, an apple, a tree, an insect, a flower.', 'a car, a pencil, an aeroplane, an orange, an ice cream, a ball.', 'Garden-picture words are open answers; choose four visible naming words and four visible actions.', 'Sample: I love my family. My father helps me. I play with my father. We love each other.'], sourcePages: [50, 51, 52],
+      urdu: 'a/an کے جوابات: a car، a pencil، an aeroplane، an orange، an ice cream، a ball۔ My Family کے نمونہ جملے: I love my family. My father helps me. I play with my father. We love each other.', pashto: 'د a/an ځوابونه: a car، a pencil، an aeroplane، an orange، an ice cream، a ball. د My Family بېلګه: I love my family. My father helps me. I play with my father. We love each other.'
+    },
+    {
+      heading: 'Printed page 53 — Review 2: digraphs and initial sounds', headingUrdu: 'صفحہ ۵۳ — اعادہ ۲: مرکب حروف اور ابتدائی آوازیں', headingPashto: '۵۳ مخ — بیاکتنه ۲: ګډ توري او لومړني غږونه',
+      text: 'Circle the digraphs in phone, shoes, tooth, cheese, graph. Match words beginning with the same sound: feel, train, sad / toy, say, fun. Share a happy incident from your life. Answer: What is your favourite fruit and vegetable? Is sharing a good habit? What did Huma collect before making the pencil-shaving artwork?', paras: ['Digraphs: ph in phone, sh in shoes, th in tooth, ch in cheese, ph in graph.', 'Same initial sounds: feel—fun; train—toy; sad—say.', 'Huma collected pencil shavings. Personal-response questions accept individual answers.'], sourcePages: [53],
+      urdu: 'مرکب حروف: phone میں ph، shoes میں sh، tooth میں th، cheese میں ch، graph میں ph۔ ابتدائی آوازیں: feel—fun، train—toy، sad—say۔ ہما نے پنسل کا برادہ جمع کیا۔', pashto: 'ګډ توري: په phone کې ph، shoes کې sh، tooth کې th، cheese کې ch، graph کې ph. لومړني غږونه: feel—fun، train—toy، sad—say. هما د پنسل تراشې راټولې کړې.'
+    },
+    {
+      heading: 'Printed page 54 — Review 2: sight words, meanings and plurals', headingUrdu: 'صفحہ ۵۴ — اعادہ ۲: عام الفاظ، معنی اور جمع', headingPashto: '۵۴ مخ — بیاکتنه ۲: sight words، ماناوې او جمع',
+      text: 'Write any three sight words and use each in your own sentence. Give meanings for collect, brat, healthy. Write plurals: book, table, girl, cat, bird, clock.', paras: ['Sample sight words and sentences: is—This is my book. up—Stand up. her—I know her.', 'collect—to gather; brat—a badly behaved child; healthy—in good health.', 'Plurals: books, tables, girls, cats, birds, clocks.'], sourcePages: [54],
+      urdu: 'collect: جمع کرنا؛ brat: بدتمیز بچہ؛ healthy: صحت مند۔ جمع: books، tables، girls، cats، birds، clocks۔ مثال کے جملے: This is my book. Stand up. I know her.', pashto: 'collect: راټولول؛ brat: بدچلنده ماشوم؛ healthy: روغ. جمع: books، tables، girls، cats، birds، clocks. بېلګې: This is my book. Stand up. I know her.'
+    },
+    {
+      heading: 'Printed page 55 — Review 2: articles, gender and picture words', headingUrdu: 'صفحہ ۵۵ — اعادہ ۲: حروفِ تعریف، جنس اور تصویری الفاظ', headingPashto: '۵۵ مخ — بیاکتنه ۲: a/an، جنس او انځوریزې کلمې',
+      text: 'Fill a/an: Umair is eating ___ orange. I have ___ pen. The bird is sitting in ___ tree. He bought ___ umbrella. Write feminine forms: man, boy, horse, uncle, bull. Use the two separate picture panels to write any three naming words and three action words.', paras: ['an orange; a pen; a tree; an umbrella.', 'woman, girl, mare, aunt, cow.', 'Picture lists are open: choose three visible naming words and three actions from the illustrations.'], sourcePages: [55],
+      urdu: 'جوابات: an orange، a pen، a tree، an umbrella۔ مونث: woman، girl، mare، aunt، cow۔ تصویری الفاظ کے متعدد درست جواب ہو سکتے ہیں۔', pashto: 'ځوابونه: an orange، a pen، a tree، an umbrella. ښځینه بڼې: woman، girl، mare، aunt، cow. د انځوریزو کلمو ګڼ سم ځوابونه شته.'
+    }
+  ];
+  ENGLISH_1_DATA[4].exercise = {
+    textbookMcqs: [],
+    comprehension: [
+      { question: 'Printed p. 43: What message does the Getting Started text give?', answer: 'People should help and care for each other, share their things, be kind and forgive mistakes.' },
+      { question: 'Printed p. 44: Who wrote “Let Others Share”? How many rhyming words are there?', answer: 'Edward Anthony. There are four rhyming words in two pairs: son/fun and that/brat.' },
+      { question: 'Printed p. 45: Which of the listed words appear in the poem?', answer: 'brat, adult and toy.' },
+      { question: 'Printed p. 45: Read the word families.', answer: 'run/gun/fun; hat/cat/mat; ten/hen/pen.' },
+      { question: 'Printed p. 46: Choose the author and the rhyme for fun; complete the line.', answer: 'Edward Anthony; son; “You’ll grow to be an adult brat.”' },
+      { question: 'Printed p. 46: Read the initial and final digraph examples.', answer: 'ch: chips, chick / much, each. sh: ship, shape / fish, wish. ph: photo, phase / graph, digraph. th: thick, thank / bath, math.' },
+      { question: 'Printed p. 47: Give the meanings of insist, certain and brat.', answer: 'Insist: to demand something happen. Certain: having no doubts. Brat: a child who behaves badly.' },
+      { question: 'Printed p. 47: Complete the rhyme rows and name the colours.', answer: 'well—smell, lack—rack, float—coat. Colours: red, green, blue, yellow and brown.' },
+      { question: 'Printed p. 48: Name the shapes and apply the flower colour key.', answer: 'Square, circle, triangle, rectangle, oval. Rectangle brown; triangles green; circle yellow; oval petals red.' },
+      { question: 'Printed p. 49: Complete the words and match masculine/feminine nouns.', answer: 'insist, certain, adult, brat, grow. father—mother; uncle—aunt; lion—lioness; king—queen.' },
+      { question: 'Printed p. 50: Choose these or those for the object groups.', answer: 'Use these for nearby groups and those for farther groups, matching the positions shown in each picture.' },
+      { question: 'Printed p. 50: Fill the a/an labels in the garden illustration.', answer: 'a butterfly, an umbrella, an apple, a tree, an insect, a flower.' },
+      { question: 'Printed p. 51: Fill a/an for the six pictures.', answer: 'a car, a pencil, an aeroplane, an orange, an ice cream, a ball.' },
+      { question: 'Printed pp. 51–52: Give four naming words and four action words from the garden picture.', answer: 'Sample naming words: children, pond, birds, tree. Sample action words: cycling, playing, running, drawing.' },
+      { question: 'Printed p. 52: Write four sentences about My Family using the word bank.', answer: 'I love my family. My father helps me. I play with my father. We love each other.' },
+      { question: 'Printed p. 53: Circle the digraphs and match the same initial sounds.', answer: 'ph, sh, th, ch, ph. feel—fun; train—toy; sad—say.' },
+      { question: 'Printed p. 53: What did Huma collect before making her artwork?', answer: 'Pencil shavings.' },
+      { question: 'Printed p. 54: Give the meanings and plurals.', answer: 'collect—to gather; brat—a badly behaved child; healthy—in good health. books, tables, girls, cats, birds, clocks.' },
+      { question: 'Printed p. 54: Give any three sight words and use each in a sentence.', answer: 'is—This is my book. up—Stand up. her—I know her.' },
+      { question: 'Printed p. 55: Fill a/an and write the feminine forms.', answer: 'an orange, a pen, a tree, an umbrella; woman, girl, mare, aunt, cow.' },
+      { question: 'Printed p. 55: Give three naming words and three action words from the two pictures.', answer: 'Answers vary by the picture selection. Example: naming words—girl, chair, house; action words—play, kick, read.' }
+    ]
+  };
+  ENGLISH_1_DATA[4].englishSummary = 'Source-checked transcription and answers for printed pages 42–55. Later pages of Unit 5 are still awaiting verification.';
+  ENGLISH_1_DATA[4].urduSummary = 'مطبوعہ صفحات ۴۲ تا ۵۵ کی ماخذ سے جانچی گئی عبارت اور جوابات۔ یونٹ ۵ کے باقی صفحات کی جانچ جاری ہے۔';
+  ENGLISH_1_DATA[4].pashtoSummary = 'د ۴۲–۵۵ چاپ شوو مخونو له سرچینې سره کتل شوی متن او ځوابونه. د پنځم یونټ پاتې مخونه لا د کتنې په حال کې دي.';
+  ENGLISH_1_DATA[4].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+}
+
+// Source correction pass: Class 1 English Unit 6, printed pages 56–62.
+if (ENGLISH_1_DATA[5]) {
+  ENGLISH_1_DATA[5].sections = [
+    {
+      heading: 'Printed page 56 — Unit opening: Blessings of Allah', headingUrdu: 'صفحہ ۵۶ — یونٹ کا آغاز: اللہ کی نعمتیں', headingPashto: '۵۶ مخ — یونټ پیل: د الله نعمتونه',
+      text: 'Unit 6: Blessings of Allah. The illustration shows fruits and vegetables together in a garden.', paras: ['Unit 6: Blessings of Allah.', 'The illustration shows fruits and vegetables together in a garden.'], sourcePages: [56],
+      urdu: 'یونٹ ۶: اللہ کی نعمتیں۔ تصویر میں باغ میں پھل اور سبزیاں ہیں۔', pashto: 'شپږم یونټ: د الله نعمتونه. په انځور کې په بڼ کې مېوې او سبزي دي.'
+    },
+    {
+      heading: 'Printed page 57 — Getting Started: natural blessings', headingUrdu: 'صفحہ ۵۷ — آغاز: قدرتی نعمتیں', headingPashto: '۵۷ مخ — پیل: طبیعي نعمتونه',
+      text: 'Look at the picture and think about what Allah has created for us: trees for shade, water to drink and the sun for light. Let’s Talk: Think of other things created by Allah and share them with the class. Name natural things that benefit us. Are fruits and vegetables good for us? How?', paras: ['The picture shows the sun, trees, plants, a river and a water lily.', 'Trees give shade, water is for drinking and the sun gives light.', 'The discussion questions invite examples of natural benefits and why fruits and vegetables are good for us.'], sourcePages: [57],
+      urdu: 'تصویر میں سورج، درخت، پودے، دریا اور کنول ہے۔ درخت سایہ، پانی پینے کے لیے اور سورج روشنی دیتا ہے۔ پھل اور سبزیاں صحت کے لیے فائدہ مند ہیں۔', pashto: 'په انځور کې لمر، ونې، بوټي، سیند او د اوبو ګل دي. ونې سیوری، اوبه د څښلو او لمر رڼا ورکوي. مېوې او سبزي روغتیا ته ګټورې دي.'
+    },
+    {
+      heading: 'Printed page 58 — Reading: Blessings of Allah', headingUrdu: 'صفحہ ۵۸ — مطالعہ: اللہ کی نعمتیں', headingPashto: '۵۸ مخ — لوستل: د الله نعمتونه',
+      text: 'One day, fruits and vegetables met together in a basket. They became friends. One morning, all of them were talking to each other, but Red Carrot was sitting quietly in a corner. “Why are you sad?” asked Yellow Mango. She said, “Juicy Apple always fights with me. He says he is very sweet and healthy. People like to eat him more than they can have fun of me. He makes fun of me.”\n\nAll the fruits and vegetables felt sorry for Red Carrot. “You should not feel sad. Allah has made us all good for health. We should not fight,” said Yellow Mango. Everyone agreed. Juicy Apple also said sorry to Red Carrot for being rude to her and they became friends again.\n\nWhile-reading: Why was Red Carrot sitting quietly? Post-reading: Which is your favourite fruit and vegetable? Did you like the story?', paras: ['The fruits and vegetables became friends in a basket.', 'Red Carrot sat quietly because Juicy Apple fought with her and made fun of her.', 'Yellow Mango reminded them that all are good for health and they should not fight.', 'Juicy Apple apologized to Red Carrot, and they became friends again.'], sourcePages: [58],
+      urdu: 'سرخ گاجر اداس تھی کیونکہ رسیلا سیب اس سے لڑتا اور اس کا مذاق اڑاتا تھا۔ پیلی آم نے کہا کہ اللہ نے سب کو صحت کے لیے مفید بنایا ہے اور انہیں لڑنا نہیں چاہیے۔ سیب نے معافی مانگی اور سب دوبارہ دوست بن گئے۔', pashto: 'سره ګازره خپه وه ځکه جوس لرونکي مڼې ورسره جګړه او ملنډې کولې. ژېړې ام وویل چې الله ټول د روغتیا لپاره ګټور پیدا کړي او باید جګړه ونه کړي. مڼې بخښنه وغوښته او ټول بیا ملګري شول.'
+    },
+    {
+      heading: 'Printed page 59 — Beginning and ending sounds; emotions', headingUrdu: 'صفحہ ۵۹ — ابتدائی/آخری آوازیں اور جذبات', headingPashto: '۵۹ مخ — لومړني/وروستي غږونه او احساسات',
+      text: 'Circle the words beginning with the same sound: hair, apple, rude, healthy, play. Circle the words ending with the same sound: fruit, clap, brush, canteen, basket. Read the faces: I am happy. I am sad. I am angry. Draw faces showing angry and sad.', paras: ['Same initial sound: hair and healthy begin with /h/.', 'Same ending sound: fruit and basket end with /t/.', 'The three face captions are happy, sad and angry.', 'Draw an angry face and a sad face.'], sourcePages: [59],
+      urdu: 'hair اور healthy کی ابتدا /h/ سے ہے؛ fruit اور basket کا آخری حرف /t/ ہے۔ چہروں کے جذبات: happy، sad، angry۔', pashto: 'hair او healthy دواړه په /h/ پیلېږي؛ fruit او basket په /t/ پای ته رسېږي. د مخونو احساسات: happy، sad، angry.'
+    },
+    {
+      heading: 'Printed page 60 — Story comprehension and sentence order', headingUrdu: 'صفحہ ۶۰ — کہانی کی فہم اور جملوں کی ترتیب', headingPashto: '۶۰ مخ — د کیسې درک او د جملو ترتیب',
+      text: 'Answer: Who was sad? What did Juicy Apple say to Red Carrot? Is it good to make fun of others? Read the three-letter words: one, sad, day, bug, pen. Rearrange: fights me with always apple; fun me makes of he; became they friends; were each other talking fruits to.', paras: ['Red Carrot was sad.', 'Juicy Apple said he was sweet and healthy, people liked eating him, and he made fun of Red Carrot.', 'No. We should not make fun of others.', 'Three-letter words: one, sad, day, bug, pen.', 'Apple always fights with me.', 'He makes fun of me.', 'They became friends.', 'Fruits were talking to each other.'], sourcePages: [60],
+      urdu: 'سرخ گاجر اداس تھی۔ سیب نے کہا کہ وہ میٹھا اور صحت مند ہے، لوگ اسے زیادہ پسند کرتے ہیں اور اس نے گاجر کا مذاق اڑایا۔ دوسروں کا مذاق اڑانا درست نہیں۔ درست جملے اوپر ہیں۔', pashto: 'سره ګازره خپه وه. مڼې وویل چې هغه خوږه او روغتیایي ده، خلک یې ډېر خوښوي او پر ګازرې یې ملنډې وهلې. د نورو ملنډې وهل سم نه دي. سمې جملې پورته دي.'
+    },
+    {
+      heading: 'Printed pages 61–62 — Story questions, vocabulary, food groups and spelling', headingUrdu: 'صفحات ۶۱–۶۲ — کہانی کے سوالات، الفاظ، غذائیں اور املا', headingPashto: '۶۱–۶۲ مخونه — پوښتنې، لغتونه، خوراکي توکي او املا',
+      text: 'Choose: All ___ and vegetables are good for health (junk food/fruits/drinks/all). ___ was sitting quietly in a corner (Apple/Carrot/Mango/Banana). Apple said sorry for being ___ to her (proud/polite/kind/rude). Meanings: healthy—good for health; equal—with the same ability; rude—to behave badly. Name: apricot, watermelon, pineapple, strawberry; turnip, cucumber, okra, brinjal. Tick fruits and circle vegetables in the pictures: eggplant, watermelon, onion, pineapple. Read the sight words: down, little, then, we, go, have, am, out. Correct spellings: healthy, equal, people, sorry, basket.', paras: ['Answers: fruits; Carrot; rude.', 'healthy—good for health; equal—with the same ability; rude—to behave badly.', 'Fruits: apricot, watermelon, pineapple, strawberry. Vegetables: turnip, cucumber, okra, brinjal.', 'Picture sort: fruits—watermelon, pineapple; vegetables—eggplant, onion.', 'Sight words: down, little, then, we, go, have, am, out.', 'Correct spellings: healthy, equal, people, sorry, basket.'], sourcePages: [61, 62],
+      urdu: 'جوابات: fruits، Carrot، rude۔ پھل: apricot، watermelon، pineapple، strawberry۔ سبزیاں: turnip، cucumber، okra، brinjal۔ تصویر میں watermelon اور pineapple پھل؛ eggplant اور onion سبزیاں ہیں۔ درست ہجے: healthy، equal، people، sorry، basket۔', pashto: 'ځوابونه: fruits، Carrot، rude. مېوې: apricot، watermelon، pineapple، strawberry. سبزي: turnip، cucumber، okra، brinjal. په انځور کې watermelon او pineapple مېوې؛ eggplant او onion سبزي دي. سمه املا: healthy، equal، people، sorry، basket.'
+    },
+    {
+      heading: 'Printed page 63 — Proper nouns and question words', headingUrdu: 'صفحہ ۶۳ — خاص اسم اور سوالیہ الفاظ', headingPashto: '۶۳ مخ — ځانګړي نومونه او پوښتنیزې کلمې',
+      text: 'Read the proper nouns: Maham, Lahore, Jawad. Find and circle the proper nouns: She lives in Islamabad. His father’s name is Zafar. They are going to visit Naran. Waqas is my best friend. Sidra was sleeping. Read What, Where and Who questions; make one question with each word.', paras: ['Proper nouns: Maham, Lahore, Jawad.', 'Proper nouns in the sentences: Islamabad, Zafar, Naran, Waqas, Sidra.', 'Question word examples: What is your favourite vegetable? Where are you going? Who is playing in the garden?', 'Sample questions: What is your name? Where do you live? Who is your friend?'], sourcePages: [63],
+      urdu: 'خاص اسم: Maham، Lahore، Jawad، Islamabad، Zafar، Naran، Waqas، Sidra۔ سوالیہ الفاظ کے نمونے: What is your name? Where do you live? Who is your friend?', pashto: 'ځانګړي نومونه: Maham، Lahore، Jawad، Islamabad، Zafar، Naran، Waqas، Sidra. د پوښتنو بېلګې: What is your name? Where do you live? Who is your friend?'
+    },
+    {
+      heading: 'Printed page 64 — Action words and articles', headingUrdu: 'صفحہ ۶۴ — افعال اور حروفِ تعریف', headingPashto: '۶۴ مخ — کړنې او articles',
+      text: 'Underline the action words: Adina is eating an apple. We are clapping. Subhan is writing a letter. They are walking on a road. Carrot is sitting quietly. Plural nouns do not take the indefinite articles a/an. Rewrite with articles where needed: I have new dress. We have storybooks. Nimra is eating apple.', paras: ['Action words: eating, clapping, writing, walking, sitting.', 'I have a new dress.', 'We have storybooks.', 'Nimra is eating an apple.'], sourcePages: [64],
+      urdu: 'افعال: eating، clapping، writing، walking، sitting۔ جملے: I have a new dress. We have storybooks. Nimra is eating an apple.', pashto: 'کړنې: eating، clapping، writing، walking، sitting. جملې: I have a new dress. We have storybooks. Nimra is eating an apple.'
+    },
+    {
+      heading: 'Printed page 65 — Number words, picture sentences and favourite fruit', headingUrdu: 'صفحہ ۶۵ — عددی الفاظ، تصویری جملے اور پسندیدہ پھل', headingPashto: '۶۵ مخ — شمېرې، انځوریزې جملې او خوښه مېوه',
+      text: 'Write the numbers 1–10 in words: one, two, three, four, five, six, seven, eight, nine, ten. Look at the four daily-life pictures and write four sentences. Complete the favourite-fruit lines and draw and colour the fruit: ___ is my favourite fruit. Its colour is ___. Write one more sentence about it.', paras: ['Number words: one, two, three, four, five, six, seven, eight, nine, ten.', 'Example picture sentences: I wash my face. I study at my desk. I drink milk. I eat my food.', 'Example: Mango is my favourite fruit. Its colour is yellow. It is sweet.'], sourcePages: [65],
+      urdu: 'ایک سے دس تک: one، two، three، four، five، six، seven، eight، nine، ten۔ نمونہ: Mango is my favourite fruit. Its colour is yellow. It is sweet. تصویری جملوں کے قابلِ قبول جواب تصویر کے عمل کے مطابق ہوں گے۔', pashto: 'له یو تر لس: one، two، three، four، five، six، seven، eight، nine، ten. بېلګه: Mango is my favourite fruit. Its colour is yellow. It is sweet. د انځور جملې باید د ښودل شوي عمل سره سم وي.'
+    }
+  ];
+  ENGLISH_1_DATA[5].exercise = {
+    textbookMcqs: [],
+    comprehension: [
+      { question: 'Printed p. 57: Name the natural things shown and tell their benefits.', answer: 'Trees give shade, water is for drinking and the sun gives light. The picture also shows plants, a river and a water lily.' },
+      { question: 'Printed p. 58: Why was Red Carrot sitting quietly?', answer: 'Juicy Apple fought with her and made fun of her.' },
+      { question: 'Printed p. 58: What did Yellow Mango tell the fruits and vegetables?', answer: 'Allah made them all good for health, and they should not fight.' },
+      { question: 'Printed p. 58: How did the story end?', answer: 'Juicy Apple apologized to Red Carrot, and they became friends again.' },
+      { question: 'Printed p. 59: Find the words with matching beginning and ending sounds.', answer: 'Beginning: hair/healthy (/h/). Ending: fruit/basket (/t/).' },
+      { question: 'Printed p. 60: Answer the story questions.', answer: 'Red Carrot was sad. Juicy Apple said he was sweet and healthy, people liked him, and he made fun of her. No, it is not good to make fun of others.' },
+      { question: 'Printed p. 60: Rearrange the four sentences.', answer: 'Apple always fights with me. He makes fun of me. They became friends. Fruits were talking to each other.' },
+      { question: 'Printed p. 61: Choose the three correct options.', answer: 'fruits; Carrot; rude.' },
+      { question: 'Printed p. 61: Give the meanings and sort the listed fruits and vegetables.', answer: 'healthy—good for health; equal—with the same ability; rude—to behave badly. Fruits: apricot, watermelon, pineapple, strawberry. Vegetables: turnip, cucumber, okra, brinjal.' },
+      { question: 'Printed p. 62: Sort the pictured foods and choose the correct spellings.', answer: 'Fruits: watermelon, pineapple. Vegetables: eggplant, onion. Correct spellings: healthy, equal, people, sorry, basket.' },
+      { question: 'Printed p. 62: Read the eight sight words.', answer: 'down, little, then, we, go, have, am, out.' },
+      { question: 'Printed p. 63: Circle the proper nouns and make What/Where/Who questions.', answer: 'Proper nouns: Islamabad, Zafar, Naran, Waqas, Sidra. Examples: What is your name? Where do you live? Who is your friend?' },
+      { question: 'Printed p. 64: Underline the action words and rewrite the sentences with articles.', answer: 'Action words: eating, clapping, writing, walking, sitting. I have a new dress. We have storybooks. Nimra is eating an apple.' },
+      { question: 'Printed p. 65: Write 1–10 in words.', answer: 'one, two, three, four, five, six, seven, eight, nine, ten.' },
+      { question: 'Printed p. 65: Write four sentences from the daily-life pictures and complete the fruit prompt.', answer: 'Example: I wash my face. I study at my desk. I drink milk. I eat my food. Mango is my favourite fruit. Its colour is yellow. It is sweet.' }
+    ]
+  };
+  ENGLISH_1_DATA[5].englishSummary = 'Source-checked transcription and answers for printed pages 56–65. Later pages of Unit 6 are still awaiting verification.';
+  ENGLISH_1_DATA[5].urduSummary = 'مطبوعہ صفحات ۵۶ تا ۶۵ کی ماخذ سے جانچی گئی عبارت اور جوابات۔ یونٹ ۶ کے باقی صفحات کی جانچ جاری ہے۔';
+  ENGLISH_1_DATA[5].pashtoSummary = 'د ۵۶–۶۵ چاپ شوو مخونو له سرچینې سره کتل شوی متن او ځوابونه. د شپږم یونټ پاتې مخونه لا د کتنې په حال کې دي.';
+  ENGLISH_1_DATA[5].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+}
+
+// Source correction pass: Class 1 English Unit 7, printed pages 66–76.
+if (ENGLISH_1_DATA[6]) {
+  ENGLISH_1_DATA[6].sections = [
+    {
+      heading: 'Printed page 66 — Unit opening: Classroom Manners', headingUrdu: 'صفحہ ۶۶ — یونٹ کا آغاز: جماعت کے آداب', headingPashto: '۶۶ مخ — یونټ پیل: د ټولګي آداب',
+      text: 'Unit 7: Classroom Manners. The opening illustration shows two students greeting each other outside their school.', paras: ['Unit 7: Classroom Manners.', 'The opening illustration shows two students greeting each other outside their school.'], sourcePages: [66],
+      urdu: 'یونٹ ۷: جماعت کے آداب۔ تصویر میں دو طالب علم اسکول کے باہر ایک دوسرے کو سلام کر رہے ہیں۔', pashto: 'اووم یونټ: د ټولګي آداب. په انځور کې دوه زده کوونکي د ښوونځي بهر یو بل ته سلام کوي.'
+    },
+    {
+      heading: 'Printed page 67 — Getting Started: Class A and Class B', headingUrdu: 'صفحہ ۶۷ — آغاز: جماعت A اور جماعت B', headingPashto: '۶۷ مخ — پیل: ټولګی A او ټولګی B',
+      text: 'Describe the pictures: Class A shows students listening and participating while the teacher reads; Class B shows pupils fighting. Let’s Talk: Which classroom would you like to be in? Is it good to fight over small things? Should you follow your teacher’s instructions? How should you behave and keep your school clean?', paras: ['Class A shows an orderly learning environment; Class B shows children fighting.', 'Choose Class A. Fighting over small things is not good. Follow the teacher’s instructions, behave politely and keep the school clean.'], sourcePages: [67],
+      urdu: 'جماعت A میں طلبہ توجہ سے پڑھ رہے ہیں، جبکہ جماعت B میں بچے لڑ رہے ہیں۔ جماعت A بہتر ہے۔ چھوٹی بات پر لڑنا درست نہیں؛ استاد کی ہدایات پر عمل اور اسکول صاف رکھیں۔', pashto: 'په ټولګي A کې زده کوونکي درس ته پام کوي، خو په B کې ماشومان جګړه کوي. A غوره دی. پر کوچنیو خبرو جګړه ښه نه ده؛ د ښوونکي لارښوونې ومنئ او ښوونځی پاک وساتئ.'
+    },
+    {
+      heading: 'Printed pages 68–69 — Reading: Classroom Manners', headingUrdu: 'صفحات ۶۸–۶۹ — مطالعہ: جماعت کے آداب', headingPashto: '۶۸–۶۹ مخونه — لوستل: د ټولګي آداب',
+      text: 'It was Monday morning. Zara went to her new school where she met her class teacher. Zara said, “Assalaamu Alaikum! I am Zara. Today is my first day in this school.” Anum replied, “Wa Alaikum Assalaam! I am Anum, your Grade-1 English teacher. Welcome to the school.” Miss Anum and Zara went to the class.\n\n“Dear students, here is Zara. She is your new classmate. Please introduce yourselves and explain the classroom manners to her.” All students welcomed her and introduced themselves one by one, then explained the classroom manners.\n\nWe keep our classroom clean. We share our things. We respect our teachers. We listen to our teachers carefully. We use polite words like “please” and “thank you”. We always seek permission before going to the washroom or to drink water. We wait for our turn. We queue up quietly.\n\nPost-reading: Which manners do you always follow? Why is it important to have classroom manners?', paras: ['Zara is new at school. Anum is her Grade-1 English teacher.', 'We keep our classroom clean; share our things; respect and listen to teachers; use polite words; ask permission; wait for our turn; queue quietly.', 'Personal post-reading answers depend on the student.'], sourcePages: [68, 69],
+      urdu: 'زارا کا نئے اسکول میں پہلا دن تھا۔ انعم اس کی جماعت اوّل کی انگریزی استاد ہیں۔ آداب: جماعت صاف رکھنا، چیزیں بانٹنا، استاد کا احترام اور بات سننا، مہذب الفاظ کہنا، اجازت لینا، اپنی باری کا انتظار اور خاموشی سے قطار بنانا۔', pashto: 'په نوي ښوونځي کې د زارا لومړۍ ورځ وه. انعم د لومړي ټولګي د انګلیسي ښوونکې ده. آداب: ټولګی پاک ساتل، شیان شریکول، ښوونکو ته درناوی او غوږ نیول، مؤدبانه کلمې، اجازه غوښتل، خپل وار ته انتظار او په ارامه کتار جوړول.'
+    },
+    {
+      heading: 'Printed page 70 — Rhyming words and a test dialogue', headingUrdu: 'صفحہ ۷۰ — ہم قافیہ الفاظ اور امتحان کا مکالمہ', headingPashto: '۷۰ مخ — قافیه لرونکې کلمې او د ازموینې خبرې',
+      text: 'Read the rhyming pairs: class/glass, time/lime, run/fun, hat/bat. Complete: Cat rhymes with hat (hat/mouse); sun with bun (goat/bun); hen with ten (ten/rain); ring with swing (swing/nut). Practise: Tuba—“Assalaamu Alaikum! How are you, Zainab?” Zainab—“Wa Alaikum Assalaam. I’m fine, Tuba.” Tuba—“How was your monthly test?” Zainab—“Very well. I got second position.” Tuba—“That’s great. Well done!” Zainab—“Thank you!”', paras: ['Pairs: class/glass, time/lime, run/fun, hat/bat.', 'cat—hat; sun—bun; hen—ten; ring—swing.', 'Tuba greets Zainab and asks about her test. Zainab says she got second position; Tuba congratulates her.'], sourcePages: [70],
+      urdu: 'قافیے: class/glass، time/lime، run/fun، hat/bat۔ جوابات: cat—hat، sun—bun، hen—ten، ring—swing۔ زینب نے ماہانہ امتحان میں دوسری پوزیشن حاصل کی۔', pashto: 'قافیې: class/glass، time/lime، run/fun، hat/bat. ځوابونه: cat—hat، sun—bun، hen—ten، ring—swing. زینب په میاشتني ازموینه کې دوهم مقام واخیست.'
+    },
+    {
+      heading: 'Printed page 71 — Comprehension, manners checklist and food labels', headingUrdu: 'صفحہ ۷۱ — فہم، آداب کی فہرست اور غذائی لیبل', headingPashto: '۷۱ مخ — درک، د آداب لېست او د خوړو لیبلونه',
+      text: 'Answer: Who was new in the school? Who teaches English to Grade 1? Tick the manners you follow: be on time, listen carefully, queue during break/off time, say please/thank you, raise your hand to seek permission, keep the classroom clean, do not eat or drink in class. Read the food labels: bread, milk, chips, ketchup.', paras: ['Zara was new at the school. Miss Anum teaches English to Grade 1.', 'The checklist is personal; tick the manners you follow.', 'Food labels: bread, milk, chips, ketchup.'], sourcePages: [71],
+      urdu: 'زارا نئی طالبہ تھی؛ مس انعم جماعت اوّل کو انگریزی پڑھاتی ہیں۔ فہرست میں اپنی عادت کے مطابق خانے پر نشان لگائیں۔ لیبل: bread، milk، chips، ketchup۔', pashto: 'زارا نوې زده کوونکې وه؛ مس انعم لومړي ټولګي ته انګلیسي ورزده کوي. په لېست کې د خپلو عادتونو له مخې نښې ولګوئ. لیبلونه: bread، milk، chips، ketchup.'
+    },
+    {
+      heading: 'Printed pages 72–73 — Classroom/home objects, directions and sight words', headingUrdu: 'صفحات ۷۲–۷۳ — جماعت/گھر کی چیزیں، سمتیں اور عام الفاظ', headingPashto: '۷۲–۷۳ مخونه — د کور/ټولګي شیان، لوري او sight words',
+      text: 'Fill the manners blanks from clean, teacher, English, carefully: Miss Anum is the ___ teacher. Keep your classroom ___. Listen to your teacher ___. Respect your ___. Meanings: permission—allow someone to do something; queue—a line; finish—to complete a task. Classroom objects: chair, desk, board, school bag, pencil, book. Home objects: sofa, TV, bed, lamp, iron, clock. Name any three objects from each group. Learn left and right; follow: circle the iron on the left, tick the bag on the right, cross the sofa on the left. Sight words: do, little, could, when, did, what, so, see.', paras: ['Answers: English; clean; carefully; teacher.', 'Classroom: chair, desk, board, school bag, pencil, book. Home: sofa, TV, bed, lamp, iron, clock.', 'Direction activity: circle the left iron, tick the right bag, cross the left sofa.', 'Sight words: do, little, could, when, did, what, so, see.'], sourcePages: [72, 73],
+      urdu: 'خالی جگہیں: English، clean، carefully، teacher۔ اجازت: کسی کو کچھ کرنے دینا؛ queue: قطار؛ finish: کام مکمل کرنا۔ سمتوں کی ہدایات: بائیں استری پر دائرہ، دائیں بیگ پر نشان، بائیں صوفے پر ضرب۔', pashto: 'تش ځایونه: English، clean، carefully، teacher. permission: چا ته د کار اجازه ورکول؛ queue: کتار؛ finish: کار بشپړول. د لوري لارښوونې: د چپ اوسپنې چاپېره دایره، پر ښي بکس نښه، پر چپ صوفه ×.'
+    },
+    {
+      heading: 'Printed pages 74–76 — Wh questions, am/is/are and writing', headingUrdu: 'صفحات ۷۴–۷۶ — سوالیہ الفاظ، am/is/are اور تحریر', headingPashto: '۷۴–۷۶ مخونه — Wh پوښتنې، am/is/are او لیکنه',
+      text: 'Complete: cl__ss, tea__er, res__ect, lis__en, permiss i__n. Read: Why is the boy crying? He is crying because somebody broke his toy. When will the train arrive? It will arrive in 20 minutes. Make one question with When and one with Why. Use am/is/are: I am Pakistani. He is a boy. We are classmates. Choose: I (am/is) a policeman; Zara and Iqra (are/is) good students; This (is/am) my bedroom; They (am/are) very kind; Miss Asma (are/is) our class teacher. Read size words: tall tree, small tree, fat cat, thin cat; use them in sentences. Name three items in each list: clothes, food, classroom objects. Write how you keep the classroom clean using neat, clean, throw, rubbish, dustbin.', paras: ['Spellings: class, teacher, respect, listen, permission.', 'Why is the boy crying? Because somebody broke his toy. When will the train arrive? In 20 minutes.', 'Correct forms: I am; Zara and Iqra are; This is; They are; Miss Asma is.', 'Size adjectives: tall, small, fat, thin.', 'Examples: clothes—sweater, shirt, suit; food—cheese, eggs, butter; classroom—chair, desk, board.', 'I keep my classroom neat and clean. I throw rubbish in the dustbin.'], sourcePages: [74, 75, 76],
+      urdu: 'ہجے: class، teacher، respect، listen، permission۔ لڑکا کھلونا ٹوٹنے پر رو رہا ہے؛ ٹرین بیس منٹ میں آئے گی۔ درست فعل: am، are، is، are، is۔ صفائی: میں جماعت صاف رکھتا ہوں اور کوڑا دان میں کچرا پھینکتا ہوں۔', pashto: 'املا: class، teacher، respect، listen، permission. هلک ځکه ژاړي چې لوبتکه یې ماته شوې؛ اورګاډی په شلو دقیقو کې راځي. سم فعلونه: am، are، is، are، is. زه ټولګی پاک ساتم او کثافات په کثافت‌دانۍ کې اچوم.'
+    }
+  ];
+  ENGLISH_1_DATA[6].exercise = {
+    textbookMcqs: [],
+    comprehension: [
+      { question: 'Printed p. 67: Which classroom is a better place to learn, A or B? Answer the behaviour questions.', answer: 'Class A. It is not good to fight over small things. Follow the teacher’s instructions, behave politely and help keep school clean.' },
+      { question: 'Printed pp. 68–69: Who is Zara’s teacher? List the classroom manners.', answer: 'Miss Anum is her Grade-1 English teacher. Keep the classroom clean; share; respect and listen to teachers; use please/thank you; ask permission; wait your turn; queue quietly.' },
+      { question: 'Printed p. 70: Complete the four rhyme questions.', answer: 'cat—hat; sun—bun; hen—ten; ring—swing.' },
+      { question: 'Printed p. 70: What position did Zainab get in her monthly test?', answer: 'Second position.' },
+      { question: 'Printed p. 71: Who was new at school and who teaches Grade-1 English?', answer: 'Zara was new. Miss Anum teaches Grade-1 English.' },
+      { question: 'Printed p. 71: Read the four food labels.', answer: 'bread, milk, chips, ketchup.' },
+      { question: 'Printed p. 72: Fill the manners blanks and give the vocabulary meanings.', answer: 'English; clean; carefully; teacher. Permission—allow someone to do something; queue—a line; finish—to complete a task.' },
+      { question: 'Printed p. 72: Name the pictured classroom and home objects.', answer: 'Classroom: chair, desk, board, school bag, pencil, book. Home: sofa, TV, bed, lamp, iron, clock.' },
+      { question: 'Printed p. 73: Follow the left/right picture instructions.', answer: 'Circle the iron on the left; tick the bag on the right; cross the sofa on the left.' },
+      { question: 'Printed p. 74: Complete the spellings and answer the Why/When questions.', answer: 'class, teacher, respect, listen, permission. The boy cries because somebody broke his toy. The train arrives in 20 minutes.' },
+      { question: 'Printed p. 75: Choose am/is/are and use the size adjectives.', answer: 'I am a policeman. Zara and Iqra are good students. This is my bedroom. They are very kind. Miss Asma is our class teacher. Example: The tree is tall. The other tree is small. The cat is fat. The other cat is thin.' },
+      { question: 'Printed p. 76: Give three clothes, foods and classroom objects, then write about cleanliness.', answer: 'Clothes: sweater, shirt, suit. Food: cheese, eggs, butter. Classroom: chair, desk, board. I keep my classroom neat and clean. I throw rubbish in the dustbin.' }
+    ]
+  };
+  ENGLISH_1_DATA[6].englishSummary = 'Source-checked transcription and answers for printed pages 66–76. Later pages of Unit 7 are still awaiting verification.';
+  ENGLISH_1_DATA[6].urduSummary = 'مطبوعہ صفحات ۶۶ تا ۷۶ کی ماخذ سے جانچی گئی عبارت اور جوابات۔ یونٹ ۷ کے باقی صفحات کی جانچ جاری ہے۔';
+  ENGLISH_1_DATA[6].pashtoSummary = 'د ۶۶–۷۶ چاپ شوو مخونو له سرچینې سره کتل شوی متن او ځوابونه. د اووم یونټ پاتې مخونه لا د کتنې په حال کې دي.';
+  ENGLISH_1_DATA[6].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+}
+
+// Source correction pass: Class 1 English Unit 8, printed pages 77–85.
+if (ENGLISH_1_DATA[7]) {
+  ENGLISH_1_DATA[7].sections = [
+    {
+      heading: 'Printed page 77 — Unit opening: Nature is Beautiful', headingUrdu: 'صفحہ ۷۷ — یونٹ کا آغاز: قدرت خوبصورت ہے', headingPashto: '۷۷ مخ — یونټ پیل: طبیعت ښکلې ده',
+      text: 'Unit 8: Nature is Beautiful. The opening illustration shows birds sitting on a branch beneath a rainbow.', paras: ['Unit 8: Nature is Beautiful.', 'The opening illustration shows birds sitting on a branch beneath a rainbow.'], sourcePages: [77],
+      urdu: 'یونٹ ۸: قدرت خوبصورت ہے۔ ابتدائی تصویر میں قوسِ قزح کے نیچے شاخ پر پرندے بیٹھے ہیں۔', pashto: 'اتم یونټ: طبیعت ښکلې ده. په لومړي انځور کې د رنګین کمان لاندې پر څانګه مرغان ناست دي.'
+    },
+    {
+      heading: 'Printed page 78 — Getting Started: types of weather', headingUrdu: 'صفحہ ۷۸ — آغاز: موسم کی اقسام', headingPashto: '۷۸ مخ — پیل: د هوا ډولونه',
+      text: 'Name the weather in the four pictures: rainy, windy, snowy and sunny. Let’s Talk: Why are the trees moving towards the left? How do you feel when the wind blows?', paras: ['Pictures: rainy weather, windy weather, snowy weather, sunny weather.', 'The trees bend left because the wind is blowing from right to left.', 'Feeling when wind blows is a personal response.'], sourcePages: [78],
+      urdu: 'تصویریں: بارش، ہوا، برف باری اور دھوپ۔ درخت دائیں سے بائیں چلنے والی ہوا سے بائیں جھک رہے ہیں۔ ہوا میں محسوس کرنا ذاتی جواب ہے۔', pashto: 'انځورونه: باراني، بادي، واورین او لمرینه هوا. ونې له ښي نه چپ لوري ته د باد له امله کږې دي. د باد پر مهال احساس شخصي ځواب دی.'
+    },
+    {
+      heading: 'Printed pages 79–80 — Poem: It’s Spring', headingUrdu: 'صفحات ۷۹–۸۰ — نظم: بہار ہے', headingPashto: '۷۹–۸۰ مخونه — نظم: پسرلی دی',
+      text: 'Pre-reading: Name two creations of Allah. Which weather do you like most: windy, sunny or rainy?\n\nIt’s Spring\n\nGood-bye, snow! Good-bye, ice!\nThough of course you’re very nice,\nI am glad you’ve gone away\nLeaving us this fine spring day.\n\nHere’s my good old bat and ball!\nMarbles, too! How are you all?\nI am sure that I can play\nWith you now, ’most any day.\n\nGood-bye, winter! Though it’s true\nI’ve had lots of fun with you,\nNow I just could shout and sing;\nI’m so glad because it’s spring.\n\n— Winnifred Mott\n\nWhile-reading: My heat warms the air. What am I? Post-reading: What do you feel when the weather changes? Did you like the poem?', paras: ['Good-bye, snow! Good-bye, ice!', 'Though of course you’re very nice,', 'I am glad you’ve gone away', 'Leaving us this fine spring day.', 'Here’s my good old bat and ball!', 'Marbles, too! How are you all?', 'I am sure that I can play', 'With you now, ’most any day.', 'Good-bye, winter! Though it’s true', 'I’ve had lots of fun with you,', 'Now I just could shout and sing;', 'I’m so glad because it’s spring.', '— Winnifred Mott'], sourcePages: [79, 80],
+      urdu: 'نظم بہار کی آمد کا جشن مناتی ہے؛ شاعر برف اور سردیوں کے جانے پر خوش ہے اور کھیلنے، چیخنے اور گانے کے لیے پرجوش ہے۔ “میری گرمی ہوا کو گرم کرتی ہے” سے مراد سورج ہے۔', pashto: 'نظم د پسرلي راتګ لمانځي؛ شاعر د واورې او ژمي له تلو خوشحاله دی او لوبې، چیغې او سندرې ته خوښ دی. “زما تودوخه هوا ګرموي” لمر ته اشاره ده.'
+    },
+    {
+      heading: 'Printed page 81 — Alphabetical order, mind maps and poem blanks', headingUrdu: 'صفحہ ۸۱ — حروفِ تہجی کی ترتیب، ذہنی نقشہ اور نظم کے خالی مقامات', headingPashto: '۸۱ مخ — الفبايي ترتیب، ذهني نقشه او د نظم تش ځایونه',
+      text: 'Put arrow, bow, camel and down in alphabetical order. Arrange tree, hang, wind, lack, mind alphabetically. Read the example mind map: Asma, six years, class one, The Primary School. Fill a mind map about your teacher (name, nature, subject, personality). Complete the poem using ball, snow, glad, spring, shout: Good-bye, ___! Good-bye, ice! Leaving us this fine ___ day. Here’s my good old bat and ___. Now I just could ___ and sing. I’m so ___ because it’s spring.', paras: ['arrow, bow, camel, down.', 'hang, lack, mind, tree, wind.', 'My Teacher mind map answers depend on the student.', 'snow; spring; ball; shout; glad.'], sourcePages: [81],
+      urdu: 'ترتیب: arrow، bow، camel، down؛ پھر hang، lack، mind، tree، wind۔ نظم کے الفاظ: snow، spring، ball، shout، glad۔ استاد کے بارے میں ذہنی نقشہ ذاتی معلومات سے پُر کریں۔', pashto: 'ترتیب: arrow، bow، camel، down؛ بیا hang، lack، mind، tree، wind. د نظم کلمې: snow، spring، ball، shout، glad. د ښوونکي ذهني نقشه د زده کوونکي د خپلو معلوماتو له مخې ډکه کړئ.'
+    },
+    {
+      heading: 'Printed pages 82–83 — Vocabulary, rhymes, body parts and verbs', headingUrdu: 'صفحات ۸۲–۸۳ — الفاظ، قافیہ، جسم کے حصے اور افعال', headingPashto: '۸۲–۸۳ مخونه — لغتونه، قافیې، د بدن غړي او فعلونه',
+      text: 'Fill the remaining poem lines: Here’s my good old bat and ___. Now I just could ___ and sing. I’m so ___ because it’s spring. Meanings: glad—happy; marbles—small glass balls children play with; shout—a loud cry. Read rhyme pairs: find/kind, sunny/funny. Write rhymes for tree and hang. Name the pictured body parts: hand, knee, eye, arm, nose, neck. Write any three body parts. Sight words: work, try, today, fly, tell, much, keep, give. Complete: b__t, __pring, p__ay, shou__, n__ce. Use is/am/are: I ___ Haris. He ___ a doctor. We ___ tired. She ___ writing a letter. They ___ very busy.', paras: ['ball; shout; glad.', 'glad—happy; marbles—small glass balls children play with; shout—a loud cry.', 'find/kind; sunny/funny. Example rhymes: tree/free; hang/rang.', 'hand, knee, eye, arm, nose, neck.', 'Sight words: work, try, today, fly, tell, much, keep, give.', 'bat, spring, play, shout, nice.', 'I am Haris. He is a doctor. We are tired. She is writing a letter. They are very busy.'], sourcePages: [82, 83],
+      urdu: 'معانی: glad خوش، marbles شیشے کی چھوٹی گولیاں، shout بلند آواز۔ قافیے: find/kind، sunny/funny؛ tree/free، hang/rang۔ جسم: hand، knee، eye، arm، nose، neck۔ ہجے: bat، spring، play، shout، nice۔', pashto: 'ماناوې: glad خوشحاله، marbles د لوبو شیشې ګولۍ، shout لوړ غږ. قافیې: find/kind، sunny/funny؛ tree/free، hang/rang. د بدن غړي: hand، knee، eye، arm، nose، neck. املا: bat، spring، play، shout، nice.'
+    },
+    {
+      heading: 'Printed pages 84–85 — Adjectives, captions, body facts and hygiene', headingUrdu: 'صفحات ۸۴–۸۵ — صفات، عنوان، جسمانی معلومات اور صفائی', headingPashto: '۸۴–۸۵ مخونه — صفتونه، سرلیکونه، د بدن معلومات او پاکوالی',
+      text: 'Read: She is a nice girl. Hassan is a tall boy. I like red apple. Use big, soft, fat: The rabbit has ___ fur. Aqeel is a ___ boy. It is a ___ box. Copy the model date and caption: Date 2-9-2020; Day Wednesday; Unit name “It’s Spring Time”. Fill: We have ___ eyes to see with. We have ___ nose to smell with. ___ is our homeland. ___ is the capital city of Pakistan. Write a few sentences about personal hygiene using brushing, cleaning, washing hands, healthy diet.', paras: ['The rabbit has soft fur. Aqeel is a fat boy. It is a big box.', 'We have two eyes to see with. We have one nose to smell with. Pakistan is our homeland. Islamabad is the capital city of Pakistan.', 'Example: I keep clean by brushing my teeth, washing my hands and following a healthy diet.'], sourcePages: [84, 85],
+      urdu: 'جوابات: soft fur، tall boy، big box۔ دو آنکھیں اور ایک ناک؛ پاکستان ہمارا وطن ہے؛ اسلام آباد دارالحکومت ہے۔ ذاتی صفائی: دانت برش کریں، ہاتھ دھوئیں اور صحت مند غذا کھائیں۔', pashto: 'ځوابونه: soft fur، tall boy، big box. دوه سترګې او یوه پوزه؛ پاکستان زموږ وطن دی؛ اسلام‌آباد یې پلازمېنه ده. شخصي پاکوالی: غاښونه برس کړئ، لاسونه ووینځئ او سالم خواړه وخورئ.'
+    }
+  ];
+  ENGLISH_1_DATA[7].exercise = {
+    textbookMcqs: [],
+    comprehension: [
+      { question: 'Printed p. 78: Name the four weather types and answer why trees move left.', answer: 'Rainy, windy, snowy and sunny. The wind blows from right to left, pushing the trees left.' },
+      { question: 'Printed pp. 79–80: What is the poem about? Why does the speaker want to shout and sing? Which seasons are mentioned?', answer: 'It is about spring. The speaker is glad winter has gone and spring has come. Winter and spring are mentioned.' },
+      { question: 'Printed p. 80: What warms the air?', answer: 'The sun.' },
+      { question: 'Printed p. 80: Read the one-syllable words.', answer: 'life, grew, nose, lack.' },
+      { question: 'Printed p. 81: Alphabetize the words and complete the poem.', answer: 'arrow, bow, camel, down; hang, lack, mind, tree, wind. Blanks: snow, spring, ball, shout, glad.' },
+      { question: 'Printed p. 82: Give the meanings, rhymes and body-part names.', answer: 'glad—happy; marbles—small glass balls used in children’s games; shout—a loud cry. Rhymes: find/kind, sunny/funny; example tree/free and hang/rang. Body parts: hand, knee, eye, arm, nose, neck.' },
+      { question: 'Printed p. 83: Complete the missing spellings and is/am/are sentences.', answer: 'bat, spring, play, shout, nice. I am Haris. He is a doctor. We are tired. She is writing a letter. They are very busy.' },
+      { question: 'Printed p. 84: Complete with adjectives of size and colour.', answer: 'The rabbit has soft fur. Aqeel is a fat boy. It is a big box.' },
+      { question: 'Printed p. 85: Complete the simple facts and write about personal hygiene.', answer: 'two eyes; one nose; Pakistan; Islamabad. Example: I keep clean by brushing my teeth, washing my hands and following a healthy diet.' }
+    ]
+  };
+  ENGLISH_1_DATA[7].englishSummary = 'Source-checked transcription and answers for printed pages 77–85. Later pages of Unit 8 are still awaiting verification.';
+  ENGLISH_1_DATA[7].urduSummary = 'مطبوعہ صفحات ۷۷ تا ۸۵ کی ماخذ سے جانچی گئی عبارت اور جوابات۔ یونٹ ۸ کے باقی صفحات کی جانچ جاری ہے۔';
+  ENGLISH_1_DATA[7].pashtoSummary = 'د ۷۷–۸۵ چاپ شوو مخونو له سرچینې سره کتل شوی متن او ځوابونه. د اتم یونټ پاتې مخونه لا د کتنې په حال کې دي.';
+  ENGLISH_1_DATA[7].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
+  // Source correction pass: Class 1 English Unit 9 and Review 3, printed pages 86–98.
+  ENGLISH_1_DATA[8].lessons = [
+    { heading: 'Printed page 86 — Unit 9: A Greeting Card', text: 'The opening picture shows three children at home with a greeting card. Unit outcomes include reading picture sequences, naming book titles, using colour adjectives and full stops, making polite requests, writing a greeting card, and recording a name and phone number.', paras: ['Unit title: A Greeting Card.', 'The picture introduces children preparing or sharing a greeting card.'], sourcePages: [86] },
+    { heading: 'Printed page 87 — Eid celebration discussion', text: 'Getting Started: Look at the picture and imagine Eid celebrations at your home. Talk: Who do you celebrate Eid with? Do you share your gifts with your brother and sister?', paras: ['Sample: I celebrate Eid with my family. I share my gifts with my brother and sister. Personal answers may differ.'], sourcePages: [87] },
+    { heading: 'Printed pages 88–89 — How Ayyan and Maham make an Eid card', text: 'Ayyan and Maham make an Eid card in art class. First, Ayyan takes paper and Maham folds it in half. Second, they draw flowers and colour them, sharing pencils. Third, Maham writes “Eid Mubarak” and Ayyan writes greetings. They clean the table and wash their hands with soap and water. They will give the card to cousin Asma before Eid. Post-reading: Why do they make a card? Why do you share your things?', paras: ['The step after folding is drawing and colouring flowers on the card.', 'They make it for cousin Asma before Eid.', 'They share materials so they can work together. Sharing is a good habit.'], sourcePages: [88, 89] },
+    { heading: 'Printed page 90 — Sight words and greeting-card dialogue', text: 'Sight words: are, and, this, their. Dialogue: “Mama, I need some things to make a greeting card for my friend.” “What things do you need? I will buy them.” “Thank you, Mama. I need chart paper, colour pencils and some stickers.” “Okay. Make a list of these things and give it to me.” “Sure, Mama.” Practise by replacing the listed objects with other things.', paras: ['Practise reading: are, and, this, their.', 'The child needs chart paper, colour pencils and stickers. The mother asks for a list.'], sourcePages: [90] },
+    { heading: 'Printed pages 91–92 — Book titles, comprehension and ordinal numbers', text: 'Answer the lesson questions; identify the title of the shown book (“Bed Time Stories”); match the story covers to The Fox and the Grapes, The Lion and the Mouse, The Hare and the Tortoise, and The Ugly Duckling. Complete the lesson blanks and read vocabulary: half—two equal parts; share—let somebody use your things; greeting—a message of good wishes. Read ordinal words first through tenth.', paras: ['Ayyan and Maham are making an Eid card. Maham draws flowers. They clean the table and wash their hands after making it.', 'Book-title matches: fox cover—The Fox and the Grapes; lion cover—The Lion and the Mouse; hare/tortoise cover—The Hare and the Tortoise; duck cover—The Ugly Duckling.', 'Ordinal words: first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth.'], sourcePages: [91, 92] },
+    { heading: 'Printed page 93 — Ordinals, sight words, spellings and adjectives', text: 'Write ordinal words for the children shown in positions 1st to 5th. Sight words: gave, open, has, only, hold. Fit full, us, three, our, buy into the word-shape boxes. Complete: cousi__, pa__er, __raw, tab__e, car__ (cousin, paper, draw, table, card). Read describing-word examples.', paras: ['Ordinal labels under the five children: first, second, third, fourth, fifth.', 'Missing words: cousin, paper, draw, table, card.', 'Examples: red sheet, big house, hot bun, green colour.'], sourcePages: [93] },
+    { heading: 'Printed page 94 — Picture adjectives, full stops and polite requests', text: 'Name the pictures with an adjective (example: yellow sun): pictured carrot, sun, chair, tree, balloon. Read sentences and add full stops where needed. Practise polite requests: “Kindly give me your pencil.” “Please pass me the glass of water.” “Could you please carry my bag?” “Kindly call my parents.” Write suitable requests for the classroom pictures.', paras: ['Sample picture names: orange carrot, yellow sun, brown chair, green tree, blue balloon.', 'Full stops: We should keep our classroom clean. Ayyan makes an Eid card. Maham is very happy.', 'Add full stops: They keep their classroom clean. Ayyan is making a card. Ayyan and Maham are playing.', 'The pictured request answers are open; suitable examples: “Please pass me the books.” / “May I come in, please?”'], sourcePages: [94] },
+    { heading: 'Printed page 95 — Make a card and write about your mother', text: 'Make an Eid card, draw a picture and write greetings. Write your name and phone number on the back. Complete sentences about your mother using the word bank kind/caring, love, tasty, food.', paras: ['Sample greeting: Dear Sara, Eid Mubarak! Your friend, [your name].', 'Fill in your own name and phone number.', 'Sample: My mother’s name is Samina. She is 35 years old. She is kind and caring. I love her. She cooks tasty food. Personal details should be replaced with the student’s own.'], sourcePages: [95] },
+    { heading: 'Printed page 96 — Review 3: rhymes and sight-word sentences', text: 'Match swing, tall and keep with their rhymes. Read sight words that, are, on and use each in a sentence. Practise a courtesy dialogue with a partner.', paras: ['Rhyming matches: swing—ring; tall—fall; keep—sleep.', 'Sample sentences: That is my book. We are friends. The cup is on the table.'], sourcePages: [96] },
+    { heading: 'Printed pages 97–98 — Review 3 comprehension, grammar and writing', text: 'Answer: Why are Ayyan and Maham happy? Write two classroom manners. Who was looking at the classroom manners? Alphabetize rain, zoo, nose, bus, camel, key. Give meanings of greeting, share, shout. Choose is/are; am/is; are/am. Make a When and Why question. Give two adjectives each for size, quality and colour. Complete a four-branch mind map about your best friend.', paras: ['They are happy because they made an Eid card for cousin Asma. Two manners: keep the room clean; listen to the teacher. Miss Anum was explaining the manners.', 'Alphabetical order: bus, camel, key, nose, rain, zoo.', 'greeting—a message of good wishes; share—let someone use your things; shout—a loud cry.', 'She is a teacher. I am Hamza. They are sleepy.', 'Sample: When is your birthday? Why are you happy?', 'Examples: size—big, small; quality—kind, neat; colour—red, blue. Friend mind map responses vary.'], sourcePages: [97, 98] }
+  ];
+  ENGLISH_1_DATA[8].exercise = { textbookMcqs: [], comprehension: [
+    { question: 'Printed pp. 88–89: Put the Eid-card steps in order and answer the questions.', answer: '1. Take a sheet and fold it in half. 2. Draw and colour flowers. 3. Write “Eid Mubarak” and greetings. They make the card for cousin Asma. They clean the table and wash their hands afterward.' },
+    { question: 'Printed p. 91: Match the four story covers with their titles.', answer: 'The Fox and the Grapes; The Lion and the Mouse; The Hare and the Tortoise; The Ugly Duckling.' },
+    { question: 'Printed p. 92: Fill the lesson blanks.', answer: 'Ayyan and Maham are making an Eid card. They draw flowers. They give the card to cousin Asma.' },
+    { question: 'Printed p. 93: Complete the missing words and ordinal labels.', answer: 'cousin, paper, draw, table, card; first, second, third, fourth, fifth.' },
+    { question: 'Printed p. 94: Add full stops.', answer: 'They keep their classroom clean. Ayyan is making a card. Ayyan and Maham are playing.' },
+    { question: 'Printed p. 96: Match the rhyming words.', answer: 'swing—ring; tall—fall; keep—sleep.' },
+    { question: 'Printed p. 97: Alphabetize the words and give vocabulary meanings.', answer: 'bus, camel, key, nose, rain, zoo. greeting—a message of good wishes; share—let somebody use your things; shout—a loud cry.' },
+    { question: 'Printed p. 98: Choose the verbs and give sample grammar answers.', answer: 'She is a teacher. I am Hamza. They are sleepy. Sample questions: When is your birthday? Why are you happy? Adjective examples: big/small; kind/neat; red/blue.' }
+  ] };
+  ENGLISH_1_DATA[8].englishSummary = 'Source-checked transcription and worked answers for printed pages 86–98, including Review 3. The later Unit 9/Review pages were checked individually; independent web redraws of the printed illustrations are still pending.';
+  ENGLISH_1_DATA[8].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
+  // Source correction pass: Class 1 English Unit 10, printed pages 99–107.
+  ENGLISH_1_DATA[9].lessons = [
+    { heading: 'Printed page 99 — Unit 10: The Hare and the Tortoise', text: 'The opening picture introduces a hare and tortoise. Unit outcomes include sequencing a story, naming characters, talking about animals and actions, plural -s sounds, possessive words, commands, questions and speech bubbles.', paras: ['Unit title: The Hare and the Tortoise.', 'The fable teaches that steady effort and humility matter.'], sourcePages: [99] },
+    { heading: 'Printed page 100 — “Yes, We Can” discussion', text: 'Look at the picture and read the words “Yes, We Can”. Talk about what you can do at home to help your mother, how you help your teacher, and what makes you a good child.', paras: ['Sample: I can tidy my room. I help my teacher by listening and keeping the classroom neat. I am a good child when I am kind and helpful. Personal answers vary.'], sourcePages: [100] },
+    { heading: 'Printed page 101 — The Hare and the Tortoise story', text: 'The hare boasts that he can run fast and makes fun of the slow tortoise. The tortoise challenges him to a race. The hare runs far ahead, thinks he has plenty of time, and sleeps under a tree. The tortoise keeps moving, reaches the finish line, and wins. The hare wakes and arrives too late. He apologizes for his proud and rude behaviour.', paras: ['While-reading prediction: the tortoise may pass the sleeping hare and win.', 'The hare says sorry because he was proud and rude. The moral is to keep trying and not boast.'], sourcePages: [101] },
+    { heading: 'Printed page 102 — Plural -s sounds', text: 'Read the examples: /s/ sound—rabbit/rabbits, cup/cups, duck/ducks, bat/bats, frock/frocks; /z/ sound—bed/beds, sparrow/sparrows, room/rooms, hare/hares, word/words. Circle plural nouns ending in /s/ and square those ending in /z/: ants, hat, tigers, flowers, pandas, snakes, books, dogs.', paras: ['/s/: ants, books. /z/: tigers, flowers, pandas, snakes, dogs. “Hat” is singular and gets neither mark.'], sourcePages: [102] },
+    { heading: 'Printed page 103 — Hare and tortoise dialogue and comprehension', text: 'Practise the printed hare/tortoise greeting dialogue and a dialogue about enjoying play at school. Answer: What happened during the race? Who was proud? Who won? Fill the word bank hare, challenged, finish line, ashamed, proud.', paras: ['The tortoise kept going while the hare slept, reached the finish line first and won. The hare was proud. The tortoise won.', 'Blanks: The tortoise reached the finish line first. A hare was making fun of the tortoise. The hare felt ashamed. He said sorry for his proud behaviour. The tortoise challenged the hare to a race.'], sourcePages: [103] },
+    { heading: 'Printed page 104 — Vocabulary and animal names', text: 'Meanings: challenge—to ask somebody for a competition; cheer—a shout of joy; proud—feeling better than others; rude—showing disrespect. Name the wild animals (tiger, bear, elephant) and farm animals (horse, hen, rabbit), then add two of each. Sight words: them, did, can, so, not.', paras: ['Wild: tiger, bear, elephant; examples to add: lion, deer. Farm: horse, hen, rabbit; examples to add: cow, goat.'], sourcePages: [104] },
+    { heading: 'Printed page 105 — Sight words, spelling and possessive words', text: 'Fit ten, soon, run, find, drink into the word-shape boxes. Complete: h__re, f__st, s__ow, s__eep, t__ee, h__rse. Read possessives: “This is my rabbit”; “This is our school”; “This is your duck.”', paras: ['Sight words: ten, soon, run, find, drink.', 'Spellings: hare, fast, snow, sleep, tree, horse.', 'Possessive words: my, our, your.'], sourcePages: [105] },
+    { heading: 'Printed page 106 — Possessives, question marks and commands', text: 'Fill with our, my or your: Samra’s pet; our house; Arun’s pencil. Read questions using What, When and Why and their answers. Make two questions and include question marks. Commands: Look at the board; Open the door; Stop fighting; Wash your hands. Tick the commands.', paras: ['This is my pet. This is our house. This is your pencil.', 'Sample questions: What is your name? Why are you happy?', 'Tick: “Give me your notebook” is a command. “You are looking good” is not.'], sourcePages: [106] },
+    { heading: 'Printed page 107 — Commands, dialogue and animal writing', text: 'Decide which sentences are commands: Open the window. What are you doing? Complete your homework. Fill speech bubbles using: How are you? I am fine. What are you doing? I am playing with my rabbit. Write three or four sentences about the pictured parrot using green, beak, love, play.', paras: ['Commands: Open the window; Complete your homework. “What are you doing?” is a question.', 'Speech-bubble order: Hello!—Hi!—How are you?—I am fine.—What are you doing?—I am playing with my rabbit.', 'Sample paragraph: I have a parrot. Its name is Mithu. It is green and has a strong beak. I love to play with it.'], sourcePages: [107] }
+  ];
+  ENGLISH_1_DATA[9].exercise = { textbookMcqs: [], comprehension: [
+    { question: 'Printed p. 101: Why did the hare say sorry, and what lesson does the story teach?', answer: 'He apologized for being proud and rude. The story teaches us not to boast and to keep trying steadily.' },
+    { question: 'Printed p. 102: Sort the plural words by the final /s/ and /z/ sounds.', answer: '/s/: ants, books. /z/: tigers, flowers, pandas, snakes, dogs. Hat is singular.' },
+    { question: 'Printed p. 103: Answer the race questions and complete the five blanks.', answer: 'The tortoise kept moving while the hare slept and won. The hare was proud; the tortoise won. Blanks: finish line; hare; ashamed; proud; challenged.' },
+    { question: 'Printed p. 104: Add two examples to each animal group.', answer: 'Wild animals: lion, deer. Farm animals: cow, goat.' },
+    { question: 'Printed p. 105: Complete the six spellings.', answer: 'hare, fast, snow, sleep, tree, horse.' },
+    { question: 'Printed p. 106: Fill in possessives and identify commands.', answer: 'my pet; our house; your pencil. Commands: “Give me your notebook”; “Open the window”; “Complete your homework”.' },
+    { question: 'Printed p. 107: Complete the dialogue and write about the parrot.', answer: 'Hello! Hi! How are you? I am fine. What are you doing? I am playing with my rabbit. Sample: My parrot Mithu is green. It has a beak. I love to play with it.' }
+  ] };
+  ENGLISH_1_DATA[9].englishSummary = 'Source-checked transcription and worked answers for printed pages 99–107. Unit 10 pages are verified against the individual scans; unique web illustrations remain to be redrawn.';
+  ENGLISH_1_DATA[9].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
+  // Source correction pass: Class 1 English Unit 11 and Review 4, printed pages 108–118.
+  ENGLISH_1_DATA[10].lessons = [
+    { heading: 'Printed page 108 — Unit 11: Love Animals', text: 'The opening picture shows a child caring for pets. Outcomes include reciting poems, discussing animal care, plural /s/ and /z/ sounds, calendar words, punctuation, possessive words and commas.', paras: ['Unit title: Love Animals.', 'The unit encourages kindness and responsible care for animals.'], sourcePages: [108] },
+    { heading: 'Printed page 109 — Animals need freedom', text: 'Look at the picture of a child caged in and say how you would feel. The page explains that animals also like to be free and should not be kept in cages. Talk: Do you have a pet animal at home? How do you take care of it?', paras: ['Sample: I would feel sad in a cage. Animals need space and care. If I have a pet, I give it food and water and treat it gently. Personal answers vary.'], sourcePages: [109] },
+    { heading: 'Printed page 110 — “My Kitty Cat” poem', text: 'The poem by Ryan Gibbs describes a black-and-white kitty: she sleeps all day, plays at night, eats, rests in a chair, hunts through the house, bats a pen, and later nibbles the speaker’s toes. Post-reading: Did you like it? How do you take care of a pet?', paras: ['The speaker likes the playful kitty, though the cat makes writing difficult.', 'Sample pet care: give a pet food, clean water, a safe place and kind attention.'], sourcePages: [110] },
+    { heading: 'Printed page 111 — Plurals and poem comprehension', text: 'Make plurals and mark /s/ or /z/: cat, car, glove, pet, star, plate, book, panda. Interpret signs: Victory, Well done, Perfect. Answer questions about the kitty poem.', paras: ['cat—cats /s/; car—cars /z/; glove—gloves /z/; pet—pets /s/; star—stars /z/; plate—plates /s/; book—books /s/; panda—pandas /z/.', 'Kitty is black and white. She plays at night. She rests in a chair.'], sourcePages: [111] },
+    { heading: 'Printed page 112 — Calendar and punctuation', text: 'Use the year calendar: How many months are in a year? What is your birthday month? Name the sixth month. Underline capital letters and circle punctuation in the given sentences.', paras: ['There are 12 months. Birthday month: personal answer. The sixth month is June.', 'Why are you going to Islamabad? — capital W, I; question mark. This is my cat, Kitty. — capital T, K; comma and full stop. What is your favourite — capital W; question mark is needed at the end. He is a police — capital H; add a full stop if this is intended as a complete sentence.'], sourcePages: [112] },
+    { heading: 'Printed page 113 — Vocabulary, rhymes and expressing needs', text: 'Meanings: dawn—first light of day; adopt—choose to take up; stretch out—to lie down, to take rest. Rhyming pairs: night/white, fed/head, mood/food. Write another pair. Practise Uzma asking her mother for storybooks and colouring books.', paras: ['Example rhymes: cat/hat; play/day.', 'Uzma: “Mama, could you buy me some storybooks and colouring books?” Mother: “Yes, sure!” Uzma: “Thank you, Mama!” Mother: “You are welcome!”'], sourcePages: [113] },
+    { heading: 'Printed page 114 — Spelling and possessive adjectives', text: 'Fit yes, will, me, would, my, this, one, like into shape boxes. Choose correct spellings: down, chair, stretch, adopt, happy. Fill with his, her or their: Nimra is a girl; Usman is a doctor.', paras: ['Correct spellings: down, chair, stretch, adopt, happy.', 'This is her cat. This is his clinic.'], sourcePages: [114] },
+    { heading: 'Printed page 115 — Possessives, commas and pet writing', text: 'Finish: Amna and Ambreen are sisters. Yunas is ___ father. Add commas to lists. Find a rhyming pair in the poem about Allah and add a rhyme. Write five things about your pet.', paras: ['Yunas is their father.', 'She does not like biscuits, chips, pizza and juice. He is a strong, wealthy and healthy man. The plain cake requires flour, sugar, eggs, butter and nuts.', 'The poem rhymes know/so. Example additional rhyme: go.', 'Pet writing is personal. Sample: My pet is a cat. It is gentle. I give it food and water. I keep it clean. I love my pet.'], sourcePages: [115] },
+    { heading: 'Printed page 116 — Review 4: plurals, comprehension and punctuation', text: 'Write plurals for duck, book, hen, bed; circle /s/ plurals and underline /z/ plurals. Answer: Why did the hare make fun of the tortoise? What is your favourite animal? How do we take care of pets? Correct capitalization and punctuation: where are you going; my favourite subject is english; who is your friend.', paras: ['duck—ducks (/s/); book—books (/s/); hen—hens (/z/); bed—beds (/z/).', 'The hare mocked the tortoise because he thought he was slow. Sample: My favourite animal is a cat. Care for pets with food, clean water, shelter and kindness.', 'Where are you going? My favourite subject is English. Who is your friend?'], sourcePages: [116] },
+    { heading: 'Printed pages 117–118 — Review 4 vocabulary, grammar and writing', text: 'Give meanings of dawn, surprised, ashamed. Complete with his/her/their: Sana’s cat; Ahmed’s car; Mr Asif is Nawab and Ibrar’s ____. Add commas to three lists. Circle commands. Write five sentences about a tortoise.', paras: ['dawn—first light of day; surprised—feeling unexpected wonder; ashamed—feeling sorry or embarrassed about something wrong.', 'This is her cat. This is his car. Mr Asif is their uncle.', 'They bought fruits, vegetables and eggs from the market. Ali is a regular, punctual and hardworking student. My favourite colours are red, black and green.', 'Commands: Close the window; Listen to me carefully.', 'Sample: A tortoise is a reptile. It has a hard shell. It walks slowly. It eats plants. It needs a safe place to live.'], sourcePages: [117, 118] }
+  ];
+  ENGLISH_1_DATA[10].exercise = { textbookMcqs: [], comprehension: [
+    { question: 'Printed p. 111: Answer the three questions about the poem.', answer: 'The kitty cat is black and white. She plays at night. She likes to rest in a chair.' },
+    { question: 'Printed p. 111: Make plurals and sort by final sound.', answer: 'cats /s/, cars /z/, gloves /z/, pets /s/, stars /z/, plates /s/, books /s/, pandas /z/.' },
+    { question: 'Printed p. 112: Answer the calendar questions.', answer: '12 months; birthday month is personal; June is the sixth month.' },
+    { question: 'Printed p. 113: Match the rhyming pairs and give meanings.', answer: 'night/white, fed/head, mood/food. dawn—first light of day; adopt—choose to take up; stretch out—lie down to rest.' },
+    { question: 'Printed p. 114: Select the correct spellings and possessive words.', answer: 'down, chair, stretch, adopt, happy. This is her cat. This is his clinic.' },
+    { question: 'Printed p. 115: Add commas and finish the family sentence.', answer: 'Yunas is their father. She does not like biscuits, chips, pizza and juice. He is a strong, wealthy and healthy man. The plain cake requires flour, sugar, eggs, butter and nuts.' },
+    { question: 'Printed p. 116: Write the plurals, corrected sentences and pet-care response.', answer: 'ducks (/s/), books (/s/), hens (/z/), beds (/z/). The hare mocked the tortoise because he thought he was slow. Correct: Where are you going? My favourite subject is English. Who is your friend? Pets need food, water, shelter and kindness.' },
+    { question: 'Printed pp. 117–118: Complete the possessives, commas and commands.', answer: 'her cat; his car; their uncle. Lists: fruits, vegetables and eggs; regular, punctual and hardworking; red, black and green. Commands: Close the window; Listen to me carefully.' }
+  ] };
+  ENGLISH_1_DATA[10].englishSummary = 'Source-checked transcription and worked answers for printed pages 108–118, including Review 4. Printed lessons and exercise answers are reconciled; source-specific web redraws of illustrations remain outstanding.';
+  ENGLISH_1_DATA[10].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+}
 
 if (typeof DATA !== 'undefined') {
   DATA.eng1Chapters = ENGLISH_1_DATA;

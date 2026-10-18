@@ -1,8 +1,8 @@
 /* Class 1 Creative Arts & Drawing, transcribed from the supplied workbook. */
 const DRAWING_1_DATA = [
-  { number: 1, title: "Join the dots and colour the shapes", sourcePage: 1, artwork: "shape-person" },
-  { number: 2, title: "Join the dots and colour the shapes", sourcePage: 2, artwork: "shape-friends" },
-  { number: 3, title: "Join the dots and colour the shapes", sourcePage: 3, artwork: "shape-faces" },
+  { number: 1, title: "Join the dots and colour the shapes", sourcePage: 1, artwork: "shape-cat" },
+  { number: 2, title: "Join the dots and colour the shapes", sourcePage: 2, artwork: "shape-characters" },
+  { number: 3, title: "Join the dots and colour the shapes", sourcePage: 3, artwork: "shape-expression" },
   { number: 4, title: "Colour the rainbow", sourcePage: 4, artwork: "rainbow" },
   { number: 5, title: "Join the dots and colour the bird", sourcePage: 5, artwork: "bird" },
   { number: 6, title: "Join the dots and colour the ship", sourcePage: 6, artwork: "ship" },
@@ -12,9 +12,9 @@ const DRAWING_1_DATA = [
   { number: 10, title: "Join the dots and colour the tulip", sourcePage: 10, artwork: "tulip" },
   { number: 11, title: "Join the dots and colour the ant", sourcePage: 11, artwork: "ant" },
   { number: 12, title: "Join the dots and colour the goat", sourcePage: 12, artwork: "goat" },
-  { number: 13, title: "Join the dots and colour the umbrella", sourcePage: 13, artwork: "umbrella" },
-  { number: 14, title: "Join the dots and colour the purse", sourcePage: 14, artwork: "purse" },
-  { number: 15, title: "Join the dots and colour the pineapple", sourcePage: 15, artwork: "pineapple" },
+  { number: 13, title: "Join the dots and colour the umbrella", sourcePage: 13, artwork: "umbrella-face" },
+  { number: 14, title: "Join the dots and colour the purse", sourcePage: 14, artwork: "school-bags" },
+  { number: 15, title: "Join the dots and colour the pineapple", sourcePage: 15, artwork: "pineapple-characters" },
   { number: 16, title: "Join the dots and colour the parrot", sourcePage: 16, artwork: "parrot" },
   { number: 17, title: "Join the dots and colour the watermelon", sourcePage: 17, artwork: "watermelon" },
   { number: 18, title: "Join the dots and colour the frock", sourcePage: 18, artwork: "frock" },
@@ -28,10 +28,10 @@ const DRAWING_1_DATA = [
   { number: 26, title: "Join the dots and colour the puppy", sourcePage: 26, artwork: "puppy" },
   { number: 27, title: "Join the dots and colour the sunglasses", sourcePage: 27, artwork: "sunglasses" },
   { number: 28, title: "Join the dots and colour the flower", sourcePage: 28, artwork: "flower" },
-  { number: 29, title: "Join the dots and colour the bananas", sourcePage: 29, artwork: "bananas", teacherNote: "The teacher can make a model banana from clay or plaster of Paris, colour it, and encourage students to do the same exercise at home." },
-  { number: 30, title: "Step-by-step making of a bear face", sourcePage: 30, artwork: "bear-steps", teacherNote: "Ask students to draw the picture in the space provided and colour it." },
-  { number: 31, title: "Step-by-step making of a house", sourcePage: 31, artwork: "house-steps", teacherNote: "Ask students to draw the picture in the space provided and colour it." },
-  { number: 32, title: "Making a cat face", sourcePage: 32, artwork: "cat-origami", teacherNote: "The teacher should make the cat face from paper before class, then give paper to students for practice." }
+  { number: 29, title: "Join the dots and colour the bananas", sourcePage: 29, artwork: "bananas", teacherNote: "The teacher should make model of banana from out of clay or plaster of paris and colour it. Encourage the students to do the same exercise as homework." },
+  { number: 30, title: "Step by step making of bear face", sourcePage: 30, artwork: "bear-steps", teacherNote: "Ask the students to draw the picture in the given space and color it accordingly." },
+  { number: 31, title: "Step by step making of house", sourcePage: 31, artwork: "house-steps", teacherNote: "Ask the students to draw the picture in the given space and color it accordingly." },
+  { number: 32, title: "Making Catface", sourcePage: 32, artwork: "cat-origami", teacherNote: "Teacher should make cat face out of paper before the students and give paper to students for exercise." }
 ];
 
 const DRAWING_1_TIPS = [

@@ -15,7 +15,7 @@
 (function () {
   'use strict';
 
-  const HELP = 'Original: the textbook text only. The other tabs show each original line with its translation below it. Tap a dotted word for its meaning.';
+  const HELP = 'Click any sentence to see its translation just below it. Point at a word for its meaning.';
   const mode = () => Number(window.SB_LANG_MODE || 0);
   const clean = s => String(s || '').replace(/[\u{1F1E6}-\u{1F1FF}\u{1F4D1}]/gu, '').replace(/\s*\(.*?\)\s*/g, ' ').trim();
   const latin = s => (String(s).match(/[A-Za-z]/g) || []).length > (String(s).match(/[؀-ۿ]/g) || []).length;
@@ -61,11 +61,10 @@
     scope.classList.add('sh-converted');
     const [o, a, b] = labels(scope);
     const cur = mode();
-    const tab = (n, label) => '<button type="button" class="sb-langtab" data-m="' + n + '" aria-pressed="' + (cur === n) + '" onclick="SBLangMode(' + n + ')">' + label + '</button>';
+    void cur; void o; void a; void b;
     const bar = document.createElement('div');
-    bar.className = 'm6-root sh-bar';
-    bar.innerHTML = '<div class="m6-tools m6-tabs" role="group" aria-label="Text language">' +
-      tab(0, '📖 Original (' + o + ')') + tab(1, o + ' + ' + a) + tab(2, o + ' + ' + b) + '</div><p class="m6-help">' + HELP + '</p>';
+    bar.className = 'sh-bar';
+    bar.innerHTML = '<p class="sh-help">' + HELP + '</p>';
     scope.insertBefore(bar, scope.firstChild);
     applyMode(scope);
   }
@@ -249,12 +248,10 @@
     scope.dataset.shOrig = o;
     scope.classList.add('sh-generic');
     const cur = mode();
-    const tab = (n, label) => '<button type="button" class="sb-langtab" data-m="' + n + '" aria-pressed="' + (cur === n) + '" onclick="SBLangMode(' + n + ')">' + label + '</button>';
+    void cur; void a; void b;
     const bar = document.createElement('div');
-    bar.className = 'm6-root sh-bar sh-gbar';
-    bar.innerHTML = '<div class="m6-tools m6-tabs" role="group" aria-label="Text language">' +
-      tab(0, '📖 Original (' + NAMES[o] + ')') + tab(1, NAMES[o] + ' + ' + NAMES[a]) + tab(2, NAMES[o] + ' + ' + NAMES[b]) +
-      '</div><p class="m6-help">' + HELP + '</p>';
+    bar.className = 'sh-bar sh-gbar';
+    bar.innerHTML = '<p class="sh-help">' + HELP + '</p>';
     scope.insertBefore(bar, scope.firstChild);
     applyGeneric(scope);
   }
@@ -280,6 +277,107 @@
       if (node.textContent !== label && raw.replace(/^\d+\.\s*/, '') !== want + (count ? ' ' + count : '')) node.textContent = label;
     });
   }
+
+  // ── Part 4: click a sentence → its translation opens just below that sentence ──────────────
+  // Works in the converted and generic readers above (the shared book readers and the .lesson-sentence
+  // readers have their own sentence toggles). Translation sources, in order: the book's own translation
+  // for that paragraph (split into sentences when the counts match), then the offline lexicon /
+  // machine translation through SBTranslate.
+  const SSPLIT = /(?<=[.!?؟۔])\s+(?=\S)/;
+  const sents = t => String(t || '').replace(/\s+/g, ' ').trim().split(SSPLIT).filter(Boolean);
+  function bookTranslations(u) {
+    const out = [];
+    const en = u.closest('[id^="para-lang-en-"]');
+    if (en) {
+      const i = en.id.slice('para-lang-en-'.length);
+      ['ur', 'ps'].forEach(k => { const b = document.getElementById('para-lang-' + k + '-' + i); if (b && b.textContent.trim()) out.push({lang: detect(b.textContent), text: b.textContent}); });
+      return out;
+    }
+    let d = u.nextElementSibling;
+    while (d && d.tagName !== 'DETAILS' && !d.matches(UNIT_SEL)) d = d.nextElementSibling;
+    if (d && d.tagName === 'DETAILS') {
+      [...d.querySelectorAll('[lang]')].filter(k => !k.closest('summary')).forEach(k => out.push({lang: k.getAttribute('lang'), text: k.textContent}));
+      return out;
+    }
+    ['en', 'ps'].forEach(t => { const v = storedFor(u, t); if (v) out.push({lang: t, text: v}); });
+    return out;
+  }
+  function caretOffset(u, x, y) {
+    let node, off;
+    if (document.caretRangeFromPoint) { const r = document.caretRangeFromPoint(x, y); if (!r) return -1; node = r.startContainer; off = r.startOffset; }
+    else if (document.caretPositionFromPoint) { const p = document.caretPositionFromPoint(x, y); if (!p) return -1; node = p.offsetNode; off = p.offset; }
+    else return -1;
+    if (!u.contains(node)) return -1;
+    const r = document.createRange(); r.setStart(u, 0); r.setEnd(node, off);
+    return r.toString().replace(/\s+/g, ' ').replace(/^\s+/, '').length;
+  }
+  // DOM point after the n-th character of u's whitespace-normalised text
+  function pointAt(u, n) {
+    const w = document.createTreeWalker(u, NodeFilter.SHOW_TEXT, {acceptNode: t => t.parentElement.closest('.sh-sdrawer, .sh-mt') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT});
+    let seen = 0, prevSpace = true, last = null;
+    while (w.nextNode()) {
+      const t = w.currentNode; last = t;
+      for (let i = 0; i < t.data.length; i++) {
+        const sp = /\s/.test(t.data[i]);
+        if (sp && prevSpace) continue;
+        seen++; prevSpace = sp;
+        if (seen >= n) return [t, i + 1];
+      }
+    }
+    return last ? [last, last.data.length] : [u, u.childNodes.length];
+  }
+  const LNAME = {en: 'English', ur: 'اردو', ps: 'پښتو', ar: 'العربية'};
+  function line(box, lang, text) {
+    const p = document.createElement('span');
+    p.className = 'sh-sline'; p.setAttribute('dir', lang === 'en' ? 'ltr' : 'rtl'); p.setAttribute('lang', lang);
+    p.innerHTML = '<b class="sh-slang">' + LNAME[lang] + '</b> ';
+    const t = document.createElement('span'); t.textContent = text; p.appendChild(t);
+    box.appendChild(p); return t;
+  }
+  function onSentenceClick(e) {
+    if (e.defaultPrevented || e.button) return;
+    const tgt = e.target;
+    if (!tgt.closest || tgt.closest('a, button, input, select, textarea, summary, .ut-root, .sh-sdrawer, .lesson-sentence, .dict-clickable-word, [data-sbmode], .m6-root, .m5-root, .m7-root, .m8-root, .m11-root, .katex, svg')) return;
+    const scope = tgt.closest('.sh-generic, .sh-converted'); if (!scope) return;
+    const u = tgt.closest(UNIT_SEL); if (!u || !scope.contains(u) || u.closest(SKIP)) return;
+    const sel = window.getSelection && window.getSelection(); if (sel && !sel.isCollapsed) return;
+    const own = [...u.childNodes].filter(n => !(n.nodeType === 1 && n.matches('.sh-sdrawer, .sh-mt'))).map(n => n.textContent).join('');
+    const list = sents(own); if (!list.length) return;
+    const off = caretOffset(u, e.clientX, e.clientY);
+    let i = 0, acc = 0;
+    for (; i < list.length; i++) { acc += list[i].length + 1; if (off >= 0 && off < acc) break; }
+    if (i >= list.length) i = list.length - 1;
+    const key = String(i);
+    const open = [...u.querySelectorAll('.sh-sdrawer')].find(d => d.dataset.i === key);
+    if (open) { open.remove(); u.normalize(); return; }
+    const end = list.slice(0, i + 1).join(' ').length;
+    const [node, pos] = pointAt(u, end);
+    const box = document.createElement('span'); box.className = 'sh-sdrawer'; box.dataset.i = key;
+    const r = document.createRange(); r.setStart(node, pos); r.collapse(true); r.insertNode(box);
+    const src = detect(list[i]);
+    const book = bookTranslations(u).filter(x => x.lang !== src && x.text);
+    if (book.length) {
+      book.forEach(x => { const ts = sents(x.text); line(box, x.lang, ts.length === list.length ? ts[i] : x.text.replace(/\s+/g, ' ').trim()); });
+      return;
+    }
+    (PAIRS[src] || ['ur', 'ps']).forEach(lang => {
+      const t = line(box, lang, '…');
+      if (!window.SBTranslate) { t.textContent = 'Translation not available'; return; }
+      window.SBTranslate.translate(list[i], src, lang, true).then(res => {
+        t.textContent = res && res.text ? res.text : (navigator.onLine === false ? 'This sentence needs internet for its first translation.' : 'Translation not available');
+        if (res && res.text && res.source !== 'dictionary') { const tag = document.createElement('span'); tag.className = 'sh-tag'; tag.textContent = 'Machine translation'; t.parentNode.appendChild(tag); }
+      }, () => { t.textContent = 'Translation not available'; });
+    });
+  }
+  document.addEventListener('click', onSentenceClick);
+  (function css() {
+    const s = document.createElement('style');
+    s.textContent = '.sh-help{color:#64748b;font-size:.82rem;margin:.1rem 0 .6rem}.sh-generic p,.sh-generic li,.sh-generic .para-text-box,.sh-generic .poetic-line-row,.sh-converted [id^="para-lang-en-"] p{cursor:pointer}' +
+      '.sh-sdrawer{display:block;margin:.3rem 0 .6rem;padding:.45rem .75rem;background:#f8fafc;border-inline-start:3px solid #0284c7;border-radius:0 8px 8px 0;font-size:.95em;cursor:default}' +
+      '.sh-sline{display:block;line-height:1.9}.sh-sline[dir="rtl"]{text-align:right;font-family:"Jameel Noori Nastaleeq","Noto Nastaliq Urdu","Noto Naskh Arabic",serif;font-size:1.08em}' +
+      '.sh-slang{font:700 .68rem system-ui,sans-serif;color:#0369a1;margin-inline-end:.35rem}';
+    (document.head || document.documentElement).appendChild(s);
+  })();
 
   function run() {
     scopes().forEach(convert);

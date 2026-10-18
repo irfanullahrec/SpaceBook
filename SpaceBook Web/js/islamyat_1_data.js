@@ -1240,6 +1240,243 @@ var ISLAMYAT_1_DATA = [
   }
 ];
 
+// Source-verified corrections from the scanned 2020 KPTB Class 1 Islamiyat book.
+// Printed pages 4–8 (first bab), 9–12 (Tawheed), and 14–16 (Prophethood).
+ISLAMYAT_1_DATA[1].sections = [
+  {
+    heading: "حدیثِ نبوی ﷺ: صفائی نصف ایمان ہے (ص 4)",
+    arabic: "الطُّهُورُ شَطْرُ الْإِيمَانِ",
+    urduTranslation: "صفائی نصف ایمان ہے۔ (صحیح مسلم، حدیث 534)",
+    englishTranslation: "Cleanliness is half of faith. (Sahih Muslim, Hadith 534)",
+    pashtoTranslation: "پاکوالی د ایمان نیمایي ده. (صحیح مسلم، حدیث ۵۳۴)",
+    tashreeh: "حدیث کو سمجھ کر صفائی کو اپنی روزمرہ زندگی کا معمول بنائیں۔",
+    sourcePages: [4]
+  },
+  {
+    heading: "علم میں اضافے کی دعا (ص 5)",
+    arabic: "رَّبِّ زِدْنِي عِلْمًا",
+    urduTranslation: "اے میرے رب! میرے علم میں اضافہ فرما۔",
+    englishTranslation: "My Lord, increase me in knowledge.",
+    pashtoTranslation: "ای زما ربه! زما په علم کې زیاتوالی راوله.",
+    tashreeh: "کتاب اس دعا کو روزانہ پڑھنے کی عادت بنانے کی ہدایت دیتی ہے۔",
+    sourcePages: [5]
+  },
+  {
+    heading: "اِن شاء اللہ اور ما شاء اللہ (ص 6–8)",
+    arabic: "إِنْ شَاءَ اللَّهُ · مَا شَاءَ اللَّهُ",
+    urduTranslation: "اِن شاء اللہ: اگر اللہ نے چاہا۔ ما شاء اللہ: جو اللہ نے چاہا۔",
+    englishTranslation: "In shaa Allah: if Allah wills. Masha Allah: what Allah has willed.",
+    pashtoTranslation: "اِن شاء الله: که د الله خوښه وي. ما شاء الله: هغه څه چې الله غوښتلي دي.",
+    tashreeh: "آئندہ کام کے ارادے کے ساتھ اِن شاء اللہ کہتے ہیں؛ اچھی موجودہ نعمت یا چیز دیکھ کر ما شاء اللہ کہتے ہیں۔",
+    sourcePages: [6, 7, 8]
+  }
+];
+ISLAMYAT_1_DATA[1].exercise = {
+  textbookMcqs: [],
+  shortQuestions: [
+    { question: "حدیثِ مبارک کے مطابق صفائی کیا ہے؟ (ص 4)", answer: "صفائی نصف ایمان ہے۔ (صحیح مسلم، حدیث 534)", sourcePages: [4] },
+    { question: "علم میں اضافے کی دعا لکھیں۔ (ص 5)", answer: "رَّبِّ زِدْنِي عِلْمًا — اے میرے رب! میرے علم میں اضافہ فرما۔", sourcePages: [5] },
+    { question: "اِن شاء اللہ اور ما شاء اللہ کب کہتے ہیں؟ (ص 6–8)", answer: "آئندہ کام کے ارادے پر اِن شاء اللہ کہتے ہیں، مثلاً ‘میں نماز پڑھوں گا/گی’۔ کسی اچھی چیز یا نعمت پر ما شاء اللہ کہتے ہیں، مثلاً ‘ہمارا ملک پاکستان بہت اچھا ملک ہے’۔", sourcePages: [6, 7, 8] }
+  ],
+  longQuestions: []
+};
+ISLAMYAT_1_DATA[1].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
+ISLAMYAT_1_DATA[2].sections = [
+  { heading: "توحید: اللہ تعالیٰ ایک اور سب کا خالق ہے (ص 9–10)", arabic: "قُلْ هُوَ اللَّهُ أَحَدٌ", urduTranslation: "کہہ دیجیے: وہ اللہ ایک ہے۔ اللہ تعالیٰ نے ہمیں پیدا کیا اور کائنات کی سب چیزیں اسی نے بنائی ہیں۔ زمین، سورج، چاند، ستارے، درخت، جانور اور پرندے اس کی مخلوق ہیں۔ ہاتھ، پاؤں، آنکھیں، ناک، کان اور زبان جیسی نعمتوں پر اللہ تعالیٰ کا شکر ادا کرنا چاہیے۔", englishTranslation: "Say: He is Allah, the One. Allah created us and everything in the universe. The earth, sun, moon, stars, trees, animals and birds are among His creation. We should thank Allah for blessings such as our hands, feet, eyes, nose, ears and tongue.", sourcePages: [9,10] },
+  { heading: "اللہ کی مخلوق اور انسان کی بنائی ہوئی چیزیں (ص 11–12)", urduTranslation: "اللہ تعالیٰ نے قدرتی چیزیں پیدا کیں، جبکہ انسان اپنی توفیق سے چیزیں بناتے ہیں۔ جدول میں ہر چیز کو درست خانے میں رکھیں: اللہ تعالیٰ کی پیدا کردہ یا انسانوں کی بنائی ہوئی۔", englishTranslation: "Allah created natural things, while people make things using the abilities Allah gave them. Sort each item in the table into ‘created by Allah’ or ‘made by people.’", sourcePages: [11,12] },
+  { heading: "اللہ تعالیٰ کے صفاتی نام (ص 13)", urduTranslation: "استاد کی مدد سے پھولوں میں اللہ تعالیٰ کے صفاتی نام لکھیں۔ یہ سرگرمی مختلف درست ناموں سے مکمل ہو سکتی ہے۔", englishTranslation: "With the teacher’s help, write names describing Allah in the flowers. Several correct names can complete this activity.", sourcePages: [13] }
+];
+ISLAMYAT_1_DATA[2].exercise = {
+  textbookMcqs: [],
+  shortQuestions: [
+    { question: "خالی جگہ پُر کریں: اللہ تعالیٰ ____ ہے۔ (ص 11)", answer: "اللہ تعالیٰ ایک ہے۔", sourcePages: [11] },
+    { question: "خالی جگہ پُر کریں: ہمیں اللہ تعالیٰ کا ____ ادا کرنا چاہیے۔ (ص 11)", answer: "ہمیں اللہ تعالیٰ کا شکر ادا کرنا چاہیے۔", sourcePages: [11] },
+    { question: "خالی جگہ پُر کریں: سب چیزیں ____ نے بنائی ہیں۔ (ص 11)", answer: "سب چیزیں اللہ تعالیٰ نے بنائی ہیں۔", sourcePages: [11] },
+    { question: "ہم سب کو کس نے پیدا کیا؟ (ص 11)", answer: "ہم سب کو اللہ تعالیٰ نے پیدا کیا۔", sourcePages: [11] },
+    { question: "اللہ تعالیٰ نے کون کون سی چیزیں بنائی ہیں؟ (ص 11)", answer: "زمین، سورج، چاند، ستارے، درخت، جانور اور پرندے اللہ تعالیٰ کی مخلوق ہیں۔", sourcePages: [11] },
+    { question: "نعمتوں پر ہمیں کیا کرنا چاہیے؟ (ص 11)", answer: "اللہ تعالیٰ کی نعمتوں پر اس کا شکر ادا کرنا چاہیے۔", sourcePages: [11] },
+    { question: "ص 12 کے جدول میں پانی، ہوا، کتاب، درخت، گاڑیاں، کھلونے اور سورج کے لیے بتائیں کہ اللہ تعالیٰ نے پیدا کیے یا انسانوں نے بنائے۔", answer: "پانی—اللہ تعالیٰ نے پیدا کیا؛ ہوا—اللہ تعالیٰ نے پیدا کی؛ کتاب—انسانوں نے بنائی؛ درخت—اللہ تعالیٰ نے پیدا کیے؛ گاڑیاں—انسانوں نے بنائیں؛ کھلونے—انسانوں نے بنائے؛ سورج—اللہ تعالیٰ نے پیدا کیا۔", sourcePages: [12] },
+    { question: "ص 13: استاد کی مدد سے پھولوں میں اللہ تعالیٰ کے صفاتی نام لکھیں۔", answer: "نمونے کے طور پر: الرَّحْمَٰن (نہایت مہربان)، الرَّحِيم (بہت رحم کرنے والا)، الْخَالِق (پیدا کرنے والا)، الرَّزَّاق (رزق دینے والا)، السَّمِيع (سننے والا)، الْبَصِير (دیکھنے والا)۔ کتاب اس سرگرمی کے لیے مخصوص نام مقرر نہیں کرتی، اس لیے یہ نمونہ جواب ہے۔", sourcePages: [13] }
+  ],
+  longQuestions: []
+};
+ISLAMYAT_1_DATA[2].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
+ISLAMYAT_1_DATA[3].exercise = {
+  textbookMcqs: [],
+  shortQuestions: [
+    { question: "ص 15: مشہور انبیاء کرام علیہم السلام کے نام پڑھیں۔", answer: "حضرت نوح، حضرت ابراہیم، حضرت موسیٰ، حضرت عیسیٰ علیہم السلام اور آخری نبی حضرت محمد ﷺ۔", sourcePages: [15] },
+    { question: "خالی جگہ پُر کریں: اللہ تعالیٰ کے پہلے نبی کا نام ____ ہے۔ (ص 16)", answer: "حضرت آدم علیہ السلام۔", sourcePages: [16] },
+    { question: "خالی جگہ پُر کریں: ہم تمام انبیاء کرام علیہم السلام پر ____ لاتے ہیں۔ (ص 16)", answer: "ہم تمام انبیاء کرام علیہم السلام پر ایمان لاتے ہیں۔", sourcePages: [16] },
+    { question: "خالی جگہ پُر کریں: انبیاء کرام علیہم السلام اللہ تعالیٰ کے بھیجے ہوئے ____ بندے ہیں۔ (ص 16)", answer: "انبیاء کرام علیہم السلام اللہ تعالیٰ کے بھیجے ہوئے خاص بندے ہیں۔", sourcePages: [16] },
+    { question: "اللہ تعالیٰ کے آخری نبی کا نام بتائیں۔ (ص 16)", answer: "حضرت محمد رسول اللہ ﷺ۔", sourcePages: [16] },
+    { question: "انبیاء کرام علیہم السلام نے لوگوں کو کس بات کا حکم دیا؟ (ص 14)", answer: "انہوں نے ایک اللہ تعالیٰ کی عبادت اور اچھے کام کرنے کا حکم دیا۔", sourcePages: [14] },
+    { question: "ص 17: استاد کی مدد سے دائرہ نما خانوں میں چار مشہور انبیاء کے نام لکھیں۔", answer: "نمونہ: حضرت نوح، حضرت ابراہیم، حضرت موسیٰ اور حضرت عیسیٰ علیہم السلام۔ صفحات 15–16 پر موجود فہرست میں آخری نبی حضرت محمد ﷺ کا نام بھی شامل ہے۔", sourcePages: [15,17] },
+    { question: "ص 17 کی سرگرمی: انبیاء کرام علیہم السلام کے واقعات سنیں اور اپنے دوستوں کو سنائیں۔", answer: "یہ زبانی جماعتی سرگرمی ہے؛ طالب علم استاد کی رہنمائی میں کسی نبی کا سبق آموز واقعہ سنائے۔", sourcePages: [17] }
+  ],
+  longQuestions: []
+};
+ISLAMYAT_1_DATA[3].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
+// Additional textbook-verified corrections from the scanned pages 17–28.
+ISLAMYAT_1_DATA[4].sections = [
+  { heading: "مسجد (ص 18–19)", urduTranslation: "مسجد نماز پڑھنے کی جگہ اور اللہ تعالیٰ کا گھر ہے۔ مسلمان دن میں پانچ بار نماز پڑھتے اور قرآن مجید کی تلاوت کرتے ہیں۔ مسجد کو پاک صاف رکھنا اور وہاں ادب سے رہنا چاہیے۔ مسجدِ نبوی ﷺ حضرت محمد ﷺ نے تعمیر فرمائی۔", englishTranslation: "A mosque is a place for prayer and worship. Muslims pray five times a day and recite the Quran there. Keep the mosque clean and behave respectfully. The Prophet ﷺ built Al-Masjid an-Nabawi.", sourcePages: [18,19] }
+];
+ISLAMYAT_1_DATA[4].exercise = {
+  textbookMcqs: [],
+  shortQuestions: [
+    { question: "مسجد کس کا گھر ہے؟ (ص 20)", answer: "مسجد اللہ تعالیٰ کا گھر ہے۔", sourcePages: [20] },
+    { question: "مسلمان مسجد میں کیا پڑھتے ہیں؟ (ص 20)", answer: "مسلمان مسجد میں نماز پڑھتے ہیں۔", sourcePages: [20] },
+    { question: "مسجد میں نماز پڑھنے سے کیا ہوتا ہے؟ (ص 20)", answer: "مسجد میں نماز پڑھنے سے اللہ تعالیٰ خوش ہوتے ہیں۔", sourcePages: [20] },
+    { question: "مسلمان مسجد میں کیوں جاتے ہیں؟ (ص 20)", answer: "مسلمان اللہ تعالیٰ کی عبادت اور نماز ادا کرنے کے لیے مسجد جاتے ہیں۔", sourcePages: [20] },
+    { question: "مسلمان دن میں کتنی نمازیں پڑھتے ہیں؟ (ص 20)", answer: "مسلمان دن میں پانچ نمازیں پڑھتے ہیں۔", sourcePages: [20] }
+  ], longQuestions: []
+};
+ISLAMYAT_1_DATA[4].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+ISLAMYAT_1_DATA[4].sections[0].sourcePages = [18,19,20,21];
+ISLAMYAT_1_DATA[4].exercise.shortQuestions.push(
+  { question: "ص 21: مسجد سے متعلق خطاطی میں کیا کرنا ہے؟", answer: "صفحے پر دی گئی مسجد سے متعلق عبارت کی خطاطی میں رنگ بھریں؛ یہ رنگ بھرنے کی سرگرمی ہے۔", sourcePages: [21] },
+  { question: "ص 21: مسجد کے دو آداب لکھیں۔", answer: "مسجد کو پاک صاف رکھیں اور وہاں خاموشی و ادب سے رہیں۔", sourcePages: [21] },
+  { question: "ص 21: مسجد کی زیارت کی سرگرمی میں کیا کرنا ہے؟", answer: "گھر کے کسی بڑے کے ساتھ محلے کی مسجد جائیں اور اس کے بارے میں اپنے دوست کو بتائیں۔ یہ ذاتی/زبانی سرگرمی ہے۔", sourcePages: [21] }
+);
+
+ISLAMYAT_1_DATA[5].sections = [
+  { heading: "اذان (ص 22–23)", urduTranslation: "نماز کے لیے پکارنے کو اذان کہتے ہیں۔ نماز سے پہلے اذان دی جاتی ہے۔ اذان بلند آواز سے دی جاتی ہے؛ اذان دینے والے کو مؤذن کہتے ہیں۔ اذان کے وقت خاموشی سے سننا چاہیے۔ حضرت بلال رضی اللہ عنہ پہلے مؤذن تھے۔", englishTranslation: "The call inviting people to prayer is the adhan. It is given before prayer, in a clear loud voice, by a mu’adhdhin. Listen quietly when the adhan is called. Bilal (RA) was the first mu’adhdhin.", sourcePages: [22,23] }
+];
+ISLAMYAT_1_DATA[5].exercise = {
+  textbookMcqs: [],
+  shortQuestions: [
+    { question: "نماز کے لیے پکارنے کو کیا کہتے ہیں؟ (ص 24)", answer: "نماز کے لیے پکارنے کو اذان کہتے ہیں۔", sourcePages: [24] },
+    { question: "اذان دینے والے کو کیا کہتے ہیں؟ (ص 24)", answer: "اذان دینے والے کو مؤذن کہتے ہیں۔", sourcePages: [24] },
+    { question: "اذان سن کر لوگ کہاں آتے ہیں؟ (ص 24)", answer: "اذان سن کر لوگ نماز کے لیے مسجد آتے ہیں۔", sourcePages: [24] },
+    { question: "اذان کس آواز میں دینی چاہیے؟ (ص 24)", answer: "اذان بلند آواز میں دینی چاہیے۔", sourcePages: [24] },
+    { question: "اذان کے وقت کیا کرنا چاہیے؟ (ص 23–25)", answer: "اذان کے وقت خاموشی سے سننا اور اس کے الفاظ کا جواب دینا چاہیے۔", sourcePages: [23,24,25] }
+  ], longQuestions: []
+};
+ISLAMYAT_1_DATA[5].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+ISLAMYAT_1_DATA[5].exercise.shortQuestions.push(
+  { question: "ص 25: مسجد میں اذان کے وقت کیا کریں؟", answer: "خاموشی سے اذان سنیں اور اس کے الفاظ دہرائیں۔", sourcePages: [25] },
+  { question: "ص 25: حضرت بلال رضی اللہ عنہ کے بارے میں استاد سے کیا سننا ہے؟", answer: "حضرت بلال رضی اللہ عنہ کے اذان دینے کے واقعے کی کہانی سنیں؛ یہ زبانی جماعتی سرگرمی ہے۔", sourcePages: [25] },
+  { question: "ص 25: کس خطاطی کو رنگنا ہے؟", answer: "صفحے پر دیے گئے اذان کے الفاظ کی خطاطی میں رنگ بھریں۔", sourcePages: [25] }
+);
+
+ISLAMYAT_1_DATA[6].sections = [
+  { heading: "نماز (ص 26–28)", urduTranslation: "نماز اسلام کا بنیادی رکن ہے اور اللہ تعالیٰ کی عبادت کے لیے ہے۔ اللہ تعالیٰ نے ہمیں عبادت کے لیے پیدا کیا ہے۔ نماز پڑھنے سے اللہ تعالیٰ خوش ہوتے ہیں۔ نماز کے لیے پاک صاف ہونا ضروری ہے۔", englishTranslation: "Salah is a basic pillar of Islam and an act of worship. Allah created us to worship Him. Allah is pleased when we pray, and cleanliness is necessary for prayer.", sourcePages: [26,27,28] }
+];
+ISLAMYAT_1_DATA[6].exercise = {
+  textbookMcqs: [],
+  shortQuestions: [
+    { question: "نماز اسلام کا کیا ہے؟ (ص 26)", answer: "نماز اسلام کا بنیادی رکن ہے۔", sourcePages: [26] },
+    { question: "اللہ تعالیٰ نے ہمیں کس لیے پیدا کیا ہے؟ (ص 26)", answer: "اللہ تعالیٰ نے ہمیں اپنی عبادت کے لیے پیدا کیا ہے۔", sourcePages: [26] },
+    { question: "عبادت کا سب سے بہترین طریقہ کیا ہے؟ (ص 26)", answer: "نماز پڑھنا عبادت کا سب سے بہترین طریقہ ہے۔", sourcePages: [26] },
+    { question: "نماز پڑھنے سے اللہ تعالیٰ کیا ہوتے ہیں؟ (ص 26)", answer: "نماز پڑھنے سے اللہ تعالیٰ خوش ہوتے ہیں۔", sourcePages: [26] },
+    { question: "نماز ادا کرنے سے پہلے کیا ضروری ہے؟ (ص 26)", answer: "نماز ادا کرنے سے پہلے پاک صاف ہونا ضروری ہے۔", sourcePages: [26] },
+    { question: "ص 27: اللہ تعالیٰ نے ہمیں کس لیے پیدا کیا؟", answer: "اللہ تعالیٰ نے ہمیں اپنی عبادت کے لیے پیدا کیا۔", sourcePages: [27] },
+    { question: "ص 27: نماز پڑھنے سے پہلے ہم کیا کرتے ہیں؟", answer: "نماز سے پہلے وضو کرتے ہیں۔", sourcePages: [27,28] },
+    { question: "ص 28: خالی جگہیں پُر کریں: (الف) عبادت کا سب سے بہترین طریقہ ____ ہے؛ (ب) نماز پڑھنے سے پہلے ہم ____ کرتے ہیں؛ (ج) مسلمان پر دن میں ____ نمازیں فرض ہیں۔", answer: "(الف) نماز؛ (ب) وضو؛ (ج) پانچ۔", sourcePages: [28] },
+    { question: "ص 28: وضو کرنے سے کیا ہوتا ہے؟", answer: "وضو کرنے سے ہم پاک صاف ہو جاتے ہیں۔", sourcePages: [28] },
+    { question: "ص 28: دن میں کتنی نمازیں فرض ہیں اور ان کے نام کیا ہیں؟", answer: "پانچ: فجر، ظہر، عصر، مغرب اور عشاء۔", sourcePages: [28,29] }
+  ], longQuestions: []
+};
+ISLAMYAT_1_DATA[6].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
+ISLAMYAT_1_DATA[9].sections = [
+  { heading: "اچھے اخلاق (ص 39–42)", urduTranslation: "رسول اللہ ﷺ سچائی، امانت، حسنِ سلوک اور جانوروں کے ساتھ نرمی کی تعلیم دیتے تھے۔ بچوں کو سچ بولنا، دوسروں کا خیال رکھنا، بڑوں کا ادب کرنا، اپنی باری کا انتظار کرنا اور دوسروں سے اچھے اخلاق سے پیش آنا چاہیے۔", englishTranslation: "The Prophet ﷺ taught truthfulness, trustworthiness, kindness, and care for animals. Children should tell the truth, care for others, respect elders, wait their turn, and behave kindly.", sourcePages: [39,40,41,42] },
+  { heading: "سلام کرنا (ص 43–48)", urduTranslation: "مسلمان ایک دوسرے کو السلام علیکم کہتے ہیں۔ سلام کرنا سنت ہے اور سلام کا جواب دینا چاہیے۔ چھوٹے بڑے کو پہلے سلام کریں، پیدل چلنے والا بیٹھے ہوئے کو سلام کرے، گھر میں داخل ہوتے اور نکلتے وقت سلام کریں۔", englishTranslation: "Muslims greet one another with Assalamu Alaikum. Greeting is a Sunnah and greetings should be returned. Children greet elders first; a passer-by greets someone seated; greet when entering and leaving home.", sourcePages: [43,44,45,46,47,48] },
+  { heading: "انبیاء کرام علیہم السلام کا تعارف (ص 49–54)", urduTranslation: "اللہ تعالیٰ نے انسانوں کی رہنمائی کے لیے انبیاء کرام علیہم السلام بھیجے۔ حضرت آدم علیہ السلام پہلے نبی اور حضرت محمد ﷺ آخری نبی ہیں۔ انبیاء اللہ کی عبادت اور نیک کام کرنے کی تعلیم دیتے تھے۔", englishTranslation: "Allah sent prophets to guide people. Adam (AS) was the first prophet and Muhammad ﷺ is the final prophet. Prophets taught people to worship Allah and do good deeds.", sourcePages: [49,50,51,52,53,54] }
+];
+ISLAMYAT_1_DATA[9].exercise = {
+  textbookMcqs: [],
+  shortQuestions: [
+    { question: "حضرت محمد ﷺ کیا ہمیشہ بولتے تھے؟ (ص 37)", answer: "آپ ﷺ ہمیشہ سچ بولتے تھے۔", sourcePages: [37] },
+    { question: "صادق و امین کا کیا مطلب ہے؟ (ص 37)", answer: "صادق کا مطلب سچ بولنے والا اور امین کا مطلب امانت دار ہے۔", sourcePages: [37] },
+    { question: "رسول اللہ ﷺ نے جھوٹ اور امانت کے بارے میں کیا تعلیم دی؟ (ص 35–36)", answer: "آپ ﷺ نے سچ بولنے اور امانت کا خیال رکھنے کی تعلیم دی۔", sourcePages: [35,36] },
+    { question: "دوستوں کو نام سے کیا کرنا چاہیے؟ (ص 41)", answer: "دوستوں کو اچھے نام سے پکارنا چاہیے۔", sourcePages: [41] },
+    { question: "بڑوں کا کیا کرنا چاہیے؟ (ص 41)", answer: "بڑوں کا ادب کرنا چاہیے۔", sourcePages: [41] },
+    { question: "وقت کی کیا کرنی چاہیے؟ (ص 41)", answer: "وقت کی پابندی کرنی چاہیے۔", sourcePages: [41] },
+    { question: "کسی کی چیز اجازت لے کر کیا کرنی چاہیے؟ (ص 41)", answer: "کسی کی چیز اجازت لے کر استعمال کرنی چاہیے۔", sourcePages: [41] },
+    { question: "سلام کرنے کے دو آداب لکھیں۔ (ص 43–48)", answer: "چھوٹے بڑوں کو پہلے سلام کریں؛ گھر میں داخل ہوتے اور نکلتے وقت سلام کریں۔", sourcePages: [43,45,46,47] },
+    { question: "السلام علیکم کے جواب میں کیا کہتے ہیں؟ (ص 43–46)", answer: "وعلیکم السلام ورحمۃ اللہ کہتے ہیں۔", sourcePages: [43,46] },
+    { question: "پہلے نبی کون تھے اور آخری نبی کون ہیں؟ (ص 49–51)", answer: "حضرت آدم علیہ السلام پہلے نبی تھے اور حضرت محمد ﷺ آخری نبی ہیں۔", sourcePages: [49,51] },
+    { question: "اللہ تعالیٰ نے انبیاء کرام علیہم السلام کو کیوں بھیجا؟ (ص 49–51)", answer: "انسانوں کی رہنمائی کے لیے بھیجا تاکہ وہ اللہ کی عبادت کریں اور نیک کام کریں۔", sourcePages: [49,51] },
+    { question: "ص 54 پر دیے گئے الفاظ کے جوڑ ملائیں۔", answer: "نصف—آدھا؛ خاص بندے—چنے ہوئے لوگ؛ ایمان لانا—دل و جان سے ماننا؛ خاتم—ختم کرنے والا؛ انبیاء—نبی کی جمع؛ قیامت کا دن—آخرت کا دن؛ فضیلت—برتری؛ عبادت—بندگی؛ نبی—خبر دینے والا۔", sourcePages: [54] }
+  ], longQuestions: []
+};
+ISLAMYAT_1_DATA[9].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
+// Page-specific completion for the Seerah lesson and activities (printed pp. 30–34).
+ISLAMYAT_1_DATA[7].sections = [
+  { heading: "ولادتِ مبارکہ اور رحمت للعالمین (ص 30)", urduTranslation: "حضرت محمد ﷺ مکہ مکرمہ میں پیدا ہوئے۔ والد حضرت عبداللہ آپ ﷺ کی ولادت سے پہلے وفات پا گئے۔ والدہ حضرت آمنہ نے آپ ﷺ کا نام احمد رکھا، جبکہ دادا نے محمد رکھا۔ آپ ﷺ کا تعلق ہاشمی خاندان سے تھا۔", englishTranslation: "Prophet Muhammad ﷺ was born in Makkah. His father, Abdullah, died before his birth. His mother, Aminah, named him Ahmad, while his grandfather named him Muhammad. He belonged to the Banu Hashim family.", sourcePages: [30] },
+  { heading: "بچپن اور خاندان (ص 31–34)", urduTranslation: "چھ برس کی عمر میں والدہ حضرت آمنہؓ کا انتقال ہوا۔ دائی حلیمہ سعدیہؓ نے ابتدائی پرورش کی۔ دادا حضرت عبدالمطلب نے کفالت کی؛ ان کے انتقال کے بعد چچا حضرت ابوطالب نے آپ ﷺ کی پرورش کی۔", englishTranslation: "Halima Saadia cared for him in early childhood. His mother Aminah passed away when he was six. His grandfather Abdul Muttalib then cared for him; after his grandfather died, his uncle Abu Talib raised him.", sourcePages: [31,32,34] }
+];
+ISLAMYAT_1_DATA[7].exercise = {
+  textbookMcqs: [],
+  shortQuestions: [
+    { question: "ص 32: خالی جگہیں پُر کریں: والد کا نام، والدہ کا نام، والدہ کے انتقال کے وقت عمر، حضرت ابوطالب کی محبت، اور نبوت عطا ہونے کی عمر۔", answer: "والد: حضرت عبداللہ؛ والدہ: حضرت آمنہ؛ والدہ کے انتقال کے وقت عمر: 6 سال؛ حضرت ابوطالب آپ ﷺ سے بہت محبت کرتے تھے؛ نبوت 40 سال کی عمر میں عطا ہوئی۔", sourcePages: [32] },
+    { question: "ص 30: ہمارے پیارے نبی ﷺ کب اور کہاں پیدا ہوئے؟", answer: "آپ ﷺ 12 ربیع الاول کو مکہ مکرمہ میں پیدا ہوئے۔", sourcePages: [30] },
+    { question: "ص 30: آپ ﷺ کے والد کب وفات پا گئے؟", answer: "آپ ﷺ کے والد حضرت عبداللہ، آپ ﷺ کی ولادت سے پہلے وفات پا گئے تھے۔", sourcePages: [30] },
+    { question: "ص 32: ہمارے پیارے نبی حضرت محمد ﷺ کہاں پیدا ہوئے؟", answer: "آپ ﷺ مکہ مکرمہ میں پیدا ہوئے۔", sourcePages: [32] },
+    { question: "ص 32: آپ ﷺ کی والدہ نے آپ کا نام کیا رکھا؟", answer: "آپ ﷺ کی والدہ نے آپ کا نام احمد رکھا تھا۔", sourcePages: [30,32] },
+    { question: "ص 30: آپ ﷺ کی والدہ اور دادا نے آپ کا کیا نام رکھا؟", answer: "والدہ حضرت آمنہ نے احمد نام رکھا، جبکہ دادا حضرت عبدالمطلب نے محمد نام رکھا۔", sourcePages: [30] },
+    { question: "ص 31–34: آپ ﷺ کے والد، والدہ، دادا اور چچا کے نام خاندانی درخت میں درج کریں۔", answer: "والد: حضرت عبداللہ؛ والدہ: حضرت آمنہ؛ دادا: حضرت عبدالمطلب؛ چچا: حضرت ابوطالب۔", sourcePages: [31,34] },
+    { question: "ص 33: خطاطی کی سرگرمی میں کون سا نام رنگنا ہے؟", answer: "حضرت محمد رسول اللہ ﷺ کا نام اور درود شریف کی عبارت رنگیں۔ یہ رنگ بھرنے کی سرگرمی ہے، اس کا کوئی واحد تحریری جواب نہیں۔", sourcePages: [33] }
+  ],
+  longQuestions: [
+    { question: "ص 31: حضرت محمد ﷺ کے بچپن میں آپ کی کفالت کس نے کی؟", answer: "والدہ حضرت آمنہؓ کے انتقال کے بعد دادا حضرت عبدالمطلب نے پرورش کی۔ دادا کے انتقال کے بعد چچا حضرت ابوطالب نے آپ ﷺ کی کفالت کی۔", sourcePages: [31] }
+  ]
+};
+ISLAMYAT_1_DATA[7].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
+// The five-prayer word-search and classroom recitation activity on printed p. 29.
+ISLAMYAT_1_DATA[6].sections[0].sourcePages = [26,27,28,29];
+ISLAMYAT_1_DATA[6].exercise.shortQuestions.push(
+  { question: "ص 29: لفظی تلاش میں پانچ نمازوں کے نام تلاش کریں۔", answer: "فجر، ظہر، عصر، مغرب اور عشاء۔", sourcePages: [29] },
+  { question: "ص 29: نمازوں کے نام لکھ کر جماعت میں بلند آواز سے پڑھیں۔", answer: "فجر، ظہر، عصر، مغرب اور عشاء۔ یہ اجتماعی پڑھنے کی سرگرمی ہے۔", sourcePages: [29] }
+);
+ISLAMYAT_1_DATA[6].exercise.longQuestions.push(
+  { question: "ص 29: پانچ نمازوں کے نام لکھیں اور نماز کی اہمیت بتائیں۔", answer: "پانچ نمازیں فجر، ظہر، عصر، مغرب اور عشاء ہیں۔ نماز اسلام کا بنیادی رکن اور اللہ تعالیٰ کی عبادت کا اہم طریقہ ہے۔", sourcePages: [26,29] }
+);
+
+// Reconcile the first-bab sequence with its actual printed pages 1–8.
+// Pages 1–2 teach recitation and memorization; pages 3–8 continue with
+// Kalima, the cleanliness hadith, the knowledge dua, and phrase practice.
+ISLAMYAT_1_DATA[0].sections = [
+  { heading: "ناظرہ قرآن مجید اور تجوید (ص 1)", urduTranslation: "قرآنی قاعدے کے ذریعے درست مخارج کے ساتھ حروف کی شکلیں اور آوازیں، زبر، زیر، پیش، جزم، قلقہ، غنہ، تشدید، مد اور دیگر ابتدائی تجویدی علامات سیکھیں۔ سبق میں دی گئی آخری دو سورتوں کی درست تلفظ کے ساتھ تلاوت کریں۔ قرآن مجید اللہ تعالیٰ کا کلام ہے اور اس میں 114 سورتیں ہیں۔", englishTranslation: "Use the Qaida to learn letter forms and sounds, correct articulation, and introductory signs such as zabar, zer, pesh, jazm, qalqalah, ghunnah, shaddah and madd. Recite the two surahs printed in the lesson with correct pronunciation. The Quran is Allah’s word and has 114 surahs.", sourcePages: [1] },
+  { heading: "حفظِ قرآن مجید: سورۃ الفاتحہ اور سورۃ الاخلاص (ص 2)", arabic: "سورۃ الفاتحہ: بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ ۝\nسورۃ الاخلاص: بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ ۝", urduTranslation: "سورۃ الفاتحہ اور سورۃ الاخلاص درست تلفظ کے ساتھ یاد کریں۔ نمازوں میں ان کی زبانی تلاوت کی مشق کریں۔", englishTranslation: "Memorize Surah Al-Fatihah and Surah Al-Ikhlas with correct pronunciation, and practise reciting them from memory in prayer.", sourcePages: [2] }
+];
+ISLAMYAT_1_DATA[0].exercise = {
+  textbookMcqs: [],
+  shortQuestions: [
+    { question: "قرآن مجید میں کتنی سورتیں ہیں؟ (ص 1)", answer: "قرآن مجید میں 114 سورتیں ہیں۔", sourcePages: [1] },
+    { question: "سبق میں کون سی دو سورتیں حفظ کرنے کے لیے دی گئی ہیں؟ (ص 2)", answer: "سورۃ الفاتحہ اور سورۃ الاخلاص۔", sourcePages: [2] },
+    { question: "ص 1 کی سرگرمی: سبق میں دی گئی سورتوں کی تلاوت کس طرح کرنی ہے؟", answer: "درست تلفظ اور تجوید کے ساتھ تلاوت کی مشق کریں؛ یہ زبانی تلاوت کی سرگرمی ہے۔", sourcePages: [1] },
+    { question: "ص 2 کی سرگرمی: گھر میں کن سورتوں کی مشق سنائیں؟", answer: "سورۃ الفاتحہ اور سورۃ الاخلاص کی درست تلاوت گھر میں سنائیں۔", sourcePages: [2] }
+  ],
+  longQuestions: []
+};
+ISLAMYAT_1_DATA[0].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
+ISLAMYAT_1_DATA[1].sections = [
+  { heading: "کلمہ طیبہ اور اچھے کلمات (ص 3)", arabic: "لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَّسُولُ اللهِ · مَا شَاءَ اللهُ · إِنْ شَاءَ اللهُ", urduTranslation: "کلمہ طیبہ: اللہ تعالیٰ کے سوا کوئی عبادت کے لائق نہیں، محمد ﷺ اللہ کے رسول ہیں۔ ما شاء اللہ: جو اللہ نے چاہا۔ ان شاء اللہ: اگر اللہ نے چاہا۔", englishTranslation: "Kalima Tayyiba: There is no one worthy of worship except Allah; Muhammad ﷺ is the Messenger of Allah. Masha Allah: What Allah has willed. Insha Allah: If Allah wills.", sourcePages: [3] },
+  { heading: "حدیثِ نبوی ﷺ: صفائی نصف ایمان ہے (ص 4)", arabic: "الطُّهُورُ شَطْرُ الْإِيمَانِ", urduTranslation: "صفائی نصف ایمان ہے۔ (صحیح مسلم، حدیث 534)", englishTranslation: "Cleanliness is half of faith. (Sahih Muslim, Hadith 534)", pashtoTranslation: "پاکوالی د ایمان نیمایي ده. (صحیح مسلم، حدیث ۵۳۴)", tashreeh: "حدیث کو سمجھ کر صفائی کو اپنی روزمرہ زندگی کا معمول بنائیں۔", sourcePages: [4] },
+  { heading: "علم میں اضافے کی دعا (ص 5)", arabic: "رَّبِّ زِدْنِي عِلْمًا", urduTranslation: "اے میرے رب! میرے علم میں اضافہ فرما۔ علم نور ہے۔", englishTranslation: "My Lord, increase me in knowledge. Knowledge is light.", pashtoTranslation: "ای زما ربه! زما په علم کې زیاتوالی راوله.", tashreeh: "دعا روزانہ پڑھیں اور علم کی اہمیت سمجھیں۔", sourcePages: [5] },
+  { heading: "کلمہ طیبہ کی خطاطی اور رنگ بھرنا (ص 6–7)", urduTranslation: "صفحہ 6 پر کلمہ طیبہ اور صفحہ 7 پر ما شاء اللہ اور ان شاء اللہ کی خطاطی میں رنگ بھریں۔ یہ تحریری سوال نہیں بلکہ رنگ بھرنے کی سرگرمی ہے۔", englishTranslation: "Colour the Kalima Tayyiba calligraphy on page 6 and the Masha Allah and Insha Allah calligraphy on page 7. These are colouring activities, not written questions.", sourcePages: [6,7] }
+];
+ISLAMYAT_1_DATA[1].exercise = {
+  textbookMcqs: [],
+  shortQuestions: [
+    { question: "کلمہ طیبہ کا ترجمہ لکھیں۔ (ص 3)", answer: "اللہ تعالیٰ کے سوا کوئی عبادت کے لائق نہیں، محمد ﷺ اللہ کے رسول ہیں۔", sourcePages: [3] },
+    { question: "ما شاء اللہ اور ان شاء اللہ کے معنی کیا ہیں؟ (ص 3)", answer: "ما شاء اللہ: جو اللہ نے چاہا؛ ان شاء اللہ: اگر اللہ نے چاہا۔", sourcePages: [3] },
+    { question: "حدیثِ مبارک کے مطابق صفائی کیا ہے؟ (ص 4)", answer: "صفائی نصف ایمان ہے۔ (صحیح مسلم، حدیث 534)", sourcePages: [4] },
+    { question: "علم میں اضافے کی دعا لکھیں اور اس کا ترجمہ بتائیں۔ (ص 5)", answer: "رَّبِّ زِدْنِي عِلْمًا — اے میرے رب! میرے علم میں اضافہ فرما۔", sourcePages: [5] },
+    { question: "ص 8 پر ہر جملے کے لیے درست کلمہ لکھیں: (1) میں نماز پڑھوں گا/گی، (2) ہم سیر کرنے جائیں گے/گی، (3) میں ہمیشہ صاف ستھرا رہوں گا/گی، (4) ہمارا ملک پاکستان بہت اچھا ملک ہے، (5) میرے دادا ابو بہت اچھے ہیں، (6) میں روزانہ سکول جاؤں گا/گی، (7) مجھے اللہ تعالیٰ نے خوبصورت صورت بنایا ہے، (8) میں قرآن پڑھوں گا/گی۔", answer: "1) ان شاء اللہ؛ 2) ان شاء اللہ؛ 3) ان شاء اللہ؛ 4) ما شاء اللہ؛ 5) ما شاء اللہ؛ 6) ان شاء اللہ؛ 7) ما شاء اللہ؛ 8) ان شاء اللہ۔", sourcePages: [8] },
+    { question: "ص 5–7 کی سرگرمیوں میں کیا کرنا ہے؟", answer: "علم کی دعا روزانہ پڑھنے کی عادت بنائیں، علم کی اہمیت بتائیں، اور صفحات 6–7 کی خطاطی میں رنگ بھریں۔", sourcePages: [5,6,7] }
+  ],
+  longQuestions: []
+};
+ISLAMYAT_1_DATA[1].sloQuestions = { mcqs: [], shortQuestions: [], longQuestions: [] };
+
 if (typeof DATA !== 'undefined') {
   DATA.islamyat1Chapters = ISLAMYAT_1_DATA;
 }

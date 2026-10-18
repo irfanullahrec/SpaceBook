@@ -1,8 +1,7 @@
 /**
  * SpaceBook Web - Class 1 Pashto Dataset (KPK Textbook Board)
- * Complete 23 Units verbatim from D:\SpaceBook\Books\1st\1st Pashto\New folder\پښتو.docx
- * Full Line-by-Line Pashto Text, Urdu & English Translations, Word Vocabulary,
- * Solved Textbook Exercises, Counting Drills (1-100), Grammar, and Comprehensive SLO Assessments.
+ * Existing 23-unit draft; source-of-truth is the scanned JPG book. Metadata is being reconciled to the scanned contents pages.
+ * Draft chapter text and answers are not yet fully verified against the scanned JPG pages.
  */
 
 var PASHTO_1_DATA = [
@@ -1532,7 +1531,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 8: Manners of Conversation",
     "titlePs": "د خبرو اترو اداب",
     "author": "خېبر پښتونخوا ټېکسټ بک بورډ، پېښور",
-    "pageRange": "31-33",
+    "pageRange": "31-32",
     "theme": "ښه اخلاق او د خبرو کلتور",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -1660,7 +1659,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 9: Work and Workers (Poem)",
     "titlePs": "کار او کار کوونکي (نظم)",
     "author": "خېبر پښتونخوا ټېکسټ بک بورډ، پېښور",
-    "pageRange": "34-37",
+    "pageRange": "33-36",
     "theme": "د مزدورانو او کسبونو درناوی",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -1790,7 +1789,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 10: The Falcon and the Rooster (Story)",
     "titlePs": "باز او چرګ (قیصه)",
     "author": "ولسي اخلاقي قیصه",
-    "pageRange": "38-41",
+    "pageRange": "37-40",
     "theme": "تجربه او حقیقت پېژندنه",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -1953,7 +1952,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 11: Abdur Rahman Baba (RA)",
     "titlePs": "عبد الرحمان بابا رحمه الله",
     "author": "خېبر پښتونخوا ټېکسټ بک بورډ، پېښور",
-    "pageRange": "42-45",
+    "pageRange": "41-44",
     "theme": "پښتو ادبیات او ملي اتلان",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -2101,7 +2100,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 12: Mobile Phone (Poem)",
     "titlePs": "موبائل فون (نظم)",
     "author": "خېبر پښتونخوا ټېکسټ بک بورډ، پېښور",
-    "pageRange": "46-48",
+    "pageRange": "45-47",
     "theme": "نوي ایجادات او د ټکنالوژۍ ګټې",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -2264,7 +2263,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 13: Two Daughters and a Date (Moral Story)",
     "titlePs": "دوه لوڼه او یوه کجوره (قیصه)",
     "author": "نبوي سیرت او ولسي اخلاقي قیصه",
-    "pageRange": "49-52",
+    "pageRange": "48-51",
     "theme": "ایثار، مینه او د مور سخاوت",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -2427,7 +2426,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 14: Hujra (Traditional Pashtun Community Space)",
     "titlePs": "حجره",
     "author": "خېبر پښتونخوا ټېکسټ بک بورډ، پېښور",
-    "pageRange": "53-56",
+    "pageRange": "52-54",
     "theme": "پښتني کلتور او ټولنیز روايات",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -2598,7 +2597,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 15: Computer",
     "titlePs": "کمپیوټر",
     "author": "خېبر پښتونخوا ټېکسټ بک بورډ، پېښور",
-    "pageRange": "57-60",
+    "pageRange": "55-57",
     "theme": "معلوماتي ټکنالوژي او ډیجیټل دور",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -2768,7 +2767,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 16: Eid-ul-Fitr (Poem)",
     "titlePs": "وړوکے اختر (نظم)",
     "author": "خېبر پښتونخوا ټېکسټ بک بورډ، پېښور",
-    "pageRange": "61-63",
+    "pageRange": "58-60",
     "theme": "اسلامي اخترونه او ټولنیزه خوښي",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -2889,7 +2888,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 17: Let's Laugh (Humor and Wit)",
     "titlePs": "راځئ چې وخاندو",
     "author": "د ماشومانو ادبي ټوکې او لطیفې",
-    "pageRange": "64-65",
+    "pageRange": "61-62",
     "theme": "صحيح مزاح او د ذهن تازګي",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -3010,7 +3009,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 18: A True Story (Quaid-e-Azam Muhammad Ali Jinnah)",
     "titlePs": "رښتونې قیصه",
     "author": "تاریخي ولسي قیصه",
-    "pageRange": "66-67",
+    "pageRange": "63-64",
     "theme": "محنت، استقامت او ملي اتل",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -3177,7 +3176,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 19: Prize Distribution",
     "titlePs": "د انعامونو وېش",
     "author": "خېبر پښتونخوا ټېکسټ بک بورډ، پېښور",
-    "pageRange": "68-71",
+    "pageRange": "65-68",
     "theme": "تعلیمي لاسته راوړنې او هڅونه",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -3325,7 +3324,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 20: Rhymes and Riddles (Poem)",
     "titlePs": "اَړَوَنَه (نظم)",
     "author": "فيض الوهاب فيض",
-    "pageRange": "72-73",
+    "pageRange": "69-70",
     "theme": "فکري تنده او د ذهن چټکتیا",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -3464,7 +3463,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 21: Crafts and Professions",
     "titlePs": "هنرونه",
     "author": "خېبر پښتونخوا ټېکسټ بک بورډ، پېښور",
-    "pageRange": "74-76",
+    "pageRange": "71-74",
     "theme": "لاسي صنایع، مهارتونه او کسبونه",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -3607,7 +3606,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 22: The Hunter and the Fox (Moral Story)",
     "titlePs": "ښکاري او لومبړه (قیصه)",
     "author": "ولسي اخلاقي قیصه",
-    "pageRange": "77-80",
+    "pageRange": "75-78",
     "theme": "د لالچ بدي او د صبر ګټه",
     "authorInfo": "د پښتو درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -3769,7 +3768,7 @@ var PASHTO_1_DATA = [
     "titleEn": "Unit 23: Prayer / Dua (Poem)",
     "titlePs": "دعا (نظم)",
     "author": "پروفېسر اباسين يوسفزی",
-    "pageRange": "81-82",
+    "pageRange": "79-82",
     "theme": "تضرع، نېکمرغي او د علم غوښتنه",
     "authorInfo": "د پښتو لازمي درسي کتاب، اول جماعت، خېبر پښتونخوا ټېکسټ بک بورډ پېښور۔",
     "learningOutcomes": [
@@ -3902,3 +3901,6 @@ if (typeof window !== 'undefined') {
 if (typeof DATA !== 'undefined') {
   DATA.pashto1Chapters = PASHTO_1_DATA;
 }
+
+
+

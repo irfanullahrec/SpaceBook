@@ -96,9 +96,60 @@
     return { text: out, detected: '' };
   }
 
+  // ── offline lexicon: SB_OFFLINE_LEXICON rows + ENG_URDU_DICT + every book's word list (built once, no network) ──
+  const LX_NORM = (w, l) => l === 'en' ? String(w).toLowerCase().replace(/[^a-z'-]/g, '') :
+    String(w).replace(/[ً-ٰٟـۡ]/g, '').replace(/ي/g, 'ی').replace(/ك/g, 'ک').replace(/ہ|ۀ|ة/g, 'ه').replace(/[^\p{L}\s]/gu, '').replace(/\s+/g, ' ').trim();
+  let LX = null;
+  function lexicon() {
+    if (LX) return LX;
+    LX = { en: new Map(), ur: new Map(), ps: new Map(), ar: new Map() };
+    const add = rec => ORDER.forEach(l => String(rec[l] || '').split(/[،,]/).forEach(part => {
+      const k = LX_NORM(part.replace(/\(.*?\)/g, ''), l);
+      if (!k || k.split(' ').length > 3) return;
+      const cur = LX[l].get(k);
+      if (!cur) LX[l].set(k, Object.assign({}, rec));
+      else ORDER.forEach(t => { if (!cur[t] && rec[t]) cur[t] = rec[t]; });
+    }));
+    try { String(window.SB_OFFLINE_LEXICON || '').split('\n').forEach(r => { const p = r.split('|'); if (p.length === 4) add({ en: p[0], ur: p[1], ps: p[2], ar: p[3] }); }); } catch (e) { /* none */ }
+    try {
+      ['CLS1_BOOKS', 'CLS2_BOOKS', 'CLS3_BOOKS', 'CLS4_BOOKS', 'CLS5_BOOKS', 'CLS6_BOOKS', 'CLS7_BOOKS', 'CLS8_BOOKS', 'CLS9_BOOKS', 'CLS10_BOOKS', 'CLASS11_BOOKS'].forEach(n => {
+        const lib = window[n] || {};
+        Object.keys(lib).forEach(k => { const w = lib[k] && lib[k].words || {}; Object.keys(w).forEach(en => { const m = w[en] || []; add({ en, ur: m[0], ps: m[1] }); }); });
+      });
+      ['MATH_5_WORDS', 'MATH_6_WORDS', 'MATH_7_WORDS', 'MATH_8_WORDS', 'MATH_11_WORDS'].forEach(n => {
+        let w = null; try { w = window[n] || eval(n); } catch (e) { w = null; }
+        if (w) Object.keys(w).forEach(en => { const m = w[en] || []; add({ en, ur: m[0], ps: m[1] }); });
+      });
+      if (typeof ENG_URDU_DICT !== 'undefined') Object.keys(ENG_URDU_DICT).forEach(en => {
+        const e = ENG_URDU_DICT[en]; if (!e) return;
+        const u = e.u && e.u !== 'اردو معنی' && !/^اردو معنی/.test(e.u) ? e.u : '';
+        if (u || e.p) add({ en, ur: u, ps: e.p || '' });
+      });
+    } catch (e) { /* partial lexicon is fine */ }
+    return LX;
+  }
+  function offlineLookup(text, src, tgt) {
+    const L = lexicon();
+    const tries = src === 'en' ? ['en'] : [src, 'ur', 'ps', 'ar'].filter((x, i, a) => x !== 'en' && a.indexOf(x) === i);
+    for (const l of tries) {
+      let k = LX_NORM(text, l);
+      let rec = L[l].get(k);
+      if (!rec && l === 'en' && typeof window.lookupEngWord === 'function') { const e = window.lookupEngWord(k); if (e) rec = L.en.get(e.word) || { en: e.word, ur: e.u, ps: e.p }; }
+      if (!rec && l !== 'en') rec = L[l].get(k.replace(/^(و|ال|وال|بال|فال|لل)/, '')) || L[l].get(k.replace(/(ونه|انو|ونو|ان|ې|ه|ے|یں|وں)$/, ''));
+      if (rec && rec[tgt] && LX_NORM(rec[tgt], tgt) !== LX_NORM(text, tgt)) return rec[tgt];
+    }
+    return '';
+  }
+  window.SBOfflineLookup = offlineLookup;
+
   async function translate(text, src, tgt, sure) {
     const clean = String(text || '').replace(/\s+/g, ' ').trim().slice(0, MAX_CHARS);
     if (!clean) return { text: '', source: 'none' };
+    if (clean.split(' ').length <= 3) {
+      const off = offlineLookup(clean, src, tgt);
+      if (off) return { text: off, source: 'dictionary' };
+    }
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) return { text: '', source: 'offline' };
     const key = src + '>' + tgt + ':' + clean;
     if (memCache.has(key)) return memCache.get(key);
     const persisted = store.get('c:' + key, null);
