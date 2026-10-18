@@ -1,0 +1,56 @@
+"""PDF30 (printed 47–48): 'The Last Leaf' (end); About the author; Glossary; Reading Comprehension Q1–10; Writing Suggestions; Oral Communication."""
+from class12_book_common import Book, Builder, gloss
+
+BOOK = Book('english')
+r = Builder()
+P = [
+    ('An hour later she said, "Sue, some day I hope to paint the Bay of Naples."', 'ایک گھنٹے بعد اس نے کہا، ’’سو، مجھے امید ہے کسی دن میں خلیجِ نیپلز کی تصویر بناؤں گی۔‘‘', 'یو ساعت وروسته یې وویل، "سو، هیله لرم یوه ورځ د ناپل د خلیج انځور جوړ کړم."'),
+    ("The doctor came in the afternoon. Sue followed him into the hall outside Johnsy's room to talk to him.", 'دوپہر کو ڈاکٹر آیا۔ سو اس سے بات کرنے کے لیے جانزی کے کمرے کے باہر ہال میں اس کے پیچھے گئی۔', 'ماسپښین ډاکټر راغی. سو د هغه سره د خبرو لپاره د جانزي د کوټې بهر دهلیز ته ورپسې لاړه.'),
+    ('"The chances are good," said the doctor. He took Sue\'s thin, shaking hand in his. "Give her good care, and she\'ll get well. And now I must see another sick person in this house. His name is Behrman. A painter, I believe. Pneumonia, too. Mike is an old, weak man, and he is very ill. There is no hope for him. But we take him to the hospital today. We\'ll make it as easy for him as we can."',
+     '’’امکانات اچھے ہیں،‘‘ ڈاکٹر نے کہا۔ اس نے سو کا پتلا، کانپتا ہاتھ اپنے ہاتھ میں لیا۔ ’’اس کی اچھی دیکھ بھال کرو، وہ ٹھیک ہو جائے گی۔ اور اب مجھے اس گھر میں ایک اور مریض کو دیکھنا ہے۔ اس کا نام بہرمن ہے۔ میرے خیال میں ایک مصور ہے۔ اسے بھی نمونیا ہے۔ مائیک ایک بوڑھا، کمزور آدمی ہے اور بہت بیمار ہے۔ اس کے بچنے کی کوئی امید نہیں۔ لیکن ہم آج اسے ہسپتال لے جا رہے ہیں۔ جتنا ہو سکے اس کے لیے آسانی پیدا کریں گے۔‘‘',
+     '"چانسونه ښه دي،" ډاکټر وویل. د سو نری لړزېدونکی لاس یې په خپل لاس کې ونیو. "ښه پاملرنه ورته وکړه، روغه به شي. او اوس باید په دې کور کې بل ناروغ وګورم. نوم یې بهرمن دی. زما په اند انځورګر دی. هغه هم نمونیا لري. مایک یو زوړ کمزوری سړی دی او ډېر ناروغه دی. د هغه لپاره هیله نشته. خو نن یې روغتون ته وړو. څومره چې کولی شو، د هغه لپاره به یې اسانه کړو."'),
+    ('The next day the doctor said to Sue: "She\'s safe. You have done it. Food and care now—that\'s all."', 'اگلے دن ڈاکٹر نے سو سے کہا: ’’وہ خطرے سے باہر ہے۔ تم نے کر دکھایا۔ اب صرف خوراک اور دیکھ بھال — بس۔‘‘', 'بله ورځ ډاکټر سو ته وویل: "هغه له خطر وتلې ده. تا دا وکړل. اوس خواړه او پاملرنه — بس."'),
+    ('And that afternoon Sue came to the bed where Johnsy lay. She put one arm around her.', 'اور اس دوپہر سو اس بستر کے پاس آئی جہاں جانزی لیٹی تھی۔ اس نے ایک بازو اس کے گرد ڈال دیا۔', 'او هغه ماسپښین سو هغه بستر ته راغله چې جانزي پکې پرته وه. یو لاس یې ور تاو کړ.'),
+    ('"I have something to tell you," she said. "Mr. Behrman died of pneumonia today in the hospital. He was ill only two days. Someone found him on the morning of the first day, in his room. He was helpless with pain.', '’’مجھے تمہیں کچھ بتانا ہے،‘‘ اس نے کہا۔ ’’جناب بہرمن آج ہسپتال میں نمونیا سے فوت ہو گئے۔ وہ صرف دو دن بیمار رہے۔ کسی نے انہیں پہلے دن کی صبح ان کے کمرے میں پایا۔ وہ درد سے بے بس تھے۔', '"زه درته یو څه وایم،" هغې وویل. "ښاغلی بهرمن نن په روغتون کې د نمونیا له امله مړ شو. یوازې دوه ورځې ناروغ و. یو چا د لومړۍ ورځې سهار هغه په خپله کوټه کې وموند. له درده بې‌وسه و.'),
+    ('"His shoes and his clothes were wet and as cold as ice. Everyone wondered where he had been. The night had been so cold and wild.', '’’ان کے جوتے اور کپڑے گیلے اور برف کی طرح ٹھنڈے تھے۔ ہر کوئی حیران تھا کہ وہ کہاں رہے تھے۔ رات بہت ٹھنڈی اور طوفانی تھی۔', '"بوټان او جامې یې لندې او د یخ په څېر سړې وې. ټول حیران وو چې هغه چېرته و. شپه ډېره سړه او طوفاني وه.'),
+    ('"And then they found some things. There was a light that he had taken outside. And there were his materials for painting. There was paint, green paint and yellow paint. And—', '’’اور پھر انہیں کچھ چیزیں ملیں۔ ایک روشنی تھی جو وہ باہر لے گئے تھے۔ اور ان کا مصوری کا سامان تھا۔ رنگ تھا، سبز رنگ اور زرد رنگ۔ اور —', '"او بیا یې ځینې شیان وموندل. یو څراغ و چې هغه بهر وړی و. او د انځورګرۍ توکي یې وو. رنګ و، شین رنګ او ژېړ رنګ. او —'),
+    ('"Look out the window, dear, at the last leaf on the wall. Didn\'t you wonder why it never moved when the wind was blowing? Oh, my dear, it is Behrman\'s great masterpiece—he painted it there the night that the last leaf fell."', '’’کھڑکی سے باہر دیکھو، پیاری، دیوار پر آخری پتے کو۔ کیا تم نے کبھی حیرت نہیں کی کہ جب ہوا چل رہی تھی تو یہ کبھی ہلا کیوں نہیں؟ اوہ، میری پیاری، یہ بہرمن کا عظیم شاہکار ہے — اس نے اسے اس رات وہاں بنایا جس رات آخری پتا گرا تھا۔‘‘', '"له کړکۍ بهر وګوره، ګرانې، پر دېوال وروستۍ پاڼې ته. ایا حیرانه نه شوې چې کله باد لګېده ولې هېڅکله ونه خوځېده؟ اوه، ګرانې، دا د بهرمن ستر شاهکار دی — هغه یې هلته په هغه شپه رنګ کړه چې وروستۍ پاڼه ولوېده."'),
+]
+for x in P: r.p(*x)
+r.h('About the author:', 'مصنف کے بارے میں:', 'د لیکوال په اړه:')
+r.p('His real name was William Sidney Porter. O Henry was his pen name. He was an American short story writer. He was born on September 11, 1862 in Greensboro, North Carolina. When he was three years old, his mother died and so his father shifted to the house of his paternal grand mother. In 1902, he moved to New York and there was started his intensive writing period. During his stay at New York, he wrote 381 short stories. Among his famous stories are : The Gift of the Magi, The Ransom of Red Chief, The Cop and The Anthem, A Retrieved Reformation etc. He died on June 5, 1910 in New York.',
+    'ان کا اصل نام ولیم سڈنی پورٹر تھا۔ او ہنری ان کا قلمی نام تھا۔ وہ ایک امریکی افسانہ نگار تھے۔ وہ 11 ستمبر 1862 کو گرینزبورو، شمالی کیرولائنا میں پیدا ہوئے۔ جب وہ تین سال کے تھے تو ان کی والدہ فوت ہو گئیں اور ان کے والد ان کی دادی کے گھر منتقل ہو گئے۔ 1902 میں وہ نیویارک چلے گئے اور وہاں ان کے بھرپور تخلیقی دور کا آغاز ہوا۔ نیویارک میں قیام کے دوران انہوں نے 381 مختصر کہانیاں لکھیں۔ ان کی مشہور کہانیوں میں ’’دی گفٹ آف دی میجائی‘‘، ’’دی رینسم آف ریڈ چیف‘‘، ’’دی کاپ اینڈ دی اینتھم‘‘، ’’اے ریٹریوڈ ریفارمیشن‘‘ وغیرہ شامل ہیں۔ وہ 5 جون 1910 کو نیویارک میں فوت ہوئے۔',
+    'اصلي نوم یې ویلیم سیډني پورټر و. او. هنري د هغه قلمي نوم و. هغه یو امریکایي لنډې کیسې لیکوال و. د 1862 کال د سپټمبر په 11 د شمالي کارولینا په ګرینزبورو کې زېږېدلی. کله چې درې کلن و مور یې مړه شوه او پلار یې د هغه د نیا کور ته کډه شو. په 1902 کې نیویارک ته لاړ او هلته یې د لیکلو پیاوړې دوره پیل شوه. په نیویارک کې د اوسېدو پر مهال یې 381 لنډې کیسې ولیکلې. د هغه له مشهورو کیسو څخه "د ماګي ډالۍ"، "د سور مشر بډه"، "پولیس او سرود"، "یو بېرته راګرځېدلی اصلاح" او نورې دي. هغه د 1910 کال د جون په 5 په نیویارک کې مړ شو.')
+rd = BOOK.record(r, 'eng12-u05-text-c', 'Reading text (3) and About the author', 'متن (3) اور مصنف کے بارے میں', 'متن (3) او د لیکوال په اړه', 30, [47])
+
+g = Builder()
+g.h('Glossary', 'فرہنگ', 'وییپانګه')
+gloss(g, 'eng12-u05-gloss', [
+    ('Greenwich village', 'a district of New York City noted for artists, writers and musicians', 'نیویارک شہر کا ایک علاقہ جو فنکاروں، ادیبوں اور موسیقاروں کے لیے مشہور ہے', 'د نیویارک ښار یوه سیمه چې د هنرمندانو، لیکوالو او موسیقارانو لپاره مشهوره ده'),
+    ('miner (n)', 'one who works in a mine.', 'کان میں کام کرنے والا۔', 'هغه څوک چې په کان کې کار کوي.'),
+    ('pneumonia (n)', 'a disease causing the inflammation of lungs.', 'پھیپھڑوں میں سوزش پیدا کرنے والی بیماری۔', 'هغه ناروغي چې د سږو التهاب رامنځته کوي.'),
+    ('vine (n)', 'a plant that grows along a surface by climbing, twining o creeping.', 'وہ پودا جو چڑھ کر، لپٹ کر یا رینگ کر کسی سطح کے ساتھ بڑھتا ہے۔', 'هغه بوټی چې د ختلو، تاوېدو یا خزېدو له لارې د یوې سطحې په اوږدو کې لوېږي.'),
+    ('wild(adj.)', 'marked by lack of control or restraint.', 'جس میں قابو یا ضبط کی کمی ہو۔', 'چې کنټرول یا ځان‌ساتنه پکې کمه وي.'),
+])
+g.h('Reading Comprehension', 'مطالعہ اور فہم', 'لوستل او پوهه')
+g.group('lines', [
+    ("1. What is the main theme of the story 'The Last Leaf '?", '1. کہانی ’’آخری پتا‘‘ کا مرکزی موضوع کیا ہے؟', '1. د "وروستۍ پاڼه" کیسې اصلي موضوع څه ده؟'),
+    ('2. How did Sue and Johnsy become friends?', '2. سو اور جانزی دوست کیسے بنیں؟', '2. سو او جانزي څنګه ملګرې شوې؟'),
+    ('3. "She has a chance if she wants to live. If people don\'t want to live, I can\'t do much for them." What do these words of the doctor about Johnsy mean?', '3. ’’اس کا امکان ہے اگر وہ جینا چاہے۔ اگر لوگ جینا نہ چاہیں تو میں ان کے لیے زیادہ کچھ نہیں کر سکتا۔‘‘ جانزی کے بارے میں ڈاکٹر کے ان الفاظ کا کیا مطلب ہے؟', '3. "هغه چانس لري که ژوند وغواړي. که خلک ژوند ونه غواړي، زه د هغوی لپاره ډېر څه نه شم کولی." د جانزي په اړه د ډاکټر د دې خبرو مانا څه ده؟'),
+    ('4. Why did Johnsy keep asking Sue to open the curtains?', '4. جانزی بار بار سو سے پردے کھولنے کو کیوں کہتی رہی؟', '4. جانزي ولې بیا بیا له سو وغوښتل چې پردې پرانیزي؟'),
+    ("5. How was Johnsy's life saved?", '5. جانزی کی جان کیسے بچی؟', '5. د جانزي ژوند څنګه وژغورل شو؟'),
+    ("6. What made Johnsy's views change about life? How do you know it?", '6. کس چیز نے زندگی کے بارے میں جانزی کے خیالات بدل دیے؟ آپ کو کیسے معلوم ہے؟', '6. څه شي د ژوند په اړه د جانزي نظرونه بدل کړل؟ تاسو څنګه پرې پوهېږئ؟'),
+    ("7. Write a short character sketch of the character Behrman in the story 'The Last Leaf '.", '7. کہانی ’’آخری پتا‘‘ کے کردار بہرمن کا مختصر خاکہ لکھیں۔', '7. د "وروستۍ پاڼه" کیسې د بهرمن کرکټر لنډ انځور ولیکئ.'),
+    ('8. Describe the plot of this short story in your own words.', '8. اس مختصر کہانی کا پلاٹ اپنے الفاظ میں بیان کریں۔', '8. د دې لنډې کیسې پلاټ په خپلو ټکو کې بیان کړئ.'),
+    ("9. What lesson do we get from the story 'The Last Leaf '?", '9. کہانی ’’آخری پتا‘‘ سے ہمیں کیا سبق ملتا ہے؟', '9. له "وروستۍ پاڼه" کیسې څخه موږ کوم لوست اخلو؟'),
+    ('10. Suggest an alternate ending for " The Last Leaf".', '10. ’’آخری پتا‘‘ کا ایک متبادل انجام تجویز کریں۔', '10. د "وروستۍ پاڼه" لپاره یو بدیل پای وړاندیز کړئ.'),
+])
+g.h('Writing Suggestions', 'تحریری تجاویز', 'د لیکلو وړاندیزونه')
+g.p("Write a summary of the story 'The Last Leaf ' using the technique of proper beginning, middle and end.", 'مناسب آغاز، درمیان اور انجام کی تکنیک استعمال کرتے ہوئے کہانی ’’آخری پتا‘‘ کا خلاصہ لکھیں۔', 'د مناسب پیل، منځ او پای د تخنیک په کارولو د "وروستۍ پاڼه" کیسې لنډیز ولیکئ.')
+g.h('Oral Communication', 'زبانی ابلاغ', 'د خولې اړیکه')
+g.p('Take turns standing each student of the class. Ask them to say 3—4 compliments about his/her desk fellow using good and positive words. The use of negative words/ comments may strictly be prohibited.', 'جماعت کے ہر طالب علم کو باری باری کھڑا کریں۔ ان سے کہیں کہ اچھے اور مثبت الفاظ استعمال کرتے ہوئے اپنے ہم نشین کے بارے میں 3 سے 4 تعریفی کلمات کہیں۔ منفی الفاظ/تبصروں کا استعمال سختی سے ممنوع ہو۔', 'د ټولګي هر زده کوونکی په وار سره ودروئ. ترې وغواړئ چې د ښو او مثبتو کلمو په کارولو د خپل څنګ ملګري په اړه 3 تر 4 ستاینې ووايي. د منفي کلمو/ تبصرو کارول باید په کلکه منع وي.')
+qs = BOOK.record(g, 'eng12-u05-glossary-questions', 'Glossary; Reading Comprehension; Writing; Oral Communication', 'فرہنگ؛ مطالعہ اور فہم؛ تحریر؛ زبانی ابلاغ', 'وییپانګه؛ لوستل او پوهه؛ لیکنه؛ د خولې اړیکه', 30, [48])
+issues = [{'id': 'eng12-p47-48', 'unit': 5, 'printedPage': 47, 'description': 'Printed text retained: the doctor calls Behrman “Mike” (as in the original story), “there was started his intensive writing period”, “paternal grand mother”, glossary “twining o creeping”, “miner (n)” (not in text). Q4 asks about “curtains” though the text says “cover”.'}]
+
+if __name__ == '__main__':
+    BOOK.save(30, [(5, rd), (5, qs)], issues=issues)

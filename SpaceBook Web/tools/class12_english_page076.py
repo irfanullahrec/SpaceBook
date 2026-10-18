@@ -1,0 +1,28 @@
+"""PDF76 (printed 139–140): Unit 14 sentence-type tick table (rows 11–20, unit end); Unit 15 opener 'Once Upon a Time' (Gabriel Okara) outcomes."""
+from class12_book_common import Book, Builder
+
+BOOK = Book('english')
+w = Builder()
+D = ['We turned off the lights, and we went to sleep.', 'We turned off the lights after our mom told us to go to sleep.', "I enjoyed the play, but I didn't like the end.", 'Jean was excited because her poem was greatly appreciated by all.',
+     'How fabulous our house looks with all the decoration!', 'Will you please drop me at the community center?', 'Even if our team wins this match, we may not make it to the final.', 'Take the first right after 500 meters.',
+     "Dr. Asif prescribed some pills, and he told the patient to have a week's rest.", 'Dad met a man with whom he used to work.']
+R = [[s, '', '', ''] for s in D]
+w.table('eng12-u14-sentence-tick-b', ['Sentences', 'simple', 'compound', 'complex'], R, ['جملے', 'سادہ', 'مرکب', 'پیچیدہ'], ['جملې', 'ساده', 'مرکبه', 'پېچلې'], R, R)
+ex = BOOK.record(w, 'eng12-u14-vocab-b', 'Sentence-type table (continued)', 'جملوں کی اقسام کا جدول (جاری)', 'د جملو د ډولونو جدول (دوام)', 76, [139])
+
+UT = ('Once Upon a Time (Poem)', 'ایک زمانے میں (نظم)', 'یو وخت و (شعر)')
+o = Builder()
+o.h('Unit 15 — Once Upon a Time (Gabriel Okara)', 'یونٹ 15 — ایک زمانے میں (گیبریل اوکارا)', 'واحد 15 — یو وخت و (ګابریل اوکارا)')
+o.p('By the end of the unit, the students will be able to:', 'اس یونٹ کے اختتام تک طلبہ اس قابل ہوں گے کہ:', 'د دې واحد په پای کې به زده کوونکي وکولای شي چې:')
+o.group('list', [
+    ('Read a given poem and give orally and in writing: theme and its development; personal response with justification; recognize literary techniques such as personification and alliteration.', 'دی گئی نظم پڑھیں اور زبانی و تحریری طور پر بیان کریں: موضوع اور اس کا ارتقا؛ جواز کے ساتھ ذاتی ردِعمل؛ ادبی تکنیکوں جیسے تجسیم اور تکرارِ حرفی کو پہچانیں۔', 'ورکړل شوی شعر ولولي او په خوله او لیکلي ډول ووايي: موضوع او د هغې وده؛ د دلیل سره شخصي غبرګون؛ ادبي تخنیکونه لکه تجسیم او د تورو تکرار وپېژني.'),
+    ('Use critical thinking to respond orally and in writing to the text (post-reading) to: give a personal opinion and justify stance related to viewpoints/ ideas and issues in the text read; relate what is read to his or her own feelings and experiences; explore causes and consequences of a problem or an issue and propose various solutions.', 'تنقیدی سوچ استعمال کرتے ہوئے متن پر زبانی اور تحریری ردِعمل دیں (مطالعے کے بعد) تاکہ: پڑھے گئے متن کے نقطۂ ہائے نظر/ خیالات اور مسائل پر ذاتی رائے دیں اور موقف کا جواز پیش کریں؛ جو پڑھا اسے اپنے احساسات اور تجربات سے جوڑیں؛ کسی مسئلے کے اسباب و نتائج کی جستجو کریں اور مختلف حل تجویز کریں۔', 'د انتقادي فکر په کارولو متن ته په خوله او لیکلي ډول غبرګون وښيي (له لوستلو وروسته) ترڅو: د لوستل شوي متن د لیدلورو/ نظرونو او مسایلو په اړه شخصي نظر ورکړي او دریځ یې ثابت کړي؛ لوستل شوي له خپلو احساساتو او تجربو سره وتړي؛ د یوې ستونزې لاملونه او پایلې وسپړي او بېلابېل حلونه وړاندیز کړي.'),
+    ('Analyze how a writer/ poet uses language to appeal to the senses through use of figurative language including similes, metaphors and imagery.', 'تجزیہ کریں کہ ایک مصنف/ شاعر تشبیہات، استعارات اور پیکر تراشی سمیت مجازی زبان کے ذریعے حواس کو متاثر کرنے کے لیے زبان کیسے استعمال کرتا ہے۔', 'تحلیل کړي چې یو لیکوال/ شاعر د تشبیهاتو، استعارو او انځورګرۍ په ګډون د مجازي ژبې له لارې حواسو ته د اپیل لپاره ژبه څنګه کاروي.'),
+    ('Use critical thinking to respond orally and in writing to the text (post-reading) to: give a personal opinion and justify stance; relate what is read to his or her own feelings and experiences; scan to answer short questions; make simple inferences using context of the text and prior knowledge; distinguish between what is clearly stated and what is implied.', 'تنقیدی سوچ استعمال کرتے ہوئے متن پر زبانی اور تحریری ردِعمل دیں (مطالعے کے بعد) تاکہ: ذاتی رائے دیں اور موقف کا جواز پیش کریں؛ جو پڑھا اسے اپنے احساسات اور تجربات سے جوڑیں؛ مختصر سوالات کے جواب کے لیے تلاش کریں؛ متن کے سیاق اور سابقہ علم سے سادہ نتائج اخذ کریں؛ واضح اور ضمنی بات میں فرق کریں۔', 'د انتقادي فکر په کارولو متن ته په خوله او لیکلي ډول غبرګون وښيي (له لوستلو وروسته) ترڅو: شخصي نظر ورکړي او دریځ یې ثابت کړي؛ لوستل شوي له خپلو احساساتو او تجربو سره وتړي؛ د لنډو پوښتنو د ځوابولو لپاره ولټوي؛ د متن له شرایطو او مخکینۍ پوهې ساده پایلې واخلي؛ د ښکاره او ضمني ترمنځ توپیر وکړي.'),
+    ('Deduce the meaning of unfamiliar words from the context using contextual clues.', 'سیاقی اشاروں کو استعمال کرتے ہوئے سیاق و سباق سے نامانوس الفاظ کے معنی اخذ کریں۔', 'د شرایطي نښو په کارولو له شرایطو څخه د ناپېژندل شویو کلمو مانا استنباط کړي.'),
+    ('Identify form and use Future Continuous, Future Perfect and Future Perfect Continuous Tenses.', 'مستقبل جاری، مستقبل مکمل اور مستقبل مکمل جاری زمانوں کی شکل پہچانیں اور استعمال کریں۔', 'د راتلونکي روان، راتلونکي بشپړ او راتلونکي بشپړ روان زمانونو بڼه وپېژني او وکاروي.'),
+])
+op = BOOK.record(o, 'eng12-u15-outcomes', 'Unit 15 — learning outcomes', 'یونٹ 15 — تعلیمی نتائج', 'واحد 15 — د زده کړې پایلې', 76, [140], unit_title=UT)
+
+if __name__ == '__main__':
+    BOOK.save(76, [(14, ex), (15, op)])

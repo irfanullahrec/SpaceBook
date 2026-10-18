@@ -1,0 +1,32 @@
+"""Islamic History XII PDF65 slot: stores pp.122–123 (scan PDF64; see page064.py for the swap).
+p.122 — military system: regular and volunteer army, weapons; p.123 — cavalry, battle order, exercise of lesson 25. Run: python class12_ihist_page065.py"""
+from class12_ihist_common import BOOK, Builder, rec, S, L
+
+
+def p65():
+    b = Builder()
+    S(b, [(None, ('But this policy in the end proved extremely dangerous, because in these parts (divisions) a struggle for power began. The Islamic army consisted of two kinds of forces: (a) the regular army (b) the volunteer army.', 'لیکن یہ پالیسی آخر میں انتہائی خطرناک ثابت ہوئی کیونکہ ان حصوں (ڈویژنوں) میں اقتدار کی کشمکش شروع ہو گئی۔ اسلامی لشکر دو قسم کی فوجوں پر مشتمل تھا۔ (الف) باقاعدہ فوج (ب) رضاکار فوج', 'خو دا پالیسي په پای کې ډېره خطرناکه ثابته شوه، ځکه په دې برخو (ډیویژنونو) کې د واک کشمکش پیل شو. اسلامي لښکر له دوه ډوله پوځونو جوړ و: (الف) منظم پوځ (ب) رضاکار پوځ.')),
+          (('(a) The regular army:', '(الف) باقاعدہ فوج:', '(الف) منظم پوځ'),
+           ('The regular army was given a cash salary. The salaries of the soldiers were reduced considerably compared with the Banu Umayyah. The division of military ranks was the same as in the era of the Banu Umayyah. The officer of 10 soldiers was called \'arif; the officer of 10 \'arifs (100 soldiers) was called naqib; the officer of 10 naqibs (1000 soldiers) was called qa\'id; and the officer of ten qa\'ids (i.e. ten thousand soldiers) was called sipah salar (general).', 'باقاعدہ فوج کو نقد تنخواہ دی جاتی تھی۔ فوجیوں کی تنخواہوں میں بنو امیہ کے مقابلے میں کافی کمی کی گئی۔ فوجی عہدوں کی تقسیم وہی تھی جو بنو امیہ کے دور میں تھی۔ ۱۰ سپاہیوں کے افسر کو عارف، ۱۰ عارفوں (۱۰۰ سپاہیوں) کے افسر کو نقیب کہا جاتا تھا۔ ۱۰ نقیبوں (۱۰۰۰ سپاہیوں) کے افسر کو قائد، اور دس قائدوں (یعنی دس ہزار سپاہیوں) کے افسر کو سپہ سالار (جرنیل) کہا جاتا تھا۔', 'منظم پوځ ته نغدي معاش ورکول کېده؛ د سرتېرو معاشونه د بنو امیه په پرتله ډېر کم شول. د پوځي رتبو وېش هماغه و چې د بنو امیه په دوره کې و: د ۱۰ سرتېرو افسر ته «عارف»، د ۱۰ عارفانو (۱۰۰ سرتېرو) افسر ته «نقیب»، د ۱۰ نقیبانو (۱۰۰۰ سرتېرو) افسر ته «قاید»، او د لسو قایدانو (یعنې لس زره سرتېرو) افسر ته «سپه‌سالار» (جنرال) ویل کېده.')),
+          (('(b) The volunteer army:', '(ب) رضاکار فوج:', '(ب) رضاکار پوځ'),
+           ('This was that part of the army which joined the army at the time of war under the spirit of jihad. They were not given regular salaries. During the war arrangements for weapons and food were made for them. Stipends were fixed for their wives and children.', 'یہ فوج کا وہ حصہ تھا جو جہاد کے جذبے کے تحت جنگ کے وقت فوج میں شامل ہوتا۔ ان کو باقاعدہ تنخواہیں نہیں دی جاتی تھیں۔ جنگ کے دوران ان کے لئے اسلحہ اور خوراک کا انتظام کیا جاتا تھا۔ ان کی بیویوں اور بچوں کے لئے وظائف مقرر کئے جاتے تھے۔', 'دا د پوځ هغه برخه وه چې د جهاد د جذبې له مخې د جګړې پر مهال پوځ ته ورګډېده؛ منظم معاشونه نه ورکول کېدل؛ د جګړې پر مهال ورته د وسلو او خوړو انتظام کېده؛ د هغوی ښځو او ماشومانو ته وظیفې ټاکل کېدې.')),
+          (('Military weapons:', 'فوجی ہتھیار:', 'پوځي وسلې'),
+           ('In the army the following weapons were generally used.', 'فوج میں عام طور پر مندرجہ ذیل ہتھیار استعمال کئے جاتے تھے۔', 'په پوځ کې عموماً دا لاندې وسلې کارول کېدې.')),
+          (('Infantry:', 'پیادہ فوج:', 'پلی پوځ'),
+           ('Spears, bows and arrows, swords, axes and mail etc.', 'نیزے، تیر و کمان، تلواریں، کلہاڑیاں اور زرہ وغیرہ۔', 'نېزې، غشي او لیندۍ، تورې، تبرونه او زغره او نور.'))])
+    r1 = rec(b, 25, 122, 64, [122])
+    t = Builder()
+    S(t, [(('Cavalry:', 'فوجی رسالے:', 'سپاره پوځ'),
+           ('Spears, long straight swords and bows and arrows etc. In the era of the Abbasids archery received great development.', 'نیزے، لمبی سیدھی تلواریں اور تیر و کمان وغیرہ، عباسیوں کے دور میں تیر اندازی کو خوب فروغ حاصل ہوا۔', 'نېزې، اوږدې نېغې تورې او غشي او لیندۍ او نور؛ د عباسیانو په دوره کې غشي ویشتو ډېره وده وموندله.')),
+          (('Military order at the time of attack:', 'حملے کے وقت فوجی ترتیب:', 'د برید پر مهال پوځي ترتیب'),
+           ('At the time of attack the military order was as follows: At the very front went the cavalry. On both its sides were archers of Khurasan and northern Iran. Behind the cavalry were infantry units, which advanced in rows. Behind them supplies of food and drink were loaded on animals. At the end was the artillery section, in which heavy mangonels and fort-breaking guns were loaded on carts; camels pulled them. With the army there were also hospitals. Stores of medicines remained present. To carry the wounded a special kind of comfortable palanquin was used.', 'حملے کے وقت فوجی ترتیب مندرجہ ذیل طرح کی ہوتی تھی: سب سے آگے رسالہ چلتا تھا۔ اس کے دونوں اطراف خراسان اور شمالی ایران کے تیر انداز ہوتے تھے۔ رسالے کے پیچھے پیادہ دستے ہوتے تھے، جو قطاروں میں آگے بڑھتے جاتے، ان کے پیچھے کھانے پینے کا سامان جانوروں پر لادا ہوا ہوتا۔ آخر میں توپ خانہ ہوتا جس میں بھاری منجنیقیں اور قلعہ شکن توپیں چھکڑوں پر لادی ہوئی ہوتیں، انہیں اونٹ کھینچتے چلتے فوج کے ساتھ شفا خانے بھی ہوتے۔ دواؤں کے ذخیرے موجود رہتے۔ زخمیوں کو اٹھانے کے لئے خاص قسم کی آرام دہ پالکی استعمال کی جاتی تھی۔', 'د برید پر مهال پوځي ترتیب داسې و: تر ټولو مخکې سپاره رساله تله؛ دواړو خواوو ته یې د خراسان او شمالي ایران غشي ویشتونکي وو. له رسالې شاته پلي ډلګۍ وې چې په قطارونو کې وړاندې تللې؛ له هغوی شاته د خوړو او څښاک سامان پر څارویو بار و. په پای کې توپخانه وه چې درنې منجنیقونه او کلا ماتوونکې توپونه پکې پر ګاډیو بار وو او اوښانو کشول. له پوځ سره روغتونونه هم وو؛ د درملو زېرمې موجودې وې؛ د ټپیانو د وړلو لپاره ځانګړې آرامه پالکي کارول کېده.'))])
+    t.h('Exercise questions', 'مشقی سوالات', 'تمریني پوښتنې')
+    L(t, [('1. State the causes of the decline of the Banu Abbas dynasty.', '۱۔ خاندان بنو عباس کے زوال کے اسباب بیان کریں۔', '۱. د بنو عباس کورنۍ د زوال لاملونه بیان کړئ.'),
+          ('2. Write a detailed note on the administration of the sultanate of the Abbasid era.', '۲۔ عباسیہ دور کے انتظامِ سلطنت پر مفصل نوٹ تحریر کریں۔', '۲. د عباسي دورې د سلطنت پر اداره مفصل یادښت ولیکئ.'),
+          ('3. Throw light in detail on the military system of the Banu Abbas.', '۳۔ بنو عباس کے فوجی نظام پر تفصیل سے روشنی ڈالیں۔', '۳. د بنو عباس پر پوځي نظام په تفصیل رڼا واچوئ.')])
+    BOOK.save(65, [(25, r1), (25, rec(t, 25, 123, 64, [123], kind='exercise'))], complete_units=[25], issues=[{'id': 'ihist12-pdf065', 'unit': 25, 'printedPage': 122,
+               'description': 'Slot stores pp.122–123 from scan PDF64 (scan order swapped with PDF65). Printed run-on "انہیں اونٹ کھینچتے چلتے فوج کے ساتھ" kept. Student mark "③" excluded.'}])
+
+
+if __name__ == '__main__':
+    p65()

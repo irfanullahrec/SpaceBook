@@ -1,0 +1,63 @@
+"""PDF121 printed234–235: reactivity of carbonyl group, reactions, nucleophilic addition (acid/base catalysed)."""
+from class12_chemistry_opening import pair,section,SOURCE
+from class12_chemistry_sync import save
+from class12_chemistry_rings import Fig
+F=Fig('arrow121');t=F.t;line=F.line
+paras=[];layout=[];blocks=[]
+def add(e,u,p,kind='paragraph'):
+ layout.append({'type':kind,'indices':[len(paras)]});paras.append(pair(e,u,p))
+def visual(identity,fn):
+ blocks.append({'id':identity,'svg':fn('en'),'svgUrdu':fn('ur'),'svgPashto':fn('ps')});layout.append({'type':'visual','blockId':identity})
+N={'(Trigonal planar)':('(تکونی مستوی)','(درې ګوټی سطحي)'),'(Tetrahedral)':('(چہار سطحی)','(څلورمخی)'),'nucleophilic attack':('نیوکلیوفائلی حملہ','نیوکلیوفایلي برید'),'alkoxide':('الکوآکسائیڈ','الکوکساید'),'product':('پیداوار','محصول'),
+   'aldehyde/ketone':('الڈیہائیڈ/کیٹون','الدیهاید/کیټون'),'resonance structures':('ریزونینس ساختیں','ریزونانس جوړښتونه'),'of oxonium ion':('آکسونیم آئن کی','د اکسونیم ایون'),'alkoxide ion':('الکوآکسائیڈ آئن','الکوکساید ایون')}
+def lb(lang,v):return v if lang=='en' else N[v][0 if lang=='ur' else 1]
+def trig(x,y,o='Ö:',l='R',r='R'):return t(x+34+5*max(0,len(o)-2),y-2,o,15)+line(x+6,y-3,x+24,y-3)+line(x+6,y+3,x+24,y+3)+t(x,y+5,'C',16)+line(x-6,y-6,x-24,y-20)+t(x-32,y-24,l,13)+line(x-6,y+8,x-24,y+22)+t(x-32,y+34,r,13)
+def tet(x,y,top,o,l='R',r='R'):return t(x,y-30,top,13)+line(x,y-24,x,y-10)+t(x,y+5,'C',16)+line(x+10,y,x+30,y)+t(x+46,y+5,o,15)+line(x-6,y+6,x-26,y+14,1.5,'#222','stroke-dasharray="2 2"')+t(x-36,y+20,l,13)+line(x,y+10,x,y+28,3)+t(x,y+42,r,13)
+def geom(lang):
+ s=F.start(170)+'<polygon points="60,130 200,130 260,40 120,40" fill="#90caf9" opacity=".5"/>'+trig(180,85)+t(150,20,'Nu:⁻',14)+f'<path d="M160 26 Q200 40 186 72" fill="none" stroke="#222" marker-end="url(#arrow121)"/>'
+ s+=F.arrow(300,420,85)+tet(520,85,'Nu','O:⁻')+t(160,150,'sp²',13)+t(160,166,lb(lang,'(Trigonal planar)'),12)+t(520,150,'sp³',13)+t(520,166,lb(lang,'(Tetrahedral)'),12)
+ return s.replace('viewBox="0 0 850 170"','viewBox="0 0 850 175"')+'</svg>'
+def general(lang):
+ s=F.start(150)+trig(110,70,'O')+t(110,48,'δ+',11)+t(140,48,'δ−',11)+t(60,20,'Nu:⁻',14)+f'<path d="M72 24 Q100 30 104 56" fill="none" stroke="#222" marker-end="url(#arrow121)"/>'+t(110,130,lb(lang,'nucleophilic attack'),12)
+ s+=F.arrow(180,260,70)+tet(330,70,'Nu','Ö:⁻')+t(330,130,lb(lang,'alkoxide'),12)+F.eq(420,500,70)+t(460,58,'H—Nu',12)+tet(580,70,'Nu','Ö—H')+t(580,130,lb(lang,'product'),12)+t(690,76,'+ N̈u⁻',15)
+ return s+'</svg>'
+def acid(lang):
+ s=F.start(160)+trig(90,70,'Ö:')+t(90,130,lb(lang,'aldehyde/ketone'),12)+F.eq(150,220,70)+t(185,58,'H⁺',12)
+ s+='<path d="M240 20 L232 20 L232 120 L240 120 M560 20 L568 20 L568 120 L560 120" fill="none" stroke="#222" stroke-width="2"/>'
+ s+=trig(310,70,'O⁺—H')+t(400,76,'⟷',18)+trig(470,70,'Ö—H')+t(470,96,'+',12)
+ s+=t(400,138,lb(lang,'resonance structures'),12)+t(400,154,lb(lang,'of oxonium ion'),12)+F.eq(590,660,70)+t(625,58,'N̈u—H',12)+t(625,94,'−H⁺',12)+tet(740,70,'OH','Nu')+t(740,130,lb(lang,'product'),12)
+ return s+'</svg>'
+def base(lang):
+ s=F.start(150)+trig(100,70,'O')+t(100,130,lb(lang,'aldehyde/ketone'),12)+t(200,76,'N̈u⁻',15)+F.arrow(230,300,70)
+ s+=tet(380,70,'O⁻','Nu')+t(380,130,lb(lang,'alkoxide ion'),12)+F.arrow(460,560,70,'H—Nu')+tet(630,70,'OH','Nu')+t(630,130,lb(lang,'product'),12)+t(740,76,'+ N̈u⁻',15)
+ return s+'</svg>'
+
+add('19.5 Reactivity of Carbonyl Group','19.5 کاربونل گروپ کی تعامل پذیری','19.5 د کاربونیل ګروپ تعامل وړتیا','heading')
+add('Ketones and aldehydes undergo many reactions to give a wide variety of useful derivatives. Their most common reactions are nucleophilic addition; addition of a nucleophile and a proton across the C=O double bond. The reactivity of the carbonyl group arises from the high electronegativity of the oxygen atom and the resulting polarization of the carbon-oxygen double bond. The electrophilic carbonyl carbon atom is sp²-hybridized and planar, and relatively unhindered (compare to tetrahedral carbon) and is more susceptible for attack by a nucleophile, from either side of the double bond. When a nucleophile attacks the carbonyl group, the carbon atom changes hybridization from sp² to sp³, with corresponding change in geometry from trigonal planar to tetrahedral as shown below.',
+ 'کیٹونز اور الڈیہائیڈز بہت سے تعاملات کر کے مختلف قسم کے مفید مشتقات دیتے ہیں۔ ان کے سب سے عام تعاملات نیوکلیوفائلی اضافہ ہیں؛ یعنی C=O دوہرے بند پر نیوکلیوفائل اور پروٹان کا اضافہ۔ کاربونل گروپ کی تعامل پذیری آکسیجن ایٹم کی زیادہ برقی منفیت اور اس کے نتیجے میں کاربن–آکسیجن دوہرے بند کی قطبیت سے پیدا ہوتی ہے۔ الیکٹروفائلی کاربونل کاربن ایٹم sp²-ہائبرڈ اور مستوی ہے، اور (چہار سطحی کاربن کے مقابلے میں) نسبتاً بلا رکاوٹ ہے، اس لیے دوہرے بند کی کسی بھی جانب سے نیوکلیوفائل کے حملے کا زیادہ نشانہ بنتا ہے۔ جب نیوکلیوفائل کاربونل گروپ پر حملہ کرتا ہے تو کاربن ایٹم کی ہائبرڈائزیشن sp² سے sp³ میں بدل جاتی ہے اور جیومیٹری تکونی مستوی سے چہار سطحی ہو جاتی ہے، جیسا کہ نیچے دکھایا گیا ہے۔',
+ 'کیټونونه او الدیهایډونه ډېر تعاملونه کوي او بېلابېل ګټور مشتقات ورکوي. تر ټولو عام تعاملونه یې نیوکلیوفایلي اضافه ده؛ یعنې پر C=O دوه ګوني تړون د نیوکلیوفایل او پروټون زیاتېدل. د کاربونیل ګروپ تعامل وړتیا د اکسیجني اټوم له لوړ الکترونېګاتیویټي او د کاربن–اکسیجن دوه ګوني تړون له پایله یي قطبیت څخه راځي. الکتروفایلي کاربونیل کاربني اټوم sp²-هایبرېډ او سطحي دی، او (د څلورمخي کاربن په پرتله) نسبتاً بې خنډه دی او د دوه ګوني تړون له هرې خوا د نیوکلیوفایل برید ته ډېر چمتو دی. کله چې نیوکلیوفایل پر کاربونیل ګروپ برید وکړي، د کاربني اټوم هایبرېډیزېشن له sp² څخه sp³ ته بدلېږي او جیومټري له درې ګوټي سطحي څخه څلورمخي ته اوړي، لکه څنګه چې لاندې ښودل شوي.')
+visual('chem12-p121-geometry-change',geom)
+add('19.6 Reactions of Aldehydes and Ketones','19.6 الڈیہائیڈز اور کیٹونز کے تعاملات','19.6 د الدیهایډونو او کیټونونو تعاملونه','heading')
+add('Aldehydes and ketones are very reactive substances mostly undergoing nucleophilic addition reaction across C=O bond. These can also be oxidized as well as reduced. Some of their reactions are;','الڈیہائیڈز اور کیٹونز بہت تعامل پذیر مادے ہیں جو زیادہ تر C=O بند پر نیوکلیوفائلی اضافی تعامل کرتے ہیں۔ ان کی تکسید اور تخفیف بھی ہو سکتی ہے۔ ان کے چند تعاملات یہ ہیں؛','الدیهایډونه او کیټونونه ډېر تعامل کوونکي مواد دي چې ډېری پر C=O تړون نیوکلیوفایلي اضافي تعامل کوي. اکسیډایز او ارجاع هم کېدای شي. ځینې تعاملونه یې دا دي؛')
+add('19.6.1 Nucleophilic Addition reactions: (Acid and Base catalyzed)','19.6.1 نیوکلیوفائلی اضافی تعاملات: (تیزاب اور اساس سے عمل انگیز)','19.6.1 نیوکلیوفایلي اضافي تعاملونه: (اسیدي او قلوي کتلستي)','heading')
+add('As already discussed in Section 19.5, that aldehydes and ketones mainly undergo nucleophilic additions reactions. In nucleophilic addition reaction, the nucleophile attacks on the carbonyl carbon, and the hybridization of carbon changes from sp² to sp³. The geometry also changes from trigonal planar to tetrahedral. The electrons of the pi bond are forced out to the oxygen atom to form an alkoxide ion, which is protonated to give the product of nucleophilic addition. A generalized example of nucleophilic addition of a strong nucleophile (N̈u⁻), followed by protonation of alkoxide ion is shown below.',
+ 'جیسا کہ حصہ 19.5 میں بیان ہوا، الڈیہائیڈز اور کیٹونز زیادہ تر نیوکلیوفائلی اضافی تعاملات کرتے ہیں۔ نیوکلیوفائلی اضافی تعامل میں نیوکلیوفائل کاربونل کاربن پر حملہ کرتا ہے اور کاربن کی ہائبرڈائزیشن sp² سے sp³ ہو جاتی ہے۔ جیومیٹری بھی تکونی مستوی سے چہار سطحی ہو جاتی ہے۔ پائی بند کے الیکٹران آکسیجن ایٹم کی طرف دھکیل دیے جاتے ہیں اور الکوآکسائیڈ آئن بنتا ہے، جو پروٹونیٹ ہو کر نیوکلیوفائلی اضافے کی پیداوار دیتا ہے۔ طاقتور نیوکلیوفائل (N̈u⁻) کے نیوکلیوفائلی اضافے اور اس کے بعد الکوآکسائیڈ آئن کی پروٹونیشن کی ایک عمومی مثال نیچے دکھائی گئی ہے۔',
+ 'لکه څنګه چې په 19.5 برخه کې بحث شو، الدیهایډونه او کیټونونه ډېری نیوکلیوفایلي اضافي تعاملونه کوي. په نیوکلیوفایلي اضافي تعامل کې نیوکلیوفایل پر کاربونیل کاربن برید کوي او د کاربن هایبرېډیزېشن له sp² څخه sp³ ته اوړي. جیومټري هم له درې ګوټي سطحي څخه څلورمخي ته اوړي. د پای تړون الکترونونه اکسیجني اټوم ته ټېله کېږي او الکوکساید ایون جوړوي، چې پروټونېټ کېږي او د نیوکلیوفایلي اضافې محصول ورکوي. د قوي نیوکلیوفایل (N̈u⁻) د نیوکلیوفایلي اضافې او ورپسې د الکوکساید ایون د پروټونېشن یوه عمومي بېلګه لاندې ښودل شوې.')
+visual('chem12-p121-general-addition',general)
+add('These reactions may be either acid catalyzed or base catalyzed.','یہ تعاملات تیزاب سے یا اساس سے عمل انگیز ہو سکتے ہیں۔','دا تعاملونه کېدای شي اسیدي کتلستي یا قلوي کتلستي وي.')
+add('a. Acid–Catalyzed Addition Reactions','a. تیزاب سے عمل انگیز اضافی تعاملات','a. اسیدي کتلستي اضافي تعاملونه','heading')
+add('Because of the unshared electron pair on oxygen atom, carbonyl oxygen acts as Lewis base, and can be protonated. Acid can catalyze the addition of weak nucleophiles to carbonyl compounds by protonating the carbonyl oxygen atom, to form an oxonium ion. This increases the electrophilic nature of the carbonyl carbon by inducing more positive charge on it and thus enhances its ability to be attacked by weak nucleophiles. For example, the mechanism of acid-catalyzed nucleophilic addition of generalized reaction is given below.',
+ 'آکسیجن ایٹم پر غیر مشترک الیکٹرانی جوڑے کی وجہ سے کاربونل آکسیجن لیوس اساس کا کام کرتی ہے اور پروٹونیٹ ہو سکتی ہے۔ تیزاب کاربونل آکسیجن ایٹم کو پروٹونیٹ کر کے آکسونیم آئن بناتا ہے اور اس طرح کاربونل مرکبات میں کمزور نیوکلیوفائلز کے اضافے کو عمل انگیز کرتا ہے۔ اس سے کاربونل کاربن پر زیادہ مثبت چارج پیدا ہو کر اس کی الیکٹروفائلی نوعیت بڑھتی ہے اور یوں کمزور نیوکلیوفائلز کے حملے کی صلاحیت بڑھ جاتی ہے۔ مثلاً عمومی تعامل کے تیزاب سے عمل انگیز نیوکلیوفائلی اضافے کا طریق کار نیچے دیا گیا ہے۔',
+ 'پر اکسیجني اټوم د نه شریکې الکتروني جوړې له امله کاربونیل اکسیجن د لیوس قلوي په توګه عمل کوي او پروټونېټ کېدای شي. اسید د کاربونیل اکسیجني اټوم په پروټونېټ کولو او د اکسونیم ایون په جوړولو سره کاربونیل مرکباتو ته د کمزورو نیوکلیوفایلونو اضافه کتلست کوي. دا پر کاربونیل کاربن د ډېر مثبت چارج په رامنځته کولو سره د هغه الکتروفایلي طبیعت زیاتوي او په دې توګه د کمزورو نیوکلیوفایلونو د برید وړتیا زیاتوي. د بېلګې په توګه د عمومي تعامل د اسیدي کتلستي نیوکلیوفایلي اضافې میکانیزم لاندې ورکړل شوی.')
+visual('chem12-p121-acid-catalysed',acid)
+add('Addition of water, alcohol, ammonia, amines etc. generally follow this mechanism.','پانی، الکوحل، امونیا، امائنز وغیرہ کا اضافہ عموماً اسی طریق کار پر ہوتا ہے۔','د اوبو، الکول، امونیا، امینونو او نورو زیاتول عموماً همدا میکانیزم تعقیبوي.')
+add('b. Base-Catalyzed Addition Reactions','b. اساس سے عمل انگیز اضافی تعاملات','b. قلوي کتلستي اضافي تعاملونه','heading')
+add('A base-catalyzed nucleophilic addition will take place in the presence of a strong base, which is usually the conjugate base of a reagent used for nucleophilic addition. The base which is also a nucleophile, attacks at the carbon atom of the carbon–oxygen double bond, and pi electrons of C=O bond move to the oxygen atom, which can easily accommodate the negative charge, because of its high electronegativity. The reaction is completed by the abstraction of a proton, from the reagent by negative oxygen, to regenerate the base. Thus, base increases the nucleophilic character of the reagent to be added.',
+ 'اساس سے عمل انگیز نیوکلیوفائلی اضافہ کسی طاقتور اساس کی موجودگی میں ہوتا ہے، جو عموماً نیوکلیوفائلی اضافے کے لیے استعمال ہونے والے عامل کی مزدوج اساس ہوتی ہے۔ یہ اساس، جو نیوکلیوفائل بھی ہے، کاربن–آکسیجن دوہرے بند کے کاربن ایٹم پر حملہ کرتی ہے، اور C=O بند کے پائی الیکٹران آکسیجن ایٹم کی طرف چلے جاتے ہیں، جو زیادہ برقی منفیت کی وجہ سے منفی چارج آسانی سے سنبھال سکتا ہے۔ تعامل منفی آکسیجن کے عامل سے پروٹان کھینچنے سے مکمل ہوتا ہے اور اساس دوبارہ بن جاتی ہے۔ یوں اساس شامل کیے جانے والے عامل کی نیوکلیوفائلی خصوصیت بڑھاتی ہے۔',
+ 'قلوي کتلستي نیوکلیوفایلي اضافه د قوي قلوي په شتون کې ترسره کېږي، چې معمولاً د نیوکلیوفایلي اضافې لپاره د کارول شوي عامل مزدوجه قلوي وي. دا قلوي چې نیوکلیوفایل هم دی، د کاربن–اکسیجن دوه ګوني تړون پر کاربني اټوم برید کوي، او د C=O تړون پای الکترونونه اکسیجني اټوم ته ځي، چې د لوړ الکترونېګاتیویټي له امله منفي چارج په اسانۍ ځای پر ځای کولی شي. تعامل د منفي اکسیجن له خوا له عامل څخه د پروټون په اخیستو بشپړېږي او قلوي بیا جوړېږي. نو قلوي د زیاتېدونکي عامل نیوکلیوفایلي ځانګړتیا زیاتوي.')
+visual('chem12-p121-base-catalysed',base)
+record=section('19.5','Reactivity of carbonyl group and nucleophilic addition','کاربونل گروپ کی تعامل پذیری اور نیوکلیوفائلی اضافہ','د کاربونیل ګروپ تعامل وړتیا او نیوکلیوفایلي اضافه',paras,layout,blocks,'234–235')
+record['sourceReferences']=[{'sourcePdf':SOURCE,'pdfPage':121,'printedPages':[234,235]}]
+record['sourceContinuesOnPdfPage']=122
+carry=[{'from':'19.5','to':'19.6','startsAt':'Addition of hydrogen cyanide in the presence'}]
+if __name__=='__main__':save(121,[record],carry=carry,chapter_number=19)

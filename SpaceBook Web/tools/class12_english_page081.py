@@ -1,0 +1,35 @@
+"""PDF81 (printed 149–150): Unit 15 future-perfect-continuous activity 1–14,14 (unit end); Unit 16 'Tourist Attractions in Pakistan' outcomes."""
+from class12_book_common import Book, Builder
+
+BOOK = Book('english')
+v = Builder()
+v.h('Activity', 'سرگرمی', 'فعالیت')
+v.p('Make the Future Perfect Continuous form of the verbs in brackets to complete the following sentences:', 'قوسین میں دیے گئے افعال کی مستقبل مکمل جاری شکل بنا کر درج ذیل جملے مکمل کریں:', 'په قوسونو کې د فعلونو راتلونکې بشپړه روانه بڼه جوړه کړئ او لاندې جملې بشپړې کړئ:')
+A = [(1, 'My son ____ (sleep) for two hours by the time I come back.'), (2, 'They will be exhausted by the match time. They ____ (run) for 7 hours.'), (3, 'Will you ____ (work) in this school for 5 months by the time of the annual parents day?'),
+     (4, 'They ____ (wait) long before the party begins at midnight.'), (5, 'The government servants ____ (protest) for 6 months by the time the salaries are increased in June.'), (6, 'Till October 20th, she ____ (teach) English for 3 years.'),
+     (7, 'Will he ____ (drive) taxi for 5 years by 2025?'), (8, 'By the end of this year we will have been ____ (live) in this house for 6 years.'), (9, 'My brother ____ (attend) this school for two years by 2022.'),
+     (10, 'Haris ____ (watch) TV for 3 whole hours by the time my father comes.'), (11, 'They ____ (play) for four hours by noon.'), (12, 'How long will you ____ (practice) guitar by 2021?'),
+     (13, 'My friends ____ (cook) for an hour by the time we get there.'), (14, 'We ____ (learn) English for two years by 2021.'), (14, "The Covid-19 ____ ( play havoc) for years till it's vaccine is prepared .")]
+v.group('lines', [(f'{n}. {s}',) * 3 for n, s in A])
+for p in v.paras[-len(A):]: p['untranslatedByDesign'] = True
+a = BOOK.record(v, 'eng12-u15-vocab-e', 'Future Perfect Continuous — activity', 'مستقبل مکمل جاری — سرگرمی', 'راتلونکی بشپړ روان — فعالیت', 81, [149])
+
+UT = ('Tourist Attractions in Pakistan', 'پاکستان میں سیاحتی مقامات', 'په پاکستان کې د ګرځندوی ځایونه')
+o = Builder()
+o.h('Unit 16 — Tourist Attractions in Pakistan', 'یونٹ 16 — پاکستان میں سیاحتی مقامات', 'واحد 16 — په پاکستان کې د ګرځندوی ځایونه')
+o.p('By the end of the unit, the students will be able to:', 'اس یونٹ کے اختتام تک طلبہ اس قابل ہوں گے کہ:', 'د دې واحد په پای کې به زده کوونکي وکولای شي چې:')
+o.group('list', [
+    ('Use pre-reading strategies to predict the content of a text from topic / picture, title / headings, key words and visuals, etc. by using prior knowledge, asking questions and contextual clues.', 'مطالعے سے پہلے کی حکمتِ عملیاں استعمال کر کے موضوع / تصویر، عنوان / سرخیوں، کلیدی الفاظ اور بصری مواد وغیرہ سے، سابقہ علم، سوالات اور سیاقی اشاروں کی مدد سے متن کے مواد کا اندازہ لگائیں۔', 'د لوستلو مخکې ستراتیژۍ وکاروي ترڅو له موضوع / انځور، سرلیک / عنوانونو، کلیدي کلمو او لیدنیزو توکو او نورو څخه، د مخکینۍ پوهې، پوښتنو او شرایطي نښو په مرسته د متن منځپانګه اټکل کړي.'),
+    ('Analyze passages in the text to identify the theme/ general subject, key idea/ central thought (a statement about the general subject), and supporting details.', 'متن کے اقتباسات کا تجزیہ کر کے موضوع/ عمومی مضمون، کلیدی خیال/ مرکزی خیال (عمومی مضمون کے بارے میں ایک بیان) اور معاون تفصیلات کی نشاندہی کریں۔', 'د متن برخې تحلیل کړي ترڅو موضوع/ عمومي مضمون، کلیدي نظر/ مرکزي فکر (د عمومي مضمون په اړه یوه وینا) او ملاتړې جزئیات وپېژني.'),
+    ('Skim text to: have general idea of the text; infer theme/ main idea.', 'متن پر سرسری نظر ڈالیں تاکہ: متن کا عمومی اندازہ ہو؛ موضوع/ مرکزی خیال اخذ کریں۔', 'متن ته سرسري کتنه وکړي ترڅو: د متن عمومي مفکوره ولري؛ موضوع/ اصلي نظر استنباط کړي.'),
+    ('Apply critical thinking to interact with text, use intensive reading strategies (while reading) to: scan to answer short questions; make simple inferences using context of the text and prior knowledge; distinguish between what is clearly stated and what is implied; deduce meaning of difficult words from context; use context to infer missing words; read silently with comprehension and extract main idea and supporting detail.', 'متن سے تعامل کے لیے تنقیدی سوچ استعمال کریں، گہرے مطالعے کی حکمتِ عملیاں (مطالعے کے دوران) استعمال کریں تاکہ: مختصر سوالات کے جواب کے لیے تلاش کریں؛ متن کے سیاق اور سابقہ علم سے سادہ نتائج اخذ کریں؛ واضح اور ضمنی بات میں فرق کریں؛ سیاق سے مشکل الفاظ کے معنی اخذ کریں؛ سیاق سے غائب الفاظ کا اندازہ لگائیں؛ فہم کے ساتھ خاموش مطالعہ کریں اور مرکزی خیال اور معاون تفصیل نکالیں۔', 'له متن سره د تعامل لپاره انتقادي فکر وکاروي، د ژور لوستلو ستراتیژۍ (د لوستلو پر مهال) وکاروي ترڅو: د لنډو پوښتنو د ځوابولو لپاره ولټوي؛ د متن له شرایطو او مخکینۍ پوهې ساده پایلې واخلي؛ د ښکاره او ضمني ترمنځ توپیر وکړي؛ له شرایطو د سختو کلمو مانا استنباط کړي؛ له شرایطو ورکې کلمې اټکل کړي؛ په پوهې سره چوپ لوستل وکړي او اصلي نظر او ملاتړي جزئیات راوباسي.'),
+    ('Use critical thinking to respond orally and in writing to the text (post-reading ) to: give a personal opinion and justify stance related to viewpoints/ ideas and issues in the text read; relate what is read to his or her own feelings and experiences; explore causes and consequences of a problem or an issue and propose various solutions; evaluate material read.', 'تنقیدی سوچ استعمال کرتے ہوئے متن پر زبانی اور تحریری ردِعمل دیں (مطالعے کے بعد) تاکہ: پڑھے گئے متن کے نقطۂ ہائے نظر/ خیالات اور مسائل پر ذاتی رائے دیں اور موقف کا جواز پیش کریں؛ جو پڑھا اسے اپنے احساسات اور تجربات سے جوڑیں؛ کسی مسئلے کے اسباب و نتائج کی جستجو کریں اور مختلف حل تجویز کریں؛ پڑھے گئے مواد کی جانچ کریں۔', 'د انتقادي فکر په کارولو متن ته په خوله او لیکلي ډول غبرګون وښيي (له لوستلو وروسته) ترڅو: د لوستل شوي متن د لیدلورو/ نظرونو او مسایلو په اړه شخصي نظر ورکړي او دریځ یې ثابت کړي؛ لوستل شوي له خپلو احساساتو او تجربو سره وتړي؛ د یوې ستونزې لاملونه او پایلې وسپړي او بېلابېل حلونه وړاندیز کړي؛ لوستل شوې مواد ارزونه کړي.'),
+    ('Use appropriate vocabulary and correct spelling in their own writing.', 'اپنی تحریر میں موزوں ذخیرۂ الفاظ اور درست املا استعمال کریں۔', 'په خپله لیکنه کې مناسبې لغات او سم املا وکاروي.'),
+    ('Identify and recognize the functions of anaphoric and cataphoric references.', 'پیچھے اور آگے کی طرف اشارہ کرنے والے حوالوں (anaphoric اور cataphoric) کے افعال کی نشاندہی کریں اور انہیں پہچانیں۔', 'د شاته او مخکې اشاره کوونکو حوالو (anaphoric او cataphoric) دندې وپېژني.'),
+    ('Recognise and use sentence inversion for various purposes.', 'مختلف مقاصد کے لیے جملے کی ترتیبِ معکوس (sentence inversion) کو پہچانیں اور استعمال کریں۔', 'د بېلابېلو موخو لپاره د جملې اړول (sentence inversion) وپېژني او وکاروي.'),
+])
+op = BOOK.record(o, 'eng12-u16-outcomes', 'Unit 16 — learning outcomes', 'یونٹ 16 — تعلیمی نتائج', 'واحد 16 — د زده کړې پایلې', 81, [150], unit_title=UT)
+issues = [{'id': 'eng12-p149', 'unit': 15, 'printedPage': 149, 'description': 'Printed numbering retained: the activity has two items numbered 14. Also retained: “till it\'s vaccine is prepared”; item 8 prints the auxiliary “will have been” in the stem.'}]
+
+if __name__ == '__main__':
+    BOOK.save(81, [(15, a), (16, op)], issues=issues, complete_units=[15])

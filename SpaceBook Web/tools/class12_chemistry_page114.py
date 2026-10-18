@@ -1,0 +1,52 @@
+"""PDF114 printed220–221: HI cleavage of ethers, Society Technology and Science (antiseptics/disinfectants), Key Points of Unit 18."""
+from class12_chemistry_opening import pair,section,SOURCE
+from class12_chemistry_sync import save
+from class12_chemistry_rings import Fig
+F=Fig('arrow114');t=F.t;line=F.line
+paras=[];layout=[];blocks=[]
+def add(e,u,p,kind='paragraph'):
+ layout.append({'type':kind,'indices':[len(paras)]});paras.append(pair(e,u,p))
+def visual(identity,fn):
+ blocks.append({'id':identity,'svg':fn('en'),'svgUrdu':fn('ur'),'svgPashto':fn('ps')});layout.append({'type':'visual','blockId':identity})
+N={'ether':('ایتھر','ایتر'),'oxonium ion':('آکسونیم آئن','اکسونیم ایون'),'iodide ion':('آئیوڈائیڈ آئن','ایوډایډ ایون'),'alcohol':('الکوحل','الکول'),'alkyl iodide':('الکائل آئیوڈائیڈ','الکایل ایوډایډ'),
+   'diethyl ether':('ڈائی ایتھائل ایتھر','ډای ایتیل ایتر'),'diethyl oxonium ion':('ڈائی ایتھائل آکسونیم آئن','ډای ایتیل اکسونیم ایون'),'ethyl alcohol':('ایتھائل الکوحل','ایتیل الکول'),'ethyl iodide':('ایتھائل آئیوڈائیڈ','ایتیل ایوډایډ')}
+def lb(lang,v):return v if lang=='en' else N[v][0 if lang=='ur' else 1]
+def hi(lang):
+ s=F.start(220)
+ for i,(l,ln,o,on,p1,n1,p2,n2) in enumerate((('R—O—R + H—I','ether','R—O⁺—R','oxonium ion','R—OH','alcohol','R—I','alkyl iodide'),('C₂H₅—O—C₂H₅ + H—I','diethyl ether','C₂H₅—O⁺—C₂H₅','diethyl oxonium ion','C₂H₅—OH','ethyl alcohol','C₂H₅—I','ethyl iodide'))):
+  y=50+110*i;s+=t(110,y,l,15)+t(80,y+22,lb(lang,ln),12)+F.arrow(200,240,y-6)+t(320,y,o,15)+line(320,y+6,320,y+18)+t(320,y+32,'H',13)+t(320,y+50,lb(lang,on),12)+t(430,y,'+ I⁻',15)+t(430,y+22,lb(lang,'iodide ion'),12)
+  s+=F.arrow(470,510,y-6)+t(580,y,p1,15)+t(580,y+22,lb(lang,n1),12)+t(670,y,'+',15)+t(740,y,p2,15)+t(740,y+22,lb(lang,n2),12)
+ return s+'</svg>'
+visual('chem12-p114-hi-cleavage',hi)
+add('Society, Technology And Science','معاشرہ، ٹیکنالوجی اور سائنس','ټولنه، ټکنالوژي او ساینس','heading')
+for e,u,p in [
+ ('Antiseptics and disinfectants are very similar in that they are both used for killing microorganisms although they differ in structure and uses.','جراثیم کش (اینٹی سیپٹکس) اور ڈس انفیکٹنٹس اس لحاظ سے بہت ملتے جلتے ہیں کہ دونوں خرد جانداروں کو مارنے کے لیے استعمال ہوتے ہیں، اگرچہ ساخت اور استعمال میں مختلف ہیں۔','انټي سېپټیکونه او ډس انفېکټنټونه په دې کې ډېر ورته دي چې دواړه د مایکرو ارګانیزمونو د وژلو لپاره کارېږي، که څه هم په جوړښت او کارونه کې توپیر لري.'),
+ ('Antiseptics are used on living organisms, such as human skin, to kill any microorganisms living on the bodies’ surface. Disinfectants are used on non-living things, such as countertops and handrails, to kill the microorganisms living on that inanimate surface. Antiseptics are typically found to have a lower concentration of the particular biocide which is used in that product to clean the surface other than that of a disinfectant. Since the disinfectants are not meant for use on living tissues, but rather inanimate surfaces, they can use the higher concentration of biocide in the product since there is no skin or tissue to worry about irritation. Antiseptics require the lower concentration of biocide as too high concentrations of certain biocides could cause high amounts of skin irritation.',
+  'اینٹی سیپٹکس جانداروں، جیسے انسانی جلد، پر جسم کی سطح پر رہنے والے خرد جانداروں کو مارنے کے لیے استعمال ہوتے ہیں۔ ڈس انفیکٹنٹس بے جان چیزوں، جیسے کاؤنٹر ٹاپس اور ریلنگ، پر اس بے جان سطح پر رہنے والے خرد جانداروں کو مارنے کے لیے استعمال ہوتے ہیں۔ اینٹی سیپٹکس میں عموماً اس مخصوص حیات کش مادے کا ارتکاز ڈس انفیکٹنٹ سے کم ہوتا ہے۔ چونکہ ڈس انفیکٹنٹس زندہ بافتوں کے بجائے بے جان سطحوں کے لیے ہیں، اس لیے ان میں حیات کش کا زیادہ ارتکاز استعمال ہو سکتا ہے کیونکہ جلد یا بافت میں جلن کی فکر نہیں ہوتی۔ اینٹی سیپٹکس کو حیات کش کا کم ارتکاز درکار ہے کیونکہ بعض حیات کشوں کا بہت زیادہ ارتکاز جلد میں شدید جلن پیدا کر سکتا ہے۔',
+  'انټي سېپټیکونه پر ژوندیو موجوداتو، لکه د انسان پوستکي، د بدن پر سطحه د مایکرو ارګانیزمونو د وژلو لپاره کارېږي. ډس انفېکټنټونه پر بې روحه شیانو، لکه د مېز سطحو او لاسنیوو، د هغې بې روحې سطحې د مایکرو ارګانیزمونو د وژلو لپاره کارېږي. په انټي سېپټیکونو کې عموماً د ځانګړي ژوند وژونکي توکي غلظت د ډس انفېکټنټ په پرتله ټیټ وي. څرنګه چې ډس انفېکټنټونه د ژوندیو نسجونو لپاره نه بلکې د بې روحه سطحو لپاره دي، کولی شي د ژوند وژونکي توکي لوړ غلظت ولري ځکه د پوستکي یا نسج د خارښت اندېښنه نشته. انټي سېپټیکونه د ژوند وژونکي توکي ټیټ غلظت ته اړتیا لري ځکه د ځینو ژوند وژونکو ډېر لوړ غلظت کولی شي د پوستکي ډېر خارښت رامنځته کړي.'),
+ ('Some examples of antiseptics are mouthwash or hand sanitizer, both of which are safe to come in contact with your skin and also are able to be extremely effective at killing high amounts of microorganisms.','اینٹی سیپٹکس کی چند مثالیں ماؤتھ واش یا ہینڈ سینیٹائزر ہیں، دونوں جلد سے لگنے کے لیے محفوظ ہیں اور بڑی تعداد میں خرد جانداروں کو مارنے میں انتہائی مؤثر بھی ہیں۔','د انټي سېپټیکونو ځینې بېلګې د خولې مینځونکی یا د لاس پاکوونکی دي، چې دواړه له پوستکي سره د تماس لپاره خوندي دي او د ډېرو مایکرو ارګانیزمونو په وژلو کې ډېر اغېزمن هم دي.'),
+ ('Phenols, bleach and formaldehyde are all examples of different types of disinfectants used to kill the microorganisms on the surface of any non-living objects.','فینولز، بلیچ اور فارم الڈیہائیڈ سب مختلف اقسام کے ڈس انفیکٹنٹس کی مثالیں ہیں جو کسی بھی بے جان چیز کی سطح پر خرد جانداروں کو مارنے کے لیے استعمال ہوتے ہیں۔','فینولونه، بلیچ او فورمالدیهاید ټول د بېلابېلو ډس انفېکټنټونو بېلګې دي چې د هر بې روحه شي پر سطحه د مایکرو ارګانیزمونو د وژلو لپاره کارېږي.'),
+ ('It is essential for people to know the difference between antiseptics and disinfectants since they are both used for similar things but in different ways. Using a disinfectant as an antiseptic would likely irritate that tissue. Also, using an antiseptic as a disinfectant could result in a less sufficient job of cleaning that surface due to the lower concentration of biocide. Extreme caution must be taken to avoid contact with eyes and mucous membranes. The negative effect of disinfectant is that it is caustic to the skin, lungs and eyes.',
+  'لوگوں کے لیے اینٹی سیپٹکس اور ڈس انفیکٹنٹس کا فرق جاننا ضروری ہے کیونکہ دونوں ملتے جلتے کاموں کے لیے مگر مختلف طریقوں سے استعمال ہوتے ہیں۔ ڈس انفیکٹنٹ کو اینٹی سیپٹک کے طور پر استعمال کرنا غالباً بافت میں جلن پیدا کرے گا۔ نیز اینٹی سیپٹک کو ڈس انفیکٹنٹ کے طور پر استعمال کرنے سے حیات کش کے کم ارتکاز کی وجہ سے سطح کی صفائی کم مؤثر ہو سکتی ہے۔ آنکھوں اور جھلیوں سے لگنے سے بچنے کے لیے انتہائی احتیاط ضروری ہے۔ ڈس انفیکٹنٹ کا منفی اثر یہ ہے کہ یہ جلد، پھیپھڑوں اور آنکھوں کے لیے کاٹ دار ہے۔',
+  'د خلکو لپاره د انټي سېپټیکونو او ډس انفېکټنټونو توپیر پېژندل اړین دي ځکه دواړه د ورته شیانو لپاره خو په بېلو لارو کارېږي. د انټي سېپټیک پر ځای د ډس انفېکټنټ کارول به ښايي نسج تخریش کړي. همدارنګه د ډس انفېکټنټ پر ځای د انټي سېپټیک کارول د ژوند وژونکي توکي د ټیټ غلظت له امله د سطحې کمزوري پاکول پایله کېدای شي. د سترګو او مخاطي غشاوو له تماس څخه د مخنیوي لپاره ډېر احتیاط اړین دی. د ډس انفېکټنټ منفي اغېز دا دی چې پوستکي، سږو او سترګو ته سوځوونکی دی.')]:
+ add(e,u,p)
+add('Key Points','اہم نکات','مهم ټکي','heading')
+pts=[('Alcohols are compounds, in which a hydroxyl group (–OH) is attached to aliphatic carbon atom.','الکوحلز وہ مرکبات ہیں جن میں ہائیڈروآکسل گروپ (–OH) ایلیفیٹک کاربن ایٹم سے جڑا ہو۔','الکولونه هغه مرکبات دي چې پکې هایدروکسیل ګروپ (–OH) له الیفاتیک کاربني اټوم سره تړلی وي.'),
+ ('Hydroxyl group is attached to aromatic carbon atoms in phenols.','فینولز میں ہائیڈروآکسل گروپ ارومیٹک کاربن ایٹموں سے جڑا ہوتا ہے۔','په فینولونو کې هایدروکسیل ګروپ له اروماتیکو کاربني اټومونو سره تړلی وي.'),
+ ('Lucas test is used to distinguish between primary, secondary and tertiary alcohols.','لوکاس ٹیسٹ ابتدائی، ثانوی اور ثالثی الکوحلز میں امتیاز کے لیے استعمال ہوتا ہے۔','د لوکاس ازموینه د لومړنیو، دویمیو او درېیمیو الکولونو د توپیر لپاره کارېږي.'),
+ ('The formation of ester from alcohol and carboxylic acid is called “esterification”.','الکوحل اور کاربوکسیلک ایسڈ سے ایسٹر بننے کو ”ایسٹریفیکیشن“ کہتے ہیں۔','له الکول او کاربوکسیلیک اسید څخه د ایسټر جوړېدل ”ایسټریفیکېشن“ بلل کېږي.'),
+ ('Each carbon atom in phenol is sp²-hybridized.','فینول میں ہر کاربن ایٹم sp²-ہائبرڈ ہے۔','په فینول کې هر کاربني اټوم sp²-هایبرېډ دی.'),
+ ('Dow process is used for preparation of phenol from chlorobenzene and aqueous NaOH at high pressure and temperature.','ڈاؤ عمل زیادہ دباؤ اور درجہ حرارت پر کلورو بینزین اور آبی NaOH سے فینول کی تیاری کے لیے استعمال ہوتا ہے۔','د ډاو بهیر په لوړ فشار او تودوخه کې له کلوروبنزین او اوبلن NaOH څخه د فینول د جوړولو لپاره کارېږي.'),
+ ('Ethers are a class of compounds in which, with oxygen atom two alkyl groups, two aryl groups or one alkyl and one aryl group are attached.','ایتھرز مرکبات کی وہ جماعت ہیں جن میں آکسیجن ایٹم سے دو الکائل گروپ، دو ایرائل گروپ یا ایک الکائل اور ایک ایرائل گروپ جڑے ہوں۔','ایترونه د مرکباتو هغه ټولګی دی چې پکې له اکسیجني اټوم سره دوه الکایل ګروپونه، دوه اریل ګروپونه یا یو الکایل او یو اریل ګروپ تړلي وي.'),
+ ('General formula of ether is R–O–R.','ایتھر کا عمومی فارمولا R–O–R ہے۔','د ایتر عمومي فورمول R–O–R دی.'),
+ ('Ethers react with cold conc. HCl or H₂SO₄ to form oxonium salt.','ایتھرز ٹھنڈے مرتکز HCl یا H₂SO₄ سے تعامل کر کے آکسونیم نمک بناتے ہیں۔','ایترونه له سړه غلیظ HCl یا H₂SO₄ سره تعامل کوي او د اکسونیم مالګه جوړوي.'),
+ ('In Williamson synthesis method, sodium alkoxide is treated with an alkyl halide to produce ether.','ولیمسن تالیف کے طریقے میں سوڈیم الکوآکسائیڈ کو الکائل ہیلائیڈ سے عمل کرا کر ایتھر بنایا جاتا ہے۔','د ویلیامسن د ترکیب په طریقه کې سوډیم الکوکساید له الکایل هالایډ سره تعامل ورکول کېږي څو ایتر جوړ شي.'),
+ ('Hydrogen bonding in alcohols result in relatively high boiling points and good miscibility with water.','الکوحلز میں ہائیڈروجن بندش کے نتیجے میں نقطۂ جوش نسبتاً زیادہ اور پانی سے امتزاج اچھا ہوتا ہے۔','په الکولونو کې هایدروجني تړون په نسبي ډول لوړ د ایشېدو ټکي او له اوبو سره ښه ګډېدنه رامنځته کوي.')]
+s0=len(paras)
+for r in pts:paras.append(pair(*r))
+layout.append({'type':'list','indices':list(range(s0,len(paras)))})
+record=section('18.15','HI cleavage, Society Technology and Science, Key Points','HI سے شکست، معاشرہ ٹیکنالوجی اور سائنس، اہم نکات','د HI په واسطه ماتېدل، ټولنه ټکنالوژي او ساینس، مهم ټکي',paras,layout,blocks,'220–221')
+record['sourceReferences']=[{'sourcePdf':SOURCE,'pdfPage':114,'printedPages':[220,221]}]
+record['sourceContinuesOnPdfPage']=115
+trim=[{'id':'18.16','startsAt':'Exercise\nQI. Choose'}]
+if __name__=='__main__':save(114,[record],trim=trim,chapter_number=18)

@@ -1,0 +1,53 @@
+"""Pak Studies XII PDF45 (spread): printed pp.79–80 — Ch.4 rights in 1962/1973; Farewell Sermon and human rights 1–7."""
+from class12_book_common import Book, Builder
+
+BOOK = Book('pak')
+t = Builder()
+def P(*v): t.p(*v)
+def H(*v): t.h(*v)
+P('After the abrogation of this constitution, when the second constitution was made in 1962, the chapter on fundamental rights was not included in it. In view of the people’s demand, this chapter was included in the constitution through the Second Amendment. The 1973 constitution was approved unanimously by the National Assembly. In it too a chapter on fundamental rights has been included. So basic human rights are generally granted by national constitutions.',
+  'اس دستور کی منسوخی کے بعد جب 1962ء میں دوسرا دستور بنایا گیا تو بنیادی حقوق کا باب اس میں شامل نہ تھا۔ عوام کے مطالبے کے پیشِ نظر دستور میں دوسری ترمیم کے ذریعے اس باب کو شامل کیا گیا۔ 1973ء کا دستور قومی اسمبلی نے متفقہ طور پر منظور کیا۔ اس میں بھی بنیادی حقوق کا باب شامل کیا گیا ہے۔ لہٰذا انسانی بنیادی حقوق عموماً ملکی دساتیر کے عطا کردہ ہوتے ہیں۔',
+  'د دې اساسي قانون له لغوه کېدو وروسته چې په ۱۹۶۲ز کې دویم اساسي قانون جوړ شو، د بنسټیزو حقونو څپرکی پکې نه و. د خلکو غوښتنې ته په کتو دا څپرکی د دویم تعدیل له لارې په اساسي قانون کې شامل شو. د ۱۹۷۳ز اساسي قانون ملي اسمبلۍ په اتفاق تصویب کړ؛ په هغه کې هم د بنسټیزو حقونو څپرکی شامل دی. نو بنسټیز بشري حقونه عموماً د هېوادونو د اساسي قوانینو ورکړل شوي وي.')
+H('The Farewell Sermon and human rights', 'خطبہ حجۃ الوداع اور انسانی حقوق', 'د حجة الوداع خطبه او بشري حقونه')
+P('In the great sermon that the Holy Prophet (peace and blessings of Allah be upon him, his family and companions) delivered on the occasion of the Farewell Pilgrimage, a comprehensive summary of all basic human rights is present. The Farewell Sermon is the best and most comprehensive constitution of human rights and duties. A few important points regarding the human rights and duties included in this sermon are given below.',
+  'حضور نبی کریم صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے حجۃ الوداع کے موقع پر جو عظیم الشان خطبہ ارشاد فرمایا تھا اُس میں تمام بنیادی انسانی حقوق کا ایک جامع خلاصہ موجود ہے۔ خطبہ حجۃ الوداع انسانی حقوق و فرائض کا سب سے بہترین اور جامع دستور ہے۔ اس خطبے میں شامل انسانی حقوق اور فرائض کے حوالے سے چند اہم نکات ذیل میں درج ہیں۔',
+  'حضور نبي کریم صلی الله علیه وعلی آله واصحابه وسلم د حجة الوداع په موقع کومه لویه خطبه وفرمایله، په هغه کې د ټولو بنسټیزو بشري حقونو جامع لنډیز شته. د حجة الوداع خطبه د بشري حقونو او دندو تر ټولو غوره او جامع اساسي قانون دی. په دې خطبه کې د شاملو بشري حقونو او دندو په اړه یو څو مهم ټکي لاندې دي:')
+for h, p in [
+ (('1. Human equality and respect for humanity', '1۔ انسانی مساوات اور احترامِ انسانیت', '۱. انساني برابري او د انسانیت درناوی'),
+  ('In this great sermon the Holy Prophet (peace and blessings of Allah be upon him, his family and companions) declared all the human beings of the world equal without distinction of colour and race.',
+   'اس عظیم الشان خطبے میں حضور اکرم صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے دُنیا کے تمام انسانوں کو بلا تفریق رنگ و نسل برابر قرار دیا۔',
+   'په دې لویه خطبه کې حضور اکرم صلی الله علیه وعلی آله واصحابه وسلم د نړۍ ټول انسانان پرته د رنګ او نژاد له توپیره برابر وګڼل.')),
+ (('2. Protection of life, property and possessions', '2۔ جان و مال اور جائیداد کا تحفظ', '۲. د ځان، مال او ملکیت ساتنه'),
+  ('In the Farewell Sermon the Holy Prophet (peace and blessings of Allah be upon him, his family and companions) declared the life, property, honour and possessions of one person forbidden (ḥarām) to another person.',
+   'خطبہ حجۃ الوداع میں حضور صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے ایک انسان کی جان و مال، عزت اور جائیداد کو دوسرے انسان کے لیے حرام قرار دیا ہے۔',
+   'د حجة الوداع په خطبه کې حضور صلی الله علیه وعلی آله واصحابه وسلم د یوه انسان ځان، مال، عزت او ملکیت پر بل انسان حرام وګڼل.')),
+ (('3. Rights of women', '3۔ خواتین کے حقوق', '۳. د ښځو حقونه'),
+  ('In the Farewell Sermon the rights of women are mentioned in clear words. The Holy Prophet (peace and blessings of Allah be upon him, his family and companions) said that men have rights over their women and women over men. He said that men should take care of the rights of their women and deal gently with them.',
+   'خطبہ حجۃ الوداع میں خواتین کے حقوق کا ذکر واضح الفاظ میں ملتا ہے۔ حضور نبی کریم صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے فرمایا کہ مردوں کا اپنی عورتوں اور عورتوں کا مردوں پر حق ہے۔ آپ صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے فرمایا کہ مردوں کو چاہیے کہ اپنی عورتوں کے حقوق کا خیال رکھیں اور اُن کے ساتھ نرمی کا برتاؤ کریں۔',
+   'د حجة الوداع په خطبه کې د ښځو د حقونو یادونه په روښانه کلمو شوې. حضور نبي کریم صلی الله علیه وعلی آله واصحابه وسلم وفرمایل چې نارینه پر خپلو ښځو او ښځې پر نارینه وو حق لري. هغه وفرمایل چې نارینه باید د خپلو ښځو د حقونو پام وساتي او ورسره نرم چلند وکړي.')),
+ (('4. Share in inheritance', '4۔ وراثت میں حصہ', '۴. په میراث کې برخه'),
+  ('In this sermon the Holy Prophet (peace and blessings of Allah be upon him, his family and companions) also mentioned the right to receive a share in inheritance, and said that no heir should be deprived of his rightful share in inheritance.',
+   'حضور نبی کریم صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے اس خطبے میں وراثت میں حصہ حاصل کرنے کے حق کا بھی ذکر فرمایا ہے اور فرمایا کہ کسی کو وارثت میں اُس کے جائز حق سے محروم نہ کیا جائے۔',
+   'حضور نبي کریم صلی الله علیه وعلی آله واصحابه وسلم په دې خطبه کې په میراث کې د برخې د ترلاسه کولو حق هم یاد کړ او ویې فرمایل چې هېڅوک دې په میراث کې له خپل مشروع حقه بې‌برخې نه شي.')),
+ (('5. Peace and tolerance', '5۔ امن اور رواداری', '۵. سوله او زغم'),
+  ('The Holy Prophet (peace and blessings of Allah be upon him, his family and companions) taught, instead of taking revenge, to forgive with forbearance and patience, and he himself set an example by forgiving the blood of his close relative ʿĀmir bin Rabīʿa ibn Ḥārith bin ʿAbd al-Muṭṭalib, killed in the days of ignorance.',
+   'حضور نبی کریم صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے انتقام لینے کی بجائے تحمل اور بردباری سے کام لیتے ہوئے معاف کرنے کا درس دیا اور آپ صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے خود اس کی مثال قائم کرتے ہوئے ایامِ جاہلیت میں قتل ہونے والے اپنے قریبی رشتہ دار عامر بن ربیعہ ابن حارث بن عبدالمطلب کا خون معاف کر دیا۔',
+   'حضور نبي کریم صلی الله علیه وعلی آله واصحابه وسلم د غچ اخیستو پر ځای د زغم او صبر سره د بښنې درس ورکړ، او پخپله یې د بېلګې په توګه د جاهلیت په ورځو کې د وژل شوي خپل نږدې خپلوان عامر بن ربیعه ابن حارث بن عبدالمطلب وینه وبښله.')),
+ (('6. Good treatment of slaves and the weak', '6۔ غلاموں اور کمزوروں کے ساتھ حسنِ سلوک', '۶. له غلامانو او کمزورو سره ښه چلند'),
+  ('The slave was the weakest class of society at that time. The Holy Prophet (peace and blessings of Allah be upon him, his family and companions) taught good treatment of slaves and said that they should be given the same food as you eat yourselves and dressed in the same clothes as you wear yourselves. The Holy Prophet also forbade dealing harshly with slaves. Besides the Farewell Sermon there are also such references which prove that on several occasions the Holy Prophet (peace and blessings of Allah be upon him, his family and companions) not only urged gentleness and good treatment of slaves but also encouraged freeing slaves.',
+   'غلام اُس وقت معاشرے کا سب سے کمزور طبقہ تھا۔ حضور نبی کریم صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے غلاموں کے ساتھ حسنِ سلوک کا درس دیا اور فرمایا کہ اُن کو وہی خوراک دو جو تم خود کھاتے ہو اور اُن کو وہی لباس پہناؤ جو تم خود پہنتے ہو۔ حضور صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے غلاموں کے ساتھ سختی کرنے سے بھی منع فرمایا۔ خطبہ حجۃ الوداع کے علاوہ بھی ایسے حوالہ جات ہیں جن سے ثابت ہوتا ہے کہ حضور نبی کریم صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نہ صرف غلاموں سے نرمی اور حسنِ سلوک کی تلقین فرماتے تھے بلکہ کئی مواقع پر حضور صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے غلاموں کو آزاد کرنے کی حوصلہ افزائی بھی کی ہے۔',
+   'غلام په هغه وخت کې د ټولنې تر ټولو کمزورې طبقه وه. حضور نبي کریم صلی الله علیه وعلی آله واصحابه وسلم له غلامانو سره د ښه چلند درس ورکړ او ویې فرمایل چې هغوی ته هماغه خواړه ورکړئ چې پخپله یې خورئ او هماغه جامې ورته واغوندئ چې پخپله یې اغوندئ. حضور صلی الله علیه وعلی آله واصحابه وسلم له غلامانو سره له سختۍ هم منع وفرمایله. له حجة الوداع خطبې پرته داسې حوالې هم شته چې ثابتوي حضور نبي کریم صلی الله علیه وعلی آله واصحابه وسلم نه یوازې له غلامانو سره د نرمۍ او ښه چلند تلقین کاوه، بلکې په ګڼو مواقعو یې د غلامانو د ازادولو هڅونه هم کړې.')),
+ (('7. Rights of rulers and subjects', '7۔ حکمران اور رعایا کے حقوق', '۷. د واکمن او رعیت حقونه'),
+  ('In this same sermon the Holy Prophet (peace and blessings of Allah be upon him, his family and companions) also threw light on the rights of rulers and subjects. It has been declared incumbent on the subjects that, as long as the ruler does not give any order contrary to Islamic teachings and injunctions, his order should not be disobeyed. There, the ruler too has been made bound to take care of his subjects.',
+   'اسی خطبے میں حضور صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے حکمرانوں اور رعایا کے حقوق پر بھی روشنی ڈالی ہے۔ رعایا کے لیے لازم قرار دیا گیا ہے کہ جب تک حکمران اسلامی تعلیمات اور احکامات کے منافی کوئی حکم نہ دے تو اُس کی حکم عدولی نہ کی جائے۔ وہاں حکمران کو بھی اس بات کا پابند قرار دیا گیا ہے کہ وہ اپنی رعایا کا خیال رکھے۔',
+   'په همدې خطبه کې حضور صلی الله علیه وعلی آله واصحابه وسلم د واکمنانو او رعیت پر حقونو هم رڼا اچولې. پر رعیت لازمه شوې چې تر څو واکمن د اسلامي لارښوونو او احکامو خلاف کوم امر نه وي کړی، د هغه سرغړونه دې ونه کړي. هلته واکمن هم پابند شوی چې د خپل رعیت پام وساتي.')),
+]:
+    H(*h); P(*p)
+P('Besides the rights stated in the Farewell Sermon, if the blessed life of the Holy Prophet (peace and blessings of Allah be upon him, his family and companions) is studied, this point is proved: that on several other occasions the Holy Prophet (peace and blessings of Allah be upon him, his family and companions) laid stress on all those …',
+  'حجۃ الوداع میں بیان کیے گئے حقوق کے علاوہ حضور نبی کریم صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم کی سیرتِ پاک کا مطالعہ کیا جائے تو یہ بات ثابت ہوتی ہے کہ حضور صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم نے دیگر کئی مواقعوں پر اُن تمام …',
+  'د حجة الوداع په خطبه کې له بیان شویو حقونو پرته که د حضور نبي کریم صلی الله علیه وعلی آله واصحابه وسلم سیرت مطالعه شي، دا خبره ثابتېږي چې حضور صلی الله علیه وعلی آله واصحابه وسلم په ګڼو نورو مواقعو پر هغو ټولو …')
+rec = BOOK.record(t, 'pak12-ch4-text-8', 'Chapter 4 text (8)', 'بابِ چہارم — متن (۸)', 'څلورم څپرکی — متن (۸)', 45, [79, 80])
+issues = [{'id': 'pak12-pdf045', 'unit': 4, 'printedPage': 80, 'description': 'p.80 prints “وارثت” (for “وراثت”) and “مواقعوں” (double plural) — retained as printed.'}]
+
+if __name__ == '__main__':
+    BOOK.save(45, [(4, rec)], issues=issues)

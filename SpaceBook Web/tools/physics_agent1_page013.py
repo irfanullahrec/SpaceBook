@@ -1,0 +1,30 @@
+from physics_agent1_sequential import save, render
+def tr(text,urdu,pashto): return dict(text=text,urdu=urdu,pashto=pashto,translationOrigin='SpaceBook')
+paras=[
+ tr('‘A complete set of units for all physical quantities is called system of units’. The international system of units is abbreviated as SI units. Actually, SI units is a short form of the French name ‘System International (d’ Units)’ which means ‘International System of Units’. The international system of units is based on seven base units (or seven basic units) from which all other units are derived. These seven basic physical quantities, their SI base units and symbols are given in the table 1.2.',
+ '’تمام طبعی مقداروں کی اکائیوں کا مکمل مجموعہ نظامِ اکائیات کہلاتا ہے۔‘ بین الاقوامی نظامِ اکائیات کو مختصراً SI کہتے ہیں۔ دراصل SI فرانسیسی نام ’System International (d’ Units)‘ کی مختصر صورت ہے، جس کا مطلب ’بین الاقوامی نظامِ اکائیات‘ ہے۔ یہ نظام سات بنیادی اکائیوں پر مبنی ہے، جن سے باقی تمام اکائیاں اخذ کی جاتی ہیں۔ یہ سات بنیادی طبعی مقداریں، ان کی SI بنیادی اکائیاں اور علامتیں جدول 1.2 میں دی گئی ہیں۔',
+ '’د ټولو فزیکي کمیتونو د واحدونو بشپړ ټولګه د واحدونو سیستم بلل کېږي.‘ د واحدونو نړیوال سیستم په لنډ ډول SI بلل کېږي. په اصل کې SI د فرانسوي نوم ’System International (d’ Units)‘ لنډه بڼه ده، چې مانا یې ’د واحدونو نړیوال سیستم‘ ده. دا سیستم پر اوو بنسټیزو واحدونو ولاړ دی، چې نور ټول واحدونه ترې اخیستل کېږي. دا اووه بنسټیز فزیکي کمیتونه، د هغوی SI واحدونه او نښې په 1.2 جدول کې ورکړل شوي دي.'),
+ tr('INFORMATION: Aeroplane pilot require large number of measuring and information instruments for safe flight.',
+ 'معلومات: ہوائی جہاز کے پائلٹ کو محفوظ پرواز کے لیے بڑی تعداد میں پیمائشی اور معلوماتی آلات کی ضرورت ہوتی ہے۔',
+ 'معلومات: د الوتکې پیلوټ د خوندي الوتنې لپاره ګڼ شمېر د اندازه کولو او معلوماتو وسایلو ته اړتیا لري.'),
+ tr('A. SI Base Units:', 'الف۔ SI کی بنیادی اکائیاں:', 'الف. د SI بنسټیز واحدونه:'),
+ tr('In SI SEVEN physical quantities are chosen as base and their units are defined, standardized and are called base units. Each SI unit is defined carefully so that it is unique and upon which accurate and reproducible measurements can be made.',
+ 'SI میں سات طبعی مقداریں بنیادی مقداروں کے طور پر منتخب کی گئی ہیں، اور ان کی اکائیوں کو متعین اور معیاری بنایا گیا ہے؛ انہیں بنیادی اکائیاں کہتے ہیں۔ ہر SI اکائی کو احتیاط سے متعین کیا جاتا ہے تاکہ وہ منفرد ہو اور اس کی بنیاد پر درست اور قابلِ تکرار پیمائشیں کی جا سکیں۔',
+ 'په SI کې اووه فزیکي کمیتونه د بنسټیزو کمیتونو په توګه ټاکل شوي دي، او واحدونه یې تعریف او معیاري شوي دي؛ دا بنسټیز واحدونه بلل کېږي. هر SI واحد په دقت تعریف شوی دی، ترڅو ځانګړی وي او پر بنسټ یې کره او بیا تکرارېدونکې اندازې واخیستل شي.'),
+ tr('TID-BIT: WHY SI?', 'اضافی معلومات: SI کیوں؟', 'لنډ معلومات: ولې SI؟'),
+ tr('Before SI units were standardized, Isaac Newton in his book while specifying the length of the pendulum reported not only as ‘37 whole 7/8 inches long’ but ‘37 whole 7/8 London inches long’. The inch (unit of length) in different cities of England was defined to have different length.',
+ 'SI اکائیوں کے معیاری ہونے سے پہلے آئزک نیوٹن نے اپنی کتاب میں پنڈولم کی لمبائی صرف ’37 صحیح 7/8 انچ‘ نہیں بلکہ ’37 صحیح 7/8 لندن انچ‘ لکھی۔ انگلستان کے مختلف شہروں میں لمبائی کی اکائی انچ کی لمبائی مختلف مقرر تھی۔',
+ 'د SI واحدونو له معیاري کېدو مخکې، اسحاق نیوټن په خپل کتاب کې د رقاصې اوږدوالی یوازې ’37 بشپړ او 7/8 انچه‘ نه، بلکې ’37 بشپړ او 7/8 د لندن انچه‘ ښودلی و. د انګلستان په بېلابېلو ښارونو کې د انچ، چې د اوږدوالي واحد دی، اوږدوالی بېلابېل تعریف شوی و.'),
+ tr('Similarly before SI, we had to deal with odd conversion factors like 16 ounces in a pound or 12 inches in a foot or 5280 feet in a mile. SI came up with decimal notation like 1000 metres was termed as 1 kilometre and 100 centimetres as 1 metre.',
+ 'اسی طرح SI سے پہلے ہمیں تبدیلی کے غیر سہل عوامل استعمال کرنے پڑتے تھے، مثلاً ایک پاؤنڈ میں 16 اونس، ایک فٹ میں 12 انچ اور ایک میل میں 5280 فٹ۔ SI میں اعشاری طرز اختیار کیا گیا، جیسے 1000 میٹر کو ایک کلومیٹر اور 100 سینٹی میٹر کو ایک میٹر کہا گیا۔',
+ 'همدارنګه، له SI مخکې مو د تبدیلۍ له نااشنا ضریبونو سره کار کاوه، لکه په یوه پونډ کې 16 اونس، په یوه فوټ کې 12 انچه او په یوه میل کې 5280 فوټه. SI اعشاري بڼه راوړه، لکه 1000 متره یو کیلومتر او 100 سانتي متره یو متر بلل کېږي.')
+]
+table=dict(id='table1.2',sourceNumber='TABLE 1.2',title='TABLE 1.2 BASE UNITS FOR INTERNATIONAL SYSTEM OF UNITS',sourcePdfPage=13,sourcePrintedPage=8,
+ headers=['Base Quantity: Name','Base Quantity: Symbol','SI Base Unit: Name','SI Base Unit: Symbol'],
+ headerGroups=[dict(title='Base Quantity',columns=[0,1]),dict(title='SI Base Unit',columns=[2,3])],
+ rows=[['length','l, x, r (e.t.c)','meter','m'],['mass','m','kilogram','kg'],['time, duration','t','second','s'],['electric current','I or i','ampere','A'],['thermodynamic temperature','T','kelvin','K'],['amount of substance','n','mole','mol'],['luminous intensity','I','candela','cd']],
+ translations=[dict(language='اردو',headers=['بنیادی مقدار','مقدار کی علامت','SI بنیادی اکائی','اکائی کی علامت'],rows=[['لمبائی','l, x, r','میٹر','m'],['کمیت','m','کلوگرام','kg'],['وقت، دورانیہ','t','سیکنڈ','s'],['برقی رو','I or i','ایمپیئر','A'],['حر حرکیاتی درجہ حرارت','T','کیلون','K'],['مادے کی مقدار','n','مول','mol'],['روشنی کی شدت','I','کینڈیلا','cd']]),
+ dict(language='پښتو',headers=['بنسټیز کمیت','د کمیت نښه','د SI بنسټیز واحد','د واحد نښه'],rows=[['اوږدوالی','l, x, r','متر','m'],['کتله','m','کیلوګرام','kg'],['وخت، موده','t','ثانیه','s'],['برېښنايي جریان','I or i','امپیر','A'],['ترمودینامیکي تودوخې درجه','T','کېلوین','K'],['د مادې اندازه','n','مول','mol'],['د رڼا شدت','I','کاندیلا','cd']])])
+save(dict(pdfPage=13,printedPage=8,status='completed-corrected',chapterNumber=1,chapter='Unit 1: Physical Quantities and Measurement',title='1.3 International System of Units',tables=[table],sections=[dict(code='1.3',heading='1.3 International System of Units',paras=paras,blocks=[dict(type='dataTable',**table)])],
+ comparison='Source paragraph boundaries preserved; seven-unit table and original symbols stored with translations; historical SI callout retained as complete paragraphs'))
+render(14)

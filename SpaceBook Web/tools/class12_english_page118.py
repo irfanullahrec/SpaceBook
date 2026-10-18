@@ -1,0 +1,65 @@
+"""PDF118 (printed 223–224): Lord of the Flies glossary divisive–startled."""
+from class12_book_common import Book, Builder, gloss
+
+BOOK = Book('english')
+g = Builder()
+gloss(g, 'eng12-u19-gloss-b', [
+    ('divisive(adj.)', 'dissenting', 'اختلاف پیدا کرنے والا', 'اختلاف راپاروونکی'),
+    ('enkindle(v)', 'light, cause to start burning.', 'جلانا، آگ لگانا۔', 'بلول، د سوځېدو لامل کېدل.'),
+    ('envisage(v)', 'imagine', 'تصور کرنا', 'تصور کول'),
+    ('essayed(v)', 'attempt ; make an effort', 'کوشش کرنا', 'هڅه کول'),
+    ('embarrassed(adj.)', 'feeling uneasy, uncomfortable because of shame or pride.', 'شرم یا غرور کی وجہ سے بے چینی اور بے آرامی محسوس کرنا۔', 'د شرم یا غرور له امله ناکراري او بې‌ارامي احساسول.'),
+    ('emphatically(adv.)', 'unquestionably', 'بلاشبہ', 'بې له شکه'),
+    ('flickering(adj.)', 'shining unsteadily.', 'ٹمٹماتا ہوا۔', 'رپېدونکی ځلېدل.'),
+    ('fatigue (n)', 'tiredness.', 'تھکاوٹ۔', 'ستړیا.'),
+    ('flitted(adj.)', 'moved quickly and secretly', 'تیزی اور خاموشی سے حرکت کی', 'په چټکۍ او پټه حرکت یې وکړ'),
+    ('formation(n)', 'an arrangement of people acting as a unit', 'لوگوں کی ایسی ترتیب جو ایک اکائی کے طور پر عمل کرے', 'د خلکو داسې ترتیب چې د یو واحد په توګه عمل کوي'),
+    ('gutted(adj.)', 'completely empty.', 'بالکل خالی۔', 'بشپړ تش.'),
+    ('grunt(v)', 'A low animal like sound. Squeal.', 'جانور جیسی دھیمی آواز۔ چیخ۔', 'د څاروي په څېر ټیټ غږ. چیغه.'),
+    ('give somebody heart', 'encourage somebody.', 'کسی کی ہمت بندھانا۔', 'چا ته زړه ورکول.'),
+    ('gasp(v)', 'breathe noisily with mouth open', 'منہ کھول کر آواز سے سانس لینا', 'په خلاصه خوله په غږ ساه اخیستل'),
+    ('go crimson', 'become excessively angry', 'بہت زیادہ غصے میں آنا', 'ډېر غوسه کېدل'),
+    ('hesitant(adj.)', 'reluctant, unable to decide quickly or firmly.', 'ہچکچانے والا، جلدی یا مضبوطی سے فیصلہ نہ کر سکنے والا۔', 'زړه نازړه، په چټکۍ یا ټینګښت پرېکړه نه شي کولی.'),
+    ('his legs gave beneath him', 'his legs were extremely weak; he was exhausted.', 'اس کی ٹانگیں انتہائی کمزور تھیں؛ وہ تھک کر چور تھا۔', 'پښې یې ډېرې کمزورې وې؛ ستړی ستومانه و.'),
+    ('huddled(v)', 'crowded together', 'ایک ساتھ سمٹ گئے', 'سره راټول شول'),
+    ('hysteria(n)', 'excessive fear', 'حد سے زیادہ خوف', 'له حده زیاته وېره'),
+    ('inarticulate (adj.)', 'without the use of words or speech', 'الفاظ یا گفتار کے استعمال کے بغیر', 'د کلمو یا وینا له کارولو پرته'),
+    ('indignant(adj.)', 'Angered', 'برہم', 'غوسه شوی'),
+    ('interceded (v)', 'Interrupted', 'بیچ میں مداخلت کی', 'منځګړیتوب یې وکړ'),
+    ('insanely(adv.)', 'in a foolish manner.', 'احمقانہ انداز میں۔', 'په احمقانه ډول.'),
+    ('involuntarily(adv.)', 'against ones will, unwillingly', 'اپنی مرضی کے خلاف، بے اختیار', 'د خپلې خوښې خلاف، بې‌اختیاره'),
+    ('improvisation(n)', 'extempore performance', 'فی البدیہہ کارکردگی', 'بېړنۍ ترسره کونه'),
+    ('inimical(adj.)', 'Unfriendly', 'غیر دوستانہ', 'نادوستانه'),
+    ('jam(v)', 'ram, push down forcibly', 'زور سے ٹھونسنا', 'په زور ننباسل'),
+    ('jolt(n)', 'jerk', 'جھٹکا', 'ټکان'),
+    ('jeering(adj.)', 'mocking', 'مذاق اڑاتا ہوا', 'ټوکې کوونکی'),
+    ('kindling(n)', 'material for starting a fire', 'آگ جلانے کا سامان', 'د اور بلولو توکي'),
+    ('limping(v)', 'walk impeded by some physical limitations or injury.', 'کسی جسمانی کمی یا چوٹ کی وجہ سے رکاوٹ کے ساتھ چلنا۔', 'د کوم جسمي محدودیت یا ټپ له امله په خنډ سره ګرځېدل.'),
+    ('lagoon(n)', 'a body of water cut off from a larger body', 'پانی کا ایک حصہ جو بڑے آبی ذخیرے سے کٹا ہوا ہو', 'د اوبو یوه برخه چې له لوی اوبلن ځای بېله شوې وي'),
+    ('mimic(v)', 'imitate a manner to ridicule a person.', 'کسی کا مذاق اڑانے کے لیے اس کے انداز کی نقل کرنا۔', 'د چا د ټوکو لپاره د هغه د چلند نقل کول.'),
+    ('mat(v)', 'twist together', 'آپس میں بٹنا', 'سره تاوول'),
+    ('marksmanship(n)', 'skill in shooting', 'نشانہ بازی کی مہارت', 'د ویشتلو مهارت'),
+    ('nightmare(n)', 'a terrifying dream', 'ڈراؤنا خواب', 'وېروونکی خوب'),
+    ('[racial slur — headword omitted in the app]', '[the textbook glosses a racial slur used in the abridgement as “a black person”; see printed p. 224]', '[نسلی گالی — ایپ میں یہ اندراج حذف کیا گیا ہے؛ درسی کتاب صفحہ 224 دیکھیں]', '[نژادي کنځل — په اپلیکېشن کې دا ننوت حذف شوی؛ چاپي کتاب 224 مخ وګورئ]'),
+    ('outlaw(n)', 'disobedient to law', 'قانون کا نافرمان', 'د قانون نافرمان'),
+    ('plonking(v)', 'the noise of something dropping', 'کسی چیز کے گرنے کی آواز', 'د یو شي د لوېدو غږ'),
+    ('parody(n)', 'humorous mimicry', 'مزاحیہ نقالی', 'طنزي نقل'),
+    ('pile(n)', 'heap ; a collection of something.', 'ڈھیر؛ کسی چیز کا مجموعہ۔', 'ډېری؛ د یو شي ټولګه.'),
+    ('perception(n)', 'knowledge gained through senses.', 'حواس کے ذریعے حاصل ہونے والا علم۔', 'د حواسو له لارې ترلاسه شوې پوهه.'),
+    ('pinch(v)', 'apprehending a criminal.', 'مجرم کو پکڑنا۔', 'مجرم نیول.'),
+    ('pinnacles(n)', 'a lofty peak', 'بلند چوٹی', 'لوړه څوکه'),
+    ('pull oneself together', "regain one's self-control.", 'اپنے آپ پر دوبارہ قابو پانا۔', 'په ځان بیا کنټرول موندل.'),
+    ('quest(v)', 'Search', 'تلاش کرنا', 'لټول'),
+    ('repudiate(v)', 'refuse to acknowledge or obey an authority', 'کسی اختیار کو تسلیم کرنے یا ماننے سے انکار کرنا', 'د یو واک له منلو یا اطاعت انکار کول'),
+    ('ram(v)', 'strike with a heavy impact', 'زور دار ضرب سے مارنا', 'په درانه ګوزار وهل'),
+    ('smack(n)', 'a blow from an open hand or a flat object.', 'کھلے ہاتھ یا چپٹی چیز سے ضرب۔', 'په خلاص لاس یا هوار شي ګوزار.'),
+    ('strides(n)', 'steps', 'لمبے قدم', 'اوږده ګامونه'),
+    ('scramble(v)', 'to move hurriedly', 'جلدی سے حرکت کرنا', 'په بېړه حرکت کول'),
+    ('scree(n)', 'loose rocks at the base of a cliff.', 'چٹان کی بنیاد پر ڈھیلے پتھر۔', 'د کمر په بیخ کې خلاصې ډبرې.'),
+    ('startled(v)', 'move suddenly as if in surprise or alarm.', 'حیرت یا خوف سے اچانک حرکت کرنا۔', 'لکه د حیرانتیا یا وېرې له امله ناڅاپه حرکت کول.'),
+])
+rec = BOOK.record(g, 'eng12-u19-glossary-b', 'Glossary (divisive – startled)', 'فرہنگ (divisive – startled)', 'وییپانګه (divisive – startled)', 118, [223, 224])
+issues = [{'id': 'eng12-p223-224', 'unit': 19, 'printedPage': 224, 'description': 'The glossary on p.224 lists a racial slur (from the abridgement’s p.216) glossed “a black person”; the app withholds the headword and records it here for the author to review. Retained as printed: “flitted(adj.)”, “gutted(adj.) — completely empty”, “grunt(v) — … Squeal”, “interceded — Interrupted”, “pinch(v) — apprehending a criminal”, “quest(v)”, “against ones will”.'}]
+
+if __name__ == '__main__':
+    BOOK.save(118, [(19, rec)], issues=issues)

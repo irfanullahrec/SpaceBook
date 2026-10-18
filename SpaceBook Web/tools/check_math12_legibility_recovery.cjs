@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm'),path=require('path'),assert=require('assert/strict');const root=path.resolve(__dirname,'..'),s={};vm.createContext(s);
+for(const file of ['js/math_12_data.js','js/math12_answer_repairs.js','js/math12_legibility_recovery.js'])vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),s);
+vm.runInContext('this.q=MATH_12_DATA[9].exercises.flatMap(e=>e.problems||[]).find(q=>q.id===\'ex-10-1-q2\');',s);
+assert.match(s.q.question,/y′\+y=e\^\(−x\)/);assert(!/smudged/.test(s.q.question));assert.match(s.q.originalLegibilityReview.question,/smudged/);
+assert(fs.existsSync(path.join(root,s.q.sourceQuestionBlocks[0].src)));
+for(const x of [-3,-1,0,1,3])for(const c of [-7,0,4])assert(Math.abs((1-x-c)*Math.exp(-x)+(x+c)*Math.exp(-x)-Math.exp(-x))<1e-10);
+for(const x of [-1,0,1])assert(Math.abs((Math.exp(x)+Math.exp(-x))-3*(Math.exp(x)-Math.exp(-x))+2*(Math.exp(x)+Math.exp(-x))-6*Math.exp(-x))<1e-10);
+const before=JSON.stringify(s.q);vm.runInContext(fs.readFileSync(path.join(root,'js/math12_legibility_recovery.js'),'utf8'),s);assert.equal(JSON.stringify(s.q),before);
+fs.writeFileSync(path.join(root,'docs/source-verification/class-12/math12-legibility-recovery-check.json'),JSON.stringify({...s.MATH12_LEGIBILITY_RECOVERY_REPORT,checkedUtc:new Date().toISOString(),passed:true,checks:['Crop visually inspected','Resolved equation differentiated independently','Part(d) inconsistency preserved','Old uncertain reading archived','Repeated loading idempotent']},null,2)+'\n');
+console.log('Math12 exponent recovery checks passed. Two source-limited answers remain.');

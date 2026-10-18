@@ -1,0 +1,25 @@
+from physics_agent1_sequential import save, render
+def tr(text,urdu,pashto): return dict(text=text,urdu=urdu,pashto=pashto,translationOrigin='SpaceBook')
+derived=[
+ tr('B. Derived Units:','ب۔ ماخوذ اکائیاں:','ب. مشتق واحدونه:'),
+ tr('Units derived from multiplying and dividing base units are termed as derived units. In SI units for all the physical quantities can be derived from the seven base units. The units for velocity and acceleration are ‘m/s’ and ‘m/s²’, respectively. Some derived units were used so often that it became convenient to give them their own names and symbols. For example force has derived units of ‘kgms⁻²’ which is given special name as ‘newton’ and represented as ‘N’. Some derived quantities with derived units in terms of base units are given in table 1.3.',
+ 'بنیادی اکائیوں کو ضرب اور تقسیم کرنے سے حاصل ہونے والی اکائیاں ماخوذ اکائیاں کہلاتی ہیں۔ SI میں تمام طبعی مقداروں کی اکائیاں سات بنیادی اکائیوں سے اخذ کی جا سکتی ہیں۔ سمتی رفتار اور اسراع کی اکائیاں بالترتیب m/s اور m/s² ہیں۔ بعض ماخوذ اکائیاں اتنی کثرت سے استعمال ہوتی تھیں کہ انہیں الگ نام اور علامتیں دینا مناسب سمجھا گیا۔ مثلاً قوت کی ماخوذ اکائی kgms⁻² کو خاص نام نیوٹن دیا گیا، اور اسے N سے ظاہر کرتے ہیں۔ کچھ ماخوذ مقداریں اور بنیادی اکائیوں کی صورت میں ان کی ماخوذ اکائیاں جدول 1.3 میں دی گئی ہیں۔',
+ 'هغه واحدونه چې د بنسټیزو واحدونو له ضرب او وېش څخه ترلاسه کېږي، مشتق واحدونه بلل کېږي. په SI کې د ټولو فزیکي کمیتونو واحدونه له اوو بنسټیزو واحدونو څخه اخیستل کېدای شي. د سرعت او تعجیل واحدونه په ترتیب سره m/s او m/s² دي. ځینې مشتق واحدونه دومره ډېر کارېدل چې جلا نومونه او نښې ورکول ورته مناسب شول. د بېلګې په توګه، د قوې مشتق واحد kgms⁻² ته د نیوټن ځانګړی نوم ورکړل شوی دی او په N ښودل کېږي. ځینې مشتق کمیتونه او د بنسټیزو واحدونو په بڼه د هغوی مشتق واحدونه په 1.3 جدول کې ورکړل شوي دي.'),
+ tr('POINT TO PONDER: Viruses (about 10⁻⁷ m long) attacking a cell. How such small lengths can be measured?',
+ 'غور کرنے کی بات: وائرس (تقریباً 10⁻⁷ میٹر لمبے) ایک خلیے پر حملہ کرتے ہیں۔ اتنی چھوٹی لمبائیاں کیسے ناپی جا سکتی ہیں؟',
+ 'د فکر ټکی: وایرسونه، چې شاوخوا 10⁻⁷ متره اوږده دي، پر یوه حجره برید کوي. دومره کوچني اوږدوالي څنګه اندازه کېدای شي؟')
+]
+scientific=[tr('Scientific notation is a way of writing numbers that are too big or too small to be easily written in decimal form. Standard form or scientific notation has a number of useful properties and is commonly used by scientists, mathematicians and engineers.',
+ 'سائنسی طرزِ اظہار ایسے اعداد کو لکھنے کا طریقہ ہے جو اتنے بڑے یا چھوٹے ہوں کہ انہیں اعشاری صورت میں آسانی سے نہ لکھا جا سکے۔ معیاری صورت یا سائنسی طرزِ اظہار کی کئی مفید خصوصیات ہیں، اور سائنس دان، ریاضی دان اور انجینئر اسے عام طور پر استعمال کرتے ہیں۔',
+ 'علمي بڼه د هغو عددونو د لیکلو طریقه ده چې دومره لوی یا کوچني وي چې په اعشاري بڼه په اسانۍ نه شي لیکل کېدای. معیاري یا علمي بڼه ګڼې ګټورې ځانګړنې لري او ساینسپوهان، ریاضي پوهان او انجینران یې په عام ډول کاروي.')]
+rows=[['area','A','square meter','m²'],['volume','V','cubic meter','m³'],['speed, velocity','v','meter per second','ms⁻¹'],['acceleration','a','meter per second squared','ms⁻²'],['density','ρ','kilogram per cubic meter','kgm⁻³'],['force','F','newton','N = kgms⁻²'],['pressure','P','pascal','Pa = kgm⁻¹s⁻²'],['energy','E, U','joule','J = kgm²s⁻²'],['capacitance','C','farad','F = kg⁻¹m⁻²s⁴A²'],['resistance','R','ohm','Ω = kgm²s⁻³A⁻²']]
+ur_names=[['رقبہ','مربع میٹر'],['حجم','مکعب میٹر'],['رفتار، سمتی رفتار','میٹر فی سیکنڈ'],['اسراع','میٹر فی سیکنڈ مربع'],['کثافت','کلوگرام فی مکعب میٹر'],['قوت','نیوٹن'],['دباؤ','پاسکل'],['توانائی','جول'],['برقی گنجائش','فیراڈ'],['مزاحمت','اوہم']]
+ps_names=[['مساحت','مربع متر'],['حجم','مکعب متر'],['چټکتیا، سرعت','متر پر ثانیه'],['تعجیل','متر پر ثانیه مربع'],['کثافت','کیلوګرام پر مکعب متر'],['قوه','نیوټن'],['فشار','پاسکال'],['انرژي','ژول'],['برېښنايي ظرفیت','فاراد'],['مقاومت','اوم']]
+table=dict(id='table1.3',sourceNumber='TABLE 1.3',title="TABLE 1.3 DERIVED UNITS FOR ‘INTERNATIONAL SYSTEM OF UNITS’",sourcePdfPage=14,sourcePrintedPage=9,
+ headers=['Derived Quantity: Name','Derived Quantity: Symbol','Derived Unit: Name','Derived Unit: Symbol'],rows=rows,
+ translations=[dict(language=lang,headers=headers,rows=[[names[i][0],row[1],names[i][1],row[3]] for i,row in enumerate(rows)]) for lang,headers,names in [
+ ('اردو',['ماخوذ مقدار','مقدار کی علامت','ماخوذ اکائی','اکائی کی علامت'],ur_names),('پښتو',['مشتق کمیت','د کمیت نښه','مشتق واحد','د واحد نښه'],ps_names)]])
+save(dict(pdfPage=14,printedPage=9,status='completed-corrected',chapterNumber=1,chapter='Unit 1: Physical Quantities and Measurement',title='Derived Units / 1.4 Standard Form / Scientific Notation',tables=[table],sections=[
+ dict(code='1.3',heading='1.3 International System of Units',paras=derived,blocks=[dict(type='dataTable',**table)]),
+ dict(code='1.4',heading='1.4 Standard Form / Scientific Notation',paras=scientific)],comparison='Original long paragraph retained without OCR fragments; all ten derived-unit rows and superscripts verified and translated; source question retained without image'))
+render(15)

@@ -21,6 +21,7 @@ const DATA_FILES = [
   'general_science_9_data.js', 'hpe_9_data.js', 'drawing_9_data.js', 'islamiat_ikhtiari_9_data.js', 'mutalia_quran_9_data.js',
   'computer_10_data.js', 'general_science_10_data.js', 'hpe_10_data.js', 'drawing_10_data.js', 'islamiat_ikhtiari_10_data.js', 'mutalia_quran_10_data.js',
   'nazira_1_data.js', 'pashto_1_data.js', 'math_10_data.js', 'math_1_data.js', 'drawing_2_data.js', 'drawing_3_data.js', 'math_2_data.js', 'math_3_book_text.js', 'math_3_data.js', 'math_primary_visuals.js',
+  'primary_page_art.js', 'english_1_pages.js', 'primary_page_learning.js',
   'english_2_data.js', 'urdu_2_data.js', 'islamyat_2_data.js', 'nazira_2_data.js', 'gk_2_data.js', 'pashto_2_data.js',
   'islamyat_3_data.js', 'nazira_3_data.js', 'english_3_data.js', 'gk_3_data.js', 'pashto_3_data.js',
   'math_12_data.js', 'phys_12_data.js', 'chem_12_data.js', 'stat_12_data.js',
@@ -385,6 +386,7 @@ check('index.html references app.js', srcs.includes('js/app.js'));
 check('index.html loads core registry before subjects', srcs.indexOf('js/data.js') >= 0 && srcs.indexOf('js/data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 Drawing data', srcs.includes('js/drawing_1_data.js') && srcs.indexOf('js/drawing_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 1 English data', srcs.includes('js/english_1_data.js') && srcs.indexOf('js/english_1_data.js') < srcs.indexOf('js/app.js'));
+check('index.html loads Class 1 English page-by-page art, model and learning renderer before app.js', ['js/primary_page_art.js','js/english_1_pages.js','js/primary_page_learning.js'].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 1 Maths data', srcs.includes('js/math_1_data.js') && srcs.indexOf('js/math_1_data.js') < srcs.indexOf('js/app.js'));
 check('index.html loads Class 2 Drawing and Maths data', ['js/drawing_2_data.js','js/math_2_data.js'].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));
 check('index.html loads Class 3 Maths text, lessons, and vector figures before app.js', ['js/math_3_book_text.js','js/math_3_data.js','js/math_primary_visuals.js'].every(f => srcs.includes(f) && srcs.indexOf(f) < srcs.indexOf('js/app.js')));

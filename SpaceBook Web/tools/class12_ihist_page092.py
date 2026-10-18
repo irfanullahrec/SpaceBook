@@ -1,0 +1,32 @@
+"""Islamic History XII PDF92: p.176 — Hisham II (end); p.177 — exercise of lessons 34–35. Run: python class12_ihist_page092.py"""
+from class12_ihist_common import BOOK, Builder, rec, S, L
+
+
+def p92():
+    b = Builder()
+    S(b, [(None, ('… gave. After his death Abd al-Rahman bin Mansur became hajib (prime minister). He too kept Caliph Hisham suppressed. He began to dream of obtaining the caliphate. He requested Hisham to make him heir-apparent. Hisham accepted this request. The Umayyads and the Quraysh became extremely displeased. Finding an opportunity they deposed Hisham and seated Muhammad bin Hisham al-Mahdi billah on the throne. Wadih al-\'Amiri killed him and restored Hisham al-Mu\'ayyad again. Musta\'in conquered Cordoba and killed Hisham. Killing Musta\'in, the government of the Banu Umayyah was destroyed. The Berbers gave powers to \'Ali bin Hammud and Qasim. The people of Cordoba ended the amirate of the Hammudids and again made Abd al-Rahman bin Hisham amir. He belonged to the Banu Umayyah. Later Muhammad bin Abd al-Rahman took possession. Now confusion spread in the country. The central government had ended. Small states were established. With Hisham\'s death the splendour of the government of the Umayyad family ended and autonomous states were established in the country.', 'دے دیا۔ اس کی وفات کے بعد عبدالرحمان بن منصور حاجب (وزیر اعظم) بنا۔ اس نے بھی خلیفہ ہشام کو دبائے رکھا۔ اس نے خلافت حاصل کرنے کا خواب دیکھنا شروع کیا۔ ہشام سے ولی عہد بنانے کی درخواست کی۔ ہشام نے یہ درخواست منظور کی۔ اموی اور قریشی سخت ناراض ہوئے۔ انہوں نے موقع پا کر ہشام کو معزول کر کے محمد بن ہشام المہدی باللہ کو تخت پر بٹھا دیا۔ واضح عامری نے اسے قتل کر کے ہشام المؤید کو دوبارہ بحال کر دیا۔ مستعین نے قرطبہ فتح کر کے ہشام کو قتل کر دیا۔ مستعین کو قتل کر کے بنو امیہ کی حکومت کو نیست و نابود کر دیا۔ بربروں نے علی بن حمود اور قاسم کو اختیارات دے دیئے۔ اہلِ قرطبہ نے حمودیوں کی امارت ختم کر کے دوبارہ عبدالرحمان بن ہشام کو امیر بنا دیا۔ اس کا تعلق بنو امیہ سے تھا۔ بعد میں محمد بن عبدالرحمان نے قبضہ کر لیا۔ اب ملک میں افراتفری پھیل گئی۔ مرکزی حکومت ختم ہو چکی تھی۔ چھوٹی چھوٹی ریاستیں قائم ہو گئیں۔ ہشام کی موت کے ساتھ ہی اموی خاندان کی حکومت کی شان و شوکت ختم ہو گئی اور ملک میں خود مختار ریاستیں قائم ہو گئیں۔', '… ورکړل. له مړینې وروسته یې عبدالرحمن بن منصور حاجب (لومړی وزیر) شو؛ هغه هم خلیفه هشام ځپلی وساته؛ د خلافت د ترلاسه کولو خوبونه یې ولیدل؛ له هشام یې وغوښتل چې ولیعهد یې کړي؛ هشام دا غوښتنه ومنله. اموي او قریشي سخت خپه شول؛ فرصت یې وموند، هشام یې لرې کړ او محمد بن هشام المهدي بالله یې پر تخت کېناوه. واضح عامري هغه ووژه او هشام المؤید یې بیا بحال کړ. مستعین قرطبه فتح کړه او هشام یې ووژه. مستعین یې ووژه او د بنو امیه حکومت یې له منځه یووړ (چاپ شوی متن داسې دی). بربرانو علي بن حمود او قاسم ته واکونه ورکړل. د قرطبې خلکو د حمودیانو امارت ختم کړ او بیا یې عبدالرحمن بن هشام امیر کړ چې له بنو امیه و؛ وروسته محمد بن عبدالرحمن قبضه وکړه. اوس په هېواد کې ګډوډي خپره شوه؛ مرکزي حکومت ختم شوی و؛ کوچني کوچني دولتونه جوړ شول. د هشام له مړینې سره د اموي کورنۍ د حکومت شان و شوکت ختم شو او په هېواد کې خپلواک دولتونه جوړ شول.'))])
+    r1 = rec(b, 35, 176, 92, [176])
+    t = Builder()
+    t.h('Exercise questions', 'مشقی سوالات', 'تمریني پوښتنې')
+    L(t, [('1. Write a brief account of the reign of Abd al-Rahman III al-Nasir.', '۱۔ عبدالرحمان ناصر ثالث کے عہدِ حکومت کا مختصر حال لکھیں۔', '۱. د عبدالرحمن ناصر درېیم د حکومت لنډ حال ولیکئ.'),
+          ('2. Write a note on: "Al-Hakam II was a learning-loving ruler."', '۲۔ ”الحکم ثانی علم دوست حکمران تھا“ پر نوٹ لکھیں۔', '۲. پر دې یادښت ولیکئ: «الحکم دویم علم‌دوسته واکمن و.»')])
+    t.p('3. Fill in the blanks.', '۳۔ خالی جگہیں پر کریں۔', '۳. تشې ډکې کړئ.')
+    L(t, [('a. Sultan Abdullah, leaving his sons, made his grandson ______ heir-apparent.', 'الف: سلطان عبداللہ نے اپنے بیٹوں کو چھوڑ کر اپنے پوتے ______ کو ولی عہد بنایا۔', 'الف. سلطان عبدالله خپل زامن پرېښودل او خپل لمسی ______ یې ولیعهد کړ.'),
+          ('b. Abd al-Rahman al-Nasir was the first ruler who adopted the title of ______.', 'ب: عبدالرحمان ناصر پہلا حکمران تھا جس نے ______ کا لقب اختیار کیا۔', 'ب. عبدالرحمن ناصر لومړی واکمن و چې د ______ لقب یې غوره کړ.'),
+          ('c. ______ became a dervish in the last part of his life.', 'ج: ______ آخری عمر میں درویش بن گیا۔', 'ج. ______ د عمر په پای کې درویش شو.'),
+          ('d. Abd al-Rahman al-Nasir\'s age was ______ years.', 'د: عبدالرحمان ناصر کی عمر ______ سال تھی۔', 'د. د عبدالرحمن ناصر عمر ______ کاله و.'),
+          ('e. Abd al-Rahman al-Nasir entrusted the vizierate to ______.', 'ہ: عبدالرحمان ناصر نے وزارت ______ کے سپرد کر دی۔', 'ه. عبدالرحمن ناصر وزارت ______ ته وسپارله.'),
+          ('f. In Africa the ______ government had been established.', 'و: افریقہ میں ______ حکومت قائم ہو چکی تھی۔', 'و. په افریقا کې ______ حکومت جوړ شوی و.'),
+          ('g. Among Abd al-Rahman\'s buildings ______ has a special place.', 'ز: عبدالرحمان کی عمارتوں میں ______ کو خاص مقام حاصل ہے۔', 'ز. د عبدالرحمن په ودانیو کې ______ ځانګړی مقام لري.'),
+          ('h. ______ himself issued the royal decrees.', 'ح: شاہی فرمان ______ خود جاری کرتا تھا۔', 'ح. شاهي فرمانونه ______ پخپله صادرول.'),
+          ('i. The event of the battle of al-Khandaq took place in the year ______.', 'ط: جنگ الخندق کا واقعہ ______ سن میں پیش آیا۔', 'ط. د الخندق جګړې پېښه په ______ کال کې وشوه.'),
+          ('j. ______ is even today the best specimen of architecture.', 'ی: ______ آج بھی فنِ تعمیر کا بہترین نمونہ ہے۔', 'ی. ______ نن هم د معمارۍ غوره بېلګه ده.'),
+          ('k. After al-Nasir ______ ascended the throne.', 'ک: ناصر کے بعد ______ تخت نشین ہوا۔', 'ک. له ناصر وروسته ______ پر تخت کېناست.'),
+          ('l. Al-Hakam, along with being a man of the sword, was also ______.', 'ل: الحکم صاحبِ سیف ہونے کے ساتھ ساتھ ______ بھی تھا۔', 'ل. الحکم د تورې خاوند ترڅنګ ______ هم و.'),
+          ('m. Abu al-Faraj Isfahani was sent ______ dinars.', 'م: ابوالفرج اصفہانی کو ______ دینار بھیجے گئے۔', 'م. ابوالفرج اصفهاني ته ______ دیناره ولېږل شول.')])
+    BOOK.save(92, [(35, r1), (35, rec(t, 35, 177, 92, [177], kind='exercise'))], complete_units=[35], issues=[{'id': 'ihist12-pdf092', 'unit': 35, 'printedPage': 176,
+               'description': 'Printed as is: "مستعین کو قتل کر کے بنو امیہ کی حکومت کو نیست و نابود کر دیا" (subject missing), "واضح عامری". The exercise on p.177 covers lessons 34–35 and is placed at the end of lesson 35. Lower half of p.176 blank. No student marks; no printed key.'}])
+
+
+if __name__ == '__main__':
+    p92()

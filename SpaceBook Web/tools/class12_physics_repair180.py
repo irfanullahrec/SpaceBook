@@ -1,0 +1,61 @@
+"""PDF180 full neutrino explanation, gamma emission and decay definitions."""
+from class12_source_review import upsert,section,shared_class_data_lock
+from class12_fidelity_repair import stage_reference
+from class12_physics_repair189 import text,arrow,isotope,svg
+from class12_physics_repair186 import cluster
+from class12_physics_repair179 import bubble
+SOURCE='Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf'
+T=[];L=[]
+def add(kind,en,ur,ps):L.append({'type':kind,'indices':[len(T)]});T.append((en,ur,ps))
+def eq(s):s=r'\('+s+r'\)';add('equation',s,s,s)
+add('paragraph','Notice, in electron emission, an electron antineutrino is also emitted. Whereas the positron emission is accompanied by the emission of an electron neutrino. The electron neutrino is a subatomic particle which has no net electric charge. Like all particles, the electron neutrino has a corresponding antiparticle, the electron antineutrino, which differs only in that some of its properties have equal magnitude but opposite sign.',
+ 'غور کریں، الیکٹران کے اخراج میں ایک الیکٹران ضد نیوٹرینو بھی خارج ہوتا ہے۔ جبکہ پوزیٹران کے اخراج کے ساتھ ایک الیکٹران نیوٹرینو خارج ہوتا ہے۔ الیکٹران نیوٹرینو ایک ذیلی ایٹمی ذرہ ہے جس پر کوئی خالص برقی بار نہیں ہوتا۔ تمام ذرات کی طرح الیکٹران نیوٹرینو کا بھی ایک متعلقہ ضد ذرہ، الیکٹران ضد نیوٹرینو، ہوتا ہے؛ اس میں فرق صرف یہ ہے کہ اس کی بعض خصوصیات کی مقدار برابر مگر علامت مخالف ہوتی ہے۔',
+ 'پام وکړئ، د الکترون د خپرېدو پر مهال یو الکترون انټي نیوټرینو هم خپرېږي. خو د پوزیترون له خپرېدو سره یو الکترون نیوټرینو خپرېږي. الکترون نیوټرینو یوه فرعي اټومي ذره ده چې خالص برېښنايي چارج نه لري. د ټولو ذرو په څېر الکترون نیوټرینو هم خپله مقابله ضد ذره، الکترون انټي نیوټرینو، لري؛ توپیر یې یوازې دا دی چې د ځینو ځانګړنو اندازه یې برابره خو نښه یې مخالفه ده.')
+add('heading','Science Tidbits','سائنسی معلومات','ساینسي معلومات')
+add('heading','Why a neutrino is emitted in Beta decay?','بیٹا زوال میں نیوٹرینو کیوں خارج ہوتا ہے؟','په بېټا زوال کې نیوټرینو ولې خپرېږي؟')
+add('paragraph',r'Beta decay was a puzzle at first because a continuous spectrum of electron (or positron) kinetic energies was observed. Beta particles are ejected from nucleus at different speeds. In \(\alpha\) decay, the definite kinetic energy is same for all particles to conserve energy and momentum. For the same reasons, scientists thought that \(\beta\) particles emitted in a given decay reaction should also be monoenergetic.',
+ r'ابتدا میں بیٹا زوال ایک معما تھا، کیونکہ الیکٹران (یا پوزیٹران) کی حرکی توانائیوں کا مسلسل طیف مشاہدے میں آیا تھا۔ بیٹا ذرات مختلف رفتاروں سے نیوکلئیس سے خارج ہوتے ہیں۔ \(\alpha\) زوال میں توانائی اور معیارِ حرکت کی بقا کے لیے تمام ذرات کی متعین حرکی توانائی یکساں ہوتی ہے۔ انہی وجوہ سے سائنس دان سمجھتے تھے کہ کسی مخصوص زوال کے تعامل میں خارج ہونے والے \(\beta\) ذرات بھی یک توانائی ہونے چاہییں۔',
+ r'بېټا زوال په پیل کې یوه معما وه، ځکه د الکترون (یا پوزیترون) د حرکي انرژیو پرله پسې طیف لیدل شوی و. بېټا ذرې له هستې په بېلابېلو سرعتونو ایستل کېږي. په \(\alpha\) زوال کې د انرژۍ او مومنټم د بقا لپاره د ټولو ذرو ټاکلې حرکي انرژي یو شان وي. د همدې دلیلونو له مخې ساینسپوهانو فکر کاوه چې په یوه ټاکلي زوال تعامل کې خپرې شوې \(\beta\) ذرې هم باید یوه انرژي ولري.')
+add('paragraph','Wolfgang Pauli suggested that not one, but two particles were being emitted in beta decay an electron/positron and neutrino/antineutrino. If a nucleus emits two particles instead of one, then they can conserve both energy and momentum while splitting up the kinetic energy in every possible way. Two momentum vectors that add to zero must be equal in magnitude and opposite in direction, but three momentum vectors can add to zero in an infinite number of ways and still share the same total kinetic energy. The neutrino has the following properties:',
+ 'وولف گینگ پاؤلی نے تجویز کیا کہ بیٹا زوال میں ایک نہیں بلکہ دو ذرات خارج ہوتے ہیں: ایک الیکٹران/پوزیٹران اور نیوٹرینو/ضد نیوٹرینو۔ اگر نیوکلئیس ایک کے بجائے دو ذرات خارج کرے تو وہ حرکی توانائی کو ہر ممکن انداز میں بانٹتے ہوئے توانائی اور معیارِ حرکت دونوں کو محفوظ رکھ سکتے ہیں۔ معیارِ حرکت کے دو سمتیوں کا مجموعہ صفر ہو تو ان کی مقداریں برابر اور سمتیں مخالف ہونا ضروری ہیں، مگر تین سمتیے لاتعداد طریقوں سے صفر مجموعہ دے سکتے ہیں اور پھر بھی یکساں کل حرکی توانائی بانٹ سکتے ہیں۔ نیوٹرینو کی درج ذیل خصوصیات ہیں:',
+ 'وولفګانګ پاولي وړاندیز وکړ چې په بېټا زوال کې یوه نه، بلکې دوه ذرې خپرېږي: الکترون/پوزیترون او نیوټرینو/انټي نیوټرینو. که هسته د یوې پر ځای دوه ذرې خپرې کړي، هغوی کولی شي حرکي انرژي په هره ممکنه بڼه ووېشي او انرژي او مومنټم دواړه وساتي. د مومنټم دوه وکټورونه چې مجموعه یې صفر وي، باید په اندازه برابر او په لوري مخالف وي، خو د مومنټم درې وکټورونه په بې پایانه لارو صفر مجموعه لرلی شي او بیا هم هماغه ټوله حرکي انرژي ووېشي. نیوټرینو لاندې ځانګړنې لري:')
+add('paragraph','• Zero electric charge','• صفر برقی بار','• صفر برېښنايي چارج')
+add('paragraph','• A mass much smaller than that of the electron, but probably not zero.','• الیکٹران سے بہت کم کمیت، مگر غالباً صفر نہیں۔','• تر الکترون ډېره کمه کتله، خو ښایي صفر نه وي.')
+add('paragraph',r'• (Recent experiments suggest that the neutrino definitely has mass, but the value is uncertain, perhaps less than \(1\ \mathrm{eV}/c^2\).)',
+ r'• (حالیہ تجربات ظاہر کرتے ہیں کہ نیوٹرینو کی کمیت یقیناً ہوتی ہے، مگر اس کی قدر غیر یقینی ہے، شاید \(1\ \mathrm{eV}/c^2\) سے کم۔)',
+ r'• (وروستۍ تجربې ښيي چې نیوټرینو خامخا کتله لري، خو ارزښت یې نامعلوم دی، ښایي له \(1\ \mathrm{eV}/c^2\) کم وي.)')
+add('paragraph','• A spin of 1/2','• اسپن1/2','• سپین1/2')
+add('paragraph','• Very weak interaction with matter, making it difficult to detect','• مادے کے ساتھ بہت کمزور تعامل، جس کی وجہ سے اس کا کھوج مشکل ہے','• له مادې سره ډېر کمزوری تعامل، چې کشفول یې ستونزمن کوي')
+add('heading','C. GAMMA EMISSION','C. گاما اخراج','C. د ګاما خپرېدل')
+add('paragraph',r'Gamma rays are electromagnetic radiation emitted from the nucleus. Gamma radiation emission occurs when the nucleus of a radioactive atom has excess energy. Inside the nucleus the nucleons (like the orbital electrons) exists in discrete-energy states or levels. When a nucleus changes from an excited energy state to a lower energy state, a photon is emitted. The photon has a much greater energy and is called a \(\gamma\) ray. In most cases the \(\alpha\) or \(\beta\) emission from the nucleus leave it in excited state such nuclei achieve further stability by emitting gamma rays.',
+ r'گاما شعاعیں نیوکلئیس سے خارج ہونے والی برقی مقناطیسی تابکاری ہیں۔ گاما تابکاری کا اخراج اس وقت ہوتا ہے جب تابکار ایٹم کے نیوکلئیس میں اضافی توانائی ہو۔ نیوکلئیس کے اندر نیوکلیون (مداری الیکٹرانوں کی طرح) الگ الگ توانائی حالتوں یا سطحوں میں ہوتے ہیں۔ جب نیوکلئیس برانگیختہ توانائی حالت سے کم توانائی حالت میں آتا ہے تو ایک فوٹون خارج ہوتا ہے۔ اس فوٹون کی توانائی بہت زیادہ ہوتی ہے اور اسے \(\gamma\) شعاع کہتے ہیں۔ اکثر نیوکلئیس سے \(\alpha\) یا \(\beta\) اخراج اسے برانگیختہ حالت میں چھوڑ دیتا ہے؛ ایسے نیوکلئیس گاما شعاعیں خارج کر کے مزید استحکام حاصل کرتے ہیں۔',
+ r'ګاما وړانګې له هستې خپرېدونکې برېښنا مقناطیسي وړانګې دي. د ګاما وړانګو خپرېدل هغه وخت کېږي چې د راډیواکټیف اټوم هسته اضافي انرژي ولري. په هسته کې نیوکلیونونه (د مداري الکترونونو په څېر) په جلا انرژي حالتونو یا کچو کې وي. کله چې هسته له تحریک شوي انرژي حالت څخه ټیټې انرژۍ حالت ته بدله شي، یو فوټون خپرېږي. فوټون ډېره لوړه انرژي لري او \(\gamma\) وړانګه بلل کېږي. په ډېرو حالتونو کې له هستې د \(\alpha\) یا \(\beta\) خپرېدل هغه په تحریک شوي حالت کې پرېږدي؛ دا هستې د ګاما وړانګو په خپرولو لا ډېره پایداري ترلاسه کوي.')
+eq(r'({}^{A}_{Z}\mathrm{X})^{*}={}^{A}_{Z}\mathrm{X}+\gamma')
+eq(r'({}^{60}_{27}\mathrm{Co})^{*}={}^{60}_{27}\mathrm{Co}+\gamma')
+add('heading','FIGURE 20.11','شکل20.11','شکل20.11')
+L.append({'type':'visual','blockId':'phys20-180-gamma'})
+eq(r'({}^{226}_{88}\mathrm{Ra})^{*}={}^{226}_{88}\mathrm{Ra}+\gamma')
+add('paragraph','The emission of a gamma ray by radium-226 results radium-226 with gamma','ریڈیم-226 سے گاما شعاع کے اخراج کے نتیجے میں گاما کے ساتھ ریڈیم-226 حاصل ہوتا ہے','د رادیم-226 له خوا د ګاما وړانګې خپرېدل له ګاما سره رادیم-226 ورکوي')
+add('heading','20.7 SPONTANEOUS AND RANDOM NUCLEAR DECAY','20.7 خودبخود اور بے ترتیب نیوکلیائی زوال','20.7 خپل سری او تصادفي هستوي زوال')
+add('definition','A process of disintegration that occurs when unstable nuclei decay in an attempt to attain stability is called nuclear decay. This process is both spontaneous and random.',
+ 'استحکام حاصل کرنے کی کوشش میں غیر مستحکم نیوکلئیسوں کے زوال کے دوران ہونے والا ٹوٹ پھوٹ کا عمل نیوکلیائی زوال کہلاتا ہے۔ یہ عمل خودبخود بھی ہے اور بے ترتیب بھی۔',
+ 'د تجزیې هغه بهیر چې ناپایدارې هستې د پایدارۍ د ترلاسه کولو په هڅه کې زوال کوي، هستوي زوال بلل کېږي. دا بهیر هم خپل سری او هم تصادفي دی.')
+add('paragraph','A process without defined pattern, rule or method is called random process. Nuclear decay is unpredictable because precise moment of disintegration is not known for a particular nuclei. Individual disintegrations occur randomly.',
+ 'بغیر متعین نمونے، قاعدے یا طریقے کے عمل کو بے ترتیب عمل کہتے ہیں۔ نیوکلیائی زوال کی پیش گوئی نہیں کی جا سکتی، کیونکہ کسی خاص نیوکلئیس کے ٹوٹنے کا درست لمحہ معلوم نہیں ہوتا۔ انفرادی ٹوٹ پھوٹ بے ترتیب ہوتی ہے۔',
+ 'هغه بهیر چې ټاکلې بڼه، قاعده یا طریقه ونه لري، تصادفي بهیر بلل کېږي. د هستوي زوال وړاندوینه نه شي کېدای، ځکه د یوې ځانګړې هستې د تجزیې دقیقه شېبه نه ده معلومه. انفرادي تجزیې په تصادفي ډول پېښېږي.')
+add('paragraph','A process occurring without apparent external cause is called spontaneous process. Nuclear decay is spontaneous, because the process of radioactive decay cannot be speeded up or slowed down by physical or chemical means.',
+ 'بظاہر کسی بیرونی سبب کے بغیر ہونے والا عمل خودبخود عمل کہلاتا ہے۔ نیوکلیائی زوال خودبخود ہے، کیونکہ تابکار زوال کے عمل کو طبعی یا کیمیائی طریقوں سے تیز یا سست نہیں کیا جا سکتا۔',
+ 'هغه بهیر چې له څرګند بهرني لامل پرته پېښېږي، خپل سری بهیر بلل کېږي. هستوي زوال خپل سری دی، ځکه د راډیواکټیف زوال بهیر په فزیکي یا کیمیاوي لارو نه چټکېدای او نه ورو کېدای شي.')
+def gamma(lang):
+    b=bubble(133,148,'A','Z','X*',41)+bubble(325,237,'A','Z','X',39)
+    b+='<circle cx="325" cy="63" r="39" fill="#ccfbf1" stroke="#172033" stroke-width="2.5"/>'+text(325,73,'γ',27)+arrow(171,129,286,78,'#1e3a8a')+arrow(171,167,290,221,'#1e3a8a')
+    b+=cluster(602,150,38)+isotope(601,84,226,88,'Ra')+text(628,65,'*',21)+cluster(789,60,38)+isotope(809,128,226,88,'Ra')+arrow(637,132,753,79,'#1e3a8a')
+    b+='<path d="M639 170q12 -15 18 4t18 4t18 4t18 4t18 4t18 4" fill="none" stroke="#b91c1c" stroke-width="3"/>'+arrow(736,195,759,203,'#b91c1c')+text(789,214,'γ',23)
+    return svg(b,900,304,{'en':'Figure20.11: excited generic AXZ emits gamma and becomes the same ground-state AXZ; excited radium226,88 emits a gamma wave and remains radium226,88.','ur':'شکل20.11: برانگیختہ عمومی A,Z والا X گاما خارج کر کے اسی A,Z والے X کی بنیادی حالت بنتا ہے؛ برانگیختہ ریڈیم226,88 گاما موج خارج کر کے ریڈیم226,88 ہی رہتا ہے۔','ps':'شکل20.11: تحریک شوی عمومي A,Z لرونکی X ګاما خپروي او د هماغه A,Z لرونکي X بنسټیز حالت ته ځي؛ تحریک شوی رادیم226,88 د ګاما څپه خپروي او رادیم226,88 پاتې کېږي.'}[lang])
+record={'id':'phys20-neutrinos-gamma-emission-spontaneous-random-decay-348-349','title':'Neutrinos, gamma emission and spontaneous random nuclear decay','kind':'lesson','pdfPage':180,'printedPage':348,'sourcePdf':SOURCE,'paragraphs':[v[0] for v in T]}
+sec=section(record,T,L,('نیوٹرینو، گاما اخراج اور خودبخود بے ترتیب نیوکلیائی زوال','نیوټرینو، د ګاما خپرېدل او خپل سری تصادفي هستوي زوال'))
+sec.update(kind='lesson',sourceClass12Physics=True,sourceReferences=[{'pdfPage':180,'printedPage':n,'sourcePdf':SOURCE} for n in (348,349)],sourceBlocks=[{'id':'phys20-180-gamma','type':'figure','sourceFigure':'20.11','svg':gamma('en'),'svgUrdu':gamma('ur'),'svgPashto':gamma('ps')}])
+if __name__=='__main__':
+    with shared_class_data_lock():upsert([record],[sec],chapter_index=9)
+    stage_reference(180,record,'Reinspected PDF180 printed348–349. Full neutrino/antineutrino introduction, complete two-paragraph Pauli/energy/momentum explanation and all five property bullets, full gamma-emission prose and three equations, Figure20.11 generic/radium diagrams, caption and all spontaneous/random-decay definitions restored. Full Urdu/Pashto aligned translations. No missing source text replaced with summaries.')
+    print('PDF180 complete neutrino/decay source and gamma figure staged.')

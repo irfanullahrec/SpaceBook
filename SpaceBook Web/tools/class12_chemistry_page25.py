@@ -1,0 +1,52 @@
+"""PDF25 printed42–43, exact application list and unit key points."""
+from class12_chemistry_opening import pair,section,SOURCE
+from class12_chemistry_sync import save
+paras=[];layout=[]
+def add(en,ur,ps,kind='paragraph'):
+    layout.append({'type':kind,'indices':[len(paras)]});paras.append(pair(en,ur,ps))
+add('Society, Technology And Science','معاشرہ، ٹیکنالوجی اور سائنس','ټولنه، ټکنالوژي او ساینس','heading')
+add('Bleaching powder is extensively applied to remove stains from fabrics or various surfaces. Besides, there are several other applications of bleaching powder. Some of their applications are as follows:',
+    'بلیچنگ پاؤڈر کپڑوں یا مختلف سطحوں سے داغ ہٹانے کے لیے بڑے پیمانے پر استعمال ہوتا ہے۔ اس کے علاوہ اس کے کئی دوسرے استعمال بھی ہیں۔ بعض استعمال یہ ہیں:',
+    'بلیچنګ پوډر له ټوکرونو یا بېلابېلو سطحو څخه د داغونو د لرې کولو لپاره په پراخه توګه کارېږي. سربېره پر دې، نورې ډېرې کارونې هم لري. ځینې کارونې یې دا دي:')
+uses=[
+('Old items such as jewellery or showpieces made up of steel or metal can be cleaned with bleaching powder.','فولاد یا دھات سے بنی پرانی اشیا، مثلاً زیورات یا آرائشی اشیا، بلیچنگ پاؤڈر سے صاف کی جا سکتی ہیں۔','له فولادو یا فلز څخه جوړ زاړه توکي، لکه ګاڼې یا زینتي توکي، په بلیچنګ پوډر پاکېدای شي.'),
+('Mixing equal parts of water and bleaching powder are used as a bathroom cleaner.','پانی اور بلیچنگ پاؤڈر کی برابر مقداریں ملا کر غسل خانے کے صاف کرنے والے مادے کے طور پر استعمال ہوتی ہیں۔','د اوبو او بلیچنګ پوډر برابرې برخې ګډول د تشناب د پاکوونکي په توګه کارېږي.'),
+('Bleaching powder and soapy dishwater, clean the glass dishware, make it shining, clean and disinfect.','بلیچنگ پاؤڈر اور صابن والے برتن دھونے کے پانی سے شیشے کے برتن صاف، چمک دار اور جراثیم سے پاک ہوتے ہیں۔','بلیچنګ پوډر او د لوښو صابوني اوبه ښیښه یي لوښي پاکوي، ځلېدونکي کوي او جراثیم یې له منځه وړي.'),
+('Bleaching powder can be applied as a disinfectant.','بلیچنگ پاؤڈر جراثیم کش کے طور پر استعمال ہو سکتا ہے۔','بلیچنګ پوډر د جراثیم وژونکي په توګه کارېدای شي.'),
+('It can be used for cleaning and sterilizing kitchen and garden tools by washing them with bleaching powder.','باورچی خانے اور باغ کے اوزار بلیچنگ پاؤڈر سے دھو کر صاف اور جراثیم سے پاک کیے جا سکتے ہیں۔','د پخلنځي او باغ د وسایلو د پاکولو او تعقیم لپاره، په بلیچنګ پوډر د هغوی په مینځلو، کارېدای شي.'),
+('By mixing bleaching powder with detergent, make the plastic furniture; look new and free of germs.','بلیچنگ پاؤڈر کو ڈٹرجنٹ سے ملا کر پلاسٹک کے فرنیچر کو نیا دکھائی دینے والا اور جراثیم سے پاک بنایا جاتا ہے۔','له ډېټرجنټ سره د بلیچنګ پوډر په ګډولو پلاستیکي فرنیچر نوی ښکاري او له جراثیمو پاکېږي.'),
+('By adding some bleach in the vase, water can preserve the fresh cut flowers.','گلدان میں کچھ بلیچ شامل کرنے سے پانی تازہ کٹے پھولوں کو محفوظ رکھ سکتا ہے۔','په ګلدان کې د لږ بلیچ په ورزیاتولو اوبه تازه پرې شوي ګلان ساتلای شي.'),
+('By mixing, the bleaching powder with warm water can efficiently disinfect and clean thoroughly.','بلیچنگ پاؤڈر کو گرم پانی سے ملا کر مؤثر طور پر جراثیم ختم اور مکمل صفائی کی جا سکتی ہے۔','له تودو اوبو سره د بلیچنګ پوډر په ګډولو په اغېزمنه توګه جراثیم له منځه وړل کېږي او بشپړه پاکي کېږي.'),
+('Bleaching powder mixed in water can be used to clean and sanitize the doors, windows and floors in households, offices, hospitals, malls and other places. This removes the germs and bacteria from surfaces.','پانی میں ملا بلیچنگ پاؤڈر گھروں، دفاتر، ہسپتالوں، خریداری مراکز اور دوسری جگہوں کے دروازے، کھڑکیاں اور فرش صاف اور جراثیم سے پاک کرنے کے لیے استعمال ہو سکتا ہے۔ اس سے سطحوں کے جراثیم اور بیکٹیریا ختم ہوتے ہیں۔','په اوبو کې ګډ بلیچنګ پوډر په کورونو، دفترونو، روغتونونو، سوداګریزو مرکزونو او نورو ځایونو کې د دروازو، کړکیو او فرشونو د پاکولو او جراثیمو د له منځه وړلو لپاره کارېدای شي. دا له سطحو جراثیم او بکتریاوې لرې کوي.'),
+('Bleaching powder can be used in various industries and manufacturing units as an oxidizing agent. The chemical formula of bleaching powder is CaOCl₂. It reacts with dilute acids to release chlorine gas because chlorine is a strong oxidizing agent and contributes to the real action of bleaching powder.','بلیچنگ پاؤڈر مختلف صنعتوں اور پیداواری اداروں میں تکسیدی عامل کے طور پر استعمال ہو سکتا ہے۔ اس کا کیمیائی فارمولا CaOCl₂ ہے۔ یہ رقیق تیزابوں سے تعامل کر کے کلورین گیس خارج کرتا ہے، کیونکہ کلورین مضبوط تکسیدی عامل ہے اور بلیچنگ پاؤڈر کے اصل عمل میں حصہ ڈالتا ہے۔','بلیچنګ پوډر په بېلابېلو صنعتونو او تولیدي واحدونو کې د اکسیدوونکي عامل په توګه کارېدای شي. کیمیاوي فورمول یې CaOCl₂ دی. له رقیقو تېزابونو سره تعامل کوي او کلورین ګاز خوشې کوي، ځکه کلورین پیاوړی اکسیدوونکی عامل دی او د بلیچنګ پوډر په اصلي عمل کې برخه لري.'),
+('Bleaching powder can act as an oxidizing agent. It is used to prepare chloroform in laboratories by reacting with ethanol or acetone.','بلیچنگ پاؤڈر تکسیدی عامل کے طور پر عمل کر سکتا ہے۔ اسے تجربہ گاہوں میں ایتھانول یا ایسیٹون سے تعامل کے ذریعے کلوروفارم بنانے کے لیے استعمال کیا جاتا ہے۔','بلیچنګ پوډر د اکسیدوونکي عامل په توګه عمل کولای شي. په لابراتوارونو کې له اېتانول یا اسېټون سره د تعامل په وسیله د کلوروفارم د جوړولو لپاره کارېږي.'),
+]
+for e,u,p in uses:add(e,u,p,'list')
+add('Key Points','اہم نکات','مهم ټکي','heading')
+points=[
+('Group – IA and Group – IIA elements belong to s-block.','گروپ IA اور IIA کے عناصر s بلاک سے تعلق رکھتے ہیں۔','د IA او IIA ګروپ عناصر د s بلاک دي.'),
+('Group–IVA and Group – VIIA elements belong to p-block.','گروپ IVA اور VIIA کے عناصر p بلاک سے تعلق رکھتے ہیں۔','د IVA او VIIA ګروپ عناصر د p بلاک دي.'),
+('Atomic radius of all the groups increases down the group.','تمام گروپوں میں نیچے ایٹمی رداس بڑھتا ہے۔','په ټولو ګروپونو کې ښکته اټومي شعاع زیاتېږي.'),
+('Period 3ʳᵈ consists of metals (Na, Mg and Al), metalloid (Si) and non-metals (P, S, Cl and Ar).','تیسرا دور دھاتوں (Na، Mg اور Al)، نیم دھات (Si) اور غیر دھاتوں (P، S، Cl اور Ar) پر مشتمل ہے۔','درېیمه دوره له فلزونو (Na، Mg او Al)، شبه فلز (Si) او نافلزونو (P، S، Cl او Ar) څخه جوړه ده.'),
+('Atomic radius decreases in period 3 up to chlorine but argon does not follow this trend.','تیسرے دور میں کلورین تک ایٹمی رداس کم ہوتا ہے، مگر آرگن اس رجحان کی پیروی نہیں کرتا۔','په درېیمه دوره کې تر کلورین پورې اټومي شعاع کمېږي، خو ارګون دا تمایل نه تعقیبوي.'),
+('All the elements of period 3ʳᵈ react with oxygen and form the oxides, except argon.','آرگن کے سوا تیسرے دور کے سب عناصر آکسیجن سے تعامل کر کے آکسائیڈز بناتے ہیں۔','له ارګون پرته د درېیمې دورې ټول عناصر له اکسیجن سره تعامل کوي او اکسایډونه جوړوي.'),
+('Period 3ʳᵈ oxides do not conduct electricity in solid state.','تیسرے دور کے آکسائیڈز ٹھوس حالت میں بجلی نہیں گزارتے۔','د درېیمې دورې اکسایډونه په جامد حالت کې برېښنا نه لېږدوي.'),
+('The chlorides of period 3ʳᵈ i.e. NaCl, MgCl₂ and Al₂Cl₆ are in solid state, while the SiCl₄, PCl₃ and S₂Cl₂ are in liquid state.','تیسرے دور کے کلورائیڈز NaCl، MgCl₂ اور Al₂Cl₆ ٹھوس، جبکہ SiCl₄، PCl₃ اور S₂Cl₂ مائع حالت میں ہیں۔','د درېیمې دورې کلورایډونه NaCl، MgCl₂ او Al₂Cl₆ جامد دي، خو SiCl₄، PCl₃ او S₂Cl₂ په مایع حالت کې دي.'),
+('Density of Group – IA elements increases down the group.','گروپ IA کے عناصر کی کثافت گروپ میں نیچے بڑھتی ہے۔','د IA ګروپ د عناصرو کثافت په ګروپ کې ښکته زیاتېږي.'),
+('Normal oxides of Group – IA on reaction with dilute acids produce salts and water.','گروپ IA کے عام آکسائیڈز رقیق تیزابوں سے تعامل کر کے نمک اور پانی بناتے ہیں۔','د IA ګروپ عادي اکسایډونه له رقیقو تېزابونو سره په تعامل کې مالګې او اوبه جوړوي.'),
+('The carbonates of Group – IA do not decompose on heating except lithium carbonate.','لیتھیم کاربونیٹ کے سوا گروپ IA کے کاربونیٹس گرم کرنے پر تحلیل نہیں ہوتے۔','د لیتیم کاربونېټ پرته د IA ګروپ کاربونېټونه په تودولو نه تجزیه کېږي.'),
+('Group – IA metals give characteristics colours to the Bunsen flame.','گروپ IA کی دھاتیں بنسن کے شعلے کو مخصوص رنگ دیتی ہیں۔','د IA ګروپ فلزونه د بنسن لمبې ته ځانګړي رنګونه ورکوي.'),
+('Beryllium is the only alkaline earth metal, which does not react with water even at red heat.','بیریلیم واحد الکلائن ارتھ دھات ہے جو سرخ تپش پر بھی پانی سے تعامل نہیں کرتی۔','بېریلیم یوازینی القلي ځمکنی فلز دی چې ان په سره تودوخه کې له اوبو سره تعامل نه کوي.'),
+('Be, Mg and Ca on reaction with oxygen form normal oxides.','Be، Mg اور Ca آکسیجن سے تعامل کر کے عام آکسائیڈز بناتے ہیں۔','Be، Mg او Ca له اکسیجن سره په تعامل کې عادي اکسایډونه جوړوي.'),
+('Sr and Ba react with oxygen and form peroxide.','Sr اور Ba آکسیجن سے تعامل کر کے پرآکسائیڈ بناتے ہیں۔','Sr او Ba له اکسیجن سره تعامل کوي او پراکسایډ جوړوي.'),
+('BeO are amphoteric whereas other oxides of Group – IIA metals are strong bases.','BeO دو خصوصیتی ہے، جبکہ گروپ IIA کی دھاتوں کے دوسرے آکسائیڈز مضبوط اساس ہیں۔','BeO امفوتېریک دی، خو د IIA ګروپ د فلزونو نور اکسایډونه پیاوړي اساسونه دي.'),
+('Inert pair effect is the non-participation of the two ‘s’ electrons in bonding.','غیر فعال جوڑے کا اثر بند بنانے میں دو s الیکٹرونوں کا حصہ نہ لینا ہے۔','د غیر فعالې جوړې اغېز په تړون جوړولو کې د دوو s الکترونونو نه ګډون دی.'),
+('In CO₂ molecule, carbon atom is sp and each oxygen atom is sp² hybridized.','CO₂ کے سالمے میں کاربن ایٹم sp اور ہر آکسیجن ایٹم sp² ہائبرڈائزڈ ہے۔','په CO₂ مالیکول کې کاربن اټوم sp او هر اکسیجن اټوم sp² هایبرډ شوی دی.'),
+('Silicon dioxide is weakly acidic.','سلیکان ڈائی آکسائیڈ کمزور تیزابی ہے۔','سیلیکان ډای اکسایډ کمزوری تېزابي دی.'),
+('Electron affinity is the amount of energy released when an electron is added to an isolated gaseous atom to form an anion.','الیکٹرون الفت ایک الگ گیسی ایٹم میں الیکٹرون شامل کر کے منفی آئن بنانے پر خارج ہونے والی توانائی کی مقدار ہے۔','د الکترون میلان د هغې انرژۍ اندازه ده چې یو جلا ګازي اټوم ته د الکترون په ورزیاتولو او منفي ایون په جوړولو خوشې کېږي.'),
+('In Group–VIIA the electron affinity generally decreases in the order (I < Br < F < Cl).','گروپ VIIA میں الیکٹرون الفت عموماً اس ترتیب میں کم ہوتی ہے (I < Br < F < Cl)۔','په VIIA ګروپ کې د الکترون میلان عموماً په دې ترتیب کمېږي (I < Br < F < Cl).'),
+('In Group–VIIA the order of decreasing power as oxidizing agent is F₂ > Cl₂ > Br₂ > I₂.','گروپ VIIA میں بطور تکسیدی عامل گھٹتی طاقت کی ترتیب F₂ > Cl₂ > Br₂ > I₂ ہے۔','په VIIA ګروپ کې د اکسیدوونکي عامل په توګه د کمېدونکي ځواک ترتیب F₂ > Cl₂ > Br₂ > I₂ دی.'),
+]
+for e,u,p in points:add(e,u,p,'list')
+record=section('chem12-u13-summary','Society, technology, science and key points','معاشرہ، ٹیکنالوجی، سائنس اور اہم نکات','ټولنه، ټکنالوژي، ساینس او مهم ټکي',paras,layout,[],'42–43');record['insertBefore']='13.21';record['sourceReferences']=[{'sourcePdf':SOURCE,'pdfPage':25,'printedPages':[42,43]}]
+if __name__=='__main__':save(25,[record],trim=[{'id':'13.21','startsAt':'Exercise\n'}])

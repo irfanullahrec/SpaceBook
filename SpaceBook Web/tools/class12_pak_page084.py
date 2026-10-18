@@ -1,0 +1,50 @@
+"""Pak Studies XII PDF84 (spread): printed pp.157–158 — Chapter 9 Economic planning and development: concept; need and importance 1–3; control of wasteful spending (begins)."""
+from class12_book_common import Book, Builder
+
+BOOK = Book('pak')
+t = Builder()
+P = t.p
+H = t.h
+P('Chapter Nine', 'بابِ نہم', 'نهم څپرکی')
+H('Economic Planning and Development in the Islamic Republic of Pakistan', 'اسلامی جمہوریہ پاکستان میں معاشی منصوبہ بندی اور ترقی', 'د پاکستان په اسلامي جمهوریت کې اقتصادي پلان جوړونه او پرمختګ')
+H('The concept of economic planning', 'معاشی منصوبہ بندی کا تصور', 'د اقتصادي پلان جوړونې تصور')
+P('In the present age, among the problems that most countries of the world face, at the top of the list are poverty, disease, illiteracy, unemployment, agricultural and industrial backwardness, low standard of living, unjust distribution of wealth, dearness and inflation, imbalance in foreign payments, the burden of foreign loans, deficit in the budget, etc.',
+  'عہدِ حاضر میں دُنیا کے بیشتر ممالک جن مسائل سے دوچار ہیں ان میں سرِ فہرست غربت، بیماری، ناخواندگی، بے روزگاری، زرعی و صنعتی پسماندگی، پست معیارِ زندگی، غیر منصفانہ تقسیمِ دولت، گرانی و مہنگائی، افراطِ زر، بیرونی ادائیگیوں میں عدم توازن، غیر ملکی قرضوں کا بوجھ، بجٹ میں خسارہ وغیرہ ہیں۔',
+  'په اوسني عصر کې د نړۍ ډېری هېوادونه چې له کومو ستونزو سره مخ دي، په سر کې یې فقر، ناروغي، بې‌سوادي، بې‌روزګاري، کرنیزه او صنعتي وروسته‌پاتې‌والی، ټیټه د ژوند کچه، د شتمنۍ ناعادلانه وېش، ګراني، انفلاسیون، په بهرنیو تادیاتو کې نابرابري، د بهرنیو پورونو بار، په بودیجه کې کسر او نور دي.')
+P('Although the existence of poverty and destitution is from ancient times, the wish to get rid of it is the product of the present age, because by virtue of the progress of science and technology not only has better use of resources become possible, but the concept of economic planning too has become very popular, and some nations have made enviable progress by virtue of economic planning.',
+  'اگرچہ غربت و افلاس کا وجود زمانہ قدیم سے ہے لیکن اس سے چھٹکارا پانے کی خواہش زمانہ حال کی پیداوار ہے، کیونکہ نہ صرف سائنس و ٹیکنالوجی کی ترقی کی بدولت وسائل کا بہتر استعمال ممکن ہو گیا ہے، بلکہ معاشی منصوبہ بندی کا تصور بھی بہت مقبول ہو گیا ہے اور بعض اقوام نے معاشی منصوبہ بندی کی بدولت قابلِ رشک ترقی کی۔',
+  'که څه هم د فقر او بېوزلۍ شتون له لرغونو وختونو دی، خو له هغې د خلاصون هیله د اوسني وخت زېږنده ده، ځکه نه یوازې د ساینس او ټکنالوژۍ د پرمختګ له برکته د سرچینو ښه کارونه شونې شوې، بلکې د اقتصادي پلان جوړونې تصور هم ډېر مشهور شوی، او ځینو ملتونو د اقتصادي پلان جوړونې له برکته د رشک وړ پرمختګ کړی.')
+H('Need and importance of planning in Pakistan', 'پاکستان میں منصوبہ بندی کی ضرورت و اہمیت', 'په پاکستان کې د پلان جوړونې اړتیا او اهمیت')
+P('Pakistan is a developing country. It faces various problems, for example low national production, inadequate per-capita income, overpopulation, inflation, shortage of scientific and technical information, poor balance of payments, the burden of foreign loans, low use of machines in agriculture, imbalance in imports and exports, unemployment, a defective system of distribution of wealth, etc. The remedy for all these problems is “economic planning”.',
+  'پاکستان ایک ترقی پذیر ملک ہے۔ اسے مختلف مسائل درپیش ہیں۔ مثلاً کم قومی پیداوار، ناکافی فی کس آمدنی، افراطِ آبادی، افراطِ زر اور سائنسی و تکنیکی معلومات کی قلت، ادائیگیوں کا خراب توازن، بیرونی قرضوں کا بوجھ، زراعت میں مشینوں کا کم استعمال، درآمد و برآمد میں عدم توازن، بے روزگاری، تقسیمِ دولت کا ناقص نظام وغیرہ۔ ان تمام مسائل کا علاج ہے ’’معاشی منصوبہ بندی‘‘۔',
+  'پاکستان یو پرمختیايي هېواد دی. له بېلابېلو ستونزو سره مخ دی، لکه ټیټ ملي تولید، ناکافي سړي سر عاید، د نفوس زیاتوالی، انفلاسیون او د ساینسي او تخنیکي معلوماتو کمښت، د تادیاتو خراب توازن، د بهرنیو پورونو بار، په کرنه کې د ماشینونو لږه کارونه، په واردولو او صادرولو کې نابرابري، بې‌روزګاري، د شتمنۍ د وېش ناقص نظام او نور. د دې ټولو ستونزو درملنه "اقتصادي پلان جوړونه" ده.')
+P('The need and importance of economic planning in Pakistan become clear from the following points.',
+  'پاکستان میں اقتصادی منصوبہ بندی کی ضرورت و اہمیت درج ذیل باتوں سے واضح ہو جاتی ہے۔',
+  'په پاکستان کې د اقتصادي پلان جوړونې اړتیا او اهمیت له لاندې خبرو څرګندېږي.')
+H('1. Weaknesses of the private sector', '1۔ نجی شعبہ کی کمزوریاں', '۱. د خصوصي سکتور کمزورۍ')
+P('In Pakistan the traders and industrialists of the private sector undertake economic activities keeping in view only their particular and limited objectives, and they ignore all such sectors as are of basic importance for the national economy. The reason for this is that for such works either a large amount of investment is needed, or profit from them is obtained after a long time, or the rate of profit obtained from them is low. That is why it becomes necessary that the government, by planning, determine the path of economic progress and of investment in various sectors from the national point of view.',
+  'پاکستان میں نجی شعبہ کے تاجر اور صنعتکار اپنے مخصوص اور محدود مقاصد کے پیشِ نظر ہی معاشی سرگرمیاں اختیار کرتے ہیں اور ایسے تمام شعبے نظر انداز کر دیتے ہیں جو ملکی معیشت کے لیے بنیادی اہمیت کے حامل ہوتے ہیں۔ اس کی وجہ یہ ہے کہ ایسے کاموں کے لیے یا تو کثیر مقدار میں سرمایہ کاری درکار ہوتی ہے یا ان سے نفع دیر کے بعد حاصل ہوتا ہے یا ان سے حاصل ہونے والے نفع کی شرح کم ہوتی ہے۔ اس لیے ضروری ہوتا ہے کہ حکومت منصوبہ بندی کر کے قومی نقطۂ نگاہ سے معاشی ترقی اور مختلف شعبوں میں سرمایہ کاری کی راہ متعین کرے۔',
+  'په پاکستان کې د خصوصي سکتور سوداګر او صنعتکاران یوازې د خپلو ځانګړو او محدودو موخو په پام کې نیولو سره اقتصادي فعالیتونه کوي، او هغه ټولې برخې له پامه غورځوي چې د هېواد د اقتصاد لپاره بنسټیز اهمیت لري. لامل یې دا دی چې د داسې کارونو لپاره یا ډېره پانګونه اړینه وي، یا ګټه یې ډېر وروسته ترلاسه کېږي، یا د ترلاسه کېدونکې ګټې کچه یې ټیټه وي. له همدې امله اړینه ده چې حکومت په پلان جوړونې سره له ملي نظره د اقتصادي پرمختګ او په بېلابېلو برخو کې د پانګونې لار وټاکي.')
+H('2. Shortage of capital', '2۔ سرمائے کی قلت', '۲. د پانګې کمښت')
+P('In Pakistan there is a shortage of capital, because of which big industrial and development projects are not completed. For this work too planning is needed, so that people are encouraged to invest capital in business. Among us the wealthy waste most of their wealth in luxury, jewellery, vast bungalows, show and display, customs and wasteful expenses. Therefore the need is that under planning a campaign of thrift and investment be run in the country.',
+  'پاکستان میں سرمائے کی قلت ہے۔ جس کے باعث بڑے بڑے صنعتی اور ترقیاتی منصوبے مکمل نہیں ہو پاتے۔ اس کام کے لیے بھی منصوبہ بندی کی ضرورت ہے تاکہ لوگوں کو سرمایہ کاروبار میں لگانے کی ترغیب دی جائے۔ ہمارے ہاں دولت مند لوگ اپنی دولت کا بیشتر حصہ عیش و عشرت، زیورات، وسیع بنگلہ جات، نمود و نمائش، رسم و رواج اور فضول اخراجات میں ضائع کر دیتے ہیں۔ لہٰذا ضرورت اس بات کی ہے کہ منصوبہ بندی کے تحت ملک میں کفایت شعاری اور سرمایہ کاری کی مہم چلائی جائے۔',
+  'په پاکستان کې د پانګې کمښت دی، چې له امله یې لوی لوی صنعتي او پراختیايي پروژې نه بشپړېږي. د دې کار لپاره هم پلان جوړونې ته اړتیا ده، څو خلک په سوداګرۍ کې د پانګې لګولو ته وهڅول شي. زموږ شتمن خلک د خپلې شتمنۍ ډېره برخه په عیش و عشرت، ګاڼو، پراخو بنګلو، ښودنې، دودونو او بې‌ځایه لګښتونو کې ضایع کوي. نو اړتیا دا ده چې د پلان جوړونې له مخې په هېواد کې د سپما او پانګونې کمپاین وچلول شي.')
+H('3. Reform of the distribution of wealth', '3۔ تقسیمِ دولت کی اصلاح', '۳. د شتمنۍ د وېش اصلاح')
+P('The importance of planning in Pakistan is greater also because the wide difference in the distribution of income and wealth can be reduced, since this is the cause of obstruction in economic and social progress. The difference found at this time in the ownership of land is not only undesirable but also harmful. The accumulation of wealth and the means of production in a few hands causes severe harm to the interest of the ordinary citizen. Through planning these conditions can be improved.',
+  'پاکستان میں منصوبہ بندی کی اہمیت اس لیے بھی زیادہ ہے کہ آمدنی و دولت کی تقسیم میں وسیع فرق کو کم کیا جا سکے کیونکہ یہ معاشی اور سماجی ترقی میں رکاوٹ کا باعث ہے۔ اس وقت زمین کی ملکیت میں جو فرق پایا جاتا ہے وہ نہ صرف ناپسندیدہ بلکہ نقصان دہ بھی ہے۔ دولت اور ذرائع پیداوار کا چند ہاتھوں میں جمع ہونے سے عام شہری کے مفاد کو سخت نقصان پہنچتا ہے۔ منصوبہ بندی کے ذریعے ان حالات کو بہتر بنایا جا سکتا ہے۔',
+  'په پاکستان کې د پلان جوړونې اهمیت له دې امله هم ډېر دی چې د عاید او شتمنۍ په وېش کې پراخ توپیر کم شي، ځکه دا په اقتصادي او ټولنیز پرمختګ کې د خنډ لامل دی. اوس مهال د ځمکې په ملکیت کې چې کوم توپیر شته، هغه نه یوازې ناخوښ بلکې زیانمن هم دی. په څو لاسونو کې د شتمنۍ او تولیدي وسایلو راټولېدل د عام وګړي ګټې ته سخت زیان رسوي. د پلان جوړونې له لارې دا حالات ښه کېدای شي.')
+H('Control of wasteful spending', 'بے جا مصرف پر کنٹرول', 'پر بې‌ځایه لګښت کنټرول')
+P('Among us the wealthy class lives a life of luxury and spends wastefully. This wasteful spending has two harms.',
+  'ہمارے ہاں مالدار طبقہ عیش و عشرت کی زندگی گزارتا ہے اور فضول خرچی کرتا ہے۔ اس فضول خرچی کے دو نقصانات ہیں۔',
+  'زموږ شتمنه طبقه د عیش و عشرت ژوند تېروي او بې‌ځایه لګښت کوي. د دې بې‌ځایه لګښت دوه زیانونه دي.')
+P('I. The limited and valuable resources of the country, for non-productive purposes, with great recklessness',
+  'I۔ ملک کے محدود اور قیمتی ذرائع بڑی بے دریغی سے غیر پیداواری مقاصد کے لیے',
+  'I. د هېواد محدودې او قیمتي سرچینې په ډېره بې‌پروايي د غیر تولیدي موخو لپاره')
+UT = ('Economic Planning and Development in the Islamic Republic of Pakistan', 'اسلامی جمہوریہ پاکستان میں معاشی منصوبہ بندی اور ترقی', 'د پاکستان په اسلامي جمهوریت کې اقتصادي پلان جوړونه او پرمختګ')
+rec = BOOK.record(t, 'pak12-ch9-text-1', 'Chapter 9 text (1)', 'بابِ نہم — متن (۱)', 'نهم څپرکی — متن (۱)', 84, [157, 158], unit_title=UT)
+rec['sourceNote'] = 'Item I under “control of wasteful spending” breaks at the foot of p.158 and continues on p.159 (PDF85).'
+issues = [{'id': 'pak12-pdf084', 'unit': 9, 'printedPage': 158,
+           'description': 'p.158 numbers the need-and-importance points 1–3 and then gives “بے جا مصرف پر کنٹرول” as an unnumbered heading (presumably point 4); retained as printed.'}]
+
+if __name__ == '__main__':
+    BOOK.save(84, [(9, rec)], issues=issues)

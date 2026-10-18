@@ -1,0 +1,51 @@
+"""PDF153 printed 297–298: CRD randomization (lottery, random numbers) and layout; merits and demerits of CRD; 9.3 ANOVA, definition; 9.3.1 assumptions (i)–(ii)."""
+from class12_statistics_common import Builder, save
+
+b = Builder()
+b.h('(i) Lottery method', '(i) قرعہ اندازی کا طریقہ', '(i) د پچې طریقه')
+b.p('Make 12 slips of paper. Write $T_1$ on 3 slips, $T_2$ on 3 slips, $T_3$ on 3 slips, $T_4$ on 3 slips and place them in a bowl and mix them thoroughly. Draw the slips one at a time without replacement and allot to the above experimental units serially from 1 to 12', 'کاغذ کی 12 پرچیاں بنائیں۔ 3 پرچیوں پر $T_1$، 3 پر $T_2$، 3 پر $T_3$ اور 3 پر $T_4$ لکھیں، انہیں ایک پیالے میں رکھ کر اچھی طرح ملائیں۔ پرچیاں ایک ایک کر کے بغیر واپس رکھے نکالیں اور مندرجہ بالا تجرباتی اکائیوں کو 1 سے 12 تک ترتیب وار تفویض کریں', 'د کاغذ 12 ټوټې جوړې کړئ. پر 3 ټوټو $T_1$، پر 3 $T_2$، پر 3 $T_3$ او پر 3 $T_4$ ولیکئ، په یوه کاسه کې یې کېږدئ او ښه یې ګډې کړئ. ټوټې یوه یوه پرته له بېرته اچولو راوباسئ او پورتنیو تجربوي واحدونو ته له 1 تر 12 په ترتیب ورکړئ')
+b.h('(ii) Random number table method', '(ii) تصادفی اعداد کے جدول کا طریقہ', '(ii) د تصادفي عددونو د جدول طریقه')
+b.p('Take any random number table, start from anywhere and take twelve two-digit random numbers. Exclude the number which is greater than 12 or which is repeated. Let the random numbers selected are: 03 02 04 06 01 07 11 08 10 12 09 05, so allot treatment $T_1$ to (03, 02, 04) experimental units, $T_2$ to (06, 01, 07) experimental units, $T_3$ to (11, 08, 10) and $T_4$ to (12, 09, 05). The layout will appear as:',
+    'کوئی بھی تصادفی اعداد کا جدول لیں، کہیں سے بھی شروع کریں اور بارہ دو ہندسی تصادفی اعداد لیں۔ 12 سے بڑے یا دہرائے گئے عدد کو خارج کریں۔ فرض کریں منتخب تصادفی اعداد یہ ہیں: 03 02 04 06 01 07 11 08 10 12 09 05، تو علاج $T_1$ کو (03، 02، 04) تجرباتی اکائیوں، $T_2$ کو (06، 01، 07) تجرباتی اکائیوں، $T_3$ کو (11، 08، 10) اور $T_4$ کو (12، 09، 05) تفویض کریں۔ خاکہ یوں نظر آئے گا:',
+    'هر د تصادفي عددونو جدول واخلئ، له هر ځایه پیل وکړئ او دولس دوه‌رقمي تصادفي عددونه واخلئ. هغه عدد چې له 12 لوی یا تکرار شوی وي، لرې کړئ. فرض کړئ ټاکل شوي تصادفي عددونه دا دي: 03 02 04 06 01 07 11 08 10 12 09 05، نو درملنه $T_1$ (03، 02، 04) تجربوي واحدونو ته، $T_2$ (06، 01، 07) تجربوي واحدونو ته، $T_3$ (11، 08، 10) ته او $T_4$ (12، 09، 05) ته ورکړئ. نقشه به داسې ښکاري:')
+G = [['1 $T_2$', '2 $T_1$', '3 $T_1$', '4 $T_1$'], ['5 $T_4$', '6 $T_2$', '7 $T_2$', '8 $T_3$'], ['9 $T_4$', '10 $T_3$', '11 $T_3$', '12 $T_4$']]
+H = [''] * 4
+b.table('stat12-t-crd-layout', H, G, H, H, G, G, noHeader=True)
+b.h('Merits of completely randomized design', 'مکمل تصادفی ڈیزائن کی خوبیاں', 'د بشپړ تصادفي ډیزاین ګټې')
+b.group('lines', [
+    ('i. Its layout is very easy.', 'i. اس کا خاکہ بہت آسان ہے۔', 'i. نقشه یې ډېره اسانه ده.'),
+    ('ii. There is complete flexibility in this design i.e. any number of treatments and replicates for each treatment can be taken.', 'ii. اس ڈیزائن میں مکمل لچک ہے یعنی علاج کی کوئی بھی تعداد اور ہر علاج کے لیے تکرار کی کوئی بھی تعداد لی جا سکتی ہے۔', 'ii. په دې ډیزاین کې بشپړ انعطاف شته یعنې د درملنو هر شمېر او د هرې درملنې لپاره د تکرارونو هر شمېر اخیستل کېدای شي.'),
+    ('iii. Whole experimental material can be utilized in this design.', 'iii. اس ڈیزائن میں پورا تجرباتی مواد استعمال کیا جا سکتا ہے۔', 'iii. په دې ډیزاین کې ټول تجربوي توکي کارول کېدای شي.'),
+    ('iv. This design yields maximum degrees of freedom for experimental error.', 'iv. یہ ڈیزائن تجرباتی خطا کے لیے زیادہ سے زیادہ درجاتِ آزادی دیتا ہے۔', 'iv. دا ډیزاین د تجربوي تېروتنې لپاره اعظمي د ازادۍ درجې ورکوي.'),
+    ('v. The analysis of data, both for equal and unequal number of replications is simplest as compared to any other design.', 'v. تکرار کی برابر اور غیر برابر دونوں تعداد کے لیے مواد کا تجزیہ کسی بھی دوسرے ڈیزائن کے مقابلے میں سب سے سادہ ہے۔', 'v. د تکرارونو د برابر او نابرابر شمېر دواړو لپاره د معلوماتو تحلیل د هر بل ډیزاین په پرتله تر ټولو ساده دی.'),
+    ('vi. Missing observation(s) creates no problem in analysis of data, nor efficiency of the design affected.', 'vi. گمشدہ مشاہدہ (مشاہدات) مواد کے تجزیے میں کوئی مسئلہ پیدا نہیں کرتا، نہ ڈیزائن کی کارکردگی متاثر ہوتی ہے۔', 'vi. ورکه مشاهده (مشاهدې) د معلوماتو په تحلیل کې ستونزه نه پیدا کوي، او نه د ډیزاین موثریت اغېزمنېږي.'),
+    ('vii. CRD is suitable in situations where a fraction of the units is likely to be destroyed during experimentation or is likely to fail to respond.', 'vii. CRD ان حالات میں موزوں ہے جہاں تجربے کے دوران اکائیوں کا کچھ حصہ تباہ ہونے یا ردِعمل نہ دینے کا امکان ہو۔', 'vii. CRD په هغو حالاتو کې مناسب دی چې د تجربې پر مهال د واحدونو یوه برخه د له منځه تللو یا د غبرګون نه ښودلو احتمال ولري.'),
+])
+b.h('Demerits of completely randomized design', 'مکمل تصادفی ڈیزائن کی خامیاں', 'د بشپړ تصادفي ډیزاین نیمګړتیاوې')
+b.group('lines', [
+    ('i) It is difficult to find homogeneous experimental units in all respects.', 'i) ہر لحاظ سے یکساں تجرباتی اکائیاں تلاش کرنا مشکل ہے۔', 'i) په ټولو اړخونو کې همجنسه تجربوي واحدونه موندل ستونزمن دي.'),
+    ('ii) The design is suitable for a small number of treatments.', 'ii) یہ ڈیزائن علاج کی کم تعداد کے لیے موزوں ہے۔', 'ii) دا ډیزاین د درملنو د لږ شمېر لپاره مناسب دی.'),
+    ('iii) CRD is seldom suitable for field experiments as compared to other experimental designs.', 'iii) دوسرے تجرباتی ڈیزائنوں کے مقابلے میں CRD کھیت کے تجربات کے لیے شاذ و نادر ہی موزوں ہے۔', 'iii) د نورو تجربوي ډیزاینونو په پرتله CRD د ځمکني تجربو لپاره ډېر کم مناسب دی.'),
+])
+crd = b.build('stat12-p153-crd-randomization', 'CRD randomization and layout; merits and demerits', 'CRD کی تصادفیت اور خاکہ؛ خوبیاں اور خامیاں', 'د CRD تصادفي کول او نقشه؛ ګټې او نیمګړتیاوې', 153, [297, 298])
+
+c = Builder()
+c.h('9.3 Analysis of variance', '9.3 تجزیۂ تغیر', '9.3 د واریانس تحلیل')
+c.p('We have learnt that Z-test and t-test are used for testing hypothesis about population mean or equality of two population means. Analysis of variance (ANOVA) is also a hypothesis testing procedure that is used to compare three or more populations or treatments means. ANOVA procedure provides greater flexibility in designing experiments, analysis and interpretation of experimental results to the researchers. This procedure was developed by the British statistician Sir Ronald A. Fisher.', 'ہم سیکھ چکے ہیں کہ Z-جانچ اور t-جانچ آبادی کے اوسط یا دو آبادیوں کے اوسطوں کی برابری کے بارے میں مفروضے کی جانچ کے لیے استعمال ہوتی ہیں۔ تجزیۂ تغیر (ANOVA) بھی مفروضے کی جانچ کا ایک طریقہ ہے جو تین یا زیادہ آبادیوں یا علاج کے اوسطوں کے موازنے کے لیے استعمال ہوتا ہے۔ ANOVA کا طریقہ محققین کو تجربات کے ڈیزائن، تجرباتی نتائج کے تجزیے اور تشریح میں زیادہ لچک فراہم کرتا ہے۔ یہ طریقہ برطانوی ماہرِ شماریات سر رونالڈ اے فشر نے وضع کیا۔', 'موږ زده کړل چې Z-ازموینه او t-ازموینه د نفوس د منځني یا د دوو نفوسونو د منځنیو د برابرۍ په اړه د فرضیې د ازموینې لپاره کارول کېږي. د واریانس تحلیل (ANOVA) هم د فرضیې د ازموینې یوه طریقه ده چې د درېیو یا ډېرو نفوسونو یا درملنو د منځنیو د پرتلې لپاره کارول کېږي. د ANOVA طریقه څېړونکو ته د تجربو په ډیزاین، د تجربوي پایلو په تحلیل او تفسیر کې ډېر انعطاف ورکوي. دا طریقه برتانوي احصایه‌پوه سر رونالډ اې فیشر رامنځته کړې.')
+c.h('Definition', 'تعریف', 'تعریف')
+c.p('Measurements are taken on each experimental unit according to characteristic of interest and its variance is calculated. This total variance is due to various factors involved in the experiment. “ANOVA is a technique which split the total variance in to meaningful component variances; each gives an estimate of the population variance. The ratio of two component variances is distributed as F with corresponding degrees of freedom.” Thus ANOVA enables one to know whether the variance due to a component factor is significantly more than the variance due to experimental error or not and hence decision is made about the null hypothesis.',
+    'دلچسپی کی خصوصیت کے مطابق ہر تجرباتی اکائی پر پیمائشیں لی جاتی ہیں اور اس کا تغیر معلوم کیا جاتا ہے۔ یہ کل تغیر تجربے میں شامل مختلف عوامل کی وجہ سے ہوتا ہے۔ “ANOVA ایک تکنیک ہے جو کل تغیر کو بامعنی جزوی تغیرات میں تقسیم کرتی ہے؛ ہر ایک آبادی کے تغیر کا تخمینہ دیتا ہے۔ دو جزوی تغیرات کی نسبت متعلقہ درجاتِ آزادی کے ساتھ F کے طور پر تقسیم ہوتی ہے۔” یوں ANOVA سے معلوم ہوتا ہے کہ کسی جزوی عامل کی وجہ سے تغیر تجرباتی خطا کی وجہ سے تغیر سے معنی خیز طور پر زیادہ ہے یا نہیں، اور اس طرح صفری مفروضے کے بارے میں فیصلہ کیا جاتا ہے۔',
+    'د علاقې د ځانګړنې له مخې پر هر تجربوي واحد اندازې اخیستل کېږي او واریانس یې محاسبه کېږي. دا ټول واریانس په تجربه کې د شاملو بېلابېلو عواملو له امله وي. “ANOVA یوه تخنیک ده چې ټول واریانس په معنی‌دارو برخه‌ییزو واریانسونو وېشي؛ هر یو د نفوس د واریانس اټکل ورکوي. د دوو برخه‌ییزو واریانسونو نسبت د اړوندو د ازادۍ درجو سره د F په توګه وېشل کېږي.” نو ANOVA دا پېژندل ممکنوي چې آیا د یوه برخه‌ییز عامل له امله واریانس د تجربوي تېروتنې له امله له واریانس څخه په معنی‌دار ډول ډېر دی که نه، او په دې توګه د صفري فرضیې په اړه پرېکړه کېږي.')
+c.h('9.3.1 Assumptions for analysis of variance', '9.3.1 تجزیۂ تغیر کے مفروضات', '9.3.1 د واریانس د تحلیل فرضیې')
+c.p('Analysis of variance technique is based on the following assumptions.', 'تجزیۂ تغیر کی تکنیک درج ذیل مفروضات پر مبنی ہے۔', 'د واریانس د تحلیل تخنیک پر لاندې فرضیو ولاړ دی.')
+c.group('lines', [
+    ('i) Independence', 'i) آزادی', 'i) خپلواکي'),
+    ('The samples are drawn randomly and are independent of other samples.', 'نمونے تصادفی طور پر نکالے جاتے ہیں اور دوسرے نمونوں سے آزاد ہوتے ہیں۔', 'نمونې په تصادفي ډول راایستل کېږي او له نورو نمونو خپلواکې وي.'),
+    ('ii) Normality', 'ii) نارملیت', 'ii) نورمالیت'),
+    ('The populations under study have distributions which are assumed to be normal having means $\\mu_1,\\mu,\\ldots\\mu_k$.', 'زیرِ مطالعہ آبادیوں کی تقسیمیں نارمل فرض کی جاتی ہیں جن کے اوسط $\\mu_1,\\mu,\\ldots\\mu_k$ ہیں۔', 'تر څېړنې لاندې نفوسونه داسې وېشونه لري چې نورمال ګڼل کېږي او منځني یې $\\mu_1,\\mu,\\ldots\\mu_k$ دي.'),
+])
+an = c.build('stat12-p153-anova-intro', '9.3 Analysis of variance — definition; 9.3.1 assumptions', '9.3 تجزیۂ تغیر — تعریف؛ 9.3.1 مفروضات', '9.3 د واریانس تحلیل — تعریف؛ 9.3.1 فرضیې', 153, [298])
+issues = [{'id': 'stat12-p298-mu-typo', 'unit': 9, 'printedPage': 298, 'description': 'Normality assumption prints means as “μ₁, μ, … μₖ” (μ₂ subscript missing); definition prints “split … in to”. Printed text retained.'}]
+
+if __name__ == '__main__':
+    save(153, [(9, crd), (9, an)], issues=issues)

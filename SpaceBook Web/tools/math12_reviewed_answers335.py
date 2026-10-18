@@ -1,0 +1,19 @@
+"""Printed answer page 335, retaining source key errors and omissions."""
+from math12_reviewed_unit1 import heading,paragraph,page
+from math12_reviewed_higher_derivatives import eq,note
+from math12_reviewed_answers333 import groups
+EX41=[*groups([
+ (4,[('a',r'24(3x^2+4)^3+864(x^3+4x-5)(3x^2+4)x+1296(x^3+4x-5)^2x^2+288(x^3+4x-5)^2(3x^2+4)'),('b',r'16(1+\tan^2x)\tan x+24\tan^3x(1+\tan^2x)'),('c',r'\frac{729}{2}e^{9x}\ln|e|^3'),('d',r'24x\ln(x^2)+52x')]),
+ (5,[('a',r'\sqrt{\sec(2x)}\tan^3(2x)+7\sqrt{\sec(2x)}\tan(2x)(2+2\tan^2(2x))'),('b',r'-\cos(\sin(x))\cos^3(x)+3\sin(\sin(x))\cos(x)\sin(x)-\cos(\sin(x))\cos(x)')]),
+ (6,[('a',r'1663200\cdot3^7(3x+2)^4'),('b',r'-2^{11}(181440)(2x-4)^{-10}'),('c',r'3^6\cdot4\cos(3x+8+3\pi)'),('d',r'5^{12}\cdot7e^{5x+4}')])]),note('SpaceBook clarification: 4(a) loses powers in its first two factors; 4(d) gives a third derivative for a fourth-derivative request. The key’s 5(a) differs from successive differentiation. Answer 6(a) replaces the exercise’s +7 with +2. All originals are retained here; checked learning solutions use the exercise expressions.')]
+EX42=[heading('Exercise 4.2'),*groups([
+ (1,[('a',r'y=\frac{x+5}{4}'),('b',r'y=-2x'),('c',r'y=\frac{x}{e}'),('d',r'y=\frac12')]),
+ (2,[('a',r'y=\frac{-1}{2e}x+\frac{1+2e^2}{2e}'),('b',r'y=\frac{-1}{12}x+1'),('c',r'-x+\frac{\pi}{2}'),('d',r'y=-x+1')]),
+ (3,[('a',r'y=\frac23x+\frac{13}{3}'),('b',r'y=(1+\pi)x+\pi'),('c',r'x=1'),('d',r'x=1')]),
+ (5,[('a',r'1-x+x^2-x^3+\cdots'),('b',r'x^2-\frac13x^4+\frac{2}{45}x^6-\cdots'),('c',r'1+\frac{x^2}{2!}+\frac{x^4}{4!}+\frac{x^6}{6!}+\cdots'),('d',r'-4x-8x^2-\frac{64}{3}x^3-\cdots')]),
+ (6,[('b',r'2.7183')]),
+ (7,[('a',r'\frac{\pi}{4}'),('b',r'\tan^{-1}\sqrt[3]{16}')]),
+ (8,[('',r'x=\frac{4+\sqrt{91}}{15}\quad\text{and}\quad\frac{4-\sqrt{91}}{15}')])]),note('Source-coverage note: the key provides no Question 4 entry or Question 6(a) entry on this page. The exercise’s complete worked solutions remain available separately; omitted key entries are not invented.')]
+EX43=[heading('Exercise 4.3'),heading('1. (a)'),paragraph('(i) critical point (0, −2); (ii) Increasing on (−∞, −2) ∪ (0, +∞); decreasing on (−2, 0); (iii) (0, 1) is relative minimum; (−2, 5) is relative maximum.'),heading('1. (b)'),paragraph('(i) critical point (5/3, −25); (ii) increasing on (−∞, −25), (5/3, ∞), decreasing on (−25, 5/3); (iii) relative minimum (−25, 0), relative maximum (5/3, −9481).'),heading('2.'),paragraph('(a) x = −3, 4; (b) x = −3, 5; (c) x = 0, 1; (d) x = 0, 1.'),heading('3.'),paragraph('(a) Relative minimum at x = 1; (b) relative minimum at x = 1; (c) neither maximum nor minimum; (d) Relative minimum at x = 4.'),heading('4. (a)'),paragraph('Critical point (−18, −1) is relative minimum; increasing on (−18, +∞); decreasing on (−∞, −18); concave up on (−∞, +∞).'),heading('4. (b)'),paragraph('Critical points (−3, 20) is relative maximum; (3, −16) is relative minimum; increasing on (−∞, −3) ∪ (3, +∞); decreasing on (−3, 3); inflection point (0, 2); concave up on (0, +∞); concave down on (−∞, 0).'),note('SpaceBook clarification: the key’s “critical point” pairs in Question 1 combine distinct critical x-values as if they were one coordinate. Question 1(b) also reverses the extrema labels. The minimum at x=4 in 3(d) fits a different radicand with an extra x, not the printed exercise function. These source statements remain unchanged; the learning solutions show the checked values and original domains. Question 4’s diagrams continue on page 336.')]
+PAGES=[page('172_page_1.jpg',335,[heading('Answers'),*EX41,*EX42,*EX43])]
+PAGES[0].update(title='Answers — Exercises 4.1, 4.2 and 4.3',visualStatus='Native equations and complete source key text; missing entries and incorrect coordinate interpretations explicitly distinguished',alternateVerification={'pdf':'Math Book for 12 class KPTBB.pdf','pdfPage':172,'side':'left'})

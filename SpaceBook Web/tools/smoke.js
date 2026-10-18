@@ -377,6 +377,21 @@ run("PORT handleGlobalSearch('chemistry')", `handleGlobalSearch("chemistry")`);
 run("PORT handleGlobalSearch('solved')", `handleGlobalSearch("solved")`);
 run("PORT handleGlobalSearch no-results path (sanitize)", `handleGlobalSearch("zzzznotfoundqqq"); if (!/No results found/.test($("searchResultsDropdown").innerHTML)) throw new Error('no-results block missing');`);
 run("PORT checkPakStudySloMcq records stats", `openSubject("cls9","cls9-pakstudy"); switchPakStudySloTab('slo-mcqs'); globalThis.__saved = null; localStorage.setItem = (k, v) => { globalThis.__saved = v; }; checkPakStudySloMcq(0, 'a', 'b', encodeURIComponent('because')); if (!globalThis.__saved) throw new Error('stats not saved');`);
+run('SOURCE REVISION Class 12 Maths opening text and unaffected lessons', `
+  openSubject('cls12','cls12-math');
+  switchMathTab('lesson');
+  const opening = $('mathTabContent').innerHTML;
+  if (!opening.includes('Leading Books Publishers') || !opening.includes('Table of Contents') || !opening.includes('By the end of this unit')) throw new Error('Reviewed opening pages missing from lesson route');
+  if (!opening.includes('multi-paradigm programming language') || !opening.includes('1.1.2')) throw new Error('Reviewed lesson or following unreviewed subsection was lost');
+  if (!opening.includes('Figure 1.9') || !opening.includes('1.275862069') || !opening.includes('\\\\frac{37}{29}')) throw new Error('Source commands, exact fraction, or late figure missing');
+  if (opening.includes('right edge cropped in source')) throw new Error('Resolved clipping still appears in lesson');
+  if (!opening.includes('1.3.2')) throw new Error('Unreviewed graphics subsections lost');
+  switchMathTab('examples');
+  if (!$('mathTabContent').innerHTML.includes('SpaceBook learning enhancement')) throw new Error('Added solutions are not distinguished from original textbook');
+  selectMathChapter(1);
+  switchMathTab('lesson');
+  if ($('mathTabContent').innerHTML.includes('Leading Books Publishers')) throw new Error('Front matter repeated in unrelated unit');
+`);
 console.log('state after tests = activeSubject=' + vm.runInContext('state.activeSubject', sb) + ' selectedIslChapter=' + vm.runInContext('state.selectedIslChapter', sb));
 process.exit(fails ? 1 : 0);
 

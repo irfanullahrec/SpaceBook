@@ -1,0 +1,35 @@
+"""Islamic History XII PDF29: pp.50–51 — Ma'mun: telescope; character, justice, forbearance, simplicity, generosity, personal life; exercise (start). Run: python class12_ihist_page029.py"""
+from class12_ihist_common import BOOK, Builder, rec, S, L
+
+
+def p29():
+    b = Builder()
+    S(b, [(None, ('… He had it confirmed by experts. An astronomer named Abu al-Hasan invented the telescope, which was the great achievement of astronomy in this era.', 'ہے۔ اس نے ماہرین سے اس کی تصدیق کروائی۔ ابوالحسن نامی ہیئت دان نے دوربین ایجاد کی جو اس دور میں ہیئت کا بڑا کارنامہ تھا۔', '… دی؛ هغه له ماهرانو د دې تصدیق وکړ. ابو الحسن نومي هیئت‌پوه دوربین اختراع کړ چې په دې دوره کې د هیئت لویه کارنامه وه.')),
+          (('Ma\'mun\'s character:', 'سیرتِ مامون:', 'د مامون سیرت'),
+           ('Ma\'mun held a high position in knowledge and learning, prudence, justice, bravery and simplicity. Ma\'mun had perfection in the Quran, tafsir, philosophy, medicine, mathematics, astronomy, literature and poetry.', 'مامون کو علم و فضل، تدبر، انصاف، بہادری، سادگی میں اعلیٰ مقام حاصل تھا۔ مامون کو قرآن، تفسیر، فلسفہ، طب، ریاضی، نجوم، ادب و شعر میں کمال حاصل تھا۔', 'مامون په علم او فضل، تدبیر، انصاف، زړورتیا او ساده‌ګۍ کې لوړ مقام درلود؛ په قرآن، تفسیر، فلسفه، طب، ریاضي، نجومو، ادب او شعر کې یې کمال درلود.')),
+          (('Justice and fairness:', 'عدل و انصاف:', 'عدل او انصاف'),
+           ('Ma\'mun was the embodiment of justice and fairness. Ma\'mun\'s era was very famous for justice. In matters of justice no regard was kept for anyone\'s post, rank, lineage, wealth or influence. No distinction was made between members of the royal family and the common man. Once an old woman complained against Ma\'mun\'s son. Ma\'mun decided in favour of the old woman. Ma\'mun kept a strict eye on officials and rulers. If anyone committed excess against the public, he was given severe punishment.', 'مامون عدل و انصاف کا مجسمہ تھا۔ مامون کا دور عدل کے لئے بہت مشہور تھا۔ انصاف کے سلسلے میں کسی کے عہدے، رتبے، نسب، دولت اور رسوخ وغیرہ کا کوئی خیال نہیں رکھا جاتا تھا۔ شاہی خاندان کے افراد اور عام آدمی میں کوئی امتیاز نہیں برتا جاتا تھا۔ ایک دفعہ ایک بڑھیا نے مامون کے بیٹے کے خلاف شکایت کی۔ مامون نے بڑھیا کے حق میں فیصلہ دیا۔ مامون عمال اور حکام پر کڑی نظر رکھتا تھا۔ اگر کوئی عوام کے ساتھ زیادتی کرتا تو اسے سخت سزا دی جاتی تھی۔', 'مامون د عدل او انصاف مجسمه و؛ د مامون دوره په عدل ډېره مشهوره وه. د انصاف په برخه کې د هېچا د څوکۍ، رتبې، نسب، شتمنۍ او نفوذ پام نه ساتل کېده؛ د شاهي کورنۍ د غړو او عام سړي ترمنځ توپیر نه کېده. یو ځل یوې زړې ښځې د مامون د زوی پر خلاف شکایت وکړ؛ مامون د زړې ښځې په ګټه پرېکړه وکړه. مامون پر چارواکو او حاکمانو سخت نظر ساته؛ که چا پر خلکو زیاتی کاوه، سخته سزا ورکول کېده.')),
+          (('Forbearance and forgiveness:', 'تحمل و عفو:', 'زغم او بښنه'),
+           ('Ma\'mun was a soft-tempered and forbearing ruler. He would forgive even his enemy. He forgave Ibrahim bin Mahdi and Hasan bin Dahhak.', 'مامون نرم مزاج اور متحمل مزاج حکمران تھا۔ اپنے دشمن کو بھی معاف کر دیتا تھا۔ ابراہیم بن مہدی اور حسن بن ضحاک کو معاف کر دیا۔', 'مامون نرم‌مزاجه او زغمناک واکمن و؛ خپل دښمن ته یې هم بښنه کوله؛ ابراهیم بن مهدي او حسن بن ضحاک یې وبښل.')),
+          (('Simplicity and humility:', 'سادگی اور عاجزی:', 'ساده‌ګي او عاجزي'),
+           ('There was simplicity and humility in Ma\'mun\'s nature. If some slave was asleep, he would not wake him; rather he would do the work with his own hands.', 'مامون کی طبیعت میں سادگی اور عاجزی تھی۔ اگر کوئی غلام سویا ہوا ہوتا تو اسے جگاتا نہیں تھا۔ بلکہ کام اپنے ہاتھوں سے کر دیتا تھا۔', 'د مامون په طبیعت کې ساده‌ګي او عاجزي وه؛ که کوم غلام ویده و، نه یې راویښاوه، بلکې کار یې په خپلو لاسونو کاوه.'))])
+    r1 = rec(b, 7, 50, 29, [50])
+    t = Builder()
+    S(t, [(('Generosity:', 'سخاوت:', 'سخاوت'),
+           ('Ma\'mun was very famous for generosity. No beggar went away empty-handed from his door. He used to distribute gold coins among the needy and the poor.', 'مامون سخاوت کے لئے بہت مشہور تھا۔ کوئی سوالی اس کے در سے خالی نہیں جاتا تھا۔ محتاجوں اور غریبوں میں اشرفیاں تقسیم کرتا تھا۔', 'مامون په سخاوت ډېر مشهور و؛ هېڅ سوالګر یې له دروازې تش لاس نه تله؛ پر اړو او غریبانو یې اشرفۍ وېشلې.')),
+          (('Personal life:', 'ذاتی زندگی:', 'شخصي ژوند'),
+           ('On one side Ma\'mun remained drowned in gatherings of luxury and pleasure. Gatherings of dance and song remained lively. Beautiful maidens added to the splendour of the gathering. On the other side Ma\'mun was a hafiz of the Quran. In Ramadan he used to complete the Holy Quran thirty times. He remained busy in worship at all times. He had utmost devotion to Huzoor ﷺ. Philosophy had left deep marks on his beliefs.', 'ایک طرف مامون عیش و عشرت کی محفلوں میں ڈوبا رہتا تھا۔ رقص و سرور کی محفلیں گرم رہتی تھیں۔ حسین و جمیل دوشیزائیں محفل کی رونق بڑھاتی تھیں۔ دوسری طرف مامون حافظِ قرآن تھا۔ رمضان میں تیس مرتبہ قرآنِ پاک کا ختم کرتا تھا۔ ہر وقت عبادت میں مصروف رہتا تھا۔ حضور صلی اللہ علیہ وعلیٰ آلہٖ واصحابہٖ وسلم سے انتہائی عقیدت تھی۔ فلسفے نے اس کے عقائد پر گہرے نقوش چھوڑے تھے۔', 'له یوې خوا مامون د عیش او عشرت په غونډو کې ډوب و؛ د نڅا او سرود غونډې ګرمې وې؛ ښکلې پېغلې د غونډې رونق زیاتاوه. له بلې خوا مامون د قرآن حافظ و؛ په رمضان کې یې دېرش ځله قرآن پاک ختماوه؛ تل په عبادت بوخت و؛ له حضور ﷺ سره یې بې‌حده عقیدت درلود. فلسفې یې پر عقایدو ژورې اغېزې پرېښې وې.'))])
+    t.h('Exercise questions', 'مشقی سوالات', 'تمریني پوښتنې')
+    L(t, [('1. Write a detailed account of the academic and literary activities of the Muslims in the era of the Caliph Ma\'mun.', '۱۔ خلیفہ مامون کے عہد میں مسلمانوں کی علمی و ادبی سرگرمیوں کا مفصل حال لکھیں۔', '۱. د خلیفه مامون په دوره کې د مسلمانانو د علمي او ادبي فعالیتونو مفصل حال ولیکئ.'),
+          ('2. Write the select events of Ma\'mun\'s era.', '۲۔ مامون کے دور کے چیدہ چیدہ واقعات تحریر کریں۔', '۲. د مامون د دورې غوره پېښې ولیکئ.')])
+    t.p('3. Fill in the blanks.', '۳۔ خالی جگہیں پر کریں۔', '۳. تشې ډکې کړئ.')
+    L(t, [('a. According to Harun al-Rashid\'s testament the accession of ______ took place.', 'الف: ہارون الرشید کی وصیت کے مطابق ______ کی تخت نشینی ہوئی۔', 'الف. د هارون الرشید د وصیت له مخې د ______ پر تخت کېناستل وشو.'),
+          ('b. Fadl bin Rabi\' was a ______ person.', 'ب: فضل بن ربیع ایک ______ شخص تھا۔', 'ب. فضل بن ربیع یو ______ کس و.'),
+          ('c. Amin sent off his general ______ with an army against Ma\'mun.', 'ج: امین نے مامون کے خلاف اپنے جرنیل ______ کا لشکر دے کر روانہ کیا۔', 'ج. امین د مامون پر خلاف خپل جنرال ______ له لښکر سره واستاوه.'),
+          ('d. Ma\'mun ascended the throne after the death of his brother ______.', 'د: مامون اپنے بھائی ______ کی وفات کے بعد تخت نشین ہوا۔', 'د. مامون د خپل ورور ______ له مړینې وروسته پر تخت کېناست.')])
+    BOOK.save(29, [(7, r1), (7, rec(t, 7, 51, 29, [51], kind='exercise'))], issues=[{'id': 'ihist12-pdf029', 'unit': 7, 'printedPage': 50,
+               'description': 'Student handwriting filling the blanks on p.51 (e.g. "محمد امین", "چالاک", "علی بن عیسیٰ") and mark "①" excluded; blanks rendered empty. Exercise continues on p.52.'}])
+
+
+if __name__ == '__main__':
+    p29()

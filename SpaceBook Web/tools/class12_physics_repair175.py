@@ -1,0 +1,55 @@
+"""PDF175 complete mass-unit derivations and eight-row source table."""
+from class12_source_review import upsert,section,shared_class_data_lock,sync_companions
+from class12_fidelity_repair import stage_reference
+SOURCE='Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf'
+T=[];L=[];ROWS={}
+def add(kind,en,ur,ps):L.append({'type':kind,'indices':[len(T)]});T.append((en,ur,ps))
+def m(s):return r'\('+s+r'\)'
+def eq(s):s=m(s);add('equation',s,s,s)
+eq(r'r=\sqrt{\frac{2Vm}{B^2q}}\qquad(20.1)')
+add('paragraph','This equation 20:1 shows that if ‘V’, ‘B’ and ‘q’ are not changed the ‘r’ depends upon the square root of mass ‘m’. Thus ions of different masses will strike the detector at different points thus the isotopes can be separated from each other.',
+ 'یہ مساوات20:1 ظاہر کرتی ہے کہ اگر ‘V’، ‘B’ اور ‘q’ تبدیل نہ ہوں تو ‘r’ کمیت ‘m’ کے جذر پر منحصر ہوتا ہے۔ اس لیے مختلف کمیتوں کے آئن کھوجی سے مختلف مقامات پر ٹکرائیں گے، یوں آئسوٹوپس کو ایک دوسرے سے الگ کیا جا سکتا ہے۔',
+ 'دا20:1 معادله ښيي چې که ‘V’، ‘B’ او ‘q’ بدل نه شي، ‘r’ د کتلې ‘m’ په مربع ریښه پورې تړاو لري. نو د بېلابېلو کتلو آیونونه په بېلابېلو ځایونو کې له کشفوونکي سره ټکر کوي او ایزوټوپونه له یو بل څخه بېلېدای شي.')
+add('heading','20.4 NUCLEAR MASSES','20.4 نیوکلیائی کمیتیں','20.4 هستوي کتلې')
+add('paragraph','Nuclear masses are measured in unified atomic mass scale. According to this scale one atomic mass unit is exactly as the mass of 12th part of the mass of carbon 12 atom.',
+ 'نیوکلیائی کمیتیں متحدہ ایٹمی کمیتی پیمانے میں ناپی جاتی ہیں۔ اس پیمانے کے مطابق ایک ایٹمی کمیتی اکائی کاربن12 کے ایٹم کی کمیت کے بارہویں حصے کی کمیت کے بالکل برابر ہے۔',
+ 'هستوي کتلې په متحد اټومي کتلیز مقیاس اندازه کېږي. د دې مقیاس له مخې یو اټومي کتلیز واحد د کاربن12 د اټوم د کتلې د دولسمې برخې له کتلې سره کټ مټ برابر دی.')
+add('equation',m(r'1\mathrm{u}=\frac{\text{mass of one }{}^{12}\mathrm{C}\text{ atom}}{12}'),m(r'1\mathrm{u}=\frac{\text{ایک }{}^{12}\mathrm{C}\text{ ایٹم کی کمیت}}{12}'),m(r'1\mathrm{u}=\frac{\text{د یوه }{}^{12}\mathrm{C}\text{ اټوم کتله}}{12}'))
+add('paragraph','Other masses in this unit are then measured by comparison.','پھر اس اکائی میں دوسری کمیتیں موازنے سے ناپی جاتی ہیں۔','بیا په دې واحد کې نورې کتلې په پرتله کولو سره اندازه کېږي.')
+add('heading','A. UNIFIED ATOMIC MASS UNIT IN KILOGRAM','A. کلوگرام میں متحدہ ایٹمی کمیتی اکائی','A. په کیلوګرام کې متحد اټومي کتلیز واحد')
+add('paragraph','As we know that 1 kg mole of any element contain Avogadro’s number of atoms. Thus','جیسا کہ ہم جانتے ہیں، کسی بھی عنصر کے1 kg مول میں ایووگاڈرو عدد کے برابر ایٹم ہوتے ہیں۔ لہٰذا','لکه څنګه چې پوهېږو، د هر عنصر په1 kg مول کې د اووګاډرو د شمېر هومره اټومونه شته. نو')
+add('equation',r'Mass of \(6.023\times10^{26}\) atoms of \({}^{12}\mathrm{C}=12\mathrm{kg}\)',r'\({}^{12}\mathrm{C}\) کے \(6.023\times10^{26}\) ایٹموں کی کمیت \(=12\mathrm{kg}\)',r'د \({}^{12}\mathrm{C}\) د \(6.023\times10^{26}\) اټومونو کتله \(=12\mathrm{kg}\)')
+add('equation',r'or     Mass of 1 atoms of \({}^{12}\mathrm{C}=\frac{12}{6.023\times10^{26}}\mathrm{kg}\)',r'یا     \({}^{12}\mathrm{C}\) کے1 ایٹم کی کمیت \(=\frac{12}{6.023\times10^{26}}\mathrm{kg}\)',r'یا     د \({}^{12}\mathrm{C}\) د1 اټوم کتله \(=\frac{12}{6.023\times10^{26}}\mathrm{kg}\)')
+add('equation',r'and     Mass of \(\frac1{12}\) atoms of \({}^{12}\mathrm{C}=\frac1{12}\times\frac{12}{6.023\times10^{26}}\mathrm{kg}\)',r'اور     \({}^{12}\mathrm{C}\) کے \(\frac1{12}\) ایٹم کی کمیت \(=\frac1{12}\times\frac{12}{6.023\times10^{26}}\mathrm{kg}\)',r'او     د \({}^{12}\mathrm{C}\) د \(\frac1{12}\) اټوم کتله \(=\frac1{12}\times\frac{12}{6.023\times10^{26}}\mathrm{kg}\)')
+add('equation',r'therefore     \(1\mathrm{u}=1.660\times10^{-27}\ \mathrm{kg}\qquad(20.2)\)',r'لہٰذا     \(1\mathrm{u}=1.660\times10^{-27}\ \mathrm{kg}\qquad(20.2)\)',r'نو     \(1\mathrm{u}=1.660\times10^{-27}\ \mathrm{kg}\qquad(20.2)\)')
+add('heading','B. UNIFIED ATOMIC MASS UNIT IN JOULES','B. جول میں متحدہ ایٹمی کمیتی اکائی','B. په ژول کې متحد اټومي کتلیز واحد')
+add('paragraph','In nuclear physics we sometime also give the masses in energy units. As by Einstein mass energy relation we have','نیوکلیائی طبیعیات میں ہم کبھی کمیتوں کو توانائی کی اکائیوں میں بھی دیتے ہیں۔ آئن اسٹائن کے کمیت و توانائی کے تعلق سے ہمیں ملتا ہے','په هستوي فزیک کې کله ناکله کتلې د انرژۍ په واحدونو هم ورکوو. د آینسټاین د کتلې او انرژۍ له اړیکې څخه لرو')
+eq(r'\Delta E_0=(\Delta m)c^2=(1.6605\times10^{-27}\ \mathrm{kg})(2.9979\times10^8\ \mathrm{m/s})^2')
+add('equation',r'therefore     \(1\mathrm{u}=1.4924\times10^{-10}\ \mathrm{J}\qquad(20.3)\)',r'لہٰذا     \(1\mathrm{u}=1.4924\times10^{-10}\ \mathrm{J}\qquad(20.3)\)',r'نو     \(1\mathrm{u}=1.4924\times10^{-10}\ \mathrm{J}\qquad(20.3)\)')
+add('heading','C. UNIFIED ATOMIC MASS UNIT IN ELECTRON VOLTS','C. الیکٹران وولٹ میں متحدہ ایٹمی کمیتی اکائی','C. په الکترون ولټ کې متحد اټومي کتلیز واحد')
+add('paragraph','Also in nuclear physics we sometime also give the masses in energy units as electron volts, as','نیوکلیائی طبیعیات میں ہم کبھی کمیتوں کو توانائی کی اکائی الیکٹران وولٹ میں بھی دیتے ہیں، یوں','په هستوي فزیک کې کله ناکله کتلې د انرژۍ په واحد، الکترون ولټ، هم ورکوو، داسې')
+eq(r'1\mathrm{u}=(1.4924\times10^{-10}\ \mathrm{J})\left(\frac{1\mathrm{eV}}{1.6022\times10^{-19}\ \mathrm{J}}\right)=9.315\times10^8\ \mathrm{eV}')
+add('equation',r'therefore     \(1\mathrm{u}=931.5\ \mathrm{MeV}\qquad(20.4)\)',r'لہٰذا     \(1\mathrm{u}=931.5\ \mathrm{MeV}\qquad(20.4)\)',r'نو     \(1\mathrm{u}=931.5\ \mathrm{MeV}\qquad(20.4)\)')
+add('paragraph','All the masses of different particles can be converted into this scale as shown in the table 20.1.','مختلف ذرات کی تمام کمیتیں اس پیمانے میں تبدیل کی جا سکتی ہیں، جیسا کہ جدول20.1 میں دکھایا گیا ہے۔','د بېلابېلو ذرو ټولې کتلې دې مقیاس ته اړول کېدای شي، لکه په20.1 جدول کې چې ښودل شوي دي.')
+add('heading','Table 20.1 Rest masses in Kilograms, Unified Atomic Mass Units and MeV','جدول20.1 کلوگرام، متحدہ ایٹمی کمیتی اکائیوں اور MeV میں سکونی کمیتیں','جدول20.1 د سکون کتلې په کیلوګرام، متحدو اټومي کتلیزو واحدونو او MeV کې')
+rows=[(['Particle','kg','u',m(r'\mathrm{MeV}/c^2')],['ذرہ','kg','u',m(r'\mathrm{MeV}/c^2')],['ذره','kg','u',m(r'\mathrm{MeV}/c^2')])]
+PARTICLES=[(['Electron','الیکٹران','الکترون'],'9.1164',-31,'0.0005485','0.511'),(['Proton','پروٹون','پروتون'],'1.67262',-27,'1.007276','938.27'),(['Neutron','نیوٹرون','نیوټرون'],'1.67493',-27,'1.008665','939.57'),(['Hydrogen','ہائیڈروجن','هایدروجن'],'1.67353',-27,'1.007825','938.78'),(['Deuterium','ڈیوٹیریم','ډیوټریم'],'3.34449',-27,'2.014102','1876.12'),(['Tritium','ٹریٹیم','ټریټیم'],'5.00827',-27,'3.016049','2809.43'),(['Helium','ہیلیم','هیلیم'],'6.64648',-27,'4.002603','3728.40'),(['Carbon','کاربن','کاربن'],'1.99265',-27,'12.000000','11177.9')]
+for names,v,e,u,energy in PARTICLES:rows.append(tuple([names[i],m(v+r'\times10^{'+str(e)+'}'),u,energy] for i in range(3)))
+start=len(T)
+for row in rows:ROWS[len(T)]=row[0];T.append(tuple(' — '.join(cells) for cells in row))
+L.append({'type':'table','indices':list(range(start,len(T)))})
+add('heading','20.5 MASS DEFECT AND BINDING ENERGY','20.5 کمیتی نقص اور بندشی توانائی','20.5 د کتلې کسر او د تړون انرژي')
+add('paragraph',r'The total mass of a nucleus is less than the sum of the masses of its individual nucleons. For example as shown in the table 20.1 six protons and six neutrons, each having a mass larger than 1 u, combined with six electrons to form a carbon-12 atom having a mass of exactly 12 u. The bound system of \({}^{12}\mathrm{C}\) has a lower rest energy than that of six separate protons and six separate neutrons. Similarly the mass of helium nucleus which consist of two protons and two neutrons is 0.8% less than the mass of two protons and two neutrons separated from each other.',
+ r'نیوکلئیس کی کل کمیت اس کے انفرادی نیوکلیونوں کی کمیتوں کے مجموعے سے کم ہوتی ہے۔ مثلاً جدول20.1 کے مطابق چھ پروٹون اور چھ نیوٹرون، جن میں سے ہر ایک کی کمیت1 u سے زیادہ ہے، چھ الیکٹرانوں کے ساتھ مل کر کاربن-12 کا ایٹم بناتے ہیں جس کی کمیت بالکل12 u ہے۔ \({}^{12}\mathrm{C}\) کے بندھے ہوئے نظام کی سکونی توانائی چھ الگ پروٹونوں اور چھ الگ نیوٹرونوں کی سکونی توانائی سے کم ہے۔ اسی طرح ہیلیم کا نیوکلئیس، جو دو پروٹونوں اور دو نیوٹرونوں پر مشتمل ہے، ایک دوسرے سے الگ دو پروٹونوں اور دو نیوٹرونوں کی کمیت سے0.8% کم کمیت رکھتا ہے۔',
+ r'د هستې ټوله کتله د هغې د انفرادي نیوکلیونونو د کتلو تر مجموعې کمه ده. د بېلګې په توګه، لکه په20.1 جدول کې چې ښودل شوي، شپږ پروتونونه او شپږ نیوټرونونه، چې د هر یوه کتله له1 u زیاته ده، له شپږو الکترونونو سره یوځای کېږي او د کاربن-12 اټوم جوړوي چې کتله یې کټ مټ12 u ده. د \({}^{12}\mathrm{C}\) د تړلي سیستم د سکون انرژي د شپږو جلا پروتونونو او شپږو جلا نیوټرونونو تر سکوني انرژۍ کمه ده. همدارنګه د هیلیم د هستې کتله، چې دوه پروتونونه او دوه نیوټرونونه لري، د یو بل څخه جلا دوو پروتونونو او دوو نیوټرونونو تر کتلې0.8% کمه ده.')
+def ref(n):return {'pdfPage':175,'printedPage':n,'sourcePdf':SOURCE}
+record={'id':'phys20-nuclear-mass-units-table-and-mass-defect-intro-338-339','title':'Nuclear mass units, particle masses and mass defect','kind':'lesson','pdfPage':175,'printedPage':338,'sourcePdf':SOURCE,'paragraphs':[v[0] for v in T]}
+issues=['Table20.1 prints carbon mass1.99265×10⁻²⁷kg alongside12.000000u. The printed exponent conflicts by a factor of ten with the stated mass-unit conversion; retained as−27 after close crop inspection.']
+sec=section(record,T,L,('نیوکلیائی کمیتی اکائیاں، ذرات کی کمیتیں اور کمیتی نقص','هستوي کتلیز واحدونه، د ذرو کتلې او د کتلې کسر'))
+sec.update(kind='lesson',sourceClass12Physics=True,sourceReferences=[ref(338),ref(339)],sourceBlocks=[],sourceTableRows=ROWS,sourceIssues=issues)
+if __name__=='__main__':
+    with shared_class_data_lock():
+        upsert([record],[sec],chapter_index=9)
+        sync_companions(chapter_index=9,retire_sections=['20.2'],formulas=[{'id':identity,'name':name,'number':number,'formula':formula,'latex':latex,'sourceClass12Physics':True,'sourceReferences':[ref(printed)]} for identity,name,number,formula,latex,printed in [('phys20-mass-spectrograph-isotope-radius','Mass-dependent spectrograph radius','20.1','r=√(2Vm/B²q)',r'r=\sqrt{\frac{2Vm}{B^2q}}',338),('phys20-unified-mass-unit-kilogram','Unified atomic mass unit in kilograms','20.2','1u=1.660×10⁻²⁷kg',r'1\mathrm{u}=1.660\times10^{-27}\mathrm{kg}',338),('phys20-unified-mass-unit-joules','Unified atomic mass unit in joules','20.3','1u=1.4924×10⁻¹⁰J',r'1\mathrm{u}=1.4924\times10^{-10}\mathrm{J}',338),('phys20-unified-mass-unit-electronvolts','Unified atomic mass unit in electron volts','20.4','1u=931.5MeV',r'1\mathrm{u}=931.5\mathrm{MeV}',339)]])
+    stage_reference(175,record,'Reinspected PDF175 printed338–339 and full-resolution table crop. Restored radius equation20.1, all mass-scale definition and kg/J/eV conversion steps20.2–20.4, complete eight-particle semantic table with four columns, and full mass-defect introduction. Urdu/Pashto aligned throughout including equation prose/table headings. Printed carbon−27 exponent retained and flagged; legacy20.2 retired only after coverage through338.',issues)
+    print('PDF175 full derivations/table staged; printed carbon exponent retained.')

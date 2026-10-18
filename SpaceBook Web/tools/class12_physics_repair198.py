@@ -1,0 +1,63 @@
+"""PDF198: complete glossary tail and seven author profiles; clipped text marked."""
+from class12_source_review import upsert, section, shared_class_data_lock
+from class12_fidelity_repair import stage_reference
+SOURCE='Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf'
+T=[];L=[]
+def add(kind,en,ur,ps):L.append({'type':kind,'indices':[len(T)]});T.append((en,ur,ps))
+G=[
+ ('Myelin: a white tissue forming an insulating sheath (myelin sheath) around certain nerve fibres. Damage to the myelin sheath causes neurological disease, as in multiple sclerosis.','مائیلین: سفید بافت جو مخصوص عصبی ریشوں کے گرد عایق غلاف (مائیلین غلاف) بناتی ہے۔ مائیلین غلاف کا نقصان اعصابی بیماری کا سبب بنتا ہے، جیسا کہ ملٹی پل سکلیروسس میں ہوتا ہے۔','مایلین: یو سپین نسج چې د ځینو عصبي فایبرونو چاپېر عایق پوښ (د مایلین پوښ) جوړوي. د مایلین پوښ ته زیان د عصبي ناروغۍ لامل کېږي، لکه په ملټيپل سکلېروسیس کې.'),
+ ('Motor: a device that changes electrical energy into mechanical energy.','موٹر: ایسا آلہ جو برقی توانائی کو میکانی توانائی میں بدلتا ہے۔','موټور: هغه وسیله چې برېښنايي انرژي په میخانیکي انرژۍ بدلوي.'),
+ ('Muon: a negatively charged subatomic particle, with the same charge as an electron.','میوآن: منفی بار والا زیر ایٹمی ذرہ، جس کا بار الیکٹران کے برابر ہوتا ہے۔','میوون: منفي چارج لرونکې فرعي اټومي ذره چې چارج یې د الکټرون له چارج سره یو شان دی.'),
+ ('Ohm: unit of resistance.','اوہم: مزاحمت کی اکائی۔','اوم: د مقاومت واحد.'),
+ ('Ohm’s Law: current is directly proportional to voltage and inversely proportional to resistance.','اوہم کا قانون: رو وولٹیج کے راست متناسب اور مزاحمت کے معکوس متناسب ہوتی ہے۔','د اوم قانون: جریان له ولټاژ سره مستقیم او له مقاومت سره معکوس تناسب لري.'),
+ ('Permanent Magnets: it retain their magnetism after a magnetizing force is removed.','مستقل مقناطیس: مقناطیس بنانے والی قوت ہٹا دینے کے بعد بھی اپنی مقناطیسیت برقرار رکھتے ہیں۔','دایمي مقناطیسونه: د مقناطیسوونکي ځواک تر لرې کېدو وروسته هم خپل مقناطیسیت ساتي.'),
+ ('Resistance : the restriction to the flow of electrons.','مزاحمت: الیکٹرانوں کے بہاؤ میں رکاوٹ۔','مقاومت: د الکټرونونو د بهیر مخنیوی.'),
+ ('RMS Value: Root Mean Square Current is also referred to as effective current and is the square root of the average of all the instantaneous currents.','RMS قدر: جذرِ اوسطِ مربع رو کو مؤثر رو بھی کہتے ہیں اور یہ تمام لمحاتی روؤں کے اوسط کا جذر ہے۔','د RMS ارزښت: د جریان د مربع د اوسط جذر ته اغېزمن جریان هم ویل کېږي او دا د ټولو شېبه يي جریانونو د اوسط مربع جذر دی.'),
+ ('Single-Phase: a continuous single alternating current cycle.','یک فازی: متبادل رو کا ایک مسلسل واحد چکر۔','یو فاز: د متناوب جریان یوه پرله پسې واحده دوره.'),
+ ('Spectrum: spectrum means set of frequencies absorbed or emitted by a substance.','طیف: طیف سے مراد کسی مادے سے جذب ہونے یا خارج ہونے والے تعددات کا مجموعہ ہے۔','طیف: طیف د هغو فریکونسیو ټولګې ته وايي چې یوه ماده یې جذبوي یا خپروي.'),
+ ('Terrestrial sources: sources that are existing or originating inside the limits of the earth.','ارضی ذرائع: وہ ذرائع جو زمین کی حدود کے اندر موجود ہوں یا وہیں سے پیدا ہوں۔','ځمکنۍ سرچینې: هغه سرچینې چې د ځمکې د پولو دننه شته یا له هماغه ځایه راپیدا کېږي.'),
+ ('Three-Phase: a continuous series of three overlapping AC cycles offset by 120 degrees.','سہ فازی: متبادل رو کے تین ایک دوسرے پر چڑھے ہوئے چکروں کا مسلسل سلسلہ، جن کے درمیان120 درجے کا فرق ہو۔','درې فازه: د AC د دریو یو پر بل پرتو دورو پرله پسې لړۍ چې120 درجې واټن لري.'),
+ ('Transformer: a device used to raise (step up) or lower (step down) a voltage level.','ٹرانسفارمر: وولٹیج کی سطح بڑھانے (سٹیپ اپ) یا گھٹانے (سٹیپ ڈاؤن) کے لیے استعمال ہونے والا آلہ۔','ټرانسفارمر: هغه وسیله چې د ولټاژ د کچې لوړولو (سټېپ اپ) یا ټیټولو (سټېپ ډاون) لپاره کارول کېږي.'),
+ ('Ventricle: a chamber of the heart that receives blood from an atrium and pumps it to the arteries.','بطین: دل کا ایسا خانہ جو اذینے سے خون وصول کرتا ہے اور اسے شریانوں میں پمپ کرتا ہے۔','بطن: د زړه هغه خونه چې له دهلېز څخه وینه اخلي او شریانونو ته یې پمپ کوي.'),
+ ('Voltage Drop: voltage value as measured across each resistor or load.','وولٹیج میں کمی: ہر مزاحم یا بوجھ کے دونوں سروں کے درمیان ناپی گئی وولٹیج کی قدر۔','د ولټاژ کمښت: د ولټاژ هغه ارزښت چې د هر مقاومت یا بار د دواړو سرونو ترمنځ اندازه کېږي.'),
+ ('Voltmeter: a device to measure voltage.','وولٹ میٹر: وولٹیج ناپنے کا آلہ۔','ولټمېټر: د ولټاژ د اندازه کولو وسیله.'),
+ ('Waveform: the shape of the curve obtained by plotting the instantaneous values of voltage or current as ordinate against time as abscissa is called its waveform or wave shape.','موجی شکل: وقت کو افقی محور پر اور وولٹیج یا رو کی لمحاتی قدروں کو عمودی محور پر رسم کرنے سے بننے والے منحنی کی شکل کو اس کی موجی شکل کہتے ہیں۔','د څپې بڼه: د ولټاژ یا جریان د شېبه يي ارزښتونو د عمودي مختصاتو په توګه او د وخت د افقي مختصاتو په توګه د رسمولو له لارې د ترلاسه شوې منحني بڼه د څپې بڼه بلل کېږي.'),
+ ('Watt: the basic unit of power, indicating the amount of work accomplished when one volt causes one ampere to pass through a circuit.','واٹ: طاقت کی بنیادی اکائی، جو اس وقت انجام پانے والے کام کی مقدار بتاتی ہے جب ایک وولٹ کی وجہ سے سرکٹ میں ایک ایمپیئر رو گزرتی ہے۔','واټ: د توان بنسټیز واحد دی، چې د هغه ترسره شوي کار اندازه ښيي کله چې یو ولټ په مدار کې د یوه امپېر د تېرېدو لامل شي.')]
+for row in G:add('definition',*row)
+add('heading','Authors Profile','مصنفین کا تعارف','د لیکوالانو پېژندنه')
+add('paragraph','Shaukat Ali Taran did his M.Sc in Physics from University of Peshawer in 1988. He also did Master in Education. He is the author and editor of many books of physics. He has 25 years teaching experience in different colleges, including Cadet College, Kohat. Currently, he is working as a Professor in Government Post Graduate College, Timergara (Dir Lower).',
+ 'شوکت علی تران نے1988 میں یونیورسٹی آف پشاور سے طبیعیات میں M.Sc کیا۔ انہوں نے تعلیم میں ماسٹر بھی کیا۔ وہ طبیعیات کی بہت سی کتابوں کے مصنف اور مدیر ہیں۔ انہیں کیڈٹ کالج کوہاٹ سمیت مختلف کالجوں میں25 سال تدریس کا تجربہ ہے۔ اس وقت وہ گورنمنٹ پوسٹ گریجویٹ کالج، تیمرگرہ (دیر زیریں) میں پروفیسر کے طور پر کام کر رہے ہیں۔',
+ 'شوکت علي تران په1988 کې د پېښور له پوهنتون څخه په فزیک کې M.Sc ترلاسه کړ. هغه په ښوونه او روزنه کې ماسټري هم کړې ده. هغه د فزیک د ډېرو کتابونو لیکوال او سمونوال دی. د کوهاټ کېډټ کالج په ګډون په بېلابېلو کالجونو کې25 کاله تدریسي تجربه لري. اوس د تیمرګرې (ښکته دیر) په دولتي پوسټ ګرېجوېټ کالج کې د پروفیسر په توګه کار کوي.')
+add('paragraph','Shadab Gul did his M.Sc in Physics from University of Peshawer in 1996. He taught various classes for more than 20 years at school as well as college level. Currently he is working as Assistant Professor in Government Post Graduate College, Lakki Marwat.',
+ 'شاداب گل نے1996 میں یونیورسٹی آف پشاور سے طبیعیات میں M.Sc کیا۔ انہوں نے سکول اور کالج، دونوں سطحوں پر مختلف جماعتوں کو20 سال سے زیادہ عرصہ پڑھایا۔ اس وقت وہ گورنمنٹ پوسٹ گریجویٹ کالج، لکی مروت میں اسسٹنٹ پروفیسر کے طور پر کام کر رہے ہیں۔',
+ 'شاداب ګل په1996 کې د پېښور له پوهنتون څخه په فزیک کې M.Sc ترلاسه کړ. هغه د ښوونځي او کالج په کچه له20 کلونو ډېر وخت بېلابېلو ټولګیو ته درس ورکړی دی. اوس د لکي مروت په دولتي پوسټ ګرېجوېټ کالج کې د مرستیال پروفیسر په توګه کار کوي.')
+add('paragraph','Abdul Baseer did his M.Sc in Physics from University of Peshawer in 1990. Currently he is working as a professor in Edwardes College, Peshawer.',
+ 'عبدالبصیر نے1990 میں یونیورسٹی آف پشاور سے طبیعیات میں M.Sc کیا۔ اس وقت وہ ایڈورڈز کالج، پشاور میں پروفیسر کے طور پر کام کر رہے ہیں۔',
+ 'عبدالبصیر په1990 کې د پېښور له پوهنتون څخه په فزیک کې M.Sc ترلاسه کړ. اوس د پېښور په اېډورډز کالج کې د پروفیسر په توګه کار کوي.')
+add('paragraph','Abdur-Rehman did his M.Sc in Physics from University of Peshawer in 2008. He taught Physics in various private and govt institutions. Currently he is working as a Lecturer in Durrani School and College, Peshawer.',
+ 'عبدالرحمان نے2008 میں یونیورسٹی آف پشاور سے طبیعیات میں M.Sc کیا۔ انہوں نے مختلف نجی اور سرکاری اداروں میں طبیعیات پڑھائی۔ اس وقت وہ درانی سکول اینڈ کالج، پشاور میں لیکچرر کے طور پر کام کر رہے ہیں۔',
+ 'عبدالرحمان په2008 کې د پېښور له پوهنتون څخه په فزیک کې M.Sc ترلاسه کړ. هغه په بېلابېلو خصوصي او دولتي ادارو کې فزیک تدریس کړی دی. اوس د پېښور په دراني ښوونځي او کالج کې د لکچرر په توګه کار کوي.')
+add('paragraph','Dr. Muhammad Naeem Khalid remained Chairman of Physics Department, Islamia College, Peshawer.',
+ 'ڈاکٹر محمد نعیم خالد اسلامیہ کالج، پشاور کے شعبۂ طبیعیات کے چیئرمین رہے۔',
+ 'ډاکټر محمد نعیم خالد د پېښور په اسلامیه کالج کې د فزیک څانګې مشر پاتې شوی دی.')
+add('paragraph','Aamir Ullah Khan has obtained MS - Physics and is currently working as ‘Director’ at Pakistan Virtual College, Hayatabad Peshawar.',
+ 'عامر اللہ خان نے طبیعیات میں MS حاصل کیا ہے اور اس وقت پاکستان ورچوئل کالج، حیات آباد پشاور میں ’ڈائریکٹر‘ کے طور پر کام کر رہے ہیں۔',
+ 'عامرالله خان په فزیک کې MS ترلاسه کړی او اوس د پېښور حیات آباد په پاکستان ورچوئل کالج کې د «ډایرکټر» په توګه کار کوي.')
+add('paragraph','He is the co-author of general science textbooks for grade 6, grade 7 and grade 8 under the National Book Foundation. He is also the co-author of physics textbooks for grade 9, grade 10 and grade 11 of Khyber Pakhtunkhwa Textbook Board, Peshawar.',
+ 'وہ نیشنل بک فاؤنڈیشن کے تحت جماعت6، جماعت7 اور جماعت8 کی جنرل سائنس کی درسی کتابوں کے شریک مصنف ہیں۔ وہ خیبر پختونخوا ٹیکسٹ بک بورڈ، پشاور کی جماعت9، جماعت10 اور جماعت11 کی طبیعیات کی درسی کتابوں کے بھی شریک مصنف ہیں۔',
+ 'هغه د نېشنل بک فاونډېشن تر ادارې لاندې د6،7 او8 ټولګیو د عمومي ساینس درسي کتابونو ګډ لیکوال دی. هغه د پېښور د خیبر پښتونخوا ټکسټ بک بورډ د9،10 او11 ټولګیو د فزیک درسي کتابونو ګډ لیکوال هم دی.')
+add('paragraph','Hafiz Mehar Elahi did MS/M.Phil Physics from Qurtuba University of Science and Information Technology, Peshawar. Recently honoured with Best Chaperone Awar[clipped at source edge] by GIK Institute of Sciences and Information Technology. He got First position i[clipped at source edge] BS-Physics from Govt College Peshawar in 2014 affiliated with UOP.Currently he i[clipped at source edge] working as Lecturer in Physics at Peshawar Model Degree, College.',
+ 'حافظ مہر الٰہی نے قرطبہ یونیورسٹی آف سائنس اینڈ انفارمیشن ٹیکنالوجی، پشاور سے طبیعیات میں MS/M.Phil کیا۔ حال ہی میں GIK انسٹی ٹیوٹ آف سائنسز اینڈ انفارمیشن ٹیکنالوجی کی طرف سے Best Chaperone Awar[ماخذ کے کنارے پر متن کٹا ہوا ہے] کا اعزاز ملا۔ انہوں نے پہلی پوزیشن حاصل کی [ماخذ کے کنارے پر متن کٹا ہوا ہے]،2014 میں UOP سے منسلک گورنمنٹ کالج پشاور سے BS-Physics۔ اس وقت وہ [ماخذ کے کنارے پر متن کٹا ہوا ہے] پشاور ماڈل ڈگری، کالج میں طبیعیات کے لیکچرر کے طور پر کام کر رہے ہیں۔',
+ 'حافظ مهر الهي د پېښور د قرطبه ساینس او معلوماتي ټکنالوژۍ پوهنتون څخه په فزیک کې MS/M.Phil ترلاسه کړی دی. په دې وروستیو کې د GIK د ساینس او معلوماتي ټکنالوژۍ انسټیټیوټ له خوا په Best Chaperone Awar[د سرچینې په څنډه کې متن پرې شوی] ونازول شو. هغه لومړی مقام ترلاسه کړ [د سرچینې په څنډه کې متن پرې شوی]، په2014 کې له UOP سره تړلي دولتي کالج پېښور څخه BS-Physics. اوس هغه [د سرچینې په څنډه کې متن پرې شوی] په پېښور ماډل ډګري، کالج کې د فزیک د لکچرر په توګه کار کوي.')
+def ref(n):return {'pdfPage':198,'printedPage':n,'sourcePdf':SOURCE}
+record={'id':'phys20-glossary-tail-and-author-profiles-384','title':'Final glossary entries and authors’ profiles','kind':'book_back_matter','pdfPage':198,'printedPage':384,'sourcePdf':SOURCE,'paragraphs':[x[0] for x in T]}
+issues=[
+ 'Hafiz Mehar Elahi profile is cut off at the right edge in the main PDF and part07 PDF7. Three visible fragments Awar…, position i…, Currently he i… are explicitly marked; missing letters are not invented.',
+ 'Printed384 RMS Value definition says square root of the average of the instantaneous currents, omitting their squares. Exact printed definition retained and flagged.'
+]
+sec=section(record,T,L,('فرہنگ کے آخری اندراجات اور مصنفین کا تعارف','د وییزې پانګې وروستي توکي او د لیکوالانو پېژندنه'))
+sec.update(kind='book_back_matter',sourceClass12Physics=True,sourceReferences=[ref(384),ref(None)],sourceBlocks=[],sourceIssues=issues,sourceAuthorCount=7,sourceEditorialMarkers=['[clipped at source edge]'])
+if __name__=='__main__':
+    with shared_class_data_lock():upsert([record],[sec],chapter_index=9)
+    stage_reference(198,record,'Compared the full primary spread and the larger part07 PDF7 author scan. Restored18 individual glossary entries, including the source RMS wording, and all seven author profiles (eight source paragraphs, preserving Aamir Ullah Khan’s paragraph break). Preserved Peshawer/Peshawar spellings, degrees, institutions, dates and author/editor roles. Three clipped fragments in the last profile are explicitly marked in English/Urdu/Pashto; no missing words silently completed. Metadata distinguishes book back matter.',issues)
+    print('PDF198 complete glossary/profiles staged; clipped text and RMS wording flagged.')

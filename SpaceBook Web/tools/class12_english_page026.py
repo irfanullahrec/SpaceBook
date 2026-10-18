@@ -1,0 +1,43 @@
+"""PDF26 (printed 39–40): Unit 4 Writing Suggestions; Oral Communication; Vocabulary A (dictionary transcription table); B opposites 1–16."""
+from class12_book_common import Book, Builder
+
+BOOK = Book('english')
+w = Builder()
+w.h('Writing Suggestions', 'تحریری تجاویز', 'د لیکلو وړاندیزونه')
+w.p('White a composition on the topic" the need of the smart phone" connecting your ideas with the use of appropriate transitional devices.', '’’اسمارٹ فون کی ضرورت‘‘ کے موضوع پر ایک مضمون لکھیں اور مناسب ربطی الفاظ کے استعمال سے اپنے خیالات کو جوڑیں۔', 'د "سمارټ فون اړتیا" په موضوع یوه لیکنه ولیکئ او د مناسبو اړیکه‌ییزو وسایلو په کارولو خپل نظرونه سره وتړئ.')
+w.h('Oral Communication', 'زبانی ابلاغ', 'د خولې اړیکه')
+w.p('Step 1: The students work together in pairs. Each student writes down three ways in which he thinks that he and his partner are similar and three ways in which he thinks they are different. He does not show his partner what he has written.', 'مرحلہ 1: طلبہ جوڑیوں میں مل کر کام کریں۔ ہر طالب علم تین ایسے پہلو لکھے جن میں اس کے خیال میں وہ اور اس کا ساتھی ایک جیسے ہیں اور تین ایسے جن میں وہ مختلف ہیں۔ وہ اپنے ساتھی کو نہیں دکھاتا کہ اس نے کیا لکھا ہے۔', 'ګام 1: زده کوونکي په جوړو کې یوځای کار کوي. هر زده کوونکی درې داسې لارې لیکي چې د هغه په اند هغه او ملګری یې ورته دي او درې داسې چې توپیر لري. هغه خپل ملګري ته نه ښيي چې څه یې لیکلي.')
+w.p('Step 2: First, both students tell each other about the similarities and talk about where they were right or wrong, then they talk about the differences.', 'مرحلہ 2: پہلے دونوں طلبہ ایک دوسرے کو مماثلتوں کے بارے میں بتائیں اور بات کریں کہ وہ کہاں درست یا غلط تھے، پھر وہ فرق کے بارے میں بات کریں۔', 'ګام 2: لومړی دواړه زده کوونکي یو بل ته د ورته والي په اړه ووايي او خبرې وکړي چې چېرته سم یا ناسم وو، بیا د توپیرونو په اړه خبرې وکړي.')
+w.h('Vocabulary and Grammar', 'ذخیرۂ الفاظ اور قواعد', 'لغات او ګرامر')
+w.p('A. Consult a dictionary and write the phonetic transcription of the following words.', 'A. لغت سے رجوع کریں اور درج ذیل الفاظ کی صوتی نقل لکھیں۔', 'A. قاموس ته مراجعه وکړئ او د لاندې کلمو غږیز لیکدود ولیکئ.')
+W1 = ['person', 'once', 'police', 'lose', 'position', 'industry', 'major', 'build', 'language', 'international', 'else', 'center', 'enough', 'calm', 'color', 'lure', 'knife']
+W2 = ['Information', 'question', 'business', 'power', 'change', 'move', 'book', 'development', 'young', 'national', 'water', 'yet', 'perhaps', 'until', 'control', 'include', 'believe']
+R = [[a, '', b, ''] for a, b in zip(W1, W2)]
+w.table('eng12-u04-dict-ipa', ['Spelling', 'Phonetic Transcription', 'Spelling', 'Phonetic Transcription'], R, ['ہجے', 'صوتی نقل', 'ہجے', 'صوتی نقل'], ['املا', 'غږیز لیکدود', 'املا', 'غږیز لیکدود'], R, R)
+w.p('B. Complete these sentences with an opposite of the verb in BOLD. Use the words from the box. Make sure that you use the correct form of each verb. The first one has been done for you.', 'B. ان جملوں کو جلی (BOLD) فعل کے متضاد سے مکمل کریں۔ خانے میں دیے گئے الفاظ استعمال کریں۔ یقینی بنائیں کہ آپ ہر فعل کی درست شکل استعمال کریں۔ پہلا آپ کے لیے حل کر دیا گیا ہے۔', 'B. دا جملې په تکړه (BOLD) لیکل شوي فعل د ضد سره بشپړې کړئ. په بکس کې کلمې وکاروئ. ډاډ ترلاسه کړئ چې د هر فعل سمه بڼه کاروئ. لومړی یې تاسو ته حل شوی.')
+w.p('absent -borrow -bright -catch-defend -depart -deny -fail -fill -forbid -guilty -minor -permanent -public -punish -receive -save -set -voluntary -weak', 'absent -borrow -bright -catch-defend -depart -deny -fail -fill -forbid -guilty -minor -permanent -public -punish -receive -save -set -voluntary -weak', 'absent -borrow -bright -catch-defend -depart -deny -fail -fill -forbid -guilty -minor -permanent -public -punish -receive -save -set -voluntary -weak')
+w.paras[-1]['untranslatedByDesign'] = True
+B = '________'
+w.group('lines', [
+    ('1. Although we missed our train to the airport, we still managed to catch our plane.', '1. اگرچہ ہماری ایئرپورٹ جانے والی ٹرین چھوٹ گئی (missed)، پھر بھی ہم اپنا جہاز پکڑنے (catch) میں کامیاب ہو گئے۔', '1. که څه هم موږ هوايي ډګر ته د تګ اورګاډی له لاسه ورکړ (missed)، خو بیا هم مو خپله الوتکه ونیوله (catch).'),
+    (f"2. We didn't spend much money. In fact, we managed to {B} a lot of it.", f'2. ہم نے زیادہ پیسہ خرچ نہیں کیا (spend)۔ درحقیقت ہم اس کا بڑا حصہ {B} میں کامیاب رہے۔', f'2. موږ ډېرې پیسې ونه لګولې (spend). په حقیقت کې موږ یې ډېره برخه {B} وتوانېدو.'),
+    (f'3. The train arrives at the station at 4 and it {B} 10 minutes later.', f'3. ٹرین 4 بجے اسٹیشن پہنچتی ہے (arrives) اور 10 منٹ بعد {B}۔', f'3. اورګاډی په 4 بجو سټېشن ته رسېږي (arrives) او 10 دقیقې وروسته {B}.'),
+    (f'4. After he had emptied the bottle, he {B} it with water.', f'4. بوتل خالی کرنے (emptied) کے بعد اس نے اسے پانی سے {B}۔', f'4. وروسته له دې چې بوتل یې تش کړ (emptied)، هغه یې په اوبو {B}.'),
+    (f'5. "Can you lend me Rs.100?"-"No way! -The last time you {B} money from me, you never gave it back!"', f'5. ’’کیا تم مجھے 100 روپے ادھار دے سکتے ہو (lend)؟‘‘ — ’’ہرگز نہیں! پچھلی بار جب تم نے مجھ سے پیسے {B} تو کبھی واپس نہیں کیے!‘‘', f'5. "ایا ماته 100 روپۍ پور راکولی شې (lend)؟" — "هېڅکله نه! تېر ځل چې تا له ما پیسې {B}، هېڅکله دې بېرته رانه کړې!"'),
+    (f"6. The principal doesn't allow smoking at school. In fact, he {B} everything that is bad for our health.", f'6. پرنسپل اسکول میں تمباکو نوشی کی اجازت نہیں دیتے (allow)۔ درحقیقت وہ ہر اس چیز کو {B} ہیں جو ہماری صحت کے لیے بری ہو۔', f'6. پرنسپل په ښوونځي کې د سګرټ څکولو اجازه نه ورکوي (allow). په حقیقت کې هغه هر هغه شی {B} چې زموږ روغتیا ته بد دی.'),
+    (f'7. Did he confess to stealing your money? -No, he {B} everything.', f'7. کیا اس نے تمہارے پیسے چرانے کا اعتراف کیا (confess)؟ — نہیں، اس نے ہر چیز سے {B}۔', f'7. ایا هغه ستاسو د پیسو د غلا اعتراف وکړ (confess)؟ — نه، هغه له هر څه {B}.'),
+    (f"8. In summer, the sun rises at about 5 o'clock and doesn't {B} until after nine in the evening.", f'8. گرمیوں میں سورج تقریباً 5 بجے طلوع ہوتا ہے (rises) اور شام نو بجے کے بعد تک {B} نہیں۔', f'8. په اوړي کې لمر شاوخوا 5 بجې راختي (rises) او د ماښام تر نهو بجو وروسته پورې نه {B}.'),
+    (f'9. There are some things you can do in private that you should never do in {B}.', f'9. کچھ کام ایسے ہیں جو آپ نجی طور پر (private) کر سکتے ہیں لیکن انہیں کبھی {B} میں نہیں کرنا چاہیے۔', f'9. ځینې کارونه دي چې په شخصي ډول (private) یې کولی شئ خو هېڅکله یې باید په {B} کې ونه کړئ.'),
+    (f"10. He didn't pass his exam. In fact, he {B} with a very low score.", f'10. وہ امتحان میں پاس نہیں ہوا (pass)۔ درحقیقت وہ بہت کم نمبروں کے ساتھ {B}۔', f'10. هغه په ازموینه کې بریالی نه شو (pass). په حقیقت کې هغه په ډېرو ټیټو نمرو {B}.'),
+    (f'11. Our teacher rewarded all the good students but decided to {B} all the bad ones.', f'11. ہمارے استاد نے تمام اچھے طلبہ کو انعام دیا (rewarded) لیکن تمام برے طلبہ کو {B} کا فیصلہ کیا۔', f'11. زموږ ښوونکي ټولو ښو زده کوونکو ته انعام ورکړ (rewarded) خو پرېکړه یې وکړه چې ټول بد {B}.'),
+    (f"12. Although I sent the letter on Monday, she didn't {B} it until Friday.", f'12. اگرچہ میں نے خط پیر کو بھیجا (sent)، اسے جمعہ تک {B} نہیں۔', f'12. که څه هم ما لیک د دوشنبې په ورځ ولېږه (sent)، هغې تر جمعې پورې {B}.'),
+    (f'13. At the end of the long, dim tunnel we could see a {B} shining light.', f'13. لمبی، دھندلی (dim) سرنگ کے آخر میں ہمیں ایک {B} چمکتی روشنی نظر آئی۔', f'13. د اوږدې، تیارې (dim) تونل په پای کې موږ یوه {B} ځلېدونکې رڼا ولیده.'),
+    (f'14. If you are attacked on the street, there are several ways you can {B} yourself.', f'14. اگر سڑک پر آپ پر حملہ ہو (attacked) تو کئی طریقے ہیں جن سے آپ اپنا {B} کر سکتے ہیں۔', f'14. که په سړک تاسو باندې برید وشي (attacked)، ګڼې لارې شته چې ځان {B}.'),
+    (f'15. It was only a temporary job until I could find something more {B}.', f'15. یہ صرف ایک عارضی (temporary) ملازمت تھی جب تک مجھے کوئی زیادہ {B} چیز نہ مل جاتی۔', f'15. دا یوازې لنډمهاله (temporary) دنده وه تر هغه چې یو ډېر {B} شی ومومم.'),
+    (f'16. The thief said he was innocent, but the judge decided he was {B}.', f'16. چور نے کہا کہ وہ بے قصور (innocent) ہے، لیکن جج نے فیصلہ کیا کہ وہ {B} ہے۔', f'16. غله وویل چې بې‌ګناه (innocent) دی، خو قاضي پرېکړه وکړه چې هغه {B} دی.'),
+])
+rec = BOOK.record(w, 'eng12-u04-exercises-a', 'Writing Suggestions; Oral Communication; Vocabulary A–B (1)', 'تحریری تجاویز؛ زبانی ابلاغ؛ ذخیرۂ الفاظ A–B (1)', 'د لیکلو وړاندیزونه؛ د خولې اړیکه؛ لغات A–B (1)', 26, [39, 40])
+issues = [{'id': 'eng12-p39-40', 'unit': 4, 'printedPage': 39, 'description': 'Writing Suggestions prints “White a composition” (Write). In exercise B the key verbs are printed in bold; the app shows them as plain text (the bold verb is repeated in brackets in the Urdu/Pashto views).'}]
+
+if __name__ == '__main__':
+    BOOK.save(26, [(4, rec)], issues=issues)

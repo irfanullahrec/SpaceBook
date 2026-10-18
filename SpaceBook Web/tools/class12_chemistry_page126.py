@@ -1,0 +1,41 @@
+"""PDF126 printed244–245: Unit 19 Key Points; Exercise MCQs 1–9."""
+from class12_chemistry_opening import pair,section,SOURCE
+from class12_chemistry_sync import save
+def builder():
+ P=[];L=[]
+ def add(e,u,p,kind='paragraph'):L.append({'type':kind,'indices':[len(P)]});P.append(pair(e,u,p))
+ def lines(rows,kind='lines'):
+  s0=len(P)
+  for r in rows:P.append(pair(*r))
+  L.append({'type':kind,'indices':list(range(s0,len(P)))})
+ return P,L,add,lines
+P,L,add,lines=builder()
+add('Key Points','اہم نکات','مهم ټکي','heading')
+lines([('Aldehydes and ketones are two different classes of organic compounds containing carbonyl functional group.','الڈیہائیڈز اور کیٹونز کاربونل فعلی گروپ رکھنے والے نامیاتی مرکبات کی دو مختلف جماعتیں ہیں۔','الدیهایډونه او کیټونونه د کاربونیل فعال ګروپ لرونکو عضوي مرکباتو دوه بېل ټولګي دي.'),
+ ('Oxidation of primary alcohols gives aldehydes and that of secondary alcohol gives ketones.','ابتدائی الکوحلز کی تکسید الڈیہائیڈز اور ثانوی الکوحل کی تکسید کیٹونز دیتی ہے۔','د لومړنیو الکولونو اکسیډېشن الدیهایډونه او د دویمي الکول اکسیډېشن کیټونونه ورکوي.'),
+ ('The carbon-oxygen bond in aldehydes and ketones is highly polar and hence they are very reactive compounds.','الڈیہائیڈز اور کیٹونز میں کاربن–آکسیجن بند انتہائی قطبی ہے اور اس لیے یہ بہت تعامل پذیر مرکبات ہیں۔','په الدیهایډونو او کیټونونو کې د کاربن–اکسیجن تړون ډېر قطبي دی او له همدې امله ډېر تعامل کوونکي مرکبات دي.'),
+ ('Both aldehydes and ketones undergo nucleophilic addition reactions.','الڈیہائیڈز اور کیٹونز دونوں نیوکلیوفائلی اضافی تعاملات کرتے ہیں۔','الدیهایډونه او کیټونونه دواړه نیوکلیوفایلي اضافي تعاملونه کوي.'),
+ ('Generally, ketones are somewhat less reactive than aldehydes towards nucleophiles.','عموماً نیوکلیوفائلز کے لیے کیٹونز الڈیہائیڈز سے کچھ کم تعامل پذیر ہیں۔','عموماً د نیوکلیوفایلونو په وړاندې کیټونونه له الدیهایډونو یو څه لږ تعامل کوونکي دي.'),
+ ('Lower aldehydes and ketones are water soluble.','کم کاربن والے الڈیہائیڈز اور کیٹونز پانی میں حل پذیر ہیں۔','ټیټ الدیهایډونه او کیټونونه په اوبو کې حلېږي.'),
+ ('Aldehydes are oxidized to alcohols in the presence of oxidizing agents like acidified dichromate and permanganate, as well a mild oxidising agent.','الڈیہائیڈز تیزابی ڈائی کرومیٹ اور پرمینگنیٹ جیسے تکسیدی عاملوں کے ساتھ ساتھ ہلکے تکسیدی عامل کی موجودگی میں الکوحلز میں تکسید ہوتے ہیں۔','الدیهایډونه د اسیدي ډای کرومېټ او پرمنګنېټ په څېر اکسیډایز کوونکو عاملونو او همدارنګه د نرم اکسیډایز کوونکي عامل په شتون کې الکولونو ته اکسیډایز کېږي.'),
+ ('Ketones are quit resistant to oxidation and can only be oxidised by strong oxidizing agents in drastic conditions.','کیٹونز تکسید کے خلاف کافی مزاحم ہیں اور صرف سخت شرائط میں طاقتور تکسیدی عاملوں سے تکسید ہو سکتے ہیں۔','کیټونونه د اکسیډېشن په وړاندې کافي مقاوم دي او یوازې په سختو شرایطو کې د قوي اکسیډایز کوونکو عاملونو په واسطه اکسیډایز کېدای شي.'),
+ ('Aldehydes form silver mirror with Tollen’s reagent and gives red precipitates with Fehling’s and Benedict’s solution on heating. Whereas, ketones do not undergo these reactions.','الڈیہائیڈز ٹولن عامل سے چاندی کا آئینہ بناتے ہیں اور گرم کرنے پر فہلنگ اور بینیڈکٹ محلول سے سرخ رسوب دیتے ہیں۔ جبکہ کیٹونز یہ تعاملات نہیں کرتے۔','الدیهایډونه له ټولن عامل سره د سپینو زرو هینداره جوړوي او د تودولو پر مهال له فهلینګ او بېنېډکټ محلول سره سور رسوب ورکوي. خو کیټونونه دا تعاملونه نه کوي.')],'list')
+r10=section('19.10','Unit 19 Key Points','یونٹ 19 اہم نکات','د 19 واحد مهم ټکي',P,L,[],'244')
+r10['sourceReferences']=[{'sourcePdf':SOURCE,'pdfPage':126,'printedPages':[244]}]
+P,L,add,lines=builder()
+add('Exercise','مشق','تمرین','heading')
+add('Q I. Choose the correct one from the given options.','سوال I. دیے گئے اختیارات میں سے درست کا انتخاب کریں۔','پوښتنه I. له ورکړل شویو انتخابونو څخه سم یې وټاکئ.','heading')
+M=[('1. The carbon of the carbonyl group is','1. کاربونل گروپ کا کاربن ہے','1. د کاربونیل ګروپ کاربن دی','a. sp³–hybridized.   b. sp²–hybridized.   c. sp–hybridized.   d. dsp²–hybridized.','a. sp³–ہائبرڈ۔   b. sp²–ہائبرڈ۔   c. sp–ہائبرڈ۔   d. dsp²–ہائبرڈ۔','a. sp³–هایبرېډ.   b. sp²–هایبرېډ.   c. sp–هایبرېډ.   d. dsp²–هایبرېډ.'),
+ ('2. The reduction of carbonyl to methylene is carried out with','2. کاربونل کی میتھیلین تک تخفیف کی جاتی ہے','2. د کاربونیل میتیلین ته ارجاع ترسره کېږي له','a. catalytic reduction   b. Metal hydride   c. Clemmensen method   d. Lindlar’s catalyst','a. عمل انگیز تخفیف   b. دھاتی ہائیڈرائیڈ   c. کلیمنسن طریقہ   d. لنڈلار کا عمل انگیز','a. کتلستي ارجاع   b. فلزي هایدراید   c. د کلیمنسن طریقه   d. د لینډلار کتلست'),
+ ('3. Formaldehyde gives an addition product with methyl magnesium iodide which on hydrolysis gives','3. فارم الڈیہائیڈ میتھائل میگنیشیم آئیوڈائیڈ سے اضافی پیداوار دیتا ہے جو ہائیڈرولائسز پر دیتی ہے','3. فورمالدیهاید له میتایل مګنیزیم ایوډایډ سره اضافي محصول ورکوي چې د هایدرولیز پر مهال ورکوي','a. n–propyl alcohol.   b. isopropyl alcohol.   c. methyl alcohol.   d. ethyl alcohol.','a. n–پروپائل الکوحل۔   b. آئسوپروپائل الکوحل۔   c. میتھائل الکوحل۔   d. ایتھائل الکوحل۔','a. n–پروپیل الکول.   b. ایزوپروپیل الکول.   c. میتایل الکول.   d. ایتیل الکول.'),
+ ('4. Which of the following compounds can react with ammoniacal silver nitrate solution to form silver mirror?','4. درج ذیل میں سے کون سا مرکب امونیائی سلور نائٹریٹ محلول سے تعامل کر کے چاندی کا آئینہ بنا سکتا ہے؟','4. له لاندې مرکباتو څخه کوم یو له امونیایي سلور نایټرېټ محلول سره تعامل کولی او د سپینو زرو هینداره جوړولی شي؟','a. Acetone   b. Ethanol   c. Dimethyl ether   d. Ethanal','a. ایسیٹون   b. ایتھانول   c. ڈائی میتھائل ایتھر   d. ایتھانل','a. اسیتون   b. ایتانول   c. ډای میتایل ایتر   d. ایتانال'),
+ ('5. Which of the following compounds will form a precipitate of cupric oxide from Fehling’s reagent but does not react with sodium metal?','5. درج ذیل میں سے کون سا مرکب فہلنگ عامل سے کیوپرک آکسائیڈ کا رسوب بنائے گا مگر سوڈیم دھات سے تعامل نہیں کرتا؟','5. له لاندې مرکباتو څخه کوم یو د فهلینګ له عامل څخه د کیوپریک اکساید رسوب جوړوي خو له سوډیم فلز سره تعامل نه کوي؟','a. C₂H₅OH   b. C₂H₅CHO   c. CH₃CH(OH)CH₃   d. CH₃COCH₃','a. C₂H₅OH   b. C₂H₅CHO   c. CH₃CH(OH)CH₃   d. CH₃COCH₃','a. C₂H₅OH   b. C₂H₅CHO   c. CH₃CH(OH)CH₃   d. CH₃COCH₃'),
+ ('6. IUPAC name of acetone is','6. ایسیٹون کا IUPAC نام ہے','6. د اسیتون IUPAC نوم دی','a. ethanone.   b. propanone.   c. ethanal.   d. ethanoic acid.','a. ایتھانون۔   b. پروپانون۔   c. ایتھانل۔   d. ایتھانوئک ایسڈ۔','a. ایتانون.   b. پروپانون.   c. ایتانال.   d. ایتانویک اسید.'),
+ ('7. Formalin is','7. فارملین ہے','7. فورمالین دی','a. 10% aq. solution of formaldehyde.   b. 20% aq. solution of formaldehyde.   c. 40% aq. solution of formaldehyde.   d. 5% aq. solution of formaldehyde.','a. فارم الڈیہائیڈ کا 10% آبی محلول۔   b. فارم الڈیہائیڈ کا 20% آبی محلول۔   c. فارم الڈیہائیڈ کا 40% آبی محلول۔   d. فارم الڈیہائیڈ کا 5% آبی محلول۔','a. د فورمالدیهاید 10% اوبلن محلول.   b. د فورمالدیهاید 20% اوبلن محلول.   c. د فورمالدیهاید 40% اوبلن محلول.   d. د فورمالدیهاید 5% اوبلن محلول.'),
+ ('8. An alkene upon ozonolysis gives only one type of aldehyde in product. Identify that alkene.','8. ایک الکین اوزونولائسز پر پیداوار میں صرف ایک قسم کا الڈیہائیڈ دیتا ہے۔ اس الکین کو پہچانیں۔','8. یو الکین د اوزونولایسس پر مهال په محصول کې یوازې یو ډول الدیهاید ورکوي. هغه الکین وپېژنئ.','a. but–1–ene   b. propene   c. but–2–ene   d. 2,3–dimethylbut–2–ene','a. بیوٹ–1–این   b. پروپین   c. بیوٹ–2–این   d. 2،3–ڈائی میتھائل بیوٹ–2–این','a. بیوټ–1–ین   b. پروپین   c. بیوټ–2–ین   d. 2،3–ډای میتایل بیوټ–2–ین'),
+ ('9. Which of the following alkyne would not yield a ketone upon hydration?','9. درج ذیل میں سے کون سا الکائن ہائیڈریشن پر کیٹون نہیں دے گا؟','9. له لاندې الکاینونو څخه کوم یو د هایدرېشن پر مهال کیټون نه ورکوي؟','a. acetylene   b. propyne   c. but–1–yne   d. but–2–yne','a. ایسیٹیلین   b. پروپائن   c. بیوٹ–1–ائن   d. بیوٹ–2–ائن','a. اسیتیلین   b. پروپاین   c. بیوټ–1–این   d. بیوټ–2–این')]
+for q in M:lines([q[:3],q[3:]])
+r11=section('19.11','Unit 19 exercise: MCQs 1–9','یونٹ 19 مشق: کثیر انتخابی 1–9','د 19 واحد تمرین: څو انتخابي 1–9',P,L,[],'245')
+r11['sourceReferences']=[{'sourcePdf':SOURCE,'pdfPage':126,'printedPages':[245]}]
+issues=[{'id':'chem12-p244-keypoint-oxidation','printedPage':244,'description':'Key Point printed "Aldehydes are oxidized to alcohols" (carboxylic acids intended) and "quit" retained as printed.'}]
+if __name__=='__main__':save(126,[r10,r11],issues=issues,chapter_number=19)

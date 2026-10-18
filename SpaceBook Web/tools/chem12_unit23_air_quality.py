@@ -1,0 +1,23 @@
+"""Air pollutants, catalytic converters, smog and climate (Unit 23)."""
+import json
+from pathlib import Path
+from PIL import Image
+ROOT=Path(__file__).resolve().parents[1]
+SOURCE=ROOT.parent/'Books/12th/12th Chemistry/JPG'
+section={'id':'23.source.339-342','title':'Air quality, smog and global warming (printed pp.339–342)',
+'theory':'''Air pollutants and ozone (printed p.339): The text discusses SO₂, NOₓ and VOCs, their sources and roles in acid rain, ground-level ozone and smog. It distinguishes harmful tropospheric ozone from protective stratospheric ozone and describes CFC emissions from refrigeration and aerosols as a threat to the ozone layer.
+
+Three-way catalytic converter (printed p.340): Vehicle exhaust can contain CO, NO and hydrocarbons. A three-way converter uses reduction and oxidation catalysts to convert NOₓ to nitrogen and oxygen, and CO/hydrocarbons to carbon dioxide and water. The source identifies platinum/rhodium and platinum/palladium catalyst combinations and gives example reactions.
+
+Industrial and photochemical smog (printed pp.341–342): Industrial smog forms around coal combustion and industrial fumes; sulfur oxides can form sulfuric acid droplets and soot adds persistent dark particles. Photochemical smog forms when NOₓ and organic compounds react in sunlight, producing ozone and PAN. The source notes that PAN irritates eyes and lungs. Global warming is described as a rise in Earth’s average atmospheric and ocean temperature as greenhouse gases absorb outgoing infrared energy and return heat toward the surface. Listed greenhouse gases include CO₂, CH₄, SO₂, N₂O and O₃.''',
+'theoryUrdu':'فضائی آلودگی اور اوزون (صفحہ 339): متن SO₂، NOₓ اور VOCs کے ذرائع اور تیزابی بارش، زمینی اوزون اور دھند میں کردار بیان کرتا ہے۔ سطح زمین کے قریب نقصان دہ ٹروپوسفیرک اوزون کو حفاظتی اسٹریٹوسفیرک اوزون سے الگ کرتا ہے اور فریج و ایروسول سے نکلنے والے CFCs کو اوزون تہہ کے لیے خطرہ بتاتا ہے۔\n\nتین مرحلوں والا کیٹالیٹک کنورٹر (صفحہ 340): گاڑیوں کے اخراج میں CO، NO اور ہائیڈروکاربن ہو سکتے ہیں۔ کنورٹر NOₓ کو نائٹروجن و آکسیجن اور CO/ہائیڈروکاربن کو CO₂ و پانی میں بدلتا ہے۔ متن پلاٹینم/روڈیم اور پلاٹینم/پیلاڈیم کے عاملِ مساعد بتاتا ہے۔\n\nصنعتی اور فوٹو کیمیائی دھند (صفحہ 341–342): کوئلہ جلنے اور صنعتی دھوئیں سے صنعتی دھند بنتی ہے؛ سلفر آکسائیڈ سلفیورک ایسڈ کے قطرے بناتے ہیں اور کاجل سیاہ ذرات بڑھاتا ہے۔ سورج کی روشنی میں NOₓ اور نامیاتی مادوں کے تعامل سے فوٹو کیمیائی دھند، اوزون اور PAN بنتے ہیں؛ PAN آنکھوں اور پھیپھڑوں میں جلن کرتا ہے۔ عالمی حدت کو فضا اور سمندروں کے اوسط درجۂ حرارت میں اضافہ کہا گیا ہے، جب گرین ہاؤس گیسیں خارج ہونے والی زیریں سرخ توانائی جذب اور واپس حرارت کی صورت بھیجتی ہیں۔',
+'theoryPashto':'د هوا ککړونکي او اوزون (339 مخ): متن د SO₂، NOₓ او VOCs سرچینې او په تېزابي باران، ځمکنۍ اوزون او لوګي کې رول بیانوي. د ځمکې د سطحې زیانمن ټروپوسفيري اوزون د ساتونکي سټراټوسفيري اوزون څخه بېلوي او د یخچالونو او ایرسولونو CFCs د اوزون پوښ ګواښ بولي.\n\nدرې‌لاره کټالیټیک بدلوونکی (340 مخ): د موټرو په لوګي کې CO، NO او هایدروکاربنونه وي. بدلوونکی NOₓ په نایتروجن او اکسیجن او CO/هایدروکاربنونه په CO₂ او اوبو بدلوي. متن د پلاتین/روډیم او پلاتین/پالادیم کتلستونه یادوي.\n\nصنعتي او فوتوکیمیاوي لوګی (341–342 مخونه): صنعتي لوګی د سکرو سوځېدو او صنعتي لوګي له امله جوړېږي؛ د سلفر اکسایدونه د سلفوریک اسید څاڅکي او کاربن تورې ذرې جوړوي. د لمر په رڼا کې د NOₓ او عضوي موادو تعامل فوتوکیمیاوي لوګی، اوزون او PAN جوړوي؛ PAN سترګې او سږي پاروي. نړیواله تودوخه د ځمکې د اتموسفیر او سمندرونو د منځنۍ تودوخې زیاتوالی دی، چې د شنوخونو ګازونه وتونکې انفرارېډ انرژي جذبوي او تودوخه بېرته سطحې ته اړوي.',
+'sourceReferences':[{'printedPage':339,'jpg':'170_page_2.jpg','status':'source transcribed'},{'printedPage':340,'jpg':'171_page_1.jpg','status':'source transcribed'},{'printedPage':341,'jpg':'171_page_2.jpg','status':'source transcribed'},{'printedPage':342,'jpg':'172_page_1.jpg','status':'source transcribed'}],
+'translationStatus':'Urdu/Pashto lesson summaries supplied; manual review pending'}
+asset=ROOT/'assets/chem12/three-way-catalytic-converter.jpg'
+asset.parent.mkdir(parents=True,exist_ok=True)
+if not asset.exists():Image.open(SOURCE/'171_page_2.jpg').crop((40,10,541,199)).save(asset)
+section['diagramSvg']='<figure><img src="assets/chem12/three-way-catalytic-converter.jpg" alt="Three-way catalytic converter diagram" style="max-width:100%;height:auto"><figcaption>Three-way catalytic converter (printed p.341)</figcaption></figure>'
+target=ROOT/'js/chem_12_data.js'
+with target.open('a',encoding='utf-8',newline='\n') as f:f.write('\n// Unit 23 scan-led continuation: printed pp.339–342.\nCHEM_12_DATA[10].sections.push('+json.dumps(section,ensure_ascii=False)+' );\n')
+print('Added Unit 23 source reading through printed page 342.')

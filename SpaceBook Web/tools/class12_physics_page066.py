@@ -1,0 +1,51 @@
+"""Sequential source correction for PDF page 66 of Class 12 Physics."""
+import json
+from html import escape
+from class12_source_review import ROOT,upsert,section,checkpoint,sync_companions,shared_class_data_lock
+SOURCE=r"Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+def pair(en,ur,ps):return en,ur,ps
+def ref(p):return {"pdfPage":66,"printedPage":p,"sourcePdf":SOURCE}
+def svg(body,label):return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" role="img" aria-label="{escape(label,quote=True)}" style="width:100%;max-width:520px;height:auto"><rect width="100%" height="100%" fill="#fff"/>{body}</svg>'
+DIGITAL=[
+ pair("The amount of deflection in the galvanometer now shows the resistance directly. The ohm-meter reading does not depend on the polarity of the terminal leads, because the direction of current through the galvanometer is determined by the polarity of the battery.","گیلوانومیٹر میں انحراف کی مقدار اب مزاحمت براہ راست دکھاتی ہے۔ اوہم میٹر کی قرأت ٹرمینل لیڈز کی قطبیت پر منحصر نہیں، کیونکہ گیلوانومیٹر میں رو کی سمت بیٹری کی قطبیت طے کرتی ہے۔","په ګالوانومیټر کې د انحراف اندازه اوس مقاومت مستقیم ښيي. د اوهم‌مېټر لوست د ترمینل لېډونو پر قطبیت پورې تړلی نه دی، ځکه د ګالوانومیټر د جریان لوری د بیټرۍ قطبیت ټاکي."),
+ pair("I. DIGITAL MULTI-METERS","I۔ ڈیجیٹل ملٹی میٹر","I. ډیجیټل څو-مېټرونه"),
+ pair("Modern multimeters have a digital display, are accurate, reliable and durable, and have added extra features. They are easy to use because values are displayed automatically in decimal form with proper units. Thus human errors (such as parallax) in reading an ordinary AVO meter are eliminated.","جدید ملٹی میٹروں میں ڈیجیٹل ڈسپلے ہوتا ہے؛ یہ درست، قابل اعتماد اور پائیدار ہیں اور اضافی خصوصیات بھی رکھتے ہیں۔ یہ استعمال میں آسان ہیں کیونکہ قدریں مناسب اکائیوں کے ساتھ اعشاری صورت میں خودکار دکھائی جاتی ہیں۔ یوں عام AVO میٹر پڑھنے کی انسانی غلطیاں (مثلاً اختلافِ منظر) ختم ہو جاتی ہیں۔","اوسني څو-مېټرونه ډیجیټل ښودن لري، کره، باوري او دوامدار دي او اضافي ځانګړنې هم لري. کارول یې اسانه دي، ځکه ارزښتونه له مناسبو واحدونو سره په اعشاري بڼه په خپله ښودل کېږي. په دې توګه د عادي AVO مېټر د لوستلو انساني تېروتنې (لکه پارالاکس) له منځه ځي."),
+ pair("In these devices, an integrated circuit electronically controls all functions instead of an ordinary galvanometer. Modern digital multimeters use computer software, which provides other functions as well and increases the scope of multimeter use.","ان آلات میں عام گیلوانومیٹر کے بجائے ایک انٹیگریٹڈ سرکٹ تمام افعال کو برقی طور پر کنٹرول کرتا ہے۔ جدید ڈیجیٹل ملٹی میٹر کمپیوٹر سافٹ ویئر بھی استعمال کرتے ہیں، جو اضافی افعال دیتا ہے اور ملٹی میٹر کے استعمال کا دائرہ بڑھاتا ہے۔","په دې وسایلو کې د عادي ګالوانومیټر پر ځای یو مدغم سرکټ ټولې دندې په برېښنايي ډول کنټرولوي. اوسني ډیجیټل څو-مېټرونه کمپیوټري سافټویر هم کاروي، چې نورې دندې برابروي او د څو-مېټر د کارونې ساحه پراخوي."),
+ pair("FIGURE 13.32 — Digital multimeter.","شکل 13.32 — ڈیجیٹل ملٹی میٹر۔","13.32 شکل — ډیجیټل څو-مېټر."),
+]
+KEYS=[
+ pair("KEY POINTS","اہم نکات","مهم ټکي"),
+ pair("Force on a current-carrying conductor in a magnetic field: A current-carrying wire has a magnetic field around it. When this field interacts with an external magnetic field, a force acts on the wire, given by F = I L × B.","مقناطیسی میدان میں کرنٹ بردار موصل پر قوت: کرنٹ بردار تار کے گرد مقناطیسی میدان ہوتا ہے۔ جب یہ میدان بیرونی مقناطیسی میدان سے تعامل کرتا ہے تو تار پر قوت لگتی ہے، F = I L × B۔","په مقناطیسي ساحه کې پر جریان‌لرونکي هادي قوه: د جریان‌لرونکي سیم شاوخوا مقناطیسي ساحه وي. کله چې دا ساحه له باندنۍ مقناطیسي ساحې سره تعامل وکړي، پر سیم قوه لګېږي: F = I L × B."),
+ pair("Magnetic flux: The scalar product of magnetic induction vector B and area ΔA; mathematically ΔΦ_B = B⃗ · ΔA⃗ = B ΔA cos θ.","مقناطیسی فلوکس: مقناطیسی القا کے سمتیہ B اور رقبے ΔA کا عددی حاصلِ ضرب؛ ریاضیاتی طور پر ΔΦ_B = B⃗ · ΔA⃗ = B ΔA cos θ۔","مقناطیسي فلوکس: د مقناطیسي القا ویکتور B او مساحت ΔA عددي ضرب؛ په ریاضي ډول ΔΦ_B = B⃗ · ΔA⃗ = B ΔA cos θ."),
+ pair("Ampere’s Law: This law relates the integrated magnetic field in a loop around a current-carrying wire to the current passing through the wire: ∑ B⃗ · Δl⃗ = μ₀ I.","ایمپئر کا قانون: یہ قانون کرنٹ بردار تار کے گرد حلقے میں مقناطیسی میدان کے تکمل کو تار سے گزرنے والی رو سے مربوط کرتا ہے: ∑ B⃗ · Δl⃗ = μ₀ I۔","د امپیر قانون: دا قانون د جریان‌لرونکي سیم په شاوخوا کړۍ کې انتګرالي مقناطیسي ساحه په سیم کې له تېرېدونکي جریان سره تړي: ∑ B⃗ · Δl⃗ = μ₀ I."),
+ pair("The magnetic field of a solenoid: B = μ₀ n I.","سولینائڈ کا مقناطیسی میدان: B = μ₀ n I۔","د سولینویډ مقناطیسي ساحه: B = μ₀ n I."),
+ pair("Force on a charged particle in a magnetic field: The force on a charged particle results from interaction between the external magnetic field and the magnetic field created by the moving charge.","مقناطیسی میدان میں بار دار ذرہ پر قوت: بار دار ذرے پر قوت بیرونی مقناطیسی میدان اور متحرک بار سے پیدا ہونے والے مقناطیسی میدان کے تعامل سے پیدا ہوتی ہے۔","په مقناطیسي ساحه کې پر چارج لرونکې ذرې قوه: د ذرې قوه د باندنۍ مقناطیسي ساحې او د خوځنده چارج له خوا د جوړې شوې مقناطیسي ساحې د تعامل پایله ده."),
+ pair("Velocity selector: A device that allows only particles with a certain specific speed to pass through it (thus permitting particles only with selected speeds).","رفتار منتخب کرنے والا آلہ: ایسا آلہ جو صرف مخصوص رفتار والے ذرات کو اپنے اندر سے گزرنے دیتا ہے (یعنی صرف منتخب رفتار والے ذرات)۔","د سرعت ټاکونکی: هغه آله چې یوازې د ټاکلي سرعت ذرات پرې تېرېږي (یعنې یوازې ټاکل شوي سرعتونه پرېږدي)."),
+ pair("Torque on a current-carrying coil in a magnetic field: τ = NIAB sin θ.","مقناطیسی میدان میں کرنٹ بردار کوائل پر ٹارک: τ = NIAB sin θ۔","په مقناطیسي ساحه کې پر جریان‌لرونکي کویل تورک: τ = NIAB sin θ."),
+ pair("Galvanometer: A device used for detection and measurement of small electric currents.","گیلوانومیٹر: چھوٹی برقی رو کی شناخت اور پیمائش کے لیے استعمال ہونے والا آلہ۔","ګالوانومیټر: هغه آله چې د کوچنیو برېښنايي جریانونو د پېژندلو او اندازه کولو لپاره کارېږي."),
+ pair("Shunt resistance: The low resistance connected in parallel with a galvanometer, mathematically R_s = I_gR_g/(I − I_g).","شنٹ مزاحمت: گیلوانومیٹر کے متوازی جڑی ہوئی کم مزاحمت؛ ریاضیاتی طور پر R_s = I_gR_g/(I − I_g)۔","شنټ مقاومت: ټیټ مقاومت چې له ګالوانومیټر سره موازي نښلول کېږي؛ په ریاضي ډول R_s = I_gR_g/(I − I_g)."),
+ pair("High resistance: The high-value resistance connected in series with a galvanometer, mathematically R_h = V/I_g − R_g.","زیادہ مزاحمت: گیلوانومیٹر کے ساتھ سلسلہ وار جڑی بڑی مزاحمت؛ ریاضیاتی طور پر R_h = V/I_g − R_g۔","لوړ مقاومت: لوړ ارزښت مقاومت چې له ګالوانومیټر سره په لړۍ نښلول کېږي؛ په ریاضي ډول R_h = V/I_g − R_g."),
+ pair("AVO meter: A single device that can measure current, voltage and resistance.","AVO میٹر: ایک ایسا آلہ جو رو، وولٹیج اور مزاحمت ناپ سکتا ہے۔","AVO مېټر: یوه وسیله چې جریان، ولتاژ او مقاومت اندازه کولای شي."),
+]
+def meter_svg(lang):
+ lab={"en":("Digital multimeter","Display","Range selector","Leads"),"ur":("ڈیجیٹل ملٹی میٹر","ڈسپلے","حد کا سوئچ","لیڈز"),"ps":("ډیجیټل څو-مېټر","ښودن","د حد سویچ","لېډونه")}[lang]
+ b='<rect x="115" y="25" width="300" height="350" rx="28" fill="#dc2626" stroke="#7f1d1d" stroke-width="8"/><rect x="155" y="55" width="220" height="82" rx="8" fill="#d1fae5" stroke="#166534" stroke-width="4"/><text x="175" y="110" font-size="40" fill="#111827">018.8</text><circle cx="265" cy="235" r="80" fill="#111827" stroke="#64748b" stroke-width="8"/><circle cx="265" cy="235" r="12" fill="#dc2626"/><path d="M265 235L316 190" stroke="#f8fafc" stroke-width="7"/><circle cx="200" cy="335" r="12" fill="#111827"/><circle cx="330" cy="335" r="12" fill="#111827"/><path d="M200 335C150 385 420 390 385 320M330 335C400 395 430 370 450 320" fill="none" stroke="#111827" stroke-width="5"/><text x="23" y="75">'+lab[1]+'</text><text x="365" y="250">'+lab[2]+'</text><text x="30" y="355">'+lab[3]+'</text>'
+ return svg(b,"Coded vector digital multimeter with display, selector and leads.")
+def make(identity,title,pairs,layout,titles,diagram=None,printed=120):
+ r={"id":identity,"title":title,"kind":"lesson","pdfPage":66,"printedPage":printed,"sourcePdf":SOURCE,"paragraphs":[p[0] for p in pairs]};s=section(r,pairs,layout,titles);s["kind"]="lesson";s["sourceReferences"]=[ref(printed)]
+ if diagram:s.update(diagram);s["content"]+=diagram["diagramSvg"]
+ return r,s
+if __name__=="__main__":
+ d=make("phys13-digital-multimeter-and-figure1332-120","Digital multimeters and Figure 13.32",DIGITAL,[{"type":"paragraph","indices":[0]},{"type":"heading","indices":[1]},{"type":"paragraph","indices":[2]},{"type":"paragraph","indices":[3]},{"type":"visual","indices":[4]}],("ډیجیټل څو-مېټرونه او 13.32 شکل","Digital multi-meters and Figure 13.32"),{"diagramSvg":meter_svg("en"),"diagramSvgUrdu":meter_svg("ur"),"diagramSvgPashto":meter_svg("ps")})
+ k=make("phys13-unit13-key-points-121","Unit 13 key points",KEYS,[{"type":"heading","indices":[0]}]+[{"type":"paragraph","indices":[i]} for i in range(1,len(KEYS))],("یونٹ 13 کے اہم نکات","د 13 یونټ مهم ټکي"),printed=121)
+ rec=[d[0],k[0]];secs=[d[1],k[1]]
+ with shared_class_data_lock():
+  upsert(rec,secs,chapter_index=2)
+  companions=ROOT/"docs/source-verification/class-12/physics-companions-unit13.json"
+  companion_data=json.loads(companions.read_text(encoding="utf-8"))
+  companion_data["trimSections"]=[x for x in companion_data.get("trimSections",[]) if x.get("id")!="13.12"]
+  companions.write_text(json.dumps(companion_data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+  sync_companions(chapter_index=2,retire_sections=["13.12","13.13"])
+ progress=json.loads((ROOT/"docs/source-verification/class-12/progress.json").read_text(encoding="utf-8"))
+ if progress["nextPage"]==66:
+  checkpoint(66,"corrected_verified",[x["id"] for x in rec],"Rendered and inspected PDF page 66, printed pages 120–121. Compared ohm-meter polarity/deflection text, digital-multimeter properties and integrated-circuit/software description, Figure 13.32, and all eleven printed Unit 13 key points with equations and definitions. Rebuilt the digital multimeter as coded SVG and aligned the text across English, Urdu and Pashto. The next source boundary is the “Exercise” heading on PDF page 67, printed page 122; exercise content remains unchecked.",printed_pages=[120,121],chapter_number=13)

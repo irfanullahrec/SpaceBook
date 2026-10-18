@@ -1,0 +1,41 @@
+"""Sequential source correction for PDF page 68, Class 12 Physics."""
+import json
+from class12_source_review import ROOT,upsert,section,checkpoint,sync_companions,shared_class_data_lock
+SOURCE=r"Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+def p(e,u,s):return e,u,s
+def ref(n):return {"pdfPage":68,"printedPage":n,"sourcePdf":SOURCE}
+COMP=[
+p("1. Derive an expression for the force acting on a current-carrying conductor in a uniform magnetic field.","1۔ یکساں مقناطیسی میدان میں کرنٹ بردار موصل پر لگنے والی قوت کا اظہار اخذ کریں۔","1. په یوشان مقناطیسي ساحه کې پر جریان‌لرونکي هادي د قوې معادله ترلاسه کړئ."),
+p("2. A current-carrying loop is placed in a uniform magnetic field. Derive an equation for the torque acting on it.","2۔ کرنٹ بردار حلقہ یکساں مقناطیسی میدان میں رکھا ہے۔ اس پر لگنے والے ٹارک کی مساوات اخذ کریں۔","2. جریان‌لرونکې کړۍ په یوشان مقناطیسي ساحه کې اېښودل شوې. پر هغې د تورک معادله ترلاسه کړئ."),
+p("3. Does a moving charge experience a force in a magnetic field? Explain.","3۔ کیا حرکت کرتا ہوا بار مقناطیسی میدان میں قوت محسوس کرتا ہے؟ وضاحت کریں۔","3. ایا خوځنده چارج په مقناطیسي ساحه کې قوه تجربه کوي؟ تشریح یې کړئ."),
+p("4. How is the charge-to-mass ratio for an electron determined using a magnetic field?","4۔ مقناطیسی میدان استعمال کرتے ہوئے الیکٹران کا بار بہ کمیت تناسب کیسے معلوم کیا جاتا ہے؟","4. د مقناطیسي ساحې په کارولو د الکترون د چارج او کتلې نسبت څنګه معلومېږي؟"),
+p("5. Define and explain magnetic flux.","5۔ مقناطیسی فلوکس کی تعریف کریں اور وضاحت کریں۔","5. مقناطیسي فلوکس تعریف او تشریح کړئ."),
+p("6. State Ampere’s law and use it to derive an expression for the magnetic field of a solenoid.","6۔ ایمپیئر کا قانون بیان کریں اور اس سے سولینائڈ کے مقناطیسی میدان کا اظہار اخذ کریں۔","6. د امپیر قانون بیان کړئ او د هغه په کارولو د سولینویډ د مقناطیسي ساحې معادله ترلاسه کړئ."),
+p("7. What is a galvanometer? How is it converted into an ammeter and a voltmeter?","7۔ گیلوانومیٹر کیا ہے؟ اسے ایمیٹر اور وولٹ میٹر میں کیسے تبدیل کرتے ہیں؟","7. ګالوانومیټر څه شی دی؟ دا څنګه امیټر او ولټ‌مېټر ته اړول کېږي?")
+]
+NUM=[
+p("1. At what distance from a long straight wire carrying a current of 10 A is the magnetic field equal to Earth’s magnetic field of 5 × 10⁻⁵ T? (Answer: 0.04 m)","1۔ 10 A رو لے جانے والے لمبے سیدھے تار سے کس فاصلے پر مقناطیسی میدان زمین کے 5 × 10⁻⁵ T میدان کے برابر ہوگا؟ (جواب: 0.04 m)","1. له هغه اوږده نېغ سیم څخه چې 10 A جریان لري، په کوم واټن کې مقناطیسي ساحه د ځمکې له 5 × 10⁻⁵ T ساحې سره برابره ده؟ (ځواب: 0.04 m)"),
+p("2. A long solenoid having 1000 turns uniformly distributed over a length of 0.5 m produces a magnetic field of 2.5 × 10⁻³ T at its center. Find the current in the solenoid. (Answer: 1 A)","2۔ 0.5 m لمبائی میں یکساں تقسیم شدہ 1000 چکروں والا لمبا سولینائڈ مرکز پر 2.5 × 10⁻³ T میدان بناتا ہے۔ سولینائڈ میں رو معلوم کریں۔ (جواب: 1 A)","2. یو اوږد سولینویډ چې 1000 تاوونه یې پر 0.5 m اوږدوالي یوشان خپاره دي، په مرکز کې 2.5 × 10⁻³ T ساحه جوړوي. په سولینویډ کې جریان ومومئ. (ځواب: 1 A)"),
+p("3. A proton moving at right angles to a magnetic field of 0.1 T experiences a force of 2 × 10⁻¹² N. What is the proton’s speed? (Answer: 1.3 × 10⁸ m/s)","3۔ 0.1 T مقناطیسی میدان کے عمود حرکت کرتا پروٹون 2 × 10⁻¹² N قوت محسوس کرتا ہے۔ پروٹون کی رفتار کیا ہے؟ (جواب: 1.3 × 10⁸ m/s)","3. یو پروتون چې د 0.1 T مقناطیسي ساحې ته عمودي خوځېږي، 2 × 10⁻¹² N قوه تجربه کوي. د پروتون سرعت څومره دی؟ (ځواب: 1.3 × 10⁸ m/s)"),
+p("4. An 8 MeV proton enters perpendicularly into a uniform magnetic field of 2.5 T. (a) Find the force on the electron. (b) What is the radius of the path of the proton? (Answer: 1.6 × 10⁻¹¹ N, 0.17 m)","4۔ 8 MeV پروٹون 2.5 T کے یکساں مقناطیسی میدان میں عموداً داخل ہوتا ہے۔ (الف) الیکٹران پر قوت معلوم کریں۔ (ب) پروٹون کے راستے کا رداس کیا ہے؟ (جواب: 1.6 × 10⁻¹¹ N، 0.17 m)","4. یو 8 MeV پروتون د 2.5 T یوشان مقناطیسي ساحې ته عمودي ننوځي. (الف) پر الکترون قوه ومومئ. (ب) د پروتون د مسیر شعاع څومره ده؟ (ځواب: 1.6 × 10⁻¹¹ N، 0.17 m)"),
+p("5. What is the time period of an electron projected into a uniform magnetic field of 10 mT that moves in a circle of radius 6 cm? (Answer: 3.6 ns)","5۔ 10 mT کے یکساں مقناطیسی میدان میں بھیجا گیا الیکٹران 6 cm رداس کے دائرے میں حرکت کرتا ہے۔ اس کا دورانیہ کیا ہے؟ (جواب: 3.6 ns)","5. هغه الکترون چې د 10 mT یوشان مقناطیسي ساحې ته غورځول شوی او د 6 cm شعاع په دایره کې خوځېږي، د دورې موده یې څومره ده؟ (ځواب: 3.6 ns)"),
+p("6. A rectangular coil with 250 turns is 6.0 cm long and 4.0 cm wide. When placed in a magnetic field of 0.25 T, its maximum torque is 0.20 N m. What is the current in the coil? (Answer: 1.5 A)","6۔ 250 چکروں والی مستطیل کوائل 6.0 cm لمبی اور 4.0 cm چوڑی ہے۔ 0.25 T میدان میں اس کا زیادہ سے زیادہ ٹارک 0.20 N m ہے۔ کوائل میں رو کیا ہے؟ (جواب: 1.5 A)","6. مستطیل کویل 250 تاوونه لري، 6.0 cm اوږد او 4.0 cm پلن دی. په 0.25 T ساحه کې یې تر ټولو زیات تورک 0.20 N m دی. د کویل جریان څومره دی؟ (ځواب: 1.5 A)"),
+p("7. Crossed electric and magnetic fields are established over a region. The magnetic field is 0.105 T and the electric field is 2.00 × 10⁵ V/m. An electron experiences zero net force and continues in a straight line. What is its speed? (Answer: 1.9 × 10⁶ m/s)","7۔ ایک خطے میں متقاطع برقی اور مقناطیسی میدان قائم ہیں۔ مقناطیسی میدان 0.105 T اور برقی میدان 2.00 × 10⁵ V/m ہے۔ الیکٹران پر خالص قوت صفر ہے اور وہ سیدھی لکیر میں چلتا رہتا ہے۔ اس کی رفتار کیا ہے؟ (جواب: 1.9 × 10⁶ m/s)","7. په یوه سیمه کې برېښنايي او مقناطیسي ساحې یو بل ته عمودي دي. مقناطیسي ساحه 0.105 T او برېښنايي ساحه 2.00 × 10⁵ V/m ده. پر الکترون خالصه قوه صفر ده او نېغ حرکت ته دوام ورکوي. سرعت یې څومره دی؟ (ځواب: 1.9 × 10⁶ m/s)"),
+p("8. A galvanometer has full-scale deflection of 10 mA and resistance 100 Ω. How can it be converted into an ammeter of range 100 A? (Answer: R_s = 0.01 Ω)","8۔ ایک گیلوانومیٹر کا پورے پیمانے کا انحراف 10 mA اور مزاحمت 100 Ω ہے۔ اسے 100 A حد کے ایمیٹر میں کیسے بدلیں؟ (جواب: R_s = 0.01 Ω)","8. د ګالوانومیټر بشپړ انحراف 10 mA او مقاومت 100 Ω دی. دا څنګه د 100 A حد امیټر ته اړول کېږي؟ (ځواب: R_s = 0.01 Ω)"),
+p("9. How can a 5 mA, 100 Ω galvanometer be converted into a 20 V voltmeter? (Answer: R_h = 1900 Ω)","9۔ 5 mA، 100 Ω گیلوانومیٹر کو 20 V وولٹ میٹر میں کیسے تبدیل کریں؟ (جواب: R_h = 1900 Ω)","9. د 5 mA، 100 Ω ګالوانومیټر څنګه 20 V ولټ‌مېټر ته اړول کېږي؟ (ځواب: R_h = 1900 Ω)"),
+p("10. Two parallel wires 10 cm apart carry currents in opposite directions of 8 A. What is the magnetic field halfway between them? (Answer: 6.4 × 10⁻⁵ T)","10۔ 10 cm فاصلے پر دو متوازی تاروں میں 8 A رو مخالف سمتوں میں بہتی ہے۔ ان کے درمیان نصف فاصلے پر مقناطیسی میدان کیا ہے؟ (جواب: 6.4 × 10⁻⁵ T)","10. دوه موازي سیمونه چې 10 cm واټن لري، 8 A جریانونه په مخالفو لوریو لېږدوي. د دوی په منځ نیمه فاصله کې مقناطیسي ساحه څومره ده؟ (ځواب: 6.4 × 10⁻⁵ T)")
+]
+def make(identity,title,printed,items):
+ r={"id":identity,"title":title,"kind":"lesson","pdfPage":68,"printedPage":printed,"sourcePdf":SOURCE,"paragraphs":[x[0] for x in items]}
+ layout=[{"type":"heading","indices":[0]}]+[{"type":"paragraph","indices":[i]} for i in range(1,len(items))]
+ s=section(r,items,layout,("Unit 13 exercise","د 13 یونټ تمرین"));s["kind"]="lesson";s["sourceReferences"]=[ref(printed)]
+ return r,s
+if __name__=="__main__":
+ a=make("phys13-exercise-comprehensive-questions1-7-124","Unit 13 exercise — comprehensive questions 1–7",124,[p("COMPREHENSIVE QUESTIONS","تفصیلی سوالات","هر اړخیزې پوښتنې")]+COMP)
+ b=make("phys13-exercise-numerical-problems1-10-124-125","Unit 13 exercise — numerical problems 1–10",124,[p("NUMERICAL PROBLEMS","عددی مسائل","عددي مسئلې")]+NUM)
+ with shared_class_data_lock():
+  upsert([a[0],b[0]],[a[1],b[1]],chapter_index=2)
+  sync_companions(chapter_index=2)
+ progress=json.loads((ROOT/"docs/source-verification/class-12/progress.json").read_text(encoding="utf-8"))
+ if progress["nextPage"]==68:
+  checkpoint(68,"corrected_verified",[a[0]["id"],b[0]["id"]],"Rendered and inspected PDF page 68, printed pages 124–125. Transcribed all seven comprehensive questions and ten numerical problems in order, retaining every printed value, unit and answer. Urdu and Pashto question pairs were aligned with the English source. The full Unit 13 exercise ends on this spread; the next PDF page begins Unit 14 on printed page 126.",printed_pages=[124,125],chapter_number=13)

@@ -1,0 +1,78 @@
+"""Urdu XII PDF132 (spread): pp.254–255 — Glossary: Lesson 7 (end), Lesson 8, Lesson 9 (start)."""
+from class12_urdu_glossary import page
+
+L7 = [
+    ('لوتھڑا', 'جمے ہوئے خون کا ٹکڑا، بغیر ہڈی کے گوشت کا ٹکڑا', 'lothṛā — a clot of blood; a lump of boneless flesh', 'د کنګل وینې ټوټه؛ بې هډوکي غوښه'),
+    ('معیّن', 'ٹھہرایا گیا، مقررہ', 'muʿayyan — fixed, appointed', 'ټاکل شوی'),
+    ('نیم مندی آنکھیں', 'آدھی بند آنکھیں', 'nīm-mundī āṉkheṉ — half-closed eyes', 'نیمې پټې سترګې'),
+    ('نحیف دل', 'کمزور دل، ضعیف دل', 'naḥīf dil — feeble heart', 'کمزوری زړه'),
+    ('چہکنے چہکارنے', 'پرندوں کی آواز، یہاں مراد خوشی میں آ کر بولنا', 'chahakne chahkārne — birdsong; here, chattering with joy', 'چغېدل — د مرغانو غږ؛ دلته د خوښۍ له مخې خبرې کول'),
+    ('اعصاب', 'پٹھے، رگیں (muscles)', 'aʿṣāb — nerves, sinews (printed: muscles)', 'اعصاب — عضلې، رګونه'),
+    ('تناؤ', 'کھنچاؤ (stress)', 'tanāʾo — tension, stress', 'کشش، فشار'),
+    ('گھٹی گھٹی زندگی', 'تکلیف زدہ زندگی، بے کسی کی حالت', 'ghuṭī ghuṭī zindagī — a stifled life, helplessness', 'ساه‌بنده ژوند، بې‌وسي'),
+    ('قنوطیت', 'مایوسی، زندگی کا تاریک پہلو دیکھنا', 'qunūṭiyyat — pessimism, seeing the dark side of life', 'نهیلي، د ژوند تور اړخ لیدل'),
+    ('رجائیت', 'اچھے خیال رکھنا، زندگی کا روشن پہلو دیکھنا، آرزو سے پُر ہونا', 'rajāʾiyyat — optimism, seeing the bright side of life', 'هیله‌منتوب، د ژوند روښانه اړخ لیدل'),
+    ('چمکارتا پچکارتا', 'پیار کرنا، دلاسا دینا', 'chumkārtā puchkārtā — fondling, comforting', 'مینه کول، ډاډ ورکول'),
+    ('رُندھ گئی', 'رُک گئی، قید ہو گئی، اٹک گئی', 'rundh gaʾī — choked, stuck', 'بنده شوه، ونښته'),
+]
+L8 = [
+    ('پھلواری', 'پھولوں کا چھوٹا باغ', 'phulwārī — small flower garden', 'کوچنی ګلبڼ'),
+    ('گہما گہمی', 'رونق / لوگوں کی کثرت', 'gahmā-gahmī — bustle, crowds', 'رونق، ګڼه ګوڼه'),
+    ('خس و خاشاک', 'گھاس پھونس', 'khas-o-khāshāk — straw and rubbish', 'واښه او خس'),
+    ('خلافِ معمول', 'عادت کے خلاف', 'khilāf-e maʿmūl — contrary to habit', 'د عادت خلاف'),
+    ('خاکی زین', 'فوجی وردی کا موٹا کپڑا', 'khaki jean — thick cloth of military uniform', 'د پوځي یونیفورم پنډ ټوکر'),
+    ('سولا ہیٹ', 'دھوپ سے بچاؤ کی ٹوپی', 'sola hat — sun helmet', 'د لمر ضد خولۍ'),
+    ('چھاتا', 'چھتری', 'chhātā — umbrella', 'چتري'),
+    ('بیڑی', 'ڈھاک کے پتے میں لپٹے ہوئے تمباکو کا سگریٹ', 'bīṛī — tobacco rolled in a dhak leaf', 'بیړۍ — د ډهاک په پاڼه کې نغښتی تمباکو'),
+    ('گرہستی', 'گھریلو', 'grihastī — household', 'کورنی'),
+    ('منچلے', 'بے خوف / بے فکرے', 'manchale — reckless, carefree', 'بې‌وېرې، بې‌غمه'),
+    ('بدقطع', 'بدصورت', 'bad-qaṭʿ — ill-shaped, ugly', 'بدرنګه'),
+    ('رنگروٹ', 'نیا بھرتی ہونے والا سپاہی', 'rangrūṭ — recruit', 'نوی جلب شوی سرتېری'),
+    ('خراماں خراماں', 'ٹہلتے ٹہلتے', 'khirāmāṉ khirāmāṉ — strolling leisurely', 'ورو ورو'),
+    ('مسیں بھیگنا', 'مونچھوں کا رُواں نکلنا', 'maseṉ bhīgnā — the first down of a moustache appearing', 'د برېتونو لومړی ویښته راټوکېدل'),
+    ('گھاگ', 'تجربہ کار / ہوشیار', 'ghāg — seasoned, shrewd', 'تجربه‌کار، هوښیار'),
+    ('گُدّی', 'گردن کا پچھلا حصہ', 'guddī — nape of the neck', 'د غاړې شاتنۍ برخه'),
+    ('کُند اُسترہ', 'بال مونڈھنے کا آلہ جو تیز نہ ہو', 'kund ustara — a blunt razor', 'پڅه پاکی'),
+    ('گُتھی', 'مشکل / اُلجھن', 'gutthī — knot, puzzle', 'ګډوډي، ستونزه'),
+    ('غل غپاڑہ', 'شور شرابا', 'ghul-ghapāṛa — uproar', 'شور ماشور'),
+    ('سوجھنا', 'نظر آنا، دکھائی دینا', 'sūjhnā — to be seen, to occur', 'ښکارېدل'),
+    ('کہنہ فروش', 'پُرانی چیزیں فروخت کرنے والا', 'kuhna-farosh — dealer in old goods', 'د زړو شیانو پلورونکی'),
+    ('قماش', 'طرح / قِسم', 'qumāsh — kind, sort', 'ډول'),
+    ('چوکھٹا', 'فریم', 'chaukhaṭā — frame', 'چوکاټ'),
+    ('لم ڈھینگ', 'لمبی ٹانگوں والا آبی پرندہ', 'lam-ḍhīng — a long-legged water bird', 'اوږده‌پښې اوبیز مرغه'),
+    ('ساجھا', 'شراکت داری', 'sājhā — partnership', 'شراکت'),
+    ('سعیِ لاحاصل', 'فضول کوشش', 'saʿī-e lā-ḥāṣil — futile effort', 'بې‌ګټې هڅه'),
+    ('جلی حروف', 'موٹے حروف', 'jalī ḥurūf — bold letters', 'پنډ توري'),
+    ('کواڑ', 'دروازے میں لگا لکڑی کا تختہ', 'kiwāṛ — wooden door-leaf', 'د دروازې د لرګي تخته'),
+    ('جان کھپانا', 'مشقت کرنا', 'jān khapānā — to toil', 'سخت زحمت ګالل'),
+    ('سبز باغ دِکھانا', 'فریب دینا', 'sabz bāgh dikhānā — to deceive with false hopes', 'شنه باغونه ښودل — دوکه ورکول'),
+    ('جویا', 'تلاش کرنے والا', 'joyā — seeker', 'لټوونکی'),
+    ('ہیجان', 'ہل چل', 'haijān — agitation, commotion', 'هیجان — خوځښت'),
+    ('کے ہزار', 'کتنے ہزار', 'ke hazār — how many thousand', 'څو زره'),
+    ('نالاں', 'شاکی / تنگ', 'nālāṉ — complaining, fed up', 'ګیله‌من، تنګ'),
+    ('اکنی', 'ایک آنہ', 'iknī — a one-anna coin', 'یو آنه'),
+    ('سائیں', 'درویش / فقیر', 'sāʾīṉ — dervish, fakir', 'درویش، فقیر'),
+    ('مول تول', 'قیمت کا تعیّن کرنا', 'mol-tol — bargaining, fixing a price', 'د بیې ټاکل'),
+    ('سنیاسی', 'تارک الدنیا', 'sanyāsī — a renunciant', 'له نړۍ لاس اخیستونکی'),
+    ('کاٹھ', 'لکڑی', 'kāṭh — wood', 'لرګی'),
+    ('لطیفہ غیبی', 'غیب کی مہربانی جو صرف اللہ تعالیٰ کی طرف سے ہو', 'laṭīfa-e ghaibī — an unseen favour that comes only from Allah', 'غیبي مهرباني چې یوازې د الله له لوري وي'),
+    ('مژدہ', 'خوش خبری', 'muzhda — good news', 'زېری'),
+    ('آلکس', 'سُستی', 'ālkas — laziness', 'لټي'),
+    ('دہک اُٹھنا', 'روشن ہونا', 'dahak uṭhnā — to blaze up', 'بلېدل'),
+    ('فارغ البالی', 'بے فکری / آزادی', 'fārigh-ul-bālī — ease, freedom from care', 'بې‌غمي، ازادي'),
+    ('مندا', 'نقصان', 'mandā — slump, loss', 'تاوان، کساد'),
+    ('پٹی', 'چارپائی', 'paṭṭī — (side-rail of a) cot', 'کټ'),
+    ('افاقہ', 'مرض میں کمی ہونا', 'ifāqa — easing of illness', 'د ناروغۍ کمېدل'),
+]
+L9 = [
+    ('بہشتی', 'گھروں میں پانی لانے والا', 'bihishtī — water-carrier', 'سقا — کورونو ته اوبه راوړونکی'),
+    ('لونڈے', 'لڑکے', 'launḍe — lads', 'هلکان'),
+]
+issues = [{'id': 'urdu12-pdf132', 'unit': 34, 'printedPage': 254, 'description': '“اعصاب” glossed as “(muscles)” as printed (literally nerves). “مونڈھنے” spelled thus in print. “افاقہ” recurs from Lesson 7 with a shorter gloss — retained.'}]
+
+if __name__ == '__main__':
+    page(132, [254, 255], [
+        ('Lesson 7: Manzoor (continued)', 'منظور (جاری)', 'منظور (دوام)', L7),
+        ('Lesson 8: The Nameplate (Kutba)', 'کتبہ', 'کتبه', L8),
+        ('Lesson 9: Mothers', 'مائیں', 'میندې', L9),
+    ], issues=issues)
