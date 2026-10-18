@@ -1,0 +1,474 @@
+{
+ "pdfPage": 54,
+ "sections": [
+  {
+   "id": "cs12-u3-text-20",
+   "title": "Unit 3 text (20)",
+   "headingUrdu": "یونٹ 3 — متن (۲۰)",
+   "headingPashto": "۳ څپرکی — متن (۲۰)",
+   "paras": [
+    {
+     "text": "// Prefix Increment and Decrement Operators\nint x = 5;\ncout<< \"increment in prefix form =\"<<++x;\ncout<< \"decrement in prefix form =\"<<--x;",
+     "urdu": "// Prefix Increment and Decrement Operators\nint x = 5;\ncout<< \"increment in prefix form =\"<<++x;\ncout<< \"decrement in prefix form =\"<<--x;",
+     "pashto": "// Prefix Increment and Decrement Operators\nint x = 5;\ncout<< \"increment in prefix form =\"<<++x;\ncout<< \"decrement in prefix form =\"<<--x;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Segment",
+     "urdu": "حصے کا آؤٹ پٹ",
+     "pashto": "د برخې وتنه"
+    },
+    {
+     "text": "increment in prefix form =6\ndecrement in prefix form =4",
+     "urdu": "increment in prefix form =6\ndecrement in prefix form =4",
+     "pashto": "increment in prefix form =6\ndecrement in prefix form =4",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In postfix form of the increment and decrement operators, the operands precede their operators, e.g. x++, z--",
+     "urdu": "انکریمنٹ اور ڈیکریمنٹ آپریٹرز کی پوسٹ فکس شکل میں آپرینڈز اپنے آپریٹرز سے پہلے آتے ہیں، مثلاً x++، z--",
+     "pashto": "د زیاتولو او کمولو چلونکو په وروستۍ بڼه کې عملوندونه له خپلو چلونکو مخکې راځي، لکه x++، z--"
+    },
+    {
+     "text": "Consider the following program to demonstrate the use of increment and decrement operators.",
+     "urdu": "انکریمنٹ اور ڈیکریمنٹ آپریٹرز کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د زیاتولو او کمولو چلونکو د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "// increment and Decrement Operators\n#include<iostream.h>\n#include<conio.h>\nint main()\n{\nint x = 25, y = 25;\ncout<< x << \" \" << y <<endl;\ncout<< ++x << \" \" << --y <<endl; // prefix\ncout<< x << \" \" << y <<endl;\ncout<< x++ << \" \" << y-- <<endl; // postfix\ncout<< x << \" \" << y <<endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "// increment and Decrement Operators\n#include<iostream.h>\n#include<conio.h>\nint main()\n{\nint x = 25, y = 25;\ncout<< x << \" \" << y <<endl;\ncout<< ++x << \" \" << --y <<endl; // prefix\ncout<< x << \" \" << y <<endl;\ncout<< x++ << \" \" << y-- <<endl; // postfix\ncout<< x << \" \" << y <<endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "// increment and Decrement Operators\n#include<iostream.h>\n#include<conio.h>\nint main()\n{\nint x = 25, y = 25;\ncout<< x << \" \" << y <<endl;\ncout<< ++x << \" \" << --y <<endl; // prefix\ncout<< x << \" \" << y <<endl;\ncout<< x++ << \" \" << y-- <<endl; // postfix\ncout<< x << \" \" << y <<endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "25 25\n26 24\n26 24\n26 24\n27 23",
+     "urdu": "25 25\n26 24\n26 24\n26 24\n27 23",
+     "pashto": "25 25\n26 24\n26 24\n26 24\n27 23",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "e. Relational operators",
+     "urdu": "e. ریلیشنل آپریٹرز",
+     "pashto": "e. اړیکه‌ییز چلونکي"
+    },
+    {
+     "text": "Relational operators are used for the comparison between two expressions. These operators are: ==, !=, >, >=, <, <=. The result of these operators can be either true or false. The list of all relational operators used in C++ is given in Table 3.8.",
+     "urdu": "ریلیشنل آپریٹرز دو ایکسپریشنز کے درمیان موازنے کے لیے استعمال ہوتے ہیں۔ یہ آپریٹرز ہیں: ==، !=، >، >=، <، <=۔ ان آپریٹرز کا نتیجہ true یا false ہو سکتا ہے۔ C++ میں استعمال ہونے والے تمام ریلیشنل آپریٹرز کی فہرست جدول 3.8 میں دی گئی ہے۔",
+     "pashto": "اړیکه‌ییز چلونکي د دوو افادو ترمنځ د پرتلې لپاره کارول کېږي. دا چلونکي دا دي: ==، !=، >، >=، <، <=. د دې چلونکو پایله کېدای شي true یا false وي. په C++ کې د کارېدونکو ټولو اړیکه‌ییزو چلونکو لېست په ۳.۸ جدول کې ورکړل شوی."
+    },
+    {
+     "text": "Table 3.8: List of Relational Operators",
+     "urdu": "جدول 3.8: ریلیشنل آپریٹرز کی فہرست",
+     "pashto": "۳.۸ جدول: د اړیکه‌ییزو چلونکو لېست"
+    },
+    {
+     "text": "Consider the following lines of code:",
+     "urdu": "کوڈ کی درج ذیل لائنوں پر غور کریں:",
+     "pashto": "د کوډ لاندې کرښو ته پام وکړئ:"
+    },
+    {
+     "text": "(7 == 5) // false.\n(5 > 4) // true.\n(3 != 2) // true.\n(6 >= 6) // true.\n(5 < 5) // false.",
+     "urdu": "(7 == 5) // false.\n(5 > 4) // true.\n(3 != 2) // true.\n(6 >= 6) // true.\n(5 < 5) // false.",
+     "pashto": "(7 == 5) // false.\n(5 > 4) // true.\n(3 != 2) // true.\n(6 >= 6) // true.\n(5 < 5) // false.",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "f. Logical operators",
+     "urdu": "f. منطقی آپریٹرز",
+     "pashto": "f. منطقي چلونکي"
+    },
+    {
+     "text": "There are three logical operators used in C++. These are: !, &&, || that are shown in Table 3.9 along with their operations.",
+     "urdu": "C++ میں تین منطقی آپریٹرز استعمال ہوتے ہیں: !، &&، || جو جدول 3.9 میں ان کے اعمال کے ساتھ دکھائے گئے ہیں۔",
+     "pashto": "په C++ کې درې منطقي چلونکي کارول کېږي: !، &&، || چې په ۳.۹ جدول کې د عملیو سره ښودل شوي."
+    },
+    {
+     "text": "Table 3.9: List of Logical Operators",
+     "urdu": "جدول 3.9: منطقی آپریٹرز کی فہرست",
+     "pashto": "۳.۹ جدول: د منطقي چلونکو لېست"
+    }
+   ],
+   "theory": "// Prefix Increment and Decrement Operators\nint x = 5;\ncout<< \"increment in prefix form =\"<<++x;\ncout<< \"decrement in prefix form =\"<<--x;\n\nOutput of the Segment\n\nincrement in prefix form =6\ndecrement in prefix form =4\n\nIn postfix form of the increment and decrement operators, the operands precede their operators, e.g. x++, z--\n\nConsider the following program to demonstrate the use of increment and decrement operators.\n\n// increment and Decrement Operators\n#include<iostream.h>\n#include<conio.h>\nint main()\n{\nint x = 25, y = 25;\ncout<< x << \" \" << y <<endl;\ncout<< ++x << \" \" << --y <<endl; // prefix\ncout<< x << \" \" << y <<endl;\ncout<< x++ << \" \" << y-- <<endl; // postfix\ncout<< x << \" \" << y <<endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\n25 25\n26 24\n26 24\n26 24\n27 23\n\ne. Relational operators\n\nRelational operators are used for the comparison between two expressions. These operators are: ==, !=, >, >=, <, <=. The result of these operators can be either true or false. The list of all relational operators used in C++ is given in Table 3.8.\n\nTable 3.8: List of Relational Operators\n\nConsider the following lines of code:\n\n(7 == 5) // false.\n(5 > 4) // true.\n(3 != 2) // true.\n(6 >= 6) // true.\n(5 < 5) // false.\n\nf. Logical operators\n\nThere are three logical operators used in C++. These are: !, &&, || that are shown in Table 3.9 along with their operations.\n\nTable 3.9: List of Logical Operators",
+   "urdu": "// Prefix Increment and Decrement Operators\nint x = 5;\ncout<< \"increment in prefix form =\"<<++x;\ncout<< \"decrement in prefix form =\"<<--x;\n\nحصے کا آؤٹ پٹ\n\nincrement in prefix form =6\ndecrement in prefix form =4\n\nانکریمنٹ اور ڈیکریمنٹ آپریٹرز کی پوسٹ فکس شکل میں آپرینڈز اپنے آپریٹرز سے پہلے آتے ہیں، مثلاً x++، z--\n\nانکریمنٹ اور ڈیکریمنٹ آپریٹرز کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n// increment and Decrement Operators\n#include<iostream.h>\n#include<conio.h>\nint main()\n{\nint x = 25, y = 25;\ncout<< x << \" \" << y <<endl;\ncout<< ++x << \" \" << --y <<endl; // prefix\ncout<< x << \" \" << y <<endl;\ncout<< x++ << \" \" << y-- <<endl; // postfix\ncout<< x << \" \" << y <<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n25 25\n26 24\n26 24\n26 24\n27 23\n\ne. ریلیشنل آپریٹرز\n\nریلیشنل آپریٹرز دو ایکسپریشنز کے درمیان موازنے کے لیے استعمال ہوتے ہیں۔ یہ آپریٹرز ہیں: ==، !=، >، >=، <، <=۔ ان آپریٹرز کا نتیجہ true یا false ہو سکتا ہے۔ C++ میں استعمال ہونے والے تمام ریلیشنل آپریٹرز کی فہرست جدول 3.8 میں دی گئی ہے۔\n\nجدول 3.8: ریلیشنل آپریٹرز کی فہرست\n\nکوڈ کی درج ذیل لائنوں پر غور کریں:\n\n(7 == 5) // false.\n(5 > 4) // true.\n(3 != 2) // true.\n(6 >= 6) // true.\n(5 < 5) // false.\n\nf. منطقی آپریٹرز\n\nC++ میں تین منطقی آپریٹرز استعمال ہوتے ہیں: !، &&، || جو جدول 3.9 میں ان کے اعمال کے ساتھ دکھائے گئے ہیں۔\n\nجدول 3.9: منطقی آپریٹرز کی فہرست",
+   "pashto": "// Prefix Increment and Decrement Operators\nint x = 5;\ncout<< \"increment in prefix form =\"<<++x;\ncout<< \"decrement in prefix form =\"<<--x;\n\nد برخې وتنه\n\nincrement in prefix form =6\ndecrement in prefix form =4\n\nد زیاتولو او کمولو چلونکو په وروستۍ بڼه کې عملوندونه له خپلو چلونکو مخکې راځي، لکه x++، z--\n\nد زیاتولو او کمولو چلونکو د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n// increment and Decrement Operators\n#include<iostream.h>\n#include<conio.h>\nint main()\n{\nint x = 25, y = 25;\ncout<< x << \" \" << y <<endl;\ncout<< ++x << \" \" << --y <<endl; // prefix\ncout<< x << \" \" << y <<endl;\ncout<< x++ << \" \" << y-- <<endl; // postfix\ncout<< x << \" \" << y <<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n25 25\n26 24\n26 24\n26 24\n27 23\n\ne. اړیکه‌ییز چلونکي\n\nاړیکه‌ییز چلونکي د دوو افادو ترمنځ د پرتلې لپاره کارول کېږي. دا چلونکي دا دي: ==، !=، >، >=، <، <=. د دې چلونکو پایله کېدای شي true یا false وي. په C++ کې د کارېدونکو ټولو اړیکه‌ییزو چلونکو لېست په ۳.۸ جدول کې ورکړل شوی.\n\n۳.۸ جدول: د اړیکه‌ییزو چلونکو لېست\n\nد کوډ لاندې کرښو ته پام وکړئ:\n\n(7 == 5) // false.\n(5 > 4) // true.\n(3 != 2) // true.\n(6 >= 6) // true.\n(5 < 5) // false.\n\nf. منطقي چلونکي\n\nپه C++ کې درې منطقي چلونکي کارول کېږي: !، &&، || چې په ۳.۹ جدول کې د عملیو سره ښودل شوي.\n\n۳.۹ جدول: د منطقي چلونکو لېست",
+   "theoryUrdu": "// Prefix Increment and Decrement Operators\nint x = 5;\ncout<< \"increment in prefix form =\"<<++x;\ncout<< \"decrement in prefix form =\"<<--x;\n\nحصے کا آؤٹ پٹ\n\nincrement in prefix form =6\ndecrement in prefix form =4\n\nانکریمنٹ اور ڈیکریمنٹ آپریٹرز کی پوسٹ فکس شکل میں آپرینڈز اپنے آپریٹرز سے پہلے آتے ہیں، مثلاً x++، z--\n\nانکریمنٹ اور ڈیکریمنٹ آپریٹرز کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n// increment and Decrement Operators\n#include<iostream.h>\n#include<conio.h>\nint main()\n{\nint x = 25, y = 25;\ncout<< x << \" \" << y <<endl;\ncout<< ++x << \" \" << --y <<endl; // prefix\ncout<< x << \" \" << y <<endl;\ncout<< x++ << \" \" << y-- <<endl; // postfix\ncout<< x << \" \" << y <<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n25 25\n26 24\n26 24\n26 24\n27 23\n\ne. ریلیشنل آپریٹرز\n\nریلیشنل آپریٹرز دو ایکسپریشنز کے درمیان موازنے کے لیے استعمال ہوتے ہیں۔ یہ آپریٹرز ہیں: ==، !=، >، >=، <، <=۔ ان آپریٹرز کا نتیجہ true یا false ہو سکتا ہے۔ C++ میں استعمال ہونے والے تمام ریلیشنل آپریٹرز کی فہرست جدول 3.8 میں دی گئی ہے۔\n\nجدول 3.8: ریلیشنل آپریٹرز کی فہرست\n\nکوڈ کی درج ذیل لائنوں پر غور کریں:\n\n(7 == 5) // false.\n(5 > 4) // true.\n(3 != 2) // true.\n(6 >= 6) // true.\n(5 < 5) // false.\n\nf. منطقی آپریٹرز\n\nC++ میں تین منطقی آپریٹرز استعمال ہوتے ہیں: !، &&، || جو جدول 3.9 میں ان کے اعمال کے ساتھ دکھائے گئے ہیں۔\n\nجدول 3.9: منطقی آپریٹرز کی فہرست",
+   "theoryPashto": "// Prefix Increment and Decrement Operators\nint x = 5;\ncout<< \"increment in prefix form =\"<<++x;\ncout<< \"decrement in prefix form =\"<<--x;\n\nد برخې وتنه\n\nincrement in prefix form =6\ndecrement in prefix form =4\n\nد زیاتولو او کمولو چلونکو په وروستۍ بڼه کې عملوندونه له خپلو چلونکو مخکې راځي، لکه x++، z--\n\nد زیاتولو او کمولو چلونکو د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n// increment and Decrement Operators\n#include<iostream.h>\n#include<conio.h>\nint main()\n{\nint x = 25, y = 25;\ncout<< x << \" \" << y <<endl;\ncout<< ++x << \" \" << --y <<endl; // prefix\ncout<< x << \" \" << y <<endl;\ncout<< x++ << \" \" << y-- <<endl; // postfix\ncout<< x << \" \" << y <<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n25 25\n26 24\n26 24\n26 24\n27 23\n\ne. اړیکه‌ییز چلونکي\n\nاړیکه‌ییز چلونکي د دوو افادو ترمنځ د پرتلې لپاره کارول کېږي. دا چلونکي دا دي: ==، !=، >، >=، <، <=. د دې چلونکو پایله کېدای شي true یا false وي. په C++ کې د کارېدونکو ټولو اړیکه‌ییزو چلونکو لېست په ۳.۸ جدول کې ورکړل شوی.\n\n۳.۸ جدول: د اړیکه‌ییزو چلونکو لېست\n\nد کوډ لاندې کرښو ته پام وکړئ:\n\n(7 == 5) // false.\n(5 > 4) // true.\n(3 != 2) // true.\n(6 >= 6) // true.\n(5 < 5) // false.\n\nf. منطقي چلونکي\n\nپه C++ کې درې منطقي چلونکي کارول کېږي: !، &&، || چې په ۳.۹ جدول کې د عملیو سره ښودل شوي.\n\n۳.۹ جدول: د منطقي چلونکو لېست",
+   "content": "<p>// Prefix Increment and Decrement Operators\nint x = 5;\ncout&lt;&lt; &quot;increment in prefix form =&quot;&lt;&lt;++x;\ncout&lt;&lt; &quot;decrement in prefix form =&quot;&lt;&lt;--x;</p><p>Output of the Segment</p><p>increment in prefix form =6\ndecrement in prefix form =4</p><p>In postfix form of the increment and decrement operators, the operands precede their operators, e.g. x++, z--</p><p>Consider the following program to demonstrate the use of increment and decrement operators.</p><p>// increment and Decrement Operators\n#include&lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint x = 25, y = 25;\ncout&lt;&lt; x &lt;&lt; &quot; &quot; &lt;&lt; y &lt;&lt;endl;\ncout&lt;&lt; ++x &lt;&lt; &quot; &quot; &lt;&lt; --y &lt;&lt;endl; // prefix\ncout&lt;&lt; x &lt;&lt; &quot; &quot; &lt;&lt; y &lt;&lt;endl;\ncout&lt;&lt; x++ &lt;&lt; &quot; &quot; &lt;&lt; y-- &lt;&lt;endl; // postfix\ncout&lt;&lt; x &lt;&lt; &quot; &quot; &lt;&lt; y &lt;&lt;endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>25 25\n26 24\n26 24\n26 24\n27 23</p><p>e. Relational operators</p><p>Relational operators are used for the comparison between two expressions. These operators are: ==, !=, &gt;, &gt;=, &lt;, &lt;=. The result of these operators can be either true or false. The list of all relational operators used in C++ is given in Table 3.8.</p><p>Table 3.8: List of Relational Operators</p><p>Consider the following lines of code:</p><p>(7 == 5) // false.\n(5 &gt; 4) // true.\n(3 != 2) // true.\n(6 &gt;= 6) // true.\n(5 &lt; 5) // false.</p><p>f. Logical operators</p><p>There are three logical operators used in C++. These are: !, &amp;&amp;, || that are shown in Table 3.9 along with their operations.</p><p>Table 3.9: List of Logical Operators</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "code",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-3-8"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-3-9"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-table-3-8",
+     "headers": [
+      "Operator",
+      "Symbol",
+      "Form",
+      "Operation"
+     ],
+     "rows": [
+      [
+       "Greater than",
+       ">",
+       "x > y",
+       "true if x is greater than y, false otherwise"
+      ],
+      [
+       "Less than",
+       "<",
+       "x < y",
+       "true if x is less than y, false otherwise"
+      ],
+      [
+       "Greater than or equals",
+       ">=",
+       "x >= y",
+       "true if x is greater than or equal to y, false otherwise"
+      ],
+      [
+       "Less than or equals",
+       "<=",
+       "x <= y",
+       "true if x is less than or equal to y, false otherwise"
+      ],
+      [
+       "Equality",
+       "==",
+       "x == y",
+       "true if x equals y, false otherwise"
+      ],
+      [
+       "Inequality",
+       "!=",
+       "x != y",
+       "true if x does not equal y, false otherwise"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "آپریٹر",
+        "علامت",
+        "شکل",
+        "عمل"
+       ],
+       "rows": [
+        [
+         "سے بڑا",
+         ">",
+         "x > y",
+         "اگر x، y سے بڑا ہو تو true، ورنہ false"
+        ],
+        [
+         "سے چھوٹا",
+         "<",
+         "x < y",
+         "اگر x، y سے چھوٹا ہو تو true، ورنہ false"
+        ],
+        [
+         "سے بڑا یا برابر",
+         ">=",
+         "x >= y",
+         "اگر x، y سے بڑا یا برابر ہو تو true، ورنہ false"
+        ],
+        [
+         "سے چھوٹا یا برابر",
+         "<=",
+         "x <= y",
+         "اگر x، y سے چھوٹا یا برابر ہو تو true، ورنہ false"
+        ],
+        [
+         "مساوات",
+         "==",
+         "x == y",
+         "اگر x، y کے برابر ہو تو true، ورنہ false"
+        ],
+        [
+         "عدم مساوات",
+         "!=",
+         "x != y",
+         "اگر x، y کے برابر نہ ہو تو true، ورنہ false"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "چلونکی",
+        "نښه",
+        "بڼه",
+        "عملیه"
+       ],
+       "rows": [
+        [
+         "لوی تر",
+         ">",
+         "x > y",
+         "که x له y لوی وي true، که نه false"
+        ],
+        [
+         "کوچنی تر",
+         "<",
+         "x < y",
+         "که x له y کوچنی وي true، که نه false"
+        ],
+        [
+         "لوی یا برابر",
+         ">=",
+         "x >= y",
+         "که x له y لوی یا ورسره برابر وي true، که نه false"
+        ],
+        [
+         "کوچنی یا برابر",
+         "<=",
+         "x <= y",
+         "که x له y کوچنی یا ورسره برابر وي true، که نه false"
+        ],
+        [
+         "برابري",
+         "==",
+         "x == y",
+         "که x له y سره برابر وي true، که نه false"
+        ],
+        [
+         "نابرابري",
+         "!=",
+         "x != y",
+         "که x له y سره برابر نه وي true، که نه false"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "cs12-table-3-9",
+     "headers": [
+      "Operator",
+      "Symbol",
+      "Form",
+      "Operation"
+     ],
+     "rows": [
+      [
+       "Logical NOT",
+       "!",
+       "!x",
+       "true if x is false, or false if x is true"
+      ],
+      [
+       "Logical AND",
+       "&&",
+       "x && y",
+       "true if both x and y are true, false otherwise"
+      ],
+      [
+       "Logical OR",
+       "||",
+       "x || y",
+       "true if either x or y are true, false otherwise"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "آپریٹر",
+        "علامت",
+        "شکل",
+        "عمل"
+       ],
+       "rows": [
+        [
+         "منطقی NOT",
+         "!",
+         "!x",
+         "اگر x غلط ہو تو true، یا اگر x درست ہو تو false"
+        ],
+        [
+         "منطقی AND",
+         "&&",
+         "x && y",
+         "اگر x اور y دونوں درست ہوں تو true، ورنہ false"
+        ],
+        [
+         "منطقی OR",
+         "||",
+         "x || y",
+         "اگر x یا y میں سے کوئی درست ہو تو true، ورنہ false"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "چلونکی",
+        "نښه",
+        "بڼه",
+        "عملیه"
+       ],
+       "rows": [
+        [
+         "منطقي NOT",
+         "!",
+         "!x",
+         "که x false وي true، یا که x true وي false"
+        ],
+        [
+         "منطقي AND",
+         "&&",
+         "x && y",
+         "که x او y دواړه true وي true، که نه false"
+        ],
+        [
+         "منطقي OR",
+         "||",
+         "x || y",
+         "که x یا y کوم یو true وي true، که نه false"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 54,
+     "printedPages": [
+      95,
+      96,
+      97
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (20)",
+   "sourcePageLabel": "PDF 54 · p. 95–96–97",
+   "sourceNote": "The prefix segment begins at the foot of p.95. Tables 3.8 and 3.9 are reproduced as structured tables (the book numbers them 3.8/3.9 directly after 3.5; there are no Tables 3.6–3.7).",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf054",
+   "unit": 3,
+   "printedPage": 97,
+   "description": "Table numbering jumps from 3.5 to 3.8 (no 3.6/3.7) — retained as printed. Table 3.9 prints “true if either x or y are true”. The output line “26 24” is shown three times as printed (the fourth line, postfix, also prints 26 24)."
+  }
+ ],
+ "completeUnits": []
+}

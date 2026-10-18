@@ -1,0 +1,306 @@
+{
+ "pdfPage": 17,
+ "sections": [
+  {
+   "id": "cs12-u1-text-11",
+   "title": "Unit 1 text (11)",
+   "headingUrdu": "یونٹ 1 — متن (۱۱)",
+   "headingPashto": "۱ څپرکی — متن (۱۱)",
+   "paras": [
+    {
+     "text": "1.3 PROCESS MANAGEMENT",
+     "urdu": "1.3 پراسیس مینجمنٹ",
+     "pashto": "۱.۳ د پروسې اداره"
+    },
+    {
+     "text": "As discussed earlier, process management is one of the important functions of operating system. The following sections describe process in detail with a comparison to threads.",
+     "urdu": "جیسا کہ پہلے بیان ہوا، پراسیس مینجمنٹ آپریٹنگ سسٹم کے اہم افعال میں سے ایک ہے۔ درج ذیل حصے تھریڈز کے موازنے کے ساتھ پراسیس کو تفصیل سے بیان کرتے ہیں۔",
+     "pashto": "لکه څنګه چې مخکې وویل شول، د پروسې اداره د عملیاتي سیسټم له مهمو دندو څخه یوه ده. لاندې برخې د تارونو (threads) سره په پرتله پروسه په تفصیل بیانوي."
+    },
+    {
+     "text": "1.3.1 Process",
+     "urdu": "1.3.1 پراسیس",
+     "pashto": "۱.۳.۱ پروسه"
+    },
+    {
+     "text": "Following are some definitions of process:",
+     "urdu": "پراسیس کی کچھ تعریفیں درج ذیل ہیں:",
+     "pashto": "د پروسې ځینې تعریفونه دا دي:"
+    },
+    {
+     "text": "A program under execution by the processor (CPU) is called process.",
+     "urdu": "پروسیسر (CPU) کے ذریعے زیرِ عمل پروگرام کو پراسیس کہتے ہیں۔",
+     "pashto": "هغه پروګرام چې د پروسېسر (CPU) له خوا د اجرا لاندې وي، پروسه بلل کېږي."
+    },
+    {
+     "text": "An instance of a program running on a computer is called process.",
+     "urdu": "کمپیوٹر پر چلنے والے پروگرام کی ایک مثال (instance) کو پراسیس کہتے ہیں۔",
+     "pashto": "په کمپیوټر د چلېدونکي پروګرام یوې بېلګې (instance) ته پروسه ویل کېږي."
+    },
+    {
+     "text": "The entity that can be assigned to and executed on a processor is termed as process.",
+     "urdu": "وہ اکائی جسے پروسیسر کو تفویض کیا جا سکے اور اس پر چلایا جا سکے، پراسیس کہلاتی ہے۔",
+     "pashto": "هغه واحد چې پروسېسر ته سپارل کېدای شي او پرې اجرا کېدای شي، پروسه بلل کېږي."
+    },
+    {
+     "text": "1.3.2 Process States",
+     "urdu": "1.3.2 پراسیس کی حالتیں",
+     "pashto": "۱.۳.۲ د پروسې حالتونه"
+    },
+    {
+     "text": "A process can be in one of the different states: new, ready, running, block, and exit. These states are usually represented in the form of models called process models.",
+     "urdu": "پراسیس مختلف حالتوں میں سے کسی ایک میں ہو سکتا ہے: نیا، تیار، چلتا ہوا، بلاک اور اختتام۔ ان حالتوں کو عموماً ماڈلز کی شکل میں ظاہر کیا جاتا ہے جنھیں پراسیس ماڈلز کہتے ہیں۔",
+     "pashto": "یوه پروسه په یوه له بېلابېلو حالتونو کې کېدای شي: نوی، چمتو، روان، بند او وتل. دا حالتونه عموماً د ماډلونو په بڼه ښودل کېږي چې د پروسې ماډلونه بلل کېږي."
+    },
+    {
+     "text": "a. New State",
+     "urdu": "a. نئی حالت",
+     "pashto": "a. نوی حالت"
+    },
+    {
+     "text": "When a new process is created then it is said to be in new state.",
+     "urdu": "جب نیا پراسیس بنایا جاتا ہے تو کہا جاتا ہے کہ وہ نئی حالت میں ہے۔",
+     "pashto": "کله چې نوې پروسه جوړه شي، ویل کېږي چې په نوي حالت کې ده."
+    },
+    {
+     "text": "b. Running State",
+     "urdu": "b. چلنے کی حالت",
+     "pashto": "b. روان حالت"
+    },
+    {
+     "text": "A process is said to be in running state if it is under execution by the CPU. This means that the process actually using the CPU at that particular time.",
+     "urdu": "پراسیس اس وقت چلنے کی حالت میں کہلاتا ہے جب وہ CPU کے ذریعے زیرِ عمل ہو۔ اس کا مطلب ہے کہ پراسیس اس خاص وقت پر واقعی CPU استعمال کر رہا ہے۔",
+     "pashto": "یوه پروسه هغه وخت په روان حالت کې ګڼل کېږي چې د CPU له خوا د اجرا لاندې وي. مطلب یې دا دی چې پروسه په هغه ځانګړي وخت کې په رښتیا CPU کاروي."
+    },
+    {
+     "text": "c. Blocked (or waiting) State",
+     "urdu": "c. بلاک (یا انتظار) کی حالت",
+     "pashto": "c. بند (یا انتظار) حالت"
+    },
+    {
+     "text": "A process is said to be in blocked state if it is waiting for some event to happen such as an Input/Output completion before it can proceed.",
+     "urdu": "پراسیس اس وقت بلاک حالت میں کہلاتا ہے جب وہ آگے بڑھنے سے پہلے کسی واقعے کے ہونے کا انتظار کر رہا ہو، جیسے ان پٹ/آؤٹ پٹ کی تکمیل۔",
+     "pashto": "یوه پروسه هغه وخت په بند حالت کې ګڼل کېږي چې د دوام مخکې د کومې پېښې د پېښېدو انتظار کوي، لکه د ننوتو/وتو بشپړېدل."
+    },
+    {
+     "text": "d. Ready State",
+     "urdu": "d. تیار حالت",
+     "pashto": "d. چمتو حالت"
+    },
+    {
+     "text": "A process is said to be in ready state if it is ready to be assigned to the CPU for processing.",
+     "urdu": "پراسیس اس وقت تیار حالت میں کہلاتا ہے جب وہ پراسیسنگ کے لیے CPU کو تفویض ہونے کے لیے تیار ہو۔",
+     "pashto": "یوه پروسه هغه وخت په چمتو حالت کې ګڼل کېږي چې د پروسس لپاره CPU ته د سپارلو چمتو وي."
+    },
+    {
+     "text": "e. Terminated state (or exit)",
+     "urdu": "e. ختم شدہ حالت (یا اختتام)",
+     "pashto": "e. پای ته رسېدلی حالت (یا وتل)"
+    },
+    {
+     "text": "A process is said to be in terminated state if the CPU has finished its execution.",
+     "urdu": "پراسیس اس وقت ختم شدہ حالت میں کہلاتا ہے جب CPU اس کا عمل مکمل کر چکا ہو۔",
+     "pashto": "یوه پروسه هغه وخت په پای ته رسېدلي حالت کې ګڼل کېږي چې CPU یې اجرا بشپړه کړې وي."
+    },
+    {
+     "text": "An example of a five state process model is given below:",
+     "urdu": "پانچ حالتوں والے پراسیس ماڈل کی ایک مثال ذیل میں دی گئی ہے:",
+     "pashto": "د پنځو حالتونو د پروسې ماډل یوه بېلګه لاندې ورکړل شوې:"
+    },
+    {
+     "text": "1.3.3 Threads and processes",
+     "urdu": "1.3.3 تھریڈز اور پراسیسز",
+     "pashto": "۱.۳.۳ تارونه او پروسې"
+    },
+    {
+     "text": "A thread can be defined as a dispatchable unit of a process that can be executed sequentially and is interruptible. It can also be defined as a single sequence stream within a process.",
+     "urdu": "تھریڈ کو پراسیس کی ایک ایسی قابلِ روانگی اکائی کے طور پر بیان کیا جا سکتا ہے جو ترتیب وار چلائی جا سکے اور جس میں رکاوٹ ڈالی جا سکے۔ اسے پراسیس کے اندر ایک واحد ترتیبی سلسلے کے طور پر بھی بیان کیا جا سکتا ہے۔",
+     "pashto": "تار (thread) د پروسې د لېږلو وړ داسې واحد په توګه تعریف کېدای شي چې په ترتیب سره اجرا کېدای شي او مداخله یې شونې وي. همداراز د پروسې دننه د یوه واحد ترتیبي بهیر په توګه هم تعریف کېدای شي."
+    },
+    {
+     "text": "As threads are small independently executable units of processes, therefore, they have some of the properties of processes because of which they are sometimes called lightweight processes. In a process, threads allow multiple executions of streams.",
+     "urdu": "چونکہ تھریڈز پراسیسز کی چھوٹی آزادانہ طور پر قابلِ عمل اکائیاں ہیں، اس لیے ان میں پراسیسز کی کچھ خصوصیات ہوتی ہیں جس کی وجہ سے انھیں بعض اوقات ہلکے پراسیسز (lightweight processes) کہا جاتا ہے۔ ایک پراسیس میں تھریڈز سلسلوں کے متعدد عمل کی اجازت دیتے ہیں۔",
+     "pashto": "څرنګه چې تارونه د پروسو کوچني په خپلواک ډول د اجرا وړ واحدونه دي، نو د پروسو ځینې ځانګړنې لري چې له امله یې کله کله سپکې پروسې (lightweight processes) بلل کېږي. په یوه پروسه کې تارونه د بهیرونو ډېرې اجرا ګانې شونې کوي."
+    }
+   ],
+   "theory": "1.3 PROCESS MANAGEMENT\n\nAs discussed earlier, process management is one of the important functions of operating system. The following sections describe process in detail with a comparison to threads.\n\n1.3.1 Process\n\nFollowing are some definitions of process:\n\nA program under execution by the processor (CPU) is called process.\n\nAn instance of a program running on a computer is called process.\n\nThe entity that can be assigned to and executed on a processor is termed as process.\n\n1.3.2 Process States\n\nA process can be in one of the different states: new, ready, running, block, and exit. These states are usually represented in the form of models called process models.\n\na. New State\n\nWhen a new process is created then it is said to be in new state.\n\nb. Running State\n\nA process is said to be in running state if it is under execution by the CPU. This means that the process actually using the CPU at that particular time.\n\nc. Blocked (or waiting) State\n\nA process is said to be in blocked state if it is waiting for some event to happen such as an Input/Output completion before it can proceed.\n\nd. Ready State\n\nA process is said to be in ready state if it is ready to be assigned to the CPU for processing.\n\ne. Terminated state (or exit)\n\nA process is said to be in terminated state if the CPU has finished its execution.\n\nAn example of a five state process model is given below:\n\n1.3.3 Threads and processes\n\nA thread can be defined as a dispatchable unit of a process that can be executed sequentially and is interruptible. It can also be defined as a single sequence stream within a process.\n\nAs threads are small independently executable units of processes, therefore, they have some of the properties of processes because of which they are sometimes called lightweight processes. In a process, threads allow multiple executions of streams.",
+   "urdu": "1.3 پراسیس مینجمنٹ\n\nجیسا کہ پہلے بیان ہوا، پراسیس مینجمنٹ آپریٹنگ سسٹم کے اہم افعال میں سے ایک ہے۔ درج ذیل حصے تھریڈز کے موازنے کے ساتھ پراسیس کو تفصیل سے بیان کرتے ہیں۔\n\n1.3.1 پراسیس\n\nپراسیس کی کچھ تعریفیں درج ذیل ہیں:\n\nپروسیسر (CPU) کے ذریعے زیرِ عمل پروگرام کو پراسیس کہتے ہیں۔\n\nکمپیوٹر پر چلنے والے پروگرام کی ایک مثال (instance) کو پراسیس کہتے ہیں۔\n\nوہ اکائی جسے پروسیسر کو تفویض کیا جا سکے اور اس پر چلایا جا سکے، پراسیس کہلاتی ہے۔\n\n1.3.2 پراسیس کی حالتیں\n\nپراسیس مختلف حالتوں میں سے کسی ایک میں ہو سکتا ہے: نیا، تیار، چلتا ہوا، بلاک اور اختتام۔ ان حالتوں کو عموماً ماڈلز کی شکل میں ظاہر کیا جاتا ہے جنھیں پراسیس ماڈلز کہتے ہیں۔\n\na. نئی حالت\n\nجب نیا پراسیس بنایا جاتا ہے تو کہا جاتا ہے کہ وہ نئی حالت میں ہے۔\n\nb. چلنے کی حالت\n\nپراسیس اس وقت چلنے کی حالت میں کہلاتا ہے جب وہ CPU کے ذریعے زیرِ عمل ہو۔ اس کا مطلب ہے کہ پراسیس اس خاص وقت پر واقعی CPU استعمال کر رہا ہے۔\n\nc. بلاک (یا انتظار) کی حالت\n\nپراسیس اس وقت بلاک حالت میں کہلاتا ہے جب وہ آگے بڑھنے سے پہلے کسی واقعے کے ہونے کا انتظار کر رہا ہو، جیسے ان پٹ/آؤٹ پٹ کی تکمیل۔\n\nd. تیار حالت\n\nپراسیس اس وقت تیار حالت میں کہلاتا ہے جب وہ پراسیسنگ کے لیے CPU کو تفویض ہونے کے لیے تیار ہو۔\n\ne. ختم شدہ حالت (یا اختتام)\n\nپراسیس اس وقت ختم شدہ حالت میں کہلاتا ہے جب CPU اس کا عمل مکمل کر چکا ہو۔\n\nپانچ حالتوں والے پراسیس ماڈل کی ایک مثال ذیل میں دی گئی ہے:\n\n1.3.3 تھریڈز اور پراسیسز\n\nتھریڈ کو پراسیس کی ایک ایسی قابلِ روانگی اکائی کے طور پر بیان کیا جا سکتا ہے جو ترتیب وار چلائی جا سکے اور جس میں رکاوٹ ڈالی جا سکے۔ اسے پراسیس کے اندر ایک واحد ترتیبی سلسلے کے طور پر بھی بیان کیا جا سکتا ہے۔\n\nچونکہ تھریڈز پراسیسز کی چھوٹی آزادانہ طور پر قابلِ عمل اکائیاں ہیں، اس لیے ان میں پراسیسز کی کچھ خصوصیات ہوتی ہیں جس کی وجہ سے انھیں بعض اوقات ہلکے پراسیسز (lightweight processes) کہا جاتا ہے۔ ایک پراسیس میں تھریڈز سلسلوں کے متعدد عمل کی اجازت دیتے ہیں۔",
+   "pashto": "۱.۳ د پروسې اداره\n\nلکه څنګه چې مخکې وویل شول، د پروسې اداره د عملیاتي سیسټم له مهمو دندو څخه یوه ده. لاندې برخې د تارونو (threads) سره په پرتله پروسه په تفصیل بیانوي.\n\n۱.۳.۱ پروسه\n\nد پروسې ځینې تعریفونه دا دي:\n\nهغه پروګرام چې د پروسېسر (CPU) له خوا د اجرا لاندې وي، پروسه بلل کېږي.\n\nپه کمپیوټر د چلېدونکي پروګرام یوې بېلګې (instance) ته پروسه ویل کېږي.\n\nهغه واحد چې پروسېسر ته سپارل کېدای شي او پرې اجرا کېدای شي، پروسه بلل کېږي.\n\n۱.۳.۲ د پروسې حالتونه\n\nیوه پروسه په یوه له بېلابېلو حالتونو کې کېدای شي: نوی، چمتو، روان، بند او وتل. دا حالتونه عموماً د ماډلونو په بڼه ښودل کېږي چې د پروسې ماډلونه بلل کېږي.\n\na. نوی حالت\n\nکله چې نوې پروسه جوړه شي، ویل کېږي چې په نوي حالت کې ده.\n\nb. روان حالت\n\nیوه پروسه هغه وخت په روان حالت کې ګڼل کېږي چې د CPU له خوا د اجرا لاندې وي. مطلب یې دا دی چې پروسه په هغه ځانګړي وخت کې په رښتیا CPU کاروي.\n\nc. بند (یا انتظار) حالت\n\nیوه پروسه هغه وخت په بند حالت کې ګڼل کېږي چې د دوام مخکې د کومې پېښې د پېښېدو انتظار کوي، لکه د ننوتو/وتو بشپړېدل.\n\nd. چمتو حالت\n\nیوه پروسه هغه وخت په چمتو حالت کې ګڼل کېږي چې د پروسس لپاره CPU ته د سپارلو چمتو وي.\n\ne. پای ته رسېدلی حالت (یا وتل)\n\nیوه پروسه هغه وخت په پای ته رسېدلي حالت کې ګڼل کېږي چې CPU یې اجرا بشپړه کړې وي.\n\nد پنځو حالتونو د پروسې ماډل یوه بېلګه لاندې ورکړل شوې:\n\n۱.۳.۳ تارونه او پروسې\n\nتار (thread) د پروسې د لېږلو وړ داسې واحد په توګه تعریف کېدای شي چې په ترتیب سره اجرا کېدای شي او مداخله یې شونې وي. همداراز د پروسې دننه د یوه واحد ترتیبي بهیر په توګه هم تعریف کېدای شي.\n\nڅرنګه چې تارونه د پروسو کوچني په خپلواک ډول د اجرا وړ واحدونه دي، نو د پروسو ځینې ځانګړنې لري چې له امله یې کله کله سپکې پروسې (lightweight processes) بلل کېږي. په یوه پروسه کې تارونه د بهیرونو ډېرې اجرا ګانې شونې کوي.",
+   "theoryUrdu": "1.3 پراسیس مینجمنٹ\n\nجیسا کہ پہلے بیان ہوا، پراسیس مینجمنٹ آپریٹنگ سسٹم کے اہم افعال میں سے ایک ہے۔ درج ذیل حصے تھریڈز کے موازنے کے ساتھ پراسیس کو تفصیل سے بیان کرتے ہیں۔\n\n1.3.1 پراسیس\n\nپراسیس کی کچھ تعریفیں درج ذیل ہیں:\n\nپروسیسر (CPU) کے ذریعے زیرِ عمل پروگرام کو پراسیس کہتے ہیں۔\n\nکمپیوٹر پر چلنے والے پروگرام کی ایک مثال (instance) کو پراسیس کہتے ہیں۔\n\nوہ اکائی جسے پروسیسر کو تفویض کیا جا سکے اور اس پر چلایا جا سکے، پراسیس کہلاتی ہے۔\n\n1.3.2 پراسیس کی حالتیں\n\nپراسیس مختلف حالتوں میں سے کسی ایک میں ہو سکتا ہے: نیا، تیار، چلتا ہوا، بلاک اور اختتام۔ ان حالتوں کو عموماً ماڈلز کی شکل میں ظاہر کیا جاتا ہے جنھیں پراسیس ماڈلز کہتے ہیں۔\n\na. نئی حالت\n\nجب نیا پراسیس بنایا جاتا ہے تو کہا جاتا ہے کہ وہ نئی حالت میں ہے۔\n\nb. چلنے کی حالت\n\nپراسیس اس وقت چلنے کی حالت میں کہلاتا ہے جب وہ CPU کے ذریعے زیرِ عمل ہو۔ اس کا مطلب ہے کہ پراسیس اس خاص وقت پر واقعی CPU استعمال کر رہا ہے۔\n\nc. بلاک (یا انتظار) کی حالت\n\nپراسیس اس وقت بلاک حالت میں کہلاتا ہے جب وہ آگے بڑھنے سے پہلے کسی واقعے کے ہونے کا انتظار کر رہا ہو، جیسے ان پٹ/آؤٹ پٹ کی تکمیل۔\n\nd. تیار حالت\n\nپراسیس اس وقت تیار حالت میں کہلاتا ہے جب وہ پراسیسنگ کے لیے CPU کو تفویض ہونے کے لیے تیار ہو۔\n\ne. ختم شدہ حالت (یا اختتام)\n\nپراسیس اس وقت ختم شدہ حالت میں کہلاتا ہے جب CPU اس کا عمل مکمل کر چکا ہو۔\n\nپانچ حالتوں والے پراسیس ماڈل کی ایک مثال ذیل میں دی گئی ہے:\n\n1.3.3 تھریڈز اور پراسیسز\n\nتھریڈ کو پراسیس کی ایک ایسی قابلِ روانگی اکائی کے طور پر بیان کیا جا سکتا ہے جو ترتیب وار چلائی جا سکے اور جس میں رکاوٹ ڈالی جا سکے۔ اسے پراسیس کے اندر ایک واحد ترتیبی سلسلے کے طور پر بھی بیان کیا جا سکتا ہے۔\n\nچونکہ تھریڈز پراسیسز کی چھوٹی آزادانہ طور پر قابلِ عمل اکائیاں ہیں، اس لیے ان میں پراسیسز کی کچھ خصوصیات ہوتی ہیں جس کی وجہ سے انھیں بعض اوقات ہلکے پراسیسز (lightweight processes) کہا جاتا ہے۔ ایک پراسیس میں تھریڈز سلسلوں کے متعدد عمل کی اجازت دیتے ہیں۔",
+   "theoryPashto": "۱.۳ د پروسې اداره\n\nلکه څنګه چې مخکې وویل شول، د پروسې اداره د عملیاتي سیسټم له مهمو دندو څخه یوه ده. لاندې برخې د تارونو (threads) سره په پرتله پروسه په تفصیل بیانوي.\n\n۱.۳.۱ پروسه\n\nد پروسې ځینې تعریفونه دا دي:\n\nهغه پروګرام چې د پروسېسر (CPU) له خوا د اجرا لاندې وي، پروسه بلل کېږي.\n\nپه کمپیوټر د چلېدونکي پروګرام یوې بېلګې (instance) ته پروسه ویل کېږي.\n\nهغه واحد چې پروسېسر ته سپارل کېدای شي او پرې اجرا کېدای شي، پروسه بلل کېږي.\n\n۱.۳.۲ د پروسې حالتونه\n\nیوه پروسه په یوه له بېلابېلو حالتونو کې کېدای شي: نوی، چمتو، روان، بند او وتل. دا حالتونه عموماً د ماډلونو په بڼه ښودل کېږي چې د پروسې ماډلونه بلل کېږي.\n\na. نوی حالت\n\nکله چې نوې پروسه جوړه شي، ویل کېږي چې په نوي حالت کې ده.\n\nb. روان حالت\n\nیوه پروسه هغه وخت په روان حالت کې ګڼل کېږي چې د CPU له خوا د اجرا لاندې وي. مطلب یې دا دی چې پروسه په هغه ځانګړي وخت کې په رښتیا CPU کاروي.\n\nc. بند (یا انتظار) حالت\n\nیوه پروسه هغه وخت په بند حالت کې ګڼل کېږي چې د دوام مخکې د کومې پېښې د پېښېدو انتظار کوي، لکه د ننوتو/وتو بشپړېدل.\n\nd. چمتو حالت\n\nیوه پروسه هغه وخت په چمتو حالت کې ګڼل کېږي چې د پروسس لپاره CPU ته د سپارلو چمتو وي.\n\ne. پای ته رسېدلی حالت (یا وتل)\n\nیوه پروسه هغه وخت په پای ته رسېدلي حالت کې ګڼل کېږي چې CPU یې اجرا بشپړه کړې وي.\n\nد پنځو حالتونو د پروسې ماډل یوه بېلګه لاندې ورکړل شوې:\n\n۱.۳.۳ تارونه او پروسې\n\nتار (thread) د پروسې د لېږلو وړ داسې واحد په توګه تعریف کېدای شي چې په ترتیب سره اجرا کېدای شي او مداخله یې شونې وي. همداراز د پروسې دننه د یوه واحد ترتیبي بهیر په توګه هم تعریف کېدای شي.\n\nڅرنګه چې تارونه د پروسو کوچني په خپلواک ډول د اجرا وړ واحدونه دي، نو د پروسو ځینې ځانګړنې لري چې له امله یې کله کله سپکې پروسې (lightweight processes) بلل کېږي. په یوه پروسه کې تارونه د بهیرونو ډېرې اجرا ګانې شونې کوي.",
+   "content": "<p>1.3 PROCESS MANAGEMENT</p><p>As discussed earlier, process management is one of the important functions of operating system. The following sections describe process in detail with a comparison to threads.</p><p>1.3.1 Process</p><p>Following are some definitions of process:</p><p>A program under execution by the processor (CPU) is called process.</p><p>An instance of a program running on a computer is called process.</p><p>The entity that can be assigned to and executed on a processor is termed as process.</p><p>1.3.2 Process States</p><p>A process can be in one of the different states: new, ready, running, block, and exit. These states are usually represented in the form of models called process models.</p><p>a. New State</p><p>When a new process is created then it is said to be in new state.</p><p>b. Running State</p><p>A process is said to be in running state if it is under execution by the CPU. This means that the process actually using the CPU at that particular time.</p><p>c. Blocked (or waiting) State</p><p>A process is said to be in blocked state if it is waiting for some event to happen such as an Input/Output completion before it can proceed.</p><p>d. Ready State</p><p>A process is said to be in ready state if it is ready to be assigned to the CPU for processing.</p><p>e. Terminated state (or exit)</p><p>A process is said to be in terminated state if the CPU has finished its execution.</p><p>An example of a five state process model is given below:</p><p>1.3.3 Threads and processes</p><p>A thread can be defined as a dispatchable unit of a process that can be executed sequentially and is interruptible. It can also be defined as a single sequence stream within a process.</p><p>As threads are small independently executable units of processes, therefore, they have some of the properties of processes because of which they are sometimes called lightweight processes. In a process, threads allow multiple executions of streams.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-1-10"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      22
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-1-10",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 300\" role=\"img\" aria-label=\"Figure 1.10: Five-State Process Model\"><defs><marker id=\"a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"520\" height=\"300\" fill=\"#ffffff\"/><ellipse cx=\"55\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"55\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">New</text><ellipse cx=\"190\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"190\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Ready</text><ellipse cx=\"330\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"330\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Running</text><ellipse cx=\"465\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"465\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Exit</text><ellipse cx=\"190\" cy=\"225\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"190\" y=\"230\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Blocked</text><line x1=\"99\" y1=\"60\" x2=\"144\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"122\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Admit</text><line x1=\"234\" y1=\"52\" x2=\"286\" y2=\"52\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"260\" y=\"42\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Dispatch</text><line x1=\"286\" y1=\"70\" x2=\"234\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"260\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Timeout</text><line x1=\"374\" y1=\"60\" x2=\"419\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"396\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Release</text><line x1=\"315\" y1=\"82\" x2=\"205\" y2=\"202\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"285\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Event Wait</text><line x1=\"190\" y1=\"201\" x2=\"190\" y2=\"86\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"152\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Event Occurs</text><text x=\"260\" y=\"290\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" font-family=\"sans-serif\">Figure 1.10: Five-State Process Model</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 300\" role=\"img\" aria-label=\"شکل 1.10: پانچ حالتوں والا پراسیس ماڈل\"><defs><marker id=\"a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"520\" height=\"300\" fill=\"#ffffff\"/><ellipse cx=\"55\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"55\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">نیا</text><ellipse cx=\"190\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"190\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">تیار</text><ellipse cx=\"330\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"330\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">چل رہا</text><ellipse cx=\"465\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"465\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">اختتام</text><ellipse cx=\"190\" cy=\"225\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"190\" y=\"230\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بلاک</text><line x1=\"99\" y1=\"60\" x2=\"144\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"122\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">داخلہ</text><line x1=\"234\" y1=\"52\" x2=\"286\" y2=\"52\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"260\" y=\"42\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">روانگی</text><line x1=\"286\" y1=\"70\" x2=\"234\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"260\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">وقت ختم</text><line x1=\"374\" y1=\"60\" x2=\"419\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"396\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">رہائی</text><line x1=\"315\" y1=\"82\" x2=\"205\" y2=\"202\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"285\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">واقعے کا انتظار</text><line x1=\"190\" y1=\"201\" x2=\"190\" y2=\"86\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"152\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">واقعہ پیش آیا</text><text x=\"260\" y=\"290\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" font-family=\"sans-serif\">شکل 1.10: پانچ حالتوں والا پراسیس ماڈل</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 300\" role=\"img\" aria-label=\"۱.۱۰ شکل: د پنځو حالتونو د پروسې ماډل\"><defs><marker id=\"a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"520\" height=\"300\" fill=\"#ffffff\"/><ellipse cx=\"55\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"55\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">نوی</text><ellipse cx=\"190\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"190\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">چمتو</text><ellipse cx=\"330\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"330\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">روان</text><ellipse cx=\"465\" cy=\"60\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"465\" y=\"65\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">وتل</text><ellipse cx=\"190\" cy=\"225\" rx=\"44\" ry=\"24\" fill=\"#cfe5f7\" stroke=\"#5a8fc2\"/><text x=\"190\" y=\"230\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بند</text><line x1=\"99\" y1=\"60\" x2=\"144\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"122\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">منل</text><line x1=\"234\" y1=\"52\" x2=\"286\" y2=\"52\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"260\" y=\"42\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">لېږل</text><line x1=\"286\" y1=\"70\" x2=\"234\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"260\" y=\"88\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">وخت پای</text><line x1=\"374\" y1=\"60\" x2=\"419\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"396\" y=\"50\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">خوشې کول</text><line x1=\"315\" y1=\"82\" x2=\"205\" y2=\"202\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"285\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">د پېښې انتظار</text><line x1=\"190\" y1=\"201\" x2=\"190\" y2=\"86\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#a)\"/><text x=\"152\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">پېښه وشوه</text><text x=\"260\" y=\"290\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" font-family=\"sans-serif\">۱.۱۰ شکل: د پنځو حالتونو د پروسې ماډل</text></svg>",
+     "sourceWidthRatio": 1.7333333333333334
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 17,
+     "printedPages": [
+      22,
+      23
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 1 text (11)",
+   "sourcePageLabel": "PDF 17 · p. 22–23",
+   "sourceNote": "Figure 1.10 is reproduced as a coded state diagram. The threads paragraph continues on p.24 (PDF18). The printed page number on p.22 is cut at the margin.",
+   "unit": 1
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf017",
+   "unit": 1,
+   "printedPage": 22,
+   "description": "p.22 prints “that the process actually using the CPU” (missing “is”) and lists the state “block” in the text but “Blocked” in the figure. Retained as printed. Owner pen circling excluded."
+  }
+ ],
+ "completeUnits": []
+}

@@ -1,0 +1,169 @@
+{
+ "pdfPage": 129,
+ "sections": [
+  {
+   "id": "cs12-u8-text-10",
+   "title": "Unit 8 text (10)",
+   "headingUrdu": "یونٹ 8 — متن (10)",
+   "headingPashto": "۸ څپرکی — متن (10)",
+   "paras": [
+    {
+     "text": "In the above example, the first object r1 passes the arguments (5,14) to the second constructor and thus the output generated is 70. The second object r2 calls the non-parameterized constructor of the class and initializes the variables width with 5 and length with 15 and thus the result calculated is 75.",
+     "urdu": "اوپر کی مثال میں پہلا آبجیکٹ r1 دوسرے کنسٹرکٹر کو آرگیومنٹس (5,14) پاس کرتا ہے اور یوں آؤٹ پٹ 70 بنتا ہے۔ دوسرا آبجیکٹ r2 کلاس کے نان پیرامیٹرائزڈ کنسٹرکٹر کو کال کرتا ہے اور ویری ایبلز width کو 5 اور length کو 15 سے ابتدائی قدر دیتا ہے اور یوں حساب شدہ نتیجہ 75 آتا ہے۔",
+     "pashto": "په پورته بېلګه کې لومړی شی r1 دویم جوړوونکي ته دلیلونه (5,14) لېږدوي او په دې توګه وتنه 70 کېږي. دویم شی r2 د ټولګي بې‌پاراميټره جوړوونکی غواړي او width متغیر ته 5 او length ته 15 لومړنی ارزښت ورکوي او په دې توګه حساب شوې پایله 75 کېږي."
+    },
+    {
+     "text": "b. Destructors",
+     "urdu": "b. ڈسٹرکٹرز",
+     "pashto": "b. ړنګوونکي"
+    },
+    {
+     "text": "Destructors are special member functions that are executed when an object is destroyed. Destructor fulfills the opposite functionality of constructor and thus de-allocates the memory allocated to an object during its creation. They are called automatically when objects are destroyed.",
+     "urdu": "ڈسٹرکٹرز خاص ممبر فنکشنز ہیں جو آبجیکٹ ختم ہونے پر چلتے ہیں۔ ڈسٹرکٹر کنسٹرکٹر کے برعکس کام انجام دیتا ہے اور یوں آبجیکٹ کی تخلیق کے دوران اسے دی گئی میموری واپس لیتا ہے۔ یہ آبجیکٹس ختم ہونے پر خود بخود کال ہوتے ہیں۔",
+     "pashto": "ړنګوونکي ځانګړي غړي فنکشنونه دي چې د شي د ړنګېدو پر مهال اجرا کېږي. ړنګوونکی د جوړوونکي برعکس دنده ترسره کوي او په دې توګه هغه حافظه بېرته اخلي چې د شي د جوړېدو پر مهال ورته ورکړل شوې وه. د شیانو د ړنګېدو پر مهال پخپله غوښتل کېږي."
+    },
+    {
+     "text": "Like constructors, destructors have the following specific features:",
+     "urdu": "کنسٹرکٹرز کی طرح ڈسٹرکٹرز کی بھی درج ذیل مخصوص خصوصیات ہیں:",
+     "pashto": "د جوړوونکو په څېر ړنګوونکي هم لاندې ځانګړتیاوې لري:"
+    },
+    {
+     "text": "Destructor has the same name as that of the class, preceded by a tilde symbol ~.",
+     "urdu": "ڈسٹرکٹر کا نام کلاس کے نام جیسا ہوتا ہے جس سے پہلے ٹلڈا نشان ~ ہوتا ہے۔",
+     "pashto": "ړنګوونکی د ټولګي په څېر نوم لري چې مخکې یې د ټیلډ نښه ~ وي."
+    },
+    {
+     "text": "Destructor cannot take arguments.",
+     "urdu": "ڈسٹرکٹر آرگیومنٹس نہیں لے سکتا۔",
+     "pashto": "ړنګوونکی دلیلونه نه شي اخیستی."
+    },
+    {
+     "text": "Destructor has no return type.",
+     "urdu": "ڈسٹرکٹر کی کوئی ریٹرن ٹائپ نہیں ہوتی۔",
+     "pashto": "ړنګوونکی د بېرته ورکړې ډول نه لري."
+    },
+    {
+     "text": "The second feature given above, implies that only one destructor may exist per class, as there is no way to overload destructors since they cannot be differentiated from each other based on arguments.",
+     "urdu": "اوپر دی گئی دوسری خصوصیت کا مطلب ہے کہ ہر کلاس میں صرف ایک ڈسٹرکٹر ہو سکتا ہے، کیونکہ ڈسٹرکٹرز کو اوورلوڈ کرنے کا کوئی طریقہ نہیں کہ انھیں آرگیومنٹس کی بنیاد پر ایک دوسرے سے ممیز نہیں کیا جا سکتا۔",
+     "pashto": "پورته دویمه ځانګړتیا دا معنا لري چې په هر ټولګي کې یوازې یو ړنګوونکی کېدای شي، ځکه د ړنګوونکو د ډېرولو هېڅ لاره نشته، ځکه د دلیلونو پر بنسټ یو له بله نه شي جلا کېدای."
+    },
+    {
+     "text": "Consider the following program to explain the concept of both constructor and destructor.",
+     "urdu": "کنسٹرکٹر اور ڈسٹرکٹر دونوں کا تصور واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د جوړوونکي او ړنګوونکي دواړو د مفهوم د تشریح لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nA () //constructor\n{\ncout<<\"I am constructor\"<<endl;\n}\n~A () // destructor\n{\ncout<<\"I am destructor\";\n}\n};\nint main()\n{\nA a1;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nA () //constructor\n{\ncout<<\"I am constructor\"<<endl;\n}\n~A () // destructor\n{\ncout<<\"I am destructor\";\n}\n};\nint main()\n{\nA a1;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nA () //constructor\n{\ncout<<\"I am constructor\"<<endl;\n}\n~A () // destructor\n{\ncout<<\"I am destructor\";\n}\n};\nint main()\n{\nA a1;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "I am constructor\nI am destructor",
+     "urdu": "I am constructor\nI am destructor",
+     "pashto": "I am constructor\nI am destructor",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "In the above example, the first object r1 passes the arguments (5,14) to the second constructor and thus the output generated is 70. The second object r2 calls the non-parameterized constructor of the class and initializes the variables width with 5 and length with 15 and thus the result calculated is 75.\n\nb. Destructors\n\nDestructors are special member functions that are executed when an object is destroyed. Destructor fulfills the opposite functionality of constructor and thus de-allocates the memory allocated to an object during its creation. They are called automatically when objects are destroyed.\n\nLike constructors, destructors have the following specific features:\n\nDestructor has the same name as that of the class, preceded by a tilde symbol ~.\n\nDestructor cannot take arguments.\n\nDestructor has no return type.\n\nThe second feature given above, implies that only one destructor may exist per class, as there is no way to overload destructors since they cannot be differentiated from each other based on arguments.\n\nConsider the following program to explain the concept of both constructor and destructor.\n\n#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nA () //constructor\n{\ncout<<\"I am constructor\"<<endl;\n}\n~A () // destructor\n{\ncout<<\"I am destructor\";\n}\n};\nint main()\n{\nA a1;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nI am constructor\nI am destructor",
+   "urdu": "اوپر کی مثال میں پہلا آبجیکٹ r1 دوسرے کنسٹرکٹر کو آرگیومنٹس (5,14) پاس کرتا ہے اور یوں آؤٹ پٹ 70 بنتا ہے۔ دوسرا آبجیکٹ r2 کلاس کے نان پیرامیٹرائزڈ کنسٹرکٹر کو کال کرتا ہے اور ویری ایبلز width کو 5 اور length کو 15 سے ابتدائی قدر دیتا ہے اور یوں حساب شدہ نتیجہ 75 آتا ہے۔\n\nb. ڈسٹرکٹرز\n\nڈسٹرکٹرز خاص ممبر فنکشنز ہیں جو آبجیکٹ ختم ہونے پر چلتے ہیں۔ ڈسٹرکٹر کنسٹرکٹر کے برعکس کام انجام دیتا ہے اور یوں آبجیکٹ کی تخلیق کے دوران اسے دی گئی میموری واپس لیتا ہے۔ یہ آبجیکٹس ختم ہونے پر خود بخود کال ہوتے ہیں۔\n\nکنسٹرکٹرز کی طرح ڈسٹرکٹرز کی بھی درج ذیل مخصوص خصوصیات ہیں:\n\nڈسٹرکٹر کا نام کلاس کے نام جیسا ہوتا ہے جس سے پہلے ٹلڈا نشان ~ ہوتا ہے۔\n\nڈسٹرکٹر آرگیومنٹس نہیں لے سکتا۔\n\nڈسٹرکٹر کی کوئی ریٹرن ٹائپ نہیں ہوتی۔\n\nاوپر دی گئی دوسری خصوصیت کا مطلب ہے کہ ہر کلاس میں صرف ایک ڈسٹرکٹر ہو سکتا ہے، کیونکہ ڈسٹرکٹرز کو اوورلوڈ کرنے کا کوئی طریقہ نہیں کہ انھیں آرگیومنٹس کی بنیاد پر ایک دوسرے سے ممیز نہیں کیا جا سکتا۔\n\nکنسٹرکٹر اور ڈسٹرکٹر دونوں کا تصور واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nA () //constructor\n{\ncout<<\"I am constructor\"<<endl;\n}\n~A () // destructor\n{\ncout<<\"I am destructor\";\n}\n};\nint main()\n{\nA a1;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nI am constructor\nI am destructor",
+   "pashto": "په پورته بېلګه کې لومړی شی r1 دویم جوړوونکي ته دلیلونه (5,14) لېږدوي او په دې توګه وتنه 70 کېږي. دویم شی r2 د ټولګي بې‌پاراميټره جوړوونکی غواړي او width متغیر ته 5 او length ته 15 لومړنی ارزښت ورکوي او په دې توګه حساب شوې پایله 75 کېږي.\n\nb. ړنګوونکي\n\nړنګوونکي ځانګړي غړي فنکشنونه دي چې د شي د ړنګېدو پر مهال اجرا کېږي. ړنګوونکی د جوړوونکي برعکس دنده ترسره کوي او په دې توګه هغه حافظه بېرته اخلي چې د شي د جوړېدو پر مهال ورته ورکړل شوې وه. د شیانو د ړنګېدو پر مهال پخپله غوښتل کېږي.\n\nد جوړوونکو په څېر ړنګوونکي هم لاندې ځانګړتیاوې لري:\n\nړنګوونکی د ټولګي په څېر نوم لري چې مخکې یې د ټیلډ نښه ~ وي.\n\nړنګوونکی دلیلونه نه شي اخیستی.\n\nړنګوونکی د بېرته ورکړې ډول نه لري.\n\nپورته دویمه ځانګړتیا دا معنا لري چې په هر ټولګي کې یوازې یو ړنګوونکی کېدای شي، ځکه د ړنګوونکو د ډېرولو هېڅ لاره نشته، ځکه د دلیلونو پر بنسټ یو له بله نه شي جلا کېدای.\n\nد جوړوونکي او ړنګوونکي دواړو د مفهوم د تشریح لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nA () //constructor\n{\ncout<<\"I am constructor\"<<endl;\n}\n~A () // destructor\n{\ncout<<\"I am destructor\";\n}\n};\nint main()\n{\nA a1;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nI am constructor\nI am destructor",
+   "theoryUrdu": "اوپر کی مثال میں پہلا آبجیکٹ r1 دوسرے کنسٹرکٹر کو آرگیومنٹس (5,14) پاس کرتا ہے اور یوں آؤٹ پٹ 70 بنتا ہے۔ دوسرا آبجیکٹ r2 کلاس کے نان پیرامیٹرائزڈ کنسٹرکٹر کو کال کرتا ہے اور ویری ایبلز width کو 5 اور length کو 15 سے ابتدائی قدر دیتا ہے اور یوں حساب شدہ نتیجہ 75 آتا ہے۔\n\nb. ڈسٹرکٹرز\n\nڈسٹرکٹرز خاص ممبر فنکشنز ہیں جو آبجیکٹ ختم ہونے پر چلتے ہیں۔ ڈسٹرکٹر کنسٹرکٹر کے برعکس کام انجام دیتا ہے اور یوں آبجیکٹ کی تخلیق کے دوران اسے دی گئی میموری واپس لیتا ہے۔ یہ آبجیکٹس ختم ہونے پر خود بخود کال ہوتے ہیں۔\n\nکنسٹرکٹرز کی طرح ڈسٹرکٹرز کی بھی درج ذیل مخصوص خصوصیات ہیں:\n\nڈسٹرکٹر کا نام کلاس کے نام جیسا ہوتا ہے جس سے پہلے ٹلڈا نشان ~ ہوتا ہے۔\n\nڈسٹرکٹر آرگیومنٹس نہیں لے سکتا۔\n\nڈسٹرکٹر کی کوئی ریٹرن ٹائپ نہیں ہوتی۔\n\nاوپر دی گئی دوسری خصوصیت کا مطلب ہے کہ ہر کلاس میں صرف ایک ڈسٹرکٹر ہو سکتا ہے، کیونکہ ڈسٹرکٹرز کو اوورلوڈ کرنے کا کوئی طریقہ نہیں کہ انھیں آرگیومنٹس کی بنیاد پر ایک دوسرے سے ممیز نہیں کیا جا سکتا۔\n\nکنسٹرکٹر اور ڈسٹرکٹر دونوں کا تصور واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nA () //constructor\n{\ncout<<\"I am constructor\"<<endl;\n}\n~A () // destructor\n{\ncout<<\"I am destructor\";\n}\n};\nint main()\n{\nA a1;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nI am constructor\nI am destructor",
+   "theoryPashto": "په پورته بېلګه کې لومړی شی r1 دویم جوړوونکي ته دلیلونه (5,14) لېږدوي او په دې توګه وتنه 70 کېږي. دویم شی r2 د ټولګي بې‌پاراميټره جوړوونکی غواړي او width متغیر ته 5 او length ته 15 لومړنی ارزښت ورکوي او په دې توګه حساب شوې پایله 75 کېږي.\n\nb. ړنګوونکي\n\nړنګوونکي ځانګړي غړي فنکشنونه دي چې د شي د ړنګېدو پر مهال اجرا کېږي. ړنګوونکی د جوړوونکي برعکس دنده ترسره کوي او په دې توګه هغه حافظه بېرته اخلي چې د شي د جوړېدو پر مهال ورته ورکړل شوې وه. د شیانو د ړنګېدو پر مهال پخپله غوښتل کېږي.\n\nد جوړوونکو په څېر ړنګوونکي هم لاندې ځانګړتیاوې لري:\n\nړنګوونکی د ټولګي په څېر نوم لري چې مخکې یې د ټیلډ نښه ~ وي.\n\nړنګوونکی دلیلونه نه شي اخیستی.\n\nړنګوونکی د بېرته ورکړې ډول نه لري.\n\nپورته دویمه ځانګړتیا دا معنا لري چې په هر ټولګي کې یوازې یو ړنګوونکی کېدای شي، ځکه د ړنګوونکو د ډېرولو هېڅ لاره نشته، ځکه د دلیلونو پر بنسټ یو له بله نه شي جلا کېدای.\n\nد جوړوونکي او ړنګوونکي دواړو د مفهوم د تشریح لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nA () //constructor\n{\ncout<<\"I am constructor\"<<endl;\n}\n~A () // destructor\n{\ncout<<\"I am destructor\";\n}\n};\nint main()\n{\nA a1;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nI am constructor\nI am destructor",
+   "content": "<p>In the above example, the first object r1 passes the arguments (5,14) to the second constructor and thus the output generated is 70. The second object r2 calls the non-parameterized constructor of the class and initializes the variables width with 5 and length with 15 and thus the result calculated is 75.</p><p>b. Destructors</p><p>Destructors are special member functions that are executed when an object is destroyed. Destructor fulfills the opposite functionality of constructor and thus de-allocates the memory allocated to an object during its creation. They are called automatically when objects are destroyed.</p><p>Like constructors, destructors have the following specific features:</p><p>Destructor has the same name as that of the class, preceded by a tilde symbol ~.</p><p>Destructor cannot take arguments.</p><p>Destructor has no return type.</p><p>The second feature given above, implies that only one destructor may exist per class, as there is no way to overload destructors since they cannot be differentiated from each other based on arguments.</p><p>Consider the following program to explain the concept of both constructor and destructor.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nclass A\n{\npublic:\nA () //constructor\n{\ncout&lt;&lt;&quot;I am constructor&quot;&lt;&lt;endl;\n}\n~A () // destructor\n{\ncout&lt;&lt;&quot;I am destructor&quot;;\n}\n};\nint main()\n{\nA a1;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>I am constructor\nI am destructor</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 129,
+     "printedPages": [
+      246,
+      247,
+      248
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (10)",
+   "sourcePageLabel": "PDF 129 · p. 246–247–248",
+   "sourceNote": "The top of p.246 (end of the overloading program and its output) is recorded with PDF128. The constructor/destructor program runs from p.247 to p.248 (PDF130) and is given whole with its output.",
+   "unit": 8
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

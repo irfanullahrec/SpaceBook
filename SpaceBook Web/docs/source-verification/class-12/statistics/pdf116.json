@@ -1,0 +1,301 @@
+{
+ "pdfPage": 116,
+ "sections": [
+  {
+   "id": "stat12-p116-example-6-17",
+   "title": "Example 6.17 — CI for the difference of two proportions",
+   "headingUrdu": "مثال 6.17 — دو تناسبوں کے فرق کا اعتماد کا وقفہ",
+   "headingPashto": "بېلګه 6.17 — د دوو تناسبونو د توپیر د باور واټن",
+   "paras": [
+    {
+     "text": "Example 6.17",
+     "urdu": "مثال 6.17",
+     "pashto": "بېلګه 6.17"
+    },
+    {
+     "text": "Two pairs relieving drugs were compared each on independent samples of $n_1=1000$, $n_2=1000$ individuals. Out of these individuals 750 receiving drug-I and 800 receiving drug-II reported some pain relief. Construct a 90% confidence interval for the difference between population proportions.",
+     "urdu": "درد کم کرنے والی دو دواؤں کا موازنہ $n_1=1000$، $n_2=1000$ افراد کے آزاد نمونوں پر کیا گیا۔ ان افراد میں سے دوا-I لینے والے 750 اور دوا-II لینے والے 800 نے درد میں کچھ کمی بتائی۔ آبادی کے تناسبوں کے فرق کے لیے 90% اعتماد کا وقفہ بنائیں۔",
+     "pashto": "د درد کمولو دوه درمل د $n_1=1000$، $n_2=1000$ کسانو په خپلواکو نمونو پرتله شول. له دې کسانو څخه د درمل-I اخیستونکو 750 او د درمل-II اخیستونکو 800 د درد یو څه کمښت راپور کړ. د نفوسونو د تناسبونو د توپیر لپاره 90% د باور واټن جوړ کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "As $p_1,p_2$ (population proportions) are unknown, therefore 100(1−α)% confidence interval for $(p_1-p_2)$ is $(\\hat{p}_1-\\hat{p}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$",
+     "urdu": "چونکہ $p_1,p_2$ (آبادی کے تناسب) نامعلوم ہیں، لہٰذا $(p_1-p_2)$ کے لیے 100(1−α)% اعتماد کا وقفہ $(\\hat{p}_1-\\hat{p}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$ ہے",
+     "pashto": "څرنګه چې $p_1,p_2$ (د نفوس تناسبونه) نامعلوم دي، نو د $(p_1-p_2)$ لپاره 100(1−α)% د باور واټن $(\\hat{p}_1-\\hat{p}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$ دی"
+    },
+    {
+     "text": "Given information are;",
+     "urdu": "دی گئی معلومات یہ ہیں؛",
+     "pashto": "ورکړل شوي معلومات دا دي؛"
+    },
+    {
+     "text": "$n_1=1000,\\ X_1=750,\\ \\hat{p}_1=\\frac{X_1}{n_1}=\\frac{750}{1000}=0.75$",
+     "urdu": "$n_1=1000,\\ X_1=750,\\ \\hat{p}_1=\\frac{X_1}{n_1}=\\frac{750}{1000}=0.75$",
+     "pashto": "$n_1=1000,\\ X_1=750,\\ \\hat{p}_1=\\frac{X_1}{n_1}=\\frac{750}{1000}=0.75$"
+    },
+    {
+     "text": "$\\hat{q}_1=1-\\hat{p}_1=1-0.75=0.25,$",
+     "urdu": "$\\hat{q}_1=1-\\hat{p}_1=1-0.75=0.25,$",
+     "pashto": "$\\hat{q}_1=1-\\hat{p}_1=1-0.75=0.25,$"
+    },
+    {
+     "text": "$n_2=1000,\\ X_2=800,\\ \\hat{p}_2=\\frac{X_2}{n_2}=\\frac{800}{100}=0.80$",
+     "urdu": "$n_2=1000,\\ X_2=800,\\ \\hat{p}_2=\\frac{X_2}{n_2}=\\frac{800}{100}=0.80$",
+     "pashto": "$n_2=1000,\\ X_2=800,\\ \\hat{p}_2=\\frac{X_2}{n_2}=\\frac{800}{100}=0.80$"
+    },
+    {
+     "text": "$\\hat{q}_2=1-\\hat{p}_2=1-0.80=0.20,$",
+     "urdu": "$\\hat{q}_2=1-\\hat{p}_2=1-0.80=0.20,$",
+     "pashto": "$\\hat{q}_2=1-\\hat{p}_2=1-0.80=0.20,$"
+    },
+    {
+     "text": "$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$",
+     "urdu": "$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$",
+     "pashto": "$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$"
+    },
+    {
+     "text": "From the area table of standard normal distribution, we have $Z_{\\alpha/2}=Z_{0.05}=1.645$.",
+     "urdu": "معیاری نارمل تقسیم کے رقبے کے جدول سے ہمارے پاس $Z_{\\alpha/2}=Z_{0.05}=1.645$ ہے۔",
+     "pashto": "د معیاري نورمال وېش د مساحت له جدول څخه لرو $Z_{\\alpha/2}=Z_{0.05}=1.645$."
+    },
+    {
+     "text": "Hence, the 90% confidence interval for $(p_1-p_2)$ is",
+     "urdu": "لہٰذا $(p_1-p_2)$ کے لیے 90% اعتماد کا وقفہ یہ ہے",
+     "pashto": "نو د $(p_1-p_2)$ لپاره 90% د باور واټن دا دی"
+    },
+    {
+     "text": "$(0.75-0.80)\\pm 1.645\\sqrt{\\frac{(0.75)(0.25)}{1000}+\\frac{(0.80)(0.20)}{1000}}$",
+     "urdu": "$(0.75-0.80)\\pm 1.645\\sqrt{\\frac{(0.75)(0.25)}{1000}+\\frac{(0.80)(0.20)}{1000}}$",
+     "pashto": "$(0.75-0.80)\\pm 1.645\\sqrt{\\frac{(0.75)(0.25)}{1000}+\\frac{(0.80)(0.20)}{1000}}$"
+    },
+    {
+     "text": "$-0.05\\pm 0.03$",
+     "urdu": "$-0.05\\pm 0.03$",
+     "pashto": "$-0.05\\pm 0.03$"
+    },
+    {
+     "text": "$(-0.08,\\ -0.02)$",
+     "urdu": "$(-0.08,\\ -0.02)$",
+     "pashto": "$(-0.08,\\ -0.02)$"
+    }
+   ],
+   "theory": "Example 6.17\n\nTwo pairs relieving drugs were compared each on independent samples of n_1=1000, n_2=1000 individuals. Out of these individuals 750 receiving drug-I and 800 receiving drug-II reported some pain relief. Construct a 90% confidence interval for the difference between population proportions.\n\nSolution:\n\nAs p_1,p_2 (population proportions) are unknown, therefore 100(1−α)% confidence interval for (p_1-p_2) is (\\hat{p}_1-\\hat{p}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}\n\nGiven information are;\n\nn_1=1000,\\ X_1=750,\\ \\hat{p}_1=\\frac{X_1}{n_1}=\\frac{750}{1000}=0.75\n\n\\hat{q}_1=1-\\hat{p}_1=1-0.75=0.25,\n\nn_2=1000,\\ X_2=800,\\ \\hat{p}_2=\\frac{X_2}{n_2}=\\frac{800}{100}=0.80\n\n\\hat{q}_2=1-\\hat{p}_2=1-0.80=0.20,\n\n1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.\n\nFrom the area table of standard normal distribution, we have Z_{\\alpha/2}=Z_{0.05}=1.645.\n\nHence, the 90% confidence interval for (p_1-p_2) is\n\n(0.75-0.80)\\pm 1.645\\sqrt{\\frac{(0.75)(0.25)}{1000}+\\frac{(0.80)(0.20)}{1000}}\n\n-0.05\\pm 0.03\n\n(-0.08,\\ -0.02)",
+   "urdu": "مثال 6.17\n\nدرد کم کرنے والی دو دواؤں کا موازنہ n_1=1000، n_2=1000 افراد کے آزاد نمونوں پر کیا گیا۔ ان افراد میں سے دوا-I لینے والے 750 اور دوا-II لینے والے 800 نے درد میں کچھ کمی بتائی۔ آبادی کے تناسبوں کے فرق کے لیے 90% اعتماد کا وقفہ بنائیں۔\n\nحل:\n\nچونکہ p_1,p_2 (آبادی کے تناسب) نامعلوم ہیں، لہٰذا (p_1-p_2) کے لیے 100(1−α)% اعتماد کا وقفہ (\\hat{p}_1-\\hat{p}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}} ہے\n\nدی گئی معلومات یہ ہیں؛\n\nn_1=1000,\\ X_1=750,\\ \\hat{p}_1=\\frac{X_1}{n_1}=\\frac{750}{1000}=0.75\n\n\\hat{q}_1=1-\\hat{p}_1=1-0.75=0.25,\n\nn_2=1000,\\ X_2=800,\\ \\hat{p}_2=\\frac{X_2}{n_2}=\\frac{800}{100}=0.80\n\n\\hat{q}_2=1-\\hat{p}_2=1-0.80=0.20,\n\n1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.\n\nمعیاری نارمل تقسیم کے رقبے کے جدول سے ہمارے پاس Z_{\\alpha/2}=Z_{0.05}=1.645 ہے۔\n\nلہٰذا (p_1-p_2) کے لیے 90% اعتماد کا وقفہ یہ ہے\n\n(0.75-0.80)\\pm 1.645\\sqrt{\\frac{(0.75)(0.25)}{1000}+\\frac{(0.80)(0.20)}{1000}}\n\n-0.05\\pm 0.03\n\n(-0.08,\\ -0.02)",
+   "pashto": "بېلګه 6.17\n\nد درد کمولو دوه درمل د n_1=1000، n_2=1000 کسانو په خپلواکو نمونو پرتله شول. له دې کسانو څخه د درمل-I اخیستونکو 750 او د درمل-II اخیستونکو 800 د درد یو څه کمښت راپور کړ. د نفوسونو د تناسبونو د توپیر لپاره 90% د باور واټن جوړ کړئ.\n\nحل:\n\nڅرنګه چې p_1,p_2 (د نفوس تناسبونه) نامعلوم دي، نو د (p_1-p_2) لپاره 100(1−α)% د باور واټن (\\hat{p}_1-\\hat{p}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}} دی\n\nورکړل شوي معلومات دا دي؛\n\nn_1=1000,\\ X_1=750,\\ \\hat{p}_1=\\frac{X_1}{n_1}=\\frac{750}{1000}=0.75\n\n\\hat{q}_1=1-\\hat{p}_1=1-0.75=0.25,\n\nn_2=1000,\\ X_2=800,\\ \\hat{p}_2=\\frac{X_2}{n_2}=\\frac{800}{100}=0.80\n\n\\hat{q}_2=1-\\hat{p}_2=1-0.80=0.20,\n\n1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.\n\nد معیاري نورمال وېش د مساحت له جدول څخه لرو Z_{\\alpha/2}=Z_{0.05}=1.645.\n\nنو د (p_1-p_2) لپاره 90% د باور واټن دا دی\n\n(0.75-0.80)\\pm 1.645\\sqrt{\\frac{(0.75)(0.25)}{1000}+\\frac{(0.80)(0.20)}{1000}}\n\n-0.05\\pm 0.03\n\n(-0.08,\\ -0.02)",
+   "theoryUrdu": "مثال 6.17\n\nدرد کم کرنے والی دو دواؤں کا موازنہ n_1=1000، n_2=1000 افراد کے آزاد نمونوں پر کیا گیا۔ ان افراد میں سے دوا-I لینے والے 750 اور دوا-II لینے والے 800 نے درد میں کچھ کمی بتائی۔ آبادی کے تناسبوں کے فرق کے لیے 90% اعتماد کا وقفہ بنائیں۔\n\nحل:\n\nچونکہ p_1,p_2 (آبادی کے تناسب) نامعلوم ہیں، لہٰذا (p_1-p_2) کے لیے 100(1−α)% اعتماد کا وقفہ (\\hat{p}_1-\\hat{p}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}} ہے\n\nدی گئی معلومات یہ ہیں؛\n\nn_1=1000,\\ X_1=750,\\ \\hat{p}_1=\\frac{X_1}{n_1}=\\frac{750}{1000}=0.75\n\n\\hat{q}_1=1-\\hat{p}_1=1-0.75=0.25,\n\nn_2=1000,\\ X_2=800,\\ \\hat{p}_2=\\frac{X_2}{n_2}=\\frac{800}{100}=0.80\n\n\\hat{q}_2=1-\\hat{p}_2=1-0.80=0.20,\n\n1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.\n\nمعیاری نارمل تقسیم کے رقبے کے جدول سے ہمارے پاس Z_{\\alpha/2}=Z_{0.05}=1.645 ہے۔\n\nلہٰذا (p_1-p_2) کے لیے 90% اعتماد کا وقفہ یہ ہے\n\n(0.75-0.80)\\pm 1.645\\sqrt{\\frac{(0.75)(0.25)}{1000}+\\frac{(0.80)(0.20)}{1000}}\n\n-0.05\\pm 0.03\n\n(-0.08,\\ -0.02)",
+   "theoryPashto": "بېلګه 6.17\n\nد درد کمولو دوه درمل د n_1=1000، n_2=1000 کسانو په خپلواکو نمونو پرتله شول. له دې کسانو څخه د درمل-I اخیستونکو 750 او د درمل-II اخیستونکو 800 د درد یو څه کمښت راپور کړ. د نفوسونو د تناسبونو د توپیر لپاره 90% د باور واټن جوړ کړئ.\n\nحل:\n\nڅرنګه چې p_1,p_2 (د نفوس تناسبونه) نامعلوم دي، نو د (p_1-p_2) لپاره 100(1−α)% د باور واټن (\\hat{p}_1-\\hat{p}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}} دی\n\nورکړل شوي معلومات دا دي؛\n\nn_1=1000,\\ X_1=750,\\ \\hat{p}_1=\\frac{X_1}{n_1}=\\frac{750}{1000}=0.75\n\n\\hat{q}_1=1-\\hat{p}_1=1-0.75=0.25,\n\nn_2=1000,\\ X_2=800,\\ \\hat{p}_2=\\frac{X_2}{n_2}=\\frac{800}{100}=0.80\n\n\\hat{q}_2=1-\\hat{p}_2=1-0.80=0.20,\n\n1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.\n\nد معیاري نورمال وېش د مساحت له جدول څخه لرو Z_{\\alpha/2}=Z_{0.05}=1.645.\n\nنو د (p_1-p_2) لپاره 90% د باور واټن دا دی\n\n(0.75-0.80)\\pm 1.645\\sqrt{\\frac{(0.75)(0.25)}{1000}+\\frac{(0.80)(0.20)}{1000}}\n\n-0.05\\pm 0.03\n\n(-0.08,\\ -0.02)",
+   "content": "<p>Example 6.17</p><p>Two pairs relieving drugs were compared each on independent samples of n_1=1000, n_2=1000 individuals. Out of these individuals 750 receiving drug-I and 800 receiving drug-II reported some pain relief. Construct a 90% confidence interval for the difference between population proportions.</p><p>Solution:</p><p>As p_1,p_2 (population proportions) are unknown, therefore 100(1−α)% confidence interval for (p_1-p_2) is (\\hat{p}_1-\\hat{p}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}</p><p>Given information are;</p><p>n_1=1000,\\ X_1=750,\\ \\hat{p}_1=\\frac{X_1}{n_1}=\\frac{750}{1000}=0.75</p><p>\\hat{q}_1=1-\\hat{p}_1=1-0.75=0.25,</p><p>n_2=1000,\\ X_2=800,\\ \\hat{p}_2=\\frac{X_2}{n_2}=\\frac{800}{100}=0.80</p><p>\\hat{q}_2=1-\\hat{p}_2=1-0.80=0.20,</p><p>1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.</p><p>From the area table of standard normal distribution, we have Z_{\\alpha/2}=Z_{0.05}=1.645.</p><p>Hence, the 90% confidence interval for (p_1-p_2) is</p><p>(0.75-0.80)\\pm 1.645\\sqrt{\\frac{(0.75)(0.25)}{1000}+\\frac{(0.80)(0.20)}{1000}}</p><p>-0.05\\pm 0.03</p><p>(-0.08,\\ -0.02)</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      12,
+      13,
+      14
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 116,
+     "printedPages": [
+      223
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  },
+  {
+   "id": "stat12-u6-key-points",
+   "title": "Unit 6 — Key points",
+   "headingUrdu": "یونٹ 6 — اہم نکات",
+   "headingPashto": "واحد 6 — مهم ټکي",
+   "paras": [
+    {
+     "text": "Key points",
+     "urdu": "اہم نکات",
+     "pashto": "مهم ټکي"
+    },
+    {
+     "text": "Statistical inference is a process of drawing conclusions (inferences) about the population on the basis of sample information from that population.",
+     "urdu": "شماریاتی استنباط آبادی کی نمونہ جاتی معلومات کی بنیاد پر اس آبادی کے بارے میں نتائج (استنباط) اخذ کرنے کا عمل ہے۔",
+     "pashto": "احصاییوي استنتاج د نفوس د نمونوي معلوماتو پر بنسټ د هغه نفوس په اړه د پایلو (استنتاجونو) د اخیستلو بهیر دی."
+    },
+    {
+     "text": "Statistical estimation is a process by which the unknown value of a parameter is obtained from the sample observations.",
+     "urdu": "شماریاتی تخمین وہ عمل ہے جس سے نمونے کے مشاہدات سے کسی پیرامیٹر کی نامعلوم قیمت حاصل کی جاتی ہے۔",
+     "pashto": "احصاییوي اټکل هغه بهیر دی چې پکې د یوه پارامټر نامعلوم قیمت له نمونوي مشاهدو څخه ترلاسه کېږي."
+    },
+    {
+     "text": "When a specific value is obtained from sample observations and is used to estimate the unknown value of the parameter, the process is called point estimation.",
+     "urdu": "جب نمونے کے مشاہدات سے ایک مخصوص قیمت حاصل کر کے پیرامیٹر کی نامعلوم قیمت کے تخمین کے لیے استعمال کی جائے تو اس عمل کو نقطہ تخمین کہتے ہیں۔",
+     "pashto": "کله چې له نمونوي مشاهدو څخه یو ټاکلی قیمت ترلاسه او د پارامټر د نامعلوم قیمت د اټکل لپاره وکارول شي، دې بهیر ته ټکي‌ییز اټکل وایي."
+    },
+    {
+     "text": "When a range of values is obtained from sample observations within which the unknown value of parameter is believed to lie, the process is called interval estimation.",
+     "urdu": "جب نمونے کے مشاہدات سے قیمتوں کی ایسی حد حاصل کی جائے جس کے اندر پیرامیٹر کی نامعلوم قیمت ہونے کا یقین ہو تو اس عمل کو وقفہ تخمین کہتے ہیں۔",
+     "pashto": "کله چې له نمونوي مشاهدو څخه د قیمتونو داسې حد ترلاسه شي چې باور کېږي د پارامټر نامعلوم قیمت پکې پروت دی، دې بهیر ته واټني اټکل وایي."
+    },
+    {
+     "text": "A rule, usually expressed as a formula that tells us how to calculate an estimate from the sample data is called an estimator and the resulting number is called an estimate.",
+     "urdu": "وہ قاعدہ، جو عموماً فارمولا ہو اور بتائے کہ نمونے کے مواد سے تخمینہ کیسے معلوم کیا جائے، تخمین کار کہلاتا ہے اور حاصل عدد کو تخمینہ کہتے ہیں۔",
+     "pashto": "هغه قاعده، چې معمولاً فورمول وي او ښيي چې له نمونوي معلوماتو څخه اټکل څنګه محاسبه شي، اټکلوونکی بلل کېږي او لاسته راغلي عدد ته اټکل وایي."
+    },
+    {
+     "text": "An estimator is said to be unbiased if the mean of its sampling distribution is equal to the true value of the parameter, otherwise the estimator is said to be biased",
+     "urdu": "تخمین کار غیر جانبدار کہلاتا ہے اگر اس کی نمونہ جاتی تقسیم کا اوسط پیرامیٹر کی حقیقی قیمت کے برابر ہو، ورنہ تخمین کار جانبدار کہلاتا ہے",
+     "pashto": "اټکلوونکی بې‌پلوه بلل کېږي که د نمونوي وېش منځنی یې د پارامټر له رښتیني قیمت سره برابر وي، که نه اټکلوونکی پلوي بلل کېږي"
+    },
+    {
+     "text": "If $\\hat{\\theta}_1$ and $\\hat{\\theta}_2$ are two unbiased estimators of the same parameter θ and $Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2)$ then $\\hat{\\theta}_1$ is called efficient estimator than $\\hat{\\theta}_2$.",
+     "urdu": "اگر $\\hat{\\theta}_1$ اور $\\hat{\\theta}_2$ ایک ہی پیرامیٹر θ کے دو غیر جانبدار تخمین کار ہوں اور $Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2)$ ہو تو $\\hat{\\theta}_1$ کو $\\hat{\\theta}_2$ سے زیادہ مؤثر تخمین کار کہتے ہیں۔",
+     "pashto": "که $\\hat{\\theta}_1$ او $\\hat{\\theta}_2$ د یوه پارامټر θ دوه بې‌پلوه اټکلوونکي وي او $Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2)$ وي، نو $\\hat{\\theta}_1$ تر $\\hat{\\theta}_2$ موثر اټکلوونکی بلل کېږي."
+    },
+    {
+     "text": "An estimator which is linear, unbiased and has minimum variances among a group of linear unbiased estimators is called best linear unbiased estimator or BLUE.",
+     "urdu": "وہ تخمین کار جو خطی، غیر جانبدار ہو اور خطی غیر جانبدار تخمین کاروں کے گروہ میں کم سے کم تغیر رکھتا ہو، بہترین خطی غیر جانبدار تخمین کار یا BLUE کہلاتا ہے۔",
+     "pashto": "هغه اټکلوونکی چې خطي، بې‌پلوه وي او د خطي بې‌پلوه اټکلوونکو په ډله کې لږ تر لږه واریانس ولري، غوره خطي بې‌پلوه اټکلوونکی یا BLUE بلل کېږي."
+    },
+    {
+     "text": "A rule for calculating two numbers to create an interval which has a high probability of containing the parameter of interest is the confidence interval.",
+     "urdu": "دو اعداد معلوم کرنے کا وہ قاعدہ جس سے ایسا وقفہ بنے جس میں مطلوبہ پیرامیٹر کے شامل ہونے کا احتمال زیادہ ہو، اعتماد کا وقفہ ہے۔",
+     "pashto": "د دوو عددونو د محاسبې هغه قاعده چې داسې واټن جوړ کړي چې د غوښتل شوي پارامټر د لرلو لوړ احتمال ولري، د باور واټن دی."
+    },
+    {
+     "text": "The region between L and U is called confidence interval or confidence region or acceptance region for the unknown parameter θ.",
+     "urdu": "L اور U کے درمیان علاقے کو نامعلوم پیرامیٹر θ کا اعتماد کا وقفہ یا اعتماد کا علاقہ یا قبولیت کا علاقہ کہتے ہیں۔",
+     "pashto": "د L او U ترمنځ سیمې ته د نامعلوم پارامټر θ لپاره د باور واټن یا د باور سیمه یا د منلو سیمه وایي."
+    },
+    {
+     "text": "The region beyond the acceptance region i.e. from −∞ to L and U to ∞ is known as critical region or rejection region.",
+     "urdu": "قبولیت کے علاقے سے باہر کا علاقہ یعنی −∞ سے L اور U سے ∞ تک فیصلہ کن علاقہ یا رد کا علاقہ کہلاتا ہے۔",
+     "pashto": "د منلو له سیمې بهر سیمه یعنې له −∞ څخه تر L او له U څخه تر ∞ پورې، بحراني سیمه یا د ردولو سیمه بلل کېږي."
+    },
+    {
+     "text": "The probability that parameter lies in the rejection region is called significant level and is denoted by α.",
+     "urdu": "پیرامیٹر کے رد کے علاقے میں ہونے کے احتمال کو معنویت کی سطح کہتے ہیں اور اسے α سے ظاہر کرتے ہیں۔",
+     "pashto": "هغه احتمال چې پارامټر د ردولو په سیمه کې پروت وي، د معنی‌داریت کچه بلل کېږي او په α ښودل کېږي."
+    }
+   ],
+   "theory": "Key points\n\nStatistical inference is a process of drawing conclusions (inferences) about the population on the basis of sample information from that population.\n\nStatistical estimation is a process by which the unknown value of a parameter is obtained from the sample observations.\n\nWhen a specific value is obtained from sample observations and is used to estimate the unknown value of the parameter, the process is called point estimation.\n\nWhen a range of values is obtained from sample observations within which the unknown value of parameter is believed to lie, the process is called interval estimation.\n\nA rule, usually expressed as a formula that tells us how to calculate an estimate from the sample data is called an estimator and the resulting number is called an estimate.\n\nAn estimator is said to be unbiased if the mean of its sampling distribution is equal to the true value of the parameter, otherwise the estimator is said to be biased\n\nIf \\hat{\\theta}_1 and \\hat{\\theta}_2 are two unbiased estimators of the same parameter θ and Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2) then \\hat{\\theta}_1 is called efficient estimator than \\hat{\\theta}_2.\n\nAn estimator which is linear, unbiased and has minimum variances among a group of linear unbiased estimators is called best linear unbiased estimator or BLUE.\n\nA rule for calculating two numbers to create an interval which has a high probability of containing the parameter of interest is the confidence interval.\n\nThe region between L and U is called confidence interval or confidence region or acceptance region for the unknown parameter θ.\n\nThe region beyond the acceptance region i.e. from −∞ to L and U to ∞ is known as critical region or rejection region.\n\nThe probability that parameter lies in the rejection region is called significant level and is denoted by α.",
+   "urdu": "اہم نکات\n\nشماریاتی استنباط آبادی کی نمونہ جاتی معلومات کی بنیاد پر اس آبادی کے بارے میں نتائج (استنباط) اخذ کرنے کا عمل ہے۔\n\nشماریاتی تخمین وہ عمل ہے جس سے نمونے کے مشاہدات سے کسی پیرامیٹر کی نامعلوم قیمت حاصل کی جاتی ہے۔\n\nجب نمونے کے مشاہدات سے ایک مخصوص قیمت حاصل کر کے پیرامیٹر کی نامعلوم قیمت کے تخمین کے لیے استعمال کی جائے تو اس عمل کو نقطہ تخمین کہتے ہیں۔\n\nجب نمونے کے مشاہدات سے قیمتوں کی ایسی حد حاصل کی جائے جس کے اندر پیرامیٹر کی نامعلوم قیمت ہونے کا یقین ہو تو اس عمل کو وقفہ تخمین کہتے ہیں۔\n\nوہ قاعدہ، جو عموماً فارمولا ہو اور بتائے کہ نمونے کے مواد سے تخمینہ کیسے معلوم کیا جائے، تخمین کار کہلاتا ہے اور حاصل عدد کو تخمینہ کہتے ہیں۔\n\nتخمین کار غیر جانبدار کہلاتا ہے اگر اس کی نمونہ جاتی تقسیم کا اوسط پیرامیٹر کی حقیقی قیمت کے برابر ہو، ورنہ تخمین کار جانبدار کہلاتا ہے\n\nاگر \\hat{\\theta}_1 اور \\hat{\\theta}_2 ایک ہی پیرامیٹر θ کے دو غیر جانبدار تخمین کار ہوں اور Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2) ہو تو \\hat{\\theta}_1 کو \\hat{\\theta}_2 سے زیادہ مؤثر تخمین کار کہتے ہیں۔\n\nوہ تخمین کار جو خطی، غیر جانبدار ہو اور خطی غیر جانبدار تخمین کاروں کے گروہ میں کم سے کم تغیر رکھتا ہو، بہترین خطی غیر جانبدار تخمین کار یا BLUE کہلاتا ہے۔\n\nدو اعداد معلوم کرنے کا وہ قاعدہ جس سے ایسا وقفہ بنے جس میں مطلوبہ پیرامیٹر کے شامل ہونے کا احتمال زیادہ ہو، اعتماد کا وقفہ ہے۔\n\nL اور U کے درمیان علاقے کو نامعلوم پیرامیٹر θ کا اعتماد کا وقفہ یا اعتماد کا علاقہ یا قبولیت کا علاقہ کہتے ہیں۔\n\nقبولیت کے علاقے سے باہر کا علاقہ یعنی −∞ سے L اور U سے ∞ تک فیصلہ کن علاقہ یا رد کا علاقہ کہلاتا ہے۔\n\nپیرامیٹر کے رد کے علاقے میں ہونے کے احتمال کو معنویت کی سطح کہتے ہیں اور اسے α سے ظاہر کرتے ہیں۔",
+   "pashto": "مهم ټکي\n\nاحصاییوي استنتاج د نفوس د نمونوي معلوماتو پر بنسټ د هغه نفوس په اړه د پایلو (استنتاجونو) د اخیستلو بهیر دی.\n\nاحصاییوي اټکل هغه بهیر دی چې پکې د یوه پارامټر نامعلوم قیمت له نمونوي مشاهدو څخه ترلاسه کېږي.\n\nکله چې له نمونوي مشاهدو څخه یو ټاکلی قیمت ترلاسه او د پارامټر د نامعلوم قیمت د اټکل لپاره وکارول شي، دې بهیر ته ټکي‌ییز اټکل وایي.\n\nکله چې له نمونوي مشاهدو څخه د قیمتونو داسې حد ترلاسه شي چې باور کېږي د پارامټر نامعلوم قیمت پکې پروت دی، دې بهیر ته واټني اټکل وایي.\n\nهغه قاعده، چې معمولاً فورمول وي او ښيي چې له نمونوي معلوماتو څخه اټکل څنګه محاسبه شي، اټکلوونکی بلل کېږي او لاسته راغلي عدد ته اټکل وایي.\n\nاټکلوونکی بې‌پلوه بلل کېږي که د نمونوي وېش منځنی یې د پارامټر له رښتیني قیمت سره برابر وي، که نه اټکلوونکی پلوي بلل کېږي\n\nکه \\hat{\\theta}_1 او \\hat{\\theta}_2 د یوه پارامټر θ دوه بې‌پلوه اټکلوونکي وي او Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2) وي، نو \\hat{\\theta}_1 تر \\hat{\\theta}_2 موثر اټکلوونکی بلل کېږي.\n\nهغه اټکلوونکی چې خطي، بې‌پلوه وي او د خطي بې‌پلوه اټکلوونکو په ډله کې لږ تر لږه واریانس ولري، غوره خطي بې‌پلوه اټکلوونکی یا BLUE بلل کېږي.\n\nد دوو عددونو د محاسبې هغه قاعده چې داسې واټن جوړ کړي چې د غوښتل شوي پارامټر د لرلو لوړ احتمال ولري، د باور واټن دی.\n\nد L او U ترمنځ سیمې ته د نامعلوم پارامټر θ لپاره د باور واټن یا د باور سیمه یا د منلو سیمه وایي.\n\nد منلو له سیمې بهر سیمه یعنې له −∞ څخه تر L او له U څخه تر ∞ پورې، بحراني سیمه یا د ردولو سیمه بلل کېږي.\n\nهغه احتمال چې پارامټر د ردولو په سیمه کې پروت وي، د معنی‌داریت کچه بلل کېږي او په α ښودل کېږي.",
+   "theoryUrdu": "اہم نکات\n\nشماریاتی استنباط آبادی کی نمونہ جاتی معلومات کی بنیاد پر اس آبادی کے بارے میں نتائج (استنباط) اخذ کرنے کا عمل ہے۔\n\nشماریاتی تخمین وہ عمل ہے جس سے نمونے کے مشاہدات سے کسی پیرامیٹر کی نامعلوم قیمت حاصل کی جاتی ہے۔\n\nجب نمونے کے مشاہدات سے ایک مخصوص قیمت حاصل کر کے پیرامیٹر کی نامعلوم قیمت کے تخمین کے لیے استعمال کی جائے تو اس عمل کو نقطہ تخمین کہتے ہیں۔\n\nجب نمونے کے مشاہدات سے قیمتوں کی ایسی حد حاصل کی جائے جس کے اندر پیرامیٹر کی نامعلوم قیمت ہونے کا یقین ہو تو اس عمل کو وقفہ تخمین کہتے ہیں۔\n\nوہ قاعدہ، جو عموماً فارمولا ہو اور بتائے کہ نمونے کے مواد سے تخمینہ کیسے معلوم کیا جائے، تخمین کار کہلاتا ہے اور حاصل عدد کو تخمینہ کہتے ہیں۔\n\nتخمین کار غیر جانبدار کہلاتا ہے اگر اس کی نمونہ جاتی تقسیم کا اوسط پیرامیٹر کی حقیقی قیمت کے برابر ہو، ورنہ تخمین کار جانبدار کہلاتا ہے\n\nاگر \\hat{\\theta}_1 اور \\hat{\\theta}_2 ایک ہی پیرامیٹر θ کے دو غیر جانبدار تخمین کار ہوں اور Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2) ہو تو \\hat{\\theta}_1 کو \\hat{\\theta}_2 سے زیادہ مؤثر تخمین کار کہتے ہیں۔\n\nوہ تخمین کار جو خطی، غیر جانبدار ہو اور خطی غیر جانبدار تخمین کاروں کے گروہ میں کم سے کم تغیر رکھتا ہو، بہترین خطی غیر جانبدار تخمین کار یا BLUE کہلاتا ہے۔\n\nدو اعداد معلوم کرنے کا وہ قاعدہ جس سے ایسا وقفہ بنے جس میں مطلوبہ پیرامیٹر کے شامل ہونے کا احتمال زیادہ ہو، اعتماد کا وقفہ ہے۔\n\nL اور U کے درمیان علاقے کو نامعلوم پیرامیٹر θ کا اعتماد کا وقفہ یا اعتماد کا علاقہ یا قبولیت کا علاقہ کہتے ہیں۔\n\nقبولیت کے علاقے سے باہر کا علاقہ یعنی −∞ سے L اور U سے ∞ تک فیصلہ کن علاقہ یا رد کا علاقہ کہلاتا ہے۔\n\nپیرامیٹر کے رد کے علاقے میں ہونے کے احتمال کو معنویت کی سطح کہتے ہیں اور اسے α سے ظاہر کرتے ہیں۔",
+   "theoryPashto": "مهم ټکي\n\nاحصاییوي استنتاج د نفوس د نمونوي معلوماتو پر بنسټ د هغه نفوس په اړه د پایلو (استنتاجونو) د اخیستلو بهیر دی.\n\nاحصاییوي اټکل هغه بهیر دی چې پکې د یوه پارامټر نامعلوم قیمت له نمونوي مشاهدو څخه ترلاسه کېږي.\n\nکله چې له نمونوي مشاهدو څخه یو ټاکلی قیمت ترلاسه او د پارامټر د نامعلوم قیمت د اټکل لپاره وکارول شي، دې بهیر ته ټکي‌ییز اټکل وایي.\n\nکله چې له نمونوي مشاهدو څخه د قیمتونو داسې حد ترلاسه شي چې باور کېږي د پارامټر نامعلوم قیمت پکې پروت دی، دې بهیر ته واټني اټکل وایي.\n\nهغه قاعده، چې معمولاً فورمول وي او ښيي چې له نمونوي معلوماتو څخه اټکل څنګه محاسبه شي، اټکلوونکی بلل کېږي او لاسته راغلي عدد ته اټکل وایي.\n\nاټکلوونکی بې‌پلوه بلل کېږي که د نمونوي وېش منځنی یې د پارامټر له رښتیني قیمت سره برابر وي، که نه اټکلوونکی پلوي بلل کېږي\n\nکه \\hat{\\theta}_1 او \\hat{\\theta}_2 د یوه پارامټر θ دوه بې‌پلوه اټکلوونکي وي او Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2) وي، نو \\hat{\\theta}_1 تر \\hat{\\theta}_2 موثر اټکلوونکی بلل کېږي.\n\nهغه اټکلوونکی چې خطي، بې‌پلوه وي او د خطي بې‌پلوه اټکلوونکو په ډله کې لږ تر لږه واریانس ولري، غوره خطي بې‌پلوه اټکلوونکی یا BLUE بلل کېږي.\n\nد دوو عددونو د محاسبې هغه قاعده چې داسې واټن جوړ کړي چې د غوښتل شوي پارامټر د لرلو لوړ احتمال ولري، د باور واټن دی.\n\nد L او U ترمنځ سیمې ته د نامعلوم پارامټر θ لپاره د باور واټن یا د باور سیمه یا د منلو سیمه وایي.\n\nد منلو له سیمې بهر سیمه یعنې له −∞ څخه تر L او له U څخه تر ∞ پورې، بحراني سیمه یا د ردولو سیمه بلل کېږي.\n\nهغه احتمال چې پارامټر د ردولو په سیمه کې پروت وي، د معنی‌داریت کچه بلل کېږي او په α ښودل کېږي.",
+   "content": "<p>Key points</p><p>Statistical inference is a process of drawing conclusions (inferences) about the population on the basis of sample information from that population.</p><p>Statistical estimation is a process by which the unknown value of a parameter is obtained from the sample observations.</p><p>When a specific value is obtained from sample observations and is used to estimate the unknown value of the parameter, the process is called point estimation.</p><p>When a range of values is obtained from sample observations within which the unknown value of parameter is believed to lie, the process is called interval estimation.</p><p>A rule, usually expressed as a formula that tells us how to calculate an estimate from the sample data is called an estimator and the resulting number is called an estimate.</p><p>An estimator is said to be unbiased if the mean of its sampling distribution is equal to the true value of the parameter, otherwise the estimator is said to be biased</p><p>If \\hat{\\theta}_1 and \\hat{\\theta}_2 are two unbiased estimators of the same parameter θ and Var(\\hat{\\theta}_1)&lt;Var(\\hat{\\theta}_2) then \\hat{\\theta}_1 is called efficient estimator than \\hat{\\theta}_2.</p><p>An estimator which is linear, unbiased and has minimum variances among a group of linear unbiased estimators is called best linear unbiased estimator or BLUE.</p><p>A rule for calculating two numbers to create an interval which has a high probability of containing the parameter of interest is the confidence interval.</p><p>The region between L and U is called confidence interval or confidence region or acceptance region for the unknown parameter θ.</p><p>The region beyond the acceptance region i.e. from −∞ to L and U to ∞ is known as critical region or rejection region.</p><p>The probability that parameter lies in the rejection region is called significant level and is denoted by α.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 116,
+     "printedPages": [
+      224
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p223-pairs-800-100",
+   "unit": 6,
+   "printedPage": 223,
+   "description": "Example 6.17 prints “Two pairs relieving drugs” (for pain-relieving) and p̂₂ = 800/100 (should be 800/1000; result 0.80 is correct). Printed text retained."
+  }
+ ],
+ "completeUnits": []
+}

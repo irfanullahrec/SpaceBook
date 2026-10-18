@@ -1,0 +1,245 @@
+{
+ "pdfPage": 50,
+ "sections": [
+  {
+   "id": "cs12-u3-text-16",
+   "title": "Unit 3 text (16)",
+   "headingUrdu": "یونٹ 3 — متن (۱۶)",
+   "headingPashto": "۳ څپرکی — متن (۱۶)",
+   "paras": [
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter character for gender\nM\nYou have entered: M",
+     "urdu": "Enter character for gender\nM\nYou have entered: M",
+     "pashto": "Enter character for gender\nM\nYou have entered: M",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This program reads a character from the keyboard using getchar() function and assign it to a character type variable ‘ch’ which is displayed on the screen by another standard library function putchar().",
+     "urdu": "یہ پروگرام getchar() فنکشن کے ذریعے کی بورڈ سے ایک حرف پڑھتا ہے اور اسے حرفی قسم کے ویری ایبل ‘ch’ کو تفویض کرتا ہے جسے ایک اور معیاری لائبریری فنکشن putchar() اسکرین پر دکھاتا ہے۔",
+     "pashto": "دا پروګرام د getchar() فنکشن په مرسته له کیبورډ یو توری لولي او د توري ډول متغیر ‘ch’ ته یې سپاري، چې بیا یې بل معیاري کتابتون فنکشن putchar() پر پرده ښيي."
+    },
+    {
+     "text": "3.3.6 endl and setw Manipulator",
+     "urdu": "3.3.6 endl اور setw مینیپولیٹر",
+     "pashto": "۳.۳.۶ د endl او setw بدلوونکي"
+    },
+    {
+     "text": "Manipulators are used for formatting output. The data is manipulated by the programmer’s choice of display. There are several manipulators available in C++. The most commonly used manipulators are discussed below:",
+     "urdu": "مینیپولیٹرز آؤٹ پٹ کی فارمیٹنگ کے لیے استعمال ہوتے ہیں۔ ڈیٹا کو پروگرامر کی پسند کے مطابق دکھانے کے لیے ترتیب دیا جاتا ہے۔ C++ میں کئی مینیپولیٹرز دستیاب ہیں۔ سب سے زیادہ استعمال ہونے والے مینیپولیٹرز پر ذیل میں بحث کی گئی ہے:",
+     "pashto": "بدلوونکي (manipulators) د وتنې د بڼې ورکولو لپاره کارول کېږي. ډېټا د پروګرام جوړوونکي د خوښې سره سم د ښودلو لپاره بدلېږي. په C++ کې څو بدلوونکي شته. تر ټولو ډېر کارېدونکي یې لاندې بحث شوي:"
+    },
+    {
+     "text": "a. endl manipulator",
+     "urdu": "a. endl مینیپولیٹر",
+     "pashto": "a. endl بدلوونکی"
+    },
+    {
+     "text": "This manipulator has the same functionality as the ‘\\n’ newline character but with the difference of flushing the stream. Consider the following example:",
+     "urdu": "اس مینیپولیٹر کا کام نئی لائن کے حرف ‘\\n’ جیسا ہی ہے لیکن فرق یہ ہے کہ یہ اسٹریم کو خالی (flush) بھی کرتا ہے۔ درج ذیل مثال پر غور کریں:",
+     "pashto": "دا بدلوونکی د ‘\\n’ نوې کرښې توري په څېر دنده لري، خو توپیر یې دا دی چې بهیر هم تشوي (flush). لاندې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "// endl manipulator program\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Welcome\" << endl;\ncout << \"to\" << endl;\ncout << \"the College\";\ngetch();\nreturn 0;\n}",
+     "urdu": "// endl manipulator program\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Welcome\" << endl;\ncout << \"to\" << endl;\ncout << \"the College\";\ngetch();\nreturn 0;\n}",
+     "pashto": "// endl manipulator program\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Welcome\" << endl;\ncout << \"to\" << endl;\ncout << \"the College\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Welcome\nto\nthe College",
+     "urdu": "Welcome\nto\nthe College",
+     "pashto": "Welcome\nto\nthe College",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. setw manipulator",
+     "urdu": "b. setw مینیپولیٹر",
+     "pashto": "b. setw بدلوونکی"
+    },
+    {
+     "text": "This manipulator sets the minimum field width on output. The syntax is:",
+     "urdu": "یہ مینیپولیٹر آؤٹ پٹ پر کم از کم فیلڈ کی چوڑائی مقرر کرتا ہے۔ اس کا طریقۂ تحریر یہ ہے:",
+     "pashto": "دا بدلوونکی په وتنه کې د ساحې لږ تر لږه پلنوالی ټاکي. بڼه یې دا ده:"
+    },
+    {
+     "text": "setw(x)",
+     "urdu": "setw(x)",
+     "pashto": "setw(x)",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, setw causes the number or string that follows it to be printed within a field of x characters wide and x is the argument set in setw manipulator. The header file that must be included while using setw manipulator is <iomanip.h>. Consider the following example:",
+     "urdu": "یہاں setw اپنے بعد آنے والے عدد یا اسٹرنگ کو x حروف چوڑے فیلڈ میں پرنٹ کرواتا ہے اور x وہ آرگیومنٹ ہے جو setw مینیپولیٹر میں دیا جاتا ہے۔ setw مینیپولیٹر استعمال کرتے وقت جو ہیڈر فائل شامل کرنا ضروری ہے وہ <iomanip.h> ہے۔ درج ذیل مثال پر غور کریں:",
+     "pashto": "دلته setw هغه عدد یا تار چې ورپسې راځي، د x توري پلنې ساحې دننه چاپوي او x هغه دلیل دی چې په setw بدلوونکي کې ټاکل کېږي. هغه سرلیک فایل چې د setw د کارولو پر وخت باید شامل شي <iomanip.h> دی. لاندې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "//setw manipulator program\n#include <iostream.h>\n#include <iomanip.h>\n#include<conio.h>\nint main( )\n{\nint x1=2,x2= 4, x3=6;\ncout<<setw(8)<<\"Number\"<<setw(20)<<\"Square\"<<endl\n<< setw(8) << \"2\" << setw(20)<< x1*x1 << endl\n<< setw(8) << \"4\" << setw(20)<< x2*x2 << endl\n<< setw(8) << \"6\" << setw(20)<< x3*x3 << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "//setw manipulator program\n#include <iostream.h>\n#include <iomanip.h>\n#include<conio.h>\nint main( )\n{\nint x1=2,x2= 4, x3=6;\ncout<<setw(8)<<\"Number\"<<setw(20)<<\"Square\"<<endl\n<< setw(8) << \"2\" << setw(20)<< x1*x1 << endl\n<< setw(8) << \"4\" << setw(20)<< x2*x2 << endl\n<< setw(8) << \"6\" << setw(20)<< x3*x3 << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "//setw manipulator program\n#include <iostream.h>\n#include <iomanip.h>\n#include<conio.h>\nint main( )\n{\nint x1=2,x2= 4, x3=6;\ncout<<setw(8)<<\"Number\"<<setw(20)<<\"Square\"<<endl\n<< setw(8) << \"2\" << setw(20)<< x1*x1 << endl\n<< setw(8) << \"4\" << setw(20)<< x2*x2 << endl\n<< setw(8) << \"6\" << setw(20)<< x3*x3 << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "  Number              Square\n       2                   4\n       4                  16\n       6                  36",
+     "urdu": "  Number              Square\n       2                   4\n       4                  16\n       6                  36",
+     "pashto": "  Number              Square\n       2                   4\n       4                  16\n       6                  36",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Output of the Program\n\nEnter character for gender\nM\nYou have entered: M\n\nThis program reads a character from the keyboard using getchar() function and assign it to a character type variable ‘ch’ which is displayed on the screen by another standard library function putchar().\n\n3.3.6 endl and setw Manipulator\n\nManipulators are used for formatting output. The data is manipulated by the programmer’s choice of display. There are several manipulators available in C++. The most commonly used manipulators are discussed below:\n\na. endl manipulator\n\nThis manipulator has the same functionality as the ‘\\n’ newline character but with the difference of flushing the stream. Consider the following example:\n\n// endl manipulator program\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Welcome\" << endl;\ncout << \"to\" << endl;\ncout << \"the College\";\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nWelcome\nto\nthe College\n\nb. setw manipulator\n\nThis manipulator sets the minimum field width on output. The syntax is:\n\nsetw(x)\n\nHere, setw causes the number or string that follows it to be printed within a field of x characters wide and x is the argument set in setw manipulator. The header file that must be included while using setw manipulator is <iomanip.h>. Consider the following example:\n\n//setw manipulator program\n#include <iostream.h>\n#include <iomanip.h>\n#include<conio.h>\nint main( )\n{\nint x1=2,x2= 4, x3=6;\ncout<<setw(8)<<\"Number\"<<setw(20)<<\"Square\"<<endl\n<< setw(8) << \"2\" << setw(20)<< x1*x1 << endl\n<< setw(8) << \"4\" << setw(20)<< x2*x2 << endl\n<< setw(8) << \"6\" << setw(20)<< x3*x3 << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\n  Number              Square\n       2                   4\n       4                  16\n       6                  36",
+   "urdu": "پروگرام کا آؤٹ پٹ\n\nEnter character for gender\nM\nYou have entered: M\n\nیہ پروگرام getchar() فنکشن کے ذریعے کی بورڈ سے ایک حرف پڑھتا ہے اور اسے حرفی قسم کے ویری ایبل ‘ch’ کو تفویض کرتا ہے جسے ایک اور معیاری لائبریری فنکشن putchar() اسکرین پر دکھاتا ہے۔\n\n3.3.6 endl اور setw مینیپولیٹر\n\nمینیپولیٹرز آؤٹ پٹ کی فارمیٹنگ کے لیے استعمال ہوتے ہیں۔ ڈیٹا کو پروگرامر کی پسند کے مطابق دکھانے کے لیے ترتیب دیا جاتا ہے۔ C++ میں کئی مینیپولیٹرز دستیاب ہیں۔ سب سے زیادہ استعمال ہونے والے مینیپولیٹرز پر ذیل میں بحث کی گئی ہے:\n\na. endl مینیپولیٹر\n\nاس مینیپولیٹر کا کام نئی لائن کے حرف ‘\\n’ جیسا ہی ہے لیکن فرق یہ ہے کہ یہ اسٹریم کو خالی (flush) بھی کرتا ہے۔ درج ذیل مثال پر غور کریں:\n\n// endl manipulator program\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Welcome\" << endl;\ncout << \"to\" << endl;\ncout << \"the College\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome\nto\nthe College\n\nb. setw مینیپولیٹر\n\nیہ مینیپولیٹر آؤٹ پٹ پر کم از کم فیلڈ کی چوڑائی مقرر کرتا ہے۔ اس کا طریقۂ تحریر یہ ہے:\n\nsetw(x)\n\nیہاں setw اپنے بعد آنے والے عدد یا اسٹرنگ کو x حروف چوڑے فیلڈ میں پرنٹ کرواتا ہے اور x وہ آرگیومنٹ ہے جو setw مینیپولیٹر میں دیا جاتا ہے۔ setw مینیپولیٹر استعمال کرتے وقت جو ہیڈر فائل شامل کرنا ضروری ہے وہ <iomanip.h> ہے۔ درج ذیل مثال پر غور کریں:\n\n//setw manipulator program\n#include <iostream.h>\n#include <iomanip.h>\n#include<conio.h>\nint main( )\n{\nint x1=2,x2= 4, x3=6;\ncout<<setw(8)<<\"Number\"<<setw(20)<<\"Square\"<<endl\n<< setw(8) << \"2\" << setw(20)<< x1*x1 << endl\n<< setw(8) << \"4\" << setw(20)<< x2*x2 << endl\n<< setw(8) << \"6\" << setw(20)<< x3*x3 << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n  Number              Square\n       2                   4\n       4                  16\n       6                  36",
+   "pashto": "د پروګرام وتنه\n\nEnter character for gender\nM\nYou have entered: M\n\nدا پروګرام د getchar() فنکشن په مرسته له کیبورډ یو توری لولي او د توري ډول متغیر ‘ch’ ته یې سپاري، چې بیا یې بل معیاري کتابتون فنکشن putchar() پر پرده ښيي.\n\n۳.۳.۶ د endl او setw بدلوونکي\n\nبدلوونکي (manipulators) د وتنې د بڼې ورکولو لپاره کارول کېږي. ډېټا د پروګرام جوړوونکي د خوښې سره سم د ښودلو لپاره بدلېږي. په C++ کې څو بدلوونکي شته. تر ټولو ډېر کارېدونکي یې لاندې بحث شوي:\n\na. endl بدلوونکی\n\nدا بدلوونکی د ‘\\n’ نوې کرښې توري په څېر دنده لري، خو توپیر یې دا دی چې بهیر هم تشوي (flush). لاندې بېلګې ته پام وکړئ:\n\n// endl manipulator program\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Welcome\" << endl;\ncout << \"to\" << endl;\ncout << \"the College\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome\nto\nthe College\n\nb. setw بدلوونکی\n\nدا بدلوونکی په وتنه کې د ساحې لږ تر لږه پلنوالی ټاکي. بڼه یې دا ده:\n\nsetw(x)\n\nدلته setw هغه عدد یا تار چې ورپسې راځي، د x توري پلنې ساحې دننه چاپوي او x هغه دلیل دی چې په setw بدلوونکي کې ټاکل کېږي. هغه سرلیک فایل چې د setw د کارولو پر وخت باید شامل شي <iomanip.h> دی. لاندې بېلګې ته پام وکړئ:\n\n//setw manipulator program\n#include <iostream.h>\n#include <iomanip.h>\n#include<conio.h>\nint main( )\n{\nint x1=2,x2= 4, x3=6;\ncout<<setw(8)<<\"Number\"<<setw(20)<<\"Square\"<<endl\n<< setw(8) << \"2\" << setw(20)<< x1*x1 << endl\n<< setw(8) << \"4\" << setw(20)<< x2*x2 << endl\n<< setw(8) << \"6\" << setw(20)<< x3*x3 << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n  Number              Square\n       2                   4\n       4                  16\n       6                  36",
+   "theoryUrdu": "پروگرام کا آؤٹ پٹ\n\nEnter character for gender\nM\nYou have entered: M\n\nیہ پروگرام getchar() فنکشن کے ذریعے کی بورڈ سے ایک حرف پڑھتا ہے اور اسے حرفی قسم کے ویری ایبل ‘ch’ کو تفویض کرتا ہے جسے ایک اور معیاری لائبریری فنکشن putchar() اسکرین پر دکھاتا ہے۔\n\n3.3.6 endl اور setw مینیپولیٹر\n\nمینیپولیٹرز آؤٹ پٹ کی فارمیٹنگ کے لیے استعمال ہوتے ہیں۔ ڈیٹا کو پروگرامر کی پسند کے مطابق دکھانے کے لیے ترتیب دیا جاتا ہے۔ C++ میں کئی مینیپولیٹرز دستیاب ہیں۔ سب سے زیادہ استعمال ہونے والے مینیپولیٹرز پر ذیل میں بحث کی گئی ہے:\n\na. endl مینیپولیٹر\n\nاس مینیپولیٹر کا کام نئی لائن کے حرف ‘\\n’ جیسا ہی ہے لیکن فرق یہ ہے کہ یہ اسٹریم کو خالی (flush) بھی کرتا ہے۔ درج ذیل مثال پر غور کریں:\n\n// endl manipulator program\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Welcome\" << endl;\ncout << \"to\" << endl;\ncout << \"the College\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome\nto\nthe College\n\nb. setw مینیپولیٹر\n\nیہ مینیپولیٹر آؤٹ پٹ پر کم از کم فیلڈ کی چوڑائی مقرر کرتا ہے۔ اس کا طریقۂ تحریر یہ ہے:\n\nsetw(x)\n\nیہاں setw اپنے بعد آنے والے عدد یا اسٹرنگ کو x حروف چوڑے فیلڈ میں پرنٹ کرواتا ہے اور x وہ آرگیومنٹ ہے جو setw مینیپولیٹر میں دیا جاتا ہے۔ setw مینیپولیٹر استعمال کرتے وقت جو ہیڈر فائل شامل کرنا ضروری ہے وہ <iomanip.h> ہے۔ درج ذیل مثال پر غور کریں:\n\n//setw manipulator program\n#include <iostream.h>\n#include <iomanip.h>\n#include<conio.h>\nint main( )\n{\nint x1=2,x2= 4, x3=6;\ncout<<setw(8)<<\"Number\"<<setw(20)<<\"Square\"<<endl\n<< setw(8) << \"2\" << setw(20)<< x1*x1 << endl\n<< setw(8) << \"4\" << setw(20)<< x2*x2 << endl\n<< setw(8) << \"6\" << setw(20)<< x3*x3 << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n  Number              Square\n       2                   4\n       4                  16\n       6                  36",
+   "theoryPashto": "د پروګرام وتنه\n\nEnter character for gender\nM\nYou have entered: M\n\nدا پروګرام د getchar() فنکشن په مرسته له کیبورډ یو توری لولي او د توري ډول متغیر ‘ch’ ته یې سپاري، چې بیا یې بل معیاري کتابتون فنکشن putchar() پر پرده ښيي.\n\n۳.۳.۶ د endl او setw بدلوونکي\n\nبدلوونکي (manipulators) د وتنې د بڼې ورکولو لپاره کارول کېږي. ډېټا د پروګرام جوړوونکي د خوښې سره سم د ښودلو لپاره بدلېږي. په C++ کې څو بدلوونکي شته. تر ټولو ډېر کارېدونکي یې لاندې بحث شوي:\n\na. endl بدلوونکی\n\nدا بدلوونکی د ‘\\n’ نوې کرښې توري په څېر دنده لري، خو توپیر یې دا دی چې بهیر هم تشوي (flush). لاندې بېلګې ته پام وکړئ:\n\n// endl manipulator program\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Welcome\" << endl;\ncout << \"to\" << endl;\ncout << \"the College\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome\nto\nthe College\n\nb. setw بدلوونکی\n\nدا بدلوونکی په وتنه کې د ساحې لږ تر لږه پلنوالی ټاکي. بڼه یې دا ده:\n\nsetw(x)\n\nدلته setw هغه عدد یا تار چې ورپسې راځي، د x توري پلنې ساحې دننه چاپوي او x هغه دلیل دی چې په setw بدلوونکي کې ټاکل کېږي. هغه سرلیک فایل چې د setw د کارولو پر وخت باید شامل شي <iomanip.h> دی. لاندې بېلګې ته پام وکړئ:\n\n//setw manipulator program\n#include <iostream.h>\n#include <iomanip.h>\n#include<conio.h>\nint main( )\n{\nint x1=2,x2= 4, x3=6;\ncout<<setw(8)<<\"Number\"<<setw(20)<<\"Square\"<<endl\n<< setw(8) << \"2\" << setw(20)<< x1*x1 << endl\n<< setw(8) << \"4\" << setw(20)<< x2*x2 << endl\n<< setw(8) << \"6\" << setw(20)<< x3*x3 << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n  Number              Square\n       2                   4\n       4                  16\n       6                  36",
+   "content": "<p>Output of the Program</p><p>Enter character for gender\nM\nYou have entered: M</p><p>This program reads a character from the keyboard using getchar() function and assign it to a character type variable ‘ch’ which is displayed on the screen by another standard library function putchar().</p><p>3.3.6 endl and setw Manipulator</p><p>Manipulators are used for formatting output. The data is manipulated by the programmer’s choice of display. There are several manipulators available in C++. The most commonly used manipulators are discussed below:</p><p>a. endl manipulator</p><p>This manipulator has the same functionality as the ‘\\n’ newline character but with the difference of flushing the stream. Consider the following example:</p><p>// endl manipulator program\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\ncout &lt;&lt; &quot;Welcome&quot; &lt;&lt; endl;\ncout &lt;&lt; &quot;to&quot; &lt;&lt; endl;\ncout &lt;&lt; &quot;the College&quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Welcome\nto\nthe College</p><p>b. setw manipulator</p><p>This manipulator sets the minimum field width on output. The syntax is:</p><p>setw(x)</p><p>Here, setw causes the number or string that follows it to be printed within a field of x characters wide and x is the argument set in setw manipulator. The header file that must be included while using setw manipulator is &lt;iomanip.h&gt;. Consider the following example:</p><p>//setw manipulator program\n#include &lt;iostream.h&gt;\n#include &lt;iomanip.h&gt;\n#include&lt;conio.h&gt;\nint main( )\n{\nint x1=2,x2= 4, x3=6;\ncout&lt;&lt;setw(8)&lt;&lt;&quot;Number&quot;&lt;&lt;setw(20)&lt;&lt;&quot;Square&quot;&lt;&lt;endl\n&lt;&lt; setw(8) &lt;&lt; &quot;2&quot; &lt;&lt; setw(20)&lt;&lt; x1*x1 &lt;&lt; endl\n&lt;&lt; setw(8) &lt;&lt; &quot;4&quot; &lt;&lt; setw(20)&lt;&lt; x2*x2 &lt;&lt; endl\n&lt;&lt; setw(8) &lt;&lt; &quot;6&quot; &lt;&lt; setw(20)&lt;&lt; x3*x3 &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>  Number              Square\n       2                   4\n       4                  16\n       6                  36</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 50,
+     "printedPages": [
+      88,
+      89,
+      90
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (16)",
+   "sourcePageLabel": "PDF 50 · p. 88–89–90",
+   "sourceNote": "The first lines of p.88 complete the getchar()/putchar() listing recorded with PDF49. The setw listing continues on p.90 (PDF51) and is given whole with its output; the output columns are shown right-aligned as setw produces them (the scan shows them loosely aligned).",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf050",
+   "unit": 3,
+   "printedPage": 89,
+   "description": "The setw listing prints the quoted digits with curly quotes (“2”, “4”, “6”); normalised to straight quotes. p.88 “read a character … and assign it”. Retained otherwise."
+  }
+ ],
+ "completeUnits": []
+}

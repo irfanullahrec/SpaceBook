@@ -1,0 +1,144 @@
+{
+ "pdfPage": 66,
+ "sections": [
+  {
+   "id": "cs12-u4-text-6",
+   "title": "Unit 4 text (6)",
+   "headingUrdu": "یونٹ 4 — متن (۶)",
+   "headingPashto": "۴ څپرکی — متن (۶)",
+   "paras": [
+    {
+     "text": "Consider another program demonstrating nested if-else structure by displaying whether an entered integer is multiple of 2 or 3 or is some other number.",
+     "urdu": "ایک اور پروگرام پر غور کریں جو نیسٹڈ if-else ساخت کو یہ دکھا کر واضح کرتا ہے کہ داخل کیا گیا صحیح عدد 2 یا 3 کا مضرب ہے یا کوئی اور عدد ہے۔",
+     "pashto": "بل پروګرام ته پام وکړئ چې ځالې if-else جوړښت په دې ښودلو روښانه کوي چې لیکل شوی صحیح عدد د 2 یا 3 مضرب دی که بل عدد."
+    },
+    {
+     "text": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n;\ncout<<\"Enter a number: \";\ncin>>n;\nif (n%2== 0)\ncout << n<< \" is multiple of 2\";\nelse\nif (n %3== 0)\ncout << n<< \" is multiple of 3\";\nelse\ncout << n<< \" is neither multiple of 2 nor 3\";\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n;\ncout<<\"Enter a number: \";\ncin>>n;\nif (n%2== 0)\ncout << n<< \" is multiple of 2\";\nelse\nif (n %3== 0)\ncout << n<< \" is multiple of 3\";\nelse\ncout << n<< \" is neither multiple of 2 nor 3\";\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n;\ncout<<\"Enter a number: \";\ncin>>n;\nif (n%2== 0)\ncout << n<< \" is multiple of 2\";\nelse\nif (n %3== 0)\ncout << n<< \" is multiple of 3\";\nelse\ncout << n<< \" is neither multiple of 2 nor 3\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter a number:\n55\n55 is neither multiple of 2 nor 3",
+     "urdu": "Enter a number:\n55\n55 is neither multiple of 2 nor 3",
+     "pashto": "Enter a number:\n55\n55 is neither multiple of 2 nor 3",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Consider another example demonstrating nested if-else structure to display the grades of students. This program takes percentage marks as input and then using relational and logical operators find its corresponding grade.",
+     "urdu": "ایک اور مثال پر غور کریں جو طلبہ کے گریڈ دکھانے کے لیے نیسٹڈ if-else ساخت کی وضاحت کرتی ہے۔ یہ پروگرام فیصد نمبر ان پٹ کے طور پر لیتا ہے اور پھر ریلیشنل اور منطقی آپریٹرز کے ذریعے متعلقہ گریڈ معلوم کرتا ہے۔",
+     "pashto": "بله بېلګه وګورئ چې د زده‌کوونکو د درجو د ښودلو لپاره ځالې if-else جوړښت ښيي. دا پروګرام سلنیزې نمرې د ننوتنې په توګه اخلي او بیا د اړیکه‌ییزو او منطقي چلونکو په مرسته اړونده درجه پیدا کوي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat per;\ncout<<\"Enter percentage marks: \"<<endl;\ncin>>per;\nif (per >= 80)\n{\ncout << \"Your grade is A+\"<<endl;\ncout<< \"Excellent\";\n} else\n{\nif (per < 80 && per>=70)\n{\ncout << \"Your grade is A\"<<endl;\ncout<< \"Very good\";\n} else\n{\nif(per<70 && per>=60)\n{\ncout << \"Your grade is B\"<<endl;\ncout<< \"Good\";\n}else\ncout<<\"You are failed, try again\";\n}\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat per;\ncout<<\"Enter percentage marks: \"<<endl;\ncin>>per;\nif (per >= 80)\n{\ncout << \"Your grade is A+\"<<endl;\ncout<< \"Excellent\";\n} else\n{\nif (per < 80 && per>=70)\n{\ncout << \"Your grade is A\"<<endl;\ncout<< \"Very good\";\n} else\n{\nif(per<70 && per>=60)\n{\ncout << \"Your grade is B\"<<endl;\ncout<< \"Good\";\n}else\ncout<<\"You are failed, try again\";\n}\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat per;\ncout<<\"Enter percentage marks: \"<<endl;\ncin>>per;\nif (per >= 80)\n{\ncout << \"Your grade is A+\"<<endl;\ncout<< \"Excellent\";\n} else\n{\nif (per < 80 && per>=70)\n{\ncout << \"Your grade is A\"<<endl;\ncout<< \"Very good\";\n} else\n{\nif(per<70 && per>=60)\n{\ncout << \"Your grade is B\"<<endl;\ncout<< \"Good\";\n}else\ncout<<\"You are failed, try again\";\n}\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter percentage marks:\n65.09\nYour grade is B\nGood",
+     "urdu": "Enter percentage marks:\n65.09\nYour grade is B\nGood",
+     "pashto": "Enter percentage marks:\n65.09\nYour grade is B\nGood",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Consider another program demonstrating nested if-else structure by displaying whether an entered integer is multiple of 2 or 3 or is some other number.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n;\ncout<<\"Enter a number: \";\ncin>>n;\nif (n%2== 0)\ncout << n<< \" is multiple of 2\";\nelse\nif (n %3== 0)\ncout << n<< \" is multiple of 3\";\nelse\ncout << n<< \" is neither multiple of 2 nor 3\";\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nEnter a number:\n55\n55 is neither multiple of 2 nor 3\n\nConsider another example demonstrating nested if-else structure to display the grades of students. This program takes percentage marks as input and then using relational and logical operators find its corresponding grade.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat per;\ncout<<\"Enter percentage marks: \"<<endl;\ncin>>per;\nif (per >= 80)\n{\ncout << \"Your grade is A+\"<<endl;\ncout<< \"Excellent\";\n} else\n{\nif (per < 80 && per>=70)\n{\ncout << \"Your grade is A\"<<endl;\ncout<< \"Very good\";\n} else\n{\nif(per<70 && per>=60)\n{\ncout << \"Your grade is B\"<<endl;\ncout<< \"Good\";\n}else\ncout<<\"You are failed, try again\";\n}\n}\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nEnter percentage marks:\n65.09\nYour grade is B\nGood",
+   "urdu": "ایک اور پروگرام پر غور کریں جو نیسٹڈ if-else ساخت کو یہ دکھا کر واضح کرتا ہے کہ داخل کیا گیا صحیح عدد 2 یا 3 کا مضرب ہے یا کوئی اور عدد ہے۔\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n;\ncout<<\"Enter a number: \";\ncin>>n;\nif (n%2== 0)\ncout << n<< \" is multiple of 2\";\nelse\nif (n %3== 0)\ncout << n<< \" is multiple of 3\";\nelse\ncout << n<< \" is neither multiple of 2 nor 3\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number:\n55\n55 is neither multiple of 2 nor 3\n\nایک اور مثال پر غور کریں جو طلبہ کے گریڈ دکھانے کے لیے نیسٹڈ if-else ساخت کی وضاحت کرتی ہے۔ یہ پروگرام فیصد نمبر ان پٹ کے طور پر لیتا ہے اور پھر ریلیشنل اور منطقی آپریٹرز کے ذریعے متعلقہ گریڈ معلوم کرتا ہے۔\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat per;\ncout<<\"Enter percentage marks: \"<<endl;\ncin>>per;\nif (per >= 80)\n{\ncout << \"Your grade is A+\"<<endl;\ncout<< \"Excellent\";\n} else\n{\nif (per < 80 && per>=70)\n{\ncout << \"Your grade is A\"<<endl;\ncout<< \"Very good\";\n} else\n{\nif(per<70 && per>=60)\n{\ncout << \"Your grade is B\"<<endl;\ncout<< \"Good\";\n}else\ncout<<\"You are failed, try again\";\n}\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter percentage marks:\n65.09\nYour grade is B\nGood",
+   "pashto": "بل پروګرام ته پام وکړئ چې ځالې if-else جوړښت په دې ښودلو روښانه کوي چې لیکل شوی صحیح عدد د 2 یا 3 مضرب دی که بل عدد.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n;\ncout<<\"Enter a number: \";\ncin>>n;\nif (n%2== 0)\ncout << n<< \" is multiple of 2\";\nelse\nif (n %3== 0)\ncout << n<< \" is multiple of 3\";\nelse\ncout << n<< \" is neither multiple of 2 nor 3\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number:\n55\n55 is neither multiple of 2 nor 3\n\nبله بېلګه وګورئ چې د زده‌کوونکو د درجو د ښودلو لپاره ځالې if-else جوړښت ښيي. دا پروګرام سلنیزې نمرې د ننوتنې په توګه اخلي او بیا د اړیکه‌ییزو او منطقي چلونکو په مرسته اړونده درجه پیدا کوي.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat per;\ncout<<\"Enter percentage marks: \"<<endl;\ncin>>per;\nif (per >= 80)\n{\ncout << \"Your grade is A+\"<<endl;\ncout<< \"Excellent\";\n} else\n{\nif (per < 80 && per>=70)\n{\ncout << \"Your grade is A\"<<endl;\ncout<< \"Very good\";\n} else\n{\nif(per<70 && per>=60)\n{\ncout << \"Your grade is B\"<<endl;\ncout<< \"Good\";\n}else\ncout<<\"You are failed, try again\";\n}\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter percentage marks:\n65.09\nYour grade is B\nGood",
+   "theoryUrdu": "ایک اور پروگرام پر غور کریں جو نیسٹڈ if-else ساخت کو یہ دکھا کر واضح کرتا ہے کہ داخل کیا گیا صحیح عدد 2 یا 3 کا مضرب ہے یا کوئی اور عدد ہے۔\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n;\ncout<<\"Enter a number: \";\ncin>>n;\nif (n%2== 0)\ncout << n<< \" is multiple of 2\";\nelse\nif (n %3== 0)\ncout << n<< \" is multiple of 3\";\nelse\ncout << n<< \" is neither multiple of 2 nor 3\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number:\n55\n55 is neither multiple of 2 nor 3\n\nایک اور مثال پر غور کریں جو طلبہ کے گریڈ دکھانے کے لیے نیسٹڈ if-else ساخت کی وضاحت کرتی ہے۔ یہ پروگرام فیصد نمبر ان پٹ کے طور پر لیتا ہے اور پھر ریلیشنل اور منطقی آپریٹرز کے ذریعے متعلقہ گریڈ معلوم کرتا ہے۔\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat per;\ncout<<\"Enter percentage marks: \"<<endl;\ncin>>per;\nif (per >= 80)\n{\ncout << \"Your grade is A+\"<<endl;\ncout<< \"Excellent\";\n} else\n{\nif (per < 80 && per>=70)\n{\ncout << \"Your grade is A\"<<endl;\ncout<< \"Very good\";\n} else\n{\nif(per<70 && per>=60)\n{\ncout << \"Your grade is B\"<<endl;\ncout<< \"Good\";\n}else\ncout<<\"You are failed, try again\";\n}\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter percentage marks:\n65.09\nYour grade is B\nGood",
+   "theoryPashto": "بل پروګرام ته پام وکړئ چې ځالې if-else جوړښت په دې ښودلو روښانه کوي چې لیکل شوی صحیح عدد د 2 یا 3 مضرب دی که بل عدد.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n;\ncout<<\"Enter a number: \";\ncin>>n;\nif (n%2== 0)\ncout << n<< \" is multiple of 2\";\nelse\nif (n %3== 0)\ncout << n<< \" is multiple of 3\";\nelse\ncout << n<< \" is neither multiple of 2 nor 3\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number:\n55\n55 is neither multiple of 2 nor 3\n\nبله بېلګه وګورئ چې د زده‌کوونکو د درجو د ښودلو لپاره ځالې if-else جوړښت ښيي. دا پروګرام سلنیزې نمرې د ننوتنې په توګه اخلي او بیا د اړیکه‌ییزو او منطقي چلونکو په مرسته اړونده درجه پیدا کوي.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat per;\ncout<<\"Enter percentage marks: \"<<endl;\ncin>>per;\nif (per >= 80)\n{\ncout << \"Your grade is A+\"<<endl;\ncout<< \"Excellent\";\n} else\n{\nif (per < 80 && per>=70)\n{\ncout << \"Your grade is A\"<<endl;\ncout<< \"Very good\";\n} else\n{\nif(per<70 && per>=60)\n{\ncout << \"Your grade is B\"<<endl;\ncout<< \"Good\";\n}else\ncout<<\"You are failed, try again\";\n}\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter percentage marks:\n65.09\nYour grade is B\nGood",
+   "content": "<p>Consider another program demonstrating nested if-else structure by displaying whether an entered integer is multiple of 2 or 3 or is some other number.</p><p>#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint n;\ncout&lt;&lt;&quot;Enter a number: &quot;;\ncin&gt;&gt;n;\nif (n%2== 0)\ncout &lt;&lt; n&lt;&lt; &quot; is multiple of 2&quot;;\nelse\nif (n %3== 0)\ncout &lt;&lt; n&lt;&lt; &quot; is multiple of 3&quot;;\nelse\ncout &lt;&lt; n&lt;&lt; &quot; is neither multiple of 2 nor 3&quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Enter a number:\n55\n55 is neither multiple of 2 nor 3</p><p>Consider another example demonstrating nested if-else structure to display the grades of students. This program takes percentage marks as input and then using relational and logical operators find its corresponding grade.</p><p>#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nfloat per;\ncout&lt;&lt;&quot;Enter percentage marks: &quot;&lt;&lt;endl;\ncin&gt;&gt;per;\nif (per &gt;= 80)\n{\ncout &lt;&lt; &quot;Your grade is A+&quot;&lt;&lt;endl;\ncout&lt;&lt; &quot;Excellent&quot;;\n} else\n{\nif (per &lt; 80 &amp;&amp; per&gt;=70)\n{\ncout &lt;&lt; &quot;Your grade is A&quot;&lt;&lt;endl;\ncout&lt;&lt; &quot;Very good&quot;;\n} else\n{\nif(per&lt;70 &amp;&amp; per&gt;=60)\n{\ncout &lt;&lt; &quot;Your grade is B&quot;&lt;&lt;endl;\ncout&lt;&lt; &quot;Good&quot;;\n}else\ncout&lt;&lt;&quot;You are failed, try again&quot;;\n}\n}\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Enter percentage marks:\n65.09\nYour grade is B\nGood</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 66,
+     "printedPages": [
+      120,
+      121,
+      122
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (6)",
+   "sourcePageLabel": "PDF 66 · p. 120–121–122",
+   "sourceNote": "The grades program continues on p.122 (PDF67) and is given whole here with its output.",
+   "unit": 4
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf066",
+   "unit": 4,
+   "printedPage": 121,
+   "description": "The grades listing prints some cout strings with curly quotes; normalised. The program prints “You are failed, try again” for any percentage below 60 — retained."
+  }
+ ],
+ "completeUnits": []
+}

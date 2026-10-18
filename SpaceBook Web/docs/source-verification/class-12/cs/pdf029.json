@@ -1,0 +1,238 @@
+{
+ "pdfPage": 29,
+ "sections": [
+  {
+   "id": "cs12-u2-text-8",
+   "title": "Unit 2 text (8)",
+   "headingUrdu": "یونٹ 2 — متن (۸)",
+   "headingPashto": "۲ څپرکی — متن (۸)",
+   "paras": [
+    {
+     "text": "/* program to display result s of the students*/\n#include <iostream.h>\n#include<conio.h>\nint main ()\n{\nfloat Percentage;\ncout<< \"Enter Percentage of the student\"<<endl;\ncin>> Percentage;\nif (Percentage >=60.0)\ncout<< \"Passed\";\nelse\ncout<< \"Failed\";\ngetch();\nreturn 0;\n}",
+     "urdu": "/* program to display result s of the students*/\n#include <iostream.h>\n#include<conio.h>\nint main ()\n{\nfloat Percentage;\ncout<< \"Enter Percentage of the student\"<<endl;\ncin>> Percentage;\nif (Percentage >=60.0)\ncout<< \"Passed\";\nelse\ncout<< \"Failed\";\ngetch();\nreturn 0;\n}",
+     "pashto": "/* program to display result s of the students*/\n#include <iostream.h>\n#include<conio.h>\nint main ()\n{\nfloat Percentage;\ncout<< \"Enter Percentage of the student\"<<endl;\ncin>> Percentage;\nif (Percentage >=60.0)\ncout<< \"Passed\";\nelse\ncout<< \"Failed\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "g. Testing/Verification",
+     "urdu": "g. جانچ/تصدیق",
+     "pashto": "g. ازموینه/تایید"
+    },
+    {
+     "text": "The execution of a program to find its errors is called testing. Here, the bugs are identified in the programmed modules. The purpose of testing is to evaluate an attribute or capability of a program or system and determine that whether it meets its required results. Testing/verification the software is actually operating the software under controlled conditions. It is the process of checking the items for consistency by evaluating the results against pre-specified requirements.",
+     "urdu": "کسی پروگرام کو اس کی خرابیاں تلاش کرنے کے لیے چلانا جانچ (ٹیسٹنگ) کہلاتا ہے۔ یہاں پروگرام شدہ ماڈیولز میں خامیوں (bugs) کی نشاندہی کی جاتی ہے۔ جانچ کا مقصد کسی پروگرام یا نظام کی کسی خصوصیت یا صلاحیت کا جائزہ لینا اور یہ طے کرنا ہے کہ آیا وہ مطلوبہ نتائج پورے کرتا ہے۔ سافٹ ویئر کی جانچ/تصدیق دراصل سافٹ ویئر کو کنٹرول شدہ حالات میں چلانا ہے۔ یہ پہلے سے متعین ضروریات کے مقابلے میں نتائج کا جائزہ لے کر اشیاء کی ہم آہنگی جانچنے کا عمل ہے۔",
+     "pashto": "د یوه پروګرام اجرا د هغه د تېروتنو د موندلو لپاره ازموینه بلل کېږي. دلته په پروګرام شویو ماډیولونو کې نیمګړتیاوې (bugs) پېژندل کېږي. د ازموینې موخه د یوه پروګرام یا سیسټم د یوې ځانګړنې یا وړتیا ارزونه او دا ټاکل دي چې ایا اړینې پایلې پوره کوي. د سافټویر ازموینه/تایید په حقیقت کې د سافټویر په کنټرول شوو شرایطو کې چلول دي. دا د مخکې ټاکل شوو اړتیاوو په وړاندې د پایلو په ارزونې سره د توکو د همغږۍ د کتنې بهیر دی."
+    },
+    {
+     "text": "h. Deployment / Implementation",
+     "urdu": "h. تعیناتی / نفاذ",
+     "pashto": "h. ځای پر ځای کول / پلي کول"
+    },
+    {
+     "text": "Software deployment is a set of activities that are used to make the software system available for use. The deployment is also called implementation. Its activities occur at the producer site or at the consumer site or both. Because every software system is unique, the precise processes or procedures within each activity are different from others and thus cannot be clearly defined.",
+     "urdu": "سافٹ ویئر کی تعیناتی سرگرمیوں کا ایک مجموعہ ہے جو سافٹ ویئر سسٹم کو استعمال کے لیے دستیاب بنانے کے لیے کی جاتی ہیں۔ تعیناتی کو نفاذ بھی کہا جاتا ہے۔ اس کی سرگرمیاں تیار کنندہ کے مقام پر یا صارف کے مقام پر یا دونوں جگہ ہوتی ہیں۔ چونکہ ہر سافٹ ویئر سسٹم منفرد ہوتا ہے، اس لیے ہر سرگرمی کے اندر درست عمل یا طریقۂ کار دوسروں سے مختلف ہوتے ہیں اور انھیں واضح طور پر متعین نہیں کیا جا سکتا۔",
+     "pashto": "د سافټویر ځای پر ځای کول د فعالیتونو یوه ټولګه ده چې سافټویري سیسټم د کارونې لپاره برابرولو ته کارول کېږي. ځای پر ځای کولو ته پلي کول هم ویل کېږي. فعالیتونه یې د جوړوونکي په ځای یا د مصرفوونکي په ځای یا دواړو کې کېږي. څرنګه چې هر سافټویري سیسټم ځانګړی دی، د هر فعالیت دننه دقیقې پروسې یا کړنلارې له نورو توپیر لري او په روښانه ډول نه شي ټاکل کېدای."
+    },
+    {
+     "text": "The main activities that are involved during deployment are:",
+     "urdu": "تعیناتی کے دوران شامل اہم سرگرمیاں یہ ہیں:",
+     "pashto": "د ځای پر ځای کولو پر مهال اصلي فعالیتونه دا دي:"
+    },
+    {
+     "text": "Installation and activation of the equipments and software.",
+     "urdu": "آلات اور سافٹ ویئر کی تنصیب اور فعالیت۔",
+     "pashto": "د وسایلو او سافټویر نصبول او فعالول."
+    },
+    {
+     "text": "In some cases the users and the computer operation personals are trained on the developed software system.",
+     "urdu": "بعض صورتوں میں صارفین اور کمپیوٹر آپریشن کے عملے کو تیار شدہ سافٹ ویئر سسٹم کی تربیت دی جاتی ہے۔",
+     "pashto": "په ځینو حالاتو کې کاروونکي او د کمپیوټري چارو کارکوونکي پر جوړ شوي سافټویري سیسټم روزل کېږي."
+    },
+    {
+     "text": "Conversion: The process of changing from the old system to the new one is called conversion.",
+     "urdu": "تبدیلی: پرانے نظام سے نئے نظام میں تبدیلی کے عمل کو کنورژن کہتے ہیں۔",
+     "pashto": "بدلون: له زوړ سیسټم څخه نوي ته د بدلون بهیر ته کنورژن (conversion) ویل کېږي."
+    },
+    {
+     "text": "i. Maintenance / Support",
+     "urdu": "i. دیکھ بھال / معاونت",
+     "pashto": "i. ساتنه / ملاتړ"
+    },
+    {
+     "text": "Keeping a system in its proper working condition is called maintenance. In other words, it can also be defined as the modification of a software product after delivery to correct faults, to improve performance. Maintenance is an important activity that takes place throughout the life of software in both the computer equipments and computer software. Programmers spend more time in maintaining programs than writing them.",
+     "urdu": "کسی نظام کو اس کی درست کام کرنے کی حالت میں رکھنا دیکھ بھال (مینٹیننس) کہلاتا ہے۔ دوسرے لفظوں میں اسے خرابیاں دور کرنے اور کارکردگی بہتر بنانے کے لیے فراہمی کے بعد سافٹ ویئر پروڈکٹ میں ترمیم کے طور پر بھی بیان کیا جا سکتا ہے۔ دیکھ بھال ایک اہم سرگرمی ہے جو کمپیوٹر آلات اور کمپیوٹر سافٹ ویئر دونوں میں سافٹ ویئر کی پوری زندگی میں جاری رہتی ہے۔ پروگرامرز پروگرام لکھنے سے زیادہ وقت ان کی دیکھ بھال میں صرف کرتے ہیں۔",
+     "pashto": "د یوه سیسټم په سم کاري حالت کې ساتل ساتنه بلل کېږي. په بل عبارت، دا د تېروتنو د سمولو او د کارکردګۍ د ښه کولو لپاره له سپارلو وروسته د سافټویري محصول د بدلون په توګه هم تعریفېدای شي. ساتنه یو مهم فعالیت دی چې د سافټویر په ټول ژوند کې په کمپیوټري وسایلو او کمپیوټري سافټویر دواړو کې ترسره کېږي. پروګرام جوړوونکي د پروګرامونو په ساتنه کې تر لیکلو ډېر وخت لګوي."
+    },
+    {
+     "text": "In SDLC, the system maintenance is an ongoing process. The system is monitored continually for performance in accordance with user requirements and needed system modifications are incorporated. When modifications are identified, the system may reenter the planning phase. This process continues until a complete solution is provided to the customer. Maintenance can be either be repairing or modification or some enhancement in the existing system.",
+     "urdu": "SDLC میں نظام کی دیکھ بھال ایک جاری عمل ہے۔ صارف کی ضروریات کے مطابق کارکردگی کے لیے نظام کی مسلسل نگرانی کی جاتی ہے اور ضروری ترامیم شامل کی جاتی ہیں۔ جب ترامیم کی نشاندہی ہو تو نظام دوبارہ منصوبہ بندی کے مرحلے میں داخل ہو سکتا ہے۔ یہ عمل اس وقت تک جاری رہتا ہے جب تک گاہک کو مکمل حل فراہم نہ ہو جائے۔ دیکھ بھال موجودہ نظام کی مرمت، ترمیم یا کچھ بہتری ہو سکتی ہے۔",
+     "pashto": "په SDLC کې د سیسټم ساتنه دوامداره بهیر دی. سیسټم د کاروونکي د اړتیاوو سره سم د کارکردګۍ لپاره په دوامداره ډول څارل کېږي او اړین بدلونونه پکې شاملېږي. کله چې بدلونونه وپېژندل شي، سیسټم کېدای شي بېرته د پلان جوړونې پړاو ته ننوځي. دا بهیر تر هغه دوام کوي چې پېرودونکي ته بشپړ حل برابر شي. ساتنه کېدای شي په اوسني سیسټم کې ترمیم، بدلون یا یو څه ښه والی وي."
+    },
+    {
+     "text": "2.1.6 Role of the Personnel involved in SDLC",
+     "urdu": "2.1.6 ایس ڈی ایل سی میں شامل افراد کا کردار",
+     "pashto": "۲.۱.۶ په SDLC کې د ښکېلو کسانو رول"
+    },
+    {
+     "text": "The activities of all the phases of software development life cycle are being performed by different groups of people and individual personnel. These personnel are professionals in performing their particular jobs and include:",
+     "urdu": "سافٹ ویئر ڈویلپمنٹ لائف سائیکل کے تمام مراحل کی سرگرمیاں لوگوں کے مختلف گروہ اور انفرادی افراد انجام دیتے ہیں۔ یہ افراد اپنے مخصوص کام انجام دینے میں ماہر ہوتے ہیں اور ان میں شامل ہیں:",
+     "pashto": "د سافټویر د پراختیا د ژوند دورې د ټولو پړاوونو فعالیتونه د خلکو بېلابېلې ډلې او جلا کسان ترسره کوي. دا کسان د خپلو ځانګړو دندو په ترسره کولو کې مسلکي دي او په دوی کې شامل دي:"
+    },
+    {
+     "text": "Management",
+     "urdu": "انتظامیہ",
+     "pashto": "مدیریت"
+    },
+    {
+     "text": "Project Manager",
+     "urdu": "پروجیکٹ مینیجر",
+     "pashto": "د پروژې مدیر"
+    },
+    {
+     "text": "System Analyst",
+     "urdu": "سسٹم اینالسٹ",
+     "pashto": "د سیسټم شنونکی"
+    },
+    {
+     "text": "Programmer",
+     "urdu": "پروگرامر",
+     "pashto": "پروګرام جوړوونکی"
+    },
+    {
+     "text": "Software Tester",
+     "urdu": "سافٹ ویئر ٹیسٹر",
+     "pashto": "د سافټویر ازموونکی"
+    },
+    {
+     "text": "Customer",
+     "urdu": "گاہک",
+     "pashto": "پېرودونکی"
+    }
+   ],
+   "theory": "/* program to display result s of the students*/\n#include <iostream.h>\n#include<conio.h>\nint main ()\n{\nfloat Percentage;\ncout<< \"Enter Percentage of the student\"<<endl;\ncin>> Percentage;\nif (Percentage >=60.0)\ncout<< \"Passed\";\nelse\ncout<< \"Failed\";\ngetch();\nreturn 0;\n}\n\ng. Testing/Verification\n\nThe execution of a program to find its errors is called testing. Here, the bugs are identified in the programmed modules. The purpose of testing is to evaluate an attribute or capability of a program or system and determine that whether it meets its required results. Testing/verification the software is actually operating the software under controlled conditions. It is the process of checking the items for consistency by evaluating the results against pre-specified requirements.\n\nh. Deployment / Implementation\n\nSoftware deployment is a set of activities that are used to make the software system available for use. The deployment is also called implementation. Its activities occur at the producer site or at the consumer site or both. Because every software system is unique, the precise processes or procedures within each activity are different from others and thus cannot be clearly defined.\n\nThe main activities that are involved during deployment are:\n\nInstallation and activation of the equipments and software.\n\nIn some cases the users and the computer operation personals are trained on the developed software system.\n\nConversion: The process of changing from the old system to the new one is called conversion.\n\ni. Maintenance / Support\n\nKeeping a system in its proper working condition is called maintenance. In other words, it can also be defined as the modification of a software product after delivery to correct faults, to improve performance. Maintenance is an important activity that takes place throughout the life of software in both the computer equipments and computer software. Programmers spend more time in maintaining programs than writing them.\n\nIn SDLC, the system maintenance is an ongoing process. The system is monitored continually for performance in accordance with user requirements and needed system modifications are incorporated. When modifications are identified, the system may reenter the planning phase. This process continues until a complete solution is provided to the customer. Maintenance can be either be repairing or modification or some enhancement in the existing system.\n\n2.1.6 Role of the Personnel involved in SDLC\n\nThe activities of all the phases of software development life cycle are being performed by different groups of people and individual personnel. These personnel are professionals in performing their particular jobs and include:\n\nManagement\n\nProject Manager\n\nSystem Analyst\n\nProgrammer\n\nSoftware Tester\n\nCustomer",
+   "urdu": "/* program to display result s of the students*/\n#include <iostream.h>\n#include<conio.h>\nint main ()\n{\nfloat Percentage;\ncout<< \"Enter Percentage of the student\"<<endl;\ncin>> Percentage;\nif (Percentage >=60.0)\ncout<< \"Passed\";\nelse\ncout<< \"Failed\";\ngetch();\nreturn 0;\n}\n\ng. جانچ/تصدیق\n\nکسی پروگرام کو اس کی خرابیاں تلاش کرنے کے لیے چلانا جانچ (ٹیسٹنگ) کہلاتا ہے۔ یہاں پروگرام شدہ ماڈیولز میں خامیوں (bugs) کی نشاندہی کی جاتی ہے۔ جانچ کا مقصد کسی پروگرام یا نظام کی کسی خصوصیت یا صلاحیت کا جائزہ لینا اور یہ طے کرنا ہے کہ آیا وہ مطلوبہ نتائج پورے کرتا ہے۔ سافٹ ویئر کی جانچ/تصدیق دراصل سافٹ ویئر کو کنٹرول شدہ حالات میں چلانا ہے۔ یہ پہلے سے متعین ضروریات کے مقابلے میں نتائج کا جائزہ لے کر اشیاء کی ہم آہنگی جانچنے کا عمل ہے۔\n\nh. تعیناتی / نفاذ\n\nسافٹ ویئر کی تعیناتی سرگرمیوں کا ایک مجموعہ ہے جو سافٹ ویئر سسٹم کو استعمال کے لیے دستیاب بنانے کے لیے کی جاتی ہیں۔ تعیناتی کو نفاذ بھی کہا جاتا ہے۔ اس کی سرگرمیاں تیار کنندہ کے مقام پر یا صارف کے مقام پر یا دونوں جگہ ہوتی ہیں۔ چونکہ ہر سافٹ ویئر سسٹم منفرد ہوتا ہے، اس لیے ہر سرگرمی کے اندر درست عمل یا طریقۂ کار دوسروں سے مختلف ہوتے ہیں اور انھیں واضح طور پر متعین نہیں کیا جا سکتا۔\n\nتعیناتی کے دوران شامل اہم سرگرمیاں یہ ہیں:\n\nآلات اور سافٹ ویئر کی تنصیب اور فعالیت۔\n\nبعض صورتوں میں صارفین اور کمپیوٹر آپریشن کے عملے کو تیار شدہ سافٹ ویئر سسٹم کی تربیت دی جاتی ہے۔\n\nتبدیلی: پرانے نظام سے نئے نظام میں تبدیلی کے عمل کو کنورژن کہتے ہیں۔\n\ni. دیکھ بھال / معاونت\n\nکسی نظام کو اس کی درست کام کرنے کی حالت میں رکھنا دیکھ بھال (مینٹیننس) کہلاتا ہے۔ دوسرے لفظوں میں اسے خرابیاں دور کرنے اور کارکردگی بہتر بنانے کے لیے فراہمی کے بعد سافٹ ویئر پروڈکٹ میں ترمیم کے طور پر بھی بیان کیا جا سکتا ہے۔ دیکھ بھال ایک اہم سرگرمی ہے جو کمپیوٹر آلات اور کمپیوٹر سافٹ ویئر دونوں میں سافٹ ویئر کی پوری زندگی میں جاری رہتی ہے۔ پروگرامرز پروگرام لکھنے سے زیادہ وقت ان کی دیکھ بھال میں صرف کرتے ہیں۔\n\nSDLC میں نظام کی دیکھ بھال ایک جاری عمل ہے۔ صارف کی ضروریات کے مطابق کارکردگی کے لیے نظام کی مسلسل نگرانی کی جاتی ہے اور ضروری ترامیم شامل کی جاتی ہیں۔ جب ترامیم کی نشاندہی ہو تو نظام دوبارہ منصوبہ بندی کے مرحلے میں داخل ہو سکتا ہے۔ یہ عمل اس وقت تک جاری رہتا ہے جب تک گاہک کو مکمل حل فراہم نہ ہو جائے۔ دیکھ بھال موجودہ نظام کی مرمت، ترمیم یا کچھ بہتری ہو سکتی ہے۔\n\n2.1.6 ایس ڈی ایل سی میں شامل افراد کا کردار\n\nسافٹ ویئر ڈویلپمنٹ لائف سائیکل کے تمام مراحل کی سرگرمیاں لوگوں کے مختلف گروہ اور انفرادی افراد انجام دیتے ہیں۔ یہ افراد اپنے مخصوص کام انجام دینے میں ماہر ہوتے ہیں اور ان میں شامل ہیں:\n\nانتظامیہ\n\nپروجیکٹ مینیجر\n\nسسٹم اینالسٹ\n\nپروگرامر\n\nسافٹ ویئر ٹیسٹر\n\nگاہک",
+   "pashto": "/* program to display result s of the students*/\n#include <iostream.h>\n#include<conio.h>\nint main ()\n{\nfloat Percentage;\ncout<< \"Enter Percentage of the student\"<<endl;\ncin>> Percentage;\nif (Percentage >=60.0)\ncout<< \"Passed\";\nelse\ncout<< \"Failed\";\ngetch();\nreturn 0;\n}\n\ng. ازموینه/تایید\n\nد یوه پروګرام اجرا د هغه د تېروتنو د موندلو لپاره ازموینه بلل کېږي. دلته په پروګرام شویو ماډیولونو کې نیمګړتیاوې (bugs) پېژندل کېږي. د ازموینې موخه د یوه پروګرام یا سیسټم د یوې ځانګړنې یا وړتیا ارزونه او دا ټاکل دي چې ایا اړینې پایلې پوره کوي. د سافټویر ازموینه/تایید په حقیقت کې د سافټویر په کنټرول شوو شرایطو کې چلول دي. دا د مخکې ټاکل شوو اړتیاوو په وړاندې د پایلو په ارزونې سره د توکو د همغږۍ د کتنې بهیر دی.\n\nh. ځای پر ځای کول / پلي کول\n\nد سافټویر ځای پر ځای کول د فعالیتونو یوه ټولګه ده چې سافټویري سیسټم د کارونې لپاره برابرولو ته کارول کېږي. ځای پر ځای کولو ته پلي کول هم ویل کېږي. فعالیتونه یې د جوړوونکي په ځای یا د مصرفوونکي په ځای یا دواړو کې کېږي. څرنګه چې هر سافټویري سیسټم ځانګړی دی، د هر فعالیت دننه دقیقې پروسې یا کړنلارې له نورو توپیر لري او په روښانه ډول نه شي ټاکل کېدای.\n\nد ځای پر ځای کولو پر مهال اصلي فعالیتونه دا دي:\n\nد وسایلو او سافټویر نصبول او فعالول.\n\nپه ځینو حالاتو کې کاروونکي او د کمپیوټري چارو کارکوونکي پر جوړ شوي سافټویري سیسټم روزل کېږي.\n\nبدلون: له زوړ سیسټم څخه نوي ته د بدلون بهیر ته کنورژن (conversion) ویل کېږي.\n\ni. ساتنه / ملاتړ\n\nد یوه سیسټم په سم کاري حالت کې ساتل ساتنه بلل کېږي. په بل عبارت، دا د تېروتنو د سمولو او د کارکردګۍ د ښه کولو لپاره له سپارلو وروسته د سافټویري محصول د بدلون په توګه هم تعریفېدای شي. ساتنه یو مهم فعالیت دی چې د سافټویر په ټول ژوند کې په کمپیوټري وسایلو او کمپیوټري سافټویر دواړو کې ترسره کېږي. پروګرام جوړوونکي د پروګرامونو په ساتنه کې تر لیکلو ډېر وخت لګوي.\n\nپه SDLC کې د سیسټم ساتنه دوامداره بهیر دی. سیسټم د کاروونکي د اړتیاوو سره سم د کارکردګۍ لپاره په دوامداره ډول څارل کېږي او اړین بدلونونه پکې شاملېږي. کله چې بدلونونه وپېژندل شي، سیسټم کېدای شي بېرته د پلان جوړونې پړاو ته ننوځي. دا بهیر تر هغه دوام کوي چې پېرودونکي ته بشپړ حل برابر شي. ساتنه کېدای شي په اوسني سیسټم کې ترمیم، بدلون یا یو څه ښه والی وي.\n\n۲.۱.۶ په SDLC کې د ښکېلو کسانو رول\n\nد سافټویر د پراختیا د ژوند دورې د ټولو پړاوونو فعالیتونه د خلکو بېلابېلې ډلې او جلا کسان ترسره کوي. دا کسان د خپلو ځانګړو دندو په ترسره کولو کې مسلکي دي او په دوی کې شامل دي:\n\nمدیریت\n\nد پروژې مدیر\n\nد سیسټم شنونکی\n\nپروګرام جوړوونکی\n\nد سافټویر ازموونکی\n\nپېرودونکی",
+   "theoryUrdu": "/* program to display result s of the students*/\n#include <iostream.h>\n#include<conio.h>\nint main ()\n{\nfloat Percentage;\ncout<< \"Enter Percentage of the student\"<<endl;\ncin>> Percentage;\nif (Percentage >=60.0)\ncout<< \"Passed\";\nelse\ncout<< \"Failed\";\ngetch();\nreturn 0;\n}\n\ng. جانچ/تصدیق\n\nکسی پروگرام کو اس کی خرابیاں تلاش کرنے کے لیے چلانا جانچ (ٹیسٹنگ) کہلاتا ہے۔ یہاں پروگرام شدہ ماڈیولز میں خامیوں (bugs) کی نشاندہی کی جاتی ہے۔ جانچ کا مقصد کسی پروگرام یا نظام کی کسی خصوصیت یا صلاحیت کا جائزہ لینا اور یہ طے کرنا ہے کہ آیا وہ مطلوبہ نتائج پورے کرتا ہے۔ سافٹ ویئر کی جانچ/تصدیق دراصل سافٹ ویئر کو کنٹرول شدہ حالات میں چلانا ہے۔ یہ پہلے سے متعین ضروریات کے مقابلے میں نتائج کا جائزہ لے کر اشیاء کی ہم آہنگی جانچنے کا عمل ہے۔\n\nh. تعیناتی / نفاذ\n\nسافٹ ویئر کی تعیناتی سرگرمیوں کا ایک مجموعہ ہے جو سافٹ ویئر سسٹم کو استعمال کے لیے دستیاب بنانے کے لیے کی جاتی ہیں۔ تعیناتی کو نفاذ بھی کہا جاتا ہے۔ اس کی سرگرمیاں تیار کنندہ کے مقام پر یا صارف کے مقام پر یا دونوں جگہ ہوتی ہیں۔ چونکہ ہر سافٹ ویئر سسٹم منفرد ہوتا ہے، اس لیے ہر سرگرمی کے اندر درست عمل یا طریقۂ کار دوسروں سے مختلف ہوتے ہیں اور انھیں واضح طور پر متعین نہیں کیا جا سکتا۔\n\nتعیناتی کے دوران شامل اہم سرگرمیاں یہ ہیں:\n\nآلات اور سافٹ ویئر کی تنصیب اور فعالیت۔\n\nبعض صورتوں میں صارفین اور کمپیوٹر آپریشن کے عملے کو تیار شدہ سافٹ ویئر سسٹم کی تربیت دی جاتی ہے۔\n\nتبدیلی: پرانے نظام سے نئے نظام میں تبدیلی کے عمل کو کنورژن کہتے ہیں۔\n\ni. دیکھ بھال / معاونت\n\nکسی نظام کو اس کی درست کام کرنے کی حالت میں رکھنا دیکھ بھال (مینٹیننس) کہلاتا ہے۔ دوسرے لفظوں میں اسے خرابیاں دور کرنے اور کارکردگی بہتر بنانے کے لیے فراہمی کے بعد سافٹ ویئر پروڈکٹ میں ترمیم کے طور پر بھی بیان کیا جا سکتا ہے۔ دیکھ بھال ایک اہم سرگرمی ہے جو کمپیوٹر آلات اور کمپیوٹر سافٹ ویئر دونوں میں سافٹ ویئر کی پوری زندگی میں جاری رہتی ہے۔ پروگرامرز پروگرام لکھنے سے زیادہ وقت ان کی دیکھ بھال میں صرف کرتے ہیں۔\n\nSDLC میں نظام کی دیکھ بھال ایک جاری عمل ہے۔ صارف کی ضروریات کے مطابق کارکردگی کے لیے نظام کی مسلسل نگرانی کی جاتی ہے اور ضروری ترامیم شامل کی جاتی ہیں۔ جب ترامیم کی نشاندہی ہو تو نظام دوبارہ منصوبہ بندی کے مرحلے میں داخل ہو سکتا ہے۔ یہ عمل اس وقت تک جاری رہتا ہے جب تک گاہک کو مکمل حل فراہم نہ ہو جائے۔ دیکھ بھال موجودہ نظام کی مرمت، ترمیم یا کچھ بہتری ہو سکتی ہے۔\n\n2.1.6 ایس ڈی ایل سی میں شامل افراد کا کردار\n\nسافٹ ویئر ڈویلپمنٹ لائف سائیکل کے تمام مراحل کی سرگرمیاں لوگوں کے مختلف گروہ اور انفرادی افراد انجام دیتے ہیں۔ یہ افراد اپنے مخصوص کام انجام دینے میں ماہر ہوتے ہیں اور ان میں شامل ہیں:\n\nانتظامیہ\n\nپروجیکٹ مینیجر\n\nسسٹم اینالسٹ\n\nپروگرامر\n\nسافٹ ویئر ٹیسٹر\n\nگاہک",
+   "theoryPashto": "/* program to display result s of the students*/\n#include <iostream.h>\n#include<conio.h>\nint main ()\n{\nfloat Percentage;\ncout<< \"Enter Percentage of the student\"<<endl;\ncin>> Percentage;\nif (Percentage >=60.0)\ncout<< \"Passed\";\nelse\ncout<< \"Failed\";\ngetch();\nreturn 0;\n}\n\ng. ازموینه/تایید\n\nد یوه پروګرام اجرا د هغه د تېروتنو د موندلو لپاره ازموینه بلل کېږي. دلته په پروګرام شویو ماډیولونو کې نیمګړتیاوې (bugs) پېژندل کېږي. د ازموینې موخه د یوه پروګرام یا سیسټم د یوې ځانګړنې یا وړتیا ارزونه او دا ټاکل دي چې ایا اړینې پایلې پوره کوي. د سافټویر ازموینه/تایید په حقیقت کې د سافټویر په کنټرول شوو شرایطو کې چلول دي. دا د مخکې ټاکل شوو اړتیاوو په وړاندې د پایلو په ارزونې سره د توکو د همغږۍ د کتنې بهیر دی.\n\nh. ځای پر ځای کول / پلي کول\n\nد سافټویر ځای پر ځای کول د فعالیتونو یوه ټولګه ده چې سافټویري سیسټم د کارونې لپاره برابرولو ته کارول کېږي. ځای پر ځای کولو ته پلي کول هم ویل کېږي. فعالیتونه یې د جوړوونکي په ځای یا د مصرفوونکي په ځای یا دواړو کې کېږي. څرنګه چې هر سافټویري سیسټم ځانګړی دی، د هر فعالیت دننه دقیقې پروسې یا کړنلارې له نورو توپیر لري او په روښانه ډول نه شي ټاکل کېدای.\n\nد ځای پر ځای کولو پر مهال اصلي فعالیتونه دا دي:\n\nد وسایلو او سافټویر نصبول او فعالول.\n\nپه ځینو حالاتو کې کاروونکي او د کمپیوټري چارو کارکوونکي پر جوړ شوي سافټویري سیسټم روزل کېږي.\n\nبدلون: له زوړ سیسټم څخه نوي ته د بدلون بهیر ته کنورژن (conversion) ویل کېږي.\n\ni. ساتنه / ملاتړ\n\nد یوه سیسټم په سم کاري حالت کې ساتل ساتنه بلل کېږي. په بل عبارت، دا د تېروتنو د سمولو او د کارکردګۍ د ښه کولو لپاره له سپارلو وروسته د سافټویري محصول د بدلون په توګه هم تعریفېدای شي. ساتنه یو مهم فعالیت دی چې د سافټویر په ټول ژوند کې په کمپیوټري وسایلو او کمپیوټري سافټویر دواړو کې ترسره کېږي. پروګرام جوړوونکي د پروګرامونو په ساتنه کې تر لیکلو ډېر وخت لګوي.\n\nپه SDLC کې د سیسټم ساتنه دوامداره بهیر دی. سیسټم د کاروونکي د اړتیاوو سره سم د کارکردګۍ لپاره په دوامداره ډول څارل کېږي او اړین بدلونونه پکې شاملېږي. کله چې بدلونونه وپېژندل شي، سیسټم کېدای شي بېرته د پلان جوړونې پړاو ته ننوځي. دا بهیر تر هغه دوام کوي چې پېرودونکي ته بشپړ حل برابر شي. ساتنه کېدای شي په اوسني سیسټم کې ترمیم، بدلون یا یو څه ښه والی وي.\n\n۲.۱.۶ په SDLC کې د ښکېلو کسانو رول\n\nد سافټویر د پراختیا د ژوند دورې د ټولو پړاوونو فعالیتونه د خلکو بېلابېلې ډلې او جلا کسان ترسره کوي. دا کسان د خپلو ځانګړو دندو په ترسره کولو کې مسلکي دي او په دوی کې شامل دي:\n\nمدیریت\n\nد پروژې مدیر\n\nد سیسټم شنونکی\n\nپروګرام جوړوونکی\n\nد سافټویر ازموونکی\n\nپېرودونکی",
+   "content": "<p>/* program to display result s of the students*/\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main ()\n{\nfloat Percentage;\ncout&lt;&lt; &quot;Enter Percentage of the student&quot;&lt;&lt;endl;\ncin&gt;&gt; Percentage;\nif (Percentage &gt;=60.0)\ncout&lt;&lt; &quot;Passed&quot;;\nelse\ncout&lt;&lt; &quot;Failed&quot;;\ngetch();\nreturn 0;\n}</p><p>g. Testing/Verification</p><p>The execution of a program to find its errors is called testing. Here, the bugs are identified in the programmed modules. The purpose of testing is to evaluate an attribute or capability of a program or system and determine that whether it meets its required results. Testing/verification the software is actually operating the software under controlled conditions. It is the process of checking the items for consistency by evaluating the results against pre-specified requirements.</p><p>h. Deployment / Implementation</p><p>Software deployment is a set of activities that are used to make the software system available for use. The deployment is also called implementation. Its activities occur at the producer site or at the consumer site or both. Because every software system is unique, the precise processes or procedures within each activity are different from others and thus cannot be clearly defined.</p><p>The main activities that are involved during deployment are:</p><p>Installation and activation of the equipments and software.</p><p>In some cases the users and the computer operation personals are trained on the developed software system.</p><p>Conversion: The process of changing from the old system to the new one is called conversion.</p><p>i. Maintenance / Support</p><p>Keeping a system in its proper working condition is called maintenance. In other words, it can also be defined as the modification of a software product after delivery to correct faults, to improve performance. Maintenance is an important activity that takes place throughout the life of software in both the computer equipments and computer software. Programmers spend more time in maintaining programs than writing them.</p><p>In SDLC, the system maintenance is an ongoing process. The system is monitored continually for performance in accordance with user requirements and needed system modifications are incorporated. When modifications are identified, the system may reenter the planning phase. This process continues until a complete solution is provided to the customer. Maintenance can be either be repairing or modification or some enhancement in the existing system.</p><p>2.1.6 Role of the Personnel involved in SDLC</p><p>The activities of all the phases of software development life cycle are being performed by different groups of people and individual personnel. These personnel are professionals in performing their particular jobs and include:</p><p>Management</p><p>Project Manager</p><p>System Analyst</p><p>Programmer</p><p>Software Tester</p><p>Customer</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "code",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 29,
+     "printedPages": [
+      45,
+      46,
+      47
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 2 text (8)",
+   "sourcePageLabel": "PDF 29 · p. 45–46–47",
+   "sourceNote": "Example 2 begins at the foot of p.45 (heading, comment, #include lines and int main ()) and continues on p.46; it is given whole here.",
+   "unit": 2
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf029",
+   "unit": 2,
+   "printedPage": 46,
+   "description": "The Example 2 comment prints “result s” (stray space); p.46 “determine that whether”, “Testing/verification the software is”; p.47 “operation personals”, “can be either be repairing”. Retained as printed. Heavy owner doodles/handwriting (“chart”, boxes) on pp.46–47 excluded."
+  }
+ ],
+ "completeUnits": []
+}

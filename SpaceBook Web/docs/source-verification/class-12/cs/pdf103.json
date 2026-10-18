@@ -1,0 +1,242 @@
+{
+ "pdfPage": 103,
+ "sections": [
+  {
+   "id": "cs12-u6-text-10",
+   "title": "Unit 6 text (10)",
+   "headingUrdu": "یونٹ 6 — متن (10)",
+   "headingPashto": "۶ څپرکی — متن (10)",
+   "paras": [
+    {
+     "text": "Calling an inline function is simple and is just like the call to any other function. In the call, the inline keyword is not needed to be included.",
+     "urdu": "inline فنکشن کو کال کرنا آسان ہے اور کسی بھی دوسرے فنکشن کی کال جیسا ہے۔ کال میں inline کلیدی لفظ شامل کرنے کی ضرورت نہیں۔",
+     "pashto": "د inline فنکشن غوښتل اسانه دي او د هر بل فنکشن غوښتنې په څېر دي. په غوښتنه کې د inline کلیدي کلمې شاملولو ته اړتیا نشته."
+    },
+    {
+     "text": "The following program demonstrates the use of inline function in a program.",
+     "urdu": "درج ذیل پروگرام کسی پروگرام میں inline فنکشن کا استعمال دکھاتا ہے۔",
+     "pashto": "لاندې پروګرام په یوه پروګرام کې د inline فنکشن کارونه ښيي."
+    },
+    {
+     "text": "/* use of inline function to find minimum out of two integers*/\n#include<iostream.h>\n#include<conio.h>\ninline int min(int a, int b)\n{\nreturn a > b ? b : a;\n}\nint main()\n{\ncout <<\"Minimum out of 25 and 26 is: \"<<min(25, 26);\ncout <<\"\\nMinimum out of 23 and 22 is:\"<<min(23,22);\ngetch() ;\nreturn 0;\n}",
+     "urdu": "/* use of inline function to find minimum out of two integers*/\n#include<iostream.h>\n#include<conio.h>\ninline int min(int a, int b)\n{\nreturn a > b ? b : a;\n}\nint main()\n{\ncout <<\"Minimum out of 25 and 26 is: \"<<min(25, 26);\ncout <<\"\\nMinimum out of 23 and 22 is:\"<<min(23,22);\ngetch() ;\nreturn 0;\n}",
+     "pashto": "/* use of inline function to find minimum out of two integers*/\n#include<iostream.h>\n#include<conio.h>\ninline int min(int a, int b)\n{\nreturn a > b ? b : a;\n}\nint main()\n{\ncout <<\"Minimum out of 25 and 26 is: \"<<min(25, 26);\ncout <<\"\\nMinimum out of 23 and 22 is:\"<<min(23,22);\ngetch() ;\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Minimum out of 25 and 26 is: 25\nMinimum out of 23 and 22 is: 22",
+     "urdu": "Minimum out of 25 and 26 is: 25\nMinimum out of 23 and 22 is: 22",
+     "pashto": "Minimum out of 25 and 26 is: 25\nMinimum out of 23 and 22 is: 22",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "6.2 Passing arguments and returning values",
+     "urdu": "6.2 آرگیومنٹس پاس کرنا اور قدریں واپس کرنا",
+     "pashto": "۶.۲ د دلیلونو لېږدول او د ارزښتونو بېرته ورکول"
+    },
+    {
+     "text": "When we want to execute functions, we need to pass arguments (values) to a function. The result (values) produced within the function body is then returned back to the calling program. The following section describes different methods used for passing arguments (values) to functions.",
+     "urdu": "جب ہم فنکشنز چلانا چاہیں تو ہمیں فنکشن کو آرگیومنٹس (قدریں) پاس کرنی ہوتی ہیں۔ فنکشن کے جسم میں پیدا ہونے والا نتیجہ (قدریں) پھر کال کرنے والے پروگرام کو واپس کیا جاتا ہے۔ درج ذیل حصہ فنکشنز کو آرگیومنٹس (قدریں) پاس کرنے کے مختلف طریقے بیان کرتا ہے۔",
+     "pashto": "کله چې فنکشنونه اجرا کول غواړو، فنکشن ته دلیلونه (ارزښتونه) لېږدول اړین دي. د فنکشن په بدنه کې تولید شوې پایله (ارزښتونه) بیا غوښتونکي پروګرام ته ورګرځول کېږي. لاندې برخه فنکشنونو ته د دلیلونو (ارزښتونو) د لېږدولو بېلې لارې بیانوي."
+    },
+    {
+     "text": "6.2.1 Passing arguments",
+     "urdu": "6.2.1 آرگیومنٹس پاس کرنا",
+     "pashto": "۶.۲.۱ د دلیلونو لېږدول"
+    },
+    {
+     "text": "The following are the most commonly used methods of passing arguments to functions.",
+     "urdu": "فنکشنز کو آرگیومنٹس پاس کرنے کے سب سے عام طریقے درج ذیل ہیں۔",
+     "pashto": "فنکشنونو ته د دلیلونو د لېږدولو تر ټولو عامې لارې دا دي."
+    },
+    {
+     "text": "Passing arguments by constants",
+     "urdu": "مستقل کے ذریعے آرگیومنٹس پاس کرنا",
+     "pashto": "د ثابتونو له لارې د دلیلونو لېږدول"
+    },
+    {
+     "text": "Passing arguments by values",
+     "urdu": "قدر کے ذریعے آرگیومنٹس پاس کرنا",
+     "pashto": "د ارزښت له لارې د دلیلونو لېږدول"
+    },
+    {
+     "text": "Passing arguments by reference",
+     "urdu": "حوالے کے ذریعے آرگیومنٹس پاس کرنا",
+     "pashto": "د حوالې له لارې د دلیلونو لېږدول"
+    },
+    {
+     "text": "a. Passing arguments by constants",
+     "urdu": "a. مستقل کے ذریعے آرگیومنٹس پاس کرنا",
+     "pashto": "a. د ثابتونو له لارې د دلیلونو لېږدول"
+    },
+    {
+     "text": "While calling a function, arguments are passed to the calling function. In passing constants as arguments, the actual constant values are passed instead of passing the variables.",
+     "urdu": "فنکشن کال کرتے وقت آرگیومنٹس کال کرنے والے فنکشن کو پاس کیے جاتے ہیں۔ مستقل کو آرگیومنٹس کے طور پر پاس کرنے میں ویری ایبلز کے بجائے اصل مستقل قدریں پاس کی جاتی ہیں۔",
+     "pashto": "د فنکشن د غوښتلو پر مهال دلیلونه غوښتونکي فنکشن ته لېږدول کېږي. د ثابتونو د دلیلونو په توګه لېږدولو کې د متغیرونو پر ځای اصلي ثابت ارزښتونه لېږدول کېږي."
+    },
+    {
+     "text": "Consider the following program:",
+     "urdu": "درج ذیل پروگرام پر غور کریں:",
+     "pashto": "لاندې پروګرام ته پام وکړئ:"
+    },
+    {
+     "text": "// passing integer constant as argument.\n#include<iostream.h>\n#include<conio.h>\nvoid display(int x)\n{\ncout << \" x= \" << x << endl;\n}.\nint main()\n{\ndisplay(25); // function call\ngetch();\nreturn 0;\n}",
+     "urdu": "// passing integer constant as argument.\n#include<iostream.h>\n#include<conio.h>\nvoid display(int x)\n{\ncout << \" x= \" << x << endl;\n}.\nint main()\n{\ndisplay(25); // function call\ngetch();\nreturn 0;\n}",
+     "pashto": "// passing integer constant as argument.\n#include<iostream.h>\n#include<conio.h>\nvoid display(int x)\n{\ncout << \" x= \" << x << endl;\n}.\nint main()\n{\ndisplay(25); // function call\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "x = 25",
+     "urdu": "x = 25",
+     "pashto": "x = 25",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Calling an inline function is simple and is just like the call to any other function. In the call, the inline keyword is not needed to be included.\n\nThe following program demonstrates the use of inline function in a program.\n\n/* use of inline function to find minimum out of two integers*/\n#include<iostream.h>\n#include<conio.h>\ninline int min(int a, int b)\n{\nreturn a > b ? b : a;\n}\nint main()\n{\ncout <<\"Minimum out of 25 and 26 is: \"<<min(25, 26);\ncout <<\"\\nMinimum out of 23 and 22 is:\"<<min(23,22);\ngetch() ;\nreturn 0;\n}\n\nOutput of the program\n\nMinimum out of 25 and 26 is: 25\nMinimum out of 23 and 22 is: 22\n\n6.2 Passing arguments and returning values\n\nWhen we want to execute functions, we need to pass arguments (values) to a function. The result (values) produced within the function body is then returned back to the calling program. The following section describes different methods used for passing arguments (values) to functions.\n\n6.2.1 Passing arguments\n\nThe following are the most commonly used methods of passing arguments to functions.\n\nPassing arguments by constants\n\nPassing arguments by values\n\nPassing arguments by reference\n\na. Passing arguments by constants\n\nWhile calling a function, arguments are passed to the calling function. In passing constants as arguments, the actual constant values are passed instead of passing the variables.\n\nConsider the following program:\n\n// passing integer constant as argument.\n#include<iostream.h>\n#include<conio.h>\nvoid display(int x)\n{\ncout << \" x= \" << x << endl;\n}.\nint main()\n{\ndisplay(25); // function call\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nx = 25",
+   "urdu": "inline فنکشن کو کال کرنا آسان ہے اور کسی بھی دوسرے فنکشن کی کال جیسا ہے۔ کال میں inline کلیدی لفظ شامل کرنے کی ضرورت نہیں۔\n\nدرج ذیل پروگرام کسی پروگرام میں inline فنکشن کا استعمال دکھاتا ہے۔\n\n/* use of inline function to find minimum out of two integers*/\n#include<iostream.h>\n#include<conio.h>\ninline int min(int a, int b)\n{\nreturn a > b ? b : a;\n}\nint main()\n{\ncout <<\"Minimum out of 25 and 26 is: \"<<min(25, 26);\ncout <<\"\\nMinimum out of 23 and 22 is:\"<<min(23,22);\ngetch() ;\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nMinimum out of 25 and 26 is: 25\nMinimum out of 23 and 22 is: 22\n\n6.2 آرگیومنٹس پاس کرنا اور قدریں واپس کرنا\n\nجب ہم فنکشنز چلانا چاہیں تو ہمیں فنکشن کو آرگیومنٹس (قدریں) پاس کرنی ہوتی ہیں۔ فنکشن کے جسم میں پیدا ہونے والا نتیجہ (قدریں) پھر کال کرنے والے پروگرام کو واپس کیا جاتا ہے۔ درج ذیل حصہ فنکشنز کو آرگیومنٹس (قدریں) پاس کرنے کے مختلف طریقے بیان کرتا ہے۔\n\n6.2.1 آرگیومنٹس پاس کرنا\n\nفنکشنز کو آرگیومنٹس پاس کرنے کے سب سے عام طریقے درج ذیل ہیں۔\n\nمستقل کے ذریعے آرگیومنٹس پاس کرنا\n\nقدر کے ذریعے آرگیومنٹس پاس کرنا\n\nحوالے کے ذریعے آرگیومنٹس پاس کرنا\n\na. مستقل کے ذریعے آرگیومنٹس پاس کرنا\n\nفنکشن کال کرتے وقت آرگیومنٹس کال کرنے والے فنکشن کو پاس کیے جاتے ہیں۔ مستقل کو آرگیومنٹس کے طور پر پاس کرنے میں ویری ایبلز کے بجائے اصل مستقل قدریں پاس کی جاتی ہیں۔\n\nدرج ذیل پروگرام پر غور کریں:\n\n// passing integer constant as argument.\n#include<iostream.h>\n#include<conio.h>\nvoid display(int x)\n{\ncout << \" x= \" << x << endl;\n}.\nint main()\n{\ndisplay(25); // function call\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nx = 25",
+   "pashto": "د inline فنکشن غوښتل اسانه دي او د هر بل فنکشن غوښتنې په څېر دي. په غوښتنه کې د inline کلیدي کلمې شاملولو ته اړتیا نشته.\n\nلاندې پروګرام په یوه پروګرام کې د inline فنکشن کارونه ښيي.\n\n/* use of inline function to find minimum out of two integers*/\n#include<iostream.h>\n#include<conio.h>\ninline int min(int a, int b)\n{\nreturn a > b ? b : a;\n}\nint main()\n{\ncout <<\"Minimum out of 25 and 26 is: \"<<min(25, 26);\ncout <<\"\\nMinimum out of 23 and 22 is:\"<<min(23,22);\ngetch() ;\nreturn 0;\n}\n\nد پروګرام وتنه\n\nMinimum out of 25 and 26 is: 25\nMinimum out of 23 and 22 is: 22\n\n۶.۲ د دلیلونو لېږدول او د ارزښتونو بېرته ورکول\n\nکله چې فنکشنونه اجرا کول غواړو، فنکشن ته دلیلونه (ارزښتونه) لېږدول اړین دي. د فنکشن په بدنه کې تولید شوې پایله (ارزښتونه) بیا غوښتونکي پروګرام ته ورګرځول کېږي. لاندې برخه فنکشنونو ته د دلیلونو (ارزښتونو) د لېږدولو بېلې لارې بیانوي.\n\n۶.۲.۱ د دلیلونو لېږدول\n\nفنکشنونو ته د دلیلونو د لېږدولو تر ټولو عامې لارې دا دي.\n\nد ثابتونو له لارې د دلیلونو لېږدول\n\nد ارزښت له لارې د دلیلونو لېږدول\n\nد حوالې له لارې د دلیلونو لېږدول\n\na. د ثابتونو له لارې د دلیلونو لېږدول\n\nد فنکشن د غوښتلو پر مهال دلیلونه غوښتونکي فنکشن ته لېږدول کېږي. د ثابتونو د دلیلونو په توګه لېږدولو کې د متغیرونو پر ځای اصلي ثابت ارزښتونه لېږدول کېږي.\n\nلاندې پروګرام ته پام وکړئ:\n\n// passing integer constant as argument.\n#include<iostream.h>\n#include<conio.h>\nvoid display(int x)\n{\ncout << \" x= \" << x << endl;\n}.\nint main()\n{\ndisplay(25); // function call\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nx = 25",
+   "theoryUrdu": "inline فنکشن کو کال کرنا آسان ہے اور کسی بھی دوسرے فنکشن کی کال جیسا ہے۔ کال میں inline کلیدی لفظ شامل کرنے کی ضرورت نہیں۔\n\nدرج ذیل پروگرام کسی پروگرام میں inline فنکشن کا استعمال دکھاتا ہے۔\n\n/* use of inline function to find minimum out of two integers*/\n#include<iostream.h>\n#include<conio.h>\ninline int min(int a, int b)\n{\nreturn a > b ? b : a;\n}\nint main()\n{\ncout <<\"Minimum out of 25 and 26 is: \"<<min(25, 26);\ncout <<\"\\nMinimum out of 23 and 22 is:\"<<min(23,22);\ngetch() ;\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nMinimum out of 25 and 26 is: 25\nMinimum out of 23 and 22 is: 22\n\n6.2 آرگیومنٹس پاس کرنا اور قدریں واپس کرنا\n\nجب ہم فنکشنز چلانا چاہیں تو ہمیں فنکشن کو آرگیومنٹس (قدریں) پاس کرنی ہوتی ہیں۔ فنکشن کے جسم میں پیدا ہونے والا نتیجہ (قدریں) پھر کال کرنے والے پروگرام کو واپس کیا جاتا ہے۔ درج ذیل حصہ فنکشنز کو آرگیومنٹس (قدریں) پاس کرنے کے مختلف طریقے بیان کرتا ہے۔\n\n6.2.1 آرگیومنٹس پاس کرنا\n\nفنکشنز کو آرگیومنٹس پاس کرنے کے سب سے عام طریقے درج ذیل ہیں۔\n\nمستقل کے ذریعے آرگیومنٹس پاس کرنا\n\nقدر کے ذریعے آرگیومنٹس پاس کرنا\n\nحوالے کے ذریعے آرگیومنٹس پاس کرنا\n\na. مستقل کے ذریعے آرگیومنٹس پاس کرنا\n\nفنکشن کال کرتے وقت آرگیومنٹس کال کرنے والے فنکشن کو پاس کیے جاتے ہیں۔ مستقل کو آرگیومنٹس کے طور پر پاس کرنے میں ویری ایبلز کے بجائے اصل مستقل قدریں پاس کی جاتی ہیں۔\n\nدرج ذیل پروگرام پر غور کریں:\n\n// passing integer constant as argument.\n#include<iostream.h>\n#include<conio.h>\nvoid display(int x)\n{\ncout << \" x= \" << x << endl;\n}.\nint main()\n{\ndisplay(25); // function call\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nx = 25",
+   "theoryPashto": "د inline فنکشن غوښتل اسانه دي او د هر بل فنکشن غوښتنې په څېر دي. په غوښتنه کې د inline کلیدي کلمې شاملولو ته اړتیا نشته.\n\nلاندې پروګرام په یوه پروګرام کې د inline فنکشن کارونه ښيي.\n\n/* use of inline function to find minimum out of two integers*/\n#include<iostream.h>\n#include<conio.h>\ninline int min(int a, int b)\n{\nreturn a > b ? b : a;\n}\nint main()\n{\ncout <<\"Minimum out of 25 and 26 is: \"<<min(25, 26);\ncout <<\"\\nMinimum out of 23 and 22 is:\"<<min(23,22);\ngetch() ;\nreturn 0;\n}\n\nد پروګرام وتنه\n\nMinimum out of 25 and 26 is: 25\nMinimum out of 23 and 22 is: 22\n\n۶.۲ د دلیلونو لېږدول او د ارزښتونو بېرته ورکول\n\nکله چې فنکشنونه اجرا کول غواړو، فنکشن ته دلیلونه (ارزښتونه) لېږدول اړین دي. د فنکشن په بدنه کې تولید شوې پایله (ارزښتونه) بیا غوښتونکي پروګرام ته ورګرځول کېږي. لاندې برخه فنکشنونو ته د دلیلونو (ارزښتونو) د لېږدولو بېلې لارې بیانوي.\n\n۶.۲.۱ د دلیلونو لېږدول\n\nفنکشنونو ته د دلیلونو د لېږدولو تر ټولو عامې لارې دا دي.\n\nد ثابتونو له لارې د دلیلونو لېږدول\n\nد ارزښت له لارې د دلیلونو لېږدول\n\nد حوالې له لارې د دلیلونو لېږدول\n\na. د ثابتونو له لارې د دلیلونو لېږدول\n\nد فنکشن د غوښتلو پر مهال دلیلونه غوښتونکي فنکشن ته لېږدول کېږي. د ثابتونو د دلیلونو په توګه لېږدولو کې د متغیرونو پر ځای اصلي ثابت ارزښتونه لېږدول کېږي.\n\nلاندې پروګرام ته پام وکړئ:\n\n// passing integer constant as argument.\n#include<iostream.h>\n#include<conio.h>\nvoid display(int x)\n{\ncout << \" x= \" << x << endl;\n}.\nint main()\n{\ndisplay(25); // function call\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nx = 25",
+   "content": "<p>Calling an inline function is simple and is just like the call to any other function. In the call, the inline keyword is not needed to be included.</p><p>The following program demonstrates the use of inline function in a program.</p><p>/* use of inline function to find minimum out of two integers*/\n#include&lt;iostream.h&gt;\n#include&lt;conio.h&gt;\ninline int min(int a, int b)\n{\nreturn a &gt; b ? b : a;\n}\nint main()\n{\ncout &lt;&lt;&quot;Minimum out of 25 and 26 is: &quot;&lt;&lt;min(25, 26);\ncout &lt;&lt;&quot;\\nMinimum out of 23 and 22 is:&quot;&lt;&lt;min(23,22);\ngetch() ;\nreturn 0;\n}</p><p>Output of the program</p><p>Minimum out of 25 and 26 is: 25\nMinimum out of 23 and 22 is: 22</p><p>6.2 Passing arguments and returning values</p><p>When we want to execute functions, we need to pass arguments (values) to a function. The result (values) produced within the function body is then returned back to the calling program. The following section describes different methods used for passing arguments (values) to functions.</p><p>6.2.1 Passing arguments</p><p>The following are the most commonly used methods of passing arguments to functions.</p><p>Passing arguments by constants</p><p>Passing arguments by values</p><p>Passing arguments by reference</p><p>a. Passing arguments by constants</p><p>While calling a function, arguments are passed to the calling function. In passing constants as arguments, the actual constant values are passed instead of passing the variables.</p><p>Consider the following program:</p><p>// passing integer constant as argument.\n#include&lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nvoid display(int x)\n{\ncout &lt;&lt; &quot; x= &quot; &lt;&lt; x &lt;&lt; endl;\n}.\nint main()\n{\ndisplay(25); // function call\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>x = 25</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      17
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 103,
+     "printedPages": [
+      194,
+      195
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (10)",
+   "sourcePageLabel": "PDF 103 · p. 194–195",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf103",
+   "unit": 6,
+   "printedPage": 195,
+   "description": "The display() definition ends with “}.” (stray full stop); p.195 says arguments are passed “to the calling function”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

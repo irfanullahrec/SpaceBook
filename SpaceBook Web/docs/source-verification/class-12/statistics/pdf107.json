@@ -1,0 +1,318 @@
+{
+ "pdfPage": 107,
+ "sections": [
+  {
+   "id": "stat12-p107-efficiency-example-6-7",
+   "title": "Relative efficiency of mean vs median — Example 6.7",
+   "headingUrdu": "اوسط بمقابلہ وسطانیہ کی نسبتی کارکردگی — مثال 6.7",
+   "headingPashto": "د منځني او منځنۍ نسبي موثریت — بېلګه 6.7",
+   "paras": [
+    {
+     "text": "If $R.E=1\\Rightarrow$ both estimators are equally efficient.",
+     "urdu": "اگر $R.E=1\\Rightarrow$ دونوں تخمین کار یکساں مؤثر ہیں۔",
+     "pashto": "که $R.E=1\\Rightarrow$ دواړه اټکلوونکي یو شان موثر دي."
+    },
+    {
+     "text": "For example, in case of normal distribution both sample mean and sample median are unbiased estimators for μ. However $Var(\\overline{X})=\\frac{\\sigma^2}{n}$ and $Var(\\text{median})=\\frac{\\pi\\sigma^2}{2n}$. Now comparing these estimators by relative efficiency criteria as:",
+     "urdu": "مثلاً نارمل تقسیم کی صورت میں نمونے کا اوسط اور نمونے کا وسطانیہ دونوں μ کے غیر جانبدار تخمین کار ہیں۔ تاہم $Var(\\overline{X})=\\frac{\\sigma^2}{n}$ اور $Var(\\text{median})=\\frac{\\pi\\sigma^2}{2n}$۔ اب نسبتی کارکردگی کے معیار سے ان تخمین کاروں کا موازنہ یوں کرتے ہیں:",
+     "pashto": "د بېلګې په توګه د نورمال وېش په حالت کې د نمونې منځنی او د نمونې منځنۍ (median) دواړه د μ بې‌پلوه اټکلوونکي دي. خو $Var(\\overline{X})=\\frac{\\sigma^2}{n}$ او $Var(\\text{median})=\\frac{\\pi\\sigma^2}{2n}$. اوس دا اټکلوونکي د نسبي موثریت د معیار له مخې داسې پرتله کوو:"
+    },
+    {
+     "text": "$R.E=\\frac{Var(\\overline{X})}{Var(\\text{median})}=\\frac{\\sigma^2/n}{\\pi\\sigma^2/2n}=\\frac{\\sigma^2}{n}\\cdot\\frac{2n}{\\pi\\sigma^2}=\\frac{2}{\\pi}$",
+     "urdu": "$R.E=\\frac{Var(\\overline{X})}{Var(\\text{median})}=\\frac{\\sigma^2/n}{\\pi\\sigma^2/2n}=\\frac{\\sigma^2}{n}\\cdot\\frac{2n}{\\pi\\sigma^2}=\\frac{2}{\\pi}$",
+     "pashto": "$R.E=\\frac{Var(\\overline{X})}{Var(\\text{median})}=\\frac{\\sigma^2/n}{\\pi\\sigma^2/2n}=\\frac{\\sigma^2}{n}\\cdot\\frac{2n}{\\pi\\sigma^2}=\\frac{2}{\\pi}$"
+    },
+    {
+     "text": "$=\\frac{2}{22/7}=\\frac{14}{22}=0.64<1$",
+     "urdu": "$=\\frac{2}{22/7}=\\frac{14}{22}=0.64<1$",
+     "pashto": "$=\\frac{2}{22/7}=\\frac{14}{22}=0.64<1$"
+    },
+    {
+     "text": "This implies that $\\overline{X}$ is more efficient than median for μ. Thus, an unbiased estimator which has minimum variance is called the best or the most efficient estimator.",
+     "urdu": "اس کا مطلب ہے کہ μ کے لیے $\\overline{X}$ وسطانیہ سے زیادہ مؤثر ہے۔ لہٰذا وہ غیر جانبدار تخمین کار جس کا تغیر کم سے کم ہو، بہترین یا سب سے مؤثر تخمین کار کہلاتا ہے۔",
+     "pashto": "دا ښيي چې د μ لپاره $\\overline{X}$ تر منځنۍ موثر دی. نو هغه بې‌پلوه اټکلوونکی چې لږ تر لږه واریانس ولري، غوره یا تر ټولو موثر اټکلوونکی بلل کېږي."
+    },
+    {
+     "text": "Example 6.7",
+     "urdu": "مثال 6.7",
+     "pashto": "بېلګه 6.7"
+    },
+    {
+     "text": "A random sample $X_1,X_2,X_3$ is drawn from a normal population having mean μ and variance $\\sigma^2$. Let $\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$ and $\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}$ are the estimators for μ.",
+     "urdu": "μ اوسط اور $\\sigma^2$ تغیر والی نارمل آبادی سے ایک تصادفی نمونہ $X_1,X_2,X_3$ لیا جاتا ہے۔ فرض کریں $\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$ اور $\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}$، μ کے تخمین کار ہیں۔",
+     "pashto": "له μ منځني او $\\sigma^2$ واریانس لرونکي نورمال نفوس څخه یوه تصادفي نمونه $X_1,X_2,X_3$ اخیستل کېږي. فرض کړئ $\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$ او $\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}$ د μ اټکلوونکي دي."
+    },
+    {
+     "text": "i) Which of the estimators is unbiased?",
+     "urdu": "i) کون سا تخمین کار غیر جانبدار ہے؟",
+     "pashto": "i) کوم اټکلوونکی بې‌پلوه دی؟"
+    },
+    {
+     "text": "ii) Show that $\\hat{\\theta}_1$ is efficient estimator for μ than $\\hat{\\theta}_2$.",
+     "urdu": "ii) ثابت کریں کہ μ کے لیے $\\hat{\\theta}_1$، $\\hat{\\theta}_2$ سے زیادہ مؤثر تخمین کار ہے۔",
+     "pashto": "ii) وښایاست چې د μ لپاره $\\hat{\\theta}_1$ تر $\\hat{\\theta}_2$ موثر اټکلوونکی دی."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "i) To check unbiasedness, we first consider:",
+     "urdu": "i) غیر جانبداری جانچنے کے لیے ہم پہلے لیتے ہیں:",
+     "pashto": "i) د بې‌پلوي د ازمویلو لپاره لومړی په پام کې نیسو:"
+    },
+    {
+     "text": "$$\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$$",
+     "urdu": "$$\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$$",
+     "pashto": "$$\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$$"
+    },
+    {
+     "text": "Take expectation on both sides",
+     "urdu": "دونوں طرف توقع لیں",
+     "pashto": "دواړو خواوو ته تمه واخلئ"
+    },
+    {
+     "text": "$E(\\hat{\\theta}_1)=\\frac{1}{4}E[X_1+2X_2+X_3]$",
+     "urdu": "$E(\\hat{\\theta}_1)=\\frac{1}{4}E[X_1+2X_2+X_3]$",
+     "pashto": "$E(\\hat{\\theta}_1)=\\frac{1}{4}E[X_1+2X_2+X_3]$"
+    },
+    {
+     "text": "$=\\frac{1}{4}[E(X_1)+2E(X_2)+E(X_3)]$",
+     "urdu": "$=\\frac{1}{4}[E(X_1)+2E(X_2)+E(X_3)]$",
+     "pashto": "$=\\frac{1}{4}[E(X_1)+2E(X_2)+E(X_3)]$"
+    },
+    {
+     "text": "$=\\frac{1}{4}[\\mu+2\\mu+\\mu]$, As all $X_i$’s have same mean μ",
+     "urdu": "$=\\frac{1}{4}[\\mu+2\\mu+\\mu]$، کیونکہ تمام $X_i$ کا اوسط μ ہے",
+     "pashto": "$=\\frac{1}{4}[\\mu+2\\mu+\\mu]$، ځکه چې ټول $X_i$ یو شان منځنی μ لري"
+    },
+    {
+     "text": "$=\\frac{4\\mu}{4}=\\mu$ Hence $\\hat{\\theta}_1$ is unbiased estimator of μ.",
+     "urdu": "$=\\frac{4\\mu}{4}=\\mu$ لہٰذا $\\hat{\\theta}_1$، μ کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "$=\\frac{4\\mu}{4}=\\mu$ نو $\\hat{\\theta}_1$ د μ بې‌پلوه اټکلوونکی دی."
+    },
+    {
+     "text": "Now consider the second estimator:",
+     "urdu": "اب دوسرے تخمین کار کو لیں:",
+     "pashto": "اوس دویم اټکلوونکی په پام کې ونیسئ:"
+    },
+    {
+     "text": "$\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}.$",
+     "urdu": "$\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}.$",
+     "pashto": "$\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}.$"
+    },
+    {
+     "text": "$E(\\hat{\\theta}_2)=\\frac{1}{3}[E(X_1)+E(X_2)+E(X_3)]$",
+     "urdu": "$E(\\hat{\\theta}_2)=\\frac{1}{3}[E(X_1)+E(X_2)+E(X_3)]$",
+     "pashto": "$E(\\hat{\\theta}_2)=\\frac{1}{3}[E(X_1)+E(X_2)+E(X_3)]$"
+    },
+    {
+     "text": "$=\\frac{1}{3}[\\mu+\\mu+\\mu]$",
+     "urdu": "$=\\frac{1}{3}[\\mu+\\mu+\\mu]$",
+     "pashto": "$=\\frac{1}{3}[\\mu+\\mu+\\mu]$"
+    },
+    {
+     "text": "$=\\frac{3\\mu}{3}=\\mu$ Thus, $\\hat{\\theta}_2$ is also an unbiased estimator of μ.",
+     "urdu": "$=\\frac{3\\mu}{3}=\\mu$ لہٰذا $\\hat{\\theta}_2$ بھی μ کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "$=\\frac{3\\mu}{3}=\\mu$ نو $\\hat{\\theta}_2$ هم د μ بې‌پلوه اټکلوونکی دی."
+    },
+    {
+     "text": "(ii) To check the efficiency, we have first compute variances for both estimators.",
+     "urdu": "(ii) کارکردگی جانچنے کے لیے ہمیں پہلے دونوں تخمین کاروں کے تغیر معلوم کرنے ہیں۔",
+     "pashto": "(ii) د موثریت د ازمویلو لپاره باید لومړی د دواړو اټکلوونکو واریانسونه محاسبه کړو."
+    },
+    {
+     "text": "$Var(\\hat{\\theta}_1)=Var\\left[\\frac{X_1+2X_2+X_3}{4}\\right]$",
+     "urdu": "$Var(\\hat{\\theta}_1)=Var\\left[\\frac{X_1+2X_2+X_3}{4}\\right]$",
+     "pashto": "$Var(\\hat{\\theta}_1)=Var\\left[\\frac{X_1+2X_2+X_3}{4}\\right]$"
+    },
+    {
+     "text": "$=\\frac{1}{16}[Var(X_1)+4Var(X_2)+Var(X_3)]$",
+     "urdu": "$=\\frac{1}{16}[Var(X_1)+4Var(X_2)+Var(X_3)]$",
+     "pashto": "$=\\frac{1}{16}[Var(X_1)+4Var(X_2)+Var(X_3)]$"
+    },
+    {
+     "text": "$=\\frac{1}{16}[\\sigma^2+4\\sigma^2+\\sigma^2]$, As $X_i$’s are drawn from the population having variance $\\sigma^2$.",
+     "urdu": "$=\\frac{1}{16}[\\sigma^2+4\\sigma^2+\\sigma^2]$، کیونکہ $X_i$ ایسی آبادی سے نکالے گئے ہیں جس کا تغیر $\\sigma^2$ ہے۔",
+     "pashto": "$=\\frac{1}{16}[\\sigma^2+4\\sigma^2+\\sigma^2]$، ځکه چې $X_i$ له داسې نفوس څخه راایستل شوي چې واریانس یې $\\sigma^2$ دی."
+    },
+    {
+     "text": "$$=\\frac{6\\sigma^2}{16}=\\frac{3\\sigma^2}{8}.$$",
+     "urdu": "$$=\\frac{6\\sigma^2}{16}=\\frac{3\\sigma^2}{8}.$$",
+     "pashto": "$$=\\frac{6\\sigma^2}{16}=\\frac{3\\sigma^2}{8}.$$"
+    },
+    {
+     "text": "Similarly $Var(\\hat{\\theta}_2)=Var\\left[\\frac{X_1+X_2+X_3}{3}\\right]$",
+     "urdu": "اسی طرح $Var(\\hat{\\theta}_2)=Var\\left[\\frac{X_1+X_2+X_3}{3}\\right]$",
+     "pashto": "همداراز $Var(\\hat{\\theta}_2)=Var\\left[\\frac{X_1+X_2+X_3}{3}\\right]$"
+    }
+   ],
+   "theory": "If R.E=1\\Rightarrow both estimators are equally efficient.\n\nFor example, in case of normal distribution both sample mean and sample median are unbiased estimators for μ. However Var(\\overline{X})=\\frac{\\sigma^2}{n} and Var(\\text{median})=\\frac{\\pi\\sigma^2}{2n}. Now comparing these estimators by relative efficiency criteria as:\n\nR.E=\\frac{Var(\\overline{X})}{Var(\\text{median})}=\\frac{\\sigma^2/n}{\\pi\\sigma^2/2n}=\\frac{\\sigma^2}{n}\\cdot\\frac{2n}{\\pi\\sigma^2}=\\frac{2}{\\pi}\n\n=\\frac{2}{22/7}=\\frac{14}{22}=0.64<1\n\nThis implies that \\overline{X} is more efficient than median for μ. Thus, an unbiased estimator which has minimum variance is called the best or the most efficient estimator.\n\nExample 6.7\n\nA random sample X_1,X_2,X_3 is drawn from a normal population having mean μ and variance \\sigma^2. Let \\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4} and \\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3} are the estimators for μ.\n\ni) Which of the estimators is unbiased?\n\nii) Show that \\hat{\\theta}_1 is efficient estimator for μ than \\hat{\\theta}_2.\n\nSolution:\n\ni) To check unbiasedness, we first consider:\n\n$\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$\n\nTake expectation on both sides\n\nE(\\hat{\\theta}_1)=\\frac{1}{4}E[X_1+2X_2+X_3]\n\n=\\frac{1}{4}[E(X_1)+2E(X_2)+E(X_3)]\n\n=\\frac{1}{4}[\\mu+2\\mu+\\mu], As all X_i’s have same mean μ\n\n=\\frac{4\\mu}{4}=\\mu Hence \\hat{\\theta}_1 is unbiased estimator of μ.\n\nNow consider the second estimator:\n\n\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}.\n\nE(\\hat{\\theta}_2)=\\frac{1}{3}[E(X_1)+E(X_2)+E(X_3)]\n\n=\\frac{1}{3}[\\mu+\\mu+\\mu]\n\n=\\frac{3\\mu}{3}=\\mu Thus, \\hat{\\theta}_2 is also an unbiased estimator of μ.\n\n(ii) To check the efficiency, we have first compute variances for both estimators.\n\nVar(\\hat{\\theta}_1)=Var\\left[\\frac{X_1+2X_2+X_3}{4}\\right]\n\n=\\frac{1}{16}[Var(X_1)+4Var(X_2)+Var(X_3)]\n\n=\\frac{1}{16}[\\sigma^2+4\\sigma^2+\\sigma^2], As X_i’s are drawn from the population having variance \\sigma^2.\n\n$=\\frac{6\\sigma^2}{16}=\\frac{3\\sigma^2}{8}.$\n\nSimilarly Var(\\hat{\\theta}_2)=Var\\left[\\frac{X_1+X_2+X_3}{3}\\right]",
+   "urdu": "اگر R.E=1\\Rightarrow دونوں تخمین کار یکساں مؤثر ہیں۔\n\nمثلاً نارمل تقسیم کی صورت میں نمونے کا اوسط اور نمونے کا وسطانیہ دونوں μ کے غیر جانبدار تخمین کار ہیں۔ تاہم Var(\\overline{X})=\\frac{\\sigma^2}{n} اور Var(\\text{median})=\\frac{\\pi\\sigma^2}{2n}۔ اب نسبتی کارکردگی کے معیار سے ان تخمین کاروں کا موازنہ یوں کرتے ہیں:\n\nR.E=\\frac{Var(\\overline{X})}{Var(\\text{median})}=\\frac{\\sigma^2/n}{\\pi\\sigma^2/2n}=\\frac{\\sigma^2}{n}\\cdot\\frac{2n}{\\pi\\sigma^2}=\\frac{2}{\\pi}\n\n=\\frac{2}{22/7}=\\frac{14}{22}=0.64<1\n\nاس کا مطلب ہے کہ μ کے لیے \\overline{X} وسطانیہ سے زیادہ مؤثر ہے۔ لہٰذا وہ غیر جانبدار تخمین کار جس کا تغیر کم سے کم ہو، بہترین یا سب سے مؤثر تخمین کار کہلاتا ہے۔\n\nمثال 6.7\n\nμ اوسط اور \\sigma^2 تغیر والی نارمل آبادی سے ایک تصادفی نمونہ X_1,X_2,X_3 لیا جاتا ہے۔ فرض کریں \\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4} اور \\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}، μ کے تخمین کار ہیں۔\n\ni) کون سا تخمین کار غیر جانبدار ہے؟\n\nii) ثابت کریں کہ μ کے لیے \\hat{\\theta}_1، \\hat{\\theta}_2 سے زیادہ مؤثر تخمین کار ہے۔\n\nحل:\n\ni) غیر جانبداری جانچنے کے لیے ہم پہلے لیتے ہیں:\n\n$\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$\n\nدونوں طرف توقع لیں\n\nE(\\hat{\\theta}_1)=\\frac{1}{4}E[X_1+2X_2+X_3]\n\n=\\frac{1}{4}[E(X_1)+2E(X_2)+E(X_3)]\n\n=\\frac{1}{4}[\\mu+2\\mu+\\mu]، کیونکہ تمام X_i کا اوسط μ ہے\n\n=\\frac{4\\mu}{4}=\\mu لہٰذا \\hat{\\theta}_1، μ کا غیر جانبدار تخمین کار ہے۔\n\nاب دوسرے تخمین کار کو لیں:\n\n\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}.\n\nE(\\hat{\\theta}_2)=\\frac{1}{3}[E(X_1)+E(X_2)+E(X_3)]\n\n=\\frac{1}{3}[\\mu+\\mu+\\mu]\n\n=\\frac{3\\mu}{3}=\\mu لہٰذا \\hat{\\theta}_2 بھی μ کا غیر جانبدار تخمین کار ہے۔\n\n(ii) کارکردگی جانچنے کے لیے ہمیں پہلے دونوں تخمین کاروں کے تغیر معلوم کرنے ہیں۔\n\nVar(\\hat{\\theta}_1)=Var\\left[\\frac{X_1+2X_2+X_3}{4}\\right]\n\n=\\frac{1}{16}[Var(X_1)+4Var(X_2)+Var(X_3)]\n\n=\\frac{1}{16}[\\sigma^2+4\\sigma^2+\\sigma^2]، کیونکہ X_i ایسی آبادی سے نکالے گئے ہیں جس کا تغیر \\sigma^2 ہے۔\n\n$=\\frac{6\\sigma^2}{16}=\\frac{3\\sigma^2}{8}.$\n\nاسی طرح Var(\\hat{\\theta}_2)=Var\\left[\\frac{X_1+X_2+X_3}{3}\\right]",
+   "pashto": "که R.E=1\\Rightarrow دواړه اټکلوونکي یو شان موثر دي.\n\nد بېلګې په توګه د نورمال وېش په حالت کې د نمونې منځنی او د نمونې منځنۍ (median) دواړه د μ بې‌پلوه اټکلوونکي دي. خو Var(\\overline{X})=\\frac{\\sigma^2}{n} او Var(\\text{median})=\\frac{\\pi\\sigma^2}{2n}. اوس دا اټکلوونکي د نسبي موثریت د معیار له مخې داسې پرتله کوو:\n\nR.E=\\frac{Var(\\overline{X})}{Var(\\text{median})}=\\frac{\\sigma^2/n}{\\pi\\sigma^2/2n}=\\frac{\\sigma^2}{n}\\cdot\\frac{2n}{\\pi\\sigma^2}=\\frac{2}{\\pi}\n\n=\\frac{2}{22/7}=\\frac{14}{22}=0.64<1\n\nدا ښيي چې د μ لپاره \\overline{X} تر منځنۍ موثر دی. نو هغه بې‌پلوه اټکلوونکی چې لږ تر لږه واریانس ولري، غوره یا تر ټولو موثر اټکلوونکی بلل کېږي.\n\nبېلګه 6.7\n\nله μ منځني او \\sigma^2 واریانس لرونکي نورمال نفوس څخه یوه تصادفي نمونه X_1,X_2,X_3 اخیستل کېږي. فرض کړئ \\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4} او \\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3} د μ اټکلوونکي دي.\n\ni) کوم اټکلوونکی بې‌پلوه دی؟\n\nii) وښایاست چې د μ لپاره \\hat{\\theta}_1 تر \\hat{\\theta}_2 موثر اټکلوونکی دی.\n\nحل:\n\ni) د بې‌پلوي د ازمویلو لپاره لومړی په پام کې نیسو:\n\n$\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$\n\nدواړو خواوو ته تمه واخلئ\n\nE(\\hat{\\theta}_1)=\\frac{1}{4}E[X_1+2X_2+X_3]\n\n=\\frac{1}{4}[E(X_1)+2E(X_2)+E(X_3)]\n\n=\\frac{1}{4}[\\mu+2\\mu+\\mu]، ځکه چې ټول X_i یو شان منځنی μ لري\n\n=\\frac{4\\mu}{4}=\\mu نو \\hat{\\theta}_1 د μ بې‌پلوه اټکلوونکی دی.\n\nاوس دویم اټکلوونکی په پام کې ونیسئ:\n\n\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}.\n\nE(\\hat{\\theta}_2)=\\frac{1}{3}[E(X_1)+E(X_2)+E(X_3)]\n\n=\\frac{1}{3}[\\mu+\\mu+\\mu]\n\n=\\frac{3\\mu}{3}=\\mu نو \\hat{\\theta}_2 هم د μ بې‌پلوه اټکلوونکی دی.\n\n(ii) د موثریت د ازمویلو لپاره باید لومړی د دواړو اټکلوونکو واریانسونه محاسبه کړو.\n\nVar(\\hat{\\theta}_1)=Var\\left[\\frac{X_1+2X_2+X_3}{4}\\right]\n\n=\\frac{1}{16}[Var(X_1)+4Var(X_2)+Var(X_3)]\n\n=\\frac{1}{16}[\\sigma^2+4\\sigma^2+\\sigma^2]، ځکه چې X_i له داسې نفوس څخه راایستل شوي چې واریانس یې \\sigma^2 دی.\n\n$=\\frac{6\\sigma^2}{16}=\\frac{3\\sigma^2}{8}.$\n\nهمداراز Var(\\hat{\\theta}_2)=Var\\left[\\frac{X_1+X_2+X_3}{3}\\right]",
+   "theoryUrdu": "اگر R.E=1\\Rightarrow دونوں تخمین کار یکساں مؤثر ہیں۔\n\nمثلاً نارمل تقسیم کی صورت میں نمونے کا اوسط اور نمونے کا وسطانیہ دونوں μ کے غیر جانبدار تخمین کار ہیں۔ تاہم Var(\\overline{X})=\\frac{\\sigma^2}{n} اور Var(\\text{median})=\\frac{\\pi\\sigma^2}{2n}۔ اب نسبتی کارکردگی کے معیار سے ان تخمین کاروں کا موازنہ یوں کرتے ہیں:\n\nR.E=\\frac{Var(\\overline{X})}{Var(\\text{median})}=\\frac{\\sigma^2/n}{\\pi\\sigma^2/2n}=\\frac{\\sigma^2}{n}\\cdot\\frac{2n}{\\pi\\sigma^2}=\\frac{2}{\\pi}\n\n=\\frac{2}{22/7}=\\frac{14}{22}=0.64<1\n\nاس کا مطلب ہے کہ μ کے لیے \\overline{X} وسطانیہ سے زیادہ مؤثر ہے۔ لہٰذا وہ غیر جانبدار تخمین کار جس کا تغیر کم سے کم ہو، بہترین یا سب سے مؤثر تخمین کار کہلاتا ہے۔\n\nمثال 6.7\n\nμ اوسط اور \\sigma^2 تغیر والی نارمل آبادی سے ایک تصادفی نمونہ X_1,X_2,X_3 لیا جاتا ہے۔ فرض کریں \\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4} اور \\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}، μ کے تخمین کار ہیں۔\n\ni) کون سا تخمین کار غیر جانبدار ہے؟\n\nii) ثابت کریں کہ μ کے لیے \\hat{\\theta}_1، \\hat{\\theta}_2 سے زیادہ مؤثر تخمین کار ہے۔\n\nحل:\n\ni) غیر جانبداری جانچنے کے لیے ہم پہلے لیتے ہیں:\n\n$\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$\n\nدونوں طرف توقع لیں\n\nE(\\hat{\\theta}_1)=\\frac{1}{4}E[X_1+2X_2+X_3]\n\n=\\frac{1}{4}[E(X_1)+2E(X_2)+E(X_3)]\n\n=\\frac{1}{4}[\\mu+2\\mu+\\mu]، کیونکہ تمام X_i کا اوسط μ ہے\n\n=\\frac{4\\mu}{4}=\\mu لہٰذا \\hat{\\theta}_1، μ کا غیر جانبدار تخمین کار ہے۔\n\nاب دوسرے تخمین کار کو لیں:\n\n\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}.\n\nE(\\hat{\\theta}_2)=\\frac{1}{3}[E(X_1)+E(X_2)+E(X_3)]\n\n=\\frac{1}{3}[\\mu+\\mu+\\mu]\n\n=\\frac{3\\mu}{3}=\\mu لہٰذا \\hat{\\theta}_2 بھی μ کا غیر جانبدار تخمین کار ہے۔\n\n(ii) کارکردگی جانچنے کے لیے ہمیں پہلے دونوں تخمین کاروں کے تغیر معلوم کرنے ہیں۔\n\nVar(\\hat{\\theta}_1)=Var\\left[\\frac{X_1+2X_2+X_3}{4}\\right]\n\n=\\frac{1}{16}[Var(X_1)+4Var(X_2)+Var(X_3)]\n\n=\\frac{1}{16}[\\sigma^2+4\\sigma^2+\\sigma^2]، کیونکہ X_i ایسی آبادی سے نکالے گئے ہیں جس کا تغیر \\sigma^2 ہے۔\n\n$=\\frac{6\\sigma^2}{16}=\\frac{3\\sigma^2}{8}.$\n\nاسی طرح Var(\\hat{\\theta}_2)=Var\\left[\\frac{X_1+X_2+X_3}{3}\\right]",
+   "theoryPashto": "که R.E=1\\Rightarrow دواړه اټکلوونکي یو شان موثر دي.\n\nد بېلګې په توګه د نورمال وېش په حالت کې د نمونې منځنی او د نمونې منځنۍ (median) دواړه د μ بې‌پلوه اټکلوونکي دي. خو Var(\\overline{X})=\\frac{\\sigma^2}{n} او Var(\\text{median})=\\frac{\\pi\\sigma^2}{2n}. اوس دا اټکلوونکي د نسبي موثریت د معیار له مخې داسې پرتله کوو:\n\nR.E=\\frac{Var(\\overline{X})}{Var(\\text{median})}=\\frac{\\sigma^2/n}{\\pi\\sigma^2/2n}=\\frac{\\sigma^2}{n}\\cdot\\frac{2n}{\\pi\\sigma^2}=\\frac{2}{\\pi}\n\n=\\frac{2}{22/7}=\\frac{14}{22}=0.64<1\n\nدا ښيي چې د μ لپاره \\overline{X} تر منځنۍ موثر دی. نو هغه بې‌پلوه اټکلوونکی چې لږ تر لږه واریانس ولري، غوره یا تر ټولو موثر اټکلوونکی بلل کېږي.\n\nبېلګه 6.7\n\nله μ منځني او \\sigma^2 واریانس لرونکي نورمال نفوس څخه یوه تصادفي نمونه X_1,X_2,X_3 اخیستل کېږي. فرض کړئ \\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4} او \\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3} د μ اټکلوونکي دي.\n\ni) کوم اټکلوونکی بې‌پلوه دی؟\n\nii) وښایاست چې د μ لپاره \\hat{\\theta}_1 تر \\hat{\\theta}_2 موثر اټکلوونکی دی.\n\nحل:\n\ni) د بې‌پلوي د ازمویلو لپاره لومړی په پام کې نیسو:\n\n$\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$\n\nدواړو خواوو ته تمه واخلئ\n\nE(\\hat{\\theta}_1)=\\frac{1}{4}E[X_1+2X_2+X_3]\n\n=\\frac{1}{4}[E(X_1)+2E(X_2)+E(X_3)]\n\n=\\frac{1}{4}[\\mu+2\\mu+\\mu]، ځکه چې ټول X_i یو شان منځنی μ لري\n\n=\\frac{4\\mu}{4}=\\mu نو \\hat{\\theta}_1 د μ بې‌پلوه اټکلوونکی دی.\n\nاوس دویم اټکلوونکی په پام کې ونیسئ:\n\n\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}.\n\nE(\\hat{\\theta}_2)=\\frac{1}{3}[E(X_1)+E(X_2)+E(X_3)]\n\n=\\frac{1}{3}[\\mu+\\mu+\\mu]\n\n=\\frac{3\\mu}{3}=\\mu نو \\hat{\\theta}_2 هم د μ بې‌پلوه اټکلوونکی دی.\n\n(ii) د موثریت د ازمویلو لپاره باید لومړی د دواړو اټکلوونکو واریانسونه محاسبه کړو.\n\nVar(\\hat{\\theta}_1)=Var\\left[\\frac{X_1+2X_2+X_3}{4}\\right]\n\n=\\frac{1}{16}[Var(X_1)+4Var(X_2)+Var(X_3)]\n\n=\\frac{1}{16}[\\sigma^2+4\\sigma^2+\\sigma^2]، ځکه چې X_i له داسې نفوس څخه راایستل شوي چې واریانس یې \\sigma^2 دی.\n\n$=\\frac{6\\sigma^2}{16}=\\frac{3\\sigma^2}{8}.$\n\nهمداراز Var(\\hat{\\theta}_2)=Var\\left[\\frac{X_1+X_2+X_3}{3}\\right]",
+   "content": "<p>If R.E=1\\Rightarrow both estimators are equally efficient.</p><p>For example, in case of normal distribution both sample mean and sample median are unbiased estimators for μ. However Var(\\overline{X})=\\frac{\\sigma^2}{n} and Var(\\text{median})=\\frac{\\pi\\sigma^2}{2n}. Now comparing these estimators by relative efficiency criteria as:</p><p>R.E=\\frac{Var(\\overline{X})}{Var(\\text{median})}=\\frac{\\sigma^2/n}{\\pi\\sigma^2/2n}=\\frac{\\sigma^2}{n}\\cdot\\frac{2n}{\\pi\\sigma^2}=\\frac{2}{\\pi}</p><p>=\\frac{2}{22/7}=\\frac{14}{22}=0.64&lt;1</p><p>This implies that \\overline{X} is more efficient than median for μ. Thus, an unbiased estimator which has minimum variance is called the best or the most efficient estimator.</p><p>Example 6.7</p><p>A random sample X_1,X_2,X_3 is drawn from a normal population having mean μ and variance \\sigma^2. Let \\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4} and \\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3} are the estimators for μ.</p><p>i) Which of the estimators is unbiased?</p><p>ii) Show that \\hat{\\theta}_1 is efficient estimator for μ than \\hat{\\theta}_2.</p><p>Solution:</p><p>i) To check unbiasedness, we first consider:</p><p>$\\hat{\\theta}_1=\\frac{X_1+2X_2+X_3}{4}$</p><p>Take expectation on both sides</p><p>E(\\hat{\\theta}_1)=\\frac{1}{4}E[X_1+2X_2+X_3]</p><p>=\\frac{1}{4}[E(X_1)+2E(X_2)+E(X_3)]</p><p>=\\frac{1}{4}[\\mu+2\\mu+\\mu], As all X_i’s have same mean μ</p><p>=\\frac{4\\mu}{4}=\\mu Hence \\hat{\\theta}_1 is unbiased estimator of μ.</p><p>Now consider the second estimator:</p><p>\\hat{\\theta}_2=\\frac{X_1+X_2+X_3}{3}.</p><p>E(\\hat{\\theta}_2)=\\frac{1}{3}[E(X_1)+E(X_2)+E(X_3)]</p><p>=\\frac{1}{3}[\\mu+\\mu+\\mu]</p><p>=\\frac{3\\mu}{3}=\\mu Thus, \\hat{\\theta}_2 is also an unbiased estimator of μ.</p><p>(ii) To check the efficiency, we have first compute variances for both estimators.</p><p>Var(\\hat{\\theta}_1)=Var\\left[\\frac{X_1+2X_2+X_3}{4}\\right]</p><p>=\\frac{1}{16}[Var(X_1)+4Var(X_2)+Var(X_3)]</p><p>=\\frac{1}{16}[\\sigma^2+4\\sigma^2+\\sigma^2], As X_i’s are drawn from the population having variance \\sigma^2.</p><p>$=\\frac{6\\sigma^2}{16}=\\frac{3\\sigma^2}{8}.$</p><p>Similarly Var(\\hat{\\theta}_2)=Var\\left[\\frac{X_1+X_2+X_3}{3}\\right]</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      7,
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      13,
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      18,
+      19,
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      23,
+      24
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      25
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      26
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      27
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 107,
+     "printedPages": [
+      205,
+      206
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

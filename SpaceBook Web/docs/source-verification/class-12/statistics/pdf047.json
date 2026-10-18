@@ -1,0 +1,367 @@
+{
+ "pdfPage": 47,
+ "sections": [
+  {
+   "id": "stat12-p047-binomial-examples",
+   "title": "Examples 3.9–3.11 — binomial applications",
+   "headingUrdu": "مثالیں 3.9–3.11 — دو رقمی اطلاقات",
+   "headingPashto": "بېلګې 3.9–3.11 — بینومیل کارونې",
+   "paras": [
+    {
+     "text": "Here $n=20$",
+     "urdu": "یہاں $n=20$",
+     "pashto": "دلته $n=20$"
+    },
+    {
+     "text": "X: number of children to be cured",
+     "urdu": "X: ٹھیک ہونے والے بچوں کی تعداد",
+     "pashto": "X: د روغېدونکو ماشومانو شمېر"
+    },
+    {
+     "text": "$X=0,1,2,3\\ldots 20$",
+     "urdu": "$X=0,1,2,3\\ldots 20$",
+     "pashto": "$X=0,1,2,3\\ldots 20$"
+    },
+    {
+     "text": "$p=0.90,\\ q=0.1$",
+     "urdu": "$p=0.90,\\ q=0.1$",
+     "pashto": "$p=0.90,\\ q=0.1$"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}{}^{20}_{x}C(0.90)^x(0.10)^{20-x}, & x=0,1,2,3,\\ldots,20\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}{}^{20}_{x}C(0.90)^x(0.10)^{20-x}, & x=0,1,2,3,\\ldots,20\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}{}^{20}_{x}C(0.90)^x(0.10)^{20-x}, & x=0,1,2,3,\\ldots,20\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "(i) $P$(all 20 will be cured) $=P(X=20)={}^{20}_{20}C(0.90)^{20}(0.10)^{20-20}=0.12158$",
+     "urdu": "(i) $P$(تمام 20 ٹھیک ہوں) $=P(X=20)={}^{20}_{20}C(0.90)^{20}(0.10)^{20-20}=0.12158$",
+     "pashto": "(i) $P$(ټول 20 روغ شي) $=P(X=20)={}^{20}_{20}C(0.90)^{20}(0.10)^{20-20}=0.12158$"
+    },
+    {
+     "text": "(ii) $P$(exactly 18 will be cured) $=P(X=18)={}^{20}_{18}C(0.90)^{18}(0.10)^{20-18}=0.28518$",
+     "urdu": "(ii) $P$(ٹھیک 18 ٹھیک ہوں) $=P(X=18)={}^{20}_{18}C(0.90)^{18}(0.10)^{20-18}=0.28518$",
+     "pashto": "(ii) $P$(دقیقاً 18 روغ شي) $=P(X=18)={}^{20}_{18}C(0.90)^{18}(0.10)^{20-18}=0.28518$"
+    },
+    {
+     "text": "(iii) $P$(at least one will be cured) $=1-P$(no one will be cured)",
+     "urdu": "(iii) $P$(کم از کم ایک ٹھیک ہو) $=1-P$(کوئی ٹھیک نہ ہو)",
+     "pashto": "(iii) $P$(لږ تر لږه یو روغ شي) $=1-P$(هېڅوک روغ نه شي)"
+    },
+    {
+     "text": "$=1-P(X=0)$",
+     "urdu": "$=1-P(X=0)$",
+     "pashto": "$=1-P(X=0)$"
+    },
+    {
+     "text": "$=1-{}^{20}_{0}C(0.90)^0(0.10)^{20-0}$",
+     "urdu": "$=1-{}^{20}_{0}C(0.90)^0(0.10)^{20-0}$",
+     "pashto": "$=1-{}^{20}_{0}C(0.90)^0(0.10)^{20-0}$"
+    },
+    {
+     "text": "$=1-0$ (approximately)",
+     "urdu": "$=1-0$ (تقریباً)",
+     "pashto": "$=1-0$ (نږدې)"
+    },
+    {
+     "text": "$$=1$$",
+     "urdu": "$$=1$$",
+     "pashto": "$$=1$$"
+    },
+    {
+     "text": "Example 3.10",
+     "urdu": "مثال 3.10",
+     "pashto": "بېلګه 3.10"
+    },
+    {
+     "text": "In Peshawar 42 % of the population has type-A blood. Consider, taking a sample of size 4. Let Y denotes the number of persons in the sample with type-A blood. Find (i) $P(Y=0)$ (ii) $P(Y=1)$ (iii) $P(0\\le Y\\le 2)$ and (iv) $P(0<Y\\le 2)$",
+     "urdu": "پشاور میں 42 % آبادی کا خون ٹائپ-A ہے۔ 4 کے سائز کا نمونہ لینے پر غور کریں۔ فرض کریں Y نمونے میں ٹائپ-A خون والے افراد کی تعداد ظاہر کرتا ہے۔ معلوم کریں (i) $P(Y=0)$ (ii) $P(Y=1)$ (iii) $P(0\\le Y\\le 2)$ اور (iv) $P(0<Y\\le 2)$",
+     "pashto": "په پېښور کې د نفوس 42 % د A ډول وینه لري. د 4 اندازې نمونه اخیستل په پام کې ونیسئ. فرض کړئ Y په نمونه کې د A ډول وینې لرونکو کسانو شمېر ښيي. پیدا کړئ (i) $P(Y=0)$ (ii) $P(Y=1)$ (iii) $P(0\\le Y\\le 2)$ او (iv) $P(0<Y\\le 2)$"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Given that $p=0.42$, $q=0.58$, $n=4$",
+     "urdu": "دیا گیا ہے $p=0.42$، $q=0.58$، $n=4$",
+     "pashto": "ورکړل شوي $p=0.42$، $q=0.58$، $n=4$"
+    },
+    {
+     "text": "Y: number of persons in the sample with type-A blood",
+     "urdu": "Y: نمونے میں ٹائپ-A خون والے افراد کی تعداد",
+     "pashto": "Y: په نمونه کې د A ډول وینې لرونکو کسانو شمېر"
+    },
+    {
+     "text": "$Y=0,1,2,3,4$",
+     "urdu": "$Y=0,1,2,3,4$",
+     "pashto": "$Y=0,1,2,3,4$"
+    },
+    {
+     "text": "$\\therefore p(y)=\\left\\{\\begin{matrix}{}^{4}_{y}C(0.42)^y(0.58)^{4-y}, & y=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$",
+     "urdu": "$\\therefore p(y)=\\left\\{\\begin{matrix}{}^{4}_{y}C(0.42)^y(0.58)^{4-y}, & y=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$",
+     "pashto": "$\\therefore p(y)=\\left\\{\\begin{matrix}{}^{4}_{y}C(0.42)^y(0.58)^{4-y}, & y=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$"
+    },
+    {
+     "text": "$(i)\\quad P(Y=0)={}^{4}_{0}C(0.42)^0(0.58)^{4-0}=0.11316$",
+     "urdu": "$(i)\\quad P(Y=0)={}^{4}_{0}C(0.42)^0(0.58)^{4-0}=0.11316$",
+     "pashto": "$(i)\\quad P(Y=0)={}^{4}_{0}C(0.42)^0(0.58)^{4-0}=0.11316$"
+    },
+    {
+     "text": "$(ii)\\quad P(Y=1)={}^{4}_{1}C(0.42)^1(0.58)^{4-1}=0.32779$",
+     "urdu": "$(ii)\\quad P(Y=1)={}^{4}_{1}C(0.42)^1(0.58)^{4-1}=0.32779$",
+     "pashto": "$(ii)\\quad P(Y=1)={}^{4}_{1}C(0.42)^1(0.58)^{4-1}=0.32779$"
+    },
+    {
+     "text": "$(iii)\\quad P(0\\le Y\\le 2)=P(Y=0)+P(Y=1)+P(Y=2)$",
+     "urdu": "$(iii)\\quad P(0\\le Y\\le 2)=P(Y=0)+P(Y=1)+P(Y=2)$",
+     "pashto": "$(iii)\\quad P(0\\le Y\\le 2)=P(Y=0)+P(Y=1)+P(Y=2)$"
+    },
+    {
+     "text": "$=0.11316+0.32779+{}^{4}_{2}C(0.42)^2(0.58)^{4-2}$",
+     "urdu": "$=0.11316+0.32779+{}^{4}_{2}C(0.42)^2(0.58)^{4-2}$",
+     "pashto": "$=0.11316+0.32779+{}^{4}_{2}C(0.42)^2(0.58)^{4-2}$"
+    },
+    {
+     "text": "$=0.44095+0.35609$",
+     "urdu": "$=0.44095+0.35609$",
+     "pashto": "$=0.44095+0.35609$"
+    },
+    {
+     "text": "$=0.79700$",
+     "urdu": "$=0.79700$",
+     "pashto": "$=0.79700$"
+    },
+    {
+     "text": "$(iv)\\quad P(0<Y\\le 2)=P(Y=1)+P(Y=2)$",
+     "urdu": "$(iv)\\quad P(0<Y\\le 2)=P(Y=1)+P(Y=2)$",
+     "pashto": "$(iv)\\quad P(0<Y\\le 2)=P(Y=1)+P(Y=2)$"
+    },
+    {
+     "text": "$=0.32779+0.35605=0.68384$",
+     "urdu": "$=0.32779+0.35605=0.68384$",
+     "pashto": "$=0.32779+0.35605=0.68384$"
+    },
+    {
+     "text": "Example 3.11",
+     "urdu": "مثال 3.11",
+     "pashto": "بېلګه 3.11"
+    },
+    {
+     "text": "A machine produces 10 per cent defective items. Ten items are selected at random. Find the probability of not more than two items being defective.",
+     "urdu": "ایک مشین 10 فیصد ناقص اشیاء بناتی ہے۔ دس اشیاء تصادفی طور پر منتخب کی جاتی ہیں۔ دو سے زیادہ اشیاء کے ناقص نہ ہونے کا احتمال معلوم کریں۔",
+     "pashto": "یوه ماشین 10 سلنه عیبي توکي جوړوي. لس توکي په تصادفي ډول ټاکل کېږي. له دوو څخه د زیاتو توکو د عیبي نه کېدو احتمال پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$\\text{We have } p=10\\%=\\frac{10}{100}=\\frac{1}{10}$",
+     "urdu": "$\\text{We have } p=10\\%=\\frac{10}{100}=\\frac{1}{10}$",
+     "pashto": "$\\text{We have } p=10\\%=\\frac{10}{100}=\\frac{1}{10}$"
+    },
+    {
+     "text": "$\\therefore q=\\frac{9}{10}$",
+     "urdu": "$\\therefore q=\\frac{9}{10}$",
+     "pashto": "$\\therefore q=\\frac{9}{10}$"
+    },
+    {
+     "text": "$n=10$",
+     "urdu": "$n=10$",
+     "pashto": "$n=10$"
+    },
+    {
+     "text": "X: number of defective items",
+     "urdu": "X: ناقص اشیاء کی تعداد",
+     "pashto": "X: د عیبي توکو شمېر"
+    },
+    {
+     "text": "$$X=0,1,2,3\\ldots 10$$",
+     "urdu": "$$X=0,1,2,3\\ldots 10$$",
+     "pashto": "$$X=0,1,2,3\\ldots 10$$"
+    }
+   ],
+   "theory": "Here n=20\n\nX: number of children to be cured\n\nX=0,1,2,3\\ldots 20\n\np=0.90,\\ q=0.1\n\n$p(x)=\\left\\{\\begin{matrix}{}^{20}_{x}C(0.90)^x(0.10)^{20-x}, & x=0,1,2,3,\\ldots,20\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i) P(all 20 will be cured) =P(X=20)={}^{20}_{20}C(0.90)^{20}(0.10)^{20-20}=0.12158\n\n(ii) P(exactly 18 will be cured) =P(X=18)={}^{20}_{18}C(0.90)^{18}(0.10)^{20-18}=0.28518\n\n(iii) P(at least one will be cured) =1-P(no one will be cured)\n\n=1-P(X=0)\n\n=1-{}^{20}_{0}C(0.90)^0(0.10)^{20-0}\n\n=1-0 (approximately)\n\n$=1$\n\nExample 3.10\n\nIn Peshawar 42 % of the population has type-A blood. Consider, taking a sample of size 4. Let Y denotes the number of persons in the sample with type-A blood. Find (i) P(Y=0) (ii) P(Y=1) (iii) P(0\\le Y\\le 2) and (iv) P(0<Y\\le 2)\n\nSolution:\n\nGiven that p=0.42, q=0.58, n=4\n\nY: number of persons in the sample with type-A blood\n\nY=0,1,2,3,4\n\n\\therefore p(y)=\\left\\{\\begin{matrix}{}^{4}_{y}C(0.42)^y(0.58)^{4-y}, & y=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.\n\n(i)\\quad P(Y=0)={}^{4}_{0}C(0.42)^0(0.58)^{4-0}=0.11316\n\n(ii)\\quad P(Y=1)={}^{4}_{1}C(0.42)^1(0.58)^{4-1}=0.32779\n\n(iii)\\quad P(0\\le Y\\le 2)=P(Y=0)+P(Y=1)+P(Y=2)\n\n=0.11316+0.32779+{}^{4}_{2}C(0.42)^2(0.58)^{4-2}\n\n=0.44095+0.35609\n\n=0.79700\n\n(iv)\\quad P(0<Y\\le 2)=P(Y=1)+P(Y=2)\n\n=0.32779+0.35605=0.68384\n\nExample 3.11\n\nA machine produces 10 per cent defective items. Ten items are selected at random. Find the probability of not more than two items being defective.\n\nSolution:\n\n\\text{We have } p=10\\%=\\frac{10}{100}=\\frac{1}{10}\n\n\\therefore q=\\frac{9}{10}\n\nn=10\n\nX: number of defective items\n\n$X=0,1,2,3\\ldots 10$",
+   "urdu": "یہاں n=20\n\nX: ٹھیک ہونے والے بچوں کی تعداد\n\nX=0,1,2,3\\ldots 20\n\np=0.90,\\ q=0.1\n\n$p(x)=\\left\\{\\begin{matrix}{}^{20}_{x}C(0.90)^x(0.10)^{20-x}, & x=0,1,2,3,\\ldots,20\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i) P(تمام 20 ٹھیک ہوں) =P(X=20)={}^{20}_{20}C(0.90)^{20}(0.10)^{20-20}=0.12158\n\n(ii) P(ٹھیک 18 ٹھیک ہوں) =P(X=18)={}^{20}_{18}C(0.90)^{18}(0.10)^{20-18}=0.28518\n\n(iii) P(کم از کم ایک ٹھیک ہو) =1-P(کوئی ٹھیک نہ ہو)\n\n=1-P(X=0)\n\n=1-{}^{20}_{0}C(0.90)^0(0.10)^{20-0}\n\n=1-0 (تقریباً)\n\n$=1$\n\nمثال 3.10\n\nپشاور میں 42 % آبادی کا خون ٹائپ-A ہے۔ 4 کے سائز کا نمونہ لینے پر غور کریں۔ فرض کریں Y نمونے میں ٹائپ-A خون والے افراد کی تعداد ظاہر کرتا ہے۔ معلوم کریں (i) P(Y=0) (ii) P(Y=1) (iii) P(0\\le Y\\le 2) اور (iv) P(0<Y\\le 2)\n\nحل:\n\nدیا گیا ہے p=0.42، q=0.58، n=4\n\nY: نمونے میں ٹائپ-A خون والے افراد کی تعداد\n\nY=0,1,2,3,4\n\n\\therefore p(y)=\\left\\{\\begin{matrix}{}^{4}_{y}C(0.42)^y(0.58)^{4-y}, & y=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.\n\n(i)\\quad P(Y=0)={}^{4}_{0}C(0.42)^0(0.58)^{4-0}=0.11316\n\n(ii)\\quad P(Y=1)={}^{4}_{1}C(0.42)^1(0.58)^{4-1}=0.32779\n\n(iii)\\quad P(0\\le Y\\le 2)=P(Y=0)+P(Y=1)+P(Y=2)\n\n=0.11316+0.32779+{}^{4}_{2}C(0.42)^2(0.58)^{4-2}\n\n=0.44095+0.35609\n\n=0.79700\n\n(iv)\\quad P(0<Y\\le 2)=P(Y=1)+P(Y=2)\n\n=0.32779+0.35605=0.68384\n\nمثال 3.11\n\nایک مشین 10 فیصد ناقص اشیاء بناتی ہے۔ دس اشیاء تصادفی طور پر منتخب کی جاتی ہیں۔ دو سے زیادہ اشیاء کے ناقص نہ ہونے کا احتمال معلوم کریں۔\n\nحل:\n\n\\text{We have } p=10\\%=\\frac{10}{100}=\\frac{1}{10}\n\n\\therefore q=\\frac{9}{10}\n\nn=10\n\nX: ناقص اشیاء کی تعداد\n\n$X=0,1,2,3\\ldots 10$",
+   "pashto": "دلته n=20\n\nX: د روغېدونکو ماشومانو شمېر\n\nX=0,1,2,3\\ldots 20\n\np=0.90,\\ q=0.1\n\n$p(x)=\\left\\{\\begin{matrix}{}^{20}_{x}C(0.90)^x(0.10)^{20-x}, & x=0,1,2,3,\\ldots,20\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i) P(ټول 20 روغ شي) =P(X=20)={}^{20}_{20}C(0.90)^{20}(0.10)^{20-20}=0.12158\n\n(ii) P(دقیقاً 18 روغ شي) =P(X=18)={}^{20}_{18}C(0.90)^{18}(0.10)^{20-18}=0.28518\n\n(iii) P(لږ تر لږه یو روغ شي) =1-P(هېڅوک روغ نه شي)\n\n=1-P(X=0)\n\n=1-{}^{20}_{0}C(0.90)^0(0.10)^{20-0}\n\n=1-0 (نږدې)\n\n$=1$\n\nبېلګه 3.10\n\nپه پېښور کې د نفوس 42 % د A ډول وینه لري. د 4 اندازې نمونه اخیستل په پام کې ونیسئ. فرض کړئ Y په نمونه کې د A ډول وینې لرونکو کسانو شمېر ښيي. پیدا کړئ (i) P(Y=0) (ii) P(Y=1) (iii) P(0\\le Y\\le 2) او (iv) P(0<Y\\le 2)\n\nحل:\n\nورکړل شوي p=0.42، q=0.58، n=4\n\nY: په نمونه کې د A ډول وینې لرونکو کسانو شمېر\n\nY=0,1,2,3,4\n\n\\therefore p(y)=\\left\\{\\begin{matrix}{}^{4}_{y}C(0.42)^y(0.58)^{4-y}, & y=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.\n\n(i)\\quad P(Y=0)={}^{4}_{0}C(0.42)^0(0.58)^{4-0}=0.11316\n\n(ii)\\quad P(Y=1)={}^{4}_{1}C(0.42)^1(0.58)^{4-1}=0.32779\n\n(iii)\\quad P(0\\le Y\\le 2)=P(Y=0)+P(Y=1)+P(Y=2)\n\n=0.11316+0.32779+{}^{4}_{2}C(0.42)^2(0.58)^{4-2}\n\n=0.44095+0.35609\n\n=0.79700\n\n(iv)\\quad P(0<Y\\le 2)=P(Y=1)+P(Y=2)\n\n=0.32779+0.35605=0.68384\n\nبېلګه 3.11\n\nیوه ماشین 10 سلنه عیبي توکي جوړوي. لس توکي په تصادفي ډول ټاکل کېږي. له دوو څخه د زیاتو توکو د عیبي نه کېدو احتمال پیدا کړئ.\n\nحل:\n\n\\text{We have } p=10\\%=\\frac{10}{100}=\\frac{1}{10}\n\n\\therefore q=\\frac{9}{10}\n\nn=10\n\nX: د عیبي توکو شمېر\n\n$X=0,1,2,3\\ldots 10$",
+   "theoryUrdu": "یہاں n=20\n\nX: ٹھیک ہونے والے بچوں کی تعداد\n\nX=0,1,2,3\\ldots 20\n\np=0.90,\\ q=0.1\n\n$p(x)=\\left\\{\\begin{matrix}{}^{20}_{x}C(0.90)^x(0.10)^{20-x}, & x=0,1,2,3,\\ldots,20\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i) P(تمام 20 ٹھیک ہوں) =P(X=20)={}^{20}_{20}C(0.90)^{20}(0.10)^{20-20}=0.12158\n\n(ii) P(ٹھیک 18 ٹھیک ہوں) =P(X=18)={}^{20}_{18}C(0.90)^{18}(0.10)^{20-18}=0.28518\n\n(iii) P(کم از کم ایک ٹھیک ہو) =1-P(کوئی ٹھیک نہ ہو)\n\n=1-P(X=0)\n\n=1-{}^{20}_{0}C(0.90)^0(0.10)^{20-0}\n\n=1-0 (تقریباً)\n\n$=1$\n\nمثال 3.10\n\nپشاور میں 42 % آبادی کا خون ٹائپ-A ہے۔ 4 کے سائز کا نمونہ لینے پر غور کریں۔ فرض کریں Y نمونے میں ٹائپ-A خون والے افراد کی تعداد ظاہر کرتا ہے۔ معلوم کریں (i) P(Y=0) (ii) P(Y=1) (iii) P(0\\le Y\\le 2) اور (iv) P(0<Y\\le 2)\n\nحل:\n\nدیا گیا ہے p=0.42، q=0.58، n=4\n\nY: نمونے میں ٹائپ-A خون والے افراد کی تعداد\n\nY=0,1,2,3,4\n\n\\therefore p(y)=\\left\\{\\begin{matrix}{}^{4}_{y}C(0.42)^y(0.58)^{4-y}, & y=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.\n\n(i)\\quad P(Y=0)={}^{4}_{0}C(0.42)^0(0.58)^{4-0}=0.11316\n\n(ii)\\quad P(Y=1)={}^{4}_{1}C(0.42)^1(0.58)^{4-1}=0.32779\n\n(iii)\\quad P(0\\le Y\\le 2)=P(Y=0)+P(Y=1)+P(Y=2)\n\n=0.11316+0.32779+{}^{4}_{2}C(0.42)^2(0.58)^{4-2}\n\n=0.44095+0.35609\n\n=0.79700\n\n(iv)\\quad P(0<Y\\le 2)=P(Y=1)+P(Y=2)\n\n=0.32779+0.35605=0.68384\n\nمثال 3.11\n\nایک مشین 10 فیصد ناقص اشیاء بناتی ہے۔ دس اشیاء تصادفی طور پر منتخب کی جاتی ہیں۔ دو سے زیادہ اشیاء کے ناقص نہ ہونے کا احتمال معلوم کریں۔\n\nحل:\n\n\\text{We have } p=10\\%=\\frac{10}{100}=\\frac{1}{10}\n\n\\therefore q=\\frac{9}{10}\n\nn=10\n\nX: ناقص اشیاء کی تعداد\n\n$X=0,1,2,3\\ldots 10$",
+   "theoryPashto": "دلته n=20\n\nX: د روغېدونکو ماشومانو شمېر\n\nX=0,1,2,3\\ldots 20\n\np=0.90,\\ q=0.1\n\n$p(x)=\\left\\{\\begin{matrix}{}^{20}_{x}C(0.90)^x(0.10)^{20-x}, & x=0,1,2,3,\\ldots,20\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i) P(ټول 20 روغ شي) =P(X=20)={}^{20}_{20}C(0.90)^{20}(0.10)^{20-20}=0.12158\n\n(ii) P(دقیقاً 18 روغ شي) =P(X=18)={}^{20}_{18}C(0.90)^{18}(0.10)^{20-18}=0.28518\n\n(iii) P(لږ تر لږه یو روغ شي) =1-P(هېڅوک روغ نه شي)\n\n=1-P(X=0)\n\n=1-{}^{20}_{0}C(0.90)^0(0.10)^{20-0}\n\n=1-0 (نږدې)\n\n$=1$\n\nبېلګه 3.10\n\nپه پېښور کې د نفوس 42 % د A ډول وینه لري. د 4 اندازې نمونه اخیستل په پام کې ونیسئ. فرض کړئ Y په نمونه کې د A ډول وینې لرونکو کسانو شمېر ښيي. پیدا کړئ (i) P(Y=0) (ii) P(Y=1) (iii) P(0\\le Y\\le 2) او (iv) P(0<Y\\le 2)\n\nحل:\n\nورکړل شوي p=0.42، q=0.58، n=4\n\nY: په نمونه کې د A ډول وینې لرونکو کسانو شمېر\n\nY=0,1,2,3,4\n\n\\therefore p(y)=\\left\\{\\begin{matrix}{}^{4}_{y}C(0.42)^y(0.58)^{4-y}, & y=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.\n\n(i)\\quad P(Y=0)={}^{4}_{0}C(0.42)^0(0.58)^{4-0}=0.11316\n\n(ii)\\quad P(Y=1)={}^{4}_{1}C(0.42)^1(0.58)^{4-1}=0.32779\n\n(iii)\\quad P(0\\le Y\\le 2)=P(Y=0)+P(Y=1)+P(Y=2)\n\n=0.11316+0.32779+{}^{4}_{2}C(0.42)^2(0.58)^{4-2}\n\n=0.44095+0.35609\n\n=0.79700\n\n(iv)\\quad P(0<Y\\le 2)=P(Y=1)+P(Y=2)\n\n=0.32779+0.35605=0.68384\n\nبېلګه 3.11\n\nیوه ماشین 10 سلنه عیبي توکي جوړوي. لس توکي په تصادفي ډول ټاکل کېږي. له دوو څخه د زیاتو توکو د عیبي نه کېدو احتمال پیدا کړئ.\n\nحل:\n\n\\text{We have } p=10\\%=\\frac{10}{100}=\\frac{1}{10}\n\n\\therefore q=\\frac{9}{10}\n\nn=10\n\nX: د عیبي توکو شمېر\n\n$X=0,1,2,3\\ldots 10$",
+   "content": "<p>Here n=20</p><p>X: number of children to be cured</p><p>X=0,1,2,3\\ldots 20</p><p>p=0.90,\\ q=0.1</p><p>$p(x)=\\left\\{\\begin{matrix}{}^{20}_{x}C(0.90)^x(0.10)^{20-x}, &amp; x=0,1,2,3,\\ldots,20\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>(i) P(all 20 will be cured) =P(X=20)={}^{20}_{20}C(0.90)^{20}(0.10)^{20-20}=0.12158</p><p>(ii) P(exactly 18 will be cured) =P(X=18)={}^{20}_{18}C(0.90)^{18}(0.10)^{20-18}=0.28518</p><p>(iii) P(at least one will be cured) =1-P(no one will be cured)</p><p>=1-P(X=0)</p><p>=1-{}^{20}_{0}C(0.90)^0(0.10)^{20-0}</p><p>=1-0 (approximately)</p><p>$=1$</p><p>Example 3.10</p><p>In Peshawar 42 % of the population has type-A blood. Consider, taking a sample of size 4. Let Y denotes the number of persons in the sample with type-A blood. Find (i) P(Y=0) (ii) P(Y=1) (iii) P(0\\le Y\\le 2) and (iv) P(0&lt;Y\\le 2)</p><p>Solution:</p><p>Given that p=0.42, q=0.58, n=4</p><p>Y: number of persons in the sample with type-A blood</p><p>Y=0,1,2,3,4</p><p>\\therefore p(y)=\\left\\{\\begin{matrix}{}^{4}_{y}C(0.42)^y(0.58)^{4-y}, &amp; y=0,1,2,3,4\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.</p><p>(i)\\quad P(Y=0)={}^{4}_{0}C(0.42)^0(0.58)^{4-0}=0.11316</p><p>(ii)\\quad P(Y=1)={}^{4}_{1}C(0.42)^1(0.58)^{4-1}=0.32779</p><p>(iii)\\quad P(0\\le Y\\le 2)=P(Y=0)+P(Y=1)+P(Y=2)</p><p>=0.11316+0.32779+{}^{4}_{2}C(0.42)^2(0.58)^{4-2}</p><p>=0.44095+0.35609</p><p>=0.79700</p><p>(iv)\\quad P(0&lt;Y\\le 2)=P(Y=1)+P(Y=2)</p><p>=0.32779+0.35605=0.68384</p><p>Example 3.11</p><p>A machine produces 10 per cent defective items. Ten items are selected at random. Find the probability of not more than two items being defective.</p><p>Solution:</p><p>\\text{We have } p=10\\%=\\frac{10}{100}=\\frac{1}{10}</p><p>\\therefore q=\\frac{9}{10}</p><p>n=10</p><p>X: number of defective items</p><p>$X=0,1,2,3\\ldots 10$</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      8,
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      27
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      28
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      29
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      30,
+      31,
+      32
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      33
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      34
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 47,
+     "printedPages": [
+      85,
+      86
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p86-p2-value",
+   "unit": 3,
+   "printedPage": 86,
+   "description": "Example 3.10 uses P(Y=2) = 0.35609 in (iii) but 0.35605 in (iv); both printed values retained."
+  }
+ ],
+ "completeUnits": []
+}

@@ -1,0 +1,353 @@
+{
+ "pdfPage": 121,
+ "sections": [
+  {
+   "id": "stat12-p121-key-terms-errors",
+   "title": "7.1.3 Key terms — hypotheses and type-I/type-II errors",
+   "headingUrdu": "7.1.3 اہم اصطلاحات — مفروضے اور پہلی/دوسری قسم کی غلطیاں",
+   "headingPashto": "7.1.3 کلیدي اصطلاحګانې — فرضیې او لومړی/دویم ډول تېروتنې",
+   "paras": [
+    {
+     "text": "7.1.3 Definitions of key terms",
+     "urdu": "7.1.3 اہم اصطلاحات کی تعریفیں",
+     "pashto": "7.1.3 د کلیدي اصطلاحګانو تعریفونه"
+    },
+    {
+     "text": "• Null hypothesis",
+     "urdu": "• صفری مفروضہ",
+     "pashto": "• صفري فرضیه"
+    },
+    {
+     "text": "It is a claim about parameter. It is tested for possible rejection under the assumption that it is true. It is denoted by $H_0$.",
+     "urdu": "یہ پیرامیٹر کے بارے میں ایک دعویٰ ہے۔ اسے درست مان کر ممکنہ رد کے لیے جانچا جاتا ہے۔ اسے $H_0$ سے ظاہر کرتے ہیں۔",
+     "pashto": "دا د پارامټر په اړه یوه ادعا ده. په دې انګېرنه چې سمه ده، د شوني ردولو لپاره ازمویل کېږي. په $H_0$ ښودل کېږي."
+    },
+    {
+     "text": "• Alternative hypothesis",
+     "urdu": "• متبادل مفروضہ",
+     "pashto": "• بدیله فرضیه"
+    },
+    {
+     "text": "It is also a claim about parameter which is accepted if $H_0$ is rejected. It is denoted by $H_1$. It may be directional or non-directional.",
+     "urdu": "یہ بھی پیرامیٹر کے بارے میں ایک دعویٰ ہے جو $H_0$ کے رد ہونے پر قبول کیا جاتا ہے۔ اسے $H_1$ سے ظاہر کرتے ہیں۔ یہ سمتی یا غیر سمتی ہو سکتا ہے۔",
+     "pashto": "دا هم د پارامټر په اړه یوه ادعا ده چې که $H_0$ رد شي منل کېږي. په $H_1$ ښودل کېږي. کېدای شي لوري لرونکې یا بې‌لوري وي."
+    },
+    {
+     "text": "• Simple hypothesis",
+     "urdu": "• سادہ مفروضہ",
+     "pashto": "• ساده فرضیه"
+    },
+    {
+     "text": "When all parameters of a distribution are well specified under the hypothesis it is called simple hypothesis. For example in case of normal distribution if $H_0:\\mu=5,\\ \\sigma^2=2.5$, it is simple hypothesis because all parameters values are well specified under $H_0$.",
+     "urdu": "جب مفروضے کے تحت کسی تقسیم کے تمام پیرامیٹرز واضح طور پر مقرر ہوں تو اسے سادہ مفروضہ کہتے ہیں۔ مثلاً نارمل تقسیم کی صورت میں اگر $H_0:\\mu=5,\\ \\sigma^2=2.5$ ہو تو یہ سادہ مفروضہ ہے کیونکہ $H_0$ کے تحت تمام پیرامیٹرز کی قیمتیں واضح طور پر مقرر ہیں۔",
+     "pashto": "کله چې د فرضیې لاندې د یوه وېش ټول پارامټرونه په ښه ډول مشخص وي، ساده فرضیه بلل کېږي. د بېلګې په توګه د نورمال وېش په حالت کې که $H_0:\\mu=5,\\ \\sigma^2=2.5$ وي، ساده فرضیه ده ځکه چې د $H_0$ لاندې د ټولو پارامټرونو قیمتونه ښه مشخص دي."
+    },
+    {
+     "text": "• Composite hypothesis",
+     "urdu": "• مرکب مفروضہ",
+     "pashto": "• مرکبه فرضیه"
+    },
+    {
+     "text": "When all parameters of a distribution are not well specified under the hypothesis it is called composite hypothesis. For example for normal distribution $H_0:\\mu=5,\\ \\sigma^2\\le 2.5$ or $H_0:\\mu<5,\\ \\sigma^2=2.5$ or $H_0:\\mu=5$, σ unknown etc. are composite hypothesis because in the first two cases values are not well specified and in the third case all parameters are not considered. The concept of simple and composite hypothesis is applicable to both $H_0$ and $H_1$.",
+     "urdu": "جب مفروضے کے تحت کسی تقسیم کے تمام پیرامیٹرز واضح طور پر مقرر نہ ہوں تو اسے مرکب مفروضہ کہتے ہیں۔ مثلاً نارمل تقسیم کے لیے $H_0:\\mu=5,\\ \\sigma^2\\le 2.5$ یا $H_0:\\mu<5,\\ \\sigma^2=2.5$ یا $H_0:\\mu=5$، σ نامعلوم وغیرہ مرکب مفروضے ہیں کیونکہ پہلی دو صورتوں میں قیمتیں واضح طور پر مقرر نہیں اور تیسری صورت میں تمام پیرامیٹرز زیرِ غور نہیں۔ سادہ اور مرکب مفروضے کا تصور $H_0$ اور $H_1$ دونوں پر لاگو ہوتا ہے۔",
+     "pashto": "کله چې د فرضیې لاندې د یوه وېش ټول پارامټرونه ښه مشخص نه وي، مرکبه فرضیه بلل کېږي. د بېلګې په توګه د نورمال وېش لپاره $H_0:\\mu=5,\\ \\sigma^2\\le 2.5$ یا $H_0:\\mu<5,\\ \\sigma^2=2.5$ یا $H_0:\\mu=5$، σ نامعلوم او نور مرکبې فرضیې دي ځکه چې په لومړیو دوو حالتونو کې قیمتونه ښه مشخص نه دي او په درېیم حالت کې ټول پارامټرونه په پام کې نه دي نیول شوي. د ساده او مرکبې فرضیې مفهوم پر دواړو $H_0$ او $H_1$ تطبیقېږي."
+    },
+    {
+     "text": "• Type-I and Type-II errors",
+     "urdu": "• پہلی قسم اور دوسری قسم کی غلطیاں",
+     "pashto": "• لومړی ډول او دویم ډول تېروتنې"
+    },
+    {
+     "text": "Two types of errors are possible in making a decision about a hypothesis.",
+     "urdu": "کسی مفروضے کے بارے میں فیصلہ کرنے میں دو قسم کی غلطیاں ممکن ہیں۔",
+     "pashto": "د یوې فرضیې په اړه د پرېکړې په کولو کې دوه ډوله تېروتنې شونې دي."
+    },
+    {
+     "text": "(1) Type-I error",
+     "urdu": "(1) پہلی قسم کی غلطی",
+     "pashto": "(1) لومړی ډول تېروتنه"
+    },
+    {
+     "text": "“To reject a null hypothesis when it is true, it is called type-I error”",
+     "urdu": "“صفری مفروضے کو درست ہونے کے باوجود رد کرنا پہلی قسم کی غلطی کہلاتا ہے”",
+     "pashto": "“صفري فرضیه ردول په داسې حال کې چې سمه وي، لومړی ډول تېروتنه بلل کېږي”"
+    },
+    {
+     "text": "Examples",
+     "urdu": "مثالیں",
+     "pashto": "بېلګې"
+    },
+    {
+     "text": "i. If a medicine is given to a few patients of a particular disease to cure them and the medicine is curing the disease, but it is claimed that it has no effect or has an adverse effect and hence discontinued. This is Type-I error.",
+     "urdu": "i. اگر کسی خاص بیماری کے چند مریضوں کو علاج کے لیے دوا دی جائے اور دوا بیماری کو ٹھیک کر رہی ہو، لیکن دعویٰ کیا جائے کہ اس کا کوئی اثر نہیں یا الٹا اثر ہے اور اس لیے اسے بند کر دیا جائے۔ یہ پہلی قسم کی غلطی ہے۔",
+     "pashto": "i. که د یوې ځانګړې ناروغۍ څو ناروغانو ته د روغتیا لپاره درمل ورکړل شي او درمل ناروغي روغوي، خو ادعا وشي چې هېڅ اغېز نه لري یا منفي اغېز لري او له همدې امله بند شي. دا لومړی ډول تېروتنه ده."
+    },
+    {
+     "text": "ii. To fail an intelligent student.",
+     "urdu": "ii. ذہین طالب علم کو فیل کرنا۔",
+     "pashto": "ii. یو هوښیار زده کوونکی ناکام کول."
+    },
+    {
+     "text": "iii. To punish an innocent person.",
+     "urdu": "iii. بے گناہ شخص کو سزا دینا۔",
+     "pashto": "iii. یو بې‌ګناه کس ته سزا ورکول."
+    },
+    {
+     "text": "iv. When a good player is not played in the cricket match.",
+     "urdu": "iv. جب کرکٹ میچ میں اچھے کھلاڑی کو نہ کھلایا جائے۔",
+     "pashto": "iv. کله چې په کرکټ لوبه کې ښه لوبغاړی ونه لوبول شي."
+    },
+    {
+     "text": "v. To reject a good item.",
+     "urdu": "v. اچھی شے کو رد کرنا۔",
+     "pashto": "v. یو ښه توکی ردول."
+    },
+    {
+     "text": "The probability of committing type-I error is denoted by α i.e. $\\alpha=p(\\text{reject }H_0/H_0\\text{ is true})$",
+     "urdu": "پہلی قسم کی غلطی کے ارتکاب کے احتمال کو α سے ظاہر کرتے ہیں یعنی $\\alpha=p(\\text{reject }H_0/H_0\\text{ is true})$",
+     "pashto": "د لومړي ډول تېروتنې د کولو احتمال په α ښودل کېږي یعنې $\\alpha=p(\\text{reject }H_0/H_0\\text{ is true})$"
+    },
+    {
+     "text": "(2) Type-II error",
+     "urdu": "(2) دوسری قسم کی غلطی",
+     "pashto": "(2) دویم ډول تېروتنه"
+    },
+    {
+     "text": "“To accept a null hypothesis when it is false, it is called type-II error.”",
+     "urdu": "“صفری مفروضے کو غلط ہونے کے باوجود قبول کرنا دوسری قسم کی غلطی کہلاتا ہے۔”",
+     "pashto": "“صفري فرضیه منل په داسې حال کې چې ناسمه وي، دویم ډول تېروتنه بلل کېږي.”"
+    },
+    {
+     "text": "Examples",
+     "urdu": "مثالیں",
+     "pashto": "بېلګې"
+    },
+    {
+     "text": "i. If the medicine has adverse effect and is claimed to have good effect and the treatment is continued. This is type-II error.",
+     "urdu": "i. اگر دوا کا الٹا اثر ہو اور دعویٰ کیا جائے کہ اس کا اچھا اثر ہے اور علاج جاری رکھا جائے۔ یہ دوسری قسم کی غلطی ہے۔",
+     "pashto": "i. که درمل منفي اغېز ولري او ادعا وشي چې ښه اغېز لري او درملنه دوام وکړي. دا دویم ډول تېروتنه ده."
+    },
+    {
+     "text": "ii. To pass a dull student.",
+     "urdu": "ii. کند ذہن طالب علم کو پاس کرنا۔",
+     "pashto": "ii. یو کمزوری زده کوونکی بریالی کول."
+    },
+    {
+     "text": "iii. To release a guilty person.",
+     "urdu": "iii. مجرم کو رہا کرنا۔",
+     "pashto": "iii. یو مجرم خوشې کول."
+    },
+    {
+     "text": "iv. To allow a non-deserving player in the cricket match.",
+     "urdu": "iv. کرکٹ میچ میں غیر مستحق کھلاڑی کو اجازت دینا۔",
+     "pashto": "iv. په کرکټ لوبه کې نامستحق لوبغاړي ته اجازه ورکول."
+    },
+    {
+     "text": "v. To accept a bad item.",
+     "urdu": "v. خراب شے کو قبول کرنا۔",
+     "pashto": "v. یو خراب توکی منل."
+    },
+    {
+     "text": "The probability of committing type-II error is denoted by β i.e. $\\beta=p(\\text{accept }H_0/H_0\\text{ is false})$",
+     "urdu": "دوسری قسم کی غلطی کے ارتکاب کے احتمال کو β سے ظاہر کرتے ہیں یعنی $\\beta=p(\\text{accept }H_0/H_0\\text{ is false})$",
+     "pashto": "د دویم ډول تېروتنې د کولو احتمال په β ښودل کېږي یعنې $\\beta=p(\\text{accept }H_0/H_0\\text{ is false})$"
+    },
+    {
+     "text": "Remember that",
+     "urdu": "یاد رکھیں کہ",
+     "pashto": "په یاد ولرئ چې"
+    },
+    {
+     "text": "(i) Type-I error is more serious than type-II error.",
+     "urdu": "(i) پہلی قسم کی غلطی دوسری قسم کی غلطی سے زیادہ سنگین ہے۔",
+     "pashto": "(i) لومړی ډول تېروتنه تر دویم ډول تېروتنې ډېره جدي ده."
+    },
+    {
+     "text": "(ii) α and β have an inverse relation i.e. if one increases the other decreases and vice-versa.",
+     "urdu": "(ii) α اور β کا معکوس تعلق ہے یعنی اگر ایک بڑھے تو دوسرا کم ہوتا ہے اور اس کے برعکس۔",
+     "pashto": "(ii) α او β معکوسه اړیکه لري یعنې که یو زیات شي بل کمېږي او برعکس."
+    },
+    {
+     "text": "(iii) Both α and β can be decreased by increasing n.",
+     "urdu": "(iii) n بڑھا کر α اور β دونوں کم کیے جا سکتے ہیں۔",
+     "pashto": "(iii) د n په زیاتولو α او β دواړه کمېدای شي."
+    }
+   ],
+   "theory": "7.1.3 Definitions of key terms\n\n• Null hypothesis\n\nIt is a claim about parameter. It is tested for possible rejection under the assumption that it is true. It is denoted by H_0.\n\n• Alternative hypothesis\n\nIt is also a claim about parameter which is accepted if H_0 is rejected. It is denoted by H_1. It may be directional or non-directional.\n\n• Simple hypothesis\n\nWhen all parameters of a distribution are well specified under the hypothesis it is called simple hypothesis. For example in case of normal distribution if H_0:\\mu=5,\\ \\sigma^2=2.5, it is simple hypothesis because all parameters values are well specified under H_0.\n\n• Composite hypothesis\n\nWhen all parameters of a distribution are not well specified under the hypothesis it is called composite hypothesis. For example for normal distribution H_0:\\mu=5,\\ \\sigma^2\\le 2.5 or H_0:\\mu<5,\\ \\sigma^2=2.5 or H_0:\\mu=5, σ unknown etc. are composite hypothesis because in the first two cases values are not well specified and in the third case all parameters are not considered. The concept of simple and composite hypothesis is applicable to both H_0 and H_1.\n\n• Type-I and Type-II errors\n\nTwo types of errors are possible in making a decision about a hypothesis.\n\n(1) Type-I error\n\n“To reject a null hypothesis when it is true, it is called type-I error”\n\nExamples\n\ni. If a medicine is given to a few patients of a particular disease to cure them and the medicine is curing the disease, but it is claimed that it has no effect or has an adverse effect and hence discontinued. This is Type-I error.\n\nii. To fail an intelligent student.\n\niii. To punish an innocent person.\n\niv. When a good player is not played in the cricket match.\n\nv. To reject a good item.\n\nThe probability of committing type-I error is denoted by α i.e. \\alpha=p(\\text{reject }H_0/H_0\\text{ is true})\n\n(2) Type-II error\n\n“To accept a null hypothesis when it is false, it is called type-II error.”\n\nExamples\n\ni. If the medicine has adverse effect and is claimed to have good effect and the treatment is continued. This is type-II error.\n\nii. To pass a dull student.\n\niii. To release a guilty person.\n\niv. To allow a non-deserving player in the cricket match.\n\nv. To accept a bad item.\n\nThe probability of committing type-II error is denoted by β i.e. \\beta=p(\\text{accept }H_0/H_0\\text{ is false})\n\nRemember that\n\n(i) Type-I error is more serious than type-II error.\n\n(ii) α and β have an inverse relation i.e. if one increases the other decreases and vice-versa.\n\n(iii) Both α and β can be decreased by increasing n.",
+   "urdu": "7.1.3 اہم اصطلاحات کی تعریفیں\n\n• صفری مفروضہ\n\nیہ پیرامیٹر کے بارے میں ایک دعویٰ ہے۔ اسے درست مان کر ممکنہ رد کے لیے جانچا جاتا ہے۔ اسے H_0 سے ظاہر کرتے ہیں۔\n\n• متبادل مفروضہ\n\nیہ بھی پیرامیٹر کے بارے میں ایک دعویٰ ہے جو H_0 کے رد ہونے پر قبول کیا جاتا ہے۔ اسے H_1 سے ظاہر کرتے ہیں۔ یہ سمتی یا غیر سمتی ہو سکتا ہے۔\n\n• سادہ مفروضہ\n\nجب مفروضے کے تحت کسی تقسیم کے تمام پیرامیٹرز واضح طور پر مقرر ہوں تو اسے سادہ مفروضہ کہتے ہیں۔ مثلاً نارمل تقسیم کی صورت میں اگر H_0:\\mu=5,\\ \\sigma^2=2.5 ہو تو یہ سادہ مفروضہ ہے کیونکہ H_0 کے تحت تمام پیرامیٹرز کی قیمتیں واضح طور پر مقرر ہیں۔\n\n• مرکب مفروضہ\n\nجب مفروضے کے تحت کسی تقسیم کے تمام پیرامیٹرز واضح طور پر مقرر نہ ہوں تو اسے مرکب مفروضہ کہتے ہیں۔ مثلاً نارمل تقسیم کے لیے H_0:\\mu=5,\\ \\sigma^2\\le 2.5 یا H_0:\\mu<5,\\ \\sigma^2=2.5 یا H_0:\\mu=5، σ نامعلوم وغیرہ مرکب مفروضے ہیں کیونکہ پہلی دو صورتوں میں قیمتیں واضح طور پر مقرر نہیں اور تیسری صورت میں تمام پیرامیٹرز زیرِ غور نہیں۔ سادہ اور مرکب مفروضے کا تصور H_0 اور H_1 دونوں پر لاگو ہوتا ہے۔\n\n• پہلی قسم اور دوسری قسم کی غلطیاں\n\nکسی مفروضے کے بارے میں فیصلہ کرنے میں دو قسم کی غلطیاں ممکن ہیں۔\n\n(1) پہلی قسم کی غلطی\n\n“صفری مفروضے کو درست ہونے کے باوجود رد کرنا پہلی قسم کی غلطی کہلاتا ہے”\n\nمثالیں\n\ni. اگر کسی خاص بیماری کے چند مریضوں کو علاج کے لیے دوا دی جائے اور دوا بیماری کو ٹھیک کر رہی ہو، لیکن دعویٰ کیا جائے کہ اس کا کوئی اثر نہیں یا الٹا اثر ہے اور اس لیے اسے بند کر دیا جائے۔ یہ پہلی قسم کی غلطی ہے۔\n\nii. ذہین طالب علم کو فیل کرنا۔\n\niii. بے گناہ شخص کو سزا دینا۔\n\niv. جب کرکٹ میچ میں اچھے کھلاڑی کو نہ کھلایا جائے۔\n\nv. اچھی شے کو رد کرنا۔\n\nپہلی قسم کی غلطی کے ارتکاب کے احتمال کو α سے ظاہر کرتے ہیں یعنی \\alpha=p(\\text{reject }H_0/H_0\\text{ is true})\n\n(2) دوسری قسم کی غلطی\n\n“صفری مفروضے کو غلط ہونے کے باوجود قبول کرنا دوسری قسم کی غلطی کہلاتا ہے۔”\n\nمثالیں\n\ni. اگر دوا کا الٹا اثر ہو اور دعویٰ کیا جائے کہ اس کا اچھا اثر ہے اور علاج جاری رکھا جائے۔ یہ دوسری قسم کی غلطی ہے۔\n\nii. کند ذہن طالب علم کو پاس کرنا۔\n\niii. مجرم کو رہا کرنا۔\n\niv. کرکٹ میچ میں غیر مستحق کھلاڑی کو اجازت دینا۔\n\nv. خراب شے کو قبول کرنا۔\n\nدوسری قسم کی غلطی کے ارتکاب کے احتمال کو β سے ظاہر کرتے ہیں یعنی \\beta=p(\\text{accept }H_0/H_0\\text{ is false})\n\nیاد رکھیں کہ\n\n(i) پہلی قسم کی غلطی دوسری قسم کی غلطی سے زیادہ سنگین ہے۔\n\n(ii) α اور β کا معکوس تعلق ہے یعنی اگر ایک بڑھے تو دوسرا کم ہوتا ہے اور اس کے برعکس۔\n\n(iii) n بڑھا کر α اور β دونوں کم کیے جا سکتے ہیں۔",
+   "pashto": "7.1.3 د کلیدي اصطلاحګانو تعریفونه\n\n• صفري فرضیه\n\nدا د پارامټر په اړه یوه ادعا ده. په دې انګېرنه چې سمه ده، د شوني ردولو لپاره ازمویل کېږي. په H_0 ښودل کېږي.\n\n• بدیله فرضیه\n\nدا هم د پارامټر په اړه یوه ادعا ده چې که H_0 رد شي منل کېږي. په H_1 ښودل کېږي. کېدای شي لوري لرونکې یا بې‌لوري وي.\n\n• ساده فرضیه\n\nکله چې د فرضیې لاندې د یوه وېش ټول پارامټرونه په ښه ډول مشخص وي، ساده فرضیه بلل کېږي. د بېلګې په توګه د نورمال وېش په حالت کې که H_0:\\mu=5,\\ \\sigma^2=2.5 وي، ساده فرضیه ده ځکه چې د H_0 لاندې د ټولو پارامټرونو قیمتونه ښه مشخص دي.\n\n• مرکبه فرضیه\n\nکله چې د فرضیې لاندې د یوه وېش ټول پارامټرونه ښه مشخص نه وي، مرکبه فرضیه بلل کېږي. د بېلګې په توګه د نورمال وېش لپاره H_0:\\mu=5,\\ \\sigma^2\\le 2.5 یا H_0:\\mu<5,\\ \\sigma^2=2.5 یا H_0:\\mu=5، σ نامعلوم او نور مرکبې فرضیې دي ځکه چې په لومړیو دوو حالتونو کې قیمتونه ښه مشخص نه دي او په درېیم حالت کې ټول پارامټرونه په پام کې نه دي نیول شوي. د ساده او مرکبې فرضیې مفهوم پر دواړو H_0 او H_1 تطبیقېږي.\n\n• لومړی ډول او دویم ډول تېروتنې\n\nد یوې فرضیې په اړه د پرېکړې په کولو کې دوه ډوله تېروتنې شونې دي.\n\n(1) لومړی ډول تېروتنه\n\n“صفري فرضیه ردول په داسې حال کې چې سمه وي، لومړی ډول تېروتنه بلل کېږي”\n\nبېلګې\n\ni. که د یوې ځانګړې ناروغۍ څو ناروغانو ته د روغتیا لپاره درمل ورکړل شي او درمل ناروغي روغوي، خو ادعا وشي چې هېڅ اغېز نه لري یا منفي اغېز لري او له همدې امله بند شي. دا لومړی ډول تېروتنه ده.\n\nii. یو هوښیار زده کوونکی ناکام کول.\n\niii. یو بې‌ګناه کس ته سزا ورکول.\n\niv. کله چې په کرکټ لوبه کې ښه لوبغاړی ونه لوبول شي.\n\nv. یو ښه توکی ردول.\n\nد لومړي ډول تېروتنې د کولو احتمال په α ښودل کېږي یعنې \\alpha=p(\\text{reject }H_0/H_0\\text{ is true})\n\n(2) دویم ډول تېروتنه\n\n“صفري فرضیه منل په داسې حال کې چې ناسمه وي، دویم ډول تېروتنه بلل کېږي.”\n\nبېلګې\n\ni. که درمل منفي اغېز ولري او ادعا وشي چې ښه اغېز لري او درملنه دوام وکړي. دا دویم ډول تېروتنه ده.\n\nii. یو کمزوری زده کوونکی بریالی کول.\n\niii. یو مجرم خوشې کول.\n\niv. په کرکټ لوبه کې نامستحق لوبغاړي ته اجازه ورکول.\n\nv. یو خراب توکی منل.\n\nد دویم ډول تېروتنې د کولو احتمال په β ښودل کېږي یعنې \\beta=p(\\text{accept }H_0/H_0\\text{ is false})\n\nپه یاد ولرئ چې\n\n(i) لومړی ډول تېروتنه تر دویم ډول تېروتنې ډېره جدي ده.\n\n(ii) α او β معکوسه اړیکه لري یعنې که یو زیات شي بل کمېږي او برعکس.\n\n(iii) د n په زیاتولو α او β دواړه کمېدای شي.",
+   "theoryUrdu": "7.1.3 اہم اصطلاحات کی تعریفیں\n\n• صفری مفروضہ\n\nیہ پیرامیٹر کے بارے میں ایک دعویٰ ہے۔ اسے درست مان کر ممکنہ رد کے لیے جانچا جاتا ہے۔ اسے H_0 سے ظاہر کرتے ہیں۔\n\n• متبادل مفروضہ\n\nیہ بھی پیرامیٹر کے بارے میں ایک دعویٰ ہے جو H_0 کے رد ہونے پر قبول کیا جاتا ہے۔ اسے H_1 سے ظاہر کرتے ہیں۔ یہ سمتی یا غیر سمتی ہو سکتا ہے۔\n\n• سادہ مفروضہ\n\nجب مفروضے کے تحت کسی تقسیم کے تمام پیرامیٹرز واضح طور پر مقرر ہوں تو اسے سادہ مفروضہ کہتے ہیں۔ مثلاً نارمل تقسیم کی صورت میں اگر H_0:\\mu=5,\\ \\sigma^2=2.5 ہو تو یہ سادہ مفروضہ ہے کیونکہ H_0 کے تحت تمام پیرامیٹرز کی قیمتیں واضح طور پر مقرر ہیں۔\n\n• مرکب مفروضہ\n\nجب مفروضے کے تحت کسی تقسیم کے تمام پیرامیٹرز واضح طور پر مقرر نہ ہوں تو اسے مرکب مفروضہ کہتے ہیں۔ مثلاً نارمل تقسیم کے لیے H_0:\\mu=5,\\ \\sigma^2\\le 2.5 یا H_0:\\mu<5,\\ \\sigma^2=2.5 یا H_0:\\mu=5، σ نامعلوم وغیرہ مرکب مفروضے ہیں کیونکہ پہلی دو صورتوں میں قیمتیں واضح طور پر مقرر نہیں اور تیسری صورت میں تمام پیرامیٹرز زیرِ غور نہیں۔ سادہ اور مرکب مفروضے کا تصور H_0 اور H_1 دونوں پر لاگو ہوتا ہے۔\n\n• پہلی قسم اور دوسری قسم کی غلطیاں\n\nکسی مفروضے کے بارے میں فیصلہ کرنے میں دو قسم کی غلطیاں ممکن ہیں۔\n\n(1) پہلی قسم کی غلطی\n\n“صفری مفروضے کو درست ہونے کے باوجود رد کرنا پہلی قسم کی غلطی کہلاتا ہے”\n\nمثالیں\n\ni. اگر کسی خاص بیماری کے چند مریضوں کو علاج کے لیے دوا دی جائے اور دوا بیماری کو ٹھیک کر رہی ہو، لیکن دعویٰ کیا جائے کہ اس کا کوئی اثر نہیں یا الٹا اثر ہے اور اس لیے اسے بند کر دیا جائے۔ یہ پہلی قسم کی غلطی ہے۔\n\nii. ذہین طالب علم کو فیل کرنا۔\n\niii. بے گناہ شخص کو سزا دینا۔\n\niv. جب کرکٹ میچ میں اچھے کھلاڑی کو نہ کھلایا جائے۔\n\nv. اچھی شے کو رد کرنا۔\n\nپہلی قسم کی غلطی کے ارتکاب کے احتمال کو α سے ظاہر کرتے ہیں یعنی \\alpha=p(\\text{reject }H_0/H_0\\text{ is true})\n\n(2) دوسری قسم کی غلطی\n\n“صفری مفروضے کو غلط ہونے کے باوجود قبول کرنا دوسری قسم کی غلطی کہلاتا ہے۔”\n\nمثالیں\n\ni. اگر دوا کا الٹا اثر ہو اور دعویٰ کیا جائے کہ اس کا اچھا اثر ہے اور علاج جاری رکھا جائے۔ یہ دوسری قسم کی غلطی ہے۔\n\nii. کند ذہن طالب علم کو پاس کرنا۔\n\niii. مجرم کو رہا کرنا۔\n\niv. کرکٹ میچ میں غیر مستحق کھلاڑی کو اجازت دینا۔\n\nv. خراب شے کو قبول کرنا۔\n\nدوسری قسم کی غلطی کے ارتکاب کے احتمال کو β سے ظاہر کرتے ہیں یعنی \\beta=p(\\text{accept }H_0/H_0\\text{ is false})\n\nیاد رکھیں کہ\n\n(i) پہلی قسم کی غلطی دوسری قسم کی غلطی سے زیادہ سنگین ہے۔\n\n(ii) α اور β کا معکوس تعلق ہے یعنی اگر ایک بڑھے تو دوسرا کم ہوتا ہے اور اس کے برعکس۔\n\n(iii) n بڑھا کر α اور β دونوں کم کیے جا سکتے ہیں۔",
+   "theoryPashto": "7.1.3 د کلیدي اصطلاحګانو تعریفونه\n\n• صفري فرضیه\n\nدا د پارامټر په اړه یوه ادعا ده. په دې انګېرنه چې سمه ده، د شوني ردولو لپاره ازمویل کېږي. په H_0 ښودل کېږي.\n\n• بدیله فرضیه\n\nدا هم د پارامټر په اړه یوه ادعا ده چې که H_0 رد شي منل کېږي. په H_1 ښودل کېږي. کېدای شي لوري لرونکې یا بې‌لوري وي.\n\n• ساده فرضیه\n\nکله چې د فرضیې لاندې د یوه وېش ټول پارامټرونه په ښه ډول مشخص وي، ساده فرضیه بلل کېږي. د بېلګې په توګه د نورمال وېش په حالت کې که H_0:\\mu=5,\\ \\sigma^2=2.5 وي، ساده فرضیه ده ځکه چې د H_0 لاندې د ټولو پارامټرونو قیمتونه ښه مشخص دي.\n\n• مرکبه فرضیه\n\nکله چې د فرضیې لاندې د یوه وېش ټول پارامټرونه ښه مشخص نه وي، مرکبه فرضیه بلل کېږي. د بېلګې په توګه د نورمال وېش لپاره H_0:\\mu=5,\\ \\sigma^2\\le 2.5 یا H_0:\\mu<5,\\ \\sigma^2=2.5 یا H_0:\\mu=5، σ نامعلوم او نور مرکبې فرضیې دي ځکه چې په لومړیو دوو حالتونو کې قیمتونه ښه مشخص نه دي او په درېیم حالت کې ټول پارامټرونه په پام کې نه دي نیول شوي. د ساده او مرکبې فرضیې مفهوم پر دواړو H_0 او H_1 تطبیقېږي.\n\n• لومړی ډول او دویم ډول تېروتنې\n\nد یوې فرضیې په اړه د پرېکړې په کولو کې دوه ډوله تېروتنې شونې دي.\n\n(1) لومړی ډول تېروتنه\n\n“صفري فرضیه ردول په داسې حال کې چې سمه وي، لومړی ډول تېروتنه بلل کېږي”\n\nبېلګې\n\ni. که د یوې ځانګړې ناروغۍ څو ناروغانو ته د روغتیا لپاره درمل ورکړل شي او درمل ناروغي روغوي، خو ادعا وشي چې هېڅ اغېز نه لري یا منفي اغېز لري او له همدې امله بند شي. دا لومړی ډول تېروتنه ده.\n\nii. یو هوښیار زده کوونکی ناکام کول.\n\niii. یو بې‌ګناه کس ته سزا ورکول.\n\niv. کله چې په کرکټ لوبه کې ښه لوبغاړی ونه لوبول شي.\n\nv. یو ښه توکی ردول.\n\nد لومړي ډول تېروتنې د کولو احتمال په α ښودل کېږي یعنې \\alpha=p(\\text{reject }H_0/H_0\\text{ is true})\n\n(2) دویم ډول تېروتنه\n\n“صفري فرضیه منل په داسې حال کې چې ناسمه وي، دویم ډول تېروتنه بلل کېږي.”\n\nبېلګې\n\ni. که درمل منفي اغېز ولري او ادعا وشي چې ښه اغېز لري او درملنه دوام وکړي. دا دویم ډول تېروتنه ده.\n\nii. یو کمزوری زده کوونکی بریالی کول.\n\niii. یو مجرم خوشې کول.\n\niv. په کرکټ لوبه کې نامستحق لوبغاړي ته اجازه ورکول.\n\nv. یو خراب توکی منل.\n\nد دویم ډول تېروتنې د کولو احتمال په β ښودل کېږي یعنې \\beta=p(\\text{accept }H_0/H_0\\text{ is false})\n\nپه یاد ولرئ چې\n\n(i) لومړی ډول تېروتنه تر دویم ډول تېروتنې ډېره جدي ده.\n\n(ii) α او β معکوسه اړیکه لري یعنې که یو زیات شي بل کمېږي او برعکس.\n\n(iii) د n په زیاتولو α او β دواړه کمېدای شي.",
+   "content": "<p>7.1.3 Definitions of key terms</p><p>• Null hypothesis</p><p>It is a claim about parameter. It is tested for possible rejection under the assumption that it is true. It is denoted by H_0.</p><p>• Alternative hypothesis</p><p>It is also a claim about parameter which is accepted if H_0 is rejected. It is denoted by H_1. It may be directional or non-directional.</p><p>• Simple hypothesis</p><p>When all parameters of a distribution are well specified under the hypothesis it is called simple hypothesis. For example in case of normal distribution if H_0:\\mu=5,\\ \\sigma^2=2.5, it is simple hypothesis because all parameters values are well specified under H_0.</p><p>• Composite hypothesis</p><p>When all parameters of a distribution are not well specified under the hypothesis it is called composite hypothesis. For example for normal distribution H_0:\\mu=5,\\ \\sigma^2\\le 2.5 or H_0:\\mu&lt;5,\\ \\sigma^2=2.5 or H_0:\\mu=5, σ unknown etc. are composite hypothesis because in the first two cases values are not well specified and in the third case all parameters are not considered. The concept of simple and composite hypothesis is applicable to both H_0 and H_1.</p><p>• Type-I and Type-II errors</p><p>Two types of errors are possible in making a decision about a hypothesis.</p><p>(1) Type-I error</p><p>“To reject a null hypothesis when it is true, it is called type-I error”</p><p>Examples</p><p>i. If a medicine is given to a few patients of a particular disease to cure them and the medicine is curing the disease, but it is claimed that it has no effect or has an adverse effect and hence discontinued. This is Type-I error.</p><p>ii. To fail an intelligent student.</p><p>iii. To punish an innocent person.</p><p>iv. When a good player is not played in the cricket match.</p><p>v. To reject a good item.</p><p>The probability of committing type-I error is denoted by α i.e. \\alpha=p(\\text{reject }H_0/H_0\\text{ is true})</p><p>(2) Type-II error</p><p>“To accept a null hypothesis when it is false, it is called type-II error.”</p><p>Examples</p><p>i. If the medicine has adverse effect and is claimed to have good effect and the treatment is continued. This is type-II error.</p><p>ii. To pass a dull student.</p><p>iii. To release a guilty person.</p><p>iv. To allow a non-deserving player in the cricket match.</p><p>v. To accept a bad item.</p><p>The probability of committing type-II error is denoted by β i.e. \\beta=p(\\text{accept }H_0/H_0\\text{ is false})</p><p>Remember that</p><p>(i) Type-I error is more serious than type-II error.</p><p>(ii) α and β have an inverse relation i.e. if one increases the other decreases and vice-versa.</p><p>(iii) Both α and β can be decreased by increasing n.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      14,
+      15,
+      16,
+      17,
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      23,
+      24,
+      25,
+      26,
+      27
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      28
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      29
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      30,
+      31,
+      32
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 121,
+     "printedPages": [
+      233,
+      234
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 7
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

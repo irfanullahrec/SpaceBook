@@ -1,0 +1,271 @@
+{
+ "pdfPage": 109,
+ "sections": [
+  {
+   "id": "stat12-p109-confidence-interval",
+   "title": "6.3 Interval estimation — confidence interval for μ (σ known)",
+   "headingUrdu": "6.3 وقفہ تخمین — μ کے لیے اعتماد کا وقفہ (σ معلوم)",
+   "headingPashto": "6.3 واټني اټکل — د μ لپاره د باور واټن (σ معلوم)",
+   "paras": [
+    {
+     "text": "6.3 Interval estimation",
+     "urdu": "6.3 وقفہ تخمین",
+     "pashto": "6.3 واټني اټکل"
+    },
+    {
+     "text": "This process provides an interval of values calculated from sample data, as an estimate for the unknown population parameter. Interval estimate has a high probability of containing the parameter of interest.",
+     "urdu": "یہ عمل نامعلوم آبادی کے پیرامیٹر کے تخمینے کے طور پر نمونے کے مواد سے معلوم کی گئی قیمتوں کا ایک وقفہ فراہم کرتا ہے۔ وقفہ تخمینے میں مطلوبہ پیرامیٹر کے شامل ہونے کا احتمال زیادہ ہوتا ہے۔",
+     "pashto": "دا بهیر د نامعلوم نفوس پارامټر د اټکل په توګه له نمونوي معلوماتو څخه د محاسبه شویو قیمتونو یو واټن ورکوي. واټني اټکل د غوښتل شوي پارامټر د لرلو لوړ احتمال لري."
+    },
+    {
+     "text": "6.3.1 Confidence interval",
+     "urdu": "6.3.1 اعتماد کا وقفہ",
+     "pashto": "6.3.1 د باور واټن"
+    },
+    {
+     "text": "An interval which is constructed from sample observations in such a way that it has a high probability of containing the unknown value of parameter is called confidence interval. For example if L and U are two statistics, then the confidence interval for the parameter θ is given as: $P[L<\\theta<U]=1-\\alpha$",
+     "urdu": "نمونے کے مشاہدات سے اس طرح بنایا گیا وقفہ کہ اس میں پیرامیٹر کی نامعلوم قیمت کے شامل ہونے کا احتمال زیادہ ہو، اعتماد کا وقفہ کہلاتا ہے۔ مثلاً اگر L اور U دو شماریے ہوں تو پیرامیٹر θ کے لیے اعتماد کا وقفہ یہ ہے: $P[L<\\theta<U]=1-\\alpha$",
+     "pashto": "هغه واټن چې له نمونوي مشاهدو څخه داسې جوړ شي چې د پارامټر د نامعلوم قیمت د لرلو لوړ احتمال ولري، د باور واټن بلل کېږي. د بېلګې په توګه که L او U دوه احصاییې وي، نو د θ پارامټر لپاره د باور واټن دا دی: $P[L<\\theta<U]=1-\\alpha$"
+    },
+    {
+     "text": "■ Main points about confidence interval",
+     "urdu": "■ اعتماد کے وقفے کے بارے میں اہم نکات",
+     "pashto": "■ د باور د واټن په اړه مهم ټکي"
+    },
+    {
+     "text": "i. The end points that bound a confidence interval i.e. L and U are called critical values or confidence limits where L is the lower confidence limit and U is the upper confidence limit.",
+     "urdu": "i. اعتماد کے وقفے کو محدود کرنے والے آخری نقاط یعنی L اور U کو فیصلہ کن قیمتیں یا اعتماد کی حدیں کہتے ہیں جہاں L نچلی اور U اوپری اعتماد کی حد ہے۔",
+     "pashto": "i. هغه پای ټکي چې د باور واټن محدودوي یعنې L او U، بحراني قیمتونه یا د باور حدونه بلل کېږي چې L د باور ښکتنی حد او U د باور پورتنی حد دی."
+    },
+    {
+     "text": "ii. The region between L and U is called confidence interval or confidence region or acceptance region for the unknown parameter θ.",
+     "urdu": "ii. L اور U کے درمیان علاقے کو نامعلوم پیرامیٹر θ کا اعتماد کا وقفہ یا اعتماد کا علاقہ یا قبولیت کا علاقہ کہتے ہیں۔",
+     "pashto": "ii. د L او U ترمنځ سیمې ته د نامعلوم پارامټر θ لپاره د باور واټن یا د باور سیمه یا د منلو سیمه وایي."
+    },
+    {
+     "text": "iii. The region beyond the acceptance region i.e. from −∞ to L and U to ∞ is known as critical region or rejection region.",
+     "urdu": "iii. قبولیت کے علاقے سے باہر کا علاقہ یعنی −∞ سے L اور U سے ∞ تک فیصلہ کن علاقہ یا رد کا علاقہ کہلاتا ہے۔",
+     "pashto": "iii. د منلو له سیمې بهر سیمه یعنې له −∞ څخه تر L او له U څخه تر ∞ پورې، بحراني سیمه یا د ردولو سیمه بلل کېږي."
+    },
+    {
+     "text": "iv. The probability that the interval contains the parameter is called confidence coefficient or confidence level and is denoted by (1−α). It is also written as 100 (1−α) %.",
+     "urdu": "iv. وقفے میں پیرامیٹر کے شامل ہونے کے احتمال کو اعتماد کا ضریب یا اعتماد کی سطح کہتے ہیں اور اسے (1−α) سے ظاہر کرتے ہیں۔ اسے 100 (1−α) % بھی لکھا جاتا ہے۔",
+     "pashto": "iv. هغه احتمال چې واټن پارامټر ولري، د باور ضریب یا د باور کچه بلل کېږي او په (1−α) ښودل کېږي. داسې هم لیکل کېږي 100 (1−α) %."
+    },
+    {
+     "text": "v. The probability that parameter lies in the rejection region is called significance level and is denoted by α.",
+     "urdu": "v. پیرامیٹر کے رد کے علاقے میں ہونے کے احتمال کو معنویت کی سطح کہتے ہیں اور اسے α سے ظاہر کرتے ہیں۔",
+     "pashto": "v. هغه احتمال چې پارامټر د ردولو په سیمه کې پروت وي، د معنی‌داریت کچه بلل کېږي او په α ښودل کېږي."
+    },
+    {
+     "text": "vi. (U−L) is called width or length of confidence interval which is a measure of precision for confidence interval.",
+     "urdu": "vi. (U−L) کو اعتماد کے وقفے کی چوڑائی یا لمبائی کہتے ہیں جو اعتماد کے وقفے کی درستی کا پیمانہ ہے۔",
+     "pashto": "vi. (U−L) ته د باور د واټن پلنوالی یا اوږدوالی وایي چې د باور د واټن د دقت اندازه ده."
+    },
+    {
+     "text": "vii. Precision means accuracy of the confidence interval. It can be increased either by increasing the sample size or decreasing the confidence coefficient.",
+     "urdu": "vii. درستی سے مراد اعتماد کے وقفے کی صحت ہے۔ اسے نمونے کا سائز بڑھا کر یا اعتماد کا ضریب کم کر کے بڑھایا جا سکتا ہے۔",
+     "pashto": "vii. دقت د باور د واټن سموالي ته وایي. دا د نمونې د اندازې په زیاتولو یا د باور د ضریب په کمولو زیاتېدای شي."
+    },
+    {
+     "text": "6.3.2 Large sample confidence interval for population mean μ (when σ is known):",
+     "urdu": "6.3.2 آبادی کے اوسط μ کے لیے بڑے نمونے کا اعتماد کا وقفہ (جب σ معلوم ہو):",
+     "pashto": "6.3.2 د نفوس د منځني μ لپاره د لویې نمونې د باور واټن (کله چې σ معلوم وي):"
+    },
+    {
+     "text": "To find a 100(1−α)% large sample (n ≥ 30) confidence interval for population mean μ when σ is known, we begin with the statistic $Z=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}}$ which has a standard normal distribution and make a probability statement as: $P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha$",
+     "urdu": "جب σ معلوم ہو تو آبادی کے اوسط μ کے لیے 100(1−α)% بڑے نمونے (n ≥ 30) کا اعتماد کا وقفہ معلوم کرنے کے لیے ہم شماریہ $Z=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}}$ سے آغاز کرتے ہیں جس کی تقسیم معیاری نارمل ہے اور احتمالی بیان یوں بناتے ہیں: $P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha$",
+     "pashto": "کله چې σ معلوم وي، د نفوس د منځني μ لپاره د 100(1−α)% لویې نمونې (n ≥ 30) د باور واټن د پیدا کولو لپاره له احصاییې $Z=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}}$ څخه پیل کوو چې معیاري نورمال وېش لري او احتمالي بیان داسې جوړوو: $P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha$"
+    },
+    {
+     "text": "Where $Z_{\\alpha/2}$ means that probability or area to the right of $Z_{\\alpha/2}$ is equal to α/2. Similarly probability to the left of $-Z_{\\alpha/2}$ is equal to α/2 such that α/2 + α/2 = α.",
+     "urdu": "جہاں $Z_{\\alpha/2}$ کا مطلب ہے کہ $Z_{\\alpha/2}$ کے دائیں جانب احتمال یا رقبہ α/2 کے برابر ہے۔ اسی طرح $-Z_{\\alpha/2}$ کے بائیں جانب احتمال α/2 کے برابر ہے تاکہ α/2 + α/2 = α۔",
+     "pashto": "چې $Z_{\\alpha/2}$ دا مانا لري چې د $Z_{\\alpha/2}$ ښي خوا ته احتمال یا مساحت له α/2 سره برابر دی. همداراز د $-Z_{\\alpha/2}$ کیڼ خوا ته احتمال له α/2 سره برابر دی داسې چې α/2 + α/2 = α."
+    },
+    {
+     "text": "A 100(1−α)% confidence interval for μ when σ is known is given by;",
+     "urdu": "جب σ معلوم ہو تو μ کے لیے 100(1−α)% اعتماد کا وقفہ یہ ہے؛",
+     "pashto": "کله چې σ معلوم وي، د μ لپاره 100(1−α)% د باور واټن دا دی؛"
+    },
+    {
+     "text": "$$\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.$$",
+     "urdu": "$$\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.$$",
+     "pashto": "$$\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.$$"
+    },
+    {
+     "text": "Note for particular sample use $\\overline{x}$ instead of $\\overline{X}$.",
+     "urdu": "نوٹ کریں کہ کسی خاص نمونے کے لیے $\\overline{X}$ کی جگہ $\\overline{x}$ استعمال کریں۔",
+     "pashto": "پام وکړئ چې د یوې ځانګړې نمونې لپاره د $\\overline{X}$ پر ځای $\\overline{x}$ وکاروئ."
+    },
+    {
+     "text": "Example 6.9",
+     "urdu": "مثال 6.9",
+     "pashto": "بېلګه 6.9"
+    },
+    {
+     "text": "An electrical firm manufactures light bulbs that have a length of life with mean μ and a standard deviation of 40 hours. If a random sample of 100 bulbs has an average life of 780 hours, find a 95% confidence interval for the population mean of all bulbs produced by this firm.",
+     "urdu": "ایک برقی کمپنی ایسے بلب بناتی ہے جن کی عمر کا اوسط μ اور معیاری انحراف 40 گھنٹے ہے۔ اگر 100 بلبوں کے تصادفی نمونے کی اوسط عمر 780 گھنٹے ہو تو اس کمپنی کے تیار کردہ تمام بلبوں کے آبادی کے اوسط کے لیے 95% اعتماد کا وقفہ معلوم کریں۔",
+     "pashto": "یوه برېښنايي شرکت داسې ګروپونه جوړوي چې د عمر منځنی یې μ او معیاري انحراف یې 40 ساعته دی. که د 100 ګروپونو تصادفي نمونه منځنی عمر 780 ساعته ولري، د دې شرکت د ټولو جوړو شویو ګروپونو د نفوس منځني لپاره 95% د باور واټن پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "A 100(1−α)% confidence interval for μ is $\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}$",
+     "urdu": "μ کے لیے 100(1−α)% اعتماد کا وقفہ $\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}$ ہے",
+     "pashto": "د μ لپاره 100(1−α)% د باور واټن $\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}$ دی"
+    }
+   ],
+   "theory": "6.3 Interval estimation\n\nThis process provides an interval of values calculated from sample data, as an estimate for the unknown population parameter. Interval estimate has a high probability of containing the parameter of interest.\n\n6.3.1 Confidence interval\n\nAn interval which is constructed from sample observations in such a way that it has a high probability of containing the unknown value of parameter is called confidence interval. For example if L and U are two statistics, then the confidence interval for the parameter θ is given as: P[L<\\theta<U]=1-\\alpha\n\n■ Main points about confidence interval\n\ni. The end points that bound a confidence interval i.e. L and U are called critical values or confidence limits where L is the lower confidence limit and U is the upper confidence limit.\n\nii. The region between L and U is called confidence interval or confidence region or acceptance region for the unknown parameter θ.\n\niii. The region beyond the acceptance region i.e. from −∞ to L and U to ∞ is known as critical region or rejection region.\n\niv. The probability that the interval contains the parameter is called confidence coefficient or confidence level and is denoted by (1−α). It is also written as 100 (1−α) %.\n\nv. The probability that parameter lies in the rejection region is called significance level and is denoted by α.\n\nvi. (U−L) is called width or length of confidence interval which is a measure of precision for confidence interval.\n\nvii. Precision means accuracy of the confidence interval. It can be increased either by increasing the sample size or decreasing the confidence coefficient.\n\n6.3.2 Large sample confidence interval for population mean μ (when σ is known):\n\nTo find a 100(1−α)% large sample (n ≥ 30) confidence interval for population mean μ when σ is known, we begin with the statistic Z=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} which has a standard normal distribution and make a probability statement as: P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha\n\nWhere Z_{\\alpha/2} means that probability or area to the right of Z_{\\alpha/2} is equal to α/2. Similarly probability to the left of -Z_{\\alpha/2} is equal to α/2 such that α/2 + α/2 = α.\n\nA 100(1−α)% confidence interval for μ when σ is known is given by;\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.$\n\nNote for particular sample use \\overline{x} instead of \\overline{X}.\n\nExample 6.9\n\nAn electrical firm manufactures light bulbs that have a length of life with mean μ and a standard deviation of 40 hours. If a random sample of 100 bulbs has an average life of 780 hours, find a 95% confidence interval for the population mean of all bulbs produced by this firm.\n\nSolution:\n\nA 100(1−α)% confidence interval for μ is \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}",
+   "urdu": "6.3 وقفہ تخمین\n\nیہ عمل نامعلوم آبادی کے پیرامیٹر کے تخمینے کے طور پر نمونے کے مواد سے معلوم کی گئی قیمتوں کا ایک وقفہ فراہم کرتا ہے۔ وقفہ تخمینے میں مطلوبہ پیرامیٹر کے شامل ہونے کا احتمال زیادہ ہوتا ہے۔\n\n6.3.1 اعتماد کا وقفہ\n\nنمونے کے مشاہدات سے اس طرح بنایا گیا وقفہ کہ اس میں پیرامیٹر کی نامعلوم قیمت کے شامل ہونے کا احتمال زیادہ ہو، اعتماد کا وقفہ کہلاتا ہے۔ مثلاً اگر L اور U دو شماریے ہوں تو پیرامیٹر θ کے لیے اعتماد کا وقفہ یہ ہے: P[L<\\theta<U]=1-\\alpha\n\n■ اعتماد کے وقفے کے بارے میں اہم نکات\n\ni. اعتماد کے وقفے کو محدود کرنے والے آخری نقاط یعنی L اور U کو فیصلہ کن قیمتیں یا اعتماد کی حدیں کہتے ہیں جہاں L نچلی اور U اوپری اعتماد کی حد ہے۔\n\nii. L اور U کے درمیان علاقے کو نامعلوم پیرامیٹر θ کا اعتماد کا وقفہ یا اعتماد کا علاقہ یا قبولیت کا علاقہ کہتے ہیں۔\n\niii. قبولیت کے علاقے سے باہر کا علاقہ یعنی −∞ سے L اور U سے ∞ تک فیصلہ کن علاقہ یا رد کا علاقہ کہلاتا ہے۔\n\niv. وقفے میں پیرامیٹر کے شامل ہونے کے احتمال کو اعتماد کا ضریب یا اعتماد کی سطح کہتے ہیں اور اسے (1−α) سے ظاہر کرتے ہیں۔ اسے 100 (1−α) % بھی لکھا جاتا ہے۔\n\nv. پیرامیٹر کے رد کے علاقے میں ہونے کے احتمال کو معنویت کی سطح کہتے ہیں اور اسے α سے ظاہر کرتے ہیں۔\n\nvi. (U−L) کو اعتماد کے وقفے کی چوڑائی یا لمبائی کہتے ہیں جو اعتماد کے وقفے کی درستی کا پیمانہ ہے۔\n\nvii. درستی سے مراد اعتماد کے وقفے کی صحت ہے۔ اسے نمونے کا سائز بڑھا کر یا اعتماد کا ضریب کم کر کے بڑھایا جا سکتا ہے۔\n\n6.3.2 آبادی کے اوسط μ کے لیے بڑے نمونے کا اعتماد کا وقفہ (جب σ معلوم ہو):\n\nجب σ معلوم ہو تو آبادی کے اوسط μ کے لیے 100(1−α)% بڑے نمونے (n ≥ 30) کا اعتماد کا وقفہ معلوم کرنے کے لیے ہم شماریہ Z=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} سے آغاز کرتے ہیں جس کی تقسیم معیاری نارمل ہے اور احتمالی بیان یوں بناتے ہیں: P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha\n\nجہاں Z_{\\alpha/2} کا مطلب ہے کہ Z_{\\alpha/2} کے دائیں جانب احتمال یا رقبہ α/2 کے برابر ہے۔ اسی طرح -Z_{\\alpha/2} کے بائیں جانب احتمال α/2 کے برابر ہے تاکہ α/2 + α/2 = α۔\n\nجب σ معلوم ہو تو μ کے لیے 100(1−α)% اعتماد کا وقفہ یہ ہے؛\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.$\n\nنوٹ کریں کہ کسی خاص نمونے کے لیے \\overline{X} کی جگہ \\overline{x} استعمال کریں۔\n\nمثال 6.9\n\nایک برقی کمپنی ایسے بلب بناتی ہے جن کی عمر کا اوسط μ اور معیاری انحراف 40 گھنٹے ہے۔ اگر 100 بلبوں کے تصادفی نمونے کی اوسط عمر 780 گھنٹے ہو تو اس کمپنی کے تیار کردہ تمام بلبوں کے آبادی کے اوسط کے لیے 95% اعتماد کا وقفہ معلوم کریں۔\n\nحل:\n\nμ کے لیے 100(1−α)% اعتماد کا وقفہ \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}} ہے",
+   "pashto": "6.3 واټني اټکل\n\nدا بهیر د نامعلوم نفوس پارامټر د اټکل په توګه له نمونوي معلوماتو څخه د محاسبه شویو قیمتونو یو واټن ورکوي. واټني اټکل د غوښتل شوي پارامټر د لرلو لوړ احتمال لري.\n\n6.3.1 د باور واټن\n\nهغه واټن چې له نمونوي مشاهدو څخه داسې جوړ شي چې د پارامټر د نامعلوم قیمت د لرلو لوړ احتمال ولري، د باور واټن بلل کېږي. د بېلګې په توګه که L او U دوه احصاییې وي، نو د θ پارامټر لپاره د باور واټن دا دی: P[L<\\theta<U]=1-\\alpha\n\n■ د باور د واټن په اړه مهم ټکي\n\ni. هغه پای ټکي چې د باور واټن محدودوي یعنې L او U، بحراني قیمتونه یا د باور حدونه بلل کېږي چې L د باور ښکتنی حد او U د باور پورتنی حد دی.\n\nii. د L او U ترمنځ سیمې ته د نامعلوم پارامټر θ لپاره د باور واټن یا د باور سیمه یا د منلو سیمه وایي.\n\niii. د منلو له سیمې بهر سیمه یعنې له −∞ څخه تر L او له U څخه تر ∞ پورې، بحراني سیمه یا د ردولو سیمه بلل کېږي.\n\niv. هغه احتمال چې واټن پارامټر ولري، د باور ضریب یا د باور کچه بلل کېږي او په (1−α) ښودل کېږي. داسې هم لیکل کېږي 100 (1−α) %.\n\nv. هغه احتمال چې پارامټر د ردولو په سیمه کې پروت وي، د معنی‌داریت کچه بلل کېږي او په α ښودل کېږي.\n\nvi. (U−L) ته د باور د واټن پلنوالی یا اوږدوالی وایي چې د باور د واټن د دقت اندازه ده.\n\nvii. دقت د باور د واټن سموالي ته وایي. دا د نمونې د اندازې په زیاتولو یا د باور د ضریب په کمولو زیاتېدای شي.\n\n6.3.2 د نفوس د منځني μ لپاره د لویې نمونې د باور واټن (کله چې σ معلوم وي):\n\nکله چې σ معلوم وي، د نفوس د منځني μ لپاره د 100(1−α)% لویې نمونې (n ≥ 30) د باور واټن د پیدا کولو لپاره له احصاییې Z=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} څخه پیل کوو چې معیاري نورمال وېش لري او احتمالي بیان داسې جوړوو: P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha\n\nچې Z_{\\alpha/2} دا مانا لري چې د Z_{\\alpha/2} ښي خوا ته احتمال یا مساحت له α/2 سره برابر دی. همداراز د -Z_{\\alpha/2} کیڼ خوا ته احتمال له α/2 سره برابر دی داسې چې α/2 + α/2 = α.\n\nکله چې σ معلوم وي، د μ لپاره 100(1−α)% د باور واټن دا دی؛\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.$\n\nپام وکړئ چې د یوې ځانګړې نمونې لپاره د \\overline{X} پر ځای \\overline{x} وکاروئ.\n\nبېلګه 6.9\n\nیوه برېښنايي شرکت داسې ګروپونه جوړوي چې د عمر منځنی یې μ او معیاري انحراف یې 40 ساعته دی. که د 100 ګروپونو تصادفي نمونه منځنی عمر 780 ساعته ولري، د دې شرکت د ټولو جوړو شویو ګروپونو د نفوس منځني لپاره 95% د باور واټن پیدا کړئ.\n\nحل:\n\nد μ لپاره 100(1−α)% د باور واټن \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}} دی",
+   "theoryUrdu": "6.3 وقفہ تخمین\n\nیہ عمل نامعلوم آبادی کے پیرامیٹر کے تخمینے کے طور پر نمونے کے مواد سے معلوم کی گئی قیمتوں کا ایک وقفہ فراہم کرتا ہے۔ وقفہ تخمینے میں مطلوبہ پیرامیٹر کے شامل ہونے کا احتمال زیادہ ہوتا ہے۔\n\n6.3.1 اعتماد کا وقفہ\n\nنمونے کے مشاہدات سے اس طرح بنایا گیا وقفہ کہ اس میں پیرامیٹر کی نامعلوم قیمت کے شامل ہونے کا احتمال زیادہ ہو، اعتماد کا وقفہ کہلاتا ہے۔ مثلاً اگر L اور U دو شماریے ہوں تو پیرامیٹر θ کے لیے اعتماد کا وقفہ یہ ہے: P[L<\\theta<U]=1-\\alpha\n\n■ اعتماد کے وقفے کے بارے میں اہم نکات\n\ni. اعتماد کے وقفے کو محدود کرنے والے آخری نقاط یعنی L اور U کو فیصلہ کن قیمتیں یا اعتماد کی حدیں کہتے ہیں جہاں L نچلی اور U اوپری اعتماد کی حد ہے۔\n\nii. L اور U کے درمیان علاقے کو نامعلوم پیرامیٹر θ کا اعتماد کا وقفہ یا اعتماد کا علاقہ یا قبولیت کا علاقہ کہتے ہیں۔\n\niii. قبولیت کے علاقے سے باہر کا علاقہ یعنی −∞ سے L اور U سے ∞ تک فیصلہ کن علاقہ یا رد کا علاقہ کہلاتا ہے۔\n\niv. وقفے میں پیرامیٹر کے شامل ہونے کے احتمال کو اعتماد کا ضریب یا اعتماد کی سطح کہتے ہیں اور اسے (1−α) سے ظاہر کرتے ہیں۔ اسے 100 (1−α) % بھی لکھا جاتا ہے۔\n\nv. پیرامیٹر کے رد کے علاقے میں ہونے کے احتمال کو معنویت کی سطح کہتے ہیں اور اسے α سے ظاہر کرتے ہیں۔\n\nvi. (U−L) کو اعتماد کے وقفے کی چوڑائی یا لمبائی کہتے ہیں جو اعتماد کے وقفے کی درستی کا پیمانہ ہے۔\n\nvii. درستی سے مراد اعتماد کے وقفے کی صحت ہے۔ اسے نمونے کا سائز بڑھا کر یا اعتماد کا ضریب کم کر کے بڑھایا جا سکتا ہے۔\n\n6.3.2 آبادی کے اوسط μ کے لیے بڑے نمونے کا اعتماد کا وقفہ (جب σ معلوم ہو):\n\nجب σ معلوم ہو تو آبادی کے اوسط μ کے لیے 100(1−α)% بڑے نمونے (n ≥ 30) کا اعتماد کا وقفہ معلوم کرنے کے لیے ہم شماریہ Z=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} سے آغاز کرتے ہیں جس کی تقسیم معیاری نارمل ہے اور احتمالی بیان یوں بناتے ہیں: P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha\n\nجہاں Z_{\\alpha/2} کا مطلب ہے کہ Z_{\\alpha/2} کے دائیں جانب احتمال یا رقبہ α/2 کے برابر ہے۔ اسی طرح -Z_{\\alpha/2} کے بائیں جانب احتمال α/2 کے برابر ہے تاکہ α/2 + α/2 = α۔\n\nجب σ معلوم ہو تو μ کے لیے 100(1−α)% اعتماد کا وقفہ یہ ہے؛\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.$\n\nنوٹ کریں کہ کسی خاص نمونے کے لیے \\overline{X} کی جگہ \\overline{x} استعمال کریں۔\n\nمثال 6.9\n\nایک برقی کمپنی ایسے بلب بناتی ہے جن کی عمر کا اوسط μ اور معیاری انحراف 40 گھنٹے ہے۔ اگر 100 بلبوں کے تصادفی نمونے کی اوسط عمر 780 گھنٹے ہو تو اس کمپنی کے تیار کردہ تمام بلبوں کے آبادی کے اوسط کے لیے 95% اعتماد کا وقفہ معلوم کریں۔\n\nحل:\n\nμ کے لیے 100(1−α)% اعتماد کا وقفہ \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}} ہے",
+   "theoryPashto": "6.3 واټني اټکل\n\nدا بهیر د نامعلوم نفوس پارامټر د اټکل په توګه له نمونوي معلوماتو څخه د محاسبه شویو قیمتونو یو واټن ورکوي. واټني اټکل د غوښتل شوي پارامټر د لرلو لوړ احتمال لري.\n\n6.3.1 د باور واټن\n\nهغه واټن چې له نمونوي مشاهدو څخه داسې جوړ شي چې د پارامټر د نامعلوم قیمت د لرلو لوړ احتمال ولري، د باور واټن بلل کېږي. د بېلګې په توګه که L او U دوه احصاییې وي، نو د θ پارامټر لپاره د باور واټن دا دی: P[L<\\theta<U]=1-\\alpha\n\n■ د باور د واټن په اړه مهم ټکي\n\ni. هغه پای ټکي چې د باور واټن محدودوي یعنې L او U، بحراني قیمتونه یا د باور حدونه بلل کېږي چې L د باور ښکتنی حد او U د باور پورتنی حد دی.\n\nii. د L او U ترمنځ سیمې ته د نامعلوم پارامټر θ لپاره د باور واټن یا د باور سیمه یا د منلو سیمه وایي.\n\niii. د منلو له سیمې بهر سیمه یعنې له −∞ څخه تر L او له U څخه تر ∞ پورې، بحراني سیمه یا د ردولو سیمه بلل کېږي.\n\niv. هغه احتمال چې واټن پارامټر ولري، د باور ضریب یا د باور کچه بلل کېږي او په (1−α) ښودل کېږي. داسې هم لیکل کېږي 100 (1−α) %.\n\nv. هغه احتمال چې پارامټر د ردولو په سیمه کې پروت وي، د معنی‌داریت کچه بلل کېږي او په α ښودل کېږي.\n\nvi. (U−L) ته د باور د واټن پلنوالی یا اوږدوالی وایي چې د باور د واټن د دقت اندازه ده.\n\nvii. دقت د باور د واټن سموالي ته وایي. دا د نمونې د اندازې په زیاتولو یا د باور د ضریب په کمولو زیاتېدای شي.\n\n6.3.2 د نفوس د منځني μ لپاره د لویې نمونې د باور واټن (کله چې σ معلوم وي):\n\nکله چې σ معلوم وي، د نفوس د منځني μ لپاره د 100(1−α)% لویې نمونې (n ≥ 30) د باور واټن د پیدا کولو لپاره له احصاییې Z=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} څخه پیل کوو چې معیاري نورمال وېش لري او احتمالي بیان داسې جوړوو: P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha\n\nچې Z_{\\alpha/2} دا مانا لري چې د Z_{\\alpha/2} ښي خوا ته احتمال یا مساحت له α/2 سره برابر دی. همداراز د -Z_{\\alpha/2} کیڼ خوا ته احتمال له α/2 سره برابر دی داسې چې α/2 + α/2 = α.\n\nکله چې σ معلوم وي، د μ لپاره 100(1−α)% د باور واټن دا دی؛\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.$\n\nپام وکړئ چې د یوې ځانګړې نمونې لپاره د \\overline{X} پر ځای \\overline{x} وکاروئ.\n\nبېلګه 6.9\n\nیوه برېښنايي شرکت داسې ګروپونه جوړوي چې د عمر منځنی یې μ او معیاري انحراف یې 40 ساعته دی. که د 100 ګروپونو تصادفي نمونه منځنی عمر 780 ساعته ولري، د دې شرکت د ټولو جوړو شویو ګروپونو د نفوس منځني لپاره 95% د باور واټن پیدا کړئ.\n\nحل:\n\nد μ لپاره 100(1−α)% د باور واټن \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}} دی",
+   "content": "<p>6.3 Interval estimation</p><p>This process provides an interval of values calculated from sample data, as an estimate for the unknown population parameter. Interval estimate has a high probability of containing the parameter of interest.</p><p>6.3.1 Confidence interval</p><p>An interval which is constructed from sample observations in such a way that it has a high probability of containing the unknown value of parameter is called confidence interval. For example if L and U are two statistics, then the confidence interval for the parameter θ is given as: P[L&lt;\\theta&lt;U]=1-\\alpha</p><p>■ Main points about confidence interval</p><p>i. The end points that bound a confidence interval i.e. L and U are called critical values or confidence limits where L is the lower confidence limit and U is the upper confidence limit.</p><p>ii. The region between L and U is called confidence interval or confidence region or acceptance region for the unknown parameter θ.</p><p>iii. The region beyond the acceptance region i.e. from −∞ to L and U to ∞ is known as critical region or rejection region.</p><p>iv. The probability that the interval contains the parameter is called confidence coefficient or confidence level and is denoted by (1−α). It is also written as 100 (1−α) %.</p><p>v. The probability that parameter lies in the rejection region is called significance level and is denoted by α.</p><p>vi. (U−L) is called width or length of confidence interval which is a measure of precision for confidence interval.</p><p>vii. Precision means accuracy of the confidence interval. It can be increased either by increasing the sample size or decreasing the confidence coefficient.</p><p>6.3.2 Large sample confidence interval for population mean μ (when σ is known):</p><p>To find a 100(1−α)% large sample (n ≥ 30) confidence interval for population mean μ when σ is known, we begin with the statistic Z=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} which has a standard normal distribution and make a probability statement as: P[-Z_{\\alpha/2}&lt;Z&lt;Z_{\\alpha/2}]=1-\\alpha</p><p>Where Z_{\\alpha/2} means that probability or area to the right of Z_{\\alpha/2} is equal to α/2. Similarly probability to the left of -Z_{\\alpha/2} is equal to α/2 such that α/2 + α/2 = α.</p><p>A 100(1−α)% confidence interval for μ when σ is known is given by;</p><p>$\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}.$</p><p>Note for particular sample use \\overline{x} instead of \\overline{X}.</p><p>Example 6.9</p><p>An electrical firm manufactures light bulbs that have a length of life with mean μ and a standard deviation of 40 hours. If a random sample of 100 bulbs has an average life of 780 hours, find a 95% confidence interval for the population mean of all bulbs produced by this firm.</p><p>Solution:</p><p>A 100(1−α)% confidence interval for μ is \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "visualParagraph",
+     "blockId": "stat12-ci-figure",
+     "indices": [
+      3
+     ],
+     "visualFirst": false
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "visualParagraph",
+     "blockId": "stat12-ci-mean-z",
+     "indices": [
+      13
+     ],
+     "visualFirst": false
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-ci-figure",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" role=\"img\" aria-label=\"Confidence interval [L, U] with tails α/2\"><rect width=\"320\" height=\"130\" fill=\"white\"/><rect width=\"320\" height=\"130\" fill=\"#dbeafe\"/><path d=\"M4.3 98L4.3 97.9L6.1 97.9L7.9 97.8L9.6 97.8L11.4 97.8L13.2 97.7L15.0 97.7L16.7 97.7L18.5 97.6L20.3 97.5L22.1 97.5L23.8 97.4L25.6 97.3L27.4 97.2L29.1 97.1L30.9 97.0L32.7 96.9L34.5 96.8L36.2 96.6L38.0 96.4L39.8 96.2L41.6 96.0L43.3 95.8L45.1 95.5L46.9 95.3L48.6 94.9L50.4 94.6L52.2 94.2L54.0 93.8L55.7 93.4L57.5 92.9L59.3 92.4L61.1 91.9L62.8 91.3L64.6 90.6L66.4 89.9L68.2 89.2L69.9 88.4L71.7 87.6L73.5 86.7L75.2 85.7L75.2 98Z\" fill=\"#fff\"/><path d=\"M244.8 98L244.8 85.7L246.5 86.7L248.3 87.6L250.1 88.4L251.8 89.2L253.6 89.9L255.4 90.6L257.2 91.3L258.9 91.9L260.7 92.4L262.5 92.9L264.3 93.4L266.0 93.8L267.8 94.2L269.6 94.6L271.4 94.9L273.1 95.3L274.9 95.5L276.7 95.8L278.4 96.0L280.2 96.2L282.0 96.4L283.8 96.6L285.5 96.8L287.3 96.9L289.1 97.0L290.9 97.1L292.6 97.2L294.4 97.3L296.2 97.4L297.9 97.5L299.7 97.5L301.5 97.6L303.3 97.7L305.0 97.7L306.8 97.7L308.6 97.8L310.4 97.8L312.1 97.8L313.9 97.9L315.7 97.9L315.7 98Z\" fill=\"#fff\"/><path d=\"M4.3 97.9L6.9 97.8L9.5 97.8L12.1 97.8L14.7 97.7L17.3 97.6L19.9 97.6L22.5 97.5L25.1 97.4L27.7 97.2L30.3 97.1L32.9 96.9L35.5 96.7L38.1 96.4L40.6 96.1L43.2 95.8L45.8 95.4L48.4 95.0L51.0 94.5L53.6 93.9L56.2 93.3L58.8 92.6L61.4 91.8L64.0 90.9L66.6 89.9L69.2 88.7L71.8 87.5L74.4 86.2L77.0 84.7L79.6 83.1L82.2 81.4L84.8 79.5L87.4 77.5L89.9 75.4L92.5 73.1L95.1 70.7L97.7 68.2L100.3 65.6L102.9 62.9L105.5 60.0L108.1 57.1L110.7 54.1L113.3 51.1L115.9 48.1L118.5 45.0L121.1 42.0L123.7 39.0L126.3 36.0L128.9 33.2L131.5 30.4L134.1 27.8L136.6 25.4L139.2 23.1L141.8 21.1L144.4 19.3L147.0 17.7L149.6 16.4L152.2 15.3L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.3L170.4 16.4L173.0 17.7L175.6 19.3L178.2 21.1L180.8 23.1L183.4 25.4L185.9 27.8L188.5 30.4L191.1 33.2L193.7 36.0L196.3 39.0L198.9 42.0L201.5 45.0L204.1 48.1L206.7 51.1L209.3 54.1L211.9 57.1L214.5 60.0L217.1 62.9L219.7 65.6L222.3 68.2L224.9 70.7L227.5 73.1L230.1 75.4L232.6 77.5L235.2 79.5L237.8 81.4L240.4 83.1L243.0 84.7L245.6 86.2L248.2 87.5L250.8 88.7L253.4 89.9L256.0 90.9L258.6 91.8L261.2 92.6L263.8 93.3L266.4 93.9L269.0 94.5L271.6 95.0L274.2 95.4L276.8 95.8L279.4 96.1L281.9 96.4L284.5 96.7L287.1 96.9L289.7 97.1L292.3 97.2L294.9 97.4L297.5 97.5L300.1 97.6L302.7 97.6L305.3 97.7L307.9 97.8L310.5 97.8L313.1 97.8L315.7 97.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 98H314M75.2 98V85.7M244.8 98V85.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"47.6\" y=\"64\">α/2</text><text x=\"160.0\" y=\"50\">1−α</text><text x=\"272.4\" y=\"64\">α/2</text><text x=\"18\" y=\"94\">−∞</text><text x=\"306\" y=\"94\">∞</text><text x=\"75.2\" y=\"116\">L</text><text x=\"244.8\" y=\"116\">u</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" role=\"img\" aria-label=\"Confidence interval [L, U] with tails α/2\"><rect width=\"320\" height=\"130\" fill=\"white\"/><rect width=\"320\" height=\"130\" fill=\"#dbeafe\"/><path d=\"M4.3 98L4.3 97.9L6.1 97.9L7.9 97.8L9.6 97.8L11.4 97.8L13.2 97.7L15.0 97.7L16.7 97.7L18.5 97.6L20.3 97.5L22.1 97.5L23.8 97.4L25.6 97.3L27.4 97.2L29.1 97.1L30.9 97.0L32.7 96.9L34.5 96.8L36.2 96.6L38.0 96.4L39.8 96.2L41.6 96.0L43.3 95.8L45.1 95.5L46.9 95.3L48.6 94.9L50.4 94.6L52.2 94.2L54.0 93.8L55.7 93.4L57.5 92.9L59.3 92.4L61.1 91.9L62.8 91.3L64.6 90.6L66.4 89.9L68.2 89.2L69.9 88.4L71.7 87.6L73.5 86.7L75.2 85.7L75.2 98Z\" fill=\"#fff\"/><path d=\"M244.8 98L244.8 85.7L246.5 86.7L248.3 87.6L250.1 88.4L251.8 89.2L253.6 89.9L255.4 90.6L257.2 91.3L258.9 91.9L260.7 92.4L262.5 92.9L264.3 93.4L266.0 93.8L267.8 94.2L269.6 94.6L271.4 94.9L273.1 95.3L274.9 95.5L276.7 95.8L278.4 96.0L280.2 96.2L282.0 96.4L283.8 96.6L285.5 96.8L287.3 96.9L289.1 97.0L290.9 97.1L292.6 97.2L294.4 97.3L296.2 97.4L297.9 97.5L299.7 97.5L301.5 97.6L303.3 97.7L305.0 97.7L306.8 97.7L308.6 97.8L310.4 97.8L312.1 97.8L313.9 97.9L315.7 97.9L315.7 98Z\" fill=\"#fff\"/><path d=\"M4.3 97.9L6.9 97.8L9.5 97.8L12.1 97.8L14.7 97.7L17.3 97.6L19.9 97.6L22.5 97.5L25.1 97.4L27.7 97.2L30.3 97.1L32.9 96.9L35.5 96.7L38.1 96.4L40.6 96.1L43.2 95.8L45.8 95.4L48.4 95.0L51.0 94.5L53.6 93.9L56.2 93.3L58.8 92.6L61.4 91.8L64.0 90.9L66.6 89.9L69.2 88.7L71.8 87.5L74.4 86.2L77.0 84.7L79.6 83.1L82.2 81.4L84.8 79.5L87.4 77.5L89.9 75.4L92.5 73.1L95.1 70.7L97.7 68.2L100.3 65.6L102.9 62.9L105.5 60.0L108.1 57.1L110.7 54.1L113.3 51.1L115.9 48.1L118.5 45.0L121.1 42.0L123.7 39.0L126.3 36.0L128.9 33.2L131.5 30.4L134.1 27.8L136.6 25.4L139.2 23.1L141.8 21.1L144.4 19.3L147.0 17.7L149.6 16.4L152.2 15.3L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.3L170.4 16.4L173.0 17.7L175.6 19.3L178.2 21.1L180.8 23.1L183.4 25.4L185.9 27.8L188.5 30.4L191.1 33.2L193.7 36.0L196.3 39.0L198.9 42.0L201.5 45.0L204.1 48.1L206.7 51.1L209.3 54.1L211.9 57.1L214.5 60.0L217.1 62.9L219.7 65.6L222.3 68.2L224.9 70.7L227.5 73.1L230.1 75.4L232.6 77.5L235.2 79.5L237.8 81.4L240.4 83.1L243.0 84.7L245.6 86.2L248.2 87.5L250.8 88.7L253.4 89.9L256.0 90.9L258.6 91.8L261.2 92.6L263.8 93.3L266.4 93.9L269.0 94.5L271.6 95.0L274.2 95.4L276.8 95.8L279.4 96.1L281.9 96.4L284.5 96.7L287.1 96.9L289.7 97.1L292.3 97.2L294.9 97.4L297.5 97.5L300.1 97.6L302.7 97.6L305.3 97.7L307.9 97.8L310.5 97.8L313.1 97.8L315.7 97.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 98H314M75.2 98V85.7M244.8 98V85.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"47.6\" y=\"64\">α/2</text><text x=\"160.0\" y=\"50\">1−α</text><text x=\"272.4\" y=\"64\">α/2</text><text x=\"18\" y=\"94\">−∞</text><text x=\"306\" y=\"94\">∞</text><text x=\"75.2\" y=\"116\">L</text><text x=\"244.8\" y=\"116\">u</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" role=\"img\" aria-label=\"Confidence interval [L, U] with tails α/2\"><rect width=\"320\" height=\"130\" fill=\"white\"/><rect width=\"320\" height=\"130\" fill=\"#dbeafe\"/><path d=\"M4.3 98L4.3 97.9L6.1 97.9L7.9 97.8L9.6 97.8L11.4 97.8L13.2 97.7L15.0 97.7L16.7 97.7L18.5 97.6L20.3 97.5L22.1 97.5L23.8 97.4L25.6 97.3L27.4 97.2L29.1 97.1L30.9 97.0L32.7 96.9L34.5 96.8L36.2 96.6L38.0 96.4L39.8 96.2L41.6 96.0L43.3 95.8L45.1 95.5L46.9 95.3L48.6 94.9L50.4 94.6L52.2 94.2L54.0 93.8L55.7 93.4L57.5 92.9L59.3 92.4L61.1 91.9L62.8 91.3L64.6 90.6L66.4 89.9L68.2 89.2L69.9 88.4L71.7 87.6L73.5 86.7L75.2 85.7L75.2 98Z\" fill=\"#fff\"/><path d=\"M244.8 98L244.8 85.7L246.5 86.7L248.3 87.6L250.1 88.4L251.8 89.2L253.6 89.9L255.4 90.6L257.2 91.3L258.9 91.9L260.7 92.4L262.5 92.9L264.3 93.4L266.0 93.8L267.8 94.2L269.6 94.6L271.4 94.9L273.1 95.3L274.9 95.5L276.7 95.8L278.4 96.0L280.2 96.2L282.0 96.4L283.8 96.6L285.5 96.8L287.3 96.9L289.1 97.0L290.9 97.1L292.6 97.2L294.4 97.3L296.2 97.4L297.9 97.5L299.7 97.5L301.5 97.6L303.3 97.7L305.0 97.7L306.8 97.7L308.6 97.8L310.4 97.8L312.1 97.8L313.9 97.9L315.7 97.9L315.7 98Z\" fill=\"#fff\"/><path d=\"M4.3 97.9L6.9 97.8L9.5 97.8L12.1 97.8L14.7 97.7L17.3 97.6L19.9 97.6L22.5 97.5L25.1 97.4L27.7 97.2L30.3 97.1L32.9 96.9L35.5 96.7L38.1 96.4L40.6 96.1L43.2 95.8L45.8 95.4L48.4 95.0L51.0 94.5L53.6 93.9L56.2 93.3L58.8 92.6L61.4 91.8L64.0 90.9L66.6 89.9L69.2 88.7L71.8 87.5L74.4 86.2L77.0 84.7L79.6 83.1L82.2 81.4L84.8 79.5L87.4 77.5L89.9 75.4L92.5 73.1L95.1 70.7L97.7 68.2L100.3 65.6L102.9 62.9L105.5 60.0L108.1 57.1L110.7 54.1L113.3 51.1L115.9 48.1L118.5 45.0L121.1 42.0L123.7 39.0L126.3 36.0L128.9 33.2L131.5 30.4L134.1 27.8L136.6 25.4L139.2 23.1L141.8 21.1L144.4 19.3L147.0 17.7L149.6 16.4L152.2 15.3L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.3L170.4 16.4L173.0 17.7L175.6 19.3L178.2 21.1L180.8 23.1L183.4 25.4L185.9 27.8L188.5 30.4L191.1 33.2L193.7 36.0L196.3 39.0L198.9 42.0L201.5 45.0L204.1 48.1L206.7 51.1L209.3 54.1L211.9 57.1L214.5 60.0L217.1 62.9L219.7 65.6L222.3 68.2L224.9 70.7L227.5 73.1L230.1 75.4L232.6 77.5L235.2 79.5L237.8 81.4L240.4 83.1L243.0 84.7L245.6 86.2L248.2 87.5L250.8 88.7L253.4 89.9L256.0 90.9L258.6 91.8L261.2 92.6L263.8 93.3L266.4 93.9L269.0 94.5L271.6 95.0L274.2 95.4L276.8 95.8L279.4 96.1L281.9 96.4L284.5 96.7L287.1 96.9L289.7 97.1L292.3 97.2L294.9 97.4L297.5 97.5L300.1 97.6L302.7 97.6L305.3 97.7L307.9 97.8L310.5 97.8L313.1 97.8L315.7 97.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 98H314M75.2 98V85.7M244.8 98V85.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"47.6\" y=\"64\">α/2</text><text x=\"160.0\" y=\"50\">1−α</text><text x=\"272.4\" y=\"64\">α/2</text><text x=\"18\" y=\"94\">−∞</text><text x=\"306\" y=\"94\">∞</text><text x=\"75.2\" y=\"116\">L</text><text x=\"244.8\" y=\"116\">u</text></g></svg>",
+     "sourceWidthRatio": 0.45
+    },
+    {
+     "id": "stat12-ci-mean-z",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" role=\"img\" aria-label=\"Standard normal with critical values ±Z(α/2)\"><rect width=\"320\" height=\"130\" fill=\"white\"/><rect width=\"320\" height=\"130\" fill=\"#dbeafe\"/><path d=\"M4.3 98L4.3 97.9L6.1 97.9L7.9 97.8L9.6 97.8L11.4 97.8L13.2 97.7L15.0 97.7L16.7 97.7L18.5 97.6L20.3 97.5L22.1 97.5L23.8 97.4L25.6 97.3L27.4 97.2L29.1 97.1L30.9 97.0L32.7 96.9L34.5 96.8L36.2 96.6L38.0 96.4L39.8 96.2L41.6 96.0L43.3 95.8L45.1 95.5L46.9 95.3L48.6 94.9L50.4 94.6L52.2 94.2L54.0 93.8L55.7 93.4L57.5 92.9L59.3 92.4L61.1 91.9L62.8 91.3L64.6 90.6L66.4 89.9L68.2 89.2L69.9 88.4L71.7 87.6L73.5 86.7L75.2 85.7L75.2 98Z\" fill=\"#fff\"/><path d=\"M244.8 98L244.8 85.7L246.5 86.7L248.3 87.6L250.1 88.4L251.8 89.2L253.6 89.9L255.4 90.6L257.2 91.3L258.9 91.9L260.7 92.4L262.5 92.9L264.3 93.4L266.0 93.8L267.8 94.2L269.6 94.6L271.4 94.9L273.1 95.3L274.9 95.5L276.7 95.8L278.4 96.0L280.2 96.2L282.0 96.4L283.8 96.6L285.5 96.8L287.3 96.9L289.1 97.0L290.9 97.1L292.6 97.2L294.4 97.3L296.2 97.4L297.9 97.5L299.7 97.5L301.5 97.6L303.3 97.7L305.0 97.7L306.8 97.7L308.6 97.8L310.4 97.8L312.1 97.8L313.9 97.9L315.7 97.9L315.7 98Z\" fill=\"#fff\"/><path d=\"M4.3 97.9L6.9 97.8L9.5 97.8L12.1 97.8L14.7 97.7L17.3 97.6L19.9 97.6L22.5 97.5L25.1 97.4L27.7 97.2L30.3 97.1L32.9 96.9L35.5 96.7L38.1 96.4L40.6 96.1L43.2 95.8L45.8 95.4L48.4 95.0L51.0 94.5L53.6 93.9L56.2 93.3L58.8 92.6L61.4 91.8L64.0 90.9L66.6 89.9L69.2 88.7L71.8 87.5L74.4 86.2L77.0 84.7L79.6 83.1L82.2 81.4L84.8 79.5L87.4 77.5L89.9 75.4L92.5 73.1L95.1 70.7L97.7 68.2L100.3 65.6L102.9 62.9L105.5 60.0L108.1 57.1L110.7 54.1L113.3 51.1L115.9 48.1L118.5 45.0L121.1 42.0L123.7 39.0L126.3 36.0L128.9 33.2L131.5 30.4L134.1 27.8L136.6 25.4L139.2 23.1L141.8 21.1L144.4 19.3L147.0 17.7L149.6 16.4L152.2 15.3L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.3L170.4 16.4L173.0 17.7L175.6 19.3L178.2 21.1L180.8 23.1L183.4 25.4L185.9 27.8L188.5 30.4L191.1 33.2L193.7 36.0L196.3 39.0L198.9 42.0L201.5 45.0L204.1 48.1L206.7 51.1L209.3 54.1L211.9 57.1L214.5 60.0L217.1 62.9L219.7 65.6L222.3 68.2L224.9 70.7L227.5 73.1L230.1 75.4L232.6 77.5L235.2 79.5L237.8 81.4L240.4 83.1L243.0 84.7L245.6 86.2L248.2 87.5L250.8 88.7L253.4 89.9L256.0 90.9L258.6 91.8L261.2 92.6L263.8 93.3L266.4 93.9L269.0 94.5L271.6 95.0L274.2 95.4L276.8 95.8L279.4 96.1L281.9 96.4L284.5 96.7L287.1 96.9L289.7 97.1L292.3 97.2L294.9 97.4L297.5 97.5L300.1 97.6L302.7 97.6L305.3 97.7L307.9 97.8L310.5 97.8L313.1 97.8L315.7 97.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 98H314M75.2 98V85.7M244.8 98V85.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"47.6\" y=\"64\">α/2</text><text x=\"160.0\" y=\"50\">1−α</text><text x=\"272.4\" y=\"64\">α/2</text><text x=\"18\" y=\"94\">−∞</text><text x=\"306\" y=\"94\">∞</text><text x=\"75.2\" y=\"116\">−Zα/2</text><text x=\"244.8\" y=\"116\">Zα/2</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" role=\"img\" aria-label=\"Standard normal with critical values ±Z(α/2)\"><rect width=\"320\" height=\"130\" fill=\"white\"/><rect width=\"320\" height=\"130\" fill=\"#dbeafe\"/><path d=\"M4.3 98L4.3 97.9L6.1 97.9L7.9 97.8L9.6 97.8L11.4 97.8L13.2 97.7L15.0 97.7L16.7 97.7L18.5 97.6L20.3 97.5L22.1 97.5L23.8 97.4L25.6 97.3L27.4 97.2L29.1 97.1L30.9 97.0L32.7 96.9L34.5 96.8L36.2 96.6L38.0 96.4L39.8 96.2L41.6 96.0L43.3 95.8L45.1 95.5L46.9 95.3L48.6 94.9L50.4 94.6L52.2 94.2L54.0 93.8L55.7 93.4L57.5 92.9L59.3 92.4L61.1 91.9L62.8 91.3L64.6 90.6L66.4 89.9L68.2 89.2L69.9 88.4L71.7 87.6L73.5 86.7L75.2 85.7L75.2 98Z\" fill=\"#fff\"/><path d=\"M244.8 98L244.8 85.7L246.5 86.7L248.3 87.6L250.1 88.4L251.8 89.2L253.6 89.9L255.4 90.6L257.2 91.3L258.9 91.9L260.7 92.4L262.5 92.9L264.3 93.4L266.0 93.8L267.8 94.2L269.6 94.6L271.4 94.9L273.1 95.3L274.9 95.5L276.7 95.8L278.4 96.0L280.2 96.2L282.0 96.4L283.8 96.6L285.5 96.8L287.3 96.9L289.1 97.0L290.9 97.1L292.6 97.2L294.4 97.3L296.2 97.4L297.9 97.5L299.7 97.5L301.5 97.6L303.3 97.7L305.0 97.7L306.8 97.7L308.6 97.8L310.4 97.8L312.1 97.8L313.9 97.9L315.7 97.9L315.7 98Z\" fill=\"#fff\"/><path d=\"M4.3 97.9L6.9 97.8L9.5 97.8L12.1 97.8L14.7 97.7L17.3 97.6L19.9 97.6L22.5 97.5L25.1 97.4L27.7 97.2L30.3 97.1L32.9 96.9L35.5 96.7L38.1 96.4L40.6 96.1L43.2 95.8L45.8 95.4L48.4 95.0L51.0 94.5L53.6 93.9L56.2 93.3L58.8 92.6L61.4 91.8L64.0 90.9L66.6 89.9L69.2 88.7L71.8 87.5L74.4 86.2L77.0 84.7L79.6 83.1L82.2 81.4L84.8 79.5L87.4 77.5L89.9 75.4L92.5 73.1L95.1 70.7L97.7 68.2L100.3 65.6L102.9 62.9L105.5 60.0L108.1 57.1L110.7 54.1L113.3 51.1L115.9 48.1L118.5 45.0L121.1 42.0L123.7 39.0L126.3 36.0L128.9 33.2L131.5 30.4L134.1 27.8L136.6 25.4L139.2 23.1L141.8 21.1L144.4 19.3L147.0 17.7L149.6 16.4L152.2 15.3L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.3L170.4 16.4L173.0 17.7L175.6 19.3L178.2 21.1L180.8 23.1L183.4 25.4L185.9 27.8L188.5 30.4L191.1 33.2L193.7 36.0L196.3 39.0L198.9 42.0L201.5 45.0L204.1 48.1L206.7 51.1L209.3 54.1L211.9 57.1L214.5 60.0L217.1 62.9L219.7 65.6L222.3 68.2L224.9 70.7L227.5 73.1L230.1 75.4L232.6 77.5L235.2 79.5L237.8 81.4L240.4 83.1L243.0 84.7L245.6 86.2L248.2 87.5L250.8 88.7L253.4 89.9L256.0 90.9L258.6 91.8L261.2 92.6L263.8 93.3L266.4 93.9L269.0 94.5L271.6 95.0L274.2 95.4L276.8 95.8L279.4 96.1L281.9 96.4L284.5 96.7L287.1 96.9L289.7 97.1L292.3 97.2L294.9 97.4L297.5 97.5L300.1 97.6L302.7 97.6L305.3 97.7L307.9 97.8L310.5 97.8L313.1 97.8L315.7 97.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 98H314M75.2 98V85.7M244.8 98V85.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"47.6\" y=\"64\">α/2</text><text x=\"160.0\" y=\"50\">1−α</text><text x=\"272.4\" y=\"64\">α/2</text><text x=\"18\" y=\"94\">−∞</text><text x=\"306\" y=\"94\">∞</text><text x=\"75.2\" y=\"116\">−Zα/2</text><text x=\"244.8\" y=\"116\">Zα/2</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" role=\"img\" aria-label=\"Standard normal with critical values ±Z(α/2)\"><rect width=\"320\" height=\"130\" fill=\"white\"/><rect width=\"320\" height=\"130\" fill=\"#dbeafe\"/><path d=\"M4.3 98L4.3 97.9L6.1 97.9L7.9 97.8L9.6 97.8L11.4 97.8L13.2 97.7L15.0 97.7L16.7 97.7L18.5 97.6L20.3 97.5L22.1 97.5L23.8 97.4L25.6 97.3L27.4 97.2L29.1 97.1L30.9 97.0L32.7 96.9L34.5 96.8L36.2 96.6L38.0 96.4L39.8 96.2L41.6 96.0L43.3 95.8L45.1 95.5L46.9 95.3L48.6 94.9L50.4 94.6L52.2 94.2L54.0 93.8L55.7 93.4L57.5 92.9L59.3 92.4L61.1 91.9L62.8 91.3L64.6 90.6L66.4 89.9L68.2 89.2L69.9 88.4L71.7 87.6L73.5 86.7L75.2 85.7L75.2 98Z\" fill=\"#fff\"/><path d=\"M244.8 98L244.8 85.7L246.5 86.7L248.3 87.6L250.1 88.4L251.8 89.2L253.6 89.9L255.4 90.6L257.2 91.3L258.9 91.9L260.7 92.4L262.5 92.9L264.3 93.4L266.0 93.8L267.8 94.2L269.6 94.6L271.4 94.9L273.1 95.3L274.9 95.5L276.7 95.8L278.4 96.0L280.2 96.2L282.0 96.4L283.8 96.6L285.5 96.8L287.3 96.9L289.1 97.0L290.9 97.1L292.6 97.2L294.4 97.3L296.2 97.4L297.9 97.5L299.7 97.5L301.5 97.6L303.3 97.7L305.0 97.7L306.8 97.7L308.6 97.8L310.4 97.8L312.1 97.8L313.9 97.9L315.7 97.9L315.7 98Z\" fill=\"#fff\"/><path d=\"M4.3 97.9L6.9 97.8L9.5 97.8L12.1 97.8L14.7 97.7L17.3 97.6L19.9 97.6L22.5 97.5L25.1 97.4L27.7 97.2L30.3 97.1L32.9 96.9L35.5 96.7L38.1 96.4L40.6 96.1L43.2 95.8L45.8 95.4L48.4 95.0L51.0 94.5L53.6 93.9L56.2 93.3L58.8 92.6L61.4 91.8L64.0 90.9L66.6 89.9L69.2 88.7L71.8 87.5L74.4 86.2L77.0 84.7L79.6 83.1L82.2 81.4L84.8 79.5L87.4 77.5L89.9 75.4L92.5 73.1L95.1 70.7L97.7 68.2L100.3 65.6L102.9 62.9L105.5 60.0L108.1 57.1L110.7 54.1L113.3 51.1L115.9 48.1L118.5 45.0L121.1 42.0L123.7 39.0L126.3 36.0L128.9 33.2L131.5 30.4L134.1 27.8L136.6 25.4L139.2 23.1L141.8 21.1L144.4 19.3L147.0 17.7L149.6 16.4L152.2 15.3L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.3L170.4 16.4L173.0 17.7L175.6 19.3L178.2 21.1L180.8 23.1L183.4 25.4L185.9 27.8L188.5 30.4L191.1 33.2L193.7 36.0L196.3 39.0L198.9 42.0L201.5 45.0L204.1 48.1L206.7 51.1L209.3 54.1L211.9 57.1L214.5 60.0L217.1 62.9L219.7 65.6L222.3 68.2L224.9 70.7L227.5 73.1L230.1 75.4L232.6 77.5L235.2 79.5L237.8 81.4L240.4 83.1L243.0 84.7L245.6 86.2L248.2 87.5L250.8 88.7L253.4 89.9L256.0 90.9L258.6 91.8L261.2 92.6L263.8 93.3L266.4 93.9L269.0 94.5L271.6 95.0L274.2 95.4L276.8 95.8L279.4 96.1L281.9 96.4L284.5 96.7L287.1 96.9L289.7 97.1L292.3 97.2L294.9 97.4L297.5 97.5L300.1 97.6L302.7 97.6L305.3 97.7L307.9 97.8L310.5 97.8L313.1 97.8L315.7 97.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 98H314M75.2 98V85.7M244.8 98V85.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"47.6\" y=\"64\">α/2</text><text x=\"160.0\" y=\"50\">1−α</text><text x=\"272.4\" y=\"64\">α/2</text><text x=\"18\" y=\"94\">−∞</text><text x=\"306\" y=\"94\">∞</text><text x=\"75.2\" y=\"116\">−Zα/2</text><text x=\"244.8\" y=\"116\">Zα/2</text></g></svg>",
+     "sourceWidthRatio": 0.45
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 109,
+     "printedPages": [
+      209,
+      210
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

@@ -1,0 +1,413 @@
+{
+ "pdfPage": 22,
+ "sections": [
+  {
+   "id": "stat12-p022-pmf-examples",
+   "title": "Examples 2.3–2.4 — probability mass functions",
+   "headingUrdu": "مثالیں 2.3–2.4 — احتمالی کمیتی تفاعل",
+   "headingPashto": "بېلګې 2.3–2.4 — د احتمال کتلوي تابع",
+   "paras": [
+    {
+     "text": "First property means that answer of probability must be within the range 0 to 1 (inclusive) and second property means that the sum of probabilities for all possible values of a random variable must be equal to one.",
+     "urdu": "پہلی خصوصیت کا مطلب ہے کہ احتمال کا جواب 0 سے 1 (بشمول) کی حد میں ہونا چاہیے اور دوسری خصوصیت کا مطلب ہے کہ تصادفی متغیر کی تمام ممکنہ قیمتوں کے احتمالات کا مجموعہ ایک کے برابر ہونا چاہیے۔",
+     "pashto": "لومړۍ ځانګړنه دا مانا لري چې د احتمال ځواب باید د 0 څخه تر 1 (په شمول) حد کې وي او دویمه ځانګړنه دا مانا لري چې د تصادفي متغیر د ټولو شونو قیمتونو د احتمالونو مجموعه باید له یو سره برابره وي."
+    },
+    {
+     "text": "Example 2.3",
+     "urdu": "مثال 2.3",
+     "pashto": "بېلګه 2.3"
+    },
+    {
+     "text": "A discrete random variable has the probability function",
+     "urdu": "ایک منفصل تصادفی متغیر کا احتمالی تفاعل یہ ہے",
+     "pashto": "یو منفصل تصادفي متغیر دا احتمالي تابع لري"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}{}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3} & \\textit{for}\\ \\ x=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}{}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3} & \\textit{for}\\ \\ x=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}{}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3} & \\textit{for}\\ \\ x=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$"
+    },
+    {
+     "text": "i) Compute probabilities for all values of X.",
+     "urdu": "i) X کی تمام قیمتوں کے احتمالات معلوم کریں۔",
+     "pashto": "i) د X د ټولو قیمتونو احتمالونه محاسبه کړئ."
+    },
+    {
+     "text": "ii) Check that this is a probability mass function.",
+     "urdu": "ii) جانچیں کہ یہ احتمالی کمیتی تفاعل ہے۔",
+     "pashto": "ii) وګورئ چې دا د احتمال کتلوي تابع ده."
+    },
+    {
+     "text": "iii) Find the probability distribution of X.",
+     "urdu": "iii) X کی احتمالی تقسیم معلوم کریں۔",
+     "pashto": "iii) د X احتمالي وېش پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "i) Given $p(x)={}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3},\\ x=0,1,2,3$",
+     "urdu": "i) دیا گیا ہے $p(x)={}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3},\\ x=0,1,2,3$",
+     "pashto": "i) ورکړل شوي $p(x)={}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3},\\ x=0,1,2,3$"
+    },
+    {
+     "text": "Putting values of x, we get",
+     "urdu": "x کی قیمتیں رکھنے سے",
+     "pashto": "د x قیمتونه ایښودو سره"
+    },
+    {
+     "text": "$p(0)={}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}$",
+     "urdu": "$p(0)={}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}$",
+     "pashto": "$p(0)={}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}$"
+    },
+    {
+     "text": "$p(1)={}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}$",
+     "urdu": "$p(1)={}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}$",
+     "pashto": "$p(1)={}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}$"
+    },
+    {
+     "text": "$p(2)={}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}$",
+     "urdu": "$p(2)={}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}$",
+     "pashto": "$p(2)={}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}$"
+    },
+    {
+     "text": "$p(3)={}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}$",
+     "urdu": "$p(3)={}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}$",
+     "pashto": "$p(3)={}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}$"
+    },
+    {
+     "text": "ii) All probabilities are lying between 0 and 1, and",
+     "urdu": "ii) تمام احتمالات 0 اور 1 کے درمیان ہیں، اور",
+     "pashto": "ii) ټول احتمالونه د 0 او 1 ترمنځ دي، او"
+    },
+    {
+     "text": "$$\\sum_{x=0}^{3}p(x_i)=p(0)+p(1)+p(2)+p(3)=\\frac{1}{8}+\\frac{3}{8}+\\frac{3}{8}+\\frac{1}{8}=1$$",
+     "urdu": "$$\\sum_{x=0}^{3}p(x_i)=p(0)+p(1)+p(2)+p(3)=\\frac{1}{8}+\\frac{3}{8}+\\frac{3}{8}+\\frac{1}{8}=1$$",
+     "pashto": "$$\\sum_{x=0}^{3}p(x_i)=p(0)+p(1)+p(2)+p(3)=\\frac{1}{8}+\\frac{3}{8}+\\frac{3}{8}+\\frac{1}{8}=1$$"
+    },
+    {
+     "text": "Since both properties are satisfied, therefore, the given formula is a probability mass function or probability function.",
+     "urdu": "چونکہ دونوں خصوصیات پوری ہوتی ہیں، لہٰذا دیا گیا فارمولا احتمالی کمیتی تفاعل یا احتمالی تفاعل ہے۔",
+     "pashto": "څرنګه چې دواړه ځانګړنې پوره دي، نو ورکړل شوی فورمول د احتمال کتلوي تابع یا احتمالي تابع ده."
+    },
+    {
+     "text": "iii) The probability distribution of X",
+     "urdu": "iii) X کی احتمالی تقسیم",
+     "pashto": "iii) د X احتمالي وېش"
+    },
+    {
+     "text": "Example 2.4",
+     "urdu": "مثال 2.4",
+     "pashto": "بېلګه 2.4"
+    },
+    {
+     "text": "Suppose a discrete probability distribution of random variable X is given in the following table:",
+     "urdu": "فرض کریں تصادفی متغیر X کی منفصل احتمالی تقسیم درج ذیل جدول میں دی گئی ہے:",
+     "pashto": "فرض کړئ د تصادفي متغیر X منفصل احتمالي وېش په لاندې جدول کې ورکړل شوی دی:"
+    },
+    {
+     "text": "Find (i) the value of c (ii) $P(X=0)$ (iii) $P(X<0)$ (iv) $P(X\\ge -1)$",
+     "urdu": "معلوم کریں (i) c کی قیمت (ii) $P(X=0)$ (iii) $P(X<0)$ (iv) $P(X\\ge -1)$",
+     "pashto": "پیدا کړئ (i) د c قیمت (ii) $P(X=0)$ (iii) $P(X<0)$ (iv) $P(X\\ge -1)$"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$(i)\\quad\\text{As }\\sum_{x=-1}^{1}p(x)=1$",
+     "urdu": "$(i)\\quad\\text{As }\\sum_{x=-1}^{1}p(x)=1$",
+     "pashto": "$(i)\\quad\\text{As }\\sum_{x=-1}^{1}p(x)=1$"
+    },
+    {
+     "text": "$\\text{or } p(-1)+p(0)+p(1)=1$",
+     "urdu": "$\\text{or } p(-1)+p(0)+p(1)=1$",
+     "pashto": "$\\text{or } p(-1)+p(0)+p(1)=1$"
+    },
+    {
+     "text": "$3c+3c+6c=1$",
+     "urdu": "$3c+3c+6c=1$",
+     "pashto": "$3c+3c+6c=1$"
+    },
+    {
+     "text": "$12c=1\\quad\\Rightarrow c=\\frac{1}{12}$",
+     "urdu": "$12c=1\\quad\\Rightarrow c=\\frac{1}{12}$",
+     "pashto": "$12c=1\\quad\\Rightarrow c=\\frac{1}{12}$"
+    }
+   ],
+   "theory": "First property means that answer of probability must be within the range 0 to 1 (inclusive) and second property means that the sum of probabilities for all possible values of a random variable must be equal to one.\n\nExample 2.3\n\nA discrete random variable has the probability function\n\n$p(x)=\\left\\{\\begin{matrix}{}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3} & \\textit{for}\\ \\ x=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\ni) Compute probabilities for all values of X.\n\nii) Check that this is a probability mass function.\n\niii) Find the probability distribution of X.\n\nSolution:\n\ni) Given p(x)={}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3},\\ x=0,1,2,3\n\nPutting values of x, we get\n\np(0)={}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}\n\np(1)={}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}\n\np(2)={}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}\n\np(3)={}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}\n\nii) All probabilities are lying between 0 and 1, and\n\n$\\sum_{x=0}^{3}p(x_i)=p(0)+p(1)+p(2)+p(3)=\\frac{1}{8}+\\frac{3}{8}+\\frac{3}{8}+\\frac{1}{8}=1$\n\nSince both properties are satisfied, therefore, the given formula is a probability mass function or probability function.\n\niii) The probability distribution of X\n\nExample 2.4\n\nSuppose a discrete probability distribution of random variable X is given in the following table:\n\nFind (i) the value of c (ii) P(X=0) (iii) P(X<0) (iv) P(X\\ge -1)\n\nSolution:\n\n(i)\\quad\\text{As }\\sum_{x=-1}^{1}p(x)=1\n\n\\text{or } p(-1)+p(0)+p(1)=1\n\n3c+3c+6c=1\n\n12c=1\\quad\\Rightarrow c=\\frac{1}{12}",
+   "urdu": "پہلی خصوصیت کا مطلب ہے کہ احتمال کا جواب 0 سے 1 (بشمول) کی حد میں ہونا چاہیے اور دوسری خصوصیت کا مطلب ہے کہ تصادفی متغیر کی تمام ممکنہ قیمتوں کے احتمالات کا مجموعہ ایک کے برابر ہونا چاہیے۔\n\nمثال 2.3\n\nایک منفصل تصادفی متغیر کا احتمالی تفاعل یہ ہے\n\n$p(x)=\\left\\{\\begin{matrix}{}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3} & \\textit{for}\\ \\ x=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\ni) X کی تمام قیمتوں کے احتمالات معلوم کریں۔\n\nii) جانچیں کہ یہ احتمالی کمیتی تفاعل ہے۔\n\niii) X کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\ni) دیا گیا ہے p(x)={}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3},\\ x=0,1,2,3\n\nx کی قیمتیں رکھنے سے\n\np(0)={}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}\n\np(1)={}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}\n\np(2)={}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}\n\np(3)={}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}\n\nii) تمام احتمالات 0 اور 1 کے درمیان ہیں، اور\n\n$\\sum_{x=0}^{3}p(x_i)=p(0)+p(1)+p(2)+p(3)=\\frac{1}{8}+\\frac{3}{8}+\\frac{3}{8}+\\frac{1}{8}=1$\n\nچونکہ دونوں خصوصیات پوری ہوتی ہیں، لہٰذا دیا گیا فارمولا احتمالی کمیتی تفاعل یا احتمالی تفاعل ہے۔\n\niii) X کی احتمالی تقسیم\n\nمثال 2.4\n\nفرض کریں تصادفی متغیر X کی منفصل احتمالی تقسیم درج ذیل جدول میں دی گئی ہے:\n\nمعلوم کریں (i) c کی قیمت (ii) P(X=0) (iii) P(X<0) (iv) P(X\\ge -1)\n\nحل:\n\n(i)\\quad\\text{As }\\sum_{x=-1}^{1}p(x)=1\n\n\\text{or } p(-1)+p(0)+p(1)=1\n\n3c+3c+6c=1\n\n12c=1\\quad\\Rightarrow c=\\frac{1}{12}",
+   "pashto": "لومړۍ ځانګړنه دا مانا لري چې د احتمال ځواب باید د 0 څخه تر 1 (په شمول) حد کې وي او دویمه ځانګړنه دا مانا لري چې د تصادفي متغیر د ټولو شونو قیمتونو د احتمالونو مجموعه باید له یو سره برابره وي.\n\nبېلګه 2.3\n\nیو منفصل تصادفي متغیر دا احتمالي تابع لري\n\n$p(x)=\\left\\{\\begin{matrix}{}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3} & \\textit{for}\\ \\ x=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\ni) د X د ټولو قیمتونو احتمالونه محاسبه کړئ.\n\nii) وګورئ چې دا د احتمال کتلوي تابع ده.\n\niii) د X احتمالي وېش پیدا کړئ.\n\nحل:\n\ni) ورکړل شوي p(x)={}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3},\\ x=0,1,2,3\n\nد x قیمتونه ایښودو سره\n\np(0)={}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}\n\np(1)={}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}\n\np(2)={}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}\n\np(3)={}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}\n\nii) ټول احتمالونه د 0 او 1 ترمنځ دي، او\n\n$\\sum_{x=0}^{3}p(x_i)=p(0)+p(1)+p(2)+p(3)=\\frac{1}{8}+\\frac{3}{8}+\\frac{3}{8}+\\frac{1}{8}=1$\n\nڅرنګه چې دواړه ځانګړنې پوره دي، نو ورکړل شوی فورمول د احتمال کتلوي تابع یا احتمالي تابع ده.\n\niii) د X احتمالي وېش\n\nبېلګه 2.4\n\nفرض کړئ د تصادفي متغیر X منفصل احتمالي وېش په لاندې جدول کې ورکړل شوی دی:\n\nپیدا کړئ (i) د c قیمت (ii) P(X=0) (iii) P(X<0) (iv) P(X\\ge -1)\n\nحل:\n\n(i)\\quad\\text{As }\\sum_{x=-1}^{1}p(x)=1\n\n\\text{or } p(-1)+p(0)+p(1)=1\n\n3c+3c+6c=1\n\n12c=1\\quad\\Rightarrow c=\\frac{1}{12}",
+   "theoryUrdu": "پہلی خصوصیت کا مطلب ہے کہ احتمال کا جواب 0 سے 1 (بشمول) کی حد میں ہونا چاہیے اور دوسری خصوصیت کا مطلب ہے کہ تصادفی متغیر کی تمام ممکنہ قیمتوں کے احتمالات کا مجموعہ ایک کے برابر ہونا چاہیے۔\n\nمثال 2.3\n\nایک منفصل تصادفی متغیر کا احتمالی تفاعل یہ ہے\n\n$p(x)=\\left\\{\\begin{matrix}{}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3} & \\textit{for}\\ \\ x=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\ni) X کی تمام قیمتوں کے احتمالات معلوم کریں۔\n\nii) جانچیں کہ یہ احتمالی کمیتی تفاعل ہے۔\n\niii) X کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\ni) دیا گیا ہے p(x)={}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3},\\ x=0,1,2,3\n\nx کی قیمتیں رکھنے سے\n\np(0)={}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}\n\np(1)={}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}\n\np(2)={}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}\n\np(3)={}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}\n\nii) تمام احتمالات 0 اور 1 کے درمیان ہیں، اور\n\n$\\sum_{x=0}^{3}p(x_i)=p(0)+p(1)+p(2)+p(3)=\\frac{1}{8}+\\frac{3}{8}+\\frac{3}{8}+\\frac{1}{8}=1$\n\nچونکہ دونوں خصوصیات پوری ہوتی ہیں، لہٰذا دیا گیا فارمولا احتمالی کمیتی تفاعل یا احتمالی تفاعل ہے۔\n\niii) X کی احتمالی تقسیم\n\nمثال 2.4\n\nفرض کریں تصادفی متغیر X کی منفصل احتمالی تقسیم درج ذیل جدول میں دی گئی ہے:\n\nمعلوم کریں (i) c کی قیمت (ii) P(X=0) (iii) P(X<0) (iv) P(X\\ge -1)\n\nحل:\n\n(i)\\quad\\text{As }\\sum_{x=-1}^{1}p(x)=1\n\n\\text{or } p(-1)+p(0)+p(1)=1\n\n3c+3c+6c=1\n\n12c=1\\quad\\Rightarrow c=\\frac{1}{12}",
+   "theoryPashto": "لومړۍ ځانګړنه دا مانا لري چې د احتمال ځواب باید د 0 څخه تر 1 (په شمول) حد کې وي او دویمه ځانګړنه دا مانا لري چې د تصادفي متغیر د ټولو شونو قیمتونو د احتمالونو مجموعه باید له یو سره برابره وي.\n\nبېلګه 2.3\n\nیو منفصل تصادفي متغیر دا احتمالي تابع لري\n\n$p(x)=\\left\\{\\begin{matrix}{}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3} & \\textit{for}\\ \\ x=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\ni) د X د ټولو قیمتونو احتمالونه محاسبه کړئ.\n\nii) وګورئ چې دا د احتمال کتلوي تابع ده.\n\niii) د X احتمالي وېش پیدا کړئ.\n\nحل:\n\ni) ورکړل شوي p(x)={}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3},\\ x=0,1,2,3\n\nد x قیمتونه ایښودو سره\n\np(0)={}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}\n\np(1)={}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}\n\np(2)={}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}\n\np(3)={}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}\n\nii) ټول احتمالونه د 0 او 1 ترمنځ دي، او\n\n$\\sum_{x=0}^{3}p(x_i)=p(0)+p(1)+p(2)+p(3)=\\frac{1}{8}+\\frac{3}{8}+\\frac{3}{8}+\\frac{1}{8}=1$\n\nڅرنګه چې دواړه ځانګړنې پوره دي، نو ورکړل شوی فورمول د احتمال کتلوي تابع یا احتمالي تابع ده.\n\niii) د X احتمالي وېش\n\nبېلګه 2.4\n\nفرض کړئ د تصادفي متغیر X منفصل احتمالي وېش په لاندې جدول کې ورکړل شوی دی:\n\nپیدا کړئ (i) د c قیمت (ii) P(X=0) (iii) P(X<0) (iv) P(X\\ge -1)\n\nحل:\n\n(i)\\quad\\text{As }\\sum_{x=-1}^{1}p(x)=1\n\n\\text{or } p(-1)+p(0)+p(1)=1\n\n3c+3c+6c=1\n\n12c=1\\quad\\Rightarrow c=\\frac{1}{12}",
+   "content": "<p>First property means that answer of probability must be within the range 0 to 1 (inclusive) and second property means that the sum of probabilities for all possible values of a random variable must be equal to one.</p><p>Example 2.3</p><p>A discrete random variable has the probability function</p><p>$p(x)=\\left\\{\\begin{matrix}{}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3} &amp; \\textit{for}\\ \\ x=0,1,2,3\\\\ 0 &amp; \\textit{otherwise}\\end{matrix}\\right\\}$</p><p>i) Compute probabilities for all values of X.</p><p>ii) Check that this is a probability mass function.</p><p>iii) Find the probability distribution of X.</p><p>Solution:</p><p>i) Given p(x)={}^{3}_{x}C\\left(\\frac{1}{2}\\right)^{3},\\ x=0,1,2,3</p><p>Putting values of x, we get</p><p>p(0)={}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}</p><p>p(1)={}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}</p><p>p(2)={}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{3}=(3)\\left(\\frac{1}{8}\\right)=\\frac{3}{8}</p><p>p(3)={}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}=(1)\\left(\\frac{1}{8}\\right)=\\frac{1}{8}</p><p>ii) All probabilities are lying between 0 and 1, and</p><p>$\\sum_{x=0}^{3}p(x_i)=p(0)+p(1)+p(2)+p(3)=\\frac{1}{8}+\\frac{3}{8}+\\frac{3}{8}+\\frac{1}{8}=1$</p><p>Since both properties are satisfied, therefore, the given formula is a probability mass function or probability function.</p><p>iii) The probability distribution of X</p><p>Example 2.4</p><p>Suppose a discrete probability distribution of random variable X is given in the following table:</p><p>Find (i) the value of c (ii) P(X=0) (iii) P(X&lt;0) (iv) P(X\\ge -1)</p><p>Solution:</p><p>(i)\\quad\\text{As }\\sum_{x=-1}^{1}p(x)=1</p><p>\\text{or } p(-1)+p(0)+p(1)=1</p><p>3c+3c+6c=1</p><p>12c=1\\quad\\Rightarrow c=\\frac{1}{12}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-3"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-4"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      22,
+      23,
+      24,
+      25
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex2-3",
+     "headers": [
+      "$X$",
+      "0",
+      "1",
+      "2",
+      "3",
+      "Total"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "$\\frac{1}{8}$",
+       "$\\frac{3}{8}$",
+       "$\\frac{3}{8}$",
+       "$\\frac{1}{8}$",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "0",
+        "1",
+        "2",
+        "3",
+        "کل"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{8}$",
+         "$\\frac{3}{8}$",
+         "$\\frac{3}{8}$",
+         "$\\frac{1}{8}$",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "0",
+        "1",
+        "2",
+        "3",
+        "ټول"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{8}$",
+         "$\\frac{3}{8}$",
+         "$\\frac{3}{8}$",
+         "$\\frac{1}{8}$",
+         "1"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex2-4",
+     "headers": [
+      "$X$",
+      "-1",
+      "0",
+      "1"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "3c",
+       "3c",
+       "6c"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "-1",
+        "0",
+        "1"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "3c",
+         "3c",
+         "6c"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "-1",
+        "0",
+        "1"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "3c",
+         "3c",
+         "6c"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 22,
+     "printedPages": [
+      35,
+      36
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

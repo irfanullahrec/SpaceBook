@@ -1,0 +1,380 @@
+{
+ "pdfPage": 86,
+ "sections": [
+  {
+   "id": "stat12-p086-sampling-mean",
+   "title": "5.2.2–5.2.4 Sampling distribution of the sample mean — Example 5.4",
+   "headingUrdu": "5.2.2–5.2.4 نمونے کے اوسط کی نمونہ جاتی تقسیم — مثال 5.4",
+   "headingPashto": "5.2.2–5.2.4 د نمونې د منځني نمونوي وېش — بېلګه 5.4",
+   "paras": [
+    {
+     "text": "5.2.2 Sampling distribution of sample mean",
+     "urdu": "5.2.2 نمونے کے اوسط کی نمونہ جاتی تقسیم",
+     "pashto": "5.2.2 د نمونې د منځني نمونوي وېش"
+    },
+    {
+     "text": "The probability distribution of all possible values of the estimator $\\overline{X}$ is called sampling distribution of $\\overline{X}$ i.e.",
+     "urdu": "تخمین کار $\\overline{X}$ کی تمام ممکنہ قیمتوں کی احتمالی تقسیم کو $\\overline{X}$ کی نمونہ جاتی تقسیم کہتے ہیں یعنی",
+     "pashto": "د اټکلوونکي $\\overline{X}$ د ټولو شونو قیمتونو احتمالي وېش ته د $\\overline{X}$ نمونوي وېش وایي یعنې"
+    },
+    {
+     "text": "Sampling distribution of $\\overline{X}$",
+     "urdu": "$\\overline{X}$ کی نمونہ جاتی تقسیم",
+     "pashto": "د $\\overline{X}$ نمونوي وېش"
+    },
+    {
+     "text": "The mean of the sampling distribution of $\\overline{X}$ is denoted by $E(\\overline{X})=\\mu_{\\overline{x}}$ (read as mu sub x bar) and its S.E by $\\sigma_{\\overline{x}}$ (read as sigma sub x bar).",
+     "urdu": "$\\overline{X}$ کی نمونہ جاتی تقسیم کے اوسط کو $E(\\overline{X})=\\mu_{\\overline{x}}$ (پڑھیں mu sub x bar) اور اس کی معیاری غلطی کو $\\sigma_{\\overline{x}}$ (پڑھیں sigma sub x bar) سے ظاہر کرتے ہیں۔",
+     "pashto": "د $\\overline{X}$ د نمونوي وېش منځنی په $E(\\overline{X})=\\mu_{\\overline{x}}$ (mu sub x bar لوستل کېږي) او معیاري تېروتنه یې په $\\sigma_{\\overline{x}}$ (sigma sub x bar لوستل کېږي) ښودل کېږي."
+    },
+    {
+     "text": "5.2.3 Properties of the sampling distribution of $\\overline{X}$",
+     "urdu": "5.2.3 $\\overline{X}$ کی نمونہ جاتی تقسیم کی خصوصیات",
+     "pashto": "5.2.3 د $\\overline{X}$ د نمونوي وېش ځانګړنې"
+    },
+    {
+     "text": "i. Mean of the sampling distribution of $\\overline{X}$ is always equal to the population mean i.e. $\\mu_{\\overline{x}}=\\mu$ (both in with and without replacement sampling)",
+     "urdu": "i. $\\overline{X}$ کی نمونہ جاتی تقسیم کا اوسط ہمیشہ آبادی کے اوسط کے برابر ہوتا ہے یعنی $\\mu_{\\overline{x}}=\\mu$ (واپسی کے ساتھ اور بغیر دونوں نمونہ گیری میں)",
+     "pashto": "i. د $\\overline{X}$ د نمونوي وېش منځنی تل د نفوس له منځني سره برابر دی یعنې $\\mu_{\\overline{x}}=\\mu$ (په دواړو له بېرته اچولو سره او پرته نمونه اخیستنه کې)"
+    },
+    {
+     "text": "ii. Standard error of the sampling distribution of $\\overline{X}$ is",
+     "urdu": "ii. $\\overline{X}$ کی نمونہ جاتی تقسیم کی معیاری غلطی یہ ہے",
+     "pashto": "ii. د $\\overline{X}$ د نمونوي وېش معیاري تېروتنه دا ده"
+    },
+    {
+     "text": "$\\sigma_{\\overline{x}}=\\frac{\\sigma}{\\sqrt{n}}$ (in case of sampling with replacement)",
+     "urdu": "$\\sigma_{\\overline{x}}=\\frac{\\sigma}{\\sqrt{n}}$ (واپسی کے ساتھ نمونہ گیری کی صورت میں)",
+     "pashto": "$\\sigma_{\\overline{x}}=\\frac{\\sigma}{\\sqrt{n}}$ (له بېرته اچولو سره د نمونه اخیستنې په حالت کې)"
+    },
+    {
+     "text": "$=\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}}$ (in case of sampling without replacement)",
+     "urdu": "$=\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}}$ (بغیر واپسی کے نمونہ گیری کی صورت میں)",
+     "pashto": "$=\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}}$ (پرته له بېرته اچولو د نمونه اخیستنې په حالت کې)"
+    },
+    {
+     "text": "Note that the factor $\\sqrt{\\frac{N-n}{N-1}}$ is called finite population correction factor (fpc). It is dropped from the formula when n < 5 % N and is used when n ≥ 5 % N.",
+     "urdu": "نوٹ کریں کہ عامل $\\sqrt{\\frac{N-n}{N-1}}$ کو محدود آبادی کا تصحیحی عامل (fpc) کہتے ہیں۔ جب n < 5 % N ہو تو اسے فارمولا سے نکال دیا جاتا ہے اور جب n ≥ 5 % N ہو تو استعمال کیا جاتا ہے۔",
+     "pashto": "پام وکړئ چې عامل $\\sqrt{\\frac{N-n}{N-1}}$ ته د محدود نفوس سمونې عامل (fpc) وایي. کله چې n < 5 % N وي له فورمول څخه لرې کېږي او کله چې n ≥ 5 % N وي کارول کېږي."
+    },
+    {
+     "text": "iii. Shape of the sampling distribution of $\\overline{X}$",
+     "urdu": "iii. $\\overline{X}$ کی نمونہ جاتی تقسیم کی شکل",
+     "pashto": "iii. د $\\overline{X}$ د نمونوي وېش بڼه"
+    },
+    {
+     "text": "There are two cases:",
+     "urdu": "دو صورتیں ہیں:",
+     "pashto": "دوه حالتونه دي:"
+    },
+    {
+     "text": "(a) If the sampled population is normal, then shape of the sampling distribution of $\\overline{X}$ will also be normal irrespective of the sample size.",
+     "urdu": "(a) اگر نمونہ لی گئی آبادی نارمل ہو تو $\\overline{X}$ کی نمونہ جاتی تقسیم کی شکل بھی نمونے کے سائز سے قطع نظر نارمل ہوگی۔",
+     "pashto": "(a) که نمونه ترې اخیستل شوی نفوس نورمال وي، نو د $\\overline{X}$ د نمونوي وېش بڼه به هم د نمونې له اندازې پرته نورماله وي."
+    },
+    {
+     "text": "(b) If the sampled population is non-normal, then according to central limit theorem (CLT), shape of the sampling distribution of $\\overline{X}$ will approximately be normal provided sample size n is large. Note that statisticians consider $n\\ge 30$ as large sample.",
+     "urdu": "(b) اگر نمونہ لی گئی آبادی غیر نارمل ہو تو مرکزی حدی مسئلہ (CLT) کے مطابق $\\overline{X}$ کی نمونہ جاتی تقسیم کی شکل تقریباً نارمل ہوگی بشرطیکہ نمونے کا سائز n بڑا ہو۔ نوٹ کریں کہ شماریات دان $n\\ge 30$ کو بڑا نمونہ سمجھتے ہیں۔",
+     "pashto": "(b) که نمونه ترې اخیستل شوی نفوس غیر نورمال وي، نو د مرکزي حد د قضیې (CLT) له مخې د $\\overline{X}$ د نمونوي وېش بڼه به نږدې نورماله وي په دې شرط چې د نمونې اندازه n لویه وي. پام وکړئ چې احصایه پوهان $n\\ge 30$ لویه نمونه ګڼي."
+    },
+    {
+     "text": "5.2.4 Formulas for mean and S.E of the sampling distribution of $\\overline{X}$",
+     "urdu": "5.2.4 $\\overline{X}$ کی نمونہ جاتی تقسیم کے اوسط اور معیاری غلطی کے فارمولے",
+     "pashto": "5.2.4 د $\\overline{X}$ د نمونوي وېش د منځني او معیاري تېروتنې فورمولونه"
+    },
+    {
+     "text": "$\\mu_{\\overline{x}}=\\Sigma\\overline{x}f(\\overline{x})$ (Mean)",
+     "urdu": "$\\mu_{\\overline{x}}=\\Sigma\\overline{x}f(\\overline{x})$ (اوسط)",
+     "pashto": "$\\mu_{\\overline{x}}=\\Sigma\\overline{x}f(\\overline{x})$ (منځنی)"
+    },
+    {
+     "text": "$\\sigma_{\\overline{x}}^2=\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2$ (Variance)",
+     "urdu": "$\\sigma_{\\overline{x}}^2=\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2$ (تغیر)",
+     "pashto": "$\\sigma_{\\overline{x}}^2=\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2$ (واریانس)"
+    },
+    {
+     "text": "$\\sigma_{\\overline{x}}=\\sqrt{\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2}$ (S.E)",
+     "urdu": "$\\sigma_{\\overline{x}}=\\sqrt{\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2}$ (معیاری غلطی)",
+     "pashto": "$\\sigma_{\\overline{x}}=\\sqrt{\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2}$ (معیاري تېروتنه)"
+    },
+    {
+     "text": "Note that the random variable $\\overline{X}$ is standardized as $Z=\\frac{\\overline{X}-\\mu_{\\overline{x}}}{\\sigma_{\\overline{x}}}=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}}$ (In S.W.R. case)",
+     "urdu": "نوٹ کریں کہ تصادفی متغیر $\\overline{X}$ کو یوں معیاری بنایا جاتا ہے $Z=\\frac{\\overline{X}-\\mu_{\\overline{x}}}{\\sigma_{\\overline{x}}}=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}}$ (S.W.R. کی صورت میں)",
+     "pashto": "پام وکړئ چې تصادفي متغیر $\\overline{X}$ داسې معیاري کېږي $Z=\\frac{\\overline{X}-\\mu_{\\overline{x}}}{\\sigma_{\\overline{x}}}=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}}$ (د S.W.R. په حالت کې)"
+    },
+    {
+     "text": "Example 5.4",
+     "urdu": "مثال 5.4",
+     "pashto": "بېلګه 5.4"
+    },
+    {
+     "text": "Consider a family (population) of four children having ages 2, 2, 6, 8 years.",
+     "urdu": "ایک خاندان (آبادی) پر غور کریں جس کے چار بچوں کی عمریں 2، 2، 6، 8 سال ہیں۔",
+     "pashto": "یوه کورنۍ (نفوس) په پام کې ونیسئ چې څلور ماشومان یې 2، 2، 6، 8 کلن دي."
+    },
+    {
+     "text": "i. Find mean and standard deviation of the population.",
+     "urdu": "i. آبادی کا اوسط اور معیاری انحراف معلوم کریں۔",
+     "pashto": "i. د نفوس منځنی او معیاري انحراف پیدا کړئ."
+    },
+    {
+     "text": "ii. Select random samples of two children with replacement and calculate the mean age $\\overline{x}$ for each sample.",
+     "urdu": "ii. واپسی کے ساتھ دو بچوں کے تصادفی نمونے منتخب کریں اور ہر نمونے کی اوسط عمر $\\overline{x}$ معلوم کریں۔",
+     "pashto": "ii. له بېرته اچولو سره د دوو ماشومانو تصادفي نمونې وټاکئ او د هرې نمونې منځنی عمر $\\overline{x}$ محاسبه کړئ."
+    },
+    {
+     "text": "iii. Construct sampling distribution of $\\overline{X}$",
+     "urdu": "iii. $\\overline{X}$ کی نمونہ جاتی تقسیم بنائیں",
+     "pashto": "iii. د $\\overline{X}$ نمونوي وېش جوړ کړئ"
+    },
+    {
+     "text": "iv. Find the mean and standard error of the sampling distribution of mean.",
+     "urdu": "iv. اوسط کی نمونہ جاتی تقسیم کا اوسط اور معیاری غلطی معلوم کریں۔",
+     "pashto": "iv. د منځني د نمونوي وېش منځنی او معیاري تېروتنه پیدا کړئ."
+    },
+    {
+     "text": "v. Verify the results obtained in (iv) by properties of the sampling distribution of $\\overline{X}$",
+     "urdu": "v. (iv) میں حاصل نتائج کی $\\overline{X}$ کی نمونہ جاتی تقسیم کی خصوصیات سے تصدیق کریں",
+     "pashto": "v. په (iv) کې لاسته راغلې پایلې د $\\overline{X}$ د نمونوي وېش د ځانګړنو له لارې تایید کړئ"
+    }
+   ],
+   "theory": "5.2.2 Sampling distribution of sample mean\n\nThe probability distribution of all possible values of the estimator \\overline{X} is called sampling distribution of \\overline{X} i.e.\n\nSampling distribution of \\overline{X}\n\nThe mean of the sampling distribution of \\overline{X} is denoted by E(\\overline{X})=\\mu_{\\overline{x}} (read as mu sub x bar) and its S.E by \\sigma_{\\overline{x}} (read as sigma sub x bar).\n\n5.2.3 Properties of the sampling distribution of \\overline{X}\n\ni. Mean of the sampling distribution of \\overline{X} is always equal to the population mean i.e. \\mu_{\\overline{x}}=\\mu (both in with and without replacement sampling)\n\nii. Standard error of the sampling distribution of \\overline{X} is\n\n\\sigma_{\\overline{x}}=\\frac{\\sigma}{\\sqrt{n}} (in case of sampling with replacement)\n\n=\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}} (in case of sampling without replacement)\n\nNote that the factor \\sqrt{\\frac{N-n}{N-1}} is called finite population correction factor (fpc). It is dropped from the formula when n < 5 % N and is used when n ≥ 5 % N.\n\niii. Shape of the sampling distribution of \\overline{X}\n\nThere are two cases:\n\n(a) If the sampled population is normal, then shape of the sampling distribution of \\overline{X} will also be normal irrespective of the sample size.\n\n(b) If the sampled population is non-normal, then according to central limit theorem (CLT), shape of the sampling distribution of \\overline{X} will approximately be normal provided sample size n is large. Note that statisticians consider n\\ge 30 as large sample.\n\n5.2.4 Formulas for mean and S.E of the sampling distribution of \\overline{X}\n\n\\mu_{\\overline{x}}=\\Sigma\\overline{x}f(\\overline{x}) (Mean)\n\n\\sigma_{\\overline{x}}^2=\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2 (Variance)\n\n\\sigma_{\\overline{x}}=\\sqrt{\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2} (S.E)\n\nNote that the random variable \\overline{X} is standardized as Z=\\frac{\\overline{X}-\\mu_{\\overline{x}}}{\\sigma_{\\overline{x}}}=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} (In S.W.R. case)\n\nExample 5.4\n\nConsider a family (population) of four children having ages 2, 2, 6, 8 years.\n\ni. Find mean and standard deviation of the population.\n\nii. Select random samples of two children with replacement and calculate the mean age \\overline{x} for each sample.\n\niii. Construct sampling distribution of \\overline{X}\n\niv. Find the mean and standard error of the sampling distribution of mean.\n\nv. Verify the results obtained in (iv) by properties of the sampling distribution of \\overline{X}",
+   "urdu": "5.2.2 نمونے کے اوسط کی نمونہ جاتی تقسیم\n\nتخمین کار \\overline{X} کی تمام ممکنہ قیمتوں کی احتمالی تقسیم کو \\overline{X} کی نمونہ جاتی تقسیم کہتے ہیں یعنی\n\n\\overline{X} کی نمونہ جاتی تقسیم\n\n\\overline{X} کی نمونہ جاتی تقسیم کے اوسط کو E(\\overline{X})=\\mu_{\\overline{x}} (پڑھیں mu sub x bar) اور اس کی معیاری غلطی کو \\sigma_{\\overline{x}} (پڑھیں sigma sub x bar) سے ظاہر کرتے ہیں۔\n\n5.2.3 \\overline{X} کی نمونہ جاتی تقسیم کی خصوصیات\n\ni. \\overline{X} کی نمونہ جاتی تقسیم کا اوسط ہمیشہ آبادی کے اوسط کے برابر ہوتا ہے یعنی \\mu_{\\overline{x}}=\\mu (واپسی کے ساتھ اور بغیر دونوں نمونہ گیری میں)\n\nii. \\overline{X} کی نمونہ جاتی تقسیم کی معیاری غلطی یہ ہے\n\n\\sigma_{\\overline{x}}=\\frac{\\sigma}{\\sqrt{n}} (واپسی کے ساتھ نمونہ گیری کی صورت میں)\n\n=\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}} (بغیر واپسی کے نمونہ گیری کی صورت میں)\n\nنوٹ کریں کہ عامل \\sqrt{\\frac{N-n}{N-1}} کو محدود آبادی کا تصحیحی عامل (fpc) کہتے ہیں۔ جب n < 5 % N ہو تو اسے فارمولا سے نکال دیا جاتا ہے اور جب n ≥ 5 % N ہو تو استعمال کیا جاتا ہے۔\n\niii. \\overline{X} کی نمونہ جاتی تقسیم کی شکل\n\nدو صورتیں ہیں:\n\n(a) اگر نمونہ لی گئی آبادی نارمل ہو تو \\overline{X} کی نمونہ جاتی تقسیم کی شکل بھی نمونے کے سائز سے قطع نظر نارمل ہوگی۔\n\n(b) اگر نمونہ لی گئی آبادی غیر نارمل ہو تو مرکزی حدی مسئلہ (CLT) کے مطابق \\overline{X} کی نمونہ جاتی تقسیم کی شکل تقریباً نارمل ہوگی بشرطیکہ نمونے کا سائز n بڑا ہو۔ نوٹ کریں کہ شماریات دان n\\ge 30 کو بڑا نمونہ سمجھتے ہیں۔\n\n5.2.4 \\overline{X} کی نمونہ جاتی تقسیم کے اوسط اور معیاری غلطی کے فارمولے\n\n\\mu_{\\overline{x}}=\\Sigma\\overline{x}f(\\overline{x}) (اوسط)\n\n\\sigma_{\\overline{x}}^2=\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2 (تغیر)\n\n\\sigma_{\\overline{x}}=\\sqrt{\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2} (معیاری غلطی)\n\nنوٹ کریں کہ تصادفی متغیر \\overline{X} کو یوں معیاری بنایا جاتا ہے Z=\\frac{\\overline{X}-\\mu_{\\overline{x}}}{\\sigma_{\\overline{x}}}=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} (S.W.R. کی صورت میں)\n\nمثال 5.4\n\nایک خاندان (آبادی) پر غور کریں جس کے چار بچوں کی عمریں 2، 2، 6، 8 سال ہیں۔\n\ni. آبادی کا اوسط اور معیاری انحراف معلوم کریں۔\n\nii. واپسی کے ساتھ دو بچوں کے تصادفی نمونے منتخب کریں اور ہر نمونے کی اوسط عمر \\overline{x} معلوم کریں۔\n\niii. \\overline{X} کی نمونہ جاتی تقسیم بنائیں\n\niv. اوسط کی نمونہ جاتی تقسیم کا اوسط اور معیاری غلطی معلوم کریں۔\n\nv. (iv) میں حاصل نتائج کی \\overline{X} کی نمونہ جاتی تقسیم کی خصوصیات سے تصدیق کریں",
+   "pashto": "5.2.2 د نمونې د منځني نمونوي وېش\n\nد اټکلوونکي \\overline{X} د ټولو شونو قیمتونو احتمالي وېش ته د \\overline{X} نمونوي وېش وایي یعنې\n\nد \\overline{X} نمونوي وېش\n\nد \\overline{X} د نمونوي وېش منځنی په E(\\overline{X})=\\mu_{\\overline{x}} (mu sub x bar لوستل کېږي) او معیاري تېروتنه یې په \\sigma_{\\overline{x}} (sigma sub x bar لوستل کېږي) ښودل کېږي.\n\n5.2.3 د \\overline{X} د نمونوي وېش ځانګړنې\n\ni. د \\overline{X} د نمونوي وېش منځنی تل د نفوس له منځني سره برابر دی یعنې \\mu_{\\overline{x}}=\\mu (په دواړو له بېرته اچولو سره او پرته نمونه اخیستنه کې)\n\nii. د \\overline{X} د نمونوي وېش معیاري تېروتنه دا ده\n\n\\sigma_{\\overline{x}}=\\frac{\\sigma}{\\sqrt{n}} (له بېرته اچولو سره د نمونه اخیستنې په حالت کې)\n\n=\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}} (پرته له بېرته اچولو د نمونه اخیستنې په حالت کې)\n\nپام وکړئ چې عامل \\sqrt{\\frac{N-n}{N-1}} ته د محدود نفوس سمونې عامل (fpc) وایي. کله چې n < 5 % N وي له فورمول څخه لرې کېږي او کله چې n ≥ 5 % N وي کارول کېږي.\n\niii. د \\overline{X} د نمونوي وېش بڼه\n\nدوه حالتونه دي:\n\n(a) که نمونه ترې اخیستل شوی نفوس نورمال وي، نو د \\overline{X} د نمونوي وېش بڼه به هم د نمونې له اندازې پرته نورماله وي.\n\n(b) که نمونه ترې اخیستل شوی نفوس غیر نورمال وي، نو د مرکزي حد د قضیې (CLT) له مخې د \\overline{X} د نمونوي وېش بڼه به نږدې نورماله وي په دې شرط چې د نمونې اندازه n لویه وي. پام وکړئ چې احصایه پوهان n\\ge 30 لویه نمونه ګڼي.\n\n5.2.4 د \\overline{X} د نمونوي وېش د منځني او معیاري تېروتنې فورمولونه\n\n\\mu_{\\overline{x}}=\\Sigma\\overline{x}f(\\overline{x}) (منځنی)\n\n\\sigma_{\\overline{x}}^2=\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2 (واریانس)\n\n\\sigma_{\\overline{x}}=\\sqrt{\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2} (معیاري تېروتنه)\n\nپام وکړئ چې تصادفي متغیر \\overline{X} داسې معیاري کېږي Z=\\frac{\\overline{X}-\\mu_{\\overline{x}}}{\\sigma_{\\overline{x}}}=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} (د S.W.R. په حالت کې)\n\nبېلګه 5.4\n\nیوه کورنۍ (نفوس) په پام کې ونیسئ چې څلور ماشومان یې 2، 2، 6، 8 کلن دي.\n\ni. د نفوس منځنی او معیاري انحراف پیدا کړئ.\n\nii. له بېرته اچولو سره د دوو ماشومانو تصادفي نمونې وټاکئ او د هرې نمونې منځنی عمر \\overline{x} محاسبه کړئ.\n\niii. د \\overline{X} نمونوي وېش جوړ کړئ\n\niv. د منځني د نمونوي وېش منځنی او معیاري تېروتنه پیدا کړئ.\n\nv. په (iv) کې لاسته راغلې پایلې د \\overline{X} د نمونوي وېش د ځانګړنو له لارې تایید کړئ",
+   "theoryUrdu": "5.2.2 نمونے کے اوسط کی نمونہ جاتی تقسیم\n\nتخمین کار \\overline{X} کی تمام ممکنہ قیمتوں کی احتمالی تقسیم کو \\overline{X} کی نمونہ جاتی تقسیم کہتے ہیں یعنی\n\n\\overline{X} کی نمونہ جاتی تقسیم\n\n\\overline{X} کی نمونہ جاتی تقسیم کے اوسط کو E(\\overline{X})=\\mu_{\\overline{x}} (پڑھیں mu sub x bar) اور اس کی معیاری غلطی کو \\sigma_{\\overline{x}} (پڑھیں sigma sub x bar) سے ظاہر کرتے ہیں۔\n\n5.2.3 \\overline{X} کی نمونہ جاتی تقسیم کی خصوصیات\n\ni. \\overline{X} کی نمونہ جاتی تقسیم کا اوسط ہمیشہ آبادی کے اوسط کے برابر ہوتا ہے یعنی \\mu_{\\overline{x}}=\\mu (واپسی کے ساتھ اور بغیر دونوں نمونہ گیری میں)\n\nii. \\overline{X} کی نمونہ جاتی تقسیم کی معیاری غلطی یہ ہے\n\n\\sigma_{\\overline{x}}=\\frac{\\sigma}{\\sqrt{n}} (واپسی کے ساتھ نمونہ گیری کی صورت میں)\n\n=\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}} (بغیر واپسی کے نمونہ گیری کی صورت میں)\n\nنوٹ کریں کہ عامل \\sqrt{\\frac{N-n}{N-1}} کو محدود آبادی کا تصحیحی عامل (fpc) کہتے ہیں۔ جب n < 5 % N ہو تو اسے فارمولا سے نکال دیا جاتا ہے اور جب n ≥ 5 % N ہو تو استعمال کیا جاتا ہے۔\n\niii. \\overline{X} کی نمونہ جاتی تقسیم کی شکل\n\nدو صورتیں ہیں:\n\n(a) اگر نمونہ لی گئی آبادی نارمل ہو تو \\overline{X} کی نمونہ جاتی تقسیم کی شکل بھی نمونے کے سائز سے قطع نظر نارمل ہوگی۔\n\n(b) اگر نمونہ لی گئی آبادی غیر نارمل ہو تو مرکزی حدی مسئلہ (CLT) کے مطابق \\overline{X} کی نمونہ جاتی تقسیم کی شکل تقریباً نارمل ہوگی بشرطیکہ نمونے کا سائز n بڑا ہو۔ نوٹ کریں کہ شماریات دان n\\ge 30 کو بڑا نمونہ سمجھتے ہیں۔\n\n5.2.4 \\overline{X} کی نمونہ جاتی تقسیم کے اوسط اور معیاری غلطی کے فارمولے\n\n\\mu_{\\overline{x}}=\\Sigma\\overline{x}f(\\overline{x}) (اوسط)\n\n\\sigma_{\\overline{x}}^2=\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2 (تغیر)\n\n\\sigma_{\\overline{x}}=\\sqrt{\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2} (معیاری غلطی)\n\nنوٹ کریں کہ تصادفی متغیر \\overline{X} کو یوں معیاری بنایا جاتا ہے Z=\\frac{\\overline{X}-\\mu_{\\overline{x}}}{\\sigma_{\\overline{x}}}=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} (S.W.R. کی صورت میں)\n\nمثال 5.4\n\nایک خاندان (آبادی) پر غور کریں جس کے چار بچوں کی عمریں 2، 2، 6، 8 سال ہیں۔\n\ni. آبادی کا اوسط اور معیاری انحراف معلوم کریں۔\n\nii. واپسی کے ساتھ دو بچوں کے تصادفی نمونے منتخب کریں اور ہر نمونے کی اوسط عمر \\overline{x} معلوم کریں۔\n\niii. \\overline{X} کی نمونہ جاتی تقسیم بنائیں\n\niv. اوسط کی نمونہ جاتی تقسیم کا اوسط اور معیاری غلطی معلوم کریں۔\n\nv. (iv) میں حاصل نتائج کی \\overline{X} کی نمونہ جاتی تقسیم کی خصوصیات سے تصدیق کریں",
+   "theoryPashto": "5.2.2 د نمونې د منځني نمونوي وېش\n\nد اټکلوونکي \\overline{X} د ټولو شونو قیمتونو احتمالي وېش ته د \\overline{X} نمونوي وېش وایي یعنې\n\nد \\overline{X} نمونوي وېش\n\nد \\overline{X} د نمونوي وېش منځنی په E(\\overline{X})=\\mu_{\\overline{x}} (mu sub x bar لوستل کېږي) او معیاري تېروتنه یې په \\sigma_{\\overline{x}} (sigma sub x bar لوستل کېږي) ښودل کېږي.\n\n5.2.3 د \\overline{X} د نمونوي وېش ځانګړنې\n\ni. د \\overline{X} د نمونوي وېش منځنی تل د نفوس له منځني سره برابر دی یعنې \\mu_{\\overline{x}}=\\mu (په دواړو له بېرته اچولو سره او پرته نمونه اخیستنه کې)\n\nii. د \\overline{X} د نمونوي وېش معیاري تېروتنه دا ده\n\n\\sigma_{\\overline{x}}=\\frac{\\sigma}{\\sqrt{n}} (له بېرته اچولو سره د نمونه اخیستنې په حالت کې)\n\n=\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}} (پرته له بېرته اچولو د نمونه اخیستنې په حالت کې)\n\nپام وکړئ چې عامل \\sqrt{\\frac{N-n}{N-1}} ته د محدود نفوس سمونې عامل (fpc) وایي. کله چې n < 5 % N وي له فورمول څخه لرې کېږي او کله چې n ≥ 5 % N وي کارول کېږي.\n\niii. د \\overline{X} د نمونوي وېش بڼه\n\nدوه حالتونه دي:\n\n(a) که نمونه ترې اخیستل شوی نفوس نورمال وي، نو د \\overline{X} د نمونوي وېش بڼه به هم د نمونې له اندازې پرته نورماله وي.\n\n(b) که نمونه ترې اخیستل شوی نفوس غیر نورمال وي، نو د مرکزي حد د قضیې (CLT) له مخې د \\overline{X} د نمونوي وېش بڼه به نږدې نورماله وي په دې شرط چې د نمونې اندازه n لویه وي. پام وکړئ چې احصایه پوهان n\\ge 30 لویه نمونه ګڼي.\n\n5.2.4 د \\overline{X} د نمونوي وېش د منځني او معیاري تېروتنې فورمولونه\n\n\\mu_{\\overline{x}}=\\Sigma\\overline{x}f(\\overline{x}) (منځنی)\n\n\\sigma_{\\overline{x}}^2=\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2 (واریانس)\n\n\\sigma_{\\overline{x}}=\\sqrt{\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2} (معیاري تېروتنه)\n\nپام وکړئ چې تصادفي متغیر \\overline{X} داسې معیاري کېږي Z=\\frac{\\overline{X}-\\mu_{\\overline{x}}}{\\sigma_{\\overline{x}}}=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} (د S.W.R. په حالت کې)\n\nبېلګه 5.4\n\nیوه کورنۍ (نفوس) په پام کې ونیسئ چې څلور ماشومان یې 2، 2، 6، 8 کلن دي.\n\ni. د نفوس منځنی او معیاري انحراف پیدا کړئ.\n\nii. له بېرته اچولو سره د دوو ماشومانو تصادفي نمونې وټاکئ او د هرې نمونې منځنی عمر \\overline{x} محاسبه کړئ.\n\niii. د \\overline{X} نمونوي وېش جوړ کړئ\n\niv. د منځني د نمونوي وېش منځنی او معیاري تېروتنه پیدا کړئ.\n\nv. په (iv) کې لاسته راغلې پایلې د \\overline{X} د نمونوي وېش د ځانګړنو له لارې تایید کړئ",
+   "content": "<p>5.2.2 Sampling distribution of sample mean</p><p>The probability distribution of all possible values of the estimator \\overline{X} is called sampling distribution of \\overline{X} i.e.</p><p>Sampling distribution of \\overline{X}</p><p>The mean of the sampling distribution of \\overline{X} is denoted by E(\\overline{X})=\\mu_{\\overline{x}} (read as mu sub x bar) and its S.E by \\sigma_{\\overline{x}} (read as sigma sub x bar).</p><p>5.2.3 Properties of the sampling distribution of \\overline{X}</p><p>i. Mean of the sampling distribution of \\overline{X} is always equal to the population mean i.e. \\mu_{\\overline{x}}=\\mu (both in with and without replacement sampling)</p><p>ii. Standard error of the sampling distribution of \\overline{X} is</p><p>\\sigma_{\\overline{x}}=\\frac{\\sigma}{\\sqrt{n}} (in case of sampling with replacement)</p><p>=\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}} (in case of sampling without replacement)</p><p>Note that the factor \\sqrt{\\frac{N-n}{N-1}} is called finite population correction factor (fpc). It is dropped from the formula when n &lt; 5 % N and is used when n ≥ 5 % N.</p><p>iii. Shape of the sampling distribution of \\overline{X}</p><p>There are two cases:</p><p>(a) If the sampled population is normal, then shape of the sampling distribution of \\overline{X} will also be normal irrespective of the sample size.</p><p>(b) If the sampled population is non-normal, then according to central limit theorem (CLT), shape of the sampling distribution of \\overline{X} will approximately be normal provided sample size n is large. Note that statisticians consider n\\ge 30 as large sample.</p><p>5.2.4 Formulas for mean and S.E of the sampling distribution of \\overline{X}</p><p>\\mu_{\\overline{x}}=\\Sigma\\overline{x}f(\\overline{x}) (Mean)</p><p>\\sigma_{\\overline{x}}^2=\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2 (Variance)</p><p>\\sigma_{\\overline{x}}=\\sqrt{\\Sigma\\overline{x}^2f(\\overline{x})-[\\Sigma\\overline{x}f(\\overline{x})]^2} (S.E)</p><p>Note that the random variable \\overline{X} is standardized as Z=\\frac{\\overline{X}-\\mu_{\\overline{x}}}{\\sigma_{\\overline{x}}}=\\frac{\\overline{X}-\\mu}{\\sigma/\\sqrt{n}} (In S.W.R. case)</p><p>Example 5.4</p><p>Consider a family (population) of four children having ages 2, 2, 6, 8 years.</p><p>i. Find mean and standard deviation of the population.</p><p>ii. Select random samples of two children with replacement and calculate the mean age \\overline{x} for each sample.</p><p>iii. Construct sampling distribution of \\overline{X}</p><p>iv. Find the mean and standard error of the sampling distribution of mean.</p><p>v. Verify the results obtained in (iv) by properties of the sampling distribution of \\overline{X}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-sampling-dist-mean"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      7,
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      12,
+      13
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      21,
+      22,
+      23,
+      24,
+      25
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-sampling-dist-mean",
+     "headers": [
+      "$\\overline{X}$",
+      "$f(\\overline{x})$"
+     ],
+     "rows": [
+      [
+       "$\\overline{x}_1$",
+       "$f(\\overline{x}_1)$"
+      ],
+      [
+       "$\\overline{x}_2$",
+       "$f(\\overline{x}_2)$"
+      ],
+      [
+       "$\\vdots$",
+       "$\\vdots$"
+      ],
+      [
+       "$\\overline{x}_k$",
+       "$f(\\overline{x}_k)$"
+      ],
+      [
+       "Total",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$\\overline{X}$",
+        "$f(\\overline{x})$"
+       ],
+       "rows": [
+        [
+         "$\\overline{x}_1$",
+         "$f(\\overline{x}_1)$"
+        ],
+        [
+         "$\\overline{x}_2$",
+         "$f(\\overline{x}_2)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$\\overline{x}_k$",
+         "$f(\\overline{x}_k)$"
+        ],
+        [
+         "کل",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$\\overline{X}$",
+        "$f(\\overline{x})$"
+       ],
+       "rows": [
+        [
+         "$\\overline{x}_1$",
+         "$f(\\overline{x}_1)$"
+        ],
+        [
+         "$\\overline{x}_2$",
+         "$f(\\overline{x}_2)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$\\overline{x}_k$",
+         "$f(\\overline{x}_k)$"
+        ],
+        [
+         "ټول",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 86,
+     "printedPages": [
+      163,
+      164
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 5
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

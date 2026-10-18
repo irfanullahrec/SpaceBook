@@ -1,0 +1,408 @@
+{
+ "pdfPage": 48,
+ "sections": [
+  {
+   "id": "stat12-p048-example-3-11",
+   "title": "Example 3.11 — solution",
+   "headingUrdu": "مثال 3.11 — حل",
+   "headingPashto": "بېلګه 3.11 — حل",
+   "paras": [
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}{}^{10}_{x}C\\left(\\frac{1}{10}\\right)^x\\left(\\frac{9}{10}\\right)^{10-x}, & x=0,1,2,\\ldots,10\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}{}^{10}_{x}C\\left(\\frac{1}{10}\\right)^x\\left(\\frac{9}{10}\\right)^{10-x}, & x=0,1,2,\\ldots,10\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}{}^{10}_{x}C\\left(\\frac{1}{10}\\right)^x\\left(\\frac{9}{10}\\right)^{10-x}, & x=0,1,2,\\ldots,10\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "Now $P$[not more than two items being defective] $=P[X\\le 2]$",
+     "urdu": "اب $P$[دو سے زیادہ اشیاء ناقص نہ ہوں] $=P[X\\le 2]$",
+     "pashto": "اوس $P$[له دوو زیات توکي عیبي نه وي] $=P[X\\le 2]$"
+    },
+    {
+     "text": "$={}^{10}_{0}C\\left(\\frac{1}{10}\\right)^0\\left(\\frac{9}{10}\\right)^{10-0}+{}^{10}_{1}C\\left(\\frac{1}{10}\\right)^1\\left(\\frac{9}{10}\\right)^{10-1}+{}^{10}_{2}C\\left(\\frac{1}{10}\\right)^2\\left(\\frac{9}{10}\\right)^{10-2}$",
+     "urdu": "$={}^{10}_{0}C\\left(\\frac{1}{10}\\right)^0\\left(\\frac{9}{10}\\right)^{10-0}+{}^{10}_{1}C\\left(\\frac{1}{10}\\right)^1\\left(\\frac{9}{10}\\right)^{10-1}+{}^{10}_{2}C\\left(\\frac{1}{10}\\right)^2\\left(\\frac{9}{10}\\right)^{10-2}$",
+     "pashto": "$={}^{10}_{0}C\\left(\\frac{1}{10}\\right)^0\\left(\\frac{9}{10}\\right)^{10-0}+{}^{10}_{1}C\\left(\\frac{1}{10}\\right)^1\\left(\\frac{9}{10}\\right)^{10-1}+{}^{10}_{2}C\\left(\\frac{1}{10}\\right)^2\\left(\\frac{9}{10}\\right)^{10-2}$"
+    },
+    {
+     "text": "$=\\left(\\frac{9}{10}\\right)^{10}+10\\left(\\frac{1}{10}\\right)\\left(\\frac{9}{10}\\right)^9+45\\left(\\frac{1}{100}\\right)\\left(\\frac{9}{10}\\right)^8$",
+     "urdu": "$=\\left(\\frac{9}{10}\\right)^{10}+10\\left(\\frac{1}{10}\\right)\\left(\\frac{9}{10}\\right)^9+45\\left(\\frac{1}{100}\\right)\\left(\\frac{9}{10}\\right)^8$",
+     "pashto": "$=\\left(\\frac{9}{10}\\right)^{10}+10\\left(\\frac{1}{10}\\right)\\left(\\frac{9}{10}\\right)^9+45\\left(\\frac{1}{100}\\right)\\left(\\frac{9}{10}\\right)^8$"
+    },
+    {
+     "text": "$=0.3487+0.3874+0.1937=0.9298$",
+     "urdu": "$=0.3487+0.3874+0.1937=0.9298$",
+     "pashto": "$=0.3487+0.3874+0.1937=0.9298$"
+    }
+   ],
+   "theory": "$p(x)=\\left\\{\\begin{matrix}{}^{10}_{x}C\\left(\\frac{1}{10}\\right)^x\\left(\\frac{9}{10}\\right)^{10-x}, & x=0,1,2,\\ldots,10\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nNow P[not more than two items being defective] =P[X\\le 2]\n\n={}^{10}_{0}C\\left(\\frac{1}{10}\\right)^0\\left(\\frac{9}{10}\\right)^{10-0}+{}^{10}_{1}C\\left(\\frac{1}{10}\\right)^1\\left(\\frac{9}{10}\\right)^{10-1}+{}^{10}_{2}C\\left(\\frac{1}{10}\\right)^2\\left(\\frac{9}{10}\\right)^{10-2}\n\n=\\left(\\frac{9}{10}\\right)^{10}+10\\left(\\frac{1}{10}\\right)\\left(\\frac{9}{10}\\right)^9+45\\left(\\frac{1}{100}\\right)\\left(\\frac{9}{10}\\right)^8\n\n=0.3487+0.3874+0.1937=0.9298",
+   "urdu": "$p(x)=\\left\\{\\begin{matrix}{}^{10}_{x}C\\left(\\frac{1}{10}\\right)^x\\left(\\frac{9}{10}\\right)^{10-x}, & x=0,1,2,\\ldots,10\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاب P[دو سے زیادہ اشیاء ناقص نہ ہوں] =P[X\\le 2]\n\n={}^{10}_{0}C\\left(\\frac{1}{10}\\right)^0\\left(\\frac{9}{10}\\right)^{10-0}+{}^{10}_{1}C\\left(\\frac{1}{10}\\right)^1\\left(\\frac{9}{10}\\right)^{10-1}+{}^{10}_{2}C\\left(\\frac{1}{10}\\right)^2\\left(\\frac{9}{10}\\right)^{10-2}\n\n=\\left(\\frac{9}{10}\\right)^{10}+10\\left(\\frac{1}{10}\\right)\\left(\\frac{9}{10}\\right)^9+45\\left(\\frac{1}{100}\\right)\\left(\\frac{9}{10}\\right)^8\n\n=0.3487+0.3874+0.1937=0.9298",
+   "pashto": "$p(x)=\\left\\{\\begin{matrix}{}^{10}_{x}C\\left(\\frac{1}{10}\\right)^x\\left(\\frac{9}{10}\\right)^{10-x}, & x=0,1,2,\\ldots,10\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاوس P[له دوو زیات توکي عیبي نه وي] =P[X\\le 2]\n\n={}^{10}_{0}C\\left(\\frac{1}{10}\\right)^0\\left(\\frac{9}{10}\\right)^{10-0}+{}^{10}_{1}C\\left(\\frac{1}{10}\\right)^1\\left(\\frac{9}{10}\\right)^{10-1}+{}^{10}_{2}C\\left(\\frac{1}{10}\\right)^2\\left(\\frac{9}{10}\\right)^{10-2}\n\n=\\left(\\frac{9}{10}\\right)^{10}+10\\left(\\frac{1}{10}\\right)\\left(\\frac{9}{10}\\right)^9+45\\left(\\frac{1}{100}\\right)\\left(\\frac{9}{10}\\right)^8\n\n=0.3487+0.3874+0.1937=0.9298",
+   "theoryUrdu": "$p(x)=\\left\\{\\begin{matrix}{}^{10}_{x}C\\left(\\frac{1}{10}\\right)^x\\left(\\frac{9}{10}\\right)^{10-x}, & x=0,1,2,\\ldots,10\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاب P[دو سے زیادہ اشیاء ناقص نہ ہوں] =P[X\\le 2]\n\n={}^{10}_{0}C\\left(\\frac{1}{10}\\right)^0\\left(\\frac{9}{10}\\right)^{10-0}+{}^{10}_{1}C\\left(\\frac{1}{10}\\right)^1\\left(\\frac{9}{10}\\right)^{10-1}+{}^{10}_{2}C\\left(\\frac{1}{10}\\right)^2\\left(\\frac{9}{10}\\right)^{10-2}\n\n=\\left(\\frac{9}{10}\\right)^{10}+10\\left(\\frac{1}{10}\\right)\\left(\\frac{9}{10}\\right)^9+45\\left(\\frac{1}{100}\\right)\\left(\\frac{9}{10}\\right)^8\n\n=0.3487+0.3874+0.1937=0.9298",
+   "theoryPashto": "$p(x)=\\left\\{\\begin{matrix}{}^{10}_{x}C\\left(\\frac{1}{10}\\right)^x\\left(\\frac{9}{10}\\right)^{10-x}, & x=0,1,2,\\ldots,10\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاوس P[له دوو زیات توکي عیبي نه وي] =P[X\\le 2]\n\n={}^{10}_{0}C\\left(\\frac{1}{10}\\right)^0\\left(\\frac{9}{10}\\right)^{10-0}+{}^{10}_{1}C\\left(\\frac{1}{10}\\right)^1\\left(\\frac{9}{10}\\right)^{10-1}+{}^{10}_{2}C\\left(\\frac{1}{10}\\right)^2\\left(\\frac{9}{10}\\right)^{10-2}\n\n=\\left(\\frac{9}{10}\\right)^{10}+10\\left(\\frac{1}{10}\\right)\\left(\\frac{9}{10}\\right)^9+45\\left(\\frac{1}{100}\\right)\\left(\\frac{9}{10}\\right)^8\n\n=0.3487+0.3874+0.1937=0.9298",
+   "content": "<p>$p(x)=\\left\\{\\begin{matrix}{}^{10}_{x}C\\left(\\frac{1}{10}\\right)^x\\left(\\frac{9}{10}\\right)^{10-x}, &amp; x=0,1,2,\\ldots,10\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>Now P[not more than two items being defective] =P[X\\le 2]</p><p>={}^{10}_{0}C\\left(\\frac{1}{10}\\right)^0\\left(\\frac{9}{10}\\right)^{10-0}+{}^{10}_{1}C\\left(\\frac{1}{10}\\right)^1\\left(\\frac{9}{10}\\right)^{10-1}+{}^{10}_{2}C\\left(\\frac{1}{10}\\right)^2\\left(\\frac{9}{10}\\right)^{10-2}</p><p>=\\left(\\frac{9}{10}\\right)^{10}+10\\left(\\frac{1}{10}\\right)\\left(\\frac{9}{10}\\right)^9+45\\left(\\frac{1}{100}\\right)\\left(\\frac{9}{10}\\right)^8</p><p>=0.3487+0.3874+0.1937=0.9298</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "equation",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3,
+      4
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 48,
+     "printedPages": [
+      87
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  },
+  {
+   "id": "stat12-p048-example-3-12",
+   "title": "Example 3.12 — bomber sorties",
+   "headingUrdu": "مثال 3.12 — بمبار کی پروازیں",
+   "headingPashto": "بېلګه 3.12 — د بمبار الوتنې",
+   "paras": [
+    {
+     "text": "Example 3.12",
+     "urdu": "مثال 3.12",
+     "pashto": "بېلګه 3.12"
+    },
+    {
+     "text": "The chances of a bomber hitting the target and missing the target are 3:2. Calculate the probability that the target will be hit at least once in five sorties.",
+     "urdu": "ایک بمبار کے ہدف کو نشانہ بنانے اور چوکنے کے امکانات 3:2 ہیں۔ احتمال معلوم کریں کہ پانچ پروازوں میں ہدف کم از کم ایک بار نشانہ بنے گا۔",
+     "pashto": "د یوه بمبار د هدف د لګولو او خطا کولو چانسونه 3:2 دي. احتمال یې محاسبه کړئ چې په پنځو الوتنو کې به هدف لږ تر لږه یو ځل ولګېږي."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Given that $p=\\frac{3}{5}$, $q=\\frac{2}{5}$, $n=5$",
+     "urdu": "دیا گیا ہے $p=\\frac{3}{5}$، $q=\\frac{2}{5}$، $n=5$",
+     "pashto": "ورکړل شوي $p=\\frac{3}{5}$، $q=\\frac{2}{5}$، $n=5$"
+    },
+    {
+     "text": "X: denotes the number of hits.",
+     "urdu": "X: ہدف پر لگنے کی تعداد ظاہر کرتا ہے۔",
+     "pashto": "X: د لګېدو شمېر ښيي."
+    },
+    {
+     "text": "$$X=0,1,2,3,4,5$$",
+     "urdu": "$$X=0,1,2,3,4,5$$",
+     "pashto": "$$X=0,1,2,3,4,5$$"
+    },
+    {
+     "text": "So",
+     "urdu": "لہٰذا",
+     "pashto": "نو"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}{}^{5}_{x}C\\left(\\frac{3}{5}\\right)^x\\left(\\frac{2}{5}\\right)^{5-x}, & x=0,1,2,3,4,5\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}{}^{5}_{x}C\\left(\\frac{3}{5}\\right)^x\\left(\\frac{2}{5}\\right)^{5-x}, & x=0,1,2,3,4,5\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}{}^{5}_{x}C\\left(\\frac{3}{5}\\right)^x\\left(\\frac{2}{5}\\right)^{5-x}, & x=0,1,2,3,4,5\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "Now, $P$[at least one will hit the target] $=1-P$[no one will hit the target]",
+     "urdu": "اب، $P$[کم از کم ایک ہدف پر لگے] $=1-P$[کوئی ہدف پر نہ لگے]",
+     "pashto": "اوس، $P$[لږ تر لږه یو هدف ولګوي] $=1-P$[هېڅ یو هدف ونه لګوي]"
+    },
+    {
+     "text": "$P(X\\ge 1)=1-P[X=0]$",
+     "urdu": "$P(X\\ge 1)=1-P[X=0]$",
+     "pashto": "$P(X\\ge 1)=1-P[X=0]$"
+    },
+    {
+     "text": "$=1-{}^{5}_{0}C\\left(\\frac{3}{5}\\right)^0\\left(\\frac{2}{5}\\right)^{5-0}$",
+     "urdu": "$=1-{}^{5}_{0}C\\left(\\frac{3}{5}\\right)^0\\left(\\frac{2}{5}\\right)^{5-0}$",
+     "pashto": "$=1-{}^{5}_{0}C\\left(\\frac{3}{5}\\right)^0\\left(\\frac{2}{5}\\right)^{5-0}$"
+    },
+    {
+     "text": "$=1-\\left(\\frac{2}{5}\\right)^5=1-0.01024=0.98976$",
+     "urdu": "$=1-\\left(\\frac{2}{5}\\right)^5=1-0.01024=0.98976$",
+     "pashto": "$=1-\\left(\\frac{2}{5}\\right)^5=1-0.01024=0.98976$"
+    }
+   ],
+   "theory": "Example 3.12\n\nThe chances of a bomber hitting the target and missing the target are 3:2. Calculate the probability that the target will be hit at least once in five sorties.\n\nSolution:\n\nGiven that p=\\frac{3}{5}, q=\\frac{2}{5}, n=5\n\nX: denotes the number of hits.\n\n$X=0,1,2,3,4,5$\n\nSo\n\n$p(x)=\\left\\{\\begin{matrix}{}^{5}_{x}C\\left(\\frac{3}{5}\\right)^x\\left(\\frac{2}{5}\\right)^{5-x}, & x=0,1,2,3,4,5\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nNow, P[at least one will hit the target] =1-P[no one will hit the target]\n\nP(X\\ge 1)=1-P[X=0]\n\n=1-{}^{5}_{0}C\\left(\\frac{3}{5}\\right)^0\\left(\\frac{2}{5}\\right)^{5-0}\n\n=1-\\left(\\frac{2}{5}\\right)^5=1-0.01024=0.98976",
+   "urdu": "مثال 3.12\n\nایک بمبار کے ہدف کو نشانہ بنانے اور چوکنے کے امکانات 3:2 ہیں۔ احتمال معلوم کریں کہ پانچ پروازوں میں ہدف کم از کم ایک بار نشانہ بنے گا۔\n\nحل:\n\nدیا گیا ہے p=\\frac{3}{5}، q=\\frac{2}{5}، n=5\n\nX: ہدف پر لگنے کی تعداد ظاہر کرتا ہے۔\n\n$X=0,1,2,3,4,5$\n\nلہٰذا\n\n$p(x)=\\left\\{\\begin{matrix}{}^{5}_{x}C\\left(\\frac{3}{5}\\right)^x\\left(\\frac{2}{5}\\right)^{5-x}, & x=0,1,2,3,4,5\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاب، P[کم از کم ایک ہدف پر لگے] =1-P[کوئی ہدف پر نہ لگے]\n\nP(X\\ge 1)=1-P[X=0]\n\n=1-{}^{5}_{0}C\\left(\\frac{3}{5}\\right)^0\\left(\\frac{2}{5}\\right)^{5-0}\n\n=1-\\left(\\frac{2}{5}\\right)^5=1-0.01024=0.98976",
+   "pashto": "بېلګه 3.12\n\nد یوه بمبار د هدف د لګولو او خطا کولو چانسونه 3:2 دي. احتمال یې محاسبه کړئ چې په پنځو الوتنو کې به هدف لږ تر لږه یو ځل ولګېږي.\n\nحل:\n\nورکړل شوي p=\\frac{3}{5}، q=\\frac{2}{5}، n=5\n\nX: د لګېدو شمېر ښيي.\n\n$X=0,1,2,3,4,5$\n\nنو\n\n$p(x)=\\left\\{\\begin{matrix}{}^{5}_{x}C\\left(\\frac{3}{5}\\right)^x\\left(\\frac{2}{5}\\right)^{5-x}, & x=0,1,2,3,4,5\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاوس، P[لږ تر لږه یو هدف ولګوي] =1-P[هېڅ یو هدف ونه لګوي]\n\nP(X\\ge 1)=1-P[X=0]\n\n=1-{}^{5}_{0}C\\left(\\frac{3}{5}\\right)^0\\left(\\frac{2}{5}\\right)^{5-0}\n\n=1-\\left(\\frac{2}{5}\\right)^5=1-0.01024=0.98976",
+   "theoryUrdu": "مثال 3.12\n\nایک بمبار کے ہدف کو نشانہ بنانے اور چوکنے کے امکانات 3:2 ہیں۔ احتمال معلوم کریں کہ پانچ پروازوں میں ہدف کم از کم ایک بار نشانہ بنے گا۔\n\nحل:\n\nدیا گیا ہے p=\\frac{3}{5}، q=\\frac{2}{5}، n=5\n\nX: ہدف پر لگنے کی تعداد ظاہر کرتا ہے۔\n\n$X=0,1,2,3,4,5$\n\nلہٰذا\n\n$p(x)=\\left\\{\\begin{matrix}{}^{5}_{x}C\\left(\\frac{3}{5}\\right)^x\\left(\\frac{2}{5}\\right)^{5-x}, & x=0,1,2,3,4,5\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاب، P[کم از کم ایک ہدف پر لگے] =1-P[کوئی ہدف پر نہ لگے]\n\nP(X\\ge 1)=1-P[X=0]\n\n=1-{}^{5}_{0}C\\left(\\frac{3}{5}\\right)^0\\left(\\frac{2}{5}\\right)^{5-0}\n\n=1-\\left(\\frac{2}{5}\\right)^5=1-0.01024=0.98976",
+   "theoryPashto": "بېلګه 3.12\n\nد یوه بمبار د هدف د لګولو او خطا کولو چانسونه 3:2 دي. احتمال یې محاسبه کړئ چې په پنځو الوتنو کې به هدف لږ تر لږه یو ځل ولګېږي.\n\nحل:\n\nورکړل شوي p=\\frac{3}{5}، q=\\frac{2}{5}، n=5\n\nX: د لګېدو شمېر ښيي.\n\n$X=0,1,2,3,4,5$\n\nنو\n\n$p(x)=\\left\\{\\begin{matrix}{}^{5}_{x}C\\left(\\frac{3}{5}\\right)^x\\left(\\frac{2}{5}\\right)^{5-x}, & x=0,1,2,3,4,5\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاوس، P[لږ تر لږه یو هدف ولګوي] =1-P[هېڅ یو هدف ونه لګوي]\n\nP(X\\ge 1)=1-P[X=0]\n\n=1-{}^{5}_{0}C\\left(\\frac{3}{5}\\right)^0\\left(\\frac{2}{5}\\right)^{5-0}\n\n=1-\\left(\\frac{2}{5}\\right)^5=1-0.01024=0.98976",
+   "content": "<p>Example 3.12</p><p>The chances of a bomber hitting the target and missing the target are 3:2. Calculate the probability that the target will be hit at least once in five sorties.</p><p>Solution:</p><p>Given that p=\\frac{3}{5}, q=\\frac{2}{5}, n=5</p><p>X: denotes the number of hits.</p><p>$X=0,1,2,3,4,5$</p><p>So</p><p>$p(x)=\\left\\{\\begin{matrix}{}^{5}_{x}C\\left(\\frac{3}{5}\\right)^x\\left(\\frac{2}{5}\\right)^{5-x}, &amp; x=0,1,2,3,4,5\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>Now, P[at least one will hit the target] =1-P[no one will hit the target]</p><p>P(X\\ge 1)=1-P[X=0]</p><p>=1-{}^{5}_{0}C\\left(\\frac{3}{5}\\right)^0\\left(\\frac{2}{5}\\right)^{5-0}</p><p>=1-\\left(\\frac{2}{5}\\right)^5=1-0.01024=0.98976</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10,
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 48,
+     "printedPages": [
+      87,
+      88
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  },
+  {
+   "id": "stat12-p048-binomial-properties",
+   "title": "3.3.3 Properties of the binomial distribution — mean",
+   "headingUrdu": "3.3.3 دو رقمی تقسیم کی خصوصیات — اوسط",
+   "headingPashto": "3.3.3 د بینومیل وېش ځانګړنې — منځنی",
+   "paras": [
+    {
+     "text": "3.3.3 Properties of Binomial distribution",
+     "urdu": "3.3.3 دو رقمی تقسیم کی خصوصیات",
+     "pashto": "3.3.3 د بینومیل وېش ځانګړنې"
+    },
+    {
+     "text": "(i) Mean of Binomial distribution",
+     "urdu": "(i) دو رقمی تقسیم کا اوسط",
+     "pashto": "(i) د بینومیل وېش منځنی"
+    },
+    {
+     "text": "By definition",
+     "urdu": "تعریف کے مطابق",
+     "pashto": "د تعریف له مخې"
+    },
+    {
+     "text": "$\\text{Mean}=E(X)=\\sum_x x\\,p(x)$",
+     "urdu": "$\\text{Mean}=E(X)=\\sum_x x\\,p(x)$",
+     "pashto": "$\\text{Mean}=E(X)=\\sum_x x\\,p(x)$"
+    },
+    {
+     "text": "$=\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}$",
+     "urdu": "$=\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}$",
+     "pashto": "$=\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}$"
+    },
+    {
+     "text": "$=0\\,{}^{n}_{0}C\\,p^0q^{n-0}+1\\,{}^{n}_{1}C\\,p^1q^{n-1}+2\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n\\,{}^{n}_{n}C\\,p^nq^{n-n}$",
+     "urdu": "$=0\\,{}^{n}_{0}C\\,p^0q^{n-0}+1\\,{}^{n}_{1}C\\,p^1q^{n-1}+2\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n\\,{}^{n}_{n}C\\,p^nq^{n-n}$",
+     "pashto": "$=0\\,{}^{n}_{0}C\\,p^0q^{n-0}+1\\,{}^{n}_{1}C\\,p^1q^{n-1}+2\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n\\,{}^{n}_{n}C\\,p^nq^{n-n}$"
+    },
+    {
+     "text": "$=0+npq^{n-1}+\\ldots+np^n$",
+     "urdu": "$=0+npq^{n-1}+\\ldots+np^n$",
+     "pashto": "$=0+npq^{n-1}+\\ldots+np^n$"
+    },
+    {
+     "text": "$=np\\,[q^{n-1}+\\ldots+p^{n-1}]$",
+     "urdu": "$=np\\,[q^{n-1}+\\ldots+p^{n-1}]$",
+     "pashto": "$=np\\,[q^{n-1}+\\ldots+p^{n-1}]$"
+    },
+    {
+     "text": "$=np\\,[q+p]^{n-1}$",
+     "urdu": "$=np\\,[q+p]^{n-1}$",
+     "pashto": "$=np\\,[q+p]^{n-1}$"
+    },
+    {
+     "text": "$=np\\,(1)^{n-1}\\qquad\\because p+q=1$",
+     "urdu": "$=np\\,(1)^{n-1}\\qquad\\because p+q=1$",
+     "pashto": "$=np\\,(1)^{n-1}\\qquad\\because p+q=1$"
+    },
+    {
+     "text": "$=np$",
+     "urdu": "$=np$",
+     "pashto": "$=np$"
+    },
+    {
+     "text": "(ii) Variance of Binomial distribution",
+     "urdu": "(ii) دو رقمی تقسیم کا تغیر",
+     "pashto": "(ii) د بینومیل وېش واریانس"
+    },
+    {
+     "text": "By definition",
+     "urdu": "تعریف کے مطابق",
+     "pashto": "د تعریف له مخې"
+    },
+    {
+     "text": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)$",
+     "urdu": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)$",
+     "pashto": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)$"
+    },
+    {
+     "text": "$\\text{As } E(X)=np\\qquad(1)$",
+     "urdu": "$\\text{As } E(X)=np\\qquad(1)$",
+     "pashto": "$\\text{As } E(X)=np\\qquad(1)$"
+    },
+    {
+     "text": "$\\text{Now } E(X^2)=\\Sigma x^2p(x)$",
+     "urdu": "$\\text{Now } E(X^2)=\\Sigma x^2p(x)$",
+     "pashto": "$\\text{Now } E(X^2)=\\Sigma x^2p(x)$"
+    },
+    {
+     "text": "$=\\sum_x[x(x-1)+x]\\,p(x)\\qquad\\because x^2=x(x-1)+x$",
+     "urdu": "$=\\sum_x[x(x-1)+x]\\,p(x)\\qquad\\because x^2=x(x-1)+x$",
+     "pashto": "$=\\sum_x[x(x-1)+x]\\,p(x)\\qquad\\because x^2=x(x-1)+x$"
+    }
+   ],
+   "theory": "3.3.3 Properties of Binomial distribution\n\n(i) Mean of Binomial distribution\n\nBy definition\n\n\\text{Mean}=E(X)=\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}\n\n=0\\,{}^{n}_{0}C\\,p^0q^{n-0}+1\\,{}^{n}_{1}C\\,p^1q^{n-1}+2\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n\\,{}^{n}_{n}C\\,p^nq^{n-n}\n\n=0+npq^{n-1}+\\ldots+np^n\n\n=np\\,[q^{n-1}+\\ldots+p^{n-1}]\n\n=np\\,[q+p]^{n-1}\n\n=np\\,(1)^{n-1}\\qquad\\because p+q=1\n\n=np\n\n(ii) Variance of Binomial distribution\n\nBy definition\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)\n\n\\text{As } E(X)=np\\qquad(1)\n\n\\text{Now } E(X^2)=\\Sigma x^2p(x)\n\n=\\sum_x[x(x-1)+x]\\,p(x)\\qquad\\because x^2=x(x-1)+x",
+   "urdu": "3.3.3 دو رقمی تقسیم کی خصوصیات\n\n(i) دو رقمی تقسیم کا اوسط\n\nتعریف کے مطابق\n\n\\text{Mean}=E(X)=\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}\n\n=0\\,{}^{n}_{0}C\\,p^0q^{n-0}+1\\,{}^{n}_{1}C\\,p^1q^{n-1}+2\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n\\,{}^{n}_{n}C\\,p^nq^{n-n}\n\n=0+npq^{n-1}+\\ldots+np^n\n\n=np\\,[q^{n-1}+\\ldots+p^{n-1}]\n\n=np\\,[q+p]^{n-1}\n\n=np\\,(1)^{n-1}\\qquad\\because p+q=1\n\n=np\n\n(ii) دو رقمی تقسیم کا تغیر\n\nتعریف کے مطابق\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)\n\n\\text{As } E(X)=np\\qquad(1)\n\n\\text{Now } E(X^2)=\\Sigma x^2p(x)\n\n=\\sum_x[x(x-1)+x]\\,p(x)\\qquad\\because x^2=x(x-1)+x",
+   "pashto": "3.3.3 د بینومیل وېش ځانګړنې\n\n(i) د بینومیل وېش منځنی\n\nد تعریف له مخې\n\n\\text{Mean}=E(X)=\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}\n\n=0\\,{}^{n}_{0}C\\,p^0q^{n-0}+1\\,{}^{n}_{1}C\\,p^1q^{n-1}+2\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n\\,{}^{n}_{n}C\\,p^nq^{n-n}\n\n=0+npq^{n-1}+\\ldots+np^n\n\n=np\\,[q^{n-1}+\\ldots+p^{n-1}]\n\n=np\\,[q+p]^{n-1}\n\n=np\\,(1)^{n-1}\\qquad\\because p+q=1\n\n=np\n\n(ii) د بینومیل وېش واریانس\n\nد تعریف له مخې\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)\n\n\\text{As } E(X)=np\\qquad(1)\n\n\\text{Now } E(X^2)=\\Sigma x^2p(x)\n\n=\\sum_x[x(x-1)+x]\\,p(x)\\qquad\\because x^2=x(x-1)+x",
+   "theoryUrdu": "3.3.3 دو رقمی تقسیم کی خصوصیات\n\n(i) دو رقمی تقسیم کا اوسط\n\nتعریف کے مطابق\n\n\\text{Mean}=E(X)=\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}\n\n=0\\,{}^{n}_{0}C\\,p^0q^{n-0}+1\\,{}^{n}_{1}C\\,p^1q^{n-1}+2\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n\\,{}^{n}_{n}C\\,p^nq^{n-n}\n\n=0+npq^{n-1}+\\ldots+np^n\n\n=np\\,[q^{n-1}+\\ldots+p^{n-1}]\n\n=np\\,[q+p]^{n-1}\n\n=np\\,(1)^{n-1}\\qquad\\because p+q=1\n\n=np\n\n(ii) دو رقمی تقسیم کا تغیر\n\nتعریف کے مطابق\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)\n\n\\text{As } E(X)=np\\qquad(1)\n\n\\text{Now } E(X^2)=\\Sigma x^2p(x)\n\n=\\sum_x[x(x-1)+x]\\,p(x)\\qquad\\because x^2=x(x-1)+x",
+   "theoryPashto": "3.3.3 د بینومیل وېش ځانګړنې\n\n(i) د بینومیل وېش منځنی\n\nد تعریف له مخې\n\n\\text{Mean}=E(X)=\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}\n\n=0\\,{}^{n}_{0}C\\,p^0q^{n-0}+1\\,{}^{n}_{1}C\\,p^1q^{n-1}+2\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n\\,{}^{n}_{n}C\\,p^nq^{n-n}\n\n=0+npq^{n-1}+\\ldots+np^n\n\n=np\\,[q^{n-1}+\\ldots+p^{n-1}]\n\n=np\\,[q+p]^{n-1}\n\n=np\\,(1)^{n-1}\\qquad\\because p+q=1\n\n=np\n\n(ii) د بینومیل وېش واریانس\n\nد تعریف له مخې\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)\n\n\\text{As } E(X)=np\\qquad(1)\n\n\\text{Now } E(X^2)=\\Sigma x^2p(x)\n\n=\\sum_x[x(x-1)+x]\\,p(x)\\qquad\\because x^2=x(x-1)+x",
+   "content": "<p>3.3.3 Properties of Binomial distribution</p><p>(i) Mean of Binomial distribution</p><p>By definition</p><p>\\text{Mean}=E(X)=\\sum_x x\\,p(x)</p><p>=\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}</p><p>=0\\,{}^{n}_{0}C\\,p^0q^{n-0}+1\\,{}^{n}_{1}C\\,p^1q^{n-1}+2\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n\\,{}^{n}_{n}C\\,p^nq^{n-n}</p><p>=0+npq^{n-1}+\\ldots+np^n</p><p>=np\\,[q^{n-1}+\\ldots+p^{n-1}]</p><p>=np\\,[q+p]^{n-1}</p><p>=np\\,(1)^{n-1}\\qquad\\because p+q=1</p><p>=np</p><p>(ii) Variance of Binomial distribution</p><p>By definition</p><p>\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)</p><p>\\text{As } E(X)=np\\qquad(1)</p><p>\\text{Now } E(X^2)=\\Sigma x^2p(x)</p><p>=\\sum_x[x(x-1)+x]\\,p(x)\\qquad\\because x^2=x(x-1)+x</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 48,
+     "printedPages": [
+      88
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

@@ -1,0 +1,285 @@
+{
+ "pdfPage": 38,
+ "sections": [
+  {
+   "id": "cs12-u3-text-4",
+   "title": "Unit 3 text (4)",
+   "headingUrdu": "یونٹ 3 — متن (۴)",
+   "headingPashto": "۳ څپرکی — متن (۴)",
+   "paras": [
+    {
+     "text": "Its single line version will be:",
+     "urdu": "اس کا ایک لائن والا ورژن یہ ہوگا:",
+     "pashto": "د هغه یو-کرښیزه نسخه به دا وي:"
+    },
+    {
+     "text": "int main() { cout << \"Hello World!\"; return 0; }",
+     "urdu": "int main() { cout << \"Hello World!\"; return 0; }",
+     "pashto": "int main() { cout << \"Hello World!\"; return 0; }",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "3.1.4 Statement terminator (;)",
+     "urdu": "3.1.4 اسٹیٹمنٹ ٹرمینیٹر (;)",
+     "pashto": "۳.۱.۴ د بیان پای‌ټکی (;)"
+    },
+    {
+     "text": "Each C++ statement is terminated by a symbol named semicolon (;) which is called statement terminator. In C++, the separation between statements is specified with this ending semicolon (;) at the end of each statement. It does not matter to write more than one statement on a single line but matter if you do not separate them with semicolons. The use of each statement on a separate line is only to add clarity in the program.",
+     "urdu": "ہر C++ بیان سیمی کولن (;) نامی علامت سے ختم ہوتا ہے جسے اسٹیٹمنٹ ٹرمینیٹر کہتے ہیں۔ C++ میں بیانات کے درمیان علیحدگی ہر بیان کے آخر میں اس سیمی کولن (;) سے ظاہر کی جاتی ہے۔ ایک لائن پر ایک سے زیادہ بیان لکھنے سے کوئی فرق نہیں پڑتا لیکن انھیں سیمی کولنز سے الگ نہ کرنے سے فرق پڑتا ہے۔ ہر بیان کو الگ لائن پر لکھنا صرف پروگرام میں وضاحت پیدا کرنے کے لیے ہے۔",
+     "pashto": "هر C++ بیان د سیمي‌کولن (;) په نوم یوې نښې پای ته رسېږي چې د بیان پای‌ټکی بلل کېږي. په C++ کې د بیانونو ترمنځ جلاوالی د هر بیان په پای کې په دې سیمي‌کولن (;) ښودل کېږي. په یوه کرښه له یوه زیات بیانونه لیکل توپیر نه کوي، خو که یې په سیمي‌کولنونو جلا نه کړئ، توپیر کوي. په جلا کرښه د هر بیان لیکل یوازې پروګرام ته روښانتیا ورکوي."
+    },
+    {
+     "text": "3.1.5 Comments and their syntax in C++",
+     "urdu": "3.1.5 C++ میں تبصرے اور ان کا طریقۂ تحریر",
+     "pashto": "۳.۱.۵ په C++ کې تبصرې او د لیکلو بڼه یې"
+    },
+    {
+     "text": "Comments are parts of the source code ignored by the compiler. They do nothing but simply increase the readability and understandability of a program. Their purpose is only to allow the programmers to insert notes or descriptions within the source code. C++ supports two types of comments:",
+     "urdu": "تبصرے سورس کوڈ کے وہ حصے ہیں جنھیں کمپائلر نظر انداز کرتا ہے۔ یہ کچھ نہیں کرتے بلکہ صرف پروگرام کو پڑھنے اور سمجھنے میں آسانی بڑھاتے ہیں۔ ان کا مقصد صرف پروگرامرز کو سورس کوڈ کے اندر نوٹس یا وضاحتیں شامل کرنے کی اجازت دینا ہے۔ C++ دو قسم کے تبصروں کو سپورٹ کرتی ہے:",
+     "pashto": "تبصرې د سرچینې کوډ هغه برخې دي چې کمپایلر یې له پامه غورځوي. هېڅ نه کوي، یوازې د پروګرام د لوستلو او پوهېدو وړتیا زیاتوي. موخه یې یوازې دا ده چې پروګرام جوړوونکي د سرچینې کوډ دننه یادښتونه یا تشریحات ورګډ کړي. C++ د دوو ډوله تبصرو ملاتړ کوي:"
+    },
+    {
+     "text": "a. Single line comment",
+     "urdu": "a. ایک لائن کا تبصرہ",
+     "pashto": "a. یو-کرښیزه تبصره"
+    },
+    {
+     "text": "It is represented by the double slash symbol //. It discards everything from where the pair of slashes signs // is found up to the end of the same line.",
+     "urdu": "اسے دوہری سلیش علامت // سے ظاہر کیا جاتا ہے۔ یہ جہاں سلیش کا جوڑا // ملے وہاں سے اسی لائن کے آخر تک ہر چیز کو نظر انداز کر دیتا ہے۔",
+     "pashto": "دا د دوه‌ګوني سلیش نښې // په مرسته ښودل کېږي. له هغه ځایه چې د سلیشونو جوړه // پیدا شي، د همغې کرښې تر پایه هر څه پرېږدي."
+    },
+    {
+     "text": "b. Multiline comment",
+     "urdu": "b. متعدد لائنوں کا تبصرہ",
+     "pashto": "b. څو-کرښیزه تبصره"
+    },
+    {
+     "text": "These types of comments are represented by the symbols /* ....... */. It ignores everything between the /* characters and the first appearance of the */ characters, with the possibility of including more than one line.",
+     "urdu": "اس قسم کے تبصرے علامات /* ....... */ سے ظاہر کیے جاتے ہیں۔ یہ /* حروف اور */ حروف کی پہلی موجودگی کے درمیان ہر چیز کو نظر انداز کرتا ہے، اور اس میں ایک سے زیادہ لائنیں شامل ہو سکتی ہیں۔",
+     "pashto": "دا ډول تبصرې د /* ....... */ نښو په مرسته ښودل کېږي. د /* تورو او د */ تورو د لومړي راتلو ترمنځ هر څه پرېږدي، او کېدای شي له یوې زیاتې کرښې پکې شاملې وي."
+    },
+    {
+     "text": "Consider the following program to demonstrate comments.",
+     "urdu": "تبصروں کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د تبصرو د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "/* program to demonstrate comments in C++*/\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout << \"Welcome! \"; // prints Welcome!\ncout << \"I'm a C++ program demonstrating comments\";\ngetch();\nreturn 0;\n}",
+     "urdu": "/* program to demonstrate comments in C++*/\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout << \"Welcome! \"; // prints Welcome!\ncout << \"I'm a C++ program demonstrating comments\";\ngetch();\nreturn 0;\n}",
+     "pashto": "/* program to demonstrate comments in C++*/\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout << \"Welcome! \"; // prints Welcome!\ncout << \"I'm a C++ program demonstrating comments\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Welcome!\nI'm a C++ program",
+     "urdu": "Welcome!\nI'm a C++ program",
+     "pashto": "Welcome!\nI'm a C++ program",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In the above example, the first two lines are multi-line comments while the comment at line 7 is a single line comment.",
+     "urdu": "اوپر والی مثال میں پہلی دو لائنیں متعدد لائنوں والے تبصرے ہیں جبکہ لائن 7 کا تبصرہ ایک لائن کا تبصرہ ہے۔",
+     "pashto": "په پورته بېلګه کې لومړۍ دوه کرښې څو-کرښیزې تبصرې دي، په داسې حال کې چې په ۷مه کرښه کې تبصره یو-کرښیزه ده."
+    },
+    {
+     "text": "Comments are always ignored by the compiler when it compiles the program. If comments are included within the source code of your programs without using // or /*, the compiler will take them as if they were C++ expressions.",
+     "urdu": "کمپائلر پروگرام کمپائل کرتے وقت تبصروں کو ہمیشہ نظر انداز کرتا ہے۔ اگر آپ کے پروگراموں کے سورس کوڈ میں تبصرے // یا /* کے بغیر شامل کیے جائیں تو کمپائلر انھیں C++ ایکسپریشنز سمجھے گا۔",
+     "pashto": "کمپایلر د پروګرام د کمپایلولو پر وخت تبصرې تل له پامه غورځوي. که ستاسو د پروګرامونو په سرچینې کوډ کې تبصرې پرته د // یا /* کارولو ورګډې شي، کمپایلر به یې د C++ افادو په توګه ونیسي."
+    },
+    {
+     "text": "3.2 C++ Constants and Variables",
+     "urdu": "3.2 C++ کانسٹنٹس اور ویری ایبلز",
+     "pashto": "۳.۲ د C++ ثابتونه او متغیرونه"
+    },
+    {
+     "text": "Variables and constants are the important components of every programming language.",
+     "urdu": "ویری ایبلز اور کانسٹنٹس ہر پروگرامنگ زبان کے اہم اجزاء ہیں۔",
+     "pashto": "متغیرونه او ثابتونه د هرې پروګرامي ژبې مهمې برخې دي."
+    },
+    {
+     "text": "3.2.1 Constants and Variables",
+     "urdu": "3.2.1 کانسٹنٹس اور ویری ایبلز",
+     "pashto": "۳.۲.۱ ثابتونه او متغیرونه"
+    },
+    {
+     "text": "a. Constants",
+     "urdu": "a. کانسٹنٹس",
+     "pashto": "a. ثابتونه"
+    },
+    {
+     "text": "Constants are the expressions which have fixed value. Constants are generally categorized into: Literal, Boolean and Symbolic constants. They are used to express particular values within the source code of a program.",
+     "urdu": "کانسٹنٹس وہ ایکسپریشنز ہیں جن کی قدر مقررہ ہوتی ہے۔ کانسٹنٹس کو عموماً لٹرل، بولین اور علامتی کانسٹنٹس میں تقسیم کیا جاتا ہے۔ یہ کسی پروگرام کے سورس کوڈ میں مخصوص قدریں ظاہر کرنے کے لیے استعمال ہوتے ہیں۔",
+     "pashto": "ثابتونه هغه افادې دي چې ټاکلی ارزښت لري. ثابتونه عموماً په لفظي (literal)، بولي (Boolean) او سمبولیکو ثابتونو وېشل کېږي. د یوه پروګرام د سرچینې کوډ دننه د ځانګړو ارزښتونو د ښودلو لپاره کارول کېږي."
+    }
+   ],
+   "theory": "Its single line version will be:\n\nint main() { cout << \"Hello World!\"; return 0; }\n\n3.1.4 Statement terminator (;)\n\nEach C++ statement is terminated by a symbol named semicolon (;) which is called statement terminator. In C++, the separation between statements is specified with this ending semicolon (;) at the end of each statement. It does not matter to write more than one statement on a single line but matter if you do not separate them with semicolons. The use of each statement on a separate line is only to add clarity in the program.\n\n3.1.5 Comments and their syntax in C++\n\nComments are parts of the source code ignored by the compiler. They do nothing but simply increase the readability and understandability of a program. Their purpose is only to allow the programmers to insert notes or descriptions within the source code. C++ supports two types of comments:\n\na. Single line comment\n\nIt is represented by the double slash symbol //. It discards everything from where the pair of slashes signs // is found up to the end of the same line.\n\nb. Multiline comment\n\nThese types of comments are represented by the symbols /* ....... */. It ignores everything between the /* characters and the first appearance of the */ characters, with the possibility of including more than one line.\n\nConsider the following program to demonstrate comments.\n\n/* program to demonstrate comments in C++*/\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout << \"Welcome! \"; // prints Welcome!\ncout << \"I'm a C++ program demonstrating comments\";\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nWelcome!\nI'm a C++ program\n\nIn the above example, the first two lines are multi-line comments while the comment at line 7 is a single line comment.\n\nComments are always ignored by the compiler when it compiles the program. If comments are included within the source code of your programs without using // or /*, the compiler will take them as if they were C++ expressions.\n\n3.2 C++ Constants and Variables\n\nVariables and constants are the important components of every programming language.\n\n3.2.1 Constants and Variables\n\na. Constants\n\nConstants are the expressions which have fixed value. Constants are generally categorized into: Literal, Boolean and Symbolic constants. They are used to express particular values within the source code of a program.",
+   "urdu": "اس کا ایک لائن والا ورژن یہ ہوگا:\n\nint main() { cout << \"Hello World!\"; return 0; }\n\n3.1.4 اسٹیٹمنٹ ٹرمینیٹر (;)\n\nہر C++ بیان سیمی کولن (;) نامی علامت سے ختم ہوتا ہے جسے اسٹیٹمنٹ ٹرمینیٹر کہتے ہیں۔ C++ میں بیانات کے درمیان علیحدگی ہر بیان کے آخر میں اس سیمی کولن (;) سے ظاہر کی جاتی ہے۔ ایک لائن پر ایک سے زیادہ بیان لکھنے سے کوئی فرق نہیں پڑتا لیکن انھیں سیمی کولنز سے الگ نہ کرنے سے فرق پڑتا ہے۔ ہر بیان کو الگ لائن پر لکھنا صرف پروگرام میں وضاحت پیدا کرنے کے لیے ہے۔\n\n3.1.5 C++ میں تبصرے اور ان کا طریقۂ تحریر\n\nتبصرے سورس کوڈ کے وہ حصے ہیں جنھیں کمپائلر نظر انداز کرتا ہے۔ یہ کچھ نہیں کرتے بلکہ صرف پروگرام کو پڑھنے اور سمجھنے میں آسانی بڑھاتے ہیں۔ ان کا مقصد صرف پروگرامرز کو سورس کوڈ کے اندر نوٹس یا وضاحتیں شامل کرنے کی اجازت دینا ہے۔ C++ دو قسم کے تبصروں کو سپورٹ کرتی ہے:\n\na. ایک لائن کا تبصرہ\n\nاسے دوہری سلیش علامت // سے ظاہر کیا جاتا ہے۔ یہ جہاں سلیش کا جوڑا // ملے وہاں سے اسی لائن کے آخر تک ہر چیز کو نظر انداز کر دیتا ہے۔\n\nb. متعدد لائنوں کا تبصرہ\n\nاس قسم کے تبصرے علامات /* ....... */ سے ظاہر کیے جاتے ہیں۔ یہ /* حروف اور */ حروف کی پہلی موجودگی کے درمیان ہر چیز کو نظر انداز کرتا ہے، اور اس میں ایک سے زیادہ لائنیں شامل ہو سکتی ہیں۔\n\nتبصروں کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n/* program to demonstrate comments in C++*/\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout << \"Welcome! \"; // prints Welcome!\ncout << \"I'm a C++ program demonstrating comments\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome!\nI'm a C++ program\n\nاوپر والی مثال میں پہلی دو لائنیں متعدد لائنوں والے تبصرے ہیں جبکہ لائن 7 کا تبصرہ ایک لائن کا تبصرہ ہے۔\n\nکمپائلر پروگرام کمپائل کرتے وقت تبصروں کو ہمیشہ نظر انداز کرتا ہے۔ اگر آپ کے پروگراموں کے سورس کوڈ میں تبصرے // یا /* کے بغیر شامل کیے جائیں تو کمپائلر انھیں C++ ایکسپریشنز سمجھے گا۔\n\n3.2 C++ کانسٹنٹس اور ویری ایبلز\n\nویری ایبلز اور کانسٹنٹس ہر پروگرامنگ زبان کے اہم اجزاء ہیں۔\n\n3.2.1 کانسٹنٹس اور ویری ایبلز\n\na. کانسٹنٹس\n\nکانسٹنٹس وہ ایکسپریشنز ہیں جن کی قدر مقررہ ہوتی ہے۔ کانسٹنٹس کو عموماً لٹرل، بولین اور علامتی کانسٹنٹس میں تقسیم کیا جاتا ہے۔ یہ کسی پروگرام کے سورس کوڈ میں مخصوص قدریں ظاہر کرنے کے لیے استعمال ہوتے ہیں۔",
+   "pashto": "د هغه یو-کرښیزه نسخه به دا وي:\n\nint main() { cout << \"Hello World!\"; return 0; }\n\n۳.۱.۴ د بیان پای‌ټکی (;)\n\nهر C++ بیان د سیمي‌کولن (;) په نوم یوې نښې پای ته رسېږي چې د بیان پای‌ټکی بلل کېږي. په C++ کې د بیانونو ترمنځ جلاوالی د هر بیان په پای کې په دې سیمي‌کولن (;) ښودل کېږي. په یوه کرښه له یوه زیات بیانونه لیکل توپیر نه کوي، خو که یې په سیمي‌کولنونو جلا نه کړئ، توپیر کوي. په جلا کرښه د هر بیان لیکل یوازې پروګرام ته روښانتیا ورکوي.\n\n۳.۱.۵ په C++ کې تبصرې او د لیکلو بڼه یې\n\nتبصرې د سرچینې کوډ هغه برخې دي چې کمپایلر یې له پامه غورځوي. هېڅ نه کوي، یوازې د پروګرام د لوستلو او پوهېدو وړتیا زیاتوي. موخه یې یوازې دا ده چې پروګرام جوړوونکي د سرچینې کوډ دننه یادښتونه یا تشریحات ورګډ کړي. C++ د دوو ډوله تبصرو ملاتړ کوي:\n\na. یو-کرښیزه تبصره\n\nدا د دوه‌ګوني سلیش نښې // په مرسته ښودل کېږي. له هغه ځایه چې د سلیشونو جوړه // پیدا شي، د همغې کرښې تر پایه هر څه پرېږدي.\n\nb. څو-کرښیزه تبصره\n\nدا ډول تبصرې د /* ....... */ نښو په مرسته ښودل کېږي. د /* تورو او د */ تورو د لومړي راتلو ترمنځ هر څه پرېږدي، او کېدای شي له یوې زیاتې کرښې پکې شاملې وي.\n\nد تبصرو د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n/* program to demonstrate comments in C++*/\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout << \"Welcome! \"; // prints Welcome!\ncout << \"I'm a C++ program demonstrating comments\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome!\nI'm a C++ program\n\nپه پورته بېلګه کې لومړۍ دوه کرښې څو-کرښیزې تبصرې دي، په داسې حال کې چې په ۷مه کرښه کې تبصره یو-کرښیزه ده.\n\nکمپایلر د پروګرام د کمپایلولو پر وخت تبصرې تل له پامه غورځوي. که ستاسو د پروګرامونو په سرچینې کوډ کې تبصرې پرته د // یا /* کارولو ورګډې شي، کمپایلر به یې د C++ افادو په توګه ونیسي.\n\n۳.۲ د C++ ثابتونه او متغیرونه\n\nمتغیرونه او ثابتونه د هرې پروګرامي ژبې مهمې برخې دي.\n\n۳.۲.۱ ثابتونه او متغیرونه\n\na. ثابتونه\n\nثابتونه هغه افادې دي چې ټاکلی ارزښت لري. ثابتونه عموماً په لفظي (literal)، بولي (Boolean) او سمبولیکو ثابتونو وېشل کېږي. د یوه پروګرام د سرچینې کوډ دننه د ځانګړو ارزښتونو د ښودلو لپاره کارول کېږي.",
+   "theoryUrdu": "اس کا ایک لائن والا ورژن یہ ہوگا:\n\nint main() { cout << \"Hello World!\"; return 0; }\n\n3.1.4 اسٹیٹمنٹ ٹرمینیٹر (;)\n\nہر C++ بیان سیمی کولن (;) نامی علامت سے ختم ہوتا ہے جسے اسٹیٹمنٹ ٹرمینیٹر کہتے ہیں۔ C++ میں بیانات کے درمیان علیحدگی ہر بیان کے آخر میں اس سیمی کولن (;) سے ظاہر کی جاتی ہے۔ ایک لائن پر ایک سے زیادہ بیان لکھنے سے کوئی فرق نہیں پڑتا لیکن انھیں سیمی کولنز سے الگ نہ کرنے سے فرق پڑتا ہے۔ ہر بیان کو الگ لائن پر لکھنا صرف پروگرام میں وضاحت پیدا کرنے کے لیے ہے۔\n\n3.1.5 C++ میں تبصرے اور ان کا طریقۂ تحریر\n\nتبصرے سورس کوڈ کے وہ حصے ہیں جنھیں کمپائلر نظر انداز کرتا ہے۔ یہ کچھ نہیں کرتے بلکہ صرف پروگرام کو پڑھنے اور سمجھنے میں آسانی بڑھاتے ہیں۔ ان کا مقصد صرف پروگرامرز کو سورس کوڈ کے اندر نوٹس یا وضاحتیں شامل کرنے کی اجازت دینا ہے۔ C++ دو قسم کے تبصروں کو سپورٹ کرتی ہے:\n\na. ایک لائن کا تبصرہ\n\nاسے دوہری سلیش علامت // سے ظاہر کیا جاتا ہے۔ یہ جہاں سلیش کا جوڑا // ملے وہاں سے اسی لائن کے آخر تک ہر چیز کو نظر انداز کر دیتا ہے۔\n\nb. متعدد لائنوں کا تبصرہ\n\nاس قسم کے تبصرے علامات /* ....... */ سے ظاہر کیے جاتے ہیں۔ یہ /* حروف اور */ حروف کی پہلی موجودگی کے درمیان ہر چیز کو نظر انداز کرتا ہے، اور اس میں ایک سے زیادہ لائنیں شامل ہو سکتی ہیں۔\n\nتبصروں کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n/* program to demonstrate comments in C++*/\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout << \"Welcome! \"; // prints Welcome!\ncout << \"I'm a C++ program demonstrating comments\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome!\nI'm a C++ program\n\nاوپر والی مثال میں پہلی دو لائنیں متعدد لائنوں والے تبصرے ہیں جبکہ لائن 7 کا تبصرہ ایک لائن کا تبصرہ ہے۔\n\nکمپائلر پروگرام کمپائل کرتے وقت تبصروں کو ہمیشہ نظر انداز کرتا ہے۔ اگر آپ کے پروگراموں کے سورس کوڈ میں تبصرے // یا /* کے بغیر شامل کیے جائیں تو کمپائلر انھیں C++ ایکسپریشنز سمجھے گا۔\n\n3.2 C++ کانسٹنٹس اور ویری ایبلز\n\nویری ایبلز اور کانسٹنٹس ہر پروگرامنگ زبان کے اہم اجزاء ہیں۔\n\n3.2.1 کانسٹنٹس اور ویری ایبلز\n\na. کانسٹنٹس\n\nکانسٹنٹس وہ ایکسپریشنز ہیں جن کی قدر مقررہ ہوتی ہے۔ کانسٹنٹس کو عموماً لٹرل، بولین اور علامتی کانسٹنٹس میں تقسیم کیا جاتا ہے۔ یہ کسی پروگرام کے سورس کوڈ میں مخصوص قدریں ظاہر کرنے کے لیے استعمال ہوتے ہیں۔",
+   "theoryPashto": "د هغه یو-کرښیزه نسخه به دا وي:\n\nint main() { cout << \"Hello World!\"; return 0; }\n\n۳.۱.۴ د بیان پای‌ټکی (;)\n\nهر C++ بیان د سیمي‌کولن (;) په نوم یوې نښې پای ته رسېږي چې د بیان پای‌ټکی بلل کېږي. په C++ کې د بیانونو ترمنځ جلاوالی د هر بیان په پای کې په دې سیمي‌کولن (;) ښودل کېږي. په یوه کرښه له یوه زیات بیانونه لیکل توپیر نه کوي، خو که یې په سیمي‌کولنونو جلا نه کړئ، توپیر کوي. په جلا کرښه د هر بیان لیکل یوازې پروګرام ته روښانتیا ورکوي.\n\n۳.۱.۵ په C++ کې تبصرې او د لیکلو بڼه یې\n\nتبصرې د سرچینې کوډ هغه برخې دي چې کمپایلر یې له پامه غورځوي. هېڅ نه کوي، یوازې د پروګرام د لوستلو او پوهېدو وړتیا زیاتوي. موخه یې یوازې دا ده چې پروګرام جوړوونکي د سرچینې کوډ دننه یادښتونه یا تشریحات ورګډ کړي. C++ د دوو ډوله تبصرو ملاتړ کوي:\n\na. یو-کرښیزه تبصره\n\nدا د دوه‌ګوني سلیش نښې // په مرسته ښودل کېږي. له هغه ځایه چې د سلیشونو جوړه // پیدا شي، د همغې کرښې تر پایه هر څه پرېږدي.\n\nb. څو-کرښیزه تبصره\n\nدا ډول تبصرې د /* ....... */ نښو په مرسته ښودل کېږي. د /* تورو او د */ تورو د لومړي راتلو ترمنځ هر څه پرېږدي، او کېدای شي له یوې زیاتې کرښې پکې شاملې وي.\n\nد تبصرو د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n/* program to demonstrate comments in C++*/\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout << \"Welcome! \"; // prints Welcome!\ncout << \"I'm a C++ program demonstrating comments\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome!\nI'm a C++ program\n\nپه پورته بېلګه کې لومړۍ دوه کرښې څو-کرښیزې تبصرې دي، په داسې حال کې چې په ۷مه کرښه کې تبصره یو-کرښیزه ده.\n\nکمپایلر د پروګرام د کمپایلولو پر وخت تبصرې تل له پامه غورځوي. که ستاسو د پروګرامونو په سرچینې کوډ کې تبصرې پرته د // یا /* کارولو ورګډې شي، کمپایلر به یې د C++ افادو په توګه ونیسي.\n\n۳.۲ د C++ ثابتونه او متغیرونه\n\nمتغیرونه او ثابتونه د هرې پروګرامي ژبې مهمې برخې دي.\n\n۳.۲.۱ ثابتونه او متغیرونه\n\na. ثابتونه\n\nثابتونه هغه افادې دي چې ټاکلی ارزښت لري. ثابتونه عموماً په لفظي (literal)، بولي (Boolean) او سمبولیکو ثابتونو وېشل کېږي. د یوه پروګرام د سرچینې کوډ دننه د ځانګړو ارزښتونو د ښودلو لپاره کارول کېږي.",
+   "content": "<p>Its single line version will be:</p><p>int main() { cout &lt;&lt; &quot;Hello World!&quot;; return 0; }</p><p>3.1.4 Statement terminator (;)</p><p>Each C++ statement is terminated by a symbol named semicolon (;) which is called statement terminator. In C++, the separation between statements is specified with this ending semicolon (;) at the end of each statement. It does not matter to write more than one statement on a single line but matter if you do not separate them with semicolons. The use of each statement on a separate line is only to add clarity in the program.</p><p>3.1.5 Comments and their syntax in C++</p><p>Comments are parts of the source code ignored by the compiler. They do nothing but simply increase the readability and understandability of a program. Their purpose is only to allow the programmers to insert notes or descriptions within the source code. C++ supports two types of comments:</p><p>a. Single line comment</p><p>It is represented by the double slash symbol //. It discards everything from where the pair of slashes signs // is found up to the end of the same line.</p><p>b. Multiline comment</p><p>These types of comments are represented by the symbols /* ....... */. It ignores everything between the /* characters and the first appearance of the */ characters, with the possibility of including more than one line.</p><p>Consider the following program to demonstrate comments.</p><p>/* program to demonstrate comments in C++*/\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\ncout &lt;&lt; &quot;Welcome! &quot;; // prints Welcome!\ncout &lt;&lt; &quot;I&#x27;m a C++ program demonstrating comments&quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>Welcome!\nI&#x27;m a C++ program</p><p>In the above example, the first two lines are multi-line comments while the comment at line 7 is a single line comment.</p><p>Comments are always ignored by the compiler when it compiles the program. If comments are included within the source code of your programs without using // or /*, the compiler will take them as if they were C++ expressions.</p><p>3.2 C++ Constants and Variables</p><p>Variables and constants are the important components of every programming language.</p><p>3.2.1 Constants and Variables</p><p>a. Constants</p><p>Constants are the expressions which have fixed value. Constants are generally categorized into: Literal, Boolean and Symbolic constants. They are used to express particular values within the source code of a program.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 38,
+     "printedPages": [
+      64,
+      65
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (4)",
+   "sourcePageLabel": "PDF 38 · p. 64–65",
+   "sourceNote": "The first three lines of p.64 complete the listing recorded with PDF37.",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf038",
+   "unit": 3,
+   "printedPage": 65,
+   "description": "p.65 says the comment “at line 7” is single-line but in the listing as printed it is on line 7 counting from the first comment line (retained). The output shown omits “demonstrating comments” (printed “I’m a C++ program”) — retained as printed. p.64 “pair of slashes signs”, “does not matter … but matter if”. Section number printed “3.2.”"
+  }
+ ],
+ "completeUnits": []
+}

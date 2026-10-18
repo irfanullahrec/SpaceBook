@@ -1,0 +1,165 @@
+{
+ "pdfPage": 77,
+ "sections": [
+  {
+   "id": "cs12-u4-exercise-3",
+   "title": "Unit 4 exercise (3)",
+   "headingUrdu": "یونٹ 4: مشق (۳)",
+   "headingPashto": "۴ څپرکی: تمرین (۳)",
+   "paras": [
+    {
+     "text": "Q.3 Write TRUE/FALSE against the following statements.",
+     "urdu": "سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔",
+     "pashto": "پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ."
+    },
+    {
+     "text": "i. Decision-making structures cannot be nested.",
+     "urdu": "i. فیصلہ سازی کی ساختیں نیسٹ نہیں کی جا سکتیں۔",
+     "pashto": "i. پرېکړه‌ییز جوړښتونه ځالې کېدای نه شي."
+    },
+    {
+     "text": "ii. Body of do while loop is executed at least once if the condition is false.",
+     "urdu": "ii. شرط غلط ہو تو بھی do while لوپ کا جسم کم از کم ایک بار چلتا ہے۔",
+     "pashto": "ii. که شرط false وي، د do while حلقې بدنه لږ تر لږه یو ځل اجرا کېږي."
+    },
+    {
+     "text": "iii. When for statement begins executing, at the same time the initialization expression is also executed?",
+     "urdu": "iii. جب for بیان چلنا شروع ہوتا ہے تو اسی وقت ابتدائی قدر کا ایکسپریشن بھی چلتا ہے؟",
+     "pashto": "iii. کله چې for بیان اجرا پیل کړي، په همغه وخت د لومړني ارزښت افاده هم اجرا کېږي؟"
+    },
+    {
+     "text": "iv. switch statement is a better alternative of nested if-else structure.",
+     "urdu": "iv. switch بیان نیسٹڈ if-else ساخت کا بہتر متبادل ہے۔",
+     "pashto": "iv. switch بیان د ځالې if-else جوړښت ښه بدیل دی."
+    },
+    {
+     "text": "v. Syntax of if-else statement is:",
+     "urdu": "v. if-else بیان کا طریقۂ تحریر یہ ہے:",
+     "pashto": "v. د if-else بیان بڼه دا ده:"
+    },
+    {
+     "text": "else {\n}\nif (condition) {\n}",
+     "urdu": "else {\n}\nif (condition) {\n}",
+     "pashto": "else {\n}\nif (condition) {\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Q.4 Write a C++ program that takes two integers and a chararacter representing one of the following mathematical operations: +, -, /, or *. Use a switch statement to perform the appropriate mathematical operation on the integers, and display the result. If an invalid operator is entered then “Error” message should be displayed and the program should exit (use the exit() function).",
+     "urdu": "Q.4 ایک C++ پروگرام لکھیں جو دو صحیح اعداد اور درج ذیل ریاضی کے اعمال میں سے کسی ایک کو ظاہر کرنے والا حرف لے: +، -، / یا *۔ صحیح اعداد پر مناسب عمل کرنے کے لیے switch بیان استعمال کریں اور نتیجہ دکھائیں۔ اگر غلط آپریٹر داخل کیا جائے تو ’’Error‘‘ پیغام دکھایا جائے اور پروگرام بند ہو جائے (exit() فنکشن استعمال کریں)۔",
+     "pashto": "Q.4 یو C++ پروګرام ولیکئ چې دوه صحیح عددونه او یو توری واخلي چې له لاندې ریاضي عملیو یوه ښيي: +، -، / یا *. پر صحیح عددونو د مناسبې عملیې لپاره switch بیان وکاروئ او پایله وښایاست. که ناسم چلونکی ولیکل شي، \"Error\" پیغام دې وښودل شي او پروګرام دې ووځي (exit() فنکشن وکاروئ)."
+    },
+    {
+     "text": "Q.5 Write a program using for loop that prints even numbers from 0 to 20.",
+     "urdu": "Q.5 for لوپ کے ذریعے 0 سے 20 تک کے جفت اعداد پرنٹ کرنے کا پروگرام لکھیں۔",
+     "pashto": "Q.5 د for حلقې په مرسته له 0 تر 20 جفت عددونه چاپولو پروګرام ولیکئ."
+    },
+    {
+     "text": "Q.6 Write a program using while loop that takes an integer for a variable nValue, and returns the sum of all the numbers from 1 to nValue. Hint: For example, nValue=5 should return 15, which is 1 + 2 + 3 + 4 + 5.",
+     "urdu": "Q.6 while لوپ کے ذریعے ایسا پروگرام لکھیں جو ویری ایبل nValue کے لیے صحیح عدد لے اور 1 سے nValue تک کے تمام اعداد کا مجموعہ واپس کرے۔ اشارہ: مثلاً nValue=5 پر 15 واپس آنا چاہیے، یعنی 1 + 2 + 3 + 4 + 5۔",
+     "pashto": "Q.6 د while حلقې په مرسته پروګرام ولیکئ چې د nValue متغیر لپاره صحیح عدد واخلي او له 1 تر nValue د ټولو عددونو مجموعه ورکړي. اشاره: د بېلګې په توګه nValue=5 باید 15 ورکړي، یعنې 1 + 2 + 3 + 4 + 5."
+    },
+    {
+     "text": "Q.7 What is wrong with the following for loop?",
+     "urdu": "Q.7 درج ذیل for لوپ میں کیا غلطی ہے؟",
+     "pashto": "Q.7 په لاندې for حلقه کې څه ستونزه ده؟"
+    },
+    {
+     "text": "// Print all numbers from 9 to 0\nfor (unsigned int nCount = 9; nCount >= 0; nCount--)\ncout << nCount << \" \";",
+     "urdu": "// Print all numbers from 9 to 0\nfor (unsigned int nCount = 9; nCount >= 0; nCount--)\ncout << nCount << \" \";",
+     "pashto": "// Print all numbers from 9 to 0\nfor (unsigned int nCount = 9; nCount >= 0; nCount--)\ncout << nCount << \" \";",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Q.3 Write TRUE/FALSE against the following statements.\n\ni. Decision-making structures cannot be nested.\n\nii. Body of do while loop is executed at least once if the condition is false.\n\niii. When for statement begins executing, at the same time the initialization expression is also executed?\n\niv. switch statement is a better alternative of nested if-else structure.\n\nv. Syntax of if-else statement is:\n\nelse {\n}\nif (condition) {\n}\n\nQ.4 Write a C++ program that takes two integers and a chararacter representing one of the following mathematical operations: +, -, /, or *. Use a switch statement to perform the appropriate mathematical operation on the integers, and display the result. If an invalid operator is entered then “Error” message should be displayed and the program should exit (use the exit() function).\n\nQ.5 Write a program using for loop that prints even numbers from 0 to 20.\n\nQ.6 Write a program using while loop that takes an integer for a variable nValue, and returns the sum of all the numbers from 1 to nValue. Hint: For example, nValue=5 should return 15, which is 1 + 2 + 3 + 4 + 5.\n\nQ.7 What is wrong with the following for loop?\n\n// Print all numbers from 9 to 0\nfor (unsigned int nCount = 9; nCount >= 0; nCount--)\ncout << nCount << \" \";",
+   "urdu": "سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔\n\ni. فیصلہ سازی کی ساختیں نیسٹ نہیں کی جا سکتیں۔\n\nii. شرط غلط ہو تو بھی do while لوپ کا جسم کم از کم ایک بار چلتا ہے۔\n\niii. جب for بیان چلنا شروع ہوتا ہے تو اسی وقت ابتدائی قدر کا ایکسپریشن بھی چلتا ہے؟\n\niv. switch بیان نیسٹڈ if-else ساخت کا بہتر متبادل ہے۔\n\nv. if-else بیان کا طریقۂ تحریر یہ ہے:\n\nelse {\n}\nif (condition) {\n}\n\nQ.4 ایک C++ پروگرام لکھیں جو دو صحیح اعداد اور درج ذیل ریاضی کے اعمال میں سے کسی ایک کو ظاہر کرنے والا حرف لے: +، -، / یا *۔ صحیح اعداد پر مناسب عمل کرنے کے لیے switch بیان استعمال کریں اور نتیجہ دکھائیں۔ اگر غلط آپریٹر داخل کیا جائے تو ’’Error‘‘ پیغام دکھایا جائے اور پروگرام بند ہو جائے (exit() فنکشن استعمال کریں)۔\n\nQ.5 for لوپ کے ذریعے 0 سے 20 تک کے جفت اعداد پرنٹ کرنے کا پروگرام لکھیں۔\n\nQ.6 while لوپ کے ذریعے ایسا پروگرام لکھیں جو ویری ایبل nValue کے لیے صحیح عدد لے اور 1 سے nValue تک کے تمام اعداد کا مجموعہ واپس کرے۔ اشارہ: مثلاً nValue=5 پر 15 واپس آنا چاہیے، یعنی 1 + 2 + 3 + 4 + 5۔\n\nQ.7 درج ذیل for لوپ میں کیا غلطی ہے؟\n\n// Print all numbers from 9 to 0\nfor (unsigned int nCount = 9; nCount >= 0; nCount--)\ncout << nCount << \" \";",
+   "pashto": "پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.\n\ni. پرېکړه‌ییز جوړښتونه ځالې کېدای نه شي.\n\nii. که شرط false وي، د do while حلقې بدنه لږ تر لږه یو ځل اجرا کېږي.\n\niii. کله چې for بیان اجرا پیل کړي، په همغه وخت د لومړني ارزښت افاده هم اجرا کېږي؟\n\niv. switch بیان د ځالې if-else جوړښت ښه بدیل دی.\n\nv. د if-else بیان بڼه دا ده:\n\nelse {\n}\nif (condition) {\n}\n\nQ.4 یو C++ پروګرام ولیکئ چې دوه صحیح عددونه او یو توری واخلي چې له لاندې ریاضي عملیو یوه ښيي: +، -، / یا *. پر صحیح عددونو د مناسبې عملیې لپاره switch بیان وکاروئ او پایله وښایاست. که ناسم چلونکی ولیکل شي، \"Error\" پیغام دې وښودل شي او پروګرام دې ووځي (exit() فنکشن وکاروئ).\n\nQ.5 د for حلقې په مرسته له 0 تر 20 جفت عددونه چاپولو پروګرام ولیکئ.\n\nQ.6 د while حلقې په مرسته پروګرام ولیکئ چې د nValue متغیر لپاره صحیح عدد واخلي او له 1 تر nValue د ټولو عددونو مجموعه ورکړي. اشاره: د بېلګې په توګه nValue=5 باید 15 ورکړي، یعنې 1 + 2 + 3 + 4 + 5.\n\nQ.7 په لاندې for حلقه کې څه ستونزه ده؟\n\n// Print all numbers from 9 to 0\nfor (unsigned int nCount = 9; nCount >= 0; nCount--)\ncout << nCount << \" \";",
+   "theoryUrdu": "سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔\n\ni. فیصلہ سازی کی ساختیں نیسٹ نہیں کی جا سکتیں۔\n\nii. شرط غلط ہو تو بھی do while لوپ کا جسم کم از کم ایک بار چلتا ہے۔\n\niii. جب for بیان چلنا شروع ہوتا ہے تو اسی وقت ابتدائی قدر کا ایکسپریشن بھی چلتا ہے؟\n\niv. switch بیان نیسٹڈ if-else ساخت کا بہتر متبادل ہے۔\n\nv. if-else بیان کا طریقۂ تحریر یہ ہے:\n\nelse {\n}\nif (condition) {\n}\n\nQ.4 ایک C++ پروگرام لکھیں جو دو صحیح اعداد اور درج ذیل ریاضی کے اعمال میں سے کسی ایک کو ظاہر کرنے والا حرف لے: +، -، / یا *۔ صحیح اعداد پر مناسب عمل کرنے کے لیے switch بیان استعمال کریں اور نتیجہ دکھائیں۔ اگر غلط آپریٹر داخل کیا جائے تو ’’Error‘‘ پیغام دکھایا جائے اور پروگرام بند ہو جائے (exit() فنکشن استعمال کریں)۔\n\nQ.5 for لوپ کے ذریعے 0 سے 20 تک کے جفت اعداد پرنٹ کرنے کا پروگرام لکھیں۔\n\nQ.6 while لوپ کے ذریعے ایسا پروگرام لکھیں جو ویری ایبل nValue کے لیے صحیح عدد لے اور 1 سے nValue تک کے تمام اعداد کا مجموعہ واپس کرے۔ اشارہ: مثلاً nValue=5 پر 15 واپس آنا چاہیے، یعنی 1 + 2 + 3 + 4 + 5۔\n\nQ.7 درج ذیل for لوپ میں کیا غلطی ہے؟\n\n// Print all numbers from 9 to 0\nfor (unsigned int nCount = 9; nCount >= 0; nCount--)\ncout << nCount << \" \";",
+   "theoryPashto": "پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.\n\ni. پرېکړه‌ییز جوړښتونه ځالې کېدای نه شي.\n\nii. که شرط false وي، د do while حلقې بدنه لږ تر لږه یو ځل اجرا کېږي.\n\niii. کله چې for بیان اجرا پیل کړي، په همغه وخت د لومړني ارزښت افاده هم اجرا کېږي؟\n\niv. switch بیان د ځالې if-else جوړښت ښه بدیل دی.\n\nv. د if-else بیان بڼه دا ده:\n\nelse {\n}\nif (condition) {\n}\n\nQ.4 یو C++ پروګرام ولیکئ چې دوه صحیح عددونه او یو توری واخلي چې له لاندې ریاضي عملیو یوه ښيي: +، -، / یا *. پر صحیح عددونو د مناسبې عملیې لپاره switch بیان وکاروئ او پایله وښایاست. که ناسم چلونکی ولیکل شي، \"Error\" پیغام دې وښودل شي او پروګرام دې ووځي (exit() فنکشن وکاروئ).\n\nQ.5 د for حلقې په مرسته له 0 تر 20 جفت عددونه چاپولو پروګرام ولیکئ.\n\nQ.6 د while حلقې په مرسته پروګرام ولیکئ چې د nValue متغیر لپاره صحیح عدد واخلي او له 1 تر nValue د ټولو عددونو مجموعه ورکړي. اشاره: د بېلګې په توګه nValue=5 باید 15 ورکړي، یعنې 1 + 2 + 3 + 4 + 5.\n\nQ.7 په لاندې for حلقه کې څه ستونزه ده؟\n\n// Print all numbers from 9 to 0\nfor (unsigned int nCount = 9; nCount >= 0; nCount--)\ncout << nCount << \" \";",
+   "content": "<p>Q.3 Write TRUE/FALSE against the following statements.</p><p>i. Decision-making structures cannot be nested.</p><p>ii. Body of do while loop is executed at least once if the condition is false.</p><p>iii. When for statement begins executing, at the same time the initialization expression is also executed?</p><p>iv. switch statement is a better alternative of nested if-else structure.</p><p>v. Syntax of if-else statement is:</p><p>else {\n}\nif (condition) {\n}</p><p>Q.4 Write a C++ program that takes two integers and a chararacter representing one of the following mathematical operations: +, -, /, or *. Use a switch statement to perform the appropriate mathematical operation on the integers, and display the result. If an invalid operator is entered then “Error” message should be displayed and the program should exit (use the exit() function).</p><p>Q.5 Write a program using for loop that prints even numbers from 0 to 20.</p><p>Q.6 Write a program using while loop that takes an integer for a variable nValue, and returns the sum of all the numbers from 1 to nValue. Hint: For example, nValue=5 should return 15, which is 1 + 2 + 3 + 4 + 5.</p><p>Q.7 What is wrong with the following for loop?</p><p>// Print all numbers from 9 to 0\nfor (unsigned int nCount = 9; nCount &gt;= 0; nCount--)\ncout &lt;&lt; nCount &lt;&lt; &quot; &quot;;</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 77,
+     "printedPages": [
+      142,
+      143
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 exercise (3)",
+   "sourcePageLabel": "PDF 77 · p. 142–143",
+   "sourceNote": "The top of p.142 (Q2 vii options–ix) is recorded with PDF76.",
+   "unit": 4
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf077",
+   "unit": 4,
+   "printedPage": 143,
+   "description": "Q4 prints “chararacter”; Q3(iii) ends with “?”; Q3(v) gives the if-else syntax in reversed order (else before if) as a TRUE/FALSE item. Retained as printed. Owner handwritten solution for Q6 in the margin of p.143 excluded."
+  }
+ ],
+ "completeUnits": []
+}

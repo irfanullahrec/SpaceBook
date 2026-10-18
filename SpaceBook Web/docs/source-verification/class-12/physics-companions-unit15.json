@@ -1,0 +1,813 @@
+{
+  "formulas": [
+    {
+      "id": "phys15-instantaneous-ac-voltage-15-1",
+      "name": "Instantaneous sinusoidal A.C. voltage",
+      "number": "15.1",
+      "formula": "V = Vₘ sin ωt",
+      "latex": "V=V_m\\sin(\\omega t)",
+      "sourceReferences": [
+        {
+          "pdfPage": 85,
+          "printedPage": 158,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-sinusoidal-current-15-2",
+      "name": "Instantaneous sinusoidal current",
+      "number": "15.2",
+      "formula": "I = Iₘ sin ωt",
+      "latex": "I=I_m\\sin(\\omega t)",
+      "sourceReferences": [
+        {
+          "pdfPage": 86,
+          "printedPage": 161,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-average-resistive-ac-power-15-4",
+      "name": "Average power in a resistor on sinusoidal A.C.",
+      "number": "15.4",
+      "formula": "P = 1/2 Iₘ²R",
+      "latex": "P=\\frac12 I_m^2R",
+      "sourceReferences": [
+        {
+          "pdfPage": 86,
+          "printedPage": 161,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-rms-current-15-6",
+      "name": "RMS current from peak current",
+      "number": "15.6",
+      "formula": "Iᵣₘₛ = 0.707 Iₘ",
+      "latex": "I_{rms}=I_m/\\sqrt2",
+      "sourceReferences": [
+        {
+          "pdfPage": 86,
+          "printedPage": 161,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-rms-voltage-15-7",
+      "name": "RMS voltage from peak voltage",
+      "number": "15.7",
+      "formula": "Vᵣₘₛ = 0.707 Vₘ",
+      "latex": "V_{rms}=V_m/\\sqrt2",
+      "sourceReferences": [
+        {
+          "pdfPage": 87,
+          "printedPage": 162,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-sinusoidal-current-phase-form",
+      "name": "Instantaneous sinusoidal current",
+      "number": "(i)",
+      "formula": "I = Iₘ sin ωt",
+      "latex": "I=I_m\\sin(\\omega t)",
+      "sourceReferences": [
+        {
+          "pdfPage": 87,
+          "printedPage": 163,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-phase-difference-voltage-ii",
+      "name": "Voltage with phase difference φ",
+      "number": "(ii)",
+      "formula": "V = Vₘ sin(ωt − φ)",
+      "latex": "V=V_m\\sin(\\omega t-\\phi)",
+      "sourceReferences": [
+        {
+          "pdfPage": 88,
+          "printedPage": 164,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-resistor-ac-rms-voltage-current-15-9",
+      "name": "RMS voltage-current relation for a resistor",
+      "number": "15.9",
+      "formula": "Vᵣₘₛ = IᵣₘₛR",
+      "latex": "V_{rms}=I_{rms}R",
+      "sourceReferences": [
+        {
+          "pdfPage": 88,
+          "printedPage": 165,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-average-ac-resistor-power-15-10-15-11",
+      "name": "Average power in a pure resistor on A.C.",
+      "number": "15.10–15.11",
+      "formula": "P = 1/2 VₘIₘ = VᵣₘₛIᵣₘₛ",
+      "latex": "P=\\frac{V_mI_m}{2}=V_{rms}I_{rms}",
+      "sourceReferences": [
+        {
+          "pdfPage": 89,
+          "printedPage": 166,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-inductive-reactance-15-12-15-13",
+      "name": "Inductive reactance",
+      "number": "15.12–15.13",
+      "formula": "Xₗ = ωL = 2πfL",
+      "latex": "X_L=\\omega L=2\\pi fL",
+      "sourceReferences": [
+        {
+          "pdfPage": 90,
+          "printedPage": 169,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-pure-inductor-average-power-zero",
+      "name": "Average power in an ideal inductor",
+      "formula": "Pavg = 0",
+      "latex": "P_{avg}=0",
+      "sourceReferences": [
+        {
+          "pdfPage": 91,
+          "printedPage": 170,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-inductor-reactance-example152",
+      "name": "Example 15.2 inductive reactance and inductance",
+      "formula": "Xₗ=11 Ω; L=0.035 H; P=0",
+      "latex": "X_L=11\\,\\Omega; L=0.035\\,H",
+      "sourceReferences": [
+        {
+          "pdfPage": 91,
+          "printedPage": 171,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-capacitor-current-15-14-15-15",
+      "name": "Current through a capacitor on sinusoidal A.C.",
+      "number": "15.14–15.15",
+      "formula": "Iₘ = ωCVₘ; I = Iₘ sin(ωt + π/2)",
+      "latex": "I_m=\\omega CV_m; I=I_m\\sin(\\omega t+\\pi/2)",
+      "sourceReferences": [
+        {
+          "pdfPage": 92,
+          "printedPage": 173,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-capacitive-reactance-15-16-15-17",
+      "name": "Capacitive reactance",
+      "number": "15.16–15.17",
+      "formula": "Xc = Vc/I = 1/(ωC) = 1/(2πfC)",
+      "latex": "X_C=V_C/I=1/(\\omega C)=1/(2\\pi fC)",
+      "sourceReferences": [
+        {
+          "pdfPage": 93,
+          "printedPage": 174,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-capacitor-average-power-zero",
+      "name": "Average power in an ideal capacitor",
+      "number": "15.9.1",
+      "formula": "Pavg = 0",
+      "latex": "P_{avg}=0",
+      "sourceReferences": [
+        {
+          "pdfPage": 93,
+          "printedPage": 174,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-rl-impedance-15-18-15-21",
+      "name": "R–L series circuit impedance",
+      "number": "15.18–15.21",
+      "formula": "V²=V_R²+V_L²; Z=√(R²+X_L²); I=V/Z",
+      "latex": "V^2=V_R^2+V_L^2; Z=\\sqrt{R^2+X_L^2}; I=V/Z",
+      "sourceReferences": [
+        {
+          "pdfPage": 94,
+          "printedPage": 176,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-rl-phase-power-15-22-15-23",
+      "name": "R–L phase angle and average power",
+      "number": "15.22–15.23",
+      "formula": "tanφ=X_L/R; P=VI cosφ",
+      "latex": "\\tan\\phi=X_L/R; P=VI\\cos\\phi",
+      "sourceReferences": [
+        {
+          "pdfPage": 94,
+          "printedPage": 177,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-rc-impedance-15-24-15-26",
+      "name": "R–C series circuit impedance",
+      "number": "15.24–15.26",
+      "formula": "V²=V_R²+V_C²; Z=√(R²+X_C²); I=V/Z",
+      "latex": "V^2=V_R^2+V_C^2; Z=\\sqrt{R^2+X_C^2}; I=V/Z",
+      "sourceReferences": [
+        {
+          "pdfPage": 95,
+          "printedPage": 179,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-rc-phase-power-15-27",
+      "name": "R–C series phase angle and power",
+      "number": "15.27",
+      "formula": "tanφ = −X_C/R; Pavg = VI cosφ",
+      "latex": "\\tan\\phi=-X_C/R; P_{avg}=VI\\cos\\phi",
+      "sourceReferences": [
+        {
+          "pdfPage": 96,
+          "printedPage": 180,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-rlc-impedance-phase-15-28-15-31",
+      "name": "R–L–C series impedance, power factor and phase",
+      "number": "15.28–15.31",
+      "formula": "Z=√[R²+(X_L−X_C)²]; cosφ=R/Z; tanφ=(X_L−X_C)/R",
+      "latex": "Z=\\sqrt{R^2+(X_L-X_C)^2}; \\cos\\phi=R/Z; \\tan\\phi=(X_L-X_C)/R",
+      "sourceReferences": [
+        {
+          "pdfPage": 97,
+          "printedPage": 182,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 97,
+          "printedPage": 183,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-series-resonant-frequency-15-32-15-33",
+      "name": "Series resonance and resonant frequency",
+      "number": "15.32–15.33",
+      "formula": "X_L=X_C; f_r=1/(2π√LC)",
+      "latex": "X_L=X_C; f_r=1/(2\\pi\\sqrt{LC})",
+      "sourceReferences": [
+        {
+          "pdfPage": 97,
+          "printedPage": 183,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-resonance-frequency-15-32-15-33",
+      "name": "R–L–C resonance condition and frequency",
+      "number": "15.32–15.33",
+      "formula": "X_L=X_C; f_r=1/(2π√LC)",
+      "latex": "X_L=X_C; f_r=1/(2\\pi\\sqrt{LC})",
+      "sourceReferences": [
+        {
+          "pdfPage": 98,
+          "printedPage": 185,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-maximum-power-transfer",
+      "name": "Maximum power transfer condition",
+      "formula": "R_L=R_s (matched source and load resistance)",
+      "latex": "R_L=R_s",
+      "sourceReferences": [
+        {
+          "pdfPage": 99,
+          "printedPage": 187,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-maxwell-faraday-emf-15-34-15-37",
+      "name": "Induced emf and electric field from changing magnetic flux",
+      "number": "15.34–15.37",
+      "formula": "ε=AΔB/Δt=2πrE; E=AΔB/(2πrΔt)",
+      "latex": "\\varepsilon=A\\Delta B/\\Delta t=2\\pi rE; E=A\\Delta B/(2\\pi r\\Delta t)",
+      "sourceReferences": [
+        {
+          "pdfPage": 100,
+          "printedPage": 188,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 100,
+          "printedPage": 189,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-capacitor-electric-field-15-38",
+      "name": "Capacitor charge and electric field",
+      "number": "15.38",
+      "formula": "Q=CV=ε₀AE; E=V/d",
+      "latex": "Q=CV=\\varepsilon_0AE; E=V/d",
+      "sourceReferences": [
+        {
+          "pdfPage": 100,
+          "printedPage": 189,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-displacement-current-15-39-15-42",
+      "name": "Displacement current and magnetic field from changing electric flux",
+      "number": "15.39–15.42",
+      "formula": "I=ε₀ΔΦ_E/Δt; B=μ₀nI",
+      "latex": "I=\\varepsilon_0\\Delta\\Phi_E/\\Delta t; B=\\mu_0nI",
+      "sourceReferences": [
+        {
+          "pdfPage": 101,
+          "printedPage": 190,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-speed-of-light-15-43",
+      "name": "Electromagnetic wave speed",
+      "number": "15.43",
+      "formula": "c=1/√(ε₀μ₀)=3×10⁸ m s⁻¹",
+      "latex": "c=1/\\sqrt{\\varepsilon_0\\mu_0}",
+      "sourceReferences": [
+        {
+          "pdfPage": 101,
+          "printedPage": 190,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 101,
+          "printedPage": 191,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Cycle",
+      "definition": "CYCLE — One complete set of positive and negative values of an alternating quantity is a cycle. One cycle of alternating voltage corresponds to 360° or 2π radians.",
+      "sourceReferences": [
+        {
+          "pdfPage": 85,
+          "printedPage": 159,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Time period",
+      "definition": "TIME PERIOD — The time in seconds to complete one cycle of an alternating quantity is its time period, generally represented by T.",
+      "sourceReferences": [
+        {
+          "pdfPage": 85,
+          "printedPage": 159,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Frequency",
+      "definition": "FREQUENCY — The number of cycles per second is frequency f, measured in cycles per second or hertz (Hz). Pakistan’s power-system frequency is 50 Hz, meaning alternating voltage or current completes 50 cycles each second.",
+      "sourceReferences": [
+        {
+          "pdfPage": 85,
+          "printedPage": 159,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Instantaneous value",
+      "definition": "INSTANTANEOUS VALUE — The value of an alternating quantity at any instant is its instantaneous value. Instantaneous alternating voltage and current are represented by V and I, respectively.",
+      "sourceReferences": [
+        {
+          "pdfPage": 85,
+          "printedPage": 159,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Peak value",
+      "definition": "PEAK VALUE — The maximum value attained by an A.C. waveform is its peak value, also called maximum value or amplitude. Peak alternating voltage and current are represented by Vₘ and Iₘ, respectively.",
+      "sourceReferences": [
+        {
+          "pdfPage": 86,
+          "printedPage": 160,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Average value",
+      "definition": "AVERAGE VALUE — The average of all waveform values over a period of time. For an interval, add the values and divide by the time; treat area above the time axis as positive and area below as negative, using algebraic signs for total net area. Average value of A.C. = total net area under the curve for time T / time T.",
+      "sourceReferences": [
+        {
+          "pdfPage": 86,
+          "printedPage": 160,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "RMS or effective value",
+      "definition": "R.M.S. OR EFFECTIVE VALUE — The r.m.s. value of an alternating current is the steady D.C. current that produces the same heat in a resistor as the alternating current does in the same resistance for the same time. The r.m.s. or effective value is used to express the magnitude of alternating current or voltage.",
+      "sourceReferences": [
+        {
+          "pdfPage": 86,
+          "printedPage": 160,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Phase",
+      "definition": "The phase of a particular amplitude is the fraction of a time period or cycle through which the quantity has progressed from a selected zero reference. “Phasor” is short for phase vector; it represents a sine or cosine function graphically.",
+      "sourceReferences": [
+        {
+          "pdfPage": 87,
+          "printedPage": 162,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Phase difference",
+      "definition": "PHASE DIFFERENCE — Two or more A.C. voltages or currents may have waveforms that are not synchronized: their peaks and zero points do not coincide at the same times. When two alternating quantities of the same frequency have different zero points, they have a phase difference. The quantity that crosses zero earlier is leading; the other is lagging. The text next compares I and V waves with the same amplitude and frequency but different phase.",
+      "sourceReferences": [
+        {
+          "pdfPage": 87,
+          "printedPage": 163,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "phys15-example151-resistive-ac",
+      "title": "Example 15.1 — pure resistive A.C. circuit",
+      "question": "EXAMPLE 15.1 — A pure 20 Ω resistance is connected across a 220 V, 50 Hz A.C. supply. Calculate (a) current, (b) power consumed, and (c) equations for voltage and current. GIVEN: f = 50 Hz, R = 20 Ω, V = 220 V. REQUIRED: I, P and voltage/current equations.",
+      "given": "f = 50 Hz; R = 20 Ω; V = 220 V",
+      "solution": "SOLUTION — Vₘ = √2V = √2 × 220 = 311.1 V. (a) I = V/R = 220/20 = 11 A. (b) Average power P = VI = 220 × 11 = 2420 W. Iₘ = √2I = 15.55 A and ω = 2πf = 314 rad s⁻¹. (c) V = 311.1 sin(314t) and I = 15.55 sin(314t).",
+      "answer": "I = 11 A; P = 2420 W; V = 311.1 sin(314t) V; I = 15.55 sin(314t) A",
+      "sourceReferences": [
+        {
+          "pdfPage": 89,
+          "printedPage": 166,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 89,
+          "printedPage": 167,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-example152-pure-inductor",
+      "title": "Example 15.2 — pure inductive coil",
+      "question": "EXAMPLE 15.2 — A pure inductive coil draws 20 A from a 220 V, 50 Hz supply. Find (1) inductive reactance, (2) coil inductance, (3) power absorbed, and the voltage/current equations. GIVEN: I = 20 A, V = 220 V, f = 50 Hz.",
+      "given": "I = 20 A; V = 220 V; f = 50 Hz",
+      "solution": "SOLUTION — Xₗ = V/I = 220/20 = 11 Ω. Since Xₗ = 2πfL, L = Xₗ/(2πf) = 11/(2π × 50) = 0.035 H. Power absorbed P = 0. Vₘ = 220√2 = 311.1 V; Iₘ = 20√2 = 28.28 A; ω = 2π × 50 = 314 rad s⁻¹. In a pure inductive circuit current lags voltage by π/2: V = 311.1 sin(314t) V; I = 28.28 sin(314t − π/2) A.",
+      "answer": "Xₗ = 11 Ω; L = 0.035 H; P = 0 W; V = 311.1 sin(314t) V; I = 28.28 sin(314t − π/2) A",
+      "sourceReferences": [
+        {
+          "pdfPage": 91,
+          "printedPage": 171,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-example153-inductor-voltage",
+      "title": "Example 15.3 — voltage across an inductor",
+      "question": "EXAMPLE 15.3 GIVEN — Inductance L = 60 mH; current I = 0.2 sin(377t − 25°) A. REQUIRED — Write the mathematical expression for voltage V across the inductor. SOLUTION — Xₗ = 2πfL = 377 × 60 × 10⁻³ = 22.62 Ω. Vₘ = IₘXₗ = 0.2 × 22.62 = 4.5 V. Voltage leads current by 90°, so add 90° to its phase: V = Vₘ sin(377t − 25° + 90°) = 4.5 sin(377t + 65°) V.",
+      "given": "L = 60 mH; I = 0.2 sin(377t − 25°) A",
+      "solution": "EXAMPLE 15.3 GIVEN — Inductance L = 60 mH; current I = 0.2 sin(377t − 25°) A. REQUIRED — Write the mathematical expression for voltage V across the inductor. SOLUTION — Xₗ = 2πfL = 377 × 60 × 10⁻³ = 22.62 Ω. Vₘ = IₘXₗ = 0.2 × 22.62 = 4.5 V. Voltage leads current by 90°, so add 90° to its phase: V = Vₘ sin(377t − 25° + 90°) = 4.5 sin(377t + 65°) V.",
+      "answer": "V = 4.5 sin(377t + 65°) V",
+      "sourceReferences": [
+        {
+          "pdfPage": 92,
+          "printedPage": 172,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-example154-capacitor",
+      "title": "Example 15.4 — capacitor across 220 V, 50 Hz",
+      "question": "EXAMPLE 15.4 — A 318 μF capacitor is connected across a 220 V, 50 Hz supply. Find (1) capacitive reactance, (2) r.m.s. current, and the equations for voltage and current. GIVEN: C = 318 μF = 318 × 10⁻⁶ F; f = 50 Hz; V = 220 V. SOLUTION: Xc = 1/(2πfC) = 1/[2π × 50 × (318 × 10⁻⁶)] = 10.26 Ω. I = V/Xc = 220/10.26 = 21.44 A. Vm = 220√2 = 311.1 V; Im = 21.44√2 = 30.32 A; ω = 2π × 50 = 314 (source prints unit Hz). Thus V = 311.1 sin314t V and, since current leads voltage by 90°, I = 30.32 sin(314t + π/2) A.",
+      "given": "C = 318 μF; f = 50 Hz; V = 220 V",
+      "solution": "EXAMPLE 15.4 — A 318 μF capacitor is connected across a 220 V, 50 Hz supply. Find (1) capacitive reactance, (2) r.m.s. current, and the equations for voltage and current. GIVEN: C = 318 μF = 318 × 10⁻⁶ F; f = 50 Hz; V = 220 V. SOLUTION: Xc = 1/(2πfC) = 1/[2π × 50 × (318 × 10⁻⁶)] = 10.26 Ω. I = V/Xc = 220/10.26 = 21.44 A. Vm = 220√2 = 311.1 V; Im = 21.44√2 = 30.32 A; ω = 2π × 50 = 314 (source prints unit Hz). Thus V = 311.1 sin314t V and, since current leads voltage by 90°, I = 30.32 sin(314t + π/2) A.",
+      "answer": "Xc = 10.26 Ω; I = 21.44 A; V = 311.1 sin314t V; I = 30.32 sin(314t + π/2) A",
+      "sourceReferences": [
+        {
+          "pdfPage": 93,
+          "printedPage": 175,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-example155-rl-coil",
+      "title": "Example 15.5 — R–L coil on 220 V, 50 Hz",
+      "question": "EXAMPLE 15.5 — A coil with resistance 7 Ω and inductance 31.8 mH is connected to a 220 V, 50 Hz supply. Find circuit current, phase angle, power factor and power consumed. GIVEN: L = 31.8 mH; V = 220 V; R = 7 Ω; f = 50 Hz. SOLUTION: X_L = 2πfL = 2π×50×31.8×10⁻³ = 10 Ω. Z = √(R²+X_L²) = √(7²+10²) = 12.2 Ω. I = V/Z = 220/12.2 = 18.03 A. tanφ = X_L/R = 10/7; φ = tan⁻¹(10/7) = 55° lag. Power factor cos55° = 0.573 lag. P = VI cosφ = 220×18.03×0.573 = 2272.8 W.",
+      "given": "L = 31.8 mH; V = 220 V; R = 7 Ω; f = 50 Hz",
+      "solution": "EXAMPLE 15.5 — A coil with resistance 7 Ω and inductance 31.8 mH is connected to a 220 V, 50 Hz supply. Find circuit current, phase angle, power factor and power consumed. GIVEN: L = 31.8 mH; V = 220 V; R = 7 Ω; f = 50 Hz. SOLUTION: X_L = 2πfL = 2π×50×31.8×10⁻³ = 10 Ω. Z = √(R²+X_L²) = √(7²+10²) = 12.2 Ω. I = V/Z = 220/12.2 = 18.03 A. tanφ = X_L/R = 10/7; φ = tan⁻¹(10/7) = 55° lag. Power factor cos55° = 0.573 lag. P = VI cosφ = 220×18.03×0.573 = 2272.8 W.",
+      "answer": "I = 18.03 A; φ = 55° lag; power factor = 0.573 lag; P = 2272.8 W",
+      "sourceReferences": [
+        {
+          "pdfPage": 95,
+          "printedPage": 178,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-example156-rc-series",
+      "title": "Example 15.6 — series capacitor and resistor",
+      "question": "EXAMPLE 15.6 — A 100 V, 50 Hz A.C. supply is applied to a 79.5 μF capacitor in series with a non-inductive 30 Ω resistor. Find impedance, current, phase angle and instantaneous-current equation. GIVEN: V = 100 V; R = 30 Ω; f = 50 Hz; C = 79.5 μF. SOLUTION: X_C = 1/(2πfC) = 40 Ω. Z = √(R²+X_C²) = √(30²+40²) = 50 Ω. I = V/Z = 100/50 = 2 A. tanφ = X_C/R = 40/30 = 1.33, so φ = tan⁻¹(1.33) = 53° lead. I_m = I√2 = 2.828 A; ω = 2πf = 314 rad s⁻¹. Thus I_inst = 2.828 sin(314t + 53°) A.",
+      "given": "V = 100 V; R = 30 Ω; f = 50 Hz; C = 79.5 μF",
+      "solution": "EXAMPLE 15.6 — A 100 V, 50 Hz A.C. supply is applied to a 79.5 μF capacitor in series with a non-inductive 30 Ω resistor. Find impedance, current, phase angle and instantaneous-current equation. GIVEN: V = 100 V; R = 30 Ω; f = 50 Hz; C = 79.5 μF. SOLUTION: X_C = 1/(2πfC) = 40 Ω. Z = √(R²+X_C²) = √(30²+40²) = 50 Ω. I = V/Z = 100/50 = 2 A. tanφ = X_C/R = 40/30 = 1.33, so φ = tan⁻¹(1.33) = 53° lead. I_m = I√2 = 2.828 A; ω = 2πf = 314 rad s⁻¹. Thus I_inst = 2.828 sin(314t + 53°) A.",
+      "answer": "Z = 50 Ω; I = 2 A; φ = 53° lead; I_inst = 2.828 sin(314t + 53°) A",
+      "sourceReferences": [
+        {
+          "pdfPage": 96,
+          "printedPage": 181,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-example157-rlc",
+      "title": "Example 15.7 — series R–L–C circuit",
+      "question": "EXAMPLE 15.7 — A 220 V, 50 Hz A.C. supply is applied to a coil of inductance 0.06 H and resistance 2.5 Ω in series with a 6.8 μF capacitor. Find impedance, current, phase angle, power factor and power. GIVEN: L=0.06 H; R=2.5 Ω; V=220 V; f=50 Hz; C=6.8 μF. SOLUTION: X_L=2πfL=18.85 Ω; X_C=1/(2πfC)=468 Ω. Z=√[R²+(X_L−X_C)²]=449.2 Ω. I=V/Z=0.4897 A. tanφ=(X_L−X_C)/R=−179.66, so φ=−89.7° and current leads voltage. Power factor cosφ=R/Z=0.00557. P=VI cosφ=220×0.4897×0.00557=0.60007 W.",
+      "given": "L=0.06 H; R=2.5 Ω; V=220 V; f=50 Hz; C=6.8 μF",
+      "solution": "EXAMPLE 15.7 — A 220 V, 50 Hz A.C. supply is applied to a coil of inductance 0.06 H and resistance 2.5 Ω in series with a 6.8 μF capacitor. Find impedance, current, phase angle, power factor and power. GIVEN: L=0.06 H; R=2.5 Ω; V=220 V; f=50 Hz; C=6.8 μF. SOLUTION: X_L=2πfL=18.85 Ω; X_C=1/(2πfC)=468 Ω. Z=√[R²+(X_L−X_C)²]=449.2 Ω. I=V/Z=0.4897 A. tanφ=(X_L−X_C)/R=−179.66, so φ=−89.7° and current leads voltage. Power factor cosφ=R/Z=0.00557. P=VI cosφ=220×0.4897×0.00557=0.60007 W.",
+      "answer": "Z=449.2 Ω; I=0.4897 A; φ=−89.7°; power factor=0.00557; P=0.60007 W",
+      "sourceReferences": [
+        {
+          "pdfPage": 98,
+          "printedPage": 184,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "phys15-assignment151-resistor-ac",
+      "exercise": "Assignment 15.1",
+      "question": "ASSIGNMENT 15.1 — A 60 Ω resistor is connected across a 220 V A.C. supply. Calculate the current drawn and power consumed by the heating element. Printed answer: 3.66 A, 860 W.",
+      "answer": "3.66 A; 860 W",
+      "sourceReferences": [
+        {
+          "pdfPage": 89,
+          "printedPage": 167,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-assignment152-inductance",
+      "exercise": "Assignment 15.2",
+      "question": "ASSIGNMENT 15.2 — A pure inductor is connected across a 10 V, 200 Hz supply and carries 0.4 A. Determine its inductance. Printed answer: 19.9 mH.",
+      "answer": "19.9 mH",
+      "sourceReferences": [
+        {
+          "pdfPage": 92,
+          "printedPage": 172,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-assignment153-capacitance",
+      "exercise": "Assignment 15.3",
+      "question": "ASSIGNMENT 15.3 — An ideal capacitor is connected across a 6 V, 5 kHz supply and the resulting current is 88.6 mA. Find its capacitance. Printed answer: 0.47 μF.",
+      "answer": "0.47 μF",
+      "sourceReferences": [
+        {
+          "pdfPage": 93,
+          "printedPage": 175,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-assignment154-rl-current",
+      "exercise": "Assignment 15.4",
+      "question": "ASSIGNMENT 15.4 — A 220 V, 50 Hz A.C. source is connected to a 0.2 H inductance and 20 Ω resistance in series. Find circuit current. Printed answer: 3.33 A.",
+      "answer": "3.33 A",
+      "sourceReferences": [
+        {
+          "pdfPage": 95,
+          "printedPage": 178,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-numerical-01",
+      "exercise": "Unit 15 numerical questions",
+      "question": "Peak A.C. voltage is 300 V; find r.m.s. voltage.",
+      "answer": "212.1 V",
+      "sourceReferences": [
+        {
+          "pdfPage": 106,
+          "printedPage": 200,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-numerical-02",
+      "exercise": "Unit 15 numerical questions",
+      "question": "A.C. current is 10 A r.m.s.; find peak current.",
+      "answer": "14.1 A",
+      "sourceReferences": [
+        {
+          "pdfPage": 106,
+          "printedPage": 200,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-numerical-03",
+      "exercise": "Unit 15 numerical questions",
+      "question": "For v=16 sin(2×10³t) V across 0.5 μF, find X_C and peak current.",
+      "answer": "1000 Ω; 16 mA",
+      "sourceReferences": [
+        {
+          "pdfPage": 106,
+          "printedPage": 200,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-numerical-04",
+      "exercise": "Unit 15 numerical questions",
+      "question": "For v=240 sin(1.25×10⁴t−30°) V across 0.01 μF, find current.",
+      "answer": "I=0.03 sin(1.25×10⁴t+60°) A",
+      "sourceReferences": [
+        {
+          "pdfPage": 106,
+          "printedPage": 200,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-numerical-05",
+      "exercise": "Unit 15 numerical questions",
+      "question": "100 μH inductor carries 10 mA at 6.3 V; find frequency.",
+      "answer": "10⁶ Hz",
+      "sourceReferences": [
+        {
+          "pdfPage": 106,
+          "printedPage": 201,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-numerical-06",
+      "exercise": "Unit 15 numerical questions",
+      "question": "Find X_L and rms current for L=3.00 mH at 60.0 Hz and 10.0 kHz, V=120 V.",
+      "answer": "1.13 Ω, 188 Ω; 106 A, 0.637 A",
+      "sourceReferences": [
+        {
+          "pdfPage": 106,
+          "printedPage": 201,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-numerical-07",
+      "exercise": "Unit 15 numerical questions",
+      "question": "For R=40 Ω, L=3 mH, C=5 μF, find resonant frequency and current at 120 V.",
+      "answer": "1.30 kHz; 3.00 A",
+      "sourceReferences": [
+        {
+          "pdfPage": 106,
+          "printedPage": 201,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-numerical-08",
+      "exercise": "Unit 15 numerical questions",
+      "question": "For R=30 Ω, C=79.5 μF on 50 Hz,100 V, find Z, I, phase and current equation.",
+      "answer": "50 Ω;2 A;53° lead;2.828 sin(314t+53°)",
+      "sourceReferences": [
+        {
+          "pdfPage": 106,
+          "printedPage": 201,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-numerical-09",
+      "exercise": "Unit 15 numerical questions",
+      "question": "For R=7 Ω,L=31.8 mH on 230 V,50 Hz, find current, phase, power factor and power.",
+      "answer": "18.85 Ω;55° lag;0.573 lag;2484.24 W",
+      "sourceReferences": [
+        {
+          "pdfPage": 106,
+          "printedPage": 201,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys15-numerical-10",
+      "exercise": "Unit 15 numerical questions",
+      "question": "For R=10 Ω,C=100 μF and v=100 sin314t V, find X_C, Z and peak current.",
+      "answer": "31.85 Ω;33.4 Ω;3 A",
+      "sourceReferences": [
+        {
+          "pdfPage": 106,
+          "printedPage": 201,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "retireSections": [
+    "15.1",
+    "15.2",
+    "15.3",
+    "15.4",
+    "15.5",
+    "15.6",
+    "15.7",
+    "15.8",
+    "15.9",
+    "15.10",
+    "15.11",
+    "15.12",
+    "15.13",
+    "15.14",
+    "15.15",
+    "15.16",
+    "15.17",
+    "15.18"
+  ],
+  "trimSections": [],
+  "retireExercises": []
+}

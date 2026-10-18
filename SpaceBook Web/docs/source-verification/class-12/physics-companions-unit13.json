@@ -1,0 +1,836 @@
+{
+  "formulas": [
+    {
+      "id": "phys13-eq-magnetic-flux",
+      "name": "Magnetic flux",
+      "formula": "Φ_B = B⃗ · A⃗ = BA cos θ",
+      "latex": "Φ_B = B·A = BA cos θ",
+      "sourceReferences": [
+        {
+          "pdfPage": 52,
+          "printedPage": 94,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-eq-flux-curved-surface-13.3",
+      "name": "Magnetic flux through a curved or non-uniform surface",
+      "number": "13.3",
+      "formula": "Φ_B = B cos θ Σ ΔA = BA cos θ ...(13.3)",
+      "latex": "Φ_B = B cos θ ΣΔA = BA cos θ",
+      "sourceReferences": [
+        {
+          "pdfPage": 52,
+          "printedPage": 95,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-ampere-circuital-law",
+      "name": "Ampere circuital law",
+      "formula": "Σ B⃗ · Δl⃗ = μ₀ I",
+      "latex": "Σ B·Δl = μ₀ I",
+      "sourceReferences": [
+        {
+          "pdfPage": 52,
+          "printedPage": 95,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-long-wire-field",
+      "name": "Magnetic field around a long straight wire",
+      "formula": "B = (μ₀/2π)(I/r)",
+      "latex": "B = μ₀I/(2πr)",
+      "sourceReferences": [
+        {
+          "pdfPage": 54,
+          "printedPage": 98,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-ampere-law-13.4",
+      "name": "Ampere circuital law",
+      "number": "13.4",
+      "formula": "hence Σ B⃗ · Δl⃗ = μ₀I ...(13.4)",
+      "latex": "Σ B·Δl = μ₀I",
+      "sourceReferences": [
+        {
+          "pdfPage": 53,
+          "printedPage": 97,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-solenoid-field-equation-13-5",
+      "name": "Magnetic field inside an ideal solenoid",
+      "number": "13.5",
+      "formula": "B = μ₀ n I ...(13.5)",
+      "latex": "B = μ₀nI",
+      "sourceReferences": [
+        {
+          "pdfPage": 55,
+          "printedPage": 101,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-solenoid-turns-per-length",
+      "name": "Turns per unit length",
+      "formula": "n = N/l",
+      "latex": "n=N/l",
+      "sourceReferences": [
+        {
+          "pdfPage": 55,
+          "printedPage": 101,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-magnetic-force-charge-13-6",
+      "name": "Magnetic force on a moving charge",
+      "number": "13.6",
+      "formula": "F⃗_B = qvB sin θ n̂ ...(13.6)",
+      "latex": "F_B=qvB sin θ n̂",
+      "sourceReferences": [
+        {
+          "pdfPage": 56,
+          "printedPage": 103,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-magnetic-force-cross-product-13-7",
+      "name": "Magnetic force in vector form",
+      "number": "13.7",
+      "formula": "F⃗_B = q v⃗ × B⃗ ...(13.7)",
+      "latex": "F_B=q(v×B)",
+      "sourceReferences": [
+        {
+          "pdfPage": 56,
+          "printedPage": 103,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-magnetic-force-magnitude",
+      "name": "Magnitude of magnetic force on a moving charge",
+      "formula": "F_B = q(v sin θ)B",
+      "latex": "F_B=|q|vB sin θ",
+      "sourceReferences": [
+        {
+          "pdfPage": 56,
+          "printedPage": 102,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-force-current-conductor",
+      "name": "Magnetic force on a current-carrying conductor",
+      "formula": "F_B = B I L sin θ ...(1)",
+      "latex": "F_B=BIL sin θ",
+      "sourceReferences": [
+        {
+          "pdfPage": 57,
+          "printedPage": 104,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-force-single-moving-charge",
+      "name": "Magnetic force on a single moving charge",
+      "formula": "For a single particle, N = 1: F_B = Bqv sin θ, or F_B = qvB sin θ.",
+      "latex": "F_B=qvB sin θ",
+      "sourceReferences": [
+        {
+          "pdfPage": 57,
+          "printedPage": 104,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-cyclotron-frequency-13-8",
+      "name": "Cyclotron frequency",
+      "number": "13.8",
+      "formula": "Therefore f = qB/(2πm) ...(13.8)",
+      "latex": "f=qB/(2πm)",
+      "sourceReferences": [
+        {
+          "pdfPage": 57,
+          "printedPage": 105,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-electron-charge-mass-ratio-13-9",
+      "name": "Electron charge-to-mass ratio",
+      "number": "13.9",
+      "formula": "q_e/m_e = 2V/(B²r²) ...(13.9)",
+      "latex": "q_e/m_e=2V/(B²r²)",
+      "sourceReferences": [
+        {
+          "pdfPage": 58,
+          "printedPage": 107,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-electron-speed-potential",
+      "name": "Electron speed from accelerating potential",
+      "formula": "v = √(2q_eV/m_e) ...(2) Putting equation 2 in equation 1, we get",
+      "latex": "v=√(2q_eV/m_e)",
+      "sourceReferences": [
+        {
+          "pdfPage": 58,
+          "printedPage": 106,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-velocity-selector-speed-13-10",
+      "name": "Selected speed in a velocity selector",
+      "number": "13.10",
+      "formula": "v = E/B ...(13.10)",
+      "latex": "v=E/B",
+      "sourceReferences": [
+        {
+          "pdfPage": 60,
+          "printedPage": 108,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-torque-coil-maximum-13-11",
+      "name": "Maximum torque on a current-carrying loop",
+      "number": "13.11",
+      "formula": "Putting equation 5 in equation 4, we get τ = IBA ...(13.11)",
+      "latex": "τ=IBA",
+      "sourceReferences": [
+        {
+          "pdfPage": 61,
+          "printedPage": 110,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-torque-coil-angle-13-12",
+      "name": "Torque on a current-carrying loop at angle",
+      "number": "13.12",
+      "formula": "The torque is given by the relation τ = IBA sin θ ...(13.12)",
+      "latex": "τ=IBA sin θ",
+      "sourceReferences": [
+        {
+          "pdfPage": 61,
+          "printedPage": 110,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-galvanometer-current-13-13",
+      "name": "Current and galvanometer angular deflection",
+      "number": "13.13",
+      "formula": "I = cφ/(NAB) ...(13.13)",
+      "latex": "I=cφ/(NAB)",
+      "sourceReferences": [
+        {
+          "pdfPage": 62,
+          "printedPage": 113,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-ammeter-shunt-13-14",
+      "name": "Shunt resistance for an ammeter",
+      "number": "13.14",
+      "formula": "Here I_s = I − I_g; therefore V_s = (I − I_g)R_s. Putting equations 2 and 3 in equation 1 gives (I − I_g)R_s = I_gR_g; hence R_s = I_gR_g/(I − I_g) ...(13.14).",
+      "latex": "R_s=I_gR_g/(I-I_g)",
+      "sourceReferences": [
+        {
+          "pdfPage": 63,
+          "printedPage": 115,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-voltmeter-high-resistance-13-15",
+      "name": "Series resistance for a voltmeter",
+      "number": "13.15",
+      "formula": "Putting equations 2 and 3 in equation 1, V = I_gR_g + I_gR_h; therefore R_h = V/I_g − R_g ...(13.15).",
+      "latex": "R_h=V/I_g-R_g",
+      "sourceReferences": [
+        {
+          "pdfPage": 64,
+          "printedPage": 116,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Magnetic flux",
+      "definition": "The scalar product of magnetic induction B and the area A is called magnetic flux Φ_B.",
+      "definitionUrdu": "مقناطیسی القا B اور رقبے A کا عددی ضرب مقناطیسی بہاؤ Φ_B کہلاتا ہے۔",
+      "definitionPashto": "د مقناطیسي القا B او مساحت A سکالر ضرب مقناطیسي فلوکس Φ_B بلل کېږي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 52,
+          "printedPage": 94,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Weber",
+      "definition": "The SI unit of magnetic flux is equal to the unit of magnetic field (1 T) times the unit of area (m²), 1 Wb = 1 T × m². This unit is called the weber (1 Wb), in honor of the German physicist Wilhelm Weber.",
+      "definitionUrdu": "مقناطیسی بہاؤ کی SI اکائی، مقناطیسی میدان کی اکائی (1 T) اور رقبے کی اکائی (m²) کے حاصلِ ضرب کے برابر ہے: 1 Wb = 1 T × m²۔ اس اکائی کو جرمن طبیعیات دان ولہلم ویبر کے نام پر ویبر (1 Wb) کہتے ہیں۔",
+      "definitionPashto": "د مقناطیسي فلوکس SI واحد د مقناطیسي ساحې واحد (1 T) او د مساحت واحد (m²) د ضرب سره برابر دی: 1 Wb = 1 T × m². د جرمني فزیک‌پوه وېلهلم وېبر په ویاړ دې واحد ته وېبر (1 Wb) ویل کېږي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 52,
+          "printedPage": 95,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Ampere’s circuital law",
+      "definition": "Ampere’s circuital law, given by Andre Marie Peter Ampere in 1826, relates the integrated magnetic field in a loop around a current-carrying wire to the current passing through the wire. Ampère’s circuital law states that, for any closed loop, the sum of each length element multiplied by the component of magnetic field parallel to that element is proportional to the current enclosed by the path. Σ B⃗ · Δl⃗ = μ₀ I",
+      "definitionUrdu": "1826 میں آندرے میری پیٹر ایمپیئر کا پیش کردہ دوری قانون، کرنٹ بردار تار کے گرد حلقے میں مقناطیسی میدان کے تکمل کو تار سے گزرنے والی برقی رو سے مربوط کرتا ہے۔ ایمپیئر کا دوری قانون کہتا ہے کہ کسی بھی بند حلقے میں ہر طولی عنصر اور اس عنصر کے متوازی مقناطیسی میدان کے جزو کے حاصلِ ضرب کا مجموعہ، اس راستے کے اندر محصور برقی رو کے متناسب ہوتا ہے۔ Σ B⃗ · Δl⃗ = μ₀ I",
+      "definitionPashto": "د امپېر د کړۍ قانون، چې اندري ماري پېټر امپېر په 1826 کې ورکړ، د جریان‌لرونکي سیم شاوخوا په کړۍ کې مدغم مقناطیسي ساحه له هغه جریان سره تړي چې له سیم څخه تېرېږي. د امپېر د کړۍ قانون وايي چې په هره تړلې کړۍ کې د هر اوږدوالي عنصر او له هغه عنصر سره موازي د مقناطیسي ساحې د جز د ضربونو مجموعه د لارې دننه محصور جریان سره متناسب ده. Σ B⃗ · Δl⃗ = μ₀ I",
+      "sourceReferences": [
+        {
+          "pdfPage": 52,
+          "printedPage": 95,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Permeability",
+      "definition": "The permeability of a vacuum (μ₀) is 4π × 10⁻⁷ Wb/(A·m) (webers/ampere-turn·meter) and is used as a reference. The relative permeability (μᵣ) of a material is the ratio of its absolute permeability to the permeability of a vacuum.",
+      "definitionUrdu": "خلا کی نفوذ پذیری (μ₀) ‏4π × 10⁻⁷ Wb/(A·m) (ویبر/ایمپیئر ٹرن·میٹر) ہے اور اسے حوالہ بنایا جاتا ہے۔ کسی مادے کی نسبتی نفوذ پذیری (μᵣ)، اس کی مطلق نفوذ پذیری اور خلا کی نفوذ پذیری کا تناسب ہے۔",
+      "definitionPashto": "د تشې نفوذپذیري (μ₀) ‏4π × 10⁻⁷ Wb/(A·m) (وېبر/امپېر-تاو·متر) ده او د مرجع په توګه کارېږي. د مادې نسبي نفوذپذیري (μᵣ) د هغې د مطلقې نفوذپذیرۍ او د تشې د نفوذپذیرۍ نسبت دی.",
+      "sourceReferences": [
+        {
+          "pdfPage": 53,
+          "printedPage": 97,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Relative permeability",
+      "definition": "The permeability of a vacuum (μ₀) is 4π × 10⁻⁷ Wb/(A·m) (webers/ampere-turn·meter) and is used as a reference. The relative permeability (μᵣ) of a material is the ratio of its absolute permeability to the permeability of a vacuum. μᵣ = μ/μ₀ Because it is a ratio of permeabilities, μᵣ is dimensionless. Typical magnetic materials, such as iron, have a relative permeability of a few hundred.",
+      "definitionUrdu": "خلا کی نفوذ پذیری (μ₀) ‏4π × 10⁻⁷ Wb/(A·m) (ویبر/ایمپیئر ٹرن·میٹر) ہے اور اسے حوالہ بنایا جاتا ہے۔ کسی مادے کی نسبتی نفوذ پذیری (μᵣ)، اس کی مطلق نفوذ پذیری اور خلا کی نفوذ پذیری کا تناسب ہے۔ μᵣ = μ/μ₀ چونکہ یہ نفوذ پذیریوں کا تناسب ہے، اس لیے μᵣ بے بُعد ہے۔ لوہے جیسے عام مقناطیسی مادوں کی نسبتی نفوذ پذیری چند سو ہوتی ہے۔",
+      "definitionPashto": "د تشې نفوذپذیري (μ₀) ‏4π × 10⁻⁷ Wb/(A·m) (وېبر/امپېر-تاو·متر) ده او د مرجع په توګه کارېږي. د مادې نسبي نفوذپذیري (μᵣ) د هغې د مطلقې نفوذپذیرۍ او د تشې د نفوذپذیرۍ نسبت دی. μᵣ = μ/μ₀ ځکه چې دا د نفوذپذیریو نسبت دی، μᵣ بې‌بعده ده. د اوسپنې په څېر د عادي مقناطیسي موادو نسبي نفوذپذیري څو سوه وي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 53,
+          "printedPage": 97,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Solenoid",
+      "definition": "A coil wound in the form of a spiral (helix) forms a solenoid. When current is passed through a solenoid, a reasonably uniform magnetic field can be produced. This field is strong along the axis of the solenoid and weaker outside, as shown in Figure 13.12.",
+      "definitionUrdu": "حلزونی شکل میں لپٹی ہوئی کوائل سولینائڈ بناتی ہے۔ سولینائڈ میں رو گزارنے سے نسبتاً یکساں مقناطیسی میدان پیدا کیا جا سکتا ہے۔ یہ میدان سولینائڈ کے محور کے ساتھ مضبوط اور باہر کمزور ہوتا ہے، جیسا کہ شکل 13.12 میں ہے۔",
+      "definitionPashto": "په حلزوني بڼه تاو شوی کویل سولینایډ جوړوي. په سولینایډ کې د جریان په تېرولو نسبتاً یوشان مقناطیسي ساحه جوړېدای شي. دا ساحه د سولینایډ د محور په اوږدو کې پیاوړې او بهر کمزورې وي، لکه په 13.12 شکل کې.",
+      "sourceReferences": [
+        {
+          "pdfPage": 54,
+          "printedPage": 98,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Ideal solenoid",
+      "definition": "An ideal solenoid is approached when the turns are closely spaced and its length is much greater than the radius of its turns. In this case, the external field is close to zero and the interior field is uniform over a great volume.",
+      "definitionUrdu": "مثالی سولینائڈ اس وقت حاصل ہوتا ہے جب چکر قریب قریب ہوں اور اس کی لمبائی چکروں کے رداس سے بہت زیادہ ہو۔ ایسی صورت میں بیرونی میدان تقریباً صفر اور اندرونی میدان ایک بڑے حجم میں یکساں ہوتا ہے۔",
+      "definitionPashto": "ایډیال سولینایډ هغه مهال رامنځته کېږي چې تاوونه سره نږدې وي او اوږدوالی یې د تاوونو له شعاع څخه ډېر زیات وي. په دې حالت کې بهرنی ساحه نږدې صفر او دننه ساحه په لوی حجم کې یوشان وي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 54,
+          "printedPage": 99,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Turns per unit length",
+      "definition": "Let n be the number of turns per unit length (n = N/l); we can write the equation as",
+      "definitionUrdu": "فرض کریں n فی اکائی لمبائی چکروں کی تعداد ہے (n = N/l)؛ تب مساوات یوں لکھی جا سکتی ہے:",
+      "definitionPashto": "n دې د واحد اوږدوالي د تاوونو شمېر وي (n = N/l)؛ معادله داسې لیکلی شو:",
+      "sourceReferences": [
+        {
+          "pdfPage": 55,
+          "printedPage": 101,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Right-hand rule III for a solenoid",
+      "definition": "RIGHT-HAND RULE III FOR A SOLENOID: Curl the fingers in the direction of current around the coil or solenoid and the extended thumb will point in the direction of the north pole of a magnet. This rule is for the direction of conventional current or flow of positive charges. For electronic current flow, the same rule is applied but with the left hand.",
+      "definitionUrdu": "سولینائڈ کے لیے دائیں ہاتھ کا قاعدہ III: کوائل یا سولینائڈ میں رو کی سمت انگلیاں موڑیں تو پھیلا ہوا انگوٹھا مقناطیس کے شمالی قطب کی سمت بتاتا ہے۔ یہ قاعدہ روایتی رو یا مثبت باروں کے بہاؤ کی سمت کے لیے ہے۔ الیکٹرانک رو کے لیے یہی قاعدہ بائیں ہاتھ سے لگایا جاتا ہے۔",
+      "definitionPashto": "د سولینایډ لپاره د ښي لاس درېیمه قاعده: د کویل یا سولینایډ شاوخوا ګوتې د جریان په لوري تاو کړئ؛ غځول شوی غټه ګوته د مقناطیس د شمالي قطب لوری ښيي. دا قاعده د دودیز جریان یا مثبتو چارجونو د بهیر لپاره ده. د الکتروني جریان لپاره همدا قاعده په چپ لاس پلي کېږي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 55,
+          "printedPage": 100,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Magnetic force on a moving charge",
+      "definition": "The magnitude of the magnetic force acting on the point charge is the product of The magnitude of the charge “|q|”, The magnitude of the field “B”, and The component of the velocity “v” perpendicular to the field. F_B = q(v sin θ)B",
+      "definitionUrdu": "نقطہ بار پر مقناطیسی قوت کی مقدار درج ذیل کا حاصلِ ضرب ہے: بار کی مقدار “|q|”، میدان کی مقدار “B”، اور رفتار “v” کا میدان کے عمود جزو۔ F_B = q(v sin θ)B",
+      "definitionPashto": "پر نقطه‌يي چارج د مقناطیسي قوې اندازه د لاندې توکو د ضرب حاصل دی: د چارج اندازه “|q|”، د ساحې اندازه “B”، او د ساحې پر عمود د “v” سرعت جز. F_B = q(v sin θ)B",
+      "sourceReferences": [
+        {
+          "pdfPage": 56,
+          "printedPage": 102,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Cyclotron frequency",
+      "definition": "This is often called the cyclotron frequency of a particle in a field because this is the frequency at which particles revolve in a cyclotron.",
+      "definitionUrdu": "اسے اکثر میدان میں ذرہ کی سائکلوٹرون تعدد کہتے ہیں، کیونکہ یہ وہ تعدد ہے جس سے ذرات سائکلوٹرون میں گردش کرتے ہیں۔",
+      "definitionPashto": "دې ته په ساحه کې د ذرې سایکلوټرون فریکونسي وايي، ځکه همدا هغه فریکونسي ده چې ذرات پرې په سایکلوټرون کې تاوېږي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 57,
+          "printedPage": 105,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Electron charge-to-mass ratio",
+      "definition": "Thus, knowing the values of potential V, magnetic field B and radius r, the charge to mass ratio can be determined. The accurately known value of e/m for an electron is 1.7588 × 10¹¹ C kg⁻¹.",
+      "definitionUrdu": "یوں پوٹینشل V، مقناطیسی میدان B اور رداس r معلوم ہوں تو بار اور کمیت کا تناسب معلوم کیا جا سکتا ہے۔ الیکٹران کے لیے e/m کی معلوم قدر 1.7588 × 10¹¹ C kg⁻¹ ہے۔",
+      "definitionPashto": "په دې توګه د پوتنشیال V، مقناطیسي ساحې B او شعاع r په معلومولو د چارج او کتلې نسبت موندل کېږي. د الکترون لپاره د e/m کره معلوم ارزښت 1.7588 × 10¹¹ C kg⁻¹ دی.",
+      "sourceReferences": [
+        {
+          "pdfPage": 58,
+          "printedPage": 107,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Velocity selector",
+      "definition": "The device which allow only the particles with certain specific speed through it (thus permitting particles only with selected speeds) is called velocity selector.",
+      "definitionUrdu": "وہ آلہ جو صرف مخصوص رفتار والے ذرات کو اپنے اندر سے گزرنے دیتا ہے (یعنی صرف منتخب رفتار کے ذرات کو)، رفتار منتخب کرنے والا آلہ کہلاتا ہے۔",
+      "definitionPashto": "هغه آله چې یوازې د ټاکلي سرعت ذرات پرې تېرېږي (یعنې یوازې ټاکل شوي سرعتونه پرېږدي)، د سرعت ټاکونکی بلل کېږي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 58,
+          "printedPage": 107,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Galvanometer",
+      "definition": "A device used for detection and measurement of small electric currents is called a galvanometer.",
+      "definitionUrdu": "چھوٹی برقی رو کی شناخت اور پیمائش کے لیے استعمال ہونے والا آلہ گیلوانومیٹر کہلاتا ہے۔",
+      "definitionPashto": "هغه آله چې د کوچنیو برېښنايي جریانونو د پېژندلو او اندازه کولو لپاره کارېږي، ګالوانومیټر بلل کېږي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 62,
+          "printedPage": 112,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Ammeter",
+      "definition": "An ammeter is a measuring instrument used to measure electric current in a circuit.",
+      "definitionUrdu": "ایمیٹر سرکٹ میں برقی رو ناپنے کا آلہ ہے۔",
+      "definitionPashto": "امیټر هغه اله ده چې په مدار کې برېښنايي جریان اندازه کوي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 63,
+          "printedPage": 114,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Voltmeter",
+      "definition": "A measuring instrument used to measure potential difference in a circuit.",
+      "definitionUrdu": "سرکٹ میں پوٹینشل فرق ناپنے کا آلہ۔",
+      "definitionPashto": "په مدار کې د پوتنشیالي توپیر د اندازه کولو اله.",
+      "sourceReferences": [
+        {
+          "pdfPage": 64,
+          "printedPage": 115,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "AVO meter",
+      "definition": "A single device that can measure current, voltage and resistance is called an AVO meter. A stands for amperes, V for volts and O for ohm.",
+      "definitionUrdu": "ایک ایسا آلہ جو رو، وولٹیج اور مزاحمت تینوں ناپ سکے AVO میٹر کہلاتا ہے۔ A کا مطلب amperes، V کا volts اور O کا ohm ہے۔",
+      "definitionPashto": "هغه یوه وسیله چې جریان، ولتاژ او مقاومت اندازه کوي AVO مېټر بلل کېږي. A د amperes، V د volts او O د ohm لپاره دی.",
+      "sourceReferences": [
+        {
+          "pdfPage": 64,
+          "printedPage": 117,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Universal shunt",
+      "definition": "To measure current, the selector switch is turned to measure ampere and the proper scale is selected. This circuit contains resistors R₁, R₂, … of various resistances connected in parallel across the galvanometer, as shown in Figure 13.29. These resistances are collectively called a universal shunt. Any one shunt can be used to measure current in different ranges without making excessive current flow through the galvanometer.",
+      "definitionUrdu": "رو ناپنے کے لیے انتخابی سوئچ ایمپیئر ناپنے پر رکھا جاتا ہے اور مناسب پیمانہ منتخب کیا جاتا ہے۔ اس سرکٹ میں مختلف مزاحمتوں کے R₁، R₂، … گیلوانومیٹر کے متوازی جڑے ہوتے ہیں، جیسا کہ شکل 13.29 میں ہے۔ ان مزاحمتوں کو مجموعی طور پر یونیورسل شنٹ کہتے ہیں۔ کسی ایک شنٹ سے مختلف حدوں میں رو ناپی جا سکتی ہے، بغیر اس کے کہ گیلوانومیٹر سے حد سے زیادہ رو گزرے۔",
+      "definitionPashto": "د جریان د اندازه کولو لپاره د انتخاب سویچ د امپیر پر اندازه اېښودل کېږي او مناسبه درجه ټاکل کېږي. په دې مدار کې د بېلابېلو مقاومتونو R₁، R₂، … له ګالوانومیټر سره موازي نښتي دي، لکه په 13.29 شکل کې. دې مقاومتونو ته په ګډه یونیورسل شنټ وايي. له هر یوه شنټ څخه د بېلابېلو حدونو د جریان د اندازه کولو لپاره کار اخیستل کېږي، بې له دې چې له ګالوانومیټر څخه ډېر جریان تېر شي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 65,
+          "printedPage": 119,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "textbook-example-13-1",
+      "num": "13.1",
+      "title": "Magnetic force on a wire",
+      "problem": "A wire carrying 2 A current and has length of 10 cm between the poles of a magnet is kept at an angle of 30° to the uniform field of 0.6 T. Find the force acting on the wire?",
+      "problemUrdu": "2 A برقی رو لے جانے والی، مقناطیس کے قطبین کے درمیان 10 cm لمبی تار کو 0.6 T کے یکساں میدان سے 30° زاویے پر رکھا گیا ہے۔ تار پر لگنے والی قوت معلوم کریں۔",
+      "problemPashto": "د 2 A جریان لرونکی، د مقناطیس د قطبونو ترمنځ 10 cm اوږد سیم د 0.6 T یوشان میدان سره په 30° زاویه کې اېښودل شوی. پر سیم واردېدونکې قوه ومومئ.",
+      "given": [
+        "Current I = 2 A",
+        "Length L = 10 cm = 0.01 m",
+        "Magnetic field B = 0.6 T",
+        "Angle θ = 30°"
+      ],
+      "givenUrdu": [
+        "برقی رو I = 2 A",
+        "لمبائی L = 10 cm = 0.01 m",
+        "مقناطیسی میدان B = 0.6 T",
+        "زاویہ θ = 30°"
+      ],
+      "givenPashto": [
+        "جریان I = 2 A",
+        "اوږدوالی L = 10 cm = 0.01 m",
+        "مقناطیسي ساحه B = 0.6 T",
+        "زاویه θ = 30°"
+      ],
+      "required": [
+        "Magnetic force F_B = ?"
+      ],
+      "requiredUrdu": [
+        "مقناطیسی قوت F_B = ؟"
+      ],
+      "requiredPashto": [
+        "مقناطیسي قوه F_B = ؟"
+      ],
+      "steps": [
+        "F_B = ILB sin θ",
+        "Putting values,",
+        "F_B = 2 A × 0.1 m × 0.6 N/(A m) × sin 30°",
+        "therefore",
+        "F_B = 0.06 N"
+      ],
+      "stepsUrdu": [
+        "F_B = ILB sin θ",
+        "قدریں رکھنے سے،",
+        "F_B = 2 A × 0.1 m × 0.6 N/(A m) × sin 30°",
+        "لہٰذا",
+        "F_B = 0.06 N"
+      ],
+      "stepsPashto": [
+        "F_B = ILB sin θ",
+        "د ارزښتونو په ځای کولو،",
+        "F_B = 2 A × 0.1 m × 0.6 N/(A m) × sin 30°",
+        "نو",
+        "F_B = 0.06 N"
+      ],
+      "answer": "0.06 N",
+      "solutionOrigin": "textbook printed answer",
+      "sourceReferences": [
+        {
+          "pdfPage": 51,
+          "printedPage": 93,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys12-example-13-2",
+      "title": "Magnetic field midway between two parallel wires",
+      "question": "Two long parallel wires 6 cm apart carry currents of 8 A and 2 A in the same direction. Find the magnetic field midway between them.",
+      "questionUrdu": "دو لمبی متوازی تاریں 6 cm کے فاصلے پر ہیں اور ان میں 8 A اور 2 A کی رو ایک ہی سمت میں بہتی ہے۔ درمیان میں مقناطیسی میدان معلوم کریں۔",
+      "questionPashto": "دوه اوږده موازي سیمونه 6 cm واټن لري او 8 A او 2 A جریانونه په یوه لوري لېږدوي. په منځ کې مقناطیسي ساحه ومومئ.",
+      "given": [
+        "I₁ = 8 A; I₂ = 2 A",
+        "r₁ = r₂ = 6 cm/2 = 0.03 m"
+      ],
+      "givenUrdu": [
+        "I₁ = 8 A؛ I₂ = 2 A",
+        "r₁ = r₂ = 6 cm/2 = 0.03 m"
+      ],
+      "givenPashto": [
+        "I₁ = 8 A؛ I₂ = 2 A",
+        "r₁ = r₂ = 6 cm/2 = 0.03 m"
+      ],
+      "required": [
+        "B_net = ?"
+      ],
+      "requiredUrdu": [
+        "B_net = ؟"
+      ],
+      "requiredPashto": [
+        "B_net = ؟"
+      ],
+      "steps": [
+        "The net magnetic field is B_net = B₁ + B₂.",
+        "As the fields are opposite in the middle, therefore B_net = B₁ − B₂.",
+        "Applying Ampere’s circuital law: B_net = μ₀ I₁/(2πr₁) − μ₀ I₂/(2πr₂).",
+        "Putting values: B_net = (4π × 10⁻⁷ T m/A)(8 A)/(2π × 0.03 m) − (4π × 10⁻⁷ T m/A)(2 A)/(2π × 0.03 m).",
+        "Therefore B_net = 4 × 10⁻⁵ T."
+      ],
+      "stepsUrdu": [
+        "خالص مقناطیسی میدان B_net = B₁ + B₂ ہے۔",
+        "چونکہ وسط میں دونوں میدان مخالف سمتوں میں ہیں، اس لیے B_net = B₁ − B₂۔",
+        "ایمپیئر کا دوری قانون لگانے سے: B_net = μ₀ I₁/(2πr₁) − μ₀ I₂/(2πr₂)۔",
+        "قدریں رکھنے سے: B_net = (4π × 10⁻⁷ T m/A)(8 A)/(2π × 0.03 m) − (4π × 10⁻⁷ T m/A)(2 A)/(2π × 0.03 m)۔",
+        "لہٰذا B_net = 4 × 10⁻⁵ T۔"
+      ],
+      "stepsPashto": [
+        "خالصه مقناطیسي ساحه B_net = B₁ + B₂ ده.",
+        "ځکه چې په منځ کې ساحې مخالف لوري لري، نو B_net = B₁ − B₂.",
+        "د امپېر د کړۍ قانون په پلي کولو: B_net = μ₀ I₁/(2πr₁) − μ₀ I₂/(2πr₂).",
+        "د ارزښتونو په ایښودلو: B_net = (4π × 10⁻⁷ T m/A)(8 A)/(2π × 0.03 m) − (4π × 10⁻⁷ T m/A)(2 A)/(2π × 0.03 m).",
+        "نو B_net = 4 × 10⁻⁵ T."
+      ],
+      "answer": "4 × 10⁻⁵ T",
+      "solutionOrigin": "textbook worked solution",
+      "sourceReferences": [
+        {
+          "pdfPage": 54,
+          "printedPage": 98,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys12-example-13-3",
+      "title": "Magnetic field inside a double-layered solenoid",
+      "question": "A solenoid is 10 cm long and is wound with two layers of wire. The inner layer has 50 turns and the outer layer has 40 turns. A current of 3 A flows in both layers in the same direction. What is the magnitude of magnetic flux density along the axis of the solenoid?",
+      "questionUrdu": "ایک سولینائڈ 10 cm لمبا ہے اور اس پر تار کی دو تہیں لپٹی ہیں۔ اندرونی تہہ میں 50 چکر اور بیرونی تہہ میں 40 چکر ہیں۔ دونوں تہوں میں 3 A رو ایک ہی سمت میں بہتی ہے۔ سولینائڈ کے محور کے ساتھ مقناطیسی بہاؤ کی کثافت کی مقدار کیا ہے؟",
+      "questionPashto": "یو سولینایډ 10 cm اوږد دی او د سیم دوه پوړونه پرې تاو شوي دي. په دنني پوړ کې 50 او په بهرني پوړ کې 40 تاوونه دي. په دواړو پوړونو کې 3 A جریان په یوه لوري تېرېږي. د سولینایډ د محور په اوږدو کې د مقناطیسي فلوکس کثافت اندازه څومره ده؟",
+      "given": [
+        "l = 10 cm = 0.01 m (as printed)",
+        "N₁ = 50 turns; N₂ = 40 turns",
+        "I = 3 A"
+      ],
+      "givenUrdu": [
+        "l = 10 cm = 0.01 m (مطبوعہ متن کے مطابق)",
+        "N₁ = 50 چکر؛ N₂ = 40 چکر",
+        "I = 3 A"
+      ],
+      "givenPashto": [
+        "l = 10 cm = 0.01 m (لکه څنګه چې چاپ شوی)",
+        "N₁ = 50 تاوونه؛ N₂ = 40 تاوونه",
+        "I = 3 A"
+      ],
+      "required": [
+        "B_net = ?"
+      ],
+      "requiredUrdu": [
+        "B_net = ؟"
+      ],
+      "requiredPashto": [
+        "B_net = ؟"
+      ],
+      "steps": [
+        "The net magnetic field from the inner and outer layers of the solenoid is",
+        "B_net = B₁ + B₂",
+        "To determine the magnetic field of a solenoid, using equation 13.5 we get",
+        "B_net = (N₁/l) μ₀ I + (N₂/l) μ₀ I",
+        "Putting values: B_net = (50/0.1 m)(4π × 10⁻⁷ T m/A)(3 A) + (40/0.1 m)(4π × 10⁻⁷ T m/A)(3 A)."
+      ],
+      "stepsUrdu": [
+        "سولینائڈ کی اندرونی اور بیرونی تہوں سے حاصل خالص مقناطیسی میدان",
+        "B_net = B₁ + B₂",
+        "مساوات 13.5 سے سولینائڈ کا مقناطیسی میدان معلوم کرنے پر",
+        "B_net = (N₁/l) μ₀ I + (N₂/l) μ₀ I",
+        "قدریں رکھنے سے: B_net = (50/0.1 m)(4π × 10⁻⁷ T m/A)(3 A) + (40/0.1 m)(4π × 10⁻⁷ T m/A)(3 A)۔"
+      ],
+      "stepsPashto": [
+        "د سولینایډ له دنني او بهرني پوړونو څخه خالصه مقناطیسي ساحه",
+        "B_net = B₁ + B₂",
+        "د 13.5 معادلې په کارولو د سولینایډ مقناطیسي ساحه داسې موندل کېږي",
+        "B_net = (N₁/l) μ₀ I + (N₂/l) μ₀ I",
+        "د ارزښتونو په ایښودلو: B_net = (50/0.1 m)(4π × 10⁻⁷ T m/A)(3 A) + (40/0.1 m)(4π × 10⁻⁷ T m/A)(3 A)."
+      ],
+      "answer": "3.4 × 10⁻³ T",
+      "solutionOrigin": "textbook printed solution; source conversion inconsistency preserved and annotated separately",
+      "sourceReferences": [
+        {
+          "pdfPage": 55,
+          "printedPage": 101,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-example135-torque-square-loop",
+      "title": "Example 13.5 — torque on a square loop",
+      "question": "A square loop of wire of side 4.0 cm carries 3.0 A of current. A uniform magnetic field of magnitude 0.67 T makes an angle of 30° with the plane of the loop. (a) What is the magnitude of the torque on the loop? (b) What is the net magnetic force on the loop?",
+      "solution": "GIVEN — For a single square loop, number of turns N = 1; magnetic field B = 0.6 T; area A = ab = 4.0 cm × 4.0 cm = 0.0016 m; current I = 3.0 A; angle with plane of loop φ = 30°. REQUIRED — Torque τ = ?; magnetic force F_net = ? SOLUTION — The angle θ between the area vector A and magnetic field B is θ = 90° − φ = 90° − 30° = 60°. (a) The torque on the current-carrying coil is τ = NIAB sin θ. Putting values: τ = 1 × (3.00 A) × 0.0016 m × 0.6 T sin 60°. Hence τ = 2.5 × 10⁻³ Nm. Answer. (b) B sin θ is the same at opposite sides of the loop and opposite sides have equal and opposite forces. The net force is zero: F⃗_net = F⃗_top + F⃗_bottom + F⃗_right + F⃗_left = F⃗_top − F⃗_top + F⃗_right − F⃗_right. Hence F⃗_net = 0 N. Answer.",
+      "answer": "τ = 2.5 × 10⁻³ Nm; F⃗_net = 0 N",
+      "sourceReferences": [
+        {
+          "pdfPage": 61,
+          "printedPage": 111,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys13-example136-galvanometer-conversions",
+      "title": "Example 13.6 — converting a galvanometer",
+      "question": "A galvanometer has a resistance of 100 ohms and gives full-scale deflection on 1 mA current. How can it be converted into (a) an ammeter of range 10 A, and (b) a voltmeter of range 10 V?",
+      "solution": "GIVEN — Galvanometer resistance R_g = 100 Ω; current through galvanometer I_g = 1 × 10⁻³ A; current range I = 10 A; voltage range V = 10 V. REQUIRED — Shunt resistance R_s = ?; high resistance R_h = ? (a) To convert the galvanometer into an ammeter of range I = 10 A, connect shunt resistance R_s in parallel. R_s = I_gR_g/(I − I_g). Putting values: R_s = (1 × 10⁻³ A × 100 Ω)/(10 A − 1 × 10⁻³ A). Therefore R_s = 0.0100 Ω. Answer. (b) To convert the galvanometer into a voltmeter of range V = 10 V, connect a high resistance R_h in series. R_h = V/I_g − R_g. Putting values: R_h = 10 V/(1 × 10⁻³ A) − 100 Ω. Therefore R_h = 9,900 Ω. Answer.",
+      "answer": "R_s = 0.0100 Ω; R_h = 9,900 Ω",
+      "sourceReferences": [
+        {
+          "pdfPage": 64,
+          "printedPage": 117,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "phys12-assignment-13-1",
+      "title": "Magnetic field of a long straight wire",
+      "question": "A long straight wire carries a current of 1 A. Find the magnitude of the magnetic field at a distance 1 m from it.",
+      "questionUrdu": "ایک لمبے سیدھے تار میں 1 A رو بہتی ہے۔ تار سے 1 m فاصلے پر مقناطیسی میدان کی مقدار معلوم کریں۔",
+      "questionPashto": "په یوه اوږده نېغ سیم کې 1 A جریان تېرېږي. له سیم څخه په 1 m واټن کې د مقناطیسي ساحې اندازه ومومئ.",
+      "answer": "2 × 10⁻⁵ T",
+      "sourceAnswer": "Printed answer: 2 × 10⁻⁵ T.",
+      "sourceReferences": [
+        {
+          "pdfPage": 54,
+          "printedPage": 98,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys12-assignment-13-2",
+      "title": "Design a solenoid with specified magnetic field and current",
+      "question": "You are asked to design a solenoid that will give a magnetic field of 0.10 T, yet the current must not exceed 10.0 A. Find the number of turns per unit length that the solenoid should have.",
+      "questionUrdu": "آپ کو ایسا سولینائڈ بنانے کو کہا گیا ہے جو 0.10 T مقناطیسی میدان دے، جبکہ رو 10.0 A سے زیادہ نہ ہو۔ مطلوبہ فی اکائی لمبائی چکروں کی تعداد معلوم کریں۔",
+      "questionPashto": "له تاسو غوښتل کېږي داسې سولینایډ طرحه کړئ چې 0.10 T مقناطیسي ساحه ورکړي، خو جریان یې له 10.0 A زیات نه وي. د واحد اوږدوالي لپاره د تاوونو شمېر ومومئ.",
+      "answer": "7.96 × 10³ m⁻¹",
+      "sourceAnswer": "Printed answer: 7.96 × 10³ m⁻¹.",
+      "sourceReferences": [
+        {
+          "pdfPage": 55,
+          "printedPage": 101,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "retireSections": [
+    "13.1",
+    "13.2",
+    "13.3",
+    "13.4",
+    "13.5",
+    "13.6",
+    "13.7",
+    "13.10",
+    "13.11",
+    "13.12",
+    "13.13",
+    "13.14"
+  ],
+  "trimSections": [
+    {
+      "id": "13.1",
+      "startsAt": "Mathematically F,",
+      "title": "Unit 13 — first unchecked force equation"
+    },
+    {
+      "id": "13.2",
+      "startsAt": "13.3 MAGNETIC FLUX",
+      "title": "Unit 13 — first unchecked magnetic-flux section"
+    },
+    {
+      "id": "13.3",
+      "startsAt": "SOLUTION\nThe net magnetic field is",
+      "title": "Example 13.2 solution — first unchecked text on printed page 98"
+    },
+    {
+      "id": "13.4",
+      "startsAt": "Consider an closed Amperian path",
+      "title": "Solenoid Ampere-path derivation — first unchecked text on printed page 100"
+    },
+    {
+      "id": "13.5",
+      "startsAt": "D. DETERMINATION OF CHARGE TO MASS RATIO FOR AN ELECTRON",
+      "title": "Electron charge-to-mass ratio — first unchecked text on printed page 106"
+    },
+    {
+      "id": "13.6",
+      "startsAt": "If the electric and magnetic fields are applied perpendicular to each other",
+      "title": "Velocity selector force balance — first unchecked text on printed page 108"
+    },
+    {
+      "id": "13.9",
+      "startsAt": "If we view the loop from side 3 and sight along sides 2 and 4",
+      "title": "Torque derivation continuation — first unchecked text on printed page 110"
+    },
+    {
+      "id": "13.10",
+      "startsAt": "A. CONVERSION OF GALVANOMETER INTO AMMETER",
+      "title": "Conversion of galvanometer into ammeter — first unchecked text on printed page 114"
+    },
+    {
+      "id": "13.11",
+      "startsAt": "Let R, represents the internal resistance of galvanometer",
+      "title": "Voltmeter derivation — first unchecked text on printed page 116"
+    }
+  ],
+  "retireExercises": []
+}

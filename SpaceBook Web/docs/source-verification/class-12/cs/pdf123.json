@@ -1,0 +1,135 @@
+{
+ "pdfPage": 123,
+ "sections": [
+  {
+   "id": "cs12-u8-text-4",
+   "title": "Unit 8 text (4)",
+   "headingUrdu": "یونٹ 8 — متن (4)",
+   "headingPashto": "۸ څپرکی — متن (4)",
+   "paras": [
+    {
+     "text": "8.1.3 Access specifiers",
+     "urdu": "8.1.3 ایکسس اسپیسیفائرز",
+     "pashto": "۸.۱.۳ د لاسرسي ټاکونکي"
+    },
+    {
+     "text": "Access specifiers are the determiners that determine which member of a class is accessible in which part of the class/program. The most commonly used access specifiers in C++ are:",
+     "urdu": "ایکسس اسپیسیفائرز وہ تعین کنندہ ہیں جو طے کرتے ہیں کہ کلاس کا کون سا ممبر کلاس/پروگرام کے کس حصے میں قابلِ رسائی ہے۔ C++ میں سب سے عام ایکسس اسپیسیفائرز یہ ہیں:",
+     "pashto": "د لاسرسي ټاکونکي هغه ټاکونکي دي چې ټاکي د ټولګي کوم غړی د ټولګي/پروګرام په کومه برخه کې د لاسرسي وړ دی. په C++ کې تر ټولو عام د لاسرسي ټاکونکي دا دي:"
+    },
+    {
+     "text": "private access specifier",
+     "urdu": "private ایکسس اسپیسیفائر",
+     "pashto": "private د لاسرسي ټاکونکی"
+    },
+    {
+     "text": "public access specifier",
+     "urdu": "public ایکسس اسپیسیفائر",
+     "pashto": "public د لاسرسي ټاکونکی"
+    },
+    {
+     "text": "a. private access specifier",
+     "urdu": "a. private ایکسس اسپیسیفائر",
+     "pashto": "a. private د لاسرسي ټاکونکی"
+    },
+    {
+     "text": "private access specifier tells the compiler that the members defined in a class by preceding this specifier are accessible only within the class and its friend function. private members are not accessible outside the class.",
+     "urdu": "private ایکسس اسپیسیفائر کمپائلر کو بتاتا ہے کہ کلاس میں اس اسپیسیفائر کے بعد بیان کیے گئے اراکین صرف کلاس اور اس کے friend فنکشن کے اندر قابلِ رسائی ہیں۔ private اراکین کلاس کے باہر قابلِ رسائی نہیں ہوتے۔",
+     "pashto": "private د لاسرسي ټاکونکی کمپایلر ته وايي چې په ټولګي کې د دې ټاکونکي وروسته تعریف شوي غړي یوازې د ټولګي او د هغه د friend فنکشن دننه د لاسرسي وړ دي. private غړي له ټولګي بهر د لاسرسي وړ نه دي."
+    },
+    {
+     "text": "A program explaining the use of private data members within and outside the class is given below.",
+     "urdu": "کلاس کے اندر اور باہر private ڈیٹا ممبرز کا استعمال واضح کرنے والا پروگرام ذیل میں دیا گیا ہے۔",
+     "pashto": "یو پروګرام چې د ټولګي دننه او بهر د private ډېټا غړو کارونه تشریح کوي لاندې ورکړل شوی."
+    },
+    {
+     "text": "#include<iostream.h>\n#include<conio.h>\nclass Date\n{\nprivate:\nint Day;\nint Month;\nint Year;\npublic:\nvoid SetDate(int nDay, int nMonth, int nYear)\n{\nDay = nDay;        ┐\nMonth=nMonth;      ├ Okay: because private members are accessible within the class\nYear = nYear;      ┘\ncout<< “Today’s date is: \"<<Day<< “/\"<<Month<< “/\"<<Year;\n}\n};\nint main()\n{\nDate cDate;\n//cDate.Day = 10;      ┐\n//cDate.Month = 01;    ├ Invalid: because private members cannot be accessible from outside the class\n//cDate.Year = 2012;   ┘\ncDate.SetDate(15, 01, 2012); //Valid\ngetch();\nreturn 0;\n}",
+     "urdu": "#include<iostream.h>\n#include<conio.h>\nclass Date\n{\nprivate:\nint Day;\nint Month;\nint Year;\npublic:\nvoid SetDate(int nDay, int nMonth, int nYear)\n{\nDay = nDay;        ┐\nMonth=nMonth;      ├ Okay: because private members are accessible within the class\nYear = nYear;      ┘\ncout<< “Today’s date is: \"<<Day<< “/\"<<Month<< “/\"<<Year;\n}\n};\nint main()\n{\nDate cDate;\n//cDate.Day = 10;      ┐\n//cDate.Month = 01;    ├ Invalid: because private members cannot be accessible from outside the class\n//cDate.Year = 2012;   ┘\ncDate.SetDate(15, 01, 2012); //Valid\ngetch();\nreturn 0;\n}",
+     "pashto": "#include<iostream.h>\n#include<conio.h>\nclass Date\n{\nprivate:\nint Day;\nint Month;\nint Year;\npublic:\nvoid SetDate(int nDay, int nMonth, int nYear)\n{\nDay = nDay;        ┐\nMonth=nMonth;      ├ Okay: because private members are accessible within the class\nYear = nYear;      ┘\ncout<< “Today’s date is: \"<<Day<< “/\"<<Month<< “/\"<<Year;\n}\n};\nint main()\n{\nDate cDate;\n//cDate.Day = 10;      ┐\n//cDate.Month = 01;    ├ Invalid: because private members cannot be accessible from outside the class\n//cDate.Year = 2012;   ┘\ncDate.SetDate(15, 01, 2012); //Valid\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "8.1.3 Access specifiers\n\nAccess specifiers are the determiners that determine which member of a class is accessible in which part of the class/program. The most commonly used access specifiers in C++ are:\n\nprivate access specifier\n\npublic access specifier\n\na. private access specifier\n\nprivate access specifier tells the compiler that the members defined in a class by preceding this specifier are accessible only within the class and its friend function. private members are not accessible outside the class.\n\nA program explaining the use of private data members within and outside the class is given below.\n\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\nprivate:\nint Day;\nint Month;\nint Year;\npublic:\nvoid SetDate(int nDay, int nMonth, int nYear)\n{\nDay = nDay;        ┐\nMonth=nMonth;      ├ Okay: because private members are accessible within the class\nYear = nYear;      ┘\ncout<< “Today’s date is: \"<<Day<< “/\"<<Month<< “/\"<<Year;\n}\n};\nint main()\n{\nDate cDate;\n//cDate.Day = 10;      ┐\n//cDate.Month = 01;    ├ Invalid: because private members cannot be accessible from outside the class\n//cDate.Year = 2012;   ┘\ncDate.SetDate(15, 01, 2012); //Valid\ngetch();\nreturn 0;\n}",
+   "urdu": "8.1.3 ایکسس اسپیسیفائرز\n\nایکسس اسپیسیفائرز وہ تعین کنندہ ہیں جو طے کرتے ہیں کہ کلاس کا کون سا ممبر کلاس/پروگرام کے کس حصے میں قابلِ رسائی ہے۔ C++ میں سب سے عام ایکسس اسپیسیفائرز یہ ہیں:\n\nprivate ایکسس اسپیسیفائر\n\npublic ایکسس اسپیسیفائر\n\na. private ایکسس اسپیسیفائر\n\nprivate ایکسس اسپیسیفائر کمپائلر کو بتاتا ہے کہ کلاس میں اس اسپیسیفائر کے بعد بیان کیے گئے اراکین صرف کلاس اور اس کے friend فنکشن کے اندر قابلِ رسائی ہیں۔ private اراکین کلاس کے باہر قابلِ رسائی نہیں ہوتے۔\n\nکلاس کے اندر اور باہر private ڈیٹا ممبرز کا استعمال واضح کرنے والا پروگرام ذیل میں دیا گیا ہے۔\n\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\nprivate:\nint Day;\nint Month;\nint Year;\npublic:\nvoid SetDate(int nDay, int nMonth, int nYear)\n{\nDay = nDay;        ┐\nMonth=nMonth;      ├ Okay: because private members are accessible within the class\nYear = nYear;      ┘\ncout<< “Today’s date is: \"<<Day<< “/\"<<Month<< “/\"<<Year;\n}\n};\nint main()\n{\nDate cDate;\n//cDate.Day = 10;      ┐\n//cDate.Month = 01;    ├ Invalid: because private members cannot be accessible from outside the class\n//cDate.Year = 2012;   ┘\ncDate.SetDate(15, 01, 2012); //Valid\ngetch();\nreturn 0;\n}",
+   "pashto": "۸.۱.۳ د لاسرسي ټاکونکي\n\nد لاسرسي ټاکونکي هغه ټاکونکي دي چې ټاکي د ټولګي کوم غړی د ټولګي/پروګرام په کومه برخه کې د لاسرسي وړ دی. په C++ کې تر ټولو عام د لاسرسي ټاکونکي دا دي:\n\nprivate د لاسرسي ټاکونکی\n\npublic د لاسرسي ټاکونکی\n\na. private د لاسرسي ټاکونکی\n\nprivate د لاسرسي ټاکونکی کمپایلر ته وايي چې په ټولګي کې د دې ټاکونکي وروسته تعریف شوي غړي یوازې د ټولګي او د هغه د friend فنکشن دننه د لاسرسي وړ دي. private غړي له ټولګي بهر د لاسرسي وړ نه دي.\n\nیو پروګرام چې د ټولګي دننه او بهر د private ډېټا غړو کارونه تشریح کوي لاندې ورکړل شوی.\n\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\nprivate:\nint Day;\nint Month;\nint Year;\npublic:\nvoid SetDate(int nDay, int nMonth, int nYear)\n{\nDay = nDay;        ┐\nMonth=nMonth;      ├ Okay: because private members are accessible within the class\nYear = nYear;      ┘\ncout<< “Today’s date is: \"<<Day<< “/\"<<Month<< “/\"<<Year;\n}\n};\nint main()\n{\nDate cDate;\n//cDate.Day = 10;      ┐\n//cDate.Month = 01;    ├ Invalid: because private members cannot be accessible from outside the class\n//cDate.Year = 2012;   ┘\ncDate.SetDate(15, 01, 2012); //Valid\ngetch();\nreturn 0;\n}",
+   "theoryUrdu": "8.1.3 ایکسس اسپیسیفائرز\n\nایکسس اسپیسیفائرز وہ تعین کنندہ ہیں جو طے کرتے ہیں کہ کلاس کا کون سا ممبر کلاس/پروگرام کے کس حصے میں قابلِ رسائی ہے۔ C++ میں سب سے عام ایکسس اسپیسیفائرز یہ ہیں:\n\nprivate ایکسس اسپیسیفائر\n\npublic ایکسس اسپیسیفائر\n\na. private ایکسس اسپیسیفائر\n\nprivate ایکسس اسپیسیفائر کمپائلر کو بتاتا ہے کہ کلاس میں اس اسپیسیفائر کے بعد بیان کیے گئے اراکین صرف کلاس اور اس کے friend فنکشن کے اندر قابلِ رسائی ہیں۔ private اراکین کلاس کے باہر قابلِ رسائی نہیں ہوتے۔\n\nکلاس کے اندر اور باہر private ڈیٹا ممبرز کا استعمال واضح کرنے والا پروگرام ذیل میں دیا گیا ہے۔\n\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\nprivate:\nint Day;\nint Month;\nint Year;\npublic:\nvoid SetDate(int nDay, int nMonth, int nYear)\n{\nDay = nDay;        ┐\nMonth=nMonth;      ├ Okay: because private members are accessible within the class\nYear = nYear;      ┘\ncout<< “Today’s date is: \"<<Day<< “/\"<<Month<< “/\"<<Year;\n}\n};\nint main()\n{\nDate cDate;\n//cDate.Day = 10;      ┐\n//cDate.Month = 01;    ├ Invalid: because private members cannot be accessible from outside the class\n//cDate.Year = 2012;   ┘\ncDate.SetDate(15, 01, 2012); //Valid\ngetch();\nreturn 0;\n}",
+   "theoryPashto": "۸.۱.۳ د لاسرسي ټاکونکي\n\nد لاسرسي ټاکونکي هغه ټاکونکي دي چې ټاکي د ټولګي کوم غړی د ټولګي/پروګرام په کومه برخه کې د لاسرسي وړ دی. په C++ کې تر ټولو عام د لاسرسي ټاکونکي دا دي:\n\nprivate د لاسرسي ټاکونکی\n\npublic د لاسرسي ټاکونکی\n\na. private د لاسرسي ټاکونکی\n\nprivate د لاسرسي ټاکونکی کمپایلر ته وايي چې په ټولګي کې د دې ټاکونکي وروسته تعریف شوي غړي یوازې د ټولګي او د هغه د friend فنکشن دننه د لاسرسي وړ دي. private غړي له ټولګي بهر د لاسرسي وړ نه دي.\n\nیو پروګرام چې د ټولګي دننه او بهر د private ډېټا غړو کارونه تشریح کوي لاندې ورکړل شوی.\n\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\nprivate:\nint Day;\nint Month;\nint Year;\npublic:\nvoid SetDate(int nDay, int nMonth, int nYear)\n{\nDay = nDay;        ┐\nMonth=nMonth;      ├ Okay: because private members are accessible within the class\nYear = nYear;      ┘\ncout<< “Today’s date is: \"<<Day<< “/\"<<Month<< “/\"<<Year;\n}\n};\nint main()\n{\nDate cDate;\n//cDate.Day = 10;      ┐\n//cDate.Month = 01;    ├ Invalid: because private members cannot be accessible from outside the class\n//cDate.Year = 2012;   ┘\ncDate.SetDate(15, 01, 2012); //Valid\ngetch();\nreturn 0;\n}",
+   "content": "<p>8.1.3 Access specifiers</p><p>Access specifiers are the determiners that determine which member of a class is accessible in which part of the class/program. The most commonly used access specifiers in C++ are:</p><p>private access specifier</p><p>public access specifier</p><p>a. private access specifier</p><p>private access specifier tells the compiler that the members defined in a class by preceding this specifier are accessible only within the class and its friend function. private members are not accessible outside the class.</p><p>A program explaining the use of private data members within and outside the class is given below.</p><p>#include&lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nclass Date\n{\nprivate:\nint Day;\nint Month;\nint Year;\npublic:\nvoid SetDate(int nDay, int nMonth, int nYear)\n{\nDay = nDay;        ┐\nMonth=nMonth;      ├ Okay: because private members are accessible within the class\nYear = nYear;      ┘\ncout&lt;&lt; “Today’s date is: &quot;&lt;&lt;Day&lt;&lt; “/&quot;&lt;&lt;Month&lt;&lt; “/&quot;&lt;&lt;Year;\n}\n};\nint main()\n{\nDate cDate;\n//cDate.Day = 10;      ┐\n//cDate.Month = 01;    ├ Invalid: because private members cannot be accessible from outside the class\n//cDate.Year = 2012;   ┘\ncDate.SetDate(15, 01, 2012); //Valid\ngetch();\nreturn 0;\n}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      2,
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 123,
+     "printedPages": [
+      234,
+      235
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (4)",
+   "sourcePageLabel": "PDF 123 · p. 234–235",
+   "sourceNote": "The top of p.234 (end of the Date program and its output) is recorded with PDF122. The two callout boxes on p.235 are reproduced as text markers beside the bracketed lines.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf123",
+   "unit": 8,
+   "printedPage": 235,
+   "description": "Callout “private members cannot be accessible from outside the class”; the program uses curly opening quotes. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

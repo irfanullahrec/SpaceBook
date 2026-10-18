@@ -1,0 +1,255 @@
+{
+ "pdfPage": 51,
+ "sections": [
+  {
+   "id": "cs12-u3-text-17",
+   "title": "Unit 3 text (17)",
+   "headingUrdu": "یونٹ 3 — متن (۱۷)",
+   "headingPashto": "۳ څپرکی — متن (۱۷)",
+   "paras": [
+    {
+     "text": "3.4 Operators in C++",
+     "urdu": "3.4 C++ میں آپریٹرز",
+     "pashto": "۳.۴ په C++ کې چلونکي"
+    },
+    {
+     "text": "Operators are the symbols which perform operation on operands. The operation may be arithmetic or comparison of data.",
+     "urdu": "آپریٹرز وہ علامات ہیں جو آپرینڈز پر عمل کرتی ہیں۔ یہ عمل حسابی یا ڈیٹا کا موازنہ ہو سکتا ہے۔",
+     "pashto": "چلونکي هغه نښې دي چې پر عملوندونو (operands) عملیه ترسره کوي. عملیه کېدای شي حسابي یا د ډېټا پرتله وي."
+    },
+    {
+     "text": "z=x+y;",
+     "urdu": "z=x+y;",
+     "pashto": "z=x+y;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, x, y and z are operands and ‘+’ and ‘=’ are the operators.",
+     "urdu": "یہاں x، y اور z آپرینڈز ہیں اور ‘+’ اور ‘=’ آپریٹرز ہیں۔",
+     "pashto": "دلته x، y او z عملوندونه دي او ‘+’ او ‘=’ چلونکي دي."
+    },
+    {
+     "text": "3.4.1 Operators in C++",
+     "urdu": "3.4.1 C++ میں آپریٹرز",
+     "pashto": "۳.۴.۱ په C++ کې چلونکي"
+    },
+    {
+     "text": "C++ is rich in operators and supports a wide range of these operators that range from the simplest unary to the complex ternary. Operators are very important because without their use, expressions cannot be evaluated.",
+     "urdu": "C++ آپریٹرز سے بھرپور ہے اور ان آپریٹرز کی ایک وسیع رینج کو سپورٹ کرتی ہے جو سادہ ترین یونری سے پیچیدہ ٹرنری تک ہیں۔ آپریٹرز بہت اہم ہیں کیونکہ ان کے استعمال کے بغیر ایکسپریشنز کی قدر نہیں نکالی جا سکتی۔",
+     "pashto": "C++ په چلونکو بډایه ده او د دې چلونکو پراخه لړۍ ملاتړ کوي چې له تر ټولو ساده یو-عملي تر پېچلي درې-عملي پورې دي. چلونکي ډېر مهم دي، ځکه له کارونې پرته یې افادې نه شي ارزول کېدای."
+    },
+    {
+     "text": "The following are different types of operators used in C++.",
+     "urdu": "C++ میں استعمال ہونے والے آپریٹرز کی مختلف اقسام درج ذیل ہیں۔",
+     "pashto": "په C++ کې کارېدونکي بېلابېل ډوله چلونکي دا دي."
+    },
+    {
+     "text": "a. Assignment = operator",
+     "urdu": "a. اسائنمنٹ = آپریٹر",
+     "pashto": "a. د سپارلو = چلونکی"
+    },
+    {
+     "text": "The assignment operator assigns a value to a variable. The symbol = is used as an assignment operator. For example:",
+     "urdu": "اسائنمنٹ آپریٹر ویری ایبل کو قدر تفویض کرتا ہے۔ علامت = اسائنمنٹ آپریٹر کے طور پر استعمال ہوتی ہے۔ مثلاً:",
+     "pashto": "د سپارلو چلونکی متغیر ته ارزښت سپاري. د = نښه د سپارلو چلونکي په توګه کارول کېږي. د بېلګې په توګه:"
+    },
+    {
+     "text": "VarA = 55;",
+     "urdu": "VarA = 55;",
+     "pashto": "VarA = 55;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This statement assigns the integer value 55 to the variable VarA. The part at the left of the assignment operator = is a variable whereas the right side can be a constant value, a variable, the result of an operation or any combination of these.",
+     "urdu": "یہ بیان صحیح عددی قدر 55 ویری ایبل VarA کو تفویض کرتا ہے۔ اسائنمنٹ آپریٹر = کے بائیں طرف کا حصہ ویری ایبل ہوتا ہے جبکہ دائیں طرف کانسٹنٹ قدر، ویری ایبل، کسی عمل کا نتیجہ یا ان کا کوئی مجموعہ ہو سکتا ہے۔",
+     "pashto": "دا بیان صحیح عددي ارزښت 55 د VarA متغیر ته سپاري. د سپارلو چلونکي = چپ اړخ ته برخه متغیر وي، په داسې حال کې چې ښي اړخ کېدای شي ثابت ارزښت، متغیر، د یوې عملیې پایله یا د دوی هر ګډون وي."
+    },
+    {
+     "text": "The assignment operation always takes place from right to left.",
+     "urdu": "اسائنمنٹ کا عمل ہمیشہ دائیں سے بائیں ہوتا ہے۔",
+     "pashto": "د سپارلو عملیه تل له ښي څخه کیڼ لوري ته کېږي."
+    },
+    {
+     "text": "VarA = VarB;",
+     "urdu": "VarA = VarB;",
+     "pashto": "VarA = VarB;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This statement assigns the value of variable VarB to VarA.",
+     "urdu": "یہ بیان ویری ایبل VarB کی قدر VarA کو تفویض کرتا ہے۔",
+     "pashto": "دا بیان د VarB متغیر ارزښت VarA ته سپاري."
+    },
+    {
+     "text": "Consider the following program to demonstrate the use of assignment operator.",
+     "urdu": "اسائنمنٹ آپریٹر کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د سپارلو چلونکي د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint VarA, VarB;\nVarA = 100;\nVarB = 400;\ncout<<\" VarA :\"<<VarA;\ncout<<endl;\ncout<<\" VarB :\"<<VarB;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint VarA, VarB;\nVarA = 100;\nVarB = 400;\ncout<<\" VarA :\"<<VarA;\ncout<<endl;\ncout<<\" VarB :\"<<VarB;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint VarA, VarB;\nVarA = 100;\nVarB = 400;\ncout<<\" VarA :\"<<VarA;\ncout<<endl;\ncout<<\" VarB :\"<<VarB;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "VarA :100\nVarB :400",
+     "urdu": "VarA :100\nVarB :400",
+     "pashto": "VarA :100\nVarB :400",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "3.4 Operators in C++\n\nOperators are the symbols which perform operation on operands. The operation may be arithmetic or comparison of data.\n\nz=x+y;\n\nHere, x, y and z are operands and ‘+’ and ‘=’ are the operators.\n\n3.4.1 Operators in C++\n\nC++ is rich in operators and supports a wide range of these operators that range from the simplest unary to the complex ternary. Operators are very important because without their use, expressions cannot be evaluated.\n\nThe following are different types of operators used in C++.\n\na. Assignment = operator\n\nThe assignment operator assigns a value to a variable. The symbol = is used as an assignment operator. For example:\n\nVarA = 55;\n\nThis statement assigns the integer value 55 to the variable VarA. The part at the left of the assignment operator = is a variable whereas the right side can be a constant value, a variable, the result of an operation or any combination of these.\n\nThe assignment operation always takes place from right to left.\n\nVarA = VarB;\n\nThis statement assigns the value of variable VarB to VarA.\n\nConsider the following program to demonstrate the use of assignment operator.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint VarA, VarB;\nVarA = 100;\nVarB = 400;\ncout<<\" VarA :\"<<VarA;\ncout<<endl;\ncout<<\" VarB :\"<<VarB;\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nVarA :100\nVarB :400",
+   "urdu": "3.4 C++ میں آپریٹرز\n\nآپریٹرز وہ علامات ہیں جو آپرینڈز پر عمل کرتی ہیں۔ یہ عمل حسابی یا ڈیٹا کا موازنہ ہو سکتا ہے۔\n\nz=x+y;\n\nیہاں x، y اور z آپرینڈز ہیں اور ‘+’ اور ‘=’ آپریٹرز ہیں۔\n\n3.4.1 C++ میں آپریٹرز\n\nC++ آپریٹرز سے بھرپور ہے اور ان آپریٹرز کی ایک وسیع رینج کو سپورٹ کرتی ہے جو سادہ ترین یونری سے پیچیدہ ٹرنری تک ہیں۔ آپریٹرز بہت اہم ہیں کیونکہ ان کے استعمال کے بغیر ایکسپریشنز کی قدر نہیں نکالی جا سکتی۔\n\nC++ میں استعمال ہونے والے آپریٹرز کی مختلف اقسام درج ذیل ہیں۔\n\na. اسائنمنٹ = آپریٹر\n\nاسائنمنٹ آپریٹر ویری ایبل کو قدر تفویض کرتا ہے۔ علامت = اسائنمنٹ آپریٹر کے طور پر استعمال ہوتی ہے۔ مثلاً:\n\nVarA = 55;\n\nیہ بیان صحیح عددی قدر 55 ویری ایبل VarA کو تفویض کرتا ہے۔ اسائنمنٹ آپریٹر = کے بائیں طرف کا حصہ ویری ایبل ہوتا ہے جبکہ دائیں طرف کانسٹنٹ قدر، ویری ایبل، کسی عمل کا نتیجہ یا ان کا کوئی مجموعہ ہو سکتا ہے۔\n\nاسائنمنٹ کا عمل ہمیشہ دائیں سے بائیں ہوتا ہے۔\n\nVarA = VarB;\n\nیہ بیان ویری ایبل VarB کی قدر VarA کو تفویض کرتا ہے۔\n\nاسائنمنٹ آپریٹر کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint VarA, VarB;\nVarA = 100;\nVarB = 400;\ncout<<\" VarA :\"<<VarA;\ncout<<endl;\ncout<<\" VarB :\"<<VarB;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nVarA :100\nVarB :400",
+   "pashto": "۳.۴ په C++ کې چلونکي\n\nچلونکي هغه نښې دي چې پر عملوندونو (operands) عملیه ترسره کوي. عملیه کېدای شي حسابي یا د ډېټا پرتله وي.\n\nz=x+y;\n\nدلته x، y او z عملوندونه دي او ‘+’ او ‘=’ چلونکي دي.\n\n۳.۴.۱ په C++ کې چلونکي\n\nC++ په چلونکو بډایه ده او د دې چلونکو پراخه لړۍ ملاتړ کوي چې له تر ټولو ساده یو-عملي تر پېچلي درې-عملي پورې دي. چلونکي ډېر مهم دي، ځکه له کارونې پرته یې افادې نه شي ارزول کېدای.\n\nپه C++ کې کارېدونکي بېلابېل ډوله چلونکي دا دي.\n\na. د سپارلو = چلونکی\n\nد سپارلو چلونکی متغیر ته ارزښت سپاري. د = نښه د سپارلو چلونکي په توګه کارول کېږي. د بېلګې په توګه:\n\nVarA = 55;\n\nدا بیان صحیح عددي ارزښت 55 د VarA متغیر ته سپاري. د سپارلو چلونکي = چپ اړخ ته برخه متغیر وي، په داسې حال کې چې ښي اړخ کېدای شي ثابت ارزښت، متغیر، د یوې عملیې پایله یا د دوی هر ګډون وي.\n\nد سپارلو عملیه تل له ښي څخه کیڼ لوري ته کېږي.\n\nVarA = VarB;\n\nدا بیان د VarB متغیر ارزښت VarA ته سپاري.\n\nد سپارلو چلونکي د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint VarA, VarB;\nVarA = 100;\nVarB = 400;\ncout<<\" VarA :\"<<VarA;\ncout<<endl;\ncout<<\" VarB :\"<<VarB;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nVarA :100\nVarB :400",
+   "theoryUrdu": "3.4 C++ میں آپریٹرز\n\nآپریٹرز وہ علامات ہیں جو آپرینڈز پر عمل کرتی ہیں۔ یہ عمل حسابی یا ڈیٹا کا موازنہ ہو سکتا ہے۔\n\nz=x+y;\n\nیہاں x، y اور z آپرینڈز ہیں اور ‘+’ اور ‘=’ آپریٹرز ہیں۔\n\n3.4.1 C++ میں آپریٹرز\n\nC++ آپریٹرز سے بھرپور ہے اور ان آپریٹرز کی ایک وسیع رینج کو سپورٹ کرتی ہے جو سادہ ترین یونری سے پیچیدہ ٹرنری تک ہیں۔ آپریٹرز بہت اہم ہیں کیونکہ ان کے استعمال کے بغیر ایکسپریشنز کی قدر نہیں نکالی جا سکتی۔\n\nC++ میں استعمال ہونے والے آپریٹرز کی مختلف اقسام درج ذیل ہیں۔\n\na. اسائنمنٹ = آپریٹر\n\nاسائنمنٹ آپریٹر ویری ایبل کو قدر تفویض کرتا ہے۔ علامت = اسائنمنٹ آپریٹر کے طور پر استعمال ہوتی ہے۔ مثلاً:\n\nVarA = 55;\n\nیہ بیان صحیح عددی قدر 55 ویری ایبل VarA کو تفویض کرتا ہے۔ اسائنمنٹ آپریٹر = کے بائیں طرف کا حصہ ویری ایبل ہوتا ہے جبکہ دائیں طرف کانسٹنٹ قدر، ویری ایبل، کسی عمل کا نتیجہ یا ان کا کوئی مجموعہ ہو سکتا ہے۔\n\nاسائنمنٹ کا عمل ہمیشہ دائیں سے بائیں ہوتا ہے۔\n\nVarA = VarB;\n\nیہ بیان ویری ایبل VarB کی قدر VarA کو تفویض کرتا ہے۔\n\nاسائنمنٹ آپریٹر کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint VarA, VarB;\nVarA = 100;\nVarB = 400;\ncout<<\" VarA :\"<<VarA;\ncout<<endl;\ncout<<\" VarB :\"<<VarB;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nVarA :100\nVarB :400",
+   "theoryPashto": "۳.۴ په C++ کې چلونکي\n\nچلونکي هغه نښې دي چې پر عملوندونو (operands) عملیه ترسره کوي. عملیه کېدای شي حسابي یا د ډېټا پرتله وي.\n\nz=x+y;\n\nدلته x، y او z عملوندونه دي او ‘+’ او ‘=’ چلونکي دي.\n\n۳.۴.۱ په C++ کې چلونکي\n\nC++ په چلونکو بډایه ده او د دې چلونکو پراخه لړۍ ملاتړ کوي چې له تر ټولو ساده یو-عملي تر پېچلي درې-عملي پورې دي. چلونکي ډېر مهم دي، ځکه له کارونې پرته یې افادې نه شي ارزول کېدای.\n\nپه C++ کې کارېدونکي بېلابېل ډوله چلونکي دا دي.\n\na. د سپارلو = چلونکی\n\nد سپارلو چلونکی متغیر ته ارزښت سپاري. د = نښه د سپارلو چلونکي په توګه کارول کېږي. د بېلګې په توګه:\n\nVarA = 55;\n\nدا بیان صحیح عددي ارزښت 55 د VarA متغیر ته سپاري. د سپارلو چلونکي = چپ اړخ ته برخه متغیر وي، په داسې حال کې چې ښي اړخ کېدای شي ثابت ارزښت، متغیر، د یوې عملیې پایله یا د دوی هر ګډون وي.\n\nد سپارلو عملیه تل له ښي څخه کیڼ لوري ته کېږي.\n\nVarA = VarB;\n\nدا بیان د VarB متغیر ارزښت VarA ته سپاري.\n\nد سپارلو چلونکي د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint VarA, VarB;\nVarA = 100;\nVarB = 400;\ncout<<\" VarA :\"<<VarA;\ncout<<endl;\ncout<<\" VarB :\"<<VarB;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nVarA :100\nVarB :400",
+   "content": "<p>3.4 Operators in C++</p><p>Operators are the symbols which perform operation on operands. The operation may be arithmetic or comparison of data.</p><p>z=x+y;</p><p>Here, x, y and z are operands and ‘+’ and ‘=’ are the operators.</p><p>3.4.1 Operators in C++</p><p>C++ is rich in operators and supports a wide range of these operators that range from the simplest unary to the complex ternary. Operators are very important because without their use, expressions cannot be evaluated.</p><p>The following are different types of operators used in C++.</p><p>a. Assignment = operator</p><p>The assignment operator assigns a value to a variable. The symbol = is used as an assignment operator. For example:</p><p>VarA = 55;</p><p>This statement assigns the integer value 55 to the variable VarA. The part at the left of the assignment operator = is a variable whereas the right side can be a constant value, a variable, the result of an operation or any combination of these.</p><p>The assignment operation always takes place from right to left.</p><p>VarA = VarB;</p><p>This statement assigns the value of variable VarB to VarA.</p><p>Consider the following program to demonstrate the use of assignment operator.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint VarA, VarB;\nVarA = 100;\nVarB = 400;\ncout&lt;&lt;&quot; VarA :&quot;&lt;&lt;VarA;\ncout&lt;&lt;endl;\ncout&lt;&lt;&quot; VarB :&quot;&lt;&lt;VarB;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>VarA :100\nVarB :400</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      17
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 51,
+     "printedPages": [
+      90,
+      91,
+      92
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (17)",
+   "sourcePageLabel": "PDF 51 · p. 90–91–92",
+   "sourceNote": "The first lines of p.90 (setw listing end and output) are recorded with PDF50. The assignment program continues on p.92 (PDF52) and is given whole here with its output.",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf051",
+   "unit": 3,
+   "printedPage": 90,
+   "description": "Section numbers are printed “3.4.” and “3.4.1.”, and 3.4.1 repeats the heading “Operators in C++”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

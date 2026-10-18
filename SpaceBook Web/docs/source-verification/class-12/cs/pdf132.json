@@ -1,0 +1,153 @@
+{
+ "pdfPage": 132,
+ "sections": [
+  {
+   "id": "cs12-u8-text-13",
+   "title": "Unit 8 text (13)",
+   "headingUrdu": "یونٹ 8 — متن (13)",
+   "headingPashto": "۸ څپرکی — متن (13)",
+   "paras": [
+    {
+     "text": "In this example, we have two classes A and B. Class B is publically derived from class A and has therefore right to access the member function of class A. In main (), we have created only object b1 for class B and have called the member functions showa() of base class A and showb() of derived class B that have produced the output as shown above.",
+     "urdu": "اس مثال میں ہمارے پاس دو کلاسز A اور B ہیں۔ کلاس B، کلاس A سے public طور پر اخذ کی گئی ہے اور اس لیے اسے کلاس A کے ممبر فنکشن تک رسائی کا حق ہے۔ main () میں ہم نے کلاس B کا صرف آبجیکٹ b1 بنایا ہے اور بیس کلاس A کا ممبر فنکشن showa() اور ڈیرائیوڈ کلاس B کا showb() کال کیا ہے جنھوں نے اوپر دکھایا گیا آؤٹ پٹ پیدا کیا ہے۔",
+     "pashto": "په دې بېلګه کې دوه ټولګي A او B لرو. B ټولګی له A ټولګي څخه په public ډول مشتق شوی او له دې امله د A ټولګي غړي فنکشن ته د لاسرسي حق لري. په main () کې موږ د B ټولګي یوازې b1 شی جوړ کړی او د اساسي ټولګي A غړی فنکشن showa() او د مشتق ټولګي B showb() مو غوښتي چې پورته ښودل شوې وتنه یې جوړه کړې."
+    },
+    {
+     "text": "In inheritance, sometimes a class is derived from more than one parent classes and the phenomenon is called multiple inheritance. In this case the derived class has properties of base classes as well as its own.",
+     "urdu": "وراثت میں بعض اوقات ایک کلاس ایک سے زیادہ پیرنٹ کلاسز سے اخذ کی جاتی ہے اور اس عمل کو متعدد وراثت کہتے ہیں۔ اس صورت میں ڈیرائیوڈ کلاس میں بیس کلاسز کی خصوصیات کے ساتھ اپنی خصوصیات بھی ہوتی ہیں۔",
+     "pashto": "په میراث کې کله کله یو ټولګی له یوه ډېرو مور/پلار ټولګیو مشتق کېږي او دې پدیدې ته څو ګونی میراث وایي. په دې حالت کې مشتق ټولګی د اساسي ټولګیو ځانګړنې او خپلې ځانګړنې هم لري."
+    },
+    {
+     "text": "class A\n{ };\nclass B\n{ };\nclass c: public A, public B\n{ };",
+     "urdu": "class A\n{ };\nclass B\n{ };\nclass c: public A, public B\n{ };",
+     "pashto": "class A\n{ };\nclass B\n{ };\nclass c: public A, public B\n{ };",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. Polymorphism",
+     "urdu": "b. پولی مورفزم",
+     "pashto": "b. پولي‌مورفیزم"
+    },
+    {
+     "text": "Polymorphism is the ability to use an operator or function in multiple ways. Polymorphism gives different meanings or functionality to the operators or functions. Poly, refers to many, signifies that there are many uses of these operators and functions.",
+     "urdu": "پولی مورفزم کسی آپریٹر یا فنکشن کو متعدد طریقوں سے استعمال کرنے کی صلاحیت ہے۔ پولی مورفزم آپریٹرز یا فنکشنز کو مختلف معنی یا کارکردگی دیتا ہے۔ Poly یعنی بہت سے، ظاہر کرتا ہے کہ ان آپریٹرز اور فنکشنز کے بہت سے استعمالات ہیں۔",
+     "pashto": "پولي‌مورفیزم د یوه چلونکي یا فنکشن په ډېرو لارو د کارولو وړتیا ده. پولي‌مورفیزم چلونکو یا فنکشنونو ته بېلې معناوې یا دندې ورکوي. Poly چې ډېر معنا لري، ښيي چې د دې چلونکو او فنکشنونو ډېرې کارونې دي."
+    },
+    {
+     "text": "In C++, polymorphism can be achieved by one of the following concepts.",
+     "urdu": "C++ میں پولی مورفزم درج ذیل تصورات میں سے کسی ایک سے حاصل کیا جا سکتا ہے۔",
+     "pashto": "په C++ کې پولي‌مورفیزم د لاندې مفاهیمو له یوه په مرسته ترلاسه کېدای شي."
+    },
+    {
+     "text": "Function overloading",
+     "urdu": "فنکشن اوورلوڈنگ",
+     "pashto": "د فنکشن ډېرول"
+    },
+    {
+     "text": "Operator overloading",
+     "urdu": "آپریٹر اوورلوڈنگ",
+     "pashto": "د چلونکي ډېرول"
+    },
+    {
+     "text": "Virtual functions",
+     "urdu": "ورچوئل فنکشنز",
+     "pashto": "مجازي فنکشنونه"
+    }
+   ],
+   "theory": "In this example, we have two classes A and B. Class B is publically derived from class A and has therefore right to access the member function of class A. In main (), we have created only object b1 for class B and have called the member functions showa() of base class A and showb() of derived class B that have produced the output as shown above.\n\nIn inheritance, sometimes a class is derived from more than one parent classes and the phenomenon is called multiple inheritance. In this case the derived class has properties of base classes as well as its own.\n\nclass A\n{ };\nclass B\n{ };\nclass c: public A, public B\n{ };\n\nb. Polymorphism\n\nPolymorphism is the ability to use an operator or function in multiple ways. Polymorphism gives different meanings or functionality to the operators or functions. Poly, refers to many, signifies that there are many uses of these operators and functions.\n\nIn C++, polymorphism can be achieved by one of the following concepts.\n\nFunction overloading\n\nOperator overloading\n\nVirtual functions",
+   "urdu": "اس مثال میں ہمارے پاس دو کلاسز A اور B ہیں۔ کلاس B، کلاس A سے public طور پر اخذ کی گئی ہے اور اس لیے اسے کلاس A کے ممبر فنکشن تک رسائی کا حق ہے۔ main () میں ہم نے کلاس B کا صرف آبجیکٹ b1 بنایا ہے اور بیس کلاس A کا ممبر فنکشن showa() اور ڈیرائیوڈ کلاس B کا showb() کال کیا ہے جنھوں نے اوپر دکھایا گیا آؤٹ پٹ پیدا کیا ہے۔\n\nوراثت میں بعض اوقات ایک کلاس ایک سے زیادہ پیرنٹ کلاسز سے اخذ کی جاتی ہے اور اس عمل کو متعدد وراثت کہتے ہیں۔ اس صورت میں ڈیرائیوڈ کلاس میں بیس کلاسز کی خصوصیات کے ساتھ اپنی خصوصیات بھی ہوتی ہیں۔\n\nclass A\n{ };\nclass B\n{ };\nclass c: public A, public B\n{ };\n\nb. پولی مورفزم\n\nپولی مورفزم کسی آپریٹر یا فنکشن کو متعدد طریقوں سے استعمال کرنے کی صلاحیت ہے۔ پولی مورفزم آپریٹرز یا فنکشنز کو مختلف معنی یا کارکردگی دیتا ہے۔ Poly یعنی بہت سے، ظاہر کرتا ہے کہ ان آپریٹرز اور فنکشنز کے بہت سے استعمالات ہیں۔\n\nC++ میں پولی مورفزم درج ذیل تصورات میں سے کسی ایک سے حاصل کیا جا سکتا ہے۔\n\nفنکشن اوورلوڈنگ\n\nآپریٹر اوورلوڈنگ\n\nورچوئل فنکشنز",
+   "pashto": "په دې بېلګه کې دوه ټولګي A او B لرو. B ټولګی له A ټولګي څخه په public ډول مشتق شوی او له دې امله د A ټولګي غړي فنکشن ته د لاسرسي حق لري. په main () کې موږ د B ټولګي یوازې b1 شی جوړ کړی او د اساسي ټولګي A غړی فنکشن showa() او د مشتق ټولګي B showb() مو غوښتي چې پورته ښودل شوې وتنه یې جوړه کړې.\n\nپه میراث کې کله کله یو ټولګی له یوه ډېرو مور/پلار ټولګیو مشتق کېږي او دې پدیدې ته څو ګونی میراث وایي. په دې حالت کې مشتق ټولګی د اساسي ټولګیو ځانګړنې او خپلې ځانګړنې هم لري.\n\nclass A\n{ };\nclass B\n{ };\nclass c: public A, public B\n{ };\n\nb. پولي‌مورفیزم\n\nپولي‌مورفیزم د یوه چلونکي یا فنکشن په ډېرو لارو د کارولو وړتیا ده. پولي‌مورفیزم چلونکو یا فنکشنونو ته بېلې معناوې یا دندې ورکوي. Poly چې ډېر معنا لري، ښيي چې د دې چلونکو او فنکشنونو ډېرې کارونې دي.\n\nپه C++ کې پولي‌مورفیزم د لاندې مفاهیمو له یوه په مرسته ترلاسه کېدای شي.\n\nد فنکشن ډېرول\n\nد چلونکي ډېرول\n\nمجازي فنکشنونه",
+   "theoryUrdu": "اس مثال میں ہمارے پاس دو کلاسز A اور B ہیں۔ کلاس B، کلاس A سے public طور پر اخذ کی گئی ہے اور اس لیے اسے کلاس A کے ممبر فنکشن تک رسائی کا حق ہے۔ main () میں ہم نے کلاس B کا صرف آبجیکٹ b1 بنایا ہے اور بیس کلاس A کا ممبر فنکشن showa() اور ڈیرائیوڈ کلاس B کا showb() کال کیا ہے جنھوں نے اوپر دکھایا گیا آؤٹ پٹ پیدا کیا ہے۔\n\nوراثت میں بعض اوقات ایک کلاس ایک سے زیادہ پیرنٹ کلاسز سے اخذ کی جاتی ہے اور اس عمل کو متعدد وراثت کہتے ہیں۔ اس صورت میں ڈیرائیوڈ کلاس میں بیس کلاسز کی خصوصیات کے ساتھ اپنی خصوصیات بھی ہوتی ہیں۔\n\nclass A\n{ };\nclass B\n{ };\nclass c: public A, public B\n{ };\n\nb. پولی مورفزم\n\nپولی مورفزم کسی آپریٹر یا فنکشن کو متعدد طریقوں سے استعمال کرنے کی صلاحیت ہے۔ پولی مورفزم آپریٹرز یا فنکشنز کو مختلف معنی یا کارکردگی دیتا ہے۔ Poly یعنی بہت سے، ظاہر کرتا ہے کہ ان آپریٹرز اور فنکشنز کے بہت سے استعمالات ہیں۔\n\nC++ میں پولی مورفزم درج ذیل تصورات میں سے کسی ایک سے حاصل کیا جا سکتا ہے۔\n\nفنکشن اوورلوڈنگ\n\nآپریٹر اوورلوڈنگ\n\nورچوئل فنکشنز",
+   "theoryPashto": "په دې بېلګه کې دوه ټولګي A او B لرو. B ټولګی له A ټولګي څخه په public ډول مشتق شوی او له دې امله د A ټولګي غړي فنکشن ته د لاسرسي حق لري. په main () کې موږ د B ټولګي یوازې b1 شی جوړ کړی او د اساسي ټولګي A غړی فنکشن showa() او د مشتق ټولګي B showb() مو غوښتي چې پورته ښودل شوې وتنه یې جوړه کړې.\n\nپه میراث کې کله کله یو ټولګی له یوه ډېرو مور/پلار ټولګیو مشتق کېږي او دې پدیدې ته څو ګونی میراث وایي. په دې حالت کې مشتق ټولګی د اساسي ټولګیو ځانګړنې او خپلې ځانګړنې هم لري.\n\nclass A\n{ };\nclass B\n{ };\nclass c: public A, public B\n{ };\n\nb. پولي‌مورفیزم\n\nپولي‌مورفیزم د یوه چلونکي یا فنکشن په ډېرو لارو د کارولو وړتیا ده. پولي‌مورفیزم چلونکو یا فنکشنونو ته بېلې معناوې یا دندې ورکوي. Poly چې ډېر معنا لري، ښيي چې د دې چلونکو او فنکشنونو ډېرې کارونې دي.\n\nپه C++ کې پولي‌مورفیزم د لاندې مفاهیمو له یوه په مرسته ترلاسه کېدای شي.\n\nد فنکشن ډېرول\n\nد چلونکي ډېرول\n\nمجازي فنکشنونه",
+   "content": "<p>In this example, we have two classes A and B. Class B is publically derived from class A and has therefore right to access the member function of class A. In main (), we have created only object b1 for class B and have called the member functions showa() of base class A and showb() of derived class B that have produced the output as shown above.</p><p>In inheritance, sometimes a class is derived from more than one parent classes and the phenomenon is called multiple inheritance. In this case the derived class has properties of base classes as well as its own.</p><p>class A\n{ };\nclass B\n{ };\nclass c: public A, public B\n{ };</p><p>b. Polymorphism</p><p>Polymorphism is the ability to use an operator or function in multiple ways. Polymorphism gives different meanings or functionality to the operators or functions. Poly, refers to many, signifies that there are many uses of these operators and functions.</p><p>In C++, polymorphism can be achieved by one of the following concepts.</p><p>Function overloading</p><p>Operator overloading</p><p>Virtual functions</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-8-4"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-8-4",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" role=\"img\" aria-label=\"Figure 8.4: Multiple Inheritance\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"420\" height=\"250\" fill=\"#ffffff\"/><rect x=\"60.0\" y=\"20.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">class A</text><rect x=\"240.0\" y=\"20.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"300\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">class B</text><rect x=\"150.0\" y=\"150.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"210\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">class c</text><line x1=\"210\" y1=\"150.0\" x2=\"120\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"210\" y1=\"150.0\" x2=\"300\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"210.0\" y=\"242\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Figure 8.4: Multiple Inheritance</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" role=\"img\" aria-label=\"شکل 8.4: متعدد وراثت\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"420\" height=\"250\" fill=\"#ffffff\"/><rect x=\"60.0\" y=\"20.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">class A</text><rect x=\"240.0\" y=\"20.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"300\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">class B</text><rect x=\"150.0\" y=\"150.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"210\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">class c</text><line x1=\"210\" y1=\"150.0\" x2=\"120\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"210\" y1=\"150.0\" x2=\"300\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"210.0\" y=\"242\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">شکل 8.4: متعدد وراثت</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" role=\"img\" aria-label=\"۸.۴ شکل: څو ګونی میراث\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"420\" height=\"250\" fill=\"#ffffff\"/><rect x=\"60.0\" y=\"20.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">class A</text><rect x=\"240.0\" y=\"20.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"300\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">class B</text><rect x=\"150.0\" y=\"150.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"210\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">class c</text><line x1=\"210\" y1=\"150.0\" x2=\"120\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"210\" y1=\"150.0\" x2=\"300\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"210.0\" y=\"242\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۸.۴ شکل: څو ګونی میراث</text></svg>",
+     "sourceWidthRatio": 1.68
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 132,
+     "printedPages": [
+      252,
+      253
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (13)",
+   "sourcePageLabel": "PDF 132 · p. 252–253",
+   "sourceNote": "The inheritance program at the top of p.252 is recorded with PDF131. Figure 8.4 is reproduced as a coded diagram.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf132",
+   "unit": 8,
+   "printedPage": 252,
+   "description": "p.252 “publically derived”; p.253 “more than one parent classes”, class name “c” in lower case. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

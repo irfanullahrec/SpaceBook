@@ -1,0 +1,176 @@
+{
+ "pdfPage": 69,
+ "sections": [
+  {
+   "id": "cs12-u4-text-9",
+   "title": "Unit 4 text (9)",
+   "headingUrdu": "یونٹ 4 — متن (۹)",
+   "headingPashto": "۴ څپرکی — متن (۹)",
+   "paras": [
+    {
+     "text": "Here is an example of countdown using for loop:",
+     "urdu": "for لوپ کے ذریعے الٹی گنتی کی ایک مثال یہ ہے:",
+     "pashto": "دلته د for حلقې په مرسته د شاتنۍ شمېرنې یوه بېلګه ده:"
+    },
+    {
+     "text": "// countdown using a for loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int n=10; n>0; n--)\ncout << n << \", \";\ngetch();\nreturn 0;\n}",
+     "urdu": "// countdown using a for loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int n=10; n>0; n--)\ncout << n << \", \";\ngetch();\nreturn 0;\n}",
+     "pashto": "// countdown using a for loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int n=10; n>0; n--)\ncout << n << \", \";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "10, 9, 8, 7, 6, 5, 4, 3, 2, 1",
+     "urdu": "10, 9, 8, 7, 6, 5, 4, 3, 2, 1",
+     "pashto": "10, 9, 8, 7, 6, 5, 4, 3, 2, 1",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The initialization and increment/decrement fields are optional. They can remain empty, but in all cases the semicolon signs between them must be written. For example, we could write: for (;n<10;) if we want to specify no initialization and no increase.",
+     "urdu": "ابتدائی قدر اور اضافہ/کمی کے فیلڈز اختیاری ہیں۔ یہ خالی رہ سکتے ہیں، لیکن ہر صورت میں ان کے درمیان سیمی کولن لکھنا لازمی ہے۔ مثلاً اگر ہم نہ ابتدائی قدر دینا چاہیں نہ اضافہ تو ہم لکھ سکتے ہیں: for (;n<10;)",
+     "pashto": "د لومړني ارزښت او زیاتولو/کمولو ساحې اختیاري دي. تشې پاتې کېدای شي، خو په هر حال کې د هغوی ترمنځ سیمي‌کولنونه باید ولیکل شي. د بېلګې په توګه که نه لومړنی ارزښت او نه زیاتوالی وغواړو، لیکلی شو: for (;n<10;)"
+    },
+    {
+     "text": "int n=0;\nfor ( ; n < 10; )\n{\ncout << n << \",\";\nn++;\n}",
+     "urdu": "int n=0;\nfor ( ; n < 10; )\n{\ncout << n << \",\";\nn++;\n}",
+     "pashto": "int n=0;\nfor ( ; n < 10; )\n{\ncout << n << \",\";\nn++;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the code segment",
+     "urdu": "کوڈ کے حصے کا آؤٹ پٹ",
+     "pashto": "د کوډ د برخې وتنه"
+    },
+    {
+     "text": "0,1,2,3,4,5,6,7,8,9",
+     "urdu": "0,1,2,3,4,5,6,7,8,9",
+     "pashto": "0,1,2,3,4,5,6,7,8,9",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Similarly, for loop can also be used as: for (;n<10;n++) if we want to include an increment/decrement expression but no initialization.",
+     "urdu": "اسی طرح اگر ہم اضافہ/کمی کا ایکسپریشن شامل کرنا چاہیں لیکن ابتدائی قدر نہیں تو for لوپ کو یوں بھی استعمال کیا جا سکتا ہے: for (;n<10;n++)",
+     "pashto": "همداراز که وغواړو د زیاتولو/کمولو افاده شامله کړو خو لومړنی ارزښت نه، for حلقه داسې هم کارول کېدای شي: for (;n<10;n++)"
+    },
+    {
+     "text": "b. while loop",
+     "urdu": "b. while لوپ",
+     "pashto": "b. while حلقه"
+    },
+    {
+     "text": "while loop is another structure that is used in computer programs to repeat a statement or a group of statements until the condition is true.",
+     "urdu": "while لوپ ایک اور ساخت ہے جو کمپیوٹر پروگراموں میں کسی بیان یا بیانات کے گروپ کو شرط درست رہنے تک دہرانے کے لیے استعمال ہوتی ہے۔",
+     "pashto": "while حلقه بل جوړښت دی چې په کمپیوټري پروګرامونو کې د یوه بیان یا د بیانونو د ډلې د تکرار لپاره تر هغه کارول کېږي چې شرط true وي."
+    }
+   ],
+   "theory": "Here is an example of countdown using for loop:\n\n// countdown using a for loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int n=10; n>0; n--)\ncout << n << \", \";\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\n10, 9, 8, 7, 6, 5, 4, 3, 2, 1\n\nThe initialization and increment/decrement fields are optional. They can remain empty, but in all cases the semicolon signs between them must be written. For example, we could write: for (;n<10;) if we want to specify no initialization and no increase.\n\nint n=0;\nfor ( ; n < 10; )\n{\ncout << n << \",\";\nn++;\n}\n\nOutput of the code segment\n\n0,1,2,3,4,5,6,7,8,9\n\nSimilarly, for loop can also be used as: for (;n<10;n++) if we want to include an increment/decrement expression but no initialization.\n\nb. while loop\n\nwhile loop is another structure that is used in computer programs to repeat a statement or a group of statements until the condition is true.",
+   "urdu": "for لوپ کے ذریعے الٹی گنتی کی ایک مثال یہ ہے:\n\n// countdown using a for loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int n=10; n>0; n--)\ncout << n << \", \";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n10, 9, 8, 7, 6, 5, 4, 3, 2, 1\n\nابتدائی قدر اور اضافہ/کمی کے فیلڈز اختیاری ہیں۔ یہ خالی رہ سکتے ہیں، لیکن ہر صورت میں ان کے درمیان سیمی کولن لکھنا لازمی ہے۔ مثلاً اگر ہم نہ ابتدائی قدر دینا چاہیں نہ اضافہ تو ہم لکھ سکتے ہیں: for (;n<10;)\n\nint n=0;\nfor ( ; n < 10; )\n{\ncout << n << \",\";\nn++;\n}\n\nکوڈ کے حصے کا آؤٹ پٹ\n\n0,1,2,3,4,5,6,7,8,9\n\nاسی طرح اگر ہم اضافہ/کمی کا ایکسپریشن شامل کرنا چاہیں لیکن ابتدائی قدر نہیں تو for لوپ کو یوں بھی استعمال کیا جا سکتا ہے: for (;n<10;n++)\n\nb. while لوپ\n\nwhile لوپ ایک اور ساخت ہے جو کمپیوٹر پروگراموں میں کسی بیان یا بیانات کے گروپ کو شرط درست رہنے تک دہرانے کے لیے استعمال ہوتی ہے۔",
+   "pashto": "دلته د for حلقې په مرسته د شاتنۍ شمېرنې یوه بېلګه ده:\n\n// countdown using a for loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int n=10; n>0; n--)\ncout << n << \", \";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n10, 9, 8, 7, 6, 5, 4, 3, 2, 1\n\nد لومړني ارزښت او زیاتولو/کمولو ساحې اختیاري دي. تشې پاتې کېدای شي، خو په هر حال کې د هغوی ترمنځ سیمي‌کولنونه باید ولیکل شي. د بېلګې په توګه که نه لومړنی ارزښت او نه زیاتوالی وغواړو، لیکلی شو: for (;n<10;)\n\nint n=0;\nfor ( ; n < 10; )\n{\ncout << n << \",\";\nn++;\n}\n\nد کوډ د برخې وتنه\n\n0,1,2,3,4,5,6,7,8,9\n\nهمداراز که وغواړو د زیاتولو/کمولو افاده شامله کړو خو لومړنی ارزښت نه، for حلقه داسې هم کارول کېدای شي: for (;n<10;n++)\n\nb. while حلقه\n\nwhile حلقه بل جوړښت دی چې په کمپیوټري پروګرامونو کې د یوه بیان یا د بیانونو د ډلې د تکرار لپاره تر هغه کارول کېږي چې شرط true وي.",
+   "theoryUrdu": "for لوپ کے ذریعے الٹی گنتی کی ایک مثال یہ ہے:\n\n// countdown using a for loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int n=10; n>0; n--)\ncout << n << \", \";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n10, 9, 8, 7, 6, 5, 4, 3, 2, 1\n\nابتدائی قدر اور اضافہ/کمی کے فیلڈز اختیاری ہیں۔ یہ خالی رہ سکتے ہیں، لیکن ہر صورت میں ان کے درمیان سیمی کولن لکھنا لازمی ہے۔ مثلاً اگر ہم نہ ابتدائی قدر دینا چاہیں نہ اضافہ تو ہم لکھ سکتے ہیں: for (;n<10;)\n\nint n=0;\nfor ( ; n < 10; )\n{\ncout << n << \",\";\nn++;\n}\n\nکوڈ کے حصے کا آؤٹ پٹ\n\n0,1,2,3,4,5,6,7,8,9\n\nاسی طرح اگر ہم اضافہ/کمی کا ایکسپریشن شامل کرنا چاہیں لیکن ابتدائی قدر نہیں تو for لوپ کو یوں بھی استعمال کیا جا سکتا ہے: for (;n<10;n++)\n\nb. while لوپ\n\nwhile لوپ ایک اور ساخت ہے جو کمپیوٹر پروگراموں میں کسی بیان یا بیانات کے گروپ کو شرط درست رہنے تک دہرانے کے لیے استعمال ہوتی ہے۔",
+   "theoryPashto": "دلته د for حلقې په مرسته د شاتنۍ شمېرنې یوه بېلګه ده:\n\n// countdown using a for loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int n=10; n>0; n--)\ncout << n << \", \";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n10, 9, 8, 7, 6, 5, 4, 3, 2, 1\n\nد لومړني ارزښت او زیاتولو/کمولو ساحې اختیاري دي. تشې پاتې کېدای شي، خو په هر حال کې د هغوی ترمنځ سیمي‌کولنونه باید ولیکل شي. د بېلګې په توګه که نه لومړنی ارزښت او نه زیاتوالی وغواړو، لیکلی شو: for (;n<10;)\n\nint n=0;\nfor ( ; n < 10; )\n{\ncout << n << \",\";\nn++;\n}\n\nد کوډ د برخې وتنه\n\n0,1,2,3,4,5,6,7,8,9\n\nهمداراز که وغواړو د زیاتولو/کمولو افاده شامله کړو خو لومړنی ارزښت نه، for حلقه داسې هم کارول کېدای شي: for (;n<10;n++)\n\nb. while حلقه\n\nwhile حلقه بل جوړښت دی چې په کمپیوټري پروګرامونو کې د یوه بیان یا د بیانونو د ډلې د تکرار لپاره تر هغه کارول کېږي چې شرط true وي.",
+   "content": "<p>Here is an example of countdown using for loop:</p><p>// countdown using a for loop\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nfor (int n=10; n&gt;0; n--)\ncout &lt;&lt; n &lt;&lt; &quot;, &quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>10, 9, 8, 7, 6, 5, 4, 3, 2, 1</p><p>The initialization and increment/decrement fields are optional. They can remain empty, but in all cases the semicolon signs between them must be written. For example, we could write: for (;n&lt;10;) if we want to specify no initialization and no increase.</p><p>int n=0;\nfor ( ; n &lt; 10; )\n{\ncout &lt;&lt; n &lt;&lt; &quot;,&quot;;\nn++;\n}</p><p>Output of the code segment</p><p>0,1,2,3,4,5,6,7,8,9</p><p>Similarly, for loop can also be used as: for (;n&lt;10;n++) if we want to include an increment/decrement expression but no initialization.</p><p>b. while loop</p><p>while loop is another structure that is used in computer programs to repeat a statement or a group of statements until the condition is true.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 69,
+     "printedPages": [
+      126,
+      127
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (9)",
+   "sourcePageLabel": "PDF 69 · p. 126–127",
+   "sourceNote": "The top of p.126 (end of the PAKISTAN program and output) is recorded with PDF68. The while syntax starting at the foot of p.127 is given whole with PDF70.",
+   "unit": 4
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf069",
+   "unit": 4,
+   "printedPage": 127,
+   "description": "The countdown output prints “10, 9, …, 1” without the trailing “, ” the program would print. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

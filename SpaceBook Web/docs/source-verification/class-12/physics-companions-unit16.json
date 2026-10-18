@@ -1,0 +1,304 @@
+{
+  "formulas": [
+    {
+      "id": "phys16-elastic-modulus-general",
+      "name": "Elastic modulus",
+      "formula": "Elastic modulus = stress / strain",
+      "latex": "M=\\frac{\\text{stress}}{\\text{strain}}",
+      "sourceReferences": [
+        {
+          "pdfPage": 109,
+          "printedPage": 207,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys16-young-modulus-16-1-16-3",
+      "name": "Tensile stress, strain and Young’s modulus",
+      "number": "16.1–16.3",
+      "formula": "σ=F/A; ε=ΔL/L; Y=σ/ε",
+      "latex": "\\sigma=F/A; \\epsilon=\\Delta L/L; Y=\\sigma/\\epsilon",
+      "sourceReferences": [
+        {
+          "pdfPage": 110,
+          "printedPage": 208,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys16-shear-modulus-16-4-16-7",
+      "name": "Shear strain and rigidity modulus",
+      "number": "16.4–16.7",
+      "formula": "γ=Δx/y≈θ; S=(F/A)/γ",
+      "latex": "\\gamma=\\Delta x/y\\approx\\theta; S=(F/A)/\\gamma",
+      "sourceReferences": [
+        {
+          "pdfPage": 110,
+          "printedPage": 209,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys16-bulk-modulus-16-8-16-9",
+      "name": "Volume strain and bulk modulus",
+      "number": "16.8–16.9",
+      "formula": "volume strain=−ΔV/V; B=−ΔP/(−ΔV/V)",
+      "latex": "\\epsilon_V=-\\Delta V/V; B=-\\Delta P/(-\\Delta V/V)",
+      "sourceReferences": [
+        {
+          "pdfPage": 111,
+          "printedPage": 210,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys16-hooke-law-16-10",
+      "name": "Hooke’s law",
+      "number": "16.10",
+      "formula": "stress=k×strain",
+      "latex": "\\sigma=k\\epsilon",
+      "sourceReferences": [
+        {
+          "pdfPage": 111,
+          "printedPage": 210,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys16-hysteresis-loss-area",
+      "name": "Hysteresis loss",
+      "formula": "Hysteresis loss ∝ area of the B–H loop",
+      "sourceReferences": [
+        {
+          "pdfPage": 118,
+          "printedPage": 224,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 118,
+          "printedPage": 225,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Energy bands",
+      "definition": "Closely spaced permissible energy states in a solid, separated by forbidden energy gaps.",
+      "sourceReferences": [
+        {
+          "pdfPage": 113,
+          "printedPage": 214,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 113,
+          "printedPage": 215,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Superconductor",
+      "definition": "A material with zero electrical resistance below its critical temperature T_c.",
+      "sourceReferences": [
+        {
+          "pdfPage": 114,
+          "printedPage": 216,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 114,
+          "printedPage": 217,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Magnetic domain",
+      "definition": "A region of aligned magnetic dipoles that behaves as a small magnet.",
+      "sourceReferences": [
+        {
+          "pdfPage": 115,
+          "printedPage": 218,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Curie temperature",
+      "definition": "The temperature at which a ferromagnetic material becomes paramagnetic.",
+      "sourceReferences": [
+        {
+          "pdfPage": 116,
+          "printedPage": 221,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Magnetic hysteresis",
+      "definition": "Lagging of magnetic flux density B behind magnetizing field strength H during a cycle of magnetization.",
+      "sourceReferences": [
+        {
+          "pdfPage": 117,
+          "printedPage": 223,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Retentivity",
+      "definition": "Ability of a magnetic material to retain residual magnetism after the magnetizing field is removed.",
+      "sourceReferences": [
+        {
+          "pdfPage": 118,
+          "printedPage": 224,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Coercive force",
+      "definition": "Reverse magnetic field required to reduce residual flux density to zero.",
+      "sourceReferences": [
+        {
+          "pdfPage": 118,
+          "printedPage": 224,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Reluctance",
+      "definition": "Opposition offered to establishing magnetic flux.",
+      "sourceReferences": [
+        {
+          "pdfPage": 118,
+          "printedPage": 224,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "phys16-example161-tensile-stress",
+      "title": "Example 16.1 — tensile stress in a steel rod",
+      "question": "EXAMPLE 16.1 — A 500 N force is applied to one end of a cylindrical steel rod of diameter 50 cm. Find tensile stress. GIVEN: F=500 N; r=D/2=25 cm. SOLUTION: stress=force/area=F/(πr²)=500/[π(25×10⁻²)²]=2.5×10⁵ N m⁻².",
+      "given": "F=500 N; diameter=50 cm; r=25 cm",
+      "solution": "EXAMPLE 16.1 — A 500 N force is applied to one end of a cylindrical steel rod of diameter 50 cm. Find tensile stress. GIVEN: F=500 N; r=D/2=25 cm. SOLUTION: stress=force/area=F/(πr²)=500/[π(25×10⁻²)²]=2.5×10⁵ N m⁻².",
+      "answer": "2.5×10⁵ N m⁻²",
+      "sourceReferences": [
+        {
+          "pdfPage": 112,
+          "printedPage": 212,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys16-example162-young-modulus",
+      "title": "Example 16.2 — Young’s modulus of steel wire",
+      "question": "EXAMPLE 16.2 — To measure Young’s modulus, a 500 kg load hanging from a 2.4 m steel wire of cross-section 16 cm² stretches it by 0.30 cm. Find (a) stress, (b) strain and (c) Young’s modulus. GIVEN: extension x=0.30 cm=3×10⁻³ m; A=0.16 cm²=1.6×10⁻⁵ m² (as printed); load=500 kg; L=2.4 m. SOLUTION (printed): stress=F/A=5000/(1.6×10⁻⁵)=3.1×10⁸ N m⁻²; strain=x/L=3.0×10⁻³/2.4=1.25×10⁻³; Y=stress/strain=2.48×10¹¹ N m⁻².",
+      "given": "x=0.30 cm; A=0.16 cm² as printed; load=500 kg; L=2.4 m",
+      "solution": "EXAMPLE 16.2 — To measure Young’s modulus, a 500 kg load hanging from a 2.4 m steel wire of cross-section 16 cm² stretches it by 0.30 cm. Find (a) stress, (b) strain and (c) Young’s modulus. GIVEN: extension x=0.30 cm=3×10⁻³ m; A=0.16 cm²=1.6×10⁻⁵ m² (as printed); load=500 kg; L=2.4 m. SOLUTION (printed): stress=F/A=5000/(1.6×10⁻⁵)=3.1×10⁸ N m⁻²; strain=x/L=3.0×10⁻³/2.4=1.25×10⁻³; Y=stress/strain=2.48×10¹¹ N m⁻².",
+      "answer": "stress=3.1×10⁸ N m⁻²; strain=1.25×10⁻³; Y=2.48×10¹¹ N m⁻²",
+      "sourceReferences": [
+        {
+          "pdfPage": 112,
+          "printedPage": 212,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "phys16-numerical-01",
+      "exercise": "Unit 16 numerical problems",
+      "question": "1.50 m piano wire, diameter 0.25 cm, 10 kg mass; find extension.",
+      "answer": "1.5×10⁻⁴ m",
+      "sourceReferences": [
+        {
+          "pdfPage": 120,
+          "printedPage": 229,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys16-numerical-02",
+      "exercise": "Unit 16 numerical problems",
+      "question": "Steel rod L=0.50 m, r=1 cm, F=1×10⁴ N; find stress, strain and extension.",
+      "answer": "0.31×10⁸ N m⁻²;1.6×10⁻⁴;0.8×10⁻⁴ m",
+      "sourceReferences": [
+        {
+          "pdfPage": 120,
+          "printedPage": 229,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys16-numerical-03",
+      "exercise": "Unit 16 numerical problems",
+      "question": "12 m cable extends 1.2×10⁻⁴ m at stress 6.4×10⁸ N m⁻²; find strain energy density.",
+      "answer": "3.2×10³ J m⁻³",
+      "sourceReferences": [
+        {
+          "pdfPage": 120,
+          "printedPage": 229,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys16-numerical-04",
+      "exercise": "Unit 16 numerical problems",
+      "question": "Wooden chair legs: Y=1×10¹⁰ N m⁻², four legs, L=42 cm, A=2×10⁻³ m²; mass 100 kg.",
+      "answer": "5×10⁵ N m⁻²;2.1×10⁻⁵ m",
+      "sourceReferences": [
+        {
+          "pdfPage": 120,
+          "printedPage": 229,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys16-numerical-05",
+      "exercise": "Unit 16 numerical problems",
+      "question": "Steel cable F=1.5×10⁴ N, strain=1.4×10⁻⁴, A=4.8×10⁻⁴ m²; calculate Y and energy density at strain 1×10⁻⁴.",
+      "answer": "2.2×10¹¹ N m⁻²;1.5×10³ J m⁻³",
+      "sourceReferences": [
+        {
+          "pdfPage": 120,
+          "printedPage": 229,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "retireSections": [
+    "16.1",
+    "16.2",
+    "16.3",
+    "16.4",
+    "16.5",
+    "16.6",
+    "16.7",
+    "16.8",
+    "16.9",
+    "16.10",
+    "16.11"
+  ],
+  "trimSections": [],
+  "retireExercises": []
+}

@@ -1,0 +1,536 @@
+{
+ "pdfPage": 33,
+ "sections": [
+  {
+   "id": "stat12-p033-two-variables",
+   "title": "Marginal distributions, independence and expectation of two random variables",
+   "headingUrdu": "حاشیائی تقسیمیں، آزادی اور دو تصادفی متغیرات کی توقع",
+   "headingPashto": "څنډې وېشونه، خپلواکي او د دوو تصادفي متغیرونو تمه",
+   "paras": [
+    {
+     "text": "Marginal probability distributions",
+     "urdu": "حاشیائی احتمالی تقسیمیں",
+     "pashto": "څنډې احتمالي وېشونه"
+    },
+    {
+     "text": "From the bivariate probability distribution we can obtain univariate probability distributions as:",
+     "urdu": "دو متغیری احتمالی تقسیم سے ہم یک متغیری احتمالی تقسیمیں یوں حاصل کر سکتے ہیں:",
+     "pashto": "له دوه متغیره احتمالي وېش څخه یو متغیره احتمالي وېشونه داسې لاسته راوړلای شو:"
+    },
+    {
+     "text": "(i) The marginal probability distribution of X",
+     "urdu": "(i) X کی حاشیائی احتمالی تقسیم",
+     "pashto": "(i) د X څنډې احتمالي وېش"
+    },
+    {
+     "text": "(ii) The marginal probability distribution of Y",
+     "urdu": "(ii) Y کی حاشیائی احتمالی تقسیم",
+     "pashto": "(ii) د Y څنډې احتمالي وېش"
+    },
+    {
+     "text": "2.4.3 Bivariate probability function",
+     "urdu": "2.4.3 دو متغیری احتمالی تفاعل",
+     "pashto": "2.4.3 دوه متغیره احتمالي تابع"
+    },
+    {
+     "text": "If all possible values of two random variables with their associated probabilities are shown by a formula, then it is called bivariate probability function. It is denoted by $p(x_i,y_j)$ (discrete case) and $f(x_i,y_j)$ (continuous case); for all $x_i$ and $y_j$.",
+     "urdu": "اگر دو تصادفی متغیرات کی تمام ممکنہ قیمتیں ان کے متعلقہ احتمالات کے ساتھ کسی فارمولا سے دکھائی جائیں تو اسے دو متغیری احتمالی تفاعل کہتے ہیں۔ اسے تمام $x_i$ اور $y_j$ کے لیے $p(x_i,y_j)$ (منفصل صورت) اور $f(x_i,y_j)$ (مسلسل صورت) سے ظاہر کرتے ہیں۔",
+     "pashto": "که د دوو تصادفي متغیرونو ټول شوني قیمتونه له اړوندو احتمالونو سره د یوه فورمول په واسطه وښودل شي، نو دوه متغیره احتمالي تابع بلل کېږي. د ټولو $x_i$ او $y_j$ لپاره په $p(x_i,y_j)$ (منفصل حالت) او $f(x_i,y_j)$ (متصل حالت) ښودل کېږي."
+    },
+    {
+     "text": "2.4.4 Independence of two random variables",
+     "urdu": "2.4.4 دو تصادفی متغیرات کی آزادی",
+     "pashto": "2.4.4 د دوو تصادفي متغیرونو خپلواکي"
+    },
+    {
+     "text": "Two random variables X and Y are statistically independent if and only if their bivariate probability function can be expressed as the product of the marginal probability functions i.e.",
+     "urdu": "دو تصادفی متغیرات X اور Y شماریاتی طور پر آزاد ہوتے ہیں اگر اور صرف اگر ان کے دو متغیری احتمالی تفاعل کو حاشیائی احتمالی تفاعلات کے حاصلِ ضرب کے طور پر ظاہر کیا جا سکے یعنی",
+     "pashto": "دوه تصادفي متغیرونه X او Y هغه وخت او یوازې هغه وخت احصاییوي خپلواک دي چې د هغو دوه متغیره احتمالي تابع د څنډو احتمالي تابع ګانو د ضرب په بڼه وښودل شي یعنې"
+    },
+    {
+     "text": "$$f(x_i,y_j)=f(x_i)\\,f(y_j)$$",
+     "urdu": "$$f(x_i,y_j)=f(x_i)\\,f(y_j)$$",
+     "pashto": "$$f(x_i,y_j)=f(x_i)\\,f(y_j)$$"
+    },
+    {
+     "text": "2.4.5 Mathematical expectation of two random variables",
+     "urdu": "2.4.5 دو تصادفی متغیرات کی ریاضیاتی توقع",
+     "pashto": "2.4.5 د دوو تصادفي متغیرونو ریاضي تمه"
+    },
+    {
+     "text": "If X and Y are two random variables then mean or expected value of their sum or difference is denoted by $E(X\\pm Y)$ and is defined as:",
+     "urdu": "اگر X اور Y دو تصادفی متغیرات ہوں تو ان کے مجموعے یا فرق کا اوسط یا متوقع قیمت $E(X\\pm Y)$ سے ظاہر کی جاتی ہے اور اس کی تعریف یہ ہے:",
+     "pashto": "که X او Y دوه تصادفي متغیرونه وي، نو د هغو د مجموعې یا توپیر منځنی یا تمه شوی قیمت په $E(X\\pm Y)$ ښودل کېږي او داسې تعریف کېږي:"
+    },
+    {
+     "text": "$E(X\\pm Y)=\\sum_i\\sum_j(x_i\\pm y_j)\\,p(x_i,y_j)$ (discrete random variables case)",
+     "urdu": "$E(X\\pm Y)=\\sum_i\\sum_j(x_i\\pm y_j)\\,p(x_i,y_j)$ (منفصل تصادفی متغیرات کی صورت)",
+     "pashto": "$E(X\\pm Y)=\\sum_i\\sum_j(x_i\\pm y_j)\\,p(x_i,y_j)$ (د منفصلو تصادفي متغیرونو حالت)"
+    },
+    {
+     "text": "$\\phantom{E(X\\pm Y)}=\\iint_{xy}(x_i\\pm y_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j$ (continuous random variables case)",
+     "urdu": "$\\phantom{E(X\\pm Y)}=\\iint_{xy}(x_i\\pm y_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j$ (مسلسل تصادفی متغیرات کی صورت)",
+     "pashto": "$\\phantom{E(X\\pm Y)}=\\iint_{xy}(x_i\\pm y_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j$ (د متصلو تصادفي متغیرونو حالت)"
+    },
+    {
+     "text": "Expected value of their product is",
+     "urdu": "ان کے حاصلِ ضرب کی متوقع قیمت یہ ہے",
+     "pashto": "د هغو د ضرب حاصل تمه شوی قیمت دا دی"
+    },
+    {
+     "text": "$E(XY)=\\sum_j\\sum_i(x_iy_j)\\,p(x_i,y_j)$ (for discrete case)",
+     "urdu": "$E(XY)=\\sum_j\\sum_i(x_iy_j)\\,p(x_i,y_j)$ (منفصل صورت کے لیے)",
+     "pashto": "$E(XY)=\\sum_j\\sum_i(x_iy_j)\\,p(x_i,y_j)$ (د منفصل حالت لپاره)"
+    },
+    {
+     "text": "$\\phantom{E(XY)}=\\iint_{xy}(x_iy_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j$ (for continuous case)",
+     "urdu": "$\\phantom{E(XY)}=\\iint_{xy}(x_iy_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j$ (مسلسل صورت کے لیے)",
+     "pashto": "$\\phantom{E(XY)}=\\iint_{xy}(x_iy_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j$ (د متصل حالت لپاره)"
+    },
+    {
+     "text": "2.4.6 Properties of mathematical expectation of two random variables",
+     "urdu": "2.4.6 دو تصادفی متغیرات کی ریاضیاتی توقع کی خصوصیات",
+     "pashto": "2.4.6 د دوو تصادفي متغیرونو د ریاضي تمې ځانګړنې"
+    },
+    {
+     "text": "Let X and Y are two independent random variables and then they jointly have the following properties:",
+     "urdu": "فرض کریں X اور Y دو آزاد تصادفی متغیرات ہیں، تو ان کی مشترکہ طور پر درج ذیل خصوصیات ہیں:",
+     "pashto": "فرض کړئ X او Y دوه خپلواک تصادفي متغیرونه دي، نو په ګډه لاندې ځانګړنې لري:"
+    },
+    {
+     "text": "(i) The expected value of the sum of two random variables is equal to the sum of the expected values of the individual random variables i.e.",
+     "urdu": "(i) دو تصادفی متغیرات کے مجموعے کی متوقع قیمت انفرادی تصادفی متغیرات کی متوقع قیمتوں کے مجموعے کے برابر ہے یعنی",
+     "pashto": "(i) د دوو تصادفي متغیرونو د مجموعې تمه شوی قیمت د جلا جلا تصادفي متغیرونو د تمه شویو قیمتونو له مجموعې سره برابر دی یعنې"
+    },
+    {
+     "text": "$$E(X+Y)=E(X)+E(Y)$$",
+     "urdu": "$$E(X+Y)=E(X)+E(Y)$$",
+     "pashto": "$$E(X+Y)=E(X)+E(Y)$$"
+    },
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "By definition",
+     "urdu": "تعریف کے مطابق",
+     "pashto": "د تعریف له مخې"
+    },
+    {
+     "text": "$E(X+Y)=\\sum_{i=1}^{m}\\sum_{j=1}^{n}(x_i+y_j)\\,p(x_i,y_j)$",
+     "urdu": "$E(X+Y)=\\sum_{i=1}^{m}\\sum_{j=1}^{n}(x_i+y_j)\\,p(x_i,y_j)$",
+     "pashto": "$E(X+Y)=\\sum_{i=1}^{m}\\sum_{j=1}^{n}(x_i+y_j)\\,p(x_i,y_j)$"
+    },
+    {
+     "text": "$=\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)+\\sum_{i=1}^{m}\\sum_{j=1}^{n}y_j\\,p(x_i,y_j)\\qquad(1)$",
+     "urdu": "$=\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)+\\sum_{i=1}^{m}\\sum_{j=1}^{n}y_j\\,p(x_i,y_j)\\qquad(1)$",
+     "pashto": "$=\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)+\\sum_{i=1}^{m}\\sum_{j=1}^{n}y_j\\,p(x_i,y_j)\\qquad(1)$"
+    },
+    {
+     "text": "$\\text{Consider }\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)$",
+     "urdu": "$\\text{Consider }\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)$",
+     "pashto": "$\\text{Consider }\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)$"
+    },
+    {
+     "text": "$=\\sum_{i=1}^{m}x_i\\sum_{j=1}^{n}p(x_i,y_j)$",
+     "urdu": "$=\\sum_{i=1}^{m}x_i\\sum_{j=1}^{n}p(x_i,y_j)$",
+     "pashto": "$=\\sum_{i=1}^{m}x_i\\sum_{j=1}^{n}p(x_i,y_j)$"
+    }
+   ],
+   "theory": "Marginal probability distributions\n\nFrom the bivariate probability distribution we can obtain univariate probability distributions as:\n\n(i) The marginal probability distribution of X\n\n(ii) The marginal probability distribution of Y\n\n2.4.3 Bivariate probability function\n\nIf all possible values of two random variables with their associated probabilities are shown by a formula, then it is called bivariate probability function. It is denoted by p(x_i,y_j) (discrete case) and f(x_i,y_j) (continuous case); for all x_i and y_j.\n\n2.4.4 Independence of two random variables\n\nTwo random variables X and Y are statistically independent if and only if their bivariate probability function can be expressed as the product of the marginal probability functions i.e.\n\n$f(x_i,y_j)=f(x_i)\\,f(y_j)$\n\n2.4.5 Mathematical expectation of two random variables\n\nIf X and Y are two random variables then mean or expected value of their sum or difference is denoted by E(X\\pm Y) and is defined as:\n\nE(X\\pm Y)=\\sum_i\\sum_j(x_i\\pm y_j)\\,p(x_i,y_j) (discrete random variables case)\n\n\\phantom{E(X\\pm Y)}=\\iint_{xy}(x_i\\pm y_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (continuous random variables case)\n\nExpected value of their product is\n\nE(XY)=\\sum_j\\sum_i(x_iy_j)\\,p(x_i,y_j) (for discrete case)\n\n\\phantom{E(XY)}=\\iint_{xy}(x_iy_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (for continuous case)\n\n2.4.6 Properties of mathematical expectation of two random variables\n\nLet X and Y are two independent random variables and then they jointly have the following properties:\n\n(i) The expected value of the sum of two random variables is equal to the sum of the expected values of the individual random variables i.e.\n\n$E(X+Y)=E(X)+E(Y)$\n\nProof:\n\nBy definition\n\nE(X+Y)=\\sum_{i=1}^{m}\\sum_{j=1}^{n}(x_i+y_j)\\,p(x_i,y_j)\n\n=\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)+\\sum_{i=1}^{m}\\sum_{j=1}^{n}y_j\\,p(x_i,y_j)\\qquad(1)\n\n\\text{Consider }\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)\n\n=\\sum_{i=1}^{m}x_i\\sum_{j=1}^{n}p(x_i,y_j)",
+   "urdu": "حاشیائی احتمالی تقسیمیں\n\nدو متغیری احتمالی تقسیم سے ہم یک متغیری احتمالی تقسیمیں یوں حاصل کر سکتے ہیں:\n\n(i) X کی حاشیائی احتمالی تقسیم\n\n(ii) Y کی حاشیائی احتمالی تقسیم\n\n2.4.3 دو متغیری احتمالی تفاعل\n\nاگر دو تصادفی متغیرات کی تمام ممکنہ قیمتیں ان کے متعلقہ احتمالات کے ساتھ کسی فارمولا سے دکھائی جائیں تو اسے دو متغیری احتمالی تفاعل کہتے ہیں۔ اسے تمام x_i اور y_j کے لیے p(x_i,y_j) (منفصل صورت) اور f(x_i,y_j) (مسلسل صورت) سے ظاہر کرتے ہیں۔\n\n2.4.4 دو تصادفی متغیرات کی آزادی\n\nدو تصادفی متغیرات X اور Y شماریاتی طور پر آزاد ہوتے ہیں اگر اور صرف اگر ان کے دو متغیری احتمالی تفاعل کو حاشیائی احتمالی تفاعلات کے حاصلِ ضرب کے طور پر ظاہر کیا جا سکے یعنی\n\n$f(x_i,y_j)=f(x_i)\\,f(y_j)$\n\n2.4.5 دو تصادفی متغیرات کی ریاضیاتی توقع\n\nاگر X اور Y دو تصادفی متغیرات ہوں تو ان کے مجموعے یا فرق کا اوسط یا متوقع قیمت E(X\\pm Y) سے ظاہر کی جاتی ہے اور اس کی تعریف یہ ہے:\n\nE(X\\pm Y)=\\sum_i\\sum_j(x_i\\pm y_j)\\,p(x_i,y_j) (منفصل تصادفی متغیرات کی صورت)\n\n\\phantom{E(X\\pm Y)}=\\iint_{xy}(x_i\\pm y_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (مسلسل تصادفی متغیرات کی صورت)\n\nان کے حاصلِ ضرب کی متوقع قیمت یہ ہے\n\nE(XY)=\\sum_j\\sum_i(x_iy_j)\\,p(x_i,y_j) (منفصل صورت کے لیے)\n\n\\phantom{E(XY)}=\\iint_{xy}(x_iy_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (مسلسل صورت کے لیے)\n\n2.4.6 دو تصادفی متغیرات کی ریاضیاتی توقع کی خصوصیات\n\nفرض کریں X اور Y دو آزاد تصادفی متغیرات ہیں، تو ان کی مشترکہ طور پر درج ذیل خصوصیات ہیں:\n\n(i) دو تصادفی متغیرات کے مجموعے کی متوقع قیمت انفرادی تصادفی متغیرات کی متوقع قیمتوں کے مجموعے کے برابر ہے یعنی\n\n$E(X+Y)=E(X)+E(Y)$\n\nثبوت:\n\nتعریف کے مطابق\n\nE(X+Y)=\\sum_{i=1}^{m}\\sum_{j=1}^{n}(x_i+y_j)\\,p(x_i,y_j)\n\n=\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)+\\sum_{i=1}^{m}\\sum_{j=1}^{n}y_j\\,p(x_i,y_j)\\qquad(1)\n\n\\text{Consider }\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)\n\n=\\sum_{i=1}^{m}x_i\\sum_{j=1}^{n}p(x_i,y_j)",
+   "pashto": "څنډې احتمالي وېشونه\n\nله دوه متغیره احتمالي وېش څخه یو متغیره احتمالي وېشونه داسې لاسته راوړلای شو:\n\n(i) د X څنډې احتمالي وېش\n\n(ii) د Y څنډې احتمالي وېش\n\n2.4.3 دوه متغیره احتمالي تابع\n\nکه د دوو تصادفي متغیرونو ټول شوني قیمتونه له اړوندو احتمالونو سره د یوه فورمول په واسطه وښودل شي، نو دوه متغیره احتمالي تابع بلل کېږي. د ټولو x_i او y_j لپاره په p(x_i,y_j) (منفصل حالت) او f(x_i,y_j) (متصل حالت) ښودل کېږي.\n\n2.4.4 د دوو تصادفي متغیرونو خپلواکي\n\nدوه تصادفي متغیرونه X او Y هغه وخت او یوازې هغه وخت احصاییوي خپلواک دي چې د هغو دوه متغیره احتمالي تابع د څنډو احتمالي تابع ګانو د ضرب په بڼه وښودل شي یعنې\n\n$f(x_i,y_j)=f(x_i)\\,f(y_j)$\n\n2.4.5 د دوو تصادفي متغیرونو ریاضي تمه\n\nکه X او Y دوه تصادفي متغیرونه وي، نو د هغو د مجموعې یا توپیر منځنی یا تمه شوی قیمت په E(X\\pm Y) ښودل کېږي او داسې تعریف کېږي:\n\nE(X\\pm Y)=\\sum_i\\sum_j(x_i\\pm y_j)\\,p(x_i,y_j) (د منفصلو تصادفي متغیرونو حالت)\n\n\\phantom{E(X\\pm Y)}=\\iint_{xy}(x_i\\pm y_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (د متصلو تصادفي متغیرونو حالت)\n\nد هغو د ضرب حاصل تمه شوی قیمت دا دی\n\nE(XY)=\\sum_j\\sum_i(x_iy_j)\\,p(x_i,y_j) (د منفصل حالت لپاره)\n\n\\phantom{E(XY)}=\\iint_{xy}(x_iy_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (د متصل حالت لپاره)\n\n2.4.6 د دوو تصادفي متغیرونو د ریاضي تمې ځانګړنې\n\nفرض کړئ X او Y دوه خپلواک تصادفي متغیرونه دي، نو په ګډه لاندې ځانګړنې لري:\n\n(i) د دوو تصادفي متغیرونو د مجموعې تمه شوی قیمت د جلا جلا تصادفي متغیرونو د تمه شویو قیمتونو له مجموعې سره برابر دی یعنې\n\n$E(X+Y)=E(X)+E(Y)$\n\nثبوت:\n\nد تعریف له مخې\n\nE(X+Y)=\\sum_{i=1}^{m}\\sum_{j=1}^{n}(x_i+y_j)\\,p(x_i,y_j)\n\n=\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)+\\sum_{i=1}^{m}\\sum_{j=1}^{n}y_j\\,p(x_i,y_j)\\qquad(1)\n\n\\text{Consider }\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)\n\n=\\sum_{i=1}^{m}x_i\\sum_{j=1}^{n}p(x_i,y_j)",
+   "theoryUrdu": "حاشیائی احتمالی تقسیمیں\n\nدو متغیری احتمالی تقسیم سے ہم یک متغیری احتمالی تقسیمیں یوں حاصل کر سکتے ہیں:\n\n(i) X کی حاشیائی احتمالی تقسیم\n\n(ii) Y کی حاشیائی احتمالی تقسیم\n\n2.4.3 دو متغیری احتمالی تفاعل\n\nاگر دو تصادفی متغیرات کی تمام ممکنہ قیمتیں ان کے متعلقہ احتمالات کے ساتھ کسی فارمولا سے دکھائی جائیں تو اسے دو متغیری احتمالی تفاعل کہتے ہیں۔ اسے تمام x_i اور y_j کے لیے p(x_i,y_j) (منفصل صورت) اور f(x_i,y_j) (مسلسل صورت) سے ظاہر کرتے ہیں۔\n\n2.4.4 دو تصادفی متغیرات کی آزادی\n\nدو تصادفی متغیرات X اور Y شماریاتی طور پر آزاد ہوتے ہیں اگر اور صرف اگر ان کے دو متغیری احتمالی تفاعل کو حاشیائی احتمالی تفاعلات کے حاصلِ ضرب کے طور پر ظاہر کیا جا سکے یعنی\n\n$f(x_i,y_j)=f(x_i)\\,f(y_j)$\n\n2.4.5 دو تصادفی متغیرات کی ریاضیاتی توقع\n\nاگر X اور Y دو تصادفی متغیرات ہوں تو ان کے مجموعے یا فرق کا اوسط یا متوقع قیمت E(X\\pm Y) سے ظاہر کی جاتی ہے اور اس کی تعریف یہ ہے:\n\nE(X\\pm Y)=\\sum_i\\sum_j(x_i\\pm y_j)\\,p(x_i,y_j) (منفصل تصادفی متغیرات کی صورت)\n\n\\phantom{E(X\\pm Y)}=\\iint_{xy}(x_i\\pm y_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (مسلسل تصادفی متغیرات کی صورت)\n\nان کے حاصلِ ضرب کی متوقع قیمت یہ ہے\n\nE(XY)=\\sum_j\\sum_i(x_iy_j)\\,p(x_i,y_j) (منفصل صورت کے لیے)\n\n\\phantom{E(XY)}=\\iint_{xy}(x_iy_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (مسلسل صورت کے لیے)\n\n2.4.6 دو تصادفی متغیرات کی ریاضیاتی توقع کی خصوصیات\n\nفرض کریں X اور Y دو آزاد تصادفی متغیرات ہیں، تو ان کی مشترکہ طور پر درج ذیل خصوصیات ہیں:\n\n(i) دو تصادفی متغیرات کے مجموعے کی متوقع قیمت انفرادی تصادفی متغیرات کی متوقع قیمتوں کے مجموعے کے برابر ہے یعنی\n\n$E(X+Y)=E(X)+E(Y)$\n\nثبوت:\n\nتعریف کے مطابق\n\nE(X+Y)=\\sum_{i=1}^{m}\\sum_{j=1}^{n}(x_i+y_j)\\,p(x_i,y_j)\n\n=\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)+\\sum_{i=1}^{m}\\sum_{j=1}^{n}y_j\\,p(x_i,y_j)\\qquad(1)\n\n\\text{Consider }\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)\n\n=\\sum_{i=1}^{m}x_i\\sum_{j=1}^{n}p(x_i,y_j)",
+   "theoryPashto": "څنډې احتمالي وېشونه\n\nله دوه متغیره احتمالي وېش څخه یو متغیره احتمالي وېشونه داسې لاسته راوړلای شو:\n\n(i) د X څنډې احتمالي وېش\n\n(ii) د Y څنډې احتمالي وېش\n\n2.4.3 دوه متغیره احتمالي تابع\n\nکه د دوو تصادفي متغیرونو ټول شوني قیمتونه له اړوندو احتمالونو سره د یوه فورمول په واسطه وښودل شي، نو دوه متغیره احتمالي تابع بلل کېږي. د ټولو x_i او y_j لپاره په p(x_i,y_j) (منفصل حالت) او f(x_i,y_j) (متصل حالت) ښودل کېږي.\n\n2.4.4 د دوو تصادفي متغیرونو خپلواکي\n\nدوه تصادفي متغیرونه X او Y هغه وخت او یوازې هغه وخت احصاییوي خپلواک دي چې د هغو دوه متغیره احتمالي تابع د څنډو احتمالي تابع ګانو د ضرب په بڼه وښودل شي یعنې\n\n$f(x_i,y_j)=f(x_i)\\,f(y_j)$\n\n2.4.5 د دوو تصادفي متغیرونو ریاضي تمه\n\nکه X او Y دوه تصادفي متغیرونه وي، نو د هغو د مجموعې یا توپیر منځنی یا تمه شوی قیمت په E(X\\pm Y) ښودل کېږي او داسې تعریف کېږي:\n\nE(X\\pm Y)=\\sum_i\\sum_j(x_i\\pm y_j)\\,p(x_i,y_j) (د منفصلو تصادفي متغیرونو حالت)\n\n\\phantom{E(X\\pm Y)}=\\iint_{xy}(x_i\\pm y_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (د متصلو تصادفي متغیرونو حالت)\n\nد هغو د ضرب حاصل تمه شوی قیمت دا دی\n\nE(XY)=\\sum_j\\sum_i(x_iy_j)\\,p(x_i,y_j) (د منفصل حالت لپاره)\n\n\\phantom{E(XY)}=\\iint_{xy}(x_iy_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (د متصل حالت لپاره)\n\n2.4.6 د دوو تصادفي متغیرونو د ریاضي تمې ځانګړنې\n\nفرض کړئ X او Y دوه خپلواک تصادفي متغیرونه دي، نو په ګډه لاندې ځانګړنې لري:\n\n(i) د دوو تصادفي متغیرونو د مجموعې تمه شوی قیمت د جلا جلا تصادفي متغیرونو د تمه شویو قیمتونو له مجموعې سره برابر دی یعنې\n\n$E(X+Y)=E(X)+E(Y)$\n\nثبوت:\n\nد تعریف له مخې\n\nE(X+Y)=\\sum_{i=1}^{m}\\sum_{j=1}^{n}(x_i+y_j)\\,p(x_i,y_j)\n\n=\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)+\\sum_{i=1}^{m}\\sum_{j=1}^{n}y_j\\,p(x_i,y_j)\\qquad(1)\n\n\\text{Consider }\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)\n\n=\\sum_{i=1}^{m}x_i\\sum_{j=1}^{n}p(x_i,y_j)",
+   "content": "<p>Marginal probability distributions</p><p>From the bivariate probability distribution we can obtain univariate probability distributions as:</p><p>(i) The marginal probability distribution of X</p><p>(ii) The marginal probability distribution of Y</p><p>2.4.3 Bivariate probability function</p><p>If all possible values of two random variables with their associated probabilities are shown by a formula, then it is called bivariate probability function. It is denoted by p(x_i,y_j) (discrete case) and f(x_i,y_j) (continuous case); for all x_i and y_j.</p><p>2.4.4 Independence of two random variables</p><p>Two random variables X and Y are statistically independent if and only if their bivariate probability function can be expressed as the product of the marginal probability functions i.e.</p><p>$f(x_i,y_j)=f(x_i)\\,f(y_j)$</p><p>2.4.5 Mathematical expectation of two random variables</p><p>If X and Y are two random variables then mean or expected value of their sum or difference is denoted by E(X\\pm Y) and is defined as:</p><p>E(X\\pm Y)=\\sum_i\\sum_j(x_i\\pm y_j)\\,p(x_i,y_j) (discrete random variables case)</p><p>\\phantom{E(X\\pm Y)}=\\iint_{xy}(x_i\\pm y_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (continuous random variables case)</p><p>Expected value of their product is</p><p>E(XY)=\\sum_j\\sum_i(x_iy_j)\\,p(x_i,y_j) (for discrete case)</p><p>\\phantom{E(XY)}=\\iint_{xy}(x_iy_j)\\,f(x_i,y_j)\\,dx_i\\,dy_j (for continuous case)</p><p>2.4.6 Properties of mathematical expectation of two random variables</p><p>Let X and Y are two independent random variables and then they jointly have the following properties:</p><p>(i) The expected value of the sum of two random variables is equal to the sum of the expected values of the individual random variables i.e.</p><p>$E(X+Y)=E(X)+E(Y)$</p><p>Proof:</p><p>By definition</p><p>E(X+Y)=\\sum_{i=1}^{m}\\sum_{j=1}^{n}(x_i+y_j)\\,p(x_i,y_j)</p><p>=\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)+\\sum_{i=1}^{m}\\sum_{j=1}^{n}y_j\\,p(x_i,y_j)\\qquad(1)</p><p>\\text{Consider }\\sum_{i=1}^{m}\\sum_{j=1}^{n}x_i\\,p(x_i,y_j)</p><p>=\\sum_{i=1}^{m}x_i\\sum_{j=1}^{n}p(x_i,y_j)</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-marginal-x"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-marginal-y"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      11,
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      14,
+      15
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      22,
+      23,
+      24,
+      25
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-marginal-x",
+     "headers": [
+      "$X$",
+      "$p(x)$"
+     ],
+     "rows": [
+      [
+       "$x_1$",
+       "$p(x_1)$"
+      ],
+      [
+       "$x_2$",
+       "$p(x_2)$"
+      ],
+      [
+       "$\\vdots$",
+       "$\\vdots$"
+      ],
+      [
+       "$x_i$",
+       "$p(x_i)$"
+      ],
+      [
+       "$\\vdots$",
+       "$\\vdots$"
+      ],
+      [
+       "$x_m$",
+       "$p(x_m)$"
+      ],
+      [
+       "Total",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "$x_1$",
+         "$p(x_1)$"
+        ],
+        [
+         "$x_2$",
+         "$p(x_2)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$x_i$",
+         "$p(x_i)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$x_m$",
+         "$p(x_m)$"
+        ],
+        [
+         "کل",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "$x_1$",
+         "$p(x_1)$"
+        ],
+        [
+         "$x_2$",
+         "$p(x_2)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$x_i$",
+         "$p(x_i)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$x_m$",
+         "$p(x_m)$"
+        ],
+        [
+         "ټول",
+         "1"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-marginal-y",
+     "headers": [
+      "$Y$",
+      "$p(y)$"
+     ],
+     "rows": [
+      [
+       "$y_1$",
+       "$p(y_1)$"
+      ],
+      [
+       "$y_2$",
+       "$p(y_2)$"
+      ],
+      [
+       "$\\vdots$",
+       "$\\vdots$"
+      ],
+      [
+       "$y_j$",
+       "$p(y_j)$"
+      ],
+      [
+       "$\\vdots$",
+       "$\\vdots$"
+      ],
+      [
+       "$y_n$",
+       "$p(y_n)$"
+      ],
+      [
+       "Total",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$Y$",
+        "$p(y)$"
+       ],
+       "rows": [
+        [
+         "$y_1$",
+         "$p(y_1)$"
+        ],
+        [
+         "$y_2$",
+         "$p(y_2)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$y_j$",
+         "$p(y_j)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$y_n$",
+         "$p(y_n)$"
+        ],
+        [
+         "کل",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$Y$",
+        "$p(y)$"
+       ],
+       "rows": [
+        [
+         "$y_1$",
+         "$p(y_1)$"
+        ],
+        [
+         "$y_2$",
+         "$p(y_2)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$y_j$",
+         "$p(y_j)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$y_n$",
+         "$p(y_n)$"
+        ],
+        [
+         "ټول",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 33,
+     "printedPages": [
+      57,
+      58
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

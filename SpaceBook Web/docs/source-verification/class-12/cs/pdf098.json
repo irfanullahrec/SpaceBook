@@ -1,0 +1,223 @@
+{
+ "pdfPage": 98,
+ "sections": [
+  {
+   "id": "cs12-u6-text-5",
+   "title": "Unit 6 text (5)",
+   "headingUrdu": "یونٹ 6 — متن (5)",
+   "headingPashto": "۶ څپرکی — متن (5)",
+   "paras": [
+    {
+     "text": "int maximum( int x, int y, int z)",
+     "urdu": "int maximum( int x, int y, int z)",
+     "pashto": "int maximum( int x, int y, int z)",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The second part of function definition is the function body. It contains the actual statements that perform the intended task and is always enclosed in { }.",
+     "urdu": "فنکشن کی تعریف کا دوسرا حصہ فنکشن کا جسم ہے۔ اس میں وہ اصل بیانات ہوتے ہیں جو مطلوبہ کام انجام دیتے ہیں اور یہ ہمیشہ { } میں بند ہوتا ہے۔",
+     "pashto": "د فنکشن د تعریف دویمه برخه د فنکشن بدنه ده. هغه اصلي بیانونه لري چې غوښتل شوې دنده ترسره کوي او تل په { } کې تړل کېږي."
+    },
+    {
+     "text": "The whole function definition is shown below:",
+     "urdu": "پوری فنکشن کی تعریف ذیل میں دکھائی گئی ہے:",
+     "pashto": "د فنکشن بشپړ تعریف لاندې ښودل شوی:"
+    },
+    {
+     "text": "int maximum(int x. int y, int z) // function declarator\n{\nint max = x;          ┐\nif ( y > max )        │\nmax = y;              │\nif ( z > max )        ├ function body\nmax = z;              │\nreturn max;           ┘\n}",
+     "urdu": "int maximum(int x. int y, int z) // function declarator\n{\nint max = x;          ┐\nif ( y > max )        │\nmax = y;              │\nif ( z > max )        ├ function body\nmax = z;              │\nreturn max;           ┘\n}",
+     "pashto": "int maximum(int x. int y, int z) // function declarator\n{\nint max = x;          ┐\nif ( y > max )        │\nmax = y;              │\nif ( z > max )        ├ function body\nmax = z;              │\nreturn max;           ┘\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "c. Function call",
+     "urdu": "c. فنکشن کال",
+     "pashto": "c. د فنکشن غوښتنه"
+    },
+    {
+     "text": "A function call is a statement in the calling function (e.g. main() function) to execute the code of the function. Consider the following statement:",
+     "urdu": "فنکشن کال، کال کرنے والے فنکشن (مثلاً main() فنکشن) میں ایک بیان ہے جو فنکشن کا کوڈ چلاتا ہے۔ درج ذیل بیان پر غور کریں:",
+     "pashto": "د فنکشن غوښتنه په غوښتونکي فنکشن (لکه main() فنکشن) کې یو بیان دی چې د فنکشن کوډ اجرا کوي. لاندې بیان ته پام وکړئ:"
+    },
+    {
+     "text": "maximum( a, b, c );",
+     "urdu": "maximum( a, b, c );",
+     "pashto": "maximum( a, b, c );",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The function call has the list of arguments that are passed to the function declarator. The arguments in this call are a, b and c. The following program shows different parts of the function i.e. prototype, definition and call.",
+     "urdu": "فنکشن کال میں آرگیومنٹس کی فہرست ہوتی ہے جو فنکشن ڈکلیریٹر کو پاس کی جاتی ہے۔ اس کال میں آرگیومنٹس a، b اور c ہیں۔ درج ذیل پروگرام فنکشن کے مختلف حصے یعنی پروٹوٹائپ، تعریف اور کال دکھاتا ہے۔",
+     "pashto": "د فنکشن غوښتنه د دلیلونو لړلیک لري چې د فنکشن اعلانوونکي ته لېږدول کېږي. په دې غوښتنه کې دلیلونه a، b او c دي. لاندې پروګرام د فنکشن بېلې برخې یعنې نمونه، تعریف او غوښتنه ښيي."
+    },
+    {
+     "text": "// finding maximum out of three integers using function\n#include <conio.h>\n#include <iostream.h>\nint maximum( int, int, int ); // function prototype\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; // Function call\ngetch();\nreturn 0;\n}\nint maximum( int x, int y, int z ) // function definition\n{\nint max = x;\nif ( y > max )\nmax = y;\nif ( z > max )\nmax = z;\nreturn max;\n}",
+     "urdu": "// finding maximum out of three integers using function\n#include <conio.h>\n#include <iostream.h>\nint maximum( int, int, int ); // function prototype\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; // Function call\ngetch();\nreturn 0;\n}\nint maximum( int x, int y, int z ) // function definition\n{\nint max = x;\nif ( y > max )\nmax = y;\nif ( z > max )\nmax = z;\nreturn max;\n}",
+     "pashto": "// finding maximum out of three integers using function\n#include <conio.h>\n#include <iostream.h>\nint maximum( int, int, int ); // function prototype\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; // Function call\ngetch();\nreturn 0;\n}\nint maximum( int x, int y, int z ) // function definition\n{\nint max = x;\nif ( y > max )\nmax = y;\nif ( z > max )\nmax = z;\nreturn max;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter three integers: 4 -2 6\nMaximum is: 6",
+     "urdu": "Enter three integers: 4 -2 6\nMaximum is: 6",
+     "pashto": "Enter three integers: 4 -2 6\nMaximum is: 6",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "6.1.5 Scope of variables",
+     "urdu": "6.1.5 ویری ایبلز کا دائرہ",
+     "pashto": "۶.۱.۵ د متغیرونو ساحه"
+    },
+    {
+     "text": "By the scope of a variable we mean that if a variable is defined in a program then in which parts of the same program this variable can be accessed. There are three scopes of variables.",
+     "urdu": "ویری ایبل کے دائرے سے مراد یہ ہے کہ اگر کسی پروگرام میں ویری ایبل بیان کیا گیا ہو تو اسی پروگرام کے کن حصوں میں اس ویری ایبل تک رسائی ہو سکتی ہے۔ ویری ایبلز کے تین دائرے ہیں۔",
+     "pashto": "د متغیر له ساحې موخه دا ده چې که یو متغیر په یوه پروګرام کې تعریف شي، د همغه پروګرام په کومو برخو کې دې متغیر ته لاسرسی کېدای شي. د متغیرونو درې ساحې دي."
+    },
+    {
+     "text": "Local scope",
+     "urdu": "مقامی دائرہ",
+     "pashto": "محلي ساحه"
+    },
+    {
+     "text": "Global scope",
+     "urdu": "عالمی دائرہ",
+     "pashto": "نړیواله ساحه"
+    },
+    {
+     "text": "Static scope",
+     "urdu": "اسٹیٹک دائرہ",
+     "pashto": "ثابته ساحه"
+    }
+   ],
+   "theory": "int maximum( int x, int y, int z)\n\nThe second part of function definition is the function body. It contains the actual statements that perform the intended task and is always enclosed in { }.\n\nThe whole function definition is shown below:\n\nint maximum(int x. int y, int z) // function declarator\n{\nint max = x;          ┐\nif ( y > max )        │\nmax = y;              │\nif ( z > max )        ├ function body\nmax = z;              │\nreturn max;           ┘\n}\n\nc. Function call\n\nA function call is a statement in the calling function (e.g. main() function) to execute the code of the function. Consider the following statement:\n\nmaximum( a, b, c );\n\nThe function call has the list of arguments that are passed to the function declarator. The arguments in this call are a, b and c. The following program shows different parts of the function i.e. prototype, definition and call.\n\n// finding maximum out of three integers using function\n#include <conio.h>\n#include <iostream.h>\nint maximum( int, int, int ); // function prototype\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; // Function call\ngetch();\nreturn 0;\n}\nint maximum( int x, int y, int z ) // function definition\n{\nint max = x;\nif ( y > max )\nmax = y;\nif ( z > max )\nmax = z;\nreturn max;\n}\n\nOutput of the program\n\nEnter three integers: 4 -2 6\nMaximum is: 6\n\n6.1.5 Scope of variables\n\nBy the scope of a variable we mean that if a variable is defined in a program then in which parts of the same program this variable can be accessed. There are three scopes of variables.\n\nLocal scope\n\nGlobal scope\n\nStatic scope",
+   "urdu": "int maximum( int x, int y, int z)\n\nفنکشن کی تعریف کا دوسرا حصہ فنکشن کا جسم ہے۔ اس میں وہ اصل بیانات ہوتے ہیں جو مطلوبہ کام انجام دیتے ہیں اور یہ ہمیشہ { } میں بند ہوتا ہے۔\n\nپوری فنکشن کی تعریف ذیل میں دکھائی گئی ہے:\n\nint maximum(int x. int y, int z) // function declarator\n{\nint max = x;          ┐\nif ( y > max )        │\nmax = y;              │\nif ( z > max )        ├ function body\nmax = z;              │\nreturn max;           ┘\n}\n\nc. فنکشن کال\n\nفنکشن کال، کال کرنے والے فنکشن (مثلاً main() فنکشن) میں ایک بیان ہے جو فنکشن کا کوڈ چلاتا ہے۔ درج ذیل بیان پر غور کریں:\n\nmaximum( a, b, c );\n\nفنکشن کال میں آرگیومنٹس کی فہرست ہوتی ہے جو فنکشن ڈکلیریٹر کو پاس کی جاتی ہے۔ اس کال میں آرگیومنٹس a، b اور c ہیں۔ درج ذیل پروگرام فنکشن کے مختلف حصے یعنی پروٹوٹائپ، تعریف اور کال دکھاتا ہے۔\n\n// finding maximum out of three integers using function\n#include <conio.h>\n#include <iostream.h>\nint maximum( int, int, int ); // function prototype\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; // Function call\ngetch();\nreturn 0;\n}\nint maximum( int x, int y, int z ) // function definition\n{\nint max = x;\nif ( y > max )\nmax = y;\nif ( z > max )\nmax = z;\nreturn max;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter three integers: 4 -2 6\nMaximum is: 6\n\n6.1.5 ویری ایبلز کا دائرہ\n\nویری ایبل کے دائرے سے مراد یہ ہے کہ اگر کسی پروگرام میں ویری ایبل بیان کیا گیا ہو تو اسی پروگرام کے کن حصوں میں اس ویری ایبل تک رسائی ہو سکتی ہے۔ ویری ایبلز کے تین دائرے ہیں۔\n\nمقامی دائرہ\n\nعالمی دائرہ\n\nاسٹیٹک دائرہ",
+   "pashto": "int maximum( int x, int y, int z)\n\nد فنکشن د تعریف دویمه برخه د فنکشن بدنه ده. هغه اصلي بیانونه لري چې غوښتل شوې دنده ترسره کوي او تل په { } کې تړل کېږي.\n\nد فنکشن بشپړ تعریف لاندې ښودل شوی:\n\nint maximum(int x. int y, int z) // function declarator\n{\nint max = x;          ┐\nif ( y > max )        │\nmax = y;              │\nif ( z > max )        ├ function body\nmax = z;              │\nreturn max;           ┘\n}\n\nc. د فنکشن غوښتنه\n\nد فنکشن غوښتنه په غوښتونکي فنکشن (لکه main() فنکشن) کې یو بیان دی چې د فنکشن کوډ اجرا کوي. لاندې بیان ته پام وکړئ:\n\nmaximum( a, b, c );\n\nد فنکشن غوښتنه د دلیلونو لړلیک لري چې د فنکشن اعلانوونکي ته لېږدول کېږي. په دې غوښتنه کې دلیلونه a، b او c دي. لاندې پروګرام د فنکشن بېلې برخې یعنې نمونه، تعریف او غوښتنه ښيي.\n\n// finding maximum out of three integers using function\n#include <conio.h>\n#include <iostream.h>\nint maximum( int, int, int ); // function prototype\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; // Function call\ngetch();\nreturn 0;\n}\nint maximum( int x, int y, int z ) // function definition\n{\nint max = x;\nif ( y > max )\nmax = y;\nif ( z > max )\nmax = z;\nreturn max;\n}\n\nد پروګرام وتنه\n\nEnter three integers: 4 -2 6\nMaximum is: 6\n\n۶.۱.۵ د متغیرونو ساحه\n\nد متغیر له ساحې موخه دا ده چې که یو متغیر په یوه پروګرام کې تعریف شي، د همغه پروګرام په کومو برخو کې دې متغیر ته لاسرسی کېدای شي. د متغیرونو درې ساحې دي.\n\nمحلي ساحه\n\nنړیواله ساحه\n\nثابته ساحه",
+   "theoryUrdu": "int maximum( int x, int y, int z)\n\nفنکشن کی تعریف کا دوسرا حصہ فنکشن کا جسم ہے۔ اس میں وہ اصل بیانات ہوتے ہیں جو مطلوبہ کام انجام دیتے ہیں اور یہ ہمیشہ { } میں بند ہوتا ہے۔\n\nپوری فنکشن کی تعریف ذیل میں دکھائی گئی ہے:\n\nint maximum(int x. int y, int z) // function declarator\n{\nint max = x;          ┐\nif ( y > max )        │\nmax = y;              │\nif ( z > max )        ├ function body\nmax = z;              │\nreturn max;           ┘\n}\n\nc. فنکشن کال\n\nفنکشن کال، کال کرنے والے فنکشن (مثلاً main() فنکشن) میں ایک بیان ہے جو فنکشن کا کوڈ چلاتا ہے۔ درج ذیل بیان پر غور کریں:\n\nmaximum( a, b, c );\n\nفنکشن کال میں آرگیومنٹس کی فہرست ہوتی ہے جو فنکشن ڈکلیریٹر کو پاس کی جاتی ہے۔ اس کال میں آرگیومنٹس a، b اور c ہیں۔ درج ذیل پروگرام فنکشن کے مختلف حصے یعنی پروٹوٹائپ، تعریف اور کال دکھاتا ہے۔\n\n// finding maximum out of three integers using function\n#include <conio.h>\n#include <iostream.h>\nint maximum( int, int, int ); // function prototype\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; // Function call\ngetch();\nreturn 0;\n}\nint maximum( int x, int y, int z ) // function definition\n{\nint max = x;\nif ( y > max )\nmax = y;\nif ( z > max )\nmax = z;\nreturn max;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter three integers: 4 -2 6\nMaximum is: 6\n\n6.1.5 ویری ایبلز کا دائرہ\n\nویری ایبل کے دائرے سے مراد یہ ہے کہ اگر کسی پروگرام میں ویری ایبل بیان کیا گیا ہو تو اسی پروگرام کے کن حصوں میں اس ویری ایبل تک رسائی ہو سکتی ہے۔ ویری ایبلز کے تین دائرے ہیں۔\n\nمقامی دائرہ\n\nعالمی دائرہ\n\nاسٹیٹک دائرہ",
+   "theoryPashto": "int maximum( int x, int y, int z)\n\nد فنکشن د تعریف دویمه برخه د فنکشن بدنه ده. هغه اصلي بیانونه لري چې غوښتل شوې دنده ترسره کوي او تل په { } کې تړل کېږي.\n\nد فنکشن بشپړ تعریف لاندې ښودل شوی:\n\nint maximum(int x. int y, int z) // function declarator\n{\nint max = x;          ┐\nif ( y > max )        │\nmax = y;              │\nif ( z > max )        ├ function body\nmax = z;              │\nreturn max;           ┘\n}\n\nc. د فنکشن غوښتنه\n\nد فنکشن غوښتنه په غوښتونکي فنکشن (لکه main() فنکشن) کې یو بیان دی چې د فنکشن کوډ اجرا کوي. لاندې بیان ته پام وکړئ:\n\nmaximum( a, b, c );\n\nد فنکشن غوښتنه د دلیلونو لړلیک لري چې د فنکشن اعلانوونکي ته لېږدول کېږي. په دې غوښتنه کې دلیلونه a، b او c دي. لاندې پروګرام د فنکشن بېلې برخې یعنې نمونه، تعریف او غوښتنه ښيي.\n\n// finding maximum out of three integers using function\n#include <conio.h>\n#include <iostream.h>\nint maximum( int, int, int ); // function prototype\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; // Function call\ngetch();\nreturn 0;\n}\nint maximum( int x, int y, int z ) // function definition\n{\nint max = x;\nif ( y > max )\nmax = y;\nif ( z > max )\nmax = z;\nreturn max;\n}\n\nد پروګرام وتنه\n\nEnter three integers: 4 -2 6\nMaximum is: 6\n\n۶.۱.۵ د متغیرونو ساحه\n\nد متغیر له ساحې موخه دا ده چې که یو متغیر په یوه پروګرام کې تعریف شي، د همغه پروګرام په کومو برخو کې دې متغیر ته لاسرسی کېدای شي. د متغیرونو درې ساحې دي.\n\nمحلي ساحه\n\nنړیواله ساحه\n\nثابته ساحه",
+   "content": "<p>int maximum( int x, int y, int z)</p><p>The second part of function definition is the function body. It contains the actual statements that perform the intended task and is always enclosed in { }.</p><p>The whole function definition is shown below:</p><p>int maximum(int x. int y, int z) // function declarator\n{\nint max = x;          ┐\nif ( y &gt; max )        │\nmax = y;              │\nif ( z &gt; max )        ├ function body\nmax = z;              │\nreturn max;           ┘\n}</p><p>c. Function call</p><p>A function call is a statement in the calling function (e.g. main() function) to execute the code of the function. Consider the following statement:</p><p>maximum( a, b, c );</p><p>The function call has the list of arguments that are passed to the function declarator. The arguments in this call are a, b and c. The following program shows different parts of the function i.e. prototype, definition and call.</p><p>// finding maximum out of three integers using function\n#include &lt;conio.h&gt;\n#include &lt;iostream.h&gt;\nint maximum( int, int, int ); // function prototype\nint main()\n{\nint a, b, c;\ncout &lt;&lt; &quot;Enter three integers: &quot;;\ncin &gt;&gt; a &gt;&gt; b &gt;&gt; c;\ncout &lt;&lt; &quot;Maximum is: &quot; &lt;&lt; maximum ( a, b, c ) &lt;&lt; endl; // Function call\ngetch();\nreturn 0;\n}\nint maximum( int x, int y, int z ) // function definition\n{\nint max = x;\nif ( y &gt; max )\nmax = y;\nif ( z &gt; max )\nmax = z;\nreturn max;\n}</p><p>Output of the program</p><p>Enter three integers: 4 -2 6\nMaximum is: 6</p><p>6.1.5 Scope of variables</p><p>By the scope of a variable we mean that if a variable is defined in a program then in which parts of the same program this variable can be accessed. There are three scopes of variables.</p><p>Local scope</p><p>Global scope</p><p>Static scope</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "code",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      13,
+      14,
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 98,
+     "printedPages": [
+      184,
+      185,
+      186
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (5)",
+   "sourcePageLabel": "PDF 98 · p. 184–185–186",
+   "sourceNote": "The function-body brace and label beside the definition on p.184 are reproduced as text markers in the code listing. The list of scopes at the top of p.186 (PDF99) is given here.",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf098",
+   "unit": 6,
+   "printedPage": 184,
+   "description": "The whole function definition is printed “int maximum(int x. int y, int z)” with a full stop instead of a comma. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

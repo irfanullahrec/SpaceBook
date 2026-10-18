@@ -1,0 +1,240 @@
+{
+ "pdfPage": 120,
+ "sections": [
+  {
+   "id": "cs12-u8-text-1",
+   "title": "Unit 8 text (1)",
+   "headingUrdu": "یونٹ 8 — متن (1)",
+   "headingPashto": "۸ څپرکی — متن (1)",
+   "paras": [
+    {
+     "text": "INTRODUCTION",
+     "urdu": "تعارف",
+     "pashto": "سریزه"
+    },
+    {
+     "text": "In structural or traditional programming, the data and actions are considered as two separate entities which cannot provide a very intuitive representation of real world objects and phenomenon. To eliminate this limitation, Object-Oriented Programming (OOP) concept was introduced which combines data and actions together in one package called class. This allows programmers to write programs in more modular fashion to make them easier to understand. This modularization also provides a higher degree of code-reusability. Object-oriented programming also brings several other useful concepts into the field of programming which are: data hiding, inheritance, encapsulation, abstraction, and polymorphism. This Unit is focused on these features of OOP.",
+     "urdu": "ساختی یا روایتی پروگرامنگ میں ڈیٹا اور اعمال کو دو الگ وجود سمجھا جاتا ہے جو حقیقی دنیا کی اشیا اور مظاہر کی بہت فطری نمائندگی فراہم نہیں کر سکتے۔ اس حد کو ختم کرنے کے لیے آبجیکٹ اورینٹڈ پروگرامنگ (OOP) کا تصور متعارف کرایا گیا جو ڈیٹا اور اعمال کو ایک پیکیج میں یکجا کرتا ہے جسے کلاس کہتے ہیں۔ اس سے پروگرامرز زیادہ ماڈیولر انداز میں پروگرام لکھ سکتے ہیں تاکہ انھیں سمجھنا آسان ہو۔ یہ ماڈیولرائزیشن کوڈ کے دوبارہ استعمال کا زیادہ درجہ بھی فراہم کرتی ہے۔ آبجیکٹ اورینٹڈ پروگرامنگ پروگرامنگ کے میدان میں کئی دوسرے مفید تصورات بھی لاتی ہے جو یہ ہیں: ڈیٹا ہائیڈنگ، وراثت، انکیپسولیشن، ایبسٹریکشن اور پولی مورفزم۔ یہ یونٹ OOP کی انھی خصوصیات پر مرکوز ہے۔",
+     "pashto": "په جوړښتي یا دودیز پروګرام‌سازۍ کې ډېټا او کړنې دوه جلا وجودونه ګڼل کېږي چې د ریښتینې نړۍ د شیانو او پدیدو ډېره طبیعي ښودنه نه شي برابرولی. د دې محدودیت د لرې کولو لپاره د شیانو ته متوجه پروګرام‌سازۍ (OOP) مفهوم معرفي شو چې ډېټا او کړنې په یوه بسته کې یوځای کوي چې ټولګی (class) بلل کېږي. دا پروګرام جوړوونکو ته اجازه ورکوي چې پروګرامونه په ډېر ماډیولي ډول ولیکي ترڅو پوهېدل یې اسانه شي. دا ماډیولي کول د کوډ د بیا کارونې لوړه کچه هم برابروي. د شیانو ته متوجه پروګرام‌سازي د پروګرام‌سازۍ ډګر ته نور ګټور مفاهیم هم راوړي چې دا دي: د ډېټا پټول، میراث، کپسول‌کول، تجرید او پولي‌مورفیزم. دا څپرکی د OOP په دې ځانګړتیاوو تمرکز لري."
+    },
+    {
+     "text": "8.1 Classes",
+     "urdu": "8.1 کلاسز",
+     "pashto": "۸.۱ ټولګي"
+    },
+    {
+     "text": "Class is one of the main features of Object Oriented Programming language. It combines both data and functions into units or packages and makes the programs modularized.",
+     "urdu": "کلاس آبجیکٹ اورینٹڈ پروگرامنگ زبان کی بنیادی خصوصیات میں سے ایک ہے۔ یہ ڈیٹا اور فنکشنز دونوں کو اکائیوں یا پیکیجز میں یکجا کرتی ہے اور پروگراموں کو ماڈیولر بناتی ہے۔",
+     "pashto": "ټولګی د شیانو ته متوجه پروګرامي ژبې له اصلي ځانګړتیاوو یو دی. ډېټا او فنکشنونه دواړه په واحدونو یا بستو کې یوځای کوي او پروګرامونه ماډیولي کوي."
+    },
+    {
+     "text": "8.1.1 Class and object",
+     "urdu": "8.1.1 کلاس اور آبجیکٹ",
+     "pashto": "۸.۱.۱ ټولګی او شی"
+    },
+    {
+     "text": "a. Class",
+     "urdu": "a. کلاس",
+     "pashto": "a. ټولګی"
+    },
+    {
+     "text": "A class consists of both attributes of real world objects and functions that perform operations on these attributes. The attributes are called data members and the operations are called member functions. It is an important feature of object oriented programming (OOP) and is used to hold both data and functions, of real world objects, tightly into a single package.",
+     "urdu": "کلاس حقیقی دنیا کی اشیا کی خصوصیات اور ان خصوصیات پر عمل کرنے والے فنکشنز دونوں پر مشتمل ہوتی ہے۔ خصوصیات کو ڈیٹا ممبرز اور اعمال کو ممبر فنکشنز کہتے ہیں۔ یہ آبجیکٹ اورینٹڈ پروگرامنگ (OOP) کی اہم خصوصیت ہے اور حقیقی دنیا کی اشیا کے ڈیٹا اور فنکشنز دونوں کو مضبوطی سے ایک پیکیج میں رکھنے کے لیے استعمال ہوتی ہے۔",
+     "pashto": "ټولګی د ریښتینې نړۍ د شیانو ځانګړنې او هغه فنکشنونه چې پر دې ځانګړنو عملیې کوي، دواړه لري. ځانګړنې د ډېټا غړي او عملیې غړي فنکشنونه بلل کېږي. دا د شیانو ته متوجه پروګرام‌سازۍ (OOP) مهمه ځانګړتیا ده او د ریښتینې نړۍ د شیانو ډېټا او فنکشنونه دواړه په یوه بسته کې په کلکه ساتي."
+    },
+    {
+     "text": "Classes are generally declared using the keyword class, with the following format:",
+     "urdu": "کلاسز عموماً کلیدی لفظ class سے درج ذیل شکل میں ڈکلیئر کی جاتی ہیں:",
+     "pashto": "ټولګي عموماً د class کلیدي کلمې په مرسته په لاندې بڼه اعلانېږي:"
+    },
+    {
+     "text": "class class_name\n{\naccess_specifier_1:\nmember1;\naccess_specifier_2: // Body of the class\nmember2;\n...\n};",
+     "urdu": "class class_name\n{\naccess_specifier_1:\nmember1;\naccess_specifier_2: // Body of the class\nmember2;\n...\n};",
+     "pashto": "class class_name\n{\naccess_specifier_1:\nmember1;\naccess_specifier_2: // Body of the class\nmember2;\n...\n};",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, class_name is a valid identifier for the class which is followed by the body of the class that is enclosed in pair of braces. The body of the class consists of:",
+     "urdu": "یہاں class_name کلاس کا ایک درست شناخت کنندہ ہے جس کے بعد کلاس کا جسم آتا ہے جو بریسز کے جوڑے میں بند ہوتا ہے۔ کلاس کا جسم ان پر مشتمل ہوتا ہے:",
+     "pashto": "دلته class_name د ټولګي لپاره یو سم پېژندونکی دی چې وروسته یې د ټولګي بدنه راځي چې د لوړو قوسونو په جوړه کې تړل شوې. د ټولګي بدنه دا لري:"
+    },
+    {
+     "text": "Data members",
+     "urdu": "ڈیٹا ممبرز",
+     "pashto": "د ډېټا غړي"
+    },
+    {
+     "text": "Member functions",
+     "urdu": "ممبر فنکشنز",
+     "pashto": "غړي فنکشنونه"
+    },
+    {
+     "text": "Data members and member functions are used with the access specifiers. An access specifier is one of the three types:",
+     "urdu": "ڈیٹا ممبرز اور ممبر فنکشنز ایکسس اسپیسیفائرز کے ساتھ استعمال ہوتے ہیں۔ ایکسس اسپیسیفائر تین اقسام میں سے ایک ہوتا ہے:",
+     "pashto": "د ډېټا غړي او غړي فنکشنونه د لاسرسي ټاکونکو سره کارېږي. د لاسرسي ټاکونکی له درېیو ډولونو یو دی:"
+    },
+    {
+     "text": "private",
+     "urdu": "private",
+     "pashto": "private"
+    },
+    {
+     "text": "public",
+     "urdu": "public",
+     "pashto": "public"
+    },
+    {
+     "text": "protected",
+     "urdu": "protected",
+     "pashto": "protected"
+    },
+    {
+     "text": "A C++ class ends with a semicolon (;). Consider the following example to understand the concept of class.",
+     "urdu": "C++ کلاس سیمی کولن (;) پر ختم ہوتی ہے۔ کلاس کا تصور سمجھنے کے لیے درج ذیل مثال پر غور کریں۔",
+     "pashto": "د C++ ټولګی په سیمي‌کولن (;) پای ته رسېږي. د ټولګي د مفهوم د پوهېدو لپاره لاندې بېلګې ته پام وکړئ."
+    },
+    {
+     "text": "// Class declaration example\nclass CRectangle\n{\nprivate:\nint x, y; // declaration of data members\npublic:\nvoid set_values (int a, int b); // declaration of member function\nint area (); // declaration of member function\n};",
+     "urdu": "// Class declaration example\nclass CRectangle\n{\nprivate:\nint x, y; // declaration of data members\npublic:\nvoid set_values (int a, int b); // declaration of member function\nint area (); // declaration of member function\n};",
+     "pashto": "// Class declaration example\nclass CRectangle\n{\nprivate:\nint x, y; // declaration of data members\npublic:\nvoid set_values (int a, int b); // declaration of member function\nint area (); // declaration of member function\n};",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The above statements declare a class named CRectangle. This class contains four members:",
+     "urdu": "اوپر کے بیانات CRectangle نامی کلاس ڈکلیئر کرتے ہیں۔ اس کلاس کے چار اراکین ہیں:",
+     "pashto": "پورته بیانونه د CRectangle په نوم ټولګی اعلانوي. دا ټولګی څلور غړي لري:"
+    }
+   ],
+   "theory": "INTRODUCTION\n\nIn structural or traditional programming, the data and actions are considered as two separate entities which cannot provide a very intuitive representation of real world objects and phenomenon. To eliminate this limitation, Object-Oriented Programming (OOP) concept was introduced which combines data and actions together in one package called class. This allows programmers to write programs in more modular fashion to make them easier to understand. This modularization also provides a higher degree of code-reusability. Object-oriented programming also brings several other useful concepts into the field of programming which are: data hiding, inheritance, encapsulation, abstraction, and polymorphism. This Unit is focused on these features of OOP.\n\n8.1 Classes\n\nClass is one of the main features of Object Oriented Programming language. It combines both data and functions into units or packages and makes the programs modularized.\n\n8.1.1 Class and object\n\na. Class\n\nA class consists of both attributes of real world objects and functions that perform operations on these attributes. The attributes are called data members and the operations are called member functions. It is an important feature of object oriented programming (OOP) and is used to hold both data and functions, of real world objects, tightly into a single package.\n\nClasses are generally declared using the keyword class, with the following format:\n\nclass class_name\n{\naccess_specifier_1:\nmember1;\naccess_specifier_2: // Body of the class\nmember2;\n...\n};\n\nHere, class_name is a valid identifier for the class which is followed by the body of the class that is enclosed in pair of braces. The body of the class consists of:\n\nData members\n\nMember functions\n\nData members and member functions are used with the access specifiers. An access specifier is one of the three types:\n\nprivate\n\npublic\n\nprotected\n\nA C++ class ends with a semicolon (;). Consider the following example to understand the concept of class.\n\n// Class declaration example\nclass CRectangle\n{\nprivate:\nint x, y; // declaration of data members\npublic:\nvoid set_values (int a, int b); // declaration of member function\nint area (); // declaration of member function\n};\n\nThe above statements declare a class named CRectangle. This class contains four members:",
+   "urdu": "تعارف\n\nساختی یا روایتی پروگرامنگ میں ڈیٹا اور اعمال کو دو الگ وجود سمجھا جاتا ہے جو حقیقی دنیا کی اشیا اور مظاہر کی بہت فطری نمائندگی فراہم نہیں کر سکتے۔ اس حد کو ختم کرنے کے لیے آبجیکٹ اورینٹڈ پروگرامنگ (OOP) کا تصور متعارف کرایا گیا جو ڈیٹا اور اعمال کو ایک پیکیج میں یکجا کرتا ہے جسے کلاس کہتے ہیں۔ اس سے پروگرامرز زیادہ ماڈیولر انداز میں پروگرام لکھ سکتے ہیں تاکہ انھیں سمجھنا آسان ہو۔ یہ ماڈیولرائزیشن کوڈ کے دوبارہ استعمال کا زیادہ درجہ بھی فراہم کرتی ہے۔ آبجیکٹ اورینٹڈ پروگرامنگ پروگرامنگ کے میدان میں کئی دوسرے مفید تصورات بھی لاتی ہے جو یہ ہیں: ڈیٹا ہائیڈنگ، وراثت، انکیپسولیشن، ایبسٹریکشن اور پولی مورفزم۔ یہ یونٹ OOP کی انھی خصوصیات پر مرکوز ہے۔\n\n8.1 کلاسز\n\nکلاس آبجیکٹ اورینٹڈ پروگرامنگ زبان کی بنیادی خصوصیات میں سے ایک ہے۔ یہ ڈیٹا اور فنکشنز دونوں کو اکائیوں یا پیکیجز میں یکجا کرتی ہے اور پروگراموں کو ماڈیولر بناتی ہے۔\n\n8.1.1 کلاس اور آبجیکٹ\n\na. کلاس\n\nکلاس حقیقی دنیا کی اشیا کی خصوصیات اور ان خصوصیات پر عمل کرنے والے فنکشنز دونوں پر مشتمل ہوتی ہے۔ خصوصیات کو ڈیٹا ممبرز اور اعمال کو ممبر فنکشنز کہتے ہیں۔ یہ آبجیکٹ اورینٹڈ پروگرامنگ (OOP) کی اہم خصوصیت ہے اور حقیقی دنیا کی اشیا کے ڈیٹا اور فنکشنز دونوں کو مضبوطی سے ایک پیکیج میں رکھنے کے لیے استعمال ہوتی ہے۔\n\nکلاسز عموماً کلیدی لفظ class سے درج ذیل شکل میں ڈکلیئر کی جاتی ہیں:\n\nclass class_name\n{\naccess_specifier_1:\nmember1;\naccess_specifier_2: // Body of the class\nmember2;\n...\n};\n\nیہاں class_name کلاس کا ایک درست شناخت کنندہ ہے جس کے بعد کلاس کا جسم آتا ہے جو بریسز کے جوڑے میں بند ہوتا ہے۔ کلاس کا جسم ان پر مشتمل ہوتا ہے:\n\nڈیٹا ممبرز\n\nممبر فنکشنز\n\nڈیٹا ممبرز اور ممبر فنکشنز ایکسس اسپیسیفائرز کے ساتھ استعمال ہوتے ہیں۔ ایکسس اسپیسیفائر تین اقسام میں سے ایک ہوتا ہے:\n\nprivate\n\npublic\n\nprotected\n\nC++ کلاس سیمی کولن (;) پر ختم ہوتی ہے۔ کلاس کا تصور سمجھنے کے لیے درج ذیل مثال پر غور کریں۔\n\n// Class declaration example\nclass CRectangle\n{\nprivate:\nint x, y; // declaration of data members\npublic:\nvoid set_values (int a, int b); // declaration of member function\nint area (); // declaration of member function\n};\n\nاوپر کے بیانات CRectangle نامی کلاس ڈکلیئر کرتے ہیں۔ اس کلاس کے چار اراکین ہیں:",
+   "pashto": "سریزه\n\nپه جوړښتي یا دودیز پروګرام‌سازۍ کې ډېټا او کړنې دوه جلا وجودونه ګڼل کېږي چې د ریښتینې نړۍ د شیانو او پدیدو ډېره طبیعي ښودنه نه شي برابرولی. د دې محدودیت د لرې کولو لپاره د شیانو ته متوجه پروګرام‌سازۍ (OOP) مفهوم معرفي شو چې ډېټا او کړنې په یوه بسته کې یوځای کوي چې ټولګی (class) بلل کېږي. دا پروګرام جوړوونکو ته اجازه ورکوي چې پروګرامونه په ډېر ماډیولي ډول ولیکي ترڅو پوهېدل یې اسانه شي. دا ماډیولي کول د کوډ د بیا کارونې لوړه کچه هم برابروي. د شیانو ته متوجه پروګرام‌سازي د پروګرام‌سازۍ ډګر ته نور ګټور مفاهیم هم راوړي چې دا دي: د ډېټا پټول، میراث، کپسول‌کول، تجرید او پولي‌مورفیزم. دا څپرکی د OOP په دې ځانګړتیاوو تمرکز لري.\n\n۸.۱ ټولګي\n\nټولګی د شیانو ته متوجه پروګرامي ژبې له اصلي ځانګړتیاوو یو دی. ډېټا او فنکشنونه دواړه په واحدونو یا بستو کې یوځای کوي او پروګرامونه ماډیولي کوي.\n\n۸.۱.۱ ټولګی او شی\n\na. ټولګی\n\nټولګی د ریښتینې نړۍ د شیانو ځانګړنې او هغه فنکشنونه چې پر دې ځانګړنو عملیې کوي، دواړه لري. ځانګړنې د ډېټا غړي او عملیې غړي فنکشنونه بلل کېږي. دا د شیانو ته متوجه پروګرام‌سازۍ (OOP) مهمه ځانګړتیا ده او د ریښتینې نړۍ د شیانو ډېټا او فنکشنونه دواړه په یوه بسته کې په کلکه ساتي.\n\nټولګي عموماً د class کلیدي کلمې په مرسته په لاندې بڼه اعلانېږي:\n\nclass class_name\n{\naccess_specifier_1:\nmember1;\naccess_specifier_2: // Body of the class\nmember2;\n...\n};\n\nدلته class_name د ټولګي لپاره یو سم پېژندونکی دی چې وروسته یې د ټولګي بدنه راځي چې د لوړو قوسونو په جوړه کې تړل شوې. د ټولګي بدنه دا لري:\n\nد ډېټا غړي\n\nغړي فنکشنونه\n\nد ډېټا غړي او غړي فنکشنونه د لاسرسي ټاکونکو سره کارېږي. د لاسرسي ټاکونکی له درېیو ډولونو یو دی:\n\nprivate\n\npublic\n\nprotected\n\nد C++ ټولګی په سیمي‌کولن (;) پای ته رسېږي. د ټولګي د مفهوم د پوهېدو لپاره لاندې بېلګې ته پام وکړئ.\n\n// Class declaration example\nclass CRectangle\n{\nprivate:\nint x, y; // declaration of data members\npublic:\nvoid set_values (int a, int b); // declaration of member function\nint area (); // declaration of member function\n};\n\nپورته بیانونه د CRectangle په نوم ټولګی اعلانوي. دا ټولګی څلور غړي لري:",
+   "theoryUrdu": "تعارف\n\nساختی یا روایتی پروگرامنگ میں ڈیٹا اور اعمال کو دو الگ وجود سمجھا جاتا ہے جو حقیقی دنیا کی اشیا اور مظاہر کی بہت فطری نمائندگی فراہم نہیں کر سکتے۔ اس حد کو ختم کرنے کے لیے آبجیکٹ اورینٹڈ پروگرامنگ (OOP) کا تصور متعارف کرایا گیا جو ڈیٹا اور اعمال کو ایک پیکیج میں یکجا کرتا ہے جسے کلاس کہتے ہیں۔ اس سے پروگرامرز زیادہ ماڈیولر انداز میں پروگرام لکھ سکتے ہیں تاکہ انھیں سمجھنا آسان ہو۔ یہ ماڈیولرائزیشن کوڈ کے دوبارہ استعمال کا زیادہ درجہ بھی فراہم کرتی ہے۔ آبجیکٹ اورینٹڈ پروگرامنگ پروگرامنگ کے میدان میں کئی دوسرے مفید تصورات بھی لاتی ہے جو یہ ہیں: ڈیٹا ہائیڈنگ، وراثت، انکیپسولیشن، ایبسٹریکشن اور پولی مورفزم۔ یہ یونٹ OOP کی انھی خصوصیات پر مرکوز ہے۔\n\n8.1 کلاسز\n\nکلاس آبجیکٹ اورینٹڈ پروگرامنگ زبان کی بنیادی خصوصیات میں سے ایک ہے۔ یہ ڈیٹا اور فنکشنز دونوں کو اکائیوں یا پیکیجز میں یکجا کرتی ہے اور پروگراموں کو ماڈیولر بناتی ہے۔\n\n8.1.1 کلاس اور آبجیکٹ\n\na. کلاس\n\nکلاس حقیقی دنیا کی اشیا کی خصوصیات اور ان خصوصیات پر عمل کرنے والے فنکشنز دونوں پر مشتمل ہوتی ہے۔ خصوصیات کو ڈیٹا ممبرز اور اعمال کو ممبر فنکشنز کہتے ہیں۔ یہ آبجیکٹ اورینٹڈ پروگرامنگ (OOP) کی اہم خصوصیت ہے اور حقیقی دنیا کی اشیا کے ڈیٹا اور فنکشنز دونوں کو مضبوطی سے ایک پیکیج میں رکھنے کے لیے استعمال ہوتی ہے۔\n\nکلاسز عموماً کلیدی لفظ class سے درج ذیل شکل میں ڈکلیئر کی جاتی ہیں:\n\nclass class_name\n{\naccess_specifier_1:\nmember1;\naccess_specifier_2: // Body of the class\nmember2;\n...\n};\n\nیہاں class_name کلاس کا ایک درست شناخت کنندہ ہے جس کے بعد کلاس کا جسم آتا ہے جو بریسز کے جوڑے میں بند ہوتا ہے۔ کلاس کا جسم ان پر مشتمل ہوتا ہے:\n\nڈیٹا ممبرز\n\nممبر فنکشنز\n\nڈیٹا ممبرز اور ممبر فنکشنز ایکسس اسپیسیفائرز کے ساتھ استعمال ہوتے ہیں۔ ایکسس اسپیسیفائر تین اقسام میں سے ایک ہوتا ہے:\n\nprivate\n\npublic\n\nprotected\n\nC++ کلاس سیمی کولن (;) پر ختم ہوتی ہے۔ کلاس کا تصور سمجھنے کے لیے درج ذیل مثال پر غور کریں۔\n\n// Class declaration example\nclass CRectangle\n{\nprivate:\nint x, y; // declaration of data members\npublic:\nvoid set_values (int a, int b); // declaration of member function\nint area (); // declaration of member function\n};\n\nاوپر کے بیانات CRectangle نامی کلاس ڈکلیئر کرتے ہیں۔ اس کلاس کے چار اراکین ہیں:",
+   "theoryPashto": "سریزه\n\nپه جوړښتي یا دودیز پروګرام‌سازۍ کې ډېټا او کړنې دوه جلا وجودونه ګڼل کېږي چې د ریښتینې نړۍ د شیانو او پدیدو ډېره طبیعي ښودنه نه شي برابرولی. د دې محدودیت د لرې کولو لپاره د شیانو ته متوجه پروګرام‌سازۍ (OOP) مفهوم معرفي شو چې ډېټا او کړنې په یوه بسته کې یوځای کوي چې ټولګی (class) بلل کېږي. دا پروګرام جوړوونکو ته اجازه ورکوي چې پروګرامونه په ډېر ماډیولي ډول ولیکي ترڅو پوهېدل یې اسانه شي. دا ماډیولي کول د کوډ د بیا کارونې لوړه کچه هم برابروي. د شیانو ته متوجه پروګرام‌سازي د پروګرام‌سازۍ ډګر ته نور ګټور مفاهیم هم راوړي چې دا دي: د ډېټا پټول، میراث، کپسول‌کول، تجرید او پولي‌مورفیزم. دا څپرکی د OOP په دې ځانګړتیاوو تمرکز لري.\n\n۸.۱ ټولګي\n\nټولګی د شیانو ته متوجه پروګرامي ژبې له اصلي ځانګړتیاوو یو دی. ډېټا او فنکشنونه دواړه په واحدونو یا بستو کې یوځای کوي او پروګرامونه ماډیولي کوي.\n\n۸.۱.۱ ټولګی او شی\n\na. ټولګی\n\nټولګی د ریښتینې نړۍ د شیانو ځانګړنې او هغه فنکشنونه چې پر دې ځانګړنو عملیې کوي، دواړه لري. ځانګړنې د ډېټا غړي او عملیې غړي فنکشنونه بلل کېږي. دا د شیانو ته متوجه پروګرام‌سازۍ (OOP) مهمه ځانګړتیا ده او د ریښتینې نړۍ د شیانو ډېټا او فنکشنونه دواړه په یوه بسته کې په کلکه ساتي.\n\nټولګي عموماً د class کلیدي کلمې په مرسته په لاندې بڼه اعلانېږي:\n\nclass class_name\n{\naccess_specifier_1:\nmember1;\naccess_specifier_2: // Body of the class\nmember2;\n...\n};\n\nدلته class_name د ټولګي لپاره یو سم پېژندونکی دی چې وروسته یې د ټولګي بدنه راځي چې د لوړو قوسونو په جوړه کې تړل شوې. د ټولګي بدنه دا لري:\n\nد ډېټا غړي\n\nغړي فنکشنونه\n\nد ډېټا غړي او غړي فنکشنونه د لاسرسي ټاکونکو سره کارېږي. د لاسرسي ټاکونکی له درېیو ډولونو یو دی:\n\nprivate\n\npublic\n\nprotected\n\nد C++ ټولګی په سیمي‌کولن (;) پای ته رسېږي. د ټولګي د مفهوم د پوهېدو لپاره لاندې بېلګې ته پام وکړئ.\n\n// Class declaration example\nclass CRectangle\n{\nprivate:\nint x, y; // declaration of data members\npublic:\nvoid set_values (int a, int b); // declaration of member function\nint area (); // declaration of member function\n};\n\nپورته بیانونه د CRectangle په نوم ټولګی اعلانوي. دا ټولګی څلور غړي لري:",
+   "content": "<p>INTRODUCTION</p><p>In structural or traditional programming, the data and actions are considered as two separate entities which cannot provide a very intuitive representation of real world objects and phenomenon. To eliminate this limitation, Object-Oriented Programming (OOP) concept was introduced which combines data and actions together in one package called class. This allows programmers to write programs in more modular fashion to make them easier to understand. This modularization also provides a higher degree of code-reusability. Object-oriented programming also brings several other useful concepts into the field of programming which are: data hiding, inheritance, encapsulation, abstraction, and polymorphism. This Unit is focused on these features of OOP.</p><p>8.1 Classes</p><p>Class is one of the main features of Object Oriented Programming language. It combines both data and functions into units or packages and makes the programs modularized.</p><p>8.1.1 Class and object</p><p>a. Class</p><p>A class consists of both attributes of real world objects and functions that perform operations on these attributes. The attributes are called data members and the operations are called member functions. It is an important feature of object oriented programming (OOP) and is used to hold both data and functions, of real world objects, tightly into a single package.</p><p>Classes are generally declared using the keyword class, with the following format:</p><p>class class_name\n{\naccess_specifier_1:\nmember1;\naccess_specifier_2: // Body of the class\nmember2;\n...\n};</p><p>Here, class_name is a valid identifier for the class which is followed by the body of the class that is enclosed in pair of braces. The body of the class consists of:</p><p>Data members</p><p>Member functions</p><p>Data members and member functions are used with the access specifiers. An access specifier is one of the three types:</p><p>private</p><p>public</p><p>protected</p><p>A C++ class ends with a semicolon (;). Consider the following example to understand the concept of class.</p><p>// Class declaration example\nclass CRectangle\n{\nprivate:\nint x, y; // declaration of data members\npublic:\nvoid set_values (int a, int b); // declaration of member function\nint area (); // declaration of member function\n};</p><p>The above statements declare a class named CRectangle. This class contains four members:</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      10,
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      13,
+      14,
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 120,
+     "printedPages": [
+      228,
+      229
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (1)",
+   "sourcePageLabel": "PDF 120 · p. 228–229",
+   "sourceNote": "The class format begins at the foot of p.228 and ends on p.229; it is given whole.",
+   "unit": 8
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

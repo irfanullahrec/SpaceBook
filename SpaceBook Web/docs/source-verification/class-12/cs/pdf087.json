@@ -1,0 +1,301 @@
+{
+ "pdfPage": 87,
+ "sections": [
+  {
+   "id": "cs12-u5-text-9",
+   "title": "Unit 5 text (9)",
+   "headingUrdu": "یونٹ 5 — متن (9)",
+   "headingPashto": "۵ څپرکی — متن (9)",
+   "paras": [
+    {
+     "text": "5.3 Strings",
+     "urdu": "5.3 اسٹرنگز",
+     "pashto": "۵.۳ تارونه"
+    },
+    {
+     "text": "5.3.1 What is String?",
+     "urdu": "5.3.1 اسٹرنگ کیا ہے؟",
+     "pashto": "۵.۳.۱ تار څه دی؟"
+    },
+    {
+     "text": "The sequence of characters enclosed in quotation marks and is used to handle non-numeric data i.e. names, addresses etc. are called strings.",
+     "urdu": "واوین میں بند حروف کی ترتیب جو غیر عددی ڈیٹا یعنی نام، پتے وغیرہ سنبھالنے کے لیے استعمال ہوتی ہے، اسٹرنگز کہلاتی ہے۔",
+     "pashto": "په نقل‌قولونو کې تړلې د تورو لړۍ چې د غیر عددي ډېټا یعنې نومونو، پتو او نورو د چلولو لپاره کارېږي، تارونه (strings) بلل کېږي."
+    },
+    {
+     "text": "5.3.2 Defining a C String",
+     "urdu": "5.3.2 C اسٹرنگ کی تعریف",
+     "pashto": "۵.۳.۲ د C تار تعریف"
+    },
+    {
+     "text": "General syntax for defining string in C is given below:",
+     "urdu": "C میں اسٹرنگ کی تعریف کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے:",
+     "pashto": "په C کې د تار د تعریف عمومي بڼه لاندې ورکړل شوې:"
+    },
+    {
+     "text": "data type name_of_string [size of string];",
+     "urdu": "data type name_of_string [size of string];",
+     "pashto": "data type name_of_string [size of string];",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In the above general syntax, data type, is char data type and name_of_string is the name of the string. The size (number of characters) of the string is specified in square brackets, [ ]. The following statement defines a string with the name str having size 20.",
+     "urdu": "اوپر کے عمومی طریقۂ تحریر میں data type، char ڈیٹا ٹائپ ہے اور name_of_string اسٹرنگ کا نام ہے۔ اسٹرنگ کا سائز (حروف کی تعداد) مربع بریکٹس [ ] میں بتایا جاتا ہے۔ درج ذیل بیان str نام کی 20 سائز والی اسٹرنگ کی تعریف کرتا ہے۔",
+     "pashto": "په پورته عمومي بڼه کې data type د char ډېټا ډول دی او name_of_string د تار نوم دی. د تار اندازه (د تورو شمېر) په مربع قوسونو [ ] کې ښودل کېږي. لاندې بیان د str په نوم د ۲۰ اندازې تار تعریفوي."
+    },
+    {
+     "text": "char str [20];",
+     "urdu": "char str [20];",
+     "pashto": "char str [20];",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "For handling strings, the header file <cstring> is needed but in some implementations this library may be automatically included when the header file <iostream> is included. There are some limitations of strings in C. To overcome and remove these problems, C++ provides a class <string> that removes many of these problems. This class provides some typical string operations like comparison, concatenation, find and replace, and a function for obtaining substrings. The general syntax for defining strings in C++ is given below:",
+     "urdu": "اسٹرنگز سنبھالنے کے لیے ہیڈر فائل <cstring> درکار ہے لیکن بعض نفاذ میں یہ لائبریری ہیڈر فائل <iostream> شامل کرنے پر خود بخود شامل ہو سکتی ہے۔ C میں اسٹرنگز کی کچھ حدود ہیں۔ ان مسائل پر قابو پانے اور انھیں دور کرنے کے لیے C++ ایک کلاس <string> فراہم کرتی ہے جو ان میں سے بہت سے مسائل دور کرتی ہے۔ یہ کلاس کچھ عام اسٹرنگ آپریشنز جیسے موازنہ، جوڑنا، تلاش اور تبدیلی، اور ذیلی اسٹرنگز حاصل کرنے کا فنکشن فراہم کرتی ہے۔ C++ میں اسٹرنگز کی تعریف کا عمومی طریقۂ تحریر ذیل میں ہے:",
+     "pashto": "د تارونو د چلولو لپاره د <cstring> سرپاڼه دوتنې ته اړتیا ده، خو په ځینو پلیو کې دا کتابتون د <iostream> سرپاڼه دوتنې په شاملولو پخپله شامل کېدای شي. په C کې د تارونو ځینې محدودیتونه دي. د دې ستونزو د لرې کولو لپاره C++ د <string> ټولګی برابروي چې ډېرې دا ستونزې لرې کوي. دا ټولګی ځینې عادي د تار عملیې لکه پرتله، نښلول، موندل او بدلول، او د فرعي تارونو د ترلاسه کولو فنکشن برابروي. په C++ کې د تارونو د تعریف عمومي بڼه لاندې ده:"
+    },
+    {
+     "text": "string str;",
+     "urdu": "string str;",
+     "pashto": "string str;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This statement defines a string name str of type string.",
+     "urdu": "یہ بیان string قسم کی str نام کی اسٹرنگ کی تعریف کرتا ہے۔",
+     "pashto": "دا بیان د string ډول د str په نوم تار تعریفوي."
+    },
+    {
+     "text": "5.3.3 Initializing string",
+     "urdu": "5.3.3 اسٹرنگ کو ابتدائی قدر دینا",
+     "pashto": "۵.۳.۳ تار ته لومړنی ارزښت ورکول"
+    },
+    {
+     "text": "1. Strings in C can be initialized as arrays are initialized because string is a character array.",
+     "urdu": "1۔ C میں اسٹرنگز کو اسی طرح ابتدائی قدر دی جا سکتی ہے جیسے ایریز کو، کیونکہ اسٹرنگ حروف کا ایرے ہے۔",
+     "pashto": "۱. په C کې تارونو ته د لړیو په څېر لومړنی ارزښت ورکول کېدای شي ځکه تار د تورو لړۍ ده."
+    },
+    {
+     "text": "Consider the following example:",
+     "urdu": "درج ذیل مثال پر غور کریں:",
+     "pashto": "لاندې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "char greeting [6] = { 'H', 'e', 'l', 'l', 'o', '\\0' };",
+     "urdu": "char greeting [6] = { 'H', 'e', 'l', 'l', 'o', '\\0' };",
+     "pashto": "char greeting [6] = { 'H', 'e', 'l', 'l', 'o', '\\0' };",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The above statement declares a string named “greeting” with six elements of type char that are initialized with the characters that form the word \"Hello\" plus a null character '\\0' at the end. Another method for initializing a string in C is to enclose the string in double quotes, \"\" as shown below:",
+     "urdu": "اوپر کا بیان ’’greeting‘‘ نام کی اسٹرنگ ڈکلیئر کرتا ہے جس کے char قسم کے چھ عناصر ہیں جنھیں لفظ \"Hello\" بنانے والے حروف اور آخر میں ایک null حرف '\\0' سے ابتدائی قدر دی گئی ہے۔ C میں اسٹرنگ کو ابتدائی قدر دینے کا ایک اور طریقہ اسٹرنگ کو ڈبل کوٹس \"\" میں بند کرنا ہے جیسا کہ ذیل میں دکھایا گیا ہے:",
+     "pashto": "پورته بیان د \"greeting\" په نوم یو تار اعلانوي چې د char ډول شپږ عناصر لري او د \"Hello\" کلمې جوړوونکو تورو او په پای کې د null توري '\\0' سره لومړنی ارزښت ورکړل شوی. په C کې تار ته د لومړني ارزښت ورکولو بله لاره دا ده چې تار په دوه‌ګونو نقل‌قولونو \"\" کې وتړل شي لکه لاندې:"
+    },
+    {
+     "text": "char greeting [ ] = “Hello”;",
+     "urdu": "char greeting [ ] = “Hello”;",
+     "pashto": "char greeting [ ] = “Hello”;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In both cases, the array of characters greeting is declared with a size of 6 elements of type char: the 5 characters that compose the word “Hello” plus a final null character ('\\0') which specifies the end of the sequence and that, in the second case, when using double quotes (\") it is appended automatically.",
+     "urdu": "دونوں صورتوں میں حروف کا ایرے greeting، char قسم کے 6 عناصر کے سائز سے ڈکلیئر ہوتا ہے: لفظ ’’Hello‘‘ بنانے والے 5 حروف اور ایک آخری null حرف ('\\0') جو ترتیب کا اختتام بتاتا ہے، اور دوسری صورت میں ڈبل کوٹس (\") استعمال کرنے پر یہ خود بخود شامل ہو جاتا ہے۔",
+     "pashto": "په دواړو حالتونو کې د تورو لړۍ greeting د char ډول ۶ عناصرو په اندازه اعلانېږي: د \"Hello\" کلمې جوړوونکي ۵ توري او یو وروستی null توری ('\\0') چې د لړۍ پای ښيي، او په دویم حالت کې د دوه‌ګونو نقل‌قولونو (\") په کارولو پخپله ورزیاتېږي."
+    },
+    {
+     "text": "Consider an example to ask for your name and then display a greeting message on the screen as shown below using string:",
+     "urdu": "ایک مثال پر غور کریں جو اسٹرنگ کے ذریعے آپ کا نام پوچھتی ہے اور پھر اسکرین پر خوش آمدیدی پیغام دکھاتی ہے جیسا کہ ذیل میں ہے:",
+     "pashto": "یوې بېلګې ته پام وکړئ چې د تار په مرسته ستاسو نوم پوښتي او بیا پر پرده د ښه راغلاست پیغام ښيي لکه لاندې:"
+    },
+    {
+     "text": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar question[] = \"Please, enter your first name: \";\nchar greeting[] = \"Hello, \";\nchar yourname [80];\ncout << question;\ncin >> yourname;\ncout << greeting << yourname << \"!\";\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar question[] = \"Please, enter your first name: \";\nchar greeting[] = \"Hello, \";\nchar yourname [80];\ncout << question;\ncin >> yourname;\ncout << greeting << yourname << \"!\";\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar question[] = \"Please, enter your first name: \";\nchar greeting[] = \"Hello, \";\nchar yourname [80];\ncout << question;\ncin >> yourname;\ncout << greeting << yourname << \"!\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Please, enter your first name:\nRahman\nHello, Rahman!",
+     "urdu": "Please, enter your first name:\nRahman\nHello, Rahman!",
+     "pashto": "Please, enter your first name:\nRahman\nHello, Rahman!",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "5.3 Strings\n\n5.3.1 What is String?\n\nThe sequence of characters enclosed in quotation marks and is used to handle non-numeric data i.e. names, addresses etc. are called strings.\n\n5.3.2 Defining a C String\n\nGeneral syntax for defining string in C is given below:\n\ndata type name_of_string [size of string];\n\nIn the above general syntax, data type, is char data type and name_of_string is the name of the string. The size (number of characters) of the string is specified in square brackets, [ ]. The following statement defines a string with the name str having size 20.\n\nchar str [20];\n\nFor handling strings, the header file <cstring> is needed but in some implementations this library may be automatically included when the header file <iostream> is included. There are some limitations of strings in C. To overcome and remove these problems, C++ provides a class <string> that removes many of these problems. This class provides some typical string operations like comparison, concatenation, find and replace, and a function for obtaining substrings. The general syntax for defining strings in C++ is given below:\n\nstring str;\n\nThis statement defines a string name str of type string.\n\n5.3.3 Initializing string\n\n1. Strings in C can be initialized as arrays are initialized because string is a character array.\n\nConsider the following example:\n\nchar greeting [6] = { 'H', 'e', 'l', 'l', 'o', '\\0' };\n\nThe above statement declares a string named “greeting” with six elements of type char that are initialized with the characters that form the word \"Hello\" plus a null character '\\0' at the end. Another method for initializing a string in C is to enclose the string in double quotes, \"\" as shown below:\n\nchar greeting [ ] = “Hello”;\n\nIn both cases, the array of characters greeting is declared with a size of 6 elements of type char: the 5 characters that compose the word “Hello” plus a final null character ('\\0') which specifies the end of the sequence and that, in the second case, when using double quotes (\") it is appended automatically.\n\nConsider an example to ask for your name and then display a greeting message on the screen as shown below using string:\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar question[] = \"Please, enter your first name: \";\nchar greeting[] = \"Hello, \";\nchar yourname [80];\ncout << question;\ncin >> yourname;\ncout << greeting << yourname << \"!\";\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nPlease, enter your first name:\nRahman\nHello, Rahman!",
+   "urdu": "5.3 اسٹرنگز\n\n5.3.1 اسٹرنگ کیا ہے؟\n\nواوین میں بند حروف کی ترتیب جو غیر عددی ڈیٹا یعنی نام، پتے وغیرہ سنبھالنے کے لیے استعمال ہوتی ہے، اسٹرنگز کہلاتی ہے۔\n\n5.3.2 C اسٹرنگ کی تعریف\n\nC میں اسٹرنگ کی تعریف کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے:\n\ndata type name_of_string [size of string];\n\nاوپر کے عمومی طریقۂ تحریر میں data type، char ڈیٹا ٹائپ ہے اور name_of_string اسٹرنگ کا نام ہے۔ اسٹرنگ کا سائز (حروف کی تعداد) مربع بریکٹس [ ] میں بتایا جاتا ہے۔ درج ذیل بیان str نام کی 20 سائز والی اسٹرنگ کی تعریف کرتا ہے۔\n\nchar str [20];\n\nاسٹرنگز سنبھالنے کے لیے ہیڈر فائل <cstring> درکار ہے لیکن بعض نفاذ میں یہ لائبریری ہیڈر فائل <iostream> شامل کرنے پر خود بخود شامل ہو سکتی ہے۔ C میں اسٹرنگز کی کچھ حدود ہیں۔ ان مسائل پر قابو پانے اور انھیں دور کرنے کے لیے C++ ایک کلاس <string> فراہم کرتی ہے جو ان میں سے بہت سے مسائل دور کرتی ہے۔ یہ کلاس کچھ عام اسٹرنگ آپریشنز جیسے موازنہ، جوڑنا، تلاش اور تبدیلی، اور ذیلی اسٹرنگز حاصل کرنے کا فنکشن فراہم کرتی ہے۔ C++ میں اسٹرنگز کی تعریف کا عمومی طریقۂ تحریر ذیل میں ہے:\n\nstring str;\n\nیہ بیان string قسم کی str نام کی اسٹرنگ کی تعریف کرتا ہے۔\n\n5.3.3 اسٹرنگ کو ابتدائی قدر دینا\n\n1۔ C میں اسٹرنگز کو اسی طرح ابتدائی قدر دی جا سکتی ہے جیسے ایریز کو، کیونکہ اسٹرنگ حروف کا ایرے ہے۔\n\nدرج ذیل مثال پر غور کریں:\n\nchar greeting [6] = { 'H', 'e', 'l', 'l', 'o', '\\0' };\n\nاوپر کا بیان ’’greeting‘‘ نام کی اسٹرنگ ڈکلیئر کرتا ہے جس کے char قسم کے چھ عناصر ہیں جنھیں لفظ \"Hello\" بنانے والے حروف اور آخر میں ایک null حرف '\\0' سے ابتدائی قدر دی گئی ہے۔ C میں اسٹرنگ کو ابتدائی قدر دینے کا ایک اور طریقہ اسٹرنگ کو ڈبل کوٹس \"\" میں بند کرنا ہے جیسا کہ ذیل میں دکھایا گیا ہے:\n\nchar greeting [ ] = “Hello”;\n\nدونوں صورتوں میں حروف کا ایرے greeting، char قسم کے 6 عناصر کے سائز سے ڈکلیئر ہوتا ہے: لفظ ’’Hello‘‘ بنانے والے 5 حروف اور ایک آخری null حرف ('\\0') جو ترتیب کا اختتام بتاتا ہے، اور دوسری صورت میں ڈبل کوٹس (\") استعمال کرنے پر یہ خود بخود شامل ہو جاتا ہے۔\n\nایک مثال پر غور کریں جو اسٹرنگ کے ذریعے آپ کا نام پوچھتی ہے اور پھر اسکرین پر خوش آمدیدی پیغام دکھاتی ہے جیسا کہ ذیل میں ہے:\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar question[] = \"Please, enter your first name: \";\nchar greeting[] = \"Hello, \";\nchar yourname [80];\ncout << question;\ncin >> yourname;\ncout << greeting << yourname << \"!\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nPlease, enter your first name:\nRahman\nHello, Rahman!",
+   "pashto": "۵.۳ تارونه\n\n۵.۳.۱ تار څه دی؟\n\nپه نقل‌قولونو کې تړلې د تورو لړۍ چې د غیر عددي ډېټا یعنې نومونو، پتو او نورو د چلولو لپاره کارېږي، تارونه (strings) بلل کېږي.\n\n۵.۳.۲ د C تار تعریف\n\nپه C کې د تار د تعریف عمومي بڼه لاندې ورکړل شوې:\n\ndata type name_of_string [size of string];\n\nپه پورته عمومي بڼه کې data type د char ډېټا ډول دی او name_of_string د تار نوم دی. د تار اندازه (د تورو شمېر) په مربع قوسونو [ ] کې ښودل کېږي. لاندې بیان د str په نوم د ۲۰ اندازې تار تعریفوي.\n\nchar str [20];\n\nد تارونو د چلولو لپاره د <cstring> سرپاڼه دوتنې ته اړتیا ده، خو په ځینو پلیو کې دا کتابتون د <iostream> سرپاڼه دوتنې په شاملولو پخپله شامل کېدای شي. په C کې د تارونو ځینې محدودیتونه دي. د دې ستونزو د لرې کولو لپاره C++ د <string> ټولګی برابروي چې ډېرې دا ستونزې لرې کوي. دا ټولګی ځینې عادي د تار عملیې لکه پرتله، نښلول، موندل او بدلول، او د فرعي تارونو د ترلاسه کولو فنکشن برابروي. په C++ کې د تارونو د تعریف عمومي بڼه لاندې ده:\n\nstring str;\n\nدا بیان د string ډول د str په نوم تار تعریفوي.\n\n۵.۳.۳ تار ته لومړنی ارزښت ورکول\n\n۱. په C کې تارونو ته د لړیو په څېر لومړنی ارزښت ورکول کېدای شي ځکه تار د تورو لړۍ ده.\n\nلاندې بېلګې ته پام وکړئ:\n\nchar greeting [6] = { 'H', 'e', 'l', 'l', 'o', '\\0' };\n\nپورته بیان د \"greeting\" په نوم یو تار اعلانوي چې د char ډول شپږ عناصر لري او د \"Hello\" کلمې جوړوونکو تورو او په پای کې د null توري '\\0' سره لومړنی ارزښت ورکړل شوی. په C کې تار ته د لومړني ارزښت ورکولو بله لاره دا ده چې تار په دوه‌ګونو نقل‌قولونو \"\" کې وتړل شي لکه لاندې:\n\nchar greeting [ ] = “Hello”;\n\nپه دواړو حالتونو کې د تورو لړۍ greeting د char ډول ۶ عناصرو په اندازه اعلانېږي: د \"Hello\" کلمې جوړوونکي ۵ توري او یو وروستی null توری ('\\0') چې د لړۍ پای ښيي، او په دویم حالت کې د دوه‌ګونو نقل‌قولونو (\") په کارولو پخپله ورزیاتېږي.\n\nیوې بېلګې ته پام وکړئ چې د تار په مرسته ستاسو نوم پوښتي او بیا پر پرده د ښه راغلاست پیغام ښيي لکه لاندې:\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar question[] = \"Please, enter your first name: \";\nchar greeting[] = \"Hello, \";\nchar yourname [80];\ncout << question;\ncin >> yourname;\ncout << greeting << yourname << \"!\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nPlease, enter your first name:\nRahman\nHello, Rahman!",
+   "theoryUrdu": "5.3 اسٹرنگز\n\n5.3.1 اسٹرنگ کیا ہے؟\n\nواوین میں بند حروف کی ترتیب جو غیر عددی ڈیٹا یعنی نام، پتے وغیرہ سنبھالنے کے لیے استعمال ہوتی ہے، اسٹرنگز کہلاتی ہے۔\n\n5.3.2 C اسٹرنگ کی تعریف\n\nC میں اسٹرنگ کی تعریف کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے:\n\ndata type name_of_string [size of string];\n\nاوپر کے عمومی طریقۂ تحریر میں data type، char ڈیٹا ٹائپ ہے اور name_of_string اسٹرنگ کا نام ہے۔ اسٹرنگ کا سائز (حروف کی تعداد) مربع بریکٹس [ ] میں بتایا جاتا ہے۔ درج ذیل بیان str نام کی 20 سائز والی اسٹرنگ کی تعریف کرتا ہے۔\n\nchar str [20];\n\nاسٹرنگز سنبھالنے کے لیے ہیڈر فائل <cstring> درکار ہے لیکن بعض نفاذ میں یہ لائبریری ہیڈر فائل <iostream> شامل کرنے پر خود بخود شامل ہو سکتی ہے۔ C میں اسٹرنگز کی کچھ حدود ہیں۔ ان مسائل پر قابو پانے اور انھیں دور کرنے کے لیے C++ ایک کلاس <string> فراہم کرتی ہے جو ان میں سے بہت سے مسائل دور کرتی ہے۔ یہ کلاس کچھ عام اسٹرنگ آپریشنز جیسے موازنہ، جوڑنا، تلاش اور تبدیلی، اور ذیلی اسٹرنگز حاصل کرنے کا فنکشن فراہم کرتی ہے۔ C++ میں اسٹرنگز کی تعریف کا عمومی طریقۂ تحریر ذیل میں ہے:\n\nstring str;\n\nیہ بیان string قسم کی str نام کی اسٹرنگ کی تعریف کرتا ہے۔\n\n5.3.3 اسٹرنگ کو ابتدائی قدر دینا\n\n1۔ C میں اسٹرنگز کو اسی طرح ابتدائی قدر دی جا سکتی ہے جیسے ایریز کو، کیونکہ اسٹرنگ حروف کا ایرے ہے۔\n\nدرج ذیل مثال پر غور کریں:\n\nchar greeting [6] = { 'H', 'e', 'l', 'l', 'o', '\\0' };\n\nاوپر کا بیان ’’greeting‘‘ نام کی اسٹرنگ ڈکلیئر کرتا ہے جس کے char قسم کے چھ عناصر ہیں جنھیں لفظ \"Hello\" بنانے والے حروف اور آخر میں ایک null حرف '\\0' سے ابتدائی قدر دی گئی ہے۔ C میں اسٹرنگ کو ابتدائی قدر دینے کا ایک اور طریقہ اسٹرنگ کو ڈبل کوٹس \"\" میں بند کرنا ہے جیسا کہ ذیل میں دکھایا گیا ہے:\n\nchar greeting [ ] = “Hello”;\n\nدونوں صورتوں میں حروف کا ایرے greeting، char قسم کے 6 عناصر کے سائز سے ڈکلیئر ہوتا ہے: لفظ ’’Hello‘‘ بنانے والے 5 حروف اور ایک آخری null حرف ('\\0') جو ترتیب کا اختتام بتاتا ہے، اور دوسری صورت میں ڈبل کوٹس (\") استعمال کرنے پر یہ خود بخود شامل ہو جاتا ہے۔\n\nایک مثال پر غور کریں جو اسٹرنگ کے ذریعے آپ کا نام پوچھتی ہے اور پھر اسکرین پر خوش آمدیدی پیغام دکھاتی ہے جیسا کہ ذیل میں ہے:\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar question[] = \"Please, enter your first name: \";\nchar greeting[] = \"Hello, \";\nchar yourname [80];\ncout << question;\ncin >> yourname;\ncout << greeting << yourname << \"!\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nPlease, enter your first name:\nRahman\nHello, Rahman!",
+   "theoryPashto": "۵.۳ تارونه\n\n۵.۳.۱ تار څه دی؟\n\nپه نقل‌قولونو کې تړلې د تورو لړۍ چې د غیر عددي ډېټا یعنې نومونو، پتو او نورو د چلولو لپاره کارېږي، تارونه (strings) بلل کېږي.\n\n۵.۳.۲ د C تار تعریف\n\nپه C کې د تار د تعریف عمومي بڼه لاندې ورکړل شوې:\n\ndata type name_of_string [size of string];\n\nپه پورته عمومي بڼه کې data type د char ډېټا ډول دی او name_of_string د تار نوم دی. د تار اندازه (د تورو شمېر) په مربع قوسونو [ ] کې ښودل کېږي. لاندې بیان د str په نوم د ۲۰ اندازې تار تعریفوي.\n\nchar str [20];\n\nد تارونو د چلولو لپاره د <cstring> سرپاڼه دوتنې ته اړتیا ده، خو په ځینو پلیو کې دا کتابتون د <iostream> سرپاڼه دوتنې په شاملولو پخپله شامل کېدای شي. په C کې د تارونو ځینې محدودیتونه دي. د دې ستونزو د لرې کولو لپاره C++ د <string> ټولګی برابروي چې ډېرې دا ستونزې لرې کوي. دا ټولګی ځینې عادي د تار عملیې لکه پرتله، نښلول، موندل او بدلول، او د فرعي تارونو د ترلاسه کولو فنکشن برابروي. په C++ کې د تارونو د تعریف عمومي بڼه لاندې ده:\n\nstring str;\n\nدا بیان د string ډول د str په نوم تار تعریفوي.\n\n۵.۳.۳ تار ته لومړنی ارزښت ورکول\n\n۱. په C کې تارونو ته د لړیو په څېر لومړنی ارزښت ورکول کېدای شي ځکه تار د تورو لړۍ ده.\n\nلاندې بېلګې ته پام وکړئ:\n\nchar greeting [6] = { 'H', 'e', 'l', 'l', 'o', '\\0' };\n\nپورته بیان د \"greeting\" په نوم یو تار اعلانوي چې د char ډول شپږ عناصر لري او د \"Hello\" کلمې جوړوونکو تورو او په پای کې د null توري '\\0' سره لومړنی ارزښت ورکړل شوی. په C کې تار ته د لومړني ارزښت ورکولو بله لاره دا ده چې تار په دوه‌ګونو نقل‌قولونو \"\" کې وتړل شي لکه لاندې:\n\nchar greeting [ ] = “Hello”;\n\nپه دواړو حالتونو کې د تورو لړۍ greeting د char ډول ۶ عناصرو په اندازه اعلانېږي: د \"Hello\" کلمې جوړوونکي ۵ توري او یو وروستی null توری ('\\0') چې د لړۍ پای ښيي، او په دویم حالت کې د دوه‌ګونو نقل‌قولونو (\") په کارولو پخپله ورزیاتېږي.\n\nیوې بېلګې ته پام وکړئ چې د تار په مرسته ستاسو نوم پوښتي او بیا پر پرده د ښه راغلاست پیغام ښيي لکه لاندې:\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar question[] = \"Please, enter your first name: \";\nchar greeting[] = \"Hello, \";\nchar yourname [80];\ncout << question;\ncin >> yourname;\ncout << greeting << yourname << \"!\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nPlease, enter your first name:\nRahman\nHello, Rahman!",
+   "content": "<p>5.3 Strings</p><p>5.3.1 What is String?</p><p>The sequence of characters enclosed in quotation marks and is used to handle non-numeric data i.e. names, addresses etc. are called strings.</p><p>5.3.2 Defining a C String</p><p>General syntax for defining string in C is given below:</p><p>data type name_of_string [size of string];</p><p>In the above general syntax, data type, is char data type and name_of_string is the name of the string. The size (number of characters) of the string is specified in square brackets, [ ]. The following statement defines a string with the name str having size 20.</p><p>char str [20];</p><p>For handling strings, the header file &lt;cstring&gt; is needed but in some implementations this library may be automatically included when the header file &lt;iostream&gt; is included. There are some limitations of strings in C. To overcome and remove these problems, C++ provides a class &lt;string&gt; that removes many of these problems. This class provides some typical string operations like comparison, concatenation, find and replace, and a function for obtaining substrings. The general syntax for defining strings in C++ is given below:</p><p>string str;</p><p>This statement defines a string name str of type string.</p><p>5.3.3 Initializing string</p><p>1. Strings in C can be initialized as arrays are initialized because string is a character array.</p><p>Consider the following example:</p><p>char greeting [6] = { &#x27;H&#x27;, &#x27;e&#x27;, &#x27;l&#x27;, &#x27;l&#x27;, &#x27;o&#x27;, &#x27;\\0&#x27; };</p><p>The above statement declares a string named “greeting” with six elements of type char that are initialized with the characters that form the word &quot;Hello&quot; plus a null character &#x27;\\0&#x27; at the end. Another method for initializing a string in C is to enclose the string in double quotes, &quot;&quot; as shown below:</p><p>char greeting [ ] = “Hello”;</p><p>In both cases, the array of characters greeting is declared with a size of 6 elements of type char: the 5 characters that compose the word “Hello” plus a final null character (&#x27;\\0&#x27;) which specifies the end of the sequence and that, in the second case, when using double quotes (&quot;) it is appended automatically.</p><p>Consider an example to ask for your name and then display a greeting message on the screen as shown below using string:</p><p>#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nchar question[] = &quot;Please, enter your first name: &quot;;\nchar greeting[] = &quot;Hello, &quot;;\nchar yourname [80];\ncout &lt;&lt; question;\ncin &gt;&gt; yourname;\ncout &lt;&lt; greeting &lt;&lt; yourname &lt;&lt; &quot;!&quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Please, enter your first name:\nRahman\nHello, Rahman!</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      21
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 87,
+     "printedPages": [
+      162,
+      163,
+      164
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (9)",
+   "sourcePageLabel": "PDF 87 · p. 162–163–164",
+   "sourceNote": "The greeting program continues on p.164 (PDF88) and is given whole with its output.",
+   "unit": 5
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf087",
+   "unit": 5,
+   "printedPage": 163,
+   "description": "p.162 “The sequence of characters … and is used … are called strings”; p.163 prints “type char:” as “type char.” and uses curly quotes in char greeting [ ] = “Hello”;. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

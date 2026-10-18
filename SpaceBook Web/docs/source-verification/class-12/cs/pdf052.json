@@ -1,0 +1,269 @@
+{
+ "pdfPage": 52,
+ "sections": [
+  {
+   "id": "cs12-u3-text-18",
+   "title": "Unit 3 text (18)",
+   "headingUrdu": "یونٹ 3 — متن (۱۸)",
+   "headingPashto": "۳ څپرکی — متن (۱۸)",
+   "paras": [
+    {
+     "text": "b. Arithmetic operators",
+     "urdu": "b. حسابی آپریٹرز",
+     "pashto": "b. حسابي چلونکي"
+    },
+    {
+     "text": "There are five arithmetic operators used in C++. These are (+, -, *, /, %) that support the following arithmetic operations shown in Table 3.4.",
+     "urdu": "C++ میں پانچ حسابی آپریٹرز استعمال ہوتے ہیں۔ یہ (+، -، *، /، %) ہیں جو جدول 3.4 میں دکھائے گئے درج ذیل حسابی اعمال کی معاونت کرتے ہیں۔",
+     "pashto": "په C++ کې پنځه حسابي چلونکي کارول کېږي. دا (+، -، *، /، %) دي چې په ۳.۴ جدول کې ښودل شوې لاندې حسابي عملیې ملاتړ کوي."
+    },
+    {
+     "text": "Table 3.4: Arithmetic Operators",
+     "urdu": "جدول 3.4: حسابی آپریٹرز",
+     "pashto": "۳.۴ جدول: حسابي چلونکي"
+    },
+    {
+     "text": "The percentage sign % shown in the above table is used for modulus. Modulus is the operation that gives the remainder of a division of two values. For example, if we write:",
+     "urdu": "اوپر کے جدول میں دکھایا گیا فیصد کا نشان % ماڈیولس کے لیے استعمال ہوتا ہے۔ ماڈیولس وہ عمل ہے جو دو قدروں کی تقسیم کا باقی دیتا ہے۔ مثلاً اگر ہم لکھیں:",
+     "pashto": "په پورته جدول کې ښودل شوې د سلنې نښه % د موډولوس لپاره کارول کېږي. موډولوس هغه عملیه ده چې د دوو ارزښتونو د وېش پاتې برخه ورکوي. د بېلګې په توګه که ولیکو:"
+    },
+    {
+     "text": "remainder = 11 % 5;",
+     "urdu": "remainder = 11 % 5;",
+     "pashto": "remainder = 11 % 5;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The variable ‘remainder’ will contain the value 1, since 1 is the remainder from dividing 11 by 5. The following program demonstrates the use of these operators.",
+     "urdu": "ویری ایبل ‘remainder’ میں قدر 1 ہوگی کیونکہ 11 کو 5 سے تقسیم کرنے پر باقی 1 بچتا ہے۔ درج ذیل پروگرام ان آپریٹرز کا استعمال دکھاتا ہے۔",
+     "pashto": "متغیر ‘remainder’ به ارزښت 1 ولري، ځکه 11 پر 5 وېشلو کې 1 پاتې کېږي. لاندې پروګرام د دې چلونکو کارونه ښيي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a=11, b=5;\nint sum=a+ b;\nint difference=a - b;\nint product=a * b;\nfloat division=a / b;\nint remainder=a % b;\ncout<< \"sum =\"<<sum<<endl;\ncout<< \"difference =\"<< difference <<endl;\ncout<< \"product =\"<< product <<endl;\ncout<< \"division =\"<< division <<endl;\ncout<< \"remainder =\"<< remainder;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a=11, b=5;\nint sum=a+ b;\nint difference=a - b;\nint product=a * b;\nfloat division=a / b;\nint remainder=a % b;\ncout<< \"sum =\"<<sum<<endl;\ncout<< \"difference =\"<< difference <<endl;\ncout<< \"product =\"<< product <<endl;\ncout<< \"division =\"<< division <<endl;\ncout<< \"remainder =\"<< remainder;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a=11, b=5;\nint sum=a+ b;\nint difference=a - b;\nint product=a * b;\nfloat division=a / b;\nint remainder=a % b;\ncout<< \"sum =\"<<sum<<endl;\ncout<< \"difference =\"<< difference <<endl;\ncout<< \"product =\"<< product <<endl;\ncout<< \"division =\"<< division <<endl;\ncout<< \"remainder =\"<< remainder;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "sum =16\ndifference =6\nproduct =55\ndivision =2.0\nremainder =1",
+     "urdu": "sum =16\ndifference =6\nproduct =55\ndivision =2.0\nremainder =1",
+     "pashto": "sum =16\ndifference =6\nproduct =55\ndivision =2.0\nremainder =1",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "c. Compound or arithmetic assignment operators",
+     "urdu": "c. مرکب یا حسابی اسائنمنٹ آپریٹرز",
+     "pashto": "c. مرکب یا حسابي د سپارلو چلونکي"
+    },
+    {
+     "text": "Compound assignment operators used in C++ are: (+=, -=, *=, /=, %=). These operators are used to modify the value of a variable by performing an operation on the value that is",
+     "urdu": "C++ میں استعمال ہونے والے مرکب اسائنمنٹ آپریٹرز یہ ہیں: (+=، -=، *=، /=، %=)۔ یہ آپریٹرز ویری ایبل کی قدر میں ترمیم کے لیے استعمال ہوتے ہیں، اس قدر پر کوئی عمل کر کے جو",
+     "pashto": "په C++ کې کارېدونکي مرکب د سپارلو چلونکي دا دي: (+=، -=، *=، /=، %=). دا چلونکي د متغیر د ارزښت د بدلولو لپاره کارول کېږي، د هغه ارزښت پر سر د یوې عملیې په ترسره کولو چې"
+    }
+   ],
+   "theory": "b. Arithmetic operators\n\nThere are five arithmetic operators used in C++. These are (+, -, *, /, %) that support the following arithmetic operations shown in Table 3.4.\n\nTable 3.4: Arithmetic Operators\n\nThe percentage sign % shown in the above table is used for modulus. Modulus is the operation that gives the remainder of a division of two values. For example, if we write:\n\nremainder = 11 % 5;\n\nThe variable ‘remainder’ will contain the value 1, since 1 is the remainder from dividing 11 by 5. The following program demonstrates the use of these operators.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a=11, b=5;\nint sum=a+ b;\nint difference=a - b;\nint product=a * b;\nfloat division=a / b;\nint remainder=a % b;\ncout<< \"sum =\"<<sum<<endl;\ncout<< \"difference =\"<< difference <<endl;\ncout<< \"product =\"<< product <<endl;\ncout<< \"division =\"<< division <<endl;\ncout<< \"remainder =\"<< remainder;\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nsum =16\ndifference =6\nproduct =55\ndivision =2.0\nremainder =1\n\nc. Compound or arithmetic assignment operators\n\nCompound assignment operators used in C++ are: (+=, -=, *=, /=, %=). These operators are used to modify the value of a variable by performing an operation on the value that is",
+   "urdu": "b. حسابی آپریٹرز\n\nC++ میں پانچ حسابی آپریٹرز استعمال ہوتے ہیں۔ یہ (+، -، *، /، %) ہیں جو جدول 3.4 میں دکھائے گئے درج ذیل حسابی اعمال کی معاونت کرتے ہیں۔\n\nجدول 3.4: حسابی آپریٹرز\n\nاوپر کے جدول میں دکھایا گیا فیصد کا نشان % ماڈیولس کے لیے استعمال ہوتا ہے۔ ماڈیولس وہ عمل ہے جو دو قدروں کی تقسیم کا باقی دیتا ہے۔ مثلاً اگر ہم لکھیں:\n\nremainder = 11 % 5;\n\nویری ایبل ‘remainder’ میں قدر 1 ہوگی کیونکہ 11 کو 5 سے تقسیم کرنے پر باقی 1 بچتا ہے۔ درج ذیل پروگرام ان آپریٹرز کا استعمال دکھاتا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a=11, b=5;\nint sum=a+ b;\nint difference=a - b;\nint product=a * b;\nfloat division=a / b;\nint remainder=a % b;\ncout<< \"sum =\"<<sum<<endl;\ncout<< \"difference =\"<< difference <<endl;\ncout<< \"product =\"<< product <<endl;\ncout<< \"division =\"<< division <<endl;\ncout<< \"remainder =\"<< remainder;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nsum =16\ndifference =6\nproduct =55\ndivision =2.0\nremainder =1\n\nc. مرکب یا حسابی اسائنمنٹ آپریٹرز\n\nC++ میں استعمال ہونے والے مرکب اسائنمنٹ آپریٹرز یہ ہیں: (+=، -=، *=، /=، %=)۔ یہ آپریٹرز ویری ایبل کی قدر میں ترمیم کے لیے استعمال ہوتے ہیں، اس قدر پر کوئی عمل کر کے جو",
+   "pashto": "b. حسابي چلونکي\n\nپه C++ کې پنځه حسابي چلونکي کارول کېږي. دا (+، -، *، /، %) دي چې په ۳.۴ جدول کې ښودل شوې لاندې حسابي عملیې ملاتړ کوي.\n\n۳.۴ جدول: حسابي چلونکي\n\nپه پورته جدول کې ښودل شوې د سلنې نښه % د موډولوس لپاره کارول کېږي. موډولوس هغه عملیه ده چې د دوو ارزښتونو د وېش پاتې برخه ورکوي. د بېلګې په توګه که ولیکو:\n\nremainder = 11 % 5;\n\nمتغیر ‘remainder’ به ارزښت 1 ولري، ځکه 11 پر 5 وېشلو کې 1 پاتې کېږي. لاندې پروګرام د دې چلونکو کارونه ښيي.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a=11, b=5;\nint sum=a+ b;\nint difference=a - b;\nint product=a * b;\nfloat division=a / b;\nint remainder=a % b;\ncout<< \"sum =\"<<sum<<endl;\ncout<< \"difference =\"<< difference <<endl;\ncout<< \"product =\"<< product <<endl;\ncout<< \"division =\"<< division <<endl;\ncout<< \"remainder =\"<< remainder;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nsum =16\ndifference =6\nproduct =55\ndivision =2.0\nremainder =1\n\nc. مرکب یا حسابي د سپارلو چلونکي\n\nپه C++ کې کارېدونکي مرکب د سپارلو چلونکي دا دي: (+=، -=، *=، /=، %=). دا چلونکي د متغیر د ارزښت د بدلولو لپاره کارول کېږي، د هغه ارزښت پر سر د یوې عملیې په ترسره کولو چې",
+   "theoryUrdu": "b. حسابی آپریٹرز\n\nC++ میں پانچ حسابی آپریٹرز استعمال ہوتے ہیں۔ یہ (+، -، *، /، %) ہیں جو جدول 3.4 میں دکھائے گئے درج ذیل حسابی اعمال کی معاونت کرتے ہیں۔\n\nجدول 3.4: حسابی آپریٹرز\n\nاوپر کے جدول میں دکھایا گیا فیصد کا نشان % ماڈیولس کے لیے استعمال ہوتا ہے۔ ماڈیولس وہ عمل ہے جو دو قدروں کی تقسیم کا باقی دیتا ہے۔ مثلاً اگر ہم لکھیں:\n\nremainder = 11 % 5;\n\nویری ایبل ‘remainder’ میں قدر 1 ہوگی کیونکہ 11 کو 5 سے تقسیم کرنے پر باقی 1 بچتا ہے۔ درج ذیل پروگرام ان آپریٹرز کا استعمال دکھاتا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a=11, b=5;\nint sum=a+ b;\nint difference=a - b;\nint product=a * b;\nfloat division=a / b;\nint remainder=a % b;\ncout<< \"sum =\"<<sum<<endl;\ncout<< \"difference =\"<< difference <<endl;\ncout<< \"product =\"<< product <<endl;\ncout<< \"division =\"<< division <<endl;\ncout<< \"remainder =\"<< remainder;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nsum =16\ndifference =6\nproduct =55\ndivision =2.0\nremainder =1\n\nc. مرکب یا حسابی اسائنمنٹ آپریٹرز\n\nC++ میں استعمال ہونے والے مرکب اسائنمنٹ آپریٹرز یہ ہیں: (+=، -=، *=، /=، %=)۔ یہ آپریٹرز ویری ایبل کی قدر میں ترمیم کے لیے استعمال ہوتے ہیں، اس قدر پر کوئی عمل کر کے جو",
+   "theoryPashto": "b. حسابي چلونکي\n\nپه C++ کې پنځه حسابي چلونکي کارول کېږي. دا (+، -، *، /، %) دي چې په ۳.۴ جدول کې ښودل شوې لاندې حسابي عملیې ملاتړ کوي.\n\n۳.۴ جدول: حسابي چلونکي\n\nپه پورته جدول کې ښودل شوې د سلنې نښه % د موډولوس لپاره کارول کېږي. موډولوس هغه عملیه ده چې د دوو ارزښتونو د وېش پاتې برخه ورکوي. د بېلګې په توګه که ولیکو:\n\nremainder = 11 % 5;\n\nمتغیر ‘remainder’ به ارزښت 1 ولري، ځکه 11 پر 5 وېشلو کې 1 پاتې کېږي. لاندې پروګرام د دې چلونکو کارونه ښيي.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a=11, b=5;\nint sum=a+ b;\nint difference=a - b;\nint product=a * b;\nfloat division=a / b;\nint remainder=a % b;\ncout<< \"sum =\"<<sum<<endl;\ncout<< \"difference =\"<< difference <<endl;\ncout<< \"product =\"<< product <<endl;\ncout<< \"division =\"<< division <<endl;\ncout<< \"remainder =\"<< remainder;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nsum =16\ndifference =6\nproduct =55\ndivision =2.0\nremainder =1\n\nc. مرکب یا حسابي د سپارلو چلونکي\n\nپه C++ کې کارېدونکي مرکب د سپارلو چلونکي دا دي: (+=، -=، *=، /=، %=). دا چلونکي د متغیر د ارزښت د بدلولو لپاره کارول کېږي، د هغه ارزښت پر سر د یوې عملیې په ترسره کولو چې",
+   "content": "<p>b. Arithmetic operators</p><p>There are five arithmetic operators used in C++. These are (+, -, *, /, %) that support the following arithmetic operations shown in Table 3.4.</p><p>Table 3.4: Arithmetic Operators</p><p>The percentage sign % shown in the above table is used for modulus. Modulus is the operation that gives the remainder of a division of two values. For example, if we write:</p><p>remainder = 11 % 5;</p><p>The variable ‘remainder’ will contain the value 1, since 1 is the remainder from dividing 11 by 5. The following program demonstrates the use of these operators.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint a=11, b=5;\nint sum=a+ b;\nint difference=a - b;\nint product=a * b;\nfloat division=a / b;\nint remainder=a % b;\ncout&lt;&lt; &quot;sum =&quot;&lt;&lt;sum&lt;&lt;endl;\ncout&lt;&lt; &quot;difference =&quot;&lt;&lt; difference &lt;&lt;endl;\ncout&lt;&lt; &quot;product =&quot;&lt;&lt; product &lt;&lt;endl;\ncout&lt;&lt; &quot;division =&quot;&lt;&lt; division &lt;&lt;endl;\ncout&lt;&lt; &quot;remainder =&quot;&lt;&lt; remainder;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>sum =16\ndifference =6\nproduct =55\ndivision =2.0\nremainder =1</p><p>c. Compound or arithmetic assignment operators</p><p>Compound assignment operators used in C++ are: (+=, -=, *=, /=, %=). These operators are used to modify the value of a variable by performing an operation on the value that is</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-3-4"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-table-3-4",
+     "headers": [
+      "Operator",
+      "Operation"
+     ],
+     "rows": [
+      [
+       "+",
+       "addition"
+      ],
+      [
+       "-",
+       "subtraction"
+      ],
+      [
+       "*",
+       "multiplication"
+      ],
+      [
+       "/",
+       "division"
+      ],
+      [
+       "%",
+       "modulus"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "آپریٹر",
+        "عمل"
+       ],
+       "rows": [
+        [
+         "+",
+         "جمع"
+        ],
+        [
+         "-",
+         "تفریق"
+        ],
+        [
+         "*",
+         "ضرب"
+        ],
+        [
+         "/",
+         "تقسیم"
+        ],
+        [
+         "%",
+         "باقی (ماڈیولس)"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "چلونکی",
+        "عملیه"
+       ],
+       "rows": [
+        [
+         "+",
+         "جمع"
+        ],
+        [
+         "-",
+         "تفریق"
+        ],
+        [
+         "*",
+         "ضرب"
+        ],
+        [
+         "/",
+         "وېش"
+        ],
+        [
+         "%",
+         "پاتې (موډولوس)"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 52,
+     "printedPages": [
+      92,
+      93
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (18)",
+   "sourcePageLabel": "PDF 52 · p. 92–93",
+   "sourceNote": "The top lines of p.92 complete the assignment program recorded with PDF51. Table 3.4 is reproduced as a structured table. The compound-assignment paragraph continues on p.94 (PDF53).",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf052",
+   "unit": 3,
+   "printedPage": 93,
+   "description": "The printed output shows “division =2.0”, though with int operands a/b gives 2 and cout prints “2” — retained as printed. The listing uses curly quotes in the cout strings; normalised to straight quotes."
+  }
+ ],
+ "completeUnits": []
+}

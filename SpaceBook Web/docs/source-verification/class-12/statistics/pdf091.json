@@ -1,0 +1,881 @@
+{
+ "pdfPage": 91,
+ "sections": [
+  {
+   "id": "stat12-p091-example-5-7",
+   "title": "5.3.2 Formulas — Example 5.7 samples and 81 differences",
+   "headingUrdu": "5.3.2 فارمولے — مثال 5.7 نمونے اور 81 فرق",
+   "headingPashto": "5.3.2 فورمولونه — بېلګه 5.7 نمونې او 81 توپیرونه",
+   "paras": [
+    {
+     "text": "$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_{\\overline{x}_1-\\overline{x}_2})}{\\sigma_{\\overline{x}_1-\\overline{x}_2}}=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$ (in S.W.R case)",
+     "urdu": "$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_{\\overline{x}_1-\\overline{x}_2})}{\\sigma_{\\overline{x}_1-\\overline{x}_2}}=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$ (S.W.R کی صورت میں)",
+     "pashto": "$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_{\\overline{x}_1-\\overline{x}_2})}{\\sigma_{\\overline{x}_1-\\overline{x}_2}}=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$ (د S.W.R په حالت کې)"
+    },
+    {
+     "text": "5.3.2 Formulas for $\\mu_{\\overline{x}_1-\\overline{x}_2}$ and $\\sigma_{\\overline{x}_1-\\overline{x}_2}$",
+     "urdu": "5.3.2 $\\mu_{\\overline{x}_1-\\overline{x}_2}$ اور $\\sigma_{\\overline{x}_1-\\overline{x}_2}$ کے فارمولے",
+     "pashto": "5.3.2 د $\\mu_{\\overline{x}_1-\\overline{x}_2}$ او $\\sigma_{\\overline{x}_1-\\overline{x}_2}$ فورمولونه"
+    },
+    {
+     "text": "$\\mu_{\\overline{x}_1-\\overline{x}_2}=\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)$",
+     "urdu": "$\\mu_{\\overline{x}_1-\\overline{x}_2}=\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)$",
+     "pashto": "$\\mu_{\\overline{x}_1-\\overline{x}_2}=\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)$"
+    },
+    {
+     "text": "$\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\Sigma(\\overline{x}_1-\\overline{x}_2)^2f(\\overline{x}_1-\\overline{x}_2)-[\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)]^2}$",
+     "urdu": "$\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\Sigma(\\overline{x}_1-\\overline{x}_2)^2f(\\overline{x}_1-\\overline{x}_2)-[\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)]^2}$",
+     "pashto": "$\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\Sigma(\\overline{x}_1-\\overline{x}_2)^2f(\\overline{x}_1-\\overline{x}_2)-[\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)]^2}$"
+    },
+    {
+     "text": "Example 5.7",
+     "urdu": "مثال 5.7",
+     "pashto": "بېلګه 5.7"
+    },
+    {
+     "text": "Draw all possible random samples of size $n_1=2$ with replacement from a finite population (3, 4, 5) and sample of size $n_2=2$ with replacement from another finite population (1, 1, 3).",
+     "urdu": "ایک محدود آبادی (3، 4، 5) سے واپسی کے ساتھ $n_1=2$ سائز کے تمام ممکنہ تصادفی نمونے اور ایک اور محدود آبادی (1، 1، 3) سے واپسی کے ساتھ $n_2=2$ سائز کے نمونے نکالیں۔",
+     "pashto": "له یوه محدود نفوس (3، 4، 5) څخه له بېرته اچولو سره د $n_1=2$ اندازې ټولې شونې تصادفي نمونې او له بل محدود نفوس (1، 1، 3) څخه له بېرته اچولو سره د $n_2=2$ اندازې نمونې راوباسئ."
+    },
+    {
+     "text": "(i) Find the possible differences between the sample means drawn from the populations.",
+     "urdu": "(i) آبادیوں سے نکالے گئے نمونوں کے اوسطوں کے درمیان ممکنہ فرق معلوم کریں۔",
+     "pashto": "(i) له نفوسونو څخه د راایستل شویو نمونو د منځنیو ترمنځ شوني توپیرونه پیدا کړئ."
+    },
+    {
+     "text": "(ii) Construct the sampling distribution of $\\overline{X}_1-\\overline{X}_2$ and compute its mean and standard error.",
+     "urdu": "(ii) $\\overline{X}_1-\\overline{X}_2$ کی نمونہ جاتی تقسیم بنائیں اور اس کا اوسط اور معیاری غلطی معلوم کریں۔",
+     "pashto": "(ii) د $\\overline{X}_1-\\overline{X}_2$ نمونوي وېش جوړ کړئ او منځنی او معیاري تېروتنه یې محاسبه کړئ."
+    },
+    {
+     "text": "(iii) Verify that $\\mu_{\\overline{x}_1-\\overline{x}_2}=\\mu_1-\\mu_2$ and $\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$",
+     "urdu": "(iii) تصدیق کریں کہ $\\mu_{\\overline{x}_1-\\overline{x}_2}=\\mu_1-\\mu_2$ اور $\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$",
+     "pashto": "(iii) تایید کړئ چې $\\mu_{\\overline{x}_1-\\overline{x}_2}=\\mu_1-\\mu_2$ او $\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "As the case is that of sampling with replacement therefore possible samples from population-1 are $N_1^{n_1}=3^2=9$ and population-2 are $N_2^{n_2}=3^2=9$.",
+     "urdu": "چونکہ یہ واپسی کے ساتھ نمونہ گیری کی صورت ہے، لہٰذا آبادی-1 سے ممکنہ نمونے $N_1^{n_1}=3^2=9$ اور آبادی-2 سے $N_2^{n_2}=3^2=9$ ہیں۔",
+     "pashto": "څرنګه چې دا له بېرته اچولو سره د نمونه اخیستنې حالت دی، نو له نفوس-1 څخه شونې نمونې $N_1^{n_1}=3^2=9$ او له نفوس-2 څخه $N_2^{n_2}=3^2=9$ دي."
+    },
+    {
+     "text": "(i) The 9 × 9 = 81 possible differences $\\overline{X}_1-\\overline{X}_2$ are given in the following table",
+     "urdu": "(i) 9 × 9 = 81 ممکنہ فرق $\\overline{X}_1-\\overline{X}_2$ درج ذیل جدول میں دیے گئے ہیں",
+     "pashto": "(i) 9 × 9 = 81 شوني توپیرونه $\\overline{X}_1-\\overline{X}_2$ په لاندې جدول کې ورکړل شوي"
+    }
+   ],
+   "theory": "Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_{\\overline{x}_1-\\overline{x}_2})}{\\sigma_{\\overline{x}_1-\\overline{x}_2}}=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}} (in S.W.R case)\n\n5.3.2 Formulas for \\mu_{\\overline{x}_1-\\overline{x}_2} and \\sigma_{\\overline{x}_1-\\overline{x}_2}\n\n\\mu_{\\overline{x}_1-\\overline{x}_2}=\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)\n\n\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\Sigma(\\overline{x}_1-\\overline{x}_2)^2f(\\overline{x}_1-\\overline{x}_2)-[\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)]^2}\n\nExample 5.7\n\nDraw all possible random samples of size n_1=2 with replacement from a finite population (3, 4, 5) and sample of size n_2=2 with replacement from another finite population (1, 1, 3).\n\n(i) Find the possible differences between the sample means drawn from the populations.\n\n(ii) Construct the sampling distribution of \\overline{X}_1-\\overline{X}_2 and compute its mean and standard error.\n\n(iii) Verify that \\mu_{\\overline{x}_1-\\overline{x}_2}=\\mu_1-\\mu_2 and \\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}\n\nSolution:\n\nAs the case is that of sampling with replacement therefore possible samples from population-1 are N_1^{n_1}=3^2=9 and population-2 are N_2^{n_2}=3^2=9.\n\n(i) The 9 × 9 = 81 possible differences \\overline{X}_1-\\overline{X}_2 are given in the following table",
+   "urdu": "Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_{\\overline{x}_1-\\overline{x}_2})}{\\sigma_{\\overline{x}_1-\\overline{x}_2}}=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}} (S.W.R کی صورت میں)\n\n5.3.2 \\mu_{\\overline{x}_1-\\overline{x}_2} اور \\sigma_{\\overline{x}_1-\\overline{x}_2} کے فارمولے\n\n\\mu_{\\overline{x}_1-\\overline{x}_2}=\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)\n\n\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\Sigma(\\overline{x}_1-\\overline{x}_2)^2f(\\overline{x}_1-\\overline{x}_2)-[\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)]^2}\n\nمثال 5.7\n\nایک محدود آبادی (3، 4، 5) سے واپسی کے ساتھ n_1=2 سائز کے تمام ممکنہ تصادفی نمونے اور ایک اور محدود آبادی (1، 1، 3) سے واپسی کے ساتھ n_2=2 سائز کے نمونے نکالیں۔\n\n(i) آبادیوں سے نکالے گئے نمونوں کے اوسطوں کے درمیان ممکنہ فرق معلوم کریں۔\n\n(ii) \\overline{X}_1-\\overline{X}_2 کی نمونہ جاتی تقسیم بنائیں اور اس کا اوسط اور معیاری غلطی معلوم کریں۔\n\n(iii) تصدیق کریں کہ \\mu_{\\overline{x}_1-\\overline{x}_2}=\\mu_1-\\mu_2 اور \\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}\n\nحل:\n\nچونکہ یہ واپسی کے ساتھ نمونہ گیری کی صورت ہے، لہٰذا آبادی-1 سے ممکنہ نمونے N_1^{n_1}=3^2=9 اور آبادی-2 سے N_2^{n_2}=3^2=9 ہیں۔\n\n(i) 9 × 9 = 81 ممکنہ فرق \\overline{X}_1-\\overline{X}_2 درج ذیل جدول میں دیے گئے ہیں",
+   "pashto": "Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_{\\overline{x}_1-\\overline{x}_2})}{\\sigma_{\\overline{x}_1-\\overline{x}_2}}=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}} (د S.W.R په حالت کې)\n\n5.3.2 د \\mu_{\\overline{x}_1-\\overline{x}_2} او \\sigma_{\\overline{x}_1-\\overline{x}_2} فورمولونه\n\n\\mu_{\\overline{x}_1-\\overline{x}_2}=\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)\n\n\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\Sigma(\\overline{x}_1-\\overline{x}_2)^2f(\\overline{x}_1-\\overline{x}_2)-[\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)]^2}\n\nبېلګه 5.7\n\nله یوه محدود نفوس (3، 4، 5) څخه له بېرته اچولو سره د n_1=2 اندازې ټولې شونې تصادفي نمونې او له بل محدود نفوس (1، 1، 3) څخه له بېرته اچولو سره د n_2=2 اندازې نمونې راوباسئ.\n\n(i) له نفوسونو څخه د راایستل شویو نمونو د منځنیو ترمنځ شوني توپیرونه پیدا کړئ.\n\n(ii) د \\overline{X}_1-\\overline{X}_2 نمونوي وېش جوړ کړئ او منځنی او معیاري تېروتنه یې محاسبه کړئ.\n\n(iii) تایید کړئ چې \\mu_{\\overline{x}_1-\\overline{x}_2}=\\mu_1-\\mu_2 او \\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}\n\nحل:\n\nڅرنګه چې دا له بېرته اچولو سره د نمونه اخیستنې حالت دی، نو له نفوس-1 څخه شونې نمونې N_1^{n_1}=3^2=9 او له نفوس-2 څخه N_2^{n_2}=3^2=9 دي.\n\n(i) 9 × 9 = 81 شوني توپیرونه \\overline{X}_1-\\overline{X}_2 په لاندې جدول کې ورکړل شوي",
+   "theoryUrdu": "Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_{\\overline{x}_1-\\overline{x}_2})}{\\sigma_{\\overline{x}_1-\\overline{x}_2}}=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}} (S.W.R کی صورت میں)\n\n5.3.2 \\mu_{\\overline{x}_1-\\overline{x}_2} اور \\sigma_{\\overline{x}_1-\\overline{x}_2} کے فارمولے\n\n\\mu_{\\overline{x}_1-\\overline{x}_2}=\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)\n\n\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\Sigma(\\overline{x}_1-\\overline{x}_2)^2f(\\overline{x}_1-\\overline{x}_2)-[\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)]^2}\n\nمثال 5.7\n\nایک محدود آبادی (3، 4، 5) سے واپسی کے ساتھ n_1=2 سائز کے تمام ممکنہ تصادفی نمونے اور ایک اور محدود آبادی (1، 1، 3) سے واپسی کے ساتھ n_2=2 سائز کے نمونے نکالیں۔\n\n(i) آبادیوں سے نکالے گئے نمونوں کے اوسطوں کے درمیان ممکنہ فرق معلوم کریں۔\n\n(ii) \\overline{X}_1-\\overline{X}_2 کی نمونہ جاتی تقسیم بنائیں اور اس کا اوسط اور معیاری غلطی معلوم کریں۔\n\n(iii) تصدیق کریں کہ \\mu_{\\overline{x}_1-\\overline{x}_2}=\\mu_1-\\mu_2 اور \\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}\n\nحل:\n\nچونکہ یہ واپسی کے ساتھ نمونہ گیری کی صورت ہے، لہٰذا آبادی-1 سے ممکنہ نمونے N_1^{n_1}=3^2=9 اور آبادی-2 سے N_2^{n_2}=3^2=9 ہیں۔\n\n(i) 9 × 9 = 81 ممکنہ فرق \\overline{X}_1-\\overline{X}_2 درج ذیل جدول میں دیے گئے ہیں",
+   "theoryPashto": "Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_{\\overline{x}_1-\\overline{x}_2})}{\\sigma_{\\overline{x}_1-\\overline{x}_2}}=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}} (د S.W.R په حالت کې)\n\n5.3.2 د \\mu_{\\overline{x}_1-\\overline{x}_2} او \\sigma_{\\overline{x}_1-\\overline{x}_2} فورمولونه\n\n\\mu_{\\overline{x}_1-\\overline{x}_2}=\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)\n\n\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\Sigma(\\overline{x}_1-\\overline{x}_2)^2f(\\overline{x}_1-\\overline{x}_2)-[\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)]^2}\n\nبېلګه 5.7\n\nله یوه محدود نفوس (3، 4، 5) څخه له بېرته اچولو سره د n_1=2 اندازې ټولې شونې تصادفي نمونې او له بل محدود نفوس (1، 1، 3) څخه له بېرته اچولو سره د n_2=2 اندازې نمونې راوباسئ.\n\n(i) له نفوسونو څخه د راایستل شویو نمونو د منځنیو ترمنځ شوني توپیرونه پیدا کړئ.\n\n(ii) د \\overline{X}_1-\\overline{X}_2 نمونوي وېش جوړ کړئ او منځنی او معیاري تېروتنه یې محاسبه کړئ.\n\n(iii) تایید کړئ چې \\mu_{\\overline{x}_1-\\overline{x}_2}=\\mu_1-\\mu_2 او \\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}\n\nحل:\n\nڅرنګه چې دا له بېرته اچولو سره د نمونه اخیستنې حالت دی، نو له نفوس-1 څخه شونې نمونې N_1^{n_1}=3^2=9 او له نفوس-2 څخه N_2^{n_2}=3^2=9 دي.\n\n(i) 9 × 9 = 81 شوني توپیرونه \\overline{X}_1-\\overline{X}_2 په لاندې جدول کې ورکړل شوي",
+   "content": "<p>Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_{\\overline{x}_1-\\overline{x}_2})}{\\sigma_{\\overline{x}_1-\\overline{x}_2}}=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}} (in S.W.R case)</p><p>5.3.2 Formulas for \\mu_{\\overline{x}_1-\\overline{x}_2} and \\sigma_{\\overline{x}_1-\\overline{x}_2}</p><p>\\mu_{\\overline{x}_1-\\overline{x}_2}=\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)</p><p>\\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\Sigma(\\overline{x}_1-\\overline{x}_2)^2f(\\overline{x}_1-\\overline{x}_2)-[\\Sigma(\\overline{x}_1-\\overline{x}_2)\\,f(\\overline{x}_1-\\overline{x}_2)]^2}</p><p>Example 5.7</p><p>Draw all possible random samples of size n_1=2 with replacement from a finite population (3, 4, 5) and sample of size n_2=2 with replacement from another finite population (1, 1, 3).</p><p>(i) Find the possible differences between the sample means drawn from the populations.</p><p>(ii) Construct the sampling distribution of \\overline{X}_1-\\overline{X}_2 and compute its mean and standard error.</p><p>(iii) Verify that \\mu_{\\overline{x}_1-\\overline{x}_2}=\\mu_1-\\mu_2 and \\sigma_{\\overline{x}_1-\\overline{x}_2}=\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}</p><p>Solution:</p><p>As the case is that of sampling with replacement therefore possible samples from population-1 are N_1^{n_1}=3^2=9 and population-2 are N_2^{n_2}=3^2=9.</p><p>(i) The 9 × 9 = 81 possible differences \\overline{X}_1-\\overline{X}_2 are given in the following table</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex5-7-given"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex5-7-samples"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex5-7-diffs"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex5-7-given",
+     "headers": [
+      "Given",
+      "Population-1",
+      "Population-2"
+     ],
+     "rows": [
+      [
+       "",
+       "[3, 4, 5]",
+       "[1, 1, 3]"
+      ],
+      [
+       "",
+       "$N_1=3$",
+       "$N_2=3$"
+      ],
+      [
+       "",
+       "$n_1=2$",
+       "$n_2=2$"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "دیا گیا",
+        "آبادی-1",
+        "آبادی-2"
+       ],
+       "rows": [
+        [
+         "",
+         "[3, 4, 5]",
+         "[1, 1, 3]"
+        ],
+        [
+         "",
+         "$N_1=3$",
+         "$N_2=3$"
+        ],
+        [
+         "",
+         "$n_1=2$",
+         "$n_2=2$"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "ورکړل شوي",
+        "نفوس-1",
+        "نفوس-2"
+       ],
+       "rows": [
+        [
+         "",
+         "[3, 4, 5]",
+         "[1, 1, 3]"
+        ],
+        [
+         "",
+         "$N_1=3$",
+         "$N_2=3$"
+        ],
+        [
+         "",
+         "$n_1=2$",
+         "$n_2=2$"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex5-7-samples",
+     "headers": [
+      "No",
+      "Samples from Population-1",
+      "$\\overline{X}_1$",
+      "No",
+      "Samples from Population-2",
+      "$\\overline{X}_2$"
+     ],
+     "rows": [
+      [
+       "1",
+       "3, 3",
+       "3",
+       "1",
+       "1, 1",
+       "1"
+      ],
+      [
+       "2",
+       "3, 4",
+       "3.5",
+       "2",
+       "1, 1",
+       "1"
+      ],
+      [
+       "3",
+       "3, 5",
+       "4",
+       "3",
+       "1, 3",
+       "2"
+      ],
+      [
+       "4",
+       "4, 3",
+       "3.5",
+       "4",
+       "1, 1",
+       "1"
+      ],
+      [
+       "5",
+       "4, 4",
+       "4",
+       "5",
+       "1, 1",
+       "1"
+      ],
+      [
+       "6",
+       "4, 5",
+       "4.5",
+       "6",
+       "1, 3",
+       "2"
+      ],
+      [
+       "7",
+       "5, 3",
+       "4",
+       "7",
+       "3, 1",
+       "2"
+      ],
+      [
+       "8",
+       "5, 4",
+       "4.5",
+       "8",
+       "3, 1",
+       "2"
+      ],
+      [
+       "9",
+       "5, 5",
+       "5",
+       "9",
+       "3, 3",
+       "3"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "نمبر",
+        "آبادی-1 سے نمونے",
+        "$\\overline{X}_1$",
+        "نمبر",
+        "آبادی-2 سے نمونے",
+        "$\\overline{X}_2$"
+       ],
+       "rows": [
+        [
+         "1",
+         "3, 3",
+         "3",
+         "1",
+         "1, 1",
+         "1"
+        ],
+        [
+         "2",
+         "3, 4",
+         "3.5",
+         "2",
+         "1, 1",
+         "1"
+        ],
+        [
+         "3",
+         "3, 5",
+         "4",
+         "3",
+         "1, 3",
+         "2"
+        ],
+        [
+         "4",
+         "4, 3",
+         "3.5",
+         "4",
+         "1, 1",
+         "1"
+        ],
+        [
+         "5",
+         "4, 4",
+         "4",
+         "5",
+         "1, 1",
+         "1"
+        ],
+        [
+         "6",
+         "4, 5",
+         "4.5",
+         "6",
+         "1, 3",
+         "2"
+        ],
+        [
+         "7",
+         "5, 3",
+         "4",
+         "7",
+         "3, 1",
+         "2"
+        ],
+        [
+         "8",
+         "5, 4",
+         "4.5",
+         "8",
+         "3, 1",
+         "2"
+        ],
+        [
+         "9",
+         "5, 5",
+         "5",
+         "9",
+         "3, 3",
+         "3"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "شمېره",
+        "له نفوس-1 نمونې",
+        "$\\overline{X}_1$",
+        "شمېره",
+        "له نفوس-2 نمونې",
+        "$\\overline{X}_2$"
+       ],
+       "rows": [
+        [
+         "1",
+         "3, 3",
+         "3",
+         "1",
+         "1, 1",
+         "1"
+        ],
+        [
+         "2",
+         "3, 4",
+         "3.5",
+         "2",
+         "1, 1",
+         "1"
+        ],
+        [
+         "3",
+         "3, 5",
+         "4",
+         "3",
+         "1, 3",
+         "2"
+        ],
+        [
+         "4",
+         "4, 3",
+         "3.5",
+         "4",
+         "1, 1",
+         "1"
+        ],
+        [
+         "5",
+         "4, 4",
+         "4",
+         "5",
+         "1, 1",
+         "1"
+        ],
+        [
+         "6",
+         "4, 5",
+         "4.5",
+         "6",
+         "1, 3",
+         "2"
+        ],
+        [
+         "7",
+         "5, 3",
+         "4",
+         "7",
+         "3, 1",
+         "2"
+        ],
+        [
+         "8",
+         "5, 4",
+         "4.5",
+         "8",
+         "3, 1",
+         "2"
+        ],
+        [
+         "9",
+         "5, 5",
+         "5",
+         "9",
+         "3, 3",
+         "3"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex5-7-diffs",
+     "headers": [
+      "$\\overline{X}_2\\backslash\\overline{X}_1$",
+      "3",
+      "3.5",
+      "4",
+      "3.5",
+      "4",
+      "4.5",
+      "4",
+      "4.5",
+      "5"
+     ],
+     "rows": [
+      [
+       "1",
+       "2",
+       "2.5",
+       "3",
+       "2.5",
+       "3",
+       "3.5",
+       "3",
+       "3.5",
+       "4"
+      ],
+      [
+       "1",
+       "2",
+       "2.5",
+       "3",
+       "2.5",
+       "3",
+       "3.5",
+       "3",
+       "3.5",
+       "4"
+      ],
+      [
+       "2",
+       "1",
+       "1.5",
+       "2",
+       "1.5",
+       "2",
+       "2.5",
+       "2",
+       "2.5",
+       "3"
+      ],
+      [
+       "1",
+       "2",
+       "2.5",
+       "3",
+       "2.5",
+       "3",
+       "3.5",
+       "3",
+       "3.5",
+       "4"
+      ],
+      [
+       "1",
+       "2",
+       "2.5",
+       "3",
+       "2.5",
+       "3",
+       "3.5",
+       "3",
+       "3.5",
+       "4"
+      ],
+      [
+       "2",
+       "1",
+       "1.5",
+       "2",
+       "1.5",
+       "2",
+       "2.5",
+       "2",
+       "2.5",
+       "3"
+      ],
+      [
+       "2",
+       "1",
+       "1.5",
+       "2",
+       "1.5",
+       "2",
+       "2.5",
+       "2",
+       "2.5",
+       "3"
+      ],
+      [
+       "2",
+       "1",
+       "1.5",
+       "2",
+       "1.5",
+       "2",
+       "2.5",
+       "2",
+       "2.5",
+       "3"
+      ],
+      [
+       "3",
+       "0",
+       "0.5",
+       "1",
+       "0.5",
+       "1",
+       "1.5",
+       "1",
+       "1.5",
+       "2"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$\\overline{X}_2\\backslash\\overline{X}_1$",
+        "3",
+        "3.5",
+        "4",
+        "3.5",
+        "4",
+        "4.5",
+        "4",
+        "4.5",
+        "5"
+       ],
+       "rows": [
+        [
+         "1",
+         "2",
+         "2.5",
+         "3",
+         "2.5",
+         "3",
+         "3.5",
+         "3",
+         "3.5",
+         "4"
+        ],
+        [
+         "1",
+         "2",
+         "2.5",
+         "3",
+         "2.5",
+         "3",
+         "3.5",
+         "3",
+         "3.5",
+         "4"
+        ],
+        [
+         "2",
+         "1",
+         "1.5",
+         "2",
+         "1.5",
+         "2",
+         "2.5",
+         "2",
+         "2.5",
+         "3"
+        ],
+        [
+         "1",
+         "2",
+         "2.5",
+         "3",
+         "2.5",
+         "3",
+         "3.5",
+         "3",
+         "3.5",
+         "4"
+        ],
+        [
+         "1",
+         "2",
+         "2.5",
+         "3",
+         "2.5",
+         "3",
+         "3.5",
+         "3",
+         "3.5",
+         "4"
+        ],
+        [
+         "2",
+         "1",
+         "1.5",
+         "2",
+         "1.5",
+         "2",
+         "2.5",
+         "2",
+         "2.5",
+         "3"
+        ],
+        [
+         "2",
+         "1",
+         "1.5",
+         "2",
+         "1.5",
+         "2",
+         "2.5",
+         "2",
+         "2.5",
+         "3"
+        ],
+        [
+         "2",
+         "1",
+         "1.5",
+         "2",
+         "1.5",
+         "2",
+         "2.5",
+         "2",
+         "2.5",
+         "3"
+        ],
+        [
+         "3",
+         "0",
+         "0.5",
+         "1",
+         "0.5",
+         "1",
+         "1.5",
+         "1",
+         "1.5",
+         "2"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$\\overline{X}_2\\backslash\\overline{X}_1$",
+        "3",
+        "3.5",
+        "4",
+        "3.5",
+        "4",
+        "4.5",
+        "4",
+        "4.5",
+        "5"
+       ],
+       "rows": [
+        [
+         "1",
+         "2",
+         "2.5",
+         "3",
+         "2.5",
+         "3",
+         "3.5",
+         "3",
+         "3.5",
+         "4"
+        ],
+        [
+         "1",
+         "2",
+         "2.5",
+         "3",
+         "2.5",
+         "3",
+         "3.5",
+         "3",
+         "3.5",
+         "4"
+        ],
+        [
+         "2",
+         "1",
+         "1.5",
+         "2",
+         "1.5",
+         "2",
+         "2.5",
+         "2",
+         "2.5",
+         "3"
+        ],
+        [
+         "1",
+         "2",
+         "2.5",
+         "3",
+         "2.5",
+         "3",
+         "3.5",
+         "3",
+         "3.5",
+         "4"
+        ],
+        [
+         "1",
+         "2",
+         "2.5",
+         "3",
+         "2.5",
+         "3",
+         "3.5",
+         "3",
+         "3.5",
+         "4"
+        ],
+        [
+         "2",
+         "1",
+         "1.5",
+         "2",
+         "1.5",
+         "2",
+         "2.5",
+         "2",
+         "2.5",
+         "3"
+        ],
+        [
+         "2",
+         "1",
+         "1.5",
+         "2",
+         "1.5",
+         "2",
+         "2.5",
+         "2",
+         "2.5",
+         "3"
+        ],
+        [
+         "2",
+         "1",
+         "1.5",
+         "2",
+         "1.5",
+         "2",
+         "2.5",
+         "2",
+         "2.5",
+         "3"
+        ],
+        [
+         "3",
+         "0",
+         "0.5",
+         "1",
+         "0.5",
+         "1",
+         "1.5",
+         "1",
+         "1.5",
+         "2"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 91,
+     "printedPages": [
+      173,
+      174
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 5
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

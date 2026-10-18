@@ -1,0 +1,826 @@
+{
+  "formulas": [
+    {
+      "id": "phys14-faraday-law-14-1",
+      "name": "Faraday's law of electromagnetic induction",
+      "number": "14.1",
+      "formula": "ε = N (ΔΦ/Δt) ...(14.1); ε = −N (ΔΦ/Δt) ...(14.1)",
+      "latex": "ε=NΔΦ/Δt",
+      "sourceReferences": [
+        {
+          "pdfPage": 71,
+          "printedPage": 131,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-motional-emf-14-2",
+      "name": "Motional e.m.f.",
+      "number": "14.2",
+      "formula": "The e.m.f. generated in the circuit by the moving rod is the product of magnetic-field strength, rod length and velocity. This equation is valid when B, ℓ and v are mutually perpendicular. Otherwise, their mutually perpendicular components are used. Motional e.m.f. is an example of dynamically induced e.m.f. because it is induced in a conductor in motion.",
+      "latex": "ε=Bℓv",
+      "sourceReferences": [
+        {
+          "pdfPage": 73,
+          "printedPage": 135,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-motional-emf-power-14-2",
+      "name": "Power dissipated by motional e.m.f.",
+      "number": "14.2",
+      "formula": "The power dissipated is P = B²ℓ²v²/R ...(14.2). In satisfying the principle of conservation of energy, the produced and dissipated powers are equal.",
+      "latex": "P=B^2ℓ^2v^2/R",
+      "sourceReferences": [
+        {
+          "pdfPage": 74,
+          "printedPage": 136,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-self-inductance-14-3",
+      "name": "Self-inductance from flux linkage",
+      "number": "14.3",
+      "formula": "The unit of inductance is the henry (H). From Eq. (1), an induced e.m.f. of 1 V for a current-change rate of 1 A s⁻¹ gives L = 1 H. Faraday’s law also gives ε = Δ(NΦ)/Δt (2). Comparing (1) and (2), LI = NΦ, so L = NΦ/I (14.3).",
+      "latex": "L=NΦ/I",
+      "sourceReferences": [
+        {
+          "pdfPage": 75,
+          "printedPage": 138,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 75,
+          "printedPage": 139,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-mutual-inductance-14-4",
+      "name": "Mutual inductance from common flux linkage",
+      "number": "14.4",
+      "formula": "M = NΦ/I",
+      "latex": "M=NΦ/I",
+      "sourceReferences": [
+        {
+          "pdfPage": 76,
+          "printedPage": 141,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-ac-generator-emf-14-5-14-6",
+      "name": "Instantaneous alternating e.m.f. of a rotating coil",
+      "number": "14.5–14.6",
+      "formula": "The induced e.m.f. is ε = −ΔΦ/Δt = −Δ(NAB cos ωt)/Δt. Taking the limit as Δt→0 gives ε = NAB(ω sin ωt) (14.5). Since sin ωt has maximum value 1, εmax = NABω; therefore ε = εmax sin ωt = εmax sin(2πft) (14.6).",
+      "latex": "ε=NABω sin(ωt)=ε_{max}sin(2πft)",
+      "sourceReferences": [
+        {
+          "pdfPage": 78,
+          "printedPage": 145,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-back-emf-14-7",
+      "name": "Motor terminal voltage and back e.m.f.",
+      "number": "14.7",
+      "formula": "The back e.m.f. ε is less than the applied voltage V. Their difference drives current through the armature resistance: V = ε + IₐRₐ (14.7), where Rₐ is armature-circuit resistance and Iₐ is current. The textbook calls the motor output the difference between supply voltage and back e.m.f.",
+      "latex": "V=ε+I_aR_a",
+      "sourceReferences": [
+        {
+          "pdfPage": 79,
+          "printedPage": 147,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-transformer-ratio-14-8",
+      "name": "Ideal transformer voltage-turn ratio",
+      "number": "14.8",
+      "formula": "Vs/Vp = Ns/Np",
+      "latex": "V_s/V_p=N_s/N_p",
+      "sourceReferences": [
+        {
+          "pdfPage": 80,
+          "printedPage": 149,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-transformer-current-ratio-14-9",
+      "name": "Ideal transformer voltage-current ratio",
+      "number": "14.9",
+      "formula": "Vs/Vp = Ip/Is",
+      "latex": "V_s/V_p=I_p/I_s",
+      "sourceReferences": [
+        {
+          "pdfPage": 80,
+          "printedPage": 149,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Eddy currents",
+      "definition": "Eddy currents: currents induced in a conductor moving in a magnetic field or in metals exposed to a changing magnetic field.",
+      "sourceReferences": [
+        {
+          "pdfPage": 81,
+          "printedPage": 151,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Self-induction",
+      "definition": "KEY POINTS — Self-induction: change of magnetic flux due to variation in current flowing in the same circuit.",
+      "sourceReferences": [
+        {
+          "pdfPage": 81,
+          "printedPage": 151,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Mutual induction",
+      "definition": "Mutual induction: change of magnetic flux due to variation in current flowing in another circuit.",
+      "sourceReferences": [
+        {
+          "pdfPage": 81,
+          "printedPage": 151,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Lenz’s law",
+      "definition": "Lenz’s law: induced current flows in a direction that opposes the cause producing it.",
+      "sourceReferences": [
+        {
+          "pdfPage": 81,
+          "printedPage": 151,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Dynamically induced e.m.f.",
+      "definition": "Dynamically induced e.m.f.: produced when a conductor moves in a stationary magnetic field so that the flux linking it changes in magnitude.",
+      "sourceReferences": [
+        {
+          "pdfPage": 81,
+          "printedPage": 151,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Statically induced e.m.f.",
+      "definition": "Statically induced e.m.f.: produced when the conductor is stationary and the magnetic field is moving or changing.",
+      "sourceReferences": [
+        {
+          "pdfPage": 81,
+          "printedPage": 151,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Generator",
+      "definition": "Generator: a device that converts mechanical energy into electrical energy.",
+      "sourceReferences": [
+        {
+          "pdfPage": 81,
+          "printedPage": 151,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Transformer",
+      "definition": "Transformer: a device used to transform electrical power from one voltage and current level to another.",
+      "sourceReferences": [
+        {
+          "pdfPage": 81,
+          "printedPage": 151,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "phys14-example141-flux-rate",
+      "title": "Example 14.1 — flux-change rate",
+      "question": "At what rate must a single conductor cut the flux so that a current of 1.2 mA flows through it when a 10 Ω resistor is connected across its ends?",
+      "solution": "SOLUTION — ε = N (ΔΦ/Δt). Here ε = IR = 1.2 × 10⁻³ × 10 = 1.2 × 10⁻² V. ΔΦ/Δt = ε/N = (1.2 × 10⁻²)/1 = 1.2 × 10⁻² Wb/s. EXAMPLE 14.2",
+      "answer": "ΔΦ/Δt = 1.2 × 10⁻² Wb/s",
+      "sourceReferences": [
+        {
+          "pdfPage": 72,
+          "printedPage": 133,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-example142-average-induced-emf",
+      "title": "Example 14.2 — average induced e.m.f.",
+      "question": "A coil of mean area 500 cm² and 1000 turns is held perpendicular to a uniform 0.4 gauss field and turned through 180° in 1/10 s. Find the average induced e.m.f.",
+      "solution": "EXAMPLE 14.2 — GIVEN: When the plane of the coil is perpendicular to the field, θ = 0°. When the coil is turned through 180°, θ = 180°. Initial flux linked with the coil: Φ₁ = NBA cos θ = NBA. Flux linked when turned through 180°: Φ₂ = −NBA. Change in flux: ΔΦ = Φ₂ − Φ₁ = (−NBA) − (NBA) = −2NBA. N = 1000; B = 0.4 G = 0.4 × 10⁻⁴ T; A = 500 × 10⁻⁴ m²; Δt = 0.1 s. REQUIRED — induced e.m.f. ε = ? SOLUTION — Average induced e.m.f., ε = |ΔΦ|/Δt = 2NBA/Δt. ε = [2 × 1000 × (0.4 × 10⁻⁴) × 500 × 10⁻⁴]/0.1 = 0.04 V.",
+      "answer": "0.04 V",
+      "sourceReferences": [
+        {
+          "pdfPage": 73,
+          "printedPage": 134,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-example143-motional-emf-power",
+      "title": "Example 14.3 — motional e.m.f., current and power",
+      "question": "EXAMPLE 14.3 — A loop of resistance 0.1 Ω is placed in a magnetic field of 2 T. A conductor of length 0.2 m slides along a loop at velocity 0.2 m s⁻¹. Find (a) the e.m.f. produced if the conductor’s motion is perpendicular to the field, (b) the current through the loop, (c) the electrical power generated, and (d) the input mechanical power.",
+      "solution": "SOLUTION (a) — Motional e.m.f. ε = vBℓ = 0.2 × 2 × 0.2 = 0.08 V. (b) Current through the loop is I = ε/R = 0.08 V/0.1 Ω = 0.8 A. (c) Electrical power generated is P₁ = IV = 0.8 A × 0.08 V = 0.064 W. The magnetic force on the current-carrying loop of length ℓ is F = B I ℓ = 2 T × 0.8 A × 0.2 m = 0.32 N. (d) The power needed to move the loop against magnetic force F is P₂ = Fv = 0.32 N × 0.2 m s⁻¹ = 0.064 W.",
+      "answer": "ε = 0.08 V; I = 0.8 A; P₁ = P₂ = 0.064 W; F = 0.32 N",
+      "sourceReferences": [
+        {
+          "pdfPage": 74,
+          "printedPage": 136,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 74,
+          "printedPage": 137,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-example144-ac-motor-peak-quantities",
+      "title": "Example 14.4 — A.C. motor peak quantities",
+      "question": "EXAMPLE 14.4 SOLUTION — Peak back e.m.f.: ε = V − IₐRₐ = 120 − (5 × 4) = 100 V. Peak power supplied: Ppeak = VI = 120 × 5 = 600 W. Peak rate of energy loss as heat: Pheat = I²R = (5)² × 4 = 100 W.",
+      "solution": "EXAMPLE 14.4 SOLUTION — Peak back e.m.f.: ε = V − IₐRₐ = 120 − (5 × 4) = 100 V. Peak power supplied: Ppeak = VI = 120 × 5 = 600 W. Peak rate of energy loss as heat: Pheat = I²R = (5)² × 4 = 100 W.",
+      "answer": "Peak back e.m.f. = 100 V; peak supply power = 600 W; peak heat-loss rate = 100 W",
+      "sourceReferences": [
+        {
+          "pdfPage": 80,
+          "printedPage": 148,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "phys14-assignment-14-2-mutual-inductance",
+      "title": "Assignment 14.2 — mutual inductance and induced e.m.f.",
+      "question": "ASSIGNMENT 14.2 — Current in the first coil changes from 2 A to 10 A in 0.4 s. Find the mutual inductance if an e.m.f. of 60 mV is induced in the second coil. Also find the induced e.m.f. when the current in the first coil changes from 4 A to 16 A in 0.03 s; consider magnitude only. Printed answers: 3 × 10⁻³ H; 1.2 V.",
+      "answer": "M = 3 × 10⁻³ H; |ε| = 1.2 V",
+      "sourceReferences": [
+        {
+          "pdfPage": 76,
+          "printedPage": 141,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-assignment-14-3-generator-max-emf",
+      "title": "Assignment 14.3 — maximum generator e.m.f.",
+      "question": "ASSIGNMENT 14.3 — An electric generator has 100 turns of wire formed into a 50 cm × 30 cm rectangular loop, entirely in a uniform 3.50 T magnetic field. Find the maximum e.m.f. when it is spun at 1000 rev/min about an axis perpendicular to B. Printed answer: 5500 V.",
+      "answer": "5500 V",
+      "sourceReferences": [
+        {
+          "pdfPage": 78,
+          "printedPage": 145,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-exercise-mcq-1-14-conceptual-1-8",
+      "exercise": "Unit 14 exercise",
+      "title": "Multiple-choice questions 1–14 and conceptual questions 1–8",
+      "questions": "UNIT 14 EXERCISE — MULTIPLE-CHOICE QUESTIONS (choose the best possible answer). 1. For inducing e.m.f. in a coil the basic requirement is: (A) flux should link the coil; (B) change in flux should link the coil; (C) coil should form a closed loop; (D) both (B) and (C) are true. 2. A single-turn coil rotates in a uniform magnetic field at uniform speed; induced e.m.f. is: (A) alternating; (B) steady; (C) pulsating; (D) zero. 3. Dynamically induced e.m.f. is used in: (A) choke; (B) transformer; (C) generator; (D) thermocouple. 4. In Fleming’s left-hand rule the thumb represents: (A) current flow; (B) induced e.m.f.; (C) magnetic field; (D) mechanical force. 5. The field at any point on the axis of a current-carrying coil is: (A) perpendicular to the axis; (B) parallel to the axis; (C) at 45° to the axis; (D) zero. 6. When a coil rotates in a magnetic field, the induced current: (A) continuously changes; (B) remains the same; (C) becomes zero; (D) becomes maximum. 7. In an A.C. generator, increasing the number of turns in the coil: (A) decreases e.m.f.; (B) leaves e.m.f. the same; (C) increases e.m.f.; (D) makes e.m.f. zero. 8. A device in which induced e.m.f. is statically induced is: (A) transformer; (B) A.C. generator; (C) alternator; (D) dynamo. 9. Find mutual-inductance coefficient when magnetic flux changes by 2×10⁻² Wb and current changes by 0.01 A: (A) 2 H; (B) 3 H; (C) 1/2 H; (D) zero. 10. Induced e.m.f. in a coil is proportional to: (A) magnetic flux through the coil; (B) rate of change of magnetic flux through the coil; (C) coil area; (D) product of flux and area. 11. In a coil current changes from 2 to 4 A in 0.05 s. If average induced e.m.f. is 8 V, self-inductance is: (A) 0.2 H; (B) 0.1 H; (C) 0.8 H; (D) 0.04 H. 12. Which quantity remains constant in a step-up transformer? (A) current; (B) voltage; (C) power; (D) heat. 13. A step-up transformer has transformation ratio 3:2. What is secondary voltage if primary voltage is 30 V? (A) 45 V; (B) 15 V; (C) 90 V; (D) 300 V. 14. Eddy current is produced when: (A) a metal is kept in a varying magnetic field; (B) a metal is kept in a steady magnetic field; (C) a circular coil is placed in a steady magnetic field; (D) current is passed through a circular coil.\n\nCONCEPTUAL QUESTIONS — 1. What factors limit the size of the back e.m.f.? 2. Why does back e.m.f. tend to decrease as the rate of doing work increases? 3. In Faraday’s experiments, what is the advantage of using coils with many turns? 4. Show that ε = −ΔΦ/Δt is dimensionally correct. 5. Give the formulae for flux linkage in terms of angular orientation. 6. How does an electromagnetic brake work? 7. How can eddy currents be minimized in a transformer? 8. How is electromagnetic induction used in cooktops in electric ranges?",
+      "sourceReferences": [
+        {
+          "pdfPage": 82,
+          "printedPage": 152,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 82,
+          "printedPage": 153,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys14-exercise-conceptual-9-10-comprehensive-numericals-1-9",
+      "exercise": "Unit 14 exercise",
+      "title": "Conceptual questions 9–10, comprehensive questions and numerical problems 1–9",
+      "questions": "CONCEPTUAL QUESTIONS (continued) — 9. What is meant by the term back e.m.f. in operation of an electric motor? 10. Why is it advantageous for the armature to rotate in a radial magnetic field rather than a uniform field? TRANSFORMER CORE: (a) Which material would you prefer: iron, solid soft iron, laminated soft iron or aluminium? (b) Why is this material used?\n\nCOMPREHENSIVE QUESTIONS — 1. Describe electromagnetic induction with simple experiments; explain factors affecting magnitude and direction of induced e.m.f. 2. State Faraday’s law; explain statically and dynamically induced e.m.f. with experiments. 3. Describe Lenz’s law and show that it manifests conservation of energy. 4. Explain mutual induction; define its coefficient and unit. 5. Explain self-induction; define its coefficient and unit. 6. Explain motional e.m.f. and show ε = Bℓv. 7. What is a D.C. generator? Explain how an alternating e.m.f. is generated by a loop of wire rotating in a magnetic field. 8. What is an A.C. motor? Explain its construction and operation. 9. What is a transformer? Give its principle and mathematical relationship; explain why a laminated iron core is used instead of a solid core. 10. Explain back e.m.f. in an electric motor.\n\nNUMERICAL PROBLEMS — 1. A wheel has 12 metal spokes, each 0.6 m long, and rotates at 180 rpm in a plane normal to Earth’s magnetic field. If B = 0.6 G, find induced e.m.f. between axle and rim. Printed answer: 2.035 × 10⁻⁴ V. 2. A 1000-turn circuit encloses a magnetic circuit of cross-section 20 cm². At 4 A, B = 1 Wb m⁻²; at 9 A, B = 1.4 Wb m⁻². Find mean inductance between these current limits and e.m.f. if current falls from 9 A to 4 A in 0.05 s. Printed answers: 0.16 H, 16 V. 3. A 100 Ω coil with 100 turns is in a 1 mWb field; a 400 Ω galvanometer is connected in series. Find average e.m.f. and current if the coil moves in 0.1 s from the given field to 0.2 mWb. Printed answer: 1.6 mA. 4. A horizontal east–west wire 10 m long falls at 5.0 m s⁻¹ perpendicular to the horizontal component of Earth’s field, 0.30 × 10⁻⁴ Wb m⁻². Find (a) instantaneous e.m.f., (b) direction, and (c) which end has higher potential. Printed answer: 1.5 × 10⁻³ V.\n\n5. Current in a circuit falls from 5.0 A to 0 A in 0.1 s. If average induced e.m.f. is 200 V, estimate self-inductance. Printed answer: 4 H. 6. A long solenoid has 15 turns per cm. A small loop of area 2.0 cm² is inside, normal to its axis. Solenoid current changes steadily from 2.0 A to 4.0 A in 0.1 s. Find induced e.m.f. in the loop. Printed answer: 7.54 × 10⁻⁶ V. 7. A rectangular loop of sides 8 cm and 2 cm, with a small cut, moves out of a uniform 0.3 T magnetic field normal to the loop at 1 cm s⁻¹. Find e.m.f. and duration when velocity is normal to (a) the longer side, (b) the shorter side. Printed answers: 2.4 × 10⁻⁴ V, 2 s; 0.6 × 10⁻⁴ V, 8 s. 8. A 90 mm wire moves upward at 35 m s⁻¹ between magnet poles. B = 80 mT to the right and wire resistance is 5.00 mΩ. Find induced-current magnitude and direction. Printed answer: 50.4 A. 9. Adjacent coils have mutual inductance 1.5 H. Current in one changes from 0 to 20 A in 0.5 s. Find change of flux linkage with the other coil. Printed answer: 30 Wb.",
+      "sourceReferences": [
+        {
+          "pdfPage": 83,
+          "printedPage": 154,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 83,
+          "printedPage": 155,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys18-unit18-review-mcq-1-7",
+      "title": "Unit 18 review — multiple-choice questions 1–7",
+      "problems": [
+        {
+          "id": "phys18-unit18-mcq-1",
+          "question": "Triplets A and B board spaceships, travel equal distances away from Earth in opposite directions at equal speeds, then return. Triplet C stays on Earth. Which relation describes their relative ages on reunion? (A) A < B < C (B) A = B > C (C) A = B < C (D) A = B = C",
+          "questionUrdu": "درې غبرګوني A او B په فضایي بېړیو کې په مخالفو لورو، په یوه سرعت او مساوي واټن ځي او بېرته راګرځي؛ C پر ځمکه پاتې کېږي. تر بیا یوځای کېدو وروسته د عمر اړیکه کومه ده؟ (A) A < B < C؛ (B) A = B > C؛ (C) A = B < C؛ (D) A = B = C",
+          "questionPashto": "درې‌ګوني A او B په فضايي بېړیو کې په مخالفو لورو، په یو شان سرعت او واټن ځي او بېرته راګرځي؛ C پر ځمکه پاتې کېږي. د بیا یوځای کېدو پر مهال د عمر اړیکه کومه ده؟ (A) A < B < C؛ (B) A = B > C؛ (C) A = B < C؛ (D) A = B = C",
+          "answer": "C",
+          "solutionOrigin": "reasoned from the textbook’s stated concepts; answer key not printed on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 152,
+              "printedPage": 293,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-2",
+          "question": "A spaceship travels from Earth to a planet in the Alpha Centauri star system. Which observer measures the proper time for the trip? (A) on Earth (B) on the planet (C) on the spaceship (D) deep in space far from the planet and Earth",
+          "questionUrdu": "فضائی جہاز زمین سے الفا سینٹوری نظام کے سیارے تک جاتا ہے۔ سفر کا خاص وقت کون سا مشاہد ناپتا ہے؟ (A) زمین پر؛ (B) سیارے پر؛ (C) جہاز پر؛ (D) سیارے اور زمین سے دور خلا میں۔",
+          "questionPashto": "فضايي بېړۍ له ځمکې د الفا سنټوري ستوريز نظام سیارې ته ځي. د سفر مناسب وخت کوم کتونکی اندازه کوي؟ (A) پر ځمکه؛ (B) پر سیاره؛ (C) په بېړۍ کې؛ (D) له سیارې او ځمکې لرې فضا کې.",
+          "answer": "C",
+          "solutionOrigin": "reasoned from the textbook’s stated concepts; answer key not printed on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 152,
+              "printedPage": 293,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-3",
+          "question": "When you compress a spring between your fingers, its mass: (A) increases (B) decreases (C) stays the same (D) turns negative",
+          "questionUrdu": "کله چې د ګوتو ترمنځ فنر ټینګ کړئ، کتله یې: (A) زیاتېږي؛ (B) کمېږي؛ (C) هماغسې پاتې کېږي؛ (D) منفي کېږي۔",
+          "questionPashto": "چې پسرلی د ګوتو ترمنځ ټینګ کړئ، کتله یې: (A) زیاتېږي؛ (B) کمېږي؛ (C) هماغسې پاتې کېږي؛ (D) منفي کېږي.",
+          "answer": "A",
+          "solutionOrigin": "reasoned from the textbook’s stated concepts; answer key not printed on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 152,
+              "printedPage": 293,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-4",
+          "question": "By doubling the absolute temperature of a black body, the total energy radiated changes by a factor of: (A) 0.5 (B) 2 (C) 4 (D) 16",
+          "questionUrdu": "سیاہ جسم کا مطلق درجۂ حرارت دوگنا کرنے سے خارج شدہ کل توانائی کتنے گنا بدلتی ہے؟ (A) 0.5؛ (B) 2؛ (C) 4؛ (D) 16۔",
+          "questionPashto": "د تور جسم مطلقه تودوخه دوه برابره شي، خپره شوې ټوله انرژي په څو چنده بدلېږي؟ (A) 0.5؛ (B) 2؛ (C) 4؛ (D) 16.",
+          "answer": "D",
+          "solutionOrigin": "reasoned from the textbook’s stated concepts; answer key not printed on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 152,
+              "printedPage": 293,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-5",
+          "question": "According to Einstein, increasing the brightness of a light beam without changing its color increases: (A) the number of photons (B) energy of each photon (C) speed of photons (D) frequency of photons",
+          "questionUrdu": "آئن اسٹائن کے مطابق روشنی کا رنگ بدلے بغیر چمک بڑھانے سے کیا بڑھے گا؟ (A) فوٹونوں کی تعداد؛ (B) ہر فوٹون کی توانائی؛ (C) فوٹونوں کی رفتار؛ (D) تعدد۔",
+          "questionPashto": "د انشټاین له مخې د رڼا رنګ بدل نه شي او ځلا زیاته شي، څه زیاتېږي؟ (A) د فوټونونو شمېر؛ (B) د هر فوټون انرژي؛ (C) د فوټونونو سرعت؛ (D) فریکونسي.",
+          "answer": "A",
+          "solutionOrigin": "reasoned from the textbook’s stated concepts; answer key not printed on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 152,
+              "printedPage": 293,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-6",
+          "question": "Sources of red, blue and yellow light each emit 50 mW. Which source emits more photons? (A) red (B) blue (C) yellow (D) all emit the same number per second",
+          "questionUrdu": "سرخ، نیلی اور زرد روشنی کے ذرائع ہر ایک 50 mW توانائی خارج کرتے ہیں۔ کون سا زیادہ فوٹون خارج کرے گا؟ (A) سرخ؛ (B) نیلا؛ (C) زرد؛ (D) سب فی سیکنڈ برابر تعداد۔",
+          "questionPashto": "د سور، آبي او ژېړ رڼا سرچینې هره یوه 50 mW توان خپروي. کومه سرچینه ډېر فوټونونه خپروي؟ (A) سور؛ (B) آبي؛ (C) ژېړ؛ (D) ټول په ثانیه کې یو شان شمېر.",
+          "answer": "A",
+          "solutionOrigin": "reasoned from the textbook’s stated concepts; answer key not printed on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 152,
+              "printedPage": 293,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-7",
+          "question": "With work function 3.00 eV, which listed photon energy is the least that could produce photoelectrons? (A) 1.50 eV (B) 2.90 eV (C) 3.50 eV (D) 6.01 eV",
+          "questionUrdu": "اگر کام انجام 3.00 eV ہو تو درج شدہ فوٹون توانائیوں میں سے کون سی کم ترین توانائی فوٹو الیکٹران پیدا کر سکتی ہے؟ (A) 1.50 eV؛ (B) 2.90 eV؛ (C) 3.50 eV؛ (D) 6.01 eV۔",
+          "questionPashto": "که د کار دنده 3.00 eV وي، له ورکړل شوو فوټوني انرژیو کومه لږترلږه انرژي فوټو الکترونونه جوړولای شي؟ (A) 1.50 eV؛ (B) 2.90 eV؛ (C) 3.50 eV؛ (D) 6.01 eV.",
+          "answer": "C",
+          "solutionOrigin": "reasoned from the textbook’s stated concepts; answer key not printed on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 152,
+              "printedPage": 293,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phys18-unit18-review-mcq-8-14",
+      "title": "Unit 18 review — multiple-choice questions 8–14",
+      "problems": [
+        {
+          "id": "phys18-unit18-mcq-8",
+          "question": "MULTIPLE-CHOICE QUESTION 8 — In Compton scattering, at what angle does the electron carry maximum energy? Initially the target electron is at rest. (A) 0° (B) 90° (C) 135° (D) 180°",
+          "questionUrdu": "کامپٹن بکھراؤ میں کس زاویے پر الیکٹران زیادہ سے زیادہ توانائی لیتا ہے؟ ہدف الیکٹران ابتدا میں ساکن ہے۔ (A) 0° (B) 90° (C) 135° (D) 180°",
+          "questionPashto": "په کامپټن تیتېدو کې الکترون په کومه زاویه تر ټولو ډېره انرژي اخلي؟ د هدف الکترون په پیل کې ولاړ دی. (A) 0° (B) 90° (C) 135° (D) 180°",
+          "answer": "D",
+          "solutionOrigin": "reasoned from source concepts; no answer key on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 294,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-9",
+          "question": "MULTIPLE-CHOICE QUESTION 9 — If X-rays scatter from protons instead of electrons, the wavelength change for a given scattering angle: (A) increases (B) decreases (C) is unchanged (D) is one radian",
+          "questionUrdu": "اگر ایکس ریز الیکٹرانوں کے بجائے پروٹونوں سے بکھریں تو مقررہ زاویے پر طولِ موج کی تبدیلی: (A) بڑھے گی (B) کم ہوگی (C) وہی رہے گی (D) ایک ریڈیئن ہوگی۔",
+          "questionPashto": "که ایکس‌رې د الکترونونو پر ځای له پروټونونو تیتې شي، د ټاکلې زاویې لپاره د څپې‌اوږدوالي بدلون: (A) زیاتېږي (B) کمېږي (C) نه بدلېږي (D) یو رېډین دی.",
+          "answer": "B",
+          "solutionOrigin": "reasoned from source concepts; no answer key on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 294,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-10",
+          "question": "MULTIPLE-CHOICE QUESTION 10 — Pair production cannot take place in vacuum because: (A) mass is not conserved (B) momentum is not conserved (C) energy is not conserved (D) charge is not conserved",
+          "questionUrdu": "جوڑا بننا خلا میں نہیں ہو سکتا کیونکہ: (A) کمیت محفوظ نہیں (B) مومنٹم محفوظ نہیں (C) توانائی محفوظ نہیں (D) بار محفوظ نہیں۔",
+          "questionPashto": "د جوړې تولید په تشه فضا کې نه شي کېدای، ځکه: (A) کتله نه ساتل کېږي (B) مومنټم نه ساتل کېږي (C) انرژي نه ساتل کېږي (D) چارج نه ساتل کېږي.",
+          "answer": "B",
+          "solutionOrigin": "reasoned from source concepts; no answer key on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 294,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-11",
+          "question": "MULTIPLE-CHOICE QUESTION 11 — According to de Broglie’s equation, which has the smallest associated wavelength? (A) proton (B) neutron (C) alpha particle (D) electron",
+          "questionUrdu": "دے بروئے مساوات کے مطابق کس کا وابستہ طولِ موج سب سے چھوٹا ہے؟ (A) پروٹون (B) نیوٹران (C) الفا ذرّہ (D) الیکٹران۔",
+          "questionPashto": "د دې بروګلي د معادلې له مخې د کومې ذرې تړلی څپې‌اوږدوالی تر ټولو لږ دی؟ (A) پروټون (B) نیوټرون (C) الفا ذره (D) الکترون.",
+          "answer": "C",
+          "solutionOrigin": "reasoned from source concepts; no answer key on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 294,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-12",
+          "question": "MULTIPLE-CHOICE QUESTION 12 — An electron and a proton have the same de Broglie wavelength. The electron’s kinetic energy is: (A) zero (B) infinite (C) equal to the proton’s kinetic energy (D) greater than the proton’s kinetic energy",
+          "questionUrdu": "الیکٹران اور پروٹون کا دے بروئے طولِ موج یکساں ہے۔ الیکٹران کی حرکی توانائی: (A) صفر (B) لامحدود (C) پروٹون کی حرکی توانائی کے برابر (D) پروٹون سے زیادہ۔",
+          "questionPashto": "د الکترون او پروټون د دې بروګلي څپې‌اوږدوالی یو شان دی. د الکترون حرکي انرژي: (A) صفر (B) بې‌نهایت (C) د پروټون له حرکي انرژۍ سره برابره (D) تر هغې زیاته ده.",
+          "answer": "D",
+          "solutionOrigin": "reasoned from source concepts; no answer key on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 294,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-13",
+          "question": "MULTIPLE-CHOICE QUESTION 13 — In an electron microscope, the light source is replaced by a beam of very fast-moving: (A) electron (B) neutron (C) proton (D) photon",
+          "questionUrdu": "الیکٹران خردبین میں روشنی کے منبع کی جگہ بہت تیز رفتار کس ذرّے کی بیم لیتی ہے؟ (A) الیکٹران (B) نیوٹران (C) پروٹون (D) فوٹون۔",
+          "questionPashto": "په الکتروني مایکروسکوپ کې د رڼا سرچینه د کومې ډېرې چټکې ذرې بیم نیسي؟ (A) الکترون (B) نیوټرون (C) پروټون (D) فوټون.",
+          "answer": "A",
+          "solutionOrigin": "reasoned from source concepts; no answer key on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 294,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-mcq-14",
+          "question": "MULTIPLE-CHOICE QUESTION 14 — According to Heisenberg, if momentum-measurement uncertainty is reduced by a factor of 2, by what factor does position uncertainty change? (A) 1/2 (B) 1 (C) 2 (D) 4",
+          "questionUrdu": "د ہائزن برگ کے مطابق مومنٹم پیمائش کی غیر یقینی 2 گنا کم ہو تو مقام کی غیر یقینی کس عامل سے بدلتی ہے؟ (A) 1/2 (B) 1 (C) 2 (D) 4۔",
+          "questionPashto": "د هایزنبرګ له مخې که د مومنټم د اندازه کولو ناڅرګندتیا 2 ځله کمه شي، د ځای ناڅرګندتیا په کوم عامل بدلېږي؟ (A) 1/2 (B) 1 (C) 2 (D) 4.",
+          "answer": "C",
+          "solutionOrigin": "reasoned from source concepts; no answer key on this page",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 294,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phys18-unit18-conceptual-questions-1-10",
+      "title": "Unit 18 conceptual questions 1–10",
+      "problems": [
+        {
+          "id": "phys18-unit18-concept-1",
+          "question": "CONCEPTUAL QUESTION 1 — Imagine a world in which the speed of light is only 50 m/s. How would everyday events appear to us?",
+          "questionUrdu": "ایسی دنیا کا تصور کریں جہاں روشنی کی رفتار صرف 50 m/s ہو۔ روزمرہ واقعات ہمیں کیسے دکھائی دیں گے؟",
+          "questionPashto": "داسې نړۍ تصور کړئ چې د رڼا سرعت پکې یوازې 50 m/s وي. ورځني پېښې به موږ ته څنګه ښکاري؟",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-concept-2",
+          "question": "CONCEPTUAL QUESTION 2 — Some stars appear reddish and some blue. Which stars have the higher surface temperature? Explain.",
+          "questionUrdu": "کچھ ستارے سرخی مائل اور کچھ نیلے دکھائی دیتے ہیں۔ کس ستاروں کی سطحی حرارت زیادہ ہے؟ وضاحت کریں۔",
+          "questionPashto": "ځینې ستوري سوربخن او ځینې آبي ښکاري. د کومو ستورو د سطحې تودوخه لوړه ده؟ تشریح یې کړئ.",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-concept-3",
+          "question": "CONCEPTUAL QUESTION 3 — If the photoelectric effect is observed for one metal, can you conclude it will also occur for another metal under the same conditions?",
+          "questionUrdu": "اگر ایک دھات میں فوٹو الیکٹرک اثر دیکھا جائے تو کیا نتیجہ اخذ کیا جا سکتا ہے کہ انہی حالات میں دوسری دھات میں بھی ہوگا؟",
+          "questionPashto": "که په یوه فلز کې فوټو الکتریک اغېز ولیدل شي، ایا پایله اخیستلای شو چې په همدې شرایطو کې به په بل فلز کې هم وشي؟",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-concept-4",
+          "question": "CONCEPTUAL QUESTION 4 — Does a light bulb at 2500 K produce as white a light as the Sun at 6000 K?",
+          "questionUrdu": "کیا 2500 K پر بلب اتنی ہی سفید روشنی دیتا ہے جتنی 6000 K پر سورج؟",
+          "questionPashto": "ایا په 2500 K کې بلب د 6000 K لمر هومره سپینه رڼا ورکوي؟",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-concept-5",
+          "question": "CONCEPTUAL QUESTION 5 — A red-light beam and a blue-light beam have exactly the same energy. Which contains more photons?",
+          "questionUrdu": "سرخ اور نیلی روشنی کی بیموں کی توانائی بالکل یکساں ہے۔ کس میں زیادہ فوٹون ہیں؟",
+          "questionPashto": "د سورې او آبي رڼا بیمونه عین یو شان انرژي لري. په کومه کې ډېر فوټونونه دي؟",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-concept-6",
+          "question": "CONCEPTUAL QUESTION 6 — Why must the rest mass of a photon be zero?",
+          "questionUrdu": "فوٹون کی سکون کمیت صفر کیوں ہونی چاہیے؟",
+          "questionPashto": "د فوټون د سکون کتله ولې باید صفر وي؟",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-concept-7",
+          "question": "CONCEPTUAL QUESTION 7 — Why do we not observe the Compton effect with visible light?",
+          "questionUrdu": "مرئی روشنی میں کامپٹن اثر کیوں نہیں دیکھا جاتا؟",
+          "questionPashto": "ولې د لید وړ رڼا سره کامپټن اغېز نه وینو؟",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-concept-8",
+          "question": "CONCEPTUAL QUESTION 8 — If an electron and proton have the same de Broglie wavelength, which particle has greater speed?",
+          "questionUrdu": "اگر الیکٹران اور پروٹون کا دے بروئے طولِ موج یکساں ہو تو کس ذرّے کی رفتار زیادہ ہے؟",
+          "questionPashto": "که د الکترون او پروټون د دې بروګلي څپې‌اوږدوالی یو شان وي، د کومې ذرې سرعت ډېر دی؟",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-concept-9",
+          "question": "CONCEPTUAL QUESTION 9 — An electron and a proton are accelerated from rest through the same potential difference. Which particle has the longer wavelength?",
+          "questionUrdu": "الیکٹران اور پروٹون کو سکون سے ایک ہی فرقِ پوٹینشل سے تعجیل دیں۔ کس ذرّے کا طولِ موج زیادہ ہوگا؟",
+          "questionPashto": "الکترون او پروټون له سکون څخه د یوه پوټنشل توپیر له لارې تعجیل شي. د کومې ذرې څپې‌اوږدوالی اوږد دی؟",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-concept-10",
+          "question": "CONCEPTUAL QUESTION 10 — Why is ultraviolet radiation harmful to skin while visible light is not?",
+          "questionUrdu": "بالائے بنفشی شعاع جلد کے لیے مضر کیوں ہے جبکہ مرئی روشنی نہیں؟",
+          "questionPashto": "ولې ماورای بنفش وړانګې پوستکي ته زیان رسوي، خو د لید وړ رڼا نه؟",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phys18-unit18-comprehensive-questions-1-3",
+      "title": "Unit 18 comprehensive questions 1–3",
+      "problems": [
+        {
+          "id": "phys18-unit18-comprehensive-1",
+          "question": "COMPREHENSIVE QUESTION 1 — What are inertial and non-inertial reference frames? Explain with examples.",
+          "questionUrdu": "قصوری اور غیر قصوری حوالہ فریم کیا ہیں؟ مثالوں سے وضاحت کریں۔",
+          "questionPashto": "لختي او نا لختي مرجع چوکاټونه څه دي؟ له بېلګو سره یې تشریح کړئ.",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-comprehensive-2",
+          "question": "COMPREHENSIVE QUESTION 2 — State Einstein’s postulates of special relativity and discuss their various results.",
+          "questionUrdu": "آئن اسٹائن کے خصوصی اضافیت کے اصول بیان کریں اور ان کے مختلف نتائج پر گفتگو کریں۔",
+          "questionPashto": "د انشټاین د ځانګړي نسبیت اصول بیان او بېلابېلې پایلې یې وڅېړئ.",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        },
+        {
+          "id": "phys18-unit18-comprehensive-3",
+          "question": "COMPREHENSIVE QUESTION 3 — What are the main features of thermal radiation from a black body? Discuss Planck’s quantum theory and its importance in physics.",
+          "questionUrdu": "سیاہ جسم کی حرارتی شعاعوں کی اہم خصوصیات کیا ہیں؟ پلانک کے کوانٹم نظریے اور طبیعیات میں اس کی اہمیت پر گفتگو کریں۔",
+          "questionPashto": "د تور جسم د تودوخیزو وړانګو مهمې ځانګړنې څه دي؟ د پلانک کوانټمي تیوري او په فزیک کې یې اهمیت وڅېړئ.",
+          "solutionOrigin": "not provided in source",
+          "sourceReferences": [
+            {
+              "pdfPage": 153,
+              "printedPage": 295,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "retireSections": [
+    "14.1",
+    "14.2",
+    "14.11"
+  ],
+  "trimSections": [
+    {
+      "id": "14.2",
+      "startsAt": "The coil resembles as South-pole",
+      "title": "Lenz’s law response to an approaching south pole — first unchecked text on printed page 132"
+    },
+    {
+      "id": "14.3",
+      "startsAt": "When the plane of the coil is perpendicular to the field",
+      "title": "Example 14.2 solution — first unchecked text on printed page 134"
+    },
+    {
+      "id": "14.4",
+      "startsAt": "Thus the power produced is",
+      "title": "Motional e.m.f. power and rail-gun application — first unchecked text on printed page 136"
+    },
+    {
+      "id": "phys14-motional-emf-power-railgun-example143-and-selfinduction-intro-136-137",
+      "startsAt": "Thus the power produced is",
+      "title": "Self-inductance derivation — continued after the audited introduction"
+    },
+    {
+      "id": "14.6",
+      "startsAt": "Eddy currents are created when a conductor passes through a magnetic field",
+      "title": "Eddy currents — first unchecked continuation on printed page 142"
+    },
+    {
+      "id": "14.7",
+      "startsAt": "At position 1 the coil is at 0",
+      "title": "AC-generator rotation positions — first unchecked continuation on printed page 144"
+    },
+    {
+      "id": "14.8",
+      "startsAt": "SOLUTION",
+      "title": "Example 14.4 solution — first unchecked continuation on printed page 148"
+    },
+    {
+      "id": "14.9",
+      "startsAt": "The long thick cables of transmission lines",
+      "title": "Transformer transmission applications — first unchecked continuation on printed page 150"
+    },
+    {
+      "id": "14.10",
+      "startsAt": "EXERCISE",
+      "title": "Unit 14 exercise — first unchecked continuation on printed page 152"
+    },
+    {
+      "id": "14.11",
+      "startsAt": "power through a conductor to a load",
+      "title": "Alternating current basics — first unchecked continuation on printed page 158"
+    }
+  ],
+  "retireExercises": []
+}

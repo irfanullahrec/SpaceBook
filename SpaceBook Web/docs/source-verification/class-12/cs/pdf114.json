@@ -1,0 +1,277 @@
+{
+ "pdfPage": 114,
+ "sections": [
+  {
+   "id": "cs12-u7-text-1",
+   "title": "Unit 7 text (1)",
+   "headingUrdu": "یونٹ 7 — متن (1)",
+   "headingPashto": "۷ څپرکی — متن (1)",
+   "paras": [
+    {
+     "text": "7.1 Pointers",
+     "urdu": "7.1 پوائنٹرز",
+     "pashto": "۷.۱ پوائنټرونه"
+    },
+    {
+     "text": "Pointer is an important and powerful feature of C++ language, in which a variable points to another variable by holding its address.",
+     "urdu": "پوائنٹر C++ زبان کی ایک اہم اور طاقتور خصوصیت ہے جس میں ایک ویری ایبل دوسرے ویری ایبل کا پتہ رکھ کر اس کی طرف اشارہ کرتا ہے۔",
+     "pashto": "پوائنټر د C++ ژبې مهمه او پیاوړې ځانګړتیا ده چې پکې یو متغیر د بل متغیر پته ساتي او هغه ته اشاره کوي."
+    },
+    {
+     "text": "7.1.1 Pointer",
+     "urdu": "7.1.1 پوائنٹر",
+     "pashto": "۷.۱.۱ پوائنټر"
+    },
+    {
+     "text": "A pointer is a variable that holds the address of another variable. In memory, each and every variable has an address assigned to it by the compiler and if a programmer wants to access that address, another variable called “pointer” is needed. For the declaration of pointer, an asterisk * symbol is used between the data type and the variable name.",
+     "urdu": "پوائنٹر ایک ویری ایبل ہے جو دوسرے ویری ایبل کا پتہ رکھتا ہے۔ میموری میں ہر ویری ایبل کو کمپائلر ایک پتہ دیتا ہے اور اگر پروگرامر اس پتے تک رسائی چاہے تو ’’پوائنٹر‘‘ نامی ایک اور ویری ایبل درکار ہوتا ہے۔ پوائنٹر کی ڈکلیریشن کے لیے ڈیٹا ٹائپ اور ویری ایبل کے نام کے درمیان ستارہ * نشان استعمال ہوتا ہے۔",
+     "pashto": "پوائنټر هغه متغیر دی چې د بل متغیر پته ساتي. په حافظه کې هر متغیر ته کمپایلر یوه پته ورکوي او که پروګرام جوړوونکی وغواړي هغې پتې ته لاسرسی ومومي، بل متغیر ته اړتیا ده چې \"پوائنټر\" بلل کېږي. د پوائنټر د اعلان لپاره د ډېټا ډول او د متغیر د نوم ترمنځ د ستوري * نښه کارېږي."
+    },
+    {
+     "text": "Consider the following pointers declaration of the integer variable marks, floating point variable percentage and character type variable name:",
+     "urdu": "integer ویری ایبل marks، فلوٹنگ پوائنٹ ویری ایبل percentage اور character قسم کے ویری ایبل name کے درج ذیل پوائنٹرز ڈکلیریشن پر غور کریں:",
+     "pashto": "د integer متغیر marks، اعشاري متغیر percentage او د character ډول متغیر name لاندې پوائنټر اعلانونو ته پام وکړئ:"
+    },
+    {
+     "text": "int * marks;\nfloat * percentage;\nchar * name;",
+     "urdu": "int * marks;\nfloat * percentage;\nchar * name;",
+     "pashto": "int * marks;\nfloat * percentage;\nchar * name;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "7.1.2 Memory addresses",
+     "urdu": "7.1.2 میموری پتے",
+     "pashto": "۷.۱.۲ د حافظې پتې"
+    },
+    {
+     "text": "When writing a program, variables need to be declared. Declaration of variable is simple and its declaration tells the computer to reserve space in memory for this variable. The name of the variable refers to that memory space. This task is automatically performed by the operating system during runtime. When variables are declared, programmers store data in these variables. Computer refers to that space using an address. Therefore, everything a programmer declares has an address. It is analogous to the home address of some person. Using pointer variables, one can easily find out the address of a particular variable.",
+     "urdu": "پروگرام لکھتے وقت ویری ایبلز ڈکلیئر کرنے ہوتے ہیں۔ ویری ایبل کی ڈکلیریشن آسان ہے اور یہ کمپیوٹر کو اس ویری ایبل کے لیے میموری میں جگہ مختص کرنے کا کہتی ہے۔ ویری ایبل کا نام اس میموری جگہ کی طرف اشارہ کرتا ہے۔ یہ کام رن ٹائم کے دوران آپریٹنگ سسٹم خود بخود کرتا ہے۔ ویری ایبلز ڈکلیئر ہونے کے بعد پروگرامرز ان میں ڈیٹا محفوظ کرتے ہیں۔ کمپیوٹر اس جگہ کا حوالہ پتے سے دیتا ہے۔ اس لیے پروگرامر جو کچھ ڈکلیئر کرتا ہے اس کا ایک پتہ ہوتا ہے۔ یہ کسی شخص کے گھر کے پتے کی طرح ہے۔ پوائنٹر ویری ایبلز کے ذریعے کسی خاص ویری ایبل کا پتہ آسانی سے معلوم کیا جا سکتا ہے۔",
+     "pashto": "د پروګرام د لیکلو پر مهال متغیرونه باید اعلان شي. د متغیر اعلان اسانه دی او کمپیوټر ته وايي چې د دې متغیر لپاره په حافظه کې ځای وساتي. د متغیر نوم هغه حافظه ځای ته اشاره کوي. دا کار د اجرا پر مهال عملیاتي سیسټم پخپله ترسره کوي. کله چې متغیرونه اعلان شي، پروګرام جوړوونکي پکې ډېټا ساتي. کمپیوټر هغه ځای ته د پتې له لارې اشاره کوي. نو هر هغه څه چې پروګرام جوړوونکی یې اعلانوي، یوه پته لري. دا د یوه کس د کور پتې ته ورته ده. د پوائنټر متغیرونو په مرسته د یوه ځانګړي متغیر پته په اسانۍ موندل کېدای شي."
+    },
+    {
+     "text": "7.1.3 Reference operator &",
+     "urdu": "7.1.3 حوالہ آپریٹر &",
+     "pashto": "۷.۱.۳ د حوالې چلونکی &"
+    },
+    {
+     "text": "As pointers are the variables which hold the addresses of other variables, therefore, while assigning addresses to them, a programmer needs a special type of operator called address-of operator that is denoted by ampersand & symbol. This provides address of a memory location.",
+     "urdu": "چونکہ پوائنٹرز وہ ویری ایبلز ہیں جو دوسرے ویری ایبلز کے پتے رکھتے ہیں، اس لیے انھیں پتے دیتے وقت پروگرامر کو ایک خاص قسم کے آپریٹر کی ضرورت ہوتی ہے جسے address-of آپریٹر کہتے ہیں اور جو ایمپرسینڈ & نشان سے ظاہر ہوتا ہے۔ یہ میموری مقام کا پتہ فراہم کرتا ہے۔",
+     "pashto": "څرنګه چې پوائنټرونه هغه متغیرونه دي چې د نورو متغیرونو پتې ساتي، نو هغوی ته د پتو ورکولو پر مهال پروګرام جوړوونکی یو ځانګړي چلونکي ته اړتیا لري چې address-of چلونکی بلل کېږي او د امپرسنډ & نښې ښودل کېږي. دا د حافظې د یوه ځای پته ورکوي."
+    },
+    {
+     "text": "To understand it, consider the following segment of code.",
+     "urdu": "اسے سمجھنے کے لیے کوڈ کے درج ذیل حصے پر غور کریں۔",
+     "pashto": "د دې د پوهېدو لپاره د کوډ لاندې برخې ته پام وکړئ."
+    },
+    {
+     "text": "float x = 5.5;\nfloat *fPointer;\nfPointer;= &x; // assign address of x to fPointer;",
+     "urdu": "float x = 5.5;\nfloat *fPointer;\nfPointer;= &x; // assign address of x to fPointer;",
+     "pashto": "float x = 5.5;\nfloat *fPointer;\nfPointer;= &x; // assign address of x to fPointer;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Conceptually, the above lines of code can be pictorially represented as:",
+     "urdu": "تصوراتی طور پر کوڈ کی اوپر کی لائنوں کو تصویری شکل میں یوں ظاہر کیا جا سکتا ہے:",
+     "pashto": "په مفهومي توګه د کوډ پورته کرښې په انځوریز ډول داسې ښودل کېدای شي:"
+    },
+    {
+     "text": "In this pictorial representation, the variable x has a float value 5.5 that is stored at location 1000. The pointer variable fPointer points to the variable x by holding its address 1000 as its value. In this case, if we want to print the value of the variable x it will display 5.5 but if we print the value of fPointer it will display 1000.",
+     "urdu": "اس تصویری نمائندگی میں ویری ایبل x کی float قدر 5.5 ہے جو مقام 1000 پر محفوظ ہے۔ پوائنٹر ویری ایبل fPointer اپنی قدر کے طور پر x کا پتہ 1000 رکھ کر ویری ایبل x کی طرف اشارہ کرتا ہے۔ اس صورت میں اگر ہم ویری ایبل x کی قدر پرنٹ کریں تو 5.5 دکھائے گا لیکن اگر fPointer کی قدر پرنٹ کریں تو 1000 دکھائے گا۔",
+     "pashto": "په دې انځوریزه ښودنه کې x متغیر د float ارزښت 5.5 لري چې په 1000 ځای کې ساتل شوی. د پوائنټر متغیر fPointer د خپل ارزښت په توګه د x پته 1000 ساتي او x متغیر ته اشاره کوي. په دې حالت کې که د x متغیر ارزښت چاپ کړو 5.5 به ښيي، خو که د fPointer ارزښت چاپ کړو 1000 به ښيي."
+    },
+    {
+     "text": "Consider the following program:",
+     "urdu": "درج ذیل پروگرام پر غور کریں:",
+     "pashto": "لاندې پروګرام ته پام وکړئ:"
+    },
+    {
+     "text": "/* use of pointer in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat x = 5.5;\nfloat *fPointer;\nfPointer= &x;\ncout << “The address of x= \"<<&x << endl;\ncout<< “The value of x= \"<<x<<endl;\ncout << “The value of fPointer = \"<< fPointer;\ngetch();\nreturn 0;\n}",
+     "urdu": "/* use of pointer in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat x = 5.5;\nfloat *fPointer;\nfPointer= &x;\ncout << “The address of x= \"<<&x << endl;\ncout<< “The value of x= \"<<x<<endl;\ncout << “The value of fPointer = \"<< fPointer;\ngetch();\nreturn 0;\n}",
+     "pashto": "/* use of pointer in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat x = 5.5;\nfloat *fPointer;\nfPointer= &x;\ncout << “The address of x= \"<<&x << endl;\ncout<< “The value of x= \"<<x<<endl;\ncout << “The value of fPointer = \"<< fPointer;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The address of x= 1000\nThe value of x= 5.5\nThe value of fPointer =1000",
+     "urdu": "The address of x= 1000\nThe value of x= 5.5\nThe value of fPointer =1000",
+     "pashto": "The address of x= 1000\nThe value of x= 5.5\nThe value of fPointer =1000",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This program gives some other output (address) on another computer depending upon the availability of the memory.",
+     "urdu": "یہ پروگرام میموری کی دستیابی کے مطابق کسی دوسرے کمپیوٹر پر کوئی اور آؤٹ پٹ (پتہ) دیتا ہے۔",
+     "pashto": "دا پروګرام د حافظې د شتون سره سم په بل کمپیوټر کې بله وتنه (پته) ورکوي."
+    }
+   ],
+   "theory": "7.1 Pointers\n\nPointer is an important and powerful feature of C++ language, in which a variable points to another variable by holding its address.\n\n7.1.1 Pointer\n\nA pointer is a variable that holds the address of another variable. In memory, each and every variable has an address assigned to it by the compiler and if a programmer wants to access that address, another variable called “pointer” is needed. For the declaration of pointer, an asterisk * symbol is used between the data type and the variable name.\n\nConsider the following pointers declaration of the integer variable marks, floating point variable percentage and character type variable name:\n\nint * marks;\nfloat * percentage;\nchar * name;\n\n7.1.2 Memory addresses\n\nWhen writing a program, variables need to be declared. Declaration of variable is simple and its declaration tells the computer to reserve space in memory for this variable. The name of the variable refers to that memory space. This task is automatically performed by the operating system during runtime. When variables are declared, programmers store data in these variables. Computer refers to that space using an address. Therefore, everything a programmer declares has an address. It is analogous to the home address of some person. Using pointer variables, one can easily find out the address of a particular variable.\n\n7.1.3 Reference operator &\n\nAs pointers are the variables which hold the addresses of other variables, therefore, while assigning addresses to them, a programmer needs a special type of operator called address-of operator that is denoted by ampersand & symbol. This provides address of a memory location.\n\nTo understand it, consider the following segment of code.\n\nfloat x = 5.5;\nfloat *fPointer;\nfPointer;= &x; // assign address of x to fPointer;\n\nConceptually, the above lines of code can be pictorially represented as:\n\nIn this pictorial representation, the variable x has a float value 5.5 that is stored at location 1000. The pointer variable fPointer points to the variable x by holding its address 1000 as its value. In this case, if we want to print the value of the variable x it will display 5.5 but if we print the value of fPointer it will display 1000.\n\nConsider the following program:\n\n/* use of pointer in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat x = 5.5;\nfloat *fPointer;\nfPointer= &x;\ncout << “The address of x= \"<<&x << endl;\ncout<< “The value of x= \"<<x<<endl;\ncout << “The value of fPointer = \"<< fPointer;\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nThe address of x= 1000\nThe value of x= 5.5\nThe value of fPointer =1000\n\nThis program gives some other output (address) on another computer depending upon the availability of the memory.",
+   "urdu": "7.1 پوائنٹرز\n\nپوائنٹر C++ زبان کی ایک اہم اور طاقتور خصوصیت ہے جس میں ایک ویری ایبل دوسرے ویری ایبل کا پتہ رکھ کر اس کی طرف اشارہ کرتا ہے۔\n\n7.1.1 پوائنٹر\n\nپوائنٹر ایک ویری ایبل ہے جو دوسرے ویری ایبل کا پتہ رکھتا ہے۔ میموری میں ہر ویری ایبل کو کمپائلر ایک پتہ دیتا ہے اور اگر پروگرامر اس پتے تک رسائی چاہے تو ’’پوائنٹر‘‘ نامی ایک اور ویری ایبل درکار ہوتا ہے۔ پوائنٹر کی ڈکلیریشن کے لیے ڈیٹا ٹائپ اور ویری ایبل کے نام کے درمیان ستارہ * نشان استعمال ہوتا ہے۔\n\ninteger ویری ایبل marks، فلوٹنگ پوائنٹ ویری ایبل percentage اور character قسم کے ویری ایبل name کے درج ذیل پوائنٹرز ڈکلیریشن پر غور کریں:\n\nint * marks;\nfloat * percentage;\nchar * name;\n\n7.1.2 میموری پتے\n\nپروگرام لکھتے وقت ویری ایبلز ڈکلیئر کرنے ہوتے ہیں۔ ویری ایبل کی ڈکلیریشن آسان ہے اور یہ کمپیوٹر کو اس ویری ایبل کے لیے میموری میں جگہ مختص کرنے کا کہتی ہے۔ ویری ایبل کا نام اس میموری جگہ کی طرف اشارہ کرتا ہے۔ یہ کام رن ٹائم کے دوران آپریٹنگ سسٹم خود بخود کرتا ہے۔ ویری ایبلز ڈکلیئر ہونے کے بعد پروگرامرز ان میں ڈیٹا محفوظ کرتے ہیں۔ کمپیوٹر اس جگہ کا حوالہ پتے سے دیتا ہے۔ اس لیے پروگرامر جو کچھ ڈکلیئر کرتا ہے اس کا ایک پتہ ہوتا ہے۔ یہ کسی شخص کے گھر کے پتے کی طرح ہے۔ پوائنٹر ویری ایبلز کے ذریعے کسی خاص ویری ایبل کا پتہ آسانی سے معلوم کیا جا سکتا ہے۔\n\n7.1.3 حوالہ آپریٹر &\n\nچونکہ پوائنٹرز وہ ویری ایبلز ہیں جو دوسرے ویری ایبلز کے پتے رکھتے ہیں، اس لیے انھیں پتے دیتے وقت پروگرامر کو ایک خاص قسم کے آپریٹر کی ضرورت ہوتی ہے جسے address-of آپریٹر کہتے ہیں اور جو ایمپرسینڈ & نشان سے ظاہر ہوتا ہے۔ یہ میموری مقام کا پتہ فراہم کرتا ہے۔\n\nاسے سمجھنے کے لیے کوڈ کے درج ذیل حصے پر غور کریں۔\n\nfloat x = 5.5;\nfloat *fPointer;\nfPointer;= &x; // assign address of x to fPointer;\n\nتصوراتی طور پر کوڈ کی اوپر کی لائنوں کو تصویری شکل میں یوں ظاہر کیا جا سکتا ہے:\n\nاس تصویری نمائندگی میں ویری ایبل x کی float قدر 5.5 ہے جو مقام 1000 پر محفوظ ہے۔ پوائنٹر ویری ایبل fPointer اپنی قدر کے طور پر x کا پتہ 1000 رکھ کر ویری ایبل x کی طرف اشارہ کرتا ہے۔ اس صورت میں اگر ہم ویری ایبل x کی قدر پرنٹ کریں تو 5.5 دکھائے گا لیکن اگر fPointer کی قدر پرنٹ کریں تو 1000 دکھائے گا۔\n\nدرج ذیل پروگرام پر غور کریں:\n\n/* use of pointer in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat x = 5.5;\nfloat *fPointer;\nfPointer= &x;\ncout << “The address of x= \"<<&x << endl;\ncout<< “The value of x= \"<<x<<endl;\ncout << “The value of fPointer = \"<< fPointer;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe address of x= 1000\nThe value of x= 5.5\nThe value of fPointer =1000\n\nیہ پروگرام میموری کی دستیابی کے مطابق کسی دوسرے کمپیوٹر پر کوئی اور آؤٹ پٹ (پتہ) دیتا ہے۔",
+   "pashto": "۷.۱ پوائنټرونه\n\nپوائنټر د C++ ژبې مهمه او پیاوړې ځانګړتیا ده چې پکې یو متغیر د بل متغیر پته ساتي او هغه ته اشاره کوي.\n\n۷.۱.۱ پوائنټر\n\nپوائنټر هغه متغیر دی چې د بل متغیر پته ساتي. په حافظه کې هر متغیر ته کمپایلر یوه پته ورکوي او که پروګرام جوړوونکی وغواړي هغې پتې ته لاسرسی ومومي، بل متغیر ته اړتیا ده چې \"پوائنټر\" بلل کېږي. د پوائنټر د اعلان لپاره د ډېټا ډول او د متغیر د نوم ترمنځ د ستوري * نښه کارېږي.\n\nد integer متغیر marks، اعشاري متغیر percentage او د character ډول متغیر name لاندې پوائنټر اعلانونو ته پام وکړئ:\n\nint * marks;\nfloat * percentage;\nchar * name;\n\n۷.۱.۲ د حافظې پتې\n\nد پروګرام د لیکلو پر مهال متغیرونه باید اعلان شي. د متغیر اعلان اسانه دی او کمپیوټر ته وايي چې د دې متغیر لپاره په حافظه کې ځای وساتي. د متغیر نوم هغه حافظه ځای ته اشاره کوي. دا کار د اجرا پر مهال عملیاتي سیسټم پخپله ترسره کوي. کله چې متغیرونه اعلان شي، پروګرام جوړوونکي پکې ډېټا ساتي. کمپیوټر هغه ځای ته د پتې له لارې اشاره کوي. نو هر هغه څه چې پروګرام جوړوونکی یې اعلانوي، یوه پته لري. دا د یوه کس د کور پتې ته ورته ده. د پوائنټر متغیرونو په مرسته د یوه ځانګړي متغیر پته په اسانۍ موندل کېدای شي.\n\n۷.۱.۳ د حوالې چلونکی &\n\nڅرنګه چې پوائنټرونه هغه متغیرونه دي چې د نورو متغیرونو پتې ساتي، نو هغوی ته د پتو ورکولو پر مهال پروګرام جوړوونکی یو ځانګړي چلونکي ته اړتیا لري چې address-of چلونکی بلل کېږي او د امپرسنډ & نښې ښودل کېږي. دا د حافظې د یوه ځای پته ورکوي.\n\nد دې د پوهېدو لپاره د کوډ لاندې برخې ته پام وکړئ.\n\nfloat x = 5.5;\nfloat *fPointer;\nfPointer;= &x; // assign address of x to fPointer;\n\nپه مفهومي توګه د کوډ پورته کرښې په انځوریز ډول داسې ښودل کېدای شي:\n\nپه دې انځوریزه ښودنه کې x متغیر د float ارزښت 5.5 لري چې په 1000 ځای کې ساتل شوی. د پوائنټر متغیر fPointer د خپل ارزښت په توګه د x پته 1000 ساتي او x متغیر ته اشاره کوي. په دې حالت کې که د x متغیر ارزښت چاپ کړو 5.5 به ښيي، خو که د fPointer ارزښت چاپ کړو 1000 به ښيي.\n\nلاندې پروګرام ته پام وکړئ:\n\n/* use of pointer in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat x = 5.5;\nfloat *fPointer;\nfPointer= &x;\ncout << “The address of x= \"<<&x << endl;\ncout<< “The value of x= \"<<x<<endl;\ncout << “The value of fPointer = \"<< fPointer;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe address of x= 1000\nThe value of x= 5.5\nThe value of fPointer =1000\n\nدا پروګرام د حافظې د شتون سره سم په بل کمپیوټر کې بله وتنه (پته) ورکوي.",
+   "theoryUrdu": "7.1 پوائنٹرز\n\nپوائنٹر C++ زبان کی ایک اہم اور طاقتور خصوصیت ہے جس میں ایک ویری ایبل دوسرے ویری ایبل کا پتہ رکھ کر اس کی طرف اشارہ کرتا ہے۔\n\n7.1.1 پوائنٹر\n\nپوائنٹر ایک ویری ایبل ہے جو دوسرے ویری ایبل کا پتہ رکھتا ہے۔ میموری میں ہر ویری ایبل کو کمپائلر ایک پتہ دیتا ہے اور اگر پروگرامر اس پتے تک رسائی چاہے تو ’’پوائنٹر‘‘ نامی ایک اور ویری ایبل درکار ہوتا ہے۔ پوائنٹر کی ڈکلیریشن کے لیے ڈیٹا ٹائپ اور ویری ایبل کے نام کے درمیان ستارہ * نشان استعمال ہوتا ہے۔\n\ninteger ویری ایبل marks، فلوٹنگ پوائنٹ ویری ایبل percentage اور character قسم کے ویری ایبل name کے درج ذیل پوائنٹرز ڈکلیریشن پر غور کریں:\n\nint * marks;\nfloat * percentage;\nchar * name;\n\n7.1.2 میموری پتے\n\nپروگرام لکھتے وقت ویری ایبلز ڈکلیئر کرنے ہوتے ہیں۔ ویری ایبل کی ڈکلیریشن آسان ہے اور یہ کمپیوٹر کو اس ویری ایبل کے لیے میموری میں جگہ مختص کرنے کا کہتی ہے۔ ویری ایبل کا نام اس میموری جگہ کی طرف اشارہ کرتا ہے۔ یہ کام رن ٹائم کے دوران آپریٹنگ سسٹم خود بخود کرتا ہے۔ ویری ایبلز ڈکلیئر ہونے کے بعد پروگرامرز ان میں ڈیٹا محفوظ کرتے ہیں۔ کمپیوٹر اس جگہ کا حوالہ پتے سے دیتا ہے۔ اس لیے پروگرامر جو کچھ ڈکلیئر کرتا ہے اس کا ایک پتہ ہوتا ہے۔ یہ کسی شخص کے گھر کے پتے کی طرح ہے۔ پوائنٹر ویری ایبلز کے ذریعے کسی خاص ویری ایبل کا پتہ آسانی سے معلوم کیا جا سکتا ہے۔\n\n7.1.3 حوالہ آپریٹر &\n\nچونکہ پوائنٹرز وہ ویری ایبلز ہیں جو دوسرے ویری ایبلز کے پتے رکھتے ہیں، اس لیے انھیں پتے دیتے وقت پروگرامر کو ایک خاص قسم کے آپریٹر کی ضرورت ہوتی ہے جسے address-of آپریٹر کہتے ہیں اور جو ایمپرسینڈ & نشان سے ظاہر ہوتا ہے۔ یہ میموری مقام کا پتہ فراہم کرتا ہے۔\n\nاسے سمجھنے کے لیے کوڈ کے درج ذیل حصے پر غور کریں۔\n\nfloat x = 5.5;\nfloat *fPointer;\nfPointer;= &x; // assign address of x to fPointer;\n\nتصوراتی طور پر کوڈ کی اوپر کی لائنوں کو تصویری شکل میں یوں ظاہر کیا جا سکتا ہے:\n\nاس تصویری نمائندگی میں ویری ایبل x کی float قدر 5.5 ہے جو مقام 1000 پر محفوظ ہے۔ پوائنٹر ویری ایبل fPointer اپنی قدر کے طور پر x کا پتہ 1000 رکھ کر ویری ایبل x کی طرف اشارہ کرتا ہے۔ اس صورت میں اگر ہم ویری ایبل x کی قدر پرنٹ کریں تو 5.5 دکھائے گا لیکن اگر fPointer کی قدر پرنٹ کریں تو 1000 دکھائے گا۔\n\nدرج ذیل پروگرام پر غور کریں:\n\n/* use of pointer in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat x = 5.5;\nfloat *fPointer;\nfPointer= &x;\ncout << “The address of x= \"<<&x << endl;\ncout<< “The value of x= \"<<x<<endl;\ncout << “The value of fPointer = \"<< fPointer;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe address of x= 1000\nThe value of x= 5.5\nThe value of fPointer =1000\n\nیہ پروگرام میموری کی دستیابی کے مطابق کسی دوسرے کمپیوٹر پر کوئی اور آؤٹ پٹ (پتہ) دیتا ہے۔",
+   "theoryPashto": "۷.۱ پوائنټرونه\n\nپوائنټر د C++ ژبې مهمه او پیاوړې ځانګړتیا ده چې پکې یو متغیر د بل متغیر پته ساتي او هغه ته اشاره کوي.\n\n۷.۱.۱ پوائنټر\n\nپوائنټر هغه متغیر دی چې د بل متغیر پته ساتي. په حافظه کې هر متغیر ته کمپایلر یوه پته ورکوي او که پروګرام جوړوونکی وغواړي هغې پتې ته لاسرسی ومومي، بل متغیر ته اړتیا ده چې \"پوائنټر\" بلل کېږي. د پوائنټر د اعلان لپاره د ډېټا ډول او د متغیر د نوم ترمنځ د ستوري * نښه کارېږي.\n\nد integer متغیر marks، اعشاري متغیر percentage او د character ډول متغیر name لاندې پوائنټر اعلانونو ته پام وکړئ:\n\nint * marks;\nfloat * percentage;\nchar * name;\n\n۷.۱.۲ د حافظې پتې\n\nد پروګرام د لیکلو پر مهال متغیرونه باید اعلان شي. د متغیر اعلان اسانه دی او کمپیوټر ته وايي چې د دې متغیر لپاره په حافظه کې ځای وساتي. د متغیر نوم هغه حافظه ځای ته اشاره کوي. دا کار د اجرا پر مهال عملیاتي سیسټم پخپله ترسره کوي. کله چې متغیرونه اعلان شي، پروګرام جوړوونکي پکې ډېټا ساتي. کمپیوټر هغه ځای ته د پتې له لارې اشاره کوي. نو هر هغه څه چې پروګرام جوړوونکی یې اعلانوي، یوه پته لري. دا د یوه کس د کور پتې ته ورته ده. د پوائنټر متغیرونو په مرسته د یوه ځانګړي متغیر پته په اسانۍ موندل کېدای شي.\n\n۷.۱.۳ د حوالې چلونکی &\n\nڅرنګه چې پوائنټرونه هغه متغیرونه دي چې د نورو متغیرونو پتې ساتي، نو هغوی ته د پتو ورکولو پر مهال پروګرام جوړوونکی یو ځانګړي چلونکي ته اړتیا لري چې address-of چلونکی بلل کېږي او د امپرسنډ & نښې ښودل کېږي. دا د حافظې د یوه ځای پته ورکوي.\n\nد دې د پوهېدو لپاره د کوډ لاندې برخې ته پام وکړئ.\n\nfloat x = 5.5;\nfloat *fPointer;\nfPointer;= &x; // assign address of x to fPointer;\n\nپه مفهومي توګه د کوډ پورته کرښې په انځوریز ډول داسې ښودل کېدای شي:\n\nپه دې انځوریزه ښودنه کې x متغیر د float ارزښت 5.5 لري چې په 1000 ځای کې ساتل شوی. د پوائنټر متغیر fPointer د خپل ارزښت په توګه د x پته 1000 ساتي او x متغیر ته اشاره کوي. په دې حالت کې که د x متغیر ارزښت چاپ کړو 5.5 به ښيي، خو که د fPointer ارزښت چاپ کړو 1000 به ښيي.\n\nلاندې پروګرام ته پام وکړئ:\n\n/* use of pointer in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat x = 5.5;\nfloat *fPointer;\nfPointer= &x;\ncout << “The address of x= \"<<&x << endl;\ncout<< “The value of x= \"<<x<<endl;\ncout << “The value of fPointer = \"<< fPointer;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe address of x= 1000\nThe value of x= 5.5\nThe value of fPointer =1000\n\nدا پروګرام د حافظې د شتون سره سم په بل کمپیوټر کې بله وتنه (پته) ورکوي.",
+   "content": "<p>7.1 Pointers</p><p>Pointer is an important and powerful feature of C++ language, in which a variable points to another variable by holding its address.</p><p>7.1.1 Pointer</p><p>A pointer is a variable that holds the address of another variable. In memory, each and every variable has an address assigned to it by the compiler and if a programmer wants to access that address, another variable called “pointer” is needed. For the declaration of pointer, an asterisk * symbol is used between the data type and the variable name.</p><p>Consider the following pointers declaration of the integer variable marks, floating point variable percentage and character type variable name:</p><p>int * marks;\nfloat * percentage;\nchar * name;</p><p>7.1.2 Memory addresses</p><p>When writing a program, variables need to be declared. Declaration of variable is simple and its declaration tells the computer to reserve space in memory for this variable. The name of the variable refers to that memory space. This task is automatically performed by the operating system during runtime. When variables are declared, programmers store data in these variables. Computer refers to that space using an address. Therefore, everything a programmer declares has an address. It is analogous to the home address of some person. Using pointer variables, one can easily find out the address of a particular variable.</p><p>7.1.3 Reference operator &amp;</p><p>As pointers are the variables which hold the addresses of other variables, therefore, while assigning addresses to them, a programmer needs a special type of operator called address-of operator that is denoted by ampersand &amp; symbol. This provides address of a memory location.</p><p>To understand it, consider the following segment of code.</p><p>float x = 5.5;\nfloat *fPointer;\nfPointer;= &amp;x; // assign address of x to fPointer;</p><p>Conceptually, the above lines of code can be pictorially represented as:</p><p>In this pictorial representation, the variable x has a float value 5.5 that is stored at location 1000. The pointer variable fPointer points to the variable x by holding its address 1000 as its value. In this case, if we want to print the value of the variable x it will display 5.5 but if we print the value of fPointer it will display 1000.</p><p>Consider the following program:</p><p>/* use of pointer in a program */\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nfloat x = 5.5;\nfloat *fPointer;\nfPointer= &amp;x;\ncout &lt;&lt; “The address of x= &quot;&lt;&lt;&amp;x &lt;&lt; endl;\ncout&lt;&lt; “The value of x= &quot;&lt;&lt;x&lt;&lt;endl;\ncout &lt;&lt; “The value of fPointer = &quot;&lt;&lt; fPointer;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>The address of x= 1000\nThe value of x= 5.5\nThe value of fPointer =1000</p><p>This program gives some other output (address) on another computer depending upon the availability of the memory.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-7-1"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-7-1",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 140\" role=\"img\" aria-label=\"Figure 7.1: Use of the Pointer Variable\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"510\" height=\"140\" fill=\"#ffffff\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">fPointer</text><rect x=\"30\" y=\"40\" width=\"160\" height=\"44\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"110\" y=\"68\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">1000</text><line x1=\"190\" y1=\"62\" x2=\"318\" y2=\"62\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"400\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">x</text><rect x=\"320\" y=\"40\" width=\"160\" height=\"44\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"400\" y=\"68\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">5.5</text><text x=\"400\" y=\"108\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">1000</text><text x=\"255.0\" y=\"132\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Figure 7.1: Use of the Pointer Variable</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 140\" role=\"img\" aria-label=\"شکل 7.1: پوائنٹر ویری ایبل کا استعمال\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"510\" height=\"140\" fill=\"#ffffff\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">fPointer</text><rect x=\"30\" y=\"40\" width=\"160\" height=\"44\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"110\" y=\"68\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">1000</text><line x1=\"190\" y1=\"62\" x2=\"318\" y2=\"62\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"400\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">x</text><rect x=\"320\" y=\"40\" width=\"160\" height=\"44\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"400\" y=\"68\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">5.5</text><text x=\"400\" y=\"108\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">1000</text><text x=\"255.0\" y=\"132\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">شکل 7.1: پوائنٹر ویری ایبل کا استعمال</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 140\" role=\"img\" aria-label=\"۷.۱ شکل: د پوائنټر متغیر کارونه\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"510\" height=\"140\" fill=\"#ffffff\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">fPointer</text><rect x=\"30\" y=\"40\" width=\"160\" height=\"44\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"110\" y=\"68\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">1000</text><line x1=\"190\" y1=\"62\" x2=\"318\" y2=\"62\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"400\" y=\"30\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">x</text><rect x=\"320\" y=\"40\" width=\"160\" height=\"44\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"400\" y=\"68\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">5.5</text><text x=\"400\" y=\"108\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">1000</text><text x=\"255.0\" y=\"132\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۷.۱ شکل: د پوائنټر متغیر کارونه</text></svg>",
+     "sourceWidthRatio": 3.642857142857143
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 114,
+     "printedPages": [
+      216,
+      217,
+      218
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 7 text (1)",
+   "sourcePageLabel": "PDF 114 · p. 216–217–218",
+   "sourceNote": "Figure 7.1 is reproduced as a coded diagram. The pointer program begins at the foot of p.217 and continues on p.218 (PDF115); it is given whole with its output and the note that follows it. The left edge of the p.217 code is lost in the binding gutter; the first characters are supplied from the identical lines of the full program.",
+   "unit": 7
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf114",
+   "unit": 7,
+   "printedPage": 217,
+   "description": "The p.217 segment prints “fPointer;= &x;” with a stray semicolon; the program strings open with curly quotes. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

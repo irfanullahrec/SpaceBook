@@ -1,0 +1,283 @@
+{
+ "pdfPage": 125,
+ "sections": [
+  {
+   "id": "cs12-u8-text-6",
+   "title": "Unit 8 text (6)",
+   "headingUrdu": "یونٹ 8 — متن (6)",
+   "headingPashto": "۸ څپرکی — متن (6)",
+   "paras": [
+    {
+     "text": "8.1.4 Data hiding",
+     "urdu": "8.1.4 ڈیٹا ہائیڈنگ",
+     "pashto": "۸.۱.۴ د ډېټا پټول"
+    },
+    {
+     "text": "Data Hiding is an important concept of C++ programming language in which the members of a class are protected against illegal access from outside the class. In C language, struct is used but it cannot hide data of its data members. Whereas in C++, we got the facility of hiding data using different access levels: private, protected, public in classes.",
+     "urdu": "ڈیٹا ہائیڈنگ C++ پروگرامنگ زبان کا ایک اہم تصور ہے جس میں کلاس کے اراکین کو کلاس کے باہر سے غیر قانونی رسائی سے محفوظ رکھا جاتا ہے۔ C زبان میں struct استعمال ہوتا ہے لیکن یہ اپنے ڈیٹا ممبرز کا ڈیٹا چھپا نہیں سکتا۔ جبکہ C++ میں ہمیں کلاسز میں مختلف رسائی کی سطحوں private، protected، public کے ذریعے ڈیٹا چھپانے کی سہولت ملی۔",
+     "pashto": "د ډېټا پټول د C++ پروګرامي ژبې مهم مفهوم دی چې پکې د ټولګي غړي له ټولګي بهر د ناقانونه لاسرسي څخه ساتل کېږي. په C ژبه کې struct کارېږي خو د خپلو ډېټا غړو ډېټا نه شي پټولی. په داسې حال کې چې په C++ کې موږ ته په ټولګیو کې د لاسرسي د بېلو کچو private، protected، public په مرسته د ډېټا د پټولو اسانتیا ترلاسه شوه."
+    },
+    {
+     "text": "Private data members and member functions can only be accessed by the members of the same class defining them and cannot be accessed from outside the class. Similarly, protected members (data members and member functions) of a class can be accessed only by the class defining them and its derived classes. By using friend function, the private and protected members (data members and member functions) of a class can also be accessed. Except these, private and protected members are not accessible anywhere else and thus provide the facility of data hiding. The public access specifier has global access and can be accessed within the same class, derived classes and main() program.",
+     "urdu": "private ڈیٹا ممبرز اور ممبر فنکشنز تک صرف انھیں بیان کرنے والی کلاس کے اراکین رسائی کر سکتے ہیں اور کلاس کے باہر سے رسائی نہیں ہو سکتی۔ اسی طرح کلاس کے protected اراکین (ڈیٹا ممبرز اور ممبر فنکشنز) تک صرف انھیں بیان کرنے والی کلاس اور اس کی ماخوذ کلاسز رسائی کر سکتی ہیں۔ friend فنکشن کے ذریعے کلاس کے private اور protected اراکین (ڈیٹا ممبرز اور ممبر فنکشنز) تک بھی رسائی ہو سکتی ہے۔ ان کے علاوہ private اور protected اراکین کہیں اور قابلِ رسائی نہیں اور یوں ڈیٹا ہائیڈنگ کی سہولت فراہم کرتے ہیں۔ public ایکسس اسپیسیفائر کی رسائی عالمی ہے اور اسی کلاس، ماخوذ کلاسز اور main() پروگرام میں رسائی ہو سکتی ہے۔",
+     "pashto": "private د ډېټا غړو او غړو فنکشنونو ته یوازې د هغه ټولګي غړي لاسرسی کولی شي چې تعریف کړي یې دي او له ټولګي بهر لاسرسی نه کېږي. همداراز د ټولګي protected غړو (د ډېټا غړي او غړي فنکشنونه) ته یوازې تعریفوونکی ټولګی او د هغه مشتق ټولګي لاسرسی کولی شي. د friend فنکشن په کارولو د ټولګي private او protected غړو ته هم لاسرسی کېدای شي. له دې پرته private او protected غړي بل هېڅ ځای د لاسرسي وړ نه دي او په دې توګه د ډېټا د پټولو اسانتیا برابروي. public د لاسرسي ټاکونکی نړیوال لاسرسی لري او په همغه ټولګي، مشتق ټولګیو او main() پروګرام کې لاسرسی ورته کېدای شي."
+    },
+    {
+     "text": "The following table shows the level of hiding members of a class.",
+     "urdu": "درج ذیل جدول کلاس کے اراکین کو چھپانے کی سطح دکھاتا ہے۔",
+     "pashto": "لاندې جدول د ټولګي د غړو د پټولو کچه ښيي."
+    },
+    {
+     "text": "Table 8.1: Access Specifiers and Data Hiding",
+     "urdu": "جدول 8.1: ایکسس اسپیسیفائرز اور ڈیٹا ہائیڈنگ",
+     "pashto": "۸.۱ جدول: د لاسرسي ټاکونکي او د ډېټا پټول"
+    },
+    {
+     "text": "The concept of data hiding, shown in table 8.1, will be demonstrated after the introduction of inheritance.",
+     "urdu": "جدول 8.1 میں دکھایا گیا ڈیٹا ہائیڈنگ کا تصور وراثت کے تعارف کے بعد واضح کیا جائے گا۔",
+     "pashto": "په ۸.۱ جدول کې ښودل شوی د ډېټا د پټولو مفهوم به د میراث له معرفي وروسته وښودل شي."
+    },
+    {
+     "text": "8.1.5 Constructor and Destructor",
+     "urdu": "8.1.5 کنسٹرکٹر اور ڈسٹرکٹر",
+     "pashto": "۸.۱.۵ جوړوونکی او ړنګوونکی"
+    },
+    {
+     "text": "Constructors and destructors are special member functions within the class with the same name as that of the class. The following sections discuss them in detail with the help of examples.",
+     "urdu": "کنسٹرکٹرز اور ڈسٹرکٹرز کلاس کے اندر خاص ممبر فنکشنز ہیں جن کا نام کلاس کے نام جیسا ہوتا ہے۔ درج ذیل حصے مثالوں کی مدد سے ان پر تفصیل سے بات کرتے ہیں۔",
+     "pashto": "جوړوونکي او ړنګوونکي د ټولګي دننه ځانګړي غړي فنکشنونه دي چې نوم یې د ټولګي له نوم سره یو دی. لاندې برخې د بېلګو په مرسته دا په تفصیل څېړي."
+    },
+    {
+     "text": "a. Constructor",
+     "urdu": "a. کنسٹرکٹر",
+     "pashto": "a. جوړوونکی"
+    },
+    {
+     "text": "A constructor is a special kind of member function that is executed automatically when an object of the class is instantiated. Constructors are typically used to initialize data members of the class to appropriate default values, or to allow the user to easily initialize those member variables to whatever values are desired.",
+     "urdu": "کنسٹرکٹر ایک خاص قسم کا ممبر فنکشن ہے جو کلاس کا آبجیکٹ بننے پر خود بخود چلتا ہے۔ کنسٹرکٹرز عموماً کلاس کے ڈیٹا ممبرز کو مناسب ڈیفالٹ قدریں دینے یا صارف کو ان ممبر ویری ایبلز کو حسبِ خواہش قدریں آسانی سے دینے کی اجازت دینے کے لیے استعمال ہوتے ہیں۔",
+     "pashto": "جوړوونکی یو ځانګړی ډول غړی فنکشن دی چې د ټولګي د شي د جوړېدو پر مهال پخپله اجرا کېږي. جوړوونکي عموماً د ټولګي د ډېټا غړو ته د مناسبو ډیفالټ ارزښتونو ورکولو، یا کاروونکي ته د دې اجازې لپاره کارېږي چې دې غړو متغیرونو ته په اسانۍ هر غوښتل شوی ارزښت ورکړي."
+    },
+    {
+     "text": "constructors have specific rules for naming:",
+     "urdu": "کنسٹرکٹرز کے نام رکھنے کے مخصوص اصول ہیں:",
+     "pashto": "جوړوونکي د نوم ایښودلو ځانګړي قواعد لري:"
+    },
+    {
+     "text": "Constructors have the same name as that of the class",
+     "urdu": "کنسٹرکٹرز کا نام کلاس کے نام جیسا ہوتا ہے",
+     "pashto": "جوړوونکي د ټولګي په څېر نوم لري"
+    },
+    {
+     "text": "Constructors have no return type (not even void)",
+     "urdu": "کنسٹرکٹرز کی کوئی ریٹرن ٹائپ نہیں ہوتی (void بھی نہیں)",
+     "pashto": "جوړوونکي د بېرته ورکړې ډول نه لري (حتی void هم نه)"
+    }
+   ],
+   "theory": "8.1.4 Data hiding\n\nData Hiding is an important concept of C++ programming language in which the members of a class are protected against illegal access from outside the class. In C language, struct is used but it cannot hide data of its data members. Whereas in C++, we got the facility of hiding data using different access levels: private, protected, public in classes.\n\nPrivate data members and member functions can only be accessed by the members of the same class defining them and cannot be accessed from outside the class. Similarly, protected members (data members and member functions) of a class can be accessed only by the class defining them and its derived classes. By using friend function, the private and protected members (data members and member functions) of a class can also be accessed. Except these, private and protected members are not accessible anywhere else and thus provide the facility of data hiding. The public access specifier has global access and can be accessed within the same class, derived classes and main() program.\n\nThe following table shows the level of hiding members of a class.\n\nTable 8.1: Access Specifiers and Data Hiding\n\nThe concept of data hiding, shown in table 8.1, will be demonstrated after the introduction of inheritance.\n\n8.1.5 Constructor and Destructor\n\nConstructors and destructors are special member functions within the class with the same name as that of the class. The following sections discuss them in detail with the help of examples.\n\na. Constructor\n\nA constructor is a special kind of member function that is executed automatically when an object of the class is instantiated. Constructors are typically used to initialize data members of the class to appropriate default values, or to allow the user to easily initialize those member variables to whatever values are desired.\n\nconstructors have specific rules for naming:\n\nConstructors have the same name as that of the class\n\nConstructors have no return type (not even void)",
+   "urdu": "8.1.4 ڈیٹا ہائیڈنگ\n\nڈیٹا ہائیڈنگ C++ پروگرامنگ زبان کا ایک اہم تصور ہے جس میں کلاس کے اراکین کو کلاس کے باہر سے غیر قانونی رسائی سے محفوظ رکھا جاتا ہے۔ C زبان میں struct استعمال ہوتا ہے لیکن یہ اپنے ڈیٹا ممبرز کا ڈیٹا چھپا نہیں سکتا۔ جبکہ C++ میں ہمیں کلاسز میں مختلف رسائی کی سطحوں private، protected، public کے ذریعے ڈیٹا چھپانے کی سہولت ملی۔\n\nprivate ڈیٹا ممبرز اور ممبر فنکشنز تک صرف انھیں بیان کرنے والی کلاس کے اراکین رسائی کر سکتے ہیں اور کلاس کے باہر سے رسائی نہیں ہو سکتی۔ اسی طرح کلاس کے protected اراکین (ڈیٹا ممبرز اور ممبر فنکشنز) تک صرف انھیں بیان کرنے والی کلاس اور اس کی ماخوذ کلاسز رسائی کر سکتی ہیں۔ friend فنکشن کے ذریعے کلاس کے private اور protected اراکین (ڈیٹا ممبرز اور ممبر فنکشنز) تک بھی رسائی ہو سکتی ہے۔ ان کے علاوہ private اور protected اراکین کہیں اور قابلِ رسائی نہیں اور یوں ڈیٹا ہائیڈنگ کی سہولت فراہم کرتے ہیں۔ public ایکسس اسپیسیفائر کی رسائی عالمی ہے اور اسی کلاس، ماخوذ کلاسز اور main() پروگرام میں رسائی ہو سکتی ہے۔\n\nدرج ذیل جدول کلاس کے اراکین کو چھپانے کی سطح دکھاتا ہے۔\n\nجدول 8.1: ایکسس اسپیسیفائرز اور ڈیٹا ہائیڈنگ\n\nجدول 8.1 میں دکھایا گیا ڈیٹا ہائیڈنگ کا تصور وراثت کے تعارف کے بعد واضح کیا جائے گا۔\n\n8.1.5 کنسٹرکٹر اور ڈسٹرکٹر\n\nکنسٹرکٹرز اور ڈسٹرکٹرز کلاس کے اندر خاص ممبر فنکشنز ہیں جن کا نام کلاس کے نام جیسا ہوتا ہے۔ درج ذیل حصے مثالوں کی مدد سے ان پر تفصیل سے بات کرتے ہیں۔\n\na. کنسٹرکٹر\n\nکنسٹرکٹر ایک خاص قسم کا ممبر فنکشن ہے جو کلاس کا آبجیکٹ بننے پر خود بخود چلتا ہے۔ کنسٹرکٹرز عموماً کلاس کے ڈیٹا ممبرز کو مناسب ڈیفالٹ قدریں دینے یا صارف کو ان ممبر ویری ایبلز کو حسبِ خواہش قدریں آسانی سے دینے کی اجازت دینے کے لیے استعمال ہوتے ہیں۔\n\nکنسٹرکٹرز کے نام رکھنے کے مخصوص اصول ہیں:\n\nکنسٹرکٹرز کا نام کلاس کے نام جیسا ہوتا ہے\n\nکنسٹرکٹرز کی کوئی ریٹرن ٹائپ نہیں ہوتی (void بھی نہیں)",
+   "pashto": "۸.۱.۴ د ډېټا پټول\n\nد ډېټا پټول د C++ پروګرامي ژبې مهم مفهوم دی چې پکې د ټولګي غړي له ټولګي بهر د ناقانونه لاسرسي څخه ساتل کېږي. په C ژبه کې struct کارېږي خو د خپلو ډېټا غړو ډېټا نه شي پټولی. په داسې حال کې چې په C++ کې موږ ته په ټولګیو کې د لاسرسي د بېلو کچو private، protected، public په مرسته د ډېټا د پټولو اسانتیا ترلاسه شوه.\n\nprivate د ډېټا غړو او غړو فنکشنونو ته یوازې د هغه ټولګي غړي لاسرسی کولی شي چې تعریف کړي یې دي او له ټولګي بهر لاسرسی نه کېږي. همداراز د ټولګي protected غړو (د ډېټا غړي او غړي فنکشنونه) ته یوازې تعریفوونکی ټولګی او د هغه مشتق ټولګي لاسرسی کولی شي. د friend فنکشن په کارولو د ټولګي private او protected غړو ته هم لاسرسی کېدای شي. له دې پرته private او protected غړي بل هېڅ ځای د لاسرسي وړ نه دي او په دې توګه د ډېټا د پټولو اسانتیا برابروي. public د لاسرسي ټاکونکی نړیوال لاسرسی لري او په همغه ټولګي، مشتق ټولګیو او main() پروګرام کې لاسرسی ورته کېدای شي.\n\nلاندې جدول د ټولګي د غړو د پټولو کچه ښيي.\n\n۸.۱ جدول: د لاسرسي ټاکونکي او د ډېټا پټول\n\nپه ۸.۱ جدول کې ښودل شوی د ډېټا د پټولو مفهوم به د میراث له معرفي وروسته وښودل شي.\n\n۸.۱.۵ جوړوونکی او ړنګوونکی\n\nجوړوونکي او ړنګوونکي د ټولګي دننه ځانګړي غړي فنکشنونه دي چې نوم یې د ټولګي له نوم سره یو دی. لاندې برخې د بېلګو په مرسته دا په تفصیل څېړي.\n\na. جوړوونکی\n\nجوړوونکی یو ځانګړی ډول غړی فنکشن دی چې د ټولګي د شي د جوړېدو پر مهال پخپله اجرا کېږي. جوړوونکي عموماً د ټولګي د ډېټا غړو ته د مناسبو ډیفالټ ارزښتونو ورکولو، یا کاروونکي ته د دې اجازې لپاره کارېږي چې دې غړو متغیرونو ته په اسانۍ هر غوښتل شوی ارزښت ورکړي.\n\nجوړوونکي د نوم ایښودلو ځانګړي قواعد لري:\n\nجوړوونکي د ټولګي په څېر نوم لري\n\nجوړوونکي د بېرته ورکړې ډول نه لري (حتی void هم نه)",
+   "theoryUrdu": "8.1.4 ڈیٹا ہائیڈنگ\n\nڈیٹا ہائیڈنگ C++ پروگرامنگ زبان کا ایک اہم تصور ہے جس میں کلاس کے اراکین کو کلاس کے باہر سے غیر قانونی رسائی سے محفوظ رکھا جاتا ہے۔ C زبان میں struct استعمال ہوتا ہے لیکن یہ اپنے ڈیٹا ممبرز کا ڈیٹا چھپا نہیں سکتا۔ جبکہ C++ میں ہمیں کلاسز میں مختلف رسائی کی سطحوں private، protected، public کے ذریعے ڈیٹا چھپانے کی سہولت ملی۔\n\nprivate ڈیٹا ممبرز اور ممبر فنکشنز تک صرف انھیں بیان کرنے والی کلاس کے اراکین رسائی کر سکتے ہیں اور کلاس کے باہر سے رسائی نہیں ہو سکتی۔ اسی طرح کلاس کے protected اراکین (ڈیٹا ممبرز اور ممبر فنکشنز) تک صرف انھیں بیان کرنے والی کلاس اور اس کی ماخوذ کلاسز رسائی کر سکتی ہیں۔ friend فنکشن کے ذریعے کلاس کے private اور protected اراکین (ڈیٹا ممبرز اور ممبر فنکشنز) تک بھی رسائی ہو سکتی ہے۔ ان کے علاوہ private اور protected اراکین کہیں اور قابلِ رسائی نہیں اور یوں ڈیٹا ہائیڈنگ کی سہولت فراہم کرتے ہیں۔ public ایکسس اسپیسیفائر کی رسائی عالمی ہے اور اسی کلاس، ماخوذ کلاسز اور main() پروگرام میں رسائی ہو سکتی ہے۔\n\nدرج ذیل جدول کلاس کے اراکین کو چھپانے کی سطح دکھاتا ہے۔\n\nجدول 8.1: ایکسس اسپیسیفائرز اور ڈیٹا ہائیڈنگ\n\nجدول 8.1 میں دکھایا گیا ڈیٹا ہائیڈنگ کا تصور وراثت کے تعارف کے بعد واضح کیا جائے گا۔\n\n8.1.5 کنسٹرکٹر اور ڈسٹرکٹر\n\nکنسٹرکٹرز اور ڈسٹرکٹرز کلاس کے اندر خاص ممبر فنکشنز ہیں جن کا نام کلاس کے نام جیسا ہوتا ہے۔ درج ذیل حصے مثالوں کی مدد سے ان پر تفصیل سے بات کرتے ہیں۔\n\na. کنسٹرکٹر\n\nکنسٹرکٹر ایک خاص قسم کا ممبر فنکشن ہے جو کلاس کا آبجیکٹ بننے پر خود بخود چلتا ہے۔ کنسٹرکٹرز عموماً کلاس کے ڈیٹا ممبرز کو مناسب ڈیفالٹ قدریں دینے یا صارف کو ان ممبر ویری ایبلز کو حسبِ خواہش قدریں آسانی سے دینے کی اجازت دینے کے لیے استعمال ہوتے ہیں۔\n\nکنسٹرکٹرز کے نام رکھنے کے مخصوص اصول ہیں:\n\nکنسٹرکٹرز کا نام کلاس کے نام جیسا ہوتا ہے\n\nکنسٹرکٹرز کی کوئی ریٹرن ٹائپ نہیں ہوتی (void بھی نہیں)",
+   "theoryPashto": "۸.۱.۴ د ډېټا پټول\n\nد ډېټا پټول د C++ پروګرامي ژبې مهم مفهوم دی چې پکې د ټولګي غړي له ټولګي بهر د ناقانونه لاسرسي څخه ساتل کېږي. په C ژبه کې struct کارېږي خو د خپلو ډېټا غړو ډېټا نه شي پټولی. په داسې حال کې چې په C++ کې موږ ته په ټولګیو کې د لاسرسي د بېلو کچو private، protected، public په مرسته د ډېټا د پټولو اسانتیا ترلاسه شوه.\n\nprivate د ډېټا غړو او غړو فنکشنونو ته یوازې د هغه ټولګي غړي لاسرسی کولی شي چې تعریف کړي یې دي او له ټولګي بهر لاسرسی نه کېږي. همداراز د ټولګي protected غړو (د ډېټا غړي او غړي فنکشنونه) ته یوازې تعریفوونکی ټولګی او د هغه مشتق ټولګي لاسرسی کولی شي. د friend فنکشن په کارولو د ټولګي private او protected غړو ته هم لاسرسی کېدای شي. له دې پرته private او protected غړي بل هېڅ ځای د لاسرسي وړ نه دي او په دې توګه د ډېټا د پټولو اسانتیا برابروي. public د لاسرسي ټاکونکی نړیوال لاسرسی لري او په همغه ټولګي، مشتق ټولګیو او main() پروګرام کې لاسرسی ورته کېدای شي.\n\nلاندې جدول د ټولګي د غړو د پټولو کچه ښيي.\n\n۸.۱ جدول: د لاسرسي ټاکونکي او د ډېټا پټول\n\nپه ۸.۱ جدول کې ښودل شوی د ډېټا د پټولو مفهوم به د میراث له معرفي وروسته وښودل شي.\n\n۸.۱.۵ جوړوونکی او ړنګوونکی\n\nجوړوونکي او ړنګوونکي د ټولګي دننه ځانګړي غړي فنکشنونه دي چې نوم یې د ټولګي له نوم سره یو دی. لاندې برخې د بېلګو په مرسته دا په تفصیل څېړي.\n\na. جوړوونکی\n\nجوړوونکی یو ځانګړی ډول غړی فنکشن دی چې د ټولګي د شي د جوړېدو پر مهال پخپله اجرا کېږي. جوړوونکي عموماً د ټولګي د ډېټا غړو ته د مناسبو ډیفالټ ارزښتونو ورکولو، یا کاروونکي ته د دې اجازې لپاره کارېږي چې دې غړو متغیرونو ته په اسانۍ هر غوښتل شوی ارزښت ورکړي.\n\nجوړوونکي د نوم ایښودلو ځانګړي قواعد لري:\n\nجوړوونکي د ټولګي په څېر نوم لري\n\nجوړوونکي د بېرته ورکړې ډول نه لري (حتی void هم نه)",
+   "content": "<p>8.1.4 Data hiding</p><p>Data Hiding is an important concept of C++ programming language in which the members of a class are protected against illegal access from outside the class. In C language, struct is used but it cannot hide data of its data members. Whereas in C++, we got the facility of hiding data using different access levels: private, protected, public in classes.</p><p>Private data members and member functions can only be accessed by the members of the same class defining them and cannot be accessed from outside the class. Similarly, protected members (data members and member functions) of a class can be accessed only by the class defining them and its derived classes. By using friend function, the private and protected members (data members and member functions) of a class can also be accessed. Except these, private and protected members are not accessible anywhere else and thus provide the facility of data hiding. The public access specifier has global access and can be accessed within the same class, derived classes and main() program.</p><p>The following table shows the level of hiding members of a class.</p><p>Table 8.1: Access Specifiers and Data Hiding</p><p>The concept of data hiding, shown in table 8.1, will be demonstrated after the introduction of inheritance.</p><p>8.1.5 Constructor and Destructor</p><p>Constructors and destructors are special member functions within the class with the same name as that of the class. The following sections discuss them in detail with the help of examples.</p><p>a. Constructor</p><p>A constructor is a special kind of member function that is executed automatically when an object of the class is instantiated. Constructors are typically used to initialize data members of the class to appropriate default values, or to allow the user to easily initialize those member variables to whatever values are desired.</p><p>constructors have specific rules for naming:</p><p>Constructors have the same name as that of the class</p><p>Constructors have no return type (not even void)</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-8-1"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      11,
+      12
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-table-8-1",
+     "headers": [
+      "Access",
+      "Public",
+      "Protected",
+      "Private"
+     ],
+     "rows": [
+      [
+       "Access of members (data, functions) in the same class",
+       "Yes",
+       "Yes",
+       "Yes"
+      ],
+      [
+       "Access of members (data, functions) in the derived classes",
+       "Yes",
+       "Yes",
+       "No"
+      ],
+      [
+       "Access of members (data, functions) from outside the class i.e. from main()",
+       "Yes",
+       "No",
+       "No"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "رسائی",
+        "Public",
+        "Protected",
+        "Private"
+       ],
+       "rows": [
+        [
+         "اسی کلاس میں اراکین (ڈیٹا، فنکشنز) تک رسائی",
+         "ہاں",
+         "ہاں",
+         "ہاں"
+        ],
+        [
+         "ماخوذ کلاسز میں اراکین (ڈیٹا، فنکشنز) تک رسائی",
+         "ہاں",
+         "ہاں",
+         "نہیں"
+        ],
+        [
+         "کلاس کے باہر یعنی main() سے اراکین (ڈیٹا، فنکشنز) تک رسائی",
+         "ہاں",
+         "نہیں",
+         "نہیں"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "لاسرسی",
+        "Public",
+        "Protected",
+        "Private"
+       ],
+       "rows": [
+        [
+         "په همغه ټولګي کې غړو (ډېټا، فنکشنونه) ته لاسرسی",
+         "هو",
+         "هو",
+         "هو"
+        ],
+        [
+         "په مشتق ټولګیو کې غړو (ډېټا، فنکشنونه) ته لاسرسی",
+         "هو",
+         "هو",
+         "نه"
+        ],
+        [
+         "له ټولګي بهر یعنې له main() غړو (ډېټا، فنکشنونه) ته لاسرسی",
+         "هو",
+         "نه",
+         "نه"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 125,
+     "printedPages": [
+      238,
+      239
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (6)",
+   "sourcePageLabel": "PDF 125 · p. 238–239",
+   "sourceNote": "The top of p.238 (end of the Access program, explanation and output) is recorded with PDF124. Table 8.1 is reproduced as a structured table; its faint printed caption is given below it.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf125",
+   "unit": 8,
+   "printedPage": 238,
+   "description": "p.238 “we got the facility of hiding data”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

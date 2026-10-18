@@ -1,0 +1,4179 @@
+{
+ "subject": "Biology",
+ "class": 12,
+ "textbook": "A Textbook of Biology for Grade XII (KPTBB / Leading Books Publisher, Academic Year 2020-21)",
+ "primarySource": "D:\\SpaceBook\\Books\\12th\\12th Biology\\PDF\\Biology Book for 12 class KPTBB.pdf",
+ "totalPdfPages": 386,
+ "alternateSources": {
+  "jpg": "D:\\SpaceBook\\Books\\12th\\12th Biology\\JPG\\Biology Book for 12 class KPTBB_page_001..386.jpg — one JPG per PDF page, same scans re-encoded (not a separate edition)",
+  "splitPdfs": "PDF\\..._page_part_01..10_of_10.pdf — image-only chapter splits of the same scan (45+42+40+39+39+40+41+39+39+31 = 395 pages incl. overlaps); used only to resolve unclear pages",
+  "word": "Word\\..._part_01..10.docx — OCR text of the same scan; supporting aid only"
+ },
+ "pageMapping": "Units 14-16: PDF = printed + 4. Unit 17: PDF 88-107 = printed 84-103; printed 104-106 missing. PDF 108-213 = printed + 1. PDF 214 repeats printed 212. PDF 215-308 = printed + 2. Printed 307-334 missing. From PDF 309: PDF = printed - 26 (PDF 309 = printed 335).",
+ "activeDataFile": "js/biology_12_data.js (BIOLOGY_12_DATA); verified chapter sources in docs/source-verification/class-12/biology/sections/chNN.json; rebuild with node tmp/biology12-source/build.js",
+ "renderPath": "app.js getSubjectChapterList(bio, cls12) -> renderScienceLessonSubContent(translations) -> renderScienceSourceLayout (sourceLayout + sourceBlocks SVG per language); Lessons tab uses section.text",
+ "tools": {
+  "validate": "node tmp/biology12-source/validate.js <chapter>",
+  "render": "node tmp/biology12-source/render_check.js <chapter>",
+  "figures": "python tmp/biology12-source/figs/fig*.py -> docs/source-verification/class-12/biology/figures/*.json",
+  "pageCache": "tmp/biology12-source/png/pNNN.png (100 dpi) and text/pNNN.txt"
+ },
+ "pages": {
+  "1": {
+   "pdfPage": 1,
+   "printedPage": null,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-front-matter"
+   ],
+   "evidence": "Cover rendered 100dpi and inspected: title, grade, publisher, board implemented as front matter; tree photo, emblems and watermark excluded.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "2": {
+   "pdfPage": 2,
+   "printedPage": null,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-front-matter"
+   ],
+   "evidence": "Credits page inspected: approval, authors, committee, reviewers, editor, supervision, academic year/contact implemented with Urdu/Pashto; previously absent.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "3": {
+   "pdfPage": 3,
+   "printedPage": null,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-front-matter"
+   ],
+   "evidence": "Contents (Sections 3-4, Units 14-24 with printed start pages) implemented; previously absent.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "4": {
+   "pdfPage": 4,
+   "printedPage": null,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-front-matter"
+   ],
+   "evidence": "Contents (Sections 5-6, Units 25-27) implemented.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "5": {
+   "pdfPage": 5,
+   "printedPage": 1,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-opener"
+   ],
+   "evidence": "Unit 14 opener key-concept list 14.1-14.7 implemented; decorative chest photo excluded.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "6": {
+   "pdfPage": 6,
+   "printedPage": 2,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-0",
+    "bio12-14-1",
+    "bio12-14-2",
+    "bio12-14-2-1"
+   ],
+   "evidence": "Intro paragraph, 14.1 with five-item list, 14.2, 14.2.1 first paragraph compared word-for-word; sentence fragments regrouped into source paragraphs with aligned Urdu/Pashto; list rendered as list.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "7": {
+   "pdfPage": 7,
+   "printedPage": 3,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-2-1",
+    "bio12-14-2-2"
+   ],
+   "evidence": "Fig 14.1 raster replaced by coded SVG with 6 labels (en/ur/ps); nose paragraph, 14.2.2 and FYI box verified.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "8": {
+   "pdfPage": 8,
+   "printedPage": 4,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-2-3",
+    "bio12-14-2-4",
+    "bio12-14-2-5",
+    "bio12-14-2-6"
+   ],
+   "evidence": "Larynx/trachea/bronchi/bronchioles text verified; \"air way\" corrected to printed \"airway\"; Fig 14.2 coded SVG (8 labels); tidbit and Skills boxes as boxed blocks.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "9": {
+   "pdfPage": 9,
+   "printedPage": 5,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-2-6",
+    "bio12-14-2-7",
+    "bio12-14-2-8"
+   ],
+   "evidence": "Bronchioles continuation, Fig 14.3 coded SVG (12 labels), 14.2.7 with tidbit (70-90m printed, note added), 14.2.8 start verified.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "10": {
+   "pdfPage": 10,
+   "printedPage": 6,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-2-8"
+   ],
+   "evidence": "Lungs paragraph, Fig 14.4 coded SVG (8 labels) moved to its printed position under 14.2.8, Skills and FYI surfactant boxes verified.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "11": {
+   "pdfPage": 11,
+   "printedPage": 7,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-2-8",
+    "bio12-14-3",
+    "bio12-14-4",
+    "bio12-14-4-1"
+   ],
+   "evidence": "Pleura paragraph, 14.3 with two bullet items, 14.4, 14.4.1 and FYI box (printed duplicate sentences preserved with note).",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "12": {
+   "pdfPage": 12,
+   "printedPage": 8,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-4-1"
+   ],
+   "evidence": "Skills box, breathing-centre paragraph, Inspiration heading and paragraph, Fig 14.5 coded SVG (inhalation/exhalation, 11 labels).",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "13": {
+   "pdfPage": 13,
+   "printedPage": 9,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-4-1",
+    "bio12-14-4-2",
+    "bio12-14-5",
+    "bio12-14-5-1"
+   ],
+   "evidence": "Expiration paragraph, 14.4.2, 14.5, 14.5.1 paragraphs; equation Hb + 4O2 coded as SVG (descriptive placeholder removed); Fig 14.6 coded SVG; editorial biology note added.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "14": {
+   "pdfPage": 14,
+   "printedPage": 10,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-5-1"
+   ],
+   "evidence": "Oxygen carrying capacity paragraphs and all numeric values checked; Fig 14.7 glass analogy coded (23/75/98 %).",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "15": {
+   "pdfPage": 15,
+   "printedPage": 11,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-5-1",
+    "bio12-14-5-2"
+   ],
+   "evidence": "Fig 14.8 coded (73/25/98 %); dissolved O2 paragraph; 14.5.2 opening, (i) heading, equations CO2+H2O and H2CO3 dissociation coded as SVG with carbonic anhydrase label.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "16": {
+   "pdfPage": 16,
+   "printedPage": 12,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-5-2"
+   ],
+   "evidence": "H+ buffering paragraph, oxyhaemoglobin equation with printed labels (incl. \"Oxgen\"), chloride shift paragraph with printed \"Cl-\", Fig 14.9 (a)/(b) coded reaction diagram.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "17": {
+   "pdfPage": 17,
+   "printedPage": 13,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-5-2"
+   ],
+   "evidence": "K+/Na+ paragraph restored to printed notation, Skills box, FYI pigments box, pH paragraph, (ii) carbaminohaemoglobin start verified.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "18": {
+   "pdfPage": 18,
+   "printedPage": 14,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-5-2",
+    "bio12-14-6",
+    "bio12-14-6-1"
+   ],
+   "evidence": "(ii) continuation, (iii), 14.6, 14.6.1 verified; Fig 14.10 haeme coded structure (rings A-D, Fe(II), substituents, O2, histidine).",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "19": {
+   "pdfPage": 19,
+   "printedPage": 15,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-6-2",
+    "bio12-14-7",
+    "bio12-14-7-1"
+   ],
+   "evidence": "Myoglobin + Fig 14.11 coded; 14.7 with Upper Respiratory Disorders heading; sinusitis paragraphs; Fig 14.12 coded (3 symptom labels).",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "20": {
+   "pdfPage": 20,
+   "printedPage": 16,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-7-1",
+    "bio12-14-7-2"
+   ],
+   "evidence": "Sinusitis symptom list (printed unmatched parenthesis kept, noted), treatment, 14.7.2 paragraphs, Fig 14.13 coded (3 labels), causes and symptom list.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "21": {
+   "pdfPage": 21,
+   "printedPage": 17,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-7-2",
+    "bio12-14-7-3"
+   ],
+   "evidence": "Remaining symptoms, otoscope FYI box with coded otoscope figure, treatment list, grommet FYI box; heading corrected to printed \"Lower Respiratory track Infections\".",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "22": {
+   "pdfPage": 22,
+   "printedPage": 18,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-7-3"
+   ],
+   "evidence": "Pneumonia causes, species list, complications, symptom bullets; Fig 14.14 coded (8 labels).",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "23": {
+   "pdfPage": 23,
+   "printedPage": 19,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-7-3",
+    "bio12-14-7-4"
+   ],
+   "evidence": "Mycoplasma bullet continuation, pneumonia treatment, TB paragraphs, tidbit, risk factors, symptoms, treatment.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "24": {
+   "pdfPage": 24,
+   "printedPage": 20,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-7-4",
+    "bio12-14-8"
+   ],
+   "evidence": "Fig 14.15 coded five-step TB panel (13 labels); prevention numbered list; 14.8 and 14.8.1 emphysema list and paragraph.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "25": {
+   "pdfPage": 25,
+   "printedPage": 21,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-8",
+    "bio12-14-8-2"
+   ],
+   "evidence": "Emphysema continuation, Fig \"4.16\" coded (printed numbering kept, noted), lung cancer paragraph and symptom list.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "26": {
+   "pdfPage": 26,
+   "printedPage": 22,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-8-2",
+    "bio12-14-8-3"
+   ],
+   "evidence": "Lung cancer treatment paragraph, Fig \"4.17\" coded, 14.8.3 list.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "27": {
+   "pdfPage": 27,
+   "printedPage": 23,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-14-skills-23"
+   ],
+   "evidence": "Skills box: final word resolved as \"man\" from scan; MDCAT third-party advertisement excluded.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "28": {
+   "pdfPage": 28,
+   "printedPage": 24,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "bio12-14-keypoints"
+   ],
+   "evidence": "Key points 1-10 compared word-for-word with existing aligned records; rendered as list.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "29": {
+   "pdfPage": 29,
+   "printedPage": 25,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "bio12-14-keypoints"
+   ],
+   "evidence": "Key points 11-17 compared word-for-word.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "30": {
+   "pdfPage": 30,
+   "printedPage": 26,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "cls12-bio-ch14.exercise.mcqs"
+   ],
+   "evidence": "MCQs i-vii and options compared word-for-word; book prints no answer key; SpaceBook answers remain labelled; page refs added.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "31": {
+   "pdfPage": 31,
+   "printedPage": 27,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch14.exercise"
+   ],
+   "evidence": "MCQs viii-x, 4 short and 4 long questions, STS items 1-2 verified; refs added; generic unreviewed MCQ bank removed from chapter record.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "32": {
+   "pdfPage": 32,
+   "printedPage": 28,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch14.exercise.activities",
+    "bio12-14-online"
+   ],
+   "evidence": "STS items 3-5 and Online Learning URLs verified.",
+   "recordedUtc": "2026-10-12T02:38:52+00:00"
+  },
+  "33": {
+   "pdfPage": 33,
+   "printedPage": 29,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-opener"
+   ],
+   "evidence": "Unit 15 opener key concepts 15.1-15.11 implemented (previously absent); decorative kidney photo excluded.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "34": {
+   "pdfPage": 34,
+   "printedPage": 30,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-0",
+    "bio12-15-1"
+   ],
+   "evidence": "Intro paragraph and 15.1 definitions regrouped into printed paragraphs; Fig 15.1 coded as feedback flowchart with printed note text (raster removed).",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "35": {
+   "pdfPage": 35,
+   "printedPage": 31,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-1",
+    "bio12-15-1-1",
+    "bio12-15-1-2",
+    "bio12-15-1-3"
+   ],
+   "evidence": "15.1 continuation, negative/positive/harmful feedback verified; Skills box boxed.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "36": {
+   "pdfPage": 36,
+   "printedPage": 32,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-2",
+    "bio12-15-2-1",
+    "bio12-15-2-2",
+    "bio12-15-2-3",
+    "bio12-15-3-1"
+   ],
+   "evidence": "15.2-15.2.3 verified; missing printed 15.3 main heading restored; 15.3.1 opening.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "37": {
+   "pdfPage": 37,
+   "printedPage": 33,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-3-1",
+    "bio12-15-3-2"
+   ],
+   "evidence": "Fresh water and marine paragraphs; FYI range hyphen and printed Mg++/Ca++ notation restored.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "38": {
+   "pdfPage": 38,
+   "printedPage": 34,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-3-2",
+    "bio12-15-3-3"
+   ],
+   "evidence": "Fig 15.2 coded (two fish panels, 15 labels incl. printed typos); terrestrial animals; Skills box; Fig 15.3 coded kangaroo rat.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "39": {
+   "pdfPage": 39,
+   "printedPage": 35,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-4"
+   ],
+   "evidence": "15.4 paragraphs verified; Fig 15.4 nitrogenous waste flowchart coded with structures of ammonia, urea, uric acid.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "40": {
+   "pdfPage": 40,
+   "printedPage": 36,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "bio12-15-4-1",
+    "bio12-15-4-2",
+    "bio12-15-4-3",
+    "bio12-15-5"
+   ],
+   "evidence": "Ammonia, urea, uric acid, FYI box and 15.5 opening compared word-for-word; text unchanged (layout regrouped only).",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "41": {
+   "pdfPage": 41,
+   "printedPage": 37,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-5-1"
+   ],
+   "evidence": "Kidney paragraphs; Fig 15.5 urinary system and Fig 15.6 kidney external/internal coded; tidbit verified.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "42": {
+   "pdfPage": 42,
+   "printedPage": 38,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-5-1",
+    "bio12-15-5-2",
+    "bio12-15-5-3",
+    "bio12-15-5-4",
+    "bio12-15-5-5",
+    "bio12-15-5-6"
+   ],
+   "evidence": "Ureters, bladder, urethra (\"2 - 3 cm\" as printed), nephron; Fig 15.7 coded with 9 labels.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "43": {
+   "pdfPage": 43,
+   "printedPage": 39,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-5-6",
+    "bio12-15-5-7",
+    "bio12-15-5-8"
+   ],
+   "evidence": "Renal corpuscle, renal tubule components split into printed bold headings; \"brush boarder\" restored; Fig 15.8 coded.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "44": {
+   "pdfPage": 44,
+   "printedPage": 40,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-5-8",
+    "bio12-15-5-9"
+   ],
+   "evidence": "Juxtamedullary paragraph (20-30% hyphen), blood supply paragraph, 15.5.9 opening, Ultrafiltration heading, Fig 15.9 coded.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "45": {
+   "pdfPage": 45,
+   "printedPage": 41,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-5-9"
+   ],
+   "evidence": "Selective reabsorption heading and paragraphs, Tubular Secretion heading; previously missing Fig 15.10 coded with key.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "46": {
+   "pdfPage": 46,
+   "printedPage": 42,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-5-9",
+    "bio12-15-5-10",
+    "bio12-15-6"
+   ],
+   "evidence": "Tubular secretion end, 15.5.10 sub-headings, 15.6 with numbered list.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "47": {
+   "pdfPage": 47,
+   "printedPage": 43,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-6-1",
+    "bio12-15-7",
+    "bio12-15-7-1"
+   ],
+   "evidence": "Causes list (printed \"vagina.)\"), 15.7, 15.7.1; Fig 15.11 coded.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "48": {
+   "pdfPage": 48,
+   "printedPage": 44,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-7-2",
+    "bio12-15-7-3",
+    "bio12-15-7-4"
+   ],
+   "evidence": "Percent ranges restored to printed hyphens; causes bullets; Fig 15.12 coded; 15.7.4 start (\"0.5cm\", \"1cm\" as printed).",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "49": {
+   "pdfPage": 49,
+   "printedPage": 45,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-7-4",
+    "bio12-15-8",
+    "bio12-15-8-1",
+    "bio12-15-8-2",
+    "bio12-15-8-3",
+    "bio12-15-8-4"
+   ],
+   "evidence": "PCNL continuation, Fig 15.13 staghorn stone coded, 15.8-15.8.4 verified.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "50": {
+   "pdfPage": 50,
+   "printedPage": 46,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-8-5",
+    "bio12-15-9",
+    "bio12-15-9-1"
+   ],
+   "evidence": "15.8.5, 15.9, peritoneal dialysis paragraphs; Fig 15.14 coded.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "51": {
+   "pdfPage": 51,
+   "printedPage": 47,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-9-1",
+    "bio12-15-9-2",
+    "bio12-15-10"
+   ],
+   "evidence": "Peritoneal advantages, haemodialysis; Fig 15.15 coded illustration and previously missing Fig 15.16 coded (11 labels); 15.10 opening.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "52": {
+   "pdfPage": 52,
+   "printedPage": 48,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-10",
+    "bio12-15-10-1"
+   ],
+   "evidence": "FYI transplantation history boxed; donor-recipient bullets; printed duplicate \"Fig: 15.14\" transplant figure coded, numbering noted.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "53": {
+   "pdfPage": 53,
+   "printedPage": 49,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-10-1",
+    "bio12-15-10-2",
+    "bio12-15-11"
+   ],
+   "evidence": "Third bullet, Fig 15.18 coded, risks paragraph, Skills box, 15.11 opening.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "54": {
+   "pdfPage": 54,
+   "printedPage": 50,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-11",
+    "bio12-15-11-1"
+   ],
+   "evidence": "Poikilotherm/homeotherm paragraphs, heat sources list, Fig 15.19 coded; 15.11.1 with printed \"strays to far\" restored.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "55": {
+   "pdfPage": 55,
+   "printedPage": 51,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-11-2",
+    "bio12-15-11-3",
+    "bio12-15-11-4"
+   ],
+   "evidence": "Heat loss, FYI (photo excluded), heat conservation (printed \"on end air\" restored), hypothalamus opening.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "56": {
+   "pdfPage": 56,
+   "printedPage": 52,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-11-4",
+    "bio12-15-11-5"
+   ],
+   "evidence": "Hypothalamus response bullets, Fig 15.20 coded, fever paragraph, DO YOU KNOW box.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "57": {
+   "pdfPage": 57,
+   "printedPage": 53,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "bio12-15-keypoints"
+   ],
+   "evidence": "Key points 1-15 compared; text unchanged except printed \"dispose off\".",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "58": {
+   "pdfPage": 58,
+   "printedPage": 54,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-15-keypoints"
+   ],
+   "evidence": "Key points 16-22; percent ranges restored to printed hyphens.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "59": {
+   "pdfPage": 59,
+   "printedPage": 55,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch15.exercise.mcqs"
+   ],
+   "evidence": "MCQs i-vii with options verified; option \"sweating.\" punctuation restored; page refs added.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "60": {
+   "pdfPage": 60,
+   "printedPage": 56,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "cls12-bio-ch15.exercise"
+   ],
+   "evidence": "MCQs viii-xi and short questions i-iv compared word-for-word; printed typos (molelcules, absorb) preserved.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "61": {
+   "pdfPage": 61,
+   "printedPage": 57,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "cls12-bio-ch15.exercise"
+   ],
+   "evidence": "Short questions v-x, extensive questions i-vii, STS item 1 compared word-for-word.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "62": {
+   "pdfPage": 62,
+   "printedPage": 58,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "cls12-bio-ch15.exercise.activities",
+    "bio12-15-online"
+   ],
+   "evidence": "STS item 2 and Online Learning URLs verified.",
+   "recordedUtc": "2026-10-12T02:46:37+00:00"
+  },
+  "63": {
+   "pdfPage": 63,
+   "printedPage": 59,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-opener"
+   ],
+   "evidence": "Unit 16 opener key concepts implemented (previously absent); decorative artwork excluded.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "64": {
+   "pdfPage": 64,
+   "printedPage": 60,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-0",
+    "bio12-16-1",
+    "bio12-16-1-1",
+    "bio12-16-1-2"
+   ],
+   "evidence": "Intro, 16.1, cartilage, bone opening regrouped to printed paragraphs; Fig 16.1 bone cells coded.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "65": {
+   "pdfPage": 65,
+   "printedPage": 61,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-1-2"
+   ],
+   "evidence": "Osteoblasts/osteocytes/osteoclast bold headings split; printed hyphen restored; composition of bone; Table 16.1 rebuilt as semantic table (en/ur/ps).",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "66": {
+   "pdfPage": 66,
+   "printedPage": 62,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-1-3"
+   ],
+   "evidence": "Main divisions paragraph; Fig 16.2 human skeleton coded with 22 printed labels.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "67": {
+   "pdfPage": 67,
+   "printedPage": 63,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-1-3"
+   ],
+   "evidence": "Tables 16.2 and 16.3 rebuilt as semantic tables in printed column order.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "68": {
+   "pdfPage": 68,
+   "printedPage": 64,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-1-3-axial"
+   ],
+   "evidence": "Axial skeleton, skull (\"difficultly\" restored), Fig 16.3 skull coded (12 labels), vertebral column, Fig 16.4 coded.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "69": {
+   "pdfPage": 69,
+   "printedPage": 65,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-1-3-axial",
+    "bio12-16-1-3-appendicular"
+   ],
+   "evidence": "Ribs paragraph, Fig 16.5 ribs coded (17 labels), appendicular skeleton sub-headings.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "70": {
+   "pdfPage": 70,
+   "printedPage": 66,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-1-4"
+   ],
+   "evidence": "Joints, structural classification, fibrous/cartilaginous/synovial labels split; Figs 16.6 and 16.7 coded.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "71": {
+   "pdfPage": 71,
+   "printedPage": 67,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-1-4",
+    "bio12-16-2-1"
+   ],
+   "evidence": "Figs 16.8 and 16.9 coded; hinge (\"permit\" restored) and ball-and-socket; missing 16.2 main heading restored; disc slip.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "72": {
+   "pdfPage": 72,
+   "printedPage": 68,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-2-1",
+    "bio12-16-2-2"
+   ],
+   "evidence": "Slipped disc factors, spondylosis, Fig 16.10 coded, sciatica, arthritis list, 16.2.2 start.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "73": {
+   "pdfPage": 73,
+   "printedPage": 69,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-2-2"
+   ],
+   "evidence": "Compound fracture, repair paragraph (\"stages;\" restored), hematoma and fibrocartilaginous callus bullets; Fig 16.11 four-stage repair coded.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "74": {
+   "pdfPage": 74,
+   "printedPage": 70,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-2-2",
+    "bio12-16-2-3"
+   ],
+   "evidence": "Callus continuation, bony callus and remodeling bullets, joint dislocation (\"Pain\", 'reduced', \"or tighten\" restored), sprain, Fig 16.12 coded.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "75": {
+   "pdfPage": 75,
+   "printedPage": 71,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-3",
+    "bio12-16-3-1"
+   ],
+   "evidence": "16.3 and types of muscle; Fig 16.13 coded; cardiac muscle start.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "76": {
+   "pdfPage": 76,
+   "printedPage": 72,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-3-1",
+    "bio12-16-3-2"
+   ],
+   "evidence": "Cardiac continuation, Fig 16.14 coded, smooth muscle, Fig 16.15 coded, 16.3.2 paragraphs.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "77": {
+   "pdfPage": 77,
+   "printedPage": 73,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-3-2"
+   ],
+   "evidence": "T-tubule/myoglobin paragraph (printed hyphen), Fig 16.16 coded (14 labels), myofibril and sarcomere paragraphs.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "78": {
+   "pdfPage": 78,
+   "printedPage": 74,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-3-2"
+   ],
+   "evidence": "Previously missing Fig 16.17 coded; thin/thick filaments; Muscles Contraction; printed \"Huxely\" restored with note.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "79": {
+   "pdfPage": 79,
+   "printedPage": 75,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-3-2"
+   ],
+   "evidence": "Previously missing Fig 16.18 coded; notch paragraph; recovery; control of contraction.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "80": {
+   "pdfPage": 80,
+   "printedPage": 76,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-3-2"
+   ],
+   "evidence": "Previously missing Fig 16.19 coded (a)/(b); motor unit paragraphs verified.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "81": {
+   "pdfPage": 81,
+   "printedPage": 77,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-3-2",
+    "bio12-16-3-5"
+   ],
+   "evidence": "Energy of contraction, cramps (\"I.\" numbering), Fig 16.20 coded.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "82": {
+   "pdfPage": 82,
+   "printedPage": 78,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "bio12-16-3-5"
+   ],
+   "evidence": "Muscle fatigue, tetany, tetanus compared word-for-word; Fig 16.21 coded.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "83": {
+   "pdfPage": 83,
+   "printedPage": 79,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-16-keypoints"
+   ],
+   "evidence": "Key points 1-18 compared; printed \"fibre..\" restored.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "84": {
+   "pdfPage": 84,
+   "printedPage": 80,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "bio12-16-keypoints"
+   ],
+   "evidence": "Key points 19-23 compared word-for-word.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "85": {
+   "pdfPage": 85,
+   "printedPage": 81,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch16.exercise.mcqs"
+   ],
+   "evidence": "MCQs i-vii verified; printed Ca⁺² notation, stray \"muscle\" and \"the the\" restored; refs added.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "86": {
+   "pdfPage": 86,
+   "printedPage": 82,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "cls12-bio-ch16.exercise"
+   ],
+   "evidence": "MCQ viii, short questions (printed gap at iii recorded), long questions i-vii, Analyzing and Interpreting items compared.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "87": {
+   "pdfPage": 87,
+   "printedPage": 83,
+   "status": "verified_unchanged",
+   "recordIds": [
+    "cls12-bio-ch16.exercise.activities",
+    "bio12-16-online"
+   ],
+   "evidence": "Initiating and Planning, STS items and Online Learning URLs verified.",
+   "recordedUtc": "2026-10-12T02:54:05+00:00"
+  },
+  "88": {
+   "pdfPage": 88,
+   "printedPage": 84,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-opener"
+   ],
+   "evidence": "Unit 17 opener with key concepts 17.1-17.8 implemented (previously absent).",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "89": {
+   "pdfPage": 89,
+   "printedPage": 85,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-0",
+    "bio12-17-1",
+    "bio12-17-1-1"
+   ],
+   "evidence": "Intro, 17.1 with three bold bullets, 17.1.1 and receptor classification as list; Fig 17.1 coded.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "90": {
+   "pdfPage": 90,
+   "printedPage": 86,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-1-1",
+    "bio12-17-1-2",
+    "bio12-17-1-3",
+    "bio12-17-2"
+   ],
+   "evidence": "Thermoreceptors/nociceptors, Fig 17.2 coded, 17.1.2, 17.1.3, 17.2 paragraphs regrouped.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "91": {
+   "pdfPage": 91,
+   "printedPage": 87,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-2"
+   ],
+   "evidence": "Fig 17.3 neuron coded (9 labels), myelin paragraphs, neuron types and Fig 17.4 coded.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "92": {
+   "pdfPage": 92,
+   "printedPage": 88,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-2-1",
+    "bio12-17-2-2",
+    "bio12-17-2-3"
+   ],
+   "evidence": "Sensory/associative/motor neurons verified; Fig 17.5 coded (13 labels).",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "93": {
+   "pdfPage": 93,
+   "printedPage": 89,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-2-4"
+   ],
+   "evidence": "Reflex arc paragraphs, printed stray \", ,\" kept; Fig 17.6 five-step reflex arc coded.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "94": {
+   "pdfPage": 94,
+   "printedPage": 90,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-3"
+   ],
+   "evidence": "Nerve impulse paragraphs, FYI channels box, RMP/AMP bullet list; Fig 17.7 coded.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "95": {
+   "pdfPage": 95,
+   "printedPage": 91,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-3-1",
+    "bio12-17-3-2"
+   ],
+   "evidence": "Resting potential (-70 mV hyphen as printed), Na+/K+ distribution; Fig 17.8 coded with all concentrations.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "96": {
+   "pdfPage": 96,
+   "printedPage": 92,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-3-3",
+    "bio12-17-3-4",
+    "bio12-17-3-5"
+   ],
+   "evidence": "Negative organic ions, K+ leakage, active potential (\"pervious\" as printed); Fig 17.9 coded.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "97": {
+   "pdfPage": 97,
+   "printedPage": 93,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-3-6",
+    "bio12-17-3-7"
+   ],
+   "evidence": "Threshold stimulus; Fig 17.10 action-potential graph coded to scale; Na+ influx (\"Na gates\" as printed).",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "98": {
+   "pdfPage": 98,
+   "printedPage": 94,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-3-8",
+    "bio12-17-3-9",
+    "bio12-17-4"
+   ],
+   "evidence": "Refractory period, impulse types list and run-in headings, Fig 17.11 coded, speed bullets (\"salutatory\" as printed), 17.4 start.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "99": {
+   "pdfPage": 99,
+   "printedPage": 95,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-4",
+    "bio12-17-4-1",
+    "bio12-17-4-2",
+    "bio12-17-4-3"
+   ],
+   "evidence": "Synapse types as list, electrical/chemical synapses, transmission paragraphs; Fig 17.12 coded.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "100": {
+   "pdfPage": 100,
+   "printedPage": 96,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-4-3",
+    "bio12-17-4-4"
+   ],
+   "evidence": "EPSP/IPSP and clearance paragraphs, Fig 17.13 coded, neurotransmitters.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "101": {
+   "pdfPage": 101,
+   "printedPage": 97,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-5",
+    "bio12-17-5-1",
+    "bio12-17-5-2",
+    "bio12-17-5-3"
+   ],
+   "evidence": "17.5-17.5.3 verified; Fig 17.14 division flowchart coded with all 11 boxes.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "102": {
+   "pdfPage": 102,
+   "printedPage": 98,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-5-3",
+    "bio12-17-5-4"
+   ],
+   "evidence": "Skeleton/meninges/CSF run-in headings, Fig 17.15 coded, brain structure and forebrain.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "103": {
+   "pdfPage": 103,
+   "printedPage": 99,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-5-4"
+   ],
+   "evidence": "Cerebrum, diencephalon paragraphs, Fig 17.16 (a)(b) coded, midbrain run-in heading.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "104": {
+   "pdfPage": 104,
+   "printedPage": 100,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-5-4"
+   ],
+   "evidence": "Hindbrain run-in heading; Figs 17.17, 17.18, 17.19 coded; medulla paragraph.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "105": {
+   "pdfPage": 105,
+   "printedPage": 101,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-5-4-spinal"
+   ],
+   "evidence": "Spinal cord paragraphs, Fig 17.20 coded, functions restored as printed bullets.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "106": {
+   "pdfPage": 106,
+   "printedPage": 102,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-5-4-spinal",
+    "bio12-17-5-4-pns"
+   ],
+   "evidence": "Fig 17.21 coded; fourth function bullet; PNS, ganglia, nerves run-in headings and nerve-type bullets restored.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "107": {
+   "pdfPage": 107,
+   "printedPage": 103,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-5-4-pns",
+    "bio12-17-5-5",
+    "bio12-17-5-6"
+   ],
+   "evidence": "Spinal and cranial nerves, Fig 17.22 coded, somatic and autonomic nervous system.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "108": {
+   "pdfPage": 108,
+   "printedPage": 107,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-7",
+    "bio12-17-7-1",
+    "bio12-17-7-2"
+   ],
+   "evidence": "Single portrait page on landscape canvas. FYI pain receptors, 17.7, heroine (\"infraction\" as printed), Fig 17.26 coded, cannabis start. Printed pp.104-106 absent before this page (see unresolved).",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "109": {
+   "pdfPage": 109,
+   "printedPage": 108,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-7-2",
+    "bio12-17-7-3"
+   ],
+   "evidence": "Hashish, Fig 17.27 coded, cannabis medical/abuse, nicotine with printed punctuation.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "110": {
+   "pdfPage": 110,
+   "printedPage": 109,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-7-4",
+    "bio12-17-7-5"
+   ],
+   "evidence": "Alcohols and inhalants (\"mind-alerting\" as printed).",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "111": {
+   "pdfPage": 111,
+   "printedPage": 110,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-8",
+    "bio12-17-8-1"
+   ],
+   "evidence": "Section 17.8 and stroke rebuilt from scan with new Urdu/Pashto (earlier text merged/garbled, no translations); ACT F.A.S.T! box coded.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "112": {
+   "pdfPage": 112,
+   "printedPage": 111,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-8-2",
+    "bio12-17-8-3"
+   ],
+   "evidence": "Meningitis with symptoms/treatment, Fig 17.28 coded; brain tumors and symptoms, new translations.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "113": {
+   "pdfPage": 113,
+   "printedPage": 112,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-8-3",
+    "bio12-17-8-headache",
+    "bio12-17-8-alzheimer"
+   ],
+   "evidence": "Treatments, headache, Fig 17.29 coded, Alzheimer signs and symptoms, new translations.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "114": {
+   "pdfPage": 114,
+   "printedPage": 113,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-8-alzheimer"
+   ],
+   "evidence": "Fig 17.30 coded; causes and risk factors with new translations.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "115": {
+   "pdfPage": 115,
+   "printedPage": 114,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-keypoints"
+   ],
+   "evidence": "Key points rebuilt as a list from scan (earlier text was merged into 17.8.3) with new Urdu/Pashto.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "116": {
+   "pdfPage": 116,
+   "printedPage": 115,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-17-keypoints"
+   ],
+   "evidence": "Remaining key points; clipped \"ensory\" preserved.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "117": {
+   "pdfPage": 117,
+   "printedPage": 116,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch17.exercise.mcqs"
+   ],
+   "evidence": "Seven printed MCQs rebuilt word-for-word (earlier generic placeholder MCQs removed); answers labelled SpaceBook learning answers.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "118": {
+   "pdfPage": 118,
+   "printedPage": 117,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch17.exercise"
+   ],
+   "evidence": "Ten short and five extensive questions, skills and interpreting activities rebuilt; each points to its source section since no answers are printed.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "119": {
+   "pdfPage": 119,
+   "printedPage": 118,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch17.exercise.activities",
+    "bio12-17-online"
+   ],
+   "evidence": "STS items and Online Learning URLs.",
+   "recordedUtc": "2026-10-12T03:07:48+00:00"
+  },
+  "120": {
+   "pdfPage": 120,
+   "printedPage": 119,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-opener"
+   ],
+   "evidence": "Unit 18 opener key concepts implemented (previously absent).",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "121": {
+   "pdfPage": 121,
+   "printedPage": 120,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-0",
+    "bio12-18-1",
+    "bio12-18-1-1"
+   ],
+   "evidence": "Earlier summarised paraphrase replaced with full printed text: intro, 18.1, 18.1.1 with steroid/tyrosine/protein headings and goblet-cell FYI box (coded figure); new Urdu/Pashto.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "122": {
+   "pdfPage": 122,
+   "printedPage": 121,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-1-1",
+    "bio12-18-2",
+    "bio12-18-2-2"
+   ],
+   "evidence": "Proteins paragraph end, 18.2, 18.2.2 pituitary; Fig 18.1 coded with 11 gland labels; anterior pituitary opening.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "123": {
+   "pdfPage": 123,
+   "printedPage": 122,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-2-2"
+   ],
+   "evidence": "Tropic hormones, GH, dwarfism, gigantism/acromegaly; Figs 18.2 a/b coded; TRF/TSH; ACTH and FSH bullets.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "124": {
+   "pdfPage": 124,
+   "printedPage": 123,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-2-2"
+   ],
+   "evidence": "LH and prolactin bullets, intermediate lobe, posterior lobe, ADH, Fig 18.3 coded, oxytocin and letdown reflex.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "125": {
+   "pdfPage": 125,
+   "printedPage": 124,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-2-3"
+   ],
+   "evidence": "Thyroid, T3/T4 (subscripts restored from OCR errors), physiological effects, Fig 18.4 coded, hyperthyroidism, Fig 18.5 coded, hypothyroidism.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "126": {
+   "pdfPage": 126,
+   "printedPage": 125,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-2-3"
+   ],
+   "evidence": "Iodine paragraph, Fig 18.6 coded, goiter, cretinism, myxedema, calcitonin paragraphs (Ca notation as printed).",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "127": {
+   "pdfPage": 127,
+   "printedPage": 126,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-2-4",
+    "bio12-18-2-5"
+   ],
+   "evidence": "Parathyroid with Fig 18.7 coded, over/under secretion; pancreas double gland, islets, insulin bullets begin.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "128": {
+   "pdfPage": 128,
+   "printedPage": 127,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-2-5"
+   ],
+   "evidence": "Insulin bullets end, Fig 18.8 coded, diabetes paragraph with three cardinal signs list, hypoglycemia, glucagon start.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "129": {
+   "pdfPage": 129,
+   "printedPage": 128,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-2-5",
+    "bio12-18-2-6",
+    "bio12-18-2-7"
+   ],
+   "evidence": "Glucagon bullets, adrenal glands, cortex and medulla, Fig 18.9 coded, gonads and ovaries.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "130": {
+   "pdfPage": 130,
+   "printedPage": 129,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-2-7",
+    "bio12-18-3",
+    "bio12-18-3-1"
+   ],
+   "evidence": "Ovaries end, testes, 18.3, negative feedback; Fig 18.10 feedback loop coded.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "131": {
+   "pdfPage": 131,
+   "printedPage": 130,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-3-1",
+    "bio12-18-3-2"
+   ],
+   "evidence": "Glucagon paragraph, positive feedback paragraphs, Fig 18.11 coded.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "132": {
+   "pdfPage": 132,
+   "printedPage": 131,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-18-keypoints"
+   ],
+   "evidence": "Key points rebuilt as list (earlier merged into 18.3.2) with Urdu/Pashto; keyPoints array synchronised.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "133": {
+   "pdfPage": 133,
+   "printedPage": 132,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch18.exercise.mcqs"
+   ],
+   "evidence": "MCQs i-vii rebuilt word-for-word with options (earlier malformed); answers labelled SpaceBook learning answers.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "134": {
+   "pdfPage": 134,
+   "printedPage": 133,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch18.exercise",
+    "bio12-18-online"
+   ],
+   "evidence": "MCQs viii-ix, five short and five long questions, two activities, Online Learning URLs.",
+   "recordedUtc": "2026-10-12T03:16:45+00:00"
+  },
+  "135": {
+   "pdfPage": 135,
+   "printedPage": 134,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-opener"
+   ],
+   "evidence": "Unit 19 opener key concepts implemented (previously absent).",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "136": {
+   "pdfPage": 136,
+   "printedPage": 135,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-0",
+    "bio12-19-1"
+   ],
+   "evidence": "Earlier summarised paraphrase replaced with full printed text: intro, 19.1.1, 19.1.2 with Fig 19.1 coded, 19.1.3 start; new Urdu/Pashto.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "137": {
+   "pdfPage": 137,
+   "printedPage": 136,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-1"
+   ],
+   "evidence": "Biological clocks, hibernation, Fig 19.2 coded, tropics, circadian rhythms, diurnal/nocturnal paragraphs.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "138": {
+   "pdfPage": 138,
+   "printedPage": 137,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-1"
+   ],
+   "evidence": "Biological clocks and bee navigation experiment; Fig 19.3 coded with polarised-light note text.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "139": {
+   "pdfPage": 139,
+   "printedPage": 138,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-2"
+   ],
+   "evidence": "Innate behaviour, four characteristics list, examples, Fig 19.4 coded, five-property numbered list.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "140": {
+   "pdfPage": 140,
+   "printedPage": 139,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-2",
+    "bio12-19-2-1"
+   ],
+   "evidence": "Genetic change paragraph, 19.2.1 reflexes and patellar reflex; Fig 19.5 coded with 9 labels.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "141": {
+   "pdfPage": 141,
+   "printedPage": 140,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-2-1",
+    "bio12-19-2-2",
+    "bio12-19-2-3"
+   ],
+   "evidence": "Startle/escape reflexes, orientation behaviours with kinesis/taxis headings, Fig 19.6 coded, tropic movements.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "142": {
+   "pdfPage": 142,
+   "printedPage": 141,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-2-3",
+    "bio12-19-3",
+    "bio12-19-3-1",
+    "bio12-19-3-2"
+   ],
+   "evidence": "Roots sentence, learning behaviour numbered list, habituation, imprinting, Fig 19.7 coded.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "143": {
+   "pdfPage": 143,
+   "printedPage": 142,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-3-2",
+    "bio12-19-3-3",
+    "bio12-19-3-4"
+   ],
+   "evidence": "Lorenz goslings, classical conditioning (printed missing term recorded), operant learning paragraphs.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "144": {
+   "pdfPage": 144,
+   "printedPage": 143,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-3-4",
+    "bio12-19-3-5"
+   ],
+   "evidence": "Skinner box paragraph, Fig 19.8 coded with 10 labels, shaping, insight learning, Fig 19.9 coded.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "145": {
+   "pdfPage": 145,
+   "printedPage": 144,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-3-5",
+    "bio12-19-4",
+    "bio12-19-4-1",
+    "bio12-19-4-2"
+   ],
+   "evidence": "Chimpanzee sentence, social behaviour with Fig 19.10 coded, intraspecific interaction, aggression.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "146": {
+   "pdfPage": 146,
+   "printedPage": 145,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-4-2",
+    "bio12-19-4-3"
+   ],
+   "evidence": "Aggression functions and agonistic behaviour, Fig 19.11 coded, territorial behaviour, spider monkeys.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "147": {
+   "pdfPage": 147,
+   "printedPage": 146,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-4-3",
+    "bio12-19-4-4",
+    "bio12-19-4-5"
+   ],
+   "evidence": "Spider monkey troops, dominance hierarchies, altruistic behaviour, Fig 19.12 coded.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "148": {
+   "pdfPage": 148,
+   "printedPage": 147,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-4-5"
+   ],
+   "evidence": "Fig 19.13 coded (drone/queen/worker); altruism in honeybees.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "149": {
+   "pdfPage": 149,
+   "printedPage": 148,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-19-keypoints"
+   ],
+   "evidence": "Key points rebuilt as list (16 items) with Urdu/Pashto; keyPoints array synchronised.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "150": {
+   "pdfPage": 150,
+   "printedPage": 149,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch19.exercise"
+   ],
+   "evidence": "Five MCQs, five short questions and two analyzing items rebuilt word-for-word.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "151": {
+   "pdfPage": 151,
+   "printedPage": 150,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch19.exercise.activities",
+    "bio12-19-online"
+   ],
+   "evidence": "Performing/recording and STS items, Online Learning URLs.",
+   "recordedUtc": "2026-10-12T03:25:59+00:00"
+  },
+  "152": {
+   "pdfPage": 152,
+   "printedPage": 151,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-opener"
+   ],
+   "evidence": "Unit 20 opener key concepts implemented (previously absent); photograph excluded.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "153": {
+   "pdfPage": 153,
+   "printedPage": 152,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-0",
+    "bio12-20-1"
+   ],
+   "evidence": "Earlier paraphrase replaced with printed text: intro, HUMAN REPRODUCTIVE SYSTEM, 20.1, 20.1.1, 20.1.2; new Urdu/Pashto.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "154": {
+   "pdfPage": 154,
+   "printedPage": 153,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-1"
+   ],
+   "evidence": "Epididymis paragraph (printed 20.1.3 heading absent, noted), 20.1.4-20.1.6, DO YOU KNOW box, prostate and semen paragraphs.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "155": {
+   "pdfPage": 155,
+   "printedPage": 154,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-1-6-spermatogenesis"
+   ],
+   "evidence": "Spermatogenesis paragraphs; Fig 20.3 coded with 9 labels.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "156": {
+   "pdfPage": 156,
+   "printedPage": 155,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-1-6-spermatogenesis",
+    "bio12-20-1-7"
+   ],
+   "evidence": "Fig 20.4 coded (10 labels), spermiogenesis, 20.1.7 sperm.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "157": {
+   "pdfPage": 157,
+   "printedPage": 156,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-1-7",
+    "bio12-20-1-8",
+    "bio12-20-2"
+   ],
+   "evidence": "Sperm continuation, Figs 20.5 and 20.6 coded, hormonal control, inhibin, 20.2 and 20.2.1 start.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "158": {
+   "pdfPage": 158,
+   "printedPage": 157,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-2"
+   ],
+   "evidence": "Ovaries, fallopian tubes, uterus layers.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "159": {
+   "pdfPage": 159,
+   "printedPage": 158,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-2"
+   ],
+   "evidence": "Cervix, vagina, Fig 20.7 coded, oogenesis, Fig 20.8 coded (follicle sequence 1-7).",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "160": {
+   "pdfPage": 160,
+   "printedPage": 159,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-2",
+    "bio12-20-3"
+   ],
+   "evidence": "Meiosis I paragraph, Fig 20.9 coded, secondary oocyte paragraph, 20.3 and menstrual phase start.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "161": {
+   "pdfPage": 161,
+   "printedPage": 160,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-3"
+   ],
+   "evidence": "Menstrual phase continuation, FYI egg supply, proliferative phase, Fig 20.10 coded, ovulation, secretory phase start.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "162": {
+   "pdfPage": 162,
+   "printedPage": 161,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-3",
+    "bio12-20-4"
+   ],
+   "evidence": "Secretory phase, Fig 20.11 coded cycle wheel, menopause, FYI twins box, 20.4.1 start.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "163": {
+   "pdfPage": 163,
+   "printedPage": 162,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-4"
+   ],
+   "evidence": "Pregnancy steps list, infertility causes list, 20.4.2, Fig 20.12 coded, 20.4.3 IVF.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "164": {
+   "pdfPage": 164,
+   "printedPage": 163,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-4",
+    "bio12-20-5"
+   ],
+   "evidence": "Miscarriage, abortion, 20.5.1 gonorrhea with Fig 20.13 coded.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "165": {
+   "pdfPage": 165,
+   "printedPage": 164,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-5"
+   ],
+   "evidence": "Syphilis, AIDS, Fig 20.13 HIV invading CD4 coded.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "166": {
+   "pdfPage": 166,
+   "printedPage": 165,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-5"
+   ],
+   "evidence": "AIDS paragraphs, transmission, Fig 20.15 coded.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "167": {
+   "pdfPage": 167,
+   "printedPage": 166,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-keypoints"
+   ],
+   "evidence": "Key points 1-15 as list with Urdu/Pashto.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "168": {
+   "pdfPage": 168,
+   "printedPage": 167,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-20-keypoints"
+   ],
+   "evidence": "Key points 16-21.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "169": {
+   "pdfPage": 169,
+   "printedPage": 168,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch20.exercise.mcqs"
+   ],
+   "evidence": "MCQs i-vii rebuilt word-for-word.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "170": {
+   "pdfPage": 170,
+   "printedPage": 169,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch20.exercise"
+   ],
+   "evidence": "MCQs viii-ix, short and long questions, initiating and planning items.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "171": {
+   "pdfPage": 171,
+   "printedPage": 170,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch20.exercise.activities",
+    "bio12-20-online"
+   ],
+   "evidence": "STS items and Online Learning URLs.",
+   "recordedUtc": "2026-10-12T03:35:53+00:00"
+  },
+  "172": {
+   "pdfPage": 172,
+   "printedPage": 171,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-opener"
+   ],
+   "evidence": "Unit 21 opener key concepts implemented (previously absent).",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "173": {
+   "pdfPage": 173,
+   "printedPage": 172,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-0",
+    "bio12-21-1"
+   ],
+   "evidence": "Earlier paraphrase replaced with printed text: intro, 21.1, 21.1.1, Fig 21.1 coded; new Urdu/Pashto.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "174": {
+   "pdfPage": 174,
+   "printedPage": 173,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-1"
+   ],
+   "evidence": "Trophoblast paragraph, 21.1.2, Fig 21.2 coded, 21.1.3 start.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "175": {
+   "pdfPage": 175,
+   "printedPage": 174,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-1"
+   ],
+   "evidence": "Primitive streak, germ layers, Fig 21.3 coded.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "176": {
+   "pdfPage": 176,
+   "printedPage": 175,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-1"
+   ],
+   "evidence": "21.1.4 neurulation with FYI box, Fig 21.4 coded.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "177": {
+   "pdfPage": 177,
+   "printedPage": 176,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-1",
+    "bio12-21-2"
+   ],
+   "evidence": "Brain flexures paragraph, 21.2 control of development, 21.2.1 Acetabularia, Fig 21.5 coded with its printed notes.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "178": {
+   "pdfPage": 178,
+   "printedPage": 177,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-2"
+   ],
+   "evidence": "Graft result paragraph, 21.2.2, Fig 21.6 coded, ascidian determinants.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "179": {
+   "pdfPage": 179,
+   "printedPage": 178,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-2"
+   ],
+   "evidence": "Four cytoplasm bullets, printed \"23.2.3\" heading, asymmetric segregation, induction bullets, Spemann-Mangold.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "180": {
+   "pdfPage": 180,
+   "printedPage": 179,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-2",
+    "bio12-21-3"
+   ],
+   "evidence": "Second body axis, Triton paragraphs with Fig 21.7 coded, organizer, 21.3 and 21.3.1.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "181": {
+   "pdfPage": 181,
+   "printedPage": 180,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-3"
+   ],
+   "evidence": "Embryonic period, Fig 21.8 coded, germ layer paragraph, growth paragraph with Fig 21.9, ectopic pregnancy FYI.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "182": {
+   "pdfPage": 182,
+   "printedPage": 181,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-3"
+   ],
+   "evidence": "End of first trimester, 21.3.2 with Fig 21.10, printed \"23.3.3\", Fig 21.11, 21.3.4.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "183": {
+   "pdfPage": 183,
+   "printedPage": 182,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-3"
+   ],
+   "evidence": "Identical multiples, Fig 21.12, printed \"23.3.5\" placentation, Fig 21.13 coded (13 labels), childbirth paragraph.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "184": {
+   "pdfPage": 184,
+   "printedPage": 183,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-4",
+    "bio12-21-5"
+   ],
+   "evidence": "Lactation, breast vs bottle feeding lists, 21.5.1 rubella start.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "185": {
+   "pdfPage": 185,
+   "printedPage": 184,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-5"
+   ],
+   "evidence": "Rubella with Fig 21.14 coded, 21.5.2-21.5.5.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "186": {
+   "pdfPage": 186,
+   "printedPage": 185,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-5",
+    "bio12-21-6",
+    "bio12-21-7"
+   ],
+   "evidence": "Foetal surgery, 21.6.1 allometric growth, 21.7, 21.7.1 with Fig 21.15 coded.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "187": {
+   "pdfPage": 187,
+   "printedPage": 186,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-7"
+   ],
+   "evidence": "Signs and symptoms list, secondary aging, stop-smoking sign coded, 21.7.3 cell-level bullets.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "188": {
+   "pdfPage": 188,
+   "printedPage": 187,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-7"
+   ],
+   "evidence": "Metabolism bullets and 21.7.4 system-level paragraphs.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "189": {
+   "pdfPage": 189,
+   "printedPage": 188,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-21-keypoints"
+   ],
+   "evidence": "Key points (17) as list with Urdu/Pashto.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "190": {
+   "pdfPage": 190,
+   "printedPage": 189,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch21.exercise"
+   ],
+   "evidence": "Four MCQs, four short and three long questions rebuilt word-for-word.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "191": {
+   "pdfPage": 191,
+   "printedPage": 190,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch21.exercise",
+    "bio12-21-online"
+   ],
+   "evidence": "Long questions iv-v, nine activities and Online Learning URLs.",
+   "recordedUtc": "2026-10-12T03:46:54+00:00"
+  },
+  "192": {
+   "pdfPage": 192,
+   "printedPage": 191,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-opener"
+   ],
+   "evidence": "Unit 22 opener: eight key concepts implemented as printed.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "193": {
+   "pdfPage": 193,
+   "printedPage": 192,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-0",
+    "bio12-22-1"
+   ],
+   "evidence": "Earlier paraphrase replaced with printed text: introduction, 22.1, 22.1.1, Fig 22.1 coded portrait, neglect reasons; new Urdu/Pashto.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "194": {
+   "pdfPage": 194,
+   "printedPage": 193,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-1"
+   ],
+   "evidence": "Remaining neglect bullets, 22.1.2 six reasons, Table 22.1 as coded pictorial figure plus accessible table, 22.1.3 opening.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "195": {
+   "pdfPage": 195,
+   "printedPage": 194,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-1"
+   ],
+   "evidence": "Monohybrid cross paragraph and Fig 22.2 coded flowchart (panels a-c, five steps).",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "196": {
+   "pdfPage": 196,
+   "printedPage": 195,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-1",
+    "bio12-22-1-4"
+   ],
+   "evidence": "Dominant/recessive 3:1 paragraph (wording note), Mendel's predictions, 22.1.4, symbols paragraph.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "197": {
+   "pdfPage": 197,
+   "printedPage": 196,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-1-4",
+    "bio12-22-1-5"
+   ],
+   "evidence": "Wild-type symbols, Law of Dominance, Law of Segregation, 22.1.5 and RRYY x rryy paragraphs.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "198": {
+   "pdfPage": 198,
+   "printedPage": 197,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-1-5"
+   ],
+   "evidence": "Unnumbered dihybrid figure coded with full 4x4 Punnett square and 9:3:3:1 ratio; missing figure number noted.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "199": {
+   "pdfPage": 199,
+   "printedPage": 198,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-1-5"
+   ],
+   "evidence": "F2 9:3:3:1 paragraph, Conclusion, 22.1.6 and the meiosis paragraph.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "200": {
+   "pdfPage": 200,
+   "printedPage": 199,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-1-7"
+   ],
+   "evidence": "22.1.7, 22.1.8 product and sum rules with both worked questions.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "201": {
+   "pdfPage": 201,
+   "printedPage": 200,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-1-7",
+    "bio12-22-2"
+   ],
+   "evidence": "Heterozygote probability, statistical nature, statistics and probability list, 22.2 introduction and dominance list.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "202": {
+   "pdfPage": 202,
+   "printedPage": 201,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-2"
+   ],
+   "evidence": "22.2.1, 22.2.2 with Fig 22.4 coded, R1/R2 paragraph.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "203": {
+   "pdfPage": 203,
+   "printedPage": 202,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-2",
+    "bio12-22-3"
+   ],
+   "evidence": "22.2.3, 22.2.4 with Fig 22.5 coded schematic, 22.3, 22.3.1 multiple alleles.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "204": {
+   "pdfPage": 204,
+   "printedPage": 203,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-3"
+   ],
+   "evidence": "Landsteiner paragraph, 22.3.2, Table 22.2 (trilingual table), donor/recipient paragraphs, Fig 22.6 universal donors coded.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "205": {
+   "pdfPage": 205,
+   "printedPage": 204,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-3"
+   ],
+   "evidence": "22.3.3 with gene I mutation diagram coded, Table 22.3 genetic basis, dominance relations, 22.3.4.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "206": {
+   "pdfPage": 206,
+   "printedPage": 205,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-3",
+    "bio12-22-4"
+   ],
+   "evidence": "Table 22.3 Rh physiology (duplicate number noted), other systems, 22.4, FYI box, 22.4.2 (no 22.4.1 noted).",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "207": {
+   "pdfPage": 207,
+   "printedPage": 206,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-4"
+   ],
+   "evidence": "Gene D paragraph, 22.4.3, Fig 22.6 Erythroblastosis foetalis coded (duplicate number noted), DO YOU KNOW box.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "208": {
+   "pdfPage": 208,
+   "printedPage": 207,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-5"
+   ],
+   "evidence": "22.5, 22.5.1 epistasis (missing comparison table recorded), 22.5.2 Bombay, DO YOU KNOW box with coded H/h antigen figure.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "209": {
+   "pdfPage": 209,
+   "printedPage": 208,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-5"
+   ],
+   "evidence": "H-substance paragraphs, ACTIVITY box, 22.5.3 polygenic inheritance paragraphs.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "210": {
+   "pdfPage": 210,
+   "printedPage": 209,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-5"
+   ],
+   "evidence": "Polygenes paragraphs and 22.5.4 wheat grain colour start.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "211": {
+   "pdfPage": 211,
+   "printedPage": 210,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-5"
+   ],
+   "evidence": "Seven-shade wheat ratio table, A/B/C allele dose paragraphs (five-allele genotypes read from image), 22.5.5 genes A and B.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "212": {
+   "pdfPage": 212,
+   "printedPage": 211,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-5",
+    "bio12-22-6"
+   ],
+   "evidence": "Gene C, skin colour paragraphs, Table 22.4 (read from enlarged scan), 22.6, 22.6.1.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "213": {
+   "pdfPage": 213,
+   "printedPage": 212,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-6"
+   ],
+   "evidence": "Chromosome 11 example, en bloc inheritance, 22.6.2 and Morgan test-cross results as trilingual table.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "214": {
+   "pdfPage": 214,
+   "printedPage": 212,
+   "status": "excluded",
+   "recordIds": [
+    "bio12-22-6"
+   ],
+   "evidence": "Duplicate scan of printed p.212 (text-layer page); compared word-for-word with PDF 213 and included once.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "215": {
+   "pdfPage": 215,
+   "printedPage": 213,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-6"
+   ],
+   "evidence": "22.6.3, 22.6.4, recombination formula, cn/b/vg data.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "216": {
+   "pdfPage": 216,
+   "printedPage": 214,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-6",
+    "bio12-22-7"
+   ],
+   "evidence": "Fig 22.8 linkage map coded, map units paragraph, 22.7, 22.7.1, XO-XX type.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "217": {
+   "pdfPage": 217,
+   "printedPage": 215,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-7"
+   ],
+   "evidence": "XO-XX female paragraph, Fig 22.9 coded, XY-XX type, Fig 22.10 coded.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "218": {
+   "pdfPage": 218,
+   "printedPage": 216,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-7"
+   ],
+   "evidence": "WZ-ZZ type, Fig 22.11 coded as printed (symbol error noted), 22.7.2 and species table.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "219": {
+   "pdfPage": 219,
+   "printedPage": 217,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-7",
+    "bio12-22-8"
+   ],
+   "evidence": "Genic balance, X:A ratio, 22.8, 22.8.1, Fig 22.12 coded.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "220": {
+   "pdfPage": 220,
+   "printedPage": 218,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-8"
+   ],
+   "evidence": "Figs 22.13 and 22.14 coded with printed labels (label errors in 22.13 noted).",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "221": {
+   "pdfPage": 221,
+   "printedPage": 219,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-8"
+   ],
+   "evidence": "Fig 22.15 and Fig 22.16 coded; X-linked/Y-linked gene paragraph.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "222": {
+   "pdfPage": 222,
+   "printedPage": 220,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-8"
+   ],
+   "evidence": "22.8.3 (no 22.8.2 noted), 22.8.4, X-linked recessive and dominant inheritance with examples.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "223": {
+   "pdfPage": 223,
+   "printedPage": 221,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-8"
+   ],
+   "evidence": "X-linked dominant examples, Y-linked inheritance, 22.8.5 haemophilia, 22.8.6 colour blindness.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "224": {
+   "pdfPage": 224,
+   "printedPage": 222,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-8"
+   ],
+   "evidence": "Fig 22.17 pedigree coded with its printed explanatory note, colour-blind daughter paragraph, 22.8.7 sex-limited and sex-influenced traits.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "225": {
+   "pdfPage": 225,
+   "printedPage": 223,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-8"
+   ],
+   "evidence": "Baldness example (rest of page blank).",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "226": {
+   "pdfPage": 226,
+   "printedPage": 224,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-keypoints"
+   ],
+   "evidence": "Key points 1-11 as list with Urdu/Pashto.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "227": {
+   "pdfPage": 227,
+   "printedPage": 225,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-22-keypoints"
+   ],
+   "evidence": "Key points 12-15.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "228": {
+   "pdfPage": 228,
+   "printedPage": 226,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch22.exercise"
+   ],
+   "evidence": "MCQs i-viii rebuilt word-for-word; wrong running header \"Chromosomes and DNA / Chapter 23\" noted.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "229": {
+   "pdfPage": 229,
+   "printedPage": 227,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch22.exercise"
+   ],
+   "evidence": "MCQ viii options, ix, x, five short, five long questions, genetic problem i.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "230": {
+   "pdfPage": 230,
+   "printedPage": 228,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch22.exercise",
+    "bio12-22-online"
+   ],
+   "evidence": "Genetic problem ii, twelve activities and Online Learning URLs.",
+   "recordedUtc": "2026-10-12T04:14:16+00:00"
+  },
+  "231": {
+   "pdfPage": 231,
+   "printedPage": 229,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-opener"
+   ],
+   "evidence": "Unit 23 opener: eight key concepts as printed.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "232": {
+   "pdfPage": 232,
+   "printedPage": 230,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-0",
+    "bio12-23-1"
+   ],
+   "evidence": "Paraphrase replaced with printed text: intro, 23.1, 23.1.1, Table 23.1 (42 (6n) read from image), 23.1.2 start.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "233": {
+   "pdfPage": 233,
+   "printedPage": 231,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-1"
+   ],
+   "evidence": "Fig 23.1 micrograph coded as schematic, Fig 23.2 coded, satellite/telomere and centromere-position paragraphs.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "234": {
+   "pdfPage": 234,
+   "printedPage": 232,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-1"
+   ],
+   "evidence": "23.1.3 composition, Fig 23.3 coded, nucleosome and solenoid paragraphs (histone subscripts read from image).",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "235": {
+   "pdfPage": 235,
+   "printedPage": 233,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-1",
+    "bio12-23-2"
+   ],
+   "evidence": "Supercoil paragraph, 23.2, 23.2.1, 23.2.2, 23.2.3.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "236": {
+   "pdfPage": 236,
+   "printedPage": 234,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-2-4",
+    "bio12-23-3"
+   ],
+   "evidence": "23.2.4 structure of a gene, 23.3 chromosome theory paragraphs.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "237": {
+   "pdfPage": 237,
+   "printedPage": 235,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-3",
+    "bio12-23-4"
+   ],
+   "evidence": "Sutton objection, parallel-behaviour table as trilingual table (three-gamete slip noted), 23.4 opening.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "238": {
+   "pdfPage": 238,
+   "printedPage": 236,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-4"
+   ],
+   "evidence": "23.4 continuation, 23.4.1 Griffith, Fig 23.4 coded with full printed caption.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "239": {
+   "pdfPage": 239,
+   "printedPage": 237,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-4"
+   ],
+   "evidence": "Final control, transformation, 23.4.2 Avery, 23.4.3 Hershey-Chase opening.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "240": {
+   "pdfPage": 240,
+   "printedPage": 238,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-4",
+    "bio12-23-5"
+   ],
+   "evidence": "Hershey-Chase paragraph with Fig 23.5 coded, 23.5 DNA replication.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "241": {
+   "pdfPage": 241,
+   "printedPage": 239,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-5"
+   ],
+   "evidence": "23.5.1-23.5.4 with Fig 23.6 coded.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "242": {
+   "pdfPage": 242,
+   "printedPage": 240,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-5"
+   ],
+   "evidence": "Culturing, sampling, centrifugation; Fig 23.7 coded.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "243": {
+   "pdfPage": 243,
+   "printedPage": 241,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-5",
+    "bio12-23-5-5"
+   ],
+   "evidence": "Results and interpretation with Fig 23.8 coded, 23.5.5 initiation phase.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "244": {
+   "pdfPage": 244,
+   "printedPage": 242,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-5-5"
+   ],
+   "evidence": "SSB proteins, extension phase, three DNA polymerases, Fig 23.9 coded, Pol III mechanism.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "245": {
+   "pdfPage": 245,
+   "printedPage": 243,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-5-5"
+   ],
+   "evidence": "Leading/lagging strand paragraph, Fig 23.10 coded, termination phase.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "246": {
+   "pdfPage": 246,
+   "printedPage": 244,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-5-5",
+    "bio12-23-6"
+   ],
+   "evidence": "DNA ligase paragraph, 23.6, 23.6.1, 23.6.2, promoter paragraph, Fig 23.11 coded.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "247": {
+   "pdfPage": 247,
+   "printedPage": 245,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-6"
+   ],
+   "evidence": "RNA polymerase subunits (omitted alpha noted), elongation and termination phases, Fig 23.12 coded.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "248": {
+   "pdfPage": 248,
+   "printedPage": 246,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-6-3"
+   ],
+   "evidence": "23.6.3 modifications, cap and tail, Fig 23.13 coded, RNA splicing.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "249": {
+   "pdfPage": 249,
+   "printedPage": 247,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-6-3",
+    "bio12-23-6-4"
+   ],
+   "evidence": "Splicing definition, 23.6.4 genetic code paragraphs, codon chart as 16-row trilingual table (cysteine slip noted).",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "250": {
+   "pdfPage": 250,
+   "printedPage": 248,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-6-4",
+    "bio12-23-6-5"
+   ],
+   "evidence": "Degeneracy, universality, mitochondrial code table, 23.6.5 translation, activation.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "251": {
+   "pdfPage": 251,
+   "printedPage": 249,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-6-5"
+   ],
+   "evidence": "Initiation complex, Fig 23.14 coded, P/A/E sites, elongation step 1.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "252": {
+   "pdfPage": 252,
+   "printedPage": 250,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-6-5"
+   ],
+   "evidence": "Elongation steps 2-4, Fig 23.15 coded, iii. Termination.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "253": {
+   "pdfPage": 253,
+   "printedPage": 251,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-6-5",
+    "bio12-23-7"
+   ],
+   "evidence": "Release factors, Fig 23.16 coded, 23.7, 23.7.1-23.7.3 opening.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "254": {
+   "pdfPage": 254,
+   "printedPage": 252,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-7"
+   ],
+   "evidence": "Operon paragraph, Fig 23.17 coded, polycistronic and lac gene paragraphs.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "255": {
+   "pdfPage": 255,
+   "printedPage": 253,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-8"
+   ],
+   "evidence": "23.8 mutation, polymorphisms, 23.8.1, 23.8.2 opening.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "256": {
+   "pdfPage": 256,
+   "printedPage": 254,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-8"
+   ],
+   "evidence": "Point mutations with sequences, structural changes, deletion bar diagram coded.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "257": {
+   "pdfPage": 257,
+   "printedPage": 255,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-8"
+   ],
+   "evidence": "Inversion, translocation, duplication diagrams coded; aneuploidy list; euploidy.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "258": {
+   "pdfPage": 258,
+   "printedPage": 256,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-8",
+    "bio12-23-8-dis"
+   ],
+   "evidence": "23.8.3 mutagens, duplicate \"23.8\" heading noted, 23.8.4 sickle cell and symptoms.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "259": {
+   "pdfPage": 259,
+   "printedPage": 257,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-8-dis"
+   ],
+   "evidence": "Cause and treatment with Fig 23.18 coded, 23.8.5 PKU start.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "260": {
+   "pdfPage": 260,
+   "printedPage": 258,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-8-dis"
+   ],
+   "evidence": "PKU symptoms and treatment, 23.8.6 Down syndrome; Fig 23.19 photograph replaced by trisomy-21 schematic (noted).",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "261": {
+   "pdfPage": 261,
+   "printedPage": 259,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-8-dis"
+   ],
+   "evidence": "Down syndrome features, two FYI boxes, causes and incidence.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "262": {
+   "pdfPage": 262,
+   "printedPage": 260,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-8-dis"
+   ],
+   "evidence": "Down syndrome treatment, 23.8.7 Klinefelter signs.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "263": {
+   "pdfPage": 263,
+   "printedPage": 261,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-8-dis"
+   ],
+   "evidence": "Klinefelter cause and treatment, 23.8.8 Turner signs.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "264": {
+   "pdfPage": 264,
+   "printedPage": 262,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-8-dis"
+   ],
+   "evidence": "Turner cause and treatment (rest of page blank).",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "265": {
+   "pdfPage": 265,
+   "printedPage": 263,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-23-keypoints"
+   ],
+   "evidence": "Fifteen key points with Urdu/Pashto.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "266": {
+   "pdfPage": 266,
+   "printedPage": 264,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch23.exercise"
+   ],
+   "evidence": "MCQs i-viii rebuilt word-for-word.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "267": {
+   "pdfPage": 267,
+   "printedPage": 265,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch23.exercise"
+   ],
+   "evidence": "MCQs ix-x, ten short and eight long questions.",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "268": {
+   "pdfPage": 268,
+   "printedPage": 266,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch23.exercise",
+    "bio12-23-online"
+   ],
+   "evidence": "Ten activities and Online Learning URLs (read from image).",
+   "recordedUtc": "2026-10-12T04:43:01+00:00"
+  },
+  "269": {
+   "pdfPage": 269,
+   "printedPage": 267,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-opener"
+   ],
+   "evidence": "Unit 24 opener: five key concepts as printed.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "270": {
+   "pdfPage": 270,
+   "printedPage": 268,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-0",
+    "bio12-24-1"
+   ],
+   "evidence": "Paraphrase replaced with printed text: introduction, 24.1, Aristotle (Fig 24.1 coded as name plate), creationism to catastrophism.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "271": {
+   "pdfPage": 271,
+   "printedPage": 269,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-1",
+    "bio12-24-2"
+   ],
+   "evidence": "Agassiz, Hutton and Lyell, Lamarck, Darwin and Wallace, Fig 24.2 coded; 24.2, 24.2.1.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "272": {
+   "pdfPage": 272,
+   "printedPage": 270,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-2"
+   ],
+   "evidence": "Endosymbiosis continuation, Fig 24.3 coded, supporting evidence, 24.2.2.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "273": {
+   "pdfPage": 273,
+   "printedPage": 271,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-2",
+    "bio12-24-3"
+   ],
+   "evidence": "Inner/outer membrane paragraph, Fig 24.4 coded, 24.3 Lamarckism with two examples.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "274": {
+   "pdfPage": 274,
+   "printedPage": 272,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-3",
+    "bio12-24-4"
+   ],
+   "evidence": "Fig 24.5 coded, Lamarckism conclusion, 24.4, 24.4.1, Fig 24.6 voyage coded as schematic map.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "275": {
+   "pdfPage": 275,
+   "printedPage": 273,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-4"
+   ],
+   "evidence": "Printed \"24.3.2\" Darwin theory (numbering slip noted), Fig 24.7 finch beaks coded, five salient features, Over production.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "276": {
+   "pdfPage": 276,
+   "printedPage": 274,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-4"
+   ],
+   "evidence": "Struggle for existence (three kinds), Fig 24.8 photo coded as schematic, variation, natural selection, speciation.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "277": {
+   "pdfPage": 277,
+   "printedPage": 275,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-4",
+    "bio12-24-5"
+   ],
+   "evidence": "24.5 Neo-Darwinism, five causes, Fig 24.9 coded, recombination, natural selection, genetic drift start.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "278": {
+   "pdfPage": 278,
+   "printedPage": 276,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-5",
+    "bio12-24-evid"
+   ],
+   "evidence": "Genetic drift, reproductive isolation, printed \"24.4.1\" evidences, comparative anatomy, Fig 24.10 coded.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "279": {
+   "pdfPage": 279,
+   "printedPage": 277,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-evid"
+   ],
+   "evidence": "Analogous structures, fossil evidence, Fig 24.11 horse evolution coded with full caption.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "280": {
+   "pdfPage": 280,
+   "printedPage": 278,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-evid"
+   ],
+   "evidence": "Archeopteryx conclusion, vestigial organs with Fig 24.12 coded, biochemistry, molecular biology.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "281": {
+   "pdfPage": 281,
+   "printedPage": 279,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-evid",
+    "bio12-24-5-2"
+   ],
+   "evidence": "Embryology with Fig 24.13 coded (photos replaced by outlines), 24.5.2 opening.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "282": {
+   "pdfPage": 282,
+   "printedPage": 280,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-5-2",
+    "bio12-24-5-3"
+   ],
+   "evidence": "Homology, red and kit fox with Fig 24.14 coded, convergent evolution, 24.5.3 opening.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "283": {
+   "pdfPage": 283,
+   "printedPage": 281,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-5-3"
+   ],
+   "evidence": "Seven conditions, Fig 24.15 coded as name plate, p and q equations.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "284": {
+   "pdfPage": 284,
+   "printedPage": 282,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-5-3",
+    "bio12-24-5-4"
+   ],
+   "evidence": "Expanded Hardy-Weinberg equation, genotype frequencies, 24.5.4 genetic drift.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "285": {
+   "pdfPage": 285,
+   "printedPage": 283,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-5-4"
+   ],
+   "evidence": "Natural selection paragraph, 24.5.5 speciation, sympatric, allopatric opening.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "286": {
+   "pdfPage": 286,
+   "printedPage": 284,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-5-4",
+    "bio12-24-creation"
+   ],
+   "evidence": "Allopatric, parapatric with Fig 24.16 coded; \"Facts about Creation\" begins (reproduced as printed with a context note).",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "287": {
+   "pdfPage": 287,
+   "printedPage": 285,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-creation"
+   ],
+   "evidence": "Creation section continued with questions 1-15.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "288": {
+   "pdfPage": 288,
+   "printedPage": 286,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-24-creation",
+    "bio12-24-keypoints"
+   ],
+   "evidence": "Questions 16-18, conclusion, nine key points.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "289": {
+   "pdfPage": 289,
+   "printedPage": 287,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch24.exercise"
+   ],
+   "evidence": "MCQs i-vii (duplicate \"vi\" and missing option (d) in vii noted).",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "290": {
+   "pdfPage": 290,
+   "printedPage": 288,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch24.exercise"
+   ],
+   "evidence": "MCQs viii-x, five short and three long questions.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "291": {
+   "pdfPage": 291,
+   "printedPage": 289,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch24.exercise",
+    "bio12-24-online"
+   ],
+   "evidence": "Long iv-v, six activities and Online Learning URLs.",
+   "recordedUtc": "2026-10-12T04:56:58+00:00"
+  },
+  "292": {
+   "pdfPage": 292,
+   "printedPage": 290,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-opener"
+   ],
+   "evidence": "Unit 25 opener: six key concepts as printed.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "293": {
+   "pdfPage": 293,
+   "printedPage": 291,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-0",
+    "bio12-25-1"
+   ],
+   "evidence": "Paraphrase replaced with printed text: introduction, 25.1, 25.1.1 water cycle start.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "294": {
+   "pdfPage": 294,
+   "printedPage": 292,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-1"
+   ],
+   "evidence": "Water cycle paragraphs, Fig 25.1 coded, runoff.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "295": {
+   "pdfPage": 295,
+   "printedPage": 293,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-1-2"
+   ],
+   "evidence": "25.1.2 nitrogen cycle, Nitrogen paragraph, Fig 25.2 coded.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "296": {
+   "pdfPage": 296,
+   "printedPage": 294,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-1-2"
+   ],
+   "evidence": "Four reactions, i. fixation (three ways), ii. biological fixation with equation, types of N-fixing bacteria, Fig 25.3 coded.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "297": {
+   "pdfPage": 297,
+   "printedPage": 295,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-1-2"
+   ],
+   "evidence": "Infection thread, Frankia, Anabaena with Fig 25.4 coded, nitrogenase, FYI box.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "298": {
+   "pdfPage": 298,
+   "printedPage": 296,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-1-2"
+   ],
+   "evidence": "Nitrification (duplicate \"ii\" noted), denitrification with Fig 25.5 coded, ammonification.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "299": {
+   "pdfPage": 299,
+   "printedPage": 297,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-2"
+   ],
+   "evidence": "25.2 energy flow with Fig 25.6 coded, 10 percent rule, 25.2.1 GPP.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "300": {
+   "pdfPage": 300,
+   "printedPage": 298,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-2",
+    "bio12-25-2-2"
+   ],
+   "evidence": "NPP, Fig 25.7 coded, ocean productivity, 25.2.2 pyramids.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "301": {
+   "pdfPage": 301,
+   "printedPage": 299,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-2-2"
+   ],
+   "evidence": "Pyramid types with Fig 25.8 coded, biomass, numbers, energy pyramids.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "302": {
+   "pdfPage": 302,
+   "printedPage": 300,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-2-2",
+    "bio12-25-3"
+   ],
+   "evidence": "Energy pyramid end, 25.3 succession, Fig 25.9 coded, 25.3.1 types.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "303": {
+   "pdfPage": 303,
+   "printedPage": 301,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-3"
+   ],
+   "evidence": "Fig 25.10 coded, xerarch, hydrarch, 25.3.2 xerosere, Stage 1 start.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "304": {
+   "pdfPage": 304,
+   "printedPage": 302,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-3"
+   ],
+   "evidence": "Stage 1 with Fig 25.11 coded, Stages 2-4.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "305": {
+   "pdfPage": 305,
+   "printedPage": 303,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-3",
+    "bio12-25-4"
+   ],
+   "evidence": "Stages 5-7 with Fig 25.12 coded, 25.4, 25.4.1 property list.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "306": {
+   "pdfPage": 306,
+   "printedPage": 304,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-4"
+   ],
+   "evidence": "Population size, density, distribution with Fig 25.13 coded.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "307": {
+   "pdfPage": 307,
+   "printedPage": 305,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-4"
+   ],
+   "evidence": "Clumping with Fig 25.14 coded, uniform and random, population growth, rmax, exponential growth.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "308": {
+   "pdfPage": 308,
+   "printedPage": 306,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-25-4",
+    "bio12-25-missing"
+   ],
+   "evidence": "Limits, 25.4.2, 25.4.3 with Fig 25.15 (photo replaced by neutral symbol); text breaks off at \"Solving erosion\"; source gap notice added.",
+   "recordedUtc": "2026-10-12T05:08:40+00:00"
+  },
+  "309": {
+   "pdfPage": 309,
+   "printedPage": 335,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-missing",
+    "bio12-26-2",
+    "bio12-26-3"
+   ],
+   "evidence": "Gap notice for printed 307-334; 26.2 fragment, 26.2.3, 26.3 PCR, 26.3.1, Fig 26.8 coded.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "310": {
+   "pdfPage": 310,
+   "printedPage": 336,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-3"
+   ],
+   "evidence": "Components 2-4, 26.3.2 with Fig 26.9 coded, denaturation, annealing, extension.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "311": {
+   "pdfPage": 311,
+   "printedPage": 337,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-3"
+   ],
+   "evidence": "Fig 26.10 coded, cycle paragraph, 26.3.3 applications.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "312": {
+   "pdfPage": 312,
+   "printedPage": 338,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-3",
+    "bio12-26-4"
+   ],
+   "evidence": "Remaining applications, 26.4 (printed \"GENOMEIC\"), 26.4.1 three methods, 26.4.2 with Fig 26.11.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "313": {
+   "pdfPage": 313,
+   "printedPage": 339,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-5"
+   ],
+   "evidence": "26.5 principles, 26.5.1 Sanger, procedure, four tubes.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "314": {
+   "pdfPage": 314,
+   "printedPage": 340,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-5"
+   ],
+   "evidence": "Fig 26.12 Sanger method coded.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "315": {
+   "pdfPage": 315,
+   "printedPage": 341,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-5b"
+   ],
+   "evidence": "G tube products with Fig 26.13 (fragments reconstructed, scan illegible), key paragraph, 26.5.2 start.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "316": {
+   "pdfPage": 316,
+   "printedPage": 342,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-5b"
+   ],
+   "evidence": "Wells, Fig 26.14 coded, buffer, migration, staining.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "317": {
+   "pdfPage": 317,
+   "printedPage": 343,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-5b"
+   ],
+   "evidence": "Band thickness, Fig 26.15, 26.5.3 automated sequencing with Fig 26.16.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "318": {
+   "pdfPage": 318,
+   "printedPage": 344,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-5b"
+   ],
+   "evidence": "26.5.4 Maxam-Gilbert, procedure, Fig 26.17 coded, strand separation.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "319": {
+   "pdfPage": 319,
+   "printedPage": 345,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-5b",
+    "bio12-26-6"
+   ],
+   "evidence": "Reagents paragraph, 26.6 DNA analysis, 26.6.1 with Fig 26.18, collection of samples.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "320": {
+   "pdfPage": 320,
+   "printedPage": 346,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-6"
+   ],
+   "evidence": "Placement and separation of RFLPs, Southern blotting, autoradiography with Fig 26.19, 26.6.2 start.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "321": {
+   "pdfPage": 321,
+   "printedPage": 347,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-6",
+    "bio12-26-7"
+   ],
+   "evidence": "Applications list, 26.7, 26.7.1 with Ridley FYI box, 26.7.2.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "322": {
+   "pdfPage": 322,
+   "printedPage": 348,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-7"
+   ],
+   "evidence": "Markers, 26.7.3-26.7.6.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "323": {
+   "pdfPage": 323,
+   "printedPage": 349,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-7",
+    "bio12-26-8"
+   ],
+   "evidence": "Goals and benefits lists, 26.8 tissue culture, 26.8.1 sterilization.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "324": {
+   "pdfPage": 324,
+   "printedPage": 350,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-8"
+   ],
+   "evidence": "Media preparation, inoculation, callus, Fig 26.20 coded.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "325": {
+   "pdfPage": 325,
+   "printedPage": 351,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-8"
+   ],
+   "evidence": "Plantlets, 26.8.2 callus and cell-suspension cultures, Fig 26.21, protoplasts.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "326": {
+   "pdfPage": 326,
+   "printedPage": 352,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-8"
+   ],
+   "evidence": "Somaclonal variation, mis-numbered \"Fig 26.12\" strip coded, meristem, anther culture, 26.8.3.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "327": {
+   "pdfPage": 327,
+   "printedPage": 353,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-8"
+   ],
+   "evidence": "Animal cell culture techniques, Fig 26.23, applications list (missing b-c noted).",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "328": {
+   "pdfPage": 328,
+   "printedPage": 354,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-9"
+   ],
+   "evidence": "26.9, 26.9.1, role of transgenic bacteria, FYI box.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "329": {
+   "pdfPage": 329,
+   "printedPage": 355,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-9"
+   ],
+   "evidence": "Bioremediation, ecological concerns, 26.9.2, methods, crops (hectare figure flagged), Bt FYI box.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "330": {
+   "pdfPage": 330,
+   "printedPage": 356,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-9"
+   ],
+   "evidence": "Beneficial traits, commercial GM plants, DO YOU KNOW box, 26.9.3, methods.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "331": {
+   "pdfPage": 331,
+   "printedPage": 357,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-9",
+    "bio12-26-10"
+   ],
+   "evidence": "Fig 26.24 coded, three methods, 26.10.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "332": {
+   "pdfPage": 332,
+   "printedPage": 358,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-10"
+   ],
+   "evidence": "Printed \"6.10.1\" vaccines, 26.10.2, monoclonal antibodies with Fig 26.25 coded.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "333": {
+   "pdfPage": 333,
+   "printedPage": 359,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-10"
+   ],
+   "evidence": "DNA/RNA probes, protozoa and helminth diagnosis, 26.10.3 with Fig 26.26 coded.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "334": {
+   "pdfPage": 334,
+   "printedPage": 360,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-10"
+   ],
+   "evidence": "Gene therapy approaches and mechanism, liposome Fig 26.27, 26.10.4 start.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "335": {
+   "pdfPage": 335,
+   "printedPage": 361,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-10",
+    "bio12-26-11"
+   ],
+   "evidence": "Cystic fibrosis and its gene therapy, 26.11, 26.11.2 with Fig 26.28.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "336": {
+   "pdfPage": 336,
+   "printedPage": 362,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-11"
+   ],
+   "evidence": "Biochips, 26.11.3 with Fig 26.29, 26.11.4-26.11.6.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "337": {
+   "pdfPage": 337,
+   "printedPage": 363,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-11"
+   ],
+   "evidence": "Careers list with Fig 26.30.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "338": {
+   "pdfPage": 338,
+   "printedPage": 364,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-11"
+   ],
+   "evidence": "26.11.7-26.11.9; signing-ceremony photo replaced by treaty symbol (noted).",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "339": {
+   "pdfPage": 339,
+   "printedPage": 365,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-11"
+   ],
+   "evidence": "26.11.10 intellectual property (rest of page blank).",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "340": {
+   "pdfPage": 340,
+   "printedPage": 366,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-keypoints"
+   ],
+   "evidence": "Key points 1-11.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "341": {
+   "pdfPage": 341,
+   "printedPage": 367,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-26-keypoints"
+   ],
+   "evidence": "Key points 12-16.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "342": {
+   "pdfPage": 342,
+   "printedPage": 368,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch26.exercise"
+   ],
+   "evidence": "MCQs i-ix rebuilt word-for-word.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "343": {
+   "pdfPage": 343,
+   "printedPage": 369,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch26.exercise"
+   ],
+   "evidence": "MCQ x, twelve short and five long questions (gel diagram described).",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "344": {
+   "pdfPage": 344,
+   "printedPage": 370,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch26.exercise",
+    "bio12-26-online"
+   ],
+   "evidence": "Twelve activities and Online learning URLs.",
+   "recordedUtc": "2026-10-12T05:28:17+00:00"
+  },
+  "345": {
+   "pdfPage": 345,
+   "printedPage": 371,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-opener"
+   ],
+   "evidence": "Unit 27 opener: key concepts list.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "346": {
+   "pdfPage": 346,
+   "printedPage": 372,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-0",
+    "bio12-27-1"
+   ],
+   "evidence": "Introduction and 27.1 integrated disease management.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "347": {
+   "pdfPage": 347,
+   "printedPage": 373,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-2"
+   ],
+   "evidence": "27.2 vaccination, 27.2.1-27.2.3 history; Jenner portrait replaced by name plate (Fig 27.1).",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "348": {
+   "pdfPage": 348,
+   "printedPage": 374,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-2"
+   ],
+   "evidence": "27.2.4 types list, live attenuated vaccines with Fig 27.2 coded.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "349": {
+   "pdfPage": 349,
+   "printedPage": 375,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-2"
+   ],
+   "evidence": "Inactivated, subunit and toxoid vaccines; Fig 27.3 coded.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "350": {
+   "pdfPage": 350,
+   "printedPage": 376,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-3"
+   ],
+   "evidence": "27.3 Table 27.1 general schedule of vaccination coded as table.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "351": {
+   "pdfPage": 351,
+   "printedPage": 377,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-4"
+   ],
+   "evidence": "27.4.1 categories, FYI milk-yield box, 27.4.2 functional groups, Fig 27.4 (two cattle photos -> schematics), 27.4.3 start.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "352": {
+   "pdfPage": 352,
+   "printedPage": 378,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-4"
+   ],
+   "evidence": "Cattle uses, Holstein Friesian FYI box with coded cow, dairy products list.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "353": {
+   "pdfPage": 353,
+   "printedPage": 379,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-4"
+   ],
+   "evidence": "Nili Ravi FYI box, cattle dung, draught animals with Fig 27.5 coded.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "354": {
+   "pdfPage": 354,
+   "printedPage": 380,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-4"
+   ],
+   "evidence": "Fibre/hide animals, egg-yielding animals with Fig 27.6, 27.4.4 artificial insemination, embryo transplant.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "355": {
+   "pdfPage": 355,
+   "printedPage": 381,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-4",
+    "bio12-27-5"
+   ],
+   "evidence": "Embryo transplant end, 27.5 traits list (\"ncreased\" normalised), Fig 27.7 liger, 27.5.1 acclimatization.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "356": {
+   "pdfPage": 356,
+   "printedPage": 382,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-5"
+   ],
+   "evidence": "Membrane fluidity, heat shock proteins, Fig 27.8 coded, 27.5.2 selective breeding.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "357": {
+   "pdfPage": 357,
+   "printedPage": 383,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-5"
+   ],
+   "evidence": "27.5.3 hybridization/backcrossing with Fig 27.9, 27.5.4 genetic engineering with Fig 27.10.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "358": {
+   "pdfPage": 358,
+   "printedPage": 384,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-5",
+    "bio12-27-6"
+   ],
+   "evidence": "Herbicide target site, 27.6 home gardening with Fig 27.11, 27.6.1 start.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "359": {
+   "pdfPage": 359,
+   "printedPage": 385,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-6"
+   ],
+   "evidence": "Seasonal fruits and vegetables table coded.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "360": {
+   "pdfPage": 360,
+   "printedPage": 386,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-7"
+   ],
+   "evidence": "Yoghurt making, Fig 27.12, cheese making, rennet FYI box.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "361": {
+   "pdfPage": 361,
+   "printedPage": 387,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-7"
+   ],
+   "evidence": "Cheese ripening, 27.7.2 alcohol industry, 27.7.3 pharmaceutical industry with Fig 27.13.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "362": {
+   "pdfPage": 362,
+   "printedPage": 388,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-7"
+   ],
+   "evidence": "Penicillin, cyclosporin, lovastatin, 27.7.4 waste treatment with Fig 27.14.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "363": {
+   "pdfPage": 363,
+   "printedPage": 389,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-7"
+   ],
+   "evidence": "27.7.5 energy generation, biomass FYI box, biogas with Fig 27.15.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "364": {
+   "pdfPage": 364,
+   "printedPage": 390,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-7"
+   ],
+   "evidence": "Methanogens, activated sludge, Fig 27.16 system outline coded, gobar heading.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "365": {
+   "pdfPage": 365,
+   "printedPage": 391,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-7"
+   ],
+   "evidence": "Biofilm FYI box, gobar gas plant, substrates, Fig 27.17 coded.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "366": {
+   "pdfPage": 366,
+   "printedPage": 392,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-7"
+   ],
+   "evidence": "Uses of biogas with Fig 27.18 coded (rest of page blank).",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "367": {
+   "pdfPage": 367,
+   "printedPage": 393,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-27-keypoints"
+   ],
+   "evidence": "Key points 1-11.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "368": {
+   "pdfPage": 368,
+   "printedPage": 394,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch27.exercise"
+   ],
+   "evidence": "MCQs i-iv, short questions i-ix, long questions i-iv, activities.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "369": {
+   "pdfPage": 369,
+   "printedPage": 395,
+   "status": "corrected_verified",
+   "recordIds": [
+    "cls12-bio-ch27.exercise",
+    "bio12-27-online"
+   ],
+   "evidence": "Science, Technology & Society items and online learning links.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "370": {
+   "pdfPage": 370,
+   "printedPage": 396,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-a-h"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "371": {
+   "pdfPage": 371,
+   "printedPage": 397,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-a-h"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "372": {
+   "pdfPage": 372,
+   "printedPage": 398,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-a-h"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "373": {
+   "pdfPage": 373,
+   "printedPage": 399,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-a-h"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "374": {
+   "pdfPage": 374,
+   "printedPage": 400,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-a-h"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "375": {
+   "pdfPage": 375,
+   "printedPage": 401,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-a-h",
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary H-I reproduced entry by entry.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "376": {
+   "pdfPage": 376,
+   "printedPage": 402,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "377": {
+   "pdfPage": 377,
+   "printedPage": 403,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "378": {
+   "pdfPage": 378,
+   "printedPage": 404,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "379": {
+   "pdfPage": 379,
+   "printedPage": 405,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "380": {
+   "pdfPage": 380,
+   "printedPage": 406,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "381": {
+   "pdfPage": 381,
+   "printedPage": 407,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "382": {
+   "pdfPage": 382,
+   "printedPage": 408,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "383": {
+   "pdfPage": 383,
+   "printedPage": 409,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "384": {
+   "pdfPage": 384,
+   "printedPage": 410,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "385": {
+   "pdfPage": 385,
+   "printedPage": 411,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-glossary-i-z"
+   ],
+   "evidence": "Glossary page reproduced entry by entry with Urdu/Pashto; printed typos and truncations preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  },
+  "386": {
+   "pdfPage": 386,
+   "printedPage": 412,
+   "status": "corrected_verified",
+   "recordIds": [
+    "bio12-useful-websites"
+   ],
+   "evidence": "Useful Websites for Biology Students (unnumbered page after p.411); incomplete URLs and duplicate preserved.",
+   "recordedUtc": "2026-10-12T05:55:49+00:00"
+  }
+ },
+ "unresolved": [
+  {
+   "pdfPage": 86,
+   "printedPage": 82,
+   "issue": "Printed exercise omits short question (iii); no alternate local source shows the missing question. Recorded, not invented."
+  },
+  {
+   "pdfPage": "107/108",
+   "printedPages": [
+    104,
+    105,
+    106
+   ],
+   "issue": "Section 17.6 (Structure and function of special receptors) and Figs 17.23-17.25 are absent from the complete PDF, the chapter-split PDF part 3, the JPG scans and the Word OCR. A clearly labelled source-gap notice is shown in the lesson; no content invented."
+  },
+  "Unit 22 p.207: the text announces a table comparing epistasis and dominance (\"Following table further illustrate...\") but no table is printed; nothing invented.",
+  "Unit 22: figure numbers Fig 22.6 and Table 22.3 are each printed twice, Fig 22.7 and Fig 22.3 do not appear, and the dihybrid and Bombay figures are unnumbered; captions kept as printed.",
+  "Unit 23 p.235 table names only three of the \"four type of gametes\" (Ry missing); p.245 lists three of the \"four subunits\" of RNA polymerase; p.252 lac operon mechanism is only in Fig 23.17. Kept as printed with notes.",
+  "Unit 24 MCQ vii prints only three options (Darwin, Wallace, Carolus); the correct answer, Lamarck, is not among them. A clearly marked placeholder option (d) carries the answer.",
+  "Unit 24 pp.284-286 \"Facts about Creation of living organisms\" is reproduced as printed with an editorial context note; it is the textbook authors' religious position, not scientific consensus.",
+  "Printed pages 307-334 (rest of 25.4.3, 25.5, 25.6, Unit 25 key points and exercise, Unit 26 opener, introduction, 26.1 and 26.2 up to 26.2.3) are missing from the complete PDF, the split PDFs, the JPG scans and the Word OCR. PDF 308 = printed 306 is followed directly by PDF 309 = printed 335. Labelled gap notices were added; the old generic Unit 25 exercise (not from the textbook) was removed and nothing was invented."
+ ],
+ "validationEvidence": [
+  {
+   "utc": "2026-10-12T02:38:52+00:00",
+   "text": "Chapter 14: validate.js 14 -> 34 verified sections, 0 errors; render_check.js 14 -> 102 en/ur/ps views via app.js renderer, 0 problems; node --check js/biology_12_data.js OK."
+  },
+  {
+   "utc": "2026-10-12T02:46:37+00:00",
+   "text": "Chapter 15: validate.js 15 -> 55 verified sections, 0 errors; render_check.js 15 -> 165 views, 0 problems; node --check OK."
+  },
+  {
+   "utc": "2026-10-12T02:54:05+00:00",
+   "text": "Chapter 16: validate.js 16 -> 18 verified sections, 0 errors; render_check.js 16 -> 54 views 0 problems; 3 semantic tables render in en/ur/ps; node --check OK."
+  },
+  {
+   "utc": "2026-10-12T03:07:48+00:00",
+   "text": "Chapter 17: validate.js 17 -> 50 verified sections, 0 errors; render_check.js 17 -> 150 views 0 problems; node --check OK; build now writes atomically after a syntax check."
+  },
+  {
+   "utc": "2026-10-12T03:16:45+00:00",
+   "text": "Chapter 18: validate.js 18 -> 16 verified sections, 0 errors; render_check.js 18 -> 48 views 0 problems; node --check OK."
+  },
+  {
+   "utc": "2026-10-12T03:25:59+00:00",
+   "text": "Chapter 19: validate.js 19 -> 21 verified sections, 0 errors; render_check.js 19 -> 63 views 0 problems; node --check OK. Disk reached 100% during this chapter; regenerated after deleting own montage images (ch19.json rewritten, data file was intact)."
+  },
+  {
+   "utc": "2026-10-12T03:35:53+00:00",
+   "text": "Chapter 20: validate.js 20 -> 12 verified sections, 0 errors; render_check.js 20 -> 36 views 0 problems; node --check OK."
+  },
+  {
+   "utc": "2026-10-12T03:46:54+00:00",
+   "text": "Chapter 21: validate.js 21 -> 11 verified sections, 0 errors; render_check.js 21 -> 33 views 0 problems; node --check OK."
+  },
+  {
+   "utc": "2026-10-12T04:14:16+00:00",
+   "text": "Chapter 22: validate.js 22 -> 15 verified sections, 0 errors (23 warnings = intentional Latin genotype symbols/English terms/URLs in Urdu); render_check.js 22 -> 45 views 0 problems; tables check OK; node --check OK."
+  },
+  {
+   "utc": "2026-10-12T04:43:01+00:00",
+   "text": "Chapter 23: validate.js 23 -> 18 verified sections, 0 errors; render_check.js 23 -> 54 views 0 problems; tables OK; node --check OK."
+  },
+  {
+   "utc": "2026-10-12T04:56:58+00:00",
+   "text": "Chapter 24: validate.js 24 -> 14 verified sections, 0 errors (validator now also exempts formula-only lines such as p + q = 1); render_check.js 24 -> 42 views 0 problems; node --check OK."
+  },
+  {
+   "utc": "2026-10-12T05:08:40+00:00",
+   "text": "Chapter 25: validate.js 25 -> 9 verified sections, 0 errors; render_check.js 25 -> 27 views 0 problems; tables OK; node --check OK."
+  },
+  {
+   "utc": "2026-10-12T05:28:17+00:00",
+   "text": "Chapter 26: validate.js 26 -> 14 verified sections, 0 errors; render_check.js 26 -> 42 views 0 problems; tables OK; node --check OK; raster <img> tags remaining in js/biology_12_data.js: 0."
+  },
+  {
+   "utc": "2026-10-12T05:55:49+00:00",
+   "text": "Chapter 27 + glossary: validate.js 27 -> 14 verified sections, 0 errors; render_check.js 27 -> 42 views 0 problems; tables OK; node --check OK; raster <img> tags remaining in js/biology_12_data.js: 0. Photos (Jenner portrait, cattle, poultry, liger, greenhouse, maize, micrographs, sewage plant, village biogas plant, garden) replaced by coded schematics."
+  }
+ ],
+ "currentChapter": "Biology complete (Units 14-27, PDF 1-386)",
+ "instructionsNote": "2026-10-12 user instruction: Biology FIRST, then Physics, Chemistry, Statistics, English, Urdu, Pakistan Studies, Computer Science, Civics, Economics, HPE, Islamiat Ikhtiari, Islamic History, Mutalia-e-Quran; Mathematics excluded; no browser testing; coded visuals only; no commit/push.",
+ "lastConsecutiveVerifiedPdfPage": 386,
+ "nextPdfPage": 387,
+ "pagesAccounted": 386
+}

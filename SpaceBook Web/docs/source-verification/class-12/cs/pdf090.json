@@ -1,0 +1,177 @@
+{
+ "pdfPage": 90,
+ "sections": [
+  {
+   "id": "cs12-u5-text-12",
+   "title": "Unit 5 text (12)",
+   "headingUrdu": "یونٹ 5 — متن (12)",
+   "headingPashto": "۵ څپرکی — متن (12)",
+   "paras": [
+    {
+     "text": "strcpy() function",
+     "urdu": "strcpy() فنکشن",
+     "pashto": "strcpy() فنکشن"
+    },
+    {
+     "text": "For copying string, another string function strcpy() can also be used. Consider the following program to demonstrate the use of strcpy().",
+     "urdu": "اسٹرنگ نقل کرنے کے لیے ایک اور اسٹرنگ فنکشن strcpy() بھی استعمال ہو سکتا ہے۔ strcpy() کا استعمال واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د تار د کاپي کولو لپاره د تار بل فنکشن strcpy() هم کارول کېدای شي. د strcpy() د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "// copying string using strcpy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring SS;\nchar CC[17];\nSS = \"This is a string\";\nstrcpy(CC,\"This is a string\");\ncout << SS << endl; cout << CC << endl;\ngetch();\n}",
+     "urdu": "// copying string using strcpy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring SS;\nchar CC[17];\nSS = \"This is a string\";\nstrcpy(CC,\"This is a string\");\ncout << SS << endl; cout << CC << endl;\ngetch();\n}",
+     "pashto": "// copying string using strcpy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring SS;\nchar CC[17];\nSS = \"This is a string\";\nstrcpy(CC,\"This is a string\");\ncout << SS << endl; cout << CC << endl;\ngetch();\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "This is a string\nThis is a string",
+     "urdu": "This is a string\nThis is a string",
+     "pashto": "This is a string\nThis is a string",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "c. Finding a character or word in a strings",
+     "urdu": "c. اسٹرنگ میں کوئی حرف یا لفظ تلاش کرنا",
+     "pashto": "c. په تار کې یو توری یا کلمه موندل"
+    },
+    {
+     "text": "find() function",
+     "urdu": "find() فنکشن",
+     "pashto": "find() فنکشن"
+    },
+    {
+     "text": "To find a particular word or a character in a string, find () function is used. find () function takes only one argument which is the desired character or word within the string. The following program demonstrates how find() function is used to search the word interesting and character g in the string “C++ is a very interesting programming language”.",
+     "urdu": "اسٹرنگ میں کوئی خاص لفظ یا حرف تلاش کرنے کے لیے find () فنکشن استعمال ہوتا ہے۔ find () فنکشن صرف ایک آرگیومنٹ لیتا ہے جو اسٹرنگ کے اندر مطلوبہ حرف یا لفظ ہے۔ درج ذیل پروگرام دکھاتا ہے کہ اسٹرنگ ’’C++ is a very interesting programming language‘‘ میں لفظ interesting اور حرف g تلاش کرنے کے لیے find() فنکشن کیسے استعمال ہوتا ہے۔",
+     "pashto": "په تار کې د یوې ځانګړې کلمې یا توري موندلو لپاره find () فنکشن کارېږي. find () فنکشن یوازې یو دلیل اخلي چې د تار دننه غوښتل شوی توری یا کلمه ده. لاندې پروګرام ښيي چې په \"C++ is a very interesting programming language\" تار کې د interesting کلمې او g توري د لټولو لپاره find() فنکشن څنګه کارېږي."
+    },
+    {
+     "text": "// finding a word or character using find() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\nint loc1, loc2;\nloc1 = str.find (\"interesting \");\ncout << \"Word interesting is found on position: \" <<loc1+1;\nloc2 = str.find('g');\ncout << \"\\nFirst character 'g' found on position: \"<< loc2;\ngetch();\nreturn 0;\n}",
+     "urdu": "// finding a word or character using find() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\nint loc1, loc2;\nloc1 = str.find (\"interesting \");\ncout << \"Word interesting is found on position: \" <<loc1+1;\nloc2 = str.find('g');\ncout << \"\\nFirst character 'g' found on position: \"<< loc2;\ngetch();\nreturn 0;\n}",
+     "pashto": "// finding a word or character using find() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\nint loc1, loc2;\nloc1 = str.find (\"interesting \");\ncout << \"Word interesting is found on position: \" <<loc1+1;\nloc2 = str.find('g');\ncout << \"\\nFirst character 'g' found on position: \"<< loc2;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Word interesting is found on position: 15\n\nFirst character 'g' found on position: 24",
+     "urdu": "Word interesting is found on position: 15\n\nFirst character 'g' found on position: 24",
+     "pashto": "Word interesting is found on position: 15\n\nFirst character 'g' found on position: 24",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "strcpy() function\n\nFor copying string, another string function strcpy() can also be used. Consider the following program to demonstrate the use of strcpy().\n\n// copying string using strcpy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring SS;\nchar CC[17];\nSS = \"This is a string\";\nstrcpy(CC,\"This is a string\");\ncout << SS << endl; cout << CC << endl;\ngetch();\n}\n\nOutput of the program\n\nThis is a string\nThis is a string\n\nc. Finding a character or word in a strings\n\nfind() function\n\nTo find a particular word or a character in a string, find () function is used. find () function takes only one argument which is the desired character or word within the string. The following program demonstrates how find() function is used to search the word interesting and character g in the string “C++ is a very interesting programming language”.\n\n// finding a word or character using find() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\nint loc1, loc2;\nloc1 = str.find (\"interesting \");\ncout << \"Word interesting is found on position: \" <<loc1+1;\nloc2 = str.find('g');\ncout << \"\\nFirst character 'g' found on position: \"<< loc2;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nWord interesting is found on position: 15\n\nFirst character 'g' found on position: 24",
+   "urdu": "strcpy() فنکشن\n\nاسٹرنگ نقل کرنے کے لیے ایک اور اسٹرنگ فنکشن strcpy() بھی استعمال ہو سکتا ہے۔ strcpy() کا استعمال واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n// copying string using strcpy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring SS;\nchar CC[17];\nSS = \"This is a string\";\nstrcpy(CC,\"This is a string\");\ncout << SS << endl; cout << CC << endl;\ngetch();\n}\n\nپروگرام کا آؤٹ پٹ\n\nThis is a string\nThis is a string\n\nc. اسٹرنگ میں کوئی حرف یا لفظ تلاش کرنا\n\nfind() فنکشن\n\nاسٹرنگ میں کوئی خاص لفظ یا حرف تلاش کرنے کے لیے find () فنکشن استعمال ہوتا ہے۔ find () فنکشن صرف ایک آرگیومنٹ لیتا ہے جو اسٹرنگ کے اندر مطلوبہ حرف یا لفظ ہے۔ درج ذیل پروگرام دکھاتا ہے کہ اسٹرنگ ’’C++ is a very interesting programming language‘‘ میں لفظ interesting اور حرف g تلاش کرنے کے لیے find() فنکشن کیسے استعمال ہوتا ہے۔\n\n// finding a word or character using find() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\nint loc1, loc2;\nloc1 = str.find (\"interesting \");\ncout << \"Word interesting is found on position: \" <<loc1+1;\nloc2 = str.find('g');\ncout << \"\\nFirst character 'g' found on position: \"<< loc2;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWord interesting is found on position: 15\n\nFirst character 'g' found on position: 24",
+   "pashto": "strcpy() فنکشن\n\nد تار د کاپي کولو لپاره د تار بل فنکشن strcpy() هم کارول کېدای شي. د strcpy() د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n// copying string using strcpy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring SS;\nchar CC[17];\nSS = \"This is a string\";\nstrcpy(CC,\"This is a string\");\ncout << SS << endl; cout << CC << endl;\ngetch();\n}\n\nد پروګرام وتنه\n\nThis is a string\nThis is a string\n\nc. په تار کې یو توری یا کلمه موندل\n\nfind() فنکشن\n\nپه تار کې د یوې ځانګړې کلمې یا توري موندلو لپاره find () فنکشن کارېږي. find () فنکشن یوازې یو دلیل اخلي چې د تار دننه غوښتل شوی توری یا کلمه ده. لاندې پروګرام ښيي چې په \"C++ is a very interesting programming language\" تار کې د interesting کلمې او g توري د لټولو لپاره find() فنکشن څنګه کارېږي.\n\n// finding a word or character using find() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\nint loc1, loc2;\nloc1 = str.find (\"interesting \");\ncout << \"Word interesting is found on position: \" <<loc1+1;\nloc2 = str.find('g');\ncout << \"\\nFirst character 'g' found on position: \"<< loc2;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWord interesting is found on position: 15\n\nFirst character 'g' found on position: 24",
+   "theoryUrdu": "strcpy() فنکشن\n\nاسٹرنگ نقل کرنے کے لیے ایک اور اسٹرنگ فنکشن strcpy() بھی استعمال ہو سکتا ہے۔ strcpy() کا استعمال واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n// copying string using strcpy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring SS;\nchar CC[17];\nSS = \"This is a string\";\nstrcpy(CC,\"This is a string\");\ncout << SS << endl; cout << CC << endl;\ngetch();\n}\n\nپروگرام کا آؤٹ پٹ\n\nThis is a string\nThis is a string\n\nc. اسٹرنگ میں کوئی حرف یا لفظ تلاش کرنا\n\nfind() فنکشن\n\nاسٹرنگ میں کوئی خاص لفظ یا حرف تلاش کرنے کے لیے find () فنکشن استعمال ہوتا ہے۔ find () فنکشن صرف ایک آرگیومنٹ لیتا ہے جو اسٹرنگ کے اندر مطلوبہ حرف یا لفظ ہے۔ درج ذیل پروگرام دکھاتا ہے کہ اسٹرنگ ’’C++ is a very interesting programming language‘‘ میں لفظ interesting اور حرف g تلاش کرنے کے لیے find() فنکشن کیسے استعمال ہوتا ہے۔\n\n// finding a word or character using find() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\nint loc1, loc2;\nloc1 = str.find (\"interesting \");\ncout << \"Word interesting is found on position: \" <<loc1+1;\nloc2 = str.find('g');\ncout << \"\\nFirst character 'g' found on position: \"<< loc2;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWord interesting is found on position: 15\n\nFirst character 'g' found on position: 24",
+   "theoryPashto": "strcpy() فنکشن\n\nد تار د کاپي کولو لپاره د تار بل فنکشن strcpy() هم کارول کېدای شي. د strcpy() د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n// copying string using strcpy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring SS;\nchar CC[17];\nSS = \"This is a string\";\nstrcpy(CC,\"This is a string\");\ncout << SS << endl; cout << CC << endl;\ngetch();\n}\n\nد پروګرام وتنه\n\nThis is a string\nThis is a string\n\nc. په تار کې یو توری یا کلمه موندل\n\nfind() فنکشن\n\nپه تار کې د یوې ځانګړې کلمې یا توري موندلو لپاره find () فنکشن کارېږي. find () فنکشن یوازې یو دلیل اخلي چې د تار دننه غوښتل شوی توری یا کلمه ده. لاندې پروګرام ښيي چې په \"C++ is a very interesting programming language\" تار کې د interesting کلمې او g توري د لټولو لپاره find() فنکشن څنګه کارېږي.\n\n// finding a word or character using find() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\nint loc1, loc2;\nloc1 = str.find (\"interesting \");\ncout << \"Word interesting is found on position: \" <<loc1+1;\nloc2 = str.find('g');\ncout << \"\\nFirst character 'g' found on position: \"<< loc2;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWord interesting is found on position: 15\n\nFirst character 'g' found on position: 24",
+   "content": "<p>strcpy() function</p><p>For copying string, another string function strcpy() can also be used. Consider the following program to demonstrate the use of strcpy().</p><p>// copying string using strcpy() function\n#include &lt;iostream.h&gt;\n#include &lt;string&gt;\n#include&lt;conio.h&gt;\nmain()\n{\nstring SS;\nchar CC[17];\nSS = &quot;This is a string&quot;;\nstrcpy(CC,&quot;This is a string&quot;);\ncout &lt;&lt; SS &lt;&lt; endl; cout &lt;&lt; CC &lt;&lt; endl;\ngetch();\n}</p><p>Output of the program</p><p>This is a string\nThis is a string</p><p>c. Finding a character or word in a strings</p><p>find() function</p><p>To find a particular word or a character in a string, find () function is used. find () function takes only one argument which is the desired character or word within the string. The following program demonstrates how find() function is used to search the word interesting and character g in the string “C++ is a very interesting programming language”.</p><p>// finding a word or character using find() function\n#include &lt;iostream.h&gt;\n#include &lt;string&gt;\n#include&lt;conio.h&gt;\nmain()\n{\nstring str(&quot;C++ is a very interesting programming language&quot;);\nint loc1, loc2;\nloc1 = str.find (&quot;interesting &quot;);\ncout &lt;&lt; &quot;Word interesting is found on position: &quot; &lt;&lt;loc1+1;\nloc2 = str.find(&#x27;g&#x27;);\ncout &lt;&lt; &quot;\\nFirst character &#x27;g&#x27; found on position: &quot;&lt;&lt; loc2;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Word interesting is found on position: 15\n\nFirst character &#x27;g&#x27; found on position: 24</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 90,
+     "printedPages": [
+      168,
+      169,
+      170
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (12)",
+   "sourcePageLabel": "PDF 90 · p. 168–169–170",
+   "sourceNote": "The top of p.168 (end of the copy() program) is recorded with PDF89. The find() program continues on p.170 (PDF91) and is given whole with its output.",
+   "unit": 5
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf090",
+   "unit": 5,
+   "printedPage": 169,
+   "description": "Heading “Finding a character or word in a strings”; main() without a return type; the “g” position output (24) is printed as given. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

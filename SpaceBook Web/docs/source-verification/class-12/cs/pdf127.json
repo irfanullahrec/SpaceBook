@@ -1,0 +1,188 @@
+{
+ "pdfPage": 127,
+ "sections": [
+  {
+   "id": "cs12-u8-text-8",
+   "title": "Unit 8 text (8)",
+   "headingUrdu": "یونٹ 8 — متن (8)",
+   "headingPashto": "۸ څپرکی — متن (8)",
+   "paras": [
+    {
+     "text": "In the above example, the constructor CRectangle (int a, int b) is defined in the class CRectangle that initializes the values of width and height with the parameters that are passed to it when objects, r1 and r2, are created with the statement CRectangle r1 (13,14) and CRectangle r1 (13,14).",
+     "urdu": "اوپر کی مثال میں کنسٹرکٹر CRectangle (int a, int b) کلاس CRectangle میں بیان کیا گیا ہے جو width اور height کی قدروں کو ان پیرامیٹرز سے ابتدائی قدر دیتا ہے جو اسے آبجیکٹس r1 اور r2 بنتے وقت بیان CRectangle r1 (13,14) اور CRectangle r1 (13,14) سے پاس کیے جاتے ہیں۔",
+     "pashto": "په پورته بېلګه کې CRectangle (int a, int b) جوړوونکی په CRectangle ټولګي کې تعریف شوی چې د width او height ارزښتونو ته هغه پاراميټرونه لومړنی ارزښت ورکوي چې د r1 او r2 شیانو د جوړېدو پر مهال د CRectangle r1 (13,14) او CRectangle r1 (13,14) بیان سره ورته لېږدول کېږي."
+    },
+    {
+     "text": "i. Default constructor",
+     "urdu": "i. ڈیفالٹ کنسٹرکٹر",
+     "pashto": "i. ډیفالټ جوړوونکی"
+    },
+    {
+     "text": "If we do not declare any constructor in a class definition, the compiler assumes that a class has a default constructor with no arguments.",
+     "urdu": "اگر ہم کلاس کی تعریف میں کوئی کنسٹرکٹر ڈکلیئر نہ کریں تو کمپائلر فرض کرتا ہے کہ کلاس کا بغیر آرگیومنٹس کے ڈیفالٹ کنسٹرکٹر ہے۔",
+     "pashto": "که د ټولګي په تعریف کې هېڅ جوړوونکی اعلان نه کړو، کمپایلر ګڼي چې ټولګی پرته له دلیلونو یو ډیفالټ جوړوونکی لري."
+    },
+    {
+     "text": "// default constructor\nclass DConstructor\n{\npublic:\nint a,b,c;\nvoid multiply (int n, int m)\n{\na=n;\nb=m;\nc=a*b;\n}\n};",
+     "urdu": "// default constructor\nclass DConstructor\n{\npublic:\nint a,b,c;\nvoid multiply (int n, int m)\n{\na=n;\nb=m;\nc=a*b;\n}\n};",
+     "pashto": "// default constructor\nclass DConstructor\n{\npublic:\nint a,b,c;\nvoid multiply (int n, int m)\n{\na=n;\nb=m;\nc=a*b;\n}\n};",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The compiler assumes that the class DConstructor has a default constructor, so the object of this class can be declared by specifying no arguments as given below:",
+     "urdu": "کمپائلر فرض کرتا ہے کہ کلاس DConstructor کا ڈیفالٹ کنسٹرکٹر ہے، اس لیے اس کلاس کا آبجیکٹ بغیر آرگیومنٹس کے ڈکلیئر کیا جا سکتا ہے جیسا کہ ذیل میں ہے:",
+     "pashto": "کمپایلر ګڼي چې DConstructor ټولګی ډیفالټ جوړوونکی لري، نو د دې ټولګي شی پرته له دلیلونو اعلانېدای شي لکه لاندې:"
+    },
+    {
+     "text": "DConstructor DC;",
+     "urdu": "DConstructor DC;",
+     "pashto": "DConstructor DC;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, DC is an object to the class DConstructor with no arguments. Default constructors are also called implicit constructors.",
+     "urdu": "یہاں DC کلاس DConstructor کا بغیر آرگیومنٹس کا آبجیکٹ ہے۔ ڈیفالٹ کنسٹرکٹرز کو implicit کنسٹرکٹرز بھی کہتے ہیں۔",
+     "pashto": "دلته DC د DConstructor ټولګي پرته له دلیلونو شی دی. ډیفالټ جوړوونکي ضمني (implicit) جوړوونکي هم بلل کېږي."
+    },
+    {
+     "text": "ii. User-defined constructor/ Explicit constructor",
+     "urdu": "ii. یوزر ڈیفائنڈ کنسٹرکٹر/ واضح کنسٹرکٹر",
+     "pashto": "ii. د کاروونکي-تعریف شوی جوړوونکی/ ښکاره جوړوونکی"
+    },
+    {
+     "text": "When users define constructors in class for their own purpose, especially for initialization of variables, then such types of constructors are called user defined constructors. When constructor is declared for a class, the compiler no longer provides an implicit default constructor. So, the objects should be declared according to the constructor prototypes that have been defined for the class.",
+     "urdu": "جب صارفین اپنے مقصد کے لیے، خاص طور پر ویری ایبلز کو ابتدائی قدر دینے کے لیے، کلاس میں کنسٹرکٹرز بیان کرتے ہیں تو ایسے کنسٹرکٹرز یوزر ڈیفائنڈ کنسٹرکٹرز کہلاتے ہیں۔ جب کلاس کے لیے کنسٹرکٹر ڈکلیئر کیا جائے تو کمپائلر مزید implicit ڈیفالٹ کنسٹرکٹر فراہم نہیں کرتا۔ اس لیے آبجیکٹس کو کلاس کے لیے بیان کیے گئے کنسٹرکٹر پروٹوٹائپس کے مطابق ڈکلیئر کرنا چاہیے۔",
+     "pashto": "کله چې کاروونکي د خپلې موخې لپاره، په ځانګړي ډول د متغیرونو د لومړني ارزښت لپاره، په ټولګي کې جوړوونکي تعریف کړي، داسې جوړوونکي د کاروونکي-تعریف شوي جوړوونکي بلل کېږي. کله چې د ټولګي لپاره جوړوونکی اعلان شي، کمپایلر نور ضمني ډیفالټ جوړوونکی نه برابروي. نو شیان باید د هغو جوړوونکو نمونو سره سم اعلان شي چې د ټولګي لپاره تعریف شوې."
+    },
+    {
+     "text": "// user-defined ( parameterized) constructor example\n#include <iostream.h>\n#include <conio.h>\nclass CExample\n{\npublic:\nint a,b,c;\nCExample (int n, int m)\n{\na=n;\nb=m;\n}\nint multiply ()\n{\nc=a*b;\nreturn c;\n}\n};\nint main()\n{\nCExample CObj (50,10);\nint result=CObj.multiply();\ncout<<\"Multiplication Results is: \"<<result;\ngetch();\nreturn 0;\n}",
+     "urdu": "// user-defined ( parameterized) constructor example\n#include <iostream.h>\n#include <conio.h>\nclass CExample\n{\npublic:\nint a,b,c;\nCExample (int n, int m)\n{\na=n;\nb=m;\n}\nint multiply ()\n{\nc=a*b;\nreturn c;\n}\n};\nint main()\n{\nCExample CObj (50,10);\nint result=CObj.multiply();\ncout<<\"Multiplication Results is: \"<<result;\ngetch();\nreturn 0;\n}",
+     "pashto": "// user-defined ( parameterized) constructor example\n#include <iostream.h>\n#include <conio.h>\nclass CExample\n{\npublic:\nint a,b,c;\nCExample (int n, int m)\n{\na=n;\nb=m;\n}\nint multiply ()\n{\nc=a*b;\nreturn c;\n}\n};\nint main()\n{\nCExample CObj (50,10);\nint result=CObj.multiply();\ncout<<\"Multiplication Results is: \"<<result;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Multiplication Result is: 500",
+     "urdu": "Multiplication Result is: 500",
+     "pashto": "Multiplication Result is: 500",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "In the above example, the constructor CRectangle (int a, int b) is defined in the class CRectangle that initializes the values of width and height with the parameters that are passed to it when objects, r1 and r2, are created with the statement CRectangle r1 (13,14) and CRectangle r1 (13,14).\n\ni. Default constructor\n\nIf we do not declare any constructor in a class definition, the compiler assumes that a class has a default constructor with no arguments.\n\n// default constructor\nclass DConstructor\n{\npublic:\nint a,b,c;\nvoid multiply (int n, int m)\n{\na=n;\nb=m;\nc=a*b;\n}\n};\n\nThe compiler assumes that the class DConstructor has a default constructor, so the object of this class can be declared by specifying no arguments as given below:\n\nDConstructor DC;\n\nHere, DC is an object to the class DConstructor with no arguments. Default constructors are also called implicit constructors.\n\nii. User-defined constructor/ Explicit constructor\n\nWhen users define constructors in class for their own purpose, especially for initialization of variables, then such types of constructors are called user defined constructors. When constructor is declared for a class, the compiler no longer provides an implicit default constructor. So, the objects should be declared according to the constructor prototypes that have been defined for the class.\n\n// user-defined ( parameterized) constructor example\n#include <iostream.h>\n#include <conio.h>\nclass CExample\n{\npublic:\nint a,b,c;\nCExample (int n, int m)\n{\na=n;\nb=m;\n}\nint multiply ()\n{\nc=a*b;\nreturn c;\n}\n};\nint main()\n{\nCExample CObj (50,10);\nint result=CObj.multiply();\ncout<<\"Multiplication Results is: \"<<result;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nMultiplication Result is: 500",
+   "urdu": "اوپر کی مثال میں کنسٹرکٹر CRectangle (int a, int b) کلاس CRectangle میں بیان کیا گیا ہے جو width اور height کی قدروں کو ان پیرامیٹرز سے ابتدائی قدر دیتا ہے جو اسے آبجیکٹس r1 اور r2 بنتے وقت بیان CRectangle r1 (13,14) اور CRectangle r1 (13,14) سے پاس کیے جاتے ہیں۔\n\ni. ڈیفالٹ کنسٹرکٹر\n\nاگر ہم کلاس کی تعریف میں کوئی کنسٹرکٹر ڈکلیئر نہ کریں تو کمپائلر فرض کرتا ہے کہ کلاس کا بغیر آرگیومنٹس کے ڈیفالٹ کنسٹرکٹر ہے۔\n\n// default constructor\nclass DConstructor\n{\npublic:\nint a,b,c;\nvoid multiply (int n, int m)\n{\na=n;\nb=m;\nc=a*b;\n}\n};\n\nکمپائلر فرض کرتا ہے کہ کلاس DConstructor کا ڈیفالٹ کنسٹرکٹر ہے، اس لیے اس کلاس کا آبجیکٹ بغیر آرگیومنٹس کے ڈکلیئر کیا جا سکتا ہے جیسا کہ ذیل میں ہے:\n\nDConstructor DC;\n\nیہاں DC کلاس DConstructor کا بغیر آرگیومنٹس کا آبجیکٹ ہے۔ ڈیفالٹ کنسٹرکٹرز کو implicit کنسٹرکٹرز بھی کہتے ہیں۔\n\nii. یوزر ڈیفائنڈ کنسٹرکٹر/ واضح کنسٹرکٹر\n\nجب صارفین اپنے مقصد کے لیے، خاص طور پر ویری ایبلز کو ابتدائی قدر دینے کے لیے، کلاس میں کنسٹرکٹرز بیان کرتے ہیں تو ایسے کنسٹرکٹرز یوزر ڈیفائنڈ کنسٹرکٹرز کہلاتے ہیں۔ جب کلاس کے لیے کنسٹرکٹر ڈکلیئر کیا جائے تو کمپائلر مزید implicit ڈیفالٹ کنسٹرکٹر فراہم نہیں کرتا۔ اس لیے آبجیکٹس کو کلاس کے لیے بیان کیے گئے کنسٹرکٹر پروٹوٹائپس کے مطابق ڈکلیئر کرنا چاہیے۔\n\n// user-defined ( parameterized) constructor example\n#include <iostream.h>\n#include <conio.h>\nclass CExample\n{\npublic:\nint a,b,c;\nCExample (int n, int m)\n{\na=n;\nb=m;\n}\nint multiply ()\n{\nc=a*b;\nreturn c;\n}\n};\nint main()\n{\nCExample CObj (50,10);\nint result=CObj.multiply();\ncout<<\"Multiplication Results is: \"<<result;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nMultiplication Result is: 500",
+   "pashto": "په پورته بېلګه کې CRectangle (int a, int b) جوړوونکی په CRectangle ټولګي کې تعریف شوی چې د width او height ارزښتونو ته هغه پاراميټرونه لومړنی ارزښت ورکوي چې د r1 او r2 شیانو د جوړېدو پر مهال د CRectangle r1 (13,14) او CRectangle r1 (13,14) بیان سره ورته لېږدول کېږي.\n\ni. ډیفالټ جوړوونکی\n\nکه د ټولګي په تعریف کې هېڅ جوړوونکی اعلان نه کړو، کمپایلر ګڼي چې ټولګی پرته له دلیلونو یو ډیفالټ جوړوونکی لري.\n\n// default constructor\nclass DConstructor\n{\npublic:\nint a,b,c;\nvoid multiply (int n, int m)\n{\na=n;\nb=m;\nc=a*b;\n}\n};\n\nکمپایلر ګڼي چې DConstructor ټولګی ډیفالټ جوړوونکی لري، نو د دې ټولګي شی پرته له دلیلونو اعلانېدای شي لکه لاندې:\n\nDConstructor DC;\n\nدلته DC د DConstructor ټولګي پرته له دلیلونو شی دی. ډیفالټ جوړوونکي ضمني (implicit) جوړوونکي هم بلل کېږي.\n\nii. د کاروونکي-تعریف شوی جوړوونکی/ ښکاره جوړوونکی\n\nکله چې کاروونکي د خپلې موخې لپاره، په ځانګړي ډول د متغیرونو د لومړني ارزښت لپاره، په ټولګي کې جوړوونکي تعریف کړي، داسې جوړوونکي د کاروونکي-تعریف شوي جوړوونکي بلل کېږي. کله چې د ټولګي لپاره جوړوونکی اعلان شي، کمپایلر نور ضمني ډیفالټ جوړوونکی نه برابروي. نو شیان باید د هغو جوړوونکو نمونو سره سم اعلان شي چې د ټولګي لپاره تعریف شوې.\n\n// user-defined ( parameterized) constructor example\n#include <iostream.h>\n#include <conio.h>\nclass CExample\n{\npublic:\nint a,b,c;\nCExample (int n, int m)\n{\na=n;\nb=m;\n}\nint multiply ()\n{\nc=a*b;\nreturn c;\n}\n};\nint main()\n{\nCExample CObj (50,10);\nint result=CObj.multiply();\ncout<<\"Multiplication Results is: \"<<result;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nMultiplication Result is: 500",
+   "theoryUrdu": "اوپر کی مثال میں کنسٹرکٹر CRectangle (int a, int b) کلاس CRectangle میں بیان کیا گیا ہے جو width اور height کی قدروں کو ان پیرامیٹرز سے ابتدائی قدر دیتا ہے جو اسے آبجیکٹس r1 اور r2 بنتے وقت بیان CRectangle r1 (13,14) اور CRectangle r1 (13,14) سے پاس کیے جاتے ہیں۔\n\ni. ڈیفالٹ کنسٹرکٹر\n\nاگر ہم کلاس کی تعریف میں کوئی کنسٹرکٹر ڈکلیئر نہ کریں تو کمپائلر فرض کرتا ہے کہ کلاس کا بغیر آرگیومنٹس کے ڈیفالٹ کنسٹرکٹر ہے۔\n\n// default constructor\nclass DConstructor\n{\npublic:\nint a,b,c;\nvoid multiply (int n, int m)\n{\na=n;\nb=m;\nc=a*b;\n}\n};\n\nکمپائلر فرض کرتا ہے کہ کلاس DConstructor کا ڈیفالٹ کنسٹرکٹر ہے، اس لیے اس کلاس کا آبجیکٹ بغیر آرگیومنٹس کے ڈکلیئر کیا جا سکتا ہے جیسا کہ ذیل میں ہے:\n\nDConstructor DC;\n\nیہاں DC کلاس DConstructor کا بغیر آرگیومنٹس کا آبجیکٹ ہے۔ ڈیفالٹ کنسٹرکٹرز کو implicit کنسٹرکٹرز بھی کہتے ہیں۔\n\nii. یوزر ڈیفائنڈ کنسٹرکٹر/ واضح کنسٹرکٹر\n\nجب صارفین اپنے مقصد کے لیے، خاص طور پر ویری ایبلز کو ابتدائی قدر دینے کے لیے، کلاس میں کنسٹرکٹرز بیان کرتے ہیں تو ایسے کنسٹرکٹرز یوزر ڈیفائنڈ کنسٹرکٹرز کہلاتے ہیں۔ جب کلاس کے لیے کنسٹرکٹر ڈکلیئر کیا جائے تو کمپائلر مزید implicit ڈیفالٹ کنسٹرکٹر فراہم نہیں کرتا۔ اس لیے آبجیکٹس کو کلاس کے لیے بیان کیے گئے کنسٹرکٹر پروٹوٹائپس کے مطابق ڈکلیئر کرنا چاہیے۔\n\n// user-defined ( parameterized) constructor example\n#include <iostream.h>\n#include <conio.h>\nclass CExample\n{\npublic:\nint a,b,c;\nCExample (int n, int m)\n{\na=n;\nb=m;\n}\nint multiply ()\n{\nc=a*b;\nreturn c;\n}\n};\nint main()\n{\nCExample CObj (50,10);\nint result=CObj.multiply();\ncout<<\"Multiplication Results is: \"<<result;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nMultiplication Result is: 500",
+   "theoryPashto": "په پورته بېلګه کې CRectangle (int a, int b) جوړوونکی په CRectangle ټولګي کې تعریف شوی چې د width او height ارزښتونو ته هغه پاراميټرونه لومړنی ارزښت ورکوي چې د r1 او r2 شیانو د جوړېدو پر مهال د CRectangle r1 (13,14) او CRectangle r1 (13,14) بیان سره ورته لېږدول کېږي.\n\ni. ډیفالټ جوړوونکی\n\nکه د ټولګي په تعریف کې هېڅ جوړوونکی اعلان نه کړو، کمپایلر ګڼي چې ټولګی پرته له دلیلونو یو ډیفالټ جوړوونکی لري.\n\n// default constructor\nclass DConstructor\n{\npublic:\nint a,b,c;\nvoid multiply (int n, int m)\n{\na=n;\nb=m;\nc=a*b;\n}\n};\n\nکمپایلر ګڼي چې DConstructor ټولګی ډیفالټ جوړوونکی لري، نو د دې ټولګي شی پرته له دلیلونو اعلانېدای شي لکه لاندې:\n\nDConstructor DC;\n\nدلته DC د DConstructor ټولګي پرته له دلیلونو شی دی. ډیفالټ جوړوونکي ضمني (implicit) جوړوونکي هم بلل کېږي.\n\nii. د کاروونکي-تعریف شوی جوړوونکی/ ښکاره جوړوونکی\n\nکله چې کاروونکي د خپلې موخې لپاره، په ځانګړي ډول د متغیرونو د لومړني ارزښت لپاره، په ټولګي کې جوړوونکي تعریف کړي، داسې جوړوونکي د کاروونکي-تعریف شوي جوړوونکي بلل کېږي. کله چې د ټولګي لپاره جوړوونکی اعلان شي، کمپایلر نور ضمني ډیفالټ جوړوونکی نه برابروي. نو شیان باید د هغو جوړوونکو نمونو سره سم اعلان شي چې د ټولګي لپاره تعریف شوې.\n\n// user-defined ( parameterized) constructor example\n#include <iostream.h>\n#include <conio.h>\nclass CExample\n{\npublic:\nint a,b,c;\nCExample (int n, int m)\n{\na=n;\nb=m;\n}\nint multiply ()\n{\nc=a*b;\nreturn c;\n}\n};\nint main()\n{\nCExample CObj (50,10);\nint result=CObj.multiply();\ncout<<\"Multiplication Results is: \"<<result;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nMultiplication Result is: 500",
+   "content": "<p>In the above example, the constructor CRectangle (int a, int b) is defined in the class CRectangle that initializes the values of width and height with the parameters that are passed to it when objects, r1 and r2, are created with the statement CRectangle r1 (13,14) and CRectangle r1 (13,14).</p><p>i. Default constructor</p><p>If we do not declare any constructor in a class definition, the compiler assumes that a class has a default constructor with no arguments.</p><p>// default constructor\nclass DConstructor\n{\npublic:\nint a,b,c;\nvoid multiply (int n, int m)\n{\na=n;\nb=m;\nc=a*b;\n}\n};</p><p>The compiler assumes that the class DConstructor has a default constructor, so the object of this class can be declared by specifying no arguments as given below:</p><p>DConstructor DC;</p><p>Here, DC is an object to the class DConstructor with no arguments. Default constructors are also called implicit constructors.</p><p>ii. User-defined constructor/ Explicit constructor</p><p>When users define constructors in class for their own purpose, especially for initialization of variables, then such types of constructors are called user defined constructors. When constructor is declared for a class, the compiler no longer provides an implicit default constructor. So, the objects should be declared according to the constructor prototypes that have been defined for the class.</p><p>// user-defined ( parameterized) constructor example\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nclass CExample\n{\npublic:\nint a,b,c;\nCExample (int n, int m)\n{\na=n;\nb=m;\n}\nint multiply ()\n{\nc=a*b;\nreturn c;\n}\n};\nint main()\n{\nCExample CObj (50,10);\nint result=CObj.multiply();\ncout&lt;&lt;&quot;Multiplication Results is: &quot;&lt;&lt;result;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Multiplication Result is: 500</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 127,
+     "printedPages": [
+      242,
+      243,
+      244
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (8)",
+   "sourcePageLabel": "PDF 127 · p. 242–243–244",
+   "sourceNote": "The CRectangle output at the top of p.242 is recorded with PDF126. The CExample program ends on p.244 (PDF128) and is given whole with its output.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf127",
+   "unit": 8,
+   "printedPage": 242,
+   "description": "p.242 names the second statement “CRectangle r1 (13,14)” twice (the program declares r2 (15,16)); the CExample program prints “Multiplication Results is:” but the output reads “Multiplication Result is: 500”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

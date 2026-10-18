@@ -1,0 +1,233 @@
+{
+ "pdfPage": 89,
+ "sections": [
+  {
+   "id": "cs12-u5-text-11",
+   "title": "Unit 5 text (11)",
+   "headingUrdu": "یونٹ 5 — متن (11)",
+   "headingPashto": "۵ څپرکی — متن (11)",
+   "paras": [
+    {
+     "text": "5.3.4 Commonly used string functions",
+     "urdu": "5.3.4 عام استعمال ہونے والے اسٹرنگ فنکشنز",
+     "pashto": "۵.۳.۴ عام کارېدونکي د تار فنکشنونه"
+    },
+    {
+     "text": "The header file string provides many string manipulation functions. These are discussed with the help of programs as follows.",
+     "urdu": "ہیڈر فائل string اسٹرنگ میں تبدیلی کے بہت سے فنکشنز فراہم کرتی ہے۔ ان پر پروگراموں کی مدد سے ذیل میں بات کی گئی ہے۔",
+     "pashto": "د string سرپاڼه دوتنه د تار د بدلون ډېر فنکشنونه برابروي. دا د پروګرامونو په مرسته لاندې څېړل شوي."
+    },
+    {
+     "text": "a. Concatenation of strings",
+     "urdu": "a. اسٹرنگز کو جوڑنا",
+     "pashto": "a. د تارونو نښلول"
+    },
+    {
+     "text": "Strcat() function",
+     "urdu": "Strcat() فنکشن",
+     "pashto": "Strcat() فنکشن"
+    },
+    {
+     "text": "Combining two strings into a single string is called string concatenation. Strcat() function is used for this purpose. The following program demonstrates the implementation of strcat() function for the concatenation of the two strings.",
+     "urdu": "دو اسٹرنگز کو ایک اسٹرنگ میں ملانا اسٹرنگ کنکیٹینیشن کہلاتا ہے۔ اس مقصد کے لیے Strcat() فنکشن استعمال ہوتا ہے۔ درج ذیل پروگرام دو اسٹرنگز کو جوڑنے کے لیے strcat() فنکشن کا نفاذ دکھاتا ہے۔",
+     "pashto": "د دوو تارونو یو تار ته یوځای کول د تار نښلول بلل کېږي. د دې موخې لپاره Strcat() فنکشن کارېږي. لاندې پروګرام د دوو تارونو د نښلولو لپاره د strcat() فنکشن پلي کول ښيي."
+    },
+    {
+     "text": "// strings concatenation program\n#include <iostream.h>\n#include <string.h>\n#include<conio.h>\nint main()\n{\nchar FirstName[15] = \"SSC \";\nchar LastName[15] = \"Computer\";\nstrcat(FirstName, LastName);\ncout << FirstName;\ngetch();\nreturn 0;\n}",
+     "urdu": "// strings concatenation program\n#include <iostream.h>\n#include <string.h>\n#include<conio.h>\nint main()\n{\nchar FirstName[15] = \"SSC \";\nchar LastName[15] = \"Computer\";\nstrcat(FirstName, LastName);\ncout << FirstName;\ngetch();\nreturn 0;\n}",
+     "pashto": "// strings concatenation program\n#include <iostream.h>\n#include <string.h>\n#include<conio.h>\nint main()\n{\nchar FirstName[15] = \"SSC \";\nchar LastName[15] = \"Computer\";\nstrcat(FirstName, LastName);\ncout << FirstName;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "SSC Computer",
+     "urdu": "SSC Computer",
+     "pashto": "SSC Computer",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. Copying of strings",
+     "urdu": "b. اسٹرنگز کی نقل",
+     "pashto": "b. د تارونو کاپي کول"
+    },
+    {
+     "text": "copy() function",
+     "urdu": "copy() فنکشن",
+     "pashto": "copy() فنکشن"
+    },
+    {
+     "text": "copy() function is used to copy one string to another string. The general syntax of copy function is given below:",
+     "urdu": "copy() فنکشن ایک اسٹرنگ کو دوسری اسٹرنگ میں نقل کرنے کے لیے استعمال ہوتا ہے۔ copy فنکشن کا عمومی طریقۂ تحریر ذیل میں ہے:",
+     "pashto": "copy() فنکشن د یوه تار بل تار ته د کاپي کولو لپاره کارېږي. د copy فنکشن عمومي بڼه لاندې ده:"
+    },
+    {
+     "text": "str.copy (string_name, number_of_characters, starting_pointer)",
+     "urdu": "str.copy (string_name, number_of_characters, starting_pointer)",
+     "pashto": "str.copy (string_name, number_of_characters, starting_pointer)",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, the string_name is the name of the string to which the string is to be copied. number_of_characters represents the exacts number of characters to be copied and starting_pointer indicates the starting point from where to copy. Consider the following program:",
+     "urdu": "یہاں string_name اس اسٹرنگ کا نام ہے جس میں اسٹرنگ نقل کی جانی ہے۔ number_of_characters نقل کیے جانے والے حروف کی درست تعداد ظاہر کرتا ہے اور starting_pointer وہ نقطۂ آغاز بتاتا ہے جہاں سے نقل کرنا ہے۔ درج ذیل پروگرام پر غور کریں:",
+     "pashto": "دلته string_name د هغه تار نوم دی چې تار پکې کاپي کېږي. number_of_characters د کاپي کېدونکو تورو دقیق شمېر ښيي او starting_pointer د پیل ټکی ښيي چې له کومه ځایه کاپي شي. لاندې پروګرام ته پام وکړئ:"
+    },
+    {
+     "text": "// strings copying program using copy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str = \"Welcome to C++ Strings\";\nchar x[55];\ncout << \"str is: \" << str << endl;\nstr.copy(x, 7, 0); // copy 7 characters of string str into string x, starting from position zero\ncout << \"The copied string is: \" << x << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "// strings copying program using copy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str = \"Welcome to C++ Strings\";\nchar x[55];\ncout << \"str is: \" << str << endl;\nstr.copy(x, 7, 0); // copy 7 characters of string str into string x, starting from position zero\ncout << \"The copied string is: \" << x << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "// strings copying program using copy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str = \"Welcome to C++ Strings\";\nchar x[55];\ncout << \"str is: \" << str << endl;\nstr.copy(x, 7, 0); // copy 7 characters of string str into string x, starting from position zero\ncout << \"The copied string is: \" << x << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Welcome to C++ Strings\nThe copied string is: Welcome",
+     "urdu": "Welcome to C++ Strings\nThe copied string is: Welcome",
+     "pashto": "Welcome to C++ Strings\nThe copied string is: Welcome",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "5.3.4 Commonly used string functions\n\nThe header file string provides many string manipulation functions. These are discussed with the help of programs as follows.\n\na. Concatenation of strings\n\nStrcat() function\n\nCombining two strings into a single string is called string concatenation. Strcat() function is used for this purpose. The following program demonstrates the implementation of strcat() function for the concatenation of the two strings.\n\n// strings concatenation program\n#include <iostream.h>\n#include <string.h>\n#include<conio.h>\nint main()\n{\nchar FirstName[15] = \"SSC \";\nchar LastName[15] = \"Computer\";\nstrcat(FirstName, LastName);\ncout << FirstName;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nSSC Computer\n\nb. Copying of strings\n\ncopy() function\n\ncopy() function is used to copy one string to another string. The general syntax of copy function is given below:\n\nstr.copy (string_name, number_of_characters, starting_pointer)\n\nHere, the string_name is the name of the string to which the string is to be copied. number_of_characters represents the exacts number of characters to be copied and starting_pointer indicates the starting point from where to copy. Consider the following program:\n\n// strings copying program using copy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str = \"Welcome to C++ Strings\";\nchar x[55];\ncout << \"str is: \" << str << endl;\nstr.copy(x, 7, 0); // copy 7 characters of string str into string x, starting from position zero\ncout << \"The copied string is: \" << x << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nWelcome to C++ Strings\nThe copied string is: Welcome",
+   "urdu": "5.3.4 عام استعمال ہونے والے اسٹرنگ فنکشنز\n\nہیڈر فائل string اسٹرنگ میں تبدیلی کے بہت سے فنکشنز فراہم کرتی ہے۔ ان پر پروگراموں کی مدد سے ذیل میں بات کی گئی ہے۔\n\na. اسٹرنگز کو جوڑنا\n\nStrcat() فنکشن\n\nدو اسٹرنگز کو ایک اسٹرنگ میں ملانا اسٹرنگ کنکیٹینیشن کہلاتا ہے۔ اس مقصد کے لیے Strcat() فنکشن استعمال ہوتا ہے۔ درج ذیل پروگرام دو اسٹرنگز کو جوڑنے کے لیے strcat() فنکشن کا نفاذ دکھاتا ہے۔\n\n// strings concatenation program\n#include <iostream.h>\n#include <string.h>\n#include<conio.h>\nint main()\n{\nchar FirstName[15] = \"SSC \";\nchar LastName[15] = \"Computer\";\nstrcat(FirstName, LastName);\ncout << FirstName;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nSSC Computer\n\nb. اسٹرنگز کی نقل\n\ncopy() فنکشن\n\ncopy() فنکشن ایک اسٹرنگ کو دوسری اسٹرنگ میں نقل کرنے کے لیے استعمال ہوتا ہے۔ copy فنکشن کا عمومی طریقۂ تحریر ذیل میں ہے:\n\nstr.copy (string_name, number_of_characters, starting_pointer)\n\nیہاں string_name اس اسٹرنگ کا نام ہے جس میں اسٹرنگ نقل کی جانی ہے۔ number_of_characters نقل کیے جانے والے حروف کی درست تعداد ظاہر کرتا ہے اور starting_pointer وہ نقطۂ آغاز بتاتا ہے جہاں سے نقل کرنا ہے۔ درج ذیل پروگرام پر غور کریں:\n\n// strings copying program using copy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str = \"Welcome to C++ Strings\";\nchar x[55];\ncout << \"str is: \" << str << endl;\nstr.copy(x, 7, 0); // copy 7 characters of string str into string x, starting from position zero\ncout << \"The copied string is: \" << x << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome to C++ Strings\nThe copied string is: Welcome",
+   "pashto": "۵.۳.۴ عام کارېدونکي د تار فنکشنونه\n\nد string سرپاڼه دوتنه د تار د بدلون ډېر فنکشنونه برابروي. دا د پروګرامونو په مرسته لاندې څېړل شوي.\n\na. د تارونو نښلول\n\nStrcat() فنکشن\n\nد دوو تارونو یو تار ته یوځای کول د تار نښلول بلل کېږي. د دې موخې لپاره Strcat() فنکشن کارېږي. لاندې پروګرام د دوو تارونو د نښلولو لپاره د strcat() فنکشن پلي کول ښيي.\n\n// strings concatenation program\n#include <iostream.h>\n#include <string.h>\n#include<conio.h>\nint main()\n{\nchar FirstName[15] = \"SSC \";\nchar LastName[15] = \"Computer\";\nstrcat(FirstName, LastName);\ncout << FirstName;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nSSC Computer\n\nb. د تارونو کاپي کول\n\ncopy() فنکشن\n\ncopy() فنکشن د یوه تار بل تار ته د کاپي کولو لپاره کارېږي. د copy فنکشن عمومي بڼه لاندې ده:\n\nstr.copy (string_name, number_of_characters, starting_pointer)\n\nدلته string_name د هغه تار نوم دی چې تار پکې کاپي کېږي. number_of_characters د کاپي کېدونکو تورو دقیق شمېر ښيي او starting_pointer د پیل ټکی ښيي چې له کومه ځایه کاپي شي. لاندې پروګرام ته پام وکړئ:\n\n// strings copying program using copy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str = \"Welcome to C++ Strings\";\nchar x[55];\ncout << \"str is: \" << str << endl;\nstr.copy(x, 7, 0); // copy 7 characters of string str into string x, starting from position zero\ncout << \"The copied string is: \" << x << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome to C++ Strings\nThe copied string is: Welcome",
+   "theoryUrdu": "5.3.4 عام استعمال ہونے والے اسٹرنگ فنکشنز\n\nہیڈر فائل string اسٹرنگ میں تبدیلی کے بہت سے فنکشنز فراہم کرتی ہے۔ ان پر پروگراموں کی مدد سے ذیل میں بات کی گئی ہے۔\n\na. اسٹرنگز کو جوڑنا\n\nStrcat() فنکشن\n\nدو اسٹرنگز کو ایک اسٹرنگ میں ملانا اسٹرنگ کنکیٹینیشن کہلاتا ہے۔ اس مقصد کے لیے Strcat() فنکشن استعمال ہوتا ہے۔ درج ذیل پروگرام دو اسٹرنگز کو جوڑنے کے لیے strcat() فنکشن کا نفاذ دکھاتا ہے۔\n\n// strings concatenation program\n#include <iostream.h>\n#include <string.h>\n#include<conio.h>\nint main()\n{\nchar FirstName[15] = \"SSC \";\nchar LastName[15] = \"Computer\";\nstrcat(FirstName, LastName);\ncout << FirstName;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nSSC Computer\n\nb. اسٹرنگز کی نقل\n\ncopy() فنکشن\n\ncopy() فنکشن ایک اسٹرنگ کو دوسری اسٹرنگ میں نقل کرنے کے لیے استعمال ہوتا ہے۔ copy فنکشن کا عمومی طریقۂ تحریر ذیل میں ہے:\n\nstr.copy (string_name, number_of_characters, starting_pointer)\n\nیہاں string_name اس اسٹرنگ کا نام ہے جس میں اسٹرنگ نقل کی جانی ہے۔ number_of_characters نقل کیے جانے والے حروف کی درست تعداد ظاہر کرتا ہے اور starting_pointer وہ نقطۂ آغاز بتاتا ہے جہاں سے نقل کرنا ہے۔ درج ذیل پروگرام پر غور کریں:\n\n// strings copying program using copy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str = \"Welcome to C++ Strings\";\nchar x[55];\ncout << \"str is: \" << str << endl;\nstr.copy(x, 7, 0); // copy 7 characters of string str into string x, starting from position zero\ncout << \"The copied string is: \" << x << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome to C++ Strings\nThe copied string is: Welcome",
+   "theoryPashto": "۵.۳.۴ عام کارېدونکي د تار فنکشنونه\n\nد string سرپاڼه دوتنه د تار د بدلون ډېر فنکشنونه برابروي. دا د پروګرامونو په مرسته لاندې څېړل شوي.\n\na. د تارونو نښلول\n\nStrcat() فنکشن\n\nد دوو تارونو یو تار ته یوځای کول د تار نښلول بلل کېږي. د دې موخې لپاره Strcat() فنکشن کارېږي. لاندې پروګرام د دوو تارونو د نښلولو لپاره د strcat() فنکشن پلي کول ښيي.\n\n// strings concatenation program\n#include <iostream.h>\n#include <string.h>\n#include<conio.h>\nint main()\n{\nchar FirstName[15] = \"SSC \";\nchar LastName[15] = \"Computer\";\nstrcat(FirstName, LastName);\ncout << FirstName;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nSSC Computer\n\nb. د تارونو کاپي کول\n\ncopy() فنکشن\n\ncopy() فنکشن د یوه تار بل تار ته د کاپي کولو لپاره کارېږي. د copy فنکشن عمومي بڼه لاندې ده:\n\nstr.copy (string_name, number_of_characters, starting_pointer)\n\nدلته string_name د هغه تار نوم دی چې تار پکې کاپي کېږي. number_of_characters د کاپي کېدونکو تورو دقیق شمېر ښيي او starting_pointer د پیل ټکی ښيي چې له کومه ځایه کاپي شي. لاندې پروګرام ته پام وکړئ:\n\n// strings copying program using copy() function\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str = \"Welcome to C++ Strings\";\nchar x[55];\ncout << \"str is: \" << str << endl;\nstr.copy(x, 7, 0); // copy 7 characters of string str into string x, starting from position zero\ncout << \"The copied string is: \" << x << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome to C++ Strings\nThe copied string is: Welcome",
+   "content": "<p>5.3.4 Commonly used string functions</p><p>The header file string provides many string manipulation functions. These are discussed with the help of programs as follows.</p><p>a. Concatenation of strings</p><p>Strcat() function</p><p>Combining two strings into a single string is called string concatenation. Strcat() function is used for this purpose. The following program demonstrates the implementation of strcat() function for the concatenation of the two strings.</p><p>// strings concatenation program\n#include &lt;iostream.h&gt;\n#include &lt;string.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nchar FirstName[15] = &quot;SSC &quot;;\nchar LastName[15] = &quot;Computer&quot;;\nstrcat(FirstName, LastName);\ncout &lt;&lt; FirstName;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>SSC Computer</p><p>b. Copying of strings</p><p>copy() function</p><p>copy() function is used to copy one string to another string. The general syntax of copy function is given below:</p><p>str.copy (string_name, number_of_characters, starting_pointer)</p><p>Here, the string_name is the name of the string to which the string is to be copied. number_of_characters represents the exacts number of characters to be copied and starting_pointer indicates the starting point from where to copy. Consider the following program:</p><p>// strings copying program using copy() function\n#include &lt;iostream.h&gt;\n#include &lt;string&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nstring str = &quot;Welcome to C++ Strings&quot;;\nchar x[55];\ncout &lt;&lt; &quot;str is: &quot; &lt;&lt; str &lt;&lt; endl;\nstr.copy(x, 7, 0); // copy 7 characters of string str into string x, starting from position zero\ncout &lt;&lt; &quot;The copied string is: &quot; &lt;&lt; x &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Welcome to C++ Strings\nThe copied string is: Welcome</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 89,
+     "printedPages": [
+      166,
+      167,
+      168
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (11)",
+   "sourcePageLabel": "PDF 89 · p. 166–167–168",
+   "sourceNote": "The top of p.166 (end of the concatenation/size program) is recorded with PDF88. The copy() program runs from p.167 to p.168 (PDF90) and is given whole with its output.",
+   "unit": 5
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf089",
+   "unit": 5,
+   "printedPage": 167,
+   "description": "p.167 “represents the exacts number of characters”; the copy() output omits the “str is: ” prefix. Retained as printed. Owner signature on p.167 excluded."
+  }
+ ],
+ "completeUnits": []
+}

@@ -1,0 +1,213 @@
+{
+ "pdfPage": 81,
+ "sections": [
+  {
+   "id": "cs12-u5-text-3",
+   "title": "Unit 5 text (3)",
+   "headingUrdu": "یونٹ 5 — متن (۳)",
+   "headingPashto": "۵ څپرکی — متن (۳)",
+   "paras": [
+    {
+     "text": "If we do not initialize all of the elements in an array then the remaining elements will be initialized to 0.",
+     "urdu": "اگر ہم ایرے کے تمام عناصر کو ابتدائی قدر نہ دیں تو باقی عناصر کو 0 ابتدائی قدر مل جاتی ہے۔",
+     "pashto": "که د لړۍ ټولو عناصرو ته لومړنی ارزښت ورنه کړو، پاتې عناصر 0 لومړنی ارزښت اخلي."
+    },
+    {
+     "text": "Similarly, to initialize all the elements of an array to 0, we can define that array as:",
+     "urdu": "اسی طرح ایرے کے تمام عناصر کو 0 ابتدائی قدر دینے کے لیے ہم اس ایرے کی تعریف یوں کر سکتے ہیں:",
+     "pashto": "همداراز د لړۍ ټولو عناصرو ته د 0 لومړني ارزښت ورکولو لپاره هغه لړۍ داسې تعریفولی شو:"
+    },
+    {
+     "text": "int A[5]={0};",
+     "urdu": "int A[5]={0};",
+     "pashto": "int A[5]={0};",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "5.1.5 Accessing and writing at an index in an array",
+     "urdu": "5.1.5 ایرے میں کسی انڈیکس پر رسائی اور لکھنا",
+     "pashto": "۵.۱.۵ په لړۍ کې پر یوه شاخص لاسرسی او لیکل"
+    },
+    {
+     "text": "Accessing of array means to get into an index in an array and take its value for some operation while by writing at an index of an array is storing some value at a particular index of the array. These are the two important actions that should be taken while dealing with arrays.",
+     "urdu": "ایرے تک رسائی کا مطلب ایرے کے کسی انڈیکس تک پہنچ کر کسی عمل کے لیے اس کی قدر لینا ہے، جبکہ ایرے کے کسی انڈیکس پر لکھنے سے مراد ایرے کے کسی خاص انڈیکس پر کوئی قدر محفوظ کرنا ہے۔ ایریز سے کام کرتے ہوئے یہ دو اہم کام ہیں۔",
+     "pashto": "د لړۍ لاسرسي معنا ده چې د لړۍ یوه شاخص ته ورسېږو او د یوې عملیې لپاره یې ارزښت واخلو، او د لړۍ پر یوه شاخص لیکل په یوه ځانګړي شاخص کې د یوه ارزښت ساتل دي. دا دوه مهم کارونه دي چې د لړیو سره د کار پر مهال باید وشي."
+    },
+    {
+     "text": "The following section addresses them with examples.",
+     "urdu": "درج ذیل حصہ مثالوں کے ساتھ ان پر بات کرتا ہے۔",
+     "pashto": "لاندې برخه دا د بېلګو سره څېړي."
+    },
+    {
+     "text": "Accessing an array",
+     "urdu": "ایرے تک رسائی",
+     "pashto": "لړۍ ته لاسرسی"
+    },
+    {
+     "text": "Array elements are accessed by using respective indices. The format for accessing is as follows:",
+     "urdu": "ایرے کے عناصر تک متعلقہ انڈیسز کے ذریعے رسائی ہوتی ہے۔ رسائی کی شکل یہ ہے:",
+     "pashto": "د لړۍ عناصرو ته د اړوندو شاخصونو په کارولو لاسرسی کېږي. د لاسرسي بڼه دا ده:"
+    },
+    {
+     "text": "Array name[index];",
+     "urdu": "Array name[index];",
+     "pashto": "Array name[index];",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Looking at the example discussed in the above section, in which A has 5 elements, each of the element has been accessed as A[0], A[1], …, A[4] using cout statement.",
+     "urdu": "اوپر کے حصے میں زیرِ بحث مثال کو دیکھیں جس میں A کے 5 عناصر ہیں، ہر عنصر تک cout بیان کے ذریعے A[0]، A[1]، …، A[4] کے طور پر رسائی کی گئی ہے۔",
+     "pashto": "پورته برخه کې بحث شوې بېلګې ته وګورئ چې پکې A ۵ عناصر لري، هر عنصر ته د cout بیان په مرسته د A[0]، A[1]، …، A[4] په توګه لاسرسی شوی."
+    },
+    {
+     "text": "To access all elements of an array we use loops instead of individual reference to each element, For Example:",
+     "urdu": "ایرے کے تمام عناصر تک رسائی کے لیے ہم ہر عنصر کے انفرادی حوالے کے بجائے لوپس استعمال کرتے ہیں، مثال کے طور پر:",
+     "pashto": "د لړۍ ټولو عناصرو ته د لاسرسي لپاره د هر عنصر د جلا ګوتنیونې پر ځای حلقې کاروو، د بېلګې په توګه:"
+    },
+    {
+     "text": "// accessing array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\nfor(int i=0; i<=4; ++i)\ncout << A[i] << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "// accessing array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\nfor(int i=0; i<=4; ++i)\ncout << A[i] << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "// accessing array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\nfor(int i=0; i<=4; ++i)\ncout << A[i] << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "3\n2\n7\n5\n8",
+     "urdu": "3\n2\n7\n5\n8",
+     "pashto": "3\n2\n7\n5\n8",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, for loop has been used to access the elements of the array one by one and print the result on the screen.",
+     "urdu": "یہاں for لوپ ایرے کے عناصر تک ایک ایک کر کے رسائی اور نتیجہ اسکرین پر پرنٹ کرنے کے لیے استعمال ہوا ہے۔",
+     "pashto": "دلته for حلقه د لړۍ عناصرو ته یو په یو لاسرسي او پر پرده د پایلې چاپولو لپاره کارول شوې."
+    }
+   ],
+   "theory": "If we do not initialize all of the elements in an array then the remaining elements will be initialized to 0.\n\nSimilarly, to initialize all the elements of an array to 0, we can define that array as:\n\nint A[5]={0};\n\n5.1.5 Accessing and writing at an index in an array\n\nAccessing of array means to get into an index in an array and take its value for some operation while by writing at an index of an array is storing some value at a particular index of the array. These are the two important actions that should be taken while dealing with arrays.\n\nThe following section addresses them with examples.\n\nAccessing an array\n\nArray elements are accessed by using respective indices. The format for accessing is as follows:\n\nArray name[index];\n\nLooking at the example discussed in the above section, in which A has 5 elements, each of the element has been accessed as A[0], A[1], …, A[4] using cout statement.\n\nTo access all elements of an array we use loops instead of individual reference to each element, For Example:\n\n// accessing array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\nfor(int i=0; i<=4; ++i)\ncout << A[i] << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\n3\n2\n7\n5\n8\n\nHere, for loop has been used to access the elements of the array one by one and print the result on the screen.",
+   "urdu": "اگر ہم ایرے کے تمام عناصر کو ابتدائی قدر نہ دیں تو باقی عناصر کو 0 ابتدائی قدر مل جاتی ہے۔\n\nاسی طرح ایرے کے تمام عناصر کو 0 ابتدائی قدر دینے کے لیے ہم اس ایرے کی تعریف یوں کر سکتے ہیں:\n\nint A[5]={0};\n\n5.1.5 ایرے میں کسی انڈیکس پر رسائی اور لکھنا\n\nایرے تک رسائی کا مطلب ایرے کے کسی انڈیکس تک پہنچ کر کسی عمل کے لیے اس کی قدر لینا ہے، جبکہ ایرے کے کسی انڈیکس پر لکھنے سے مراد ایرے کے کسی خاص انڈیکس پر کوئی قدر محفوظ کرنا ہے۔ ایریز سے کام کرتے ہوئے یہ دو اہم کام ہیں۔\n\nدرج ذیل حصہ مثالوں کے ساتھ ان پر بات کرتا ہے۔\n\nایرے تک رسائی\n\nایرے کے عناصر تک متعلقہ انڈیسز کے ذریعے رسائی ہوتی ہے۔ رسائی کی شکل یہ ہے:\n\nArray name[index];\n\nاوپر کے حصے میں زیرِ بحث مثال کو دیکھیں جس میں A کے 5 عناصر ہیں، ہر عنصر تک cout بیان کے ذریعے A[0]، A[1]، …، A[4] کے طور پر رسائی کی گئی ہے۔\n\nایرے کے تمام عناصر تک رسائی کے لیے ہم ہر عنصر کے انفرادی حوالے کے بجائے لوپس استعمال کرتے ہیں، مثال کے طور پر:\n\n// accessing array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\nfor(int i=0; i<=4; ++i)\ncout << A[i] << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n3\n2\n7\n5\n8\n\nیہاں for لوپ ایرے کے عناصر تک ایک ایک کر کے رسائی اور نتیجہ اسکرین پر پرنٹ کرنے کے لیے استعمال ہوا ہے۔",
+   "pashto": "که د لړۍ ټولو عناصرو ته لومړنی ارزښت ورنه کړو، پاتې عناصر 0 لومړنی ارزښت اخلي.\n\nهمداراز د لړۍ ټولو عناصرو ته د 0 لومړني ارزښت ورکولو لپاره هغه لړۍ داسې تعریفولی شو:\n\nint A[5]={0};\n\n۵.۱.۵ په لړۍ کې پر یوه شاخص لاسرسی او لیکل\n\nد لړۍ لاسرسي معنا ده چې د لړۍ یوه شاخص ته ورسېږو او د یوې عملیې لپاره یې ارزښت واخلو، او د لړۍ پر یوه شاخص لیکل په یوه ځانګړي شاخص کې د یوه ارزښت ساتل دي. دا دوه مهم کارونه دي چې د لړیو سره د کار پر مهال باید وشي.\n\nلاندې برخه دا د بېلګو سره څېړي.\n\nلړۍ ته لاسرسی\n\nد لړۍ عناصرو ته د اړوندو شاخصونو په کارولو لاسرسی کېږي. د لاسرسي بڼه دا ده:\n\nArray name[index];\n\nپورته برخه کې بحث شوې بېلګې ته وګورئ چې پکې A ۵ عناصر لري، هر عنصر ته د cout بیان په مرسته د A[0]، A[1]، …، A[4] په توګه لاسرسی شوی.\n\nد لړۍ ټولو عناصرو ته د لاسرسي لپاره د هر عنصر د جلا ګوتنیونې پر ځای حلقې کاروو، د بېلګې په توګه:\n\n// accessing array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\nfor(int i=0; i<=4; ++i)\ncout << A[i] << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n3\n2\n7\n5\n8\n\nدلته for حلقه د لړۍ عناصرو ته یو په یو لاسرسي او پر پرده د پایلې چاپولو لپاره کارول شوې.",
+   "theoryUrdu": "اگر ہم ایرے کے تمام عناصر کو ابتدائی قدر نہ دیں تو باقی عناصر کو 0 ابتدائی قدر مل جاتی ہے۔\n\nاسی طرح ایرے کے تمام عناصر کو 0 ابتدائی قدر دینے کے لیے ہم اس ایرے کی تعریف یوں کر سکتے ہیں:\n\nint A[5]={0};\n\n5.1.5 ایرے میں کسی انڈیکس پر رسائی اور لکھنا\n\nایرے تک رسائی کا مطلب ایرے کے کسی انڈیکس تک پہنچ کر کسی عمل کے لیے اس کی قدر لینا ہے، جبکہ ایرے کے کسی انڈیکس پر لکھنے سے مراد ایرے کے کسی خاص انڈیکس پر کوئی قدر محفوظ کرنا ہے۔ ایریز سے کام کرتے ہوئے یہ دو اہم کام ہیں۔\n\nدرج ذیل حصہ مثالوں کے ساتھ ان پر بات کرتا ہے۔\n\nایرے تک رسائی\n\nایرے کے عناصر تک متعلقہ انڈیسز کے ذریعے رسائی ہوتی ہے۔ رسائی کی شکل یہ ہے:\n\nArray name[index];\n\nاوپر کے حصے میں زیرِ بحث مثال کو دیکھیں جس میں A کے 5 عناصر ہیں، ہر عنصر تک cout بیان کے ذریعے A[0]، A[1]، …، A[4] کے طور پر رسائی کی گئی ہے۔\n\nایرے کے تمام عناصر تک رسائی کے لیے ہم ہر عنصر کے انفرادی حوالے کے بجائے لوپس استعمال کرتے ہیں، مثال کے طور پر:\n\n// accessing array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\nfor(int i=0; i<=4; ++i)\ncout << A[i] << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n3\n2\n7\n5\n8\n\nیہاں for لوپ ایرے کے عناصر تک ایک ایک کر کے رسائی اور نتیجہ اسکرین پر پرنٹ کرنے کے لیے استعمال ہوا ہے۔",
+   "theoryPashto": "که د لړۍ ټولو عناصرو ته لومړنی ارزښت ورنه کړو، پاتې عناصر 0 لومړنی ارزښت اخلي.\n\nهمداراز د لړۍ ټولو عناصرو ته د 0 لومړني ارزښت ورکولو لپاره هغه لړۍ داسې تعریفولی شو:\n\nint A[5]={0};\n\n۵.۱.۵ په لړۍ کې پر یوه شاخص لاسرسی او لیکل\n\nد لړۍ لاسرسي معنا ده چې د لړۍ یوه شاخص ته ورسېږو او د یوې عملیې لپاره یې ارزښت واخلو، او د لړۍ پر یوه شاخص لیکل په یوه ځانګړي شاخص کې د یوه ارزښت ساتل دي. دا دوه مهم کارونه دي چې د لړیو سره د کار پر مهال باید وشي.\n\nلاندې برخه دا د بېلګو سره څېړي.\n\nلړۍ ته لاسرسی\n\nد لړۍ عناصرو ته د اړوندو شاخصونو په کارولو لاسرسی کېږي. د لاسرسي بڼه دا ده:\n\nArray name[index];\n\nپورته برخه کې بحث شوې بېلګې ته وګورئ چې پکې A ۵ عناصر لري، هر عنصر ته د cout بیان په مرسته د A[0]، A[1]، …، A[4] په توګه لاسرسی شوی.\n\nد لړۍ ټولو عناصرو ته د لاسرسي لپاره د هر عنصر د جلا ګوتنیونې پر ځای حلقې کاروو، د بېلګې په توګه:\n\n// accessing array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\nfor(int i=0; i<=4; ++i)\ncout << A[i] << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n3\n2\n7\n5\n8\n\nدلته for حلقه د لړۍ عناصرو ته یو په یو لاسرسي او پر پرده د پایلې چاپولو لپاره کارول شوې.",
+   "content": "<p>If we do not initialize all of the elements in an array then the remaining elements will be initialized to 0.</p><p>Similarly, to initialize all the elements of an array to 0, we can define that array as:</p><p>int A[5]={0};</p><p>5.1.5 Accessing and writing at an index in an array</p><p>Accessing of array means to get into an index in an array and take its value for some operation while by writing at an index of an array is storing some value at a particular index of the array. These are the two important actions that should be taken while dealing with arrays.</p><p>The following section addresses them with examples.</p><p>Accessing an array</p><p>Array elements are accessed by using respective indices. The format for accessing is as follows:</p><p>Array name[index];</p><p>Looking at the example discussed in the above section, in which A has 5 elements, each of the element has been accessed as A[0], A[1], …, A[4] using cout statement.</p><p>To access all elements of an array we use loops instead of individual reference to each element, For Example:</p><p>// accessing array using loop\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\nfor(int i=0; i&lt;=4; ++i)\ncout &lt;&lt; A[i] &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>3\n2\n7\n5\n8</p><p>Here, for loop has been used to access the elements of the array one by one and print the result on the screen.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 81,
+     "printedPages": [
+      150,
+      151
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (3)",
+   "sourcePageLabel": "PDF 81 · p. 150–151",
+   "sourceNote": "The top of p.150 (end of the initializer-list program and its output) is recorded with PDF80.",
+   "unit": 5
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

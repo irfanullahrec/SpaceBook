@@ -1,0 +1,306 @@
+{
+ "pdfPage": 102,
+ "sections": [
+  {
+   "id": "stat12-p102-point-estimation",
+   "title": "6.1.3–6.2 Estimator vs estimate, point estimation — Example 6.1",
+   "headingUrdu": "6.1.3–6.2 تخمین کار بمقابلہ تخمینہ، نقطہ تخمین — مثال 6.1",
+   "headingPashto": "6.1.3–6.2 اټکلوونکی او اټکل، ټکي‌ییز اټکل — بېلګه 6.1",
+   "paras": [
+    {
+     "text": "6.1.3 Difference between an estimator and an estimate",
+     "urdu": "6.1.3 تخمین کار اور تخمینہ میں فرق",
+     "pashto": "6.1.3 د اټکلوونکي او اټکل شوي قیمت ترمنځ توپیر"
+    },
+    {
+     "text": "A rule, usually expressed as a formula that tells us how to calculate an estimate from the sample data is called an estimator and the resulting number is called an estimate.",
+     "urdu": "وہ قاعدہ جو عموماً فارمولا کی شکل میں ہو اور ہمیں بتائے کہ نمونے کے مواد سے تخمینہ کیسے معلوم کیا جائے، تخمین کار کہلاتا ہے اور حاصل عدد کو تخمینہ کہتے ہیں۔",
+     "pashto": "هغه قاعده چې معمولاً د فورمول په بڼه وي او موږ ته وایي چې له نمونوي معلوماتو څخه اټکل څنګه محاسبه کړو، اټکلوونکی بلل کېږي او لاسته راغلي عدد ته اټکل شوی قیمت وایي."
+    },
+    {
+     "text": "For example; if $\\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}=100$ then $\\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}$ is an estimator and 100 is an estimate. Similarly, if $s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}=2.63$ then $s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}$ is an estimator and its numerical value 2.63 is an estimate.",
+     "urdu": "مثلاً؛ اگر $\\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}=100$ ہو تو $\\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}$ تخمین کار اور 100 تخمینہ ہے۔ اسی طرح اگر $s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}=2.63$ ہو تو $s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}$ تخمین کار اور اس کی عددی قیمت 2.63 تخمینہ ہے۔",
+     "pashto": "د بېلګې په توګه؛ که $\\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}=100$ وي نو $\\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}$ اټکلوونکی او 100 اټکل شوی قیمت دی. همداراز که $s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}=2.63$ وي نو $s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}$ اټکلوونکی او شمېریز قیمت یې 2.63 اټکل شوی قیمت دی."
+    },
+    {
+     "text": "6.2 Point estimation",
+     "urdu": "6.2 نقطہ تخمین",
+     "pashto": "6.2 ټکي‌ییز اټکل"
+    },
+    {
+     "text": "This process provides a single value which is calculated from the sample data as an estimate for the unknown population parameter. Point estimate may or may not be close to the parameter because the random sample used is one of the many possible samples which could be selected from the population.",
+     "urdu": "یہ عمل ایک واحد قیمت فراہم کرتا ہے جو نمونے کے مواد سے نامعلوم آبادی کے پیرامیٹر کے تخمینے کے طور پر معلوم کی جاتی ہے۔ نقطہ تخمینہ پیرامیٹر کے قریب ہو بھی سکتا ہے اور نہیں بھی، کیونکہ استعمال ہونے والا تصادفی نمونہ ان بہت سے ممکنہ نمونوں میں سے ایک ہے جو آبادی سے منتخب کیے جا سکتے تھے۔",
+     "pashto": "دا بهیر یو یوازینی قیمت ورکوي چې له نمونوي معلوماتو څخه د نامعلوم نفوس پارامټر د اټکل په توګه محاسبه کېږي. ټکي‌ییز اټکل کېدای شي پارامټر ته نږدې وي یا نه، ځکه چې کارول شوې تصادفي نمونه له هغو ډېرو شونو نمونو یوه ده چې له نفوس څخه ټاکل کېدای شوې."
+    },
+    {
+     "text": "Example 6.1",
+     "urdu": "مثال 6.1",
+     "pashto": "بېلګه 6.1"
+    },
+    {
+     "text": "A random sample has ten observations 4, 3, 7, 8, 4, 10, 5, 5, 4 and 9. Compute a point estimate of (i) population mean (ii) population standard deviation (iii) standard error of the mean (iv) population proportion of even numbers.",
+     "urdu": "ایک تصادفی نمونے میں دس مشاہدات 4، 3، 7، 8، 4، 10، 5، 5، 4 اور 9 ہیں۔ نقطہ تخمینہ معلوم کریں (i) آبادی کا اوسط (ii) آبادی کا معیاری انحراف (iii) اوسط کی معیاری غلطی (iv) جفت اعداد کا آبادی میں تناسب۔",
+     "pashto": "یوه تصادفي نمونه لس مشاهدې 4، 3، 7، 8، 4، 10، 5، 5، 4 او 9 لري. ټکي‌ییز اټکل یې محاسبه کړئ (i) د نفوس منځنی (ii) د نفوس معیاري انحراف (iii) د منځني معیاري تېروتنه (iv) د جفت عددونو په نفوس کې تناسب."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "(i) Point estimate of the population mean μ is;",
+     "urdu": "(i) آبادی کے اوسط μ کا نقطہ تخمینہ یہ ہے؛",
+     "pashto": "(i) د نفوس د منځني μ ټکي‌ییز اټکل دا دی؛"
+    },
+    {
+     "text": "$\\overline{X}=\\frac{\\Sigma x}{n}$ (estimator)",
+     "urdu": "$\\overline{X}=\\frac{\\Sigma x}{n}$ (تخمین کار)",
+     "pashto": "$\\overline{X}=\\frac{\\Sigma x}{n}$ (اټکلوونکی)"
+    },
+    {
+     "text": "$=\\frac{59}{10}=5.9$ (point estimate)",
+     "urdu": "$=\\frac{59}{10}=5.9$ (نقطہ تخمینہ)",
+     "pashto": "$=\\frac{59}{10}=5.9$ (ټکي‌ییز اټکل)"
+    },
+    {
+     "text": "(ii) Point estimate of the population standard deviation σ is;",
+     "urdu": "(ii) آبادی کے معیاری انحراف σ کا نقطہ تخمینہ یہ ہے؛",
+     "pashto": "(ii) د نفوس د معیاري انحراف σ ټکي‌ییز اټکل دا دی؛"
+    },
+    {
+     "text": "$s=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\frac{(\\Sigma x)^2}{n}\\right]}$ (estimator)",
+     "urdu": "$s=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\frac{(\\Sigma x)^2}{n}\\right]}$ (تخمین کار)",
+     "pashto": "$s=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\frac{(\\Sigma x)^2}{n}\\right]}$ (اټکلوونکی)"
+    },
+    {
+     "text": "$=\\sqrt{\\frac{1}{10-1}\\left[401-\\frac{(59)^2}{10}\\right]}$",
+     "urdu": "$=\\sqrt{\\frac{1}{10-1}\\left[401-\\frac{(59)^2}{10}\\right]}$",
+     "pashto": "$=\\sqrt{\\frac{1}{10-1}\\left[401-\\frac{(59)^2}{10}\\right]}$"
+    },
+    {
+     "text": "$=\\sqrt{\\frac{1}{9}[401-348.1]}$",
+     "urdu": "$=\\sqrt{\\frac{1}{9}[401-348.1]}$",
+     "pashto": "$=\\sqrt{\\frac{1}{9}[401-348.1]}$"
+    },
+    {
+     "text": "$=\\sqrt{\\frac{52.9}{9}}=2.42$ (point estimate)",
+     "urdu": "$=\\sqrt{\\frac{52.9}{9}}=2.42$ (نقطہ تخمینہ)",
+     "pashto": "$=\\sqrt{\\frac{52.9}{9}}=2.42$ (ټکي‌ییز اټکل)"
+    },
+    {
+     "text": "(iii) Point estimate of the standard error $\\sigma_{\\overline{x}}$ is;",
+     "urdu": "(iii) معیاری غلطی $\\sigma_{\\overline{x}}$ کا نقطہ تخمینہ یہ ہے؛",
+     "pashto": "(iii) د معیاري تېروتنې $\\sigma_{\\overline{x}}$ ټکي‌ییز اټکل دا دی؛"
+    },
+    {
+     "text": "$s_{\\overline{x}}=\\frac{s}{\\sqrt{n}}$ (estimator)",
+     "urdu": "$s_{\\overline{x}}=\\frac{s}{\\sqrt{n}}$ (تخمین کار)",
+     "pashto": "$s_{\\overline{x}}=\\frac{s}{\\sqrt{n}}$ (اټکلوونکی)"
+    },
+    {
+     "text": "$=\\frac{2.42}{\\sqrt{10}}=0.77$ (point estimate)",
+     "urdu": "$=\\frac{2.42}{\\sqrt{10}}=0.77$ (نقطہ تخمینہ)",
+     "pashto": "$=\\frac{2.42}{\\sqrt{10}}=0.77$ (ټکي‌ییز اټکل)"
+    },
+    {
+     "text": "(iv) Point estimate of the population proportion p is;",
+     "urdu": "(iv) آبادی کے تناسب p کا نقطہ تخمینہ یہ ہے؛",
+     "pashto": "(iv) د نفوس د تناسب p ټکي‌ییز اټکل دا دی؛"
+    },
+    {
+     "text": "$\\hat{p}=\\frac{X}{n}$ (estimator)",
+     "urdu": "$\\hat{p}=\\frac{X}{n}$ (تخمین کار)",
+     "pashto": "$\\hat{p}=\\frac{X}{n}$ (اټکلوونکی)"
+    },
+    {
+     "text": "$=\\frac{5}{10}=0.5$ (point estimate)",
+     "urdu": "$=\\frac{5}{10}=0.5$ (نقطہ تخمینہ)",
+     "pashto": "$=\\frac{5}{10}=0.5$ (ټکي‌ییز اټکل)"
+    },
+    {
+     "text": "6.2.2 Properties of a good point estimator",
+     "urdu": "6.2.2 اچھے نقطہ تخمین کار کی خصوصیات",
+     "pashto": "6.2.2 د ښه ټکي‌ییز اټکلوونکي ځانګړنې"
+    },
+    {
+     "text": "In point estimation the unknown value of a parameter is estimated by a single number which is quite risky job. This single value may or may not be equal to the true value of the parameter. The closeness of the estimate to the parameter value depends on random sample and the estimator. An ideal estimator is one which gives exactly the correct value of the parameter but such estimator does not exist in general. Hence to search a point estimate close to the parameter, it is necessary that the choice of one appropriate estimator in a given circumstance should be made on the basis of certain properties, called criteria for a good point estimator. A good point estimator is one which is unbiased, consistent,",
+     "urdu": "نقطہ تخمین میں پیرامیٹر کی نامعلوم قیمت کا تخمین ایک واحد عدد سے لگایا جاتا ہے جو کافی خطرناک کام ہے۔ یہ واحد قیمت پیرامیٹر کی حقیقی قیمت کے برابر ہو بھی سکتی ہے اور نہیں بھی۔ تخمینے کی پیرامیٹر کی قیمت سے قربت تصادفی نمونے اور تخمین کار پر منحصر ہے۔ مثالی تخمین کار وہ ہے جو پیرامیٹر کی بالکل درست قیمت دے لیکن عام طور پر ایسا تخمین کار موجود نہیں۔ لہٰذا پیرامیٹر کے قریب نقطہ تخمینہ تلاش کرنے کے لیے ضروری ہے کہ کسی صورتِ حال میں ایک موزوں تخمین کار کا انتخاب کچھ خصوصیات کی بنیاد پر کیا جائے جنہیں اچھے نقطہ تخمین کار کے معیارات کہتے ہیں۔ اچھا نقطہ تخمین کار وہ ہے جو غیر جانبدار، مستقل (consistent)،",
+     "pashto": "په ټکي‌ییز اټکل کې د پارامټر نامعلوم قیمت په یوه عدد اټکل کېږي چې ډېر خطرناک کار دی. دا یوازینی قیمت کېدای شي د پارامټر له رښتیني قیمت سره برابر وي یا نه. د اټکل نږدېوالی د پارامټر قیمت ته په تصادفي نمونه او اټکلوونکي پورې اړه لري. مثالي اټکلوونکی هغه دی چې د پارامټر دقیق سم قیمت ورکړي خو په عمومي ډول داسې اټکلوونکی نشته. نو د پارامټر ته د نږدې ټکي‌ییز اټکل د موندلو لپاره اړینه ده چې په یوه ورکړل شوي حالت کې د یوه مناسب اټکلوونکي ټاکنه د ځینو ځانګړنو پر بنسټ وشي چې د ښه ټکي‌ییز اټکلوونکي معیارونه بلل کېږي. ښه ټکي‌ییز اټکلوونکی هغه دی چې بې‌پلوه، ثابت (consistent)،"
+    }
+   ],
+   "theory": "6.1.3 Difference between an estimator and an estimate\n\nA rule, usually expressed as a formula that tells us how to calculate an estimate from the sample data is called an estimator and the resulting number is called an estimate.\n\nFor example; if \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}=100 then \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n} is an estimator and 100 is an estimate. Similarly, if s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}=2.63 then s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1} is an estimator and its numerical value 2.63 is an estimate.\n\n6.2 Point estimation\n\nThis process provides a single value which is calculated from the sample data as an estimate for the unknown population parameter. Point estimate may or may not be close to the parameter because the random sample used is one of the many possible samples which could be selected from the population.\n\nExample 6.1\n\nA random sample has ten observations 4, 3, 7, 8, 4, 10, 5, 5, 4 and 9. Compute a point estimate of (i) population mean (ii) population standard deviation (iii) standard error of the mean (iv) population proportion of even numbers.\n\nSolution:\n\n(i) Point estimate of the population mean μ is;\n\n\\overline{X}=\\frac{\\Sigma x}{n} (estimator)\n\n=\\frac{59}{10}=5.9 (point estimate)\n\n(ii) Point estimate of the population standard deviation σ is;\n\ns=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\frac{(\\Sigma x)^2}{n}\\right]} (estimator)\n\n=\\sqrt{\\frac{1}{10-1}\\left[401-\\frac{(59)^2}{10}\\right]}\n\n=\\sqrt{\\frac{1}{9}[401-348.1]}\n\n=\\sqrt{\\frac{52.9}{9}}=2.42 (point estimate)\n\n(iii) Point estimate of the standard error \\sigma_{\\overline{x}} is;\n\ns_{\\overline{x}}=\\frac{s}{\\sqrt{n}} (estimator)\n\n=\\frac{2.42}{\\sqrt{10}}=0.77 (point estimate)\n\n(iv) Point estimate of the population proportion p is;\n\n\\hat{p}=\\frac{X}{n} (estimator)\n\n=\\frac{5}{10}=0.5 (point estimate)\n\n6.2.2 Properties of a good point estimator\n\nIn point estimation the unknown value of a parameter is estimated by a single number which is quite risky job. This single value may or may not be equal to the true value of the parameter. The closeness of the estimate to the parameter value depends on random sample and the estimator. An ideal estimator is one which gives exactly the correct value of the parameter but such estimator does not exist in general. Hence to search a point estimate close to the parameter, it is necessary that the choice of one appropriate estimator in a given circumstance should be made on the basis of certain properties, called criteria for a good point estimator. A good point estimator is one which is unbiased, consistent,",
+   "urdu": "6.1.3 تخمین کار اور تخمینہ میں فرق\n\nوہ قاعدہ جو عموماً فارمولا کی شکل میں ہو اور ہمیں بتائے کہ نمونے کے مواد سے تخمینہ کیسے معلوم کیا جائے، تخمین کار کہلاتا ہے اور حاصل عدد کو تخمینہ کہتے ہیں۔\n\nمثلاً؛ اگر \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}=100 ہو تو \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n} تخمین کار اور 100 تخمینہ ہے۔ اسی طرح اگر s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}=2.63 ہو تو s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1} تخمین کار اور اس کی عددی قیمت 2.63 تخمینہ ہے۔\n\n6.2 نقطہ تخمین\n\nیہ عمل ایک واحد قیمت فراہم کرتا ہے جو نمونے کے مواد سے نامعلوم آبادی کے پیرامیٹر کے تخمینے کے طور پر معلوم کی جاتی ہے۔ نقطہ تخمینہ پیرامیٹر کے قریب ہو بھی سکتا ہے اور نہیں بھی، کیونکہ استعمال ہونے والا تصادفی نمونہ ان بہت سے ممکنہ نمونوں میں سے ایک ہے جو آبادی سے منتخب کیے جا سکتے تھے۔\n\nمثال 6.1\n\nایک تصادفی نمونے میں دس مشاہدات 4، 3، 7، 8، 4، 10، 5، 5، 4 اور 9 ہیں۔ نقطہ تخمینہ معلوم کریں (i) آبادی کا اوسط (ii) آبادی کا معیاری انحراف (iii) اوسط کی معیاری غلطی (iv) جفت اعداد کا آبادی میں تناسب۔\n\nحل:\n\n(i) آبادی کے اوسط μ کا نقطہ تخمینہ یہ ہے؛\n\n\\overline{X}=\\frac{\\Sigma x}{n} (تخمین کار)\n\n=\\frac{59}{10}=5.9 (نقطہ تخمینہ)\n\n(ii) آبادی کے معیاری انحراف σ کا نقطہ تخمینہ یہ ہے؛\n\ns=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\frac{(\\Sigma x)^2}{n}\\right]} (تخمین کار)\n\n=\\sqrt{\\frac{1}{10-1}\\left[401-\\frac{(59)^2}{10}\\right]}\n\n=\\sqrt{\\frac{1}{9}[401-348.1]}\n\n=\\sqrt{\\frac{52.9}{9}}=2.42 (نقطہ تخمینہ)\n\n(iii) معیاری غلطی \\sigma_{\\overline{x}} کا نقطہ تخمینہ یہ ہے؛\n\ns_{\\overline{x}}=\\frac{s}{\\sqrt{n}} (تخمین کار)\n\n=\\frac{2.42}{\\sqrt{10}}=0.77 (نقطہ تخمینہ)\n\n(iv) آبادی کے تناسب p کا نقطہ تخمینہ یہ ہے؛\n\n\\hat{p}=\\frac{X}{n} (تخمین کار)\n\n=\\frac{5}{10}=0.5 (نقطہ تخمینہ)\n\n6.2.2 اچھے نقطہ تخمین کار کی خصوصیات\n\nنقطہ تخمین میں پیرامیٹر کی نامعلوم قیمت کا تخمین ایک واحد عدد سے لگایا جاتا ہے جو کافی خطرناک کام ہے۔ یہ واحد قیمت پیرامیٹر کی حقیقی قیمت کے برابر ہو بھی سکتی ہے اور نہیں بھی۔ تخمینے کی پیرامیٹر کی قیمت سے قربت تصادفی نمونے اور تخمین کار پر منحصر ہے۔ مثالی تخمین کار وہ ہے جو پیرامیٹر کی بالکل درست قیمت دے لیکن عام طور پر ایسا تخمین کار موجود نہیں۔ لہٰذا پیرامیٹر کے قریب نقطہ تخمینہ تلاش کرنے کے لیے ضروری ہے کہ کسی صورتِ حال میں ایک موزوں تخمین کار کا انتخاب کچھ خصوصیات کی بنیاد پر کیا جائے جنہیں اچھے نقطہ تخمین کار کے معیارات کہتے ہیں۔ اچھا نقطہ تخمین کار وہ ہے جو غیر جانبدار، مستقل (consistent)،",
+   "pashto": "6.1.3 د اټکلوونکي او اټکل شوي قیمت ترمنځ توپیر\n\nهغه قاعده چې معمولاً د فورمول په بڼه وي او موږ ته وایي چې له نمونوي معلوماتو څخه اټکل څنګه محاسبه کړو، اټکلوونکی بلل کېږي او لاسته راغلي عدد ته اټکل شوی قیمت وایي.\n\nد بېلګې په توګه؛ که \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}=100 وي نو \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n} اټکلوونکی او 100 اټکل شوی قیمت دی. همداراز که s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}=2.63 وي نو s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1} اټکلوونکی او شمېریز قیمت یې 2.63 اټکل شوی قیمت دی.\n\n6.2 ټکي‌ییز اټکل\n\nدا بهیر یو یوازینی قیمت ورکوي چې له نمونوي معلوماتو څخه د نامعلوم نفوس پارامټر د اټکل په توګه محاسبه کېږي. ټکي‌ییز اټکل کېدای شي پارامټر ته نږدې وي یا نه، ځکه چې کارول شوې تصادفي نمونه له هغو ډېرو شونو نمونو یوه ده چې له نفوس څخه ټاکل کېدای شوې.\n\nبېلګه 6.1\n\nیوه تصادفي نمونه لس مشاهدې 4، 3، 7، 8، 4، 10، 5، 5، 4 او 9 لري. ټکي‌ییز اټکل یې محاسبه کړئ (i) د نفوس منځنی (ii) د نفوس معیاري انحراف (iii) د منځني معیاري تېروتنه (iv) د جفت عددونو په نفوس کې تناسب.\n\nحل:\n\n(i) د نفوس د منځني μ ټکي‌ییز اټکل دا دی؛\n\n\\overline{X}=\\frac{\\Sigma x}{n} (اټکلوونکی)\n\n=\\frac{59}{10}=5.9 (ټکي‌ییز اټکل)\n\n(ii) د نفوس د معیاري انحراف σ ټکي‌ییز اټکل دا دی؛\n\ns=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\frac{(\\Sigma x)^2}{n}\\right]} (اټکلوونکی)\n\n=\\sqrt{\\frac{1}{10-1}\\left[401-\\frac{(59)^2}{10}\\right]}\n\n=\\sqrt{\\frac{1}{9}[401-348.1]}\n\n=\\sqrt{\\frac{52.9}{9}}=2.42 (ټکي‌ییز اټکل)\n\n(iii) د معیاري تېروتنې \\sigma_{\\overline{x}} ټکي‌ییز اټکل دا دی؛\n\ns_{\\overline{x}}=\\frac{s}{\\sqrt{n}} (اټکلوونکی)\n\n=\\frac{2.42}{\\sqrt{10}}=0.77 (ټکي‌ییز اټکل)\n\n(iv) د نفوس د تناسب p ټکي‌ییز اټکل دا دی؛\n\n\\hat{p}=\\frac{X}{n} (اټکلوونکی)\n\n=\\frac{5}{10}=0.5 (ټکي‌ییز اټکل)\n\n6.2.2 د ښه ټکي‌ییز اټکلوونکي ځانګړنې\n\nپه ټکي‌ییز اټکل کې د پارامټر نامعلوم قیمت په یوه عدد اټکل کېږي چې ډېر خطرناک کار دی. دا یوازینی قیمت کېدای شي د پارامټر له رښتیني قیمت سره برابر وي یا نه. د اټکل نږدېوالی د پارامټر قیمت ته په تصادفي نمونه او اټکلوونکي پورې اړه لري. مثالي اټکلوونکی هغه دی چې د پارامټر دقیق سم قیمت ورکړي خو په عمومي ډول داسې اټکلوونکی نشته. نو د پارامټر ته د نږدې ټکي‌ییز اټکل د موندلو لپاره اړینه ده چې په یوه ورکړل شوي حالت کې د یوه مناسب اټکلوونکي ټاکنه د ځینو ځانګړنو پر بنسټ وشي چې د ښه ټکي‌ییز اټکلوونکي معیارونه بلل کېږي. ښه ټکي‌ییز اټکلوونکی هغه دی چې بې‌پلوه، ثابت (consistent)،",
+   "theoryUrdu": "6.1.3 تخمین کار اور تخمینہ میں فرق\n\nوہ قاعدہ جو عموماً فارمولا کی شکل میں ہو اور ہمیں بتائے کہ نمونے کے مواد سے تخمینہ کیسے معلوم کیا جائے، تخمین کار کہلاتا ہے اور حاصل عدد کو تخمینہ کہتے ہیں۔\n\nمثلاً؛ اگر \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}=100 ہو تو \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n} تخمین کار اور 100 تخمینہ ہے۔ اسی طرح اگر s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}=2.63 ہو تو s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1} تخمین کار اور اس کی عددی قیمت 2.63 تخمینہ ہے۔\n\n6.2 نقطہ تخمین\n\nیہ عمل ایک واحد قیمت فراہم کرتا ہے جو نمونے کے مواد سے نامعلوم آبادی کے پیرامیٹر کے تخمینے کے طور پر معلوم کی جاتی ہے۔ نقطہ تخمینہ پیرامیٹر کے قریب ہو بھی سکتا ہے اور نہیں بھی، کیونکہ استعمال ہونے والا تصادفی نمونہ ان بہت سے ممکنہ نمونوں میں سے ایک ہے جو آبادی سے منتخب کیے جا سکتے تھے۔\n\nمثال 6.1\n\nایک تصادفی نمونے میں دس مشاہدات 4، 3، 7، 8، 4، 10، 5، 5، 4 اور 9 ہیں۔ نقطہ تخمینہ معلوم کریں (i) آبادی کا اوسط (ii) آبادی کا معیاری انحراف (iii) اوسط کی معیاری غلطی (iv) جفت اعداد کا آبادی میں تناسب۔\n\nحل:\n\n(i) آبادی کے اوسط μ کا نقطہ تخمینہ یہ ہے؛\n\n\\overline{X}=\\frac{\\Sigma x}{n} (تخمین کار)\n\n=\\frac{59}{10}=5.9 (نقطہ تخمینہ)\n\n(ii) آبادی کے معیاری انحراف σ کا نقطہ تخمینہ یہ ہے؛\n\ns=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\frac{(\\Sigma x)^2}{n}\\right]} (تخمین کار)\n\n=\\sqrt{\\frac{1}{10-1}\\left[401-\\frac{(59)^2}{10}\\right]}\n\n=\\sqrt{\\frac{1}{9}[401-348.1]}\n\n=\\sqrt{\\frac{52.9}{9}}=2.42 (نقطہ تخمینہ)\n\n(iii) معیاری غلطی \\sigma_{\\overline{x}} کا نقطہ تخمینہ یہ ہے؛\n\ns_{\\overline{x}}=\\frac{s}{\\sqrt{n}} (تخمین کار)\n\n=\\frac{2.42}{\\sqrt{10}}=0.77 (نقطہ تخمینہ)\n\n(iv) آبادی کے تناسب p کا نقطہ تخمینہ یہ ہے؛\n\n\\hat{p}=\\frac{X}{n} (تخمین کار)\n\n=\\frac{5}{10}=0.5 (نقطہ تخمینہ)\n\n6.2.2 اچھے نقطہ تخمین کار کی خصوصیات\n\nنقطہ تخمین میں پیرامیٹر کی نامعلوم قیمت کا تخمین ایک واحد عدد سے لگایا جاتا ہے جو کافی خطرناک کام ہے۔ یہ واحد قیمت پیرامیٹر کی حقیقی قیمت کے برابر ہو بھی سکتی ہے اور نہیں بھی۔ تخمینے کی پیرامیٹر کی قیمت سے قربت تصادفی نمونے اور تخمین کار پر منحصر ہے۔ مثالی تخمین کار وہ ہے جو پیرامیٹر کی بالکل درست قیمت دے لیکن عام طور پر ایسا تخمین کار موجود نہیں۔ لہٰذا پیرامیٹر کے قریب نقطہ تخمینہ تلاش کرنے کے لیے ضروری ہے کہ کسی صورتِ حال میں ایک موزوں تخمین کار کا انتخاب کچھ خصوصیات کی بنیاد پر کیا جائے جنہیں اچھے نقطہ تخمین کار کے معیارات کہتے ہیں۔ اچھا نقطہ تخمین کار وہ ہے جو غیر جانبدار، مستقل (consistent)،",
+   "theoryPashto": "6.1.3 د اټکلوونکي او اټکل شوي قیمت ترمنځ توپیر\n\nهغه قاعده چې معمولاً د فورمول په بڼه وي او موږ ته وایي چې له نمونوي معلوماتو څخه اټکل څنګه محاسبه کړو، اټکلوونکی بلل کېږي او لاسته راغلي عدد ته اټکل شوی قیمت وایي.\n\nد بېلګې په توګه؛ که \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}=100 وي نو \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n} اټکلوونکی او 100 اټکل شوی قیمت دی. همداراز که s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}=2.63 وي نو s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1} اټکلوونکی او شمېریز قیمت یې 2.63 اټکل شوی قیمت دی.\n\n6.2 ټکي‌ییز اټکل\n\nدا بهیر یو یوازینی قیمت ورکوي چې له نمونوي معلوماتو څخه د نامعلوم نفوس پارامټر د اټکل په توګه محاسبه کېږي. ټکي‌ییز اټکل کېدای شي پارامټر ته نږدې وي یا نه، ځکه چې کارول شوې تصادفي نمونه له هغو ډېرو شونو نمونو یوه ده چې له نفوس څخه ټاکل کېدای شوې.\n\nبېلګه 6.1\n\nیوه تصادفي نمونه لس مشاهدې 4، 3، 7، 8، 4، 10، 5، 5، 4 او 9 لري. ټکي‌ییز اټکل یې محاسبه کړئ (i) د نفوس منځنی (ii) د نفوس معیاري انحراف (iii) د منځني معیاري تېروتنه (iv) د جفت عددونو په نفوس کې تناسب.\n\nحل:\n\n(i) د نفوس د منځني μ ټکي‌ییز اټکل دا دی؛\n\n\\overline{X}=\\frac{\\Sigma x}{n} (اټکلوونکی)\n\n=\\frac{59}{10}=5.9 (ټکي‌ییز اټکل)\n\n(ii) د نفوس د معیاري انحراف σ ټکي‌ییز اټکل دا دی؛\n\ns=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\frac{(\\Sigma x)^2}{n}\\right]} (اټکلوونکی)\n\n=\\sqrt{\\frac{1}{10-1}\\left[401-\\frac{(59)^2}{10}\\right]}\n\n=\\sqrt{\\frac{1}{9}[401-348.1]}\n\n=\\sqrt{\\frac{52.9}{9}}=2.42 (ټکي‌ییز اټکل)\n\n(iii) د معیاري تېروتنې \\sigma_{\\overline{x}} ټکي‌ییز اټکل دا دی؛\n\ns_{\\overline{x}}=\\frac{s}{\\sqrt{n}} (اټکلوونکی)\n\n=\\frac{2.42}{\\sqrt{10}}=0.77 (ټکي‌ییز اټکل)\n\n(iv) د نفوس د تناسب p ټکي‌ییز اټکل دا دی؛\n\n\\hat{p}=\\frac{X}{n} (اټکلوونکی)\n\n=\\frac{5}{10}=0.5 (ټکي‌ییز اټکل)\n\n6.2.2 د ښه ټکي‌ییز اټکلوونکي ځانګړنې\n\nپه ټکي‌ییز اټکل کې د پارامټر نامعلوم قیمت په یوه عدد اټکل کېږي چې ډېر خطرناک کار دی. دا یوازینی قیمت کېدای شي د پارامټر له رښتیني قیمت سره برابر وي یا نه. د اټکل نږدېوالی د پارامټر قیمت ته په تصادفي نمونه او اټکلوونکي پورې اړه لري. مثالي اټکلوونکی هغه دی چې د پارامټر دقیق سم قیمت ورکړي خو په عمومي ډول داسې اټکلوونکی نشته. نو د پارامټر ته د نږدې ټکي‌ییز اټکل د موندلو لپاره اړینه ده چې په یوه ورکړل شوي حالت کې د یوه مناسب اټکلوونکي ټاکنه د ځینو ځانګړنو پر بنسټ وشي چې د ښه ټکي‌ییز اټکلوونکي معیارونه بلل کېږي. ښه ټکي‌ییز اټکلوونکی هغه دی چې بې‌پلوه، ثابت (consistent)،",
+   "content": "<p>6.1.3 Difference between an estimator and an estimate</p><p>A rule, usually expressed as a formula that tells us how to calculate an estimate from the sample data is called an estimator and the resulting number is called an estimate.</p><p>For example; if \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n}=100 then \\overline{X}=\\frac{\\sum_{i=1}^{n}x_i}{n} is an estimator and 100 is an estimate. Similarly, if s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1}=2.63 then s^2=\\frac{\\Sigma(x-\\overline{x})^2}{n-1} is an estimator and its numerical value 2.63 is an estimate.</p><p>6.2 Point estimation</p><p>This process provides a single value which is calculated from the sample data as an estimate for the unknown population parameter. Point estimate may or may not be close to the parameter because the random sample used is one of the many possible samples which could be selected from the population.</p><p>Example 6.1</p><p>A random sample has ten observations 4, 3, 7, 8, 4, 10, 5, 5, 4 and 9. Compute a point estimate of (i) population mean (ii) population standard deviation (iii) standard error of the mean (iv) population proportion of even numbers.</p><p>Solution:</p><p>(i) Point estimate of the population mean μ is;</p><p>\\overline{X}=\\frac{\\Sigma x}{n} (estimator)</p><p>=\\frac{59}{10}=5.9 (point estimate)</p><p>(ii) Point estimate of the population standard deviation σ is;</p><p>s=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\frac{(\\Sigma x)^2}{n}\\right]} (estimator)</p><p>=\\sqrt{\\frac{1}{10-1}\\left[401-\\frac{(59)^2}{10}\\right]}</p><p>=\\sqrt{\\frac{1}{9}[401-348.1]}</p><p>=\\sqrt{\\frac{52.9}{9}}=2.42 (point estimate)</p><p>(iii) Point estimate of the standard error \\sigma_{\\overline{x}} is;</p><p>s_{\\overline{x}}=\\frac{s}{\\sqrt{n}} (estimator)</p><p>=\\frac{2.42}{\\sqrt{10}}=0.77 (point estimate)</p><p>(iv) Point estimate of the population proportion p is;</p><p>\\hat{p}=\\frac{X}{n} (estimator)</p><p>=\\frac{5}{10}=0.5 (point estimate)</p><p>6.2.2 Properties of a good point estimator</p><p>In point estimation the unknown value of a parameter is estimated by a single number which is quite risky job. This single value may or may not be equal to the true value of the parameter. The closeness of the estimate to the parameter value depends on random sample and the estimator. An ideal estimator is one which gives exactly the correct value of the parameter but such estimator does not exist in general. Hence to search a point estimate close to the parameter, it is necessary that the choice of one appropriate estimator in a given circumstance should be made on the basis of certain properties, called criteria for a good point estimator. A good point estimator is one which is unbiased, consistent,</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      13,
+      14
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      23
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 102,
+     "printedPages": [
+      195,
+      196
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p196-numbering-gap",
+   "unit": 6,
+   "printedPage": 196,
+   "description": "Section numbering jumps from 6.2 to 6.2.2 (no 6.2.1 printed); kept as printed."
+  }
+ ],
+ "completeUnits": []
+}

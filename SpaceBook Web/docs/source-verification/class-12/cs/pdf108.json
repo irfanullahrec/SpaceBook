@@ -1,0 +1,188 @@
+{
+ "pdfPage": 108,
+ "sections": [
+  {
+   "id": "cs12-u6-text-15",
+   "title": "Unit 6 text (15)",
+   "headingUrdu": "یونٹ 6 — متن (15)",
+   "headingPashto": "۶ څپرکی — متن (15)",
+   "paras": [
+    {
+     "text": "6.3 Function overloading",
+     "urdu": "6.3 فنکشن اوورلوڈنگ",
+     "pashto": "۶.۳ د فنکشن ډېرول (overloading)"
+    },
+    {
+     "text": "6.3.1 Definition",
+     "urdu": "6.3.1 تعریف",
+     "pashto": "۶.۳.۱ تعریف"
+    },
+    {
+     "text": "In programming languages, two or more variables or functions with the same name cannot be used in a single program or block of code. Function overloading is a feature of C++ that allows us to create multiple functions with the same name, so long as they have different number or types of parameters.",
+     "urdu": "پروگرامنگ زبانوں میں ایک ہی نام کے دو یا زیادہ ویری ایبلز یا فنکشنز ایک پروگرام یا کوڈ کے بلاک میں استعمال نہیں ہو سکتے۔ فنکشن اوورلوڈنگ C++ کی ایک خصوصیت ہے جو ہمیں ایک ہی نام کے متعدد فنکشنز بنانے دیتی ہے، بشرطیکہ ان کے پیرامیٹرز کی تعداد یا اقسام مختلف ہوں۔",
+     "pashto": "په پروګرامي ژبو کې د یو نوم دوه یا ډېر متغیرونه یا فنکشنونه په یوه پروګرام یا د کوډ په یوه بلاک کې نه شي کارېدای. د فنکشن ډېرول د C++ ځانګړتیا ده چې موږ ته اجازه راکوي د یو نوم څو فنکشنونه جوړ کړو، تر هغه چې د پاراميټرونو شمېر یا ډولونه یې بېل وي."
+    },
+    {
+     "text": "Consider the following example having two functions with the same name display used to perform slightly different tasks in over loaded form.",
+     "urdu": "درج ذیل مثال پر غور کریں جس میں display نام کے دو فنکشنز ہیں جو اوورلوڈ شکل میں قدرے مختلف کام انجام دیتے ہیں۔",
+     "pashto": "لاندې بېلګې ته پام وکړئ چې د display په نوم دوه فنکشنونه لري چې په ډېر شوي (overloaded) بڼه یو څه بېلې دندې ترسره کوي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include<conio.h>\nvoid display (int a)\n{\ncout<<a;\n}\nvoid display()\n{\ncout<< “Welcome”<<endl;\n}\nint main()\n{\ndisplay() ;\ndisplay(55) ;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include<conio.h>\nvoid display (int a)\n{\ncout<<a;\n}\nvoid display()\n{\ncout<< “Welcome”<<endl;\n}\nint main()\n{\ndisplay() ;\ndisplay(55) ;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include<conio.h>\nvoid display (int a)\n{\ncout<<a;\n}\nvoid display()\n{\ncout<< “Welcome”<<endl;\n}\nint main()\n{\ndisplay() ;\ndisplay(55) ;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Welcome\n55",
+     "urdu": "Welcome\n55",
+     "pashto": "Welcome\n55",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, the function display is overloaded with two tasks: one for displaying an integer value and the other for displaying a welcome message. While calling the overloaded functions, the compiler decides at run time that which display function should be called. To determine which display to call is decided by looking at the number and types of the arguments or parameters of the functions. In this example, void display () is called for display () and void display (int a) for display (55).",
+     "urdu": "یہاں فنکشن display دو کاموں کے ساتھ اوورلوڈ کیا گیا ہے: ایک صحیح قدر دکھانے کے لیے اور دوسرا خوش آمدیدی پیغام دکھانے کے لیے۔ اوورلوڈ فنکشنز کال کرتے وقت کمپائلر رن ٹائم پر فیصلہ کرتا ہے کہ کون سا display فنکشن کال کیا جائے۔ کون سا display کال کرنا ہے یہ فنکشنز کے آرگیومنٹس یا پیرامیٹرز کی تعداد اور اقسام دیکھ کر طے ہوتا ہے۔ اس مثال میں display () کے لیے void display () اور display (55) کے لیے void display (int a) کال ہوتا ہے۔",
+     "pashto": "دلته display فنکشن په دوو دندو ډېر شوی: یوه د صحیح ارزښت د ښودلو لپاره او بله د ښه راغلاست پیغام د ښودلو لپاره. د ډېر شویو فنکشنونو د غوښتلو پر مهال کمپایلر د اجرا پر مهال پرېکړه کوي چې کوم display فنکشن وغوښتل شي. دا چې کوم display وغوښتل شي، د فنکشنونو د دلیلونو یا پاراميټرونو د شمېر او ډولونو په کتلو ټاکل کېږي. په دې بېلګه کې د display () لپاره void display () او د display (55) لپاره void display (int a) غوښتل کېږي."
+    },
+    {
+     "text": "Consider another program having two functions with the same name multiply that operate on integers and floating points numbers.",
+     "urdu": "ایک اور پروگرام پر غور کریں جس میں multiply نام کے دو فنکشنز ہیں جو صحیح اعداد اور فلوٹنگ پوائنٹ اعداد پر کام کرتے ہیں۔",
+     "pashto": "بل پروګرام ته پام وکړئ چې د multiply په نوم دوه فنکشنونه لري چې پر صحیح او اعشاري عددونو کار کوي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include<conio.h>\nint multiply (int a, int b)\n{\nreturn (a*b);\n}\nfloat multiply (float a, float b)\n{\nreturn (a*b);\n}\nint main()\n{\ncout << “Output of integers=\"<< multiply (5, 33)<<endl;\ncout << “Output of floats=\"<< multiply (2.1, 3.0);\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include<conio.h>\nint multiply (int a, int b)\n{\nreturn (a*b);\n}\nfloat multiply (float a, float b)\n{\nreturn (a*b);\n}\nint main()\n{\ncout << “Output of integers=\"<< multiply (5, 33)<<endl;\ncout << “Output of floats=\"<< multiply (2.1, 3.0);\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include<conio.h>\nint multiply (int a, int b)\n{\nreturn (a*b);\n}\nfloat multiply (float a, float b)\n{\nreturn (a*b);\n}\nint main()\n{\ncout << “Output of integers=\"<< multiply (5, 33)<<endl;\ncout << “Output of floats=\"<< multiply (2.1, 3.0);\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Output of integers=165\nOutput of floats=6.3",
+     "urdu": "Output of integers=165\nOutput of floats=6.3",
+     "pashto": "Output of integers=165\nOutput of floats=6.3",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "6.3 Function overloading\n\n6.3.1 Definition\n\nIn programming languages, two or more variables or functions with the same name cannot be used in a single program or block of code. Function overloading is a feature of C++ that allows us to create multiple functions with the same name, so long as they have different number or types of parameters.\n\nConsider the following example having two functions with the same name display used to perform slightly different tasks in over loaded form.\n\n#include <iostream.h>\n#include<conio.h>\nvoid display (int a)\n{\ncout<<a;\n}\nvoid display()\n{\ncout<< “Welcome”<<endl;\n}\nint main()\n{\ndisplay() ;\ndisplay(55) ;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nWelcome\n55\n\nHere, the function display is overloaded with two tasks: one for displaying an integer value and the other for displaying a welcome message. While calling the overloaded functions, the compiler decides at run time that which display function should be called. To determine which display to call is decided by looking at the number and types of the arguments or parameters of the functions. In this example, void display () is called for display () and void display (int a) for display (55).\n\nConsider another program having two functions with the same name multiply that operate on integers and floating points numbers.\n\n#include <iostream.h>\n#include<conio.h>\nint multiply (int a, int b)\n{\nreturn (a*b);\n}\nfloat multiply (float a, float b)\n{\nreturn (a*b);\n}\nint main()\n{\ncout << “Output of integers=\"<< multiply (5, 33)<<endl;\ncout << “Output of floats=\"<< multiply (2.1, 3.0);\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nOutput of integers=165\nOutput of floats=6.3",
+   "urdu": "6.3 فنکشن اوورلوڈنگ\n\n6.3.1 تعریف\n\nپروگرامنگ زبانوں میں ایک ہی نام کے دو یا زیادہ ویری ایبلز یا فنکشنز ایک پروگرام یا کوڈ کے بلاک میں استعمال نہیں ہو سکتے۔ فنکشن اوورلوڈنگ C++ کی ایک خصوصیت ہے جو ہمیں ایک ہی نام کے متعدد فنکشنز بنانے دیتی ہے، بشرطیکہ ان کے پیرامیٹرز کی تعداد یا اقسام مختلف ہوں۔\n\nدرج ذیل مثال پر غور کریں جس میں display نام کے دو فنکشنز ہیں جو اوورلوڈ شکل میں قدرے مختلف کام انجام دیتے ہیں۔\n\n#include <iostream.h>\n#include<conio.h>\nvoid display (int a)\n{\ncout<<a;\n}\nvoid display()\n{\ncout<< “Welcome”<<endl;\n}\nint main()\n{\ndisplay() ;\ndisplay(55) ;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome\n55\n\nیہاں فنکشن display دو کاموں کے ساتھ اوورلوڈ کیا گیا ہے: ایک صحیح قدر دکھانے کے لیے اور دوسرا خوش آمدیدی پیغام دکھانے کے لیے۔ اوورلوڈ فنکشنز کال کرتے وقت کمپائلر رن ٹائم پر فیصلہ کرتا ہے کہ کون سا display فنکشن کال کیا جائے۔ کون سا display کال کرنا ہے یہ فنکشنز کے آرگیومنٹس یا پیرامیٹرز کی تعداد اور اقسام دیکھ کر طے ہوتا ہے۔ اس مثال میں display () کے لیے void display () اور display (55) کے لیے void display (int a) کال ہوتا ہے۔\n\nایک اور پروگرام پر غور کریں جس میں multiply نام کے دو فنکشنز ہیں جو صحیح اعداد اور فلوٹنگ پوائنٹ اعداد پر کام کرتے ہیں۔\n\n#include <iostream.h>\n#include<conio.h>\nint multiply (int a, int b)\n{\nreturn (a*b);\n}\nfloat multiply (float a, float b)\n{\nreturn (a*b);\n}\nint main()\n{\ncout << “Output of integers=\"<< multiply (5, 33)<<endl;\ncout << “Output of floats=\"<< multiply (2.1, 3.0);\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nOutput of integers=165\nOutput of floats=6.3",
+   "pashto": "۶.۳ د فنکشن ډېرول (overloading)\n\n۶.۳.۱ تعریف\n\nپه پروګرامي ژبو کې د یو نوم دوه یا ډېر متغیرونه یا فنکشنونه په یوه پروګرام یا د کوډ په یوه بلاک کې نه شي کارېدای. د فنکشن ډېرول د C++ ځانګړتیا ده چې موږ ته اجازه راکوي د یو نوم څو فنکشنونه جوړ کړو، تر هغه چې د پاراميټرونو شمېر یا ډولونه یې بېل وي.\n\nلاندې بېلګې ته پام وکړئ چې د display په نوم دوه فنکشنونه لري چې په ډېر شوي (overloaded) بڼه یو څه بېلې دندې ترسره کوي.\n\n#include <iostream.h>\n#include<conio.h>\nvoid display (int a)\n{\ncout<<a;\n}\nvoid display()\n{\ncout<< “Welcome”<<endl;\n}\nint main()\n{\ndisplay() ;\ndisplay(55) ;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome\n55\n\nدلته display فنکشن په دوو دندو ډېر شوی: یوه د صحیح ارزښت د ښودلو لپاره او بله د ښه راغلاست پیغام د ښودلو لپاره. د ډېر شویو فنکشنونو د غوښتلو پر مهال کمپایلر د اجرا پر مهال پرېکړه کوي چې کوم display فنکشن وغوښتل شي. دا چې کوم display وغوښتل شي، د فنکشنونو د دلیلونو یا پاراميټرونو د شمېر او ډولونو په کتلو ټاکل کېږي. په دې بېلګه کې د display () لپاره void display () او د display (55) لپاره void display (int a) غوښتل کېږي.\n\nبل پروګرام ته پام وکړئ چې د multiply په نوم دوه فنکشنونه لري چې پر صحیح او اعشاري عددونو کار کوي.\n\n#include <iostream.h>\n#include<conio.h>\nint multiply (int a, int b)\n{\nreturn (a*b);\n}\nfloat multiply (float a, float b)\n{\nreturn (a*b);\n}\nint main()\n{\ncout << “Output of integers=\"<< multiply (5, 33)<<endl;\ncout << “Output of floats=\"<< multiply (2.1, 3.0);\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nOutput of integers=165\nOutput of floats=6.3",
+   "theoryUrdu": "6.3 فنکشن اوورلوڈنگ\n\n6.3.1 تعریف\n\nپروگرامنگ زبانوں میں ایک ہی نام کے دو یا زیادہ ویری ایبلز یا فنکشنز ایک پروگرام یا کوڈ کے بلاک میں استعمال نہیں ہو سکتے۔ فنکشن اوورلوڈنگ C++ کی ایک خصوصیت ہے جو ہمیں ایک ہی نام کے متعدد فنکشنز بنانے دیتی ہے، بشرطیکہ ان کے پیرامیٹرز کی تعداد یا اقسام مختلف ہوں۔\n\nدرج ذیل مثال پر غور کریں جس میں display نام کے دو فنکشنز ہیں جو اوورلوڈ شکل میں قدرے مختلف کام انجام دیتے ہیں۔\n\n#include <iostream.h>\n#include<conio.h>\nvoid display (int a)\n{\ncout<<a;\n}\nvoid display()\n{\ncout<< “Welcome”<<endl;\n}\nint main()\n{\ndisplay() ;\ndisplay(55) ;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome\n55\n\nیہاں فنکشن display دو کاموں کے ساتھ اوورلوڈ کیا گیا ہے: ایک صحیح قدر دکھانے کے لیے اور دوسرا خوش آمدیدی پیغام دکھانے کے لیے۔ اوورلوڈ فنکشنز کال کرتے وقت کمپائلر رن ٹائم پر فیصلہ کرتا ہے کہ کون سا display فنکشن کال کیا جائے۔ کون سا display کال کرنا ہے یہ فنکشنز کے آرگیومنٹس یا پیرامیٹرز کی تعداد اور اقسام دیکھ کر طے ہوتا ہے۔ اس مثال میں display () کے لیے void display () اور display (55) کے لیے void display (int a) کال ہوتا ہے۔\n\nایک اور پروگرام پر غور کریں جس میں multiply نام کے دو فنکشنز ہیں جو صحیح اعداد اور فلوٹنگ پوائنٹ اعداد پر کام کرتے ہیں۔\n\n#include <iostream.h>\n#include<conio.h>\nint multiply (int a, int b)\n{\nreturn (a*b);\n}\nfloat multiply (float a, float b)\n{\nreturn (a*b);\n}\nint main()\n{\ncout << “Output of integers=\"<< multiply (5, 33)<<endl;\ncout << “Output of floats=\"<< multiply (2.1, 3.0);\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nOutput of integers=165\nOutput of floats=6.3",
+   "theoryPashto": "۶.۳ د فنکشن ډېرول (overloading)\n\n۶.۳.۱ تعریف\n\nپه پروګرامي ژبو کې د یو نوم دوه یا ډېر متغیرونه یا فنکشنونه په یوه پروګرام یا د کوډ په یوه بلاک کې نه شي کارېدای. د فنکشن ډېرول د C++ ځانګړتیا ده چې موږ ته اجازه راکوي د یو نوم څو فنکشنونه جوړ کړو، تر هغه چې د پاراميټرونو شمېر یا ډولونه یې بېل وي.\n\nلاندې بېلګې ته پام وکړئ چې د display په نوم دوه فنکشنونه لري چې په ډېر شوي (overloaded) بڼه یو څه بېلې دندې ترسره کوي.\n\n#include <iostream.h>\n#include<conio.h>\nvoid display (int a)\n{\ncout<<a;\n}\nvoid display()\n{\ncout<< “Welcome”<<endl;\n}\nint main()\n{\ndisplay() ;\ndisplay(55) ;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome\n55\n\nدلته display فنکشن په دوو دندو ډېر شوی: یوه د صحیح ارزښت د ښودلو لپاره او بله د ښه راغلاست پیغام د ښودلو لپاره. د ډېر شویو فنکشنونو د غوښتلو پر مهال کمپایلر د اجرا پر مهال پرېکړه کوي چې کوم display فنکشن وغوښتل شي. دا چې کوم display وغوښتل شي، د فنکشنونو د دلیلونو یا پاراميټرونو د شمېر او ډولونو په کتلو ټاکل کېږي. په دې بېلګه کې د display () لپاره void display () او د display (55) لپاره void display (int a) غوښتل کېږي.\n\nبل پروګرام ته پام وکړئ چې د multiply په نوم دوه فنکشنونه لري چې پر صحیح او اعشاري عددونو کار کوي.\n\n#include <iostream.h>\n#include<conio.h>\nint multiply (int a, int b)\n{\nreturn (a*b);\n}\nfloat multiply (float a, float b)\n{\nreturn (a*b);\n}\nint main()\n{\ncout << “Output of integers=\"<< multiply (5, 33)<<endl;\ncout << “Output of floats=\"<< multiply (2.1, 3.0);\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nOutput of integers=165\nOutput of floats=6.3",
+   "content": "<p>6.3 Function overloading</p><p>6.3.1 Definition</p><p>In programming languages, two or more variables or functions with the same name cannot be used in a single program or block of code. Function overloading is a feature of C++ that allows us to create multiple functions with the same name, so long as they have different number or types of parameters.</p><p>Consider the following example having two functions with the same name display used to perform slightly different tasks in over loaded form.</p><p>#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nvoid display (int a)\n{\ncout&lt;&lt;a;\n}\nvoid display()\n{\ncout&lt;&lt; “Welcome”&lt;&lt;endl;\n}\nint main()\n{\ndisplay() ;\ndisplay(55) ;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Welcome\n55</p><p>Here, the function display is overloaded with two tasks: one for displaying an integer value and the other for displaying a welcome message. While calling the overloaded functions, the compiler decides at run time that which display function should be called. To determine which display to call is decided by looking at the number and types of the arguments or parameters of the functions. In this example, void display () is called for display () and void display (int a) for display (55).</p><p>Consider another program having two functions with the same name multiply that operate on integers and floating points numbers.</p><p>#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint multiply (int a, int b)\n{\nreturn (a*b);\n}\nfloat multiply (float a, float b)\n{\nreturn (a*b);\n}\nint main()\n{\ncout &lt;&lt; “Output of integers=&quot;&lt;&lt; multiply (5, 33)&lt;&lt;endl;\ncout &lt;&lt; “Output of floats=&quot;&lt;&lt; multiply (2.1, 3.0);\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Output of integers=165\nOutput of floats=6.3</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 108,
+     "printedPages": [
+      204,
+      205,
+      206
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (15)",
+   "sourcePageLabel": "PDF 108 · p. 204–205–206",
+   "sourceNote": "The int y=cube(x); line at the top of p.204 is recorded with PDF107. The multiply program ends on p.206 (PDF109) and is given whole with its output.",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf108",
+   "unit": 6,
+   "printedPage": 205,
+   "description": "p.205 says the compiler decides “at run time” (overload resolution is at compile time); “over loaded form”; curly opening quotes in the listings; multiply (2.1, 3.0) passes double literals. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

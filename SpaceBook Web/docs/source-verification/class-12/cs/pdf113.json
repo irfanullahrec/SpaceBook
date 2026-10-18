@@ -1,0 +1,150 @@
+{
+ "pdfPage": 113,
+ "sections": [
+  {
+   "id": "cs12-u7-outcomes",
+   "title": "Unit 7: learning outcomes and introduction",
+   "headingUrdu": "یونٹ 7: حاصلاتِ تعلم اور تعارف",
+   "headingPashto": "۷ څپرکی: د زده‌کړې پایلې او سریزه",
+   "paras": [
+    {
+     "text": "Unit 7",
+     "urdu": "یونٹ 7",
+     "pashto": "۷ څپرکی"
+    },
+    {
+     "text": "POINTERS",
+     "urdu": "پوائنٹرز",
+     "pashto": "پوائنټرونه"
+    },
+    {
+     "text": "After the completion of Unit-7, Students will be able to:",
+     "urdu": "یونٹ 7 مکمل کرنے کے بعد طلبہ اس قابل ہوں گے کہ:",
+     "pashto": "د ۷ څپرکي له بشپړولو وروسته به زده‌کوونکي وکولی شي چې:"
+    },
+    {
+     "text": "Define pointers",
+     "urdu": "پوائنٹرز کی تعریف کر سکیں",
+     "pashto": "پوائنټرونه تعریف کړي"
+    },
+    {
+     "text": "Understand memory addresses",
+     "urdu": "میموری پتے سمجھ سکیں",
+     "pashto": "د حافظې پتې وپوهېږي"
+    },
+    {
+     "text": "Know the use of reference operator &",
+     "urdu": "حوالہ آپریٹر & کا استعمال جان سکیں",
+     "pashto": "د حوالې چلونکي & کارونه وپېژني"
+    },
+    {
+     "text": "Know the use of dereference operator *",
+     "urdu": "ڈی ریفرنس آپریٹر * کا استعمال جان سکیں",
+     "pashto": "د حوالې‌لرې کولو چلونکي * کارونه وپېژني"
+    },
+    {
+     "text": "Declare variables of pointer types",
+     "urdu": "پوائنٹر اقسام کے ویری ایبلز ڈکلیئر کر سکیں",
+     "pashto": "د پوائنټر ډولونو متغیرونه اعلان کړي"
+    },
+    {
+     "text": "Initialize the pointers",
+     "urdu": "پوائنٹرز کو ابتدائی قدر دے سکیں",
+     "pashto": "پوائنټرونو ته لومړنی ارزښت ورکړي"
+    },
+    {
+     "text": "INTRODUCTION",
+     "urdu": "تعارف",
+     "pashto": "سریزه"
+    },
+    {
+     "text": "When variables are declared, computer reserves space in its memory for some objects. The variable name refers to that memory space that is occupied by that object. This allows us to store the value of those variables in the space reserved. Computer refers to these spaces using their addresses. To refer to memory addresses, C++ provides the facility of pointers. The objective of this Unit is to understand how variables are stored in computer memory and how spaces are allocated to them. Sometimes, a programmer needs to refer to another memory location which can only be done by the use of pointers. Pointer is one of the most powerful tool to handle memory addresses. This Unit covers the concept of memory addresses in detail and explains the working of reference operator & and dereference operator * with the help of examples. It also focuses on how to declare pointer type variables and how to initialize them in a program.",
+     "urdu": "جب ویری ایبلز ڈکلیئر کیے جاتے ہیں تو کمپیوٹر کچھ اشیا کے لیے اپنی میموری میں جگہ مختص کرتا ہے۔ ویری ایبل کا نام اس میموری جگہ کی طرف اشارہ کرتا ہے جو اس شے نے گھیری ہوتی ہے۔ اس سے ہم ان ویری ایبلز کی قدر مختص جگہ میں محفوظ کر سکتے ہیں۔ کمپیوٹر ان جگہوں کا حوالہ ان کے پتوں سے دیتا ہے۔ میموری پتوں کا حوالہ دینے کے لیے C++ پوائنٹرز کی سہولت فراہم کرتی ہے۔ اس یونٹ کا مقصد یہ سمجھنا ہے کہ ویری ایبلز کمپیوٹر میموری میں کیسے محفوظ ہوتے ہیں اور انھیں جگہیں کیسے مختص کی جاتی ہیں۔ بعض اوقات پروگرامر کو کسی دوسرے میموری مقام کا حوالہ دینا ہوتا ہے جو صرف پوائنٹرز کے استعمال سے ممکن ہے۔ پوائنٹر میموری پتوں کو سنبھالنے کا سب سے طاقتور ذریعہ ہے۔ یہ یونٹ میموری پتوں کا تصور تفصیل سے بیان کرتا ہے اور مثالوں کی مدد سے حوالہ آپریٹر & اور ڈی ریفرنس آپریٹر * کا عمل واضح کرتا ہے۔ یہ اس پر بھی توجہ دیتا ہے کہ پوائنٹر قسم کے ویری ایبلز کیسے ڈکلیئر کیے جائیں اور پروگرام میں انھیں ابتدائی قدر کیسے دی جائے۔",
+     "pashto": "کله چې متغیرونه اعلان شي، کمپیوټر د ځینو شیانو لپاره په خپله حافظه کې ځای ساتي. د متغیر نوم هغه حافظه ځای ته اشاره کوي چې هغه شي نیولی. دا موږ ته اجازه راکوي چې د دې متغیرونو ارزښت په ساتل شوي ځای کې وساتو. کمپیوټر دې ځایونو ته د پتو له لارې اشاره کوي. د حافظې پتو ته د اشارې لپاره C++ د پوائنټرونو اسانتیا برابروي. د دې څپرکي موخه دا پوهېدل دي چې متغیرونه د کمپیوټر په حافظه کې څنګه ساتل کېږي او ځایونه ورته څنګه ټاکل کېږي. کله کله پروګرام جوړوونکی اړتیا لري چې بل حافظه ځای ته اشاره وکړي چې یوازې د پوائنټرونو په کارولو کېدای شي. پوائنټر د حافظې پتو د چلولو تر ټولو پیاوړې وسیله ده. دا څپرکی د حافظې د پتو مفهوم په تفصیل بیانوي او د بېلګو په مرسته د حوالې چلونکي & او د حوالې‌لرې کولو چلونکي * کار تشریح کوي. همداراز په دې تمرکز کوي چې د پوائنټر ډول متغیرونه څنګه اعلان شي او په پروګرام کې څنګه لومړنی ارزښت ورکړل شي."
+    }
+   ],
+   "theory": "Unit 7\n\nPOINTERS\n\nAfter the completion of Unit-7, Students will be able to:\n\nDefine pointers\n\nUnderstand memory addresses\n\nKnow the use of reference operator &\n\nKnow the use of dereference operator *\n\nDeclare variables of pointer types\n\nInitialize the pointers\n\nINTRODUCTION\n\nWhen variables are declared, computer reserves space in its memory for some objects. The variable name refers to that memory space that is occupied by that object. This allows us to store the value of those variables in the space reserved. Computer refers to these spaces using their addresses. To refer to memory addresses, C++ provides the facility of pointers. The objective of this Unit is to understand how variables are stored in computer memory and how spaces are allocated to them. Sometimes, a programmer needs to refer to another memory location which can only be done by the use of pointers. Pointer is one of the most powerful tool to handle memory addresses. This Unit covers the concept of memory addresses in detail and explains the working of reference operator & and dereference operator * with the help of examples. It also focuses on how to declare pointer type variables and how to initialize them in a program.",
+   "urdu": "یونٹ 7\n\nپوائنٹرز\n\nیونٹ 7 مکمل کرنے کے بعد طلبہ اس قابل ہوں گے کہ:\n\nپوائنٹرز کی تعریف کر سکیں\n\nمیموری پتے سمجھ سکیں\n\nحوالہ آپریٹر & کا استعمال جان سکیں\n\nڈی ریفرنس آپریٹر * کا استعمال جان سکیں\n\nپوائنٹر اقسام کے ویری ایبلز ڈکلیئر کر سکیں\n\nپوائنٹرز کو ابتدائی قدر دے سکیں\n\nتعارف\n\nجب ویری ایبلز ڈکلیئر کیے جاتے ہیں تو کمپیوٹر کچھ اشیا کے لیے اپنی میموری میں جگہ مختص کرتا ہے۔ ویری ایبل کا نام اس میموری جگہ کی طرف اشارہ کرتا ہے جو اس شے نے گھیری ہوتی ہے۔ اس سے ہم ان ویری ایبلز کی قدر مختص جگہ میں محفوظ کر سکتے ہیں۔ کمپیوٹر ان جگہوں کا حوالہ ان کے پتوں سے دیتا ہے۔ میموری پتوں کا حوالہ دینے کے لیے C++ پوائنٹرز کی سہولت فراہم کرتی ہے۔ اس یونٹ کا مقصد یہ سمجھنا ہے کہ ویری ایبلز کمپیوٹر میموری میں کیسے محفوظ ہوتے ہیں اور انھیں جگہیں کیسے مختص کی جاتی ہیں۔ بعض اوقات پروگرامر کو کسی دوسرے میموری مقام کا حوالہ دینا ہوتا ہے جو صرف پوائنٹرز کے استعمال سے ممکن ہے۔ پوائنٹر میموری پتوں کو سنبھالنے کا سب سے طاقتور ذریعہ ہے۔ یہ یونٹ میموری پتوں کا تصور تفصیل سے بیان کرتا ہے اور مثالوں کی مدد سے حوالہ آپریٹر & اور ڈی ریفرنس آپریٹر * کا عمل واضح کرتا ہے۔ یہ اس پر بھی توجہ دیتا ہے کہ پوائنٹر قسم کے ویری ایبلز کیسے ڈکلیئر کیے جائیں اور پروگرام میں انھیں ابتدائی قدر کیسے دی جائے۔",
+   "pashto": "۷ څپرکی\n\nپوائنټرونه\n\nد ۷ څپرکي له بشپړولو وروسته به زده‌کوونکي وکولی شي چې:\n\nپوائنټرونه تعریف کړي\n\nد حافظې پتې وپوهېږي\n\nد حوالې چلونکي & کارونه وپېژني\n\nد حوالې‌لرې کولو چلونکي * کارونه وپېژني\n\nد پوائنټر ډولونو متغیرونه اعلان کړي\n\nپوائنټرونو ته لومړنی ارزښت ورکړي\n\nسریزه\n\nکله چې متغیرونه اعلان شي، کمپیوټر د ځینو شیانو لپاره په خپله حافظه کې ځای ساتي. د متغیر نوم هغه حافظه ځای ته اشاره کوي چې هغه شي نیولی. دا موږ ته اجازه راکوي چې د دې متغیرونو ارزښت په ساتل شوي ځای کې وساتو. کمپیوټر دې ځایونو ته د پتو له لارې اشاره کوي. د حافظې پتو ته د اشارې لپاره C++ د پوائنټرونو اسانتیا برابروي. د دې څپرکي موخه دا پوهېدل دي چې متغیرونه د کمپیوټر په حافظه کې څنګه ساتل کېږي او ځایونه ورته څنګه ټاکل کېږي. کله کله پروګرام جوړوونکی اړتیا لري چې بل حافظه ځای ته اشاره وکړي چې یوازې د پوائنټرونو په کارولو کېدای شي. پوائنټر د حافظې پتو د چلولو تر ټولو پیاوړې وسیله ده. دا څپرکی د حافظې د پتو مفهوم په تفصیل بیانوي او د بېلګو په مرسته د حوالې چلونکي & او د حوالې‌لرې کولو چلونکي * کار تشریح کوي. همداراز په دې تمرکز کوي چې د پوائنټر ډول متغیرونه څنګه اعلان شي او په پروګرام کې څنګه لومړنی ارزښت ورکړل شي.",
+   "theoryUrdu": "یونٹ 7\n\nپوائنٹرز\n\nیونٹ 7 مکمل کرنے کے بعد طلبہ اس قابل ہوں گے کہ:\n\nپوائنٹرز کی تعریف کر سکیں\n\nمیموری پتے سمجھ سکیں\n\nحوالہ آپریٹر & کا استعمال جان سکیں\n\nڈی ریفرنس آپریٹر * کا استعمال جان سکیں\n\nپوائنٹر اقسام کے ویری ایبلز ڈکلیئر کر سکیں\n\nپوائنٹرز کو ابتدائی قدر دے سکیں\n\nتعارف\n\nجب ویری ایبلز ڈکلیئر کیے جاتے ہیں تو کمپیوٹر کچھ اشیا کے لیے اپنی میموری میں جگہ مختص کرتا ہے۔ ویری ایبل کا نام اس میموری جگہ کی طرف اشارہ کرتا ہے جو اس شے نے گھیری ہوتی ہے۔ اس سے ہم ان ویری ایبلز کی قدر مختص جگہ میں محفوظ کر سکتے ہیں۔ کمپیوٹر ان جگہوں کا حوالہ ان کے پتوں سے دیتا ہے۔ میموری پتوں کا حوالہ دینے کے لیے C++ پوائنٹرز کی سہولت فراہم کرتی ہے۔ اس یونٹ کا مقصد یہ سمجھنا ہے کہ ویری ایبلز کمپیوٹر میموری میں کیسے محفوظ ہوتے ہیں اور انھیں جگہیں کیسے مختص کی جاتی ہیں۔ بعض اوقات پروگرامر کو کسی دوسرے میموری مقام کا حوالہ دینا ہوتا ہے جو صرف پوائنٹرز کے استعمال سے ممکن ہے۔ پوائنٹر میموری پتوں کو سنبھالنے کا سب سے طاقتور ذریعہ ہے۔ یہ یونٹ میموری پتوں کا تصور تفصیل سے بیان کرتا ہے اور مثالوں کی مدد سے حوالہ آپریٹر & اور ڈی ریفرنس آپریٹر * کا عمل واضح کرتا ہے۔ یہ اس پر بھی توجہ دیتا ہے کہ پوائنٹر قسم کے ویری ایبلز کیسے ڈکلیئر کیے جائیں اور پروگرام میں انھیں ابتدائی قدر کیسے دی جائے۔",
+   "theoryPashto": "۷ څپرکی\n\nپوائنټرونه\n\nد ۷ څپرکي له بشپړولو وروسته به زده‌کوونکي وکولی شي چې:\n\nپوائنټرونه تعریف کړي\n\nد حافظې پتې وپوهېږي\n\nد حوالې چلونکي & کارونه وپېژني\n\nد حوالې‌لرې کولو چلونکي * کارونه وپېژني\n\nد پوائنټر ډولونو متغیرونه اعلان کړي\n\nپوائنټرونو ته لومړنی ارزښت ورکړي\n\nسریزه\n\nکله چې متغیرونه اعلان شي، کمپیوټر د ځینو شیانو لپاره په خپله حافظه کې ځای ساتي. د متغیر نوم هغه حافظه ځای ته اشاره کوي چې هغه شي نیولی. دا موږ ته اجازه راکوي چې د دې متغیرونو ارزښت په ساتل شوي ځای کې وساتو. کمپیوټر دې ځایونو ته د پتو له لارې اشاره کوي. د حافظې پتو ته د اشارې لپاره C++ د پوائنټرونو اسانتیا برابروي. د دې څپرکي موخه دا پوهېدل دي چې متغیرونه د کمپیوټر په حافظه کې څنګه ساتل کېږي او ځایونه ورته څنګه ټاکل کېږي. کله کله پروګرام جوړوونکی اړتیا لري چې بل حافظه ځای ته اشاره وکړي چې یوازې د پوائنټرونو په کارولو کېدای شي. پوائنټر د حافظې پتو د چلولو تر ټولو پیاوړې وسیله ده. دا څپرکی د حافظې د پتو مفهوم په تفصیل بیانوي او د بېلګو په مرسته د حوالې چلونکي & او د حوالې‌لرې کولو چلونکي * کار تشریح کوي. همداراز په دې تمرکز کوي چې د پوائنټر ډول متغیرونه څنګه اعلان شي او په پروګرام کې څنګه لومړنی ارزښت ورکړل شي.",
+   "content": "<p>Unit 7</p><p>POINTERS</p><p>After the completion of Unit-7, Students will be able to:</p><p>Define pointers</p><p>Understand memory addresses</p><p>Know the use of reference operator &amp;</p><p>Know the use of dereference operator *</p><p>Declare variables of pointer types</p><p>Initialize the pointers</p><p>INTRODUCTION</p><p>When variables are declared, computer reserves space in its memory for some objects. The variable name refers to that memory space that is occupied by that object. This allows us to store the value of those variables in the space reserved. Computer refers to these spaces using their addresses. To refer to memory addresses, C++ provides the facility of pointers. The objective of this Unit is to understand how variables are stored in computer memory and how spaces are allocated to them. Sometimes, a programmer needs to refer to another memory location which can only be done by the use of pointers. Pointer is one of the most powerful tool to handle memory addresses. This Unit covers the concept of memory addresses in detail and explains the working of reference operator &amp; and dereference operator * with the help of examples. It also focuses on how to declare pointer type variables and how to initialize them in a program.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 113,
+     "printedPages": [
+      215
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 7: learning outcomes and introduction",
+   "sourcePageLabel": "PDF 113 · p. 215",
+   "unitTitle": "Pointers",
+   "unitTitleUrdu": "پوائنٹرز",
+   "unitTitlePashto": "پوائنټرونه",
+   "unit": 7
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf113",
+   "unit": 7,
+   "printedPage": 215,
+   "description": "Introduction: “one of the most powerful tool”. Retained as printed."
+  }
+ ],
+ "completeUnits": [
+  6
+ ]
+}

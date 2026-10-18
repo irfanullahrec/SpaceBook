@@ -1,0 +1,288 @@
+{
+ "pdfPage": 42,
+ "sections": [
+  {
+   "id": "cs12-u3-text-8",
+   "title": "Unit 3 text (8)",
+   "headingUrdu": "یونٹ 3 — متن (۸)",
+   "headingPashto": "۳ څپرکی — متن (۸)",
+   "paras": [
+    {
+     "text": "Consider the following program to demonstrate the initialization of variables.",
+     "urdu": "ویری ایبلز کی ابتدائی قدر کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د متغیرونو د لومړني ارزښت د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "#include<conio.h>\n#include <iostream.h>\nint main()\n{\nint Vara=55; // initial value = 55\nint Varb(22); // initial value = 22\nint result; // initial value undetermined\nresult = Vara - Varb;\ncout << \"The Result is= \"<<result;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include<conio.h>\n#include <iostream.h>\nint main()\n{\nint Vara=55; // initial value = 55\nint Varb(22); // initial value = 22\nint result; // initial value undetermined\nresult = Vara - Varb;\ncout << \"The Result is= \"<<result;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include<conio.h>\n#include <iostream.h>\nint main()\n{\nint Vara=55; // initial value = 55\nint Varb(22); // initial value = 22\nint result; // initial value undetermined\nresult = Vara - Varb;\ncout << \"The Result is= \"<<result;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The Result is= 33",
+     "urdu": "The Result is= 33",
+     "pashto": "The Result is= 33",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "3.2.4 Fundamental data types in C++",
+     "urdu": "3.2.4 C++ میں بنیادی ڈیٹا ٹائپس",
+     "pashto": "۳.۲.۴ په C++ کې بنسټیز ډېټا ډولونه"
+    },
+    {
+     "text": "While programming, we store the variables in computer’s memory, but the computers have to know that what kind of data we want to store in them.",
+     "urdu": "پروگرامنگ کرتے وقت ہم ویری ایبلز کو کمپیوٹر کی میموری میں محفوظ کرتے ہیں، لیکن کمپیوٹر کو معلوم ہونا چاہیے کہ ہم ان میں کس قسم کا ڈیٹا محفوظ کرنا چاہتے ہیں۔",
+     "pashto": "د پروګرام‌سازۍ پر وخت موږ متغیرونه د کمپیوټر په حافظه کې ساتو، خو کمپیوټر باید پوه شي چې موږ پکې څه ډول ډېټا ساتل غواړو."
+    },
+    {
+     "text": "Data type tells the compiler that what types of data, means integer, character or floating point etc. the variable will store and what will be the range of the values.",
+     "urdu": "ڈیٹا ٹائپ کمپائلر کو بتاتی ہے کہ ویری ایبل کس قسم کا ڈیٹا، یعنی صحیح عدد، حرف یا فلوٹنگ پوائنٹ وغیرہ، محفوظ کرے گا اور قدروں کی حد کیا ہوگی۔",
+     "pashto": "ډېټا ډول کمپایلر ته وايي چې متغیر به څه ډول ډېټا، یعنې صحیح عدد، توری یا اعشاري عدد او نور، ساتي او د ارزښتونو حد به څه وي."
+    },
+    {
+     "text": "The most commonly used data types in C++ are:",
+     "urdu": "C++ میں سب سے زیادہ استعمال ہونے والی ڈیٹا ٹائپس یہ ہیں:",
+     "pashto": "په C++ کې تر ټولو ډېر کارېدونکي ډېټا ډولونه دا دي:"
+    },
+    {
+     "text": "Character",
+     "urdu": "حرف (کریکٹر)",
+     "pashto": "توری"
+    },
+    {
+     "text": "Integer",
+     "urdu": "صحیح عدد (انٹیجر)",
+     "pashto": "صحیح عدد"
+    },
+    {
+     "text": "Floating point",
+     "urdu": "فلوٹنگ پوائنٹ",
+     "pashto": "اعشاري عدد"
+    },
+    {
+     "text": "Boolean",
+     "urdu": "بولین",
+     "pashto": "بولي"
+    },
+    {
+     "text": "Unsigned",
+     "urdu": "ان سائنڈ",
+     "pashto": "بې‌نښې (Unsigned)"
+    },
+    {
+     "text": "a. Character data type",
+     "urdu": "a. حرفی ڈیٹا ٹائپ",
+     "pashto": "a. د توري ډېټا ډول"
+    },
+    {
+     "text": "The char keyword represents the character data type in C++. Any character belonging to the ASCII character set is called a character data type. The maximum size of char data type is 8 bits (1 byte). Signed char and unsigned char are its two distinct types. They occupy the same amount of memory space. Consider the following line of code:",
+     "urdu": "char کی ورڈ C++ میں حرفی ڈیٹا ٹائپ کی نمائندگی کرتا ہے۔ ASCII حروف کے مجموعے سے تعلق رکھنے والا کوئی بھی حرف حرفی ڈیٹا ٹائپ کہلاتا ہے۔ char ڈیٹا ٹائپ کا زیادہ سے زیادہ سائز 8 بٹس (1 بائٹ) ہے۔ signed char اور unsigned char اس کی دو الگ اقسام ہیں جو میموری میں یکساں جگہ لیتی ہیں۔ کوڈ کی درج ذیل لائن پر غور کریں:",
+     "pashto": "د char کلیدي کلمه په C++ کې د توري ډېټا ډول ښيي. هر توری چې د ASCII تورو له ټولګې سره تړاو ولري، د توري ډېټا ډول بلل کېږي. د char ډېټا ډول اعظمي اندازه ۸ بټه (۱ بایټ) ده. signed char او unsigned char یې دوه جلا ډولونه دي چې په حافظه کې یو شان ځای نیسي. د کوډ لاندې کرښې ته پام وکړئ:"
+    },
+    {
+     "text": "char x;",
+     "urdu": "char x;",
+     "pashto": "char x;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, x is a character type variable that occupies 1 byte of memory. Variables declared as char data type are used to store character constants. Character constants are always represented with single quotes. For example:",
+     "urdu": "یہاں x حرفی قسم کا ویری ایبل ہے جو میموری کا 1 بائٹ لیتا ہے۔ char ڈیٹا ٹائپ کے طور پر ڈکلیئر کیے گئے ویری ایبلز حرفی کانسٹنٹس محفوظ کرنے کے لیے استعمال ہوتے ہیں۔ حرفی کانسٹنٹس ہمیشہ ایک واوین میں ظاہر کیے جاتے ہیں۔ مثلاً:",
+     "pashto": "دلته x د توري ډول متغیر دی چې د حافظې ۱ بایټ نیسي. هغه متغیرونه چې د char ډېټا ډول په توګه اعلان شوي، د توري ثابتونو د ساتلو لپاره کارول کېږي. د توري ثابتونه تل په یوګوني نقل‌قولونو کې ښودل کېږي. د بېلګې په توګه:"
+    },
+    {
+     "text": "char gender;\ngender= 'M';",
+     "urdu": "char gender;\ngender= 'M';",
+     "pashto": "char gender;\ngender= 'M';",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, gender is a character type variable that occupies 1 byte of memory and store character constant, M, which stands for Male.",
+     "urdu": "یہاں gender حرفی قسم کا ویری ایبل ہے جو میموری کا 1 بائٹ لیتا ہے اور حرفی کانسٹنٹ M محفوظ کرتا ہے جس کا مطلب Male (مرد) ہے۔",
+     "pashto": "دلته gender د توري ډول متغیر دی چې د حافظې ۱ بایټ نیسي او د توري ثابت M ساتي چې د Male (نارینه) معنا لري."
+    },
+    {
+     "text": "b. Integer data types",
+     "urdu": "b. انٹیجر ڈیٹا ٹائپس",
+     "pashto": "b. صحیح عدد ډېټا ډولونه"
+    },
+    {
+     "text": "The data types which store only integer numbers such as 100, -200 etc. are called integer data types. Its sub types are:",
+     "urdu": "وہ ڈیٹا ٹائپس جو صرف صحیح اعداد جیسے 100، -200 وغیرہ محفوظ کرتی ہیں، انٹیجر ڈیٹا ٹائپس کہلاتی ہیں۔ اس کی ذیلی اقسام یہ ہیں:",
+     "pashto": "هغه ډېټا ډولونه چې یوازې صحیح عددونه لکه 100، -200 او نور ساتي، صحیح عدد ډېټا ډولونه بلل کېږي. فرعي ډولونه یې دا دي:"
+    },
+    {
+     "text": "int",
+     "urdu": "int",
+     "pashto": "int"
+    },
+    {
+     "text": "short int",
+     "urdu": "short int",
+     "pashto": "short int"
+    },
+    {
+     "text": "long",
+     "urdu": "long",
+     "pashto": "long"
+    }
+   ],
+   "theory": "Consider the following program to demonstrate the initialization of variables.\n\n#include<conio.h>\n#include <iostream.h>\nint main()\n{\nint Vara=55; // initial value = 55\nint Varb(22); // initial value = 22\nint result; // initial value undetermined\nresult = Vara - Varb;\ncout << \"The Result is= \"<<result;\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nThe Result is= 33\n\n3.2.4 Fundamental data types in C++\n\nWhile programming, we store the variables in computer’s memory, but the computers have to know that what kind of data we want to store in them.\n\nData type tells the compiler that what types of data, means integer, character or floating point etc. the variable will store and what will be the range of the values.\n\nThe most commonly used data types in C++ are:\n\nCharacter\n\nInteger\n\nFloating point\n\nBoolean\n\nUnsigned\n\na. Character data type\n\nThe char keyword represents the character data type in C++. Any character belonging to the ASCII character set is called a character data type. The maximum size of char data type is 8 bits (1 byte). Signed char and unsigned char are its two distinct types. They occupy the same amount of memory space. Consider the following line of code:\n\nchar x;\n\nHere, x is a character type variable that occupies 1 byte of memory. Variables declared as char data type are used to store character constants. Character constants are always represented with single quotes. For example:\n\nchar gender;\ngender= 'M';\n\nHere, gender is a character type variable that occupies 1 byte of memory and store character constant, M, which stands for Male.\n\nb. Integer data types\n\nThe data types which store only integer numbers such as 100, -200 etc. are called integer data types. Its sub types are:\n\nint\n\nshort int\n\nlong",
+   "urdu": "ویری ایبلز کی ابتدائی قدر کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include<conio.h>\n#include <iostream.h>\nint main()\n{\nint Vara=55; // initial value = 55\nint Varb(22); // initial value = 22\nint result; // initial value undetermined\nresult = Vara - Varb;\ncout << \"The Result is= \"<<result;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe Result is= 33\n\n3.2.4 C++ میں بنیادی ڈیٹا ٹائپس\n\nپروگرامنگ کرتے وقت ہم ویری ایبلز کو کمپیوٹر کی میموری میں محفوظ کرتے ہیں، لیکن کمپیوٹر کو معلوم ہونا چاہیے کہ ہم ان میں کس قسم کا ڈیٹا محفوظ کرنا چاہتے ہیں۔\n\nڈیٹا ٹائپ کمپائلر کو بتاتی ہے کہ ویری ایبل کس قسم کا ڈیٹا، یعنی صحیح عدد، حرف یا فلوٹنگ پوائنٹ وغیرہ، محفوظ کرے گا اور قدروں کی حد کیا ہوگی۔\n\nC++ میں سب سے زیادہ استعمال ہونے والی ڈیٹا ٹائپس یہ ہیں:\n\nحرف (کریکٹر)\n\nصحیح عدد (انٹیجر)\n\nفلوٹنگ پوائنٹ\n\nبولین\n\nان سائنڈ\n\na. حرفی ڈیٹا ٹائپ\n\nchar کی ورڈ C++ میں حرفی ڈیٹا ٹائپ کی نمائندگی کرتا ہے۔ ASCII حروف کے مجموعے سے تعلق رکھنے والا کوئی بھی حرف حرفی ڈیٹا ٹائپ کہلاتا ہے۔ char ڈیٹا ٹائپ کا زیادہ سے زیادہ سائز 8 بٹس (1 بائٹ) ہے۔ signed char اور unsigned char اس کی دو الگ اقسام ہیں جو میموری میں یکساں جگہ لیتی ہیں۔ کوڈ کی درج ذیل لائن پر غور کریں:\n\nchar x;\n\nیہاں x حرفی قسم کا ویری ایبل ہے جو میموری کا 1 بائٹ لیتا ہے۔ char ڈیٹا ٹائپ کے طور پر ڈکلیئر کیے گئے ویری ایبلز حرفی کانسٹنٹس محفوظ کرنے کے لیے استعمال ہوتے ہیں۔ حرفی کانسٹنٹس ہمیشہ ایک واوین میں ظاہر کیے جاتے ہیں۔ مثلاً:\n\nchar gender;\ngender= 'M';\n\nیہاں gender حرفی قسم کا ویری ایبل ہے جو میموری کا 1 بائٹ لیتا ہے اور حرفی کانسٹنٹ M محفوظ کرتا ہے جس کا مطلب Male (مرد) ہے۔\n\nb. انٹیجر ڈیٹا ٹائپس\n\nوہ ڈیٹا ٹائپس جو صرف صحیح اعداد جیسے 100، -200 وغیرہ محفوظ کرتی ہیں، انٹیجر ڈیٹا ٹائپس کہلاتی ہیں۔ اس کی ذیلی اقسام یہ ہیں:\n\nint\n\nshort int\n\nlong",
+   "pashto": "د متغیرونو د لومړني ارزښت د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include<conio.h>\n#include <iostream.h>\nint main()\n{\nint Vara=55; // initial value = 55\nint Varb(22); // initial value = 22\nint result; // initial value undetermined\nresult = Vara - Varb;\ncout << \"The Result is= \"<<result;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe Result is= 33\n\n۳.۲.۴ په C++ کې بنسټیز ډېټا ډولونه\n\nد پروګرام‌سازۍ پر وخت موږ متغیرونه د کمپیوټر په حافظه کې ساتو، خو کمپیوټر باید پوه شي چې موږ پکې څه ډول ډېټا ساتل غواړو.\n\nډېټا ډول کمپایلر ته وايي چې متغیر به څه ډول ډېټا، یعنې صحیح عدد، توری یا اعشاري عدد او نور، ساتي او د ارزښتونو حد به څه وي.\n\nپه C++ کې تر ټولو ډېر کارېدونکي ډېټا ډولونه دا دي:\n\nتوری\n\nصحیح عدد\n\nاعشاري عدد\n\nبولي\n\nبې‌نښې (Unsigned)\n\na. د توري ډېټا ډول\n\nد char کلیدي کلمه په C++ کې د توري ډېټا ډول ښيي. هر توری چې د ASCII تورو له ټولګې سره تړاو ولري، د توري ډېټا ډول بلل کېږي. د char ډېټا ډول اعظمي اندازه ۸ بټه (۱ بایټ) ده. signed char او unsigned char یې دوه جلا ډولونه دي چې په حافظه کې یو شان ځای نیسي. د کوډ لاندې کرښې ته پام وکړئ:\n\nchar x;\n\nدلته x د توري ډول متغیر دی چې د حافظې ۱ بایټ نیسي. هغه متغیرونه چې د char ډېټا ډول په توګه اعلان شوي، د توري ثابتونو د ساتلو لپاره کارول کېږي. د توري ثابتونه تل په یوګوني نقل‌قولونو کې ښودل کېږي. د بېلګې په توګه:\n\nchar gender;\ngender= 'M';\n\nدلته gender د توري ډول متغیر دی چې د حافظې ۱ بایټ نیسي او د توري ثابت M ساتي چې د Male (نارینه) معنا لري.\n\nb. صحیح عدد ډېټا ډولونه\n\nهغه ډېټا ډولونه چې یوازې صحیح عددونه لکه 100، -200 او نور ساتي، صحیح عدد ډېټا ډولونه بلل کېږي. فرعي ډولونه یې دا دي:\n\nint\n\nshort int\n\nlong",
+   "theoryUrdu": "ویری ایبلز کی ابتدائی قدر کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include<conio.h>\n#include <iostream.h>\nint main()\n{\nint Vara=55; // initial value = 55\nint Varb(22); // initial value = 22\nint result; // initial value undetermined\nresult = Vara - Varb;\ncout << \"The Result is= \"<<result;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe Result is= 33\n\n3.2.4 C++ میں بنیادی ڈیٹا ٹائپس\n\nپروگرامنگ کرتے وقت ہم ویری ایبلز کو کمپیوٹر کی میموری میں محفوظ کرتے ہیں، لیکن کمپیوٹر کو معلوم ہونا چاہیے کہ ہم ان میں کس قسم کا ڈیٹا محفوظ کرنا چاہتے ہیں۔\n\nڈیٹا ٹائپ کمپائلر کو بتاتی ہے کہ ویری ایبل کس قسم کا ڈیٹا، یعنی صحیح عدد، حرف یا فلوٹنگ پوائنٹ وغیرہ، محفوظ کرے گا اور قدروں کی حد کیا ہوگی۔\n\nC++ میں سب سے زیادہ استعمال ہونے والی ڈیٹا ٹائپس یہ ہیں:\n\nحرف (کریکٹر)\n\nصحیح عدد (انٹیجر)\n\nفلوٹنگ پوائنٹ\n\nبولین\n\nان سائنڈ\n\na. حرفی ڈیٹا ٹائپ\n\nchar کی ورڈ C++ میں حرفی ڈیٹا ٹائپ کی نمائندگی کرتا ہے۔ ASCII حروف کے مجموعے سے تعلق رکھنے والا کوئی بھی حرف حرفی ڈیٹا ٹائپ کہلاتا ہے۔ char ڈیٹا ٹائپ کا زیادہ سے زیادہ سائز 8 بٹس (1 بائٹ) ہے۔ signed char اور unsigned char اس کی دو الگ اقسام ہیں جو میموری میں یکساں جگہ لیتی ہیں۔ کوڈ کی درج ذیل لائن پر غور کریں:\n\nchar x;\n\nیہاں x حرفی قسم کا ویری ایبل ہے جو میموری کا 1 بائٹ لیتا ہے۔ char ڈیٹا ٹائپ کے طور پر ڈکلیئر کیے گئے ویری ایبلز حرفی کانسٹنٹس محفوظ کرنے کے لیے استعمال ہوتے ہیں۔ حرفی کانسٹنٹس ہمیشہ ایک واوین میں ظاہر کیے جاتے ہیں۔ مثلاً:\n\nchar gender;\ngender= 'M';\n\nیہاں gender حرفی قسم کا ویری ایبل ہے جو میموری کا 1 بائٹ لیتا ہے اور حرفی کانسٹنٹ M محفوظ کرتا ہے جس کا مطلب Male (مرد) ہے۔\n\nb. انٹیجر ڈیٹا ٹائپس\n\nوہ ڈیٹا ٹائپس جو صرف صحیح اعداد جیسے 100، -200 وغیرہ محفوظ کرتی ہیں، انٹیجر ڈیٹا ٹائپس کہلاتی ہیں۔ اس کی ذیلی اقسام یہ ہیں:\n\nint\n\nshort int\n\nlong",
+   "theoryPashto": "د متغیرونو د لومړني ارزښت د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include<conio.h>\n#include <iostream.h>\nint main()\n{\nint Vara=55; // initial value = 55\nint Varb(22); // initial value = 22\nint result; // initial value undetermined\nresult = Vara - Varb;\ncout << \"The Result is= \"<<result;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe Result is= 33\n\n۳.۲.۴ په C++ کې بنسټیز ډېټا ډولونه\n\nد پروګرام‌سازۍ پر وخت موږ متغیرونه د کمپیوټر په حافظه کې ساتو، خو کمپیوټر باید پوه شي چې موږ پکې څه ډول ډېټا ساتل غواړو.\n\nډېټا ډول کمپایلر ته وايي چې متغیر به څه ډول ډېټا، یعنې صحیح عدد، توری یا اعشاري عدد او نور، ساتي او د ارزښتونو حد به څه وي.\n\nپه C++ کې تر ټولو ډېر کارېدونکي ډېټا ډولونه دا دي:\n\nتوری\n\nصحیح عدد\n\nاعشاري عدد\n\nبولي\n\nبې‌نښې (Unsigned)\n\na. د توري ډېټا ډول\n\nد char کلیدي کلمه په C++ کې د توري ډېټا ډول ښيي. هر توری چې د ASCII تورو له ټولګې سره تړاو ولري، د توري ډېټا ډول بلل کېږي. د char ډېټا ډول اعظمي اندازه ۸ بټه (۱ بایټ) ده. signed char او unsigned char یې دوه جلا ډولونه دي چې په حافظه کې یو شان ځای نیسي. د کوډ لاندې کرښې ته پام وکړئ:\n\nchar x;\n\nدلته x د توري ډول متغیر دی چې د حافظې ۱ بایټ نیسي. هغه متغیرونه چې د char ډېټا ډول په توګه اعلان شوي، د توري ثابتونو د ساتلو لپاره کارول کېږي. د توري ثابتونه تل په یوګوني نقل‌قولونو کې ښودل کېږي. د بېلګې په توګه:\n\nchar gender;\ngender= 'M';\n\nدلته gender د توري ډول متغیر دی چې د حافظې ۱ بایټ نیسي او د توري ثابت M ساتي چې د Male (نارینه) معنا لري.\n\nb. صحیح عدد ډېټا ډولونه\n\nهغه ډېټا ډولونه چې یوازې صحیح عددونه لکه 100، -200 او نور ساتي، صحیح عدد ډېټا ډولونه بلل کېږي. فرعي ډولونه یې دا دي:\n\nint\n\nshort int\n\nlong",
+   "content": "<p>Consider the following program to demonstrate the initialization of variables.</p><p>#include&lt;conio.h&gt;\n#include &lt;iostream.h&gt;\nint main()\n{\nint Vara=55; // initial value = 55\nint Varb(22); // initial value = 22\nint result; // initial value undetermined\nresult = Vara - Varb;\ncout &lt;&lt; &quot;The Result is= &quot;&lt;&lt;result;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>The Result is= 33</p><p>3.2.4 Fundamental data types in C++</p><p>While programming, we store the variables in computer’s memory, but the computers have to know that what kind of data we want to store in them.</p><p>Data type tells the compiler that what types of data, means integer, character or floating point etc. the variable will store and what will be the range of the values.</p><p>The most commonly used data types in C++ are:</p><p>Character</p><p>Integer</p><p>Floating point</p><p>Boolean</p><p>Unsigned</p><p>a. Character data type</p><p>The char keyword represents the character data type in C++. Any character belonging to the ASCII character set is called a character data type. The maximum size of char data type is 8 bits (1 byte). Signed char and unsigned char are its two distinct types. They occupy the same amount of memory space. Consider the following line of code:</p><p>char x;</p><p>Here, x is a character type variable that occupies 1 byte of memory. Variables declared as char data type are used to store character constants. Character constants are always represented with single quotes. For example:</p><p>char gender;\ngender= &#x27;M&#x27;;</p><p>Here, gender is a character type variable that occupies 1 byte of memory and store character constant, M, which stands for Male.</p><p>b. Integer data types</p><p>The data types which store only integer numbers such as 100, -200 etc. are called integer data types. Its sub types are:</p><p>int</p><p>short int</p><p>long</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      21,
+      22,
+      23
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 42,
+     "printedPages": [
+      72,
+      73
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (8)",
+   "sourcePageLabel": "PDF 42 · p. 72–73",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf042",
+   "unit": 3,
+   "printedPage": 72,
+   "description": "p.72 prints “know that what kind of data”, “tells the compiler that what types of data, means integer”; p.73 “occupies 1 byte of memory and store”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

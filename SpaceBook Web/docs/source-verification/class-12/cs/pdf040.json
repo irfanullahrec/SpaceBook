@@ -1,0 +1,288 @@
+{
+ "pdfPage": 40,
+ "sections": [
+  {
+   "id": "cs12-u3-text-6",
+   "title": "Unit 3 text (6)",
+   "headingUrdu": "یونٹ 3 — متن (۶)",
+   "headingPashto": "۳ څپرکی — متن (۶)",
+   "paras": [
+    {
+     "text": "iii. Character constants",
+     "urdu": "iii. حرفی کانسٹنٹس",
+     "pashto": "iii. د توري ثابتونه"
+    },
+    {
+     "text": "A character enclosed within single quotes is called character constant. Consider the following examples:",
+     "urdu": "ایک واوین (single quotes) میں بند حرف کو حرفی کانسٹنٹ کہتے ہیں۔ درج ذیل مثالوں پر غور کریں:",
+     "pashto": "په یوګوني نقل‌قولونو کې تړل شوی توری د توري ثابت بلل کېږي. لاندې بېلګو ته پام وکړئ:"
+    },
+    {
+     "text": "'A', 'a', '.', '?'",
+     "urdu": "'A', 'a', '.', '?'",
+     "pashto": "'A', 'a', '.', '?'",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. Variables",
+     "urdu": "b. ویری ایبلز",
+     "pashto": "b. متغیرونه"
+    },
+    {
+     "text": "A variable in C++ is a name for a piece of memory that can be used to store information. A variable can be thought as a mailbox where information can be put and retrieved from. All computers have memory, called Random Access Memory (RAM) that is available for programs to use. When a variable is declared, a piece of that memory is set aside for that variable.",
+     "urdu": "C++ میں ویری ایبل میموری کے ایک حصے کا نام ہے جو معلومات محفوظ کرنے کے لیے استعمال ہو سکتا ہے۔ ویری ایبل کو ایک ڈاک خانے کے ڈبے کی طرح سمجھا جا سکتا ہے جس میں معلومات رکھی اور نکالی جا سکتی ہیں۔ تمام کمپیوٹرز میں میموری ہوتی ہے جسے رینڈم ایکسیس میموری (RAM) کہتے ہیں اور جو پروگراموں کے استعمال کے لیے دستیاب ہوتی ہے۔ جب کوئی ویری ایبل ڈکلیئر کیا جاتا ہے تو اس میموری کا ایک حصہ اس ویری ایبل کے لیے مختص کر دیا جاتا ہے۔",
+     "pashto": "په C++ کې متغیر د حافظې د یوې برخې نوم دی چې د معلوماتو د ساتلو لپاره کارول کېدای شي. متغیر د لیک صندوق په څېر ګڼل کېدای شي چې معلومات پکې ایښودل او ترې اخیستل کېدای شي. ټول کمپیوټرونه حافظه لري چې تصادفي لاسرسي حافظه (RAM) بلل کېږي او د پروګرامونو د کارونې لپاره شته. کله چې یو متغیر اعلان شي، د هغې حافظې یوه برخه د هغه متغیر لپاره ځانګړې کېږي."
+    },
+    {
+     "text": "Consider the following segment of code.",
+     "urdu": "کوڈ کے درج ذیل حصے پر غور کریں۔",
+     "pashto": "د کوډ لاندې برخې ته پام وکړئ."
+    },
+    {
+     "text": "int a = 5;\nint b = 2;\nint result = a - b;",
+     "urdu": "int a = 5;\nint b = 2;\nint result = a - b;",
+     "pashto": "int a = 5;\nint b = 2;\nint result = a - b;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In this segment, a, b and result are the integer variables that reside in RAM and store integer values.",
+     "urdu": "اس حصے میں a، b اور result انٹیجر ویری ایبلز ہیں جو RAM میں موجود ہیں اور صحیح عددی قدریں محفوظ کرتے ہیں۔",
+     "pashto": "په دې برخه کې a، b او result صحیح عددي متغیرونه دي چې په RAM کې اوسي او صحیح عددي ارزښتونه ساتي."
+    },
+    {
+     "text": "3.2.2 Rules for naming variables",
+     "urdu": "3.2.2 ویری ایبلز کے نام رکھنے کے قواعد",
+     "pashto": "۳.۲.۲ د متغیرونو د نوم ایښودو قاعدې"
+    },
+    {
+     "text": "The symbol used for a variable is called an identifier or variable name. A set of rules are used for naming variables. These rules are:",
+     "urdu": "ویری ایبل کے لیے استعمال ہونے والی علامت کو شناخت کنندہ (identifier) یا ویری ایبل کا نام کہتے ہیں۔ ویری ایبلز کے نام رکھنے کے لیے قواعد کا ایک مجموعہ استعمال ہوتا ہے۔ یہ قواعد یہ ہیں:",
+     "pashto": "هغه نښه چې د متغیر لپاره کارول کېږي، پېژندونکی (identifier) یا د متغیر نوم بلل کېږي. د متغیرونو د نوم ایښودو لپاره د قاعدو یوه ټولګه کارول کېږي. دا قاعدې دا دي:"
+    },
+    {
+     "text": "Valid identifier is a sequence of one or more letters, digits or underscores characters (_).",
+     "urdu": "درست شناخت کنندہ ایک یا زیادہ حروف، اعداد یا انڈر اسکور (_) کا سلسلہ ہے۔",
+     "pashto": "سم پېژندونکی د یوه یا ډېرو تورو، رقمونو یا د انډرسکور (_) لړۍ ده."
+    },
+    {
+     "text": "Neither spaces nor punctuation marks or symbols can be part of an identifier. Only letters, digits and single underscore characters are valid.",
+     "urdu": "خالی جگہ، اوقاف یا علامات شناخت کنندہ کا حصہ نہیں ہو سکتیں۔ صرف حروف، اعداد اور ایک انڈر اسکور درست ہیں۔",
+     "pashto": "نه تشې، نه د تنقیط نښې یا سمبولونه د پېژندونکي برخه کېدای شي. یوازې توري، رقمونه او یو انډرسکور سم دي."
+    },
+    {
+     "text": "Variable identifiers always have to begin with a letter. They can also begin with an underscore character(_ ).",
+     "urdu": "ویری ایبل کا شناخت کنندہ ہمیشہ کسی حرف سے شروع ہونا چاہیے۔ یہ انڈر اسکور (_) سے بھی شروع ہو سکتا ہے۔",
+     "pashto": "د متغیر پېژندونکی باید تل په توري پیل شي. په انډرسکور (_) هم پیلېدای شي."
+    },
+    {
+     "text": "In no case, a variable can begin with a digit.",
+     "urdu": "کسی صورت میں ویری ایبل کسی عدد سے شروع نہیں ہو سکتا۔",
+     "pashto": "په هېڅ صورت کې متغیر په رقم نه شي پیلېدای."
+    },
+    {
+     "text": "A Reserved Word of the C++ language cannot be used as an identifier.",
+     "urdu": "C++ زبان کا کوئی مخصوص لفظ شناخت کنندہ کے طور پر استعمال نہیں ہو سکتا۔",
+     "pashto": "د C++ ژبې ځانګړې کلمه د پېژندونکي په توګه نه شي کارول کېدای."
+    },
+    {
+     "text": "Names should be meaningful.",
+     "urdu": "نام بامعنی ہونے چاہییں۔",
+     "pashto": "نومونه باید معنا ولري."
+    },
+    {
+     "text": "Names should not be too long.",
+     "urdu": "نام بہت لمبے نہیں ہونے چاہییں۔",
+     "pashto": "نومونه باید ډېر اوږده نه وي."
+    },
+    {
+     "text": "C++ language is a “case sensitive” language which means that an identifier written in capital letters is not equivalent to the one written in small letters.",
+     "urdu": "C++ زبان ’’کیس سینسیٹو‘‘ زبان ہے جس کا مطلب ہے کہ بڑے حروف میں لکھا گیا شناخت کنندہ چھوٹے حروف میں لکھے گئے شناخت کنندہ کے برابر نہیں ہے۔",
+     "pashto": "C++ ژبه د \"لوی او کوچني توري حساسه\" ژبه ده، چې معنا یې دا ده چې په لویو تورو لیکل شوی پېژندونکی له هغه سره برابر نه دی چې په کوچنیو تورو لیکل شوی."
+    },
+    {
+     "text": "3.2.3 Declaration and Initialization of variables",
+     "urdu": "3.2.3 ویری ایبلز کا اعلان اور ابتدائی قدر",
+     "pashto": "۳.۲.۳ د متغیرونو اعلان او لومړنی ارزښت"
+    },
+    {
+     "text": "a. Declaration of variables",
+     "urdu": "a. ویری ایبلز کا اعلان",
+     "pashto": "a. د متغیرونو اعلان"
+    },
+    {
+     "text": "In order to use a variable in C++, we must first declare it. The declaration of a variable specifies that which type of data this variable will store/use. The syntax to declare a new variable is to write the specifier of the desired data type such as int, bool, float etc. followed by a valid identifier. For example:",
+     "urdu": "C++ میں کوئی ویری ایبل استعمال کرنے کے لیے پہلے اس کا اعلان کرنا ضروری ہے۔ ویری ایبل کا اعلان بتاتا ہے کہ یہ ویری ایبل کس قسم کا ڈیٹا محفوظ/استعمال کرے گا۔ نیا ویری ایبل ڈکلیئر کرنے کا طریقہ یہ ہے کہ مطلوبہ ڈیٹا ٹائپ کا مخصِّص جیسے int، bool، float وغیرہ لکھیں اور اس کے بعد ایک درست شناخت کنندہ۔ مثلاً:",
+     "pashto": "په C++ کې د یوه متغیر د کارولو لپاره باید لومړی اعلان شي. د متغیر اعلان ټاکي چې دا متغیر به څه ډول ډېټا ساتي/کاروي. د نوي متغیر د اعلان بڼه دا ده چې د غوښتل شوي ډېټا ډول ټاکونکی لکه int، bool، float او نور ولیکئ او ورپسې یو سم پېژندونکی. د بېلګې په توګه:"
+    },
+    {
+     "text": "Data type variable_name;\n\nint a;",
+     "urdu": "Data type variable_name;\n\nint a;",
+     "pashto": "Data type variable_name;\n\nint a;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "When this statement is executed by the CPU, a piece of memory from RAM will be set aside and it will be named as a. More than one variables of the same type can be declared in a single statement by separating them with commas. For example:",
+     "urdu": "جب CPU یہ بیان چلاتا ہے تو RAM سے میموری کا ایک حصہ مختص کر دیا جاتا ہے اور اس کا نام a رکھا جاتا ہے۔ ایک ہی قسم کے ایک سے زیادہ ویری ایبلز کو کاموں سے الگ کر کے ایک ہی بیان میں ڈکلیئر کیا جا سکتا ہے۔ مثلاً:",
+     "pashto": "کله چې CPU دا بیان اجرا کړي، د RAM څخه د حافظې یوه برخه ځانګړې کېږي او a نومول کېږي. د یو ډول له یوه زیات متغیرونه د کامو په جلا کولو سره په یوه بیان کې اعلانېدای شي. د بېلګې په توګه:"
+    },
+    {
+     "text": "int a, b, c;",
+     "urdu": "int a, b, c;",
+     "pashto": "int a, b, c;",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "iii. Character constants\n\nA character enclosed within single quotes is called character constant. Consider the following examples:\n\n'A', 'a', '.', '?'\n\nb. Variables\n\nA variable in C++ is a name for a piece of memory that can be used to store information. A variable can be thought as a mailbox where information can be put and retrieved from. All computers have memory, called Random Access Memory (RAM) that is available for programs to use. When a variable is declared, a piece of that memory is set aside for that variable.\n\nConsider the following segment of code.\n\nint a = 5;\nint b = 2;\nint result = a - b;\n\nIn this segment, a, b and result are the integer variables that reside in RAM and store integer values.\n\n3.2.2 Rules for naming variables\n\nThe symbol used for a variable is called an identifier or variable name. A set of rules are used for naming variables. These rules are:\n\nValid identifier is a sequence of one or more letters, digits or underscores characters (_).\n\nNeither spaces nor punctuation marks or symbols can be part of an identifier. Only letters, digits and single underscore characters are valid.\n\nVariable identifiers always have to begin with a letter. They can also begin with an underscore character(_ ).\n\nIn no case, a variable can begin with a digit.\n\nA Reserved Word of the C++ language cannot be used as an identifier.\n\nNames should be meaningful.\n\nNames should not be too long.\n\nC++ language is a “case sensitive” language which means that an identifier written in capital letters is not equivalent to the one written in small letters.\n\n3.2.3 Declaration and Initialization of variables\n\na. Declaration of variables\n\nIn order to use a variable in C++, we must first declare it. The declaration of a variable specifies that which type of data this variable will store/use. The syntax to declare a new variable is to write the specifier of the desired data type such as int, bool, float etc. followed by a valid identifier. For example:\n\nData type variable_name;\n\nint a;\n\nWhen this statement is executed by the CPU, a piece of memory from RAM will be set aside and it will be named as a. More than one variables of the same type can be declared in a single statement by separating them with commas. For example:\n\nint a, b, c;",
+   "urdu": "iii. حرفی کانسٹنٹس\n\nایک واوین (single quotes) میں بند حرف کو حرفی کانسٹنٹ کہتے ہیں۔ درج ذیل مثالوں پر غور کریں:\n\n'A', 'a', '.', '?'\n\nb. ویری ایبلز\n\nC++ میں ویری ایبل میموری کے ایک حصے کا نام ہے جو معلومات محفوظ کرنے کے لیے استعمال ہو سکتا ہے۔ ویری ایبل کو ایک ڈاک خانے کے ڈبے کی طرح سمجھا جا سکتا ہے جس میں معلومات رکھی اور نکالی جا سکتی ہیں۔ تمام کمپیوٹرز میں میموری ہوتی ہے جسے رینڈم ایکسیس میموری (RAM) کہتے ہیں اور جو پروگراموں کے استعمال کے لیے دستیاب ہوتی ہے۔ جب کوئی ویری ایبل ڈکلیئر کیا جاتا ہے تو اس میموری کا ایک حصہ اس ویری ایبل کے لیے مختص کر دیا جاتا ہے۔\n\nکوڈ کے درج ذیل حصے پر غور کریں۔\n\nint a = 5;\nint b = 2;\nint result = a - b;\n\nاس حصے میں a، b اور result انٹیجر ویری ایبلز ہیں جو RAM میں موجود ہیں اور صحیح عددی قدریں محفوظ کرتے ہیں۔\n\n3.2.2 ویری ایبلز کے نام رکھنے کے قواعد\n\nویری ایبل کے لیے استعمال ہونے والی علامت کو شناخت کنندہ (identifier) یا ویری ایبل کا نام کہتے ہیں۔ ویری ایبلز کے نام رکھنے کے لیے قواعد کا ایک مجموعہ استعمال ہوتا ہے۔ یہ قواعد یہ ہیں:\n\nدرست شناخت کنندہ ایک یا زیادہ حروف، اعداد یا انڈر اسکور (_) کا سلسلہ ہے۔\n\nخالی جگہ، اوقاف یا علامات شناخت کنندہ کا حصہ نہیں ہو سکتیں۔ صرف حروف، اعداد اور ایک انڈر اسکور درست ہیں۔\n\nویری ایبل کا شناخت کنندہ ہمیشہ کسی حرف سے شروع ہونا چاہیے۔ یہ انڈر اسکور (_) سے بھی شروع ہو سکتا ہے۔\n\nکسی صورت میں ویری ایبل کسی عدد سے شروع نہیں ہو سکتا۔\n\nC++ زبان کا کوئی مخصوص لفظ شناخت کنندہ کے طور پر استعمال نہیں ہو سکتا۔\n\nنام بامعنی ہونے چاہییں۔\n\nنام بہت لمبے نہیں ہونے چاہییں۔\n\nC++ زبان ’’کیس سینسیٹو‘‘ زبان ہے جس کا مطلب ہے کہ بڑے حروف میں لکھا گیا شناخت کنندہ چھوٹے حروف میں لکھے گئے شناخت کنندہ کے برابر نہیں ہے۔\n\n3.2.3 ویری ایبلز کا اعلان اور ابتدائی قدر\n\na. ویری ایبلز کا اعلان\n\nC++ میں کوئی ویری ایبل استعمال کرنے کے لیے پہلے اس کا اعلان کرنا ضروری ہے۔ ویری ایبل کا اعلان بتاتا ہے کہ یہ ویری ایبل کس قسم کا ڈیٹا محفوظ/استعمال کرے گا۔ نیا ویری ایبل ڈکلیئر کرنے کا طریقہ یہ ہے کہ مطلوبہ ڈیٹا ٹائپ کا مخصِّص جیسے int، bool، float وغیرہ لکھیں اور اس کے بعد ایک درست شناخت کنندہ۔ مثلاً:\n\nData type variable_name;\n\nint a;\n\nجب CPU یہ بیان چلاتا ہے تو RAM سے میموری کا ایک حصہ مختص کر دیا جاتا ہے اور اس کا نام a رکھا جاتا ہے۔ ایک ہی قسم کے ایک سے زیادہ ویری ایبلز کو کاموں سے الگ کر کے ایک ہی بیان میں ڈکلیئر کیا جا سکتا ہے۔ مثلاً:\n\nint a, b, c;",
+   "pashto": "iii. د توري ثابتونه\n\nپه یوګوني نقل‌قولونو کې تړل شوی توری د توري ثابت بلل کېږي. لاندې بېلګو ته پام وکړئ:\n\n'A', 'a', '.', '?'\n\nb. متغیرونه\n\nپه C++ کې متغیر د حافظې د یوې برخې نوم دی چې د معلوماتو د ساتلو لپاره کارول کېدای شي. متغیر د لیک صندوق په څېر ګڼل کېدای شي چې معلومات پکې ایښودل او ترې اخیستل کېدای شي. ټول کمپیوټرونه حافظه لري چې تصادفي لاسرسي حافظه (RAM) بلل کېږي او د پروګرامونو د کارونې لپاره شته. کله چې یو متغیر اعلان شي، د هغې حافظې یوه برخه د هغه متغیر لپاره ځانګړې کېږي.\n\nد کوډ لاندې برخې ته پام وکړئ.\n\nint a = 5;\nint b = 2;\nint result = a - b;\n\nپه دې برخه کې a، b او result صحیح عددي متغیرونه دي چې په RAM کې اوسي او صحیح عددي ارزښتونه ساتي.\n\n۳.۲.۲ د متغیرونو د نوم ایښودو قاعدې\n\nهغه نښه چې د متغیر لپاره کارول کېږي، پېژندونکی (identifier) یا د متغیر نوم بلل کېږي. د متغیرونو د نوم ایښودو لپاره د قاعدو یوه ټولګه کارول کېږي. دا قاعدې دا دي:\n\nسم پېژندونکی د یوه یا ډېرو تورو، رقمونو یا د انډرسکور (_) لړۍ ده.\n\nنه تشې، نه د تنقیط نښې یا سمبولونه د پېژندونکي برخه کېدای شي. یوازې توري، رقمونه او یو انډرسکور سم دي.\n\nد متغیر پېژندونکی باید تل په توري پیل شي. په انډرسکور (_) هم پیلېدای شي.\n\nپه هېڅ صورت کې متغیر په رقم نه شي پیلېدای.\n\nد C++ ژبې ځانګړې کلمه د پېژندونکي په توګه نه شي کارول کېدای.\n\nنومونه باید معنا ولري.\n\nنومونه باید ډېر اوږده نه وي.\n\nC++ ژبه د \"لوی او کوچني توري حساسه\" ژبه ده، چې معنا یې دا ده چې په لویو تورو لیکل شوی پېژندونکی له هغه سره برابر نه دی چې په کوچنیو تورو لیکل شوی.\n\n۳.۲.۳ د متغیرونو اعلان او لومړنی ارزښت\n\na. د متغیرونو اعلان\n\nپه C++ کې د یوه متغیر د کارولو لپاره باید لومړی اعلان شي. د متغیر اعلان ټاکي چې دا متغیر به څه ډول ډېټا ساتي/کاروي. د نوي متغیر د اعلان بڼه دا ده چې د غوښتل شوي ډېټا ډول ټاکونکی لکه int، bool، float او نور ولیکئ او ورپسې یو سم پېژندونکی. د بېلګې په توګه:\n\nData type variable_name;\n\nint a;\n\nکله چې CPU دا بیان اجرا کړي، د RAM څخه د حافظې یوه برخه ځانګړې کېږي او a نومول کېږي. د یو ډول له یوه زیات متغیرونه د کامو په جلا کولو سره په یوه بیان کې اعلانېدای شي. د بېلګې په توګه:\n\nint a, b, c;",
+   "theoryUrdu": "iii. حرفی کانسٹنٹس\n\nایک واوین (single quotes) میں بند حرف کو حرفی کانسٹنٹ کہتے ہیں۔ درج ذیل مثالوں پر غور کریں:\n\n'A', 'a', '.', '?'\n\nb. ویری ایبلز\n\nC++ میں ویری ایبل میموری کے ایک حصے کا نام ہے جو معلومات محفوظ کرنے کے لیے استعمال ہو سکتا ہے۔ ویری ایبل کو ایک ڈاک خانے کے ڈبے کی طرح سمجھا جا سکتا ہے جس میں معلومات رکھی اور نکالی جا سکتی ہیں۔ تمام کمپیوٹرز میں میموری ہوتی ہے جسے رینڈم ایکسیس میموری (RAM) کہتے ہیں اور جو پروگراموں کے استعمال کے لیے دستیاب ہوتی ہے۔ جب کوئی ویری ایبل ڈکلیئر کیا جاتا ہے تو اس میموری کا ایک حصہ اس ویری ایبل کے لیے مختص کر دیا جاتا ہے۔\n\nکوڈ کے درج ذیل حصے پر غور کریں۔\n\nint a = 5;\nint b = 2;\nint result = a - b;\n\nاس حصے میں a، b اور result انٹیجر ویری ایبلز ہیں جو RAM میں موجود ہیں اور صحیح عددی قدریں محفوظ کرتے ہیں۔\n\n3.2.2 ویری ایبلز کے نام رکھنے کے قواعد\n\nویری ایبل کے لیے استعمال ہونے والی علامت کو شناخت کنندہ (identifier) یا ویری ایبل کا نام کہتے ہیں۔ ویری ایبلز کے نام رکھنے کے لیے قواعد کا ایک مجموعہ استعمال ہوتا ہے۔ یہ قواعد یہ ہیں:\n\nدرست شناخت کنندہ ایک یا زیادہ حروف، اعداد یا انڈر اسکور (_) کا سلسلہ ہے۔\n\nخالی جگہ، اوقاف یا علامات شناخت کنندہ کا حصہ نہیں ہو سکتیں۔ صرف حروف، اعداد اور ایک انڈر اسکور درست ہیں۔\n\nویری ایبل کا شناخت کنندہ ہمیشہ کسی حرف سے شروع ہونا چاہیے۔ یہ انڈر اسکور (_) سے بھی شروع ہو سکتا ہے۔\n\nکسی صورت میں ویری ایبل کسی عدد سے شروع نہیں ہو سکتا۔\n\nC++ زبان کا کوئی مخصوص لفظ شناخت کنندہ کے طور پر استعمال نہیں ہو سکتا۔\n\nنام بامعنی ہونے چاہییں۔\n\nنام بہت لمبے نہیں ہونے چاہییں۔\n\nC++ زبان ’’کیس سینسیٹو‘‘ زبان ہے جس کا مطلب ہے کہ بڑے حروف میں لکھا گیا شناخت کنندہ چھوٹے حروف میں لکھے گئے شناخت کنندہ کے برابر نہیں ہے۔\n\n3.2.3 ویری ایبلز کا اعلان اور ابتدائی قدر\n\na. ویری ایبلز کا اعلان\n\nC++ میں کوئی ویری ایبل استعمال کرنے کے لیے پہلے اس کا اعلان کرنا ضروری ہے۔ ویری ایبل کا اعلان بتاتا ہے کہ یہ ویری ایبل کس قسم کا ڈیٹا محفوظ/استعمال کرے گا۔ نیا ویری ایبل ڈکلیئر کرنے کا طریقہ یہ ہے کہ مطلوبہ ڈیٹا ٹائپ کا مخصِّص جیسے int، bool، float وغیرہ لکھیں اور اس کے بعد ایک درست شناخت کنندہ۔ مثلاً:\n\nData type variable_name;\n\nint a;\n\nجب CPU یہ بیان چلاتا ہے تو RAM سے میموری کا ایک حصہ مختص کر دیا جاتا ہے اور اس کا نام a رکھا جاتا ہے۔ ایک ہی قسم کے ایک سے زیادہ ویری ایبلز کو کاموں سے الگ کر کے ایک ہی بیان میں ڈکلیئر کیا جا سکتا ہے۔ مثلاً:\n\nint a, b, c;",
+   "theoryPashto": "iii. د توري ثابتونه\n\nپه یوګوني نقل‌قولونو کې تړل شوی توری د توري ثابت بلل کېږي. لاندې بېلګو ته پام وکړئ:\n\n'A', 'a', '.', '?'\n\nb. متغیرونه\n\nپه C++ کې متغیر د حافظې د یوې برخې نوم دی چې د معلوماتو د ساتلو لپاره کارول کېدای شي. متغیر د لیک صندوق په څېر ګڼل کېدای شي چې معلومات پکې ایښودل او ترې اخیستل کېدای شي. ټول کمپیوټرونه حافظه لري چې تصادفي لاسرسي حافظه (RAM) بلل کېږي او د پروګرامونو د کارونې لپاره شته. کله چې یو متغیر اعلان شي، د هغې حافظې یوه برخه د هغه متغیر لپاره ځانګړې کېږي.\n\nد کوډ لاندې برخې ته پام وکړئ.\n\nint a = 5;\nint b = 2;\nint result = a - b;\n\nپه دې برخه کې a، b او result صحیح عددي متغیرونه دي چې په RAM کې اوسي او صحیح عددي ارزښتونه ساتي.\n\n۳.۲.۲ د متغیرونو د نوم ایښودو قاعدې\n\nهغه نښه چې د متغیر لپاره کارول کېږي، پېژندونکی (identifier) یا د متغیر نوم بلل کېږي. د متغیرونو د نوم ایښودو لپاره د قاعدو یوه ټولګه کارول کېږي. دا قاعدې دا دي:\n\nسم پېژندونکی د یوه یا ډېرو تورو، رقمونو یا د انډرسکور (_) لړۍ ده.\n\nنه تشې، نه د تنقیط نښې یا سمبولونه د پېژندونکي برخه کېدای شي. یوازې توري، رقمونه او یو انډرسکور سم دي.\n\nد متغیر پېژندونکی باید تل په توري پیل شي. په انډرسکور (_) هم پیلېدای شي.\n\nپه هېڅ صورت کې متغیر په رقم نه شي پیلېدای.\n\nد C++ ژبې ځانګړې کلمه د پېژندونکي په توګه نه شي کارول کېدای.\n\nنومونه باید معنا ولري.\n\nنومونه باید ډېر اوږده نه وي.\n\nC++ ژبه د \"لوی او کوچني توري حساسه\" ژبه ده، چې معنا یې دا ده چې په لویو تورو لیکل شوی پېژندونکی له هغه سره برابر نه دی چې په کوچنیو تورو لیکل شوی.\n\n۳.۲.۳ د متغیرونو اعلان او لومړنی ارزښت\n\na. د متغیرونو اعلان\n\nپه C++ کې د یوه متغیر د کارولو لپاره باید لومړی اعلان شي. د متغیر اعلان ټاکي چې دا متغیر به څه ډول ډېټا ساتي/کاروي. د نوي متغیر د اعلان بڼه دا ده چې د غوښتل شوي ډېټا ډول ټاکونکی لکه int، bool، float او نور ولیکئ او ورپسې یو سم پېژندونکی. د بېلګې په توګه:\n\nData type variable_name;\n\nint a;\n\nکله چې CPU دا بیان اجرا کړي، د RAM څخه د حافظې یوه برخه ځانګړې کېږي او a نومول کېږي. د یو ډول له یوه زیات متغیرونه د کامو په جلا کولو سره په یوه بیان کې اعلانېدای شي. د بېلګې په توګه:\n\nint a, b, c;",
+   "content": "<p>iii. Character constants</p><p>A character enclosed within single quotes is called character constant. Consider the following examples:</p><p>&#x27;A&#x27;, &#x27;a&#x27;, &#x27;.&#x27;, &#x27;?&#x27;</p><p>b. Variables</p><p>A variable in C++ is a name for a piece of memory that can be used to store information. A variable can be thought as a mailbox where information can be put and retrieved from. All computers have memory, called Random Access Memory (RAM) that is available for programs to use. When a variable is declared, a piece of that memory is set aside for that variable.</p><p>Consider the following segment of code.</p><p>int a = 5;\nint b = 2;\nint result = a - b;</p><p>In this segment, a, b and result are the integer variables that reside in RAM and store integer values.</p><p>3.2.2 Rules for naming variables</p><p>The symbol used for a variable is called an identifier or variable name. A set of rules are used for naming variables. These rules are:</p><p>Valid identifier is a sequence of one or more letters, digits or underscores characters (_).</p><p>Neither spaces nor punctuation marks or symbols can be part of an identifier. Only letters, digits and single underscore characters are valid.</p><p>Variable identifiers always have to begin with a letter. They can also begin with an underscore character(_ ).</p><p>In no case, a variable can begin with a digit.</p><p>A Reserved Word of the C++ language cannot be used as an identifier.</p><p>Names should be meaningful.</p><p>Names should not be too long.</p><p>C++ language is a “case sensitive” language which means that an identifier written in capital letters is not equivalent to the one written in small letters.</p><p>3.2.3 Declaration and Initialization of variables</p><p>a. Declaration of variables</p><p>In order to use a variable in C++, we must first declare it. The declaration of a variable specifies that which type of data this variable will store/use. The syntax to declare a new variable is to write the specifier of the desired data type such as int, bool, float etc. followed by a valid identifier. For example:</p><p>Data type variable_name;\n\nint a;</p><p>When this statement is executed by the CPU, a piece of memory from RAM will be set aside and it will be named as a. More than one variables of the same type can be declared in a single statement by separating them with commas. For example:</p><p>int a, b, c;</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      23
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 40,
+     "printedPages": [
+      68,
+      69
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (6)",
+   "sourcePageLabel": "PDF 40 · p. 68–69",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf040",
+   "unit": 3,
+   "printedPage": 69,
+   "description": "p.69 prints “specifies that which type”, “More than one variables”; p.68 “underscores characters”. Retained as printed. Owner handwriting on p.69 (“#include <isotream>”, “Using namespace std”) excluded."
+  }
+ ],
+ "completeUnits": []
+}

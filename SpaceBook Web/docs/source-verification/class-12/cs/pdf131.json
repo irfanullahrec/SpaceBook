@@ -1,0 +1,200 @@
+{
+ "pdfPage": 131,
+ "sections": [
+  {
+   "id": "cs12-u8-text-12",
+   "title": "Unit 8 text (12)",
+   "headingUrdu": "یونٹ 8 — متن (12)",
+   "headingPashto": "۸ څپرکی — متن (12)",
+   "paras": [
+    {
+     "text": "Here is another example of shape class which has a series of child classes that describe shapes Rectangle and Triangle. They have certain common properties, such as both can be described by means of their sides but they have their own characteristics i.e. triangle has three sides and rectangle has four sides. Square is more special case with four sides of equal length.",
+     "urdu": "یہ شیپ کلاس کی ایک اور مثال ہے جس کی چائلڈ کلاسز کا سلسلہ شکلیں مستطیل اور مثلث بیان کرتا ہے۔ ان کی کچھ مشترکہ خصوصیات ہیں، جیسے دونوں کو ان کے اضلاع سے بیان کیا جا سکتا ہے لیکن ان کی اپنی خصوصیات ہیں یعنی مثلث کے تین اضلاع اور مستطیل کے چار اضلاع ہیں۔ مربع چار برابر لمبائی کے اضلاع والی زیادہ خاص صورت ہے۔",
+     "pashto": "دا د بڼې ټولګي بله بېلګه ده چې د ماشوم ټولګیو لړۍ لري چې مستطیل او مثلث بڼې بیانوي. ځینې ګډې ځانګړنې لري، لکه دواړه د خپلو ضلعو په مرسته بیانېدای شي، خو خپلې ځانګړنې هم لري، یعنې مثلث درې ضلعې او مستطیل څلور ضلعې لري. مربع د څلورو مساوي اوږدو ضلعو سره ځانګړی حالت دی."
+    },
+    {
+     "text": "We can also represent patients into indoor and outdoor patients in which both have some common features like name, father name, age, address and disease but indoor patient have ‘Ward No’ and ‘Bed No’ as its unique features and the outdoor patient have ‘Next date of visit’ as its unique feature. It can be represented as follows:",
+     "urdu": "ہم مریضوں کو اِن ڈور اور آؤٹ ڈور مریضوں میں بھی ظاہر کر سکتے ہیں جن دونوں کی کچھ مشترکہ خصوصیات ہیں جیسے نام، والد کا نام، عمر، پتہ اور بیماری، لیکن اِن ڈور مریض کی منفرد خصوصیات ’وارڈ نمبر‘ اور ’بیڈ نمبر‘ ہیں اور آؤٹ ڈور مریض کی منفرد خصوصیت ’اگلی ملاقات کی تاریخ‘ ہے۔ اسے یوں ظاہر کیا جا سکتا ہے:",
+     "pashto": "موږ کولی شو ناروغان په داخلي او بهرنیو ناروغانو هم وښیو چې دواړه ځینې ګډې ځانګړنې لري لکه نوم، د پلار نوم، عمر، پته او ناروغي، خو داخلي ناروغ ‘د وارډ شمېره’ او ‘د بستر شمېره’ د ځانګړو ځانګړنو په توګه لري او بهرنی ناروغ ‘د راتلونکې کتنې نېټه’ د ځانګړې ځانګړنې په توګه لري. داسې ښودل کېدای شي:"
+    },
+    {
+     "text": "In order to derive the child class Indoor from the base class patient, the following statement is used.",
+     "urdu": "بیس کلاس patient سے چائلڈ کلاس Indoor اخذ کرنے کے لیے درج ذیل بیان استعمال ہوتا ہے۔",
+     "pashto": "له اساسي ټولګي patient څخه د Indoor ماشوم ټولګي د مشتق کولو لپاره لاندې بیان کارېږي."
+    },
+    {
+     "text": "class Indoor: public Patient\n{\n};",
+     "urdu": "class Indoor: public Patient\n{\n};",
+     "pashto": "class Indoor: public Patient\n{\n};",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The public access specifier is used to derive a class from its parent class. The keyword public may be replaced by any one of the other access specifiers protected and private.",
+     "urdu": "کلاس کو اس کی پیرنٹ کلاس سے اخذ کرنے کے لیے public ایکسس اسپیسیفائر استعمال ہوتا ہے۔ کلیدی لفظ public کو دوسرے ایکسس اسپیسیفائرز protected اور private میں سے کسی سے بدلا جا سکتا ہے۔",
+     "pashto": "یو ټولګی د هغه له مور/پلار ټولګي څخه د مشتق کولو لپاره public د لاسرسي ټاکونکی کارېږي. public کلیدي کلمه د نورو لاسرسي ټاکونکو protected او private له هر یوه سره بدلېدای شي."
+    },
+    {
+     "text": "The following lines of code give the general syntax of using inheritance.",
+     "urdu": "کوڈ کی درج ذیل لائنیں وراثت کے استعمال کا عمومی طریقۂ تحریر دیتی ہیں۔",
+     "pashto": "د کوډ لاندې کرښې د میراث د کارونې عمومي بڼه ورکوي."
+    },
+    {
+     "text": "class A // base class\n{\n};\nclass B: public A //class B is derived from class A\n{\n};",
+     "urdu": "class A // base class\n{\n};\nclass B: public A //class B is derived from class A\n{\n};",
+     "pashto": "class A // base class\n{\n};\nclass B: public A //class B is derived from class A\n{\n};",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "A complete C++ program for the above sketch is given below.",
+     "urdu": "اوپر کے خاکے کے لیے مکمل C++ پروگرام ذیل میں دیا گیا ہے۔",
+     "pashto": "د پورته سکېچ لپاره بشپړ C++ پروګرام لاندې ورکړل شوی."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nvoid showa()\n{\ncout<<\"I am in base class A\"<<endl;\n}\n};\nclass B: public A\n{\npublic:\nvoid showb()\n{\ncout<<\"I am in derived class B\"<<endl;\n}\n};\nint main()\n{\nB b1; // object of the derived class\nb1.showa(); // object of B calling function of base class A\nb1.showb(); // object of B calling own function\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nvoid showa()\n{\ncout<<\"I am in base class A\"<<endl;\n}\n};\nclass B: public A\n{\npublic:\nvoid showb()\n{\ncout<<\"I am in derived class B\"<<endl;\n}\n};\nint main()\n{\nB b1; // object of the derived class\nb1.showa(); // object of B calling function of base class A\nb1.showb(); // object of B calling own function\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nvoid showa()\n{\ncout<<\"I am in base class A\"<<endl;\n}\n};\nclass B: public A\n{\npublic:\nvoid showb()\n{\ncout<<\"I am in derived class B\"<<endl;\n}\n};\nint main()\n{\nB b1; // object of the derived class\nb1.showa(); // object of B calling function of base class A\nb1.showb(); // object of B calling own function\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "I am in base class A\nI am in derived class B",
+     "urdu": "I am in base class A\nI am in derived class B",
+     "pashto": "I am in base class A\nI am in derived class B",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Here is another example of shape class which has a series of child classes that describe shapes Rectangle and Triangle. They have certain common properties, such as both can be described by means of their sides but they have their own characteristics i.e. triangle has three sides and rectangle has four sides. Square is more special case with four sides of equal length.\n\nWe can also represent patients into indoor and outdoor patients in which both have some common features like name, father name, age, address and disease but indoor patient have ‘Ward No’ and ‘Bed No’ as its unique features and the outdoor patient have ‘Next date of visit’ as its unique feature. It can be represented as follows:\n\nIn order to derive the child class Indoor from the base class patient, the following statement is used.\n\nclass Indoor: public Patient\n{\n};\n\nThe public access specifier is used to derive a class from its parent class. The keyword public may be replaced by any one of the other access specifiers protected and private.\n\nThe following lines of code give the general syntax of using inheritance.\n\nclass A // base class\n{\n};\nclass B: public A //class B is derived from class A\n{\n};\n\nA complete C++ program for the above sketch is given below.\n\n#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nvoid showa()\n{\ncout<<\"I am in base class A\"<<endl;\n}\n};\nclass B: public A\n{\npublic:\nvoid showb()\n{\ncout<<\"I am in derived class B\"<<endl;\n}\n};\nint main()\n{\nB b1; // object of the derived class\nb1.showa(); // object of B calling function of base class A\nb1.showb(); // object of B calling own function\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nI am in base class A\nI am in derived class B",
+   "urdu": "یہ شیپ کلاس کی ایک اور مثال ہے جس کی چائلڈ کلاسز کا سلسلہ شکلیں مستطیل اور مثلث بیان کرتا ہے۔ ان کی کچھ مشترکہ خصوصیات ہیں، جیسے دونوں کو ان کے اضلاع سے بیان کیا جا سکتا ہے لیکن ان کی اپنی خصوصیات ہیں یعنی مثلث کے تین اضلاع اور مستطیل کے چار اضلاع ہیں۔ مربع چار برابر لمبائی کے اضلاع والی زیادہ خاص صورت ہے۔\n\nہم مریضوں کو اِن ڈور اور آؤٹ ڈور مریضوں میں بھی ظاہر کر سکتے ہیں جن دونوں کی کچھ مشترکہ خصوصیات ہیں جیسے نام، والد کا نام، عمر، پتہ اور بیماری، لیکن اِن ڈور مریض کی منفرد خصوصیات ’وارڈ نمبر‘ اور ’بیڈ نمبر‘ ہیں اور آؤٹ ڈور مریض کی منفرد خصوصیت ’اگلی ملاقات کی تاریخ‘ ہے۔ اسے یوں ظاہر کیا جا سکتا ہے:\n\nبیس کلاس patient سے چائلڈ کلاس Indoor اخذ کرنے کے لیے درج ذیل بیان استعمال ہوتا ہے۔\n\nclass Indoor: public Patient\n{\n};\n\nکلاس کو اس کی پیرنٹ کلاس سے اخذ کرنے کے لیے public ایکسس اسپیسیفائر استعمال ہوتا ہے۔ کلیدی لفظ public کو دوسرے ایکسس اسپیسیفائرز protected اور private میں سے کسی سے بدلا جا سکتا ہے۔\n\nکوڈ کی درج ذیل لائنیں وراثت کے استعمال کا عمومی طریقۂ تحریر دیتی ہیں۔\n\nclass A // base class\n{\n};\nclass B: public A //class B is derived from class A\n{\n};\n\nاوپر کے خاکے کے لیے مکمل C++ پروگرام ذیل میں دیا گیا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nvoid showa()\n{\ncout<<\"I am in base class A\"<<endl;\n}\n};\nclass B: public A\n{\npublic:\nvoid showb()\n{\ncout<<\"I am in derived class B\"<<endl;\n}\n};\nint main()\n{\nB b1; // object of the derived class\nb1.showa(); // object of B calling function of base class A\nb1.showb(); // object of B calling own function\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nI am in base class A\nI am in derived class B",
+   "pashto": "دا د بڼې ټولګي بله بېلګه ده چې د ماشوم ټولګیو لړۍ لري چې مستطیل او مثلث بڼې بیانوي. ځینې ګډې ځانګړنې لري، لکه دواړه د خپلو ضلعو په مرسته بیانېدای شي، خو خپلې ځانګړنې هم لري، یعنې مثلث درې ضلعې او مستطیل څلور ضلعې لري. مربع د څلورو مساوي اوږدو ضلعو سره ځانګړی حالت دی.\n\nموږ کولی شو ناروغان په داخلي او بهرنیو ناروغانو هم وښیو چې دواړه ځینې ګډې ځانګړنې لري لکه نوم، د پلار نوم، عمر، پته او ناروغي، خو داخلي ناروغ ‘د وارډ شمېره’ او ‘د بستر شمېره’ د ځانګړو ځانګړنو په توګه لري او بهرنی ناروغ ‘د راتلونکې کتنې نېټه’ د ځانګړې ځانګړنې په توګه لري. داسې ښودل کېدای شي:\n\nله اساسي ټولګي patient څخه د Indoor ماشوم ټولګي د مشتق کولو لپاره لاندې بیان کارېږي.\n\nclass Indoor: public Patient\n{\n};\n\nیو ټولګی د هغه له مور/پلار ټولګي څخه د مشتق کولو لپاره public د لاسرسي ټاکونکی کارېږي. public کلیدي کلمه د نورو لاسرسي ټاکونکو protected او private له هر یوه سره بدلېدای شي.\n\nد کوډ لاندې کرښې د میراث د کارونې عمومي بڼه ورکوي.\n\nclass A // base class\n{\n};\nclass B: public A //class B is derived from class A\n{\n};\n\nد پورته سکېچ لپاره بشپړ C++ پروګرام لاندې ورکړل شوی.\n\n#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nvoid showa()\n{\ncout<<\"I am in base class A\"<<endl;\n}\n};\nclass B: public A\n{\npublic:\nvoid showb()\n{\ncout<<\"I am in derived class B\"<<endl;\n}\n};\nint main()\n{\nB b1; // object of the derived class\nb1.showa(); // object of B calling function of base class A\nb1.showb(); // object of B calling own function\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nI am in base class A\nI am in derived class B",
+   "theoryUrdu": "یہ شیپ کلاس کی ایک اور مثال ہے جس کی چائلڈ کلاسز کا سلسلہ شکلیں مستطیل اور مثلث بیان کرتا ہے۔ ان کی کچھ مشترکہ خصوصیات ہیں، جیسے دونوں کو ان کے اضلاع سے بیان کیا جا سکتا ہے لیکن ان کی اپنی خصوصیات ہیں یعنی مثلث کے تین اضلاع اور مستطیل کے چار اضلاع ہیں۔ مربع چار برابر لمبائی کے اضلاع والی زیادہ خاص صورت ہے۔\n\nہم مریضوں کو اِن ڈور اور آؤٹ ڈور مریضوں میں بھی ظاہر کر سکتے ہیں جن دونوں کی کچھ مشترکہ خصوصیات ہیں جیسے نام، والد کا نام، عمر، پتہ اور بیماری، لیکن اِن ڈور مریض کی منفرد خصوصیات ’وارڈ نمبر‘ اور ’بیڈ نمبر‘ ہیں اور آؤٹ ڈور مریض کی منفرد خصوصیت ’اگلی ملاقات کی تاریخ‘ ہے۔ اسے یوں ظاہر کیا جا سکتا ہے:\n\nبیس کلاس patient سے چائلڈ کلاس Indoor اخذ کرنے کے لیے درج ذیل بیان استعمال ہوتا ہے۔\n\nclass Indoor: public Patient\n{\n};\n\nکلاس کو اس کی پیرنٹ کلاس سے اخذ کرنے کے لیے public ایکسس اسپیسیفائر استعمال ہوتا ہے۔ کلیدی لفظ public کو دوسرے ایکسس اسپیسیفائرز protected اور private میں سے کسی سے بدلا جا سکتا ہے۔\n\nکوڈ کی درج ذیل لائنیں وراثت کے استعمال کا عمومی طریقۂ تحریر دیتی ہیں۔\n\nclass A // base class\n{\n};\nclass B: public A //class B is derived from class A\n{\n};\n\nاوپر کے خاکے کے لیے مکمل C++ پروگرام ذیل میں دیا گیا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nvoid showa()\n{\ncout<<\"I am in base class A\"<<endl;\n}\n};\nclass B: public A\n{\npublic:\nvoid showb()\n{\ncout<<\"I am in derived class B\"<<endl;\n}\n};\nint main()\n{\nB b1; // object of the derived class\nb1.showa(); // object of B calling function of base class A\nb1.showb(); // object of B calling own function\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nI am in base class A\nI am in derived class B",
+   "theoryPashto": "دا د بڼې ټولګي بله بېلګه ده چې د ماشوم ټولګیو لړۍ لري چې مستطیل او مثلث بڼې بیانوي. ځینې ګډې ځانګړنې لري، لکه دواړه د خپلو ضلعو په مرسته بیانېدای شي، خو خپلې ځانګړنې هم لري، یعنې مثلث درې ضلعې او مستطیل څلور ضلعې لري. مربع د څلورو مساوي اوږدو ضلعو سره ځانګړی حالت دی.\n\nموږ کولی شو ناروغان په داخلي او بهرنیو ناروغانو هم وښیو چې دواړه ځینې ګډې ځانګړنې لري لکه نوم، د پلار نوم، عمر، پته او ناروغي، خو داخلي ناروغ ‘د وارډ شمېره’ او ‘د بستر شمېره’ د ځانګړو ځانګړنو په توګه لري او بهرنی ناروغ ‘د راتلونکې کتنې نېټه’ د ځانګړې ځانګړنې په توګه لري. داسې ښودل کېدای شي:\n\nله اساسي ټولګي patient څخه د Indoor ماشوم ټولګي د مشتق کولو لپاره لاندې بیان کارېږي.\n\nclass Indoor: public Patient\n{\n};\n\nیو ټولګی د هغه له مور/پلار ټولګي څخه د مشتق کولو لپاره public د لاسرسي ټاکونکی کارېږي. public کلیدي کلمه د نورو لاسرسي ټاکونکو protected او private له هر یوه سره بدلېدای شي.\n\nد کوډ لاندې کرښې د میراث د کارونې عمومي بڼه ورکوي.\n\nclass A // base class\n{\n};\nclass B: public A //class B is derived from class A\n{\n};\n\nد پورته سکېچ لپاره بشپړ C++ پروګرام لاندې ورکړل شوی.\n\n#include <iostream.h>\n#include <conio.h>\nclass A\n{\npublic:\nvoid showa()\n{\ncout<<\"I am in base class A\"<<endl;\n}\n};\nclass B: public A\n{\npublic:\nvoid showb()\n{\ncout<<\"I am in derived class B\"<<endl;\n}\n};\nint main()\n{\nB b1; // object of the derived class\nb1.showa(); // object of B calling function of base class A\nb1.showb(); // object of B calling own function\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nI am in base class A\nI am in derived class B",
+   "content": "<p>Here is another example of shape class which has a series of child classes that describe shapes Rectangle and Triangle. They have certain common properties, such as both can be described by means of their sides but they have their own characteristics i.e. triangle has three sides and rectangle has four sides. Square is more special case with four sides of equal length.</p><p>We can also represent patients into indoor and outdoor patients in which both have some common features like name, father name, age, address and disease but indoor patient have ‘Ward No’ and ‘Bed No’ as its unique features and the outdoor patient have ‘Next date of visit’ as its unique feature. It can be represented as follows:</p><p>In order to derive the child class Indoor from the base class patient, the following statement is used.</p><p>class Indoor: public Patient\n{\n};</p><p>The public access specifier is used to derive a class from its parent class. The keyword public may be replaced by any one of the other access specifiers protected and private.</p><p>The following lines of code give the general syntax of using inheritance.</p><p>class A // base class\n{\n};\nclass B: public A //class B is derived from class A\n{\n};</p><p>A complete C++ program for the above sketch is given below.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nclass A\n{\npublic:\nvoid showa()\n{\ncout&lt;&lt;&quot;I am in base class A&quot;&lt;&lt;endl;\n}\n};\nclass B: public A\n{\npublic:\nvoid showb()\n{\ncout&lt;&lt;&quot;I am in derived class B&quot;&lt;&lt;endl;\n}\n};\nint main()\n{\nB b1; // object of the derived class\nb1.showa(); // object of B calling function of base class A\nb1.showb(); // object of B calling own function\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>I am in base class A\nI am in derived class B</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "list",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-8-2-shape"
+    },
+    {
+     "type": "list",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-8-3"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-8-2-shape",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 330\" role=\"img\" aria-label=\"Figure 8.2: Inheritance of Shape Class\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"330\" fill=\"#ffffff\"/><rect x=\"120.0\" y=\"20.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\" stroke-dasharray=\"4 3\"/><text x=\"180\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Shape</text><rect x=\"45.0\" y=\"128.0\" width=\"130\" height=\"44\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"110\" y=\"156\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Rectangle</text><polygon points=\"270,110.0 350.0,190.0 190.0,190.0\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"270\" y=\"175.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Triangle</text><rect x=\"65.0\" y=\"238.0\" width=\"90\" height=\"44\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"110\" y=\"266\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Square</text><line x1=\"180\" y1=\"60.0\" x2=\"110\" y2=\"122.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"180\" y1=\"60.0\" x2=\"270\" y2=\"104.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"110\" y1=\"238.0\" x2=\"110\" y2=\"178.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"270\" y=\"45\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Base class</text><text x=\"360\" y=\"125\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Derived class</text><text x=\"230.0\" y=\"322\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Figure 8.2: Inheritance of Shape Class</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 330\" role=\"img\" aria-label=\"شکل 8.2: شیپ کلاس کی وراثت\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"330\" fill=\"#ffffff\"/><rect x=\"120.0\" y=\"20.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\" stroke-dasharray=\"4 3\"/><text x=\"180\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شکل</text><rect x=\"45.0\" y=\"128.0\" width=\"130\" height=\"44\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"110\" y=\"156\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">مستطیل</text><polygon points=\"270,110.0 350.0,190.0 190.0,190.0\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"270\" y=\"175.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">مثلث</text><rect x=\"65.0\" y=\"238.0\" width=\"90\" height=\"44\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"110\" y=\"266\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">مربع</text><line x1=\"180\" y1=\"60.0\" x2=\"110\" y2=\"122.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"180\" y1=\"60.0\" x2=\"270\" y2=\"104.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"110\" y1=\"238.0\" x2=\"110\" y2=\"178.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"270\" y=\"45\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بیس کلاس</text><text x=\"360\" y=\"125\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">ڈیرائیوڈ کلاس</text><text x=\"230.0\" y=\"322\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">شکل 8.2: شیپ کلاس کی وراثت</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 330\" role=\"img\" aria-label=\"۸.۲ شکل: د بڼې ټولګي میراث\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"330\" fill=\"#ffffff\"/><rect x=\"120.0\" y=\"20.0\" width=\"120\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\" stroke-dasharray=\"4 3\"/><text x=\"180\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بڼه</text><rect x=\"45.0\" y=\"128.0\" width=\"130\" height=\"44\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"110\" y=\"156\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">مستطیل</text><polygon points=\"270,110.0 350.0,190.0 190.0,190.0\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"270\" y=\"175.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">مثلث</text><rect x=\"65.0\" y=\"238.0\" width=\"90\" height=\"44\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"110\" y=\"266\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">مربع</text><line x1=\"180\" y1=\"60.0\" x2=\"110\" y2=\"122.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"180\" y1=\"60.0\" x2=\"270\" y2=\"104.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"110\" y1=\"238.0\" x2=\"110\" y2=\"178.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"270\" y=\"45\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">اساسي ټولګی</text><text x=\"360\" y=\"125\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">مشتق ټولګی</text><text x=\"230.0\" y=\"322\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۸.۲ شکل: د بڼې ټولګي میراث</text></svg>",
+     "sourceWidthRatio": 1.393939393939394
+    },
+    {
+     "id": "cs12-fig-8-3",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 250\" role=\"img\" aria-label=\"Figure 8.3: Inheritance of Patient Class\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"520\" height=\"250\" fill=\"#ffffff\"/><rect x=\"190.0\" y=\"20.0\" width=\"140\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"260\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Patient</text><rect x=\"145.0\" y=\"150.0\" width=\"110\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"200\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Indoor</text><rect x=\"285.0\" y=\"150.0\" width=\"110\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"340\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Outdoor</text><line x1=\"200\" y1=\"150.0\" x2=\"260\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"340\" y1=\"150.0\" x2=\"260\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"340\" y=\"32\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Name, Father name, Age</text><text x=\"340\" y=\"52\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Address, Disease</text><text x=\"140\" y=\"175\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Ward No, Bed No.</text><text x=\"400\" y=\"175\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Next date of visit</text><text x=\"260.0\" y=\"242\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Figure 8.3: Inheritance of Patient Class</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 250\" role=\"img\" aria-label=\"شکل 8.3: مریض کلاس کی وراثت\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"520\" height=\"250\" fill=\"#ffffff\"/><rect x=\"190.0\" y=\"20.0\" width=\"140\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"260\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">مریض</text><rect x=\"145.0\" y=\"150.0\" width=\"110\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"200\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">اِن ڈور</text><rect x=\"285.0\" y=\"150.0\" width=\"110\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"340\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">آؤٹ ڈور</text><line x1=\"200\" y1=\"150.0\" x2=\"260\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"340\" y1=\"150.0\" x2=\"260\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"340\" y=\"32\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">نام، والد کا نام، عمر</text><text x=\"340\" y=\"52\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">پتہ، بیماری</text><text x=\"140\" y=\"175\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">وارڈ نمبر، بیڈ نمبر</text><text x=\"400\" y=\"175\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">اگلی ملاقات کی تاریخ</text><text x=\"260.0\" y=\"242\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">شکل 8.3: مریض کلاس کی وراثت</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 250\" role=\"img\" aria-label=\"۸.۳ شکل: د ناروغ ټولګي میراث\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"520\" height=\"250\" fill=\"#ffffff\"/><rect x=\"190.0\" y=\"20.0\" width=\"140\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"260\" y=\"46\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">ناروغ</text><rect x=\"145.0\" y=\"150.0\" width=\"110\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"200\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">داخلي</text><rect x=\"285.0\" y=\"150.0\" width=\"110\" height=\"40\" rx=\"5\" fill=\"#fbfde8\" stroke=\"#a3b62a\" stroke-width=\"3\"/><text x=\"340\" y=\"176\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بهرنی</text><line x1=\"200\" y1=\"150.0\" x2=\"260\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"340\" y1=\"150.0\" x2=\"260\" y2=\"66.0\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"340\" y=\"32\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">نوم، د پلار نوم، عمر</text><text x=\"340\" y=\"52\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">پته، ناروغي</text><text x=\"140\" y=\"175\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">د وارډ شمېره، د بستر شمېره</text><text x=\"400\" y=\"175\" text-anchor=\"start\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">د راتلونکې کتنې نېټه</text><text x=\"260.0\" y=\"242\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۸.۳ شکل: د ناروغ ټولګي میراث</text></svg>",
+     "sourceWidthRatio": 2.08
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 131,
+     "printedPages": [
+      250,
+      251,
+      252
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (12)",
+   "sourcePageLabel": "PDF 131 · p. 250–251–252",
+   "sourceNote": "Figures 8.2 (Shape) and 8.3 are reproduced as coded diagrams. The complete inheritance program begins at the foot of p.251 and continues on p.252 (PDF132); it is given whole with its output.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf131",
+   "unit": 8,
+   "printedPage": 251,
+   "description": "p.250 “indoor patient have … its unique features”; p.251 “base class patient” (lower case) while the code uses Patient. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

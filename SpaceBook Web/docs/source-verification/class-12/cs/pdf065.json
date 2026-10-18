@@ -1,0 +1,187 @@
+{
+ "pdfPage": 65,
+ "sections": [
+  {
+   "id": "cs12-u4-text-5",
+   "title": "Unit 4 text (5)",
+   "headingUrdu": "یونٹ 4 — متن (۵)",
+   "headingPashto": "۴ څپرکی — متن (۵)",
+   "paras": [
+    {
+     "text": "switch example",
+     "urdu": "switch کی مثال",
+     "pashto": "د switch بېلګه"
+    },
+    {
+     "text": "// Switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\";\ncin>>x;\nswitch (x)\n{\ncase 1:\ncout << \"x is 1\";\nbreak;\ncase 2:\ncout << \"x is 2\";\nbreak;\ndefault:\ncout << \"value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "// Switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\";\ncin>>x;\nswitch (x)\n{\ncase 1:\ncout << \"x is 1\";\nbreak;\ncase 2:\ncout << \"x is 2\";\nbreak;\ndefault:\ncout << \"value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "// Switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\";\ncin>>x;\nswitch (x)\n{\ncase 1:\ncout << \"x is 1\";\nbreak;\ncase 2:\ncout << \"x is 2\";\nbreak;\ndefault:\ncout << \"value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "if-else equivalent",
+     "urdu": "if-else متبادل",
+     "pashto": "د if-else معادل"
+    },
+    {
+     "text": "// if-else alternative of the switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\"<<end;\ncin>>x;\nif (x == 1)\n{\ncout << \"x is 1\";\n}else\nif (x == 2)\n{\ncout << \"x is 2\";\n}else\n{\ncout << \" value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "// if-else alternative of the switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\"<<end;\ncin>>x;\nif (x == 1)\n{\ncout << \"x is 1\";\n}else\nif (x == 2)\n{\ncout << \"x is 2\";\n}else\n{\ncout << \" value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "// if-else alternative of the switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\"<<end;\ncin>>x;\nif (x == 1)\n{\ncout << \"x is 1\";\n}else\nif (x == 2)\n{\ncout << \"x is 2\";\n}else\n{\ncout << \" value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In the above program, if we did not include a break statement after the first group for case 1, the program will not automatically jump to the end of the switch and it would continue executing the rest of statements until it reaches either a break instruction or the end of the switch block.",
+     "urdu": "اوپر والے پروگرام میں اگر ہم case 1 کے پہلے گروپ کے بعد break بیان شامل نہ کرتے تو پروگرام خود بخود switch کے آخر پر نہ جاتا اور باقی بیانات چلاتا رہتا یہاں تک کہ break ہدایت یا switch بلاک کا اختتام آ جاتا۔",
+     "pashto": "په پورته پروګرام کې که موږ د case 1 له لومړۍ ډلې وروسته break بیان نه وای شامل کړی، پروګرام به په خپله د switch پای ته نه تلای او پاتې بیانونه به یې اجرا کول تر هغه چې break لارښوونې یا د switch بلاک پای ته رسېدلی."
+    },
+    {
+     "text": "switch statement can only be used to compare the value of the expression with the constants written with each case clause. Therefore, variables cannot be used with constants such as case n or ranges such as case (1..3): because they are not valid C++ constants. These constants be either integers or character type.",
+     "urdu": "switch بیان صرف ایکسپریشن کی قدر کا ہر case شق کے ساتھ لکھے گئے کانسٹنٹس سے موازنہ کرنے کے لیے استعمال ہو سکتا ہے۔ اس لیے کانسٹنٹس کی جگہ ویری ایبلز جیسے case n یا حدود جیسے case (1..3): استعمال نہیں ہو سکتیں کیونکہ یہ درست C++ کانسٹنٹس نہیں ہیں۔ یہ کانسٹنٹس صحیح عدد یا حرفی قسم کے ہوں۔",
+     "pashto": "switch بیان یوازې د افادې ارزښت د هر case سره لیکل شویو ثابتونو سره پرتله کولو ته کارېدای شي. نو د ثابتونو پر ځای متغیرونه لکه case n یا حدونه لکه case (1..3): نه شي کارول کېدای، ځکه دا سم C++ ثابتونه نه دي. دا ثابتونه دې صحیح عدد یا د توري ډول وي."
+    },
+    {
+     "text": "4.1.2 Nested if statement",
+     "urdu": "4.1.2 نیسٹڈ if بیان",
+     "pashto": "۴.۱.۲ ځالې if بیان"
+    },
+    {
+     "text": "It is possible to chain if-else statements together. When one if-else statement is used inside the body of another if-else structure then it forms a nested if ladder.",
+     "urdu": "if-else بیانات کو ایک ساتھ زنجیر کی طرح جوڑنا ممکن ہے۔ جب ایک if-else بیان دوسری if-else ساخت کے جسم کے اندر استعمال ہو تو یہ نیسٹڈ if سیڑھی بناتا ہے۔",
+     "pashto": "د if-else بیانونه یو بل سره د زنځیر په څېر تړل شوني دي. کله چې یو if-else بیان د بل if-else جوړښت د بدنې دننه وکارول شي، ځالې if زینه جوړوي."
+    },
+    {
+     "text": "The following program demonstrates the use of nested if structure.",
+     "urdu": "درج ذیل پروگرام نیسٹڈ if ساخت کا استعمال دکھاتا ہے۔",
+     "pashto": "لاندې پروګرام د ځالې if جوړښت کارونه ښيي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X > 100)\ncout << X << \"is greater than 100\" << endl;\nelse if (X < 50)\ncout << X << \"is less than 50\" << endl;\nelse\ncout << X << \" is between 50 and 100\" << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X > 100)\ncout << X << \"is greater than 100\" << endl;\nelse if (X < 50)\ncout << X << \"is less than 50\" << endl;\nelse\ncout << X << \" is between 50 and 100\" << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X > 100)\ncout << X << \"is greater than 100\" << endl;\nelse if (X < 50)\ncout << X << \"is less than 50\" << endl;\nelse\ncout << X << \" is between 50 and 100\" << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter a number:\n96\n96 is between 50 and 100",
+     "urdu": "Enter a number:\n96\n96 is between 50 and 100",
+     "pashto": "Enter a number:\n96\n96 is between 50 and 100",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "switch example\n\n// Switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\";\ncin>>x;\nswitch (x)\n{\ncase 1:\ncout << \"x is 1\";\nbreak;\ncase 2:\ncout << \"x is 2\";\nbreak;\ndefault:\ncout << \"value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}\n\nif-else equivalent\n\n// if-else alternative of the switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\"<<end;\ncin>>x;\nif (x == 1)\n{\ncout << \"x is 1\";\n}else\nif (x == 2)\n{\ncout << \"x is 2\";\n}else\n{\ncout << \" value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}\n\nIn the above program, if we did not include a break statement after the first group for case 1, the program will not automatically jump to the end of the switch and it would continue executing the rest of statements until it reaches either a break instruction or the end of the switch block.\n\nswitch statement can only be used to compare the value of the expression with the constants written with each case clause. Therefore, variables cannot be used with constants such as case n or ranges such as case (1..3): because they are not valid C++ constants. These constants be either integers or character type.\n\n4.1.2 Nested if statement\n\nIt is possible to chain if-else statements together. When one if-else statement is used inside the body of another if-else structure then it forms a nested if ladder.\n\nThe following program demonstrates the use of nested if structure.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X > 100)\ncout << X << \"is greater than 100\" << endl;\nelse if (X < 50)\ncout << X << \"is less than 50\" << endl;\nelse\ncout << X << \" is between 50 and 100\" << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nEnter a number:\n96\n96 is between 50 and 100",
+   "urdu": "switch کی مثال\n\n// Switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\";\ncin>>x;\nswitch (x)\n{\ncase 1:\ncout << \"x is 1\";\nbreak;\ncase 2:\ncout << \"x is 2\";\nbreak;\ndefault:\ncout << \"value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}\n\nif-else متبادل\n\n// if-else alternative of the switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\"<<end;\ncin>>x;\nif (x == 1)\n{\ncout << \"x is 1\";\n}else\nif (x == 2)\n{\ncout << \"x is 2\";\n}else\n{\ncout << \" value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}\n\nاوپر والے پروگرام میں اگر ہم case 1 کے پہلے گروپ کے بعد break بیان شامل نہ کرتے تو پروگرام خود بخود switch کے آخر پر نہ جاتا اور باقی بیانات چلاتا رہتا یہاں تک کہ break ہدایت یا switch بلاک کا اختتام آ جاتا۔\n\nswitch بیان صرف ایکسپریشن کی قدر کا ہر case شق کے ساتھ لکھے گئے کانسٹنٹس سے موازنہ کرنے کے لیے استعمال ہو سکتا ہے۔ اس لیے کانسٹنٹس کی جگہ ویری ایبلز جیسے case n یا حدود جیسے case (1..3): استعمال نہیں ہو سکتیں کیونکہ یہ درست C++ کانسٹنٹس نہیں ہیں۔ یہ کانسٹنٹس صحیح عدد یا حرفی قسم کے ہوں۔\n\n4.1.2 نیسٹڈ if بیان\n\nif-else بیانات کو ایک ساتھ زنجیر کی طرح جوڑنا ممکن ہے۔ جب ایک if-else بیان دوسری if-else ساخت کے جسم کے اندر استعمال ہو تو یہ نیسٹڈ if سیڑھی بناتا ہے۔\n\nدرج ذیل پروگرام نیسٹڈ if ساخت کا استعمال دکھاتا ہے۔\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X > 100)\ncout << X << \"is greater than 100\" << endl;\nelse if (X < 50)\ncout << X << \"is less than 50\" << endl;\nelse\ncout << X << \" is between 50 and 100\" << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number:\n96\n96 is between 50 and 100",
+   "pashto": "د switch بېلګه\n\n// Switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\";\ncin>>x;\nswitch (x)\n{\ncase 1:\ncout << \"x is 1\";\nbreak;\ncase 2:\ncout << \"x is 2\";\nbreak;\ndefault:\ncout << \"value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}\n\nد if-else معادل\n\n// if-else alternative of the switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\"<<end;\ncin>>x;\nif (x == 1)\n{\ncout << \"x is 1\";\n}else\nif (x == 2)\n{\ncout << \"x is 2\";\n}else\n{\ncout << \" value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}\n\nپه پورته پروګرام کې که موږ د case 1 له لومړۍ ډلې وروسته break بیان نه وای شامل کړی، پروګرام به په خپله د switch پای ته نه تلای او پاتې بیانونه به یې اجرا کول تر هغه چې break لارښوونې یا د switch بلاک پای ته رسېدلی.\n\nswitch بیان یوازې د افادې ارزښت د هر case سره لیکل شویو ثابتونو سره پرتله کولو ته کارېدای شي. نو د ثابتونو پر ځای متغیرونه لکه case n یا حدونه لکه case (1..3): نه شي کارول کېدای، ځکه دا سم C++ ثابتونه نه دي. دا ثابتونه دې صحیح عدد یا د توري ډول وي.\n\n۴.۱.۲ ځالې if بیان\n\nد if-else بیانونه یو بل سره د زنځیر په څېر تړل شوني دي. کله چې یو if-else بیان د بل if-else جوړښت د بدنې دننه وکارول شي، ځالې if زینه جوړوي.\n\nلاندې پروګرام د ځالې if جوړښت کارونه ښيي.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X > 100)\ncout << X << \"is greater than 100\" << endl;\nelse if (X < 50)\ncout << X << \"is less than 50\" << endl;\nelse\ncout << X << \" is between 50 and 100\" << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number:\n96\n96 is between 50 and 100",
+   "theoryUrdu": "switch کی مثال\n\n// Switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\";\ncin>>x;\nswitch (x)\n{\ncase 1:\ncout << \"x is 1\";\nbreak;\ncase 2:\ncout << \"x is 2\";\nbreak;\ndefault:\ncout << \"value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}\n\nif-else متبادل\n\n// if-else alternative of the switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\"<<end;\ncin>>x;\nif (x == 1)\n{\ncout << \"x is 1\";\n}else\nif (x == 2)\n{\ncout << \"x is 2\";\n}else\n{\ncout << \" value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}\n\nاوپر والے پروگرام میں اگر ہم case 1 کے پہلے گروپ کے بعد break بیان شامل نہ کرتے تو پروگرام خود بخود switch کے آخر پر نہ جاتا اور باقی بیانات چلاتا رہتا یہاں تک کہ break ہدایت یا switch بلاک کا اختتام آ جاتا۔\n\nswitch بیان صرف ایکسپریشن کی قدر کا ہر case شق کے ساتھ لکھے گئے کانسٹنٹس سے موازنہ کرنے کے لیے استعمال ہو سکتا ہے۔ اس لیے کانسٹنٹس کی جگہ ویری ایبلز جیسے case n یا حدود جیسے case (1..3): استعمال نہیں ہو سکتیں کیونکہ یہ درست C++ کانسٹنٹس نہیں ہیں۔ یہ کانسٹنٹس صحیح عدد یا حرفی قسم کے ہوں۔\n\n4.1.2 نیسٹڈ if بیان\n\nif-else بیانات کو ایک ساتھ زنجیر کی طرح جوڑنا ممکن ہے۔ جب ایک if-else بیان دوسری if-else ساخت کے جسم کے اندر استعمال ہو تو یہ نیسٹڈ if سیڑھی بناتا ہے۔\n\nدرج ذیل پروگرام نیسٹڈ if ساخت کا استعمال دکھاتا ہے۔\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X > 100)\ncout << X << \"is greater than 100\" << endl;\nelse if (X < 50)\ncout << X << \"is less than 50\" << endl;\nelse\ncout << X << \" is between 50 and 100\" << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number:\n96\n96 is between 50 and 100",
+   "theoryPashto": "د switch بېلګه\n\n// Switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\";\ncin>>x;\nswitch (x)\n{\ncase 1:\ncout << \"x is 1\";\nbreak;\ncase 2:\ncout << \"x is 2\";\nbreak;\ndefault:\ncout << \"value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}\n\nد if-else معادل\n\n// if-else alternative of the switch program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x;\ncout<<\"Enter value for x\"<<end;\ncin>>x;\nif (x == 1)\n{\ncout << \"x is 1\";\n}else\nif (x == 2)\n{\ncout << \"x is 2\";\n}else\n{\ncout << \" value of x is neither 1 nor 2\";\n}\ngetch();\nreturn 0;\n}\n\nپه پورته پروګرام کې که موږ د case 1 له لومړۍ ډلې وروسته break بیان نه وای شامل کړی، پروګرام به په خپله د switch پای ته نه تلای او پاتې بیانونه به یې اجرا کول تر هغه چې break لارښوونې یا د switch بلاک پای ته رسېدلی.\n\nswitch بیان یوازې د افادې ارزښت د هر case سره لیکل شویو ثابتونو سره پرتله کولو ته کارېدای شي. نو د ثابتونو پر ځای متغیرونه لکه case n یا حدونه لکه case (1..3): نه شي کارول کېدای، ځکه دا سم C++ ثابتونه نه دي. دا ثابتونه دې صحیح عدد یا د توري ډول وي.\n\n۴.۱.۲ ځالې if بیان\n\nد if-else بیانونه یو بل سره د زنځیر په څېر تړل شوني دي. کله چې یو if-else بیان د بل if-else جوړښت د بدنې دننه وکارول شي، ځالې if زینه جوړوي.\n\nلاندې پروګرام د ځالې if جوړښت کارونه ښيي.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X > 100)\ncout << X << \"is greater than 100\" << endl;\nelse if (X < 50)\ncout << X << \"is less than 50\" << endl;\nelse\ncout << X << \" is between 50 and 100\" << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number:\n96\n96 is between 50 and 100",
+   "content": "<p>switch example</p><p>// Switch program\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint x;\ncout&lt;&lt;&quot;Enter value for x&quot;;\ncin&gt;&gt;x;\nswitch (x)\n{\ncase 1:\ncout &lt;&lt; &quot;x is 1&quot;;\nbreak;\ncase 2:\ncout &lt;&lt; &quot;x is 2&quot;;\nbreak;\ndefault:\ncout &lt;&lt; &quot;value of x is neither 1 nor 2&quot;;\n}\ngetch();\nreturn 0;\n}</p><p>if-else equivalent</p><p>// if-else alternative of the switch program\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint x;\ncout&lt;&lt;&quot;Enter value for x&quot;&lt;&lt;end;\ncin&gt;&gt;x;\nif (x == 1)\n{\ncout &lt;&lt; &quot;x is 1&quot;;\n}else\nif (x == 2)\n{\ncout &lt;&lt; &quot;x is 2&quot;;\n}else\n{\ncout &lt;&lt; &quot; value of x is neither 1 nor 2&quot;;\n}\ngetch();\nreturn 0;\n}</p><p>In the above program, if we did not include a break statement after the first group for case 1, the program will not automatically jump to the end of the switch and it would continue executing the rest of statements until it reaches either a break instruction or the end of the switch block.</p><p>switch statement can only be used to compare the value of the expression with the constants written with each case clause. Therefore, variables cannot be used with constants such as case n or ranges such as case (1..3): because they are not valid C++ constants. These constants be either integers or character type.</p><p>4.1.2 Nested if statement</p><p>It is possible to chain if-else statements together. When one if-else statement is used inside the body of another if-else structure then it forms a nested if ladder.</p><p>The following program demonstrates the use of nested if structure.</p><p>#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint X;\ncout &lt;&lt; &quot;Enter a number: &quot;;\ncin &gt;&gt; X;\nif (X &gt; 100)\ncout &lt;&lt; X &lt;&lt; &quot;is greater than 100&quot; &lt;&lt; endl;\nelse if (X &lt; 50)\ncout &lt;&lt; X &lt;&lt; &quot;is less than 50&quot; &lt;&lt; endl;\nelse\ncout &lt;&lt; X &lt;&lt; &quot; is between 50 and 100&quot; &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Enter a number:\n96\n96 is between 50 and 100</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 65,
+     "printedPages": [
+      118,
+      119
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (5)",
+   "sourcePageLabel": "PDF 65 · p. 118–119",
+   "sourceNote": "The printed side-by-side table (“switch example” | “if-else equivalent”) is given as two labelled listings.",
+   "unit": 4
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf065",
+   "unit": 4,
+   "printedPage": 118,
+   "description": "The if-else listing prints “<<end;” (for endl) and the cout prompt opens with a curly quote; “These constants be either integers or character type”. Retained as printed (quotes normalised)."
+  }
+ ],
+ "completeUnits": []
+}

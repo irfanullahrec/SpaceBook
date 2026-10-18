@@ -1,0 +1,164 @@
+{
+ "pdfPage": 86,
+ "sections": [
+  {
+   "id": "cs12-u5-text-8",
+   "title": "Unit 5 text (8)",
+   "headingUrdu": "یونٹ 5 — متن (8)",
+   "headingPashto": "۵ څپرکی — متن (8)",
+   "paras": [
+    {
+     "text": "Accessing elements of a two-dimensional array individually is very difficult and time consuming. A better solution to this is the application of loop. Normally, nested loops are used for this purpose: outer loop for the row, and inner loop for the columns. Since, two-dimensional arrays are typically accessed row by row, therefore, the row index is used as the outer loop and the column index is used as the inner loop.",
+     "urdu": "دو جہتی ایرے کے عناصر تک انفرادی طور پر رسائی بہت مشکل اور وقت طلب ہے۔ اس کا بہتر حل لوپ کا استعمال ہے۔ عموماً اس مقصد کے لیے نیسٹڈ لوپس استعمال ہوتے ہیں: بیرونی لوپ قطار کے لیے اور اندرونی لوپ کالموں کے لیے۔ چونکہ دو جہتی ایریز تک عموماً قطار بہ قطار رسائی کی جاتی ہے، اس لیے قطار انڈیکس بیرونی لوپ اور کالم انڈیکس اندرونی لوپ کے طور پر استعمال ہوتا ہے۔",
+     "pashto": "د دوه-بعدي لړۍ عناصرو ته جلا جلا لاسرسی ډېر ستونزمن او وخت نیوونکی دی. د دې ښه حل د حلقې کارونه ده. عموماً د دې موخې لپاره ځالې حلقې کارېږي: بهرنۍ حلقه د قطار لپاره او دننۍ حلقه د ستنو لپاره. څرنګه چې دوه-بعدي لړیو ته عموماً قطار په قطار لاسرسی کېږي، نو د قطار شاخص د بهرنۍ حلقې او د ستنې شاخص د دننۍ حلقې په توګه کارېږي."
+    },
+    {
+     "text": "Consider the following program used to access the elements of the array, anArray[3][5], initialized in the above section and display them on the screen in a matrix form.",
+     "urdu": "درج ذیل پروگرام پر غور کریں جو اوپر کے حصے میں ابتدائی قدر دیے گئے ایرے anArray[3][5] کے عناصر تک رسائی کر کے انھیں اسکرین پر میٹرکس کی شکل میں دکھاتا ہے۔",
+     "pashto": "لاندې پروګرام ته پام وکړئ چې په پورته برخه کې د لومړني ارزښت ورکړل شوې anArray[3][5] لړۍ عناصرو ته لاسرسی کوي او پر پرده یې د ماتریکس په بڼه ښيي."
+    },
+    {
+     "text": "// accessing two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint anArray[3][5] =\n{{ 1, 2, 3, 4, 5 },\n{ 6, 7, 8, 9, 10 },\n{ 11, 12, 13, 14, 15 }};\nfor ( int row=0; row<3; ++row)\n{\nfor (int col=0; col<5; ++col)\ncout<<anArray [row][col]<< \", \";\ncout<<endl;\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "// accessing two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint anArray[3][5] =\n{{ 1, 2, 3, 4, 5 },\n{ 6, 7, 8, 9, 10 },\n{ 11, 12, 13, 14, 15 }};\nfor ( int row=0; row<3; ++row)\n{\nfor (int col=0; col<5; ++col)\ncout<<anArray [row][col]<< \", \";\ncout<<endl;\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "// accessing two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint anArray[3][5] =\n{{ 1, 2, 3, 4, 5 },\n{ 6, 7, 8, 9, 10 },\n{ 11, 12, 13, 14, 15 }};\nfor ( int row=0; row<3; ++row)\n{\nfor (int col=0; col<5; ++col)\ncout<<anArray [row][col]<< \", \";\ncout<<endl;\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "1, 2, 3, 4, 5\n6, 7, 8, 9, 10\n11, 12, 13, 14, 15",
+     "urdu": "1, 2, 3, 4, 5\n6, 7, 8, 9, 10\n11, 12, 13, 14, 15",
+     "pashto": "1, 2, 3, 4, 5\n6, 7, 8, 9, 10\n11, 12, 13, 14, 15",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. Writing at an index of two dimensional array",
+     "urdu": "b. دو جہتی ایرے کے کسی انڈیکس پر لکھنا",
+     "pashto": "b. د دوه-بعدي لړۍ پر یوه شاخص لیکل"
+    },
+    {
+     "text": "Loop is a better way of writing to the indices of a two dimensional array. Consider the following example:",
+     "urdu": "دو جہتی ایرے کے انڈیسز پر لکھنے کا بہتر طریقہ لوپ ہے۔ درج ذیل مثال پر غور کریں:",
+     "pashto": "د دوه-بعدي لړۍ پر شاخصونو د لیکلو ښه لاره حلقه ده. لاندې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "// writing in a two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[2][3];\ncout<< \"Kindly enter values for the array\"<<endl;\nfor (int i = 0; i < 2; i++)\nfor (int j = 0; j < 3; j++)\ncin>> A[i][j]; // writing to the array\ncout<< \"Values of the array are:\"<<endl;\nfor (int i = 0; i < 2; i++)\n{\nfor (int j = 0; j < 3; j++)\ncout << A[i][j]<< \"\\t\"; //accessing of the array\ncout<<endl;\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "// writing in a two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[2][3];\ncout<< \"Kindly enter values for the array\"<<endl;\nfor (int i = 0; i < 2; i++)\nfor (int j = 0; j < 3; j++)\ncin>> A[i][j]; // writing to the array\ncout<< \"Values of the array are:\"<<endl;\nfor (int i = 0; i < 2; i++)\n{\nfor (int j = 0; j < 3; j++)\ncout << A[i][j]<< \"\\t\"; //accessing of the array\ncout<<endl;\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "// writing in a two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[2][3];\ncout<< \"Kindly enter values for the array\"<<endl;\nfor (int i = 0; i < 2; i++)\nfor (int j = 0; j < 3; j++)\ncin>> A[i][j]; // writing to the array\ncout<< \"Values of the array are:\"<<endl;\nfor (int i = 0; i < 2; i++)\n{\nfor (int j = 0; j < 3; j++)\ncout << A[i][j]<< \"\\t\"; //accessing of the array\ncout<<endl;\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "2 -1 7 1 0 10\nValues of the array are:\n2 -1 7\n1 0 10",
+     "urdu": "2 -1 7 1 0 10\nValues of the array are:\n2 -1 7\n1 0 10",
+     "pashto": "2 -1 7 1 0 10\nValues of the array are:\n2 -1 7\n1 0 10",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Accessing elements of a two-dimensional array individually is very difficult and time consuming. A better solution to this is the application of loop. Normally, nested loops are used for this purpose: outer loop for the row, and inner loop for the columns. Since, two-dimensional arrays are typically accessed row by row, therefore, the row index is used as the outer loop and the column index is used as the inner loop.\n\nConsider the following program used to access the elements of the array, anArray[3][5], initialized in the above section and display them on the screen in a matrix form.\n\n// accessing two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint anArray[3][5] =\n{{ 1, 2, 3, 4, 5 },\n{ 6, 7, 8, 9, 10 },\n{ 11, 12, 13, 14, 15 }};\nfor ( int row=0; row<3; ++row)\n{\nfor (int col=0; col<5; ++col)\ncout<<anArray [row][col]<< \", \";\ncout<<endl;\n}\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\n1, 2, 3, 4, 5\n6, 7, 8, 9, 10\n11, 12, 13, 14, 15\n\nb. Writing at an index of two dimensional array\n\nLoop is a better way of writing to the indices of a two dimensional array. Consider the following example:\n\n// writing in a two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[2][3];\ncout<< \"Kindly enter values for the array\"<<endl;\nfor (int i = 0; i < 2; i++)\nfor (int j = 0; j < 3; j++)\ncin>> A[i][j]; // writing to the array\ncout<< \"Values of the array are:\"<<endl;\nfor (int i = 0; i < 2; i++)\n{\nfor (int j = 0; j < 3; j++)\ncout << A[i][j]<< \"\\t\"; //accessing of the array\ncout<<endl;\n}\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\n2 -1 7 1 0 10\nValues of the array are:\n2 -1 7\n1 0 10",
+   "urdu": "دو جہتی ایرے کے عناصر تک انفرادی طور پر رسائی بہت مشکل اور وقت طلب ہے۔ اس کا بہتر حل لوپ کا استعمال ہے۔ عموماً اس مقصد کے لیے نیسٹڈ لوپس استعمال ہوتے ہیں: بیرونی لوپ قطار کے لیے اور اندرونی لوپ کالموں کے لیے۔ چونکہ دو جہتی ایریز تک عموماً قطار بہ قطار رسائی کی جاتی ہے، اس لیے قطار انڈیکس بیرونی لوپ اور کالم انڈیکس اندرونی لوپ کے طور پر استعمال ہوتا ہے۔\n\nدرج ذیل پروگرام پر غور کریں جو اوپر کے حصے میں ابتدائی قدر دیے گئے ایرے anArray[3][5] کے عناصر تک رسائی کر کے انھیں اسکرین پر میٹرکس کی شکل میں دکھاتا ہے۔\n\n// accessing two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint anArray[3][5] =\n{{ 1, 2, 3, 4, 5 },\n{ 6, 7, 8, 9, 10 },\n{ 11, 12, 13, 14, 15 }};\nfor ( int row=0; row<3; ++row)\n{\nfor (int col=0; col<5; ++col)\ncout<<anArray [row][col]<< \", \";\ncout<<endl;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n1, 2, 3, 4, 5\n6, 7, 8, 9, 10\n11, 12, 13, 14, 15\n\nb. دو جہتی ایرے کے کسی انڈیکس پر لکھنا\n\nدو جہتی ایرے کے انڈیسز پر لکھنے کا بہتر طریقہ لوپ ہے۔ درج ذیل مثال پر غور کریں:\n\n// writing in a two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[2][3];\ncout<< \"Kindly enter values for the array\"<<endl;\nfor (int i = 0; i < 2; i++)\nfor (int j = 0; j < 3; j++)\ncin>> A[i][j]; // writing to the array\ncout<< \"Values of the array are:\"<<endl;\nfor (int i = 0; i < 2; i++)\n{\nfor (int j = 0; j < 3; j++)\ncout << A[i][j]<< \"\\t\"; //accessing of the array\ncout<<endl;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n2 -1 7 1 0 10\nValues of the array are:\n2 -1 7\n1 0 10",
+   "pashto": "د دوه-بعدي لړۍ عناصرو ته جلا جلا لاسرسی ډېر ستونزمن او وخت نیوونکی دی. د دې ښه حل د حلقې کارونه ده. عموماً د دې موخې لپاره ځالې حلقې کارېږي: بهرنۍ حلقه د قطار لپاره او دننۍ حلقه د ستنو لپاره. څرنګه چې دوه-بعدي لړیو ته عموماً قطار په قطار لاسرسی کېږي، نو د قطار شاخص د بهرنۍ حلقې او د ستنې شاخص د دننۍ حلقې په توګه کارېږي.\n\nلاندې پروګرام ته پام وکړئ چې په پورته برخه کې د لومړني ارزښت ورکړل شوې anArray[3][5] لړۍ عناصرو ته لاسرسی کوي او پر پرده یې د ماتریکس په بڼه ښيي.\n\n// accessing two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint anArray[3][5] =\n{{ 1, 2, 3, 4, 5 },\n{ 6, 7, 8, 9, 10 },\n{ 11, 12, 13, 14, 15 }};\nfor ( int row=0; row<3; ++row)\n{\nfor (int col=0; col<5; ++col)\ncout<<anArray [row][col]<< \", \";\ncout<<endl;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n1, 2, 3, 4, 5\n6, 7, 8, 9, 10\n11, 12, 13, 14, 15\n\nb. د دوه-بعدي لړۍ پر یوه شاخص لیکل\n\nد دوه-بعدي لړۍ پر شاخصونو د لیکلو ښه لاره حلقه ده. لاندې بېلګې ته پام وکړئ:\n\n// writing in a two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[2][3];\ncout<< \"Kindly enter values for the array\"<<endl;\nfor (int i = 0; i < 2; i++)\nfor (int j = 0; j < 3; j++)\ncin>> A[i][j]; // writing to the array\ncout<< \"Values of the array are:\"<<endl;\nfor (int i = 0; i < 2; i++)\n{\nfor (int j = 0; j < 3; j++)\ncout << A[i][j]<< \"\\t\"; //accessing of the array\ncout<<endl;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n2 -1 7 1 0 10\nValues of the array are:\n2 -1 7\n1 0 10",
+   "theoryUrdu": "دو جہتی ایرے کے عناصر تک انفرادی طور پر رسائی بہت مشکل اور وقت طلب ہے۔ اس کا بہتر حل لوپ کا استعمال ہے۔ عموماً اس مقصد کے لیے نیسٹڈ لوپس استعمال ہوتے ہیں: بیرونی لوپ قطار کے لیے اور اندرونی لوپ کالموں کے لیے۔ چونکہ دو جہتی ایریز تک عموماً قطار بہ قطار رسائی کی جاتی ہے، اس لیے قطار انڈیکس بیرونی لوپ اور کالم انڈیکس اندرونی لوپ کے طور پر استعمال ہوتا ہے۔\n\nدرج ذیل پروگرام پر غور کریں جو اوپر کے حصے میں ابتدائی قدر دیے گئے ایرے anArray[3][5] کے عناصر تک رسائی کر کے انھیں اسکرین پر میٹرکس کی شکل میں دکھاتا ہے۔\n\n// accessing two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint anArray[3][5] =\n{{ 1, 2, 3, 4, 5 },\n{ 6, 7, 8, 9, 10 },\n{ 11, 12, 13, 14, 15 }};\nfor ( int row=0; row<3; ++row)\n{\nfor (int col=0; col<5; ++col)\ncout<<anArray [row][col]<< \", \";\ncout<<endl;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n1, 2, 3, 4, 5\n6, 7, 8, 9, 10\n11, 12, 13, 14, 15\n\nb. دو جہتی ایرے کے کسی انڈیکس پر لکھنا\n\nدو جہتی ایرے کے انڈیسز پر لکھنے کا بہتر طریقہ لوپ ہے۔ درج ذیل مثال پر غور کریں:\n\n// writing in a two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[2][3];\ncout<< \"Kindly enter values for the array\"<<endl;\nfor (int i = 0; i < 2; i++)\nfor (int j = 0; j < 3; j++)\ncin>> A[i][j]; // writing to the array\ncout<< \"Values of the array are:\"<<endl;\nfor (int i = 0; i < 2; i++)\n{\nfor (int j = 0; j < 3; j++)\ncout << A[i][j]<< \"\\t\"; //accessing of the array\ncout<<endl;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n2 -1 7 1 0 10\nValues of the array are:\n2 -1 7\n1 0 10",
+   "theoryPashto": "د دوه-بعدي لړۍ عناصرو ته جلا جلا لاسرسی ډېر ستونزمن او وخت نیوونکی دی. د دې ښه حل د حلقې کارونه ده. عموماً د دې موخې لپاره ځالې حلقې کارېږي: بهرنۍ حلقه د قطار لپاره او دننۍ حلقه د ستنو لپاره. څرنګه چې دوه-بعدي لړیو ته عموماً قطار په قطار لاسرسی کېږي، نو د قطار شاخص د بهرنۍ حلقې او د ستنې شاخص د دننۍ حلقې په توګه کارېږي.\n\nلاندې پروګرام ته پام وکړئ چې په پورته برخه کې د لومړني ارزښت ورکړل شوې anArray[3][5] لړۍ عناصرو ته لاسرسی کوي او پر پرده یې د ماتریکس په بڼه ښيي.\n\n// accessing two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint anArray[3][5] =\n{{ 1, 2, 3, 4, 5 },\n{ 6, 7, 8, 9, 10 },\n{ 11, 12, 13, 14, 15 }};\nfor ( int row=0; row<3; ++row)\n{\nfor (int col=0; col<5; ++col)\ncout<<anArray [row][col]<< \", \";\ncout<<endl;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n1, 2, 3, 4, 5\n6, 7, 8, 9, 10\n11, 12, 13, 14, 15\n\nb. د دوه-بعدي لړۍ پر یوه شاخص لیکل\n\nد دوه-بعدي لړۍ پر شاخصونو د لیکلو ښه لاره حلقه ده. لاندې بېلګې ته پام وکړئ:\n\n// writing in a two dimensional array using loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[2][3];\ncout<< \"Kindly enter values for the array\"<<endl;\nfor (int i = 0; i < 2; i++)\nfor (int j = 0; j < 3; j++)\ncin>> A[i][j]; // writing to the array\ncout<< \"Values of the array are:\"<<endl;\nfor (int i = 0; i < 2; i++)\n{\nfor (int j = 0; j < 3; j++)\ncout << A[i][j]<< \"\\t\"; //accessing of the array\ncout<<endl;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n2 -1 7 1 0 10\nValues of the array are:\n2 -1 7\n1 0 10",
+   "content": "<p>Accessing elements of a two-dimensional array individually is very difficult and time consuming. A better solution to this is the application of loop. Normally, nested loops are used for this purpose: outer loop for the row, and inner loop for the columns. Since, two-dimensional arrays are typically accessed row by row, therefore, the row index is used as the outer loop and the column index is used as the inner loop.</p><p>Consider the following program used to access the elements of the array, anArray[3][5], initialized in the above section and display them on the screen in a matrix form.</p><p>// accessing two dimensional array using loop\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint anArray[3][5] =\n{{ 1, 2, 3, 4, 5 },\n{ 6, 7, 8, 9, 10 },\n{ 11, 12, 13, 14, 15 }};\nfor ( int row=0; row&lt;3; ++row)\n{\nfor (int col=0; col&lt;5; ++col)\ncout&lt;&lt;anArray [row][col]&lt;&lt; &quot;, &quot;;\ncout&lt;&lt;endl;\n}\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>1, 2, 3, 4, 5\n6, 7, 8, 9, 10\n11, 12, 13, 14, 15</p><p>b. Writing at an index of two dimensional array</p><p>Loop is a better way of writing to the indices of a two dimensional array. Consider the following example:</p><p>// writing in a two dimensional array using loop\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint A[2][3];\ncout&lt;&lt; &quot;Kindly enter values for the array&quot;&lt;&lt;endl;\nfor (int i = 0; i &lt; 2; i++)\nfor (int j = 0; j &lt; 3; j++)\ncin&gt;&gt; A[i][j]; // writing to the array\ncout&lt;&lt; &quot;Values of the array are:&quot;&lt;&lt;endl;\nfor (int i = 0; i &lt; 2; i++)\n{\nfor (int j = 0; j &lt; 3; j++)\ncout &lt;&lt; A[i][j]&lt;&lt; &quot;\\t&quot;; //accessing of the array\ncout&lt;&lt;endl;\n}\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>2 -1 7 1 0 10\nValues of the array are:\n2 -1 7\n1 0 10</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 86,
+     "printedPages": [
+      160,
+      161
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (8)",
+   "sourcePageLabel": "PDF 86 · p. 160–161",
+   "unit": 5
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf086",
+   "unit": 5,
+   "printedPage": 161,
+   "description": "The writing program output omits the “Kindly enter values for the array” prompt; the accessing output omits the trailing “, ”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

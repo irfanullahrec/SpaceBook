@@ -1,0 +1,523 @@
+{
+ "pdfPage": 28,
+ "sections": [
+  {
+   "id": "stat12-p028-variance",
+   "title": "2.2.8 Variance and S.D. — Example 2.13 and 2.2.9 properties",
+   "headingUrdu": "2.2.8 تغیر اور معیاری انحراف — مثال 2.13 اور 2.2.9 خصوصیات",
+   "headingPashto": "2.2.8 واریانس او معیاري انحراف — بېلګه 2.13 او 2.2.9 ځانګړنې",
+   "paras": [
+    {
+     "text": "$(i)\\ \\text{By definition}\\quad E(X)=\\Sigma x\\,p(x)=3$",
+     "urdu": "$(i)\\ \\text{By definition}\\quad E(X)=\\Sigma x\\,p(x)=3$",
+     "pashto": "$(i)\\ \\text{By definition}\\quad E(X)=\\Sigma x\\,p(x)=3$"
+    },
+    {
+     "text": "$(ii)\\ \\text{By property}\\quad E(X+10)=E(X)+10=3+10=13$",
+     "urdu": "$(ii)\\ \\text{By property}\\quad E(X+10)=E(X)+10=3+10=13$",
+     "pashto": "$(ii)\\ \\text{By property}\\quad E(X+10)=E(X)+10=3+10=13$"
+    },
+    {
+     "text": "$(iii)\\quad E(X-10)=E(X)-10=3-10=-7$",
+     "urdu": "$(iii)\\quad E(X-10)=E(X)-10=3-10=-7$",
+     "pashto": "$(iii)\\quad E(X-10)=E(X)-10=3-10=-7$"
+    },
+    {
+     "text": "$(iv)\\quad E(10X)=10E(X)=10(3)=30$",
+     "urdu": "$(iv)\\quad E(10X)=10E(X)=10(3)=30$",
+     "pashto": "$(iv)\\quad E(10X)=10E(X)=10(3)=30$"
+    },
+    {
+     "text": "$(v)\\quad E\\left(\\frac{X}{10}\\right)=\\frac{E(X)}{10}=\\frac{3}{10}=0.3$",
+     "urdu": "$(v)\\quad E\\left(\\frac{X}{10}\\right)=\\frac{E(X)}{10}=\\frac{3}{10}=0.3$",
+     "pashto": "$(v)\\quad E\\left(\\frac{X}{10}\\right)=\\frac{E(X)}{10}=\\frac{3}{10}=0.3$"
+    },
+    {
+     "text": "2.2.8 Variance and standard deviation of a random variable",
+     "urdu": "2.2.8 تصادفی متغیر کا تغیر اور معیاری انحراف",
+     "pashto": "2.2.8 د تصادفي متغیر واریانس او معیاري انحراف"
+    },
+    {
+     "text": "If X is a random variable, then its variance is denoted by Var(X) or V(X) and its formula is given by",
+     "urdu": "اگر X ایک تصادفی متغیر ہو تو اس کے تغیر کو Var(X) یا V(X) سے ظاہر کرتے ہیں اور اس کا فارمولا یہ ہے",
+     "pashto": "که X یو تصادفي متغیر وي، نو واریانس یې په Var(X) یا V(X) ښودل کېږي او فورمول یې دا دی"
+    },
+    {
+     "text": "$V(X)=E[X-E(X)]^2$",
+     "urdu": "$V(X)=E[X-E(X)]^2$",
+     "pashto": "$V(X)=E[X-E(X)]^2$"
+    },
+    {
+     "text": "$\\text{Or } V(X)=E[X^2]-[E(X)]^2$",
+     "urdu": "$\\text{Or } V(X)=E[X^2]-[E(X)]^2$",
+     "pashto": "$\\text{Or } V(X)=E[X^2]-[E(X)]^2$"
+    },
+    {
+     "text": "$S.D(X)=\\sqrt{V(X)}$",
+     "urdu": "$S.D(X)=\\sqrt{V(X)}$",
+     "pashto": "$S.D(X)=\\sqrt{V(X)}$"
+    },
+    {
+     "text": "Example 2.13",
+     "urdu": "مثال 2.13",
+     "pashto": "بېلګه 2.13"
+    },
+    {
+     "text": "Consider the following discrete probability distribution:",
+     "urdu": "درج ذیل منفصل احتمالی تقسیم پر غور کریں:",
+     "pashto": "لاندې منفصل احتمالي وېش په پام کې ونیسئ:"
+    },
+    {
+     "text": "Determine the mean, variance and standard deviation.",
+     "urdu": "اوسط، تغیر اور معیاری انحراف معلوم کریں۔",
+     "pashto": "منځنی، واریانس او معیاري انحراف یې وټاکئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$\\text{Mean}=E(X)=\\Sigma x\\,p(x)=7.2$",
+     "urdu": "$\\text{Mean}=E(X)=\\Sigma x\\,p(x)=7.2$",
+     "pashto": "$\\text{Mean}=E(X)=\\Sigma x\\,p(x)=7.2$"
+    },
+    {
+     "text": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-[7.2]^2=56.6-51.84=4.76$",
+     "urdu": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-[7.2]^2=56.6-51.84=4.76$",
+     "pashto": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-[7.2]^2=56.6-51.84=4.76$"
+    },
+    {
+     "text": "$\\text{and}\\quad S.D(X)=\\sqrt{V(X)}=\\sqrt{4.76}=2.181$",
+     "urdu": "$\\text{and}\\quad S.D(X)=\\sqrt{V(X)}=\\sqrt{4.76}=2.181$",
+     "pashto": "$\\text{and}\\quad S.D(X)=\\sqrt{V(X)}=\\sqrt{4.76}=2.181$"
+    },
+    {
+     "text": "2.2.9 Properties of variance and standard deviation of a random variable",
+     "urdu": "2.2.9 تصادفی متغیر کے تغیر اور معیاری انحراف کی خصوصیات",
+     "pashto": "2.2.9 د تصادفي متغیر د واریانس او معیاري انحراف ځانګړنې"
+    },
+    {
+     "text": "Following are some of the important properties.",
+     "urdu": "ذیل میں چند اہم خصوصیات ہیں۔",
+     "pashto": "لاندې ځینې مهمې ځانګړنې دي."
+    },
+    {
+     "text": "(i) The variance and standard deviation of a constant is equal to zero i.e. $V(c)=0$ and $S.D(c)=0$, where c is a constant.",
+     "urdu": "(i) کسی مستقل کا تغیر اور معیاری انحراف صفر کے برابر ہوتا ہے یعنی $V(c)=0$ اور $S.D(c)=0$، جہاں c ایک مستقل ہے۔",
+     "pashto": "(i) د یوه ثابت واریانس او معیاري انحراف له صفر سره برابر دی یعنې $V(c)=0$ او $S.D(c)=0$، چې c یو ثابت دی."
+    },
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "By definition $V(X)=E[X-E(X)]^2$",
+     "urdu": "تعریف کے مطابق $V(X)=E[X-E(X)]^2$",
+     "pashto": "د تعریف له مخې $V(X)=E[X-E(X)]^2$"
+    },
+    {
+     "text": "As the variable X is taking only a constant value c, therefore",
+     "urdu": "چونکہ متغیر X صرف ایک مستقل قیمت c لیتا ہے، اس لیے",
+     "pashto": "څرنګه چې متغیر X یوازې یو ثابت قیمت c اخلي، نو"
+    },
+    {
+     "text": "$V(c)=E[c-E(c)]^2$",
+     "urdu": "$V(c)=E[c-E(c)]^2$",
+     "pashto": "$V(c)=E[c-E(c)]^2$"
+    },
+    {
+     "text": "$\\phantom{V(c)}=E[c-c]^2\\quad\\because E(c)=c$",
+     "urdu": "$\\phantom{V(c)}=E[c-c]^2\\quad\\because E(c)=c$",
+     "pashto": "$\\phantom{V(c)}=E[c-c]^2\\quad\\because E(c)=c$"
+    },
+    {
+     "text": "$\\phantom{V(c)}=0$",
+     "urdu": "$\\phantom{V(c)}=0$",
+     "pashto": "$\\phantom{V(c)}=0$"
+    },
+    {
+     "text": "$S.D(c)=\\sqrt{0}=0$",
+     "urdu": "$S.D(c)=\\sqrt{0}=0$",
+     "pashto": "$S.D(c)=\\sqrt{0}=0$"
+    },
+    {
+     "text": "(ii) Variance and S.D of a random variable are not changed by adding/ subtracting a constant to/from the values of a random variable i.e.",
+     "urdu": "(ii) تصادفی متغیر کی قیمتوں میں کوئی مستقل جمع یا ان سے تفریق کرنے سے تصادفی متغیر کا تغیر اور معیاری انحراف تبدیل نہیں ہوتے، یعنی",
+     "pashto": "(ii) د تصادفي متغیر له قیمتونو سره د یوه ثابت په جمع یا تفریق کولو د تصادفي متغیر واریانس او معیاري انحراف نه بدلېږي، یعنې"
+    },
+    {
+     "text": "$$V(X\\pm c)=V(X)$$",
+     "urdu": "$$V(X\\pm c)=V(X)$$",
+     "pashto": "$$V(X\\pm c)=V(X)$$"
+    },
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "By definition $V(X)=E[X-E(X)]^2$",
+     "urdu": "تعریف کے مطابق $V(X)=E[X-E(X)]^2$",
+     "pashto": "د تعریف له مخې $V(X)=E[X-E(X)]^2$"
+    },
+    {
+     "text": "As $(X+c)$ is a function of the random variable X, therefore,",
+     "urdu": "چونکہ $(X+c)$ تصادفی متغیر X کا تفاعل ہے، اس لیے",
+     "pashto": "څرنګه چې $(X+c)$ د تصادفي متغیر X تابع ده، نو"
+    },
+    {
+     "text": "$V(X+c)=E[X+c-E(X+c)]^2$",
+     "urdu": "$V(X+c)=E[X+c-E(X+c)]^2$",
+     "pashto": "$V(X+c)=E[X+c-E(X+c)]^2$"
+    },
+    {
+     "text": "$\\phantom{V(X+c)}=E[X+c-E(X)-E(c)]^2$",
+     "urdu": "$\\phantom{V(X+c)}=E[X+c-E(X)-E(c)]^2$",
+     "pashto": "$\\phantom{V(X+c)}=E[X+c-E(X)-E(c)]^2$"
+    }
+   ],
+   "theory": "(i)\\ \\text{By definition}\\quad E(X)=\\Sigma x\\,p(x)=3\n\n(ii)\\ \\text{By property}\\quad E(X+10)=E(X)+10=3+10=13\n\n(iii)\\quad E(X-10)=E(X)-10=3-10=-7\n\n(iv)\\quad E(10X)=10E(X)=10(3)=30\n\n(v)\\quad E\\left(\\frac{X}{10}\\right)=\\frac{E(X)}{10}=\\frac{3}{10}=0.3\n\n2.2.8 Variance and standard deviation of a random variable\n\nIf X is a random variable, then its variance is denoted by Var(X) or V(X) and its formula is given by\n\nV(X)=E[X-E(X)]^2\n\n\\text{Or } V(X)=E[X^2]-[E(X)]^2\n\nS.D(X)=\\sqrt{V(X)}\n\nExample 2.13\n\nConsider the following discrete probability distribution:\n\nDetermine the mean, variance and standard deviation.\n\nSolution:\n\n\\text{Mean}=E(X)=\\Sigma x\\,p(x)=7.2\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-[7.2]^2=56.6-51.84=4.76\n\n\\text{and}\\quad S.D(X)=\\sqrt{V(X)}=\\sqrt{4.76}=2.181\n\n2.2.9 Properties of variance and standard deviation of a random variable\n\nFollowing are some of the important properties.\n\n(i) The variance and standard deviation of a constant is equal to zero i.e. V(c)=0 and S.D(c)=0, where c is a constant.\n\nProof:\n\nBy definition V(X)=E[X-E(X)]^2\n\nAs the variable X is taking only a constant value c, therefore\n\nV(c)=E[c-E(c)]^2\n\n\\phantom{V(c)}=E[c-c]^2\\quad\\because E(c)=c\n\n\\phantom{V(c)}=0\n\nS.D(c)=\\sqrt{0}=0\n\n(ii) Variance and S.D of a random variable are not changed by adding/ subtracting a constant to/from the values of a random variable i.e.\n\n$V(X\\pm c)=V(X)$\n\nProof:\n\nBy definition V(X)=E[X-E(X)]^2\n\nAs (X+c) is a function of the random variable X, therefore,\n\nV(X+c)=E[X+c-E(X+c)]^2\n\n\\phantom{V(X+c)}=E[X+c-E(X)-E(c)]^2",
+   "urdu": "(i)\\ \\text{By definition}\\quad E(X)=\\Sigma x\\,p(x)=3\n\n(ii)\\ \\text{By property}\\quad E(X+10)=E(X)+10=3+10=13\n\n(iii)\\quad E(X-10)=E(X)-10=3-10=-7\n\n(iv)\\quad E(10X)=10E(X)=10(3)=30\n\n(v)\\quad E\\left(\\frac{X}{10}\\right)=\\frac{E(X)}{10}=\\frac{3}{10}=0.3\n\n2.2.8 تصادفی متغیر کا تغیر اور معیاری انحراف\n\nاگر X ایک تصادفی متغیر ہو تو اس کے تغیر کو Var(X) یا V(X) سے ظاہر کرتے ہیں اور اس کا فارمولا یہ ہے\n\nV(X)=E[X-E(X)]^2\n\n\\text{Or } V(X)=E[X^2]-[E(X)]^2\n\nS.D(X)=\\sqrt{V(X)}\n\nمثال 2.13\n\nدرج ذیل منفصل احتمالی تقسیم پر غور کریں:\n\nاوسط، تغیر اور معیاری انحراف معلوم کریں۔\n\nحل:\n\n\\text{Mean}=E(X)=\\Sigma x\\,p(x)=7.2\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-[7.2]^2=56.6-51.84=4.76\n\n\\text{and}\\quad S.D(X)=\\sqrt{V(X)}=\\sqrt{4.76}=2.181\n\n2.2.9 تصادفی متغیر کے تغیر اور معیاری انحراف کی خصوصیات\n\nذیل میں چند اہم خصوصیات ہیں۔\n\n(i) کسی مستقل کا تغیر اور معیاری انحراف صفر کے برابر ہوتا ہے یعنی V(c)=0 اور S.D(c)=0، جہاں c ایک مستقل ہے۔\n\nثبوت:\n\nتعریف کے مطابق V(X)=E[X-E(X)]^2\n\nچونکہ متغیر X صرف ایک مستقل قیمت c لیتا ہے، اس لیے\n\nV(c)=E[c-E(c)]^2\n\n\\phantom{V(c)}=E[c-c]^2\\quad\\because E(c)=c\n\n\\phantom{V(c)}=0\n\nS.D(c)=\\sqrt{0}=0\n\n(ii) تصادفی متغیر کی قیمتوں میں کوئی مستقل جمع یا ان سے تفریق کرنے سے تصادفی متغیر کا تغیر اور معیاری انحراف تبدیل نہیں ہوتے، یعنی\n\n$V(X\\pm c)=V(X)$\n\nثبوت:\n\nتعریف کے مطابق V(X)=E[X-E(X)]^2\n\nچونکہ (X+c) تصادفی متغیر X کا تفاعل ہے، اس لیے\n\nV(X+c)=E[X+c-E(X+c)]^2\n\n\\phantom{V(X+c)}=E[X+c-E(X)-E(c)]^2",
+   "pashto": "(i)\\ \\text{By definition}\\quad E(X)=\\Sigma x\\,p(x)=3\n\n(ii)\\ \\text{By property}\\quad E(X+10)=E(X)+10=3+10=13\n\n(iii)\\quad E(X-10)=E(X)-10=3-10=-7\n\n(iv)\\quad E(10X)=10E(X)=10(3)=30\n\n(v)\\quad E\\left(\\frac{X}{10}\\right)=\\frac{E(X)}{10}=\\frac{3}{10}=0.3\n\n2.2.8 د تصادفي متغیر واریانس او معیاري انحراف\n\nکه X یو تصادفي متغیر وي، نو واریانس یې په Var(X) یا V(X) ښودل کېږي او فورمول یې دا دی\n\nV(X)=E[X-E(X)]^2\n\n\\text{Or } V(X)=E[X^2]-[E(X)]^2\n\nS.D(X)=\\sqrt{V(X)}\n\nبېلګه 2.13\n\nلاندې منفصل احتمالي وېش په پام کې ونیسئ:\n\nمنځنی، واریانس او معیاري انحراف یې وټاکئ.\n\nحل:\n\n\\text{Mean}=E(X)=\\Sigma x\\,p(x)=7.2\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-[7.2]^2=56.6-51.84=4.76\n\n\\text{and}\\quad S.D(X)=\\sqrt{V(X)}=\\sqrt{4.76}=2.181\n\n2.2.9 د تصادفي متغیر د واریانس او معیاري انحراف ځانګړنې\n\nلاندې ځینې مهمې ځانګړنې دي.\n\n(i) د یوه ثابت واریانس او معیاري انحراف له صفر سره برابر دی یعنې V(c)=0 او S.D(c)=0، چې c یو ثابت دی.\n\nثبوت:\n\nد تعریف له مخې V(X)=E[X-E(X)]^2\n\nڅرنګه چې متغیر X یوازې یو ثابت قیمت c اخلي، نو\n\nV(c)=E[c-E(c)]^2\n\n\\phantom{V(c)}=E[c-c]^2\\quad\\because E(c)=c\n\n\\phantom{V(c)}=0\n\nS.D(c)=\\sqrt{0}=0\n\n(ii) د تصادفي متغیر له قیمتونو سره د یوه ثابت په جمع یا تفریق کولو د تصادفي متغیر واریانس او معیاري انحراف نه بدلېږي، یعنې\n\n$V(X\\pm c)=V(X)$\n\nثبوت:\n\nد تعریف له مخې V(X)=E[X-E(X)]^2\n\nڅرنګه چې (X+c) د تصادفي متغیر X تابع ده، نو\n\nV(X+c)=E[X+c-E(X+c)]^2\n\n\\phantom{V(X+c)}=E[X+c-E(X)-E(c)]^2",
+   "theoryUrdu": "(i)\\ \\text{By definition}\\quad E(X)=\\Sigma x\\,p(x)=3\n\n(ii)\\ \\text{By property}\\quad E(X+10)=E(X)+10=3+10=13\n\n(iii)\\quad E(X-10)=E(X)-10=3-10=-7\n\n(iv)\\quad E(10X)=10E(X)=10(3)=30\n\n(v)\\quad E\\left(\\frac{X}{10}\\right)=\\frac{E(X)}{10}=\\frac{3}{10}=0.3\n\n2.2.8 تصادفی متغیر کا تغیر اور معیاری انحراف\n\nاگر X ایک تصادفی متغیر ہو تو اس کے تغیر کو Var(X) یا V(X) سے ظاہر کرتے ہیں اور اس کا فارمولا یہ ہے\n\nV(X)=E[X-E(X)]^2\n\n\\text{Or } V(X)=E[X^2]-[E(X)]^2\n\nS.D(X)=\\sqrt{V(X)}\n\nمثال 2.13\n\nدرج ذیل منفصل احتمالی تقسیم پر غور کریں:\n\nاوسط، تغیر اور معیاری انحراف معلوم کریں۔\n\nحل:\n\n\\text{Mean}=E(X)=\\Sigma x\\,p(x)=7.2\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-[7.2]^2=56.6-51.84=4.76\n\n\\text{and}\\quad S.D(X)=\\sqrt{V(X)}=\\sqrt{4.76}=2.181\n\n2.2.9 تصادفی متغیر کے تغیر اور معیاری انحراف کی خصوصیات\n\nذیل میں چند اہم خصوصیات ہیں۔\n\n(i) کسی مستقل کا تغیر اور معیاری انحراف صفر کے برابر ہوتا ہے یعنی V(c)=0 اور S.D(c)=0، جہاں c ایک مستقل ہے۔\n\nثبوت:\n\nتعریف کے مطابق V(X)=E[X-E(X)]^2\n\nچونکہ متغیر X صرف ایک مستقل قیمت c لیتا ہے، اس لیے\n\nV(c)=E[c-E(c)]^2\n\n\\phantom{V(c)}=E[c-c]^2\\quad\\because E(c)=c\n\n\\phantom{V(c)}=0\n\nS.D(c)=\\sqrt{0}=0\n\n(ii) تصادفی متغیر کی قیمتوں میں کوئی مستقل جمع یا ان سے تفریق کرنے سے تصادفی متغیر کا تغیر اور معیاری انحراف تبدیل نہیں ہوتے، یعنی\n\n$V(X\\pm c)=V(X)$\n\nثبوت:\n\nتعریف کے مطابق V(X)=E[X-E(X)]^2\n\nچونکہ (X+c) تصادفی متغیر X کا تفاعل ہے، اس لیے\n\nV(X+c)=E[X+c-E(X+c)]^2\n\n\\phantom{V(X+c)}=E[X+c-E(X)-E(c)]^2",
+   "theoryPashto": "(i)\\ \\text{By definition}\\quad E(X)=\\Sigma x\\,p(x)=3\n\n(ii)\\ \\text{By property}\\quad E(X+10)=E(X)+10=3+10=13\n\n(iii)\\quad E(X-10)=E(X)-10=3-10=-7\n\n(iv)\\quad E(10X)=10E(X)=10(3)=30\n\n(v)\\quad E\\left(\\frac{X}{10}\\right)=\\frac{E(X)}{10}=\\frac{3}{10}=0.3\n\n2.2.8 د تصادفي متغیر واریانس او معیاري انحراف\n\nکه X یو تصادفي متغیر وي، نو واریانس یې په Var(X) یا V(X) ښودل کېږي او فورمول یې دا دی\n\nV(X)=E[X-E(X)]^2\n\n\\text{Or } V(X)=E[X^2]-[E(X)]^2\n\nS.D(X)=\\sqrt{V(X)}\n\nبېلګه 2.13\n\nلاندې منفصل احتمالي وېش په پام کې ونیسئ:\n\nمنځنی، واریانس او معیاري انحراف یې وټاکئ.\n\nحل:\n\n\\text{Mean}=E(X)=\\Sigma x\\,p(x)=7.2\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-[7.2]^2=56.6-51.84=4.76\n\n\\text{and}\\quad S.D(X)=\\sqrt{V(X)}=\\sqrt{4.76}=2.181\n\n2.2.9 د تصادفي متغیر د واریانس او معیاري انحراف ځانګړنې\n\nلاندې ځینې مهمې ځانګړنې دي.\n\n(i) د یوه ثابت واریانس او معیاري انحراف له صفر سره برابر دی یعنې V(c)=0 او S.D(c)=0، چې c یو ثابت دی.\n\nثبوت:\n\nد تعریف له مخې V(X)=E[X-E(X)]^2\n\nڅرنګه چې متغیر X یوازې یو ثابت قیمت c اخلي، نو\n\nV(c)=E[c-E(c)]^2\n\n\\phantom{V(c)}=E[c-c]^2\\quad\\because E(c)=c\n\n\\phantom{V(c)}=0\n\nS.D(c)=\\sqrt{0}=0\n\n(ii) د تصادفي متغیر له قیمتونو سره د یوه ثابت په جمع یا تفریق کولو د تصادفي متغیر واریانس او معیاري انحراف نه بدلېږي، یعنې\n\n$V(X\\pm c)=V(X)$\n\nثبوت:\n\nد تعریف له مخې V(X)=E[X-E(X)]^2\n\nڅرنګه چې (X+c) د تصادفي متغیر X تابع ده، نو\n\nV(X+c)=E[X+c-E(X+c)]^2\n\n\\phantom{V(X+c)}=E[X+c-E(X)-E(c)]^2",
+   "content": "<p>(i)\\ \\text{By definition}\\quad E(X)=\\Sigma x\\,p(x)=3</p><p>(ii)\\ \\text{By property}\\quad E(X+10)=E(X)+10=3+10=13</p><p>(iii)\\quad E(X-10)=E(X)-10=3-10=-7</p><p>(iv)\\quad E(10X)=10E(X)=10(3)=30</p><p>(v)\\quad E\\left(\\frac{X}{10}\\right)=\\frac{E(X)}{10}=\\frac{3}{10}=0.3</p><p>2.2.8 Variance and standard deviation of a random variable</p><p>If X is a random variable, then its variance is denoted by Var(X) or V(X) and its formula is given by</p><p>V(X)=E[X-E(X)]^2</p><p>\\text{Or } V(X)=E[X^2]-[E(X)]^2</p><p>S.D(X)=\\sqrt{V(X)}</p><p>Example 2.13</p><p>Consider the following discrete probability distribution:</p><p>Determine the mean, variance and standard deviation.</p><p>Solution:</p><p>\\text{Mean}=E(X)=\\Sigma x\\,p(x)=7.2</p><p>\\text{Variance}=V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-[7.2]^2=56.6-51.84=4.76</p><p>\\text{and}\\quad S.D(X)=\\sqrt{V(X)}=\\sqrt{4.76}=2.181</p><p>2.2.9 Properties of variance and standard deviation of a random variable</p><p>Following are some of the important properties.</p><p>(i) The variance and standard deviation of a constant is equal to zero i.e. V(c)=0 and S.D(c)=0, where c is a constant.</p><p>Proof:</p><p>By definition V(X)=E[X-E(X)]^2</p><p>As the variable X is taking only a constant value c, therefore</p><p>V(c)=E[c-E(c)]^2</p><p>\\phantom{V(c)}=E[c-c]^2\\quad\\because E(c)=c</p><p>\\phantom{V(c)}=0</p><p>S.D(c)=\\sqrt{0}=0</p><p>(ii) Variance and S.D of a random variable are not changed by adding/ subtracting a constant to/from the values of a random variable i.e.</p><p>$V(X\\pm c)=V(X)$</p><p>Proof:</p><p>By definition V(X)=E[X-E(X)]^2</p><p>As (X+c) is a function of the random variable X, therefore,</p><p>V(X+c)=E[X+c-E(X+c)]^2</p><p>\\phantom{V(X+c)}=E[X+c-E(X)-E(c)]^2</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-13"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-13-sol"
+    },
+    {
+     "type": "lines",
+     "indices": [
+      14,
+      15,
+      16
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      23,
+      24,
+      25,
+      26
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      27
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      28
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      29
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      30
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      31
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      32,
+      33
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex2-13",
+     "headers": [
+      "$X$",
+      "3",
+      "8",
+      "10"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "0.2",
+       "0.7",
+       "0.1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "3",
+        "8",
+        "10"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "0.2",
+         "0.7",
+         "0.1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "3",
+        "8",
+        "10"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "0.2",
+         "0.7",
+         "0.1"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex2-13-sol",
+     "headers": [
+      "$X$",
+      "$p(x)$",
+      "$X\\,p(x)$",
+      "$X^2p(x)$"
+     ],
+     "rows": [
+      [
+       "3",
+       "0.2",
+       "0.6",
+       "1.8"
+      ],
+      [
+       "8",
+       "0.7",
+       "5.6",
+       "44.8"
+      ],
+      [
+       "10",
+       "0.1",
+       "1",
+       "10.0"
+      ],
+      [
+       "Total",
+       "1",
+       "7.2",
+       "56.6"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)$",
+        "$X\\,p(x)$",
+        "$X^2p(x)$"
+       ],
+       "rows": [
+        [
+         "3",
+         "0.2",
+         "0.6",
+         "1.8"
+        ],
+        [
+         "8",
+         "0.7",
+         "5.6",
+         "44.8"
+        ],
+        [
+         "10",
+         "0.1",
+         "1",
+         "10.0"
+        ],
+        [
+         "کل",
+         "1",
+         "7.2",
+         "56.6"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)$",
+        "$X\\,p(x)$",
+        "$X^2p(x)$"
+       ],
+       "rows": [
+        [
+         "3",
+         "0.2",
+         "0.6",
+         "1.8"
+        ],
+        [
+         "8",
+         "0.7",
+         "5.6",
+         "44.8"
+        ],
+        [
+         "10",
+         "0.1",
+         "1",
+         "10.0"
+        ],
+        [
+         "ټول",
+         "1",
+         "7.2",
+         "56.6"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 28,
+     "printedPages": [
+      47,
+      48
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

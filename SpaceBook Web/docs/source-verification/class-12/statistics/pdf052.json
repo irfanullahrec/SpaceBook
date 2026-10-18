@@ -1,0 +1,536 @@
+{
+ "pdfPage": 52,
+ "sections": [
+  {
+   "id": "stat12-p052-example-3-18",
+   "title": "Example 3.18 — fitting a binomial distribution",
+   "headingUrdu": "مثال 3.18 — دو رقمی تقسیم کا انطباق",
+   "headingPashto": "بېلګه 3.18 — د بینومیل وېش برابرول",
+   "paras": [
+    {
+     "text": "Example 3.18",
+     "urdu": "مثال 3.18",
+     "pashto": "بېلګه 3.18"
+    },
+    {
+     "text": "Fit a Binomial distribution to the following data and compute expected frequencies:",
+     "urdu": "درج ذیل مواد پر دو رقمی تقسیم منطبق کریں اور متوقع تعدد معلوم کریں:",
+     "pashto": "په لاندې معلوماتو بینومیل وېش برابر کړئ او تمه شوې فریکونسۍ محاسبه کړئ:"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "First we compute mean of the given frequency distribution",
+     "urdu": "پہلے ہم دی گئی تعددی تقسیم کا اوسط معلوم کرتے ہیں",
+     "pashto": "لومړی د ورکړل شوي فریکونسي وېش منځنی محاسبه کوو"
+    },
+    {
+     "text": "Given that n = 4, N = 150. Now for Binomial distribution $\\mu=np$ but here μ is unknown so we replace μ with its estimator $\\overline{X}$.",
+     "urdu": "دیا گیا ہے n = 4، N = 150۔ دو رقمی تقسیم کے لیے $\\mu=np$ ہے لیکن یہاں μ نامعلوم ہے، اس لیے ہم μ کو اس کے تخمین کار $\\overline{X}$ سے بدل دیتے ہیں۔",
+     "pashto": "ورکړل شوي n = 4، N = 150. د بینومیل وېش لپاره $\\mu=np$ دی خو دلته μ نامعلوم دی، نو μ د هغه په اټکلوونکي $\\overline{X}$ بدلوو."
+    },
+    {
+     "text": "$\\overline{X}=\\frac{\\Sigma fx}{\\Sigma f}=\\frac{192}{150}=1.28$",
+     "urdu": "$\\overline{X}=\\frac{\\Sigma fx}{\\Sigma f}=\\frac{192}{150}=1.28$",
+     "pashto": "$\\overline{X}=\\frac{\\Sigma fx}{\\Sigma f}=\\frac{192}{150}=1.28$"
+    },
+    {
+     "text": "$\\therefore\\overline{X}=np\\quad\\Rightarrow 1.28=np$",
+     "urdu": "$\\therefore\\overline{X}=np\\quad\\Rightarrow 1.28=np$",
+     "pashto": "$\\therefore\\overline{X}=np\\quad\\Rightarrow 1.28=np$"
+    },
+    {
+     "text": "$\\text{Or } 1.28=4p\\quad\\Rightarrow p=\\frac{1.28}{4}=0.32\\quad\\therefore q=0.68$",
+     "urdu": "$\\text{Or } 1.28=4p\\quad\\Rightarrow p=\\frac{1.28}{4}=0.32\\quad\\therefore q=0.68$",
+     "pashto": "$\\text{Or } 1.28=4p\\quad\\Rightarrow p=\\frac{1.28}{4}=0.32\\quad\\therefore q=0.68$"
+    },
+    {
+     "text": "The fitted Binomial distribution is:",
+     "urdu": "منطبق کی گئی دو رقمی تقسیم یہ ہے:",
+     "pashto": "برابره شوې بینومیل وېش دا دی:"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C(0.32)^x(0.68)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C(0.32)^x(0.68)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C(0.32)^x(0.68)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "The expected frequencies are computed as:",
+     "urdu": "متوقع تعدد یوں معلوم کیے جاتے ہیں:",
+     "pashto": "تمه شوې فریکونسۍ داسې محاسبه کېږي:"
+    }
+   ],
+   "theory": "Example 3.18\n\nFit a Binomial distribution to the following data and compute expected frequencies:\n\nSolution:\n\nFirst we compute mean of the given frequency distribution\n\nGiven that n = 4, N = 150. Now for Binomial distribution \\mu=np but here μ is unknown so we replace μ with its estimator \\overline{X}.\n\n\\overline{X}=\\frac{\\Sigma fx}{\\Sigma f}=\\frac{192}{150}=1.28\n\n\\therefore\\overline{X}=np\\quad\\Rightarrow 1.28=np\n\n\\text{Or } 1.28=4p\\quad\\Rightarrow p=\\frac{1.28}{4}=0.32\\quad\\therefore q=0.68\n\nThe fitted Binomial distribution is:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C(0.32)^x(0.68)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nThe expected frequencies are computed as:",
+   "urdu": "مثال 3.18\n\nدرج ذیل مواد پر دو رقمی تقسیم منطبق کریں اور متوقع تعدد معلوم کریں:\n\nحل:\n\nپہلے ہم دی گئی تعددی تقسیم کا اوسط معلوم کرتے ہیں\n\nدیا گیا ہے n = 4، N = 150۔ دو رقمی تقسیم کے لیے \\mu=np ہے لیکن یہاں μ نامعلوم ہے، اس لیے ہم μ کو اس کے تخمین کار \\overline{X} سے بدل دیتے ہیں۔\n\n\\overline{X}=\\frac{\\Sigma fx}{\\Sigma f}=\\frac{192}{150}=1.28\n\n\\therefore\\overline{X}=np\\quad\\Rightarrow 1.28=np\n\n\\text{Or } 1.28=4p\\quad\\Rightarrow p=\\frac{1.28}{4}=0.32\\quad\\therefore q=0.68\n\nمنطبق کی گئی دو رقمی تقسیم یہ ہے:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C(0.32)^x(0.68)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nمتوقع تعدد یوں معلوم کیے جاتے ہیں:",
+   "pashto": "بېلګه 3.18\n\nپه لاندې معلوماتو بینومیل وېش برابر کړئ او تمه شوې فریکونسۍ محاسبه کړئ:\n\nحل:\n\nلومړی د ورکړل شوي فریکونسي وېش منځنی محاسبه کوو\n\nورکړل شوي n = 4، N = 150. د بینومیل وېش لپاره \\mu=np دی خو دلته μ نامعلوم دی، نو μ د هغه په اټکلوونکي \\overline{X} بدلوو.\n\n\\overline{X}=\\frac{\\Sigma fx}{\\Sigma f}=\\frac{192}{150}=1.28\n\n\\therefore\\overline{X}=np\\quad\\Rightarrow 1.28=np\n\n\\text{Or } 1.28=4p\\quad\\Rightarrow p=\\frac{1.28}{4}=0.32\\quad\\therefore q=0.68\n\nبرابره شوې بینومیل وېش دا دی:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C(0.32)^x(0.68)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nتمه شوې فریکونسۍ داسې محاسبه کېږي:",
+   "theoryUrdu": "مثال 3.18\n\nدرج ذیل مواد پر دو رقمی تقسیم منطبق کریں اور متوقع تعدد معلوم کریں:\n\nحل:\n\nپہلے ہم دی گئی تعددی تقسیم کا اوسط معلوم کرتے ہیں\n\nدیا گیا ہے n = 4، N = 150۔ دو رقمی تقسیم کے لیے \\mu=np ہے لیکن یہاں μ نامعلوم ہے، اس لیے ہم μ کو اس کے تخمین کار \\overline{X} سے بدل دیتے ہیں۔\n\n\\overline{X}=\\frac{\\Sigma fx}{\\Sigma f}=\\frac{192}{150}=1.28\n\n\\therefore\\overline{X}=np\\quad\\Rightarrow 1.28=np\n\n\\text{Or } 1.28=4p\\quad\\Rightarrow p=\\frac{1.28}{4}=0.32\\quad\\therefore q=0.68\n\nمنطبق کی گئی دو رقمی تقسیم یہ ہے:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C(0.32)^x(0.68)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nمتوقع تعدد یوں معلوم کیے جاتے ہیں:",
+   "theoryPashto": "بېلګه 3.18\n\nپه لاندې معلوماتو بینومیل وېش برابر کړئ او تمه شوې فریکونسۍ محاسبه کړئ:\n\nحل:\n\nلومړی د ورکړل شوي فریکونسي وېش منځنی محاسبه کوو\n\nورکړل شوي n = 4، N = 150. د بینومیل وېش لپاره \\mu=np دی خو دلته μ نامعلوم دی، نو μ د هغه په اټکلوونکي \\overline{X} بدلوو.\n\n\\overline{X}=\\frac{\\Sigma fx}{\\Sigma f}=\\frac{192}{150}=1.28\n\n\\therefore\\overline{X}=np\\quad\\Rightarrow 1.28=np\n\n\\text{Or } 1.28=4p\\quad\\Rightarrow p=\\frac{1.28}{4}=0.32\\quad\\therefore q=0.68\n\nبرابره شوې بینومیل وېش دا دی:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C(0.32)^x(0.68)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nتمه شوې فریکونسۍ داسې محاسبه کېږي:",
+   "content": "<p>Example 3.18</p><p>Fit a Binomial distribution to the following data and compute expected frequencies:</p><p>Solution:</p><p>First we compute mean of the given frequency distribution</p><p>Given that n = 4, N = 150. Now for Binomial distribution \\mu=np but here μ is unknown so we replace μ with its estimator \\overline{X}.</p><p>\\overline{X}=\\frac{\\Sigma fx}{\\Sigma f}=\\frac{192}{150}=1.28</p><p>\\therefore\\overline{X}=np\\quad\\Rightarrow 1.28=np</p><p>\\text{Or } 1.28=4p\\quad\\Rightarrow p=\\frac{1.28}{4}=0.32\\quad\\therefore q=0.68</p><p>The fitted Binomial distribution is:</p><p>$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C(0.32)^x(0.68)^{4-x}, &amp; x=0,1,2,3,4\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>The expected frequencies are computed as:</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex3-18"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex3-18-mean"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex3-18-fit"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex3-18",
+     "headers": [
+      "$X$",
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "rows": [
+      [
+       "$f$",
+       "30",
+       "62",
+       "46",
+       "10",
+       "2"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "rows": [
+        [
+         "$f$",
+         "30",
+         "62",
+         "46",
+         "10",
+         "2"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "rows": [
+        [
+         "$f$",
+         "30",
+         "62",
+         "46",
+         "10",
+         "2"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex3-18-mean",
+     "headers": [
+      "$X$",
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "Total"
+     ],
+     "rows": [
+      [
+       "$f$",
+       "30",
+       "62",
+       "46",
+       "10",
+       "2",
+       "150"
+      ],
+      [
+       "$fx$",
+       "0",
+       "62",
+       "92",
+       "30",
+       "8",
+       "192"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "کل"
+       ],
+       "rows": [
+        [
+         "$f$",
+         "30",
+         "62",
+         "46",
+         "10",
+         "2",
+         "150"
+        ],
+        [
+         "$fx$",
+         "0",
+         "62",
+         "92",
+         "30",
+         "8",
+         "192"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "ټول"
+       ],
+       "rows": [
+        [
+         "$f$",
+         "30",
+         "62",
+         "46",
+         "10",
+         "2",
+         "150"
+        ],
+        [
+         "$fx$",
+         "0",
+         "62",
+         "92",
+         "30",
+         "8",
+         "192"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex3-18-fit",
+     "headers": [
+      "$X$",
+      "$p(x)={}^{4}_{x}C(0.32)^x(0.68)^{4-x}$",
+      "$E_f=N\\,p(x)$"
+     ],
+     "rows": [
+      [
+       "0",
+       "${}^{4}_{0}C(0.32)^{0}(0.68)^{4-0}=0.213814$",
+       "$150\\times 0.213814=32$"
+      ],
+      [
+       "1",
+       "${}^{4}_{1}C(0.32)^{1}(0.68)^{4-1}=0.402478$",
+       "$150\\times 0.402478=60$"
+      ],
+      [
+       "2",
+       "${}^{4}_{2}C(0.32)^{2}(0.68)^{4-2}=0.284099$",
+       "$=43$"
+      ],
+      [
+       "3",
+       "${}^{4}_{3}C(0.32)^{3}(0.68)^{4-3}=0.089129$",
+       "$=13$"
+      ],
+      [
+       "4",
+       "${}^{4}_{4}C(0.32)^{4}(0.68)^{4-4}=0.010486$",
+       "$=02$"
+      ],
+      [
+       "Total",
+       "1",
+       "150"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)={}^{4}_{x}C(0.32)^x(0.68)^{4-x}$",
+        "$E_f=N\\,p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "${}^{4}_{0}C(0.32)^{0}(0.68)^{4-0}=0.213814$",
+         "$150\\times 0.213814=32$"
+        ],
+        [
+         "1",
+         "${}^{4}_{1}C(0.32)^{1}(0.68)^{4-1}=0.402478$",
+         "$150\\times 0.402478=60$"
+        ],
+        [
+         "2",
+         "${}^{4}_{2}C(0.32)^{2}(0.68)^{4-2}=0.284099$",
+         "$=43$"
+        ],
+        [
+         "3",
+         "${}^{4}_{3}C(0.32)^{3}(0.68)^{4-3}=0.089129$",
+         "$=13$"
+        ],
+        [
+         "4",
+         "${}^{4}_{4}C(0.32)^{4}(0.68)^{4-4}=0.010486$",
+         "$=02$"
+        ],
+        [
+         "کل",
+         "1",
+         "150"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)={}^{4}_{x}C(0.32)^x(0.68)^{4-x}$",
+        "$E_f=N\\,p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "${}^{4}_{0}C(0.32)^{0}(0.68)^{4-0}=0.213814$",
+         "$150\\times 0.213814=32$"
+        ],
+        [
+         "1",
+         "${}^{4}_{1}C(0.32)^{1}(0.68)^{4-1}=0.402478$",
+         "$150\\times 0.402478=60$"
+        ],
+        [
+         "2",
+         "${}^{4}_{2}C(0.32)^{2}(0.68)^{4-2}=0.284099$",
+         "$=43$"
+        ],
+        [
+         "3",
+         "${}^{4}_{3}C(0.32)^{3}(0.68)^{4-3}=0.089129$",
+         "$=13$"
+        ],
+        [
+         "4",
+         "${}^{4}_{4}C(0.32)^{4}(0.68)^{4-4}=0.010486$",
+         "$=02$"
+        ],
+        [
+         "ټول",
+         "1",
+         "150"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 52,
+     "printedPages": [
+      95,
+      96
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  },
+  {
+   "id": "stat12-p052-example-3-19",
+   "title": "Example 3.19 — seven coins tossed 128 times",
+   "headingUrdu": "مثال 3.19 — سات سکے 128 بار",
+   "headingPashto": "بېلګه 3.19 — اووه سکې 128 ځله",
+   "paras": [
+    {
+     "text": "Example 3.19",
+     "urdu": "مثال 3.19",
+     "pashto": "بېلګه 3.19"
+    },
+    {
+     "text": "Suppose that seven coins are tossed and the number of heads noted. This experiment is repeated 128 times (i) fit a Binomial distribution under the hypothesis that the coins are unbiased. (ii) compute the theoretical frequencies. (iii) find its mean and standard deviation.",
+     "urdu": "فرض کریں سات سکے اچھالے جاتے ہیں اور چِت کی تعداد نوٹ کی جاتی ہے۔ یہ تجربہ 128 بار دہرایا جاتا ہے (i) اس مفروضے کے تحت دو رقمی تقسیم منطبق کریں کہ سکے غیر جانبدار ہیں۔ (ii) نظری تعدد معلوم کریں۔ (iii) اس کا اوسط اور معیاری انحراف معلوم کریں۔",
+     "pashto": "فرض کړئ اووه سکې اچول کېږي او د سرونو شمېر لیکل کېږي. دا تجربه 128 ځله تکرارېږي (i) د دې فرضیې لاندې چې سکې بې‌پلوه دي، بینومیل وېش برابر کړئ. (ii) نظري فریکونسۍ محاسبه کړئ. (iii) منځنی او معیاري انحراف یې پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "(i) We have the following information",
+     "urdu": "(i) ہمارے پاس درج ذیل معلومات ہیں",
+     "pashto": "(i) لاندې معلومات لرو"
+    },
+    {
+     "text": "$n=7$, $X=0,1,2,3,4,5,6,7$, $N=128$, $p=\\frac{1}{2}$ (coins are unbiased), $q=\\frac{1}{2}$, therefore, the fitted Binomial distribution is",
+     "urdu": "$n=7$، $X=0,1,2,3,4,5,6,7$، $N=128$، $p=\\frac{1}{2}$ (سکے غیر جانبدار ہیں)، $q=\\frac{1}{2}$، لہٰذا منطبق دو رقمی تقسیم یہ ہے",
+     "pashto": "$n=7$، $X=0,1,2,3,4,5,6,7$، $N=128$، $p=\\frac{1}{2}$ (سکې بې‌پلوه دي)، $q=\\frac{1}{2}$، نو برابره شوې بینومیل وېش دا دی"
+    }
+   ],
+   "theory": "Example 3.19\n\nSuppose that seven coins are tossed and the number of heads noted. This experiment is repeated 128 times (i) fit a Binomial distribution under the hypothesis that the coins are unbiased. (ii) compute the theoretical frequencies. (iii) find its mean and standard deviation.\n\nSolution:\n\n(i) We have the following information\n\nn=7, X=0,1,2,3,4,5,6,7, N=128, p=\\frac{1}{2} (coins are unbiased), q=\\frac{1}{2}, therefore, the fitted Binomial distribution is",
+   "urdu": "مثال 3.19\n\nفرض کریں سات سکے اچھالے جاتے ہیں اور چِت کی تعداد نوٹ کی جاتی ہے۔ یہ تجربہ 128 بار دہرایا جاتا ہے (i) اس مفروضے کے تحت دو رقمی تقسیم منطبق کریں کہ سکے غیر جانبدار ہیں۔ (ii) نظری تعدد معلوم کریں۔ (iii) اس کا اوسط اور معیاری انحراف معلوم کریں۔\n\nحل:\n\n(i) ہمارے پاس درج ذیل معلومات ہیں\n\nn=7، X=0,1,2,3,4,5,6,7، N=128، p=\\frac{1}{2} (سکے غیر جانبدار ہیں)، q=\\frac{1}{2}، لہٰذا منطبق دو رقمی تقسیم یہ ہے",
+   "pashto": "بېلګه 3.19\n\nفرض کړئ اووه سکې اچول کېږي او د سرونو شمېر لیکل کېږي. دا تجربه 128 ځله تکرارېږي (i) د دې فرضیې لاندې چې سکې بې‌پلوه دي، بینومیل وېش برابر کړئ. (ii) نظري فریکونسۍ محاسبه کړئ. (iii) منځنی او معیاري انحراف یې پیدا کړئ.\n\nحل:\n\n(i) لاندې معلومات لرو\n\nn=7، X=0,1,2,3,4,5,6,7، N=128، p=\\frac{1}{2} (سکې بې‌پلوه دي)، q=\\frac{1}{2}، نو برابره شوې بینومیل وېش دا دی",
+   "theoryUrdu": "مثال 3.19\n\nفرض کریں سات سکے اچھالے جاتے ہیں اور چِت کی تعداد نوٹ کی جاتی ہے۔ یہ تجربہ 128 بار دہرایا جاتا ہے (i) اس مفروضے کے تحت دو رقمی تقسیم منطبق کریں کہ سکے غیر جانبدار ہیں۔ (ii) نظری تعدد معلوم کریں۔ (iii) اس کا اوسط اور معیاری انحراف معلوم کریں۔\n\nحل:\n\n(i) ہمارے پاس درج ذیل معلومات ہیں\n\nn=7، X=0,1,2,3,4,5,6,7، N=128، p=\\frac{1}{2} (سکے غیر جانبدار ہیں)، q=\\frac{1}{2}، لہٰذا منطبق دو رقمی تقسیم یہ ہے",
+   "theoryPashto": "بېلګه 3.19\n\nفرض کړئ اووه سکې اچول کېږي او د سرونو شمېر لیکل کېږي. دا تجربه 128 ځله تکرارېږي (i) د دې فرضیې لاندې چې سکې بې‌پلوه دي، بینومیل وېش برابر کړئ. (ii) نظري فریکونسۍ محاسبه کړئ. (iii) منځنی او معیاري انحراف یې پیدا کړئ.\n\nحل:\n\n(i) لاندې معلومات لرو\n\nn=7، X=0,1,2,3,4,5,6,7، N=128، p=\\frac{1}{2} (سکې بې‌پلوه دي)، q=\\frac{1}{2}، نو برابره شوې بینومیل وېش دا دی",
+   "content": "<p>Example 3.19</p><p>Suppose that seven coins are tossed and the number of heads noted. This experiment is repeated 128 times (i) fit a Binomial distribution under the hypothesis that the coins are unbiased. (ii) compute the theoretical frequencies. (iii) find its mean and standard deviation.</p><p>Solution:</p><p>(i) We have the following information</p><p>n=7, X=0,1,2,3,4,5,6,7, N=128, p=\\frac{1}{2} (coins are unbiased), q=\\frac{1}{2}, therefore, the fitted Binomial distribution is</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 52,
+     "printedPages": [
+      96
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

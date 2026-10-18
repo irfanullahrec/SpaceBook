@@ -1,0 +1,119 @@
+{
+ "pdfPage": 71,
+ "sections": [
+  {
+   "id": "cs12-u4-text-11",
+   "title": "Unit 4 text (11)",
+   "headingUrdu": "یونٹ 4 — متن (۱۱)",
+   "headingPashto": "۴ څپرکی — متن (۱۱)",
+   "paras": [
+    {
+     "text": "Here, when the program starts the user enters a number to start the countdown. In this case, the number is 8 and thus the condition n>0 is true, therefore, the block within the braces { } is executed as long as n>0 and the output 8,7,6,5,4,3,2,1 is displayed on the screen.",
+     "urdu": "یہاں پروگرام شروع ہونے پر صارف الٹی گنتی شروع کرنے کے لیے ایک عدد داخل کرتا ہے۔ اس صورت میں عدد 8 ہے، اس لیے شرط n>0 درست ہے اور بریسز { } کے اندر کا بلاک اس وقت تک چلتا ہے جب تک n>0 ہو، اور اسکرین پر آؤٹ پٹ 8,7,6,5,4,3,2,1 دکھائی دیتا ہے۔",
+     "pashto": "دلته کله چې پروګرام پیل شي، کاروونکی د شاتنۍ شمېرنې د پیلولو لپاره یو عدد لیکي. په دې حالت کې عدد 8 دی، نو شرط n>0 true دی، او د لوړو قوسونو { } دننه بلاک تر هغه اجرا کېږي چې n>0 وي، او پر پرده 8,7,6,5,4,3,2,1 ښکاري."
+    },
+    {
+     "text": "Consider another program that prints numbers from 1 to 50 in such a way that there should be 10 digits per line.",
+     "urdu": "ایک اور پروگرام پر غور کریں جو 1 سے 50 تک کے اعداد اس طرح پرنٹ کرتا ہے کہ ہر لائن میں 10 اعداد ہوں۔",
+     "pashto": "بل پروګرام ته پام وکړئ چې له 1 تر 50 عددونه داسې چاپوي چې په هره کرښه کې ۱۰ عددونه وي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n = 1;\nwhile (n <= 50)\n{\ncout << n << \" \";\nif (n % 10 == 0)\ncout << endl;\nn++;\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n = 1;\nwhile (n <= 50)\n{\ncout << n << \" \";\nif (n % 10 == 0)\ncout << endl;\nn++;\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n = 1;\nwhile (n <= 50)\n{\ncout << n << \" \";\nif (n % 10 == 0)\ncout << endl;\nn++;\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\n21 22 23 24 25 26 27 28 29 30\n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50",
+     "urdu": "1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\n21 22 23 24 25 26 27 28 29 30\n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50",
+     "pashto": "1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\n21 22 23 24 25 26 27 28 29 30\n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Consider another program using while loop to get a sentence from the user and count the number of characters in this sentence.",
+     "urdu": "while لوپ کے ذریعے صارف سے جملہ حاصل کرنے اور اس جملے کے حروف گننے والے ایک اور پروگرام پر غور کریں۔",
+     "pashto": "بل پروګرام ته پام وکړئ چې د while حلقې په مرسته له کاروونکي جمله اخلي او په دې جمله کې توري شمېري."
+    }
+   ],
+   "theory": "Here, when the program starts the user enters a number to start the countdown. In this case, the number is 8 and thus the condition n>0 is true, therefore, the block within the braces { } is executed as long as n>0 and the output 8,7,6,5,4,3,2,1 is displayed on the screen.\n\nConsider another program that prints numbers from 1 to 50 in such a way that there should be 10 digits per line.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n = 1;\nwhile (n <= 50)\n{\ncout << n << \" \";\nif (n % 10 == 0)\ncout << endl;\nn++;\n}\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\n1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\n21 22 23 24 25 26 27 28 29 30\n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50\n\nConsider another program using while loop to get a sentence from the user and count the number of characters in this sentence.",
+   "urdu": "یہاں پروگرام شروع ہونے پر صارف الٹی گنتی شروع کرنے کے لیے ایک عدد داخل کرتا ہے۔ اس صورت میں عدد 8 ہے، اس لیے شرط n>0 درست ہے اور بریسز { } کے اندر کا بلاک اس وقت تک چلتا ہے جب تک n>0 ہو، اور اسکرین پر آؤٹ پٹ 8,7,6,5,4,3,2,1 دکھائی دیتا ہے۔\n\nایک اور پروگرام پر غور کریں جو 1 سے 50 تک کے اعداد اس طرح پرنٹ کرتا ہے کہ ہر لائن میں 10 اعداد ہوں۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n = 1;\nwhile (n <= 50)\n{\ncout << n << \" \";\nif (n % 10 == 0)\ncout << endl;\nn++;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\n21 22 23 24 25 26 27 28 29 30\n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50\n\nwhile لوپ کے ذریعے صارف سے جملہ حاصل کرنے اور اس جملے کے حروف گننے والے ایک اور پروگرام پر غور کریں۔",
+   "pashto": "دلته کله چې پروګرام پیل شي، کاروونکی د شاتنۍ شمېرنې د پیلولو لپاره یو عدد لیکي. په دې حالت کې عدد 8 دی، نو شرط n>0 true دی، او د لوړو قوسونو { } دننه بلاک تر هغه اجرا کېږي چې n>0 وي، او پر پرده 8,7,6,5,4,3,2,1 ښکاري.\n\nبل پروګرام ته پام وکړئ چې له 1 تر 50 عددونه داسې چاپوي چې په هره کرښه کې ۱۰ عددونه وي.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n = 1;\nwhile (n <= 50)\n{\ncout << n << \" \";\nif (n % 10 == 0)\ncout << endl;\nn++;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\n21 22 23 24 25 26 27 28 29 30\n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50\n\nبل پروګرام ته پام وکړئ چې د while حلقې په مرسته له کاروونکي جمله اخلي او په دې جمله کې توري شمېري.",
+   "theoryUrdu": "یہاں پروگرام شروع ہونے پر صارف الٹی گنتی شروع کرنے کے لیے ایک عدد داخل کرتا ہے۔ اس صورت میں عدد 8 ہے، اس لیے شرط n>0 درست ہے اور بریسز { } کے اندر کا بلاک اس وقت تک چلتا ہے جب تک n>0 ہو، اور اسکرین پر آؤٹ پٹ 8,7,6,5,4,3,2,1 دکھائی دیتا ہے۔\n\nایک اور پروگرام پر غور کریں جو 1 سے 50 تک کے اعداد اس طرح پرنٹ کرتا ہے کہ ہر لائن میں 10 اعداد ہوں۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n = 1;\nwhile (n <= 50)\n{\ncout << n << \" \";\nif (n % 10 == 0)\ncout << endl;\nn++;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\n21 22 23 24 25 26 27 28 29 30\n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50\n\nwhile لوپ کے ذریعے صارف سے جملہ حاصل کرنے اور اس جملے کے حروف گننے والے ایک اور پروگرام پر غور کریں۔",
+   "theoryPashto": "دلته کله چې پروګرام پیل شي، کاروونکی د شاتنۍ شمېرنې د پیلولو لپاره یو عدد لیکي. په دې حالت کې عدد 8 دی، نو شرط n>0 true دی، او د لوړو قوسونو { } دننه بلاک تر هغه اجرا کېږي چې n>0 وي، او پر پرده 8,7,6,5,4,3,2,1 ښکاري.\n\nبل پروګرام ته پام وکړئ چې له 1 تر 50 عددونه داسې چاپوي چې په هره کرښه کې ۱۰ عددونه وي.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n = 1;\nwhile (n <= 50)\n{\ncout << n << \" \";\nif (n % 10 == 0)\ncout << endl;\nn++;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\n21 22 23 24 25 26 27 28 29 30\n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50\n\nبل پروګرام ته پام وکړئ چې د while حلقې په مرسته له کاروونکي جمله اخلي او په دې جمله کې توري شمېري.",
+   "content": "<p>Here, when the program starts the user enters a number to start the countdown. In this case, the number is 8 and thus the condition n&gt;0 is true, therefore, the block within the braces { } is executed as long as n&gt;0 and the output 8,7,6,5,4,3,2,1 is displayed on the screen.</p><p>Consider another program that prints numbers from 1 to 50 in such a way that there should be 10 digits per line.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint n = 1;\nwhile (n &lt;= 50)\n{\ncout &lt;&lt; n &lt;&lt; &quot; &quot;;\nif (n % 10 == 0)\ncout &lt;&lt; endl;\nn++;\n}\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\n21 22 23 24 25 26 27 28 29 30\n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50</p><p>Consider another program using while loop to get a sentence from the user and count the number of characters in this sentence.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 71,
+     "printedPages": [
+      130,
+      131
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (11)",
+   "sourcePageLabel": "PDF 71 · p. 130–131",
+   "sourceNote": "The top of p.130 (end of the countdown program and output) is recorded with PDF70. The 1-to-50 program ends at the top of p.131 and is given whole here. The sentence-count program starting on p.131 is given whole with PDF72.",
+   "unit": 4
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf071",
+   "unit": 4,
+   "printedPage": 131,
+   "description": "Owner pen scribbles (digits) on p.131 are excluded."
+  }
+ ],
+ "completeUnits": []
+}

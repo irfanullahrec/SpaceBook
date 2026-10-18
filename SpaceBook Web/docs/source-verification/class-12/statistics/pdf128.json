@@ -1,0 +1,366 @@
+{
+ "pdfPage": 128,
+ "sections": [
+  {
+   "id": "stat12-p128-example-7-7",
+   "title": "Example 7.7 — difference of means (σ known), sleeping pills",
+   "headingUrdu": "مثال 7.7 — اوسطوں کا فرق (σ معلوم)، نیند کی گولیاں",
+   "headingPashto": "بېلګه 7.7 — د منځنیو توپیر (σ معلوم)، د خوب ګولۍ",
+   "paras": [
+    {
+     "text": "Test $H_0:\\mu_1=\\mu_2$ against $H_1:\\mu_1\\neq\\mu_2$ at 5% significance level.",
+     "urdu": "5% معنویت کی سطح پر $H_1:\\mu_1\\neq\\mu_2$ کے مقابلے میں $H_0:\\mu_1=\\mu_2$ کی جانچ کریں۔",
+     "pashto": "د 5% د معنی‌داریت په کچه د $H_1:\\mu_1\\neq\\mu_2$ پر وړاندې $H_0:\\mu_1=\\mu_2$ وازموئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "(i) $H_0:\\mu_1=\\mu_2$ means that $\\mu_1-\\mu_2=0$",
+     "urdu": "(i) $H_0:\\mu_1=\\mu_2$ کا مطلب ہے کہ $\\mu_1-\\mu_2=0$",
+     "pashto": "(i) $H_0:\\mu_1=\\mu_2$ مانا دا ده چې $\\mu_1-\\mu_2=0$"
+    },
+    {
+     "text": "$H_1:\\mu_1\\neq\\mu_2$",
+     "urdu": "$H_1:\\mu_1\\neq\\mu_2$",
+     "pashto": "$H_1:\\mu_1\\neq\\mu_2$"
+    },
+    {
+     "text": "(ii) α = 0.05",
+     "urdu": "(ii) α = 0.05",
+     "pashto": "(ii) α = 0.05"
+    },
+    {
+     "text": "(iii) Test statistic that summarizes the sample information in this case is",
+     "urdu": "(iii) اس صورت میں نمونے کی معلومات کا خلاصہ کرنے والا جانچ کا شماریہ یہ ہے",
+     "pashto": "(iii) په دې حالت کې د نمونې معلومات لنډوونکې د ازموینې احصاییه دا ده"
+    },
+    {
+     "text": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$$",
+     "urdu": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$$",
+     "pashto": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$$"
+    },
+    {
+     "text": "(iv) Calculation: $Z=\\frac{(8.75-7.25)-0}{\\sqrt{\\frac{9}{36}+\\frac{4}{64}}}=\\frac{1.5}{0.559}=2.683$",
+     "urdu": "(iv) حساب: $Z=\\frac{(8.75-7.25)-0}{\\sqrt{\\frac{9}{36}+\\frac{4}{64}}}=\\frac{1.5}{0.559}=2.683$",
+     "pashto": "(iv) محاسبه: $Z=\\frac{(8.75-7.25)-0}{\\sqrt{\\frac{9}{36}+\\frac{4}{64}}}=\\frac{1.5}{0.559}=2.683$"
+    },
+    {
+     "text": "(v) Critical region:",
+     "urdu": "(v) فیصلہ کن علاقہ:",
+     "pashto": "(v) بحراني سیمه:"
+    },
+    {
+     "text": "Reject $H_0$ if $Z\\le -Z_{\\alpha/2}$ or $Z\\ge Z_{\\alpha/2}$ whereas $Z_{\\alpha/2}=Z_{0.025}=1.96$",
+     "urdu": "$H_0$ کو رد کریں اگر $Z\\le -Z_{\\alpha/2}$ یا $Z\\ge Z_{\\alpha/2}$ جبکہ $Z_{\\alpha/2}=Z_{0.025}=1.96$",
+     "pashto": "$H_0$ رد کړئ که $Z\\le -Z_{\\alpha/2}$ یا $Z\\ge Z_{\\alpha/2}$ په داسې حال کې چې $Z_{\\alpha/2}=Z_{0.025}=1.96$"
+    },
+    {
+     "text": "(vi) Conclusion:",
+     "urdu": "(vi) نتیجہ:",
+     "pashto": "(vi) پایله:"
+    },
+    {
+     "text": "As Z = 2.683 falls in the rejection region, therefore, we reject $H_0$ and conclude that effect of sleeping pill on male and female is different.",
+     "urdu": "چونکہ Z = 2.683 رد کے علاقے میں ہے، لہٰذا ہم $H_0$ رد کرتے ہیں اور نتیجہ نکالتے ہیں کہ نیند کی گولی کا مردوں اور عورتوں پر اثر مختلف ہے۔",
+     "pashto": "څرنګه چې Z = 2.683 د ردولو په سیمه کې لوېږي، نو $H_0$ ردوو او پایله اخلو چې د خوب د ګولۍ اغېز پر نارینه او ښځینه بېلابېل دی."
+    }
+   ],
+   "theory": "Test H_0:\\mu_1=\\mu_2 against H_1:\\mu_1\\neq\\mu_2 at 5% significance level.\n\nSolution:\n\n(i) H_0:\\mu_1=\\mu_2 means that \\mu_1-\\mu_2=0\n\nH_1:\\mu_1\\neq\\mu_2\n\n(ii) α = 0.05\n\n(iii) Test statistic that summarizes the sample information in this case is\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$\n\n(iv) Calculation: Z=\\frac{(8.75-7.25)-0}{\\sqrt{\\frac{9}{36}+\\frac{4}{64}}}=\\frac{1.5}{0.559}=2.683\n\n(v) Critical region:\n\nReject H_0 if Z\\le -Z_{\\alpha/2} or Z\\ge Z_{\\alpha/2} whereas Z_{\\alpha/2}=Z_{0.025}=1.96\n\n(vi) Conclusion:\n\nAs Z = 2.683 falls in the rejection region, therefore, we reject H_0 and conclude that effect of sleeping pill on male and female is different.",
+   "urdu": "5% معنویت کی سطح پر H_1:\\mu_1\\neq\\mu_2 کے مقابلے میں H_0:\\mu_1=\\mu_2 کی جانچ کریں۔\n\nحل:\n\n(i) H_0:\\mu_1=\\mu_2 کا مطلب ہے کہ \\mu_1-\\mu_2=0\n\nH_1:\\mu_1\\neq\\mu_2\n\n(ii) α = 0.05\n\n(iii) اس صورت میں نمونے کی معلومات کا خلاصہ کرنے والا جانچ کا شماریہ یہ ہے\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$\n\n(iv) حساب: Z=\\frac{(8.75-7.25)-0}{\\sqrt{\\frac{9}{36}+\\frac{4}{64}}}=\\frac{1.5}{0.559}=2.683\n\n(v) فیصلہ کن علاقہ:\n\nH_0 کو رد کریں اگر Z\\le -Z_{\\alpha/2} یا Z\\ge Z_{\\alpha/2} جبکہ Z_{\\alpha/2}=Z_{0.025}=1.96\n\n(vi) نتیجہ:\n\nچونکہ Z = 2.683 رد کے علاقے میں ہے، لہٰذا ہم H_0 رد کرتے ہیں اور نتیجہ نکالتے ہیں کہ نیند کی گولی کا مردوں اور عورتوں پر اثر مختلف ہے۔",
+   "pashto": "د 5% د معنی‌داریت په کچه د H_1:\\mu_1\\neq\\mu_2 پر وړاندې H_0:\\mu_1=\\mu_2 وازموئ.\n\nحل:\n\n(i) H_0:\\mu_1=\\mu_2 مانا دا ده چې \\mu_1-\\mu_2=0\n\nH_1:\\mu_1\\neq\\mu_2\n\n(ii) α = 0.05\n\n(iii) په دې حالت کې د نمونې معلومات لنډوونکې د ازموینې احصاییه دا ده\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$\n\n(iv) محاسبه: Z=\\frac{(8.75-7.25)-0}{\\sqrt{\\frac{9}{36}+\\frac{4}{64}}}=\\frac{1.5}{0.559}=2.683\n\n(v) بحراني سیمه:\n\nH_0 رد کړئ که Z\\le -Z_{\\alpha/2} یا Z\\ge Z_{\\alpha/2} په داسې حال کې چې Z_{\\alpha/2}=Z_{0.025}=1.96\n\n(vi) پایله:\n\nڅرنګه چې Z = 2.683 د ردولو په سیمه کې لوېږي، نو H_0 ردوو او پایله اخلو چې د خوب د ګولۍ اغېز پر نارینه او ښځینه بېلابېل دی.",
+   "theoryUrdu": "5% معنویت کی سطح پر H_1:\\mu_1\\neq\\mu_2 کے مقابلے میں H_0:\\mu_1=\\mu_2 کی جانچ کریں۔\n\nحل:\n\n(i) H_0:\\mu_1=\\mu_2 کا مطلب ہے کہ \\mu_1-\\mu_2=0\n\nH_1:\\mu_1\\neq\\mu_2\n\n(ii) α = 0.05\n\n(iii) اس صورت میں نمونے کی معلومات کا خلاصہ کرنے والا جانچ کا شماریہ یہ ہے\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$\n\n(iv) حساب: Z=\\frac{(8.75-7.25)-0}{\\sqrt{\\frac{9}{36}+\\frac{4}{64}}}=\\frac{1.5}{0.559}=2.683\n\n(v) فیصلہ کن علاقہ:\n\nH_0 کو رد کریں اگر Z\\le -Z_{\\alpha/2} یا Z\\ge Z_{\\alpha/2} جبکہ Z_{\\alpha/2}=Z_{0.025}=1.96\n\n(vi) نتیجہ:\n\nچونکہ Z = 2.683 رد کے علاقے میں ہے، لہٰذا ہم H_0 رد کرتے ہیں اور نتیجہ نکالتے ہیں کہ نیند کی گولی کا مردوں اور عورتوں پر اثر مختلف ہے۔",
+   "theoryPashto": "د 5% د معنی‌داریت په کچه د H_1:\\mu_1\\neq\\mu_2 پر وړاندې H_0:\\mu_1=\\mu_2 وازموئ.\n\nحل:\n\n(i) H_0:\\mu_1=\\mu_2 مانا دا ده چې \\mu_1-\\mu_2=0\n\nH_1:\\mu_1\\neq\\mu_2\n\n(ii) α = 0.05\n\n(iii) په دې حالت کې د نمونې معلومات لنډوونکې د ازموینې احصاییه دا ده\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$\n\n(iv) محاسبه: Z=\\frac{(8.75-7.25)-0}{\\sqrt{\\frac{9}{36}+\\frac{4}{64}}}=\\frac{1.5}{0.559}=2.683\n\n(v) بحراني سیمه:\n\nH_0 رد کړئ که Z\\le -Z_{\\alpha/2} یا Z\\ge Z_{\\alpha/2} په داسې حال کې چې Z_{\\alpha/2}=Z_{0.025}=1.96\n\n(vi) پایله:\n\nڅرنګه چې Z = 2.683 د ردولو په سیمه کې لوېږي، نو H_0 ردوو او پایله اخلو چې د خوب د ګولۍ اغېز پر نارینه او ښځینه بېلابېل دی.",
+   "content": "<p>Test H_0:\\mu_1=\\mu_2 against H_1:\\mu_1\\neq\\mu_2 at 5% significance level.</p><p>Solution:</p><p>(i) H_0:\\mu_1=\\mu_2 means that \\mu_1-\\mu_2=0</p><p>H_1:\\mu_1\\neq\\mu_2</p><p>(ii) α = 0.05</p><p>(iii) Test statistic that summarizes the sample information in this case is</p><p>$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$</p><p>(iv) Calculation: Z=\\frac{(8.75-7.25)-0}{\\sqrt{\\frac{9}{36}+\\frac{4}{64}}}=\\frac{1.5}{0.559}=2.683</p><p>(v) Critical region:</p><p>Reject H_0 if Z\\le -Z_{\\alpha/2} or Z\\ge Z_{\\alpha/2} whereas Z_{\\alpha/2}=Z_{0.025}=1.96</p><p>(vi) Conclusion:</p><p>As Z = 2.683 falls in the rejection region, therefore, we reject H_0 and conclude that effect of sleeping pill on male and female is different.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "visualParagraph",
+     "blockId": "stat12-ex7-7-cr",
+     "indices": [
+      7
+     ],
+     "visualFirst": false
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-ex7-7-cr",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Two-sided critical region at ±1.96\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.1 99.8L7.9 99.8L9.6 99.8L11.4 99.8L13.2 99.7L15.0 99.7L16.7 99.6L18.5 99.6L20.3 99.5L22.1 99.5L23.8 99.4L25.6 99.3L27.4 99.2L29.1 99.1L30.9 99.0L32.7 98.9L34.5 98.7L36.2 98.6L38.0 98.4L39.8 98.2L41.6 98.0L43.3 97.7L45.1 97.5L46.9 97.2L48.6 96.9L50.4 96.5L52.2 96.2L54.0 95.7L55.7 95.3L57.5 94.8L59.3 94.3L61.1 93.7L62.8 93.1L64.6 92.5L66.4 91.7L68.2 91.0L69.9 90.2L71.7 89.3L73.5 88.4L75.2 87.4L75.2 100Z\" fill=\"#fff\"/><path d=\"M244.8 100L244.8 87.4L246.5 88.4L248.3 89.3L250.1 90.2L251.8 91.0L253.6 91.7L255.4 92.5L257.2 93.1L258.9 93.7L260.7 94.3L262.5 94.8L264.3 95.3L266.0 95.7L267.8 96.2L269.6 96.5L271.4 96.9L273.1 97.2L274.9 97.5L276.7 97.7L278.4 98.0L280.2 98.2L282.0 98.4L283.8 98.6L285.5 98.7L287.3 98.9L289.1 99.0L290.9 99.1L292.6 99.2L294.4 99.3L296.2 99.4L297.9 99.5L299.7 99.5L301.5 99.6L303.3 99.6L305.0 99.7L306.8 99.7L308.6 99.8L310.4 99.8L312.1 99.8L313.9 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M75.2 100V87.4\" stroke=\"#111\"/><path d=\"M244.8 100V87.4\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"160.0\" y=\"58\"></text><text x=\"283.7\" y=\"70\">α/2</text><text x=\"36.3\" y=\"70\">α/2</text><text x=\"75.2\" y=\"116\" font-size=\"12\">−1.96</text><text x=\"160.0\" y=\"116\" font-size=\"12\">0</text><text x=\"244.8\" y=\"116\" font-size=\"12\">1.96</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Two-sided critical region at ±1.96\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.1 99.8L7.9 99.8L9.6 99.8L11.4 99.8L13.2 99.7L15.0 99.7L16.7 99.6L18.5 99.6L20.3 99.5L22.1 99.5L23.8 99.4L25.6 99.3L27.4 99.2L29.1 99.1L30.9 99.0L32.7 98.9L34.5 98.7L36.2 98.6L38.0 98.4L39.8 98.2L41.6 98.0L43.3 97.7L45.1 97.5L46.9 97.2L48.6 96.9L50.4 96.5L52.2 96.2L54.0 95.7L55.7 95.3L57.5 94.8L59.3 94.3L61.1 93.7L62.8 93.1L64.6 92.5L66.4 91.7L68.2 91.0L69.9 90.2L71.7 89.3L73.5 88.4L75.2 87.4L75.2 100Z\" fill=\"#fff\"/><path d=\"M244.8 100L244.8 87.4L246.5 88.4L248.3 89.3L250.1 90.2L251.8 91.0L253.6 91.7L255.4 92.5L257.2 93.1L258.9 93.7L260.7 94.3L262.5 94.8L264.3 95.3L266.0 95.7L267.8 96.2L269.6 96.5L271.4 96.9L273.1 97.2L274.9 97.5L276.7 97.7L278.4 98.0L280.2 98.2L282.0 98.4L283.8 98.6L285.5 98.7L287.3 98.9L289.1 99.0L290.9 99.1L292.6 99.2L294.4 99.3L296.2 99.4L297.9 99.5L299.7 99.5L301.5 99.6L303.3 99.6L305.0 99.7L306.8 99.7L308.6 99.8L310.4 99.8L312.1 99.8L313.9 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M75.2 100V87.4\" stroke=\"#111\"/><path d=\"M244.8 100V87.4\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"160.0\" y=\"58\"></text><text x=\"283.7\" y=\"70\">α/2</text><text x=\"36.3\" y=\"70\">α/2</text><text x=\"75.2\" y=\"116\" font-size=\"12\">−1.96</text><text x=\"160.0\" y=\"116\" font-size=\"12\">0</text><text x=\"244.8\" y=\"116\" font-size=\"12\">1.96</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Two-sided critical region at ±1.96\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.1 99.8L7.9 99.8L9.6 99.8L11.4 99.8L13.2 99.7L15.0 99.7L16.7 99.6L18.5 99.6L20.3 99.5L22.1 99.5L23.8 99.4L25.6 99.3L27.4 99.2L29.1 99.1L30.9 99.0L32.7 98.9L34.5 98.7L36.2 98.6L38.0 98.4L39.8 98.2L41.6 98.0L43.3 97.7L45.1 97.5L46.9 97.2L48.6 96.9L50.4 96.5L52.2 96.2L54.0 95.7L55.7 95.3L57.5 94.8L59.3 94.3L61.1 93.7L62.8 93.1L64.6 92.5L66.4 91.7L68.2 91.0L69.9 90.2L71.7 89.3L73.5 88.4L75.2 87.4L75.2 100Z\" fill=\"#fff\"/><path d=\"M244.8 100L244.8 87.4L246.5 88.4L248.3 89.3L250.1 90.2L251.8 91.0L253.6 91.7L255.4 92.5L257.2 93.1L258.9 93.7L260.7 94.3L262.5 94.8L264.3 95.3L266.0 95.7L267.8 96.2L269.6 96.5L271.4 96.9L273.1 97.2L274.9 97.5L276.7 97.7L278.4 98.0L280.2 98.2L282.0 98.4L283.8 98.6L285.5 98.7L287.3 98.9L289.1 99.0L290.9 99.1L292.6 99.2L294.4 99.3L296.2 99.4L297.9 99.5L299.7 99.5L301.5 99.6L303.3 99.6L305.0 99.7L306.8 99.7L308.6 99.8L310.4 99.8L312.1 99.8L313.9 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M75.2 100V87.4\" stroke=\"#111\"/><path d=\"M244.8 100V87.4\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"160.0\" y=\"58\"></text><text x=\"283.7\" y=\"70\">α/2</text><text x=\"36.3\" y=\"70\">α/2</text><text x=\"75.2\" y=\"116\" font-size=\"12\">−1.96</text><text x=\"160.0\" y=\"116\" font-size=\"12\">0</text><text x=\"244.8\" y=\"116\" font-size=\"12\">1.96</text></g></svg>",
+     "sourceWidthRatio": 0.45
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 128,
+     "printedPages": [
+      247
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 7
+  },
+  {
+   "id": "stat12-p128-example-7-8",
+   "title": "7.2.4 Test for μ₁ − μ₂ (σ unknown, large) — Example 7.8",
+   "headingUrdu": "7.2.4 μ₁ − μ₂ کی جانچ (σ نامعلوم، بڑے) — مثال 7.8",
+   "headingPashto": "7.2.4 د μ₁ − μ₂ ازموینه (σ نامعلوم، لوی) — بېلګه 7.8",
+   "paras": [
+    {
+     "text": "7.2.4 Procedure for testing hypothesis about (μ₁ − μ₂) when σ₁² and σ₂² are unknown but sample sizes are large.",
+     "urdu": "7.2.4 جب σ₁² اور σ₂² نامعلوم ہوں لیکن نمونوں کے سائز بڑے ہوں تو (μ₁ − μ₂) کے بارے میں مفروضے کی جانچ کا طریقہ۔",
+     "pashto": "7.2.4 کله چې σ₁² او σ₂² نامعلوم وي خو د نمونو اندازې لویې وي د (μ₁ − μ₂) په اړه د فرضیې د ازموینې طریقه."
+    },
+    {
+     "text": "When $\\sigma_1^2$ and $\\sigma_2^2$ are unknown, then for $n_1,n_2\\ge 30$, they are estimated by $S_1^2$ and $S_2^2$ respectively. The test statistic Z in this case is",
+     "urdu": "جب $\\sigma_1^2$ اور $\\sigma_2^2$ نامعلوم ہوں تو $n_1,n_2\\ge 30$ کے لیے ان کا تخمین بالترتیب $S_1^2$ اور $S_2^2$ سے لگایا جاتا ہے۔ اس صورت میں جانچ کا شماریہ Z یہ ہے",
+     "pashto": "کله چې $\\sigma_1^2$ او $\\sigma_2^2$ نامعلوم وي، نو د $n_1,n_2\\ge 30$ لپاره په ترتیب سره په $S_1^2$ او $S_2^2$ اټکل کېږي. په دې حالت کې د Z احصاییه دا ده"
+    },
+    {
+     "text": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}\\sim N(0,1)\\ \\text{approximately.}$$",
+     "urdu": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}\\sim N(0,1)\\ \\text{approximately.}$$",
+     "pashto": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}\\sim N(0,1)\\ \\text{approximately.}$$"
+    },
+    {
+     "text": "Rest of the procedure for testing $H_0$ is same.",
+     "urdu": "$H_0$ کی جانچ کا باقی طریقہ یکساں ہے۔",
+     "pashto": "د $H_0$ د ازموینې پاتې طریقه یو شان ده."
+    },
+    {
+     "text": "Example 7.8",
+     "urdu": "مثال 7.8",
+     "pashto": "بېلګه 7.8"
+    },
+    {
+     "text": "To determine whether car ownership affects a student’s academic achievement, two random samples were drawn from the students. The grade point average for the $n_1=100$ car owners had $\\overline{X}_1=2.54$ and $S_1^2=0.40$ while for the $n_2=100$ non-owners of cars, $\\overline{X}_2=2.70$ and $S_2^2=0.36$.",
+     "urdu": "یہ معلوم کرنے کے لیے کہ کیا گاڑی کی ملکیت طالب علم کی تعلیمی کارکردگی پر اثر ڈالتی ہے، طلبہ سے دو تصادفی نمونے لیے گئے۔ $n_1=100$ گاڑی مالکان کا گریڈ پوائنٹ اوسط $\\overline{X}_1=2.54$ اور $S_1^2=0.40$ تھا جبکہ $n_2=100$ غیر مالکان کا $\\overline{X}_2=2.70$ اور $S_2^2=0.36$ تھا۔",
+     "pashto": "د دې معلومولو لپاره چې آیا د موټر لرل د زده کوونکي پر تعلیمي لاسته راوړنو اغېز کوي، له زده کوونکو دوه تصادفي نمونې واخیستل شوې. د $n_1=100$ موټر لرونکو د درجې د نمرو منځنی $\\overline{X}_1=2.54$ او $S_1^2=0.40$ و، په داسې حال کې چې د $n_2=100$ موټر نه لرونکو لپاره $\\overline{X}_2=2.70$ او $S_2^2=0.36$ و."
+    },
+    {
+     "text": "Do the data present sufficient evidence to indicate a difference in the mean achievements between car owners and non-owners of cars? Test using α = 0.05.",
+     "urdu": "کیا مواد گاڑی مالکان اور غیر مالکان کی اوسط کارکردگی میں فرق کا کافی ثبوت پیش کرتا ہے؟ α = 0.05 استعمال کرتے ہوئے جانچ کریں۔",
+     "pashto": "آیا معلومات د موټر لرونکو او نه لرونکو د منځنیو لاسته راوړنو ترمنځ د توپیر لپاره کافي شواهد وړاندې کوي؟ د α = 0.05 په کارولو سره وازموئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Let $\\mu_1$ denote mean of car owners and $\\mu_2$ denote mean of non-owners of cars, then",
+     "urdu": "فرض کریں $\\mu_1$ گاڑی مالکان کا اوسط اور $\\mu_2$ غیر مالکان کا اوسط ظاہر کرتا ہے، تو",
+     "pashto": "فرض کړئ $\\mu_1$ د موټر لرونکو منځنی او $\\mu_2$ د نه لرونکو منځنی ښيي، نو"
+    },
+    {
+     "text": "i. $H_0:\\mu_1-\\mu_2=0$",
+     "urdu": "i. $H_0:\\mu_1-\\mu_2=0$",
+     "pashto": "i. $H_0:\\mu_1-\\mu_2=0$"
+    },
+    {
+     "text": "$H_1:\\mu_1-\\mu_2\\neq 0$",
+     "urdu": "$H_1:\\mu_1-\\mu_2\\neq 0$",
+     "pashto": "$H_1:\\mu_1-\\mu_2\\neq 0$"
+    },
+    {
+     "text": "ii. α = 0.05",
+     "urdu": "ii. α = 0.05",
+     "pashto": "ii. α = 0.05"
+    },
+    {
+     "text": "iii. Test statistics:",
+     "urdu": "iii. جانچ کا شماریہ:",
+     "pashto": "iii. د ازموینې احصاییه:"
+    },
+    {
+     "text": "Since $\\sigma_1^2,\\sigma_2^2$ are not given but $n_1,n_2$ are large, so Z-statistic will be of the form",
+     "urdu": "چونکہ $\\sigma_1^2,\\sigma_2^2$ نہیں دیے گئے لیکن $n_1,n_2$ بڑے ہیں، لہٰذا Z-شماریہ اس شکل کا ہوگا",
+     "pashto": "څرنګه چې $\\sigma_1^2,\\sigma_2^2$ نه دي ورکړل شوي خو $n_1,n_2$ لوی دي، نو Z-احصاییه به دا بڼه ولري"
+    },
+    {
+     "text": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}$$",
+     "urdu": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}$$",
+     "pashto": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}$$"
+    },
+    {
+     "text": "iv. Computations: Substituting values into the formula we get",
+     "urdu": "iv. حساب: فارمولا میں قیمتیں رکھنے سے",
+     "pashto": "iv. محاسبه: په فورمول کې د قیمتونو ایښودو سره"
+    },
+    {
+     "text": "$$Z=\\frac{(2.54-2.70)-0}{\\sqrt{\\frac{0.40}{100}+\\frac{0.36}{100}}}=-1.84$$",
+     "urdu": "$$Z=\\frac{(2.54-2.70)-0}{\\sqrt{\\frac{0.40}{100}+\\frac{0.36}{100}}}=-1.84$$",
+     "pashto": "$$Z=\\frac{(2.54-2.70)-0}{\\sqrt{\\frac{0.40}{100}+\\frac{0.36}{100}}}=-1.84$$"
+    }
+   ],
+   "theory": "7.2.4 Procedure for testing hypothesis about (μ₁ − μ₂) when σ₁² and σ₂² are unknown but sample sizes are large.\n\nWhen \\sigma_1^2 and \\sigma_2^2 are unknown, then for n_1,n_2\\ge 30, they are estimated by S_1^2 and S_2^2 respectively. The test statistic Z in this case is\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}\\sim N(0,1)\\ \\text{approximately.}$\n\nRest of the procedure for testing H_0 is same.\n\nExample 7.8\n\nTo determine whether car ownership affects a student’s academic achievement, two random samples were drawn from the students. The grade point average for the n_1=100 car owners had \\overline{X}_1=2.54 and S_1^2=0.40 while for the n_2=100 non-owners of cars, \\overline{X}_2=2.70 and S_2^2=0.36.\n\nDo the data present sufficient evidence to indicate a difference in the mean achievements between car owners and non-owners of cars? Test using α = 0.05.\n\nSolution:\n\nLet \\mu_1 denote mean of car owners and \\mu_2 denote mean of non-owners of cars, then\n\ni. H_0:\\mu_1-\\mu_2=0\n\nH_1:\\mu_1-\\mu_2\\neq 0\n\nii. α = 0.05\n\niii. Test statistics:\n\nSince \\sigma_1^2,\\sigma_2^2 are not given but n_1,n_2 are large, so Z-statistic will be of the form\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}$\n\niv. Computations: Substituting values into the formula we get\n\n$Z=\\frac{(2.54-2.70)-0}{\\sqrt{\\frac{0.40}{100}+\\frac{0.36}{100}}}=-1.84$",
+   "urdu": "7.2.4 جب σ₁² اور σ₂² نامعلوم ہوں لیکن نمونوں کے سائز بڑے ہوں تو (μ₁ − μ₂) کے بارے میں مفروضے کی جانچ کا طریقہ۔\n\nجب \\sigma_1^2 اور \\sigma_2^2 نامعلوم ہوں تو n_1,n_2\\ge 30 کے لیے ان کا تخمین بالترتیب S_1^2 اور S_2^2 سے لگایا جاتا ہے۔ اس صورت میں جانچ کا شماریہ Z یہ ہے\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}\\sim N(0,1)\\ \\text{approximately.}$\n\nH_0 کی جانچ کا باقی طریقہ یکساں ہے۔\n\nمثال 7.8\n\nیہ معلوم کرنے کے لیے کہ کیا گاڑی کی ملکیت طالب علم کی تعلیمی کارکردگی پر اثر ڈالتی ہے، طلبہ سے دو تصادفی نمونے لیے گئے۔ n_1=100 گاڑی مالکان کا گریڈ پوائنٹ اوسط \\overline{X}_1=2.54 اور S_1^2=0.40 تھا جبکہ n_2=100 غیر مالکان کا \\overline{X}_2=2.70 اور S_2^2=0.36 تھا۔\n\nکیا مواد گاڑی مالکان اور غیر مالکان کی اوسط کارکردگی میں فرق کا کافی ثبوت پیش کرتا ہے؟ α = 0.05 استعمال کرتے ہوئے جانچ کریں۔\n\nحل:\n\nفرض کریں \\mu_1 گاڑی مالکان کا اوسط اور \\mu_2 غیر مالکان کا اوسط ظاہر کرتا ہے، تو\n\ni. H_0:\\mu_1-\\mu_2=0\n\nH_1:\\mu_1-\\mu_2\\neq 0\n\nii. α = 0.05\n\niii. جانچ کا شماریہ:\n\nچونکہ \\sigma_1^2,\\sigma_2^2 نہیں دیے گئے لیکن n_1,n_2 بڑے ہیں، لہٰذا Z-شماریہ اس شکل کا ہوگا\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}$\n\niv. حساب: فارمولا میں قیمتیں رکھنے سے\n\n$Z=\\frac{(2.54-2.70)-0}{\\sqrt{\\frac{0.40}{100}+\\frac{0.36}{100}}}=-1.84$",
+   "pashto": "7.2.4 کله چې σ₁² او σ₂² نامعلوم وي خو د نمونو اندازې لویې وي د (μ₁ − μ₂) په اړه د فرضیې د ازموینې طریقه.\n\nکله چې \\sigma_1^2 او \\sigma_2^2 نامعلوم وي، نو د n_1,n_2\\ge 30 لپاره په ترتیب سره په S_1^2 او S_2^2 اټکل کېږي. په دې حالت کې د Z احصاییه دا ده\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}\\sim N(0,1)\\ \\text{approximately.}$\n\nد H_0 د ازموینې پاتې طریقه یو شان ده.\n\nبېلګه 7.8\n\nد دې معلومولو لپاره چې آیا د موټر لرل د زده کوونکي پر تعلیمي لاسته راوړنو اغېز کوي، له زده کوونکو دوه تصادفي نمونې واخیستل شوې. د n_1=100 موټر لرونکو د درجې د نمرو منځنی \\overline{X}_1=2.54 او S_1^2=0.40 و، په داسې حال کې چې د n_2=100 موټر نه لرونکو لپاره \\overline{X}_2=2.70 او S_2^2=0.36 و.\n\nآیا معلومات د موټر لرونکو او نه لرونکو د منځنیو لاسته راوړنو ترمنځ د توپیر لپاره کافي شواهد وړاندې کوي؟ د α = 0.05 په کارولو سره وازموئ.\n\nحل:\n\nفرض کړئ \\mu_1 د موټر لرونکو منځنی او \\mu_2 د نه لرونکو منځنی ښيي، نو\n\ni. H_0:\\mu_1-\\mu_2=0\n\nH_1:\\mu_1-\\mu_2\\neq 0\n\nii. α = 0.05\n\niii. د ازموینې احصاییه:\n\nڅرنګه چې \\sigma_1^2,\\sigma_2^2 نه دي ورکړل شوي خو n_1,n_2 لوی دي، نو Z-احصاییه به دا بڼه ولري\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}$\n\niv. محاسبه: په فورمول کې د قیمتونو ایښودو سره\n\n$Z=\\frac{(2.54-2.70)-0}{\\sqrt{\\frac{0.40}{100}+\\frac{0.36}{100}}}=-1.84$",
+   "theoryUrdu": "7.2.4 جب σ₁² اور σ₂² نامعلوم ہوں لیکن نمونوں کے سائز بڑے ہوں تو (μ₁ − μ₂) کے بارے میں مفروضے کی جانچ کا طریقہ۔\n\nجب \\sigma_1^2 اور \\sigma_2^2 نامعلوم ہوں تو n_1,n_2\\ge 30 کے لیے ان کا تخمین بالترتیب S_1^2 اور S_2^2 سے لگایا جاتا ہے۔ اس صورت میں جانچ کا شماریہ Z یہ ہے\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}\\sim N(0,1)\\ \\text{approximately.}$\n\nH_0 کی جانچ کا باقی طریقہ یکساں ہے۔\n\nمثال 7.8\n\nیہ معلوم کرنے کے لیے کہ کیا گاڑی کی ملکیت طالب علم کی تعلیمی کارکردگی پر اثر ڈالتی ہے، طلبہ سے دو تصادفی نمونے لیے گئے۔ n_1=100 گاڑی مالکان کا گریڈ پوائنٹ اوسط \\overline{X}_1=2.54 اور S_1^2=0.40 تھا جبکہ n_2=100 غیر مالکان کا \\overline{X}_2=2.70 اور S_2^2=0.36 تھا۔\n\nکیا مواد گاڑی مالکان اور غیر مالکان کی اوسط کارکردگی میں فرق کا کافی ثبوت پیش کرتا ہے؟ α = 0.05 استعمال کرتے ہوئے جانچ کریں۔\n\nحل:\n\nفرض کریں \\mu_1 گاڑی مالکان کا اوسط اور \\mu_2 غیر مالکان کا اوسط ظاہر کرتا ہے، تو\n\ni. H_0:\\mu_1-\\mu_2=0\n\nH_1:\\mu_1-\\mu_2\\neq 0\n\nii. α = 0.05\n\niii. جانچ کا شماریہ:\n\nچونکہ \\sigma_1^2,\\sigma_2^2 نہیں دیے گئے لیکن n_1,n_2 بڑے ہیں، لہٰذا Z-شماریہ اس شکل کا ہوگا\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}$\n\niv. حساب: فارمولا میں قیمتیں رکھنے سے\n\n$Z=\\frac{(2.54-2.70)-0}{\\sqrt{\\frac{0.40}{100}+\\frac{0.36}{100}}}=-1.84$",
+   "theoryPashto": "7.2.4 کله چې σ₁² او σ₂² نامعلوم وي خو د نمونو اندازې لویې وي د (μ₁ − μ₂) په اړه د فرضیې د ازموینې طریقه.\n\nکله چې \\sigma_1^2 او \\sigma_2^2 نامعلوم وي، نو د n_1,n_2\\ge 30 لپاره په ترتیب سره په S_1^2 او S_2^2 اټکل کېږي. په دې حالت کې د Z احصاییه دا ده\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}\\sim N(0,1)\\ \\text{approximately.}$\n\nد H_0 د ازموینې پاتې طریقه یو شان ده.\n\nبېلګه 7.8\n\nد دې معلومولو لپاره چې آیا د موټر لرل د زده کوونکي پر تعلیمي لاسته راوړنو اغېز کوي، له زده کوونکو دوه تصادفي نمونې واخیستل شوې. د n_1=100 موټر لرونکو د درجې د نمرو منځنی \\overline{X}_1=2.54 او S_1^2=0.40 و، په داسې حال کې چې د n_2=100 موټر نه لرونکو لپاره \\overline{X}_2=2.70 او S_2^2=0.36 و.\n\nآیا معلومات د موټر لرونکو او نه لرونکو د منځنیو لاسته راوړنو ترمنځ د توپیر لپاره کافي شواهد وړاندې کوي؟ د α = 0.05 په کارولو سره وازموئ.\n\nحل:\n\nفرض کړئ \\mu_1 د موټر لرونکو منځنی او \\mu_2 د نه لرونکو منځنی ښيي، نو\n\ni. H_0:\\mu_1-\\mu_2=0\n\nH_1:\\mu_1-\\mu_2\\neq 0\n\nii. α = 0.05\n\niii. د ازموینې احصاییه:\n\nڅرنګه چې \\sigma_1^2,\\sigma_2^2 نه دي ورکړل شوي خو n_1,n_2 لوی دي، نو Z-احصاییه به دا بڼه ولري\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}$\n\niv. محاسبه: په فورمول کې د قیمتونو ایښودو سره\n\n$Z=\\frac{(2.54-2.70)-0}{\\sqrt{\\frac{0.40}{100}+\\frac{0.36}{100}}}=-1.84$",
+   "content": "<p>7.2.4 Procedure for testing hypothesis about (μ₁ − μ₂) when σ₁² and σ₂² are unknown but sample sizes are large.</p><p>When \\sigma_1^2 and \\sigma_2^2 are unknown, then for n_1,n_2\\ge 30, they are estimated by S_1^2 and S_2^2 respectively. The test statistic Z in this case is</p><p>$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}\\sim N(0,1)\\ \\text{approximately.}$</p><p>Rest of the procedure for testing H_0 is same.</p><p>Example 7.8</p><p>To determine whether car ownership affects a student’s academic achievement, two random samples were drawn from the students. The grade point average for the n_1=100 car owners had \\overline{X}_1=2.54 and S_1^2=0.40 while for the n_2=100 non-owners of cars, \\overline{X}_2=2.70 and S_2^2=0.36.</p><p>Do the data present sufficient evidence to indicate a difference in the mean achievements between car owners and non-owners of cars? Test using α = 0.05.</p><p>Solution:</p><p>Let \\mu_1 denote mean of car owners and \\mu_2 denote mean of non-owners of cars, then</p><p>i. H_0:\\mu_1-\\mu_2=0</p><p>H_1:\\mu_1-\\mu_2\\neq 0</p><p>ii. α = 0.05</p><p>iii. Test statistics:</p><p>Since \\sigma_1^2,\\sigma_2^2 are not given but n_1,n_2 are large, so Z-statistic will be of the form</p><p>$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{S_1^2}{n_1}+\\frac{S_2^2}{n_2}}}$</p><p>iv. Computations: Substituting values into the formula we get</p><p>$Z=\\frac{(2.54-2.70)-0}{\\sqrt{\\frac{0.40}{100}+\\frac{0.36}{100}}}=-1.84$</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 128,
+     "printedPages": [
+      247,
+      248
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 7
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

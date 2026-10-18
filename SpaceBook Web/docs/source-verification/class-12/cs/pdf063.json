@@ -1,0 +1,155 @@
+{
+ "pdfPage": 63,
+ "sections": [
+  {
+   "id": "cs12-u4-text-3",
+   "title": "Unit 4 text (3)",
+   "headingUrdu": "یونٹ 4 — متن (۳)",
+   "headingPashto": "۴ څپرکی — متن (۳)",
+   "paras": [
+    {
+     "text": "Consider the following program to demonstrate the use of if-else statement.",
+     "urdu": "if-else بیان کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د if-else بیان د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "//if-else (even/odd) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \"is even number\";\nelse\ncout << X << \" is odd number\";\ngetch();\nreturn 0;\n}",
+     "urdu": "//if-else (even/odd) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \"is even number\";\nelse\ncout << X << \" is odd number\";\ngetch();\nreturn 0;\n}",
+     "pashto": "//if-else (even/odd) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \"is even number\";\nelse\ncout << X << \" is odd number\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter a number:\n9\n9 is odd number",
+     "urdu": "Enter a number:\n9\n9 is odd number",
+     "pashto": "Enter a number:\n9\n9 is odd number",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In order to execute multiple statements, a block should be used. Consider the following program:",
+     "urdu": "متعدد بیانات چلانے کے لیے بلاک استعمال کرنا چاہیے۔ درج ذیل پروگرام پر غور کریں:",
+     "pashto": "د ډېرو بیانونو د اجرا لپاره باید بلاک وکارول شي. لاندې پروګرام ته پام وکړئ:"
+    },
+    {
+     "text": "//if-else (multiple statements) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X%2==0)\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \"is an even number\" << endl;\n}\nelse\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \" is an odd number\" << endl;\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "//if-else (multiple statements) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X%2==0)\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \"is an even number\" << endl;\n}\nelse\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \" is an odd number\" << endl;\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "//if-else (multiple statements) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X%2==0)\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \"is an even number\" << endl;\n}\nelse\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \" is an odd number\" << endl;\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter a number:\n08\nYou have entered 08\n08 is an even number",
+     "urdu": "Enter a number:\n08\nYou have entered 08\n08 is an even number",
+     "pashto": "Enter a number:\n08\nYou have entered 08\n08 is an even number",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Consider the following program to demonstrate the use of if-else statement.\n\n//if-else (even/odd) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \"is even number\";\nelse\ncout << X << \" is odd number\";\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nEnter a number:\n9\n9 is odd number\n\nIn order to execute multiple statements, a block should be used. Consider the following program:\n\n//if-else (multiple statements) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X%2==0)\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \"is an even number\" << endl;\n}\nelse\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \" is an odd number\" << endl;\n}\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nEnter a number:\n08\nYou have entered 08\n08 is an even number",
+   "urdu": "if-else بیان کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n//if-else (even/odd) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \"is even number\";\nelse\ncout << X << \" is odd number\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number:\n9\n9 is odd number\n\nمتعدد بیانات چلانے کے لیے بلاک استعمال کرنا چاہیے۔ درج ذیل پروگرام پر غور کریں:\n\n//if-else (multiple statements) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X%2==0)\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \"is an even number\" << endl;\n}\nelse\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \" is an odd number\" << endl;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number:\n08\nYou have entered 08\n08 is an even number",
+   "pashto": "د if-else بیان د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n//if-else (even/odd) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \"is even number\";\nelse\ncout << X << \" is odd number\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number:\n9\n9 is odd number\n\nد ډېرو بیانونو د اجرا لپاره باید بلاک وکارول شي. لاندې پروګرام ته پام وکړئ:\n\n//if-else (multiple statements) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X%2==0)\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \"is an even number\" << endl;\n}\nelse\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \" is an odd number\" << endl;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number:\n08\nYou have entered 08\n08 is an even number",
+   "theoryUrdu": "if-else بیان کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n//if-else (even/odd) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \"is even number\";\nelse\ncout << X << \" is odd number\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number:\n9\n9 is odd number\n\nمتعدد بیانات چلانے کے لیے بلاک استعمال کرنا چاہیے۔ درج ذیل پروگرام پر غور کریں:\n\n//if-else (multiple statements) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X%2==0)\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \"is an even number\" << endl;\n}\nelse\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \" is an odd number\" << endl;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number:\n08\nYou have entered 08\n08 is an even number",
+   "theoryPashto": "د if-else بیان د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n//if-else (even/odd) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \"is even number\";\nelse\ncout << X << \" is odd number\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number:\n9\n9 is odd number\n\nد ډېرو بیانونو د اجرا لپاره باید بلاک وکارول شي. لاندې پروګرام ته پام وکړئ:\n\n//if-else (multiple statements) program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X%2==0)\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \"is an even number\" << endl;\n}\nelse\n{\ncout << \"You have entered \" << X << endl;\ncout << X << \" is an odd number\" << endl;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number:\n08\nYou have entered 08\n08 is an even number",
+   "content": "<p>Consider the following program to demonstrate the use of if-else statement.</p><p>//if-else (even/odd) program\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint X;\ncout &lt;&lt; &quot;Enter a number: &quot;;\ncin &gt;&gt; X;\nif (X %2==0)\ncout &lt;&lt; X &lt;&lt; &quot;is even number&quot;;\nelse\ncout &lt;&lt; X &lt;&lt; &quot; is odd number&quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Enter a number:\n9\n9 is odd number</p><p>In order to execute multiple statements, a block should be used. Consider the following program:</p><p>//if-else (multiple statements) program\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint X;\ncout &lt;&lt; &quot;Enter a number: &quot;;\ncin &gt;&gt; X;\nif (X%2==0)\n{\ncout &lt;&lt; &quot;You have entered &quot; &lt;&lt; X &lt;&lt; endl;\ncout &lt;&lt; X &lt;&lt; &quot;is an even number&quot; &lt;&lt; endl;\n}\nelse\n{\ncout &lt;&lt; &quot;You have entered &quot; &lt;&lt; X &lt;&lt; endl;\ncout &lt;&lt; X &lt;&lt; &quot; is an odd number&quot; &lt;&lt; endl;\n}\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Enter a number:\n08\nYou have entered 08\n08 is an even number</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-4-2"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-4-2",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 260\" role=\"img\" aria-label=\"Flowchart 4.2: Working of If-else Structure\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"440\" height=\"260\" fill=\"#ffffff\"/><line x1=\"110\" y1=\"8\" x2=\"110\" y2=\"34\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"110,34.0 190.0,64 110,94.0 30.0,64\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"69.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Condition</text><line x1=\"190\" y1=\"64\" x2=\"290\" y2=\"64\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"240\" y=\"56\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"290.0\" y=\"44.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"350\" y=\"69.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Statement (s)</text><line x1=\"110\" y1=\"94\" x2=\"110\" y2=\"124\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"98\" y=\"114\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><rect x=\"50.0\" y=\"124.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"149.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Statement (s)</text><polyline points=\"350,84 350,200 116,200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"110\" y1=\"164\" x2=\"110\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"200\" x2=\"110\" y2=\"228\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"220.0\" y=\"252\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Flowchart 4.2: Working of If-else Structure</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 260\" role=\"img\" aria-label=\"فلو چارٹ 4.2: if-else ساخت کا عمل\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"440\" height=\"260\" fill=\"#ffffff\"/><line x1=\"110\" y1=\"8\" x2=\"110\" y2=\"34\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"110,34.0 190.0,64 110,94.0 30.0,64\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"69.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شرط</text><line x1=\"190\" y1=\"64\" x2=\"290\" y2=\"64\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"240\" y=\"56\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"290.0\" y=\"44.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"350\" y=\"69.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بیان (بیانات)</text><line x1=\"110\" y1=\"94\" x2=\"110\" y2=\"124\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"98\" y=\"114\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><rect x=\"50.0\" y=\"124.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"149.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بیان (بیانات)</text><polyline points=\"350,84 350,200 116,200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"110\" y1=\"164\" x2=\"110\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"200\" x2=\"110\" y2=\"228\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"220.0\" y=\"252\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">فلو چارٹ 4.2: if-else ساخت کا عمل</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 260\" role=\"img\" aria-label=\"۴.۲ فلوچارټ: د if-else جوړښت کار\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"440\" height=\"260\" fill=\"#ffffff\"/><line x1=\"110\" y1=\"8\" x2=\"110\" y2=\"34\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"110,34.0 190.0,64 110,94.0 30.0,64\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"69.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شرط</text><line x1=\"190\" y1=\"64\" x2=\"290\" y2=\"64\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"240\" y=\"56\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"290.0\" y=\"44.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"350\" y=\"69.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بیان (بیانونه)</text><line x1=\"110\" y1=\"94\" x2=\"110\" y2=\"124\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"98\" y=\"114\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><rect x=\"50.0\" y=\"124.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"149.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بیان (بیانونه)</text><polyline points=\"350,84 350,200 116,200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"110\" y1=\"164\" x2=\"110\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"110\" y1=\"200\" x2=\"110\" y2=\"228\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"220.0\" y=\"252\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۴.۲ فلوچارټ: د if-else جوړښت کار</text></svg>",
+     "sourceWidthRatio": 1.6923076923076923
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 63,
+     "printedPages": [
+      114,
+      115
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (3)",
+   "sourcePageLabel": "PDF 63 · p. 114–115",
+   "sourceNote": "Flowchart 4.2 is reproduced as a coded diagram.",
+   "unit": 4
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf063",
+   "unit": 4,
+   "printedPage": 115,
+   "description": "The output on p.115 shows the input echoed as “08” (an int prints as 8); the even branch string lacks a leading space (“is an even number”). Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

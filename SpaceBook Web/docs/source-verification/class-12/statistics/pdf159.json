@@ -1,0 +1,622 @@
+{
+ "pdfPage": 159,
+ "sections": [
+  {
+   "id": "stat12-p159-unequal-formulas",
+   "title": "9.3.7 Unequal sample sizes — TSS and TrSS formulas",
+   "headingUrdu": "9.3.7 غیر برابر نمونہ سائز — TSS اور TrSS کے فارمولے",
+   "headingPashto": "9.3.7 نابرابرې نمونې — د TSS او TrSS فورمولونه",
+   "paras": [
+    {
+     "text": "$TSS=\\sum_{j=1}^{k}\\sum_{i=1}^{r_j}x_{ij}^2-C.F$",
+     "urdu": "$TSS=\\sum_{j=1}^{k}\\sum_{i=1}^{r_j}x_{ij}^2-C.F$",
+     "pashto": "$TSS=\\sum_{j=1}^{k}\\sum_{i=1}^{r_j}x_{ij}^2-C.F$"
+    },
+    {
+     "text": "$T_rSS=\\sum_{j=1}^{k}\\frac{T_{.j}^2}{r_j}-C.F$",
+     "urdu": "$T_rSS=\\sum_{j=1}^{k}\\frac{T_{.j}^2}{r_j}-C.F$",
+     "pashto": "$T_rSS=\\sum_{j=1}^{k}\\frac{T_{.j}^2}{r_j}-C.F$"
+    }
+   ],
+   "theory": "TSS=\\sum_{j=1}^{k}\\sum_{i=1}^{r_j}x_{ij}^2-C.F\n\nT_rSS=\\sum_{j=1}^{k}\\frac{T_{.j}^2}{r_j}-C.F",
+   "urdu": "TSS=\\sum_{j=1}^{k}\\sum_{i=1}^{r_j}x_{ij}^2-C.F\n\nT_rSS=\\sum_{j=1}^{k}\\frac{T_{.j}^2}{r_j}-C.F",
+   "pashto": "TSS=\\sum_{j=1}^{k}\\sum_{i=1}^{r_j}x_{ij}^2-C.F\n\nT_rSS=\\sum_{j=1}^{k}\\frac{T_{.j}^2}{r_j}-C.F",
+   "theoryUrdu": "TSS=\\sum_{j=1}^{k}\\sum_{i=1}^{r_j}x_{ij}^2-C.F\n\nT_rSS=\\sum_{j=1}^{k}\\frac{T_{.j}^2}{r_j}-C.F",
+   "theoryPashto": "TSS=\\sum_{j=1}^{k}\\sum_{i=1}^{r_j}x_{ij}^2-C.F\n\nT_rSS=\\sum_{j=1}^{k}\\frac{T_{.j}^2}{r_j}-C.F",
+   "content": "<p>TSS=\\sum_{j=1}^{k}\\sum_{i=1}^{r_j}x_{ij}^2-C.F</p><p>T_rSS=\\sum_{j=1}^{k}\\frac{T_{.j}^2}{r_j}-C.F</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 159,
+     "printedPages": [
+      309
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 9
+  },
+  {
+   "id": "stat12-p159-example-9-2",
+   "title": "Example 9.2 — one-way ANOVA with unequal sample sizes (calculation)",
+   "headingUrdu": "مثال 9.2 — غیر برابر نمونہ سائز کے ساتھ یک طرفہ ANOVA (حساب)",
+   "headingPashto": "بېلګه 9.2 — د نابرابرو نمونو سره یو اړخیز ANOVA (محاسبه)",
+   "paras": [
+    {
+     "text": "Example 9.2",
+     "urdu": "مثال 9.2",
+     "pashto": "بېلګه 9.2"
+    },
+    {
+     "text": "The following observations are collected using a completely randomized design:",
+     "urdu": "درج ذیل مشاہدات مکمل تصادفی ڈیزائن استعمال کر کے جمع کیے گئے ہیں:",
+     "pashto": "لاندې مشاهدې د بشپړ تصادفي ډیزاین په کارولو راټولې شوې:"
+    },
+    {
+     "text": "Construct an ANOVA table for the data and determine whether there is a difference in the three population means. Use α = 0.01",
+     "urdu": "مواد کے لیے ANOVA جدول بنائیں اور معلوم کریں کہ کیا تینوں آبادیوں کے اوسطوں میں فرق ہے۔ α = 0.01 استعمال کریں",
+     "pashto": "د معلوماتو لپاره د ANOVA جدول جوړ کړئ او وټاکئ چې آیا د درېیو نفوسونو په منځنیو کې توپیر شته. α = 0.01 وکاروئ"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "i. $H_0:\\mu_1=\\mu_2=\\mu_3$",
+     "urdu": "i. $H_0:\\mu_1=\\mu_2=\\mu_3$",
+     "pashto": "i. $H_0:\\mu_1=\\mu_2=\\mu_3$"
+    },
+    {
+     "text": "$H_1$: Not all means are equal",
+     "urdu": "$H_1$: تمام اوسط برابر نہیں",
+     "pashto": "$H_1$: ټول منځني برابر نه دي"
+    },
+    {
+     "text": "ii. $\\alpha=0.01$",
+     "urdu": "ii. $\\alpha=0.01$",
+     "pashto": "ii. $\\alpha=0.01$"
+    },
+    {
+     "text": "iii. Test statistic to be used is",
+     "urdu": "iii. استعمال ہونے والا جانچ کا شماریہ یہ ہے",
+     "pashto": "iii. کارېدونکې د ازموینې احصاییه دا ده"
+    },
+    {
+     "text": "$$F=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$$",
+     "urdu": "$$F=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$$",
+     "pashto": "$$F=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$$"
+    },
+    {
+     "text": "iv. Calculation:",
+     "urdu": "iv. حساب:",
+     "pashto": "iv. محاسبه:"
+    },
+    {
+     "text": "$n=r_1+r_2+r_3=5+5+4=14$",
+     "urdu": "$n=r_1+r_2+r_3=5+5+4=14$",
+     "pashto": "$n=r_1+r_2+r_3=5+5+4=14$"
+    },
+    {
+     "text": "$C.F=\\frac{T_{..}^2}{n}=\\frac{(38)^2}{14}=103.1429$",
+     "urdu": "$C.F=\\frac{T_{..}^2}{n}=\\frac{(38)^2}{14}=103.1429$",
+     "pashto": "$C.F=\\frac{T_{..}^2}{n}=\\frac{(38)^2}{14}=103.1429$"
+    },
+    {
+     "text": "$TSS=\\sum_{j=1}^{3}\\sum_{i=1}^{r_j}x_{ij}^2-C.F=130-103.1429=26.8571$",
+     "urdu": "$TSS=\\sum_{j=1}^{3}\\sum_{i=1}^{r_j}x_{ij}^2-C.F=130-103.1429=26.8571$",
+     "pashto": "$TSS=\\sum_{j=1}^{3}\\sum_{i=1}^{r_j}x_{ij}^2-C.F=130-103.1429=26.8571$"
+    },
+    {
+     "text": "$T_rSS=\\sum_{j=1}^{3}\\frac{T_{.j}^2}{r_j}-C.F$",
+     "urdu": "$T_rSS=\\sum_{j=1}^{3}\\frac{T_{.j}^2}{r_j}-C.F$",
+     "pashto": "$T_rSS=\\sum_{j=1}^{3}\\frac{T_{.j}^2}{r_j}-C.F$"
+    },
+    {
+     "text": "$=\\left[\\frac{T_{.1}^2}{r_1}+\\frac{T_{.2}^2}{r_2}+\\frac{T_{.3}^2}{r_3}\\right]-C.F$",
+     "urdu": "$=\\left[\\frac{T_{.1}^2}{r_1}+\\frac{T_{.2}^2}{r_2}+\\frac{T_{.3}^2}{r_3}\\right]-C.F$",
+     "pashto": "$=\\left[\\frac{T_{.1}^2}{r_1}+\\frac{T_{.2}^2}{r_2}+\\frac{T_{.3}^2}{r_3}\\right]-C.F$"
+    }
+   ],
+   "theory": "Example 9.2\n\nThe following observations are collected using a completely randomized design:\n\nConstruct an ANOVA table for the data and determine whether there is a difference in the three population means. Use α = 0.01\n\nSolution:\n\ni. H_0:\\mu_1=\\mu_2=\\mu_3\n\nH_1: Not all means are equal\n\nii. \\alpha=0.01\n\niii. Test statistic to be used is\n\n$F=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$\n\niv. Calculation:\n\nn=r_1+r_2+r_3=5+5+4=14\n\nC.F=\\frac{T_{..}^2}{n}=\\frac{(38)^2}{14}=103.1429\n\nTSS=\\sum_{j=1}^{3}\\sum_{i=1}^{r_j}x_{ij}^2-C.F=130-103.1429=26.8571\n\nT_rSS=\\sum_{j=1}^{3}\\frac{T_{.j}^2}{r_j}-C.F\n\n=\\left[\\frac{T_{.1}^2}{r_1}+\\frac{T_{.2}^2}{r_2}+\\frac{T_{.3}^2}{r_3}\\right]-C.F",
+   "urdu": "مثال 9.2\n\nدرج ذیل مشاہدات مکمل تصادفی ڈیزائن استعمال کر کے جمع کیے گئے ہیں:\n\nمواد کے لیے ANOVA جدول بنائیں اور معلوم کریں کہ کیا تینوں آبادیوں کے اوسطوں میں فرق ہے۔ α = 0.01 استعمال کریں\n\nحل:\n\ni. H_0:\\mu_1=\\mu_2=\\mu_3\n\nH_1: تمام اوسط برابر نہیں\n\nii. \\alpha=0.01\n\niii. استعمال ہونے والا جانچ کا شماریہ یہ ہے\n\n$F=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$\n\niv. حساب:\n\nn=r_1+r_2+r_3=5+5+4=14\n\nC.F=\\frac{T_{..}^2}{n}=\\frac{(38)^2}{14}=103.1429\n\nTSS=\\sum_{j=1}^{3}\\sum_{i=1}^{r_j}x_{ij}^2-C.F=130-103.1429=26.8571\n\nT_rSS=\\sum_{j=1}^{3}\\frac{T_{.j}^2}{r_j}-C.F\n\n=\\left[\\frac{T_{.1}^2}{r_1}+\\frac{T_{.2}^2}{r_2}+\\frac{T_{.3}^2}{r_3}\\right]-C.F",
+   "pashto": "بېلګه 9.2\n\nلاندې مشاهدې د بشپړ تصادفي ډیزاین په کارولو راټولې شوې:\n\nد معلوماتو لپاره د ANOVA جدول جوړ کړئ او وټاکئ چې آیا د درېیو نفوسونو په منځنیو کې توپیر شته. α = 0.01 وکاروئ\n\nحل:\n\ni. H_0:\\mu_1=\\mu_2=\\mu_3\n\nH_1: ټول منځني برابر نه دي\n\nii. \\alpha=0.01\n\niii. کارېدونکې د ازموینې احصاییه دا ده\n\n$F=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$\n\niv. محاسبه:\n\nn=r_1+r_2+r_3=5+5+4=14\n\nC.F=\\frac{T_{..}^2}{n}=\\frac{(38)^2}{14}=103.1429\n\nTSS=\\sum_{j=1}^{3}\\sum_{i=1}^{r_j}x_{ij}^2-C.F=130-103.1429=26.8571\n\nT_rSS=\\sum_{j=1}^{3}\\frac{T_{.j}^2}{r_j}-C.F\n\n=\\left[\\frac{T_{.1}^2}{r_1}+\\frac{T_{.2}^2}{r_2}+\\frac{T_{.3}^2}{r_3}\\right]-C.F",
+   "theoryUrdu": "مثال 9.2\n\nدرج ذیل مشاہدات مکمل تصادفی ڈیزائن استعمال کر کے جمع کیے گئے ہیں:\n\nمواد کے لیے ANOVA جدول بنائیں اور معلوم کریں کہ کیا تینوں آبادیوں کے اوسطوں میں فرق ہے۔ α = 0.01 استعمال کریں\n\nحل:\n\ni. H_0:\\mu_1=\\mu_2=\\mu_3\n\nH_1: تمام اوسط برابر نہیں\n\nii. \\alpha=0.01\n\niii. استعمال ہونے والا جانچ کا شماریہ یہ ہے\n\n$F=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$\n\niv. حساب:\n\nn=r_1+r_2+r_3=5+5+4=14\n\nC.F=\\frac{T_{..}^2}{n}=\\frac{(38)^2}{14}=103.1429\n\nTSS=\\sum_{j=1}^{3}\\sum_{i=1}^{r_j}x_{ij}^2-C.F=130-103.1429=26.8571\n\nT_rSS=\\sum_{j=1}^{3}\\frac{T_{.j}^2}{r_j}-C.F\n\n=\\left[\\frac{T_{.1}^2}{r_1}+\\frac{T_{.2}^2}{r_2}+\\frac{T_{.3}^2}{r_3}\\right]-C.F",
+   "theoryPashto": "بېلګه 9.2\n\nلاندې مشاهدې د بشپړ تصادفي ډیزاین په کارولو راټولې شوې:\n\nد معلوماتو لپاره د ANOVA جدول جوړ کړئ او وټاکئ چې آیا د درېیو نفوسونو په منځنیو کې توپیر شته. α = 0.01 وکاروئ\n\nحل:\n\ni. H_0:\\mu_1=\\mu_2=\\mu_3\n\nH_1: ټول منځني برابر نه دي\n\nii. \\alpha=0.01\n\niii. کارېدونکې د ازموینې احصاییه دا ده\n\n$F=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$\n\niv. محاسبه:\n\nn=r_1+r_2+r_3=5+5+4=14\n\nC.F=\\frac{T_{..}^2}{n}=\\frac{(38)^2}{14}=103.1429\n\nTSS=\\sum_{j=1}^{3}\\sum_{i=1}^{r_j}x_{ij}^2-C.F=130-103.1429=26.8571\n\nT_rSS=\\sum_{j=1}^{3}\\frac{T_{.j}^2}{r_j}-C.F\n\n=\\left[\\frac{T_{.1}^2}{r_1}+\\frac{T_{.2}^2}{r_2}+\\frac{T_{.3}^2}{r_3}\\right]-C.F",
+   "content": "<p>Example 9.2</p><p>The following observations are collected using a completely randomized design:</p><p>Construct an ANOVA table for the data and determine whether there is a difference in the three population means. Use α = 0.01</p><p>Solution:</p><p>i. H_0:\\mu_1=\\mu_2=\\mu_3</p><p>H_1: Not all means are equal</p><p>ii. \\alpha=0.01</p><p>iii. Test statistic to be used is</p><p>$F=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$</p><p>iv. Calculation:</p><p>n=r_1+r_2+r_3=5+5+4=14</p><p>C.F=\\frac{T_{..}^2}{n}=\\frac{(38)^2}{14}=103.1429</p><p>TSS=\\sum_{j=1}^{3}\\sum_{i=1}^{r_j}x_{ij}^2-C.F=130-103.1429=26.8571</p><p>T_rSS=\\sum_{j=1}^{3}\\frac{T_{.j}^2}{r_j}-C.F</p><p>=\\left[\\frac{T_{.1}^2}{r_1}+\\frac{T_{.2}^2}{r_2}+\\frac{T_{.3}^2}{r_3}\\right]-C.F</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex9-2"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex9-2-calc"
+    },
+    {
+     "type": "lines",
+     "indices": [
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex9-2",
+     "headers": [
+      "Sample1",
+      "Sample 2",
+      "Sample3"
+     ],
+     "rows": [
+      [
+       "3",
+       "4",
+       "2"
+      ],
+      [
+       "2",
+       "3",
+       "0"
+      ],
+      [
+       "4",
+       "5",
+       "2"
+      ],
+      [
+       "3",
+       "2",
+       "1"
+      ],
+      [
+       "2",
+       "5",
+       ""
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "نمونہ 1",
+        "نمونہ 2",
+        "نمونہ 3"
+       ],
+       "rows": [
+        [
+         "3",
+         "4",
+         "2"
+        ],
+        [
+         "2",
+         "3",
+         "0"
+        ],
+        [
+         "4",
+         "5",
+         "2"
+        ],
+        [
+         "3",
+         "2",
+         "1"
+        ],
+        [
+         "2",
+         "5",
+         ""
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "نمونه 1",
+        "نمونه 2",
+        "نمونه 3"
+       ],
+       "rows": [
+        [
+         "3",
+         "4",
+         "2"
+        ],
+        [
+         "2",
+         "3",
+         "0"
+        ],
+        [
+         "4",
+         "5",
+         "2"
+        ],
+        [
+         "3",
+         "2",
+         "1"
+        ],
+        [
+         "2",
+         "5",
+         ""
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex9-2-calc",
+     "headers": [
+      "",
+      "$x_1$",
+      "$x_1^2$",
+      "$x_2$",
+      "$x_2^2$",
+      "$x_3$",
+      "$x_3^2$",
+      "Total"
+     ],
+     "rows": [
+      [
+       "",
+       "3",
+       "9",
+       "4",
+       "16",
+       "2",
+       "4",
+       ""
+      ],
+      [
+       "",
+       "2",
+       "4",
+       "3",
+       "9",
+       "0",
+       "0",
+       ""
+      ],
+      [
+       "",
+       "4",
+       "16",
+       "5",
+       "25",
+       "2",
+       "4",
+       ""
+      ],
+      [
+       "",
+       "3",
+       "9",
+       "2",
+       "4",
+       "1",
+       "1",
+       ""
+      ],
+      [
+       "",
+       "2",
+       "4",
+       "5",
+       "25",
+       "",
+       "",
+       ""
+      ],
+      [
+       "$T_{.j}$",
+       "14",
+       "↓",
+       "19",
+       "↓",
+       "5",
+       "↓",
+       "$38=T_{..}$"
+      ],
+      [
+       "$T^2_{.j}$",
+       "196",
+       "",
+       "361",
+       "",
+       "25",
+       "",
+       ""
+      ],
+      [
+       "$\\sum_{i=1}^{5}x_j^2$",
+       "",
+       "42",
+       "",
+       "79",
+       "",
+       "9",
+       "$130=\\sum\\sum x_{ij}^2$"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "",
+        "$x_1$",
+        "$x_1^2$",
+        "$x_2$",
+        "$x_2^2$",
+        "$x_3$",
+        "$x_3^2$",
+        "کل"
+       ],
+       "rows": [
+        [
+         "",
+         "3",
+         "9",
+         "4",
+         "16",
+         "2",
+         "4",
+         ""
+        ],
+        [
+         "",
+         "2",
+         "4",
+         "3",
+         "9",
+         "0",
+         "0",
+         ""
+        ],
+        [
+         "",
+         "4",
+         "16",
+         "5",
+         "25",
+         "2",
+         "4",
+         ""
+        ],
+        [
+         "",
+         "3",
+         "9",
+         "2",
+         "4",
+         "1",
+         "1",
+         ""
+        ],
+        [
+         "",
+         "2",
+         "4",
+         "5",
+         "25",
+         "",
+         "",
+         ""
+        ],
+        [
+         "$T_{.j}$",
+         "14",
+         "↓",
+         "19",
+         "↓",
+         "5",
+         "↓",
+         "$38=T_{..}$"
+        ],
+        [
+         "$T^2_{.j}$",
+         "196",
+         "",
+         "361",
+         "",
+         "25",
+         "",
+         ""
+        ],
+        [
+         "$\\sum_{i=1}^{5}x_j^2$",
+         "",
+         "42",
+         "",
+         "79",
+         "",
+         "9",
+         "$130=\\sum\\sum x_{ij}^2$"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "",
+        "$x_1$",
+        "$x_1^2$",
+        "$x_2$",
+        "$x_2^2$",
+        "$x_3$",
+        "$x_3^2$",
+        "ټول"
+       ],
+       "rows": [
+        [
+         "",
+         "3",
+         "9",
+         "4",
+         "16",
+         "2",
+         "4",
+         ""
+        ],
+        [
+         "",
+         "2",
+         "4",
+         "3",
+         "9",
+         "0",
+         "0",
+         ""
+        ],
+        [
+         "",
+         "4",
+         "16",
+         "5",
+         "25",
+         "2",
+         "4",
+         ""
+        ],
+        [
+         "",
+         "3",
+         "9",
+         "2",
+         "4",
+         "1",
+         "1",
+         ""
+        ],
+        [
+         "",
+         "2",
+         "4",
+         "5",
+         "25",
+         "",
+         "",
+         ""
+        ],
+        [
+         "$T_{.j}$",
+         "14",
+         "↓",
+         "19",
+         "↓",
+         "5",
+         "↓",
+         "$38=T_{..}$"
+        ],
+        [
+         "$T^2_{.j}$",
+         "196",
+         "",
+         "361",
+         "",
+         "25",
+         "",
+         ""
+        ],
+        [
+         "$\\sum_{i=1}^{5}x_j^2$",
+         "",
+         "42",
+         "",
+         "79",
+         "",
+         "9",
+         "$130=\\sum\\sum x_{ij}^2$"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 159,
+     "printedPages": [
+      309,
+      310
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 9
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

@@ -1,0 +1,428 @@
+{
+ "pdfPage": 12,
+ "sections": [
+  {
+   "id": "stat12-p012-addition-exclusive",
+   "title": "Examples 1.13–1.15 and 1.3.1 addition law (mutually exclusive)",
+   "headingUrdu": "مثالیں 1.13–1.15 اور 1.3.1 قانونِ جمع (باہم مانع)",
+   "headingPashto": "بېلګې 1.13–1.15 او 1.3.1 د جمع قانون (یو بل منع کوونکې)",
+   "paras": [
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$$n(S)=2^n=2^5=32$$",
+     "urdu": "$$n(S)=2^n=2^5=32$$",
+     "pashto": "$$n(S)=2^n=2^5=32$$"
+    },
+    {
+     "text": "Let A: at least one head.",
+     "urdu": "فرض کریں A: کم از کم ایک چِت۔",
+     "pashto": "فرض کړئ A: لږ تر لږه یو سر."
+    },
+    {
+     "text": "It will be tedious to list the sample space and pick out the favourable results for at least one head. Alternatively,",
+     "urdu": "نمونہ فضا لکھ کر کم از کم ایک چِت کے موافق نتائج چننا دقت طلب ہوگا۔ اس کے بجائے،",
+     "pashto": "د نمونوي فضا لیکل او د لږ تر لږه یو سر لپاره د موافقو پایلو بېلول به ستړی کوونکی وي. پر ځای یې،"
+    },
+    {
+     "text": "$\\overline{A}$: No head",
+     "urdu": "$\\overline{A}$: کوئی چِت نہیں",
+     "pashto": "$\\overline{A}$: هېڅ سر نه"
+    },
+    {
+     "text": "$\\overline{A}=(TTTTT)$",
+     "urdu": "$\\overline{A}=(TTTTT)$",
+     "pashto": "$\\overline{A}=(TTTTT)$"
+    },
+    {
+     "text": "$n(\\overline{A})=1,$",
+     "urdu": "$n(\\overline{A})=1,$",
+     "pashto": "$n(\\overline{A})=1,$"
+    },
+    {
+     "text": "$P(\\overline{A})=\\frac{n(\\overline{A})}{n(S)}=\\frac{1}{32}$",
+     "urdu": "$P(\\overline{A})=\\frac{n(\\overline{A})}{n(S)}=\\frac{1}{32}$",
+     "pashto": "$P(\\overline{A})=\\frac{n(\\overline{A})}{n(S)}=\\frac{1}{32}$"
+    },
+    {
+     "text": "Finally, we can obtain the required probability of A by using law of complementation",
+     "urdu": "آخر میں ہم قانونِ تکمیل استعمال کر کے A کا مطلوبہ احتمال حاصل کر سکتے ہیں",
+     "pashto": "په پای کې د بشپړوونې قانون په کارولو سره د A اړین احتمال لاسته راوړلای شو"
+    },
+    {
+     "text": "$$P(A)=1-P(\\overline{A})=1-\\frac{1}{32}=\\frac{31}{32}=0.97$$",
+     "urdu": "$$P(A)=1-P(\\overline{A})=1-\\frac{1}{32}=\\frac{31}{32}=0.97$$",
+     "pashto": "$$P(A)=1-P(\\overline{A})=1-\\frac{1}{32}=\\frac{31}{32}=0.97$$"
+    },
+    {
+     "text": "Example 1.14",
+     "urdu": "مثال 1.14",
+     "pashto": "بېلګه 1.14"
+    },
+    {
+     "text": "What is the probability that a randomly selected family of four children will have at least one boy?",
+     "urdu": "تصادفی طور پر منتخب کیے گئے چار بچوں والے خاندان میں کم از کم ایک لڑکا ہونے کا احتمال کیا ہے؟",
+     "pashto": "احتمال یې څومره دی چې په تصادفي ډول ټاکل شوې څلور ماشومه کورنۍ کې لږ تر لږه یو هلک وي؟"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$$n(S)=2^4=16$$",
+     "urdu": "$$n(S)=2^4=16$$",
+     "pashto": "$$n(S)=2^4=16$$"
+    },
+    {
+     "text": "Let E: at least one boy in the family",
+     "urdu": "فرض کریں E: خاندان میں کم از کم ایک لڑکا",
+     "pashto": "فرض کړئ E: په کورنۍ کې لږ تر لږه یو هلک"
+    },
+    {
+     "text": "Then $\\overline{E}$ = no boy i.e. all girls",
+     "urdu": "تب $\\overline{E}$ = کوئی لڑکا نہیں یعنی سب لڑکیاں",
+     "pashto": "بیا $\\overline{E}$ = هېڅ هلک نه یعنې ټولې نجونې"
+    },
+    {
+     "text": "$\\overline{E}=\\{g\\,g\\,g\\,g\\}$",
+     "urdu": "$\\overline{E}=\\{g\\,g\\,g\\,g\\}$",
+     "pashto": "$\\overline{E}=\\{g\\,g\\,g\\,g\\}$"
+    },
+    {
+     "text": "$P(\\overline{E})=\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}=\\frac{1}{16}$",
+     "urdu": "$P(\\overline{E})=\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}=\\frac{1}{16}$",
+     "pashto": "$P(\\overline{E})=\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}=\\frac{1}{16}$"
+    },
+    {
+     "text": "The required probability of E by complementation law is given by",
+     "urdu": "قانونِ تکمیل کے ذریعے E کا مطلوبہ احتمال یہ ہے",
+     "pashto": "د بشپړوونې د قانون له مخې د E اړین احتمال دا دی"
+    },
+    {
+     "text": "$$P(E)=1-P(\\overline{E})=1-\\frac{1}{16}=\\frac{15}{16}=0.94$$",
+     "urdu": "$$P(E)=1-P(\\overline{E})=1-\\frac{1}{16}=\\frac{15}{16}=0.94$$",
+     "pashto": "$$P(E)=1-P(\\overline{E})=1-\\frac{1}{16}=\\frac{15}{16}=0.94$$"
+    },
+    {
+     "text": "1.3.1 Addition law of probability for mutually exclusive events",
+     "urdu": "1.3.1 باہم مانع واقعات کے لیے احتمال کا قانونِ جمع",
+     "pashto": "1.3.1 د یو بل منع کوونکو پېښو لپاره د احتمال د جمع قانون"
+    },
+    {
+     "text": "Statement:",
+     "urdu": "بیان:",
+     "pashto": "بیان:"
+    },
+    {
+     "text": "If A and B are two mutually exclusive events, then the probability that any one of them happens is equal to the sum of individual probabilities of A and B. In symbol, $P(A\\text{ or }B)=P(A\\cup B)=P(A)+P(B)$",
+     "urdu": "اگر A اور B دو باہم مانع واقعات ہوں تو ان میں سے کسی ایک کے واقع ہونے کا احتمال A اور B کے انفرادی احتمالات کے مجموعے کے برابر ہوتا ہے۔ علامتی طور پر $P(A\\text{ or }B)=P(A\\cup B)=P(A)+P(B)$",
+     "pashto": "که A او B دوه یو بل منع کوونکې پېښې وي، نو د هغو څخه د یوې د رامنځته کېدو احتمال د A او B د جلا جلا احتمالونو له مجموعې سره برابر دی. په نښو کې $P(A\\text{ or }B)=P(A\\cup B)=P(A)+P(B)$"
+    },
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "Let n be the total number of sample points in the sample space. Let $m_1$ be the favourable cases to the occurrence of an event A, then $P(A)=\\frac{m_1}{n}$. Let $m_2$ be the favourable cases to B, so $P(B)=\\frac{m_2}{n}$. Since A and B are mutually exclusive events, therefore, favourable cases to (A or B) are equal to $m_1+m_2$.",
+     "urdu": "فرض کریں n نمونہ فضا کے نمونہ نقاط کی کل تعداد ہے۔ فرض کریں $m_1$ واقعہ A کے وقوع کے موافق حالات ہیں، تو $P(A)=\\frac{m_1}{n}$۔ فرض کریں $m_2$ واقعہ B کے موافق حالات ہیں، تو $P(B)=\\frac{m_2}{n}$۔ چونکہ A اور B باہم مانع ہیں، اس لیے (A یا B) کے موافق حالات $m_1+m_2$ کے برابر ہیں۔",
+     "pashto": "فرض کړئ n د نمونوي فضا د نمونوي ټکو ټول شمېر دی. فرض کړئ $m_1$ د A پېښې د رامنځته کېدو موافق حالتونه دي، نو $P(A)=\\frac{m_1}{n}$. فرض کړئ $m_2$ د B موافق حالتونه دي، نو $P(B)=\\frac{m_2}{n}$. څرنګه چې A او B یو بل منع کوونکې دي، نو د (A یا B) موافق حالتونه له $m_1+m_2$ سره برابر دي."
+    },
+    {
+     "text": "Hence $P(A\\text{ or }B)=P(A\\cup B)=\\frac{m_1+m_2}{n}=\\frac{m_1}{n}+\\frac{m_2}{n}=P(A)+P(B)$",
+     "urdu": "لہٰذا $P(A\\text{ or }B)=P(A\\cup B)=\\frac{m_1+m_2}{n}=\\frac{m_1}{n}+\\frac{m_2}{n}=P(A)+P(B)$",
+     "pashto": "نو $P(A\\text{ or }B)=P(A\\cup B)=\\frac{m_1+m_2}{n}=\\frac{m_1}{n}+\\frac{m_2}{n}=P(A)+P(B)$"
+    },
+    {
+     "text": "Example 1.15",
+     "urdu": "مثال 1.15",
+     "pashto": "بېلګه 1.15"
+    },
+    {
+     "text": "A card is drawn from an ordinary deck of playing cards. What is the probability that the card will be either a king or a jack?",
+     "urdu": "تاش کی ایک عام گڈی سے ایک پتا نکالا جاتا ہے۔ احتمال کیا ہے کہ پتا یا تو بادشاہ ہو یا غلام؟",
+     "pashto": "د لوبې د کارتونو له یوې عادي ګډۍ څخه یو کارت راایستل کېږي. احتمال یې څومره دی چې کارت یا باچا وي یا غلام؟"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Let the event king be denoted by A and the event jack be denoted by B. These are mutually exclusive events as both cannot occur at a time. Thus we use addition law for mutually exclusive events i.e. $P(A\\text{ or }B)=P(A)+P(B)$",
+     "urdu": "فرض کریں بادشاہ کا واقعہ A اور غلام کا واقعہ B ہے۔ یہ باہم مانع واقعات ہیں کیونکہ دونوں ایک وقت میں واقع نہیں ہو سکتے۔ لہٰذا ہم باہم مانع واقعات کا قانونِ جمع استعمال کرتے ہیں یعنی $P(A\\text{ or }B)=P(A)+P(B)$",
+     "pashto": "فرض کړئ د باچا پېښه په A او د غلام پېښه په B ښودل کېږي. دا یو بل منع کوونکې پېښې دي ځکه چې دواړه په یو وخت نه شي رامنځته کېدای. نو د یو بل منع کوونکو پېښو د جمع قانون کاروو یعنې $P(A\\text{ or }B)=P(A)+P(B)$"
+    },
+    {
+     "text": "Now $n(S)={}^{52}_{1}C=52$",
+     "urdu": "اب $n(S)={}^{52}_{1}C=52$",
+     "pashto": "اوس $n(S)={}^{52}_{1}C=52$"
+    },
+    {
+     "text": "Let A: card is king",
+     "urdu": "فرض کریں A: پتا بادشاہ ہے",
+     "pashto": "فرض کړئ A: کارت باچا دی"
+    },
+    {
+     "text": "$n(A)={}^{4}_{1}C=4$",
+     "urdu": "$n(A)={}^{4}_{1}C=4$",
+     "pashto": "$n(A)={}^{4}_{1}C=4$"
+    },
+    {
+     "text": "$P(A)=\\frac{n(A)}{n(S)}=\\frac{4}{52}$",
+     "urdu": "$P(A)=\\frac{n(A)}{n(S)}=\\frac{4}{52}$",
+     "pashto": "$P(A)=\\frac{n(A)}{n(S)}=\\frac{4}{52}$"
+    },
+    {
+     "text": "Let B: card is a jack",
+     "urdu": "فرض کریں B: پتا غلام ہے",
+     "pashto": "فرض کړئ B: کارت غلام دی"
+    },
+    {
+     "text": "$$n(B)={}^{4}_{1}C=4$$",
+     "urdu": "$$n(B)={}^{4}_{1}C=4$$",
+     "pashto": "$$n(B)={}^{4}_{1}C=4$$"
+    }
+   ],
+   "theory": "Solution:\n\n$n(S)=2^n=2^5=32$\n\nLet A: at least one head.\n\nIt will be tedious to list the sample space and pick out the favourable results for at least one head. Alternatively,\n\n\\overline{A}: No head\n\n\\overline{A}=(TTTTT)\n\nn(\\overline{A})=1,\n\nP(\\overline{A})=\\frac{n(\\overline{A})}{n(S)}=\\frac{1}{32}\n\nFinally, we can obtain the required probability of A by using law of complementation\n\n$P(A)=1-P(\\overline{A})=1-\\frac{1}{32}=\\frac{31}{32}=0.97$\n\nExample 1.14\n\nWhat is the probability that a randomly selected family of four children will have at least one boy?\n\nSolution:\n\n$n(S)=2^4=16$\n\nLet E: at least one boy in the family\n\nThen \\overline{E} = no boy i.e. all girls\n\n\\overline{E}=\\{g\\,g\\,g\\,g\\}\n\nP(\\overline{E})=\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}=\\frac{1}{16}\n\nThe required probability of E by complementation law is given by\n\n$P(E)=1-P(\\overline{E})=1-\\frac{1}{16}=\\frac{15}{16}=0.94$\n\n1.3.1 Addition law of probability for mutually exclusive events\n\nStatement:\n\nIf A and B are two mutually exclusive events, then the probability that any one of them happens is equal to the sum of individual probabilities of A and B. In symbol, P(A\\text{ or }B)=P(A\\cup B)=P(A)+P(B)\n\nProof:\n\nLet n be the total number of sample points in the sample space. Let m_1 be the favourable cases to the occurrence of an event A, then P(A)=\\frac{m_1}{n}. Let m_2 be the favourable cases to B, so P(B)=\\frac{m_2}{n}. Since A and B are mutually exclusive events, therefore, favourable cases to (A or B) are equal to m_1+m_2.\n\nHence P(A\\text{ or }B)=P(A\\cup B)=\\frac{m_1+m_2}{n}=\\frac{m_1}{n}+\\frac{m_2}{n}=P(A)+P(B)\n\nExample 1.15\n\nA card is drawn from an ordinary deck of playing cards. What is the probability that the card will be either a king or a jack?\n\nSolution:\n\nLet the event king be denoted by A and the event jack be denoted by B. These are mutually exclusive events as both cannot occur at a time. Thus we use addition law for mutually exclusive events i.e. P(A\\text{ or }B)=P(A)+P(B)\n\nNow n(S)={}^{52}_{1}C=52\n\nLet A: card is king\n\nn(A)={}^{4}_{1}C=4\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{4}{52}\n\nLet B: card is a jack\n\n$n(B)={}^{4}_{1}C=4$",
+   "urdu": "حل:\n\n$n(S)=2^n=2^5=32$\n\nفرض کریں A: کم از کم ایک چِت۔\n\nنمونہ فضا لکھ کر کم از کم ایک چِت کے موافق نتائج چننا دقت طلب ہوگا۔ اس کے بجائے،\n\n\\overline{A}: کوئی چِت نہیں\n\n\\overline{A}=(TTTTT)\n\nn(\\overline{A})=1,\n\nP(\\overline{A})=\\frac{n(\\overline{A})}{n(S)}=\\frac{1}{32}\n\nآخر میں ہم قانونِ تکمیل استعمال کر کے A کا مطلوبہ احتمال حاصل کر سکتے ہیں\n\n$P(A)=1-P(\\overline{A})=1-\\frac{1}{32}=\\frac{31}{32}=0.97$\n\nمثال 1.14\n\nتصادفی طور پر منتخب کیے گئے چار بچوں والے خاندان میں کم از کم ایک لڑکا ہونے کا احتمال کیا ہے؟\n\nحل:\n\n$n(S)=2^4=16$\n\nفرض کریں E: خاندان میں کم از کم ایک لڑکا\n\nتب \\overline{E} = کوئی لڑکا نہیں یعنی سب لڑکیاں\n\n\\overline{E}=\\{g\\,g\\,g\\,g\\}\n\nP(\\overline{E})=\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}=\\frac{1}{16}\n\nقانونِ تکمیل کے ذریعے E کا مطلوبہ احتمال یہ ہے\n\n$P(E)=1-P(\\overline{E})=1-\\frac{1}{16}=\\frac{15}{16}=0.94$\n\n1.3.1 باہم مانع واقعات کے لیے احتمال کا قانونِ جمع\n\nبیان:\n\nاگر A اور B دو باہم مانع واقعات ہوں تو ان میں سے کسی ایک کے واقع ہونے کا احتمال A اور B کے انفرادی احتمالات کے مجموعے کے برابر ہوتا ہے۔ علامتی طور پر P(A\\text{ or }B)=P(A\\cup B)=P(A)+P(B)\n\nثبوت:\n\nفرض کریں n نمونہ فضا کے نمونہ نقاط کی کل تعداد ہے۔ فرض کریں m_1 واقعہ A کے وقوع کے موافق حالات ہیں، تو P(A)=\\frac{m_1}{n}۔ فرض کریں m_2 واقعہ B کے موافق حالات ہیں، تو P(B)=\\frac{m_2}{n}۔ چونکہ A اور B باہم مانع ہیں، اس لیے (A یا B) کے موافق حالات m_1+m_2 کے برابر ہیں۔\n\nلہٰذا P(A\\text{ or }B)=P(A\\cup B)=\\frac{m_1+m_2}{n}=\\frac{m_1}{n}+\\frac{m_2}{n}=P(A)+P(B)\n\nمثال 1.15\n\nتاش کی ایک عام گڈی سے ایک پتا نکالا جاتا ہے۔ احتمال کیا ہے کہ پتا یا تو بادشاہ ہو یا غلام؟\n\nحل:\n\nفرض کریں بادشاہ کا واقعہ A اور غلام کا واقعہ B ہے۔ یہ باہم مانع واقعات ہیں کیونکہ دونوں ایک وقت میں واقع نہیں ہو سکتے۔ لہٰذا ہم باہم مانع واقعات کا قانونِ جمع استعمال کرتے ہیں یعنی P(A\\text{ or }B)=P(A)+P(B)\n\nاب n(S)={}^{52}_{1}C=52\n\nفرض کریں A: پتا بادشاہ ہے\n\nn(A)={}^{4}_{1}C=4\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{4}{52}\n\nفرض کریں B: پتا غلام ہے\n\n$n(B)={}^{4}_{1}C=4$",
+   "pashto": "حل:\n\n$n(S)=2^n=2^5=32$\n\nفرض کړئ A: لږ تر لږه یو سر.\n\nد نمونوي فضا لیکل او د لږ تر لږه یو سر لپاره د موافقو پایلو بېلول به ستړی کوونکی وي. پر ځای یې،\n\n\\overline{A}: هېڅ سر نه\n\n\\overline{A}=(TTTTT)\n\nn(\\overline{A})=1,\n\nP(\\overline{A})=\\frac{n(\\overline{A})}{n(S)}=\\frac{1}{32}\n\nپه پای کې د بشپړوونې قانون په کارولو سره د A اړین احتمال لاسته راوړلای شو\n\n$P(A)=1-P(\\overline{A})=1-\\frac{1}{32}=\\frac{31}{32}=0.97$\n\nبېلګه 1.14\n\nاحتمال یې څومره دی چې په تصادفي ډول ټاکل شوې څلور ماشومه کورنۍ کې لږ تر لږه یو هلک وي؟\n\nحل:\n\n$n(S)=2^4=16$\n\nفرض کړئ E: په کورنۍ کې لږ تر لږه یو هلک\n\nبیا \\overline{E} = هېڅ هلک نه یعنې ټولې نجونې\n\n\\overline{E}=\\{g\\,g\\,g\\,g\\}\n\nP(\\overline{E})=\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}=\\frac{1}{16}\n\nد بشپړوونې د قانون له مخې د E اړین احتمال دا دی\n\n$P(E)=1-P(\\overline{E})=1-\\frac{1}{16}=\\frac{15}{16}=0.94$\n\n1.3.1 د یو بل منع کوونکو پېښو لپاره د احتمال د جمع قانون\n\nبیان:\n\nکه A او B دوه یو بل منع کوونکې پېښې وي، نو د هغو څخه د یوې د رامنځته کېدو احتمال د A او B د جلا جلا احتمالونو له مجموعې سره برابر دی. په نښو کې P(A\\text{ or }B)=P(A\\cup B)=P(A)+P(B)\n\nثبوت:\n\nفرض کړئ n د نمونوي فضا د نمونوي ټکو ټول شمېر دی. فرض کړئ m_1 د A پېښې د رامنځته کېدو موافق حالتونه دي، نو P(A)=\\frac{m_1}{n}. فرض کړئ m_2 د B موافق حالتونه دي، نو P(B)=\\frac{m_2}{n}. څرنګه چې A او B یو بل منع کوونکې دي، نو د (A یا B) موافق حالتونه له m_1+m_2 سره برابر دي.\n\nنو P(A\\text{ or }B)=P(A\\cup B)=\\frac{m_1+m_2}{n}=\\frac{m_1}{n}+\\frac{m_2}{n}=P(A)+P(B)\n\nبېلګه 1.15\n\nد لوبې د کارتونو له یوې عادي ګډۍ څخه یو کارت راایستل کېږي. احتمال یې څومره دی چې کارت یا باچا وي یا غلام؟\n\nحل:\n\nفرض کړئ د باچا پېښه په A او د غلام پېښه په B ښودل کېږي. دا یو بل منع کوونکې پېښې دي ځکه چې دواړه په یو وخت نه شي رامنځته کېدای. نو د یو بل منع کوونکو پېښو د جمع قانون کاروو یعنې P(A\\text{ or }B)=P(A)+P(B)\n\nاوس n(S)={}^{52}_{1}C=52\n\nفرض کړئ A: کارت باچا دی\n\nn(A)={}^{4}_{1}C=4\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{4}{52}\n\nفرض کړئ B: کارت غلام دی\n\n$n(B)={}^{4}_{1}C=4$",
+   "theoryUrdu": "حل:\n\n$n(S)=2^n=2^5=32$\n\nفرض کریں A: کم از کم ایک چِت۔\n\nنمونہ فضا لکھ کر کم از کم ایک چِت کے موافق نتائج چننا دقت طلب ہوگا۔ اس کے بجائے،\n\n\\overline{A}: کوئی چِت نہیں\n\n\\overline{A}=(TTTTT)\n\nn(\\overline{A})=1,\n\nP(\\overline{A})=\\frac{n(\\overline{A})}{n(S)}=\\frac{1}{32}\n\nآخر میں ہم قانونِ تکمیل استعمال کر کے A کا مطلوبہ احتمال حاصل کر سکتے ہیں\n\n$P(A)=1-P(\\overline{A})=1-\\frac{1}{32}=\\frac{31}{32}=0.97$\n\nمثال 1.14\n\nتصادفی طور پر منتخب کیے گئے چار بچوں والے خاندان میں کم از کم ایک لڑکا ہونے کا احتمال کیا ہے؟\n\nحل:\n\n$n(S)=2^4=16$\n\nفرض کریں E: خاندان میں کم از کم ایک لڑکا\n\nتب \\overline{E} = کوئی لڑکا نہیں یعنی سب لڑکیاں\n\n\\overline{E}=\\{g\\,g\\,g\\,g\\}\n\nP(\\overline{E})=\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}=\\frac{1}{16}\n\nقانونِ تکمیل کے ذریعے E کا مطلوبہ احتمال یہ ہے\n\n$P(E)=1-P(\\overline{E})=1-\\frac{1}{16}=\\frac{15}{16}=0.94$\n\n1.3.1 باہم مانع واقعات کے لیے احتمال کا قانونِ جمع\n\nبیان:\n\nاگر A اور B دو باہم مانع واقعات ہوں تو ان میں سے کسی ایک کے واقع ہونے کا احتمال A اور B کے انفرادی احتمالات کے مجموعے کے برابر ہوتا ہے۔ علامتی طور پر P(A\\text{ or }B)=P(A\\cup B)=P(A)+P(B)\n\nثبوت:\n\nفرض کریں n نمونہ فضا کے نمونہ نقاط کی کل تعداد ہے۔ فرض کریں m_1 واقعہ A کے وقوع کے موافق حالات ہیں، تو P(A)=\\frac{m_1}{n}۔ فرض کریں m_2 واقعہ B کے موافق حالات ہیں، تو P(B)=\\frac{m_2}{n}۔ چونکہ A اور B باہم مانع ہیں، اس لیے (A یا B) کے موافق حالات m_1+m_2 کے برابر ہیں۔\n\nلہٰذا P(A\\text{ or }B)=P(A\\cup B)=\\frac{m_1+m_2}{n}=\\frac{m_1}{n}+\\frac{m_2}{n}=P(A)+P(B)\n\nمثال 1.15\n\nتاش کی ایک عام گڈی سے ایک پتا نکالا جاتا ہے۔ احتمال کیا ہے کہ پتا یا تو بادشاہ ہو یا غلام؟\n\nحل:\n\nفرض کریں بادشاہ کا واقعہ A اور غلام کا واقعہ B ہے۔ یہ باہم مانع واقعات ہیں کیونکہ دونوں ایک وقت میں واقع نہیں ہو سکتے۔ لہٰذا ہم باہم مانع واقعات کا قانونِ جمع استعمال کرتے ہیں یعنی P(A\\text{ or }B)=P(A)+P(B)\n\nاب n(S)={}^{52}_{1}C=52\n\nفرض کریں A: پتا بادشاہ ہے\n\nn(A)={}^{4}_{1}C=4\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{4}{52}\n\nفرض کریں B: پتا غلام ہے\n\n$n(B)={}^{4}_{1}C=4$",
+   "theoryPashto": "حل:\n\n$n(S)=2^n=2^5=32$\n\nفرض کړئ A: لږ تر لږه یو سر.\n\nد نمونوي فضا لیکل او د لږ تر لږه یو سر لپاره د موافقو پایلو بېلول به ستړی کوونکی وي. پر ځای یې،\n\n\\overline{A}: هېڅ سر نه\n\n\\overline{A}=(TTTTT)\n\nn(\\overline{A})=1,\n\nP(\\overline{A})=\\frac{n(\\overline{A})}{n(S)}=\\frac{1}{32}\n\nپه پای کې د بشپړوونې قانون په کارولو سره د A اړین احتمال لاسته راوړلای شو\n\n$P(A)=1-P(\\overline{A})=1-\\frac{1}{32}=\\frac{31}{32}=0.97$\n\nبېلګه 1.14\n\nاحتمال یې څومره دی چې په تصادفي ډول ټاکل شوې څلور ماشومه کورنۍ کې لږ تر لږه یو هلک وي؟\n\nحل:\n\n$n(S)=2^4=16$\n\nفرض کړئ E: په کورنۍ کې لږ تر لږه یو هلک\n\nبیا \\overline{E} = هېڅ هلک نه یعنې ټولې نجونې\n\n\\overline{E}=\\{g\\,g\\,g\\,g\\}\n\nP(\\overline{E})=\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}=\\frac{1}{16}\n\nد بشپړوونې د قانون له مخې د E اړین احتمال دا دی\n\n$P(E)=1-P(\\overline{E})=1-\\frac{1}{16}=\\frac{15}{16}=0.94$\n\n1.3.1 د یو بل منع کوونکو پېښو لپاره د احتمال د جمع قانون\n\nبیان:\n\nکه A او B دوه یو بل منع کوونکې پېښې وي، نو د هغو څخه د یوې د رامنځته کېدو احتمال د A او B د جلا جلا احتمالونو له مجموعې سره برابر دی. په نښو کې P(A\\text{ or }B)=P(A\\cup B)=P(A)+P(B)\n\nثبوت:\n\nفرض کړئ n د نمونوي فضا د نمونوي ټکو ټول شمېر دی. فرض کړئ m_1 د A پېښې د رامنځته کېدو موافق حالتونه دي، نو P(A)=\\frac{m_1}{n}. فرض کړئ m_2 د B موافق حالتونه دي، نو P(B)=\\frac{m_2}{n}. څرنګه چې A او B یو بل منع کوونکې دي، نو د (A یا B) موافق حالتونه له m_1+m_2 سره برابر دي.\n\nنو P(A\\text{ or }B)=P(A\\cup B)=\\frac{m_1+m_2}{n}=\\frac{m_1}{n}+\\frac{m_2}{n}=P(A)+P(B)\n\nبېلګه 1.15\n\nد لوبې د کارتونو له یوې عادي ګډۍ څخه یو کارت راایستل کېږي. احتمال یې څومره دی چې کارت یا باچا وي یا غلام؟\n\nحل:\n\nفرض کړئ د باچا پېښه په A او د غلام پېښه په B ښودل کېږي. دا یو بل منع کوونکې پېښې دي ځکه چې دواړه په یو وخت نه شي رامنځته کېدای. نو د یو بل منع کوونکو پېښو د جمع قانون کاروو یعنې P(A\\text{ or }B)=P(A)+P(B)\n\nاوس n(S)={}^{52}_{1}C=52\n\nفرض کړئ A: کارت باچا دی\n\nn(A)={}^{4}_{1}C=4\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{4}{52}\n\nفرض کړئ B: کارت غلام دی\n\n$n(B)={}^{4}_{1}C=4$",
+   "content": "<p>Solution:</p><p>$n(S)=2^n=2^5=32$</p><p>Let A: at least one head.</p><p>It will be tedious to list the sample space and pick out the favourable results for at least one head. Alternatively,</p><p>\\overline{A}: No head</p><p>\\overline{A}=(TTTTT)</p><p>n(\\overline{A})=1,</p><p>P(\\overline{A})=\\frac{n(\\overline{A})}{n(S)}=\\frac{1}{32}</p><p>Finally, we can obtain the required probability of A by using law of complementation</p><p>$P(A)=1-P(\\overline{A})=1-\\frac{1}{32}=\\frac{31}{32}=0.97$</p><p>Example 1.14</p><p>What is the probability that a randomly selected family of four children will have at least one boy?</p><p>Solution:</p><p>$n(S)=2^4=16$</p><p>Let E: at least one boy in the family</p><p>Then \\overline{E} = no boy i.e. all girls</p><p>\\overline{E}=\\{g\\,g\\,g\\,g\\}</p><p>P(\\overline{E})=\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{2}=\\frac{1}{16}</p><p>The required probability of E by complementation law is given by</p><p>$P(E)=1-P(\\overline{E})=1-\\frac{1}{16}=\\frac{15}{16}=0.94$</p><p>1.3.1 Addition law of probability for mutually exclusive events</p><p>Statement:</p><p>If A and B are two mutually exclusive events, then the probability that any one of them happens is equal to the sum of individual probabilities of A and B. In symbol, P(A\\text{ or }B)=P(A\\cup B)=P(A)+P(B)</p><p>Proof:</p><p>Let n be the total number of sample points in the sample space. Let m_1 be the favourable cases to the occurrence of an event A, then P(A)=\\frac{m_1}{n}. Let m_2 be the favourable cases to B, so P(B)=\\frac{m_2}{n}. Since A and B are mutually exclusive events, therefore, favourable cases to (A or B) are equal to m_1+m_2.</p><p>Hence P(A\\text{ or }B)=P(A\\cup B)=\\frac{m_1+m_2}{n}=\\frac{m_1}{n}+\\frac{m_2}{n}=P(A)+P(B)</p><p>Example 1.15</p><p>A card is drawn from an ordinary deck of playing cards. What is the probability that the card will be either a king or a jack?</p><p>Solution:</p><p>Let the event king be denoted by A and the event jack be denoted by B. These are mutually exclusive events as both cannot occur at a time. Thus we use addition law for mutually exclusive events i.e. P(A\\text{ or }B)=P(A)+P(B)</p><p>Now n(S)={}^{52}_{1}C=52</p><p>Let A: card is king</p><p>n(A)={}^{4}_{1}C=4</p><p>P(A)=\\frac{n(A)}{n(S)}=\\frac{4}{52}</p><p>Let B: card is a jack</p><p>$n(B)={}^{4}_{1}C=4$</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      16,
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      23
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      24
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "stat12-venn-disjoint-m"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      25
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      26
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      27
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      28
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      29
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      30
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      31
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      32,
+      33
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      34
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      35
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-venn-disjoint-m",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 120\" role=\"img\" aria-label=\"Two mutually exclusive events A and B with m1 and m2 cases\"><rect width=\"240\" height=\"120\" fill=\"white\"/><rect x=\"50\" y=\"10\" width=\"180\" height=\"100\" fill=\"#bfdbfe\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\" text-anchor=\"middle\"><text x=\"25\" y=\"68\">S =</text><text x=\"110\" y=\"38\">A</text><text x=\"170\" y=\"38\">B</text><circle cx=\"110\" cy=\"72\" r=\"22\" fill=\"#e0f2fe\" stroke=\"#111\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"72\" r=\"22\" fill=\"#e0f2fe\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"110\" y=\"78\" font-size=\"15\" font-style=\"italic\">m₁</text><text x=\"170\" y=\"78\" font-size=\"15\" font-style=\"italic\">m₂</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 120\" role=\"img\" aria-label=\"Two mutually exclusive events A and B with m1 and m2 cases\"><rect width=\"240\" height=\"120\" fill=\"white\"/><rect x=\"50\" y=\"10\" width=\"180\" height=\"100\" fill=\"#bfdbfe\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\" text-anchor=\"middle\"><text x=\"25\" y=\"68\">S =</text><text x=\"110\" y=\"38\">A</text><text x=\"170\" y=\"38\">B</text><circle cx=\"110\" cy=\"72\" r=\"22\" fill=\"#e0f2fe\" stroke=\"#111\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"72\" r=\"22\" fill=\"#e0f2fe\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"110\" y=\"78\" font-size=\"15\" font-style=\"italic\">m₁</text><text x=\"170\" y=\"78\" font-size=\"15\" font-style=\"italic\">m₂</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 120\" role=\"img\" aria-label=\"Two mutually exclusive events A and B with m1 and m2 cases\"><rect width=\"240\" height=\"120\" fill=\"white\"/><rect x=\"50\" y=\"10\" width=\"180\" height=\"100\" fill=\"#bfdbfe\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\" text-anchor=\"middle\"><text x=\"25\" y=\"68\">S =</text><text x=\"110\" y=\"38\">A</text><text x=\"170\" y=\"38\">B</text><circle cx=\"110\" cy=\"72\" r=\"22\" fill=\"#e0f2fe\" stroke=\"#111\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"72\" r=\"22\" fill=\"#e0f2fe\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"110\" y=\"78\" font-size=\"15\" font-style=\"italic\">m₁</text><text x=\"170\" y=\"78\" font-size=\"15\" font-style=\"italic\">m₂</text></g></svg>",
+     "sourceWidthRatio": 0.35
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 12,
+     "printedPages": [
+      15,
+      16
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 1
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

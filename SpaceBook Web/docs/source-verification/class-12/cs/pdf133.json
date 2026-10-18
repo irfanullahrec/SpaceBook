@@ -1,0 +1,257 @@
+{
+ "pdfPage": 133,
+ "sections": [
+  {
+   "id": "cs12-u8-text-14",
+   "title": "Unit 8 text (14)",
+   "headingUrdu": "یونٹ 8 — متن (14)",
+   "headingPashto": "۸ څپرکی — متن (14)",
+   "paras": [
+    {
+     "text": "Function overloading is the concept of using same function name for related but slightly different purposes in a single program. We have discussed it in detail in unit 6 with the help of programming examples.",
+     "urdu": "فنکشن اوورلوڈنگ ایک پروگرام میں متعلقہ لیکن قدرے مختلف مقاصد کے لیے ایک ہی فنکشن نام استعمال کرنے کا تصور ہے۔ ہم نے یونٹ 6 میں پروگرامنگ مثالوں کی مدد سے اس پر تفصیل سے بات کی ہے۔",
+     "pashto": "د فنکشن ډېرول په یوه پروګرام کې د اړوندو خو یو څه بېلو موخو لپاره د یو فنکشن نوم د کارولو مفهوم دی. موږ په ۶ څپرکي کې د پروګرامي بېلګو په مرسته په تفصیل څېړلی."
+    },
+    {
+     "text": "Consider the following simple examples to understand the concept of polymorphism with respect to operator overloading.",
+     "urdu": "آپریٹر اوورلوڈنگ کے حوالے سے پولی مورفزم کا تصور سمجھنے کے لیے درج ذیل سادہ مثالوں پر غور کریں۔",
+     "pashto": "د چلونکي ډېرولو په اړه د پولي‌مورفیزم د مفهوم د پوهېدو لپاره لاندې ساده بېلګو ته پام وکړئ."
+    },
+    {
+     "text": "6 + 10;",
+     "urdu": "6 + 10;",
+     "pashto": "6 + 10;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The above statement refers to integer addition with the help of + operator. The same + operator can also be used for addition of two floating point numbers or two strings (concatenation) as shown below.",
+     "urdu": "اوپر کا بیان + آپریٹر کی مدد سے صحیح اعداد کی جمع ظاہر کرتا ہے۔ یہی + آپریٹر دو فلوٹنگ پوائنٹ اعداد یا دو اسٹرنگز کی جمع (کنکیٹینیشن) کے لیے بھی استعمال ہو سکتا ہے جیسا کہ ذیل میں دکھایا گیا ہے۔",
+     "pashto": "پورته بیان د + چلونکي په مرسته د صحیح عددونو جمع ته اشاره کوي. همدا + چلونکی د دوو اعشاري عددونو یا دوو تارونو د جمع (نښلولو) لپاره هم کارېدای شي لکه لاندې."
+    },
+    {
+     "text": "7.15 + 3.78\n\"Computer\" + \"Training\"",
+     "urdu": "7.15 + 3.78\n\"Computer\" + \"Training\"",
+     "pashto": "7.15 + 3.78\n\"Computer\" + \"Training\"",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Polymorphism is a powerful feature of every Object Oriented Programming (OOP) language, especially of C++. A single operator ‘+’ behaves differently in different contexts such as integer and float addition and strings concatenation. This concept is known as operator overloading.",
+     "urdu": "پولی مورفزم ہر آبجیکٹ اورینٹڈ پروگرامنگ (OOP) زبان، خاص طور پر C++ کی ایک طاقتور خصوصیت ہے۔ ایک ہی آپریٹر ‘+’ مختلف سیاق میں مختلف رویہ اختیار کرتا ہے جیسے integer اور float کی جمع اور اسٹرنگز کو جوڑنا۔ اس تصور کو آپریٹر اوورلوڈنگ کہتے ہیں۔",
+     "pashto": "پولي‌مورفیزم د هرې د شیانو ته متوجه پروګرامي (OOP) ژبې، په ځانګړي ډول د C++، پیاوړې ځانګړتیا ده. یو چلونکی ‘+’ په بېلو شرایطو کې بېل چلند کوي لکه د integer او float جمع او د تارونو نښلول. دې مفهوم ته د چلونکي ډېرول (operator overloading) وایي."
+    },
+    {
+     "text": "A virtual function or virtual method is a function or method whose behavior can be overridden within an inheriting class by a function with the same signature. This concept is a very important part of the polymorphism portion of object-oriented programming (OOP).",
+     "urdu": "ورچوئل فنکشن یا ورچوئل میتھڈ وہ فنکشن یا میتھڈ ہے جس کا رویہ وراثت لینے والی کلاس میں اسی سگنیچر والے فنکشن سے بدلا جا سکتا ہے۔ یہ تصور آبجیکٹ اورینٹڈ پروگرامنگ (OOP) کے پولی مورفزم حصے کا بہت اہم جزو ہے۔",
+     "pashto": "مجازي فنکشن یا مجازي میتود هغه فنکشن یا میتود دی چې چلند یې په میراث اخیستونکي ټولګي کې د ورته لاسلیک لرونکي فنکشن په مرسته بدلېدای شي. دا مفهوم د شیانو ته متوجه پروګرام‌سازۍ (OOP) د پولي‌مورفیزم برخې ډېره مهمه برخه ده."
+    }
+   ],
+   "theory": "Function overloading is the concept of using same function name for related but slightly different purposes in a single program. We have discussed it in detail in unit 6 with the help of programming examples.\n\nConsider the following simple examples to understand the concept of polymorphism with respect to operator overloading.\n\n6 + 10;\n\nThe above statement refers to integer addition with the help of + operator. The same + operator can also be used for addition of two floating point numbers or two strings (concatenation) as shown below.\n\n7.15 + 3.78\n\"Computer\" + \"Training\"\n\nPolymorphism is a powerful feature of every Object Oriented Programming (OOP) language, especially of C++. A single operator ‘+’ behaves differently in different contexts such as integer and float addition and strings concatenation. This concept is known as operator overloading.\n\nA virtual function or virtual method is a function or method whose behavior can be overridden within an inheriting class by a function with the same signature. This concept is a very important part of the polymorphism portion of object-oriented programming (OOP).",
+   "urdu": "فنکشن اوورلوڈنگ ایک پروگرام میں متعلقہ لیکن قدرے مختلف مقاصد کے لیے ایک ہی فنکشن نام استعمال کرنے کا تصور ہے۔ ہم نے یونٹ 6 میں پروگرامنگ مثالوں کی مدد سے اس پر تفصیل سے بات کی ہے۔\n\nآپریٹر اوورلوڈنگ کے حوالے سے پولی مورفزم کا تصور سمجھنے کے لیے درج ذیل سادہ مثالوں پر غور کریں۔\n\n6 + 10;\n\nاوپر کا بیان + آپریٹر کی مدد سے صحیح اعداد کی جمع ظاہر کرتا ہے۔ یہی + آپریٹر دو فلوٹنگ پوائنٹ اعداد یا دو اسٹرنگز کی جمع (کنکیٹینیشن) کے لیے بھی استعمال ہو سکتا ہے جیسا کہ ذیل میں دکھایا گیا ہے۔\n\n7.15 + 3.78\n\"Computer\" + \"Training\"\n\nپولی مورفزم ہر آبجیکٹ اورینٹڈ پروگرامنگ (OOP) زبان، خاص طور پر C++ کی ایک طاقتور خصوصیت ہے۔ ایک ہی آپریٹر ‘+’ مختلف سیاق میں مختلف رویہ اختیار کرتا ہے جیسے integer اور float کی جمع اور اسٹرنگز کو جوڑنا۔ اس تصور کو آپریٹر اوورلوڈنگ کہتے ہیں۔\n\nورچوئل فنکشن یا ورچوئل میتھڈ وہ فنکشن یا میتھڈ ہے جس کا رویہ وراثت لینے والی کلاس میں اسی سگنیچر والے فنکشن سے بدلا جا سکتا ہے۔ یہ تصور آبجیکٹ اورینٹڈ پروگرامنگ (OOP) کے پولی مورفزم حصے کا بہت اہم جزو ہے۔",
+   "pashto": "د فنکشن ډېرول په یوه پروګرام کې د اړوندو خو یو څه بېلو موخو لپاره د یو فنکشن نوم د کارولو مفهوم دی. موږ په ۶ څپرکي کې د پروګرامي بېلګو په مرسته په تفصیل څېړلی.\n\nد چلونکي ډېرولو په اړه د پولي‌مورفیزم د مفهوم د پوهېدو لپاره لاندې ساده بېلګو ته پام وکړئ.\n\n6 + 10;\n\nپورته بیان د + چلونکي په مرسته د صحیح عددونو جمع ته اشاره کوي. همدا + چلونکی د دوو اعشاري عددونو یا دوو تارونو د جمع (نښلولو) لپاره هم کارېدای شي لکه لاندې.\n\n7.15 + 3.78\n\"Computer\" + \"Training\"\n\nپولي‌مورفیزم د هرې د شیانو ته متوجه پروګرامي (OOP) ژبې، په ځانګړي ډول د C++، پیاوړې ځانګړتیا ده. یو چلونکی ‘+’ په بېلو شرایطو کې بېل چلند کوي لکه د integer او float جمع او د تارونو نښلول. دې مفهوم ته د چلونکي ډېرول (operator overloading) وایي.\n\nمجازي فنکشن یا مجازي میتود هغه فنکشن یا میتود دی چې چلند یې په میراث اخیستونکي ټولګي کې د ورته لاسلیک لرونکي فنکشن په مرسته بدلېدای شي. دا مفهوم د شیانو ته متوجه پروګرام‌سازۍ (OOP) د پولي‌مورفیزم برخې ډېره مهمه برخه ده.",
+   "theoryUrdu": "فنکشن اوورلوڈنگ ایک پروگرام میں متعلقہ لیکن قدرے مختلف مقاصد کے لیے ایک ہی فنکشن نام استعمال کرنے کا تصور ہے۔ ہم نے یونٹ 6 میں پروگرامنگ مثالوں کی مدد سے اس پر تفصیل سے بات کی ہے۔\n\nآپریٹر اوورلوڈنگ کے حوالے سے پولی مورفزم کا تصور سمجھنے کے لیے درج ذیل سادہ مثالوں پر غور کریں۔\n\n6 + 10;\n\nاوپر کا بیان + آپریٹر کی مدد سے صحیح اعداد کی جمع ظاہر کرتا ہے۔ یہی + آپریٹر دو فلوٹنگ پوائنٹ اعداد یا دو اسٹرنگز کی جمع (کنکیٹینیشن) کے لیے بھی استعمال ہو سکتا ہے جیسا کہ ذیل میں دکھایا گیا ہے۔\n\n7.15 + 3.78\n\"Computer\" + \"Training\"\n\nپولی مورفزم ہر آبجیکٹ اورینٹڈ پروگرامنگ (OOP) زبان، خاص طور پر C++ کی ایک طاقتور خصوصیت ہے۔ ایک ہی آپریٹر ‘+’ مختلف سیاق میں مختلف رویہ اختیار کرتا ہے جیسے integer اور float کی جمع اور اسٹرنگز کو جوڑنا۔ اس تصور کو آپریٹر اوورلوڈنگ کہتے ہیں۔\n\nورچوئل فنکشن یا ورچوئل میتھڈ وہ فنکشن یا میتھڈ ہے جس کا رویہ وراثت لینے والی کلاس میں اسی سگنیچر والے فنکشن سے بدلا جا سکتا ہے۔ یہ تصور آبجیکٹ اورینٹڈ پروگرامنگ (OOP) کے پولی مورفزم حصے کا بہت اہم جزو ہے۔",
+   "theoryPashto": "د فنکشن ډېرول په یوه پروګرام کې د اړوندو خو یو څه بېلو موخو لپاره د یو فنکشن نوم د کارولو مفهوم دی. موږ په ۶ څپرکي کې د پروګرامي بېلګو په مرسته په تفصیل څېړلی.\n\nد چلونکي ډېرولو په اړه د پولي‌مورفیزم د مفهوم د پوهېدو لپاره لاندې ساده بېلګو ته پام وکړئ.\n\n6 + 10;\n\nپورته بیان د + چلونکي په مرسته د صحیح عددونو جمع ته اشاره کوي. همدا + چلونکی د دوو اعشاري عددونو یا دوو تارونو د جمع (نښلولو) لپاره هم کارېدای شي لکه لاندې.\n\n7.15 + 3.78\n\"Computer\" + \"Training\"\n\nپولي‌مورفیزم د هرې د شیانو ته متوجه پروګرامي (OOP) ژبې، په ځانګړي ډول د C++، پیاوړې ځانګړتیا ده. یو چلونکی ‘+’ په بېلو شرایطو کې بېل چلند کوي لکه د integer او float جمع او د تارونو نښلول. دې مفهوم ته د چلونکي ډېرول (operator overloading) وایي.\n\nمجازي فنکشن یا مجازي میتود هغه فنکشن یا میتود دی چې چلند یې په میراث اخیستونکي ټولګي کې د ورته لاسلیک لرونکي فنکشن په مرسته بدلېدای شي. دا مفهوم د شیانو ته متوجه پروګرام‌سازۍ (OOP) د پولي‌مورفیزم برخې ډېره مهمه برخه ده.",
+   "content": "<p>Function overloading is the concept of using same function name for related but slightly different purposes in a single program. We have discussed it in detail in unit 6 with the help of programming examples.</p><p>Consider the following simple examples to understand the concept of polymorphism with respect to operator overloading.</p><p>6 + 10;</p><p>The above statement refers to integer addition with the help of + operator. The same + operator can also be used for addition of two floating point numbers or two strings (concatenation) as shown below.</p><p>7.15 + 3.78\n&quot;Computer&quot; + &quot;Training&quot;</p><p>Polymorphism is a powerful feature of every Object Oriented Programming (OOP) language, especially of C++. A single operator ‘+’ behaves differently in different contexts such as integer and float addition and strings concatenation. This concept is known as operator overloading.</p><p>A virtual function or virtual method is a function or method whose behavior can be overridden within an inheriting class by a function with the same signature. This concept is a very important part of the polymorphism portion of object-oriented programming (OOP).</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 133,
+     "printedPages": [
+      254
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (14)",
+   "sourcePageLabel": "PDF 133 · p. 254",
+   "unit": 8
+  },
+  {
+   "id": "cs12-u8-summary",
+   "title": "Unit 8 summary",
+   "headingUrdu": "یونٹ 8: خلاصہ",
+   "headingPashto": "۸ څپرکی: لنډیز",
+   "paras": [
+    {
+     "text": "Summary",
+     "urdu": "خلاصہ",
+     "pashto": "لنډیز"
+    },
+    {
+     "text": "A class consists of attributes called data members and function called member function.",
+     "urdu": "کلاس ڈیٹا ممبرز کہلانے والی خصوصیات اور ممبر فنکشن کہلانے والے فنکشن پر مشتمل ہوتی ہے۔",
+     "pashto": "ټولګی د ډېټا غړو په نوم ځانګړنې او د غړي فنکشن په نوم فنکشن لري."
+    },
+    {
+     "text": "A variable of type class is called object. In C++, when variables of type class are declared they create objects.",
+     "urdu": "کلاس قسم کا ویری ایبل آبجیکٹ کہلاتا ہے۔ C++ میں جب کلاس قسم کے ویری ایبلز ڈکلیئر ہوتے ہیں تو وہ آبجیکٹس بناتے ہیں۔",
+     "pashto": "د ټولګي ډول متغیر شی بلل کېږي. په C++ کې کله چې د ټولګي ډول متغیرونه اعلان شي، شیان جوړوي."
+    },
+    {
+     "text": "The attributes of a real world objects are called data members.",
+     "urdu": "حقیقی دنیا کی اشیا کی خصوصیات ڈیٹا ممبرز کہلاتی ہیں۔",
+     "pashto": "د ریښتینې نړۍ د شیانو ځانګړنې د ډېټا غړي بلل کېږي."
+    },
+    {
+     "text": "The functions declared or defined inside the body of the class are called member functions.",
+     "urdu": "کلاس کے جسم کے اندر ڈکلیئر یا بیان کیے گئے فنکشنز ممبر فنکشنز کہلاتے ہیں۔",
+     "pashto": "د ټولګي د بدنې دننه اعلان یا تعریف شوي فنکشنونه غړي فنکشنونه بلل کېږي."
+    },
+    {
+     "text": "Access specifiers determine that which member of a class is accessible by which member of the class/program.",
+     "urdu": "ایکسس اسپیسیفائرز طے کرتے ہیں کہ کلاس کا کون سا ممبر کلاس/پروگرام کے کس ممبر کے لیے قابلِ رسائی ہے۔",
+     "pashto": "د لاسرسي ټاکونکي ټاکي چې د ټولګي کوم غړی د ټولګي/پروګرام د کوم غړي لپاره د لاسرسي وړ دی."
+    },
+    {
+     "text": "private access specifier tells the compiler that the members defined in a class by preceding this specifier are accessible only within the class and its friend function.",
+     "urdu": "private ایکسس اسپیسیفائر کمپائلر کو بتاتا ہے کہ کلاس میں اس اسپیسیفائر کے بعد بیان کیے گئے اراکین صرف کلاس اور اس کے friend فنکشن کے اندر قابلِ رسائی ہیں۔",
+     "pashto": "private د لاسرسي ټاکونکی کمپایلر ته وايي چې په ټولګي کې د دې ټاکونکي وروسته تعریف شوي غړي یوازې د ټولګي او د هغه د friend فنکشن دننه د لاسرسي وړ دي."
+    },
+    {
+     "text": "public members are accessible from anywhere where the object is visible.",
+     "urdu": "public اراکین ہر اس جگہ سے قابلِ رسائی ہیں جہاں آبجیکٹ نظر آتا ہو۔",
+     "pashto": "public غړي له هر هغه ځایه د لاسرسي وړ دي چې شی پکې ښکاري."
+    },
+    {
+     "text": "Data Hiding is the concept in which the members of a class are protected against illegal access from outside the class.",
+     "urdu": "ڈیٹا ہائیڈنگ وہ تصور ہے جس میں کلاس کے اراکین کو کلاس کے باہر سے غیر قانونی رسائی سے محفوظ رکھا جاتا ہے۔",
+     "pashto": "د ډېټا پټول هغه مفهوم دی چې پکې د ټولګي غړي له ټولګي بهر د ناقانونه لاسرسي څخه ساتل کېږي."
+    },
+    {
+     "text": "A constructor is a special kind of class member function that is executed when an object of the class is instantiated.",
+     "urdu": "کنسٹرکٹر کلاس کا ایک خاص قسم کا ممبر فنکشن ہے جو کلاس کا آبجیکٹ بننے پر چلتا ہے۔",
+     "pashto": "جوړوونکی د ټولګي یو ځانګړی ډول غړی فنکشن دی چې د ټولګي د شي د جوړېدو پر مهال اجرا کېږي."
+    },
+    {
+     "text": "Destructors are special member functions having the same name as that of the class with a tiled symbol ~ and executed when an object is destroyed.",
+     "urdu": "ڈسٹرکٹرز خاص ممبر فنکشنز ہیں جن کا نام ٹلڈا نشان ~ کے ساتھ کلاس کے نام جیسا ہوتا ہے اور آبجیکٹ ختم ہونے پر چلتے ہیں۔",
+     "pashto": "ړنګوونکي ځانګړي غړي فنکشنونه دي چې د ټیلډ نښې ~ سره د ټولګي په څېر نوم لري او د شي د ړنګېدو پر مهال اجرا کېږي."
+    },
+    {
+     "text": "To access members of a class, dot operator (.) is used with the member name.",
+     "urdu": "کلاس کے اراکین تک رسائی کے لیے ممبر کے نام کے ساتھ ڈاٹ آپریٹر (.) استعمال ہوتا ہے۔",
+     "pashto": "د ټولګي غړو ته د لاسرسي لپاره د غړي له نوم سره د ټکي چلونکی (.) کارېږي."
+    },
+    {
+     "text": "The phenomenon of creating new classes from existing classes is called inheritance.",
+     "urdu": "موجودہ کلاسز سے نئی کلاسز بنانے کا عمل وراثت کہلاتا ہے۔",
+     "pashto": "له موجودو ټولګیو د نویو ټولګیو د جوړولو پدیده میراث بلل کېږي."
+    },
+    {
+     "text": "Polymorphism is the ability to use an operator or function in multiple ways.",
+     "urdu": "پولی مورفزم کسی آپریٹر یا فنکشن کو متعدد طریقوں سے استعمال کرنے کی صلاحیت ہے۔",
+     "pashto": "پولي‌مورفیزم د یوه چلونکي یا فنکشن په ډېرو لارو د کارولو وړتیا ده."
+    }
+   ],
+   "theory": "Summary\n\nA class consists of attributes called data members and function called member function.\n\nA variable of type class is called object. In C++, when variables of type class are declared they create objects.\n\nThe attributes of a real world objects are called data members.\n\nThe functions declared or defined inside the body of the class are called member functions.\n\nAccess specifiers determine that which member of a class is accessible by which member of the class/program.\n\nprivate access specifier tells the compiler that the members defined in a class by preceding this specifier are accessible only within the class and its friend function.\n\npublic members are accessible from anywhere where the object is visible.\n\nData Hiding is the concept in which the members of a class are protected against illegal access from outside the class.\n\nA constructor is a special kind of class member function that is executed when an object of the class is instantiated.\n\nDestructors are special member functions having the same name as that of the class with a tiled symbol ~ and executed when an object is destroyed.\n\nTo access members of a class, dot operator (.) is used with the member name.\n\nThe phenomenon of creating new classes from existing classes is called inheritance.\n\nPolymorphism is the ability to use an operator or function in multiple ways.",
+   "urdu": "خلاصہ\n\nکلاس ڈیٹا ممبرز کہلانے والی خصوصیات اور ممبر فنکشن کہلانے والے فنکشن پر مشتمل ہوتی ہے۔\n\nکلاس قسم کا ویری ایبل آبجیکٹ کہلاتا ہے۔ C++ میں جب کلاس قسم کے ویری ایبلز ڈکلیئر ہوتے ہیں تو وہ آبجیکٹس بناتے ہیں۔\n\nحقیقی دنیا کی اشیا کی خصوصیات ڈیٹا ممبرز کہلاتی ہیں۔\n\nکلاس کے جسم کے اندر ڈکلیئر یا بیان کیے گئے فنکشنز ممبر فنکشنز کہلاتے ہیں۔\n\nایکسس اسپیسیفائرز طے کرتے ہیں کہ کلاس کا کون سا ممبر کلاس/پروگرام کے کس ممبر کے لیے قابلِ رسائی ہے۔\n\nprivate ایکسس اسپیسیفائر کمپائلر کو بتاتا ہے کہ کلاس میں اس اسپیسیفائر کے بعد بیان کیے گئے اراکین صرف کلاس اور اس کے friend فنکشن کے اندر قابلِ رسائی ہیں۔\n\npublic اراکین ہر اس جگہ سے قابلِ رسائی ہیں جہاں آبجیکٹ نظر آتا ہو۔\n\nڈیٹا ہائیڈنگ وہ تصور ہے جس میں کلاس کے اراکین کو کلاس کے باہر سے غیر قانونی رسائی سے محفوظ رکھا جاتا ہے۔\n\nکنسٹرکٹر کلاس کا ایک خاص قسم کا ممبر فنکشن ہے جو کلاس کا آبجیکٹ بننے پر چلتا ہے۔\n\nڈسٹرکٹرز خاص ممبر فنکشنز ہیں جن کا نام ٹلڈا نشان ~ کے ساتھ کلاس کے نام جیسا ہوتا ہے اور آبجیکٹ ختم ہونے پر چلتے ہیں۔\n\nکلاس کے اراکین تک رسائی کے لیے ممبر کے نام کے ساتھ ڈاٹ آپریٹر (.) استعمال ہوتا ہے۔\n\nموجودہ کلاسز سے نئی کلاسز بنانے کا عمل وراثت کہلاتا ہے۔\n\nپولی مورفزم کسی آپریٹر یا فنکشن کو متعدد طریقوں سے استعمال کرنے کی صلاحیت ہے۔",
+   "pashto": "لنډیز\n\nټولګی د ډېټا غړو په نوم ځانګړنې او د غړي فنکشن په نوم فنکشن لري.\n\nد ټولګي ډول متغیر شی بلل کېږي. په C++ کې کله چې د ټولګي ډول متغیرونه اعلان شي، شیان جوړوي.\n\nد ریښتینې نړۍ د شیانو ځانګړنې د ډېټا غړي بلل کېږي.\n\nد ټولګي د بدنې دننه اعلان یا تعریف شوي فنکشنونه غړي فنکشنونه بلل کېږي.\n\nد لاسرسي ټاکونکي ټاکي چې د ټولګي کوم غړی د ټولګي/پروګرام د کوم غړي لپاره د لاسرسي وړ دی.\n\nprivate د لاسرسي ټاکونکی کمپایلر ته وايي چې په ټولګي کې د دې ټاکونکي وروسته تعریف شوي غړي یوازې د ټولګي او د هغه د friend فنکشن دننه د لاسرسي وړ دي.\n\npublic غړي له هر هغه ځایه د لاسرسي وړ دي چې شی پکې ښکاري.\n\nد ډېټا پټول هغه مفهوم دی چې پکې د ټولګي غړي له ټولګي بهر د ناقانونه لاسرسي څخه ساتل کېږي.\n\nجوړوونکی د ټولګي یو ځانګړی ډول غړی فنکشن دی چې د ټولګي د شي د جوړېدو پر مهال اجرا کېږي.\n\nړنګوونکي ځانګړي غړي فنکشنونه دي چې د ټیلډ نښې ~ سره د ټولګي په څېر نوم لري او د شي د ړنګېدو پر مهال اجرا کېږي.\n\nد ټولګي غړو ته د لاسرسي لپاره د غړي له نوم سره د ټکي چلونکی (.) کارېږي.\n\nله موجودو ټولګیو د نویو ټولګیو د جوړولو پدیده میراث بلل کېږي.\n\nپولي‌مورفیزم د یوه چلونکي یا فنکشن په ډېرو لارو د کارولو وړتیا ده.",
+   "theoryUrdu": "خلاصہ\n\nکلاس ڈیٹا ممبرز کہلانے والی خصوصیات اور ممبر فنکشن کہلانے والے فنکشن پر مشتمل ہوتی ہے۔\n\nکلاس قسم کا ویری ایبل آبجیکٹ کہلاتا ہے۔ C++ میں جب کلاس قسم کے ویری ایبلز ڈکلیئر ہوتے ہیں تو وہ آبجیکٹس بناتے ہیں۔\n\nحقیقی دنیا کی اشیا کی خصوصیات ڈیٹا ممبرز کہلاتی ہیں۔\n\nکلاس کے جسم کے اندر ڈکلیئر یا بیان کیے گئے فنکشنز ممبر فنکشنز کہلاتے ہیں۔\n\nایکسس اسپیسیفائرز طے کرتے ہیں کہ کلاس کا کون سا ممبر کلاس/پروگرام کے کس ممبر کے لیے قابلِ رسائی ہے۔\n\nprivate ایکسس اسپیسیفائر کمپائلر کو بتاتا ہے کہ کلاس میں اس اسپیسیفائر کے بعد بیان کیے گئے اراکین صرف کلاس اور اس کے friend فنکشن کے اندر قابلِ رسائی ہیں۔\n\npublic اراکین ہر اس جگہ سے قابلِ رسائی ہیں جہاں آبجیکٹ نظر آتا ہو۔\n\nڈیٹا ہائیڈنگ وہ تصور ہے جس میں کلاس کے اراکین کو کلاس کے باہر سے غیر قانونی رسائی سے محفوظ رکھا جاتا ہے۔\n\nکنسٹرکٹر کلاس کا ایک خاص قسم کا ممبر فنکشن ہے جو کلاس کا آبجیکٹ بننے پر چلتا ہے۔\n\nڈسٹرکٹرز خاص ممبر فنکشنز ہیں جن کا نام ٹلڈا نشان ~ کے ساتھ کلاس کے نام جیسا ہوتا ہے اور آبجیکٹ ختم ہونے پر چلتے ہیں۔\n\nکلاس کے اراکین تک رسائی کے لیے ممبر کے نام کے ساتھ ڈاٹ آپریٹر (.) استعمال ہوتا ہے۔\n\nموجودہ کلاسز سے نئی کلاسز بنانے کا عمل وراثت کہلاتا ہے۔\n\nپولی مورفزم کسی آپریٹر یا فنکشن کو متعدد طریقوں سے استعمال کرنے کی صلاحیت ہے۔",
+   "theoryPashto": "لنډیز\n\nټولګی د ډېټا غړو په نوم ځانګړنې او د غړي فنکشن په نوم فنکشن لري.\n\nد ټولګي ډول متغیر شی بلل کېږي. په C++ کې کله چې د ټولګي ډول متغیرونه اعلان شي، شیان جوړوي.\n\nد ریښتینې نړۍ د شیانو ځانګړنې د ډېټا غړي بلل کېږي.\n\nد ټولګي د بدنې دننه اعلان یا تعریف شوي فنکشنونه غړي فنکشنونه بلل کېږي.\n\nد لاسرسي ټاکونکي ټاکي چې د ټولګي کوم غړی د ټولګي/پروګرام د کوم غړي لپاره د لاسرسي وړ دی.\n\nprivate د لاسرسي ټاکونکی کمپایلر ته وايي چې په ټولګي کې د دې ټاکونکي وروسته تعریف شوي غړي یوازې د ټولګي او د هغه د friend فنکشن دننه د لاسرسي وړ دي.\n\npublic غړي له هر هغه ځایه د لاسرسي وړ دي چې شی پکې ښکاري.\n\nد ډېټا پټول هغه مفهوم دی چې پکې د ټولګي غړي له ټولګي بهر د ناقانونه لاسرسي څخه ساتل کېږي.\n\nجوړوونکی د ټولګي یو ځانګړی ډول غړی فنکشن دی چې د ټولګي د شي د جوړېدو پر مهال اجرا کېږي.\n\nړنګوونکي ځانګړي غړي فنکشنونه دي چې د ټیلډ نښې ~ سره د ټولګي په څېر نوم لري او د شي د ړنګېدو پر مهال اجرا کېږي.\n\nد ټولګي غړو ته د لاسرسي لپاره د غړي له نوم سره د ټکي چلونکی (.) کارېږي.\n\nله موجودو ټولګیو د نویو ټولګیو د جوړولو پدیده میراث بلل کېږي.\n\nپولي‌مورفیزم د یوه چلونکي یا فنکشن په ډېرو لارو د کارولو وړتیا ده.",
+   "content": "<p>Summary</p><p>A class consists of attributes called data members and function called member function.</p><p>A variable of type class is called object. In C++, when variables of type class are declared they create objects.</p><p>The attributes of a real world objects are called data members.</p><p>The functions declared or defined inside the body of the class are called member functions.</p><p>Access specifiers determine that which member of a class is accessible by which member of the class/program.</p><p>private access specifier tells the compiler that the members defined in a class by preceding this specifier are accessible only within the class and its friend function.</p><p>public members are accessible from anywhere where the object is visible.</p><p>Data Hiding is the concept in which the members of a class are protected against illegal access from outside the class.</p><p>A constructor is a special kind of class member function that is executed when an object of the class is instantiated.</p><p>Destructors are special member functions having the same name as that of the class with a tiled symbol ~ and executed when an object is destroyed.</p><p>To access members of a class, dot operator (.) is used with the member name.</p><p>The phenomenon of creating new classes from existing classes is called inheritance.</p><p>Polymorphism is the ability to use an operator or function in multiple ways.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 133,
+     "printedPages": [
+      255
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 summary",
+   "sourcePageLabel": "PDF 133 · p. 255",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf133",
+   "unit": 8,
+   "printedPage": 255,
+   "description": "Summary: “The attributes of a real world objects”, “with a tiled symbol ~”, “determine that which member … is accessible by which member”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

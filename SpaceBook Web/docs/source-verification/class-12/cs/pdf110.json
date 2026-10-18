@@ -1,0 +1,209 @@
+{
+ "pdfPage": 110,
+ "sections": [
+  {
+   "id": "cs12-u6-text-17",
+   "title": "Unit 6 text (17)",
+   "headingUrdu": "یونٹ 6 — متن (17)",
+   "headingPashto": "۶ څپرکی — متن (17)",
+   "paras": [
+    {
+     "text": "In this example, two functions have been used with the name Addition. One has two parameters and the second has three parameters. In the main() function there are two calls Addition (a,b) and Addition (a,b,c) which call functions int Addition(int X, int Y) and int Addition(int X, int Y, int Z) respectively by looking at the number of parameters.",
+     "urdu": "اس مثال میں Addition نام کے دو فنکشنز استعمال ہوئے ہیں۔ ایک کے دو پیرامیٹرز ہیں اور دوسرے کے تین۔ main() فنکشن میں دو کالز Addition (a,b) اور Addition (a,b,c) ہیں جو پیرامیٹرز کی تعداد دیکھ کر بالترتیب فنکشنز int Addition(int X, int Y) اور int Addition(int X, int Y, int Z) کو کال کرتی ہیں۔",
+     "pashto": "په دې بېلګه کې د Addition په نوم دوه فنکشنونه کارول شوي. یو دوه پاراميټرونه لري او دویم درې. په main() فنکشن کې دوه غوښتنې Addition (a,b) او Addition (a,b,c) دي چې د پاراميټرونو شمېر ته په کتلو په ترتیب سره int Addition(int X, int Y) او int Addition(int X, int Y, int Z) فنکشنونه غواړي."
+    },
+    {
+     "text": "b. Data types of arguments",
+     "urdu": "b. آرگیومنٹس کی ڈیٹا ٹائپس",
+     "pashto": "b. د دلیلونو ډېټا ډولونه"
+    },
+    {
+     "text": "One way to achieve function overloading is to define multiple functions with the same name but different types of parameters. Consider the following example:",
+     "urdu": "فنکشن اوورلوڈنگ حاصل کرنے کا ایک طریقہ یہ ہے کہ ایک ہی نام لیکن مختلف اقسام کے پیرامیٹرز والے متعدد فنکشنز بیان کیے جائیں۔ درج ذیل مثال پر غور کریں:",
+     "pashto": "د فنکشن ډېرولو یوه لاره دا ده چې د یو نوم خو د بېلو ډولونو پاراميټرونو څو فنکشنونه تعریف شي. لاندې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "/*overloaded functions print()with different types of\nparameters*/\n#include <iostream.h>\n#include <conio.h>\nvoid print (int X)\n{\ncout<< “X=\"<<X<<endl;\n}\nvoid print (float Y)\n{\ncout<< “Y=\"<<Y<<endl;\n}\nint main()\n{\nprint(55);\nprint(33.66);\ngetch();\nreturn 0;\n}",
+     "urdu": "/*overloaded functions print()with different types of\nparameters*/\n#include <iostream.h>\n#include <conio.h>\nvoid print (int X)\n{\ncout<< “X=\"<<X<<endl;\n}\nvoid print (float Y)\n{\ncout<< “Y=\"<<Y<<endl;\n}\nint main()\n{\nprint(55);\nprint(33.66);\ngetch();\nreturn 0;\n}",
+     "pashto": "/*overloaded functions print()with different types of\nparameters*/\n#include <iostream.h>\n#include <conio.h>\nvoid print (int X)\n{\ncout<< “X=\"<<X<<endl;\n}\nvoid print (float Y)\n{\ncout<< “Y=\"<<Y<<endl;\n}\nint main()\n{\nprint(55);\nprint(33.66);\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "X=55\nY=33.66",
+     "urdu": "X=55\nY=33.66",
+     "pashto": "X=55\nY=33.66",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, two functions, print (int X) and print (float Y), have been used with different types of parameters, int and float. In main() function, two calls are used print(55) and print(33.66). The compiler looks at the type of arguments and calls the corresponding function.",
+     "urdu": "یہاں دو فنکشنز print (int X) اور print (float Y) مختلف اقسام کے پیرامیٹرز int اور float کے ساتھ استعمال ہوئے ہیں۔ main() فنکشن میں دو کالز print(55) اور print(33.66) استعمال ہوئی ہیں۔ کمپائلر آرگیومنٹس کی قسم دیکھ کر متعلقہ فنکشن کال کرتا ہے۔",
+     "pashto": "دلته دوه فنکشنونه print (int X) او print (float Y) د بېلو ډولونو پاراميټرونو int او float سره کارول شوي. په main() فنکشن کې دوه غوښتنې print(55) او print(33.66) کارول شوې. کمپایلر د دلیلونو ډول ته ګوري او اړوند فنکشن غواړي."
+    },
+    {
+     "text": "c. Return type",
+     "urdu": "c. ریٹرن ٹائپ",
+     "pashto": "c. د بېرته ورکړې ډول"
+    },
+    {
+     "text": "The return type of a function is not considered when functions are overloaded. It means that if two or more functions with the same name have same function signatures but different return types then they are not considered as overloaded and the compiler will generate error message.",
+     "urdu": "فنکشنز اوورلوڈ کرتے وقت فنکشن کی ریٹرن ٹائپ پر غور نہیں کیا جاتا۔ اس کا مطلب ہے کہ اگر ایک ہی نام کے دو یا زیادہ فنکشنز کے فنکشن سگنیچر ایک جیسے لیکن ریٹرن ٹائپس مختلف ہوں تو انھیں اوورلوڈ نہیں سمجھا جاتا اور کمپائلر خرابی کا پیغام دے گا۔",
+     "pashto": "کله چې فنکشنونه ډېرېږي، د فنکشن د بېرته ورکړې ډول ته پام نه کېږي. معنا دا چې که د یو نوم دوه یا ډېر فنکشنونه ورته لاسلیکونه خو بېل د بېرته ورکړې ډولونه ولري، ډېر شوي نه ګڼل کېږي او کمپایلر به د تېروتنې پیغام ورکړي."
+    },
+    {
+     "text": "Consider the following case:",
+     "urdu": "درج ذیل صورت پر غور کریں:",
+     "pashto": "لاندې حالت ته پام وکړئ:"
+    },
+    {
+     "text": "int display();\ndouble display(); // This prototype generates error message",
+     "urdu": "int display();\ndouble display(); // This prototype generates error message",
+     "pashto": "int display();\ndouble display(); // This prototype generates error message",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Consider another example:",
+     "urdu": "ایک اور مثال پر غور کریں:",
+     "pashto": "بلې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "int RandomNumber();\ndouble RandomNumber(); // This prototype generates error message",
+     "urdu": "int RandomNumber();\ndouble RandomNumber(); // This prototype generates error message",
+     "pashto": "int RandomNumber();\ndouble RandomNumber(); // This prototype generates error message",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, the compiler generates an error message of re-declaration for the second declaration at line number 2. It is because that both the declarations have same number of parameters (zero in this case) but only the return types are different which do not play any role in the overloading. If we want to do it, for then, these functions will need to be given different names.",
+     "urdu": "یہاں کمپائلر لائن نمبر 2 پر دوسری ڈکلیریشن کے لیے دوبارہ ڈکلیریشن کی خرابی کا پیغام دیتا ہے۔ اس کی وجہ یہ ہے کہ دونوں ڈکلیریشنز میں پیرامیٹرز کی تعداد ایک ہے (اس صورت میں صفر) لیکن صرف ریٹرن ٹائپس مختلف ہیں جو اوورلوڈنگ میں کوئی کردار ادا نہیں کرتیں۔ اگر ہم ایسا کرنا چاہیں تو ان فنکشنز کو مختلف نام دینے ہوں گے۔",
+     "pashto": "دلته کمپایلر په ۲ کرښه کې د دویم اعلان لپاره د بیا اعلان د تېروتنې پیغام ورکوي. لامل یې دا دی چې دواړه اعلانونه د پاراميټرونو یو شمېر لري (په دې حالت کې صفر) خو یوازې د بېرته ورکړې ډولونه بېل دي چې په ډېرولو کې هېڅ رول نه لري. که دا کار وغواړو، دې فنکشنونو ته به بېل نومونه ورکول اړین وي."
+    }
+   ],
+   "theory": "In this example, two functions have been used with the name Addition. One has two parameters and the second has three parameters. In the main() function there are two calls Addition (a,b) and Addition (a,b,c) which call functions int Addition(int X, int Y) and int Addition(int X, int Y, int Z) respectively by looking at the number of parameters.\n\nb. Data types of arguments\n\nOne way to achieve function overloading is to define multiple functions with the same name but different types of parameters. Consider the following example:\n\n/*overloaded functions print()with different types of\nparameters*/\n#include <iostream.h>\n#include <conio.h>\nvoid print (int X)\n{\ncout<< “X=\"<<X<<endl;\n}\nvoid print (float Y)\n{\ncout<< “Y=\"<<Y<<endl;\n}\nint main()\n{\nprint(55);\nprint(33.66);\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nX=55\nY=33.66\n\nHere, two functions, print (int X) and print (float Y), have been used with different types of parameters, int and float. In main() function, two calls are used print(55) and print(33.66). The compiler looks at the type of arguments and calls the corresponding function.\n\nc. Return type\n\nThe return type of a function is not considered when functions are overloaded. It means that if two or more functions with the same name have same function signatures but different return types then they are not considered as overloaded and the compiler will generate error message.\n\nConsider the following case:\n\nint display();\ndouble display(); // This prototype generates error message\n\nConsider another example:\n\nint RandomNumber();\ndouble RandomNumber(); // This prototype generates error message\n\nHere, the compiler generates an error message of re-declaration for the second declaration at line number 2. It is because that both the declarations have same number of parameters (zero in this case) but only the return types are different which do not play any role in the overloading. If we want to do it, for then, these functions will need to be given different names.",
+   "urdu": "اس مثال میں Addition نام کے دو فنکشنز استعمال ہوئے ہیں۔ ایک کے دو پیرامیٹرز ہیں اور دوسرے کے تین۔ main() فنکشن میں دو کالز Addition (a,b) اور Addition (a,b,c) ہیں جو پیرامیٹرز کی تعداد دیکھ کر بالترتیب فنکشنز int Addition(int X, int Y) اور int Addition(int X, int Y, int Z) کو کال کرتی ہیں۔\n\nb. آرگیومنٹس کی ڈیٹا ٹائپس\n\nفنکشن اوورلوڈنگ حاصل کرنے کا ایک طریقہ یہ ہے کہ ایک ہی نام لیکن مختلف اقسام کے پیرامیٹرز والے متعدد فنکشنز بیان کیے جائیں۔ درج ذیل مثال پر غور کریں:\n\n/*overloaded functions print()with different types of\nparameters*/\n#include <iostream.h>\n#include <conio.h>\nvoid print (int X)\n{\ncout<< “X=\"<<X<<endl;\n}\nvoid print (float Y)\n{\ncout<< “Y=\"<<Y<<endl;\n}\nint main()\n{\nprint(55);\nprint(33.66);\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nX=55\nY=33.66\n\nیہاں دو فنکشنز print (int X) اور print (float Y) مختلف اقسام کے پیرامیٹرز int اور float کے ساتھ استعمال ہوئے ہیں۔ main() فنکشن میں دو کالز print(55) اور print(33.66) استعمال ہوئی ہیں۔ کمپائلر آرگیومنٹس کی قسم دیکھ کر متعلقہ فنکشن کال کرتا ہے۔\n\nc. ریٹرن ٹائپ\n\nفنکشنز اوورلوڈ کرتے وقت فنکشن کی ریٹرن ٹائپ پر غور نہیں کیا جاتا۔ اس کا مطلب ہے کہ اگر ایک ہی نام کے دو یا زیادہ فنکشنز کے فنکشن سگنیچر ایک جیسے لیکن ریٹرن ٹائپس مختلف ہوں تو انھیں اوورلوڈ نہیں سمجھا جاتا اور کمپائلر خرابی کا پیغام دے گا۔\n\nدرج ذیل صورت پر غور کریں:\n\nint display();\ndouble display(); // This prototype generates error message\n\nایک اور مثال پر غور کریں:\n\nint RandomNumber();\ndouble RandomNumber(); // This prototype generates error message\n\nیہاں کمپائلر لائن نمبر 2 پر دوسری ڈکلیریشن کے لیے دوبارہ ڈکلیریشن کی خرابی کا پیغام دیتا ہے۔ اس کی وجہ یہ ہے کہ دونوں ڈکلیریشنز میں پیرامیٹرز کی تعداد ایک ہے (اس صورت میں صفر) لیکن صرف ریٹرن ٹائپس مختلف ہیں جو اوورلوڈنگ میں کوئی کردار ادا نہیں کرتیں۔ اگر ہم ایسا کرنا چاہیں تو ان فنکشنز کو مختلف نام دینے ہوں گے۔",
+   "pashto": "په دې بېلګه کې د Addition په نوم دوه فنکشنونه کارول شوي. یو دوه پاراميټرونه لري او دویم درې. په main() فنکشن کې دوه غوښتنې Addition (a,b) او Addition (a,b,c) دي چې د پاراميټرونو شمېر ته په کتلو په ترتیب سره int Addition(int X, int Y) او int Addition(int X, int Y, int Z) فنکشنونه غواړي.\n\nb. د دلیلونو ډېټا ډولونه\n\nد فنکشن ډېرولو یوه لاره دا ده چې د یو نوم خو د بېلو ډولونو پاراميټرونو څو فنکشنونه تعریف شي. لاندې بېلګې ته پام وکړئ:\n\n/*overloaded functions print()with different types of\nparameters*/\n#include <iostream.h>\n#include <conio.h>\nvoid print (int X)\n{\ncout<< “X=\"<<X<<endl;\n}\nvoid print (float Y)\n{\ncout<< “Y=\"<<Y<<endl;\n}\nint main()\n{\nprint(55);\nprint(33.66);\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nX=55\nY=33.66\n\nدلته دوه فنکشنونه print (int X) او print (float Y) د بېلو ډولونو پاراميټرونو int او float سره کارول شوي. په main() فنکشن کې دوه غوښتنې print(55) او print(33.66) کارول شوې. کمپایلر د دلیلونو ډول ته ګوري او اړوند فنکشن غواړي.\n\nc. د بېرته ورکړې ډول\n\nکله چې فنکشنونه ډېرېږي، د فنکشن د بېرته ورکړې ډول ته پام نه کېږي. معنا دا چې که د یو نوم دوه یا ډېر فنکشنونه ورته لاسلیکونه خو بېل د بېرته ورکړې ډولونه ولري، ډېر شوي نه ګڼل کېږي او کمپایلر به د تېروتنې پیغام ورکړي.\n\nلاندې حالت ته پام وکړئ:\n\nint display();\ndouble display(); // This prototype generates error message\n\nبلې بېلګې ته پام وکړئ:\n\nint RandomNumber();\ndouble RandomNumber(); // This prototype generates error message\n\nدلته کمپایلر په ۲ کرښه کې د دویم اعلان لپاره د بیا اعلان د تېروتنې پیغام ورکوي. لامل یې دا دی چې دواړه اعلانونه د پاراميټرونو یو شمېر لري (په دې حالت کې صفر) خو یوازې د بېرته ورکړې ډولونه بېل دي چې په ډېرولو کې هېڅ رول نه لري. که دا کار وغواړو، دې فنکشنونو ته به بېل نومونه ورکول اړین وي.",
+   "theoryUrdu": "اس مثال میں Addition نام کے دو فنکشنز استعمال ہوئے ہیں۔ ایک کے دو پیرامیٹرز ہیں اور دوسرے کے تین۔ main() فنکشن میں دو کالز Addition (a,b) اور Addition (a,b,c) ہیں جو پیرامیٹرز کی تعداد دیکھ کر بالترتیب فنکشنز int Addition(int X, int Y) اور int Addition(int X, int Y, int Z) کو کال کرتی ہیں۔\n\nb. آرگیومنٹس کی ڈیٹا ٹائپس\n\nفنکشن اوورلوڈنگ حاصل کرنے کا ایک طریقہ یہ ہے کہ ایک ہی نام لیکن مختلف اقسام کے پیرامیٹرز والے متعدد فنکشنز بیان کیے جائیں۔ درج ذیل مثال پر غور کریں:\n\n/*overloaded functions print()with different types of\nparameters*/\n#include <iostream.h>\n#include <conio.h>\nvoid print (int X)\n{\ncout<< “X=\"<<X<<endl;\n}\nvoid print (float Y)\n{\ncout<< “Y=\"<<Y<<endl;\n}\nint main()\n{\nprint(55);\nprint(33.66);\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nX=55\nY=33.66\n\nیہاں دو فنکشنز print (int X) اور print (float Y) مختلف اقسام کے پیرامیٹرز int اور float کے ساتھ استعمال ہوئے ہیں۔ main() فنکشن میں دو کالز print(55) اور print(33.66) استعمال ہوئی ہیں۔ کمپائلر آرگیومنٹس کی قسم دیکھ کر متعلقہ فنکشن کال کرتا ہے۔\n\nc. ریٹرن ٹائپ\n\nفنکشنز اوورلوڈ کرتے وقت فنکشن کی ریٹرن ٹائپ پر غور نہیں کیا جاتا۔ اس کا مطلب ہے کہ اگر ایک ہی نام کے دو یا زیادہ فنکشنز کے فنکشن سگنیچر ایک جیسے لیکن ریٹرن ٹائپس مختلف ہوں تو انھیں اوورلوڈ نہیں سمجھا جاتا اور کمپائلر خرابی کا پیغام دے گا۔\n\nدرج ذیل صورت پر غور کریں:\n\nint display();\ndouble display(); // This prototype generates error message\n\nایک اور مثال پر غور کریں:\n\nint RandomNumber();\ndouble RandomNumber(); // This prototype generates error message\n\nیہاں کمپائلر لائن نمبر 2 پر دوسری ڈکلیریشن کے لیے دوبارہ ڈکلیریشن کی خرابی کا پیغام دیتا ہے۔ اس کی وجہ یہ ہے کہ دونوں ڈکلیریشنز میں پیرامیٹرز کی تعداد ایک ہے (اس صورت میں صفر) لیکن صرف ریٹرن ٹائپس مختلف ہیں جو اوورلوڈنگ میں کوئی کردار ادا نہیں کرتیں۔ اگر ہم ایسا کرنا چاہیں تو ان فنکشنز کو مختلف نام دینے ہوں گے۔",
+   "theoryPashto": "په دې بېلګه کې د Addition په نوم دوه فنکشنونه کارول شوي. یو دوه پاراميټرونه لري او دویم درې. په main() فنکشن کې دوه غوښتنې Addition (a,b) او Addition (a,b,c) دي چې د پاراميټرونو شمېر ته په کتلو په ترتیب سره int Addition(int X, int Y) او int Addition(int X, int Y, int Z) فنکشنونه غواړي.\n\nb. د دلیلونو ډېټا ډولونه\n\nد فنکشن ډېرولو یوه لاره دا ده چې د یو نوم خو د بېلو ډولونو پاراميټرونو څو فنکشنونه تعریف شي. لاندې بېلګې ته پام وکړئ:\n\n/*overloaded functions print()with different types of\nparameters*/\n#include <iostream.h>\n#include <conio.h>\nvoid print (int X)\n{\ncout<< “X=\"<<X<<endl;\n}\nvoid print (float Y)\n{\ncout<< “Y=\"<<Y<<endl;\n}\nint main()\n{\nprint(55);\nprint(33.66);\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nX=55\nY=33.66\n\nدلته دوه فنکشنونه print (int X) او print (float Y) د بېلو ډولونو پاراميټرونو int او float سره کارول شوي. په main() فنکشن کې دوه غوښتنې print(55) او print(33.66) کارول شوې. کمپایلر د دلیلونو ډول ته ګوري او اړوند فنکشن غواړي.\n\nc. د بېرته ورکړې ډول\n\nکله چې فنکشنونه ډېرېږي، د فنکشن د بېرته ورکړې ډول ته پام نه کېږي. معنا دا چې که د یو نوم دوه یا ډېر فنکشنونه ورته لاسلیکونه خو بېل د بېرته ورکړې ډولونه ولري، ډېر شوي نه ګڼل کېږي او کمپایلر به د تېروتنې پیغام ورکړي.\n\nلاندې حالت ته پام وکړئ:\n\nint display();\ndouble display(); // This prototype generates error message\n\nبلې بېلګې ته پام وکړئ:\n\nint RandomNumber();\ndouble RandomNumber(); // This prototype generates error message\n\nدلته کمپایلر په ۲ کرښه کې د دویم اعلان لپاره د بیا اعلان د تېروتنې پیغام ورکوي. لامل یې دا دی چې دواړه اعلانونه د پاراميټرونو یو شمېر لري (په دې حالت کې صفر) خو یوازې د بېرته ورکړې ډولونه بېل دي چې په ډېرولو کې هېڅ رول نه لري. که دا کار وغواړو، دې فنکشنونو ته به بېل نومونه ورکول اړین وي.",
+   "content": "<p>In this example, two functions have been used with the name Addition. One has two parameters and the second has three parameters. In the main() function there are two calls Addition (a,b) and Addition (a,b,c) which call functions int Addition(int X, int Y) and int Addition(int X, int Y, int Z) respectively by looking at the number of parameters.</p><p>b. Data types of arguments</p><p>One way to achieve function overloading is to define multiple functions with the same name but different types of parameters. Consider the following example:</p><p>/*overloaded functions print()with different types of\nparameters*/\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nvoid print (int X)\n{\ncout&lt;&lt; “X=&quot;&lt;&lt;X&lt;&lt;endl;\n}\nvoid print (float Y)\n{\ncout&lt;&lt; “Y=&quot;&lt;&lt;Y&lt;&lt;endl;\n}\nint main()\n{\nprint(55);\nprint(33.66);\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>X=55\nY=33.66</p><p>Here, two functions, print (int X) and print (float Y), have been used with different types of parameters, int and float. In main() function, two calls are used print(55) and print(33.66). The compiler looks at the type of arguments and calls the corresponding function.</p><p>c. Return type</p><p>The return type of a function is not considered when functions are overloaded. It means that if two or more functions with the same name have same function signatures but different return types then they are not considered as overloaded and the compiler will generate error message.</p><p>Consider the following case:</p><p>int display();\ndouble display(); // This prototype generates error message</p><p>Consider another example:</p><p>int RandomNumber();\ndouble RandomNumber(); // This prototype generates error message</p><p>Here, the compiler generates an error message of re-declaration for the second declaration at line number 2. It is because that both the declarations have same number of parameters (zero in this case) but only the return types are different which do not play any role in the overloading. If we want to do it, for then, these functions will need to be given different names.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 110,
+     "printedPages": [
+      208,
+      209
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (17)",
+   "sourcePageLabel": "PDF 110 · p. 208–209",
+   "sourceNote": "The top of p.208 (end of the Addition program and its output) is recorded with PDF109.",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf110",
+   "unit": 6,
+   "printedPage": 209,
+   "description": "print(33.66) passes a double literal, which is ambiguous between print(int) and print(float) in standard C++; “It is because that both”, “If we want to do it, for then”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

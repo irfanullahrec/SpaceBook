@@ -1,0 +1,325 @@
+{
+ "pdfPage": 49,
+ "sections": [
+  {
+   "id": "stat12-p049-binomial-variance",
+   "title": "Binomial variance (npq) and standard deviation",
+   "headingUrdu": "دو رقمی تغیر (npq) اور معیاری انحراف",
+   "headingPashto": "بینومیل واریانس (npq) او معیاري انحراف",
+   "paras": [
+    {
+     "text": "$=\\sum_x x(x-1)\\,p(x)+\\sum_x x\\,p(x)$",
+     "urdu": "$=\\sum_x x(x-1)\\,p(x)+\\sum_x x\\,p(x)$",
+     "pashto": "$=\\sum_x x(x-1)\\,p(x)+\\sum_x x\\,p(x)$"
+    },
+    {
+     "text": "$=\\sum_{x=0}^{n}x(x-1)\\,{}^{n}_{x}C\\,p^xq^{n-x}+\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}$",
+     "urdu": "$=\\sum_{x=0}^{n}x(x-1)\\,{}^{n}_{x}C\\,p^xq^{n-x}+\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}$",
+     "pashto": "$=\\sum_{x=0}^{n}x(x-1)\\,{}^{n}_{x}C\\,p^xq^{n-x}+\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}$"
+    },
+    {
+     "text": "$=\\left[0(0-1)\\,{}^{n}_{0}C\\,p^0q^{n-0}+1(1-1)\\,{}^{n}_{1}C\\,p^1q^{n-1}+2(2-1)\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^nq^{n-n}\\right]+[np]$",
+     "urdu": "$=\\left[0(0-1)\\,{}^{n}_{0}C\\,p^0q^{n-0}+1(1-1)\\,{}^{n}_{1}C\\,p^1q^{n-1}+2(2-1)\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^nq^{n-n}\\right]+[np]$",
+     "pashto": "$=\\left[0(0-1)\\,{}^{n}_{0}C\\,p^0q^{n-0}+1(1-1)\\,{}^{n}_{1}C\\,p^1q^{n-1}+2(2-1)\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^nq^{n-n}\\right]+[np]$"
+    },
+    {
+     "text": "$=[0+0+n(n-1)\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^n]+(np)$",
+     "urdu": "$=[0+0+n(n-1)\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^n]+(np)$",
+     "pashto": "$=[0+0+n(n-1)\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^n]+(np)$"
+    },
+    {
+     "text": "$=n(n-1)\\,p^2\\,[q^{n-2}+\\ldots+p^{n-2}]+(np)$",
+     "urdu": "$=n(n-1)\\,p^2\\,[q^{n-2}+\\ldots+p^{n-2}]+(np)$",
+     "pashto": "$=n(n-1)\\,p^2\\,[q^{n-2}+\\ldots+p^{n-2}]+(np)$"
+    },
+    {
+     "text": "$=n(n-1)\\,p^2\\,[q+p]^{n-2}+(np)$",
+     "urdu": "$=n(n-1)\\,p^2\\,[q+p]^{n-2}+(np)$",
+     "pashto": "$=n(n-1)\\,p^2\\,[q+p]^{n-2}+(np)$"
+    },
+    {
+     "text": "$=n(n-1)\\,p^2\\,(1)^{n-2}+(np)\\qquad\\text{As } p+q=1$",
+     "urdu": "$=n(n-1)\\,p^2\\,(1)^{n-2}+(np)\\qquad\\text{As } p+q=1$",
+     "pashto": "$=n(n-1)\\,p^2\\,(1)^{n-2}+(np)\\qquad\\text{As } p+q=1$"
+    },
+    {
+     "text": "$=n^2p^2-np^2+np\\qquad(2)$",
+     "urdu": "$=n^2p^2-np^2+np\\qquad(2)$",
+     "pashto": "$=n^2p^2-np^2+np\\qquad(2)$"
+    },
+    {
+     "text": "Putting equation (1) and equation (2) in equation (A) we get",
+     "urdu": "مساوات (1) اور (2) کو مساوات (A) میں رکھنے سے",
+     "pashto": "د (1) او (2) معادلې په (A) معادله کې ایښودو سره"
+    },
+    {
+     "text": "$V(X)=n^2p^2-np^2+np-n^2p^2$",
+     "urdu": "$V(X)=n^2p^2-np^2+np-n^2p^2$",
+     "pashto": "$V(X)=n^2p^2-np^2+np-n^2p^2$"
+    },
+    {
+     "text": "$=np-np^2$",
+     "urdu": "$=np-np^2$",
+     "pashto": "$=np-np^2$"
+    },
+    {
+     "text": "$=np(1-p)$",
+     "urdu": "$=np(1-p)$",
+     "pashto": "$=np(1-p)$"
+    },
+    {
+     "text": "$=npq\\qquad(\\because q=1-p)$",
+     "urdu": "$=npq\\qquad(\\because q=1-p)$",
+     "pashto": "$=npq\\qquad(\\because q=1-p)$"
+    },
+    {
+     "text": "(iii) Standard deviation of Binomial distribution",
+     "urdu": "(iii) دو رقمی تقسیم کا معیاری انحراف",
+     "pashto": "(iii) د بینومیل وېش معیاري انحراف"
+    },
+    {
+     "text": "By definition",
+     "urdu": "تعریف کے مطابق",
+     "pashto": "د تعریف له مخې"
+    },
+    {
+     "text": "$S.D(X)=\\sqrt{V(X)}$",
+     "urdu": "$S.D(X)=\\sqrt{V(X)}$",
+     "pashto": "$S.D(X)=\\sqrt{V(X)}$"
+    },
+    {
+     "text": "$=\\sqrt{npq}$",
+     "urdu": "$=\\sqrt{npq}$",
+     "pashto": "$=\\sqrt{npq}$"
+    }
+   ],
+   "theory": "=\\sum_x x(x-1)\\,p(x)+\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{n}x(x-1)\\,{}^{n}_{x}C\\,p^xq^{n-x}+\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}\n\n=\\left[0(0-1)\\,{}^{n}_{0}C\\,p^0q^{n-0}+1(1-1)\\,{}^{n}_{1}C\\,p^1q^{n-1}+2(2-1)\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^nq^{n-n}\\right]+[np]\n\n=[0+0+n(n-1)\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^n]+(np)\n\n=n(n-1)\\,p^2\\,[q^{n-2}+\\ldots+p^{n-2}]+(np)\n\n=n(n-1)\\,p^2\\,[q+p]^{n-2}+(np)\n\n=n(n-1)\\,p^2\\,(1)^{n-2}+(np)\\qquad\\text{As } p+q=1\n\n=n^2p^2-np^2+np\\qquad(2)\n\nPutting equation (1) and equation (2) in equation (A) we get\n\nV(X)=n^2p^2-np^2+np-n^2p^2\n\n=np-np^2\n\n=np(1-p)\n\n=npq\\qquad(\\because q=1-p)\n\n(iii) Standard deviation of Binomial distribution\n\nBy definition\n\nS.D(X)=\\sqrt{V(X)}\n\n=\\sqrt{npq}",
+   "urdu": "=\\sum_x x(x-1)\\,p(x)+\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{n}x(x-1)\\,{}^{n}_{x}C\\,p^xq^{n-x}+\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}\n\n=\\left[0(0-1)\\,{}^{n}_{0}C\\,p^0q^{n-0}+1(1-1)\\,{}^{n}_{1}C\\,p^1q^{n-1}+2(2-1)\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^nq^{n-n}\\right]+[np]\n\n=[0+0+n(n-1)\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^n]+(np)\n\n=n(n-1)\\,p^2\\,[q^{n-2}+\\ldots+p^{n-2}]+(np)\n\n=n(n-1)\\,p^2\\,[q+p]^{n-2}+(np)\n\n=n(n-1)\\,p^2\\,(1)^{n-2}+(np)\\qquad\\text{As } p+q=1\n\n=n^2p^2-np^2+np\\qquad(2)\n\nمساوات (1) اور (2) کو مساوات (A) میں رکھنے سے\n\nV(X)=n^2p^2-np^2+np-n^2p^2\n\n=np-np^2\n\n=np(1-p)\n\n=npq\\qquad(\\because q=1-p)\n\n(iii) دو رقمی تقسیم کا معیاری انحراف\n\nتعریف کے مطابق\n\nS.D(X)=\\sqrt{V(X)}\n\n=\\sqrt{npq}",
+   "pashto": "=\\sum_x x(x-1)\\,p(x)+\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{n}x(x-1)\\,{}^{n}_{x}C\\,p^xq^{n-x}+\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}\n\n=\\left[0(0-1)\\,{}^{n}_{0}C\\,p^0q^{n-0}+1(1-1)\\,{}^{n}_{1}C\\,p^1q^{n-1}+2(2-1)\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^nq^{n-n}\\right]+[np]\n\n=[0+0+n(n-1)\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^n]+(np)\n\n=n(n-1)\\,p^2\\,[q^{n-2}+\\ldots+p^{n-2}]+(np)\n\n=n(n-1)\\,p^2\\,[q+p]^{n-2}+(np)\n\n=n(n-1)\\,p^2\\,(1)^{n-2}+(np)\\qquad\\text{As } p+q=1\n\n=n^2p^2-np^2+np\\qquad(2)\n\nد (1) او (2) معادلې په (A) معادله کې ایښودو سره\n\nV(X)=n^2p^2-np^2+np-n^2p^2\n\n=np-np^2\n\n=np(1-p)\n\n=npq\\qquad(\\because q=1-p)\n\n(iii) د بینومیل وېش معیاري انحراف\n\nد تعریف له مخې\n\nS.D(X)=\\sqrt{V(X)}\n\n=\\sqrt{npq}",
+   "theoryUrdu": "=\\sum_x x(x-1)\\,p(x)+\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{n}x(x-1)\\,{}^{n}_{x}C\\,p^xq^{n-x}+\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}\n\n=\\left[0(0-1)\\,{}^{n}_{0}C\\,p^0q^{n-0}+1(1-1)\\,{}^{n}_{1}C\\,p^1q^{n-1}+2(2-1)\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^nq^{n-n}\\right]+[np]\n\n=[0+0+n(n-1)\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^n]+(np)\n\n=n(n-1)\\,p^2\\,[q^{n-2}+\\ldots+p^{n-2}]+(np)\n\n=n(n-1)\\,p^2\\,[q+p]^{n-2}+(np)\n\n=n(n-1)\\,p^2\\,(1)^{n-2}+(np)\\qquad\\text{As } p+q=1\n\n=n^2p^2-np^2+np\\qquad(2)\n\nمساوات (1) اور (2) کو مساوات (A) میں رکھنے سے\n\nV(X)=n^2p^2-np^2+np-n^2p^2\n\n=np-np^2\n\n=np(1-p)\n\n=npq\\qquad(\\because q=1-p)\n\n(iii) دو رقمی تقسیم کا معیاری انحراف\n\nتعریف کے مطابق\n\nS.D(X)=\\sqrt{V(X)}\n\n=\\sqrt{npq}",
+   "theoryPashto": "=\\sum_x x(x-1)\\,p(x)+\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{n}x(x-1)\\,{}^{n}_{x}C\\,p^xq^{n-x}+\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}\n\n=\\left[0(0-1)\\,{}^{n}_{0}C\\,p^0q^{n-0}+1(1-1)\\,{}^{n}_{1}C\\,p^1q^{n-1}+2(2-1)\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^nq^{n-n}\\right]+[np]\n\n=[0+0+n(n-1)\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^n]+(np)\n\n=n(n-1)\\,p^2\\,[q^{n-2}+\\ldots+p^{n-2}]+(np)\n\n=n(n-1)\\,p^2\\,[q+p]^{n-2}+(np)\n\n=n(n-1)\\,p^2\\,(1)^{n-2}+(np)\\qquad\\text{As } p+q=1\n\n=n^2p^2-np^2+np\\qquad(2)\n\nد (1) او (2) معادلې په (A) معادله کې ایښودو سره\n\nV(X)=n^2p^2-np^2+np-n^2p^2\n\n=np-np^2\n\n=np(1-p)\n\n=npq\\qquad(\\because q=1-p)\n\n(iii) د بینومیل وېش معیاري انحراف\n\nد تعریف له مخې\n\nS.D(X)=\\sqrt{V(X)}\n\n=\\sqrt{npq}",
+   "content": "<p>=\\sum_x x(x-1)\\,p(x)+\\sum_x x\\,p(x)</p><p>=\\sum_{x=0}^{n}x(x-1)\\,{}^{n}_{x}C\\,p^xq^{n-x}+\\sum_{x=0}^{n}x\\,{}^{n}_{x}C\\,p^xq^{n-x}</p><p>=\\left[0(0-1)\\,{}^{n}_{0}C\\,p^0q^{n-0}+1(1-1)\\,{}^{n}_{1}C\\,p^1q^{n-1}+2(2-1)\\,{}^{n}_{2}C\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^nq^{n-n}\\right]+[np]</p><p>=[0+0+n(n-1)\\,p^2q^{n-2}+\\ldots+n(n-1)\\,p^n]+(np)</p><p>=n(n-1)\\,p^2\\,[q^{n-2}+\\ldots+p^{n-2}]+(np)</p><p>=n(n-1)\\,p^2\\,[q+p]^{n-2}+(np)</p><p>=n(n-1)\\,p^2\\,(1)^{n-2}+(np)\\qquad\\text{As } p+q=1</p><p>=n^2p^2-np^2+np\\qquad(2)</p><p>Putting equation (1) and equation (2) in equation (A) we get</p><p>V(X)=n^2p^2-np^2+np-n^2p^2</p><p>=np-np^2</p><p>=np(1-p)</p><p>=npq\\qquad(\\because q=1-p)</p><p>(iii) Standard deviation of Binomial distribution</p><p>By definition</p><p>S.D(X)=\\sqrt{V(X)}</p><p>=\\sqrt{npq}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      15,
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 49,
+     "printedPages": [
+      89
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  },
+  {
+   "id": "stat12-p049-examples-3-13-3-14",
+   "title": "Examples 3.13–3.14 — binomial mean and variance",
+   "headingUrdu": "مثالیں 3.13–3.14 — دو رقمی اوسط اور تغیر",
+   "headingPashto": "بېلګې 3.13–3.14 — بینومیل منځنی او واریانس",
+   "paras": [
+    {
+     "text": "Example 3.13",
+     "urdu": "مثال 3.13",
+     "pashto": "بېلګه 3.13"
+    },
+    {
+     "text": "Find the mean, variance and standard deviation of the Binomial distribution whose parameters are n = 20 and $p=\\frac{3}{5}$.",
+     "urdu": "اس دو رقمی تقسیم کا اوسط، تغیر اور معیاری انحراف معلوم کریں جس کے پیرامیٹر n = 20 اور $p=\\frac{3}{5}$ ہیں۔",
+     "pashto": "د هغه بینومیل وېش منځنی، واریانس او معیاري انحراف پیدا کړئ چې پارامټرونه یې n = 20 او $p=\\frac{3}{5}$ دي."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "We have $n=20$, $p=\\frac{3}{5}$, $q=\\frac{2}{5}$, therefore,",
+     "urdu": "ہمارے پاس $n=20$، $p=\\frac{3}{5}$، $q=\\frac{2}{5}$ ہیں، لہٰذا",
+     "pashto": "موږ لرو $n=20$، $p=\\frac{3}{5}$، $q=\\frac{2}{5}$، نو"
+    },
+    {
+     "text": "$\\text{Mean}=np=20\\times\\frac{3}{5}=12$",
+     "urdu": "$\\text{Mean}=np=20\\times\\frac{3}{5}=12$",
+     "pashto": "$\\text{Mean}=np=20\\times\\frac{3}{5}=12$"
+    },
+    {
+     "text": "$\\text{Variance}=npq=20\\times\\frac{3}{5}\\times\\frac{2}{5}=4.8$",
+     "urdu": "$\\text{Variance}=npq=20\\times\\frac{3}{5}\\times\\frac{2}{5}=4.8$",
+     "pashto": "$\\text{Variance}=npq=20\\times\\frac{3}{5}\\times\\frac{2}{5}=4.8$"
+    },
+    {
+     "text": "$S.D(X)=\\sqrt{npq}=\\sqrt{4.8}=2.19$",
+     "urdu": "$S.D(X)=\\sqrt{npq}=\\sqrt{4.8}=2.19$",
+     "pashto": "$S.D(X)=\\sqrt{npq}=\\sqrt{4.8}=2.19$"
+    },
+    {
+     "text": "Example 3.14",
+     "urdu": "مثال 3.14",
+     "pashto": "بېلګه 3.14"
+    },
+    {
+     "text": "If n = 4, $p=\\frac{1}{3}$, find (i) the complete Binomial probability distribution. (ii) mean and variance of this distribution. (iii) calculate the mean and variance using properties and compare the results.",
+     "urdu": "اگر n = 4، $p=\\frac{1}{3}$ ہو تو معلوم کریں (i) مکمل دو رقمی احتمالی تقسیم۔ (ii) اس تقسیم کا اوسط اور تغیر۔ (iii) خصوصیات کی مدد سے اوسط اور تغیر معلوم کریں اور نتائج کا موازنہ کریں۔",
+     "pashto": "که n = 4، $p=\\frac{1}{3}$ وي، پیدا کړئ (i) بشپړ بینومیل احتمالي وېش. (ii) د دې وېش منځنی او واریانس. (iii) د ځانګړنو په کارولو سره منځنی او واریانس محاسبه کړئ او پایلې پرتله کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "(i) Here $p=\\frac{1}{3}$, $q=\\frac{2}{3}$, $n=4$, $X=0,1,2,3,4$",
+     "urdu": "(i) یہاں $p=\\frac{1}{3}$، $q=\\frac{2}{3}$، $n=4$، $X=0,1,2,3,4$",
+     "pashto": "(i) دلته $p=\\frac{1}{3}$، $q=\\frac{2}{3}$، $n=4$، $X=0,1,2,3,4$"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{3}\\right)^x\\left(\\frac{2}{3}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{3}\\right)^x\\left(\\frac{2}{3}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{3}\\right)^x\\left(\\frac{2}{3}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    }
+   ],
+   "theory": "Example 3.13\n\nFind the mean, variance and standard deviation of the Binomial distribution whose parameters are n = 20 and p=\\frac{3}{5}.\n\nSolution:\n\nWe have n=20, p=\\frac{3}{5}, q=\\frac{2}{5}, therefore,\n\n\\text{Mean}=np=20\\times\\frac{3}{5}=12\n\n\\text{Variance}=npq=20\\times\\frac{3}{5}\\times\\frac{2}{5}=4.8\n\nS.D(X)=\\sqrt{npq}=\\sqrt{4.8}=2.19\n\nExample 3.14\n\nIf n = 4, p=\\frac{1}{3}, find (i) the complete Binomial probability distribution. (ii) mean and variance of this distribution. (iii) calculate the mean and variance using properties and compare the results.\n\nSolution:\n\n(i) Here p=\\frac{1}{3}, q=\\frac{2}{3}, n=4, X=0,1,2,3,4\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{3}\\right)^x\\left(\\frac{2}{3}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$",
+   "urdu": "مثال 3.13\n\nاس دو رقمی تقسیم کا اوسط، تغیر اور معیاری انحراف معلوم کریں جس کے پیرامیٹر n = 20 اور p=\\frac{3}{5} ہیں۔\n\nحل:\n\nہمارے پاس n=20، p=\\frac{3}{5}، q=\\frac{2}{5} ہیں، لہٰذا\n\n\\text{Mean}=np=20\\times\\frac{3}{5}=12\n\n\\text{Variance}=npq=20\\times\\frac{3}{5}\\times\\frac{2}{5}=4.8\n\nS.D(X)=\\sqrt{npq}=\\sqrt{4.8}=2.19\n\nمثال 3.14\n\nاگر n = 4، p=\\frac{1}{3} ہو تو معلوم کریں (i) مکمل دو رقمی احتمالی تقسیم۔ (ii) اس تقسیم کا اوسط اور تغیر۔ (iii) خصوصیات کی مدد سے اوسط اور تغیر معلوم کریں اور نتائج کا موازنہ کریں۔\n\nحل:\n\n(i) یہاں p=\\frac{1}{3}، q=\\frac{2}{3}، n=4، X=0,1,2,3,4\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{3}\\right)^x\\left(\\frac{2}{3}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$",
+   "pashto": "بېلګه 3.13\n\nد هغه بینومیل وېش منځنی، واریانس او معیاري انحراف پیدا کړئ چې پارامټرونه یې n = 20 او p=\\frac{3}{5} دي.\n\nحل:\n\nموږ لرو n=20، p=\\frac{3}{5}، q=\\frac{2}{5}، نو\n\n\\text{Mean}=np=20\\times\\frac{3}{5}=12\n\n\\text{Variance}=npq=20\\times\\frac{3}{5}\\times\\frac{2}{5}=4.8\n\nS.D(X)=\\sqrt{npq}=\\sqrt{4.8}=2.19\n\nبېلګه 3.14\n\nکه n = 4، p=\\frac{1}{3} وي، پیدا کړئ (i) بشپړ بینومیل احتمالي وېش. (ii) د دې وېش منځنی او واریانس. (iii) د ځانګړنو په کارولو سره منځنی او واریانس محاسبه کړئ او پایلې پرتله کړئ.\n\nحل:\n\n(i) دلته p=\\frac{1}{3}، q=\\frac{2}{3}، n=4، X=0,1,2,3,4\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{3}\\right)^x\\left(\\frac{2}{3}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$",
+   "theoryUrdu": "مثال 3.13\n\nاس دو رقمی تقسیم کا اوسط، تغیر اور معیاری انحراف معلوم کریں جس کے پیرامیٹر n = 20 اور p=\\frac{3}{5} ہیں۔\n\nحل:\n\nہمارے پاس n=20، p=\\frac{3}{5}، q=\\frac{2}{5} ہیں، لہٰذا\n\n\\text{Mean}=np=20\\times\\frac{3}{5}=12\n\n\\text{Variance}=npq=20\\times\\frac{3}{5}\\times\\frac{2}{5}=4.8\n\nS.D(X)=\\sqrt{npq}=\\sqrt{4.8}=2.19\n\nمثال 3.14\n\nاگر n = 4، p=\\frac{1}{3} ہو تو معلوم کریں (i) مکمل دو رقمی احتمالی تقسیم۔ (ii) اس تقسیم کا اوسط اور تغیر۔ (iii) خصوصیات کی مدد سے اوسط اور تغیر معلوم کریں اور نتائج کا موازنہ کریں۔\n\nحل:\n\n(i) یہاں p=\\frac{1}{3}، q=\\frac{2}{3}، n=4، X=0,1,2,3,4\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{3}\\right)^x\\left(\\frac{2}{3}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$",
+   "theoryPashto": "بېلګه 3.13\n\nد هغه بینومیل وېش منځنی، واریانس او معیاري انحراف پیدا کړئ چې پارامټرونه یې n = 20 او p=\\frac{3}{5} دي.\n\nحل:\n\nموږ لرو n=20، p=\\frac{3}{5}، q=\\frac{2}{5}، نو\n\n\\text{Mean}=np=20\\times\\frac{3}{5}=12\n\n\\text{Variance}=npq=20\\times\\frac{3}{5}\\times\\frac{2}{5}=4.8\n\nS.D(X)=\\sqrt{npq}=\\sqrt{4.8}=2.19\n\nبېلګه 3.14\n\nکه n = 4، p=\\frac{1}{3} وي، پیدا کړئ (i) بشپړ بینومیل احتمالي وېش. (ii) د دې وېش منځنی او واریانس. (iii) د ځانګړنو په کارولو سره منځنی او واریانس محاسبه کړئ او پایلې پرتله کړئ.\n\nحل:\n\n(i) دلته p=\\frac{1}{3}، q=\\frac{2}{3}، n=4، X=0,1,2,3,4\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{3}\\right)^x\\left(\\frac{2}{3}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$",
+   "content": "<p>Example 3.13</p><p>Find the mean, variance and standard deviation of the Binomial distribution whose parameters are n = 20 and p=\\frac{3}{5}.</p><p>Solution:</p><p>We have n=20, p=\\frac{3}{5}, q=\\frac{2}{5}, therefore,</p><p>\\text{Mean}=np=20\\times\\frac{3}{5}=12</p><p>\\text{Variance}=npq=20\\times\\frac{3}{5}\\times\\frac{2}{5}=4.8</p><p>S.D(X)=\\sqrt{npq}=\\sqrt{4.8}=2.19</p><p>Example 3.14</p><p>If n = 4, p=\\frac{1}{3}, find (i) the complete Binomial probability distribution. (ii) mean and variance of this distribution. (iii) calculate the mean and variance using properties and compare the results.</p><p>Solution:</p><p>(i) Here p=\\frac{1}{3}, q=\\frac{2}{3}, n=4, X=0,1,2,3,4</p><p>$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{3}\\right)^x\\left(\\frac{2}{3}\\right)^{4-x}, &amp; x=0,1,2,3,4\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 49,
+     "printedPages": [
+      90
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

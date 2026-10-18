@@ -1,0 +1,355 @@
+{
+ "pdfPage": 51,
+ "sections": [
+  {
+   "id": "stat12-p051-binomial-frequency",
+   "title": "Example 3.16 end; 3.3.4 binomial frequency distribution — Example 3.17",
+   "headingUrdu": "مثال 3.16 کا اختتام؛ 3.3.4 دو رقمی تعددی تقسیم — مثال 3.17",
+   "headingPashto": "د بېلګې 3.16 پای؛ 3.3.4 بینومیل فریکونسي وېش — بېلګه 3.17",
+   "paras": [
+    {
+     "text": "$q=\\frac{8.64}{38}=0.23$",
+     "urdu": "$q=\\frac{8.64}{38}=0.23$",
+     "pashto": "$q=\\frac{8.64}{38}=0.23$"
+    },
+    {
+     "text": "$\\therefore p=1-q=1-0.23=0.77$",
+     "urdu": "$\\therefore p=1-q=1-0.23=0.77$",
+     "pashto": "$\\therefore p=1-q=1-0.23=0.77$"
+    },
+    {
+     "text": "Put in equation (i), the value of p, to have",
+     "urdu": "مساوات (i) میں p کی قیمت رکھنے سے",
+     "pashto": "په (i) معادله کې د p قیمت ایښودو سره"
+    },
+    {
+     "text": "$n(0.77)=38$",
+     "urdu": "$n(0.77)=38$",
+     "pashto": "$n(0.77)=38$"
+    },
+    {
+     "text": "$n=\\frac{38}{0.77}=49.351\\cong 50$",
+     "urdu": "$n=\\frac{38}{0.77}=49.351\\cong 50$",
+     "pashto": "$n=\\frac{38}{0.77}=49.351\\cong 50$"
+    },
+    {
+     "text": "Hence the required parameters are $[n=49,\\ p=0.77]$",
+     "urdu": "لہٰذا مطلوبہ پیرامیٹر یہ ہیں $[n=49,\\ p=0.77]$",
+     "pashto": "نو اړین پارامټرونه دا دي $[n=49,\\ p=0.77]$"
+    },
+    {
+     "text": "3.3.4 Binomial frequency distribution",
+     "urdu": "3.3.4 دو رقمی تعددی تقسیم",
+     "pashto": "3.3.4 بینومیل فریکونسي وېش"
+    },
+    {
+     "text": "If the Binomial probability distribution is multiplied by N, the number of Binomial experiments, i.e. $Np(x)=N\\left[{}^{n}_{x}C\\,p^xq^{n-x}\\right]$, the resulting distribution is known as Binomial frequency distribution. It is used to find the expected frequency ($E_f$) of X successes in N Binomial experiments.",
+     "urdu": "اگر دو رقمی احتمالی تقسیم کو دو رقمی تجربات کی تعداد N سے ضرب دیا جائے یعنی $Np(x)=N\\left[{}^{n}_{x}C\\,p^xq^{n-x}\\right]$، تو حاصل ہونے والی تقسیم دو رقمی تعددی تقسیم کہلاتی ہے۔ اسے N دو رقمی تجربات میں X کامیابیوں کا متوقع تعدد ($E_f$) معلوم کرنے کے لیے استعمال کیا جاتا ہے۔",
+     "pashto": "که بینومیل احتمالي وېش د بینومیل تجربو په شمېر N کې ضرب شي یعنې $Np(x)=N\\left[{}^{n}_{x}C\\,p^xq^{n-x}\\right]$، نو پایله لرونکی وېش بینومیل فریکونسي وېش بلل کېږي. په N بینومیل تجربو کې د X بریاوو د تمه شوې فریکونسۍ ($E_f$) د پیدا کولو لپاره کارول کېږي."
+    },
+    {
+     "text": "Example 3.17",
+     "urdu": "مثال 3.17",
+     "pashto": "بېلګه 3.17"
+    },
+    {
+     "text": "Suppose five fair dice are rolled 96 times. Find the expected frequencies when the number 4, 5 or 6 is regarded as success.",
+     "urdu": "فرض کریں پانچ منصفانہ پانسے 96 بار پھینکے جاتے ہیں۔ جب عدد 4، 5 یا 6 کو کامیابی سمجھا جائے تو متوقع تعدد معلوم کریں۔",
+     "pashto": "فرض کړئ پنځه عادلانه ډایسونه 96 ځله اچول کېږي. کله چې عدد 4، 5 یا 6 بریا وګڼل شي، تمه شوې فریکونسۍ پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "We have $N=96$, $n=5$, X: number of dice showing 4, 5 or 6.",
+     "urdu": "ہمارے پاس $N=96$، $n=5$، X: 4، 5 یا 6 دکھانے والے پانسوں کی تعداد۔",
+     "pashto": "موږ لرو $N=96$، $n=5$، X: د هغو ډایسونو شمېر چې 4، 5 یا 6 ښيي."
+    },
+    {
+     "text": "$$X=0,1,2,3,4,5$$",
+     "urdu": "$$X=0,1,2,3,4,5$$",
+     "pashto": "$$X=0,1,2,3,4,5$$"
+    },
+    {
+     "text": "$p=P$[resulting 4,5 or 6 on a single die] $=\\frac{3}{6}=\\frac{1}{2}$, $q=\\frac{1}{2}$",
+     "urdu": "$p=P$[ایک پانسے پر 4، 5 یا 6 آنا] $=\\frac{3}{6}=\\frac{1}{2}$، $q=\\frac{1}{2}$",
+     "pashto": "$p=P$[په یوه ډایس د 4، 5 یا 6 راتلل] $=\\frac{3}{6}=\\frac{1}{2}$، $q=\\frac{1}{2}$"
+    },
+    {
+     "text": "$$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x},\\ x=0,1,2,3,4,5$$",
+     "urdu": "$$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x},\\ x=0,1,2,3,4,5$$",
+     "pashto": "$$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x},\\ x=0,1,2,3,4,5$$"
+    },
+    {
+     "text": "Now expected frequencies are computed as follows:",
+     "urdu": "اب متوقع تعدد یوں معلوم کیے جاتے ہیں:",
+     "pashto": "اوس تمه شوې فریکونسۍ داسې محاسبه کېږي:"
+    }
+   ],
+   "theory": "q=\\frac{8.64}{38}=0.23\n\n\\therefore p=1-q=1-0.23=0.77\n\nPut in equation (i), the value of p, to have\n\nn(0.77)=38\n\nn=\\frac{38}{0.77}=49.351\\cong 50\n\nHence the required parameters are [n=49,\\ p=0.77]\n\n3.3.4 Binomial frequency distribution\n\nIf the Binomial probability distribution is multiplied by N, the number of Binomial experiments, i.e. Np(x)=N\\left[{}^{n}_{x}C\\,p^xq^{n-x}\\right], the resulting distribution is known as Binomial frequency distribution. It is used to find the expected frequency (E_f) of X successes in N Binomial experiments.\n\nExample 3.17\n\nSuppose five fair dice are rolled 96 times. Find the expected frequencies when the number 4, 5 or 6 is regarded as success.\n\nSolution:\n\nWe have N=96, n=5, X: number of dice showing 4, 5 or 6.\n\n$X=0,1,2,3,4,5$\n\np=P[resulting 4,5 or 6 on a single die] =\\frac{3}{6}=\\frac{1}{2}, q=\\frac{1}{2}\n\n$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x},\\ x=0,1,2,3,4,5$\n\nNow expected frequencies are computed as follows:",
+   "urdu": "q=\\frac{8.64}{38}=0.23\n\n\\therefore p=1-q=1-0.23=0.77\n\nمساوات (i) میں p کی قیمت رکھنے سے\n\nn(0.77)=38\n\nn=\\frac{38}{0.77}=49.351\\cong 50\n\nلہٰذا مطلوبہ پیرامیٹر یہ ہیں [n=49,\\ p=0.77]\n\n3.3.4 دو رقمی تعددی تقسیم\n\nاگر دو رقمی احتمالی تقسیم کو دو رقمی تجربات کی تعداد N سے ضرب دیا جائے یعنی Np(x)=N\\left[{}^{n}_{x}C\\,p^xq^{n-x}\\right]، تو حاصل ہونے والی تقسیم دو رقمی تعددی تقسیم کہلاتی ہے۔ اسے N دو رقمی تجربات میں X کامیابیوں کا متوقع تعدد (E_f) معلوم کرنے کے لیے استعمال کیا جاتا ہے۔\n\nمثال 3.17\n\nفرض کریں پانچ منصفانہ پانسے 96 بار پھینکے جاتے ہیں۔ جب عدد 4، 5 یا 6 کو کامیابی سمجھا جائے تو متوقع تعدد معلوم کریں۔\n\nحل:\n\nہمارے پاس N=96، n=5، X: 4، 5 یا 6 دکھانے والے پانسوں کی تعداد۔\n\n$X=0,1,2,3,4,5$\n\np=P[ایک پانسے پر 4، 5 یا 6 آنا] =\\frac{3}{6}=\\frac{1}{2}، q=\\frac{1}{2}\n\n$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x},\\ x=0,1,2,3,4,5$\n\nاب متوقع تعدد یوں معلوم کیے جاتے ہیں:",
+   "pashto": "q=\\frac{8.64}{38}=0.23\n\n\\therefore p=1-q=1-0.23=0.77\n\nپه (i) معادله کې د p قیمت ایښودو سره\n\nn(0.77)=38\n\nn=\\frac{38}{0.77}=49.351\\cong 50\n\nنو اړین پارامټرونه دا دي [n=49,\\ p=0.77]\n\n3.3.4 بینومیل فریکونسي وېش\n\nکه بینومیل احتمالي وېش د بینومیل تجربو په شمېر N کې ضرب شي یعنې Np(x)=N\\left[{}^{n}_{x}C\\,p^xq^{n-x}\\right]، نو پایله لرونکی وېش بینومیل فریکونسي وېش بلل کېږي. په N بینومیل تجربو کې د X بریاوو د تمه شوې فریکونسۍ (E_f) د پیدا کولو لپاره کارول کېږي.\n\nبېلګه 3.17\n\nفرض کړئ پنځه عادلانه ډایسونه 96 ځله اچول کېږي. کله چې عدد 4، 5 یا 6 بریا وګڼل شي، تمه شوې فریکونسۍ پیدا کړئ.\n\nحل:\n\nموږ لرو N=96، n=5، X: د هغو ډایسونو شمېر چې 4، 5 یا 6 ښيي.\n\n$X=0,1,2,3,4,5$\n\np=P[په یوه ډایس د 4، 5 یا 6 راتلل] =\\frac{3}{6}=\\frac{1}{2}، q=\\frac{1}{2}\n\n$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x},\\ x=0,1,2,3,4,5$\n\nاوس تمه شوې فریکونسۍ داسې محاسبه کېږي:",
+   "theoryUrdu": "q=\\frac{8.64}{38}=0.23\n\n\\therefore p=1-q=1-0.23=0.77\n\nمساوات (i) میں p کی قیمت رکھنے سے\n\nn(0.77)=38\n\nn=\\frac{38}{0.77}=49.351\\cong 50\n\nلہٰذا مطلوبہ پیرامیٹر یہ ہیں [n=49,\\ p=0.77]\n\n3.3.4 دو رقمی تعددی تقسیم\n\nاگر دو رقمی احتمالی تقسیم کو دو رقمی تجربات کی تعداد N سے ضرب دیا جائے یعنی Np(x)=N\\left[{}^{n}_{x}C\\,p^xq^{n-x}\\right]، تو حاصل ہونے والی تقسیم دو رقمی تعددی تقسیم کہلاتی ہے۔ اسے N دو رقمی تجربات میں X کامیابیوں کا متوقع تعدد (E_f) معلوم کرنے کے لیے استعمال کیا جاتا ہے۔\n\nمثال 3.17\n\nفرض کریں پانچ منصفانہ پانسے 96 بار پھینکے جاتے ہیں۔ جب عدد 4، 5 یا 6 کو کامیابی سمجھا جائے تو متوقع تعدد معلوم کریں۔\n\nحل:\n\nہمارے پاس N=96، n=5، X: 4، 5 یا 6 دکھانے والے پانسوں کی تعداد۔\n\n$X=0,1,2,3,4,5$\n\np=P[ایک پانسے پر 4، 5 یا 6 آنا] =\\frac{3}{6}=\\frac{1}{2}، q=\\frac{1}{2}\n\n$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x},\\ x=0,1,2,3,4,5$\n\nاب متوقع تعدد یوں معلوم کیے جاتے ہیں:",
+   "theoryPashto": "q=\\frac{8.64}{38}=0.23\n\n\\therefore p=1-q=1-0.23=0.77\n\nپه (i) معادله کې د p قیمت ایښودو سره\n\nn(0.77)=38\n\nn=\\frac{38}{0.77}=49.351\\cong 50\n\nنو اړین پارامټرونه دا دي [n=49,\\ p=0.77]\n\n3.3.4 بینومیل فریکونسي وېش\n\nکه بینومیل احتمالي وېش د بینومیل تجربو په شمېر N کې ضرب شي یعنې Np(x)=N\\left[{}^{n}_{x}C\\,p^xq^{n-x}\\right]، نو پایله لرونکی وېش بینومیل فریکونسي وېش بلل کېږي. په N بینومیل تجربو کې د X بریاوو د تمه شوې فریکونسۍ (E_f) د پیدا کولو لپاره کارول کېږي.\n\nبېلګه 3.17\n\nفرض کړئ پنځه عادلانه ډایسونه 96 ځله اچول کېږي. کله چې عدد 4، 5 یا 6 بریا وګڼل شي، تمه شوې فریکونسۍ پیدا کړئ.\n\nحل:\n\nموږ لرو N=96، n=5، X: د هغو ډایسونو شمېر چې 4، 5 یا 6 ښيي.\n\n$X=0,1,2,3,4,5$\n\np=P[په یوه ډایس د 4، 5 یا 6 راتلل] =\\frac{3}{6}=\\frac{1}{2}، q=\\frac{1}{2}\n\n$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x},\\ x=0,1,2,3,4,5$\n\nاوس تمه شوې فریکونسۍ داسې محاسبه کېږي:",
+   "content": "<p>q=\\frac{8.64}{38}=0.23</p><p>\\therefore p=1-q=1-0.23=0.77</p><p>Put in equation (i), the value of p, to have</p><p>n(0.77)=38</p><p>n=\\frac{38}{0.77}=49.351\\cong 50</p><p>Hence the required parameters are [n=49,\\ p=0.77]</p><p>3.3.4 Binomial frequency distribution</p><p>If the Binomial probability distribution is multiplied by N, the number of Binomial experiments, i.e. Np(x)=N\\left[{}^{n}_{x}C\\,p^xq^{n-x}\\right], the resulting distribution is known as Binomial frequency distribution. It is used to find the expected frequency (E_f) of X successes in N Binomial experiments.</p><p>Example 3.17</p><p>Suppose five fair dice are rolled 96 times. Find the expected frequencies when the number 4, 5 or 6 is regarded as success.</p><p>Solution:</p><p>We have N=96, n=5, X: number of dice showing 4, 5 or 6.</p><p>$X=0,1,2,3,4,5$</p><p>p=P[resulting 4,5 or 6 on a single die] =\\frac{3}{6}=\\frac{1}{2}, q=\\frac{1}{2}</p><p>$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x},\\ x=0,1,2,3,4,5$</p><p>Now expected frequencies are computed as follows:</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      3,
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex3-17"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex3-17",
+     "headers": [
+      "$X$",
+      "$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x}$",
+      "$E_f=N\\,p(x)$"
+     ],
+     "rows": [
+      [
+       "0",
+       "${}^{5}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{5-0}=\\frac{1}{32}$",
+       "$96\\left(\\frac{1}{32}\\right)=03$"
+      ],
+      [
+       "1",
+       "${}^{5}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{5-1}=\\frac{5}{32}$",
+       "$96\\left(\\frac{5}{32}\\right)=15$"
+      ],
+      [
+       "2",
+       "${}^{5}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{5-2}=\\frac{10}{32}$",
+       "$=30$"
+      ],
+      [
+       "3",
+       "${}^{5}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{5-3}=\\frac{10}{32}$",
+       "$=30$"
+      ],
+      [
+       "4",
+       "${}^{5}_{4}C\\left(\\frac{1}{2}\\right)^{4}\\left(\\frac{1}{2}\\right)^{5-4}=\\frac{5}{32}$",
+       "$=15$"
+      ],
+      [
+       "5",
+       "${}^{5}_{5}C\\left(\\frac{1}{2}\\right)^{5}\\left(\\frac{1}{2}\\right)^{5-5}=\\frac{1}{32}$",
+       "$=03$"
+      ],
+      [
+       "Total",
+       "1",
+       "96"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x}$",
+        "$E_f=N\\,p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "${}^{5}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{5-0}=\\frac{1}{32}$",
+         "$96\\left(\\frac{1}{32}\\right)=03$"
+        ],
+        [
+         "1",
+         "${}^{5}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{5-1}=\\frac{5}{32}$",
+         "$96\\left(\\frac{5}{32}\\right)=15$"
+        ],
+        [
+         "2",
+         "${}^{5}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{5-2}=\\frac{10}{32}$",
+         "$=30$"
+        ],
+        [
+         "3",
+         "${}^{5}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{5-3}=\\frac{10}{32}$",
+         "$=30$"
+        ],
+        [
+         "4",
+         "${}^{5}_{4}C\\left(\\frac{1}{2}\\right)^{4}\\left(\\frac{1}{2}\\right)^{5-4}=\\frac{5}{32}$",
+         "$=15$"
+        ],
+        [
+         "5",
+         "${}^{5}_{5}C\\left(\\frac{1}{2}\\right)^{5}\\left(\\frac{1}{2}\\right)^{5-5}=\\frac{1}{32}$",
+         "$=03$"
+        ],
+        [
+         "کل",
+         "1",
+         "96"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)={}^{5}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{5-x}$",
+        "$E_f=N\\,p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "${}^{5}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{5-0}=\\frac{1}{32}$",
+         "$96\\left(\\frac{1}{32}\\right)=03$"
+        ],
+        [
+         "1",
+         "${}^{5}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{5-1}=\\frac{5}{32}$",
+         "$96\\left(\\frac{5}{32}\\right)=15$"
+        ],
+        [
+         "2",
+         "${}^{5}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{5-2}=\\frac{10}{32}$",
+         "$=30$"
+        ],
+        [
+         "3",
+         "${}^{5}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{5-3}=\\frac{10}{32}$",
+         "$=30$"
+        ],
+        [
+         "4",
+         "${}^{5}_{4}C\\left(\\frac{1}{2}\\right)^{4}\\left(\\frac{1}{2}\\right)^{5-4}=\\frac{5}{32}$",
+         "$=15$"
+        ],
+        [
+         "5",
+         "${}^{5}_{5}C\\left(\\frac{1}{2}\\right)^{5}\\left(\\frac{1}{2}\\right)^{5-5}=\\frac{1}{32}$",
+         "$=03$"
+        ],
+        [
+         "ټول",
+         "1",
+         "96"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 51,
+     "printedPages": [
+      93,
+      94
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p93-n49-50",
+   "unit": 3,
+   "printedPage": 93,
+   "description": "Example 3.16 rounds n = 49.351 ≅ 50 but states the parameters as n = 49; both printed values retained."
+  }
+ ],
+ "completeUnits": []
+}

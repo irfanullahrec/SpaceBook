@@ -1,0 +1,478 @@
+{
+ "pdfPage": 29,
+ "sections": [
+  {
+   "id": "stat12-p029-variance-properties",
+   "title": "Properties (ii)–(iv) of variance — Example 2.14",
+   "headingUrdu": "تغیر کی خصوصیات (ii)–(iv) — مثال 2.14",
+   "headingPashto": "د واریانس ځانګړنې (ii)–(iv) — بېلګه 2.14",
+   "paras": [
+    {
+     "text": "$=E[X+c-E(X)-c]^2\\quad\\because E(c)=c$",
+     "urdu": "$=E[X+c-E(X)-c]^2\\quad\\because E(c)=c$",
+     "pashto": "$=E[X+c-E(X)-c]^2\\quad\\because E(c)=c$"
+    },
+    {
+     "text": "$=E[X-E(X)]^2$",
+     "urdu": "$=E[X-E(X)]^2$",
+     "pashto": "$=E[X-E(X)]^2$"
+    },
+    {
+     "text": "$=V(X)$",
+     "urdu": "$=V(X)$",
+     "pashto": "$=V(X)$"
+    },
+    {
+     "text": "$\\text{Similarly } V(X-c)=V(X)$",
+     "urdu": "$\\text{Similarly } V(X-c)=V(X)$",
+     "pashto": "$\\text{Similarly } V(X-c)=V(X)$"
+    },
+    {
+     "text": "$S.D(X\\pm c)=S.D(X)$",
+     "urdu": "$S.D(X\\pm c)=S.D(X)$",
+     "pashto": "$S.D(X\\pm c)=S.D(X)$"
+    },
+    {
+     "text": "(iii) If the values of a random variable are multiplied or divided by a constant, then its variance will change by the square of that constant i.e.",
+     "urdu": "(iii) اگر تصادفی متغیر کی قیمتوں کو کسی مستقل سے ضرب یا تقسیم کیا جائے تو اس کا تغیر اس مستقل کے مربع کے حساب سے بدل جائے گا، یعنی",
+     "pashto": "(iii) که د تصادفي متغیر قیمتونه په یوه ثابت کې ضرب یا پرې ووېشل شي، نو واریانس یې د هغه ثابت د مربع په اندازه بدلېږي، یعنې"
+    },
+    {
+     "text": "$V(cX)=c^2\\,V(X)$",
+     "urdu": "$V(cX)=c^2\\,V(X)$",
+     "pashto": "$V(cX)=c^2\\,V(X)$"
+    },
+    {
+     "text": "$V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}$",
+     "urdu": "$V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}$",
+     "pashto": "$V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}$"
+    },
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "By definition $V(X)=E[X-E(X)]^2$",
+     "urdu": "تعریف کے مطابق $V(X)=E[X-E(X)]^2$",
+     "pashto": "د تعریف له مخې $V(X)=E[X-E(X)]^2$"
+    },
+    {
+     "text": "As (cX) is function of the random variable X so,",
+     "urdu": "چونکہ (cX) تصادفی متغیر X کا تفاعل ہے، لہٰذا",
+     "pashto": "څرنګه چې (cX) د تصادفي متغیر X تابع ده، نو"
+    },
+    {
+     "text": "$V(cX)=E[cX-E(cX)]^2$",
+     "urdu": "$V(cX)=E[cX-E(cX)]^2$",
+     "pashto": "$V(cX)=E[cX-E(cX)]^2$"
+    },
+    {
+     "text": "$=E[cX-cE(X)]^2$",
+     "urdu": "$=E[cX-cE(X)]^2$",
+     "pashto": "$=E[cX-cE(X)]^2$"
+    },
+    {
+     "text": "$=c^2E[X-E(X)]^2$",
+     "urdu": "$=c^2E[X-E(X)]^2$",
+     "pashto": "$=c^2E[X-E(X)]^2$"
+    },
+    {
+     "text": "$=c^2\\,V(X)$",
+     "urdu": "$=c^2\\,V(X)$",
+     "pashto": "$=c^2\\,V(X)$"
+    },
+    {
+     "text": "$\\text{Similarly } V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}$",
+     "urdu": "$\\text{Similarly } V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}$",
+     "pashto": "$\\text{Similarly } V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}$"
+    },
+    {
+     "text": "$S.D(cX)=|c|\\,S.D(X)$",
+     "urdu": "$S.D(cX)=|c|\\,S.D(X)$",
+     "pashto": "$S.D(cX)=|c|\\,S.D(X)$"
+    },
+    {
+     "text": "$S.D\\left(\\frac{X}{c}\\right)=\\frac{S.D(X)}{|c|}$",
+     "urdu": "$S.D\\left(\\frac{X}{c}\\right)=\\frac{S.D(X)}{|c|}$",
+     "pashto": "$S.D\\left(\\frac{X}{c}\\right)=\\frac{S.D(X)}{|c|}$"
+    },
+    {
+     "text": "(iv) Variance and standard deviation can never be negative i.e. $V(X)\\ge 0$ and $S.D(X)\\ge 0$",
+     "urdu": "(iv) تغیر اور معیاری انحراف کبھی منفی نہیں ہو سکتے یعنی $V(X)\\ge 0$ اور $S.D(X)\\ge 0$",
+     "pashto": "(iv) واریانس او معیاري انحراف هېڅکله منفي نه شي کېدای یعنې $V(X)\\ge 0$ او $S.D(X)\\ge 0$"
+    },
+    {
+     "text": "Example 2.14",
+     "urdu": "مثال 2.14",
+     "pashto": "بېلګه 2.14"
+    },
+    {
+     "text": "A random variable X has the probability distribution given below",
+     "urdu": "ایک تصادفی متغیر X کی احتمالی تقسیم نیچے دی گئی ہے",
+     "pashto": "یو تصادفي متغیر X لاندې ورکړل شوی احتمالي وېش لري"
+    },
+    {
+     "text": "Find i) E(X), ii) V(X), iii) V(X+5), iv) V(X − 3), v) V(3X) vi) $S.D\\left(\\frac{X}{3}\\right)$",
+     "urdu": "معلوم کریں i) E(X)، ii) V(X)، iii) V(X+5)، iv) V(X − 3)، v) V(3X) vi) $S.D\\left(\\frac{X}{3}\\right)$",
+     "pashto": "پیدا کړئ i) E(X)، ii) V(X)، iii) V(X+5)، iv) V(X − 3)، v) V(3X) vi) $S.D\\left(\\frac{X}{3}\\right)$"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$(i)\\quad E(X)=\\Sigma x\\,p(x)=\\frac{11}{10}=1.1$",
+     "urdu": "$(i)\\quad E(X)=\\Sigma x\\,p(x)=\\frac{11}{10}=1.1$",
+     "pashto": "$(i)\\quad E(X)=\\Sigma x\\,p(x)=\\frac{11}{10}=1.1$"
+    },
+    {
+     "text": "$(ii)\\quad V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-(1.1)^2$",
+     "urdu": "$(ii)\\quad V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-(1.1)^2$",
+     "pashto": "$(ii)\\quad V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-(1.1)^2$"
+    },
+    {
+     "text": "$=\\frac{21}{10}-1.21$",
+     "urdu": "$=\\frac{21}{10}-1.21$",
+     "pashto": "$=\\frac{21}{10}-1.21$"
+    },
+    {
+     "text": "$=2.1-1.21=0.89$",
+     "urdu": "$=2.1-1.21=0.89$",
+     "pashto": "$=2.1-1.21=0.89$"
+    },
+    {
+     "text": "$(iii)\\ \\text{By property of variance}\\ V(X+5)=V(X)=0.89$",
+     "urdu": "$(iii)\\ \\text{By property of variance}\\ V(X+5)=V(X)=0.89$",
+     "pashto": "$(iii)\\ \\text{By property of variance}\\ V(X+5)=V(X)=0.89$"
+    },
+    {
+     "text": "$(iv)\\quad V(X-3)=V(X)=0.89$",
+     "urdu": "$(iv)\\quad V(X-3)=V(X)=0.89$",
+     "pashto": "$(iv)\\quad V(X-3)=V(X)=0.89$"
+    },
+    {
+     "text": "$(v)\\quad V(3X)=3^2V(X)=9(0.89)=8.01$",
+     "urdu": "$(v)\\quad V(3X)=3^2V(X)=9(0.89)=8.01$",
+     "pashto": "$(v)\\quad V(3X)=3^2V(X)=9(0.89)=8.01$"
+    }
+   ],
+   "theory": "=E[X+c-E(X)-c]^2\\quad\\because E(c)=c\n\n=E[X-E(X)]^2\n\n=V(X)\n\n\\text{Similarly } V(X-c)=V(X)\n\nS.D(X\\pm c)=S.D(X)\n\n(iii) If the values of a random variable are multiplied or divided by a constant, then its variance will change by the square of that constant i.e.\n\nV(cX)=c^2\\,V(X)\n\nV\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}\n\nProof:\n\nBy definition V(X)=E[X-E(X)]^2\n\nAs (cX) is function of the random variable X so,\n\nV(cX)=E[cX-E(cX)]^2\n\n=E[cX-cE(X)]^2\n\n=c^2E[X-E(X)]^2\n\n=c^2\\,V(X)\n\n\\text{Similarly } V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}\n\nS.D(cX)=|c|\\,S.D(X)\n\nS.D\\left(\\frac{X}{c}\\right)=\\frac{S.D(X)}{|c|}\n\n(iv) Variance and standard deviation can never be negative i.e. V(X)\\ge 0 and S.D(X)\\ge 0\n\nExample 2.14\n\nA random variable X has the probability distribution given below\n\nFind i) E(X), ii) V(X), iii) V(X+5), iv) V(X − 3), v) V(3X) vi) S.D\\left(\\frac{X}{3}\\right)\n\nSolution:\n\n(i)\\quad E(X)=\\Sigma x\\,p(x)=\\frac{11}{10}=1.1\n\n(ii)\\quad V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-(1.1)^2\n\n=\\frac{21}{10}-1.21\n\n=2.1-1.21=0.89\n\n(iii)\\ \\text{By property of variance}\\ V(X+5)=V(X)=0.89\n\n(iv)\\quad V(X-3)=V(X)=0.89\n\n(v)\\quad V(3X)=3^2V(X)=9(0.89)=8.01",
+   "urdu": "=E[X+c-E(X)-c]^2\\quad\\because E(c)=c\n\n=E[X-E(X)]^2\n\n=V(X)\n\n\\text{Similarly } V(X-c)=V(X)\n\nS.D(X\\pm c)=S.D(X)\n\n(iii) اگر تصادفی متغیر کی قیمتوں کو کسی مستقل سے ضرب یا تقسیم کیا جائے تو اس کا تغیر اس مستقل کے مربع کے حساب سے بدل جائے گا، یعنی\n\nV(cX)=c^2\\,V(X)\n\nV\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}\n\nثبوت:\n\nتعریف کے مطابق V(X)=E[X-E(X)]^2\n\nچونکہ (cX) تصادفی متغیر X کا تفاعل ہے، لہٰذا\n\nV(cX)=E[cX-E(cX)]^2\n\n=E[cX-cE(X)]^2\n\n=c^2E[X-E(X)]^2\n\n=c^2\\,V(X)\n\n\\text{Similarly } V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}\n\nS.D(cX)=|c|\\,S.D(X)\n\nS.D\\left(\\frac{X}{c}\\right)=\\frac{S.D(X)}{|c|}\n\n(iv) تغیر اور معیاری انحراف کبھی منفی نہیں ہو سکتے یعنی V(X)\\ge 0 اور S.D(X)\\ge 0\n\nمثال 2.14\n\nایک تصادفی متغیر X کی احتمالی تقسیم نیچے دی گئی ہے\n\nمعلوم کریں i) E(X)، ii) V(X)، iii) V(X+5)، iv) V(X − 3)، v) V(3X) vi) S.D\\left(\\frac{X}{3}\\right)\n\nحل:\n\n(i)\\quad E(X)=\\Sigma x\\,p(x)=\\frac{11}{10}=1.1\n\n(ii)\\quad V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-(1.1)^2\n\n=\\frac{21}{10}-1.21\n\n=2.1-1.21=0.89\n\n(iii)\\ \\text{By property of variance}\\ V(X+5)=V(X)=0.89\n\n(iv)\\quad V(X-3)=V(X)=0.89\n\n(v)\\quad V(3X)=3^2V(X)=9(0.89)=8.01",
+   "pashto": "=E[X+c-E(X)-c]^2\\quad\\because E(c)=c\n\n=E[X-E(X)]^2\n\n=V(X)\n\n\\text{Similarly } V(X-c)=V(X)\n\nS.D(X\\pm c)=S.D(X)\n\n(iii) که د تصادفي متغیر قیمتونه په یوه ثابت کې ضرب یا پرې ووېشل شي، نو واریانس یې د هغه ثابت د مربع په اندازه بدلېږي، یعنې\n\nV(cX)=c^2\\,V(X)\n\nV\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}\n\nثبوت:\n\nد تعریف له مخې V(X)=E[X-E(X)]^2\n\nڅرنګه چې (cX) د تصادفي متغیر X تابع ده، نو\n\nV(cX)=E[cX-E(cX)]^2\n\n=E[cX-cE(X)]^2\n\n=c^2E[X-E(X)]^2\n\n=c^2\\,V(X)\n\n\\text{Similarly } V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}\n\nS.D(cX)=|c|\\,S.D(X)\n\nS.D\\left(\\frac{X}{c}\\right)=\\frac{S.D(X)}{|c|}\n\n(iv) واریانس او معیاري انحراف هېڅکله منفي نه شي کېدای یعنې V(X)\\ge 0 او S.D(X)\\ge 0\n\nبېلګه 2.14\n\nیو تصادفي متغیر X لاندې ورکړل شوی احتمالي وېش لري\n\nپیدا کړئ i) E(X)، ii) V(X)، iii) V(X+5)، iv) V(X − 3)، v) V(3X) vi) S.D\\left(\\frac{X}{3}\\right)\n\nحل:\n\n(i)\\quad E(X)=\\Sigma x\\,p(x)=\\frac{11}{10}=1.1\n\n(ii)\\quad V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-(1.1)^2\n\n=\\frac{21}{10}-1.21\n\n=2.1-1.21=0.89\n\n(iii)\\ \\text{By property of variance}\\ V(X+5)=V(X)=0.89\n\n(iv)\\quad V(X-3)=V(X)=0.89\n\n(v)\\quad V(3X)=3^2V(X)=9(0.89)=8.01",
+   "theoryUrdu": "=E[X+c-E(X)-c]^2\\quad\\because E(c)=c\n\n=E[X-E(X)]^2\n\n=V(X)\n\n\\text{Similarly } V(X-c)=V(X)\n\nS.D(X\\pm c)=S.D(X)\n\n(iii) اگر تصادفی متغیر کی قیمتوں کو کسی مستقل سے ضرب یا تقسیم کیا جائے تو اس کا تغیر اس مستقل کے مربع کے حساب سے بدل جائے گا، یعنی\n\nV(cX)=c^2\\,V(X)\n\nV\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}\n\nثبوت:\n\nتعریف کے مطابق V(X)=E[X-E(X)]^2\n\nچونکہ (cX) تصادفی متغیر X کا تفاعل ہے، لہٰذا\n\nV(cX)=E[cX-E(cX)]^2\n\n=E[cX-cE(X)]^2\n\n=c^2E[X-E(X)]^2\n\n=c^2\\,V(X)\n\n\\text{Similarly } V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}\n\nS.D(cX)=|c|\\,S.D(X)\n\nS.D\\left(\\frac{X}{c}\\right)=\\frac{S.D(X)}{|c|}\n\n(iv) تغیر اور معیاری انحراف کبھی منفی نہیں ہو سکتے یعنی V(X)\\ge 0 اور S.D(X)\\ge 0\n\nمثال 2.14\n\nایک تصادفی متغیر X کی احتمالی تقسیم نیچے دی گئی ہے\n\nمعلوم کریں i) E(X)، ii) V(X)، iii) V(X+5)، iv) V(X − 3)، v) V(3X) vi) S.D\\left(\\frac{X}{3}\\right)\n\nحل:\n\n(i)\\quad E(X)=\\Sigma x\\,p(x)=\\frac{11}{10}=1.1\n\n(ii)\\quad V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-(1.1)^2\n\n=\\frac{21}{10}-1.21\n\n=2.1-1.21=0.89\n\n(iii)\\ \\text{By property of variance}\\ V(X+5)=V(X)=0.89\n\n(iv)\\quad V(X-3)=V(X)=0.89\n\n(v)\\quad V(3X)=3^2V(X)=9(0.89)=8.01",
+   "theoryPashto": "=E[X+c-E(X)-c]^2\\quad\\because E(c)=c\n\n=E[X-E(X)]^2\n\n=V(X)\n\n\\text{Similarly } V(X-c)=V(X)\n\nS.D(X\\pm c)=S.D(X)\n\n(iii) که د تصادفي متغیر قیمتونه په یوه ثابت کې ضرب یا پرې ووېشل شي، نو واریانس یې د هغه ثابت د مربع په اندازه بدلېږي، یعنې\n\nV(cX)=c^2\\,V(X)\n\nV\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}\n\nثبوت:\n\nد تعریف له مخې V(X)=E[X-E(X)]^2\n\nڅرنګه چې (cX) د تصادفي متغیر X تابع ده، نو\n\nV(cX)=E[cX-E(cX)]^2\n\n=E[cX-cE(X)]^2\n\n=c^2E[X-E(X)]^2\n\n=c^2\\,V(X)\n\n\\text{Similarly } V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}\n\nS.D(cX)=|c|\\,S.D(X)\n\nS.D\\left(\\frac{X}{c}\\right)=\\frac{S.D(X)}{|c|}\n\n(iv) واریانس او معیاري انحراف هېڅکله منفي نه شي کېدای یعنې V(X)\\ge 0 او S.D(X)\\ge 0\n\nبېلګه 2.14\n\nیو تصادفي متغیر X لاندې ورکړل شوی احتمالي وېش لري\n\nپیدا کړئ i) E(X)، ii) V(X)، iii) V(X+5)، iv) V(X − 3)، v) V(3X) vi) S.D\\left(\\frac{X}{3}\\right)\n\nحل:\n\n(i)\\quad E(X)=\\Sigma x\\,p(x)=\\frac{11}{10}=1.1\n\n(ii)\\quad V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-(1.1)^2\n\n=\\frac{21}{10}-1.21\n\n=2.1-1.21=0.89\n\n(iii)\\ \\text{By property of variance}\\ V(X+5)=V(X)=0.89\n\n(iv)\\quad V(X-3)=V(X)=0.89\n\n(v)\\quad V(3X)=3^2V(X)=9(0.89)=8.01",
+   "content": "<p>=E[X+c-E(X)-c]^2\\quad\\because E(c)=c</p><p>=E[X-E(X)]^2</p><p>=V(X)</p><p>\\text{Similarly } V(X-c)=V(X)</p><p>S.D(X\\pm c)=S.D(X)</p><p>(iii) If the values of a random variable are multiplied or divided by a constant, then its variance will change by the square of that constant i.e.</p><p>V(cX)=c^2\\,V(X)</p><p>V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}</p><p>Proof:</p><p>By definition V(X)=E[X-E(X)]^2</p><p>As (cX) is function of the random variable X so,</p><p>V(cX)=E[cX-E(cX)]^2</p><p>=E[cX-cE(X)]^2</p><p>=c^2E[X-E(X)]^2</p><p>=c^2\\,V(X)</p><p>\\text{Similarly } V\\left(\\frac{X}{c}\\right)=\\frac{V(X)}{c^2}</p><p>S.D(cX)=|c|\\,S.D(X)</p><p>S.D\\left(\\frac{X}{c}\\right)=\\frac{S.D(X)}{|c|}</p><p>(iv) Variance and standard deviation can never be negative i.e. V(X)\\ge 0 and S.D(X)\\ge 0</p><p>Example 2.14</p><p>A random variable X has the probability distribution given below</p><p>Find i) E(X), ii) V(X), iii) V(X+5), iv) V(X − 3), v) V(3X) vi) S.D\\left(\\frac{X}{3}\\right)</p><p>Solution:</p><p>(i)\\quad E(X)=\\Sigma x\\,p(x)=\\frac{11}{10}=1.1</p><p>(ii)\\quad V(X)=E(X^2)-[E(X)]^2=\\Sigma x^2p(x)-(1.1)^2</p><p>=\\frac{21}{10}-1.21</p><p>=2.1-1.21=0.89</p><p>(iii)\\ \\text{By property of variance}\\ V(X+5)=V(X)=0.89</p><p>(iv)\\quad V(X-3)=V(X)=0.89</p><p>(v)\\quad V(3X)=3^2V(X)=9(0.89)=8.01</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      6,
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-14"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-14-sol"
+    },
+    {
+     "type": "lines",
+     "indices": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex2-14",
+     "headers": [
+      "$X$",
+      "0",
+      "1",
+      "2",
+      "3"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "$\\frac{3}{10}$",
+       "$\\frac{4}{10}$",
+       "$\\frac{2}{10}$",
+       "$\\frac{1}{10}$"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "0",
+        "1",
+        "2",
+        "3"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{3}{10}$",
+         "$\\frac{4}{10}$",
+         "$\\frac{2}{10}$",
+         "$\\frac{1}{10}$"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "0",
+        "1",
+        "2",
+        "3"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{3}{10}$",
+         "$\\frac{4}{10}$",
+         "$\\frac{2}{10}$",
+         "$\\frac{1}{10}$"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex2-14-sol",
+     "headers": [
+      "$X$",
+      "$p(x)$",
+      "$X\\,p(x)$",
+      "$X^2p(x)$"
+     ],
+     "rows": [
+      [
+       "0",
+       "3/10",
+       "0",
+       "0"
+      ],
+      [
+       "1",
+       "4/10",
+       "4/10",
+       "4/10"
+      ],
+      [
+       "2",
+       "2/10",
+       "4/10",
+       "8/10"
+      ],
+      [
+       "3",
+       "1/10",
+       "3/10",
+       "9/10"
+      ],
+      [
+       "Total",
+       "1",
+       "11/10",
+       "21/10"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)$",
+        "$X\\,p(x)$",
+        "$X^2p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "3/10",
+         "0",
+         "0"
+        ],
+        [
+         "1",
+         "4/10",
+         "4/10",
+         "4/10"
+        ],
+        [
+         "2",
+         "2/10",
+         "4/10",
+         "8/10"
+        ],
+        [
+         "3",
+         "1/10",
+         "3/10",
+         "9/10"
+        ],
+        [
+         "کل",
+         "1",
+         "11/10",
+         "21/10"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)$",
+        "$X\\,p(x)$",
+        "$X^2p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "3/10",
+         "0",
+         "0"
+        ],
+        [
+         "1",
+         "4/10",
+         "4/10",
+         "4/10"
+        ],
+        [
+         "2",
+         "2/10",
+         "4/10",
+         "8/10"
+        ],
+        [
+         "3",
+         "1/10",
+         "3/10",
+         "9/10"
+        ],
+        [
+         "ټول",
+         "1",
+         "11/10",
+         "21/10"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 29,
+     "printedPages": [
+      49,
+      50
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

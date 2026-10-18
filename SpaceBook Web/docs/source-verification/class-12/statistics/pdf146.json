@@ -1,0 +1,312 @@
+{
+ "pdfPage": 146,
+ "sections": [
+  {
+   "id": "stat12-p146-coefficient-contingency",
+   "title": "8.2.3 Pearson’s coefficient of contingency — Example 8.6",
+   "headingUrdu": "8.2.3 پیئرسن کا اتفاقیت کا سر — مثال 8.6",
+   "headingPashto": "8.2.3 د پیرسن د احتمالیت ضریب — بېلګه 8.6",
+   "paras": [
+    {
+     "text": "tell anything about the strength of association, which we sometime need to measure. For this purpose, Karl Pearson has defined a formula for coefficient of contingency which is denoted by C and is known as Pearson’s coefficient of mean-square contingency given by the relation.",
+     "urdu": "تلازم کی مضبوطی کے بارے میں کچھ بتاتا جس کی پیمائش کی ہمیں بعض اوقات ضرورت ہوتی ہے۔ اس مقصد کے لیے کارل پیئرسن نے اتفاقیت کے سر کا فارمولا وضع کیا جسے C سے ظاہر کیا جاتا ہے اور پیئرسن کا اوسط مربع اتفاقیت کا سر کہلاتا ہے، جو اس تعلق سے دیا جاتا ہے۔",
+     "pashto": "د تړاو د ځواک په اړه څه وايي چې کله کله یې اندازه کولو ته اړتیا لرو. د دې موخې لپاره کارل پیرسن د احتمالیت د ضریب فورمول تعریف کړی چې په C ښودل کېږي او د پیرسن د منځني مربع احتمالیت ضریب په نوم یادېږي، چې په دې اړیکه ورکول کېږي."
+    },
+    {
+     "text": "$$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}},\\qquad 0\\le C\\le\\sqrt{\\frac{k-1}{k}}$$",
+     "urdu": "$$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}},\\qquad 0\\le C\\le\\sqrt{\\frac{k-1}{k}}$$",
+     "pashto": "$$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}},\\qquad 0\\le C\\le\\sqrt{\\frac{k-1}{k}}$$"
+    },
+    {
+     "text": "Where $\\chi^2$ is the calculated value of chi-square test-statistic, n is the total sample size and k is the smaller one in rows and columns in number. A value of C near to “0” shows weak association and value of C near to $\\sqrt{\\frac{k-1}{k}}$ shows a strong association between the two attributes.",
+     "urdu": "جہاں $\\chi^2$ کائی مربع جانچ کے شماریے کی معلوم کی گئی قیمت، n کل نمونے کا سائز اور k قطاروں اور کالموں کی تعداد میں سے چھوٹی ہے۔ C کی “0” کے قریب قیمت کمزور تلازم اور $\\sqrt{\\frac{k-1}{k}}$ کے قریب قیمت دو صفات کے درمیان مضبوط تلازم ظاہر کرتی ہے۔",
+     "pashto": "چې $\\chi^2$ د کای مربع د ازموینې احصاییې محاسبه شوی قیمت، n د نمونې ټوله اندازه او k د قطارونو او ستونونو په شمېر کې کوچنی دی. د C “0” ته نږدې قیمت کمزوری تړاو او $\\sqrt{\\frac{k-1}{k}}$ ته نږدې قیمت د دوو صفتونو ترمنځ قوي تړاو ښيي."
+    },
+    {
+     "text": "Example 8.6",
+     "urdu": "مثال 8.6",
+     "pashto": "بېلګه 8.6"
+    },
+    {
+     "text": "Compute Pearson’s coefficient of mean square contingency for the contingency table given in example 8.4.",
+     "urdu": "مثال 8.4 میں دیے گئے اتفاقی جدول کے لیے پیئرسن کا اوسط مربع اتفاقیت کا سر معلوم کریں۔",
+     "pashto": "په 8.4 بېلګه کې د ورکړل شوي احتمالي جدول لپاره د پیرسن د منځني مربع احتمالیت ضریب محاسبه کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "In example 8.4, we have $\\chi^2=46.994$ and $n=1100$, therefore Pearson’s coefficient of mean square contingency is computed as:",
+     "urdu": "مثال 8.4 میں ہمارے پاس $\\chi^2=46.994$ اور $n=1100$ ہے، لہٰذا پیئرسن کا اوسط مربع اتفاقیت کا سر یوں معلوم کیا جاتا ہے:",
+     "pashto": "په 8.4 بېلګه کې لرو $\\chi^2=46.994$ او $n=1100$، نو د پیرسن د منځني مربع احتمالیت ضریب داسې محاسبه کېږي:"
+    },
+    {
+     "text": "$$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}}=\\sqrt{\\frac{46.994}{46.994+1100}}=\\sqrt{0.04097}=0.202$$",
+     "urdu": "$$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}}=\\sqrt{\\frac{46.994}{46.994+1100}}=\\sqrt{0.04097}=0.202$$",
+     "pashto": "$$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}}=\\sqrt{\\frac{46.994}{46.994+1100}}=\\sqrt{0.04097}=0.202$$"
+    },
+    {
+     "text": "Here number of rows = number of columns = k = 3, so $\\sqrt{\\frac{k-1}{k}}=\\sqrt{\\frac{3-1}{3}}=\\sqrt{0.6666}=0.82$. Hence the range of C is $0\\le C\\le 0.82$.",
+     "urdu": "یہاں قطاروں کی تعداد = کالموں کی تعداد = k = 3، لہٰذا $\\sqrt{\\frac{k-1}{k}}=\\sqrt{\\frac{3-1}{3}}=\\sqrt{0.6666}=0.82$۔ پس C کی حد $0\\le C\\le 0.82$ ہے۔",
+     "pashto": "دلته د قطارونو شمېر = د ستونونو شمېر = k = 3، نو $\\sqrt{\\frac{k-1}{k}}=\\sqrt{\\frac{3-1}{3}}=\\sqrt{0.6666}=0.82$. نو د C حد $0\\le C\\le 0.82$ دی."
+    },
+    {
+     "text": "Thus our computed value of C shows that the given attributes have a weak association.",
+     "urdu": "یوں C کی ہماری معلوم کی گئی قیمت ظاہر کرتی ہے کہ دی گئی صفات کا کمزور تلازم ہے۔",
+     "pashto": "نو زموږ د C محاسبه شوی قیمت ښيي چې ورکړل شوي صفتونه کمزوری تړاو لري."
+    }
+   ],
+   "theory": "tell anything about the strength of association, which we sometime need to measure. For this purpose, Karl Pearson has defined a formula for coefficient of contingency which is denoted by C and is known as Pearson’s coefficient of mean-square contingency given by the relation.\n\n$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}},\\qquad 0\\le C\\le\\sqrt{\\frac{k-1}{k}}$\n\nWhere \\chi^2 is the calculated value of chi-square test-statistic, n is the total sample size and k is the smaller one in rows and columns in number. A value of C near to “0” shows weak association and value of C near to \\sqrt{\\frac{k-1}{k}} shows a strong association between the two attributes.\n\nExample 8.6\n\nCompute Pearson’s coefficient of mean square contingency for the contingency table given in example 8.4.\n\nSolution:\n\nIn example 8.4, we have \\chi^2=46.994 and n=1100, therefore Pearson’s coefficient of mean square contingency is computed as:\n\n$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}}=\\sqrt{\\frac{46.994}{46.994+1100}}=\\sqrt{0.04097}=0.202$\n\nHere number of rows = number of columns = k = 3, so \\sqrt{\\frac{k-1}{k}}=\\sqrt{\\frac{3-1}{3}}=\\sqrt{0.6666}=0.82. Hence the range of C is 0\\le C\\le 0.82.\n\nThus our computed value of C shows that the given attributes have a weak association.",
+   "urdu": "تلازم کی مضبوطی کے بارے میں کچھ بتاتا جس کی پیمائش کی ہمیں بعض اوقات ضرورت ہوتی ہے۔ اس مقصد کے لیے کارل پیئرسن نے اتفاقیت کے سر کا فارمولا وضع کیا جسے C سے ظاہر کیا جاتا ہے اور پیئرسن کا اوسط مربع اتفاقیت کا سر کہلاتا ہے، جو اس تعلق سے دیا جاتا ہے۔\n\n$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}},\\qquad 0\\le C\\le\\sqrt{\\frac{k-1}{k}}$\n\nجہاں \\chi^2 کائی مربع جانچ کے شماریے کی معلوم کی گئی قیمت، n کل نمونے کا سائز اور k قطاروں اور کالموں کی تعداد میں سے چھوٹی ہے۔ C کی “0” کے قریب قیمت کمزور تلازم اور \\sqrt{\\frac{k-1}{k}} کے قریب قیمت دو صفات کے درمیان مضبوط تلازم ظاہر کرتی ہے۔\n\nمثال 8.6\n\nمثال 8.4 میں دیے گئے اتفاقی جدول کے لیے پیئرسن کا اوسط مربع اتفاقیت کا سر معلوم کریں۔\n\nحل:\n\nمثال 8.4 میں ہمارے پاس \\chi^2=46.994 اور n=1100 ہے، لہٰذا پیئرسن کا اوسط مربع اتفاقیت کا سر یوں معلوم کیا جاتا ہے:\n\n$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}}=\\sqrt{\\frac{46.994}{46.994+1100}}=\\sqrt{0.04097}=0.202$\n\nیہاں قطاروں کی تعداد = کالموں کی تعداد = k = 3، لہٰذا \\sqrt{\\frac{k-1}{k}}=\\sqrt{\\frac{3-1}{3}}=\\sqrt{0.6666}=0.82۔ پس C کی حد 0\\le C\\le 0.82 ہے۔\n\nیوں C کی ہماری معلوم کی گئی قیمت ظاہر کرتی ہے کہ دی گئی صفات کا کمزور تلازم ہے۔",
+   "pashto": "د تړاو د ځواک په اړه څه وايي چې کله کله یې اندازه کولو ته اړتیا لرو. د دې موخې لپاره کارل پیرسن د احتمالیت د ضریب فورمول تعریف کړی چې په C ښودل کېږي او د پیرسن د منځني مربع احتمالیت ضریب په نوم یادېږي، چې په دې اړیکه ورکول کېږي.\n\n$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}},\\qquad 0\\le C\\le\\sqrt{\\frac{k-1}{k}}$\n\nچې \\chi^2 د کای مربع د ازموینې احصاییې محاسبه شوی قیمت، n د نمونې ټوله اندازه او k د قطارونو او ستونونو په شمېر کې کوچنی دی. د C “0” ته نږدې قیمت کمزوری تړاو او \\sqrt{\\frac{k-1}{k}} ته نږدې قیمت د دوو صفتونو ترمنځ قوي تړاو ښيي.\n\nبېلګه 8.6\n\nپه 8.4 بېلګه کې د ورکړل شوي احتمالي جدول لپاره د پیرسن د منځني مربع احتمالیت ضریب محاسبه کړئ.\n\nحل:\n\nپه 8.4 بېلګه کې لرو \\chi^2=46.994 او n=1100، نو د پیرسن د منځني مربع احتمالیت ضریب داسې محاسبه کېږي:\n\n$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}}=\\sqrt{\\frac{46.994}{46.994+1100}}=\\sqrt{0.04097}=0.202$\n\nدلته د قطارونو شمېر = د ستونونو شمېر = k = 3، نو \\sqrt{\\frac{k-1}{k}}=\\sqrt{\\frac{3-1}{3}}=\\sqrt{0.6666}=0.82. نو د C حد 0\\le C\\le 0.82 دی.\n\nنو زموږ د C محاسبه شوی قیمت ښيي چې ورکړل شوي صفتونه کمزوری تړاو لري.",
+   "theoryUrdu": "تلازم کی مضبوطی کے بارے میں کچھ بتاتا جس کی پیمائش کی ہمیں بعض اوقات ضرورت ہوتی ہے۔ اس مقصد کے لیے کارل پیئرسن نے اتفاقیت کے سر کا فارمولا وضع کیا جسے C سے ظاہر کیا جاتا ہے اور پیئرسن کا اوسط مربع اتفاقیت کا سر کہلاتا ہے، جو اس تعلق سے دیا جاتا ہے۔\n\n$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}},\\qquad 0\\le C\\le\\sqrt{\\frac{k-1}{k}}$\n\nجہاں \\chi^2 کائی مربع جانچ کے شماریے کی معلوم کی گئی قیمت، n کل نمونے کا سائز اور k قطاروں اور کالموں کی تعداد میں سے چھوٹی ہے۔ C کی “0” کے قریب قیمت کمزور تلازم اور \\sqrt{\\frac{k-1}{k}} کے قریب قیمت دو صفات کے درمیان مضبوط تلازم ظاہر کرتی ہے۔\n\nمثال 8.6\n\nمثال 8.4 میں دیے گئے اتفاقی جدول کے لیے پیئرسن کا اوسط مربع اتفاقیت کا سر معلوم کریں۔\n\nحل:\n\nمثال 8.4 میں ہمارے پاس \\chi^2=46.994 اور n=1100 ہے، لہٰذا پیئرسن کا اوسط مربع اتفاقیت کا سر یوں معلوم کیا جاتا ہے:\n\n$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}}=\\sqrt{\\frac{46.994}{46.994+1100}}=\\sqrt{0.04097}=0.202$\n\nیہاں قطاروں کی تعداد = کالموں کی تعداد = k = 3، لہٰذا \\sqrt{\\frac{k-1}{k}}=\\sqrt{\\frac{3-1}{3}}=\\sqrt{0.6666}=0.82۔ پس C کی حد 0\\le C\\le 0.82 ہے۔\n\nیوں C کی ہماری معلوم کی گئی قیمت ظاہر کرتی ہے کہ دی گئی صفات کا کمزور تلازم ہے۔",
+   "theoryPashto": "د تړاو د ځواک په اړه څه وايي چې کله کله یې اندازه کولو ته اړتیا لرو. د دې موخې لپاره کارل پیرسن د احتمالیت د ضریب فورمول تعریف کړی چې په C ښودل کېږي او د پیرسن د منځني مربع احتمالیت ضریب په نوم یادېږي، چې په دې اړیکه ورکول کېږي.\n\n$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}},\\qquad 0\\le C\\le\\sqrt{\\frac{k-1}{k}}$\n\nچې \\chi^2 د کای مربع د ازموینې احصاییې محاسبه شوی قیمت، n د نمونې ټوله اندازه او k د قطارونو او ستونونو په شمېر کې کوچنی دی. د C “0” ته نږدې قیمت کمزوری تړاو او \\sqrt{\\frac{k-1}{k}} ته نږدې قیمت د دوو صفتونو ترمنځ قوي تړاو ښيي.\n\nبېلګه 8.6\n\nپه 8.4 بېلګه کې د ورکړل شوي احتمالي جدول لپاره د پیرسن د منځني مربع احتمالیت ضریب محاسبه کړئ.\n\nحل:\n\nپه 8.4 بېلګه کې لرو \\chi^2=46.994 او n=1100، نو د پیرسن د منځني مربع احتمالیت ضریب داسې محاسبه کېږي:\n\n$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}}=\\sqrt{\\frac{46.994}{46.994+1100}}=\\sqrt{0.04097}=0.202$\n\nدلته د قطارونو شمېر = د ستونونو شمېر = k = 3، نو \\sqrt{\\frac{k-1}{k}}=\\sqrt{\\frac{3-1}{3}}=\\sqrt{0.6666}=0.82. نو د C حد 0\\le C\\le 0.82 دی.\n\nنو زموږ د C محاسبه شوی قیمت ښيي چې ورکړل شوي صفتونه کمزوری تړاو لري.",
+   "content": "<p>tell anything about the strength of association, which we sometime need to measure. For this purpose, Karl Pearson has defined a formula for coefficient of contingency which is denoted by C and is known as Pearson’s coefficient of mean-square contingency given by the relation.</p><p>$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}},\\qquad 0\\le C\\le\\sqrt{\\frac{k-1}{k}}$</p><p>Where \\chi^2 is the calculated value of chi-square test-statistic, n is the total sample size and k is the smaller one in rows and columns in number. A value of C near to “0” shows weak association and value of C near to \\sqrt{\\frac{k-1}{k}} shows a strong association between the two attributes.</p><p>Example 8.6</p><p>Compute Pearson’s coefficient of mean square contingency for the contingency table given in example 8.4.</p><p>Solution:</p><p>In example 8.4, we have \\chi^2=46.994 and n=1100, therefore Pearson’s coefficient of mean square contingency is computed as:</p><p>$C=\\sqrt{\\frac{\\chi^2}{\\chi^2+n}}=\\sqrt{\\frac{46.994}{46.994+1100}}=\\sqrt{0.04097}=0.202$</p><p>Here number of rows = number of columns = k = 3, so \\sqrt{\\frac{k-1}{k}}=\\sqrt{\\frac{3-1}{3}}=\\sqrt{0.6666}=0.82. Hence the range of C is 0\\le C\\le 0.82.</p><p>Thus our computed value of C shows that the given attributes have a weak association.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 146,
+     "printedPages": [
+      283
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 8
+  },
+  {
+   "id": "stat12-p146-yates-association-correlation",
+   "title": "8.2.4 Yate’s correction; 8.2.5 association versus correlation",
+   "headingUrdu": "8.2.4 ییٹس کی اصلاح؛ 8.2.5 تلازم بمقابلہ ارتباط",
+   "headingPashto": "8.2.4 د یېټس سمون؛ 8.2.5 تړاو د همبستګۍ پر وړاندې",
+   "paras": [
+    {
+     "text": "8.2.4 Yate’s correction for continuity",
+     "urdu": "8.2.4 تسلسل کے لیے ییٹس کی اصلاح",
+     "pashto": "8.2.4 د پرلپسې‌والي لپاره د یېټس سمون"
+    },
+    {
+     "text": "To get satisfactory results from the chi-square test in testing hypothesis about independence of attributes in contingency tables, it is necessary that expected frequency of each cell should at least be 5. If it is less, it should be added with the neighbour one to get 5 or more but in 2 × 2 contingency table it is not possible to combine the smaller frequency with the larger one otherwise the table will be finished. For this purpose, Frank Yate has suggested the following formula.",
+     "urdu": "اتفاقی جدولوں میں صفات کی آزادی کے بارے میں مفروضے کی جانچ میں کائی مربع جانچ سے تسلی بخش نتائج حاصل کرنے کے لیے ضروری ہے کہ ہر خانے کا متوقع تعدد کم از کم 5 ہو۔ اگر یہ کم ہو تو اسے پڑوسی خانے کے ساتھ جمع کر کے 5 یا زیادہ کیا جائے، لیکن 2 × 2 اتفاقی جدول میں چھوٹے تعدد کو بڑے کے ساتھ ملانا ممکن نہیں ورنہ جدول ختم ہو جائے گا۔ اس مقصد کے لیے فرینک ییٹس نے درج ذیل فارمولا تجویز کیا ہے۔",
+     "pashto": "په احتمالي جدولونو کې د صفتونو د خپلواکۍ په اړه د فرضیې په ازموینه کې د کای مربع له ازموینې د قناعت وړ پایلو د ترلاسه کولو لپاره اړینه ده چې د هرې خونې تمه شوی تکرار لږ تر لږه 5 وي. که کم وي، باید له ګاونډي سره یوځای شي ترڅو 5 یا ډېر شي، خو په 2 × 2 احتمالي جدول کې د کوچني تکرار یوځای کول له لوی سره ممکن نه دي، که نه جدول به ختم شي. د دې موخې لپاره فرانک یېټس لاندې فورمول وړاندیز کړی."
+    },
+    {
+     "text": "$$\\chi^2=\\sum_{i=1}^{2}\\frac{\\left(|O_i-e_i|-\\frac{1}{2}\\right)^2}{e_i}$$",
+     "urdu": "$$\\chi^2=\\sum_{i=1}^{2}\\frac{\\left(|O_i-e_i|-\\frac{1}{2}\\right)^2}{e_i}$$",
+     "pashto": "$$\\chi^2=\\sum_{i=1}^{2}\\frac{\\left(|O_i-e_i|-\\frac{1}{2}\\right)^2}{e_i}$$"
+    },
+    {
+     "text": "This formula is known as Yate’s correction for continuity and should be used only when one cell frequency is less than 5 in a 2 × 2 contingency table.",
+     "urdu": "یہ فارمولا تسلسل کے لیے ییٹس کی اصلاح کہلاتا ہے اور اسے صرف اس وقت استعمال کیا جائے جب 2 × 2 اتفاقی جدول میں کسی ایک خانے کا تعدد 5 سے کم ہو۔",
+     "pashto": "دا فورمول د پرلپسې‌والي لپاره د یېټس سمون بلل کېږي او باید یوازې هغه وخت وکارول شي چې په 2 × 2 احتمالي جدول کې د یوې خونې تکرار له 5 کم وي."
+    },
+    {
+     "text": "We also know that 2 × 2 contingency table is discrete frequency distribution and chi-square distribution is continuous distribution. This also needs correction for which the following formula has been suggested.",
+     "urdu": "ہم یہ بھی جانتے ہیں کہ 2 × 2 اتفاقی جدول غیر مسلسل تعددی تقسیم اور کائی مربع تقسیم مسلسل تقسیم ہے۔ اس کے لیے بھی اصلاح درکار ہے جس کے لیے درج ذیل فارمولا تجویز کیا گیا ہے۔",
+     "pashto": "موږ دا هم پوهېږو چې 2 × 2 احتمالي جدول ناپرلپسې تکراري وېش او د کای مربع وېش پرلپسې وېش دی. دې ته هم سمون اړین دی چې لپاره یې لاندې فورمول وړاندیز شوی."
+    },
+    {
+     "text": "$$\\chi^2=\\frac{n\\left(|ad-bc|-\\frac{n}{2}\\right)^2}{(a+b)(c+d)(a+c)(b+d)}$$",
+     "urdu": "$$\\chi^2=\\frac{n\\left(|ad-bc|-\\frac{n}{2}\\right)^2}{(a+b)(c+d)(a+c)(b+d)}$$",
+     "pashto": "$$\\chi^2=\\frac{n\\left(|ad-bc|-\\frac{n}{2}\\right)^2}{(a+b)(c+d)(a+c)(b+d)}$$"
+    },
+    {
+     "text": "This formula should be used only when any cell expected frequency is less than 10 in a 2 × 2 contingency table.",
+     "urdu": "یہ فارمولا صرف اس وقت استعمال کیا جائے جب 2 × 2 اتفاقی جدول میں کسی خانے کا متوقع تعدد 10 سے کم ہو۔",
+     "pashto": "دا فورمول باید یوازې هغه وخت وکارول شي چې په 2 × 2 احتمالي جدول کې د کومې خونې تمه شوی تکرار له 10 کم وي."
+    },
+    {
+     "text": "8.2.5 Association versus correlation",
+     "urdu": "8.2.5 تلازم بمقابلہ ارتباط",
+     "pashto": "8.2.5 تړاو د اړیکې پر وړاندې"
+    },
+    {
+     "text": "i. Association measures the strength of relationship between two qualitative variables e.g. level of crime and education.",
+     "urdu": "i. تلازم دو کیفیتی متغیرات کے درمیان تعلق کی مضبوطی کی پیمائش کرتا ہے، مثلاً جرم کی سطح اور تعلیم۔",
+     "pashto": "i. تړاو د دوو کیفي متغیرونو ترمنځ د اړیکې ځواک اندازه کوي، لکه د جرم کچه او زده‌کړه."
+    },
+    {
+     "text": "ii. Correlation measures the strength of relationship between two quantitative variables e.g. heights of fathers and their sons.",
+     "urdu": "ii. ارتباط دو مقداری متغیرات کے درمیان تعلق کی مضبوطی کی پیمائش کرتا ہے، مثلاً باپوں اور ان کے بیٹوں کے قد۔",
+     "pashto": "ii. همبستګي د دوو کمي متغیرونو ترمنځ د اړیکې ځواک اندازه کوي، لکه د پلرونو او د هغوی د زامنو قدونه."
+    },
+    {
+     "text": "iii. Both are relative measures.",
+     "urdu": "iii. دونوں اضافی پیمانے ہیں۔",
+     "pashto": "iii. دواړه نسبي اندازې دي."
+    },
+    {
+     "text": "iv. Both measures are ranging from −1 to +1.",
+     "urdu": "iv. دونوں پیمانوں کی حد −1 سے +1 تک ہے۔",
+     "pashto": "iv. د دواړو اندازو حد له −1 تر +1 دی."
+    },
+    {
+     "text": "v. Measures of association are based on frequencies only, whereas, in correlation actual paired observations are used.",
+     "urdu": "v. تلازم کے پیمانے صرف تعدد پر مبنی ہیں، جبکہ ارتباط میں اصل جوڑی دار مشاہدات استعمال ہوتے ہیں۔",
+     "pashto": "v. د تړاو اندازې یوازې پر تکرارونو ولاړې دي، په داسې حال کې چې په همبستګۍ کې اصلي جوړه مشاهدې کارول کېږي."
+    }
+   ],
+   "theory": "8.2.4 Yate’s correction for continuity\n\nTo get satisfactory results from the chi-square test in testing hypothesis about independence of attributes in contingency tables, it is necessary that expected frequency of each cell should at least be 5. If it is less, it should be added with the neighbour one to get 5 or more but in 2 × 2 contingency table it is not possible to combine the smaller frequency with the larger one otherwise the table will be finished. For this purpose, Frank Yate has suggested the following formula.\n\n$\\chi^2=\\sum_{i=1}^{2}\\frac{\\left(|O_i-e_i|-\\frac{1}{2}\\right)^2}{e_i}$\n\nThis formula is known as Yate’s correction for continuity and should be used only when one cell frequency is less than 5 in a 2 × 2 contingency table.\n\nWe also know that 2 × 2 contingency table is discrete frequency distribution and chi-square distribution is continuous distribution. This also needs correction for which the following formula has been suggested.\n\n$\\chi^2=\\frac{n\\left(|ad-bc|-\\frac{n}{2}\\right)^2}{(a+b)(c+d)(a+c)(b+d)}$\n\nThis formula should be used only when any cell expected frequency is less than 10 in a 2 × 2 contingency table.\n\n8.2.5 Association versus correlation\n\ni. Association measures the strength of relationship between two qualitative variables e.g. level of crime and education.\n\nii. Correlation measures the strength of relationship between two quantitative variables e.g. heights of fathers and their sons.\n\niii. Both are relative measures.\n\niv. Both measures are ranging from −1 to +1.\n\nv. Measures of association are based on frequencies only, whereas, in correlation actual paired observations are used.",
+   "urdu": "8.2.4 تسلسل کے لیے ییٹس کی اصلاح\n\nاتفاقی جدولوں میں صفات کی آزادی کے بارے میں مفروضے کی جانچ میں کائی مربع جانچ سے تسلی بخش نتائج حاصل کرنے کے لیے ضروری ہے کہ ہر خانے کا متوقع تعدد کم از کم 5 ہو۔ اگر یہ کم ہو تو اسے پڑوسی خانے کے ساتھ جمع کر کے 5 یا زیادہ کیا جائے، لیکن 2 × 2 اتفاقی جدول میں چھوٹے تعدد کو بڑے کے ساتھ ملانا ممکن نہیں ورنہ جدول ختم ہو جائے گا۔ اس مقصد کے لیے فرینک ییٹس نے درج ذیل فارمولا تجویز کیا ہے۔\n\n$\\chi^2=\\sum_{i=1}^{2}\\frac{\\left(|O_i-e_i|-\\frac{1}{2}\\right)^2}{e_i}$\n\nیہ فارمولا تسلسل کے لیے ییٹس کی اصلاح کہلاتا ہے اور اسے صرف اس وقت استعمال کیا جائے جب 2 × 2 اتفاقی جدول میں کسی ایک خانے کا تعدد 5 سے کم ہو۔\n\nہم یہ بھی جانتے ہیں کہ 2 × 2 اتفاقی جدول غیر مسلسل تعددی تقسیم اور کائی مربع تقسیم مسلسل تقسیم ہے۔ اس کے لیے بھی اصلاح درکار ہے جس کے لیے درج ذیل فارمولا تجویز کیا گیا ہے۔\n\n$\\chi^2=\\frac{n\\left(|ad-bc|-\\frac{n}{2}\\right)^2}{(a+b)(c+d)(a+c)(b+d)}$\n\nیہ فارمولا صرف اس وقت استعمال کیا جائے جب 2 × 2 اتفاقی جدول میں کسی خانے کا متوقع تعدد 10 سے کم ہو۔\n\n8.2.5 تلازم بمقابلہ ارتباط\n\ni. تلازم دو کیفیتی متغیرات کے درمیان تعلق کی مضبوطی کی پیمائش کرتا ہے، مثلاً جرم کی سطح اور تعلیم۔\n\nii. ارتباط دو مقداری متغیرات کے درمیان تعلق کی مضبوطی کی پیمائش کرتا ہے، مثلاً باپوں اور ان کے بیٹوں کے قد۔\n\niii. دونوں اضافی پیمانے ہیں۔\n\niv. دونوں پیمانوں کی حد −1 سے +1 تک ہے۔\n\nv. تلازم کے پیمانے صرف تعدد پر مبنی ہیں، جبکہ ارتباط میں اصل جوڑی دار مشاہدات استعمال ہوتے ہیں۔",
+   "pashto": "8.2.4 د پرلپسې‌والي لپاره د یېټس سمون\n\nپه احتمالي جدولونو کې د صفتونو د خپلواکۍ په اړه د فرضیې په ازموینه کې د کای مربع له ازموینې د قناعت وړ پایلو د ترلاسه کولو لپاره اړینه ده چې د هرې خونې تمه شوی تکرار لږ تر لږه 5 وي. که کم وي، باید له ګاونډي سره یوځای شي ترڅو 5 یا ډېر شي، خو په 2 × 2 احتمالي جدول کې د کوچني تکرار یوځای کول له لوی سره ممکن نه دي، که نه جدول به ختم شي. د دې موخې لپاره فرانک یېټس لاندې فورمول وړاندیز کړی.\n\n$\\chi^2=\\sum_{i=1}^{2}\\frac{\\left(|O_i-e_i|-\\frac{1}{2}\\right)^2}{e_i}$\n\nدا فورمول د پرلپسې‌والي لپاره د یېټس سمون بلل کېږي او باید یوازې هغه وخت وکارول شي چې په 2 × 2 احتمالي جدول کې د یوې خونې تکرار له 5 کم وي.\n\nموږ دا هم پوهېږو چې 2 × 2 احتمالي جدول ناپرلپسې تکراري وېش او د کای مربع وېش پرلپسې وېش دی. دې ته هم سمون اړین دی چې لپاره یې لاندې فورمول وړاندیز شوی.\n\n$\\chi^2=\\frac{n\\left(|ad-bc|-\\frac{n}{2}\\right)^2}{(a+b)(c+d)(a+c)(b+d)}$\n\nدا فورمول باید یوازې هغه وخت وکارول شي چې په 2 × 2 احتمالي جدول کې د کومې خونې تمه شوی تکرار له 10 کم وي.\n\n8.2.5 تړاو د اړیکې پر وړاندې\n\ni. تړاو د دوو کیفي متغیرونو ترمنځ د اړیکې ځواک اندازه کوي، لکه د جرم کچه او زده‌کړه.\n\nii. همبستګي د دوو کمي متغیرونو ترمنځ د اړیکې ځواک اندازه کوي، لکه د پلرونو او د هغوی د زامنو قدونه.\n\niii. دواړه نسبي اندازې دي.\n\niv. د دواړو اندازو حد له −1 تر +1 دی.\n\nv. د تړاو اندازې یوازې پر تکرارونو ولاړې دي، په داسې حال کې چې په همبستګۍ کې اصلي جوړه مشاهدې کارول کېږي.",
+   "theoryUrdu": "8.2.4 تسلسل کے لیے ییٹس کی اصلاح\n\nاتفاقی جدولوں میں صفات کی آزادی کے بارے میں مفروضے کی جانچ میں کائی مربع جانچ سے تسلی بخش نتائج حاصل کرنے کے لیے ضروری ہے کہ ہر خانے کا متوقع تعدد کم از کم 5 ہو۔ اگر یہ کم ہو تو اسے پڑوسی خانے کے ساتھ جمع کر کے 5 یا زیادہ کیا جائے، لیکن 2 × 2 اتفاقی جدول میں چھوٹے تعدد کو بڑے کے ساتھ ملانا ممکن نہیں ورنہ جدول ختم ہو جائے گا۔ اس مقصد کے لیے فرینک ییٹس نے درج ذیل فارمولا تجویز کیا ہے۔\n\n$\\chi^2=\\sum_{i=1}^{2}\\frac{\\left(|O_i-e_i|-\\frac{1}{2}\\right)^2}{e_i}$\n\nیہ فارمولا تسلسل کے لیے ییٹس کی اصلاح کہلاتا ہے اور اسے صرف اس وقت استعمال کیا جائے جب 2 × 2 اتفاقی جدول میں کسی ایک خانے کا تعدد 5 سے کم ہو۔\n\nہم یہ بھی جانتے ہیں کہ 2 × 2 اتفاقی جدول غیر مسلسل تعددی تقسیم اور کائی مربع تقسیم مسلسل تقسیم ہے۔ اس کے لیے بھی اصلاح درکار ہے جس کے لیے درج ذیل فارمولا تجویز کیا گیا ہے۔\n\n$\\chi^2=\\frac{n\\left(|ad-bc|-\\frac{n}{2}\\right)^2}{(a+b)(c+d)(a+c)(b+d)}$\n\nیہ فارمولا صرف اس وقت استعمال کیا جائے جب 2 × 2 اتفاقی جدول میں کسی خانے کا متوقع تعدد 10 سے کم ہو۔\n\n8.2.5 تلازم بمقابلہ ارتباط\n\ni. تلازم دو کیفیتی متغیرات کے درمیان تعلق کی مضبوطی کی پیمائش کرتا ہے، مثلاً جرم کی سطح اور تعلیم۔\n\nii. ارتباط دو مقداری متغیرات کے درمیان تعلق کی مضبوطی کی پیمائش کرتا ہے، مثلاً باپوں اور ان کے بیٹوں کے قد۔\n\niii. دونوں اضافی پیمانے ہیں۔\n\niv. دونوں پیمانوں کی حد −1 سے +1 تک ہے۔\n\nv. تلازم کے پیمانے صرف تعدد پر مبنی ہیں، جبکہ ارتباط میں اصل جوڑی دار مشاہدات استعمال ہوتے ہیں۔",
+   "theoryPashto": "8.2.4 د پرلپسې‌والي لپاره د یېټس سمون\n\nپه احتمالي جدولونو کې د صفتونو د خپلواکۍ په اړه د فرضیې په ازموینه کې د کای مربع له ازموینې د قناعت وړ پایلو د ترلاسه کولو لپاره اړینه ده چې د هرې خونې تمه شوی تکرار لږ تر لږه 5 وي. که کم وي، باید له ګاونډي سره یوځای شي ترڅو 5 یا ډېر شي، خو په 2 × 2 احتمالي جدول کې د کوچني تکرار یوځای کول له لوی سره ممکن نه دي، که نه جدول به ختم شي. د دې موخې لپاره فرانک یېټس لاندې فورمول وړاندیز کړی.\n\n$\\chi^2=\\sum_{i=1}^{2}\\frac{\\left(|O_i-e_i|-\\frac{1}{2}\\right)^2}{e_i}$\n\nدا فورمول د پرلپسې‌والي لپاره د یېټس سمون بلل کېږي او باید یوازې هغه وخت وکارول شي چې په 2 × 2 احتمالي جدول کې د یوې خونې تکرار له 5 کم وي.\n\nموږ دا هم پوهېږو چې 2 × 2 احتمالي جدول ناپرلپسې تکراري وېش او د کای مربع وېش پرلپسې وېش دی. دې ته هم سمون اړین دی چې لپاره یې لاندې فورمول وړاندیز شوی.\n\n$\\chi^2=\\frac{n\\left(|ad-bc|-\\frac{n}{2}\\right)^2}{(a+b)(c+d)(a+c)(b+d)}$\n\nدا فورمول باید یوازې هغه وخت وکارول شي چې په 2 × 2 احتمالي جدول کې د کومې خونې تمه شوی تکرار له 10 کم وي.\n\n8.2.5 تړاو د اړیکې پر وړاندې\n\ni. تړاو د دوو کیفي متغیرونو ترمنځ د اړیکې ځواک اندازه کوي، لکه د جرم کچه او زده‌کړه.\n\nii. همبستګي د دوو کمي متغیرونو ترمنځ د اړیکې ځواک اندازه کوي، لکه د پلرونو او د هغوی د زامنو قدونه.\n\niii. دواړه نسبي اندازې دي.\n\niv. د دواړو اندازو حد له −1 تر +1 دی.\n\nv. د تړاو اندازې یوازې پر تکرارونو ولاړې دي، په داسې حال کې چې په همبستګۍ کې اصلي جوړه مشاهدې کارول کېږي.",
+   "content": "<p>8.2.4 Yate’s correction for continuity</p><p>To get satisfactory results from the chi-square test in testing hypothesis about independence of attributes in contingency tables, it is necessary that expected frequency of each cell should at least be 5. If it is less, it should be added with the neighbour one to get 5 or more but in 2 × 2 contingency table it is not possible to combine the smaller frequency with the larger one otherwise the table will be finished. For this purpose, Frank Yate has suggested the following formula.</p><p>$\\chi^2=\\sum_{i=1}^{2}\\frac{\\left(|O_i-e_i|-\\frac{1}{2}\\right)^2}{e_i}$</p><p>This formula is known as Yate’s correction for continuity and should be used only when one cell frequency is less than 5 in a 2 × 2 contingency table.</p><p>We also know that 2 × 2 contingency table is discrete frequency distribution and chi-square distribution is continuous distribution. This also needs correction for which the following formula has been suggested.</p><p>$\\chi^2=\\frac{n\\left(|ad-bc|-\\frac{n}{2}\\right)^2}{(a+b)(c+d)(a+c)(b+d)}$</p><p>This formula should be used only when any cell expected frequency is less than 10 in a 2 × 2 contingency table.</p><p>8.2.5 Association versus correlation</p><p>i. Association measures the strength of relationship between two qualitative variables e.g. level of crime and education.</p><p>ii. Correlation measures the strength of relationship between two quantitative variables e.g. heights of fathers and their sons.</p><p>iii. Both are relative measures.</p><p>iv. Both measures are ranging from −1 to +1.</p><p>v. Measures of association are based on frequencies only, whereas, in correlation actual paired observations are used.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 146,
+     "printedPages": [
+      283,
+      284
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p284-yates",
+   "unit": 8,
+   "printedPage": 284,
+   "description": "Prints “Yate’s” / “Frank Yate” (Frank Yates) and the corrected χ² sum with upper limit 2 (sum runs over all cells). Printed text retained."
+  }
+ ],
+ "completeUnits": []
+}

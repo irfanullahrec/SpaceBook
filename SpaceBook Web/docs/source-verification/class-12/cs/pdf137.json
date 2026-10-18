@@ -1,0 +1,269 @@
+{
+ "pdfPage": 137,
+ "sections": [
+  {
+   "id": "cs12-u9-text-2",
+   "title": "Unit 9 text (2)",
+   "headingUrdu": "یونٹ 9 — متن (2)",
+   "headingPashto": "۹ څپرکی — متن (2)",
+   "paras": [
+    {
+     "text": "All these flags can be combined using the bitwise operator OR |. For example, if we want to open the file test.bin in binary mode to add data we could do it by the following call to member function open().",
+     "urdu": "یہ تمام فلیگز bitwise آپریٹر OR | کے ذریعے ملائے جا سکتے ہیں۔ مثلاً اگر ہم فائل test.bin کو ڈیٹا شامل کرنے کے لیے بائنری موڈ میں کھولنا چاہیں تو ممبر فنکشن open() کو درج ذیل کال سے ایسا کر سکتے ہیں۔",
+     "pashto": "دا ټول بیرغونه د bitwise چلونکي OR | په مرسته یوځای کېدای شي. د بېلګې په توګه که وغواړو test.bin دوتنه د ډېټا د زیاتولو لپاره په باینري حالت کې پرانیزو، د open() غړي فنکشن ته د لاندې غوښتنې په مرسته یې کولی شو."
+    },
+    {
+     "text": "Ofstream myfile;\nmyfile.open (\"test.bin\", ios::out | ios::app | ios::binary);",
+     "urdu": "Ofstream myfile;\nmyfile.open (\"test.bin\", ios::out | ios::app | ios::binary);",
+     "pashto": "Ofstream myfile;\nmyfile.open (\"test.bin\", ios::out | ios::app | ios::binary);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Each one of the open() member functions of the classes of stream, ifstream and fstream has a default mode that is used if the file is opened without a second argument:",
+     "urdu": "کلاسز of stream، ifstream اور fstream کے ہر open() ممبر فنکشن کا ایک ڈیفالٹ موڈ ہوتا ہے جو اس وقت استعمال ہوتا ہے جب فائل دوسرے آرگیومنٹ کے بغیر کھولی جائے:",
+     "pashto": "د of stream، ifstream او fstream ټولګیو د open() هر غړي فنکشن یو ډیفالټ حالت لري چې هغه وخت کارېږي چې دوتنه پرته له دویم دلیل پرانیستل شي:"
+    },
+    {
+     "text": "For ifstream and ofstream classes, ios::in and ios::out are automatically and respectively assumed, even if a mode that does not include them is passed as second argument to the open() member function.",
+     "urdu": "ifstream اور ofstream کلاسز کے لیے بالترتیب ios::in اور ios::out خود بخود فرض کر لیے جاتے ہیں، چاہے open() ممبر فنکشن کو دوسرے آرگیومنٹ کے طور پر ایسا موڈ پاس کیا جائے جس میں یہ شامل نہ ہوں۔",
+     "pashto": "د ifstream او ofstream ټولګیو لپاره په ترتیب سره ios::in او ios::out پخپله ګڼل کېږي، حتی که open() غړي فنکشن ته د دویم دلیل په توګه داسې حالت ولېږدول شي چې دا پکې شامل نه وي."
+    },
+    {
+     "text": "Let us see an example program that creates a text file “example1.txt” and writes a line of text in it.",
+     "urdu": "آئیے ایک مثالی پروگرام دیکھیں جو ٹیکسٹ فائل ’’example1.txt‘‘ بناتا ہے اور اس میں متن کی ایک لائن لکھتا ہے۔",
+     "pashto": "راځئ یو بېلګه‌ییز پروګرام وګورو چې \"example1.txt\" متني دوتنه جوړوي او پکې د متن یوه کرښه لیکي."
+    },
+    {
+     "text": "//opening a file and writing into it\n#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nint main()\n{\nOfstream myfile;\nmyfile.open (\"example1.txt\");\nmyfile<< \"This is a program that tells you how to write to a file.\\n\";\nmyfile.close();\ngetch();\nreturn 0;\n}",
+     "urdu": "//opening a file and writing into it\n#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nint main()\n{\nOfstream myfile;\nmyfile.open (\"example1.txt\");\nmyfile<< \"This is a program that tells you how to write to a file.\\n\";\nmyfile.close();\ngetch();\nreturn 0;\n}",
+     "pashto": "//opening a file and writing into it\n#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nint main()\n{\nOfstream myfile;\nmyfile.open (\"example1.txt\");\nmyfile<< \"This is a program that tells you how to write to a file.\\n\";\nmyfile.close();\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This code creates a file called example1.txt and inserts a sentence into it in the same way as we do with cout, but using the file stream myfile instead. Figure 9.1 shows the output of the above program in the form of a text file that is created in the same working directory.",
+     "urdu": "یہ کوڈ example1.txt نامی فائل بناتا ہے اور اس میں ایک جملہ اسی طرح داخل کرتا ہے جیسے ہم cout سے کرتے ہیں، لیکن اس کے بجائے فائل اسٹریم myfile استعمال کر کے۔ شکل 9.1 اوپر کے پروگرام کا آؤٹ پٹ ایک ٹیکسٹ فائل کی صورت میں دکھاتی ہے جو اسی ورکنگ ڈائریکٹری میں بنتی ہے۔",
+     "pashto": "دا کوډ example1.txt په نوم دوتنه جوړوي او پکې یوه جمله همداسې ورګډوي لکه څنګه چې یې د cout سره کوو، خو د دې پر ځای د myfile د دوتنې بهیر کاروي. ۹.۱ شکل د پورته پروګرام وتنه د یوې متني دوتنې په بڼه ښيي چې په همغه کاري لارښود کې جوړېږي."
+    },
+    {
+     "text": "b. Reading input file",
+     "urdu": "b. ان پٹ فائل پڑھنا",
+     "pashto": "b. د ننوتنې دوتنه لوستل"
+    },
+    {
+     "text": "To read a word from the file we can write as:",
+     "urdu": "فائل سے ایک لفظ پڑھنے کے لیے ہم یوں لکھ سکتے ہیں:",
+     "pashto": "له دوتنې د یوې کلمې د لوستلو لپاره داسې لیکلی شو:"
+    },
+    {
+     "text": "myFile>> c;",
+     "urdu": "myFile>> c;",
+     "pashto": "myFile>> c;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "So, the first word of the file will be read in c, where c is a character array. It is similar as we used with cin. There are certain limitations to this. It can read just one word at one time. It means, on encountering a space, it will stop reading further. Therefore, we have to use it repeatedly to read the complete file. We can also read multiple words at a time as:",
+     "urdu": "یوں فائل کا پہلا لفظ c میں پڑھا جائے گا، جہاں c حروف کا ایرے ہے۔ یہ اسی طرح ہے جیسے ہم نے cin کے ساتھ استعمال کیا۔ اس کی کچھ حدود ہیں۔ یہ ایک وقت میں صرف ایک لفظ پڑھ سکتا ہے۔ یعنی خالی جگہ آنے پر یہ مزید پڑھنا بند کر دے گا۔ اس لیے پوری فائل پڑھنے کے لیے ہمیں اسے بار بار استعمال کرنا ہوگا۔ ہم ایک وقت میں متعدد الفاظ بھی یوں پڑھ سکتے ہیں:",
+     "pashto": "نو د دوتنې لومړۍ کلمه به په c کې ولوستل شي، چېرته چې c د تورو لړۍ ده. دا هماغسې ده لکه د cin سره مو چې کارولې. دا ځینې محدودیتونه لري. په یوه وخت کې یوازې یوه کلمه لوستلی شي. یعنې د تش ځای په لیدو به نور لوستل ودروي. نو د ټولې دوتنې د لوستلو لپاره باید بیا بیا وکارول شي. موږ کولی شو په یوه وخت کې څو کلمې هم داسې ولولو:"
+    },
+    {
+     "text": "myFile>> c1 >> c2 >> c3;",
+     "urdu": "myFile>> c1 >> c2 >> c3;",
+     "pashto": "myFile>> c1 >> c2 >> c3;",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "All these flags can be combined using the bitwise operator OR |. For example, if we want to open the file test.bin in binary mode to add data we could do it by the following call to member function open().\n\nOfstream myfile;\nmyfile.open (\"test.bin\", ios::out | ios::app | ios::binary);\n\nEach one of the open() member functions of the classes of stream, ifstream and fstream has a default mode that is used if the file is opened without a second argument:\n\nFor ifstream and ofstream classes, ios::in and ios::out are automatically and respectively assumed, even if a mode that does not include them is passed as second argument to the open() member function.\n\nLet us see an example program that creates a text file “example1.txt” and writes a line of text in it.\n\n//opening a file and writing into it\n#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nint main()\n{\nOfstream myfile;\nmyfile.open (\"example1.txt\");\nmyfile<< \"This is a program that tells you how to write to a file.\\n\";\nmyfile.close();\ngetch();\nreturn 0;\n}\n\nThis code creates a file called example1.txt and inserts a sentence into it in the same way as we do with cout, but using the file stream myfile instead. Figure 9.1 shows the output of the above program in the form of a text file that is created in the same working directory.\n\nb. Reading input file\n\nTo read a word from the file we can write as:\n\nmyFile>> c;\n\nSo, the first word of the file will be read in c, where c is a character array. It is similar as we used with cin. There are certain limitations to this. It can read just one word at one time. It means, on encountering a space, it will stop reading further. Therefore, we have to use it repeatedly to read the complete file. We can also read multiple words at a time as:\n\nmyFile>> c1 >> c2 >> c3;",
+   "urdu": "یہ تمام فلیگز bitwise آپریٹر OR | کے ذریعے ملائے جا سکتے ہیں۔ مثلاً اگر ہم فائل test.bin کو ڈیٹا شامل کرنے کے لیے بائنری موڈ میں کھولنا چاہیں تو ممبر فنکشن open() کو درج ذیل کال سے ایسا کر سکتے ہیں۔\n\nOfstream myfile;\nmyfile.open (\"test.bin\", ios::out | ios::app | ios::binary);\n\nکلاسز of stream، ifstream اور fstream کے ہر open() ممبر فنکشن کا ایک ڈیفالٹ موڈ ہوتا ہے جو اس وقت استعمال ہوتا ہے جب فائل دوسرے آرگیومنٹ کے بغیر کھولی جائے:\n\nifstream اور ofstream کلاسز کے لیے بالترتیب ios::in اور ios::out خود بخود فرض کر لیے جاتے ہیں، چاہے open() ممبر فنکشن کو دوسرے آرگیومنٹ کے طور پر ایسا موڈ پاس کیا جائے جس میں یہ شامل نہ ہوں۔\n\nآئیے ایک مثالی پروگرام دیکھیں جو ٹیکسٹ فائل ’’example1.txt‘‘ بناتا ہے اور اس میں متن کی ایک لائن لکھتا ہے۔\n\n//opening a file and writing into it\n#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nint main()\n{\nOfstream myfile;\nmyfile.open (\"example1.txt\");\nmyfile<< \"This is a program that tells you how to write to a file.\\n\";\nmyfile.close();\ngetch();\nreturn 0;\n}\n\nیہ کوڈ example1.txt نامی فائل بناتا ہے اور اس میں ایک جملہ اسی طرح داخل کرتا ہے جیسے ہم cout سے کرتے ہیں، لیکن اس کے بجائے فائل اسٹریم myfile استعمال کر کے۔ شکل 9.1 اوپر کے پروگرام کا آؤٹ پٹ ایک ٹیکسٹ فائل کی صورت میں دکھاتی ہے جو اسی ورکنگ ڈائریکٹری میں بنتی ہے۔\n\nb. ان پٹ فائل پڑھنا\n\nفائل سے ایک لفظ پڑھنے کے لیے ہم یوں لکھ سکتے ہیں:\n\nmyFile>> c;\n\nیوں فائل کا پہلا لفظ c میں پڑھا جائے گا، جہاں c حروف کا ایرے ہے۔ یہ اسی طرح ہے جیسے ہم نے cin کے ساتھ استعمال کیا۔ اس کی کچھ حدود ہیں۔ یہ ایک وقت میں صرف ایک لفظ پڑھ سکتا ہے۔ یعنی خالی جگہ آنے پر یہ مزید پڑھنا بند کر دے گا۔ اس لیے پوری فائل پڑھنے کے لیے ہمیں اسے بار بار استعمال کرنا ہوگا۔ ہم ایک وقت میں متعدد الفاظ بھی یوں پڑھ سکتے ہیں:\n\nmyFile>> c1 >> c2 >> c3;",
+   "pashto": "دا ټول بیرغونه د bitwise چلونکي OR | په مرسته یوځای کېدای شي. د بېلګې په توګه که وغواړو test.bin دوتنه د ډېټا د زیاتولو لپاره په باینري حالت کې پرانیزو، د open() غړي فنکشن ته د لاندې غوښتنې په مرسته یې کولی شو.\n\nOfstream myfile;\nmyfile.open (\"test.bin\", ios::out | ios::app | ios::binary);\n\nد of stream، ifstream او fstream ټولګیو د open() هر غړي فنکشن یو ډیفالټ حالت لري چې هغه وخت کارېږي چې دوتنه پرته له دویم دلیل پرانیستل شي:\n\nد ifstream او ofstream ټولګیو لپاره په ترتیب سره ios::in او ios::out پخپله ګڼل کېږي، حتی که open() غړي فنکشن ته د دویم دلیل په توګه داسې حالت ولېږدول شي چې دا پکې شامل نه وي.\n\nراځئ یو بېلګه‌ییز پروګرام وګورو چې \"example1.txt\" متني دوتنه جوړوي او پکې د متن یوه کرښه لیکي.\n\n//opening a file and writing into it\n#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nint main()\n{\nOfstream myfile;\nmyfile.open (\"example1.txt\");\nmyfile<< \"This is a program that tells you how to write to a file.\\n\";\nmyfile.close();\ngetch();\nreturn 0;\n}\n\nدا کوډ example1.txt په نوم دوتنه جوړوي او پکې یوه جمله همداسې ورګډوي لکه څنګه چې یې د cout سره کوو، خو د دې پر ځای د myfile د دوتنې بهیر کاروي. ۹.۱ شکل د پورته پروګرام وتنه د یوې متني دوتنې په بڼه ښيي چې په همغه کاري لارښود کې جوړېږي.\n\nb. د ننوتنې دوتنه لوستل\n\nله دوتنې د یوې کلمې د لوستلو لپاره داسې لیکلی شو:\n\nmyFile>> c;\n\nنو د دوتنې لومړۍ کلمه به په c کې ولوستل شي، چېرته چې c د تورو لړۍ ده. دا هماغسې ده لکه د cin سره مو چې کارولې. دا ځینې محدودیتونه لري. په یوه وخت کې یوازې یوه کلمه لوستلی شي. یعنې د تش ځای په لیدو به نور لوستل ودروي. نو د ټولې دوتنې د لوستلو لپاره باید بیا بیا وکارول شي. موږ کولی شو په یوه وخت کې څو کلمې هم داسې ولولو:\n\nmyFile>> c1 >> c2 >> c3;",
+   "theoryUrdu": "یہ تمام فلیگز bitwise آپریٹر OR | کے ذریعے ملائے جا سکتے ہیں۔ مثلاً اگر ہم فائل test.bin کو ڈیٹا شامل کرنے کے لیے بائنری موڈ میں کھولنا چاہیں تو ممبر فنکشن open() کو درج ذیل کال سے ایسا کر سکتے ہیں۔\n\nOfstream myfile;\nmyfile.open (\"test.bin\", ios::out | ios::app | ios::binary);\n\nکلاسز of stream، ifstream اور fstream کے ہر open() ممبر فنکشن کا ایک ڈیفالٹ موڈ ہوتا ہے جو اس وقت استعمال ہوتا ہے جب فائل دوسرے آرگیومنٹ کے بغیر کھولی جائے:\n\nifstream اور ofstream کلاسز کے لیے بالترتیب ios::in اور ios::out خود بخود فرض کر لیے جاتے ہیں، چاہے open() ممبر فنکشن کو دوسرے آرگیومنٹ کے طور پر ایسا موڈ پاس کیا جائے جس میں یہ شامل نہ ہوں۔\n\nآئیے ایک مثالی پروگرام دیکھیں جو ٹیکسٹ فائل ’’example1.txt‘‘ بناتا ہے اور اس میں متن کی ایک لائن لکھتا ہے۔\n\n//opening a file and writing into it\n#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nint main()\n{\nOfstream myfile;\nmyfile.open (\"example1.txt\");\nmyfile<< \"This is a program that tells you how to write to a file.\\n\";\nmyfile.close();\ngetch();\nreturn 0;\n}\n\nیہ کوڈ example1.txt نامی فائل بناتا ہے اور اس میں ایک جملہ اسی طرح داخل کرتا ہے جیسے ہم cout سے کرتے ہیں، لیکن اس کے بجائے فائل اسٹریم myfile استعمال کر کے۔ شکل 9.1 اوپر کے پروگرام کا آؤٹ پٹ ایک ٹیکسٹ فائل کی صورت میں دکھاتی ہے جو اسی ورکنگ ڈائریکٹری میں بنتی ہے۔\n\nb. ان پٹ فائل پڑھنا\n\nفائل سے ایک لفظ پڑھنے کے لیے ہم یوں لکھ سکتے ہیں:\n\nmyFile>> c;\n\nیوں فائل کا پہلا لفظ c میں پڑھا جائے گا، جہاں c حروف کا ایرے ہے۔ یہ اسی طرح ہے جیسے ہم نے cin کے ساتھ استعمال کیا۔ اس کی کچھ حدود ہیں۔ یہ ایک وقت میں صرف ایک لفظ پڑھ سکتا ہے۔ یعنی خالی جگہ آنے پر یہ مزید پڑھنا بند کر دے گا۔ اس لیے پوری فائل پڑھنے کے لیے ہمیں اسے بار بار استعمال کرنا ہوگا۔ ہم ایک وقت میں متعدد الفاظ بھی یوں پڑھ سکتے ہیں:\n\nmyFile>> c1 >> c2 >> c3;",
+   "theoryPashto": "دا ټول بیرغونه د bitwise چلونکي OR | په مرسته یوځای کېدای شي. د بېلګې په توګه که وغواړو test.bin دوتنه د ډېټا د زیاتولو لپاره په باینري حالت کې پرانیزو، د open() غړي فنکشن ته د لاندې غوښتنې په مرسته یې کولی شو.\n\nOfstream myfile;\nmyfile.open (\"test.bin\", ios::out | ios::app | ios::binary);\n\nد of stream، ifstream او fstream ټولګیو د open() هر غړي فنکشن یو ډیفالټ حالت لري چې هغه وخت کارېږي چې دوتنه پرته له دویم دلیل پرانیستل شي:\n\nد ifstream او ofstream ټولګیو لپاره په ترتیب سره ios::in او ios::out پخپله ګڼل کېږي، حتی که open() غړي فنکشن ته د دویم دلیل په توګه داسې حالت ولېږدول شي چې دا پکې شامل نه وي.\n\nراځئ یو بېلګه‌ییز پروګرام وګورو چې \"example1.txt\" متني دوتنه جوړوي او پکې د متن یوه کرښه لیکي.\n\n//opening a file and writing into it\n#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nint main()\n{\nOfstream myfile;\nmyfile.open (\"example1.txt\");\nmyfile<< \"This is a program that tells you how to write to a file.\\n\";\nmyfile.close();\ngetch();\nreturn 0;\n}\n\nدا کوډ example1.txt په نوم دوتنه جوړوي او پکې یوه جمله همداسې ورګډوي لکه څنګه چې یې د cout سره کوو، خو د دې پر ځای د myfile د دوتنې بهیر کاروي. ۹.۱ شکل د پورته پروګرام وتنه د یوې متني دوتنې په بڼه ښيي چې په همغه کاري لارښود کې جوړېږي.\n\nb. د ننوتنې دوتنه لوستل\n\nله دوتنې د یوې کلمې د لوستلو لپاره داسې لیکلی شو:\n\nmyFile>> c;\n\nنو د دوتنې لومړۍ کلمه به په c کې ولوستل شي، چېرته چې c د تورو لړۍ ده. دا هماغسې ده لکه د cin سره مو چې کارولې. دا ځینې محدودیتونه لري. په یوه وخت کې یوازې یوه کلمه لوستلی شي. یعنې د تش ځای په لیدو به نور لوستل ودروي. نو د ټولې دوتنې د لوستلو لپاره باید بیا بیا وکارول شي. موږ کولی شو په یوه وخت کې څو کلمې هم داسې ولولو:\n\nmyFile>> c1 >> c2 >> c3;",
+   "content": "<p>All these flags can be combined using the bitwise operator OR |. For example, if we want to open the file test.bin in binary mode to add data we could do it by the following call to member function open().</p><p>Ofstream myfile;\nmyfile.open (&quot;test.bin&quot;, ios::out | ios::app | ios::binary);</p><p>Each one of the open() member functions of the classes of stream, ifstream and fstream has a default mode that is used if the file is opened without a second argument:</p><p>For ifstream and ofstream classes, ios::in and ios::out are automatically and respectively assumed, even if a mode that does not include them is passed as second argument to the open() member function.</p><p>Let us see an example program that creates a text file “example1.txt” and writes a line of text in it.</p><p>//opening a file and writing into it\n#include &lt;iostream.h&gt;\n#include &lt;fstream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nOfstream myfile;\nmyfile.open (&quot;example1.txt&quot;);\nmyfile&lt;&lt; &quot;This is a program that tells you how to write to a file.\\n&quot;;\nmyfile.close();\ngetch();\nreturn 0;\n}</p><p>This code creates a file called example1.txt and inserts a sentence into it in the same way as we do with cout, but using the file stream myfile instead. Figure 9.1 shows the output of the above program in the form of a text file that is created in the same working directory.</p><p>b. Reading input file</p><p>To read a word from the file we can write as:</p><p>myFile&gt;&gt; c;</p><p>So, the first word of the file will be read in c, where c is a character array. It is similar as we used with cin. There are certain limitations to this. It can read just one word at one time. It means, on encountering a space, it will stop reading further. Therefore, we have to use it repeatedly to read the complete file. We can also read multiple words at a time as:</p><p>myFile&gt;&gt; c1 &gt;&gt; c2 &gt;&gt; c3;</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-9-default"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-9-1"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-table-9-default",
+     "headers": [
+      "class",
+      "default mode parameter"
+     ],
+     "rows": [
+      [
+       "ofstream",
+       "ios::out"
+      ],
+      [
+       "ifstream",
+       "ios::in"
+      ],
+      [
+       "fstream",
+       "ios::in | ios::out"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "کلاس",
+        "ڈیفالٹ موڈ پیرامیٹر"
+       ],
+       "rows": [
+        [
+         "ofstream",
+         "ios::out"
+        ],
+        [
+         "ifstream",
+         "ios::in"
+        ],
+        [
+         "fstream",
+         "ios::in | ios::out"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "ټولګی",
+        "ډیفالټ حالت پاراميټر"
+       ],
+       "rows": [
+        [
+         "ofstream",
+         "ios::out"
+        ],
+        [
+         "ifstream",
+         "ios::in"
+        ],
+        [
+         "fstream",
+         "ios::in | ios::out"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "cs12-fig-9-1",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 156\" role=\"img\" aria-label=\"Figure 9.1: Opening and Writing into a Text File\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"156\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"120\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">example1.txt - Notepad</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><text x=\"20\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">File</text><text x=\"62\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Edit</text><text x=\"104\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Format</text><text x=\"146\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">View</text><text x=\"188\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Help</text><rect x=\"14\" y=\"48\" width=\"432\" height=\"62\" fill=\"#ffffff\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"64\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#111111\" xml:space=\"preserve\">This is a program that tells you how to write to a file.</text><text x=\"230.0\" y=\"148\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Figure 9.1: Opening and Writing into a Text File</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 156\" role=\"img\" aria-label=\"شکل 9.1: ٹیکسٹ فائل کھولنا اور اس میں لکھنا\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"156\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"120\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">example1.txt - Notepad</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><text x=\"20\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">File</text><text x=\"62\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Edit</text><text x=\"104\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Format</text><text x=\"146\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">View</text><text x=\"188\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Help</text><rect x=\"14\" y=\"48\" width=\"432\" height=\"62\" fill=\"#ffffff\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"64\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#111111\" xml:space=\"preserve\">This is a program that tells you how to write to a file.</text><text x=\"230.0\" y=\"148\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">شکل 9.1: ٹیکسٹ فائل کھولنا اور اس میں لکھنا</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 156\" role=\"img\" aria-label=\"۹.۱ شکل: متني دوتنه پرانیستل او پکې لیکل\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"156\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"120\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">example1.txt - Notepad</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><text x=\"20\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">File</text><text x=\"62\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Edit</text><text x=\"104\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Format</text><text x=\"146\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">View</text><text x=\"188\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Help</text><rect x=\"14\" y=\"48\" width=\"432\" height=\"62\" fill=\"#ffffff\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"64\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#111111\" xml:space=\"preserve\">This is a program that tells you how to write to a file.</text><text x=\"230.0\" y=\"148\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۹.۱ شکل: متني دوتنه پرانیستل او پکې لیکل</text></svg>",
+     "sourceWidthRatio": 2.948717948717949
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 137,
+     "printedPages": [
+      262,
+      263,
+      264
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 9 text (2)",
+   "sourcePageLabel": "PDF 137 · p. 262–263–264",
+   "sourceNote": "Figure 9.1 (a Notepad window) is redrawn as a coded mock-up. The paragraph on reading words continues on p.264 (PDF138) and is given whole here.",
+   "unit": 9
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf137",
+   "unit": 9,
+   "printedPage": 262,
+   "description": "p.262 writes “Ofstream myfile;” with a capital O and “classes of stream” for ofstream; p.263 “read just one word at one time”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

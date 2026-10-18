@@ -1,0 +1,380 @@
+{
+ "pdfPage": 15,
+ "sections": [
+  {
+   "id": "stat12-p015-conditional",
+   "title": "1.3.4 Conditional probability and 1.3.5 multiplication law (dependent events)",
+   "headingUrdu": "1.3.4 مشروط احتمال اور 1.3.5 قانونِ ضرب (تابع واقعات)",
+   "headingPashto": "1.3.4 شرطي احتمال او 1.3.5 د ضرب قانون (تړلې پېښې)",
+   "paras": [
+    {
+     "text": "$P(B)=\\frac{{}^{6}_{1}C}{{}^{10}_{1}C}=\\frac{6}{10}$. Therefore required probability of both green balls is",
+     "urdu": "$P(B)=\\frac{{}^{6}_{1}C}{{}^{10}_{1}C}=\\frac{6}{10}$۔ لہٰذا دونوں سبز گیندوں کا مطلوبہ احتمال یہ ہے",
+     "pashto": "$P(B)=\\frac{{}^{6}_{1}C}{{}^{10}_{1}C}=\\frac{6}{10}$. نو د دواړو شنو توپونو اړین احتمال دا دی"
+    },
+    {
+     "text": "$P(A\\text{ and }B)=P(A)\\,P(B)$",
+     "urdu": "$P(A\\text{ and }B)=P(A)\\,P(B)$",
+     "pashto": "$P(A\\text{ and }B)=P(A)\\,P(B)$"
+    },
+    {
+     "text": "$\\phantom{P(A\\text{ and }B)}=\\frac{6}{10}\\times\\frac{6}{10}=\\frac{36}{100}=0.36$",
+     "urdu": "$\\phantom{P(A\\text{ and }B)}=\\frac{6}{10}\\times\\frac{6}{10}=\\frac{36}{100}=0.36$",
+     "pashto": "$\\phantom{P(A\\text{ and }B)}=\\frac{6}{10}\\times\\frac{6}{10}=\\frac{36}{100}=0.36$"
+    },
+    {
+     "text": "1.3.4 Conditional probability",
+     "urdu": "1.3.4 مشروط احتمال",
+     "pashto": "1.3.4 شرطي احتمال"
+    },
+    {
+     "text": "Many times probability of an event is asked that is conditioned on some available information. For example (i) what is the probability that a person selected at random has diabetes given that he has a family history of diabetes. (ii) What is the probability that 3 occurs on a die given that an odd number has occurred. The given information reduces the original sample space by excluding some outcomes as being impossible which before receiving the information were believed possible. This reduced sample space is called conditional sample space and probabilities associated to it are called conditional probabilities.",
+     "urdu": "اکثر کسی واقعہ کا ایسا احتمال پوچھا جاتا ہے جو کسی دستیاب معلومات سے مشروط ہو۔ مثلاً (i) تصادفی طور پر منتخب شخص کو ذیابیطس ہونے کا احتمال کیا ہے جبکہ معلوم ہو کہ اس کے خاندان میں ذیابیطس کی تاریخ ہے۔ (ii) پانسے پر 3 آنے کا احتمال کیا ہے جبکہ معلوم ہو کہ طاق عدد آیا ہے۔ دی گئی معلومات اصل نمونہ فضا کو چھوٹا کر دیتی ہیں کیونکہ وہ کچھ نتائج کو ناممکن قرار دے کر خارج کر دیتی ہیں جو معلومات ملنے سے پہلے ممکن سمجھے جاتے تھے۔ اس چھوٹی نمونہ فضا کو مشروط نمونہ فضا اور اس سے متعلق احتمالات کو مشروط احتمالات کہتے ہیں۔",
+     "pashto": "ډېر ځله د یوې پېښې داسې احتمال پوښتل کېږي چې په کوم شته معلومات پورې مشروط وي. د بېلګې په توګه (i) احتمال یې څومره دی چې په تصادفي ډول ټاکل شوی کس شکر ولري په داسې حال کې چې د کورنۍ تاریخچه یې د شکرې ده. (ii) احتمال یې څومره دی چې په ډایس 3 راشي په داسې حال کې چې طاق عدد راغلی وي. ورکړل شوي معلومات اصلي نمونوي فضا کوچنۍ کوي ځکه چې ځینې هغه پایلې د ناشونو په توګه لرې کوي چې د معلوماتو تر ترلاسه کېدو مخکې شونې ګڼل کېدې. دې کوچنۍ شوې فضا ته شرطي نمونوي فضا او له هغې سره تړلو احتمالونو ته شرطي احتمالونه وایي."
+    },
+    {
+     "text": "Definition of conditional probability",
+     "urdu": "مشروط احتمال کی تعریف",
+     "pashto": "د شرطي احتمال تعریف"
+    },
+    {
+     "text": "The conditional probability of an event A given that another event B has already occurred is denoted by $P(A/B)$ and is defined as;",
+     "urdu": "کسی واقعہ A کا مشروط احتمال، جبکہ دوسرا واقعہ B پہلے ہی واقع ہو چکا ہو، $P(A/B)$ سے ظاہر کیا جاتا ہے اور اس کی تعریف یہ ہے؛",
+     "pashto": "د A پېښې شرطي احتمال، په داسې حال کې چې بله پېښه B مخکې رامنځته شوې وي، په $P(A/B)$ ښودل کېږي او داسې تعریف کېږي؛"
+    },
+    {
+     "text": "$$P(A/B)=\\frac{P(A\\cap B)}{P(B)},\\qquad P(B)\\neq 0$$",
+     "urdu": "$$P(A/B)=\\frac{P(A\\cap B)}{P(B)},\\qquad P(B)\\neq 0$$",
+     "pashto": "$$P(A/B)=\\frac{P(A\\cap B)}{P(B)},\\qquad P(B)\\neq 0$$"
+    },
+    {
+     "text": "Example 1.20",
+     "urdu": "مثال 1.20",
+     "pashto": "بېلګه 1.20"
+    },
+    {
+     "text": "A coin is tossed twice. Find the conditional probability that two tails result, given that there is at least one tail?",
+     "urdu": "ایک سکہ دو بار اچھالا جاتا ہے۔ دو پَٹ آنے کا مشروط احتمال معلوم کریں جبکہ کم از کم ایک پَٹ آیا ہو؟",
+     "pashto": "یوه سکه دوه ځله اچول کېږي. د دوو لکیو د راتلو شرطي احتمال پیدا کړئ په داسې حال کې چې لږ تر لږه یوه لکۍ راغلې وي؟"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$n(S)=2^n=2^2=4$",
+     "urdu": "$n(S)=2^n=2^2=4$",
+     "pashto": "$n(S)=2^n=2^2=4$"
+    },
+    {
+     "text": "$S=\\{HH,HT,TH,TT\\}$",
+     "urdu": "$S=\\{HH,HT,TH,TT\\}$",
+     "pashto": "$S=\\{HH,HT,TH,TT\\}$"
+    },
+    {
+     "text": "Let A: 2 tail appear",
+     "urdu": "فرض کریں A: 2 پَٹ آتے ہیں",
+     "pashto": "فرض کړئ A: 2 لکۍ راځي"
+    },
+    {
+     "text": "$$A=\\{TT\\}$$",
+     "urdu": "$$A=\\{TT\\}$$",
+     "pashto": "$$A=\\{TT\\}$$"
+    },
+    {
+     "text": "Let B: at least one tail appears",
+     "urdu": "فرض کریں B: کم از کم ایک پَٹ آتا ہے",
+     "pashto": "فرض کړئ B: لږ تر لږه یوه لکۍ راځي"
+    },
+    {
+     "text": "$B=\\{HT,TH,TT\\}$",
+     "urdu": "$B=\\{HT,TH,TT\\}$",
+     "pashto": "$B=\\{HT,TH,TT\\}$"
+    },
+    {
+     "text": "$n(B)=3$",
+     "urdu": "$n(B)=3$",
+     "pashto": "$n(B)=3$"
+    },
+    {
+     "text": "$P(B)=\\frac{n(B)}{n(S)}=\\frac{3}{4}$",
+     "urdu": "$P(B)=\\frac{n(B)}{n(S)}=\\frac{3}{4}$",
+     "pashto": "$P(B)=\\frac{n(B)}{n(S)}=\\frac{3}{4}$"
+    },
+    {
+     "text": "$A\\cap B=(TT)$",
+     "urdu": "$A\\cap B=(TT)$",
+     "pashto": "$A\\cap B=(TT)$"
+    },
+    {
+     "text": "$n(A\\cap B)=1$",
+     "urdu": "$n(A\\cap B)=1$",
+     "pashto": "$n(A\\cap B)=1$"
+    },
+    {
+     "text": "$P(A\\cap B)=\\frac{n(A\\cap B)}{n(S)}=\\frac{1}{4}$",
+     "urdu": "$P(A\\cap B)=\\frac{n(A\\cap B)}{n(S)}=\\frac{1}{4}$",
+     "pashto": "$P(A\\cap B)=\\frac{n(A\\cap B)}{n(S)}=\\frac{1}{4}$"
+    },
+    {
+     "text": "$\\therefore P(A/B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/4}{3/4}=\\frac{1}{4}\\times\\frac{4}{3}=\\frac{1}{3}$",
+     "urdu": "$\\therefore P(A/B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/4}{3/4}=\\frac{1}{4}\\times\\frac{4}{3}=\\frac{1}{3}$",
+     "pashto": "$\\therefore P(A/B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/4}{3/4}=\\frac{1}{4}\\times\\frac{4}{3}=\\frac{1}{3}$"
+    },
+    {
+     "text": "1.3.5 Multiplication law for dependent events",
+     "urdu": "1.3.5 تابع واقعات کے لیے قانونِ ضرب",
+     "pashto": "1.3.5 د تړلو پېښو لپاره د ضرب قانون"
+    },
+    {
+     "text": "Statement:",
+     "urdu": "بیان:",
+     "pashto": "بیان:"
+    },
+    {
+     "text": "If A and B are two dependent events then the probability that both A and B occur is equal to the probability that A occurs multiplied by the conditional probability of B given that A has already occurred. Symbolically,",
+     "urdu": "اگر A اور B دو تابع واقعات ہوں تو A اور B دونوں کے واقع ہونے کا احتمال، A کے واقع ہونے کے احتمال کو B کے مشروط احتمال (جبکہ A پہلے واقع ہو چکا ہو) سے ضرب دینے کے برابر ہے۔ علامتی طور پر،",
+     "pashto": "که A او B دوه تړلې پېښې وي، نو د A او B دواړو د رامنځته کېدو احتمال د A د رامنځته کېدو له احتمال سره برابر دی چې د B په شرطي احتمال (په داسې حال کې چې A مخکې رامنځته شوې وي) کې ضرب شي. په نښو کې،"
+    },
+    {
+     "text": "$$P(A\\text{ and }B)=P(A\\cap B)=P(A)\\,P(B/A)$$",
+     "urdu": "$$P(A\\text{ and }B)=P(A\\cap B)=P(A)\\,P(B/A)$$",
+     "pashto": "$$P(A\\text{ and }B)=P(A\\cap B)=P(A)\\,P(B/A)$$"
+    },
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "The conditional probability of B given that A has already occurred is",
+     "urdu": "B کا مشروط احتمال، جبکہ A پہلے واقع ہو چکا ہو، یہ ہے",
+     "pashto": "د B شرطي احتمال، په داسې حال کې چې A مخکې رامنځته شوې وي، دا دی"
+    },
+    {
+     "text": "$$P(B/A)=\\frac{P(B\\cap A)}{P(A)}$$",
+     "urdu": "$$P(B/A)=\\frac{P(B\\cap A)}{P(A)}$$",
+     "pashto": "$$P(B/A)=\\frac{P(B\\cap A)}{P(A)}$$"
+    },
+    {
+     "text": "Multiplying both sides by P(A), we get",
+     "urdu": "دونوں طرف P(A) سے ضرب دینے پر",
+     "pashto": "دواړه خواوې په P(A) کې ضربولو سره"
+    },
+    {
+     "text": "$P(A)\\,P(B/A)=P(B\\cap A)$",
+     "urdu": "$P(A)\\,P(B/A)=P(B\\cap A)$",
+     "pashto": "$P(A)\\,P(B/A)=P(B\\cap A)$"
+    },
+    {
+     "text": "$\\text{or } P(A\\cap B)=P(A)\\,P(B/A)\\qquad(\\because P(A\\cap B)=P(B\\cap A))$",
+     "urdu": "$\\text{or } P(A\\cap B)=P(A)\\,P(B/A)\\qquad(\\because P(A\\cap B)=P(B\\cap A))$",
+     "pashto": "$\\text{or } P(A\\cap B)=P(A)\\,P(B/A)\\qquad(\\because P(A\\cap B)=P(B\\cap A))$"
+    },
+    {
+     "text": "Example 1.21",
+     "urdu": "مثال 1.21",
+     "pashto": "بېلګه 1.21"
+    },
+    {
+     "text": "Suppose that a bag contains 10 balls of which 3 are white balls and 7 are green balls. If two balls are drawn at random one after another without replacement, find the probability that both balls drawn are green.",
+     "urdu": "فرض کریں ایک تھیلے میں 10 گیندیں ہیں جن میں 3 سفید اور 7 سبز ہیں۔ اگر دو گیندیں تصادفی طور پر یکے بعد دیگرے بغیر واپسی کے نکالی جائیں تو دونوں نکالی گئی گیندوں کے سبز ہونے کا احتمال معلوم کریں۔",
+     "pashto": "فرض کړئ په یوه کڅوړه کې 10 توپونه دي چې 3 یې سپین او 7 یې شنه دي. که دوه توپونه په تصادفي ډول یو په بل پسې بې له بېرته اچولو راوویستل شي، نو د دواړو راایستل شویو توپونو د شین کېدو احتمال پیدا کړئ."
+    }
+   ],
+   "theory": "P(B)=\\frac{{}^{6}_{1}C}{{}^{10}_{1}C}=\\frac{6}{10}. Therefore required probability of both green balls is\n\nP(A\\text{ and }B)=P(A)\\,P(B)\n\n\\phantom{P(A\\text{ and }B)}=\\frac{6}{10}\\times\\frac{6}{10}=\\frac{36}{100}=0.36\n\n1.3.4 Conditional probability\n\nMany times probability of an event is asked that is conditioned on some available information. For example (i) what is the probability that a person selected at random has diabetes given that he has a family history of diabetes. (ii) What is the probability that 3 occurs on a die given that an odd number has occurred. The given information reduces the original sample space by excluding some outcomes as being impossible which before receiving the information were believed possible. This reduced sample space is called conditional sample space and probabilities associated to it are called conditional probabilities.\n\nDefinition of conditional probability\n\nThe conditional probability of an event A given that another event B has already occurred is denoted by P(A/B) and is defined as;\n\n$P(A/B)=\\frac{P(A\\cap B)}{P(B)},\\qquad P(B)\\neq 0$\n\nExample 1.20\n\nA coin is tossed twice. Find the conditional probability that two tails result, given that there is at least one tail?\n\nSolution:\n\nn(S)=2^n=2^2=4\n\nS=\\{HH,HT,TH,TT\\}\n\nLet A: 2 tail appear\n\n$A=\\{TT\\}$\n\nLet B: at least one tail appears\n\nB=\\{HT,TH,TT\\}\n\nn(B)=3\n\nP(B)=\\frac{n(B)}{n(S)}=\\frac{3}{4}\n\nA\\cap B=(TT)\n\nn(A\\cap B)=1\n\nP(A\\cap B)=\\frac{n(A\\cap B)}{n(S)}=\\frac{1}{4}\n\n\\therefore P(A/B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/4}{3/4}=\\frac{1}{4}\\times\\frac{4}{3}=\\frac{1}{3}\n\n1.3.5 Multiplication law for dependent events\n\nStatement:\n\nIf A and B are two dependent events then the probability that both A and B occur is equal to the probability that A occurs multiplied by the conditional probability of B given that A has already occurred. Symbolically,\n\n$P(A\\text{ and }B)=P(A\\cap B)=P(A)\\,P(B/A)$\n\nProof:\n\nThe conditional probability of B given that A has already occurred is\n\n$P(B/A)=\\frac{P(B\\cap A)}{P(A)}$\n\nMultiplying both sides by P(A), we get\n\nP(A)\\,P(B/A)=P(B\\cap A)\n\n\\text{or } P(A\\cap B)=P(A)\\,P(B/A)\\qquad(\\because P(A\\cap B)=P(B\\cap A))\n\nExample 1.21\n\nSuppose that a bag contains 10 balls of which 3 are white balls and 7 are green balls. If two balls are drawn at random one after another without replacement, find the probability that both balls drawn are green.",
+   "urdu": "P(B)=\\frac{{}^{6}_{1}C}{{}^{10}_{1}C}=\\frac{6}{10}۔ لہٰذا دونوں سبز گیندوں کا مطلوبہ احتمال یہ ہے\n\nP(A\\text{ and }B)=P(A)\\,P(B)\n\n\\phantom{P(A\\text{ and }B)}=\\frac{6}{10}\\times\\frac{6}{10}=\\frac{36}{100}=0.36\n\n1.3.4 مشروط احتمال\n\nاکثر کسی واقعہ کا ایسا احتمال پوچھا جاتا ہے جو کسی دستیاب معلومات سے مشروط ہو۔ مثلاً (i) تصادفی طور پر منتخب شخص کو ذیابیطس ہونے کا احتمال کیا ہے جبکہ معلوم ہو کہ اس کے خاندان میں ذیابیطس کی تاریخ ہے۔ (ii) پانسے پر 3 آنے کا احتمال کیا ہے جبکہ معلوم ہو کہ طاق عدد آیا ہے۔ دی گئی معلومات اصل نمونہ فضا کو چھوٹا کر دیتی ہیں کیونکہ وہ کچھ نتائج کو ناممکن قرار دے کر خارج کر دیتی ہیں جو معلومات ملنے سے پہلے ممکن سمجھے جاتے تھے۔ اس چھوٹی نمونہ فضا کو مشروط نمونہ فضا اور اس سے متعلق احتمالات کو مشروط احتمالات کہتے ہیں۔\n\nمشروط احتمال کی تعریف\n\nکسی واقعہ A کا مشروط احتمال، جبکہ دوسرا واقعہ B پہلے ہی واقع ہو چکا ہو، P(A/B) سے ظاہر کیا جاتا ہے اور اس کی تعریف یہ ہے؛\n\n$P(A/B)=\\frac{P(A\\cap B)}{P(B)},\\qquad P(B)\\neq 0$\n\nمثال 1.20\n\nایک سکہ دو بار اچھالا جاتا ہے۔ دو پَٹ آنے کا مشروط احتمال معلوم کریں جبکہ کم از کم ایک پَٹ آیا ہو؟\n\nحل:\n\nn(S)=2^n=2^2=4\n\nS=\\{HH,HT,TH,TT\\}\n\nفرض کریں A: 2 پَٹ آتے ہیں\n\n$A=\\{TT\\}$\n\nفرض کریں B: کم از کم ایک پَٹ آتا ہے\n\nB=\\{HT,TH,TT\\}\n\nn(B)=3\n\nP(B)=\\frac{n(B)}{n(S)}=\\frac{3}{4}\n\nA\\cap B=(TT)\n\nn(A\\cap B)=1\n\nP(A\\cap B)=\\frac{n(A\\cap B)}{n(S)}=\\frac{1}{4}\n\n\\therefore P(A/B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/4}{3/4}=\\frac{1}{4}\\times\\frac{4}{3}=\\frac{1}{3}\n\n1.3.5 تابع واقعات کے لیے قانونِ ضرب\n\nبیان:\n\nاگر A اور B دو تابع واقعات ہوں تو A اور B دونوں کے واقع ہونے کا احتمال، A کے واقع ہونے کے احتمال کو B کے مشروط احتمال (جبکہ A پہلے واقع ہو چکا ہو) سے ضرب دینے کے برابر ہے۔ علامتی طور پر،\n\n$P(A\\text{ and }B)=P(A\\cap B)=P(A)\\,P(B/A)$\n\nثبوت:\n\nB کا مشروط احتمال، جبکہ A پہلے واقع ہو چکا ہو، یہ ہے\n\n$P(B/A)=\\frac{P(B\\cap A)}{P(A)}$\n\nدونوں طرف P(A) سے ضرب دینے پر\n\nP(A)\\,P(B/A)=P(B\\cap A)\n\n\\text{or } P(A\\cap B)=P(A)\\,P(B/A)\\qquad(\\because P(A\\cap B)=P(B\\cap A))\n\nمثال 1.21\n\nفرض کریں ایک تھیلے میں 10 گیندیں ہیں جن میں 3 سفید اور 7 سبز ہیں۔ اگر دو گیندیں تصادفی طور پر یکے بعد دیگرے بغیر واپسی کے نکالی جائیں تو دونوں نکالی گئی گیندوں کے سبز ہونے کا احتمال معلوم کریں۔",
+   "pashto": "P(B)=\\frac{{}^{6}_{1}C}{{}^{10}_{1}C}=\\frac{6}{10}. نو د دواړو شنو توپونو اړین احتمال دا دی\n\nP(A\\text{ and }B)=P(A)\\,P(B)\n\n\\phantom{P(A\\text{ and }B)}=\\frac{6}{10}\\times\\frac{6}{10}=\\frac{36}{100}=0.36\n\n1.3.4 شرطي احتمال\n\nډېر ځله د یوې پېښې داسې احتمال پوښتل کېږي چې په کوم شته معلومات پورې مشروط وي. د بېلګې په توګه (i) احتمال یې څومره دی چې په تصادفي ډول ټاکل شوی کس شکر ولري په داسې حال کې چې د کورنۍ تاریخچه یې د شکرې ده. (ii) احتمال یې څومره دی چې په ډایس 3 راشي په داسې حال کې چې طاق عدد راغلی وي. ورکړل شوي معلومات اصلي نمونوي فضا کوچنۍ کوي ځکه چې ځینې هغه پایلې د ناشونو په توګه لرې کوي چې د معلوماتو تر ترلاسه کېدو مخکې شونې ګڼل کېدې. دې کوچنۍ شوې فضا ته شرطي نمونوي فضا او له هغې سره تړلو احتمالونو ته شرطي احتمالونه وایي.\n\nد شرطي احتمال تعریف\n\nد A پېښې شرطي احتمال، په داسې حال کې چې بله پېښه B مخکې رامنځته شوې وي، په P(A/B) ښودل کېږي او داسې تعریف کېږي؛\n\n$P(A/B)=\\frac{P(A\\cap B)}{P(B)},\\qquad P(B)\\neq 0$\n\nبېلګه 1.20\n\nیوه سکه دوه ځله اچول کېږي. د دوو لکیو د راتلو شرطي احتمال پیدا کړئ په داسې حال کې چې لږ تر لږه یوه لکۍ راغلې وي؟\n\nحل:\n\nn(S)=2^n=2^2=4\n\nS=\\{HH,HT,TH,TT\\}\n\nفرض کړئ A: 2 لکۍ راځي\n\n$A=\\{TT\\}$\n\nفرض کړئ B: لږ تر لږه یوه لکۍ راځي\n\nB=\\{HT,TH,TT\\}\n\nn(B)=3\n\nP(B)=\\frac{n(B)}{n(S)}=\\frac{3}{4}\n\nA\\cap B=(TT)\n\nn(A\\cap B)=1\n\nP(A\\cap B)=\\frac{n(A\\cap B)}{n(S)}=\\frac{1}{4}\n\n\\therefore P(A/B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/4}{3/4}=\\frac{1}{4}\\times\\frac{4}{3}=\\frac{1}{3}\n\n1.3.5 د تړلو پېښو لپاره د ضرب قانون\n\nبیان:\n\nکه A او B دوه تړلې پېښې وي، نو د A او B دواړو د رامنځته کېدو احتمال د A د رامنځته کېدو له احتمال سره برابر دی چې د B په شرطي احتمال (په داسې حال کې چې A مخکې رامنځته شوې وي) کې ضرب شي. په نښو کې،\n\n$P(A\\text{ and }B)=P(A\\cap B)=P(A)\\,P(B/A)$\n\nثبوت:\n\nد B شرطي احتمال، په داسې حال کې چې A مخکې رامنځته شوې وي، دا دی\n\n$P(B/A)=\\frac{P(B\\cap A)}{P(A)}$\n\nدواړه خواوې په P(A) کې ضربولو سره\n\nP(A)\\,P(B/A)=P(B\\cap A)\n\n\\text{or } P(A\\cap B)=P(A)\\,P(B/A)\\qquad(\\because P(A\\cap B)=P(B\\cap A))\n\nبېلګه 1.21\n\nفرض کړئ په یوه کڅوړه کې 10 توپونه دي چې 3 یې سپین او 7 یې شنه دي. که دوه توپونه په تصادفي ډول یو په بل پسې بې له بېرته اچولو راوویستل شي، نو د دواړو راایستل شویو توپونو د شین کېدو احتمال پیدا کړئ.",
+   "theoryUrdu": "P(B)=\\frac{{}^{6}_{1}C}{{}^{10}_{1}C}=\\frac{6}{10}۔ لہٰذا دونوں سبز گیندوں کا مطلوبہ احتمال یہ ہے\n\nP(A\\text{ and }B)=P(A)\\,P(B)\n\n\\phantom{P(A\\text{ and }B)}=\\frac{6}{10}\\times\\frac{6}{10}=\\frac{36}{100}=0.36\n\n1.3.4 مشروط احتمال\n\nاکثر کسی واقعہ کا ایسا احتمال پوچھا جاتا ہے جو کسی دستیاب معلومات سے مشروط ہو۔ مثلاً (i) تصادفی طور پر منتخب شخص کو ذیابیطس ہونے کا احتمال کیا ہے جبکہ معلوم ہو کہ اس کے خاندان میں ذیابیطس کی تاریخ ہے۔ (ii) پانسے پر 3 آنے کا احتمال کیا ہے جبکہ معلوم ہو کہ طاق عدد آیا ہے۔ دی گئی معلومات اصل نمونہ فضا کو چھوٹا کر دیتی ہیں کیونکہ وہ کچھ نتائج کو ناممکن قرار دے کر خارج کر دیتی ہیں جو معلومات ملنے سے پہلے ممکن سمجھے جاتے تھے۔ اس چھوٹی نمونہ فضا کو مشروط نمونہ فضا اور اس سے متعلق احتمالات کو مشروط احتمالات کہتے ہیں۔\n\nمشروط احتمال کی تعریف\n\nکسی واقعہ A کا مشروط احتمال، جبکہ دوسرا واقعہ B پہلے ہی واقع ہو چکا ہو، P(A/B) سے ظاہر کیا جاتا ہے اور اس کی تعریف یہ ہے؛\n\n$P(A/B)=\\frac{P(A\\cap B)}{P(B)},\\qquad P(B)\\neq 0$\n\nمثال 1.20\n\nایک سکہ دو بار اچھالا جاتا ہے۔ دو پَٹ آنے کا مشروط احتمال معلوم کریں جبکہ کم از کم ایک پَٹ آیا ہو؟\n\nحل:\n\nn(S)=2^n=2^2=4\n\nS=\\{HH,HT,TH,TT\\}\n\nفرض کریں A: 2 پَٹ آتے ہیں\n\n$A=\\{TT\\}$\n\nفرض کریں B: کم از کم ایک پَٹ آتا ہے\n\nB=\\{HT,TH,TT\\}\n\nn(B)=3\n\nP(B)=\\frac{n(B)}{n(S)}=\\frac{3}{4}\n\nA\\cap B=(TT)\n\nn(A\\cap B)=1\n\nP(A\\cap B)=\\frac{n(A\\cap B)}{n(S)}=\\frac{1}{4}\n\n\\therefore P(A/B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/4}{3/4}=\\frac{1}{4}\\times\\frac{4}{3}=\\frac{1}{3}\n\n1.3.5 تابع واقعات کے لیے قانونِ ضرب\n\nبیان:\n\nاگر A اور B دو تابع واقعات ہوں تو A اور B دونوں کے واقع ہونے کا احتمال، A کے واقع ہونے کے احتمال کو B کے مشروط احتمال (جبکہ A پہلے واقع ہو چکا ہو) سے ضرب دینے کے برابر ہے۔ علامتی طور پر،\n\n$P(A\\text{ and }B)=P(A\\cap B)=P(A)\\,P(B/A)$\n\nثبوت:\n\nB کا مشروط احتمال، جبکہ A پہلے واقع ہو چکا ہو، یہ ہے\n\n$P(B/A)=\\frac{P(B\\cap A)}{P(A)}$\n\nدونوں طرف P(A) سے ضرب دینے پر\n\nP(A)\\,P(B/A)=P(B\\cap A)\n\n\\text{or } P(A\\cap B)=P(A)\\,P(B/A)\\qquad(\\because P(A\\cap B)=P(B\\cap A))\n\nمثال 1.21\n\nفرض کریں ایک تھیلے میں 10 گیندیں ہیں جن میں 3 سفید اور 7 سبز ہیں۔ اگر دو گیندیں تصادفی طور پر یکے بعد دیگرے بغیر واپسی کے نکالی جائیں تو دونوں نکالی گئی گیندوں کے سبز ہونے کا احتمال معلوم کریں۔",
+   "theoryPashto": "P(B)=\\frac{{}^{6}_{1}C}{{}^{10}_{1}C}=\\frac{6}{10}. نو د دواړو شنو توپونو اړین احتمال دا دی\n\nP(A\\text{ and }B)=P(A)\\,P(B)\n\n\\phantom{P(A\\text{ and }B)}=\\frac{6}{10}\\times\\frac{6}{10}=\\frac{36}{100}=0.36\n\n1.3.4 شرطي احتمال\n\nډېر ځله د یوې پېښې داسې احتمال پوښتل کېږي چې په کوم شته معلومات پورې مشروط وي. د بېلګې په توګه (i) احتمال یې څومره دی چې په تصادفي ډول ټاکل شوی کس شکر ولري په داسې حال کې چې د کورنۍ تاریخچه یې د شکرې ده. (ii) احتمال یې څومره دی چې په ډایس 3 راشي په داسې حال کې چې طاق عدد راغلی وي. ورکړل شوي معلومات اصلي نمونوي فضا کوچنۍ کوي ځکه چې ځینې هغه پایلې د ناشونو په توګه لرې کوي چې د معلوماتو تر ترلاسه کېدو مخکې شونې ګڼل کېدې. دې کوچنۍ شوې فضا ته شرطي نمونوي فضا او له هغې سره تړلو احتمالونو ته شرطي احتمالونه وایي.\n\nد شرطي احتمال تعریف\n\nد A پېښې شرطي احتمال، په داسې حال کې چې بله پېښه B مخکې رامنځته شوې وي، په P(A/B) ښودل کېږي او داسې تعریف کېږي؛\n\n$P(A/B)=\\frac{P(A\\cap B)}{P(B)},\\qquad P(B)\\neq 0$\n\nبېلګه 1.20\n\nیوه سکه دوه ځله اچول کېږي. د دوو لکیو د راتلو شرطي احتمال پیدا کړئ په داسې حال کې چې لږ تر لږه یوه لکۍ راغلې وي؟\n\nحل:\n\nn(S)=2^n=2^2=4\n\nS=\\{HH,HT,TH,TT\\}\n\nفرض کړئ A: 2 لکۍ راځي\n\n$A=\\{TT\\}$\n\nفرض کړئ B: لږ تر لږه یوه لکۍ راځي\n\nB=\\{HT,TH,TT\\}\n\nn(B)=3\n\nP(B)=\\frac{n(B)}{n(S)}=\\frac{3}{4}\n\nA\\cap B=(TT)\n\nn(A\\cap B)=1\n\nP(A\\cap B)=\\frac{n(A\\cap B)}{n(S)}=\\frac{1}{4}\n\n\\therefore P(A/B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/4}{3/4}=\\frac{1}{4}\\times\\frac{4}{3}=\\frac{1}{3}\n\n1.3.5 د تړلو پېښو لپاره د ضرب قانون\n\nبیان:\n\nکه A او B دوه تړلې پېښې وي، نو د A او B دواړو د رامنځته کېدو احتمال د A د رامنځته کېدو له احتمال سره برابر دی چې د B په شرطي احتمال (په داسې حال کې چې A مخکې رامنځته شوې وي) کې ضرب شي. په نښو کې،\n\n$P(A\\text{ and }B)=P(A\\cap B)=P(A)\\,P(B/A)$\n\nثبوت:\n\nد B شرطي احتمال، په داسې حال کې چې A مخکې رامنځته شوې وي، دا دی\n\n$P(B/A)=\\frac{P(B\\cap A)}{P(A)}$\n\nدواړه خواوې په P(A) کې ضربولو سره\n\nP(A)\\,P(B/A)=P(B\\cap A)\n\n\\text{or } P(A\\cap B)=P(A)\\,P(B/A)\\qquad(\\because P(A\\cap B)=P(B\\cap A))\n\nبېلګه 1.21\n\nفرض کړئ په یوه کڅوړه کې 10 توپونه دي چې 3 یې سپین او 7 یې شنه دي. که دوه توپونه په تصادفي ډول یو په بل پسې بې له بېرته اچولو راوویستل شي، نو د دواړو راایستل شویو توپونو د شین کېدو احتمال پیدا کړئ.",
+   "content": "<p>P(B)=\\frac{{}^{6}_{1}C}{{}^{10}_{1}C}=\\frac{6}{10}. Therefore required probability of both green balls is</p><p>P(A\\text{ and }B)=P(A)\\,P(B)</p><p>\\phantom{P(A\\text{ and }B)}=\\frac{6}{10}\\times\\frac{6}{10}=\\frac{36}{100}=0.36</p><p>1.3.4 Conditional probability</p><p>Many times probability of an event is asked that is conditioned on some available information. For example (i) what is the probability that a person selected at random has diabetes given that he has a family history of diabetes. (ii) What is the probability that 3 occurs on a die given that an odd number has occurred. The given information reduces the original sample space by excluding some outcomes as being impossible which before receiving the information were believed possible. This reduced sample space is called conditional sample space and probabilities associated to it are called conditional probabilities.</p><p>Definition of conditional probability</p><p>The conditional probability of an event A given that another event B has already occurred is denoted by P(A/B) and is defined as;</p><p>$P(A/B)=\\frac{P(A\\cap B)}{P(B)},\\qquad P(B)\\neq 0$</p><p>Example 1.20</p><p>A coin is tossed twice. Find the conditional probability that two tails result, given that there is at least one tail?</p><p>Solution:</p><p>n(S)=2^n=2^2=4</p><p>S=\\{HH,HT,TH,TT\\}</p><p>Let A: 2 tail appear</p><p>$A=\\{TT\\}$</p><p>Let B: at least one tail appears</p><p>B=\\{HT,TH,TT\\}</p><p>n(B)=3</p><p>P(B)=\\frac{n(B)}{n(S)}=\\frac{3}{4}</p><p>A\\cap B=(TT)</p><p>n(A\\cap B)=1</p><p>P(A\\cap B)=\\frac{n(A\\cap B)}{n(S)}=\\frac{1}{4}</p><p>\\therefore P(A/B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{1/4}{3/4}=\\frac{1}{4}\\times\\frac{4}{3}=\\frac{1}{3}</p><p>1.3.5 Multiplication law for dependent events</p><p>Statement:</p><p>If A and B are two dependent events then the probability that both A and B occur is equal to the probability that A occurs multiplied by the conditional probability of B given that A has already occurred. Symbolically,</p><p>$P(A\\text{ and }B)=P(A\\cap B)=P(A)\\,P(B/A)$</p><p>Proof:</p><p>The conditional probability of B given that A has already occurred is</p><p>$P(B/A)=\\frac{P(B\\cap A)}{P(A)}$</p><p>Multiplying both sides by P(A), we get</p><p>P(A)\\,P(B/A)=P(B\\cap A)</p><p>\\text{or } P(A\\cap B)=P(A)\\,P(B/A)\\qquad(\\because P(A\\cap B)=P(B\\cap A))</p><p>Example 1.21</p><p>Suppose that a bag contains 10 balls of which 3 are white balls and 7 are green balls. If two balls are drawn at random one after another without replacement, find the probability that both balls drawn are green.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      1,
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      11,
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      23
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      24
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      25
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      26
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      27
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      28
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      29
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      30
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      31,
+      32
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      33
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      34
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 15,
+     "printedPages": [
+      21,
+      22
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 1
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

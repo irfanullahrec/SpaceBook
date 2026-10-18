@@ -1,0 +1,536 @@
+{
+ "pdfPage": 21,
+ "sections": [
+  {
+   "id": "stat12-p021-pmf",
+   "title": "Examples 2.1–2.2, 2.2.1 probability mass function and 2.2.2 properties",
+   "headingUrdu": "مثالیں 2.1–2.2، 2.2.1 احتمالی کمیتی تفاعل اور 2.2.2 خصوصیات",
+   "headingPashto": "بېلګې 2.1–2.2، 2.2.1 د احتمال کتلوي تابع او 2.2.2 ځانګړنې",
+   "paras": [
+    {
+     "text": "Discrete probability distribution",
+     "urdu": "منفصل احتمالی تقسیم",
+     "pashto": "منفصل احتمالي وېش"
+    },
+    {
+     "text": "Example 2.1",
+     "urdu": "مثال 2.1",
+     "pashto": "بېلګه 2.1"
+    },
+    {
+     "text": "Three children were born in a government hospital on Sunday. Find the probability distribution for the number of girls.",
+     "urdu": "اتوار کو ایک سرکاری ہسپتال میں تین بچے پیدا ہوئے۔ لڑکیوں کی تعداد کی احتمالی تقسیم معلوم کریں۔",
+     "pashto": "د یکشنبې په ورځ په یوه دولتي روغتون کې درې ماشومان وزېږېدل. د نجونو د شمېر احتمالي وېش پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$\\text{Here } n(S)=2^n=2^3=8$",
+     "urdu": "$\\text{Here } n(S)=2^n=2^3=8$",
+     "pashto": "$\\text{Here } n(S)=2^n=2^3=8$"
+    },
+    {
+     "text": "$S=\\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG\\}$",
+     "urdu": "$S=\\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG\\}$",
+     "pashto": "$S=\\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG\\}$"
+    },
+    {
+     "text": "X: the number of girls",
+     "urdu": "X: لڑکیوں کی تعداد",
+     "pashto": "X: د نجونو شمېر"
+    },
+    {
+     "text": "$$=\\{0,1,1,2,1,2,2,3\\}$$",
+     "urdu": "$$=\\{0,1,1,2,1,2,2,3\\}$$",
+     "pashto": "$$=\\{0,1,1,2,1,2,2,3\\}$$"
+    },
+    {
+     "text": "Probability distribution for X",
+     "urdu": "X کی احتمالی تقسیم",
+     "pashto": "د X احتمالي وېش"
+    },
+    {
+     "text": "Example 2.2",
+     "urdu": "مثال 2.2",
+     "pashto": "بېلګه 2.2"
+    },
+    {
+     "text": "A fair die is rolled once. Find the probability distribution for up turned faces.",
+     "urdu": "ایک منصفانہ پانسہ ایک بار پھینکا جاتا ہے۔ اوپر آنے والے رخوں کی احتمالی تقسیم معلوم کریں۔",
+     "pashto": "یو عادلانه ډایس یو ځل اچول کېږي. د پورته راغلو مخونو احتمالي وېش پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "When a die is rolled we may get 1 or 2 or 3 or 4 or 5 or 6 each with same probability $1/6$ of its occurrence because the die is fair. It can be shown in tabular form, called probability distribution as follows:",
+     "urdu": "جب پانسہ پھینکا جائے تو ہمیں 1 یا 2 یا 3 یا 4 یا 5 یا 6 مل سکتا ہے، ہر ایک کے آنے کا احتمال یکساں $1/6$ ہے کیونکہ پانسہ منصفانہ ہے۔ اسے جدولی شکل میں دکھایا جا سکتا ہے جسے احتمالی تقسیم کہتے ہیں:",
+     "pashto": "کله چې ډایس واچول شي، کېدای شي 1 یا 2 یا 3 یا 4 یا 5 یا 6 ترلاسه کړو، هر یو د راتلو یو شان احتمال $1/6$ لري ځکه چې ډایس عادلانه دی. دا په جدولي بڼه ښودل کېدای شي چې احتمالي وېش بلل کېږي:"
+    },
+    {
+     "text": "2.2.1 Probability mass function",
+     "urdu": "2.2.1 احتمالی کمیتی تفاعل",
+     "pashto": "2.2.1 د احتمال کتلوي تابع"
+    },
+    {
+     "text": "If probability distribution of a random variable X is expressed in a mathematical form or formula, then it is called probability mass function or probability function. It is denoted by $p(x_i)$ and is presented as:",
+     "urdu": "اگر کسی تصادفی متغیر X کی احتمالی تقسیم ریاضیاتی شکل یا فارمولا میں ظاہر کی جائے تو اسے احتمالی کمیتی تفاعل یا احتمالی تفاعل کہتے ہیں۔ اسے $p(x_i)$ سے ظاہر کرتے ہیں اور یوں پیش کرتے ہیں:",
+     "pashto": "که د یوه تصادفي متغیر X احتمالي وېش په ریاضي بڼه یا فورمول کې وښودل شي، نو د احتمال کتلوي تابع یا احتمالي تابع بلل کېږي. په $p(x_i)$ ښودل کېږي او داسې وړاندې کېږي:"
+    },
+    {
+     "text": "$$p(x_i)=\\left\\{\\begin{matrix}p(X=x_i), & i=1,2,\\ldots,n\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$",
+     "urdu": "$$p(x_i)=\\left\\{\\begin{matrix}p(X=x_i), & i=1,2,\\ldots,n\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$",
+     "pashto": "$$p(x_i)=\\left\\{\\begin{matrix}p(X=x_i), & i=1,2,\\ldots,n\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$"
+    },
+    {
+     "text": "Remember that the objective of probability distribution and probability function is same. Some writers make no distinction and they use probability distribution and probability function interchangeably.",
+     "urdu": "یاد رکھیں کہ احتمالی تقسیم اور احتمالی تفاعل کا مقصد ایک ہی ہے۔ بعض مصنفین ان میں فرق نہیں کرتے اور احتمالی تقسیم اور احتمالی تفاعل کو ایک دوسرے کی جگہ استعمال کرتے ہیں۔",
+     "pashto": "په یاد ولرئ چې د احتمالي وېش او احتمالي تابع موخه یوه ده. ځینې لیکوال توپیر نه کوي او احتمالي وېش او احتمالي تابع یو د بل پر ځای کاروي."
+    },
+    {
+     "text": "2.2.2 Properties of discrete probability distribution",
+     "urdu": "2.2.2 منفصل احتمالی تقسیم کی خصوصیات",
+     "pashto": "2.2.2 د منفصل احتمالي وېش ځانګړنې"
+    },
+    {
+     "text": "A probability distribution and probability mass function $p(x_i)$ must satisfy the following two properties:",
+     "urdu": "احتمالی تقسیم اور احتمالی کمیتی تفاعل $p(x_i)$ کو درج ذیل دو خصوصیات پوری کرنی چاہئیں:",
+     "pashto": "احتمالي وېش او د احتمال کتلوي تابع $p(x_i)$ باید لاندې دوه ځانګړنې پوره کړي:"
+    },
+    {
+     "text": "$(i)\\quad 0\\le p(x_i)\\le 1$",
+     "urdu": "$(i)\\quad 0\\le p(x_i)\\le 1$",
+     "pashto": "$(i)\\quad 0\\le p(x_i)\\le 1$"
+    },
+    {
+     "text": "$(ii)\\quad \\sum_{i=1}^{n}p(x_i)=1$",
+     "urdu": "$(ii)\\quad \\sum_{i=1}^{n}p(x_i)=1$",
+     "pashto": "$(ii)\\quad \\sum_{i=1}^{n}p(x_i)=1$"
+    }
+   ],
+   "theory": "Discrete probability distribution\n\nExample 2.1\n\nThree children were born in a government hospital on Sunday. Find the probability distribution for the number of girls.\n\nSolution:\n\n\\text{Here } n(S)=2^n=2^3=8\n\nS=\\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG\\}\n\nX: the number of girls\n\n$=\\{0,1,1,2,1,2,2,3\\}$\n\nProbability distribution for X\n\nExample 2.2\n\nA fair die is rolled once. Find the probability distribution for up turned faces.\n\nSolution:\n\nWhen a die is rolled we may get 1 or 2 or 3 or 4 or 5 or 6 each with same probability 1/6 of its occurrence because the die is fair. It can be shown in tabular form, called probability distribution as follows:\n\n2.2.1 Probability mass function\n\nIf probability distribution of a random variable X is expressed in a mathematical form or formula, then it is called probability mass function or probability function. It is denoted by p(x_i) and is presented as:\n\n$p(x_i)=\\left\\{\\begin{matrix}p(X=x_i), & i=1,2,\\ldots,n\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\nRemember that the objective of probability distribution and probability function is same. Some writers make no distinction and they use probability distribution and probability function interchangeably.\n\n2.2.2 Properties of discrete probability distribution\n\nA probability distribution and probability mass function p(x_i) must satisfy the following two properties:\n\n(i)\\quad 0\\le p(x_i)\\le 1\n\n(ii)\\quad \\sum_{i=1}^{n}p(x_i)=1",
+   "urdu": "منفصل احتمالی تقسیم\n\nمثال 2.1\n\nاتوار کو ایک سرکاری ہسپتال میں تین بچے پیدا ہوئے۔ لڑکیوں کی تعداد کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\n\\text{Here } n(S)=2^n=2^3=8\n\nS=\\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG\\}\n\nX: لڑکیوں کی تعداد\n\n$=\\{0,1,1,2,1,2,2,3\\}$\n\nX کی احتمالی تقسیم\n\nمثال 2.2\n\nایک منصفانہ پانسہ ایک بار پھینکا جاتا ہے۔ اوپر آنے والے رخوں کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\nجب پانسہ پھینکا جائے تو ہمیں 1 یا 2 یا 3 یا 4 یا 5 یا 6 مل سکتا ہے، ہر ایک کے آنے کا احتمال یکساں 1/6 ہے کیونکہ پانسہ منصفانہ ہے۔ اسے جدولی شکل میں دکھایا جا سکتا ہے جسے احتمالی تقسیم کہتے ہیں:\n\n2.2.1 احتمالی کمیتی تفاعل\n\nاگر کسی تصادفی متغیر X کی احتمالی تقسیم ریاضیاتی شکل یا فارمولا میں ظاہر کی جائے تو اسے احتمالی کمیتی تفاعل یا احتمالی تفاعل کہتے ہیں۔ اسے p(x_i) سے ظاہر کرتے ہیں اور یوں پیش کرتے ہیں:\n\n$p(x_i)=\\left\\{\\begin{matrix}p(X=x_i), & i=1,2,\\ldots,n\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\nیاد رکھیں کہ احتمالی تقسیم اور احتمالی تفاعل کا مقصد ایک ہی ہے۔ بعض مصنفین ان میں فرق نہیں کرتے اور احتمالی تقسیم اور احتمالی تفاعل کو ایک دوسرے کی جگہ استعمال کرتے ہیں۔\n\n2.2.2 منفصل احتمالی تقسیم کی خصوصیات\n\nاحتمالی تقسیم اور احتمالی کمیتی تفاعل p(x_i) کو درج ذیل دو خصوصیات پوری کرنی چاہئیں:\n\n(i)\\quad 0\\le p(x_i)\\le 1\n\n(ii)\\quad \\sum_{i=1}^{n}p(x_i)=1",
+   "pashto": "منفصل احتمالي وېش\n\nبېلګه 2.1\n\nد یکشنبې په ورځ په یوه دولتي روغتون کې درې ماشومان وزېږېدل. د نجونو د شمېر احتمالي وېش پیدا کړئ.\n\nحل:\n\n\\text{Here } n(S)=2^n=2^3=8\n\nS=\\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG\\}\n\nX: د نجونو شمېر\n\n$=\\{0,1,1,2,1,2,2,3\\}$\n\nد X احتمالي وېش\n\nبېلګه 2.2\n\nیو عادلانه ډایس یو ځل اچول کېږي. د پورته راغلو مخونو احتمالي وېش پیدا کړئ.\n\nحل:\n\nکله چې ډایس واچول شي، کېدای شي 1 یا 2 یا 3 یا 4 یا 5 یا 6 ترلاسه کړو، هر یو د راتلو یو شان احتمال 1/6 لري ځکه چې ډایس عادلانه دی. دا په جدولي بڼه ښودل کېدای شي چې احتمالي وېش بلل کېږي:\n\n2.2.1 د احتمال کتلوي تابع\n\nکه د یوه تصادفي متغیر X احتمالي وېش په ریاضي بڼه یا فورمول کې وښودل شي، نو د احتمال کتلوي تابع یا احتمالي تابع بلل کېږي. په p(x_i) ښودل کېږي او داسې وړاندې کېږي:\n\n$p(x_i)=\\left\\{\\begin{matrix}p(X=x_i), & i=1,2,\\ldots,n\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\nپه یاد ولرئ چې د احتمالي وېش او احتمالي تابع موخه یوه ده. ځینې لیکوال توپیر نه کوي او احتمالي وېش او احتمالي تابع یو د بل پر ځای کاروي.\n\n2.2.2 د منفصل احتمالي وېش ځانګړنې\n\nاحتمالي وېش او د احتمال کتلوي تابع p(x_i) باید لاندې دوه ځانګړنې پوره کړي:\n\n(i)\\quad 0\\le p(x_i)\\le 1\n\n(ii)\\quad \\sum_{i=1}^{n}p(x_i)=1",
+   "theoryUrdu": "منفصل احتمالی تقسیم\n\nمثال 2.1\n\nاتوار کو ایک سرکاری ہسپتال میں تین بچے پیدا ہوئے۔ لڑکیوں کی تعداد کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\n\\text{Here } n(S)=2^n=2^3=8\n\nS=\\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG\\}\n\nX: لڑکیوں کی تعداد\n\n$=\\{0,1,1,2,1,2,2,3\\}$\n\nX کی احتمالی تقسیم\n\nمثال 2.2\n\nایک منصفانہ پانسہ ایک بار پھینکا جاتا ہے۔ اوپر آنے والے رخوں کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\nجب پانسہ پھینکا جائے تو ہمیں 1 یا 2 یا 3 یا 4 یا 5 یا 6 مل سکتا ہے، ہر ایک کے آنے کا احتمال یکساں 1/6 ہے کیونکہ پانسہ منصفانہ ہے۔ اسے جدولی شکل میں دکھایا جا سکتا ہے جسے احتمالی تقسیم کہتے ہیں:\n\n2.2.1 احتمالی کمیتی تفاعل\n\nاگر کسی تصادفی متغیر X کی احتمالی تقسیم ریاضیاتی شکل یا فارمولا میں ظاہر کی جائے تو اسے احتمالی کمیتی تفاعل یا احتمالی تفاعل کہتے ہیں۔ اسے p(x_i) سے ظاہر کرتے ہیں اور یوں پیش کرتے ہیں:\n\n$p(x_i)=\\left\\{\\begin{matrix}p(X=x_i), & i=1,2,\\ldots,n\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\nیاد رکھیں کہ احتمالی تقسیم اور احتمالی تفاعل کا مقصد ایک ہی ہے۔ بعض مصنفین ان میں فرق نہیں کرتے اور احتمالی تقسیم اور احتمالی تفاعل کو ایک دوسرے کی جگہ استعمال کرتے ہیں۔\n\n2.2.2 منفصل احتمالی تقسیم کی خصوصیات\n\nاحتمالی تقسیم اور احتمالی کمیتی تفاعل p(x_i) کو درج ذیل دو خصوصیات پوری کرنی چاہئیں:\n\n(i)\\quad 0\\le p(x_i)\\le 1\n\n(ii)\\quad \\sum_{i=1}^{n}p(x_i)=1",
+   "theoryPashto": "منفصل احتمالي وېش\n\nبېلګه 2.1\n\nد یکشنبې په ورځ په یوه دولتي روغتون کې درې ماشومان وزېږېدل. د نجونو د شمېر احتمالي وېش پیدا کړئ.\n\nحل:\n\n\\text{Here } n(S)=2^n=2^3=8\n\nS=\\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG\\}\n\nX: د نجونو شمېر\n\n$=\\{0,1,1,2,1,2,2,3\\}$\n\nد X احتمالي وېش\n\nبېلګه 2.2\n\nیو عادلانه ډایس یو ځل اچول کېږي. د پورته راغلو مخونو احتمالي وېش پیدا کړئ.\n\nحل:\n\nکله چې ډایس واچول شي، کېدای شي 1 یا 2 یا 3 یا 4 یا 5 یا 6 ترلاسه کړو، هر یو د راتلو یو شان احتمال 1/6 لري ځکه چې ډایس عادلانه دی. دا په جدولي بڼه ښودل کېدای شي چې احتمالي وېش بلل کېږي:\n\n2.2.1 د احتمال کتلوي تابع\n\nکه د یوه تصادفي متغیر X احتمالي وېش په ریاضي بڼه یا فورمول کې وښودل شي، نو د احتمال کتلوي تابع یا احتمالي تابع بلل کېږي. په p(x_i) ښودل کېږي او داسې وړاندې کېږي:\n\n$p(x_i)=\\left\\{\\begin{matrix}p(X=x_i), & i=1,2,\\ldots,n\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\nپه یاد ولرئ چې د احتمالي وېش او احتمالي تابع موخه یوه ده. ځینې لیکوال توپیر نه کوي او احتمالي وېش او احتمالي تابع یو د بل پر ځای کاروي.\n\n2.2.2 د منفصل احتمالي وېش ځانګړنې\n\nاحتمالي وېش او د احتمال کتلوي تابع p(x_i) باید لاندې دوه ځانګړنې پوره کړي:\n\n(i)\\quad 0\\le p(x_i)\\le 1\n\n(ii)\\quad \\sum_{i=1}^{n}p(x_i)=1",
+   "content": "<p>Discrete probability distribution</p><p>Example 2.1</p><p>Three children were born in a government hospital on Sunday. Find the probability distribution for the number of girls.</p><p>Solution:</p><p>\\text{Here } n(S)=2^n=2^3=8</p><p>S=\\{BBB,BBG,BGB,BGG,GBB,GBG,GGB,GGG\\}</p><p>X: the number of girls</p><p>$=\\{0,1,1,2,1,2,2,3\\}$</p><p>Probability distribution for X</p><p>Example 2.2</p><p>A fair die is rolled once. Find the probability distribution for up turned faces.</p><p>Solution:</p><p>When a die is rolled we may get 1 or 2 or 3 or 4 or 5 or 6 each with same probability 1/6 of its occurrence because the die is fair. It can be shown in tabular form, called probability distribution as follows:</p><p>2.2.1 Probability mass function</p><p>If probability distribution of a random variable X is expressed in a mathematical form or formula, then it is called probability mass function or probability function. It is denoted by p(x_i) and is presented as:</p><p>$p(x_i)=\\left\\{\\begin{matrix}p(X=x_i), &amp; i=1,2,\\ldots,n\\\\ 0 &amp; \\textit{otherwise}\\end{matrix}\\right\\}$</p><p>Remember that the objective of probability distribution and probability function is same. Some writers make no distinction and they use probability distribution and probability function interchangeably.</p><p>2.2.2 Properties of discrete probability distribution</p><p>A probability distribution and probability mass function p(x_i) must satisfy the following two properties:</p><p>(i)\\quad 0\\le p(x_i)\\le 1</p><p>(ii)\\quad \\sum_{i=1}^{n}p(x_i)=1</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-general-discrete"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      4,
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-1"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-2"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      19,
+      20
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-general-discrete",
+     "headers": [
+      "$X$",
+      "$p(x)$"
+     ],
+     "rows": [
+      [
+       "$x_1$",
+       "$p(x_1)$"
+      ],
+      [
+       "$x_2$",
+       "$p(x_2)$"
+      ],
+      [
+       "$\\vdots$",
+       "$\\vdots$"
+      ],
+      [
+       "$x_n$",
+       "$p(x_n)$"
+      ],
+      [
+       "Total",
+       "$\\sum_{i=1}^{n}p(x_i)=1$"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "$x_1$",
+         "$p(x_1)$"
+        ],
+        [
+         "$x_2$",
+         "$p(x_2)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$x_n$",
+         "$p(x_n)$"
+        ],
+        [
+         "کل",
+         "$\\sum_{i=1}^{n}p(x_i)=1$"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "$x_1$",
+         "$p(x_1)$"
+        ],
+        [
+         "$x_2$",
+         "$p(x_2)$"
+        ],
+        [
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$x_n$",
+         "$p(x_n)$"
+        ],
+        [
+         "ټول",
+         "$\\sum_{i=1}^{n}p(x_i)=1$"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex2-1",
+     "headers": [
+      "$X$",
+      "$p(x)$"
+     ],
+     "rows": [
+      [
+       "0",
+       "$\\frac{1}{8}$"
+      ],
+      [
+       "1",
+       "$\\frac{3}{8}$"
+      ],
+      [
+       "2",
+       "$\\frac{3}{8}$"
+      ],
+      [
+       "3",
+       "$\\frac{1}{8}$"
+      ],
+      [
+       "Total",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "$\\frac{1}{8}$"
+        ],
+        [
+         "1",
+         "$\\frac{3}{8}$"
+        ],
+        [
+         "2",
+         "$\\frac{3}{8}$"
+        ],
+        [
+         "3",
+         "$\\frac{1}{8}$"
+        ],
+        [
+         "کل",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "$\\frac{1}{8}$"
+        ],
+        [
+         "1",
+         "$\\frac{3}{8}$"
+        ],
+        [
+         "2",
+         "$\\frac{3}{8}$"
+        ],
+        [
+         "3",
+         "$\\frac{1}{8}$"
+        ],
+        [
+         "ټول",
+         "1"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex2-2",
+     "headers": [
+      "$X$",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "Total"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{6}$",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "کل"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "ټول"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 21,
+     "printedPages": [
+      33,
+      34
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p33-caption-clipped",
+   "unit": 2,
+   "printedPage": 33,
+   "description": "The caption above the general table is clipped at the top edge of the scan (only “Discrete probabili…” is visible); rendered as “Discrete probability distribution”."
+  }
+ ],
+ "completeUnits": []
+}

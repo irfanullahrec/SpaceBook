@@ -1,0 +1,131 @@
+{
+ "pdfPage": 83,
+ "sections": [
+  {
+   "id": "cs12-u5-text-5",
+   "title": "Unit 5 text (5)",
+   "headingUrdu": "یونٹ 5 — متن (۵)",
+   "headingPashto": "۵ څپرکی — متن (۵)",
+   "paras": [
+    {
+     "text": "5.1.6 Traversing an array",
+     "urdu": "5.1.6 ایرے کو عبور کرنا",
+     "pashto": "۵.۱.۶ د لړۍ تېرېدل"
+    },
+    {
+     "text": "Accessing the elements of an array is called traversing of array.",
+     "urdu": "ایرے کے عناصر تک رسائی ایرے کو عبور کرنا (traversing) کہلاتی ہے۔",
+     "pashto": "د لړۍ عناصرو ته لاسرسی د لړۍ تېرېدل (traversing) بلل کېږي."
+    },
+    {
+     "text": "// reading numbers into an array and then searching for an item\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a[10]; // Declare an array of 10 integers\nint n = 0;\ncout<< \"Enter 10 integer values\"<<endl;\nwhile (n<10)\n{\ncin >> a[n];\nn++;\n}\nint item; // declare an item to search\ncout<< \"Enter an item to search\"<<endl;\ncin>>item;\nfor (int i=0; i<10; i++) //traverse array\n{\nif(item!=a[i]) // comparison\ncontinue;\nelse\n{\ncout<< \"Item \"<<item<<\" is found at location \"<<i+1;\ngoto end;\n}\n}\ncout << \"Search unsuccessful: \"<<item<< \" is not found\";\nend:\ngetch();\nreturn 0;\n}",
+     "urdu": "// reading numbers into an array and then searching for an item\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a[10]; // Declare an array of 10 integers\nint n = 0;\ncout<< \"Enter 10 integer values\"<<endl;\nwhile (n<10)\n{\ncin >> a[n];\nn++;\n}\nint item; // declare an item to search\ncout<< \"Enter an item to search\"<<endl;\ncin>>item;\nfor (int i=0; i<10; i++) //traverse array\n{\nif(item!=a[i]) // comparison\ncontinue;\nelse\n{\ncout<< \"Item \"<<item<<\" is found at location \"<<i+1;\ngoto end;\n}\n}\ncout << \"Search unsuccessful: \"<<item<< \" is not found\";\nend:\ngetch();\nreturn 0;\n}",
+     "pashto": "// reading numbers into an array and then searching for an item\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a[10]; // Declare an array of 10 integers\nint n = 0;\ncout<< \"Enter 10 integer values\"<<endl;\nwhile (n<10)\n{\ncin >> a[n];\nn++;\n}\nint item; // declare an item to search\ncout<< \"Enter an item to search\"<<endl;\ncin>>item;\nfor (int i=0; i<10; i++) //traverse array\n{\nif(item!=a[i]) // comparison\ncontinue;\nelse\n{\ncout<< \"Item \"<<item<<\" is found at location \"<<i+1;\ngoto end;\n}\n}\ncout << \"Search unsuccessful: \"<<item<< \" is not found\";\nend:\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Consider another program of array traversal using for loop to display those values from the array which are odd.",
+     "urdu": "for لوپ کے ذریعے ایرے کو عبور کرنے کے ایک اور پروگرام پر غور کریں جو ایرے میں سے طاق قدریں دکھاتا ہے۔",
+     "pashto": "د for حلقې په مرسته د لړۍ د تېرېدو بل پروګرام ته پام وکړئ چې د لړۍ طاق ارزښتونه ښيي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A [] = {3, 2, 7, 5, 8};\nfor ( int i=0 ; i<5 ; i++ )\n{\nif (A[i] % 2 !=0)\ncout<< A[i] << endl;\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A [] = {3, 2, 7, 5, 8};\nfor ( int i=0 ; i<5 ; i++ )\n{\nif (A[i] % 2 !=0)\ncout<< A[i] << endl;\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A [] = {3, 2, 7, 5, 8};\nfor ( int i=0 ; i<5 ; i++ )\n{\nif (A[i] % 2 !=0)\ncout<< A[i] << endl;\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "3\n7\n5",
+     "urdu": "3\n7\n5",
+     "pashto": "3\n7\n5",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "5.1.6 Traversing an array\n\nAccessing the elements of an array is called traversing of array.\n\n// reading numbers into an array and then searching for an item\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a[10]; // Declare an array of 10 integers\nint n = 0;\ncout<< \"Enter 10 integer values\"<<endl;\nwhile (n<10)\n{\ncin >> a[n];\nn++;\n}\nint item; // declare an item to search\ncout<< \"Enter an item to search\"<<endl;\ncin>>item;\nfor (int i=0; i<10; i++) //traverse array\n{\nif(item!=a[i]) // comparison\ncontinue;\nelse\n{\ncout<< \"Item \"<<item<<\" is found at location \"<<i+1;\ngoto end;\n}\n}\ncout << \"Search unsuccessful: \"<<item<< \" is not found\";\nend:\ngetch();\nreturn 0;\n}\n\nConsider another program of array traversal using for loop to display those values from the array which are odd.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A [] = {3, 2, 7, 5, 8};\nfor ( int i=0 ; i<5 ; i++ )\n{\nif (A[i] % 2 !=0)\ncout<< A[i] << endl;\n}\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\n3\n7\n5",
+   "urdu": "5.1.6 ایرے کو عبور کرنا\n\nایرے کے عناصر تک رسائی ایرے کو عبور کرنا (traversing) کہلاتی ہے۔\n\n// reading numbers into an array and then searching for an item\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a[10]; // Declare an array of 10 integers\nint n = 0;\ncout<< \"Enter 10 integer values\"<<endl;\nwhile (n<10)\n{\ncin >> a[n];\nn++;\n}\nint item; // declare an item to search\ncout<< \"Enter an item to search\"<<endl;\ncin>>item;\nfor (int i=0; i<10; i++) //traverse array\n{\nif(item!=a[i]) // comparison\ncontinue;\nelse\n{\ncout<< \"Item \"<<item<<\" is found at location \"<<i+1;\ngoto end;\n}\n}\ncout << \"Search unsuccessful: \"<<item<< \" is not found\";\nend:\ngetch();\nreturn 0;\n}\n\nfor لوپ کے ذریعے ایرے کو عبور کرنے کے ایک اور پروگرام پر غور کریں جو ایرے میں سے طاق قدریں دکھاتا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A [] = {3, 2, 7, 5, 8};\nfor ( int i=0 ; i<5 ; i++ )\n{\nif (A[i] % 2 !=0)\ncout<< A[i] << endl;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n3\n7\n5",
+   "pashto": "۵.۱.۶ د لړۍ تېرېدل\n\nد لړۍ عناصرو ته لاسرسی د لړۍ تېرېدل (traversing) بلل کېږي.\n\n// reading numbers into an array and then searching for an item\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a[10]; // Declare an array of 10 integers\nint n = 0;\ncout<< \"Enter 10 integer values\"<<endl;\nwhile (n<10)\n{\ncin >> a[n];\nn++;\n}\nint item; // declare an item to search\ncout<< \"Enter an item to search\"<<endl;\ncin>>item;\nfor (int i=0; i<10; i++) //traverse array\n{\nif(item!=a[i]) // comparison\ncontinue;\nelse\n{\ncout<< \"Item \"<<item<<\" is found at location \"<<i+1;\ngoto end;\n}\n}\ncout << \"Search unsuccessful: \"<<item<< \" is not found\";\nend:\ngetch();\nreturn 0;\n}\n\nد for حلقې په مرسته د لړۍ د تېرېدو بل پروګرام ته پام وکړئ چې د لړۍ طاق ارزښتونه ښيي.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A [] = {3, 2, 7, 5, 8};\nfor ( int i=0 ; i<5 ; i++ )\n{\nif (A[i] % 2 !=0)\ncout<< A[i] << endl;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n3\n7\n5",
+   "theoryUrdu": "5.1.6 ایرے کو عبور کرنا\n\nایرے کے عناصر تک رسائی ایرے کو عبور کرنا (traversing) کہلاتی ہے۔\n\n// reading numbers into an array and then searching for an item\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a[10]; // Declare an array of 10 integers\nint n = 0;\ncout<< \"Enter 10 integer values\"<<endl;\nwhile (n<10)\n{\ncin >> a[n];\nn++;\n}\nint item; // declare an item to search\ncout<< \"Enter an item to search\"<<endl;\ncin>>item;\nfor (int i=0; i<10; i++) //traverse array\n{\nif(item!=a[i]) // comparison\ncontinue;\nelse\n{\ncout<< \"Item \"<<item<<\" is found at location \"<<i+1;\ngoto end;\n}\n}\ncout << \"Search unsuccessful: \"<<item<< \" is not found\";\nend:\ngetch();\nreturn 0;\n}\n\nfor لوپ کے ذریعے ایرے کو عبور کرنے کے ایک اور پروگرام پر غور کریں جو ایرے میں سے طاق قدریں دکھاتا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A [] = {3, 2, 7, 5, 8};\nfor ( int i=0 ; i<5 ; i++ )\n{\nif (A[i] % 2 !=0)\ncout<< A[i] << endl;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n3\n7\n5",
+   "theoryPashto": "۵.۱.۶ د لړۍ تېرېدل\n\nد لړۍ عناصرو ته لاسرسی د لړۍ تېرېدل (traversing) بلل کېږي.\n\n// reading numbers into an array and then searching for an item\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint a[10]; // Declare an array of 10 integers\nint n = 0;\ncout<< \"Enter 10 integer values\"<<endl;\nwhile (n<10)\n{\ncin >> a[n];\nn++;\n}\nint item; // declare an item to search\ncout<< \"Enter an item to search\"<<endl;\ncin>>item;\nfor (int i=0; i<10; i++) //traverse array\n{\nif(item!=a[i]) // comparison\ncontinue;\nelse\n{\ncout<< \"Item \"<<item<<\" is found at location \"<<i+1;\ngoto end;\n}\n}\ncout << \"Search unsuccessful: \"<<item<< \" is not found\";\nend:\ngetch();\nreturn 0;\n}\n\nد for حلقې په مرسته د لړۍ د تېرېدو بل پروګرام ته پام وکړئ چې د لړۍ طاق ارزښتونه ښيي.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A [] = {3, 2, 7, 5, 8};\nfor ( int i=0 ; i<5 ; i++ )\n{\nif (A[i] % 2 !=0)\ncout<< A[i] << endl;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n3\n7\n5",
+   "content": "<p>5.1.6 Traversing an array</p><p>Accessing the elements of an array is called traversing of array.</p><p>// reading numbers into an array and then searching for an item\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint a[10]; // Declare an array of 10 integers\nint n = 0;\ncout&lt;&lt; &quot;Enter 10 integer values&quot;&lt;&lt;endl;\nwhile (n&lt;10)\n{\ncin &gt;&gt; a[n];\nn++;\n}\nint item; // declare an item to search\ncout&lt;&lt; &quot;Enter an item to search&quot;&lt;&lt;endl;\ncin&gt;&gt;item;\nfor (int i=0; i&lt;10; i++) //traverse array\n{\nif(item!=a[i]) // comparison\ncontinue;\nelse\n{\ncout&lt;&lt; &quot;Item &quot;&lt;&lt;item&lt;&lt;&quot; is found at location &quot;&lt;&lt;i+1;\ngoto end;\n}\n}\ncout &lt;&lt; &quot;Search unsuccessful: &quot;&lt;&lt;item&lt;&lt; &quot; is not found&quot;;\nend:\ngetch();\nreturn 0;\n}</p><p>Consider another program of array traversal using for loop to display those values from the array which are odd.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint A [] = {3, 2, 7, 5, 8};\nfor ( int i=0 ; i&lt;5 ; i++ )\n{\nif (A[i] % 2 !=0)\ncout&lt;&lt; A[i] &lt;&lt; endl;\n}\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>3\n7\n5</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 83,
+     "printedPages": [
+      154,
+      155
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (5)",
+   "sourcePageLabel": "PDF 83 · p. 154–155",
+   "sourceNote": "The top of p.154 (end of the Temperature output) is recorded with PDF82. The search program runs from p.154 to p.155 and is given whole; the book prints no output for it.",
+   "unit": 5
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf083",
+   "unit": 5,
+   "printedPage": 155,
+   "description": "Owner pen scribbles and the words “checked”/“charity” on p.155 are excluded."
+  }
+ ],
+ "completeUnits": []
+}

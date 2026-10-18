@@ -1,0 +1,212 @@
+{
+ "pdfPage": 72,
+ "sections": [
+  {
+   "id": "cs12-u4-text-12",
+   "title": "Unit 4 text (12)",
+   "headingUrdu": "یونٹ 4 — متن (۱۲)",
+   "headingPashto": "۴ څپرکی — متن (۱۲)",
+   "paras": [
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nchar ch;\nint NumberOfCharacters=0;\nch= getche();\nwhile (ch!= '.')\n{\n++NumberOfCharacters;\nch= getche();\n}\ncout<< \"The number of characters in the sentence are: \"<<NumberOfCharacters;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nchar ch;\nint NumberOfCharacters=0;\nch= getche();\nwhile (ch!= '.')\n{\n++NumberOfCharacters;\nch= getche();\n}\ncout<< \"The number of characters in the sentence are: \"<<NumberOfCharacters;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nchar ch;\nint NumberOfCharacters=0;\nch= getche();\nwhile (ch!= '.')\n{\n++NumberOfCharacters;\nch= getche();\n}\ncout<< \"The number of characters in the sentence are: \"<<NumberOfCharacters;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Welcome to the class.\nThe number of characters in the sentence are: 20",
+     "urdu": "Welcome to the class.\nThe number of characters in the sentence are: 20",
+     "pashto": "Welcome to the class.\nThe number of characters in the sentence are: 20",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The main difference of the while loop and for is that in while loop it is not necessary to know the exact number of iterations of the body of the loop in advance as in for loop.",
+     "urdu": "while لوپ اور for میں بنیادی فرق یہ ہے کہ while لوپ میں for لوپ کی طرح لوپ کے جسم کی تکرار کی درست تعداد پہلے سے جاننا ضروری نہیں۔",
+     "pashto": "د while حلقې او for اصلي توپیر دا دی چې په while حلقه کې د for حلقې په څېر د حلقې د بدنې د تکرارونو دقیق شمېر مخکې له مخکې پېژندل اړین نه دي."
+    },
+    {
+     "text": "c. do- while loop",
+     "urdu": "c. do-while لوپ",
+     "pashto": "c. do-while حلقه"
+    },
+    {
+     "text": "Sometime a programmer want to execute the loop at least once for some problems. To do this, C++ offers the facility of do while loop. The general format of a do while loop is:",
+     "urdu": "بعض اوقات پروگرامر کچھ مسائل کے لیے لوپ کو کم از کم ایک بار چلانا چاہتا ہے۔ اس کے لیے C++ do while لوپ کی سہولت دیتی ہے۔ do while لوپ کی عمومی شکل یہ ہے:",
+     "pashto": "کله کله پروګرام جوړوونکی غواړي د ځینو ستونزو لپاره حلقه لږ تر لږه یو ځل اجرا کړي. د دې لپاره C++ د do while حلقې اسانتیا برابروي. د do while حلقې عمومي بڼه دا ده:"
+    },
+    {
+     "text": "do\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\nwhile (condition);",
+     "urdu": "do\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\nwhile (condition);",
+     "pashto": "do\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\nwhile (condition);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The working of do while loop is the same as the while loop, except that the condition in do while loop is checked after the execution of the body of the loop. The execution of do while loop, guaranties the execution of the statements in its body, at least once, even if the condition is false.",
+     "urdu": "do while لوپ کا کام while لوپ جیسا ہی ہے، سوائے اس کے کہ do while لوپ میں شرط لوپ کے جسم کے چلنے کے بعد جانچی جاتی ہے۔ do while لوپ کا عمل اس کے جسم کے بیانات کے کم از کم ایک بار چلنے کی ضمانت دیتا ہے، چاہے شرط غلط ہی کیوں نہ ہو۔",
+     "pashto": "د do while حلقې کار د while حلقې په څېر دی، پرته له دې چې په do while حلقه کې شرط د حلقې د بدنې له اجرا وروسته کتل کېږي. د do while حلقې اجرا د هغې د بدنې بیانونه لږ تر لږه یو ځل اجرا کول تضمینوي، حتی که شرط false وي."
+    },
+    {
+     "text": "Flowchart 4.6 shows working of while loop.",
+     "urdu": "فلو چارٹ 4.6 while لوپ کا عمل دکھاتا ہے۔",
+     "pashto": "۴.۶ فلوچارټ د while حلقې کار ښيي."
+    },
+    {
+     "text": "Consider the following program that prints the string PAKISTAN once although the condition is false in the start.",
+     "urdu": "درج ذیل پروگرام پر غور کریں جو اسٹرنگ PAKISTAN ایک بار پرنٹ کرتا ہے حالانکہ شروع میں شرط غلط ہے۔",
+     "pashto": "لاندې پروګرام ته پام وکړئ چې د PAKISTAN تار یو ځل چاپوي، که څه هم په پیل کې شرط false دی."
+    },
+    {
+     "text": "// displaying PAKISTAN at least once using do while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=10;\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n} while (i<6);\ngetch();\nreturn 0;\n}",
+     "urdu": "// displaying PAKISTAN at least once using do while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=10;\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n} while (i<6);\ngetch();\nreturn 0;\n}",
+     "pashto": "// displaying PAKISTAN at least once using do while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=10;\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n} while (i<6);\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "PAKISTAN",
+     "urdu": "PAKISTAN",
+     "pashto": "PAKISTAN",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nchar ch;\nint NumberOfCharacters=0;\nch= getche();\nwhile (ch!= '.')\n{\n++NumberOfCharacters;\nch= getche();\n}\ncout<< \"The number of characters in the sentence are: \"<<NumberOfCharacters;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nWelcome to the class.\nThe number of characters in the sentence are: 20\n\nThe main difference of the while loop and for is that in while loop it is not necessary to know the exact number of iterations of the body of the loop in advance as in for loop.\n\nc. do- while loop\n\nSometime a programmer want to execute the loop at least once for some problems. To do this, C++ offers the facility of do while loop. The general format of a do while loop is:\n\ndo\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\nwhile (condition);\n\nThe working of do while loop is the same as the while loop, except that the condition in do while loop is checked after the execution of the body of the loop. The execution of do while loop, guaranties the execution of the statements in its body, at least once, even if the condition is false.\n\nFlowchart 4.6 shows working of while loop.\n\nConsider the following program that prints the string PAKISTAN once although the condition is false in the start.\n\n// displaying PAKISTAN at least once using do while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=10;\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n} while (i<6);\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nPAKISTAN",
+   "urdu": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nchar ch;\nint NumberOfCharacters=0;\nch= getche();\nwhile (ch!= '.')\n{\n++NumberOfCharacters;\nch= getche();\n}\ncout<< \"The number of characters in the sentence are: \"<<NumberOfCharacters;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome to the class.\nThe number of characters in the sentence are: 20\n\nwhile لوپ اور for میں بنیادی فرق یہ ہے کہ while لوپ میں for لوپ کی طرح لوپ کے جسم کی تکرار کی درست تعداد پہلے سے جاننا ضروری نہیں۔\n\nc. do-while لوپ\n\nبعض اوقات پروگرامر کچھ مسائل کے لیے لوپ کو کم از کم ایک بار چلانا چاہتا ہے۔ اس کے لیے C++ do while لوپ کی سہولت دیتی ہے۔ do while لوپ کی عمومی شکل یہ ہے:\n\ndo\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\nwhile (condition);\n\ndo while لوپ کا کام while لوپ جیسا ہی ہے، سوائے اس کے کہ do while لوپ میں شرط لوپ کے جسم کے چلنے کے بعد جانچی جاتی ہے۔ do while لوپ کا عمل اس کے جسم کے بیانات کے کم از کم ایک بار چلنے کی ضمانت دیتا ہے، چاہے شرط غلط ہی کیوں نہ ہو۔\n\nفلو چارٹ 4.6 while لوپ کا عمل دکھاتا ہے۔\n\nدرج ذیل پروگرام پر غور کریں جو اسٹرنگ PAKISTAN ایک بار پرنٹ کرتا ہے حالانکہ شروع میں شرط غلط ہے۔\n\n// displaying PAKISTAN at least once using do while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=10;\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n} while (i<6);\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nPAKISTAN",
+   "pashto": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nchar ch;\nint NumberOfCharacters=0;\nch= getche();\nwhile (ch!= '.')\n{\n++NumberOfCharacters;\nch= getche();\n}\ncout<< \"The number of characters in the sentence are: \"<<NumberOfCharacters;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome to the class.\nThe number of characters in the sentence are: 20\n\nد while حلقې او for اصلي توپیر دا دی چې په while حلقه کې د for حلقې په څېر د حلقې د بدنې د تکرارونو دقیق شمېر مخکې له مخکې پېژندل اړین نه دي.\n\nc. do-while حلقه\n\nکله کله پروګرام جوړوونکی غواړي د ځینو ستونزو لپاره حلقه لږ تر لږه یو ځل اجرا کړي. د دې لپاره C++ د do while حلقې اسانتیا برابروي. د do while حلقې عمومي بڼه دا ده:\n\ndo\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\nwhile (condition);\n\nد do while حلقې کار د while حلقې په څېر دی، پرته له دې چې په do while حلقه کې شرط د حلقې د بدنې له اجرا وروسته کتل کېږي. د do while حلقې اجرا د هغې د بدنې بیانونه لږ تر لږه یو ځل اجرا کول تضمینوي، حتی که شرط false وي.\n\n۴.۶ فلوچارټ د while حلقې کار ښيي.\n\nلاندې پروګرام ته پام وکړئ چې د PAKISTAN تار یو ځل چاپوي، که څه هم په پیل کې شرط false دی.\n\n// displaying PAKISTAN at least once using do while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=10;\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n} while (i<6);\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nPAKISTAN",
+   "theoryUrdu": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nchar ch;\nint NumberOfCharacters=0;\nch= getche();\nwhile (ch!= '.')\n{\n++NumberOfCharacters;\nch= getche();\n}\ncout<< \"The number of characters in the sentence are: \"<<NumberOfCharacters;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome to the class.\nThe number of characters in the sentence are: 20\n\nwhile لوپ اور for میں بنیادی فرق یہ ہے کہ while لوپ میں for لوپ کی طرح لوپ کے جسم کی تکرار کی درست تعداد پہلے سے جاننا ضروری نہیں۔\n\nc. do-while لوپ\n\nبعض اوقات پروگرامر کچھ مسائل کے لیے لوپ کو کم از کم ایک بار چلانا چاہتا ہے۔ اس کے لیے C++ do while لوپ کی سہولت دیتی ہے۔ do while لوپ کی عمومی شکل یہ ہے:\n\ndo\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\nwhile (condition);\n\ndo while لوپ کا کام while لوپ جیسا ہی ہے، سوائے اس کے کہ do while لوپ میں شرط لوپ کے جسم کے چلنے کے بعد جانچی جاتی ہے۔ do while لوپ کا عمل اس کے جسم کے بیانات کے کم از کم ایک بار چلنے کی ضمانت دیتا ہے، چاہے شرط غلط ہی کیوں نہ ہو۔\n\nفلو چارٹ 4.6 while لوپ کا عمل دکھاتا ہے۔\n\nدرج ذیل پروگرام پر غور کریں جو اسٹرنگ PAKISTAN ایک بار پرنٹ کرتا ہے حالانکہ شروع میں شرط غلط ہے۔\n\n// displaying PAKISTAN at least once using do while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=10;\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n} while (i<6);\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nPAKISTAN",
+   "theoryPashto": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\nchar ch;\nint NumberOfCharacters=0;\nch= getche();\nwhile (ch!= '.')\n{\n++NumberOfCharacters;\nch= getche();\n}\ncout<< \"The number of characters in the sentence are: \"<<NumberOfCharacters;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome to the class.\nThe number of characters in the sentence are: 20\n\nد while حلقې او for اصلي توپیر دا دی چې په while حلقه کې د for حلقې په څېر د حلقې د بدنې د تکرارونو دقیق شمېر مخکې له مخکې پېژندل اړین نه دي.\n\nc. do-while حلقه\n\nکله کله پروګرام جوړوونکی غواړي د ځینو ستونزو لپاره حلقه لږ تر لږه یو ځل اجرا کړي. د دې لپاره C++ د do while حلقې اسانتیا برابروي. د do while حلقې عمومي بڼه دا ده:\n\ndo\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\nwhile (condition);\n\nد do while حلقې کار د while حلقې په څېر دی، پرته له دې چې په do while حلقه کې شرط د حلقې د بدنې له اجرا وروسته کتل کېږي. د do while حلقې اجرا د هغې د بدنې بیانونه لږ تر لږه یو ځل اجرا کول تضمینوي، حتی که شرط false وي.\n\n۴.۶ فلوچارټ د while حلقې کار ښيي.\n\nلاندې پروګرام ته پام وکړئ چې د PAKISTAN تار یو ځل چاپوي، که څه هم په پیل کې شرط false دی.\n\n// displaying PAKISTAN at least once using do while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=10;\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n} while (i<6);\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nPAKISTAN",
+   "content": "<p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nchar ch;\nint NumberOfCharacters=0;\nch= getche();\nwhile (ch!= &#x27;.&#x27;)\n{\n++NumberOfCharacters;\nch= getche();\n}\ncout&lt;&lt; &quot;The number of characters in the sentence are: &quot;&lt;&lt;NumberOfCharacters;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Welcome to the class.\nThe number of characters in the sentence are: 20</p><p>The main difference of the while loop and for is that in while loop it is not necessary to know the exact number of iterations of the body of the loop in advance as in for loop.</p><p>c. do- while loop</p><p>Sometime a programmer want to execute the loop at least once for some problems. To do this, C++ offers the facility of do while loop. The general format of a do while loop is:</p><p>do\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\nwhile (condition);</p><p>The working of do while loop is the same as the while loop, except that the condition in do while loop is checked after the execution of the body of the loop. The execution of do while loop, guaranties the execution of the statements in its body, at least once, even if the condition is false.</p><p>Flowchart 4.6 shows working of while loop.</p><p>Consider the following program that prints the string PAKISTAN once although the condition is false in the start.</p><p>// displaying PAKISTAN at least once using do while loop\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint i=10;\n{\ncout &lt;&lt; &quot;PAKISTAN&quot;&lt;&lt;endl;\n++i;\n} while (i&lt;6);\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>PAKISTAN</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "code",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-4-6"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-4-6",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 225\" role=\"img\" aria-label=\"Flowchart 4.6: Working of do-while Loop\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"400\" height=\"225\" fill=\"#ffffff\"/><line x1=\"160\" y1=\"6\" x2=\"160\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><rect x=\"100.0\" y=\"32.0\" width=\"120\" height=\"36\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"160\" y=\"55.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Loop Body</text><line x1=\"160\" y1=\"68\" x2=\"160\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"160,106.0 240.0,132 160,158.0 80.0,132\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"160\" y=\"137.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Condition</text><polyline points=\"240,132 320,132 320,50 226,50\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"285\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><line x1=\"160\" y1=\"158\" x2=\"160\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"148\" y=\"182\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><text x=\"200.0\" y=\"217\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Flowchart 4.6: Working of do-while Loop</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 225\" role=\"img\" aria-label=\"فلو چارٹ 4.6: do-while لوپ کا عمل\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"400\" height=\"225\" fill=\"#ffffff\"/><line x1=\"160\" y1=\"6\" x2=\"160\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><rect x=\"100.0\" y=\"32.0\" width=\"120\" height=\"36\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"160\" y=\"55.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">لوپ کا جسم</text><line x1=\"160\" y1=\"68\" x2=\"160\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"160,106.0 240.0,132 160,158.0 80.0,132\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"160\" y=\"137.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شرط</text><polyline points=\"240,132 320,132 320,50 226,50\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"285\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><line x1=\"160\" y1=\"158\" x2=\"160\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"148\" y=\"182\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><text x=\"200.0\" y=\"217\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">فلو چارٹ 4.6: do-while لوپ کا عمل</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 225\" role=\"img\" aria-label=\"۴.۶ فلوچارټ: د do-while حلقې کار\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"400\" height=\"225\" fill=\"#ffffff\"/><line x1=\"160\" y1=\"6\" x2=\"160\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><rect x=\"100.0\" y=\"32.0\" width=\"120\" height=\"36\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"160\" y=\"55.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">د حلقې بدنه</text><line x1=\"160\" y1=\"68\" x2=\"160\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"160,106.0 240.0,132 160,158.0 80.0,132\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"160\" y=\"137.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شرط</text><polyline points=\"240,132 320,132 320,50 226,50\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"285\" y=\"124\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><line x1=\"160\" y1=\"158\" x2=\"160\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"148\" y=\"182\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><text x=\"200.0\" y=\"217\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۴.۶ فلوچارټ: د do-while حلقې کار</text></svg>",
+     "sourceWidthRatio": 1.7777777777777777
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 72,
+     "printedPages": [
+      131,
+      132,
+      133
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (12)",
+   "sourcePageLabel": "PDF 72 · p. 131–132–133",
+   "sourceNote": "The sentence-count program starts on p.131 and ends at the top of p.132; it is given whole here. Flowchart 4.6 is reproduced as a coded diagram.",
+   "unit": 4
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf072",
+   "unit": 4,
+   "printedPage": 133,
+   "description": "p.133 says “Flowchart 4.6 shows working of while loop” though it depicts the do-while loop; the do-while PAKISTAN listing omits the keyword “do” before the block; the sentence program uses getche() (prints the typed characters) and the output count 20 excludes the full stop. p.132 “Sometime a programmer want”, “guaranties”. All retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

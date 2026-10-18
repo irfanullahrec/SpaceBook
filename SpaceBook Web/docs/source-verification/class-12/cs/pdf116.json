@@ -1,0 +1,233 @@
+{
+ "pdfPage": 116,
+ "sections": [
+  {
+   "id": "cs12-u7-text-3",
+   "title": "Unit 7 text (3)",
+   "headingUrdu": "یونٹ 7 — متن (3)",
+   "headingPashto": "۷ څپرکی — متن (3)",
+   "paras": [
+    {
+     "text": "7.1.5 Declaring variables of pointer types",
+     "urdu": "7.1.5 پوائنٹر اقسام کے ویری ایبلز ڈکلیئر کرنا",
+     "pashto": "۷.۱.۵ د پوائنټر ډولونو متغیرونه اعلانول"
+    },
+    {
+     "text": "The declaration of pointer is simple and is similar to the declaration of a regular variable with a minor difference of the use of an asterisk * symbol between the data type and the variable name. Consider the following general format:",
+     "urdu": "پوائنٹر کی ڈکلیریشن آسان ہے اور عام ویری ایبل کی ڈکلیریشن جیسی ہے، معمولی فرق یہ ہے کہ ڈیٹا ٹائپ اور ویری ایبل کے نام کے درمیان ستارہ * نشان استعمال ہوتا ہے۔ درج ذیل عمومی شکل پر غور کریں:",
+     "pashto": "د پوائنټر اعلان اسانه دی او د عادي متغیر اعلان ته ورته دی، یوازې لږ توپیر دا دی چې د ډېټا ډول او د متغیر د نوم ترمنځ د ستوري * نښه کارېږي. لاندې عمومي بڼې ته پام وکړئ:"
+    },
+    {
+     "text": "Data type * nameVariable;",
+     "urdu": "Data type * nameVariable;",
+     "pashto": "Data type * nameVariable;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, data type is the type of the value of that variable to which this pointer will point. This date type is not the type of the pointer itself but the type of the data the pointer points to. To understand it, consider the following examples of pointers declaration.",
+     "urdu": "یہاں data type اس ویری ایبل کی قدر کی قسم ہے جس کی طرف یہ پوائنٹر اشارہ کرے گا۔ یہ ڈیٹا ٹائپ خود پوائنٹر کی قسم نہیں بلکہ اس ڈیٹا کی قسم ہے جس کی طرف پوائنٹر اشارہ کرتا ہے۔ اسے سمجھنے کے لیے پوائنٹرز ڈکلیریشن کی درج ذیل مثالوں پر غور کریں۔",
+     "pashto": "دلته data type د هغه متغیر د ارزښت ډول دی چې دا پوائنټر به ورته اشاره کوي. دا ډېټا ډول د پوائنټر خپل ډول نه دی بلکې د هغه ډېټا ډول دی چې پوائنټر ورته اشاره کوي. د دې د پوهېدو لپاره د پوائنټر اعلانونو لاندې بېلګو ته پام وکړئ."
+    },
+    {
+     "text": "int* totalMarks;\nchar *Name;\nfloat * percentage;",
+     "urdu": "int* totalMarks;\nchar *Name;\nfloat * percentage;",
+     "pashto": "int* totalMarks;\nchar *Name;\nfloat * percentage;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In this example, three pointers totalMarks, Name and percentage are declared. Each one is intended to point to a different data type. All these pointers occupy space in memory. The first pointer points to an int, the second to a char and the last one to a float.",
+     "urdu": "اس مثال میں تین پوائنٹرز totalMarks، Name اور percentage ڈکلیئر کیے گئے ہیں۔ ہر ایک کا مقصد مختلف ڈیٹا ٹائپ کی طرف اشارہ کرنا ہے۔ یہ تمام پوائنٹرز میموری میں جگہ لیتے ہیں۔ پہلا پوائنٹر int کی طرف، دوسرا char کی طرف اور آخری float کی طرف اشارہ کرتا ہے۔",
+     "pashto": "په دې بېلګه کې درې پوائنټرونه totalMarks، Name او percentage اعلان شوي. هر یو د یوه بېل ډېټا ډول ته د اشارې لپاره دی. دا ټول پوائنټرونه په حافظه کې ځای نیسي. لومړی پوائنټر int ته، دویم char ته او وروستی float ته اشاره کوي."
+    },
+    {
+     "text": "It is notable that the asterisk * symbol used between the data type and the name of the variable is the indication for the pointer declaration and is not used for multiplication. There are three ways to place the asterisk. These are: placing next to the data type, the variable name, or in the middle. All these variations are shown in the above declarations of variables totalMarks, Name and percentage.",
+     "urdu": "قابلِ ذکر ہے کہ ڈیٹا ٹائپ اور ویری ایبل کے نام کے درمیان استعمال ہونے والا ستارہ * نشان پوائنٹر ڈکلیریشن کی علامت ہے اور ضرب کے لیے استعمال نہیں ہوتا۔ ستارہ رکھنے کے تین طریقے ہیں: ڈیٹا ٹائپ کے ساتھ، ویری ایبل کے نام کے ساتھ یا درمیان میں۔ یہ تمام صورتیں ویری ایبلز totalMarks، Name اور percentage کی اوپر کی ڈکلیریشنز میں دکھائی گئی ہیں۔",
+     "pashto": "د یادونې وړ ده چې د ډېټا ډول او د متغیر د نوم ترمنځ کارېدونکې د ستوري * نښه د پوائنټر د اعلان نښه ده او د ضرب لپاره نه کارېږي. د ستوري د ایښودلو درې لارې دي: د ډېټا ډول تر څنګ، د متغیر د نوم تر څنګ، یا په منځ کې. دا ټول بڼې د totalMarks، Name او percentage متغیرونو په پورته اعلانونو کې ښودل شوې."
+    },
+    {
+     "text": "A pointer of type int can only points to a variable of type int and cannot to some other type of variable. Same is the case for other data types as well, but, there is a special type of pointer named void pointer or generic pointer that can point to an objects of any data type. Its declaration is similar to the declaration of normal pointers with the only difference of the use of void keyword as the pointer’s type. Consider the following statement of declaration of the void pointer:",
+     "urdu": "int قسم کا پوائنٹر صرف int قسم کے ویری ایبل کی طرف اشارہ کر سکتا ہے، کسی اور قسم کے ویری ایبل کی طرف نہیں۔ دوسری ڈیٹا ٹائپس کا بھی یہی حال ہے، لیکن ایک خاص قسم کا پوائنٹر ہے جسے void پوائنٹر یا عمومی پوائنٹر کہتے ہیں جو کسی بھی ڈیٹا ٹائپ کی شے کی طرف اشارہ کر سکتا ہے۔ اس کی ڈکلیریشن عام پوائنٹرز جیسی ہے، فرق صرف یہ ہے کہ پوائنٹر کی قسم کے طور پر void کلیدی لفظ استعمال ہوتا ہے۔ void پوائنٹر کی ڈکلیریشن کے درج ذیل بیان پر غور کریں:",
+     "pashto": "د int ډول پوائنټر یوازې د int ډول متغیر ته اشاره کولی شي، د بل ډول متغیر ته نه. د نورو ډېټا ډولونو حالت هم همداسې دی، خو یو ځانګړی پوائنټر شته چې void پوائنټر یا عمومي پوائنټر بلل کېږي او د هر ډېټا ډول شي ته اشاره کولی شي. اعلان یې د عادي پوائنټرونو اعلان ته ورته دی، یوازینی توپیر دا دی چې د پوائنټر د ډول په توګه void کلیدي کلمه کارېږي. د void پوائنټر د اعلان لاندې بیان ته پام وکړئ:"
+    },
+    {
+     "text": "void *pointerVoid; // pointerVoid is a void pointer",
+     "urdu": "void *pointerVoid; // pointerVoid is a void pointer",
+     "pashto": "void *pointerVoid; // pointerVoid is a void pointer",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "As, a void pointer can point to objects of any data type, therefore, consider the following statements.",
+     "urdu": "چونکہ void پوائنٹر کسی بھی ڈیٹا ٹائپ کی اشیا کی طرف اشارہ کر سکتا ہے، اس لیے درج ذیل بیانات پر غور کریں۔",
+     "pashto": "څرنګه چې void پوائنټر د هر ډېټا ډول شیانو ته اشاره کولی شي، نو لاندې بیانونو ته پام وکړئ."
+    },
+    {
+     "text": "int X;\nfloat Y;\nvoid *pointerVoid;\npointerVoid = &X; // valid\npointerVoid = &Y; // valid",
+     "urdu": "int X;\nfloat Y;\nvoid *pointerVoid;\npointerVoid = &X; // valid\npointerVoid = &Y; // valid",
+     "pashto": "int X;\nfloat Y;\nvoid *pointerVoid;\npointerVoid = &X; // valid\npointerVoid = &Y; // valid",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In this segment of code, pointerVoid, stores the address of both integer variable X and floating point variable Y. The compiler decides at run time that the address of which type of variable should be assigned to this pointer.",
+     "urdu": "کوڈ کے اس حصے میں pointerVoid، integer ویری ایبل X اور فلوٹنگ پوائنٹ ویری ایبل Y دونوں کا پتہ محفوظ کرتا ہے۔ کمپائلر رن ٹائم پر فیصلہ کرتا ہے کہ اس پوائنٹر کو کس قسم کے ویری ایبل کا پتہ دیا جائے۔",
+     "pashto": "د کوډ په دې برخه کې pointerVoid د integer متغیر X او د اعشاري متغیر Y دواړو پته ساتي. کمپایلر د اجرا پر مهال پرېکړه کوي چې دې پوائنټر ته د کوم ډول متغیر پته ورکړل شي."
+    },
+    {
+     "text": "7.1.6 Pointer initialization",
+     "urdu": "7.1.6 پوائنٹر کو ابتدائی قدر دینا",
+     "pashto": "۷.۱.۶ پوائنټر ته لومړنی ارزښت ورکول"
+    },
+    {
+     "text": "Assigning values to pointers at declaration time is called pointer initialization. As we know that the values of pointers are the addresses of other variables, therefore, sometimes when we declare pointers we may want to explicitly specify to which variables they will point.",
+     "urdu": "ڈکلیریشن کے وقت پوائنٹرز کو قدریں دینا پوائنٹر انیشیلائزیشن کہلاتا ہے۔ جیسا کہ ہم جانتے ہیں کہ پوائنٹرز کی قدریں دوسرے ویری ایبلز کے پتے ہوتی ہیں، اس لیے بعض اوقات پوائنٹرز ڈکلیئر کرتے وقت ہم واضح طور پر بتانا چاہتے ہیں کہ وہ کن ویری ایبلز کی طرف اشارہ کریں گے۔",
+     "pashto": "د اعلان پر مهال پوائنټرونو ته د ارزښتونو ورکول د پوائنټر لومړنی ارزښت ورکول بلل کېږي. لکه څنګه چې پوهېږو چې د پوائنټرونو ارزښتونه د نورو متغیرونو پتې دي، نو کله کله د پوائنټرونو د اعلان پر مهال غواړو په ښکاره وټاکو چې کومو متغیرونو ته به اشاره کوي."
+    },
+    {
+     "text": "Consider the following segment of code to understand the concept of pointer initialization:",
+     "urdu": "پوائنٹر انیشیلائزیشن کا تصور سمجھنے کے لیے کوڈ کے درج ذیل حصے پر غور کریں:",
+     "pashto": "د پوائنټر د لومړني ارزښت ورکولو د مفهوم د پوهېدو لپاره د کوډ لاندې برخې ته پام وکړئ:"
+    },
+    {
+     "text": "float Temperature;\nfloat *PTemperature = &Temperature;",
+     "urdu": "float Temperature;\nfloat *PTemperature = &Temperature;",
+     "pashto": "float Temperature;\nfloat *PTemperature = &Temperature;",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "7.1.5 Declaring variables of pointer types\n\nThe declaration of pointer is simple and is similar to the declaration of a regular variable with a minor difference of the use of an asterisk * symbol between the data type and the variable name. Consider the following general format:\n\nData type * nameVariable;\n\nHere, data type is the type of the value of that variable to which this pointer will point. This date type is not the type of the pointer itself but the type of the data the pointer points to. To understand it, consider the following examples of pointers declaration.\n\nint* totalMarks;\nchar *Name;\nfloat * percentage;\n\nIn this example, three pointers totalMarks, Name and percentage are declared. Each one is intended to point to a different data type. All these pointers occupy space in memory. The first pointer points to an int, the second to a char and the last one to a float.\n\nIt is notable that the asterisk * symbol used between the data type and the name of the variable is the indication for the pointer declaration and is not used for multiplication. There are three ways to place the asterisk. These are: placing next to the data type, the variable name, or in the middle. All these variations are shown in the above declarations of variables totalMarks, Name and percentage.\n\nA pointer of type int can only points to a variable of type int and cannot to some other type of variable. Same is the case for other data types as well, but, there is a special type of pointer named void pointer or generic pointer that can point to an objects of any data type. Its declaration is similar to the declaration of normal pointers with the only difference of the use of void keyword as the pointer’s type. Consider the following statement of declaration of the void pointer:\n\nvoid *pointerVoid; // pointerVoid is a void pointer\n\nAs, a void pointer can point to objects of any data type, therefore, consider the following statements.\n\nint X;\nfloat Y;\nvoid *pointerVoid;\npointerVoid = &X; // valid\npointerVoid = &Y; // valid\n\nIn this segment of code, pointerVoid, stores the address of both integer variable X and floating point variable Y. The compiler decides at run time that the address of which type of variable should be assigned to this pointer.\n\n7.1.6 Pointer initialization\n\nAssigning values to pointers at declaration time is called pointer initialization. As we know that the values of pointers are the addresses of other variables, therefore, sometimes when we declare pointers we may want to explicitly specify to which variables they will point.\n\nConsider the following segment of code to understand the concept of pointer initialization:\n\nfloat Temperature;\nfloat *PTemperature = &Temperature;",
+   "urdu": "7.1.5 پوائنٹر اقسام کے ویری ایبلز ڈکلیئر کرنا\n\nپوائنٹر کی ڈکلیریشن آسان ہے اور عام ویری ایبل کی ڈکلیریشن جیسی ہے، معمولی فرق یہ ہے کہ ڈیٹا ٹائپ اور ویری ایبل کے نام کے درمیان ستارہ * نشان استعمال ہوتا ہے۔ درج ذیل عمومی شکل پر غور کریں:\n\nData type * nameVariable;\n\nیہاں data type اس ویری ایبل کی قدر کی قسم ہے جس کی طرف یہ پوائنٹر اشارہ کرے گا۔ یہ ڈیٹا ٹائپ خود پوائنٹر کی قسم نہیں بلکہ اس ڈیٹا کی قسم ہے جس کی طرف پوائنٹر اشارہ کرتا ہے۔ اسے سمجھنے کے لیے پوائنٹرز ڈکلیریشن کی درج ذیل مثالوں پر غور کریں۔\n\nint* totalMarks;\nchar *Name;\nfloat * percentage;\n\nاس مثال میں تین پوائنٹرز totalMarks، Name اور percentage ڈکلیئر کیے گئے ہیں۔ ہر ایک کا مقصد مختلف ڈیٹا ٹائپ کی طرف اشارہ کرنا ہے۔ یہ تمام پوائنٹرز میموری میں جگہ لیتے ہیں۔ پہلا پوائنٹر int کی طرف، دوسرا char کی طرف اور آخری float کی طرف اشارہ کرتا ہے۔\n\nقابلِ ذکر ہے کہ ڈیٹا ٹائپ اور ویری ایبل کے نام کے درمیان استعمال ہونے والا ستارہ * نشان پوائنٹر ڈکلیریشن کی علامت ہے اور ضرب کے لیے استعمال نہیں ہوتا۔ ستارہ رکھنے کے تین طریقے ہیں: ڈیٹا ٹائپ کے ساتھ، ویری ایبل کے نام کے ساتھ یا درمیان میں۔ یہ تمام صورتیں ویری ایبلز totalMarks، Name اور percentage کی اوپر کی ڈکلیریشنز میں دکھائی گئی ہیں۔\n\nint قسم کا پوائنٹر صرف int قسم کے ویری ایبل کی طرف اشارہ کر سکتا ہے، کسی اور قسم کے ویری ایبل کی طرف نہیں۔ دوسری ڈیٹا ٹائپس کا بھی یہی حال ہے، لیکن ایک خاص قسم کا پوائنٹر ہے جسے void پوائنٹر یا عمومی پوائنٹر کہتے ہیں جو کسی بھی ڈیٹا ٹائپ کی شے کی طرف اشارہ کر سکتا ہے۔ اس کی ڈکلیریشن عام پوائنٹرز جیسی ہے، فرق صرف یہ ہے کہ پوائنٹر کی قسم کے طور پر void کلیدی لفظ استعمال ہوتا ہے۔ void پوائنٹر کی ڈکلیریشن کے درج ذیل بیان پر غور کریں:\n\nvoid *pointerVoid; // pointerVoid is a void pointer\n\nچونکہ void پوائنٹر کسی بھی ڈیٹا ٹائپ کی اشیا کی طرف اشارہ کر سکتا ہے، اس لیے درج ذیل بیانات پر غور کریں۔\n\nint X;\nfloat Y;\nvoid *pointerVoid;\npointerVoid = &X; // valid\npointerVoid = &Y; // valid\n\nکوڈ کے اس حصے میں pointerVoid، integer ویری ایبل X اور فلوٹنگ پوائنٹ ویری ایبل Y دونوں کا پتہ محفوظ کرتا ہے۔ کمپائلر رن ٹائم پر فیصلہ کرتا ہے کہ اس پوائنٹر کو کس قسم کے ویری ایبل کا پتہ دیا جائے۔\n\n7.1.6 پوائنٹر کو ابتدائی قدر دینا\n\nڈکلیریشن کے وقت پوائنٹرز کو قدریں دینا پوائنٹر انیشیلائزیشن کہلاتا ہے۔ جیسا کہ ہم جانتے ہیں کہ پوائنٹرز کی قدریں دوسرے ویری ایبلز کے پتے ہوتی ہیں، اس لیے بعض اوقات پوائنٹرز ڈکلیئر کرتے وقت ہم واضح طور پر بتانا چاہتے ہیں کہ وہ کن ویری ایبلز کی طرف اشارہ کریں گے۔\n\nپوائنٹر انیشیلائزیشن کا تصور سمجھنے کے لیے کوڈ کے درج ذیل حصے پر غور کریں:\n\nfloat Temperature;\nfloat *PTemperature = &Temperature;",
+   "pashto": "۷.۱.۵ د پوائنټر ډولونو متغیرونه اعلانول\n\nد پوائنټر اعلان اسانه دی او د عادي متغیر اعلان ته ورته دی، یوازې لږ توپیر دا دی چې د ډېټا ډول او د متغیر د نوم ترمنځ د ستوري * نښه کارېږي. لاندې عمومي بڼې ته پام وکړئ:\n\nData type * nameVariable;\n\nدلته data type د هغه متغیر د ارزښت ډول دی چې دا پوائنټر به ورته اشاره کوي. دا ډېټا ډول د پوائنټر خپل ډول نه دی بلکې د هغه ډېټا ډول دی چې پوائنټر ورته اشاره کوي. د دې د پوهېدو لپاره د پوائنټر اعلانونو لاندې بېلګو ته پام وکړئ.\n\nint* totalMarks;\nchar *Name;\nfloat * percentage;\n\nپه دې بېلګه کې درې پوائنټرونه totalMarks، Name او percentage اعلان شوي. هر یو د یوه بېل ډېټا ډول ته د اشارې لپاره دی. دا ټول پوائنټرونه په حافظه کې ځای نیسي. لومړی پوائنټر int ته، دویم char ته او وروستی float ته اشاره کوي.\n\nد یادونې وړ ده چې د ډېټا ډول او د متغیر د نوم ترمنځ کارېدونکې د ستوري * نښه د پوائنټر د اعلان نښه ده او د ضرب لپاره نه کارېږي. د ستوري د ایښودلو درې لارې دي: د ډېټا ډول تر څنګ، د متغیر د نوم تر څنګ، یا په منځ کې. دا ټول بڼې د totalMarks، Name او percentage متغیرونو په پورته اعلانونو کې ښودل شوې.\n\nد int ډول پوائنټر یوازې د int ډول متغیر ته اشاره کولی شي، د بل ډول متغیر ته نه. د نورو ډېټا ډولونو حالت هم همداسې دی، خو یو ځانګړی پوائنټر شته چې void پوائنټر یا عمومي پوائنټر بلل کېږي او د هر ډېټا ډول شي ته اشاره کولی شي. اعلان یې د عادي پوائنټرونو اعلان ته ورته دی، یوازینی توپیر دا دی چې د پوائنټر د ډول په توګه void کلیدي کلمه کارېږي. د void پوائنټر د اعلان لاندې بیان ته پام وکړئ:\n\nvoid *pointerVoid; // pointerVoid is a void pointer\n\nڅرنګه چې void پوائنټر د هر ډېټا ډول شیانو ته اشاره کولی شي، نو لاندې بیانونو ته پام وکړئ.\n\nint X;\nfloat Y;\nvoid *pointerVoid;\npointerVoid = &X; // valid\npointerVoid = &Y; // valid\n\nد کوډ په دې برخه کې pointerVoid د integer متغیر X او د اعشاري متغیر Y دواړو پته ساتي. کمپایلر د اجرا پر مهال پرېکړه کوي چې دې پوائنټر ته د کوم ډول متغیر پته ورکړل شي.\n\n۷.۱.۶ پوائنټر ته لومړنی ارزښت ورکول\n\nد اعلان پر مهال پوائنټرونو ته د ارزښتونو ورکول د پوائنټر لومړنی ارزښت ورکول بلل کېږي. لکه څنګه چې پوهېږو چې د پوائنټرونو ارزښتونه د نورو متغیرونو پتې دي، نو کله کله د پوائنټرونو د اعلان پر مهال غواړو په ښکاره وټاکو چې کومو متغیرونو ته به اشاره کوي.\n\nد پوائنټر د لومړني ارزښت ورکولو د مفهوم د پوهېدو لپاره د کوډ لاندې برخې ته پام وکړئ:\n\nfloat Temperature;\nfloat *PTemperature = &Temperature;",
+   "theoryUrdu": "7.1.5 پوائنٹر اقسام کے ویری ایبلز ڈکلیئر کرنا\n\nپوائنٹر کی ڈکلیریشن آسان ہے اور عام ویری ایبل کی ڈکلیریشن جیسی ہے، معمولی فرق یہ ہے کہ ڈیٹا ٹائپ اور ویری ایبل کے نام کے درمیان ستارہ * نشان استعمال ہوتا ہے۔ درج ذیل عمومی شکل پر غور کریں:\n\nData type * nameVariable;\n\nیہاں data type اس ویری ایبل کی قدر کی قسم ہے جس کی طرف یہ پوائنٹر اشارہ کرے گا۔ یہ ڈیٹا ٹائپ خود پوائنٹر کی قسم نہیں بلکہ اس ڈیٹا کی قسم ہے جس کی طرف پوائنٹر اشارہ کرتا ہے۔ اسے سمجھنے کے لیے پوائنٹرز ڈکلیریشن کی درج ذیل مثالوں پر غور کریں۔\n\nint* totalMarks;\nchar *Name;\nfloat * percentage;\n\nاس مثال میں تین پوائنٹرز totalMarks، Name اور percentage ڈکلیئر کیے گئے ہیں۔ ہر ایک کا مقصد مختلف ڈیٹا ٹائپ کی طرف اشارہ کرنا ہے۔ یہ تمام پوائنٹرز میموری میں جگہ لیتے ہیں۔ پہلا پوائنٹر int کی طرف، دوسرا char کی طرف اور آخری float کی طرف اشارہ کرتا ہے۔\n\nقابلِ ذکر ہے کہ ڈیٹا ٹائپ اور ویری ایبل کے نام کے درمیان استعمال ہونے والا ستارہ * نشان پوائنٹر ڈکلیریشن کی علامت ہے اور ضرب کے لیے استعمال نہیں ہوتا۔ ستارہ رکھنے کے تین طریقے ہیں: ڈیٹا ٹائپ کے ساتھ، ویری ایبل کے نام کے ساتھ یا درمیان میں۔ یہ تمام صورتیں ویری ایبلز totalMarks، Name اور percentage کی اوپر کی ڈکلیریشنز میں دکھائی گئی ہیں۔\n\nint قسم کا پوائنٹر صرف int قسم کے ویری ایبل کی طرف اشارہ کر سکتا ہے، کسی اور قسم کے ویری ایبل کی طرف نہیں۔ دوسری ڈیٹا ٹائپس کا بھی یہی حال ہے، لیکن ایک خاص قسم کا پوائنٹر ہے جسے void پوائنٹر یا عمومی پوائنٹر کہتے ہیں جو کسی بھی ڈیٹا ٹائپ کی شے کی طرف اشارہ کر سکتا ہے۔ اس کی ڈکلیریشن عام پوائنٹرز جیسی ہے، فرق صرف یہ ہے کہ پوائنٹر کی قسم کے طور پر void کلیدی لفظ استعمال ہوتا ہے۔ void پوائنٹر کی ڈکلیریشن کے درج ذیل بیان پر غور کریں:\n\nvoid *pointerVoid; // pointerVoid is a void pointer\n\nچونکہ void پوائنٹر کسی بھی ڈیٹا ٹائپ کی اشیا کی طرف اشارہ کر سکتا ہے، اس لیے درج ذیل بیانات پر غور کریں۔\n\nint X;\nfloat Y;\nvoid *pointerVoid;\npointerVoid = &X; // valid\npointerVoid = &Y; // valid\n\nکوڈ کے اس حصے میں pointerVoid، integer ویری ایبل X اور فلوٹنگ پوائنٹ ویری ایبل Y دونوں کا پتہ محفوظ کرتا ہے۔ کمپائلر رن ٹائم پر فیصلہ کرتا ہے کہ اس پوائنٹر کو کس قسم کے ویری ایبل کا پتہ دیا جائے۔\n\n7.1.6 پوائنٹر کو ابتدائی قدر دینا\n\nڈکلیریشن کے وقت پوائنٹرز کو قدریں دینا پوائنٹر انیشیلائزیشن کہلاتا ہے۔ جیسا کہ ہم جانتے ہیں کہ پوائنٹرز کی قدریں دوسرے ویری ایبلز کے پتے ہوتی ہیں، اس لیے بعض اوقات پوائنٹرز ڈکلیئر کرتے وقت ہم واضح طور پر بتانا چاہتے ہیں کہ وہ کن ویری ایبلز کی طرف اشارہ کریں گے۔\n\nپوائنٹر انیشیلائزیشن کا تصور سمجھنے کے لیے کوڈ کے درج ذیل حصے پر غور کریں:\n\nfloat Temperature;\nfloat *PTemperature = &Temperature;",
+   "theoryPashto": "۷.۱.۵ د پوائنټر ډولونو متغیرونه اعلانول\n\nد پوائنټر اعلان اسانه دی او د عادي متغیر اعلان ته ورته دی، یوازې لږ توپیر دا دی چې د ډېټا ډول او د متغیر د نوم ترمنځ د ستوري * نښه کارېږي. لاندې عمومي بڼې ته پام وکړئ:\n\nData type * nameVariable;\n\nدلته data type د هغه متغیر د ارزښت ډول دی چې دا پوائنټر به ورته اشاره کوي. دا ډېټا ډول د پوائنټر خپل ډول نه دی بلکې د هغه ډېټا ډول دی چې پوائنټر ورته اشاره کوي. د دې د پوهېدو لپاره د پوائنټر اعلانونو لاندې بېلګو ته پام وکړئ.\n\nint* totalMarks;\nchar *Name;\nfloat * percentage;\n\nپه دې بېلګه کې درې پوائنټرونه totalMarks، Name او percentage اعلان شوي. هر یو د یوه بېل ډېټا ډول ته د اشارې لپاره دی. دا ټول پوائنټرونه په حافظه کې ځای نیسي. لومړی پوائنټر int ته، دویم char ته او وروستی float ته اشاره کوي.\n\nد یادونې وړ ده چې د ډېټا ډول او د متغیر د نوم ترمنځ کارېدونکې د ستوري * نښه د پوائنټر د اعلان نښه ده او د ضرب لپاره نه کارېږي. د ستوري د ایښودلو درې لارې دي: د ډېټا ډول تر څنګ، د متغیر د نوم تر څنګ، یا په منځ کې. دا ټول بڼې د totalMarks، Name او percentage متغیرونو په پورته اعلانونو کې ښودل شوې.\n\nد int ډول پوائنټر یوازې د int ډول متغیر ته اشاره کولی شي، د بل ډول متغیر ته نه. د نورو ډېټا ډولونو حالت هم همداسې دی، خو یو ځانګړی پوائنټر شته چې void پوائنټر یا عمومي پوائنټر بلل کېږي او د هر ډېټا ډول شي ته اشاره کولی شي. اعلان یې د عادي پوائنټرونو اعلان ته ورته دی، یوازینی توپیر دا دی چې د پوائنټر د ډول په توګه void کلیدي کلمه کارېږي. د void پوائنټر د اعلان لاندې بیان ته پام وکړئ:\n\nvoid *pointerVoid; // pointerVoid is a void pointer\n\nڅرنګه چې void پوائنټر د هر ډېټا ډول شیانو ته اشاره کولی شي، نو لاندې بیانونو ته پام وکړئ.\n\nint X;\nfloat Y;\nvoid *pointerVoid;\npointerVoid = &X; // valid\npointerVoid = &Y; // valid\n\nد کوډ په دې برخه کې pointerVoid د integer متغیر X او د اعشاري متغیر Y دواړو پته ساتي. کمپایلر د اجرا پر مهال پرېکړه کوي چې دې پوائنټر ته د کوم ډول متغیر پته ورکړل شي.\n\n۷.۱.۶ پوائنټر ته لومړنی ارزښت ورکول\n\nد اعلان پر مهال پوائنټرونو ته د ارزښتونو ورکول د پوائنټر لومړنی ارزښت ورکول بلل کېږي. لکه څنګه چې پوهېږو چې د پوائنټرونو ارزښتونه د نورو متغیرونو پتې دي، نو کله کله د پوائنټرونو د اعلان پر مهال غواړو په ښکاره وټاکو چې کومو متغیرونو ته به اشاره کوي.\n\nد پوائنټر د لومړني ارزښت ورکولو د مفهوم د پوهېدو لپاره د کوډ لاندې برخې ته پام وکړئ:\n\nfloat Temperature;\nfloat *PTemperature = &Temperature;",
+   "content": "<p>7.1.5 Declaring variables of pointer types</p><p>The declaration of pointer is simple and is similar to the declaration of a regular variable with a minor difference of the use of an asterisk * symbol between the data type and the variable name. Consider the following general format:</p><p>Data type * nameVariable;</p><p>Here, data type is the type of the value of that variable to which this pointer will point. This date type is not the type of the pointer itself but the type of the data the pointer points to. To understand it, consider the following examples of pointers declaration.</p><p>int* totalMarks;\nchar *Name;\nfloat * percentage;</p><p>In this example, three pointers totalMarks, Name and percentage are declared. Each one is intended to point to a different data type. All these pointers occupy space in memory. The first pointer points to an int, the second to a char and the last one to a float.</p><p>It is notable that the asterisk * symbol used between the data type and the name of the variable is the indication for the pointer declaration and is not used for multiplication. There are three ways to place the asterisk. These are: placing next to the data type, the variable name, or in the middle. All these variations are shown in the above declarations of variables totalMarks, Name and percentage.</p><p>A pointer of type int can only points to a variable of type int and cannot to some other type of variable. Same is the case for other data types as well, but, there is a special type of pointer named void pointer or generic pointer that can point to an objects of any data type. Its declaration is similar to the declaration of normal pointers with the only difference of the use of void keyword as the pointer’s type. Consider the following statement of declaration of the void pointer:</p><p>void *pointerVoid; // pointerVoid is a void pointer</p><p>As, a void pointer can point to objects of any data type, therefore, consider the following statements.</p><p>int X;\nfloat Y;\nvoid *pointerVoid;\npointerVoid = &amp;X; // valid\npointerVoid = &amp;Y; // valid</p><p>In this segment of code, pointerVoid, stores the address of both integer variable X and floating point variable Y. The compiler decides at run time that the address of which type of variable should be assigned to this pointer.</p><p>7.1.6 Pointer initialization</p><p>Assigning values to pointers at declaration time is called pointer initialization. As we know that the values of pointers are the addresses of other variables, therefore, sometimes when we declare pointers we may want to explicitly specify to which variables they will point.</p><p>Consider the following segment of code to understand the concept of pointer initialization:</p><p>float Temperature;\nfloat *PTemperature = &amp;Temperature;</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 116,
+     "printedPages": [
+      220,
+      221,
+      222
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 7 text (3)",
+   "sourcePageLabel": "PDF 116 · p. 220–221–222",
+   "sourceNote": "The opening sentences of p.220 are recorded with PDF115. The initialization segment at the top of p.222 (PDF117) is given here.",
+   "unit": 7
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf116",
+   "unit": 7,
+   "printedPage": 220,
+   "description": "p.220 “This date type is not the type of the pointer”; p.221 “can only points to”, “point to an objects of any data type”, and the claim that the compiler decides “at run time”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

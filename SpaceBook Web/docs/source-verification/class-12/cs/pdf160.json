@@ -1,0 +1,455 @@
+{
+ "pdfPage": 160,
+ "sections": [
+  {
+   "id": "cs12-bm-annex-5",
+   "title": "Annexure 5: List of Built-in Functions",
+   "headingUrdu": "ضمیمہ 5: بلٹ اِن فنکشنز کی فہرست",
+   "headingPashto": "۵ ضمیمه: د جوړ شویو فنکشنونو لړلیک",
+   "paras": [
+    {
+     "text": "Annexure 5",
+     "urdu": "ضمیمہ 5",
+     "pashto": "۵ ضمیمه"
+    },
+    {
+     "text": "List of Built-in Functions",
+     "urdu": "بلٹ اِن فنکشنز کی فہرست",
+     "pashto": "د جوړ شویو فنکشنونو لړلیک"
+    }
+   ],
+   "theory": "Annexure 5\n\nList of Built-in Functions",
+   "urdu": "ضمیمہ 5\n\nبلٹ اِن فنکشنز کی فہرست",
+   "pashto": "۵ ضمیمه\n\nد جوړ شویو فنکشنونو لړلیک",
+   "theoryUrdu": "ضمیمہ 5\n\nبلٹ اِن فنکشنز کی فہرست",
+   "theoryPashto": "۵ ضمیمه\n\nد جوړ شویو فنکشنونو لړلیک",
+   "content": "<p>Annexure 5</p><p>List of Built-in Functions</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-annex5"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-annex5",
+     "headers": [
+      "Function",
+      "Header File",
+      "Purpose"
+     ],
+     "rows": [
+      [
+       "getch()",
+       "conio.h",
+       "Used to get the character input from the keyboard"
+      ],
+      [
+       "getche()",
+       "conio.h",
+       "Used to get character input form the keyboard and echo it on the screen"
+      ],
+      [
+       "gets()",
+       "stdio.h",
+       "Stands for get string and is used to get a string input"
+      ],
+      [
+       "puts()",
+       "stdio.h",
+       "Used to display the string"
+      ],
+      [
+       "getchar()",
+       "stdio.h",
+       "Stands for get character it is used to input as single character from the keyboard. This function receives no argument."
+      ],
+      [
+       "putchar()",
+       "stdio.h",
+       "Standard output function used to display the character, on the output screen, received as an argument."
+      ],
+      [
+       "strcat()",
+       "string.h",
+       "Stands for String concatenation. It combines two strings into a single string."
+      ],
+      [
+       "copy()",
+       "string.h",
+       "This function copy one string into another string."
+      ],
+      [
+       "strcpy()",
+       "string.h",
+       "It is also used to copy one string into another string"
+      ],
+      [
+       "find()",
+       "string.h",
+       "To find a particular word or a character in a string"
+      ],
+      [
+       "length()",
+       "string.h",
+       "Used to find the length of a string."
+      ],
+      [
+       "swap()",
+       "string.h",
+       "To swap the values of two strings."
+      ],
+      [
+       "sin()",
+       "math.h",
+       "Used to find the sin value of an angle."
+      ],
+      [
+       "cos()",
+       "math.h",
+       "Used to find the cos value of an angle."
+      ],
+      [
+       "tan()",
+       "math.h",
+       "Used to ding the tangent value of an anbgle."
+      ],
+      [
+       "cot()",
+       "math.h",
+       "Used to find the cotangent value of an angle."
+      ],
+      [
+       "abs()",
+       "math.h",
+       "Used to find the absolute value of a variable or expression."
+      ],
+      [
+       "pow()",
+       "math.h",
+       "Used to find the power of a number. It takes two arguments first shows the number and second shows the power to which the number is raised."
+      ],
+      [
+       "sqrt()",
+       "math.h",
+       "Used to find the square root of an number received as an argument."
+      ],
+      [
+       "open()",
+       "fstream.h",
+       "Used to open a file."
+      ],
+      [
+       "close()",
+       "fstream.h",
+       "Used to close a file."
+      ],
+      [
+       "bof()",
+       "fstream.h",
+       "used to set the pointers to the beginning of a file"
+      ],
+      [
+       "eof()",
+       "fstream.h",
+       "used to set the pointers at the end of a file"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "فنکشن",
+        "ہیڈر فائل",
+        "مقصد"
+       ],
+       "rows": [
+        [
+         "getch()",
+         "conio.h",
+         "کی بورڈ سے حرفی ان پٹ لینے کے لیے"
+        ],
+        [
+         "getche()",
+         "conio.h",
+         "کی بورڈ سے حرفی ان پٹ لے کر اسے اسکرین پر دکھانے کے لیے"
+        ],
+        [
+         "gets()",
+         "stdio.h",
+         "get string کا مخفف ہے اور اسٹرنگ ان پٹ لینے کے لیے استعمال ہوتا ہے"
+        ],
+        [
+         "puts()",
+         "stdio.h",
+         "اسٹرنگ دکھانے کے لیے"
+        ],
+        [
+         "getchar()",
+         "stdio.h",
+         "get character کا مخفف ہے، کی بورڈ سے ایک حرف داخل کرنے کے لیے استعمال ہوتا ہے۔ یہ فنکشن کوئی آرگیومنٹ نہیں لیتا۔"
+        ],
+        [
+         "putchar()",
+         "stdio.h",
+         "معیاری آؤٹ پٹ فنکشن جو بطور آرگیومنٹ ملنے والا حرف آؤٹ پٹ اسکرین پر دکھاتا ہے۔"
+        ],
+        [
+         "strcat()",
+         "string.h",
+         "String concatenation کا مخفف۔ یہ دو اسٹرنگز کو ایک اسٹرنگ میں جوڑتا ہے۔"
+        ],
+        [
+         "copy()",
+         "string.h",
+         "یہ فنکشن ایک اسٹرنگ کو دوسری اسٹرنگ میں نقل کرتا ہے۔"
+        ],
+        [
+         "strcpy()",
+         "string.h",
+         "یہ بھی ایک اسٹرنگ کو دوسری اسٹرنگ میں نقل کرنے کے لیے استعمال ہوتا ہے"
+        ],
+        [
+         "find()",
+         "string.h",
+         "اسٹرنگ میں کوئی خاص لفظ یا حرف تلاش کرنے کے لیے"
+        ],
+        [
+         "length()",
+         "string.h",
+         "اسٹرنگ کی لمبائی معلوم کرنے کے لیے۔"
+        ],
+        [
+         "swap()",
+         "string.h",
+         "دو اسٹرنگز کی قدروں کا تبادلہ کرنے کے لیے۔"
+        ],
+        [
+         "sin()",
+         "math.h",
+         "زاویے کی sin قدر معلوم کرنے کے لیے۔"
+        ],
+        [
+         "cos()",
+         "math.h",
+         "زاویے کی cos قدر معلوم کرنے کے لیے۔"
+        ],
+        [
+         "tan()",
+         "math.h",
+         "زاویے کی tangent قدر معلوم کرنے کے لیے۔"
+        ],
+        [
+         "cot()",
+         "math.h",
+         "زاویے کی cotangent قدر معلوم کرنے کے لیے۔"
+        ],
+        [
+         "abs()",
+         "math.h",
+         "کسی ویری ایبل یا ایکسپریشن کی مطلق قدر معلوم کرنے کے لیے۔"
+        ],
+        [
+         "pow()",
+         "math.h",
+         "کسی عدد کی طاقت معلوم کرنے کے لیے۔ یہ دو آرگیومنٹس لیتا ہے، پہلا عدد اور دوسرا وہ طاقت ظاہر کرتا ہے جس تک عدد کو بڑھایا جائے۔"
+        ],
+        [
+         "sqrt()",
+         "math.h",
+         "بطور آرگیومنٹ ملنے والے عدد کا جذر معلوم کرنے کے لیے۔"
+        ],
+        [
+         "open()",
+         "fstream.h",
+         "فائل کھولنے کے لیے۔"
+        ],
+        [
+         "close()",
+         "fstream.h",
+         "فائل بند کرنے کے لیے۔"
+        ],
+        [
+         "bof()",
+         "fstream.h",
+         "پوائنٹرز کو فائل کے آغاز پر سیٹ کرنے کے لیے"
+        ],
+        [
+         "eof()",
+         "fstream.h",
+         "پوائنٹرز کو فائل کے اختتام پر سیٹ کرنے کے لیے"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "فنکشن",
+        "سرپاڼه دوتنه",
+        "موخه"
+       ],
+       "rows": [
+        [
+         "getch()",
+         "conio.h",
+         "له کیبورډ د توري ننوتنې اخیستلو لپاره"
+        ],
+        [
+         "getche()",
+         "conio.h",
+         "له کیبورډ د توري ننوتنې اخیستلو او پر پرده یې ښودلو لپاره"
+        ],
+        [
+         "gets()",
+         "stdio.h",
+         "د get string لنډون دی او د تار ننوتنې اخیستلو لپاره کارېږي"
+        ],
+        [
+         "puts()",
+         "stdio.h",
+         "د تار ښودلو لپاره"
+        ],
+        [
+         "getchar()",
+         "stdio.h",
+         "د get character لنډون دی، له کیبورډ د یوه توري ننوتلو لپاره کارېږي. دا فنکشن هېڅ دلیل نه اخلي."
+        ],
+        [
+         "putchar()",
+         "stdio.h",
+         "معیاري د وتنې فنکشن چې د دلیل په توګه ترلاسه شوی توری د وتنې پر پرده ښيي."
+        ],
+        [
+         "strcat()",
+         "string.h",
+         "د String concatenation لنډون. دوه تارونه په یوه تار کې یوځای کوي."
+        ],
+        [
+         "copy()",
+         "string.h",
+         "دا فنکشن یو تار بل تار ته کاپي کوي."
+        ],
+        [
+         "strcpy()",
+         "string.h",
+         "دا هم د یوه تار بل تار ته د کاپي کولو لپاره کارېږي"
+        ],
+        [
+         "find()",
+         "string.h",
+         "په تار کې د یوې ځانګړې کلمې یا توري موندلو لپاره"
+        ],
+        [
+         "length()",
+         "string.h",
+         "د تار د اوږدوالي موندلو لپاره."
+        ],
+        [
+         "swap()",
+         "string.h",
+         "د دوو تارونو د ارزښتونو د تبادلې لپاره."
+        ],
+        [
+         "sin()",
+         "math.h",
+         "د زاویې د sin ارزښت موندلو لپاره."
+        ],
+        [
+         "cos()",
+         "math.h",
+         "د زاویې د cos ارزښت موندلو لپاره."
+        ],
+        [
+         "tan()",
+         "math.h",
+         "د زاویې د tangent ارزښت موندلو لپاره."
+        ],
+        [
+         "cot()",
+         "math.h",
+         "د زاویې د cotangent ارزښت موندلو لپاره."
+        ],
+        [
+         "abs()",
+         "math.h",
+         "د یوه متغیر یا افادې د مطلق ارزښت موندلو لپاره."
+        ],
+        [
+         "pow()",
+         "math.h",
+         "د یوه عدد د توان موندلو لپاره. دوه دلیلونه اخلي، لومړی عدد او دویم هغه توان ښيي چې عدد ورته پورته کېږي."
+        ],
+        [
+         "sqrt()",
+         "math.h",
+         "د دلیل په توګه ترلاسه شوي عدد د جذر موندلو لپاره."
+        ],
+        [
+         "open()",
+         "fstream.h",
+         "د دوتنې د پرانیستلو لپاره."
+        ],
+        [
+         "close()",
+         "fstream.h",
+         "د دوتنې د تړلو لپاره."
+        ],
+        [
+         "bof()",
+         "fstream.h",
+         "پوائنټرونه د دوتنې پیل ته ټاکلو لپاره"
+        ],
+        [
+         "eof()",
+         "fstream.h",
+         "پوائنټرونه د دوتنې پای ته ټاکلو لپاره"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 160,
+     "printedPages": [
+      308,
+      309
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Annexure 5: List of Built-in Functions",
+   "sourcePageLabel": "PDF 160 · p. 308–309",
+   "sourceNote": "The table spans pp.308–309 and is given as one structured table; function and header names are kept in English.",
+   "unit": "BM"
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf160",
+   "unit": "BM",
+   "printedPage": 309,
+   "description": "Annexure 5: running head “List of Build-in Functions”; “input form the keyboard”, “This function copy”, “Used to ding the tangent value of an anbgle”, “an number”. Retained as printed (the English column)."
+  }
+ ],
+ "completeUnits": []
+}

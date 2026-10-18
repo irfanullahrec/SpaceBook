@@ -1,0 +1,215 @@
+{
+  "auditKind": "independent_source_translation_and_diagram_review",
+  "auditor": "chemistry56 subagent; independent initial reviewer, not original author; subsequently applied only root-authorized audit fixes to builders",
+  "completedAtUTC": "2026-10-11T20:46:36Z",
+  "sourcePdf": "D:/SpaceBook/Books/12th/12th Chemistry/PDF/Chemistry Book for 12 class KPTBB.pdf",
+  "scope": [
+    54,
+    55,
+    58
+  ],
+  "sharedApplicationOrProgressFilesModified": false,
+  "methods": [
+    "Read original cached scans for all six printed pages (100–103 and 108–109).",
+    "Read all authored English, Urdu and Pashto paragraphs in the three page builders and compare them with source content; checked headings, sentences, outcomes, numbers, formulae, terminology and omissions.",
+    "Check every cell of Table 16.1 (10 alkanes over five paired rows), Table 16.2 (nine rows) and Table 16.3 (five rows), including both translated variants.",
+    "Render all 15 SVG language variants from the saved repair JSON using PyMuPDF; parse each as XML.",
+    "Visually inspect all five English SVGs plus seven translated SVG renders; inspect the remaining translated labels in code. Translation-shaping quality is not certified by PyMuPDF.",
+    "Read the original PDF page 58 at 4x scale to determine the printed sigma-bond glyph.",
+    "Evaluate the saved application data in a Node VM; confirm all three loaded records match their saved repair JSON for paras, sourceBlocks, sourceLayout and sourceReferences.",
+    "Check every paragraph is represented once, in order, in its sourceLayout."
+  ],
+  "pageAudits": [
+    {
+      "pdfPage": 54,
+      "printedPages": [
+        100,
+        101
+      ],
+      "recordId": "16.1",
+      "repairSha256": "a1d6f307fec78abd9253f1a06ca36ab0d9a32dc0a5801e65d98fcbd67eb4d318",
+      "paragraphCount": 27,
+      "figureBlockCount": 3,
+      "englishTextComparison": "pass",
+      "formulaAndNumberComparison": "pass",
+      "urduCompleteness": "pass_all_source_meaning_present",
+      "urduAccuracy": "minor_heading_fix_required",
+      "pashtoCompletenessAndAccuracy": "pass",
+      "chemicalFigureTopology": "pass",
+      "englishFigurePresentation": "minor_spacing_fix_required",
+      "translatedFigureLabelsText": "pass",
+      "translatedFigureBrowserRendering": "pending",
+      "applicationDataLoading": "pass",
+      "sourceComparisonOverall": "pass_in_corrected_builder_pending_root_resave",
+      "evidence": [
+        "All 18 learning outcomes are present with correct reaction lists, learning levels, molecular orbital/resonance and isomerism terminology.",
+        "Both introduction paragraphs, two hydrocarbon classification paragraphs and both structural-example headings are complete.",
+        "Ethane, propane, cyclobutane, ethene, propene, cyclobutene and cyclohexene have the correct atoms, hydrogen counts, ring sizes and double-bond placements.",
+        "The orbital model preserves the H–C–C–H axis, upper/lower orbital overlap, and three sigma-bond regions. Mirrored C* models preserve all four numbered and colored ligands, their mirror ordering and relative front/back bond widths."
+      ],
+      "findings": [
+        {
+          "id": "audit54-urdu-heading-stray-letter",
+          "severity": "minor_content",
+          "location": "Urdu of paragraph '16.1 Types of Hydrocarbons'",
+          "observed": "16.1 د ہائیڈروکاربنوں کی اقسام",
+          "requiredReplacement": "16.1 ہائیڈروکاربنوں کی اقسام",
+          "reason": "The inserted د is a Pashto particle, not part of the Urdu heading.",
+          "resolution": "fixed_in_builder_and_focused_recheck_passed"
+        },
+        {
+          "id": "audit54-orbital-atom-spacing",
+          "severity": "minor_presentation",
+          "location": "chem12-p54-outcome-models; opening_diagrams in class12_chemistry_page54.py",
+          "observed": "H labels at x=278 and x=660, and C labels around x=380 and x=555, touch or overlap ellipse strokes in all language variants. Their identities remain readable but need clearer separation.",
+          "requiredAction": "Adjust oval widths/positions and atom labels together to leave clear space around each H and C; retain the existing H–C–C–H connectivity and sigma labels. Re-render all three variants.",
+          "resolution": "fixed_in_builder_and_focused_recheck_passed"
+        }
+      ],
+      "initialSourceComparisonOverall": "changes_required"
+    },
+    {
+      "pdfPage": 55,
+      "printedPages": [
+        102,
+        103
+      ],
+      "recordId": "16.2",
+      "repairSha256": "e7f91bcf92a6c81da4c92e2cf0ab257d15acff7eded7b451bfe02d68456690ef",
+      "paragraphCount": 15,
+      "figureBlockCount": 2,
+      "tableCount": 1,
+      "englishTextComparison": "pass",
+      "formulaAndNumberComparison": "pass",
+      "urduCompletenessAndAccuracy": "pass",
+      "pashtoCompleteness": "pass_all_source_meaning_present",
+      "pashtoAccuracy": "minor_terminology_fix_required",
+      "chemicalFigureTopologyAndEnglishPresentation": "pass",
+      "translatedFigureLabelsText": "pass",
+      "translatedFigureBrowserRendering": "pending",
+      "allTableValuesAndTranslations": "pass",
+      "applicationDataLoading": "pass",
+      "sourceComparisonOverall": "pass_in_corrected_builder_pending_root_resave",
+      "evidence": [
+        "Ethyne and propyne display triple bonds and the correct hydrogen counts; the six-membered cyclohexyne example has four CH2 groups, two unsubstituted C atoms and one triple bond, matching the printed source.",
+        "Benzene and toluene have three alternating double bonds; the toluene methyl substituent is attached at the printed top vertex.",
+        "Naphthalene consists of two fused hexagons sharing one exact edge, with five double bonds in the source positions and chemically consistent fused vertices.",
+        "All text concerning arenes, alkane/cycloalkane formulae, the (4n+2) pi-electron tidbit, IUPAC 1957, Greek prefixes and the common-naming explanation is present.",
+        "Table 16.1 is complete: carbon counts 1–10; methane through decane; CH4, C2H6, C3H8, C4H10, C5H12, C6H14, C7H16, C8H18, C9H20 and C10H22. Urdu/Pashto tables retain all values."
+      ],
+      "findings": [
+        {
+          "id": "audit55-pashto-nomenclature-term",
+          "severity": "minor_translation",
+          "location": "First Pashto sentence of paragraph beginning 'The naming of organic compounds is called Organic Nomenclature.'",
+          "observed": "د عضوي مرکباتو نوم ایښودل عضوي نومونه بلل کېږي.",
+          "requiredReplacement": "د عضوي مرکباتو د نوم ایښودلو عمل عضوي نوم‌اېښودنه بلل کېږي.",
+          "reason": "Use the process term nomenclature/naming rather than the plural phrase organic names. The rest of this paragraph is complete and accurate.",
+          "resolution": "fixed_in_builder_and_focused_recheck_passed"
+        }
+      ],
+      "initialSourceComparisonOverall": "changes_required"
+    },
+    {
+      "pdfPage": 58,
+      "printedPages": [
+        108,
+        109
+      ],
+      "recordId": "16.5",
+      "repairSha256": "9439b87af96180d53d2daca752ef06f309ddfc988ccf09b223a704f8c0bdbfba",
+      "paragraphCount": 18,
+      "figureBlockCount": 0,
+      "tableCount": 2,
+      "englishTextComparison": "pass",
+      "formulaAndNumberComparison": "pass_with_reviewed_printed_symbol_issue",
+      "urduCompletenessAndAccuracy": "pass",
+      "pashtoCompletenessAndAccuracy": "pass",
+      "allTableValuesAndTranslations": "pass",
+      "applicationDataLoading": "pass",
+      "sourceComparisonOverall": "pass_with_printed_issue_retained",
+      "evidence": [
+        "All five alkane and all five cycloalkane physical-property bullets are complete in all three languages.",
+        "Table 16.2 verified row by row: methane −182.5/−161.5; ethane −172/−88.6; propane −188/−42.1; n-butane −138/0; n-pentane −130/36.0; n-hexane −95.3/68.7; isobutane −159/−12; isopentane −160/28; isohexane −154/60 (melting/boiling °C).",
+        "Table 16.3 verified row by row: cyclopropane −127/−33; cyclobutane −50/13; cyclopentane −94/49.2; cyclohexane 6.7/81; cycloheptane −12/119 (melting/boiling °C).",
+        "Ethane structure paragraph retains C2H6, sp3, 1s, six C–H plus one C–C bond, 109.5° angle, 154 pm C–C length and the printed 109.5 pm C–H length, without silent correction.",
+        "Figure 16.1 is referenced on printed109, but the actual figure occurs on the next PDF page; its absence on PDF58 is not an omission."
+      ],
+      "reviewedSourceIssues": [
+        {
+          "existingIssueId": "chem12-p109-sigma-symbol",
+          "status": "source_glyph_confirmed",
+          "finding": "The 4x original-PDF crop clearly prints 'sigma (δ) bonds'. The retained δ matches the source; it must not be changed silently to σ.",
+          "evidenceImage": "tmp/class12-review/chemistry/audit-p58-sigma-source.png",
+          "remainingAction": "Root may update the issue from pending glyph review to reviewed printed-symbol inconsistency."
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "PyMuPDF renders Arabic-script SVG text without reliable joining or bidirectional shaping. Disconnected/reordered Urdu/Pashto glyphs in these audit previews are a renderer limitation, not proof of malformed stored Unicode. Final browser review is still required for all translated SVG labels.",
+    "This audit does not exercise paragraph language switching, hover behavior or the full browser application. Existing focused-runtime evidence and final browser checks must be combined with the source review before claiming whole-page or whole-book verification.",
+    "The report is tied to the listed repair hashes. Any changes require focused rechecking of the changed content and refreshed hashes."
+  ],
+  "wholePageVerifiedClaimsMade": [],
+  "sourceComparisonPassedPages": [
+    54,
+    55,
+    58
+  ],
+  "sourceComparisonPagesRequiringMinorFixes": [],
+  "postFixBuilderReview": {
+    "completedAtUTC": "2026-10-11T20:48:23.268902+00:00",
+    "sharedDataResavedByAuditor": false,
+    "rootResaveAndFocusedRuntimeChecks": "pending_root_integration",
+    "sourceComparisonPassedBuilderPages": [
+      54,
+      55,
+      58
+    ],
+    "builderSha256": {
+      "54": "1cebbdaf1b98edfc750efa5d602ad29cf8cc3f36197a9e0db5c1f72191e467fc",
+      "55": "3d31aa7e450962b3cc0fa78838659a0d558d9ae63b24a859036df5e05c2a983f",
+      "58": "339644613115ec89158499f1f7c47093ed3801dd4d4461bba95de5003611def1"
+    },
+    "fixes": [
+      {
+        "page": 54,
+        "finding": "audit54-urdu-heading-stray-letter",
+        "result": "Root removed the stray Pashto letter. Auditor confirmed exact corrected Urdu heading in imported builder."
+      },
+      {
+        "page": 54,
+        "finding": "audit54-orbital-atom-spacing",
+        "result": "Auditor narrowed orbital ovals and adjusted H/C positions. All three language variants parsed, rendered and visually rechecked; all atom labels clear strokes, with chemical topology and mirror model unchanged."
+      },
+      {
+        "page": 55,
+        "finding": "audit55-pashto-nomenclature-term",
+        "result": "Auditor replaced only the first Pashto nomenclature sentence with the correct naming-process term; inspected imported paragraph."
+      },
+      {
+        "page": 58,
+        "finding": "chem12-p109-sigma-symbol",
+        "result": "Auditor changed only source-issue metadata to reviewed_source_printed_inconsistency and confirmed the builder still retains δ in all three language texts."
+      }
+    ],
+    "categoryResultsAfterFix": {
+      "englishText": "pass",
+      "urduText": "pass",
+      "pashtoText": "pass",
+      "formulaeAndValues": "pass_with_page58_printed_delta_flag_retained",
+      "tables": "pass",
+      "chemicalDiagramTopology": "pass",
+      "englishDiagramPresentation": "pass",
+      "translatedDiagramLabelsText": "pass",
+      "translatedDiagramBrowserRendering": "pending",
+      "paragraphSwitchingAndHoverBrowserBehavior": "not_examined_by_this_audit"
+    },
+    "limitation": "Initial repair hashes above identify the pre-fix saved snapshots. Post-fix source-comparison passes apply to these corrected builders until root resaves them and refreshes saved-artifact evidence."
+  },
+  "sourceComparisonPassedSavedPagesAtInitialSnapshot": [
+    58
+  ],
+  "sourceComparisonPassScope": "Corrected page builders, after focused audit repair; root resave/loading/browser integration remains separately required."
+}

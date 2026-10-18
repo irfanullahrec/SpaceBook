@@ -1,0 +1,124 @@
+{
+ "pdfPage": 115,
+ "sections": [
+  {
+   "id": "cs12-u7-text-2",
+   "title": "Unit 7 text (2)",
+   "headingUrdu": "یونٹ 7 — متن (2)",
+   "headingPashto": "۷ څپرکی — متن (2)",
+   "paras": [
+    {
+     "text": "7.1.4 Dereference operator *",
+     "urdu": "7.1.4 ڈی ریفرنس آپریٹر *",
+     "pashto": "۷.۱.۴ د حوالې‌لرې کولو چلونکی *"
+    },
+    {
+     "text": "Pointers are used to store the address of another variable. If we want to store the value of the variable through the pointer, then we need a special type of operator called dereference operator denoted by asterisk *. To use dereference operator, precede the pointer variable with asterisk * symbol. This operator can be read as “value pointed by”.",
+     "urdu": "پوائنٹرز دوسرے ویری ایبل کا پتہ محفوظ کرنے کے لیے استعمال ہوتے ہیں۔ اگر ہم پوائنٹر کے ذریعے ویری ایبل کی قدر محفوظ کرنا چاہیں تو ہمیں ایک خاص قسم کے آپریٹر کی ضرورت ہوتی ہے جسے ڈی ریفرنس آپریٹر کہتے ہیں اور جو ستارہ * سے ظاہر ہوتا ہے۔ ڈی ریفرنس آپریٹر استعمال کرنے کے لیے پوائنٹر ویری ایبل سے پہلے ستارہ * نشان لگائیں۔ اس آپریٹر کو ’’value pointed by‘‘ پڑھا جا سکتا ہے۔",
+     "pashto": "پوائنټرونه د بل متغیر د پتې د ساتلو لپاره کارېږي. که وغواړو د پوائنټر له لارې د متغیر ارزښت وساتو، نو یو ځانګړي چلونکي ته اړتیا لرو چې د حوالې‌لرې کولو (dereference) چلونکی بلل کېږي او په ستوري * ښودل کېږي. د دې چلونکي د کارولو لپاره د پوائنټر متغیر ته د ستوري * نښه مخکې ولیکئ. دا چلونکی د \"value pointed by\" په توګه لوستل کېدای شي."
+    },
+    {
+     "text": "Consider the following program to demonstrate the use of dereference operator *.",
+     "urdu": "ڈی ریفرنس آپریٹر * کا استعمال واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د حوالې‌لرې کولو چلونکي * د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "/* use of dereference operator (*) in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n = 100;\nint *Pn; //defines a pointer to n\nPn=&n; //Pn stores the address of n\nint valueN;\nvalueN=*Pn;\ncout << “The address of n= \"<<&n << endl;\ncout<< “The value of n= \"<<n<<endl;\ncout << “The value of Pn = \"<< Pn<<endl;\ncout << “The value of *Pn = \"<< (*Pn)<<endl;\ncout << “The value of valueN = \"<< valueN;\ngetch();\nreturn 0;\n}",
+     "urdu": "/* use of dereference operator (*) in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n = 100;\nint *Pn; //defines a pointer to n\nPn=&n; //Pn stores the address of n\nint valueN;\nvalueN=*Pn;\ncout << “The address of n= \"<<&n << endl;\ncout<< “The value of n= \"<<n<<endl;\ncout << “The value of Pn = \"<< Pn<<endl;\ncout << “The value of *Pn = \"<< (*Pn)<<endl;\ncout << “The value of valueN = \"<< valueN;\ngetch();\nreturn 0;\n}",
+     "pashto": "/* use of dereference operator (*) in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n = 100;\nint *Pn; //defines a pointer to n\nPn=&n; //Pn stores the address of n\nint valueN;\nvalueN=*Pn;\ncout << “The address of n= \"<<&n << endl;\ncout<< “The value of n= \"<<n<<endl;\ncout << “The value of Pn = \"<< Pn<<endl;\ncout << “The value of *Pn = \"<< (*Pn)<<endl;\ncout << “The value of valueN = \"<< valueN;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The address of n= 0x8fc5fff4\nThe value of n= 100\nThe value of Pn = 0x8fc5fff4\nThe value of (*Pn) = 100\nThe value of valueN= 100",
+     "urdu": "The address of n= 0x8fc5fff4\nThe value of n= 100\nThe value of Pn = 0x8fc5fff4\nThe value of (*Pn) = 100\nThe value of valueN= 100",
+     "pashto": "The address of n= 0x8fc5fff4\nThe value of n= 100\nThe value of Pn = 0x8fc5fff4\nThe value of (*Pn) = 100\nThe value of valueN= 100",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In this example, the instructions at lines 10 and 14 make use of the dereference operator * and thus access the actual values of the original variable n which is pointed out by the pointer Pn. In pointers, the ampersand operator & is the reference operator and can be read as \"address of\" and * is the dereference operator that can be read as \"value pointed by\". These operators are complementary of each other and have opposite meanings. A variable referenced with & can be dereferenced with *.",
+     "urdu": "اس مثال میں لائن 10 اور 14 کی ہدایات ڈی ریفرنس آپریٹر * استعمال کرتی ہیں اور یوں اصل ویری ایبل n کی حقیقی قدروں تک رسائی کرتی ہیں جس کی طرف پوائنٹر Pn اشارہ کرتا ہے۔ پوائنٹرز میں ایمپرسینڈ آپریٹر & حوالہ آپریٹر ہے جسے \"address of\" پڑھا جا سکتا ہے اور * ڈی ریفرنس آپریٹر ہے جسے \"value pointed by\" پڑھا جا سکتا ہے۔ یہ آپریٹرز ایک دوسرے کے تکمیلی ہیں اور ان کے معنی متضاد ہیں۔ & سے حوالہ دیا گیا ویری ایبل * سے ڈی ریفرنس کیا جا سکتا ہے۔",
+     "pashto": "په دې بېلګه کې په ۱۰ او ۱۴ کرښو کې لارښوونې د حوالې‌لرې کولو چلونکی * کاروي او په دې توګه د اصلي متغیر n حقیقي ارزښتونو ته لاسرسی کوي چې Pn پوائنټر ورته اشاره کوي. په پوائنټرونو کې امپرسنډ چلونکی & د حوالې چلونکی دی او د \"address of\" په توګه لوستل کېدای شي او * د حوالې‌لرې کولو چلونکی دی چې د \"value pointed by\" په توګه لوستل کېدای شي. دا چلونکي یو د بل بشپړوونکي دي او متضادې معناوې لري. هغه متغیر چې په & حواله شوی وي، په * حواله‌لرې کېدای شي."
+    }
+   ],
+   "theory": "7.1.4 Dereference operator *\n\nPointers are used to store the address of another variable. If we want to store the value of the variable through the pointer, then we need a special type of operator called dereference operator denoted by asterisk *. To use dereference operator, precede the pointer variable with asterisk * symbol. This operator can be read as “value pointed by”.\n\nConsider the following program to demonstrate the use of dereference operator *.\n\n/* use of dereference operator (*) in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n = 100;\nint *Pn; //defines a pointer to n\nPn=&n; //Pn stores the address of n\nint valueN;\nvalueN=*Pn;\ncout << “The address of n= \"<<&n << endl;\ncout<< “The value of n= \"<<n<<endl;\ncout << “The value of Pn = \"<< Pn<<endl;\ncout << “The value of *Pn = \"<< (*Pn)<<endl;\ncout << “The value of valueN = \"<< valueN;\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nThe address of n= 0x8fc5fff4\nThe value of n= 100\nThe value of Pn = 0x8fc5fff4\nThe value of (*Pn) = 100\nThe value of valueN= 100\n\nIn this example, the instructions at lines 10 and 14 make use of the dereference operator * and thus access the actual values of the original variable n which is pointed out by the pointer Pn. In pointers, the ampersand operator & is the reference operator and can be read as \"address of\" and * is the dereference operator that can be read as \"value pointed by\". These operators are complementary of each other and have opposite meanings. A variable referenced with & can be dereferenced with *.",
+   "urdu": "7.1.4 ڈی ریفرنس آپریٹر *\n\nپوائنٹرز دوسرے ویری ایبل کا پتہ محفوظ کرنے کے لیے استعمال ہوتے ہیں۔ اگر ہم پوائنٹر کے ذریعے ویری ایبل کی قدر محفوظ کرنا چاہیں تو ہمیں ایک خاص قسم کے آپریٹر کی ضرورت ہوتی ہے جسے ڈی ریفرنس آپریٹر کہتے ہیں اور جو ستارہ * سے ظاہر ہوتا ہے۔ ڈی ریفرنس آپریٹر استعمال کرنے کے لیے پوائنٹر ویری ایبل سے پہلے ستارہ * نشان لگائیں۔ اس آپریٹر کو ’’value pointed by‘‘ پڑھا جا سکتا ہے۔\n\nڈی ریفرنس آپریٹر * کا استعمال واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n/* use of dereference operator (*) in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n = 100;\nint *Pn; //defines a pointer to n\nPn=&n; //Pn stores the address of n\nint valueN;\nvalueN=*Pn;\ncout << “The address of n= \"<<&n << endl;\ncout<< “The value of n= \"<<n<<endl;\ncout << “The value of Pn = \"<< Pn<<endl;\ncout << “The value of *Pn = \"<< (*Pn)<<endl;\ncout << “The value of valueN = \"<< valueN;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe address of n= 0x8fc5fff4\nThe value of n= 100\nThe value of Pn = 0x8fc5fff4\nThe value of (*Pn) = 100\nThe value of valueN= 100\n\nاس مثال میں لائن 10 اور 14 کی ہدایات ڈی ریفرنس آپریٹر * استعمال کرتی ہیں اور یوں اصل ویری ایبل n کی حقیقی قدروں تک رسائی کرتی ہیں جس کی طرف پوائنٹر Pn اشارہ کرتا ہے۔ پوائنٹرز میں ایمپرسینڈ آپریٹر & حوالہ آپریٹر ہے جسے \"address of\" پڑھا جا سکتا ہے اور * ڈی ریفرنس آپریٹر ہے جسے \"value pointed by\" پڑھا جا سکتا ہے۔ یہ آپریٹرز ایک دوسرے کے تکمیلی ہیں اور ان کے معنی متضاد ہیں۔ & سے حوالہ دیا گیا ویری ایبل * سے ڈی ریفرنس کیا جا سکتا ہے۔",
+   "pashto": "۷.۱.۴ د حوالې‌لرې کولو چلونکی *\n\nپوائنټرونه د بل متغیر د پتې د ساتلو لپاره کارېږي. که وغواړو د پوائنټر له لارې د متغیر ارزښت وساتو، نو یو ځانګړي چلونکي ته اړتیا لرو چې د حوالې‌لرې کولو (dereference) چلونکی بلل کېږي او په ستوري * ښودل کېږي. د دې چلونکي د کارولو لپاره د پوائنټر متغیر ته د ستوري * نښه مخکې ولیکئ. دا چلونکی د \"value pointed by\" په توګه لوستل کېدای شي.\n\nد حوالې‌لرې کولو چلونکي * د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n/* use of dereference operator (*) in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n = 100;\nint *Pn; //defines a pointer to n\nPn=&n; //Pn stores the address of n\nint valueN;\nvalueN=*Pn;\ncout << “The address of n= \"<<&n << endl;\ncout<< “The value of n= \"<<n<<endl;\ncout << “The value of Pn = \"<< Pn<<endl;\ncout << “The value of *Pn = \"<< (*Pn)<<endl;\ncout << “The value of valueN = \"<< valueN;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe address of n= 0x8fc5fff4\nThe value of n= 100\nThe value of Pn = 0x8fc5fff4\nThe value of (*Pn) = 100\nThe value of valueN= 100\n\nپه دې بېلګه کې په ۱۰ او ۱۴ کرښو کې لارښوونې د حوالې‌لرې کولو چلونکی * کاروي او په دې توګه د اصلي متغیر n حقیقي ارزښتونو ته لاسرسی کوي چې Pn پوائنټر ورته اشاره کوي. په پوائنټرونو کې امپرسنډ چلونکی & د حوالې چلونکی دی او د \"address of\" په توګه لوستل کېدای شي او * د حوالې‌لرې کولو چلونکی دی چې د \"value pointed by\" په توګه لوستل کېدای شي. دا چلونکي یو د بل بشپړوونکي دي او متضادې معناوې لري. هغه متغیر چې په & حواله شوی وي، په * حواله‌لرې کېدای شي.",
+   "theoryUrdu": "7.1.4 ڈی ریفرنس آپریٹر *\n\nپوائنٹرز دوسرے ویری ایبل کا پتہ محفوظ کرنے کے لیے استعمال ہوتے ہیں۔ اگر ہم پوائنٹر کے ذریعے ویری ایبل کی قدر محفوظ کرنا چاہیں تو ہمیں ایک خاص قسم کے آپریٹر کی ضرورت ہوتی ہے جسے ڈی ریفرنس آپریٹر کہتے ہیں اور جو ستارہ * سے ظاہر ہوتا ہے۔ ڈی ریفرنس آپریٹر استعمال کرنے کے لیے پوائنٹر ویری ایبل سے پہلے ستارہ * نشان لگائیں۔ اس آپریٹر کو ’’value pointed by‘‘ پڑھا جا سکتا ہے۔\n\nڈی ریفرنس آپریٹر * کا استعمال واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n/* use of dereference operator (*) in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n = 100;\nint *Pn; //defines a pointer to n\nPn=&n; //Pn stores the address of n\nint valueN;\nvalueN=*Pn;\ncout << “The address of n= \"<<&n << endl;\ncout<< “The value of n= \"<<n<<endl;\ncout << “The value of Pn = \"<< Pn<<endl;\ncout << “The value of *Pn = \"<< (*Pn)<<endl;\ncout << “The value of valueN = \"<< valueN;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe address of n= 0x8fc5fff4\nThe value of n= 100\nThe value of Pn = 0x8fc5fff4\nThe value of (*Pn) = 100\nThe value of valueN= 100\n\nاس مثال میں لائن 10 اور 14 کی ہدایات ڈی ریفرنس آپریٹر * استعمال کرتی ہیں اور یوں اصل ویری ایبل n کی حقیقی قدروں تک رسائی کرتی ہیں جس کی طرف پوائنٹر Pn اشارہ کرتا ہے۔ پوائنٹرز میں ایمپرسینڈ آپریٹر & حوالہ آپریٹر ہے جسے \"address of\" پڑھا جا سکتا ہے اور * ڈی ریفرنس آپریٹر ہے جسے \"value pointed by\" پڑھا جا سکتا ہے۔ یہ آپریٹرز ایک دوسرے کے تکمیلی ہیں اور ان کے معنی متضاد ہیں۔ & سے حوالہ دیا گیا ویری ایبل * سے ڈی ریفرنس کیا جا سکتا ہے۔",
+   "theoryPashto": "۷.۱.۴ د حوالې‌لرې کولو چلونکی *\n\nپوائنټرونه د بل متغیر د پتې د ساتلو لپاره کارېږي. که وغواړو د پوائنټر له لارې د متغیر ارزښت وساتو، نو یو ځانګړي چلونکي ته اړتیا لرو چې د حوالې‌لرې کولو (dereference) چلونکی بلل کېږي او په ستوري * ښودل کېږي. د دې چلونکي د کارولو لپاره د پوائنټر متغیر ته د ستوري * نښه مخکې ولیکئ. دا چلونکی د \"value pointed by\" په توګه لوستل کېدای شي.\n\nد حوالې‌لرې کولو چلونکي * د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n/* use of dereference operator (*) in a program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint n = 100;\nint *Pn; //defines a pointer to n\nPn=&n; //Pn stores the address of n\nint valueN;\nvalueN=*Pn;\ncout << “The address of n= \"<<&n << endl;\ncout<< “The value of n= \"<<n<<endl;\ncout << “The value of Pn = \"<< Pn<<endl;\ncout << “The value of *Pn = \"<< (*Pn)<<endl;\ncout << “The value of valueN = \"<< valueN;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe address of n= 0x8fc5fff4\nThe value of n= 100\nThe value of Pn = 0x8fc5fff4\nThe value of (*Pn) = 100\nThe value of valueN= 100\n\nپه دې بېلګه کې په ۱۰ او ۱۴ کرښو کې لارښوونې د حوالې‌لرې کولو چلونکی * کاروي او په دې توګه د اصلي متغیر n حقیقي ارزښتونو ته لاسرسی کوي چې Pn پوائنټر ورته اشاره کوي. په پوائنټرونو کې امپرسنډ چلونکی & د حوالې چلونکی دی او د \"address of\" په توګه لوستل کېدای شي او * د حوالې‌لرې کولو چلونکی دی چې د \"value pointed by\" په توګه لوستل کېدای شي. دا چلونکي یو د بل بشپړوونکي دي او متضادې معناوې لري. هغه متغیر چې په & حواله شوی وي، په * حواله‌لرې کېدای شي.",
+   "content": "<p>7.1.4 Dereference operator *</p><p>Pointers are used to store the address of another variable. If we want to store the value of the variable through the pointer, then we need a special type of operator called dereference operator denoted by asterisk *. To use dereference operator, precede the pointer variable with asterisk * symbol. This operator can be read as “value pointed by”.</p><p>Consider the following program to demonstrate the use of dereference operator *.</p><p>/* use of dereference operator (*) in a program */\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint n = 100;\nint *Pn; //defines a pointer to n\nPn=&amp;n; //Pn stores the address of n\nint valueN;\nvalueN=*Pn;\ncout &lt;&lt; “The address of n= &quot;&lt;&lt;&amp;n &lt;&lt; endl;\ncout&lt;&lt; “The value of n= &quot;&lt;&lt;n&lt;&lt;endl;\ncout &lt;&lt; “The value of Pn = &quot;&lt;&lt; Pn&lt;&lt;endl;\ncout &lt;&lt; “The value of *Pn = &quot;&lt;&lt; (*Pn)&lt;&lt;endl;\ncout &lt;&lt; “The value of valueN = &quot;&lt;&lt; valueN;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>The address of n= 0x8fc5fff4\nThe value of n= 100\nThe value of Pn = 0x8fc5fff4\nThe value of (*Pn) = 100\nThe value of valueN= 100</p><p>In this example, the instructions at lines 10 and 14 make use of the dereference operator * and thus access the actual values of the original variable n which is pointed out by the pointer Pn. In pointers, the ampersand operator &amp; is the reference operator and can be read as &quot;address of&quot; and * is the dereference operator that can be read as &quot;value pointed by&quot;. These operators are complementary of each other and have opposite meanings. A variable referenced with &amp; can be dereferenced with *.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 115,
+     "printedPages": [
+      218,
+      219,
+      220
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 7 text (2)",
+   "sourcePageLabel": "PDF 115 · p. 218–219–220",
+   "sourceNote": "The top of p.218 (end of the pointer program, output and note) is recorded with PDF114. The closing sentences of the explanation at the top of p.220 (PDF116) are given here.",
+   "unit": 7
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

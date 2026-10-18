@@ -1,0 +1,181 @@
+{
+ "pdfPage": 99,
+ "sections": [
+  {
+   "id": "cs12-u6-text-6",
+   "title": "Unit 6 text (6)",
+   "headingUrdu": "یونٹ 6 — متن (6)",
+   "headingPashto": "۶ څپرکی — متن (6)",
+   "paras": [
+    {
+     "text": "a. Local/Automatic variables",
+     "urdu": "a. مقامی/خودکار ویری ایبلز",
+     "pashto": "a. محلي/خپلکاره متغیرونه"
+    },
+    {
+     "text": "The variables defined within a block are called local variables and its scope is local to block. These variables are not accessible from outside the block and thus their visibility remains only to that block. For example, in the following code segment, the variables a, b and c are local variables and cannot be used outside this boundary.",
+     "urdu": "کسی بلاک کے اندر بیان کیے گئے ویری ایبلز مقامی ویری ایبلز کہلاتے ہیں اور ان کا دائرہ بلاک تک محدود ہوتا ہے۔ یہ ویری ایبلز بلاک کے باہر سے قابلِ رسائی نہیں ہوتے اور یوں ان کی نمائش صرف اسی بلاک تک رہتی ہے۔ مثلاً درج ذیل کوڈ کے حصے میں ویری ایبلز a، b اور c مقامی ویری ایبلز ہیں اور اس حد کے باہر استعمال نہیں ہو سکتے۔",
+     "pashto": "هغه متغیرونه چې د یوه بلاک دننه تعریف شي، محلي متغیرونه بلل کېږي او ساحه یې په بلاک پورې محدوده ده. دا متغیرونه له بلاک بهر د لاسرسي وړ نه دي او لیدل یې یوازې په همغه بلاک پورې پاتې کېږي. د بېلګې په توګه په لاندې کوډ کې a، b او c محلي متغیرونه دي او له دې پولې بهر نه شي کارېدای."
+    },
+    {
+     "text": "int main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\n// a, b and c are the local variables and cannot be used outside the {} block\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; getch();\nreturn 0;\n}",
+     "urdu": "int main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\n// a, b and c are the local variables and cannot be used outside the {} block\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; getch();\nreturn 0;\n}",
+     "pashto": "int main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\n// a, b and c are the local variables and cannot be used outside the {} block\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; getch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "It is impossible to use the variables x, y or z defined in maximum( ) function directly within main function because these variables are local to the maximum function.",
+     "urdu": "maximum( ) فنکشن میں بیان کیے گئے ویری ایبلز x، y یا z کو main فنکشن میں براہِ راست استعمال کرنا ناممکن ہے کیونکہ یہ ویری ایبلز maximum فنکشن کے لیے مقامی ہیں۔",
+     "pashto": "په maximum( ) فنکشن کې تعریف شوي x، y یا z متغیرونه په main فنکشن کې مستقیم کارول ناشوني دي ځکه دا متغیرونه د maximum فنکشن لپاره محلي دي."
+    },
+    {
+     "text": "The following program makes use of a function square() that has its own local variable ‘y’ which is not accessible in the main() function.",
+     "urdu": "درج ذیل پروگرام فنکشن square() استعمال کرتا ہے جس کا اپنا مقامی ویری ایبل ‘y’ ہے جو main() فنکشن میں قابلِ رسائی نہیں۔",
+     "pashto": "لاندې پروګرام square() فنکشن کاروي چې خپل محلي متغیر ‘y’ لري چې په main() فنکشن کې د لاسرسي وړ نه دی."
+    },
+    {
+     "text": "// local variables (example) to calculate square of integers\n#include <iostream.h>\n#include<conio.h>\nint square( int y); // function prototype\nint main()\n{\nfor ( int x = 1; x <= 10; x++ )\ncout << square( x ) << \" \";\ncout << endl;\ngetch();\nreturn 0;\n}\n// Function definition\nint square( int y )\n{\nreturn y * y;\n}",
+     "urdu": "// local variables (example) to calculate square of integers\n#include <iostream.h>\n#include<conio.h>\nint square( int y); // function prototype\nint main()\n{\nfor ( int x = 1; x <= 10; x++ )\ncout << square( x ) << \" \";\ncout << endl;\ngetch();\nreturn 0;\n}\n// Function definition\nint square( int y )\n{\nreturn y * y;\n}",
+     "pashto": "// local variables (example) to calculate square of integers\n#include <iostream.h>\n#include<conio.h>\nint square( int y); // function prototype\nint main()\n{\nfor ( int x = 1; x <= 10; x++ )\ncout << square( x ) << \" \";\ncout << endl;\ngetch();\nreturn 0;\n}\n// Function definition\nint square( int y )\n{\nreturn y * y;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. Global variables",
+     "urdu": "b. عالمی ویری ایبلز",
+     "pashto": "b. نړیوال متغیرونه"
+    },
+    {
+     "text": "The variables defined usually at the top of a program before the main() function are called global variables. The variables declared globally are visible from any point of the code. They are accessible from inside and outside of all the functions of the same program. In order to declare global variables we simply have to declare the variable outside any function or block; i.e. directly in the body of the program.",
+     "urdu": "عموماً پروگرام کے شروع میں main() فنکشن سے پہلے بیان کیے گئے ویری ایبلز عالمی ویری ایبلز کہلاتے ہیں۔ عالمی طور پر ڈکلیئر کیے گئے ویری ایبلز کوڈ کے کسی بھی مقام سے نظر آتے ہیں۔ یہ اسی پروگرام کے تمام فنکشنز کے اندر اور باہر سے قابلِ رسائی ہوتے ہیں۔ عالمی ویری ایبلز ڈکلیئر کرنے کے لیے ہمیں بس ویری ایبل کو کسی فنکشن یا بلاک کے باہر یعنی براہِ راست پروگرام کے جسم میں ڈکلیئر کرنا ہوتا ہے۔",
+     "pashto": "هغه متغیرونه چې عموماً د پروګرام په سر کې د main() فنکشن مخکې تعریف شي، نړیوال متغیرونه بلل کېږي. نړیوال اعلان شوي متغیرونه د کوډ له هر ځایه لیدل کېږي. د همغه پروګرام د ټولو فنکشنونو له دننه او بهر د لاسرسي وړ دي. د نړیوالو متغیرونو د اعلان لپاره یوازې باید متغیر له هر فنکشن یا بلاک بهر، یعنې مستقیم د پروګرام په بدنه کې، اعلان کړو."
+    },
+    {
+     "text": "The following program describes local and global variables.",
+     "urdu": "درج ذیل پروگرام مقامی اور عالمی ویری ایبلز بیان کرتا ہے۔",
+     "pashto": "لاندې پروګرام محلي او نړیوال متغیرونه بیانوي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nint add(); /* function prototype */\nint val1, val2, val3; /*These are global variables */\nint add()\n{\nint sum; // here, sum is local variable\nsum = val1 + val2 + val3;\nreturn sum;\n}\nint main()\n{\nint total; //here, total is local variable\nval1 = 10;\nval2 = 20;\nval3 = 30;\ntotal = add();\ncout<<\"The sum of the three global variables=\"<<total;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nint add(); /* function prototype */\nint val1, val2, val3; /*These are global variables */\nint add()\n{\nint sum; // here, sum is local variable\nsum = val1 + val2 + val3;\nreturn sum;\n}\nint main()\n{\nint total; //here, total is local variable\nval1 = 10;\nval2 = 20;\nval3 = 30;\ntotal = add();\ncout<<\"The sum of the three global variables=\"<<total;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nint add(); /* function prototype */\nint val1, val2, val3; /*These are global variables */\nint add()\n{\nint sum; // here, sum is local variable\nsum = val1 + val2 + val3;\nreturn sum;\n}\nint main()\n{\nint total; //here, total is local variable\nval1 = 10;\nval2 = 20;\nval3 = 30;\ntotal = add();\ncout<<\"The sum of the three global variables=\"<<total;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The sum of the three global variables=60",
+     "urdu": "The sum of the three global variables=60",
+     "pashto": "The sum of the three global variables=60",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "a. Local/Automatic variables\n\nThe variables defined within a block are called local variables and its scope is local to block. These variables are not accessible from outside the block and thus their visibility remains only to that block. For example, in the following code segment, the variables a, b and c are local variables and cannot be used outside this boundary.\n\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\n// a, b and c are the local variables and cannot be used outside the {} block\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; getch();\nreturn 0;\n}\n\nIt is impossible to use the variables x, y or z defined in maximum( ) function directly within main function because these variables are local to the maximum function.\n\nThe following program makes use of a function square() that has its own local variable ‘y’ which is not accessible in the main() function.\n\n// local variables (example) to calculate square of integers\n#include <iostream.h>\n#include<conio.h>\nint square( int y); // function prototype\nint main()\n{\nfor ( int x = 1; x <= 10; x++ )\ncout << square( x ) << \" \";\ncout << endl;\ngetch();\nreturn 0;\n}\n// Function definition\nint square( int y )\n{\nreturn y * y;\n}\n\nb. Global variables\n\nThe variables defined usually at the top of a program before the main() function are called global variables. The variables declared globally are visible from any point of the code. They are accessible from inside and outside of all the functions of the same program. In order to declare global variables we simply have to declare the variable outside any function or block; i.e. directly in the body of the program.\n\nThe following program describes local and global variables.\n\n#include <iostream.h>\n#include <conio.h>\nint add(); /* function prototype */\nint val1, val2, val3; /*These are global variables */\nint add()\n{\nint sum; // here, sum is local variable\nsum = val1 + val2 + val3;\nreturn sum;\n}\nint main()\n{\nint total; //here, total is local variable\nval1 = 10;\nval2 = 20;\nval3 = 30;\ntotal = add();\ncout<<\"The sum of the three global variables=\"<<total;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nThe sum of the three global variables=60",
+   "urdu": "a. مقامی/خودکار ویری ایبلز\n\nکسی بلاک کے اندر بیان کیے گئے ویری ایبلز مقامی ویری ایبلز کہلاتے ہیں اور ان کا دائرہ بلاک تک محدود ہوتا ہے۔ یہ ویری ایبلز بلاک کے باہر سے قابلِ رسائی نہیں ہوتے اور یوں ان کی نمائش صرف اسی بلاک تک رہتی ہے۔ مثلاً درج ذیل کوڈ کے حصے میں ویری ایبلز a، b اور c مقامی ویری ایبلز ہیں اور اس حد کے باہر استعمال نہیں ہو سکتے۔\n\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\n// a, b and c are the local variables and cannot be used outside the {} block\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; getch();\nreturn 0;\n}\n\nmaximum( ) فنکشن میں بیان کیے گئے ویری ایبلز x، y یا z کو main فنکشن میں براہِ راست استعمال کرنا ناممکن ہے کیونکہ یہ ویری ایبلز maximum فنکشن کے لیے مقامی ہیں۔\n\nدرج ذیل پروگرام فنکشن square() استعمال کرتا ہے جس کا اپنا مقامی ویری ایبل ‘y’ ہے جو main() فنکشن میں قابلِ رسائی نہیں۔\n\n// local variables (example) to calculate square of integers\n#include <iostream.h>\n#include<conio.h>\nint square( int y); // function prototype\nint main()\n{\nfor ( int x = 1; x <= 10; x++ )\ncout << square( x ) << \" \";\ncout << endl;\ngetch();\nreturn 0;\n}\n// Function definition\nint square( int y )\n{\nreturn y * y;\n}\n\nb. عالمی ویری ایبلز\n\nعموماً پروگرام کے شروع میں main() فنکشن سے پہلے بیان کیے گئے ویری ایبلز عالمی ویری ایبلز کہلاتے ہیں۔ عالمی طور پر ڈکلیئر کیے گئے ویری ایبلز کوڈ کے کسی بھی مقام سے نظر آتے ہیں۔ یہ اسی پروگرام کے تمام فنکشنز کے اندر اور باہر سے قابلِ رسائی ہوتے ہیں۔ عالمی ویری ایبلز ڈکلیئر کرنے کے لیے ہمیں بس ویری ایبل کو کسی فنکشن یا بلاک کے باہر یعنی براہِ راست پروگرام کے جسم میں ڈکلیئر کرنا ہوتا ہے۔\n\nدرج ذیل پروگرام مقامی اور عالمی ویری ایبلز بیان کرتا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nint add(); /* function prototype */\nint val1, val2, val3; /*These are global variables */\nint add()\n{\nint sum; // here, sum is local variable\nsum = val1 + val2 + val3;\nreturn sum;\n}\nint main()\n{\nint total; //here, total is local variable\nval1 = 10;\nval2 = 20;\nval3 = 30;\ntotal = add();\ncout<<\"The sum of the three global variables=\"<<total;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe sum of the three global variables=60",
+   "pashto": "a. محلي/خپلکاره متغیرونه\n\nهغه متغیرونه چې د یوه بلاک دننه تعریف شي، محلي متغیرونه بلل کېږي او ساحه یې په بلاک پورې محدوده ده. دا متغیرونه له بلاک بهر د لاسرسي وړ نه دي او لیدل یې یوازې په همغه بلاک پورې پاتې کېږي. د بېلګې په توګه په لاندې کوډ کې a، b او c محلي متغیرونه دي او له دې پولې بهر نه شي کارېدای.\n\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\n// a, b and c are the local variables and cannot be used outside the {} block\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; getch();\nreturn 0;\n}\n\nپه maximum( ) فنکشن کې تعریف شوي x، y یا z متغیرونه په main فنکشن کې مستقیم کارول ناشوني دي ځکه دا متغیرونه د maximum فنکشن لپاره محلي دي.\n\nلاندې پروګرام square() فنکشن کاروي چې خپل محلي متغیر ‘y’ لري چې په main() فنکشن کې د لاسرسي وړ نه دی.\n\n// local variables (example) to calculate square of integers\n#include <iostream.h>\n#include<conio.h>\nint square( int y); // function prototype\nint main()\n{\nfor ( int x = 1; x <= 10; x++ )\ncout << square( x ) << \" \";\ncout << endl;\ngetch();\nreturn 0;\n}\n// Function definition\nint square( int y )\n{\nreturn y * y;\n}\n\nb. نړیوال متغیرونه\n\nهغه متغیرونه چې عموماً د پروګرام په سر کې د main() فنکشن مخکې تعریف شي، نړیوال متغیرونه بلل کېږي. نړیوال اعلان شوي متغیرونه د کوډ له هر ځایه لیدل کېږي. د همغه پروګرام د ټولو فنکشنونو له دننه او بهر د لاسرسي وړ دي. د نړیوالو متغیرونو د اعلان لپاره یوازې باید متغیر له هر فنکشن یا بلاک بهر، یعنې مستقیم د پروګرام په بدنه کې، اعلان کړو.\n\nلاندې پروګرام محلي او نړیوال متغیرونه بیانوي.\n\n#include <iostream.h>\n#include <conio.h>\nint add(); /* function prototype */\nint val1, val2, val3; /*These are global variables */\nint add()\n{\nint sum; // here, sum is local variable\nsum = val1 + val2 + val3;\nreturn sum;\n}\nint main()\n{\nint total; //here, total is local variable\nval1 = 10;\nval2 = 20;\nval3 = 30;\ntotal = add();\ncout<<\"The sum of the three global variables=\"<<total;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe sum of the three global variables=60",
+   "theoryUrdu": "a. مقامی/خودکار ویری ایبلز\n\nکسی بلاک کے اندر بیان کیے گئے ویری ایبلز مقامی ویری ایبلز کہلاتے ہیں اور ان کا دائرہ بلاک تک محدود ہوتا ہے۔ یہ ویری ایبلز بلاک کے باہر سے قابلِ رسائی نہیں ہوتے اور یوں ان کی نمائش صرف اسی بلاک تک رہتی ہے۔ مثلاً درج ذیل کوڈ کے حصے میں ویری ایبلز a، b اور c مقامی ویری ایبلز ہیں اور اس حد کے باہر استعمال نہیں ہو سکتے۔\n\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\n// a, b and c are the local variables and cannot be used outside the {} block\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; getch();\nreturn 0;\n}\n\nmaximum( ) فنکشن میں بیان کیے گئے ویری ایبلز x، y یا z کو main فنکشن میں براہِ راست استعمال کرنا ناممکن ہے کیونکہ یہ ویری ایبلز maximum فنکشن کے لیے مقامی ہیں۔\n\nدرج ذیل پروگرام فنکشن square() استعمال کرتا ہے جس کا اپنا مقامی ویری ایبل ‘y’ ہے جو main() فنکشن میں قابلِ رسائی نہیں۔\n\n// local variables (example) to calculate square of integers\n#include <iostream.h>\n#include<conio.h>\nint square( int y); // function prototype\nint main()\n{\nfor ( int x = 1; x <= 10; x++ )\ncout << square( x ) << \" \";\ncout << endl;\ngetch();\nreturn 0;\n}\n// Function definition\nint square( int y )\n{\nreturn y * y;\n}\n\nb. عالمی ویری ایبلز\n\nعموماً پروگرام کے شروع میں main() فنکشن سے پہلے بیان کیے گئے ویری ایبلز عالمی ویری ایبلز کہلاتے ہیں۔ عالمی طور پر ڈکلیئر کیے گئے ویری ایبلز کوڈ کے کسی بھی مقام سے نظر آتے ہیں۔ یہ اسی پروگرام کے تمام فنکشنز کے اندر اور باہر سے قابلِ رسائی ہوتے ہیں۔ عالمی ویری ایبلز ڈکلیئر کرنے کے لیے ہمیں بس ویری ایبل کو کسی فنکشن یا بلاک کے باہر یعنی براہِ راست پروگرام کے جسم میں ڈکلیئر کرنا ہوتا ہے۔\n\nدرج ذیل پروگرام مقامی اور عالمی ویری ایبلز بیان کرتا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nint add(); /* function prototype */\nint val1, val2, val3; /*These are global variables */\nint add()\n{\nint sum; // here, sum is local variable\nsum = val1 + val2 + val3;\nreturn sum;\n}\nint main()\n{\nint total; //here, total is local variable\nval1 = 10;\nval2 = 20;\nval3 = 30;\ntotal = add();\ncout<<\"The sum of the three global variables=\"<<total;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe sum of the three global variables=60",
+   "theoryPashto": "a. محلي/خپلکاره متغیرونه\n\nهغه متغیرونه چې د یوه بلاک دننه تعریف شي، محلي متغیرونه بلل کېږي او ساحه یې په بلاک پورې محدوده ده. دا متغیرونه له بلاک بهر د لاسرسي وړ نه دي او لیدل یې یوازې په همغه بلاک پورې پاتې کېږي. د بېلګې په توګه په لاندې کوډ کې a، b او c محلي متغیرونه دي او له دې پولې بهر نه شي کارېدای.\n\nint main()\n{\nint a, b, c;\ncout << \"Enter three integers: \";\ncin >> a >> b >> c;\n// a, b and c are the local variables and cannot be used outside the {} block\ncout << \"Maximum is: \" << maximum ( a, b, c ) << endl; getch();\nreturn 0;\n}\n\nپه maximum( ) فنکشن کې تعریف شوي x، y یا z متغیرونه په main فنکشن کې مستقیم کارول ناشوني دي ځکه دا متغیرونه د maximum فنکشن لپاره محلي دي.\n\nلاندې پروګرام square() فنکشن کاروي چې خپل محلي متغیر ‘y’ لري چې په main() فنکشن کې د لاسرسي وړ نه دی.\n\n// local variables (example) to calculate square of integers\n#include <iostream.h>\n#include<conio.h>\nint square( int y); // function prototype\nint main()\n{\nfor ( int x = 1; x <= 10; x++ )\ncout << square( x ) << \" \";\ncout << endl;\ngetch();\nreturn 0;\n}\n// Function definition\nint square( int y )\n{\nreturn y * y;\n}\n\nb. نړیوال متغیرونه\n\nهغه متغیرونه چې عموماً د پروګرام په سر کې د main() فنکشن مخکې تعریف شي، نړیوال متغیرونه بلل کېږي. نړیوال اعلان شوي متغیرونه د کوډ له هر ځایه لیدل کېږي. د همغه پروګرام د ټولو فنکشنونو له دننه او بهر د لاسرسي وړ دي. د نړیوالو متغیرونو د اعلان لپاره یوازې باید متغیر له هر فنکشن یا بلاک بهر، یعنې مستقیم د پروګرام په بدنه کې، اعلان کړو.\n\nلاندې پروګرام محلي او نړیوال متغیرونه بیانوي.\n\n#include <iostream.h>\n#include <conio.h>\nint add(); /* function prototype */\nint val1, val2, val3; /*These are global variables */\nint add()\n{\nint sum; // here, sum is local variable\nsum = val1 + val2 + val3;\nreturn sum;\n}\nint main()\n{\nint total; //here, total is local variable\nval1 = 10;\nval2 = 20;\nval3 = 30;\ntotal = add();\ncout<<\"The sum of the three global variables=\"<<total;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe sum of the three global variables=60",
+   "content": "<p>a. Local/Automatic variables</p><p>The variables defined within a block are called local variables and its scope is local to block. These variables are not accessible from outside the block and thus their visibility remains only to that block. For example, in the following code segment, the variables a, b and c are local variables and cannot be used outside this boundary.</p><p>int main()\n{\nint a, b, c;\ncout &lt;&lt; &quot;Enter three integers: &quot;;\ncin &gt;&gt; a &gt;&gt; b &gt;&gt; c;\n// a, b and c are the local variables and cannot be used outside the {} block\ncout &lt;&lt; &quot;Maximum is: &quot; &lt;&lt; maximum ( a, b, c ) &lt;&lt; endl; getch();\nreturn 0;\n}</p><p>It is impossible to use the variables x, y or z defined in maximum( ) function directly within main function because these variables are local to the maximum function.</p><p>The following program makes use of a function square() that has its own local variable ‘y’ which is not accessible in the main() function.</p><p>// local variables (example) to calculate square of integers\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint square( int y); // function prototype\nint main()\n{\nfor ( int x = 1; x &lt;= 10; x++ )\ncout &lt;&lt; square( x ) &lt;&lt; &quot; &quot;;\ncout &lt;&lt; endl;\ngetch();\nreturn 0;\n}\n// Function definition\nint square( int y )\n{\nreturn y * y;\n}</p><p>b. Global variables</p><p>The variables defined usually at the top of a program before the main() function are called global variables. The variables declared globally are visible from any point of the code. They are accessible from inside and outside of all the functions of the same program. In order to declare global variables we simply have to declare the variable outside any function or block; i.e. directly in the body of the program.</p><p>The following program describes local and global variables.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint add(); /* function prototype */\nint val1, val2, val3; /*These are global variables */\nint add()\n{\nint sum; // here, sum is local variable\nsum = val1 + val2 + val3;\nreturn sum;\n}\nint main()\n{\nint total; //here, total is local variable\nval1 = 10;\nval2 = 20;\nval3 = 30;\ntotal = add();\ncout&lt;&lt;&quot;The sum of the three global variables=&quot;&lt;&lt;total;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>The sum of the three global variables=60</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 99,
+     "printedPages": [
+      186,
+      187,
+      188
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (6)",
+   "sourcePageLabel": "PDF 99 · p. 186–187–188",
+   "sourceNote": "The list of scopes at the top of p.186 is recorded with PDF98. The global-variables program runs to p.188 (PDF100) and is given whole with its output. The book prints no output for the square() program.",
+   "unit": 6
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

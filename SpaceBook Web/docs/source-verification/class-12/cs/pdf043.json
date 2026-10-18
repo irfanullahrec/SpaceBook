@@ -1,0 +1,312 @@
+{
+ "pdfPage": 43,
+ "sections": [
+  {
+   "id": "cs12-u3-text-9",
+   "title": "Unit 3 text (9)",
+   "headingUrdu": "یونٹ 3 — متن (۹)",
+   "headingPashto": "۳ څپرکی — متن (۹)",
+   "paras": [
+    {
+     "text": "i. int data type",
+     "urdu": "i. int ڈیٹا ٹائپ",
+     "pashto": "i. د int ډېټا ډول"
+    },
+    {
+     "text": "The keyword int stands for the integer data type in C++ and normally has two bytes of memory (16 bits). A 16 bit integer may fall in the range of $-2^{15}$ to $2^{15}-1$, which means that it can store values in the range of -32768 to 32767.",
+     "urdu": "کی ورڈ int، C++ میں انٹیجر ڈیٹا ٹائپ کے لیے ہے اور عام طور پر میموری کے دو بائٹس (16 بٹس) لیتا ہے۔ 16 بٹ کا انٹیجر $-2^{15}$ سے $2^{15}-1$ کی حد میں ہو سکتا ہے، یعنی یہ -32768 سے 32767 تک کی قدریں محفوظ کر سکتا ہے۔",
+     "pashto": "د int کلیدي کلمه په C++ کې د صحیح عدد ډېټا ډول ښيي او عموماً د حافظې دوه بایټه (۱۶ بټه) لري. یو ۱۶-بټه صحیح عدد د $-2^{15}$ تر $2^{15}-1$ په حد کې کېدای شي، یعنې د -32768 تر 32767 پورې ارزښتونه ساتلی شي."
+    },
+    {
+     "text": "ii. short int data type",
+     "urdu": "ii. short int ڈیٹا ٹائپ",
+     "pashto": "ii. د short int ډېټا ډول"
+    },
+    {
+     "text": "short int is used to declare the short integer data type in C++. The maximum size of the short int data type is 2 bytes (16 bits). It may fall in the range $-2^{15}$ to $2^{15}-1$, which means that it can store the values from -32768 to 32767.",
+     "urdu": "short int، C++ میں شارٹ انٹیجر ڈیٹا ٹائپ ڈکلیئر کرنے کے لیے استعمال ہوتا ہے۔ short int ڈیٹا ٹائپ کا زیادہ سے زیادہ سائز 2 بائٹس (16 بٹس) ہے۔ یہ $-2^{15}$ سے $2^{15}-1$ کی حد میں ہو سکتا ہے، یعنی -32768 سے 32767 تک کی قدریں محفوظ کر سکتا ہے۔",
+     "pashto": "short int په C++ کې د لنډ صحیح عدد ډېټا ډول د اعلان لپاره کارول کېږي. د short int اعظمي اندازه ۲ بایټه (۱۶ بټه) ده. د $-2^{15}$ تر $2^{15}-1$ په حد کې کېدای شي، یعنې له -32768 تر 32767 ارزښتونه ساتلی شي."
+    },
+    {
+     "text": "iii. long int data type",
+     "urdu": "iii. long int ڈیٹا ٹائپ",
+     "pashto": "iii. د long int ډېټا ډول"
+    },
+    {
+     "text": "long int stands for long integer data type and is used in C++ to store larger integer values. Its size is 4 bytes (32 bits) which means that it can stores values in the range of -2147483648 to 2147483647.",
+     "urdu": "long int سے مراد لانگ انٹیجر ڈیٹا ٹائپ ہے اور یہ C++ میں بڑی صحیح عددی قدریں محفوظ کرنے کے لیے استعمال ہوتا ہے۔ اس کا سائز 4 بائٹس (32 بٹس) ہے، یعنی یہ -2147483648 سے 2147483647 تک کی قدریں محفوظ کر سکتا ہے۔",
+     "pashto": "long int د اوږد صحیح عدد ډېټا ډول دی او په C++ کې د لویو صحیح عددي ارزښتونو د ساتلو لپاره کارول کېږي. اندازه یې ۴ بایټه (۳۲ بټه) ده، یعنې له -2147483648 تر 2147483647 پورې ارزښتونه ساتلی شي."
+    },
+    {
+     "text": "c. Floating point data type",
+     "urdu": "c. فلوٹنگ پوائنٹ ڈیٹا ٹائپ",
+     "pashto": "c. اعشاري ډېټا ډول"
+    },
+    {
+     "text": "Integers are only used for storing whole numbers, but sometimes we need to store very large numbers, or numbers with a decimal point. The data types which are used to store such type of data are called floating point data types. Variables of floating point types hold real numbers, such as 4.0, 2.5, 3.33, or 0.1226. There are three different types of floating point data types:",
+     "urdu": "انٹیجرز صرف مکمل اعداد محفوظ کرنے کے لیے استعمال ہوتے ہیں، لیکن بعض اوقات ہمیں بہت بڑے اعداد یا اعشاریہ والے اعداد محفوظ کرنے پڑتے ہیں۔ ایسے ڈیٹا کو محفوظ کرنے والی ڈیٹا ٹائپس فلوٹنگ پوائنٹ ڈیٹا ٹائپس کہلاتی ہیں۔ فلوٹنگ پوائنٹ ویری ایبلز حقیقی اعداد جیسے 4.0، 2.5، 3.33 یا 0.1226 رکھتے ہیں۔ فلوٹنگ پوائنٹ ڈیٹا ٹائپس کی تین مختلف اقسام ہیں:",
+     "pashto": "صحیح عددونه یوازې د بشپړو عددونو د ساتلو لپاره کارول کېږي، خو کله کله موږ ډېر لوی عددونه یا اعشاري ټکي لرونکي عددونه ساتلو ته اړتیا لرو. هغه ډېټا ډولونه چې دا ډول ډېټا ساتي، اعشاري ډېټا ډولونه بلل کېږي. د اعشاري ډول متغیرونه حقیقي عددونه لکه 4.0، 2.5، 3.33 یا 0.1226 ساتي. د اعشاري ډېټا ډولونو درې بېل ډولونه دي:"
+    },
+    {
+     "text": "float",
+     "urdu": "float",
+     "pashto": "float"
+    },
+    {
+     "text": "double",
+     "urdu": "double",
+     "pashto": "double"
+    },
+    {
+     "text": "long double",
+     "urdu": "long double",
+     "pashto": "long double"
+    },
+    {
+     "text": "i. float data type",
+     "urdu": "i. float ڈیٹا ٹائپ",
+     "pashto": "i. د float ډېټا ډول"
+    },
+    {
+     "text": "In C++, the float data type is used to declare floating point type of variables to store numbers with decimal point. It needs 4 bytes (32 bits) of memory to store values.",
+     "urdu": "C++ میں float ڈیٹا ٹائپ اعشاریہ والے اعداد محفوظ کرنے کے لیے فلوٹنگ پوائنٹ قسم کے ویری ایبلز ڈکلیئر کرنے کے لیے استعمال ہوتی ہے۔ قدریں محفوظ کرنے کے لیے اسے میموری کے 4 بائٹس (32 بٹس) درکار ہوتے ہیں۔",
+     "pashto": "په C++ کې د float ډېټا ډول د اعشاري ټکي لرونکو عددونو د ساتلو لپاره د اعشاري ډول متغیرونو د اعلان لپاره کارول کېږي. د ارزښتونو د ساتلو لپاره د حافظې ۴ بایټه (۳۲ بټه) ته اړتیا لري."
+    },
+    {
+     "text": "ii. double data type",
+     "urdu": "ii. double ڈیٹا ٹائپ",
+     "pashto": "ii. د double ډېټا ډول"
+    },
+    {
+     "text": "double is a keyword to represent double precision floating point numbers in C++. double data type occupies 8 bytes (64 bits) of memory. The size of double data type is a rational number in the same range as long float and is stored in the form of floating point representation with binary mantissa and exponent.",
+     "urdu": "double، C++ میں ڈبل پریسیژن فلوٹنگ پوائنٹ اعداد کی نمائندگی کے لیے کی ورڈ ہے۔ double ڈیٹا ٹائپ میموری کے 8 بائٹس (64 بٹس) لیتی ہے۔ double ڈیٹا ٹائپ کا سائز long float جیسی حد میں ایک ناطق عدد ہے اور یہ بائنری مینٹیسا اور قوت نما کے ساتھ فلوٹنگ پوائنٹ نمائندگی کی شکل میں محفوظ ہوتا ہے۔",
+     "pashto": "double په C++ کې د دوه‌ګوني دقت اعشاري عددونو د ښودلو کلیدي کلمه ده. د double ډېټا ډول د حافظې ۸ بایټه (۶۴ بټه) نیسي. د double ډېټا ډول اندازه د long float په څېر حد کې یو ناطق عدد دی او د دوه‌ییزې مانتیسا او توان سره د اعشاري ښودنې په بڼه ساتل کېږي."
+    },
+    {
+     "text": "iii. long double data type",
+     "urdu": "iii. long double ڈیٹا ٹائپ",
+     "pashto": "iii. د long double ډېټا ډول"
+    },
+    {
+     "text": "In C++, the long double data type is used to declare long double type of variables to represent long double precision floating point numbers in C++. It needs 10 bytes (80 bits) of memory space in the RAM.",
+     "urdu": "C++ میں long double ڈیٹا ٹائپ لانگ ڈبل پریسیژن فلوٹنگ پوائنٹ اعداد ظاہر کرنے کے لیے long double قسم کے ویری ایبلز ڈکلیئر کرنے کے لیے استعمال ہوتی ہے۔ اسے RAM میں 10 بائٹس (80 بٹس) میموری درکار ہوتی ہے۔",
+     "pashto": "په C++ کې د long double ډېټا ډول د اوږد دوه‌ګوني دقت اعشاري عددونو د ښودلو لپاره د long double ډول متغیرونو د اعلان لپاره کارول کېږي. په RAM کې ۱۰ بایټه (۸۰ بټه) حافظې ته اړتیا لري."
+    },
+    {
+     "text": "d. Boolean data type",
+     "urdu": "d. بولین ڈیٹا ٹائپ",
+     "pashto": "d. بولي ډېټا ډول"
+    },
+    {
+     "text": "bool is the keyword used to represent Boolean data type. It is capable of holding one of the two values: true (1) or false (0). It occupies 1 byte of memory.",
+     "urdu": "bool وہ کی ورڈ ہے جو بولین ڈیٹا ٹائپ کی نمائندگی کے لیے استعمال ہوتا ہے۔ یہ دو قدروں میں سے ایک رکھ سکتا ہے: true (1) یا false (0)۔ یہ میموری کا 1 بائٹ لیتا ہے۔",
+     "pashto": "bool هغه کلیدي کلمه ده چې د بولي ډېټا ډول د ښودلو لپاره کارېږي. له دوو ارزښتونو یو ساتلی شي: true (1) یا false (0). د حافظې ۱ بایټ نیسي."
+    },
+    {
+     "text": "bool flag;",
+     "urdu": "bool flag;",
+     "pashto": "bool flag;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "e. Unsigned data type",
+     "urdu": "e. ان سائنڈ ڈیٹا ٹائپ",
+     "pashto": "e. بې‌نښې ډېټا ډول"
+    },
+    {
+     "text": "The data types discussed so far are signed data types which means that one bit is reserved for the sign of the value (i.e. +/-). The unsigned numbers are whole numbers and always hold positive values starting from 0 till its maximum size. Here, the sign bit also used for the value which means no bit is reserved for holding a sign (+/-). The unsigned numbers may be classified into four types:",
+     "urdu": "اب تک زیرِ بحث ڈیٹا ٹائپس سائنڈ ڈیٹا ٹائپس ہیں، یعنی قدر کی علامت (+/-) کے لیے ایک بٹ مختص ہوتا ہے۔ ان سائنڈ اعداد مکمل اعداد ہیں اور ہمیشہ 0 سے لے کر اپنے زیادہ سے زیادہ سائز تک مثبت قدریں رکھتے ہیں۔ یہاں علامت کا بٹ بھی قدر کے لیے استعمال ہوتا ہے، یعنی علامت (+/-) رکھنے کے لیے کوئی بٹ مختص نہیں ہوتا۔ ان سائنڈ اعداد کو چار اقسام میں تقسیم کیا جا سکتا ہے:",
+     "pashto": "تر اوسه بحث شوي ډېټا ډولونه نښه‌لرونکي ډولونه دي، یعنې د ارزښت د نښې (+/-) لپاره یو بټ ساتل کېږي. بې‌نښې عددونه بشپړ عددونه دي او تل له 0 تر خپلې اعظمي اندازې مثبت ارزښتونه لري. دلته د نښې بټ هم د ارزښت لپاره کارول کېږي، یعنې د نښې (+/-) د ساتلو لپاره هېڅ بټ نه ساتل کېږي. بې‌نښې عددونه په څلورو ډولونو وېشل کېدای شي:"
+    },
+    {
+     "text": "unsigned char",
+     "urdu": "unsigned char",
+     "pashto": "unsigned char"
+    },
+    {
+     "text": "unsigned integer",
+     "urdu": "unsigned integer",
+     "pashto": "unsigned integer"
+    },
+    {
+     "text": "unsigned short integer",
+     "urdu": "unsigned short integer",
+     "pashto": "unsigned short integer"
+    },
+    {
+     "text": "unsigned long integer",
+     "urdu": "unsigned long integer",
+     "pashto": "unsigned long integer"
+    }
+   ],
+   "theory": "i. int data type\n\nThe keyword int stands for the integer data type in C++ and normally has two bytes of memory (16 bits). A 16 bit integer may fall in the range of -2^{15} to 2^{15}-1, which means that it can store values in the range of -32768 to 32767.\n\nii. short int data type\n\nshort int is used to declare the short integer data type in C++. The maximum size of the short int data type is 2 bytes (16 bits). It may fall in the range -2^{15} to 2^{15}-1, which means that it can store the values from -32768 to 32767.\n\niii. long int data type\n\nlong int stands for long integer data type and is used in C++ to store larger integer values. Its size is 4 bytes (32 bits) which means that it can stores values in the range of -2147483648 to 2147483647.\n\nc. Floating point data type\n\nIntegers are only used for storing whole numbers, but sometimes we need to store very large numbers, or numbers with a decimal point. The data types which are used to store such type of data are called floating point data types. Variables of floating point types hold real numbers, such as 4.0, 2.5, 3.33, or 0.1226. There are three different types of floating point data types:\n\nfloat\n\ndouble\n\nlong double\n\ni. float data type\n\nIn C++, the float data type is used to declare floating point type of variables to store numbers with decimal point. It needs 4 bytes (32 bits) of memory to store values.\n\nii. double data type\n\ndouble is a keyword to represent double precision floating point numbers in C++. double data type occupies 8 bytes (64 bits) of memory. The size of double data type is a rational number in the same range as long float and is stored in the form of floating point representation with binary mantissa and exponent.\n\niii. long double data type\n\nIn C++, the long double data type is used to declare long double type of variables to represent long double precision floating point numbers in C++. It needs 10 bytes (80 bits) of memory space in the RAM.\n\nd. Boolean data type\n\nbool is the keyword used to represent Boolean data type. It is capable of holding one of the two values: true (1) or false (0). It occupies 1 byte of memory.\n\nbool flag;\n\ne. Unsigned data type\n\nThe data types discussed so far are signed data types which means that one bit is reserved for the sign of the value (i.e. +/-). The unsigned numbers are whole numbers and always hold positive values starting from 0 till its maximum size. Here, the sign bit also used for the value which means no bit is reserved for holding a sign (+/-). The unsigned numbers may be classified into four types:\n\nunsigned char\n\nunsigned integer\n\nunsigned short integer\n\nunsigned long integer",
+   "urdu": "i. int ڈیٹا ٹائپ\n\nکی ورڈ int، C++ میں انٹیجر ڈیٹا ٹائپ کے لیے ہے اور عام طور پر میموری کے دو بائٹس (16 بٹس) لیتا ہے۔ 16 بٹ کا انٹیجر -2^{15} سے 2^{15}-1 کی حد میں ہو سکتا ہے، یعنی یہ -32768 سے 32767 تک کی قدریں محفوظ کر سکتا ہے۔\n\nii. short int ڈیٹا ٹائپ\n\nshort int، C++ میں شارٹ انٹیجر ڈیٹا ٹائپ ڈکلیئر کرنے کے لیے استعمال ہوتا ہے۔ short int ڈیٹا ٹائپ کا زیادہ سے زیادہ سائز 2 بائٹس (16 بٹس) ہے۔ یہ -2^{15} سے 2^{15}-1 کی حد میں ہو سکتا ہے، یعنی -32768 سے 32767 تک کی قدریں محفوظ کر سکتا ہے۔\n\niii. long int ڈیٹا ٹائپ\n\nlong int سے مراد لانگ انٹیجر ڈیٹا ٹائپ ہے اور یہ C++ میں بڑی صحیح عددی قدریں محفوظ کرنے کے لیے استعمال ہوتا ہے۔ اس کا سائز 4 بائٹس (32 بٹس) ہے، یعنی یہ -2147483648 سے 2147483647 تک کی قدریں محفوظ کر سکتا ہے۔\n\nc. فلوٹنگ پوائنٹ ڈیٹا ٹائپ\n\nانٹیجرز صرف مکمل اعداد محفوظ کرنے کے لیے استعمال ہوتے ہیں، لیکن بعض اوقات ہمیں بہت بڑے اعداد یا اعشاریہ والے اعداد محفوظ کرنے پڑتے ہیں۔ ایسے ڈیٹا کو محفوظ کرنے والی ڈیٹا ٹائپس فلوٹنگ پوائنٹ ڈیٹا ٹائپس کہلاتی ہیں۔ فلوٹنگ پوائنٹ ویری ایبلز حقیقی اعداد جیسے 4.0، 2.5، 3.33 یا 0.1226 رکھتے ہیں۔ فلوٹنگ پوائنٹ ڈیٹا ٹائپس کی تین مختلف اقسام ہیں:\n\nfloat\n\ndouble\n\nlong double\n\ni. float ڈیٹا ٹائپ\n\nC++ میں float ڈیٹا ٹائپ اعشاریہ والے اعداد محفوظ کرنے کے لیے فلوٹنگ پوائنٹ قسم کے ویری ایبلز ڈکلیئر کرنے کے لیے استعمال ہوتی ہے۔ قدریں محفوظ کرنے کے لیے اسے میموری کے 4 بائٹس (32 بٹس) درکار ہوتے ہیں۔\n\nii. double ڈیٹا ٹائپ\n\ndouble، C++ میں ڈبل پریسیژن فلوٹنگ پوائنٹ اعداد کی نمائندگی کے لیے کی ورڈ ہے۔ double ڈیٹا ٹائپ میموری کے 8 بائٹس (64 بٹس) لیتی ہے۔ double ڈیٹا ٹائپ کا سائز long float جیسی حد میں ایک ناطق عدد ہے اور یہ بائنری مینٹیسا اور قوت نما کے ساتھ فلوٹنگ پوائنٹ نمائندگی کی شکل میں محفوظ ہوتا ہے۔\n\niii. long double ڈیٹا ٹائپ\n\nC++ میں long double ڈیٹا ٹائپ لانگ ڈبل پریسیژن فلوٹنگ پوائنٹ اعداد ظاہر کرنے کے لیے long double قسم کے ویری ایبلز ڈکلیئر کرنے کے لیے استعمال ہوتی ہے۔ اسے RAM میں 10 بائٹس (80 بٹس) میموری درکار ہوتی ہے۔\n\nd. بولین ڈیٹا ٹائپ\n\nbool وہ کی ورڈ ہے جو بولین ڈیٹا ٹائپ کی نمائندگی کے لیے استعمال ہوتا ہے۔ یہ دو قدروں میں سے ایک رکھ سکتا ہے: true (1) یا false (0)۔ یہ میموری کا 1 بائٹ لیتا ہے۔\n\nbool flag;\n\ne. ان سائنڈ ڈیٹا ٹائپ\n\nاب تک زیرِ بحث ڈیٹا ٹائپس سائنڈ ڈیٹا ٹائپس ہیں، یعنی قدر کی علامت (+/-) کے لیے ایک بٹ مختص ہوتا ہے۔ ان سائنڈ اعداد مکمل اعداد ہیں اور ہمیشہ 0 سے لے کر اپنے زیادہ سے زیادہ سائز تک مثبت قدریں رکھتے ہیں۔ یہاں علامت کا بٹ بھی قدر کے لیے استعمال ہوتا ہے، یعنی علامت (+/-) رکھنے کے لیے کوئی بٹ مختص نہیں ہوتا۔ ان سائنڈ اعداد کو چار اقسام میں تقسیم کیا جا سکتا ہے:\n\nunsigned char\n\nunsigned integer\n\nunsigned short integer\n\nunsigned long integer",
+   "pashto": "i. د int ډېټا ډول\n\nد int کلیدي کلمه په C++ کې د صحیح عدد ډېټا ډول ښيي او عموماً د حافظې دوه بایټه (۱۶ بټه) لري. یو ۱۶-بټه صحیح عدد د -2^{15} تر 2^{15}-1 په حد کې کېدای شي، یعنې د -32768 تر 32767 پورې ارزښتونه ساتلی شي.\n\nii. د short int ډېټا ډول\n\nshort int په C++ کې د لنډ صحیح عدد ډېټا ډول د اعلان لپاره کارول کېږي. د short int اعظمي اندازه ۲ بایټه (۱۶ بټه) ده. د -2^{15} تر 2^{15}-1 په حد کې کېدای شي، یعنې له -32768 تر 32767 ارزښتونه ساتلی شي.\n\niii. د long int ډېټا ډول\n\nlong int د اوږد صحیح عدد ډېټا ډول دی او په C++ کې د لویو صحیح عددي ارزښتونو د ساتلو لپاره کارول کېږي. اندازه یې ۴ بایټه (۳۲ بټه) ده، یعنې له -2147483648 تر 2147483647 پورې ارزښتونه ساتلی شي.\n\nc. اعشاري ډېټا ډول\n\nصحیح عددونه یوازې د بشپړو عددونو د ساتلو لپاره کارول کېږي، خو کله کله موږ ډېر لوی عددونه یا اعشاري ټکي لرونکي عددونه ساتلو ته اړتیا لرو. هغه ډېټا ډولونه چې دا ډول ډېټا ساتي، اعشاري ډېټا ډولونه بلل کېږي. د اعشاري ډول متغیرونه حقیقي عددونه لکه 4.0، 2.5، 3.33 یا 0.1226 ساتي. د اعشاري ډېټا ډولونو درې بېل ډولونه دي:\n\nfloat\n\ndouble\n\nlong double\n\ni. د float ډېټا ډول\n\nپه C++ کې د float ډېټا ډول د اعشاري ټکي لرونکو عددونو د ساتلو لپاره د اعشاري ډول متغیرونو د اعلان لپاره کارول کېږي. د ارزښتونو د ساتلو لپاره د حافظې ۴ بایټه (۳۲ بټه) ته اړتیا لري.\n\nii. د double ډېټا ډول\n\ndouble په C++ کې د دوه‌ګوني دقت اعشاري عددونو د ښودلو کلیدي کلمه ده. د double ډېټا ډول د حافظې ۸ بایټه (۶۴ بټه) نیسي. د double ډېټا ډول اندازه د long float په څېر حد کې یو ناطق عدد دی او د دوه‌ییزې مانتیسا او توان سره د اعشاري ښودنې په بڼه ساتل کېږي.\n\niii. د long double ډېټا ډول\n\nپه C++ کې د long double ډېټا ډول د اوږد دوه‌ګوني دقت اعشاري عددونو د ښودلو لپاره د long double ډول متغیرونو د اعلان لپاره کارول کېږي. په RAM کې ۱۰ بایټه (۸۰ بټه) حافظې ته اړتیا لري.\n\nd. بولي ډېټا ډول\n\nbool هغه کلیدي کلمه ده چې د بولي ډېټا ډول د ښودلو لپاره کارېږي. له دوو ارزښتونو یو ساتلی شي: true (1) یا false (0). د حافظې ۱ بایټ نیسي.\n\nbool flag;\n\ne. بې‌نښې ډېټا ډول\n\nتر اوسه بحث شوي ډېټا ډولونه نښه‌لرونکي ډولونه دي، یعنې د ارزښت د نښې (+/-) لپاره یو بټ ساتل کېږي. بې‌نښې عددونه بشپړ عددونه دي او تل له 0 تر خپلې اعظمي اندازې مثبت ارزښتونه لري. دلته د نښې بټ هم د ارزښت لپاره کارول کېږي، یعنې د نښې (+/-) د ساتلو لپاره هېڅ بټ نه ساتل کېږي. بې‌نښې عددونه په څلورو ډولونو وېشل کېدای شي:\n\nunsigned char\n\nunsigned integer\n\nunsigned short integer\n\nunsigned long integer",
+   "theoryUrdu": "i. int ڈیٹا ٹائپ\n\nکی ورڈ int، C++ میں انٹیجر ڈیٹا ٹائپ کے لیے ہے اور عام طور پر میموری کے دو بائٹس (16 بٹس) لیتا ہے۔ 16 بٹ کا انٹیجر -2^{15} سے 2^{15}-1 کی حد میں ہو سکتا ہے، یعنی یہ -32768 سے 32767 تک کی قدریں محفوظ کر سکتا ہے۔\n\nii. short int ڈیٹا ٹائپ\n\nshort int، C++ میں شارٹ انٹیجر ڈیٹا ٹائپ ڈکلیئر کرنے کے لیے استعمال ہوتا ہے۔ short int ڈیٹا ٹائپ کا زیادہ سے زیادہ سائز 2 بائٹس (16 بٹس) ہے۔ یہ -2^{15} سے 2^{15}-1 کی حد میں ہو سکتا ہے، یعنی -32768 سے 32767 تک کی قدریں محفوظ کر سکتا ہے۔\n\niii. long int ڈیٹا ٹائپ\n\nlong int سے مراد لانگ انٹیجر ڈیٹا ٹائپ ہے اور یہ C++ میں بڑی صحیح عددی قدریں محفوظ کرنے کے لیے استعمال ہوتا ہے۔ اس کا سائز 4 بائٹس (32 بٹس) ہے، یعنی یہ -2147483648 سے 2147483647 تک کی قدریں محفوظ کر سکتا ہے۔\n\nc. فلوٹنگ پوائنٹ ڈیٹا ٹائپ\n\nانٹیجرز صرف مکمل اعداد محفوظ کرنے کے لیے استعمال ہوتے ہیں، لیکن بعض اوقات ہمیں بہت بڑے اعداد یا اعشاریہ والے اعداد محفوظ کرنے پڑتے ہیں۔ ایسے ڈیٹا کو محفوظ کرنے والی ڈیٹا ٹائپس فلوٹنگ پوائنٹ ڈیٹا ٹائپس کہلاتی ہیں۔ فلوٹنگ پوائنٹ ویری ایبلز حقیقی اعداد جیسے 4.0، 2.5، 3.33 یا 0.1226 رکھتے ہیں۔ فلوٹنگ پوائنٹ ڈیٹا ٹائپس کی تین مختلف اقسام ہیں:\n\nfloat\n\ndouble\n\nlong double\n\ni. float ڈیٹا ٹائپ\n\nC++ میں float ڈیٹا ٹائپ اعشاریہ والے اعداد محفوظ کرنے کے لیے فلوٹنگ پوائنٹ قسم کے ویری ایبلز ڈکلیئر کرنے کے لیے استعمال ہوتی ہے۔ قدریں محفوظ کرنے کے لیے اسے میموری کے 4 بائٹس (32 بٹس) درکار ہوتے ہیں۔\n\nii. double ڈیٹا ٹائپ\n\ndouble، C++ میں ڈبل پریسیژن فلوٹنگ پوائنٹ اعداد کی نمائندگی کے لیے کی ورڈ ہے۔ double ڈیٹا ٹائپ میموری کے 8 بائٹس (64 بٹس) لیتی ہے۔ double ڈیٹا ٹائپ کا سائز long float جیسی حد میں ایک ناطق عدد ہے اور یہ بائنری مینٹیسا اور قوت نما کے ساتھ فلوٹنگ پوائنٹ نمائندگی کی شکل میں محفوظ ہوتا ہے۔\n\niii. long double ڈیٹا ٹائپ\n\nC++ میں long double ڈیٹا ٹائپ لانگ ڈبل پریسیژن فلوٹنگ پوائنٹ اعداد ظاہر کرنے کے لیے long double قسم کے ویری ایبلز ڈکلیئر کرنے کے لیے استعمال ہوتی ہے۔ اسے RAM میں 10 بائٹس (80 بٹس) میموری درکار ہوتی ہے۔\n\nd. بولین ڈیٹا ٹائپ\n\nbool وہ کی ورڈ ہے جو بولین ڈیٹا ٹائپ کی نمائندگی کے لیے استعمال ہوتا ہے۔ یہ دو قدروں میں سے ایک رکھ سکتا ہے: true (1) یا false (0)۔ یہ میموری کا 1 بائٹ لیتا ہے۔\n\nbool flag;\n\ne. ان سائنڈ ڈیٹا ٹائپ\n\nاب تک زیرِ بحث ڈیٹا ٹائپس سائنڈ ڈیٹا ٹائپس ہیں، یعنی قدر کی علامت (+/-) کے لیے ایک بٹ مختص ہوتا ہے۔ ان سائنڈ اعداد مکمل اعداد ہیں اور ہمیشہ 0 سے لے کر اپنے زیادہ سے زیادہ سائز تک مثبت قدریں رکھتے ہیں۔ یہاں علامت کا بٹ بھی قدر کے لیے استعمال ہوتا ہے، یعنی علامت (+/-) رکھنے کے لیے کوئی بٹ مختص نہیں ہوتا۔ ان سائنڈ اعداد کو چار اقسام میں تقسیم کیا جا سکتا ہے:\n\nunsigned char\n\nunsigned integer\n\nunsigned short integer\n\nunsigned long integer",
+   "theoryPashto": "i. د int ډېټا ډول\n\nد int کلیدي کلمه په C++ کې د صحیح عدد ډېټا ډول ښيي او عموماً د حافظې دوه بایټه (۱۶ بټه) لري. یو ۱۶-بټه صحیح عدد د -2^{15} تر 2^{15}-1 په حد کې کېدای شي، یعنې د -32768 تر 32767 پورې ارزښتونه ساتلی شي.\n\nii. د short int ډېټا ډول\n\nshort int په C++ کې د لنډ صحیح عدد ډېټا ډول د اعلان لپاره کارول کېږي. د short int اعظمي اندازه ۲ بایټه (۱۶ بټه) ده. د -2^{15} تر 2^{15}-1 په حد کې کېدای شي، یعنې له -32768 تر 32767 ارزښتونه ساتلی شي.\n\niii. د long int ډېټا ډول\n\nlong int د اوږد صحیح عدد ډېټا ډول دی او په C++ کې د لویو صحیح عددي ارزښتونو د ساتلو لپاره کارول کېږي. اندازه یې ۴ بایټه (۳۲ بټه) ده، یعنې له -2147483648 تر 2147483647 پورې ارزښتونه ساتلی شي.\n\nc. اعشاري ډېټا ډول\n\nصحیح عددونه یوازې د بشپړو عددونو د ساتلو لپاره کارول کېږي، خو کله کله موږ ډېر لوی عددونه یا اعشاري ټکي لرونکي عددونه ساتلو ته اړتیا لرو. هغه ډېټا ډولونه چې دا ډول ډېټا ساتي، اعشاري ډېټا ډولونه بلل کېږي. د اعشاري ډول متغیرونه حقیقي عددونه لکه 4.0، 2.5، 3.33 یا 0.1226 ساتي. د اعشاري ډېټا ډولونو درې بېل ډولونه دي:\n\nfloat\n\ndouble\n\nlong double\n\ni. د float ډېټا ډول\n\nپه C++ کې د float ډېټا ډول د اعشاري ټکي لرونکو عددونو د ساتلو لپاره د اعشاري ډول متغیرونو د اعلان لپاره کارول کېږي. د ارزښتونو د ساتلو لپاره د حافظې ۴ بایټه (۳۲ بټه) ته اړتیا لري.\n\nii. د double ډېټا ډول\n\ndouble په C++ کې د دوه‌ګوني دقت اعشاري عددونو د ښودلو کلیدي کلمه ده. د double ډېټا ډول د حافظې ۸ بایټه (۶۴ بټه) نیسي. د double ډېټا ډول اندازه د long float په څېر حد کې یو ناطق عدد دی او د دوه‌ییزې مانتیسا او توان سره د اعشاري ښودنې په بڼه ساتل کېږي.\n\niii. د long double ډېټا ډول\n\nپه C++ کې د long double ډېټا ډول د اوږد دوه‌ګوني دقت اعشاري عددونو د ښودلو لپاره د long double ډول متغیرونو د اعلان لپاره کارول کېږي. په RAM کې ۱۰ بایټه (۸۰ بټه) حافظې ته اړتیا لري.\n\nd. بولي ډېټا ډول\n\nbool هغه کلیدي کلمه ده چې د بولي ډېټا ډول د ښودلو لپاره کارېږي. له دوو ارزښتونو یو ساتلی شي: true (1) یا false (0). د حافظې ۱ بایټ نیسي.\n\nbool flag;\n\ne. بې‌نښې ډېټا ډول\n\nتر اوسه بحث شوي ډېټا ډولونه نښه‌لرونکي ډولونه دي، یعنې د ارزښت د نښې (+/-) لپاره یو بټ ساتل کېږي. بې‌نښې عددونه بشپړ عددونه دي او تل له 0 تر خپلې اعظمي اندازې مثبت ارزښتونه لري. دلته د نښې بټ هم د ارزښت لپاره کارول کېږي، یعنې د نښې (+/-) د ساتلو لپاره هېڅ بټ نه ساتل کېږي. بې‌نښې عددونه په څلورو ډولونو وېشل کېدای شي:\n\nunsigned char\n\nunsigned integer\n\nunsigned short integer\n\nunsigned long integer",
+   "content": "<p>i. int data type</p><p>The keyword int stands for the integer data type in C++ and normally has two bytes of memory (16 bits). A 16 bit integer may fall in the range of -2^{15} to 2^{15}-1, which means that it can store values in the range of -32768 to 32767.</p><p>ii. short int data type</p><p>short int is used to declare the short integer data type in C++. The maximum size of the short int data type is 2 bytes (16 bits). It may fall in the range -2^{15} to 2^{15}-1, which means that it can store the values from -32768 to 32767.</p><p>iii. long int data type</p><p>long int stands for long integer data type and is used in C++ to store larger integer values. Its size is 4 bytes (32 bits) which means that it can stores values in the range of -2147483648 to 2147483647.</p><p>c. Floating point data type</p><p>Integers are only used for storing whole numbers, but sometimes we need to store very large numbers, or numbers with a decimal point. The data types which are used to store such type of data are called floating point data types. Variables of floating point types hold real numbers, such as 4.0, 2.5, 3.33, or 0.1226. There are three different types of floating point data types:</p><p>float</p><p>double</p><p>long double</p><p>i. float data type</p><p>In C++, the float data type is used to declare floating point type of variables to store numbers with decimal point. It needs 4 bytes (32 bits) of memory to store values.</p><p>ii. double data type</p><p>double is a keyword to represent double precision floating point numbers in C++. double data type occupies 8 bytes (64 bits) of memory. The size of double data type is a rational number in the same range as long float and is stored in the form of floating point representation with binary mantissa and exponent.</p><p>iii. long double data type</p><p>In C++, the long double data type is used to declare long double type of variables to represent long double precision floating point numbers in C++. It needs 10 bytes (80 bits) of memory space in the RAM.</p><p>d. Boolean data type</p><p>bool is the keyword used to represent Boolean data type. It is capable of holding one of the two values: true (1) or false (0). It occupies 1 byte of memory.</p><p>bool flag;</p><p>e. Unsigned data type</p><p>The data types discussed so far are signed data types which means that one bit is reserved for the sign of the value (i.e. +/-). The unsigned numbers are whole numbers and always hold positive values starting from 0 till its maximum size. Here, the sign bit also used for the value which means no bit is reserved for holding a sign (+/-). The unsigned numbers may be classified into four types:</p><p>unsigned char</p><p>unsigned integer</p><p>unsigned short integer</p><p>unsigned long integer</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      8,
+      9,
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      22,
+      23,
+      24,
+      25
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 43,
+     "printedPages": [
+      74,
+      75
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (9)",
+   "sourcePageLabel": "PDF 43 · p. 74–75",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf043",
+   "unit": 3,
+   "printedPage": 75,
+   "description": "p.74 prints “it can stores values”; p.75 “The size of double data type is a rational number in the same range as long float”, “the sign bit also used”. Retained as printed. Owner handwriting (“long distance”, “unit 3”) excluded."
+  }
+ ],
+ "completeUnits": []
+}

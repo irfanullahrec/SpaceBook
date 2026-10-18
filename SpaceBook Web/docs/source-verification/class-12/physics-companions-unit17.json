@@ -1,0 +1,721 @@
+{
+  "formulas": [
+    {
+      "id": "phys17-bandgap-energy-room-temperature",
+      "name": "Room-temperature band gap",
+      "expression": "E_g(Ge)=0.72 eV; E_g(Si)=1.1 eV at 300 K",
+      "sourceReferences": [
+        {
+          "pdfPage": 122,
+          "printedPage": 233,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-intrinsic-carrier-density-equals",
+      "name": "Intrinsic carrier density relation",
+      "expression": "N=P",
+      "sourceReferences": [
+        {
+          "pdfPage": 124,
+          "printedPage": 236,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-pn-knee-voltage-values",
+      "name": "PN-junction knee voltage",
+      "expression": "V_k(Ge)=0.3 V; V_k(Si)=0.7 V",
+      "sourceReferences": [
+        {
+          "pdfPage": 125,
+          "printedPage": 239,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-drift-current",
+      "name": "PN-junction drift current",
+      "expression": "I_drift=I_e+I_h",
+      "sourceReferences": [
+        {
+          "pdfPage": 126,
+          "printedPage": 240,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-transformer-secondary-ac-voltage",
+      "name": "Transformer secondary voltage",
+      "expression": "V=V_m sin(ωt)",
+      "sourceReferences": [
+        {
+          "pdfPage": 126,
+          "printedPage": 241,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-half-wave-piv",
+      "name": "Half-wave diode peak inverse voltage",
+      "expression": "PIV=V_m",
+      "sourceReferences": [
+        {
+          "pdfPage": 126,
+          "printedPage": 241,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-transistor-current-equation",
+      "name": "Transistor current relation",
+      "expression": "I_E=I_B+I_C",
+      "sourceReferences": [
+        {
+          "pdfPage": 128,
+          "printedPage": 244,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-alpha-static-dynamic",
+      "name": "Transistor alpha factor",
+      "expression": "α_static=I_C/I_E; α_dynamic=ΔI_C/ΔI_E; α≈1",
+      "sourceReferences": [
+        {
+          "pdfPage": 129,
+          "printedPage": 246,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-beta-static-dynamic",
+      "name": "Transistor beta factor",
+      "expression": "β_static=I_C/I_B; β_dynamic=ΔI_C/ΔI_B; β=α/(1−α)",
+      "sourceReferences": [
+        {
+          "pdfPage": 129,
+          "printedPage": 247,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-example-1-values",
+      "name": "Example 17.1 transistor values",
+      "expression": "I_C=1.2 mA; V_CE=9.4 V; I_E=1.25 mA; I_B=0.05 mA",
+      "sourceReferences": [
+        {
+          "pdfPage": 130,
+          "printedPage": 249,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-example-2-current-change",
+      "name": "Example 17.2 collector-current change",
+      "expression": "β=19; ΔI_C=7.6 mA",
+      "sourceReferences": [
+        {
+          "pdfPage": 130,
+          "printedPage": 249,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Band-gap energy",
+      "definition": "The minimum energy needed to excite an electron from the valence band to the conduction band.",
+      "sourceReferences": [
+        {
+          "pdfPage": 122,
+          "printedPage": 233,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Hole",
+      "definition": "An empty state left in the valence band when an electron leaves a covalent bond; it behaves as a positive carrier and moves opposite to electrons.",
+      "sourceReferences": [
+        {
+          "pdfPage": 122,
+          "printedPage": 233,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Intrinsic semiconductor",
+      "definition": "A pure semiconductor crystal without impurities (as defined in the text, fewer than one impurity atom per billion host atoms).",
+      "sourceReferences": [
+        {
+          "pdfPage": 121,
+          "printedPage": 231,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Doping",
+      "definition": "Adding a small amount of impurity to an intrinsic semiconductor to increase its conductivity.",
+      "sourceReferences": [
+        {
+          "pdfPage": 123,
+          "printedPage": 234,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Donor atom",
+      "definition": "A pentavalent impurity atom that contributes an electron to the conduction band without producing a valence-band hole.",
+      "sourceReferences": [
+        {
+          "pdfPage": 123,
+          "printedPage": 235,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "N-type semiconductor",
+      "definition": "An extrinsic semiconductor in which electrons are majority carriers and holes are minority carriers.",
+      "sourceReferences": [
+        {
+          "pdfPage": 123,
+          "printedPage": 235,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "P-type semiconductor",
+      "definition": "An extrinsic semiconductor doped with a trivalent acceptor impurity such as boron or aluminum.",
+      "sourceReferences": [
+        {
+          "pdfPage": 123,
+          "printedPage": 235,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Acceptor atom",
+      "definition": "A trivalent impurity atom that accepts a valence-band electron and creates a hole.",
+      "sourceReferences": [
+        {
+          "pdfPage": 124,
+          "printedPage": 236,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Depletion layer",
+      "definition": "The PN-junction region depleted of mobile charges, containing separated ions and a potential barrier.",
+      "sourceReferences": [
+        {
+          "pdfPage": 124,
+          "printedPage": 237,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Forward bias",
+      "definition": "Connecting P positive relative to N, reducing the junction barrier so majority carriers cross and forward current flows.",
+      "sourceReferences": [
+        {
+          "pdfPage": 124,
+          "printedPage": 237,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Reverse bias",
+      "definition": "Connecting P negative relative to N; majority carriers do not cross and only a small minority-carrier reverse current flows.",
+      "sourceReferences": [
+        {
+          "pdfPage": 124,
+          "printedPage": 237,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "LED",
+      "definition": "A forward-biased, heavily doped PN junction that emits photons when electrons recombine with holes.",
+      "sourceReferences": [
+        {
+          "pdfPage": 125,
+          "printedPage": 238,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Photodiode",
+      "definition": "A PN-junction diode operated under reverse bias that converts absorbed light into electric current.",
+      "sourceReferences": [
+        {
+          "pdfPage": 125,
+          "printedPage": 238,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Solar cell",
+      "definition": "A device that converts light directly into electrical energy by the photovoltaic effect.",
+      "sourceReferences": [
+        {
+          "pdfPage": 125,
+          "printedPage": 238,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Knee voltage",
+      "definition": "The forward voltage beyond which PN-junction current rises rapidly; 0.3 V for Ge and 0.7 V for Si in the text.",
+      "sourceReferences": [
+        {
+          "pdfPage": 125,
+          "printedPage": 239,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Rectification",
+      "definition": "Conversion of alternating current into direct current; a rectifier performs the conversion.",
+      "sourceReferences": [
+        {
+          "pdfPage": 126,
+          "printedPage": 240,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Peak inverse voltage",
+      "definition": "The maximum reverse voltage that a rectifying diode must withstand; for the shown half-wave circuit it is V_m.",
+      "sourceReferences": [
+        {
+          "pdfPage": 126,
+          "printedPage": 241,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Bipolar junction transistor",
+      "definition": "A transistor with two PN junctions (NPN or PNP) whose operation involves both majority and minority carriers.",
+      "sourceReferences": [
+        {
+          "pdfPage": 127,
+          "printedPage": 243,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Emitter",
+      "definition": "The heavily doped transistor region that emits charge carriers.",
+      "sourceReferences": [
+        {
+          "pdfPage": 127,
+          "printedPage": 243,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Base",
+      "definition": "The thin, lightly doped middle transistor region.",
+      "sourceReferences": [
+        {
+          "pdfPage": 127,
+          "printedPage": 243,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Collector",
+      "definition": "The transistor region that collects charge carriers.",
+      "sourceReferences": [
+        {
+          "pdfPage": 127,
+          "printedPage": 243,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Common-base configuration",
+      "definition": "Transistor configuration with base common to input and output; emitter is input and collector output.",
+      "sourceReferences": [
+        {
+          "pdfPage": 128,
+          "printedPage": 244,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Active region",
+      "definition": "The transistor operating region with emitter-base forward biased and collector-base reverse biased.",
+      "sourceReferences": [
+        {
+          "pdfPage": 128,
+          "printedPage": 245,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Cut-off region",
+      "definition": "The region when both transistor junctions are reverse biased; output current is zero.",
+      "sourceReferences": [
+        {
+          "pdfPage": 128,
+          "printedPage": 245,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Saturation region",
+      "definition": "The region when both transistor junctions are forward biased.",
+      "sourceReferences": [
+        {
+          "pdfPage": 128,
+          "printedPage": 245,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Alpha factor",
+      "definition": "The ratio I_C/I_E; the dynamic alpha factor is ΔI_C/ΔI_E.",
+      "sourceReferences": [
+        {
+          "pdfPage": 129,
+          "printedPage": 246,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Beta factor",
+      "definition": "The ratio I_C/I_B and transistor current gain; the dynamic beta factor is ΔI_C/ΔI_B.",
+      "sourceReferences": [
+        {
+          "pdfPage": 129,
+          "printedPage": 247,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Amplification",
+      "definition": "Increasing a signal's strength without changing the original signal.",
+      "sourceReferences": [
+        {
+          "pdfPage": 129,
+          "printedPage": 247,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Transistor switch saturation",
+      "definition": "In the closed-switch ON state, base and collector current flow and V_CE is approximately zero.",
+      "sourceReferences": [
+        {
+          "pdfPage": 130,
+          "printedPage": 248,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Transistor switch cut-off",
+      "definition": "In the open-switch OFF state, base and collector currents are zero and V_CE is approximately the supply voltage.",
+      "sourceReferences": [
+        {
+          "pdfPage": 130,
+          "printedPage": 248,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "phys17-example-17-1-ce-currents",
+      "title": "Example 17.1: CE transistor voltages and currents",
+      "problem": "V_CC=10 V, V_C=0.6 V across R_C=500 Ω, α=0.96. Find V_CE, I_B and I_E.",
+      "solution": "I_C=V_C/R_C=1.2 mA; V_CE=V_CC−V_C=9.4 V; I_E=I_C/α=1.25 mA; I_B=I_E−I_C=0.05 mA.",
+      "sourceReferences": [
+        {
+          "pdfPage": 130,
+          "printedPage": 249,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-example-17-2-beta-change",
+      "title": "Example 17.2: Change in collector current",
+      "problem": "α=0.95 and ΔI_B=0.4 mA. Find ΔI_C in CE configuration.",
+      "solution": "β=α/(1−α)=19; ΔI_C=βΔI_B=7.6 mA.",
+      "sourceReferences": [
+        {
+          "pdfPage": 130,
+          "printedPage": 249,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "phys17-mcq-01",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "In N-type silicon, which statement is true?",
+      "sourceReferences": [
+        {
+          "pdfPage": 131,
+          "printedPage": 251,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-02",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "Barrier potential of a silicon diode at room temperature?",
+      "sourceReferences": [
+        {
+          "pdfPage": 131,
+          "printedPage": 251,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-03",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "How does depletion-region width change under reverse bias?",
+      "sourceReferences": [
+        {
+          "pdfPage": 131,
+          "printedPage": 251,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-04",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "What is common-emitter NPN current gain?",
+      "sourceReferences": [
+        {
+          "pdfPage": 131,
+          "printedPage": 251,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-05",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "Which carriers cause reverse saturation current?",
+      "sourceReferences": [
+        {
+          "pdfPage": 131,
+          "printedPage": 251,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-06",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "What does a reverse-biased PN junction act as?",
+      "sourceReferences": [
+        {
+          "pdfPage": 131,
+          "printedPage": 251,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-07",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "What does improper transistor biasing produce?",
+      "sourceReferences": [
+        {
+          "pdfPage": 131,
+          "printedPage": 251,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-08",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "In which regions do digital transistors usually operate?",
+      "sourceReferences": [
+        {
+          "pdfPage": 131,
+          "printedPage": 251,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-09",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "Most electrons in the base of an NPN transistor flow where?",
+      "sourceReferences": [
+        {
+          "pdfPage": 132,
+          "printedPage": 252,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-10",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "What controls collector current in a transistor?",
+      "sourceReferences": [
+        {
+          "pdfPage": 132,
+          "printedPage": 252,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-11",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "What is the minimum number of diodes for full-wave rectification?",
+      "sourceReferences": [
+        {
+          "pdfPage": 132,
+          "printedPage": 252,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-mcq-12",
+      "exercise": "Unit 17 multiple-choice questions",
+      "question": "What region results when both transistor junctions are reverse biased?",
+      "sourceReferences": [
+        {
+          "pdfPage": 132,
+          "printedPage": 252,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-numerical-01",
+      "exercise": "Unit 17 numerical problems",
+      "question": "I_C=10 mA, I_B=40 μA; find current gain.",
+      "answer": "250",
+      "sourceReferences": [
+        {
+          "pdfPage": 132,
+          "printedPage": 253,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-numerical-02",
+      "exercise": "Unit 17 numerical problems",
+      "question": "I_B=100 μA, β=100; find I_C, I_E, I_C/I_E.",
+      "answer": "10 mA;10.1 mA;0.99",
+      "sourceReferences": [
+        {
+          "pdfPage": 132,
+          "printedPage": 253,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-numerical-03",
+      "exercise": "Unit 17 numerical problems",
+      "question": "CE: R_C=3 kΩ, drop=6 V, α=0.97; find I_B.",
+      "answer": "Printed answer: 2.06×10⁻³ A",
+      "sourceReferences": [
+        {
+          "pdfPage": 132,
+          "printedPage": 253,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-numerical-04",
+      "exercise": "Unit 17 numerical problems",
+      "question": "CB: α=0.96, I_C=60 μA; find I_E.",
+      "answer": "62.5 μA",
+      "sourceReferences": [
+        {
+          "pdfPage": 132,
+          "printedPage": 253,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys17-numerical-05",
+      "exercise": "Unit 17 numerical problems",
+      "question": "I_E=3.5 A, I_C=2.35 A; find I_B.",
+      "answer": "1.15 A",
+      "sourceReferences": [
+        {
+          "pdfPage": 132,
+          "printedPage": 253,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "retireSections": [
+    "17.1",
+    "17.2",
+    "17.3",
+    "17.4",
+    "17.5",
+    "17.6",
+    "17.7",
+    "17.8",
+    "17.9",
+    "17.10"
+  ],
+  "trimSections": [],
+  "retireExercises": []
+}

@@ -1,0 +1,184 @@
+{
+ "pdfPage": 16,
+ "sections": [
+  {
+   "id": "cs12-u1-text-10",
+   "title": "Unit 1 text (10)",
+   "headingUrdu": "یونٹ 1 — متن (۱۰)",
+   "headingPashto": "۱ څپرکی — متن (۱۰)",
+   "paras": [
+    {
+     "text": "Secondary Storage Management",
+     "urdu": "ثانوی اسٹوریج مینجمنٹ",
+     "pashto": "د ثانوي زېرمې اداره"
+    },
+    {
+     "text": "Secondary storage consists of those devices which stores data permanently for a long time. These devices includes tape drives, hard disks, CD and DVD disks, flash memory and other media designed to hold information for long life. The data stored in the secondary storage is accessed in primary storage and then into cache and CPU registers. The data loaded from secondary storage is ordinarily divided into fixed number of bytes or words. The function of operating system is to manage secondary storage devices and handle proper flow of data among primary and secondary storage devices is called secondary storage management.",
+     "urdu": "ثانوی اسٹوریج ان آلات پر مشتمل ہے جو ڈیٹا کو طویل عرصے تک مستقل طور پر محفوظ رکھتے ہیں۔ ان آلات میں ٹیپ ڈرائیوز، ہارڈ ڈسکس، CD اور DVD ڈسکس، فلیش میموری اور دیگر ذرائع شامل ہیں جو معلومات کو طویل مدت تک رکھنے کے لیے بنائے گئے ہیں۔ ثانوی اسٹوریج میں محفوظ ڈیٹا تک پہلے پرائمری اسٹوریج اور پھر کیش اور CPU رجسٹرز میں رسائی ہوتی ہے۔ ثانوی اسٹوریج سے لوڈ ہونے والا ڈیٹا عموماً بائٹس یا الفاظ کی مقررہ تعداد میں تقسیم ہوتا ہے۔ آپریٹنگ سسٹم کا ثانوی اسٹوریج آلات کا انتظام کرنا اور پرائمری اور ثانوی اسٹوریج آلات کے درمیان ڈیٹا کے مناسب بہاؤ کو سنبھالنا ثانوی اسٹوریج مینجمنٹ کہلاتا ہے۔",
+     "pashto": "ثانوي زېرمه له هغو وسایلو جوړه ده چې ډېټا د اوږدې مودې لپاره دایمي ساتي. په دې وسایلو کې د ټېپ ډرایوونه، هارډ ډیسکونه، CD او DVD ډیسکونه، فلش حافظه او نورې رسنۍ شاملې دي چې د اوږدې مودې لپاره د معلوماتو ساتلو ته جوړې شوې. په ثانوي زېرمه کې ساتل شوې ډېټا ته لومړی په لومړنۍ زېرمه او بیا په کیش او د CPU په ثبتونکو کې لاسرسی کېږي. له ثانوي زېرمې پورته شوې ډېټا عموماً په ټاکلي شمېر بایټونو یا کلمو وېشل کېږي. د عملیاتي سیسټم دنده چې ثانوي زېرمې وسایل اداره کړي او د لومړنیو او ثانوي زېرمې وسایلو ترمنځ د ډېټا سم بهیر سمبال کړي، د ثانوي زېرمې اداره بلل کېږي."
+    },
+    {
+     "text": "In storage, each location has an address. The set of all addresses available to a program is called an address space which is managed by the secondary storage management module of the operating system.",
+     "urdu": "اسٹوریج میں ہر مقام کا ایک پتہ ہوتا ہے۔ کسی پروگرام کو دستیاب تمام پتوں کے مجموعے کو ایڈریس اسپیس کہتے ہیں جس کا انتظام آپریٹنگ سسٹم کا ثانوی اسٹوریج مینجمنٹ ماڈیول کرتا ہے۔",
+     "pashto": "په زېرمه کې هر ځای یوه پته لري. یوه پروګرام ته د شته ټولو پتو ټولګې ته د پتې فضا ویل کېږي چې د عملیاتي سیسټم د ثانوي زېرمې د ادارې ماډیول یې اداره کوي."
+    },
+    {
+     "text": "Network management",
+     "urdu": "نیٹ ورک مینجمنٹ",
+     "pashto": "د شبکې اداره"
+    },
+    {
+     "text": "Network management is not a core part of operating system but in modern operating systems network manager has become essential component to efficiently manage network related issues. Almost, all modern operating systems are capable of using transmission control protocol (TCP) and internet protocol (IP) for the network supporting services. The module of operating system that is responsible for sharing resources such as files, printers, and scanners using either wired or wireless connections is called network manager and the process is called network management.",
+     "urdu": "نیٹ ورک مینجمنٹ آپریٹنگ سسٹم کا بنیادی حصہ نہیں لیکن جدید آپریٹنگ سسٹمز میں نیٹ ورک مینیجر نیٹ ورک سے متعلق مسائل کو مؤثر طریقے سے سنبھالنے کے لیے ایک لازمی جز بن گیا ہے۔ تقریباً تمام جدید آپریٹنگ سسٹم نیٹ ورک معاون خدمات کے لیے ٹرانسمیشن کنٹرول پروٹوکول (TCP) اور انٹرنیٹ پروٹوکول (IP) استعمال کرنے کی صلاحیت رکھتے ہیں۔ آپریٹنگ سسٹم کا وہ ماڈیول جو وائرڈ یا وائرلیس کنکشنز کے ذریعے فائلوں، پرنٹرز اور اسکینرز جیسے وسائل کی شراکت کا ذمہ دار ہے نیٹ ورک مینیجر کہلاتا ہے اور اس عمل کو نیٹ ورک مینجمنٹ کہتے ہیں۔",
+     "pashto": "د شبکې اداره د عملیاتي سیسټم اصلي برخه نه ده، خو په نویو عملیاتي سیسټمونو کې د شبکې مدیر د شبکې اړوند مسایلو د اغېزمنې ادارې لپاره اړینه برخه ګرځېدلی. نږدې ټول نوي عملیاتي سیسټمونه د شبکې د ملاتړي خدمتونو لپاره د لېږد کنټرول پروټوکول (TCP) او انټرنېټ پروټوکول (IP) کارولی شي. د عملیاتي سیسټم هغه ماډیول چې د سیمي یا بې‌سیمه نښلونونو له لارې د سرچینو لکه فایلونو، پرنټرونو او سکینرونو د شریکولو مسؤول دی، د شبکې مدیر بلل کېږي او بهیر ته یې د شبکې اداره ویل کېږي."
+    },
+    {
+     "text": "Many operating systems support networking protocols. The most popular network operating systems are Microsoft Windows Server 2003, Microsoft Windows Server 2008, UNIX, Linux, Mac OS X, and Novell NetWare.",
+     "urdu": "بہت سے آپریٹنگ سسٹم نیٹ ورکنگ پروٹوکولز کو سپورٹ کرتے ہیں۔ سب سے مقبول نیٹ ورک آپریٹنگ سسٹم Microsoft Windows Server 2003، Microsoft Windows Server 2008، UNIX، Linux، Mac OS X اور Novell NetWare ہیں۔",
+     "pashto": "ډېر عملیاتي سیسټمونه د شبکې پروټوکولونو ملاتړ کوي. تر ټولو مشهور د شبکې عملیاتي سیسټمونه Microsoft Windows Server 2003، Microsoft Windows Server 2008، UNIX، Linux، Mac OS X او Novell NetWare دي."
+    },
+    {
+     "text": "Protection System",
+     "urdu": "حفاظتی نظام",
+     "pashto": "د ساتنې سیسټم"
+    },
+    {
+     "text": "Nowadays, computer systems have multiple users connected through clients to the server computers. These users concurrently access and execute multiple processes which must be protected against each other so that the processes may not interfere each other data. The module of operating system responsible for this task is called protection system. Protection refers to mechanism for controlling the access of programs, processes, or users to the resources defined by a computer system.",
+     "urdu": "آج کل کمپیوٹر سسٹمز میں متعدد صارفین کلائنٹس کے ذریعے سرور کمپیوٹرز سے جڑے ہوتے ہیں۔ یہ صارفین بیک وقت متعدد پراسیسز تک رسائی حاصل کرتے اور انھیں چلاتے ہیں جنھیں ایک دوسرے سے محفوظ رکھنا ضروری ہے تاکہ پراسیسز ایک دوسرے کے ڈیٹا میں مداخلت نہ کریں۔ آپریٹنگ سسٹم کا اس کام کا ذمہ دار ماڈیول حفاظتی نظام کہلاتا ہے۔ حفاظت سے مراد کمپیوٹر سسٹم کے متعین وسائل تک پروگراموں، پراسیسز یا صارفین کی رسائی کو کنٹرول کرنے کا طریقۂ کار ہے۔",
+     "pashto": "نن ورځ په کمپیوټري سیسټمونو کې ډېر کاروونکي د پېرېدونکو (clients) له لارې له خدمتګار (server) کمپیوټرونو سره نښلول شوي. دا کاروونکي په یو وخت ډېرو پروسو ته لاسرسی لري او اجرا کوي یې، چې باید یو له بل خوندي وساتل شي څو پروسې د یو بل په ډېټا کې لاسوهنه ونه کړي. د عملیاتي سیسټم هغه ماډیول چې د دې دندې مسؤول دی، د ساتنې سیسټم بلل کېږي. ساتنه هغې لارې ته وايي چې د کمپیوټري سیسټم ټاکلو سرچینو ته د پروګرامونو، پروسو یا کاروونکو لاسرسی کنټرولوي."
+    },
+    {
+     "text": "Command interpreter",
+     "urdu": "کمانڈ انٹرپریٹر",
+     "pashto": "د امرونو ژباړونکی"
+    },
+    {
+     "text": "All operating systems need to provide an interface to the users for the communication with the computer. The two commonly used methods, provided by the operating systems, for interfacing are Command Line Interface (CLI) and Graphical User Interface (GUI).",
+     "urdu": "تمام آپریٹنگ سسٹمز کو صارفین کو کمپیوٹر سے رابطے کے لیے ایک انٹرفیس فراہم کرنے کی ضرورت ہوتی ہے۔ آپریٹنگ سسٹمز کی طرف سے فراہم کردہ انٹرفیس کے دو عام طریقے کمانڈ لائن انٹرفیس (CLI) اور گرافیکل یوزر انٹرفیس (GUI) ہیں۔",
+     "pashto": "ټول عملیاتي سیسټمونه باید کاروونکو ته له کمپیوټر سره د اړیکې لپاره منځګړی برابر کړي. د منځګړي لپاره د عملیاتي سیسټمونو له خوا دوه عام کارېدونکې لارې د امر کرښې منځګړی (CLI) او ګرافیکي کاروونکي منځګړی (GUI) دي."
+    },
+    {
+     "text": "A command line interface or CLI is a method of interacting with an operating system or software using a command line interpreter. This command line interpreter may be a text terminal, terminal emulator, or remote shell client.",
+     "urdu": "کمانڈ لائن انٹرفیس یا CLI کمانڈ لائن انٹرپریٹر کے ذریعے آپریٹنگ سسٹم یا سافٹ ویئر سے تعامل کا ایک طریقہ ہے۔ یہ کمانڈ لائن انٹرپریٹر ٹیکسٹ ٹرمینل، ٹرمینل ایمولیٹر یا ریموٹ شیل کلائنٹ ہو سکتا ہے۔",
+     "pashto": "د امر کرښې منځګړی یا CLI د امر کرښې د ژباړونکي په مرسته له عملیاتي سیسټم یا سافټویر سره د تعامل یوه لاره ده. دا ژباړونکی کېدای شي متني ټرمینل، د ټرمینل سیمولېټر یا لرې شېل پېرېدونکی وي."
+    }
+   ],
+   "theory": "Secondary Storage Management\n\nSecondary storage consists of those devices which stores data permanently for a long time. These devices includes tape drives, hard disks, CD and DVD disks, flash memory and other media designed to hold information for long life. The data stored in the secondary storage is accessed in primary storage and then into cache and CPU registers. The data loaded from secondary storage is ordinarily divided into fixed number of bytes or words. The function of operating system is to manage secondary storage devices and handle proper flow of data among primary and secondary storage devices is called secondary storage management.\n\nIn storage, each location has an address. The set of all addresses available to a program is called an address space which is managed by the secondary storage management module of the operating system.\n\nNetwork management\n\nNetwork management is not a core part of operating system but in modern operating systems network manager has become essential component to efficiently manage network related issues. Almost, all modern operating systems are capable of using transmission control protocol (TCP) and internet protocol (IP) for the network supporting services. The module of operating system that is responsible for sharing resources such as files, printers, and scanners using either wired or wireless connections is called network manager and the process is called network management.\n\nMany operating systems support networking protocols. The most popular network operating systems are Microsoft Windows Server 2003, Microsoft Windows Server 2008, UNIX, Linux, Mac OS X, and Novell NetWare.\n\nProtection System\n\nNowadays, computer systems have multiple users connected through clients to the server computers. These users concurrently access and execute multiple processes which must be protected against each other so that the processes may not interfere each other data. The module of operating system responsible for this task is called protection system. Protection refers to mechanism for controlling the access of programs, processes, or users to the resources defined by a computer system.\n\nCommand interpreter\n\nAll operating systems need to provide an interface to the users for the communication with the computer. The two commonly used methods, provided by the operating systems, for interfacing are Command Line Interface (CLI) and Graphical User Interface (GUI).\n\nA command line interface or CLI is a method of interacting with an operating system or software using a command line interpreter. This command line interpreter may be a text terminal, terminal emulator, or remote shell client.",
+   "urdu": "ثانوی اسٹوریج مینجمنٹ\n\nثانوی اسٹوریج ان آلات پر مشتمل ہے جو ڈیٹا کو طویل عرصے تک مستقل طور پر محفوظ رکھتے ہیں۔ ان آلات میں ٹیپ ڈرائیوز، ہارڈ ڈسکس، CD اور DVD ڈسکس، فلیش میموری اور دیگر ذرائع شامل ہیں جو معلومات کو طویل مدت تک رکھنے کے لیے بنائے گئے ہیں۔ ثانوی اسٹوریج میں محفوظ ڈیٹا تک پہلے پرائمری اسٹوریج اور پھر کیش اور CPU رجسٹرز میں رسائی ہوتی ہے۔ ثانوی اسٹوریج سے لوڈ ہونے والا ڈیٹا عموماً بائٹس یا الفاظ کی مقررہ تعداد میں تقسیم ہوتا ہے۔ آپریٹنگ سسٹم کا ثانوی اسٹوریج آلات کا انتظام کرنا اور پرائمری اور ثانوی اسٹوریج آلات کے درمیان ڈیٹا کے مناسب بہاؤ کو سنبھالنا ثانوی اسٹوریج مینجمنٹ کہلاتا ہے۔\n\nاسٹوریج میں ہر مقام کا ایک پتہ ہوتا ہے۔ کسی پروگرام کو دستیاب تمام پتوں کے مجموعے کو ایڈریس اسپیس کہتے ہیں جس کا انتظام آپریٹنگ سسٹم کا ثانوی اسٹوریج مینجمنٹ ماڈیول کرتا ہے۔\n\nنیٹ ورک مینجمنٹ\n\nنیٹ ورک مینجمنٹ آپریٹنگ سسٹم کا بنیادی حصہ نہیں لیکن جدید آپریٹنگ سسٹمز میں نیٹ ورک مینیجر نیٹ ورک سے متعلق مسائل کو مؤثر طریقے سے سنبھالنے کے لیے ایک لازمی جز بن گیا ہے۔ تقریباً تمام جدید آپریٹنگ سسٹم نیٹ ورک معاون خدمات کے لیے ٹرانسمیشن کنٹرول پروٹوکول (TCP) اور انٹرنیٹ پروٹوکول (IP) استعمال کرنے کی صلاحیت رکھتے ہیں۔ آپریٹنگ سسٹم کا وہ ماڈیول جو وائرڈ یا وائرلیس کنکشنز کے ذریعے فائلوں، پرنٹرز اور اسکینرز جیسے وسائل کی شراکت کا ذمہ دار ہے نیٹ ورک مینیجر کہلاتا ہے اور اس عمل کو نیٹ ورک مینجمنٹ کہتے ہیں۔\n\nبہت سے آپریٹنگ سسٹم نیٹ ورکنگ پروٹوکولز کو سپورٹ کرتے ہیں۔ سب سے مقبول نیٹ ورک آپریٹنگ سسٹم Microsoft Windows Server 2003، Microsoft Windows Server 2008، UNIX، Linux، Mac OS X اور Novell NetWare ہیں۔\n\nحفاظتی نظام\n\nآج کل کمپیوٹر سسٹمز میں متعدد صارفین کلائنٹس کے ذریعے سرور کمپیوٹرز سے جڑے ہوتے ہیں۔ یہ صارفین بیک وقت متعدد پراسیسز تک رسائی حاصل کرتے اور انھیں چلاتے ہیں جنھیں ایک دوسرے سے محفوظ رکھنا ضروری ہے تاکہ پراسیسز ایک دوسرے کے ڈیٹا میں مداخلت نہ کریں۔ آپریٹنگ سسٹم کا اس کام کا ذمہ دار ماڈیول حفاظتی نظام کہلاتا ہے۔ حفاظت سے مراد کمپیوٹر سسٹم کے متعین وسائل تک پروگراموں، پراسیسز یا صارفین کی رسائی کو کنٹرول کرنے کا طریقۂ کار ہے۔\n\nکمانڈ انٹرپریٹر\n\nتمام آپریٹنگ سسٹمز کو صارفین کو کمپیوٹر سے رابطے کے لیے ایک انٹرفیس فراہم کرنے کی ضرورت ہوتی ہے۔ آپریٹنگ سسٹمز کی طرف سے فراہم کردہ انٹرفیس کے دو عام طریقے کمانڈ لائن انٹرفیس (CLI) اور گرافیکل یوزر انٹرفیس (GUI) ہیں۔\n\nکمانڈ لائن انٹرفیس یا CLI کمانڈ لائن انٹرپریٹر کے ذریعے آپریٹنگ سسٹم یا سافٹ ویئر سے تعامل کا ایک طریقہ ہے۔ یہ کمانڈ لائن انٹرپریٹر ٹیکسٹ ٹرمینل، ٹرمینل ایمولیٹر یا ریموٹ شیل کلائنٹ ہو سکتا ہے۔",
+   "pashto": "د ثانوي زېرمې اداره\n\nثانوي زېرمه له هغو وسایلو جوړه ده چې ډېټا د اوږدې مودې لپاره دایمي ساتي. په دې وسایلو کې د ټېپ ډرایوونه، هارډ ډیسکونه، CD او DVD ډیسکونه، فلش حافظه او نورې رسنۍ شاملې دي چې د اوږدې مودې لپاره د معلوماتو ساتلو ته جوړې شوې. په ثانوي زېرمه کې ساتل شوې ډېټا ته لومړی په لومړنۍ زېرمه او بیا په کیش او د CPU په ثبتونکو کې لاسرسی کېږي. له ثانوي زېرمې پورته شوې ډېټا عموماً په ټاکلي شمېر بایټونو یا کلمو وېشل کېږي. د عملیاتي سیسټم دنده چې ثانوي زېرمې وسایل اداره کړي او د لومړنیو او ثانوي زېرمې وسایلو ترمنځ د ډېټا سم بهیر سمبال کړي، د ثانوي زېرمې اداره بلل کېږي.\n\nپه زېرمه کې هر ځای یوه پته لري. یوه پروګرام ته د شته ټولو پتو ټولګې ته د پتې فضا ویل کېږي چې د عملیاتي سیسټم د ثانوي زېرمې د ادارې ماډیول یې اداره کوي.\n\nد شبکې اداره\n\nد شبکې اداره د عملیاتي سیسټم اصلي برخه نه ده، خو په نویو عملیاتي سیسټمونو کې د شبکې مدیر د شبکې اړوند مسایلو د اغېزمنې ادارې لپاره اړینه برخه ګرځېدلی. نږدې ټول نوي عملیاتي سیسټمونه د شبکې د ملاتړي خدمتونو لپاره د لېږد کنټرول پروټوکول (TCP) او انټرنېټ پروټوکول (IP) کارولی شي. د عملیاتي سیسټم هغه ماډیول چې د سیمي یا بې‌سیمه نښلونونو له لارې د سرچینو لکه فایلونو، پرنټرونو او سکینرونو د شریکولو مسؤول دی، د شبکې مدیر بلل کېږي او بهیر ته یې د شبکې اداره ویل کېږي.\n\nډېر عملیاتي سیسټمونه د شبکې پروټوکولونو ملاتړ کوي. تر ټولو مشهور د شبکې عملیاتي سیسټمونه Microsoft Windows Server 2003، Microsoft Windows Server 2008، UNIX، Linux، Mac OS X او Novell NetWare دي.\n\nد ساتنې سیسټم\n\nنن ورځ په کمپیوټري سیسټمونو کې ډېر کاروونکي د پېرېدونکو (clients) له لارې له خدمتګار (server) کمپیوټرونو سره نښلول شوي. دا کاروونکي په یو وخت ډېرو پروسو ته لاسرسی لري او اجرا کوي یې، چې باید یو له بل خوندي وساتل شي څو پروسې د یو بل په ډېټا کې لاسوهنه ونه کړي. د عملیاتي سیسټم هغه ماډیول چې د دې دندې مسؤول دی، د ساتنې سیسټم بلل کېږي. ساتنه هغې لارې ته وايي چې د کمپیوټري سیسټم ټاکلو سرچینو ته د پروګرامونو، پروسو یا کاروونکو لاسرسی کنټرولوي.\n\nد امرونو ژباړونکی\n\nټول عملیاتي سیسټمونه باید کاروونکو ته له کمپیوټر سره د اړیکې لپاره منځګړی برابر کړي. د منځګړي لپاره د عملیاتي سیسټمونو له خوا دوه عام کارېدونکې لارې د امر کرښې منځګړی (CLI) او ګرافیکي کاروونکي منځګړی (GUI) دي.\n\nد امر کرښې منځګړی یا CLI د امر کرښې د ژباړونکي په مرسته له عملیاتي سیسټم یا سافټویر سره د تعامل یوه لاره ده. دا ژباړونکی کېدای شي متني ټرمینل، د ټرمینل سیمولېټر یا لرې شېل پېرېدونکی وي.",
+   "theoryUrdu": "ثانوی اسٹوریج مینجمنٹ\n\nثانوی اسٹوریج ان آلات پر مشتمل ہے جو ڈیٹا کو طویل عرصے تک مستقل طور پر محفوظ رکھتے ہیں۔ ان آلات میں ٹیپ ڈرائیوز، ہارڈ ڈسکس، CD اور DVD ڈسکس، فلیش میموری اور دیگر ذرائع شامل ہیں جو معلومات کو طویل مدت تک رکھنے کے لیے بنائے گئے ہیں۔ ثانوی اسٹوریج میں محفوظ ڈیٹا تک پہلے پرائمری اسٹوریج اور پھر کیش اور CPU رجسٹرز میں رسائی ہوتی ہے۔ ثانوی اسٹوریج سے لوڈ ہونے والا ڈیٹا عموماً بائٹس یا الفاظ کی مقررہ تعداد میں تقسیم ہوتا ہے۔ آپریٹنگ سسٹم کا ثانوی اسٹوریج آلات کا انتظام کرنا اور پرائمری اور ثانوی اسٹوریج آلات کے درمیان ڈیٹا کے مناسب بہاؤ کو سنبھالنا ثانوی اسٹوریج مینجمنٹ کہلاتا ہے۔\n\nاسٹوریج میں ہر مقام کا ایک پتہ ہوتا ہے۔ کسی پروگرام کو دستیاب تمام پتوں کے مجموعے کو ایڈریس اسپیس کہتے ہیں جس کا انتظام آپریٹنگ سسٹم کا ثانوی اسٹوریج مینجمنٹ ماڈیول کرتا ہے۔\n\nنیٹ ورک مینجمنٹ\n\nنیٹ ورک مینجمنٹ آپریٹنگ سسٹم کا بنیادی حصہ نہیں لیکن جدید آپریٹنگ سسٹمز میں نیٹ ورک مینیجر نیٹ ورک سے متعلق مسائل کو مؤثر طریقے سے سنبھالنے کے لیے ایک لازمی جز بن گیا ہے۔ تقریباً تمام جدید آپریٹنگ سسٹم نیٹ ورک معاون خدمات کے لیے ٹرانسمیشن کنٹرول پروٹوکول (TCP) اور انٹرنیٹ پروٹوکول (IP) استعمال کرنے کی صلاحیت رکھتے ہیں۔ آپریٹنگ سسٹم کا وہ ماڈیول جو وائرڈ یا وائرلیس کنکشنز کے ذریعے فائلوں، پرنٹرز اور اسکینرز جیسے وسائل کی شراکت کا ذمہ دار ہے نیٹ ورک مینیجر کہلاتا ہے اور اس عمل کو نیٹ ورک مینجمنٹ کہتے ہیں۔\n\nبہت سے آپریٹنگ سسٹم نیٹ ورکنگ پروٹوکولز کو سپورٹ کرتے ہیں۔ سب سے مقبول نیٹ ورک آپریٹنگ سسٹم Microsoft Windows Server 2003، Microsoft Windows Server 2008، UNIX، Linux، Mac OS X اور Novell NetWare ہیں۔\n\nحفاظتی نظام\n\nآج کل کمپیوٹر سسٹمز میں متعدد صارفین کلائنٹس کے ذریعے سرور کمپیوٹرز سے جڑے ہوتے ہیں۔ یہ صارفین بیک وقت متعدد پراسیسز تک رسائی حاصل کرتے اور انھیں چلاتے ہیں جنھیں ایک دوسرے سے محفوظ رکھنا ضروری ہے تاکہ پراسیسز ایک دوسرے کے ڈیٹا میں مداخلت نہ کریں۔ آپریٹنگ سسٹم کا اس کام کا ذمہ دار ماڈیول حفاظتی نظام کہلاتا ہے۔ حفاظت سے مراد کمپیوٹر سسٹم کے متعین وسائل تک پروگراموں، پراسیسز یا صارفین کی رسائی کو کنٹرول کرنے کا طریقۂ کار ہے۔\n\nکمانڈ انٹرپریٹر\n\nتمام آپریٹنگ سسٹمز کو صارفین کو کمپیوٹر سے رابطے کے لیے ایک انٹرفیس فراہم کرنے کی ضرورت ہوتی ہے۔ آپریٹنگ سسٹمز کی طرف سے فراہم کردہ انٹرفیس کے دو عام طریقے کمانڈ لائن انٹرفیس (CLI) اور گرافیکل یوزر انٹرفیس (GUI) ہیں۔\n\nکمانڈ لائن انٹرفیس یا CLI کمانڈ لائن انٹرپریٹر کے ذریعے آپریٹنگ سسٹم یا سافٹ ویئر سے تعامل کا ایک طریقہ ہے۔ یہ کمانڈ لائن انٹرپریٹر ٹیکسٹ ٹرمینل، ٹرمینل ایمولیٹر یا ریموٹ شیل کلائنٹ ہو سکتا ہے۔",
+   "theoryPashto": "د ثانوي زېرمې اداره\n\nثانوي زېرمه له هغو وسایلو جوړه ده چې ډېټا د اوږدې مودې لپاره دایمي ساتي. په دې وسایلو کې د ټېپ ډرایوونه، هارډ ډیسکونه، CD او DVD ډیسکونه، فلش حافظه او نورې رسنۍ شاملې دي چې د اوږدې مودې لپاره د معلوماتو ساتلو ته جوړې شوې. په ثانوي زېرمه کې ساتل شوې ډېټا ته لومړی په لومړنۍ زېرمه او بیا په کیش او د CPU په ثبتونکو کې لاسرسی کېږي. له ثانوي زېرمې پورته شوې ډېټا عموماً په ټاکلي شمېر بایټونو یا کلمو وېشل کېږي. د عملیاتي سیسټم دنده چې ثانوي زېرمې وسایل اداره کړي او د لومړنیو او ثانوي زېرمې وسایلو ترمنځ د ډېټا سم بهیر سمبال کړي، د ثانوي زېرمې اداره بلل کېږي.\n\nپه زېرمه کې هر ځای یوه پته لري. یوه پروګرام ته د شته ټولو پتو ټولګې ته د پتې فضا ویل کېږي چې د عملیاتي سیسټم د ثانوي زېرمې د ادارې ماډیول یې اداره کوي.\n\nد شبکې اداره\n\nد شبکې اداره د عملیاتي سیسټم اصلي برخه نه ده، خو په نویو عملیاتي سیسټمونو کې د شبکې مدیر د شبکې اړوند مسایلو د اغېزمنې ادارې لپاره اړینه برخه ګرځېدلی. نږدې ټول نوي عملیاتي سیسټمونه د شبکې د ملاتړي خدمتونو لپاره د لېږد کنټرول پروټوکول (TCP) او انټرنېټ پروټوکول (IP) کارولی شي. د عملیاتي سیسټم هغه ماډیول چې د سیمي یا بې‌سیمه نښلونونو له لارې د سرچینو لکه فایلونو، پرنټرونو او سکینرونو د شریکولو مسؤول دی، د شبکې مدیر بلل کېږي او بهیر ته یې د شبکې اداره ویل کېږي.\n\nډېر عملیاتي سیسټمونه د شبکې پروټوکولونو ملاتړ کوي. تر ټولو مشهور د شبکې عملیاتي سیسټمونه Microsoft Windows Server 2003، Microsoft Windows Server 2008، UNIX، Linux، Mac OS X او Novell NetWare دي.\n\nد ساتنې سیسټم\n\nنن ورځ په کمپیوټري سیسټمونو کې ډېر کاروونکي د پېرېدونکو (clients) له لارې له خدمتګار (server) کمپیوټرونو سره نښلول شوي. دا کاروونکي په یو وخت ډېرو پروسو ته لاسرسی لري او اجرا کوي یې، چې باید یو له بل خوندي وساتل شي څو پروسې د یو بل په ډېټا کې لاسوهنه ونه کړي. د عملیاتي سیسټم هغه ماډیول چې د دې دندې مسؤول دی، د ساتنې سیسټم بلل کېږي. ساتنه هغې لارې ته وايي چې د کمپیوټري سیسټم ټاکلو سرچینو ته د پروګرامونو، پروسو یا کاروونکو لاسرسی کنټرولوي.\n\nد امرونو ژباړونکی\n\nټول عملیاتي سیسټمونه باید کاروونکو ته له کمپیوټر سره د اړیکې لپاره منځګړی برابر کړي. د منځګړي لپاره د عملیاتي سیسټمونو له خوا دوه عام کارېدونکې لارې د امر کرښې منځګړی (CLI) او ګرافیکي کاروونکي منځګړی (GUI) دي.\n\nد امر کرښې منځګړی یا CLI د امر کرښې د ژباړونکي په مرسته له عملیاتي سیسټم یا سافټویر سره د تعامل یوه لاره ده. دا ژباړونکی کېدای شي متني ټرمینل، د ټرمینل سیمولېټر یا لرې شېل پېرېدونکی وي.",
+   "content": "<p>Secondary Storage Management</p><p>Secondary storage consists of those devices which stores data permanently for a long time. These devices includes tape drives, hard disks, CD and DVD disks, flash memory and other media designed to hold information for long life. The data stored in the secondary storage is accessed in primary storage and then into cache and CPU registers. The data loaded from secondary storage is ordinarily divided into fixed number of bytes or words. The function of operating system is to manage secondary storage devices and handle proper flow of data among primary and secondary storage devices is called secondary storage management.</p><p>In storage, each location has an address. The set of all addresses available to a program is called an address space which is managed by the secondary storage management module of the operating system.</p><p>Network management</p><p>Network management is not a core part of operating system but in modern operating systems network manager has become essential component to efficiently manage network related issues. Almost, all modern operating systems are capable of using transmission control protocol (TCP) and internet protocol (IP) for the network supporting services. The module of operating system that is responsible for sharing resources such as files, printers, and scanners using either wired or wireless connections is called network manager and the process is called network management.</p><p>Many operating systems support networking protocols. The most popular network operating systems are Microsoft Windows Server 2003, Microsoft Windows Server 2008, UNIX, Linux, Mac OS X, and Novell NetWare.</p><p>Protection System</p><p>Nowadays, computer systems have multiple users connected through clients to the server computers. These users concurrently access and execute multiple processes which must be protected against each other so that the processes may not interfere each other data. The module of operating system responsible for this task is called protection system. Protection refers to mechanism for controlling the access of programs, processes, or users to the resources defined by a computer system.</p><p>Command interpreter</p><p>All operating systems need to provide an interface to the users for the communication with the computer. The two commonly used methods, provided by the operating systems, for interfacing are Command Line Interface (CLI) and Graphical User Interface (GUI).</p><p>A command line interface or CLI is a method of interacting with an operating system or software using a command line interpreter. This command line interpreter may be a text terminal, terminal emulator, or remote shell client.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-1-9"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-1-9",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 346\" role=\"img\" aria-label=\"Figure 1.9 Device Drivers and Operating System\"><rect width=\"460\" height=\"346\" fill=\"#ffffff\"/><rect x=\"65\" y=\"14\" width=\"90\" height=\"34\" fill=\"#ffffff\" stroke=\"#f08a24\" stroke-width=\"3\"/><text x=\"110\" y=\"37\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">User 1</text><line x1=\"110\" y1=\"48\" x2=\"110\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"165\" y=\"14\" width=\"90\" height=\"34\" fill=\"#ffffff\" stroke=\"#f08a24\" stroke-width=\"3\"/><text x=\"210\" y=\"37\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">User 2</text><line x1=\"210\" y1=\"48\" x2=\"210\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"285\" y=\"14\" width=\"90\" height=\"34\" fill=\"#ffffff\" stroke=\"#f08a24\" stroke-width=\"3\"/><text x=\"330\" y=\"37\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">User n</text><line x1=\"330\" y1=\"48\" x2=\"330\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"272\" y=\"36\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">- -</text><rect x=\"80\" y=\"70\" width=\"300\" height=\"40\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"95.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Application Programs</text><line x1=\"230\" y1=\"110\" x2=\"230\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"80\" y=\"132\" width=\"300\" height=\"40\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"157.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Operating System</text><line x1=\"230\" y1=\"172\" x2=\"230\" y2=\"194\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"80\" y=\"194\" width=\"300\" height=\"50\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"224.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Drivers</text><rect x=\"200\" y=\"244\" width=\"60\" height=\"22\" fill=\"#f08a24\"/><rect x=\"80\" y=\"266\" width=\"300\" height=\"40\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"291.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Hardwares</text><text x=\"230.0\" y=\"332\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" font-family=\"sans-serif\">Figure 1.9 Device Drivers and Operating System</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 346\" role=\"img\" aria-label=\"شکل 1.9 ڈیوائس ڈرائیورز اور آپریٹنگ سسٹم\"><rect width=\"460\" height=\"346\" fill=\"#ffffff\"/><rect x=\"65\" y=\"14\" width=\"90\" height=\"34\" fill=\"#ffffff\" stroke=\"#f08a24\" stroke-width=\"3\"/><text x=\"110\" y=\"37\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">صارف 1</text><line x1=\"110\" y1=\"48\" x2=\"110\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"165\" y=\"14\" width=\"90\" height=\"34\" fill=\"#ffffff\" stroke=\"#f08a24\" stroke-width=\"3\"/><text x=\"210\" y=\"37\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">صارف 2</text><line x1=\"210\" y1=\"48\" x2=\"210\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"285\" y=\"14\" width=\"90\" height=\"34\" fill=\"#ffffff\" stroke=\"#f08a24\" stroke-width=\"3\"/><text x=\"330\" y=\"37\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">صارف n</text><line x1=\"330\" y1=\"48\" x2=\"330\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"272\" y=\"36\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">- -</text><rect x=\"80\" y=\"70\" width=\"300\" height=\"40\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"95.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">ایپلیکیشن پروگرامز</text><line x1=\"230\" y1=\"110\" x2=\"230\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"80\" y=\"132\" width=\"300\" height=\"40\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"157.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">آپریٹنگ سسٹم</text><line x1=\"230\" y1=\"172\" x2=\"230\" y2=\"194\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"80\" y=\"194\" width=\"300\" height=\"50\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"224.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">ڈرائیورز</text><rect x=\"200\" y=\"244\" width=\"60\" height=\"22\" fill=\"#f08a24\"/><rect x=\"80\" y=\"266\" width=\"300\" height=\"40\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"291.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">ہارڈویئر</text><text x=\"230.0\" y=\"332\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" font-family=\"sans-serif\">شکل 1.9 ڈیوائس ڈرائیورز اور آپریٹنگ سسٹم</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 346\" role=\"img\" aria-label=\"۱.۹ شکل: د وسایلو چلوونکي او عملیاتي سیسټم\"><rect width=\"460\" height=\"346\" fill=\"#ffffff\"/><rect x=\"65\" y=\"14\" width=\"90\" height=\"34\" fill=\"#ffffff\" stroke=\"#f08a24\" stroke-width=\"3\"/><text x=\"110\" y=\"37\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">کاروونکی ۱</text><line x1=\"110\" y1=\"48\" x2=\"110\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"165\" y=\"14\" width=\"90\" height=\"34\" fill=\"#ffffff\" stroke=\"#f08a24\" stroke-width=\"3\"/><text x=\"210\" y=\"37\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">کاروونکی ۲</text><line x1=\"210\" y1=\"48\" x2=\"210\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"285\" y=\"14\" width=\"90\" height=\"34\" fill=\"#ffffff\" stroke=\"#f08a24\" stroke-width=\"3\"/><text x=\"330\" y=\"37\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">کاروونکی n</text><line x1=\"330\" y1=\"48\" x2=\"330\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"272\" y=\"36\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">- -</text><rect x=\"80\" y=\"70\" width=\"300\" height=\"40\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"95.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">کاريال پروګرامونه</text><line x1=\"230\" y1=\"110\" x2=\"230\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"80\" y=\"132\" width=\"300\" height=\"40\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"157.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">عملیاتي سیسټم</text><line x1=\"230\" y1=\"172\" x2=\"230\" y2=\"194\" stroke=\"#1e293b\" stroke-width=\"2\"/><rect x=\"80\" y=\"194\" width=\"300\" height=\"50\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"224.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">چلوونکي (Drivers)</text><rect x=\"200\" y=\"244\" width=\"60\" height=\"22\" fill=\"#f08a24\"/><rect x=\"80\" y=\"266\" width=\"300\" height=\"40\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"230\" y=\"291.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">هارډویر</text><text x=\"230.0\" y=\"332\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e3a8a\" font-family=\"sans-serif\">۱.۹ شکل: د وسایلو چلوونکي او عملیاتي سیسټم</text></svg>",
+     "sourceWidthRatio": 1.329479768786127
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 16,
+     "printedPages": [
+      20,
+      21
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 1 text (10)",
+   "sourcePageLabel": "PDF 16 · p. 20–21",
+   "sourceNote": "Figure 1.9 is reproduced as a coded diagram.",
+   "unit": 1
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf016",
+   "unit": 1,
+   "printedPage": 20,
+   "description": "p.20 prints “devices which stores data”, “These devices includes”; p.21 “interfere each other data”, “Protection refers to mechanism”. Retained as printed. Owner pen circling excluded."
+  }
+ ],
+ "completeUnits": []
+}

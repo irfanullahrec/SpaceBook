@@ -1,0 +1,266 @@
+{
+ "pdfPage": 121,
+ "sections": [
+  {
+   "id": "cs12-u8-text-2",
+   "title": "Unit 8 text (2)",
+   "headingUrdu": "یونٹ 8 — متن (2)",
+   "headingPashto": "۸ څپرکی — متن (2)",
+   "paras": [
+    {
+     "text": "Two data members x and y of type int with private access specifier and two member functions with public access; set_values () and area (). In this example, only declarations for the member functions has given and not their definitions.",
+     "urdu": "int قسم کے دو ڈیٹا ممبرز x اور y، private ایکسس اسپیسیفائر کے ساتھ، اور public رسائی والے دو ممبر فنکشنز set_values () اور area ()۔ اس مثال میں ممبر فنکشنز کی صرف ڈکلیریشنز دی گئی ہیں، ان کی تعریفیں نہیں۔",
+     "pashto": "د int ډول دوه د ډېټا غړي x او y د private لاسرسي ټاکونکي سره، او د public لاسرسي دوه غړي فنکشنونه set_values () او area (). په دې بېلګه کې د غړو فنکشنونو یوازې اعلانونه ورکړل شوي، تعریفونه یې نه."
+    },
+    {
+     "text": "b. Object",
+     "urdu": "b. آبجیکٹ",
+     "pashto": "b. شی"
+    },
+    {
+     "text": "A variable of type class is called object. In C++, when we declare a variable of type class, we call it instantiating the class and the variable itself is called an instance or object of that class. Object is of great importance in OOP, because, a class cannot be used without creating its object. The general syntax for creating an object of a class is given below.",
+     "urdu": "کلاس قسم کا ویری ایبل آبجیکٹ کہلاتا ہے۔ C++ میں جب ہم کلاس قسم کا ویری ایبل ڈکلیئر کرتے ہیں تو اسے کلاس کا انسٹینشی ایٹ کرنا کہتے ہیں اور خود ویری ایبل اس کلاس کا انسٹینس یا آبجیکٹ کہلاتا ہے۔ OOP میں آبجیکٹ کی بڑی اہمیت ہے کیونکہ کلاس کو اس کا آبجیکٹ بنائے بغیر استعمال نہیں کیا جا سکتا۔ کلاس کا آبجیکٹ بنانے کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔",
+     "pashto": "د ټولګي ډول متغیر شی (object) بلل کېږي. په C++ کې کله چې د ټولګي ډول متغیر اعلان کړو، دې ته د ټولګي نمونه‌جوړول وایو او پخپله متغیر د هغه ټولګي نمونه یا شی بلل کېږي. په OOP کې شی ډېر اهمیت لري ځکه ټولګی د خپل شي له جوړولو پرته نه شي کارېدای. د یوه ټولګي د شي د جوړولو عمومي بڼه لاندې ورکړل شوې."
+    },
+    {
+     "text": "Class_name Object_name;",
+     "urdu": "Class_name Object_name;",
+     "pashto": "Class_name Object_name;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Thus, for the above class CRectangle, the object can be created as follows:",
+     "urdu": "یوں اوپر کی کلاس CRectangle کے لیے آبجیکٹ یوں بنایا جا سکتا ہے:",
+     "pashto": "نو د پورته CRectangle ټولګي لپاره شی داسې جوړېدای شي:"
+    },
+    {
+     "text": "CRectangle R1;",
+     "urdu": "CRectangle R1;",
+     "pashto": "CRectangle R1;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "We can also create more than one objects in a single statement like:",
+     "urdu": "ہم ایک ہی بیان میں ایک سے زیادہ آبجیکٹس بھی بنا سکتے ہیں جیسے:",
+     "pashto": "موږ کولی شو په یوه بیان کې له یوه ډېر شیان هم جوړ کړو لکه:"
+    },
+    {
+     "text": "CRectangle R1, R2, R3;",
+     "urdu": "CRectangle R1, R2, R3;",
+     "pashto": "CRectangle R1, R2, R3;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, R1, R2, R3 are the objects of the same class CRectangle that share the same data member and member functions. The definition of a class does not occupy any memory. It only defines what the class looks like. In order to use a class, a variable of that class type must be declared. When an object is created then memory is set aside for all the data members and member functions of that class.",
+     "urdu": "یہاں R1، R2، R3 ایک ہی کلاس CRectangle کے آبجیکٹس ہیں جو ایک جیسے ڈیٹا ممبر اور ممبر فنکشنز رکھتے ہیں۔ کلاس کی تعریف کوئی میموری نہیں لیتی۔ یہ صرف بتاتی ہے کہ کلاس کیسی ہے۔ کلاس استعمال کرنے کے لیے اس کلاس قسم کا ویری ایبل ڈکلیئر کرنا ضروری ہے۔ جب آبجیکٹ بنتا ہے تو اس کلاس کے تمام ڈیٹا ممبرز اور ممبر فنکشنز کے لیے میموری مختص ہو جاتی ہے۔",
+     "pashto": "دلته R1، R2، R3 د یو ټولګي CRectangle شیان دي چې ورته د ډېټا غړی او غړي فنکشنونه شریکوي. د ټولګي تعریف هېڅ حافظه نه نیسي. یوازې ټاکي چې ټولګی څنګه ښکاري. د ټولګي د کارولو لپاره باید د هغه ټولګي ډول متغیر اعلان شي. کله چې شی جوړ شي، د هغه ټولګي د ټولو ډېټا غړو او غړو فنکشنونو لپاره حافظه ځانګړې کېږي."
+    },
+    {
+     "text": "The following program demonstrates the concept of class in C++ and creation of object.",
+     "urdu": "درج ذیل پروگرام C++ میں کلاس کا تصور اور آبجیکٹ کی تخلیق واضح کرتا ہے۔",
+     "pashto": "لاندې پروګرام په C++ کې د ټولګي مفهوم او د شي جوړول ښيي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nclass Test\n{\npublic:\nvoid print()\n{\ncout<< “Welcome to the class”;\n}\n}; //End of the class Test\nint main()\n{\nTest t1; // Object creation\nt1.print();//call to print() function\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nclass Test\n{\npublic:\nvoid print()\n{\ncout<< “Welcome to the class”;\n}\n}; //End of the class Test\nint main()\n{\nTest t1; // Object creation\nt1.print();//call to print() function\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nclass Test\n{\npublic:\nvoid print()\n{\ncout<< “Welcome to the class”;\n}\n}; //End of the class Test\nint main()\n{\nTest t1; // Object creation\nt1.print();//call to print() function\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Welcome to the class",
+     "urdu": "Welcome to the class",
+     "pashto": "Welcome to the class",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Accessing Members of a Class",
+     "urdu": "کلاس کے اراکین تک رسائی",
+     "pashto": "د ټولګي غړو ته لاسرسی"
+    },
+    {
+     "text": "Data members and member functions of a class can be accessed in the main program (i.e. main function) by using the object of that class, and dot operator (.) followed by the name of the member i.e. object member.",
+     "urdu": "کلاس کے ڈیٹا ممبرز اور ممبر فنکشنز تک main پروگرام (یعنی main فنکشن) میں اس کلاس کے آبجیکٹ اور ڈاٹ آپریٹر (.) کے بعد ممبر کا نام لکھ کر یعنی object member سے رسائی ہو سکتی ہے۔",
+     "pashto": "د ټولګي د ډېټا غړو او غړو فنکشنونو ته په main پروګرام (یعنې main فنکشن) کې د هغه ټولګي د شي او د ټکي چلونکي (.) وروسته د غړي د نوم په لیکلو، یعنې object member، لاسرسی کېدای شي."
+    },
+    {
+     "text": "For example, in the above program, the member function print() is accessed by using the following statement:",
+     "urdu": "مثلاً اوپر کے پروگرام میں ممبر فنکشن print() تک درج ذیل بیان سے رسائی کی گئی ہے:",
+     "pashto": "د بېلګې په توګه په پورته پروګرام کې print() غړي فنکشن ته د لاندې بیان په مرسته لاسرسی شوی:"
+    },
+    {
+     "text": "t1.print ();",
+     "urdu": "t1.print ();",
+     "pashto": "t1.print ();",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Similarly a data member can be accessed as object_name data member with private data member and public functions.",
+     "urdu": "اسی طرح ڈیٹا ممبر تک private ڈیٹا ممبر اور public فنکشنز کے ساتھ object_name data member کے طور پر رسائی ہو سکتی ہے۔",
+     "pashto": "همداراز د ډېټا غړي ته د private ډېټا غړي او public فنکشنونو سره د object_name data member په توګه لاسرسی کېدای شي."
+    },
+    {
+     "text": "The following program implement the class CRectangle discussed above.",
+     "urdu": "درج ذیل پروگرام اوپر زیرِ بحث کلاس CRectangle کو نافذ کرتا ہے۔",
+     "pashto": "لاندې پروګرام پورته یاد شوی CRectangle ټولګی پلي کوي."
+    }
+   ],
+   "theory": "Two data members x and y of type int with private access specifier and two member functions with public access; set_values () and area (). In this example, only declarations for the member functions has given and not their definitions.\n\nb. Object\n\nA variable of type class is called object. In C++, when we declare a variable of type class, we call it instantiating the class and the variable itself is called an instance or object of that class. Object is of great importance in OOP, because, a class cannot be used without creating its object. The general syntax for creating an object of a class is given below.\n\nClass_name Object_name;\n\nThus, for the above class CRectangle, the object can be created as follows:\n\nCRectangle R1;\n\nWe can also create more than one objects in a single statement like:\n\nCRectangle R1, R2, R3;\n\nHere, R1, R2, R3 are the objects of the same class CRectangle that share the same data member and member functions. The definition of a class does not occupy any memory. It only defines what the class looks like. In order to use a class, a variable of that class type must be declared. When an object is created then memory is set aside for all the data members and member functions of that class.\n\nThe following program demonstrates the concept of class in C++ and creation of object.\n\n#include <iostream.h>\n#include <conio.h>\nclass Test\n{\npublic:\nvoid print()\n{\ncout<< “Welcome to the class”;\n}\n}; //End of the class Test\nint main()\n{\nTest t1; // Object creation\nt1.print();//call to print() function\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nWelcome to the class\n\nAccessing Members of a Class\n\nData members and member functions of a class can be accessed in the main program (i.e. main function) by using the object of that class, and dot operator (.) followed by the name of the member i.e. object member.\n\nFor example, in the above program, the member function print() is accessed by using the following statement:\n\nt1.print ();\n\nSimilarly a data member can be accessed as object_name data member with private data member and public functions.\n\nThe following program implement the class CRectangle discussed above.",
+   "urdu": "int قسم کے دو ڈیٹا ممبرز x اور y، private ایکسس اسپیسیفائر کے ساتھ، اور public رسائی والے دو ممبر فنکشنز set_values () اور area ()۔ اس مثال میں ممبر فنکشنز کی صرف ڈکلیریشنز دی گئی ہیں، ان کی تعریفیں نہیں۔\n\nb. آبجیکٹ\n\nکلاس قسم کا ویری ایبل آبجیکٹ کہلاتا ہے۔ C++ میں جب ہم کلاس قسم کا ویری ایبل ڈکلیئر کرتے ہیں تو اسے کلاس کا انسٹینشی ایٹ کرنا کہتے ہیں اور خود ویری ایبل اس کلاس کا انسٹینس یا آبجیکٹ کہلاتا ہے۔ OOP میں آبجیکٹ کی بڑی اہمیت ہے کیونکہ کلاس کو اس کا آبجیکٹ بنائے بغیر استعمال نہیں کیا جا سکتا۔ کلاس کا آبجیکٹ بنانے کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔\n\nClass_name Object_name;\n\nیوں اوپر کی کلاس CRectangle کے لیے آبجیکٹ یوں بنایا جا سکتا ہے:\n\nCRectangle R1;\n\nہم ایک ہی بیان میں ایک سے زیادہ آبجیکٹس بھی بنا سکتے ہیں جیسے:\n\nCRectangle R1, R2, R3;\n\nیہاں R1، R2، R3 ایک ہی کلاس CRectangle کے آبجیکٹس ہیں جو ایک جیسے ڈیٹا ممبر اور ممبر فنکشنز رکھتے ہیں۔ کلاس کی تعریف کوئی میموری نہیں لیتی۔ یہ صرف بتاتی ہے کہ کلاس کیسی ہے۔ کلاس استعمال کرنے کے لیے اس کلاس قسم کا ویری ایبل ڈکلیئر کرنا ضروری ہے۔ جب آبجیکٹ بنتا ہے تو اس کلاس کے تمام ڈیٹا ممبرز اور ممبر فنکشنز کے لیے میموری مختص ہو جاتی ہے۔\n\nدرج ذیل پروگرام C++ میں کلاس کا تصور اور آبجیکٹ کی تخلیق واضح کرتا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nclass Test\n{\npublic:\nvoid print()\n{\ncout<< “Welcome to the class”;\n}\n}; //End of the class Test\nint main()\n{\nTest t1; // Object creation\nt1.print();//call to print() function\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome to the class\n\nکلاس کے اراکین تک رسائی\n\nکلاس کے ڈیٹا ممبرز اور ممبر فنکشنز تک main پروگرام (یعنی main فنکشن) میں اس کلاس کے آبجیکٹ اور ڈاٹ آپریٹر (.) کے بعد ممبر کا نام لکھ کر یعنی object member سے رسائی ہو سکتی ہے۔\n\nمثلاً اوپر کے پروگرام میں ممبر فنکشن print() تک درج ذیل بیان سے رسائی کی گئی ہے:\n\nt1.print ();\n\nاسی طرح ڈیٹا ممبر تک private ڈیٹا ممبر اور public فنکشنز کے ساتھ object_name data member کے طور پر رسائی ہو سکتی ہے۔\n\nدرج ذیل پروگرام اوپر زیرِ بحث کلاس CRectangle کو نافذ کرتا ہے۔",
+   "pashto": "د int ډول دوه د ډېټا غړي x او y د private لاسرسي ټاکونکي سره، او د public لاسرسي دوه غړي فنکشنونه set_values () او area (). په دې بېلګه کې د غړو فنکشنونو یوازې اعلانونه ورکړل شوي، تعریفونه یې نه.\n\nb. شی\n\nد ټولګي ډول متغیر شی (object) بلل کېږي. په C++ کې کله چې د ټولګي ډول متغیر اعلان کړو، دې ته د ټولګي نمونه‌جوړول وایو او پخپله متغیر د هغه ټولګي نمونه یا شی بلل کېږي. په OOP کې شی ډېر اهمیت لري ځکه ټولګی د خپل شي له جوړولو پرته نه شي کارېدای. د یوه ټولګي د شي د جوړولو عمومي بڼه لاندې ورکړل شوې.\n\nClass_name Object_name;\n\nنو د پورته CRectangle ټولګي لپاره شی داسې جوړېدای شي:\n\nCRectangle R1;\n\nموږ کولی شو په یوه بیان کې له یوه ډېر شیان هم جوړ کړو لکه:\n\nCRectangle R1, R2, R3;\n\nدلته R1، R2، R3 د یو ټولګي CRectangle شیان دي چې ورته د ډېټا غړی او غړي فنکشنونه شریکوي. د ټولګي تعریف هېڅ حافظه نه نیسي. یوازې ټاکي چې ټولګی څنګه ښکاري. د ټولګي د کارولو لپاره باید د هغه ټولګي ډول متغیر اعلان شي. کله چې شی جوړ شي، د هغه ټولګي د ټولو ډېټا غړو او غړو فنکشنونو لپاره حافظه ځانګړې کېږي.\n\nلاندې پروګرام په C++ کې د ټولګي مفهوم او د شي جوړول ښيي.\n\n#include <iostream.h>\n#include <conio.h>\nclass Test\n{\npublic:\nvoid print()\n{\ncout<< “Welcome to the class”;\n}\n}; //End of the class Test\nint main()\n{\nTest t1; // Object creation\nt1.print();//call to print() function\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome to the class\n\nد ټولګي غړو ته لاسرسی\n\nد ټولګي د ډېټا غړو او غړو فنکشنونو ته په main پروګرام (یعنې main فنکشن) کې د هغه ټولګي د شي او د ټکي چلونکي (.) وروسته د غړي د نوم په لیکلو، یعنې object member، لاسرسی کېدای شي.\n\nد بېلګې په توګه په پورته پروګرام کې print() غړي فنکشن ته د لاندې بیان په مرسته لاسرسی شوی:\n\nt1.print ();\n\nهمداراز د ډېټا غړي ته د private ډېټا غړي او public فنکشنونو سره د object_name data member په توګه لاسرسی کېدای شي.\n\nلاندې پروګرام پورته یاد شوی CRectangle ټولګی پلي کوي.",
+   "theoryUrdu": "int قسم کے دو ڈیٹا ممبرز x اور y، private ایکسس اسپیسیفائر کے ساتھ، اور public رسائی والے دو ممبر فنکشنز set_values () اور area ()۔ اس مثال میں ممبر فنکشنز کی صرف ڈکلیریشنز دی گئی ہیں، ان کی تعریفیں نہیں۔\n\nb. آبجیکٹ\n\nکلاس قسم کا ویری ایبل آبجیکٹ کہلاتا ہے۔ C++ میں جب ہم کلاس قسم کا ویری ایبل ڈکلیئر کرتے ہیں تو اسے کلاس کا انسٹینشی ایٹ کرنا کہتے ہیں اور خود ویری ایبل اس کلاس کا انسٹینس یا آبجیکٹ کہلاتا ہے۔ OOP میں آبجیکٹ کی بڑی اہمیت ہے کیونکہ کلاس کو اس کا آبجیکٹ بنائے بغیر استعمال نہیں کیا جا سکتا۔ کلاس کا آبجیکٹ بنانے کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔\n\nClass_name Object_name;\n\nیوں اوپر کی کلاس CRectangle کے لیے آبجیکٹ یوں بنایا جا سکتا ہے:\n\nCRectangle R1;\n\nہم ایک ہی بیان میں ایک سے زیادہ آبجیکٹس بھی بنا سکتے ہیں جیسے:\n\nCRectangle R1, R2, R3;\n\nیہاں R1، R2، R3 ایک ہی کلاس CRectangle کے آبجیکٹس ہیں جو ایک جیسے ڈیٹا ممبر اور ممبر فنکشنز رکھتے ہیں۔ کلاس کی تعریف کوئی میموری نہیں لیتی۔ یہ صرف بتاتی ہے کہ کلاس کیسی ہے۔ کلاس استعمال کرنے کے لیے اس کلاس قسم کا ویری ایبل ڈکلیئر کرنا ضروری ہے۔ جب آبجیکٹ بنتا ہے تو اس کلاس کے تمام ڈیٹا ممبرز اور ممبر فنکشنز کے لیے میموری مختص ہو جاتی ہے۔\n\nدرج ذیل پروگرام C++ میں کلاس کا تصور اور آبجیکٹ کی تخلیق واضح کرتا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nclass Test\n{\npublic:\nvoid print()\n{\ncout<< “Welcome to the class”;\n}\n}; //End of the class Test\nint main()\n{\nTest t1; // Object creation\nt1.print();//call to print() function\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome to the class\n\nکلاس کے اراکین تک رسائی\n\nکلاس کے ڈیٹا ممبرز اور ممبر فنکشنز تک main پروگرام (یعنی main فنکشن) میں اس کلاس کے آبجیکٹ اور ڈاٹ آپریٹر (.) کے بعد ممبر کا نام لکھ کر یعنی object member سے رسائی ہو سکتی ہے۔\n\nمثلاً اوپر کے پروگرام میں ممبر فنکشن print() تک درج ذیل بیان سے رسائی کی گئی ہے:\n\nt1.print ();\n\nاسی طرح ڈیٹا ممبر تک private ڈیٹا ممبر اور public فنکشنز کے ساتھ object_name data member کے طور پر رسائی ہو سکتی ہے۔\n\nدرج ذیل پروگرام اوپر زیرِ بحث کلاس CRectangle کو نافذ کرتا ہے۔",
+   "theoryPashto": "د int ډول دوه د ډېټا غړي x او y د private لاسرسي ټاکونکي سره، او د public لاسرسي دوه غړي فنکشنونه set_values () او area (). په دې بېلګه کې د غړو فنکشنونو یوازې اعلانونه ورکړل شوي، تعریفونه یې نه.\n\nb. شی\n\nد ټولګي ډول متغیر شی (object) بلل کېږي. په C++ کې کله چې د ټولګي ډول متغیر اعلان کړو، دې ته د ټولګي نمونه‌جوړول وایو او پخپله متغیر د هغه ټولګي نمونه یا شی بلل کېږي. په OOP کې شی ډېر اهمیت لري ځکه ټولګی د خپل شي له جوړولو پرته نه شي کارېدای. د یوه ټولګي د شي د جوړولو عمومي بڼه لاندې ورکړل شوې.\n\nClass_name Object_name;\n\nنو د پورته CRectangle ټولګي لپاره شی داسې جوړېدای شي:\n\nCRectangle R1;\n\nموږ کولی شو په یوه بیان کې له یوه ډېر شیان هم جوړ کړو لکه:\n\nCRectangle R1, R2, R3;\n\nدلته R1، R2، R3 د یو ټولګي CRectangle شیان دي چې ورته د ډېټا غړی او غړي فنکشنونه شریکوي. د ټولګي تعریف هېڅ حافظه نه نیسي. یوازې ټاکي چې ټولګی څنګه ښکاري. د ټولګي د کارولو لپاره باید د هغه ټولګي ډول متغیر اعلان شي. کله چې شی جوړ شي، د هغه ټولګي د ټولو ډېټا غړو او غړو فنکشنونو لپاره حافظه ځانګړې کېږي.\n\nلاندې پروګرام په C++ کې د ټولګي مفهوم او د شي جوړول ښيي.\n\n#include <iostream.h>\n#include <conio.h>\nclass Test\n{\npublic:\nvoid print()\n{\ncout<< “Welcome to the class”;\n}\n}; //End of the class Test\nint main()\n{\nTest t1; // Object creation\nt1.print();//call to print() function\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome to the class\n\nد ټولګي غړو ته لاسرسی\n\nد ټولګي د ډېټا غړو او غړو فنکشنونو ته په main پروګرام (یعنې main فنکشن) کې د هغه ټولګي د شي او د ټکي چلونکي (.) وروسته د غړي د نوم په لیکلو، یعنې object member، لاسرسی کېدای شي.\n\nد بېلګې په توګه په پورته پروګرام کې print() غړي فنکشن ته د لاندې بیان په مرسته لاسرسی شوی:\n\nt1.print ();\n\nهمداراز د ډېټا غړي ته د private ډېټا غړي او public فنکشنونو سره د object_name data member په توګه لاسرسی کېدای شي.\n\nلاندې پروګرام پورته یاد شوی CRectangle ټولګی پلي کوي.",
+   "content": "<p>Two data members x and y of type int with private access specifier and two member functions with public access; set_values () and area (). In this example, only declarations for the member functions has given and not their definitions.</p><p>b. Object</p><p>A variable of type class is called object. In C++, when we declare a variable of type class, we call it instantiating the class and the variable itself is called an instance or object of that class. Object is of great importance in OOP, because, a class cannot be used without creating its object. The general syntax for creating an object of a class is given below.</p><p>Class_name Object_name;</p><p>Thus, for the above class CRectangle, the object can be created as follows:</p><p>CRectangle R1;</p><p>We can also create more than one objects in a single statement like:</p><p>CRectangle R1, R2, R3;</p><p>Here, R1, R2, R3 are the objects of the same class CRectangle that share the same data member and member functions. The definition of a class does not occupy any memory. It only defines what the class looks like. In order to use a class, a variable of that class type must be declared. When an object is created then memory is set aside for all the data members and member functions of that class.</p><p>The following program demonstrates the concept of class in C++ and creation of object.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nclass Test\n{\npublic:\nvoid print()\n{\ncout&lt;&lt; “Welcome to the class”;\n}\n}; //End of the class Test\nint main()\n{\nTest t1; // Object creation\nt1.print();//call to print() function\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Welcome to the class</p><p>Accessing Members of a Class</p><p>Data members and member functions of a class can be accessed in the main program (i.e. main function) by using the object of that class, and dot operator (.) followed by the name of the member i.e. object member.</p><p>For example, in the above program, the member function print() is accessed by using the following statement:</p><p>t1.print ();</p><p>Similarly a data member can be accessed as object_name data member with private data member and public functions.</p><p>The following program implement the class CRectangle discussed above.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 121,
+     "printedPages": [
+      230,
+      231
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (2)",
+   "sourcePageLabel": "PDF 121 · p. 230–231",
+   "sourceNote": "The Test program begins at the foot of p.230 and ends on p.231; it is given whole with its output.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf121",
+   "unit": 8,
+   "printedPage": 231,
+   "description": "p.230 “only declarations … has given”, “more than one objects”; p.231 “The following program implement the class”, “object_name data member” (dot omitted). Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

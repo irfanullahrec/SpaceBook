@@ -1,0 +1,564 @@
+{
+ "pdfPage": 92,
+ "sections": [
+  {
+   "id": "cs12-u5-summary",
+   "title": "Unit 5 summary",
+   "headingUrdu": "یونٹ 5: خلاصہ",
+   "headingPashto": "۵ څپرکی: لنډیز",
+   "paras": [
+    {
+     "text": "Summary",
+     "urdu": "خلاصہ",
+     "pashto": "لنډیز"
+    },
+    {
+     "text": "A collection of homogeneous data items stored in consecutive memory locations is called array.",
+     "urdu": "متصل میموری مقامات میں محفوظ یکساں ڈیٹا آئٹمز کا مجموعہ ایرے کہلاتا ہے۔",
+     "pashto": "په پرله‌پسې حافظه ځایونو کې د ساتل شویو ورته ډېټا توکو ټولګه لړۍ بلل کېږي."
+    },
+    {
+     "text": "An array can store data of any valid data type, e.g. integer, floating point and character. An integer array can only store integer data.",
+     "urdu": "ایرے کسی بھی درست ڈیٹا ٹائپ کا ڈیٹا محفوظ کر سکتا ہے، مثلاً integer، floating point اور character۔ integer ایرے صرف integer ڈیٹا محفوظ کر سکتا ہے۔",
+     "pashto": "لړۍ کولی شي د هر سم ډېټا ډول ډېټا وساتي، لکه integer، floating point او character. integer لړۍ یوازې integer ډېټا ساتلی شي."
+    },
+    {
+     "text": "There are two types of arrays: one dimensional and multi-dimensional. Two dimensional arrays is a type of multi-dimensional array.",
+     "urdu": "ایریز کی دو اقسام ہیں: یک جہتی اور کثیر جہتی۔ دو جہتی ایریز کثیر جہتی ایرے کی ایک قسم ہے۔",
+     "pashto": "لړۍ دوه ډوله دي: یو-بعدي او څو-بعدي. دوه-بعدي لړۍ د څو-بعدي لړۍ یو ډول دی."
+    },
+    {
+     "text": "One dimensional array can be defined by using a single subscript.",
+     "urdu": "یک جہتی ایرے ایک سب اسکرپٹ استعمال کر کے بیان کیا جا سکتا ہے۔",
+     "pashto": "یو-بعدي لړۍ د یوه ښکته‌لیک په کارولو تعریفېدای شي."
+    },
+    {
+     "text": "Two dimensional arrays can be represented with the help of two subscripts. It is also called matrix in mathematics and table in business application.",
+     "urdu": "دو جہتی ایریز دو سب اسکرپٹس کی مدد سے ظاہر کیے جا سکتے ہیں۔ اسے ریاضی میں میٹرکس اور کاروباری ایپلیکیشن میں ٹیبل بھی کہتے ہیں۔",
+     "pashto": "دوه-بعدي لړۍ د دوو ښکته‌لیکونو په مرسته ښودل کېدای شي. په ریاضي کې ماتریکس او په سوداګریز کاريال کې جدول هم بلل کېږي."
+    },
+    {
+     "text": "One dimensional array can be defined by preceding the name of the array by a valid data type and followed by a single subscript.",
+     "urdu": "یک جہتی ایرے کو ایرے کے نام سے پہلے درست ڈیٹا ٹائپ اور بعد میں ایک سب اسکرپٹ لگا کر بیان کیا جا سکتا ہے۔",
+     "pashto": "یو-بعدي لړۍ د لړۍ له نوم مخکې د سم ډېټا ډول او وروسته د یوه ښکته‌لیک په لیکلو تعریفېدای شي."
+    },
+    {
+     "text": "Two dimensional arrays can also be defined by preceding the name of the array by a valid data type, such as int, long and char etc., and followed by two subscripts.",
+     "urdu": "دو جہتی ایریز کو بھی ایرے کے نام سے پہلے درست ڈیٹا ٹائپ، جیسے int، long اور char وغیرہ، اور بعد میں دو سب اسکرپٹس لگا کر بیان کیا جا سکتا ہے۔",
+     "pashto": "دوه-بعدي لړۍ هم د لړۍ له نوم مخکې د سم ډېټا ډول، لکه int، long او char او نور، او وروسته د دوو ښکته‌لیکونو په لیکلو تعریفېدای شي."
+    },
+    {
+     "text": "One dimensional and two dimensional arrays can be initialized in the same way during the declaration time.",
+     "urdu": "یک جہتی اور دو جہتی ایریز کو ڈکلیریشن کے وقت ایک ہی طریقے سے ابتدائی قدر دی جا سکتی ہے۔",
+     "pashto": "یو-بعدي او دوه-بعدي لړیو ته د اعلان پر مهال په یوه ډول لومړنی ارزښت ورکول کېدای شي."
+    },
+    {
+     "text": "Arrays can be efficiently and easily processed with the help of looping structures.",
+     "urdu": "ایریز پر لوپنگ ساختوں کی مدد سے مؤثر اور آسان طریقے سے عمل کیا جا سکتا ہے۔",
+     "pashto": "لړۍ د حلقوي جوړښتونو په مرسته په اغېزمنه او اسانه توګه پروسس کېدای شي."
+    },
+    {
+     "text": "A sequence of characters enclosed in double quotes is called string.",
+     "urdu": "ڈبل کوٹس میں بند حروف کی ترتیب اسٹرنگ کہلاتی ہے۔",
+     "pashto": "په دوه‌ګونو نقل‌قولونو کې د تړلو تورو لړۍ تار بلل کېږي."
+    },
+    {
+     "text": "Different operations such as comparison, concatenation, copying, and finding length can be performed on strings.",
+     "urdu": "اسٹرنگز پر مختلف عمل جیسے موازنہ، جوڑنا، نقل کرنا اور لمبائی معلوم کرنا کیے جا سکتے ہیں۔",
+     "pashto": "پر تارونو بېلابېلې عملیې لکه پرتله، نښلول، کاپي کول او د اوږدوالي موندل ترسره کېدای شي."
+    }
+   ],
+   "theory": "Summary\n\nA collection of homogeneous data items stored in consecutive memory locations is called array.\n\nAn array can store data of any valid data type, e.g. integer, floating point and character. An integer array can only store integer data.\n\nThere are two types of arrays: one dimensional and multi-dimensional. Two dimensional arrays is a type of multi-dimensional array.\n\nOne dimensional array can be defined by using a single subscript.\n\nTwo dimensional arrays can be represented with the help of two subscripts. It is also called matrix in mathematics and table in business application.\n\nOne dimensional array can be defined by preceding the name of the array by a valid data type and followed by a single subscript.\n\nTwo dimensional arrays can also be defined by preceding the name of the array by a valid data type, such as int, long and char etc., and followed by two subscripts.\n\nOne dimensional and two dimensional arrays can be initialized in the same way during the declaration time.\n\nArrays can be efficiently and easily processed with the help of looping structures.\n\nA sequence of characters enclosed in double quotes is called string.\n\nDifferent operations such as comparison, concatenation, copying, and finding length can be performed on strings.",
+   "urdu": "خلاصہ\n\nمتصل میموری مقامات میں محفوظ یکساں ڈیٹا آئٹمز کا مجموعہ ایرے کہلاتا ہے۔\n\nایرے کسی بھی درست ڈیٹا ٹائپ کا ڈیٹا محفوظ کر سکتا ہے، مثلاً integer، floating point اور character۔ integer ایرے صرف integer ڈیٹا محفوظ کر سکتا ہے۔\n\nایریز کی دو اقسام ہیں: یک جہتی اور کثیر جہتی۔ دو جہتی ایریز کثیر جہتی ایرے کی ایک قسم ہے۔\n\nیک جہتی ایرے ایک سب اسکرپٹ استعمال کر کے بیان کیا جا سکتا ہے۔\n\nدو جہتی ایریز دو سب اسکرپٹس کی مدد سے ظاہر کیے جا سکتے ہیں۔ اسے ریاضی میں میٹرکس اور کاروباری ایپلیکیشن میں ٹیبل بھی کہتے ہیں۔\n\nیک جہتی ایرے کو ایرے کے نام سے پہلے درست ڈیٹا ٹائپ اور بعد میں ایک سب اسکرپٹ لگا کر بیان کیا جا سکتا ہے۔\n\nدو جہتی ایریز کو بھی ایرے کے نام سے پہلے درست ڈیٹا ٹائپ، جیسے int، long اور char وغیرہ، اور بعد میں دو سب اسکرپٹس لگا کر بیان کیا جا سکتا ہے۔\n\nیک جہتی اور دو جہتی ایریز کو ڈکلیریشن کے وقت ایک ہی طریقے سے ابتدائی قدر دی جا سکتی ہے۔\n\nایریز پر لوپنگ ساختوں کی مدد سے مؤثر اور آسان طریقے سے عمل کیا جا سکتا ہے۔\n\nڈبل کوٹس میں بند حروف کی ترتیب اسٹرنگ کہلاتی ہے۔\n\nاسٹرنگز پر مختلف عمل جیسے موازنہ، جوڑنا، نقل کرنا اور لمبائی معلوم کرنا کیے جا سکتے ہیں۔",
+   "pashto": "لنډیز\n\nپه پرله‌پسې حافظه ځایونو کې د ساتل شویو ورته ډېټا توکو ټولګه لړۍ بلل کېږي.\n\nلړۍ کولی شي د هر سم ډېټا ډول ډېټا وساتي، لکه integer، floating point او character. integer لړۍ یوازې integer ډېټا ساتلی شي.\n\nلړۍ دوه ډوله دي: یو-بعدي او څو-بعدي. دوه-بعدي لړۍ د څو-بعدي لړۍ یو ډول دی.\n\nیو-بعدي لړۍ د یوه ښکته‌لیک په کارولو تعریفېدای شي.\n\nدوه-بعدي لړۍ د دوو ښکته‌لیکونو په مرسته ښودل کېدای شي. په ریاضي کې ماتریکس او په سوداګریز کاريال کې جدول هم بلل کېږي.\n\nیو-بعدي لړۍ د لړۍ له نوم مخکې د سم ډېټا ډول او وروسته د یوه ښکته‌لیک په لیکلو تعریفېدای شي.\n\nدوه-بعدي لړۍ هم د لړۍ له نوم مخکې د سم ډېټا ډول، لکه int، long او char او نور، او وروسته د دوو ښکته‌لیکونو په لیکلو تعریفېدای شي.\n\nیو-بعدي او دوه-بعدي لړیو ته د اعلان پر مهال په یوه ډول لومړنی ارزښت ورکول کېدای شي.\n\nلړۍ د حلقوي جوړښتونو په مرسته په اغېزمنه او اسانه توګه پروسس کېدای شي.\n\nپه دوه‌ګونو نقل‌قولونو کې د تړلو تورو لړۍ تار بلل کېږي.\n\nپر تارونو بېلابېلې عملیې لکه پرتله، نښلول، کاپي کول او د اوږدوالي موندل ترسره کېدای شي.",
+   "theoryUrdu": "خلاصہ\n\nمتصل میموری مقامات میں محفوظ یکساں ڈیٹا آئٹمز کا مجموعہ ایرے کہلاتا ہے۔\n\nایرے کسی بھی درست ڈیٹا ٹائپ کا ڈیٹا محفوظ کر سکتا ہے، مثلاً integer، floating point اور character۔ integer ایرے صرف integer ڈیٹا محفوظ کر سکتا ہے۔\n\nایریز کی دو اقسام ہیں: یک جہتی اور کثیر جہتی۔ دو جہتی ایریز کثیر جہتی ایرے کی ایک قسم ہے۔\n\nیک جہتی ایرے ایک سب اسکرپٹ استعمال کر کے بیان کیا جا سکتا ہے۔\n\nدو جہتی ایریز دو سب اسکرپٹس کی مدد سے ظاہر کیے جا سکتے ہیں۔ اسے ریاضی میں میٹرکس اور کاروباری ایپلیکیشن میں ٹیبل بھی کہتے ہیں۔\n\nیک جہتی ایرے کو ایرے کے نام سے پہلے درست ڈیٹا ٹائپ اور بعد میں ایک سب اسکرپٹ لگا کر بیان کیا جا سکتا ہے۔\n\nدو جہتی ایریز کو بھی ایرے کے نام سے پہلے درست ڈیٹا ٹائپ، جیسے int، long اور char وغیرہ، اور بعد میں دو سب اسکرپٹس لگا کر بیان کیا جا سکتا ہے۔\n\nیک جہتی اور دو جہتی ایریز کو ڈکلیریشن کے وقت ایک ہی طریقے سے ابتدائی قدر دی جا سکتی ہے۔\n\nایریز پر لوپنگ ساختوں کی مدد سے مؤثر اور آسان طریقے سے عمل کیا جا سکتا ہے۔\n\nڈبل کوٹس میں بند حروف کی ترتیب اسٹرنگ کہلاتی ہے۔\n\nاسٹرنگز پر مختلف عمل جیسے موازنہ، جوڑنا، نقل کرنا اور لمبائی معلوم کرنا کیے جا سکتے ہیں۔",
+   "theoryPashto": "لنډیز\n\nپه پرله‌پسې حافظه ځایونو کې د ساتل شویو ورته ډېټا توکو ټولګه لړۍ بلل کېږي.\n\nلړۍ کولی شي د هر سم ډېټا ډول ډېټا وساتي، لکه integer، floating point او character. integer لړۍ یوازې integer ډېټا ساتلی شي.\n\nلړۍ دوه ډوله دي: یو-بعدي او څو-بعدي. دوه-بعدي لړۍ د څو-بعدي لړۍ یو ډول دی.\n\nیو-بعدي لړۍ د یوه ښکته‌لیک په کارولو تعریفېدای شي.\n\nدوه-بعدي لړۍ د دوو ښکته‌لیکونو په مرسته ښودل کېدای شي. په ریاضي کې ماتریکس او په سوداګریز کاريال کې جدول هم بلل کېږي.\n\nیو-بعدي لړۍ د لړۍ له نوم مخکې د سم ډېټا ډول او وروسته د یوه ښکته‌لیک په لیکلو تعریفېدای شي.\n\nدوه-بعدي لړۍ هم د لړۍ له نوم مخکې د سم ډېټا ډول، لکه int، long او char او نور، او وروسته د دوو ښکته‌لیکونو په لیکلو تعریفېدای شي.\n\nیو-بعدي او دوه-بعدي لړیو ته د اعلان پر مهال په یوه ډول لومړنی ارزښت ورکول کېدای شي.\n\nلړۍ د حلقوي جوړښتونو په مرسته په اغېزمنه او اسانه توګه پروسس کېدای شي.\n\nپه دوه‌ګونو نقل‌قولونو کې د تړلو تورو لړۍ تار بلل کېږي.\n\nپر تارونو بېلابېلې عملیې لکه پرتله، نښلول، کاپي کول او د اوږدوالي موندل ترسره کېدای شي.",
+   "content": "<p>Summary</p><p>A collection of homogeneous data items stored in consecutive memory locations is called array.</p><p>An array can store data of any valid data type, e.g. integer, floating point and character. An integer array can only store integer data.</p><p>There are two types of arrays: one dimensional and multi-dimensional. Two dimensional arrays is a type of multi-dimensional array.</p><p>One dimensional array can be defined by using a single subscript.</p><p>Two dimensional arrays can be represented with the help of two subscripts. It is also called matrix in mathematics and table in business application.</p><p>One dimensional array can be defined by preceding the name of the array by a valid data type and followed by a single subscript.</p><p>Two dimensional arrays can also be defined by preceding the name of the array by a valid data type, such as int, long and char etc., and followed by two subscripts.</p><p>One dimensional and two dimensional arrays can be initialized in the same way during the declaration time.</p><p>Arrays can be efficiently and easily processed with the help of looping structures.</p><p>A sequence of characters enclosed in double quotes is called string.</p><p>Different operations such as comparison, concatenation, copying, and finding length can be performed on strings.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 92,
+     "printedPages": [
+      172
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 summary",
+   "sourcePageLabel": "PDF 92 · p. 172",
+   "unit": 5
+  },
+  {
+   "id": "cs12-u5-exercise",
+   "title": "Unit 5 exercise",
+   "headingUrdu": "یونٹ 5: مشق",
+   "headingPashto": "۵ څپرکی: تمرین",
+   "paras": [
+    {
+     "text": "Exercise",
+     "urdu": "مشق",
+     "pashto": "تمرین"
+    },
+    {
+     "text": "Q.1 Fill in the Blanks.",
+     "urdu": "سوال 1: خالی جگہیں پُر کریں۔",
+     "pashto": "پوښتنه ۱: تش ځایونه ډک کړئ."
+    },
+    {
+     "text": "i. In C/C++ language, normally the indexing of an array starts from ________ .",
+     "urdu": "i. C/C++ زبان میں عموماً ایرے کی انڈیکسنگ ________ سے شروع ہوتی ہے۔",
+     "pashto": "i. په C/C++ ژبه کې عموماً د لړۍ شاخص‌ورکول له ________ پیلېږي."
+    },
+    {
+     "text": "ii. The size of the array int x[10] is ________ .",
+     "urdu": "ii. ایرے int x[10] کا سائز ________ ہے۔",
+     "pashto": "ii. د int x[10] لړۍ اندازه ________ ده."
+    },
+    {
+     "text": "iii. char century [100][365][24][60][60] is an example of ________ array.",
+     "urdu": "iii. char century [100][365][24][60][60] ________ ایرے کی مثال ہے۔",
+     "pashto": "iii. char century [100][365][24][60][60] د ________ لړۍ بېلګه ده."
+    },
+    {
+     "text": "iv. An array of characters is called ________ .",
+     "urdu": "iv. حروف کا ایرے ________ کہلاتا ہے۔",
+     "pashto": "iv. د تورو لړۍ ________ بلل کېږي."
+    },
+    {
+     "text": "v. float x[12] defines one dimensional array of type ________ .",
+     "urdu": "v. float x[12] ________ قسم کا یک جہتی ایرے بیان کرتا ہے۔",
+     "pashto": "v. float x[12] د ________ ډول یو-بعدي لړۍ تعریفوي."
+    },
+    {
+     "text": "Q.2 Select the correct choice for the following Multiple Choice Questions.",
+     "urdu": "سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔",
+     "pashto": "پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ."
+    },
+    {
+     "text": "i. A collection of data items of the same data types placed in contiguous memory locations is called ________ .",
+     "urdu": "i. متصل میموری مقامات میں رکھے گئے ایک ہی ڈیٹا ٹائپ کے ڈیٹا آئٹمز کا مجموعہ ________ کہلاتا ہے۔",
+     "pashto": "i. په پرله‌پسې حافظه ځایونو کې د ایښودل شویو یو ډول ډېټا توکو ټولګه ________ بلل کېږي."
+    },
+    {
+     "text": "(a) Record",
+     "urdu": "(a) ریکارڈ",
+     "pashto": "(a) ریکارډ"
+    },
+    {
+     "text": "(b) Array",
+     "urdu": "(b) ایرے",
+     "pashto": "(b) لړۍ"
+    },
+    {
+     "text": "(c) Program",
+     "urdu": "(c) پروگرام",
+     "pashto": "(c) پروګرام"
+    },
+    {
+     "text": "(d) File",
+     "urdu": "(d) فائل",
+     "pashto": "(d) دوتنه"
+    },
+    {
+     "text": "ii. Observe the following statements and decide what they do.",
+     "urdu": "ii. درج ذیل بیانات کا مشاہدہ کریں اور فیصلہ کریں کہ یہ کیا کرتے ہیں۔",
+     "pashto": "ii. لاندې بیانونو ته وګورئ او پرېکړه وکړئ چې څه کوي."
+    },
+    {
+     "text": "string mystring;\ngetline(cin, mystring);",
+     "urdu": "string mystring;\ngetline(cin, mystring);",
+     "pashto": "string mystring;\ngetline(cin, mystring);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "(a) reads a line of string from cin into mystring",
+     "urdu": "(a) cin سے اسٹرنگ کی ایک لائن mystring میں پڑھتا ہے",
+     "pashto": "(a) له cin څخه د تار یوه کرښه mystring ته لولي"
+    },
+    {
+     "text": "(b) reads a line of string from mystring into cin",
+     "urdu": "(b) mystring سے اسٹرنگ کی ایک لائن cin میں پڑھتا ہے",
+     "pashto": "(b) له mystring څخه د تار یوه کرښه cin ته لولي"
+    },
+    {
+     "text": "(c) cin can’t be used this way",
+     "urdu": "(c) cin اس طرح استعمال نہیں ہو سکتا",
+     "pashto": "(c) cin په دې ډول نه شي کارېدای"
+    },
+    {
+     "text": "(d) none of the above",
+     "urdu": "(d) ان میں سے کوئی نہیں",
+     "pashto": "(d) له پورته هېڅ یو"
+    },
+    {
+     "text": "iii. Which of the header file must be included to use string stream?",
+     "urdu": "iii. string stream استعمال کرنے کے لیے کون سی ہیڈر فائل شامل کرنا ضروری ہے؟",
+     "pashto": "iii. د string stream د کارولو لپاره کومه سرپاڼه دوتنه باید شامله شي؟"
+    },
+    {
+     "text": "(a) <iostream>",
+     "urdu": "(a) <iostream>",
+     "pashto": "(a) <iostream>"
+    },
+    {
+     "text": "(b) <string>",
+     "urdu": "(b) <string>",
+     "pashto": "(b) <string>"
+    },
+    {
+     "text": "(c) <sstring>",
+     "urdu": "(c) <sstring>",
+     "pashto": "(c) <sstring>"
+    },
+    {
+     "text": "(d) <sstream>",
+     "urdu": "(d) <sstream>",
+     "pashto": "(d) <sstream>"
+    },
+    {
+     "text": "iv. The location number of an item in an array is called ________ .",
+     "urdu": "iv. ایرے میں کسی آئٹم کے مقام کا نمبر ________ کہلاتا ہے۔",
+     "pashto": "iv. په لړۍ کې د یوه توکي د ځای شمېره ________ بلل کېږي."
+    },
+    {
+     "text": "(a) Data",
+     "urdu": "(a) ڈیٹا",
+     "pashto": "(a) ډېټا"
+    },
+    {
+     "text": "(b) Value",
+     "urdu": "(b) قدر",
+     "pashto": "(b) ارزښت"
+    },
+    {
+     "text": "(c) Index",
+     "urdu": "(c) انڈیکس",
+     "pashto": "(c) شاخص"
+    },
+    {
+     "text": "(d) Constant",
+     "urdu": "(d) مستقل",
+     "pashto": "(d) ثابت"
+    },
+    {
+     "text": "v. Strings are character arrays. The last index of it contains the null character ________ .",
+     "urdu": "v. اسٹرنگز حروف کے ایرے ہیں۔ اس کے آخری انڈیکس میں null حرف ________ ہوتا ہے۔",
+     "pashto": "v. تارونه د تورو لړۍ دي. د هغې وروستی شاخص null توری ________ لري."
+    },
+    {
+     "text": "(a) \\n",
+     "urdu": "(a) \\n",
+     "pashto": "(a) \\n"
+    },
+    {
+     "text": "(b) \\t",
+     "urdu": "(b) \\t",
+     "pashto": "(b) \\t"
+    },
+    {
+     "text": "(c) \\0",
+     "urdu": "(c) \\0",
+     "pashto": "(c) \\0"
+    },
+    {
+     "text": "(d) \\1",
+     "urdu": "(d) \\1",
+     "pashto": "(d) \\1"
+    },
+    {
+     "text": "Q.3 Write TRUE/FALSE against the following statements.",
+     "urdu": "سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔",
+     "pashto": "پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ."
+    },
+    {
+     "text": "i. Array is a collection of heterogeneous type of data.",
+     "urdu": "i. ایرے مختلف النوع ڈیٹا کا مجموعہ ہے۔",
+     "pashto": "i. لړۍ د ناورته ډول ډېټا ټولګه ده."
+    },
+    {
+     "text": "ii. Array can be initialized during declaration time.",
+     "urdu": "ii. ایرے کو ڈکلیریشن کے وقت ابتدائی قدر دی جا سکتی ہے۔",
+     "pashto": "ii. لړۍ ته د اعلان پر مهال لومړنی ارزښت ورکول کېدای شي."
+    },
+    {
+     "text": "iii. char vowel[5] declares an integer type array that holds the vowel characters of English language.",
+     "urdu": "iii. char vowel[5] ایک integer قسم کا ایرے ڈکلیئر کرتا ہے جس میں انگریزی زبان کے حروفِ علت ہیں۔",
+     "pashto": "iii. char vowel[5] د integer ډول لړۍ اعلانوي چې د انګلیسي ژبې ږغیز توري ساتي."
+    },
+    {
+     "text": "iv. Loop is the best tool for handling large arrays.",
+     "urdu": "iv. بڑے ایریز کو سنبھالنے کے لیے لوپ بہترین ذریعہ ہے۔",
+     "pashto": "iv. د لویو لړیو د چلولو لپاره حلقه غوره وسیله ده."
+    },
+    {
+     "text": "v. Array elements are stored in the memory where ever free space is available.",
+     "urdu": "v. ایرے کے عناصر میموری میں جہاں بھی خالی جگہ دستیاب ہو، محفوظ ہوتے ہیں۔",
+     "pashto": "v. د لړۍ عناصر په حافظه کې هر چېرې چې تش ځای وي، ساتل کېږي."
+    },
+    {
+     "text": "Q.4 Declare an array to hold the high temperature (to the nearest tenth of a degree) for each day of a year. Assign a value of 0 to each day.",
+     "urdu": "Q.4 سال کے ہر دن کا زیادہ سے زیادہ درجۂ حرارت (ڈگری کے قریب ترین دسویں حصے تک) رکھنے کے لیے ایرے ڈکلیئر کریں۔ ہر دن کو 0 قدر دیں۔",
+     "pashto": "Q.4 د کال د هرې ورځې د لوړې تودوخې (د درجې تر نږدې لسمې برخې) د ساتلو لپاره یوه لړۍ اعلان کړئ. هرې ورځې ته 0 ارزښت ورکړئ."
+    },
+    {
+     "text": "Q.5 Write down a C++ program to find the multiplication of two matrices A[3][2] and B[2][3].",
+     "urdu": "Q.5 دو میٹرکسز A[3][2] اور B[2][3] کا حاصلِ ضرب معلوم کرنے کا C++ پروگرام لکھیں۔",
+     "pashto": "Q.5 د دوو ماتریکسونو A[3][2] او B[2][3] د ضرب موندلو لپاره یو C++ پروګرام ولیکئ."
+    },
+    {
+     "text": "Q.6 Write down a C++ program to find the subtraction and addition of two matrices A[3][3] and B[3][3].",
+     "urdu": "Q.6 دو میٹرکسز A[3][3] اور B[3][3] کی تفریق اور جمع معلوم کرنے کا C++ پروگرام لکھیں۔",
+     "pashto": "Q.6 د دوو ماتریکسونو A[3][3] او B[3][3] د تفریق او جمع موندلو لپاره یو C++ پروګرام ولیکئ."
+    },
+    {
+     "text": "Q.7 Write a C++ program to find the transpose of a matrix A[3][3].",
+     "urdu": "Q.7 میٹرکس A[3][3] کا ٹرانسپوز معلوم کرنے کا C++ پروگرام لکھیں۔",
+     "pashto": "Q.7 د A[3][3] ماتریکس د ټرانسپوز موندلو لپاره یو C++ پروګرام ولیکئ."
+    },
+    {
+     "text": "Q.8 Write a C++ program to read the temperature of the whole week in an array and then find the hottest day of the week.",
+     "urdu": "Q.8 پورے ہفتے کا درجۂ حرارت ایک ایرے میں پڑھنے اور پھر ہفتے کا سب سے گرم دن معلوم کرنے کا C++ پروگرام لکھیں۔",
+     "pashto": "Q.8 یو C++ پروګرام ولیکئ چې د ټولې اونۍ تودوخه په یوه لړۍ کې ولولي او بیا د اونۍ تر ټولو ګرمه ورځ پیدا کړي."
+    },
+    {
+     "text": "Q.9 Write a C++ program to read ten alphabets of English from the keyboard into a character type array and then sort them in descending order.",
+     "urdu": "Q.9 کی بورڈ سے انگریزی کے دس حروفِ تہجی ایک character قسم کے ایرے میں پڑھنے اور پھر انھیں نزولی ترتیب میں ترتیب دینے کا C++ پروگرام لکھیں۔",
+     "pashto": "Q.9 یو C++ پروګرام ولیکئ چې له کیبورډ د انګلیسي لس توري د character ډول لړۍ ته ولولي او بیا یې په نزولي ترتیب ترتیب کړي."
+    },
+    {
+     "text": "Q.10 Write a C++ program to find sum of the values of a two dimensional array int Test[2][3] and display the result on the screen.",
+     "urdu": "Q.10 دو جہتی ایرے int Test[2][3] کی قدروں کا مجموعہ معلوم کرنے اور نتیجہ اسکرین پر دکھانے کا C++ پروگرام لکھیں۔",
+     "pashto": "Q.10 یو C++ پروګرام ولیکئ چې د int Test[2][3] دوه-بعدي لړۍ د ارزښتونو مجموعه پیدا کړي او پایله پر پرده وښيي."
+    }
+   ],
+   "theory": "Exercise\n\nQ.1 Fill in the Blanks.\n\ni. In C/C++ language, normally the indexing of an array starts from ________ .\n\nii. The size of the array int x[10] is ________ .\n\niii. char century [100][365][24][60][60] is an example of ________ array.\n\niv. An array of characters is called ________ .\n\nv. float x[12] defines one dimensional array of type ________ .\n\nQ.2 Select the correct choice for the following Multiple Choice Questions.\n\ni. A collection of data items of the same data types placed in contiguous memory locations is called ________ .\n\n(a) Record\n\n(b) Array\n\n(c) Program\n\n(d) File\n\nii. Observe the following statements and decide what they do.\n\nstring mystring;\ngetline(cin, mystring);\n\n(a) reads a line of string from cin into mystring\n\n(b) reads a line of string from mystring into cin\n\n(c) cin can’t be used this way\n\n(d) none of the above\n\niii. Which of the header file must be included to use string stream?\n\n(a) <iostream>\n\n(b) <string>\n\n(c) <sstring>\n\n(d) <sstream>\n\niv. The location number of an item in an array is called ________ .\n\n(a) Data\n\n(b) Value\n\n(c) Index\n\n(d) Constant\n\nv. Strings are character arrays. The last index of it contains the null character ________ .\n\n(a) \\n\n\n(b) \\t\n\n(c) \\0\n\n(d) \\1\n\nQ.3 Write TRUE/FALSE against the following statements.\n\ni. Array is a collection of heterogeneous type of data.\n\nii. Array can be initialized during declaration time.\n\niii. char vowel[5] declares an integer type array that holds the vowel characters of English language.\n\niv. Loop is the best tool for handling large arrays.\n\nv. Array elements are stored in the memory where ever free space is available.\n\nQ.4 Declare an array to hold the high temperature (to the nearest tenth of a degree) for each day of a year. Assign a value of 0 to each day.\n\nQ.5 Write down a C++ program to find the multiplication of two matrices A[3][2] and B[2][3].\n\nQ.6 Write down a C++ program to find the subtraction and addition of two matrices A[3][3] and B[3][3].\n\nQ.7 Write a C++ program to find the transpose of a matrix A[3][3].\n\nQ.8 Write a C++ program to read the temperature of the whole week in an array and then find the hottest day of the week.\n\nQ.9 Write a C++ program to read ten alphabets of English from the keyboard into a character type array and then sort them in descending order.\n\nQ.10 Write a C++ program to find sum of the values of a two dimensional array int Test[2][3] and display the result on the screen.",
+   "urdu": "مشق\n\nسوال 1: خالی جگہیں پُر کریں۔\n\ni. C/C++ زبان میں عموماً ایرے کی انڈیکسنگ ________ سے شروع ہوتی ہے۔\n\nii. ایرے int x[10] کا سائز ________ ہے۔\n\niii. char century [100][365][24][60][60] ________ ایرے کی مثال ہے۔\n\niv. حروف کا ایرے ________ کہلاتا ہے۔\n\nv. float x[12] ________ قسم کا یک جہتی ایرے بیان کرتا ہے۔\n\nسوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔\n\ni. متصل میموری مقامات میں رکھے گئے ایک ہی ڈیٹا ٹائپ کے ڈیٹا آئٹمز کا مجموعہ ________ کہلاتا ہے۔\n\n(a) ریکارڈ\n\n(b) ایرے\n\n(c) پروگرام\n\n(d) فائل\n\nii. درج ذیل بیانات کا مشاہدہ کریں اور فیصلہ کریں کہ یہ کیا کرتے ہیں۔\n\nstring mystring;\ngetline(cin, mystring);\n\n(a) cin سے اسٹرنگ کی ایک لائن mystring میں پڑھتا ہے\n\n(b) mystring سے اسٹرنگ کی ایک لائن cin میں پڑھتا ہے\n\n(c) cin اس طرح استعمال نہیں ہو سکتا\n\n(d) ان میں سے کوئی نہیں\n\niii. string stream استعمال کرنے کے لیے کون سی ہیڈر فائل شامل کرنا ضروری ہے؟\n\n(a) <iostream>\n\n(b) <string>\n\n(c) <sstring>\n\n(d) <sstream>\n\niv. ایرے میں کسی آئٹم کے مقام کا نمبر ________ کہلاتا ہے۔\n\n(a) ڈیٹا\n\n(b) قدر\n\n(c) انڈیکس\n\n(d) مستقل\n\nv. اسٹرنگز حروف کے ایرے ہیں۔ اس کے آخری انڈیکس میں null حرف ________ ہوتا ہے۔\n\n(a) \\n\n\n(b) \\t\n\n(c) \\0\n\n(d) \\1\n\nسوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔\n\ni. ایرے مختلف النوع ڈیٹا کا مجموعہ ہے۔\n\nii. ایرے کو ڈکلیریشن کے وقت ابتدائی قدر دی جا سکتی ہے۔\n\niii. char vowel[5] ایک integer قسم کا ایرے ڈکلیئر کرتا ہے جس میں انگریزی زبان کے حروفِ علت ہیں۔\n\niv. بڑے ایریز کو سنبھالنے کے لیے لوپ بہترین ذریعہ ہے۔\n\nv. ایرے کے عناصر میموری میں جہاں بھی خالی جگہ دستیاب ہو، محفوظ ہوتے ہیں۔\n\nQ.4 سال کے ہر دن کا زیادہ سے زیادہ درجۂ حرارت (ڈگری کے قریب ترین دسویں حصے تک) رکھنے کے لیے ایرے ڈکلیئر کریں۔ ہر دن کو 0 قدر دیں۔\n\nQ.5 دو میٹرکسز A[3][2] اور B[2][3] کا حاصلِ ضرب معلوم کرنے کا C++ پروگرام لکھیں۔\n\nQ.6 دو میٹرکسز A[3][3] اور B[3][3] کی تفریق اور جمع معلوم کرنے کا C++ پروگرام لکھیں۔\n\nQ.7 میٹرکس A[3][3] کا ٹرانسپوز معلوم کرنے کا C++ پروگرام لکھیں۔\n\nQ.8 پورے ہفتے کا درجۂ حرارت ایک ایرے میں پڑھنے اور پھر ہفتے کا سب سے گرم دن معلوم کرنے کا C++ پروگرام لکھیں۔\n\nQ.9 کی بورڈ سے انگریزی کے دس حروفِ تہجی ایک character قسم کے ایرے میں پڑھنے اور پھر انھیں نزولی ترتیب میں ترتیب دینے کا C++ پروگرام لکھیں۔\n\nQ.10 دو جہتی ایرے int Test[2][3] کی قدروں کا مجموعہ معلوم کرنے اور نتیجہ اسکرین پر دکھانے کا C++ پروگرام لکھیں۔",
+   "pashto": "تمرین\n\nپوښتنه ۱: تش ځایونه ډک کړئ.\n\ni. په C/C++ ژبه کې عموماً د لړۍ شاخص‌ورکول له ________ پیلېږي.\n\nii. د int x[10] لړۍ اندازه ________ ده.\n\niii. char century [100][365][24][60][60] د ________ لړۍ بېلګه ده.\n\niv. د تورو لړۍ ________ بلل کېږي.\n\nv. float x[12] د ________ ډول یو-بعدي لړۍ تعریفوي.\n\nپوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.\n\ni. په پرله‌پسې حافظه ځایونو کې د ایښودل شویو یو ډول ډېټا توکو ټولګه ________ بلل کېږي.\n\n(a) ریکارډ\n\n(b) لړۍ\n\n(c) پروګرام\n\n(d) دوتنه\n\nii. لاندې بیانونو ته وګورئ او پرېکړه وکړئ چې څه کوي.\n\nstring mystring;\ngetline(cin, mystring);\n\n(a) له cin څخه د تار یوه کرښه mystring ته لولي\n\n(b) له mystring څخه د تار یوه کرښه cin ته لولي\n\n(c) cin په دې ډول نه شي کارېدای\n\n(d) له پورته هېڅ یو\n\niii. د string stream د کارولو لپاره کومه سرپاڼه دوتنه باید شامله شي؟\n\n(a) <iostream>\n\n(b) <string>\n\n(c) <sstring>\n\n(d) <sstream>\n\niv. په لړۍ کې د یوه توکي د ځای شمېره ________ بلل کېږي.\n\n(a) ډېټا\n\n(b) ارزښت\n\n(c) شاخص\n\n(d) ثابت\n\nv. تارونه د تورو لړۍ دي. د هغې وروستی شاخص null توری ________ لري.\n\n(a) \\n\n\n(b) \\t\n\n(c) \\0\n\n(d) \\1\n\nپوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.\n\ni. لړۍ د ناورته ډول ډېټا ټولګه ده.\n\nii. لړۍ ته د اعلان پر مهال لومړنی ارزښت ورکول کېدای شي.\n\niii. char vowel[5] د integer ډول لړۍ اعلانوي چې د انګلیسي ژبې ږغیز توري ساتي.\n\niv. د لویو لړیو د چلولو لپاره حلقه غوره وسیله ده.\n\nv. د لړۍ عناصر په حافظه کې هر چېرې چې تش ځای وي، ساتل کېږي.\n\nQ.4 د کال د هرې ورځې د لوړې تودوخې (د درجې تر نږدې لسمې برخې) د ساتلو لپاره یوه لړۍ اعلان کړئ. هرې ورځې ته 0 ارزښت ورکړئ.\n\nQ.5 د دوو ماتریکسونو A[3][2] او B[2][3] د ضرب موندلو لپاره یو C++ پروګرام ولیکئ.\n\nQ.6 د دوو ماتریکسونو A[3][3] او B[3][3] د تفریق او جمع موندلو لپاره یو C++ پروګرام ولیکئ.\n\nQ.7 د A[3][3] ماتریکس د ټرانسپوز موندلو لپاره یو C++ پروګرام ولیکئ.\n\nQ.8 یو C++ پروګرام ولیکئ چې د ټولې اونۍ تودوخه په یوه لړۍ کې ولولي او بیا د اونۍ تر ټولو ګرمه ورځ پیدا کړي.\n\nQ.9 یو C++ پروګرام ولیکئ چې له کیبورډ د انګلیسي لس توري د character ډول لړۍ ته ولولي او بیا یې په نزولي ترتیب ترتیب کړي.\n\nQ.10 یو C++ پروګرام ولیکئ چې د int Test[2][3] دوه-بعدي لړۍ د ارزښتونو مجموعه پیدا کړي او پایله پر پرده وښيي.",
+   "theoryUrdu": "مشق\n\nسوال 1: خالی جگہیں پُر کریں۔\n\ni. C/C++ زبان میں عموماً ایرے کی انڈیکسنگ ________ سے شروع ہوتی ہے۔\n\nii. ایرے int x[10] کا سائز ________ ہے۔\n\niii. char century [100][365][24][60][60] ________ ایرے کی مثال ہے۔\n\niv. حروف کا ایرے ________ کہلاتا ہے۔\n\nv. float x[12] ________ قسم کا یک جہتی ایرے بیان کرتا ہے۔\n\nسوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔\n\ni. متصل میموری مقامات میں رکھے گئے ایک ہی ڈیٹا ٹائپ کے ڈیٹا آئٹمز کا مجموعہ ________ کہلاتا ہے۔\n\n(a) ریکارڈ\n\n(b) ایرے\n\n(c) پروگرام\n\n(d) فائل\n\nii. درج ذیل بیانات کا مشاہدہ کریں اور فیصلہ کریں کہ یہ کیا کرتے ہیں۔\n\nstring mystring;\ngetline(cin, mystring);\n\n(a) cin سے اسٹرنگ کی ایک لائن mystring میں پڑھتا ہے\n\n(b) mystring سے اسٹرنگ کی ایک لائن cin میں پڑھتا ہے\n\n(c) cin اس طرح استعمال نہیں ہو سکتا\n\n(d) ان میں سے کوئی نہیں\n\niii. string stream استعمال کرنے کے لیے کون سی ہیڈر فائل شامل کرنا ضروری ہے؟\n\n(a) <iostream>\n\n(b) <string>\n\n(c) <sstring>\n\n(d) <sstream>\n\niv. ایرے میں کسی آئٹم کے مقام کا نمبر ________ کہلاتا ہے۔\n\n(a) ڈیٹا\n\n(b) قدر\n\n(c) انڈیکس\n\n(d) مستقل\n\nv. اسٹرنگز حروف کے ایرے ہیں۔ اس کے آخری انڈیکس میں null حرف ________ ہوتا ہے۔\n\n(a) \\n\n\n(b) \\t\n\n(c) \\0\n\n(d) \\1\n\nسوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔\n\ni. ایرے مختلف النوع ڈیٹا کا مجموعہ ہے۔\n\nii. ایرے کو ڈکلیریشن کے وقت ابتدائی قدر دی جا سکتی ہے۔\n\niii. char vowel[5] ایک integer قسم کا ایرے ڈکلیئر کرتا ہے جس میں انگریزی زبان کے حروفِ علت ہیں۔\n\niv. بڑے ایریز کو سنبھالنے کے لیے لوپ بہترین ذریعہ ہے۔\n\nv. ایرے کے عناصر میموری میں جہاں بھی خالی جگہ دستیاب ہو، محفوظ ہوتے ہیں۔\n\nQ.4 سال کے ہر دن کا زیادہ سے زیادہ درجۂ حرارت (ڈگری کے قریب ترین دسویں حصے تک) رکھنے کے لیے ایرے ڈکلیئر کریں۔ ہر دن کو 0 قدر دیں۔\n\nQ.5 دو میٹرکسز A[3][2] اور B[2][3] کا حاصلِ ضرب معلوم کرنے کا C++ پروگرام لکھیں۔\n\nQ.6 دو میٹرکسز A[3][3] اور B[3][3] کی تفریق اور جمع معلوم کرنے کا C++ پروگرام لکھیں۔\n\nQ.7 میٹرکس A[3][3] کا ٹرانسپوز معلوم کرنے کا C++ پروگرام لکھیں۔\n\nQ.8 پورے ہفتے کا درجۂ حرارت ایک ایرے میں پڑھنے اور پھر ہفتے کا سب سے گرم دن معلوم کرنے کا C++ پروگرام لکھیں۔\n\nQ.9 کی بورڈ سے انگریزی کے دس حروفِ تہجی ایک character قسم کے ایرے میں پڑھنے اور پھر انھیں نزولی ترتیب میں ترتیب دینے کا C++ پروگرام لکھیں۔\n\nQ.10 دو جہتی ایرے int Test[2][3] کی قدروں کا مجموعہ معلوم کرنے اور نتیجہ اسکرین پر دکھانے کا C++ پروگرام لکھیں۔",
+   "theoryPashto": "تمرین\n\nپوښتنه ۱: تش ځایونه ډک کړئ.\n\ni. په C/C++ ژبه کې عموماً د لړۍ شاخص‌ورکول له ________ پیلېږي.\n\nii. د int x[10] لړۍ اندازه ________ ده.\n\niii. char century [100][365][24][60][60] د ________ لړۍ بېلګه ده.\n\niv. د تورو لړۍ ________ بلل کېږي.\n\nv. float x[12] د ________ ډول یو-بعدي لړۍ تعریفوي.\n\nپوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.\n\ni. په پرله‌پسې حافظه ځایونو کې د ایښودل شویو یو ډول ډېټا توکو ټولګه ________ بلل کېږي.\n\n(a) ریکارډ\n\n(b) لړۍ\n\n(c) پروګرام\n\n(d) دوتنه\n\nii. لاندې بیانونو ته وګورئ او پرېکړه وکړئ چې څه کوي.\n\nstring mystring;\ngetline(cin, mystring);\n\n(a) له cin څخه د تار یوه کرښه mystring ته لولي\n\n(b) له mystring څخه د تار یوه کرښه cin ته لولي\n\n(c) cin په دې ډول نه شي کارېدای\n\n(d) له پورته هېڅ یو\n\niii. د string stream د کارولو لپاره کومه سرپاڼه دوتنه باید شامله شي؟\n\n(a) <iostream>\n\n(b) <string>\n\n(c) <sstring>\n\n(d) <sstream>\n\niv. په لړۍ کې د یوه توکي د ځای شمېره ________ بلل کېږي.\n\n(a) ډېټا\n\n(b) ارزښت\n\n(c) شاخص\n\n(d) ثابت\n\nv. تارونه د تورو لړۍ دي. د هغې وروستی شاخص null توری ________ لري.\n\n(a) \\n\n\n(b) \\t\n\n(c) \\0\n\n(d) \\1\n\nپوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.\n\ni. لړۍ د ناورته ډول ډېټا ټولګه ده.\n\nii. لړۍ ته د اعلان پر مهال لومړنی ارزښت ورکول کېدای شي.\n\niii. char vowel[5] د integer ډول لړۍ اعلانوي چې د انګلیسي ژبې ږغیز توري ساتي.\n\niv. د لویو لړیو د چلولو لپاره حلقه غوره وسیله ده.\n\nv. د لړۍ عناصر په حافظه کې هر چېرې چې تش ځای وي، ساتل کېږي.\n\nQ.4 د کال د هرې ورځې د لوړې تودوخې (د درجې تر نږدې لسمې برخې) د ساتلو لپاره یوه لړۍ اعلان کړئ. هرې ورځې ته 0 ارزښت ورکړئ.\n\nQ.5 د دوو ماتریکسونو A[3][2] او B[2][3] د ضرب موندلو لپاره یو C++ پروګرام ولیکئ.\n\nQ.6 د دوو ماتریکسونو A[3][3] او B[3][3] د تفریق او جمع موندلو لپاره یو C++ پروګرام ولیکئ.\n\nQ.7 د A[3][3] ماتریکس د ټرانسپوز موندلو لپاره یو C++ پروګرام ولیکئ.\n\nQ.8 یو C++ پروګرام ولیکئ چې د ټولې اونۍ تودوخه په یوه لړۍ کې ولولي او بیا د اونۍ تر ټولو ګرمه ورځ پیدا کړي.\n\nQ.9 یو C++ پروګرام ولیکئ چې له کیبورډ د انګلیسي لس توري د character ډول لړۍ ته ولولي او بیا یې په نزولي ترتیب ترتیب کړي.\n\nQ.10 یو C++ پروګرام ولیکئ چې د int Test[2][3] دوه-بعدي لړۍ د ارزښتونو مجموعه پیدا کړي او پایله پر پرده وښيي.",
+   "content": "<p>Exercise</p><p>Q.1 Fill in the Blanks.</p><p>i. In C/C++ language, normally the indexing of an array starts from ________ .</p><p>ii. The size of the array int x[10] is ________ .</p><p>iii. char century [100][365][24][60][60] is an example of ________ array.</p><p>iv. An array of characters is called ________ .</p><p>v. float x[12] defines one dimensional array of type ________ .</p><p>Q.2 Select the correct choice for the following Multiple Choice Questions.</p><p>i. A collection of data items of the same data types placed in contiguous memory locations is called ________ .</p><p>(a) Record</p><p>(b) Array</p><p>(c) Program</p><p>(d) File</p><p>ii. Observe the following statements and decide what they do.</p><p>string mystring;\ngetline(cin, mystring);</p><p>(a) reads a line of string from cin into mystring</p><p>(b) reads a line of string from mystring into cin</p><p>(c) cin can’t be used this way</p><p>(d) none of the above</p><p>iii. Which of the header file must be included to use string stream?</p><p>(a) &lt;iostream&gt;</p><p>(b) &lt;string&gt;</p><p>(c) &lt;sstring&gt;</p><p>(d) &lt;sstream&gt;</p><p>iv. The location number of an item in an array is called ________ .</p><p>(a) Data</p><p>(b) Value</p><p>(c) Index</p><p>(d) Constant</p><p>v. Strings are character arrays. The last index of it contains the null character ________ .</p><p>(a) \\n</p><p>(b) \\t</p><p>(c) \\0</p><p>(d) \\1</p><p>Q.3 Write TRUE/FALSE against the following statements.</p><p>i. Array is a collection of heterogeneous type of data.</p><p>ii. Array can be initialized during declaration time.</p><p>iii. char vowel[5] declares an integer type array that holds the vowel characters of English language.</p><p>iv. Loop is the best tool for handling large arrays.</p><p>v. Array elements are stored in the memory where ever free space is available.</p><p>Q.4 Declare an array to hold the high temperature (to the nearest tenth of a degree) for each day of a year. Assign a value of 0 to each day.</p><p>Q.5 Write down a C++ program to find the multiplication of two matrices A[3][2] and B[2][3].</p><p>Q.6 Write down a C++ program to find the subtraction and addition of two matrices A[3][3] and B[3][3].</p><p>Q.7 Write a C++ program to find the transpose of a matrix A[3][3].</p><p>Q.8 Write a C++ program to read the temperature of the whole week in an array and then find the hottest day of the week.</p><p>Q.9 Write a C++ program to read ten alphabets of English from the keyboard into a character type array and then sort them in descending order.</p><p>Q.10 Write a C++ program to find sum of the values of a two dimensional array int Test[2][3] and display the result on the screen.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      15,
+      16,
+      17,
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      20,
+      21,
+      22,
+      23
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      24
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      25,
+      26,
+      27,
+      28
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      29
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      30,
+      31,
+      32,
+      33
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      34
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      35,
+      36,
+      37,
+      38,
+      39
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      40
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      41
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      42
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      43
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      44
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      45
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      46
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 92,
+     "printedPages": [
+      173,
+      174
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 exercise",
+   "sourcePageLabel": "PDF 92 · p. 173–174",
+   "sourceNote": "The exercise runs from p.173 to p.174 (PDF93) and is recorded here whole.",
+   "unit": 5
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

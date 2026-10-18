@@ -1,0 +1,366 @@
+{
+ "pdfPage": 110,
+ "sections": [
+  {
+   "id": "stat12-p110-examples-6-9-6-10",
+   "title": "Examples 6.9–6.10 — confidence intervals for μ (σ known)",
+   "headingUrdu": "مثالیں 6.9–6.10 — μ کے لیے اعتماد کے وقفے (σ معلوم)",
+   "headingPashto": "بېلګې 6.9–6.10 — د μ لپاره د باور واټنونه (σ معلوم)",
+   "paras": [
+    {
+     "text": "We are given σ = 40, n = 100, $\\overline{x}=780$, and confidence level $1-\\alpha=95\\%=0.95$ so $\\alpha=1-0.95=0.05$, $\\frac{\\alpha}{2}=\\frac{0.05}{2}=0.025$",
+     "urdu": "ہمیں دیا گیا ہے σ = 40، n = 100، $\\overline{x}=780$، اور اعتماد کی سطح $1-\\alpha=95\\%=0.95$ لہٰذا $\\alpha=1-0.95=0.05$، $\\frac{\\alpha}{2}=\\frac{0.05}{2}=0.025$",
+     "pashto": "موږ ته ورکړل شوي σ = 40، n = 100، $\\overline{x}=780$، او د باور کچه $1-\\alpha=95\\%=0.95$ نو $\\alpha=1-0.95=0.05$، $\\frac{\\alpha}{2}=\\frac{0.05}{2}=0.025$"
+    },
+    {
+     "text": "Now make inverse use of area table of standard normal distribution and search 0.5 − 0.025 = 0.475 in the body of the table which correspond to $Z_{\\alpha/2}=Z_{0.025}=1.96$.",
+     "urdu": "اب معیاری نارمل تقسیم کے رقبے کے جدول کا الٹا استعمال کریں اور جدول کے متن میں 0.5 − 0.025 = 0.475 تلاش کریں جو $Z_{\\alpha/2}=Z_{0.025}=1.96$ کے مطابق ہے۔",
+     "pashto": "اوس د معیاري نورمال وېش د مساحت جدول معکوس وکاروئ او د جدول په متن کې 0.5 − 0.025 = 0.475 ولټوئ چې له $Z_{\\alpha/2}=Z_{0.025}=1.96$ سره سمون لري."
+    },
+    {
+     "text": "Putting values in the above interval estimator, we get",
+     "urdu": "اوپر کے وقفہ تخمین کار میں قیمتیں رکھنے سے",
+     "pashto": "په پورتني واټني اټکلوونکي کې د قیمتونو ایښودو سره"
+    },
+    {
+     "text": "$780\\pm 1.96\\frac{40}{\\sqrt{100}}$",
+     "urdu": "$780\\pm 1.96\\frac{40}{\\sqrt{100}}$",
+     "pashto": "$780\\pm 1.96\\frac{40}{\\sqrt{100}}$"
+    },
+    {
+     "text": "$780\\pm 1.96(4)$",
+     "urdu": "$780\\pm 1.96(4)$",
+     "pashto": "$780\\pm 1.96(4)$"
+    },
+    {
+     "text": "$[772.16,\\ 787.84]$",
+     "urdu": "$[772.16,\\ 787.84]$",
+     "pashto": "$[772.16,\\ 787.84]$"
+    },
+    {
+     "text": "Hence the 95% confidence interval for μ is from 772.16 to 787.84 hours.",
+     "urdu": "لہٰذا μ کے لیے 95% اعتماد کا وقفہ 772.16 سے 787.84 گھنٹے تک ہے۔",
+     "pashto": "نو د μ لپاره 95% د باور واټن له 772.16 څخه تر 787.84 ساعتونو پورې دی."
+    },
+    {
+     "text": "Example 6.10",
+     "urdu": "مثال 6.10",
+     "pashto": "بېلګه 6.10"
+    },
+    {
+     "text": "A random sample of size n = 400 selected without replacement from a population of size N = 2000 with σ = 4 gives $\\overline{x}=80$. Use this sample information to construct a 90% confidence interval for the mean of the population.",
+     "urdu": "N = 2000 سائز کی آبادی سے، جس کا σ = 4 ہے، بغیر واپسی کے منتخب n = 400 سائز کا تصادفی نمونہ $\\overline{x}=80$ دیتا ہے۔ اس نمونے کی معلومات سے آبادی کے اوسط کے لیے 90% اعتماد کا وقفہ بنائیں۔",
+     "pashto": "د N = 2000 اندازې له نفوس څخه چې σ = 4 لري، پرته له بېرته اچولو ټاکل شوې د n = 400 اندازې تصادفي نمونه $\\overline{x}=80$ ورکوي. د دې نمونې معلومات وکاروئ او د نفوس د منځني لپاره 90% د باور واټن جوړ کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "A 100 (1−α)% confidence interval for μ is $\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}}$",
+     "urdu": "μ کے لیے 100 (1−α)% اعتماد کا وقفہ $\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}}$ ہے",
+     "pashto": "د μ لپاره 100 (1−α)% د باور واټن $\\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}}$ دی"
+    },
+    {
+     "text": "Given that N = 2000, n = 400, σ = 4, $\\overline{x}=80$,",
+     "urdu": "دیا گیا ہے N = 2000، n = 400، σ = 4، $\\overline{x}=80$،",
+     "pashto": "ورکړل شوي N = 2000، n = 400، σ = 4، $\\overline{x}=80$،"
+    },
+    {
+     "text": "$$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$$",
+     "urdu": "$$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$$",
+     "pashto": "$$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$$"
+    },
+    {
+     "text": "From the area table we have $Z_{\\alpha/2}=Z_{0.05}=1.645$ corresponding to the probability 0.50 − 0.05 = 0.45",
+     "urdu": "رقبے کے جدول سے احتمال 0.50 − 0.05 = 0.45 کے مطابق $Z_{\\alpha/2}=Z_{0.05}=1.645$ ہے",
+     "pashto": "د مساحت له جدول څخه د 0.50 − 0.05 = 0.45 احتمال سره سم $Z_{\\alpha/2}=Z_{0.05}=1.645$ دی"
+    },
+    {
+     "text": "Hence the 90% confidence interval for μ is",
+     "urdu": "لہٰذا μ کے لیے 90% اعتماد کا وقفہ یہ ہے",
+     "pashto": "نو د μ لپاره 90% د باور واټن دا دی"
+    },
+    {
+     "text": "$80\\pm 1.645\\frac{4}{\\sqrt{400}}\\sqrt{\\frac{2000-400}{2000-1}}$",
+     "urdu": "$80\\pm 1.645\\frac{4}{\\sqrt{400}}\\sqrt{\\frac{2000-400}{2000-1}}$",
+     "pashto": "$80\\pm 1.645\\frac{4}{\\sqrt{400}}\\sqrt{\\frac{2000-400}{2000-1}}$"
+    },
+    {
+     "text": "$\\text{or } 80\\pm 0.294$",
+     "urdu": "$\\text{or } 80\\pm 0.294$",
+     "pashto": "$\\text{or } 80\\pm 0.294$"
+    },
+    {
+     "text": "$\\text{or } 80-0.294,\\ 80+0.294$",
+     "urdu": "$\\text{or } 80-0.294,\\ 80+0.294$",
+     "pashto": "$\\text{or } 80-0.294,\\ 80+0.294$"
+    },
+    {
+     "text": "$\\text{or } [79.706,\\ 80.294]$",
+     "urdu": "$\\text{or } [79.706,\\ 80.294]$",
+     "pashto": "$\\text{or } [79.706,\\ 80.294]$"
+    }
+   ],
+   "theory": "We are given σ = 40, n = 100, \\overline{x}=780, and confidence level 1-\\alpha=95\\%=0.95 so \\alpha=1-0.95=0.05, \\frac{\\alpha}{2}=\\frac{0.05}{2}=0.025\n\nNow make inverse use of area table of standard normal distribution and search 0.5 − 0.025 = 0.475 in the body of the table which correspond to Z_{\\alpha/2}=Z_{0.025}=1.96.\n\nPutting values in the above interval estimator, we get\n\n780\\pm 1.96\\frac{40}{\\sqrt{100}}\n\n780\\pm 1.96(4)\n\n[772.16,\\ 787.84]\n\nHence the 95% confidence interval for μ is from 772.16 to 787.84 hours.\n\nExample 6.10\n\nA random sample of size n = 400 selected without replacement from a population of size N = 2000 with σ = 4 gives \\overline{x}=80. Use this sample information to construct a 90% confidence interval for the mean of the population.\n\nSolution:\n\nA 100 (1−α)% confidence interval for μ is \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}}\n\nGiven that N = 2000, n = 400, σ = 4, \\overline{x}=80,\n\n$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$\n\nFrom the area table we have Z_{\\alpha/2}=Z_{0.05}=1.645 corresponding to the probability 0.50 − 0.05 = 0.45\n\nHence the 90% confidence interval for μ is\n\n80\\pm 1.645\\frac{4}{\\sqrt{400}}\\sqrt{\\frac{2000-400}{2000-1}}\n\n\\text{or } 80\\pm 0.294\n\n\\text{or } 80-0.294,\\ 80+0.294\n\n\\text{or } [79.706,\\ 80.294]",
+   "urdu": "ہمیں دیا گیا ہے σ = 40، n = 100، \\overline{x}=780، اور اعتماد کی سطح 1-\\alpha=95\\%=0.95 لہٰذا \\alpha=1-0.95=0.05، \\frac{\\alpha}{2}=\\frac{0.05}{2}=0.025\n\nاب معیاری نارمل تقسیم کے رقبے کے جدول کا الٹا استعمال کریں اور جدول کے متن میں 0.5 − 0.025 = 0.475 تلاش کریں جو Z_{\\alpha/2}=Z_{0.025}=1.96 کے مطابق ہے۔\n\nاوپر کے وقفہ تخمین کار میں قیمتیں رکھنے سے\n\n780\\pm 1.96\\frac{40}{\\sqrt{100}}\n\n780\\pm 1.96(4)\n\n[772.16,\\ 787.84]\n\nلہٰذا μ کے لیے 95% اعتماد کا وقفہ 772.16 سے 787.84 گھنٹے تک ہے۔\n\nمثال 6.10\n\nN = 2000 سائز کی آبادی سے، جس کا σ = 4 ہے، بغیر واپسی کے منتخب n = 400 سائز کا تصادفی نمونہ \\overline{x}=80 دیتا ہے۔ اس نمونے کی معلومات سے آبادی کے اوسط کے لیے 90% اعتماد کا وقفہ بنائیں۔\n\nحل:\n\nμ کے لیے 100 (1−α)% اعتماد کا وقفہ \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}} ہے\n\nدیا گیا ہے N = 2000، n = 400، σ = 4، \\overline{x}=80،\n\n$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$\n\nرقبے کے جدول سے احتمال 0.50 − 0.05 = 0.45 کے مطابق Z_{\\alpha/2}=Z_{0.05}=1.645 ہے\n\nلہٰذا μ کے لیے 90% اعتماد کا وقفہ یہ ہے\n\n80\\pm 1.645\\frac{4}{\\sqrt{400}}\\sqrt{\\frac{2000-400}{2000-1}}\n\n\\text{or } 80\\pm 0.294\n\n\\text{or } 80-0.294,\\ 80+0.294\n\n\\text{or } [79.706,\\ 80.294]",
+   "pashto": "موږ ته ورکړل شوي σ = 40، n = 100، \\overline{x}=780، او د باور کچه 1-\\alpha=95\\%=0.95 نو \\alpha=1-0.95=0.05، \\frac{\\alpha}{2}=\\frac{0.05}{2}=0.025\n\nاوس د معیاري نورمال وېش د مساحت جدول معکوس وکاروئ او د جدول په متن کې 0.5 − 0.025 = 0.475 ولټوئ چې له Z_{\\alpha/2}=Z_{0.025}=1.96 سره سمون لري.\n\nپه پورتني واټني اټکلوونکي کې د قیمتونو ایښودو سره\n\n780\\pm 1.96\\frac{40}{\\sqrt{100}}\n\n780\\pm 1.96(4)\n\n[772.16,\\ 787.84]\n\nنو د μ لپاره 95% د باور واټن له 772.16 څخه تر 787.84 ساعتونو پورې دی.\n\nبېلګه 6.10\n\nد N = 2000 اندازې له نفوس څخه چې σ = 4 لري، پرته له بېرته اچولو ټاکل شوې د n = 400 اندازې تصادفي نمونه \\overline{x}=80 ورکوي. د دې نمونې معلومات وکاروئ او د نفوس د منځني لپاره 90% د باور واټن جوړ کړئ.\n\nحل:\n\nد μ لپاره 100 (1−α)% د باور واټن \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}} دی\n\nورکړل شوي N = 2000، n = 400، σ = 4، \\overline{x}=80،\n\n$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$\n\nد مساحت له جدول څخه د 0.50 − 0.05 = 0.45 احتمال سره سم Z_{\\alpha/2}=Z_{0.05}=1.645 دی\n\nنو د μ لپاره 90% د باور واټن دا دی\n\n80\\pm 1.645\\frac{4}{\\sqrt{400}}\\sqrt{\\frac{2000-400}{2000-1}}\n\n\\text{or } 80\\pm 0.294\n\n\\text{or } 80-0.294,\\ 80+0.294\n\n\\text{or } [79.706,\\ 80.294]",
+   "theoryUrdu": "ہمیں دیا گیا ہے σ = 40، n = 100، \\overline{x}=780، اور اعتماد کی سطح 1-\\alpha=95\\%=0.95 لہٰذا \\alpha=1-0.95=0.05، \\frac{\\alpha}{2}=\\frac{0.05}{2}=0.025\n\nاب معیاری نارمل تقسیم کے رقبے کے جدول کا الٹا استعمال کریں اور جدول کے متن میں 0.5 − 0.025 = 0.475 تلاش کریں جو Z_{\\alpha/2}=Z_{0.025}=1.96 کے مطابق ہے۔\n\nاوپر کے وقفہ تخمین کار میں قیمتیں رکھنے سے\n\n780\\pm 1.96\\frac{40}{\\sqrt{100}}\n\n780\\pm 1.96(4)\n\n[772.16,\\ 787.84]\n\nلہٰذا μ کے لیے 95% اعتماد کا وقفہ 772.16 سے 787.84 گھنٹے تک ہے۔\n\nمثال 6.10\n\nN = 2000 سائز کی آبادی سے، جس کا σ = 4 ہے، بغیر واپسی کے منتخب n = 400 سائز کا تصادفی نمونہ \\overline{x}=80 دیتا ہے۔ اس نمونے کی معلومات سے آبادی کے اوسط کے لیے 90% اعتماد کا وقفہ بنائیں۔\n\nحل:\n\nμ کے لیے 100 (1−α)% اعتماد کا وقفہ \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}} ہے\n\nدیا گیا ہے N = 2000، n = 400، σ = 4، \\overline{x}=80،\n\n$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$\n\nرقبے کے جدول سے احتمال 0.50 − 0.05 = 0.45 کے مطابق Z_{\\alpha/2}=Z_{0.05}=1.645 ہے\n\nلہٰذا μ کے لیے 90% اعتماد کا وقفہ یہ ہے\n\n80\\pm 1.645\\frac{4}{\\sqrt{400}}\\sqrt{\\frac{2000-400}{2000-1}}\n\n\\text{or } 80\\pm 0.294\n\n\\text{or } 80-0.294,\\ 80+0.294\n\n\\text{or } [79.706,\\ 80.294]",
+   "theoryPashto": "موږ ته ورکړل شوي σ = 40، n = 100، \\overline{x}=780، او د باور کچه 1-\\alpha=95\\%=0.95 نو \\alpha=1-0.95=0.05، \\frac{\\alpha}{2}=\\frac{0.05}{2}=0.025\n\nاوس د معیاري نورمال وېش د مساحت جدول معکوس وکاروئ او د جدول په متن کې 0.5 − 0.025 = 0.475 ولټوئ چې له Z_{\\alpha/2}=Z_{0.025}=1.96 سره سمون لري.\n\nپه پورتني واټني اټکلوونکي کې د قیمتونو ایښودو سره\n\n780\\pm 1.96\\frac{40}{\\sqrt{100}}\n\n780\\pm 1.96(4)\n\n[772.16,\\ 787.84]\n\nنو د μ لپاره 95% د باور واټن له 772.16 څخه تر 787.84 ساعتونو پورې دی.\n\nبېلګه 6.10\n\nد N = 2000 اندازې له نفوس څخه چې σ = 4 لري، پرته له بېرته اچولو ټاکل شوې د n = 400 اندازې تصادفي نمونه \\overline{x}=80 ورکوي. د دې نمونې معلومات وکاروئ او د نفوس د منځني لپاره 90% د باور واټن جوړ کړئ.\n\nحل:\n\nد μ لپاره 100 (1−α)% د باور واټن \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}} دی\n\nورکړل شوي N = 2000، n = 400، σ = 4، \\overline{x}=80،\n\n$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$\n\nد مساحت له جدول څخه د 0.50 − 0.05 = 0.45 احتمال سره سم Z_{\\alpha/2}=Z_{0.05}=1.645 دی\n\nنو د μ لپاره 90% د باور واټن دا دی\n\n80\\pm 1.645\\frac{4}{\\sqrt{400}}\\sqrt{\\frac{2000-400}{2000-1}}\n\n\\text{or } 80\\pm 0.294\n\n\\text{or } 80-0.294,\\ 80+0.294\n\n\\text{or } [79.706,\\ 80.294]",
+   "content": "<p>We are given σ = 40, n = 100, \\overline{x}=780, and confidence level 1-\\alpha=95\\%=0.95 so \\alpha=1-0.95=0.05, \\frac{\\alpha}{2}=\\frac{0.05}{2}=0.025</p><p>Now make inverse use of area table of standard normal distribution and search 0.5 − 0.025 = 0.475 in the body of the table which correspond to Z_{\\alpha/2}=Z_{0.025}=1.96.</p><p>Putting values in the above interval estimator, we get</p><p>780\\pm 1.96\\frac{40}{\\sqrt{100}}</p><p>780\\pm 1.96(4)</p><p>[772.16,\\ 787.84]</p><p>Hence the 95% confidence interval for μ is from 772.16 to 787.84 hours.</p><p>Example 6.10</p><p>A random sample of size n = 400 selected without replacement from a population of size N = 2000 with σ = 4 gives \\overline{x}=80. Use this sample information to construct a 90% confidence interval for the mean of the population.</p><p>Solution:</p><p>A 100 (1−α)% confidence interval for μ is \\overline{X}\\pm Z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}}</p><p>Given that N = 2000, n = 400, σ = 4, \\overline{x}=80,</p><p>$1-\\alpha=0.90,\\ \\alpha=0.10,\\ \\frac{\\alpha}{2}=0.05.$</p><p>From the area table we have Z_{\\alpha/2}=Z_{0.05}=1.645 corresponding to the probability 0.50 − 0.05 = 0.45</p><p>Hence the 90% confidence interval for μ is</p><p>80\\pm 1.645\\frac{4}{\\sqrt{400}}\\sqrt{\\frac{2000-400}{2000-1}}</p><p>\\text{or } 80\\pm 0.294</p><p>\\text{or } 80-0.294,\\ 80+0.294</p><p>\\text{or } [79.706,\\ 80.294]</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      15,
+      16,
+      17,
+      18
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 110,
+     "printedPages": [
+      211,
+      212
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  },
+  {
+   "id": "stat12-p110-ci-sigma-unknown",
+   "title": "6.3.3 Large-sample CI for μ when σ is unknown — Example 6.11",
+   "headingUrdu": "6.3.3 σ نامعلوم ہونے پر μ کے لیے بڑے نمونے کا اعتماد کا وقفہ — مثال 6.11",
+   "headingPashto": "6.3.3 کله چې σ نامعلوم وي د μ لپاره د لویې نمونې د باور واټن — بېلګه 6.11",
+   "paras": [
+    {
+     "text": "6.3.3 Large sample confidence interval for population mean μ when σ is unknown",
+     "urdu": "6.3.3 جب σ نامعلوم ہو تو آبادی کے اوسط μ کے لیے بڑے نمونے کا اعتماد کا وقفہ",
+     "pashto": "6.3.3 کله چې σ نامعلوم وي، د نفوس د منځني μ لپاره د لویې نمونې د باور واټن"
+    },
+    {
+     "text": "Practically, σ is usually not known but if n ≥ 30 then, central limit theorem allows us to consider the sampling distribution of $\\overline{X}$ as approximately normal with mean μ and $S.E=\\frac{s}{\\sqrt{n}}$ that is, σ is replaced by sample standard deviation s. An approximate 100 (1−α)% confidence interval for μ in this case is given as;",
+     "urdu": "عملاً σ عموماً معلوم نہیں ہوتا لیکن اگر n ≥ 30 ہو تو مرکزی حدی مسئلہ ہمیں اجازت دیتا ہے کہ $\\overline{X}$ کی نمونہ جاتی تقسیم کو تقریباً نارمل سمجھیں جس کا اوسط μ اور $S.E=\\frac{s}{\\sqrt{n}}$ ہو، یعنی σ کو نمونے کے معیاری انحراف s سے بدل دیا جاتا ہے۔ اس صورت میں μ کے لیے تقریبی 100 (1−α)% اعتماد کا وقفہ یہ ہے؛",
+     "pashto": "په عمل کې σ معمولاً معلوم نه وي خو که n ≥ 30 وي، نو د مرکزي حد قضیه موږ ته اجازه راکوي چې د $\\overline{X}$ نمونوي وېش نږدې نورمال وګڼو چې منځنی یې μ او $S.E=\\frac{s}{\\sqrt{n}}$ وي، یعنې σ د نمونې په معیاري انحراف s بدلېږي. په دې حالت کې د μ لپاره نږدې 100 (1−α)% د باور واټن دا دی؛"
+    },
+    {
+     "text": "$$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}.$$",
+     "urdu": "$$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}.$$",
+     "pashto": "$$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}.$$"
+    },
+    {
+     "text": "Example 6.11",
+     "urdu": "مثال 6.11",
+     "pashto": "بېلګه 6.11"
+    },
+    {
+     "text": "A scientist, interested in monitoring chemical contaminants in food, selected a random sample of n = 50 male adults. It was found that the average daily intake of dairy products was $\\overline{x}=756$ grams per day with a standard deviation of s = 35 grams per day. Construct a 95% confidence interval for the mean daily intake of dairy products for males.",
+     "urdu": "خوراک میں کیمیائی آلودگیوں کی نگرانی میں دلچسپی رکھنے والے ایک سائنس دان نے n = 50 بالغ مردوں کا تصادفی نمونہ منتخب کیا۔ معلوم ہوا کہ ڈیری مصنوعات کا اوسط یومیہ استعمال $\\overline{x}=756$ گرام فی دن اور معیاری انحراف s = 35 گرام فی دن تھا۔ مردوں کے لیے ڈیری مصنوعات کے اوسط یومیہ استعمال کا 95% اعتماد کا وقفہ بنائیں۔",
+     "pashto": "یوه ساینس پوه چې په خوړو کې د کیمیاوي ککړتیاوو په څارنه کې علاقه لري، د n = 50 بالغو نارینه وو تصادفي نمونه وټاکله. معلومه شوه چې د لبنیاتو منځنی ورځنی مصرف $\\overline{x}=756$ ګرامه په ورځ او معیاري انحراف یې s = 35 ګرامه په ورځ و. د نارینه وو لپاره د لبنیاتو د منځني ورځني مصرف 95% د باور واټن جوړ کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Here σ is unknown but n = 50 is large, therefore, 100(1−α)% confidence interval for μ is:",
+     "urdu": "یہاں σ نامعلوم ہے لیکن n = 50 بڑا ہے، لہٰذا μ کے لیے 100(1−α)% اعتماد کا وقفہ یہ ہے:",
+     "pashto": "دلته σ نامعلوم دی خو n = 50 لوی دی، نو د μ لپاره 100(1−α)% د باور واټن دا دی:"
+    },
+    {
+     "text": "$$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}$$",
+     "urdu": "$$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}$$",
+     "pashto": "$$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}$$"
+    },
+    {
+     "text": "We have $1-\\alpha=0.95$, $\\alpha=0.05$, $Z_{\\alpha/2}=Z_{0.025}=1.96$",
+     "urdu": "ہمارے پاس $1-\\alpha=0.95$، $\\alpha=0.05$، $Z_{\\alpha/2}=Z_{0.025}=1.96$ ہیں",
+     "pashto": "موږ لرو $1-\\alpha=0.95$، $\\alpha=0.05$، $Z_{\\alpha/2}=Z_{0.025}=1.96$"
+    },
+    {
+     "text": "Hence the approximate 95% confidence interval for μ is",
+     "urdu": "لہٰذا μ کے لیے تقریبی 95% اعتماد کا وقفہ یہ ہے",
+     "pashto": "نو د μ لپاره نږدې 95% د باور واټن دا دی"
+    }
+   ],
+   "theory": "6.3.3 Large sample confidence interval for population mean μ when σ is unknown\n\nPractically, σ is usually not known but if n ≥ 30 then, central limit theorem allows us to consider the sampling distribution of \\overline{X} as approximately normal with mean μ and S.E=\\frac{s}{\\sqrt{n}} that is, σ is replaced by sample standard deviation s. An approximate 100 (1−α)% confidence interval for μ in this case is given as;\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}.$\n\nExample 6.11\n\nA scientist, interested in monitoring chemical contaminants in food, selected a random sample of n = 50 male adults. It was found that the average daily intake of dairy products was \\overline{x}=756 grams per day with a standard deviation of s = 35 grams per day. Construct a 95% confidence interval for the mean daily intake of dairy products for males.\n\nSolution:\n\nHere σ is unknown but n = 50 is large, therefore, 100(1−α)% confidence interval for μ is:\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}$\n\nWe have 1-\\alpha=0.95, \\alpha=0.05, Z_{\\alpha/2}=Z_{0.025}=1.96\n\nHence the approximate 95% confidence interval for μ is",
+   "urdu": "6.3.3 جب σ نامعلوم ہو تو آبادی کے اوسط μ کے لیے بڑے نمونے کا اعتماد کا وقفہ\n\nعملاً σ عموماً معلوم نہیں ہوتا لیکن اگر n ≥ 30 ہو تو مرکزی حدی مسئلہ ہمیں اجازت دیتا ہے کہ \\overline{X} کی نمونہ جاتی تقسیم کو تقریباً نارمل سمجھیں جس کا اوسط μ اور S.E=\\frac{s}{\\sqrt{n}} ہو، یعنی σ کو نمونے کے معیاری انحراف s سے بدل دیا جاتا ہے۔ اس صورت میں μ کے لیے تقریبی 100 (1−α)% اعتماد کا وقفہ یہ ہے؛\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}.$\n\nمثال 6.11\n\nخوراک میں کیمیائی آلودگیوں کی نگرانی میں دلچسپی رکھنے والے ایک سائنس دان نے n = 50 بالغ مردوں کا تصادفی نمونہ منتخب کیا۔ معلوم ہوا کہ ڈیری مصنوعات کا اوسط یومیہ استعمال \\overline{x}=756 گرام فی دن اور معیاری انحراف s = 35 گرام فی دن تھا۔ مردوں کے لیے ڈیری مصنوعات کے اوسط یومیہ استعمال کا 95% اعتماد کا وقفہ بنائیں۔\n\nحل:\n\nیہاں σ نامعلوم ہے لیکن n = 50 بڑا ہے، لہٰذا μ کے لیے 100(1−α)% اعتماد کا وقفہ یہ ہے:\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}$\n\nہمارے پاس 1-\\alpha=0.95، \\alpha=0.05، Z_{\\alpha/2}=Z_{0.025}=1.96 ہیں\n\nلہٰذا μ کے لیے تقریبی 95% اعتماد کا وقفہ یہ ہے",
+   "pashto": "6.3.3 کله چې σ نامعلوم وي، د نفوس د منځني μ لپاره د لویې نمونې د باور واټن\n\nپه عمل کې σ معمولاً معلوم نه وي خو که n ≥ 30 وي، نو د مرکزي حد قضیه موږ ته اجازه راکوي چې د \\overline{X} نمونوي وېش نږدې نورمال وګڼو چې منځنی یې μ او S.E=\\frac{s}{\\sqrt{n}} وي، یعنې σ د نمونې په معیاري انحراف s بدلېږي. په دې حالت کې د μ لپاره نږدې 100 (1−α)% د باور واټن دا دی؛\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}.$\n\nبېلګه 6.11\n\nیوه ساینس پوه چې په خوړو کې د کیمیاوي ککړتیاوو په څارنه کې علاقه لري، د n = 50 بالغو نارینه وو تصادفي نمونه وټاکله. معلومه شوه چې د لبنیاتو منځنی ورځنی مصرف \\overline{x}=756 ګرامه په ورځ او معیاري انحراف یې s = 35 ګرامه په ورځ و. د نارینه وو لپاره د لبنیاتو د منځني ورځني مصرف 95% د باور واټن جوړ کړئ.\n\nحل:\n\nدلته σ نامعلوم دی خو n = 50 لوی دی، نو د μ لپاره 100(1−α)% د باور واټن دا دی:\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}$\n\nموږ لرو 1-\\alpha=0.95، \\alpha=0.05، Z_{\\alpha/2}=Z_{0.025}=1.96\n\nنو د μ لپاره نږدې 95% د باور واټن دا دی",
+   "theoryUrdu": "6.3.3 جب σ نامعلوم ہو تو آبادی کے اوسط μ کے لیے بڑے نمونے کا اعتماد کا وقفہ\n\nعملاً σ عموماً معلوم نہیں ہوتا لیکن اگر n ≥ 30 ہو تو مرکزی حدی مسئلہ ہمیں اجازت دیتا ہے کہ \\overline{X} کی نمونہ جاتی تقسیم کو تقریباً نارمل سمجھیں جس کا اوسط μ اور S.E=\\frac{s}{\\sqrt{n}} ہو، یعنی σ کو نمونے کے معیاری انحراف s سے بدل دیا جاتا ہے۔ اس صورت میں μ کے لیے تقریبی 100 (1−α)% اعتماد کا وقفہ یہ ہے؛\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}.$\n\nمثال 6.11\n\nخوراک میں کیمیائی آلودگیوں کی نگرانی میں دلچسپی رکھنے والے ایک سائنس دان نے n = 50 بالغ مردوں کا تصادفی نمونہ منتخب کیا۔ معلوم ہوا کہ ڈیری مصنوعات کا اوسط یومیہ استعمال \\overline{x}=756 گرام فی دن اور معیاری انحراف s = 35 گرام فی دن تھا۔ مردوں کے لیے ڈیری مصنوعات کے اوسط یومیہ استعمال کا 95% اعتماد کا وقفہ بنائیں۔\n\nحل:\n\nیہاں σ نامعلوم ہے لیکن n = 50 بڑا ہے، لہٰذا μ کے لیے 100(1−α)% اعتماد کا وقفہ یہ ہے:\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}$\n\nہمارے پاس 1-\\alpha=0.95، \\alpha=0.05، Z_{\\alpha/2}=Z_{0.025}=1.96 ہیں\n\nلہٰذا μ کے لیے تقریبی 95% اعتماد کا وقفہ یہ ہے",
+   "theoryPashto": "6.3.3 کله چې σ نامعلوم وي، د نفوس د منځني μ لپاره د لویې نمونې د باور واټن\n\nپه عمل کې σ معمولاً معلوم نه وي خو که n ≥ 30 وي، نو د مرکزي حد قضیه موږ ته اجازه راکوي چې د \\overline{X} نمونوي وېش نږدې نورمال وګڼو چې منځنی یې μ او S.E=\\frac{s}{\\sqrt{n}} وي، یعنې σ د نمونې په معیاري انحراف s بدلېږي. په دې حالت کې د μ لپاره نږدې 100 (1−α)% د باور واټن دا دی؛\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}.$\n\nبېلګه 6.11\n\nیوه ساینس پوه چې په خوړو کې د کیمیاوي ککړتیاوو په څارنه کې علاقه لري، د n = 50 بالغو نارینه وو تصادفي نمونه وټاکله. معلومه شوه چې د لبنیاتو منځنی ورځنی مصرف \\overline{x}=756 ګرامه په ورځ او معیاري انحراف یې s = 35 ګرامه په ورځ و. د نارینه وو لپاره د لبنیاتو د منځني ورځني مصرف 95% د باور واټن جوړ کړئ.\n\nحل:\n\nدلته σ نامعلوم دی خو n = 50 لوی دی، نو د μ لپاره 100(1−α)% د باور واټن دا دی:\n\n$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}$\n\nموږ لرو 1-\\alpha=0.95، \\alpha=0.05، Z_{\\alpha/2}=Z_{0.025}=1.96\n\nنو د μ لپاره نږدې 95% د باور واټن دا دی",
+   "content": "<p>6.3.3 Large sample confidence interval for population mean μ when σ is unknown</p><p>Practically, σ is usually not known but if n ≥ 30 then, central limit theorem allows us to consider the sampling distribution of \\overline{X} as approximately normal with mean μ and S.E=\\frac{s}{\\sqrt{n}} that is, σ is replaced by sample standard deviation s. An approximate 100 (1−α)% confidence interval for μ in this case is given as;</p><p>$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}.$</p><p>Example 6.11</p><p>A scientist, interested in monitoring chemical contaminants in food, selected a random sample of n = 50 male adults. It was found that the average daily intake of dairy products was \\overline{x}=756 grams per day with a standard deviation of s = 35 grams per day. Construct a 95% confidence interval for the mean daily intake of dairy products for males.</p><p>Solution:</p><p>Here σ is unknown but n = 50 is large, therefore, 100(1−α)% confidence interval for μ is:</p><p>$\\overline{X}\\pm Z_{\\alpha/2}\\frac{s}{\\sqrt{n}}$</p><p>We have 1-\\alpha=0.95, \\alpha=0.05, Z_{\\alpha/2}=Z_{0.025}=1.96</p><p>Hence the approximate 95% confidence interval for μ is</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 110,
+     "printedPages": [
+      212
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

@@ -1,0 +1,343 @@
+{
+ "pdfPage": 30,
+ "sections": [
+  {
+   "id": "stat12-p030-pdf",
+   "title": "2.3 Continuous random variables — probability density function",
+   "headingUrdu": "2.3 مسلسل تصادفی متغیرات — احتمالی کثافتی تفاعل",
+   "headingPashto": "2.3 متصل تصادفي متغیرونه — د احتمال کثافت تابع",
+   "paras": [
+    {
+     "text": "$(vi)\\quad S.D\\left(\\frac{X}{3}\\right)=\\frac{S.D(X)}{|3|}\\qquad\\because S.D(x)=\\sqrt{0.89}=0.94$",
+     "urdu": "$(vi)\\quad S.D\\left(\\frac{X}{3}\\right)=\\frac{S.D(X)}{|3|}\\qquad\\because S.D(x)=\\sqrt{0.89}=0.94$",
+     "pashto": "$(vi)\\quad S.D\\left(\\frac{X}{3}\\right)=\\frac{S.D(X)}{|3|}\\qquad\\because S.D(x)=\\sqrt{0.89}=0.94$"
+    },
+    {
+     "text": "$=\\frac{0.94}{3}=0.314$",
+     "urdu": "$=\\frac{0.94}{3}=0.314$",
+     "pashto": "$=\\frac{0.94}{3}=0.314$"
+    },
+    {
+     "text": "2.3 Probability distribution of a continuous random variable",
+     "urdu": "2.3 مسلسل تصادفی متغیر کی احتمالی تقسیم",
+     "pashto": "2.3 د متصل تصادفي متغیر احتمالي وېش"
+    },
+    {
+     "text": "All possible values of a continuous random variable along with probability cannot be presented in tabular form. This purpose is only achieved by formula, called probability density function of the continuous random variable.",
+     "urdu": "مسلسل تصادفی متغیر کی تمام ممکنہ قیمتیں احتمالات کے ساتھ جدولی شکل میں پیش نہیں کی جا سکتیں۔ یہ مقصد صرف فارمولا سے حاصل ہوتا ہے جسے مسلسل تصادفی متغیر کا احتمالی کثافتی تفاعل کہتے ہیں۔",
+     "pashto": "د متصل تصادفي متغیر ټول شوني قیمتونه له احتمال سره په جدولي بڼه نه شي وړاندې کېدای. دا موخه یوازې د فورمول په واسطه ترلاسه کېږي چې د متصل تصادفي متغیر د احتمال کثافت تابع بلل کېږي."
+    },
+    {
+     "text": "2.3.1 Probability density function",
+     "urdu": "2.3.1 احتمالی کثافتی تفاعل",
+     "pashto": "2.3.1 د احتمال کثافت تابع"
+    },
+    {
+     "text": "If probability distribution of a continuous random variable is expressed by a formula, then it is called probability density function (pdf) or simply density function and is denoted by f(x).",
+     "urdu": "اگر کسی مسلسل تصادفی متغیر کی احتمالی تقسیم فارمولا سے ظاہر کی جائے تو اسے احتمالی کثافتی تفاعل (pdf) یا صرف کثافتی تفاعل کہتے ہیں اور اسے f(x) سے ظاہر کرتے ہیں۔",
+     "pashto": "که د یوه متصل تصادفي متغیر احتمالي وېش د فورمول په واسطه وښودل شي، نو د احتمال کثافت تابع (pdf) یا یوازې کثافت تابع بلل کېږي او په f(x) ښودل کېږي."
+    },
+    {
+     "text": "2.3.2 Properties of probability density function",
+     "urdu": "2.3.2 احتمالی کثافتی تفاعل کی خصوصیات",
+     "pashto": "2.3.2 د احتمال کثافت تابع ځانګړنې"
+    },
+    {
+     "text": "A pdf must satisfy the following important properties:",
+     "urdu": "pdf کو درج ذیل اہم خصوصیات پوری کرنی چاہئیں:",
+     "pashto": "pdf باید لاندې مهمې ځانګړنې پوره کړي:"
+    },
+    {
+     "text": "$(i)\\quad f(x)\\ge 0,\\ a\\le x\\le b$",
+     "urdu": "$(i)\\quad f(x)\\ge 0,\\ a\\le x\\le b$",
+     "pashto": "$(i)\\quad f(x)\\ge 0,\\ a\\le x\\le b$"
+    },
+    {
+     "text": "$(ii)\\quad\\int_{-\\infty}^{\\infty}f(x)\\,dx=1$",
+     "urdu": "$(ii)\\quad\\int_{-\\infty}^{\\infty}f(x)\\,dx=1$",
+     "pashto": "$(ii)\\quad\\int_{-\\infty}^{\\infty}f(x)\\,dx=1$"
+    },
+    {
+     "text": "Example: 2.15",
+     "urdu": "مثال: 2.15",
+     "pashto": "بېلګه: 2.15"
+    },
+    {
+     "text": "A continuous random variable X has the probability function given by",
+     "urdu": "ایک مسلسل تصادفی متغیر X کا احتمالی تفاعل یہ ہے",
+     "pashto": "یو متصل تصادفي متغیر X دا احتمالي تابع لري"
+    },
+    {
+     "text": "$$f(x)=\\left\\{\\begin{matrix}cx, & 0<x<1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$f(x)=\\left\\{\\begin{matrix}cx, & 0<x<1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$f(x)=\\left\\{\\begin{matrix}cx, & 0<x<1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "i. Find value of the constant c.",
+     "urdu": "i. مستقل c کی قیمت معلوم کریں۔",
+     "pashto": "i. د ثابت c قیمت پیدا کړئ."
+    },
+    {
+     "text": "ii. Check that the function is a p.d.f",
+     "urdu": "ii. جانچیں کہ تفاعل p.d.f ہے",
+     "pashto": "ii. وګورئ چې تابع p.d.f ده"
+    },
+    {
+     "text": "iii. Compute (a) $P\\left[\\frac{1}{4}<X<\\frac{1}{2}\\right]$ (b) $P\\left(X>\\frac{1}{2}\\right)$ (c) $P\\left(X=\\frac{1}{2}\\right)$",
+     "urdu": "iii. معلوم کریں (a) $P\\left[\\frac{1}{4}<X<\\frac{1}{2}\\right]$ (b) $P\\left(X>\\frac{1}{2}\\right)$ (c) $P\\left(X=\\frac{1}{2}\\right)$",
+     "pashto": "iii. محاسبه کړئ (a) $P\\left[\\frac{1}{4}<X<\\frac{1}{2}\\right]$ (b) $P\\left(X>\\frac{1}{2}\\right)$ (c) $P\\left(X=\\frac{1}{2}\\right)$"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "(i) We know that sum of all probabilities is equal to one i.e.",
+     "urdu": "(i) ہم جانتے ہیں کہ تمام احتمالات کا مجموعہ ایک کے برابر ہوتا ہے یعنی",
+     "pashto": "(i) پوهېږو چې د ټولو احتمالونو مجموعه له یو سره برابره ده یعنې"
+    },
+    {
+     "text": "$\\int_{0}^{1}f(x)\\,dx=1$",
+     "urdu": "$\\int_{0}^{1}f(x)\\,dx=1$",
+     "pashto": "$\\int_{0}^{1}f(x)\\,dx=1$"
+    },
+    {
+     "text": "$\\int_{0}^{1}cx\\,dx=1$",
+     "urdu": "$\\int_{0}^{1}cx\\,dx=1$",
+     "pashto": "$\\int_{0}^{1}cx\\,dx=1$"
+    },
+    {
+     "text": "$c\\int_{0}^{1}x\\,dx=1$",
+     "urdu": "$c\\int_{0}^{1}x\\,dx=1$",
+     "pashto": "$c\\int_{0}^{1}x\\,dx=1$"
+    },
+    {
+     "text": "$c\\left[\\frac{x^2}{2}\\right]_{0}^{1}=1$",
+     "urdu": "$c\\left[\\frac{x^2}{2}\\right]_{0}^{1}=1$",
+     "pashto": "$c\\left[\\frac{x^2}{2}\\right]_{0}^{1}=1$"
+    },
+    {
+     "text": "$c\\left(\\frac{1}{2}-0\\right)=1$",
+     "urdu": "$c\\left(\\frac{1}{2}-0\\right)=1$",
+     "pashto": "$c\\left(\\frac{1}{2}-0\\right)=1$"
+    },
+    {
+     "text": "$\\frac{c}{2}=1\\quad\\Rightarrow c=2$",
+     "urdu": "$\\frac{c}{2}=1\\quad\\Rightarrow c=2$",
+     "pashto": "$\\frac{c}{2}=1\\quad\\Rightarrow c=2$"
+    },
+    {
+     "text": "Put the value of c in the given function, we have",
+     "urdu": "دیے گئے تفاعل میں c کی قیمت رکھنے سے",
+     "pashto": "په ورکړل شوې تابع کې د c قیمت ایښودو سره"
+    },
+    {
+     "text": "$$f(x)=\\left\\{\\begin{matrix}2x & 0<x<1\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$",
+     "urdu": "$$f(x)=\\left\\{\\begin{matrix}2x & 0<x<1\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$",
+     "pashto": "$$f(x)=\\left\\{\\begin{matrix}2x & 0<x<1\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$"
+    },
+    {
+     "text": "(ii) a) $f(x)\\ge 0$ for the given range",
+     "urdu": "(ii) a) دی گئی حد میں $f(x)\\ge 0$",
+     "pashto": "(ii) a) په ورکړل شوي حد کې $f(x)\\ge 0$"
+    },
+    {
+     "text": "b) $\\int_x f(x)\\,dx=1$",
+     "urdu": "b) $\\int_x f(x)\\,dx=1$",
+     "pashto": "b) $\\int_x f(x)\\,dx=1$"
+    },
+    {
+     "text": "Taking L.H.S",
+     "urdu": "بائیں طرف (L.H.S) لینے سے",
+     "pashto": "کیڼ اړخ (L.H.S) اخیستلو سره"
+    },
+    {
+     "text": "$$\\int_x f(x)\\,dx=\\int_{0}^{1}2x\\,dx=2\\int_{0}^{1}x\\,dx=2\\left.\\frac{x^2}{2}\\right|_{0}^{1}=\\left.x^2\\right|_{0}^{1}=1-0=1=R.H.S$$",
+     "urdu": "$$\\int_x f(x)\\,dx=\\int_{0}^{1}2x\\,dx=2\\int_{0}^{1}x\\,dx=2\\left.\\frac{x^2}{2}\\right|_{0}^{1}=\\left.x^2\\right|_{0}^{1}=1-0=1=R.H.S$$",
+     "pashto": "$$\\int_x f(x)\\,dx=\\int_{0}^{1}2x\\,dx=2\\int_{0}^{1}x\\,dx=2\\left.\\frac{x^2}{2}\\right|_{0}^{1}=\\left.x^2\\right|_{0}^{1}=1-0=1=R.H.S$$"
+    },
+    {
+     "text": "Since both properties are satisfied, therefore, the given function is a p.d.f.",
+     "urdu": "چونکہ دونوں خصوصیات پوری ہوتی ہیں، لہٰذا دیا گیا تفاعل p.d.f ہے۔",
+     "pashto": "څرنګه چې دواړه ځانګړنې پوره دي، نو ورکړل شوې تابع p.d.f ده."
+    }
+   ],
+   "theory": "(vi)\\quad S.D\\left(\\frac{X}{3}\\right)=\\frac{S.D(X)}{|3|}\\qquad\\because S.D(x)=\\sqrt{0.89}=0.94\n\n=\\frac{0.94}{3}=0.314\n\n2.3 Probability distribution of a continuous random variable\n\nAll possible values of a continuous random variable along with probability cannot be presented in tabular form. This purpose is only achieved by formula, called probability density function of the continuous random variable.\n\n2.3.1 Probability density function\n\nIf probability distribution of a continuous random variable is expressed by a formula, then it is called probability density function (pdf) or simply density function and is denoted by f(x).\n\n2.3.2 Properties of probability density function\n\nA pdf must satisfy the following important properties:\n\n(i)\\quad f(x)\\ge 0,\\ a\\le x\\le b\n\n(ii)\\quad\\int_{-\\infty}^{\\infty}f(x)\\,dx=1\n\nExample: 2.15\n\nA continuous random variable X has the probability function given by\n\n$f(x)=\\left\\{\\begin{matrix}cx, & 0<x<1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\ni. Find value of the constant c.\n\nii. Check that the function is a p.d.f\n\niii. Compute (a) P\\left[\\frac{1}{4}<X<\\frac{1}{2}\\right] (b) P\\left(X>\\frac{1}{2}\\right) (c) P\\left(X=\\frac{1}{2}\\right)\n\nSolution:\n\n(i) We know that sum of all probabilities is equal to one i.e.\n\n\\int_{0}^{1}f(x)\\,dx=1\n\n\\int_{0}^{1}cx\\,dx=1\n\nc\\int_{0}^{1}x\\,dx=1\n\nc\\left[\\frac{x^2}{2}\\right]_{0}^{1}=1\n\nc\\left(\\frac{1}{2}-0\\right)=1\n\n\\frac{c}{2}=1\\quad\\Rightarrow c=2\n\nPut the value of c in the given function, we have\n\n$f(x)=\\left\\{\\begin{matrix}2x & 0<x<1\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\n(ii) a) f(x)\\ge 0 for the given range\n\nb) \\int_x f(x)\\,dx=1\n\nTaking L.H.S\n\n$\\int_x f(x)\\,dx=\\int_{0}^{1}2x\\,dx=2\\int_{0}^{1}x\\,dx=2\\left.\\frac{x^2}{2}\\right|_{0}^{1}=\\left.x^2\\right|_{0}^{1}=1-0=1=R.H.S$\n\nSince both properties are satisfied, therefore, the given function is a p.d.f.",
+   "urdu": "(vi)\\quad S.D\\left(\\frac{X}{3}\\right)=\\frac{S.D(X)}{|3|}\\qquad\\because S.D(x)=\\sqrt{0.89}=0.94\n\n=\\frac{0.94}{3}=0.314\n\n2.3 مسلسل تصادفی متغیر کی احتمالی تقسیم\n\nمسلسل تصادفی متغیر کی تمام ممکنہ قیمتیں احتمالات کے ساتھ جدولی شکل میں پیش نہیں کی جا سکتیں۔ یہ مقصد صرف فارمولا سے حاصل ہوتا ہے جسے مسلسل تصادفی متغیر کا احتمالی کثافتی تفاعل کہتے ہیں۔\n\n2.3.1 احتمالی کثافتی تفاعل\n\nاگر کسی مسلسل تصادفی متغیر کی احتمالی تقسیم فارمولا سے ظاہر کی جائے تو اسے احتمالی کثافتی تفاعل (pdf) یا صرف کثافتی تفاعل کہتے ہیں اور اسے f(x) سے ظاہر کرتے ہیں۔\n\n2.3.2 احتمالی کثافتی تفاعل کی خصوصیات\n\npdf کو درج ذیل اہم خصوصیات پوری کرنی چاہئیں:\n\n(i)\\quad f(x)\\ge 0,\\ a\\le x\\le b\n\n(ii)\\quad\\int_{-\\infty}^{\\infty}f(x)\\,dx=1\n\nمثال: 2.15\n\nایک مسلسل تصادفی متغیر X کا احتمالی تفاعل یہ ہے\n\n$f(x)=\\left\\{\\begin{matrix}cx, & 0<x<1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\ni. مستقل c کی قیمت معلوم کریں۔\n\nii. جانچیں کہ تفاعل p.d.f ہے\n\niii. معلوم کریں (a) P\\left[\\frac{1}{4}<X<\\frac{1}{2}\\right] (b) P\\left(X>\\frac{1}{2}\\right) (c) P\\left(X=\\frac{1}{2}\\right)\n\nحل:\n\n(i) ہم جانتے ہیں کہ تمام احتمالات کا مجموعہ ایک کے برابر ہوتا ہے یعنی\n\n\\int_{0}^{1}f(x)\\,dx=1\n\n\\int_{0}^{1}cx\\,dx=1\n\nc\\int_{0}^{1}x\\,dx=1\n\nc\\left[\\frac{x^2}{2}\\right]_{0}^{1}=1\n\nc\\left(\\frac{1}{2}-0\\right)=1\n\n\\frac{c}{2}=1\\quad\\Rightarrow c=2\n\nدیے گئے تفاعل میں c کی قیمت رکھنے سے\n\n$f(x)=\\left\\{\\begin{matrix}2x & 0<x<1\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\n(ii) a) دی گئی حد میں f(x)\\ge 0\n\nb) \\int_x f(x)\\,dx=1\n\nبائیں طرف (L.H.S) لینے سے\n\n$\\int_x f(x)\\,dx=\\int_{0}^{1}2x\\,dx=2\\int_{0}^{1}x\\,dx=2\\left.\\frac{x^2}{2}\\right|_{0}^{1}=\\left.x^2\\right|_{0}^{1}=1-0=1=R.H.S$\n\nچونکہ دونوں خصوصیات پوری ہوتی ہیں، لہٰذا دیا گیا تفاعل p.d.f ہے۔",
+   "pashto": "(vi)\\quad S.D\\left(\\frac{X}{3}\\right)=\\frac{S.D(X)}{|3|}\\qquad\\because S.D(x)=\\sqrt{0.89}=0.94\n\n=\\frac{0.94}{3}=0.314\n\n2.3 د متصل تصادفي متغیر احتمالي وېش\n\nد متصل تصادفي متغیر ټول شوني قیمتونه له احتمال سره په جدولي بڼه نه شي وړاندې کېدای. دا موخه یوازې د فورمول په واسطه ترلاسه کېږي چې د متصل تصادفي متغیر د احتمال کثافت تابع بلل کېږي.\n\n2.3.1 د احتمال کثافت تابع\n\nکه د یوه متصل تصادفي متغیر احتمالي وېش د فورمول په واسطه وښودل شي، نو د احتمال کثافت تابع (pdf) یا یوازې کثافت تابع بلل کېږي او په f(x) ښودل کېږي.\n\n2.3.2 د احتمال کثافت تابع ځانګړنې\n\npdf باید لاندې مهمې ځانګړنې پوره کړي:\n\n(i)\\quad f(x)\\ge 0,\\ a\\le x\\le b\n\n(ii)\\quad\\int_{-\\infty}^{\\infty}f(x)\\,dx=1\n\nبېلګه: 2.15\n\nیو متصل تصادفي متغیر X دا احتمالي تابع لري\n\n$f(x)=\\left\\{\\begin{matrix}cx, & 0<x<1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\ni. د ثابت c قیمت پیدا کړئ.\n\nii. وګورئ چې تابع p.d.f ده\n\niii. محاسبه کړئ (a) P\\left[\\frac{1}{4}<X<\\frac{1}{2}\\right] (b) P\\left(X>\\frac{1}{2}\\right) (c) P\\left(X=\\frac{1}{2}\\right)\n\nحل:\n\n(i) پوهېږو چې د ټولو احتمالونو مجموعه له یو سره برابره ده یعنې\n\n\\int_{0}^{1}f(x)\\,dx=1\n\n\\int_{0}^{1}cx\\,dx=1\n\nc\\int_{0}^{1}x\\,dx=1\n\nc\\left[\\frac{x^2}{2}\\right]_{0}^{1}=1\n\nc\\left(\\frac{1}{2}-0\\right)=1\n\n\\frac{c}{2}=1\\quad\\Rightarrow c=2\n\nپه ورکړل شوې تابع کې د c قیمت ایښودو سره\n\n$f(x)=\\left\\{\\begin{matrix}2x & 0<x<1\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\n(ii) a) په ورکړل شوي حد کې f(x)\\ge 0\n\nb) \\int_x f(x)\\,dx=1\n\nکیڼ اړخ (L.H.S) اخیستلو سره\n\n$\\int_x f(x)\\,dx=\\int_{0}^{1}2x\\,dx=2\\int_{0}^{1}x\\,dx=2\\left.\\frac{x^2}{2}\\right|_{0}^{1}=\\left.x^2\\right|_{0}^{1}=1-0=1=R.H.S$\n\nڅرنګه چې دواړه ځانګړنې پوره دي، نو ورکړل شوې تابع p.d.f ده.",
+   "theoryUrdu": "(vi)\\quad S.D\\left(\\frac{X}{3}\\right)=\\frac{S.D(X)}{|3|}\\qquad\\because S.D(x)=\\sqrt{0.89}=0.94\n\n=\\frac{0.94}{3}=0.314\n\n2.3 مسلسل تصادفی متغیر کی احتمالی تقسیم\n\nمسلسل تصادفی متغیر کی تمام ممکنہ قیمتیں احتمالات کے ساتھ جدولی شکل میں پیش نہیں کی جا سکتیں۔ یہ مقصد صرف فارمولا سے حاصل ہوتا ہے جسے مسلسل تصادفی متغیر کا احتمالی کثافتی تفاعل کہتے ہیں۔\n\n2.3.1 احتمالی کثافتی تفاعل\n\nاگر کسی مسلسل تصادفی متغیر کی احتمالی تقسیم فارمولا سے ظاہر کی جائے تو اسے احتمالی کثافتی تفاعل (pdf) یا صرف کثافتی تفاعل کہتے ہیں اور اسے f(x) سے ظاہر کرتے ہیں۔\n\n2.3.2 احتمالی کثافتی تفاعل کی خصوصیات\n\npdf کو درج ذیل اہم خصوصیات پوری کرنی چاہئیں:\n\n(i)\\quad f(x)\\ge 0,\\ a\\le x\\le b\n\n(ii)\\quad\\int_{-\\infty}^{\\infty}f(x)\\,dx=1\n\nمثال: 2.15\n\nایک مسلسل تصادفی متغیر X کا احتمالی تفاعل یہ ہے\n\n$f(x)=\\left\\{\\begin{matrix}cx, & 0<x<1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\ni. مستقل c کی قیمت معلوم کریں۔\n\nii. جانچیں کہ تفاعل p.d.f ہے\n\niii. معلوم کریں (a) P\\left[\\frac{1}{4}<X<\\frac{1}{2}\\right] (b) P\\left(X>\\frac{1}{2}\\right) (c) P\\left(X=\\frac{1}{2}\\right)\n\nحل:\n\n(i) ہم جانتے ہیں کہ تمام احتمالات کا مجموعہ ایک کے برابر ہوتا ہے یعنی\n\n\\int_{0}^{1}f(x)\\,dx=1\n\n\\int_{0}^{1}cx\\,dx=1\n\nc\\int_{0}^{1}x\\,dx=1\n\nc\\left[\\frac{x^2}{2}\\right]_{0}^{1}=1\n\nc\\left(\\frac{1}{2}-0\\right)=1\n\n\\frac{c}{2}=1\\quad\\Rightarrow c=2\n\nدیے گئے تفاعل میں c کی قیمت رکھنے سے\n\n$f(x)=\\left\\{\\begin{matrix}2x & 0<x<1\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\n(ii) a) دی گئی حد میں f(x)\\ge 0\n\nb) \\int_x f(x)\\,dx=1\n\nبائیں طرف (L.H.S) لینے سے\n\n$\\int_x f(x)\\,dx=\\int_{0}^{1}2x\\,dx=2\\int_{0}^{1}x\\,dx=2\\left.\\frac{x^2}{2}\\right|_{0}^{1}=\\left.x^2\\right|_{0}^{1}=1-0=1=R.H.S$\n\nچونکہ دونوں خصوصیات پوری ہوتی ہیں، لہٰذا دیا گیا تفاعل p.d.f ہے۔",
+   "theoryPashto": "(vi)\\quad S.D\\left(\\frac{X}{3}\\right)=\\frac{S.D(X)}{|3|}\\qquad\\because S.D(x)=\\sqrt{0.89}=0.94\n\n=\\frac{0.94}{3}=0.314\n\n2.3 د متصل تصادفي متغیر احتمالي وېش\n\nد متصل تصادفي متغیر ټول شوني قیمتونه له احتمال سره په جدولي بڼه نه شي وړاندې کېدای. دا موخه یوازې د فورمول په واسطه ترلاسه کېږي چې د متصل تصادفي متغیر د احتمال کثافت تابع بلل کېږي.\n\n2.3.1 د احتمال کثافت تابع\n\nکه د یوه متصل تصادفي متغیر احتمالي وېش د فورمول په واسطه وښودل شي، نو د احتمال کثافت تابع (pdf) یا یوازې کثافت تابع بلل کېږي او په f(x) ښودل کېږي.\n\n2.3.2 د احتمال کثافت تابع ځانګړنې\n\npdf باید لاندې مهمې ځانګړنې پوره کړي:\n\n(i)\\quad f(x)\\ge 0,\\ a\\le x\\le b\n\n(ii)\\quad\\int_{-\\infty}^{\\infty}f(x)\\,dx=1\n\nبېلګه: 2.15\n\nیو متصل تصادفي متغیر X دا احتمالي تابع لري\n\n$f(x)=\\left\\{\\begin{matrix}cx, & 0<x<1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\ni. د ثابت c قیمت پیدا کړئ.\n\nii. وګورئ چې تابع p.d.f ده\n\niii. محاسبه کړئ (a) P\\left[\\frac{1}{4}<X<\\frac{1}{2}\\right] (b) P\\left(X>\\frac{1}{2}\\right) (c) P\\left(X=\\frac{1}{2}\\right)\n\nحل:\n\n(i) پوهېږو چې د ټولو احتمالونو مجموعه له یو سره برابره ده یعنې\n\n\\int_{0}^{1}f(x)\\,dx=1\n\n\\int_{0}^{1}cx\\,dx=1\n\nc\\int_{0}^{1}x\\,dx=1\n\nc\\left[\\frac{x^2}{2}\\right]_{0}^{1}=1\n\nc\\left(\\frac{1}{2}-0\\right)=1\n\n\\frac{c}{2}=1\\quad\\Rightarrow c=2\n\nپه ورکړل شوې تابع کې د c قیمت ایښودو سره\n\n$f(x)=\\left\\{\\begin{matrix}2x & 0<x<1\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\n(ii) a) په ورکړل شوي حد کې f(x)\\ge 0\n\nb) \\int_x f(x)\\,dx=1\n\nکیڼ اړخ (L.H.S) اخیستلو سره\n\n$\\int_x f(x)\\,dx=\\int_{0}^{1}2x\\,dx=2\\int_{0}^{1}x\\,dx=2\\left.\\frac{x^2}{2}\\right|_{0}^{1}=\\left.x^2\\right|_{0}^{1}=1-0=1=R.H.S$\n\nڅرنګه چې دواړه ځانګړنې پوره دي، نو ورکړل شوې تابع p.d.f ده.",
+   "content": "<p>(vi)\\quad S.D\\left(\\frac{X}{3}\\right)=\\frac{S.D(X)}{|3|}\\qquad\\because S.D(x)=\\sqrt{0.89}=0.94</p><p>=\\frac{0.94}{3}=0.314</p><p>2.3 Probability distribution of a continuous random variable</p><p>All possible values of a continuous random variable along with probability cannot be presented in tabular form. This purpose is only achieved by formula, called probability density function of the continuous random variable.</p><p>2.3.1 Probability density function</p><p>If probability distribution of a continuous random variable is expressed by a formula, then it is called probability density function (pdf) or simply density function and is denoted by f(x).</p><p>2.3.2 Properties of probability density function</p><p>A pdf must satisfy the following important properties:</p><p>(i)\\quad f(x)\\ge 0,\\ a\\le x\\le b</p><p>(ii)\\quad\\int_{-\\infty}^{\\infty}f(x)\\,dx=1</p><p>Example: 2.15</p><p>A continuous random variable X has the probability function given by</p><p>$f(x)=\\left\\{\\begin{matrix}cx, &amp; 0&lt;x&lt;1\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>i. Find value of the constant c.</p><p>ii. Check that the function is a p.d.f</p><p>iii. Compute (a) P\\left[\\frac{1}{4}&lt;X&lt;\\frac{1}{2}\\right] (b) P\\left(X&gt;\\frac{1}{2}\\right) (c) P\\left(X=\\frac{1}{2}\\right)</p><p>Solution:</p><p>(i) We know that sum of all probabilities is equal to one i.e.</p><p>\\int_{0}^{1}f(x)\\,dx=1</p><p>\\int_{0}^{1}cx\\,dx=1</p><p>c\\int_{0}^{1}x\\,dx=1</p><p>c\\left[\\frac{x^2}{2}\\right]_{0}^{1}=1</p><p>c\\left(\\frac{1}{2}-0\\right)=1</p><p>\\frac{c}{2}=1\\quad\\Rightarrow c=2</p><p>Put the value of c in the given function, we have</p><p>$f(x)=\\left\\{\\begin{matrix}2x &amp; 0&lt;x&lt;1\\\\ 0 &amp; \\textit{otherwise}\\end{matrix}\\right\\}$</p><p>(ii) a) f(x)\\ge 0 for the given range</p><p>b) \\int_x f(x)\\,dx=1</p><p>Taking L.H.S</p><p>$\\int_x f(x)\\,dx=\\int_{0}^{1}2x\\,dx=2\\int_{0}^{1}x\\,dx=2\\left.\\frac{x^2}{2}\\right|_{0}^{1}=\\left.x^2\\right|_{0}^{1}=1-0=1=R.H.S$</p><p>Since both properties are satisfied, therefore, the given function is a p.d.f.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      8,
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      13,
+      14,
+      15
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      24
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      25
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      26
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      27
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      28
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      29
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      30
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 30,
+     "printedPages": [
+      51,
+      52
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p52-x2-typeset",
+   "unit": 2,
+   "printedPage": 52,
+   "description": "Example 2.15(i) prints the antiderivative as “x2/2” with the exponent set on the line; rendered as x²/2."
+  }
+ ],
+ "completeUnits": []
+}

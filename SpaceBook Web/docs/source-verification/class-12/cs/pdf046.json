@@ -1,0 +1,222 @@
+{
+ "pdfPage": 46,
+ "sections": [
+  {
+   "id": "cs12-u3-text-12",
+   "title": "Unit 3 text (12)",
+   "headingUrdu": "یونٹ 3 — متن (۱۲)",
+   "headingPashto": "۳ څپرکی — متن (۱۲)",
+   "paras": [
+    {
+     "text": "The object cin can only process the input from the keyboard once the enter key is pressed. Therefore, even if you request a single character, the extraction from cin will not process the input until the user presses enter after the character has been introduced. Consider the following example to demonstrate cin and cout objects.",
+     "urdu": "آبجیکٹ cin کی بورڈ سے ان پٹ صرف اسی وقت پراسیس کر سکتا ہے جب انٹر کی دبائی جائے۔ اس لیے اگر آپ ایک ہی حرف بھی مانگیں تو cin سے نکالنا اس وقت تک ان پٹ پراسیس نہیں کرے گا جب تک صارف حرف داخل کرنے کے بعد انٹر نہ دبائے۔ cin اور cout آبجیکٹس کی وضاحت کے لیے درج ذیل مثال پر غور کریں۔",
+     "pashto": "cin شی له کیبورډ ننوتنه یوازې هغه وخت پروسس کولی شي چې انټر کیلي کېښکېکښل شي. نو که تاسو یوازې یو توری هم وغواړئ، له cin څخه راایستل تر هغه ننوتنه نه پروسس کوي چې کاروونکی د توري له لیکلو وروسته انټر کېکښي. د cin او cout شیانو د ښودلو لپاره لاندې بېلګې ته پام وکړئ."
+    },
+    {
+     "text": "// program to demonstrate cin and cout objects\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i;\nfloat age;\ncout << \"Please enter your age: \";\ncin >> age;\ncout << \"The age you entered is \" << age <<\" years\";\ngetch();\nreturn 0;\n}",
+     "urdu": "// program to demonstrate cin and cout objects\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i;\nfloat age;\ncout << \"Please enter your age: \";\ncin >> age;\ncout << \"The age you entered is \" << age <<\" years\";\ngetch();\nreturn 0;\n}",
+     "pashto": "// program to demonstrate cin and cout objects\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i;\nfloat age;\ncout << \"Please enter your age: \";\ncin >> age;\ncout << \"The age you entered is \" << age <<\" years\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Please enter your age:\n16\nThe age you entered is 16 years",
+     "urdu": "Please enter your age:\n16\nThe age you entered is 16 years",
+     "pashto": "Please enter your age:\n16\nThe age you entered is 16 years",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "cin can also be used to request more than one input from the user. Consider the following line of code:",
+     "urdu": "cin کو صارف سے ایک سے زیادہ ان پٹ مانگنے کے لیے بھی استعمال کیا جا سکتا ہے۔ کوڈ کی درج ذیل لائن پر غور کریں:",
+     "pashto": "cin له کاروونکي څخه د یوې زیاتې ننوتنې غوښتلو لپاره هم کارول کېدای شي. د کوډ لاندې کرښې ته پام وکړئ:"
+    },
+    {
+     "text": "cin >> x >> y;",
+     "urdu": "cin >> x >> y;",
+     "pashto": "cin >> x >> y;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "is equivalent to:",
+     "urdu": "جو اس کے برابر ہے:",
+     "pashto": "چې له دې سره برابر دی:"
+    },
+    {
+     "text": "cin >> x;\ncin >> y;",
+     "urdu": "cin >> x;\ncin >> y;",
+     "pashto": "cin >> x;\ncin >> y;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, in both the cases, the user need to enter two values, one for variable x and another one for variable y.",
+     "urdu": "یہاں دونوں صورتوں میں صارف کو دو قدریں داخل کرنی ہوں گی، ایک ویری ایبل x کے لیے اور دوسری ویری ایبل y کے لیے۔",
+     "pashto": "دلته په دواړو حالتونو کې کاروونکی باید دوه ارزښتونه ولیکي، یو د x متغیر لپاره او بل د y متغیر لپاره."
+    },
+    {
+     "text": "cin and strings",
+     "urdu": "cin اور اسٹرنگز",
+     "pashto": "cin او تارونه"
+    },
+    {
+     "text": "cin can also be used to get strings with the extraction operator >> in the same way as it is used to get values for variables. Consider the following line of code:",
+     "urdu": "cin کو ایکسٹریکشن آپریٹر >> کے ساتھ اسٹرنگز حاصل کرنے کے لیے بھی اسی طرح استعمال کیا جا سکتا ہے جیسے ویری ایبلز کی قدریں حاصل کرنے کے لیے۔ کوڈ کی درج ذیل لائن پر غور کریں:",
+     "pashto": "cin د راایستلو چلونکي >> سره د تارونو د ترلاسه کولو لپاره هم همداسې کارول کېدای شي لکه د متغیرونو د ارزښتونو لپاره. د کوډ لاندې کرښې ته پام وکړئ:"
+    },
+    {
+     "text": "cin >> TestStr;",
+     "urdu": "cin >> TestStr;",
+     "pashto": "cin >> TestStr;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "cin object stops reading characters when it gets any blank space character, so in this case of entering strings, the object will get only one word. For example, if one wants to input a sentence using cin object, it will only accept the first word of the sentence and will discard the rest of the words.",
+     "urdu": "cin آبجیکٹ جب کوئی خالی جگہ (space) پاتا ہے تو حروف پڑھنا بند کر دیتا ہے، اس لیے اسٹرنگز داخل کرنے کی اس صورت میں آبجیکٹ صرف ایک لفظ حاصل کرے گا۔ مثال کے طور پر اگر کوئی cin آبجیکٹ کے ذریعے جملہ داخل کرنا چاہے تو یہ صرف جملے کا پہلا لفظ قبول کرے گا اور باقی الفاظ ترک کر دے گا۔",
+     "pashto": "cin شی کله چې کومه تشه (space) ومومي، د تورو لوستل بندوي، نو د تارونو د لیکلو په دې حالت کې شی یوازې یوه کلمه ترلاسه کوي. د بېلګې په توګه که څوک وغواړي د cin په مرسته یوه جمله ولیکي، یوازې د جملې لومړۍ کلمه مني او پاتې کلمې پرېږدي."
+    },
+    {
+     "text": "In order to get entire line with spaces between the words, the function gets is used which is recommended by the programmers as compared to cin. Consider the following program demonstrating cin object for string.",
+     "urdu": "الفاظ کے درمیان خالی جگہوں سمیت پوری لائن حاصل کرنے کے لیے gets فنکشن استعمال ہوتا ہے جسے پروگرامرز cin کے مقابلے میں تجویز کرتے ہیں۔ اسٹرنگ کے لیے cin آبجیکٹ کی وضاحت کرنے والے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د کلمو ترمنځ تشو سره د ټولې کرښې د ترلاسه کولو لپاره gets فنکشن کارول کېږي چې پروګرام جوړوونکي یې د cin په پرتله سپارښتنه کوي. د تار لپاره د cin شي ښودونکي لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "// cin with strings\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar TestStr[60];\ncout << \" Enter your name please \\n\";\ncin >>Test Str;\ncout << \"\\nYour name is\" << TestStr;\ngetch();\nreturn 0;\n}",
+     "urdu": "// cin with strings\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar TestStr[60];\ncout << \" Enter your name please \\n\";\ncin >>Test Str;\ncout << \"\\nYour name is\" << TestStr;\ngetch();\nreturn 0;\n}",
+     "pashto": "// cin with strings\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar TestStr[60];\ncout << \" Enter your name please \\n\";\ncin >>Test Str;\ncout << \"\\nYour name is\" << TestStr;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "The object cin can only process the input from the keyboard once the enter key is pressed. Therefore, even if you request a single character, the extraction from cin will not process the input until the user presses enter after the character has been introduced. Consider the following example to demonstrate cin and cout objects.\n\n// program to demonstrate cin and cout objects\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i;\nfloat age;\ncout << \"Please enter your age: \";\ncin >> age;\ncout << \"The age you entered is \" << age <<\" years\";\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nPlease enter your age:\n16\nThe age you entered is 16 years\n\ncin can also be used to request more than one input from the user. Consider the following line of code:\n\ncin >> x >> y;\n\nis equivalent to:\n\ncin >> x;\ncin >> y;\n\nHere, in both the cases, the user need to enter two values, one for variable x and another one for variable y.\n\ncin and strings\n\ncin can also be used to get strings with the extraction operator >> in the same way as it is used to get values for variables. Consider the following line of code:\n\ncin >> TestStr;\n\ncin object stops reading characters when it gets any blank space character, so in this case of entering strings, the object will get only one word. For example, if one wants to input a sentence using cin object, it will only accept the first word of the sentence and will discard the rest of the words.\n\nIn order to get entire line with spaces between the words, the function gets is used which is recommended by the programmers as compared to cin. Consider the following program demonstrating cin object for string.\n\n// cin with strings\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar TestStr[60];\ncout << \" Enter your name please \\n\";\ncin >>Test Str;\ncout << \"\\nYour name is\" << TestStr;\ngetch();\nreturn 0;\n}",
+   "urdu": "آبجیکٹ cin کی بورڈ سے ان پٹ صرف اسی وقت پراسیس کر سکتا ہے جب انٹر کی دبائی جائے۔ اس لیے اگر آپ ایک ہی حرف بھی مانگیں تو cin سے نکالنا اس وقت تک ان پٹ پراسیس نہیں کرے گا جب تک صارف حرف داخل کرنے کے بعد انٹر نہ دبائے۔ cin اور cout آبجیکٹس کی وضاحت کے لیے درج ذیل مثال پر غور کریں۔\n\n// program to demonstrate cin and cout objects\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i;\nfloat age;\ncout << \"Please enter your age: \";\ncin >> age;\ncout << \"The age you entered is \" << age <<\" years\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nPlease enter your age:\n16\nThe age you entered is 16 years\n\ncin کو صارف سے ایک سے زیادہ ان پٹ مانگنے کے لیے بھی استعمال کیا جا سکتا ہے۔ کوڈ کی درج ذیل لائن پر غور کریں:\n\ncin >> x >> y;\n\nجو اس کے برابر ہے:\n\ncin >> x;\ncin >> y;\n\nیہاں دونوں صورتوں میں صارف کو دو قدریں داخل کرنی ہوں گی، ایک ویری ایبل x کے لیے اور دوسری ویری ایبل y کے لیے۔\n\ncin اور اسٹرنگز\n\ncin کو ایکسٹریکشن آپریٹر >> کے ساتھ اسٹرنگز حاصل کرنے کے لیے بھی اسی طرح استعمال کیا جا سکتا ہے جیسے ویری ایبلز کی قدریں حاصل کرنے کے لیے۔ کوڈ کی درج ذیل لائن پر غور کریں:\n\ncin >> TestStr;\n\ncin آبجیکٹ جب کوئی خالی جگہ (space) پاتا ہے تو حروف پڑھنا بند کر دیتا ہے، اس لیے اسٹرنگز داخل کرنے کی اس صورت میں آبجیکٹ صرف ایک لفظ حاصل کرے گا۔ مثال کے طور پر اگر کوئی cin آبجیکٹ کے ذریعے جملہ داخل کرنا چاہے تو یہ صرف جملے کا پہلا لفظ قبول کرے گا اور باقی الفاظ ترک کر دے گا۔\n\nالفاظ کے درمیان خالی جگہوں سمیت پوری لائن حاصل کرنے کے لیے gets فنکشن استعمال ہوتا ہے جسے پروگرامرز cin کے مقابلے میں تجویز کرتے ہیں۔ اسٹرنگ کے لیے cin آبجیکٹ کی وضاحت کرنے والے درج ذیل پروگرام پر غور کریں۔\n\n// cin with strings\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar TestStr[60];\ncout << \" Enter your name please \\n\";\ncin >>Test Str;\ncout << \"\\nYour name is\" << TestStr;\ngetch();\nreturn 0;\n}",
+   "pashto": "cin شی له کیبورډ ننوتنه یوازې هغه وخت پروسس کولی شي چې انټر کیلي کېښکېکښل شي. نو که تاسو یوازې یو توری هم وغواړئ، له cin څخه راایستل تر هغه ننوتنه نه پروسس کوي چې کاروونکی د توري له لیکلو وروسته انټر کېکښي. د cin او cout شیانو د ښودلو لپاره لاندې بېلګې ته پام وکړئ.\n\n// program to demonstrate cin and cout objects\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i;\nfloat age;\ncout << \"Please enter your age: \";\ncin >> age;\ncout << \"The age you entered is \" << age <<\" years\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nPlease enter your age:\n16\nThe age you entered is 16 years\n\ncin له کاروونکي څخه د یوې زیاتې ننوتنې غوښتلو لپاره هم کارول کېدای شي. د کوډ لاندې کرښې ته پام وکړئ:\n\ncin >> x >> y;\n\nچې له دې سره برابر دی:\n\ncin >> x;\ncin >> y;\n\nدلته په دواړو حالتونو کې کاروونکی باید دوه ارزښتونه ولیکي، یو د x متغیر لپاره او بل د y متغیر لپاره.\n\ncin او تارونه\n\ncin د راایستلو چلونکي >> سره د تارونو د ترلاسه کولو لپاره هم همداسې کارول کېدای شي لکه د متغیرونو د ارزښتونو لپاره. د کوډ لاندې کرښې ته پام وکړئ:\n\ncin >> TestStr;\n\ncin شی کله چې کومه تشه (space) ومومي، د تورو لوستل بندوي، نو د تارونو د لیکلو په دې حالت کې شی یوازې یوه کلمه ترلاسه کوي. د بېلګې په توګه که څوک وغواړي د cin په مرسته یوه جمله ولیکي، یوازې د جملې لومړۍ کلمه مني او پاتې کلمې پرېږدي.\n\nد کلمو ترمنځ تشو سره د ټولې کرښې د ترلاسه کولو لپاره gets فنکشن کارول کېږي چې پروګرام جوړوونکي یې د cin په پرتله سپارښتنه کوي. د تار لپاره د cin شي ښودونکي لاندې پروګرام ته پام وکړئ.\n\n// cin with strings\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar TestStr[60];\ncout << \" Enter your name please \\n\";\ncin >>Test Str;\ncout << \"\\nYour name is\" << TestStr;\ngetch();\nreturn 0;\n}",
+   "theoryUrdu": "آبجیکٹ cin کی بورڈ سے ان پٹ صرف اسی وقت پراسیس کر سکتا ہے جب انٹر کی دبائی جائے۔ اس لیے اگر آپ ایک ہی حرف بھی مانگیں تو cin سے نکالنا اس وقت تک ان پٹ پراسیس نہیں کرے گا جب تک صارف حرف داخل کرنے کے بعد انٹر نہ دبائے۔ cin اور cout آبجیکٹس کی وضاحت کے لیے درج ذیل مثال پر غور کریں۔\n\n// program to demonstrate cin and cout objects\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i;\nfloat age;\ncout << \"Please enter your age: \";\ncin >> age;\ncout << \"The age you entered is \" << age <<\" years\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nPlease enter your age:\n16\nThe age you entered is 16 years\n\ncin کو صارف سے ایک سے زیادہ ان پٹ مانگنے کے لیے بھی استعمال کیا جا سکتا ہے۔ کوڈ کی درج ذیل لائن پر غور کریں:\n\ncin >> x >> y;\n\nجو اس کے برابر ہے:\n\ncin >> x;\ncin >> y;\n\nیہاں دونوں صورتوں میں صارف کو دو قدریں داخل کرنی ہوں گی، ایک ویری ایبل x کے لیے اور دوسری ویری ایبل y کے لیے۔\n\ncin اور اسٹرنگز\n\ncin کو ایکسٹریکشن آپریٹر >> کے ساتھ اسٹرنگز حاصل کرنے کے لیے بھی اسی طرح استعمال کیا جا سکتا ہے جیسے ویری ایبلز کی قدریں حاصل کرنے کے لیے۔ کوڈ کی درج ذیل لائن پر غور کریں:\n\ncin >> TestStr;\n\ncin آبجیکٹ جب کوئی خالی جگہ (space) پاتا ہے تو حروف پڑھنا بند کر دیتا ہے، اس لیے اسٹرنگز داخل کرنے کی اس صورت میں آبجیکٹ صرف ایک لفظ حاصل کرے گا۔ مثال کے طور پر اگر کوئی cin آبجیکٹ کے ذریعے جملہ داخل کرنا چاہے تو یہ صرف جملے کا پہلا لفظ قبول کرے گا اور باقی الفاظ ترک کر دے گا۔\n\nالفاظ کے درمیان خالی جگہوں سمیت پوری لائن حاصل کرنے کے لیے gets فنکشن استعمال ہوتا ہے جسے پروگرامرز cin کے مقابلے میں تجویز کرتے ہیں۔ اسٹرنگ کے لیے cin آبجیکٹ کی وضاحت کرنے والے درج ذیل پروگرام پر غور کریں۔\n\n// cin with strings\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar TestStr[60];\ncout << \" Enter your name please \\n\";\ncin >>Test Str;\ncout << \"\\nYour name is\" << TestStr;\ngetch();\nreturn 0;\n}",
+   "theoryPashto": "cin شی له کیبورډ ننوتنه یوازې هغه وخت پروسس کولی شي چې انټر کیلي کېښکېکښل شي. نو که تاسو یوازې یو توری هم وغواړئ، له cin څخه راایستل تر هغه ننوتنه نه پروسس کوي چې کاروونکی د توري له لیکلو وروسته انټر کېکښي. د cin او cout شیانو د ښودلو لپاره لاندې بېلګې ته پام وکړئ.\n\n// program to demonstrate cin and cout objects\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i;\nfloat age;\ncout << \"Please enter your age: \";\ncin >> age;\ncout << \"The age you entered is \" << age <<\" years\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nPlease enter your age:\n16\nThe age you entered is 16 years\n\ncin له کاروونکي څخه د یوې زیاتې ننوتنې غوښتلو لپاره هم کارول کېدای شي. د کوډ لاندې کرښې ته پام وکړئ:\n\ncin >> x >> y;\n\nچې له دې سره برابر دی:\n\ncin >> x;\ncin >> y;\n\nدلته په دواړو حالتونو کې کاروونکی باید دوه ارزښتونه ولیکي، یو د x متغیر لپاره او بل د y متغیر لپاره.\n\ncin او تارونه\n\ncin د راایستلو چلونکي >> سره د تارونو د ترلاسه کولو لپاره هم همداسې کارول کېدای شي لکه د متغیرونو د ارزښتونو لپاره. د کوډ لاندې کرښې ته پام وکړئ:\n\ncin >> TestStr;\n\ncin شی کله چې کومه تشه (space) ومومي، د تورو لوستل بندوي، نو د تارونو د لیکلو په دې حالت کې شی یوازې یوه کلمه ترلاسه کوي. د بېلګې په توګه که څوک وغواړي د cin په مرسته یوه جمله ولیکي، یوازې د جملې لومړۍ کلمه مني او پاتې کلمې پرېږدي.\n\nد کلمو ترمنځ تشو سره د ټولې کرښې د ترلاسه کولو لپاره gets فنکشن کارول کېږي چې پروګرام جوړوونکي یې د cin په پرتله سپارښتنه کوي. د تار لپاره د cin شي ښودونکي لاندې پروګرام ته پام وکړئ.\n\n// cin with strings\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nchar TestStr[60];\ncout << \" Enter your name please \\n\";\ncin >>Test Str;\ncout << \"\\nYour name is\" << TestStr;\ngetch();\nreturn 0;\n}",
+   "content": "<p>The object cin can only process the input from the keyboard once the enter key is pressed. Therefore, even if you request a single character, the extraction from cin will not process the input until the user presses enter after the character has been introduced. Consider the following example to demonstrate cin and cout objects.</p><p>// program to demonstrate cin and cout objects\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint i;\nfloat age;\ncout &lt;&lt; &quot;Please enter your age: &quot;;\ncin &gt;&gt; age;\ncout &lt;&lt; &quot;The age you entered is &quot; &lt;&lt; age &lt;&lt;&quot; years&quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>Please enter your age:\n16\nThe age you entered is 16 years</p><p>cin can also be used to request more than one input from the user. Consider the following line of code:</p><p>cin &gt;&gt; x &gt;&gt; y;</p><p>is equivalent to:</p><p>cin &gt;&gt; x;\ncin &gt;&gt; y;</p><p>Here, in both the cases, the user need to enter two values, one for variable x and another one for variable y.</p><p>cin and strings</p><p>cin can also be used to get strings with the extraction operator &gt;&gt; in the same way as it is used to get values for variables. Consider the following line of code:</p><p>cin &gt;&gt; TestStr;</p><p>cin object stops reading characters when it gets any blank space character, so in this case of entering strings, the object will get only one word. For example, if one wants to input a sentence using cin object, it will only accept the first word of the sentence and will discard the rest of the words.</p><p>In order to get entire line with spaces between the words, the function gets is used which is recommended by the programmers as compared to cin. Consider the following program demonstrating cin object for string.</p><p>// cin with strings\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nchar TestStr[60];\ncout &lt;&lt; &quot; Enter your name please \\n&quot;;\ncin &gt;&gt;Test Str;\ncout &lt;&lt; &quot;\\nYour name is&quot; &lt;&lt; TestStr;\ngetch();\nreturn 0;\n}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      14
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 46,
+     "printedPages": [
+      80,
+      81
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (12)",
+   "sourcePageLabel": "PDF 46 · p. 80–81",
+   "sourceNote": "The output of the last program follows on p.82 (PDF47).",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf046",
+   "unit": 3,
+   "printedPage": 81,
+   "description": "The listing on p.81 prints “cin >>Test Str;” with a space inside the identifier (would not compile); p.80 prints the closing quote of “ years” as a curly quote. Both retained as printed. p.81 “the user need to enter”."
+  }
+ ],
+ "completeUnits": []
+}

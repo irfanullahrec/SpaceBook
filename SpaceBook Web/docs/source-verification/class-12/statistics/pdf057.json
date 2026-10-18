@@ -1,0 +1,291 @@
+{
+ "pdfPage": 57,
+ "sections": [
+  {
+   "id": "stat12-p057-hypergeometric-variance-end",
+   "title": "Hypergeometric variance and standard deviation",
+   "headingUrdu": "ہائپر جیومیٹرک تغیر اور معیاری انحراف",
+   "headingPashto": "د هایپرجیومټریک واریانس او معیاري انحراف",
+   "paras": [
+    {
+     "text": "$=\\frac{k(k-1)\\,n(n-1)(n-2)!}{N(N-1)(N-2)!}\\;\\frac{(N-2)!}{(n-2)!}+\\frac{nk}{N}$",
+     "urdu": "$=\\frac{k(k-1)\\,n(n-1)(n-2)!}{N(N-1)(N-2)!}\\;\\frac{(N-2)!}{(n-2)!}+\\frac{nk}{N}$",
+     "pashto": "$=\\frac{k(k-1)\\,n(n-1)(n-2)!}{N(N-1)(N-2)!}\\;\\frac{(N-2)!}{(n-2)!}+\\frac{nk}{N}$"
+    },
+    {
+     "text": "$=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}\\ldots\\ldots\\ldots(2)$",
+     "urdu": "$=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}\\ldots\\ldots\\ldots(2)$",
+     "pashto": "$=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}\\ldots\\ldots\\ldots(2)$"
+    },
+    {
+     "text": "Putting equation (1) or equation (2) in equation (A)",
+     "urdu": "مساوات (1) یا (2) کو مساوات (A) میں رکھنے سے",
+     "pashto": "د (1) یا (2) معادله په (A) معادله کې ایښودو سره"
+    },
+    {
+     "text": "$V(X)=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}-\\frac{n^2k^2}{N^2}$",
+     "urdu": "$V(X)=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}-\\frac{n^2k^2}{N^2}$",
+     "pashto": "$V(X)=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}-\\frac{n^2k^2}{N^2}$"
+    },
+    {
+     "text": "$=\\frac{nk}{N}\\left[\\frac{(n-1)(k-1)}{N-1}+1-\\frac{nk}{N}\\right]$",
+     "urdu": "$=\\frac{nk}{N}\\left[\\frac{(n-1)(k-1)}{N-1}+1-\\frac{nk}{N}\\right]$",
+     "pashto": "$=\\frac{nk}{N}\\left[\\frac{(n-1)(k-1)}{N-1}+1-\\frac{nk}{N}\\right]$"
+    },
+    {
+     "text": "$V(X)=\\frac{nk}{N}\\left[\\frac{N(n-1)(k-1)+N(N-1)-nk(N-1)}{N(N-1)}\\right]$",
+     "urdu": "$V(X)=\\frac{nk}{N}\\left[\\frac{N(n-1)(k-1)+N(N-1)-nk(N-1)}{N(N-1)}\\right]$",
+     "pashto": "$V(X)=\\frac{nk}{N}\\left[\\frac{N(n-1)(k-1)+N(N-1)-nk(N-1)}{N(N-1)}\\right]$"
+    },
+    {
+     "text": "$=\\frac{nk}{N}\\left[\\frac{nNk-nN-Nk+N+N^2-N-nkN+nk}{N(N-1)}\\right]$",
+     "urdu": "$=\\frac{nk}{N}\\left[\\frac{nNk-nN-Nk+N+N^2-N-nkN+nk}{N(N-1)}\\right]$",
+     "pashto": "$=\\frac{nk}{N}\\left[\\frac{nNk-nN-Nk+N+N^2-N-nkN+nk}{N(N-1)}\\right]$"
+    },
+    {
+     "text": "$=\\frac{nk}{N}\\left[\\frac{N^2-Nk+nk-nN}{N(N-1)}\\right]$",
+     "urdu": "$=\\frac{nk}{N}\\left[\\frac{N^2-Nk+nk-nN}{N(N-1)}\\right]$",
+     "pashto": "$=\\frac{nk}{N}\\left[\\frac{N^2-Nk+nk-nN}{N(N-1)}\\right]$"
+    },
+    {
+     "text": "$=\\frac{nk}{N}\\left[\\frac{N(N-k)-n(N-k)}{N(N-1)}\\right]$",
+     "urdu": "$=\\frac{nk}{N}\\left[\\frac{N(N-k)-n(N-k)}{N(N-1)}\\right]$",
+     "pashto": "$=\\frac{nk}{N}\\left[\\frac{N(N-k)-n(N-k)}{N(N-1)}\\right]$"
+    },
+    {
+     "text": "$=\\frac{nk}{N}\\left[\\frac{(N-k)(N-n)}{N(N-1)}\\right]$",
+     "urdu": "$=\\frac{nk}{N}\\left[\\frac{(N-k)(N-n)}{N(N-1)}\\right]$",
+     "pashto": "$=\\frac{nk}{N}\\left[\\frac{(N-k)(N-n)}{N(N-1)}\\right]$"
+    },
+    {
+     "text": "$=n\\frac{k}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}$",
+     "urdu": "$=n\\frac{k}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}$",
+     "pashto": "$=n\\frac{k}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}$"
+    },
+    {
+     "text": "$=npq\\frac{N-n}{N-1}\\qquad\\left(\\because p=\\frac{k}{N},\\ q=1-p=1-\\frac{k}{N}=\\frac{N-k}{N}\\right)$",
+     "urdu": "$=npq\\frac{N-n}{N-1}\\qquad\\left(\\because p=\\frac{k}{N},\\ q=1-p=1-\\frac{k}{N}=\\frac{N-k}{N}\\right)$",
+     "pashto": "$=npq\\frac{N-n}{N-1}\\qquad\\left(\\because p=\\frac{k}{N},\\ q=1-p=1-\\frac{k}{N}=\\frac{N-k}{N}\\right)$"
+    },
+    {
+     "text": "◆ Standard deviation of hypergeometric probability distribution is",
+     "urdu": "◆ ہائپر جیومیٹرک احتمالی تقسیم کا معیاری انحراف یہ ہے",
+     "pashto": "◆ د هایپرجیومټریک احتمالي وېش معیاري انحراف دا دی"
+    },
+    {
+     "text": "$$S.D(X)=\\sqrt{npq\\frac{N-n}{N-1}}$$",
+     "urdu": "$$S.D(X)=\\sqrt{npq\\frac{N-n}{N-1}}$$",
+     "pashto": "$$S.D(X)=\\sqrt{npq\\frac{N-n}{N-1}}$$"
+    }
+   ],
+   "theory": "=\\frac{k(k-1)\\,n(n-1)(n-2)!}{N(N-1)(N-2)!}\\;\\frac{(N-2)!}{(n-2)!}+\\frac{nk}{N}\n\n=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}\\ldots\\ldots\\ldots(2)\n\nPutting equation (1) or equation (2) in equation (A)\n\nV(X)=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}-\\frac{n^2k^2}{N^2}\n\n=\\frac{nk}{N}\\left[\\frac{(n-1)(k-1)}{N-1}+1-\\frac{nk}{N}\\right]\n\nV(X)=\\frac{nk}{N}\\left[\\frac{N(n-1)(k-1)+N(N-1)-nk(N-1)}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{nNk-nN-Nk+N+N^2-N-nkN+nk}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{N^2-Nk+nk-nN}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{N(N-k)-n(N-k)}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{(N-k)(N-n)}{N(N-1)}\\right]\n\n=n\\frac{k}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}\n\n=npq\\frac{N-n}{N-1}\\qquad\\left(\\because p=\\frac{k}{N},\\ q=1-p=1-\\frac{k}{N}=\\frac{N-k}{N}\\right)\n\n◆ Standard deviation of hypergeometric probability distribution is\n\n$S.D(X)=\\sqrt{npq\\frac{N-n}{N-1}}$",
+   "urdu": "=\\frac{k(k-1)\\,n(n-1)(n-2)!}{N(N-1)(N-2)!}\\;\\frac{(N-2)!}{(n-2)!}+\\frac{nk}{N}\n\n=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}\\ldots\\ldots\\ldots(2)\n\nمساوات (1) یا (2) کو مساوات (A) میں رکھنے سے\n\nV(X)=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}-\\frac{n^2k^2}{N^2}\n\n=\\frac{nk}{N}\\left[\\frac{(n-1)(k-1)}{N-1}+1-\\frac{nk}{N}\\right]\n\nV(X)=\\frac{nk}{N}\\left[\\frac{N(n-1)(k-1)+N(N-1)-nk(N-1)}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{nNk-nN-Nk+N+N^2-N-nkN+nk}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{N^2-Nk+nk-nN}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{N(N-k)-n(N-k)}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{(N-k)(N-n)}{N(N-1)}\\right]\n\n=n\\frac{k}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}\n\n=npq\\frac{N-n}{N-1}\\qquad\\left(\\because p=\\frac{k}{N},\\ q=1-p=1-\\frac{k}{N}=\\frac{N-k}{N}\\right)\n\n◆ ہائپر جیومیٹرک احتمالی تقسیم کا معیاری انحراف یہ ہے\n\n$S.D(X)=\\sqrt{npq\\frac{N-n}{N-1}}$",
+   "pashto": "=\\frac{k(k-1)\\,n(n-1)(n-2)!}{N(N-1)(N-2)!}\\;\\frac{(N-2)!}{(n-2)!}+\\frac{nk}{N}\n\n=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}\\ldots\\ldots\\ldots(2)\n\nد (1) یا (2) معادله په (A) معادله کې ایښودو سره\n\nV(X)=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}-\\frac{n^2k^2}{N^2}\n\n=\\frac{nk}{N}\\left[\\frac{(n-1)(k-1)}{N-1}+1-\\frac{nk}{N}\\right]\n\nV(X)=\\frac{nk}{N}\\left[\\frac{N(n-1)(k-1)+N(N-1)-nk(N-1)}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{nNk-nN-Nk+N+N^2-N-nkN+nk}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{N^2-Nk+nk-nN}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{N(N-k)-n(N-k)}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{(N-k)(N-n)}{N(N-1)}\\right]\n\n=n\\frac{k}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}\n\n=npq\\frac{N-n}{N-1}\\qquad\\left(\\because p=\\frac{k}{N},\\ q=1-p=1-\\frac{k}{N}=\\frac{N-k}{N}\\right)\n\n◆ د هایپرجیومټریک احتمالي وېش معیاري انحراف دا دی\n\n$S.D(X)=\\sqrt{npq\\frac{N-n}{N-1}}$",
+   "theoryUrdu": "=\\frac{k(k-1)\\,n(n-1)(n-2)!}{N(N-1)(N-2)!}\\;\\frac{(N-2)!}{(n-2)!}+\\frac{nk}{N}\n\n=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}\\ldots\\ldots\\ldots(2)\n\nمساوات (1) یا (2) کو مساوات (A) میں رکھنے سے\n\nV(X)=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}-\\frac{n^2k^2}{N^2}\n\n=\\frac{nk}{N}\\left[\\frac{(n-1)(k-1)}{N-1}+1-\\frac{nk}{N}\\right]\n\nV(X)=\\frac{nk}{N}\\left[\\frac{N(n-1)(k-1)+N(N-1)-nk(N-1)}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{nNk-nN-Nk+N+N^2-N-nkN+nk}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{N^2-Nk+nk-nN}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{N(N-k)-n(N-k)}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{(N-k)(N-n)}{N(N-1)}\\right]\n\n=n\\frac{k}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}\n\n=npq\\frac{N-n}{N-1}\\qquad\\left(\\because p=\\frac{k}{N},\\ q=1-p=1-\\frac{k}{N}=\\frac{N-k}{N}\\right)\n\n◆ ہائپر جیومیٹرک احتمالی تقسیم کا معیاری انحراف یہ ہے\n\n$S.D(X)=\\sqrt{npq\\frac{N-n}{N-1}}$",
+   "theoryPashto": "=\\frac{k(k-1)\\,n(n-1)(n-2)!}{N(N-1)(N-2)!}\\;\\frac{(N-2)!}{(n-2)!}+\\frac{nk}{N}\n\n=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}\\ldots\\ldots\\ldots(2)\n\nد (1) یا (2) معادله په (A) معادله کې ایښودو سره\n\nV(X)=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}-\\frac{n^2k^2}{N^2}\n\n=\\frac{nk}{N}\\left[\\frac{(n-1)(k-1)}{N-1}+1-\\frac{nk}{N}\\right]\n\nV(X)=\\frac{nk}{N}\\left[\\frac{N(n-1)(k-1)+N(N-1)-nk(N-1)}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{nNk-nN-Nk+N+N^2-N-nkN+nk}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{N^2-Nk+nk-nN}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{N(N-k)-n(N-k)}{N(N-1)}\\right]\n\n=\\frac{nk}{N}\\left[\\frac{(N-k)(N-n)}{N(N-1)}\\right]\n\n=n\\frac{k}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}\n\n=npq\\frac{N-n}{N-1}\\qquad\\left(\\because p=\\frac{k}{N},\\ q=1-p=1-\\frac{k}{N}=\\frac{N-k}{N}\\right)\n\n◆ د هایپرجیومټریک احتمالي وېش معیاري انحراف دا دی\n\n$S.D(X)=\\sqrt{npq\\frac{N-n}{N-1}}$",
+   "content": "<p>=\\frac{k(k-1)\\,n(n-1)(n-2)!}{N(N-1)(N-2)!}\\;\\frac{(N-2)!}{(n-2)!}+\\frac{nk}{N}</p><p>=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}\\ldots\\ldots\\ldots(2)</p><p>Putting equation (1) or equation (2) in equation (A)</p><p>V(X)=\\frac{n(n-1)k(k-1)}{N(N-1)}+\\frac{nk}{N}-\\frac{n^2k^2}{N^2}</p><p>=\\frac{nk}{N}\\left[\\frac{(n-1)(k-1)}{N-1}+1-\\frac{nk}{N}\\right]</p><p>V(X)=\\frac{nk}{N}\\left[\\frac{N(n-1)(k-1)+N(N-1)-nk(N-1)}{N(N-1)}\\right]</p><p>=\\frac{nk}{N}\\left[\\frac{nNk-nN-Nk+N+N^2-N-nkN+nk}{N(N-1)}\\right]</p><p>=\\frac{nk}{N}\\left[\\frac{N^2-Nk+nk-nN}{N(N-1)}\\right]</p><p>=\\frac{nk}{N}\\left[\\frac{N(N-k)-n(N-k)}{N(N-1)}\\right]</p><p>=\\frac{nk}{N}\\left[\\frac{(N-k)(N-n)}{N(N-1)}\\right]</p><p>=n\\frac{k}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}</p><p>=npq\\frac{N-n}{N-1}\\qquad\\left(\\because p=\\frac{k}{N},\\ q=1-p=1-\\frac{k}{N}=\\frac{N-k}{N}\\right)</p><p>◆ Standard deviation of hypergeometric probability distribution is</p><p>$S.D(X)=\\sqrt{npq\\frac{N-n}{N-1}}$</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      13
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 57,
+     "printedPages": [
+      105
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  },
+  {
+   "id": "stat12-p057-example-3-22",
+   "title": "Example 3.22 — green and red balls",
+   "headingUrdu": "مثال 3.22 — سبز اور سرخ گیندیں",
+   "headingPashto": "بېلګه 3.22 — شنه او سره توپونه",
+   "paras": [
+    {
+     "text": "Example 3.22",
+     "urdu": "مثال 3.22",
+     "pashto": "بېلګه 3.22"
+    },
+    {
+     "text": "A bowl contains 4 green and 7 red balls. A sample of 5 balls is selected from the bowl without replacement. Find the probability distribution for the number of green balls. Compute the mean and variance of this probability distribution and compare them with the theoretical mean and variance.",
+     "urdu": "ایک پیالے میں 4 سبز اور 7 سرخ گیندیں ہیں۔ پیالے سے بغیر واپسی کے 5 گیندوں کا نمونہ منتخب کیا جاتا ہے۔ سبز گیندوں کی تعداد کی احتمالی تقسیم معلوم کریں۔ اس احتمالی تقسیم کا اوسط اور تغیر معلوم کریں اور ان کا نظری اوسط اور تغیر سے موازنہ کریں۔",
+     "pashto": "په یوه لوښي کې 4 شنه او 7 سره توپونه دي. له لوښي څخه بې له بېرته اچولو د 5 توپونو نمونه ټاکل کېږي. د شنو توپونو د شمېر احتمالي وېش پیدا کړئ. د دې احتمالي وېش منځنی او واریانس محاسبه کړئ او له نظري منځني او واریانس سره یې پرتله کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "The bowl contains",
+     "urdu": "پیالے میں ہیں",
+     "pashto": "لوښي کې دي"
+    },
+    {
+     "text": "Here $n=5$",
+     "urdu": "یہاں $n=5$",
+     "pashto": "دلته $n=5$"
+    },
+    {
+     "text": "X: number of green balls selected",
+     "urdu": "X: منتخب سبز گیندوں کی تعداد",
+     "pashto": "X: د ټاکل شویو شنو توپونو شمېر"
+    },
+    {
+     "text": "$X=0,1,2,3,4$. [5 is not possible as there are only 4 green balls.].",
+     "urdu": "$X=0,1,2,3,4$۔ [5 ممکن نہیں کیونکہ صرف 4 سبز گیندیں ہیں۔]۔",
+     "pashto": "$X=0,1,2,3,4$. [5 شونی نه دی ځکه چې یوازې 4 شنه توپونه دي.]."
+    },
+    {
+     "text": "$$\\therefore p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{4}{x}\\binom{11-4}{5-x}}{\\binom{11}{5}}, & x=0,1,2,3,4\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$\\therefore p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{4}{x}\\binom{11-4}{5-x}}{\\binom{11}{5}}, & x=0,1,2,3,4\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$\\therefore p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{4}{x}\\binom{11-4}{5-x}}{\\binom{11}{5}}, & x=0,1,2,3,4\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "Now hypergeometric probability distribution of X is given as",
+     "urdu": "اب X کی ہائپر جیومیٹرک احتمالی تقسیم یہ ہے",
+     "pashto": "اوس د X هایپرجیومټریک احتمالي وېش داسې دی"
+    }
+   ],
+   "theory": "Example 3.22\n\nA bowl contains 4 green and 7 red balls. A sample of 5 balls is selected from the bowl without replacement. Find the probability distribution for the number of green balls. Compute the mean and variance of this probability distribution and compare them with the theoretical mean and variance.\n\nSolution:\n\nThe bowl contains\n\nHere n=5\n\nX: number of green balls selected\n\nX=0,1,2,3,4. [5 is not possible as there are only 4 green balls.].\n\n$\\therefore p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{4}{x}\\binom{11-4}{5-x}}{\\binom{11}{5}}, & x=0,1,2,3,4\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nNow hypergeometric probability distribution of X is given as",
+   "urdu": "مثال 3.22\n\nایک پیالے میں 4 سبز اور 7 سرخ گیندیں ہیں۔ پیالے سے بغیر واپسی کے 5 گیندوں کا نمونہ منتخب کیا جاتا ہے۔ سبز گیندوں کی تعداد کی احتمالی تقسیم معلوم کریں۔ اس احتمالی تقسیم کا اوسط اور تغیر معلوم کریں اور ان کا نظری اوسط اور تغیر سے موازنہ کریں۔\n\nحل:\n\nپیالے میں ہیں\n\nیہاں n=5\n\nX: منتخب سبز گیندوں کی تعداد\n\nX=0,1,2,3,4۔ [5 ممکن نہیں کیونکہ صرف 4 سبز گیندیں ہیں۔]۔\n\n$\\therefore p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{4}{x}\\binom{11-4}{5-x}}{\\binom{11}{5}}, & x=0,1,2,3,4\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nاب X کی ہائپر جیومیٹرک احتمالی تقسیم یہ ہے",
+   "pashto": "بېلګه 3.22\n\nپه یوه لوښي کې 4 شنه او 7 سره توپونه دي. له لوښي څخه بې له بېرته اچولو د 5 توپونو نمونه ټاکل کېږي. د شنو توپونو د شمېر احتمالي وېش پیدا کړئ. د دې احتمالي وېش منځنی او واریانس محاسبه کړئ او له نظري منځني او واریانس سره یې پرتله کړئ.\n\nحل:\n\nلوښي کې دي\n\nدلته n=5\n\nX: د ټاکل شویو شنو توپونو شمېر\n\nX=0,1,2,3,4. [5 شونی نه دی ځکه چې یوازې 4 شنه توپونه دي.].\n\n$\\therefore p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{4}{x}\\binom{11-4}{5-x}}{\\binom{11}{5}}, & x=0,1,2,3,4\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nاوس د X هایپرجیومټریک احتمالي وېش داسې دی",
+   "theoryUrdu": "مثال 3.22\n\nایک پیالے میں 4 سبز اور 7 سرخ گیندیں ہیں۔ پیالے سے بغیر واپسی کے 5 گیندوں کا نمونہ منتخب کیا جاتا ہے۔ سبز گیندوں کی تعداد کی احتمالی تقسیم معلوم کریں۔ اس احتمالی تقسیم کا اوسط اور تغیر معلوم کریں اور ان کا نظری اوسط اور تغیر سے موازنہ کریں۔\n\nحل:\n\nپیالے میں ہیں\n\nیہاں n=5\n\nX: منتخب سبز گیندوں کی تعداد\n\nX=0,1,2,3,4۔ [5 ممکن نہیں کیونکہ صرف 4 سبز گیندیں ہیں۔]۔\n\n$\\therefore p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{4}{x}\\binom{11-4}{5-x}}{\\binom{11}{5}}, & x=0,1,2,3,4\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nاب X کی ہائپر جیومیٹرک احتمالی تقسیم یہ ہے",
+   "theoryPashto": "بېلګه 3.22\n\nپه یوه لوښي کې 4 شنه او 7 سره توپونه دي. له لوښي څخه بې له بېرته اچولو د 5 توپونو نمونه ټاکل کېږي. د شنو توپونو د شمېر احتمالي وېش پیدا کړئ. د دې احتمالي وېش منځنی او واریانس محاسبه کړئ او له نظري منځني او واریانس سره یې پرتله کړئ.\n\nحل:\n\nلوښي کې دي\n\nدلته n=5\n\nX: د ټاکل شویو شنو توپونو شمېر\n\nX=0,1,2,3,4. [5 شونی نه دی ځکه چې یوازې 4 شنه توپونه دي.].\n\n$\\therefore p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{4}{x}\\binom{11-4}{5-x}}{\\binom{11}{5}}, & x=0,1,2,3,4\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nاوس د X هایپرجیومټریک احتمالي وېش داسې دی",
+   "content": "<p>Example 3.22</p><p>A bowl contains 4 green and 7 red balls. A sample of 5 balls is selected from the bowl without replacement. Find the probability distribution for the number of green balls. Compute the mean and variance of this probability distribution and compare them with the theoretical mean and variance.</p><p>Solution:</p><p>The bowl contains</p><p>Here n=5</p><p>X: number of green balls selected</p><p>X=0,1,2,3,4. [5 is not possible as there are only 4 green balls.].</p><p>$\\therefore p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{4}{x}\\binom{11-4}{5-x}}{\\binom{11}{5}}, &amp; x=0,1,2,3,4\\\\ 0 &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>Now hypergeometric probability distribution of X is given as</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "stat12-ex3-22-box"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-ex3-22-box",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 120\" role=\"img\" aria-label=\"Population box\"><rect width=\"260\" height=\"120\" fill=\"white\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\"><rect x=\"100\" y=\"10\" width=\"54\" height=\"54\" fill=\"none\" stroke=\"#111\"/><path d=\"M100 37H154\" stroke=\"#111\"/><text x=\"106\" y=\"31\" font-style=\"italic\">4 G<tspan font-size=\"12\" dy=\"4\"></tspan></text><text x=\"106\" y=\"58\" font-style=\"italic\">7 R<tspan font-size=\"12\" dy=\"4\"></tspan></text><path d=\"M162 25H210\" stroke=\"#111\"/><path d=\"M162 25l9-4v8z\" fill=\"#111\"/><text x=\"218\" y=\"31\" font-style=\"italic\">K</text><text x=\"40\" y=\"100\" font-style=\"italic\">N</text><path d=\"M58 94H96\" stroke=\"#111\"/><path d=\"M104 94l-9-4v8z\" fill=\"#111\"/><text x=\"110\" y=\"100\">11 balls</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 120\" role=\"img\" aria-label=\"Population box\"><rect width=\"260\" height=\"120\" fill=\"white\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\"><rect x=\"100\" y=\"10\" width=\"54\" height=\"54\" fill=\"none\" stroke=\"#111\"/><path d=\"M100 37H154\" stroke=\"#111\"/><text x=\"106\" y=\"31\" font-style=\"italic\">4 G<tspan font-size=\"12\" dy=\"4\"></tspan></text><text x=\"106\" y=\"58\" font-style=\"italic\">7 R<tspan font-size=\"12\" dy=\"4\"></tspan></text><path d=\"M162 25H210\" stroke=\"#111\"/><path d=\"M162 25l9-4v8z\" fill=\"#111\"/><text x=\"218\" y=\"31\" font-style=\"italic\">K</text><text x=\"40\" y=\"100\" font-style=\"italic\">N</text><path d=\"M58 94H96\" stroke=\"#111\"/><path d=\"M104 94l-9-4v8z\" fill=\"#111\"/><text x=\"110\" y=\"100\">11 گیندیں</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 120\" role=\"img\" aria-label=\"Population box\"><rect width=\"260\" height=\"120\" fill=\"white\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\"><rect x=\"100\" y=\"10\" width=\"54\" height=\"54\" fill=\"none\" stroke=\"#111\"/><path d=\"M100 37H154\" stroke=\"#111\"/><text x=\"106\" y=\"31\" font-style=\"italic\">4 G<tspan font-size=\"12\" dy=\"4\"></tspan></text><text x=\"106\" y=\"58\" font-style=\"italic\">7 R<tspan font-size=\"12\" dy=\"4\"></tspan></text><path d=\"M162 25H210\" stroke=\"#111\"/><path d=\"M162 25l9-4v8z\" fill=\"#111\"/><text x=\"218\" y=\"31\" font-style=\"italic\">K</text><text x=\"40\" y=\"100\" font-style=\"italic\">N</text><path d=\"M58 94H96\" stroke=\"#111\"/><path d=\"M104 94l-9-4v8z\" fill=\"#111\"/><text x=\"110\" y=\"100\">11 توپونه</text></g></svg>",
+     "sourceWidthRatio": 0.4
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 57,
+     "printedPages": [
+      106
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

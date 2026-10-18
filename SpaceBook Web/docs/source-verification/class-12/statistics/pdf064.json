@@ -1,0 +1,364 @@
+{
+ "pdfPage": 64,
+ "sections": [
+  {
+   "id": "stat12-p064-uniform-variance-examples",
+   "title": "Continuous uniform variance and S.D — Examples 4.1–4.2",
+   "headingUrdu": "مسلسل یکساں تغیر اور معیاری انحراف — مثالیں 4.1–4.2",
+   "headingPashto": "متصل یونیفارم واریانس او معیاري انحراف — بېلګې 4.1–4.2",
+   "paras": [
+    {
+     "text": "$V(X)=\\frac{b^2+ab+a^2}{3}-\\frac{(a+b)^2}{4}$",
+     "urdu": "$V(X)=\\frac{b^2+ab+a^2}{3}-\\frac{(a+b)^2}{4}$",
+     "pashto": "$V(X)=\\frac{b^2+ab+a^2}{3}-\\frac{(a+b)^2}{4}$"
+    },
+    {
+     "text": "$=\\frac{4(b^2+ab+a^2)-3(a^2+b^2+2ab)}{12}$",
+     "urdu": "$=\\frac{4(b^2+ab+a^2)-3(a^2+b^2+2ab)}{12}$",
+     "pashto": "$=\\frac{4(b^2+ab+a^2)-3(a^2+b^2+2ab)}{12}$"
+    },
+    {
+     "text": "$=\\frac{4b^2+4ab+4a^2-3a^2-3b^2-6ab}{12}$",
+     "urdu": "$=\\frac{4b^2+4ab+4a^2-3a^2-3b^2-6ab}{12}$",
+     "pashto": "$=\\frac{4b^2+4ab+4a^2-3a^2-3b^2-6ab}{12}$"
+    },
+    {
+     "text": "$=\\frac{b^2+a^2-2ab}{12}$",
+     "urdu": "$=\\frac{b^2+a^2-2ab}{12}$",
+     "pashto": "$=\\frac{b^2+a^2-2ab}{12}$"
+    },
+    {
+     "text": "$V(X)=\\frac{(b-a)^2}{12}$",
+     "urdu": "$V(X)=\\frac{(b-a)^2}{12}$",
+     "pashto": "$V(X)=\\frac{(b-a)^2}{12}$"
+    },
+    {
+     "text": "(iii) Standard deviation of continuous uniform probability distribution:",
+     "urdu": "(iii) مسلسل یکساں احتمالی تقسیم کا معیاری انحراف:",
+     "pashto": "(iii) د متصل یونیفارم احتمالي وېش معیاري انحراف:"
+    },
+    {
+     "text": "By definition",
+     "urdu": "تعریف کے مطابق",
+     "pashto": "د تعریف له مخې"
+    },
+    {
+     "text": "$$S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{(b-a)^2}{12}}=\\frac{b-a}{\\sqrt{12}}$$",
+     "urdu": "$$S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{(b-a)^2}{12}}=\\frac{b-a}{\\sqrt{12}}$$",
+     "pashto": "$$S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{(b-a)^2}{12}}=\\frac{b-a}{\\sqrt{12}}$$"
+    },
+    {
+     "text": "Example 4.1",
+     "urdu": "مثال 4.1",
+     "pashto": "بېلګه 4.1"
+    },
+    {
+     "text": "If X has a uniform distribution over the interval (2, 4), find (i) $P(2\\le X\\le 3)$ (ii) $P(3\\le X\\le 4)$",
+     "urdu": "اگر X کی وقفہ (2، 4) پر یکساں تقسیم ہو تو معلوم کریں (i) $P(2\\le X\\le 3)$ (ii) $P(3\\le X\\le 4)$",
+     "pashto": "که X د (2، 4) په واټن کې یونیفارم وېش ولري، پیدا کړئ (i) $P(2\\le X\\le 3)$ (ii) $P(3\\le X\\le 4)$"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Given a = 2 and b = 4, so the pdf of uniform distribution in this case is given by",
+     "urdu": "دیا گیا ہے a = 2 اور b = 4، لہٰذا اس صورت میں یکساں تقسیم کا pdf یہ ہے",
+     "pashto": "ورکړل شوي a = 2 او b = 4، نو په دې حالت کې د یونیفارم وېش pdf دا ده"
+    },
+    {
+     "text": "$$f(x)=\\left\\{\\begin{matrix}\\frac{1}{2}, & 2\\le x\\le 4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$f(x)=\\left\\{\\begin{matrix}\\frac{1}{2}, & 2\\le x\\le 4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$f(x)=\\left\\{\\begin{matrix}\\frac{1}{2}, & 2\\le x\\le 4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "Now",
+     "urdu": "اب",
+     "pashto": "اوس"
+    },
+    {
+     "text": "$(i)\\quad P(2\\le X\\le 3)=\\int_2^3\\frac{1}{2}dx=\\frac{1}{2}\\int_2^3dx$",
+     "urdu": "$(i)\\quad P(2\\le X\\le 3)=\\int_2^3\\frac{1}{2}dx=\\frac{1}{2}\\int_2^3dx$",
+     "pashto": "$(i)\\quad P(2\\le X\\le 3)=\\int_2^3\\frac{1}{2}dx=\\frac{1}{2}\\int_2^3dx$"
+    },
+    {
+     "text": "$=\\frac{1}{2}\\left[\\left.x\\right|_2^3\\right]=\\frac{1}{2}(3-2)=\\frac{1}{2}(1)=\\frac{1}{2}$",
+     "urdu": "$=\\frac{1}{2}\\left[\\left.x\\right|_2^3\\right]=\\frac{1}{2}(3-2)=\\frac{1}{2}(1)=\\frac{1}{2}$",
+     "pashto": "$=\\frac{1}{2}\\left[\\left.x\\right|_2^3\\right]=\\frac{1}{2}(3-2)=\\frac{1}{2}(1)=\\frac{1}{2}$"
+    },
+    {
+     "text": "$(ii)\\quad P(3\\le X\\le 4)=\\int_3^4\\frac{1}{2}dx=\\frac{1}{2}\\int_3^4dx=\\frac{1}{2}\\left[\\left.x\\right|_3^4\\right]$",
+     "urdu": "$(ii)\\quad P(3\\le X\\le 4)=\\int_3^4\\frac{1}{2}dx=\\frac{1}{2}\\int_3^4dx=\\frac{1}{2}\\left[\\left.x\\right|_3^4\\right]$",
+     "pashto": "$(ii)\\quad P(3\\le X\\le 4)=\\int_3^4\\frac{1}{2}dx=\\frac{1}{2}\\int_3^4dx=\\frac{1}{2}\\left[\\left.x\\right|_3^4\\right]$"
+    },
+    {
+     "text": "$=\\frac{1}{2}[4-3]=\\frac{1}{2}(1)=\\frac{1}{2}$",
+     "urdu": "$=\\frac{1}{2}[4-3]=\\frac{1}{2}(1)=\\frac{1}{2}$",
+     "pashto": "$=\\frac{1}{2}[4-3]=\\frac{1}{2}(1)=\\frac{1}{2}$"
+    },
+    {
+     "text": "Example 4.2",
+     "urdu": "مثال 4.2",
+     "pashto": "بېلګه 4.2"
+    },
+    {
+     "text": "Let $X\\sim U(-1,3)$. Find mean, variance and standard deviation for this continuous uniform random variable.",
+     "urdu": "فرض کریں $X\\sim U(-1,3)$۔ اس مسلسل یکساں تصادفی متغیر کا اوسط، تغیر اور معیاری انحراف معلوم کریں۔",
+     "pashto": "فرض کړئ $X\\sim U(-1,3)$. د دې متصل یونیفارم تصادفي متغیر منځنی، واریانس او معیاري انحراف پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Here $a=-1$, $b=3$",
+     "urdu": "یہاں $a=-1$، $b=3$",
+     "pashto": "دلته $a=-1$، $b=3$"
+    },
+    {
+     "text": "Now",
+     "urdu": "اب",
+     "pashto": "اوس"
+    },
+    {
+     "text": "$E(X)=\\frac{a+b}{2}=\\frac{-1+3}{2}=\\frac{2}{2}=1$",
+     "urdu": "$E(X)=\\frac{a+b}{2}=\\frac{-1+3}{2}=\\frac{2}{2}=1$",
+     "pashto": "$E(X)=\\frac{a+b}{2}=\\frac{-1+3}{2}=\\frac{2}{2}=1$"
+    },
+    {
+     "text": "$V(X)=\\frac{(b-a)^2}{12}=\\frac{[3-(-1)]^2}{12}=\\frac{(3+1)^2}{12}=1.333$",
+     "urdu": "$V(X)=\\frac{(b-a)^2}{12}=\\frac{[3-(-1)]^2}{12}=\\frac{(3+1)^2}{12}=1.333$",
+     "pashto": "$V(X)=\\frac{(b-a)^2}{12}=\\frac{[3-(-1)]^2}{12}=\\frac{(3+1)^2}{12}=1.333$"
+    },
+    {
+     "text": "$S.D(X)=\\sqrt{1.333}=1.155$",
+     "urdu": "$S.D(X)=\\sqrt{1.333}=1.155$",
+     "pashto": "$S.D(X)=\\sqrt{1.333}=1.155$"
+    }
+   ],
+   "theory": "V(X)=\\frac{b^2+ab+a^2}{3}-\\frac{(a+b)^2}{4}\n\n=\\frac{4(b^2+ab+a^2)-3(a^2+b^2+2ab)}{12}\n\n=\\frac{4b^2+4ab+4a^2-3a^2-3b^2-6ab}{12}\n\n=\\frac{b^2+a^2-2ab}{12}\n\nV(X)=\\frac{(b-a)^2}{12}\n\n(iii) Standard deviation of continuous uniform probability distribution:\n\nBy definition\n\n$S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{(b-a)^2}{12}}=\\frac{b-a}{\\sqrt{12}}$\n\nExample 4.1\n\nIf X has a uniform distribution over the interval (2, 4), find (i) P(2\\le X\\le 3) (ii) P(3\\le X\\le 4)\n\nSolution:\n\nGiven a = 2 and b = 4, so the pdf of uniform distribution in this case is given by\n\n$f(x)=\\left\\{\\begin{matrix}\\frac{1}{2}, & 2\\le x\\le 4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nNow\n\n(i)\\quad P(2\\le X\\le 3)=\\int_2^3\\frac{1}{2}dx=\\frac{1}{2}\\int_2^3dx\n\n=\\frac{1}{2}\\left[\\left.x\\right|_2^3\\right]=\\frac{1}{2}(3-2)=\\frac{1}{2}(1)=\\frac{1}{2}\n\n(ii)\\quad P(3\\le X\\le 4)=\\int_3^4\\frac{1}{2}dx=\\frac{1}{2}\\int_3^4dx=\\frac{1}{2}\\left[\\left.x\\right|_3^4\\right]\n\n=\\frac{1}{2}[4-3]=\\frac{1}{2}(1)=\\frac{1}{2}\n\nExample 4.2\n\nLet X\\sim U(-1,3). Find mean, variance and standard deviation for this continuous uniform random variable.\n\nSolution:\n\nHere a=-1, b=3\n\nNow\n\nE(X)=\\frac{a+b}{2}=\\frac{-1+3}{2}=\\frac{2}{2}=1\n\nV(X)=\\frac{(b-a)^2}{12}=\\frac{[3-(-1)]^2}{12}=\\frac{(3+1)^2}{12}=1.333\n\nS.D(X)=\\sqrt{1.333}=1.155",
+   "urdu": "V(X)=\\frac{b^2+ab+a^2}{3}-\\frac{(a+b)^2}{4}\n\n=\\frac{4(b^2+ab+a^2)-3(a^2+b^2+2ab)}{12}\n\n=\\frac{4b^2+4ab+4a^2-3a^2-3b^2-6ab}{12}\n\n=\\frac{b^2+a^2-2ab}{12}\n\nV(X)=\\frac{(b-a)^2}{12}\n\n(iii) مسلسل یکساں احتمالی تقسیم کا معیاری انحراف:\n\nتعریف کے مطابق\n\n$S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{(b-a)^2}{12}}=\\frac{b-a}{\\sqrt{12}}$\n\nمثال 4.1\n\nاگر X کی وقفہ (2، 4) پر یکساں تقسیم ہو تو معلوم کریں (i) P(2\\le X\\le 3) (ii) P(3\\le X\\le 4)\n\nحل:\n\nدیا گیا ہے a = 2 اور b = 4، لہٰذا اس صورت میں یکساں تقسیم کا pdf یہ ہے\n\n$f(x)=\\left\\{\\begin{matrix}\\frac{1}{2}, & 2\\le x\\le 4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاب\n\n(i)\\quad P(2\\le X\\le 3)=\\int_2^3\\frac{1}{2}dx=\\frac{1}{2}\\int_2^3dx\n\n=\\frac{1}{2}\\left[\\left.x\\right|_2^3\\right]=\\frac{1}{2}(3-2)=\\frac{1}{2}(1)=\\frac{1}{2}\n\n(ii)\\quad P(3\\le X\\le 4)=\\int_3^4\\frac{1}{2}dx=\\frac{1}{2}\\int_3^4dx=\\frac{1}{2}\\left[\\left.x\\right|_3^4\\right]\n\n=\\frac{1}{2}[4-3]=\\frac{1}{2}(1)=\\frac{1}{2}\n\nمثال 4.2\n\nفرض کریں X\\sim U(-1,3)۔ اس مسلسل یکساں تصادفی متغیر کا اوسط، تغیر اور معیاری انحراف معلوم کریں۔\n\nحل:\n\nیہاں a=-1، b=3\n\nاب\n\nE(X)=\\frac{a+b}{2}=\\frac{-1+3}{2}=\\frac{2}{2}=1\n\nV(X)=\\frac{(b-a)^2}{12}=\\frac{[3-(-1)]^2}{12}=\\frac{(3+1)^2}{12}=1.333\n\nS.D(X)=\\sqrt{1.333}=1.155",
+   "pashto": "V(X)=\\frac{b^2+ab+a^2}{3}-\\frac{(a+b)^2}{4}\n\n=\\frac{4(b^2+ab+a^2)-3(a^2+b^2+2ab)}{12}\n\n=\\frac{4b^2+4ab+4a^2-3a^2-3b^2-6ab}{12}\n\n=\\frac{b^2+a^2-2ab}{12}\n\nV(X)=\\frac{(b-a)^2}{12}\n\n(iii) د متصل یونیفارم احتمالي وېش معیاري انحراف:\n\nد تعریف له مخې\n\n$S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{(b-a)^2}{12}}=\\frac{b-a}{\\sqrt{12}}$\n\nبېلګه 4.1\n\nکه X د (2، 4) په واټن کې یونیفارم وېش ولري، پیدا کړئ (i) P(2\\le X\\le 3) (ii) P(3\\le X\\le 4)\n\nحل:\n\nورکړل شوي a = 2 او b = 4، نو په دې حالت کې د یونیفارم وېش pdf دا ده\n\n$f(x)=\\left\\{\\begin{matrix}\\frac{1}{2}, & 2\\le x\\le 4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاوس\n\n(i)\\quad P(2\\le X\\le 3)=\\int_2^3\\frac{1}{2}dx=\\frac{1}{2}\\int_2^3dx\n\n=\\frac{1}{2}\\left[\\left.x\\right|_2^3\\right]=\\frac{1}{2}(3-2)=\\frac{1}{2}(1)=\\frac{1}{2}\n\n(ii)\\quad P(3\\le X\\le 4)=\\int_3^4\\frac{1}{2}dx=\\frac{1}{2}\\int_3^4dx=\\frac{1}{2}\\left[\\left.x\\right|_3^4\\right]\n\n=\\frac{1}{2}[4-3]=\\frac{1}{2}(1)=\\frac{1}{2}\n\nبېلګه 4.2\n\nفرض کړئ X\\sim U(-1,3). د دې متصل یونیفارم تصادفي متغیر منځنی، واریانس او معیاري انحراف پیدا کړئ.\n\nحل:\n\nدلته a=-1، b=3\n\nاوس\n\nE(X)=\\frac{a+b}{2}=\\frac{-1+3}{2}=\\frac{2}{2}=1\n\nV(X)=\\frac{(b-a)^2}{12}=\\frac{[3-(-1)]^2}{12}=\\frac{(3+1)^2}{12}=1.333\n\nS.D(X)=\\sqrt{1.333}=1.155",
+   "theoryUrdu": "V(X)=\\frac{b^2+ab+a^2}{3}-\\frac{(a+b)^2}{4}\n\n=\\frac{4(b^2+ab+a^2)-3(a^2+b^2+2ab)}{12}\n\n=\\frac{4b^2+4ab+4a^2-3a^2-3b^2-6ab}{12}\n\n=\\frac{b^2+a^2-2ab}{12}\n\nV(X)=\\frac{(b-a)^2}{12}\n\n(iii) مسلسل یکساں احتمالی تقسیم کا معیاری انحراف:\n\nتعریف کے مطابق\n\n$S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{(b-a)^2}{12}}=\\frac{b-a}{\\sqrt{12}}$\n\nمثال 4.1\n\nاگر X کی وقفہ (2، 4) پر یکساں تقسیم ہو تو معلوم کریں (i) P(2\\le X\\le 3) (ii) P(3\\le X\\le 4)\n\nحل:\n\nدیا گیا ہے a = 2 اور b = 4، لہٰذا اس صورت میں یکساں تقسیم کا pdf یہ ہے\n\n$f(x)=\\left\\{\\begin{matrix}\\frac{1}{2}, & 2\\le x\\le 4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاب\n\n(i)\\quad P(2\\le X\\le 3)=\\int_2^3\\frac{1}{2}dx=\\frac{1}{2}\\int_2^3dx\n\n=\\frac{1}{2}\\left[\\left.x\\right|_2^3\\right]=\\frac{1}{2}(3-2)=\\frac{1}{2}(1)=\\frac{1}{2}\n\n(ii)\\quad P(3\\le X\\le 4)=\\int_3^4\\frac{1}{2}dx=\\frac{1}{2}\\int_3^4dx=\\frac{1}{2}\\left[\\left.x\\right|_3^4\\right]\n\n=\\frac{1}{2}[4-3]=\\frac{1}{2}(1)=\\frac{1}{2}\n\nمثال 4.2\n\nفرض کریں X\\sim U(-1,3)۔ اس مسلسل یکساں تصادفی متغیر کا اوسط، تغیر اور معیاری انحراف معلوم کریں۔\n\nحل:\n\nیہاں a=-1، b=3\n\nاب\n\nE(X)=\\frac{a+b}{2}=\\frac{-1+3}{2}=\\frac{2}{2}=1\n\nV(X)=\\frac{(b-a)^2}{12}=\\frac{[3-(-1)]^2}{12}=\\frac{(3+1)^2}{12}=1.333\n\nS.D(X)=\\sqrt{1.333}=1.155",
+   "theoryPashto": "V(X)=\\frac{b^2+ab+a^2}{3}-\\frac{(a+b)^2}{4}\n\n=\\frac{4(b^2+ab+a^2)-3(a^2+b^2+2ab)}{12}\n\n=\\frac{4b^2+4ab+4a^2-3a^2-3b^2-6ab}{12}\n\n=\\frac{b^2+a^2-2ab}{12}\n\nV(X)=\\frac{(b-a)^2}{12}\n\n(iii) د متصل یونیفارم احتمالي وېش معیاري انحراف:\n\nد تعریف له مخې\n\n$S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{(b-a)^2}{12}}=\\frac{b-a}{\\sqrt{12}}$\n\nبېلګه 4.1\n\nکه X د (2، 4) په واټن کې یونیفارم وېش ولري، پیدا کړئ (i) P(2\\le X\\le 3) (ii) P(3\\le X\\le 4)\n\nحل:\n\nورکړل شوي a = 2 او b = 4، نو په دې حالت کې د یونیفارم وېش pdf دا ده\n\n$f(x)=\\left\\{\\begin{matrix}\\frac{1}{2}, & 2\\le x\\le 4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nاوس\n\n(i)\\quad P(2\\le X\\le 3)=\\int_2^3\\frac{1}{2}dx=\\frac{1}{2}\\int_2^3dx\n\n=\\frac{1}{2}\\left[\\left.x\\right|_2^3\\right]=\\frac{1}{2}(3-2)=\\frac{1}{2}(1)=\\frac{1}{2}\n\n(ii)\\quad P(3\\le X\\le 4)=\\int_3^4\\frac{1}{2}dx=\\frac{1}{2}\\int_3^4dx=\\frac{1}{2}\\left[\\left.x\\right|_3^4\\right]\n\n=\\frac{1}{2}[4-3]=\\frac{1}{2}(1)=\\frac{1}{2}\n\nبېلګه 4.2\n\nفرض کړئ X\\sim U(-1,3). د دې متصل یونیفارم تصادفي متغیر منځنی، واریانس او معیاري انحراف پیدا کړئ.\n\nحل:\n\nدلته a=-1، b=3\n\nاوس\n\nE(X)=\\frac{a+b}{2}=\\frac{-1+3}{2}=\\frac{2}{2}=1\n\nV(X)=\\frac{(b-a)^2}{12}=\\frac{[3-(-1)]^2}{12}=\\frac{(3+1)^2}{12}=1.333\n\nS.D(X)=\\sqrt{1.333}=1.155",
+   "content": "<p>V(X)=\\frac{b^2+ab+a^2}{3}-\\frac{(a+b)^2}{4}</p><p>=\\frac{4(b^2+ab+a^2)-3(a^2+b^2+2ab)}{12}</p><p>=\\frac{4b^2+4ab+4a^2-3a^2-3b^2-6ab}{12}</p><p>=\\frac{b^2+a^2-2ab}{12}</p><p>V(X)=\\frac{(b-a)^2}{12}</p><p>(iii) Standard deviation of continuous uniform probability distribution:</p><p>By definition</p><p>$S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{(b-a)^2}{12}}=\\frac{b-a}{\\sqrt{12}}$</p><p>Example 4.1</p><p>If X has a uniform distribution over the interval (2, 4), find (i) P(2\\le X\\le 3) (ii) P(3\\le X\\le 4)</p><p>Solution:</p><p>Given a = 2 and b = 4, so the pdf of uniform distribution in this case is given by</p><p>$f(x)=\\left\\{\\begin{matrix}\\frac{1}{2}, &amp; 2\\le x\\le 4\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>Now</p><p>(i)\\quad P(2\\le X\\le 3)=\\int_2^3\\frac{1}{2}dx=\\frac{1}{2}\\int_2^3dx</p><p>=\\frac{1}{2}\\left[\\left.x\\right|_2^3\\right]=\\frac{1}{2}(3-2)=\\frac{1}{2}(1)=\\frac{1}{2}</p><p>(ii)\\quad P(3\\le X\\le 4)=\\int_3^4\\frac{1}{2}dx=\\frac{1}{2}\\int_3^4dx=\\frac{1}{2}\\left[\\left.x\\right|_3^4\\right]</p><p>=\\frac{1}{2}[4-3]=\\frac{1}{2}(1)=\\frac{1}{2}</p><p>Example 4.2</p><p>Let X\\sim U(-1,3). Find mean, variance and standard deviation for this continuous uniform random variable.</p><p>Solution:</p><p>Here a=-1, b=3</p><p>Now</p><p>E(X)=\\frac{a+b}{2}=\\frac{-1+3}{2}=\\frac{2}{2}=1</p><p>V(X)=\\frac{(b-a)^2}{12}=\\frac{[3-(-1)]^2}{12}=\\frac{(3+1)^2}{12}=1.333</p><p>S.D(X)=\\sqrt{1.333}=1.155</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      14,
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      23,
+      24,
+      25
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 64,
+     "printedPages": [
+      119,
+      120
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 4
+  },
+  {
+   "id": "stat12-p064-normal-intro",
+   "title": "4.2 Normal distribution — importance",
+   "headingUrdu": "4.2 نارمل تقسیم — اہمیت",
+   "headingPashto": "4.2 نورمال وېش — اهمیت",
+   "paras": [
+    {
+     "text": "4.2 Normal distribution",
+     "urdu": "4.2 نارمل تقسیم",
+     "pashto": "4.2 نورمال وېش"
+    },
+    {
+     "text": "Normal distribution is the most common and useful amongst all known distribution. It is considered as the cornerstone of the modern statistical theory. The reason of importance is due to the facts that:",
+     "urdu": "نارمل تقسیم تمام معلوم تقسیموں میں سب سے عام اور مفید ہے۔ اسے جدید شماریاتی نظریے کا سنگِ بنیاد سمجھا جاتا ہے۔ اس کی اہمیت کی وجوہات یہ ہیں:",
+     "pashto": "نورمال وېش د ټولو پېژندل شویو وېشونو له منځه تر ټولو عام او ګټور دی. د عصري احصاییوي نظریې بنسټیزه ډبره ګڼل کېږي. د اهمیت لاملونه یې دا دي:"
+    },
+    {
+     "text": "i. Many natural phenomena like age, weight, light, I.Q, grade, temperature, income etc. tend to be approximately normal.",
+     "urdu": "i. بہت سے فطری مظاہر جیسے عمر، وزن، روشنی، آئی کیو، گریڈ، درجۂ حرارت، آمدنی وغیرہ تقریباً نارمل ہوتے ہیں۔",
+     "pashto": "i. ډېرې طبیعي پدیدې لکه عمر، وزن، رڼا، I.Q، درجه، تودوخه، عاید او نور نږدې نورمال وي."
+    },
+    {
+     "text": "ii. Most of the discrete distributions such as Binomial, Poisson, etc. tend to Normal distribution as sample size increases i.e. $n\\to\\infty$.",
+     "urdu": "ii. زیادہ تر منفصل تقسیمیں جیسے دو رقمی، پوآسوں وغیرہ نمونے کا سائز بڑھنے پر یعنی $n\\to\\infty$ نارمل تقسیم کی طرف مائل ہوتی ہیں۔",
+     "pashto": "ii. ډېری منفصل وېشونه لکه بینومیل، پواسون او نور د نمونې د اندازې په زیاتېدو یعنې $n\\to\\infty$ سره نورمال وېش ته نږدې کېږي."
+    },
+    {
+     "text": "iii. For a sample of size $n\\ge 30$, the distribution is considered as normal.",
+     "urdu": "iii. $n\\ge 30$ سائز کے نمونے کے لیے تقسیم کو نارمل سمجھا جاتا ہے۔",
+     "pashto": "iii. د $n\\ge 30$ اندازې نمونې لپاره وېش نورمال ګڼل کېږي."
+    },
+    {
+     "text": "iv. Many variables which are not normally distributed can be normalized through suitable transformations.",
+     "urdu": "iv. بہت سے متغیرات جو نارمل تقسیم شدہ نہیں، مناسب تبدیلیوں کے ذریعے نارمل بنائے جا سکتے ہیں۔",
+     "pashto": "iv. ډېر متغیرونه چې نورمال وېش نه لري، د مناسبو بدلونونو له لارې نورمال کېدای شي."
+    }
+   ],
+   "theory": "4.2 Normal distribution\n\nNormal distribution is the most common and useful amongst all known distribution. It is considered as the cornerstone of the modern statistical theory. The reason of importance is due to the facts that:\n\ni. Many natural phenomena like age, weight, light, I.Q, grade, temperature, income etc. tend to be approximately normal.\n\nii. Most of the discrete distributions such as Binomial, Poisson, etc. tend to Normal distribution as sample size increases i.e. n\\to\\infty.\n\niii. For a sample of size n\\ge 30, the distribution is considered as normal.\n\niv. Many variables which are not normally distributed can be normalized through suitable transformations.",
+   "urdu": "4.2 نارمل تقسیم\n\nنارمل تقسیم تمام معلوم تقسیموں میں سب سے عام اور مفید ہے۔ اسے جدید شماریاتی نظریے کا سنگِ بنیاد سمجھا جاتا ہے۔ اس کی اہمیت کی وجوہات یہ ہیں:\n\ni. بہت سے فطری مظاہر جیسے عمر، وزن، روشنی، آئی کیو، گریڈ، درجۂ حرارت، آمدنی وغیرہ تقریباً نارمل ہوتے ہیں۔\n\nii. زیادہ تر منفصل تقسیمیں جیسے دو رقمی، پوآسوں وغیرہ نمونے کا سائز بڑھنے پر یعنی n\\to\\infty نارمل تقسیم کی طرف مائل ہوتی ہیں۔\n\niii. n\\ge 30 سائز کے نمونے کے لیے تقسیم کو نارمل سمجھا جاتا ہے۔\n\niv. بہت سے متغیرات جو نارمل تقسیم شدہ نہیں، مناسب تبدیلیوں کے ذریعے نارمل بنائے جا سکتے ہیں۔",
+   "pashto": "4.2 نورمال وېش\n\nنورمال وېش د ټولو پېژندل شویو وېشونو له منځه تر ټولو عام او ګټور دی. د عصري احصاییوي نظریې بنسټیزه ډبره ګڼل کېږي. د اهمیت لاملونه یې دا دي:\n\ni. ډېرې طبیعي پدیدې لکه عمر، وزن، رڼا، I.Q، درجه، تودوخه، عاید او نور نږدې نورمال وي.\n\nii. ډېری منفصل وېشونه لکه بینومیل، پواسون او نور د نمونې د اندازې په زیاتېدو یعنې n\\to\\infty سره نورمال وېش ته نږدې کېږي.\n\niii. د n\\ge 30 اندازې نمونې لپاره وېش نورمال ګڼل کېږي.\n\niv. ډېر متغیرونه چې نورمال وېش نه لري، د مناسبو بدلونونو له لارې نورمال کېدای شي.",
+   "theoryUrdu": "4.2 نارمل تقسیم\n\nنارمل تقسیم تمام معلوم تقسیموں میں سب سے عام اور مفید ہے۔ اسے جدید شماریاتی نظریے کا سنگِ بنیاد سمجھا جاتا ہے۔ اس کی اہمیت کی وجوہات یہ ہیں:\n\ni. بہت سے فطری مظاہر جیسے عمر، وزن، روشنی، آئی کیو، گریڈ، درجۂ حرارت، آمدنی وغیرہ تقریباً نارمل ہوتے ہیں۔\n\nii. زیادہ تر منفصل تقسیمیں جیسے دو رقمی، پوآسوں وغیرہ نمونے کا سائز بڑھنے پر یعنی n\\to\\infty نارمل تقسیم کی طرف مائل ہوتی ہیں۔\n\niii. n\\ge 30 سائز کے نمونے کے لیے تقسیم کو نارمل سمجھا جاتا ہے۔\n\niv. بہت سے متغیرات جو نارمل تقسیم شدہ نہیں، مناسب تبدیلیوں کے ذریعے نارمل بنائے جا سکتے ہیں۔",
+   "theoryPashto": "4.2 نورمال وېش\n\nنورمال وېش د ټولو پېژندل شویو وېشونو له منځه تر ټولو عام او ګټور دی. د عصري احصاییوي نظریې بنسټیزه ډبره ګڼل کېږي. د اهمیت لاملونه یې دا دي:\n\ni. ډېرې طبیعي پدیدې لکه عمر، وزن، رڼا، I.Q، درجه، تودوخه، عاید او نور نږدې نورمال وي.\n\nii. ډېری منفصل وېشونه لکه بینومیل، پواسون او نور د نمونې د اندازې په زیاتېدو یعنې n\\to\\infty سره نورمال وېش ته نږدې کېږي.\n\niii. د n\\ge 30 اندازې نمونې لپاره وېش نورمال ګڼل کېږي.\n\niv. ډېر متغیرونه چې نورمال وېش نه لري، د مناسبو بدلونونو له لارې نورمال کېدای شي.",
+   "content": "<p>4.2 Normal distribution</p><p>Normal distribution is the most common and useful amongst all known distribution. It is considered as the cornerstone of the modern statistical theory. The reason of importance is due to the facts that:</p><p>i. Many natural phenomena like age, weight, light, I.Q, grade, temperature, income etc. tend to be approximately normal.</p><p>ii. Most of the discrete distributions such as Binomial, Poisson, etc. tend to Normal distribution as sample size increases i.e. n\\to\\infty.</p><p>iii. For a sample of size n\\ge 30, the distribution is considered as normal.</p><p>iv. Many variables which are not normally distributed can be normalized through suitable transformations.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3,
+      4,
+      5
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 64,
+     "printedPages": [
+      120
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 4
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

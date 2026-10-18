@@ -1,0 +1,674 @@
+{
+ "pdfPage": 106,
+ "sections": [
+  {
+   "id": "stat12-p106-examples-6-5-6-6",
+   "title": "Example 6.5 conclusion and Example 6.6 — sample proportion is unbiased",
+   "headingUrdu": "مثال 6.5 کا نتیجہ اور مثال 6.6 — نمونے کا تناسب غیر جانبدار ہے",
+   "headingPashto": "د بېلګې 6.5 پایله او بېلګه 6.6 — د نمونې تناسب بې‌پلوه دی",
+   "paras": [
+    {
+     "text": "$E(S^2)=\\Sigma S^2f(S^2)=\\frac{160}{16}=10$",
+     "urdu": "$E(S^2)=\\Sigma S^2f(S^2)=\\frac{160}{16}=10$",
+     "pashto": "$E(S^2)=\\Sigma S^2f(S^2)=\\frac{160}{16}=10$"
+    },
+    {
+     "text": "$E(S^2)\\neq\\sigma^2$",
+     "urdu": "$E(S^2)\\neq\\sigma^2$",
+     "pashto": "$E(S^2)\\neq\\sigma^2$"
+    },
+    {
+     "text": "Hence $S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ is a biased estimator of $\\sigma^2$.",
+     "urdu": "لہٰذا $S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$، $\\sigma^2$ کا جانبدار تخمین کار ہے۔",
+     "pashto": "نو $S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ د $\\sigma^2$ پلوي اټکلوونکی دی."
+    },
+    {
+     "text": "Example 6.6",
+     "urdu": "مثال 6.6",
+     "pashto": "بېلګه 6.6"
+    },
+    {
+     "text": "Draw all possible samples of size 2 with replacement from a population consisting of units 1,2,5,6 and find the proportion of even numbers in the samples. Construct the sampling distribution of sample proportion $\\hat{p}$ and check that $E(\\hat{p})=p$ i.e. $\\hat{p}$ is an unbiased estimator of p.",
+     "urdu": "اکائیوں 1،2،5،6 پر مشتمل آبادی سے واپسی کے ساتھ 2 سائز کے تمام ممکنہ نمونے نکالیں اور نمونوں میں جفت اعداد کا تناسب معلوم کریں۔ نمونے کے تناسب $\\hat{p}$ کی نمونہ جاتی تقسیم بنائیں اور جانچیں کہ $E(\\hat{p})=p$ یعنی $\\hat{p}$، p کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "له 1،2،5،6 واحدونو جوړ نفوس څخه له بېرته اچولو سره د 2 اندازې ټولې شونې نمونې راوباسئ او په نمونو کې د جفت عددونو تناسب پیدا کړئ. د نمونې د تناسب $\\hat{p}$ نمونوي وېش جوړ کړئ او وګورئ چې $E(\\hat{p})=p$ یعنې $\\hat{p}$ د p بې‌پلوه اټکلوونکی دی."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Given 1, 2, 5, 6 N = 4 n = 2",
+     "urdu": "دیا گیا ہے 1، 2، 5، 6 N = 4 n = 2",
+     "pashto": "ورکړل شوي 1، 2، 5، 6 N = 4 n = 2"
+    },
+    {
+     "text": "Population proportion $p=\\frac{X}{N}=\\frac{2}{4}=0.5$",
+     "urdu": "آبادی کا تناسب $p=\\frac{X}{N}=\\frac{2}{4}=0.5$",
+     "pashto": "د نفوس تناسب $p=\\frac{X}{N}=\\frac{2}{4}=0.5$"
+    },
+    {
+     "text": "Possible samples of size n = 2 in S.W.R. case are $N^n=4^2=16$ which are shown in the table.",
+     "urdu": "S.W.R. کی صورت میں n = 2 سائز کے ممکنہ نمونے $N^n=4^2=16$ ہیں جو جدول میں دکھائے گئے ہیں۔",
+     "pashto": "د S.W.R. په حالت کې د n = 2 اندازې شونې نمونې $N^n=4^2=16$ دي چې په جدول کې ښودل شوي."
+    },
+    {
+     "text": "The sampling distribution of sample proportions $\\hat{p}$",
+     "urdu": "نمونوں کے تناسبوں $\\hat{p}$ کی نمونہ جاتی تقسیم",
+     "pashto": "د نمونو د تناسبونو $\\hat{p}$ نمونوي وېش"
+    },
+    {
+     "text": "$$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{8}{16}=0.5=p.$$",
+     "urdu": "$$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{8}{16}=0.5=p.$$",
+     "pashto": "$$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{8}{16}=0.5=p.$$"
+    },
+    {
+     "text": "It means that $\\hat{p}=\\frac{X}{n}$ is an unbiased estimator of population proportion p.",
+     "urdu": "اس کا مطلب ہے کہ $\\hat{p}=\\frac{X}{n}$ آبادی کے تناسب p کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "مانا یې دا ده چې $\\hat{p}=\\frac{X}{n}$ د نفوس د تناسب p بې‌پلوه اټکلوونکی دی."
+    }
+   ],
+   "theory": "E(S^2)=\\Sigma S^2f(S^2)=\\frac{160}{16}=10\n\nE(S^2)\\neq\\sigma^2\n\nHence S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 is a biased estimator of \\sigma^2.\n\nExample 6.6\n\nDraw all possible samples of size 2 with replacement from a population consisting of units 1,2,5,6 and find the proportion of even numbers in the samples. Construct the sampling distribution of sample proportion \\hat{p} and check that E(\\hat{p})=p i.e. \\hat{p} is an unbiased estimator of p.\n\nSolution:\n\nGiven 1, 2, 5, 6 N = 4 n = 2\n\nPopulation proportion p=\\frac{X}{N}=\\frac{2}{4}=0.5\n\nPossible samples of size n = 2 in S.W.R. case are N^n=4^2=16 which are shown in the table.\n\nThe sampling distribution of sample proportions \\hat{p}\n\n$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{8}{16}=0.5=p.$\n\nIt means that \\hat{p}=\\frac{X}{n} is an unbiased estimator of population proportion p.",
+   "urdu": "E(S^2)=\\Sigma S^2f(S^2)=\\frac{160}{16}=10\n\nE(S^2)\\neq\\sigma^2\n\nلہٰذا S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2، \\sigma^2 کا جانبدار تخمین کار ہے۔\n\nمثال 6.6\n\nاکائیوں 1،2،5،6 پر مشتمل آبادی سے واپسی کے ساتھ 2 سائز کے تمام ممکنہ نمونے نکالیں اور نمونوں میں جفت اعداد کا تناسب معلوم کریں۔ نمونے کے تناسب \\hat{p} کی نمونہ جاتی تقسیم بنائیں اور جانچیں کہ E(\\hat{p})=p یعنی \\hat{p}، p کا غیر جانبدار تخمین کار ہے۔\n\nحل:\n\nدیا گیا ہے 1، 2، 5، 6 N = 4 n = 2\n\nآبادی کا تناسب p=\\frac{X}{N}=\\frac{2}{4}=0.5\n\nS.W.R. کی صورت میں n = 2 سائز کے ممکنہ نمونے N^n=4^2=16 ہیں جو جدول میں دکھائے گئے ہیں۔\n\nنمونوں کے تناسبوں \\hat{p} کی نمونہ جاتی تقسیم\n\n$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{8}{16}=0.5=p.$\n\nاس کا مطلب ہے کہ \\hat{p}=\\frac{X}{n} آبادی کے تناسب p کا غیر جانبدار تخمین کار ہے۔",
+   "pashto": "E(S^2)=\\Sigma S^2f(S^2)=\\frac{160}{16}=10\n\nE(S^2)\\neq\\sigma^2\n\nنو S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 د \\sigma^2 پلوي اټکلوونکی دی.\n\nبېلګه 6.6\n\nله 1،2،5،6 واحدونو جوړ نفوس څخه له بېرته اچولو سره د 2 اندازې ټولې شونې نمونې راوباسئ او په نمونو کې د جفت عددونو تناسب پیدا کړئ. د نمونې د تناسب \\hat{p} نمونوي وېش جوړ کړئ او وګورئ چې E(\\hat{p})=p یعنې \\hat{p} د p بې‌پلوه اټکلوونکی دی.\n\nحل:\n\nورکړل شوي 1، 2، 5، 6 N = 4 n = 2\n\nد نفوس تناسب p=\\frac{X}{N}=\\frac{2}{4}=0.5\n\nد S.W.R. په حالت کې د n = 2 اندازې شونې نمونې N^n=4^2=16 دي چې په جدول کې ښودل شوي.\n\nد نمونو د تناسبونو \\hat{p} نمونوي وېش\n\n$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{8}{16}=0.5=p.$\n\nمانا یې دا ده چې \\hat{p}=\\frac{X}{n} د نفوس د تناسب p بې‌پلوه اټکلوونکی دی.",
+   "theoryUrdu": "E(S^2)=\\Sigma S^2f(S^2)=\\frac{160}{16}=10\n\nE(S^2)\\neq\\sigma^2\n\nلہٰذا S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2، \\sigma^2 کا جانبدار تخمین کار ہے۔\n\nمثال 6.6\n\nاکائیوں 1،2،5،6 پر مشتمل آبادی سے واپسی کے ساتھ 2 سائز کے تمام ممکنہ نمونے نکالیں اور نمونوں میں جفت اعداد کا تناسب معلوم کریں۔ نمونے کے تناسب \\hat{p} کی نمونہ جاتی تقسیم بنائیں اور جانچیں کہ E(\\hat{p})=p یعنی \\hat{p}، p کا غیر جانبدار تخمین کار ہے۔\n\nحل:\n\nدیا گیا ہے 1، 2، 5، 6 N = 4 n = 2\n\nآبادی کا تناسب p=\\frac{X}{N}=\\frac{2}{4}=0.5\n\nS.W.R. کی صورت میں n = 2 سائز کے ممکنہ نمونے N^n=4^2=16 ہیں جو جدول میں دکھائے گئے ہیں۔\n\nنمونوں کے تناسبوں \\hat{p} کی نمونہ جاتی تقسیم\n\n$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{8}{16}=0.5=p.$\n\nاس کا مطلب ہے کہ \\hat{p}=\\frac{X}{n} آبادی کے تناسب p کا غیر جانبدار تخمین کار ہے۔",
+   "theoryPashto": "E(S^2)=\\Sigma S^2f(S^2)=\\frac{160}{16}=10\n\nE(S^2)\\neq\\sigma^2\n\nنو S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 د \\sigma^2 پلوي اټکلوونکی دی.\n\nبېلګه 6.6\n\nله 1،2،5،6 واحدونو جوړ نفوس څخه له بېرته اچولو سره د 2 اندازې ټولې شونې نمونې راوباسئ او په نمونو کې د جفت عددونو تناسب پیدا کړئ. د نمونې د تناسب \\hat{p} نمونوي وېش جوړ کړئ او وګورئ چې E(\\hat{p})=p یعنې \\hat{p} د p بې‌پلوه اټکلوونکی دی.\n\nحل:\n\nورکړل شوي 1، 2، 5، 6 N = 4 n = 2\n\nد نفوس تناسب p=\\frac{X}{N}=\\frac{2}{4}=0.5\n\nد S.W.R. په حالت کې د n = 2 اندازې شونې نمونې N^n=4^2=16 دي چې په جدول کې ښودل شوي.\n\nد نمونو د تناسبونو \\hat{p} نمونوي وېش\n\n$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{8}{16}=0.5=p.$\n\nمانا یې دا ده چې \\hat{p}=\\frac{X}{n} د نفوس د تناسب p بې‌پلوه اټکلوونکی دی.",
+   "content": "<p>E(S^2)=\\Sigma S^2f(S^2)=\\frac{160}{16}=10</p><p>E(S^2)\\neq\\sigma^2</p><p>Hence S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 is a biased estimator of \\sigma^2.</p><p>Example 6.6</p><p>Draw all possible samples of size 2 with replacement from a population consisting of units 1,2,5,6 and find the proportion of even numbers in the samples. Construct the sampling distribution of sample proportion \\hat{p} and check that E(\\hat{p})=p i.e. \\hat{p} is an unbiased estimator of p.</p><p>Solution:</p><p>Given 1, 2, 5, 6 N = 4 n = 2</p><p>Population proportion p=\\frac{X}{N}=\\frac{2}{4}=0.5</p><p>Possible samples of size n = 2 in S.W.R. case are N^n=4^2=16 which are shown in the table.</p><p>The sampling distribution of sample proportions \\hat{p}</p><p>$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{8}{16}=0.5=p.$</p><p>It means that \\hat{p}=\\frac{X}{n} is an unbiased estimator of population proportion p.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex6-6-samples"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex6-6-dist"
+    },
+    {
+     "type": "equation",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex6-6-samples",
+     "headers": [
+      "S.No.",
+      "Samples",
+      "$\\hat{p}$"
+     ],
+     "rows": [
+      [
+       "1",
+       "1,1",
+       "0"
+      ],
+      [
+       "2",
+       "1,2",
+       "1/2"
+      ],
+      [
+       "3",
+       "1,5",
+       "0"
+      ],
+      [
+       "4",
+       "1,6",
+       "1/2"
+      ],
+      [
+       "5",
+       "2,1",
+       "1/2"
+      ],
+      [
+       "6",
+       "2,2",
+       "1"
+      ],
+      [
+       "7",
+       "2,5",
+       "1/2"
+      ],
+      [
+       "8",
+       "2,6",
+       "1"
+      ],
+      [
+       "9",
+       "5,1",
+       "0"
+      ],
+      [
+       "10",
+       "5,2",
+       "1/2"
+      ],
+      [
+       "11",
+       "5,5",
+       "0"
+      ],
+      [
+       "12",
+       "5,6",
+       "1/2"
+      ],
+      [
+       "13",
+       "6,1",
+       "1/2"
+      ],
+      [
+       "14",
+       "6,2",
+       "1"
+      ],
+      [
+       "15",
+       "6,5",
+       "1/2"
+      ],
+      [
+       "16",
+       "6,6",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "نمبر شمار",
+        "نمونے",
+        "$\\hat{p}$"
+       ],
+       "rows": [
+        [
+         "1",
+         "1,1",
+         "0"
+        ],
+        [
+         "2",
+         "1,2",
+         "1/2"
+        ],
+        [
+         "3",
+         "1,5",
+         "0"
+        ],
+        [
+         "4",
+         "1,6",
+         "1/2"
+        ],
+        [
+         "5",
+         "2,1",
+         "1/2"
+        ],
+        [
+         "6",
+         "2,2",
+         "1"
+        ],
+        [
+         "7",
+         "2,5",
+         "1/2"
+        ],
+        [
+         "8",
+         "2,6",
+         "1"
+        ],
+        [
+         "9",
+         "5,1",
+         "0"
+        ],
+        [
+         "10",
+         "5,2",
+         "1/2"
+        ],
+        [
+         "11",
+         "5,5",
+         "0"
+        ],
+        [
+         "12",
+         "5,6",
+         "1/2"
+        ],
+        [
+         "13",
+         "6,1",
+         "1/2"
+        ],
+        [
+         "14",
+         "6,2",
+         "1"
+        ],
+        [
+         "15",
+         "6,5",
+         "1/2"
+        ],
+        [
+         "16",
+         "6,6",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "شمېره",
+        "نمونې",
+        "$\\hat{p}$"
+       ],
+       "rows": [
+        [
+         "1",
+         "1,1",
+         "0"
+        ],
+        [
+         "2",
+         "1,2",
+         "1/2"
+        ],
+        [
+         "3",
+         "1,5",
+         "0"
+        ],
+        [
+         "4",
+         "1,6",
+         "1/2"
+        ],
+        [
+         "5",
+         "2,1",
+         "1/2"
+        ],
+        [
+         "6",
+         "2,2",
+         "1"
+        ],
+        [
+         "7",
+         "2,5",
+         "1/2"
+        ],
+        [
+         "8",
+         "2,6",
+         "1"
+        ],
+        [
+         "9",
+         "5,1",
+         "0"
+        ],
+        [
+         "10",
+         "5,2",
+         "1/2"
+        ],
+        [
+         "11",
+         "5,5",
+         "0"
+        ],
+        [
+         "12",
+         "5,6",
+         "1/2"
+        ],
+        [
+         "13",
+         "6,1",
+         "1/2"
+        ],
+        [
+         "14",
+         "6,2",
+         "1"
+        ],
+        [
+         "15",
+         "6,5",
+         "1/2"
+        ],
+        [
+         "16",
+         "6,6",
+         "1"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex6-6-dist",
+     "headers": [
+      "$\\hat{p}$",
+      "Tally bar",
+      "$f$",
+      "$f(\\hat{p})$",
+      "$\\hat{p}f(\\hat{p})$"
+     ],
+     "rows": [
+      [
+       "0",
+       "||||",
+       "4",
+       "4/16",
+       "0"
+      ],
+      [
+       "1/2",
+       "||||| |||",
+       "8",
+       "8/16",
+       "4/16"
+      ],
+      [
+       "1",
+       "||||",
+       "4",
+       "4/16",
+       "4/16"
+      ],
+      [
+       "Total",
+       "",
+       "16",
+       "",
+       "8/16"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$\\hat{p}$",
+        "ٹیلی بار",
+        "$f$",
+        "$f(\\hat{p})$",
+        "$\\hat{p}f(\\hat{p})$"
+       ],
+       "rows": [
+        [
+         "0",
+         "||||",
+         "4",
+         "4/16",
+         "0"
+        ],
+        [
+         "1/2",
+         "||||| |||",
+         "8",
+         "8/16",
+         "4/16"
+        ],
+        [
+         "1",
+         "||||",
+         "4",
+         "4/16",
+         "4/16"
+        ],
+        [
+         "کل",
+         "",
+         "16",
+         "",
+         "8/16"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$\\hat{p}$",
+        "ټلي بار",
+        "$f$",
+        "$f(\\hat{p})$",
+        "$\\hat{p}f(\\hat{p})$"
+       ],
+       "rows": [
+        [
+         "0",
+         "||||",
+         "4",
+         "4/16",
+         "0"
+        ],
+        [
+         "1/2",
+         "||||| |||",
+         "8",
+         "8/16",
+         "4/16"
+        ],
+        [
+         "1",
+         "||||",
+         "4",
+         "4/16",
+         "4/16"
+        ],
+        [
+         "ټول",
+         "",
+         "16",
+         "",
+         "8/16"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 106,
+     "printedPages": [
+      203,
+      204
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  },
+  {
+   "id": "stat12-p106-efficiency",
+   "title": "6.2.4 Efficiency — relative efficiency",
+   "headingUrdu": "6.2.4 کارکردگی — نسبتی کارکردگی",
+   "headingPashto": "6.2.4 موثریت — نسبي موثریت",
+   "paras": [
+    {
+     "text": "6.2.4 Efficiency",
+     "urdu": "6.2.4 کارکردگی (Efficiency)",
+     "pashto": "6.2.4 موثریت (Efficiency)"
+    },
+    {
+     "text": "If there are two estimators, both possessing the property of unbiasedness which can be used for the estimation of a parameter, it is difficult for us to choose the best one between them. The efficiency property decides to prefer the one which has minimum variance. Hence efficiency is a selection criterion for efficient estimator between unbiasead estimators.",
+     "urdu": "اگر دو تخمین کار ہوں جن دونوں میں غیر جانبداری کی خاصیت ہو اور جو کسی پیرامیٹر کے تخمین کے لیے استعمال ہو سکیں، تو ہمارے لیے ان میں سے بہترین کا انتخاب مشکل ہوتا ہے۔ کارکردگی کی خاصیت یہ فیصلہ کرتی ہے کہ اس کو ترجیح دی جائے جس کا تغیر کم سے کم ہو۔ لہٰذا کارکردگی غیر جانبدار تخمین کاروں میں سے مؤثر تخمین کار کے انتخاب کا معیار ہے۔",
+     "pashto": "که دوه اټکلوونکي وي چې دواړه د بې‌پلوي ځانګړنه ولري او د یوه پارامټر د اټکل لپاره وکارول شي، نو د هغو له منځه د غوره ټاکل موږ ته ستونزمن وي. د موثریت ځانګړنه پرېکړه کوي چې هغه غوره کړو چې لږ تر لږه واریانس لري. نو موثریت د بې‌پلوه اټکلوونکو ترمنځ د موثر اټکلوونکي د ټاکنې معیار دی."
+    },
+    {
+     "text": "Definition of efficient estimator:",
+     "urdu": "مؤثر تخمین کار کی تعریف:",
+     "pashto": "د موثر اټکلوونکي تعریف:"
+    },
+    {
+     "text": "If $\\hat{\\theta}_1$ and $\\hat{\\theta}_2$ are two unbiased estimators of the same parameter θ and $Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2)$, then $\\hat{\\theta}_1$ is efficient estimator than $\\hat{\\theta}_2$. Efficiency is generally expressed in relative terms as:",
+     "urdu": "اگر $\\hat{\\theta}_1$ اور $\\hat{\\theta}_2$ ایک ہی پیرامیٹر θ کے دو غیر جانبدار تخمین کار ہوں اور $Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2)$ ہو تو $\\hat{\\theta}_1$، $\\hat{\\theta}_2$ سے زیادہ مؤثر تخمین کار ہے۔ کارکردگی کو عموماً نسبتی شکل میں یوں ظاہر کیا جاتا ہے:",
+     "pashto": "که $\\hat{\\theta}_1$ او $\\hat{\\theta}_2$ د یوه پارامټر θ دوه بې‌پلوه اټکلوونکي وي او $Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2)$ وي، نو $\\hat{\\theta}_1$ تر $\\hat{\\theta}_2$ موثر اټکلوونکی دی. موثریت معمولاً په نسبي بڼه داسې ښودل کېږي:"
+    },
+    {
+     "text": "$$R.E=\\frac{\\textit{Variance of efficient estimator}}{\\textit{Variance of other estimator}}$$",
+     "urdu": "$$R.E=\\frac{\\textit{Variance of efficient estimator}}{\\textit{Variance of other estimator}}$$ (مؤثر تخمین کار کا تغیر / دوسرے تخمین کار کا تغیر)",
+     "pashto": "$$R.E=\\frac{\\textit{Variance of efficient estimator}}{\\textit{Variance of other estimator}}$$ (د موثر اټکلوونکي واریانس / د بل اټکلوونکي واریانس)"
+    },
+    {
+     "text": "If $0\\le R.E<1\\Rightarrow\\hat{\\theta}_1$ is efficient",
+     "urdu": "اگر $0\\le R.E<1\\Rightarrow\\hat{\\theta}_1$ مؤثر ہے",
+     "pashto": "که $0\\le R.E<1\\Rightarrow\\hat{\\theta}_1$ موثر دی"
+    },
+    {
+     "text": "If $R.E>1\\Rightarrow\\hat{\\theta}_2$ is efficient.",
+     "urdu": "اگر $R.E>1\\Rightarrow\\hat{\\theta}_2$ مؤثر ہے۔",
+     "pashto": "که $R.E>1\\Rightarrow\\hat{\\theta}_2$ موثر دی."
+    }
+   ],
+   "theory": "6.2.4 Efficiency\n\nIf there are two estimators, both possessing the property of unbiasedness which can be used for the estimation of a parameter, it is difficult for us to choose the best one between them. The efficiency property decides to prefer the one which has minimum variance. Hence efficiency is a selection criterion for efficient estimator between unbiasead estimators.\n\nDefinition of efficient estimator:\n\nIf \\hat{\\theta}_1 and \\hat{\\theta}_2 are two unbiased estimators of the same parameter θ and Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2), then \\hat{\\theta}_1 is efficient estimator than \\hat{\\theta}_2. Efficiency is generally expressed in relative terms as:\n\n$R.E=\\frac{\\textit{Variance of efficient estimator}}{\\textit{Variance of other estimator}}$\n\nIf 0\\le R.E<1\\Rightarrow\\hat{\\theta}_1 is efficient\n\nIf R.E>1\\Rightarrow\\hat{\\theta}_2 is efficient.",
+   "urdu": "6.2.4 کارکردگی (Efficiency)\n\nاگر دو تخمین کار ہوں جن دونوں میں غیر جانبداری کی خاصیت ہو اور جو کسی پیرامیٹر کے تخمین کے لیے استعمال ہو سکیں، تو ہمارے لیے ان میں سے بہترین کا انتخاب مشکل ہوتا ہے۔ کارکردگی کی خاصیت یہ فیصلہ کرتی ہے کہ اس کو ترجیح دی جائے جس کا تغیر کم سے کم ہو۔ لہٰذا کارکردگی غیر جانبدار تخمین کاروں میں سے مؤثر تخمین کار کے انتخاب کا معیار ہے۔\n\nمؤثر تخمین کار کی تعریف:\n\nاگر \\hat{\\theta}_1 اور \\hat{\\theta}_2 ایک ہی پیرامیٹر θ کے دو غیر جانبدار تخمین کار ہوں اور Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2) ہو تو \\hat{\\theta}_1، \\hat{\\theta}_2 سے زیادہ مؤثر تخمین کار ہے۔ کارکردگی کو عموماً نسبتی شکل میں یوں ظاہر کیا جاتا ہے:\n\n$R.E=\\frac{\\textit{Variance of efficient estimator}}{\\textit{Variance of other estimator}}$ (مؤثر تخمین کار کا تغیر / دوسرے تخمین کار کا تغیر)\n\nاگر 0\\le R.E<1\\Rightarrow\\hat{\\theta}_1 مؤثر ہے\n\nاگر R.E>1\\Rightarrow\\hat{\\theta}_2 مؤثر ہے۔",
+   "pashto": "6.2.4 موثریت (Efficiency)\n\nکه دوه اټکلوونکي وي چې دواړه د بې‌پلوي ځانګړنه ولري او د یوه پارامټر د اټکل لپاره وکارول شي، نو د هغو له منځه د غوره ټاکل موږ ته ستونزمن وي. د موثریت ځانګړنه پرېکړه کوي چې هغه غوره کړو چې لږ تر لږه واریانس لري. نو موثریت د بې‌پلوه اټکلوونکو ترمنځ د موثر اټکلوونکي د ټاکنې معیار دی.\n\nد موثر اټکلوونکي تعریف:\n\nکه \\hat{\\theta}_1 او \\hat{\\theta}_2 د یوه پارامټر θ دوه بې‌پلوه اټکلوونکي وي او Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2) وي، نو \\hat{\\theta}_1 تر \\hat{\\theta}_2 موثر اټکلوونکی دی. موثریت معمولاً په نسبي بڼه داسې ښودل کېږي:\n\n$R.E=\\frac{\\textit{Variance of efficient estimator}}{\\textit{Variance of other estimator}}$ (د موثر اټکلوونکي واریانس / د بل اټکلوونکي واریانس)\n\nکه 0\\le R.E<1\\Rightarrow\\hat{\\theta}_1 موثر دی\n\nکه R.E>1\\Rightarrow\\hat{\\theta}_2 موثر دی.",
+   "theoryUrdu": "6.2.4 کارکردگی (Efficiency)\n\nاگر دو تخمین کار ہوں جن دونوں میں غیر جانبداری کی خاصیت ہو اور جو کسی پیرامیٹر کے تخمین کے لیے استعمال ہو سکیں، تو ہمارے لیے ان میں سے بہترین کا انتخاب مشکل ہوتا ہے۔ کارکردگی کی خاصیت یہ فیصلہ کرتی ہے کہ اس کو ترجیح دی جائے جس کا تغیر کم سے کم ہو۔ لہٰذا کارکردگی غیر جانبدار تخمین کاروں میں سے مؤثر تخمین کار کے انتخاب کا معیار ہے۔\n\nمؤثر تخمین کار کی تعریف:\n\nاگر \\hat{\\theta}_1 اور \\hat{\\theta}_2 ایک ہی پیرامیٹر θ کے دو غیر جانبدار تخمین کار ہوں اور Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2) ہو تو \\hat{\\theta}_1، \\hat{\\theta}_2 سے زیادہ مؤثر تخمین کار ہے۔ کارکردگی کو عموماً نسبتی شکل میں یوں ظاہر کیا جاتا ہے:\n\n$R.E=\\frac{\\textit{Variance of efficient estimator}}{\\textit{Variance of other estimator}}$ (مؤثر تخمین کار کا تغیر / دوسرے تخمین کار کا تغیر)\n\nاگر 0\\le R.E<1\\Rightarrow\\hat{\\theta}_1 مؤثر ہے\n\nاگر R.E>1\\Rightarrow\\hat{\\theta}_2 مؤثر ہے۔",
+   "theoryPashto": "6.2.4 موثریت (Efficiency)\n\nکه دوه اټکلوونکي وي چې دواړه د بې‌پلوي ځانګړنه ولري او د یوه پارامټر د اټکل لپاره وکارول شي، نو د هغو له منځه د غوره ټاکل موږ ته ستونزمن وي. د موثریت ځانګړنه پرېکړه کوي چې هغه غوره کړو چې لږ تر لږه واریانس لري. نو موثریت د بې‌پلوه اټکلوونکو ترمنځ د موثر اټکلوونکي د ټاکنې معیار دی.\n\nد موثر اټکلوونکي تعریف:\n\nکه \\hat{\\theta}_1 او \\hat{\\theta}_2 د یوه پارامټر θ دوه بې‌پلوه اټکلوونکي وي او Var(\\hat{\\theta}_1)<Var(\\hat{\\theta}_2) وي، نو \\hat{\\theta}_1 تر \\hat{\\theta}_2 موثر اټکلوونکی دی. موثریت معمولاً په نسبي بڼه داسې ښودل کېږي:\n\n$R.E=\\frac{\\textit{Variance of efficient estimator}}{\\textit{Variance of other estimator}}$ (د موثر اټکلوونکي واریانس / د بل اټکلوونکي واریانس)\n\nکه 0\\le R.E<1\\Rightarrow\\hat{\\theta}_1 موثر دی\n\nکه R.E>1\\Rightarrow\\hat{\\theta}_2 موثر دی.",
+   "content": "<p>6.2.4 Efficiency</p><p>If there are two estimators, both possessing the property of unbiasedness which can be used for the estimation of a parameter, it is difficult for us to choose the best one between them. The efficiency property decides to prefer the one which has minimum variance. Hence efficiency is a selection criterion for efficient estimator between unbiasead estimators.</p><p>Definition of efficient estimator:</p><p>If \\hat{\\theta}_1 and \\hat{\\theta}_2 are two unbiased estimators of the same parameter θ and Var(\\hat{\\theta}_1)&lt;Var(\\hat{\\theta}_2), then \\hat{\\theta}_1 is efficient estimator than \\hat{\\theta}_2. Efficiency is generally expressed in relative terms as:</p><p>$R.E=\\frac{\\textit{Variance of efficient estimator}}{\\textit{Variance of other estimator}}$</p><p>If 0\\le R.E&lt;1\\Rightarrow\\hat{\\theta}_1 is efficient</p><p>If R.E&gt;1\\Rightarrow\\hat{\\theta}_2 is efficient.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5,
+      6
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 106,
+     "printedPages": [
+      204
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

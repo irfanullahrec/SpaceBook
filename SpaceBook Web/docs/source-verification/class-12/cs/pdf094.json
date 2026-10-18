@@ -1,0 +1,230 @@
+{
+ "pdfPage": 94,
+ "sections": [
+  {
+   "id": "cs12-u6-text-1",
+   "title": "Unit 6 text (1)",
+   "headingUrdu": "یونٹ 6 — متن (1)",
+   "headingPashto": "۶ څپرکی — متن (1)",
+   "paras": [
+    {
+     "text": "INTRODUCTION",
+     "urdu": "تعارف",
+     "pashto": "سریزه"
+    },
+    {
+     "text": "A good programming technique is to modularize the programs into small segments of codes. These small segments are called modules or procedures and perform some specific tasks. In C++ language, these modules are usually called functions. This unit describes the basic concepts of functions, its parts, parameters and arguments. Here, the concept of function overloading has also been discussed with the help of examples.",
+     "urdu": "ایک اچھی پروگرامنگ تکنیک یہ ہے کہ پروگراموں کو کوڈ کے چھوٹے حصوں میں تقسیم کیا جائے۔ یہ چھوٹے حصے ماڈیولز یا پروسیجرز کہلاتے ہیں اور کچھ مخصوص کام انجام دیتے ہیں۔ C++ زبان میں ان ماڈیولز کو عموماً فنکشنز کہا جاتا ہے۔ یہ یونٹ فنکشنز کے بنیادی تصورات، ان کے حصے، پیرامیٹرز اور آرگیومنٹس بیان کرتا ہے۔ یہاں مثالوں کی مدد سے فنکشن اوورلوڈنگ کے تصور پر بھی بات کی گئی ہے۔",
+     "pashto": "د پروګرام جوړونې ښه تخنیک دا دی چې پروګرامونه د کوډ په وړو برخو ووېشل شي. دا وړې برخې ماډیولونه یا پروسیجرونه بلل کېږي او ځینې ځانګړې دندې ترسره کوي. په C++ ژبه کې دې ماډیولونو ته عموماً فنکشنونه ویل کېږي. دا څپرکی د فنکشنونو بنسټیز مفاهیم، برخې، پاراميټرونه او دلیلونه بیانوي. دلته د بېلګو په مرسته د فنکشن ډېرولو (overloading) مفهوم هم څېړل شوی."
+    },
+    {
+     "text": "6.1 Functions",
+     "urdu": "6.1 فنکشنز",
+     "pashto": "۶.۱ فنکشنونه"
+    },
+    {
+     "text": "In C++ program, when a set of related statements are grouped together, in a particular format, to accomplish a specific task is called function. Function is one of the main building blocks of any programming language. There are some functions whose work has been fixed by the developers of C++ programming language. These are called built-in functions. Built-in functions are specific in its functionalities; therefore, the programmers develop their own functions called user-defined functions. These functions are the main focus point of this unit.",
+     "urdu": "C++ پروگرام میں جب متعلقہ بیانات کا ایک مجموعہ کسی خاص کام کی انجام دہی کے لیے ایک مخصوص شکل میں اکٹھا کیا جائے تو اسے فنکشن کہتے ہیں۔ فنکشن کسی بھی پروگرامنگ زبان کے بنیادی اجزا میں سے ایک ہے۔ کچھ فنکشنز ایسے ہیں جن کا کام C++ پروگرامنگ زبان کے بنانے والوں نے مقرر کر دیا ہے۔ انھیں بلٹ اِن فنکشنز کہتے ہیں۔ بلٹ اِن فنکشنز اپنی کارکردگی میں مخصوص ہیں؛ اس لیے پروگرامرز اپنے فنکشنز بناتے ہیں جنھیں یوزر ڈیفائنڈ فنکشنز کہتے ہیں۔ یہ فنکشنز اس یونٹ کا مرکزی موضوع ہیں۔",
+     "pashto": "په C++ پروګرام کې کله چې د اړوندو بیانونو یوه ټولګه د یوې ځانګړې دندې د ترسره کولو لپاره په یوه ټاکلې بڼه یوځای شي، فنکشن بلل کېږي. فنکشن د هرې پروګرامي ژبې له اصلي جوړوونکو برخو یو دی. ځینې فنکشنونه شته چې کار یې د C++ پروګرامي ژبې جوړوونکو ټاکلی دی. دا جوړ شوي (built-in) فنکشنونه بلل کېږي. جوړ شوي فنکشنونه په خپلو دندو کې ځانګړي دي؛ نو پروګرام جوړوونکي خپل فنکشنونه جوړوي چې د کاروونکي-تعریف شوي فنکشنونه بلل کېږي. دا فنکشنونه د دې څپرکي اصلي تمرکز دی."
+    },
+    {
+     "text": "6.1.1 Concept and types of functions",
+     "urdu": "6.1.1 فنکشنز کا تصور اور اقسام",
+     "pashto": "۶.۱.۱ د فنکشنونو مفهوم او ډولونه"
+    },
+    {
+     "text": "Function is an important feature of any programming language. It makes the work easier by writing the code once and executing it again and again. Mainly, functions are divided into two types built-in and user defined.",
+     "urdu": "فنکشن کسی بھی پروگرامنگ زبان کی اہم خصوصیت ہے۔ یہ کوڈ ایک بار لکھ کر بار بار چلانے سے کام آسان بناتا ہے۔ بنیادی طور پر فنکشنز دو اقسام میں تقسیم ہیں: بلٹ اِن اور یوزر ڈیفائنڈ۔",
+     "pashto": "فنکشن د هرې پروګرامي ژبې مهمه ځانګړتیا ده. دا د کوډ یو ځل لیکلو او بیا بیا اجرا کولو له لارې کار اسانوي. په اصل کې فنکشنونه په دوو ډولونو وېشل کېږي: جوړ شوي او د کاروونکي-تعریف شوي."
+    },
+    {
+     "text": "a. Concept of function",
+     "urdu": "a. فنکشن کا تصور",
+     "pashto": "a. د فنکشن مفهوم"
+    },
+    {
+     "text": "Whenever we want to perform a task again and again in a program such as calculating the square or cube for multiple integer values then it is too difficult to write the same code multiple times, say 5 times for 5 different integer values, in the same program.",
+     "urdu": "جب بھی ہم کسی پروگرام میں کوئی کام بار بار کرنا چاہیں، جیسے متعدد صحیح قدروں کا مربع یا مکعب معلوم کرنا، تو ایک ہی پروگرام میں ایک ہی کوڈ کو کئی بار، مثلاً 5 مختلف صحیح قدروں کے لیے 5 بار، لکھنا بہت مشکل ہے۔",
+     "pashto": "کله چې وغواړو په یوه پروګرام کې یوه دنده بیا بیا ترسره کړو، لکه د ډېرو صحیح ارزښتونو مربع یا مکعب موندل، نو په یوه پروګرام کې یو کوډ څو ځله، مثلاً د ۵ بېلو صحیح ارزښتونو لپاره ۵ ځله، لیکل ډېر ستونزمن دي."
+    },
+    {
+     "text": "b. Types of functions",
+     "urdu": "b. فنکشنز کی اقسام",
+     "pashto": "b. د فنکشنونو ډولونه"
+    },
+    {
+     "text": "C++ functions are categorized into two types namely built-in function and user defined functions. The following sections describe these types in detail.",
+     "urdu": "C++ فنکشنز دو اقسام میں تقسیم ہیں یعنی بلٹ اِن فنکشن اور یوزر ڈیفائنڈ فنکشنز۔ درج ذیل حصے ان اقسام کو تفصیل سے بیان کرتے ہیں۔",
+     "pashto": "C++ فنکشنونه په دوو ډولونو وېشل کېږي، یعنې جوړ شوي فنکشن او د کاروونکي-تعریف شوي فنکشنونه. لاندې برخې دا ډولونه په تفصیل بیانوي."
+    },
+    {
+     "text": "i. Built-in Functions",
+     "urdu": "i. بلٹ اِن فنکشنز",
+     "pashto": "i. جوړ شوي فنکشنونه"
+    },
+    {
+     "text": "C++ language provides a number of pre-compiled functions for some commonly used operations. These functions are called built-in functions. Built-in functions are part of the C++ language and are highly valuable, pre-tested and completely reliable. The C++ built-in functions are made for various assignments ranging from algebra, geometry, trigonometry, finance, text and graphics to some complex operations.",
+     "urdu": "C++ زبان کچھ عام استعمال ہونے والے کاموں کے لیے متعدد پہلے سے کمپائل شدہ فنکشنز فراہم کرتی ہے۔ یہ فنکشنز بلٹ اِن فنکشنز کہلاتے ہیں۔ بلٹ اِن فنکشنز C++ زبان کا حصہ ہیں اور بہت قیمتی، پہلے سے جانچے ہوئے اور مکمل قابلِ اعتماد ہیں۔ C++ کے بلٹ اِن فنکشنز الجبرا، جیومیٹری، ٹرگنومیٹری، مالیات، متن اور گرافکس سے لے کر کچھ پیچیدہ کاموں تک مختلف مقاصد کے لیے بنائے گئے ہیں۔",
+     "pashto": "C++ ژبه د ځینو عام کارېدونکو عملیو لپاره یو شمېر مخکې کمپایل شوي فنکشنونه برابروي. دا فنکشنونه جوړ شوي فنکشنونه بلل کېږي. جوړ شوي فنکشنونه د C++ ژبې برخه دي او ډېر ارزښتناک، مخکې ازمول شوي او بشپړ باوري دي. د C++ جوړ شوي فنکشنونه د الجبر، جیومټرۍ، مثلثاتو، مالي چارو، متن او ګرافیک څخه تر ځینو پېچلو عملیو پورې د بېلابېلو دندو لپاره جوړ شوي."
+    },
+    {
+     "text": "Consider the following example that requests the value of angle and calculate its sine and display it on the screen.",
+     "urdu": "درج ذیل مثال پر غور کریں جو زاویے کی قدر مانگتی ہے، اس کا sine معلوم کرتی ہے اور اسے اسکرین پر دکھاتی ہے۔",
+     "pashto": "لاندې بېلګې ته پام وکړئ چې د زاویې ارزښت غواړي، د هغې sine حسابوي او پر پرده یې ښيي."
+    },
+    {
+     "text": "// built-in function(sin())program\n#include <iostream.h>\n#include<conio.h>\n#include<math.h>\nint main()\n{\nfloat angle;\ncout << \"Enter value for angle:\"<<endl;\ncin >> angle;\ncout<<\"The Sine of \"<<angle<<\" degree is =\n\"<<sin(angle);\ngetch();\nreturn 0;\n}",
+     "urdu": "// built-in function(sin())program\n#include <iostream.h>\n#include<conio.h>\n#include<math.h>\nint main()\n{\nfloat angle;\ncout << \"Enter value for angle:\"<<endl;\ncin >> angle;\ncout<<\"The Sine of \"<<angle<<\" degree is =\n\"<<sin(angle);\ngetch();\nreturn 0;\n}",
+     "pashto": "// built-in function(sin())program\n#include <iostream.h>\n#include<conio.h>\n#include<math.h>\nint main()\n{\nfloat angle;\ncout << \"Enter value for angle:\"<<endl;\ncin >> angle;\ncout<<\"The Sine of \"<<angle<<\" degree is =\n\"<<sin(angle);\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter value for angle:\n45.0\nThe Sin of 45.0 degree is = 0.850904",
+     "urdu": "Enter value for angle:\n45.0\nThe Sin of 45.0 degree is = 0.850904",
+     "pashto": "Enter value for angle:\n45.0\nThe Sin of 45.0 degree is = 0.850904",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "INTRODUCTION\n\nA good programming technique is to modularize the programs into small segments of codes. These small segments are called modules or procedures and perform some specific tasks. In C++ language, these modules are usually called functions. This unit describes the basic concepts of functions, its parts, parameters and arguments. Here, the concept of function overloading has also been discussed with the help of examples.\n\n6.1 Functions\n\nIn C++ program, when a set of related statements are grouped together, in a particular format, to accomplish a specific task is called function. Function is one of the main building blocks of any programming language. There are some functions whose work has been fixed by the developers of C++ programming language. These are called built-in functions. Built-in functions are specific in its functionalities; therefore, the programmers develop their own functions called user-defined functions. These functions are the main focus point of this unit.\n\n6.1.1 Concept and types of functions\n\nFunction is an important feature of any programming language. It makes the work easier by writing the code once and executing it again and again. Mainly, functions are divided into two types built-in and user defined.\n\na. Concept of function\n\nWhenever we want to perform a task again and again in a program such as calculating the square or cube for multiple integer values then it is too difficult to write the same code multiple times, say 5 times for 5 different integer values, in the same program.\n\nb. Types of functions\n\nC++ functions are categorized into two types namely built-in function and user defined functions. The following sections describe these types in detail.\n\ni. Built-in Functions\n\nC++ language provides a number of pre-compiled functions for some commonly used operations. These functions are called built-in functions. Built-in functions are part of the C++ language and are highly valuable, pre-tested and completely reliable. The C++ built-in functions are made for various assignments ranging from algebra, geometry, trigonometry, finance, text and graphics to some complex operations.\n\nConsider the following example that requests the value of angle and calculate its sine and display it on the screen.\n\n// built-in function(sin())program\n#include <iostream.h>\n#include<conio.h>\n#include<math.h>\nint main()\n{\nfloat angle;\ncout << \"Enter value for angle:\"<<endl;\ncin >> angle;\ncout<<\"The Sine of \"<<angle<<\" degree is =\n\"<<sin(angle);\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nEnter value for angle:\n45.0\nThe Sin of 45.0 degree is = 0.850904",
+   "urdu": "تعارف\n\nایک اچھی پروگرامنگ تکنیک یہ ہے کہ پروگراموں کو کوڈ کے چھوٹے حصوں میں تقسیم کیا جائے۔ یہ چھوٹے حصے ماڈیولز یا پروسیجرز کہلاتے ہیں اور کچھ مخصوص کام انجام دیتے ہیں۔ C++ زبان میں ان ماڈیولز کو عموماً فنکشنز کہا جاتا ہے۔ یہ یونٹ فنکشنز کے بنیادی تصورات، ان کے حصے، پیرامیٹرز اور آرگیومنٹس بیان کرتا ہے۔ یہاں مثالوں کی مدد سے فنکشن اوورلوڈنگ کے تصور پر بھی بات کی گئی ہے۔\n\n6.1 فنکشنز\n\nC++ پروگرام میں جب متعلقہ بیانات کا ایک مجموعہ کسی خاص کام کی انجام دہی کے لیے ایک مخصوص شکل میں اکٹھا کیا جائے تو اسے فنکشن کہتے ہیں۔ فنکشن کسی بھی پروگرامنگ زبان کے بنیادی اجزا میں سے ایک ہے۔ کچھ فنکشنز ایسے ہیں جن کا کام C++ پروگرامنگ زبان کے بنانے والوں نے مقرر کر دیا ہے۔ انھیں بلٹ اِن فنکشنز کہتے ہیں۔ بلٹ اِن فنکشنز اپنی کارکردگی میں مخصوص ہیں؛ اس لیے پروگرامرز اپنے فنکشنز بناتے ہیں جنھیں یوزر ڈیفائنڈ فنکشنز کہتے ہیں۔ یہ فنکشنز اس یونٹ کا مرکزی موضوع ہیں۔\n\n6.1.1 فنکشنز کا تصور اور اقسام\n\nفنکشن کسی بھی پروگرامنگ زبان کی اہم خصوصیت ہے۔ یہ کوڈ ایک بار لکھ کر بار بار چلانے سے کام آسان بناتا ہے۔ بنیادی طور پر فنکشنز دو اقسام میں تقسیم ہیں: بلٹ اِن اور یوزر ڈیفائنڈ۔\n\na. فنکشن کا تصور\n\nجب بھی ہم کسی پروگرام میں کوئی کام بار بار کرنا چاہیں، جیسے متعدد صحیح قدروں کا مربع یا مکعب معلوم کرنا، تو ایک ہی پروگرام میں ایک ہی کوڈ کو کئی بار، مثلاً 5 مختلف صحیح قدروں کے لیے 5 بار، لکھنا بہت مشکل ہے۔\n\nb. فنکشنز کی اقسام\n\nC++ فنکشنز دو اقسام میں تقسیم ہیں یعنی بلٹ اِن فنکشن اور یوزر ڈیفائنڈ فنکشنز۔ درج ذیل حصے ان اقسام کو تفصیل سے بیان کرتے ہیں۔\n\ni. بلٹ اِن فنکشنز\n\nC++ زبان کچھ عام استعمال ہونے والے کاموں کے لیے متعدد پہلے سے کمپائل شدہ فنکشنز فراہم کرتی ہے۔ یہ فنکشنز بلٹ اِن فنکشنز کہلاتے ہیں۔ بلٹ اِن فنکشنز C++ زبان کا حصہ ہیں اور بہت قیمتی، پہلے سے جانچے ہوئے اور مکمل قابلِ اعتماد ہیں۔ C++ کے بلٹ اِن فنکشنز الجبرا، جیومیٹری، ٹرگنومیٹری، مالیات، متن اور گرافکس سے لے کر کچھ پیچیدہ کاموں تک مختلف مقاصد کے لیے بنائے گئے ہیں۔\n\nدرج ذیل مثال پر غور کریں جو زاویے کی قدر مانگتی ہے، اس کا sine معلوم کرتی ہے اور اسے اسکرین پر دکھاتی ہے۔\n\n// built-in function(sin())program\n#include <iostream.h>\n#include<conio.h>\n#include<math.h>\nint main()\n{\nfloat angle;\ncout << \"Enter value for angle:\"<<endl;\ncin >> angle;\ncout<<\"The Sine of \"<<angle<<\" degree is =\n\"<<sin(angle);\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter value for angle:\n45.0\nThe Sin of 45.0 degree is = 0.850904",
+   "pashto": "سریزه\n\nد پروګرام جوړونې ښه تخنیک دا دی چې پروګرامونه د کوډ په وړو برخو ووېشل شي. دا وړې برخې ماډیولونه یا پروسیجرونه بلل کېږي او ځینې ځانګړې دندې ترسره کوي. په C++ ژبه کې دې ماډیولونو ته عموماً فنکشنونه ویل کېږي. دا څپرکی د فنکشنونو بنسټیز مفاهیم، برخې، پاراميټرونه او دلیلونه بیانوي. دلته د بېلګو په مرسته د فنکشن ډېرولو (overloading) مفهوم هم څېړل شوی.\n\n۶.۱ فنکشنونه\n\nپه C++ پروګرام کې کله چې د اړوندو بیانونو یوه ټولګه د یوې ځانګړې دندې د ترسره کولو لپاره په یوه ټاکلې بڼه یوځای شي، فنکشن بلل کېږي. فنکشن د هرې پروګرامي ژبې له اصلي جوړوونکو برخو یو دی. ځینې فنکشنونه شته چې کار یې د C++ پروګرامي ژبې جوړوونکو ټاکلی دی. دا جوړ شوي (built-in) فنکشنونه بلل کېږي. جوړ شوي فنکشنونه په خپلو دندو کې ځانګړي دي؛ نو پروګرام جوړوونکي خپل فنکشنونه جوړوي چې د کاروونکي-تعریف شوي فنکشنونه بلل کېږي. دا فنکشنونه د دې څپرکي اصلي تمرکز دی.\n\n۶.۱.۱ د فنکشنونو مفهوم او ډولونه\n\nفنکشن د هرې پروګرامي ژبې مهمه ځانګړتیا ده. دا د کوډ یو ځل لیکلو او بیا بیا اجرا کولو له لارې کار اسانوي. په اصل کې فنکشنونه په دوو ډولونو وېشل کېږي: جوړ شوي او د کاروونکي-تعریف شوي.\n\na. د فنکشن مفهوم\n\nکله چې وغواړو په یوه پروګرام کې یوه دنده بیا بیا ترسره کړو، لکه د ډېرو صحیح ارزښتونو مربع یا مکعب موندل، نو په یوه پروګرام کې یو کوډ څو ځله، مثلاً د ۵ بېلو صحیح ارزښتونو لپاره ۵ ځله، لیکل ډېر ستونزمن دي.\n\nb. د فنکشنونو ډولونه\n\nC++ فنکشنونه په دوو ډولونو وېشل کېږي، یعنې جوړ شوي فنکشن او د کاروونکي-تعریف شوي فنکشنونه. لاندې برخې دا ډولونه په تفصیل بیانوي.\n\ni. جوړ شوي فنکشنونه\n\nC++ ژبه د ځینو عام کارېدونکو عملیو لپاره یو شمېر مخکې کمپایل شوي فنکشنونه برابروي. دا فنکشنونه جوړ شوي فنکشنونه بلل کېږي. جوړ شوي فنکشنونه د C++ ژبې برخه دي او ډېر ارزښتناک، مخکې ازمول شوي او بشپړ باوري دي. د C++ جوړ شوي فنکشنونه د الجبر، جیومټرۍ، مثلثاتو، مالي چارو، متن او ګرافیک څخه تر ځینو پېچلو عملیو پورې د بېلابېلو دندو لپاره جوړ شوي.\n\nلاندې بېلګې ته پام وکړئ چې د زاویې ارزښت غواړي، د هغې sine حسابوي او پر پرده یې ښيي.\n\n// built-in function(sin())program\n#include <iostream.h>\n#include<conio.h>\n#include<math.h>\nint main()\n{\nfloat angle;\ncout << \"Enter value for angle:\"<<endl;\ncin >> angle;\ncout<<\"The Sine of \"<<angle<<\" degree is =\n\"<<sin(angle);\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter value for angle:\n45.0\nThe Sin of 45.0 degree is = 0.850904",
+   "theoryUrdu": "تعارف\n\nایک اچھی پروگرامنگ تکنیک یہ ہے کہ پروگراموں کو کوڈ کے چھوٹے حصوں میں تقسیم کیا جائے۔ یہ چھوٹے حصے ماڈیولز یا پروسیجرز کہلاتے ہیں اور کچھ مخصوص کام انجام دیتے ہیں۔ C++ زبان میں ان ماڈیولز کو عموماً فنکشنز کہا جاتا ہے۔ یہ یونٹ فنکشنز کے بنیادی تصورات، ان کے حصے، پیرامیٹرز اور آرگیومنٹس بیان کرتا ہے۔ یہاں مثالوں کی مدد سے فنکشن اوورلوڈنگ کے تصور پر بھی بات کی گئی ہے۔\n\n6.1 فنکشنز\n\nC++ پروگرام میں جب متعلقہ بیانات کا ایک مجموعہ کسی خاص کام کی انجام دہی کے لیے ایک مخصوص شکل میں اکٹھا کیا جائے تو اسے فنکشن کہتے ہیں۔ فنکشن کسی بھی پروگرامنگ زبان کے بنیادی اجزا میں سے ایک ہے۔ کچھ فنکشنز ایسے ہیں جن کا کام C++ پروگرامنگ زبان کے بنانے والوں نے مقرر کر دیا ہے۔ انھیں بلٹ اِن فنکشنز کہتے ہیں۔ بلٹ اِن فنکشنز اپنی کارکردگی میں مخصوص ہیں؛ اس لیے پروگرامرز اپنے فنکشنز بناتے ہیں جنھیں یوزر ڈیفائنڈ فنکشنز کہتے ہیں۔ یہ فنکشنز اس یونٹ کا مرکزی موضوع ہیں۔\n\n6.1.1 فنکشنز کا تصور اور اقسام\n\nفنکشن کسی بھی پروگرامنگ زبان کی اہم خصوصیت ہے۔ یہ کوڈ ایک بار لکھ کر بار بار چلانے سے کام آسان بناتا ہے۔ بنیادی طور پر فنکشنز دو اقسام میں تقسیم ہیں: بلٹ اِن اور یوزر ڈیفائنڈ۔\n\na. فنکشن کا تصور\n\nجب بھی ہم کسی پروگرام میں کوئی کام بار بار کرنا چاہیں، جیسے متعدد صحیح قدروں کا مربع یا مکعب معلوم کرنا، تو ایک ہی پروگرام میں ایک ہی کوڈ کو کئی بار، مثلاً 5 مختلف صحیح قدروں کے لیے 5 بار، لکھنا بہت مشکل ہے۔\n\nb. فنکشنز کی اقسام\n\nC++ فنکشنز دو اقسام میں تقسیم ہیں یعنی بلٹ اِن فنکشن اور یوزر ڈیفائنڈ فنکشنز۔ درج ذیل حصے ان اقسام کو تفصیل سے بیان کرتے ہیں۔\n\ni. بلٹ اِن فنکشنز\n\nC++ زبان کچھ عام استعمال ہونے والے کاموں کے لیے متعدد پہلے سے کمپائل شدہ فنکشنز فراہم کرتی ہے۔ یہ فنکشنز بلٹ اِن فنکشنز کہلاتے ہیں۔ بلٹ اِن فنکشنز C++ زبان کا حصہ ہیں اور بہت قیمتی، پہلے سے جانچے ہوئے اور مکمل قابلِ اعتماد ہیں۔ C++ کے بلٹ اِن فنکشنز الجبرا، جیومیٹری، ٹرگنومیٹری، مالیات، متن اور گرافکس سے لے کر کچھ پیچیدہ کاموں تک مختلف مقاصد کے لیے بنائے گئے ہیں۔\n\nدرج ذیل مثال پر غور کریں جو زاویے کی قدر مانگتی ہے، اس کا sine معلوم کرتی ہے اور اسے اسکرین پر دکھاتی ہے۔\n\n// built-in function(sin())program\n#include <iostream.h>\n#include<conio.h>\n#include<math.h>\nint main()\n{\nfloat angle;\ncout << \"Enter value for angle:\"<<endl;\ncin >> angle;\ncout<<\"The Sine of \"<<angle<<\" degree is =\n\"<<sin(angle);\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter value for angle:\n45.0\nThe Sin of 45.0 degree is = 0.850904",
+   "theoryPashto": "سریزه\n\nد پروګرام جوړونې ښه تخنیک دا دی چې پروګرامونه د کوډ په وړو برخو ووېشل شي. دا وړې برخې ماډیولونه یا پروسیجرونه بلل کېږي او ځینې ځانګړې دندې ترسره کوي. په C++ ژبه کې دې ماډیولونو ته عموماً فنکشنونه ویل کېږي. دا څپرکی د فنکشنونو بنسټیز مفاهیم، برخې، پاراميټرونه او دلیلونه بیانوي. دلته د بېلګو په مرسته د فنکشن ډېرولو (overloading) مفهوم هم څېړل شوی.\n\n۶.۱ فنکشنونه\n\nپه C++ پروګرام کې کله چې د اړوندو بیانونو یوه ټولګه د یوې ځانګړې دندې د ترسره کولو لپاره په یوه ټاکلې بڼه یوځای شي، فنکشن بلل کېږي. فنکشن د هرې پروګرامي ژبې له اصلي جوړوونکو برخو یو دی. ځینې فنکشنونه شته چې کار یې د C++ پروګرامي ژبې جوړوونکو ټاکلی دی. دا جوړ شوي (built-in) فنکشنونه بلل کېږي. جوړ شوي فنکشنونه په خپلو دندو کې ځانګړي دي؛ نو پروګرام جوړوونکي خپل فنکشنونه جوړوي چې د کاروونکي-تعریف شوي فنکشنونه بلل کېږي. دا فنکشنونه د دې څپرکي اصلي تمرکز دی.\n\n۶.۱.۱ د فنکشنونو مفهوم او ډولونه\n\nفنکشن د هرې پروګرامي ژبې مهمه ځانګړتیا ده. دا د کوډ یو ځل لیکلو او بیا بیا اجرا کولو له لارې کار اسانوي. په اصل کې فنکشنونه په دوو ډولونو وېشل کېږي: جوړ شوي او د کاروونکي-تعریف شوي.\n\na. د فنکشن مفهوم\n\nکله چې وغواړو په یوه پروګرام کې یوه دنده بیا بیا ترسره کړو، لکه د ډېرو صحیح ارزښتونو مربع یا مکعب موندل، نو په یوه پروګرام کې یو کوډ څو ځله، مثلاً د ۵ بېلو صحیح ارزښتونو لپاره ۵ ځله، لیکل ډېر ستونزمن دي.\n\nb. د فنکشنونو ډولونه\n\nC++ فنکشنونه په دوو ډولونو وېشل کېږي، یعنې جوړ شوي فنکشن او د کاروونکي-تعریف شوي فنکشنونه. لاندې برخې دا ډولونه په تفصیل بیانوي.\n\ni. جوړ شوي فنکشنونه\n\nC++ ژبه د ځینو عام کارېدونکو عملیو لپاره یو شمېر مخکې کمپایل شوي فنکشنونه برابروي. دا فنکشنونه جوړ شوي فنکشنونه بلل کېږي. جوړ شوي فنکشنونه د C++ ژبې برخه دي او ډېر ارزښتناک، مخکې ازمول شوي او بشپړ باوري دي. د C++ جوړ شوي فنکشنونه د الجبر، جیومټرۍ، مثلثاتو، مالي چارو، متن او ګرافیک څخه تر ځینو پېچلو عملیو پورې د بېلابېلو دندو لپاره جوړ شوي.\n\nلاندې بېلګې ته پام وکړئ چې د زاویې ارزښت غواړي، د هغې sine حسابوي او پر پرده یې ښيي.\n\n// built-in function(sin())program\n#include <iostream.h>\n#include<conio.h>\n#include<math.h>\nint main()\n{\nfloat angle;\ncout << \"Enter value for angle:\"<<endl;\ncin >> angle;\ncout<<\"The Sine of \"<<angle<<\" degree is =\n\"<<sin(angle);\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter value for angle:\n45.0\nThe Sin of 45.0 degree is = 0.850904",
+   "content": "<p>INTRODUCTION</p><p>A good programming technique is to modularize the programs into small segments of codes. These small segments are called modules or procedures and perform some specific tasks. In C++ language, these modules are usually called functions. This unit describes the basic concepts of functions, its parts, parameters and arguments. Here, the concept of function overloading has also been discussed with the help of examples.</p><p>6.1 Functions</p><p>In C++ program, when a set of related statements are grouped together, in a particular format, to accomplish a specific task is called function. Function is one of the main building blocks of any programming language. There are some functions whose work has been fixed by the developers of C++ programming language. These are called built-in functions. Built-in functions are specific in its functionalities; therefore, the programmers develop their own functions called user-defined functions. These functions are the main focus point of this unit.</p><p>6.1.1 Concept and types of functions</p><p>Function is an important feature of any programming language. It makes the work easier by writing the code once and executing it again and again. Mainly, functions are divided into two types built-in and user defined.</p><p>a. Concept of function</p><p>Whenever we want to perform a task again and again in a program such as calculating the square or cube for multiple integer values then it is too difficult to write the same code multiple times, say 5 times for 5 different integer values, in the same program.</p><p>b. Types of functions</p><p>C++ functions are categorized into two types namely built-in function and user defined functions. The following sections describe these types in detail.</p><p>i. Built-in Functions</p><p>C++ language provides a number of pre-compiled functions for some commonly used operations. These functions are called built-in functions. Built-in functions are part of the C++ language and are highly valuable, pre-tested and completely reliable. The C++ built-in functions are made for various assignments ranging from algebra, geometry, trigonometry, finance, text and graphics to some complex operations.</p><p>Consider the following example that requests the value of angle and calculate its sine and display it on the screen.</p><p>// built-in function(sin())program\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\n#include&lt;math.h&gt;\nint main()\n{\nfloat angle;\ncout &lt;&lt; &quot;Enter value for angle:&quot;&lt;&lt;endl;\ncin &gt;&gt; angle;\ncout&lt;&lt;&quot;The Sine of &quot;&lt;&lt;angle&lt;&lt;&quot; degree is =\n&quot;&lt;&lt;sin(angle);\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Enter value for angle:\n45.0\nThe Sin of 45.0 degree is = 0.850904</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 94,
+     "printedPages": [
+      176,
+      177,
+      178
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (1)",
+   "sourcePageLabel": "PDF 94 · p. 176–177–178",
+   "sourceNote": "The sin() program output is at the top of p.178 (PDF95) and is given here.",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf094",
+   "unit": 6,
+   "printedPage": 177,
+   "description": "The sin() program prints “The Sine of …” but the output shows “The Sin of 45.0 degree is = 0.850904” (sin() takes radians); the cout string is printed broken across two lines. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

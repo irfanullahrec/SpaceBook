@@ -1,0 +1,434 @@
+{
+ "pdfPage": 46,
+ "sections": [
+  {
+   "id": "stat12-p046-example-3-7",
+   "title": "Example 3.7 — binomial distribution of heads in four tosses",
+   "headingUrdu": "مثال 3.7 — چار بار اچھالنے میں چِت کی دو رقمی تقسیم",
+   "headingPashto": "بېلګه 3.7 — په څلورو اچولو کې د سرونو بینومیل وېش",
+   "paras": [
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Here $n=4$ (four Bernoulli trails)",
+     "urdu": "یہاں $n=4$ (چار برنولی آزمائشیں)",
+     "pashto": "دلته $n=4$ (څلور برنولي ازمېښتونه)"
+    },
+    {
+     "text": "X: the number of successes in four trials",
+     "urdu": "X: چار آزمائشوں میں کامیابیوں کی تعداد",
+     "pashto": "X: په څلورو ازمېښتونو کې د بریاوو شمېر"
+    },
+    {
+     "text": "$$X=0,1,2,3,4$$",
+     "urdu": "$$X=0,1,2,3,4$$",
+     "pashto": "$$X=0,1,2,3,4$$"
+    },
+    {
+     "text": "$p=\\frac{1}{2}$ (probability of head on a single coin)",
+     "urdu": "$p=\\frac{1}{2}$ (ایک سکے پر چِت کا احتمال)",
+     "pashto": "$p=\\frac{1}{2}$ (په یوه سکه د سر احتمال)"
+    },
+    {
+     "text": "$$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$$",
+     "urdu": "$$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$$",
+     "pashto": "$$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$$"
+    },
+    {
+     "text": "The Binomial probability function is:",
+     "urdu": "دو رقمی احتمالی تفاعل یہ ہے:",
+     "pashto": "بینومیل احتمالي تابع دا ده:"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "The Binomial probability distribution is",
+     "urdu": "دو رقمی احتمالی تقسیم یہ ہے",
+     "pashto": "بینومیل احتمالي وېش دا دی"
+    }
+   ],
+   "theory": "Solution:\n\nHere n=4 (four Bernoulli trails)\n\nX: the number of successes in four trials\n\n$X=0,1,2,3,4$\n\np=\\frac{1}{2} (probability of head on a single coin)\n\n$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$\n\nThe Binomial probability function is:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nThe Binomial probability distribution is",
+   "urdu": "حل:\n\nیہاں n=4 (چار برنولی آزمائشیں)\n\nX: چار آزمائشوں میں کامیابیوں کی تعداد\n\n$X=0,1,2,3,4$\n\np=\\frac{1}{2} (ایک سکے پر چِت کا احتمال)\n\n$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$\n\nدو رقمی احتمالی تفاعل یہ ہے:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nدو رقمی احتمالی تقسیم یہ ہے",
+   "pashto": "حل:\n\nدلته n=4 (څلور برنولي ازمېښتونه)\n\nX: په څلورو ازمېښتونو کې د بریاوو شمېر\n\n$X=0,1,2,3,4$\n\np=\\frac{1}{2} (په یوه سکه د سر احتمال)\n\n$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$\n\nبینومیل احتمالي تابع دا ده:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nبینومیل احتمالي وېش دا دی",
+   "theoryUrdu": "حل:\n\nیہاں n=4 (چار برنولی آزمائشیں)\n\nX: چار آزمائشوں میں کامیابیوں کی تعداد\n\n$X=0,1,2,3,4$\n\np=\\frac{1}{2} (ایک سکے پر چِت کا احتمال)\n\n$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$\n\nدو رقمی احتمالی تفاعل یہ ہے:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nدو رقمی احتمالی تقسیم یہ ہے",
+   "theoryPashto": "حل:\n\nدلته n=4 (څلور برنولي ازمېښتونه)\n\nX: په څلورو ازمېښتونو کې د بریاوو شمېر\n\n$X=0,1,2,3,4$\n\np=\\frac{1}{2} (په یوه سکه د سر احتمال)\n\n$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$\n\nبینومیل احتمالي تابع دا ده:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}, & x=0,1,2,3,4\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nبینومیل احتمالي وېش دا دی",
+   "content": "<p>Solution:</p><p>Here n=4 (four Bernoulli trails)</p><p>X: the number of successes in four trials</p><p>$X=0,1,2,3,4$</p><p>p=\\frac{1}{2} (probability of head on a single coin)</p><p>$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$</p><p>The Binomial probability function is:</p><p>$p(x)=\\left\\{\\begin{matrix}{}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}, &amp; x=0,1,2,3,4\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>The Binomial probability distribution is</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex3-7"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex3-7",
+     "headers": [
+      "$X$",
+      "$p(x)={}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}$"
+     ],
+     "rows": [
+      [
+       "0",
+       "${}^{4}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{4-0}=\\frac{1}{16}$"
+      ],
+      [
+       "1",
+       "${}^{4}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{4-1}=\\frac{4}{16}$"
+      ],
+      [
+       "2",
+       "${}^{4}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{4-2}=\\frac{6}{16}$"
+      ],
+      [
+       "3",
+       "${}^{4}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{4-3}=\\frac{4}{16}$"
+      ],
+      [
+       "4",
+       "${}^{4}_{4}C\\left(\\frac{1}{2}\\right)^{4}\\left(\\frac{1}{2}\\right)^{4-4}=\\frac{1}{16}$"
+      ],
+      [
+       "Total",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)={}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}$"
+       ],
+       "rows": [
+        [
+         "0",
+         "${}^{4}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{4-0}=\\frac{1}{16}$"
+        ],
+        [
+         "1",
+         "${}^{4}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{4-1}=\\frac{4}{16}$"
+        ],
+        [
+         "2",
+         "${}^{4}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{4-2}=\\frac{6}{16}$"
+        ],
+        [
+         "3",
+         "${}^{4}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{4-3}=\\frac{4}{16}$"
+        ],
+        [
+         "4",
+         "${}^{4}_{4}C\\left(\\frac{1}{2}\\right)^{4}\\left(\\frac{1}{2}\\right)^{4-4}=\\frac{1}{16}$"
+        ],
+        [
+         "کل",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)={}^{4}_{x}C\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{4-x}$"
+       ],
+       "rows": [
+        [
+         "0",
+         "${}^{4}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{4-0}=\\frac{1}{16}$"
+        ],
+        [
+         "1",
+         "${}^{4}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{4-1}=\\frac{4}{16}$"
+        ],
+        [
+         "2",
+         "${}^{4}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{4-2}=\\frac{6}{16}$"
+        ],
+        [
+         "3",
+         "${}^{4}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{4-3}=\\frac{4}{16}$"
+        ],
+        [
+         "4",
+         "${}^{4}_{4}C\\left(\\frac{1}{2}\\right)^{4}\\left(\\frac{1}{2}\\right)^{4-4}=\\frac{1}{16}$"
+        ],
+        [
+         "ټول",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 46,
+     "printedPages": [
+      83
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  },
+  {
+   "id": "stat12-p046-examples-3-8-3-9",
+   "title": "Examples 3.8–3.9 — binomial probabilities",
+   "headingUrdu": "مثالیں 3.8–3.9 — دو رقمی احتمالات",
+   "headingPashto": "بېلګې 3.8–3.9 — بینومیل احتمالونه",
+   "paras": [
+    {
+     "text": "Example 3.8",
+     "urdu": "مثال 3.8",
+     "pashto": "بېلګه 3.8"
+    },
+    {
+     "text": "Suppose X has a Binomial distribution with n = 6 and p = 0.75. Find (i) $P(X=4)$ (ii) $P(X\\ge 5)$ and (iii) $P(X<4)$.",
+     "urdu": "فرض کریں X کی دو رقمی تقسیم ہے جس میں n = 6 اور p = 0.75 ہے۔ معلوم کریں (i) $P(X=4)$ (ii) $P(X\\ge 5)$ اور (iii) $P(X<4)$۔",
+     "pashto": "فرض کړئ X بینومیل وېش لري چې n = 6 او p = 0.75. پیدا کړئ (i) $P(X=4)$ (ii) $P(X\\ge 5)$ او (iii) $P(X<4)$."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Here $n=6$",
+     "urdu": "یہاں $n=6$",
+     "pashto": "دلته $n=6$"
+    },
+    {
+     "text": "X: number of successes in 6 trials",
+     "urdu": "X: 6 آزمائشوں میں کامیابیوں کی تعداد",
+     "pashto": "X: په 6 ازمېښتونو کې د بریاوو شمېر"
+    },
+    {
+     "text": "$X=0,1,2,3,4,5,6$",
+     "urdu": "$X=0,1,2,3,4,5,6$",
+     "pashto": "$X=0,1,2,3,4,5,6$"
+    },
+    {
+     "text": "$p=0.75$",
+     "urdu": "$p=0.75$",
+     "pashto": "$p=0.75$"
+    },
+    {
+     "text": "$q=1-p=-0.75=0.25$",
+     "urdu": "$q=1-p=-0.75=0.25$",
+     "pashto": "$q=1-p=-0.75=0.25$"
+    },
+    {
+     "text": "The Binomial probability function is",
+     "urdu": "دو رقمی احتمالی تفاعل یہ ہے",
+     "pashto": "بینومیل احتمالي تابع دا ده"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}{}^{6}_{x}C(0.75)^x(0.25)^{6-x}, & x=0,1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}{}^{6}_{x}C(0.75)^x(0.25)^{6-x}, & x=0,1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}{}^{6}_{x}C(0.75)^x(0.25)^{6-x}, & x=0,1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "$(i)\\quad P(X=4)={}^{6}_{4}C(0.75)^4(0.25)^{6-4}=0.297$",
+     "urdu": "$(i)\\quad P(X=4)={}^{6}_{4}C(0.75)^4(0.25)^{6-4}=0.297$",
+     "pashto": "$(i)\\quad P(X=4)={}^{6}_{4}C(0.75)^4(0.25)^{6-4}=0.297$"
+    },
+    {
+     "text": "$(ii)\\quad P(X\\ge 5)={}^{6}_{5}C(0.75)^5(0.25)^{6-5}+{}^{6}_{6}C(0.75)^6(0.25)^{6-6}=0.534$",
+     "urdu": "$(ii)\\quad P(X\\ge 5)={}^{6}_{5}C(0.75)^5(0.25)^{6-5}+{}^{6}_{6}C(0.75)^6(0.25)^{6-6}=0.534$",
+     "pashto": "$(ii)\\quad P(X\\ge 5)={}^{6}_{5}C(0.75)^5(0.25)^{6-5}+{}^{6}_{6}C(0.75)^6(0.25)^{6-6}=0.534$"
+    },
+    {
+     "text": "$(iii)\\quad P(X<4)={}^{6}_{0}C(0.75)^0(0.25)^{6-0}+{}^{6}_{1}C(0.75)^1(0.25)^{6-1}+{}^{6}_{2}C(0.75)^2(0.25)^{6-2}+$",
+     "urdu": "$(iii)\\quad P(X<4)={}^{6}_{0}C(0.75)^0(0.25)^{6-0}+{}^{6}_{1}C(0.75)^1(0.25)^{6-1}+{}^{6}_{2}C(0.75)^2(0.25)^{6-2}+$",
+     "pashto": "$(iii)\\quad P(X<4)={}^{6}_{0}C(0.75)^0(0.25)^{6-0}+{}^{6}_{1}C(0.75)^1(0.25)^{6-1}+{}^{6}_{2}C(0.75)^2(0.25)^{6-2}+$"
+    },
+    {
+     "text": "${}^{6}_{3}C(0.75)^3(0.25)^{6-3}=0.169$",
+     "urdu": "${}^{6}_{3}C(0.75)^3(0.25)^{6-3}=0.169$",
+     "pashto": "${}^{6}_{3}C(0.75)^3(0.25)^{6-3}=0.169$"
+    },
+    {
+     "text": "Example 3.9",
+     "urdu": "مثال 3.9",
+     "pashto": "بېلګه 3.9"
+    },
+    {
+     "text": "A certain drug treatment cures 90% of cases of hookworm in children. Suppose that 20 children suffering from hookworm are to be treated and that the children can be regarded as a sample from the population. Find the probability that (i) all 20 children will be cured (ii) exactly 18 will be cured (iii) at least one will be cured.",
+     "urdu": "ایک خاص دوا بچوں میں ہک ورم کے 90% کیسوں کو ٹھیک کر دیتی ہے۔ فرض کریں ہک ورم میں مبتلا 20 بچوں کا علاج کیا جانا ہے اور ان بچوں کو آبادی کا نمونہ سمجھا جا سکتا ہے۔ احتمال معلوم کریں کہ (i) تمام 20 بچے ٹھیک ہو جائیں گے (ii) ٹھیک 18 ٹھیک ہوں گے (iii) کم از کم ایک ٹھیک ہوگا۔",
+     "pashto": "یوه ټاکلې درملنه په ماشومانو کې د هوک‌ورم 90% پېښې روغوي. فرض کړئ چې د هوک‌ورم 20 ناروغه ماشومان باید درملنه شي او دا ماشومان د نفوس د نمونې په توګه ګڼل کېدای شي. احتمال یې پیدا کړئ چې (i) ټول 20 ماشومان به روغ شي (ii) دقیقاً 18 به روغ شي (iii) لږ تر لږه یو به روغ شي."
+    }
+   ],
+   "theory": "Example 3.8\n\nSuppose X has a Binomial distribution with n = 6 and p = 0.75. Find (i) P(X=4) (ii) P(X\\ge 5) and (iii) P(X<4).\n\nSolution:\n\nHere n=6\n\nX: number of successes in 6 trials\n\nX=0,1,2,3,4,5,6\n\np=0.75\n\nq=1-p=-0.75=0.25\n\nThe Binomial probability function is\n\n$p(x)=\\left\\{\\begin{matrix}{}^{6}_{x}C(0.75)^x(0.25)^{6-x}, & x=0,1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i)\\quad P(X=4)={}^{6}_{4}C(0.75)^4(0.25)^{6-4}=0.297\n\n(ii)\\quad P(X\\ge 5)={}^{6}_{5}C(0.75)^5(0.25)^{6-5}+{}^{6}_{6}C(0.75)^6(0.25)^{6-6}=0.534\n\n(iii)\\quad P(X<4)={}^{6}_{0}C(0.75)^0(0.25)^{6-0}+{}^{6}_{1}C(0.75)^1(0.25)^{6-1}+{}^{6}_{2}C(0.75)^2(0.25)^{6-2}+\n\n{}^{6}_{3}C(0.75)^3(0.25)^{6-3}=0.169\n\nExample 3.9\n\nA certain drug treatment cures 90% of cases of hookworm in children. Suppose that 20 children suffering from hookworm are to be treated and that the children can be regarded as a sample from the population. Find the probability that (i) all 20 children will be cured (ii) exactly 18 will be cured (iii) at least one will be cured.",
+   "urdu": "مثال 3.8\n\nفرض کریں X کی دو رقمی تقسیم ہے جس میں n = 6 اور p = 0.75 ہے۔ معلوم کریں (i) P(X=4) (ii) P(X\\ge 5) اور (iii) P(X<4)۔\n\nحل:\n\nیہاں n=6\n\nX: 6 آزمائشوں میں کامیابیوں کی تعداد\n\nX=0,1,2,3,4,5,6\n\np=0.75\n\nq=1-p=-0.75=0.25\n\nدو رقمی احتمالی تفاعل یہ ہے\n\n$p(x)=\\left\\{\\begin{matrix}{}^{6}_{x}C(0.75)^x(0.25)^{6-x}, & x=0,1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i)\\quad P(X=4)={}^{6}_{4}C(0.75)^4(0.25)^{6-4}=0.297\n\n(ii)\\quad P(X\\ge 5)={}^{6}_{5}C(0.75)^5(0.25)^{6-5}+{}^{6}_{6}C(0.75)^6(0.25)^{6-6}=0.534\n\n(iii)\\quad P(X<4)={}^{6}_{0}C(0.75)^0(0.25)^{6-0}+{}^{6}_{1}C(0.75)^1(0.25)^{6-1}+{}^{6}_{2}C(0.75)^2(0.25)^{6-2}+\n\n{}^{6}_{3}C(0.75)^3(0.25)^{6-3}=0.169\n\nمثال 3.9\n\nایک خاص دوا بچوں میں ہک ورم کے 90% کیسوں کو ٹھیک کر دیتی ہے۔ فرض کریں ہک ورم میں مبتلا 20 بچوں کا علاج کیا جانا ہے اور ان بچوں کو آبادی کا نمونہ سمجھا جا سکتا ہے۔ احتمال معلوم کریں کہ (i) تمام 20 بچے ٹھیک ہو جائیں گے (ii) ٹھیک 18 ٹھیک ہوں گے (iii) کم از کم ایک ٹھیک ہوگا۔",
+   "pashto": "بېلګه 3.8\n\nفرض کړئ X بینومیل وېش لري چې n = 6 او p = 0.75. پیدا کړئ (i) P(X=4) (ii) P(X\\ge 5) او (iii) P(X<4).\n\nحل:\n\nدلته n=6\n\nX: په 6 ازمېښتونو کې د بریاوو شمېر\n\nX=0,1,2,3,4,5,6\n\np=0.75\n\nq=1-p=-0.75=0.25\n\nبینومیل احتمالي تابع دا ده\n\n$p(x)=\\left\\{\\begin{matrix}{}^{6}_{x}C(0.75)^x(0.25)^{6-x}, & x=0,1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i)\\quad P(X=4)={}^{6}_{4}C(0.75)^4(0.25)^{6-4}=0.297\n\n(ii)\\quad P(X\\ge 5)={}^{6}_{5}C(0.75)^5(0.25)^{6-5}+{}^{6}_{6}C(0.75)^6(0.25)^{6-6}=0.534\n\n(iii)\\quad P(X<4)={}^{6}_{0}C(0.75)^0(0.25)^{6-0}+{}^{6}_{1}C(0.75)^1(0.25)^{6-1}+{}^{6}_{2}C(0.75)^2(0.25)^{6-2}+\n\n{}^{6}_{3}C(0.75)^3(0.25)^{6-3}=0.169\n\nبېلګه 3.9\n\nیوه ټاکلې درملنه په ماشومانو کې د هوک‌ورم 90% پېښې روغوي. فرض کړئ چې د هوک‌ورم 20 ناروغه ماشومان باید درملنه شي او دا ماشومان د نفوس د نمونې په توګه ګڼل کېدای شي. احتمال یې پیدا کړئ چې (i) ټول 20 ماشومان به روغ شي (ii) دقیقاً 18 به روغ شي (iii) لږ تر لږه یو به روغ شي.",
+   "theoryUrdu": "مثال 3.8\n\nفرض کریں X کی دو رقمی تقسیم ہے جس میں n = 6 اور p = 0.75 ہے۔ معلوم کریں (i) P(X=4) (ii) P(X\\ge 5) اور (iii) P(X<4)۔\n\nحل:\n\nیہاں n=6\n\nX: 6 آزمائشوں میں کامیابیوں کی تعداد\n\nX=0,1,2,3,4,5,6\n\np=0.75\n\nq=1-p=-0.75=0.25\n\nدو رقمی احتمالی تفاعل یہ ہے\n\n$p(x)=\\left\\{\\begin{matrix}{}^{6}_{x}C(0.75)^x(0.25)^{6-x}, & x=0,1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i)\\quad P(X=4)={}^{6}_{4}C(0.75)^4(0.25)^{6-4}=0.297\n\n(ii)\\quad P(X\\ge 5)={}^{6}_{5}C(0.75)^5(0.25)^{6-5}+{}^{6}_{6}C(0.75)^6(0.25)^{6-6}=0.534\n\n(iii)\\quad P(X<4)={}^{6}_{0}C(0.75)^0(0.25)^{6-0}+{}^{6}_{1}C(0.75)^1(0.25)^{6-1}+{}^{6}_{2}C(0.75)^2(0.25)^{6-2}+\n\n{}^{6}_{3}C(0.75)^3(0.25)^{6-3}=0.169\n\nمثال 3.9\n\nایک خاص دوا بچوں میں ہک ورم کے 90% کیسوں کو ٹھیک کر دیتی ہے۔ فرض کریں ہک ورم میں مبتلا 20 بچوں کا علاج کیا جانا ہے اور ان بچوں کو آبادی کا نمونہ سمجھا جا سکتا ہے۔ احتمال معلوم کریں کہ (i) تمام 20 بچے ٹھیک ہو جائیں گے (ii) ٹھیک 18 ٹھیک ہوں گے (iii) کم از کم ایک ٹھیک ہوگا۔",
+   "theoryPashto": "بېلګه 3.8\n\nفرض کړئ X بینومیل وېش لري چې n = 6 او p = 0.75. پیدا کړئ (i) P(X=4) (ii) P(X\\ge 5) او (iii) P(X<4).\n\nحل:\n\nدلته n=6\n\nX: په 6 ازمېښتونو کې د بریاوو شمېر\n\nX=0,1,2,3,4,5,6\n\np=0.75\n\nq=1-p=-0.75=0.25\n\nبینومیل احتمالي تابع دا ده\n\n$p(x)=\\left\\{\\begin{matrix}{}^{6}_{x}C(0.75)^x(0.25)^{6-x}, & x=0,1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i)\\quad P(X=4)={}^{6}_{4}C(0.75)^4(0.25)^{6-4}=0.297\n\n(ii)\\quad P(X\\ge 5)={}^{6}_{5}C(0.75)^5(0.25)^{6-5}+{}^{6}_{6}C(0.75)^6(0.25)^{6-6}=0.534\n\n(iii)\\quad P(X<4)={}^{6}_{0}C(0.75)^0(0.25)^{6-0}+{}^{6}_{1}C(0.75)^1(0.25)^{6-1}+{}^{6}_{2}C(0.75)^2(0.25)^{6-2}+\n\n{}^{6}_{3}C(0.75)^3(0.25)^{6-3}=0.169\n\nبېلګه 3.9\n\nیوه ټاکلې درملنه په ماشومانو کې د هوک‌ورم 90% پېښې روغوي. فرض کړئ چې د هوک‌ورم 20 ناروغه ماشومان باید درملنه شي او دا ماشومان د نفوس د نمونې په توګه ګڼل کېدای شي. احتمال یې پیدا کړئ چې (i) ټول 20 ماشومان به روغ شي (ii) دقیقاً 18 به روغ شي (iii) لږ تر لږه یو به روغ شي.",
+   "content": "<p>Example 3.8</p><p>Suppose X has a Binomial distribution with n = 6 and p = 0.75. Find (i) P(X=4) (ii) P(X\\ge 5) and (iii) P(X&lt;4).</p><p>Solution:</p><p>Here n=6</p><p>X: number of successes in 6 trials</p><p>X=0,1,2,3,4,5,6</p><p>p=0.75</p><p>q=1-p=-0.75=0.25</p><p>The Binomial probability function is</p><p>$p(x)=\\left\\{\\begin{matrix}{}^{6}_{x}C(0.75)^x(0.25)^{6-x}, &amp; x=0,1,2,3,4,5,6\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>(i)\\quad P(X=4)={}^{6}_{4}C(0.75)^4(0.25)^{6-4}=0.297</p><p>(ii)\\quad P(X\\ge 5)={}^{6}_{5}C(0.75)^5(0.25)^{6-5}+{}^{6}_{6}C(0.75)^6(0.25)^{6-6}=0.534</p><p>(iii)\\quad P(X&lt;4)={}^{6}_{0}C(0.75)^0(0.25)^{6-0}+{}^{6}_{1}C(0.75)^1(0.25)^{6-1}+{}^{6}_{2}C(0.75)^2(0.25)^{6-2}+</p><p>{}^{6}_{3}C(0.75)^3(0.25)^{6-3}=0.169</p><p>Example 3.9</p><p>A certain drug treatment cures 90% of cases of hookworm in children. Suppose that 20 children suffering from hookworm are to be treated and that the children can be regarded as a sample from the population. Find the probability that (i) all 20 children will be cured (ii) exactly 18 will be cured (iii) at least one will be cured.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 46,
+     "printedPages": [
+      84
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p84-q-minus",
+   "unit": 3,
+   "printedPage": 84,
+   "description": "Example 3.8 prints “q = 1 − p = −0.75 = 0.25” (the 1 before −0.75 is missing); printed line retained."
+  }
+ ],
+ "completeUnits": []
+}

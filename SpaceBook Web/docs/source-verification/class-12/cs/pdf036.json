@@ -1,0 +1,245 @@
+{
+ "pdfPage": 36,
+ "sections": [
+  {
+   "id": "cs12-u3-text-2",
+   "title": "Unit 3 text (2)",
+   "headingUrdu": "یونٹ 3 — متن (۲)",
+   "headingPashto": "۳ څپرکی — متن (۲)",
+   "paras": [
+    {
+     "text": "3.1.3 Structure of a C++ program",
+     "urdu": "3.1.3 C++ پروگرام کی ساخت",
+     "pashto": "۳.۱.۳ د C++ پروګرام جوړښت"
+    },
+    {
+     "text": "General syntax of a C++ program is given below.",
+     "urdu": "C++ پروگرام کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔",
+     "pashto": "د C++ پروګرام عمومي بڼه لاندې ورکړل شوې."
+    },
+    {
+     "text": "Preprocessor directives <header file>\nint main()\n{\nBody of the program\n}",
+     "urdu": "Preprocessor directives <header file>\nint main()\n{\nBody of the program\n}",
+     "pashto": "Preprocessor directives <header file>\nint main()\n{\nBody of the program\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Each C++ program has three main components. These are: Preprocessor directives, main function and body of the main function. Now, consider the following “Hello World” example to explain these components.",
+     "urdu": "ہر C++ پروگرام کے تین بنیادی اجزاء ہیں: پری پروسیسر ڈائریکٹوز، main فنکشن اور main فنکشن کا جسم۔ اب ان اجزاء کی وضاحت کے لیے درج ذیل ’’Hello World‘‘ مثال پر غور کریں۔",
+     "pashto": "هر C++ پروګرام درې اصلي برخې لري: د مخکې پروسس لارښوونې (preprocessor directives)، main فنکشن او د main فنکشن بدنه. اوس د دې برخو د تشریح لپاره لاندې \"Hello World\" بېلګې ته پام وکړئ."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Hello World!\";\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Hello World!\";\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Hello World!\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Hello World!",
+     "urdu": "Hello World!",
+     "pashto": "Hello World!",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The result of the above program is that it prints \"Hello World!\" on the screen. It is one of the simplest programs that can be written in C++, but it contains the fundamental components of almost every C++ program.",
+     "urdu": "اوپر والے پروگرام کا نتیجہ یہ ہے کہ یہ اسکرین پر \"Hello World!\" پرنٹ کرتا ہے۔ یہ C++ میں لکھے جا سکنے والے سادہ ترین پروگراموں میں سے ایک ہے لیکن اس میں تقریباً ہر C++ پروگرام کے بنیادی اجزاء موجود ہیں۔",
+     "pashto": "د پورته پروګرام پایله دا ده چې پر پرده \"Hello World!\" چاپوي. دا په C++ کې د لیکل کېدونکو تر ټولو ساده پروګرامونو څخه یو دی، خو د نږدې هر C++ پروګرام بنسټیزې برخې لري."
+    },
+    {
+     "text": "a. Preprocessor directives (#include, #define)",
+     "urdu": "a. پری پروسیسر ڈائریکٹوز (#include، #define)",
+     "pashto": "a. د مخکې پروسس لارښوونې (#include، #define)"
+    },
+    {
+     "text": "A preprocessor is a collection of special statements which are executed before the compilation process.",
+     "urdu": "پری پروسیسر خصوصی بیانات کا مجموعہ ہے جو کمپائلیشن کے عمل سے پہلے چلائے جاتے ہیں۔",
+     "pashto": "مخکې پروسسوونکی (preprocessor) د ځانګړو بیانونو ټولګه ده چې د کمپایل له بهیر مخکې اجرا کېږي."
+    },
+    {
+     "text": "Almost every C++ program contains a preprocessor directive. The #include preprocessor directives is commonly used to insert header files with extension ‘.h’. These header files are already stored in computer in include directory. In the above program, two #include directives have been used, #include<iostream.h> and #include<conio.h>. #include<iostream.h> is used for the C++ object cout and #include<conio.h> for the built-in function getch().",
+     "urdu": "تقریباً ہر C++ پروگرام میں پری پروسیسر ڈائریکٹو ہوتا ہے۔ #include پری پروسیسر ڈائریکٹو عام طور پر ‘.h’ ایکسٹینشن والی ہیڈر فائلیں شامل کرنے کے لیے استعمال ہوتا ہے۔ یہ ہیڈر فائلیں کمپیوٹر میں include ڈائریکٹری میں پہلے سے محفوظ ہوتی ہیں۔ اوپر والے پروگرام میں دو #include ڈائریکٹوز استعمال ہوئے ہیں، #include<iostream.h> اور #include<conio.h>۔ #include<iostream.h> C++ آبجیکٹ cout کے لیے اور #include<conio.h> بلٹ ان فنکشن getch() کے لیے استعمال ہوتا ہے۔",
+     "pashto": "نږدې هر C++ پروګرام د مخکې پروسس لارښوونه لري. د #include لارښوونه عموماً د ‘.h’ پسوند لرونکو سرلیک فایلونو د ورګډولو لپاره کارول کېږي. دا سرلیک فایلونه مخکې له مخکې په کمپیوټر کې په include لارښود کې ساتل شوي. په پورته پروګرام کې دوه #include لارښوونې کارول شوې، #include<iostream.h> او #include<conio.h>. #include<iostream.h> د C++ شي cout لپاره او #include<conio.h> د جوړ شوي فنکشن getch() لپاره کارول کېږي."
+    },
+    {
+     "text": "In C++, the other commonly used preprocessor directive is #define which is used to define symbolic constants. Its general format is:",
+     "urdu": "C++ میں دوسرا عام استعمال ہونے والا پری پروسیسر ڈائریکٹو #define ہے جو علامتی کانسٹنٹس کی تعریف کے لیے استعمال ہوتا ہے۔ اس کی عمومی شکل یہ ہے:",
+     "pashto": "په C++ کې بله عام کارېدونکې د مخکې پروسس لارښوونه #define ده چې د سمبولیکو ثابتونو د تعریف لپاره کارول کېږي. عمومي بڼه یې دا ده:"
+    },
+    {
+     "text": "#define identifier value",
+     "urdu": "#define identifier value",
+     "pashto": "#define identifier value",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "For example:",
+     "urdu": "مثال کے طور پر:",
+     "pashto": "د بېلګې په توګه:"
+    },
+    {
+     "text": "#define PI 3.14159\n#define NEWLINE '\\n'",
+     "urdu": "#define PI 3.14159\n#define NEWLINE '\\n'",
+     "pashto": "#define PI 3.14159\n#define NEWLINE '\\n'",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This defines two new constants: PI and NEWLINE. Once they are defined, they can be used in the rest of the program as if they were any other regular constant, for example:",
+     "urdu": "یہ دو نئے کانسٹنٹس PI اور NEWLINE کی تعریف کرتا ہے۔ ایک بار تعریف ہو جانے کے بعد انھیں باقی پروگرام میں کسی بھی دوسرے عام کانسٹنٹ کی طرح استعمال کیا جا سکتا ہے، مثلاً:",
+     "pashto": "دا دوه نوي ثابتونه PI او NEWLINE تعریفوي. کله چې یو ځل تعریف شي، په پاتې پروګرام کې د هر بل عادي ثابت په څېر کارول کېدای شي، لکه:"
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\n#define PI 3.14159\n#define NEWLINE '\\n'\nint main()\n{\ndouble r=5.0; // radius\ndouble circle;\ncircle = 2 * PI * r;\ncout << \"Area of the Circle: \"<<circle;\ncout << NEWLINE;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\n#define PI 3.14159\n#define NEWLINE '\\n'\nint main()\n{\ndouble r=5.0; // radius\ndouble circle;\ncircle = 2 * PI * r;\ncout << \"Area of the Circle: \"<<circle;\ncout << NEWLINE;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\n#define PI 3.14159\n#define NEWLINE '\\n'\nint main()\n{\ndouble r=5.0; // radius\ndouble circle;\ncircle = 2 * PI * r;\ncout << \"Area of the Circle: \"<<circle;\ncout << NEWLINE;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "3.1.3 Structure of a C++ program\n\nGeneral syntax of a C++ program is given below.\n\nPreprocessor directives <header file>\nint main()\n{\nBody of the program\n}\n\nEach C++ program has three main components. These are: Preprocessor directives, main function and body of the main function. Now, consider the following “Hello World” example to explain these components.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Hello World!\";\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nHello World!\n\nThe result of the above program is that it prints \"Hello World!\" on the screen. It is one of the simplest programs that can be written in C++, but it contains the fundamental components of almost every C++ program.\n\na. Preprocessor directives (#include, #define)\n\nA preprocessor is a collection of special statements which are executed before the compilation process.\n\nAlmost every C++ program contains a preprocessor directive. The #include preprocessor directives is commonly used to insert header files with extension ‘.h’. These header files are already stored in computer in include directory. In the above program, two #include directives have been used, #include<iostream.h> and #include<conio.h>. #include<iostream.h> is used for the C++ object cout and #include<conio.h> for the built-in function getch().\n\nIn C++, the other commonly used preprocessor directive is #define which is used to define symbolic constants. Its general format is:\n\n#define identifier value\n\nFor example:\n\n#define PI 3.14159\n#define NEWLINE '\\n'\n\nThis defines two new constants: PI and NEWLINE. Once they are defined, they can be used in the rest of the program as if they were any other regular constant, for example:\n\n#include <iostream.h>\n#include <conio.h>\n#define PI 3.14159\n#define NEWLINE '\\n'\nint main()\n{\ndouble r=5.0; // radius\ndouble circle;\ncircle = 2 * PI * r;\ncout << \"Area of the Circle: \"<<circle;\ncout << NEWLINE;\ngetch();\nreturn 0;\n}",
+   "urdu": "3.1.3 C++ پروگرام کی ساخت\n\nC++ پروگرام کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔\n\nPreprocessor directives <header file>\nint main()\n{\nBody of the program\n}\n\nہر C++ پروگرام کے تین بنیادی اجزاء ہیں: پری پروسیسر ڈائریکٹوز، main فنکشن اور main فنکشن کا جسم۔ اب ان اجزاء کی وضاحت کے لیے درج ذیل ’’Hello World‘‘ مثال پر غور کریں۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Hello World!\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nHello World!\n\nاوپر والے پروگرام کا نتیجہ یہ ہے کہ یہ اسکرین پر \"Hello World!\" پرنٹ کرتا ہے۔ یہ C++ میں لکھے جا سکنے والے سادہ ترین پروگراموں میں سے ایک ہے لیکن اس میں تقریباً ہر C++ پروگرام کے بنیادی اجزاء موجود ہیں۔\n\na. پری پروسیسر ڈائریکٹوز (#include، #define)\n\nپری پروسیسر خصوصی بیانات کا مجموعہ ہے جو کمپائلیشن کے عمل سے پہلے چلائے جاتے ہیں۔\n\nتقریباً ہر C++ پروگرام میں پری پروسیسر ڈائریکٹو ہوتا ہے۔ #include پری پروسیسر ڈائریکٹو عام طور پر ‘.h’ ایکسٹینشن والی ہیڈر فائلیں شامل کرنے کے لیے استعمال ہوتا ہے۔ یہ ہیڈر فائلیں کمپیوٹر میں include ڈائریکٹری میں پہلے سے محفوظ ہوتی ہیں۔ اوپر والے پروگرام میں دو #include ڈائریکٹوز استعمال ہوئے ہیں، #include<iostream.h> اور #include<conio.h>۔ #include<iostream.h> C++ آبجیکٹ cout کے لیے اور #include<conio.h> بلٹ ان فنکشن getch() کے لیے استعمال ہوتا ہے۔\n\nC++ میں دوسرا عام استعمال ہونے والا پری پروسیسر ڈائریکٹو #define ہے جو علامتی کانسٹنٹس کی تعریف کے لیے استعمال ہوتا ہے۔ اس کی عمومی شکل یہ ہے:\n\n#define identifier value\n\nمثال کے طور پر:\n\n#define PI 3.14159\n#define NEWLINE '\\n'\n\nیہ دو نئے کانسٹنٹس PI اور NEWLINE کی تعریف کرتا ہے۔ ایک بار تعریف ہو جانے کے بعد انھیں باقی پروگرام میں کسی بھی دوسرے عام کانسٹنٹ کی طرح استعمال کیا جا سکتا ہے، مثلاً:\n\n#include <iostream.h>\n#include <conio.h>\n#define PI 3.14159\n#define NEWLINE '\\n'\nint main()\n{\ndouble r=5.0; // radius\ndouble circle;\ncircle = 2 * PI * r;\ncout << \"Area of the Circle: \"<<circle;\ncout << NEWLINE;\ngetch();\nreturn 0;\n}",
+   "pashto": "۳.۱.۳ د C++ پروګرام جوړښت\n\nد C++ پروګرام عمومي بڼه لاندې ورکړل شوې.\n\nPreprocessor directives <header file>\nint main()\n{\nBody of the program\n}\n\nهر C++ پروګرام درې اصلي برخې لري: د مخکې پروسس لارښوونې (preprocessor directives)، main فنکشن او د main فنکشن بدنه. اوس د دې برخو د تشریح لپاره لاندې \"Hello World\" بېلګې ته پام وکړئ.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Hello World!\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nHello World!\n\nد پورته پروګرام پایله دا ده چې پر پرده \"Hello World!\" چاپوي. دا په C++ کې د لیکل کېدونکو تر ټولو ساده پروګرامونو څخه یو دی، خو د نږدې هر C++ پروګرام بنسټیزې برخې لري.\n\na. د مخکې پروسس لارښوونې (#include، #define)\n\nمخکې پروسسوونکی (preprocessor) د ځانګړو بیانونو ټولګه ده چې د کمپایل له بهیر مخکې اجرا کېږي.\n\nنږدې هر C++ پروګرام د مخکې پروسس لارښوونه لري. د #include لارښوونه عموماً د ‘.h’ پسوند لرونکو سرلیک فایلونو د ورګډولو لپاره کارول کېږي. دا سرلیک فایلونه مخکې له مخکې په کمپیوټر کې په include لارښود کې ساتل شوي. په پورته پروګرام کې دوه #include لارښوونې کارول شوې، #include<iostream.h> او #include<conio.h>. #include<iostream.h> د C++ شي cout لپاره او #include<conio.h> د جوړ شوي فنکشن getch() لپاره کارول کېږي.\n\nپه C++ کې بله عام کارېدونکې د مخکې پروسس لارښوونه #define ده چې د سمبولیکو ثابتونو د تعریف لپاره کارول کېږي. عمومي بڼه یې دا ده:\n\n#define identifier value\n\nد بېلګې په توګه:\n\n#define PI 3.14159\n#define NEWLINE '\\n'\n\nدا دوه نوي ثابتونه PI او NEWLINE تعریفوي. کله چې یو ځل تعریف شي، په پاتې پروګرام کې د هر بل عادي ثابت په څېر کارول کېدای شي، لکه:\n\n#include <iostream.h>\n#include <conio.h>\n#define PI 3.14159\n#define NEWLINE '\\n'\nint main()\n{\ndouble r=5.0; // radius\ndouble circle;\ncircle = 2 * PI * r;\ncout << \"Area of the Circle: \"<<circle;\ncout << NEWLINE;\ngetch();\nreturn 0;\n}",
+   "theoryUrdu": "3.1.3 C++ پروگرام کی ساخت\n\nC++ پروگرام کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔\n\nPreprocessor directives <header file>\nint main()\n{\nBody of the program\n}\n\nہر C++ پروگرام کے تین بنیادی اجزاء ہیں: پری پروسیسر ڈائریکٹوز، main فنکشن اور main فنکشن کا جسم۔ اب ان اجزاء کی وضاحت کے لیے درج ذیل ’’Hello World‘‘ مثال پر غور کریں۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Hello World!\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nHello World!\n\nاوپر والے پروگرام کا نتیجہ یہ ہے کہ یہ اسکرین پر \"Hello World!\" پرنٹ کرتا ہے۔ یہ C++ میں لکھے جا سکنے والے سادہ ترین پروگراموں میں سے ایک ہے لیکن اس میں تقریباً ہر C++ پروگرام کے بنیادی اجزاء موجود ہیں۔\n\na. پری پروسیسر ڈائریکٹوز (#include، #define)\n\nپری پروسیسر خصوصی بیانات کا مجموعہ ہے جو کمپائلیشن کے عمل سے پہلے چلائے جاتے ہیں۔\n\nتقریباً ہر C++ پروگرام میں پری پروسیسر ڈائریکٹو ہوتا ہے۔ #include پری پروسیسر ڈائریکٹو عام طور پر ‘.h’ ایکسٹینشن والی ہیڈر فائلیں شامل کرنے کے لیے استعمال ہوتا ہے۔ یہ ہیڈر فائلیں کمپیوٹر میں include ڈائریکٹری میں پہلے سے محفوظ ہوتی ہیں۔ اوپر والے پروگرام میں دو #include ڈائریکٹوز استعمال ہوئے ہیں، #include<iostream.h> اور #include<conio.h>۔ #include<iostream.h> C++ آبجیکٹ cout کے لیے اور #include<conio.h> بلٹ ان فنکشن getch() کے لیے استعمال ہوتا ہے۔\n\nC++ میں دوسرا عام استعمال ہونے والا پری پروسیسر ڈائریکٹو #define ہے جو علامتی کانسٹنٹس کی تعریف کے لیے استعمال ہوتا ہے۔ اس کی عمومی شکل یہ ہے:\n\n#define identifier value\n\nمثال کے طور پر:\n\n#define PI 3.14159\n#define NEWLINE '\\n'\n\nیہ دو نئے کانسٹنٹس PI اور NEWLINE کی تعریف کرتا ہے۔ ایک بار تعریف ہو جانے کے بعد انھیں باقی پروگرام میں کسی بھی دوسرے عام کانسٹنٹ کی طرح استعمال کیا جا سکتا ہے، مثلاً:\n\n#include <iostream.h>\n#include <conio.h>\n#define PI 3.14159\n#define NEWLINE '\\n'\nint main()\n{\ndouble r=5.0; // radius\ndouble circle;\ncircle = 2 * PI * r;\ncout << \"Area of the Circle: \"<<circle;\ncout << NEWLINE;\ngetch();\nreturn 0;\n}",
+   "theoryPashto": "۳.۱.۳ د C++ پروګرام جوړښت\n\nد C++ پروګرام عمومي بڼه لاندې ورکړل شوې.\n\nPreprocessor directives <header file>\nint main()\n{\nBody of the program\n}\n\nهر C++ پروګرام درې اصلي برخې لري: د مخکې پروسس لارښوونې (preprocessor directives)، main فنکشن او د main فنکشن بدنه. اوس د دې برخو د تشریح لپاره لاندې \"Hello World\" بېلګې ته پام وکړئ.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\ncout << \"Hello World!\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nHello World!\n\nد پورته پروګرام پایله دا ده چې پر پرده \"Hello World!\" چاپوي. دا په C++ کې د لیکل کېدونکو تر ټولو ساده پروګرامونو څخه یو دی، خو د نږدې هر C++ پروګرام بنسټیزې برخې لري.\n\na. د مخکې پروسس لارښوونې (#include، #define)\n\nمخکې پروسسوونکی (preprocessor) د ځانګړو بیانونو ټولګه ده چې د کمپایل له بهیر مخکې اجرا کېږي.\n\nنږدې هر C++ پروګرام د مخکې پروسس لارښوونه لري. د #include لارښوونه عموماً د ‘.h’ پسوند لرونکو سرلیک فایلونو د ورګډولو لپاره کارول کېږي. دا سرلیک فایلونه مخکې له مخکې په کمپیوټر کې په include لارښود کې ساتل شوي. په پورته پروګرام کې دوه #include لارښوونې کارول شوې، #include<iostream.h> او #include<conio.h>. #include<iostream.h> د C++ شي cout لپاره او #include<conio.h> د جوړ شوي فنکشن getch() لپاره کارول کېږي.\n\nپه C++ کې بله عام کارېدونکې د مخکې پروسس لارښوونه #define ده چې د سمبولیکو ثابتونو د تعریف لپاره کارول کېږي. عمومي بڼه یې دا ده:\n\n#define identifier value\n\nد بېلګې په توګه:\n\n#define PI 3.14159\n#define NEWLINE '\\n'\n\nدا دوه نوي ثابتونه PI او NEWLINE تعریفوي. کله چې یو ځل تعریف شي، په پاتې پروګرام کې د هر بل عادي ثابت په څېر کارول کېدای شي، لکه:\n\n#include <iostream.h>\n#include <conio.h>\n#define PI 3.14159\n#define NEWLINE '\\n'\nint main()\n{\ndouble r=5.0; // radius\ndouble circle;\ncircle = 2 * PI * r;\ncout << \"Area of the Circle: \"<<circle;\ncout << NEWLINE;\ngetch();\nreturn 0;\n}",
+   "content": "<p>3.1.3 Structure of a C++ program</p><p>General syntax of a C++ program is given below.</p><p>Preprocessor directives &lt;header file&gt;\nint main()\n{\nBody of the program\n}</p><p>Each C++ program has three main components. These are: Preprocessor directives, main function and body of the main function. Now, consider the following “Hello World” example to explain these components.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\ncout &lt;&lt; &quot;Hello World!&quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>Hello World!</p><p>The result of the above program is that it prints &quot;Hello World!&quot; on the screen. It is one of the simplest programs that can be written in C++, but it contains the fundamental components of almost every C++ program.</p><p>a. Preprocessor directives (#include, #define)</p><p>A preprocessor is a collection of special statements which are executed before the compilation process.</p><p>Almost every C++ program contains a preprocessor directive. The #include preprocessor directives is commonly used to insert header files with extension ‘.h’. These header files are already stored in computer in include directory. In the above program, two #include directives have been used, #include&lt;iostream.h&gt; and #include&lt;conio.h&gt;. #include&lt;iostream.h&gt; is used for the C++ object cout and #include&lt;conio.h&gt; for the built-in function getch().</p><p>In C++, the other commonly used preprocessor directive is #define which is used to define symbolic constants. Its general format is:</p><p>#define identifier value</p><p>For example:</p><p>#define PI 3.14159\n#define NEWLINE &#x27;\\n&#x27;</p><p>This defines two new constants: PI and NEWLINE. Once they are defined, they can be used in the rest of the program as if they were any other regular constant, for example:</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\n#define PI 3.14159\n#define NEWLINE &#x27;\\n&#x27;\nint main()\n{\ndouble r=5.0; // radius\ndouble circle;\ncircle = 2 * PI * r;\ncout &lt;&lt; &quot;Area of the Circle: &quot;&lt;&lt;circle;\ncout &lt;&lt; NEWLINE;\ngetch();\nreturn 0;\n}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 36,
+     "printedPages": [
+      60,
+      61,
+      62
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (2)",
+   "sourcePageLabel": "PDF 36 · p. 60–61–62",
+   "sourceNote": "The last listing begins at the foot of p.61 and continues on p.62 (PDF37); it is given whole here. Its output and the following text are recorded with PDF37.",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf036",
+   "unit": 3,
+   "printedPage": 61,
+   "description": "p.61 prints “The #include preprocessor directives is commonly used”. In the example on p.62 the program labels 2·π·r as “Area of the Circle” (it is the circumference) — retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

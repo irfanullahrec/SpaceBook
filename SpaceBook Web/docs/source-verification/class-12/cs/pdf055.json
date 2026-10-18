@@ -1,0 +1,491 @@
+{
+ "pdfPage": 55,
+ "sections": [
+  {
+   "id": "cs12-u3-text-21",
+   "title": "Unit 3 text (21)",
+   "headingUrdu": "یونٹ 3 — متن (۲۱)",
+   "headingPashto": "۳ څپرکی — متن (۲۱)",
+   "paras": [
+    {
+     "text": "i. Logical NOT",
+     "urdu": "i. منطقی NOT",
+     "pashto": "i. منطقي NOT"
+    },
+    {
+     "text": "The ! operator is the C++ unary operator that is used to perform the Boolean NOT operation. The output of this operator is the inverse of the value of its operand. It produces false if its operand is true and true if its operand is false. The effects of logical NOT operator is summarized in the truth Table 3.10.",
+     "urdu": "! آپریٹر C++ کا یونری آپریٹر ہے جو بولین NOT عمل انجام دینے کے لیے استعمال ہوتا ہے۔ اس آپریٹر کا آؤٹ پٹ اس کے آپرینڈ کی قدر کا الٹ ہوتا ہے۔ اگر آپرینڈ true ہو تو یہ false دیتا ہے اور اگر آپرینڈ false ہو تو true۔ منطقی NOT آپریٹر کے اثرات کا خلاصہ ٹروتھ جدول 3.10 میں دیا گیا ہے۔",
+     "pashto": "! چلونکی د C++ یو-عملي چلونکی دی چې د بولي NOT عملیې لپاره کارول کېږي. د دې چلونکي وتنه د هغه د عملوند د ارزښت سرچپه ده. که عملوند یې true وي false ورکوي او که false وي true. د منطقي NOT چلونکي اغېزې د ریښتینولۍ په ۳.۱۰ جدول کې لنډې شوې."
+    },
+    {
+     "text": "Table 3.10: Logical NOT Operator",
+     "urdu": "جدول 3.10: منطقی NOT آپریٹر",
+     "pashto": "۳.۱۰ جدول: منطقي NOT چلونکی"
+    },
+    {
+     "text": "The following lines of code demonstrate the working of NOT operator.",
+     "urdu": "کوڈ کی درج ذیل لائنیں NOT آپریٹر کا کام دکھاتی ہیں۔",
+     "pashto": "د کوډ لاندې کرښې د NOT چلونکي کار ښيي."
+    },
+    {
+     "text": "!(5 == 5) // evaluates to false because the expression (5 == 5) is true.\n!(6 <= 4) // evaluates to true because (6 <= 4) would be false.\n!true// evaluates to false\n!false// evaluates to true.",
+     "urdu": "!(5 == 5) // evaluates to false because the expression (5 == 5) is true.\n!(6 <= 4) // evaluates to true because (6 <= 4) would be false.\n!true// evaluates to false\n!false// evaluates to true.",
+     "pashto": "!(5 == 5) // evaluates to false because the expression (5 == 5) is true.\n!(6 <= 4) // evaluates to true because (6 <= 4) would be false.\n!true// evaluates to false\n!false// evaluates to true.",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "ii. Logical AND",
+     "urdu": "ii. منطقی AND",
+     "pashto": "ii. منطقي AND"
+    },
+    {
+     "text": "Logical && operator is a binary operator that needs two operands. It is used to test whether both conditions are true or not. If both the conditions are true, the logical && returns true, otherwise, it returns false. Truth Table 3.11 shows the results of logical && operator.",
+     "urdu": "منطقی && آپریٹر بائنری آپریٹر ہے جسے دو آپرینڈز درکار ہوتے ہیں۔ یہ جانچنے کے لیے استعمال ہوتا ہے کہ آیا دونوں شرائط درست ہیں یا نہیں۔ اگر دونوں شرائط true ہوں تو منطقی && true واپس کرتا ہے، ورنہ false۔ ٹروتھ جدول 3.11 منطقی && آپریٹر کے نتائج دکھاتی ہے۔",
+     "pashto": "منطقي && چلونکی دوه-عملي چلونکی دی چې دوو عملوندونو ته اړتیا لري. د دې ازمویلو لپاره کارول کېږي چې ایا دواړه شرطونه true دي که نه. که دواړه شرطونه true وي، منطقي && true ورکوي، که نه false. د ریښتینولۍ ۳.۱۱ جدول د منطقي && چلونکي پایلې ښيي."
+    },
+    {
+     "text": "Table 3.11: Logical AND Operator",
+     "urdu": "جدول 3.11: منطقی AND آپریٹر",
+     "pashto": "۳.۱۱ جدول: منطقي AND چلونکی"
+    },
+    {
+     "text": "iii. Logical OR",
+     "urdu": "iii. منطقی OR",
+     "pashto": "iii. منطقي OR"
+    },
+    {
+     "text": "The logical || operator is used to test whether either of two conditions is true. If either of the left operand or right operand evaluates to true, the logical || operator returns true. Also, if both the operands are true, logical || returns to true but if both are false it returns to false. Truth Table 3.12 shows the operations of logical || operator.",
+     "urdu": "منطقی || آپریٹر یہ جانچنے کے لیے استعمال ہوتا ہے کہ دو شرائط میں سے کوئی ایک درست ہے یا نہیں۔ اگر بائیں یا دائیں آپرینڈ میں سے کوئی true ہو تو منطقی || آپریٹر true واپس کرتا ہے۔ نیز اگر دونوں آپرینڈز true ہوں تو بھی || true دیتا ہے لیکن اگر دونوں false ہوں تو false دیتا ہے۔ ٹروتھ جدول 3.12 منطقی || آپریٹر کے اعمال دکھاتی ہے۔",
+     "pashto": "منطقي || چلونکی د دې ازمویلو لپاره کارول کېږي چې ایا له دوو شرطونو یو true دی. که کیڼ یا ښي عملوند کوم یو true وي، منطقي || چلونکی true ورکوي. همداراز که دواړه عملوندونه true وي، || true ورکوي، خو که دواړه false وي false ورکوي. د ریښتینولۍ ۳.۱۲ جدول د منطقي || چلونکي عملیې ښيي."
+    },
+    {
+     "text": "Table 3.12: Logical OR Operator",
+     "urdu": "جدول 3.12: منطقی OR آپریٹر",
+     "pashto": "۳.۱۲ جدول: منطقي OR چلونکی"
+    },
+    {
+     "text": "g. Ternary (or conditional) operator (? : )",
+     "urdu": "g. ٹرنری (یا شرطیہ) آپریٹر (? : )",
+     "pashto": "g. درې-عملي (یا شرطي) چلونکی (? : )"
+    },
+    {
+     "text": "The conditional operator takes three operands and is therefore also called ternary operator. It evaluates an expression and returns a value if that expression is true and a different value if the expression is false. The general syntax used for conditional operator is:",
+     "urdu": "شرطیہ آپریٹر تین آپرینڈز لیتا ہے اس لیے اسے ٹرنری آپریٹر بھی کہتے ہیں۔ یہ کسی ایکسپریشن کی قدر نکالتا ہے اور اگر ایکسپریشن درست ہو تو ایک قدر اور غلط ہو تو دوسری قدر واپس کرتا ہے۔ شرطیہ آپریٹر کا عمومی طریقۂ تحریر یہ ہے:",
+     "pashto": "شرطي چلونکی درې عملوندونه اخلي، له همدې امله ورته درې-عملي چلونکی هم ویل کېږي. دا یوه افاده ارزوي او که افاده true وي یو ارزښت او که false وي بل ارزښت ورکوي. د شرطي چلونکي عمومي بڼه دا ده:"
+    },
+    {
+     "text": "condition ? result1: result2;",
+     "urdu": "condition ? result1: result2;",
+     "pashto": "condition ? result1: result2;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, if condition is true the expression will return result1, and if condition is false it will return result2. Consider the following lines of code to demonstrate the use of conditional operator.",
+     "urdu": "یہاں اگر شرط درست ہو تو ایکسپریشن result1 واپس کرے گا اور اگر شرط غلط ہو تو result2 واپس کرے گا۔ شرطیہ آپریٹر کے استعمال کی وضاحت کے لیے کوڈ کی درج ذیل لائنوں پر غور کریں۔",
+     "pashto": "دلته که شرط true وي، افاده به result1 ورکړي او که شرط false وي result2 به ورکړي. د شرطي چلونکي د کارونې د ښودلو لپاره د کوډ لاندې کرښو ته پام وکړئ."
+    },
+    {
+     "text": "7==5 ?4 : 3; // returns 3, since 7 is not equal to 5.\n7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2.\n5>3 ?a : b; // returns the value of a, since 5 is greater than 3.",
+     "urdu": "7==5 ?4 : 3; // returns 3, since 7 is not equal to 5.\n7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2.\n5>3 ?a : b; // returns the value of a, since 5 is greater than 3.",
+     "pashto": "7==5 ?4 : 3; // returns 3, since 7 is not equal to 5.\n7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2.\n5>3 ?a : b; // returns the value of a, since 5 is greater than 3.",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The following program demonstrates the use of conditional operator.",
+     "urdu": "درج ذیل پروگرام شرطیہ آپریٹر کا استعمال دکھاتا ہے۔",
+     "pashto": "لاندې پروګرام د شرطي چلونکي کارونه ښيي."
+    }
+   ],
+   "theory": "i. Logical NOT\n\nThe ! operator is the C++ unary operator that is used to perform the Boolean NOT operation. The output of this operator is the inverse of the value of its operand. It produces false if its operand is true and true if its operand is false. The effects of logical NOT operator is summarized in the truth Table 3.10.\n\nTable 3.10: Logical NOT Operator\n\nThe following lines of code demonstrate the working of NOT operator.\n\n!(5 == 5) // evaluates to false because the expression (5 == 5) is true.\n!(6 <= 4) // evaluates to true because (6 <= 4) would be false.\n!true// evaluates to false\n!false// evaluates to true.\n\nii. Logical AND\n\nLogical && operator is a binary operator that needs two operands. It is used to test whether both conditions are true or not. If both the conditions are true, the logical && returns true, otherwise, it returns false. Truth Table 3.11 shows the results of logical && operator.\n\nTable 3.11: Logical AND Operator\n\niii. Logical OR\n\nThe logical || operator is used to test whether either of two conditions is true. If either of the left operand or right operand evaluates to true, the logical || operator returns true. Also, if both the operands are true, logical || returns to true but if both are false it returns to false. Truth Table 3.12 shows the operations of logical || operator.\n\nTable 3.12: Logical OR Operator\n\ng. Ternary (or conditional) operator (? : )\n\nThe conditional operator takes three operands and is therefore also called ternary operator. It evaluates an expression and returns a value if that expression is true and a different value if the expression is false. The general syntax used for conditional operator is:\n\ncondition ? result1: result2;\n\nHere, if condition is true the expression will return result1, and if condition is false it will return result2. Consider the following lines of code to demonstrate the use of conditional operator.\n\n7==5 ?4 : 3; // returns 3, since 7 is not equal to 5.\n7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2.\n5>3 ?a : b; // returns the value of a, since 5 is greater than 3.\n\nThe following program demonstrates the use of conditional operator.",
+   "urdu": "i. منطقی NOT\n\n! آپریٹر C++ کا یونری آپریٹر ہے جو بولین NOT عمل انجام دینے کے لیے استعمال ہوتا ہے۔ اس آپریٹر کا آؤٹ پٹ اس کے آپرینڈ کی قدر کا الٹ ہوتا ہے۔ اگر آپرینڈ true ہو تو یہ false دیتا ہے اور اگر آپرینڈ false ہو تو true۔ منطقی NOT آپریٹر کے اثرات کا خلاصہ ٹروتھ جدول 3.10 میں دیا گیا ہے۔\n\nجدول 3.10: منطقی NOT آپریٹر\n\nکوڈ کی درج ذیل لائنیں NOT آپریٹر کا کام دکھاتی ہیں۔\n\n!(5 == 5) // evaluates to false because the expression (5 == 5) is true.\n!(6 <= 4) // evaluates to true because (6 <= 4) would be false.\n!true// evaluates to false\n!false// evaluates to true.\n\nii. منطقی AND\n\nمنطقی && آپریٹر بائنری آپریٹر ہے جسے دو آپرینڈز درکار ہوتے ہیں۔ یہ جانچنے کے لیے استعمال ہوتا ہے کہ آیا دونوں شرائط درست ہیں یا نہیں۔ اگر دونوں شرائط true ہوں تو منطقی && true واپس کرتا ہے، ورنہ false۔ ٹروتھ جدول 3.11 منطقی && آپریٹر کے نتائج دکھاتی ہے۔\n\nجدول 3.11: منطقی AND آپریٹر\n\niii. منطقی OR\n\nمنطقی || آپریٹر یہ جانچنے کے لیے استعمال ہوتا ہے کہ دو شرائط میں سے کوئی ایک درست ہے یا نہیں۔ اگر بائیں یا دائیں آپرینڈ میں سے کوئی true ہو تو منطقی || آپریٹر true واپس کرتا ہے۔ نیز اگر دونوں آپرینڈز true ہوں تو بھی || true دیتا ہے لیکن اگر دونوں false ہوں تو false دیتا ہے۔ ٹروتھ جدول 3.12 منطقی || آپریٹر کے اعمال دکھاتی ہے۔\n\nجدول 3.12: منطقی OR آپریٹر\n\ng. ٹرنری (یا شرطیہ) آپریٹر (? : )\n\nشرطیہ آپریٹر تین آپرینڈز لیتا ہے اس لیے اسے ٹرنری آپریٹر بھی کہتے ہیں۔ یہ کسی ایکسپریشن کی قدر نکالتا ہے اور اگر ایکسپریشن درست ہو تو ایک قدر اور غلط ہو تو دوسری قدر واپس کرتا ہے۔ شرطیہ آپریٹر کا عمومی طریقۂ تحریر یہ ہے:\n\ncondition ? result1: result2;\n\nیہاں اگر شرط درست ہو تو ایکسپریشن result1 واپس کرے گا اور اگر شرط غلط ہو تو result2 واپس کرے گا۔ شرطیہ آپریٹر کے استعمال کی وضاحت کے لیے کوڈ کی درج ذیل لائنوں پر غور کریں۔\n\n7==5 ?4 : 3; // returns 3, since 7 is not equal to 5.\n7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2.\n5>3 ?a : b; // returns the value of a, since 5 is greater than 3.\n\nدرج ذیل پروگرام شرطیہ آپریٹر کا استعمال دکھاتا ہے۔",
+   "pashto": "i. منطقي NOT\n\n! چلونکی د C++ یو-عملي چلونکی دی چې د بولي NOT عملیې لپاره کارول کېږي. د دې چلونکي وتنه د هغه د عملوند د ارزښت سرچپه ده. که عملوند یې true وي false ورکوي او که false وي true. د منطقي NOT چلونکي اغېزې د ریښتینولۍ په ۳.۱۰ جدول کې لنډې شوې.\n\n۳.۱۰ جدول: منطقي NOT چلونکی\n\nد کوډ لاندې کرښې د NOT چلونکي کار ښيي.\n\n!(5 == 5) // evaluates to false because the expression (5 == 5) is true.\n!(6 <= 4) // evaluates to true because (6 <= 4) would be false.\n!true// evaluates to false\n!false// evaluates to true.\n\nii. منطقي AND\n\nمنطقي && چلونکی دوه-عملي چلونکی دی چې دوو عملوندونو ته اړتیا لري. د دې ازمویلو لپاره کارول کېږي چې ایا دواړه شرطونه true دي که نه. که دواړه شرطونه true وي، منطقي && true ورکوي، که نه false. د ریښتینولۍ ۳.۱۱ جدول د منطقي && چلونکي پایلې ښيي.\n\n۳.۱۱ جدول: منطقي AND چلونکی\n\niii. منطقي OR\n\nمنطقي || چلونکی د دې ازمویلو لپاره کارول کېږي چې ایا له دوو شرطونو یو true دی. که کیڼ یا ښي عملوند کوم یو true وي، منطقي || چلونکی true ورکوي. همداراز که دواړه عملوندونه true وي، || true ورکوي، خو که دواړه false وي false ورکوي. د ریښتینولۍ ۳.۱۲ جدول د منطقي || چلونکي عملیې ښيي.\n\n۳.۱۲ جدول: منطقي OR چلونکی\n\ng. درې-عملي (یا شرطي) چلونکی (? : )\n\nشرطي چلونکی درې عملوندونه اخلي، له همدې امله ورته درې-عملي چلونکی هم ویل کېږي. دا یوه افاده ارزوي او که افاده true وي یو ارزښت او که false وي بل ارزښت ورکوي. د شرطي چلونکي عمومي بڼه دا ده:\n\ncondition ? result1: result2;\n\nدلته که شرط true وي، افاده به result1 ورکړي او که شرط false وي result2 به ورکړي. د شرطي چلونکي د کارونې د ښودلو لپاره د کوډ لاندې کرښو ته پام وکړئ.\n\n7==5 ?4 : 3; // returns 3, since 7 is not equal to 5.\n7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2.\n5>3 ?a : b; // returns the value of a, since 5 is greater than 3.\n\nلاندې پروګرام د شرطي چلونکي کارونه ښيي.",
+   "theoryUrdu": "i. منطقی NOT\n\n! آپریٹر C++ کا یونری آپریٹر ہے جو بولین NOT عمل انجام دینے کے لیے استعمال ہوتا ہے۔ اس آپریٹر کا آؤٹ پٹ اس کے آپرینڈ کی قدر کا الٹ ہوتا ہے۔ اگر آپرینڈ true ہو تو یہ false دیتا ہے اور اگر آپرینڈ false ہو تو true۔ منطقی NOT آپریٹر کے اثرات کا خلاصہ ٹروتھ جدول 3.10 میں دیا گیا ہے۔\n\nجدول 3.10: منطقی NOT آپریٹر\n\nکوڈ کی درج ذیل لائنیں NOT آپریٹر کا کام دکھاتی ہیں۔\n\n!(5 == 5) // evaluates to false because the expression (5 == 5) is true.\n!(6 <= 4) // evaluates to true because (6 <= 4) would be false.\n!true// evaluates to false\n!false// evaluates to true.\n\nii. منطقی AND\n\nمنطقی && آپریٹر بائنری آپریٹر ہے جسے دو آپرینڈز درکار ہوتے ہیں۔ یہ جانچنے کے لیے استعمال ہوتا ہے کہ آیا دونوں شرائط درست ہیں یا نہیں۔ اگر دونوں شرائط true ہوں تو منطقی && true واپس کرتا ہے، ورنہ false۔ ٹروتھ جدول 3.11 منطقی && آپریٹر کے نتائج دکھاتی ہے۔\n\nجدول 3.11: منطقی AND آپریٹر\n\niii. منطقی OR\n\nمنطقی || آپریٹر یہ جانچنے کے لیے استعمال ہوتا ہے کہ دو شرائط میں سے کوئی ایک درست ہے یا نہیں۔ اگر بائیں یا دائیں آپرینڈ میں سے کوئی true ہو تو منطقی || آپریٹر true واپس کرتا ہے۔ نیز اگر دونوں آپرینڈز true ہوں تو بھی || true دیتا ہے لیکن اگر دونوں false ہوں تو false دیتا ہے۔ ٹروتھ جدول 3.12 منطقی || آپریٹر کے اعمال دکھاتی ہے۔\n\nجدول 3.12: منطقی OR آپریٹر\n\ng. ٹرنری (یا شرطیہ) آپریٹر (? : )\n\nشرطیہ آپریٹر تین آپرینڈز لیتا ہے اس لیے اسے ٹرنری آپریٹر بھی کہتے ہیں۔ یہ کسی ایکسپریشن کی قدر نکالتا ہے اور اگر ایکسپریشن درست ہو تو ایک قدر اور غلط ہو تو دوسری قدر واپس کرتا ہے۔ شرطیہ آپریٹر کا عمومی طریقۂ تحریر یہ ہے:\n\ncondition ? result1: result2;\n\nیہاں اگر شرط درست ہو تو ایکسپریشن result1 واپس کرے گا اور اگر شرط غلط ہو تو result2 واپس کرے گا۔ شرطیہ آپریٹر کے استعمال کی وضاحت کے لیے کوڈ کی درج ذیل لائنوں پر غور کریں۔\n\n7==5 ?4 : 3; // returns 3, since 7 is not equal to 5.\n7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2.\n5>3 ?a : b; // returns the value of a, since 5 is greater than 3.\n\nدرج ذیل پروگرام شرطیہ آپریٹر کا استعمال دکھاتا ہے۔",
+   "theoryPashto": "i. منطقي NOT\n\n! چلونکی د C++ یو-عملي چلونکی دی چې د بولي NOT عملیې لپاره کارول کېږي. د دې چلونکي وتنه د هغه د عملوند د ارزښت سرچپه ده. که عملوند یې true وي false ورکوي او که false وي true. د منطقي NOT چلونکي اغېزې د ریښتینولۍ په ۳.۱۰ جدول کې لنډې شوې.\n\n۳.۱۰ جدول: منطقي NOT چلونکی\n\nد کوډ لاندې کرښې د NOT چلونکي کار ښيي.\n\n!(5 == 5) // evaluates to false because the expression (5 == 5) is true.\n!(6 <= 4) // evaluates to true because (6 <= 4) would be false.\n!true// evaluates to false\n!false// evaluates to true.\n\nii. منطقي AND\n\nمنطقي && چلونکی دوه-عملي چلونکی دی چې دوو عملوندونو ته اړتیا لري. د دې ازمویلو لپاره کارول کېږي چې ایا دواړه شرطونه true دي که نه. که دواړه شرطونه true وي، منطقي && true ورکوي، که نه false. د ریښتینولۍ ۳.۱۱ جدول د منطقي && چلونکي پایلې ښيي.\n\n۳.۱۱ جدول: منطقي AND چلونکی\n\niii. منطقي OR\n\nمنطقي || چلونکی د دې ازمویلو لپاره کارول کېږي چې ایا له دوو شرطونو یو true دی. که کیڼ یا ښي عملوند کوم یو true وي، منطقي || چلونکی true ورکوي. همداراز که دواړه عملوندونه true وي، || true ورکوي، خو که دواړه false وي false ورکوي. د ریښتینولۍ ۳.۱۲ جدول د منطقي || چلونکي عملیې ښيي.\n\n۳.۱۲ جدول: منطقي OR چلونکی\n\ng. درې-عملي (یا شرطي) چلونکی (? : )\n\nشرطي چلونکی درې عملوندونه اخلي، له همدې امله ورته درې-عملي چلونکی هم ویل کېږي. دا یوه افاده ارزوي او که افاده true وي یو ارزښت او که false وي بل ارزښت ورکوي. د شرطي چلونکي عمومي بڼه دا ده:\n\ncondition ? result1: result2;\n\nدلته که شرط true وي، افاده به result1 ورکړي او که شرط false وي result2 به ورکړي. د شرطي چلونکي د کارونې د ښودلو لپاره د کوډ لاندې کرښو ته پام وکړئ.\n\n7==5 ?4 : 3; // returns 3, since 7 is not equal to 5.\n7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2.\n5>3 ?a : b; // returns the value of a, since 5 is greater than 3.\n\nلاندې پروګرام د شرطي چلونکي کارونه ښيي.",
+   "content": "<p>i. Logical NOT</p><p>The ! operator is the C++ unary operator that is used to perform the Boolean NOT operation. The output of this operator is the inverse of the value of its operand. It produces false if its operand is true and true if its operand is false. The effects of logical NOT operator is summarized in the truth Table 3.10.</p><p>Table 3.10: Logical NOT Operator</p><p>The following lines of code demonstrate the working of NOT operator.</p><p>!(5 == 5) // evaluates to false because the expression (5 == 5) is true.\n!(6 &lt;= 4) // evaluates to true because (6 &lt;= 4) would be false.\n!true// evaluates to false\n!false// evaluates to true.</p><p>ii. Logical AND</p><p>Logical &amp;&amp; operator is a binary operator that needs two operands. It is used to test whether both conditions are true or not. If both the conditions are true, the logical &amp;&amp; returns true, otherwise, it returns false. Truth Table 3.11 shows the results of logical &amp;&amp; operator.</p><p>Table 3.11: Logical AND Operator</p><p>iii. Logical OR</p><p>The logical || operator is used to test whether either of two conditions is true. If either of the left operand or right operand evaluates to true, the logical || operator returns true. Also, if both the operands are true, logical || returns to true but if both are false it returns to false. Truth Table 3.12 shows the operations of logical || operator.</p><p>Table 3.12: Logical OR Operator</p><p>g. Ternary (or conditional) operator (? : )</p><p>The conditional operator takes three operands and is therefore also called ternary operator. It evaluates an expression and returns a value if that expression is true and a different value if the expression is false. The general syntax used for conditional operator is:</p><p>condition ? result1: result2;</p><p>Here, if condition is true the expression will return result1, and if condition is false it will return result2. Consider the following lines of code to demonstrate the use of conditional operator.</p><p>7==5 ?4 : 3; // returns 3, since 7 is not equal to 5.\n7==5+2 ?4 : 3; // returns 4, since 7 is equal to 5+2.\n5&gt;3 ?a : b; // returns the value of a, since 5 is greater than 3.</p><p>The following program demonstrates the use of conditional operator.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-3-10"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-3-11"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-3-12"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-table-3-10",
+     "headers": [
+      "X",
+      "!X"
+     ],
+     "rows": [
+      [
+       "True",
+       "False"
+      ],
+      [
+       "False",
+       "True"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "X",
+        "!X"
+       ],
+       "rows": [
+        [
+         "درست",
+         "غلط"
+        ],
+        [
+         "غلط",
+         "درست"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "X",
+        "!X"
+       ],
+       "rows": [
+        [
+         "سم",
+         "ناسم"
+        ],
+        [
+         "ناسم",
+         "سم"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "cs12-table-3-11",
+     "headers": [
+      "X",
+      "Y",
+      "X && Y"
+     ],
+     "rows": [
+      [
+       "False",
+       "False",
+       "False"
+      ],
+      [
+       "False",
+       "True",
+       "False"
+      ],
+      [
+       "True",
+       "False",
+       "False"
+      ],
+      [
+       "True",
+       "True",
+       "True"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "X",
+        "Y",
+        "X && Y"
+       ],
+       "rows": [
+        [
+         "غلط",
+         "غلط",
+         "غلط"
+        ],
+        [
+         "غلط",
+         "درست",
+         "غلط"
+        ],
+        [
+         "درست",
+         "غلط",
+         "غلط"
+        ],
+        [
+         "درست",
+         "درست",
+         "درست"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "X",
+        "Y",
+        "X && Y"
+       ],
+       "rows": [
+        [
+         "ناسم",
+         "ناسم",
+         "ناسم"
+        ],
+        [
+         "ناسم",
+         "سم",
+         "ناسم"
+        ],
+        [
+         "سم",
+         "ناسم",
+         "ناسم"
+        ],
+        [
+         "سم",
+         "سم",
+         "سم"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "cs12-table-3-12",
+     "headers": [
+      "X",
+      "Y",
+      "X || Y"
+     ],
+     "rows": [
+      [
+       "False",
+       "False",
+       "False"
+      ],
+      [
+       "False",
+       "True",
+       "True"
+      ],
+      [
+       "True",
+       "False",
+       "True"
+      ],
+      [
+       "True",
+       "True",
+       "True"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "X",
+        "Y",
+        "X || Y"
+       ],
+       "rows": [
+        [
+         "غلط",
+         "غلط",
+         "غلط"
+        ],
+        [
+         "غلط",
+         "درست",
+         "درست"
+        ],
+        [
+         "درست",
+         "غلط",
+         "درست"
+        ],
+        [
+         "درست",
+         "درست",
+         "درست"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "X",
+        "Y",
+        "X || Y"
+       ],
+       "rows": [
+        [
+         "ناسم",
+         "ناسم",
+         "ناسم"
+        ],
+        [
+         "ناسم",
+         "سم",
+         "سم"
+        ],
+        [
+         "سم",
+         "ناسم",
+         "سم"
+        ],
+        [
+         "سم",
+         "سم",
+         "سم"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 55,
+     "printedPages": [
+      98,
+      99
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (21)",
+   "sourcePageLabel": "PDF 55 · p. 98–99",
+   "sourceNote": "Truth Tables 3.10–3.12 are reproduced as structured tables (True/False localised in the Urdu and Pashto views). The conditional-operator program follows on p.100 (PDF56).",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf055",
+   "unit": 3,
+   "printedPage": 98,
+   "description": "p.98 prints “The effects of logical NOT operator is summarized”, “&&returns”; p.99 “||returns to true … it returns to false”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

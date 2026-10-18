@@ -1,0 +1,181 @@
+{
+ "pdfPage": 41,
+ "sections": [
+  {
+   "id": "cs12-u3-text-7",
+   "title": "Unit 3 text (7)",
+   "headingUrdu": "یونٹ 3 — متن (۷)",
+   "headingPashto": "۳ څپرکی — متن (۷)",
+   "paras": [
+    {
+     "text": "This line of code declares three variables a, b and c, all of type int. This declaration is exactly the same as shown in the following segment of code:",
+     "urdu": "کوڈ کی یہ لائن تین ویری ایبلز a، b اور c کا اعلان کرتی ہے جو سب int قسم کے ہیں۔ یہ اعلان بالکل ویسا ہی ہے جیسا کوڈ کے درج ذیل حصے میں دکھایا گیا ہے:",
+     "pashto": "د کوډ دا کرښه درې متغیرونه a، b او c اعلانوي چې ټول د int ډول دي. دا اعلان دقیقاً هماغسې دی لکه څنګه چې د کوډ په لاندې برخه کې ښودل شوی:"
+    },
+    {
+     "text": "int a;\nint b;\nint c;",
+     "urdu": "int a;\nint b;\nint c;",
+     "pashto": "int a;\nint b;\nint c;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Consider the following example to see the use of variable declaration.",
+     "urdu": "ویری ایبل کے اعلان کا استعمال دیکھنے کے لیے درج ذیل مثال پر غور کریں۔",
+     "pashto": "د متغیر د اعلان د کارونې لیدلو لپاره لاندې بېلګې ته پام وکړئ."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\n// declaring variables:\nint a, b;\nint result;\n// process:\na = 55;\nb = 22;\nresult = a - b;\n// print out the result:\ncout << \"The Result is= \"<<result;\n// terminate the program:\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\n// declaring variables:\nint a, b;\nint result;\n// process:\na = 55;\nb = 22;\nresult = a - b;\n// print out the result:\ncout << \"The Result is= \"<<result;\n// terminate the program:\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nint main()\n{\n// declaring variables:\nint a, b;\nint result;\n// process:\na = 55;\nb = 22;\nresult = a - b;\n// print out the result:\ncout << \"The Result is= \"<<result;\n// terminate the program:\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The Result is= 33",
+     "urdu": "The Result is= 33",
+     "pashto": "The Result is= 33",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The declaration of the variables is not necessary at the start of the program. A variable can be declared in the program where it is needed. Consider the following example.",
+     "urdu": "ویری ایبلز کا اعلان پروگرام کے شروع میں ضروری نہیں۔ ویری ایبل کو پروگرام میں وہاں ڈکلیئر کیا جا سکتا ہے جہاں اس کی ضرورت ہو۔ درج ذیل مثال پر غور کریں۔",
+     "pashto": "د متغیرونو اعلان د پروګرام په پیل کې اړین نه دی. متغیر په پروګرام کې هلته اعلانېدای شي چې ورته اړتیا وي. لاندې بېلګې ته پام وکړئ."
+    },
+    {
+     "text": "// variables declaration at the point of application\n#include<conio.h>\n#include<iostream.h>\nint main()\n{\ncout << \"Enter a number: \";\nint x; // we need x starting here.\ncin >> x;\ncout << \"Enter another number: \";\nint y; // we don't need y until now\ncin >> y;\ncout << \"The sum is: \" << x + y << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "// variables declaration at the point of application\n#include<conio.h>\n#include<iostream.h>\nint main()\n{\ncout << \"Enter a number: \";\nint x; // we need x starting here.\ncin >> x;\ncout << \"Enter another number: \";\nint y; // we don't need y until now\ncin >> y;\ncout << \"The sum is: \" << x + y << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "// variables declaration at the point of application\n#include<conio.h>\n#include<iostream.h>\nint main()\n{\ncout << \"Enter a number: \";\nint x; // we need x starting here.\ncin >> x;\ncout << \"Enter another number: \";\nint y; // we don't need y until now\ncin >> y;\ncout << \"The sum is: \" << x + y << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter a number: 4\nEnter another number: 10\nThe sum is: 14",
+     "urdu": "Enter a number: 4\nEnter another number: 10\nThe sum is: 14",
+     "pashto": "Enter a number: 4\nEnter another number: 10\nThe sum is: 14",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. Initialization of variables",
+     "urdu": "b. ویری ایبلز کی ابتدائی قدر",
+     "pashto": "b. د متغیرونو لومړنی ارزښت"
+    },
+    {
+     "text": "Assigning values to a variable during declaration time is called initialization. When declaring a regular local variable, its value is by default undetermined. But you may want a variable to store a concrete value at the same moment that it is declared. In order to do that, you can initialize the variable.",
+     "urdu": "اعلان کے وقت ویری ایبل کو قدر دینا ابتدائی قدر دینا (initialization) کہلاتا ہے۔ جب کوئی عام لوکل ویری ایبل ڈکلیئر کیا جاتا ہے تو اس کی قدر بطورِ طے شدہ غیر متعین ہوتی ہے۔ لیکن آپ چاہ سکتے ہیں کہ ویری ایبل اسی لمحے ایک معین قدر محفوظ کرے جب اس کا اعلان ہو۔ ایسا کرنے کے لیے آپ ویری ایبل کو ابتدائی قدر دے سکتے ہیں۔",
+     "pashto": "د اعلان پر وخت متغیر ته د ارزښت ورکول لومړنی ارزښت ورکول (initialization) بلل کېږي. کله چې یو عادي سیمه‌ییز متغیر اعلان شي، ارزښت یې په ډیفالټ ډول نامعلوم وي. خو کېدای شي تاسو وغواړئ چې متغیر په همغه شېبه یو ټاکلی ارزښت وساتي چې اعلانېږي. د دې لپاره تاسو متغیر ته لومړنی ارزښت ورکولی شئ."
+    }
+   ],
+   "theory": "This line of code declares three variables a, b and c, all of type int. This declaration is exactly the same as shown in the following segment of code:\n\nint a;\nint b;\nint c;\n\nConsider the following example to see the use of variable declaration.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\n// declaring variables:\nint a, b;\nint result;\n// process:\na = 55;\nb = 22;\nresult = a - b;\n// print out the result:\ncout << \"The Result is= \"<<result;\n// terminate the program:\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nThe Result is= 33\n\nThe declaration of the variables is not necessary at the start of the program. A variable can be declared in the program where it is needed. Consider the following example.\n\n// variables declaration at the point of application\n#include<conio.h>\n#include<iostream.h>\nint main()\n{\ncout << \"Enter a number: \";\nint x; // we need x starting here.\ncin >> x;\ncout << \"Enter another number: \";\nint y; // we don't need y until now\ncin >> y;\ncout << \"The sum is: \" << x + y << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nEnter a number: 4\nEnter another number: 10\nThe sum is: 14\n\nb. Initialization of variables\n\nAssigning values to a variable during declaration time is called initialization. When declaring a regular local variable, its value is by default undetermined. But you may want a variable to store a concrete value at the same moment that it is declared. In order to do that, you can initialize the variable.",
+   "urdu": "کوڈ کی یہ لائن تین ویری ایبلز a، b اور c کا اعلان کرتی ہے جو سب int قسم کے ہیں۔ یہ اعلان بالکل ویسا ہی ہے جیسا کوڈ کے درج ذیل حصے میں دکھایا گیا ہے:\n\nint a;\nint b;\nint c;\n\nویری ایبل کے اعلان کا استعمال دیکھنے کے لیے درج ذیل مثال پر غور کریں۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\n// declaring variables:\nint a, b;\nint result;\n// process:\na = 55;\nb = 22;\nresult = a - b;\n// print out the result:\ncout << \"The Result is= \"<<result;\n// terminate the program:\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe Result is= 33\n\nویری ایبلز کا اعلان پروگرام کے شروع میں ضروری نہیں۔ ویری ایبل کو پروگرام میں وہاں ڈکلیئر کیا جا سکتا ہے جہاں اس کی ضرورت ہو۔ درج ذیل مثال پر غور کریں۔\n\n// variables declaration at the point of application\n#include<conio.h>\n#include<iostream.h>\nint main()\n{\ncout << \"Enter a number: \";\nint x; // we need x starting here.\ncin >> x;\ncout << \"Enter another number: \";\nint y; // we don't need y until now\ncin >> y;\ncout << \"The sum is: \" << x + y << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number: 4\nEnter another number: 10\nThe sum is: 14\n\nb. ویری ایبلز کی ابتدائی قدر\n\nاعلان کے وقت ویری ایبل کو قدر دینا ابتدائی قدر دینا (initialization) کہلاتا ہے۔ جب کوئی عام لوکل ویری ایبل ڈکلیئر کیا جاتا ہے تو اس کی قدر بطورِ طے شدہ غیر متعین ہوتی ہے۔ لیکن آپ چاہ سکتے ہیں کہ ویری ایبل اسی لمحے ایک معین قدر محفوظ کرے جب اس کا اعلان ہو۔ ایسا کرنے کے لیے آپ ویری ایبل کو ابتدائی قدر دے سکتے ہیں۔",
+   "pashto": "د کوډ دا کرښه درې متغیرونه a، b او c اعلانوي چې ټول د int ډول دي. دا اعلان دقیقاً هماغسې دی لکه څنګه چې د کوډ په لاندې برخه کې ښودل شوی:\n\nint a;\nint b;\nint c;\n\nد متغیر د اعلان د کارونې لیدلو لپاره لاندې بېلګې ته پام وکړئ.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\n// declaring variables:\nint a, b;\nint result;\n// process:\na = 55;\nb = 22;\nresult = a - b;\n// print out the result:\ncout << \"The Result is= \"<<result;\n// terminate the program:\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe Result is= 33\n\nد متغیرونو اعلان د پروګرام په پیل کې اړین نه دی. متغیر په پروګرام کې هلته اعلانېدای شي چې ورته اړتیا وي. لاندې بېلګې ته پام وکړئ.\n\n// variables declaration at the point of application\n#include<conio.h>\n#include<iostream.h>\nint main()\n{\ncout << \"Enter a number: \";\nint x; // we need x starting here.\ncin >> x;\ncout << \"Enter another number: \";\nint y; // we don't need y until now\ncin >> y;\ncout << \"The sum is: \" << x + y << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number: 4\nEnter another number: 10\nThe sum is: 14\n\nb. د متغیرونو لومړنی ارزښت\n\nد اعلان پر وخت متغیر ته د ارزښت ورکول لومړنی ارزښت ورکول (initialization) بلل کېږي. کله چې یو عادي سیمه‌ییز متغیر اعلان شي، ارزښت یې په ډیفالټ ډول نامعلوم وي. خو کېدای شي تاسو وغواړئ چې متغیر په همغه شېبه یو ټاکلی ارزښت وساتي چې اعلانېږي. د دې لپاره تاسو متغیر ته لومړنی ارزښت ورکولی شئ.",
+   "theoryUrdu": "کوڈ کی یہ لائن تین ویری ایبلز a، b اور c کا اعلان کرتی ہے جو سب int قسم کے ہیں۔ یہ اعلان بالکل ویسا ہی ہے جیسا کوڈ کے درج ذیل حصے میں دکھایا گیا ہے:\n\nint a;\nint b;\nint c;\n\nویری ایبل کے اعلان کا استعمال دیکھنے کے لیے درج ذیل مثال پر غور کریں۔\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\n// declaring variables:\nint a, b;\nint result;\n// process:\na = 55;\nb = 22;\nresult = a - b;\n// print out the result:\ncout << \"The Result is= \"<<result;\n// terminate the program:\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe Result is= 33\n\nویری ایبلز کا اعلان پروگرام کے شروع میں ضروری نہیں۔ ویری ایبل کو پروگرام میں وہاں ڈکلیئر کیا جا سکتا ہے جہاں اس کی ضرورت ہو۔ درج ذیل مثال پر غور کریں۔\n\n// variables declaration at the point of application\n#include<conio.h>\n#include<iostream.h>\nint main()\n{\ncout << \"Enter a number: \";\nint x; // we need x starting here.\ncin >> x;\ncout << \"Enter another number: \";\nint y; // we don't need y until now\ncin >> y;\ncout << \"The sum is: \" << x + y << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number: 4\nEnter another number: 10\nThe sum is: 14\n\nb. ویری ایبلز کی ابتدائی قدر\n\nاعلان کے وقت ویری ایبل کو قدر دینا ابتدائی قدر دینا (initialization) کہلاتا ہے۔ جب کوئی عام لوکل ویری ایبل ڈکلیئر کیا جاتا ہے تو اس کی قدر بطورِ طے شدہ غیر متعین ہوتی ہے۔ لیکن آپ چاہ سکتے ہیں کہ ویری ایبل اسی لمحے ایک معین قدر محفوظ کرے جب اس کا اعلان ہو۔ ایسا کرنے کے لیے آپ ویری ایبل کو ابتدائی قدر دے سکتے ہیں۔",
+   "theoryPashto": "د کوډ دا کرښه درې متغیرونه a، b او c اعلانوي چې ټول د int ډول دي. دا اعلان دقیقاً هماغسې دی لکه څنګه چې د کوډ په لاندې برخه کې ښودل شوی:\n\nint a;\nint b;\nint c;\n\nد متغیر د اعلان د کارونې لیدلو لپاره لاندې بېلګې ته پام وکړئ.\n\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\n// declaring variables:\nint a, b;\nint result;\n// process:\na = 55;\nb = 22;\nresult = a - b;\n// print out the result:\ncout << \"The Result is= \"<<result;\n// terminate the program:\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe Result is= 33\n\nد متغیرونو اعلان د پروګرام په پیل کې اړین نه دی. متغیر په پروګرام کې هلته اعلانېدای شي چې ورته اړتیا وي. لاندې بېلګې ته پام وکړئ.\n\n// variables declaration at the point of application\n#include<conio.h>\n#include<iostream.h>\nint main()\n{\ncout << \"Enter a number: \";\nint x; // we need x starting here.\ncin >> x;\ncout << \"Enter another number: \";\nint y; // we don't need y until now\ncin >> y;\ncout << \"The sum is: \" << x + y << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number: 4\nEnter another number: 10\nThe sum is: 14\n\nb. د متغیرونو لومړنی ارزښت\n\nد اعلان پر وخت متغیر ته د ارزښت ورکول لومړنی ارزښت ورکول (initialization) بلل کېږي. کله چې یو عادي سیمه‌ییز متغیر اعلان شي، ارزښت یې په ډیفالټ ډول نامعلوم وي. خو کېدای شي تاسو وغواړئ چې متغیر په همغه شېبه یو ټاکلی ارزښت وساتي چې اعلانېږي. د دې لپاره تاسو متغیر ته لومړنی ارزښت ورکولی شئ.",
+   "content": "<p>This line of code declares three variables a, b and c, all of type int. This declaration is exactly the same as shown in the following segment of code:</p><p>int a;\nint b;\nint c;</p><p>Consider the following example to see the use of variable declaration.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\n// declaring variables:\nint a, b;\nint result;\n// process:\na = 55;\nb = 22;\nresult = a - b;\n// print out the result:\ncout &lt;&lt; &quot;The Result is= &quot;&lt;&lt;result;\n// terminate the program:\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>The Result is= 33</p><p>The declaration of the variables is not necessary at the start of the program. A variable can be declared in the program where it is needed. Consider the following example.</p><p>// variables declaration at the point of application\n#include&lt;conio.h&gt;\n#include&lt;iostream.h&gt;\nint main()\n{\ncout &lt;&lt; &quot;Enter a number: &quot;;\nint x; // we need x starting here.\ncin &gt;&gt; x;\ncout &lt;&lt; &quot;Enter another number: &quot;;\nint y; // we don&#x27;t need y until now\ncin &gt;&gt; y;\ncout &lt;&lt; &quot;The sum is: &quot; &lt;&lt; x + y &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>Enter a number: 4\nEnter another number: 10\nThe sum is: 14</p><p>b. Initialization of variables</p><p>Assigning values to a variable during declaration time is called initialization. When declaring a regular local variable, its value is by default undetermined. But you may want a variable to store a concrete value at the same moment that it is declared. In order to do that, you can initialize the variable.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 41,
+     "printedPages": [
+      70,
+      71
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (7)",
+   "sourcePageLabel": "PDF 41 · p. 70–71",
+   "sourceNote": "The initialization section continues on p.72 (PDF42).",
+   "unit": 3
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

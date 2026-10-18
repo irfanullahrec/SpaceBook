@@ -1,0 +1,232 @@
+{
+ "pdfPage": 101,
+ "sections": [
+  {
+   "id": "cs12-u6-text-8",
+   "title": "Unit 6 text (8)",
+   "headingUrdu": "یونٹ 6 — متن (8)",
+   "headingPashto": "۶ څپرکی — متن (8)",
+   "paras": [
+    {
+     "text": "Here, the automatic variable Auto_Var losses its values when the control goes out of the function body but the static variable Static_Var keeps its last value even if the control goes out of the function.",
+     "urdu": "یہاں خودکار ویری ایبل Auto_Var اپنی قدریں کھو دیتا ہے جب کنٹرول فنکشن کے جسم سے باہر جاتا ہے، لیکن اسٹیٹک ویری ایبل Static_Var کنٹرول کے فنکشن سے باہر جانے پر بھی اپنی آخری قدر برقرار رکھتا ہے۔",
+     "pashto": "دلته خپلکاره متغیر Auto_Var خپل ارزښتونه له لاسه ورکوي کله چې کنټرول د فنکشن له بدنې ووځي، خو ثابت متغیر Static_Var خپل وروستی ارزښت ساتي حتی که کنټرول له فنکشن ووځي."
+    },
+    {
+     "text": "6.1.6 Formal parameters and actual parameters",
+     "urdu": "6.1.6 رسمی پیرامیٹرز اور اصل پیرامیٹرز",
+     "pashto": "۶.۱.۶ رسمي پاراميټرونه او اصلي پاراميټرونه"
+    },
+    {
+     "text": "In function prototypes and function calls, variables and values are written in the parenthesis of the functions. These are divided into two categories; formal parameters and actual parameters.",
+     "urdu": "فنکشن پروٹوٹائپس اور فنکشن کالز میں ویری ایبلز اور قدریں فنکشنز کی قوسین میں لکھی جاتی ہیں۔ یہ دو زمروں میں تقسیم ہیں؛ رسمی پیرامیٹرز اور اصل پیرامیٹرز۔",
+     "pashto": "د فنکشن په نمونو او غوښتنو کې متغیرونه او ارزښتونه د فنکشنونو په قوسونو کې لیکل کېږي. دا په دوو ډلو وېشل کېږي؛ رسمي پاراميټرونه او اصلي پاراميټرونه."
+    },
+    {
+     "text": "a. Formal parameters",
+     "urdu": "a. رسمی پیرامیٹرز",
+     "pashto": "a. رسمي پاراميټرونه"
+    },
+    {
+     "text": "Formal parameters are those parameters which appear in function declarator/header and also in function prototype. These are also called formal arguments and are used to receive values for functions.",
+     "urdu": "رسمی پیرامیٹرز وہ پیرامیٹرز ہیں جو فنکشن ڈکلیریٹر/ہیڈر اور فنکشن پروٹوٹائپ میں بھی آتے ہیں۔ انھیں رسمی آرگیومنٹس بھی کہتے ہیں اور یہ فنکشنز کے لیے قدریں وصول کرنے کے لیے استعمال ہوتے ہیں۔",
+     "pashto": "رسمي پاراميټرونه هغه پاراميټرونه دي چې د فنکشن په اعلانوونکي/سرلیک او د فنکشن په نمونه کې هم راځي. دا رسمي دلیلونه هم بلل کېږي او د فنکشنونو لپاره د ارزښتونو ترلاسه کولو لپاره کارېږي."
+    },
+    {
+     "text": "For example:",
+     "urdu": "مثال کے طور پر:",
+     "pashto": "د بېلګې په توګه:"
+    },
+    {
+     "text": "void foo(int x); // prototype -- x is a formal parameter\nvoid foo(int x) // declarator -- x is a formal parameter\n{\nbody\n}",
+     "urdu": "void foo(int x); // prototype -- x is a formal parameter\nvoid foo(int x) // declarator -- x is a formal parameter\n{\nbody\n}",
+     "pashto": "void foo(int x); // prototype -- x is a formal parameter\nvoid foo(int x) // declarator -- x is a formal parameter\n{\nbody\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. Actual parameters",
+     "urdu": "b. اصل پیرامیٹرز",
+     "pashto": "b. اصلي پاراميټرونه"
+    },
+    {
+     "text": "Actual parameters are those parameters which appear in function calls and are used to send data to formal parameters. These are also called actual arguments. Consider the following function call:",
+     "urdu": "اصل پیرامیٹرز وہ پیرامیٹرز ہیں جو فنکشن کالز میں آتے ہیں اور رسمی پیرامیٹرز کو ڈیٹا بھیجنے کے لیے استعمال ہوتے ہیں۔ انھیں اصل آرگیومنٹس بھی کہتے ہیں۔ درج ذیل فنکشن کال پر غور کریں:",
+     "pashto": "اصلي پاراميټرونه هغه پاراميټرونه دي چې د فنکشن په غوښتنو کې راځي او رسمي پاراميټرونو ته د ډېټا لېږلو لپاره کارېږي. دا اصلي دلیلونه هم بلل کېږي. لاندې د فنکشن غوښتنې ته پام وکړئ:"
+    },
+    {
+     "text": "foo(6); // 6 is the argument passed to parameter x\nfoo(y+1); // the value of (y+1) is the argument passed to parameter x",
+     "urdu": "foo(6); // 6 is the argument passed to parameter x\nfoo(y+1); // the value of (y+1) is the argument passed to parameter x",
+     "pashto": "foo(6); // 6 is the argument passed to parameter x\nfoo(y+1); // the value of (y+1) is the argument passed to parameter x",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The actual parameters can be fixed values or variables holding values or expressions resulting in some values.",
+     "urdu": "اصل پیرامیٹرز مقررہ قدریں، قدریں رکھنے والے ویری ایبلز یا کسی قدر پر منتج ہونے والے ایکسپریشنز ہو سکتے ہیں۔",
+     "pashto": "اصلي پاراميټرونه کېدای شي ټاکلي ارزښتونه، ارزښت لرونکي متغیرونه یا داسې افادې وي چې یو ارزښت ورکوي."
+    },
+    {
+     "text": "In the function main, in the following example, rice, chicken and fruit are actual parameters when used to call calculate_bill. On the other hand, the corresponding variables in calculate_bill (namely diner1, diner2 and diner3, respectively) are formal parameters because they appear in the function definition and receive values passed in the function call.",
+     "urdu": "درج ذیل مثال میں فنکشن main میں rice، chicken اور fruit اصل پیرامیٹرز ہیں جب انھیں calculate_bill کال کرنے کے لیے استعمال کیا جائے۔ دوسری طرف calculate_bill میں متعلقہ ویری ایبلز (یعنی بالترتیب diner1، diner2 اور diner3) رسمی پیرامیٹرز ہیں کیونکہ یہ فنکشن کی تعریف میں آتے ہیں اور فنکشن کال میں پاس کی گئی قدریں وصول کرتے ہیں۔",
+     "pashto": "په لاندې بېلګه کې د main په فنکشن کې rice، chicken او fruit اصلي پاراميټرونه دي کله چې د calculate_bill د غوښتلو لپاره وکارول شي. له بلې خوا په calculate_bill کې اړوند متغیرونه (یعنې په ترتیب سره diner1، diner2 او diner3) رسمي پاراميټرونه دي ځکه د فنکشن په تعریف کې راځي او د فنکشن په غوښتنه کې لېږدول شوي ارزښتونه ترلاسه کوي."
+    },
+    {
+     "text": "Let’s look at calculate_bill function in the following program:",
+     "urdu": "آئیے درج ذیل پروگرام میں calculate_bill فنکشن دیکھیں:",
+     "pashto": "راځئ په لاندې پروګرام کې calculate_bill فنکشن وګورو:"
+    },
+    {
+     "text": "/* formal and actual parameters program */\n#include <stdio.h>\n#include<conio.h>\n#include <iostream.h>\nint calculate_bill (int, int, int);\nint main()\n{\nint bill;\nint rice = 25;\nint chicken = 32;\nint fruit = 27;\nbill = calculate_bill (rice, chicken, fruit);   // ← Actual Parameters\ncout<<\"The total bill comes to \"<<bill<< “Rs.”;\ngetch();\nreturn 0;\n}\nint calculate_bill (int diner1, int diner2, int diner3)   // ← Formal Parameters\n{\nint total;\ntotal = diner1 + diner2 + diner3;\nreturn total;\n}",
+     "urdu": "/* formal and actual parameters program */\n#include <stdio.h>\n#include<conio.h>\n#include <iostream.h>\nint calculate_bill (int, int, int);\nint main()\n{\nint bill;\nint rice = 25;\nint chicken = 32;\nint fruit = 27;\nbill = calculate_bill (rice, chicken, fruit);   // ← Actual Parameters\ncout<<\"The total bill comes to \"<<bill<< “Rs.”;\ngetch();\nreturn 0;\n}\nint calculate_bill (int diner1, int diner2, int diner3)   // ← Formal Parameters\n{\nint total;\ntotal = diner1 + diner2 + diner3;\nreturn total;\n}",
+     "pashto": "/* formal and actual parameters program */\n#include <stdio.h>\n#include<conio.h>\n#include <iostream.h>\nint calculate_bill (int, int, int);\nint main()\n{\nint bill;\nint rice = 25;\nint chicken = 32;\nint fruit = 27;\nbill = calculate_bill (rice, chicken, fruit);   // ← Actual Parameters\ncout<<\"The total bill comes to \"<<bill<< “Rs.”;\ngetch();\nreturn 0;\n}\nint calculate_bill (int diner1, int diner2, int diner3)   // ← Formal Parameters\n{\nint total;\ntotal = diner1 + diner2 + diner3;\nreturn total;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The total bill comes to 84 Rs.",
+     "urdu": "The total bill comes to 84 Rs.",
+     "pashto": "The total bill comes to 84 Rs.",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Here, the automatic variable Auto_Var losses its values when the control goes out of the function body but the static variable Static_Var keeps its last value even if the control goes out of the function.\n\n6.1.6 Formal parameters and actual parameters\n\nIn function prototypes and function calls, variables and values are written in the parenthesis of the functions. These are divided into two categories; formal parameters and actual parameters.\n\na. Formal parameters\n\nFormal parameters are those parameters which appear in function declarator/header and also in function prototype. These are also called formal arguments and are used to receive values for functions.\n\nFor example:\n\nvoid foo(int x); // prototype -- x is a formal parameter\nvoid foo(int x) // declarator -- x is a formal parameter\n{\nbody\n}\n\nb. Actual parameters\n\nActual parameters are those parameters which appear in function calls and are used to send data to formal parameters. These are also called actual arguments. Consider the following function call:\n\nfoo(6); // 6 is the argument passed to parameter x\nfoo(y+1); // the value of (y+1) is the argument passed to parameter x\n\nThe actual parameters can be fixed values or variables holding values or expressions resulting in some values.\n\nIn the function main, in the following example, rice, chicken and fruit are actual parameters when used to call calculate_bill. On the other hand, the corresponding variables in calculate_bill (namely diner1, diner2 and diner3, respectively) are formal parameters because they appear in the function definition and receive values passed in the function call.\n\nLet’s look at calculate_bill function in the following program:\n\n/* formal and actual parameters program */\n#include <stdio.h>\n#include<conio.h>\n#include <iostream.h>\nint calculate_bill (int, int, int);\nint main()\n{\nint bill;\nint rice = 25;\nint chicken = 32;\nint fruit = 27;\nbill = calculate_bill (rice, chicken, fruit);   // ← Actual Parameters\ncout<<\"The total bill comes to \"<<bill<< “Rs.”;\ngetch();\nreturn 0;\n}\nint calculate_bill (int diner1, int diner2, int diner3)   // ← Formal Parameters\n{\nint total;\ntotal = diner1 + diner2 + diner3;\nreturn total;\n}\n\nOutput of the Program\n\nThe total bill comes to 84 Rs.",
+   "urdu": "یہاں خودکار ویری ایبل Auto_Var اپنی قدریں کھو دیتا ہے جب کنٹرول فنکشن کے جسم سے باہر جاتا ہے، لیکن اسٹیٹک ویری ایبل Static_Var کنٹرول کے فنکشن سے باہر جانے پر بھی اپنی آخری قدر برقرار رکھتا ہے۔\n\n6.1.6 رسمی پیرامیٹرز اور اصل پیرامیٹرز\n\nفنکشن پروٹوٹائپس اور فنکشن کالز میں ویری ایبلز اور قدریں فنکشنز کی قوسین میں لکھی جاتی ہیں۔ یہ دو زمروں میں تقسیم ہیں؛ رسمی پیرامیٹرز اور اصل پیرامیٹرز۔\n\na. رسمی پیرامیٹرز\n\nرسمی پیرامیٹرز وہ پیرامیٹرز ہیں جو فنکشن ڈکلیریٹر/ہیڈر اور فنکشن پروٹوٹائپ میں بھی آتے ہیں۔ انھیں رسمی آرگیومنٹس بھی کہتے ہیں اور یہ فنکشنز کے لیے قدریں وصول کرنے کے لیے استعمال ہوتے ہیں۔\n\nمثال کے طور پر:\n\nvoid foo(int x); // prototype -- x is a formal parameter\nvoid foo(int x) // declarator -- x is a formal parameter\n{\nbody\n}\n\nb. اصل پیرامیٹرز\n\nاصل پیرامیٹرز وہ پیرامیٹرز ہیں جو فنکشن کالز میں آتے ہیں اور رسمی پیرامیٹرز کو ڈیٹا بھیجنے کے لیے استعمال ہوتے ہیں۔ انھیں اصل آرگیومنٹس بھی کہتے ہیں۔ درج ذیل فنکشن کال پر غور کریں:\n\nfoo(6); // 6 is the argument passed to parameter x\nfoo(y+1); // the value of (y+1) is the argument passed to parameter x\n\nاصل پیرامیٹرز مقررہ قدریں، قدریں رکھنے والے ویری ایبلز یا کسی قدر پر منتج ہونے والے ایکسپریشنز ہو سکتے ہیں۔\n\nدرج ذیل مثال میں فنکشن main میں rice، chicken اور fruit اصل پیرامیٹرز ہیں جب انھیں calculate_bill کال کرنے کے لیے استعمال کیا جائے۔ دوسری طرف calculate_bill میں متعلقہ ویری ایبلز (یعنی بالترتیب diner1، diner2 اور diner3) رسمی پیرامیٹرز ہیں کیونکہ یہ فنکشن کی تعریف میں آتے ہیں اور فنکشن کال میں پاس کی گئی قدریں وصول کرتے ہیں۔\n\nآئیے درج ذیل پروگرام میں calculate_bill فنکشن دیکھیں:\n\n/* formal and actual parameters program */\n#include <stdio.h>\n#include<conio.h>\n#include <iostream.h>\nint calculate_bill (int, int, int);\nint main()\n{\nint bill;\nint rice = 25;\nint chicken = 32;\nint fruit = 27;\nbill = calculate_bill (rice, chicken, fruit);   // ← Actual Parameters\ncout<<\"The total bill comes to \"<<bill<< “Rs.”;\ngetch();\nreturn 0;\n}\nint calculate_bill (int diner1, int diner2, int diner3)   // ← Formal Parameters\n{\nint total;\ntotal = diner1 + diner2 + diner3;\nreturn total;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe total bill comes to 84 Rs.",
+   "pashto": "دلته خپلکاره متغیر Auto_Var خپل ارزښتونه له لاسه ورکوي کله چې کنټرول د فنکشن له بدنې ووځي، خو ثابت متغیر Static_Var خپل وروستی ارزښت ساتي حتی که کنټرول له فنکشن ووځي.\n\n۶.۱.۶ رسمي پاراميټرونه او اصلي پاراميټرونه\n\nد فنکشن په نمونو او غوښتنو کې متغیرونه او ارزښتونه د فنکشنونو په قوسونو کې لیکل کېږي. دا په دوو ډلو وېشل کېږي؛ رسمي پاراميټرونه او اصلي پاراميټرونه.\n\na. رسمي پاراميټرونه\n\nرسمي پاراميټرونه هغه پاراميټرونه دي چې د فنکشن په اعلانوونکي/سرلیک او د فنکشن په نمونه کې هم راځي. دا رسمي دلیلونه هم بلل کېږي او د فنکشنونو لپاره د ارزښتونو ترلاسه کولو لپاره کارېږي.\n\nد بېلګې په توګه:\n\nvoid foo(int x); // prototype -- x is a formal parameter\nvoid foo(int x) // declarator -- x is a formal parameter\n{\nbody\n}\n\nb. اصلي پاراميټرونه\n\nاصلي پاراميټرونه هغه پاراميټرونه دي چې د فنکشن په غوښتنو کې راځي او رسمي پاراميټرونو ته د ډېټا لېږلو لپاره کارېږي. دا اصلي دلیلونه هم بلل کېږي. لاندې د فنکشن غوښتنې ته پام وکړئ:\n\nfoo(6); // 6 is the argument passed to parameter x\nfoo(y+1); // the value of (y+1) is the argument passed to parameter x\n\nاصلي پاراميټرونه کېدای شي ټاکلي ارزښتونه، ارزښت لرونکي متغیرونه یا داسې افادې وي چې یو ارزښت ورکوي.\n\nپه لاندې بېلګه کې د main په فنکشن کې rice، chicken او fruit اصلي پاراميټرونه دي کله چې د calculate_bill د غوښتلو لپاره وکارول شي. له بلې خوا په calculate_bill کې اړوند متغیرونه (یعنې په ترتیب سره diner1، diner2 او diner3) رسمي پاراميټرونه دي ځکه د فنکشن په تعریف کې راځي او د فنکشن په غوښتنه کې لېږدول شوي ارزښتونه ترلاسه کوي.\n\nراځئ په لاندې پروګرام کې calculate_bill فنکشن وګورو:\n\n/* formal and actual parameters program */\n#include <stdio.h>\n#include<conio.h>\n#include <iostream.h>\nint calculate_bill (int, int, int);\nint main()\n{\nint bill;\nint rice = 25;\nint chicken = 32;\nint fruit = 27;\nbill = calculate_bill (rice, chicken, fruit);   // ← Actual Parameters\ncout<<\"The total bill comes to \"<<bill<< “Rs.”;\ngetch();\nreturn 0;\n}\nint calculate_bill (int diner1, int diner2, int diner3)   // ← Formal Parameters\n{\nint total;\ntotal = diner1 + diner2 + diner3;\nreturn total;\n}\n\nد پروګرام وتنه\n\nThe total bill comes to 84 Rs.",
+   "theoryUrdu": "یہاں خودکار ویری ایبل Auto_Var اپنی قدریں کھو دیتا ہے جب کنٹرول فنکشن کے جسم سے باہر جاتا ہے، لیکن اسٹیٹک ویری ایبل Static_Var کنٹرول کے فنکشن سے باہر جانے پر بھی اپنی آخری قدر برقرار رکھتا ہے۔\n\n6.1.6 رسمی پیرامیٹرز اور اصل پیرامیٹرز\n\nفنکشن پروٹوٹائپس اور فنکشن کالز میں ویری ایبلز اور قدریں فنکشنز کی قوسین میں لکھی جاتی ہیں۔ یہ دو زمروں میں تقسیم ہیں؛ رسمی پیرامیٹرز اور اصل پیرامیٹرز۔\n\na. رسمی پیرامیٹرز\n\nرسمی پیرامیٹرز وہ پیرامیٹرز ہیں جو فنکشن ڈکلیریٹر/ہیڈر اور فنکشن پروٹوٹائپ میں بھی آتے ہیں۔ انھیں رسمی آرگیومنٹس بھی کہتے ہیں اور یہ فنکشنز کے لیے قدریں وصول کرنے کے لیے استعمال ہوتے ہیں۔\n\nمثال کے طور پر:\n\nvoid foo(int x); // prototype -- x is a formal parameter\nvoid foo(int x) // declarator -- x is a formal parameter\n{\nbody\n}\n\nb. اصل پیرامیٹرز\n\nاصل پیرامیٹرز وہ پیرامیٹرز ہیں جو فنکشن کالز میں آتے ہیں اور رسمی پیرامیٹرز کو ڈیٹا بھیجنے کے لیے استعمال ہوتے ہیں۔ انھیں اصل آرگیومنٹس بھی کہتے ہیں۔ درج ذیل فنکشن کال پر غور کریں:\n\nfoo(6); // 6 is the argument passed to parameter x\nfoo(y+1); // the value of (y+1) is the argument passed to parameter x\n\nاصل پیرامیٹرز مقررہ قدریں، قدریں رکھنے والے ویری ایبلز یا کسی قدر پر منتج ہونے والے ایکسپریشنز ہو سکتے ہیں۔\n\nدرج ذیل مثال میں فنکشن main میں rice، chicken اور fruit اصل پیرامیٹرز ہیں جب انھیں calculate_bill کال کرنے کے لیے استعمال کیا جائے۔ دوسری طرف calculate_bill میں متعلقہ ویری ایبلز (یعنی بالترتیب diner1، diner2 اور diner3) رسمی پیرامیٹرز ہیں کیونکہ یہ فنکشن کی تعریف میں آتے ہیں اور فنکشن کال میں پاس کی گئی قدریں وصول کرتے ہیں۔\n\nآئیے درج ذیل پروگرام میں calculate_bill فنکشن دیکھیں:\n\n/* formal and actual parameters program */\n#include <stdio.h>\n#include<conio.h>\n#include <iostream.h>\nint calculate_bill (int, int, int);\nint main()\n{\nint bill;\nint rice = 25;\nint chicken = 32;\nint fruit = 27;\nbill = calculate_bill (rice, chicken, fruit);   // ← Actual Parameters\ncout<<\"The total bill comes to \"<<bill<< “Rs.”;\ngetch();\nreturn 0;\n}\nint calculate_bill (int diner1, int diner2, int diner3)   // ← Formal Parameters\n{\nint total;\ntotal = diner1 + diner2 + diner3;\nreturn total;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe total bill comes to 84 Rs.",
+   "theoryPashto": "دلته خپلکاره متغیر Auto_Var خپل ارزښتونه له لاسه ورکوي کله چې کنټرول د فنکشن له بدنې ووځي، خو ثابت متغیر Static_Var خپل وروستی ارزښت ساتي حتی که کنټرول له فنکشن ووځي.\n\n۶.۱.۶ رسمي پاراميټرونه او اصلي پاراميټرونه\n\nد فنکشن په نمونو او غوښتنو کې متغیرونه او ارزښتونه د فنکشنونو په قوسونو کې لیکل کېږي. دا په دوو ډلو وېشل کېږي؛ رسمي پاراميټرونه او اصلي پاراميټرونه.\n\na. رسمي پاراميټرونه\n\nرسمي پاراميټرونه هغه پاراميټرونه دي چې د فنکشن په اعلانوونکي/سرلیک او د فنکشن په نمونه کې هم راځي. دا رسمي دلیلونه هم بلل کېږي او د فنکشنونو لپاره د ارزښتونو ترلاسه کولو لپاره کارېږي.\n\nد بېلګې په توګه:\n\nvoid foo(int x); // prototype -- x is a formal parameter\nvoid foo(int x) // declarator -- x is a formal parameter\n{\nbody\n}\n\nb. اصلي پاراميټرونه\n\nاصلي پاراميټرونه هغه پاراميټرونه دي چې د فنکشن په غوښتنو کې راځي او رسمي پاراميټرونو ته د ډېټا لېږلو لپاره کارېږي. دا اصلي دلیلونه هم بلل کېږي. لاندې د فنکشن غوښتنې ته پام وکړئ:\n\nfoo(6); // 6 is the argument passed to parameter x\nfoo(y+1); // the value of (y+1) is the argument passed to parameter x\n\nاصلي پاراميټرونه کېدای شي ټاکلي ارزښتونه، ارزښت لرونکي متغیرونه یا داسې افادې وي چې یو ارزښت ورکوي.\n\nپه لاندې بېلګه کې د main په فنکشن کې rice، chicken او fruit اصلي پاراميټرونه دي کله چې د calculate_bill د غوښتلو لپاره وکارول شي. له بلې خوا په calculate_bill کې اړوند متغیرونه (یعنې په ترتیب سره diner1، diner2 او diner3) رسمي پاراميټرونه دي ځکه د فنکشن په تعریف کې راځي او د فنکشن په غوښتنه کې لېږدول شوي ارزښتونه ترلاسه کوي.\n\nراځئ په لاندې پروګرام کې calculate_bill فنکشن وګورو:\n\n/* formal and actual parameters program */\n#include <stdio.h>\n#include<conio.h>\n#include <iostream.h>\nint calculate_bill (int, int, int);\nint main()\n{\nint bill;\nint rice = 25;\nint chicken = 32;\nint fruit = 27;\nbill = calculate_bill (rice, chicken, fruit);   // ← Actual Parameters\ncout<<\"The total bill comes to \"<<bill<< “Rs.”;\ngetch();\nreturn 0;\n}\nint calculate_bill (int diner1, int diner2, int diner3)   // ← Formal Parameters\n{\nint total;\ntotal = diner1 + diner2 + diner3;\nreturn total;\n}\n\nد پروګرام وتنه\n\nThe total bill comes to 84 Rs.",
+   "content": "<p>Here, the automatic variable Auto_Var losses its values when the control goes out of the function body but the static variable Static_Var keeps its last value even if the control goes out of the function.</p><p>6.1.6 Formal parameters and actual parameters</p><p>In function prototypes and function calls, variables and values are written in the parenthesis of the functions. These are divided into two categories; formal parameters and actual parameters.</p><p>a. Formal parameters</p><p>Formal parameters are those parameters which appear in function declarator/header and also in function prototype. These are also called formal arguments and are used to receive values for functions.</p><p>For example:</p><p>void foo(int x); // prototype -- x is a formal parameter\nvoid foo(int x) // declarator -- x is a formal parameter\n{\nbody\n}</p><p>b. Actual parameters</p><p>Actual parameters are those parameters which appear in function calls and are used to send data to formal parameters. These are also called actual arguments. Consider the following function call:</p><p>foo(6); // 6 is the argument passed to parameter x\nfoo(y+1); // the value of (y+1) is the argument passed to parameter x</p><p>The actual parameters can be fixed values or variables holding values or expressions resulting in some values.</p><p>In the function main, in the following example, rice, chicken and fruit are actual parameters when used to call calculate_bill. On the other hand, the corresponding variables in calculate_bill (namely diner1, diner2 and diner3, respectively) are formal parameters because they appear in the function definition and receive values passed in the function call.</p><p>Let’s look at calculate_bill function in the following program:</p><p>/* formal and actual parameters program */\n#include &lt;stdio.h&gt;\n#include&lt;conio.h&gt;\n#include &lt;iostream.h&gt;\nint calculate_bill (int, int, int);\nint main()\n{\nint bill;\nint rice = 25;\nint chicken = 32;\nint fruit = 27;\nbill = calculate_bill (rice, chicken, fruit);   // ← Actual Parameters\ncout&lt;&lt;&quot;The total bill comes to &quot;&lt;&lt;bill&lt;&lt; “Rs.”;\ngetch();\nreturn 0;\n}\nint calculate_bill (int diner1, int diner2, int diner3)   // ← Formal Parameters\n{\nint total;\ntotal = diner1 + diner2 + diner3;\nreturn total;\n}</p><p>Output of the Program</p><p>The total bill comes to 84 Rs.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 101,
+     "printedPages": [
+      190,
+      191,
+      192
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (8)",
+   "sourcePageLabel": "PDF 101 · p. 190–191–192",
+   "sourceNote": "The “Actual Parameters” and “Formal Parameters” callout boxes on p.191 are reproduced as end-of-line markers in the listing. The program ends on p.192 (PDF102) and is given whole with its output.",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf101",
+   "unit": 6,
+   "printedPage": 190,
+   "description": "p.190 “Auto_Var losses its values”; the cout uses curly quotes around “Rs.”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

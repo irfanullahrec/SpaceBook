@@ -1,0 +1,235 @@
+{
+ "pdfPage": 49,
+ "sections": [
+  {
+   "id": "cs12-u3-text-15",
+   "title": "Unit 3 text (15)",
+   "headingUrdu": "یونٹ 3 — متن (۱۵)",
+   "headingPashto": "۳ څپرکی — متن (۱۵)",
+   "paras": [
+    {
+     "text": "// \\n escape sequence program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"Welcome to \\nthe College \" <<endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "// \\n escape sequence program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"Welcome to \\nthe College \" <<endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "// \\n escape sequence program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"Welcome to \\nthe College \" <<endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Welcome to\nthe College",
+     "urdu": "Welcome to\nthe College",
+     "pashto": "Welcome to\nthe College",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Consider another program for escape sequence character “\\t”.",
+     "urdu": "ایسکیپ سیکوینس حرف ’’\\t‘‘ کے لیے ایک اور پروگرام پر غور کریں۔",
+     "pashto": "د تېښتې لړۍ توري \"\\t\" لپاره بل پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "// escape sequence \\t program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"First part\\tSecond part\";\ngetch();\nreturn 0;\n}",
+     "urdu": "// escape sequence \\t program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"First part\\tSecond part\";\ngetch();\nreturn 0;\n}",
+     "pashto": "// escape sequence \\t program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"First part\\tSecond part\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "First part      Second part",
+     "urdu": "First part      Second part",
+     "pashto": "First part      Second part",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "3.3.5 I/O handling functions",
+     "urdu": "3.3.5 ان پٹ/آؤٹ پٹ کے فنکشنز",
+     "pashto": "۳.۳.۵ د ننوتو/وتو فنکشنونه"
+    },
+    {
+     "text": "Most commonly used",
+     "urdu": "سب سے زیادہ استعمال ہونے والے",
+     "pashto": "تر ټولو ډېر کارېدونکي"
+    },
+    {
+     "text": "getchar() stands for get character and is used to get a single character from standard input device (keyboard). getchar() is defined in stdio.h header file. The general syntax for the use of getchar () function is:",
+     "urdu": "getchar() کا مطلب ’’گیٹ کریکٹر‘‘ ہے اور یہ معیاری ان پٹ آلے (کی بورڈ) سے ایک حرف حاصل کرنے کے لیے استعمال ہوتا ہے۔ getchar() stdio.h ہیڈر فائل میں متعین ہے۔ getchar() فنکشن کے استعمال کا عمومی طریقۂ تحریر یہ ہے:",
+     "pashto": "getchar() د \"توری ترلاسه کول\" معنا لري او له معیاري ننوتو وسیلې (کیبورډ) یو توری ترلاسه کولو ته کارېږي. getchar() په stdio.h سرلیک فایل کې تعریف شوی. د getchar() فنکشن د کارونې عمومي بڼه دا ده:"
+    },
+    {
+     "text": "int getchar ();",
+     "urdu": "int getchar ();",
+     "pashto": "int getchar ();",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This function gets no parameters.",
+     "urdu": "یہ فنکشن کوئی پیرامیٹر نہیں لیتا۔",
+     "pashto": "دا فنکشن هېڅ پارامېټر نه اخلي."
+    },
+    {
+     "text": "putchar() is a standard output function defined in stdio.h header file and is used to display a single character, received as an argument, on the screen. Its general syntax is:",
+     "urdu": "putchar() معیاری آؤٹ پٹ فنکشن ہے جو stdio.h ہیڈر فائل میں متعین ہے اور آرگیومنٹ کے طور پر ملنے والے ایک حرف کو اسکرین پر دکھانے کے لیے استعمال ہوتا ہے۔ اس کا عمومی طریقۂ تحریر یہ ہے:",
+     "pashto": "putchar() یو معیاري وتنې فنکشن دی چې په stdio.h سرلیک فایل کې تعریف شوی او د دلیل په توګه ترلاسه شوی یو توری پر پرده ښودلو ته کارېږي. عمومي بڼه یې دا ده:"
+    },
+    {
+     "text": "putchar (ch); // where ch is a char type variable holding a character constant",
+     "urdu": "putchar (ch); // where ch is a char type variable holding a character constant",
+     "pashto": "putchar (ch); // where ch is a char type variable holding a character constant",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This putchar() display the character constant stored in ‘ch’ on the screen. Consider the following example:",
+     "urdu": "یہ putchar() ‘ch’ میں محفوظ حرفی کانسٹنٹ کو اسکرین پر دکھاتا ہے۔ درج ذیل مثال پر غور کریں:",
+     "pashto": "دا putchar() په ‘ch’ کې ساتل شوی د توري ثابت پر پرده ښيي. لاندې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "// getchar() and putchar() example\n#include <conio.h>\n#include <stdio.h>\n#include<iostream.h>\nint main()\n{\nchar ch;\ncout<<\"Enter character for gender\\n\";\nch=getchar();\ncout<< \"You have entered: \";\nputchar (ch);\ngetch();\nreturn 0;\n}",
+     "urdu": "// getchar() and putchar() example\n#include <conio.h>\n#include <stdio.h>\n#include<iostream.h>\nint main()\n{\nchar ch;\ncout<<\"Enter character for gender\\n\";\nch=getchar();\ncout<< \"You have entered: \";\nputchar (ch);\ngetch();\nreturn 0;\n}",
+     "pashto": "// getchar() and putchar() example\n#include <conio.h>\n#include <stdio.h>\n#include<iostream.h>\nint main()\n{\nchar ch;\ncout<<\"Enter character for gender\\n\";\nch=getchar();\ncout<< \"You have entered: \";\nputchar (ch);\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "// \\n escape sequence program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"Welcome to \\nthe College \" <<endl;\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nWelcome to\nthe College\n\nConsider another program for escape sequence character “\\t”.\n\n// escape sequence \\t program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"First part\\tSecond part\";\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nFirst part      Second part\n\n3.3.5 I/O handling functions\n\nMost commonly used\n\ngetchar() stands for get character and is used to get a single character from standard input device (keyboard). getchar() is defined in stdio.h header file. The general syntax for the use of getchar () function is:\n\nint getchar ();\n\nThis function gets no parameters.\n\nputchar() is a standard output function defined in stdio.h header file and is used to display a single character, received as an argument, on the screen. Its general syntax is:\n\nputchar (ch); // where ch is a char type variable holding a character constant\n\nThis putchar() display the character constant stored in ‘ch’ on the screen. Consider the following example:\n\n// getchar() and putchar() example\n#include <conio.h>\n#include <stdio.h>\n#include<iostream.h>\nint main()\n{\nchar ch;\ncout<<\"Enter character for gender\\n\";\nch=getchar();\ncout<< \"You have entered: \";\nputchar (ch);\ngetch();\nreturn 0;\n}",
+   "urdu": "// \\n escape sequence program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"Welcome to \\nthe College \" <<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome to\nthe College\n\nایسکیپ سیکوینس حرف ’’\\t‘‘ کے لیے ایک اور پروگرام پر غور کریں۔\n\n// escape sequence \\t program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"First part\\tSecond part\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nFirst part      Second part\n\n3.3.5 ان پٹ/آؤٹ پٹ کے فنکشنز\n\nسب سے زیادہ استعمال ہونے والے\n\ngetchar() کا مطلب ’’گیٹ کریکٹر‘‘ ہے اور یہ معیاری ان پٹ آلے (کی بورڈ) سے ایک حرف حاصل کرنے کے لیے استعمال ہوتا ہے۔ getchar() stdio.h ہیڈر فائل میں متعین ہے۔ getchar() فنکشن کے استعمال کا عمومی طریقۂ تحریر یہ ہے:\n\nint getchar ();\n\nیہ فنکشن کوئی پیرامیٹر نہیں لیتا۔\n\nputchar() معیاری آؤٹ پٹ فنکشن ہے جو stdio.h ہیڈر فائل میں متعین ہے اور آرگیومنٹ کے طور پر ملنے والے ایک حرف کو اسکرین پر دکھانے کے لیے استعمال ہوتا ہے۔ اس کا عمومی طریقۂ تحریر یہ ہے:\n\nputchar (ch); // where ch is a char type variable holding a character constant\n\nیہ putchar() ‘ch’ میں محفوظ حرفی کانسٹنٹ کو اسکرین پر دکھاتا ہے۔ درج ذیل مثال پر غور کریں:\n\n// getchar() and putchar() example\n#include <conio.h>\n#include <stdio.h>\n#include<iostream.h>\nint main()\n{\nchar ch;\ncout<<\"Enter character for gender\\n\";\nch=getchar();\ncout<< \"You have entered: \";\nputchar (ch);\ngetch();\nreturn 0;\n}",
+   "pashto": "// \\n escape sequence program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"Welcome to \\nthe College \" <<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome to\nthe College\n\nد تېښتې لړۍ توري \"\\t\" لپاره بل پروګرام ته پام وکړئ.\n\n// escape sequence \\t program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"First part\\tSecond part\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nFirst part      Second part\n\n۳.۳.۵ د ننوتو/وتو فنکشنونه\n\nتر ټولو ډېر کارېدونکي\n\ngetchar() د \"توری ترلاسه کول\" معنا لري او له معیاري ننوتو وسیلې (کیبورډ) یو توری ترلاسه کولو ته کارېږي. getchar() په stdio.h سرلیک فایل کې تعریف شوی. د getchar() فنکشن د کارونې عمومي بڼه دا ده:\n\nint getchar ();\n\nدا فنکشن هېڅ پارامېټر نه اخلي.\n\nputchar() یو معیاري وتنې فنکشن دی چې په stdio.h سرلیک فایل کې تعریف شوی او د دلیل په توګه ترلاسه شوی یو توری پر پرده ښودلو ته کارېږي. عمومي بڼه یې دا ده:\n\nputchar (ch); // where ch is a char type variable holding a character constant\n\nدا putchar() په ‘ch’ کې ساتل شوی د توري ثابت پر پرده ښيي. لاندې بېلګې ته پام وکړئ:\n\n// getchar() and putchar() example\n#include <conio.h>\n#include <stdio.h>\n#include<iostream.h>\nint main()\n{\nchar ch;\ncout<<\"Enter character for gender\\n\";\nch=getchar();\ncout<< \"You have entered: \";\nputchar (ch);\ngetch();\nreturn 0;\n}",
+   "theoryUrdu": "// \\n escape sequence program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"Welcome to \\nthe College \" <<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nWelcome to\nthe College\n\nایسکیپ سیکوینس حرف ’’\\t‘‘ کے لیے ایک اور پروگرام پر غور کریں۔\n\n// escape sequence \\t program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"First part\\tSecond part\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nFirst part      Second part\n\n3.3.5 ان پٹ/آؤٹ پٹ کے فنکشنز\n\nسب سے زیادہ استعمال ہونے والے\n\ngetchar() کا مطلب ’’گیٹ کریکٹر‘‘ ہے اور یہ معیاری ان پٹ آلے (کی بورڈ) سے ایک حرف حاصل کرنے کے لیے استعمال ہوتا ہے۔ getchar() stdio.h ہیڈر فائل میں متعین ہے۔ getchar() فنکشن کے استعمال کا عمومی طریقۂ تحریر یہ ہے:\n\nint getchar ();\n\nیہ فنکشن کوئی پیرامیٹر نہیں لیتا۔\n\nputchar() معیاری آؤٹ پٹ فنکشن ہے جو stdio.h ہیڈر فائل میں متعین ہے اور آرگیومنٹ کے طور پر ملنے والے ایک حرف کو اسکرین پر دکھانے کے لیے استعمال ہوتا ہے۔ اس کا عمومی طریقۂ تحریر یہ ہے:\n\nputchar (ch); // where ch is a char type variable holding a character constant\n\nیہ putchar() ‘ch’ میں محفوظ حرفی کانسٹنٹ کو اسکرین پر دکھاتا ہے۔ درج ذیل مثال پر غور کریں:\n\n// getchar() and putchar() example\n#include <conio.h>\n#include <stdio.h>\n#include<iostream.h>\nint main()\n{\nchar ch;\ncout<<\"Enter character for gender\\n\";\nch=getchar();\ncout<< \"You have entered: \";\nputchar (ch);\ngetch();\nreturn 0;\n}",
+   "theoryPashto": "// \\n escape sequence program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"Welcome to \\nthe College \" <<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nWelcome to\nthe College\n\nد تېښتې لړۍ توري \"\\t\" لپاره بل پروګرام ته پام وکړئ.\n\n// escape sequence \\t program\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\ncout<< \"First part\\tSecond part\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nFirst part      Second part\n\n۳.۳.۵ د ننوتو/وتو فنکشنونه\n\nتر ټولو ډېر کارېدونکي\n\ngetchar() د \"توری ترلاسه کول\" معنا لري او له معیاري ننوتو وسیلې (کیبورډ) یو توری ترلاسه کولو ته کارېږي. getchar() په stdio.h سرلیک فایل کې تعریف شوی. د getchar() فنکشن د کارونې عمومي بڼه دا ده:\n\nint getchar ();\n\nدا فنکشن هېڅ پارامېټر نه اخلي.\n\nputchar() یو معیاري وتنې فنکشن دی چې په stdio.h سرلیک فایل کې تعریف شوی او د دلیل په توګه ترلاسه شوی یو توری پر پرده ښودلو ته کارېږي. عمومي بڼه یې دا ده:\n\nputchar (ch); // where ch is a char type variable holding a character constant\n\nدا putchar() په ‘ch’ کې ساتل شوی د توري ثابت پر پرده ښيي. لاندې بېلګې ته پام وکړئ:\n\n// getchar() and putchar() example\n#include <conio.h>\n#include <stdio.h>\n#include<iostream.h>\nint main()\n{\nchar ch;\ncout<<\"Enter character for gender\\n\";\nch=getchar();\ncout<< \"You have entered: \";\nputchar (ch);\ngetch();\nreturn 0;\n}",
+   "content": "<p>// \\n escape sequence program\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\ncout&lt;&lt; &quot;Welcome to \\nthe College &quot; &lt;&lt;endl;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>Welcome to\nthe College</p><p>Consider another program for escape sequence character “\\t”.</p><p>// escape sequence \\t program\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\ncout&lt;&lt; &quot;First part\\tSecond part&quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>First part      Second part</p><p>3.3.5 I/O handling functions</p><p>Most commonly used</p><p>getchar() stands for get character and is used to get a single character from standard input device (keyboard). getchar() is defined in stdio.h header file. The general syntax for the use of getchar () function is:</p><p>int getchar ();</p><p>This function gets no parameters.</p><p>putchar() is a standard output function defined in stdio.h header file and is used to display a single character, received as an argument, on the screen. Its general syntax is:</p><p>putchar (ch); // where ch is a char type variable holding a character constant</p><p>This putchar() display the character constant stored in ‘ch’ on the screen. Consider the following example:</p><p>// getchar() and putchar() example\n#include &lt;conio.h&gt;\n#include &lt;stdio.h&gt;\n#include&lt;iostream.h&gt;\nint main()\n{\nchar ch;\ncout&lt;&lt;&quot;Enter character for gender\\n&quot;;\nch=getchar();\ncout&lt;&lt; &quot;You have entered: &quot;;\nputchar (ch);\ngetch();\nreturn 0;\n}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "code",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 49,
+     "printedPages": [
+      86,
+      87,
+      88
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (15)",
+   "sourcePageLabel": "PDF 49 · p. 86–87–88",
+   "sourceNote": "The \\n program is the example announced at the foot of p.85. The getchar()/putchar() listing continues on p.88 (PDF50) and is given whole here. The \\t output shows a tab gap between the two words.",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf049",
+   "unit": 3,
+   "printedPage": 87,
+   "description": "p.87 prints “This putchar() display the character”; the putchar syntax comment “where ch is a char type variable holding a character constant” is part of the printed line. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

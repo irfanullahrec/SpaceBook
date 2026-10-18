@@ -1,0 +1,188 @@
+{
+ "pdfPage": 122,
+ "sections": [
+  {
+   "id": "cs12-u8-text-3",
+   "title": "Unit 8 text (3)",
+   "headingUrdu": "یونٹ 8 — متن (3)",
+   "headingPashto": "۸ څپرکی — متن (3)",
+   "paras": [
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nprivate:\nint X, Y;\npublic:\nvoid set_values (int a,int b)\n{\nX=a;\nY=b;\n}\nint area()\n{\ncout<< “area of the rectangle=\"<<(X*Y);\n}\n}; //End of class\nint main()\n{\nCRectangle R1; // Object creation\nR1.set_values(44,22);//call to set_values function\nR1.area(); // call to area function\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nprivate:\nint X, Y;\npublic:\nvoid set_values (int a,int b)\n{\nX=a;\nY=b;\n}\nint area()\n{\ncout<< “area of the rectangle=\"<<(X*Y);\n}\n}; //End of class\nint main()\n{\nCRectangle R1; // Object creation\nR1.set_values(44,22);//call to set_values function\nR1.area(); // call to area function\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nprivate:\nint X, Y;\npublic:\nvoid set_values (int a,int b)\n{\nX=a;\nY=b;\n}\nint area()\n{\ncout<< “area of the rectangle=\"<<(X*Y);\n}\n}; //End of class\nint main()\n{\nCRectangle R1; // Object creation\nR1.set_values(44,22);//call to set_values function\nR1.area(); // call to area function\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Area of the rectangle=968",
+     "urdu": "Area of the rectangle=968",
+     "pashto": "Area of the rectangle=968",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "8.1.2 Members of a class",
+     "urdu": "8.1.2 کلاس کے اراکین",
+     "pashto": "۸.۱.۲ د ټولګي غړي"
+    },
+    {
+     "text": "Class has two members; data members and member functions.",
+     "urdu": "کلاس کے دو اراکین ہیں؛ ڈیٹا ممبرز اور ممبر فنکشنز۔",
+     "pashto": "ټولګی دوه غړي لري؛ د ډېټا غړي او غړي فنکشنونه."
+    },
+    {
+     "text": "a. Data member",
+     "urdu": "a. ڈیٹا ممبر",
+     "pashto": "a. د ډېټا غړی"
+    },
+    {
+     "text": "The attributes of a class are called data members. Mostly, data members are declared under the private access specifier to make them private to the class in which they are used. Data members can also be used under public access specifier. For ech object of a class, a separate copy of the data members is created in memory.",
+     "urdu": "کلاس کی خصوصیات ڈیٹا ممبرز کہلاتی ہیں۔ زیادہ تر ڈیٹا ممبرز private ایکسس اسپیسیفائر کے تحت ڈکلیئر کیے جاتے ہیں تاکہ وہ اس کلاس کے لیے نجی رہیں جس میں استعمال ہوتے ہیں۔ ڈیٹا ممبرز public ایکسس اسپیسیفائر کے تحت بھی استعمال ہو سکتے ہیں۔ کلاس کے ہر آبجیکٹ کے لیے میموری میں ڈیٹا ممبرز کی الگ نقل بنتی ہے۔",
+     "pashto": "د ټولګي ځانګړنې د ډېټا غړي بلل کېږي. ډېری وخت د ډېټا غړي د private لاسرسي ټاکونکي لاندې اعلانېږي ترڅو د هغه ټولګي لپاره شخصي وي چې پکې کارېږي. د ډېټا غړي د public لاسرسي ټاکونکي لاندې هم کارېدای شي. د ټولګي د هر شي لپاره په حافظه کې د ډېټا غړو جلا کاپي جوړېږي."
+    },
+    {
+     "text": "b. Member function",
+     "urdu": "b. ممبر فنکشن",
+     "pashto": "b. غړی فنکشن"
+    },
+    {
+     "text": "The functions declared or defined inside the body of the class are called member functions. These member functions are usually written under the public access specifier to operate on the data members of the class. Member functions can also be written in the private area of the class but the practice is to write them in the public area.",
+     "urdu": "کلاس کے جسم کے اندر ڈکلیئر یا بیان کیے گئے فنکشنز ممبر فنکشنز کہلاتے ہیں۔ یہ ممبر فنکشنز عموماً کلاس کے ڈیٹا ممبرز پر عمل کرنے کے لیے public ایکسس اسپیسیفائر کے تحت لکھے جاتے ہیں۔ ممبر فنکشنز کلاس کے private حصے میں بھی لکھے جا سکتے ہیں لیکن رواج انھیں public حصے میں لکھنے کا ہے۔",
+     "pashto": "هغه فنکشنونه چې د ټولګي د بدنې دننه اعلان یا تعریف شي، غړي فنکشنونه بلل کېږي. دا غړي فنکشنونه عموماً د ټولګي پر ډېټا غړو د عملیې لپاره د public لاسرسي ټاکونکي لاندې لیکل کېږي. غړي فنکشنونه د ټولګي په private برخه کې هم لیکل کېدای شي خو دود دا دی چې په public برخه کې ولیکل شي."
+    },
+    {
+     "text": "// Example of a class with its members as public\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\npublic:\nint Month;\nint Day;\nint Year;\nvoid SetDate (int nMonth, int nDay, int nYear)\n{\nMonth = nMonth;\nDay = nDay;\nYear = nYear;\n}\nvoid ShowDate()\n{\ncout<<\"Month of birth:\"<<Month<<endl;\ncout<<\"Day of birth:\"<<Day<<endl;\ncout<<\"Year of birth:\"<<Year;\n}\n};\nint main()\n{\nDate d1; // Object creation\nd1.SetDate(01,01,2012);//call to SetDate function\nd1.ShowDate(); // call to ShowDate function\ngetch();\nreturn 0;\n}",
+     "urdu": "// Example of a class with its members as public\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\npublic:\nint Month;\nint Day;\nint Year;\nvoid SetDate (int nMonth, int nDay, int nYear)\n{\nMonth = nMonth;\nDay = nDay;\nYear = nYear;\n}\nvoid ShowDate()\n{\ncout<<\"Month of birth:\"<<Month<<endl;\ncout<<\"Day of birth:\"<<Day<<endl;\ncout<<\"Year of birth:\"<<Year;\n}\n};\nint main()\n{\nDate d1; // Object creation\nd1.SetDate(01,01,2012);//call to SetDate function\nd1.ShowDate(); // call to ShowDate function\ngetch();\nreturn 0;\n}",
+     "pashto": "// Example of a class with its members as public\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\npublic:\nint Month;\nint Day;\nint Year;\nvoid SetDate (int nMonth, int nDay, int nYear)\n{\nMonth = nMonth;\nDay = nDay;\nYear = nYear;\n}\nvoid ShowDate()\n{\ncout<<\"Month of birth:\"<<Month<<endl;\ncout<<\"Day of birth:\"<<Day<<endl;\ncout<<\"Year of birth:\"<<Year;\n}\n};\nint main()\n{\nDate d1; // Object creation\nd1.SetDate(01,01,2012);//call to SetDate function\nd1.ShowDate(); // call to ShowDate function\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Month of birth: 01\nDay of birth: 01\nYear of birth: 2012",
+     "urdu": "Month of birth: 01\nDay of birth: 01\nYear of birth: 2012",
+     "pashto": "Month of birth: 01\nDay of birth: 01\nYear of birth: 2012",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nprivate:\nint X, Y;\npublic:\nvoid set_values (int a,int b)\n{\nX=a;\nY=b;\n}\nint area()\n{\ncout<< “area of the rectangle=\"<<(X*Y);\n}\n}; //End of class\nint main()\n{\nCRectangle R1; // Object creation\nR1.set_values(44,22);//call to set_values function\nR1.area(); // call to area function\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nArea of the rectangle=968\n\n8.1.2 Members of a class\n\nClass has two members; data members and member functions.\n\na. Data member\n\nThe attributes of a class are called data members. Mostly, data members are declared under the private access specifier to make them private to the class in which they are used. Data members can also be used under public access specifier. For ech object of a class, a separate copy of the data members is created in memory.\n\nb. Member function\n\nThe functions declared or defined inside the body of the class are called member functions. These member functions are usually written under the public access specifier to operate on the data members of the class. Member functions can also be written in the private area of the class but the practice is to write them in the public area.\n\n// Example of a class with its members as public\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\npublic:\nint Month;\nint Day;\nint Year;\nvoid SetDate (int nMonth, int nDay, int nYear)\n{\nMonth = nMonth;\nDay = nDay;\nYear = nYear;\n}\nvoid ShowDate()\n{\ncout<<\"Month of birth:\"<<Month<<endl;\ncout<<\"Day of birth:\"<<Day<<endl;\ncout<<\"Year of birth:\"<<Year;\n}\n};\nint main()\n{\nDate d1; // Object creation\nd1.SetDate(01,01,2012);//call to SetDate function\nd1.ShowDate(); // call to ShowDate function\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nMonth of birth: 01\nDay of birth: 01\nYear of birth: 2012",
+   "urdu": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nprivate:\nint X, Y;\npublic:\nvoid set_values (int a,int b)\n{\nX=a;\nY=b;\n}\nint area()\n{\ncout<< “area of the rectangle=\"<<(X*Y);\n}\n}; //End of class\nint main()\n{\nCRectangle R1; // Object creation\nR1.set_values(44,22);//call to set_values function\nR1.area(); // call to area function\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nArea of the rectangle=968\n\n8.1.2 کلاس کے اراکین\n\nکلاس کے دو اراکین ہیں؛ ڈیٹا ممبرز اور ممبر فنکشنز۔\n\na. ڈیٹا ممبر\n\nکلاس کی خصوصیات ڈیٹا ممبرز کہلاتی ہیں۔ زیادہ تر ڈیٹا ممبرز private ایکسس اسپیسیفائر کے تحت ڈکلیئر کیے جاتے ہیں تاکہ وہ اس کلاس کے لیے نجی رہیں جس میں استعمال ہوتے ہیں۔ ڈیٹا ممبرز public ایکسس اسپیسیفائر کے تحت بھی استعمال ہو سکتے ہیں۔ کلاس کے ہر آبجیکٹ کے لیے میموری میں ڈیٹا ممبرز کی الگ نقل بنتی ہے۔\n\nb. ممبر فنکشن\n\nکلاس کے جسم کے اندر ڈکلیئر یا بیان کیے گئے فنکشنز ممبر فنکشنز کہلاتے ہیں۔ یہ ممبر فنکشنز عموماً کلاس کے ڈیٹا ممبرز پر عمل کرنے کے لیے public ایکسس اسپیسیفائر کے تحت لکھے جاتے ہیں۔ ممبر فنکشنز کلاس کے private حصے میں بھی لکھے جا سکتے ہیں لیکن رواج انھیں public حصے میں لکھنے کا ہے۔\n\n// Example of a class with its members as public\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\npublic:\nint Month;\nint Day;\nint Year;\nvoid SetDate (int nMonth, int nDay, int nYear)\n{\nMonth = nMonth;\nDay = nDay;\nYear = nYear;\n}\nvoid ShowDate()\n{\ncout<<\"Month of birth:\"<<Month<<endl;\ncout<<\"Day of birth:\"<<Day<<endl;\ncout<<\"Year of birth:\"<<Year;\n}\n};\nint main()\n{\nDate d1; // Object creation\nd1.SetDate(01,01,2012);//call to SetDate function\nd1.ShowDate(); // call to ShowDate function\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nMonth of birth: 01\nDay of birth: 01\nYear of birth: 2012",
+   "pashto": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nprivate:\nint X, Y;\npublic:\nvoid set_values (int a,int b)\n{\nX=a;\nY=b;\n}\nint area()\n{\ncout<< “area of the rectangle=\"<<(X*Y);\n}\n}; //End of class\nint main()\n{\nCRectangle R1; // Object creation\nR1.set_values(44,22);//call to set_values function\nR1.area(); // call to area function\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nArea of the rectangle=968\n\n۸.۱.۲ د ټولګي غړي\n\nټولګی دوه غړي لري؛ د ډېټا غړي او غړي فنکشنونه.\n\na. د ډېټا غړی\n\nد ټولګي ځانګړنې د ډېټا غړي بلل کېږي. ډېری وخت د ډېټا غړي د private لاسرسي ټاکونکي لاندې اعلانېږي ترڅو د هغه ټولګي لپاره شخصي وي چې پکې کارېږي. د ډېټا غړي د public لاسرسي ټاکونکي لاندې هم کارېدای شي. د ټولګي د هر شي لپاره په حافظه کې د ډېټا غړو جلا کاپي جوړېږي.\n\nb. غړی فنکشن\n\nهغه فنکشنونه چې د ټولګي د بدنې دننه اعلان یا تعریف شي، غړي فنکشنونه بلل کېږي. دا غړي فنکشنونه عموماً د ټولګي پر ډېټا غړو د عملیې لپاره د public لاسرسي ټاکونکي لاندې لیکل کېږي. غړي فنکشنونه د ټولګي په private برخه کې هم لیکل کېدای شي خو دود دا دی چې په public برخه کې ولیکل شي.\n\n// Example of a class with its members as public\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\npublic:\nint Month;\nint Day;\nint Year;\nvoid SetDate (int nMonth, int nDay, int nYear)\n{\nMonth = nMonth;\nDay = nDay;\nYear = nYear;\n}\nvoid ShowDate()\n{\ncout<<\"Month of birth:\"<<Month<<endl;\ncout<<\"Day of birth:\"<<Day<<endl;\ncout<<\"Year of birth:\"<<Year;\n}\n};\nint main()\n{\nDate d1; // Object creation\nd1.SetDate(01,01,2012);//call to SetDate function\nd1.ShowDate(); // call to ShowDate function\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nMonth of birth: 01\nDay of birth: 01\nYear of birth: 2012",
+   "theoryUrdu": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nprivate:\nint X, Y;\npublic:\nvoid set_values (int a,int b)\n{\nX=a;\nY=b;\n}\nint area()\n{\ncout<< “area of the rectangle=\"<<(X*Y);\n}\n}; //End of class\nint main()\n{\nCRectangle R1; // Object creation\nR1.set_values(44,22);//call to set_values function\nR1.area(); // call to area function\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nArea of the rectangle=968\n\n8.1.2 کلاس کے اراکین\n\nکلاس کے دو اراکین ہیں؛ ڈیٹا ممبرز اور ممبر فنکشنز۔\n\na. ڈیٹا ممبر\n\nکلاس کی خصوصیات ڈیٹا ممبرز کہلاتی ہیں۔ زیادہ تر ڈیٹا ممبرز private ایکسس اسپیسیفائر کے تحت ڈکلیئر کیے جاتے ہیں تاکہ وہ اس کلاس کے لیے نجی رہیں جس میں استعمال ہوتے ہیں۔ ڈیٹا ممبرز public ایکسس اسپیسیفائر کے تحت بھی استعمال ہو سکتے ہیں۔ کلاس کے ہر آبجیکٹ کے لیے میموری میں ڈیٹا ممبرز کی الگ نقل بنتی ہے۔\n\nb. ممبر فنکشن\n\nکلاس کے جسم کے اندر ڈکلیئر یا بیان کیے گئے فنکشنز ممبر فنکشنز کہلاتے ہیں۔ یہ ممبر فنکشنز عموماً کلاس کے ڈیٹا ممبرز پر عمل کرنے کے لیے public ایکسس اسپیسیفائر کے تحت لکھے جاتے ہیں۔ ممبر فنکشنز کلاس کے private حصے میں بھی لکھے جا سکتے ہیں لیکن رواج انھیں public حصے میں لکھنے کا ہے۔\n\n// Example of a class with its members as public\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\npublic:\nint Month;\nint Day;\nint Year;\nvoid SetDate (int nMonth, int nDay, int nYear)\n{\nMonth = nMonth;\nDay = nDay;\nYear = nYear;\n}\nvoid ShowDate()\n{\ncout<<\"Month of birth:\"<<Month<<endl;\ncout<<\"Day of birth:\"<<Day<<endl;\ncout<<\"Year of birth:\"<<Year;\n}\n};\nint main()\n{\nDate d1; // Object creation\nd1.SetDate(01,01,2012);//call to SetDate function\nd1.ShowDate(); // call to ShowDate function\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nMonth of birth: 01\nDay of birth: 01\nYear of birth: 2012",
+   "theoryPashto": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nprivate:\nint X, Y;\npublic:\nvoid set_values (int a,int b)\n{\nX=a;\nY=b;\n}\nint area()\n{\ncout<< “area of the rectangle=\"<<(X*Y);\n}\n}; //End of class\nint main()\n{\nCRectangle R1; // Object creation\nR1.set_values(44,22);//call to set_values function\nR1.area(); // call to area function\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nArea of the rectangle=968\n\n۸.۱.۲ د ټولګي غړي\n\nټولګی دوه غړي لري؛ د ډېټا غړي او غړي فنکشنونه.\n\na. د ډېټا غړی\n\nد ټولګي ځانګړنې د ډېټا غړي بلل کېږي. ډېری وخت د ډېټا غړي د private لاسرسي ټاکونکي لاندې اعلانېږي ترڅو د هغه ټولګي لپاره شخصي وي چې پکې کارېږي. د ډېټا غړي د public لاسرسي ټاکونکي لاندې هم کارېدای شي. د ټولګي د هر شي لپاره په حافظه کې د ډېټا غړو جلا کاپي جوړېږي.\n\nb. غړی فنکشن\n\nهغه فنکشنونه چې د ټولګي د بدنې دننه اعلان یا تعریف شي، غړي فنکشنونه بلل کېږي. دا غړي فنکشنونه عموماً د ټولګي پر ډېټا غړو د عملیې لپاره د public لاسرسي ټاکونکي لاندې لیکل کېږي. غړي فنکشنونه د ټولګي په private برخه کې هم لیکل کېدای شي خو دود دا دی چې په public برخه کې ولیکل شي.\n\n// Example of a class with its members as public\n#include<iostream.h>\n#include<conio.h>\nclass Date\n{\npublic:\nint Month;\nint Day;\nint Year;\nvoid SetDate (int nMonth, int nDay, int nYear)\n{\nMonth = nMonth;\nDay = nDay;\nYear = nYear;\n}\nvoid ShowDate()\n{\ncout<<\"Month of birth:\"<<Month<<endl;\ncout<<\"Day of birth:\"<<Day<<endl;\ncout<<\"Year of birth:\"<<Year;\n}\n};\nint main()\n{\nDate d1; // Object creation\nd1.SetDate(01,01,2012);//call to SetDate function\nd1.ShowDate(); // call to ShowDate function\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nMonth of birth: 01\nDay of birth: 01\nYear of birth: 2012",
+   "content": "<p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nclass CRectangle\n{\nprivate:\nint X, Y;\npublic:\nvoid set_values (int a,int b)\n{\nX=a;\nY=b;\n}\nint area()\n{\ncout&lt;&lt; “area of the rectangle=&quot;&lt;&lt;(X*Y);\n}\n}; //End of class\nint main()\n{\nCRectangle R1; // Object creation\nR1.set_values(44,22);//call to set_values function\nR1.area(); // call to area function\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Area of the rectangle=968</p><p>8.1.2 Members of a class</p><p>Class has two members; data members and member functions.</p><p>a. Data member</p><p>The attributes of a class are called data members. Mostly, data members are declared under the private access specifier to make them private to the class in which they are used. Data members can also be used under public access specifier. For ech object of a class, a separate copy of the data members is created in memory.</p><p>b. Member function</p><p>The functions declared or defined inside the body of the class are called member functions. These member functions are usually written under the public access specifier to operate on the data members of the class. Member functions can also be written in the private area of the class but the practice is to write them in the public area.</p><p>// Example of a class with its members as public\n#include&lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nclass Date\n{\npublic:\nint Month;\nint Day;\nint Year;\nvoid SetDate (int nMonth, int nDay, int nYear)\n{\nMonth = nMonth;\nDay = nDay;\nYear = nYear;\n}\nvoid ShowDate()\n{\ncout&lt;&lt;&quot;Month of birth:&quot;&lt;&lt;Month&lt;&lt;endl;\ncout&lt;&lt;&quot;Day of birth:&quot;&lt;&lt;Day&lt;&lt;endl;\ncout&lt;&lt;&quot;Year of birth:&quot;&lt;&lt;Year;\n}\n};\nint main()\n{\nDate d1; // Object creation\nd1.SetDate(01,01,2012);//call to SetDate function\nd1.ShowDate(); // call to ShowDate function\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Month of birth: 01\nDay of birth: 01\nYear of birth: 2012</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "code",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 122,
+     "printedPages": [
+      232,
+      233,
+      234
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (3)",
+   "sourcePageLabel": "PDF 122 · p. 232–233–234",
+   "sourceNote": "The Date program begins on p.233 and ends on p.234 (PDF123); it is given whole with its output.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf122",
+   "unit": 8,
+   "printedPage": 232,
+   "description": "area() is declared int but returns nothing; the program prints “area of the rectangle=” while the output shows “Area of the rectangle=968”; p.233 “For ech object”; the Date output shows “01” although the program would print 1. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

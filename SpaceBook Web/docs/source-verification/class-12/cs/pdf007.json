@@ -1,0 +1,217 @@
+{
+ "pdfPage": 7,
+ "sections": [
+  {
+   "id": "cs12-u1-text-1",
+   "title": "Unit 1 text (1)",
+   "headingUrdu": "یونٹ 1 — متن (۱)",
+   "headingPashto": "۱ څپرکی — متن (۱)",
+   "paras": [
+    {
+     "text": "1.1 INTRODUCTION",
+     "urdu": "1.1 تعارف",
+     "pashto": "۱.۱ پېژندنه"
+    },
+    {
+     "text": "This unit is focused on introduction to Operating System and its functions and services. It also describes that how an operating system is used to execute processes. At the end, a differentiation is made between thread and process, multithreading, multitasking and multiprogramming.",
+     "urdu": "یہ یونٹ آپریٹنگ سسٹم کے تعارف اور اس کے افعال اور خدمات پر مرکوز ہے۔ یہ بھی بیان کرتا ہے کہ آپریٹنگ سسٹم پراسیسز کو چلانے کے لیے کیسے استعمال ہوتا ہے۔ آخر میں تھریڈ اور پراسیس، ملٹی تھریڈنگ، ملٹی ٹاسکنگ اور ملٹی پروگرامنگ کے درمیان فرق کیا گیا ہے۔",
+     "pashto": "دا څپرکی د عملیاتي سیسټم پر پېژندنې او د هغه پر دندو او خدمتونو تمرکز لري. دا هم بیانوي چې عملیاتي سیسټم د پروسو د چلولو لپاره څنګه کارول کېږي. په پای کې د تار (thread) او پروسې، څو-تاریز، څو-دندیز او څو-پروګرامي کار ترمنځ توپیر شوی."
+    },
+    {
+     "text": "Operating System is an important component of a computer system and has the same relation with computer hardware as human soul has with human body. As human body is useless without human soul, similarly, a computer is useless without an operating system.",
+     "urdu": "آپریٹنگ سسٹم کمپیوٹر سسٹم کا ایک اہم جز ہے اور کمپیوٹر ہارڈویئر کے ساتھ اس کا وہی تعلق ہے جو انسانی روح کا انسانی جسم کے ساتھ ہے۔ جس طرح انسانی جسم روح کے بغیر بے کار ہے، اسی طرح کمپیوٹر آپریٹنگ سسٹم کے بغیر بے کار ہے۔",
+     "pashto": "عملیاتي سیسټم د کمپیوټري سیسټم یوه مهمه برخه ده او له کمپیوټري هارډویر سره یې هماغه اړیکه ده چې انساني روح یې له انساني بدن سره لري. لکه څنګه چې انساني بدن له روح پرته بې‌ګټې دی، همداسې کمپیوټر له عملیاتي سیسټم پرته بې‌ګټې دی."
+    },
+    {
+     "text": "1.1.1 An Operating System",
+     "urdu": "1.1.1 آپریٹنگ سسٹم",
+     "pashto": "۱.۱.۱ عملیاتي سیسټم"
+    },
+    {
+     "text": "An operating System (OS) is an intermediary between users and computer hardware. It provides users an environment in which a user can execute programs conveniently and efficiently. In technical terms, it is a software which manages hardware. An operating System controls the allocation of resources and services such as memory, processors, devices and information.",
+     "urdu": "آپریٹنگ سسٹم (OS) صارفین اور کمپیوٹر ہارڈویئر کے درمیان ایک واسطہ ہے۔ یہ صارفین کو ایسا ماحول فراہم کرتا ہے جس میں صارف آسانی اور مؤثر طریقے سے پروگرام چلا سکتا ہے۔ تکنیکی اصطلاح میں یہ ایک سافٹ ویئر ہے جو ہارڈویئر کا انتظام کرتا ہے۔ آپریٹنگ سسٹم وسائل اور خدمات مثلاً میموری، پروسیسرز، آلات اور معلومات کی تقسیم کو کنٹرول کرتا ہے۔",
+     "pashto": "عملیاتي سیسټم (OS) د کاروونکو او کمپیوټري هارډویر ترمنځ منځګړی دی. کاروونکو ته داسې چاپېریال برابروي چې پکې کاروونکی پروګرامونه په اسانۍ او اغېزمن ډول چلولی شي. په تخنیکي اصطلاح دا یو سافټویر دی چې هارډویر اداره کوي. عملیاتي سیسټم د سرچینو او خدمتونو لکه حافظې، پروسېسرونو، وسایلو او معلوماتو وېش کنټرولوي."
+    },
+    {
+     "text": "“An operating system is a program that acts as an interface between the user and the computer hardware and controls the execution of all kinds of programs.”",
+     "urdu": "’’آپریٹنگ سسٹم ایک ایسا پروگرام ہے جو صارف اور کمپیوٹر ہارڈویئر کے درمیان انٹرفیس کا کام کرتا ہے اور ہر قسم کے پروگراموں کے چلنے کو کنٹرول کرتا ہے۔‘‘",
+     "pashto": "\"عملیاتي سیسټم داسې پروګرام دی چې د کاروونکي او کمپیوټري هارډویر ترمنځ د منځګړي کار کوي او د هر ډول پروګرامونو چلېدل کنټرولوي.\""
+    },
+    {
+     "text": "Some commonly used operating systems that are used for personal computers are: Linux, Mac OS, Microsoft Windows XP, Microsoft Windows Vista, Windows 7 and UNIX.",
+     "urdu": "ذاتی کمپیوٹرز کے لیے عام استعمال ہونے والے کچھ آپریٹنگ سسٹم یہ ہیں: Linux، Mac OS، Microsoft Windows XP، Microsoft Windows Vista، Windows 7 اور UNIX۔",
+     "pashto": "د شخصي کمپیوټرونو لپاره ځینې عام کارېدونکي عملیاتي سیسټمونه دا دي: Linux، Mac OS، Microsoft Windows XP، Microsoft Windows Vista، Windows 7 او UNIX."
+    },
+    {
+     "text": "A computer without an operating system is just an empty dump of metal. To run application programs on a computer, it must have an operating system installed on it. Operating systems perform basic operations, such as getting input from the input devices, transferring data from main memory to the processor for processing and then sending output to the output devices. It also keeps track of files and directories on the hard disk, and controls peripheral devices.",
+     "urdu": "آپریٹنگ سسٹم کے بغیر کمپیوٹر محض دھات کا ایک خالی ڈھیر ہے۔ کمپیوٹر پر ایپلیکیشن پروگرام چلانے کے لیے اس پر آپریٹنگ سسٹم انسٹال ہونا ضروری ہے۔ آپریٹنگ سسٹم بنیادی کام انجام دیتے ہیں، جیسے ان پٹ آلات سے ان پٹ لینا، ڈیٹا کو پراسیسنگ کے لیے مین میموری سے پروسیسر تک منتقل کرنا اور پھر آؤٹ پٹ کو آؤٹ پٹ آلات تک بھیجنا۔ یہ ہارڈ ڈسک پر فائلوں اور ڈائریکٹریز کا ریکارڈ بھی رکھتا ہے اور بیرونی آلات کو کنٹرول کرتا ہے۔",
+     "pashto": "له عملیاتي سیسټم پرته کمپیوټر یوازې د فلز یو تش ډېری دی. په کمپیوټر د کاريال پروګرامونو د چلولو لپاره باید عملیاتي سیسټم پرې نصب وي. عملیاتي سیسټمونه بنسټیزې چارې ترسره کوي، لکه له ننوتو وسایلو ننوتنه اخیستل، د پروسس لپاره له اصلي حافظې پروسېسر ته د ډېټا لېږدول او بیا وتو وسایلو ته د وتنې لېږل. دا په هارډ ډیسک کې د فایلونو او لارښودونو (directories) ریکارډ هم ساتي او بهرني وسایل کنټرولوي."
+    },
+    {
+     "text": "Consider Figure 1.1 which shows that operating system is an interface between users and computer hardware.",
+     "urdu": "شکل 1.1 پر غور کیجیے جو ظاہر کرتی ہے کہ آپریٹنگ سسٹم صارفین اور کمپیوٹر ہارڈویئر کے درمیان ایک انٹرفیس ہے۔",
+     "pashto": "۱.۱ شکل ته پام وکړئ چې ښيي عملیاتي سیسټم د کاروونکو او کمپیوټري هارډویر ترمنځ منځګړی دی."
+    },
+    {
+     "text": "Operating system operates on top of hardware and acts as a virtual machine that hides the hardware level complexities from the users and provides them a convenient way of using the system.",
+     "urdu": "آپریٹنگ سسٹم ہارڈویئر کے اوپر کام کرتا ہے اور ایک ورچوئل مشین کی طرح کام کرتا ہے جو ہارڈویئر کی سطح کی پیچیدگیوں کو صارفین سے چھپاتا ہے اور انھیں سسٹم استعمال کرنے کا آسان طریقہ فراہم کرتا ہے۔",
+     "pashto": "عملیاتي سیسټم د هارډویر پر سر کار کوي او د یوه مجازي ماشین په څېر عمل کوي چې د هارډویر د کچې پېچلتیاوې له کاروونکو پټوي او هغوی ته د سیسټم د کارولو اسانه لاره برابروي."
+    },
+    {
+     "text": "1.1.2 Commonly used operating systems",
+     "urdu": "1.1.2 عام استعمال ہونے والے آپریٹنگ سسٹم",
+     "pashto": "۱.۱.۲ عام کارېدونکي عملیاتي سیسټمونه"
+    },
+    {
+     "text": "The development of operating system has started since 1950’s and different types of operating systems have been developed so far by different companies. The most commonly used operating systems are: DOS, Windows, UNIX and Macintosh.",
+     "urdu": "آپریٹنگ سسٹم کی تیاری 1950ء کی دہائی سے شروع ہوئی اور اب تک مختلف کمپنیوں نے مختلف اقسام کے آپریٹنگ سسٹم تیار کیے ہیں۔ سب سے زیادہ استعمال ہونے والے آپریٹنگ سسٹم یہ ہیں: DOS، Windows، UNIX اور Macintosh۔",
+     "pashto": "د عملیاتي سیسټم جوړول له ۱۹۵۰مو کلونو پیل شوي او تر اوسه بېلابېلو شرکتونو بېلابېل ډوله عملیاتي سیسټمونه جوړ کړي. تر ټولو ډېر کارېدونکي عملیاتي سیسټمونه دا دي: DOS، Windows، UNIX او Macintosh."
+    },
+    {
+     "text": "a. DOS",
+     "urdu": "a. ڈاس (DOS)",
+     "pashto": "a. DOS"
+    },
+    {
+     "text": "DOS is the abbreviation for Disk Operating System which was the first operating system used for personal computers.",
+     "urdu": "DOS ڈسک آپریٹنگ سسٹم کا مخفف ہے جو ذاتی کمپیوٹرز کے لیے استعمال ہونے والا پہلا آپریٹنگ سسٹم تھا۔",
+     "pashto": "DOS د Disk Operating System لنډیز دی چې د شخصي کمپیوټرونو لپاره لومړنی کارېدونکی عملیاتي سیسټم و."
+    }
+   ],
+   "theory": "1.1 INTRODUCTION\n\nThis unit is focused on introduction to Operating System and its functions and services. It also describes that how an operating system is used to execute processes. At the end, a differentiation is made between thread and process, multithreading, multitasking and multiprogramming.\n\nOperating System is an important component of a computer system and has the same relation with computer hardware as human soul has with human body. As human body is useless without human soul, similarly, a computer is useless without an operating system.\n\n1.1.1 An Operating System\n\nAn operating System (OS) is an intermediary between users and computer hardware. It provides users an environment in which a user can execute programs conveniently and efficiently. In technical terms, it is a software which manages hardware. An operating System controls the allocation of resources and services such as memory, processors, devices and information.\n\n“An operating system is a program that acts as an interface between the user and the computer hardware and controls the execution of all kinds of programs.”\n\nSome commonly used operating systems that are used for personal computers are: Linux, Mac OS, Microsoft Windows XP, Microsoft Windows Vista, Windows 7 and UNIX.\n\nA computer without an operating system is just an empty dump of metal. To run application programs on a computer, it must have an operating system installed on it. Operating systems perform basic operations, such as getting input from the input devices, transferring data from main memory to the processor for processing and then sending output to the output devices. It also keeps track of files and directories on the hard disk, and controls peripheral devices.\n\nConsider Figure 1.1 which shows that operating system is an interface between users and computer hardware.\n\nOperating system operates on top of hardware and acts as a virtual machine that hides the hardware level complexities from the users and provides them a convenient way of using the system.\n\n1.1.2 Commonly used operating systems\n\nThe development of operating system has started since 1950’s and different types of operating systems have been developed so far by different companies. The most commonly used operating systems are: DOS, Windows, UNIX and Macintosh.\n\na. DOS\n\nDOS is the abbreviation for Disk Operating System which was the first operating system used for personal computers.",
+   "urdu": "1.1 تعارف\n\nیہ یونٹ آپریٹنگ سسٹم کے تعارف اور اس کے افعال اور خدمات پر مرکوز ہے۔ یہ بھی بیان کرتا ہے کہ آپریٹنگ سسٹم پراسیسز کو چلانے کے لیے کیسے استعمال ہوتا ہے۔ آخر میں تھریڈ اور پراسیس، ملٹی تھریڈنگ، ملٹی ٹاسکنگ اور ملٹی پروگرامنگ کے درمیان فرق کیا گیا ہے۔\n\nآپریٹنگ سسٹم کمپیوٹر سسٹم کا ایک اہم جز ہے اور کمپیوٹر ہارڈویئر کے ساتھ اس کا وہی تعلق ہے جو انسانی روح کا انسانی جسم کے ساتھ ہے۔ جس طرح انسانی جسم روح کے بغیر بے کار ہے، اسی طرح کمپیوٹر آپریٹنگ سسٹم کے بغیر بے کار ہے۔\n\n1.1.1 آپریٹنگ سسٹم\n\nآپریٹنگ سسٹم (OS) صارفین اور کمپیوٹر ہارڈویئر کے درمیان ایک واسطہ ہے۔ یہ صارفین کو ایسا ماحول فراہم کرتا ہے جس میں صارف آسانی اور مؤثر طریقے سے پروگرام چلا سکتا ہے۔ تکنیکی اصطلاح میں یہ ایک سافٹ ویئر ہے جو ہارڈویئر کا انتظام کرتا ہے۔ آپریٹنگ سسٹم وسائل اور خدمات مثلاً میموری، پروسیسرز، آلات اور معلومات کی تقسیم کو کنٹرول کرتا ہے۔\n\n’’آپریٹنگ سسٹم ایک ایسا پروگرام ہے جو صارف اور کمپیوٹر ہارڈویئر کے درمیان انٹرفیس کا کام کرتا ہے اور ہر قسم کے پروگراموں کے چلنے کو کنٹرول کرتا ہے۔‘‘\n\nذاتی کمپیوٹرز کے لیے عام استعمال ہونے والے کچھ آپریٹنگ سسٹم یہ ہیں: Linux، Mac OS، Microsoft Windows XP، Microsoft Windows Vista، Windows 7 اور UNIX۔\n\nآپریٹنگ سسٹم کے بغیر کمپیوٹر محض دھات کا ایک خالی ڈھیر ہے۔ کمپیوٹر پر ایپلیکیشن پروگرام چلانے کے لیے اس پر آپریٹنگ سسٹم انسٹال ہونا ضروری ہے۔ آپریٹنگ سسٹم بنیادی کام انجام دیتے ہیں، جیسے ان پٹ آلات سے ان پٹ لینا، ڈیٹا کو پراسیسنگ کے لیے مین میموری سے پروسیسر تک منتقل کرنا اور پھر آؤٹ پٹ کو آؤٹ پٹ آلات تک بھیجنا۔ یہ ہارڈ ڈسک پر فائلوں اور ڈائریکٹریز کا ریکارڈ بھی رکھتا ہے اور بیرونی آلات کو کنٹرول کرتا ہے۔\n\nشکل 1.1 پر غور کیجیے جو ظاہر کرتی ہے کہ آپریٹنگ سسٹم صارفین اور کمپیوٹر ہارڈویئر کے درمیان ایک انٹرفیس ہے۔\n\nآپریٹنگ سسٹم ہارڈویئر کے اوپر کام کرتا ہے اور ایک ورچوئل مشین کی طرح کام کرتا ہے جو ہارڈویئر کی سطح کی پیچیدگیوں کو صارفین سے چھپاتا ہے اور انھیں سسٹم استعمال کرنے کا آسان طریقہ فراہم کرتا ہے۔\n\n1.1.2 عام استعمال ہونے والے آپریٹنگ سسٹم\n\nآپریٹنگ سسٹم کی تیاری 1950ء کی دہائی سے شروع ہوئی اور اب تک مختلف کمپنیوں نے مختلف اقسام کے آپریٹنگ سسٹم تیار کیے ہیں۔ سب سے زیادہ استعمال ہونے والے آپریٹنگ سسٹم یہ ہیں: DOS، Windows، UNIX اور Macintosh۔\n\na. ڈاس (DOS)\n\nDOS ڈسک آپریٹنگ سسٹم کا مخفف ہے جو ذاتی کمپیوٹرز کے لیے استعمال ہونے والا پہلا آپریٹنگ سسٹم تھا۔",
+   "pashto": "۱.۱ پېژندنه\n\nدا څپرکی د عملیاتي سیسټم پر پېژندنې او د هغه پر دندو او خدمتونو تمرکز لري. دا هم بیانوي چې عملیاتي سیسټم د پروسو د چلولو لپاره څنګه کارول کېږي. په پای کې د تار (thread) او پروسې، څو-تاریز، څو-دندیز او څو-پروګرامي کار ترمنځ توپیر شوی.\n\nعملیاتي سیسټم د کمپیوټري سیسټم یوه مهمه برخه ده او له کمپیوټري هارډویر سره یې هماغه اړیکه ده چې انساني روح یې له انساني بدن سره لري. لکه څنګه چې انساني بدن له روح پرته بې‌ګټې دی، همداسې کمپیوټر له عملیاتي سیسټم پرته بې‌ګټې دی.\n\n۱.۱.۱ عملیاتي سیسټم\n\nعملیاتي سیسټم (OS) د کاروونکو او کمپیوټري هارډویر ترمنځ منځګړی دی. کاروونکو ته داسې چاپېریال برابروي چې پکې کاروونکی پروګرامونه په اسانۍ او اغېزمن ډول چلولی شي. په تخنیکي اصطلاح دا یو سافټویر دی چې هارډویر اداره کوي. عملیاتي سیسټم د سرچینو او خدمتونو لکه حافظې، پروسېسرونو، وسایلو او معلوماتو وېش کنټرولوي.\n\n\"عملیاتي سیسټم داسې پروګرام دی چې د کاروونکي او کمپیوټري هارډویر ترمنځ د منځګړي کار کوي او د هر ډول پروګرامونو چلېدل کنټرولوي.\"\n\nد شخصي کمپیوټرونو لپاره ځینې عام کارېدونکي عملیاتي سیسټمونه دا دي: Linux، Mac OS، Microsoft Windows XP، Microsoft Windows Vista، Windows 7 او UNIX.\n\nله عملیاتي سیسټم پرته کمپیوټر یوازې د فلز یو تش ډېری دی. په کمپیوټر د کاريال پروګرامونو د چلولو لپاره باید عملیاتي سیسټم پرې نصب وي. عملیاتي سیسټمونه بنسټیزې چارې ترسره کوي، لکه له ننوتو وسایلو ننوتنه اخیستل، د پروسس لپاره له اصلي حافظې پروسېسر ته د ډېټا لېږدول او بیا وتو وسایلو ته د وتنې لېږل. دا په هارډ ډیسک کې د فایلونو او لارښودونو (directories) ریکارډ هم ساتي او بهرني وسایل کنټرولوي.\n\n۱.۱ شکل ته پام وکړئ چې ښيي عملیاتي سیسټم د کاروونکو او کمپیوټري هارډویر ترمنځ منځګړی دی.\n\nعملیاتي سیسټم د هارډویر پر سر کار کوي او د یوه مجازي ماشین په څېر عمل کوي چې د هارډویر د کچې پېچلتیاوې له کاروونکو پټوي او هغوی ته د سیسټم د کارولو اسانه لاره برابروي.\n\n۱.۱.۲ عام کارېدونکي عملیاتي سیسټمونه\n\nد عملیاتي سیسټم جوړول له ۱۹۵۰مو کلونو پیل شوي او تر اوسه بېلابېلو شرکتونو بېلابېل ډوله عملیاتي سیسټمونه جوړ کړي. تر ټولو ډېر کارېدونکي عملیاتي سیسټمونه دا دي: DOS، Windows، UNIX او Macintosh.\n\na. DOS\n\nDOS د Disk Operating System لنډیز دی چې د شخصي کمپیوټرونو لپاره لومړنی کارېدونکی عملیاتي سیسټم و.",
+   "theoryUrdu": "1.1 تعارف\n\nیہ یونٹ آپریٹنگ سسٹم کے تعارف اور اس کے افعال اور خدمات پر مرکوز ہے۔ یہ بھی بیان کرتا ہے کہ آپریٹنگ سسٹم پراسیسز کو چلانے کے لیے کیسے استعمال ہوتا ہے۔ آخر میں تھریڈ اور پراسیس، ملٹی تھریڈنگ، ملٹی ٹاسکنگ اور ملٹی پروگرامنگ کے درمیان فرق کیا گیا ہے۔\n\nآپریٹنگ سسٹم کمپیوٹر سسٹم کا ایک اہم جز ہے اور کمپیوٹر ہارڈویئر کے ساتھ اس کا وہی تعلق ہے جو انسانی روح کا انسانی جسم کے ساتھ ہے۔ جس طرح انسانی جسم روح کے بغیر بے کار ہے، اسی طرح کمپیوٹر آپریٹنگ سسٹم کے بغیر بے کار ہے۔\n\n1.1.1 آپریٹنگ سسٹم\n\nآپریٹنگ سسٹم (OS) صارفین اور کمپیوٹر ہارڈویئر کے درمیان ایک واسطہ ہے۔ یہ صارفین کو ایسا ماحول فراہم کرتا ہے جس میں صارف آسانی اور مؤثر طریقے سے پروگرام چلا سکتا ہے۔ تکنیکی اصطلاح میں یہ ایک سافٹ ویئر ہے جو ہارڈویئر کا انتظام کرتا ہے۔ آپریٹنگ سسٹم وسائل اور خدمات مثلاً میموری، پروسیسرز، آلات اور معلومات کی تقسیم کو کنٹرول کرتا ہے۔\n\n’’آپریٹنگ سسٹم ایک ایسا پروگرام ہے جو صارف اور کمپیوٹر ہارڈویئر کے درمیان انٹرفیس کا کام کرتا ہے اور ہر قسم کے پروگراموں کے چلنے کو کنٹرول کرتا ہے۔‘‘\n\nذاتی کمپیوٹرز کے لیے عام استعمال ہونے والے کچھ آپریٹنگ سسٹم یہ ہیں: Linux، Mac OS، Microsoft Windows XP، Microsoft Windows Vista، Windows 7 اور UNIX۔\n\nآپریٹنگ سسٹم کے بغیر کمپیوٹر محض دھات کا ایک خالی ڈھیر ہے۔ کمپیوٹر پر ایپلیکیشن پروگرام چلانے کے لیے اس پر آپریٹنگ سسٹم انسٹال ہونا ضروری ہے۔ آپریٹنگ سسٹم بنیادی کام انجام دیتے ہیں، جیسے ان پٹ آلات سے ان پٹ لینا، ڈیٹا کو پراسیسنگ کے لیے مین میموری سے پروسیسر تک منتقل کرنا اور پھر آؤٹ پٹ کو آؤٹ پٹ آلات تک بھیجنا۔ یہ ہارڈ ڈسک پر فائلوں اور ڈائریکٹریز کا ریکارڈ بھی رکھتا ہے اور بیرونی آلات کو کنٹرول کرتا ہے۔\n\nشکل 1.1 پر غور کیجیے جو ظاہر کرتی ہے کہ آپریٹنگ سسٹم صارفین اور کمپیوٹر ہارڈویئر کے درمیان ایک انٹرفیس ہے۔\n\nآپریٹنگ سسٹم ہارڈویئر کے اوپر کام کرتا ہے اور ایک ورچوئل مشین کی طرح کام کرتا ہے جو ہارڈویئر کی سطح کی پیچیدگیوں کو صارفین سے چھپاتا ہے اور انھیں سسٹم استعمال کرنے کا آسان طریقہ فراہم کرتا ہے۔\n\n1.1.2 عام استعمال ہونے والے آپریٹنگ سسٹم\n\nآپریٹنگ سسٹم کی تیاری 1950ء کی دہائی سے شروع ہوئی اور اب تک مختلف کمپنیوں نے مختلف اقسام کے آپریٹنگ سسٹم تیار کیے ہیں۔ سب سے زیادہ استعمال ہونے والے آپریٹنگ سسٹم یہ ہیں: DOS، Windows، UNIX اور Macintosh۔\n\na. ڈاس (DOS)\n\nDOS ڈسک آپریٹنگ سسٹم کا مخفف ہے جو ذاتی کمپیوٹرز کے لیے استعمال ہونے والا پہلا آپریٹنگ سسٹم تھا۔",
+   "theoryPashto": "۱.۱ پېژندنه\n\nدا څپرکی د عملیاتي سیسټم پر پېژندنې او د هغه پر دندو او خدمتونو تمرکز لري. دا هم بیانوي چې عملیاتي سیسټم د پروسو د چلولو لپاره څنګه کارول کېږي. په پای کې د تار (thread) او پروسې، څو-تاریز، څو-دندیز او څو-پروګرامي کار ترمنځ توپیر شوی.\n\nعملیاتي سیسټم د کمپیوټري سیسټم یوه مهمه برخه ده او له کمپیوټري هارډویر سره یې هماغه اړیکه ده چې انساني روح یې له انساني بدن سره لري. لکه څنګه چې انساني بدن له روح پرته بې‌ګټې دی، همداسې کمپیوټر له عملیاتي سیسټم پرته بې‌ګټې دی.\n\n۱.۱.۱ عملیاتي سیسټم\n\nعملیاتي سیسټم (OS) د کاروونکو او کمپیوټري هارډویر ترمنځ منځګړی دی. کاروونکو ته داسې چاپېریال برابروي چې پکې کاروونکی پروګرامونه په اسانۍ او اغېزمن ډول چلولی شي. په تخنیکي اصطلاح دا یو سافټویر دی چې هارډویر اداره کوي. عملیاتي سیسټم د سرچینو او خدمتونو لکه حافظې، پروسېسرونو، وسایلو او معلوماتو وېش کنټرولوي.\n\n\"عملیاتي سیسټم داسې پروګرام دی چې د کاروونکي او کمپیوټري هارډویر ترمنځ د منځګړي کار کوي او د هر ډول پروګرامونو چلېدل کنټرولوي.\"\n\nد شخصي کمپیوټرونو لپاره ځینې عام کارېدونکي عملیاتي سیسټمونه دا دي: Linux، Mac OS، Microsoft Windows XP، Microsoft Windows Vista، Windows 7 او UNIX.\n\nله عملیاتي سیسټم پرته کمپیوټر یوازې د فلز یو تش ډېری دی. په کمپیوټر د کاريال پروګرامونو د چلولو لپاره باید عملیاتي سیسټم پرې نصب وي. عملیاتي سیسټمونه بنسټیزې چارې ترسره کوي، لکه له ننوتو وسایلو ننوتنه اخیستل، د پروسس لپاره له اصلي حافظې پروسېسر ته د ډېټا لېږدول او بیا وتو وسایلو ته د وتنې لېږل. دا په هارډ ډیسک کې د فایلونو او لارښودونو (directories) ریکارډ هم ساتي او بهرني وسایل کنټرولوي.\n\n۱.۱ شکل ته پام وکړئ چې ښيي عملیاتي سیسټم د کاروونکو او کمپیوټري هارډویر ترمنځ منځګړی دی.\n\nعملیاتي سیسټم د هارډویر پر سر کار کوي او د یوه مجازي ماشین په څېر عمل کوي چې د هارډویر د کچې پېچلتیاوې له کاروونکو پټوي او هغوی ته د سیسټم د کارولو اسانه لاره برابروي.\n\n۱.۱.۲ عام کارېدونکي عملیاتي سیسټمونه\n\nد عملیاتي سیسټم جوړول له ۱۹۵۰مو کلونو پیل شوي او تر اوسه بېلابېلو شرکتونو بېلابېل ډوله عملیاتي سیسټمونه جوړ کړي. تر ټولو ډېر کارېدونکي عملیاتي سیسټمونه دا دي: DOS، Windows، UNIX او Macintosh.\n\na. DOS\n\nDOS د Disk Operating System لنډیز دی چې د شخصي کمپیوټرونو لپاره لومړنی کارېدونکی عملیاتي سیسټم و.",
+   "content": "<p>1.1 INTRODUCTION</p><p>This unit is focused on introduction to Operating System and its functions and services. It also describes that how an operating system is used to execute processes. At the end, a differentiation is made between thread and process, multithreading, multitasking and multiprogramming.</p><p>Operating System is an important component of a computer system and has the same relation with computer hardware as human soul has with human body. As human body is useless without human soul, similarly, a computer is useless without an operating system.</p><p>1.1.1 An Operating System</p><p>An operating System (OS) is an intermediary between users and computer hardware. It provides users an environment in which a user can execute programs conveniently and efficiently. In technical terms, it is a software which manages hardware. An operating System controls the allocation of resources and services such as memory, processors, devices and information.</p><p>“An operating system is a program that acts as an interface between the user and the computer hardware and controls the execution of all kinds of programs.”</p><p>Some commonly used operating systems that are used for personal computers are: Linux, Mac OS, Microsoft Windows XP, Microsoft Windows Vista, Windows 7 and UNIX.</p><p>A computer without an operating system is just an empty dump of metal. To run application programs on a computer, it must have an operating system installed on it. Operating systems perform basic operations, such as getting input from the input devices, transferring data from main memory to the processor for processing and then sending output to the output devices. It also keeps track of files and directories on the hard disk, and controls peripheral devices.</p><p>Consider Figure 1.1 which shows that operating system is an interface between users and computer hardware.</p><p>Operating system operates on top of hardware and acts as a virtual machine that hides the hardware level complexities from the users and provides them a convenient way of using the system.</p><p>1.1.2 Commonly used operating systems</p><p>The development of operating system has started since 1950’s and different types of operating systems have been developed so far by different companies. The most commonly used operating systems are: DOS, Windows, UNIX and Macintosh.</p><p>a. DOS</p><p>DOS is the abbreviation for Disk Operating System which was the first operating system used for personal computers.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-1-1"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-1-1",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 330\" role=\"img\" aria-label=\"Figure 1.1: Operating System as an Interface\"><rect width=\"460\" height=\"330\" fill=\"#ffffff\"/><rect x=\"20\" y=\"10\" width=\"420\" height=\"270\" rx=\"26\" fill=\"#fffdf6\" stroke=\"#f0c040\" stroke-width=\"3\"/><rect x=\"45\" y=\"30\" width=\"90\" height=\"36\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"90.0\" y=\"53.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">User 1</text><rect x=\"150\" y=\"30\" width=\"90\" height=\"36\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"195.0\" y=\"53.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">User 2</text><text x=\"275\" y=\"54\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">- - -</text><rect x=\"310\" y=\"30\" width=\"110\" height=\"36\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"365.0\" y=\"53.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">User n</text><line x1=\"90\" y1=\"66\" x2=\"90\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"195\" y1=\"66\" x2=\"195\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"365\" y1=\"66\" x2=\"365\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"2\"/><rect x=\"60\" y=\"96\" width=\"340\" height=\"44\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"230.0\" y=\"123.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Application Programs</text><line x1=\"230\" y1=\"140\" x2=\"230\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"2\"/><rect x=\"60\" y=\"160\" width=\"340\" height=\"44\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"230.0\" y=\"187.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Operating System</text><line x1=\"230\" y1=\"204\" x2=\"230\" y2=\"224\" stroke=\"#94a3b8\" stroke-width=\"2\"/><rect x=\"60\" y=\"224\" width=\"340\" height=\"44\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"230.0\" y=\"251.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Hardwares</text><text x=\"230\" y=\"312\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Figure 1.1: Operating System as an Interface</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 330\" role=\"img\" aria-label=\"شکل 1.1: آپریٹنگ سسٹم بطور انٹرفیس\"><rect width=\"460\" height=\"330\" fill=\"#ffffff\"/><rect x=\"20\" y=\"10\" width=\"420\" height=\"270\" rx=\"26\" fill=\"#fffdf6\" stroke=\"#f0c040\" stroke-width=\"3\"/><rect x=\"45\" y=\"30\" width=\"90\" height=\"36\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"90.0\" y=\"53.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">صارف 1</text><rect x=\"150\" y=\"30\" width=\"90\" height=\"36\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"195.0\" y=\"53.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">صارف 2</text><text x=\"275\" y=\"54\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">- - -</text><rect x=\"310\" y=\"30\" width=\"110\" height=\"36\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"365.0\" y=\"53.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">صارف n</text><line x1=\"90\" y1=\"66\" x2=\"90\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"195\" y1=\"66\" x2=\"195\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"365\" y1=\"66\" x2=\"365\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"2\"/><rect x=\"60\" y=\"96\" width=\"340\" height=\"44\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"230.0\" y=\"123.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">ایپلیکیشن پروگرامز</text><line x1=\"230\" y1=\"140\" x2=\"230\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"2\"/><rect x=\"60\" y=\"160\" width=\"340\" height=\"44\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"230.0\" y=\"187.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">آپریٹنگ سسٹم</text><line x1=\"230\" y1=\"204\" x2=\"230\" y2=\"224\" stroke=\"#94a3b8\" stroke-width=\"2\"/><rect x=\"60\" y=\"224\" width=\"340\" height=\"44\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"230.0\" y=\"251.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">ہارڈویئر</text><text x=\"230\" y=\"312\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">شکل 1.1: آپریٹنگ سسٹم بطور انٹرفیس</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 330\" role=\"img\" aria-label=\"۱.۱ شکل: عملیاتي سیسټم د منځګړي په توګه\"><rect width=\"460\" height=\"330\" fill=\"#ffffff\"/><rect x=\"20\" y=\"10\" width=\"420\" height=\"270\" rx=\"26\" fill=\"#fffdf6\" stroke=\"#f0c040\" stroke-width=\"3\"/><rect x=\"45\" y=\"30\" width=\"90\" height=\"36\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"90.0\" y=\"53.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">کاروونکی 1</text><rect x=\"150\" y=\"30\" width=\"90\" height=\"36\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"195.0\" y=\"53.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">کاروونکی 2</text><text x=\"275\" y=\"54\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">- - -</text><rect x=\"310\" y=\"30\" width=\"110\" height=\"36\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"365.0\" y=\"53.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">کاروونکی n</text><line x1=\"90\" y1=\"66\" x2=\"90\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"195\" y1=\"66\" x2=\"195\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"365\" y1=\"66\" x2=\"365\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"2\"/><rect x=\"60\" y=\"96\" width=\"340\" height=\"44\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"230.0\" y=\"123.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">کاريال پروګرامونه</text><line x1=\"230\" y1=\"140\" x2=\"230\" y2=\"160\" stroke=\"#94a3b8\" stroke-width=\"2\"/><rect x=\"60\" y=\"160\" width=\"340\" height=\"44\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"230.0\" y=\"187.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">عملیاتي سیسټم</text><line x1=\"230\" y1=\"204\" x2=\"230\" y2=\"224\" stroke=\"#94a3b8\" stroke-width=\"2\"/><rect x=\"60\" y=\"224\" width=\"340\" height=\"44\" rx=\"6\" fill=\"#fff7e6\" stroke=\"#e0a83a\" stroke-width=\"2\"/><text x=\"230.0\" y=\"251.0\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">هارډویر</text><text x=\"230\" y=\"312\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۱.۱ شکل: عملیاتي سیسټم د منځګړي په توګه</text></svg>",
+     "sourceWidthRatio": 1.393939393939394
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 7,
+     "printedPages": [
+      2,
+      3
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 1 text (1)",
+   "sourcePageLabel": "PDF 7 · p. 2–3",
+   "sourceNote": "Figure 1.1 is reproduced as a coded diagram. The sub-heading printed as “1.1.1 An Operating System” appears with an owner pen mark over the number.",
+   "unit": 1
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf007",
+   "unit": 1,
+   "printedPage": 2,
+   "description": "p.2 prints “It also describes that how an operating system …” and “transferring” is cut at the margin; the definition quote ends “programs’.” in print. Owner pen annotations (circled numbers, scribbles) on pp.2–3 are excluded."
+  }
+ ],
+ "completeUnits": []
+}

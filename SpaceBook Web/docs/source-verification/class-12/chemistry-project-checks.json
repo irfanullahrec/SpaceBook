@@ -1,0 +1,21 @@
+{
+  "focusedChemistry": "passed",
+  "repositoryValidate": {
+    "exitCode": 1,
+    "issues": [
+      "english_10_data.js loader failure reading ENGLISH_10_DATA",
+      "tools/validate.js Class1Maths check throws at line152"
+    ]
+  },
+  "repositorySmoke": {
+    "exitCode": 1,
+    "issues": [
+      "Class1/2Maths checks failed",
+      "shared global search throws reading toLowerCase of undefined"
+    ],
+    "chemistryOpenCheck": "passed"
+  },
+  "scope": "No other datasets edited to address these failures. Shared-search cause remains to be isolated; no browser used.",
+  "recordUpdatedUtc": "2026-10-11T19:33:18.282656+00:00",
+  "checkWindow": "After PDF31 save and before the recorded PDF27\u201331 comparison checkpoint; exact command start/end timestamps were not separately captured."
+}

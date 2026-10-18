@@ -1,0 +1,328 @@
+{
+  "auditDate": "2026-10-18",
+  "owner": "class12_view_audit",
+  "status": "recovered-mathematical-companion-implemented",
+  "scope": "Recover original Class 12 Mathematics printed pages 142-157; do not replace textbook text with generic or reconstructed questions.",
+  "originalSource": "D:/SpaceBook/Books/12th/12th Maths/PDF/Math Book for 12 class KPTBB.pdf",
+  "originalPreserved": true,
+  "missingPrintedPages": [
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157
+  ],
+  "rejectedCandidates": [
+    {
+      "landingUrl": "https://www.ilmkidunya.com/12th-class/books/math-kpk-board",
+      "chapter5Url": "https://cdn.ilmkidunya.com//files/customfiles/2025/10/Math-KPK-for-12th-chapter%205.pdf",
+      "chapter6Url": "https://cdn.ilmkidunya.com//files/customfiles/2025/10/Math-KPK-for-12th-chapter%206.pdf",
+      "localFiles": [
+        "tmp/math12-missing-source/ilmkidunya-chapter5.pdf",
+        "tmp/math12-missing-source/ilmkidunya-chapter6.pdf"
+      ],
+      "result": "Visually inspected footer sequences repeat the original scan defect; neither download contains printed pages 142-157.",
+      "chapter5PrintedSpreads": [
+        [
+          129,
+          130
+        ],
+        [
+          131,
+          132
+        ],
+        [
+          133,
+          134
+        ],
+        [
+          135,
+          136
+        ],
+        [
+          137,
+          138
+        ],
+        [
+          139,
+          140
+        ],
+        [
+          141,
+          174
+        ],
+        [
+          175,
+          176
+        ]
+      ],
+      "chapter6PrintedSpreads": [
+        [
+          177,
+          178
+        ],
+        [
+          179,
+          180
+        ],
+        [
+          181,
+          182
+        ],
+        [
+          183,
+          184
+        ],
+        [
+          185,
+          186
+        ],
+        [
+          187,
+          188
+        ],
+        [
+          189,
+          158
+        ],
+        [
+          159,
+          160
+        ],
+        [
+          161,
+          162
+        ],
+        [
+          163,
+          164
+        ],
+        [
+          165,
+          166
+        ],
+        [
+          167,
+          168
+        ],
+        [
+          169,
+          170
+        ],
+        [
+          171,
+          172
+        ],
+        [
+          173,
+          174
+        ],
+        [
+          175,
+          176
+        ]
+      ],
+      "visualEvidence": [
+        "tmp/math12-missing-source/chapter5-footers.png",
+        "tmp/math12-missing-source/chapter6-footers.png"
+      ]
+    }
+  ],
+  "unavailableCandidates": [
+    {
+      "url": "https://kptbb.gov.pk/",
+      "result": "Official website could not be opened by web tool during this search."
+    },
+    {
+      "url": "https://tbb.kp.gov.pk/",
+      "result": "Official website timed out."
+    },
+    {
+      "url": "https://www.researchgate.net/publication/373546802_A_Textbook_of_Mathematics_Calculus_Analytic_Geometry_for_College_Students",
+      "result": "Author publication metadata and 12-unit contents match the local textbook family, but its PDF returned HTTP 403; no attempt made to bypass restricted access."
+    },
+    {
+      "url": "https://www.taleem360.com/2nd-year-mathematics-text-book-by-kpk-board-244",
+      "result": "Download unavailable; older 2021 listing alone does not establish an exact edition match."
+    }
+  ],
+  "candidate": {
+    "landingUrl": "https://freetaleem.com/class-12-maths-book-pdf-kpk-board/",
+    "previewUrl": "https://drive.google.com/file/d/1z5fdQlJ09IRZUGqjyGPxQkwWubHuCjQJ/preview",
+    "downloadUrl": "https://drive.usercontent.google.com/uc?id=1z5fdQlJ09IRZUGqjyGPxQkwWubHuCjQJ&export=download",
+    "displayFilename": "class-12-maths-book-pdf-kpk-2025.pdf",
+    "expectedBytes": 76437175,
+    "serverLastModified": "2025-12-17",
+    "downloadPath": "tmp/math12-missing-source/freetaleem-candidate.pdf",
+    "verification": "Visually matched colophon authors, Leading Books publisher, DCTE 31-05-2021 approval and 2022-2023 academic year. Printed 158 directly compared against supplied JPG 083_page_2.jpg: same continuation, formulas (including x-2 printed inconsistency), Example 9 and solution. Uninterrupted printed 141-158 footers visually inspected.",
+    "sha256": "af8a6f810074f8cc82e1ccaa1f300212d74e653dbc708a5cfc264ef3d3d26681",
+    "downloadedBytes": 76437175,
+    "pdfPages": 356
+  },
+  "sourceGapResolved": true,
+  "exercise61VerifiedQuestionCount": {
+    "numberedGroups": 8,
+    "subparts": 28,
+    "printedPage": 150
+  },
+  "applicationContentChanged": true,
+  "recovery": {
+    "path": "docs/source-verification/class-12/sources/math12-unit6-recovered.pdf",
+    "sha256": "3902216d33af5c57043c76be2f929435d77c9df8181aa2f5476da8aa6682e119",
+    "pdfPages": 18,
+    "printedPages": [
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158
+    ],
+    "boundaryPages": [
+      141,
+      158
+    ],
+    "missingPages": [
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157
+    ],
+    "mapping": "Recovered PDF page k (1-based) = printed 140+k; original candidate PDF page = printed+5",
+    "sourcePageVisualInspection": "All printed142-157 and adjacent158 visually inspected. No instructional drawings occur in the missing pages; standard integral and rule tables use native HTML."
+  },
+  "changedFiles": [
+    "js/math12_unit6_source_recovery.js"
+  ],
+  "separateExerciseAddon": "js/math12_unit6_exercise61_recovery.js",
+  "implementation": {
+    "sourcePagesAdded": 16,
+    "workedExamplesAdded": 8,
+    "answeredChallengesAdded": 5,
+    "translatedParagraphsAdded": 18,
+    "format": "Recovered-page mathematical companion. Formula/problem facts follow the verified source, explanatory prose and worked solutions are newly authored. Not a verbatim textbook transcription.",
+    "originalSuppliedSourcePagesPreserved": [
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177
+    ],
+    "completeTranslationReview": false,
+    "pending": "Complete translation review of formula-table labels, worked-example steps, source-error notes and challenge answers; final integrated browser review."
+  },
+  "printedDiscrepancies": [
+    {
+      "pages": [
+        142,
+        145
+      ],
+      "issue": "Differentiation of an indefinite integral is printed with an extra integration constant; correct summary appears on146."
+    },
+    {
+      "pages": [
+        145
+      ],
+      "issue": "Cotangent table antiderivative omits x inside sine."
+    },
+    {
+      "pages": [
+        148
+      ],
+      "issue": "Exponential/product primitive printed a*e^x*f(x) instead of e^(a*x)*f(x)."
+    },
+    {
+      "pages": [
+        149
+      ],
+      "issue": "Logarithmic primitive omits absolute-value bars; companion extends it to both real-domain intervals."
+    },
+    {
+      "pages": [
+        151,
+        152
+      ],
+      "issue": "Rational-integral proof has inconsistent logarithm signs and interchanged denominator signs."
+    },
+    {
+      "pages": [
+        156
+      ],
+      "issue": "Several inverse-radical substitution lines omit the square root."
+    },
+    {
+      "pages": [
+        157
+      ],
+      "issue": "Example7 later lines lose the denominator radical."
+    },
+    {
+      "pages": [
+        157,
+        158
+      ],
+      "issue": "Example8 question numerator is x+2; supplied continuation changes it to x-2."
+    }
+  ],
+  "checkedNonDefects": [
+    {
+      "page": 155,
+      "note": "The final logarithmic form -ln|sqrt(x^2-a^2)/(x-a)|/a is algebraically equivalent to the standard answer; not flagged as an error."
+    }
+  ],
+  "verificationFiles": [
+    "docs/source-verification/class-12/math12-unit6-recovery-checks.json",
+    "docs/source-verification/class-12/math12-unit6-recovery-render-checks.json",
+    "tools/check-math12-unit6-recovery.cjs"
+  ]
+}

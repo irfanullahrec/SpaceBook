@@ -1,0 +1,221 @@
+{
+ "pdfPage": 84,
+ "sections": [
+  {
+   "id": "cs12-u5-text-6",
+   "title": "Unit 5 text (6)",
+   "headingUrdu": "یونٹ 5 — متن (۶)",
+   "headingPashto": "۵ څپرکی — متن (۶)",
+   "paras": [
+    {
+     "text": "5.1.7 sizeof() Operator",
+     "urdu": "5.1.7 sizeof() آپریٹر",
+     "pashto": "۵.۱.۷ sizeof() چلونکی"
+    },
+    {
+     "text": "The sizeof() operator can be used with arrays to return the size allocated for the entire array. Consider the following program:",
+     "urdu": "sizeof() آپریٹر ایریز کے ساتھ پورے ایرے کے لیے مختص سائز واپس کرنے کے لیے استعمال ہو سکتا ہے۔ درج ذیل پروگرام پر غور کریں:",
+     "pashto": "sizeof() چلونکی د لړیو سره د ټولې لړۍ لپاره د ټاکل شوې اندازې د بېرته ورکولو لپاره کارول کېدای شي. لاندې پروګرام ته پام وکړئ:"
+    },
+    {
+     "text": "// size of an array example\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array A is: \" <<sizeof (A); // 5 elements * 2 bytes for each element\ngetch();\nreturn 0;\n}",
+     "urdu": "// size of an array example\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array A is: \" <<sizeof (A); // 5 elements * 2 bytes for each element\ngetch();\nreturn 0;\n}",
+     "pashto": "// size of an array example\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array A is: \" <<sizeof (A); // 5 elements * 2 bytes for each element\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Size of the array A is: 10",
+     "urdu": "Size of the array A is: 10",
+     "pashto": "Size of the array A is: 10",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Using the sizeof() operator, we can also find out the number of elements in an array. Consider the following example:",
+     "urdu": "sizeof() آپریٹر کے ذریعے ہم ایرے میں عناصر کی تعداد بھی معلوم کر سکتے ہیں۔ درج ذیل مثال پر غور کریں:",
+     "pashto": "د sizeof() چلونکي په مرسته کولی شو د لړۍ د عناصرو شمېر هم پیدا کړو. لاندې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "/* to find the number of elements in array using\nsizeof() operator*/\n# include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array =\"<<sizeof(A)<<\" bytes \";\nint Total_Elements = sizeof(A) / sizeof(A[0]);\ncout<<\"\\nTotal number of elements in the array A\nare: \"<<Total_Elements;\ngetch();\nreturn 0;\n}",
+     "urdu": "/* to find the number of elements in array using\nsizeof() operator*/\n# include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array =\"<<sizeof(A)<<\" bytes \";\nint Total_Elements = sizeof(A) / sizeof(A[0]);\ncout<<\"\\nTotal number of elements in the array A\nare: \"<<Total_Elements;\ngetch();\nreturn 0;\n}",
+     "pashto": "/* to find the number of elements in array using\nsizeof() operator*/\n# include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array =\"<<sizeof(A)<<\" bytes \";\nint Total_Elements = sizeof(A) / sizeof(A[0]);\ncout<<\"\\nTotal number of elements in the array A\nare: \"<<Total_Elements;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Size of the array =10 bytes\nTotal number of elements in\nthe array A are: 05",
+     "urdu": "Size of the array =10 bytes\nTotal number of elements in\nthe array A are: 05",
+     "pashto": "Size of the array =10 bytes\nTotal number of elements in\nthe array A are: 05",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "5.2 Two-dimensional arrays",
+     "urdu": "5.2 دو جہتی ایریز",
+     "pashto": "۵.۲ دوه-بعدي لړۍ"
+    },
+    {
+     "text": "An array having more than one subscripts is called multidimensional array. A multidimensional array is an “array of arrays”. It is not limited to two indices i.e., two dimensions, but can also have three-dimensions and four-dimensions etc.",
+     "urdu": "ایک سے زیادہ سب اسکرپٹس والا ایرے کثیر جہتی ایرے کہلاتا ہے۔ کثیر جہتی ایرے ’’ایریز کا ایرے‘‘ ہے۔ یہ دو انڈیسز یعنی دو جہتوں تک محدود نہیں بلکہ تین جہتی اور چار جہتی وغیرہ بھی ہو سکتا ہے۔",
+     "pashto": "هغه لړۍ چې له یوه ډېر ښکته‌لیکونه ولري، څو-بعدي لړۍ بلل کېږي. څو-بعدي لړۍ \"د لړیو لړۍ\" ده. دا په دوو شاخصونو یعنې دوو بعدونو پورې محدوده نه ده، بلکې درې-بعدي او څلور-بعدي او نور هم کېدای شي."
+    },
+    {
+     "text": "5.2.1 Concept of two dimensional arrays",
+     "urdu": "5.2.1 دو جہتی ایریز کا تصور",
+     "pashto": "۵.۲.۱ د دوه-بعدي لړیو مفهوم"
+    },
+    {
+     "text": "The most communally used multidimensional array is two dimensional arrays which is also called bi-dimensional array. It is used for storing of tabular data arranged in rows and columns. It can be represented by two indices i.e. row index and columns index.",
+     "urdu": "سب سے زیادہ استعمال ہونے والا کثیر جہتی ایرے دو جہتی ایرے ہے جسے bi-dimensional ایرے بھی کہتے ہیں۔ یہ قطاروں اور کالموں میں ترتیب دیے گئے جدولی ڈیٹا کو محفوظ کرنے کے لیے استعمال ہوتا ہے۔ اسے دو انڈیسز یعنی قطار انڈیکس اور کالم انڈیکس سے ظاہر کیا جا سکتا ہے۔",
+     "pashto": "تر ټولو ډېره کارېدونکې څو-بعدي لړۍ دوه-بعدي لړۍ ده چې bi-dimensional لړۍ هم بلل کېږي. دا په قطارونو او ستنو کې د ترتیب شوي جدولي ډېټا د ساتلو لپاره کارېږي. دا په دوو شاخصونو یعنې د قطار شاخص او د ستنې شاخص ښودل کېدای شي."
+    },
+    {
+     "text": "All the elements of two dimensional array are of the same data type. Consider the following array:",
+     "urdu": "دو جہتی ایرے کے تمام عناصر ایک ہی ڈیٹا ٹائپ کے ہوتے ہیں۔ درج ذیل ایرے پر غور کریں:",
+     "pashto": "د دوه-بعدي لړۍ ټول عناصر یو ډېټا ډول لري. لاندې لړۍ ته پام وکړئ:"
+    },
+    {
+     "text": "int X[3][5];",
+     "urdu": "int X[3][5];",
+     "pashto": "int X[3][5];",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "5.1.7 sizeof() Operator\n\nThe sizeof() operator can be used with arrays to return the size allocated for the entire array. Consider the following program:\n\n// size of an array example\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array A is: \" <<sizeof (A); // 5 elements * 2 bytes for each element\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nSize of the array A is: 10\n\nUsing the sizeof() operator, we can also find out the number of elements in an array. Consider the following example:\n\n/* to find the number of elements in array using\nsizeof() operator*/\n# include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array =\"<<sizeof(A)<<\" bytes \";\nint Total_Elements = sizeof(A) / sizeof(A[0]);\ncout<<\"\\nTotal number of elements in the array A\nare: \"<<Total_Elements;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nSize of the array =10 bytes\nTotal number of elements in\nthe array A are: 05\n\n5.2 Two-dimensional arrays\n\nAn array having more than one subscripts is called multidimensional array. A multidimensional array is an “array of arrays”. It is not limited to two indices i.e., two dimensions, but can also have three-dimensions and four-dimensions etc.\n\n5.2.1 Concept of two dimensional arrays\n\nThe most communally used multidimensional array is two dimensional arrays which is also called bi-dimensional array. It is used for storing of tabular data arranged in rows and columns. It can be represented by two indices i.e. row index and columns index.\n\nAll the elements of two dimensional array are of the same data type. Consider the following array:\n\nint X[3][5];",
+   "urdu": "5.1.7 sizeof() آپریٹر\n\nsizeof() آپریٹر ایریز کے ساتھ پورے ایرے کے لیے مختص سائز واپس کرنے کے لیے استعمال ہو سکتا ہے۔ درج ذیل پروگرام پر غور کریں:\n\n// size of an array example\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array A is: \" <<sizeof (A); // 5 elements * 2 bytes for each element\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nSize of the array A is: 10\n\nsizeof() آپریٹر کے ذریعے ہم ایرے میں عناصر کی تعداد بھی معلوم کر سکتے ہیں۔ درج ذیل مثال پر غور کریں:\n\n/* to find the number of elements in array using\nsizeof() operator*/\n# include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array =\"<<sizeof(A)<<\" bytes \";\nint Total_Elements = sizeof(A) / sizeof(A[0]);\ncout<<\"\\nTotal number of elements in the array A\nare: \"<<Total_Elements;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nSize of the array =10 bytes\nTotal number of elements in\nthe array A are: 05\n\n5.2 دو جہتی ایریز\n\nایک سے زیادہ سب اسکرپٹس والا ایرے کثیر جہتی ایرے کہلاتا ہے۔ کثیر جہتی ایرے ’’ایریز کا ایرے‘‘ ہے۔ یہ دو انڈیسز یعنی دو جہتوں تک محدود نہیں بلکہ تین جہتی اور چار جہتی وغیرہ بھی ہو سکتا ہے۔\n\n5.2.1 دو جہتی ایریز کا تصور\n\nسب سے زیادہ استعمال ہونے والا کثیر جہتی ایرے دو جہتی ایرے ہے جسے bi-dimensional ایرے بھی کہتے ہیں۔ یہ قطاروں اور کالموں میں ترتیب دیے گئے جدولی ڈیٹا کو محفوظ کرنے کے لیے استعمال ہوتا ہے۔ اسے دو انڈیسز یعنی قطار انڈیکس اور کالم انڈیکس سے ظاہر کیا جا سکتا ہے۔\n\nدو جہتی ایرے کے تمام عناصر ایک ہی ڈیٹا ٹائپ کے ہوتے ہیں۔ درج ذیل ایرے پر غور کریں:\n\nint X[3][5];",
+   "pashto": "۵.۱.۷ sizeof() چلونکی\n\nsizeof() چلونکی د لړیو سره د ټولې لړۍ لپاره د ټاکل شوې اندازې د بېرته ورکولو لپاره کارول کېدای شي. لاندې پروګرام ته پام وکړئ:\n\n// size of an array example\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array A is: \" <<sizeof (A); // 5 elements * 2 bytes for each element\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nSize of the array A is: 10\n\nد sizeof() چلونکي په مرسته کولی شو د لړۍ د عناصرو شمېر هم پیدا کړو. لاندې بېلګې ته پام وکړئ:\n\n/* to find the number of elements in array using\nsizeof() operator*/\n# include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array =\"<<sizeof(A)<<\" bytes \";\nint Total_Elements = sizeof(A) / sizeof(A[0]);\ncout<<\"\\nTotal number of elements in the array A\nare: \"<<Total_Elements;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nSize of the array =10 bytes\nTotal number of elements in\nthe array A are: 05\n\n۵.۲ دوه-بعدي لړۍ\n\nهغه لړۍ چې له یوه ډېر ښکته‌لیکونه ولري، څو-بعدي لړۍ بلل کېږي. څو-بعدي لړۍ \"د لړیو لړۍ\" ده. دا په دوو شاخصونو یعنې دوو بعدونو پورې محدوده نه ده، بلکې درې-بعدي او څلور-بعدي او نور هم کېدای شي.\n\n۵.۲.۱ د دوه-بعدي لړیو مفهوم\n\nتر ټولو ډېره کارېدونکې څو-بعدي لړۍ دوه-بعدي لړۍ ده چې bi-dimensional لړۍ هم بلل کېږي. دا په قطارونو او ستنو کې د ترتیب شوي جدولي ډېټا د ساتلو لپاره کارېږي. دا په دوو شاخصونو یعنې د قطار شاخص او د ستنې شاخص ښودل کېدای شي.\n\nد دوه-بعدي لړۍ ټول عناصر یو ډېټا ډول لري. لاندې لړۍ ته پام وکړئ:\n\nint X[3][5];",
+   "theoryUrdu": "5.1.7 sizeof() آپریٹر\n\nsizeof() آپریٹر ایریز کے ساتھ پورے ایرے کے لیے مختص سائز واپس کرنے کے لیے استعمال ہو سکتا ہے۔ درج ذیل پروگرام پر غور کریں:\n\n// size of an array example\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array A is: \" <<sizeof (A); // 5 elements * 2 bytes for each element\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nSize of the array A is: 10\n\nsizeof() آپریٹر کے ذریعے ہم ایرے میں عناصر کی تعداد بھی معلوم کر سکتے ہیں۔ درج ذیل مثال پر غور کریں:\n\n/* to find the number of elements in array using\nsizeof() operator*/\n# include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array =\"<<sizeof(A)<<\" bytes \";\nint Total_Elements = sizeof(A) / sizeof(A[0]);\ncout<<\"\\nTotal number of elements in the array A\nare: \"<<Total_Elements;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nSize of the array =10 bytes\nTotal number of elements in\nthe array A are: 05\n\n5.2 دو جہتی ایریز\n\nایک سے زیادہ سب اسکرپٹس والا ایرے کثیر جہتی ایرے کہلاتا ہے۔ کثیر جہتی ایرے ’’ایریز کا ایرے‘‘ ہے۔ یہ دو انڈیسز یعنی دو جہتوں تک محدود نہیں بلکہ تین جہتی اور چار جہتی وغیرہ بھی ہو سکتا ہے۔\n\n5.2.1 دو جہتی ایریز کا تصور\n\nسب سے زیادہ استعمال ہونے والا کثیر جہتی ایرے دو جہتی ایرے ہے جسے bi-dimensional ایرے بھی کہتے ہیں۔ یہ قطاروں اور کالموں میں ترتیب دیے گئے جدولی ڈیٹا کو محفوظ کرنے کے لیے استعمال ہوتا ہے۔ اسے دو انڈیسز یعنی قطار انڈیکس اور کالم انڈیکس سے ظاہر کیا جا سکتا ہے۔\n\nدو جہتی ایرے کے تمام عناصر ایک ہی ڈیٹا ٹائپ کے ہوتے ہیں۔ درج ذیل ایرے پر غور کریں:\n\nint X[3][5];",
+   "theoryPashto": "۵.۱.۷ sizeof() چلونکی\n\nsizeof() چلونکی د لړیو سره د ټولې لړۍ لپاره د ټاکل شوې اندازې د بېرته ورکولو لپاره کارول کېدای شي. لاندې پروګرام ته پام وکړئ:\n\n// size of an array example\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array A is: \" <<sizeof (A); // 5 elements * 2 bytes for each element\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nSize of the array A is: 10\n\nد sizeof() چلونکي په مرسته کولی شو د لړۍ د عناصرو شمېر هم پیدا کړو. لاندې بېلګې ته پام وکړئ:\n\n/* to find the number of elements in array using\nsizeof() operator*/\n# include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout << \"Size of the array =\"<<sizeof(A)<<\" bytes \";\nint Total_Elements = sizeof(A) / sizeof(A[0]);\ncout<<\"\\nTotal number of elements in the array A\nare: \"<<Total_Elements;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nSize of the array =10 bytes\nTotal number of elements in\nthe array A are: 05\n\n۵.۲ دوه-بعدي لړۍ\n\nهغه لړۍ چې له یوه ډېر ښکته‌لیکونه ولري، څو-بعدي لړۍ بلل کېږي. څو-بعدي لړۍ \"د لړیو لړۍ\" ده. دا په دوو شاخصونو یعنې دوو بعدونو پورې محدوده نه ده، بلکې درې-بعدي او څلور-بعدي او نور هم کېدای شي.\n\n۵.۲.۱ د دوه-بعدي لړیو مفهوم\n\nتر ټولو ډېره کارېدونکې څو-بعدي لړۍ دوه-بعدي لړۍ ده چې bi-dimensional لړۍ هم بلل کېږي. دا په قطارونو او ستنو کې د ترتیب شوي جدولي ډېټا د ساتلو لپاره کارېږي. دا په دوو شاخصونو یعنې د قطار شاخص او د ستنې شاخص ښودل کېدای شي.\n\nد دوه-بعدي لړۍ ټول عناصر یو ډېټا ډول لري. لاندې لړۍ ته پام وکړئ:\n\nint X[3][5];",
+   "content": "<p>5.1.7 sizeof() Operator</p><p>The sizeof() operator can be used with arrays to return the size allocated for the entire array. Consider the following program:</p><p>// size of an array example\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout &lt;&lt; &quot;Size of the array A is: &quot; &lt;&lt;sizeof (A); // 5 elements * 2 bytes for each element\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Size of the array A is: 10</p><p>Using the sizeof() operator, we can also find out the number of elements in an array. Consider the following example:</p><p>/* to find the number of elements in array using\nsizeof() operator*/\n# include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint A[] = { 0, 1, 2, 3, 4 };\ncout &lt;&lt; &quot;Size of the array =&quot;&lt;&lt;sizeof(A)&lt;&lt;&quot; bytes &quot;;\nint Total_Elements = sizeof(A) / sizeof(A[0]);\ncout&lt;&lt;&quot;\\nTotal number of elements in the array A\nare: &quot;&lt;&lt;Total_Elements;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Size of the array =10 bytes\nTotal number of elements in\nthe array A are: 05</p><p>5.2 Two-dimensional arrays</p><p>An array having more than one subscripts is called multidimensional array. A multidimensional array is an “array of arrays”. It is not limited to two indices i.e., two dimensions, but can also have three-dimensions and four-dimensions etc.</p><p>5.2.1 Concept of two dimensional arrays</p><p>The most communally used multidimensional array is two dimensional arrays which is also called bi-dimensional array. It is used for storing of tabular data arranged in rows and columns. It can be represented by two indices i.e. row index and columns index.</p><p>All the elements of two dimensional array are of the same data type. Consider the following array:</p><p>int X[3][5];</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      14
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 84,
+     "printedPages": [
+      156,
+      157
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (6)",
+   "sourcePageLabel": "PDF 84 · p. 156–157",
+   "sourceNote": "The second sizeof() program runs from p.156 to p.157 and is given whole; its cout string is printed broken across two lines and is kept so.",
+   "unit": 5
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf084",
+   "unit": 5,
+   "printedPage": 157,
+   "description": "p.157 “most communally used”, “two dimensional arrays which is”; the output “05” and the cout string split across lines are as printed. Retained."
+  }
+ ],
+ "completeUnits": []
+}

@@ -1,0 +1,250 @@
+{
+ "pdfPage": 55,
+ "sections": [
+  {
+   "id": "stat12-p055-hypergeometric-mean",
+   "title": "Example 3.21 and 3.4.3 hypergeometric mean",
+   "headingUrdu": "مثال 3.21 اور 3.4.3 ہائپر جیومیٹرک اوسط",
+   "headingPashto": "بېلګه 3.21 او 3.4.3 د هایپرجیومټریک منځنی",
+   "paras": [
+    {
+     "text": "Example 3.21",
+     "urdu": "مثال 3.21",
+     "pashto": "بېلګه 3.21"
+    },
+    {
+     "text": "In an international recitation competition of the Holy Quran, a panel of 11 judges is formed to judge the best recitation. Two recitations $R_A$ and $R_B$ were considered to be the best where the opinion of judges got divided. Six judges were in favour of $R_A$ whereas five in favour of $R_B$. A random sample of five judges was drawn from the panel. Find the probability that out of five judges three are in favour of recitation $R_A$.",
+     "urdu": "قرآن پاک کی تلاوت کے ایک بین الاقوامی مقابلے میں بہترین تلاوت کا فیصلہ کرنے کے لیے 11 ججوں کا پینل بنایا گیا۔ دو تلاوتیں $R_A$ اور $R_B$ بہترین سمجھی گئیں جہاں ججوں کی رائے تقسیم ہو گئی۔ چھ جج $R_A$ کے حق میں تھے جبکہ پانچ $R_B$ کے حق میں۔ پینل سے پانچ ججوں کا تصادفی نمونہ لیا گیا۔ احتمال معلوم کریں کہ پانچ ججوں میں سے تین تلاوت $R_A$ کے حق میں ہوں۔",
+     "pashto": "د قرآن کریم د تلاوت په یوې نړیوالې سیالۍ کې د غوره تلاوت د ټاکلو لپاره د 11 قاضیانو یوه هیئت جوړ شو. دوه تلاوتونه $R_A$ او $R_B$ غوره وګڼل شول چې پکې د قاضیانو نظر ووېشل شو. شپږ قاضیان د $R_A$ په ګټه او پنځه د $R_B$ په ګټه وو. له هیئت څخه د پنځو قاضیانو تصادفي نمونه واخیستل شوه. احتمال یې پیدا کړئ چې له پنځو قاضیانو درې د $R_A$ تلاوت په ګټه وي."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "In the given problem",
+     "urdu": "دیے گئے سوال میں",
+     "pashto": "په ورکړل شوې پوښتنه کې"
+    },
+    {
+     "text": "$n=5$, $X=0,1,2,3,4,5$ $\\{\\because X=0,1,2,\\ldots\\min(n,k)\\}$",
+     "urdu": "$n=5$، $X=0,1,2,3,4,5$ $\\{\\because X=0,1,2,\\ldots\\min(n,k)\\}$",
+     "pashto": "$n=5$، $X=0,1,2,3,4,5$ $\\{\\because X=0,1,2,\\ldots\\min(n,k)\\}$"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{6}{x}\\binom{11-6}{5-x}}{\\binom{N}{n}}, & x=0,1,2,3,4,5\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{6}{x}\\binom{11-6}{5-x}}{\\binom{N}{n}}, & x=0,1,2,3,4,5\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{6}{x}\\binom{11-6}{5-x}}{\\binom{N}{n}}, & x=0,1,2,3,4,5\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "Now",
+     "urdu": "اب",
+     "pashto": "اوس"
+    },
+    {
+     "text": "$$P(X=3)=\\dfrac{\\binom{6}{3}\\binom{5}{5-3}}{\\binom{11}{5}}=\\frac{200}{231}$$",
+     "urdu": "$$P(X=3)=\\dfrac{\\binom{6}{3}\\binom{5}{5-3}}{\\binom{11}{5}}=\\frac{200}{231}$$",
+     "pashto": "$$P(X=3)=\\dfrac{\\binom{6}{3}\\binom{5}{5-3}}{\\binom{11}{5}}=\\frac{200}{231}$$"
+    },
+    {
+     "text": "3.4.3 Properties of hypergeometric probability distribution",
+     "urdu": "3.4.3 ہائپر جیومیٹرک احتمالی تقسیم کی خصوصیات",
+     "pashto": "3.4.3 د هایپرجیومټریک احتمالي وېش ځانګړنې"
+    },
+    {
+     "text": "◆ Mean of hypergeometric probability distribution by definition is given by",
+     "urdu": "◆ تعریف کے مطابق ہائپر جیومیٹرک احتمالی تقسیم کا اوسط یہ ہے",
+     "pashto": "◆ د تعریف له مخې د هایپرجیومټریک احتمالي وېش منځنی دا دی"
+    },
+    {
+     "text": "$\\text{Mean}=E(X)=\\sum_x x\\,p(x)=\\sum_{x=0}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}$",
+     "urdu": "$\\text{Mean}=E(X)=\\sum_x x\\,p(x)=\\sum_{x=0}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}$",
+     "pashto": "$\\text{Mean}=E(X)=\\sum_x x\\,p(x)=\\sum_{x=0}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}$"
+    },
+    {
+     "text": "$=0\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}$",
+     "urdu": "$=0\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}$",
+     "pashto": "$=0\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}$"
+    },
+    {
+     "text": "$=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}$",
+     "urdu": "$=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}$",
+     "pashto": "$=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}$"
+    },
+    {
+     "text": "$=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k(k-1)!}{(k-x)!\\,x(x-1)!}\\binom{N-k}{n-x}$",
+     "urdu": "$=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k(k-1)!}{(k-x)!\\,x(x-1)!}\\binom{N-k}{n-x}$",
+     "pashto": "$=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k(k-1)!}{(k-x)!\\,x(x-1)!}\\binom{N-k}{n-x}$"
+    },
+    {
+     "text": "$=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\frac{(k-1)!}{(k-x)!\\,(x-1)!}\\binom{N-k}{n-x}=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\binom{k-1}{x-1}\\binom{N-k}{n-x}$",
+     "urdu": "$=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\frac{(k-1)!}{(k-x)!\\,(x-1)!}\\binom{N-k}{n-x}=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\binom{k-1}{x-1}\\binom{N-k}{n-x}$",
+     "pashto": "$=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\frac{(k-1)!}{(k-x)!\\,(x-1)!}\\binom{N-k}{n-x}=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\binom{k-1}{x-1}\\binom{N-k}{n-x}$"
+    },
+    {
+     "text": "$\\text{Let } y=x-1\\Rightarrow x=y+1$",
+     "urdu": "$\\text{Let } y=x-1\\Rightarrow x=y+1$",
+     "pashto": "$\\text{Let } y=x-1\\Rightarrow x=y+1$"
+    },
+    {
+     "text": "$\\text{If } x=1,\\ y=0$",
+     "urdu": "$\\text{If } x=1,\\ y=0$",
+     "pashto": "$\\text{If } x=1,\\ y=0$"
+    },
+    {
+     "text": "$\\text{If } x=n,\\ y=n-1$",
+     "urdu": "$\\text{If } x=n,\\ y=n-1$",
+     "pashto": "$\\text{If } x=n,\\ y=n-1$"
+    },
+    {
+     "text": "$\\therefore E(X)=\\dfrac{k}{\\binom{N}{n}}\\sum_{y=0}^{n-1}\\binom{k-1}{y}\\binom{N-k}{n-y-1}$",
+     "urdu": "$\\therefore E(X)=\\dfrac{k}{\\binom{N}{n}}\\sum_{y=0}^{n-1}\\binom{k-1}{y}\\binom{N-k}{n-y-1}$",
+     "pashto": "$\\therefore E(X)=\\dfrac{k}{\\binom{N}{n}}\\sum_{y=0}^{n-1}\\binom{k-1}{y}\\binom{N-k}{n-y-1}$"
+    },
+    {
+     "text": "Apply the hypergeometric identity $\\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k}$",
+     "urdu": "ہائپر جیومیٹرک شناخت $\\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k}$ کا اطلاق کریں",
+     "pashto": "د هایپرجیومټریک پېژندنه $\\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k}$ وکاروئ"
+    }
+   ],
+   "theory": "Example 3.21\n\nIn an international recitation competition of the Holy Quran, a panel of 11 judges is formed to judge the best recitation. Two recitations R_A and R_B were considered to be the best where the opinion of judges got divided. Six judges were in favour of R_A whereas five in favour of R_B. A random sample of five judges was drawn from the panel. Find the probability that out of five judges three are in favour of recitation R_A.\n\nSolution:\n\nIn the given problem\n\nn=5, X=0,1,2,3,4,5 \\{\\because X=0,1,2,\\ldots\\min(n,k)\\}\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{6}{x}\\binom{11-6}{5-x}}{\\binom{N}{n}}, & x=0,1,2,3,4,5\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nNow\n\n$P(X=3)=\\dfrac{\\binom{6}{3}\\binom{5}{5-3}}{\\binom{11}{5}}=\\frac{200}{231}$\n\n3.4.3 Properties of hypergeometric probability distribution\n\n◆ Mean of hypergeometric probability distribution by definition is given by\n\n\\text{Mean}=E(X)=\\sum_x x\\,p(x)=\\sum_{x=0}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}\n\n=0\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}\n\n=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\n\n=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k(k-1)!}{(k-x)!\\,x(x-1)!}\\binom{N-k}{n-x}\n\n=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\frac{(k-1)!}{(k-x)!\\,(x-1)!}\\binom{N-k}{n-x}=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\binom{k-1}{x-1}\\binom{N-k}{n-x}\n\n\\text{Let } y=x-1\\Rightarrow x=y+1\n\n\\text{If } x=1,\\ y=0\n\n\\text{If } x=n,\\ y=n-1\n\n\\therefore E(X)=\\dfrac{k}{\\binom{N}{n}}\\sum_{y=0}^{n-1}\\binom{k-1}{y}\\binom{N-k}{n-y-1}\n\nApply the hypergeometric identity \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k}",
+   "urdu": "مثال 3.21\n\nقرآن پاک کی تلاوت کے ایک بین الاقوامی مقابلے میں بہترین تلاوت کا فیصلہ کرنے کے لیے 11 ججوں کا پینل بنایا گیا۔ دو تلاوتیں R_A اور R_B بہترین سمجھی گئیں جہاں ججوں کی رائے تقسیم ہو گئی۔ چھ جج R_A کے حق میں تھے جبکہ پانچ R_B کے حق میں۔ پینل سے پانچ ججوں کا تصادفی نمونہ لیا گیا۔ احتمال معلوم کریں کہ پانچ ججوں میں سے تین تلاوت R_A کے حق میں ہوں۔\n\nحل:\n\nدیے گئے سوال میں\n\nn=5، X=0,1,2,3,4,5 \\{\\because X=0,1,2,\\ldots\\min(n,k)\\}\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{6}{x}\\binom{11-6}{5-x}}{\\binom{N}{n}}, & x=0,1,2,3,4,5\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nاب\n\n$P(X=3)=\\dfrac{\\binom{6}{3}\\binom{5}{5-3}}{\\binom{11}{5}}=\\frac{200}{231}$\n\n3.4.3 ہائپر جیومیٹرک احتمالی تقسیم کی خصوصیات\n\n◆ تعریف کے مطابق ہائپر جیومیٹرک احتمالی تقسیم کا اوسط یہ ہے\n\n\\text{Mean}=E(X)=\\sum_x x\\,p(x)=\\sum_{x=0}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}\n\n=0\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}\n\n=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\n\n=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k(k-1)!}{(k-x)!\\,x(x-1)!}\\binom{N-k}{n-x}\n\n=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\frac{(k-1)!}{(k-x)!\\,(x-1)!}\\binom{N-k}{n-x}=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\binom{k-1}{x-1}\\binom{N-k}{n-x}\n\n\\text{Let } y=x-1\\Rightarrow x=y+1\n\n\\text{If } x=1,\\ y=0\n\n\\text{If } x=n,\\ y=n-1\n\n\\therefore E(X)=\\dfrac{k}{\\binom{N}{n}}\\sum_{y=0}^{n-1}\\binom{k-1}{y}\\binom{N-k}{n-y-1}\n\nہائپر جیومیٹرک شناخت \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k} کا اطلاق کریں",
+   "pashto": "بېلګه 3.21\n\nد قرآن کریم د تلاوت په یوې نړیوالې سیالۍ کې د غوره تلاوت د ټاکلو لپاره د 11 قاضیانو یوه هیئت جوړ شو. دوه تلاوتونه R_A او R_B غوره وګڼل شول چې پکې د قاضیانو نظر ووېشل شو. شپږ قاضیان د R_A په ګټه او پنځه د R_B په ګټه وو. له هیئت څخه د پنځو قاضیانو تصادفي نمونه واخیستل شوه. احتمال یې پیدا کړئ چې له پنځو قاضیانو درې د R_A تلاوت په ګټه وي.\n\nحل:\n\nپه ورکړل شوې پوښتنه کې\n\nn=5، X=0,1,2,3,4,5 \\{\\because X=0,1,2,\\ldots\\min(n,k)\\}\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{6}{x}\\binom{11-6}{5-x}}{\\binom{N}{n}}, & x=0,1,2,3,4,5\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nاوس\n\n$P(X=3)=\\dfrac{\\binom{6}{3}\\binom{5}{5-3}}{\\binom{11}{5}}=\\frac{200}{231}$\n\n3.4.3 د هایپرجیومټریک احتمالي وېش ځانګړنې\n\n◆ د تعریف له مخې د هایپرجیومټریک احتمالي وېش منځنی دا دی\n\n\\text{Mean}=E(X)=\\sum_x x\\,p(x)=\\sum_{x=0}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}\n\n=0\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}\n\n=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\n\n=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k(k-1)!}{(k-x)!\\,x(x-1)!}\\binom{N-k}{n-x}\n\n=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\frac{(k-1)!}{(k-x)!\\,(x-1)!}\\binom{N-k}{n-x}=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\binom{k-1}{x-1}\\binom{N-k}{n-x}\n\n\\text{Let } y=x-1\\Rightarrow x=y+1\n\n\\text{If } x=1,\\ y=0\n\n\\text{If } x=n,\\ y=n-1\n\n\\therefore E(X)=\\dfrac{k}{\\binom{N}{n}}\\sum_{y=0}^{n-1}\\binom{k-1}{y}\\binom{N-k}{n-y-1}\n\nد هایپرجیومټریک پېژندنه \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k} وکاروئ",
+   "theoryUrdu": "مثال 3.21\n\nقرآن پاک کی تلاوت کے ایک بین الاقوامی مقابلے میں بہترین تلاوت کا فیصلہ کرنے کے لیے 11 ججوں کا پینل بنایا گیا۔ دو تلاوتیں R_A اور R_B بہترین سمجھی گئیں جہاں ججوں کی رائے تقسیم ہو گئی۔ چھ جج R_A کے حق میں تھے جبکہ پانچ R_B کے حق میں۔ پینل سے پانچ ججوں کا تصادفی نمونہ لیا گیا۔ احتمال معلوم کریں کہ پانچ ججوں میں سے تین تلاوت R_A کے حق میں ہوں۔\n\nحل:\n\nدیے گئے سوال میں\n\nn=5، X=0,1,2,3,4,5 \\{\\because X=0,1,2,\\ldots\\min(n,k)\\}\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{6}{x}\\binom{11-6}{5-x}}{\\binom{N}{n}}, & x=0,1,2,3,4,5\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nاب\n\n$P(X=3)=\\dfrac{\\binom{6}{3}\\binom{5}{5-3}}{\\binom{11}{5}}=\\frac{200}{231}$\n\n3.4.3 ہائپر جیومیٹرک احتمالی تقسیم کی خصوصیات\n\n◆ تعریف کے مطابق ہائپر جیومیٹرک احتمالی تقسیم کا اوسط یہ ہے\n\n\\text{Mean}=E(X)=\\sum_x x\\,p(x)=\\sum_{x=0}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}\n\n=0\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}\n\n=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\n\n=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k(k-1)!}{(k-x)!\\,x(x-1)!}\\binom{N-k}{n-x}\n\n=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\frac{(k-1)!}{(k-x)!\\,(x-1)!}\\binom{N-k}{n-x}=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\binom{k-1}{x-1}\\binom{N-k}{n-x}\n\n\\text{Let } y=x-1\\Rightarrow x=y+1\n\n\\text{If } x=1,\\ y=0\n\n\\text{If } x=n,\\ y=n-1\n\n\\therefore E(X)=\\dfrac{k}{\\binom{N}{n}}\\sum_{y=0}^{n-1}\\binom{k-1}{y}\\binom{N-k}{n-y-1}\n\nہائپر جیومیٹرک شناخت \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k} کا اطلاق کریں",
+   "theoryPashto": "بېلګه 3.21\n\nد قرآن کریم د تلاوت په یوې نړیوالې سیالۍ کې د غوره تلاوت د ټاکلو لپاره د 11 قاضیانو یوه هیئت جوړ شو. دوه تلاوتونه R_A او R_B غوره وګڼل شول چې پکې د قاضیانو نظر ووېشل شو. شپږ قاضیان د R_A په ګټه او پنځه د R_B په ګټه وو. له هیئت څخه د پنځو قاضیانو تصادفي نمونه واخیستل شوه. احتمال یې پیدا کړئ چې له پنځو قاضیانو درې د R_A تلاوت په ګټه وي.\n\nحل:\n\nپه ورکړل شوې پوښتنه کې\n\nn=5، X=0,1,2,3,4,5 \\{\\because X=0,1,2,\\ldots\\min(n,k)\\}\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{6}{x}\\binom{11-6}{5-x}}{\\binom{N}{n}}, & x=0,1,2,3,4,5\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nاوس\n\n$P(X=3)=\\dfrac{\\binom{6}{3}\\binom{5}{5-3}}{\\binom{11}{5}}=\\frac{200}{231}$\n\n3.4.3 د هایپرجیومټریک احتمالي وېش ځانګړنې\n\n◆ د تعریف له مخې د هایپرجیومټریک احتمالي وېش منځنی دا دی\n\n\\text{Mean}=E(X)=\\sum_x x\\,p(x)=\\sum_{x=0}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}\n\n=0\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}\n\n=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\n\n=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k(k-1)!}{(k-x)!\\,x(x-1)!}\\binom{N-k}{n-x}\n\n=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\frac{(k-1)!}{(k-x)!\\,(x-1)!}\\binom{N-k}{n-x}=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\binom{k-1}{x-1}\\binom{N-k}{n-x}\n\n\\text{Let } y=x-1\\Rightarrow x=y+1\n\n\\text{If } x=1,\\ y=0\n\n\\text{If } x=n,\\ y=n-1\n\n\\therefore E(X)=\\dfrac{k}{\\binom{N}{n}}\\sum_{y=0}^{n-1}\\binom{k-1}{y}\\binom{N-k}{n-y-1}\n\nد هایپرجیومټریک پېژندنه \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k} وکاروئ",
+   "content": "<p>Example 3.21</p><p>In an international recitation competition of the Holy Quran, a panel of 11 judges is formed to judge the best recitation. Two recitations R_A and R_B were considered to be the best where the opinion of judges got divided. Six judges were in favour of R_A whereas five in favour of R_B. A random sample of five judges was drawn from the panel. Find the probability that out of five judges three are in favour of recitation R_A.</p><p>Solution:</p><p>In the given problem</p><p>n=5, X=0,1,2,3,4,5 \\{\\because X=0,1,2,\\ldots\\min(n,k)\\}</p><p>$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{6}{x}\\binom{11-6}{5-x}}{\\binom{N}{n}}, &amp; x=0,1,2,3,4,5\\\\ 0 &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>Now</p><p>$P(X=3)=\\dfrac{\\binom{6}{3}\\binom{5}{5-3}}{\\binom{11}{5}}=\\frac{200}{231}$</p><p>3.4.3 Properties of hypergeometric probability distribution</p><p>◆ Mean of hypergeometric probability distribution by definition is given by</p><p>\\text{Mean}=E(X)=\\sum_x x\\,p(x)=\\sum_{x=0}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}</p><p>=0\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-k}}{\\binom{N}{n}}</p><p>=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}</p><p>=\\dfrac{1}{\\binom{N}{n}}\\sum_{x=1}^{n}x\\frac{k(k-1)!}{(k-x)!\\,x(x-1)!}\\binom{N-k}{n-x}</p><p>=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\frac{(k-1)!}{(k-x)!\\,(x-1)!}\\binom{N-k}{n-x}=\\dfrac{k}{\\binom{N}{n}}\\sum_{x=1}^{n}\\binom{k-1}{x-1}\\binom{N-k}{n-x}</p><p>\\text{Let } y=x-1\\Rightarrow x=y+1</p><p>\\text{If } x=1,\\ y=0</p><p>\\text{If } x=n,\\ y=n-1</p><p>\\therefore E(X)=\\dfrac{k}{\\binom{N}{n}}\\sum_{y=0}^{n-1}\\binom{k-1}{y}\\binom{N-k}{n-y-1}</p><p>Apply the hypergeometric identity \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "stat12-ex3-21-box"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      15,
+      16,
+      17,
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-ex3-21-box",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 120\" role=\"img\" aria-label=\"Population box\"><rect width=\"260\" height=\"120\" fill=\"white\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\"><rect x=\"100\" y=\"10\" width=\"54\" height=\"54\" fill=\"none\" stroke=\"#111\"/><path d=\"M100 37H154\" stroke=\"#111\"/><text x=\"106\" y=\"31\" font-style=\"italic\">6R<tspan font-size=\"12\" dy=\"4\">A</tspan></text><text x=\"106\" y=\"58\" font-style=\"italic\">5R<tspan font-size=\"12\" dy=\"4\">B</tspan></text><path d=\"M162 25H210\" stroke=\"#111\"/><path d=\"M162 25l9-4v8z\" fill=\"#111\"/><text x=\"218\" y=\"31\" font-style=\"italic\">K</text><text x=\"40\" y=\"100\" font-style=\"italic\">N</text><path d=\"M58 94H96\" stroke=\"#111\"/><path d=\"M104 94l-9-4v8z\" fill=\"#111\"/><text x=\"110\" y=\"100\">11</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 120\" role=\"img\" aria-label=\"Population box\"><rect width=\"260\" height=\"120\" fill=\"white\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\"><rect x=\"100\" y=\"10\" width=\"54\" height=\"54\" fill=\"none\" stroke=\"#111\"/><path d=\"M100 37H154\" stroke=\"#111\"/><text x=\"106\" y=\"31\" font-style=\"italic\">6R<tspan font-size=\"12\" dy=\"4\">A</tspan></text><text x=\"106\" y=\"58\" font-style=\"italic\">5R<tspan font-size=\"12\" dy=\"4\">B</tspan></text><path d=\"M162 25H210\" stroke=\"#111\"/><path d=\"M162 25l9-4v8z\" fill=\"#111\"/><text x=\"218\" y=\"31\" font-style=\"italic\">K</text><text x=\"40\" y=\"100\" font-style=\"italic\">N</text><path d=\"M58 94H96\" stroke=\"#111\"/><path d=\"M104 94l-9-4v8z\" fill=\"#111\"/><text x=\"110\" y=\"100\">11</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 120\" role=\"img\" aria-label=\"Population box\"><rect width=\"260\" height=\"120\" fill=\"white\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\"><rect x=\"100\" y=\"10\" width=\"54\" height=\"54\" fill=\"none\" stroke=\"#111\"/><path d=\"M100 37H154\" stroke=\"#111\"/><text x=\"106\" y=\"31\" font-style=\"italic\">6R<tspan font-size=\"12\" dy=\"4\">A</tspan></text><text x=\"106\" y=\"58\" font-style=\"italic\">5R<tspan font-size=\"12\" dy=\"4\">B</tspan></text><path d=\"M162 25H210\" stroke=\"#111\"/><path d=\"M162 25l9-4v8z\" fill=\"#111\"/><text x=\"218\" y=\"31\" font-style=\"italic\">K</text><text x=\"40\" y=\"100\" font-style=\"italic\">N</text><path d=\"M58 94H96\" stroke=\"#111\"/><path d=\"M104 94l-9-4v8z\" fill=\"#111\"/><text x=\"110\" y=\"100\">11</text></g></svg>",
+     "sourceWidthRatio": 0.4
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 55,
+     "printedPages": [
+      101,
+      102
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p101-200-231",
+   "unit": 3,
+   "printedPage": 101,
+   "description": "Example 3.21 prints P(X=3) = 200/231; the computed value is C(6,3)C(5,2)/C(11,5) = 200/462 = 100/231. Printed value retained."
+  },
+  {
+   "id": "stat12-p102-mean-index",
+   "unit": 3,
+   "printedPage": 102,
+   "description": "The first two lines of the mean derivation print the second binomial as C(N−k, n−k) instead of C(N−k, n−x); printed form retained."
+  }
+ ],
+ "completeUnits": []
+}

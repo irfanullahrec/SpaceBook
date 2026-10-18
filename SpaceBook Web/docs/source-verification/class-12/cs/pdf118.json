@@ -1,0 +1,525 @@
+{
+ "pdfPage": 118,
+ "sections": [
+  {
+   "id": "cs12-u7-summary",
+   "title": "Unit 7 summary",
+   "headingUrdu": "یونٹ 7: خلاصہ",
+   "headingPashto": "۷ څپرکی: لنډیز",
+   "paras": [
+    {
+     "text": "Summary",
+     "urdu": "خلاصہ",
+     "pashto": "لنډیز"
+    },
+    {
+     "text": "A pointer is a variable that points to or refers to another variable. That is, if we have a pointer variable of type “pointer to int” it might point to the int variable.",
+     "urdu": "پوائنٹر ایک ویری ایبل ہے جو دوسرے ویری ایبل کی طرف اشارہ یا حوالہ دیتا ہے۔ یعنی اگر ہمارے پاس ’’pointer to int‘‘ قسم کا پوائنٹر ویری ایبل ہو تو یہ int ویری ایبل کی طرف اشارہ کر سکتا ہے۔",
+     "pashto": "پوائنټر هغه متغیر دی چې بل متغیر ته اشاره یا حواله کوي. یعنې که د \"pointer to int\" ډول پوائنټر متغیر ولرو، کېدای شي int متغیر ته اشاره وکړي."
+    },
+    {
+     "text": "Some tasks in C++ are easier to do with pointers, such as accessing the addresses of variables indirectly and operating their values.",
+     "urdu": "C++ میں کچھ کام پوائنٹرز سے کرنا آسان ہوتے ہیں، جیسے ویری ایبلز کے پتوں تک بالواسطہ رسائی اور ان کی قدروں پر عمل کرنا۔",
+     "pashto": "په C++ کې ځینې کارونه د پوائنټرونو سره اسانه دي، لکه د متغیرونو پتو ته نامستقیم لاسرسی او د هغو پر ارزښتونو عملیه."
+    },
+    {
+     "text": "Like normal variables, Pointer variables are also declared in programs before using them. To declare a pointer variable, the data type of the variable is followed by * symbol.",
+     "urdu": "عام ویری ایبلز کی طرح پوائنٹر ویری ایبلز بھی استعمال سے پہلے پروگراموں میں ڈکلیئر کیے جاتے ہیں۔ پوائنٹر ویری ایبل ڈکلیئر کرنے کے لیے ویری ایبل کی ڈیٹا ٹائپ کے بعد * نشان آتا ہے۔",
+     "pashto": "د عادي متغیرونو په څېر د پوائنټر متغیرونه هم په پروګرامونو کې له کارولو مخکې اعلانېږي. د پوائنټر متغیر د اعلان لپاره د متغیر ډېټا ډول وروسته * نښه راځي."
+    },
+    {
+     "text": "While using pointers in C++ programs, address-of-operator denoted by ampersand & symbol is used to assign the address of variables to the pointer variable.",
+     "urdu": "C++ پروگراموں میں پوائنٹرز استعمال کرتے وقت ایمپرسینڈ & نشان سے ظاہر ہونے والا address-of آپریٹر پوائنٹر ویری ایبل کو ویری ایبلز کا پتہ دینے کے لیے استعمال ہوتا ہے۔",
+     "pashto": "په C++ پروګرامونو کې د پوائنټرونو د کارولو پر مهال د امپرسنډ & نښې ښودل شوی address-of چلونکی د پوائنټر متغیر ته د متغیرونو د پتې ورکولو لپاره کارېږي."
+    },
+    {
+     "text": "In C++ program, if we want to use the value of the variable to which pointer points a special type of operator called dereference operator, denoted by asterisk *; is used with pointers.",
+     "urdu": "C++ پروگرام میں اگر ہم اس ویری ایبل کی قدر استعمال کرنا چاہیں جس کی طرف پوائنٹر اشارہ کرتا ہے تو پوائنٹرز کے ساتھ ستارہ * سے ظاہر ہونے والا ایک خاص آپریٹر یعنی ڈی ریفرنس آپریٹر استعمال ہوتا ہے۔",
+     "pashto": "په C++ پروګرام کې که وغواړو د هغه متغیر ارزښت وکاروو چې پوائنټر ورته اشاره کوي، د پوائنټرونو سره یو ځانګړی چلونکی چې د حوالې‌لرې کولو چلونکی بلل کېږي او په ستوري * ښودل کېږي، کارېږي."
+    },
+    {
+     "text": "In C++ programs, pointers are initialized to addresses of other variables like the initialization of ordinary variables.",
+     "urdu": "C++ پروگراموں میں پوائنٹرز کو عام ویری ایبلز کی ابتدائی قدر کی طرح دوسرے ویری ایبلز کے پتوں سے ابتدائی قدر دی جاتی ہے۔",
+     "pashto": "په C++ پروګرامونو کې پوائنټرونو ته د عادي متغیرونو د لومړني ارزښت په څېر د نورو متغیرونو پتې ورکول کېږي."
+    }
+   ],
+   "theory": "Summary\n\nA pointer is a variable that points to or refers to another variable. That is, if we have a pointer variable of type “pointer to int” it might point to the int variable.\n\nSome tasks in C++ are easier to do with pointers, such as accessing the addresses of variables indirectly and operating their values.\n\nLike normal variables, Pointer variables are also declared in programs before using them. To declare a pointer variable, the data type of the variable is followed by * symbol.\n\nWhile using pointers in C++ programs, address-of-operator denoted by ampersand & symbol is used to assign the address of variables to the pointer variable.\n\nIn C++ program, if we want to use the value of the variable to which pointer points a special type of operator called dereference operator, denoted by asterisk *; is used with pointers.\n\nIn C++ programs, pointers are initialized to addresses of other variables like the initialization of ordinary variables.",
+   "urdu": "خلاصہ\n\nپوائنٹر ایک ویری ایبل ہے جو دوسرے ویری ایبل کی طرف اشارہ یا حوالہ دیتا ہے۔ یعنی اگر ہمارے پاس ’’pointer to int‘‘ قسم کا پوائنٹر ویری ایبل ہو تو یہ int ویری ایبل کی طرف اشارہ کر سکتا ہے۔\n\nC++ میں کچھ کام پوائنٹرز سے کرنا آسان ہوتے ہیں، جیسے ویری ایبلز کے پتوں تک بالواسطہ رسائی اور ان کی قدروں پر عمل کرنا۔\n\nعام ویری ایبلز کی طرح پوائنٹر ویری ایبلز بھی استعمال سے پہلے پروگراموں میں ڈکلیئر کیے جاتے ہیں۔ پوائنٹر ویری ایبل ڈکلیئر کرنے کے لیے ویری ایبل کی ڈیٹا ٹائپ کے بعد * نشان آتا ہے۔\n\nC++ پروگراموں میں پوائنٹرز استعمال کرتے وقت ایمپرسینڈ & نشان سے ظاہر ہونے والا address-of آپریٹر پوائنٹر ویری ایبل کو ویری ایبلز کا پتہ دینے کے لیے استعمال ہوتا ہے۔\n\nC++ پروگرام میں اگر ہم اس ویری ایبل کی قدر استعمال کرنا چاہیں جس کی طرف پوائنٹر اشارہ کرتا ہے تو پوائنٹرز کے ساتھ ستارہ * سے ظاہر ہونے والا ایک خاص آپریٹر یعنی ڈی ریفرنس آپریٹر استعمال ہوتا ہے۔\n\nC++ پروگراموں میں پوائنٹرز کو عام ویری ایبلز کی ابتدائی قدر کی طرح دوسرے ویری ایبلز کے پتوں سے ابتدائی قدر دی جاتی ہے۔",
+   "pashto": "لنډیز\n\nپوائنټر هغه متغیر دی چې بل متغیر ته اشاره یا حواله کوي. یعنې که د \"pointer to int\" ډول پوائنټر متغیر ولرو، کېدای شي int متغیر ته اشاره وکړي.\n\nپه C++ کې ځینې کارونه د پوائنټرونو سره اسانه دي، لکه د متغیرونو پتو ته نامستقیم لاسرسی او د هغو پر ارزښتونو عملیه.\n\nد عادي متغیرونو په څېر د پوائنټر متغیرونه هم په پروګرامونو کې له کارولو مخکې اعلانېږي. د پوائنټر متغیر د اعلان لپاره د متغیر ډېټا ډول وروسته * نښه راځي.\n\nپه C++ پروګرامونو کې د پوائنټرونو د کارولو پر مهال د امپرسنډ & نښې ښودل شوی address-of چلونکی د پوائنټر متغیر ته د متغیرونو د پتې ورکولو لپاره کارېږي.\n\nپه C++ پروګرام کې که وغواړو د هغه متغیر ارزښت وکاروو چې پوائنټر ورته اشاره کوي، د پوائنټرونو سره یو ځانګړی چلونکی چې د حوالې‌لرې کولو چلونکی بلل کېږي او په ستوري * ښودل کېږي، کارېږي.\n\nپه C++ پروګرامونو کې پوائنټرونو ته د عادي متغیرونو د لومړني ارزښت په څېر د نورو متغیرونو پتې ورکول کېږي.",
+   "theoryUrdu": "خلاصہ\n\nپوائنٹر ایک ویری ایبل ہے جو دوسرے ویری ایبل کی طرف اشارہ یا حوالہ دیتا ہے۔ یعنی اگر ہمارے پاس ’’pointer to int‘‘ قسم کا پوائنٹر ویری ایبل ہو تو یہ int ویری ایبل کی طرف اشارہ کر سکتا ہے۔\n\nC++ میں کچھ کام پوائنٹرز سے کرنا آسان ہوتے ہیں، جیسے ویری ایبلز کے پتوں تک بالواسطہ رسائی اور ان کی قدروں پر عمل کرنا۔\n\nعام ویری ایبلز کی طرح پوائنٹر ویری ایبلز بھی استعمال سے پہلے پروگراموں میں ڈکلیئر کیے جاتے ہیں۔ پوائنٹر ویری ایبل ڈکلیئر کرنے کے لیے ویری ایبل کی ڈیٹا ٹائپ کے بعد * نشان آتا ہے۔\n\nC++ پروگراموں میں پوائنٹرز استعمال کرتے وقت ایمپرسینڈ & نشان سے ظاہر ہونے والا address-of آپریٹر پوائنٹر ویری ایبل کو ویری ایبلز کا پتہ دینے کے لیے استعمال ہوتا ہے۔\n\nC++ پروگرام میں اگر ہم اس ویری ایبل کی قدر استعمال کرنا چاہیں جس کی طرف پوائنٹر اشارہ کرتا ہے تو پوائنٹرز کے ساتھ ستارہ * سے ظاہر ہونے والا ایک خاص آپریٹر یعنی ڈی ریفرنس آپریٹر استعمال ہوتا ہے۔\n\nC++ پروگراموں میں پوائنٹرز کو عام ویری ایبلز کی ابتدائی قدر کی طرح دوسرے ویری ایبلز کے پتوں سے ابتدائی قدر دی جاتی ہے۔",
+   "theoryPashto": "لنډیز\n\nپوائنټر هغه متغیر دی چې بل متغیر ته اشاره یا حواله کوي. یعنې که د \"pointer to int\" ډول پوائنټر متغیر ولرو، کېدای شي int متغیر ته اشاره وکړي.\n\nپه C++ کې ځینې کارونه د پوائنټرونو سره اسانه دي، لکه د متغیرونو پتو ته نامستقیم لاسرسی او د هغو پر ارزښتونو عملیه.\n\nد عادي متغیرونو په څېر د پوائنټر متغیرونه هم په پروګرامونو کې له کارولو مخکې اعلانېږي. د پوائنټر متغیر د اعلان لپاره د متغیر ډېټا ډول وروسته * نښه راځي.\n\nپه C++ پروګرامونو کې د پوائنټرونو د کارولو پر مهال د امپرسنډ & نښې ښودل شوی address-of چلونکی د پوائنټر متغیر ته د متغیرونو د پتې ورکولو لپاره کارېږي.\n\nپه C++ پروګرام کې که وغواړو د هغه متغیر ارزښت وکاروو چې پوائنټر ورته اشاره کوي، د پوائنټرونو سره یو ځانګړی چلونکی چې د حوالې‌لرې کولو چلونکی بلل کېږي او په ستوري * ښودل کېږي، کارېږي.\n\nپه C++ پروګرامونو کې پوائنټرونو ته د عادي متغیرونو د لومړني ارزښت په څېر د نورو متغیرونو پتې ورکول کېږي.",
+   "content": "<p>Summary</p><p>A pointer is a variable that points to or refers to another variable. That is, if we have a pointer variable of type “pointer to int” it might point to the int variable.</p><p>Some tasks in C++ are easier to do with pointers, such as accessing the addresses of variables indirectly and operating their values.</p><p>Like normal variables, Pointer variables are also declared in programs before using them. To declare a pointer variable, the data type of the variable is followed by * symbol.</p><p>While using pointers in C++ programs, address-of-operator denoted by ampersand &amp; symbol is used to assign the address of variables to the pointer variable.</p><p>In C++ program, if we want to use the value of the variable to which pointer points a special type of operator called dereference operator, denoted by asterisk *; is used with pointers.</p><p>In C++ programs, pointers are initialized to addresses of other variables like the initialization of ordinary variables.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 118,
+     "printedPages": [
+      224
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 7 summary",
+   "sourcePageLabel": "PDF 118 · p. 224",
+   "unit": 7
+  },
+  {
+   "id": "cs12-u7-exercise",
+   "title": "Unit 7 exercise",
+   "headingUrdu": "یونٹ 7: مشق",
+   "headingPashto": "۷ څپرکی: تمرین",
+   "paras": [
+    {
+     "text": "Exercise",
+     "urdu": "مشق",
+     "pashto": "تمرین"
+    },
+    {
+     "text": "Q.1 Fill in the Blanks.",
+     "urdu": "سوال 1: خالی جگہیں پُر کریں۔",
+     "pashto": "پوښتنه ۱: تش ځایونه ډک کړئ."
+    },
+    {
+     "text": "i. Pointers are special type of variable that store ________ of other variables.",
+     "urdu": "i. پوائنٹرز خاص قسم کے ویری ایبلز ہیں جو دوسرے ویری ایبلز کا ________ محفوظ کرتے ہیں۔",
+     "pashto": "i. پوائنټرونه ځانګړي ډول متغیرونه دي چې د نورو متغیرونو ________ ساتي."
+    },
+    {
+     "text": "ii. If we have a statement int n; and we want to define a pointer to n then its data type must be of the type ________ .",
+     "urdu": "ii. اگر ہمارے پاس بیان int n; ہو اور ہم n کا پوائنٹر بیان کرنا چاہیں تو اس کی ڈیٹا ٹائپ ________ ہونی چاہیے۔",
+     "pashto": "ii. که موږ int n; بیان ولرو او وغواړو n ته پوائنټر تعریف کړو، نو ډېټا ډول یې باید ________ وي."
+    },
+    {
+     "text": "iii. Assigning values to a pointer during its declaration time is called ________ .",
+     "urdu": "iii. ڈکلیریشن کے وقت پوائنٹر کو قدریں دینا ________ کہلاتا ہے۔",
+     "pashto": "iii. د اعلان پر مهال پوائنټر ته د ارزښتونو ورکول ________ بلل کېږي."
+    },
+    {
+     "text": "iv. & is the ________ operator.",
+     "urdu": "iv. & ________ آپریٹر ہے۔",
+     "pashto": "iv. & د ________ چلونکی دی."
+    },
+    {
+     "text": "v. * is the ________ operator which can be read as \"value pointed by\" operator.",
+     "urdu": "v. * ________ آپریٹر ہے جسے \"value pointed by\" آپریٹر پڑھا جا سکتا ہے۔",
+     "pashto": "v. * د ________ چلونکی دی چې د \"value pointed by\" چلونکي په توګه لوستل کېدای شي."
+    },
+    {
+     "text": "Q.2 Select the correct choice for the following Multiple Choice Questions.",
+     "urdu": "سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔",
+     "pashto": "پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ."
+    },
+    {
+     "text": "i. If we have the statement int *Ptr; then to what Ptr point?",
+     "urdu": "i. اگر ہمارے پاس بیان int *Ptr; ہو تو Ptr کس کی طرف اشارہ کرتا ہے؟",
+     "pashto": "i. که موږ int *Ptr; بیان ولرو، نو Ptr څه ته اشاره کوي؟"
+    },
+    {
+     "text": "(a) Points to an integer type variable",
+     "urdu": "(a) integer قسم کے ویری ایبل کی طرف",
+     "pashto": "(a) د integer ډول متغیر ته"
+    },
+    {
+     "text": "(b) Points to a character type variable",
+     "urdu": "(b) character قسم کے ویری ایبل کی طرف",
+     "pashto": "(b) د character ډول متغیر ته"
+    },
+    {
+     "text": "(c) Points to a floating point type variable",
+     "urdu": "(c) فلوٹنگ پوائنٹ قسم کے ویری ایبل کی طرف",
+     "pashto": "(c) د اعشاري ډول متغیر ته"
+    },
+    {
+     "text": "(d) None of above",
+     "urdu": "(d) ان میں سے کوئی نہیں",
+     "pashto": "(d) له پورته هېڅ یو"
+    },
+    {
+     "text": "ii. A pointer is:",
+     "urdu": "ii. پوائنٹر ہے:",
+     "pashto": "ii. پوائنټر دی:"
+    },
+    {
+     "text": "(a) A keyword used to create variables",
+     "urdu": "(a) ویری ایبلز بنانے کے لیے استعمال ہونے والا کلیدی لفظ",
+     "pashto": "(a) د متغیرونو د جوړولو لپاره کارېدونکې کلیدي کلمه"
+    },
+    {
+     "text": "(b) A variable that stores address of an instruction",
+     "urdu": "(b) ایک ویری ایبل جو کسی ہدایت کا پتہ محفوظ کرتا ہے",
+     "pashto": "(b) هغه متغیر چې د یوې لارښوونې پته ساتي"
+    },
+    {
+     "text": "(c) A variable that stores address of another variable",
+     "urdu": "(c) ایک ویری ایبل جو دوسرے ویری ایبل کا پتہ محفوظ کرتا ہے",
+     "pashto": "(c) هغه متغیر چې د بل متغیر پته ساتي"
+    },
+    {
+     "text": "(d) All of the above",
+     "urdu": "(d) مندرجہ بالا سب",
+     "pashto": "(d) پورته ټول"
+    },
+    {
+     "text": "iii. The operator used to get value at address stored in a pointer variable is",
+     "urdu": "iii. پوائنٹر ویری ایبل میں محفوظ پتے پر قدر حاصل کرنے کے لیے استعمال ہونے والا آپریٹر ہے",
+     "pashto": "iii. هغه چلونکی چې په پوائنټر متغیر کې ساتل شوې پته کې ارزښت ترلاسه کوي"
+    },
+    {
+     "text": "(a) *",
+     "urdu": "(a) *",
+     "pashto": "(a) *"
+    },
+    {
+     "text": "(b) &",
+     "urdu": "(b) &",
+     "pashto": "(b) &"
+    },
+    {
+     "text": "(c) &&",
+     "urdu": "(c) &&",
+     "pashto": "(c) &&"
+    },
+    {
+     "text": "(d) ||",
+     "urdu": "(d) ||",
+     "pashto": "(d) ||"
+    },
+    {
+     "text": "iv. Which of the statements is correct about the following segment code?",
+     "urdu": "iv. کوڈ کے درج ذیل حصے کے بارے میں کون سا بیان درست ہے؟",
+     "pashto": "iv. د کوډ د لاندې برخې په اړه کوم بیان سم دی؟"
+    },
+    {
+     "text": "int i=10;\nint *j=&i;",
+     "urdu": "int i=10;\nint *j=&i;",
+     "pashto": "int i=10;\nint *j=&i;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "(a) j and i are pointers to an int",
+     "urdu": "(a) j اور i دونوں int کے پوائنٹرز ہیں",
+     "pashto": "(a) j او i دواړه int ته پوائنټرونه دي"
+    },
+    {
+     "text": "(b) i is a pointer to an int and stores address of j",
+     "urdu": "(b) i ایک int کا پوائنٹر ہے اور j کا پتہ محفوظ کرتا ہے",
+     "pashto": "(b) i یو int ته پوائنټر دی او د j پته ساتي"
+    },
+    {
+     "text": "(c) j is a pointer to an int and stores address of i",
+     "urdu": "(c) j ایک int کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے",
+     "pashto": "(c) j یو int ته پوائنټر دی او د i پته ساتي"
+    },
+    {
+     "text": "(d) j is a pointer to a pointer to an int and stores address of i",
+     "urdu": "(d) j ایک int کے پوائنٹر کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے",
+     "pashto": "(d) j د int پوائنټر ته پوائنټر دی او د i پته ساتي"
+    },
+    {
+     "text": "v. In pointers, dereference operator * is used to:",
+     "urdu": "v. پوائنٹرز میں ڈی ریفرنس آپریٹر * استعمال ہوتا ہے:",
+     "pashto": "v. په پوائنټرونو کې د حوالې‌لرې کولو چلونکی * کارېږي:"
+    },
+    {
+     "text": "(a) Address the value of the pointer variable.",
+     "urdu": "(a) پوائنٹر ویری ایبل کی قدر کا پتہ دینے کے لیے",
+     "pashto": "(a) د پوائنټر متغیر ارزښت ته پته ورکولو لپاره"
+    },
+    {
+     "text": "(b) Points to the value stored in the variable pointed by the pointer variable",
+     "urdu": "(b) پوائنٹر ویری ایبل کی طرف سے اشارہ کردہ ویری ایبل میں محفوظ قدر کی طرف اشارہ کرنے کے لیے",
+     "pashto": "(b) هغه ارزښت ته اشاره چې د پوائنټر متغیر په اشاره شوي متغیر کې ساتل شوی"
+    },
+    {
+     "text": "(c) Both a and b",
+     "urdu": "(c) a اور b دونوں",
+     "pashto": "(c) a او b دواړه"
+    },
+    {
+     "text": "(d) None of the above",
+     "urdu": "(d) ان میں سے کوئی نہیں",
+     "pashto": "(d) له پورته هېڅ یو"
+    },
+    {
+     "text": "Q.3 Write TRUE/FALSE against the following statements.",
+     "urdu": "سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔",
+     "pashto": "پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ."
+    },
+    {
+     "text": "i. The statement int *ptr; defines an ordinary C++ variable.",
+     "urdu": "i. بیان int *ptr; ایک عام C++ ویری ایبل بیان کرتا ہے۔",
+     "pashto": "i. int *ptr; بیان یو عادي C++ متغیر تعریفوي."
+    },
+    {
+     "text": "ii. The following lines of codes assign the value of the variable Temp to the pointer variable PTemp.",
+     "urdu": "ii. کوڈ کی درج ذیل لائنیں ویری ایبل Temp کی قدر پوائنٹر ویری ایبل PTemp کو دیتی ہیں۔",
+     "pashto": "ii. د کوډ لاندې کرښې د Temp متغیر ارزښت د PTemp پوائنټر متغیر ته ورکوي."
+    },
+    {
+     "text": "float Temp;\nfloat *PTemp = &Temp;",
+     "urdu": "float Temp;\nfloat *PTemp = &Temp;",
+     "pashto": "float Temp;\nfloat *PTemp = &Temp;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "iii. Pointer variables can be initialized by addresses of the variables to which they refer.",
+     "urdu": "iii. پوائنٹر ویری ایبلز کو ان ویری ایبلز کے پتوں سے ابتدائی قدر دی جا سکتی ہے جن کی طرف وہ اشارہ کرتے ہیں۔",
+     "pashto": "iii. د پوائنټر متغیرونو ته د هغو متغیرونو پتې لومړنی ارزښت ورکول کېدای شي چې ورته اشاره کوي."
+    },
+    {
+     "text": "iv. To assign addresses to pointers, a programmer needs a special type of operator called address-of-operator &.",
+     "urdu": "iv. پوائنٹرز کو پتے دینے کے لیے پروگرامر کو address-of-operator & نامی خاص آپریٹر کی ضرورت ہوتی ہے۔",
+     "pashto": "iv. پوائنټرونو ته د پتو ورکولو لپاره پروګرام جوړوونکی د address-of-operator & په نوم ځانګړي چلونکي ته اړتیا لري."
+    },
+    {
+     "text": "v. When a variable is declared in C++, the compiler reserves location for this variable in computer memory to store data.",
+     "urdu": "v. جب C++ میں ویری ایبل ڈکلیئر کیا جاتا ہے تو کمپائلر ڈیٹا محفوظ کرنے کے لیے کمپیوٹر میموری میں اس ویری ایبل کے لیے مقام مختص کرتا ہے۔",
+     "pashto": "v. کله چې په C++ کې یو متغیر اعلان شي، کمپایلر د ډېټا د ساتلو لپاره د کمپیوټر په حافظه کې د دې متغیر لپاره ځای ساتي."
+    },
+    {
+     "text": "Q.4 Define the term pointer. Describe the advantages of using pointer variables.",
+     "urdu": "Q.4 پوائنٹر کی اصطلاح کی تعریف کریں۔ پوائنٹر ویری ایبلز کے استعمال کے فوائد بیان کریں۔",
+     "pashto": "Q.4 د پوائنټر اصطلاح تعریف کړئ. د پوائنټر متغیرونو د کارونې ګټې بیان کړئ."
+    },
+    {
+     "text": "Q.5 What is the difference between the dereference operator * and reference operator &? Explain with the help of some lines of code.",
+     "urdu": "Q.5 ڈی ریفرنس آپریٹر * اور حوالہ آپریٹر & میں کیا فرق ہے؟ کوڈ کی چند لائنوں کی مدد سے وضاحت کریں۔",
+     "pashto": "Q.5 د حوالې‌لرې کولو چلونکي * او د حوالې چلونکي & ترمنځ څه توپیر دی؟ د کوډ د څو کرښو په مرسته یې تشریح کړئ."
+    },
+    {
+     "text": "Q.6 What is meant by the term pointer initialization? Write a simple program to illustrate this concept.",
+     "urdu": "Q.6 پوائنٹر انیشیلائزیشن کی اصطلاح سے کیا مراد ہے؟ اس تصور کی وضاحت کے لیے ایک سادہ پروگرام لکھیں۔",
+     "pashto": "Q.6 د پوائنټر د لومړني ارزښت ورکولو اصطلاح څه معنا لري؟ د دې مفهوم د ښودلو لپاره یو ساده پروګرام ولیکئ."
+    },
+    {
+     "text": "Q.7 How the declaration of a pointer variable is different from the declaration of a variable.",
+     "urdu": "Q.7 پوائنٹر ویری ایبل کی ڈکلیریشن عام ویری ایبل کی ڈکلیریشن سے کیسے مختلف ہے۔",
+     "pashto": "Q.7 د پوائنټر متغیر اعلان د یوه متغیر له اعلان څخه څنګه توپیر لري."
+    }
+   ],
+   "theory": "Exercise\n\nQ.1 Fill in the Blanks.\n\ni. Pointers are special type of variable that store ________ of other variables.\n\nii. If we have a statement int n; and we want to define a pointer to n then its data type must be of the type ________ .\n\niii. Assigning values to a pointer during its declaration time is called ________ .\n\niv. & is the ________ operator.\n\nv. * is the ________ operator which can be read as \"value pointed by\" operator.\n\nQ.2 Select the correct choice for the following Multiple Choice Questions.\n\ni. If we have the statement int *Ptr; then to what Ptr point?\n\n(a) Points to an integer type variable\n\n(b) Points to a character type variable\n\n(c) Points to a floating point type variable\n\n(d) None of above\n\nii. A pointer is:\n\n(a) A keyword used to create variables\n\n(b) A variable that stores address of an instruction\n\n(c) A variable that stores address of another variable\n\n(d) All of the above\n\niii. The operator used to get value at address stored in a pointer variable is\n\n(a) *\n\n(b) &\n\n(c) &&\n\n(d) ||\n\niv. Which of the statements is correct about the following segment code?\n\nint i=10;\nint *j=&i;\n\n(a) j and i are pointers to an int\n\n(b) i is a pointer to an int and stores address of j\n\n(c) j is a pointer to an int and stores address of i\n\n(d) j is a pointer to a pointer to an int and stores address of i\n\nv. In pointers, dereference operator * is used to:\n\n(a) Address the value of the pointer variable.\n\n(b) Points to the value stored in the variable pointed by the pointer variable\n\n(c) Both a and b\n\n(d) None of the above\n\nQ.3 Write TRUE/FALSE against the following statements.\n\ni. The statement int *ptr; defines an ordinary C++ variable.\n\nii. The following lines of codes assign the value of the variable Temp to the pointer variable PTemp.\n\nfloat Temp;\nfloat *PTemp = &Temp;\n\niii. Pointer variables can be initialized by addresses of the variables to which they refer.\n\niv. To assign addresses to pointers, a programmer needs a special type of operator called address-of-operator &.\n\nv. When a variable is declared in C++, the compiler reserves location for this variable in computer memory to store data.\n\nQ.4 Define the term pointer. Describe the advantages of using pointer variables.\n\nQ.5 What is the difference between the dereference operator * and reference operator &? Explain with the help of some lines of code.\n\nQ.6 What is meant by the term pointer initialization? Write a simple program to illustrate this concept.\n\nQ.7 How the declaration of a pointer variable is different from the declaration of a variable.",
+   "urdu": "مشق\n\nسوال 1: خالی جگہیں پُر کریں۔\n\ni. پوائنٹرز خاص قسم کے ویری ایبلز ہیں جو دوسرے ویری ایبلز کا ________ محفوظ کرتے ہیں۔\n\nii. اگر ہمارے پاس بیان int n; ہو اور ہم n کا پوائنٹر بیان کرنا چاہیں تو اس کی ڈیٹا ٹائپ ________ ہونی چاہیے۔\n\niii. ڈکلیریشن کے وقت پوائنٹر کو قدریں دینا ________ کہلاتا ہے۔\n\niv. & ________ آپریٹر ہے۔\n\nv. * ________ آپریٹر ہے جسے \"value pointed by\" آپریٹر پڑھا جا سکتا ہے۔\n\nسوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔\n\ni. اگر ہمارے پاس بیان int *Ptr; ہو تو Ptr کس کی طرف اشارہ کرتا ہے؟\n\n(a) integer قسم کے ویری ایبل کی طرف\n\n(b) character قسم کے ویری ایبل کی طرف\n\n(c) فلوٹنگ پوائنٹ قسم کے ویری ایبل کی طرف\n\n(d) ان میں سے کوئی نہیں\n\nii. پوائنٹر ہے:\n\n(a) ویری ایبلز بنانے کے لیے استعمال ہونے والا کلیدی لفظ\n\n(b) ایک ویری ایبل جو کسی ہدایت کا پتہ محفوظ کرتا ہے\n\n(c) ایک ویری ایبل جو دوسرے ویری ایبل کا پتہ محفوظ کرتا ہے\n\n(d) مندرجہ بالا سب\n\niii. پوائنٹر ویری ایبل میں محفوظ پتے پر قدر حاصل کرنے کے لیے استعمال ہونے والا آپریٹر ہے\n\n(a) *\n\n(b) &\n\n(c) &&\n\n(d) ||\n\niv. کوڈ کے درج ذیل حصے کے بارے میں کون سا بیان درست ہے؟\n\nint i=10;\nint *j=&i;\n\n(a) j اور i دونوں int کے پوائنٹرز ہیں\n\n(b) i ایک int کا پوائنٹر ہے اور j کا پتہ محفوظ کرتا ہے\n\n(c) j ایک int کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے\n\n(d) j ایک int کے پوائنٹر کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے\n\nv. پوائنٹرز میں ڈی ریفرنس آپریٹر * استعمال ہوتا ہے:\n\n(a) پوائنٹر ویری ایبل کی قدر کا پتہ دینے کے لیے\n\n(b) پوائنٹر ویری ایبل کی طرف سے اشارہ کردہ ویری ایبل میں محفوظ قدر کی طرف اشارہ کرنے کے لیے\n\n(c) a اور b دونوں\n\n(d) ان میں سے کوئی نہیں\n\nسوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔\n\ni. بیان int *ptr; ایک عام C++ ویری ایبل بیان کرتا ہے۔\n\nii. کوڈ کی درج ذیل لائنیں ویری ایبل Temp کی قدر پوائنٹر ویری ایبل PTemp کو دیتی ہیں۔\n\nfloat Temp;\nfloat *PTemp = &Temp;\n\niii. پوائنٹر ویری ایبلز کو ان ویری ایبلز کے پتوں سے ابتدائی قدر دی جا سکتی ہے جن کی طرف وہ اشارہ کرتے ہیں۔\n\niv. پوائنٹرز کو پتے دینے کے لیے پروگرامر کو address-of-operator & نامی خاص آپریٹر کی ضرورت ہوتی ہے۔\n\nv. جب C++ میں ویری ایبل ڈکلیئر کیا جاتا ہے تو کمپائلر ڈیٹا محفوظ کرنے کے لیے کمپیوٹر میموری میں اس ویری ایبل کے لیے مقام مختص کرتا ہے۔\n\nQ.4 پوائنٹر کی اصطلاح کی تعریف کریں۔ پوائنٹر ویری ایبلز کے استعمال کے فوائد بیان کریں۔\n\nQ.5 ڈی ریفرنس آپریٹر * اور حوالہ آپریٹر & میں کیا فرق ہے؟ کوڈ کی چند لائنوں کی مدد سے وضاحت کریں۔\n\nQ.6 پوائنٹر انیشیلائزیشن کی اصطلاح سے کیا مراد ہے؟ اس تصور کی وضاحت کے لیے ایک سادہ پروگرام لکھیں۔\n\nQ.7 پوائنٹر ویری ایبل کی ڈکلیریشن عام ویری ایبل کی ڈکلیریشن سے کیسے مختلف ہے۔",
+   "pashto": "تمرین\n\nپوښتنه ۱: تش ځایونه ډک کړئ.\n\ni. پوائنټرونه ځانګړي ډول متغیرونه دي چې د نورو متغیرونو ________ ساتي.\n\nii. که موږ int n; بیان ولرو او وغواړو n ته پوائنټر تعریف کړو، نو ډېټا ډول یې باید ________ وي.\n\niii. د اعلان پر مهال پوائنټر ته د ارزښتونو ورکول ________ بلل کېږي.\n\niv. & د ________ چلونکی دی.\n\nv. * د ________ چلونکی دی چې د \"value pointed by\" چلونکي په توګه لوستل کېدای شي.\n\nپوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.\n\ni. که موږ int *Ptr; بیان ولرو، نو Ptr څه ته اشاره کوي؟\n\n(a) د integer ډول متغیر ته\n\n(b) د character ډول متغیر ته\n\n(c) د اعشاري ډول متغیر ته\n\n(d) له پورته هېڅ یو\n\nii. پوائنټر دی:\n\n(a) د متغیرونو د جوړولو لپاره کارېدونکې کلیدي کلمه\n\n(b) هغه متغیر چې د یوې لارښوونې پته ساتي\n\n(c) هغه متغیر چې د بل متغیر پته ساتي\n\n(d) پورته ټول\n\niii. هغه چلونکی چې په پوائنټر متغیر کې ساتل شوې پته کې ارزښت ترلاسه کوي\n\n(a) *\n\n(b) &\n\n(c) &&\n\n(d) ||\n\niv. د کوډ د لاندې برخې په اړه کوم بیان سم دی؟\n\nint i=10;\nint *j=&i;\n\n(a) j او i دواړه int ته پوائنټرونه دي\n\n(b) i یو int ته پوائنټر دی او د j پته ساتي\n\n(c) j یو int ته پوائنټر دی او د i پته ساتي\n\n(d) j د int پوائنټر ته پوائنټر دی او د i پته ساتي\n\nv. په پوائنټرونو کې د حوالې‌لرې کولو چلونکی * کارېږي:\n\n(a) د پوائنټر متغیر ارزښت ته پته ورکولو لپاره\n\n(b) هغه ارزښت ته اشاره چې د پوائنټر متغیر په اشاره شوي متغیر کې ساتل شوی\n\n(c) a او b دواړه\n\n(d) له پورته هېڅ یو\n\nپوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.\n\ni. int *ptr; بیان یو عادي C++ متغیر تعریفوي.\n\nii. د کوډ لاندې کرښې د Temp متغیر ارزښت د PTemp پوائنټر متغیر ته ورکوي.\n\nfloat Temp;\nfloat *PTemp = &Temp;\n\niii. د پوائنټر متغیرونو ته د هغو متغیرونو پتې لومړنی ارزښت ورکول کېدای شي چې ورته اشاره کوي.\n\niv. پوائنټرونو ته د پتو ورکولو لپاره پروګرام جوړوونکی د address-of-operator & په نوم ځانګړي چلونکي ته اړتیا لري.\n\nv. کله چې په C++ کې یو متغیر اعلان شي، کمپایلر د ډېټا د ساتلو لپاره د کمپیوټر په حافظه کې د دې متغیر لپاره ځای ساتي.\n\nQ.4 د پوائنټر اصطلاح تعریف کړئ. د پوائنټر متغیرونو د کارونې ګټې بیان کړئ.\n\nQ.5 د حوالې‌لرې کولو چلونکي * او د حوالې چلونکي & ترمنځ څه توپیر دی؟ د کوډ د څو کرښو په مرسته یې تشریح کړئ.\n\nQ.6 د پوائنټر د لومړني ارزښت ورکولو اصطلاح څه معنا لري؟ د دې مفهوم د ښودلو لپاره یو ساده پروګرام ولیکئ.\n\nQ.7 د پوائنټر متغیر اعلان د یوه متغیر له اعلان څخه څنګه توپیر لري.",
+   "theoryUrdu": "مشق\n\nسوال 1: خالی جگہیں پُر کریں۔\n\ni. پوائنٹرز خاص قسم کے ویری ایبلز ہیں جو دوسرے ویری ایبلز کا ________ محفوظ کرتے ہیں۔\n\nii. اگر ہمارے پاس بیان int n; ہو اور ہم n کا پوائنٹر بیان کرنا چاہیں تو اس کی ڈیٹا ٹائپ ________ ہونی چاہیے۔\n\niii. ڈکلیریشن کے وقت پوائنٹر کو قدریں دینا ________ کہلاتا ہے۔\n\niv. & ________ آپریٹر ہے۔\n\nv. * ________ آپریٹر ہے جسے \"value pointed by\" آپریٹر پڑھا جا سکتا ہے۔\n\nسوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔\n\ni. اگر ہمارے پاس بیان int *Ptr; ہو تو Ptr کس کی طرف اشارہ کرتا ہے؟\n\n(a) integer قسم کے ویری ایبل کی طرف\n\n(b) character قسم کے ویری ایبل کی طرف\n\n(c) فلوٹنگ پوائنٹ قسم کے ویری ایبل کی طرف\n\n(d) ان میں سے کوئی نہیں\n\nii. پوائنٹر ہے:\n\n(a) ویری ایبلز بنانے کے لیے استعمال ہونے والا کلیدی لفظ\n\n(b) ایک ویری ایبل جو کسی ہدایت کا پتہ محفوظ کرتا ہے\n\n(c) ایک ویری ایبل جو دوسرے ویری ایبل کا پتہ محفوظ کرتا ہے\n\n(d) مندرجہ بالا سب\n\niii. پوائنٹر ویری ایبل میں محفوظ پتے پر قدر حاصل کرنے کے لیے استعمال ہونے والا آپریٹر ہے\n\n(a) *\n\n(b) &\n\n(c) &&\n\n(d) ||\n\niv. کوڈ کے درج ذیل حصے کے بارے میں کون سا بیان درست ہے؟\n\nint i=10;\nint *j=&i;\n\n(a) j اور i دونوں int کے پوائنٹرز ہیں\n\n(b) i ایک int کا پوائنٹر ہے اور j کا پتہ محفوظ کرتا ہے\n\n(c) j ایک int کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے\n\n(d) j ایک int کے پوائنٹر کا پوائنٹر ہے اور i کا پتہ محفوظ کرتا ہے\n\nv. پوائنٹرز میں ڈی ریفرنس آپریٹر * استعمال ہوتا ہے:\n\n(a) پوائنٹر ویری ایبل کی قدر کا پتہ دینے کے لیے\n\n(b) پوائنٹر ویری ایبل کی طرف سے اشارہ کردہ ویری ایبل میں محفوظ قدر کی طرف اشارہ کرنے کے لیے\n\n(c) a اور b دونوں\n\n(d) ان میں سے کوئی نہیں\n\nسوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔\n\ni. بیان int *ptr; ایک عام C++ ویری ایبل بیان کرتا ہے۔\n\nii. کوڈ کی درج ذیل لائنیں ویری ایبل Temp کی قدر پوائنٹر ویری ایبل PTemp کو دیتی ہیں۔\n\nfloat Temp;\nfloat *PTemp = &Temp;\n\niii. پوائنٹر ویری ایبلز کو ان ویری ایبلز کے پتوں سے ابتدائی قدر دی جا سکتی ہے جن کی طرف وہ اشارہ کرتے ہیں۔\n\niv. پوائنٹرز کو پتے دینے کے لیے پروگرامر کو address-of-operator & نامی خاص آپریٹر کی ضرورت ہوتی ہے۔\n\nv. جب C++ میں ویری ایبل ڈکلیئر کیا جاتا ہے تو کمپائلر ڈیٹا محفوظ کرنے کے لیے کمپیوٹر میموری میں اس ویری ایبل کے لیے مقام مختص کرتا ہے۔\n\nQ.4 پوائنٹر کی اصطلاح کی تعریف کریں۔ پوائنٹر ویری ایبلز کے استعمال کے فوائد بیان کریں۔\n\nQ.5 ڈی ریفرنس آپریٹر * اور حوالہ آپریٹر & میں کیا فرق ہے؟ کوڈ کی چند لائنوں کی مدد سے وضاحت کریں۔\n\nQ.6 پوائنٹر انیشیلائزیشن کی اصطلاح سے کیا مراد ہے؟ اس تصور کی وضاحت کے لیے ایک سادہ پروگرام لکھیں۔\n\nQ.7 پوائنٹر ویری ایبل کی ڈکلیریشن عام ویری ایبل کی ڈکلیریشن سے کیسے مختلف ہے۔",
+   "theoryPashto": "تمرین\n\nپوښتنه ۱: تش ځایونه ډک کړئ.\n\ni. پوائنټرونه ځانګړي ډول متغیرونه دي چې د نورو متغیرونو ________ ساتي.\n\nii. که موږ int n; بیان ولرو او وغواړو n ته پوائنټر تعریف کړو، نو ډېټا ډول یې باید ________ وي.\n\niii. د اعلان پر مهال پوائنټر ته د ارزښتونو ورکول ________ بلل کېږي.\n\niv. & د ________ چلونکی دی.\n\nv. * د ________ چلونکی دی چې د \"value pointed by\" چلونکي په توګه لوستل کېدای شي.\n\nپوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.\n\ni. که موږ int *Ptr; بیان ولرو، نو Ptr څه ته اشاره کوي؟\n\n(a) د integer ډول متغیر ته\n\n(b) د character ډول متغیر ته\n\n(c) د اعشاري ډول متغیر ته\n\n(d) له پورته هېڅ یو\n\nii. پوائنټر دی:\n\n(a) د متغیرونو د جوړولو لپاره کارېدونکې کلیدي کلمه\n\n(b) هغه متغیر چې د یوې لارښوونې پته ساتي\n\n(c) هغه متغیر چې د بل متغیر پته ساتي\n\n(d) پورته ټول\n\niii. هغه چلونکی چې په پوائنټر متغیر کې ساتل شوې پته کې ارزښت ترلاسه کوي\n\n(a) *\n\n(b) &\n\n(c) &&\n\n(d) ||\n\niv. د کوډ د لاندې برخې په اړه کوم بیان سم دی؟\n\nint i=10;\nint *j=&i;\n\n(a) j او i دواړه int ته پوائنټرونه دي\n\n(b) i یو int ته پوائنټر دی او د j پته ساتي\n\n(c) j یو int ته پوائنټر دی او د i پته ساتي\n\n(d) j د int پوائنټر ته پوائنټر دی او د i پته ساتي\n\nv. په پوائنټرونو کې د حوالې‌لرې کولو چلونکی * کارېږي:\n\n(a) د پوائنټر متغیر ارزښت ته پته ورکولو لپاره\n\n(b) هغه ارزښت ته اشاره چې د پوائنټر متغیر په اشاره شوي متغیر کې ساتل شوی\n\n(c) a او b دواړه\n\n(d) له پورته هېڅ یو\n\nپوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.\n\ni. int *ptr; بیان یو عادي C++ متغیر تعریفوي.\n\nii. د کوډ لاندې کرښې د Temp متغیر ارزښت د PTemp پوائنټر متغیر ته ورکوي.\n\nfloat Temp;\nfloat *PTemp = &Temp;\n\niii. د پوائنټر متغیرونو ته د هغو متغیرونو پتې لومړنی ارزښت ورکول کېدای شي چې ورته اشاره کوي.\n\niv. پوائنټرونو ته د پتو ورکولو لپاره پروګرام جوړوونکی د address-of-operator & په نوم ځانګړي چلونکي ته اړتیا لري.\n\nv. کله چې په C++ کې یو متغیر اعلان شي، کمپایلر د ډېټا د ساتلو لپاره د کمپیوټر په حافظه کې د دې متغیر لپاره ځای ساتي.\n\nQ.4 د پوائنټر اصطلاح تعریف کړئ. د پوائنټر متغیرونو د کارونې ګټې بیان کړئ.\n\nQ.5 د حوالې‌لرې کولو چلونکي * او د حوالې چلونکي & ترمنځ څه توپیر دی؟ د کوډ د څو کرښو په مرسته یې تشریح کړئ.\n\nQ.6 د پوائنټر د لومړني ارزښت ورکولو اصطلاح څه معنا لري؟ د دې مفهوم د ښودلو لپاره یو ساده پروګرام ولیکئ.\n\nQ.7 د پوائنټر متغیر اعلان د یوه متغیر له اعلان څخه څنګه توپیر لري.",
+   "content": "<p>Exercise</p><p>Q.1 Fill in the Blanks.</p><p>i. Pointers are special type of variable that store ________ of other variables.</p><p>ii. If we have a statement int n; and we want to define a pointer to n then its data type must be of the type ________ .</p><p>iii. Assigning values to a pointer during its declaration time is called ________ .</p><p>iv. &amp; is the ________ operator.</p><p>v. * is the ________ operator which can be read as &quot;value pointed by&quot; operator.</p><p>Q.2 Select the correct choice for the following Multiple Choice Questions.</p><p>i. If we have the statement int *Ptr; then to what Ptr point?</p><p>(a) Points to an integer type variable</p><p>(b) Points to a character type variable</p><p>(c) Points to a floating point type variable</p><p>(d) None of above</p><p>ii. A pointer is:</p><p>(a) A keyword used to create variables</p><p>(b) A variable that stores address of an instruction</p><p>(c) A variable that stores address of another variable</p><p>(d) All of the above</p><p>iii. The operator used to get value at address stored in a pointer variable is</p><p>(a) *</p><p>(b) &amp;</p><p>(c) &amp;&amp;</p><p>(d) ||</p><p>iv. Which of the statements is correct about the following segment code?</p><p>int i=10;\nint *j=&amp;i;</p><p>(a) j and i are pointers to an int</p><p>(b) i is a pointer to an int and stores address of j</p><p>(c) j is a pointer to an int and stores address of i</p><p>(d) j is a pointer to a pointer to an int and stores address of i</p><p>v. In pointers, dereference operator * is used to:</p><p>(a) Address the value of the pointer variable.</p><p>(b) Points to the value stored in the variable pointed by the pointer variable</p><p>(c) Both a and b</p><p>(d) None of the above</p><p>Q.3 Write TRUE/FALSE against the following statements.</p><p>i. The statement int *ptr; defines an ordinary C++ variable.</p><p>ii. The following lines of codes assign the value of the variable Temp to the pointer variable PTemp.</p><p>float Temp;\nfloat *PTemp = &amp;Temp;</p><p>iii. Pointer variables can be initialized by addresses of the variables to which they refer.</p><p>iv. To assign addresses to pointers, a programmer needs a special type of operator called address-of-operator &amp;.</p><p>v. When a variable is declared in C++, the compiler reserves location for this variable in computer memory to store data.</p><p>Q.4 Define the term pointer. Describe the advantages of using pointer variables.</p><p>Q.5 What is the difference between the dereference operator * and reference operator &amp;? Explain with the help of some lines of code.</p><p>Q.6 What is meant by the term pointer initialization? Write a simple program to illustrate this concept.</p><p>Q.7 How the declaration of a pointer variable is different from the declaration of a variable.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      14,
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      19,
+      20,
+      21,
+      22
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      23
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      24
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      25,
+      26,
+      27,
+      28
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      29
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      30,
+      31,
+      32,
+      33
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      34
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      35,
+      36
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      37
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      38,
+      39,
+      40
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      41
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      42
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      43
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      44
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 118,
+     "printedPages": [
+      225,
+      226
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 7 exercise",
+   "sourcePageLabel": "PDF 118 · p. 225–226",
+   "sourceNote": "The exercise runs from p.225 to p.226 (PDF119) and is recorded here whole.",
+   "unit": 7
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf118",
+   "unit": 7,
+   "printedPage": 225,
+   "description": "Q2(i) “then to what Ptr point?”; Q2(iv) “segment code”; Q3(ii) “lines of codes”; Q7 ends with a full stop instead of a question mark. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

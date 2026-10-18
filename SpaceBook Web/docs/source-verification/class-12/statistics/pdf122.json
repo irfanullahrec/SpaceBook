@@ -1,0 +1,294 @@
+{
+ "pdfPage": 122,
+ "sections": [
+  {
+   "id": "stat12-p122-regions-tails",
+   "title": "Significance level, test statistic, rejection regions and one/two-tailed tests; 7.2 forms of H₀/H₁",
+   "headingUrdu": "معنویت کی سطح، جانچ کا شماریہ، رد کے علاقے اور یک/دو طرفہ جانچ؛ 7.2 H₀/H₁ کی شکلیں",
+   "headingPashto": "د معنی‌داریت کچه، د ازموینې احصاییه، د ردولو سیمې او یو/دوه لوري ازموینې؛ 7.2 د H₀/H₁ بڼې",
+   "paras": [
+    {
+     "text": "• Significance level",
+     "urdu": "• معنویت کی سطح",
+     "pashto": "• د معنی‌داریت کچه"
+    },
+    {
+     "text": "The probability of type-I error which we are ready to tolerate in making decision about $H_0$ is called significance level (S.L). It is denoted by α i.e. $\\alpha=P(\\text{reject }H_0/H_0\\text{ is true})$. The higher the significance level we use for testing a hypothesis, the higher the probability of rejecting $H_0$ when it is true. Usually, it is suggested to keep $\\alpha\\le 0.05$.",
+     "urdu": "پہلی قسم کی غلطی کا وہ احتمال جسے ہم $H_0$ کے بارے میں فیصلہ کرتے وقت برداشت کرنے کو تیار ہوں، معنویت کی سطح (S.L) کہلاتا ہے۔ اسے α سے ظاہر کرتے ہیں یعنی $\\alpha=P(\\text{reject }H_0/H_0\\text{ is true})$۔ مفروضے کی جانچ کے لیے ہم جتنی زیادہ معنویت کی سطح استعمال کریں، $H_0$ کے درست ہونے کے باوجود اس کے رد ہونے کا احتمال اتنا ہی زیادہ ہوگا۔ عموماً $\\alpha\\le 0.05$ رکھنے کا مشورہ دیا جاتا ہے۔",
+     "pashto": "د لومړي ډول تېروتنې هغه احتمال چې د $H_0$ په اړه د پرېکړې پر مهال یې زغملو ته چمتو یو، د معنی‌داریت کچه (S.L) بلل کېږي. په α ښودل کېږي یعنې $\\alpha=P(\\text{reject }H_0/H_0\\text{ is true})$. د فرضیې د ازموینې لپاره څومره لوړه د معنی‌داریت کچه وکاروو، هومره د $H_0$ د ردولو احتمال لوړ دی په داسې حال کې چې سمه وي. معمولاً سپارښتنه کېږي چې $\\alpha\\le 0.05$ وساتل شي."
+    },
+    {
+     "text": "• Test statistic and test of significance",
+     "urdu": "• جانچ کا شماریہ اور معنویت کی جانچ",
+     "pashto": "• د ازموینې احصاییه او د معنی‌داریت ازموینه"
+    },
+    {
+     "text": "A function of sample data is called statistic. When a statistic is used to test a hypothesis, it is called test statistic or decision rule. It helps us in the decision whether to accept or reject $H_0$. The choice of test statistic depends on the hypothesis under question. Commonly used test statistics are Z, t, χ² and F.",
+     "urdu": "نمونے کے مواد کے تفاعل کو شماریہ کہتے ہیں۔ جب شماریہ کسی مفروضے کی جانچ کے لیے استعمال ہو تو اسے جانچ کا شماریہ یا فیصلے کا قاعدہ کہتے ہیں۔ یہ ہمیں یہ فیصلہ کرنے میں مدد دیتا ہے کہ $H_0$ کو قبول کریں یا رد۔ جانچ کے شماریے کا انتخاب زیرِ غور مفروضے پر منحصر ہے۔ عام طور پر استعمال ہونے والے جانچ کے شماریے Z، t، χ² اور F ہیں۔",
+     "pashto": "د نمونوي معلوماتو تابع ته احصاییه وایي. کله چې احصاییه د یوې فرضیې د ازموینې لپاره وکارول شي، د ازموینې احصاییه یا د پرېکړې قاعده بلل کېږي. دا موږ سره مرسته کوي چې پرېکړه وکړو $H_0$ ومنو که رد یې کړو. د ازموینې د احصاییې ټاکنه د تر پوښتنې لاندې فرضیې پورې اړه لري. عام کارېدونکې د ازموینې احصاییې Z، t، χ² او F دي."
+    },
+    {
+     "text": "The value of test statistic is said to be statistically significant if it falls in the rejection region and as a result $H_0$ is rejected. On the other hand, value of test statistic is said to be statistically insignificant if it falls in the acceptance region and as a result $H_0$ is accepted.",
+     "urdu": "جانچ کے شماریے کی قیمت شماریاتی طور پر معنی خیز کہلاتی ہے اگر یہ رد کے علاقے میں آئے اور نتیجتاً $H_0$ رد ہو جائے۔ دوسری طرف جانچ کے شماریے کی قیمت شماریاتی طور پر غیر معنی خیز کہلاتی ہے اگر یہ قبولیت کے علاقے میں آئے اور نتیجتاً $H_0$ قبول ہو جائے۔",
+     "pashto": "د ازموینې د احصاییې قیمت احصاییوي معنی‌دار ویل کېږي که د ردولو په سیمه کې ولوېږي او په پایله کې $H_0$ رد شي. له بلې خوا د ازموینې د احصاییې قیمت احصاییوي بې‌معنی ویل کېږي که د منلو په سیمه کې ولوېږي او په پایله کې $H_0$ ومنل شي."
+    },
+    {
+     "text": "• Acceptance and rejection regions",
+     "urdu": "• قبولیت اور رد کے علاقے",
+     "pashto": "• د منلو او ردولو سیمې"
+    },
+    {
+     "text": "All possible values of a test statistic are divided into two mutually exclusive groups. The group of values which lead to the acceptance of $H_0$ is called acceptance region (AR) for the test. The group of values which would lead us to rejection of $H_0$ is called rejection region (RR) or critical region for the test. The values which separate the (AR) and (RR) are called critical values and are obtained from the tables of respective test statistics.",
+     "urdu": "جانچ کے شماریے کی تمام ممکنہ قیمتیں دو باہم مانع گروہوں میں تقسیم کی جاتی ہیں۔ قیمتوں کا وہ گروہ جو $H_0$ کی قبولیت کی طرف لے جائے، جانچ کا قبولیت کا علاقہ (AR) کہلاتا ہے۔ قیمتوں کا وہ گروہ جو ہمیں $H_0$ کے رد کی طرف لے جائے، جانچ کا رد کا علاقہ (RR) یا فیصلہ کن علاقہ کہلاتا ہے۔ (AR) اور (RR) کو الگ کرنے والی قیمتیں فیصلہ کن قیمتیں کہلاتی ہیں اور متعلقہ جانچ کے شماریوں کے جداول سے حاصل کی جاتی ہیں۔",
+     "pashto": "د ازموینې د احصاییې ټول شوني قیمتونه په دوو یو بل منع کوونکو ډلو وېشل کېږي. د قیمتونو هغه ډله چې د $H_0$ منلو ته ورسوي، د ازموینې د منلو سیمه (AR) بلل کېږي. د قیمتونو هغه ډله چې موږ د $H_0$ ردولو ته ورسوي، د ازموینې د ردولو سیمه (RR) یا بحراني سیمه بلل کېږي. هغه قیمتونه چې (AR) او (RR) جلا کوي، بحراني قیمتونه بلل کېږي او د اړوندو احصاییو له جدولونو ترلاسه کېږي."
+    },
+    {
+     "text": "• One-tailed and two-tailed test",
+     "urdu": "• یک طرفہ اور دو طرفہ جانچ",
+     "pashto": "• یو لوري او دوه لوري ازموینه"
+    },
+    {
+     "text": "Three types of symbols [>, <, ≠] are used in the alternative hypothesis $H_1$. When the symbols [>, <] are used in $H_1$, it means that the whole rejection region of size α lies only on one tail of the concerned sampling distribution as shown below,",
+     "urdu": "متبادل مفروضے $H_1$ میں تین قسم کی علامتیں [>، <، ≠] استعمال ہوتی ہیں۔ جب $H_1$ میں علامتیں [>، <] استعمال ہوں تو اس کا مطلب ہے کہ α سائز کا پورا رد کا علاقہ متعلقہ نمونہ جاتی تقسیم کے صرف ایک کنارے پر ہے جیسا کہ نیچے دکھایا گیا ہے،",
+     "pashto": "په بدیله فرضیه $H_1$ کې درې ډوله نښې [>، <، ≠] کارول کېږي. کله چې په $H_1$ کې [>، <] نښې وکارول شي، مانا یې دا ده چې د α اندازې ټوله د ردولو سیمه یوازې د اړوند نمونوي وېش په یوه لکۍ کې پرته ده لکه څنګه چې لاندې ښودل شوي،"
+    },
+    {
+     "text": "It is called one-sided rejection region and the test is called one-sided or one tailed test. On the other hand when the symbol [≠] is used in $H_1$, it means that the whole rejection region of size α is equally divided; α/2 lies in the right tail and α/2 lies in the left tail of the concerned sampling distribution, as shown in the figure. It is called two sided rejection region and the test is called two-tailed test.",
+     "urdu": "اسے یک طرفہ رد کا علاقہ اور جانچ کو یک طرفہ جانچ کہتے ہیں۔ دوسری طرف جب $H_1$ میں علامت [≠] استعمال ہو تو اس کا مطلب ہے کہ α سائز کا پورا رد کا علاقہ برابر تقسیم ہے؛ α/2 متعلقہ نمونہ جاتی تقسیم کے دائیں کنارے پر اور α/2 بائیں کنارے پر ہے، جیسا کہ شکل میں دکھایا گیا ہے۔ اسے دو طرفہ رد کا علاقہ اور جانچ کو دو طرفہ جانچ کہتے ہیں۔",
+     "pashto": "دې ته یو اړخیزه د ردولو سیمه او ازموینې ته یو لوري ازموینه وایي. له بلې خوا کله چې په $H_1$ کې [≠] نښه وکارول شي، مانا یې دا ده چې د α اندازې ټوله د ردولو سیمه مساوي وېشل شوې؛ α/2 د اړوند نمونوي وېش په ښي لکۍ او α/2 په کیڼ لکۍ کې پرته ده، لکه څنګه چې په شکل کې ښودل شوي. دې ته دوه اړخیزه د ردولو سیمه او ازموینې ته دوه لوري ازموینه وایي."
+    },
+    {
+     "text": "7.2 General procedure for testing hypothesis about Mean (μ) of a Normal population [when σ² is known]",
+     "urdu": "7.2 نارمل آبادی کے اوسط (μ) کے بارے میں مفروضے کی جانچ کا عمومی طریقہ [جب σ² معلوم ہو]",
+     "pashto": "7.2 د نورمال نفوس د منځني (μ) په اړه د فرضیې د ازموینې عمومي طریقه [کله چې σ² معلوم وي]"
+    },
+    {
+     "text": "i. Generally $H_0$ and $H_1$ can be set in three different possible forms as follow:",
+     "urdu": "i. عام طور پر $H_0$ اور $H_1$ کو تین مختلف ممکنہ شکلوں میں یوں رکھا جا سکتا ہے:",
+     "pashto": "i. په عمومي ډول $H_0$ او $H_1$ په درېیو بېلابېلو شونو بڼو داسې ټاکل کېدای شي:"
+    }
+   ],
+   "theory": "• Significance level\n\nThe probability of type-I error which we are ready to tolerate in making decision about H_0 is called significance level (S.L). It is denoted by α i.e. \\alpha=P(\\text{reject }H_0/H_0\\text{ is true}). The higher the significance level we use for testing a hypothesis, the higher the probability of rejecting H_0 when it is true. Usually, it is suggested to keep \\alpha\\le 0.05.\n\n• Test statistic and test of significance\n\nA function of sample data is called statistic. When a statistic is used to test a hypothesis, it is called test statistic or decision rule. It helps us in the decision whether to accept or reject H_0. The choice of test statistic depends on the hypothesis under question. Commonly used test statistics are Z, t, χ² and F.\n\nThe value of test statistic is said to be statistically significant if it falls in the rejection region and as a result H_0 is rejected. On the other hand, value of test statistic is said to be statistically insignificant if it falls in the acceptance region and as a result H_0 is accepted.\n\n• Acceptance and rejection regions\n\nAll possible values of a test statistic are divided into two mutually exclusive groups. The group of values which lead to the acceptance of H_0 is called acceptance region (AR) for the test. The group of values which would lead us to rejection of H_0 is called rejection region (RR) or critical region for the test. The values which separate the (AR) and (RR) are called critical values and are obtained from the tables of respective test statistics.\n\n• One-tailed and two-tailed test\n\nThree types of symbols [>, <, ≠] are used in the alternative hypothesis H_1. When the symbols [>, <] are used in H_1, it means that the whole rejection region of size α lies only on one tail of the concerned sampling distribution as shown below,\n\nIt is called one-sided rejection region and the test is called one-sided or one tailed test. On the other hand when the symbol [≠] is used in H_1, it means that the whole rejection region of size α is equally divided; α/2 lies in the right tail and α/2 lies in the left tail of the concerned sampling distribution, as shown in the figure. It is called two sided rejection region and the test is called two-tailed test.\n\n7.2 General procedure for testing hypothesis about Mean (μ) of a Normal population [when σ² is known]\n\ni. Generally H_0 and H_1 can be set in three different possible forms as follow:",
+   "urdu": "• معنویت کی سطح\n\nپہلی قسم کی غلطی کا وہ احتمال جسے ہم H_0 کے بارے میں فیصلہ کرتے وقت برداشت کرنے کو تیار ہوں، معنویت کی سطح (S.L) کہلاتا ہے۔ اسے α سے ظاہر کرتے ہیں یعنی \\alpha=P(\\text{reject }H_0/H_0\\text{ is true})۔ مفروضے کی جانچ کے لیے ہم جتنی زیادہ معنویت کی سطح استعمال کریں، H_0 کے درست ہونے کے باوجود اس کے رد ہونے کا احتمال اتنا ہی زیادہ ہوگا۔ عموماً \\alpha\\le 0.05 رکھنے کا مشورہ دیا جاتا ہے۔\n\n• جانچ کا شماریہ اور معنویت کی جانچ\n\nنمونے کے مواد کے تفاعل کو شماریہ کہتے ہیں۔ جب شماریہ کسی مفروضے کی جانچ کے لیے استعمال ہو تو اسے جانچ کا شماریہ یا فیصلے کا قاعدہ کہتے ہیں۔ یہ ہمیں یہ فیصلہ کرنے میں مدد دیتا ہے کہ H_0 کو قبول کریں یا رد۔ جانچ کے شماریے کا انتخاب زیرِ غور مفروضے پر منحصر ہے۔ عام طور پر استعمال ہونے والے جانچ کے شماریے Z، t، χ² اور F ہیں۔\n\nجانچ کے شماریے کی قیمت شماریاتی طور پر معنی خیز کہلاتی ہے اگر یہ رد کے علاقے میں آئے اور نتیجتاً H_0 رد ہو جائے۔ دوسری طرف جانچ کے شماریے کی قیمت شماریاتی طور پر غیر معنی خیز کہلاتی ہے اگر یہ قبولیت کے علاقے میں آئے اور نتیجتاً H_0 قبول ہو جائے۔\n\n• قبولیت اور رد کے علاقے\n\nجانچ کے شماریے کی تمام ممکنہ قیمتیں دو باہم مانع گروہوں میں تقسیم کی جاتی ہیں۔ قیمتوں کا وہ گروہ جو H_0 کی قبولیت کی طرف لے جائے، جانچ کا قبولیت کا علاقہ (AR) کہلاتا ہے۔ قیمتوں کا وہ گروہ جو ہمیں H_0 کے رد کی طرف لے جائے، جانچ کا رد کا علاقہ (RR) یا فیصلہ کن علاقہ کہلاتا ہے۔ (AR) اور (RR) کو الگ کرنے والی قیمتیں فیصلہ کن قیمتیں کہلاتی ہیں اور متعلقہ جانچ کے شماریوں کے جداول سے حاصل کی جاتی ہیں۔\n\n• یک طرفہ اور دو طرفہ جانچ\n\nمتبادل مفروضے H_1 میں تین قسم کی علامتیں [>، <، ≠] استعمال ہوتی ہیں۔ جب H_1 میں علامتیں [>، <] استعمال ہوں تو اس کا مطلب ہے کہ α سائز کا پورا رد کا علاقہ متعلقہ نمونہ جاتی تقسیم کے صرف ایک کنارے پر ہے جیسا کہ نیچے دکھایا گیا ہے،\n\nاسے یک طرفہ رد کا علاقہ اور جانچ کو یک طرفہ جانچ کہتے ہیں۔ دوسری طرف جب H_1 میں علامت [≠] استعمال ہو تو اس کا مطلب ہے کہ α سائز کا پورا رد کا علاقہ برابر تقسیم ہے؛ α/2 متعلقہ نمونہ جاتی تقسیم کے دائیں کنارے پر اور α/2 بائیں کنارے پر ہے، جیسا کہ شکل میں دکھایا گیا ہے۔ اسے دو طرفہ رد کا علاقہ اور جانچ کو دو طرفہ جانچ کہتے ہیں۔\n\n7.2 نارمل آبادی کے اوسط (μ) کے بارے میں مفروضے کی جانچ کا عمومی طریقہ [جب σ² معلوم ہو]\n\ni. عام طور پر H_0 اور H_1 کو تین مختلف ممکنہ شکلوں میں یوں رکھا جا سکتا ہے:",
+   "pashto": "• د معنی‌داریت کچه\n\nد لومړي ډول تېروتنې هغه احتمال چې د H_0 په اړه د پرېکړې پر مهال یې زغملو ته چمتو یو، د معنی‌داریت کچه (S.L) بلل کېږي. په α ښودل کېږي یعنې \\alpha=P(\\text{reject }H_0/H_0\\text{ is true}). د فرضیې د ازموینې لپاره څومره لوړه د معنی‌داریت کچه وکاروو، هومره د H_0 د ردولو احتمال لوړ دی په داسې حال کې چې سمه وي. معمولاً سپارښتنه کېږي چې \\alpha\\le 0.05 وساتل شي.\n\n• د ازموینې احصاییه او د معنی‌داریت ازموینه\n\nد نمونوي معلوماتو تابع ته احصاییه وایي. کله چې احصاییه د یوې فرضیې د ازموینې لپاره وکارول شي، د ازموینې احصاییه یا د پرېکړې قاعده بلل کېږي. دا موږ سره مرسته کوي چې پرېکړه وکړو H_0 ومنو که رد یې کړو. د ازموینې د احصاییې ټاکنه د تر پوښتنې لاندې فرضیې پورې اړه لري. عام کارېدونکې د ازموینې احصاییې Z، t، χ² او F دي.\n\nد ازموینې د احصاییې قیمت احصاییوي معنی‌دار ویل کېږي که د ردولو په سیمه کې ولوېږي او په پایله کې H_0 رد شي. له بلې خوا د ازموینې د احصاییې قیمت احصاییوي بې‌معنی ویل کېږي که د منلو په سیمه کې ولوېږي او په پایله کې H_0 ومنل شي.\n\n• د منلو او ردولو سیمې\n\nد ازموینې د احصاییې ټول شوني قیمتونه په دوو یو بل منع کوونکو ډلو وېشل کېږي. د قیمتونو هغه ډله چې د H_0 منلو ته ورسوي، د ازموینې د منلو سیمه (AR) بلل کېږي. د قیمتونو هغه ډله چې موږ د H_0 ردولو ته ورسوي، د ازموینې د ردولو سیمه (RR) یا بحراني سیمه بلل کېږي. هغه قیمتونه چې (AR) او (RR) جلا کوي، بحراني قیمتونه بلل کېږي او د اړوندو احصاییو له جدولونو ترلاسه کېږي.\n\n• یو لوري او دوه لوري ازموینه\n\nپه بدیله فرضیه H_1 کې درې ډوله نښې [>، <، ≠] کارول کېږي. کله چې په H_1 کې [>، <] نښې وکارول شي، مانا یې دا ده چې د α اندازې ټوله د ردولو سیمه یوازې د اړوند نمونوي وېش په یوه لکۍ کې پرته ده لکه څنګه چې لاندې ښودل شوي،\n\nدې ته یو اړخیزه د ردولو سیمه او ازموینې ته یو لوري ازموینه وایي. له بلې خوا کله چې په H_1 کې [≠] نښه وکارول شي، مانا یې دا ده چې د α اندازې ټوله د ردولو سیمه مساوي وېشل شوې؛ α/2 د اړوند نمونوي وېش په ښي لکۍ او α/2 په کیڼ لکۍ کې پرته ده، لکه څنګه چې په شکل کې ښودل شوي. دې ته دوه اړخیزه د ردولو سیمه او ازموینې ته دوه لوري ازموینه وایي.\n\n7.2 د نورمال نفوس د منځني (μ) په اړه د فرضیې د ازموینې عمومي طریقه [کله چې σ² معلوم وي]\n\ni. په عمومي ډول H_0 او H_1 په درېیو بېلابېلو شونو بڼو داسې ټاکل کېدای شي:",
+   "theoryUrdu": "• معنویت کی سطح\n\nپہلی قسم کی غلطی کا وہ احتمال جسے ہم H_0 کے بارے میں فیصلہ کرتے وقت برداشت کرنے کو تیار ہوں، معنویت کی سطح (S.L) کہلاتا ہے۔ اسے α سے ظاہر کرتے ہیں یعنی \\alpha=P(\\text{reject }H_0/H_0\\text{ is true})۔ مفروضے کی جانچ کے لیے ہم جتنی زیادہ معنویت کی سطح استعمال کریں، H_0 کے درست ہونے کے باوجود اس کے رد ہونے کا احتمال اتنا ہی زیادہ ہوگا۔ عموماً \\alpha\\le 0.05 رکھنے کا مشورہ دیا جاتا ہے۔\n\n• جانچ کا شماریہ اور معنویت کی جانچ\n\nنمونے کے مواد کے تفاعل کو شماریہ کہتے ہیں۔ جب شماریہ کسی مفروضے کی جانچ کے لیے استعمال ہو تو اسے جانچ کا شماریہ یا فیصلے کا قاعدہ کہتے ہیں۔ یہ ہمیں یہ فیصلہ کرنے میں مدد دیتا ہے کہ H_0 کو قبول کریں یا رد۔ جانچ کے شماریے کا انتخاب زیرِ غور مفروضے پر منحصر ہے۔ عام طور پر استعمال ہونے والے جانچ کے شماریے Z، t، χ² اور F ہیں۔\n\nجانچ کے شماریے کی قیمت شماریاتی طور پر معنی خیز کہلاتی ہے اگر یہ رد کے علاقے میں آئے اور نتیجتاً H_0 رد ہو جائے۔ دوسری طرف جانچ کے شماریے کی قیمت شماریاتی طور پر غیر معنی خیز کہلاتی ہے اگر یہ قبولیت کے علاقے میں آئے اور نتیجتاً H_0 قبول ہو جائے۔\n\n• قبولیت اور رد کے علاقے\n\nجانچ کے شماریے کی تمام ممکنہ قیمتیں دو باہم مانع گروہوں میں تقسیم کی جاتی ہیں۔ قیمتوں کا وہ گروہ جو H_0 کی قبولیت کی طرف لے جائے، جانچ کا قبولیت کا علاقہ (AR) کہلاتا ہے۔ قیمتوں کا وہ گروہ جو ہمیں H_0 کے رد کی طرف لے جائے، جانچ کا رد کا علاقہ (RR) یا فیصلہ کن علاقہ کہلاتا ہے۔ (AR) اور (RR) کو الگ کرنے والی قیمتیں فیصلہ کن قیمتیں کہلاتی ہیں اور متعلقہ جانچ کے شماریوں کے جداول سے حاصل کی جاتی ہیں۔\n\n• یک طرفہ اور دو طرفہ جانچ\n\nمتبادل مفروضے H_1 میں تین قسم کی علامتیں [>، <، ≠] استعمال ہوتی ہیں۔ جب H_1 میں علامتیں [>، <] استعمال ہوں تو اس کا مطلب ہے کہ α سائز کا پورا رد کا علاقہ متعلقہ نمونہ جاتی تقسیم کے صرف ایک کنارے پر ہے جیسا کہ نیچے دکھایا گیا ہے،\n\nاسے یک طرفہ رد کا علاقہ اور جانچ کو یک طرفہ جانچ کہتے ہیں۔ دوسری طرف جب H_1 میں علامت [≠] استعمال ہو تو اس کا مطلب ہے کہ α سائز کا پورا رد کا علاقہ برابر تقسیم ہے؛ α/2 متعلقہ نمونہ جاتی تقسیم کے دائیں کنارے پر اور α/2 بائیں کنارے پر ہے، جیسا کہ شکل میں دکھایا گیا ہے۔ اسے دو طرفہ رد کا علاقہ اور جانچ کو دو طرفہ جانچ کہتے ہیں۔\n\n7.2 نارمل آبادی کے اوسط (μ) کے بارے میں مفروضے کی جانچ کا عمومی طریقہ [جب σ² معلوم ہو]\n\ni. عام طور پر H_0 اور H_1 کو تین مختلف ممکنہ شکلوں میں یوں رکھا جا سکتا ہے:",
+   "theoryPashto": "• د معنی‌داریت کچه\n\nد لومړي ډول تېروتنې هغه احتمال چې د H_0 په اړه د پرېکړې پر مهال یې زغملو ته چمتو یو، د معنی‌داریت کچه (S.L) بلل کېږي. په α ښودل کېږي یعنې \\alpha=P(\\text{reject }H_0/H_0\\text{ is true}). د فرضیې د ازموینې لپاره څومره لوړه د معنی‌داریت کچه وکاروو، هومره د H_0 د ردولو احتمال لوړ دی په داسې حال کې چې سمه وي. معمولاً سپارښتنه کېږي چې \\alpha\\le 0.05 وساتل شي.\n\n• د ازموینې احصاییه او د معنی‌داریت ازموینه\n\nد نمونوي معلوماتو تابع ته احصاییه وایي. کله چې احصاییه د یوې فرضیې د ازموینې لپاره وکارول شي، د ازموینې احصاییه یا د پرېکړې قاعده بلل کېږي. دا موږ سره مرسته کوي چې پرېکړه وکړو H_0 ومنو که رد یې کړو. د ازموینې د احصاییې ټاکنه د تر پوښتنې لاندې فرضیې پورې اړه لري. عام کارېدونکې د ازموینې احصاییې Z، t، χ² او F دي.\n\nد ازموینې د احصاییې قیمت احصاییوي معنی‌دار ویل کېږي که د ردولو په سیمه کې ولوېږي او په پایله کې H_0 رد شي. له بلې خوا د ازموینې د احصاییې قیمت احصاییوي بې‌معنی ویل کېږي که د منلو په سیمه کې ولوېږي او په پایله کې H_0 ومنل شي.\n\n• د منلو او ردولو سیمې\n\nد ازموینې د احصاییې ټول شوني قیمتونه په دوو یو بل منع کوونکو ډلو وېشل کېږي. د قیمتونو هغه ډله چې د H_0 منلو ته ورسوي، د ازموینې د منلو سیمه (AR) بلل کېږي. د قیمتونو هغه ډله چې موږ د H_0 ردولو ته ورسوي، د ازموینې د ردولو سیمه (RR) یا بحراني سیمه بلل کېږي. هغه قیمتونه چې (AR) او (RR) جلا کوي، بحراني قیمتونه بلل کېږي او د اړوندو احصاییو له جدولونو ترلاسه کېږي.\n\n• یو لوري او دوه لوري ازموینه\n\nپه بدیله فرضیه H_1 کې درې ډوله نښې [>، <، ≠] کارول کېږي. کله چې په H_1 کې [>، <] نښې وکارول شي، مانا یې دا ده چې د α اندازې ټوله د ردولو سیمه یوازې د اړوند نمونوي وېش په یوه لکۍ کې پرته ده لکه څنګه چې لاندې ښودل شوي،\n\nدې ته یو اړخیزه د ردولو سیمه او ازموینې ته یو لوري ازموینه وایي. له بلې خوا کله چې په H_1 کې [≠] نښه وکارول شي، مانا یې دا ده چې د α اندازې ټوله د ردولو سیمه مساوي وېشل شوې؛ α/2 د اړوند نمونوي وېش په ښي لکۍ او α/2 په کیڼ لکۍ کې پرته ده، لکه څنګه چې په شکل کې ښودل شوي. دې ته دوه اړخیزه د ردولو سیمه او ازموینې ته دوه لوري ازموینه وایي.\n\n7.2 د نورمال نفوس د منځني (μ) په اړه د فرضیې د ازموینې عمومي طریقه [کله چې σ² معلوم وي]\n\ni. په عمومي ډول H_0 او H_1 په درېیو بېلابېلو شونو بڼو داسې ټاکل کېدای شي:",
+   "content": "<p>• Significance level</p><p>The probability of type-I error which we are ready to tolerate in making decision about H_0 is called significance level (S.L). It is denoted by α i.e. \\alpha=P(\\text{reject }H_0/H_0\\text{ is true}). The higher the significance level we use for testing a hypothesis, the higher the probability of rejecting H_0 when it is true. Usually, it is suggested to keep \\alpha\\le 0.05.</p><p>• Test statistic and test of significance</p><p>A function of sample data is called statistic. When a statistic is used to test a hypothesis, it is called test statistic or decision rule. It helps us in the decision whether to accept or reject H_0. The choice of test statistic depends on the hypothesis under question. Commonly used test statistics are Z, t, χ² and F.</p><p>The value of test statistic is said to be statistically significant if it falls in the rejection region and as a result H_0 is rejected. On the other hand, value of test statistic is said to be statistically insignificant if it falls in the acceptance region and as a result H_0 is accepted.</p><p>• Acceptance and rejection regions</p><p>All possible values of a test statistic are divided into two mutually exclusive groups. The group of values which lead to the acceptance of H_0 is called acceptance region (AR) for the test. The group of values which would lead us to rejection of H_0 is called rejection region (RR) or critical region for the test. The values which separate the (AR) and (RR) are called critical values and are obtained from the tables of respective test statistics.</p><p>• One-tailed and two-tailed test</p><p>Three types of symbols [&gt;, &lt;, ≠] are used in the alternative hypothesis H_1. When the symbols [&gt;, &lt;] are used in H_1, it means that the whole rejection region of size α lies only on one tail of the concerned sampling distribution as shown below,</p><p>It is called one-sided rejection region and the test is called one-sided or one tailed test. On the other hand when the symbol [≠] is used in H_1, it means that the whole rejection region of size α is equally divided; α/2 lies in the right tail and α/2 lies in the left tail of the concerned sampling distribution, as shown in the figure. It is called two sided rejection region and the test is called two-tailed test.</p><p>7.2 General procedure for testing hypothesis about Mean (μ) of a Normal population [when σ² is known]</p><p>i. Generally H_0 and H_1 can be set in three different possible forms as follow:</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "visualParagraph",
+     "blockId": "stat12-acc-rej-regions",
+     "indices": [
+      6
+     ],
+     "visualFirst": false
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "stat12-right-tailed"
+    },
+    {
+     "type": "visual",
+     "blockId": "stat12-left-tailed"
+    },
+    {
+     "type": "visualParagraph",
+     "blockId": "stat12-two-tailed",
+     "indices": [
+      9
+     ],
+     "visualFirst": false
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-h0h1-forms"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-acc-rej-regions",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 150\" role=\"img\" aria-label=\"Acceptance region between the critical values; rejection regions α/2 in each tail\"><rect width=\"320\" height=\"150\" fill=\"white\"/><rect width=\"320\" height=\"150\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.7 99.8L9.1 99.8L11.5 99.8L13.8 99.7L16.2 99.7L18.6 99.6L21.0 99.5L23.4 99.4L25.7 99.3L28.1 99.2L30.5 99.0L32.9 98.9L35.2 98.7L37.6 98.4L40.0 98.2L42.4 97.9L44.8 97.5L47.1 97.1L49.5 96.7L51.9 96.2L54.3 95.7L56.6 95.1L59.0 94.4L61.4 93.6L63.8 92.8L66.2 91.8L68.5 90.8L70.9 89.7L73.3 88.5L75.7 87.2L78.1 85.7L80.4 84.2L82.8 82.5L85.2 80.7L87.6 78.9L89.9 76.8L92.3 74.7L94.7 72.5L97.1 70.2L99.5 67.7L99.5 100Z\" fill=\"#fff\"/><path d=\"M220.5 100L220.5 67.7L222.9 70.2L225.3 72.5L227.7 74.7L230.1 76.8L232.4 78.9L234.8 80.7L237.2 82.5L239.6 84.2L241.9 85.7L244.3 87.2L246.7 88.5L249.1 89.7L251.5 90.8L253.8 91.8L256.2 92.8L258.6 93.6L261.0 94.4L263.4 95.1L265.7 95.7L268.1 96.2L270.5 96.7L272.9 97.1L275.2 97.5L277.6 97.9L280.0 98.2L282.4 98.4L284.8 98.7L287.1 98.9L289.5 99.0L291.9 99.2L294.3 99.3L296.6 99.4L299.0 99.5L301.4 99.6L303.8 99.7L306.2 99.7L308.5 99.8L310.9 99.8L313.3 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M99.5 100V67.7\" stroke=\"#111\"/><path d=\"M220.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"160.0\" y=\"58\">1−α</text><text x=\"259.5\" y=\"70\">α/2</text><text x=\"60.5\" y=\"70\">α/2</text><text x=\"60.5\" y=\"116\" font-size=\"11\">Rejection region</text><text x=\"60.5\" y=\"130\" font-size=\"11\">Critical value</text><text x=\"160.0\" y=\"116\" font-size=\"11\">Acceptance region</text><text x=\"259.5\" y=\"116\" font-size=\"11\">Rejection region</text><text x=\"259.5\" y=\"130\" font-size=\"11\">Critical value</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 150\" role=\"img\" aria-label=\"Acceptance and rejection regions\"><rect width=\"320\" height=\"150\" fill=\"white\"/><rect width=\"320\" height=\"150\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.7 99.8L9.1 99.8L11.5 99.8L13.8 99.7L16.2 99.7L18.6 99.6L21.0 99.5L23.4 99.4L25.7 99.3L28.1 99.2L30.5 99.0L32.9 98.9L35.2 98.7L37.6 98.4L40.0 98.2L42.4 97.9L44.8 97.5L47.1 97.1L49.5 96.7L51.9 96.2L54.3 95.7L56.6 95.1L59.0 94.4L61.4 93.6L63.8 92.8L66.2 91.8L68.5 90.8L70.9 89.7L73.3 88.5L75.7 87.2L78.1 85.7L80.4 84.2L82.8 82.5L85.2 80.7L87.6 78.9L89.9 76.8L92.3 74.7L94.7 72.5L97.1 70.2L99.5 67.7L99.5 100Z\" fill=\"#fff\"/><path d=\"M220.5 100L220.5 67.7L222.9 70.2L225.3 72.5L227.7 74.7L230.1 76.8L232.4 78.9L234.8 80.7L237.2 82.5L239.6 84.2L241.9 85.7L244.3 87.2L246.7 88.5L249.1 89.7L251.5 90.8L253.8 91.8L256.2 92.8L258.6 93.6L261.0 94.4L263.4 95.1L265.7 95.7L268.1 96.2L270.5 96.7L272.9 97.1L275.2 97.5L277.6 97.9L280.0 98.2L282.4 98.4L284.8 98.7L287.1 98.9L289.5 99.0L291.9 99.2L294.3 99.3L296.6 99.4L299.0 99.5L301.4 99.6L303.8 99.7L306.2 99.7L308.5 99.8L310.9 99.8L313.3 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M99.5 100V67.7\" stroke=\"#111\"/><path d=\"M220.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"160.0\" y=\"58\">1−α</text><text x=\"259.5\" y=\"70\">α/2</text><text x=\"60.5\" y=\"70\">α/2</text><text x=\"60.5\" y=\"116\" font-size=\"11\">ردّ کا علاقہ</text><text x=\"60.5\" y=\"130\" font-size=\"11\">فیصلہ کن قیمت</text><text x=\"160.0\" y=\"116\" font-size=\"11\">قبولیت کا علاقہ</text><text x=\"259.5\" y=\"116\" font-size=\"11\">ردّ کا علاقہ</text><text x=\"259.5\" y=\"130\" font-size=\"11\">فیصلہ کن قیمت</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 150\" role=\"img\" aria-label=\"Acceptance and rejection regions\"><rect width=\"320\" height=\"150\" fill=\"white\"/><rect width=\"320\" height=\"150\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.7 99.8L9.1 99.8L11.5 99.8L13.8 99.7L16.2 99.7L18.6 99.6L21.0 99.5L23.4 99.4L25.7 99.3L28.1 99.2L30.5 99.0L32.9 98.9L35.2 98.7L37.6 98.4L40.0 98.2L42.4 97.9L44.8 97.5L47.1 97.1L49.5 96.7L51.9 96.2L54.3 95.7L56.6 95.1L59.0 94.4L61.4 93.6L63.8 92.8L66.2 91.8L68.5 90.8L70.9 89.7L73.3 88.5L75.7 87.2L78.1 85.7L80.4 84.2L82.8 82.5L85.2 80.7L87.6 78.9L89.9 76.8L92.3 74.7L94.7 72.5L97.1 70.2L99.5 67.7L99.5 100Z\" fill=\"#fff\"/><path d=\"M220.5 100L220.5 67.7L222.9 70.2L225.3 72.5L227.7 74.7L230.1 76.8L232.4 78.9L234.8 80.7L237.2 82.5L239.6 84.2L241.9 85.7L244.3 87.2L246.7 88.5L249.1 89.7L251.5 90.8L253.8 91.8L256.2 92.8L258.6 93.6L261.0 94.4L263.4 95.1L265.7 95.7L268.1 96.2L270.5 96.7L272.9 97.1L275.2 97.5L277.6 97.9L280.0 98.2L282.4 98.4L284.8 98.7L287.1 98.9L289.5 99.0L291.9 99.2L294.3 99.3L296.6 99.4L299.0 99.5L301.4 99.6L303.8 99.7L306.2 99.7L308.5 99.8L310.9 99.8L313.3 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M99.5 100V67.7\" stroke=\"#111\"/><path d=\"M220.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"160.0\" y=\"58\">1−α</text><text x=\"259.5\" y=\"70\">α/2</text><text x=\"60.5\" y=\"70\">α/2</text><text x=\"60.5\" y=\"116\" font-size=\"11\">د ردولو سیمه</text><text x=\"60.5\" y=\"130\" font-size=\"11\">بحراني قیمت</text><text x=\"160.0\" y=\"116\" font-size=\"11\">د منلو سیمه</text><text x=\"259.5\" y=\"116\" font-size=\"11\">د ردولو سیمه</text><text x=\"259.5\" y=\"130\" font-size=\"11\">بحراني قیمت</text></g></svg>",
+     "sourceWidthRatio": 0.5
+    },
+    {
+     "id": "stat12-right-tailed",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Right tailed test\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M220.5 100L220.5 67.7L222.9 70.2L225.3 72.5L227.7 74.7L230.1 76.8L232.4 78.9L234.8 80.7L237.2 82.5L239.6 84.2L241.9 85.7L244.3 87.2L246.7 88.5L249.1 89.7L251.5 90.8L253.8 91.8L256.2 92.8L258.6 93.6L261.0 94.4L263.4 95.1L265.7 95.7L268.1 96.2L270.5 96.7L272.9 97.1L275.2 97.5L277.6 97.9L280.0 98.2L282.4 98.4L284.8 98.7L287.1 98.9L289.5 99.0L291.9 99.2L294.3 99.3L296.6 99.4L299.0 99.5L301.4 99.6L303.8 99.7L306.2 99.7L308.5 99.8L310.9 99.8L313.3 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M220.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"138.4\" y=\"58\">1−α</text><text x=\"259.5\" y=\"70\">α</text><text x=\"160.0\" y=\"120\" font-size=\"13\" font-weight=\"bold\">Right tailed test</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Right tailed test\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M220.5 100L220.5 67.7L222.9 70.2L225.3 72.5L227.7 74.7L230.1 76.8L232.4 78.9L234.8 80.7L237.2 82.5L239.6 84.2L241.9 85.7L244.3 87.2L246.7 88.5L249.1 89.7L251.5 90.8L253.8 91.8L256.2 92.8L258.6 93.6L261.0 94.4L263.4 95.1L265.7 95.7L268.1 96.2L270.5 96.7L272.9 97.1L275.2 97.5L277.6 97.9L280.0 98.2L282.4 98.4L284.8 98.7L287.1 98.9L289.5 99.0L291.9 99.2L294.3 99.3L296.6 99.4L299.0 99.5L301.4 99.6L303.8 99.7L306.2 99.7L308.5 99.8L310.9 99.8L313.3 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M220.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"138.4\" y=\"58\">1−α</text><text x=\"259.5\" y=\"70\">α</text><text x=\"160.0\" y=\"120\" font-size=\"13\" font-weight=\"bold\">دائیں طرفہ جانچ</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Right tailed test\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M220.5 100L220.5 67.7L222.9 70.2L225.3 72.5L227.7 74.7L230.1 76.8L232.4 78.9L234.8 80.7L237.2 82.5L239.6 84.2L241.9 85.7L244.3 87.2L246.7 88.5L249.1 89.7L251.5 90.8L253.8 91.8L256.2 92.8L258.6 93.6L261.0 94.4L263.4 95.1L265.7 95.7L268.1 96.2L270.5 96.7L272.9 97.1L275.2 97.5L277.6 97.9L280.0 98.2L282.4 98.4L284.8 98.7L287.1 98.9L289.5 99.0L291.9 99.2L294.3 99.3L296.6 99.4L299.0 99.5L301.4 99.6L303.8 99.7L306.2 99.7L308.5 99.8L310.9 99.8L313.3 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M220.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"138.4\" y=\"58\">1−α</text><text x=\"259.5\" y=\"70\">α</text><text x=\"160.0\" y=\"120\" font-size=\"13\" font-weight=\"bold\">ښي لوري ازموینه</text></g></svg>",
+     "sourceWidthRatio": 0.45
+    },
+    {
+     "id": "stat12-left-tailed",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Left tailed test\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.7 99.8L9.1 99.8L11.5 99.8L13.8 99.7L16.2 99.7L18.6 99.6L21.0 99.5L23.4 99.4L25.7 99.3L28.1 99.2L30.5 99.0L32.9 98.9L35.2 98.7L37.6 98.4L40.0 98.2L42.4 97.9L44.8 97.5L47.1 97.1L49.5 96.7L51.9 96.2L54.3 95.7L56.6 95.1L59.0 94.4L61.4 93.6L63.8 92.8L66.2 91.8L68.5 90.8L70.9 89.7L73.3 88.5L75.7 87.2L78.1 85.7L80.4 84.2L82.8 82.5L85.2 80.7L87.6 78.9L89.9 76.8L92.3 74.7L94.7 72.5L97.1 70.2L99.5 67.7L99.5 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M99.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"181.6\" y=\"58\">1−α</text><text x=\"60.5\" y=\"70\">α</text><text x=\"160.0\" y=\"120\" font-size=\"13\" font-weight=\"bold\">Left tailed test</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Left tailed test\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.7 99.8L9.1 99.8L11.5 99.8L13.8 99.7L16.2 99.7L18.6 99.6L21.0 99.5L23.4 99.4L25.7 99.3L28.1 99.2L30.5 99.0L32.9 98.9L35.2 98.7L37.6 98.4L40.0 98.2L42.4 97.9L44.8 97.5L47.1 97.1L49.5 96.7L51.9 96.2L54.3 95.7L56.6 95.1L59.0 94.4L61.4 93.6L63.8 92.8L66.2 91.8L68.5 90.8L70.9 89.7L73.3 88.5L75.7 87.2L78.1 85.7L80.4 84.2L82.8 82.5L85.2 80.7L87.6 78.9L89.9 76.8L92.3 74.7L94.7 72.5L97.1 70.2L99.5 67.7L99.5 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M99.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"181.6\" y=\"58\">1−α</text><text x=\"60.5\" y=\"70\">α</text><text x=\"160.0\" y=\"120\" font-size=\"13\" font-weight=\"bold\">بائیں طرفہ جانچ</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Left tailed test\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.7 99.8L9.1 99.8L11.5 99.8L13.8 99.7L16.2 99.7L18.6 99.6L21.0 99.5L23.4 99.4L25.7 99.3L28.1 99.2L30.5 99.0L32.9 98.9L35.2 98.7L37.6 98.4L40.0 98.2L42.4 97.9L44.8 97.5L47.1 97.1L49.5 96.7L51.9 96.2L54.3 95.7L56.6 95.1L59.0 94.4L61.4 93.6L63.8 92.8L66.2 91.8L68.5 90.8L70.9 89.7L73.3 88.5L75.7 87.2L78.1 85.7L80.4 84.2L82.8 82.5L85.2 80.7L87.6 78.9L89.9 76.8L92.3 74.7L94.7 72.5L97.1 70.2L99.5 67.7L99.5 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M99.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"181.6\" y=\"58\">1−α</text><text x=\"60.5\" y=\"70\">α</text><text x=\"160.0\" y=\"120\" font-size=\"13\" font-weight=\"bold\">کیڼ لوري ازموینه</text></g></svg>",
+     "sourceWidthRatio": 0.45
+    },
+    {
+     "id": "stat12-two-tailed",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Two tailed test\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.7 99.8L9.1 99.8L11.5 99.8L13.8 99.7L16.2 99.7L18.6 99.6L21.0 99.5L23.4 99.4L25.7 99.3L28.1 99.2L30.5 99.0L32.9 98.9L35.2 98.7L37.6 98.4L40.0 98.2L42.4 97.9L44.8 97.5L47.1 97.1L49.5 96.7L51.9 96.2L54.3 95.7L56.6 95.1L59.0 94.4L61.4 93.6L63.8 92.8L66.2 91.8L68.5 90.8L70.9 89.7L73.3 88.5L75.7 87.2L78.1 85.7L80.4 84.2L82.8 82.5L85.2 80.7L87.6 78.9L89.9 76.8L92.3 74.7L94.7 72.5L97.1 70.2L99.5 67.7L99.5 100Z\" fill=\"#fff\"/><path d=\"M220.5 100L220.5 67.7L222.9 70.2L225.3 72.5L227.7 74.7L230.1 76.8L232.4 78.9L234.8 80.7L237.2 82.5L239.6 84.2L241.9 85.7L244.3 87.2L246.7 88.5L249.1 89.7L251.5 90.8L253.8 91.8L256.2 92.8L258.6 93.6L261.0 94.4L263.4 95.1L265.7 95.7L268.1 96.2L270.5 96.7L272.9 97.1L275.2 97.5L277.6 97.9L280.0 98.2L282.4 98.4L284.8 98.7L287.1 98.9L289.5 99.0L291.9 99.2L294.3 99.3L296.6 99.4L299.0 99.5L301.4 99.6L303.8 99.7L306.2 99.7L308.5 99.8L310.9 99.8L313.3 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M99.5 100V67.7\" stroke=\"#111\"/><path d=\"M220.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"160.0\" y=\"58\">1−α</text><text x=\"259.5\" y=\"70\">α/2</text><text x=\"60.5\" y=\"70\">α/2</text><text x=\"160.0\" y=\"120\" font-size=\"13\" font-weight=\"bold\">Two tailed test</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Two tailed test\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.7 99.8L9.1 99.8L11.5 99.8L13.8 99.7L16.2 99.7L18.6 99.6L21.0 99.5L23.4 99.4L25.7 99.3L28.1 99.2L30.5 99.0L32.9 98.9L35.2 98.7L37.6 98.4L40.0 98.2L42.4 97.9L44.8 97.5L47.1 97.1L49.5 96.7L51.9 96.2L54.3 95.7L56.6 95.1L59.0 94.4L61.4 93.6L63.8 92.8L66.2 91.8L68.5 90.8L70.9 89.7L73.3 88.5L75.7 87.2L78.1 85.7L80.4 84.2L82.8 82.5L85.2 80.7L87.6 78.9L89.9 76.8L92.3 74.7L94.7 72.5L97.1 70.2L99.5 67.7L99.5 100Z\" fill=\"#fff\"/><path d=\"M220.5 100L220.5 67.7L222.9 70.2L225.3 72.5L227.7 74.7L230.1 76.8L232.4 78.9L234.8 80.7L237.2 82.5L239.6 84.2L241.9 85.7L244.3 87.2L246.7 88.5L249.1 89.7L251.5 90.8L253.8 91.8L256.2 92.8L258.6 93.6L261.0 94.4L263.4 95.1L265.7 95.7L268.1 96.2L270.5 96.7L272.9 97.1L275.2 97.5L277.6 97.9L280.0 98.2L282.4 98.4L284.8 98.7L287.1 98.9L289.5 99.0L291.9 99.2L294.3 99.3L296.6 99.4L299.0 99.5L301.4 99.6L303.8 99.7L306.2 99.7L308.5 99.8L310.9 99.8L313.3 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M99.5 100V67.7\" stroke=\"#111\"/><path d=\"M220.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"160.0\" y=\"58\">1−α</text><text x=\"259.5\" y=\"70\">α/2</text><text x=\"60.5\" y=\"70\">α/2</text><text x=\"160.0\" y=\"120\" font-size=\"13\" font-weight=\"bold\">دو طرفہ جانچ</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 128\" role=\"img\" aria-label=\"Two tailed test\"><rect width=\"320\" height=\"128\" fill=\"white\"/><rect width=\"320\" height=\"128\" fill=\"#dbeafe\"/><path d=\"M4.3 100L4.3 99.9L6.7 99.8L9.1 99.8L11.5 99.8L13.8 99.7L16.2 99.7L18.6 99.6L21.0 99.5L23.4 99.4L25.7 99.3L28.1 99.2L30.5 99.0L32.9 98.9L35.2 98.7L37.6 98.4L40.0 98.2L42.4 97.9L44.8 97.5L47.1 97.1L49.5 96.7L51.9 96.2L54.3 95.7L56.6 95.1L59.0 94.4L61.4 93.6L63.8 92.8L66.2 91.8L68.5 90.8L70.9 89.7L73.3 88.5L75.7 87.2L78.1 85.7L80.4 84.2L82.8 82.5L85.2 80.7L87.6 78.9L89.9 76.8L92.3 74.7L94.7 72.5L97.1 70.2L99.5 67.7L99.5 100Z\" fill=\"#fff\"/><path d=\"M220.5 100L220.5 67.7L222.9 70.2L225.3 72.5L227.7 74.7L230.1 76.8L232.4 78.9L234.8 80.7L237.2 82.5L239.6 84.2L241.9 85.7L244.3 87.2L246.7 88.5L249.1 89.7L251.5 90.8L253.8 91.8L256.2 92.8L258.6 93.6L261.0 94.4L263.4 95.1L265.7 95.7L268.1 96.2L270.5 96.7L272.9 97.1L275.2 97.5L277.6 97.9L280.0 98.2L282.4 98.4L284.8 98.7L287.1 98.9L289.5 99.0L291.9 99.2L294.3 99.3L296.6 99.4L299.0 99.5L301.4 99.6L303.8 99.7L306.2 99.7L308.5 99.8L310.9 99.8L313.3 99.8L315.7 99.9L315.7 100Z\" fill=\"#fff\"/><path d=\"M4.3 99.9L6.9 99.8L9.5 99.8L12.1 99.8L14.7 99.7L17.3 99.6L19.9 99.5L22.5 99.5L25.1 99.3L27.7 99.2L30.3 99.0L32.9 98.9L35.5 98.6L38.1 98.4L40.6 98.1L43.2 97.8L45.8 97.4L48.4 96.9L51.0 96.4L53.6 95.8L56.2 95.2L58.8 94.4L61.4 93.6L64.0 92.7L66.6 91.7L69.2 90.5L71.8 89.3L74.4 87.9L77.0 86.4L79.6 84.8L82.2 83.0L84.8 81.1L87.4 79.0L89.9 76.8L92.5 74.5L95.1 72.1L97.7 69.5L100.3 66.8L102.9 64.0L105.5 61.1L108.1 58.1L110.7 55.1L113.3 52.0L115.9 48.9L118.5 45.8L121.1 42.6L123.7 39.6L126.3 36.6L128.9 33.6L131.5 30.8L134.1 28.2L136.6 25.7L139.2 23.4L141.8 21.3L144.4 19.4L147.0 17.8L149.6 16.4L152.2 15.4L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.4L170.4 16.4L173.0 17.8L175.6 19.4L178.2 21.3L180.8 23.4L183.4 25.7L185.9 28.2L188.5 30.8L191.1 33.6L193.7 36.6L196.3 39.6L198.9 42.6L201.5 45.8L204.1 48.9L206.7 52.0L209.3 55.1L211.9 58.1L214.5 61.1L217.1 64.0L219.7 66.8L222.3 69.5L224.9 72.1L227.5 74.5L230.1 76.8L232.6 79.0L235.2 81.1L237.8 83.0L240.4 84.8L243.0 86.4L245.6 87.9L248.2 89.3L250.8 90.5L253.4 91.7L256.0 92.7L258.6 93.6L261.2 94.4L263.8 95.2L266.4 95.8L269.0 96.4L271.6 96.9L274.2 97.4L276.8 97.8L279.4 98.1L281.9 98.4L284.5 98.6L287.1 98.9L289.7 99.0L292.3 99.2L294.9 99.3L297.5 99.5L300.1 99.5L302.7 99.6L305.3 99.7L307.9 99.8L310.5 99.8L313.1 99.8L315.7 99.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 100H314\" stroke=\"#111\"/><path d=\"M99.5 100V67.7\" stroke=\"#111\"/><path d=\"M220.5 100V67.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"160.0\" y=\"58\">1−α</text><text x=\"259.5\" y=\"70\">α/2</text><text x=\"60.5\" y=\"70\">α/2</text><text x=\"160.0\" y=\"120\" font-size=\"13\" font-weight=\"bold\">دوه لوري ازموینه</text></g></svg>",
+     "sourceWidthRatio": 0.45
+    },
+    {
+     "id": "stat12-t-h0h1-forms",
+     "headers": [
+      "a)",
+      "b)",
+      "c)"
+     ],
+     "rows": [
+      [
+       "$H_0:\\mu=\\mu_0$",
+       "$H_0:\\mu\\ge\\mu_0$",
+       "$H_0:\\mu\\le\\mu_0$"
+      ],
+      [
+       "$H_1:\\mu\\neq\\mu_0$",
+       "$H_1:\\mu<\\mu_0$",
+       "$H_1:\\mu>\\mu_0$"
+      ],
+      [
+       "[Two tailed test]",
+       "[Left tailed test]",
+       "[Right tailed test]"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "a)",
+        "b)",
+        "c)"
+       ],
+       "rows": [
+        [
+         "$H_0:\\mu=\\mu_0$",
+         "$H_0:\\mu\\ge\\mu_0$",
+         "$H_0:\\mu\\le\\mu_0$"
+        ],
+        [
+         "$H_1:\\mu\\neq\\mu_0$",
+         "$H_1:\\mu<\\mu_0$",
+         "$H_1:\\mu>\\mu_0$"
+        ],
+        [
+         "[دو طرفہ جانچ]",
+         "[بائیں طرفہ جانچ]",
+         "[دائیں طرفہ جانچ]"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "a)",
+        "b)",
+        "c)"
+       ],
+       "rows": [
+        [
+         "$H_0:\\mu=\\mu_0$",
+         "$H_0:\\mu\\ge\\mu_0$",
+         "$H_0:\\mu\\le\\mu_0$"
+        ],
+        [
+         "$H_1:\\mu\\neq\\mu_0$",
+         "$H_1:\\mu<\\mu_0$",
+         "$H_1:\\mu>\\mu_0$"
+        ],
+        [
+         "[دوه لوري ازموینه]",
+         "[کیڼ لوري ازموینه]",
+         "[ښي لوري ازموینه]"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 122,
+     "printedPages": [
+      235,
+      236
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 7
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

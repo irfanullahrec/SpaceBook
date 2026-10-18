@@ -1,0 +1,236 @@
+{
+  "auditDate": "2026-10-18",
+  "scope": "Read-only active code/data comparison: Class 9 and Class 12, Mathematics first; source PDFs and visual browser rendering not verified in this audit.",
+  "userOverride": "Latest user explicitly includes Mathematics and requests answers for all questions including MCQs. Earlier Mathematics exclusion no longer applies.",
+  "changedContentFiles": [],
+  "evidenceFiles": [
+    "js/app.js",
+    "js/math_data.js",
+    "js/math_12_data.js",
+    "js/math12_translation_reader.js",
+    "css/style.css",
+    "index.html",
+    "docs/source-verification/math12.json",
+    "docs/source-verification/math-agent2-sequential.json"
+  ],
+  "mathematics": {
+    "activeData": "getMathChapterList returns MATH_12_DATA for cls12 and MATH_DATA for cls9 (app.js:14995).",
+    "sharedRenderers": [
+      "openMathView:15030",
+      "renderMathChapter:17599",
+      "switchMathTab:17516",
+      "renderMathLesson:17686",
+      "renderMathExamples:17732",
+      "renderMathExercises:17964",
+      "renderMathSLOs:18738",
+      "renderMathFormulaSheet:18775"
+    ],
+    "counts": {
+      "units": 12,
+      "sections": 66,
+      "sectionsWithSourceBlocks": 66,
+      "workedExamples": 234,
+      "groupedExerciseProblems": 347,
+      "groupsWithoutAnyAnswerOrSolution": 0,
+      "note": "Nonempty answer fields do not prove all subparts are answered or correct; independent source checks remain needed."
+    },
+    "inactiveLegacy": "renderMath12BookReader and renderMath12Lesson remain defined but switchMathTab does not call them. Do not re-enable iframe scan path.",
+    "parityGaps": [
+      {
+        "location": "js/app.js:17708",
+        "finding": "Class 12 lesson cards expose only Lesson. Class 9 exposes English, Urdu, Video, Topic Exercise and Topic SLOs.",
+        "minimalFix": "Use shared topic card controls with real Class 12 data. Topic exercises and SLOs need explicit topic/source matching, not positional fallback. Do not expose the generic Urdu placeholder or unrelated hard-coded video."
+      },
+      {
+        "location": "js/app.js:18140",
+        "finding": "Class 12 getComprehensiveChapterSLOBank returns ch.slos. Unit 1 has 35 MCQs, 20 short and 14 long questions; Units 2–12 have empty arrays.",
+        "minimalFix": "Populate Class 12 banks with reviewed textbook questions and clearly labeled authored answers. Reuse stable references to solved exercise content; do not reuse Class 9 generated questions."
+      },
+      {
+        "location": "js/app.js:18027",
+        "finding": "Empty SLO message mentions Chapter 1 even when viewing Units 2–12.",
+        "minimalFix": "Make empty message chapter-neutral and factual, or avoid it after accurate bank wiring."
+      },
+      {
+        "location": "js/app.js:14887",
+        "finding": "Topic exercise fallback selects chapter exercises by topic index and then first exercise. Class 12 section IDs sec-N-M and exercise IDs differ, so simply enabling Class 9 Topic Exercise will misassociate content.",
+        "minimalFix": "Add explicit sectionIds/source references for Class 12 exercise mapping and a no-association state."
+      },
+      {
+        "location": "js/app.js:14205",
+        "finding": "Urdu fallback is a generic coverage claim; no Class 12 section has theoryUrdu.",
+        "minimalFix": "Only use real paired translations; do not treat fallback prose as translated content."
+      }
+    ],
+    "translation": {
+      "cachePassages": 47,
+      "cacheSentences": 82,
+      "cacheWordMeanings": 418,
+      "pairedSourceBlocks": 41,
+      "pairedScope": "Unit 1 only",
+      "unit2Through12PairedSourceBlocks": 0,
+      "unreviewedTheorySectionIds": [
+        "sec-3-3",
+        "sec-6-2",
+        "sec-7-1",
+        "sec-7-5",
+        "sec-7-7",
+        "sec-7-9",
+        "sec-8-1",
+        "sec-8-2",
+        "sec-8-3",
+        "sec-8-4",
+        "sec-9-1",
+        "sec-9-2",
+        "sec-9-3",
+        "sec-9-4",
+        "sec-10-1",
+        "sec-10-2",
+        "sec-10-3",
+        "sec-10-4",
+        "sec-11-1",
+        "sec-11-2",
+        "sec-12-1",
+        "sec-12-2"
+      ],
+      "renderer": "math12_translation_reader.js wraps renderMathSourceBlocks; paired passages are expandable English/Urdu/Pashto with word meaning buttons and device-voice controls."
+    },
+    "explicitPartialSolutions": [
+      {
+        "id": "ex-2-1-q5",
+        "issue": "Photographic profile endpoints unverified"
+      },
+      {
+        "id": "ex-2-3-project",
+        "issue": "First project model legibility pending"
+      },
+      {
+        "id": "ex-12-2-q5",
+        "issue": "Source omits integrand; supplemental sample is shown"
+      }
+    ],
+    "existingCheckpoint": {
+      "file": "docs/source-verification/math12.json",
+      "bookStatus": "in_revision",
+      "issues": 55,
+      "sourceRecords": 357,
+      "nextAction": "translations and source repairs",
+      "note": "The other sequential checkpoint records only six full-PDF pages; neither checkpoint alone proves completion."
+    },
+    "css": "Class 12 already shares math-unified-view with Class 9. Existing Class12 scoped responsive rules at style.css:8366 preserve narrow-screen usability; keep them."
+  },
+  "otherClass12Subjects": {
+    "sharedRenderer": "openSubjectWorkspace -> renderSubjectChapterView -> switchSubjectTab already shares Class 9 shell and subject-specific tab definitions.",
+    "findings": [
+      {
+        "location": "js/app.js:21102",
+        "finding": "Exercise tab consumes ch.exercise or ch.textbookExercise; legacy Class12 arrays stored as ch.exercises are generally ignored, except Physics has a dedicated source-exercise path.",
+        "minimalFix": "Build structured chapter.exercise records from accurate source sections, with answers; do not wire raw OCR ch.exercises arrays blindly."
+      },
+      {
+        "location": "js/chem_12_data.js",
+        "finding": "Chapter 13 legacy ch.exercises contains individual OCR fragments such as NOT FOR SALE and separate answer options with empty solutions. Corrected source sections are separately available.",
+        "minimalFix": "Use repaired source sections as authoritative inputs for question extraction and authored answer matching."
+      },
+      {
+        "location": "js/app.js:21421",
+        "finding": "General SLO renderer harvests multiple parallel fields, then invents generic long-question templates when absent.",
+        "minimalFix": "For Class12, source questions with answers and stable IDs should populate one bank and avoid generic fallback templates or duplicate questions."
+      },
+      {
+        "location": "js/app.js:21138",
+        "finding": "Non-Physics/Class9 Chemistry exercise header claims 100% verbatim solved solutions even when empty or incomplete.",
+        "minimalFix": "Use factual textbook/answer labels for Class12 without blanket completion claims."
+      },
+      {
+        "location": "js/app.js:19827 and 19916",
+        "finding": "Class12 science exposes extra Complete Book Text tab using renderMath3Textbook, whereas Class9 does not. This can show legacy OCR text separately from repaired sections.",
+        "minimalFix": "Prefer one canonical structured lesson view, or generate book text from repaired source sections before keeping that alternate view."
+      },
+      {
+        "location": "js/app.js:8378",
+        "finding": "Generic Class12 chapter modal still falsely says source PDF has not been uploaded. Global search can reach this modal for non-math Class12 results.",
+        "minimalFix": "Route Class12 search chapter results into openSubjectWorkspace and matching chapter, as math already does, or replace stale modal text."
+      },
+      {
+        "location": "js/app.js:19772",
+        "finding": "selectSubjectChapter uses broad any-subject flags inside find predicate; it can select the first subject object instead of the requested one.",
+        "minimalFix": "Prefer exact subject ID/key mapping before fallback; scope repair to Class12 if shared-file constraint requires."
+      }
+    ],
+    "structuralCounts": {
+      "phys": {
+        "units": 10,
+        "sections": 374,
+        "sourceSections": 333
+      },
+      "chem": {
+        "units": 12,
+        "sections": 257,
+        "sourceSections": 223
+      },
+      "stat": {
+        "units": 9,
+        "sections": 271,
+        "sourceSections": 271
+      },
+      "english": {
+        "units": 20,
+        "sections": 191,
+        "sourceSections": 191
+      },
+      "urdu": {
+        "units": 35,
+        "sections": 202,
+        "sourceSections": 202
+      },
+      "biology": {
+        "units": 14,
+        "sections": 301,
+        "sourceSections": 301
+      },
+      "pakstudy": {
+        "units": 12,
+        "sections": 127,
+        "sourceSections": 127
+      },
+      "computer": {
+        "units": 11,
+        "sourceBlocks": 88
+      },
+      "civics": {
+        "units": 10,
+        "sections": 214,
+        "sourceSections": 176
+      },
+      "economics": {
+        "units": 15,
+        "sourceBlocks": 31
+      },
+      "hpe": {
+        "units": 9,
+        "sections": 159,
+        "sourceSections": 159
+      },
+      "islamicHistory": {
+        "units": 43,
+        "sections": 236,
+        "sourceSections": 236
+      },
+      "quran": {
+        "units": 26,
+        "sections": 230,
+        "sourceSections": 230
+      }
+    },
+    "countLimit": "Presence of sourceLayout/sourceBlocks is structural evidence only, not verification or answer completeness."
+  },
+  "recommendedOrder": [
+    "Preserve current source data and existing typed Math renderer.",
+    "Fill math structured question/MCQ/SQ/LQ banks and missing subpart solutions; retain source-error notes.",
+    "Expose Class9-style topic controls using actual Class12 mappings and actual translations.",
+    "Remove stale status/fallback claims within Class12.",
+    "For each remaining subject build canonical answered exercise records from repaired source sections and reuse existing shell.",
+    "Run focused source/data checks and final requested browser checks; record unresolved issues separately."
+  ]
+}

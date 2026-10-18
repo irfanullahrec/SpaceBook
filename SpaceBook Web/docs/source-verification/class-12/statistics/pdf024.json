@@ -1,0 +1,479 @@
+{
+ "pdfPage": 24,
+ "sections": [
+  {
+   "id": "stat12-p024-two-dice-sum",
+   "title": "Example 2.6 — distribution of the sum of two dice",
+   "headingUrdu": "مثال 2.6 — دو پانسوں کے مجموعے کی تقسیم",
+   "headingPashto": "بېلګه 2.6 — د دوو ډایسونو د مجموعې وېش",
+   "paras": [
+    {
+     "text": "This distribution can also be shown by the formula called probability function as",
+     "urdu": "اس تقسیم کو فارمولا کے ذریعے بھی دکھایا جا سکتا ہے جسے احتمالی تفاعل کہتے ہیں",
+     "pashto": "دا وېش د فورمول په واسطه هم ښودل کېدای شي چې احتمالي تابع بلل کېږي"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}\\frac{6-|7-x|}{36}, & x=2,3,4,\\ldots 12\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}\\frac{6-|7-x|}{36}, & x=2,3,4,\\ldots 12\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}\\frac{6-|7-x|}{36}, & x=2,3,4,\\ldots 12\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$"
+    },
+    {
+     "text": "(ii) Now using the probability distribution, we get:",
+     "urdu": "(ii) اب احتمالی تقسیم استعمال کرتے ہوئے:",
+     "pashto": "(ii) اوس د احتمالي وېش په کارولو سره:"
+    },
+    {
+     "text": "$a)\\quad P(X=7)=\\frac{6}{36}$",
+     "urdu": "$a)\\quad P(X=7)=\\frac{6}{36}$",
+     "pashto": "$a)\\quad P(X=7)=\\frac{6}{36}$"
+    },
+    {
+     "text": "$b)\\quad P(X<6)=P(X=5)+P(X=4)+P(X=3)+P(X=2)$",
+     "urdu": "$b)\\quad P(X<6)=P(X=5)+P(X=4)+P(X=3)+P(X=2)$",
+     "pashto": "$b)\\quad P(X<6)=P(X=5)+P(X=4)+P(X=3)+P(X=2)$"
+    },
+    {
+     "text": "$\\phantom{b)\\quad P(X<6)}=\\frac{4}{36}+\\frac{3}{36}+\\frac{2}{36}+\\frac{1}{36}=\\frac{10}{36}$",
+     "urdu": "$\\phantom{b)\\quad P(X<6)}=\\frac{4}{36}+\\frac{3}{36}+\\frac{2}{36}+\\frac{1}{36}=\\frac{10}{36}$",
+     "pashto": "$\\phantom{b)\\quad P(X<6)}=\\frac{4}{36}+\\frac{3}{36}+\\frac{2}{36}+\\frac{1}{36}=\\frac{10}{36}$"
+    },
+    {
+     "text": "$c)\\quad P(2\\le X<5)=P(X=2)+P(X=3)+P(X=4)$",
+     "urdu": "$c)\\quad P(2\\le X<5)=P(X=2)+P(X=3)+P(X=4)$",
+     "pashto": "$c)\\quad P(2\\le X<5)=P(X=2)+P(X=3)+P(X=4)$"
+    },
+    {
+     "text": "$\\phantom{c)\\quad P(2\\le X<5)}=\\frac{1}{36}+\\frac{2}{36}+\\frac{3}{36}=\\frac{6}{36}$",
+     "urdu": "$\\phantom{c)\\quad P(2\\le X<5)}=\\frac{1}{36}+\\frac{2}{36}+\\frac{3}{36}=\\frac{6}{36}$",
+     "pashto": "$\\phantom{c)\\quad P(2\\le X<5)}=\\frac{1}{36}+\\frac{2}{36}+\\frac{3}{36}=\\frac{6}{36}$"
+    },
+    {
+     "text": "$d)\\quad P(X=5\\text{ or }10)=P(X=5)+P(X=10),$",
+     "urdu": "$d)\\quad P(X=5\\text{ or }10)=P(X=5)+P(X=10),$",
+     "pashto": "$d)\\quad P(X=5\\text{ or }10)=P(X=5)+P(X=10),$"
+    },
+    {
+     "text": "$\\phantom{d)\\quad P(X=5\\text{ or }10)}=\\frac{4}{36}+\\frac{3}{36}=\\frac{7}{36}$",
+     "urdu": "$\\phantom{d)\\quad P(X=5\\text{ or }10)}=\\frac{4}{36}+\\frac{3}{36}=\\frac{7}{36}$",
+     "pashto": "$\\phantom{d)\\quad P(X=5\\text{ or }10)}=\\frac{4}{36}+\\frac{3}{36}=\\frac{7}{36}$"
+    }
+   ],
+   "theory": "This distribution can also be shown by the formula called probability function as\n\n$p(x)=\\left\\{\\begin{matrix}\\frac{6-|7-x|}{36}, & x=2,3,4,\\ldots 12\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\n(ii) Now using the probability distribution, we get:\n\na)\\quad P(X=7)=\\frac{6}{36}\n\nb)\\quad P(X<6)=P(X=5)+P(X=4)+P(X=3)+P(X=2)\n\n\\phantom{b)\\quad P(X<6)}=\\frac{4}{36}+\\frac{3}{36}+\\frac{2}{36}+\\frac{1}{36}=\\frac{10}{36}\n\nc)\\quad P(2\\le X<5)=P(X=2)+P(X=3)+P(X=4)\n\n\\phantom{c)\\quad P(2\\le X<5)}=\\frac{1}{36}+\\frac{2}{36}+\\frac{3}{36}=\\frac{6}{36}\n\nd)\\quad P(X=5\\text{ or }10)=P(X=5)+P(X=10),\n\n\\phantom{d)\\quad P(X=5\\text{ or }10)}=\\frac{4}{36}+\\frac{3}{36}=\\frac{7}{36}",
+   "urdu": "اس تقسیم کو فارمولا کے ذریعے بھی دکھایا جا سکتا ہے جسے احتمالی تفاعل کہتے ہیں\n\n$p(x)=\\left\\{\\begin{matrix}\\frac{6-|7-x|}{36}, & x=2,3,4,\\ldots 12\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\n(ii) اب احتمالی تقسیم استعمال کرتے ہوئے:\n\na)\\quad P(X=7)=\\frac{6}{36}\n\nb)\\quad P(X<6)=P(X=5)+P(X=4)+P(X=3)+P(X=2)\n\n\\phantom{b)\\quad P(X<6)}=\\frac{4}{36}+\\frac{3}{36}+\\frac{2}{36}+\\frac{1}{36}=\\frac{10}{36}\n\nc)\\quad P(2\\le X<5)=P(X=2)+P(X=3)+P(X=4)\n\n\\phantom{c)\\quad P(2\\le X<5)}=\\frac{1}{36}+\\frac{2}{36}+\\frac{3}{36}=\\frac{6}{36}\n\nd)\\quad P(X=5\\text{ or }10)=P(X=5)+P(X=10),\n\n\\phantom{d)\\quad P(X=5\\text{ or }10)}=\\frac{4}{36}+\\frac{3}{36}=\\frac{7}{36}",
+   "pashto": "دا وېش د فورمول په واسطه هم ښودل کېدای شي چې احتمالي تابع بلل کېږي\n\n$p(x)=\\left\\{\\begin{matrix}\\frac{6-|7-x|}{36}, & x=2,3,4,\\ldots 12\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\n(ii) اوس د احتمالي وېش په کارولو سره:\n\na)\\quad P(X=7)=\\frac{6}{36}\n\nb)\\quad P(X<6)=P(X=5)+P(X=4)+P(X=3)+P(X=2)\n\n\\phantom{b)\\quad P(X<6)}=\\frac{4}{36}+\\frac{3}{36}+\\frac{2}{36}+\\frac{1}{36}=\\frac{10}{36}\n\nc)\\quad P(2\\le X<5)=P(X=2)+P(X=3)+P(X=4)\n\n\\phantom{c)\\quad P(2\\le X<5)}=\\frac{1}{36}+\\frac{2}{36}+\\frac{3}{36}=\\frac{6}{36}\n\nd)\\quad P(X=5\\text{ or }10)=P(X=5)+P(X=10),\n\n\\phantom{d)\\quad P(X=5\\text{ or }10)}=\\frac{4}{36}+\\frac{3}{36}=\\frac{7}{36}",
+   "theoryUrdu": "اس تقسیم کو فارمولا کے ذریعے بھی دکھایا جا سکتا ہے جسے احتمالی تفاعل کہتے ہیں\n\n$p(x)=\\left\\{\\begin{matrix}\\frac{6-|7-x|}{36}, & x=2,3,4,\\ldots 12\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\n(ii) اب احتمالی تقسیم استعمال کرتے ہوئے:\n\na)\\quad P(X=7)=\\frac{6}{36}\n\nb)\\quad P(X<6)=P(X=5)+P(X=4)+P(X=3)+P(X=2)\n\n\\phantom{b)\\quad P(X<6)}=\\frac{4}{36}+\\frac{3}{36}+\\frac{2}{36}+\\frac{1}{36}=\\frac{10}{36}\n\nc)\\quad P(2\\le X<5)=P(X=2)+P(X=3)+P(X=4)\n\n\\phantom{c)\\quad P(2\\le X<5)}=\\frac{1}{36}+\\frac{2}{36}+\\frac{3}{36}=\\frac{6}{36}\n\nd)\\quad P(X=5\\text{ or }10)=P(X=5)+P(X=10),\n\n\\phantom{d)\\quad P(X=5\\text{ or }10)}=\\frac{4}{36}+\\frac{3}{36}=\\frac{7}{36}",
+   "theoryPashto": "دا وېش د فورمول په واسطه هم ښودل کېدای شي چې احتمالي تابع بلل کېږي\n\n$p(x)=\\left\\{\\begin{matrix}\\frac{6-|7-x|}{36}, & x=2,3,4,\\ldots 12\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\n(ii) اوس د احتمالي وېش په کارولو سره:\n\na)\\quad P(X=7)=\\frac{6}{36}\n\nb)\\quad P(X<6)=P(X=5)+P(X=4)+P(X=3)+P(X=2)\n\n\\phantom{b)\\quad P(X<6)}=\\frac{4}{36}+\\frac{3}{36}+\\frac{2}{36}+\\frac{1}{36}=\\frac{10}{36}\n\nc)\\quad P(2\\le X<5)=P(X=2)+P(X=3)+P(X=4)\n\n\\phantom{c)\\quad P(2\\le X<5)}=\\frac{1}{36}+\\frac{2}{36}+\\frac{3}{36}=\\frac{6}{36}\n\nd)\\quad P(X=5\\text{ or }10)=P(X=5)+P(X=10),\n\n\\phantom{d)\\quad P(X=5\\text{ or }10)}=\\frac{4}{36}+\\frac{3}{36}=\\frac{7}{36}",
+   "content": "<p>This distribution can also be shown by the formula called probability function as</p><p>$p(x)=\\left\\{\\begin{matrix}\\frac{6-|7-x|}{36}, &amp; x=2,3,4,\\ldots 12\\\\ 0 &amp; \\textit{otherwise}\\end{matrix}\\right\\}$</p><p>(ii) Now using the probability distribution, we get:</p><p>a)\\quad P(X=7)=\\frac{6}{36}</p><p>b)\\quad P(X&lt;6)=P(X=5)+P(X=4)+P(X=3)+P(X=2)</p><p>\\phantom{b)\\quad P(X&lt;6)}=\\frac{4}{36}+\\frac{3}{36}+\\frac{2}{36}+\\frac{1}{36}=\\frac{10}{36}</p><p>c)\\quad P(2\\le X&lt;5)=P(X=2)+P(X=3)+P(X=4)</p><p>\\phantom{c)\\quad P(2\\le X&lt;5)}=\\frac{1}{36}+\\frac{2}{36}+\\frac{3}{36}=\\frac{6}{36}</p><p>d)\\quad P(X=5\\text{ or }10)=P(X=5)+P(X=10),</p><p>\\phantom{d)\\quad P(X=5\\text{ or }10)}=\\frac{4}{36}+\\frac{3}{36}=\\frac{7}{36}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-6"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex2-6",
+     "headers": [
+      "$X$",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "Total"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "$\\frac{1}{36}$",
+       "$\\frac{2}{36}$",
+       "$\\frac{3}{36}$",
+       "$\\frac{4}{36}$",
+       "$\\frac{5}{36}$",
+       "$\\frac{6}{36}$",
+       "$\\frac{5}{36}$",
+       "$\\frac{4}{36}$",
+       "$\\frac{3}{36}$",
+       "$\\frac{2}{36}$",
+       "$\\frac{1}{36}$",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "کل"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{36}$",
+         "$\\frac{2}{36}$",
+         "$\\frac{3}{36}$",
+         "$\\frac{4}{36}$",
+         "$\\frac{5}{36}$",
+         "$\\frac{6}{36}$",
+         "$\\frac{5}{36}$",
+         "$\\frac{4}{36}$",
+         "$\\frac{3}{36}$",
+         "$\\frac{2}{36}$",
+         "$\\frac{1}{36}$",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "ټول"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{36}$",
+         "$\\frac{2}{36}$",
+         "$\\frac{3}{36}$",
+         "$\\frac{4}{36}$",
+         "$\\frac{5}{36}$",
+         "$\\frac{6}{36}$",
+         "$\\frac{5}{36}$",
+         "$\\frac{4}{36}$",
+         "$\\frac{3}{36}$",
+         "$\\frac{2}{36}$",
+         "$\\frac{1}{36}$",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 24,
+     "printedPages": [
+      39
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  },
+  {
+   "id": "stat12-p024-function-rv",
+   "title": "2.2.3 Distribution of a function of a discrete random variable",
+   "headingUrdu": "2.2.3 منفصل تصادفی متغیر کے تفاعل کی تقسیم",
+   "headingPashto": "2.2.3 د منفصل تصادفي متغیر د تابع وېش",
+   "paras": [
+    {
+     "text": "2.2.3 Probability distribution of a function of discrete random variable",
+     "urdu": "2.2.3 منفصل تصادفی متغیر کے تفاعل کی احتمالی تقسیم",
+     "pashto": "2.2.3 د منفصل تصادفي متغیر د تابع احتمالي وېش"
+    },
+    {
+     "text": "If X is a random variable, then its functions like $X^2$, $\\frac{1}{X}$, $aX+b$ etc. are also random variables and thus have probability distributions. In case of two random variables, say X and Y, their functions like $X+Y$, $X-Y$, $aX+bY$ etc. are also random variables where a and b are any two non-zero constants. The function of a random variable is usually denoted by H(X).",
+     "urdu": "اگر X ایک تصادفی متغیر ہو تو اس کے تفاعل جیسے $X^2$، $\\frac{1}{X}$، $aX+b$ وغیرہ بھی تصادفی متغیرات ہیں اور اس طرح ان کی بھی احتمالی تقسیمیں ہوتی ہیں۔ دو تصادفی متغیرات مثلاً X اور Y کی صورت میں ان کے تفاعل جیسے $X+Y$، $X-Y$، $aX+bY$ وغیرہ بھی تصادفی متغیرات ہیں جہاں a اور b کوئی سے دو غیر صفر مستقل ہیں۔ تصادفی متغیر کے تفاعل کو عموماً H(X) سے ظاہر کرتے ہیں۔",
+     "pashto": "که X یو تصادفي متغیر وي، نو د هغه تابع ګانې لکه $X^2$، $\\frac{1}{X}$، $aX+b$ او نور هم تصادفي متغیرونه دي او احتمالي وېشونه لري. د دوو تصادفي متغیرونو لکه X او Y په حالت کې د هغو تابع ګانې لکه $X+Y$، $X-Y$، $aX+bY$ او نور هم تصادفي متغیرونه دي چې a او b هر دوه غیر صفر ثابتونه دي. د تصادفي متغیر تابع معمولاً په H(X) ښودل کېږي."
+    },
+    {
+     "text": "Example 2.7",
+     "urdu": "مثال 2.7",
+     "pashto": "بېلګه 2.7"
+    },
+    {
+     "text": "If a discrete random variable X has the following probability distribution.",
+     "urdu": "اگر ایک منفصل تصادفی متغیر X کی احتمالی تقسیم درج ذیل ہو۔",
+     "pashto": "که یو منفصل تصادفي متغیر X لاندې احتمالي وېش ولري."
+    },
+    {
+     "text": "Find probability distribution for $X^2$, $2X+4$.",
+     "urdu": "$X^2$ اور $2X+4$ کی احتمالی تقسیم معلوم کریں۔",
+     "pashto": "د $X^2$ او $2X+4$ احتمالي وېش پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "The probability distribution of the random variable $X^2$ is",
+     "urdu": "تصادفی متغیر $X^2$ کی احتمالی تقسیم یہ ہے",
+     "pashto": "د تصادفي متغیر $X^2$ احتمالي وېش دا دی"
+    }
+   ],
+   "theory": "2.2.3 Probability distribution of a function of discrete random variable\n\nIf X is a random variable, then its functions like X^2, \\frac{1}{X}, aX+b etc. are also random variables and thus have probability distributions. In case of two random variables, say X and Y, their functions like X+Y, X-Y, aX+bY etc. are also random variables where a and b are any two non-zero constants. The function of a random variable is usually denoted by H(X).\n\nExample 2.7\n\nIf a discrete random variable X has the following probability distribution.\n\nFind probability distribution for X^2, 2X+4.\n\nSolution:\n\nThe probability distribution of the random variable X^2 is",
+   "urdu": "2.2.3 منفصل تصادفی متغیر کے تفاعل کی احتمالی تقسیم\n\nاگر X ایک تصادفی متغیر ہو تو اس کے تفاعل جیسے X^2، \\frac{1}{X}، aX+b وغیرہ بھی تصادفی متغیرات ہیں اور اس طرح ان کی بھی احتمالی تقسیمیں ہوتی ہیں۔ دو تصادفی متغیرات مثلاً X اور Y کی صورت میں ان کے تفاعل جیسے X+Y، X-Y، aX+bY وغیرہ بھی تصادفی متغیرات ہیں جہاں a اور b کوئی سے دو غیر صفر مستقل ہیں۔ تصادفی متغیر کے تفاعل کو عموماً H(X) سے ظاہر کرتے ہیں۔\n\nمثال 2.7\n\nاگر ایک منفصل تصادفی متغیر X کی احتمالی تقسیم درج ذیل ہو۔\n\nX^2 اور 2X+4 کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\nتصادفی متغیر X^2 کی احتمالی تقسیم یہ ہے",
+   "pashto": "2.2.3 د منفصل تصادفي متغیر د تابع احتمالي وېش\n\nکه X یو تصادفي متغیر وي، نو د هغه تابع ګانې لکه X^2، \\frac{1}{X}، aX+b او نور هم تصادفي متغیرونه دي او احتمالي وېشونه لري. د دوو تصادفي متغیرونو لکه X او Y په حالت کې د هغو تابع ګانې لکه X+Y، X-Y، aX+bY او نور هم تصادفي متغیرونه دي چې a او b هر دوه غیر صفر ثابتونه دي. د تصادفي متغیر تابع معمولاً په H(X) ښودل کېږي.\n\nبېلګه 2.7\n\nکه یو منفصل تصادفي متغیر X لاندې احتمالي وېش ولري.\n\nد X^2 او 2X+4 احتمالي وېش پیدا کړئ.\n\nحل:\n\nد تصادفي متغیر X^2 احتمالي وېش دا دی",
+   "theoryUrdu": "2.2.3 منفصل تصادفی متغیر کے تفاعل کی احتمالی تقسیم\n\nاگر X ایک تصادفی متغیر ہو تو اس کے تفاعل جیسے X^2، \\frac{1}{X}، aX+b وغیرہ بھی تصادفی متغیرات ہیں اور اس طرح ان کی بھی احتمالی تقسیمیں ہوتی ہیں۔ دو تصادفی متغیرات مثلاً X اور Y کی صورت میں ان کے تفاعل جیسے X+Y، X-Y، aX+bY وغیرہ بھی تصادفی متغیرات ہیں جہاں a اور b کوئی سے دو غیر صفر مستقل ہیں۔ تصادفی متغیر کے تفاعل کو عموماً H(X) سے ظاہر کرتے ہیں۔\n\nمثال 2.7\n\nاگر ایک منفصل تصادفی متغیر X کی احتمالی تقسیم درج ذیل ہو۔\n\nX^2 اور 2X+4 کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\nتصادفی متغیر X^2 کی احتمالی تقسیم یہ ہے",
+   "theoryPashto": "2.2.3 د منفصل تصادفي متغیر د تابع احتمالي وېش\n\nکه X یو تصادفي متغیر وي، نو د هغه تابع ګانې لکه X^2، \\frac{1}{X}، aX+b او نور هم تصادفي متغیرونه دي او احتمالي وېشونه لري. د دوو تصادفي متغیرونو لکه X او Y په حالت کې د هغو تابع ګانې لکه X+Y، X-Y، aX+bY او نور هم تصادفي متغیرونه دي چې a او b هر دوه غیر صفر ثابتونه دي. د تصادفي متغیر تابع معمولاً په H(X) ښودل کېږي.\n\nبېلګه 2.7\n\nکه یو منفصل تصادفي متغیر X لاندې احتمالي وېش ولري.\n\nد X^2 او 2X+4 احتمالي وېش پیدا کړئ.\n\nحل:\n\nد تصادفي متغیر X^2 احتمالي وېش دا دی",
+   "content": "<p>2.2.3 Probability distribution of a function of discrete random variable</p><p>If X is a random variable, then its functions like X^2, \\frac{1}{X}, aX+b etc. are also random variables and thus have probability distributions. In case of two random variables, say X and Y, their functions like X+Y, X-Y, aX+bY etc. are also random variables where a and b are any two non-zero constants. The function of a random variable is usually denoted by H(X).</p><p>Example 2.7</p><p>If a discrete random variable X has the following probability distribution.</p><p>Find probability distribution for X^2, 2X+4.</p><p>Solution:</p><p>The probability distribution of the random variable X^2 is</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-7"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-7-sq"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex2-7",
+     "headers": [
+      "$X$",
+      "−2",
+      "2",
+      "1"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "$\\frac{1}{3}$",
+       "$\\frac{1}{2}$",
+       "$\\frac{1}{6}$"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "−2",
+        "2",
+        "1"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{3}$",
+         "$\\frac{1}{2}$",
+         "$\\frac{1}{6}$"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "−2",
+        "2",
+        "1"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{3}$",
+         "$\\frac{1}{2}$",
+         "$\\frac{1}{6}$"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex2-7-sq",
+     "headers": [
+      "$H(X)=X^2$",
+      "$p(x)$"
+     ],
+     "rows": [
+      [
+       "4",
+       "$\\frac{1}{3}$"
+      ],
+      [
+       "4",
+       "$\\frac{1}{2}$"
+      ],
+      [
+       "1",
+       "$\\frac{1}{6}$"
+      ],
+      [
+       "Total",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$H(X)=X^2$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "4",
+         "$\\frac{1}{3}$"
+        ],
+        [
+         "4",
+         "$\\frac{1}{2}$"
+        ],
+        [
+         "1",
+         "$\\frac{1}{6}$"
+        ],
+        [
+         "کل",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$H(X)=X^2$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "4",
+         "$\\frac{1}{3}$"
+        ],
+        [
+         "4",
+         "$\\frac{1}{2}$"
+        ],
+        [
+         "1",
+         "$\\frac{1}{6}$"
+        ],
+        [
+         "ټول",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 24,
+     "printedPages": [
+      40
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

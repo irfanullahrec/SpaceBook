@@ -1,0 +1,180 @@
+{
+ "pdfPage": 91,
+ "sections": [
+  {
+   "id": "cs12-u5-text-13",
+   "title": "Unit 5 text (13)",
+   "headingUrdu": "یونٹ 5 — متن (13)",
+   "headingPashto": "۵ څپرکی — متن (13)",
+   "paras": [
+    {
+     "text": "d. Finding length of a strings",
+     "urdu": "d. اسٹرنگ کی لمبائی معلوم کرنا",
+     "pashto": "d. د تار اوږدوالی موندل"
+    },
+    {
+     "text": "length() function",
+     "urdu": "length() فنکشن",
+     "pashto": "length() فنکشن"
+    },
+    {
+     "text": "To find the length of a string, length () function is used. Consider the following program to demonstrate working of the length () function.",
+     "urdu": "اسٹرنگ کی لمبائی معلوم کرنے کے لیے length () فنکشن استعمال ہوتا ہے۔ length () فنکشن کا عمل واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د تار د اوږدوالي موندلو لپاره length () فنکشن کارېږي. د length () فنکشن د کار د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\ncout << \"Length of the given string is: \"<< str.length();\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\ncout << \"Length of the given string is: \"<< str.length();\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\ncout << \"Length of the given string is: \"<< str.length();\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Length of the given string is: 46",
+     "urdu": "Length of the given string is: 46",
+     "pashto": "Length of the given string is: 46",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "e. Swapping strings",
+     "urdu": "e. اسٹرنگز کا تبادلہ",
+     "pashto": "e. د تارونو تبادله"
+    },
+    {
+     "text": "swap() function",
+     "urdu": "swap() فنکشن",
+     "pashto": "swap() فنکشن"
+    },
+    {
+     "text": "To swap (or interchange) values of two strings, swap() function is used. Consider the following program to demonstrate working of swap () function.",
+     "urdu": "دو اسٹرنگز کی قدروں کا تبادلہ (یا ادل بدل) کرنے کے لیے swap() فنکشن استعمال ہوتا ہے۔ swap () فنکشن کا عمل واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د دوو تارونو د ارزښتونو د تبادلې (یا اړول) لپاره swap() فنکشن کارېږي. د swap () فنکشن د کار د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str1 = \"F.Sc Part I\";\nstring str2 = \"F.Sc Part II\";\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\nstr1.swap(str2);\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str1 = \"F.Sc Part I\";\nstring str2 = \"F.Sc Part II\";\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\nstr1.swap(str2);\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str1 = \"F.Sc Part I\";\nstring str2 = \"F.Sc Part II\";\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\nstr1.swap(str2);\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "str1 is: F.Sc Part I\nstr2 is: F.Sc Part II\nstr1 is: F.Sc Part II\nstr2 is: F.Sc Part I",
+     "urdu": "str1 is: F.Sc Part I\nstr2 is: F.Sc Part II\nstr1 is: F.Sc Part II\nstr2 is: F.Sc Part I",
+     "pashto": "str1 is: F.Sc Part I\nstr2 is: F.Sc Part II\nstr1 is: F.Sc Part II\nstr2 is: F.Sc Part I",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "d. Finding length of a strings\n\nlength() function\n\nTo find the length of a string, length () function is used. Consider the following program to demonstrate working of the length () function.\n\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\ncout << \"Length of the given string is: \"<< str.length();\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nLength of the given string is: 46\n\ne. Swapping strings\n\nswap() function\n\nTo swap (or interchange) values of two strings, swap() function is used. Consider the following program to demonstrate working of swap () function.\n\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str1 = \"F.Sc Part I\";\nstring str2 = \"F.Sc Part II\";\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\nstr1.swap(str2);\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nstr1 is: F.Sc Part I\nstr2 is: F.Sc Part II\nstr1 is: F.Sc Part II\nstr2 is: F.Sc Part I",
+   "urdu": "d. اسٹرنگ کی لمبائی معلوم کرنا\n\nlength() فنکشن\n\nاسٹرنگ کی لمبائی معلوم کرنے کے لیے length () فنکشن استعمال ہوتا ہے۔ length () فنکشن کا عمل واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\ncout << \"Length of the given string is: \"<< str.length();\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nLength of the given string is: 46\n\ne. اسٹرنگز کا تبادلہ\n\nswap() فنکشن\n\nدو اسٹرنگز کی قدروں کا تبادلہ (یا ادل بدل) کرنے کے لیے swap() فنکشن استعمال ہوتا ہے۔ swap () فنکشن کا عمل واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str1 = \"F.Sc Part I\";\nstring str2 = \"F.Sc Part II\";\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\nstr1.swap(str2);\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nstr1 is: F.Sc Part I\nstr2 is: F.Sc Part II\nstr1 is: F.Sc Part II\nstr2 is: F.Sc Part I",
+   "pashto": "d. د تار اوږدوالی موندل\n\nlength() فنکشن\n\nد تار د اوږدوالي موندلو لپاره length () فنکشن کارېږي. د length () فنکشن د کار د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\ncout << \"Length of the given string is: \"<< str.length();\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nLength of the given string is: 46\n\ne. د تارونو تبادله\n\nswap() فنکشن\n\nد دوو تارونو د ارزښتونو د تبادلې (یا اړول) لپاره swap() فنکشن کارېږي. د swap () فنکشن د کار د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str1 = \"F.Sc Part I\";\nstring str2 = \"F.Sc Part II\";\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\nstr1.swap(str2);\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nstr1 is: F.Sc Part I\nstr2 is: F.Sc Part II\nstr1 is: F.Sc Part II\nstr2 is: F.Sc Part I",
+   "theoryUrdu": "d. اسٹرنگ کی لمبائی معلوم کرنا\n\nlength() فنکشن\n\nاسٹرنگ کی لمبائی معلوم کرنے کے لیے length () فنکشن استعمال ہوتا ہے۔ length () فنکشن کا عمل واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\ncout << \"Length of the given string is: \"<< str.length();\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nLength of the given string is: 46\n\ne. اسٹرنگز کا تبادلہ\n\nswap() فنکشن\n\nدو اسٹرنگز کی قدروں کا تبادلہ (یا ادل بدل) کرنے کے لیے swap() فنکشن استعمال ہوتا ہے۔ swap () فنکشن کا عمل واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str1 = \"F.Sc Part I\";\nstring str2 = \"F.Sc Part II\";\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\nstr1.swap(str2);\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nstr1 is: F.Sc Part I\nstr2 is: F.Sc Part II\nstr1 is: F.Sc Part II\nstr2 is: F.Sc Part I",
+   "theoryPashto": "d. د تار اوږدوالی موندل\n\nlength() فنکشن\n\nد تار د اوږدوالي موندلو لپاره length () فنکشن کارېږي. د length () فنکشن د کار د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nmain()\n{\nstring str(\"C++ is a very interesting programming language\");\ncout << \"Length of the given string is: \"<< str.length();\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nLength of the given string is: 46\n\ne. د تارونو تبادله\n\nswap() فنکشن\n\nد دوو تارونو د ارزښتونو د تبادلې (یا اړول) لپاره swap() فنکشن کارېږي. د swap () فنکشن د کار د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include <string>\n#include<conio.h>\nint main()\n{\nstring str1 = \"F.Sc Part I\";\nstring str2 = \"F.Sc Part II\";\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\nstr1.swap(str2);\ncout << \"str1 is: \" << str1 << endl;\ncout << \"str2 is: \" << str2 << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nstr1 is: F.Sc Part I\nstr2 is: F.Sc Part II\nstr1 is: F.Sc Part II\nstr2 is: F.Sc Part I",
+   "content": "<p>d. Finding length of a strings</p><p>length() function</p><p>To find the length of a string, length () function is used. Consider the following program to demonstrate working of the length () function.</p><p>#include &lt;iostream.h&gt;\n#include &lt;string&gt;\n#include&lt;conio.h&gt;\nmain()\n{\nstring str(&quot;C++ is a very interesting programming language&quot;);\ncout &lt;&lt; &quot;Length of the given string is: &quot;&lt;&lt; str.length();\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Length of the given string is: 46</p><p>e. Swapping strings</p><p>swap() function</p><p>To swap (or interchange) values of two strings, swap() function is used. Consider the following program to demonstrate working of swap () function.</p><p>#include &lt;iostream.h&gt;\n#include &lt;string&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nstring str1 = &quot;F.Sc Part I&quot;;\nstring str2 = &quot;F.Sc Part II&quot;;\ncout &lt;&lt; &quot;str1 is: &quot; &lt;&lt; str1 &lt;&lt; endl;\ncout &lt;&lt; &quot;str2 is: &quot; &lt;&lt; str2 &lt;&lt; endl;\nstr1.swap(str2);\ncout &lt;&lt; &quot;str1 is: &quot; &lt;&lt; str1 &lt;&lt; endl;\ncout &lt;&lt; &quot;str2 is: &quot; &lt;&lt; str2 &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>str1 is: F.Sc Part I\nstr2 is: F.Sc Part II\nstr1 is: F.Sc Part II\nstr2 is: F.Sc Part I</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 91,
+     "printedPages": [
+      170,
+      171
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (13)",
+   "sourcePageLabel": "PDF 91 · p. 170–171",
+   "sourceNote": "The top of p.170 (end of the find() program and its output) is recorded with PDF90.",
+   "unit": 5
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

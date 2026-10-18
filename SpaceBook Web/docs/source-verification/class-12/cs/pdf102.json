@@ -1,0 +1,200 @@
+{
+ "pdfPage": 102,
+ "sections": [
+  {
+   "id": "cs12-u6-text-9",
+   "title": "Unit 6 text (9)",
+   "headingUrdu": "یونٹ 6 — متن (9)",
+   "headingPashto": "۶ څپرکی — متن (9)",
+   "paras": [
+    {
+     "text": "Although, formal parameters are always variables but actual parameters may not be variables. Numbers, expressions, or even function calls can also be used as actual parameters. Here are some examples of valid actual parameters in the function call to calculate_bill:",
+     "urdu": "اگرچہ رسمی پیرامیٹرز ہمیشہ ویری ایبلز ہوتے ہیں لیکن اصل پیرامیٹرز ضروری نہیں کہ ویری ایبلز ہوں۔ اعداد، ایکسپریشنز یا فنکشن کالز بھی اصل پیرامیٹرز کے طور پر استعمال ہو سکتے ہیں۔ calculate_bill کو فنکشن کال میں درست اصل پیرامیٹرز کی کچھ مثالیں یہ ہیں:",
+     "pashto": "که څه هم رسمي پاراميټرونه تل متغیرونه وي، خو اصلي پاراميټرونه ښايي متغیرونه نه وي. عددونه، افادې یا حتی د فنکشن غوښتنې هم د اصلي پاراميټرونو په توګه کارېدای شي. د calculate_bill په غوښتنه کې د سمو اصلي پاراميټرونو ځینې بېلګې دا دي:"
+    },
+    {
+     "text": "bill = calculate_bill (25, 32, 27);\nbill = calculate_bill (50+60, 25*2, 100-75);\nbill = calculate_bill (rice, chicken, (int) sqrt(27));",
+     "urdu": "bill = calculate_bill (25, 32, 27);\nbill = calculate_bill (50+60, 25*2, 100-75);\nbill = calculate_bill (rice, chicken, (int) sqrt(27));",
+     "pashto": "bill = calculate_bill (25, 32, 27);\nbill = calculate_bill (50+60, 25*2, 100-75);\nbill = calculate_bill (rice, chicken, (int) sqrt(27));",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "6.1.7 Local and Global functions",
+     "urdu": "6.1.7 مقامی اور عالمی فنکشنز",
+     "pashto": "۶.۱.۷ محلي او نړیوال فنکشنونه"
+    },
+    {
+     "text": "The terms local and global functions specify the scope of functions within programs. Based on the scope of the functions, functions are categorized into two types; local functions and global functions.",
+     "urdu": "مقامی اور عالمی فنکشنز کی اصطلاحات پروگراموں میں فنکشنز کا دائرہ بتاتی ہیں۔ فنکشنز کے دائرے کی بنیاد پر فنکشنز دو اقسام میں تقسیم ہیں؛ مقامی فنکشنز اور عالمی فنکشنز۔",
+     "pashto": "د محلي او نړیوالو فنکشنونو اصطلاحګانې په پروګرامونو کې د فنکشنونو ساحه ښيي. د فنکشنونو د ساحې پر بنسټ فنکشنونه په دوو ډولونو وېشل کېږي؛ محلي فنکشنونه او نړیوال فنکشنونه."
+    },
+    {
+     "text": "a. Local functions",
+     "urdu": "a. مقامی فنکشنز",
+     "pashto": "a. محلي فنکشنونه"
+    },
+    {
+     "text": "Those functions which are defined inside the body of another function are called local function. Normally, we use built-in function inside the body of main () function to perform our activities. Such declarations are termed as local.",
+     "urdu": "وہ فنکشنز جو کسی دوسرے فنکشن کے جسم کے اندر بیان کیے جائیں، مقامی فنکشن کہلاتے ہیں۔ عموماً ہم اپنے کام انجام دینے کے لیے main () فنکشن کے جسم کے اندر بلٹ اِن فنکشن استعمال کرتے ہیں۔ ایسی ڈکلیریشنز مقامی کہلاتی ہیں۔",
+     "pashto": "هغه فنکشنونه چې د بل فنکشن د بدنې دننه تعریف شي، محلي فنکشن بلل کېږي. عموماً موږ د خپلو کارونو لپاره د main () فنکشن د بدنې دننه جوړ شوي فنکشن کاروو. داسې اعلانونه محلي بلل کېږي."
+    },
+    {
+     "text": "b. Global functions",
+     "urdu": "b. عالمی فنکشنز",
+     "pashto": "b. نړیوال فنکشنونه"
+    },
+    {
+     "text": "A function declared outside any function is called global function. A global function can be accessed from any part of the program. Normally, user-defined functions are considered as global function if they are defined before the main () function and are thus accessible to every part of the program.",
+     "urdu": "کسی بھی فنکشن کے باہر ڈکلیئر کیا گیا فنکشن عالمی فنکشن کہلاتا ہے۔ عالمی فنکشن تک پروگرام کے کسی بھی حصے سے رسائی ہو سکتی ہے۔ عموماً یوزر ڈیفائنڈ فنکشنز عالمی فنکشن سمجھے جاتے ہیں اگر وہ main () فنکشن سے پہلے بیان کیے گئے ہوں اور یوں پروگرام کے ہر حصے کے لیے قابلِ رسائی ہوتے ہیں۔",
+     "pashto": "هغه فنکشن چې له هر فنکشن بهر اعلان شي، نړیوال فنکشن بلل کېږي. نړیوال فنکشن ته د پروګرام له هرې برخې لاسرسی کېدای شي. عموماً د کاروونکي-تعریف شوي فنکشنونه نړیوال ګڼل کېږي که د main () فنکشن مخکې تعریف شوي وي او په دې توګه د پروګرام هرې برخې ته د لاسرسي وړ وي."
+    },
+    {
+     "text": "6.1.8 inline function",
+     "urdu": "6.1.8 inline فنکشن",
+     "pashto": "۶.۱.۸ inline فنکشن"
+    },
+    {
+     "text": "Using function calls in program, a lot of time is wasted in passing control from the calling function to the called function and returning control back to the calling function. This limitation can be overcome by the use of inline function.",
+     "urdu": "پروگرام میں فنکشن کالز استعمال کرنے سے کال کرنے والے فنکشن سے کال کیے گئے فنکشن تک کنٹرول منتقل کرنے اور کنٹرول کو واپس کال کرنے والے فنکشن تک لانے میں کافی وقت ضائع ہوتا ہے۔ اس حد پر inline فنکشن کے استعمال سے قابو پایا جا سکتا ہے۔",
+     "pashto": "په پروګرام کې د فنکشن غوښتنو په کارولو، له غوښتونکي فنکشن څخه غوښتل شوي فنکشن ته د کنټرول په لېږدولو او بېرته غوښتونکي فنکشن ته د کنټرول په راګرځولو کې ډېر وخت ضایع کېږي. دا محدودیت د inline فنکشن په کارولو لرې کېدای شي."
+    },
+    {
+     "text": "C++ offers a way to combine the advantages of functions with the speed of code written in-place with the help of inline functions. In inline function, the function return type is preceded by the inline keyword which requests the compiler to treat the function as an inline and do not jump again and again to the called function. In the case of inline function, when the compiler compiles the code, all inline functions are expanded in-place, that is, the function call is replaced with a copy of the code of the function itself, which removes the function call overhead.",
+     "urdu": "C++ inline فنکشنز کی مدد سے فنکشنز کے فوائد کو اپنی جگہ لکھے گئے کوڈ کی رفتار کے ساتھ ملانے کا طریقہ فراہم کرتی ہے۔ inline فنکشن میں فنکشن کی ریٹرن ٹائپ سے پہلے inline کلیدی لفظ آتا ہے جو کمپائلر سے درخواست کرتا ہے کہ فنکشن کو inline سمجھے اور بار بار کال کیے گئے فنکشن پر نہ جائے۔ inline فنکشن کی صورت میں جب کمپائلر کوڈ کمپائل کرتا ہے تو تمام inline فنکشنز اپنی جگہ پھیلا دیے جاتے ہیں، یعنی فنکشن کال کو خود فنکشن کے کوڈ کی نقل سے بدل دیا جاتا ہے، جس سے فنکشن کال کا اضافی بوجھ ختم ہو جاتا ہے۔",
+     "pashto": "C++ د inline فنکشنونو په مرسته لاره برابروي چې د فنکشنونو ګټې په ځای لیکل شوي کوډ له سرعت سره یوځای کړي. په inline فنکشن کې د فنکشن د بېرته ورکړې ډول ته inline کلیدي کلمه مخکې لیکل کېږي چې له کمپایلر غوښتنه کوي فنکشن inline وګڼي او بیا بیا غوښتل شوي فنکشن ته ټوپ ونه وهي. د inline فنکشن په حالت کې کله چې کمپایلر کوډ کمپایل کړي، ټول inline فنکشنونه په ځای پراخېږي، یعنې د فنکشن غوښتنه د فنکشن د کوډ په کاپي بدلېږي، چې د فنکشن غوښتنې اضافي بار لرې کوي."
+    },
+    {
+     "text": "The disadvantage of the inline function is that it can make the compiled code quite larger, especially if the inline function is long and/or there are many calls to the inline function.",
+     "urdu": "inline فنکشن کا نقصان یہ ہے کہ یہ کمپائل شدہ کوڈ کو کافی بڑا کر سکتا ہے، خاص طور پر اگر inline فنکشن لمبا ہو اور/یا inline فنکشن کو بہت سی کالز ہوں۔",
+     "pashto": "د inline فنکشن زیان دا دی چې کمپایل شوی کوډ ډېر لویولی شي، په ځانګړي ډول که inline فنکشن اوږد وي او/یا inline فنکشن ته ډېرې غوښتنې وي."
+    },
+    {
+     "text": "The format for the declaration of inline function is given in the following segment.",
+     "urdu": "inline فنکشن کی ڈکلیریشن کی شکل درج ذیل حصے میں دی گئی ہے۔",
+     "pashto": "د inline فنکشن د اعلان بڼه په لاندې برخه کې ورکړل شوې."
+    },
+    {
+     "text": "inline type name ( arguments ... )\n{\nStatements;\n}",
+     "urdu": "inline type name ( arguments ... )\n{\nStatements;\n}",
+     "pashto": "inline type name ( arguments ... )\n{\nStatements;\n}",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Although, formal parameters are always variables but actual parameters may not be variables. Numbers, expressions, or even function calls can also be used as actual parameters. Here are some examples of valid actual parameters in the function call to calculate_bill:\n\nbill = calculate_bill (25, 32, 27);\nbill = calculate_bill (50+60, 25*2, 100-75);\nbill = calculate_bill (rice, chicken, (int) sqrt(27));\n\n6.1.7 Local and Global functions\n\nThe terms local and global functions specify the scope of functions within programs. Based on the scope of the functions, functions are categorized into two types; local functions and global functions.\n\na. Local functions\n\nThose functions which are defined inside the body of another function are called local function. Normally, we use built-in function inside the body of main () function to perform our activities. Such declarations are termed as local.\n\nb. Global functions\n\nA function declared outside any function is called global function. A global function can be accessed from any part of the program. Normally, user-defined functions are considered as global function if they are defined before the main () function and are thus accessible to every part of the program.\n\n6.1.8 inline function\n\nUsing function calls in program, a lot of time is wasted in passing control from the calling function to the called function and returning control back to the calling function. This limitation can be overcome by the use of inline function.\n\nC++ offers a way to combine the advantages of functions with the speed of code written in-place with the help of inline functions. In inline function, the function return type is preceded by the inline keyword which requests the compiler to treat the function as an inline and do not jump again and again to the called function. In the case of inline function, when the compiler compiles the code, all inline functions are expanded in-place, that is, the function call is replaced with a copy of the code of the function itself, which removes the function call overhead.\n\nThe disadvantage of the inline function is that it can make the compiled code quite larger, especially if the inline function is long and/or there are many calls to the inline function.\n\nThe format for the declaration of inline function is given in the following segment.\n\ninline type name ( arguments ... )\n{\nStatements;\n}",
+   "urdu": "اگرچہ رسمی پیرامیٹرز ہمیشہ ویری ایبلز ہوتے ہیں لیکن اصل پیرامیٹرز ضروری نہیں کہ ویری ایبلز ہوں۔ اعداد، ایکسپریشنز یا فنکشن کالز بھی اصل پیرامیٹرز کے طور پر استعمال ہو سکتے ہیں۔ calculate_bill کو فنکشن کال میں درست اصل پیرامیٹرز کی کچھ مثالیں یہ ہیں:\n\nbill = calculate_bill (25, 32, 27);\nbill = calculate_bill (50+60, 25*2, 100-75);\nbill = calculate_bill (rice, chicken, (int) sqrt(27));\n\n6.1.7 مقامی اور عالمی فنکشنز\n\nمقامی اور عالمی فنکشنز کی اصطلاحات پروگراموں میں فنکشنز کا دائرہ بتاتی ہیں۔ فنکشنز کے دائرے کی بنیاد پر فنکشنز دو اقسام میں تقسیم ہیں؛ مقامی فنکشنز اور عالمی فنکشنز۔\n\na. مقامی فنکشنز\n\nوہ فنکشنز جو کسی دوسرے فنکشن کے جسم کے اندر بیان کیے جائیں، مقامی فنکشن کہلاتے ہیں۔ عموماً ہم اپنے کام انجام دینے کے لیے main () فنکشن کے جسم کے اندر بلٹ اِن فنکشن استعمال کرتے ہیں۔ ایسی ڈکلیریشنز مقامی کہلاتی ہیں۔\n\nb. عالمی فنکشنز\n\nکسی بھی فنکشن کے باہر ڈکلیئر کیا گیا فنکشن عالمی فنکشن کہلاتا ہے۔ عالمی فنکشن تک پروگرام کے کسی بھی حصے سے رسائی ہو سکتی ہے۔ عموماً یوزر ڈیفائنڈ فنکشنز عالمی فنکشن سمجھے جاتے ہیں اگر وہ main () فنکشن سے پہلے بیان کیے گئے ہوں اور یوں پروگرام کے ہر حصے کے لیے قابلِ رسائی ہوتے ہیں۔\n\n6.1.8 inline فنکشن\n\nپروگرام میں فنکشن کالز استعمال کرنے سے کال کرنے والے فنکشن سے کال کیے گئے فنکشن تک کنٹرول منتقل کرنے اور کنٹرول کو واپس کال کرنے والے فنکشن تک لانے میں کافی وقت ضائع ہوتا ہے۔ اس حد پر inline فنکشن کے استعمال سے قابو پایا جا سکتا ہے۔\n\nC++ inline فنکشنز کی مدد سے فنکشنز کے فوائد کو اپنی جگہ لکھے گئے کوڈ کی رفتار کے ساتھ ملانے کا طریقہ فراہم کرتی ہے۔ inline فنکشن میں فنکشن کی ریٹرن ٹائپ سے پہلے inline کلیدی لفظ آتا ہے جو کمپائلر سے درخواست کرتا ہے کہ فنکشن کو inline سمجھے اور بار بار کال کیے گئے فنکشن پر نہ جائے۔ inline فنکشن کی صورت میں جب کمپائلر کوڈ کمپائل کرتا ہے تو تمام inline فنکشنز اپنی جگہ پھیلا دیے جاتے ہیں، یعنی فنکشن کال کو خود فنکشن کے کوڈ کی نقل سے بدل دیا جاتا ہے، جس سے فنکشن کال کا اضافی بوجھ ختم ہو جاتا ہے۔\n\ninline فنکشن کا نقصان یہ ہے کہ یہ کمپائل شدہ کوڈ کو کافی بڑا کر سکتا ہے، خاص طور پر اگر inline فنکشن لمبا ہو اور/یا inline فنکشن کو بہت سی کالز ہوں۔\n\ninline فنکشن کی ڈکلیریشن کی شکل درج ذیل حصے میں دی گئی ہے۔\n\ninline type name ( arguments ... )\n{\nStatements;\n}",
+   "pashto": "که څه هم رسمي پاراميټرونه تل متغیرونه وي، خو اصلي پاراميټرونه ښايي متغیرونه نه وي. عددونه، افادې یا حتی د فنکشن غوښتنې هم د اصلي پاراميټرونو په توګه کارېدای شي. د calculate_bill په غوښتنه کې د سمو اصلي پاراميټرونو ځینې بېلګې دا دي:\n\nbill = calculate_bill (25, 32, 27);\nbill = calculate_bill (50+60, 25*2, 100-75);\nbill = calculate_bill (rice, chicken, (int) sqrt(27));\n\n۶.۱.۷ محلي او نړیوال فنکشنونه\n\nد محلي او نړیوالو فنکشنونو اصطلاحګانې په پروګرامونو کې د فنکشنونو ساحه ښيي. د فنکشنونو د ساحې پر بنسټ فنکشنونه په دوو ډولونو وېشل کېږي؛ محلي فنکشنونه او نړیوال فنکشنونه.\n\na. محلي فنکشنونه\n\nهغه فنکشنونه چې د بل فنکشن د بدنې دننه تعریف شي، محلي فنکشن بلل کېږي. عموماً موږ د خپلو کارونو لپاره د main () فنکشن د بدنې دننه جوړ شوي فنکشن کاروو. داسې اعلانونه محلي بلل کېږي.\n\nb. نړیوال فنکشنونه\n\nهغه فنکشن چې له هر فنکشن بهر اعلان شي، نړیوال فنکشن بلل کېږي. نړیوال فنکشن ته د پروګرام له هرې برخې لاسرسی کېدای شي. عموماً د کاروونکي-تعریف شوي فنکشنونه نړیوال ګڼل کېږي که د main () فنکشن مخکې تعریف شوي وي او په دې توګه د پروګرام هرې برخې ته د لاسرسي وړ وي.\n\n۶.۱.۸ inline فنکشن\n\nپه پروګرام کې د فنکشن غوښتنو په کارولو، له غوښتونکي فنکشن څخه غوښتل شوي فنکشن ته د کنټرول په لېږدولو او بېرته غوښتونکي فنکشن ته د کنټرول په راګرځولو کې ډېر وخت ضایع کېږي. دا محدودیت د inline فنکشن په کارولو لرې کېدای شي.\n\nC++ د inline فنکشنونو په مرسته لاره برابروي چې د فنکشنونو ګټې په ځای لیکل شوي کوډ له سرعت سره یوځای کړي. په inline فنکشن کې د فنکشن د بېرته ورکړې ډول ته inline کلیدي کلمه مخکې لیکل کېږي چې له کمپایلر غوښتنه کوي فنکشن inline وګڼي او بیا بیا غوښتل شوي فنکشن ته ټوپ ونه وهي. د inline فنکشن په حالت کې کله چې کمپایلر کوډ کمپایل کړي، ټول inline فنکشنونه په ځای پراخېږي، یعنې د فنکشن غوښتنه د فنکشن د کوډ په کاپي بدلېږي، چې د فنکشن غوښتنې اضافي بار لرې کوي.\n\nد inline فنکشن زیان دا دی چې کمپایل شوی کوډ ډېر لویولی شي، په ځانګړي ډول که inline فنکشن اوږد وي او/یا inline فنکشن ته ډېرې غوښتنې وي.\n\nد inline فنکشن د اعلان بڼه په لاندې برخه کې ورکړل شوې.\n\ninline type name ( arguments ... )\n{\nStatements;\n}",
+   "theoryUrdu": "اگرچہ رسمی پیرامیٹرز ہمیشہ ویری ایبلز ہوتے ہیں لیکن اصل پیرامیٹرز ضروری نہیں کہ ویری ایبلز ہوں۔ اعداد، ایکسپریشنز یا فنکشن کالز بھی اصل پیرامیٹرز کے طور پر استعمال ہو سکتے ہیں۔ calculate_bill کو فنکشن کال میں درست اصل پیرامیٹرز کی کچھ مثالیں یہ ہیں:\n\nbill = calculate_bill (25, 32, 27);\nbill = calculate_bill (50+60, 25*2, 100-75);\nbill = calculate_bill (rice, chicken, (int) sqrt(27));\n\n6.1.7 مقامی اور عالمی فنکشنز\n\nمقامی اور عالمی فنکشنز کی اصطلاحات پروگراموں میں فنکشنز کا دائرہ بتاتی ہیں۔ فنکشنز کے دائرے کی بنیاد پر فنکشنز دو اقسام میں تقسیم ہیں؛ مقامی فنکشنز اور عالمی فنکشنز۔\n\na. مقامی فنکشنز\n\nوہ فنکشنز جو کسی دوسرے فنکشن کے جسم کے اندر بیان کیے جائیں، مقامی فنکشن کہلاتے ہیں۔ عموماً ہم اپنے کام انجام دینے کے لیے main () فنکشن کے جسم کے اندر بلٹ اِن فنکشن استعمال کرتے ہیں۔ ایسی ڈکلیریشنز مقامی کہلاتی ہیں۔\n\nb. عالمی فنکشنز\n\nکسی بھی فنکشن کے باہر ڈکلیئر کیا گیا فنکشن عالمی فنکشن کہلاتا ہے۔ عالمی فنکشن تک پروگرام کے کسی بھی حصے سے رسائی ہو سکتی ہے۔ عموماً یوزر ڈیفائنڈ فنکشنز عالمی فنکشن سمجھے جاتے ہیں اگر وہ main () فنکشن سے پہلے بیان کیے گئے ہوں اور یوں پروگرام کے ہر حصے کے لیے قابلِ رسائی ہوتے ہیں۔\n\n6.1.8 inline فنکشن\n\nپروگرام میں فنکشن کالز استعمال کرنے سے کال کرنے والے فنکشن سے کال کیے گئے فنکشن تک کنٹرول منتقل کرنے اور کنٹرول کو واپس کال کرنے والے فنکشن تک لانے میں کافی وقت ضائع ہوتا ہے۔ اس حد پر inline فنکشن کے استعمال سے قابو پایا جا سکتا ہے۔\n\nC++ inline فنکشنز کی مدد سے فنکشنز کے فوائد کو اپنی جگہ لکھے گئے کوڈ کی رفتار کے ساتھ ملانے کا طریقہ فراہم کرتی ہے۔ inline فنکشن میں فنکشن کی ریٹرن ٹائپ سے پہلے inline کلیدی لفظ آتا ہے جو کمپائلر سے درخواست کرتا ہے کہ فنکشن کو inline سمجھے اور بار بار کال کیے گئے فنکشن پر نہ جائے۔ inline فنکشن کی صورت میں جب کمپائلر کوڈ کمپائل کرتا ہے تو تمام inline فنکشنز اپنی جگہ پھیلا دیے جاتے ہیں، یعنی فنکشن کال کو خود فنکشن کے کوڈ کی نقل سے بدل دیا جاتا ہے، جس سے فنکشن کال کا اضافی بوجھ ختم ہو جاتا ہے۔\n\ninline فنکشن کا نقصان یہ ہے کہ یہ کمپائل شدہ کوڈ کو کافی بڑا کر سکتا ہے، خاص طور پر اگر inline فنکشن لمبا ہو اور/یا inline فنکشن کو بہت سی کالز ہوں۔\n\ninline فنکشن کی ڈکلیریشن کی شکل درج ذیل حصے میں دی گئی ہے۔\n\ninline type name ( arguments ... )\n{\nStatements;\n}",
+   "theoryPashto": "که څه هم رسمي پاراميټرونه تل متغیرونه وي، خو اصلي پاراميټرونه ښايي متغیرونه نه وي. عددونه، افادې یا حتی د فنکشن غوښتنې هم د اصلي پاراميټرونو په توګه کارېدای شي. د calculate_bill په غوښتنه کې د سمو اصلي پاراميټرونو ځینې بېلګې دا دي:\n\nbill = calculate_bill (25, 32, 27);\nbill = calculate_bill (50+60, 25*2, 100-75);\nbill = calculate_bill (rice, chicken, (int) sqrt(27));\n\n۶.۱.۷ محلي او نړیوال فنکشنونه\n\nد محلي او نړیوالو فنکشنونو اصطلاحګانې په پروګرامونو کې د فنکشنونو ساحه ښيي. د فنکشنونو د ساحې پر بنسټ فنکشنونه په دوو ډولونو وېشل کېږي؛ محلي فنکشنونه او نړیوال فنکشنونه.\n\na. محلي فنکشنونه\n\nهغه فنکشنونه چې د بل فنکشن د بدنې دننه تعریف شي، محلي فنکشن بلل کېږي. عموماً موږ د خپلو کارونو لپاره د main () فنکشن د بدنې دننه جوړ شوي فنکشن کاروو. داسې اعلانونه محلي بلل کېږي.\n\nb. نړیوال فنکشنونه\n\nهغه فنکشن چې له هر فنکشن بهر اعلان شي، نړیوال فنکشن بلل کېږي. نړیوال فنکشن ته د پروګرام له هرې برخې لاسرسی کېدای شي. عموماً د کاروونکي-تعریف شوي فنکشنونه نړیوال ګڼل کېږي که د main () فنکشن مخکې تعریف شوي وي او په دې توګه د پروګرام هرې برخې ته د لاسرسي وړ وي.\n\n۶.۱.۸ inline فنکشن\n\nپه پروګرام کې د فنکشن غوښتنو په کارولو، له غوښتونکي فنکشن څخه غوښتل شوي فنکشن ته د کنټرول په لېږدولو او بېرته غوښتونکي فنکشن ته د کنټرول په راګرځولو کې ډېر وخت ضایع کېږي. دا محدودیت د inline فنکشن په کارولو لرې کېدای شي.\n\nC++ د inline فنکشنونو په مرسته لاره برابروي چې د فنکشنونو ګټې په ځای لیکل شوي کوډ له سرعت سره یوځای کړي. په inline فنکشن کې د فنکشن د بېرته ورکړې ډول ته inline کلیدي کلمه مخکې لیکل کېږي چې له کمپایلر غوښتنه کوي فنکشن inline وګڼي او بیا بیا غوښتل شوي فنکشن ته ټوپ ونه وهي. د inline فنکشن په حالت کې کله چې کمپایلر کوډ کمپایل کړي، ټول inline فنکشنونه په ځای پراخېږي، یعنې د فنکشن غوښتنه د فنکشن د کوډ په کاپي بدلېږي، چې د فنکشن غوښتنې اضافي بار لرې کوي.\n\nد inline فنکشن زیان دا دی چې کمپایل شوی کوډ ډېر لویولی شي، په ځانګړي ډول که inline فنکشن اوږد وي او/یا inline فنکشن ته ډېرې غوښتنې وي.\n\nد inline فنکشن د اعلان بڼه په لاندې برخه کې ورکړل شوې.\n\ninline type name ( arguments ... )\n{\nStatements;\n}",
+   "content": "<p>Although, formal parameters are always variables but actual parameters may not be variables. Numbers, expressions, or even function calls can also be used as actual parameters. Here are some examples of valid actual parameters in the function call to calculate_bill:</p><p>bill = calculate_bill (25, 32, 27);\nbill = calculate_bill (50+60, 25*2, 100-75);\nbill = calculate_bill (rice, chicken, (int) sqrt(27));</p><p>6.1.7 Local and Global functions</p><p>The terms local and global functions specify the scope of functions within programs. Based on the scope of the functions, functions are categorized into two types; local functions and global functions.</p><p>a. Local functions</p><p>Those functions which are defined inside the body of another function are called local function. Normally, we use built-in function inside the body of main () function to perform our activities. Such declarations are termed as local.</p><p>b. Global functions</p><p>A function declared outside any function is called global function. A global function can be accessed from any part of the program. Normally, user-defined functions are considered as global function if they are defined before the main () function and are thus accessible to every part of the program.</p><p>6.1.8 inline function</p><p>Using function calls in program, a lot of time is wasted in passing control from the calling function to the called function and returning control back to the calling function. This limitation can be overcome by the use of inline function.</p><p>C++ offers a way to combine the advantages of functions with the speed of code written in-place with the help of inline functions. In inline function, the function return type is preceded by the inline keyword which requests the compiler to treat the function as an inline and do not jump again and again to the called function. In the case of inline function, when the compiler compiles the code, all inline functions are expanded in-place, that is, the function call is replaced with a copy of the code of the function itself, which removes the function call overhead.</p><p>The disadvantage of the inline function is that it can make the compiled code quite larger, especially if the inline function is long and/or there are many calls to the inline function.</p><p>The format for the declaration of inline function is given in the following segment.</p><p>inline type name ( arguments ... )\n{\nStatements;\n}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      13
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 102,
+     "printedPages": [
+      192,
+      193
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (9)",
+   "sourcePageLabel": "PDF 102 · p. 192–193",
+   "sourceNote": "The top of p.192 (end of the calculate_bill program and its output) is recorded with PDF101.",
+   "unit": 6
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

@@ -1,0 +1,601 @@
+{
+ "pdfPage": 154,
+ "sections": [
+  {
+   "id": "stat12-p154-oneway-layout",
+   "title": "ANOVA assumptions (iii)–(iv); 9.3.2 one-way layout",
+   "headingUrdu": "تجزیۂ تغیر کے مفروضات (iii)–(iv)؛ 9.3.2 یک طرفہ خاکہ",
+   "headingPashto": "د ANOVA فرضیې (iii)–(iv)؛ 9.3.2 یو اړخیزه نقشه",
+   "paras": [
+    {
+     "text": "iii) Homogeneity",
+     "urdu": "iii) یکسانیت",
+     "pashto": "iii) همجنسیت"
+    },
+    {
+     "text": "All populations under study have equal variance i.e. $\\sigma_1^2=\\sigma_2^2=\\ldots=\\sigma_k^2=\\sigma^2$",
+     "urdu": "زیرِ مطالعہ تمام آبادیوں کا تغیر برابر ہے یعنی $\\sigma_1^2=\\sigma_2^2=\\ldots=\\sigma_k^2=\\sigma^2$",
+     "pashto": "تر څېړنې لاندې ټول نفوسونه برابر واریانس لري یعنې $\\sigma_1^2=\\sigma_2^2=\\ldots=\\sigma_k^2=\\sigma^2$"
+    },
+    {
+     "text": "iv) Additivity",
+     "urdu": "iv) جمع پذیری",
+     "pashto": "iv) جمع‌پذیري"
+    },
+    {
+     "text": "The random observations $X_{ij}$ can be expressed as the sum of means $\\mu_j$ and the error terms $\\varepsilon_{ij}$ as $X_{ij}=\\mu_j+\\varepsilon_{ij}$",
+     "urdu": "تصادفی مشاہدات $X_{ij}$ کو اوسط $\\mu_j$ اور خطا کی رقوم $\\varepsilon_{ij}$ کے مجموعے کے طور پر یوں ظاہر کیا جا سکتا ہے $X_{ij}=\\mu_j+\\varepsilon_{ij}$",
+     "pashto": "تصادفي مشاهدې $X_{ij}$ د منځنیو $\\mu_j$ او د تېروتنې د حدونو $\\varepsilon_{ij}$ د مجموعې په توګه داسې ښودل کېدای شي $X_{ij}=\\mu_j+\\varepsilon_{ij}$"
+    },
+    {
+     "text": "Note that in practice minor deviations from the assumptions is tolerated but serious violation of these assumptions will damage the ANOVA procedure.",
+     "urdu": "نوٹ کریں کہ عملاً مفروضات سے معمولی انحراف برداشت کیا جاتا ہے لیکن ان مفروضات کی سنگین خلاف ورزی ANOVA کے طریقے کو نقصان پہنچائے گی۔",
+     "pashto": "پام وکړئ چې په عمل کې له فرضیو لږ انحراف زغمل کېږي خو د دې فرضیو جدي سرغړونه به د ANOVA طریقې ته زیان ورسوي."
+    },
+    {
+     "text": "9.3.2 One way analysis of variance (equal sample size case)",
+     "urdu": "9.3.2 یک طرفہ تجزیۂ تغیر (برابر نمونہ سائز کی صورت)",
+     "pashto": "9.3.2 یو اړخیز د واریانس تحلیل (د برابرې نمونې اندازې حالت)"
+    },
+    {
+     "text": "The observed data of k samples collected for k treatments, each of size r such that rk = n can be arranged in tabular form as:",
+     "urdu": "k علاج کے لیے جمع کیے گئے k نمونوں کا مشاہدہ شدہ مواد، جن میں سے ہر ایک کا سائز r ہو اس طرح کہ rk = n، جدولی شکل میں یوں ترتیب دیا جا سکتا ہے:",
+     "pashto": "د k درملنو لپاره د راټولو شویو k نمونو لیدل شوي معلومات، چې هره یوه یې د r اندازې وي داسې چې rk = n، د جدول په بڼه داسې ترتیبېدای شي:"
+    }
+   ],
+   "theory": "iii) Homogeneity\n\nAll populations under study have equal variance i.e. \\sigma_1^2=\\sigma_2^2=\\ldots=\\sigma_k^2=\\sigma^2\n\niv) Additivity\n\nThe random observations X_{ij} can be expressed as the sum of means \\mu_j and the error terms \\varepsilon_{ij} as X_{ij}=\\mu_j+\\varepsilon_{ij}\n\nNote that in practice minor deviations from the assumptions is tolerated but serious violation of these assumptions will damage the ANOVA procedure.\n\n9.3.2 One way analysis of variance (equal sample size case)\n\nThe observed data of k samples collected for k treatments, each of size r such that rk = n can be arranged in tabular form as:",
+   "urdu": "iii) یکسانیت\n\nزیرِ مطالعہ تمام آبادیوں کا تغیر برابر ہے یعنی \\sigma_1^2=\\sigma_2^2=\\ldots=\\sigma_k^2=\\sigma^2\n\niv) جمع پذیری\n\nتصادفی مشاہدات X_{ij} کو اوسط \\mu_j اور خطا کی رقوم \\varepsilon_{ij} کے مجموعے کے طور پر یوں ظاہر کیا جا سکتا ہے X_{ij}=\\mu_j+\\varepsilon_{ij}\n\nنوٹ کریں کہ عملاً مفروضات سے معمولی انحراف برداشت کیا جاتا ہے لیکن ان مفروضات کی سنگین خلاف ورزی ANOVA کے طریقے کو نقصان پہنچائے گی۔\n\n9.3.2 یک طرفہ تجزیۂ تغیر (برابر نمونہ سائز کی صورت)\n\nk علاج کے لیے جمع کیے گئے k نمونوں کا مشاہدہ شدہ مواد، جن میں سے ہر ایک کا سائز r ہو اس طرح کہ rk = n، جدولی شکل میں یوں ترتیب دیا جا سکتا ہے:",
+   "pashto": "iii) همجنسیت\n\nتر څېړنې لاندې ټول نفوسونه برابر واریانس لري یعنې \\sigma_1^2=\\sigma_2^2=\\ldots=\\sigma_k^2=\\sigma^2\n\niv) جمع‌پذیري\n\nتصادفي مشاهدې X_{ij} د منځنیو \\mu_j او د تېروتنې د حدونو \\varepsilon_{ij} د مجموعې په توګه داسې ښودل کېدای شي X_{ij}=\\mu_j+\\varepsilon_{ij}\n\nپام وکړئ چې په عمل کې له فرضیو لږ انحراف زغمل کېږي خو د دې فرضیو جدي سرغړونه به د ANOVA طریقې ته زیان ورسوي.\n\n9.3.2 یو اړخیز د واریانس تحلیل (د برابرې نمونې اندازې حالت)\n\nد k درملنو لپاره د راټولو شویو k نمونو لیدل شوي معلومات، چې هره یوه یې د r اندازې وي داسې چې rk = n، د جدول په بڼه داسې ترتیبېدای شي:",
+   "theoryUrdu": "iii) یکسانیت\n\nزیرِ مطالعہ تمام آبادیوں کا تغیر برابر ہے یعنی \\sigma_1^2=\\sigma_2^2=\\ldots=\\sigma_k^2=\\sigma^2\n\niv) جمع پذیری\n\nتصادفی مشاہدات X_{ij} کو اوسط \\mu_j اور خطا کی رقوم \\varepsilon_{ij} کے مجموعے کے طور پر یوں ظاہر کیا جا سکتا ہے X_{ij}=\\mu_j+\\varepsilon_{ij}\n\nنوٹ کریں کہ عملاً مفروضات سے معمولی انحراف برداشت کیا جاتا ہے لیکن ان مفروضات کی سنگین خلاف ورزی ANOVA کے طریقے کو نقصان پہنچائے گی۔\n\n9.3.2 یک طرفہ تجزیۂ تغیر (برابر نمونہ سائز کی صورت)\n\nk علاج کے لیے جمع کیے گئے k نمونوں کا مشاہدہ شدہ مواد، جن میں سے ہر ایک کا سائز r ہو اس طرح کہ rk = n، جدولی شکل میں یوں ترتیب دیا جا سکتا ہے:",
+   "theoryPashto": "iii) همجنسیت\n\nتر څېړنې لاندې ټول نفوسونه برابر واریانس لري یعنې \\sigma_1^2=\\sigma_2^2=\\ldots=\\sigma_k^2=\\sigma^2\n\niv) جمع‌پذیري\n\nتصادفي مشاهدې X_{ij} د منځنیو \\mu_j او د تېروتنې د حدونو \\varepsilon_{ij} د مجموعې په توګه داسې ښودل کېدای شي X_{ij}=\\mu_j+\\varepsilon_{ij}\n\nپام وکړئ چې په عمل کې له فرضیو لږ انحراف زغمل کېږي خو د دې فرضیو جدي سرغړونه به د ANOVA طریقې ته زیان ورسوي.\n\n9.3.2 یو اړخیز د واریانس تحلیل (د برابرې نمونې اندازې حالت)\n\nد k درملنو لپاره د راټولو شویو k نمونو لیدل شوي معلومات، چې هره یوه یې د r اندازې وي داسې چې rk = n، د جدول په بڼه داسې ترتیبېدای شي:",
+   "content": "<p>iii) Homogeneity</p><p>All populations under study have equal variance i.e. \\sigma_1^2=\\sigma_2^2=\\ldots=\\sigma_k^2=\\sigma^2</p><p>iv) Additivity</p><p>The random observations X_{ij} can be expressed as the sum of means \\mu_j and the error terms \\varepsilon_{ij} as X_{ij}=\\mu_j+\\varepsilon_{ij}</p><p>Note that in practice minor deviations from the assumptions is tolerated but serious violation of these assumptions will damage the ANOVA procedure.</p><p>9.3.2 One way analysis of variance (equal sample size case)</p><p>The observed data of k samples collected for k treatments, each of size r such that rk = n can be arranged in tabular form as:</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-oneway-layout"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-oneway-layout",
+     "headers": [
+      "Observations \\ Treatments",
+      "1",
+      "2",
+      "…",
+      "j",
+      "…",
+      "k",
+      "Total"
+     ],
+     "rows": [
+      [
+       "$1$",
+       "$x_{11}$",
+       "$x_{12}$",
+       "…",
+       "$x_{1j}$",
+       "…",
+       "$x_{1k}$",
+       ""
+      ],
+      [
+       "$2$",
+       "$x_{21}$",
+       "$x_{22}$",
+       "…",
+       "$x_{2j}$",
+       "…",
+       "$x_{2k}$",
+       ""
+      ],
+      [
+       "⋮",
+       "⋮",
+       "",
+       "…",
+       "",
+       "…",
+       "",
+       ""
+      ],
+      [
+       "$i$",
+       "$x_{i1}$",
+       "$x_{i2}$",
+       "…",
+       "$x_{ij}$",
+       "…",
+       "$x_{ik}$",
+       ""
+      ],
+      [
+       "⋮",
+       "⋮",
+       "",
+       "…",
+       "",
+       "…",
+       "",
+       ""
+      ],
+      [
+       "$r$",
+       "$x_{r1}$",
+       "$x_{r2}$",
+       "…",
+       "$x_{rj}$",
+       "…",
+       "$x_{rk}$",
+       ""
+      ],
+      [
+       "Total $T_j$",
+       "$T_{.1}$",
+       "$T_{.2}$",
+       "…",
+       "$T_{.j}$",
+       "…",
+       "$T_{.k}$",
+       "$T_{..}$ (Grand total)"
+      ],
+      [
+       "Means $\\overline{x}_{.j}$",
+       "$\\overline{x}_1$",
+       "$\\overline{x}_2$",
+       "…",
+       "$\\overline{x}_j$",
+       "…",
+       "$\\overline{x}_k$",
+       "$\\overline{x}_{..}$ (Grand mean)"
+      ],
+      [
+       "Sum of squares",
+       "$\\sum_{i=1}(\\overline{x}_{i1}-\\overline{x}_1)^2$",
+       "$\\sum_{i=1}(\\overline{x}_{i2}-\\overline{x}_2)^2$",
+       "…",
+       "$\\sum_{i=1}(\\overline{x}_{ij}-\\overline{x}_j)^2$",
+       "…",
+       "$\\sum_{i=1}^{r}(x_{ik}-\\overline{x}_k)^2$",
+       "$\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2$ (Total sum of square)"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "مشاہدات \\ علاج",
+        "1",
+        "2",
+        "…",
+        "j",
+        "…",
+        "k",
+        "میزان"
+       ],
+       "rows": [
+        [
+         "$1$",
+         "$x_{11}$",
+         "$x_{12}$",
+         "…",
+         "$x_{1j}$",
+         "…",
+         "$x_{1k}$",
+         ""
+        ],
+        [
+         "$2$",
+         "$x_{21}$",
+         "$x_{22}$",
+         "…",
+         "$x_{2j}$",
+         "…",
+         "$x_{2k}$",
+         ""
+        ],
+        [
+         "⋮",
+         "⋮",
+         "",
+         "…",
+         "",
+         "…",
+         "",
+         ""
+        ],
+        [
+         "$i$",
+         "$x_{i1}$",
+         "$x_{i2}$",
+         "…",
+         "$x_{ij}$",
+         "…",
+         "$x_{ik}$",
+         ""
+        ],
+        [
+         "⋮",
+         "⋮",
+         "",
+         "…",
+         "",
+         "…",
+         "",
+         ""
+        ],
+        [
+         "$r$",
+         "$x_{r1}$",
+         "$x_{r2}$",
+         "…",
+         "$x_{rj}$",
+         "…",
+         "$x_{rk}$",
+         ""
+        ],
+        [
+         "میزان $T_j$",
+         "$T_{.1}$",
+         "$T_{.2}$",
+         "…",
+         "$T_{.j}$",
+         "…",
+         "$T_{.k}$",
+         "$T_{..}$ (کل میزان)"
+        ],
+        [
+         "اوسط $\\overline{x}_{.j}$",
+         "$\\overline{x}_1$",
+         "$\\overline{x}_2$",
+         "…",
+         "$\\overline{x}_j$",
+         "…",
+         "$\\overline{x}_k$",
+         "$\\overline{x}_{..}$ (کل اوسط)"
+        ],
+        [
+         "مربعوں کا مجموعہ",
+         "$\\sum_{i=1}(\\overline{x}_{i1}-\\overline{x}_1)^2$",
+         "$\\sum_{i=1}(\\overline{x}_{i2}-\\overline{x}_2)^2$",
+         "…",
+         "$\\sum_{i=1}(\\overline{x}_{ij}-\\overline{x}_j)^2$",
+         "…",
+         "$\\sum_{i=1}^{r}(x_{ik}-\\overline{x}_k)^2$",
+         "$\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2$ (مربعوں کا کل مجموعہ)"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "مشاهدې \\ درملنې",
+        "1",
+        "2",
+        "…",
+        "j",
+        "…",
+        "k",
+        "ټول"
+       ],
+       "rows": [
+        [
+         "$1$",
+         "$x_{11}$",
+         "$x_{12}$",
+         "…",
+         "$x_{1j}$",
+         "…",
+         "$x_{1k}$",
+         ""
+        ],
+        [
+         "$2$",
+         "$x_{21}$",
+         "$x_{22}$",
+         "…",
+         "$x_{2j}$",
+         "…",
+         "$x_{2k}$",
+         ""
+        ],
+        [
+         "⋮",
+         "⋮",
+         "",
+         "…",
+         "",
+         "…",
+         "",
+         ""
+        ],
+        [
+         "$i$",
+         "$x_{i1}$",
+         "$x_{i2}$",
+         "…",
+         "$x_{ij}$",
+         "…",
+         "$x_{ik}$",
+         ""
+        ],
+        [
+         "⋮",
+         "⋮",
+         "",
+         "…",
+         "",
+         "…",
+         "",
+         ""
+        ],
+        [
+         "$r$",
+         "$x_{r1}$",
+         "$x_{r2}$",
+         "…",
+         "$x_{rj}$",
+         "…",
+         "$x_{rk}$",
+         ""
+        ],
+        [
+         "ټول $T_j$",
+         "$T_{.1}$",
+         "$T_{.2}$",
+         "…",
+         "$T_{.j}$",
+         "…",
+         "$T_{.k}$",
+         "$T_{..}$ (لوی ټولټال)"
+        ],
+        [
+         "منځني $\\overline{x}_{.j}$",
+         "$\\overline{x}_1$",
+         "$\\overline{x}_2$",
+         "…",
+         "$\\overline{x}_j$",
+         "…",
+         "$\\overline{x}_k$",
+         "$\\overline{x}_{..}$ (لوی منځنی)"
+        ],
+        [
+         "د مربعو مجموعه",
+         "$\\sum_{i=1}(\\overline{x}_{i1}-\\overline{x}_1)^2$",
+         "$\\sum_{i=1}(\\overline{x}_{i2}-\\overline{x}_2)^2$",
+         "…",
+         "$\\sum_{i=1}(\\overline{x}_{ij}-\\overline{x}_j)^2$",
+         "…",
+         "$\\sum_{i=1}^{r}(x_{ik}-\\overline{x}_k)^2$",
+         "$\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2$ (د مربعو ټوله مجموعه)"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 154,
+     "printedPages": [
+      299
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 9
+  },
+  {
+   "id": "stat12-p154-ss-df-components",
+   "title": "9.3.3 Components of total SS and the F-test; 9.3.4 degrees of freedom",
+   "headingUrdu": "9.3.3 مربعوں کے کل مجموعے کے اجزاء اور F-جانچ؛ 9.3.4 درجاتِ آزادی",
+   "headingPashto": "9.3.3 د مربعو د ټولې مجموعې برخې او F-ازموینه؛ 9.3.4 د ازادۍ درجې",
+   "paras": [
+    {
+     "text": "9.3.3 Components of the total sum of squares (equal sample size)",
+     "urdu": "9.3.3 مربعوں کے کل مجموعے کے اجزاء (برابر نمونہ سائز)",
+     "pashto": "9.3.3 د مربعو د ټولې مجموعې برخې (برابره نمونه اندازه)"
+    },
+    {
+     "text": "In one way analysis of variance the total variation present in the observed data may be due to two meaningful components i.e. (i) variation among treatments (samples) (ii) variation with in the samples, so the T.S.S is divided in to two components as:",
+     "urdu": "یک طرفہ تجزیۂ تغیر میں مشاہدہ شدہ مواد میں موجود کل تغیر دو بامعنی اجزاء کی وجہ سے ہو سکتا ہے یعنی (i) علاج (نمونوں) کے درمیان تغیر (ii) نمونوں کے اندر تغیر، لہٰذا T.S.S کو دو اجزاء میں یوں تقسیم کیا جاتا ہے:",
+     "pashto": "په یو اړخیز د واریانس تحلیل کې په لیدل شویو معلوماتو کې موجود ټول تغیر کېدای شي د دوو معنی‌دارو برخو له امله وي یعنې (i) د درملنو (نمونو) ترمنځ تغیر (ii) د نمونو دننه تغیر، نو T.S.S په دوو برخو داسې وېشل کېږي:"
+    },
+    {
+     "text": "$\\text{T.S.S}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2$",
+     "urdu": "$\\text{T.S.S}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2$",
+     "pashto": "$\\text{T.S.S}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2$"
+    },
+    {
+     "text": "$=\\text{within SS}+\\text{Treatment SS}$",
+     "urdu": "$=\\text{within SS}+\\text{Treatment SS}$",
+     "pashto": "$=\\text{within SS}+\\text{Treatment SS}$"
+    },
+    {
+     "text": "To obtain unbiased estimates for $\\sigma^2$ divide both sides by respective degrees of freedom to have",
+     "urdu": "$\\sigma^2$ کے غیر جانبدار تخمینے حاصل کرنے کے لیے دونوں اطراف کو متعلقہ درجاتِ آزادی سے تقسیم کریں تاکہ",
+     "pashto": "د $\\sigma^2$ د بې‌پلوه اټکلونو د ترلاسه کولو لپاره دواړه خواوې په اړوندو د ازادۍ درجو ووېشئ ترڅو"
+    },
+    {
+     "text": "$S_T^2=S_e^2+S_{Tr}^2$",
+     "urdu": "$S_T^2=S_e^2+S_{Tr}^2$",
+     "pashto": "$S_T^2=S_e^2+S_{Tr}^2$"
+    },
+    {
+     "text": "$\\text{Or MST}=\\text{MSE}+\\text{MSTr}$",
+     "urdu": "$\\text{Or MST}=\\text{MSE}+\\text{MSTr}$",
+     "pashto": "$\\text{Or MST}=\\text{MSE}+\\text{MSTr}$"
+    },
+    {
+     "text": "The F-Test is defined as $F=\\frac{\\text{MSTr}}{\\text{MSE}}$ with ($\\nu_1=k-1$ and $\\nu_2=n-k$) df. which is used for testing $H_0:\\mu_1=\\mu_2=\\ldots=\\mu_k$ verses",
+     "urdu": "F-جانچ کی تعریف $F=\\frac{\\text{MSTr}}{\\text{MSE}}$ ہے جس کے ($\\nu_1=k-1$ اور $\\nu_2=n-k$) درجاتِ آزادی ہیں، جو $H_0:\\mu_1=\\mu_2=\\ldots=\\mu_k$ کی جانچ کے لیے استعمال ہوتی ہے بمقابلہ",
+     "pashto": "F-ازموینه داسې تعریفېږي $F=\\frac{\\text{MSTr}}{\\text{MSE}}$ د ($\\nu_1=k-1$ او $\\nu_2=n-k$) د ازادۍ درجو سره، چې د $H_0:\\mu_1=\\mu_2=\\ldots=\\mu_k$ د ازموینې لپاره کارول کېږي پر وړاندې د"
+    },
+    {
+     "text": "$H_1$: Not all means are equal.",
+     "urdu": "$H_1$: تمام اوسط برابر نہیں۔",
+     "pashto": "$H_1$: ټول منځني برابر نه دي."
+    },
+    {
+     "text": "$H_0$ is rejected when, $F_c\\ge F_{\\alpha,(\\nu_1,\\nu_2)}$, whereas $F_{\\alpha,(\\nu_1,\\nu_2)}$ is obtained from the percentage points of the F-distribution, Table 9.1.",
+     "urdu": "$H_0$ رد کیا جاتا ہے جب $F_c\\ge F_{\\alpha,(\\nu_1,\\nu_2)}$، جبکہ $F_{\\alpha,(\\nu_1,\\nu_2)}$ کو F-تقسیم کے فیصدی نقاط، جدول 9.1 سے حاصل کیا جاتا ہے۔",
+     "pashto": "$H_0$ ردېږي کله چې $F_c\\ge F_{\\alpha,(\\nu_1,\\nu_2)}$، په داسې حال کې چې $F_{\\alpha,(\\nu_1,\\nu_2)}$ د F-وېش له سلنه‌ییزو ټکو، 9.1 جدول څخه ترلاسه کېږي."
+    },
+    {
+     "text": "9.3.4 Components of the total degrees of freedom",
+     "urdu": "9.3.4 کل درجاتِ آزادی کے اجزاء",
+     "pashto": "9.3.4 د ازادۍ د ټولو درجو برخې"
+    },
+    {
+     "text": "When the total sum of squares is partitioned into component parts then the total degrees of freedom can also be partitioned into component parts accordingly as below:",
+     "urdu": "جب مربعوں کے کل مجموعے کو اجزاء میں تقسیم کیا جائے تو کل درجاتِ آزادی کو بھی اسی کے مطابق اجزاء میں یوں تقسیم کیا جا سکتا ہے:",
+     "pashto": "کله چې د مربعو ټوله مجموعه په برخو ووېشل شي، نو د ازادۍ ټولې درجې هم ورسره سم په برخو داسې وېشل کېدای شي:"
+    },
+    {
+     "text": "$(n-1)=(n-k)+(k-1)$",
+     "urdu": "$(n-1)=(n-k)+(k-1)$",
+     "pashto": "$(n-1)=(n-k)+(k-1)$"
+    },
+    {
+     "text": "$\\text{Total df}=\\text{within df}+\\text{between df}$",
+     "urdu": "$\\text{Total df}=\\text{within df}+\\text{between df}$",
+     "pashto": "$\\text{Total df}=\\text{within df}+\\text{between df}$"
+    }
+   ],
+   "theory": "9.3.3 Components of the total sum of squares (equal sample size)\n\nIn one way analysis of variance the total variation present in the observed data may be due to two meaningful components i.e. (i) variation among treatments (samples) (ii) variation with in the samples, so the T.S.S is divided in to two components as:\n\n\\text{T.S.S}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2\n\n=\\text{within SS}+\\text{Treatment SS}\n\nTo obtain unbiased estimates for \\sigma^2 divide both sides by respective degrees of freedom to have\n\nS_T^2=S_e^2+S_{Tr}^2\n\n\\text{Or MST}=\\text{MSE}+\\text{MSTr}\n\nThe F-Test is defined as F=\\frac{\\text{MSTr}}{\\text{MSE}} with (\\nu_1=k-1 and \\nu_2=n-k) df. which is used for testing H_0:\\mu_1=\\mu_2=\\ldots=\\mu_k verses\n\nH_1: Not all means are equal.\n\nH_0 is rejected when, F_c\\ge F_{\\alpha,(\\nu_1,\\nu_2)}, whereas F_{\\alpha,(\\nu_1,\\nu_2)} is obtained from the percentage points of the F-distribution, Table 9.1.\n\n9.3.4 Components of the total degrees of freedom\n\nWhen the total sum of squares is partitioned into component parts then the total degrees of freedom can also be partitioned into component parts accordingly as below:\n\n(n-1)=(n-k)+(k-1)\n\n\\text{Total df}=\\text{within df}+\\text{between df}",
+   "urdu": "9.3.3 مربعوں کے کل مجموعے کے اجزاء (برابر نمونہ سائز)\n\nیک طرفہ تجزیۂ تغیر میں مشاہدہ شدہ مواد میں موجود کل تغیر دو بامعنی اجزاء کی وجہ سے ہو سکتا ہے یعنی (i) علاج (نمونوں) کے درمیان تغیر (ii) نمونوں کے اندر تغیر، لہٰذا T.S.S کو دو اجزاء میں یوں تقسیم کیا جاتا ہے:\n\n\\text{T.S.S}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2\n\n=\\text{within SS}+\\text{Treatment SS}\n\n\\sigma^2 کے غیر جانبدار تخمینے حاصل کرنے کے لیے دونوں اطراف کو متعلقہ درجاتِ آزادی سے تقسیم کریں تاکہ\n\nS_T^2=S_e^2+S_{Tr}^2\n\n\\text{Or MST}=\\text{MSE}+\\text{MSTr}\n\nF-جانچ کی تعریف F=\\frac{\\text{MSTr}}{\\text{MSE}} ہے جس کے (\\nu_1=k-1 اور \\nu_2=n-k) درجاتِ آزادی ہیں، جو H_0:\\mu_1=\\mu_2=\\ldots=\\mu_k کی جانچ کے لیے استعمال ہوتی ہے بمقابلہ\n\nH_1: تمام اوسط برابر نہیں۔\n\nH_0 رد کیا جاتا ہے جب F_c\\ge F_{\\alpha,(\\nu_1,\\nu_2)}، جبکہ F_{\\alpha,(\\nu_1,\\nu_2)} کو F-تقسیم کے فیصدی نقاط، جدول 9.1 سے حاصل کیا جاتا ہے۔\n\n9.3.4 کل درجاتِ آزادی کے اجزاء\n\nجب مربعوں کے کل مجموعے کو اجزاء میں تقسیم کیا جائے تو کل درجاتِ آزادی کو بھی اسی کے مطابق اجزاء میں یوں تقسیم کیا جا سکتا ہے:\n\n(n-1)=(n-k)+(k-1)\n\n\\text{Total df}=\\text{within df}+\\text{between df}",
+   "pashto": "9.3.3 د مربعو د ټولې مجموعې برخې (برابره نمونه اندازه)\n\nپه یو اړخیز د واریانس تحلیل کې په لیدل شویو معلوماتو کې موجود ټول تغیر کېدای شي د دوو معنی‌دارو برخو له امله وي یعنې (i) د درملنو (نمونو) ترمنځ تغیر (ii) د نمونو دننه تغیر، نو T.S.S په دوو برخو داسې وېشل کېږي:\n\n\\text{T.S.S}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2\n\n=\\text{within SS}+\\text{Treatment SS}\n\nد \\sigma^2 د بې‌پلوه اټکلونو د ترلاسه کولو لپاره دواړه خواوې په اړوندو د ازادۍ درجو ووېشئ ترڅو\n\nS_T^2=S_e^2+S_{Tr}^2\n\n\\text{Or MST}=\\text{MSE}+\\text{MSTr}\n\nF-ازموینه داسې تعریفېږي F=\\frac{\\text{MSTr}}{\\text{MSE}} د (\\nu_1=k-1 او \\nu_2=n-k) د ازادۍ درجو سره، چې د H_0:\\mu_1=\\mu_2=\\ldots=\\mu_k د ازموینې لپاره کارول کېږي پر وړاندې د\n\nH_1: ټول منځني برابر نه دي.\n\nH_0 ردېږي کله چې F_c\\ge F_{\\alpha,(\\nu_1,\\nu_2)}، په داسې حال کې چې F_{\\alpha,(\\nu_1,\\nu_2)} د F-وېش له سلنه‌ییزو ټکو، 9.1 جدول څخه ترلاسه کېږي.\n\n9.3.4 د ازادۍ د ټولو درجو برخې\n\nکله چې د مربعو ټوله مجموعه په برخو ووېشل شي، نو د ازادۍ ټولې درجې هم ورسره سم په برخو داسې وېشل کېدای شي:\n\n(n-1)=(n-k)+(k-1)\n\n\\text{Total df}=\\text{within df}+\\text{between df}",
+   "theoryUrdu": "9.3.3 مربعوں کے کل مجموعے کے اجزاء (برابر نمونہ سائز)\n\nیک طرفہ تجزیۂ تغیر میں مشاہدہ شدہ مواد میں موجود کل تغیر دو بامعنی اجزاء کی وجہ سے ہو سکتا ہے یعنی (i) علاج (نمونوں) کے درمیان تغیر (ii) نمونوں کے اندر تغیر، لہٰذا T.S.S کو دو اجزاء میں یوں تقسیم کیا جاتا ہے:\n\n\\text{T.S.S}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2\n\n=\\text{within SS}+\\text{Treatment SS}\n\n\\sigma^2 کے غیر جانبدار تخمینے حاصل کرنے کے لیے دونوں اطراف کو متعلقہ درجاتِ آزادی سے تقسیم کریں تاکہ\n\nS_T^2=S_e^2+S_{Tr}^2\n\n\\text{Or MST}=\\text{MSE}+\\text{MSTr}\n\nF-جانچ کی تعریف F=\\frac{\\text{MSTr}}{\\text{MSE}} ہے جس کے (\\nu_1=k-1 اور \\nu_2=n-k) درجاتِ آزادی ہیں، جو H_0:\\mu_1=\\mu_2=\\ldots=\\mu_k کی جانچ کے لیے استعمال ہوتی ہے بمقابلہ\n\nH_1: تمام اوسط برابر نہیں۔\n\nH_0 رد کیا جاتا ہے جب F_c\\ge F_{\\alpha,(\\nu_1,\\nu_2)}، جبکہ F_{\\alpha,(\\nu_1,\\nu_2)} کو F-تقسیم کے فیصدی نقاط، جدول 9.1 سے حاصل کیا جاتا ہے۔\n\n9.3.4 کل درجاتِ آزادی کے اجزاء\n\nجب مربعوں کے کل مجموعے کو اجزاء میں تقسیم کیا جائے تو کل درجاتِ آزادی کو بھی اسی کے مطابق اجزاء میں یوں تقسیم کیا جا سکتا ہے:\n\n(n-1)=(n-k)+(k-1)\n\n\\text{Total df}=\\text{within df}+\\text{between df}",
+   "theoryPashto": "9.3.3 د مربعو د ټولې مجموعې برخې (برابره نمونه اندازه)\n\nپه یو اړخیز د واریانس تحلیل کې په لیدل شویو معلوماتو کې موجود ټول تغیر کېدای شي د دوو معنی‌دارو برخو له امله وي یعنې (i) د درملنو (نمونو) ترمنځ تغیر (ii) د نمونو دننه تغیر، نو T.S.S په دوو برخو داسې وېشل کېږي:\n\n\\text{T.S.S}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2\n\n=\\text{within SS}+\\text{Treatment SS}\n\nد \\sigma^2 د بې‌پلوه اټکلونو د ترلاسه کولو لپاره دواړه خواوې په اړوندو د ازادۍ درجو ووېشئ ترڅو\n\nS_T^2=S_e^2+S_{Tr}^2\n\n\\text{Or MST}=\\text{MSE}+\\text{MSTr}\n\nF-ازموینه داسې تعریفېږي F=\\frac{\\text{MSTr}}{\\text{MSE}} د (\\nu_1=k-1 او \\nu_2=n-k) د ازادۍ درجو سره، چې د H_0:\\mu_1=\\mu_2=\\ldots=\\mu_k د ازموینې لپاره کارول کېږي پر وړاندې د\n\nH_1: ټول منځني برابر نه دي.\n\nH_0 ردېږي کله چې F_c\\ge F_{\\alpha,(\\nu_1,\\nu_2)}، په داسې حال کې چې F_{\\alpha,(\\nu_1,\\nu_2)} د F-وېش له سلنه‌ییزو ټکو، 9.1 جدول څخه ترلاسه کېږي.\n\n9.3.4 د ازادۍ د ټولو درجو برخې\n\nکله چې د مربعو ټوله مجموعه په برخو ووېشل شي، نو د ازادۍ ټولې درجې هم ورسره سم په برخو داسې وېشل کېدای شي:\n\n(n-1)=(n-k)+(k-1)\n\n\\text{Total df}=\\text{within df}+\\text{between df}",
+   "content": "<p>9.3.3 Components of the total sum of squares (equal sample size)</p><p>In one way analysis of variance the total variation present in the observed data may be due to two meaningful components i.e. (i) variation among treatments (samples) (ii) variation with in the samples, so the T.S.S is divided in to two components as:</p><p>\\text{T.S.S}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}(x_{ij}-\\overline{x}_{..})^2</p><p>=\\text{within SS}+\\text{Treatment SS}</p><p>To obtain unbiased estimates for \\sigma^2 divide both sides by respective degrees of freedom to have</p><p>S_T^2=S_e^2+S_{Tr}^2</p><p>\\text{Or MST}=\\text{MSE}+\\text{MSTr}</p><p>The F-Test is defined as F=\\frac{\\text{MSTr}}{\\text{MSE}} with (\\nu_1=k-1 and \\nu_2=n-k) df. which is used for testing H_0:\\mu_1=\\mu_2=\\ldots=\\mu_k verses</p><p>H_1: Not all means are equal.</p><p>H_0 is rejected when, F_c\\ge F_{\\alpha,(\\nu_1,\\nu_2)}, whereas F_{\\alpha,(\\nu_1,\\nu_2)} is obtained from the percentage points of the F-distribution, Table 9.1.</p><p>9.3.4 Components of the total degrees of freedom</p><p>When the total sum of squares is partitioned into component parts then the total degrees of freedom can also be partitioned into component parts accordingly as below:</p><p>(n-1)=(n-k)+(k-1)</p><p>\\text{Total df}=\\text{within df}+\\text{between df}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5,
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      12,
+      13
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 154,
+     "printedPages": [
+      300
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 9
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p299-300-anova",
+   "unit": 9,
+   "printedPage": 300,
+   "description": "p300 prints “MST = MSE + MSTr” (mean squares are not additive; sums of squares and df are), “verses” (versus) and “with in”; p299 layout prints the sum-of-squares row with x̄ᵢⱼ in some columns. Printed text retained."
+  }
+ ],
+ "completeUnits": []
+}

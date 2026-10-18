@@ -1,0 +1,948 @@
+[
+  {
+    "id": "phys13-unit-opening-and-outcomes88-89",
+    "title": "Unit 13 Electromagnetism — opening, outcomes and magnetic-media information",
+    "kind": "lesson",
+    "pdfPage": 49,
+    "printedPage": 88,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "UNIT 13 ELECTROMAGNETISM",
+      "How electromagnetism is used in imaging inside the human body?",
+      "LEARNING OUTCOMES",
+      "After studying this unit the students will be able to",
+      "explain that magnetic field is an example of a field of force produced either by current-carrying conductors or by permanent magnets.",
+      "describe magnetic effect of current.",
+      "describe and sketch field lines pattern due to a long straight wire.",
+      "explain that a force might act on a current-carrying conductor placed in a magnetic field.",
+      "Investigate the factors affecting the force on a current carrying conductor in a magnetic field.",
+      "solve problems involving the use of F = BIL sin θ.",
+      "define magnetic flux density and its units.",
+      "describe the concept of magnetic flux (Φ) as scalar product of magnetic field (B) and area (A) using the relation Φ_B = B⊥A = B·A.",
+      "state Ampere’s law.",
+      "apply Ampere’s law to find magnetic flux density around a wire and inside a solenoid.",
+      "describe quantitatively the path followed by a charged particle shot into a magnetic field in a direction perpendicular to the field.",
+      "explain that a force may act on a charged particle in a uniform magnetic field.",
+      "describe a method to measure the e/m of an electron by applying magnetic field and electric field on a beam of electrons.",
+      "predict the turning effect on a current carrying coil in a magnetic field and use this principle to understand the construction and working of a galvanometer.",
+      "explain how a given galvanometer can be converted into a voltmeter or ammeter of a specified range.",
+      "describe the use of avometer / multimeter (analogue and digital).",
+      "A magnet (from Greek “Magnesian stone”) is a material or object that produces a magnetic field. This magnetic field is invisible but is responsible for the most notable property of a magnet: a force that pulls on other ferromagnetic materials, such as iron, and attracts or repels other magnets.",
+      "A permanent magnet is an object made from a material that is magnetized and creates its own persistent magnetic field. An everyday example is a refrigerator magnet used to hold notes on a refrigerator door.",
+      "For your information",
+      "Recording media and swipe cards",
+      "Magnetic recording media: VHS (Video Home System) tapes contain a reel of magnetic tape. The information that makes up the video and sound is encoded on the magnetic coating on the tape. Common audio cassettes also rely on magnetic tape. Similarly, in computers, floppy disks and hard disks record data on a thin magnetic coating.",
+      "Credit, debit, and ATM cards: All of these cards have a magnetic strip on one side. This strip encodes the information to contact an individual’s financial institution and connect with their account(s)."
+    ]
+  },
+  {
+    "id": "phys13-magnetic-field-and-oersted90",
+    "title": "13.1 Magnetic field and Oersted observation",
+    "kind": "lesson",
+    "pdfPage": 50,
+    "printedPage": 90,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "13.1 MAGNETIC FIELD",
+      "A magnetic field surrounds a magnetic substance making up a permanent magnet.",
+      "In addition to containing an electric field, the region of space surrounding any moving electric charge also contains a magnetic field. When charges are not moving no such effect is seen. Magnetic field is represented by magnetic induction vector B. We can define a magnetic field ‘B’ at some point in space in terms of the magnetic force ‘F_B’ that the field exerts on a test object, for which we use a charged particle moving with a velocity ‘v’.",
+      "The relationship between magnetism and electricity was discovered in 1819. During a lecture demonstration, Hans Christian Oersted found that electric current in a wire deflected a nearby compass needle. Thus a steady current through a conducting wire creates a magnetic field, as shown in figure 13.1.",
+      "To demonstrate the magnetic field produced by the current in a wire, we can perform simple experiments.",
+      "FIGURE 13.1 — Using an apparatus similar to the one shown, Oersted was able to demonstrate a connection between magnetism and electricity by applying current to the wire.",
+      "OERSTED(1777-1851)",
+      "In 1806 Hans Christian Oersted became a professor at the University of Copenhagen, where his first physical researches dealt with electric currents and acoustics. In 1932 the name oersted was adopted for the physical unit of magnetic field strength."
+    ]
+  },
+  {
+    "id": "phys13-circular-field-around-wire91",
+    "title": "Circular magnetic field around a current-carrying wire",
+    "kind": "lesson",
+    "pdfPage": 50,
+    "printedPage": 91,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "When current is passed through a long wire with compass needles placed around it in a circle, compass needles lineup with the magnetic field. Similar observations can be made through a cardboard on which iron fillings are sprinkled. These iron fillings form concentric circles around the wire, as shown in figure 13.2.",
+      "FIGURE 13.2 (a) A current carrying wire with compass needles lining up with magnetic field in circular pattern (b) A current carrying wire through a cardboard shows concentric circles of iron fillings around the wire.",
+      "These experiment shows the orientation of a magnetic field, which is in the form of circle around the wire. The direction of magnetic field can be determined by Right Hand Rule I as shown in figure 13.3."
+    ]
+  },
+  {
+    "id": "phys13-right-hand-rule-I91",
+    "title": "Right-hand Rule I — magnetic field around a wire",
+    "kind": "lesson",
+    "pdfPage": 50,
+    "printedPage": 91,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "RIGHT-HAND RULE I FOR THE MAGNETIC FIELD FROM A CURRENT CARRYING WIRE:",
+      "Put your thumb in the direction of current and curl your fingers around the wire, the curled fingers will show the direction of magnetic field. This rule is for direction of conventional current or flow of positive charges. For electronic current flow the same rule is applied but with left hand."
+    ]
+  },
+  {
+    "id": "phys13-force-on-current-carrying-conductor91",
+    "title": "13.2 Force on a current-carrying conductor — introduction",
+    "kind": "lesson",
+    "pdfPage": 50,
+    "printedPage": 91,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "13.2 FORCE ON A CURRENT CARRYING CONDUCTOR",
+      "When a current carrying wire is placed in a uniform magnetic field, the magnetic field of the wire and external uniform field interact, resulting in a force on the wire as shown in figure 13.4. This force ‘F_B’ depends on the magnetic field ‘B’ applied, current ‘I’ in the wire, and the length ‘L’ of the wire that lies in the field, and the sine of angle ‘θ’ that the current carrying wire makes with the field."
+    ]
+  },
+  {
+    "id": "phys13-force-magnitude-and-limits92",
+    "title": "Force on a current-carrying conductor — magnitude and limits",
+    "kind": "lesson",
+    "pdfPage": 51,
+    "printedPage": 92,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Mathematically,",
+      "F_B ∝ ILB sin θ",
+      "F_B = kILB sin θ",
+      "Here the constant of proportionality is k, which in SI units has the numeric value exactly equal to 1, therefore",
+      "F_B = ILB sin θ ...(13.1)",
+      "FIGURE 13.4 — Conductor in a magnetic field",
+      "Or in vector form,",
+      "F⃗_B = ILB sin θ n̂",
+      "or",
+      "F⃗_B = I(L⃗ × B⃗)",
+      "This magnetic force ‘F_B’ is minimum when θ is 0° (as sin 0° =0), if we keep B, I and L constant, the magnetic force ‘F_B’ is maximum when θ is 90° (as sin 90°=1).",
+      "F_B(max) = ILB sin 90°, as sin 90° = 1",
+      "F_B(max) = ILB ...(13.2)"
+    ]
+  },
+  {
+    "id": "phys13-figure135-conductor-force92",
+    "title": "Figure 13.5 — conductor between magnet poles",
+    "kind": "lesson",
+    "pdfPage": 51,
+    "printedPage": 92,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "FIGURE 13.5 — Conductor in a magnetic field"
+    ]
+  },
+  {
+    "id": "phys13-force-direction-and-tesla-unit93",
+    "title": "Direction of magnetic force and tesla unit",
+    "kind": "lesson",
+    "pdfPage": 51,
+    "printedPage": 93,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "As force is a vector quantity so its direction should also be determined.",
+      "The direction of magnetic force F_B on a wire can be determined by right hand rule II and Fleming’s left hand rule as shown in figure 13.6 and 13.7 respectively.",
+      "The magnetic induction B will be one tesla if 1 m long wire carrying a current of 1 A are placed perpendicular to each other and the force between them is 1N. In SI B=1T=NA⁻¹m⁻¹. In CGS 1G=10⁻⁴Tesla.",
+      "1 T = 1 N/(A m)"
+    ]
+  },
+  {
+    "id": "phys13-right-hand-rule-II93",
+    "title": "Right-hand Rule II for magnetic force",
+    "kind": "lesson",
+    "pdfPage": 51,
+    "printedPage": 93,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "FIGURE 13.6 — RIGHT-HAND RULE II FOR THE FORCE ON A CURRENT CARRYING CONDUCTOR: Outstretch the fingers of right hand in the direction of current then bend the fingers in the direction of magnetic field (through the shorter angle between them) then the extended thumb will give the direction of force on the current carrying wire. This rule is for direction of conventional current or flow of positive charges. For electronic current flow the same rule is applied but with left hand."
+    ]
+  },
+  {
+    "id": "phys13-fleming-left-hand-rule93",
+    "title": "Fleming’s left-hand rule",
+    "kind": "lesson",
+    "pdfPage": 51,
+    "printedPage": 93,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "FIGURE 13.7 — FLEMING’S LEFT HAND RULE FOR THE FORCE ON A CURRENT CARRYING CONDUCTOR: Set the thumb and the first two fingers of the left hand at right angles to each other as shown. With the first finger pointing in the direction of the field and second finger pointing in the direction of current, the thumb will give the direction of the force."
+    ]
+  },
+  {
+    "id": "phys13-example131-force-wire93",
+    "title": "Example 13.1 — magnetic force on a wire",
+    "kind": "lesson",
+    "pdfPage": 51,
+    "printedPage": 93,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 13.1 — MAGNETIC FORCE ON WIRE",
+      "A wire carrying 2 A current and has length of 10 cm between the poles of a magnet is kept at an angle of 30° to the uniform field of 0.6 T. Find the force acting on the wire?",
+      "GIVEN",
+      "Current ‘I’ = 2A",
+      "Length ‘L’ = 10 cm = 0.01 m",
+      "Magnetic field ‘B’ = 0.6 T",
+      "Angle ‘θ’ = 30°",
+      "REQUIRED",
+      "Magnetic Force ‘F_B’ = ?",
+      "SOLUTION",
+      "The force on a current carrying wire in magnetic field is given by",
+      "F_B = ILB sin θ",
+      "Putting values,",
+      "F_B = 2 A × 0.1 m × 0.6 N/(A m) × sin 30°",
+      "therefore",
+      "F_B = 0.06 N",
+      "Answer"
+    ]
+  },
+  {
+    "id": "phys13-editorial-example131-length93",
+    "title": "Editorial clarification — Example 13.1 length conversion",
+    "kind": "editorial",
+    "pdfPage": 51,
+    "printedPage": 93,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Editorial clarification: The printed given states “10 cm = 0.01 m”, while the solution substitutes “0.1 m” and prints the answer “0.06 N”. These source values conflict; all printed lines are retained above without substitution."
+    ]
+  },
+  {
+    "id": "phys13-magnetic-flux94",
+    "title": "13.3 Magnetic flux — area orientation and curved surfaces",
+    "kind": "lesson",
+    "pdfPage": 52,
+    "printedPage": 94,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "13.3 MAGNETIC FLUX",
+      "The scalar product of magnetic induction B and the area A is called magnetic flux Φ_B.",
+      "Φ_B = B⃗ · A⃗ = BA cos θ",
+      "Magnetic induction tells us how close together magnetic field lines are, as it tells us the strength of the magnetic field. The number of magnetic field lines passing through a surface placed perpendicular to it is called magnetic flux.",
+      "A. Maximum Flux: If area vector A is parallel to the magnetic field B, then maximum number of magnetic field lines will pass through the surface. Therefore magnetic flux will be maximum,",
+      "Φ_B = BA cos 0°; since cos 0° = 1, therefore Φ_B = BA ...(1)",
+      "B. Minimum Flux: If area vector A is perpendicular to the magnetic field B, then no magnetic field lines will pass through the surface. Therefore magnetic flux will be zero or minimum,",
+      "Φ_B = BA cos 90°; since cos 90° = 0, therefore Φ_B = 0 ...(2)",
+      "C. Flux at any Angle: If area vector A is making any angle with magnetic field B, then magnetic flux will depend upon the angle θ between them,",
+      "Φ_B = BA cos θ ...(3)",
+      "FIGURE 13.8 — Magnetic flux",
+      "MAGNETIC FLUX THROUGH CURVED OR NON-UNIFORM MAGNETIC FIELD",
+      "If the magnetic field is non-uniform or the area is curved. Then we divide the whole curved path into small patches each of area ΔA, such that they are approximately flat and magnetic field is almost uniform over it as shown in figure 13.9."
+    ]
+  },
+  {
+    "id": "phys13-curved-flux-units-ampere95",
+    "title": "Curved-surface flux, Weber units and Ampere’s circuital law",
+    "kind": "lesson",
+    "pdfPage": 52,
+    "printedPage": 95,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "For one of these small patches the magnetic flux is",
+      "ΔΦ_B = B⃗_i · ΔA⃗_i = B_i ΔA_i cos θ_i",
+      "To calculate the flux through whole surface, we add the flux from each patch, such that",
+      "Φ_B = Σ(i=1 to n) ΔΦ_B = Σ(i=1 to n) B⃗_i · ΔA⃗_i = Σ(i=1 to n) B_i ΔA_i cos θ_i",
+      "Φ_B = B cos θ Σ ΔA = BA cos θ ...(13.3)",
+      "FIGURE 13.9 — Curved surface divided into small area patches",
+      "UNIT OF MAGNETIC FLUX AND FLUX DENSITY",
+      "The SI unit of magnetic flux is equal to the unit of magnetic field (1 T) times the unit of area (m²), 1 Wb = 1 T × m². This unit is called the weber (1 Wb), in honor of the German physicist Wilhelm Weber.",
+      "1 Wb = 1 T × m² (1 T = 1 N/(A m))",
+      "So 1 Wb = 1 N m/A",
+      "The unit of magnetic induction can be written as T = Wb m⁻².",
+      "13.4: AMPERE CIRCUITAL LAW",
+      "Ampere’s circuital law, given by Andre Marie Peter Ampere in 1826, relates the integrated magnetic field in a loop around a current carrying wire to the current passing through the wire.",
+      "Ampère’s circuital law states that, for any closed loop, the sum of the length element multiplied by the component of magnetic field parallel to each element is proportional to the current enclosed by the path.",
+      "ΣB.Δl = μ₀ I"
+    ]
+  },
+  {
+    "id": "phys13-ampere-law-long-wire-and-permeability96-97",
+    "title": "Ampere’s circuital law, long-wire field and permeability",
+    "kind": "lesson",
+    "pdfPage": 53,
+    "printedPage": 96,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Ampere law is the relation between magnetic field and current near a current carrying conductor. When no current is present in the wire, all compass needles point in the same direction (toward the Earth’s north pole). When the wire carries a strong current, the compass needles deflect in a direction tangent to the circle, which is the direction of the magnetic field created by the current. Now consider a test point P located at distance r from the current carrying conductor, where we want to find the magnitude of magnetic induction B as shown in figure 13.10. At point ‘P’, the magnetic induction is directly proportional to the current ‘I’ flowing through the conductor and inversely proportional to the distance ‘r’ from the wire.",
+      "B ∝ I/r or B = (μ₀/2π) × I/r ①",
+      "Where μ₀/2π is the constant of proportionality, and ‘μ₀’ is the permeability of a vacuum and its value is 4π × 10⁻⁷ Tm/A or 4π × 10⁻⁷ Wb/A m. Since, the sum of all the length elements Δl gives the circumference of circle 2πr,",
+      "ΣΔl = 2πr ②",
+      "AMPERE (1775- 1836)",
+      "Ampère, a Frenchman, is credited with the discovery of electromagnetism — the relationship between electric currents and magnetic fields.",
+      "FIGURE 13.10 — Ampere’s circuital law",
+      "PERMEABILITY (μ)",
+      "The permeability of a vacuum (μ₀) is 4π × 10⁻⁷ Wb/At.m (webers/ampere-turn meter) and is used as a reference. The relative permeability (μᵣ) of a material is the ratio of its absolute permeability to the permeability of a vacuum.",
+      "μᵣ = μ/μ₀",
+      "Because it is a ratio of permeabilities, μᵣ is dimensionless. Typical magnetic materials, such as iron, have a relative permeability of a few hundred.",
+      "from equation 1 and equation 2 the dot product of B for any closed path Δl we can write",
+      "ΣB • Δl = BΣΔl = (μ₀I/2πr) × ΣΔl",
+      "or ΣB • Δl = (μ₀I/2πr) × 2πr",
+      "hence ΣB • Δl = μ₀I ...(13.4)",
+      "Equation 13.4 is Ampere’s law. The closed path is called Amperian path. In general this law can be applied to any closed path around a current carrying conductor as shown in figure 13.11. For any other medium apart from vacuum or air the permeability μ of that material is used in the equation for Ampere’s law."
+    ]
+  },
+  {
+    "id": "phys13-amperian-path-figure1311-97",
+    "title": "Figure 13.11 — Amperian path",
+    "kind": "lesson",
+    "pdfPage": 53,
+    "printedPage": 97,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "FIGURE 13.11 — Amperian path"
+    ]
+  },
+  {
+    "id": "phys13-example132-setup97",
+    "title": "Example 13.2 — magnetic field midway between two wires",
+    "kind": "lesson",
+    "pdfPage": 53,
+    "printedPage": 97,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 13.2 — MAGNETIC FIELD BETWEEN CURRENT CARRYING WIRES",
+      "Two long parallel wires 6 cm apart carry current of 8 A and 2 A in the same direction. What is magnitude of magnetic field midway between them?",
+      "GIVEN",
+      "current due to wire 1 = I₁ = 8 A , current due to wire 2 = I₂ = 2 A",
+      "At midway between wires ‘r₁ = r₂’ = 6 cm/2 = 0.03 m",
+      "REQUIRED",
+      "Net magnetic field B_net = ?"
+    ]
+  },
+  {
+    "id": "phys13-example132-solution-assignment131-solenoid-intro98",
+    "title": "Example 13.2 solution, Assignment 13.1 and introduction to a current-carrying solenoid",
+    "kind": "lesson",
+    "pdfPage": 54,
+    "printedPage": 98,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "The net magnetic field is B_net = B₁ + B₂",
+      "as fields are opposite in the middle, therefore B_net = B₁ − B₂",
+      "Applying Ampere Circuital Law B_net = μ₀ I₁/(2π r₁) − μ₀ I₂/(2π r₂)",
+      "putting values B_net = 4π×10⁻⁷ (Tm/A)(8A/2π 0.03m) − 4π×10⁻⁷ (Tm/A)(2A/2π 0.03m)",
+      "therefore B_net = 4×10⁻⁵T — Answer",
+      "ASSIGNMENT 13.1 — MAGNETIC FIELD OF A LONG WIRE",
+      "A long straight wire carries a current of 1 A. Find the magnitude of the magnetic field at a distance 1 m from it.",
+      "(Answer: 2 × 10⁻⁵T)",
+      "A. MAGNETIC FIELD DUE TO A CURRENT CARRYING SOLENOID",
+      "A coil wounded in the form of a spiral (helix) forms a solenoid. When current is passed through a solenoid a reasonably uniform magnetic field can be produced. This field is strong along the axis of solenoid and weaker outside as shown in figure 13.12.",
+      "Figure 13.12 — (a) Solenoid (b) Iron fillings in a magnetic field due to a single loop of coil (c) Iron fillings in a magnetic field due to a solenoid",
+      "The magnetic field lines surrounding a loosely wound solenoid, shows that these lines in the interior are nearly parallel to one another, are uniformly distributed, and are close together.",
+      "For a tightly wound solenoid the field in the interior space is very uniform and strong. The field lines resemble those of a bar magnet, meaning that the solenoid effectively has north and south poles.",
+      "As the length of the solenoid increases, the interior field becomes more uniform and the exterior field becomes weaker as shown in figure 13.13.",
+      "An ideal solenoid is approached when the turns are closely spaced and the length is much greater than the radius of the turns. In this case, the external field is close to zero and the interior field is uniform over a great volume."
+    ]
+  },
+  {
+    "id": "phys13-solenoid-field-pattern-figure1313-99",
+    "title": "Figure 13.13 — magnetic field lines in loosely and tightly wound solenoids",
+    "kind": "lesson",
+    "pdfPage": 54,
+    "printedPage": 99,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Figure 13.13 — (a) The magnetic field lines for a loosely wound solenoid and (b) magnetic field lines for a tightly wound solenoid, carrying a steady current.",
+      "We can use Ampère’s law to obtain a quantitative expression for the interior magnetic field in an ideal solenoid."
+    ]
+  },
+  {
+    "id": "phys13-solenoid-amperian-path-derivation100",
+    "title": "Ideal-solenoid field derivation using an Amperian path",
+    "kind": "lesson",
+    "pdfPage": 55,
+    "printedPage": 100,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Consider an closed Amperian path a-b-c-d, with lengths l₁, l₂, l₃ and l₄, where l₁ is inside the solenoid and l₃ outside the solenoid as shown in the figure 13.14. By Ampere Circuital law",
+      "ΣB • Δl = μ₀I",
+      "Since there are four length elements, therefore",
+      "B • l₁ + B • l₂ + B • l₃ + B • l₄ = μ₀I",
+      "or B l₁ cos θ₁ + B l₂ cos θ₂ + B l₃ cos θ₃ + B l₄ cos θ₄ = μ₀ I",
+      "from the figure θ₁ = 0°, θ₂ = 90°, θ₃ = 180°, and θ₄ = 270°, hence",
+      "B l₁ cos 0° + B l₂ cos 90° + B l₃ cos 180° + B l₄ cos 270° = μ₀ I",
+      "since cos 0°= 1, cos 90°= 0, cos 180°= -1 and cos 270°= 0, and since field is weak outside and for ideal solenoid can be taken as zero hence at l₃, B = 0, therefore",
+      "Bl₁ + 0 + 0 + 0 = μ₀I",
+      "or Bl₁ = μ₀I   Let l₁ = l   Bl = μ₀I",
+      "For N number of turns in a solenoid, the above equation can be written as",
+      "Bl = Nμ₀I or B = (N/l) μ₀I",
+      "FIGURE 13.14",
+      "Magnetic field of Solenoid"
+    ]
+  },
+  {
+    "id": "phys13-solenoid-right-hand-rule-figure1315-100",
+    "title": "Right-hand rule III for a solenoid",
+    "kind": "lesson",
+    "pdfPage": 55,
+    "printedPage": 100,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "RIGHT-HAND RULE III FOR A SOLENOID: Curl the fingers in the direction of current around the coil or solenoid and the extended thumb will point in the direction of north pole of a magnet. This rule is for direction of conventional current or flow of positive charges. For electronic current flow the same rule is applied but with left hand.",
+      "FIGURE 13.15 — The right-hand rule (III) for a solenoid."
+    ]
+  },
+  {
+    "id": "phys13-solenoid-field-equation135101",
+    "title": "Turns per unit length and the magnetic field inside a solenoid",
+    "kind": "lesson",
+    "pdfPage": 55,
+    "printedPage": 101,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Let n be the number of turns per unit length (n= N / l), we can write the equation as",
+      "B = μ₀ n I ...(13.5)",
+      "The equation 13.5 can be used to determine the magnetic field of a solenoid."
+    ]
+  },
+  {
+    "id": "phys13-example133-double-layered-solenoid-assignment132101",
+    "title": "Example 13.3 — double-layered solenoid; Assignment 13.2",
+    "kind": "lesson",
+    "pdfPage": 55,
+    "printedPage": 101,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 13.3 — DOUBLE LAYERED SOLENOID",
+      "A solenoid is 10 cm long and is wound with two layers of wire. The inner layer has 50 turns and the outer layer has 40 turns. A current of 3A flows in both layers in the same direction. What is the magnitude of magnetic flux density along the axis of solenoid?",
+      "GIVEN",
+      "Length of a solenoid ‘L’ = 10 cm = 0.01 m",
+      "Turns of inner layer ‘n₁’ = 50 turns, Turns of outer layer ‘n₂’ = 40 turns",
+      "Current ‘I’ = 3A",
+      "REQUIRED",
+      "Magnetic flux density ‘B’ = ?",
+      "SOLUTION",
+      "The net magnetic field from inner and outer layer of the solenoid is",
+      "B_net = B₁ + B₂",
+      "To determine the magnetic field of a solenoid, put equation 13.5 we get",
+      "B_net = (N₁/L) μ₀I + (N₂/L) μ₀I",
+      "putting values B_net = (50/0.01m) × 4π × 10⁻⁷ (Tm/A) × 3A + (40/0.01m) × 4π × 10⁻⁷ (Tm/A) × 3A",
+      "therefore B_net = 3.4×10⁻³T — Answer",
+      "ASSIGNMENT 13.2 — SOLENOID",
+      "You are asked to design a solenoid that will give a magnetic field of 0.10 T, yet the current must not exceed 10.0 A. Find the number of turns per unit length that the solenoid should have.",
+      "(Answer: 7.96 × 10³ m⁻¹)"
+    ]
+  },
+  {
+    "id": "phys13-motion-charged-particle-force-intro102",
+    "title": "13.6 Motion of a charged particle in a magnetic field — force on a point charge",
+    "kind": "lesson",
+    "pdfPage": 56,
+    "printedPage": 102,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "13.6 MOTION OF CHARGED PARTICLE IN MAGNETIC FIELD",
+      "Moving charge also experience a magnetic field, as shown in figure 13.16 so it can be concluded that the force on the current carrying conductor in magnetic field results from the forces acting on individual moving charges.",
+      "FIGURE 13.16 — A cathode ray will deflect as shown when it is also under the influence of an external magnetic field.",
+      "A. MAGNETIC FORCE ON A POINT CHARGE",
+      "When a point charge is placed in an electric field, it experiences an electric force. When a charge is placed in a magnetic field, it also experiences a force, provided that the following two conditions are met.",
+      "1. The charge must be moving, because no magnetic force acts on a stationary charge.",
+      "2. The velocity of the moving charge must have a component that is perpendicular to the direction of the magnetic field.",
+      "Consider a positive point charge ‘+q’ moves at velocity ‘v’ at a point where the magnetic field is ‘B’, as shown in figure 13.17. The angle between ‘v’ and ‘B’ is ‘θ’.",
+      "The magnitude of the magnetic force acting on the point charge is the product of",
+      "The magnitude of the charge ‘|q|’,",
+      "The magnitude of the field ‘B’, and",
+      "The component of the velocity ‘v’ perpendicular to the field",
+      "F_B = q(v sin θ)B"
+    ]
+  },
+  {
+    "id": "phys13-magnetic-force-equations-136-137-and-direction103",
+    "title": "Charged-particle magnetic force, equations 13.6–13.7 and vector directions",
+    "kind": "lesson",
+    "pdfPage": 56,
+    "printedPage": 103,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "In some cases it is convenient to look at the factor ‘sin θ’ from a different point of view. If we associate the factor ‘sin θ’ with the magnetic field instead of with the velocity, then ‘B sin θ’ is the component of the magnetic field perpendicular to the velocity of the charged particle",
+      "F_B = qv(B sin θ)",
+      "The magnetic force can be written in terms of cross product of two vectors ‘v’ and ‘B’ as",
+      "F⃗_B = qvB sin θ n̂ ...(13.6)",
+      "or",
+      "F⃗_B = q v⃗ × B⃗ ...(13.7)",
+      "The force is greatest when the particle moves perpendicular to B (θ = 90°) because sin 90° = 1:",
+      "F_max = qvB",
+      "The force is minimum or zero if the particle moves parallel to the field lines (θ = 0°) because sin 0° = 0:",
+      "F_min = 0",
+      "The direction of the force is perpendicular to the magnetic field B and to the velocity v of the particle. For a positive charge, the Right Hand Rule II and Fleming’s Left Hand Rule for force on a current carrying conductor are used to determine the direction of force. Where the direction of current is replaced by velocity of charged particle.",
+      "FIGURE 13.17 — Velocity of particle in magnetic field",
+      "The direction of the magnetic force F_B acting on a charged particle moving with a velocity v in the presence of a magnetic field B. (a) The magnetic force is perpendicular to both v and B. (b) Oppositely directed magnetic forces F_B are exerted on two oppositely charged particles moving at the same velocity in a magnetic field."
+    ]
+  },
+  {
+    "id": "phys13-force-on-current-carrying-conductor104",
+    "title": "Force on a current-carrying conductor and a moving charged particle",
+    "kind": "lesson",
+    "pdfPage": 57,
+    "printedPage": 104,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "B. THE FORCE ON CURRENT CARRYING CONDUCTOR AND MOTION OF CHARGE PARTICLE IN MAGNETIC FIELD",
+      "We have seen that a current-carrying wire experiences a force when placed in a magnetic field. Since a current in a wire consists of moving electric charges, we might expect that freely moving charged particles (not in a wire) would also experience a force when passing through a magnetic field. The force on a current carrying conductor is",
+      "F_B = BIL sinθ ①",
+      "If N particles of charge q pass by a given point in time , they constitute a current, then by definition of current",
+      "I = Nq/t ②",
+      "By definition of velocity,",
+      "v = L/t or L = vt ③",
+      "putting equation 2 and equation 3 in equation 1, we get",
+      "F_B = B × (Nq/t) × (vt) sin θ",
+      "or F_B = B N q v sin θ",
+      "for a single particle N = 1   F_B = Bqv sinθ or F_B = qvB sinθ",
+      "In vector form F_B = q v⃗ × B⃗ or F_B = qvB sinθ n̂"
+    ]
+  },
+  {
+    "id": "phys13-circular-motion-cyclotron-frequency104-105",
+    "title": "Circular motion of a charged particle in a uniform magnetic field",
+    "kind": "lesson",
+    "pdfPage": 57,
+    "printedPage": 104,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "C. CIRCULAR MOTION OF CHARGE PARTICLE IN UNIFORM MAGNETIC FIELD",
+      "The path of a charged particle moving in a plane perpendicular to a uniform magnetic field is a circle. Let us consider a positively charged particle moving in a uniform magnetic field with its initial velocity perpendicular to the field. Let’s assume the direction of the magnetic field is into the page as in Figure 13.19. As the particle changes the direction of its velocity in response to the magnetic force, the magnetic force remains perpendicular to the velocity.",
+      "QUIZ?",
+      "1.Why wheat flour is usually passed near a magnet before being packed?",
+      "2. Why a steel ship becomes magnetized as it is constructed?",
+      "FIGURE 13.19 — Circular trajectory of charged particle in magnetic field.",
+      "The particle moves in a circle because the magnetic force ‘F_B’ is perpendicular to ‘v’ and ‘B’ and has a constant magnitude ‘qvB’. The centripetal force ‘F_c’ is provided by magnetic force ‘F_B’, therefore",
+      "F_c = F_B ①",
+      "For a particle of mass m moving with velocity ‘v’ in a circle of radius ‘r’ the centripetal force ‘F_c’ is",
+      "F_c = mv²/r ②",
+      "If the charge on particle is +q, which is moving with velocity v perpendicular to magnetic field of strength B the magnetic force F_B is maximum which is",
+      "F_B = qvB ③",
+      "putting equation 2 and equation 3 in equation 1, we get",
+      "mv²/r = qvB   mv/r = qB ④",
+      "the relation between linear angular velocity is v = rω, therefore equation 4 can be written as",
+      "mrω/r = qB or mω = qB rearranging ω = qB/m ⑤",
+      "From the above equation we can determine the time period T of the charged particle",
+      "T = 2π/ω = 2π/(qB/m) = 2πm/qB since f = 1/T",
+      "therefore f = qB/2πm ...(13.8)",
+      "This is often called the cyclotron frequency of a particle in a field because this is the frequency at which particles revolve in a cyclotron"
+    ]
+  },
+  {
+    "id": "phys13-electron-charge-mass-ratio-and-eq139106-107",
+    "title": "Determination of electron charge-to-mass ratio",
+    "kind": "lesson",
+    "pdfPage": 58,
+    "printedPage": 106,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "D. DETERMINATION OF CHARGE TO MASS RATIO FOR AN ELECTRON",
+      "To determine the charge to mass ratio (q_e/m_e) for an electron. The beam of electron is projected on a perpendicularly arranged uniform magnetic filed, such that the electron move in a circle.",
+      "For an electron of charge ‘q_e’ and mass ‘m_e’, the charge to mass ratio (q_e/m_e) may be calculated by balancing the centripetal and magnetic forces.",
+      "F_c = F_B",
+      "hence m_e v²/r = q_e vB or m_e v/r = q_e B",
+      "rearranging q_e/m_e = v/Br ①",
+      "Practically the values of ‘B’ can be calculated easily from the apparatus shown in the figure 13.20, from ringed coils (called Helmhold’s Coils). The radius ‘r’ can also be calculated by making the electron beam visible through ionization and de-excitation of the gas molecules. However the velocity ‘v’ is determined by calculating the kinetic energy of electron by applying the potential ‘V’ of known value. Such that by law of conservation of energy",
+      "½ m_e v² = q_e V or v² = 2q_eV/m_e",
+      "Taking square root on both sides √v² = √(2q_eV/m_e)",
+      "hence v = √(2q_eV/m_e) ②",
+      "putting equation 2 in equation 1, we get",
+      "q_e/m_e = (1/Br) √(2q_eV/m_e)",
+      "squaring both sides",
+      "(q_e/m_e)² = (1/(Br) √(2q_eV/m_e))², or (q_e/m_e)² = (2V/(B²r²))(q_e/m_e)",
+      "q_e/m_e = 2V/B²r² ...(13.9)",
+      "Thus the knowing the values of potential ‘V’, magnetic field ‘B’ and radius ‘r’, the charge to mass ratio can be determined. The accurately known value of e/m for electron is 1.7588 × 10¹¹ C kg⁻¹",
+      "FIGURE 13.20 — (a) The ringed Helmholtz coils of current carrying wire produce a nearly uniform magnetic field.(b) The blue ring inside the glass tube is the glow of a beam of electrons that ionize the gas molecules."
+    ]
+  },
+  {
+    "id": "phys13-velocity-selector-intro-figure1321107",
+    "title": "Velocity selector — introduction and Figure 13.21",
+    "kind": "lesson",
+    "pdfPage": 58,
+    "printedPage": 107,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "E. VELOCITY SELECTOR",
+      "The device which allow only the particles with certain specific speed through it (thus permitting particles only with selected speeds) is called velocity selector.",
+      "FIGURE 13.21 — Velocity selector"
+    ]
+  },
+  {
+    "id": "phys13-velocity-selector-force-balance-and-eq1310108",
+    "title": "Velocity selector force balance and selected speed",
+    "kind": "lesson",
+    "pdfPage": 60,
+    "printedPage": 108,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "If the electric and magnetic fields are applied perpendicular to each other and adjusted such that the magnitude of electric force is equal but direction is opposite to the magnetic force as shown in figure 13.21, then",
+      "F_electric = F_magnetic   since F_electric = qE and F_magnetic = qvB   therefore qE = qvB",
+      "or v = E/B ...(13.10)",
+      "If the beam of charged particles moving with different velocities pass through velocity selector only those particles will pass straight through the device which have velocities equal to the ratio of electric to the magnetic field. Particles moving slower than this speed will be deflected in the direction of electric force and those having greater speeds will be deflected in the direction of magnetic force."
+    ]
+  },
+  {
+    "id": "phys13-example134-electron-period108",
+    "title": "Example 13.4 — electron orbital period",
+    "kind": "lesson",
+    "pdfPage": 60,
+    "printedPage": 108,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 13.4 — TIME PERIOD FOR ELECTRON IN MAGNETIC FIELD",
+      "The path of an electron in a uniform magnetic field of flux density 1.0 x 10⁻² T in a vacuum is a circle of radius 1 cm. Calculate the period of its orbit?",
+      "GIVEN",
+      "Radius ‘r’ = 1 cm = 1 × 10⁻² m; magnetic field ‘B’ = 1.0 × 10⁻² T; Electron Charge ‘q_e’ = 1.6 × 10⁻¹⁹ C; Electron mass ‘m_e’ = 9.11 × 10⁻³¹ kg",
+      "REQUIRED — Time period T = ?",
+      "SOLUTION",
+      "From circular trajectory of charged particle, the time period is",
+      "T = 2πm/(qB)",
+      "Putting values",
+      "T = (2×3.14×9.11×10⁻³¹ kg)/(1.6×10⁻¹⁹ C×1×10⁻² T)",
+      "therefore T = 3.57×10⁻⁹ s = 3.57 ns — Answer"
+    ]
+  },
+  {
+    "id": "phys13-assignment133-velocity-selector108",
+    "title": "Assignment 13.3 — velocity selector",
+    "kind": "lesson",
+    "pdfPage": 60,
+    "printedPage": 108,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "ASSIGNMENT 13.3 — VELOCITY SELECTOR",
+      "A velocity selector in a mass spectrometer uses a 0.100 T magnetic field. What electric field strength is needed to select a speed of 4.00×10⁶ m/s? (Answer: 4.00 × 10⁵ N/C)"
+    ]
+  },
+  {
+    "id": "phys13-torque-current-carrying-coil-intro-figure1322109",
+    "title": "Torque on a current-carrying coil — introduction and forces",
+    "kind": "lesson",
+    "pdfPage": 60,
+    "printedPage": 109,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "13.7 TORQUE ON A CURRENT CARRYING COIL",
+      "When a current carrying coil or loop is placed in uniform magnetic field it experience a force, this force can exert torque on the coil or loop of wire.",
+      "Let us consider a rectangular coil carrying a current I in the presence of a uniform magnetic field B directed parallel to the plane of the loop as shown in Figure 13.22.",
+      "No magnetic forces act on sides 1 and 3 because these wires are parallel to the field θ = 0°; the length of sides 1 and 3 is b, therefore magnetic force is",
+      "F₁ = F₃ = BIb sin0°   since sin0° = 0",
+      "Therefore F₁ = F₃ = 0 ①",
+      "FIGURE 13.22 — A coil in a magnetic field",
+      "However maximum magnetic forces act on sides 2 and 4, because these sides are perpendicular to the field θ = 90°; the length of sides 2 and 4 is a, therefore magnetic force is",
+      "F₂ = F₄ = BIL sin90°   since sin90° = 1",
+      "Therefore F₂ = F₄ = BIa ②",
+      "By applying Right hand rule II or Fleming’s left Hand rule it can be seen that the forces on sides 2 and 4 (F₂ and F₄) are such that they produce a net torque."
+    ]
+  },
+  {
+    "id": "phys13-torque-coil-derivation-eq1311-1312-110",
+    "title": "Torque on a current-carrying coil — couple and angle",
+    "kind": "lesson",
+    "pdfPage": 61,
+    "printedPage": 110,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "If we view the loop from side 3 and sight along sides 2 and 4, we see the view shown in Figure 13.23. The two magnetic forces F₂ and F₄, that the two forces point in opposite directions such that they form a couple. If the loop is pivoted so that it can rotate about point O, these two forces produce a torque that rotates the loop (in this case clockwise). The magnitude of this torque is",
+      "τ = F₂(b/2) + F₄(b/2) ③",
+      "putting values of F₂ and F₄ from equation 2 in equation 3, we get τ = IBa(b/2) + IBa(b/2) or τ = 2IBa(b/2) Therefore τ = IBab ④",
+      "Since a is the length and b is the width of the coil, therefore ab = A ⑤",
+      "putting equation 5 in equation 4, we get τ = IBA ...(13.11)",
+      "Equation 13.11 represents the maximum condition for torque on a current carrying loop of wire.",
+      "Now suppose the uniform magnetic field B makes an angle θ < 90° with a line perpendicular to the plane of the loop as in Figure 13.24.",
+      "The torque is given by relation τ = IBA sinθ ...(13.12)"
+    ]
+  },
+  {
+    "id": "phys13-example135-torque-square-loop-111",
+    "title": "Example 13.5 — torque and net force on a square loop",
+    "kind": "lesson",
+    "pdfPage": 61,
+    "printedPage": 111,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 13.5 — TORQUE ON A LOOP",
+      "A square loop of wire of side 4.0 cm carries 3.0 A of current. A uniform magnetic field of magnitude 0.67 T makes an angle of 30° with the plane of the loop. (a) What is the magnitude of the torque on the loop? (b) What is the net magnetic force on the loop?",
+      "GIVEN — For single square loop number of turns ‘N’ = 1; Magnetic field ‘B’ = 0.6 T; Area ‘A’ = ab = 4.0 cm × 4.0 cm = 0.0016 m; Current ‘I’ = 3.0 A; Angle with plane of the loop ‘φ’ = 30°",
+      "REQUIRED — Torque ‘τ’ = ?; Magnetic force ‘F_B’ = ?",
+      "SOLUTION — The angle ‘θ’ between vector area ‘A’ and magnetic field ‘B’ is θ = 90° - Φ = 90° - 30° = 60°",
+      "(a) The torque on current carrying coil is τ = NIAB sinθ; putting values τ = 1 × (3.00 A) × 0.0016 m × 0.6 T sin60°; Hence τ = 2.5×10⁻³ Nm — Answer",
+      "(b) B sin θ is the same at opposite sides of the loop and opposite sides of the loop have equal and opposite so the forces on opposite sides are equal and opposite. And net force is zero F⃗_net = F⃗_top + F⃗_bottom + F⃗_right + F⃗_left; Therefore F⃗_net = F⃗_top − F⃗_top + F⃗_right − F⃗_right; Hence F⃗_net = 0N — Answer"
+    ]
+  },
+  {
+    "id": "phys13-moving-coil-galvanometer-eq1313-112-113",
+    "title": "Moving-coil galvanometer and current sensitivity",
+    "kind": "lesson",
+    "pdfPage": 62,
+    "printedPage": 112,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "13.8 GALVANOMETER",
+      "A device used for detection and measurement of small electric currents is called a galvanometer.",
+      "The principle of moving coil galvanometer is the torque on current carrying coil in the magnetic field.",
+      "Modern galvanometer are moving coil galvanometers, which are also called d’Arsonval galvanometers.",
+      "Moving coil galvanometer consist of pivoted coil wrapped around soft iron core, placed in a concave poles of a permanent magnet as shown in the figure 13.25. The poles of the magnet are made concave to make the field stronger and radial, such that magnetic force is perpendicular and torque is always maximum. Soft iron core concentrates the magnetic field (due to its high permeability) thus giving more inertia to the coil. A light pointer or mirror is used to measure this angular deflection which is placed on a well calibrated scale.",
+      "The coil is also connected to a spring from other side which produce a restoring torque, bringing the pointer to initial state when the current flow stops.",
+      "The net torque on the coil is the sum of torque produced due to magnetic force and the restoring torque due to spring. Let the magnetic torque be counterclockwise while the spring coil be the restoring torque opposite to it and is taken as negative. Thus τ⃗_net = τ⃗_mag + (−τ⃗_res) ①",
+      "When the pointer comes to rest equilibrium is achieved, the net torque is zero τ_net = 0, τ⃗_net = 0 ②",
+      "When current is applied, a magnetic field B sets-up in the coil and iron core assembly which interacts with a permanent magnet producing a torque.",
+      "τ⃗_mag = NIAB sin θ",
+      "Where N is the number of turns in the coil. Since the magnetic field is radial, therefore vector area is perpendicular to the field θ = 90° and sin 90° = 1, therefore τ⃗_mag = NIAB ③",
+      "The restoring torque in its rotational form is τ⃗_res = cφ ④",
+      "Where c is the spring constant (restoring torque per unit twist) in rotation and φ is the angular displacement. Putting equations 2, 3 and 4 in equation 1, we get 0 = NIAB − cφ or NIAB = cφ",
+      "I = cφ/(NAB) ...(13.13)",
+      "The factor c/NAB is constant, thus the sensitivity of galvanometer can be adjusted by changing deflection angle φ, which is done by changing the factor c/NAB. Thus current I is proportional to angular displacement φ   I ∝ φ",
+      "This relation shows that angular deflection can be used to detect and measure small currents. The cylindrical soft iron assembly in the core of galvanometer rotates in proportion with the current."
+    ]
+  },
+  {
+    "id": "phys13-galvanometer-to-ammeter-eq1314-114-115",
+    "title": "Converting a galvanometer into an ammeter",
+    "kind": "lesson",
+    "pdfPage": 63,
+    "printedPage": 114,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "A. CONVERSION OF GALVANOMETER INTO AMMETER",
+      "An ammeter is a measuring instrument used to measure electric current in a circuit.",
+      "Galvanometer is a very sensitive device even a small current may show full scale deflection. Ammeter is modified form of galvanometer to measure large current.",
+      "The conversion of galvanometer into an ammeter is done by connecting a low resistance called shunt in parallel with it. When this shunt resistance is connected with galvanometer only small fraction of current flows through the galvanometer, remaining large portion of current passes through the shunt resistance as shown in figure 13.26 .",
+      "FIGURE 13.26 — (a) Ammeter (b) Internal circuit with shunt resistance ‘R_s’",
+      "Let ‘R_s’ represents the shunt resistance and ‘R_g’ represents the internal resistance of galvanometer. Here ‘I_g’ is the current which produces full scale deflection in galvanometer and I is the total current through Ammeter. Since shunt resistance is connected parallel to the galvanometer, therefore the potential is same for both resistence.",
+      "V_s = V_g ①",
+      "According to Ohm’s law the potential drop across R_g is V_g = I_gR_g ②. Similarly by Ohm’s law the potential drop across R_s is V_s = I_sR_s",
+      "But here I_s = I − I_g therefore V_s = (I − I_g)R_s ③. putting equation 2 and equation 3 in equation 1, we get (I − I_g)R_s = I_gR_g. Hence R_s = I_gR_g/(I − I_g) ...(13.14)",
+      "The shunt will convert a galvanometer into an ammeter which will give full scale deflection when current I passes through the main circuit. Ammeter must have small resistance, so that current change with it is small. Ideally an ammeter should not have any resistance. Note: Ammeter must be connected in series with the circuit."
+    ]
+  },
+  {
+    "id": "phys13-galvanometer-to-voltmeter-intro-figure1327-115",
+    "title": "Converting a galvanometer into a voltmeter — introduction",
+    "kind": "lesson",
+    "pdfPage": 63,
+    "printedPage": 115,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "B. CONVERSION OF GALVANOMETER INTO VOLTMETER",
+      "Voltmeter is a measuring instrument used to measure potential difference in the circuit.",
+      "Voltmeter is modified form of galvanometer to measure electric potential. The conversion of galvanometer into an voltmeter is made by connecting a high resistance in series with it.",
+      "FIGURE 13.27 — (a) Voltmeter (b) Internal circuit with high resistance ‘R_h’"
+    ]
+  },
+  {
+    "id": "phys13-galvanometer-to-voltmeter-eq1315-116",
+    "title": "Converting a galvanometer into a voltmeter",
+    "kind": "lesson",
+    "pdfPage": 64,
+    "printedPage": 116,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Let R_g represents the internal resistance of galvanometer and current I_g is passing through it. The high resistance R_h also draws the same current I_g. Since in series combination the potential splits and the total potential V is the sum of the potential across the galvanometer V_g and the potential across the high resistance V_h   V = V_g + V_h ①",
+      "According to Ohm’s law the potential drop across R_g is V_g = I_gR_g ②",
+      "Similarly by Ohm’s law the potential drop across R_h is V_h = I_hR_h but since I_h = I_g therefore V_h = I_gR_h ③",
+      "putting equation 2 and equation 3 in equation 1, we get V = I_gR_g + I_gR_h or I_gR_h = V − I_gR_g or R_h = (V − I_gR_g)/I_g or R_h = V/I_g − I_gR_g/I_g; therefore R_h = V/I_g − R_g ...(13.15)",
+      "The high resistor will convert a galvanometer into an voltmeter. Voltmeter must have high resistance, because it should not draw any current from the circuit. Ideally an voltmeter should have an infinite resistance. Note: Voltmeter must be connected in parallel with the circuit."
+    ]
+  },
+  {
+    "id": "phys13-example136-ammeter-voltmeter-conversion-116-117",
+    "title": "Example 13.6 — ammeter and voltmeter ranges",
+    "kind": "lesson",
+    "pdfPage": 64,
+    "printedPage": 116,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 13.6 — CONVERSION OF GALVANOMETER",
+      "A galvanometer has a resistance of 100 ohms and gives full scale deflection on 1 mA current. How it can be converted into (a) an ammeter of range 10 A , (b) voltmeter of range 10 V ?",
+      "GIVEN — Galvanometer resistance ‘R_g’ = 100 Ω; Current through galvanometer ‘I_g’ = 1 × 10⁻³ A; current range ‘I’ = 10 A; voltage range ‘V’ = 10 V",
+      "REQUIRED — Shunt resistance R_s = ?; High resistance R_h = ?",
+      "(a) Galvanometer can be converted into an ammeter of range I = 10 A by connecting a shunt resistance ‘R_s’ in parallel, the shunt resistance is given as R_s = I_gR_g/(I − I_g); putting values R_s = (1×10⁻³ A × 100Ω)/(10 A − 1×10⁻³ A); therefore R_s = 0.010 Ω — Answer",
+      "(b) Galvanometer can be converted into a voltmeter of range V = 10 V by connecting a high resistance R_h in series, the high resistance is given as R_h = V/I_g − R_g; putting values R_h = 10V/(1×10⁻³ A) − 100 Ω; therefore R_h = 9,900 Ω — Answer"
+    ]
+  },
+  {
+    "id": "phys13-avo-meter-multimeter-intro-117",
+    "title": "AVO meter / multi-meter — introduction",
+    "kind": "lesson",
+    "pdfPage": 64,
+    "printedPage": 117,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "13.9 AVO METER/ MULTI-METER",
+      "A single device which can measure current, voltage and resistance is called AVO meter. Where A stands for amperes, V stands for volts and O stands for ohm.",
+      "As we know that galvanometer can be converted into ammeter and voltmeter by adding resistors therefore AVO meter is also combination of resistor networks and a galvanometer. A single galvanometer is added in a circuitry in such a way that all the three quantities can be measured. All the three quantities also has range of values which can also be selected through switch. AVO meter is also capable of measuring alternating quantities as well. AVO meter and its circuit is shown in figure 13.28."
+    ]
+  },
+  {
+    "id": "phys13-avo-meter-figure1328-118",
+    "title": "AVO meter and its internal circuits",
+    "kind": "lesson",
+    "pdfPage": 65,
+    "printedPage": 118,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "FIGURE 13.28 — (a) AVO meter (b) Internal circuit"
+    ]
+  },
+  {
+    "id": "phys13-mri-information-and-coded-figure-118",
+    "title": "Magnetic resonance imaging — information panel",
+    "kind": "lesson",
+    "pdfPage": 65,
+    "printedPage": 118,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "For your information — MAGNETIC RESONANCE IMAGING",
+      "Magnetic Resonance Imaging (MRI) uses a combination of a strong magnetic field and radio waves to produce high resolution images of the interior of the body.",
+      "The human body is composed primarily of fat and water, it is made up mostly of hydrogen atoms. Hydrogen protons within the body align with the magnetic field.",
+      "By applying short radio frequency (RF) pulses to a specific anatomical slice, the protons in the slice absorb energy at this resonant frequency, causing them to spin perpendicular to the magnetic field. As the protons relax back into alignment with the magnetic field, a signal is received by an RF coil. This signal acts as an antenna, and is processed by a computer to produce diagnostic images of areas of the body.",
+      "FIGURE — Radio Frequency Coil; Gradient Coil; Magnet."
+    ]
+  },
+  {
+    "id": "phys13-avo-current-measurement-figure1329-119",
+    "title": "AVO meter — current measurement and universal shunt",
+    "kind": "lesson",
+    "pdfPage": 65,
+    "printedPage": 119,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "A. CURRENT MEASUREMENT",
+      "To measure current the selector switch is turned to measure ampere and proper scale is selected. This circuit contains resistors R₁, R₂ , .. of various resistance connected in parallel across the galvanometer as shown in the figure 13.29. These resistance are collectively called universal shunt. Any one of the shunt can be used to measure current in different ranges without making excessive current to flow through the galvanometer.",
+      "FIGURE 13.29 — AVO meter switch turned to current measurement"
+    ]
+  },
+  {
+    "id": "phys13-avo-voltage-measurement-figure1330-119",
+    "title": "AVO meter — voltage measurement",
+    "kind": "lesson",
+    "pdfPage": 65,
+    "printedPage": 119,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "B. VOLTAGE MEASUREMENT",
+      "To measure voltage the selector switch is turned to measure volts and proper scale is selected. This circuit contains resistors R₁, R₂ , .. of various resistances connected in series with the galvanometer as shown in the figure 13.30. The specific range is selected by adding proper resistance for measurement of specific voltage.",
+      "FIGURE 13.30 — AVO meter switch turned to voltage measurement"
+    ]
+  },
+  {
+    "id": "phys13-avo-resistance-measurement-figure1331-119",
+    "title": "AVO meter — resistance measurement",
+    "kind": "lesson",
+    "pdfPage": 65,
+    "printedPage": 119,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "C. RESISTANCE MEASUREMENT",
+      "To measure voltage the selector switch is turned to measure ohms. The leads are connected across the resistance to be measured as shown in figure 13.31. The battery supplies the current to the galvanometer for deflection. Since the amount of current through the galvanometer now depends upon the external resistance the scale can be calibrated in ohms.",
+      "FIGURE 13.31 — AVO meter switch turned to resistance measurement"
+    ]
+  },
+  {
+    "id": "phys13-digital-multimeter-and-figure1332-120",
+    "title": "Digital multimeters and Figure 13.32",
+    "kind": "lesson",
+    "pdfPage": 66,
+    "printedPage": 120,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "The amount of deflection in the galvanometer will now show the resistance directly. The ohm-meter reading does not depends upon the polarity of the terminal leads, because the direction of current through the galvanometer is determined by the polarity of the battery.",
+      "I. DIGITAL MULTI-METERS",
+      "Modern multimeters come with digital display, accurate, reliable, durable and have added extra features. It is also easy to use because values are displayed automatically in decimal with proper units. Thus the human errors (such as parallax) in reading the detail of the ordinary AVO meter are eliminated.",
+      "In these devices instead of ordinary galvanometer the integrated circuit electronically controls all the functions. Modern digital multimeters make use of computer software, which provides other functions as well, increasing the scope of using a multimeter.",
+      "FIGURE 13.32"
+    ]
+  },
+  {
+    "id": "phys13-unit13-key-points-121",
+    "title": "Unit 13 key points",
+    "kind": "lesson",
+    "pdfPage": 66,
+    "printedPage": 121,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "KEY POINTS",
+      "Force on a current carrying conductor in a magnetic filed: A Current carrying wire has a magnetic field around it. When this field interacts with external magnetic field there is a force on it, which is given by F = I L × B",
+      "Magnetic flux: The scalar product of magnetic induction vector B and the area ΔA, mathematically ΔΦ_B = B⃗ • ΔA⃗ = BΔA cosθ",
+      "Ampere’s Law: This law relates the integrated magnetic field in a loop around a current carrying wire to the current passing through the wire. ΣB.Δl = μ₀I",
+      "The magnetic field of a solenoid: The magnetic field of a solenoid is given by B= n μ₀ I",
+      "Force on a charged particle in magnetic field: The force acting on the charged particle results from the interaction of the external magnetic field and the magnetic field created by the moving charge.",
+      "Velocity selector: The device which allow only the particles with certain specific speed through it (thus permitting particles only with selected speeds)",
+      "Torque on a current carrying coil in a magnetic field: Torque on a current carrying coil in magnetic field is τ = NIAB sin θ",
+      "Galvanometer: A device used for detection and measurement of small electric currents",
+      "Shunt resistance: The low resistance connected in parallel with galvanometer, mathematically R_s = I_gR_g/(I − I_g)",
+      "High resistance: The high value resistance connected in series with galvanometer, mathematically R_h = V/I_g − R_g",
+      "AVO Meter: A single device which can measure current, voltage and resistance."
+    ]
+  },
+  {
+    "id": "phys13-exercise-multiple-choice-questions1-14-122-123",
+    "title": "Unit 13 exercise — multiple-choice questions 1–14",
+    "kind": "lesson",
+    "pdfPage": 67,
+    "printedPage": 122,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Choose the best possible answer",
+      "1. A current is flowing North in a magnetic field that points West. It experiences A. a force down. B. a force up. C. a force west. D. no force .",
+      "2. Two long, straight wires have currents flowing in them in the same direction, the force between the wires is A. attractive. B. repulsive. C. zero. D. infinite",
+      "3. One weber is equal to A. N A²/m B. N m²/A C. N A/m D. N m/A",
+      "4. Magnetic flux will be maximum if the angle between magnetic field strength and vector area is A. 0° B. 45° C. 60° D. 90°",
+      "5. Ampere’s law is applied over any A. surface B. closed surface C. path D. closed path",
+      "6. When the number of turns in a solenoid is doubled without any change in the length of the solenoid its self induction will be A. Four times B. Doubled C. Halved D. One forth",
+      "7. If the charge is at rest in magnetic field, then force on charge is A. qvB B. qvB cos θ C. qvB sin θ D. zero",
+      "8. Work done on a charge particle moving in a uniform magnetic field is A. maximum B. minimum C. zero. D. infinite",
+      "9. The Earths northern magnetic pole acts like: A. the north pole of a magnet B. the south pole of a magnet C. it has a positive charge D. it has a negative charge",
+      "10. The pole pieces of the magnet in galvanometer are made concave to make the field A. Radial B. Stronger C. Weaker D. Both A & B",
+      "11. When a small resistance is connected parallel to galvanometer, the resulting circuit behaves as A. Voltmeter B. Ammeter C. Velocity Selector D. AVO meter",
+      "12. To measure the voltage the voltmeter is connected with the circuit in A. series B. parallel C. Perpendicular D. Straight Line",
+      "13. The resistance of ideal voltmeter is A. Small B. Large C. Zero D. Infinite",
+      "14. The torque in the coil can be increased by increasing A. Number of turns B. Current and magnetic field C. Area of coil D. All of these"
+    ]
+  },
+  {
+    "id": "phys13-exercise-conceptual-questions1-9-123",
+    "title": "Unit 13 exercise — conceptual questions 1–9",
+    "kind": "lesson",
+    "pdfPage": 67,
+    "printedPage": 123,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "CONCEPTUAL QUESTIONS",
+      "1. A compass needle is deflected when a charged plastic rod is held near it. What is the origin of the force that produces the deflection?",
+      "2. What is the difference between permeability and permittivity?",
+      "3. Can the objects in rotational motion create a magnetic field? Provide an example.",
+      "4. Electron and proton are projected with the same velocity normal to the magnetic field. Which one will suffer greater deflection? Why?",
+      "5. A charged particle moves in a straight line through a particular region of space. Could there be a non-zero magnetic field in this region?",
+      "6. If a current is passed through an unstretched spring, will the spring contract or expand?",
+      "7. How can neutrons be accelerated in a cyclotron?",
+      "8. A current carrying loop, free to turn, is placed in a uniform magnetic field B. What will be its orientation relative to B, in the equilibrium state?",
+      "9. How does a current carrying coil behave like a bar magnet?"
+    ]
+  },
+  {
+    "id": "phys13-exercise-comprehensive-questions1-7-124",
+    "title": "Unit 13 exercise — comprehensive questions 1–7",
+    "kind": "lesson",
+    "pdfPage": 68,
+    "printedPage": 124,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "COMPREHENSIVE QUESTIONS",
+      "1. Derive an expression for the force acting on a current carrying conductor in a uniform magnetic field.",
+      "2. A current carrying loop is placed in a uniform magnetic field. Derive an equation for the torque acting on it.",
+      "3. Does a moving charge experiences a force in magnetic field? Explain",
+      "4. How charge to mass ratio for electron is determined using magnetic field?",
+      "5. Define and explain magnetic flux.",
+      "6. State Ampere’s law and use it to derive an expression for the magnetic field of a solenoid.",
+      "7. What is galvanometer? How it is converted into an ammeter and a voltmeter?"
+    ]
+  },
+  {
+    "id": "phys13-exercise-numerical-problems1-10-124-125",
+    "title": "Unit 13 exercise — numerical problems 1–10",
+    "kind": "lesson",
+    "pdfPage": 68,
+    "printedPage": 124,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "NUMERICAL PROBLEMS",
+      "1. At what distance from a long straight wire carrying a current of 10 A is the magnetic field is equal to the earth’s magnetic field of 5 × 10⁻⁵ T? (Answer: 0.04 m)",
+      "2. A long solenoid having 1000 turns uniformly distributed over a length of 0.5 m produces a magnetic field of 2.5 × 10⁻³ T at the center. Find the current in the solenoid. (Answer: 1 A)",
+      "3. A proton moving at right angles to a magnetic field of 0.1 T experiences a force of 2 × 10⁻¹² N. What is the speed of the proton? (Answer: 1.3 × 10⁸ m/s )",
+      "4. An 8 MeV proton enters perpendicularly into a uniform magnetic field of 2.5 T. (a) Find the force on the electron (b) What will be the radius of the path of proton? (Answer: 1.6 × 10⁻¹¹ N, 0.17 m)",
+      "5. What is the time period of an electron projected into a uniform magnetic field of 10 mT and moves in a circle of radius 6 cm? (Answer: 3.6 ns)",
+      "6. A rectangular coil with 250 turns is 6.0 cm long and 4.0 cm wide. When the coil is placed in a magnetic field of 0.25 T, its maximum torque is 0.20 N m. What is the current in the coil? (Answer: 1.5 A)",
+      "7. Crossed electric and magnetic fields are established over a certain region. The magnetic field is 0.105 T and the electric field is 2.00 × 10⁵ V/m. An electron, experiences zero net force from these fields and so continues moving in a straight line. What is the electron’s speed? (Answer: 1.9× 10⁶ m/s)",
+      "8. The full scale deflection for a galvanometer is 10 mA. Its resistance is 100 Ω. How can it be converted into an ammeter of range 100 A? (Answer: R_s = 0.01 Ω)",
+      "9. How a 5 mA, 100 Ω galvanometer is converted into 20 V voltmeter? (Answer: R_H = 1900 Ω)",
+      "10. Two parallel wire 10 cm apart carry currents in opposite directions of 8 A. What is the magnetic field halfway between them? (Answer: 6.4 ×10⁻⁵ T)"
+    ]
+  }
+]

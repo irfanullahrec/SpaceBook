@@ -1,0 +1,178 @@
+{
+ "pdfPage": 88,
+ "sections": [
+  {
+   "id": "cs12-u5-text-10",
+   "title": "Unit 5 text (10)",
+   "headingUrdu": "یونٹ 5 — متن (10)",
+   "headingPashto": "۵ څپرکی — متن (10)",
+   "paras": [
+    {
+     "text": "2. Strings in C++ can be initialized both ways like in C and directly like ordinary variables with the only difference that the string should be enclosed in double quotes. Consider the following initialization examples:",
+     "urdu": "2۔ C++ میں اسٹرنگز کو C کی طرح دونوں طریقوں سے اور عام ویری ایبلز کی طرح براہِ راست ابتدائی قدر دی جا سکتی ہے، فرق صرف یہ ہے کہ اسٹرنگ ڈبل کوٹس میں بند ہونی چاہیے۔ درج ذیل مثالوں پر غور کریں:",
+     "pashto": "۲. په C++ کې تارونو ته د C په څېر په دواړو لارو او د عادي متغیرونو په څېر مستقیم لومړنی ارزښت ورکول کېدای شي، یوازینی توپیر دا دی چې تار باید په دوه‌ګونو نقل‌قولونو کې وتړل شي. لاندې بېلګو ته پام وکړئ:"
+    },
+    {
+     "text": "string str1(\"Call me\");\nstring str2 = \"Send sms!\";\nstring str3(\"OKay\");",
+     "urdu": "string str1(\"Call me\");\nstring str2 = \"Send sms!\";\nstring str3(\"OKay\");",
+     "pashto": "string str1(\"Call me\");\nstring str2 = \"Send sms!\";\nstring str3(\"OKay\");",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, in these examples three strings: str1, str2 and str3 are directly initialized to “Call me”, “Send sms” and “OKay” respectively. Note that while using C++ string in programs, the class string must be included.",
+     "urdu": "یہاں ان مثالوں میں تین اسٹرنگز str1، str2 اور str3 کو بالترتیب ’’Call me‘‘، ’’Send sms‘‘ اور ’’OKay‘‘ سے براہِ راست ابتدائی قدر دی گئی ہے۔ یاد رہے کہ پروگراموں میں C++ اسٹرنگ استعمال کرتے وقت string کلاس شامل کرنا ضروری ہے۔",
+     "pashto": "دلته په دې بېلګو کې درې تارونه str1، str2 او str3 په ترتیب سره \"Call me\"، \"Send sms\" او \"OKay\" ته مستقیم لومړنی ارزښت ورکړل شوي. پام وکړئ چې په پروګرامونو کې د C++ تار کارولو پر مهال باید string ټولګی شامل شي."
+    },
+    {
+     "text": "Consider the following program to demonstrate initialization of C++ string:",
+     "urdu": "C++ اسٹرنگ کی ابتدائی قدر واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں:",
+     "pashto": "د C++ تار د لومړني ارزښت د ښودلو لپاره لاندې پروګرام ته پام وکړئ:"
+    },
+    {
+     "text": "// C++ strings initialization program\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1(\"Call me\");\nstring str2 = \"Send SMS\";\nstring str3(\"OKay\");\ncout<< \"First string str1 is: \"<<str1<<endl;\ncout<< \"Second string str2 is: \"<<str2<<endl;\ncout<< \"Third string str3 is: \"<<str3<<endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "// C++ strings initialization program\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1(\"Call me\");\nstring str2 = \"Send SMS\";\nstring str3(\"OKay\");\ncout<< \"First string str1 is: \"<<str1<<endl;\ncout<< \"Second string str2 is: \"<<str2<<endl;\ncout<< \"Third string str3 is: \"<<str3<<endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "// C++ strings initialization program\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1(\"Call me\");\nstring str2 = \"Send SMS\";\nstring str3(\"OKay\");\ncout<< \"First string str1 is: \"<<str1<<endl;\ncout<< \"Second string str2 is: \"<<str2<<endl;\ncout<< \"Third string str3 is: \"<<str3<<endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "First string str1 is: Call me\nSecond string str2 is: Send SMS\nThird string str3 is: Okay",
+     "urdu": "First string str1 is: Call me\nSecond string str2 is: Send SMS\nThird string str3 is: Okay",
+     "pashto": "First string str1 is: Call me\nSecond string str2 is: Send SMS\nThird string str3 is: Okay",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The following program demonstrates some more features of C++ string e.g. concatenation, copying and finding size of string.",
+     "urdu": "درج ذیل پروگرام C++ اسٹرنگ کی کچھ مزید خصوصیات جیسے جوڑنا، نقل کرنا اور اسٹرنگ کا سائز معلوم کرنا واضح کرتا ہے۔",
+     "pashto": "لاندې پروګرام د C++ تار نور ځانګړتیاوې لکه نښلول، کاپي کول او د تار اندازه موندل ښيي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1=\"Hello\";\nstring str2 = \"World\";\nstring str3, str4;\nint len;\nstr3 = str1; // String copying\nstr4 = str1 + str2; // String concatenation\nlen = str4.size( ); // Finds string size\ncout<<\"str3=\\t\"<<str3<<endl;\ncout<<\"str4=\\t\"<<str4<<endl;\ncout<<\"length of str4 = \\t\"<<len<<endl;\ngetch();\n}",
+     "urdu": "#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1=\"Hello\";\nstring str2 = \"World\";\nstring str3, str4;\nint len;\nstr3 = str1; // String copying\nstr4 = str1 + str2; // String concatenation\nlen = str4.size( ); // Finds string size\ncout<<\"str3=\\t\"<<str3<<endl;\ncout<<\"str4=\\t\"<<str4<<endl;\ncout<<\"length of str4 = \\t\"<<len<<endl;\ngetch();\n}",
+     "pashto": "#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1=\"Hello\";\nstring str2 = \"World\";\nstring str3, str4;\nint len;\nstr3 = str1; // String copying\nstr4 = str1 + str2; // String concatenation\nlen = str4.size( ); // Finds string size\ncout<<\"str3=\\t\"<<str3<<endl;\ncout<<\"str4=\\t\"<<str4<<endl;\ncout<<\"length of str4 = \\t\"<<len<<endl;\ngetch();\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "str3=   Hello\nstr4=   HelloWorld\nlength of str4      = 10",
+     "urdu": "str3=   Hello\nstr4=   HelloWorld\nlength of str4      = 10",
+     "pashto": "str3=   Hello\nstr4=   HelloWorld\nlength of str4      = 10",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "2. Strings in C++ can be initialized both ways like in C and directly like ordinary variables with the only difference that the string should be enclosed in double quotes. Consider the following initialization examples:\n\nstring str1(\"Call me\");\nstring str2 = \"Send sms!\";\nstring str3(\"OKay\");\n\nHere, in these examples three strings: str1, str2 and str3 are directly initialized to “Call me”, “Send sms” and “OKay” respectively. Note that while using C++ string in programs, the class string must be included.\n\nConsider the following program to demonstrate initialization of C++ string:\n\n// C++ strings initialization program\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1(\"Call me\");\nstring str2 = \"Send SMS\";\nstring str3(\"OKay\");\ncout<< \"First string str1 is: \"<<str1<<endl;\ncout<< \"Second string str2 is: \"<<str2<<endl;\ncout<< \"Third string str3 is: \"<<str3<<endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nFirst string str1 is: Call me\nSecond string str2 is: Send SMS\nThird string str3 is: Okay\n\nThe following program demonstrates some more features of C++ string e.g. concatenation, copying and finding size of string.\n\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1=\"Hello\";\nstring str2 = \"World\";\nstring str3, str4;\nint len;\nstr3 = str1; // String copying\nstr4 = str1 + str2; // String concatenation\nlen = str4.size( ); // Finds string size\ncout<<\"str3=\\t\"<<str3<<endl;\ncout<<\"str4=\\t\"<<str4<<endl;\ncout<<\"length of str4 = \\t\"<<len<<endl;\ngetch();\n}\n\nOutput of the program\n\nstr3=   Hello\nstr4=   HelloWorld\nlength of str4      = 10",
+   "urdu": "2۔ C++ میں اسٹرنگز کو C کی طرح دونوں طریقوں سے اور عام ویری ایبلز کی طرح براہِ راست ابتدائی قدر دی جا سکتی ہے، فرق صرف یہ ہے کہ اسٹرنگ ڈبل کوٹس میں بند ہونی چاہیے۔ درج ذیل مثالوں پر غور کریں:\n\nstring str1(\"Call me\");\nstring str2 = \"Send sms!\";\nstring str3(\"OKay\");\n\nیہاں ان مثالوں میں تین اسٹرنگز str1، str2 اور str3 کو بالترتیب ’’Call me‘‘، ’’Send sms‘‘ اور ’’OKay‘‘ سے براہِ راست ابتدائی قدر دی گئی ہے۔ یاد رہے کہ پروگراموں میں C++ اسٹرنگ استعمال کرتے وقت string کلاس شامل کرنا ضروری ہے۔\n\nC++ اسٹرنگ کی ابتدائی قدر واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں:\n\n// C++ strings initialization program\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1(\"Call me\");\nstring str2 = \"Send SMS\";\nstring str3(\"OKay\");\ncout<< \"First string str1 is: \"<<str1<<endl;\ncout<< \"Second string str2 is: \"<<str2<<endl;\ncout<< \"Third string str3 is: \"<<str3<<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nFirst string str1 is: Call me\nSecond string str2 is: Send SMS\nThird string str3 is: Okay\n\nدرج ذیل پروگرام C++ اسٹرنگ کی کچھ مزید خصوصیات جیسے جوڑنا، نقل کرنا اور اسٹرنگ کا سائز معلوم کرنا واضح کرتا ہے۔\n\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1=\"Hello\";\nstring str2 = \"World\";\nstring str3, str4;\nint len;\nstr3 = str1; // String copying\nstr4 = str1 + str2; // String concatenation\nlen = str4.size( ); // Finds string size\ncout<<\"str3=\\t\"<<str3<<endl;\ncout<<\"str4=\\t\"<<str4<<endl;\ncout<<\"length of str4 = \\t\"<<len<<endl;\ngetch();\n}\n\nپروگرام کا آؤٹ پٹ\n\nstr3=   Hello\nstr4=   HelloWorld\nlength of str4      = 10",
+   "pashto": "۲. په C++ کې تارونو ته د C په څېر په دواړو لارو او د عادي متغیرونو په څېر مستقیم لومړنی ارزښت ورکول کېدای شي، یوازینی توپیر دا دی چې تار باید په دوه‌ګونو نقل‌قولونو کې وتړل شي. لاندې بېلګو ته پام وکړئ:\n\nstring str1(\"Call me\");\nstring str2 = \"Send sms!\";\nstring str3(\"OKay\");\n\nدلته په دې بېلګو کې درې تارونه str1، str2 او str3 په ترتیب سره \"Call me\"، \"Send sms\" او \"OKay\" ته مستقیم لومړنی ارزښت ورکړل شوي. پام وکړئ چې په پروګرامونو کې د C++ تار کارولو پر مهال باید string ټولګی شامل شي.\n\nد C++ تار د لومړني ارزښت د ښودلو لپاره لاندې پروګرام ته پام وکړئ:\n\n// C++ strings initialization program\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1(\"Call me\");\nstring str2 = \"Send SMS\";\nstring str3(\"OKay\");\ncout<< \"First string str1 is: \"<<str1<<endl;\ncout<< \"Second string str2 is: \"<<str2<<endl;\ncout<< \"Third string str3 is: \"<<str3<<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nFirst string str1 is: Call me\nSecond string str2 is: Send SMS\nThird string str3 is: Okay\n\nلاندې پروګرام د C++ تار نور ځانګړتیاوې لکه نښلول، کاپي کول او د تار اندازه موندل ښيي.\n\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1=\"Hello\";\nstring str2 = \"World\";\nstring str3, str4;\nint len;\nstr3 = str1; // String copying\nstr4 = str1 + str2; // String concatenation\nlen = str4.size( ); // Finds string size\ncout<<\"str3=\\t\"<<str3<<endl;\ncout<<\"str4=\\t\"<<str4<<endl;\ncout<<\"length of str4 = \\t\"<<len<<endl;\ngetch();\n}\n\nد پروګرام وتنه\n\nstr3=   Hello\nstr4=   HelloWorld\nlength of str4      = 10",
+   "theoryUrdu": "2۔ C++ میں اسٹرنگز کو C کی طرح دونوں طریقوں سے اور عام ویری ایبلز کی طرح براہِ راست ابتدائی قدر دی جا سکتی ہے، فرق صرف یہ ہے کہ اسٹرنگ ڈبل کوٹس میں بند ہونی چاہیے۔ درج ذیل مثالوں پر غور کریں:\n\nstring str1(\"Call me\");\nstring str2 = \"Send sms!\";\nstring str3(\"OKay\");\n\nیہاں ان مثالوں میں تین اسٹرنگز str1، str2 اور str3 کو بالترتیب ’’Call me‘‘، ’’Send sms‘‘ اور ’’OKay‘‘ سے براہِ راست ابتدائی قدر دی گئی ہے۔ یاد رہے کہ پروگراموں میں C++ اسٹرنگ استعمال کرتے وقت string کلاس شامل کرنا ضروری ہے۔\n\nC++ اسٹرنگ کی ابتدائی قدر واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں:\n\n// C++ strings initialization program\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1(\"Call me\");\nstring str2 = \"Send SMS\";\nstring str3(\"OKay\");\ncout<< \"First string str1 is: \"<<str1<<endl;\ncout<< \"Second string str2 is: \"<<str2<<endl;\ncout<< \"Third string str3 is: \"<<str3<<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nFirst string str1 is: Call me\nSecond string str2 is: Send SMS\nThird string str3 is: Okay\n\nدرج ذیل پروگرام C++ اسٹرنگ کی کچھ مزید خصوصیات جیسے جوڑنا، نقل کرنا اور اسٹرنگ کا سائز معلوم کرنا واضح کرتا ہے۔\n\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1=\"Hello\";\nstring str2 = \"World\";\nstring str3, str4;\nint len;\nstr3 = str1; // String copying\nstr4 = str1 + str2; // String concatenation\nlen = str4.size( ); // Finds string size\ncout<<\"str3=\\t\"<<str3<<endl;\ncout<<\"str4=\\t\"<<str4<<endl;\ncout<<\"length of str4 = \\t\"<<len<<endl;\ngetch();\n}\n\nپروگرام کا آؤٹ پٹ\n\nstr3=   Hello\nstr4=   HelloWorld\nlength of str4      = 10",
+   "theoryPashto": "۲. په C++ کې تارونو ته د C په څېر په دواړو لارو او د عادي متغیرونو په څېر مستقیم لومړنی ارزښت ورکول کېدای شي، یوازینی توپیر دا دی چې تار باید په دوه‌ګونو نقل‌قولونو کې وتړل شي. لاندې بېلګو ته پام وکړئ:\n\nstring str1(\"Call me\");\nstring str2 = \"Send sms!\";\nstring str3(\"OKay\");\n\nدلته په دې بېلګو کې درې تارونه str1، str2 او str3 په ترتیب سره \"Call me\"، \"Send sms\" او \"OKay\" ته مستقیم لومړنی ارزښت ورکړل شوي. پام وکړئ چې په پروګرامونو کې د C++ تار کارولو پر مهال باید string ټولګی شامل شي.\n\nد C++ تار د لومړني ارزښت د ښودلو لپاره لاندې پروګرام ته پام وکړئ:\n\n// C++ strings initialization program\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1(\"Call me\");\nstring str2 = \"Send SMS\";\nstring str3(\"OKay\");\ncout<< \"First string str1 is: \"<<str1<<endl;\ncout<< \"Second string str2 is: \"<<str2<<endl;\ncout<< \"Third string str3 is: \"<<str3<<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nFirst string str1 is: Call me\nSecond string str2 is: Send SMS\nThird string str3 is: Okay\n\nلاندې پروګرام د C++ تار نور ځانګړتیاوې لکه نښلول، کاپي کول او د تار اندازه موندل ښيي.\n\n#include <iostream.h>\n#include<conio.h>\n#include<string>\nint main()\n{\nstring str1=\"Hello\";\nstring str2 = \"World\";\nstring str3, str4;\nint len;\nstr3 = str1; // String copying\nstr4 = str1 + str2; // String concatenation\nlen = str4.size( ); // Finds string size\ncout<<\"str3=\\t\"<<str3<<endl;\ncout<<\"str4=\\t\"<<str4<<endl;\ncout<<\"length of str4 = \\t\"<<len<<endl;\ngetch();\n}\n\nد پروګرام وتنه\n\nstr3=   Hello\nstr4=   HelloWorld\nlength of str4      = 10",
+   "content": "<p>2. Strings in C++ can be initialized both ways like in C and directly like ordinary variables with the only difference that the string should be enclosed in double quotes. Consider the following initialization examples:</p><p>string str1(&quot;Call me&quot;);\nstring str2 = &quot;Send sms!&quot;;\nstring str3(&quot;OKay&quot;);</p><p>Here, in these examples three strings: str1, str2 and str3 are directly initialized to “Call me”, “Send sms” and “OKay” respectively. Note that while using C++ string in programs, the class string must be included.</p><p>Consider the following program to demonstrate initialization of C++ string:</p><p>// C++ strings initialization program\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\n#include&lt;string&gt;\nint main()\n{\nstring str1(&quot;Call me&quot;);\nstring str2 = &quot;Send SMS&quot;;\nstring str3(&quot;OKay&quot;);\ncout&lt;&lt; &quot;First string str1 is: &quot;&lt;&lt;str1&lt;&lt;endl;\ncout&lt;&lt; &quot;Second string str2 is: &quot;&lt;&lt;str2&lt;&lt;endl;\ncout&lt;&lt; &quot;Third string str3 is: &quot;&lt;&lt;str3&lt;&lt;endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>First string str1 is: Call me\nSecond string str2 is: Send SMS\nThird string str3 is: Okay</p><p>The following program demonstrates some more features of C++ string e.g. concatenation, copying and finding size of string.</p><p>#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\n#include&lt;string&gt;\nint main()\n{\nstring str1=&quot;Hello&quot;;\nstring str2 = &quot;World&quot;;\nstring str3, str4;\nint len;\nstr3 = str1; // String copying\nstr4 = str1 + str2; // String concatenation\nlen = str4.size( ); // Finds string size\ncout&lt;&lt;&quot;str3=\\t&quot;&lt;&lt;str3&lt;&lt;endl;\ncout&lt;&lt;&quot;str4=\\t&quot;&lt;&lt;str4&lt;&lt;endl;\ncout&lt;&lt;&quot;length of str4 = \\t&quot;&lt;&lt;len&lt;&lt;endl;\ngetch();\n}</p><p>Output of the program</p><p>str3=   Hello\nstr4=   HelloWorld\nlength of str4      = 10</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 88,
+     "printedPages": [
+      164,
+      165,
+      166
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (10)",
+   "sourcePageLabel": "PDF 88 · p. 164–165–166",
+   "sourceNote": "The top of p.164 (end of the greeting program and its output) is recorded with PDF87. The concatenation/size program runs to p.166 (PDF89) and is given whole with its output.",
+   "unit": 5
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf088",
+   "unit": 5,
+   "printedPage": 165,
+   "description": "The initialization program sets str3 to \"OKay\" but the printed output shows “Okay”; the example list uses \"Send sms!\" while the text says “Send sms”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

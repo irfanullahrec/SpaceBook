@@ -1,0 +1,1143 @@
+[
+  {
+    "id": "phys12-unit12-cover52",
+    "title": "Unit 12 — Current Electricity",
+    "kind": "lesson",
+    "pdfPage": 31,
+    "printedPage": 52,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "CURRENT ELECTRICITY",
+      "How does an electric eel catch its prey?"
+    ]
+  },
+  {
+    "id": "phys12-unit12-outcomes52-53",
+    "title": "Unit 12 — Learning outcomes",
+    "kind": "lesson",
+    "pdfPage": 31,
+    "printedPage": 52,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "describe the concept of steady current.",
+      "state Ohm’s law.",
+      "define resistivity and explain its dependence upon temperature.",
+      "define conductance and conductivity of conductor.",
+      "state the characteristics of a thermistor and its use to measure low temperatures.",
+      "distinguish between e.m.f and p.d. using the energy considerations.",
+      "explain the internal resistance of sources and its consequences for external circuits.",
+      "describe some sources of e.m.f.",
+      "describe the conditions for maximum power transfer.",
+      "describe thermocouple and its function.",
+      "explain variation of thermoelectric e.m.f. with temperature.",
+      "apply Kirchhoff’s first law as conservation of charge to solve problems.",
+      "apply Kirchhoff’s second law as conservation of energy to solve problems.",
+      "describe the working of rheostat in the potential divider circuit.",
+      "describe what is a Wheatstone bridge and how it is used to find unknown resistance?",
+      "describe the function of potentiometer to measure and compare potentials without drawing any current from the circuit."
+    ]
+  },
+  {
+    "id": "phys12-unit12-steady-current53",
+    "title": "12.1 Steady current — introduction",
+    "kind": "lesson",
+    "pdfPage": 31,
+    "printedPage": 53,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Current electricity is the study of charges in motion. This unit explores the concept of electric current, the flow of electric charges in a metallic conductor. Simple electrical circuits can be solved by applying Ohm’s law. For other circuits, Kirchhoff rules are applied.",
+      "We all enjoy the comforts and benefits of using electricity. Electricity authorities use high-voltage transmission lines and transformers to distribute electricity to homes and industries in a town.",
+      "In this unit we shall discuss briefly the various features associated with the moving charges.",
+      "12.1 STEADY CURRENT",
+      "The continuous flow of free electrons is called steady current. The flow of electronic current can be easily explained by referring Figure 12.1. The conductor has a large number of free electrons when electric field or voltage is applied, then free electrons, being negatively charged, will start moving towards the positives terminal around the circuit.",
+      "This directed flow of electrons is called electric current.",
+      "Following are the main points:",
+      "1. The actual direction of current is from negative terminal to the positive terminal through out that part of the circuit external to the cell. However, prior to electron theory, it was assumed that current flows from positive terminal to the negative terminal of the cell via the circuit. This convention is so firmly established that it is still in use. This assumed direction is now called conventional current."
+    ]
+  },
+  {
+    "id": "phys12-unit12-current54",
+    "title": "12.1 Steady current — definition and units",
+    "kind": "lesson",
+    "pdfPage": 32,
+    "printedPage": 54,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "2. Those substances which have larger number of free electrons will permit current flow easily. Such substances are called conductors, for example Copper, Zinc, Silver, Aluminum etc.",
+      "In different current carrying materials the charges on the moving particles may be positive or negative. In metals the moving charges are always electrons (negative charges). While in gases the moving charges are negative and positive ions. We define the current through the cross-section area A to be the net charge flowing through the area per unit time. Thus if a net charge ‘Q’ flows through an area in a time t, the current I is",
+      "\\(I=\\frac{Q}{t}\\) (12.1)",
+      "The charge Q is measured in coulombs and time t in seconds. Therefore the unit of electric current will be coulombs/sec or ampere (A). One ampere is the current when one coulomb of charge flows across any cross section of a conductor in one second. The submultiples of ampere are:",
+      "1 milliampere = 1 mA = \\(1\\times10^{-3}\\) A",
+      "1 microampere = 1 μA = \\(1\\times10^{-6}\\) A",
+      "Tip",
+      "Current is a scalar quantity because it does not follow vector law of addition.",
+      "Do you know?",
+      "Now if electrons drift so slowly, how room light turns on quickly when switch is closed? The answer is that propagation of electric field takes place with the speed of light."
+    ]
+  },
+  {
+    "id": "phys12-unit12-example12154-55",
+    "title": "Example 12.1 — current and direction",
+    "kind": "lesson",
+    "pdfPage": 32,
+    "printedPage": 54,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Each second \\(10^{18}\\) electrons flow from right to left across a cross-section of a wire attached to the two terminals of a battery.(a) Calculate the current in the wire, (b) in which direction the current is flowing.",
+      "GIVEN",
+      "Here \\(n = 10^{18}\\); Charge on single electron: \\(e = 1.6\\times10^{-19}\\) C, \\(t = 1\\) s",
+      "REQUIRED",
+      "(a) Electric current I =? , (b) direction of current flow=?",
+      "SOLUTION",
+      "Electric current \\(I=\\frac Qt=\\frac{ne}{t}\\)",
+      "\\(I=\\frac{10^{18}\\times1.6\\times10^{-19}}{1}=1.6\\times10^{-1}\\,\\mathrm A=160\\,\\mathrm{mA}\\)",
+      "The current is flowing from left to right i.e. in opposite direction of electron flow."
+    ]
+  },
+  {
+    "id": "phys12-unit12-drift55",
+    "title": "Drift velocity in a conductor",
+    "kind": "lesson",
+    "pdfPage": 32,
+    "printedPage": 55,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "DRIFT VELOCITY IN CONDUCTOR",
+      "Every conductor is made up of atoms which are in turn composed of electrons. These electrons move in random directions within the atom. Due to their random motion, the net velocity of negatively charged electrons in a conductor is zero.",
+      "But when a potential difference is applied to the ends of a conductor, an electric field \\(\\vec E\\) is set up at every point within the wire. As a result of this force electrons in the conductor acquire a certain amount of velocity which causes a net flow in one direction. This velocity that causes the electrons to move in a certain direction is known as Drift Velocity.",
+      "The net velocity with which free electrons get drifted in a conductor under the influence of electric field is called drift velocity \\((\\vec v_d)\\)."
+    ]
+  },
+  {
+    "id": "phys12-unit12-eeg56",
+    "title": "For your information — Electroencephalogram",
+    "kind": "lesson",
+    "pdfPage": 33,
+    "printedPage": 56,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "FOR YOUR INFORMATION — Electroencephalogram",
+      "An electroencephalogram (EEG) is a test that uses metal discs (called electrodes) to evaluate the electrical activity in the brain. The brain constantly generates minute electrical currents even during sleep and in deep coma. The electrodes with thin wires are attached to your scalp which detects tiny electrical charges that result from the activity of your brain cells.",
+      "The computer records your brains electrical activity on the screen or on a paper as wavy line. These lines allow neurologists to quickly assess whether there are abnormal patterns. An EEG is one of the main diagnostic tests for epilepsy, Brain tumors, Stroke etc."
+    ]
+  },
+  {
+    "id": "phys12-unit12-ohms-law56-57",
+    "title": "12.2 Ohm’s law",
+    "kind": "lesson",
+    "pdfPage": 33,
+    "printedPage": 56,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.2 OHM’S LAW",
+      "This law was presented by German scientist George Simon Ohm in (1826). It relates the three fundamental electrical quantities: voltage (V), the current (I) and resistance (R). If a voltage V is applied across a conductor and current (I) flows through it then according to ohm law",
+      "The magnitude of the current in a conductor is proportional to the applied voltage as long as the temperature of the conductor is kept constant.",
+      "Georg Simon OHM (1787-1854)",
+      "Georg Simon Ohm was a German physicist and mathematician. He defines the fundamental relationship between voltage, current, and resistance.",
+      "Mathematically",
+      "\\(I\\propto V\\) or \\(I=\\frac{V}{R}\\)",
+      "or \\(V=IR\\) ...(12.2)",
+      "Where R is constant, which is known as the resistance of the conducting material. Resistance depends upon the nature, dimension and physical state of the conductor. For a conductor that obeys Ohm’s law, a graph of current I as a function of voltage ‘V’ is a straight line passing through the origin Figure. (12.3(a).",
+      "The slope of the line is \\(\\tan\\theta=\\frac{I}{V}=\\frac{1}{R}\\).",
+      "As R is constant the slope is constant for ohmic conductors. The Ohm’s law is not valid for all conducting material. Those materials for which the slope of I verses V graph is not constant are called non-Ohmic materials. For examples Fig 12.3 (b, c &d) illustrates the non-Ohmic characteristics of the filament of an electric bulb, a thermistor and of a semiconductor diode respectively. The I-V graph for non-Ohmic materials is non linear (curved)."
+    ]
+  },
+  {
+    "id": "phys12-unit12-example12258",
+    "title": "Example 12.2 — TV receiver load resistance",
+    "kind": "lesson",
+    "pdfPage": 34,
+    "printedPage": 58,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 12.2",
+      "The high voltage in a TV receiver is 17 kV. The maximum allowable current is 150μA. What is the least permissible value of load resistance?",
+      "GIVEN",
+      "Voltage \\(V=17\\, \\mathrm{kV}\\), current \\(I=150\\, \\mu\\mathrm A\\)",
+      "REQUIRED",
+      "Load resistance \\(R=?\\)",
+      "SOLUTION",
+      "\\(V=17\\,\\mathrm{KV}=17\\times10^3\\,\\mathrm V\\)",
+      "\\(I=150\\, \\mu\\mathrm A=150\\times10^{-6}\\, \\mathrm A\\)",
+      "\\(R=\\frac VI=\\frac{17\\times10^3}{150\\times10^{-6}}=113.3\\times10^6\\, \\Omega\\)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-animal-electric-signals58",
+    "title": "Do you know? — Animals and electrical signals",
+    "kind": "lesson",
+    "pdfPage": 34,
+    "printedPage": 58,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "DO YOU KNOW?",
+      "A number of animals both produce and detect electrical signals. Fish, sharks, platypuses, and echidnas (spiny anteaters) all detect electric fields generated by nerve activity in prey. Electric eels produce their own emf through biological cells (electric organs) called electroplaques, which are arranged in series and parallel as a set of batteries. Within the fish, weak electric fields in the water produce a current in a gel-filled canal that runs from the skin to sensing cells, producing a nerve signal."
+    ]
+  },
+  {
+    "id": "phys12-unit12-resistance-factors59",
+    "title": "12.3 Electrical resistance and its factors",
+    "kind": "lesson",
+    "pdfPage": 34,
+    "printedPage": 59,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.3 ELECTRICAL RESISTANCE",
+      "Resistance is the opposition offered by the substance to the flow of free electrons. This opposition occurs because atoms and molecules of the substance obstruct the flow of these electrons. Certain substances (metals such as silver, copper, aluminium) offer very little opposition to the flow of electric current. The moving electrons collide with atoms or molecules of the substance, each collision resulting in the liberation of minute quantity of heat. The SI unit of resistance is the ohm and is represented by the symbol Ω (omega).",
+      "It is defined as, the resistance of wire is to be 1 ohm if a potential difference of one volt across its ends causes 1 ampere current to flow through it.",
+      "\\(1\\, \\Omega=\\frac{1\\, \\mathrm V}{1\\, \\mathrm A}\\)",
+      "12.3.1 FACTORS UPON WHICH RESISTANCE DEPENDS",
+      "It is observed experimentally that there are four factors which affects the resistance of a wire",
+      "1) It is directly proportional to its length i.e. \\(R\\propto L\\)",
+      "2) It is inversely proportional to its area of cross-section i.e. \\(R\\propto\\frac1A\\)",
+      "3) It depends upon the nature of material",
+      "4) It is directly proportional to the temperature.",
+      "From the first three points (keeping the temperature constant), the resistance of a conductor is,",
+      "\\(R\\propto\\frac LA\\)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-resistivity60",
+    "title": "Resistivity and specific resistance",
+    "kind": "lesson",
+    "pdfPage": 35,
+    "printedPage": 60,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "or \\(R=\\rho\\frac{L}{A}\\) (12.3)",
+      "Where ρ (Greek LETTER 'Rho') is a constant and is known as resistivity or specific resistance of the material.",
+      "The specific resistance of a material is the resistance offered by 1m length of wire of a material having an area of cross-section of 1m². A wire of 1 metre length is shown in figure 12.4. The unit of resistivity is ohm-meter (Ω.m). The resistivity of a substance varies over a wide range. To give an idea to the reader, the following table may be referred."
+    ]
+  },
+  {
+    "id": "phys12-unit12-metal-resistivity-table-conductance60-61",
+    "title": "Table 12.1 — Resistivity, conductance and conductivity",
+    "kind": "lesson",
+    "pdfPage": 35,
+    "printedPage": 60,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "The resistivity of metals and alloys is very small. Therefore, these materials are good conductors of electric current. On the other hand, resistivity of insulators is extremely large. As a result, these materials hardly conduct any current. There is also an intermediate class of material known as semiconductors. The resistivity of these substances lies between conductors and insulators.",
+      "The resistivity’s of some metals.",
+      "Metals — Resistivity (μΩm)",
+      "Copper (hard drawn) — 0.0178",
+      "Aluminium — 0.0285",
+      "Tin — 0.114",
+      "Silver — 0.0163",
+      "Brass — 0.06-0.09",
+      "Iron — 0.1",
+      "Lead — 0.219",
+      "CONDUCTANCE",
+      "The Reciprocal of resistance of a conductor is called conductance (G). If a conductor has resistance R, then its conductance G is given by",
+      "\\(G=\\frac1R\\) ...(12.4)",
+      "The SI unit of conductance is mho (i.e. ohm spelled back ward) these days, it is a usual practice to use Siemen as the unit of conductance. It is denoted by symbol S.",
+      "CONDUCTIVITY",
+      "The reciprocal of resistivity of a conductor is called its conductivity. It is denoted by the symbol σ. If a conductor has resistivity ρ, then its conductivity is given by",
+      "\\(\\sigma=\\frac1\\rho=\\frac{L}{RA}\\) ...(12.5)",
+      "The unit of conductivity is mho m⁻¹ or siemen meter⁻¹ (S.m⁻¹)."
+    ]
+  },
+  {
+    "id": "phys12-unit12-temperature-resistance-coefficient61",
+    "title": "12.4 Effect of temperature on resistance",
+    "kind": "lesson",
+    "pdfPage": 35,
+    "printedPage": 61,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.4 EFFECT OF TEMPERATURE ON RESISTANCE",
+      "The resistance of a material changes with the change in temperature. The effect of temperature upon resistance varies according to the type of material.",
+      "i) Thus resistance of a conductor (e.g. copper, aluminum) increases with the increase of temperature. The change in resistance is fairly regular for normal range of temperatures.",
+      "ii) The resistance of electrolytes, insulators (e.g. glass, mica, rubber etc.) and semiconductors (e.g. germanium, silicon etc.) decreases with the increase in temperature.",
+      "12.4.1 TEMPERATURE CO-EFFICIENT OF RESISTANCE/RESISTIVITY",
+      "Consider a conductor having resistance R₀ at 0°C and R_T at T °C. It has been found that in the normal range of temperatures, the increase in resistance (R_T − R₀) is",
+      "i) Directly proportional to the initial resistance i.e. \\(R_T-R_0\\propto R_0\\)",
+      "ii) Directly proportional to the rise in temperature i.e. \\(R_T-R_0\\propto T\\)",
+      "Combining the above two relations, we get",
+      "\\(R_T-R_0\\propto R_0T\\)",
+      "\\(R_T-R_0=\\alpha R_0T\\) ...(12.6)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-coefficient-resistivity62",
+    "title": "Temperature coefficient of resistance and resistivity — continuation",
+    "kind": "lesson",
+    "pdfPage": 36,
+    "printedPage": 62,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Where α is the constant and is called temperature co-efficient of resistance. Its value depends upon the nature of material and temperature.",
+      "Rearranging equation (12.6) we get:",
+      "\\(R_T=R_0(1+\\alpha T)\\) ...(12.7)",
+      "From equation (12.6) we get:",
+      "\\(\\alpha=\\frac{R_T-R_0}{R_0T}\\) ...(12.8)",
+      "Temperature co-efficient of resistance α may be defined as increase in resistance per ohm original resistance per degree rise in temperature.",
+      "The unit of α as derived from the definition is K⁻¹. Since the resistance of metals increases with the rise in temperature, they have positive temperature co-efficient of resistance, while co-efficient α is negative for semiconductor because they show decrease in resistance as the temperature raises. The resistivity or specific resistance of most materials increases linearly with increasing temperature. The equation,(12.8) also apply to ρ. At temperature ‘T’ the resistivity ‘\\(\\rho_T\\)’ of a material is given by",
+      "\\(\\rho_T=\\rho_0(1+\\alpha T)\\) ...(12.9)",
+      "\\(\\alpha=\\frac{\\rho_T-\\rho_0}{\\rho_0T}\\) ...(12.10)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-example12362",
+    "title": "Example 12.3 — change in copper resistance",
+    "kind": "lesson",
+    "pdfPage": 36,
+    "printedPage": 62,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 12.3",
+      "A transmission line made of copper has a resistance of 100Ω at 0C°. Calculate the change in resistance between summer and winter, knowing that temperature varies from +35C° to -30C°. Assume the temperature co-efficient of copper to be 0.00427/C° at 0C°.",
+      "GIVEN",
+      "temperature \\(T_1\\)= +35C°, temperature \\(T_2\\) =-30C°, resistance \\(R_o\\)= 100Ω temperature co-efficient of copper α= 0.00427/C°.",
+      "REQUIRED",
+      "change in resistance R=?",
+      "SOLUTION",
+      "\\(R_T=R_0(1+\\alpha T)\\)",
+      "\\(\\Rightarrow R_{-30}=100(1+0.00427(-30))\\)",
+      "\\(\\Rightarrow R_{-30}=87.2\\,\\Omega\\)",
+      "similarly \\(R_{+35}=100[1+0.00427(35)]\\)",
+      "\\(R_{+35}=115\\,\\Omega\\)",
+      "Change in resistance = 115 - 87.2 = 27.8Ω"
+    ]
+  },
+  {
+    "id": "phys12-unit12-example12463",
+    "title": "Example 12.4 — resistance of a copper conductor",
+    "kind": "lesson",
+    "pdfPage": 36,
+    "printedPage": 63,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 12.4",
+      "Calculate the resistance of copper conductor having a length of 2 km and a cross-section of 22 mm². Assume the resistivity is 18 × 10⁻⁹ Ω.m.",
+      "GIVEN",
+      "Length \\(L=2\\,\\mathrm{km}=2000\\,\\mathrm m\\); cross-section \\(A=22\\,\\mathrm{mm}^2=22\\times10^{-6}\\,\\mathrm m^2\\); resistivity \\(\\rho=18\\times10^{-9}\\,\\Omega.\\mathrm m\\)",
+      "REQUIRED",
+      "Resistance of copper \\(R=?\\)",
+      "SOLUTION",
+      "The resistance of copper wire of length L, cross-sectional area A and resistivity ρ is given by",
+      "\\(R=\\frac{\\rho L}{A}\\)",
+      "Thus resistance of copper conductor is",
+      "\\(R=18\\times10^{-9}\\times\\frac{2000}{22\\times10^{-6}}\\)",
+      "\\(R=1.64\\,\\Omega\\)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-assignment12163",
+    "title": "Assignment 12.1 — nichrome wire",
+    "kind": "lesson",
+    "pdfPage": 36,
+    "printedPage": 63,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "ASSIGNMENT 12.1",
+      "(a) Calculate the resistance per unit length of a 22 nichrome wire of radius 0.321mm. (b) If a potential difference of 10V is maintained across 1m length of nichrome wire, what is the current in the wire? \\(\\rho_{\\mathrm{nichromes}}=1.5\\times10^{-6}\\,\\Omega.\\mathrm m\\). answer(4.6 Ω/m, 2.2 A)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-wirewound-resistors63",
+    "title": "12.5 Wire-wound variable resistors — introduction",
+    "kind": "lesson",
+    "pdfPage": 36,
+    "printedPage": 63,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.5 WIRE-WOUND VARIABLE RESISTORS",
+      "High stability and high accuracy resistors are always wire-wound. It is then enclosed in an insulating cover.",
+      "Generally, nickel chromium is used because of its very small temperature co-efficient of resistance. Wire wound resistors can safely operate at higher temperatures than carbon type resistors. Wire wound variable resistor can be used in two ways.",
+      "i) Rheostats     ii) Potential divider"
+    ]
+  },
+  {
+    "id": "phys12-unit12-rheostats64",
+    "title": "i) Rheostats — variable resistance and current control",
+    "kind": "lesson",
+    "pdfPage": 37,
+    "printedPage": 64,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "i) RHEOSTATS",
+      "To use the variable resistor as a current control device one of the two fixed terminals say A and the sliding terminal C are inserted in the circuit as shown in figure12.5. In this way the resistance of the wire between A and the sliding contact C is used. If the sliding contact is shifted away from the terminal, A the length and hence the resistance included in the circuit increase. If the sliding contact is moved towards A, the resistance decreases. Adjusting the resistance in the circuit controls the current in a circuit."
+    ]
+  },
+  {
+    "id": "phys12-unit12-potential-divider64-65",
+    "title": "ii) Potential divider",
+    "kind": "lesson",
+    "pdfPage": 37,
+    "printedPage": 64,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "ii) POTENTIAL DIVIDER",
+      "A potential divider provides a convenient way of getting a variable potential difference from a fixed potential difference. With the help of the battery, a potential difference V is applied across the ends A and B of the resistor (figure 12.6). Let R be the resistance of wire AB. The current I passing through it is",
+      "\\(I=\\frac{V}{R}\\)",
+      "If R_BC is the resistance of the portion of the wire BC and the current passing through BC is I. The PD between the points B and C is given by",
+      "\\(V_{BC}=IR_{BC}\\)",
+      "\\(\\Rightarrow V_{BC}=\\frac{V}{R}R_{BC}=\\frac{R_{BC}}{R}V\\)",
+      "Depending on the position of the sliding contact C, the value of the fraction R_BC/R can be varied from 0 to 1. When the contact C, moving towards B, the length and hence the resistance R_BC of the portion of the wire decreases. Thus V_BC decreases. On the other hand if the sliding contact C is moved towards the end A, the length and the resistance R_BC of the wire increases and hence the voltage V_BC increases."
+    ]
+  },
+  {
+    "id": "phys12-unit12-thermistor-ntc65",
+    "title": "12.6 Thermistor — NTC type",
+    "kind": "lesson",
+    "pdfPage": 37,
+    "printedPage": 65,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.6 THERMISTOR",
+      "Thermistor is temperature sensing device or resistance thermometer whose prime function is to exhibit change in electrical resistance when subjected to a corresponding change in body temperature. It is made of metallic oxides, pressed into a bead, disk, or cylindrical shape and then encapsulated with an impermeable material such as epoxy or glass. The two main types of the thermistors are NTC (Negative Temperature Coefficient) and PTC (Positive Temperature Coefficient).",
+      "NEGATIVE TEMPERATURE COEFFICIENT (NTC) THERMISTOR:",
+      "These types of thermistor are most commonly used. The resistance of an NTC thermistor decreases with increasing temperature. Conversely, its resistance increases with decreasing temperature. A small changes in temperature can cause significant changes in their electrical resistance. This makes them ideal for accurate temperature measurement and control. Some appliances, such as washing machines, clothes dryers, refrigerators and freezers, as well as small appliances like hair dryers, ovens, toasters, thermostats, air conditioners and fire alarms also have NTCs for temperature control. Figure 12.7 shows some Types of thermistor."
+    ]
+  },
+  {
+    "id": "phys12-unit12-ptc66",
+    "title": "PTC thermistor",
+    "kind": "lesson",
+    "pdfPage": 38,
+    "printedPage": 66,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "POSITIVE TEMPERATURE COEFFICIENT (PTC) THERMISTOR:",
+      "This type of thermistor is generally used for fuse purpose. The resistance of PTC thermistor increases with increase in temperature and when temperature decreases, its resistance decreases. One of the properties of PTC thermistors is that when an excessively large current flows, they generate heat by themselves and become highly resistive. With this property, they are used as overcurrent protection devices. They are used as timing devices in televisions. They are also used as heater in automotive industry to provide additional heat inside cabin with diesel engine or to heat diesel in cold climatic conditions before engine injection."
+    ]
+  },
+  {
+    "id": "phys12-unit12-emf-source66",
+    "title": "12.7 Electromotive force and source",
+    "kind": "lesson",
+    "pdfPage": 38,
+    "printedPage": 66,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.7 ELECTROMOTIVE FORCE",
+      "An external energy source is required by most electrical circuits to move charge through the circuit. The circuit therefore must include a device that maintains a potential difference between two points in the circuit, just as a circulating fluid requires as analogous device (pump).",
+      "Such a device which converts non-electrical energy into electrical energy is called a source of electromotive force (emf).",
+      "This reminds us a pump, which can cause water to move from a place of low gravitational potential to a place of high potential. Figure (12.8) shows the e.m.f. source ε, connected to a resistor R. It maintains its upper terminal at a high potential and its lower terminal at a low potential, as indicated by the + and - signs. In the external circuit positive charge carriers would be driven in the direction shown by the arrows marked I."
+    ]
+  },
+  {
+    "id": "phys12-unit12-emf-sources66",
+    "title": "Sources of electromotive force",
+    "kind": "lesson",
+    "pdfPage": 38,
+    "printedPage": 66,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "SOURCES OF e.m.f.",
+      "The work done by emf on charge carriers in its interior must be derived from a source of energy. There are many sources of e.m.f. A few examples are",
+      "1. Batteries or cells convert chemical energy into electrical energy.",
+      "2. Electrical generators convert mechanical energy into electrical energy.",
+      "3. Thermocouples convert heat energy into electrical energy.",
+      "4. Radiant (a solar cell) converts sunlight directly into electrical energy."
+    ]
+  },
+  {
+    "id": "phys12-unit12-emf-definition67",
+    "title": "Definition and unit of electromotive force",
+    "kind": "lesson",
+    "pdfPage": 38,
+    "printedPage": 67,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "We define e.m.f. ℰ of a source equal to the work done in carrying 1 coulomb of charge through the source.",
+      "Suppose q coulombs require an amount of work W joule to be transported through the source then ε in volts is given by",
+      "\\(\\epsilon=\\frac{W}{q}\\) ...(12.11)",
+      "The potential at the ends of a terminal of a battery when circuit is open is also called e.m.f. The unit of e.m.f. is the joule/coulomb, which is the volt (abbreviation V): 1 volt = 1 joule/coulomb."
+    ]
+  },
+  {
+    "id": "phys12-unit12-internal-resistance-intro67",
+    "title": "12.8 Internal resistance — introduction",
+    "kind": "lesson",
+    "pdfPage": 38,
+    "printedPage": 67,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.8 INTERNAL RESISTANCE OF A SUPPLY",
+      "All supplies (e.g. a cell) must have some internal resistance, however small. When the cell is delivering no current i.e. no load, the potential difference across terminals will be equal to e.m.f (ε) of the cell. When some load resistance ‘R’ is connected across the terminals of the cell, the current I starts flowing in the circuit Figure (12.9). This current causes a voltage drop across internal resistance r of the cell so that terminal voltage V available will be less than ε. The relationship between ε and V can be easily established."
+    ]
+  },
+  {
+    "id": "phys12-unit12-emf-fyi67",
+    "title": "FYI — electromotive force analogy",
+    "kind": "lesson",
+    "pdfPage": 38,
+    "printedPage": 67,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Just as a water fountain requires a pump, an electric circuit requires a source of electromotive force to sustain a steady current. In an electronic circuit there must be a device somewhere in the loop that acts like the water pump in a water fountain. In this device a charge travels uphill’s from lower to higher potential energy even though the electrostatic force is trying to push it from higher to lower potential energy. The direction of current in such a device is from lower to higher potential, just the opposite of what happens in an ordinary conductor. The influence that makes current flow from lower to higher potential is called electromotive force."
+    ]
+  },
+  {
+    "id": "phys12-unit12-internal-resistance68",
+    "title": "Internal resistance and terminal voltage",
+    "kind": "lesson",
+    "pdfPage": 39,
+    "printedPage": 68,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "\\(I=\\frac{\\epsilon}{R+r}\\Rightarrow IR=\\epsilon-Ir\\)",
+      "But IR=V, the terminal voltage of the cell",
+      "\\(V=\\epsilon-Ir\\)",
+      "Now, if \\(r=0\\) (OpenCircuit); \\(I=0\\) then \\(V=\\epsilon\\)",
+      "But, when the circuit is closed, the current move through it experiences an associated drop in potential equal to Ir. Thus when a current is flowing through a source, the Potential difference V between the terminals of the source is V=ε-Ir. The Potential V called the terminal voltage, is less than the e.m.f. (ε) because of the term Ir representing the Potential drop across the internal resistance r."
+    ]
+  },
+  {
+    "id": "phys12-unit12-electric-power68-69",
+    "title": "12.9 Electric power",
+    "kind": "lesson",
+    "pdfPage": 39,
+    "printedPage": 68,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.9 ELECTRIC POWER",
+      "When voltage V is applied to a circuit, it causes current I to flow through the resistance R in time t. (Figure 12.10)",
+      "The total charge Q flows in t second is \\(Q=I\\times t\\) and \\(V=\\frac{W}{Q}\\)",
+      "\\(W=QV=VIt\\)",
+      "Clearly work is being done in moving the charges in the circuit.",
+      "This work done in moving the charges in a unit time is called the electric power or the rate at which work is done in an electric circuit is called electric power.",
+      "\\(\\text{Electric Power}=\\frac{\\text{Work done in electric circuit}}{\\text{Time}}\\)",
+      "\\(P=\\frac{W}{t}=\\frac{VIt}{t}\\)",
+      "\\(P=VI\\) ...(12.12)",
+      "using Eq V=IR we get",
+      "or",
+      "\\(P=I^2R\\) ...(12.13)",
+      "or",
+      "\\(P=\\frac{V^2}{R}\\) ...(12.14)",
+      "The above three formulas are equally valid for calculation of electric power in a D.C. circuit. Which one is to be used depends simply on the known quantities."
+    ]
+  },
+  {
+    "id": "phys12-unit12-power-units-kwh-example12569",
+    "title": "Power units, kilowatt-hour and Example 12.5 opening",
+    "kind": "lesson",
+    "pdfPage": 39,
+    "printedPage": 69,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "UNIT OF ELECTRIC POWER: The SI unit of power is watt. A power of 1 watt is said to be consumed in a circuit if a potential difference of 1 volt causes a current of 1 ampere to flow through it.",
+      "\\(1\\text{ Watt}=1\\text{ V}\\times1\\text{ A}\\)",
+      "The bigger units of power are kilowatt (kW) and mega watt (MW)",
+      "\\(1\\text{ kW}=1000\\text{ watts}=10^3\\text{ watts}\\)",
+      "\\(1\\text{ MW}=10^6\\text{ watts}\\)",
+      "KILOWATT-HOURS: Electric energy is commonly consumed in very large quantity for the measurement of which Joule is a very small unit. Hence a large unit of energy is required which is called kilowatt-hour. One kilowatt-hour is commonly termed as one commercial unit of electrical energy. It is the amount of energy obtained by a power of 1 kilowatt in one hour.",
+      "\\(1\\text{ kWh}=1000\\text{ W}\\times3600\\text{ s}=3.6\\times10^6\\text{ W s}\\)",
+      "\\(1\\text{ kWh}=3.6\\times10^6\\text{ J}\\quad\\therefore1\\text{ J}=1\\text{ W}\\times1\\text{ s}\\)",
+      "EXAMPLE 12.5",
+      "A heating coil has a resistance of 20 Ω. It is designed to operate on 220 V. What electric energy in joules is supplied to the heater in 10 s?",
+      "GIVEN",
+      "\\(R=20\\,\\Omega,\\;V=220\\text{ V and }t=10\\text{ s}\\)",
+      "REQUIRED",
+      "electric energy W=?"
+    ]
+  },
+  {
+    "id": "phys12-unit12-editorial-open-circuit68",
+    "title": "Editorial clarification — open-circuit notation",
+    "kind": "editorial",
+    "pdfPage": 39,
+    "printedPage": 68,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Editorial clarification: The printed line states “r = 0 (OpenCircuit); I = 0”. For an open circuit, the current is zero (I = 0); r = 0 instead describes an ideal source with zero internal resistance. The printed wording is retained above."
+    ]
+  },
+  {
+    "id": "phys12-unit12-example125-solution70",
+    "title": "Example 12.5 — heating-coil energy",
+    "kind": "lesson",
+    "pdfPage": 40,
+    "printedPage": 70,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "SOLUTION",
+      "From Ohm’s law \\(V=IR\\) or \\(I=\\frac{V}{R}\\)",
+      "\\(I=\\frac{220\\text{ V}}{20\\,\\Omega}=11\\text{ A}\\)",
+      "Now applying the formula",
+      "\\(W=I^2Rt\\)",
+      "\\(W=(11\\text{ A})^2(20\\,\\Omega)(10\\text{ s})\\)",
+      "\\(W=24200\\text{ J}\\)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-example126-energy-cost70",
+    "title": "Example 12.6 — monthly electricity cost",
+    "kind": "lesson",
+    "pdfPage": 40,
+    "printedPage": 70,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 12.6",
+      "The following are the details of load and a circuit connected through a supply meter.",
+      "(i) Six lamps of 40 watts each working for 4 hours per day.",
+      "(ii) Two fluorescent tubes 125 watts each working for 2 hours per day.",
+      "(iii) 1000 watts heater working for 3 hours per day.",
+      "Find the cost of electrical energy consumed in 30 days of a month when the rate of electricity is 7.0 Rs per unit.",
+      "SOLUTION",
+      "Total watts for lamps \\(=40\\times6=240\\) watts",
+      "Total watts for tubes \\(=125\\times2=250\\) watts",
+      "Heater = 1000 watts",
+      "Energy consumed per day",
+      "\\(=(250\\times4)+(250\\times2)+(1000\\times3)\\)",
+      "\\(=4460\\) watt hours",
+      "\\(=4.46\\text{ Kwh}\\)",
+      "Total energy consumed in the month of June",
+      "\\(=4.46\\times30=133.8\\,\\mathit{kwh}\\)",
+      "Bill for the month of June",
+      "\\(=7\\times133.8=936.6\\,\\mathit{Rs}\\)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-assignment12270",
+    "title": "Assignment 12.2 — heating-coil power",
+    "kind": "lesson",
+    "pdfPage": 40,
+    "printedPage": 70,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "ASSIGNMENT 12.2",
+      "A heating coil is rated at 100W,220V. The coil is cut in half and two pieces are joined in parallel to the same source. Now what is the energy liberated per second?",
+      "Answer (4×10²J)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-maximum-power-output71",
+    "title": "12.10 Maximum power output",
+    "kind": "lesson",
+    "pdfPage": 40,
+    "printedPage": 71,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.10 MAXIMUM POWER OUTPUT",
+      "In many electronic circuits and systems it is important to have maximum transfer of power from the source to the load. For example, in radio or TV transmitting systems, it is desired to transfer the maximum power possible from the transmitting medium to the antenna systems. We want maximum power transfer from amplifier to speaker system. This is accomplished by proper matching of load resistance R and source resistance r.",
+      "If the load resistance is less or greater than the source resistance, then the power delivered to the load will be minimum.",
+      "Consider the circuit of figure 12.11, as the current I flows through the load resistance R the charges flow from a point of higher potential to a point of lower potential. In this process, they lose potential energy. If V is the potential difference across R, the loss of potential energy per second is known as power delivered to R by the current I.",
+      "From electrical power",
+      "\\(P_{out}=IV\\)",
+      "\\(P_{out}=I^2R\\)",
+      "\\(P_{out}=\\frac{\\epsilon^2R}{(R+r)^2}\\)",
+      "\\(P_{out}=\\frac{\\epsilon^2R}{(R-r)^2+4Rr}\\)",
+      "When \\(R=r\\), the denominator of the expression for \\(P_{out}\\) is minimum and so \\(P_{out}\\) is maximum.",
+      "Thus it can be concluded that maximum power is delivered to a load R when the internal resistance of the source of emf is equal to the load resistance, also called maximum power transfer theorem.",
+      "The value of the maximum output power is",
+      "\\((P_{out})_{max}=\\frac{\\epsilon^2}{4r}=\\frac{\\epsilon^2}{4R}\\) ...(12.15)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-editorial-example126-lamps70",
+    "title": "Editorial clarification — Example 12.6 lamp calculation",
+    "kind": "editorial",
+    "pdfPage": 40,
+    "printedPage": 70,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Editorial clarification: The printed solution states “Total watts for lamps = 40×6 = 240 watts”, but its daily-energy calculation uses 250×4 for the lamps. The source values conflict; both printed lines are preserved without substituting one for the other."
+    ]
+  },
+  {
+    "id": "phys12-unit12-thermocouples72-73",
+    "title": "12.11 Thermocouples and temperature dependence",
+    "kind": "lesson",
+    "pdfPage": 41,
+    "printedPage": 72,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.11 THERMOCOUPLES",
+      "In early 1821, Thomas Seebeck searched experimentally for a relation between electricity and heat. A thermocouple consists of two dissimilar wires A and B that are joined at one end T₁ (the “hot” junction). The other end T₂ (the “cold” junction) is maintained at a constant reference temperature (usually the melting point of ice).",
+      "The device connected at their ends shows a deflection. This is known as Seebeck Effect. The e.m.f. generated in the circuit is called thermoelectric e.m.f. In this process energy is directly converted into electrical energy. Figure 12.12 (a) shows an arrangement to study the effect of temperature difference between the two junctions in a Cu-Fe thermocouple.",
+      "Thus thermocouple is a temperature measuring device. In other words, it is a type of sensor used for measuring the temperature in the form of an electric current or the EMF.",
+      "The wire pairs can be composed of noble metals (such as platinum, iridium, silver, osmium, gold, and rhodium) or base metals, (such as copper, iron or nickel-copper alloy, lead and zinc). Thus it remains true for any pair of metals.",
+      "Thermocouples are the most widely used temperature sensors in industry due to their low cost, simplicity, size and useable temperature range. The electromotive force ε is a function of the temperature gradient. The thermo-e.m.f. produced is very small, of the order of mV per every degree of temperature difference. The Seebeck effect is reversible, i.e., if the hot and cold junctions are interchanged, the direction of e.m.f. (and hence current) reverses.",
+      "The greater the separation of the metals forming the thermocouple in series, greater is the thermo e.m.f. produced.",
+      "Its temperature dependence is given by",
+      "\\(\\epsilon=\\alpha T+\\frac{1}{2}\\beta T^2\\) ...(12.16)",
+      "Where α and β are constants (called thermoelectric coefficients) which depends on the nature of the metals."
+    ]
+  },
+  {
+    "id": "phys12-unit12-thermoelectric-variation73",
+    "title": "12.12 Variation in thermoelectric emf with temperature",
+    "kind": "lesson",
+    "pdfPage": 41,
+    "printedPage": 73,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.12 VARIATION IN THERMOELECTRIC e.m.f. WITH TEMPERATURE",
+      "Keeping the junction B at 0°C, the temperature of junction A is increased. When both the junctions are at the same temperature, there is no thermo e.m.f. When the temperature at one junction is cold while at the other end is increased the thermo e.m.f. also increases with temperature and reaches a maximum value at a certain temperature, called the neutral temperature Tₙ.",
+      "The value of the neutral temperature is constant for a thermocouple, depends on the nature of materials and is independent of the temperature of the cold junction. As the temperature of the hot junction is increased, the thermo e.m.f. starts decreasing instead of increasing.",
+      "The particular temperature at which the thermo e.m.f. becomes zero is called the inversion temperature Figure 12.12 (b). The graph shows the variation of the thermo e.m.f. with the temperature of hot junction, with the cold junction."
+    ]
+  },
+  {
+    "id": "phys12-unit12-resistance-thermometers74",
+    "title": "Resistance thermometers (RTDs)",
+    "kind": "lesson",
+    "pdfPage": 42,
+    "printedPage": 74,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Resistance thermometers",
+      "Accurate temperature measurement is essential for food producers, hospitals, refineries, chemical plants, in research labs, and pharmaceutical manufacturers. That’s why a great many lab and industrial applications today pick reliable, accurate resistance temperature detectors (RTDs) as the temperature measurement instrument of choice.",
+      "Resistance thermometers, also called resistance temperature detectors (RTD’s), are sensors used to measure temperature by correlating the resistance of the RTD element with temperature.",
+      "Common RTD sensing elements constructed of platinum, copper or nickel have a unique, and repeatable and predictable resistance versus temperature relationship (R vs T) and operating temperature range.",
+      "The R vs T relationship is defined as the amount of resistance change of the sensor per degree of temperature change.",
+      "Platinum is the best metal for RTDs because it follows a very linear resistance-temperature relationship and it follows the R vs T relationship in a highly repeatable manner over a wide temperature range. The unique properties of platinum make it the material of choice for temperature standards over the range of -272.5°C to 961.78°C. They are slowly replacing the use of thermocouples in many industrial applications below 600°C, due to higher accuracy and repeatability."
+    ]
+  },
+  {
+    "id": "phys12-unit12-kirchhoff-biography75",
+    "title": "Gustar Robert Kirchhoff — biography panel",
+    "kind": "lesson",
+    "pdfPage": 42,
+    "printedPage": 75,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "Kirchhoff was a German physicist who made significant contributions to the fundamental understanding of black-body radiation emitted by heated objects, spectroscopy, and electrical circuits."
+    ]
+  },
+  {
+    "id": "phys12-unit12-kirchhoff-kcl-intro75",
+    "title": "12.13 Kirchhoff’s law and current law introduction",
+    "kind": "lesson",
+    "pdfPage": 42,
+    "printedPage": 75,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.13 KIRCHOFF’S LAW",
+      "Many complex circuits, where simplification by series and parallel combinations is impossible due to combination of more than one batteries in a circuit. Ohm’s law cannot be applied to solve such circuits. Circuits like this are known as multi-loop circuits.",
+      "In order to find the current in all branches of a multi-loop circuit (or the emf of a battery or the value of a resistor) Robert Kirchhoff’s gave two laws, known as Kirchhoff’s laws. These laws also apply to very simple circuits.",
+      "KIRCHOFF’S CURRENT LAW (KCL)",
+      "Kirchhoff’s current rule (the junction rule) is manifestation of the conservation of charge to a junction; it is illustrated in Figure 12.13. Current is the flow of charge, and charge is conserved. This law is related to the currents at the junctions of an electric circuit and may be stated as under:",
+      "The algebraic sum of all the currents meeting at a junction in an electrical circuit is zero. ΣI=0",
+      "A junction is a point in a circuit where two or more components are connected. As algebraic sum is one in which the sign of the quantity is taken into account. For example, consider four conductors carrying currents I₁, I₂, I₃ and I₄."
+    ]
+  },
+  {
+    "id": "phys12-unit12-kcl-continuation76",
+    "title": "Kirchhoff’s current law — sign convention",
+    "kind": "lesson",
+    "pdfPage": 43,
+    "printedPage": 76,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "If we take the signs of currents flowing towards a point O as positive, then currents flowing away from point O will be assigned negative sign. Thus applying Kirchhoff’s current law to the junction",
+      "\\((I_1)+(I_4)+(-I_2)+(-I_3)=0\\)",
+      "Or",
+      "\\(I_1+I_4=I_2+I_3\\) ...(12.17)",
+      "i.e. sum of incoming currents = sum of outgoing current.",
+      "Hence, Kirchhoff’s current law may also be stated as the algebraic sum of currents flowing towards the junction in an electrical circuit is equal to the algebraic sum of currents flowing away from that junction."
+    ]
+  },
+  {
+    "id": "phys12-unit12-kvl-intro76",
+    "title": "Kirchhoff’s voltage law and loop conventions",
+    "kind": "lesson",
+    "pdfPage": 43,
+    "printedPage": 76,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "KIRCHOFF’S VOLTAGE LAW (KVL)",
+      "This law refers to e.m.f and voltage drops in a closed circuit or closed loop and may be stated as under:",
+      "In any closed electrical circuit, the algebraic sum of all the electromotive force (e.m.f) and voltage drops in resistor is equal to zero i.e.",
+      "Algebraic sum of emf + algebraic sum of voltage drops = 0.",
+      "The validity of Kirchhoff’s voltage law can be easily established by referring to the closed loop ABCDA shown in Figure 12.14. Starting from any point (say point A) in this closed circuit after going around the circuit and go back to this point (i.e. point A). The following convention is adopted to solve the circuit.",
+      "i) A rise in potential is taken positive.",
+      "ii) A drop in potential is taken negative.",
+      "iii) For batteries, the positive end is always at higher potential.",
+      "iv) Current flows from high potential to the low potential.",
+      "v) Assume the direction of current either clock wise or counter clockwise."
+    ]
+  },
+  {
+    "id": "phys12-unit12-kvl-procedure77",
+    "title": "Applying Kirchhoff’s laws — potential changes and tips",
+    "kind": "lesson",
+    "pdfPage": 43,
+    "printedPage": 77,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "PROCEDURES OF APPLYING KIRCHHOFF’S LAWS FOR PROBLEM SOLUTION",
+      "Moving along the direction of current flow. The fall in potential is \\(-IR_1\\)",
+      "Moving along the direction of current flow. The fall in potential is \\(-IR_2\\)",
+      "Moving from the negative terminal to the positive terminal. For rise in potential \\(+\\varepsilon_1\\)",
+      "Moving from the positive terminal to the negative terminal. For fall in potential \\(-\\varepsilon_2\\)",
+      "Thus applying Kirchhoffs law, on figure 12.14 we get",
+      "\\(\\epsilon_1-IR_1-\\epsilon_2-IR_2=0\\)",
+      "\\(\\Rightarrow\\epsilon_1-\\epsilon_2=IR_1+IR_2\\)",
+      "\\(\\Rightarrow\\epsilon_1-\\epsilon_2=IR_1+IR_2\\quad\\text{or}\\quad\\sum\\epsilon=\\sum IR\\) ...(12.18)",
+      "The sum of all the emf ε in a loop in a circuit is equal to the sum of all the IR voltage drops in that loop. KVL is in fact, a statement of the law of conservation of energy.",
+      "Tips",
+      "1. The choice of loops is quite arbitrary, but it should be such that each resistance is included at least once in the selected loop. Kirchhoff’s voltage law can be applied to these closed loops to get the desired equations.",
+      "2. The direction in which currents are assumed to flow is not important, since if wrong direction is chosen, it will be indicated by a negative sign in the result."
+    ]
+  },
+  {
+    "id": "phys12-unit12-example12778",
+    "title": "Example 12.7 — emf in a three-resistor circuit",
+    "kind": "lesson",
+    "pdfPage": 44,
+    "printedPage": 78,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 12.7",
+      "Figure shows three resistors and two voltage sources. Use Kirchhoff’s voltage law to find the emf ε_ab.",
+      "GIVEN",
+      "\\(\\epsilon_1=24\\text{ V},\\;R_1=2\\text{ k}\\Omega,\\;R_2=1\\text{ k}\\Omega,\\;R_3=3\\text{ k}\\Omega\\)",
+      "REQUIRED",
+      "e.m.f. \\(\\epsilon_{ab}=?\\)",
+      "SOLUTION",
+      "Total circuit resistance, \\(R_T=2+1+3=6\\text{ k}\\Omega\\)",
+      "Circuit current, \\(I=\\frac{\\epsilon}{R_T}=\\frac{24\\text{ V}}{6\\text{ k}\\Omega}=4\\text{ mA}\\)",
+      "Applying Kirchhoff’s voltage law to loop ABCDA, we have",
+      "\\(\\epsilon_1-IR-\\epsilon_{ab}=0\\)",
+      "\\(24-4\\text{ mA}\\times2\\text{ k}\\Omega-\\epsilon_{ab}=0\\)",
+      "\\(24-8-\\epsilon_{ab}=0\\quad\\Rightarrow\\quad\\epsilon_{ab}=24-8=16\\text{ V}\\)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-assignment12378",
+    "title": "Assignment 12.3 — branch currents",
+    "kind": "lesson",
+    "pdfPage": 44,
+    "printedPage": 78,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "ASSIGNMENT 12.3",
+      "Circuit ABCDEF is shown in Figure . Calculate the current in each branch of the circuit using Kirchhoff’s voltage law.",
+      "Answer (0.163A and 0.05454 A)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-wheatstone-bridge79",
+    "title": "12.14 Wheatstone bridge and balance condition",
+    "kind": "lesson",
+    "pdfPage": 44,
+    "printedPage": 79,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.14 WHEATSTONE BRIDGE",
+      "This bridge was first proposed by Wheatstone an English telegraph engineer for measuring accurately the value of an unknown resistance.",
+      "It consist of four resistors (two fixed resistances P and Q which are known, one variable resistance R which is also known and one unknown resistance X whose value is to be found) as shown in figure 12.15. Across one pair of opposite junctions (A and C) battery is connected and across the other opposite pair of junctions (B and D), a galvanometer is connected.",
+      "The value of P and Q are properly fixed. When the key is switched on, the current I divide unequally between the two branches and the galvanometer shows current.",
+      "The value of resistance R is varied until the galvanometer shows zero current. Under such conditions, the bridge is said to be balance. The point at which the bridge is balanced is called null point.",
+      "Let I₁ and I₂ be the currents through P and R respectively when the bridge is balanced.",
+      "Since there is no current through Galvanometer, the current in Q and X are also I₁ and I₂ respectively. As the Galvanometer reads zero, points B and D are at the same potential. This means that voltage drops from A to B and A to D must be equal.",
+      "Also voltage drops from B to C and D to C must be equal. Hence for balanced bridge the potential drop across AB = the potential drop across AD",
+      "\\(I_1P=I_2R\\) (i)",
+      "Similarly, the potential drop across BC = the potential drop across DC and",
+      "\\(I_1Q=I_2X\\) (ii)",
+      "Dividing Eq. (i) by Eq. (ii), we get",
+      "\\(\\frac{P}{Q}=\\frac{R}{X}\\)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-wheatstone-principle80",
+    "title": "Wheatstone bridge — unknown resistance",
+    "kind": "lesson",
+    "pdfPage": 45,
+    "printedPage": 80,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "From the balance condition,",
+      "\\(PX=RQ\\)",
+      "\\(\\Rightarrow X=\\frac{RQ}{P}\\) ...(12.19)",
+      "Hence, if three resistances on the right side of equation12.19 are known, the fourth resistance X can be calculated. This is the principle of determining unknown resistance by Wheatstone bridge."
+    ]
+  },
+  {
+    "id": "phys12-unit12-potentiometer80-81",
+    "title": "12.15 Potentiometer — principle and applications",
+    "kind": "lesson",
+    "pdfPage": 45,
+    "printedPage": 80,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "12.15 POTENTIOMETER",
+      "A potentiometer is a null type resistance network device for measuring potential differences.",
+      "For the accurate measurement of potential difference, current and resistance the potentiometer is most useful instrument. Its principle of action is that an unknown emf or potential difference is measured by balancing it, wholly or in part, against a known potential difference.",
+      "A simplest potentiometer consists of wire AC of uniform cross-section stretched alongside a scale and connected across battery of potential V as shown in Figure 12.16.",
+      "The battery through the rheostat and slide wire supply the working current. The working current may vary by changing the setting of the rheostat.",
+      "A standard cell of known emf ε₁ is connected between A and terminal 1 of a two way switch S.",
+      "Slider B is pressed momentarily against wire AC and its position is adjusted until the galvanometer deflection is zero when B is making contact with AC.",
+      "Let l₁ be the corresponding distance between A and B. The fall of potential over length l₁ of the wire is then same as the emf ε₁.",
+      "Then move the switch to 2, thereby replacing the standard cell by another cell, the e.m.f ε₂ of which is to be measured.",
+      "Adjust the slider B again to give zero deflection on G. If l₂ be the new distance between A and B, then",
+      "\\(\\frac{\\epsilon_2}{\\epsilon_1}=\\frac{l_2}{l_1}\\) ...(12.20)",
+      "\\(\\epsilon_2=\\frac{l_2}{l_1}\\times\\epsilon_1\\)",
+      "Applications of potentiometer: following are the applications of potentiometer.",
+      "1. Measurement of small e.m.f (upto 2V) and high e.m.f( say 250 V).",
+      "2. Comparison of e.m.f of two cells.",
+      "3. Measurement of resistance and current.",
+      "4. Calibration of ammeter and voltmeter."
+    ]
+  },
+  {
+    "id": "phys12-unit12-example12881",
+    "title": "Example 12.8 — current through standard resistance",
+    "kind": "lesson",
+    "pdfPage": 45,
+    "printedPage": 81,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXAMPLE 12.8",
+      "Using a Weston cadium cell of 1.0183 V and a standard resistance of 0.1 Ω a potentiometer was adjusted so that 1.0183 m was equivalent to the e.m.f. of the cell; when a certain direct current was flowing through the standard resistance, the voltage across it corresponds to 150 cm. What was the value of current?",
+      "GIVEN",
+      "Emf of the cell \\(\\epsilon_1=1.0183\\text{ V}\\); \\(l_1=1.0183\\text{ m}\\); \\(l_2=150\\text{ cm}=1.5\\text{ m}\\); resistance \\(R=0.1\\,\\Omega\\)",
+      "REQUIRED",
+      "Current \\(I_2=?\\)",
+      "SOLUTION",
+      "\\(\\frac{\\epsilon_2}{\\epsilon_1}=\\frac{l_2}{l_1}\\)",
+      "\\(\\epsilon_2=\\frac{l_2}{l_1}\\times\\epsilon_1=\\frac{1.5}{1.0183}\\times1.0183=1.5\\text{ V}\\)",
+      "Current flowing through the standard resistance,",
+      "\\(I_2=\\frac{\\epsilon_2}{R}=\\frac{1.5}{0.1}=15\\text{ A}\\)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-assignment12481",
+    "title": "Assignment 12.4 — unknown cell emf",
+    "kind": "lesson",
+    "pdfPage": 45,
+    "printedPage": 81,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "ASSIGNMENT 12.4",
+      "A potentiometer wire of length 1 m is connected to a driver cell of emf 3 V. When a cell of 1.5 V emf is in secondary circuit the balance point is found to be at 60 cm. On replacing this cell and using a cell of unknown emf the balance point shifts to 80 cm. Calculate unknown emf of the cell.",
+      "Answer (2 V)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-key-points82",
+    "title": "Key Points — Current Electricity",
+    "kind": "lesson",
+    "pdfPage": 46,
+    "printedPage": 82,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "KEY POINTS",
+      "Steady current : the continuous flow of free electrons.",
+      "Electric current : the net charge flowing through the cross-section area A per unit time. \\(I=\\frac{Q}{t}\\)",
+      "Ohm law : the magnitude of the current in metals is proportional to the applied voltage as long as the temperature of the conductor is kept constant. \\(V=IR\\)",
+      "Resistance: the opposition offered by the substance to the flow of free electrons.",
+      "Conductance (G): the reciprocal of resistance of a conductor.",
+      "Temperature co-efficient of resistance: increase in resistance per ohm original resistance per degree rise in temperature.",
+      "Thermistor: a heat sensitive device usually made of a semiconductor material whose resistance changes very rapidly with change of temperature.",
+      "Source of electromotive force: a device which converts non-electrical energy into electrical energy.",
+      "Electric power: the rate at which work is done in an electric circuit.",
+      "Kirchoff’s law: the algebraic sum of the currents meeting at a junction in an electrical circuit is zero."
+    ]
+  },
+  {
+    "id": "phys12-unit12-mcq1-8-83",
+    "title": "Multiple-choice exercise — questions 1–8",
+    "kind": "lesson",
+    "pdfPage": 46,
+    "printedPage": 83,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "EXERCISE — Choose the best possible answer",
+      "Three resistors of resistance R each are combined in various ways. Which of the following cannot be obtained?",
+      "A. \\(3R\\,\\Omega\\)",
+      "B. \\(\\frac{2R}{4}\\,\\Omega\\)",
+      "C. \\(\\frac{R}{3}\\,\\Omega\\)",
+      "D. \\(\\frac{2R}{3}\\,\\Omega\\)",
+      "When n resistances each of value r are connected in parallel, then resultant resistance is x. When these n resistances are connected in series, total resistance is",
+      "A. \\(nx\\)",
+      "B. \\(rnx\\)",
+      "C. \\(\\frac{x}{n}\\)",
+      "D. \\(n^2x\\)",
+      "Two bulbs marked 200 watt-250 volts and 100 watt-250 volts are joined in series to 250 volts supply. Power consumed in circuit is",
+      "A. 33 watt",
+      "B. 67 watt",
+      "C. 100 watt",
+      "D. 300 watt",
+      "Resistance of a wire is r ohms. The wire is stretched to double its length, then its resistance in ohms is",
+      "A. \\(r/2\\)",
+      "B. \\(4r\\)",
+      "C. \\(2r\\)",
+      "D. \\(r/4\\)",
+      "\\(10^6\\) electrons are moving through a wire per second, the current developed is",
+      "A. \\(1.6\\times10^{-19}\\text{ A}\\)",
+      "B. \\(1\\text{ A}\\)",
+      "C. \\(1.6\\times10^{-13}\\text{ A}\\)",
+      "D. \\(10^6\\text{ A}\\)",
+      "When a wire is stretched and its radius becomes r/2, then its resistance will be",
+      "A. \\(16R\\)",
+      "B. \\(4R\\)",
+      "C. \\(2R\\)",
+      "D. 0",
+      "How much voltage is required to make 2A flow through a resistance of 8Ω?",
+      "A. \\(16\\text{ A}\\,\\Omega^{-1}\\)",
+      "B. \\(16\\,\\Omega\\,\\text{A}^{-1}\\)",
+      "C. \\(16\\text{ A}\\,\\Omega\\)",
+      "D. \\(\\text{A}^{-1}\\,\\Omega^{-1}\\)",
+      "A wire of uniform cross-section, A length L and resistance R is cut into two equal parts. The resistivity of each part will be",
+      "A. doubled",
+      "B. halved",
+      "C. remains the same",
+      "D. one fourth"
+    ]
+  },
+  {
+    "id": "phys12-unit12-mcq9-14-84",
+    "title": "Multiple-choice exercise — questions 9–14",
+    "kind": "lesson",
+    "pdfPage": 47,
+    "printedPage": 84,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "The resistivity of two wires is \\(\\rho_1\\) and \\(\\rho_2\\) which are connected in series. If there dimensions are same then the equivalent resistivity of the combination will be",
+      "A. \\((\\rho_1+\\rho_2)\\)",
+      "B. \\(\\frac{1}{\\rho_1}+\\frac{1}{\\rho_2}\\)",
+      "C. \\(\\frac{\\rho_1+\\rho_2}{2}\\)",
+      "D. \\(\\frac{\\rho_1}{\\rho_2}\\)",
+      "The powers of two electric bulbs are 100w and 200 w. Which are connected to power supply of 220 V. The ratio of resistance of their filament will be,",
+      "A. 1:2",
+      "B. 2:1",
+      "C. 1:3",
+      "D. 4:3",
+      "Thermocouple is an arrangement of two different metals",
+      "a) To convert heat energy into electrical energy",
+      "b) To produce more heat",
+      "c) To convert heat energy into chemical energy",
+      "d) To convert electric energy into heat energy",
+      "In order to achieve high accuracy, the slide wire of a potentiometer should be",
+      "A. As long as possible",
+      "B. As short as possible",
+      "C. Very thin",
+      "D. Very thick",
+      "When a potentiometer is used for measurement of voltage of an unknown source, the power consumed in the circuit of the unknown source under null condition is",
+      "A. high",
+      "B. small",
+      "C. ideally zero",
+      "D. very high",
+      "In a Wheatstone bridge method, the bridge is said to be balanced, when the current through the galvanometer is",
+      "A. 1 A",
+      "B. 0 A",
+      "C. Maximum",
+      "D. Half of the maximum value"
+    ]
+  },
+  {
+    "id": "phys12-unit12-conceptual1-12-84-85",
+    "title": "Conceptual Questions 1–12",
+    "kind": "lesson",
+    "pdfPage": 47,
+    "printedPage": 84,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "CONCEPTUAL QUESTIONS",
+      "1. A heavy duty battery of a truck maintains a current of 3A for 24 hour. How much charge flows from the battery during this time?",
+      "2. While analysing a circuit the internal resistance of e.m.f. sources are ignored why?",
+      "3. If aluminum and copper wires of the same length have the same resistance, which has the larger diameter? Why?",
+      "4. Under what circumstances can the terminal P.D. of a battery exceed its e.m.f.?",
+      "5. What is the difference between an e.m.f. and a P.D.?",
+      "6. How the loop rule and junction rule are based on the conservation of energy principle?",
+      "7. Why rise in temperature of a conductor is accompanied by a rise in the resistance?",
+      "8. Does the direction of e.m.f. provided by a battery depend on the direction of current flow through the battery?",
+      "9. Voltages are always measured between two points. Why?",
+      "10. Is every emf a potential difference? Is every potential difference an emf?",
+      "11. How much charge flow in pocket calculator each minute when the current is 0.0001A?",
+      "12. When Wheatstone Bridge is balanced, then no current flows through the galvanometer, why?"
+    ]
+  },
+  {
+    "id": "phys12-unit12-comprehensive1-7-85",
+    "title": "Comprehensive Questions 1–7",
+    "kind": "lesson",
+    "pdfPage": 47,
+    "printedPage": 85,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "COMPREHENSIVE QUESTIONS",
+      "1. Describe the concept of steady state current as a flow of positive negative or both. Define the unit of current.",
+      "2. Explain the electronic current in a metallic wire as due to the drift of free electrons in the wire.",
+      "3. State Ohms law. Discuss its scope and validity (a) discuss resistivity and conductivity of a material (b) how does resistance change with temperature?",
+      "4. Explain the term: emf, internal resistance and terminal potential difference of a battery.",
+      "5. Explain the construction of rheostat. How is it used as a,(a) control the current,(b) as a potential divider?",
+      "6. What is wheat stone bridge? Explain with diagram the balancing, the principle and the working of this bridge?",
+      "7. What is a potentiometer? Explain its principle, construction, and working. What is the advantage of using potentiometer for measuring potential difference?"
+    ]
+  },
+  {
+    "id": "phys12-unit12-comprehensive8-9-86",
+    "title": "Comprehensive Questions 8–9",
+    "kind": "lesson",
+    "pdfPage": 48,
+    "printedPage": 86,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "COMPREHENSIVE QUESTIONS",
+      "8. What is thermocouple? Explain the working of thermocouple by drawing its diagram. By sketching curve explain the variation in thermoelectric e.m.f. with Temperature.",
+      "9. Why we use Kirchoff’s law for circuit problems solution. Explain its rules for circuit solution by giving proper example."
+    ]
+  },
+  {
+    "id": "phys12-unit12-numericals1-8-86",
+    "title": "Numerical Problems 1–8",
+    "kind": "lesson",
+    "pdfPage": 48,
+    "printedPage": 86,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "NUMERICAL PROBLEMS",
+      "1. A battery has an e.m.f. of 12.8V and supplies a current of 3.2A. What is the resistance of the circuit? How many coulombs leave the battery in 5minutes?",
+      "Answer (4Ω, 1200 C)",
+      "2. Two light bulbs designed for 120-V use are rated at 40W and 60W. Which light bulb has the greater filament resistance? Why?",
+      "Answer (240 Ω ,360Ω)",
+      "3. A carbon electrode has a resistance of 0.125Ω at 20 C°. The temperature co-efficient of carbon is -0.0005 at 20C°. What will be the resistance of the electrode at 85 C°?",
+      "Answer (0.12 Ω)",
+      "4. Calculate the resistance of wire 10 m long that has a diameter of 2mm and resistivity of \\(2.63\\times10^{-8}\\)Ω m.",
+      "Answer (0.0838 Ω)",
+      "5. A typical 12V automobile battery has a resistance of 0.012 Ω. What is the terminal voltage of this battery when the starter draws a current of 100A? calculate the R,\\(P_\\varepsilon\\), \\(P_R\\) and \\(P_r\\).",
+      "Answer (10.8 V, 0.108 Ω, 1200W, 120 W)",
+      "6. A 10 watt resister has a value of 120 Ω. What is the rated current through the resister?",
+      "Answer (0.2886 A )",
+      "7. A resistor of 50 Ω has a P. D. of 100V, D.C. across 1 hour. Calculate ( a). Power and ( b). Energy.",
+      "Answer ( (a) 200W, (b) 0.72 MJ )",
+      "8. Calculate the current through a single loop circuit if ℰ = 120V, R = 1000 Ω and internal resistance r = 0.01 Ω.",
+      "Answer (120 mA)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-numerical9-87",
+    "title": "Numerical Problem 9 — terminal voltage of two cells",
+    "kind": "lesson",
+    "pdfPage": 48,
+    "printedPage": 87,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "NUMERICAL PROBLEM 9",
+      "9. Find the terminal potential difference of each cell in circuit of figure.",
+      "Answer (23.8 V, 7.8 V)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-numerical10-87",
+    "title": "Numerical Problem 10 — ideal voltmeter circuit",
+    "kind": "lesson",
+    "pdfPage": 48,
+    "printedPage": 87,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "NUMERICAL PROBLEM 10",
+      "10. The voltmeter in the circuit at the right may be considered to be ideal. Values are, ℰ= 15.0 V; internal resistance, r = 5.00 Ω; R₁= 100 Ω; R₂= 300 Ω. Calculate the current in R₁.",
+      "Answer (0.01406A)"
+    ]
+  },
+  {
+    "id": "phys12-unit12-numerical11-87",
+    "title": "Numerical Problem 11 — balanced Wheatstone bridge",
+    "kind": "lesson",
+    "pdfPage": 48,
+    "printedPage": 87,
+    "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf",
+    "paragraphs": [
+      "NUMERICAL PROBLEM 11",
+      "11. Three arms of a wheatstone bridge are of 75Ω each. What is the resistance of the fourth arm ?",
+      "Answer ( 75Ω)"
+    ]
+  }
+]

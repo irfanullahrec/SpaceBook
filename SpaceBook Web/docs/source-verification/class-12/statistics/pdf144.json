@@ -1,0 +1,784 @@
+{
+ "pdfPage": 144,
+ "sections": [
+  {
+   "id": "stat12-p144-example-8-4",
+   "title": "Example 8.4 — χ² test: mathematical and general ability",
+   "headingUrdu": "مثال 8.4 — χ² جانچ: ریاضیاتی اور عمومی قابلیت",
+   "headingPashto": "بېلګه 8.4 — χ² ازموینه: ریاضیاتي او عمومي وړتیا",
+   "paras": [
+    {
+     "text": "Example 8.4",
+     "urdu": "مثال 8.4",
+     "pashto": "بېلګه 8.4"
+    },
+    {
+     "text": "Consider the data given in the following contingency table",
+     "urdu": "درج ذیل اتفاقی جدول میں دیے گئے مواد پر غور کریں",
+     "pashto": "په لاندې احتمالي جدول کې ورکړل شوي معلومات په پام کې ونیسئ"
+    },
+    {
+     "text": "Discuss the association between the two attributes i.e. mathematical ability and general ability.",
+     "urdu": "دو صفات یعنی ریاضیاتی قابلیت اور عمومی قابلیت کے درمیان تلازم پر بحث کریں۔",
+     "pashto": "د دوو صفتونو یعنې ریاضیاتي وړتیا او عمومي وړتیا ترمنځ پر تړاو بحث وکړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "i. $H_0$: There is no association between attributes.",
+     "urdu": "i. $H_0$: صفات کے درمیان کوئی تلازم نہیں۔",
+     "pashto": "i. $H_0$: د صفتونو ترمنځ هېڅ تړاو نشته."
+    },
+    {
+     "text": "$H_1$: There is association.",
+     "urdu": "$H_1$: تلازم موجود ہے۔",
+     "pashto": "$H_1$: تړاو شته."
+    },
+    {
+     "text": "ii. We choose $\\alpha=0.05$",
+     "urdu": "ii. ہم $\\alpha=0.05$ منتخب کرتے ہیں",
+     "pashto": "ii. موږ $\\alpha=0.05$ ټاکو"
+    },
+    {
+     "text": "iii. Test statistic to be used here is",
+     "urdu": "iii. یہاں استعمال ہونے والا جانچ کا شماریہ یہ ہے",
+     "pashto": "iii. دلته کارېدونکې د ازموینې احصاییه دا ده"
+    },
+    {
+     "text": "$$\\chi^2=\\sum_{i=1}^{r}\\sum_{j=1}^{c}\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}\\ \\text{with}\\ \\nu=(r-1)(c-1)\\ \\text{d.f}$$",
+     "urdu": "$$\\chi^2=\\sum_{i=1}^{r}\\sum_{j=1}^{c}\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}\\ \\text{with}\\ \\nu=(r-1)(c-1)\\ \\text{d.f}$$",
+     "pashto": "$$\\chi^2=\\sum_{i=1}^{r}\\sum_{j=1}^{c}\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}\\ \\text{with}\\ \\nu=(r-1)(c-1)\\ \\text{d.f}$$"
+    },
+    {
+     "text": "iv. Calculation",
+     "urdu": "iv. حساب",
+     "pashto": "iv. محاسبه"
+    },
+    {
+     "text": "$(O_{ij})$",
+     "urdu": "$(O_{ij})$",
+     "pashto": "$(O_{ij})$"
+    },
+    {
+     "text": "The expected frequencies are obtained by multiplying respective rows and columns totals and are divided by total sample size n as given in the table.",
+     "urdu": "متوقع تعدد متعلقہ قطاروں اور کالموں کے میزان کو ضرب دے کر اور کل نمونے کے سائز n سے تقسیم کر کے حاصل کیے جاتے ہیں جیسا کہ جدول میں دیا گیا ہے۔",
+     "pashto": "تمه شوي تکرارونه د اړوندو قطارونو او ستونونو د ټولټالونو په ضربولو او د نمونې په ټولې اندازې n وېشلو سره ترلاسه کېږي لکه څنګه چې په جدول کې ورکړل شوي."
+    },
+    {
+     "text": "$(e_{ij})$",
+     "urdu": "$(e_{ij})$",
+     "pashto": "$(e_{ij})$"
+    },
+    {
+     "text": "Now $\\chi^2$ test statistic value is computed as;",
+     "urdu": "اب $\\chi^2$ جانچ کے شماریے کی قیمت یوں معلوم کی جاتی ہے؛",
+     "pashto": "اوس د $\\chi^2$ د ازموینې احصاییې قیمت داسې محاسبه کېږي؛"
+    }
+   ],
+   "theory": "Example 8.4\n\nConsider the data given in the following contingency table\n\nDiscuss the association between the two attributes i.e. mathematical ability and general ability.\n\nSolution:\n\ni. H_0: There is no association between attributes.\n\nH_1: There is association.\n\nii. We choose \\alpha=0.05\n\niii. Test statistic to be used here is\n\n$\\chi^2=\\sum_{i=1}^{r}\\sum_{j=1}^{c}\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}\\ \\text{with}\\ \\nu=(r-1)(c-1)\\ \\text{d.f}$\n\niv. Calculation\n\n(O_{ij})\n\nThe expected frequencies are obtained by multiplying respective rows and columns totals and are divided by total sample size n as given in the table.\n\n(e_{ij})\n\nNow \\chi^2 test statistic value is computed as;",
+   "urdu": "مثال 8.4\n\nدرج ذیل اتفاقی جدول میں دیے گئے مواد پر غور کریں\n\nدو صفات یعنی ریاضیاتی قابلیت اور عمومی قابلیت کے درمیان تلازم پر بحث کریں۔\n\nحل:\n\ni. H_0: صفات کے درمیان کوئی تلازم نہیں۔\n\nH_1: تلازم موجود ہے۔\n\nii. ہم \\alpha=0.05 منتخب کرتے ہیں\n\niii. یہاں استعمال ہونے والا جانچ کا شماریہ یہ ہے\n\n$\\chi^2=\\sum_{i=1}^{r}\\sum_{j=1}^{c}\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}\\ \\text{with}\\ \\nu=(r-1)(c-1)\\ \\text{d.f}$\n\niv. حساب\n\n(O_{ij})\n\nمتوقع تعدد متعلقہ قطاروں اور کالموں کے میزان کو ضرب دے کر اور کل نمونے کے سائز n سے تقسیم کر کے حاصل کیے جاتے ہیں جیسا کہ جدول میں دیا گیا ہے۔\n\n(e_{ij})\n\nاب \\chi^2 جانچ کے شماریے کی قیمت یوں معلوم کی جاتی ہے؛",
+   "pashto": "بېلګه 8.4\n\nپه لاندې احتمالي جدول کې ورکړل شوي معلومات په پام کې ونیسئ\n\nد دوو صفتونو یعنې ریاضیاتي وړتیا او عمومي وړتیا ترمنځ پر تړاو بحث وکړئ.\n\nحل:\n\ni. H_0: د صفتونو ترمنځ هېڅ تړاو نشته.\n\nH_1: تړاو شته.\n\nii. موږ \\alpha=0.05 ټاکو\n\niii. دلته کارېدونکې د ازموینې احصاییه دا ده\n\n$\\chi^2=\\sum_{i=1}^{r}\\sum_{j=1}^{c}\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}\\ \\text{with}\\ \\nu=(r-1)(c-1)\\ \\text{d.f}$\n\niv. محاسبه\n\n(O_{ij})\n\nتمه شوي تکرارونه د اړوندو قطارونو او ستونونو د ټولټالونو په ضربولو او د نمونې په ټولې اندازې n وېشلو سره ترلاسه کېږي لکه څنګه چې په جدول کې ورکړل شوي.\n\n(e_{ij})\n\nاوس د \\chi^2 د ازموینې احصاییې قیمت داسې محاسبه کېږي؛",
+   "theoryUrdu": "مثال 8.4\n\nدرج ذیل اتفاقی جدول میں دیے گئے مواد پر غور کریں\n\nدو صفات یعنی ریاضیاتی قابلیت اور عمومی قابلیت کے درمیان تلازم پر بحث کریں۔\n\nحل:\n\ni. H_0: صفات کے درمیان کوئی تلازم نہیں۔\n\nH_1: تلازم موجود ہے۔\n\nii. ہم \\alpha=0.05 منتخب کرتے ہیں\n\niii. یہاں استعمال ہونے والا جانچ کا شماریہ یہ ہے\n\n$\\chi^2=\\sum_{i=1}^{r}\\sum_{j=1}^{c}\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}\\ \\text{with}\\ \\nu=(r-1)(c-1)\\ \\text{d.f}$\n\niv. حساب\n\n(O_{ij})\n\nمتوقع تعدد متعلقہ قطاروں اور کالموں کے میزان کو ضرب دے کر اور کل نمونے کے سائز n سے تقسیم کر کے حاصل کیے جاتے ہیں جیسا کہ جدول میں دیا گیا ہے۔\n\n(e_{ij})\n\nاب \\chi^2 جانچ کے شماریے کی قیمت یوں معلوم کی جاتی ہے؛",
+   "theoryPashto": "بېلګه 8.4\n\nپه لاندې احتمالي جدول کې ورکړل شوي معلومات په پام کې ونیسئ\n\nد دوو صفتونو یعنې ریاضیاتي وړتیا او عمومي وړتیا ترمنځ پر تړاو بحث وکړئ.\n\nحل:\n\ni. H_0: د صفتونو ترمنځ هېڅ تړاو نشته.\n\nH_1: تړاو شته.\n\nii. موږ \\alpha=0.05 ټاکو\n\niii. دلته کارېدونکې د ازموینې احصاییه دا ده\n\n$\\chi^2=\\sum_{i=1}^{r}\\sum_{j=1}^{c}\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}\\ \\text{with}\\ \\nu=(r-1)(c-1)\\ \\text{d.f}$\n\niv. محاسبه\n\n(O_{ij})\n\nتمه شوي تکرارونه د اړوندو قطارونو او ستونونو د ټولټالونو په ضربولو او د نمونې په ټولې اندازې n وېشلو سره ترلاسه کېږي لکه څنګه چې په جدول کې ورکړل شوي.\n\n(e_{ij})\n\nاوس د \\chi^2 د ازموینې احصاییې قیمت داسې محاسبه کېږي؛",
+   "content": "<p>Example 8.4</p><p>Consider the data given in the following contingency table</p><p>Discuss the association between the two attributes i.e. mathematical ability and general ability.</p><p>Solution:</p><p>i. H_0: There is no association between attributes.</p><p>H_1: There is association.</p><p>ii. We choose \\alpha=0.05</p><p>iii. Test statistic to be used here is</p><p>$\\chi^2=\\sum_{i=1}^{r}\\sum_{j=1}^{c}\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}\\ \\text{with}\\ \\nu=(r-1)(c-1)\\ \\text{d.f}$</p><p>iv. Calculation</p><p>(O_{ij})</p><p>The expected frequencies are obtained by multiplying respective rows and columns totals and are divided by total sample size n as given in the table.</p><p>(e_{ij})</p><p>Now \\chi^2 test statistic value is computed as;</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex8-4-data"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex8-4-obs"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex8-4-exp"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex8-4-chisq"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex8-4-data",
+     "headers": [
+      "General ability \\ Mathematical ability",
+      "Good $B_1$",
+      "Fair $B_2$",
+      "Poor $B_3$"
+     ],
+     "rows": [
+      [
+       "Good",
+       "44",
+       "82",
+       "44"
+      ],
+      [
+       "Fair",
+       "265",
+       "257",
+       "178"
+      ],
+      [
+       "Poor",
+       "41",
+       "91",
+       "98"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "عمومی قابلیت \\ ریاضیاتی قابلیت",
+        "اچھی $B_1$",
+        "مناسب $B_2$",
+        "کمزور $B_3$"
+       ],
+       "rows": [
+        [
+         "اچھی",
+         "44",
+         "82",
+         "44"
+        ],
+        [
+         "مناسب",
+         "265",
+         "257",
+         "178"
+        ],
+        [
+         "کمزور",
+         "41",
+         "91",
+         "98"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "عمومي وړتیا \\ ریاضیاتي وړتیا",
+        "ښه $B_1$",
+        "منځنۍ $B_2$",
+        "کمزورې $B_3$"
+       ],
+       "rows": [
+        [
+         "ښه",
+         "44",
+         "82",
+         "44"
+        ],
+        [
+         "منځنۍ",
+         "265",
+         "257",
+         "178"
+        ],
+        [
+         "کمزورې",
+         "41",
+         "91",
+         "98"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex8-4-obs",
+     "headers": [
+      "General ability \\ Mathematical ability",
+      "Good $B_1$",
+      "Fair $B_2$",
+      "Poor $B_3$",
+      "Total"
+     ],
+     "rows": [
+      [
+       "Good $A_1$",
+       "44",
+       "82",
+       "44",
+       "170"
+      ],
+      [
+       "Fair $A_2$",
+       "265",
+       "257",
+       "178",
+       "700"
+      ],
+      [
+       "Poor $A_3$",
+       "41",
+       "91",
+       "98",
+       "230"
+      ],
+      [
+       "Total",
+       "350",
+       "430",
+       "320",
+       "1100"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "عمومی قابلیت \\ ریاضیاتی قابلیت",
+        "اچھی $B_1$",
+        "مناسب $B_2$",
+        "کمزور $B_3$",
+        "میزان"
+       ],
+       "rows": [
+        [
+         "اچھی $A_1$",
+         "44",
+         "82",
+         "44",
+         "170"
+        ],
+        [
+         "مناسب $A_2$",
+         "265",
+         "257",
+         "178",
+         "700"
+        ],
+        [
+         "کمزور $A_3$",
+         "41",
+         "91",
+         "98",
+         "230"
+        ],
+        [
+         "میزان",
+         "350",
+         "430",
+         "320",
+         "1100"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "عمومي وړتیا \\ ریاضیاتي وړتیا",
+        "ښه $B_1$",
+        "منځنۍ $B_2$",
+        "کمزورې $B_3$",
+        "ټول"
+       ],
+       "rows": [
+        [
+         "ښه $A_1$",
+         "44",
+         "82",
+         "44",
+         "170"
+        ],
+        [
+         "منځنۍ $A_2$",
+         "265",
+         "257",
+         "178",
+         "700"
+        ],
+        [
+         "کمزورې $A_3$",
+         "41",
+         "91",
+         "98",
+         "230"
+        ],
+        [
+         "ټول",
+         "350",
+         "430",
+         "320",
+         "1100"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex8-4-exp",
+     "headers": [
+      "General ability \\ Mathematical ability",
+      "Good $B_1$",
+      "Fair $B_2$",
+      "Poor $B_3$",
+      "Total"
+     ],
+     "rows": [
+      [
+       "Good $A_1$",
+       "$\\frac{170\\times 350}{1100}=54.09$",
+       "$\\frac{170\\times 430}{1100}=66.45$",
+       "$\\frac{170\\times 320}{1100}=49.45$",
+       "169.99"
+      ],
+      [
+       "Fair $A_2$",
+       "$\\frac{700\\times 350}{1100}=222.73$",
+       "$\\frac{700\\times 430}{1100}=273.64$",
+       "$\\frac{700\\times 320}{1100}=203.63$",
+       "700.01"
+      ],
+      [
+       "Poor $A_3$",
+       "$\\frac{230\\times 350}{1100}=73.18$",
+       "$\\frac{230\\times 430}{1100}=89.91$",
+       "$\\frac{230\\times 320}{1100}=66.91$",
+       "230"
+      ],
+      [
+       "Total",
+       "350",
+       "430",
+       "320",
+       "1100"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "عمومی قابلیت \\ ریاضیاتی قابلیت",
+        "اچھی $B_1$",
+        "مناسب $B_2$",
+        "کمزور $B_3$",
+        "میزان"
+       ],
+       "rows": [
+        [
+         "اچھی $A_1$",
+         "$\\frac{170\\times 350}{1100}=54.09$",
+         "$\\frac{170\\times 430}{1100}=66.45$",
+         "$\\frac{170\\times 320}{1100}=49.45$",
+         "169.99"
+        ],
+        [
+         "مناسب $A_2$",
+         "$\\frac{700\\times 350}{1100}=222.73$",
+         "$\\frac{700\\times 430}{1100}=273.64$",
+         "$\\frac{700\\times 320}{1100}=203.63$",
+         "700.01"
+        ],
+        [
+         "کمزور $A_3$",
+         "$\\frac{230\\times 350}{1100}=73.18$",
+         "$\\frac{230\\times 430}{1100}=89.91$",
+         "$\\frac{230\\times 320}{1100}=66.91$",
+         "230"
+        ],
+        [
+         "میزان",
+         "350",
+         "430",
+         "320",
+         "1100"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "عمومي وړتیا \\ ریاضیاتي وړتیا",
+        "ښه $B_1$",
+        "منځنۍ $B_2$",
+        "کمزورې $B_3$",
+        "ټول"
+       ],
+       "rows": [
+        [
+         "ښه $A_1$",
+         "$\\frac{170\\times 350}{1100}=54.09$",
+         "$\\frac{170\\times 430}{1100}=66.45$",
+         "$\\frac{170\\times 320}{1100}=49.45$",
+         "169.99"
+        ],
+        [
+         "منځنۍ $A_2$",
+         "$\\frac{700\\times 350}{1100}=222.73$",
+         "$\\frac{700\\times 430}{1100}=273.64$",
+         "$\\frac{700\\times 320}{1100}=203.63$",
+         "700.01"
+        ],
+        [
+         "کمزورې $A_3$",
+         "$\\frac{230\\times 350}{1100}=73.18$",
+         "$\\frac{230\\times 430}{1100}=89.91$",
+         "$\\frac{230\\times 320}{1100}=66.91$",
+         "230"
+        ],
+        [
+         "ټول",
+         "350",
+         "430",
+         "320",
+         "1100"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex8-4-chisq",
+     "headers": [
+      "$O_{ij}$",
+      "$e_{ij}$",
+      "$(O_{ij}-e_{ij})$",
+      "$(O_{ij}-e_{ij})^2$",
+      "$\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}$"
+     ],
+     "rows": [
+      [
+       "44",
+       "54.09",
+       "−10.09",
+       "101.81",
+       "1.882"
+      ],
+      [
+       "265",
+       "222.73",
+       "42.27",
+       "1786.75",
+       "8.022"
+      ],
+      [
+       "41",
+       "73.18",
+       "−32.18",
+       "1035.55",
+       "14.151"
+      ],
+      [
+       "82",
+       "66.45",
+       "15.55",
+       "241.80",
+       "3.639"
+      ],
+      [
+       "257",
+       "273.64",
+       "−16.64",
+       "276.8896",
+       "1.012"
+      ],
+      [
+       "91",
+       "89.91",
+       "1.09",
+       "1.188",
+       "0.013"
+      ],
+      [
+       "44",
+       "49.45",
+       "−5.45",
+       "29.70",
+       "0.601"
+      ],
+      [
+       "178",
+       "203.63",
+       "−25.64",
+       "657.41",
+       "3.228"
+      ],
+      [
+       "98",
+       "66.91",
+       "31.09",
+       "966.59",
+       "14.446"
+      ],
+      [
+       "1100",
+       "1100",
+       "-",
+       "-",
+       "$\\chi^2=46.994$"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$O_{ij}$",
+        "$e_{ij}$",
+        "$(O_{ij}-e_{ij})$",
+        "$(O_{ij}-e_{ij})^2$",
+        "$\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}$"
+       ],
+       "rows": [
+        [
+         "44",
+         "54.09",
+         "−10.09",
+         "101.81",
+         "1.882"
+        ],
+        [
+         "265",
+         "222.73",
+         "42.27",
+         "1786.75",
+         "8.022"
+        ],
+        [
+         "41",
+         "73.18",
+         "−32.18",
+         "1035.55",
+         "14.151"
+        ],
+        [
+         "82",
+         "66.45",
+         "15.55",
+         "241.80",
+         "3.639"
+        ],
+        [
+         "257",
+         "273.64",
+         "−16.64",
+         "276.8896",
+         "1.012"
+        ],
+        [
+         "91",
+         "89.91",
+         "1.09",
+         "1.188",
+         "0.013"
+        ],
+        [
+         "44",
+         "49.45",
+         "−5.45",
+         "29.70",
+         "0.601"
+        ],
+        [
+         "178",
+         "203.63",
+         "−25.64",
+         "657.41",
+         "3.228"
+        ],
+        [
+         "98",
+         "66.91",
+         "31.09",
+         "966.59",
+         "14.446"
+        ],
+        [
+         "1100",
+         "1100",
+         "-",
+         "-",
+         "$\\chi^2=46.994$"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$O_{ij}$",
+        "$e_{ij}$",
+        "$(O_{ij}-e_{ij})$",
+        "$(O_{ij}-e_{ij})^2$",
+        "$\\frac{(O_{ij}-e_{ij})^2}{e_{ij}}$"
+       ],
+       "rows": [
+        [
+         "44",
+         "54.09",
+         "−10.09",
+         "101.81",
+         "1.882"
+        ],
+        [
+         "265",
+         "222.73",
+         "42.27",
+         "1786.75",
+         "8.022"
+        ],
+        [
+         "41",
+         "73.18",
+         "−32.18",
+         "1035.55",
+         "14.151"
+        ],
+        [
+         "82",
+         "66.45",
+         "15.55",
+         "241.80",
+         "3.639"
+        ],
+        [
+         "257",
+         "273.64",
+         "−16.64",
+         "276.8896",
+         "1.012"
+        ],
+        [
+         "91",
+         "89.91",
+         "1.09",
+         "1.188",
+         "0.013"
+        ],
+        [
+         "44",
+         "49.45",
+         "−5.45",
+         "29.70",
+         "0.601"
+        ],
+        [
+         "178",
+         "203.63",
+         "−25.64",
+         "657.41",
+         "3.228"
+        ],
+        [
+         "98",
+         "66.91",
+         "31.09",
+         "966.59",
+         "14.446"
+        ],
+        [
+         "1100",
+         "1100",
+         "-",
+         "-",
+         "$\\chi^2=46.994$"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 144,
+     "printedPages": [
+      279,
+      280
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p280-expected-203",
+   "unit": 8,
+   "printedPage": 280,
+   "description": "Example 8.4 prints e₂₃ = 700×320/1100 = 203.63 (computes to 203.64) and O−e = −25.64 beside it; row totals printed 169.99 and 700.01 from rounding. Printed values retained; χ² = 46.994 verified."
+  }
+ ],
+ "completeUnits": []
+}

@@ -1,0 +1,90 @@
+{
+ "pdfPage": 74,
+ "sections": [
+  {
+   "id": "cs12-u4-text-14",
+   "title": "Unit 4 text (14)",
+   "headingUrdu": "یونٹ 4 — متن (۱۴)",
+   "headingPashto": "۴ څپرکی — متن (۱۴)",
+   "paras": [
+    {
+     "text": "Consider another example:",
+     "urdu": "ایک اور مثال پر غور کریں:",
+     "pashto": "بلې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "// nested for loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nfor (int i=1; i<=5; i++) //outer loop\n{\nfor (int j=1; j<=i; j++) //inner loop\ncout << \"$\";\ncout << endl;\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "// nested for loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nfor (int i=1; i<=5; i++) //outer loop\n{\nfor (int j=1; j<=i; j++) //inner loop\ncout << \"$\";\ncout << endl;\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "// nested for loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nfor (int i=1; i<=5; i++) //outer loop\n{\nfor (int j=1; j<=i; j++) //inner loop\ncout << \"$\";\ncout << endl;\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "$\n$$\n$$$\n$$$$\n$$$$$",
+     "urdu": "$\n$$\n$$$\n$$$$\n$$$$$",
+     "pashto": "$\n$$\n$$$\n$$$$\n$$$$$",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Consider another example:\n\n// nested for loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nfor (int i=1; i<=5; i++) //outer loop\n{\nfor (int j=1; j<=i; j++) //inner loop\ncout << \"$\";\ncout << endl;\n}\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\n\n\n$\n$$\n$$$$",
+   "urdu": "ایک اور مثال پر غور کریں:\n\n// nested for loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nfor (int i=1; i<=5; i++) //outer loop\n{\nfor (int j=1; j<=i; j++) //inner loop\ncout << \"$\";\ncout << endl;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n\n\n$\n$$\n$$$$",
+   "pashto": "بلې بېلګې ته پام وکړئ:\n\n// nested for loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nfor (int i=1; i<=5; i++) //outer loop\n{\nfor (int j=1; j<=i; j++) //inner loop\ncout << \"$\";\ncout << endl;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n\n\n$\n$$\n$$$$",
+   "theoryUrdu": "ایک اور مثال پر غور کریں:\n\n// nested for loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nfor (int i=1; i<=5; i++) //outer loop\n{\nfor (int j=1; j<=i; j++) //inner loop\ncout << \"$\";\ncout << endl;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n\n\n$\n$$\n$$$$",
+   "theoryPashto": "بلې بېلګې ته پام وکړئ:\n\n// nested for loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nfor (int i=1; i<=5; i++) //outer loop\n{\nfor (int j=1; j<=i; j++) //inner loop\ncout << \"$\";\ncout << endl;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n\n\n$\n$$\n$$$$",
+   "content": "<p>Consider another example:</p><p>// nested for loop\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nfor (int i=1; i&lt;=5; i++) //outer loop\n{\nfor (int j=1; j&lt;=i; j++) //inner loop\ncout &lt;&lt; &quot;$&quot;;\ncout &lt;&lt; endl;\n}\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>\n\n$\n$$\n$$$$</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 74,
+     "printedPages": [
+      136,
+      137
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (14)",
+   "sourcePageLabel": "PDF 74 · p. 136–137",
+   "sourceNote": "The top of p.136 (end of the nested while program and its output) is recorded with PDF73.",
+   "unit": 4
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

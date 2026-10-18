@@ -1,0 +1,185 @@
+{
+ "pdfPage": 67,
+ "sections": [
+  {
+   "id": "cs12-u4-text-7",
+   "title": "Unit 4 text (7)",
+   "headingUrdu": "یونٹ 4 — متن (۷)",
+   "headingPashto": "۴ څپرکی — متن (۷)",
+   "paras": [
+    {
+     "text": "4.1.3 break statement and exit() function",
+     "urdu": "4.1.3 break بیان اور exit() فنکشن",
+     "pashto": "۴.۱.۳ break بیان او exit() فنکشن"
+    },
+    {
+     "text": "Sometimes a programmer needs to make use of such statements in a program that are responsible for the jump from one statement of the program to another statement. The most commonly used jump statements of C++ language are: goto, break, and continue. Similarly, the execution of a running program is also sometime needed to be halt and to jump out of a program. A function used to accomplish this is exit(). The following sections discuss the use of break statement and exit () function with the help of examples.",
+     "urdu": "بعض اوقات پروگرامر کو پروگرام میں ایسے بیانات استعمال کرنے پڑتے ہیں جو پروگرام کے ایک بیان سے دوسرے بیان پر چھلانگ کے ذمہ دار ہوں۔ C++ زبان کے سب سے زیادہ استعمال ہونے والے جمپ بیانات goto، break اور continue ہیں۔ اسی طرح بعض اوقات چلتے ہوئے پروگرام کو روکنے اور پروگرام سے باہر نکلنے کی بھی ضرورت ہوتی ہے۔ اس کام کے لیے استعمال ہونے والا فنکشن exit() ہے۔ درج ذیل حصے مثالوں کی مدد سے break بیان اور exit() فنکشن کے استعمال پر بحث کرتے ہیں۔",
+     "pashto": "کله کله پروګرام جوړوونکی اړتیا لري چې په پروګرام کې داسې بیانونه وکاروي چې د پروګرام له یوه بیان څخه بل ته د ټوپ مسؤول وي. د C++ ژبې تر ټولو ډېر کارېدونکي د ټوپ بیانونه goto، break او continue دي. همداراز کله کله د روان پروګرام د اجرا درول او له پروګرام وتل هم اړین وي. د دې کار لپاره کارېدونکی فنکشن exit() دی. لاندې برخې د بېلګو په مرسته د break بیان او exit() فنکشن کارونه بحث کوي."
+    },
+    {
+     "text": "a. break statement",
+     "urdu": "a. break بیان",
+     "pashto": "a. break بیان"
+    },
+    {
+     "text": "break statement is used to make jump from one part of a program to another. In C++, break statement is used in two situations: one in switch-default structure to properly end a case clause and another in loops structure to leave a loop. The use of break in switch-default structure has already been discussed in Section 4.1.3. Its use in loops will be discussed in Section 4.2 with the help of examples.",
+     "urdu": "break بیان پروگرام کے ایک حصے سے دوسرے حصے میں چھلانگ لگانے کے لیے استعمال ہوتا ہے۔ C++ میں break بیان دو حالتوں میں استعمال ہوتا ہے: ایک switch-default ساخت میں case شق کو درست طریقے سے ختم کرنے کے لیے اور دوسرا لوپس کی ساخت میں لوپ سے نکلنے کے لیے۔ switch-default ساخت میں break کے استعمال پر حصہ 4.1.3 میں بحث ہو چکی ہے۔ لوپس میں اس کے استعمال پر حصہ 4.2 میں مثالوں کی مدد سے بحث ہوگی۔",
+     "pashto": "break بیان د پروګرام له یوې برخې بلې ته د ټوپ لپاره کارول کېږي. په C++ کې break بیان په دوو حالتونو کې کارول کېږي: یو په switch-default جوړښت کې د case برخې د سم پای ته رسولو لپاره، او بل د حلقو په جوړښت کې د حلقې د پرېښودلو لپاره. په switch-default جوړښت کې د break کارونه په ۴.۱.۳ برخه کې بحث شوې. په حلقو کې یې کارونه به په ۴.۲ برخه کې د بېلګو په مرسته بحث شي."
+    },
+    {
+     "text": "b. exit () function",
+     "urdu": "b. exit () فنکشن",
+     "pashto": "b. exit () فنکشن"
+    },
+    {
+     "text": "This function tells the program to quit running immediately. This function is responsible for the immediate termination of a C++ program. It is defined in the stdlib header file. The exit function takes an integer, usually 0, as a parameter that is returned to the operating system as an exit code and tells it that the program has terminated normally.",
+     "urdu": "یہ فنکشن پروگرام کو فوراً چلنا بند کرنے کا کہتا ہے۔ یہ فنکشن C++ پروگرام کے فوری خاتمے کا ذمہ دار ہے۔ یہ stdlib ہیڈر فائل میں متعین ہے۔ exit فنکشن ایک صحیح عدد، عموماً 0، بطور پیرامیٹر لیتا ہے جو ایگزٹ کوڈ کے طور پر آپریٹنگ سسٹم کو واپس کیا جاتا ہے اور اسے بتاتا ہے کہ پروگرام معمول کے مطابق ختم ہوا۔",
+     "pashto": "دا فنکشن پروګرام ته وايي چې سمدستي چلېدل ودروي. دا فنکشن د C++ پروګرام د سمدستي پای ته رسولو مسؤول دی. په stdlib سرلیک فایل کې تعریف شوی. د exit فنکشن یو صحیح عدد، عموماً 0، د پارامېټر په توګه اخلي چې د وتو کوډ په توګه عملیاتي سیسټم ته بېرته ورکول کېږي او ورته وايي چې پروګرام په عادي ډول پای ته رسېدلی."
+    },
+    {
+     "text": "Consider the following example for demonstrating the use of exit () function.",
+     "urdu": "exit() فنکشن کے استعمال کی وضاحت کے لیے درج ذیل مثال پر غور کریں۔",
+     "pashto": "د exit() فنکشن د کارونې د ښودلو لپاره لاندې بېلګې ته پام وکړئ."
+    },
+    {
+     "text": "#include<conio.h>\n#include <stdlib.h>\n#include <iostream.h>\nint main()\n{\ncout << \"Statement before exit() function\";\nexit(0);\n//terminate and return 0 to the operating system\n// The following statements never execute\ncout << \"Statement after exit() function\";\ngetch();\nreturn 0;\n}",
+     "urdu": "#include<conio.h>\n#include <stdlib.h>\n#include <iostream.h>\nint main()\n{\ncout << \"Statement before exit() function\";\nexit(0);\n//terminate and return 0 to the operating system\n// The following statements never execute\ncout << \"Statement after exit() function\";\ngetch();\nreturn 0;\n}",
+     "pashto": "#include<conio.h>\n#include <stdlib.h>\n#include <iostream.h>\nint main()\n{\ncout << \"Statement before exit() function\";\nexit(0);\n//terminate and return 0 to the operating system\n// The following statements never execute\ncout << \"Statement after exit() function\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Statement before exit() function",
+     "urdu": "Statement before exit() function",
+     "pashto": "Statement before exit() function",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "4.2 LOOPS",
+     "urdu": "4.2 لوپس",
+     "pashto": "۴.۲ حلقې (LOOPS)"
+    },
+    {
+     "text": "Loops are used to repeat a statement or group of statements a certain number of times until the condition is true. These are also called repetitive or iterative statements.",
+     "urdu": "لوپس کسی بیان یا بیانات کے گروپ کو شرط درست رہنے تک ایک مخصوص تعداد میں دہرانے کے لیے استعمال ہوتے ہیں۔ انھیں تکراری بیانات بھی کہتے ہیں۔",
+     "pashto": "حلقې د یوه بیان یا د بیانونو د ډلې د یو ټاکلي شمېر تکرار لپاره تر هغه کارول کېږي چې شرط true وي. تکراري بیانونه هم بلل کېږي."
+    }
+   ],
+   "theory": "4.1.3 break statement and exit() function\n\nSometimes a programmer needs to make use of such statements in a program that are responsible for the jump from one statement of the program to another statement. The most commonly used jump statements of C++ language are: goto, break, and continue. Similarly, the execution of a running program is also sometime needed to be halt and to jump out of a program. A function used to accomplish this is exit(). The following sections discuss the use of break statement and exit () function with the help of examples.\n\na. break statement\n\nbreak statement is used to make jump from one part of a program to another. In C++, break statement is used in two situations: one in switch-default structure to properly end a case clause and another in loops structure to leave a loop. The use of break in switch-default structure has already been discussed in Section 4.1.3. Its use in loops will be discussed in Section 4.2 with the help of examples.\n\nb. exit () function\n\nThis function tells the program to quit running immediately. This function is responsible for the immediate termination of a C++ program. It is defined in the stdlib header file. The exit function takes an integer, usually 0, as a parameter that is returned to the operating system as an exit code and tells it that the program has terminated normally.\n\nConsider the following example for demonstrating the use of exit () function.\n\n#include<conio.h>\n#include <stdlib.h>\n#include <iostream.h>\nint main()\n{\ncout << \"Statement before exit() function\";\nexit(0);\n//terminate and return 0 to the operating system\n// The following statements never execute\ncout << \"Statement after exit() function\";\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nStatement before exit() function\n\n4.2 LOOPS\n\nLoops are used to repeat a statement or group of statements a certain number of times until the condition is true. These are also called repetitive or iterative statements.",
+   "urdu": "4.1.3 break بیان اور exit() فنکشن\n\nبعض اوقات پروگرامر کو پروگرام میں ایسے بیانات استعمال کرنے پڑتے ہیں جو پروگرام کے ایک بیان سے دوسرے بیان پر چھلانگ کے ذمہ دار ہوں۔ C++ زبان کے سب سے زیادہ استعمال ہونے والے جمپ بیانات goto، break اور continue ہیں۔ اسی طرح بعض اوقات چلتے ہوئے پروگرام کو روکنے اور پروگرام سے باہر نکلنے کی بھی ضرورت ہوتی ہے۔ اس کام کے لیے استعمال ہونے والا فنکشن exit() ہے۔ درج ذیل حصے مثالوں کی مدد سے break بیان اور exit() فنکشن کے استعمال پر بحث کرتے ہیں۔\n\na. break بیان\n\nbreak بیان پروگرام کے ایک حصے سے دوسرے حصے میں چھلانگ لگانے کے لیے استعمال ہوتا ہے۔ C++ میں break بیان دو حالتوں میں استعمال ہوتا ہے: ایک switch-default ساخت میں case شق کو درست طریقے سے ختم کرنے کے لیے اور دوسرا لوپس کی ساخت میں لوپ سے نکلنے کے لیے۔ switch-default ساخت میں break کے استعمال پر حصہ 4.1.3 میں بحث ہو چکی ہے۔ لوپس میں اس کے استعمال پر حصہ 4.2 میں مثالوں کی مدد سے بحث ہوگی۔\n\nb. exit () فنکشن\n\nیہ فنکشن پروگرام کو فوراً چلنا بند کرنے کا کہتا ہے۔ یہ فنکشن C++ پروگرام کے فوری خاتمے کا ذمہ دار ہے۔ یہ stdlib ہیڈر فائل میں متعین ہے۔ exit فنکشن ایک صحیح عدد، عموماً 0، بطور پیرامیٹر لیتا ہے جو ایگزٹ کوڈ کے طور پر آپریٹنگ سسٹم کو واپس کیا جاتا ہے اور اسے بتاتا ہے کہ پروگرام معمول کے مطابق ختم ہوا۔\n\nexit() فنکشن کے استعمال کی وضاحت کے لیے درج ذیل مثال پر غور کریں۔\n\n#include<conio.h>\n#include <stdlib.h>\n#include <iostream.h>\nint main()\n{\ncout << \"Statement before exit() function\";\nexit(0);\n//terminate and return 0 to the operating system\n// The following statements never execute\ncout << \"Statement after exit() function\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nStatement before exit() function\n\n4.2 لوپس\n\nلوپس کسی بیان یا بیانات کے گروپ کو شرط درست رہنے تک ایک مخصوص تعداد میں دہرانے کے لیے استعمال ہوتے ہیں۔ انھیں تکراری بیانات بھی کہتے ہیں۔",
+   "pashto": "۴.۱.۳ break بیان او exit() فنکشن\n\nکله کله پروګرام جوړوونکی اړتیا لري چې په پروګرام کې داسې بیانونه وکاروي چې د پروګرام له یوه بیان څخه بل ته د ټوپ مسؤول وي. د C++ ژبې تر ټولو ډېر کارېدونکي د ټوپ بیانونه goto، break او continue دي. همداراز کله کله د روان پروګرام د اجرا درول او له پروګرام وتل هم اړین وي. د دې کار لپاره کارېدونکی فنکشن exit() دی. لاندې برخې د بېلګو په مرسته د break بیان او exit() فنکشن کارونه بحث کوي.\n\na. break بیان\n\nbreak بیان د پروګرام له یوې برخې بلې ته د ټوپ لپاره کارول کېږي. په C++ کې break بیان په دوو حالتونو کې کارول کېږي: یو په switch-default جوړښت کې د case برخې د سم پای ته رسولو لپاره، او بل د حلقو په جوړښت کې د حلقې د پرېښودلو لپاره. په switch-default جوړښت کې د break کارونه په ۴.۱.۳ برخه کې بحث شوې. په حلقو کې یې کارونه به په ۴.۲ برخه کې د بېلګو په مرسته بحث شي.\n\nb. exit () فنکشن\n\nدا فنکشن پروګرام ته وايي چې سمدستي چلېدل ودروي. دا فنکشن د C++ پروګرام د سمدستي پای ته رسولو مسؤول دی. په stdlib سرلیک فایل کې تعریف شوی. د exit فنکشن یو صحیح عدد، عموماً 0، د پارامېټر په توګه اخلي چې د وتو کوډ په توګه عملیاتي سیسټم ته بېرته ورکول کېږي او ورته وايي چې پروګرام په عادي ډول پای ته رسېدلی.\n\nد exit() فنکشن د کارونې د ښودلو لپاره لاندې بېلګې ته پام وکړئ.\n\n#include<conio.h>\n#include <stdlib.h>\n#include <iostream.h>\nint main()\n{\ncout << \"Statement before exit() function\";\nexit(0);\n//terminate and return 0 to the operating system\n// The following statements never execute\ncout << \"Statement after exit() function\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nStatement before exit() function\n\n۴.۲ حلقې (LOOPS)\n\nحلقې د یوه بیان یا د بیانونو د ډلې د یو ټاکلي شمېر تکرار لپاره تر هغه کارول کېږي چې شرط true وي. تکراري بیانونه هم بلل کېږي.",
+   "theoryUrdu": "4.1.3 break بیان اور exit() فنکشن\n\nبعض اوقات پروگرامر کو پروگرام میں ایسے بیانات استعمال کرنے پڑتے ہیں جو پروگرام کے ایک بیان سے دوسرے بیان پر چھلانگ کے ذمہ دار ہوں۔ C++ زبان کے سب سے زیادہ استعمال ہونے والے جمپ بیانات goto، break اور continue ہیں۔ اسی طرح بعض اوقات چلتے ہوئے پروگرام کو روکنے اور پروگرام سے باہر نکلنے کی بھی ضرورت ہوتی ہے۔ اس کام کے لیے استعمال ہونے والا فنکشن exit() ہے۔ درج ذیل حصے مثالوں کی مدد سے break بیان اور exit() فنکشن کے استعمال پر بحث کرتے ہیں۔\n\na. break بیان\n\nbreak بیان پروگرام کے ایک حصے سے دوسرے حصے میں چھلانگ لگانے کے لیے استعمال ہوتا ہے۔ C++ میں break بیان دو حالتوں میں استعمال ہوتا ہے: ایک switch-default ساخت میں case شق کو درست طریقے سے ختم کرنے کے لیے اور دوسرا لوپس کی ساخت میں لوپ سے نکلنے کے لیے۔ switch-default ساخت میں break کے استعمال پر حصہ 4.1.3 میں بحث ہو چکی ہے۔ لوپس میں اس کے استعمال پر حصہ 4.2 میں مثالوں کی مدد سے بحث ہوگی۔\n\nb. exit () فنکشن\n\nیہ فنکشن پروگرام کو فوراً چلنا بند کرنے کا کہتا ہے۔ یہ فنکشن C++ پروگرام کے فوری خاتمے کا ذمہ دار ہے۔ یہ stdlib ہیڈر فائل میں متعین ہے۔ exit فنکشن ایک صحیح عدد، عموماً 0، بطور پیرامیٹر لیتا ہے جو ایگزٹ کوڈ کے طور پر آپریٹنگ سسٹم کو واپس کیا جاتا ہے اور اسے بتاتا ہے کہ پروگرام معمول کے مطابق ختم ہوا۔\n\nexit() فنکشن کے استعمال کی وضاحت کے لیے درج ذیل مثال پر غور کریں۔\n\n#include<conio.h>\n#include <stdlib.h>\n#include <iostream.h>\nint main()\n{\ncout << \"Statement before exit() function\";\nexit(0);\n//terminate and return 0 to the operating system\n// The following statements never execute\ncout << \"Statement after exit() function\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nStatement before exit() function\n\n4.2 لوپس\n\nلوپس کسی بیان یا بیانات کے گروپ کو شرط درست رہنے تک ایک مخصوص تعداد میں دہرانے کے لیے استعمال ہوتے ہیں۔ انھیں تکراری بیانات بھی کہتے ہیں۔",
+   "theoryPashto": "۴.۱.۳ break بیان او exit() فنکشن\n\nکله کله پروګرام جوړوونکی اړتیا لري چې په پروګرام کې داسې بیانونه وکاروي چې د پروګرام له یوه بیان څخه بل ته د ټوپ مسؤول وي. د C++ ژبې تر ټولو ډېر کارېدونکي د ټوپ بیانونه goto، break او continue دي. همداراز کله کله د روان پروګرام د اجرا درول او له پروګرام وتل هم اړین وي. د دې کار لپاره کارېدونکی فنکشن exit() دی. لاندې برخې د بېلګو په مرسته د break بیان او exit() فنکشن کارونه بحث کوي.\n\na. break بیان\n\nbreak بیان د پروګرام له یوې برخې بلې ته د ټوپ لپاره کارول کېږي. په C++ کې break بیان په دوو حالتونو کې کارول کېږي: یو په switch-default جوړښت کې د case برخې د سم پای ته رسولو لپاره، او بل د حلقو په جوړښت کې د حلقې د پرېښودلو لپاره. په switch-default جوړښت کې د break کارونه په ۴.۱.۳ برخه کې بحث شوې. په حلقو کې یې کارونه به په ۴.۲ برخه کې د بېلګو په مرسته بحث شي.\n\nb. exit () فنکشن\n\nدا فنکشن پروګرام ته وايي چې سمدستي چلېدل ودروي. دا فنکشن د C++ پروګرام د سمدستي پای ته رسولو مسؤول دی. په stdlib سرلیک فایل کې تعریف شوی. د exit فنکشن یو صحیح عدد، عموماً 0، د پارامېټر په توګه اخلي چې د وتو کوډ په توګه عملیاتي سیسټم ته بېرته ورکول کېږي او ورته وايي چې پروګرام په عادي ډول پای ته رسېدلی.\n\nد exit() فنکشن د کارونې د ښودلو لپاره لاندې بېلګې ته پام وکړئ.\n\n#include<conio.h>\n#include <stdlib.h>\n#include <iostream.h>\nint main()\n{\ncout << \"Statement before exit() function\";\nexit(0);\n//terminate and return 0 to the operating system\n// The following statements never execute\ncout << \"Statement after exit() function\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nStatement before exit() function\n\n۴.۲ حلقې (LOOPS)\n\nحلقې د یوه بیان یا د بیانونو د ډلې د یو ټاکلي شمېر تکرار لپاره تر هغه کارول کېږي چې شرط true وي. تکراري بیانونه هم بلل کېږي.",
+   "content": "<p>4.1.3 break statement and exit() function</p><p>Sometimes a programmer needs to make use of such statements in a program that are responsible for the jump from one statement of the program to another statement. The most commonly used jump statements of C++ language are: goto, break, and continue. Similarly, the execution of a running program is also sometime needed to be halt and to jump out of a program. A function used to accomplish this is exit(). The following sections discuss the use of break statement and exit () function with the help of examples.</p><p>a. break statement</p><p>break statement is used to make jump from one part of a program to another. In C++, break statement is used in two situations: one in switch-default structure to properly end a case clause and another in loops structure to leave a loop. The use of break in switch-default structure has already been discussed in Section 4.1.3. Its use in loops will be discussed in Section 4.2 with the help of examples.</p><p>b. exit () function</p><p>This function tells the program to quit running immediately. This function is responsible for the immediate termination of a C++ program. It is defined in the stdlib header file. The exit function takes an integer, usually 0, as a parameter that is returned to the operating system as an exit code and tells it that the program has terminated normally.</p><p>Consider the following example for demonstrating the use of exit () function.</p><p>#include&lt;conio.h&gt;\n#include &lt;stdlib.h&gt;\n#include &lt;iostream.h&gt;\nint main()\n{\ncout &lt;&lt; &quot;Statement before exit() function&quot;;\nexit(0);\n//terminate and return 0 to the operating system\n// The following statements never execute\ncout &lt;&lt; &quot;Statement after exit() function&quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Statement before exit() function</p><p>4.2 LOOPS</p><p>Loops are used to repeat a statement or group of statements a certain number of times until the condition is true. These are also called repetitive or iterative statements.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 67,
+     "printedPages": [
+      122,
+      123
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (7)",
+   "sourcePageLabel": "PDF 67 · p. 122–123",
+   "sourceNote": "The top of p.122 (end of the grades program and its output) is recorded with PDF66.",
+   "unit": 4
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf067",
+   "unit": 4,
+   "printedPage": 122,
+   "description": "p.122 says break in switch was discussed in “Section 4.1.3” (it is in 4.1.1 c) and prints “sometime needed to be halt”; the exit() listing prints the cout strings with curly quotes. Retained as printed (quotes normalised)."
+  }
+ ],
+ "completeUnits": []
+}

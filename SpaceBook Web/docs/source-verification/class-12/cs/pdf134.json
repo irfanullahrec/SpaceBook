@@ -1,0 +1,454 @@
+{
+ "pdfPage": 134,
+ "sections": [
+  {
+   "id": "cs12-u8-exercise",
+   "title": "Unit 8 exercise",
+   "headingUrdu": "یونٹ 8: مشق",
+   "headingPashto": "۸ څپرکی: تمرین",
+   "paras": [
+    {
+     "text": "Exercise",
+     "urdu": "مشق",
+     "pashto": "تمرین"
+    },
+    {
+     "text": "Q.1 Fill in the Blanks.",
+     "urdu": "سوال 1: خالی جگہیں پُر کریں۔",
+     "pashto": "پوښتنه ۱: تش ځایونه ډک کړئ."
+    },
+    {
+     "text": "i. ________ is a member of function that is called automatically when an object is created..",
+     "urdu": "i. ________ فنکشن کا ایک ممبر ہے جو آبجیکٹ بننے پر خود بخود کال ہوتا ہے۔",
+     "pashto": "i. ________ د فنکشن یو غړی دی چې د شي د جوړېدو پر مهال پخپله غوښتل کېږي."
+    },
+    {
+     "text": "ii. The ability to reuse code already defined for the new purpose, is referred to as ________ .",
+     "urdu": "ii. پہلے سے بیان کیے گئے کوڈ کو نئے مقصد کے لیے دوبارہ استعمال کرنے کی صلاحیت ________ کہلاتی ہے۔",
+     "pashto": "ii. د نوې موخې لپاره د مخکې تعریف شوي کوډ د بیا کارولو وړتیا ________ بلل کېږي."
+    },
+    {
+     "text": "iii. In OOP the main advantage of inheritance include ________ .",
+     "urdu": "iii. OOP میں وراثت کے بنیادی فائدے میں ________ شامل ہے۔",
+     "pashto": "iii. په OOP کې د میراث اصلي ګټه ________ لري."
+    },
+    {
+     "text": "iv. An object of a class can be defined as “ a variable of type ________ ”",
+     "urdu": "iv. کلاس کے آبجیکٹ کو ’’________ قسم کا ویری ایبل‘‘ کہا جا سکتا ہے",
+     "pashto": "iv. د ټولګي شی د \"د ________ ډول متغیر\" په توګه تعریفېدای شي"
+    },
+    {
+     "text": "v. Function overloading is used to achieve ________ .",
+     "urdu": "v. فنکشن اوورلوڈنگ ________ حاصل کرنے کے لیے استعمال ہوتی ہے۔",
+     "pashto": "v. د فنکشن ډېرول د ________ د ترلاسه کولو لپاره کارېږي."
+    },
+    {
+     "text": "Q.2 Select the correct choice for the following Multiple Choice Questions.",
+     "urdu": "سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔",
+     "pashto": "پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ."
+    },
+    {
+     "text": "i. A constructor is called whenever ________ .",
+     "urdu": "i. کنسٹرکٹر اس وقت کال ہوتا ہے جب ________ ۔",
+     "pashto": "i. جوړوونکی هغه وخت غوښتل کېږي چې ________ ."
+    },
+    {
+     "text": "(a) An object is destroyed",
+     "urdu": "(a) آبجیکٹ ختم ہو",
+     "pashto": "(a) شی ړنګ شي"
+    },
+    {
+     "text": "(b) An object is created",
+     "urdu": "(b) آبجیکٹ بنے",
+     "pashto": "(b) شی جوړ شي"
+    },
+    {
+     "text": "(c) A class is declared",
+     "urdu": "(c) کلاس ڈکلیئر ہو",
+     "pashto": "(c) ټولګی اعلان شي"
+    },
+    {
+     "text": "(d) A class is used",
+     "urdu": "(d) کلاس استعمال ہو",
+     "pashto": "(d) ټولګی وکارول شي"
+    },
+    {
+     "text": "ii. Destructor is used for ________ .",
+     "urdu": "ii. ڈسٹرکٹر ________ کے لیے استعمال ہوتا ہے۔",
+     "pashto": "ii. ړنګوونکی د ________ لپاره کارېږي."
+    },
+    {
+     "text": "(a) Initializing the values of data members in an object",
+     "urdu": "(a) آبجیکٹ میں ڈیٹا ممبرز کی قدروں کو ابتدائی قدر دینا",
+     "pashto": "(a) په شي کې د ډېټا غړو ارزښتونو ته لومړنی ارزښت ورکول"
+    },
+    {
+     "text": "(b) Initializing arrays",
+     "urdu": "(b) ایریز کو ابتدائی قدر دینا",
+     "pashto": "(b) لړیو ته لومړنی ارزښت ورکول"
+    },
+    {
+     "text": "(c) Freeing memory allocated to the object of the class when it was created",
+     "urdu": "(c) کلاس کے آبجیکٹ کو بنتے وقت دی گئی میموری آزاد کرنا",
+     "pashto": "(c) د ټولګي شي ته د جوړېدو پر مهال ورکړل شوې حافظه ازادول"
+    },
+    {
+     "text": "(d) Creating an object",
+     "urdu": "(d) آبجیکٹ بنانا",
+     "pashto": "(d) شی جوړول"
+    },
+    {
+     "text": "iii. The name of destructor is always preceded by the symbol ________",
+     "urdu": "iii. ڈسٹرکٹر کے نام سے پہلے ہمیشہ نشان ________ ہوتا ہے",
+     "pashto": "iii. د ړنګوونکي نوم ته تل ________ نښه مخکې وي"
+    },
+    {
+     "text": "(a) +",
+     "urdu": "(a) +",
+     "pashto": "(a) +"
+    },
+    {
+     "text": "(b) %",
+     "urdu": "(b) %",
+     "pashto": "(b) %"
+    },
+    {
+     "text": "(c) -",
+     "urdu": "(c) -",
+     "pashto": "(c) -"
+    },
+    {
+     "text": "(d) ~",
+     "urdu": "(d) ~",
+     "pashto": "(d) ~"
+    },
+    {
+     "text": "iv. Constructors are usually used for ________ .",
+     "urdu": "iv. کنسٹرکٹرز عموماً ________ کے لیے استعمال ہوتے ہیں۔",
+     "pashto": "iv. جوړوونکي عموماً د ________ لپاره کارېږي."
+    },
+    {
+     "text": "(a) Constructing programs",
+     "urdu": "(a) پروگرام بنانے",
+     "pashto": "(a) پروګرامونو جوړولو"
+    },
+    {
+     "text": "(b) Running classes",
+     "urdu": "(b) کلاسز چلانے",
+     "pashto": "(b) ټولګیو چلولو"
+    },
+    {
+     "text": "(c) Initializing objects",
+     "urdu": "(c) آبجیکٹس کو ابتدائی قدر دینے",
+     "pashto": "(c) شیانو ته لومړني ارزښت ورکولو"
+    },
+    {
+     "text": "(d) All of the above",
+     "urdu": "(d) مندرجہ بالا سب",
+     "pashto": "(d) پورته ټول"
+    },
+    {
+     "text": "v. Inheritance is used to ________ .",
+     "urdu": "v. وراثت ________ کے لیے استعمال ہوتی ہے۔",
+     "pashto": "v. میراث د ________ لپاره کارېږي."
+    },
+    {
+     "text": "(a) Increase the size of a program",
+     "urdu": "(a) پروگرام کا سائز بڑھانے",
+     "pashto": "(a) د پروګرام د اندازې زیاتولو"
+    },
+    {
+     "text": "(b) Make the program simpler",
+     "urdu": "(b) پروگرام کو آسان بنانے",
+     "pashto": "(b) د پروګرام ساده کولو"
+    },
+    {
+     "text": "(c) Provide the facility of code reusability",
+     "urdu": "(c) کوڈ کے دوبارہ استعمال کی سہولت فراہم کرنے",
+     "pashto": "(c) د کوډ د بیا کارونې اسانتیا برابرولو"
+    },
+    {
+     "text": "(d) Provide the facility of data hiding",
+     "urdu": "(d) ڈیٹا ہائیڈنگ کی سہولت فراہم کرنے",
+     "pashto": "(d) د ډېټا د پټولو اسانتیا برابرولو"
+    },
+    {
+     "text": "Q.3 Write TRUE/FALSE against the following statements.",
+     "urdu": "سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔",
+     "pashto": "پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ."
+    },
+    {
+     "text": "i. C++ is a pure object-oriented programming language.",
+     "urdu": "i. C++ خالص آبجیکٹ اورینٹڈ پروگرامنگ زبان ہے۔",
+     "pashto": "i. C++ خالصه د شیانو ته متوجه پروګرامي ژبه ده."
+    },
+    {
+     "text": "ii. One of the main features of object oriented programming language is data hiding.",
+     "urdu": "ii. آبجیکٹ اورینٹڈ پروگرامنگ زبان کی بنیادی خصوصیات میں سے ایک ڈیٹا ہائیڈنگ ہے۔",
+     "pashto": "ii. د شیانو ته متوجه پروګرامي ژبې له اصلي ځانګړتیاوو یوه د ډېټا پټول دي."
+    },
+    {
+     "text": "iii. If you do not declare a constructor in a class, the compiler will furnish a default constructor for you automatically.",
+     "urdu": "iii. اگر آپ کلاس میں کنسٹرکٹر ڈکلیئر نہ کریں تو کمپائلر آپ کے لیے خود بخود ڈیفالٹ کنسٹرکٹر فراہم کر دے گا۔",
+     "pashto": "iii. که تاسو په ټولګي کې جوړوونکی اعلان نه کړئ، کمپایلر به ستاسو لپاره پخپله ډیفالټ جوړوونکی برابر کړي."
+    },
+    {
+     "text": "iv. A constructor is a function that is called when an instance of a class is deleted.",
+     "urdu": "iv. کنسٹرکٹر وہ فنکشن ہے جو کلاس کا انسٹینس حذف ہونے پر کال ہوتا ہے۔",
+     "pashto": "iv. جوړوونکی هغه فنکشن دی چې د ټولګي د نمونې د ړنګېدو پر مهال غوښتل کېږي."
+    },
+    {
+     "text": "v. Function overloading is an example of polymorphism.",
+     "urdu": "v. فنکشن اوورلوڈنگ پولی مورفزم کی ایک مثال ہے۔",
+     "pashto": "v. د فنکشن ډېرول د پولي‌مورفیزم یوه بېلګه ده."
+    },
+    {
+     "text": "Q.4 Write a C++ program implementing a class with the name Circle having two functions with the names: GetRadius and CalArea. The functions should get the value for the radius from the user and then calculate the area of the circle and display the results.",
+     "urdu": "Q.4 Circle نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں جس میں GetRadius اور CalArea نام کے دو فنکشنز ہوں۔ فنکشنز صارف سے نصف قطر کی قدر لیں اور پھر دائرے کا رقبہ حساب کر کے نتائج دکھائیں۔",
+     "pashto": "Q.4 یو C++ پروګرام ولیکئ چې د Circle په نوم ټولګی پلي کړي چې د GetRadius او CalArea په نوم دوه فنکشنونه ولري. فنکشنونه دې له کاروونکي د شعاع ارزښت واخلي او بیا د دایرې مساحت حساب او پایلې وښيي."
+    },
+    {
+     "text": "Q.5 Write a C++ program implementing inheritance between Employee (base class) and Manager (derived class).",
+     "urdu": "Q.5 Employee (بیس کلاس) اور Manager (ڈیرائیوڈ کلاس) کے درمیان وراثت نافذ کرنے والا C++ پروگرام لکھیں۔",
+     "pashto": "Q.5 یو C++ پروګرام ولیکئ چې د Employee (اساسي ټولګی) او Manager (مشتق ټولګی) ترمنځ میراث پلي کړي."
+    },
+    {
+     "text": "Q.6 Diagrammatically represent the following scenario of inheritance:",
+     "urdu": "Q.6 وراثت کے درج ذیل منظرنامے کو خاکے کی صورت میں ظاہر کریں:",
+     "pashto": "Q.6 د میراث لاندې سناریو په ډیاګرام کې وښایاست:"
+    },
+    {
+     "text": "We have Shape as a base class and Circle, Rectangle, Triangle and Square as its derived classes.",
+     "urdu": "ہمارے پاس Shape بیس کلاس ہے اور Circle، Rectangle، Triangle اور Square اس کی ڈیرائیوڈ کلاسز ہیں۔",
+     "pashto": "موږ Shape د اساسي ټولګي په توګه او Circle، Rectangle، Triangle او Square د هغې د مشتق ټولګیو په توګه لرو."
+    },
+    {
+     "text": "Q.7 Write a C++ program implementing a class with the name ConstDest having constructor and destructor functions in its body.",
+     "urdu": "Q.7 ConstDest نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں جس کے جسم میں کنسٹرکٹر اور ڈسٹرکٹر فنکشنز ہوں۔",
+     "pashto": "Q.7 یو C++ پروګرام ولیکئ چې د ConstDest په نوم ټولګی پلي کړي چې په بدنه کې یې جوړوونکی او ړنګوونکی فنکشنونه وي."
+    },
+    {
+     "text": "Q.8 Write a C++ program implementing a class with the name Time. This class should have a constructor to initialize the time, hours, minutes and seconds. The class should have another function named ToSecond() to convert and display the time into seconds.",
+     "urdu": "Q.8 Time نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں۔ اس کلاس میں وقت، گھنٹے، منٹ اور سیکنڈ کو ابتدائی قدر دینے کے لیے کنسٹرکٹر ہونا چاہیے۔ کلاس میں ToSecond() نامی ایک اور فنکشن ہونا چاہیے جو وقت کو سیکنڈز میں بدل کر دکھائے۔",
+     "pashto": "Q.8 یو C++ پروګرام ولیکئ چې د Time په نوم ټولګی پلي کړي. دا ټولګی باید د وخت، ساعتونو، دقیقو او ثانیو د لومړني ارزښت لپاره جوړوونکی ولري. ټولګی باید د ToSecond() په نوم بل فنکشن ولري چې وخت په ثانیو بدل او وښيي."
+    },
+    {
+     "text": "Q.9 What is object? How objects are created to access members of a class?",
+     "urdu": "Q.9 آبجیکٹ کیا ہے؟ کلاس کے اراکین تک رسائی کے لیے آبجیکٹس کیسے بنائے جاتے ہیں؟",
+     "pashto": "Q.9 شی څه دی؟ د ټولګي غړو ته د لاسرسي لپاره شیان څنګه جوړېږي؟"
+    },
+    {
+     "text": "Q.10 Explain inheritance and polymorphism with examples.",
+     "urdu": "Q.10 وراثت اور پولی مورفزم کو مثالوں کے ساتھ واضح کریں۔",
+     "pashto": "Q.10 میراث او پولي‌مورفیزم د بېلګو سره تشریح کړئ."
+    }
+   ],
+   "theory": "Exercise\n\nQ.1 Fill in the Blanks.\n\ni. ________ is a member of function that is called automatically when an object is created..\n\nii. The ability to reuse code already defined for the new purpose, is referred to as ________ .\n\niii. In OOP the main advantage of inheritance include ________ .\n\niv. An object of a class can be defined as “ a variable of type ________ ”\n\nv. Function overloading is used to achieve ________ .\n\nQ.2 Select the correct choice for the following Multiple Choice Questions.\n\ni. A constructor is called whenever ________ .\n\n(a) An object is destroyed\n\n(b) An object is created\n\n(c) A class is declared\n\n(d) A class is used\n\nii. Destructor is used for ________ .\n\n(a) Initializing the values of data members in an object\n\n(b) Initializing arrays\n\n(c) Freeing memory allocated to the object of the class when it was created\n\n(d) Creating an object\n\niii. The name of destructor is always preceded by the symbol ________\n\n(a) +\n\n(b) %\n\n(c) -\n\n(d) ~\n\niv. Constructors are usually used for ________ .\n\n(a) Constructing programs\n\n(b) Running classes\n\n(c) Initializing objects\n\n(d) All of the above\n\nv. Inheritance is used to ________ .\n\n(a) Increase the size of a program\n\n(b) Make the program simpler\n\n(c) Provide the facility of code reusability\n\n(d) Provide the facility of data hiding\n\nQ.3 Write TRUE/FALSE against the following statements.\n\ni. C++ is a pure object-oriented programming language.\n\nii. One of the main features of object oriented programming language is data hiding.\n\niii. If you do not declare a constructor in a class, the compiler will furnish a default constructor for you automatically.\n\niv. A constructor is a function that is called when an instance of a class is deleted.\n\nv. Function overloading is an example of polymorphism.\n\nQ.4 Write a C++ program implementing a class with the name Circle having two functions with the names: GetRadius and CalArea. The functions should get the value for the radius from the user and then calculate the area of the circle and display the results.\n\nQ.5 Write a C++ program implementing inheritance between Employee (base class) and Manager (derived class).\n\nQ.6 Diagrammatically represent the following scenario of inheritance:\n\nWe have Shape as a base class and Circle, Rectangle, Triangle and Square as its derived classes.\n\nQ.7 Write a C++ program implementing a class with the name ConstDest having constructor and destructor functions in its body.\n\nQ.8 Write a C++ program implementing a class with the name Time. This class should have a constructor to initialize the time, hours, minutes and seconds. The class should have another function named ToSecond() to convert and display the time into seconds.\n\nQ.9 What is object? How objects are created to access members of a class?\n\nQ.10 Explain inheritance and polymorphism with examples.",
+   "urdu": "مشق\n\nسوال 1: خالی جگہیں پُر کریں۔\n\ni. ________ فنکشن کا ایک ممبر ہے جو آبجیکٹ بننے پر خود بخود کال ہوتا ہے۔\n\nii. پہلے سے بیان کیے گئے کوڈ کو نئے مقصد کے لیے دوبارہ استعمال کرنے کی صلاحیت ________ کہلاتی ہے۔\n\niii. OOP میں وراثت کے بنیادی فائدے میں ________ شامل ہے۔\n\niv. کلاس کے آبجیکٹ کو ’’________ قسم کا ویری ایبل‘‘ کہا جا سکتا ہے\n\nv. فنکشن اوورلوڈنگ ________ حاصل کرنے کے لیے استعمال ہوتی ہے۔\n\nسوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔\n\ni. کنسٹرکٹر اس وقت کال ہوتا ہے جب ________ ۔\n\n(a) آبجیکٹ ختم ہو\n\n(b) آبجیکٹ بنے\n\n(c) کلاس ڈکلیئر ہو\n\n(d) کلاس استعمال ہو\n\nii. ڈسٹرکٹر ________ کے لیے استعمال ہوتا ہے۔\n\n(a) آبجیکٹ میں ڈیٹا ممبرز کی قدروں کو ابتدائی قدر دینا\n\n(b) ایریز کو ابتدائی قدر دینا\n\n(c) کلاس کے آبجیکٹ کو بنتے وقت دی گئی میموری آزاد کرنا\n\n(d) آبجیکٹ بنانا\n\niii. ڈسٹرکٹر کے نام سے پہلے ہمیشہ نشان ________ ہوتا ہے\n\n(a) +\n\n(b) %\n\n(c) -\n\n(d) ~\n\niv. کنسٹرکٹرز عموماً ________ کے لیے استعمال ہوتے ہیں۔\n\n(a) پروگرام بنانے\n\n(b) کلاسز چلانے\n\n(c) آبجیکٹس کو ابتدائی قدر دینے\n\n(d) مندرجہ بالا سب\n\nv. وراثت ________ کے لیے استعمال ہوتی ہے۔\n\n(a) پروگرام کا سائز بڑھانے\n\n(b) پروگرام کو آسان بنانے\n\n(c) کوڈ کے دوبارہ استعمال کی سہولت فراہم کرنے\n\n(d) ڈیٹا ہائیڈنگ کی سہولت فراہم کرنے\n\nسوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔\n\ni. C++ خالص آبجیکٹ اورینٹڈ پروگرامنگ زبان ہے۔\n\nii. آبجیکٹ اورینٹڈ پروگرامنگ زبان کی بنیادی خصوصیات میں سے ایک ڈیٹا ہائیڈنگ ہے۔\n\niii. اگر آپ کلاس میں کنسٹرکٹر ڈکلیئر نہ کریں تو کمپائلر آپ کے لیے خود بخود ڈیفالٹ کنسٹرکٹر فراہم کر دے گا۔\n\niv. کنسٹرکٹر وہ فنکشن ہے جو کلاس کا انسٹینس حذف ہونے پر کال ہوتا ہے۔\n\nv. فنکشن اوورلوڈنگ پولی مورفزم کی ایک مثال ہے۔\n\nQ.4 Circle نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں جس میں GetRadius اور CalArea نام کے دو فنکشنز ہوں۔ فنکشنز صارف سے نصف قطر کی قدر لیں اور پھر دائرے کا رقبہ حساب کر کے نتائج دکھائیں۔\n\nQ.5 Employee (بیس کلاس) اور Manager (ڈیرائیوڈ کلاس) کے درمیان وراثت نافذ کرنے والا C++ پروگرام لکھیں۔\n\nQ.6 وراثت کے درج ذیل منظرنامے کو خاکے کی صورت میں ظاہر کریں:\n\nہمارے پاس Shape بیس کلاس ہے اور Circle، Rectangle، Triangle اور Square اس کی ڈیرائیوڈ کلاسز ہیں۔\n\nQ.7 ConstDest نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں جس کے جسم میں کنسٹرکٹر اور ڈسٹرکٹر فنکشنز ہوں۔\n\nQ.8 Time نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں۔ اس کلاس میں وقت، گھنٹے، منٹ اور سیکنڈ کو ابتدائی قدر دینے کے لیے کنسٹرکٹر ہونا چاہیے۔ کلاس میں ToSecond() نامی ایک اور فنکشن ہونا چاہیے جو وقت کو سیکنڈز میں بدل کر دکھائے۔\n\nQ.9 آبجیکٹ کیا ہے؟ کلاس کے اراکین تک رسائی کے لیے آبجیکٹس کیسے بنائے جاتے ہیں؟\n\nQ.10 وراثت اور پولی مورفزم کو مثالوں کے ساتھ واضح کریں۔",
+   "pashto": "تمرین\n\nپوښتنه ۱: تش ځایونه ډک کړئ.\n\ni. ________ د فنکشن یو غړی دی چې د شي د جوړېدو پر مهال پخپله غوښتل کېږي.\n\nii. د نوې موخې لپاره د مخکې تعریف شوي کوډ د بیا کارولو وړتیا ________ بلل کېږي.\n\niii. په OOP کې د میراث اصلي ګټه ________ لري.\n\niv. د ټولګي شی د \"د ________ ډول متغیر\" په توګه تعریفېدای شي\n\nv. د فنکشن ډېرول د ________ د ترلاسه کولو لپاره کارېږي.\n\nپوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.\n\ni. جوړوونکی هغه وخت غوښتل کېږي چې ________ .\n\n(a) شی ړنګ شي\n\n(b) شی جوړ شي\n\n(c) ټولګی اعلان شي\n\n(d) ټولګی وکارول شي\n\nii. ړنګوونکی د ________ لپاره کارېږي.\n\n(a) په شي کې د ډېټا غړو ارزښتونو ته لومړنی ارزښت ورکول\n\n(b) لړیو ته لومړنی ارزښت ورکول\n\n(c) د ټولګي شي ته د جوړېدو پر مهال ورکړل شوې حافظه ازادول\n\n(d) شی جوړول\n\niii. د ړنګوونکي نوم ته تل ________ نښه مخکې وي\n\n(a) +\n\n(b) %\n\n(c) -\n\n(d) ~\n\niv. جوړوونکي عموماً د ________ لپاره کارېږي.\n\n(a) پروګرامونو جوړولو\n\n(b) ټولګیو چلولو\n\n(c) شیانو ته لومړني ارزښت ورکولو\n\n(d) پورته ټول\n\nv. میراث د ________ لپاره کارېږي.\n\n(a) د پروګرام د اندازې زیاتولو\n\n(b) د پروګرام ساده کولو\n\n(c) د کوډ د بیا کارونې اسانتیا برابرولو\n\n(d) د ډېټا د پټولو اسانتیا برابرولو\n\nپوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.\n\ni. C++ خالصه د شیانو ته متوجه پروګرامي ژبه ده.\n\nii. د شیانو ته متوجه پروګرامي ژبې له اصلي ځانګړتیاوو یوه د ډېټا پټول دي.\n\niii. که تاسو په ټولګي کې جوړوونکی اعلان نه کړئ، کمپایلر به ستاسو لپاره پخپله ډیفالټ جوړوونکی برابر کړي.\n\niv. جوړوونکی هغه فنکشن دی چې د ټولګي د نمونې د ړنګېدو پر مهال غوښتل کېږي.\n\nv. د فنکشن ډېرول د پولي‌مورفیزم یوه بېلګه ده.\n\nQ.4 یو C++ پروګرام ولیکئ چې د Circle په نوم ټولګی پلي کړي چې د GetRadius او CalArea په نوم دوه فنکشنونه ولري. فنکشنونه دې له کاروونکي د شعاع ارزښت واخلي او بیا د دایرې مساحت حساب او پایلې وښيي.\n\nQ.5 یو C++ پروګرام ولیکئ چې د Employee (اساسي ټولګی) او Manager (مشتق ټولګی) ترمنځ میراث پلي کړي.\n\nQ.6 د میراث لاندې سناریو په ډیاګرام کې وښایاست:\n\nموږ Shape د اساسي ټولګي په توګه او Circle، Rectangle، Triangle او Square د هغې د مشتق ټولګیو په توګه لرو.\n\nQ.7 یو C++ پروګرام ولیکئ چې د ConstDest په نوم ټولګی پلي کړي چې په بدنه کې یې جوړوونکی او ړنګوونکی فنکشنونه وي.\n\nQ.8 یو C++ پروګرام ولیکئ چې د Time په نوم ټولګی پلي کړي. دا ټولګی باید د وخت، ساعتونو، دقیقو او ثانیو د لومړني ارزښت لپاره جوړوونکی ولري. ټولګی باید د ToSecond() په نوم بل فنکشن ولري چې وخت په ثانیو بدل او وښيي.\n\nQ.9 شی څه دی؟ د ټولګي غړو ته د لاسرسي لپاره شیان څنګه جوړېږي؟\n\nQ.10 میراث او پولي‌مورفیزم د بېلګو سره تشریح کړئ.",
+   "theoryUrdu": "مشق\n\nسوال 1: خالی جگہیں پُر کریں۔\n\ni. ________ فنکشن کا ایک ممبر ہے جو آبجیکٹ بننے پر خود بخود کال ہوتا ہے۔\n\nii. پہلے سے بیان کیے گئے کوڈ کو نئے مقصد کے لیے دوبارہ استعمال کرنے کی صلاحیت ________ کہلاتی ہے۔\n\niii. OOP میں وراثت کے بنیادی فائدے میں ________ شامل ہے۔\n\niv. کلاس کے آبجیکٹ کو ’’________ قسم کا ویری ایبل‘‘ کہا جا سکتا ہے\n\nv. فنکشن اوورلوڈنگ ________ حاصل کرنے کے لیے استعمال ہوتی ہے۔\n\nسوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔\n\ni. کنسٹرکٹر اس وقت کال ہوتا ہے جب ________ ۔\n\n(a) آبجیکٹ ختم ہو\n\n(b) آبجیکٹ بنے\n\n(c) کلاس ڈکلیئر ہو\n\n(d) کلاس استعمال ہو\n\nii. ڈسٹرکٹر ________ کے لیے استعمال ہوتا ہے۔\n\n(a) آبجیکٹ میں ڈیٹا ممبرز کی قدروں کو ابتدائی قدر دینا\n\n(b) ایریز کو ابتدائی قدر دینا\n\n(c) کلاس کے آبجیکٹ کو بنتے وقت دی گئی میموری آزاد کرنا\n\n(d) آبجیکٹ بنانا\n\niii. ڈسٹرکٹر کے نام سے پہلے ہمیشہ نشان ________ ہوتا ہے\n\n(a) +\n\n(b) %\n\n(c) -\n\n(d) ~\n\niv. کنسٹرکٹرز عموماً ________ کے لیے استعمال ہوتے ہیں۔\n\n(a) پروگرام بنانے\n\n(b) کلاسز چلانے\n\n(c) آبجیکٹس کو ابتدائی قدر دینے\n\n(d) مندرجہ بالا سب\n\nv. وراثت ________ کے لیے استعمال ہوتی ہے۔\n\n(a) پروگرام کا سائز بڑھانے\n\n(b) پروگرام کو آسان بنانے\n\n(c) کوڈ کے دوبارہ استعمال کی سہولت فراہم کرنے\n\n(d) ڈیٹا ہائیڈنگ کی سہولت فراہم کرنے\n\nسوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔\n\ni. C++ خالص آبجیکٹ اورینٹڈ پروگرامنگ زبان ہے۔\n\nii. آبجیکٹ اورینٹڈ پروگرامنگ زبان کی بنیادی خصوصیات میں سے ایک ڈیٹا ہائیڈنگ ہے۔\n\niii. اگر آپ کلاس میں کنسٹرکٹر ڈکلیئر نہ کریں تو کمپائلر آپ کے لیے خود بخود ڈیفالٹ کنسٹرکٹر فراہم کر دے گا۔\n\niv. کنسٹرکٹر وہ فنکشن ہے جو کلاس کا انسٹینس حذف ہونے پر کال ہوتا ہے۔\n\nv. فنکشن اوورلوڈنگ پولی مورفزم کی ایک مثال ہے۔\n\nQ.4 Circle نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں جس میں GetRadius اور CalArea نام کے دو فنکشنز ہوں۔ فنکشنز صارف سے نصف قطر کی قدر لیں اور پھر دائرے کا رقبہ حساب کر کے نتائج دکھائیں۔\n\nQ.5 Employee (بیس کلاس) اور Manager (ڈیرائیوڈ کلاس) کے درمیان وراثت نافذ کرنے والا C++ پروگرام لکھیں۔\n\nQ.6 وراثت کے درج ذیل منظرنامے کو خاکے کی صورت میں ظاہر کریں:\n\nہمارے پاس Shape بیس کلاس ہے اور Circle، Rectangle، Triangle اور Square اس کی ڈیرائیوڈ کلاسز ہیں۔\n\nQ.7 ConstDest نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں جس کے جسم میں کنسٹرکٹر اور ڈسٹرکٹر فنکشنز ہوں۔\n\nQ.8 Time نامی کلاس نافذ کرنے والا C++ پروگرام لکھیں۔ اس کلاس میں وقت، گھنٹے، منٹ اور سیکنڈ کو ابتدائی قدر دینے کے لیے کنسٹرکٹر ہونا چاہیے۔ کلاس میں ToSecond() نامی ایک اور فنکشن ہونا چاہیے جو وقت کو سیکنڈز میں بدل کر دکھائے۔\n\nQ.9 آبجیکٹ کیا ہے؟ کلاس کے اراکین تک رسائی کے لیے آبجیکٹس کیسے بنائے جاتے ہیں؟\n\nQ.10 وراثت اور پولی مورفزم کو مثالوں کے ساتھ واضح کریں۔",
+   "theoryPashto": "تمرین\n\nپوښتنه ۱: تش ځایونه ډک کړئ.\n\ni. ________ د فنکشن یو غړی دی چې د شي د جوړېدو پر مهال پخپله غوښتل کېږي.\n\nii. د نوې موخې لپاره د مخکې تعریف شوي کوډ د بیا کارولو وړتیا ________ بلل کېږي.\n\niii. په OOP کې د میراث اصلي ګټه ________ لري.\n\niv. د ټولګي شی د \"د ________ ډول متغیر\" په توګه تعریفېدای شي\n\nv. د فنکشن ډېرول د ________ د ترلاسه کولو لپاره کارېږي.\n\nپوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.\n\ni. جوړوونکی هغه وخت غوښتل کېږي چې ________ .\n\n(a) شی ړنګ شي\n\n(b) شی جوړ شي\n\n(c) ټولګی اعلان شي\n\n(d) ټولګی وکارول شي\n\nii. ړنګوونکی د ________ لپاره کارېږي.\n\n(a) په شي کې د ډېټا غړو ارزښتونو ته لومړنی ارزښت ورکول\n\n(b) لړیو ته لومړنی ارزښت ورکول\n\n(c) د ټولګي شي ته د جوړېدو پر مهال ورکړل شوې حافظه ازادول\n\n(d) شی جوړول\n\niii. د ړنګوونکي نوم ته تل ________ نښه مخکې وي\n\n(a) +\n\n(b) %\n\n(c) -\n\n(d) ~\n\niv. جوړوونکي عموماً د ________ لپاره کارېږي.\n\n(a) پروګرامونو جوړولو\n\n(b) ټولګیو چلولو\n\n(c) شیانو ته لومړني ارزښت ورکولو\n\n(d) پورته ټول\n\nv. میراث د ________ لپاره کارېږي.\n\n(a) د پروګرام د اندازې زیاتولو\n\n(b) د پروګرام ساده کولو\n\n(c) د کوډ د بیا کارونې اسانتیا برابرولو\n\n(d) د ډېټا د پټولو اسانتیا برابرولو\n\nپوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.\n\ni. C++ خالصه د شیانو ته متوجه پروګرامي ژبه ده.\n\nii. د شیانو ته متوجه پروګرامي ژبې له اصلي ځانګړتیاوو یوه د ډېټا پټول دي.\n\niii. که تاسو په ټولګي کې جوړوونکی اعلان نه کړئ، کمپایلر به ستاسو لپاره پخپله ډیفالټ جوړوونکی برابر کړي.\n\niv. جوړوونکی هغه فنکشن دی چې د ټولګي د نمونې د ړنګېدو پر مهال غوښتل کېږي.\n\nv. د فنکشن ډېرول د پولي‌مورفیزم یوه بېلګه ده.\n\nQ.4 یو C++ پروګرام ولیکئ چې د Circle په نوم ټولګی پلي کړي چې د GetRadius او CalArea په نوم دوه فنکشنونه ولري. فنکشنونه دې له کاروونکي د شعاع ارزښت واخلي او بیا د دایرې مساحت حساب او پایلې وښيي.\n\nQ.5 یو C++ پروګرام ولیکئ چې د Employee (اساسي ټولګی) او Manager (مشتق ټولګی) ترمنځ میراث پلي کړي.\n\nQ.6 د میراث لاندې سناریو په ډیاګرام کې وښایاست:\n\nموږ Shape د اساسي ټولګي په توګه او Circle، Rectangle، Triangle او Square د هغې د مشتق ټولګیو په توګه لرو.\n\nQ.7 یو C++ پروګرام ولیکئ چې د ConstDest په نوم ټولګی پلي کړي چې په بدنه کې یې جوړوونکی او ړنګوونکی فنکشنونه وي.\n\nQ.8 یو C++ پروګرام ولیکئ چې د Time په نوم ټولګی پلي کړي. دا ټولګی باید د وخت، ساعتونو، دقیقو او ثانیو د لومړني ارزښت لپاره جوړوونکی ولري. ټولګی باید د ToSecond() په نوم بل فنکشن ولري چې وخت په ثانیو بدل او وښيي.\n\nQ.9 شی څه دی؟ د ټولګي غړو ته د لاسرسي لپاره شیان څنګه جوړېږي؟\n\nQ.10 میراث او پولي‌مورفیزم د بېلګو سره تشریح کړئ.",
+   "content": "<p>Exercise</p><p>Q.1 Fill in the Blanks.</p><p>i. ________ is a member of function that is called automatically when an object is created..</p><p>ii. The ability to reuse code already defined for the new purpose, is referred to as ________ .</p><p>iii. In OOP the main advantage of inheritance include ________ .</p><p>iv. An object of a class can be defined as “ a variable of type ________ ”</p><p>v. Function overloading is used to achieve ________ .</p><p>Q.2 Select the correct choice for the following Multiple Choice Questions.</p><p>i. A constructor is called whenever ________ .</p><p>(a) An object is destroyed</p><p>(b) An object is created</p><p>(c) A class is declared</p><p>(d) A class is used</p><p>ii. Destructor is used for ________ .</p><p>(a) Initializing the values of data members in an object</p><p>(b) Initializing arrays</p><p>(c) Freeing memory allocated to the object of the class when it was created</p><p>(d) Creating an object</p><p>iii. The name of destructor is always preceded by the symbol ________</p><p>(a) +</p><p>(b) %</p><p>(c) -</p><p>(d) ~</p><p>iv. Constructors are usually used for ________ .</p><p>(a) Constructing programs</p><p>(b) Running classes</p><p>(c) Initializing objects</p><p>(d) All of the above</p><p>v. Inheritance is used to ________ .</p><p>(a) Increase the size of a program</p><p>(b) Make the program simpler</p><p>(c) Provide the facility of code reusability</p><p>(d) Provide the facility of data hiding</p><p>Q.3 Write TRUE/FALSE against the following statements.</p><p>i. C++ is a pure object-oriented programming language.</p><p>ii. One of the main features of object oriented programming language is data hiding.</p><p>iii. If you do not declare a constructor in a class, the compiler will furnish a default constructor for you automatically.</p><p>iv. A constructor is a function that is called when an instance of a class is deleted.</p><p>v. Function overloading is an example of polymorphism.</p><p>Q.4 Write a C++ program implementing a class with the name Circle having two functions with the names: GetRadius and CalArea. The functions should get the value for the radius from the user and then calculate the area of the circle and display the results.</p><p>Q.5 Write a C++ program implementing inheritance between Employee (base class) and Manager (derived class).</p><p>Q.6 Diagrammatically represent the following scenario of inheritance:</p><p>We have Shape as a base class and Circle, Rectangle, Triangle and Square as its derived classes.</p><p>Q.7 Write a C++ program implementing a class with the name ConstDest having constructor and destructor functions in its body.</p><p>Q.8 Write a C++ program implementing a class with the name Time. This class should have a constructor to initialize the time, hours, minutes and seconds. The class should have another function named ToSecond() to convert and display the time into seconds.</p><p>Q.9 What is object? How objects are created to access members of a class?</p><p>Q.10 Explain inheritance and polymorphism with examples.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      14,
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      19,
+      20,
+      21,
+      22
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      23
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      24,
+      25,
+      26,
+      27
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      28
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      29,
+      30,
+      31,
+      32
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      33
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      34,
+      35,
+      36,
+      37,
+      38
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      39
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      40
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      41
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      42
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      43
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      44
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      45
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      46
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 134,
+     "printedPages": [
+      256,
+      257,
+      258
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 exercise",
+   "sourcePageLabel": "PDF 134 · p. 256–257–258",
+   "sourceNote": "The exercise runs from p.256 to p.258 (PDF135) and is recorded here whole.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf134",
+   "unit": 8,
+   "printedPage": 256,
+   "description": "Q1(i) “is a member of function … created..” (double full stop); Q1(iii) “include”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

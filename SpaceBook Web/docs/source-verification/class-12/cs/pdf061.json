@@ -1,0 +1,266 @@
+{
+ "pdfPage": 61,
+ "sections": [
+  {
+   "id": "cs12-u4-text-1",
+   "title": "Unit 4 text (1)",
+   "headingUrdu": "یونٹ 4 — متن (۱)",
+   "headingPashto": "۴ څپرکی — متن (۱)",
+   "paras": [
+    {
+     "text": "INTRODUCTION",
+     "urdu": "تعارف",
+     "pashto": "پېژندنه"
+    },
+    {
+     "text": "C++ provides control flow statements, also called flow control statements, which allows the programmer to control the sequence of execution of statements of a program by the processor. The most commonly used control flow statements are decision, repetitions and compound statements.",
+     "urdu": "C++ کنٹرول فلو بیانات فراہم کرتی ہے، جنھیں فلو کنٹرول بیانات بھی کہتے ہیں، جو پروگرامر کو یہ کنٹرول کرنے دیتے ہیں کہ پروسیسر پروگرام کے بیانات کس ترتیب سے چلائے۔ سب سے زیادہ استعمال ہونے والے کنٹرول فلو بیانات فیصلہ، تکرار اور مرکب بیانات ہیں۔",
+     "pashto": "C++ د کنټرول بهیر بیانونه برابروي چې د بهیر کنټرول بیانونه هم بلل کېږي، او پروګرام جوړوونکي ته اجازه ورکوي چې کنټرول کړي پروسېسر د پروګرام بیانونه په کوم ترتیب اجرا کوي. تر ټولو ډېر کارېدونکي د کنټرول بهیر بیانونه پرېکړه‌ییز، تکراري او مرکب بیانونه دي."
+    },
+    {
+     "text": "4.1 Decision statements",
+     "urdu": "4.1 فیصلہ کن بیانات",
+     "pashto": "۴.۱ پرېکړه‌ییز بیانونه"
+    },
+    {
+     "text": "Decision statement is a statement that causes the program to change the path of execution, sequence of execution, based on the value of an expression. It is also called conditional statement. Most commonly used decision support statements are: if, if-else and nested if-else statements. The switch also provides a mechanism for doing conditional branching.",
+     "urdu": "فیصلہ کن بیان وہ بیان ہے جو کسی ایکسپریشن کی قدر کی بنیاد پر پروگرام کے چلنے کا راستہ یعنی عمل کی ترتیب بدل دیتا ہے۔ اسے شرطیہ بیان بھی کہتے ہیں۔ سب سے زیادہ استعمال ہونے والے فیصلہ کن بیانات if، if-else اور نیسٹڈ if-else ہیں۔ switch بھی شرطیہ شاخ بندی کا طریقہ فراہم کرتا ہے۔",
+     "pashto": "پرېکړه‌ییز بیان هغه بیان دی چې د یوې افادې د ارزښت پر بنسټ پروګرام دې ته اړ کوي چې د اجرا لاره، یعنې د اجرا ترتیب، بدل کړي. شرطي بیان هم بلل کېږي. تر ټولو ډېر کارېدونکي پرېکړه‌ییز بیانونه if، if-else او ځالې if-else دي. switch هم د شرطي څانګه‌کولو لاره برابروي."
+    },
+    {
+     "text": "4.1.1 Use of decision statements",
+     "urdu": "4.1.1 فیصلہ کن بیانات کا استعمال",
+     "pashto": "۴.۱.۱ د پرېکړه‌ییزو بیانونو کارونه"
+    },
+    {
+     "text": "In a C++ program, a programmer sometimes needs to execute one statement (or a set of statements) if a certain condition is true and another statement (or set of statements) if it is false. In a C++ program, this is only possible with the use of decision statements. The following are different types of decision statements.",
+     "urdu": "C++ پروگرام میں پروگرامر کو بعض اوقات ایک بیان (یا بیانات کا مجموعہ) چلانا ہوتا ہے اگر کوئی شرط درست ہو اور دوسرا بیان (یا بیانات کا مجموعہ) اگر وہ غلط ہو۔ C++ پروگرام میں یہ صرف فیصلہ کن بیانات کے استعمال سے ممکن ہے۔ فیصلہ کن بیانات کی مختلف اقسام درج ذیل ہیں۔",
+     "pashto": "په C++ پروګرام کې پروګرام جوړوونکی کله کله اړتیا لري چې که یو ټاکلی شرط true وي یو بیان (یا د بیانونو ټولګه) او که false وي بل بیان (یا ټولګه) اجرا کړي. په C++ پروګرام کې دا یوازې د پرېکړه‌ییزو بیانونو په کارولو شونی دی. د پرېکړه‌ییزو بیانونو بېلابېل ډولونه دا دي."
+    },
+    {
+     "text": "a. if statement",
+     "urdu": "a. if بیان",
+     "pashto": "a. if بیان"
+    },
+    {
+     "text": "The most basic kind of conditional statement used in C++ is if statement. General syntax of an if statement is given below:",
+     "urdu": "C++ میں استعمال ہونے والا سب سے بنیادی شرطیہ بیان if بیان ہے۔ if بیان کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے:",
+     "pashto": "په C++ کې تر ټولو بنسټیز شرطي بیان if بیان دی. د if بیان عمومي بڼه لاندې ورکړل شوې:"
+    },
+    {
+     "text": "Single statement if structure",
+     "urdu": "ایک بیان والی if ساخت",
+     "pashto": "یو-بیانیز if جوړښت"
+    },
+    {
+     "text": "if (condition)\nStatement;",
+     "urdu": "if (condition)\nStatement;",
+     "pashto": "if (condition)\nStatement;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Multiple statements if structure",
+     "urdu": "متعدد بیانات والی if ساخت",
+     "pashto": "څو-بیانیز if جوړښت"
+    },
+    {
+     "text": "if (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}",
+     "urdu": "if (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}",
+     "pashto": "if (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "If the condition is true, the statement after if will be executed and if the condition is false, the statement will be skipped. If we want to execute multiple statements with one if statement then the statements should be enclosed in a pair of curly braces { }.",
+     "urdu": "اگر شرط درست ہو تو if کے بعد والا بیان چلایا جائے گا اور اگر شرط غلط ہو تو بیان چھوڑ دیا جائے گا۔ اگر ہم ایک if بیان کے ساتھ متعدد بیانات چلانا چاہیں تو بیانات کو بریسز { } کے جوڑے میں بند کرنا چاہیے۔",
+     "pashto": "که شرط true وي، د if وروسته بیان اجرا کېږي او که شرط false وي، بیان پرېښودل کېږي. که وغواړو د یوه if بیان سره ډېر بیانونه اجرا کړو، بیانونه باید د لوړو قوسونو { } په یوه جوړه کې وتړل شي."
+    },
+    {
+     "text": "Flowchart 4.1 shows working of if statement.",
+     "urdu": "فلو چارٹ 4.1 if بیان کا عمل دکھاتا ہے۔",
+     "pashto": "۴.۱ فلوچارټ د if بیان کار ښيي."
+    },
+    {
+     "text": "Consider the following program to demonstrate the use of if statement.",
+     "urdu": "if بیان کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د if بیان د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \" is even number\";\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \" is even number\";\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \" is even number\";\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter a number:\n12\n12 is even number",
+     "urdu": "Enter a number:\n12\n12 is even number",
+     "pashto": "Enter a number:\n12\n12 is even number",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "INTRODUCTION\n\nC++ provides control flow statements, also called flow control statements, which allows the programmer to control the sequence of execution of statements of a program by the processor. The most commonly used control flow statements are decision, repetitions and compound statements.\n\n4.1 Decision statements\n\nDecision statement is a statement that causes the program to change the path of execution, sequence of execution, based on the value of an expression. It is also called conditional statement. Most commonly used decision support statements are: if, if-else and nested if-else statements. The switch also provides a mechanism for doing conditional branching.\n\n4.1.1 Use of decision statements\n\nIn a C++ program, a programmer sometimes needs to execute one statement (or a set of statements) if a certain condition is true and another statement (or set of statements) if it is false. In a C++ program, this is only possible with the use of decision statements. The following are different types of decision statements.\n\na. if statement\n\nThe most basic kind of conditional statement used in C++ is if statement. General syntax of an if statement is given below:\n\nSingle statement if structure\n\nif (condition)\nStatement;\n\nMultiple statements if structure\n\nif (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nIf the condition is true, the statement after if will be executed and if the condition is false, the statement will be skipped. If we want to execute multiple statements with one if statement then the statements should be enclosed in a pair of curly braces { }.\n\nFlowchart 4.1 shows working of if statement.\n\nConsider the following program to demonstrate the use of if statement.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \" is even number\";\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nEnter a number:\n12\n12 is even number",
+   "urdu": "تعارف\n\nC++ کنٹرول فلو بیانات فراہم کرتی ہے، جنھیں فلو کنٹرول بیانات بھی کہتے ہیں، جو پروگرامر کو یہ کنٹرول کرنے دیتے ہیں کہ پروسیسر پروگرام کے بیانات کس ترتیب سے چلائے۔ سب سے زیادہ استعمال ہونے والے کنٹرول فلو بیانات فیصلہ، تکرار اور مرکب بیانات ہیں۔\n\n4.1 فیصلہ کن بیانات\n\nفیصلہ کن بیان وہ بیان ہے جو کسی ایکسپریشن کی قدر کی بنیاد پر پروگرام کے چلنے کا راستہ یعنی عمل کی ترتیب بدل دیتا ہے۔ اسے شرطیہ بیان بھی کہتے ہیں۔ سب سے زیادہ استعمال ہونے والے فیصلہ کن بیانات if، if-else اور نیسٹڈ if-else ہیں۔ switch بھی شرطیہ شاخ بندی کا طریقہ فراہم کرتا ہے۔\n\n4.1.1 فیصلہ کن بیانات کا استعمال\n\nC++ پروگرام میں پروگرامر کو بعض اوقات ایک بیان (یا بیانات کا مجموعہ) چلانا ہوتا ہے اگر کوئی شرط درست ہو اور دوسرا بیان (یا بیانات کا مجموعہ) اگر وہ غلط ہو۔ C++ پروگرام میں یہ صرف فیصلہ کن بیانات کے استعمال سے ممکن ہے۔ فیصلہ کن بیانات کی مختلف اقسام درج ذیل ہیں۔\n\na. if بیان\n\nC++ میں استعمال ہونے والا سب سے بنیادی شرطیہ بیان if بیان ہے۔ if بیان کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے:\n\nایک بیان والی if ساخت\n\nif (condition)\nStatement;\n\nمتعدد بیانات والی if ساخت\n\nif (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nاگر شرط درست ہو تو if کے بعد والا بیان چلایا جائے گا اور اگر شرط غلط ہو تو بیان چھوڑ دیا جائے گا۔ اگر ہم ایک if بیان کے ساتھ متعدد بیانات چلانا چاہیں تو بیانات کو بریسز { } کے جوڑے میں بند کرنا چاہیے۔\n\nفلو چارٹ 4.1 if بیان کا عمل دکھاتا ہے۔\n\nif بیان کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \" is even number\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number:\n12\n12 is even number",
+   "pashto": "پېژندنه\n\nC++ د کنټرول بهیر بیانونه برابروي چې د بهیر کنټرول بیانونه هم بلل کېږي، او پروګرام جوړوونکي ته اجازه ورکوي چې کنټرول کړي پروسېسر د پروګرام بیانونه په کوم ترتیب اجرا کوي. تر ټولو ډېر کارېدونکي د کنټرول بهیر بیانونه پرېکړه‌ییز، تکراري او مرکب بیانونه دي.\n\n۴.۱ پرېکړه‌ییز بیانونه\n\nپرېکړه‌ییز بیان هغه بیان دی چې د یوې افادې د ارزښت پر بنسټ پروګرام دې ته اړ کوي چې د اجرا لاره، یعنې د اجرا ترتیب، بدل کړي. شرطي بیان هم بلل کېږي. تر ټولو ډېر کارېدونکي پرېکړه‌ییز بیانونه if، if-else او ځالې if-else دي. switch هم د شرطي څانګه‌کولو لاره برابروي.\n\n۴.۱.۱ د پرېکړه‌ییزو بیانونو کارونه\n\nپه C++ پروګرام کې پروګرام جوړوونکی کله کله اړتیا لري چې که یو ټاکلی شرط true وي یو بیان (یا د بیانونو ټولګه) او که false وي بل بیان (یا ټولګه) اجرا کړي. په C++ پروګرام کې دا یوازې د پرېکړه‌ییزو بیانونو په کارولو شونی دی. د پرېکړه‌ییزو بیانونو بېلابېل ډولونه دا دي.\n\na. if بیان\n\nپه C++ کې تر ټولو بنسټیز شرطي بیان if بیان دی. د if بیان عمومي بڼه لاندې ورکړل شوې:\n\nیو-بیانیز if جوړښت\n\nif (condition)\nStatement;\n\nڅو-بیانیز if جوړښت\n\nif (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nکه شرط true وي، د if وروسته بیان اجرا کېږي او که شرط false وي، بیان پرېښودل کېږي. که وغواړو د یوه if بیان سره ډېر بیانونه اجرا کړو، بیانونه باید د لوړو قوسونو { } په یوه جوړه کې وتړل شي.\n\n۴.۱ فلوچارټ د if بیان کار ښيي.\n\nد if بیان د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \" is even number\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number:\n12\n12 is even number",
+   "theoryUrdu": "تعارف\n\nC++ کنٹرول فلو بیانات فراہم کرتی ہے، جنھیں فلو کنٹرول بیانات بھی کہتے ہیں، جو پروگرامر کو یہ کنٹرول کرنے دیتے ہیں کہ پروسیسر پروگرام کے بیانات کس ترتیب سے چلائے۔ سب سے زیادہ استعمال ہونے والے کنٹرول فلو بیانات فیصلہ، تکرار اور مرکب بیانات ہیں۔\n\n4.1 فیصلہ کن بیانات\n\nفیصلہ کن بیان وہ بیان ہے جو کسی ایکسپریشن کی قدر کی بنیاد پر پروگرام کے چلنے کا راستہ یعنی عمل کی ترتیب بدل دیتا ہے۔ اسے شرطیہ بیان بھی کہتے ہیں۔ سب سے زیادہ استعمال ہونے والے فیصلہ کن بیانات if، if-else اور نیسٹڈ if-else ہیں۔ switch بھی شرطیہ شاخ بندی کا طریقہ فراہم کرتا ہے۔\n\n4.1.1 فیصلہ کن بیانات کا استعمال\n\nC++ پروگرام میں پروگرامر کو بعض اوقات ایک بیان (یا بیانات کا مجموعہ) چلانا ہوتا ہے اگر کوئی شرط درست ہو اور دوسرا بیان (یا بیانات کا مجموعہ) اگر وہ غلط ہو۔ C++ پروگرام میں یہ صرف فیصلہ کن بیانات کے استعمال سے ممکن ہے۔ فیصلہ کن بیانات کی مختلف اقسام درج ذیل ہیں۔\n\na. if بیان\n\nC++ میں استعمال ہونے والا سب سے بنیادی شرطیہ بیان if بیان ہے۔ if بیان کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے:\n\nایک بیان والی if ساخت\n\nif (condition)\nStatement;\n\nمتعدد بیانات والی if ساخت\n\nif (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nاگر شرط درست ہو تو if کے بعد والا بیان چلایا جائے گا اور اگر شرط غلط ہو تو بیان چھوڑ دیا جائے گا۔ اگر ہم ایک if بیان کے ساتھ متعدد بیانات چلانا چاہیں تو بیانات کو بریسز { } کے جوڑے میں بند کرنا چاہیے۔\n\nفلو چارٹ 4.1 if بیان کا عمل دکھاتا ہے۔\n\nif بیان کے استعمال کی وضاحت کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \" is even number\";\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter a number:\n12\n12 is even number",
+   "theoryPashto": "پېژندنه\n\nC++ د کنټرول بهیر بیانونه برابروي چې د بهیر کنټرول بیانونه هم بلل کېږي، او پروګرام جوړوونکي ته اجازه ورکوي چې کنټرول کړي پروسېسر د پروګرام بیانونه په کوم ترتیب اجرا کوي. تر ټولو ډېر کارېدونکي د کنټرول بهیر بیانونه پرېکړه‌ییز، تکراري او مرکب بیانونه دي.\n\n۴.۱ پرېکړه‌ییز بیانونه\n\nپرېکړه‌ییز بیان هغه بیان دی چې د یوې افادې د ارزښت پر بنسټ پروګرام دې ته اړ کوي چې د اجرا لاره، یعنې د اجرا ترتیب، بدل کړي. شرطي بیان هم بلل کېږي. تر ټولو ډېر کارېدونکي پرېکړه‌ییز بیانونه if، if-else او ځالې if-else دي. switch هم د شرطي څانګه‌کولو لاره برابروي.\n\n۴.۱.۱ د پرېکړه‌ییزو بیانونو کارونه\n\nپه C++ پروګرام کې پروګرام جوړوونکی کله کله اړتیا لري چې که یو ټاکلی شرط true وي یو بیان (یا د بیانونو ټولګه) او که false وي بل بیان (یا ټولګه) اجرا کړي. په C++ پروګرام کې دا یوازې د پرېکړه‌ییزو بیانونو په کارولو شونی دی. د پرېکړه‌ییزو بیانونو بېلابېل ډولونه دا دي.\n\na. if بیان\n\nپه C++ کې تر ټولو بنسټیز شرطي بیان if بیان دی. د if بیان عمومي بڼه لاندې ورکړل شوې:\n\nیو-بیانیز if جوړښت\n\nif (condition)\nStatement;\n\nڅو-بیانیز if جوړښت\n\nif (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nکه شرط true وي، د if وروسته بیان اجرا کېږي او که شرط false وي، بیان پرېښودل کېږي. که وغواړو د یوه if بیان سره ډېر بیانونه اجرا کړو، بیانونه باید د لوړو قوسونو { } په یوه جوړه کې وتړل شي.\n\n۴.۱ فلوچارټ د if بیان کار ښيي.\n\nد if بیان د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint X;\ncout << \"Enter a number: \";\ncin >> X;\nif (X %2==0)\ncout << X << \" is even number\";\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter a number:\n12\n12 is even number",
+   "content": "<p>INTRODUCTION</p><p>C++ provides control flow statements, also called flow control statements, which allows the programmer to control the sequence of execution of statements of a program by the processor. The most commonly used control flow statements are decision, repetitions and compound statements.</p><p>4.1 Decision statements</p><p>Decision statement is a statement that causes the program to change the path of execution, sequence of execution, based on the value of an expression. It is also called conditional statement. Most commonly used decision support statements are: if, if-else and nested if-else statements. The switch also provides a mechanism for doing conditional branching.</p><p>4.1.1 Use of decision statements</p><p>In a C++ program, a programmer sometimes needs to execute one statement (or a set of statements) if a certain condition is true and another statement (or set of statements) if it is false. In a C++ program, this is only possible with the use of decision statements. The following are different types of decision statements.</p><p>a. if statement</p><p>The most basic kind of conditional statement used in C++ is if statement. General syntax of an if statement is given below:</p><p>Single statement if structure</p><p>if (condition)\nStatement;</p><p>Multiple statements if structure</p><p>if (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}</p><p>If the condition is true, the statement after if will be executed and if the condition is false, the statement will be skipped. If we want to execute multiple statements with one if statement then the statements should be enclosed in a pair of curly braces { }.</p><p>Flowchart 4.1 shows working of if statement.</p><p>Consider the following program to demonstrate the use of if statement.</p><p>#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint X;\ncout &lt;&lt; &quot;Enter a number: &quot;;\ncin &gt;&gt; X;\nif (X %2==0)\ncout &lt;&lt; X &lt;&lt; &quot; is even number&quot;;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>Enter a number:\n12\n12 is even number</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-4-1"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      17
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-4-1",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" role=\"img\" aria-label=\"Flowchart 4.1: Working of If Structure\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"440\" height=\"245\" fill=\"#ffffff\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"42\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"110,42.0 190.0,72 110,102.0 30.0,72\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"77.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Condition</text><line x1=\"190\" y1=\"72\" x2=\"300\" y2=\"72\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"245\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"300.0\" y=\"52.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"360\" y=\"77.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Statement (s)</text><polyline points=\"360,92 360,140 116,140\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"110\" y1=\"102\" x2=\"110\" y2=\"170\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"98\" y=\"128\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><rect x=\"50.0\" y=\"170.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"195.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Next Statement</text><text x=\"220.0\" y=\"237\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Flowchart 4.1: Working of If Structure</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" role=\"img\" aria-label=\"فلو چارٹ 4.1: if ساخت کا عمل\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"440\" height=\"245\" fill=\"#ffffff\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"42\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"110,42.0 190.0,72 110,102.0 30.0,72\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"77.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شرط</text><line x1=\"190\" y1=\"72\" x2=\"300\" y2=\"72\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"245\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"300.0\" y=\"52.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"360\" y=\"77.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بیان (بیانات)</text><polyline points=\"360,92 360,140 116,140\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"110\" y1=\"102\" x2=\"110\" y2=\"170\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"98\" y=\"128\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><rect x=\"50.0\" y=\"170.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"195.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">اگلا بیان</text><text x=\"220.0\" y=\"237\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">فلو چارٹ 4.1: if ساخت کا عمل</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" role=\"img\" aria-label=\"۴.۱ فلوچارټ: د if جوړښت کار\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"440\" height=\"245\" fill=\"#ffffff\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"42\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"110,42.0 190.0,72 110,102.0 30.0,72\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"77.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شرط</text><line x1=\"190\" y1=\"72\" x2=\"300\" y2=\"72\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"245\" y=\"64\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"300.0\" y=\"52.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"360\" y=\"77.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">بیان (بیانونه)</text><polyline points=\"360,92 360,140 116,140\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"110\" y1=\"102\" x2=\"110\" y2=\"170\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"98\" y=\"128\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><rect x=\"50.0\" y=\"170.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"110\" y=\"195.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">راتلونکی بیان</text><text x=\"220.0\" y=\"237\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۴.۱ فلوچارټ: د if جوړښت کار</text></svg>",
+     "sourceWidthRatio": 1.7959183673469388
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 61,
+     "printedPages": [
+      110,
+      111,
+      112
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (1)",
+   "sourcePageLabel": "PDF 61 · p. 110–111–112",
+   "sourceNote": "Flowchart 4.1 is reproduced as a coded diagram. The program starting at the foot of p.111 continues on p.112 (PDF62) and is given whole here with its output.",
+   "unit": 4
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf061",
+   "unit": 4,
+   "printedPage": 110,
+   "description": "p.110 prints “control flow statements … which allows the programmer”; the running header reads “Unit-4 Control Structures” while the opener reads “CONTROL STRUCTURE”. Owner pen doodle on p.111 excluded."
+  }
+ ],
+ "completeUnits": []
+}

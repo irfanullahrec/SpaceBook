@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-10-18T05:40:21.387Z",
+  "scope": "Four Class 12 Mathematics source-limited exercise answers; no question wording, source references, chapter structure or source-gap status changed.",
+  "status": "focused_checks_passed_with_unresolved_source_defects",
+  "activeExerciseQuestionGroups": 347,
+  "answerRepairsSha256": "45888bb7fc5ae4948aa90fe47a804c6cc0a77eaca811d7be945f24afb6977fea",
+  "checks": [
+    "Dataset evaluates with the repair layer",
+    "All printed question strings and source references preserved",
+    "No question added or removed",
+    "Progressive answers align with steps",
+    "Supplemental quadrature values independently recomputed",
+    "Conditional differential-equation residuals checked",
+    "Correct Q2(c) crop exists",
+    "Source-gap status preserved",
+    "Repeated loading is idempotent"
+  ],
+  "records": [
+    {
+      "id": "ex-2-1-q5",
+      "outcome": "Improved symbolic domain answer and explicitly supplemental worked example. Numerical photographed endpoints remain unresolved.",
+      "inspected": [
+        "JPG/020_page_1.jpg",
+        "assets/math12/ex21-project-landscape.jpg",
+        "assets/math12/ex21-project-car.jpg"
+      ],
+      "sourceComplete": false
+    },
+    {
+      "id": "ex-2-3-project",
+      "outcome": "Requested classifications answered: inverted absolute-value and quadratic. Exact first-model coefficients remain source-unreadable; no coefficients invented.",
+      "inspected": [
+        "JPG/032_page_2.jpg",
+        "assets/math12/exercise-2-3-project-i.jpg"
+      ],
+      "requestedClassificationComplete": true,
+      "exactSourceModelRecovered": false
+    },
+    {
+      "id": "ex-10-1-q2",
+      "outcome": "Existing valid conditional algebra retained. Wrong Q2(d) crop replaced in active answer with isolated Q2(c) source crop. Printed RHS exponent remains unresolved.",
+      "inspected": [
+        "JPG/149_page_2.jpg",
+        "PDF/Math Book for 12 class KPTBB.pdf: physical page 149"
+      ],
+      "newCrop": {
+        "path": "assets/math12/ode290-q2c-source-review.jpg",
+        "sourcePdfPage": 149,
+        "pdfPointRect": [
+          474,
+          201,
+          576,
+          222
+        ],
+        "scale": 4
+      },
+      "sourceComplete": false
+    },
+    {
+      "id": "ex-12-2-q5",
+      "outcome": "Added general quadrature formulas, explicit partition convention, worked sum details and errors. The original prompt omits the integrand and partition; no unique original numerical answer can be asserted.",
+      "inspected": [
+        "JPG/166_page_1.jpg"
+      ],
+      "sourceComplete": false,
+      "sample": {
+        "integrand": "exp(-x)",
+        "bounds": [
+          0,
+          2
+        ],
+        "subintervals": 10,
+        "trapezoid": 0.8675450128369339,
+        "simpson": 0.8646723662255081,
+        "exact": 0.8646647167633873
+      }
+    }
+  ],
+  "unit6SourceSearch": {
+    "printedPages": [
+      142,
+      157
+    ],
+    "status": "unavailable_in_supplied_formats",
+    "existingAudit": "docs/source-verification/math12.json",
+    "currentLocalInventory": {
+      "jpg": 357,
+      "pdf": 6,
+      "docx": 5
+    },
+    "searched": "D:/SpaceBook/Books, including ignored files, for Class 12 Mathematics PDF and Word alternatives",
+    "result": "Only the already documented full PDF, five split PDFs and five Word files were found. Existing audit records the same missing span in those source formats. No alternate source was recovered.",
+    "allSuppliedFilesReaudited": false,
+    "sourceGapChanged": false
+  },
+  "finalBrowserCheck": "Owned by integrating task; not performed by this focused data repair check."
+}

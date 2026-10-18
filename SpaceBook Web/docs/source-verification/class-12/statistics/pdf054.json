@@ -1,0 +1,327 @@
+{
+ "pdfPage": 54,
+ "sections": [
+  {
+   "id": "stat12-p054-hypergeometric-pmf",
+   "title": "3.4.2 Hypergeometric pmf — Example 3.20",
+   "headingUrdu": "3.4.2 ہائپر جیومیٹرک تفاعل — مثال 3.20",
+   "headingPashto": "3.4.2 هایپرجیومټریک تابع — بېلګه 3.20",
+   "paras": [
+    {
+     "text": "3.4.2 Hypergeometric probability mass function",
+     "urdu": "3.4.2 ہائپر جیومیٹرک احتمالی کمیتی تفاعل",
+     "pashto": "3.4.2 د هایپرجیومټریک د احتمال کتلوي تابع"
+    },
+    {
+     "text": "The probability mass function of hypergeometric random variable X is given as:",
+     "urdu": "ہائپر جیومیٹرک تصادفی متغیر X کا احتمالی کمیتی تفاعل یہ ہے:",
+     "pashto": "د هایپرجیومټریک تصادفي متغیر X د احتمال کتلوي تابع دا ده:"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "This distribution has three parameters N, K, n, whereas",
+     "urdu": "اس تقسیم کے تین پیرامیٹر N، K، n ہیں، جہاں",
+     "pashto": "دا وېش درې پارامټرونه N، K، n لري، چې"
+    },
+    {
+     "text": "N denotes total number of items in the population.",
+     "urdu": "N آبادی میں اشیاء کی کل تعداد ظاہر کرتا ہے۔",
+     "pashto": "N په نفوس کې د توکو ټول شمېر ښيي."
+    },
+    {
+     "text": "K denotes the number of successes in the population.",
+     "urdu": "K آبادی میں کامیابیوں کی تعداد ظاہر کرتا ہے۔",
+     "pashto": "K په نفوس کې د بریاوو شمېر ښيي."
+    },
+    {
+     "text": "n denotes the number of elements in the sample drawn at random.",
+     "urdu": "n تصادفی طور پر لیے گئے نمونے میں عناصر کی تعداد ظاہر کرتا ہے۔",
+     "pashto": "n په تصادفي ډول اخیستل شوې نمونه کې د عناصرو شمېر ښيي."
+    },
+    {
+     "text": "X denotes the number of successes in the sample.",
+     "urdu": "X نمونے میں کامیابیوں کی تعداد ظاہر کرتا ہے۔",
+     "pashto": "X په نمونه کې د بریاوو شمېر ښيي."
+    },
+    {
+     "text": "Example 3.20",
+     "urdu": "مثال 3.20",
+     "pashto": "بېلګه 3.20"
+    },
+    {
+     "text": "A committee of size three is selected from 4 men and 2 women. Find the probability distribution for the number of women in the committee.",
+     "urdu": "4 مردوں اور 2 عورتوں میں سے تین افراد کی کمیٹی منتخب کی جاتی ہے۔ کمیٹی میں عورتوں کی تعداد کی احتمالی تقسیم معلوم کریں۔",
+     "pashto": "له 4 سړیو او 2 ښځو څخه د درېیو کسانو یوه کمېټه ټاکل کېږي. په کمېټه کې د ښځو د شمېر احتمالي وېش پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "we have",
+     "urdu": "ہمارے پاس ہے",
+     "pashto": "موږ لرو"
+    },
+    {
+     "text": "As it has not been mentioned that an object selected is returned to the population before next draw so, we consider it without replacement sampling case and hence hypergeometric probability distribution is required.",
+     "urdu": "چونکہ یہ ذکر نہیں کیا گیا کہ منتخب شے اگلی بار نکالنے سے پہلے آبادی میں واپس رکھی جاتی ہے، اس لیے ہم اسے بغیر واپسی نمونہ گیری کی صورت سمجھتے ہیں اور لہٰذا ہائپر جیومیٹرک احتمالی تقسیم درکار ہے۔",
+     "pashto": "څرنګه چې دا نه دي ویل شوي چې ټاکل شوی شی د بل ځل له راایستلو مخکې نفوس ته بېرته ورکول کېږي، نو دا د بې له بېرته اچولو نمونه اخیستنې حالت ګڼو او له همدې امله هایپرجیومټریک احتمالي وېش ته اړتیا ده."
+    },
+    {
+     "text": "Now $n=3$ (size of committee)",
+     "urdu": "اب $n=3$ (کمیٹی کا سائز)",
+     "pashto": "اوس $n=3$ (د کمېټې اندازه)"
+    },
+    {
+     "text": "$K=2$ (number of successes)",
+     "urdu": "$K=2$ (کامیابیوں کی تعداد)",
+     "pashto": "$K=2$ (د بریاوو شمېر)"
+    },
+    {
+     "text": "$X=0,1,2$ (number of women in the committee)",
+     "urdu": "$X=0,1,2$ (کمیٹی میں عورتوں کی تعداد)",
+     "pashto": "$X=0,1,2$ (په کمېټه کې د ښځو شمېر)"
+    },
+    {
+     "text": "Hence the fitted hypergeometric probability function is:",
+     "urdu": "لہٰذا منطبق ہائپر جیومیٹرک احتمالی تفاعل یہ ہے:",
+     "pashto": "نو برابره شوې هایپرجیومټریک احتمالي تابع دا ده:"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{2}{x}\\binom{6-2}{3-x}}{\\binom{6}{3}}, & x=0,1,2\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{2}{x}\\binom{6-2}{3-x}}{\\binom{6}{3}}, & x=0,1,2\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{2}{x}\\binom{6-2}{3-x}}{\\binom{6}{3}}, & x=0,1,2\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "The hypergeometric probability distribution is:",
+     "urdu": "ہائپر جیومیٹرک احتمالی تقسیم یہ ہے:",
+     "pashto": "هایپرجیومټریک احتمالي وېش دا دی:"
+    }
+   ],
+   "theory": "3.4.2 Hypergeometric probability mass function\n\nThe probability mass function of hypergeometric random variable X is given as:\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nThis distribution has three parameters N, K, n, whereas\n\nN denotes total number of items in the population.\n\nK denotes the number of successes in the population.\n\nn denotes the number of elements in the sample drawn at random.\n\nX denotes the number of successes in the sample.\n\nExample 3.20\n\nA committee of size three is selected from 4 men and 2 women. Find the probability distribution for the number of women in the committee.\n\nSolution:\n\nwe have\n\nAs it has not been mentioned that an object selected is returned to the population before next draw so, we consider it without replacement sampling case and hence hypergeometric probability distribution is required.\n\nNow n=3 (size of committee)\n\nK=2 (number of successes)\n\nX=0,1,2 (number of women in the committee)\n\nHence the fitted hypergeometric probability function is:\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{2}{x}\\binom{6-2}{3-x}}{\\binom{6}{3}}, & x=0,1,2\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nThe hypergeometric probability distribution is:",
+   "urdu": "3.4.2 ہائپر جیومیٹرک احتمالی کمیتی تفاعل\n\nہائپر جیومیٹرک تصادفی متغیر X کا احتمالی کمیتی تفاعل یہ ہے:\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nاس تقسیم کے تین پیرامیٹر N، K، n ہیں، جہاں\n\nN آبادی میں اشیاء کی کل تعداد ظاہر کرتا ہے۔\n\nK آبادی میں کامیابیوں کی تعداد ظاہر کرتا ہے۔\n\nn تصادفی طور پر لیے گئے نمونے میں عناصر کی تعداد ظاہر کرتا ہے۔\n\nX نمونے میں کامیابیوں کی تعداد ظاہر کرتا ہے۔\n\nمثال 3.20\n\n4 مردوں اور 2 عورتوں میں سے تین افراد کی کمیٹی منتخب کی جاتی ہے۔ کمیٹی میں عورتوں کی تعداد کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\nہمارے پاس ہے\n\nچونکہ یہ ذکر نہیں کیا گیا کہ منتخب شے اگلی بار نکالنے سے پہلے آبادی میں واپس رکھی جاتی ہے، اس لیے ہم اسے بغیر واپسی نمونہ گیری کی صورت سمجھتے ہیں اور لہٰذا ہائپر جیومیٹرک احتمالی تقسیم درکار ہے۔\n\nاب n=3 (کمیٹی کا سائز)\n\nK=2 (کامیابیوں کی تعداد)\n\nX=0,1,2 (کمیٹی میں عورتوں کی تعداد)\n\nلہٰذا منطبق ہائپر جیومیٹرک احتمالی تفاعل یہ ہے:\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{2}{x}\\binom{6-2}{3-x}}{\\binom{6}{3}}, & x=0,1,2\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nہائپر جیومیٹرک احتمالی تقسیم یہ ہے:",
+   "pashto": "3.4.2 د هایپرجیومټریک د احتمال کتلوي تابع\n\nد هایپرجیومټریک تصادفي متغیر X د احتمال کتلوي تابع دا ده:\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nدا وېش درې پارامټرونه N، K، n لري، چې\n\nN په نفوس کې د توکو ټول شمېر ښيي.\n\nK په نفوس کې د بریاوو شمېر ښيي.\n\nn په تصادفي ډول اخیستل شوې نمونه کې د عناصرو شمېر ښيي.\n\nX په نمونه کې د بریاوو شمېر ښيي.\n\nبېلګه 3.20\n\nله 4 سړیو او 2 ښځو څخه د درېیو کسانو یوه کمېټه ټاکل کېږي. په کمېټه کې د ښځو د شمېر احتمالي وېش پیدا کړئ.\n\nحل:\n\nموږ لرو\n\nڅرنګه چې دا نه دي ویل شوي چې ټاکل شوی شی د بل ځل له راایستلو مخکې نفوس ته بېرته ورکول کېږي، نو دا د بې له بېرته اچولو نمونه اخیستنې حالت ګڼو او له همدې امله هایپرجیومټریک احتمالي وېش ته اړتیا ده.\n\nاوس n=3 (د کمېټې اندازه)\n\nK=2 (د بریاوو شمېر)\n\nX=0,1,2 (په کمېټه کې د ښځو شمېر)\n\nنو برابره شوې هایپرجیومټریک احتمالي تابع دا ده:\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{2}{x}\\binom{6-2}{3-x}}{\\binom{6}{3}}, & x=0,1,2\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nهایپرجیومټریک احتمالي وېش دا دی:",
+   "theoryUrdu": "3.4.2 ہائپر جیومیٹرک احتمالی کمیتی تفاعل\n\nہائپر جیومیٹرک تصادفی متغیر X کا احتمالی کمیتی تفاعل یہ ہے:\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nاس تقسیم کے تین پیرامیٹر N، K، n ہیں، جہاں\n\nN آبادی میں اشیاء کی کل تعداد ظاہر کرتا ہے۔\n\nK آبادی میں کامیابیوں کی تعداد ظاہر کرتا ہے۔\n\nn تصادفی طور پر لیے گئے نمونے میں عناصر کی تعداد ظاہر کرتا ہے۔\n\nX نمونے میں کامیابیوں کی تعداد ظاہر کرتا ہے۔\n\nمثال 3.20\n\n4 مردوں اور 2 عورتوں میں سے تین افراد کی کمیٹی منتخب کی جاتی ہے۔ کمیٹی میں عورتوں کی تعداد کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\nہمارے پاس ہے\n\nچونکہ یہ ذکر نہیں کیا گیا کہ منتخب شے اگلی بار نکالنے سے پہلے آبادی میں واپس رکھی جاتی ہے، اس لیے ہم اسے بغیر واپسی نمونہ گیری کی صورت سمجھتے ہیں اور لہٰذا ہائپر جیومیٹرک احتمالی تقسیم درکار ہے۔\n\nاب n=3 (کمیٹی کا سائز)\n\nK=2 (کامیابیوں کی تعداد)\n\nX=0,1,2 (کمیٹی میں عورتوں کی تعداد)\n\nلہٰذا منطبق ہائپر جیومیٹرک احتمالی تفاعل یہ ہے:\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{2}{x}\\binom{6-2}{3-x}}{\\binom{6}{3}}, & x=0,1,2\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nہائپر جیومیٹرک احتمالی تقسیم یہ ہے:",
+   "theoryPashto": "3.4.2 د هایپرجیومټریک د احتمال کتلوي تابع\n\nد هایپرجیومټریک تصادفي متغیر X د احتمال کتلوي تابع دا ده:\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nدا وېش درې پارامټرونه N، K، n لري، چې\n\nN په نفوس کې د توکو ټول شمېر ښيي.\n\nK په نفوس کې د بریاوو شمېر ښيي.\n\nn په تصادفي ډول اخیستل شوې نمونه کې د عناصرو شمېر ښيي.\n\nX په نمونه کې د بریاوو شمېر ښيي.\n\nبېلګه 3.20\n\nله 4 سړیو او 2 ښځو څخه د درېیو کسانو یوه کمېټه ټاکل کېږي. په کمېټه کې د ښځو د شمېر احتمالي وېش پیدا کړئ.\n\nحل:\n\nموږ لرو\n\nڅرنګه چې دا نه دي ویل شوي چې ټاکل شوی شی د بل ځل له راایستلو مخکې نفوس ته بېرته ورکول کېږي، نو دا د بې له بېرته اچولو نمونه اخیستنې حالت ګڼو او له همدې امله هایپرجیومټریک احتمالي وېش ته اړتیا ده.\n\nاوس n=3 (د کمېټې اندازه)\n\nK=2 (د بریاوو شمېر)\n\nX=0,1,2 (په کمېټه کې د ښځو شمېر)\n\nنو برابره شوې هایپرجیومټریک احتمالي تابع دا ده:\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{2}{x}\\binom{6-2}{3-x}}{\\binom{6}{3}}, & x=0,1,2\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nهایپرجیومټریک احتمالي وېش دا دی:",
+   "content": "<p>3.4.2 Hypergeometric probability mass function</p><p>The probability mass function of hypergeometric random variable X is given as:</p><p>$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, &amp; x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>This distribution has three parameters N, K, n, whereas</p><p>N denotes total number of items in the population.</p><p>K denotes the number of successes in the population.</p><p>n denotes the number of elements in the sample drawn at random.</p><p>X denotes the number of successes in the sample.</p><p>Example 3.20</p><p>A committee of size three is selected from 4 men and 2 women. Find the probability distribution for the number of women in the committee.</p><p>Solution:</p><p>we have</p><p>As it has not been mentioned that an object selected is returned to the population before next draw so, we consider it without replacement sampling case and hence hypergeometric probability distribution is required.</p><p>Now n=3 (size of committee)</p><p>K=2 (number of successes)</p><p>X=0,1,2 (number of women in the committee)</p><p>Hence the fitted hypergeometric probability function is:</p><p>$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{2}{x}\\binom{6-2}{3-x}}{\\binom{6}{3}}, &amp; x=0,1,2\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>The hypergeometric probability distribution is:</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "stat12-ex3-20-box"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex3-20"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-ex3-20-box",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 120\" role=\"img\" aria-label=\"Population of 4 men and 2 women; K marks the 2 women, N the 6 persons\"><rect width=\"260\" height=\"120\" fill=\"white\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\"><rect x=\"100\" y=\"10\" width=\"44\" height=\"54\" fill=\"none\" stroke=\"#111\"/><path d=\"M100 37H144\" stroke=\"#111\"/><text x=\"106\" y=\"31\" font-style=\"italic\">4M</text><text x=\"106\" y=\"58\" font-style=\"italic\">2W</text><path d=\"M152 50H200\" stroke=\"#111\"/><path d=\"M152 50l9-4v8z\" fill=\"#111\"/><text x=\"208\" y=\"56\" font-style=\"italic\">K</text><text x=\"40\" y=\"100\" font-style=\"italic\">N</text><path d=\"M58 94H96\" stroke=\"#111\"/><path d=\"M104 94l-9-4v8z\" fill=\"#111\"/><text x=\"110\" y=\"100\">6 persons</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 120\" role=\"img\" aria-label=\"Population of 4 men and 2 women; K marks the 2 women, N the 6 persons\"><rect width=\"260\" height=\"120\" fill=\"white\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\"><rect x=\"100\" y=\"10\" width=\"44\" height=\"54\" fill=\"none\" stroke=\"#111\"/><path d=\"M100 37H144\" stroke=\"#111\"/><text x=\"106\" y=\"31\" font-style=\"italic\">4M</text><text x=\"106\" y=\"58\" font-style=\"italic\">2W</text><path d=\"M152 50H200\" stroke=\"#111\"/><path d=\"M152 50l9-4v8z\" fill=\"#111\"/><text x=\"208\" y=\"56\" font-style=\"italic\">K</text><text x=\"40\" y=\"100\" font-style=\"italic\">N</text><path d=\"M58 94H96\" stroke=\"#111\"/><path d=\"M104 94l-9-4v8z\" fill=\"#111\"/><text x=\"110\" y=\"100\">6 افراد</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 120\" role=\"img\" aria-label=\"Population of 4 men and 2 women; K marks the 2 women, N the 6 persons\"><rect width=\"260\" height=\"120\" fill=\"white\"/><g font-family=\"Times New Roman,serif\" font-size=\"18\" fill=\"#111\"><rect x=\"100\" y=\"10\" width=\"44\" height=\"54\" fill=\"none\" stroke=\"#111\"/><path d=\"M100 37H144\" stroke=\"#111\"/><text x=\"106\" y=\"31\" font-style=\"italic\">4M</text><text x=\"106\" y=\"58\" font-style=\"italic\">2W</text><path d=\"M152 50H200\" stroke=\"#111\"/><path d=\"M152 50l9-4v8z\" fill=\"#111\"/><text x=\"208\" y=\"56\" font-style=\"italic\">K</text><text x=\"40\" y=\"100\" font-style=\"italic\">N</text><path d=\"M58 94H96\" stroke=\"#111\"/><path d=\"M104 94l-9-4v8z\" fill=\"#111\"/><text x=\"110\" y=\"100\">6 کسان</text></g></svg>",
+     "sourceWidthRatio": 0.4
+    },
+    {
+     "id": "stat12-t-ex3-20",
+     "headers": [
+      "$X$",
+      "$p(x)=\\dfrac{\\binom{2}{x}\\binom{4}{3-x}}{\\binom{6}{3}}$"
+     ],
+     "rows": [
+      [
+       "0",
+       "$\\dfrac{\\binom{2}{0}\\binom{4}{3-0}}{\\binom{6}{3}}=\\frac{4}{20}$"
+      ],
+      [
+       "1",
+       "$\\dfrac{\\binom{2}{1}\\binom{4}{3-1}}{\\binom{6}{3}}=\\frac{12}{20}$"
+      ],
+      [
+       "2",
+       "$\\dfrac{\\binom{2}{2}\\binom{4}{3-2}}{\\binom{6}{3}}=\\frac{4}{20}$"
+      ],
+      [
+       "Total",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)=\\dfrac{\\binom{2}{x}\\binom{4}{3-x}}{\\binom{6}{3}}$"
+       ],
+       "rows": [
+        [
+         "0",
+         "$\\dfrac{\\binom{2}{0}\\binom{4}{3-0}}{\\binom{6}{3}}=\\frac{4}{20}$"
+        ],
+        [
+         "1",
+         "$\\dfrac{\\binom{2}{1}\\binom{4}{3-1}}{\\binom{6}{3}}=\\frac{12}{20}$"
+        ],
+        [
+         "2",
+         "$\\dfrac{\\binom{2}{2}\\binom{4}{3-2}}{\\binom{6}{3}}=\\frac{4}{20}$"
+        ],
+        [
+         "کل",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)=\\dfrac{\\binom{2}{x}\\binom{4}{3-x}}{\\binom{6}{3}}$"
+       ],
+       "rows": [
+        [
+         "0",
+         "$\\dfrac{\\binom{2}{0}\\binom{4}{3-0}}{\\binom{6}{3}}=\\frac{4}{20}$"
+        ],
+        [
+         "1",
+         "$\\dfrac{\\binom{2}{1}\\binom{4}{3-1}}{\\binom{6}{3}}=\\frac{12}{20}$"
+        ],
+        [
+         "2",
+         "$\\dfrac{\\binom{2}{2}\\binom{4}{3-2}}{\\binom{6}{3}}=\\frac{4}{20}$"
+        ],
+        [
+         "ټول",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 54,
+     "printedPages": [
+      99,
+      100
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

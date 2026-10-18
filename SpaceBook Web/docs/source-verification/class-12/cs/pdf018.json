@@ -1,0 +1,233 @@
+{
+ "pdfPage": 18,
+ "sections": [
+  {
+   "id": "cs12-u1-text-12",
+   "title": "Unit 1 text (12)",
+   "headingUrdu": "یونٹ 1 — متن (۱۲)",
+   "headingPashto": "۱ څپرکی — متن (۱۲)",
+   "paras": [
+    {
+     "text": "Processes vs. Threads",
+     "urdu": "پراسیسز بمقابلہ تھریڈز",
+     "pashto": "پروسې د تارونو په پرتله"
+    },
+    {
+     "text": "Processes are independent of one another while threads are not independent of one another.",
+     "urdu": "پراسیسز ایک دوسرے سے آزاد ہوتے ہیں جبکہ تھریڈز ایک دوسرے سے آزاد نہیں ہوتے۔",
+     "pashto": "پروسې یو له بل خپلواکې دي، په داسې حال کې چې تارونه یو له بل خپلواک نه دي."
+    },
+    {
+     "text": "Unlike processes, all threads can access every address in the task.",
+     "urdu": "پراسیسز کے برعکس تمام تھریڈز ٹاسک میں ہر پتے تک رسائی حاصل کر سکتے ہیں۔",
+     "pashto": "د پروسو پر خلاف ټول تارونه په دنده کې هرې پتې ته لاسرسی لري."
+    },
+    {
+     "text": "Processes might or might not assist one another because processes may originate from different users while threads are designed to assist one another.",
+     "urdu": "پراسیسز ایک دوسرے کی مدد کر بھی سکتے ہیں اور نہیں بھی، کیونکہ پراسیسز مختلف صارفین سے شروع ہو سکتے ہیں جبکہ تھریڈز ایک دوسرے کی مدد کے لیے بنائے جاتے ہیں۔",
+     "pashto": "پروسې کېدای شي د یو بل مرسته وکړي یا ونه کړي، ځکه پروسې کېدای شي له بېلابېلو کاروونکو پیل شي، په داسې حال کې چې تارونه د یو بل د مرستې لپاره ډیزاین شوي."
+    },
+    {
+     "text": "1.3.4 Multitasking and Multithreading",
+     "urdu": "1.3.4 ملٹی ٹاسکنگ اور ملٹی تھریڈنگ",
+     "pashto": "۱.۳.۴ څو-دندیز او څو-تاریز کار"
+    },
+    {
+     "text": "The features of a multitasking operating system is to execute more than one programs simultaneously while the multithreading feature executes different parts of the program, called threads, simultaneously.",
+     "urdu": "ملٹی ٹاسکنگ آپریٹنگ سسٹم کی خصوصیت ایک سے زیادہ پروگراموں کو بیک وقت چلانا ہے جبکہ ملٹی تھریڈنگ کی خصوصیت پروگرام کے مختلف حصوں، جنھیں تھریڈز کہتے ہیں، کو بیک وقت چلاتی ہے۔",
+     "pashto": "د څو-دندیز عملیاتي سیسټم ځانګړنه په یو وخت له یوه زیات پروګرامونو اجرا ده، په داسې حال کې چې د څو-تاریز کار ځانګړنه د پروګرام بېلابېلې برخې چې تارونه بلل کېږي، په یو وخت اجرا کوي."
+    },
+    {
+     "text": "As multitasking executes individual program, therefore, the multitasking operating systems use separate memory and data, while the multithreaded operating systems share the same memory and data variables for all threads of the same process.",
+     "urdu": "چونکہ ملٹی ٹاسکنگ الگ الگ پروگرام چلاتی ہے، اس لیے ملٹی ٹاسکنگ آپریٹنگ سسٹم الگ میموری اور ڈیٹا استعمال کرتے ہیں، جبکہ ملٹی تھریڈڈ آپریٹنگ سسٹم ایک ہی پراسیس کے تمام تھریڈز کے لیے ایک ہی میموری اور ڈیٹا ویری ایبلز مشترک رکھتے ہیں۔",
+     "pashto": "څرنګه چې څو-دندیز کار جلا جلا پروګرامونه اجرا کوي، نو څو-دندیز عملیاتي سیسټمونه جلا حافظه او ډېټا کاروي، په داسې حال کې چې څو-تاریز عملیاتي سیسټمونه د یوې پروسې د ټولو تارونو لپاره یوه حافظه او د ډېټا متغیرونه شریکوي."
+    },
+    {
+     "text": "Implementation of multitasking is relatively easier in operating systems than the implementation of multithreading.",
+     "urdu": "آپریٹنگ سسٹمز میں ملٹی ٹاسکنگ کا نفاذ ملٹی تھریڈنگ کے نفاذ کے مقابلے میں نسبتاً آسان ہے۔",
+     "pashto": "په عملیاتي سیسټمونو کې د څو-دندیز کار پلي کول د څو-تاریز کار د پلي کولو په پرتله نسبتاً اسانه دي."
+    },
+    {
+     "text": "1.3.5 Multitasking and Multiprogramming",
+     "urdu": "1.3.5 ملٹی ٹاسکنگ اور ملٹی پروگرامنگ",
+     "pashto": "۱.۳.۵ څو-دندیز او څو-پروګرامي کار"
+    },
+    {
+     "text": "Multiprogramming is the concept in which more than one user’s programs are active at the same time in the main memory (RAM) of the computer and the operating system selects one job at a time from the ready queue and assigns it to the CPU for execution. The ready queue is always placed in the main memory of the computer. To understand this concept, consider the scenario of having the application programs such as MS Word, MS Excel, and MS Access opened with a user typing in MS Word document and leaving the others just in main memory without performing any task.",
+     "urdu": "ملٹی پروگرامنگ وہ تصور ہے جس میں ایک سے زیادہ صارفین کے پروگرام کمپیوٹر کی مین میموری (RAM) میں بیک وقت فعال ہوتے ہیں اور آپریٹنگ سسٹم ریڈی قطار سے ایک وقت میں ایک جاب منتخب کر کے اسے چلانے کے لیے CPU کو تفویض کرتا ہے۔ ریڈی قطار ہمیشہ کمپیوٹر کی مین میموری میں رکھی جاتی ہے۔ اس تصور کو سمجھنے کے لیے اس صورتِ حال پر غور کریں کہ MS Word، MS Excel اور MS Access جیسے ایپلیکیشن پروگرام کھلے ہوں، صارف MS Word دستاویز میں ٹائپ کر رہا ہو اور باقی پروگرام کوئی کام کیے بغیر صرف مین میموری میں پڑے ہوں۔",
+     "pashto": "څو-پروګرامي کار هغه مفهوم دی چې پکې له یوه زیاتو کاروونکو پروګرامونه د کمپیوټر په اصلي حافظه (RAM) کې په یو وخت فعال وي او عملیاتي سیسټم په یو وخت له چمتو کتار یوه دنده ټاکي او د اجرا لپاره یې CPU ته سپاري. چمتو کتار تل د کمپیوټر په اصلي حافظه کې ایښودل کېږي. د دې مفهوم د پوهېدو لپاره دا حالت په پام کې ونیسئ چې کاريال پروګرامونه لکه MS Word، MS Excel او MS Access پرانیستي وي، کاروونکی په MS Word سند کې ټایپ کوي او نور یې پرته له کوم کار په اصلي حافظه کې پاتې دي."
+    },
+    {
+     "text": "The concept of multitasking means performing multiple tasks in parallel. Always, a single CPU processes one task at a time but the switching of CPU between the processes is so fast that it gives the impression of simultaneous execution of multiple processes. While listening to music, we can browse Internet and print some document at the same time. In a broad sense, both the multiprogramming and multitasking are the same things with two different names.",
+     "urdu": "ملٹی ٹاسکنگ کے تصور کا مطلب متعدد کاموں کو متوازی طور پر انجام دینا ہے۔ ایک CPU ہمیشہ ایک وقت میں ایک ہی کام پراسیس کرتا ہے لیکن پراسیسز کے درمیان CPU کی تبدیلی اتنی تیز ہوتی ہے کہ متعدد پراسیسز کے بیک وقت چلنے کا تاثر ملتا ہے۔ موسیقی سنتے ہوئے ہم ایک ہی وقت میں انٹرنیٹ براؤز کر سکتے ہیں اور کوئی دستاویز پرنٹ کر سکتے ہیں۔ وسیع معنوں میں ملٹی پروگرامنگ اور ملٹی ٹاسکنگ دونوں ایک ہی چیز ہیں جن کے دو مختلف نام ہیں۔",
+     "pashto": "د څو-دندیز کار مفهوم د ډېرو دندو په موازي ډول ترسره کول دي. یو CPU تل په یو وخت یوه دنده پروسس کوي، خو د پروسو ترمنځ د CPU بدلون دومره چټک وي چې د ډېرو پروسو د یوځای اجرا تاثر ورکوي. د موسیقۍ اورېدو پر مهال موږ په یو وخت انټرنېټ لټولی او یو سند چاپولی شو. په پراخه معنا څو-پروګرامي او څو-دندیز کار دواړه یو شی دي چې دوه بېل نومونه لري."
+    }
+   ],
+   "theory": "Processes vs. Threads\n\nProcesses are independent of one another while threads are not independent of one another.\n\nUnlike processes, all threads can access every address in the task.\n\nProcesses might or might not assist one another because processes may originate from different users while threads are designed to assist one another.\n\n1.3.4 Multitasking and Multithreading\n\nThe features of a multitasking operating system is to execute more than one programs simultaneously while the multithreading feature executes different parts of the program, called threads, simultaneously.\n\nAs multitasking executes individual program, therefore, the multitasking operating systems use separate memory and data, while the multithreaded operating systems share the same memory and data variables for all threads of the same process.\n\nImplementation of multitasking is relatively easier in operating systems than the implementation of multithreading.\n\n1.3.5 Multitasking and Multiprogramming\n\nMultiprogramming is the concept in which more than one user’s programs are active at the same time in the main memory (RAM) of the computer and the operating system selects one job at a time from the ready queue and assigns it to the CPU for execution. The ready queue is always placed in the main memory of the computer. To understand this concept, consider the scenario of having the application programs such as MS Word, MS Excel, and MS Access opened with a user typing in MS Word document and leaving the others just in main memory without performing any task.\n\nThe concept of multitasking means performing multiple tasks in parallel. Always, a single CPU processes one task at a time but the switching of CPU between the processes is so fast that it gives the impression of simultaneous execution of multiple processes. While listening to music, we can browse Internet and print some document at the same time. In a broad sense, both the multiprogramming and multitasking are the same things with two different names.",
+   "urdu": "پراسیسز بمقابلہ تھریڈز\n\nپراسیسز ایک دوسرے سے آزاد ہوتے ہیں جبکہ تھریڈز ایک دوسرے سے آزاد نہیں ہوتے۔\n\nپراسیسز کے برعکس تمام تھریڈز ٹاسک میں ہر پتے تک رسائی حاصل کر سکتے ہیں۔\n\nپراسیسز ایک دوسرے کی مدد کر بھی سکتے ہیں اور نہیں بھی، کیونکہ پراسیسز مختلف صارفین سے شروع ہو سکتے ہیں جبکہ تھریڈز ایک دوسرے کی مدد کے لیے بنائے جاتے ہیں۔\n\n1.3.4 ملٹی ٹاسکنگ اور ملٹی تھریڈنگ\n\nملٹی ٹاسکنگ آپریٹنگ سسٹم کی خصوصیت ایک سے زیادہ پروگراموں کو بیک وقت چلانا ہے جبکہ ملٹی تھریڈنگ کی خصوصیت پروگرام کے مختلف حصوں، جنھیں تھریڈز کہتے ہیں، کو بیک وقت چلاتی ہے۔\n\nچونکہ ملٹی ٹاسکنگ الگ الگ پروگرام چلاتی ہے، اس لیے ملٹی ٹاسکنگ آپریٹنگ سسٹم الگ میموری اور ڈیٹا استعمال کرتے ہیں، جبکہ ملٹی تھریڈڈ آپریٹنگ سسٹم ایک ہی پراسیس کے تمام تھریڈز کے لیے ایک ہی میموری اور ڈیٹا ویری ایبلز مشترک رکھتے ہیں۔\n\nآپریٹنگ سسٹمز میں ملٹی ٹاسکنگ کا نفاذ ملٹی تھریڈنگ کے نفاذ کے مقابلے میں نسبتاً آسان ہے۔\n\n1.3.5 ملٹی ٹاسکنگ اور ملٹی پروگرامنگ\n\nملٹی پروگرامنگ وہ تصور ہے جس میں ایک سے زیادہ صارفین کے پروگرام کمپیوٹر کی مین میموری (RAM) میں بیک وقت فعال ہوتے ہیں اور آپریٹنگ سسٹم ریڈی قطار سے ایک وقت میں ایک جاب منتخب کر کے اسے چلانے کے لیے CPU کو تفویض کرتا ہے۔ ریڈی قطار ہمیشہ کمپیوٹر کی مین میموری میں رکھی جاتی ہے۔ اس تصور کو سمجھنے کے لیے اس صورتِ حال پر غور کریں کہ MS Word، MS Excel اور MS Access جیسے ایپلیکیشن پروگرام کھلے ہوں، صارف MS Word دستاویز میں ٹائپ کر رہا ہو اور باقی پروگرام کوئی کام کیے بغیر صرف مین میموری میں پڑے ہوں۔\n\nملٹی ٹاسکنگ کے تصور کا مطلب متعدد کاموں کو متوازی طور پر انجام دینا ہے۔ ایک CPU ہمیشہ ایک وقت میں ایک ہی کام پراسیس کرتا ہے لیکن پراسیسز کے درمیان CPU کی تبدیلی اتنی تیز ہوتی ہے کہ متعدد پراسیسز کے بیک وقت چلنے کا تاثر ملتا ہے۔ موسیقی سنتے ہوئے ہم ایک ہی وقت میں انٹرنیٹ براؤز کر سکتے ہیں اور کوئی دستاویز پرنٹ کر سکتے ہیں۔ وسیع معنوں میں ملٹی پروگرامنگ اور ملٹی ٹاسکنگ دونوں ایک ہی چیز ہیں جن کے دو مختلف نام ہیں۔",
+   "pashto": "پروسې د تارونو په پرتله\n\nپروسې یو له بل خپلواکې دي، په داسې حال کې چې تارونه یو له بل خپلواک نه دي.\n\nد پروسو پر خلاف ټول تارونه په دنده کې هرې پتې ته لاسرسی لري.\n\nپروسې کېدای شي د یو بل مرسته وکړي یا ونه کړي، ځکه پروسې کېدای شي له بېلابېلو کاروونکو پیل شي، په داسې حال کې چې تارونه د یو بل د مرستې لپاره ډیزاین شوي.\n\n۱.۳.۴ څو-دندیز او څو-تاریز کار\n\nد څو-دندیز عملیاتي سیسټم ځانګړنه په یو وخت له یوه زیات پروګرامونو اجرا ده، په داسې حال کې چې د څو-تاریز کار ځانګړنه د پروګرام بېلابېلې برخې چې تارونه بلل کېږي، په یو وخت اجرا کوي.\n\nڅرنګه چې څو-دندیز کار جلا جلا پروګرامونه اجرا کوي، نو څو-دندیز عملیاتي سیسټمونه جلا حافظه او ډېټا کاروي، په داسې حال کې چې څو-تاریز عملیاتي سیسټمونه د یوې پروسې د ټولو تارونو لپاره یوه حافظه او د ډېټا متغیرونه شریکوي.\n\nپه عملیاتي سیسټمونو کې د څو-دندیز کار پلي کول د څو-تاریز کار د پلي کولو په پرتله نسبتاً اسانه دي.\n\n۱.۳.۵ څو-دندیز او څو-پروګرامي کار\n\nڅو-پروګرامي کار هغه مفهوم دی چې پکې له یوه زیاتو کاروونکو پروګرامونه د کمپیوټر په اصلي حافظه (RAM) کې په یو وخت فعال وي او عملیاتي سیسټم په یو وخت له چمتو کتار یوه دنده ټاکي او د اجرا لپاره یې CPU ته سپاري. چمتو کتار تل د کمپیوټر په اصلي حافظه کې ایښودل کېږي. د دې مفهوم د پوهېدو لپاره دا حالت په پام کې ونیسئ چې کاريال پروګرامونه لکه MS Word، MS Excel او MS Access پرانیستي وي، کاروونکی په MS Word سند کې ټایپ کوي او نور یې پرته له کوم کار په اصلي حافظه کې پاتې دي.\n\nد څو-دندیز کار مفهوم د ډېرو دندو په موازي ډول ترسره کول دي. یو CPU تل په یو وخت یوه دنده پروسس کوي، خو د پروسو ترمنځ د CPU بدلون دومره چټک وي چې د ډېرو پروسو د یوځای اجرا تاثر ورکوي. د موسیقۍ اورېدو پر مهال موږ په یو وخت انټرنېټ لټولی او یو سند چاپولی شو. په پراخه معنا څو-پروګرامي او څو-دندیز کار دواړه یو شی دي چې دوه بېل نومونه لري.",
+   "theoryUrdu": "پراسیسز بمقابلہ تھریڈز\n\nپراسیسز ایک دوسرے سے آزاد ہوتے ہیں جبکہ تھریڈز ایک دوسرے سے آزاد نہیں ہوتے۔\n\nپراسیسز کے برعکس تمام تھریڈز ٹاسک میں ہر پتے تک رسائی حاصل کر سکتے ہیں۔\n\nپراسیسز ایک دوسرے کی مدد کر بھی سکتے ہیں اور نہیں بھی، کیونکہ پراسیسز مختلف صارفین سے شروع ہو سکتے ہیں جبکہ تھریڈز ایک دوسرے کی مدد کے لیے بنائے جاتے ہیں۔\n\n1.3.4 ملٹی ٹاسکنگ اور ملٹی تھریڈنگ\n\nملٹی ٹاسکنگ آپریٹنگ سسٹم کی خصوصیت ایک سے زیادہ پروگراموں کو بیک وقت چلانا ہے جبکہ ملٹی تھریڈنگ کی خصوصیت پروگرام کے مختلف حصوں، جنھیں تھریڈز کہتے ہیں، کو بیک وقت چلاتی ہے۔\n\nچونکہ ملٹی ٹاسکنگ الگ الگ پروگرام چلاتی ہے، اس لیے ملٹی ٹاسکنگ آپریٹنگ سسٹم الگ میموری اور ڈیٹا استعمال کرتے ہیں، جبکہ ملٹی تھریڈڈ آپریٹنگ سسٹم ایک ہی پراسیس کے تمام تھریڈز کے لیے ایک ہی میموری اور ڈیٹا ویری ایبلز مشترک رکھتے ہیں۔\n\nآپریٹنگ سسٹمز میں ملٹی ٹاسکنگ کا نفاذ ملٹی تھریڈنگ کے نفاذ کے مقابلے میں نسبتاً آسان ہے۔\n\n1.3.5 ملٹی ٹاسکنگ اور ملٹی پروگرامنگ\n\nملٹی پروگرامنگ وہ تصور ہے جس میں ایک سے زیادہ صارفین کے پروگرام کمپیوٹر کی مین میموری (RAM) میں بیک وقت فعال ہوتے ہیں اور آپریٹنگ سسٹم ریڈی قطار سے ایک وقت میں ایک جاب منتخب کر کے اسے چلانے کے لیے CPU کو تفویض کرتا ہے۔ ریڈی قطار ہمیشہ کمپیوٹر کی مین میموری میں رکھی جاتی ہے۔ اس تصور کو سمجھنے کے لیے اس صورتِ حال پر غور کریں کہ MS Word، MS Excel اور MS Access جیسے ایپلیکیشن پروگرام کھلے ہوں، صارف MS Word دستاویز میں ٹائپ کر رہا ہو اور باقی پروگرام کوئی کام کیے بغیر صرف مین میموری میں پڑے ہوں۔\n\nملٹی ٹاسکنگ کے تصور کا مطلب متعدد کاموں کو متوازی طور پر انجام دینا ہے۔ ایک CPU ہمیشہ ایک وقت میں ایک ہی کام پراسیس کرتا ہے لیکن پراسیسز کے درمیان CPU کی تبدیلی اتنی تیز ہوتی ہے کہ متعدد پراسیسز کے بیک وقت چلنے کا تاثر ملتا ہے۔ موسیقی سنتے ہوئے ہم ایک ہی وقت میں انٹرنیٹ براؤز کر سکتے ہیں اور کوئی دستاویز پرنٹ کر سکتے ہیں۔ وسیع معنوں میں ملٹی پروگرامنگ اور ملٹی ٹاسکنگ دونوں ایک ہی چیز ہیں جن کے دو مختلف نام ہیں۔",
+   "theoryPashto": "پروسې د تارونو په پرتله\n\nپروسې یو له بل خپلواکې دي، په داسې حال کې چې تارونه یو له بل خپلواک نه دي.\n\nد پروسو پر خلاف ټول تارونه په دنده کې هرې پتې ته لاسرسی لري.\n\nپروسې کېدای شي د یو بل مرسته وکړي یا ونه کړي، ځکه پروسې کېدای شي له بېلابېلو کاروونکو پیل شي، په داسې حال کې چې تارونه د یو بل د مرستې لپاره ډیزاین شوي.\n\n۱.۳.۴ څو-دندیز او څو-تاریز کار\n\nد څو-دندیز عملیاتي سیسټم ځانګړنه په یو وخت له یوه زیات پروګرامونو اجرا ده، په داسې حال کې چې د څو-تاریز کار ځانګړنه د پروګرام بېلابېلې برخې چې تارونه بلل کېږي، په یو وخت اجرا کوي.\n\nڅرنګه چې څو-دندیز کار جلا جلا پروګرامونه اجرا کوي، نو څو-دندیز عملیاتي سیسټمونه جلا حافظه او ډېټا کاروي، په داسې حال کې چې څو-تاریز عملیاتي سیسټمونه د یوې پروسې د ټولو تارونو لپاره یوه حافظه او د ډېټا متغیرونه شریکوي.\n\nپه عملیاتي سیسټمونو کې د څو-دندیز کار پلي کول د څو-تاریز کار د پلي کولو په پرتله نسبتاً اسانه دي.\n\n۱.۳.۵ څو-دندیز او څو-پروګرامي کار\n\nڅو-پروګرامي کار هغه مفهوم دی چې پکې له یوه زیاتو کاروونکو پروګرامونه د کمپیوټر په اصلي حافظه (RAM) کې په یو وخت فعال وي او عملیاتي سیسټم په یو وخت له چمتو کتار یوه دنده ټاکي او د اجرا لپاره یې CPU ته سپاري. چمتو کتار تل د کمپیوټر په اصلي حافظه کې ایښودل کېږي. د دې مفهوم د پوهېدو لپاره دا حالت په پام کې ونیسئ چې کاريال پروګرامونه لکه MS Word، MS Excel او MS Access پرانیستي وي، کاروونکی په MS Word سند کې ټایپ کوي او نور یې پرته له کوم کار په اصلي حافظه کې پاتې دي.\n\nد څو-دندیز کار مفهوم د ډېرو دندو په موازي ډول ترسره کول دي. یو CPU تل په یو وخت یوه دنده پروسس کوي، خو د پروسو ترمنځ د CPU بدلون دومره چټک وي چې د ډېرو پروسو د یوځای اجرا تاثر ورکوي. د موسیقۍ اورېدو پر مهال موږ په یو وخت انټرنېټ لټولی او یو سند چاپولی شو. په پراخه معنا څو-پروګرامي او څو-دندیز کار دواړه یو شی دي چې دوه بېل نومونه لري.",
+   "content": "<p>Processes vs. Threads</p><p>Processes are independent of one another while threads are not independent of one another.</p><p>Unlike processes, all threads can access every address in the task.</p><p>Processes might or might not assist one another because processes may originate from different users while threads are designed to assist one another.</p><p>1.3.4 Multitasking and Multithreading</p><p>The features of a multitasking operating system is to execute more than one programs simultaneously while the multithreading feature executes different parts of the program, called threads, simultaneously.</p><p>As multitasking executes individual program, therefore, the multitasking operating systems use separate memory and data, while the multithreaded operating systems share the same memory and data variables for all threads of the same process.</p><p>Implementation of multitasking is relatively easier in operating systems than the implementation of multithreading.</p><p>1.3.5 Multitasking and Multiprogramming</p><p>Multiprogramming is the concept in which more than one user’s programs are active at the same time in the main memory (RAM) of the computer and the operating system selects one job at a time from the ready queue and assigns it to the CPU for execution. The ready queue is always placed in the main memory of the computer. To understand this concept, consider the scenario of having the application programs such as MS Word, MS Excel, and MS Access opened with a user typing in MS Word document and leaving the others just in main memory without performing any task.</p><p>The concept of multitasking means performing multiple tasks in parallel. Always, a single CPU processes one task at a time but the switching of CPU between the processes is so fast that it gives the impression of simultaneous execution of multiple processes. While listening to music, we can browse Internet and print some document at the same time. In a broad sense, both the multiprogramming and multitasking are the same things with two different names.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 18,
+     "printedPages": [
+      24,
+      25
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 1 text (12)",
+   "sourcePageLabel": "PDF 18 · p. 24–25",
+   "unit": 1
+  },
+  {
+   "id": "cs12-u1-summary",
+   "title": "Unit 1 summary",
+   "headingUrdu": "یونٹ 1: خلاصہ",
+   "headingPashto": "۱ څپرکی: لنډیز",
+   "paras": [
+    {
+     "text": "Summary",
+     "urdu": "خلاصہ",
+     "pashto": "لنډیز"
+    },
+    {
+     "text": "An operating system is a program that acts as an interface between the user and the computer hardware and controls the execution of all kinds of programs.",
+     "urdu": "آپریٹنگ سسٹم ایک پروگرام ہے جو صارف اور کمپیوٹر ہارڈویئر کے درمیان انٹرفیس کا کام کرتا ہے اور ہر قسم کے پروگراموں کے چلنے کو کنٹرول کرتا ہے۔",
+     "pashto": "عملیاتي سیسټم داسې پروګرام دی چې د کاروونکي او کمپیوټري هارډویر ترمنځ د منځګړي کار کوي او د هر ډول پروګرامونو اجرا کنټرولوي."
+    },
+    {
+     "text": "The history of operating system goes back to 1950s and different types of operating system have been developed so far. DOS, Windows, Macintosh and UNIX are the examples of operating systems.",
+     "urdu": "آپریٹنگ سسٹم کی تاریخ 1950ء کی دہائی تک جاتی ہے اور اب تک مختلف اقسام کے آپریٹنگ سسٹم تیار ہو چکے ہیں۔ DOS، Windows، Macintosh اور UNIX آپریٹنگ سسٹمز کی مثالیں ہیں۔",
+     "pashto": "د عملیاتي سیسټم تاریخ ۱۹۵۰مو کلونو ته رسېږي او تر اوسه بېلابېل ډوله عملیاتي سیسټمونه جوړ شوي. DOS، Windows، Macintosh او UNIX د عملیاتي سیسټمونو بېلګې دي."
+    },
+    {
+     "text": "Modern operating systems have been passed through a long evolutionary period starting from batch processing system, multiprogramming and then to distributed, parallel and embedded operating systems.",
+     "urdu": "جدید آپریٹنگ سسٹم بیچ پراسیسنگ سسٹم سے شروع ہو کر ملٹی پروگرامنگ اور پھر ڈسٹری بیوٹڈ، پیرالل اور ایمبیڈڈ آپریٹنگ سسٹمز تک ایک طویل ارتقائی دور سے گزرے ہیں۔",
+     "pashto": "نوي عملیاتي سیسټمونه له ډله‌ییز پروسس سیسټم پیل، بیا څو-پروګرامي او بیا وېشل شوي، موازي او ننښتي عملیاتي سیسټمونو ته د یوې اوږدې تکاملي دورې څخه تېر شوي."
+    },
+    {
+     "text": "Operating system acts like a controller and thus performs a wide range of functions and services such as process management, memory management, file management, I/O management, network management and ensuring security.",
+     "urdu": "آپریٹنگ سسٹم ایک کنٹرولر کی طرح کام کرتا ہے اور یوں افعال اور خدمات کی ایک وسیع رینج انجام دیتا ہے جیسے پراسیس مینجمنٹ، میموری مینجمنٹ، فائل مینجمنٹ، I/O مینجمنٹ، نیٹ ورک مینجمنٹ اور سلامتی کو یقینی بنانا۔",
+     "pashto": "عملیاتي سیسټم د کنټرولوونکي په څېر عمل کوي او په دې ډول ډېرې دندې او خدمتونه ترسره کوي لکه د پروسې اداره، د حافظې اداره، د فایلونو اداره، د I/O اداره، د شبکې اداره او د امنیت ډاډمنول."
+    },
+    {
+     "text": "A job under execution is called process. A process can be in one of ready, running or waiting state. It is the responsibility of the operating system to decide which process to be assigned to the CPU for execution and which to be suspended and placed back either in waiting or ready state.",
+     "urdu": "زیرِ عمل جاب کو پراسیس کہتے ہیں۔ پراسیس تیار، چلتی یا انتظار کی حالت میں سے کسی ایک میں ہو سکتا ہے۔ یہ آپریٹنگ سسٹم کی ذمہ داری ہے کہ فیصلہ کرے کہ کون سا پراسیس چلانے کے لیے CPU کو تفویض کیا جائے اور کون سا معطل کر کے دوبارہ انتظار یا تیار حالت میں رکھا جائے۔",
+     "pashto": "د اجرا لاندې دندې ته پروسه ویل کېږي. یوه پروسه کېدای شي په چمتو، روان یا انتظار حالت کې وي. دا د عملیاتي سیسټم مسؤولیت دی چې پرېکړه وکړي کومه پروسه د اجرا لپاره CPU ته وسپارل شي او کومه وځنډول شي او بېرته په انتظار یا چمتو حالت کې کېښودل شي."
+    }
+   ],
+   "theory": "Summary\n\nAn operating system is a program that acts as an interface between the user and the computer hardware and controls the execution of all kinds of programs.\n\nThe history of operating system goes back to 1950s and different types of operating system have been developed so far. DOS, Windows, Macintosh and UNIX are the examples of operating systems.\n\nModern operating systems have been passed through a long evolutionary period starting from batch processing system, multiprogramming and then to distributed, parallel and embedded operating systems.\n\nOperating system acts like a controller and thus performs a wide range of functions and services such as process management, memory management, file management, I/O management, network management and ensuring security.\n\nA job under execution is called process. A process can be in one of ready, running or waiting state. It is the responsibility of the operating system to decide which process to be assigned to the CPU for execution and which to be suspended and placed back either in waiting or ready state.",
+   "urdu": "خلاصہ\n\nآپریٹنگ سسٹم ایک پروگرام ہے جو صارف اور کمپیوٹر ہارڈویئر کے درمیان انٹرفیس کا کام کرتا ہے اور ہر قسم کے پروگراموں کے چلنے کو کنٹرول کرتا ہے۔\n\nآپریٹنگ سسٹم کی تاریخ 1950ء کی دہائی تک جاتی ہے اور اب تک مختلف اقسام کے آپریٹنگ سسٹم تیار ہو چکے ہیں۔ DOS، Windows، Macintosh اور UNIX آپریٹنگ سسٹمز کی مثالیں ہیں۔\n\nجدید آپریٹنگ سسٹم بیچ پراسیسنگ سسٹم سے شروع ہو کر ملٹی پروگرامنگ اور پھر ڈسٹری بیوٹڈ، پیرالل اور ایمبیڈڈ آپریٹنگ سسٹمز تک ایک طویل ارتقائی دور سے گزرے ہیں۔\n\nآپریٹنگ سسٹم ایک کنٹرولر کی طرح کام کرتا ہے اور یوں افعال اور خدمات کی ایک وسیع رینج انجام دیتا ہے جیسے پراسیس مینجمنٹ، میموری مینجمنٹ، فائل مینجمنٹ، I/O مینجمنٹ، نیٹ ورک مینجمنٹ اور سلامتی کو یقینی بنانا۔\n\nزیرِ عمل جاب کو پراسیس کہتے ہیں۔ پراسیس تیار، چلتی یا انتظار کی حالت میں سے کسی ایک میں ہو سکتا ہے۔ یہ آپریٹنگ سسٹم کی ذمہ داری ہے کہ فیصلہ کرے کہ کون سا پراسیس چلانے کے لیے CPU کو تفویض کیا جائے اور کون سا معطل کر کے دوبارہ انتظار یا تیار حالت میں رکھا جائے۔",
+   "pashto": "لنډیز\n\nعملیاتي سیسټم داسې پروګرام دی چې د کاروونکي او کمپیوټري هارډویر ترمنځ د منځګړي کار کوي او د هر ډول پروګرامونو اجرا کنټرولوي.\n\nد عملیاتي سیسټم تاریخ ۱۹۵۰مو کلونو ته رسېږي او تر اوسه بېلابېل ډوله عملیاتي سیسټمونه جوړ شوي. DOS، Windows، Macintosh او UNIX د عملیاتي سیسټمونو بېلګې دي.\n\nنوي عملیاتي سیسټمونه له ډله‌ییز پروسس سیسټم پیل، بیا څو-پروګرامي او بیا وېشل شوي، موازي او ننښتي عملیاتي سیسټمونو ته د یوې اوږدې تکاملي دورې څخه تېر شوي.\n\nعملیاتي سیسټم د کنټرولوونکي په څېر عمل کوي او په دې ډول ډېرې دندې او خدمتونه ترسره کوي لکه د پروسې اداره، د حافظې اداره، د فایلونو اداره، د I/O اداره، د شبکې اداره او د امنیت ډاډمنول.\n\nد اجرا لاندې دندې ته پروسه ویل کېږي. یوه پروسه کېدای شي په چمتو، روان یا انتظار حالت کې وي. دا د عملیاتي سیسټم مسؤولیت دی چې پرېکړه وکړي کومه پروسه د اجرا لپاره CPU ته وسپارل شي او کومه وځنډول شي او بېرته په انتظار یا چمتو حالت کې کېښودل شي.",
+   "theoryUrdu": "خلاصہ\n\nآپریٹنگ سسٹم ایک پروگرام ہے جو صارف اور کمپیوٹر ہارڈویئر کے درمیان انٹرفیس کا کام کرتا ہے اور ہر قسم کے پروگراموں کے چلنے کو کنٹرول کرتا ہے۔\n\nآپریٹنگ سسٹم کی تاریخ 1950ء کی دہائی تک جاتی ہے اور اب تک مختلف اقسام کے آپریٹنگ سسٹم تیار ہو چکے ہیں۔ DOS، Windows، Macintosh اور UNIX آپریٹنگ سسٹمز کی مثالیں ہیں۔\n\nجدید آپریٹنگ سسٹم بیچ پراسیسنگ سسٹم سے شروع ہو کر ملٹی پروگرامنگ اور پھر ڈسٹری بیوٹڈ، پیرالل اور ایمبیڈڈ آپریٹنگ سسٹمز تک ایک طویل ارتقائی دور سے گزرے ہیں۔\n\nآپریٹنگ سسٹم ایک کنٹرولر کی طرح کام کرتا ہے اور یوں افعال اور خدمات کی ایک وسیع رینج انجام دیتا ہے جیسے پراسیس مینجمنٹ، میموری مینجمنٹ، فائل مینجمنٹ، I/O مینجمنٹ، نیٹ ورک مینجمنٹ اور سلامتی کو یقینی بنانا۔\n\nزیرِ عمل جاب کو پراسیس کہتے ہیں۔ پراسیس تیار، چلتی یا انتظار کی حالت میں سے کسی ایک میں ہو سکتا ہے۔ یہ آپریٹنگ سسٹم کی ذمہ داری ہے کہ فیصلہ کرے کہ کون سا پراسیس چلانے کے لیے CPU کو تفویض کیا جائے اور کون سا معطل کر کے دوبارہ انتظار یا تیار حالت میں رکھا جائے۔",
+   "theoryPashto": "لنډیز\n\nعملیاتي سیسټم داسې پروګرام دی چې د کاروونکي او کمپیوټري هارډویر ترمنځ د منځګړي کار کوي او د هر ډول پروګرامونو اجرا کنټرولوي.\n\nد عملیاتي سیسټم تاریخ ۱۹۵۰مو کلونو ته رسېږي او تر اوسه بېلابېل ډوله عملیاتي سیسټمونه جوړ شوي. DOS، Windows، Macintosh او UNIX د عملیاتي سیسټمونو بېلګې دي.\n\nنوي عملیاتي سیسټمونه له ډله‌ییز پروسس سیسټم پیل، بیا څو-پروګرامي او بیا وېشل شوي، موازي او ننښتي عملیاتي سیسټمونو ته د یوې اوږدې تکاملي دورې څخه تېر شوي.\n\nعملیاتي سیسټم د کنټرولوونکي په څېر عمل کوي او په دې ډول ډېرې دندې او خدمتونه ترسره کوي لکه د پروسې اداره، د حافظې اداره، د فایلونو اداره، د I/O اداره، د شبکې اداره او د امنیت ډاډمنول.\n\nد اجرا لاندې دندې ته پروسه ویل کېږي. یوه پروسه کېدای شي په چمتو، روان یا انتظار حالت کې وي. دا د عملیاتي سیسټم مسؤولیت دی چې پرېکړه وکړي کومه پروسه د اجرا لپاره CPU ته وسپارل شي او کومه وځنډول شي او بېرته په انتظار یا چمتو حالت کې کېښودل شي.",
+   "content": "<p>Summary</p><p>An operating system is a program that acts as an interface between the user and the computer hardware and controls the execution of all kinds of programs.</p><p>The history of operating system goes back to 1950s and different types of operating system have been developed so far. DOS, Windows, Macintosh and UNIX are the examples of operating systems.</p><p>Modern operating systems have been passed through a long evolutionary period starting from batch processing system, multiprogramming and then to distributed, parallel and embedded operating systems.</p><p>Operating system acts like a controller and thus performs a wide range of functions and services such as process management, memory management, file management, I/O management, network management and ensuring security.</p><p>A job under execution is called process. A process can be in one of ready, running or waiting state. It is the responsibility of the operating system to decide which process to be assigned to the CPU for execution and which to be suspended and placed back either in waiting or ready state.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 18,
+     "printedPages": [
+      25
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 1 summary",
+   "sourcePageLabel": "PDF 18 · p. 25",
+   "sourceNote": "The summary continues on p.26 (PDF19).",
+   "unit": 1
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf018",
+   "unit": 1,
+   "printedPage": 24,
+   "description": "p.24 prints “The features … is to execute more than one programs” and the section numbers as “1.3. 4”/“1.3. 5”; p.25 “have been passed through”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

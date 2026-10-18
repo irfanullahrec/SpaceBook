@@ -1,0 +1,153 @@
+{
+ "pdfPage": 100,
+ "sections": [
+  {
+   "id": "cs12-u6-text-7",
+   "title": "Unit 6 text (7)",
+   "headingUrdu": "یونٹ 6 — متن (7)",
+   "headingPashto": "۶ څپرکی — متن (7)",
+   "paras": [
+    {
+     "text": "In this example, the variables val1, val2, val3 are defined globally and can be accessed both in main() function and add() function without generating any error message. Here in the same program, the variables sum in function add() and total in function main() are local to the respective functions and are not visible outside the boundaries of these functions.",
+     "urdu": "اس مثال میں ویری ایبلز val1، val2، val3 عالمی طور پر بیان کیے گئے ہیں اور کسی خرابی کے پیغام کے بغیر main() فنکشن اور add() فنکشن دونوں میں قابلِ رسائی ہیں۔ یہاں اسی پروگرام میں فنکشن add() میں ویری ایبل sum اور فنکشن main() میں total اپنے اپنے فنکشنز کے لیے مقامی ہیں اور ان فنکشنز کی حدود کے باہر نظر نہیں آتے۔",
+     "pashto": "په دې بېلګه کې val1، val2، val3 متغیرونه نړیوال تعریف شوي او پرته له تېروتنې پیغامه په main() او add() دواړو فنکشنونو کې د لاسرسي وړ دي. دلته په همدې پروګرام کې د add() فنکشن متغیر sum او د main() فنکشن total په خپلو فنکشنونو پورې محلي دي او د دې فنکشنونو له پولو بهر نه لیدل کېږي."
+    },
+    {
+     "text": "c. Static variables",
+     "urdu": "c. اسٹیٹک ویری ایبلز",
+     "pashto": "c. ثابت متغیرونه"
+    },
+    {
+     "text": "Static variables are those variables which are preceded by the keyword static while declaring. For example:",
+     "urdu": "اسٹیٹک ویری ایبلز وہ ویری ایبلز ہیں جن سے ڈکلیئر کرتے وقت کلیدی لفظ static پہلے لکھا جاتا ہے۔ مثلاً:",
+     "pashto": "ثابت متغیرونه هغه متغیرونه دي چې د اعلان پر مهال ورته static کلیدي کلمه مخکې لیکل کېږي. د بېلګې په توګه:"
+    },
+    {
+     "text": "static Static_Var;",
+     "urdu": "static Static_Var;",
+     "pashto": "static Static_Var;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Static variables are initialized once in the program and remains in memory until the end of the program. These variables have the capability to preserve information about the last value a function returned, until the program completely ends. Static variables are local in scope to their module or function in which they are defined, but life is throughout the program.",
+     "urdu": "اسٹیٹک ویری ایبلز کو پروگرام میں ایک بار ابتدائی قدر دی جاتی ہے اور یہ پروگرام کے اختتام تک میموری میں رہتے ہیں۔ یہ ویری ایبلز فنکشن کی واپس کی گئی آخری قدر کے بارے میں معلومات پروگرام کے مکمل ختم ہونے تک محفوظ رکھنے کی صلاحیت رکھتے ہیں۔ اسٹیٹک ویری ایبلز کا دائرہ اس ماڈیول یا فنکشن تک مقامی ہوتا ہے جس میں وہ بیان کیے گئے ہوں، لیکن ان کی زندگی پورے پروگرام تک ہوتی ہے۔",
+     "pashto": "ثابت متغیرونو ته په پروګرام کې یو ځل لومړنی ارزښت ورکول کېږي او د پروګرام تر پایه په حافظه کې پاتې کېږي. دا متغیرونه وړتیا لري چې د فنکشن د وروستي بېرته ورکړل شوي ارزښت معلومات د پروګرام تر بشپړ پای ساتي. ثابت متغیرونه په ساحه کې په هغه ماډیول یا فنکشن پورې محلي دي چې پکې تعریف شوي، خو ژوند یې د ټول پروګرام په اوږدو کې دی."
+    },
+    {
+     "text": "Consider the following example to demonstrate the use of static variables.",
+     "urdu": "اسٹیٹک ویری ایبلز کا استعمال واضح کرنے کے لیے درج ذیل مثال پر غور کریں۔",
+     "pashto": "د ثابتو متغیرونو د کارونې د ښودلو لپاره لاندې بېلګې ته پام وکړئ."
+    },
+    {
+     "text": "/* static and automatic variables program*/\n#include <conio.h>\n#include <iostream.h>\nvoid demo(){\nauto int Auto_Var = 0; // automatic variable\nstatic int Static_Var = 0; // static variable\ncout<<\"Auto =\"<<Auto_Var<< \",\"<< \"Static=\"<<Static_Var<<endl;\n++ Auto_Var; ++ Static_Var; }\nint main()\n{\nint i=0;\nwhile( i < 3 )\n{ demo(); i++; }\ngetch();\nreturn 0;\n}",
+     "urdu": "/* static and automatic variables program*/\n#include <conio.h>\n#include <iostream.h>\nvoid demo(){\nauto int Auto_Var = 0; // automatic variable\nstatic int Static_Var = 0; // static variable\ncout<<\"Auto =\"<<Auto_Var<< \",\"<< \"Static=\"<<Static_Var<<endl;\n++ Auto_Var; ++ Static_Var; }\nint main()\n{\nint i=0;\nwhile( i < 3 )\n{ demo(); i++; }\ngetch();\nreturn 0;\n}",
+     "pashto": "/* static and automatic variables program*/\n#include <conio.h>\n#include <iostream.h>\nvoid demo(){\nauto int Auto_Var = 0; // automatic variable\nstatic int Static_Var = 0; // static variable\ncout<<\"Auto =\"<<Auto_Var<< \",\"<< \"Static=\"<<Static_Var<<endl;\n++ Auto_Var; ++ Static_Var; }\nint main()\n{\nint i=0;\nwhile( i < 3 )\n{ demo(); i++; }\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Auto = 0, Static = 0\nAuto = 0, Static = 1\nAuto = 0, Static = 2",
+     "urdu": "Auto = 0, Static = 0\nAuto = 0, Static = 1\nAuto = 0, Static = 2",
+     "pashto": "Auto = 0, Static = 0\nAuto = 0, Static = 1\nAuto = 0, Static = 2",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "In this example, the variables val1, val2, val3 are defined globally and can be accessed both in main() function and add() function without generating any error message. Here in the same program, the variables sum in function add() and total in function main() are local to the respective functions and are not visible outside the boundaries of these functions.\n\nc. Static variables\n\nStatic variables are those variables which are preceded by the keyword static while declaring. For example:\n\nstatic Static_Var;\n\nStatic variables are initialized once in the program and remains in memory until the end of the program. These variables have the capability to preserve information about the last value a function returned, until the program completely ends. Static variables are local in scope to their module or function in which they are defined, but life is throughout the program.\n\nConsider the following example to demonstrate the use of static variables.\n\n/* static and automatic variables program*/\n#include <conio.h>\n#include <iostream.h>\nvoid demo(){\nauto int Auto_Var = 0; // automatic variable\nstatic int Static_Var = 0; // static variable\ncout<<\"Auto =\"<<Auto_Var<< \",\"<< \"Static=\"<<Static_Var<<endl;\n++ Auto_Var; ++ Static_Var; }\nint main()\n{\nint i=0;\nwhile( i < 3 )\n{ demo(); i++; }\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nAuto = 0, Static = 0\nAuto = 0, Static = 1\nAuto = 0, Static = 2",
+   "urdu": "اس مثال میں ویری ایبلز val1، val2، val3 عالمی طور پر بیان کیے گئے ہیں اور کسی خرابی کے پیغام کے بغیر main() فنکشن اور add() فنکشن دونوں میں قابلِ رسائی ہیں۔ یہاں اسی پروگرام میں فنکشن add() میں ویری ایبل sum اور فنکشن main() میں total اپنے اپنے فنکشنز کے لیے مقامی ہیں اور ان فنکشنز کی حدود کے باہر نظر نہیں آتے۔\n\nc. اسٹیٹک ویری ایبلز\n\nاسٹیٹک ویری ایبلز وہ ویری ایبلز ہیں جن سے ڈکلیئر کرتے وقت کلیدی لفظ static پہلے لکھا جاتا ہے۔ مثلاً:\n\nstatic Static_Var;\n\nاسٹیٹک ویری ایبلز کو پروگرام میں ایک بار ابتدائی قدر دی جاتی ہے اور یہ پروگرام کے اختتام تک میموری میں رہتے ہیں۔ یہ ویری ایبلز فنکشن کی واپس کی گئی آخری قدر کے بارے میں معلومات پروگرام کے مکمل ختم ہونے تک محفوظ رکھنے کی صلاحیت رکھتے ہیں۔ اسٹیٹک ویری ایبلز کا دائرہ اس ماڈیول یا فنکشن تک مقامی ہوتا ہے جس میں وہ بیان کیے گئے ہوں، لیکن ان کی زندگی پورے پروگرام تک ہوتی ہے۔\n\nاسٹیٹک ویری ایبلز کا استعمال واضح کرنے کے لیے درج ذیل مثال پر غور کریں۔\n\n/* static and automatic variables program*/\n#include <conio.h>\n#include <iostream.h>\nvoid demo(){\nauto int Auto_Var = 0; // automatic variable\nstatic int Static_Var = 0; // static variable\ncout<<\"Auto =\"<<Auto_Var<< \",\"<< \"Static=\"<<Static_Var<<endl;\n++ Auto_Var; ++ Static_Var; }\nint main()\n{\nint i=0;\nwhile( i < 3 )\n{ demo(); i++; }\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nAuto = 0, Static = 0\nAuto = 0, Static = 1\nAuto = 0, Static = 2",
+   "pashto": "په دې بېلګه کې val1، val2، val3 متغیرونه نړیوال تعریف شوي او پرته له تېروتنې پیغامه په main() او add() دواړو فنکشنونو کې د لاسرسي وړ دي. دلته په همدې پروګرام کې د add() فنکشن متغیر sum او د main() فنکشن total په خپلو فنکشنونو پورې محلي دي او د دې فنکشنونو له پولو بهر نه لیدل کېږي.\n\nc. ثابت متغیرونه\n\nثابت متغیرونه هغه متغیرونه دي چې د اعلان پر مهال ورته static کلیدي کلمه مخکې لیکل کېږي. د بېلګې په توګه:\n\nstatic Static_Var;\n\nثابت متغیرونو ته په پروګرام کې یو ځل لومړنی ارزښت ورکول کېږي او د پروګرام تر پایه په حافظه کې پاتې کېږي. دا متغیرونه وړتیا لري چې د فنکشن د وروستي بېرته ورکړل شوي ارزښت معلومات د پروګرام تر بشپړ پای ساتي. ثابت متغیرونه په ساحه کې په هغه ماډیول یا فنکشن پورې محلي دي چې پکې تعریف شوي، خو ژوند یې د ټول پروګرام په اوږدو کې دی.\n\nد ثابتو متغیرونو د کارونې د ښودلو لپاره لاندې بېلګې ته پام وکړئ.\n\n/* static and automatic variables program*/\n#include <conio.h>\n#include <iostream.h>\nvoid demo(){\nauto int Auto_Var = 0; // automatic variable\nstatic int Static_Var = 0; // static variable\ncout<<\"Auto =\"<<Auto_Var<< \",\"<< \"Static=\"<<Static_Var<<endl;\n++ Auto_Var; ++ Static_Var; }\nint main()\n{\nint i=0;\nwhile( i < 3 )\n{ demo(); i++; }\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nAuto = 0, Static = 0\nAuto = 0, Static = 1\nAuto = 0, Static = 2",
+   "theoryUrdu": "اس مثال میں ویری ایبلز val1، val2، val3 عالمی طور پر بیان کیے گئے ہیں اور کسی خرابی کے پیغام کے بغیر main() فنکشن اور add() فنکشن دونوں میں قابلِ رسائی ہیں۔ یہاں اسی پروگرام میں فنکشن add() میں ویری ایبل sum اور فنکشن main() میں total اپنے اپنے فنکشنز کے لیے مقامی ہیں اور ان فنکشنز کی حدود کے باہر نظر نہیں آتے۔\n\nc. اسٹیٹک ویری ایبلز\n\nاسٹیٹک ویری ایبلز وہ ویری ایبلز ہیں جن سے ڈکلیئر کرتے وقت کلیدی لفظ static پہلے لکھا جاتا ہے۔ مثلاً:\n\nstatic Static_Var;\n\nاسٹیٹک ویری ایبلز کو پروگرام میں ایک بار ابتدائی قدر دی جاتی ہے اور یہ پروگرام کے اختتام تک میموری میں رہتے ہیں۔ یہ ویری ایبلز فنکشن کی واپس کی گئی آخری قدر کے بارے میں معلومات پروگرام کے مکمل ختم ہونے تک محفوظ رکھنے کی صلاحیت رکھتے ہیں۔ اسٹیٹک ویری ایبلز کا دائرہ اس ماڈیول یا فنکشن تک مقامی ہوتا ہے جس میں وہ بیان کیے گئے ہوں، لیکن ان کی زندگی پورے پروگرام تک ہوتی ہے۔\n\nاسٹیٹک ویری ایبلز کا استعمال واضح کرنے کے لیے درج ذیل مثال پر غور کریں۔\n\n/* static and automatic variables program*/\n#include <conio.h>\n#include <iostream.h>\nvoid demo(){\nauto int Auto_Var = 0; // automatic variable\nstatic int Static_Var = 0; // static variable\ncout<<\"Auto =\"<<Auto_Var<< \",\"<< \"Static=\"<<Static_Var<<endl;\n++ Auto_Var; ++ Static_Var; }\nint main()\n{\nint i=0;\nwhile( i < 3 )\n{ demo(); i++; }\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nAuto = 0, Static = 0\nAuto = 0, Static = 1\nAuto = 0, Static = 2",
+   "theoryPashto": "په دې بېلګه کې val1، val2، val3 متغیرونه نړیوال تعریف شوي او پرته له تېروتنې پیغامه په main() او add() دواړو فنکشنونو کې د لاسرسي وړ دي. دلته په همدې پروګرام کې د add() فنکشن متغیر sum او د main() فنکشن total په خپلو فنکشنونو پورې محلي دي او د دې فنکشنونو له پولو بهر نه لیدل کېږي.\n\nc. ثابت متغیرونه\n\nثابت متغیرونه هغه متغیرونه دي چې د اعلان پر مهال ورته static کلیدي کلمه مخکې لیکل کېږي. د بېلګې په توګه:\n\nstatic Static_Var;\n\nثابت متغیرونو ته په پروګرام کې یو ځل لومړنی ارزښت ورکول کېږي او د پروګرام تر پایه په حافظه کې پاتې کېږي. دا متغیرونه وړتیا لري چې د فنکشن د وروستي بېرته ورکړل شوي ارزښت معلومات د پروګرام تر بشپړ پای ساتي. ثابت متغیرونه په ساحه کې په هغه ماډیول یا فنکشن پورې محلي دي چې پکې تعریف شوي، خو ژوند یې د ټول پروګرام په اوږدو کې دی.\n\nد ثابتو متغیرونو د کارونې د ښودلو لپاره لاندې بېلګې ته پام وکړئ.\n\n/* static and automatic variables program*/\n#include <conio.h>\n#include <iostream.h>\nvoid demo(){\nauto int Auto_Var = 0; // automatic variable\nstatic int Static_Var = 0; // static variable\ncout<<\"Auto =\"<<Auto_Var<< \",\"<< \"Static=\"<<Static_Var<<endl;\n++ Auto_Var; ++ Static_Var; }\nint main()\n{\nint i=0;\nwhile( i < 3 )\n{ demo(); i++; }\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nAuto = 0, Static = 0\nAuto = 0, Static = 1\nAuto = 0, Static = 2",
+   "content": "<p>In this example, the variables val1, val2, val3 are defined globally and can be accessed both in main() function and add() function without generating any error message. Here in the same program, the variables sum in function add() and total in function main() are local to the respective functions and are not visible outside the boundaries of these functions.</p><p>c. Static variables</p><p>Static variables are those variables which are preceded by the keyword static while declaring. For example:</p><p>static Static_Var;</p><p>Static variables are initialized once in the program and remains in memory until the end of the program. These variables have the capability to preserve information about the last value a function returned, until the program completely ends. Static variables are local in scope to their module or function in which they are defined, but life is throughout the program.</p><p>Consider the following example to demonstrate the use of static variables.</p><p>/* static and automatic variables program*/\n#include &lt;conio.h&gt;\n#include &lt;iostream.h&gt;\nvoid demo(){\nauto int Auto_Var = 0; // automatic variable\nstatic int Static_Var = 0; // static variable\ncout&lt;&lt;&quot;Auto =&quot;&lt;&lt;Auto_Var&lt;&lt; &quot;,&quot;&lt;&lt; &quot;Static=&quot;&lt;&lt;Static_Var&lt;&lt;endl;\n++ Auto_Var; ++ Static_Var; }\nint main()\n{\nint i=0;\nwhile( i &lt; 3 )\n{ demo(); i++; }\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Auto = 0, Static = 0\nAuto = 0, Static = 1\nAuto = 0, Static = 2</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 100,
+     "printedPages": [
+      188,
+      189
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (7)",
+   "sourcePageLabel": "PDF 100 · p. 188–189",
+   "sourceNote": "The top of p.188 (end of the global-variables program and its output) is recorded with PDF99.",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf100",
+   "unit": 6,
+   "printedPage": 188,
+   "description": "The example declaration “static Static_Var;” omits a data type; p.189 “Static variables are initialized once … and remains in memory”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

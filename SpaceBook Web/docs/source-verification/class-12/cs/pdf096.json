@@ -1,0 +1,222 @@
+{
+ "pdfPage": 96,
+ "sections": [
+  {
+   "id": "cs12-u6-text-3",
+   "title": "Unit 6 text (3)",
+   "headingUrdu": "یونٹ 6 — متن (3)",
+   "headingPashto": "۶ څپرکی — متن (3)",
+   "paras": [
+    {
+     "text": "Consider a function named addition to take two integer values, add them together and return the result to the calling program. The following code segment defines this function:",
+     "urdu": "addition نامی فنکشن پر غور کریں جو دو صحیح قدریں لیتا ہے، انھیں جمع کرتا ہے اور نتیجہ کال کرنے والے پروگرام کو واپس کرتا ہے۔ درج ذیل کوڈ کا حصہ یہ فنکشن بیان کرتا ہے:",
+     "pashto": "د addition په نوم فنکشن ته پام وکړئ چې دوه صحیح ارزښتونه اخلي، یوځای یې جمع کوي او پایله غوښتونکي پروګرام ته ورکوي. لاندې د کوډ برخه دا فنکشن تعریفوي:"
+    },
+    {
+     "text": "// user-defined function (addition) program\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint sum;\nsum=a+b;\nreturn (sum);\n}\nint main()\n{\nint z;\nz = addition (55,33);\ncout << \"The sum of a and b is= \" << z;\ngetch();\nreturn 0;\n}",
+     "urdu": "// user-defined function (addition) program\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint sum;\nsum=a+b;\nreturn (sum);\n}\nint main()\n{\nint z;\nz = addition (55,33);\ncout << \"The sum of a and b is= \" << z;\ngetch();\nreturn 0;\n}",
+     "pashto": "// user-defined function (addition) program\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint sum;\nsum=a+b;\nreturn (sum);\n}\nint main()\n{\nint z;\nz = addition (55,33);\ncout << \"The sum of a and b is= \" << z;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The sum of a and b is =88",
+     "urdu": "The sum of a and b is =88",
+     "pashto": "The sum of a and b is =88",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Working of user-defined functions",
+     "urdu": "یوزر ڈیفائنڈ فنکشنز کا عمل",
+     "pashto": "د کاروونکي-تعریف شویو فنکشنونو کار"
+    },
+    {
+     "text": "In the above program, addition (int a, int b) is the example of user-defined function defined by the user to perform the addition of two integer values (55 and 33 in this case). These values are passed by the function call addition (55,33). After performing addition, the function returns the sum (88) back to calling program (in this case, main) using the following statement.",
+     "urdu": "اوپر کے پروگرام میں addition (int a, int b) یوزر ڈیفائنڈ فنکشن کی مثال ہے جسے صارف نے دو صحیح قدروں (اس صورت میں 55 اور 33) کو جمع کرنے کے لیے بیان کیا ہے۔ یہ قدریں فنکشن کال addition (55,33) سے پاس کی جاتی ہیں۔ جمع کرنے کے بعد فنکشن درج ذیل بیان کے ذریعے حاصلِ جمع (88) کال کرنے والے پروگرام (اس صورت میں main) کو واپس کرتا ہے۔",
+     "pashto": "په پورته پروګرام کې addition (int a, int b) د کاروونکي-تعریف شوي فنکشن بېلګه ده چې کاروونکي د دوو صحیح ارزښتونو (په دې حالت کې 55 او 33) د جمع لپاره تعریف کړی. دا ارزښتونه د addition (55,33) فنکشن غوښتنې له لارې لېږدول کېږي. له جمع وروسته فنکشن د لاندې بیان په مرسته مجموعه (88) غوښتونکي پروګرام (په دې حالت کې main) ته ورګرځوي."
+    },
+    {
+     "text": "return (sum);",
+     "urdu": "return (sum);",
+     "pashto": "return (sum);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The sum is assigned to the variable z, in main(), as shown below:",
+     "urdu": "حاصلِ جمع main() میں ویری ایبل z کو دیا جاتا ہے، جیسا کہ ذیل میں دکھایا گیا ہے:",
+     "pashto": "مجموعه په main() کې z متغیر ته ورکول کېږي، لکه لاندې:"
+    },
+    {
+     "text": "z = addition (55, 33);",
+     "urdu": "z = addition (55, 33);",
+     "pashto": "z = addition (55, 33);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The following line of code, in main, is used to display the result on the screen as shown in the above program.",
+     "urdu": "main میں کوڈ کی درج ذیل لائن نتیجہ اسکرین پر دکھانے کے لیے استعمال ہوتی ہے جیسا کہ اوپر کے پروگرام میں دکھایا گیا ہے۔",
+     "pashto": "په main کې د کوډ لاندې کرښه پر پرده د پایلې د ښودلو لپاره کارېږي لکه په پورته پروګرام کې."
+    },
+    {
+     "text": "cout << \"The sum of a and b is= \" << z;",
+     "urdu": "cout << \"The sum of a and b is= \" << z;",
+     "pashto": "cout << \"The sum of a and b is= \" << z;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "6.1.2 Advantages of using functions",
+     "urdu": "6.1.2 فنکشنز کے استعمال کے فوائد",
+     "pashto": "۶.۱.۲ د فنکشنونو د کارونې ګټې"
+    },
+    {
+     "text": "Using functions we can structure our programs in a more modularized way. The use of functions provides many benefits, including:",
+     "urdu": "فنکشنز کے ذریعے ہم اپنے پروگراموں کو زیادہ ماڈیولر انداز میں ترتیب دے سکتے ہیں۔ فنکشنز کا استعمال بہت سے فوائد فراہم کرتا ہے، جن میں شامل ہیں:",
+     "pashto": "د فنکشنونو په مرسته کولی شو خپل پروګرامونه په ډېر ماډیولي ډول جوړ کړو. د فنکشنونو کارونه ډېرې ګټې لري، په شمول:"
+    },
+    {
+     "text": "Code reusability: The code inside the function can be reused by calling it again and again in the program.",
+     "urdu": "کوڈ کا دوبارہ استعمال: فنکشن کے اندر کا کوڈ پروگرام میں اسے بار بار کال کر کے دوبارہ استعمال کیا جا سکتا ہے۔",
+     "pashto": "د کوډ بیا کارونه: د فنکشن دننه کوډ په پروګرام کې د بیا بیا غوښتلو له لارې بیا کارول کېدای شي."
+    },
+    {
+     "text": "Updating code: It is much easier to change or update the code in a function, which needs to be done once.",
+     "urdu": "کوڈ کی تازہ کاری: فنکشن میں کوڈ تبدیل یا تازہ کرنا بہت آسان ہے، جو صرف ایک بار کرنا ہوتا ہے۔",
+     "pashto": "د کوډ تازه کول: په فنکشن کې د کوډ بدلول یا تازه کول ډېر اسانه دي، چې یوازې یو ځل کول غواړي."
+    },
+    {
+     "text": "Readability and understandability: It makes the code easier to read and understand.",
+     "urdu": "پڑھنے اور سمجھنے میں آسانی: یہ کوڈ کو پڑھنے اور سمجھنے میں آسان بناتا ہے۔",
+     "pashto": "لوستل او پوهېدل: کوډ لوستل او پوهېدل اسانوي."
+    }
+   ],
+   "theory": "Consider a function named addition to take two integer values, add them together and return the result to the calling program. The following code segment defines this function:\n\n// user-defined function (addition) program\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint sum;\nsum=a+b;\nreturn (sum);\n}\nint main()\n{\nint z;\nz = addition (55,33);\ncout << \"The sum of a and b is= \" << z;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nThe sum of a and b is =88\n\nWorking of user-defined functions\n\nIn the above program, addition (int a, int b) is the example of user-defined function defined by the user to perform the addition of two integer values (55 and 33 in this case). These values are passed by the function call addition (55,33). After performing addition, the function returns the sum (88) back to calling program (in this case, main) using the following statement.\n\nreturn (sum);\n\nThe sum is assigned to the variable z, in main(), as shown below:\n\nz = addition (55, 33);\n\nThe following line of code, in main, is used to display the result on the screen as shown in the above program.\n\ncout << \"The sum of a and b is= \" << z;\n\n6.1.2 Advantages of using functions\n\nUsing functions we can structure our programs in a more modularized way. The use of functions provides many benefits, including:\n\nCode reusability: The code inside the function can be reused by calling it again and again in the program.\n\nUpdating code: It is much easier to change or update the code in a function, which needs to be done once.\n\nReadability and understandability: It makes the code easier to read and understand.",
+   "urdu": "addition نامی فنکشن پر غور کریں جو دو صحیح قدریں لیتا ہے، انھیں جمع کرتا ہے اور نتیجہ کال کرنے والے پروگرام کو واپس کرتا ہے۔ درج ذیل کوڈ کا حصہ یہ فنکشن بیان کرتا ہے:\n\n// user-defined function (addition) program\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint sum;\nsum=a+b;\nreturn (sum);\n}\nint main()\n{\nint z;\nz = addition (55,33);\ncout << \"The sum of a and b is= \" << z;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe sum of a and b is =88\n\nیوزر ڈیفائنڈ فنکشنز کا عمل\n\nاوپر کے پروگرام میں addition (int a, int b) یوزر ڈیفائنڈ فنکشن کی مثال ہے جسے صارف نے دو صحیح قدروں (اس صورت میں 55 اور 33) کو جمع کرنے کے لیے بیان کیا ہے۔ یہ قدریں فنکشن کال addition (55,33) سے پاس کی جاتی ہیں۔ جمع کرنے کے بعد فنکشن درج ذیل بیان کے ذریعے حاصلِ جمع (88) کال کرنے والے پروگرام (اس صورت میں main) کو واپس کرتا ہے۔\n\nreturn (sum);\n\nحاصلِ جمع main() میں ویری ایبل z کو دیا جاتا ہے، جیسا کہ ذیل میں دکھایا گیا ہے:\n\nz = addition (55, 33);\n\nmain میں کوڈ کی درج ذیل لائن نتیجہ اسکرین پر دکھانے کے لیے استعمال ہوتی ہے جیسا کہ اوپر کے پروگرام میں دکھایا گیا ہے۔\n\ncout << \"The sum of a and b is= \" << z;\n\n6.1.2 فنکشنز کے استعمال کے فوائد\n\nفنکشنز کے ذریعے ہم اپنے پروگراموں کو زیادہ ماڈیولر انداز میں ترتیب دے سکتے ہیں۔ فنکشنز کا استعمال بہت سے فوائد فراہم کرتا ہے، جن میں شامل ہیں:\n\nکوڈ کا دوبارہ استعمال: فنکشن کے اندر کا کوڈ پروگرام میں اسے بار بار کال کر کے دوبارہ استعمال کیا جا سکتا ہے۔\n\nکوڈ کی تازہ کاری: فنکشن میں کوڈ تبدیل یا تازہ کرنا بہت آسان ہے، جو صرف ایک بار کرنا ہوتا ہے۔\n\nپڑھنے اور سمجھنے میں آسانی: یہ کوڈ کو پڑھنے اور سمجھنے میں آسان بناتا ہے۔",
+   "pashto": "د addition په نوم فنکشن ته پام وکړئ چې دوه صحیح ارزښتونه اخلي، یوځای یې جمع کوي او پایله غوښتونکي پروګرام ته ورکوي. لاندې د کوډ برخه دا فنکشن تعریفوي:\n\n// user-defined function (addition) program\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint sum;\nsum=a+b;\nreturn (sum);\n}\nint main()\n{\nint z;\nz = addition (55,33);\ncout << \"The sum of a and b is= \" << z;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe sum of a and b is =88\n\nد کاروونکي-تعریف شویو فنکشنونو کار\n\nپه پورته پروګرام کې addition (int a, int b) د کاروونکي-تعریف شوي فنکشن بېلګه ده چې کاروونکي د دوو صحیح ارزښتونو (په دې حالت کې 55 او 33) د جمع لپاره تعریف کړی. دا ارزښتونه د addition (55,33) فنکشن غوښتنې له لارې لېږدول کېږي. له جمع وروسته فنکشن د لاندې بیان په مرسته مجموعه (88) غوښتونکي پروګرام (په دې حالت کې main) ته ورګرځوي.\n\nreturn (sum);\n\nمجموعه په main() کې z متغیر ته ورکول کېږي، لکه لاندې:\n\nz = addition (55, 33);\n\nپه main کې د کوډ لاندې کرښه پر پرده د پایلې د ښودلو لپاره کارېږي لکه په پورته پروګرام کې.\n\ncout << \"The sum of a and b is= \" << z;\n\n۶.۱.۲ د فنکشنونو د کارونې ګټې\n\nد فنکشنونو په مرسته کولی شو خپل پروګرامونه په ډېر ماډیولي ډول جوړ کړو. د فنکشنونو کارونه ډېرې ګټې لري، په شمول:\n\nد کوډ بیا کارونه: د فنکشن دننه کوډ په پروګرام کې د بیا بیا غوښتلو له لارې بیا کارول کېدای شي.\n\nد کوډ تازه کول: په فنکشن کې د کوډ بدلول یا تازه کول ډېر اسانه دي، چې یوازې یو ځل کول غواړي.\n\nلوستل او پوهېدل: کوډ لوستل او پوهېدل اسانوي.",
+   "theoryUrdu": "addition نامی فنکشن پر غور کریں جو دو صحیح قدریں لیتا ہے، انھیں جمع کرتا ہے اور نتیجہ کال کرنے والے پروگرام کو واپس کرتا ہے۔ درج ذیل کوڈ کا حصہ یہ فنکشن بیان کرتا ہے:\n\n// user-defined function (addition) program\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint sum;\nsum=a+b;\nreturn (sum);\n}\nint main()\n{\nint z;\nz = addition (55,33);\ncout << \"The sum of a and b is= \" << z;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe sum of a and b is =88\n\nیوزر ڈیفائنڈ فنکشنز کا عمل\n\nاوپر کے پروگرام میں addition (int a, int b) یوزر ڈیفائنڈ فنکشن کی مثال ہے جسے صارف نے دو صحیح قدروں (اس صورت میں 55 اور 33) کو جمع کرنے کے لیے بیان کیا ہے۔ یہ قدریں فنکشن کال addition (55,33) سے پاس کی جاتی ہیں۔ جمع کرنے کے بعد فنکشن درج ذیل بیان کے ذریعے حاصلِ جمع (88) کال کرنے والے پروگرام (اس صورت میں main) کو واپس کرتا ہے۔\n\nreturn (sum);\n\nحاصلِ جمع main() میں ویری ایبل z کو دیا جاتا ہے، جیسا کہ ذیل میں دکھایا گیا ہے:\n\nz = addition (55, 33);\n\nmain میں کوڈ کی درج ذیل لائن نتیجہ اسکرین پر دکھانے کے لیے استعمال ہوتی ہے جیسا کہ اوپر کے پروگرام میں دکھایا گیا ہے۔\n\ncout << \"The sum of a and b is= \" << z;\n\n6.1.2 فنکشنز کے استعمال کے فوائد\n\nفنکشنز کے ذریعے ہم اپنے پروگراموں کو زیادہ ماڈیولر انداز میں ترتیب دے سکتے ہیں۔ فنکشنز کا استعمال بہت سے فوائد فراہم کرتا ہے، جن میں شامل ہیں:\n\nکوڈ کا دوبارہ استعمال: فنکشن کے اندر کا کوڈ پروگرام میں اسے بار بار کال کر کے دوبارہ استعمال کیا جا سکتا ہے۔\n\nکوڈ کی تازہ کاری: فنکشن میں کوڈ تبدیل یا تازہ کرنا بہت آسان ہے، جو صرف ایک بار کرنا ہوتا ہے۔\n\nپڑھنے اور سمجھنے میں آسانی: یہ کوڈ کو پڑھنے اور سمجھنے میں آسان بناتا ہے۔",
+   "theoryPashto": "د addition په نوم فنکشن ته پام وکړئ چې دوه صحیح ارزښتونه اخلي، یوځای یې جمع کوي او پایله غوښتونکي پروګرام ته ورکوي. لاندې د کوډ برخه دا فنکشن تعریفوي:\n\n// user-defined function (addition) program\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint sum;\nsum=a+b;\nreturn (sum);\n}\nint main()\n{\nint z;\nz = addition (55,33);\ncout << \"The sum of a and b is= \" << z;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe sum of a and b is =88\n\nد کاروونکي-تعریف شویو فنکشنونو کار\n\nپه پورته پروګرام کې addition (int a, int b) د کاروونکي-تعریف شوي فنکشن بېلګه ده چې کاروونکي د دوو صحیح ارزښتونو (په دې حالت کې 55 او 33) د جمع لپاره تعریف کړی. دا ارزښتونه د addition (55,33) فنکشن غوښتنې له لارې لېږدول کېږي. له جمع وروسته فنکشن د لاندې بیان په مرسته مجموعه (88) غوښتونکي پروګرام (په دې حالت کې main) ته ورګرځوي.\n\nreturn (sum);\n\nمجموعه په main() کې z متغیر ته ورکول کېږي، لکه لاندې:\n\nz = addition (55, 33);\n\nپه main کې د کوډ لاندې کرښه پر پرده د پایلې د ښودلو لپاره کارېږي لکه په پورته پروګرام کې.\n\ncout << \"The sum of a and b is= \" << z;\n\n۶.۱.۲ د فنکشنونو د کارونې ګټې\n\nد فنکشنونو په مرسته کولی شو خپل پروګرامونه په ډېر ماډیولي ډول جوړ کړو. د فنکشنونو کارونه ډېرې ګټې لري، په شمول:\n\nد کوډ بیا کارونه: د فنکشن دننه کوډ په پروګرام کې د بیا بیا غوښتلو له لارې بیا کارول کېدای شي.\n\nد کوډ تازه کول: په فنکشن کې د کوډ بدلول یا تازه کول ډېر اسانه دي، چې یوازې یو ځل کول غواړي.\n\nلوستل او پوهېدل: کوډ لوستل او پوهېدل اسانوي.",
+   "content": "<p>Consider a function named addition to take two integer values, add them together and return the result to the calling program. The following code segment defines this function:</p><p>// user-defined function (addition) program\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint addition (int a, int b)\n{\nint sum;\nsum=a+b;\nreturn (sum);\n}\nint main()\n{\nint z;\nz = addition (55,33);\ncout &lt;&lt; &quot;The sum of a and b is= &quot; &lt;&lt; z;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>The sum of a and b is =88</p><p>Working of user-defined functions</p><p>In the above program, addition (int a, int b) is the example of user-defined function defined by the user to perform the addition of two integer values (55 and 33 in this case). These values are passed by the function call addition (55,33). After performing addition, the function returns the sum (88) back to calling program (in this case, main) using the following statement.</p><p>return (sum);</p><p>The sum is assigned to the variable z, in main(), as shown below:</p><p>z = addition (55, 33);</p><p>The following line of code, in main, is used to display the result on the screen as shown in the above program.</p><p>cout &lt;&lt; &quot;The sum of a and b is= &quot; &lt;&lt; z;</p><p>6.1.2 Advantages of using functions</p><p>Using functions we can structure our programs in a more modularized way. The use of functions provides many benefits, including:</p><p>Code reusability: The code inside the function can be reused by calling it again and again in the program.</p><p>Updating code: It is much easier to change or update the code in a function, which needs to be done once.</p><p>Readability and understandability: It makes the code easier to read and understand.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      13,
+      14,
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 96,
+     "printedPages": [
+      180,
+      181
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (3)",
+   "sourcePageLabel": "PDF 96 · p. 180–181",
+   "sourceNote": "The top of p.180 (end of the “Where” list) is recorded with PDF95.",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf096",
+   "unit": 6,
+   "printedPage": 180,
+   "description": "The program prints \"The sum of a and b is= \" but the output shows “The sum of a and b is =88”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

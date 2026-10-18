@@ -1,0 +1,227 @@
+{
+ "pdfPage": 95,
+ "sections": [
+  {
+   "id": "cs12-u6-text-2",
+   "title": "Unit 6 text (2)",
+   "headingUrdu": "یونٹ 6 — متن (2)",
+   "headingPashto": "۶ څپرکی — متن (2)",
+   "paras": [
+    {
+     "text": "Here, sin() is a built-in function defined in the math.h header file. The value inside the sin() is converted to its corresponding sin value and displayed on the screen. Similarly we can calculate cosine, tangent and tangent inverse by using cos(x), tan(x) and cot(x) built-in functions respectively.",
+     "urdu": "یہاں sin() ایک بلٹ اِن فنکشن ہے جو math.h ہیڈر فائل میں بیان کیا گیا ہے۔ sin() کے اندر کی قدر اس کی متعلقہ sin قدر میں بدل کر اسکرین پر دکھائی جاتی ہے۔ اسی طرح ہم بالترتیب cos(x)، tan(x) اور cot(x) بلٹ اِن فنکشنز سے cosine، tangent اور tangent inverse معلوم کر سکتے ہیں۔",
+     "pashto": "دلته sin() یو جوړ شوی فنکشن دی چې د math.h سرپاڼه دوتنه کې تعریف شوی. د sin() دننه ارزښت په اړوند sin ارزښت بدلېږي او پر پرده ښودل کېږي. همداراز کولی شو په ترتیب سره د cos(x)، tan(x) او cot(x) جوړ شویو فنکشنونو په مرسته cosine، tangent او tangent inverse حساب کړو."
+    },
+    {
+     "text": "Consider another example:",
+     "urdu": "ایک اور مثال پر غور کریں:",
+     "pashto": "بلې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "//built-in function abs( ) program\n#include <math.h>\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint X;\ncout<<\"Enter value for X\"<<endl;\ncin>>X;\ncout<< \"Absolute value of \" <<X << \" is: \" <<abs(X);\ngetch();\nreturn 0;\n}",
+     "urdu": "//built-in function abs( ) program\n#include <math.h>\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint X;\ncout<<\"Enter value for X\"<<endl;\ncin>>X;\ncout<< \"Absolute value of \" <<X << \" is: \" <<abs(X);\ngetch();\nreturn 0;\n}",
+     "pashto": "//built-in function abs( ) program\n#include <math.h>\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint X;\ncout<<\"Enter value for X\"<<endl;\ncin>>X;\ncout<< \"Absolute value of \" <<X << \" is: \" <<abs(X);\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter value for X\n-12\nAbsolute value of -12 is: 12",
+     "urdu": "Enter value for X\n-12\nAbsolute value of -12 is: 12",
+     "pashto": "Enter value for X\n-12\nAbsolute value of -12 is: 12",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In this example, the value entered by the user, from the keyboard, is taken into the abs( ) function and the result is displayed on the screen. Like abs( ), some other functions that are included in <math.h> header file are pow(x,n), sqrt(x), etc.",
+     "urdu": "اس مثال میں صارف کی کی بورڈ سے داخل کردہ قدر abs( ) فنکشن میں لی جاتی ہے اور نتیجہ اسکرین پر دکھایا جاتا ہے۔ abs( ) کی طرح <math.h> ہیڈر فائل میں شامل کچھ دوسرے فنکشنز pow(x,n)، sqrt(x) وغیرہ ہیں۔",
+     "pashto": "په دې بېلګه کې هغه ارزښت چې کاروونکی یې له کیبورډ لیکي، abs( ) فنکشن ته ورکول کېږي او پایله پر پرده ښودل کېږي. د abs( ) په څېر په <math.h> سرپاڼه دوتنه کې ځینې نور فنکشنونه pow(x,n)، sqrt(x) او نور دي."
+    },
+    {
+     "text": "The built-in functions are defined in the C++ library which should be included in the program before using these functions. These functions are used for the most commonly and frequently used operations and cannot be modified according to the users need. This feature of the functions is its main limitation. To overcome this problem, C++ provides a new set of functions that can be defined by the users itself. The following section describes this set of functions in detail.",
+     "urdu": "بلٹ اِن فنکشنز C++ لائبریری میں بیان کیے گئے ہیں جسے ان فنکشنز کے استعمال سے پہلے پروگرام میں شامل کرنا چاہیے۔ یہ فنکشنز سب سے عام اور بار بار استعمال ہونے والے کاموں کے لیے استعمال ہوتے ہیں اور صارفین کی ضرورت کے مطابق تبدیل نہیں کیے جا سکتے۔ فنکشنز کی یہ خصوصیت ان کی بنیادی حد ہے۔ اس مسئلے پر قابو پانے کے لیے C++ فنکشنز کا ایک نیا مجموعہ فراہم کرتی ہے جسے صارفین خود بیان کر سکتے ہیں۔ درج ذیل حصہ فنکشنز کے اس مجموعے کو تفصیل سے بیان کرتا ہے۔",
+     "pashto": "جوړ شوي فنکشنونه د C++ په کتابتون کې تعریف شوي چې د دې فنکشنونو له کارولو مخکې باید په پروګرام کې شامل شي. دا فنکشنونه د تر ټولو عامو او ډېر کارېدونکو عملیو لپاره کارېږي او د کاروونکو د اړتیا سره سم نه شي بدلېدای. د فنکشنونو دا ځانګړتیا یې اصلي محدودیت دی. د دې ستونزې د حل لپاره C++ د فنکشنونو نوې ټولګه برابروي چې کاروونکي یې پخپله تعریفولی شي. لاندې برخه د فنکشنونو دا ټولګه په تفصیل بیانوي."
+    },
+    {
+     "text": "ii. User-defined functions",
+     "urdu": "ii. یوزر ڈیفائنڈ فنکشنز",
+     "pashto": "ii. د کاروونکي-تعریف شوي فنکشنونه"
+    },
+    {
+     "text": "The functions defined by the users, according to their needs, to perform their own tasks are called users-defined functions. These functions are used to overcome the limitations of build-in functions.",
+     "urdu": "صارفین کی طرف سے اپنی ضرورت کے مطابق اپنے کام انجام دینے کے لیے بیان کیے گئے فنکشنز یوزر ڈیفائنڈ فنکشنز کہلاتے ہیں۔ یہ فنکشنز بلٹ اِن فنکشنز کی حدود پر قابو پانے کے لیے استعمال ہوتے ہیں۔",
+     "pashto": "هغه فنکشنونه چې کاروونکي یې د خپلو اړتیاوو سره سم د خپلو دندو د ترسره کولو لپاره تعریفوي، د کاروونکي-تعریف شوي فنکشنونه بلل کېږي. دا فنکشنونه د جوړ شویو فنکشنونو د محدودیتونو د لرې کولو لپاره کارېږي."
+    },
+    {
+     "text": "Defining user-defined function",
+     "urdu": "یوزر ڈیفائنڈ فنکشن کی تعریف",
+     "pashto": "د کاروونکي-تعریف شوي فنکشن تعریفول"
+    },
+    {
+     "text": "A function must be defined first to use it in the program. The general syntax for defining a user-defined function is given below.",
+     "urdu": "پروگرام میں استعمال کرنے کے لیے فنکشن کی پہلے تعریف ضروری ہے۔ یوزر ڈیفائنڈ فنکشن کی تعریف کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔",
+     "pashto": "فنکشن باید په پروګرام کې د کارولو لپاره لومړی تعریف شي. د کاروونکي-تعریف شوي فنکشن د تعریف عمومي بڼه لاندې ورکړل شوې."
+    },
+    {
+     "text": "type name (parameter1, parameter2, ...)\n{\nStatements;\n}",
+     "urdu": "type name (parameter1, parameter2, ...)\n{\nStatements;\n}",
+     "pashto": "type name (parameter1, parameter2, ...)\n{\nStatements;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Where:",
+     "urdu": "جہاں:",
+     "pashto": "چېرته چې:"
+    },
+    {
+     "text": "Type is the data type specifier of the data returned by the function.",
+     "urdu": "Type فنکشن کی طرف سے واپس کیے گئے ڈیٹا کی ڈیٹا ٹائپ بتاتا ہے۔",
+     "pashto": "Type د فنکشن له خوا د بېرته ورکړل شوي ډېټا ډول ښيي."
+    },
+    {
+     "text": "Name is the identifier by which a function will be called.",
+     "urdu": "Name وہ شناخت کنندہ ہے جس سے فنکشن کو کال کیا جائے گا۔",
+     "pashto": "Name هغه پېژندونکی دی چې فنکشن پرې غوښتل کېږي."
+    },
+    {
+     "text": "Parameters are the variables that receive arguments. Each parameter has its data type like variable. There can be as many parameters as needed but they should be separated by commas.",
+     "urdu": "Parameters وہ ویری ایبلز ہیں جو آرگیومنٹس وصول کرتے ہیں۔ ہر پیرامیٹر کی ویری ایبل کی طرح اپنی ڈیٹا ٹائپ ہوتی ہے۔ ضرورت کے مطابق جتنے چاہیں پیرامیٹرز ہو سکتے ہیں لیکن انھیں کاموں سے الگ ہونا چاہیے۔",
+     "pashto": "Parameters هغه متغیرونه دي چې دلیلونه ترلاسه کوي. هر پاراميټر د متغیر په څېر خپل ډېټا ډول لري. هرڅومره چې اړتیا وي پاراميټرونه کېدای شي خو باید په کامو سره جلا شي."
+    },
+    {
+     "text": "Statements constitute the body of the function. It is a block of statements surrounded by braces { }.",
+     "urdu": "Statements فنکشن کا جسم بناتے ہیں۔ یہ بریسز { } میں گھرا بیانات کا بلاک ہے۔",
+     "pashto": "Statements د فنکشن بدنه جوړوي. دا د بیانونو بلاک دی چې په لوړو قوسونو { } کې راګېر دی."
+    }
+   ],
+   "theory": "Here, sin() is a built-in function defined in the math.h header file. The value inside the sin() is converted to its corresponding sin value and displayed on the screen. Similarly we can calculate cosine, tangent and tangent inverse by using cos(x), tan(x) and cot(x) built-in functions respectively.\n\nConsider another example:\n\n//built-in function abs( ) program\n#include <math.h>\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint X;\ncout<<\"Enter value for X\"<<endl;\ncin>>X;\ncout<< \"Absolute value of \" <<X << \" is: \" <<abs(X);\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nEnter value for X\n-12\nAbsolute value of -12 is: 12\n\nIn this example, the value entered by the user, from the keyboard, is taken into the abs( ) function and the result is displayed on the screen. Like abs( ), some other functions that are included in <math.h> header file are pow(x,n), sqrt(x), etc.\n\nThe built-in functions are defined in the C++ library which should be included in the program before using these functions. These functions are used for the most commonly and frequently used operations and cannot be modified according to the users need. This feature of the functions is its main limitation. To overcome this problem, C++ provides a new set of functions that can be defined by the users itself. The following section describes this set of functions in detail.\n\nii. User-defined functions\n\nThe functions defined by the users, according to their needs, to perform their own tasks are called users-defined functions. These functions are used to overcome the limitations of build-in functions.\n\nDefining user-defined function\n\nA function must be defined first to use it in the program. The general syntax for defining a user-defined function is given below.\n\ntype name (parameter1, parameter2, ...)\n{\nStatements;\n}\n\nWhere:\n\nType is the data type specifier of the data returned by the function.\n\nName is the identifier by which a function will be called.\n\nParameters are the variables that receive arguments. Each parameter has its data type like variable. There can be as many parameters as needed but they should be separated by commas.\n\nStatements constitute the body of the function. It is a block of statements surrounded by braces { }.",
+   "urdu": "یہاں sin() ایک بلٹ اِن فنکشن ہے جو math.h ہیڈر فائل میں بیان کیا گیا ہے۔ sin() کے اندر کی قدر اس کی متعلقہ sin قدر میں بدل کر اسکرین پر دکھائی جاتی ہے۔ اسی طرح ہم بالترتیب cos(x)، tan(x) اور cot(x) بلٹ اِن فنکشنز سے cosine، tangent اور tangent inverse معلوم کر سکتے ہیں۔\n\nایک اور مثال پر غور کریں:\n\n//built-in function abs( ) program\n#include <math.h>\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint X;\ncout<<\"Enter value for X\"<<endl;\ncin>>X;\ncout<< \"Absolute value of \" <<X << \" is: \" <<abs(X);\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter value for X\n-12\nAbsolute value of -12 is: 12\n\nاس مثال میں صارف کی کی بورڈ سے داخل کردہ قدر abs( ) فنکشن میں لی جاتی ہے اور نتیجہ اسکرین پر دکھایا جاتا ہے۔ abs( ) کی طرح <math.h> ہیڈر فائل میں شامل کچھ دوسرے فنکشنز pow(x,n)، sqrt(x) وغیرہ ہیں۔\n\nبلٹ اِن فنکشنز C++ لائبریری میں بیان کیے گئے ہیں جسے ان فنکشنز کے استعمال سے پہلے پروگرام میں شامل کرنا چاہیے۔ یہ فنکشنز سب سے عام اور بار بار استعمال ہونے والے کاموں کے لیے استعمال ہوتے ہیں اور صارفین کی ضرورت کے مطابق تبدیل نہیں کیے جا سکتے۔ فنکشنز کی یہ خصوصیت ان کی بنیادی حد ہے۔ اس مسئلے پر قابو پانے کے لیے C++ فنکشنز کا ایک نیا مجموعہ فراہم کرتی ہے جسے صارفین خود بیان کر سکتے ہیں۔ درج ذیل حصہ فنکشنز کے اس مجموعے کو تفصیل سے بیان کرتا ہے۔\n\nii. یوزر ڈیفائنڈ فنکشنز\n\nصارفین کی طرف سے اپنی ضرورت کے مطابق اپنے کام انجام دینے کے لیے بیان کیے گئے فنکشنز یوزر ڈیفائنڈ فنکشنز کہلاتے ہیں۔ یہ فنکشنز بلٹ اِن فنکشنز کی حدود پر قابو پانے کے لیے استعمال ہوتے ہیں۔\n\nیوزر ڈیفائنڈ فنکشن کی تعریف\n\nپروگرام میں استعمال کرنے کے لیے فنکشن کی پہلے تعریف ضروری ہے۔ یوزر ڈیفائنڈ فنکشن کی تعریف کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔\n\ntype name (parameter1, parameter2, ...)\n{\nStatements;\n}\n\nجہاں:\n\nType فنکشن کی طرف سے واپس کیے گئے ڈیٹا کی ڈیٹا ٹائپ بتاتا ہے۔\n\nName وہ شناخت کنندہ ہے جس سے فنکشن کو کال کیا جائے گا۔\n\nParameters وہ ویری ایبلز ہیں جو آرگیومنٹس وصول کرتے ہیں۔ ہر پیرامیٹر کی ویری ایبل کی طرح اپنی ڈیٹا ٹائپ ہوتی ہے۔ ضرورت کے مطابق جتنے چاہیں پیرامیٹرز ہو سکتے ہیں لیکن انھیں کاموں سے الگ ہونا چاہیے۔\n\nStatements فنکشن کا جسم بناتے ہیں۔ یہ بریسز { } میں گھرا بیانات کا بلاک ہے۔",
+   "pashto": "دلته sin() یو جوړ شوی فنکشن دی چې د math.h سرپاڼه دوتنه کې تعریف شوی. د sin() دننه ارزښت په اړوند sin ارزښت بدلېږي او پر پرده ښودل کېږي. همداراز کولی شو په ترتیب سره د cos(x)، tan(x) او cot(x) جوړ شویو فنکشنونو په مرسته cosine، tangent او tangent inverse حساب کړو.\n\nبلې بېلګې ته پام وکړئ:\n\n//built-in function abs( ) program\n#include <math.h>\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint X;\ncout<<\"Enter value for X\"<<endl;\ncin>>X;\ncout<< \"Absolute value of \" <<X << \" is: \" <<abs(X);\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter value for X\n-12\nAbsolute value of -12 is: 12\n\nپه دې بېلګه کې هغه ارزښت چې کاروونکی یې له کیبورډ لیکي، abs( ) فنکشن ته ورکول کېږي او پایله پر پرده ښودل کېږي. د abs( ) په څېر په <math.h> سرپاڼه دوتنه کې ځینې نور فنکشنونه pow(x,n)، sqrt(x) او نور دي.\n\nجوړ شوي فنکشنونه د C++ په کتابتون کې تعریف شوي چې د دې فنکشنونو له کارولو مخکې باید په پروګرام کې شامل شي. دا فنکشنونه د تر ټولو عامو او ډېر کارېدونکو عملیو لپاره کارېږي او د کاروونکو د اړتیا سره سم نه شي بدلېدای. د فنکشنونو دا ځانګړتیا یې اصلي محدودیت دی. د دې ستونزې د حل لپاره C++ د فنکشنونو نوې ټولګه برابروي چې کاروونکي یې پخپله تعریفولی شي. لاندې برخه د فنکشنونو دا ټولګه په تفصیل بیانوي.\n\nii. د کاروونکي-تعریف شوي فنکشنونه\n\nهغه فنکشنونه چې کاروونکي یې د خپلو اړتیاوو سره سم د خپلو دندو د ترسره کولو لپاره تعریفوي، د کاروونکي-تعریف شوي فنکشنونه بلل کېږي. دا فنکشنونه د جوړ شویو فنکشنونو د محدودیتونو د لرې کولو لپاره کارېږي.\n\nد کاروونکي-تعریف شوي فنکشن تعریفول\n\nفنکشن باید په پروګرام کې د کارولو لپاره لومړی تعریف شي. د کاروونکي-تعریف شوي فنکشن د تعریف عمومي بڼه لاندې ورکړل شوې.\n\ntype name (parameter1, parameter2, ...)\n{\nStatements;\n}\n\nچېرته چې:\n\nType د فنکشن له خوا د بېرته ورکړل شوي ډېټا ډول ښيي.\n\nName هغه پېژندونکی دی چې فنکشن پرې غوښتل کېږي.\n\nParameters هغه متغیرونه دي چې دلیلونه ترلاسه کوي. هر پاراميټر د متغیر په څېر خپل ډېټا ډول لري. هرڅومره چې اړتیا وي پاراميټرونه کېدای شي خو باید په کامو سره جلا شي.\n\nStatements د فنکشن بدنه جوړوي. دا د بیانونو بلاک دی چې په لوړو قوسونو { } کې راګېر دی.",
+   "theoryUrdu": "یہاں sin() ایک بلٹ اِن فنکشن ہے جو math.h ہیڈر فائل میں بیان کیا گیا ہے۔ sin() کے اندر کی قدر اس کی متعلقہ sin قدر میں بدل کر اسکرین پر دکھائی جاتی ہے۔ اسی طرح ہم بالترتیب cos(x)، tan(x) اور cot(x) بلٹ اِن فنکشنز سے cosine، tangent اور tangent inverse معلوم کر سکتے ہیں۔\n\nایک اور مثال پر غور کریں:\n\n//built-in function abs( ) program\n#include <math.h>\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint X;\ncout<<\"Enter value for X\"<<endl;\ncin>>X;\ncout<< \"Absolute value of \" <<X << \" is: \" <<abs(X);\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter value for X\n-12\nAbsolute value of -12 is: 12\n\nاس مثال میں صارف کی کی بورڈ سے داخل کردہ قدر abs( ) فنکشن میں لی جاتی ہے اور نتیجہ اسکرین پر دکھایا جاتا ہے۔ abs( ) کی طرح <math.h> ہیڈر فائل میں شامل کچھ دوسرے فنکشنز pow(x,n)، sqrt(x) وغیرہ ہیں۔\n\nبلٹ اِن فنکشنز C++ لائبریری میں بیان کیے گئے ہیں جسے ان فنکشنز کے استعمال سے پہلے پروگرام میں شامل کرنا چاہیے۔ یہ فنکشنز سب سے عام اور بار بار استعمال ہونے والے کاموں کے لیے استعمال ہوتے ہیں اور صارفین کی ضرورت کے مطابق تبدیل نہیں کیے جا سکتے۔ فنکشنز کی یہ خصوصیت ان کی بنیادی حد ہے۔ اس مسئلے پر قابو پانے کے لیے C++ فنکشنز کا ایک نیا مجموعہ فراہم کرتی ہے جسے صارفین خود بیان کر سکتے ہیں۔ درج ذیل حصہ فنکشنز کے اس مجموعے کو تفصیل سے بیان کرتا ہے۔\n\nii. یوزر ڈیفائنڈ فنکشنز\n\nصارفین کی طرف سے اپنی ضرورت کے مطابق اپنے کام انجام دینے کے لیے بیان کیے گئے فنکشنز یوزر ڈیفائنڈ فنکشنز کہلاتے ہیں۔ یہ فنکشنز بلٹ اِن فنکشنز کی حدود پر قابو پانے کے لیے استعمال ہوتے ہیں۔\n\nیوزر ڈیفائنڈ فنکشن کی تعریف\n\nپروگرام میں استعمال کرنے کے لیے فنکشن کی پہلے تعریف ضروری ہے۔ یوزر ڈیفائنڈ فنکشن کی تعریف کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔\n\ntype name (parameter1, parameter2, ...)\n{\nStatements;\n}\n\nجہاں:\n\nType فنکشن کی طرف سے واپس کیے گئے ڈیٹا کی ڈیٹا ٹائپ بتاتا ہے۔\n\nName وہ شناخت کنندہ ہے جس سے فنکشن کو کال کیا جائے گا۔\n\nParameters وہ ویری ایبلز ہیں جو آرگیومنٹس وصول کرتے ہیں۔ ہر پیرامیٹر کی ویری ایبل کی طرح اپنی ڈیٹا ٹائپ ہوتی ہے۔ ضرورت کے مطابق جتنے چاہیں پیرامیٹرز ہو سکتے ہیں لیکن انھیں کاموں سے الگ ہونا چاہیے۔\n\nStatements فنکشن کا جسم بناتے ہیں۔ یہ بریسز { } میں گھرا بیانات کا بلاک ہے۔",
+   "theoryPashto": "دلته sin() یو جوړ شوی فنکشن دی چې د math.h سرپاڼه دوتنه کې تعریف شوی. د sin() دننه ارزښت په اړوند sin ارزښت بدلېږي او پر پرده ښودل کېږي. همداراز کولی شو په ترتیب سره د cos(x)، tan(x) او cot(x) جوړ شویو فنکشنونو په مرسته cosine، tangent او tangent inverse حساب کړو.\n\nبلې بېلګې ته پام وکړئ:\n\n//built-in function abs( ) program\n#include <math.h>\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint X;\ncout<<\"Enter value for X\"<<endl;\ncin>>X;\ncout<< \"Absolute value of \" <<X << \" is: \" <<abs(X);\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter value for X\n-12\nAbsolute value of -12 is: 12\n\nپه دې بېلګه کې هغه ارزښت چې کاروونکی یې له کیبورډ لیکي، abs( ) فنکشن ته ورکول کېږي او پایله پر پرده ښودل کېږي. د abs( ) په څېر په <math.h> سرپاڼه دوتنه کې ځینې نور فنکشنونه pow(x,n)، sqrt(x) او نور دي.\n\nجوړ شوي فنکشنونه د C++ په کتابتون کې تعریف شوي چې د دې فنکشنونو له کارولو مخکې باید په پروګرام کې شامل شي. دا فنکشنونه د تر ټولو عامو او ډېر کارېدونکو عملیو لپاره کارېږي او د کاروونکو د اړتیا سره سم نه شي بدلېدای. د فنکشنونو دا ځانګړتیا یې اصلي محدودیت دی. د دې ستونزې د حل لپاره C++ د فنکشنونو نوې ټولګه برابروي چې کاروونکي یې پخپله تعریفولی شي. لاندې برخه د فنکشنونو دا ټولګه په تفصیل بیانوي.\n\nii. د کاروونکي-تعریف شوي فنکشنونه\n\nهغه فنکشنونه چې کاروونکي یې د خپلو اړتیاوو سره سم د خپلو دندو د ترسره کولو لپاره تعریفوي، د کاروونکي-تعریف شوي فنکشنونه بلل کېږي. دا فنکشنونه د جوړ شویو فنکشنونو د محدودیتونو د لرې کولو لپاره کارېږي.\n\nد کاروونکي-تعریف شوي فنکشن تعریفول\n\nفنکشن باید په پروګرام کې د کارولو لپاره لومړی تعریف شي. د کاروونکي-تعریف شوي فنکشن د تعریف عمومي بڼه لاندې ورکړل شوې.\n\ntype name (parameter1, parameter2, ...)\n{\nStatements;\n}\n\nچېرته چې:\n\nType د فنکشن له خوا د بېرته ورکړل شوي ډېټا ډول ښيي.\n\nName هغه پېژندونکی دی چې فنکشن پرې غوښتل کېږي.\n\nParameters هغه متغیرونه دي چې دلیلونه ترلاسه کوي. هر پاراميټر د متغیر په څېر خپل ډېټا ډول لري. هرڅومره چې اړتیا وي پاراميټرونه کېدای شي خو باید په کامو سره جلا شي.\n\nStatements د فنکشن بدنه جوړوي. دا د بیانونو بلاک دی چې په لوړو قوسونو { } کې راګېر دی.",
+   "content": "<p>Here, sin() is a built-in function defined in the math.h header file. The value inside the sin() is converted to its corresponding sin value and displayed on the screen. Similarly we can calculate cosine, tangent and tangent inverse by using cos(x), tan(x) and cot(x) built-in functions respectively.</p><p>Consider another example:</p><p>//built-in function abs( ) program\n#include &lt;math.h&gt;\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint X;\ncout&lt;&lt;&quot;Enter value for X&quot;&lt;&lt;endl;\ncin&gt;&gt;X;\ncout&lt;&lt; &quot;Absolute value of &quot; &lt;&lt;X &lt;&lt; &quot; is: &quot; &lt;&lt;abs(X);\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Enter value for X\n-12\nAbsolute value of -12 is: 12</p><p>In this example, the value entered by the user, from the keyboard, is taken into the abs( ) function and the result is displayed on the screen. Like abs( ), some other functions that are included in &lt;math.h&gt; header file are pow(x,n), sqrt(x), etc.</p><p>The built-in functions are defined in the C++ library which should be included in the program before using these functions. These functions are used for the most commonly and frequently used operations and cannot be modified according to the users need. This feature of the functions is its main limitation. To overcome this problem, C++ provides a new set of functions that can be defined by the users itself. The following section describes this set of functions in detail.</p><p>ii. User-defined functions</p><p>The functions defined by the users, according to their needs, to perform their own tasks are called users-defined functions. These functions are used to overcome the limitations of build-in functions.</p><p>Defining user-defined function</p><p>A function must be defined first to use it in the program. The general syntax for defining a user-defined function is given below.</p><p>type name (parameter1, parameter2, ...)\n{\nStatements;\n}</p><p>Where:</p><p>Type is the data type specifier of the data returned by the function.</p><p>Name is the identifier by which a function will be called.</p><p>Parameters are the variables that receive arguments. Each parameter has its data type like variable. There can be as many parameters as needed but they should be separated by commas.</p><p>Statements constitute the body of the function. It is a block of statements surrounded by braces { }.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      13,
+      14,
+      15,
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 95,
+     "printedPages": [
+      178,
+      179,
+      180
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (2)",
+   "sourcePageLabel": "PDF 95 · p. 178–179–180",
+   "sourceNote": "The top of p.178 (sin() output) is recorded with PDF94; the “Where” list continues on p.180 (PDF96) and is given whole here.",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf095",
+   "unit": 6,
+   "printedPage": 179,
+   "description": "p.178 lists cot(x) as giving the “tangent inverse”; p.179 “users-defined functions”, “build-in functions”, “defined by the users itself”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

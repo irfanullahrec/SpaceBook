@@ -1,0 +1,176 @@
+{
+ "pdfPage": 124,
+ "sections": [
+  {
+   "id": "cs12-u8-text-5",
+   "title": "Unit 8 text (5)",
+   "headingUrdu": "یونٹ 8 — متن (5)",
+   "headingPashto": "۸ څپرکی — متن (5)",
+   "paras": [
+    {
+     "text": "b. public access specifier",
+     "urdu": "b. public ایکسس اسپیسیفائر",
+     "pashto": "b. public د لاسرسي ټاکونکی"
+    },
+    {
+     "text": "public members are accessible from anywhere where the object is visible i.e. within the class, in the derived classes and in the main function.",
+     "urdu": "public اراکین ہر اس جگہ سے قابلِ رسائی ہیں جہاں آبجیکٹ نظر آتا ہو یعنی کلاس کے اندر، ماخوذ کلاسز میں اور main فنکشن میں۔",
+     "pashto": "public غړي له هر هغه ځایه د لاسرسي وړ دي چې شی پکې ښکاري، یعنې د ټولګي دننه، په مشتق ټولګیو کې او په main فنکشن کې."
+    },
+    {
+     "text": "Consider the following program to demonstrate the visibility of public members of a class.",
+     "urdu": "کلاس کے public اراکین کی نمائش واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د ټولګي د public غړو د لیدلو د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "// public access specifier example 1\n#include<iostream.h>\n#include<conio.h>\nclass PublicTest\n{\npublic:\nint X=10; // Public data member\nvoid showPublic() // Public member function\n{\ncout<< “X= \"<<X;\n}\n};\nint main()\n{\nPublicTest PT1; //PT1 is an object of class PublicTest\nPT1.X; //access private data members\nPT1.showPublic(); // access public member function\ngetch();\nreturn 0;\n}",
+     "urdu": "// public access specifier example 1\n#include<iostream.h>\n#include<conio.h>\nclass PublicTest\n{\npublic:\nint X=10; // Public data member\nvoid showPublic() // Public member function\n{\ncout<< “X= \"<<X;\n}\n};\nint main()\n{\nPublicTest PT1; //PT1 is an object of class PublicTest\nPT1.X; //access private data members\nPT1.showPublic(); // access public member function\ngetch();\nreturn 0;\n}",
+     "pashto": "// public access specifier example 1\n#include<iostream.h>\n#include<conio.h>\nclass PublicTest\n{\npublic:\nint X=10; // Public data member\nvoid showPublic() // Public member function\n{\ncout<< “X= \"<<X;\n}\n};\nint main()\n{\nPublicTest PT1; //PT1 is an object of class PublicTest\nPT1.X; //access private data members\nPT1.showPublic(); // access public member function\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In the above program, the class PublicTest is defined which comprise of one data member X and one member function showPublic() in its public part. The data member is accessed within the member function showPublic() and outside the class, i.e. in main() function, without generating any error message. Similarly, the member function showPublic() is also accessed in main() function.",
+     "urdu": "اوپر کے پروگرام میں کلاس PublicTest بیان کی گئی ہے جس کے public حصے میں ایک ڈیٹا ممبر X اور ایک ممبر فنکشن showPublic() ہے۔ ڈیٹا ممبر تک ممبر فنکشن showPublic() کے اندر اور کلاس کے باہر یعنی main() فنکشن میں کسی خرابی کے پیغام کے بغیر رسائی ہوتی ہے۔ اسی طرح ممبر فنکشن showPublic() تک بھی main() فنکشن میں رسائی ہوتی ہے۔",
+     "pashto": "په پورته پروګرام کې PublicTest ټولګی تعریف شوی چې په public برخه کې یې یو د ډېټا غړی X او یو غړی فنکشن showPublic() دی. د ډېټا غړي ته د showPublic() غړي فنکشن دننه او له ټولګي بهر، یعنې په main() فنکشن کې، پرته له تېروتنې پیغامه لاسرسی کېږي. همداراز showPublic() غړي فنکشن ته هم په main() فنکشن کې لاسرسی کېږي."
+    },
+    {
+     "text": "If no access specifier is mentioned in a class for a member then it will combined as private by default.",
+     "urdu": "اگر کلاس میں کسی ممبر کے لیے کوئی ایکسس اسپیسیفائر نہ لکھا ہو تو وہ بطورِ طے شدہ private شمار ہوگا۔",
+     "pashto": "که په ټولګي کې د یوه غړي لپاره هېڅ د لاسرسي ټاکونکی ونه لیکل شي، په ډیفالټ ډول به private وګڼل شي."
+    },
+    {
+     "text": "The following program demonstrates private and public access specifier.",
+     "urdu": "درج ذیل پروگرام private اور public ایکسس اسپیسیفائر واضح کرتا ہے۔",
+     "pashto": "لاندې پروګرام private او public د لاسرسي ټاکونکي ښيي."
+    },
+    {
+     "text": "#include<iostream.h>\n#include<conio.h>\nclass Access\n{\nint A; // private by default\nvoid GetA() // private by default\n{\ncout<<\"I am private member accessible only through public member function\"<<endl;\n}\npublic:\nint B; // public\nvoid GetB()\n{\nGetA();\ncout<<\"I am B in public\"<<endl;\n}\n};\nint main()\n{\nAccess cAccess; //cAccess is an object of the class Access\n//cAccess.A = 2; // WRONG because A is private data member\n//cAccess.GetA(); //WRONG because GetA() is private member function\ncAccess.B=10; // Okay because B is public data member\ncAccess.GetB(); // Okay because GetB() is public member function\ngetch();\nreturn 0;\n}",
+     "urdu": "#include<iostream.h>\n#include<conio.h>\nclass Access\n{\nint A; // private by default\nvoid GetA() // private by default\n{\ncout<<\"I am private member accessible only through public member function\"<<endl;\n}\npublic:\nint B; // public\nvoid GetB()\n{\nGetA();\ncout<<\"I am B in public\"<<endl;\n}\n};\nint main()\n{\nAccess cAccess; //cAccess is an object of the class Access\n//cAccess.A = 2; // WRONG because A is private data member\n//cAccess.GetA(); //WRONG because GetA() is private member function\ncAccess.B=10; // Okay because B is public data member\ncAccess.GetB(); // Okay because GetB() is public member function\ngetch();\nreturn 0;\n}",
+     "pashto": "#include<iostream.h>\n#include<conio.h>\nclass Access\n{\nint A; // private by default\nvoid GetA() // private by default\n{\ncout<<\"I am private member accessible only through public member function\"<<endl;\n}\npublic:\nint B; // public\nvoid GetB()\n{\nGetA();\ncout<<\"I am B in public\"<<endl;\n}\n};\nint main()\n{\nAccess cAccess; //cAccess is an object of the class Access\n//cAccess.A = 2; // WRONG because A is private data member\n//cAccess.GetA(); //WRONG because GetA() is private member function\ncAccess.B=10; // Okay because B is public data member\ncAccess.GetB(); // Okay because GetB() is public member function\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The above program explains the scope (or accessibility) of the private and public data members and member functions in detail. Also, comments are added with each line of code in main() program for the explanation of its accessibility level.",
+     "urdu": "اوپر کا پروگرام private اور public ڈیٹا ممبرز اور ممبر فنکشنز کا دائرہ (یا رسائی) تفصیل سے واضح کرتا ہے۔ نیز main() پروگرام میں کوڈ کی ہر لائن کے ساتھ اس کی رسائی کی سطح کی وضاحت کے لیے تبصرے شامل کیے گئے ہیں۔",
+     "pashto": "پورته پروګرام د private او public ډېټا غړو او غړو فنکشنونو ساحه (یا د لاسرسي وړتیا) په تفصیل تشریح کوي. همداراز په main() پروګرام کې د کوډ له هرې کرښې سره د هغې د لاسرسي د کچې د تشریح لپاره تبصرې ورزیاتې شوې."
+    },
+    {
+     "text": "The output of the program is:",
+     "urdu": "پروگرام کا آؤٹ پٹ یہ ہے:",
+     "pashto": "د پروګرام وتنه دا ده:"
+    },
+    {
+     "text": "I am private member accessible only through public member function\nI am B in public",
+     "urdu": "I am private member accessible only through public member function\nI am B in public",
+     "pashto": "I am private member accessible only through public member function\nI am B in public",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "b. public access specifier\n\npublic members are accessible from anywhere where the object is visible i.e. within the class, in the derived classes and in the main function.\n\nConsider the following program to demonstrate the visibility of public members of a class.\n\n// public access specifier example 1\n#include<iostream.h>\n#include<conio.h>\nclass PublicTest\n{\npublic:\nint X=10; // Public data member\nvoid showPublic() // Public member function\n{\ncout<< “X= \"<<X;\n}\n};\nint main()\n{\nPublicTest PT1; //PT1 is an object of class PublicTest\nPT1.X; //access private data members\nPT1.showPublic(); // access public member function\ngetch();\nreturn 0;\n}\n\nIn the above program, the class PublicTest is defined which comprise of one data member X and one member function showPublic() in its public part. The data member is accessed within the member function showPublic() and outside the class, i.e. in main() function, without generating any error message. Similarly, the member function showPublic() is also accessed in main() function.\n\nIf no access specifier is mentioned in a class for a member then it will combined as private by default.\n\nThe following program demonstrates private and public access specifier.\n\n#include<iostream.h>\n#include<conio.h>\nclass Access\n{\nint A; // private by default\nvoid GetA() // private by default\n{\ncout<<\"I am private member accessible only through public member function\"<<endl;\n}\npublic:\nint B; // public\nvoid GetB()\n{\nGetA();\ncout<<\"I am B in public\"<<endl;\n}\n};\nint main()\n{\nAccess cAccess; //cAccess is an object of the class Access\n//cAccess.A = 2; // WRONG because A is private data member\n//cAccess.GetA(); //WRONG because GetA() is private member function\ncAccess.B=10; // Okay because B is public data member\ncAccess.GetB(); // Okay because GetB() is public member function\ngetch();\nreturn 0;\n}\n\nThe above program explains the scope (or accessibility) of the private and public data members and member functions in detail. Also, comments are added with each line of code in main() program for the explanation of its accessibility level.\n\nThe output of the program is:\n\nI am private member accessible only through public member function\nI am B in public",
+   "urdu": "b. public ایکسس اسپیسیفائر\n\npublic اراکین ہر اس جگہ سے قابلِ رسائی ہیں جہاں آبجیکٹ نظر آتا ہو یعنی کلاس کے اندر، ماخوذ کلاسز میں اور main فنکشن میں۔\n\nکلاس کے public اراکین کی نمائش واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n// public access specifier example 1\n#include<iostream.h>\n#include<conio.h>\nclass PublicTest\n{\npublic:\nint X=10; // Public data member\nvoid showPublic() // Public member function\n{\ncout<< “X= \"<<X;\n}\n};\nint main()\n{\nPublicTest PT1; //PT1 is an object of class PublicTest\nPT1.X; //access private data members\nPT1.showPublic(); // access public member function\ngetch();\nreturn 0;\n}\n\nاوپر کے پروگرام میں کلاس PublicTest بیان کی گئی ہے جس کے public حصے میں ایک ڈیٹا ممبر X اور ایک ممبر فنکشن showPublic() ہے۔ ڈیٹا ممبر تک ممبر فنکشن showPublic() کے اندر اور کلاس کے باہر یعنی main() فنکشن میں کسی خرابی کے پیغام کے بغیر رسائی ہوتی ہے۔ اسی طرح ممبر فنکشن showPublic() تک بھی main() فنکشن میں رسائی ہوتی ہے۔\n\nاگر کلاس میں کسی ممبر کے لیے کوئی ایکسس اسپیسیفائر نہ لکھا ہو تو وہ بطورِ طے شدہ private شمار ہوگا۔\n\nدرج ذیل پروگرام private اور public ایکسس اسپیسیفائر واضح کرتا ہے۔\n\n#include<iostream.h>\n#include<conio.h>\nclass Access\n{\nint A; // private by default\nvoid GetA() // private by default\n{\ncout<<\"I am private member accessible only through public member function\"<<endl;\n}\npublic:\nint B; // public\nvoid GetB()\n{\nGetA();\ncout<<\"I am B in public\"<<endl;\n}\n};\nint main()\n{\nAccess cAccess; //cAccess is an object of the class Access\n//cAccess.A = 2; // WRONG because A is private data member\n//cAccess.GetA(); //WRONG because GetA() is private member function\ncAccess.B=10; // Okay because B is public data member\ncAccess.GetB(); // Okay because GetB() is public member function\ngetch();\nreturn 0;\n}\n\nاوپر کا پروگرام private اور public ڈیٹا ممبرز اور ممبر فنکشنز کا دائرہ (یا رسائی) تفصیل سے واضح کرتا ہے۔ نیز main() پروگرام میں کوڈ کی ہر لائن کے ساتھ اس کی رسائی کی سطح کی وضاحت کے لیے تبصرے شامل کیے گئے ہیں۔\n\nپروگرام کا آؤٹ پٹ یہ ہے:\n\nI am private member accessible only through public member function\nI am B in public",
+   "pashto": "b. public د لاسرسي ټاکونکی\n\npublic غړي له هر هغه ځایه د لاسرسي وړ دي چې شی پکې ښکاري، یعنې د ټولګي دننه، په مشتق ټولګیو کې او په main فنکشن کې.\n\nد ټولګي د public غړو د لیدلو د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n// public access specifier example 1\n#include<iostream.h>\n#include<conio.h>\nclass PublicTest\n{\npublic:\nint X=10; // Public data member\nvoid showPublic() // Public member function\n{\ncout<< “X= \"<<X;\n}\n};\nint main()\n{\nPublicTest PT1; //PT1 is an object of class PublicTest\nPT1.X; //access private data members\nPT1.showPublic(); // access public member function\ngetch();\nreturn 0;\n}\n\nپه پورته پروګرام کې PublicTest ټولګی تعریف شوی چې په public برخه کې یې یو د ډېټا غړی X او یو غړی فنکشن showPublic() دی. د ډېټا غړي ته د showPublic() غړي فنکشن دننه او له ټولګي بهر، یعنې په main() فنکشن کې، پرته له تېروتنې پیغامه لاسرسی کېږي. همداراز showPublic() غړي فنکشن ته هم په main() فنکشن کې لاسرسی کېږي.\n\nکه په ټولګي کې د یوه غړي لپاره هېڅ د لاسرسي ټاکونکی ونه لیکل شي، په ډیفالټ ډول به private وګڼل شي.\n\nلاندې پروګرام private او public د لاسرسي ټاکونکي ښيي.\n\n#include<iostream.h>\n#include<conio.h>\nclass Access\n{\nint A; // private by default\nvoid GetA() // private by default\n{\ncout<<\"I am private member accessible only through public member function\"<<endl;\n}\npublic:\nint B; // public\nvoid GetB()\n{\nGetA();\ncout<<\"I am B in public\"<<endl;\n}\n};\nint main()\n{\nAccess cAccess; //cAccess is an object of the class Access\n//cAccess.A = 2; // WRONG because A is private data member\n//cAccess.GetA(); //WRONG because GetA() is private member function\ncAccess.B=10; // Okay because B is public data member\ncAccess.GetB(); // Okay because GetB() is public member function\ngetch();\nreturn 0;\n}\n\nپورته پروګرام د private او public ډېټا غړو او غړو فنکشنونو ساحه (یا د لاسرسي وړتیا) په تفصیل تشریح کوي. همداراز په main() پروګرام کې د کوډ له هرې کرښې سره د هغې د لاسرسي د کچې د تشریح لپاره تبصرې ورزیاتې شوې.\n\nد پروګرام وتنه دا ده:\n\nI am private member accessible only through public member function\nI am B in public",
+   "theoryUrdu": "b. public ایکسس اسپیسیفائر\n\npublic اراکین ہر اس جگہ سے قابلِ رسائی ہیں جہاں آبجیکٹ نظر آتا ہو یعنی کلاس کے اندر، ماخوذ کلاسز میں اور main فنکشن میں۔\n\nکلاس کے public اراکین کی نمائش واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n// public access specifier example 1\n#include<iostream.h>\n#include<conio.h>\nclass PublicTest\n{\npublic:\nint X=10; // Public data member\nvoid showPublic() // Public member function\n{\ncout<< “X= \"<<X;\n}\n};\nint main()\n{\nPublicTest PT1; //PT1 is an object of class PublicTest\nPT1.X; //access private data members\nPT1.showPublic(); // access public member function\ngetch();\nreturn 0;\n}\n\nاوپر کے پروگرام میں کلاس PublicTest بیان کی گئی ہے جس کے public حصے میں ایک ڈیٹا ممبر X اور ایک ممبر فنکشن showPublic() ہے۔ ڈیٹا ممبر تک ممبر فنکشن showPublic() کے اندر اور کلاس کے باہر یعنی main() فنکشن میں کسی خرابی کے پیغام کے بغیر رسائی ہوتی ہے۔ اسی طرح ممبر فنکشن showPublic() تک بھی main() فنکشن میں رسائی ہوتی ہے۔\n\nاگر کلاس میں کسی ممبر کے لیے کوئی ایکسس اسپیسیفائر نہ لکھا ہو تو وہ بطورِ طے شدہ private شمار ہوگا۔\n\nدرج ذیل پروگرام private اور public ایکسس اسپیسیفائر واضح کرتا ہے۔\n\n#include<iostream.h>\n#include<conio.h>\nclass Access\n{\nint A; // private by default\nvoid GetA() // private by default\n{\ncout<<\"I am private member accessible only through public member function\"<<endl;\n}\npublic:\nint B; // public\nvoid GetB()\n{\nGetA();\ncout<<\"I am B in public\"<<endl;\n}\n};\nint main()\n{\nAccess cAccess; //cAccess is an object of the class Access\n//cAccess.A = 2; // WRONG because A is private data member\n//cAccess.GetA(); //WRONG because GetA() is private member function\ncAccess.B=10; // Okay because B is public data member\ncAccess.GetB(); // Okay because GetB() is public member function\ngetch();\nreturn 0;\n}\n\nاوپر کا پروگرام private اور public ڈیٹا ممبرز اور ممبر فنکشنز کا دائرہ (یا رسائی) تفصیل سے واضح کرتا ہے۔ نیز main() پروگرام میں کوڈ کی ہر لائن کے ساتھ اس کی رسائی کی سطح کی وضاحت کے لیے تبصرے شامل کیے گئے ہیں۔\n\nپروگرام کا آؤٹ پٹ یہ ہے:\n\nI am private member accessible only through public member function\nI am B in public",
+   "theoryPashto": "b. public د لاسرسي ټاکونکی\n\npublic غړي له هر هغه ځایه د لاسرسي وړ دي چې شی پکې ښکاري، یعنې د ټولګي دننه، په مشتق ټولګیو کې او په main فنکشن کې.\n\nد ټولګي د public غړو د لیدلو د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n// public access specifier example 1\n#include<iostream.h>\n#include<conio.h>\nclass PublicTest\n{\npublic:\nint X=10; // Public data member\nvoid showPublic() // Public member function\n{\ncout<< “X= \"<<X;\n}\n};\nint main()\n{\nPublicTest PT1; //PT1 is an object of class PublicTest\nPT1.X; //access private data members\nPT1.showPublic(); // access public member function\ngetch();\nreturn 0;\n}\n\nپه پورته پروګرام کې PublicTest ټولګی تعریف شوی چې په public برخه کې یې یو د ډېټا غړی X او یو غړی فنکشن showPublic() دی. د ډېټا غړي ته د showPublic() غړي فنکشن دننه او له ټولګي بهر، یعنې په main() فنکشن کې، پرته له تېروتنې پیغامه لاسرسی کېږي. همداراز showPublic() غړي فنکشن ته هم په main() فنکشن کې لاسرسی کېږي.\n\nکه په ټولګي کې د یوه غړي لپاره هېڅ د لاسرسي ټاکونکی ونه لیکل شي، په ډیفالټ ډول به private وګڼل شي.\n\nلاندې پروګرام private او public د لاسرسي ټاکونکي ښيي.\n\n#include<iostream.h>\n#include<conio.h>\nclass Access\n{\nint A; // private by default\nvoid GetA() // private by default\n{\ncout<<\"I am private member accessible only through public member function\"<<endl;\n}\npublic:\nint B; // public\nvoid GetB()\n{\nGetA();\ncout<<\"I am B in public\"<<endl;\n}\n};\nint main()\n{\nAccess cAccess; //cAccess is an object of the class Access\n//cAccess.A = 2; // WRONG because A is private data member\n//cAccess.GetA(); //WRONG because GetA() is private member function\ncAccess.B=10; // Okay because B is public data member\ncAccess.GetB(); // Okay because GetB() is public member function\ngetch();\nreturn 0;\n}\n\nپورته پروګرام د private او public ډېټا غړو او غړو فنکشنونو ساحه (یا د لاسرسي وړتیا) په تفصیل تشریح کوي. همداراز په main() پروګرام کې د کوډ له هرې کرښې سره د هغې د لاسرسي د کچې د تشریح لپاره تبصرې ورزیاتې شوې.\n\nد پروګرام وتنه دا ده:\n\nI am private member accessible only through public member function\nI am B in public",
+   "content": "<p>b. public access specifier</p><p>public members are accessible from anywhere where the object is visible i.e. within the class, in the derived classes and in the main function.</p><p>Consider the following program to demonstrate the visibility of public members of a class.</p><p>// public access specifier example 1\n#include&lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nclass PublicTest\n{\npublic:\nint X=10; // Public data member\nvoid showPublic() // Public member function\n{\ncout&lt;&lt; “X= &quot;&lt;&lt;X;\n}\n};\nint main()\n{\nPublicTest PT1; //PT1 is an object of class PublicTest\nPT1.X; //access private data members\nPT1.showPublic(); // access public member function\ngetch();\nreturn 0;\n}</p><p>In the above program, the class PublicTest is defined which comprise of one data member X and one member function showPublic() in its public part. The data member is accessed within the member function showPublic() and outside the class, i.e. in main() function, without generating any error message. Similarly, the member function showPublic() is also accessed in main() function.</p><p>If no access specifier is mentioned in a class for a member then it will combined as private by default.</p><p>The following program demonstrates private and public access specifier.</p><p>#include&lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nclass Access\n{\nint A; // private by default\nvoid GetA() // private by default\n{\ncout&lt;&lt;&quot;I am private member accessible only through public member function&quot;&lt;&lt;endl;\n}\npublic:\nint B; // public\nvoid GetB()\n{\nGetA();\ncout&lt;&lt;&quot;I am B in public&quot;&lt;&lt;endl;\n}\n};\nint main()\n{\nAccess cAccess; //cAccess is an object of the class Access\n//cAccess.A = 2; // WRONG because A is private data member\n//cAccess.GetA(); //WRONG because GetA() is private member function\ncAccess.B=10; // Okay because B is public data member\ncAccess.GetB(); // Okay because GetB() is public member function\ngetch();\nreturn 0;\n}</p><p>The above program explains the scope (or accessibility) of the private and public data members and member functions in detail. Also, comments are added with each line of code in main() program for the explanation of its accessibility level.</p><p>The output of the program is:</p><p>I am private member accessible only through public member function\nI am B in public</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 124,
+     "printedPages": [
+      236,
+      237,
+      238
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (5)",
+   "sourcePageLabel": "PDF 124 · p. 236–237–238",
+   "sourceNote": "The Access program runs from p.237 to p.238 (PDF125) and is given whole with its explanation and output.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf124",
+   "unit": 8,
+   "printedPage": 236,
+   "description": "The PublicTest program comments “access private data members” for the public member X and initializes int X=10 inside the class; p.236 “which comprise of”; p.237 “it will combined as private by default”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

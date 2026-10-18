@@ -1,0 +1,277 @@
+{
+ "pdfPage": 56,
+ "sections": [
+  {
+   "id": "cs12-u3-text-22",
+   "title": "Unit 3 text (22)",
+   "headingUrdu": "یونٹ 3 — متن (۲۲)",
+   "headingPashto": "۳ څپرکی — متن (۲۲)",
+   "paras": [
+    {
+     "text": "// conditional operator\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x, y, z;\nx=22;\ny=77;\nz = (x>y) ? x : y;\ncout<< \"The greater value is: \"<<z ;\ngetch();\nreturn 0;\n}",
+     "urdu": "// conditional operator\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x, y, z;\nx=22;\ny=77;\nz = (x>y) ? x : y;\ncout<< \"The greater value is: \"<<z ;\ngetch();\nreturn 0;\n}",
+     "pashto": "// conditional operator\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x, y, z;\nx=22;\ny=77;\nz = (x>y) ? x : y;\ncout<< \"The greater value is: \"<<z ;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The greater value is: 77",
+     "urdu": "The greater value is: 77",
+     "pashto": "The greater value is: 77",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "3.4.2 Unary, Binary and Ternary operators",
+     "urdu": "3.4.2 یونری، بائنری اور ٹرنری آپریٹرز",
+     "pashto": "۳.۴.۲ یو-عملي، دوه-عملي او درې-عملي چلونکي"
+    },
+    {
+     "text": "The set of C++ operators is divided into three main categories: unary, binary and ternary. This division is on the basis of number of operands upon which the operators operate. The following sections discuss them.",
+     "urdu": "C++ آپریٹرز کے مجموعے کو تین بنیادی زمروں میں تقسیم کیا جاتا ہے: یونری، بائنری اور ٹرنری۔ یہ تقسیم ان آپرینڈز کی تعداد کی بنیاد پر ہے جن پر آپریٹرز عمل کرتے ہیں۔ درج ذیل حصے ان پر بحث کرتے ہیں۔",
+     "pashto": "د C++ چلونکو ټولګه په درې اصلي ډلو وېشل کېږي: یو-عملي، دوه-عملي او درې-عملي. دا وېش د هغو عملوندونو د شمېر پر بنسټ دی چې چلونکي پرې عمل کوي. لاندې برخې یې بحث کوي."
+    },
+    {
+     "text": "a. Unary operators",
+     "urdu": "a. یونری آپریٹرز",
+     "pashto": "a. یو-عملي چلونکي"
+    },
+    {
+     "text": "Unary operators are those operators which need a single operand. There are two arithmetic unary operators: unary plus + and unary -.",
+     "urdu": "یونری آپریٹرز وہ آپریٹرز ہیں جنھیں ایک آپرینڈ درکار ہوتا ہے۔ دو حسابی یونری آپریٹرز ہیں: یونری پلس + اور یونری -۔",
+     "pashto": "یو-عملي چلونکي هغه دي چې یو عملوند ته اړتیا لري. دوه حسابي یو-عملي چلونکي دي: یو-عملي جمع + او یو-عملي منفي -."
+    },
+    {
+     "text": "Consider the following examples:",
+     "urdu": "درج ذیل مثالوں پر غور کریں:",
+     "pashto": "لاندې بېلګو ته پام وکړئ:"
+    },
+    {
+     "text": "x = -y;\na = +b;",
+     "urdu": "x = -y;\na = +b;",
+     "pashto": "x = -y;\na = +b;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The logical ! operator is also a unary operator. Consider the following examples:",
+     "urdu": "منطقی ! آپریٹر بھی یونری آپریٹر ہے۔ درج ذیل مثالوں پر غور کریں:",
+     "pashto": "منطقي ! چلونکی هم یو-عملي چلونکی دی. لاندې بېلګو ته پام وکړئ:"
+    },
+    {
+     "text": "!x;\n!(x > y);",
+     "urdu": "!x;\n!(x > y);",
+     "pashto": "!x;\n!(x > y);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Increment ++ and decrement -- operators are also the examples of unary operators.",
+     "urdu": "انکریمنٹ ++ اور ڈیکریمنٹ -- آپریٹرز بھی یونری آپریٹرز کی مثالیں ہیں۔",
+     "pashto": "د زیاتولو ++ او کمولو -- چلونکي هم د یو-عملي چلونکو بېلګې دي."
+    },
+    {
+     "text": "b. Binary operators",
+     "urdu": "b. بائنری آپریٹرز",
+     "pashto": "b. دوه-عملي چلونکي"
+    },
+    {
+     "text": "i. Binary operators are those operators which need two operands. For example (+, -, *, /, %)",
+     "urdu": "i. بائنری آپریٹرز وہ آپریٹرز ہیں جنھیں دو آپرینڈز درکار ہوں۔ مثلاً (+، -، *، /، %)",
+     "pashto": "i. دوه-عملي چلونکي هغه دي چې دوو عملوندونو ته اړتیا لري. لکه (+، -، *، /، %)"
+    },
+    {
+     "text": "ii. The assignment operator = is also a binary operator as it requires two operands. The operands are: the receiving variable on the left hand side and the evaluated expression on the right hand side.",
+     "urdu": "ii. اسائنمنٹ آپریٹر = بھی بائنری آپریٹر ہے کیونکہ اسے دو آپرینڈز درکار ہیں: بائیں طرف قدر وصول کرنے والا ویری ایبل اور دائیں طرف قدر نکالا گیا ایکسپریشن۔",
+     "pashto": "ii. د سپارلو چلونکی = هم دوه-عملي دی، ځکه دوو عملوندونو ته اړتیا لري: کیڼ اړخ ته ترلاسه کوونکی متغیر او ښي اړخ ته ارزول شوې افاده."
+    },
+    {
+     "text": "iii. The logical and relational operators (<, <=, ==, >, >=, !=, &&, || ) are binary operators as well, as they require two operands.",
+     "urdu": "iii. منطقی اور ریلیشنل آپریٹرز (<، <=، ==، >، >=، !=، &&، ||) بھی بائنری آپریٹرز ہیں کیونکہ انھیں دو آپرینڈز درکار ہیں۔",
+     "pashto": "iii. منطقي او اړیکه‌ییز چلونکي (<، <=، ==، >، >=، !=، &&، ||) هم دوه-عملي دي، ځکه دوو عملوندونو ته اړتیا لري."
+    },
+    {
+     "text": "c. Ternary operator",
+     "urdu": "c. ٹرنری آپریٹر",
+     "pashto": "c. درې-عملي چلونکی"
+    },
+    {
+     "text": "Ternary operator needs three operands. There is only one ternary operator. This operator is conditional operator (? :)",
+     "urdu": "ٹرنری آپریٹر کو تین آپرینڈز درکار ہیں۔ صرف ایک ٹرنری آپریٹر ہے اور وہ شرطیہ آپریٹر (? :) ہے۔",
+     "pashto": "درې-عملي چلونکی درې عملوندونو ته اړتیا لري. یوازې یو درې-عملي چلونکی شته او هغه شرطي چلونکی (? :) دی."
+    },
+    {
+     "text": "3.4.3 Expression",
+     "urdu": "3.4.3 ایکسپریشن",
+     "pashto": "۳.۴.۳ افاده"
+    },
+    {
+     "text": "An expression consists of operators and operands or it may be the combination of variables and/or constants linked with operators. For example:",
+     "urdu": "ایکسپریشن آپریٹرز اور آپرینڈز پر مشتمل ہوتا ہے یا یہ آپریٹرز سے جڑے ویری ایبلز اور/یا کانسٹنٹس کا مجموعہ ہو سکتا ہے۔ مثلاً:",
+     "pashto": "افاده له چلونکو او عملوندونو جوړه وي یا کېدای شي د متغیرونو او/یا ثابتونو ګډون وي چې په چلونکو تړل شوي. د بېلګې په توګه:"
+    },
+    {
+     "text": "x=a + b;\nZ= 2+ z / y;\ny > 4;",
+     "urdu": "x=a + b;\nZ= 2+ z / y;\ny > 4;",
+     "pashto": "x=a + b;\nZ= 2+ z / y;\ny > 4;",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "// conditional operator\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x, y, z;\nx=22;\ny=77;\nz = (x>y) ? x : y;\ncout<< \"The greater value is: \"<<z ;\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nThe greater value is: 77\n\n3.4.2 Unary, Binary and Ternary operators\n\nThe set of C++ operators is divided into three main categories: unary, binary and ternary. This division is on the basis of number of operands upon which the operators operate. The following sections discuss them.\n\na. Unary operators\n\nUnary operators are those operators which need a single operand. There are two arithmetic unary operators: unary plus + and unary -.\n\nConsider the following examples:\n\nx = -y;\na = +b;\n\nThe logical ! operator is also a unary operator. Consider the following examples:\n\n!x;\n!(x > y);\n\nIncrement ++ and decrement -- operators are also the examples of unary operators.\n\nb. Binary operators\n\ni. Binary operators are those operators which need two operands. For example (+, -, *, /, %)\n\nii. The assignment operator = is also a binary operator as it requires two operands. The operands are: the receiving variable on the left hand side and the evaluated expression on the right hand side.\n\niii. The logical and relational operators (<, <=, ==, >, >=, !=, &&, || ) are binary operators as well, as they require two operands.\n\nc. Ternary operator\n\nTernary operator needs three operands. There is only one ternary operator. This operator is conditional operator (? :)\n\n3.4.3 Expression\n\nAn expression consists of operators and operands or it may be the combination of variables and/or constants linked with operators. For example:\n\nx=a + b;\nZ= 2+ z / y;\ny > 4;",
+   "urdu": "// conditional operator\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x, y, z;\nx=22;\ny=77;\nz = (x>y) ? x : y;\ncout<< \"The greater value is: \"<<z ;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe greater value is: 77\n\n3.4.2 یونری، بائنری اور ٹرنری آپریٹرز\n\nC++ آپریٹرز کے مجموعے کو تین بنیادی زمروں میں تقسیم کیا جاتا ہے: یونری، بائنری اور ٹرنری۔ یہ تقسیم ان آپرینڈز کی تعداد کی بنیاد پر ہے جن پر آپریٹرز عمل کرتے ہیں۔ درج ذیل حصے ان پر بحث کرتے ہیں۔\n\na. یونری آپریٹرز\n\nیونری آپریٹرز وہ آپریٹرز ہیں جنھیں ایک آپرینڈ درکار ہوتا ہے۔ دو حسابی یونری آپریٹرز ہیں: یونری پلس + اور یونری -۔\n\nدرج ذیل مثالوں پر غور کریں:\n\nx = -y;\na = +b;\n\nمنطقی ! آپریٹر بھی یونری آپریٹر ہے۔ درج ذیل مثالوں پر غور کریں:\n\n!x;\n!(x > y);\n\nانکریمنٹ ++ اور ڈیکریمنٹ -- آپریٹرز بھی یونری آپریٹرز کی مثالیں ہیں۔\n\nb. بائنری آپریٹرز\n\ni. بائنری آپریٹرز وہ آپریٹرز ہیں جنھیں دو آپرینڈز درکار ہوں۔ مثلاً (+، -، *، /، %)\n\nii. اسائنمنٹ آپریٹر = بھی بائنری آپریٹر ہے کیونکہ اسے دو آپرینڈز درکار ہیں: بائیں طرف قدر وصول کرنے والا ویری ایبل اور دائیں طرف قدر نکالا گیا ایکسپریشن۔\n\niii. منطقی اور ریلیشنل آپریٹرز (<، <=، ==، >، >=، !=، &&، ||) بھی بائنری آپریٹرز ہیں کیونکہ انھیں دو آپرینڈز درکار ہیں۔\n\nc. ٹرنری آپریٹر\n\nٹرنری آپریٹر کو تین آپرینڈز درکار ہیں۔ صرف ایک ٹرنری آپریٹر ہے اور وہ شرطیہ آپریٹر (? :) ہے۔\n\n3.4.3 ایکسپریشن\n\nایکسپریشن آپریٹرز اور آپرینڈز پر مشتمل ہوتا ہے یا یہ آپریٹرز سے جڑے ویری ایبلز اور/یا کانسٹنٹس کا مجموعہ ہو سکتا ہے۔ مثلاً:\n\nx=a + b;\nZ= 2+ z / y;\ny > 4;",
+   "pashto": "// conditional operator\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x, y, z;\nx=22;\ny=77;\nz = (x>y) ? x : y;\ncout<< \"The greater value is: \"<<z ;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe greater value is: 77\n\n۳.۴.۲ یو-عملي، دوه-عملي او درې-عملي چلونکي\n\nد C++ چلونکو ټولګه په درې اصلي ډلو وېشل کېږي: یو-عملي، دوه-عملي او درې-عملي. دا وېش د هغو عملوندونو د شمېر پر بنسټ دی چې چلونکي پرې عمل کوي. لاندې برخې یې بحث کوي.\n\na. یو-عملي چلونکي\n\nیو-عملي چلونکي هغه دي چې یو عملوند ته اړتیا لري. دوه حسابي یو-عملي چلونکي دي: یو-عملي جمع + او یو-عملي منفي -.\n\nلاندې بېلګو ته پام وکړئ:\n\nx = -y;\na = +b;\n\nمنطقي ! چلونکی هم یو-عملي چلونکی دی. لاندې بېلګو ته پام وکړئ:\n\n!x;\n!(x > y);\n\nد زیاتولو ++ او کمولو -- چلونکي هم د یو-عملي چلونکو بېلګې دي.\n\nb. دوه-عملي چلونکي\n\ni. دوه-عملي چلونکي هغه دي چې دوو عملوندونو ته اړتیا لري. لکه (+، -، *، /، %)\n\nii. د سپارلو چلونکی = هم دوه-عملي دی، ځکه دوو عملوندونو ته اړتیا لري: کیڼ اړخ ته ترلاسه کوونکی متغیر او ښي اړخ ته ارزول شوې افاده.\n\niii. منطقي او اړیکه‌ییز چلونکي (<، <=، ==، >، >=، !=، &&، ||) هم دوه-عملي دي، ځکه دوو عملوندونو ته اړتیا لري.\n\nc. درې-عملي چلونکی\n\nدرې-عملي چلونکی درې عملوندونو ته اړتیا لري. یوازې یو درې-عملي چلونکی شته او هغه شرطي چلونکی (? :) دی.\n\n۳.۴.۳ افاده\n\nافاده له چلونکو او عملوندونو جوړه وي یا کېدای شي د متغیرونو او/یا ثابتونو ګډون وي چې په چلونکو تړل شوي. د بېلګې په توګه:\n\nx=a + b;\nZ= 2+ z / y;\ny > 4;",
+   "theoryUrdu": "// conditional operator\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x, y, z;\nx=22;\ny=77;\nz = (x>y) ? x : y;\ncout<< \"The greater value is: \"<<z ;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe greater value is: 77\n\n3.4.2 یونری، بائنری اور ٹرنری آپریٹرز\n\nC++ آپریٹرز کے مجموعے کو تین بنیادی زمروں میں تقسیم کیا جاتا ہے: یونری، بائنری اور ٹرنری۔ یہ تقسیم ان آپرینڈز کی تعداد کی بنیاد پر ہے جن پر آپریٹرز عمل کرتے ہیں۔ درج ذیل حصے ان پر بحث کرتے ہیں۔\n\na. یونری آپریٹرز\n\nیونری آپریٹرز وہ آپریٹرز ہیں جنھیں ایک آپرینڈ درکار ہوتا ہے۔ دو حسابی یونری آپریٹرز ہیں: یونری پلس + اور یونری -۔\n\nدرج ذیل مثالوں پر غور کریں:\n\nx = -y;\na = +b;\n\nمنطقی ! آپریٹر بھی یونری آپریٹر ہے۔ درج ذیل مثالوں پر غور کریں:\n\n!x;\n!(x > y);\n\nانکریمنٹ ++ اور ڈیکریمنٹ -- آپریٹرز بھی یونری آپریٹرز کی مثالیں ہیں۔\n\nb. بائنری آپریٹرز\n\ni. بائنری آپریٹرز وہ آپریٹرز ہیں جنھیں دو آپرینڈز درکار ہوں۔ مثلاً (+، -، *، /، %)\n\nii. اسائنمنٹ آپریٹر = بھی بائنری آپریٹر ہے کیونکہ اسے دو آپرینڈز درکار ہیں: بائیں طرف قدر وصول کرنے والا ویری ایبل اور دائیں طرف قدر نکالا گیا ایکسپریشن۔\n\niii. منطقی اور ریلیشنل آپریٹرز (<، <=، ==، >، >=، !=، &&، ||) بھی بائنری آپریٹرز ہیں کیونکہ انھیں دو آپرینڈز درکار ہیں۔\n\nc. ٹرنری آپریٹر\n\nٹرنری آپریٹر کو تین آپرینڈز درکار ہیں۔ صرف ایک ٹرنری آپریٹر ہے اور وہ شرطیہ آپریٹر (? :) ہے۔\n\n3.4.3 ایکسپریشن\n\nایکسپریشن آپریٹرز اور آپرینڈز پر مشتمل ہوتا ہے یا یہ آپریٹرز سے جڑے ویری ایبلز اور/یا کانسٹنٹس کا مجموعہ ہو سکتا ہے۔ مثلاً:\n\nx=a + b;\nZ= 2+ z / y;\ny > 4;",
+   "theoryPashto": "// conditional operator\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint x, y, z;\nx=22;\ny=77;\nz = (x>y) ? x : y;\ncout<< \"The greater value is: \"<<z ;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe greater value is: 77\n\n۳.۴.۲ یو-عملي، دوه-عملي او درې-عملي چلونکي\n\nد C++ چلونکو ټولګه په درې اصلي ډلو وېشل کېږي: یو-عملي، دوه-عملي او درې-عملي. دا وېش د هغو عملوندونو د شمېر پر بنسټ دی چې چلونکي پرې عمل کوي. لاندې برخې یې بحث کوي.\n\na. یو-عملي چلونکي\n\nیو-عملي چلونکي هغه دي چې یو عملوند ته اړتیا لري. دوه حسابي یو-عملي چلونکي دي: یو-عملي جمع + او یو-عملي منفي -.\n\nلاندې بېلګو ته پام وکړئ:\n\nx = -y;\na = +b;\n\nمنطقي ! چلونکی هم یو-عملي چلونکی دی. لاندې بېلګو ته پام وکړئ:\n\n!x;\n!(x > y);\n\nد زیاتولو ++ او کمولو -- چلونکي هم د یو-عملي چلونکو بېلګې دي.\n\nb. دوه-عملي چلونکي\n\ni. دوه-عملي چلونکي هغه دي چې دوو عملوندونو ته اړتیا لري. لکه (+، -، *، /، %)\n\nii. د سپارلو چلونکی = هم دوه-عملي دی، ځکه دوو عملوندونو ته اړتیا لري: کیڼ اړخ ته ترلاسه کوونکی متغیر او ښي اړخ ته ارزول شوې افاده.\n\niii. منطقي او اړیکه‌ییز چلونکي (<، <=، ==، >، >=، !=، &&، ||) هم دوه-عملي دي، ځکه دوو عملوندونو ته اړتیا لري.\n\nc. درې-عملي چلونکی\n\nدرې-عملي چلونکی درې عملوندونو ته اړتیا لري. یوازې یو درې-عملي چلونکی شته او هغه شرطي چلونکی (? :) دی.\n\n۳.۴.۳ افاده\n\nافاده له چلونکو او عملوندونو جوړه وي یا کېدای شي د متغیرونو او/یا ثابتونو ګډون وي چې په چلونکو تړل شوي. د بېلګې په توګه:\n\nx=a + b;\nZ= 2+ z / y;\ny > 4;",
+   "content": "<p>// conditional operator\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint x, y, z;\nx=22;\ny=77;\nz = (x&gt;y) ? x : y;\ncout&lt;&lt; &quot;The greater value is: &quot;&lt;&lt;z ;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>The greater value is: 77</p><p>3.4.2 Unary, Binary and Ternary operators</p><p>The set of C++ operators is divided into three main categories: unary, binary and ternary. This division is on the basis of number of operands upon which the operators operate. The following sections discuss them.</p><p>a. Unary operators</p><p>Unary operators are those operators which need a single operand. There are two arithmetic unary operators: unary plus + and unary -.</p><p>Consider the following examples:</p><p>x = -y;\na = +b;</p><p>The logical ! operator is also a unary operator. Consider the following examples:</p><p>!x;\n!(x &gt; y);</p><p>Increment ++ and decrement -- operators are also the examples of unary operators.</p><p>b. Binary operators</p><p>i. Binary operators are those operators which need two operands. For example (+, -, *, /, %)</p><p>ii. The assignment operator = is also a binary operator as it requires two operands. The operands are: the receiving variable on the left hand side and the evaluated expression on the right hand side.</p><p>iii. The logical and relational operators (&lt;, &lt;=, ==, &gt;, &gt;=, !=, &amp;&amp;, || ) are binary operators as well, as they require two operands.</p><p>c. Ternary operator</p><p>Ternary operator needs three operands. There is only one ternary operator. This operator is conditional operator (? :)</p><p>3.4.3 Expression</p><p>An expression consists of operators and operands or it may be the combination of variables and/or constants linked with operators. For example:</p><p>x=a + b;\nZ= 2+ z / y;\ny &gt; 4;</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "code",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      13,
+      14,
+      15
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      20
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 56,
+     "printedPages": [
+      100,
+      101
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (22)",
+   "sourcePageLabel": "PDF 56 · p. 100–101",
+   "sourceNote": "The expression examples continue on p.102 (PDF57).",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf056",
+   "unit": 3,
+   "printedPage": 100,
+   "description": "Section numbers printed “3.4.2.” and “3.4.3.”; the listing prints the cout string with a curly opening quote; normalised. p.100 “need a single operand. There are two arithmetic unary operators”."
+  }
+ ],
+ "completeUnits": []
+}

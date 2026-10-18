@@ -1,0 +1,479 @@
+{
+ "pdfPage": 27,
+ "sections": [
+  {
+   "id": "stat12-p027-expectation-properties",
+   "title": "2.2.7 Properties of mathematical expectation",
+   "headingUrdu": "2.2.7 ریاضیاتی توقع کی خصوصیات",
+   "headingPashto": "2.2.7 د ریاضي تمې ځانګړنې",
+   "paras": [
+    {
+     "text": "2.2.7 Properties of mathematical expectation",
+     "urdu": "2.2.7 ریاضیاتی توقع کی خصوصیات",
+     "pashto": "2.2.7 د ریاضي تمې ځانګړنې"
+    },
+    {
+     "text": "Expected value of a random variable satisfies the following properties.",
+     "urdu": "تصادفی متغیر کی متوقع قیمت درج ذیل خصوصیات پوری کرتی ہے۔",
+     "pashto": "د تصادفي متغیر تمه شوی قیمت لاندې ځانګړنې پوره کوي."
+    },
+    {
+     "text": "(i) Expectation of a constant is the constant itself i.e. $E(c)=c$, where c is a constant.",
+     "urdu": "(i) کسی مستقل کی توقع خود وہی مستقل ہے یعنی $E(c)=c$، جہاں c ایک مستقل ہے۔",
+     "pashto": "(i) د یوه ثابت تمه پخپله هماغه ثابت دی یعنې $E(c)=c$، چې c یو ثابت دی."
+    },
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "By definition",
+     "urdu": "تعریف کے مطابق",
+     "pashto": "د تعریف له مخې"
+    },
+    {
+     "text": "$$E(X)=\\Sigma x\\,p(x)$$",
+     "urdu": "$$E(X)=\\Sigma x\\,p(x)$$",
+     "pashto": "$$E(X)=\\Sigma x\\,p(x)$$"
+    },
+    {
+     "text": "As the variable X is taking only a constant value c therefore",
+     "urdu": "چونکہ متغیر X صرف ایک مستقل قیمت c لیتا ہے، اس لیے",
+     "pashto": "څرنګه چې متغیر X یوازې یو ثابت قیمت c اخلي، نو"
+    },
+    {
+     "text": "$E(c)=\\Sigma c\\,p(x)$",
+     "urdu": "$E(c)=\\Sigma c\\,p(x)$",
+     "pashto": "$E(c)=\\Sigma c\\,p(x)$"
+    },
+    {
+     "text": "$\\phantom{E(c)}=c\\Sigma p(x)$",
+     "urdu": "$\\phantom{E(c)}=c\\Sigma p(x)$",
+     "pashto": "$\\phantom{E(c)}=c\\Sigma p(x)$"
+    },
+    {
+     "text": "$\\phantom{E(c)}=c(1)$, as sum of probabilities $=\\Sigma p(x)=1$",
+     "urdu": "$\\phantom{E(c)}=c(1)$، کیونکہ احتمالات کا مجموعہ $=\\Sigma p(x)=1$",
+     "pashto": "$\\phantom{E(c)}=c(1)$، ځکه چې د احتمالونو مجموعه $=\\Sigma p(x)=1$"
+    },
+    {
+     "text": "$$\\phantom{E(c)}=c$$",
+     "urdu": "$$\\phantom{E(c)}=c$$",
+     "pashto": "$$\\phantom{E(c)}=c$$"
+    },
+    {
+     "text": "(ii) If a and b are two constants, then $E[aX+b]=a\\,E(X)+b$",
+     "urdu": "(ii) اگر a اور b دو مستقل ہوں تو $E[aX+b]=a\\,E(X)+b$",
+     "pashto": "(ii) که a او b دوه ثابتونه وي، نو $E[aX+b]=a\\,E(X)+b$"
+    },
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "By definition",
+     "urdu": "تعریف کے مطابق",
+     "pashto": "د تعریف له مخې"
+    },
+    {
+     "text": "$$E(X)=\\Sigma x\\,p(x)$$",
+     "urdu": "$$E(X)=\\Sigma x\\,p(x)$$",
+     "pashto": "$$E(X)=\\Sigma x\\,p(x)$$"
+    },
+    {
+     "text": "Here we have a function of the random variable X i.e. $aX+b$, so",
+     "urdu": "یہاں ہمارے پاس تصادفی متغیر X کا تفاعل $aX+b$ ہے، لہٰذا",
+     "pashto": "دلته د تصادفي متغیر X تابع $aX+b$ لرو، نو"
+    },
+    {
+     "text": "$E(aX+b)=\\Sigma(ax+b)\\,p(x)$",
+     "urdu": "$E(aX+b)=\\Sigma(ax+b)\\,p(x)$",
+     "pashto": "$E(aX+b)=\\Sigma(ax+b)\\,p(x)$"
+    },
+    {
+     "text": "$=\\Sigma ax\\,p(x)+\\Sigma b\\,p(x)$",
+     "urdu": "$=\\Sigma ax\\,p(x)+\\Sigma b\\,p(x)$",
+     "pashto": "$=\\Sigma ax\\,p(x)+\\Sigma b\\,p(x)$"
+    },
+    {
+     "text": "$=a\\Sigma x\\,p(x)+b\\Sigma p(x)$",
+     "urdu": "$=a\\Sigma x\\,p(x)+b\\Sigma p(x)$",
+     "pashto": "$=a\\Sigma x\\,p(x)+b\\Sigma p(x)$"
+    },
+    {
+     "text": "$=a\\,E(X)+b(1)$",
+     "urdu": "$=a\\,E(X)+b(1)$",
+     "pashto": "$=a\\,E(X)+b(1)$"
+    },
+    {
+     "text": "$=a\\,E(X)+b$",
+     "urdu": "$=a\\,E(X)+b$",
+     "pashto": "$=a\\,E(X)+b$"
+    },
+    {
+     "text": "This property shows that expectation is changed by that constant which is added to, subtracted from, multiplied with or divided by the values of a variable i.e.",
+     "urdu": "یہ خاصیت ظاہر کرتی ہے کہ توقع اسی مستقل سے بدلتی ہے جو متغیر کی قیمتوں میں جمع کیا جائے، ان سے تفریق کیا جائے، ان سے ضرب دیا جائے یا ان پر تقسیم کیا جائے، یعنی",
+     "pashto": "دا ځانګړنه ښيي چې تمه په هماغه ثابت بدلېږي چې د متغیر له قیمتونو سره جمع، ترې تفریق، ورسره ضرب یا پرې وېشل کېږي، یعنې"
+    },
+    {
+     "text": "$(i)\\quad E[X+c]=E(X)+c\\qquad(ii)\\quad E[X-c]=E(X)-c$",
+     "urdu": "$(i)\\quad E[X+c]=E(X)+c\\qquad(ii)\\quad E[X-c]=E(X)-c$",
+     "pashto": "$(i)\\quad E[X+c]=E(X)+c\\qquad(ii)\\quad E[X-c]=E(X)-c$"
+    },
+    {
+     "text": "$(iii)\\quad E(cX)=c\\,E(X)\\qquad(iv)\\quad E\\left(\\frac{X}{c}\\right)=\\frac{E(X)}{c}$",
+     "urdu": "$(iii)\\quad E(cX)=c\\,E(X)\\qquad(iv)\\quad E\\left(\\frac{X}{c}\\right)=\\frac{E(X)}{c}$",
+     "pashto": "$(iii)\\quad E(cX)=c\\,E(X)\\qquad(iv)\\quad E\\left(\\frac{X}{c}\\right)=\\frac{E(X)}{c}$"
+    },
+    {
+     "text": "where X is a random variable and c is any constant.",
+     "urdu": "جہاں X ایک تصادفی متغیر اور c کوئی بھی مستقل ہے۔",
+     "pashto": "چې X یو تصادفي متغیر او c هر ثابت دی."
+    },
+    {
+     "text": "Example 2.12",
+     "urdu": "مثال 2.12",
+     "pashto": "بېلګه 2.12"
+    },
+    {
+     "text": "Suppose that X is a simple discrete random variable, distributed as follows:",
+     "urdu": "فرض کریں X ایک سادہ منفصل تصادفی متغیر ہے جس کی تقسیم یوں ہے:",
+     "pashto": "فرض کړئ X یو ساده منفصل تصادفي متغیر دی چې وېش یې داسې دی:"
+    },
+    {
+     "text": "Find (i) E(X) (ii) E(X+10) (iii) E(X − 10) (iv) E(10X) (v) $E\\left(\\frac{X}{10}\\right)$",
+     "urdu": "معلوم کریں (i) E(X) (ii) E(X+10) (iii) E(X − 10) (iv) E(10X) (v) $E\\left(\\frac{X}{10}\\right)$",
+     "pashto": "پیدا کړئ (i) E(X) (ii) E(X+10) (iii) E(X − 10) (iv) E(10X) (v) $E\\left(\\frac{X}{10}\\right)$"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Given",
+     "urdu": "دیا گیا",
+     "pashto": "ورکړل شوي"
+    }
+   ],
+   "theory": "2.2.7 Properties of mathematical expectation\n\nExpected value of a random variable satisfies the following properties.\n\n(i) Expectation of a constant is the constant itself i.e. E(c)=c, where c is a constant.\n\nProof:\n\nBy definition\n\n$E(X)=\\Sigma x\\,p(x)$\n\nAs the variable X is taking only a constant value c therefore\n\nE(c)=\\Sigma c\\,p(x)\n\n\\phantom{E(c)}=c\\Sigma p(x)\n\n\\phantom{E(c)}=c(1), as sum of probabilities =\\Sigma p(x)=1\n\n$\\phantom{E(c)}=c$\n\n(ii) If a and b are two constants, then E[aX+b]=a\\,E(X)+b\n\nProof:\n\nBy definition\n\n$E(X)=\\Sigma x\\,p(x)$\n\nHere we have a function of the random variable X i.e. aX+b, so\n\nE(aX+b)=\\Sigma(ax+b)\\,p(x)\n\n=\\Sigma ax\\,p(x)+\\Sigma b\\,p(x)\n\n=a\\Sigma x\\,p(x)+b\\Sigma p(x)\n\n=a\\,E(X)+b(1)\n\n=a\\,E(X)+b\n\nThis property shows that expectation is changed by that constant which is added to, subtracted from, multiplied with or divided by the values of a variable i.e.\n\n(i)\\quad E[X+c]=E(X)+c\\qquad(ii)\\quad E[X-c]=E(X)-c\n\n(iii)\\quad E(cX)=c\\,E(X)\\qquad(iv)\\quad E\\left(\\frac{X}{c}\\right)=\\frac{E(X)}{c}\n\nwhere X is a random variable and c is any constant.\n\nExample 2.12\n\nSuppose that X is a simple discrete random variable, distributed as follows:\n\nFind (i) E(X) (ii) E(X+10) (iii) E(X − 10) (iv) E(10X) (v) E\\left(\\frac{X}{10}\\right)\n\nSolution:\n\nGiven",
+   "urdu": "2.2.7 ریاضیاتی توقع کی خصوصیات\n\nتصادفی متغیر کی متوقع قیمت درج ذیل خصوصیات پوری کرتی ہے۔\n\n(i) کسی مستقل کی توقع خود وہی مستقل ہے یعنی E(c)=c، جہاں c ایک مستقل ہے۔\n\nثبوت:\n\nتعریف کے مطابق\n\n$E(X)=\\Sigma x\\,p(x)$\n\nچونکہ متغیر X صرف ایک مستقل قیمت c لیتا ہے، اس لیے\n\nE(c)=\\Sigma c\\,p(x)\n\n\\phantom{E(c)}=c\\Sigma p(x)\n\n\\phantom{E(c)}=c(1)، کیونکہ احتمالات کا مجموعہ =\\Sigma p(x)=1\n\n$\\phantom{E(c)}=c$\n\n(ii) اگر a اور b دو مستقل ہوں تو E[aX+b]=a\\,E(X)+b\n\nثبوت:\n\nتعریف کے مطابق\n\n$E(X)=\\Sigma x\\,p(x)$\n\nیہاں ہمارے پاس تصادفی متغیر X کا تفاعل aX+b ہے، لہٰذا\n\nE(aX+b)=\\Sigma(ax+b)\\,p(x)\n\n=\\Sigma ax\\,p(x)+\\Sigma b\\,p(x)\n\n=a\\Sigma x\\,p(x)+b\\Sigma p(x)\n\n=a\\,E(X)+b(1)\n\n=a\\,E(X)+b\n\nیہ خاصیت ظاہر کرتی ہے کہ توقع اسی مستقل سے بدلتی ہے جو متغیر کی قیمتوں میں جمع کیا جائے، ان سے تفریق کیا جائے، ان سے ضرب دیا جائے یا ان پر تقسیم کیا جائے، یعنی\n\n(i)\\quad E[X+c]=E(X)+c\\qquad(ii)\\quad E[X-c]=E(X)-c\n\n(iii)\\quad E(cX)=c\\,E(X)\\qquad(iv)\\quad E\\left(\\frac{X}{c}\\right)=\\frac{E(X)}{c}\n\nجہاں X ایک تصادفی متغیر اور c کوئی بھی مستقل ہے۔\n\nمثال 2.12\n\nفرض کریں X ایک سادہ منفصل تصادفی متغیر ہے جس کی تقسیم یوں ہے:\n\nمعلوم کریں (i) E(X) (ii) E(X+10) (iii) E(X − 10) (iv) E(10X) (v) E\\left(\\frac{X}{10}\\right)\n\nحل:\n\nدیا گیا",
+   "pashto": "2.2.7 د ریاضي تمې ځانګړنې\n\nد تصادفي متغیر تمه شوی قیمت لاندې ځانګړنې پوره کوي.\n\n(i) د یوه ثابت تمه پخپله هماغه ثابت دی یعنې E(c)=c، چې c یو ثابت دی.\n\nثبوت:\n\nد تعریف له مخې\n\n$E(X)=\\Sigma x\\,p(x)$\n\nڅرنګه چې متغیر X یوازې یو ثابت قیمت c اخلي، نو\n\nE(c)=\\Sigma c\\,p(x)\n\n\\phantom{E(c)}=c\\Sigma p(x)\n\n\\phantom{E(c)}=c(1)، ځکه چې د احتمالونو مجموعه =\\Sigma p(x)=1\n\n$\\phantom{E(c)}=c$\n\n(ii) که a او b دوه ثابتونه وي، نو E[aX+b]=a\\,E(X)+b\n\nثبوت:\n\nد تعریف له مخې\n\n$E(X)=\\Sigma x\\,p(x)$\n\nدلته د تصادفي متغیر X تابع aX+b لرو، نو\n\nE(aX+b)=\\Sigma(ax+b)\\,p(x)\n\n=\\Sigma ax\\,p(x)+\\Sigma b\\,p(x)\n\n=a\\Sigma x\\,p(x)+b\\Sigma p(x)\n\n=a\\,E(X)+b(1)\n\n=a\\,E(X)+b\n\nدا ځانګړنه ښيي چې تمه په هماغه ثابت بدلېږي چې د متغیر له قیمتونو سره جمع، ترې تفریق، ورسره ضرب یا پرې وېشل کېږي، یعنې\n\n(i)\\quad E[X+c]=E(X)+c\\qquad(ii)\\quad E[X-c]=E(X)-c\n\n(iii)\\quad E(cX)=c\\,E(X)\\qquad(iv)\\quad E\\left(\\frac{X}{c}\\right)=\\frac{E(X)}{c}\n\nچې X یو تصادفي متغیر او c هر ثابت دی.\n\nبېلګه 2.12\n\nفرض کړئ X یو ساده منفصل تصادفي متغیر دی چې وېش یې داسې دی:\n\nپیدا کړئ (i) E(X) (ii) E(X+10) (iii) E(X − 10) (iv) E(10X) (v) E\\left(\\frac{X}{10}\\right)\n\nحل:\n\nورکړل شوي",
+   "theoryUrdu": "2.2.7 ریاضیاتی توقع کی خصوصیات\n\nتصادفی متغیر کی متوقع قیمت درج ذیل خصوصیات پوری کرتی ہے۔\n\n(i) کسی مستقل کی توقع خود وہی مستقل ہے یعنی E(c)=c، جہاں c ایک مستقل ہے۔\n\nثبوت:\n\nتعریف کے مطابق\n\n$E(X)=\\Sigma x\\,p(x)$\n\nچونکہ متغیر X صرف ایک مستقل قیمت c لیتا ہے، اس لیے\n\nE(c)=\\Sigma c\\,p(x)\n\n\\phantom{E(c)}=c\\Sigma p(x)\n\n\\phantom{E(c)}=c(1)، کیونکہ احتمالات کا مجموعہ =\\Sigma p(x)=1\n\n$\\phantom{E(c)}=c$\n\n(ii) اگر a اور b دو مستقل ہوں تو E[aX+b]=a\\,E(X)+b\n\nثبوت:\n\nتعریف کے مطابق\n\n$E(X)=\\Sigma x\\,p(x)$\n\nیہاں ہمارے پاس تصادفی متغیر X کا تفاعل aX+b ہے، لہٰذا\n\nE(aX+b)=\\Sigma(ax+b)\\,p(x)\n\n=\\Sigma ax\\,p(x)+\\Sigma b\\,p(x)\n\n=a\\Sigma x\\,p(x)+b\\Sigma p(x)\n\n=a\\,E(X)+b(1)\n\n=a\\,E(X)+b\n\nیہ خاصیت ظاہر کرتی ہے کہ توقع اسی مستقل سے بدلتی ہے جو متغیر کی قیمتوں میں جمع کیا جائے، ان سے تفریق کیا جائے، ان سے ضرب دیا جائے یا ان پر تقسیم کیا جائے، یعنی\n\n(i)\\quad E[X+c]=E(X)+c\\qquad(ii)\\quad E[X-c]=E(X)-c\n\n(iii)\\quad E(cX)=c\\,E(X)\\qquad(iv)\\quad E\\left(\\frac{X}{c}\\right)=\\frac{E(X)}{c}\n\nجہاں X ایک تصادفی متغیر اور c کوئی بھی مستقل ہے۔\n\nمثال 2.12\n\nفرض کریں X ایک سادہ منفصل تصادفی متغیر ہے جس کی تقسیم یوں ہے:\n\nمعلوم کریں (i) E(X) (ii) E(X+10) (iii) E(X − 10) (iv) E(10X) (v) E\\left(\\frac{X}{10}\\right)\n\nحل:\n\nدیا گیا",
+   "theoryPashto": "2.2.7 د ریاضي تمې ځانګړنې\n\nد تصادفي متغیر تمه شوی قیمت لاندې ځانګړنې پوره کوي.\n\n(i) د یوه ثابت تمه پخپله هماغه ثابت دی یعنې E(c)=c، چې c یو ثابت دی.\n\nثبوت:\n\nد تعریف له مخې\n\n$E(X)=\\Sigma x\\,p(x)$\n\nڅرنګه چې متغیر X یوازې یو ثابت قیمت c اخلي، نو\n\nE(c)=\\Sigma c\\,p(x)\n\n\\phantom{E(c)}=c\\Sigma p(x)\n\n\\phantom{E(c)}=c(1)، ځکه چې د احتمالونو مجموعه =\\Sigma p(x)=1\n\n$\\phantom{E(c)}=c$\n\n(ii) که a او b دوه ثابتونه وي، نو E[aX+b]=a\\,E(X)+b\n\nثبوت:\n\nد تعریف له مخې\n\n$E(X)=\\Sigma x\\,p(x)$\n\nدلته د تصادفي متغیر X تابع aX+b لرو، نو\n\nE(aX+b)=\\Sigma(ax+b)\\,p(x)\n\n=\\Sigma ax\\,p(x)+\\Sigma b\\,p(x)\n\n=a\\Sigma x\\,p(x)+b\\Sigma p(x)\n\n=a\\,E(X)+b(1)\n\n=a\\,E(X)+b\n\nدا ځانګړنه ښيي چې تمه په هماغه ثابت بدلېږي چې د متغیر له قیمتونو سره جمع، ترې تفریق، ورسره ضرب یا پرې وېشل کېږي، یعنې\n\n(i)\\quad E[X+c]=E(X)+c\\qquad(ii)\\quad E[X-c]=E(X)-c\n\n(iii)\\quad E(cX)=c\\,E(X)\\qquad(iv)\\quad E\\left(\\frac{X}{c}\\right)=\\frac{E(X)}{c}\n\nچې X یو تصادفي متغیر او c هر ثابت دی.\n\nبېلګه 2.12\n\nفرض کړئ X یو ساده منفصل تصادفي متغیر دی چې وېش یې داسې دی:\n\nپیدا کړئ (i) E(X) (ii) E(X+10) (iii) E(X − 10) (iv) E(10X) (v) E\\left(\\frac{X}{10}\\right)\n\nحل:\n\nورکړل شوي",
+   "content": "<p>2.2.7 Properties of mathematical expectation</p><p>Expected value of a random variable satisfies the following properties.</p><p>(i) Expectation of a constant is the constant itself i.e. E(c)=c, where c is a constant.</p><p>Proof:</p><p>By definition</p><p>$E(X)=\\Sigma x\\,p(x)$</p><p>As the variable X is taking only a constant value c therefore</p><p>E(c)=\\Sigma c\\,p(x)</p><p>\\phantom{E(c)}=c\\Sigma p(x)</p><p>\\phantom{E(c)}=c(1), as sum of probabilities =\\Sigma p(x)=1</p><p>$\\phantom{E(c)}=c$</p><p>(ii) If a and b are two constants, then E[aX+b]=a\\,E(X)+b</p><p>Proof:</p><p>By definition</p><p>$E(X)=\\Sigma x\\,p(x)$</p><p>Here we have a function of the random variable X i.e. aX+b, so</p><p>E(aX+b)=\\Sigma(ax+b)\\,p(x)</p><p>=\\Sigma ax\\,p(x)+\\Sigma b\\,p(x)</p><p>=a\\Sigma x\\,p(x)+b\\Sigma p(x)</p><p>=a\\,E(X)+b(1)</p><p>=a\\,E(X)+b</p><p>This property shows that expectation is changed by that constant which is added to, subtracted from, multiplied with or divided by the values of a variable i.e.</p><p>(i)\\quad E[X+c]=E(X)+c\\qquad(ii)\\quad E[X-c]=E(X)-c</p><p>(iii)\\quad E(cX)=c\\,E(X)\\qquad(iv)\\quad E\\left(\\frac{X}{c}\\right)=\\frac{E(X)}{c}</p><p>where X is a random variable and c is any constant.</p><p>Example 2.12</p><p>Suppose that X is a simple discrete random variable, distributed as follows:</p><p>Find (i) E(X) (ii) E(X+10) (iii) E(X − 10) (iv) E(10X) (v) E\\left(\\frac{X}{10}\\right)</p><p>Solution:</p><p>Given</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      7,
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      16,
+      17,
+      18,
+      19,
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      22,
+      23
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      24
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      25
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      26
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-12"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      27
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      28
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      29
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-12-sol"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex2-12",
+     "headers": [
+      "$X$",
+      "$p(x)$"
+     ],
+     "rows": [
+      [
+       "2",
+       "0.50"
+      ],
+      [
+       "4",
+       "0.50"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "2",
+         "0.50"
+        ],
+        [
+         "4",
+         "0.50"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "2",
+         "0.50"
+        ],
+        [
+         "4",
+         "0.50"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex2-12-sol",
+     "headers": [
+      "$X$",
+      "$p(x)$",
+      "$X\\,p(x)$"
+     ],
+     "rows": [
+      [
+       "2",
+       "0.50",
+       "1"
+      ],
+      [
+       "4",
+       "0.50",
+       "2"
+      ],
+      [
+       "Total",
+       "1",
+       "3"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)$",
+        "$X\\,p(x)$"
+       ],
+       "rows": [
+        [
+         "2",
+         "0.50",
+         "1"
+        ],
+        [
+         "4",
+         "0.50",
+         "2"
+        ],
+        [
+         "کل",
+         "1",
+         "3"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)$",
+        "$X\\,p(x)$"
+       ],
+       "rows": [
+        [
+         "2",
+         "0.50",
+         "1"
+        ],
+        [
+         "4",
+         "0.50",
+         "2"
+        ],
+        [
+         "ټول",
+         "1",
+         "3"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 27,
+     "printedPages": [
+      45,
+      46
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

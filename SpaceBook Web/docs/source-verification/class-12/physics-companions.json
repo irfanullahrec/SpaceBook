@@ -1,0 +1,2302 @@
+{
+  "formulas": [
+    {
+      "id": "phys12-slo-potential",
+      "name": "Potential",
+      "formula": "\\(V=W/q\\)",
+      "latex": "V=W/q",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 6,
+          "printedPage": 2
+        }
+      ],
+      "legacyFormula": "solve problems by using the expression V=W/q."
+    },
+    {
+      "id": "phys12-slo-field-gradient",
+      "name": "Electric field",
+      "formula": "\\(E=V/d\\)",
+      "latex": "E=V/d",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 6,
+          "printedPage": 2
+        }
+      ],
+      "legacyFormula": "solve problems by using the expression E = V/d."
+    },
+    {
+      "id": "phys12-slo-point-potential",
+      "name": "Point-charge potential",
+      "formula": "\\(V=\\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r}\\)",
+      "latex": "V=\\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 6,
+          "printedPage": 2
+        }
+      ],
+      "legacyFormula": "calculate the potential in the field of a point charge using the equation V=1/4лE, q/r."
+    },
+    {
+      "id": "phys12-slo-capacitance",
+      "name": "Capacitance",
+      "formula": "\\(C=Q/V\\)",
+      "latex": "C=Q/V",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 6,
+          "printedPage": 2
+        }
+      ],
+      "legacyFormula": "define capacitance and the farad and solve problems by using C=Q/V."
+    },
+    {
+      "id": "phys12-slo-energy",
+      "name": "Stored energy",
+      "formula": "\\(W=\\frac12 QV=\\frac12 CV^2\\)",
+      "latex": "W=\\frac12 QV=\\frac12 CV^2",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 6,
+          "printedPage": 2
+        }
+      ],
+      "legacyFormula": "demonstrate charging and discharging of a capacitor through a resistance. prove that energy stored in a capacitor is W=1/2 QV and hence W=1/2 Cv."
+    },
+    {
+      "id": "phys12-eq-coulomb",
+      "name": "Coulomb force",
+      "formula": "\\(F=k\\frac{q_1q_2}{r^2}\\)",
+      "latex": "F=k\\frac{q_1q_2}{r^2}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 7,
+          "printedPage": [
+            4,
+            5
+          ]
+        }
+      ],
+      "legacyFormula": "F = K9192"
+    },
+    {
+      "id": "phys12-eq-11.2",
+      "name": "Force on q₂",
+      "formula": "\\(\\vec F_{21}=k\\frac{q_1q_2}{r^2}\\hat r_{12}\\)",
+      "latex": "\\vec F_{21}=k\\frac{q_1q_2}{r^2}\\hat r_{12}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 7,
+          "printedPage": [
+            4,
+            5
+          ]
+        }
+      ],
+      "legacyFormula": "F21 = k 9192",
+      "number": "11.2"
+    },
+    {
+      "id": "phys12-eq-11.3",
+      "name": "Force on q₁",
+      "formula": "\\(\\vec F_{12}=k\\frac{q_1q_2}{r^2}\\hat r_{21}\\)",
+      "latex": "\\vec F_{12}=k\\frac{q_1q_2}{r^2}\\hat r_{21}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 7,
+          "printedPage": [
+            4,
+            5
+          ]
+        }
+      ],
+      "legacyFormula": "F12 = k9192721 Fiz",
+      "number": "11.3"
+    },
+    {
+      "id": "phys12-eq-charge-quantization",
+      "name": "Charge quantization",
+      "formula": "\\(q=ne\\)",
+      "latex": "q=ne",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 6,
+          "printedPage": 3
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.1",
+      "name": "Coulomb proportionality",
+      "formula": "\\(F\\propto\\frac{q_1q_2}{r^2}\\)",
+      "latex": "F\\propto\\frac{q_1q_2}{r^2}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 7,
+          "printedPage": [
+            4,
+            5
+          ]
+        }
+      ],
+      "number": "11.1"
+    },
+    {
+      "id": "phys12-eq-11.4",
+      "name": "Equal and opposite forces",
+      "formula": "\\(\\vec F_{21}=-\\vec F_{12}\\)",
+      "latex": "\\vec F_{21}=-\\vec F_{12}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 7,
+          "printedPage": [
+            4,
+            5
+          ]
+        }
+      ],
+      "number": "11.4"
+    },
+    {
+      "id": "phys12-eq-k",
+      "name": "Coulomb constant",
+      "formula": "\\(k=\\frac{1}{4\\pi\\varepsilon_0}=9.0\\times10^9\\;\\mathrm{N\\,m^2\\,C^{-2}}\\)",
+      "latex": "k=\\frac{1}{4\\pi\\varepsilon_0}=9.0\\times10^9\\;\\mathrm{N\\,m^2\\,C^{-2}}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 7,
+          "printedPage": [
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-epsilon-zero",
+      "name": "Free-space permittivity",
+      "formula": "\\(\\varepsilon_0=8.85\\times10^{-12}\\;\\mathrm{C^2\\,N^{-1}\\,m^{-2}}\\)",
+      "latex": "\\varepsilon_0=8.85\\times10^{-12}\\;\\mathrm{C^2\\,N^{-1}\\,m^{-2}}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 7,
+          "printedPage": [
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.5",
+      "name": "Force in a medium",
+      "formula": "\\(F_{\\mathrm{med}}=\\frac{1}{4\\pi\\varepsilon}\\frac{q_1q_2}{r^2}\\)",
+      "latex": "F_{\\mathrm{med}}=\\frac{1}{4\\pi\\varepsilon}\\frac{q_1q_2}{r^2}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 7,
+          "printedPage": [
+            4,
+            5
+          ]
+        }
+      ],
+      "number": "11.5"
+    },
+    {
+      "id": "phys12-eq-11.6",
+      "name": "Relative permittivity",
+      "formula": "\\(\\varepsilon_r=\\frac{\\varepsilon}{\\varepsilon_0}\\)",
+      "latex": "\\varepsilon_r=\\frac{\\varepsilon}{\\varepsilon_0}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 7,
+          "printedPage": [
+            4,
+            5
+          ]
+        }
+      ],
+      "number": "11.6"
+    },
+    {
+      "id": "phys12-eq-11.7",
+      "number": "11.7",
+      "name": "Equation 11.7",
+      "formula": "\\(\\vec F_{\\mathrm{med}}=\\frac{q_1q_2}{4\\pi\\varepsilon_0\\varepsilon_r r^2}\\hat r\\)",
+      "latex": "\\vec F_{\\mathrm{med}}=\\frac{q_1q_2}{4\\pi\\varepsilon_0\\varepsilon_r r^2}\\hat r",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 8,
+          "printedPage": 6
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.8",
+      "number": "11.8",
+      "name": "Equation 11.8",
+      "formula": "\\(\\vec F_{\\mathrm{med}}=\\vec F_{\\mathrm{vac}}/\\varepsilon_r\\)",
+      "latex": "\\vec F_{\\mathrm{med}}=\\vec F_{\\mathrm{vac}}/\\varepsilon_r",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 8,
+          "printedPage": 6
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-field-definition",
+      "name": "Electric field intensity",
+      "formula": "\\(\\vec E=\\frac{\\vec F}{q_0}\\)",
+      "latex": "\\vec E=\\frac{\\vec F}{q_0}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 9,
+          "printedPage": 8
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.9",
+      "name": "Force on a test charge",
+      "formula": "\\(\\vec F=q_0\\vec E\\)",
+      "latex": "\\vec F=q_0\\vec E",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 9,
+          "printedPage": 8
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.10",
+      "name": "Point-charge field",
+      "formula": "\\(\\vec E=k\\frac{q}{r^2}\\hat r\\)",
+      "latex": "\\vec E=k\\frac{q}{r^2}\\hat r",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 9,
+          "printedPage": 9
+        }
+      ]
+    },
+    {
+      "id": "phys12-tip-superposition",
+      "name": "Force superposition",
+      "formula": "\\(F_1=F_{12}+F_{13}+F_{14}+F_{15}\\)",
+      "latex": "F_1=F_{12}+F_{13}+F_{14}+F_{15}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 9,
+          "printedPage": 8
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.11",
+      "name": "Electric flux",
+      "number": "11.11",
+      "formula": "\\(\\Phi_E=\\vec E\\cdot\\vec A=EA\\cos\\theta\\)",
+      "latex": "\\Phi_E=\\vec E\\cdot\\vec A=EA\\cos\\theta",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 12,
+          "printedPage": 15
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.12",
+      "name": "Total flux over a surface",
+      "number": "11.12",
+      "formula": "\\(\\Phi_E=\\sum_{\\mathrm{surface}}E\\Delta A\\) ...(11.12)",
+      "latex": "\\Phi_E=\\sum_{\\mathrm{surface}}E\\Delta A",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 14,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.13",
+      "name": "Gauss’s law",
+      "number": "11.13",
+      "formula": "\\(\\Phi_E=\\frac q{\\varepsilon_o}\\) ...(11.13)",
+      "latex": "\\Phi_E=\\frac q{\\varepsilon_o}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 15,
+          "printedPage": 20
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.14",
+      "name": "Infinite sheet of charge",
+      "number": "11.14",
+      "formula": "\\(\\Phi_E=\\frac{\\delta A}{\\varepsilon_0}\\) ...(11.14)",
+      "latex": "\\Phi_E=\\frac{\\delta A}{\\varepsilon_0}",
+      "note": "Textbook uses delta here; preceding definition uses sigma.",
+      "sourceReferences": [
+        {
+          "pdfPage": 16,
+          "printedPage": 22
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.15",
+      "name": "Infinite sheet of charge",
+      "number": "11.15",
+      "formula": "or \\(E=\\frac\\delta{2\\varepsilon_0}\\) ...(11.15)",
+      "latex": "E=\\frac\\delta{2\\varepsilon_0}",
+      "note": "Textbook uses delta here; preceding definition uses sigma.",
+      "sourceReferences": [
+        {
+          "pdfPage": 16,
+          "printedPage": 23
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.16",
+      "name": "Infinite sheet of charge",
+      "number": "11.16",
+      "formula": "and \\(\\vec E=\\frac\\delta{2\\varepsilon_0}\\hat r\\) ...(11.16)",
+      "latex": "\\vec E=\\frac\\delta{2\\varepsilon_0}\\hat r",
+      "note": "Textbook uses delta here; preceding definition uses sigma.",
+      "sourceReferences": [
+        {
+          "pdfPage": 16,
+          "printedPage": 23
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.17",
+      "name": "Parallel-plate electric field",
+      "number": "11.17",
+      "formula": "\\(E=\\frac\\sigma{\\varepsilon_0}\\) ...(11.17)",
+      "latex": "E=\\frac\\sigma{\\varepsilon_0}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 17,
+          "printedPage": 24
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.18",
+      "name": "Potential and field",
+      "number": "11.18",
+      "formula": "\\(U_A-U_B=W_{BA}\\)",
+      "latex": "U_A-U_B=W_{BA}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 18,
+          "printedPage": 26
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.19",
+      "name": "Potential and field",
+      "number": "11.19",
+      "formula": "\\(\\frac{W_{BA}}{q_0}=\\frac{\\Delta U}{q_0}=V_A-V_B=\\Delta V\\)",
+      "latex": "\\frac{W_{BA}}{q_0}=\\frac{\\Delta U}{q_0}=V_A-V_B=\\Delta V",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 18,
+          "printedPage": 26
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.20",
+      "name": "Potential and field",
+      "number": "11.20",
+      "formula": "\\(\\Delta U=q_0\\Delta V=W_{BA}\\)",
+      "latex": "\\Delta U=q_0\\Delta V=W_{BA}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 18,
+          "printedPage": 26
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.21",
+      "name": "Potential and field",
+      "number": "11.21",
+      "formula": "\\(E=-\\frac{\\Delta V}{\\Delta r}\\)",
+      "latex": "E=-\\frac{\\Delta V}{\\Delta r}",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 18,
+          "printedPage": 27
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.22",
+      "name": "Work toward a point charge",
+      "number": "11.22",
+      "formula": "\\(\\Delta W=qE\\Delta r\\) ...(11.22)",
+      "latex": "\\Delta W=qE\\Delta r",
+      "note": "Textbook source equation; preceding equality has a documented sign inconsistency.",
+      "sourceReferences": [
+        {
+          "pdfPage": 19,
+          "printedPage": 29
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.23",
+      "name": "Point-charge work and energy",
+      "number": "11.23",
+      "formula": "\\(\\Delta W_{r_A\\to r_1}=\\frac{Qq}{4\\pi\\varepsilon_o}\\left(\\frac1{r_1}-\\frac1{r_A}\\right)\\) ...(11.23)",
+      "latex": "\\Delta W_{r_A\\to r_1}=\\frac{Qq}{4\\pi\\varepsilon_o}\\left(\\frac1{r_1}-\\frac1{r_A}\\right)",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 20,
+          "printedPage": 31
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.24",
+      "name": "Point-charge work and energy",
+      "number": "11.24",
+      "formula": "\\(\\Delta W_{r_n\\to r_B}=\\frac{Qq}{4\\pi\\varepsilon_o}\\left(\\frac1{r_B}-\\frac1{r_n}\\right)\\) ...(11.24)",
+      "latex": "\\Delta W_{r_n\\to r_B}=\\frac{Qq}{4\\pi\\varepsilon_o}\\left(\\frac1{r_B}-\\frac1{r_n}\\right)",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 20,
+          "printedPage": 31
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.25",
+      "name": "Point-charge work and energy",
+      "number": "11.25",
+      "formula": "\\(\\Delta W_{r_A\\to r_B}=\\frac{Qq}{4\\pi\\varepsilon_o}\\left(\\frac1{r_B}-\\frac1{r_A}\\right)\\) ...(11.25)",
+      "latex": "\\Delta W_{r_A\\to r_B}=\\frac{Qq}{4\\pi\\varepsilon_o}\\left(\\frac1{r_B}-\\frac1{r_A}\\right)",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 20,
+          "printedPage": 31
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.26",
+      "name": "Point-charge work and energy",
+      "number": "11.26",
+      "formula": "\\(W_{r_A\\to r_B}=\\frac{Qq}{4\\pi\\varepsilon_o}\\left(\\frac1{r_B}\\right)\\) ...(11.26)",
+      "latex": "W_{r_A\\to r_B}=\\frac{Qq}{4\\pi\\varepsilon_o}\\left(\\frac1{r_B}\\right)",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 20,
+          "printedPage": 31
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.27",
+      "name": "Point-charge work and energy",
+      "number": "11.27",
+      "formula": "\\(U=\\frac{Qq}{4\\pi\\varepsilon_o}\\left(\\frac1r\\right)\\) ...(11.27)",
+      "latex": "U=\\frac{Qq}{4\\pi\\varepsilon_o}\\left(\\frac1r\\right)",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 20,
+          "printedPage": 31
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.28",
+      "name": "Point-charge potential",
+      "number": "11.28",
+      "formula": "\\(V=\\frac Wq=\\frac1{4\\pi\\varepsilon_o}\\frac Qr\\) ...(11.28)",
+      "latex": "V=\\frac Wq=\\frac1{4\\pi\\varepsilon_o}\\frac Qr",
+      "note": "Textbook source equation",
+      "sourceReferences": [
+        {
+          "pdfPage": 21,
+          "printedPage": 32
+        }
+      ]
+    },
+    {
+      "id": "phys12-electronvolt-joule",
+      "name": "Electron-volt in joules",
+      "formula": "\\(=1.602\\times10^{-19}\\mathrm J\\)",
+      "latex": "1\\mathrm{eV}=1.602\\times10^{-19}\\mathrm J",
+      "note": "Textbook conversion",
+      "sourceReferences": [
+        {
+          "pdfPage": 21,
+          "printedPage": 33
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.29",
+      "name": "Capacitor charge",
+      "number": "11.29",
+      "formula": "\\(Q=CV\\) ...(11.29)",
+      "latex": "Q=CV",
+      "note": "Textbook source equation; printed proportionality typo retained in the source lesson.",
+      "sourceReferences": [
+        {
+          "pdfPage": 22,
+          "printedPage": 35
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.30",
+      "name": "Parallel-plate capacitor charge",
+      "number": "11.30",
+      "formula": "\\(Q=\\frac{\\varepsilon_o AV}d\\)",
+      "latex": "Q=\\frac{\\varepsilon_o AV}d",
+      "sourceReferences": [
+        {
+          "pdfPage": 23,
+          "printedPage": 36
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.31",
+      "name": "Vacuum parallel-plate capacitance",
+      "number": "11.31",
+      "formula": "\\(C_{vac}=\\frac QV=\\frac{\\varepsilon_o A}d\\)",
+      "latex": "C_{vac}=\\frac QV=\\frac{\\varepsilon_o A}d",
+      "sourceReferences": [
+        {
+          "pdfPage": 23,
+          "printedPage": 36
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.32",
+      "name": "Dielectric capacitor",
+      "number": "11.32",
+      "formula": "\\(C_{med}=\\frac{\\varepsilon_o\\varepsilon_r A}d\\) ...(11.32)",
+      "latex": "C_{med}=\\frac{\\varepsilon_o\\varepsilon_r A}d",
+      "sourceReferences": [
+        {
+          "pdfPage": 23,
+          "printedPage": 37
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.33",
+      "name": "Relative permittivity",
+      "number": "11.33",
+      "formula": "\\(\\varepsilon_r=\\frac{C_{med}}{C_{vac}}\\) ...(11.33)",
+      "latex": "\\varepsilon_r=\\frac{C_{med}}{C_{vac}}",
+      "sourceReferences": [
+        {
+          "pdfPage": 23,
+          "printedPage": 37
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.34",
+      "name": "Series capacitance",
+      "number": "11.34",
+      "formula": "\\(\\frac1{C_e}=\\frac1{C_1}+\\frac1{C_2}+\\frac1{C_3}\\) ...(11.34)",
+      "latex": "\\frac1{C_e}=\\frac1{C_1}+\\frac1{C_2}+\\frac1{C_3}",
+      "sourceReferences": [
+        {
+          "pdfPage": 24,
+          "printedPage": 38
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.35",
+      "name": "Parallel capacitance",
+      "number": "11.35",
+      "formula": "\\(C_e=C_1+C_2+C_3\\) ...(11.35)",
+      "latex": "C_e=C_1+C_2+C_3",
+      "sourceReferences": [
+        {
+          "pdfPage": 24,
+          "printedPage": 38
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.36",
+      "name": "Electric dipole moment",
+      "number": "11.36",
+      "formula": "\\(P=|Qd|\\) ...(11.36)",
+      "latex": "P=|Qd|",
+      "sourceReferences": [
+        {
+          "pdfPage": 24,
+          "printedPage": 39
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.37",
+      "name": "Capacitor stored energy",
+      "number": "11.37",
+      "formula": "Energy \\(=U=\\frac{QV}2\\) ...(11.37)",
+      "latex": "U=\\frac{QV}2",
+      "sourceReferences": [
+        {
+          "pdfPage": 25,
+          "printedPage": 41
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.38",
+      "name": "Capacitor stored energy",
+      "number": "11.38",
+      "formula": "\\(\\begin{aligned}U=\\frac{QV}{2}=\\frac{CV^2}{2}\\ ...(11.38)\\\\U=\\frac{Q^2}{2C}\\end{aligned}\\)",
+      "latex": "U=\\frac{QV}{2}=\\frac{CV^2}{2}=\\frac{Q^2}{2C}",
+      "sourceReferences": [
+        {
+          "pdfPage": 26,
+          "printedPage": 42
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.39",
+      "name": "Energy in electric field",
+      "number": "11.39",
+      "formula": "\\(U=\\frac12\\times\\frac{A\\epsilon_r\\epsilon_0}{d}\\times(Ed)^2=\\frac12\\epsilon_r\\epsilon_0E^2\\times(Ad)\\) ...(11.39)",
+      "latex": "U=\\frac12\\epsilon_r\\epsilon_0E^2(Ad)",
+      "sourceReferences": [
+        {
+          "pdfPage": 26,
+          "printedPage": 42
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-11.40",
+      "name": "Electric-field energy density",
+      "number": "11.40",
+      "formula": "\\(u=\\frac12\\epsilon_r\\epsilon_0E^2\\) ...(11.40)",
+      "latex": "u=\\frac12\\epsilon_r\\epsilon_0E^2",
+      "sourceReferences": [
+        {
+          "pdfPage": 26,
+          "printedPage": 42
+        }
+      ]
+    },
+    {
+      "id": "phys12-eq-rc-discharge-368",
+      "name": "Capacitor charge after one discharge time constant",
+      "formula": "\\(t=RC\\quad q=q_0(0.368)\\)",
+      "latex": "t=RC,\\ q=0.368q_0",
+      "sourceReferences": [
+        {
+          "pdfPage": 27,
+          "printedPage": 44
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Permittivity",
+      "def": "Permittivity is the property of a medium which affects the magnitude of force between two point charges.",
+      "sourceReferences": [
+        {
+          "pdfPage": 7,
+          "printedPage": 5
+        }
+      ]
+    },
+    {
+      "term": "Relative permittivity",
+      "def": "This relation provides us with the definition of relative permittivity or dielectric constant or specific inductive capacity.",
+      "sourceReferences": [
+        {
+          "pdfPage": 23,
+          "printedPage": 37
+        }
+      ]
+    },
+    {
+      "term": "Electric flux",
+      "def": "The electric flux is denoted by \\(\\Phi_E\\). For uniform field \\(\\vec E\\) and area \\(\\vec A\\) electric flux is defined as the measure of number of lines of force that pass through the area placed in the electric field. Flux \\(\\Phi_E\\) is the scalar product of the electric field E and plane surface area A.",
+      "sourceReferences": [
+        {
+          "pdfPage": 12,
+          "printedPage": 15
+        }
+      ]
+    },
+    {
+      "term": "Gauss’s law",
+      "def": "Gauss’ law states that the net electric flux through a closed surface is equal to the total charge \\(q\\) enclosed by the surface divided by the permittivity of free space.",
+      "sourceReferences": [
+        {
+          "pdfPage": 14,
+          "printedPage": 18
+        }
+      ]
+    },
+    {
+      "term": "Potential difference",
+      "def": "Potential difference between two points is the work done in moving a unit positive charge from one point to another keeping the charge in electrostatic equilibrium.",
+      "sourceReferences": [
+        {
+          "pdfPage": 18,
+          "printedPage": 26
+        }
+      ]
+    },
+    {
+      "term": "Electric potential",
+      "def": "Thus the electric potential at any point is equal to the work done in bringing a unit positive charge from infinity to that point without producing any acceleration.",
+      "sourceReferences": [
+        {
+          "pdfPage": 18,
+          "printedPage": 27
+        }
+      ]
+    },
+    {
+      "term": "Potential gradient",
+      "def": "The rate of change of electric potential \\(\\Delta V\\) with respect to displacement \\(\\Delta r\\) is known as potential gradient.",
+      "sourceReferences": [
+        {
+          "pdfPage": 18,
+          "printedPage": 27
+        }
+      ]
+    },
+    {
+      "term": "Equipotential surfaces",
+      "def": "The surfaces which have equal electrostatic potential at each point are known as Equipotential Surfaces.",
+      "sourceReferences": [
+        {
+          "pdfPage": 19,
+          "printedPage": 28
+        }
+      ]
+    },
+    {
+      "term": "Electron-volt",
+      "def": "The electron-volt is a unit of energy or work which is defined as the amount of energy acquired or lost by an electron when it is displaced across two points between which potential difference is one volt.",
+      "sourceReferences": [
+        {
+          "pdfPage": 21,
+          "printedPage": 33
+        }
+      ]
+    },
+    {
+      "term": "Capacitor",
+      "def": "A device which is used for storing electric charges is called capacitor.",
+      "sourceReferences": [
+        {
+          "pdfPage": 22,
+          "printedPage": 34
+        }
+      ]
+    },
+    {
+      "term": "Capacitance",
+      "def": "The capacitance is thus defined as the ratio of magnitude of charge on either plate to the potential difference produced between the plates.",
+      "sourceReferences": [
+        {
+          "pdfPage": 22,
+          "printedPage": 35
+        }
+      ]
+    },
+    {
+      "term": "Farad",
+      "def": "Farad (F) is defined as “the capacity of that capacitor which stores a charge of 1 coulomb having the potential difference of 1 volt between the plates”.",
+      "sourceReferences": [
+        {
+          "pdfPage": 22,
+          "printedPage": 35
+        }
+      ]
+    },
+    {
+      "term": "Dielectric",
+      "def": "In the previous section we explored the dependence of charge storing capacity of a capacitor on the dielectric material. A dielectric is an electrical insulator that can be polarized by an applied electric field.",
+      "sourceReferences": [
+        {
+          "pdfPage": 24,
+          "printedPage": 38
+        }
+      ]
+    },
+    {
+      "term": "Electric dipole",
+      "def": "The system in which two charges of equal magnitude but of opposite sign separated by the distance d, are present is termed as a dipole. Electric dipole moment is represented by P, which is equal to the product of the charge Q present in the dipole and the distance d between the two charges of the dipole.",
+      "sourceReferences": [
+        {
+          "pdfPage": 24,
+          "printedPage": 39
+        }
+      ]
+    },
+    {
+      "term": "Time constant",
+      "definition": "The time taken to charge a capacitor in a given circuit is determined by the time constant of the circuit. The factor RC is called the time constant. The time constant is the duration of time for the capacitor in which 63.2% of its maximum value charge is deposited on the plates, as illustrated in the curve in Figure 11.28.",
+      "definitionUrdu": "کسی دیے گئے سرکٹ میں کیپیسٹر کو چارج ہونے میں لگنے والا وقت سرکٹ کے وقت کے مستقل سے متعین ہوتا ہے۔ حاصل ضرب RC کو وقت کا مستقل کہتے ہیں۔ یہ وہ دورانیہ ہے جس میں کیپیسٹر کی زیادہ سے زیادہ بار کی 63.2% مقدار پلیٹوں پر جمع ہو جاتی ہے، جیسا کہ شکل 11.28 کے منحنی میں دکھایا گیا ہے۔",
+      "definitionPashto": "په ورکړل شوي مدار کې د کپاسیټر د چارج کېدو موده د مدار د وخت ثابت ټاکي. حاصل ضرب RC ته د وخت ثابت ویل کېږي. دا هغه موده ده چې په ترڅ کې یې د کپاسیټر د اعظمي چارج 63.2٪ پر تختو زېرمه کېږي، لکه د شکل 11.28 په منحني کې چې ښودل شوې ده.",
+      "sourceReferences": [
+        {
+          "pdfPage": 26,
+          "printedPage": 43
+        }
+      ]
+    },
+    {
+      "term": "Coulomb’s law",
+      "definition": "the magnitude of the force between two point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.",
+      "definitionUrdu": "د دوو نقطوي بارونو ترمنځ د قوې مقدار د بارونو د مقدارونو له حاصل ضرب سره مستقیم او د واټن له مربع سره معکوس تناسب لري۔",
+      "definitionPashto": "د دوو نقطوي چارجونو ترمنځ د قوې اندازه د چارجونو د مقدارونو له حاصل ضرب سره مستقیم او د واټن له مربع سره معکوس تناسب لري.",
+      "sourceReferences": [
+        {
+          "pdfPage": 27,
+          "printedPage": 45
+        }
+      ]
+    },
+    {
+      "term": "Electric field",
+      "definition": "the region around a charge in which an electric test charge would experience an electric force.",
+      "definitionUrdu": "بار کے گرد وہ خطہ جہاں برقی آزمائشی بار برقی قوت محسوس کرے۔",
+      "definitionPashto": "د چارج شاوخوا هغه سیمه چې ازمېښتي برېښنايي چارج پکې برېښنايي قوه احساس کړي.",
+      "sourceReferences": [
+        {
+          "pdfPage": 27,
+          "printedPage": 45
+        }
+      ]
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "textbook-example-1",
+      "num": "11.1",
+      "title": "Example 11.1",
+      "problem": "Three charges \\(q_1=-5\\,\\mu\\mathrm C\\), \\(q_2=+10\\,\\mu\\mathrm C\\) and \\(q_3=-12\\,\\mu\\mathrm C\\) are placed in a line as shown in figure. Calculate the net electrostatic force on charge \\(q_2\\) due to the other two charges.",
+      "given": [
+        "Charge \\((q_1)=-5\\,\\mu\\mathrm C=-5\\times10^{-6}\\,\\mathrm C\\)",
+        "Charge \\((q_2)=+10\\,\\mu\\mathrm C=+10\\times10^{-6}\\,\\mathrm C\\)",
+        "Charge \\((q_3)=-12\\,\\mu\\mathrm C=-12\\times10^{-6}\\,\\mathrm C\\)",
+        "\\(k=9\\times10^9\\;\\mathrm{N\\,m^2\\,C^{-2}}\\)",
+        "The distance between charge \\(q_1\\) and \\(q_2\\) \\((r_{12})=6\\,\\mathrm{cm}=0.06\\,\\mathrm m=6\\times10^{-2}\\,\\mathrm m\\)",
+        "The distance between charge \\(q_2\\) and \\(q_3\\) \\((r_{23})=4\\,\\mathrm{cm}=0.04\\,\\mathrm m=4\\times10^{-2}\\,\\mathrm m\\)"
+      ],
+      "steps": [
+        "Electrostatic force on charge \\(q_2\\) due to charge \\(q_1\\)= \\(F_{21}=k\\frac{q_1q_2}{r_{12}^2}\\)",
+        "\\(=9.0\\times10^9\\;\\mathrm{N\\,m^2\\,C^{-2}}\\frac{(5\\times10^{-6}\\,\\mathrm C)(10\\times10^{-6}\\,\\mathrm C)}{(6\\times10^{-2}\\,\\mathrm m)^2}\\)",
+        "\\(=9.0\\times10^9\\;\\mathrm{N\\,m^2\\,C^{-2}}\\frac{50\\times10^{-12}\\,\\mathrm{C^2}}{36\\times10^{-4}\\,\\mathrm{m^2}}\\)",
+        "\\(=125\\,\\mathrm N\\)",
+        "Electrostatic force on charge \\(q_2\\) due to \\(q_3\\)=",
+        "\\(F_{23}=9.0\\times10^9\\;\\mathrm{N\\,m^2\\,C^{-2}}\\frac{(10\\times10^{-6}\\,\\mathrm C)(12\\times10^{-6}\\,\\mathrm C)}{4\\times10^{-2}\\,\\mathrm m}\\)",
+        "\\(=9.0\\times10^9\\;\\mathrm{N\\,m^2\\,C^{-2}}\\frac{120\\times10^{-12}\\,\\mathrm{C^2}}{16\\times10^{-4}\\,\\mathrm{m^2}}\\)",
+        "\\(=\\frac{1080\\times10^{-3}}{16\\times10^{-4}}\\,\\mathrm N=675\\,\\mathrm N\\)",
+        "The net electrostatic force on charge \\(q_2=F_2=F_{21}-F_{23}\\)",
+        "\\(=675\\,\\mathrm N-125\\,\\mathrm N=550\\,\\mathrm N\\).",
+        "The direction of the net electrostatic force on charge \\(q_2\\) points towards charge \\(q_3\\) (points to the right)."
+      ],
+      "answer": "550 N towards q₃ (to the right)",
+      "solutionOrigin": "textbook",
+      "sourceReferences": [
+        {
+          "pdfPage": 8,
+          "printedPage": 6
+        },
+        {
+          "pdfPage": 8,
+          "printedPage": 7
+        }
+      ],
+      "sourceClarifications": [
+        "Source clarification: the first printed substitution for \\(F_{23}\\) omits the square on the distance; the next line correctly uses \\(16\\times10^{-4}\\,\\mathrm{m^2}\\). The printed net-force labels are reversed relative to the subtraction \\(675-125\\). Taking right as positive gives \\(F_2=F_{23}-F_{21}=+550\\,\\mathrm N\\). The original printed statements are retained above; these are textbook typographical inconsistencies."
+      ],
+      "diagramSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 125\" role=\"img\" aria-label=\"Three collinear charges and their separations\" style=\"width:100%;max-width:580px;height:auto\"><defs><marker id=\"phys12-reviewed-example111-card\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto-start-reverse\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#334155\"/></marker></defs><circle cx=\"65\" cy=\"70\" r=\"18\" fill=\"#f8fafc\" stroke=\"#334155\"/><text x=\"59\" y=\"76\" font-size=\"20\">−</text><text x=\"56\" y=\"35\">q<tspan baseline-shift=\"sub\" font-size=\"11\">1</tspan></text><circle cx=\"335.0\" cy=\"70\" r=\"18\" fill=\"#f9a8d4\" stroke=\"#334155\"/><text x=\"329.0\" y=\"76\" font-size=\"20\">+</text><text x=\"326.0\" y=\"35\">q<tspan baseline-shift=\"sub\" font-size=\"11\">2</tspan></text><circle cx=\"515\" cy=\"70\" r=\"18\" fill=\"#f8fafc\" stroke=\"#334155\"/><text x=\"509\" y=\"76\" font-size=\"20\">−</text><text x=\"506\" y=\"35\">q<tspan baseline-shift=\"sub\" font-size=\"11\">3</tspan></text><line x1=\"87\" y1=\"70\" x2=\"313.0\" y2=\"70\" stroke=\"#334155\" marker-start=\"url(#phys12-reviewed-example111-card)\" marker-end=\"url(#phys12-reviewed-example111-card)\"/><text x=\"182.0\" y=\"55\">6 cm</text><line x1=\"357.0\" y1=\"70\" x2=\"493\" y2=\"70\" stroke=\"#334155\" marker-start=\"url(#phys12-reviewed-example111-card)\" marker-end=\"url(#phys12-reviewed-example111-card)\"/><text x=\"407.0\" y=\"55\">4 cm</text></svg>",
+      "required": [
+        "The magnitude of net electrostatic force on charge \\(q_2=F_{\\mathrm{net}}=?\\)",
+        "The direction of electrostatic force = ?"
+      ]
+    },
+    {
+      "id": "textbook-example-2",
+      "title": "Example 11.2",
+      "problem": "Find electric field at a distance of 30 cm from a \\(3\\,\\mu\\mathrm C\\) point charge.",
+      "given": [
+        "radius \\(r=30\\,\\mathrm{cm}=30\\times10^{-2}\\,\\mathrm m=0.3\\,\\mathrm m\\)",
+        "charge \\(q=3\\,\\mu\\mathrm C=3\\times10^{-6}\\,\\mathrm C\\)"
+      ],
+      "steps": [
+        "Using electric field intensity formulae",
+        "\\(E=\\frac{1}{4\\pi\\varepsilon_0}\\frac{q}{r^2}\\)",
+        "\\(=(9\\times10^9\\,\\mathrm{N\\,m^2\\,C^{-2}})\\frac{3\\times10^{-6}\\,\\mathrm C}{(0.3\\,\\mathrm m)^2}\\)",
+        "\\(=3\\times10^5\\,\\mathrm{N\\,C^{-1}}\\)"
+      ],
+      "answer": "3 × 10⁵ N C⁻¹",
+      "solutionOrigin": "textbook",
+      "sourceReferences": [
+        {
+          "pdfPage": 9,
+          "printedPage": 9
+        },
+        {
+          "pdfPage": 10,
+          "printedPage": 10
+        }
+      ],
+      "required": [
+        "electric field \\(=E=?\\)"
+      ]
+    },
+    {
+      "id": "textbook-example-3",
+      "num": "11.3",
+      "title": "Example 11.3",
+      "problem": "A metallic sphere of diameter 40 cm carries a charge of 600 μ C. Find the electric field intensity (a) at a distance of 60cm from the centre of the sphere and (b) at the surface of sphere.",
+      "given": [
+        "Distance of a charge from the sphere \\(r=OB=60\\,\\mathrm{cm}=60\\times10^{-2}\\,\\mathrm m\\);",
+        "Charge on sphere \\(q=600\\,\\mu\\mathrm C=600\\times10^{-6}\\,\\mathrm C\\)",
+        "Distance \\(r=\\frac d2=\\frac{OA}{2}=\\frac{40\\,\\mathrm{cm}}2=0.2\\,\\mathrm m\\)"
+      ],
+      "required": [
+        "electric field intensity \\(=E=?\\)"
+      ],
+      "steps": [
+        "The electric field due to a charged sphere has spherical symmetry. Therefore, a charged sphere behaves for external points as if the whole charge is placed at its centre.",
+        "(a) Electric field intensity from the centre of the sphere \\(E=k\\frac q{r^2}\\)",
+        "\\(=9\\times10^9\\times\\frac{600\\times10^{-6}}{(60\\times10^{-2})^2}=1.5\\times10^9\\,\\mathrm{N/C}\\)",
+        "(b) electric field intensity from the surface of a sphere \\(E=k\\frac q{r^2}\\)",
+        "\\(=9\\times10^9\\times\\frac{600\\times10^{-6}}{(0.2)^2}\\)",
+        "\\(=13.5\\times10^7\\,\\mathrm{N/C}\\)"
+      ],
+      "answer": "(a) \\(1.5\\times10^9\\,\\mathrm{N/C}\\), (b) \\(13.5\\times10^7\\,\\mathrm{N/C}\\)",
+      "solutionOrigin": "textbook",
+      "sourceClarifications": [
+        "[Editorial clarification: the source prints \\(OA/2\\) in the radius calculation although OA is the radius in its diagram. Part (a) prints \\(1.5\\times10^9\\,\\mathrm{N/C}\\); the displayed substitution evaluates to \\(1.5\\times10^7\\,\\mathrm{N/C}\\). Both printed statements are retained.]"
+      ],
+      "diagramSvg": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 160\" role=\"img\" aria-label=\"O at sphere centre, A on surface, B at 60 cm from O\" style=\"width:100%;max-width:500px\"><circle cx=\"100\" cy=\"65\" r=\"40\" fill=\"#facc15\" stroke=\"#334155\"/><path d=\"M100 65H220\" stroke=\"#7f1d1d\" stroke-width=\"2\" stroke-dasharray=\"2 2\"/><circle cx=\"100\" cy=\"65\" r=\"2\"/><circle cx=\"140\" cy=\"65\" r=\"2\"/><circle cx=\"220\" cy=\"65\" r=\"2\"/><text x=\"93\" y=\"55\">O</text><text x=\"139\" y=\"55\">A</text><text x=\"216\" y=\"55\">B</text><path d=\"M100 113V133M220 113V133M100 123H220\" stroke=\"#334155\"/><path d=\"M100 123L107.0 120.0L107.0 126.0Z\" fill=\"#334155\"/><path d=\"M220 123L213.0 126.0L213.0 120.0Z\" fill=\"#334155\"/><rect x=\"144\" y=\"113\" width=\"45\" height=\"18\" fill=\"#fff\"/><text x=\"146\" y=\"127\">60 cm</text></svg><figcaption>Field intensity due to a charged sphere</figcaption></figure>",
+      "sourceReferences": [
+        {
+          "pdfPage": 12,
+          "printedPage": 14,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "textbook-example-5",
+      "num": "11.5",
+      "title": "Example 11.5",
+      "problem": "You have a 12.0-V motorcycle battery that can move 5000 C of charge, and a 12.0-V car battery that can move 60,000 C of charge. How much energy does each deliver?",
+      "given": [
+        "For the motorcycle battery, \\(q=5000\\mathrm C\\) and \\(\\Delta V=12.0\\mathrm V\\)",
+        "For the car battery, \\(q=60,000\\mathrm C\\) and \\(\\Delta V=12.0\\mathrm V\\)"
+      ],
+      "required": [
+        "\\(\\Delta U_{\\mathrm{cycle}}=?\\quad\\Delta U_{\\mathrm{car}}=?\\)"
+      ],
+      "steps": [
+        "\\(\\Delta U_{\\mathrm{cycle}}=(5000\\mathrm C)(12.0\\mathrm V)=(5000\\mathrm C)(12.0\\mathrm{J/C})=6.00\\times10^4\\mathrm J.\\)",
+        "\\(\\Delta U_{\\mathrm{car}}=(60,000\\mathrm C)(12.0\\mathrm V)=7.20\\times10^5\\mathrm J.\\)"
+      ],
+      "answer": "\\(\\Delta U_{\\mathrm{cycle}}=(5000\\mathrm C)(12.0\\mathrm V)=(5000\\mathrm C)(12.0\\mathrm{J/C})=6.00\\times10^4\\mathrm J.\\) \\(\\Delta U_{\\mathrm{car}}=(60,000\\mathrm C)(12.0\\mathrm V)=7.20\\times10^5\\mathrm J.\\)",
+      "solutionOrigin": "textbook",
+      "sourceReferences": [
+        {
+          "pdfPage": 19,
+          "printedPage": 29
+        }
+      ]
+    },
+    {
+      "id": "textbook-example-6",
+      "num": "11.6",
+      "title": "Example 11.6 — point-charge potential",
+      "problem": "A point charge of 3μC is placed at point O between M and N, 3cm apart. Point M is 2cm from the charge and N is 1cm from the charge. What is the potential difference \\(V_M-V_N\\)?",
+      "given": [
+        "charge \\(q=3\\mu\\mathrm C\\), distance \\(r_1=2\\mathrm{cm}\\), distance \\(r_2=1\\mathrm{cm}\\)"
+      ],
+      "required": [
+        "the potential difference \\(V_M-V_N=?\\)"
+      ],
+      "steps": [
+        "Potential at M due to the charge is",
+        "\\(V_M=k\\frac q{r_1}\\)",
+        "\\(V_M=9\\times10^9\\times\\frac{3\\times10^{-6}}{2\\times10^{-2}}=13.5\\times10^5\\mathrm V\\)",
+        "Potential at N due to the charge is",
+        "\\(V_N=k\\frac q{r_2}=9\\times10^9\\times\\frac{3\\times10^{-6}}{1\\times10^{-2}}=27\\times10^5\\mathrm V\\)",
+        "\\(\\therefore V_M-V_N=13.5\\times10^5-27\\times10^5=-13.5\\times10^5\\mathrm V\\)"
+      ],
+      "answer": "\\(\\therefore V_M-V_N=13.5\\times10^5-27\\times10^5=-13.5\\times10^5\\mathrm V\\)",
+      "solutionOrigin": "textbook",
+      "sourceReferences": [
+        {
+          "pdfPage": 21,
+          "printedPage": 32
+        }
+      ]
+    },
+    {
+      "id": "textbook-example-6-electronvolt",
+      "num": "11.6",
+      "title": "Example 11.6 — particle energy",
+      "problem": "A particle carrying a charge (3e) falls through a potential difference of 5V. Calculate the energy acquired by the particle.",
+      "given": [
+        "Charge \\(=q=3e\\), potential difference \\(\\Delta V=5\\mathrm V\\)"
+      ],
+      "required": [
+        "Energy: K.E=?"
+      ],
+      "steps": [
+        "The energy acquired by the charged particle is",
+        "\\(\\Delta(\\mathrm{KE})=q\\Delta V=(3e)(5\\mathrm V)=15\\mathrm{eV}\\)",
+        "\\(=15\\times1.602\\times10^{-19}\\mathrm J=2.4\\times10^{-18}\\mathrm J\\)"
+      ],
+      "answer": "\\(=15\\times1.602\\times10^{-19}\\mathrm J=2.4\\times10^{-18}\\mathrm J\\)",
+      "solutionOrigin": "textbook",
+      "sourceReferences": [
+        {
+          "pdfPage": 21,
+          "printedPage": 33
+        }
+      ]
+    },
+    {
+      "id": "textbook-example-7",
+      "num": "11.7",
+      "title": "Example 11.7",
+      "problem": "Figure shows a different combination of capacitors, if the total charge is 600μC. Then determine the values of V1, and C2.",
+      "given": [
+        "total charge \\(Q=600\\mu\\mathrm C\\), capacitance \\(C_1=15\\mu\\mathrm F\\), capacitance \\(C_3=8\\mu\\mathrm F\\), potential \\(V_2=20\\mathrm V\\)"
+      ],
+      "required": [
+        "capacitance \\(C_2=?\\), Potential \\(V_1=?\\)"
+      ],
+      "steps": [
+        "P.D. across capacitor \\(C_1\\): \\(V_1=\\frac Q{C_1}=\\frac{600\\times10^{-6}}{15\\times10^{-6}}=40\\mathrm V\\)",
+        "Total P.D.: \\(V=V_1+V_2=40+20=60\\mathrm V\\)",
+        "Charge on capacitor \\(C_3\\) is: \\(Q_3=C_3\\times V_2\\)",
+        "\\(=(8\\times10^{-6})\\times20\\)",
+        "\\(=160\\times10^{-6}\\mathrm C=160\\mu\\mathrm C\\)",
+        "Charge on capacitor \\(C_2\\) is: \\(Q_2=600-160=440\\mu\\mathrm C\\)",
+        "Capacitance of capacitor \\(C_2=\\frac{440\\times10^{-6}}{20}=22\\times10^{-6}\\mathrm F=22\\mu\\mathrm F\\)"
+      ],
+      "answer": "Capacitance of capacitor \\(C_2=\\frac{440\\times10^{-6}}{20}=22\\times10^{-6}\\mathrm F=22\\mu\\mathrm F\\)",
+      "solutionOrigin": "textbook",
+      "sourceReferences": [
+        {
+          "pdfPage": 25,
+          "printedPage": 40
+        }
+      ]
+    },
+    {
+      "id": "textbook-example-8",
+      "num": "11.8",
+      "title": "Example 11.8",
+      "problem": "A 6μF capacitor is charged to a P.D. of 200V and then connected in parallel with an un-charged 3μF capacitor. Calculate the P.D. across the parallel plate capacitors.",
+      "given": [
+        "Capacitance of charged capacitor \\(C_1=6\\mu\\mathrm F\\), Capacitance of un-charged capacitor \\(C_2=3\\mathrm{pF}\\), P.D. of capacitor \\(C_1\\) is: \\(V=200\\mathrm V\\)"
+      ],
+      "required": [
+        "P.D. across the parallel plate capacitors \\(V=?\\)"
+      ],
+      "steps": [
+        "Charge on capacitor \\(C_1\\) is: \\(Q=C_1V=(6\\times10^{-6})\\times200=0.0012\\mathrm C\\)",
+        "The equivalent capacitance of parallel combination of capacitors is",
+        "\\(C_{eq}=C_1+C_2=6+3=9\\mu\\mathrm F\\)",
+        "The charge 0.0012 C is distributed between the two capacitors to have a common P.D.",
+        "P.D. across parallel plate capacitors: \\(V=\\frac Q{C_T}=\\frac{0.0012}{9\\times10^{-6}}=133.3\\mathrm V\\)"
+      ],
+      "answer": "P.D. across parallel plate capacitors: \\(V=\\frac Q{C_T}=\\frac{0.0012}{9\\times10^{-6}}=133.3\\mathrm V\\)",
+      "solutionOrigin": "textbook",
+      "sourceReferences": [
+        {
+          "pdfPage": 25,
+          "printedPage": 40
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "assignment-11-1",
+      "exercise": "Assignment 11.1",
+      "title": "Assignment 11.1",
+      "problems": [
+        {
+          "id": "assignment-11-1-q1",
+          "qNo": "1",
+          "question": "Three charges \\(+q_1=5\\,\\mu\\mathrm C\\), \\(+q_2=10\\,\\mu\\mathrm C\\) and \\(q_3\\) are placed as shown in th figure. What is the electrostatic charge on \\(q_3\\) if the net electrostati force on charges \\(q_2\\) is zero.",
+          "answer": "20\\times10^{-6}\\,\\mathrm C",
+          "solution": "",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 8,
+              "printedPage": 7
+            }
+          ],
+          "diagramSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 125\" role=\"img\" aria-label=\"Three collinear charges and their separations\" style=\"width:100%;max-width:580px;height:auto\"><defs><marker id=\"phys12-reviewed-assignment111-card\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto-start-reverse\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#334155\"/></marker></defs><circle cx=\"65\" cy=\"70\" r=\"18\" fill=\"#f9a8d4\" stroke=\"#334155\"/><text x=\"59\" y=\"76\" font-size=\"20\">+</text><text x=\"56\" y=\"35\">q<tspan baseline-shift=\"sub\" font-size=\"11\">1</tspan></text><circle cx=\"215.0\" cy=\"70\" r=\"18\" fill=\"#f9a8d4\" stroke=\"#334155\"/><text x=\"209.0\" y=\"76\" font-size=\"20\">+</text><text x=\"206.0\" y=\"35\">q<tspan baseline-shift=\"sub\" font-size=\"11\">2</tspan></text><circle cx=\"515\" cy=\"70\" r=\"18\" fill=\"#f9a8d4\" stroke=\"#334155\"/><text x=\"509\" y=\"76\" font-size=\"20\">+</text><text x=\"506\" y=\"35\">q<tspan baseline-shift=\"sub\" font-size=\"11\">3</tspan></text><line x1=\"87\" y1=\"70\" x2=\"193.0\" y2=\"70\" stroke=\"#334155\" marker-start=\"url(#phys12-reviewed-assignment111-card)\" marker-end=\"url(#phys12-reviewed-assignment111-card)\"/><text x=\"122.0\" y=\"55\">2 cm</text><line x1=\"237.0\" y1=\"70\" x2=\"493\" y2=\"70\" stroke=\"#334155\" marker-start=\"url(#phys12-reviewed-assignment111-card)\" marker-end=\"url(#phys12-reviewed-assignment111-card)\"/><text x=\"347.0\" y=\"55\">4 cm</text></svg>",
+          "answerOrigin": "textbook",
+          "sourceClarifications": [
+            "[Editorial note: th and electrostati are clipped at the right edge of the source scan; missing letters remain unresolved.]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-printers-11",
+      "title": "Quiz — Printers",
+      "problems": [
+        {
+          "id": "quiz-printers-11-q1",
+          "question": "What are the basic differences between laser printer and photocopier?",
+          "sourceReferences": [
+            {
+              "pdfPage": 11,
+              "printedPage": 13
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        }
+      ]
+    },
+    {
+      "id": "project-gaussian-11",
+      "title": "Project — Gaussian-surface flux",
+      "problems": [
+        {
+          "id": "project-gaussian-11-q1",
+          "question": "Calculate the electric flux through each Gaussian surface shown in Figure",
+          "diagramSvg": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 650 220\" role=\"img\" aria-label=\"Four project Gaussian surfaces with original signed labels and charge markers; outside charges distinguished\" style=\"width:100%;max-width:650px\"><path d=\"M15 40H170V160H15Z M15 40L25 24H160L170 40\" fill=\"#6ee7b7\" stroke=\"#334155\"/><circle cx=\"252\" cy=\"102\" r=\"62\" fill=\"#6ee7b7\" stroke=\"#334155\"/><ellipse cx=\"388\" cy=\"112\" rx=\"56\" ry=\"84\" transform=\"rotate(30 388 112)\" fill=\"#fef08a\"/><ellipse cx=\"558\" cy=\"119\" rx=\"63\" ry=\"35\" transform=\"rotate(-38 558 119)\" fill=\"#e11d48\"/><circle cx=\"37\" cy=\"64\" r=\"9\" fill=\"#0284c7\"/><text x=\"32\" y=\"69\" fill=\"#fff\">+</text><text x=\"51\" y=\"69\">+4 μC</text><circle cx=\"92\" cy=\"86\" r=\"9\" fill=\"#e11d48\"/><text x=\"87\" y=\"91\" fill=\"#fff\">−</text><text x=\"106\" y=\"91\">−2 μC</text><circle cx=\"50\" cy=\"133\" r=\"9\" fill=\"#e11d48\"/><text x=\"45\" y=\"138\" fill=\"#fff\">−</text><text x=\"64\" y=\"138\">−2 μC</text><text x=\"70\" y=\"197\">+2 μC</text><circle cx=\"235\" cy=\"78\" r=\"9\" fill=\"#0284c7\"/><text x=\"230\" y=\"83\" fill=\"#fff\">+</text><text x=\"249\" y=\"83\">+3 μC</text><circle cx=\"245\" cy=\"134\" r=\"9\" fill=\"#e11d48\"/><text x=\"240\" y=\"139\" fill=\"#fff\">−</text><text x=\"259\" y=\"139\">−3 μC</text><circle cx=\"250\" cy=\"13\" r=\"9\" fill=\"#e11d48\"/><text x=\"245\" y=\"18\" fill=\"#fff\">−</text><text x=\"264\" y=\"18\">+6 μC</text><circle cx=\"229\" cy=\"188\" r=\"9\" fill=\"#0284c7\"/><text x=\"224\" y=\"193\" fill=\"#fff\">+</text><text x=\"243\" y=\"193\">+2 μC</text><circle cx=\"397\" cy=\"19\" r=\"9\" fill=\"#0284c7\"/><text x=\"392\" y=\"24\" fill=\"#fff\">+</text><text x=\"411\" y=\"24\">+4 μC</text><circle cx=\"381\" cy=\"64\" r=\"9\" fill=\"#e11d48\"/><text x=\"376\" y=\"69\" fill=\"#fff\">−</text><text x=\"395\" y=\"69\">−3 μC</text><circle cx=\"353\" cy=\"115\" r=\"9\" fill=\"#0284c7\"/><text x=\"348\" y=\"120\" fill=\"#fff\">+</text><text x=\"367\" y=\"120\">+2 μC</text><circle cx=\"333\" cy=\"149\" r=\"9\" fill=\"#e11d48\"/><text x=\"328\" y=\"154\" fill=\"#fff\">−</text><text x=\"347\" y=\"154\">−5 μC</text><circle cx=\"317\" cy=\"195\" r=\"9\" fill=\"#e11d48\"/><text x=\"312\" y=\"200\" fill=\"#fff\">−</text><text x=\"331\" y=\"200\">−4 μC</text><circle cx=\"550\" cy=\"103\" r=\"9\" fill=\"#e11d48\"/><text x=\"545\" y=\"108\" fill=\"#fff\">−</text><text x=\"564\" y=\"108\">−1 μC</text><circle cx=\"514\" cy=\"143\" r=\"9\" fill=\"#0284c7\"/><text x=\"509\" y=\"148\" fill=\"#fff\">+</text><text x=\"528\" y=\"148\">+4 μC</text><circle cx=\"570\" cy=\"54\" r=\"9\" fill=\"#0284c7\"/><text x=\"565\" y=\"59\" fill=\"#fff\">+</text><text x=\"584\" y=\"59\">−2 μC</text><circle cx=\"545\" cy=\"185\" r=\"9\" fill=\"#e11d48\"/><text x=\"540\" y=\"190\" fill=\"#fff\">−</text><text x=\"559\" y=\"190\">+6 μC</text></svg></figure>",
+          "solutionOrigin": "not_provided_in_textbook",
+          "sourceReferences": [
+            {
+              "pdfPage": 17,
+              "printedPage": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assignment-11-2",
+      "title": "Assignment 11.2",
+      "problems": [
+        {
+          "id": "assignment-11-2-q1",
+          "question": "When a 12.0 V car battery powers a single 30.0-W headlight, how many electrons pass through it each second?",
+          "answer": "Answer (\\(1.56\\times10^{19}\\) electrons)",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 19,
+              "printedPage": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assignment-11-3",
+      "title": "Assignment 11.3",
+      "problems": [
+        {
+          "id": "assignment-11-3-q1",
+          "question": "Two charges \\(5\\times10^{-8}\\mathrm C\\) and \\(-3\\times10^{-8}\\mathrm C\\) are located 16 cm apart. At what point(s) on the line joining the two charges is the electric potential zero? Take the potential at infinity to be zero.",
+          "answer": "Ans(10 cm)",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 21,
+              "printedPage": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "textbook-exercise-11-mcq",
+      "exercise": "Exercise 11",
+      "title": "Exercise 11 — Multiple-choice questions",
+      "problems": [
+        {
+          "id": "textbook-exercise-11-q1",
+          "qNo": "1",
+          "question": "A charge Q is divided into two parts q and Q−q and separated by a distance R. The force of repulsion between them is maximum when:",
+          "options": [
+            "A. q=Q/4",
+            "B. q=Q/3",
+            "C. q=Q/2",
+            "D. q=Q"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 46
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "ایک بار Q کو دو حصوں q اور Q−q میں تقسیم کر کے ان کے درمیان فاصلہ R رکھا جاتا ہے۔ ان کے درمیان دفع کی قوت کب زیادہ سے زیادہ ہوگی؟",
+          "optionsUrdu": [
+            "A. q=Q/4",
+            "B. q=Q/3",
+            "C. q=Q/2",
+            "D. q=Q"
+          ],
+          "questionPashto": "یو چارج Q په q او Q−q دوو برخو وېشل کېږي او ترمنځ یې د R واټن وي. د دوی ترمنځ د دفع قوې اندازه کله اعظمي وي؟",
+          "optionsPashto": [
+            "A. q=Q/4",
+            "B. q=Q/3",
+            "C. q=Q/2",
+            "D. q=Q"
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-q2",
+          "qNo": "2",
+          "question": "Three objects are brought close to each other, two at a time. A and B attract, while B and C repel. From this, we conclude that:",
+          "options": [
+            "A. A and C have charges of the same sign.",
+            "B. A and C have charges of opposite signs.",
+            "C. all three objects have charges of the same sign.",
+            "D. one of the objects is neutral."
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 46
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "تین اجسام کو باری باری دو دو کر کے قریب لایا جاتا ہے۔ A اور B ایک دوسرے کو کھینچتے ہیں، جبکہ B اور C ایک دوسرے کو دفع کرتے ہیں۔ اس سے نتیجہ نکلتا ہے کہ:",
+          "optionsUrdu": [
+            "A. A اور C کے بار ہم علامت ہیں۔",
+            "B. A اور C کے بار مخالف علامت ہیں۔",
+            "C. تینوں اجسام کے بار ہم علامت ہیں۔",
+            "D. ایک جسم غیر باردار ہے۔"
+          ],
+          "questionPashto": "درې جسمونه په وار سره دوه دوه یو بل ته نږدې کېږي. A او B یو بل جذبوي، خو B او C یو بل دفع کوي. له دې څخه پایله اخلو چې:",
+          "optionsPashto": [
+            "A. د A او C چارجونه هم‌نښه دي.",
+            "B. د A او C چارجونه مخالف‌نښه دي.",
+            "C. د درې واړو جسمونو چارجونه هم‌نښه دي.",
+            "D. له جسمونو یو بې‌چارج دی."
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-q3",
+          "qNo": "3",
+          "question": "Object A has a charge of \\(+2\\,\\mu\\mathrm C\\), and object B has a charge of \\(+6\\,\\mu\\mathrm C\\). Which statement is true about the electric forces on the objects?",
+          "options": [
+            "A. \\(F_{AB}=-3F_{BA}\\)",
+            "B. \\(F_{AB}=-F_{BA}\\)",
+            "C. \\(3F_{AB}=-F_{BA}\\)",
+            "D. \\(F_{AB}=3F_{BA}\\)"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 46
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "جسم A پر \\(+2\\,\\mu\\mathrm C\\) اور جسم B پر \\(+6\\,\\mu\\mathrm C\\) بار ہے۔ اجسام پر برقی قوتوں کے بارے میں کون سا بیان درست ہے؟",
+          "optionsUrdu": [
+            "A. \\(F_{AB}=-3F_{BA}\\)",
+            "B. \\(F_{AB}=-F_{BA}\\)",
+            "C. \\(3F_{AB}=-F_{BA}\\)",
+            "D. \\(F_{AB}=3F_{BA}\\)"
+          ],
+          "questionPashto": "A جسم \\(+2\\,\\mu\\mathrm C\\) او B جسم \\(+6\\,\\mu\\mathrm C\\) چارج لري. پر جسمونو د برېښنايي قوو په اړه کومه وینا سمه ده؟",
+          "optionsPashto": [
+            "A. \\(F_{AB}=-3F_{BA}\\)",
+            "B. \\(F_{AB}=-F_{BA}\\)",
+            "C. \\(3F_{AB}=-F_{BA}\\)",
+            "D. \\(F_{AB}=3F_{BA}\\)"
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-q4",
+          "qNo": "4",
+          "question": "Some charge is given to a conductor. Its potential:",
+          "options": [
+            "A. is maximum at the surface.",
+            "B. is maximum at the centre.",
+            "C. remains the same throughout the conductor.",
+            "D. is maximum somewhere between the surface and centre."
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 46
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "ایک موصل کو کچھ بار دیا جاتا ہے۔ اس کا پوٹینشل:",
+          "optionsUrdu": [
+            "A. سطح پر زیادہ سے زیادہ ہوتا ہے۔",
+            "B. مرکز پر زیادہ سے زیادہ ہوتا ہے۔",
+            "C. پورے موصل میں یکساں رہتا ہے۔",
+            "D. سطح اور مرکز کے درمیان کہیں زیادہ سے زیادہ ہوتا ہے۔"
+          ],
+          "questionPashto": "یو هادي ته چارج ورکول کېږي. پوتنشیال یې:",
+          "optionsPashto": [
+            "A. پر سطح اعظمي وي.",
+            "B. په مرکز کې اعظمي وي.",
+            "C. په ټول هادي کې یو شان پاتې کېږي.",
+            "D. د سطحې او مرکز ترمنځ په کوم ځای کې اعظمي وي."
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-q5",
+          "qNo": "5",
+          "question": "The unit of electric field intensity is:",
+          "options": [
+            "A. volt/metre",
+            "B. newton/coulomb",
+            "C. joule/(coulomb·metre)",
+            "D. volt·metre"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 46
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "د برقی میدان شدت کی اکائی ہے:",
+          "optionsUrdu": [
+            "A. وولٹ/میٹر",
+            "B. نیوٹن/کولومب",
+            "C. جول/(کولومب·میٹر)",
+            "D. وولٹ·میٹر"
+          ],
+          "questionPashto": "د برېښنايي میدان د شدت واحد دی:",
+          "optionsPashto": [
+            "A. ولټ/متر",
+            "B. نیوټن/کولمب",
+            "C. جول/(کولمب·متر)",
+            "D. ولټ·متر"
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-q6",
+          "qNo": "6",
+          "question": "A proton is about 1840 times heavier than an electron. When it is accelerated by a potential difference of \\(1\\,\\mathrm{kV}\\), its kinetic energy will be:",
+          "options": [
+            "A. \\(1840\\,\\mathrm{keV}\\)",
+            "B. \\(\\frac1{1840}\\,\\mathrm{keV}\\)",
+            "C. \\(1\\,\\mathrm{keV}\\)",
+            "D. \\(920\\,\\mathrm{keV}\\)"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 46
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "پروٹون الیکٹران سے تقریباً 1840 گنا بھاری ہے۔ جب اسے \\(1\\,\\mathrm{kV}\\) کے فرقِ پوٹینشل سے تیز کیا جائے تو اس کی حرکی توانائی ہوگی:",
+          "optionsUrdu": [
+            "A. \\(1840\\,\\mathrm{keV}\\)",
+            "B. \\(\\frac1{1840}\\,\\mathrm{keV}\\)",
+            "C. \\(1\\,\\mathrm{keV}\\)",
+            "D. \\(920\\,\\mathrm{keV}\\)"
+          ],
+          "questionPashto": "پروټون د الکترون په پرتله شاوخوا 1840 ځله دروند دی. که د \\(1\\,\\mathrm{kV}\\) پوتنشیالي توپیر په وسیله چټک شي، حرکي انرژي به یې وي:",
+          "optionsPashto": [
+            "A. \\(1840\\,\\mathrm{keV}\\)",
+            "B. \\(\\frac1{1840}\\,\\mathrm{keV}\\)",
+            "C. \\(1\\,\\mathrm{keV}\\)",
+            "D. \\(920\\,\\mathrm{keV}\\)"
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-q7",
+          "qNo": "7",
+          "question": "The electric field at a distance of 20 cm from a \\(2\\,\\mu\\mathrm C\\) charge is:",
+          "options": [
+            "A. \\(3\\times10^5\\,\\mathrm N\\)",
+            "B. \\(3\\times10^3\\,\\mathrm N\\)",
+            "C. \\(9\\times10^3\\,\\mathrm N\\)",
+            "D. \\(9\\times10^5\\,\\mathrm N\\)"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 47
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "\\(2\\,\\mu\\mathrm C\\) بار سے 20 سینٹی میٹر فاصلے پر برقی میدان ہے:",
+          "optionsUrdu": [
+            "A. \\(3\\times10^5\\,\\mathrm N\\)",
+            "B. \\(3\\times10^3\\,\\mathrm N\\)",
+            "C. \\(9\\times10^3\\,\\mathrm N\\)",
+            "D. \\(9\\times10^5\\,\\mathrm N\\)"
+          ],
+          "questionPashto": "له \\(2\\,\\mu\\mathrm C\\) چارج څخه د 20 سانتي‌متره په واټن کې برېښنايي میدان دی:",
+          "optionsPashto": [
+            "A. \\(3\\times10^5\\,\\mathrm N\\)",
+            "B. \\(3\\times10^3\\,\\mathrm N\\)",
+            "C. \\(9\\times10^3\\,\\mathrm N\\)",
+            "D. \\(9\\times10^5\\,\\mathrm N\\)"
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-q8",
+          "qNo": "8",
+          "question": "A charge q is placed at the centre of a cube of side a. The electric flux through one side will be:",
+          "options": [
+            "A. \\(\\frac{q}{6\\epsilon_0}\\)",
+            "B. \\(\\frac{q}{\\epsilon_0a^2}\\)",
+            "C. \\(\\frac{q}{4\\pi\\epsilon_0}\\)",
+            "D. \\(\\frac{q}{\\epsilon_0}\\)"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 47
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "ایک بار q کو ضلع a والے مکعب کے مرکز پر رکھا جائے۔ اس کے ایک رخ سے برقی فلوکس ہوگا:",
+          "optionsUrdu": [
+            "A. \\(\\frac{q}{6\\epsilon_0}\\)",
+            "B. \\(\\frac{q}{\\epsilon_0a^2}\\)",
+            "C. \\(\\frac{q}{4\\pi\\epsilon_0}\\)",
+            "D. \\(\\frac{q}{\\epsilon_0}\\)"
+          ],
+          "questionPashto": "q چارج د a ضلع لرونکي مکعب په مرکز کې اېښودل شوی. د یوه مخ له لارې برېښنايي فلوکس به وي:",
+          "optionsPashto": [
+            "A. \\(\\frac{q}{6\\epsilon_0}\\)",
+            "B. \\(\\frac{q}{\\epsilon_0a^2}\\)",
+            "C. \\(\\frac{q}{4\\pi\\epsilon_0}\\)",
+            "D. \\(\\frac{q}{\\epsilon_0}\\)"
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-q9",
+          "qNo": "9",
+          "question": "The electric flux through the surface of a sphere due to a charge q placed at its centre depends upon:",
+          "options": [
+            "A. the radius of the sphere.",
+            "B. the quantity of charge outside the sphere.",
+            "C. the surface area of the sphere.",
+            "D. the quantity of charge inside the sphere."
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 47
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "مرکز پر رکھے بار q کے باعث کرہ کی سطح سے گزرنے والا برقی فلوکس کس پر منحصر ہے؟",
+          "optionsUrdu": [
+            "A. کرہ کے رداس پر۔",
+            "B. کرہ سے باہر کے بار کی مقدار پر۔",
+            "C. کرہ کے سطحی رقبے پر۔",
+            "D. کرہ کے اندر کے بار کی مقدار پر۔"
+          ],
+          "questionPashto": "د کرې په مرکز کې د q چارج له امله د کرې له سطحې برېښنايي فلوکس پر څه شي پورې اړه لري؟",
+          "optionsPashto": [
+            "A. د کرې پر شعاع.",
+            "B. له کرې بهر د چارج پر مقدار.",
+            "C. د کرې پر سطحي مساحت.",
+            "D. د کرې دننه د چارج پر مقدار."
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-q10",
+          "qNo": "10",
+          "question": "A one-microfarad capacitor of a TV is subjected to a 4000 V potential difference. The energy stored in the capacitor is:",
+          "options": [
+            "A. \\(8\\,\\mathrm J\\)",
+            "B. \\(16\\,\\mathrm J\\)",
+            "C. \\(4\\times10^{-3}\\,\\mathrm J\\)",
+            "D. \\(2\\times10^{-3}\\,\\mathrm J\\)"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 47
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "ٹی وی کا ایک مائیکروفیراڈ کیپیسٹر 4000 وولٹ کے فرقِ پوٹینشل سے جوڑا جاتا ہے۔ اس میں ذخیرہ توانائی ہے:",
+          "optionsUrdu": [
+            "A. \\(8\\,\\mathrm J\\)",
+            "B. \\(16\\,\\mathrm J\\)",
+            "C. \\(4\\times10^{-3}\\,\\mathrm J\\)",
+            "D. \\(2\\times10^{-3}\\,\\mathrm J\\)"
+          ],
+          "questionPashto": "د ټلویزیون یو مایکروفارډ کپاسیټر د 4000 ولټه پوتنشیالي توپیر لاندې دی. په کپاسیټر کې زېرمه شوې انرژي ده:",
+          "optionsPashto": [
+            "A. \\(8\\,\\mathrm J\\)",
+            "B. \\(16\\,\\mathrm J\\)",
+            "C. \\(4\\times10^{-3}\\,\\mathrm J\\)",
+            "D. \\(2\\times10^{-3}\\,\\mathrm J\\)"
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-q11",
+          "qNo": "11",
+          "question": "In the figure below, the charge on the \\(3\\,\\mu\\mathrm F\\) capacitor is:",
+          "options": [
+            "A. \\(5\\,\\mu\\mathrm F\\)",
+            "B. \\(10\\,\\mu\\mathrm F\\)",
+            "C. \\(3\\,\\mu\\mathrm F\\)",
+            "D. \\(6\\,\\mu\\mathrm F\\)"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 47
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "ذیل کی شکل میں \\(3\\,\\mu\\mathrm F\\) کیپیسٹر پر بار ہے:",
+          "optionsUrdu": [
+            "A. \\(5\\,\\mu\\mathrm F\\)",
+            "B. \\(10\\,\\mu\\mathrm F\\)",
+            "C. \\(3\\,\\mu\\mathrm F\\)",
+            "D. \\(6\\,\\mu\\mathrm F\\)"
+          ],
+          "questionPashto": "په لاندې شکل کې پر \\(3\\,\\mu\\mathrm F\\) کپاسیټر چارج دی:",
+          "optionsPashto": [
+            "A. \\(5\\,\\mu\\mathrm F\\)",
+            "B. \\(10\\,\\mu\\mathrm F\\)",
+            "C. \\(3\\,\\mu\\mathrm F\\)",
+            "D. \\(6\\,\\mu\\mathrm F\\)"
+          ],
+          "diagramSvg": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 285\" role=\"img\" aria-label=\"Three capacitors 2 microfarad, 3 microfarad and 6 microfarad in series with a 10 volt battery\" style=\"width:100%;max-width:490px\"><path d=\"M65 60H125M139 60H225M239 60H325M339 60H425V250H252M240 250H65V60\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M125 45V75M139 45V75M225 45V75M239 45V75M325 45V75M339 45V75\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"103\" y=\"28\">2 μF</text><text x=\"203\" y=\"28\">3 μF</text><text x=\"304\" y=\"28\">6 μF</text><circle cx=\"240\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><text x=\"205\" y=\"282\">+ 10 V −</text></svg><figcaption>Question 11 — series capacitors connected to a 10 V battery</figcaption></figure>",
+          "diagramSvgUrdu": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 285\" role=\"img\" aria-label=\"Three capacitors 2 microfarad, 3 microfarad and 6 microfarad in series with a 10 volt battery\" style=\"width:100%;max-width:490px\"><path d=\"M65 60H125M139 60H225M239 60H325M339 60H425V250H252M240 250H65V60\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M125 45V75M139 45V75M225 45V75M239 45V75M325 45V75M339 45V75\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"103\" y=\"28\">2 μF</text><text x=\"203\" y=\"28\">3 μF</text><text x=\"304\" y=\"28\">6 μF</text><circle cx=\"240\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><text x=\"205\" y=\"282\">+ 10 V −</text></svg><figcaption>سوال 11 — سلسلہ وار کیپیسٹر اور 10 وولٹ بیٹری</figcaption></figure>",
+          "diagramSvgPashto": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 285\" role=\"img\" aria-label=\"Three capacitors 2 microfarad, 3 microfarad and 6 microfarad in series with a 10 volt battery\" style=\"width:100%;max-width:490px\"><path d=\"M65 60H125M139 60H225M239 60H325M339 60H425V250H252M240 250H65V60\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M125 45V75M139 45V75M225 45V75M239 45V75M325 45V75M339 45V75\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"103\" y=\"28\">2 μF</text><text x=\"203\" y=\"28\">3 μF</text><text x=\"304\" y=\"28\">6 μF</text><circle cx=\"240\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><text x=\"205\" y=\"282\">+ 10 V −</text></svg><figcaption>11مه پوښتنه — په لړۍ کې کپاسیټرونه او 10 ولټه بېټرۍ</figcaption></figure>",
+          "sourceClarification": "The printed stem asks for charge, but the answer choices are labeled in μF, a capacitance unit. The source units are preserved."
+        },
+        {
+          "id": "textbook-exercise-11-q12",
+          "qNo": "12",
+          "question": "4.00\\,\\mathrm{N/C}. If an ion of charge \\(+2e\\) is released at rest at the left-hand plate, what is its kinetic energy when it reaches the right-hand plate?",
+          "options": [
+            "A. \\(4\\,\\mathrm{eV}\\)",
+            "B. \\(64\\,\\mathrm{eV}\\)",
+            "C. \\(32\\,\\mathrm{eV}\\)",
+            "D. \\(16\\,\\mathrm{eV}\\)"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 28,
+              "printedPage": 47
+            },
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "questionUrdu": "\\(4.00\\,\\mathrm{N/C}\\)۔ اگر \\(+2e\\) بار کا آئن بائیں پلیٹ پر سکون سے چھوڑا جائے تو دائیں پلیٹ تک پہنچنے پر اس کی حرکی توانائی کیا ہوگی؟",
+          "optionsUrdu": [
+            "A. \\(4\\,\\mathrm{eV}\\)",
+            "B. \\(64\\,\\mathrm{eV}\\)",
+            "C. \\(32\\,\\mathrm{eV}\\)",
+            "D. \\(16\\,\\mathrm{eV}\\)"
+          ],
+          "questionPashto": "\\(4.00\\,\\mathrm{N/C}\\). که د \\(+2e\\) چارج ایون په چپه تخته کې له سکون څخه خوشې شي، ښي تختې ته د رسېدو پر مهال حرکي انرژي به یې څومره وي؟",
+          "optionsPashto": [
+            "A. \\(4\\,\\mathrm{eV}\\)",
+            "B. \\(64\\,\\mathrm{eV}\\)",
+            "C. \\(32\\,\\mathrm{eV}\\)",
+            "D. \\(16\\,\\mathrm{eV}\\)"
+          ],
+          "sourceClarification": "The question ends mid-sentence at the bottom of printed page 47 and continues on the next PDF page.",
+          "diagramSvg": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" role=\"img\" aria-label=\"Positive ion of charge plus 2e released at rest and moving rightward between two plates\" style=\"width:100%;max-width:400px\"><path d=\"M95 35V235M305 35V235\" stroke=\"#334155\" stroke-width=\"8\"/><circle cx=\"180\" cy=\"130\" r=\"20\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"3\"/><text x=\"173\" y=\"137\" font-size=\"22\">+</text><path d=\"M207 130H273\" stroke=\"#0284c7\" stroke-width=\"4\" marker-end=\"url(#a)\"/><text x=\"162\" y=\"85\">+2e</text><text x=\"160\" y=\"273\">left plate</text><text x=\"275\" y=\"273\">right plate</text></svg><figcaption>Question 12 — positive ion moving between parallel plates</figcaption></figure>",
+          "diagramSvgUrdu": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" role=\"img\" aria-label=\"Positive ion of charge plus 2e released at rest and moving rightward between two plates\" style=\"width:100%;max-width:400px\"><path d=\"M95 35V235M305 35V235\" stroke=\"#334155\" stroke-width=\"8\"/><circle cx=\"180\" cy=\"130\" r=\"20\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"3\"/><text x=\"173\" y=\"137\" font-size=\"22\">+</text><path d=\"M207 130H273\" stroke=\"#0284c7\" stroke-width=\"4\" marker-end=\"url(#a)\"/><text x=\"162\" y=\"85\">+2e</text><text x=\"160\" y=\"273\">left plate</text><text x=\"275\" y=\"273\">right plate</text></svg><figcaption>سوال 12 — متوازی پلیٹوں کے درمیان مثبت آئن</figcaption></figure>",
+          "diagramSvgPashto": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" role=\"img\" aria-label=\"Positive ion of charge plus 2e released at rest and moving rightward between two plates\" style=\"width:100%;max-width:400px\"><path d=\"M95 35V235M305 35V235\" stroke=\"#334155\" stroke-width=\"8\"/><circle cx=\"180\" cy=\"130\" r=\"20\" fill=\"#e0f2fe\" stroke=\"#0369a1\" stroke-width=\"3\"/><text x=\"173\" y=\"137\" font-size=\"22\">+</text><path d=\"M207 130H273\" stroke=\"#0284c7\" stroke-width=\"4\" marker-end=\"url(#a)\"/><text x=\"162\" y=\"85\">+2e</text><text x=\"160\" y=\"273\">left plate</text><text x=\"275\" y=\"273\">right plate</text></svg><figcaption>12مه پوښتنه — د موازي تختو ترمنځ مثبت ایون</figcaption></figure>"
+        },
+        {
+          "id": "textbook-exercise-11-q13",
+          "qNo": "13",
+          "question": "The electric potential between two points A and B is \\(\\Delta V\\). The work \\(W\\) done by the field in moving a charge \\(q\\) from A to B is:",
+          "questionUrdu": "دو نقاط A اور B کے درمیان برقی پوٹینشل \\(\\Delta V\\) ہے۔ بار \\(q\\) کو A سے B تک لے جانے میں میدان کا کیا ہوا کام \\(W\\) ہے؟",
+          "questionPashto": "د A او B نقطو ترمنځ برېښنايي پوتنشیال \\(\\Delta V\\) دی. د q چارج له A څخه B ته د لېږدولو پر مهال د میدان ترسره شوی کار \\(W\\) دی:",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook",
+          "options": [
+            "A. \\(W=-q\\Delta V\\)",
+            "B. \\(W=q\\Delta V\\)",
+            "C. \\(W=-q/\\Delta V\\)",
+            "D. \\(W=\\Delta V/q\\)"
+          ],
+          "optionsUrdu": [
+            "A. \\(W=-q\\Delta V\\)",
+            "B. \\(W=q\\Delta V\\)",
+            "C. \\(W=-q/\\Delta V\\)",
+            "D. \\(W=\\Delta V/q\\)"
+          ],
+          "optionsPashto": [
+            "A. \\(W=-q\\Delta V\\)",
+            "B. \\(W=q\\Delta V\\)",
+            "C. \\(W=-q/\\Delta V\\)",
+            "D. \\(W=\\Delta V/q\\)"
+          ]
+        }
+      ],
+      "sourceReferences": [
+        {
+          "pdfPage": 28,
+          "printedPage": 46
+        },
+        {
+          "pdfPage": 28,
+          "printedPage": 47
+        }
+      ]
+    },
+    {
+      "id": "textbook-exercise-11-conceptual",
+      "exercise": "Exercise 11",
+      "title": "Conceptual Questions",
+      "problems": [
+        {
+          "id": "textbook-exercise-11-conceptual-q1",
+          "qNo": "1",
+          "question": "The electric potential is constant through a given region of space. Is the electric field zero or non-zero in this region?",
+          "questionUrdu": "کسی خطۂ فضا میں برقی پوٹینشل مستقل ہے۔ کیا اس خطے میں برقی میدان صفر ہے یا غیر صفر؟",
+          "questionPashto": "په یوه ورکړل شوې فضايي سیمه کې برېښنايي پوتنشیال ثابت دی. په دې سیمه کې برېښنايي میدان صفر دی که غیرصفر؟",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-conceptual-q2",
+          "qNo": "2",
+          "question": "If a point charge q of mass m is released in a non-uniform electric field with field lines pointing in the same direction, will it make a rectilinear motion?",
+          "questionUrdu": "اگر کمیت m کا نقطوی بار q، غیر یکساں برقی میدان میں چھوڑا جائے اور میدان کی لکیریں ایک ہی سمت میں ہوں، تو کیا اس کی حرکت مستقیم ہوگی؟",
+          "questionPashto": "که د m کتلې نقطوي چارج q په غیر یوشان برېښنايي میدان کې خوشې شي او د میدان کرښې په یوه لوري وي، ایا حرکت به یې مستقیم‌الخط وي؟",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-conceptual-q3",
+          "qNo": "3",
+          "question": "What is the relationship between potential difference and electric potential energy?",
+          "questionUrdu": "فرقِ پوٹینشل اور برقی وضعی توانائی میں کیا تعلق ہے؟",
+          "questionPashto": "د پوتنشیالي توپیر او برېښنايي وضعي انرژۍ ترمنځ څه اړیکه ده؟",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-conceptual-q4",
+          "qNo": "4",
+          "question": "How are the units of volts and electron volts related? How do they differ?",
+          "questionUrdu": "وولٹ اور الیکٹران وولٹ کی اکائیوں میں کیا تعلق ہے؟ یہ ایک دوسرے سے کیسے مختلف ہیں؟",
+          "questionPashto": "د ولټ او الکترون ولټ واحدونه څه اړیکه لري؟ دوی په څه توپیر لري؟",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-conceptual-q5",
+          "qNo": "5",
+          "question": "How can electric potential be high when the electric potential energy is relatively low?",
+          "questionUrdu": "جب برقی وضعی توانائی نسبتاً کم ہو تو برقی پوٹینشل زیادہ کیسے ہو سکتا ہے؟",
+          "questionPashto": "کله چې برېښنايي وضعي انرژي نسبتاً لږه وي، برېښنايي پوتنشیال څنګه لوړ کېدای شي؟",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-conceptual-q6",
+          "qNo": "6",
+          "question": "Can the potential of a non-uniformly charged sphere be the same as that of a point charge?",
+          "questionUrdu": "کیا غیر یکساں طور پر باردار کرہ کا پوٹینشل نقطوی بار کے پوٹینشل جیسا ہو سکتا ہے؟",
+          "questionPashto": "ایا د غیر یوشان چارج لرونکې کرې پوتنشیال د نقطوي چارج له پوتنشیال سره یو شان کېدای شي؟",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-conceptual-q7",
+          "qNo": "7",
+          "question": "Will the energy stored in three capacitors be greater when they are connected in series or in parallel?",
+          "questionUrdu": "تین کیپیسٹر سلسلہ وار یا متوازی جوڑنے پر ذخیرہ توانائی زیادہ ہوگی؟",
+          "questionPashto": "په درېیو کپاسیټرونو کې زېرمه شوې انرژي هغه وخت ډېره وي چې په لړۍ کې ونښلول شي که په موازي؟",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-conceptual-q8",
+          "qNo": "8",
+          "question": "Can different equipotential lines cross each other?",
+          "questionUrdu": "کیا مختلف مساوی پوٹینشل لکیریں ایک دوسرے کو کاٹ سکتی ہیں؟",
+          "questionPashto": "ایا د مساوي پوتنشیال بېلابېلې کرښې یو بل پرېکولی شي؟",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-conceptual-q9",
+          "qNo": "9",
+          "question": "Water has a large dielectric constant, but it is rarely used in capacitors. Why?",
+          "questionUrdu": "پانی کا ڈائی الیکٹرک مستقل بڑا ہے، پھر بھی اسے کیپیسٹروں میں شاذ ہی کیوں استعمال کیا جاتا ہے؟",
+          "questionPashto": "اوبه د ډای‌الکټریک لوی ثابت لري، خو په کپاسیټرونو کې ډېرې لږې کارول کېږي. ولې؟",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-conceptual-q10",
+          "qNo": "10",
+          "question": "How can you increase the capacitance of a capacitor?",
+          "questionUrdu": "کیپیسٹر کی گنجائش کیسے بڑھائی جا سکتی ہے؟",
+          "questionPashto": "د کپاسیټر ظرفیت څنګه زیاتولای شو؟",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 48
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        }
+      ]
+    },
+    {
+      "id": "textbook-exercise-11-comprehensive",
+      "exercise": "Exercise 11",
+      "title": "Comprehensive Questions",
+      "problems": [
+        {
+          "id": "textbook-exercise-11-comprehensive-q1",
+          "qNo": "1",
+          "question": "State and explain Coulomb’s law. Include the case when the charges are placed in dielectrics. Discuss how the unit of charge coulomb is defined.",
+          "questionUrdu": "کولمب کا قانون بیان کریں اور اس کی وضاحت کریں۔ اس صورت کو بھی شامل کریں جب بار ڈائی الیکٹرک میں رکھے ہوں۔ بحث کریں کہ بار کی اکائی کولومب کی تعریف کیسے کی جاتی ہے۔",
+          "questionPashto": "د کولمب قانون بیان او تشریح کړئ. هغه حالت هم شامل کړئ چې چارجونه په ډای‌الکټریک کې وي. وڅېړئ چې د چارج واحد کولمب څنګه تعریف شوی دی.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-comprehensive-q2",
+          "qNo": "2",
+          "question": "Explain the concept of electric field and hence define electric field intensity. Discuss the direction as well as the unit of E.",
+          "questionUrdu": "برقی میدان کا تصور واضح کریں اور اس سے برقی میدان کی شدت کی تعریف کریں۔ E کی سمت اور اکائی پر بھی بحث کریں۔",
+          "questionPashto": "د برېښنايي میدان مفهوم تشریح او له مخې یې د برېښنايي میدان شدت تعریف کړئ. د E لوری او واحد هم وڅېړئ.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-comprehensive-q3",
+          "qNo": "3",
+          "question": "Explain the concept of electric flux. Using mathematical expressions for electric flux, show how electric flux is maximum and minimum.",
+          "questionUrdu": "برقی فلوکس کا تصور واضح کریں۔ برقی فلوکس کی ریاضیاتی مساوات استعمال کر کے دکھائیں کہ یہ کب زیادہ سے زیادہ اور کب کم سے کم ہوتا ہے۔",
+          "questionPashto": "د برېښنايي فلوکس مفهوم تشریح کړئ. د فلوکس د ریاضيکي څرګندونو په کارولو وښيئ چې فلوکس کله اعظمي او کله لږ تر لږه وي.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-comprehensive-q4",
+          "qNo": "4",
+          "question": "State and prove Gauss’s law for electrostatics. Also discuss its applications with daily-life examples.",
+          "questionUrdu": "برق ساکنات کے لیے گاؤس کا قانون بیان اور ثابت کریں۔ روزمرہ زندگی کی مثالوں کے ساتھ اس کے استعمالات بھی بیان کریں۔",
+          "questionPashto": "د الکتروستاتیک لپاره د ګاوس قانون بیان او ثابت کړئ. د ورځني ژوند له بېلګو سره یې کارونې هم وڅېړئ.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-comprehensive-q5",
+          "qNo": "5",
+          "question": "Explain the concept of electric potential. Derive an expression for electric potential at a field point due to a source charge.",
+          "questionUrdu": "برقی پوٹینشل کا تصور واضح کریں۔ منبع بار کے باعث میدان کے کسی نقطے پر برقی پوٹینشل کی مساوات اخذ کریں۔",
+          "questionPashto": "د برېښنايي پوتنشیال مفهوم تشریح کړئ. د سرچینې چارج له امله په یوه ساحوي نقطه کې د پوتنشیال لپاره رابطه مشتقه کړئ.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-comprehensive-q6",
+          "qNo": "6",
+          "question": "Describe the construction of a capacitor and derive an expression for the energy stored in a capacitor.",
+          "questionUrdu": "کیپیسٹر کی ساخت بیان کریں اور اس میں ذخیرہ توانائی کی مساوات اخذ کریں۔",
+          "questionPashto": "د کپاسیټر جوړښت بیان او پکې د زېرمه شوې انرژۍ رابطه مشتقه کړئ.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-comprehensive-q7",
+          "qNo": "7",
+          "question": "Describe the concept of equipotential surfaces and derive an expression for electric field as the negative of the potential gradient.",
+          "questionUrdu": "مساوی پوٹینشل سطحوں کا تصور بیان کریں اور برقی میدان کو پوٹینشل کے میلان کے منفی کے طور پر ظاہر کرنے کی مساوات اخذ کریں۔",
+          "questionPashto": "د مساوي پوتنشیال سطحو مفهوم بیان او د برېښنايي میدان د پوتنشیال د منفي تدریجي په توګه رابطه مشتقه کړئ.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-comprehensive-q8",
+          "qNo": "8",
+          "question": "Explain the phenomenon of electric polarization. Discuss how polarization accounts for the increase in capacitance when a dielectric is inserted between the plates of a capacitor.",
+          "questionUrdu": "برقی قطبیت کا مظہر واضح کریں۔ بیان کریں کہ کیپیسٹر کی پلیٹوں کے درمیان ڈائی الیکٹرک ڈالنے پر قطبیت گنجائش میں اضافے کی کیسے وضاحت کرتی ہے۔",
+          "questionPashto": "د برېښنايي قطبي کېدو پدیده تشریح کړئ. وڅېړئ چې د کپاسیټر د تختو ترمنځ د ډای‌الکټریک اېښودل او قطبي کېدل د ظرفیت زیاتوالی څنګه تشریح کوي.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-comprehensive-q9",
+          "qNo": "9",
+          "question": "Derive an expression for the capacitance of a parallel-plate capacitor when a dielectric is inserted between its plates.",
+          "questionUrdu": "متوازی پلیٹوں والے کیپیسٹر کی پلیٹوں کے درمیان ڈائی الیکٹرک ڈالنے پر اس کی گنجائش کی مساوات اخذ کریں۔",
+          "questionPashto": "د موازي‌تختو کپاسیټر د ظرفیت رابطه هغه وخت مشتقه کړئ چې د تختو ترمنځ ډای‌الکټریک واچول شي.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-comprehensive-q10",
+          "qNo": "10",
+          "question": "Describe the process of charging and discharging a capacitor. Give diagrams and mathematical expressions for the growth and decay of charge on the capacitor.",
+          "questionUrdu": "کیپیسٹر کو چارج اور ڈسچارج کرنے کا عمل بیان کریں۔ کیپیسٹر پر بار کے بڑھنے اور گھٹنے کے لیے خاکے اور ریاضیاتی مساوات دیں۔",
+          "questionPashto": "د کپاسیټر د چارج او ډسچارج بهیر بیان کړئ. پر کپاسیټر د چارج د زیاتېدو او کمېدو لپاره شکلونه او ریاضيکي څرګندونې ورکړئ.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-11-comprehensive-q11",
+          "qNo": "11",
+          "question": "Explain why capacitors are of little use for storing energy for normal domestic purposes such as lighting and heating.",
+          "questionUrdu": "وضاحت کریں کہ روشنی اور حرارت جیسے عام گھریلو مقاصد کے لیے توانائی ذخیرہ کرنے میں کیپیسٹر زیادہ کارآمد کیوں نہیں ہوتے۔",
+          "questionPashto": "تشریح کړئ چې د روښانتیا او تودوخې په څېر د عادي کورنیو موخو لپاره د انرژۍ زېرمه کولو کې کپاسیټرونه ولې لږ ګټور دي.",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        }
+      ]
+    },
+    {
+      "id": "textbook-exercise-11-numerical",
+      "exercise": "Exercise 11",
+      "title": "Numerical Questions",
+      "problems": [
+        {
+          "id": "textbook-exercise-11-numerical-q1",
+          "qNo": "1",
+          "question": "What is the magnitude of the force of attraction between an iron nucleus bearing charge \\(q=26e\\) and its innermost electron, if the distance between them is \\(1\\times10^{-12}\\,\\mathrm m\\)? (Answer: \\(6\\times10^{-3}\\,\\mathrm N\\))",
+          "questionUrdu": "\\(q=26e\\) بار رکھنے والے لوہے کے مرکزے اور اس کے سب سے اندرونی الیکٹران کے درمیان کشش کی قوت کا مقدار معلوم کریں، اگر دونوں کے درمیان فاصلہ \\(1\\times10^{-12}\\,\\mathrm m\\) ہو۔ (جواب: \\(6\\times10^{-3}\\,\\mathrm N\\))",
+          "questionPashto": "د \\(q=26e\\) چارج لرونکي د اوسپنې هستې او د هغې د تر ټولو دنني الکترون ترمنځ د جذب قوې اندازه ومومئ، که د دوی ترمنځ واټن \\(1\\times10^{-12}\\,\\mathrm m\\) وي. (ځواب: \\(6\\times10^{-3}\\,\\mathrm N\\))",
+          "sourceReferences": [
+            {
+              "pdfPage": 29,
+              "printedPage": 49
+            }
+          ],
+          "solutionOrigin": "textbook answer",
+          "answer": "\\(6\\times10^{-3}\\,\\mathrm N\\)",
+          "answerOrigin": "textbook"
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q2",
+          "qNo": "2",
+          "question": "Charges \\(2\\,\\mu\\mathrm C\\), \\(-3\\,\\mu\\mathrm C\\), and \\(4\\,\\mu\\mathrm C\\) are placed in air at the vertices of an equilateral triangle of sides \\(10\\,\\mathrm{cm}\\). What is the magnitude of the resultant force acting on the \\(4\\,\\mu\\mathrm C\\) charge?",
+          "questionUrdu": "هوا میں \\(2\\,\\mu\\mathrm C\\)، \\(-3\\,\\mu\\mathrm C\\) اور \\(4\\,\\mu\\mathrm C\\) بار، \\(10\\,\\mathrm{cm}\\) ضلع والے متساوی الاضلاع مثلث کے راسوں پر رکھے ہیں۔ \\(4\\,\\mu\\mathrm C\\) بار پر محصل قوت کا مقدار معلوم کریں۔",
+          "questionPashto": "په هوا کې \\(2\\,\\mu\\mathrm C\\)، \\(-3\\,\\mu\\mathrm C\\) او \\(4\\,\\mu\\mathrm C\\) چارجونه د \\(10\\,\\mathrm{cm}\\) ضلع لرونکي متساوي‌الاضلاع مثلث پر څوکو اېښودل شوي. پر \\(4\\,\\mu\\mathrm C\\) چارج د محصل قوې اندازه ومومئ.",
+          "answer": "\\(15.7\\,\\mathrm N\\)",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 50
+            }
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q3",
+          "qNo": "3",
+          "question": "Two equal and opposite charges of magnitude \\(2\\times10^{-7}\\,\\mathrm C\\) are placed \\(15\\,\\mathrm{cm}\\) apart. Find the magnitude and direction of electric field intensity E at the midpoint. What force acts on a proton of charge \\(+1.6\\times10^{-19}\\,\\mathrm C\\) placed there?",
+          "questionUrdu": "برابر مقدار اور مخالف علامت کے دو بار \\(2\\times10^{-7}\\,\\mathrm C\\)، \\(15\\,\\mathrm{cm}\\) کے فاصلے پر رکھے ہیں۔ درمیانی نقطے پر برقی میدان E کا مقدار اور سمت معلوم کریں۔ وہاں رکھے \\(+1.6\\times10^{-19}\\,\\mathrm C\\) بار کے پروٹون پر کون سی قوت عمل کرے گی؟",
+          "questionPashto": "د \\(2\\times10^{-7}\\,\\mathrm C\\) په اندازه دوه برابر او مخالف چارجونه د \\(15\\,\\mathrm{cm}\\) په واټن کې دي. په منځنۍ نقطه کې د E برېښنايي میدان اندازه او لوری ومومئ. هلته پر \\(+1.6\\times10^{-19}\\,\\mathrm C\\) چارج لرونکي پروټون کومه قوه عمل کوي؟",
+          "answer": "\\(0.64\\times10^6\\,\\mathrm{N/C}\\) along AB; \\(1.024\\times10^{-13}\\,\\mathrm N\\) along AB",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 50
+            }
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q4",
+          "qNo": "4",
+          "question": "Two positive point charges of \\(15\\times10^{-10}\\,\\mathrm C\\) and \\(13\\times10^{-10}\\,\\mathrm C\\) are placed \\(12\\,\\mathrm{cm}\\) apart. Find the work done in bringing the two charges \\(4\\,\\mathrm{cm}\\) closer.",
+          "questionUrdu": "\\(15\\times10^{-10}\\,\\mathrm C\\) اور \\(13\\times10^{-10}\\,\\mathrm C\\) کے دو مثبت نقطوی بار \\(12\\,\\mathrm{cm}\\) کے فاصلے پر ہیں۔ دونوں باروں کو \\(4\\,\\mathrm{cm}\\) قریب لانے میں کیا گیا کام معلوم کریں۔",
+          "questionPashto": "د \\(15\\times10^{-10}\\,\\mathrm C\\) او \\(13\\times10^{-10}\\,\\mathrm C\\) دوه مثبت نقطوي چارجونه د \\(12\\,\\mathrm{cm}\\) په واټن کې دي. د دواړو چارجونو \\(4\\,\\mathrm{cm}\\) نږدې کولو کار ومومئ.",
+          "answer": "\\(7.31\\times10^{-8}\\,\\mathrm J\\)",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 50
+            }
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q5",
+          "qNo": "5",
+          "question": "A hollow sphere is charged to \\(14\\,\\mu\\mathrm C\\). Find the potential (a) at its surface, (b) inside the sphere, and (c) at a distance of \\(0.2\\,\\mathrm m\\) from its surface. The radius is \\(0.3\\,\\mathrm m\\).",
+          "questionUrdu": "ایک کھوکھلے کرہ پر \\(14\\,\\mu\\mathrm C\\) بار ہے۔ پوٹینشل معلوم کریں: (a) سطح پر، (b) کرہ کے اندر، اور (c) سطح سے \\(0.2\\,\\mathrm m\\) فاصلے پر۔ رداس \\(0.3\\,\\mathrm m\\) ہے۔",
+          "questionPashto": "یوه تشه کره په \\(14\\,\\mu\\mathrm C\\) چارج شوې. پوتنشیال ومومئ: (a) پر سطح، (b) د کرې دننه، او (c) له سطحې څخه د \\(0.2\\,\\mathrm m\\) په واټن کې. شعاع یې \\(0.3\\,\\mathrm m\\) ده.",
+          "answer": "\\(42\\times10^4\\,\\mathrm V;\\ 42\\times10^4\\,\\mathrm V;\\ 25.2\\times10^4\\,\\mathrm V\\)",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 50
+            }
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q6",
+          "qNo": "6",
+          "question": "If \\(280\\,\\mathrm J\\) of work is done in carrying a charge of \\(2\\,\\mathrm C\\) from a place where the potential is \\(-12\\,\\mathrm V\\) to another place where the potential is V, calculate V.",
+          "questionUrdu": "اگر \\(2\\,\\mathrm C\\) بار کو \\(-12\\,\\mathrm V\\) پوٹینشل والے مقام سے دوسرے مقام تک لے جانے میں \\(280\\,\\mathrm J\\) کام ہو، جہاں پوٹینشل V ہے، تو V معلوم کریں۔",
+          "questionPashto": "که د \\(2\\,\\mathrm C\\) چارج له \\(-12\\,\\mathrm V\\) پوتنشیال لرونکي ځای څخه بل ځای ته د لېږدولو لپاره \\(280\\,\\mathrm J\\) کار وشي او هلته پوتنشیال V وي، V ومومئ.",
+          "answer": "\\(128\\,\\mathrm V\\)",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 50
+            }
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q7",
+          "qNo": "7",
+          "question": "The electric field at a point due to a point charge is \\(26\\,\\mathrm{N/C}\\), and the electric potential there is \\(13\\,\\mathrm{J/C}\\). Calculate the distance from the charge and the magnitude of the charge.",
+          "questionUrdu": "نقطوی بار کی وجہ سے ایک نقطے پر برقی میدان \\(26\\,\\mathrm{N/C}\\) اور برقی پوٹینشل \\(13\\,\\mathrm{J/C}\\) ہے۔ بار سے فاصلہ اور بار کا مقدار معلوم کریں۔",
+          "questionPashto": "د نقطوي چارج له امله په یوه نقطه کې برېښنايي میدان \\(26\\,\\mathrm{N/C}\\) او پوتنشیال \\(13\\,\\mathrm{J/C}\\) دی. له چارج څخه واټن او د چارج اندازه ومومئ.",
+          "answer": "\\(0.722\\times10^{-9}\\,\\mathrm C\\)",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 50
+            }
+          ],
+          "sourceClarification": "The printed question asks for both distance and charge, but the printed answer supplies only the charge value; the incomplete answer is preserved."
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q8",
+          "qNo": "8",
+          "question": "Two point charges of \\(8\\,\\mu\\mathrm C\\) and \\(-4\\,\\mu\\mathrm C\\) are separated by \\(10\\,\\mathrm{cm}\\) in air. At what point on the line joining the charges is the electric potential zero?",
+          "questionUrdu": "ہوا میں \\(8\\,\\mu\\mathrm C\\) اور \\(-4\\,\\mu\\mathrm C\\) کے دو نقطوی بار \\(10\\,\\mathrm{cm}\\) کے فاصلے پر ہیں۔ دونوں باروں کو ملانے والی لکیر پر کس نقطے پر برقی پوٹینشل صفر ہوگا؟",
+          "questionPashto": "په هوا کې \\(8\\,\\mu\\mathrm C\\) او \\(-4\\,\\mu\\mathrm C\\) نقطوي چارجونه د \\(10\\,\\mathrm{cm}\\) په واټن کې دي. د چارجونو پر نښلوونکې کرښه په کوم ځای کې برېښنايي پوتنشیال صفر وي؟",
+          "answer": "\\(6.6\\,\\mathrm{cm}\\) from \\(8\\,\\mu\\mathrm C\\), and \\(3.3\\,\\mathrm{cm}\\) from \\(-4\\,\\mu\\mathrm C\\)",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 50
+            }
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q9",
+          "qNo": "9",
+          "question": "An electron with an initial speed of \\(29\\times10^5\\,\\mathrm{m\\,s^{-1}}\\) is fired in the same direction as a uniform electric field of magnitude \\(80\\,\\mathrm{N/C}\\). How far does the electron travel before being brought momentarily to rest and turned back?",
+          "questionUrdu": "ایک الیکٹران \\(29\\times10^5\\,\\mathrm{m\\,s^{-1}}\\) کی ابتدائی رفتار سے، \\(80\\,\\mathrm{N/C}\\) شدت کے یکساں برقی میدان کی سمت میں فائر کیا جاتا ہے۔ لمحاتی طور پر رک کر واپس مڑنے سے پہلے الیکٹران کتنا فاصلہ طے کرتا ہے؟",
+          "questionPashto": "یو الکترون د \\(29\\times10^5\\,\\mathrm{m\\,s^{-1}}\\) لومړني سرعت سره د \\(80\\,\\mathrm{N/C}\\) اندازې یوشان برېښنايي میدان په لوري توغول کېږي. تر لنډمهاله درېدو او بېرته ګرځېدو مخکې څومره واټن وهي؟",
+          "answer": "\\(0.299\\,\\mathrm m\\)",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 51
+            }
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q10",
+          "qNo": "10",
+          "question": "Three capacitors of capacitance \\(4\\,\\mu\\mathrm F\\), \\(6\\,\\mu\\mathrm F\\), and \\(8\\,\\mu\\mathrm F\\), respectively, are connected in series to a \\(250\\,\\mathrm V\\) d.c. supply. Find (i) the total capacitance, (ii) the charge on each capacitor, and (iii) the potential difference across each capacitor.",
+          "questionUrdu": "\\(4\\,\\mu\\mathrm F\\)، \\(6\\,\\mu\\mathrm F\\) اور \\(8\\,\\mu\\mathrm F\\) گنجائش کے تین کیپیسٹر بالترتیب سلسلہ وار \\(250\\,\\mathrm V\\) ڈی سی منبع سے جڑے ہیں۔ معلوم کریں: (i) کل گنجائش، (ii) ہر کیپیسٹر پر بار، اور (iii) ہر کیپیسٹر کے آرپار فرقِ پوٹینشل۔",
+          "questionPashto": "د \\(4\\,\\mu\\mathrm F\\)، \\(6\\,\\mu\\mathrm F\\) او \\(8\\,\\mu\\mathrm F\\) ظرفیت لرونکي درې کپاسیټرونه په لړۍ کې له \\(250\\,\\mathrm V\\) ډي‌سي سرچینې سره نښتي دي. ومومئ: (i) ټول ظرفیت، (ii) پر هر کپاسیټر چارج، او (iii) د هر کپاسیټر پر سر پوتنشیالي توپیر.",
+          "answer": "\\(1.84\\,\\mu\\mathrm F;\\ 460\\times10^{-6}\\,\\mathrm C;\\ 115\\,\\mathrm V,\\ 76.6\\,\\mathrm V,\\ 57.7\\,\\mathrm V\\)",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 51
+            }
+          ]
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q11",
+          "qNo": "11",
+          "question": "Find the charge on the \\(5\\,\\mu\\mathrm F\\) capacitor in the circuit shown in the figure.",
+          "questionUrdu": "شکل میں دکھائے گئے سرکٹ میں \\(5\\,\\mu\\mathrm F\\) کیپیسٹر پر بار معلوم کریں۔",
+          "questionPashto": "په شکل کې ښودل شوي مدار کې پر \\(5\\,\\mu\\mathrm F\\) کپاسیټر چارج ومومئ.",
+          "answer": "\\(9\\,\\mu\\mathrm F\\)",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 51
+            }
+          ],
+          "diagramSvg": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" role=\"img\" aria-label=\"3 microfarad capacitor in series with parallel 2 and 5 microfarad capacitors; 6 volt battery\" style=\"width:100%;max-width:440px\"><path d=\"M55 70H125M153 70H235V115M235 205V250H55V70M350 115V205M350 160H405V250H252M235 115H282M296 115H350M235 205H282M296 205H350\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M125 55V85M153 55V85M282 105V125M296 105V125M282 195V215M296 195V215\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"108\" y=\"45\">3 μF</text><text x=\"274\" y=\"96\">2 μF</text><text x=\"274\" y=\"238\">5 μF</text><circle cx=\"240\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><text x=\"205\" y=\"280\">+ 6 V −</text></svg><figcaption>Numerical question 11 — 3 μF in series with a parallel 2 μF and 5 μF branch; 6 V source</figcaption></figure>",
+          "diagramSvgUrdu": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" role=\"img\" aria-label=\"3 microfarad capacitor in series with parallel 2 and 5 microfarad capacitors; 6 volt battery\" style=\"width:100%;max-width:440px\"><path d=\"M55 70H125M153 70H235V115M235 205V250H55V70M350 115V205M350 160H405V250H252M235 115H282M296 115H350M235 205H282M296 205H350\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M125 55V85M153 55V85M282 105V125M296 105V125M282 195V215M296 195V215\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"108\" y=\"45\">3 μF</text><text x=\"274\" y=\"96\">2 μF</text><text x=\"274\" y=\"238\">5 μF</text><circle cx=\"240\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><text x=\"205\" y=\"280\">+ 6 V −</text></svg><figcaption>عددی سوال 11 — 3 مائیکروفیراڈ سلسلہ وار، 2 اور 5 مائیکروفیراڈ متوازی؛ 6 وولٹ منبع</figcaption></figure>",
+          "diagramSvgPashto": "<figure><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" role=\"img\" aria-label=\"3 microfarad capacitor in series with parallel 2 and 5 microfarad capacitors; 6 volt battery\" style=\"width:100%;max-width:440px\"><path d=\"M55 70H125M153 70H235V115M235 205V250H55V70M350 115V205M350 160H405V250H252M235 115H282M296 115H350M235 205H282M296 205H350\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M125 55V85M153 55V85M282 105V125M296 105V125M282 195V215M296 195V215\" stroke=\"#0f172a\" stroke-width=\"3\"/><text x=\"108\" y=\"45\">3 μF</text><text x=\"274\" y=\"96\">2 μF</text><text x=\"274\" y=\"238\">5 μF</text><circle cx=\"240\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"252\" cy=\"250\" r=\"4\" fill=\"#0f172a\"/><text x=\"205\" y=\"280\">+ 6 V −</text></svg><figcaption>11م عددي پوښتنه — 3 مایکروفارډ په لړۍ، 2 او 5 مایکروفارډ موازي؛ 6 ولټه سرچینه</figcaption></figure>",
+          "sourceClarification": "The question asks for charge, but the printed answer is labeled μF, a capacitance unit. The source unit is preserved."
+        },
+        {
+          "id": "textbook-exercise-11-numerical-q12",
+          "qNo": "12",
+          "question": "A \\(6\\,\\mu\\mathrm F\\) capacitor is charged to a potential difference of \\(120\\,\\mathrm V\\) and then connected to an uncharged \\(4\\,\\mu\\mathrm F\\) capacitor. Calculate the potential difference across the capacitors.",
+          "questionUrdu": "\\(6\\,\\mu\\mathrm F\\) کیپیسٹر کو \\(120\\,\\mathrm V\\) فرقِ پوٹینشل تک چارج کر کے غیر باردار \\(4\\,\\mu\\mathrm F\\) کیپیسٹر سے جوڑا جاتا ہے۔ کیپیسٹروں کے آرپار فرقِ پوٹینشل معلوم کریں۔",
+          "questionPashto": "\\(6\\,\\mu\\mathrm F\\) کپاسیټر تر \\(120\\,\\mathrm V\\) پوتنشیالي توپیر پورې چارج شوی او بیا له بې‌چارج \\(4\\,\\mu\\mathrm F\\) کپاسیټر سره نښلول کېږي. د کپاسیټرونو پر سر پوتنشیالي توپیر ومومئ.",
+          "answer": "\\(72\\,\\mathrm V\\)",
+          "answerOrigin": "textbook",
+          "solutionOrigin": "textbook answer",
+          "sourceReferences": [
+            {
+              "pdfPage": 30,
+              "printedPage": 51
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "retireSections": [
+    "11.5",
+    "11.6",
+    "11.7",
+    "11.8",
+    "11.9",
+    "11.10",
+    "11.11",
+    "11.12",
+    "11.13",
+    "11.14"
+  ],
+  "trimSections": [
+    {
+      "id": "11.6",
+      "startsAt": "relationship between the net electrical flux",
+      "title": "Gauss’s law (continued; source review starts at PDF page 14)"
+    },
+    {
+      "id": "11.7",
+      "startsAt": "11.5.1.3 ELECTRIC FIELD INTENSITY",
+      "title": "Applications of Gauss’s law (continued; source review starts at PDF page 16)",
+      "clearSciNote": true
+    },
+    {
+      "id": "11.8",
+      "startsAt": "Therefore by Gauss",
+      "title": "Parallel plates (continued; source review starts at PDF page 17)",
+      "clearSciNote": true
+    },
+    {
+      "id": "11.9",
+      "startsAt": "The energy is required to move the charge",
+      "title": "Electric potential (continued; source review starts at PDF page 18)"
+    },
+    {
+      "id": "11.10",
+      "startsAt": "Now putting the value of E",
+      "title": "Point-charge potential (continued; source review starts at PDF page 20)",
+      "clearSciNote": true
+    },
+    {
+      "id": "11.11",
+      "startsAt": "The electric potential at a point in an electric field",
+      "title": "Point-charge potential (continued; source review starts at PDF page 21)",
+      "clearSciNote": true
+    },
+    {
+      "id": "11.12",
+      "startsAt": "11.10 CAPACITOR",
+      "title": "Capacitor (source review starts at PDF page 22)",
+      "clearSciNote": true
+    },
+    {
+      "id": "11.13",
+      "startsAt": "PARALLEL COMBINATION OF CAPACITORS",
+      "title": "Capacitor combinations (source review continues at PDF page 24)",
+      "clearSciNote": true
+    },
+    {
+      "id": "11.15",
+      "startsAt": "11.12 ENERGY STORED IN A CAPACITOR",
+      "title": "Energy stored in a capacitor (source review continues through PDF page 26)",
+      "clearSciNote": true
+    }
+  ]
+}

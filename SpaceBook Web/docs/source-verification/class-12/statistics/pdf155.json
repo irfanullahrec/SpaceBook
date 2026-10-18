@@ -1,0 +1,350 @@
+{
+ "pdfPage": 155,
+ "sections": [
+  {
+   "id": "stat12-p155-anova-table",
+   "title": "9.3.5 ANOVA table and sum-of-squares formulas",
+   "headingUrdu": "9.3.5 ANOVA جدول اور مربعوں کے مجموعے کے فارمولے",
+   "headingPashto": "9.3.5 د ANOVA جدول او د مربعو د مجموعې فورمولونه",
+   "paras": [
+    {
+     "text": "9.3.5 ANOVA table",
+     "urdu": "9.3.5 ANOVA جدول",
+     "pashto": "9.3.5 د ANOVA جدول"
+    },
+    {
+     "text": "For convenience all sources of variation (S.O.V), degrees of freedom (df), sum of squares (S.S), mean squares (M.S) are presented in tabular form, called ANOVA table given below:",
+     "urdu": "سہولت کے لیے تغیر کے تمام ذرائع (S.O.V)، درجاتِ آزادی (df)، مربعوں کے مجموعے (S.S) اور اوسط مربعے (M.S) جدولی شکل میں پیش کیے جاتے ہیں جسے ANOVA جدول کہتے ہیں، جو نیچے دیا گیا ہے:",
+     "pashto": "د اسانتیا لپاره د تغیر ټولې سرچینې (S.O.V)، د ازادۍ درجې (df)، د مربعو مجموعې (S.S) او منځني مربعې (M.S) د جدول په بڼه وړاندې کېږي چې د ANOVA جدول بلل کېږي، لاندې ورکړل شوی:"
+    },
+    {
+     "text": "ANOVA table",
+     "urdu": "ANOVA جدول",
+     "pashto": "د ANOVA جدول"
+    },
+    {
+     "text": "This table is used for testing hypothesis $H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k$ in one way analysis of variance.",
+     "urdu": "یہ جدول یک طرفہ تجزیۂ تغیر میں مفروضے $H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k$ کی جانچ کے لیے استعمال ہوتا ہے۔",
+     "pashto": "دا جدول په یو اړخیز د واریانس تحلیل کې د $H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k$ فرضیې د ازموینې لپاره کارول کېږي."
+    },
+    {
+     "text": "Formulas for sum of squares",
+     "urdu": "مربعوں کے مجموعے کے فارمولے",
+     "pashto": "د مربعو د مجموعې فورمولونه"
+    },
+    {
+     "text": "$\\text{C.F}=\\frac{T_{..}^2}{n}$ (Correction factor)",
+     "urdu": "$\\text{C.F}=\\frac{T_{..}^2}{n}$ (تصحیحی عامل)",
+     "pashto": "$\\text{C.F}=\\frac{T_{..}^2}{n}$ (د سمون عامل)"
+    },
+    {
+     "text": "$\\text{TSS}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}x_{ij}^2-\\text{C.F}$ (Total sum of squares)",
+     "urdu": "$\\text{TSS}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}x_{ij}^2-\\text{C.F}$ (مربعوں کا کل مجموعہ)",
+     "pashto": "$\\text{TSS}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}x_{ij}^2-\\text{C.F}$ (د مربعو ټوله مجموعه)"
+    },
+    {
+     "text": "$TrSS=\\frac{\\sum_{j=1}^{k}T_j^2}{r}-C.F$ (Treatment sum of squares)",
+     "urdu": "$TrSS=\\frac{\\sum_{j=1}^{k}T_j^2}{r}-C.F$ (علاج کے مربعوں کا مجموعہ)",
+     "pashto": "$TrSS=\\frac{\\sum_{j=1}^{k}T_j^2}{r}-C.F$ (د درملنې د مربعو مجموعه)"
+    },
+    {
+     "text": "$\\text{ESS}=\\text{TSS}-T_r\\text{SS}$ (Error sum of squares)",
+     "urdu": "$\\text{ESS}=\\text{TSS}-T_r\\text{SS}$ (خطا کے مربعوں کا مجموعہ)",
+     "pashto": "$\\text{ESS}=\\text{TSS}-T_r\\text{SS}$ (د تېروتنې د مربعو مجموعه)"
+    }
+   ],
+   "theory": "9.3.5 ANOVA table\n\nFor convenience all sources of variation (S.O.V), degrees of freedom (df), sum of squares (S.S), mean squares (M.S) are presented in tabular form, called ANOVA table given below:\n\nANOVA table\n\nThis table is used for testing hypothesis H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k in one way analysis of variance.\n\nFormulas for sum of squares\n\n\\text{C.F}=\\frac{T_{..}^2}{n} (Correction factor)\n\n\\text{TSS}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}x_{ij}^2-\\text{C.F} (Total sum of squares)\n\nTrSS=\\frac{\\sum_{j=1}^{k}T_j^2}{r}-C.F (Treatment sum of squares)\n\n\\text{ESS}=\\text{TSS}-T_r\\text{SS} (Error sum of squares)",
+   "urdu": "9.3.5 ANOVA جدول\n\nسہولت کے لیے تغیر کے تمام ذرائع (S.O.V)، درجاتِ آزادی (df)، مربعوں کے مجموعے (S.S) اور اوسط مربعے (M.S) جدولی شکل میں پیش کیے جاتے ہیں جسے ANOVA جدول کہتے ہیں، جو نیچے دیا گیا ہے:\n\nANOVA جدول\n\nیہ جدول یک طرفہ تجزیۂ تغیر میں مفروضے H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k کی جانچ کے لیے استعمال ہوتا ہے۔\n\nمربعوں کے مجموعے کے فارمولے\n\n\\text{C.F}=\\frac{T_{..}^2}{n} (تصحیحی عامل)\n\n\\text{TSS}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}x_{ij}^2-\\text{C.F} (مربعوں کا کل مجموعہ)\n\nTrSS=\\frac{\\sum_{j=1}^{k}T_j^2}{r}-C.F (علاج کے مربعوں کا مجموعہ)\n\n\\text{ESS}=\\text{TSS}-T_r\\text{SS} (خطا کے مربعوں کا مجموعہ)",
+   "pashto": "9.3.5 د ANOVA جدول\n\nد اسانتیا لپاره د تغیر ټولې سرچینې (S.O.V)، د ازادۍ درجې (df)، د مربعو مجموعې (S.S) او منځني مربعې (M.S) د جدول په بڼه وړاندې کېږي چې د ANOVA جدول بلل کېږي، لاندې ورکړل شوی:\n\nد ANOVA جدول\n\nدا جدول په یو اړخیز د واریانس تحلیل کې د H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k فرضیې د ازموینې لپاره کارول کېږي.\n\nد مربعو د مجموعې فورمولونه\n\n\\text{C.F}=\\frac{T_{..}^2}{n} (د سمون عامل)\n\n\\text{TSS}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}x_{ij}^2-\\text{C.F} (د مربعو ټوله مجموعه)\n\nTrSS=\\frac{\\sum_{j=1}^{k}T_j^2}{r}-C.F (د درملنې د مربعو مجموعه)\n\n\\text{ESS}=\\text{TSS}-T_r\\text{SS} (د تېروتنې د مربعو مجموعه)",
+   "theoryUrdu": "9.3.5 ANOVA جدول\n\nسہولت کے لیے تغیر کے تمام ذرائع (S.O.V)، درجاتِ آزادی (df)، مربعوں کے مجموعے (S.S) اور اوسط مربعے (M.S) جدولی شکل میں پیش کیے جاتے ہیں جسے ANOVA جدول کہتے ہیں، جو نیچے دیا گیا ہے:\n\nANOVA جدول\n\nیہ جدول یک طرفہ تجزیۂ تغیر میں مفروضے H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k کی جانچ کے لیے استعمال ہوتا ہے۔\n\nمربعوں کے مجموعے کے فارمولے\n\n\\text{C.F}=\\frac{T_{..}^2}{n} (تصحیحی عامل)\n\n\\text{TSS}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}x_{ij}^2-\\text{C.F} (مربعوں کا کل مجموعہ)\n\nTrSS=\\frac{\\sum_{j=1}^{k}T_j^2}{r}-C.F (علاج کے مربعوں کا مجموعہ)\n\n\\text{ESS}=\\text{TSS}-T_r\\text{SS} (خطا کے مربعوں کا مجموعہ)",
+   "theoryPashto": "9.3.5 د ANOVA جدول\n\nد اسانتیا لپاره د تغیر ټولې سرچینې (S.O.V)، د ازادۍ درجې (df)، د مربعو مجموعې (S.S) او منځني مربعې (M.S) د جدول په بڼه وړاندې کېږي چې د ANOVA جدول بلل کېږي، لاندې ورکړل شوی:\n\nد ANOVA جدول\n\nدا جدول په یو اړخیز د واریانس تحلیل کې د H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k فرضیې د ازموینې لپاره کارول کېږي.\n\nد مربعو د مجموعې فورمولونه\n\n\\text{C.F}=\\frac{T_{..}^2}{n} (د سمون عامل)\n\n\\text{TSS}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}x_{ij}^2-\\text{C.F} (د مربعو ټوله مجموعه)\n\nTrSS=\\frac{\\sum_{j=1}^{k}T_j^2}{r}-C.F (د درملنې د مربعو مجموعه)\n\n\\text{ESS}=\\text{TSS}-T_r\\text{SS} (د تېروتنې د مربعو مجموعه)",
+   "content": "<p>9.3.5 ANOVA table</p><p>For convenience all sources of variation (S.O.V), degrees of freedom (df), sum of squares (S.S), mean squares (M.S) are presented in tabular form, called ANOVA table given below:</p><p>ANOVA table</p><p>This table is used for testing hypothesis H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k in one way analysis of variance.</p><p>Formulas for sum of squares</p><p>\\text{C.F}=\\frac{T_{..}^2}{n} (Correction factor)</p><p>\\text{TSS}=\\sum_{j=1}^{k}\\sum_{i=1}^{r}x_{ij}^2-\\text{C.F} (Total sum of squares)</p><p>TrSS=\\frac{\\sum_{j=1}^{k}T_j^2}{r}-C.F (Treatment sum of squares)</p><p>\\text{ESS}=\\text{TSS}-T_r\\text{SS} (Error sum of squares)</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-anova"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      8
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-anova",
+     "headers": [
+      "S.O.V",
+      "df",
+      "S.S",
+      "M.S",
+      "$F_{cal}$"
+     ],
+     "rows": [
+      [
+       "Treatment",
+       "$k-1$",
+       "$T_rSS$",
+       "$\\frac{TrSS}{k-1}=MSTr$",
+       "$F_c=\\frac{MSTr}{MSE}$"
+      ],
+      [
+       "Error",
+       "$n-k$",
+       "ESS",
+       "$\\frac{ESS}{n-k}=MSE$",
+       "—"
+      ],
+      [
+       "Total",
+       "$n-1$",
+       "TSS",
+       "$\\frac{TSS}{n-1}=MST$",
+       "—"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "S.O.V",
+        "df",
+        "S.S",
+        "M.S",
+        "$F_{cal}$"
+       ],
+       "rows": [
+        [
+         "علاج",
+         "$k-1$",
+         "$T_rSS$",
+         "$\\frac{TrSS}{k-1}=MSTr$",
+         "$F_c=\\frac{MSTr}{MSE}$"
+        ],
+        [
+         "خطا",
+         "$n-k$",
+         "ESS",
+         "$\\frac{ESS}{n-k}=MSE$",
+         "—"
+        ],
+        [
+         "میزان",
+         "$n-1$",
+         "TSS",
+         "$\\frac{TSS}{n-1}=MST$",
+         "—"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "S.O.V",
+        "df",
+        "S.S",
+        "M.S",
+        "$F_{cal}$"
+       ],
+       "rows": [
+        [
+         "درملنه",
+         "$k-1$",
+         "$T_rSS$",
+         "$\\frac{TrSS}{k-1}=MSTr$",
+         "$F_c=\\frac{MSTr}{MSE}$"
+        ],
+        [
+         "تېروتنه",
+         "$n-k$",
+         "ESS",
+         "$\\frac{ESS}{n-k}=MSE$",
+         "—"
+        ],
+        [
+         "ټول",
+         "$n-1$",
+         "TSS",
+         "$\\frac{TSS}{n-1}=MST$",
+         "—"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 155,
+     "printedPages": [
+      301
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 9
+  },
+  {
+   "id": "stat12-p155-anova-procedure",
+   "title": "9.3.6 One-way ANOVA — general procedure",
+   "headingUrdu": "9.3.6 یک طرفہ ANOVA — عمومی طریقہ",
+   "headingPashto": "9.3.6 یو اړخیز ANOVA — عمومي طریقه",
+   "paras": [
+    {
+     "text": "9.3.6 General procedure for testing hypothesis in case of one way ANOVA (equal sample size case)",
+     "urdu": "9.3.6 یک طرفہ ANOVA کی صورت میں مفروضے کی جانچ کا عمومی طریقہ (برابر نمونہ سائز کی صورت)",
+     "pashto": "9.3.6 د یو اړخیز ANOVA په حالت کې د فرضیې د ازموینې عمومي طریقه (د برابرې نمونې اندازې حالت)"
+    },
+    {
+     "text": "i. $H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k$",
+     "urdu": "i. $H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k$",
+     "pashto": "i. $H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k$"
+    },
+    {
+     "text": "$H_1$: Not all means are equal",
+     "urdu": "$H_1$: تمام اوسط برابر نہیں",
+     "pashto": "$H_1$: ټول منځني برابر نه دي"
+    },
+    {
+     "text": "ii. Choose an appropriate level of significance",
+     "urdu": "ii. معنویت کی موزوں سطح منتخب کریں",
+     "pashto": "ii. د معنی‌داریت مناسبه کچه وټاکئ"
+    },
+    {
+     "text": "iii. Test statistic to be used in this case is",
+     "urdu": "iii. اس صورت میں استعمال ہونے والا جانچ کا شماریہ یہ ہے",
+     "pashto": "iii. په دې حالت کې کارېدونکې د ازموینې احصاییه دا ده"
+    },
+    {
+     "text": "$$F_c=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$$",
+     "urdu": "$$F_c=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$$",
+     "pashto": "$$F_c=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$$"
+    },
+    {
+     "text": "iv. Computations.",
+     "urdu": "iv. حساب۔",
+     "pashto": "iv. محاسبې."
+    },
+    {
+     "text": "v. Critical region: reject $H_0$ if $F_{cal}\\ge F_{tab}$",
+     "urdu": "v. فیصلہ کن علاقہ: $H_0$ کو رد کریں اگر $F_{cal}\\ge F_{tab}$",
+     "pashto": "v. بحراني سیمه: $H_0$ رد کړئ که $F_{cal}\\ge F_{tab}$"
+    },
+    {
+     "text": "vi. Conclusion",
+     "urdu": "vi. نتیجہ",
+     "pashto": "vi. پایله"
+    }
+   ],
+   "theory": "9.3.6 General procedure for testing hypothesis in case of one way ANOVA (equal sample size case)\n\ni. H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\nH_1: Not all means are equal\n\nii. Choose an appropriate level of significance\n\niii. Test statistic to be used in this case is\n\n$F_c=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$\n\niv. Computations.\n\nv. Critical region: reject H_0 if F_{cal}\\ge F_{tab}\n\nvi. Conclusion",
+   "urdu": "9.3.6 یک طرفہ ANOVA کی صورت میں مفروضے کی جانچ کا عمومی طریقہ (برابر نمونہ سائز کی صورت)\n\ni. H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\nH_1: تمام اوسط برابر نہیں\n\nii. معنویت کی موزوں سطح منتخب کریں\n\niii. اس صورت میں استعمال ہونے والا جانچ کا شماریہ یہ ہے\n\n$F_c=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$\n\niv. حساب۔\n\nv. فیصلہ کن علاقہ: H_0 کو رد کریں اگر F_{cal}\\ge F_{tab}\n\nvi. نتیجہ",
+   "pashto": "9.3.6 د یو اړخیز ANOVA په حالت کې د فرضیې د ازموینې عمومي طریقه (د برابرې نمونې اندازې حالت)\n\ni. H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\nH_1: ټول منځني برابر نه دي\n\nii. د معنی‌داریت مناسبه کچه وټاکئ\n\niii. په دې حالت کې کارېدونکې د ازموینې احصاییه دا ده\n\n$F_c=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$\n\niv. محاسبې.\n\nv. بحراني سیمه: H_0 رد کړئ که F_{cal}\\ge F_{tab}\n\nvi. پایله",
+   "theoryUrdu": "9.3.6 یک طرفہ ANOVA کی صورت میں مفروضے کی جانچ کا عمومی طریقہ (برابر نمونہ سائز کی صورت)\n\ni. H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\nH_1: تمام اوسط برابر نہیں\n\nii. معنویت کی موزوں سطح منتخب کریں\n\niii. اس صورت میں استعمال ہونے والا جانچ کا شماریہ یہ ہے\n\n$F_c=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$\n\niv. حساب۔\n\nv. فیصلہ کن علاقہ: H_0 کو رد کریں اگر F_{cal}\\ge F_{tab}\n\nvi. نتیجہ",
+   "theoryPashto": "9.3.6 د یو اړخیز ANOVA په حالت کې د فرضیې د ازموینې عمومي طریقه (د برابرې نمونې اندازې حالت)\n\ni. H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k\n\nH_1: ټول منځني برابر نه دي\n\nii. د معنی‌داریت مناسبه کچه وټاکئ\n\niii. په دې حالت کې کارېدونکې د ازموینې احصاییه دا ده\n\n$F_c=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$\n\niv. محاسبې.\n\nv. بحراني سیمه: H_0 رد کړئ که F_{cal}\\ge F_{tab}\n\nvi. پایله",
+   "content": "<p>9.3.6 General procedure for testing hypothesis in case of one way ANOVA (equal sample size case)</p><p>i. H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k</p><p>H_1: Not all means are equal</p><p>ii. Choose an appropriate level of significance</p><p>iii. Test statistic to be used in this case is</p><p>$F_c=\\frac{MSTr}{MSE}\\ \\text{with}\\ (\\nu_1=k-1,\\nu_2=n-k)\\ \\text{d.f}$</p><p>iv. Computations.</p><p>v. Critical region: reject H_0 if F_{cal}\\ge F_{tab}</p><p>vi. Conclusion</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      6,
+      7,
+      8
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 155,
+     "printedPages": [
+      302
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 9
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

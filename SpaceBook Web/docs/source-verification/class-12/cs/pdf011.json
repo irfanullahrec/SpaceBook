@@ -1,0 +1,223 @@
+{
+ "pdfPage": 11,
+ "sections": [
+  {
+   "id": "cs12-u1-text-5",
+   "title": "Unit 1 text (5)",
+   "headingUrdu": "یونٹ 1 — متن (۵)",
+   "headingPashto": "۱ څپرکی — متن (۵)",
+   "paras": [
+    {
+     "text": "Limitation of multi-programming",
+     "urdu": "ملٹی پروگرامنگ کی حد",
+     "pashto": "د څو-پروګرامي کار محدودیت"
+    },
+    {
+     "text": "Multiprogramming requires context switching since several programs (processes) sequentially share the CPU. This typically introduces processing delay compared to a dedicated unshared process.",
+     "urdu": "ملٹی پروگرامنگ میں کانٹیکسٹ سوئچنگ ضروری ہوتی ہے کیونکہ کئی پروگرام (پراسیسز) باری باری CPU کو استعمال کرتے ہیں۔ اس سے عموماً ایک مخصوص غیر مشترک پراسیس کے مقابلے میں پراسیسنگ میں تاخیر پیدا ہوتی ہے۔",
+     "pashto": "څو-پروګرامي کار د زمینې بدلون (context switching) ته اړتیا لري، ځکه څو پروګرامونه (پروسې) په ترتیب سره CPU شریکوي. دا عموماً د یوې ځانګړې نه‌شریکې پروسې په پرتله په پروسس کې ځنډ راولي."
+    },
+    {
+     "text": "c. Multi-tasking operating system",
+     "urdu": "c. ملٹی ٹاسکنگ آپریٹنگ سسٹم",
+     "pashto": "c. څو-دندیز عملیاتي سیسټم"
+    },
+    {
+     "text": "Multitasking is the process in which the operating system performs multiple tasks simultaneously on a single processor in such a way that creates the impression of parallel executions. Practically, all modern OS has the ability of multitasking.",
+     "urdu": "ملٹی ٹاسکنگ وہ عمل ہے جس میں آپریٹنگ سسٹم ایک ہی پروسیسر پر بیک وقت متعدد کام اس طرح انجام دیتا ہے کہ متوازی طور پر چلنے کا تاثر پیدا ہوتا ہے۔ عملی طور پر تمام جدید آپریٹنگ سسٹم ملٹی ٹاسکنگ کی صلاحیت رکھتے ہیں۔",
+     "pashto": "څو-دندیز کار هغه بهیر دی چې پکې عملیاتي سیسټم پر یوه پروسېسر په یو وخت ډېرې دندې داسې ترسره کوي چې د موازي اجرا تاثر پیدا کوي. په عمل کې ټول نوي عملیاتي سیسټمونه د څو-دندیز کار وړتیا لري."
+    },
+    {
+     "text": "Multitasking does not mean that the computer has multiple processors to execute multiple processes simultaneously. It means that the operating system switches the jobs so quickly on a single processor that the user thinks all these processes are executing in parallel.",
+     "urdu": "ملٹی ٹاسکنگ کا مطلب یہ نہیں کہ کمپیوٹر میں بیک وقت متعدد پراسیسز چلانے کے لیے کئی پروسیسر ہیں۔ اس کا مطلب یہ ہے کہ آپریٹنگ سسٹم ایک ہی پروسیسر پر جابز کو اتنی تیزی سے بدلتا ہے کہ صارف سمجھتا ہے کہ یہ تمام پراسیسز متوازی طور پر چل رہے ہیں۔",
+     "pashto": "څو-دندیز کار دا معنا نه لري چې کمپیوټر د ډېرو پروسو د یوځای اجرا لپاره ډېر پروسېسرونه لري. معنا یې دا ده چې عملیاتي سیسټم پر یوه پروسېسر دندې دومره چټکې بدلوي چې کاروونکی فکر کوي دا ټولې پروسې په موازي ډول اجرا کېږي."
+    },
+    {
+     "text": "Multitasking can be either pre-emptive or cooperative. In pre-emptive version, the operating system divides the CPU time and allocates one slot to each of the programs. Operating systems that support preemptive multitasking are: Solaris, UNIX, Windows 2000, Windows XP, Mac OS X and Linux. In cooperative multitasking, processes cooperate with each other to achieve simultaneous execution. Operating system that supports cooperative multitasking is Windows 3.x.",
+     "urdu": "ملٹی ٹاسکنگ یا تو پری ایمپٹیو ہوتی ہے یا کوآپریٹو۔ پری ایمپٹیو ورژن میں آپریٹنگ سسٹم CPU کا وقت تقسیم کرتا ہے اور ہر پروگرام کو ایک حصہ دیتا ہے۔ پری ایمپٹیو ملٹی ٹاسکنگ کو سپورٹ کرنے والے آپریٹنگ سسٹم یہ ہیں: Solaris، UNIX، Windows 2000، Windows XP، Mac OS X اور Linux۔ کوآپریٹو ملٹی ٹاسکنگ میں پراسیسز بیک وقت چلنے کے لیے ایک دوسرے سے تعاون کرتے ہیں۔ کوآپریٹو ملٹی ٹاسکنگ کو سپورٹ کرنے والا آپریٹنگ سسٹم Windows 3.x ہے۔",
+     "pashto": "څو-دندیز کار یا مخکې‌نیونکی (pre-emptive) وي یا همکار (cooperative). په مخکې‌نیونکې نسخه کې عملیاتي سیسټم د CPU وخت وېشي او هر پروګرام ته یوه برخه ورکوي. هغه عملیاتي سیسټمونه چې د مخکې‌نیونکي څو-دندیز کار ملاتړ کوي: Solaris، UNIX، Windows 2000، Windows XP، Mac OS X او Linux. په همکار څو-دندیز کار کې پروسې د یوځای اجرا لپاره له یو بل سره همکاري کوي. هغه عملیاتي سیسټم چې د همکار څو-دندیز کار ملاتړ کوي Windows 3.x دی."
+    },
+    {
+     "text": "d. Time-Sharing operating system",
+     "urdu": "d. ٹائم شیئرنگ آپریٹنگ سسٹم",
+     "pashto": "d. د وخت شریکونکی عملیاتي سیسټم"
+    },
+    {
+     "text": "Time sharing operating systems are those operating systems which slice processor (CPU) time into small fixed time slices and assign the processes to the CPU for that time slice to be executed. If the process is completed in its allotted time slice, it quits the system and CPU is assigned to the new process waiting on the top of the ready queue. If the time slice expires and the process still remains incomplete, it is added at the back of the ready queue for its next turn.",
+     "urdu": "ٹائم شیئرنگ آپریٹنگ سسٹم وہ آپریٹنگ سسٹم ہیں جو پروسیسر (CPU) کے وقت کو چھوٹے مقررہ ٹکڑوں (time slices) میں تقسیم کرتے ہیں اور پراسیسز کو اس وقتی ٹکڑے میں چلنے کے لیے CPU کو تفویض کرتے ہیں۔ اگر پراسیس اپنے مقررہ وقت میں مکمل ہو جائے تو وہ سسٹم سے نکل جاتا ہے اور CPU ریڈی قطار کے اوپر انتظار کرنے والے نئے پراسیس کو دے دیا جاتا ہے۔ اگر وقتی ٹکڑا ختم ہو جائے اور پراسیس نامکمل رہے تو اسے اگلی باری کے لیے ریڈی قطار کے آخر میں شامل کر دیا جاتا ہے۔",
+     "pashto": "د وخت شریکونکي عملیاتي سیسټمونه هغه دي چې د پروسېسر (CPU) وخت په کوچنیو ټاکلو برخو (time slices) وېشي او پروسې د هغې برخې د اجرا لپاره CPU ته سپاري. که پروسه په خپله ټاکلې برخه کې بشپړه شي، له سیسټم وځي او CPU د چمتو کتار پر سر انتظار ایستونکې نوې پروسې ته ورکول کېږي. که د وخت برخه پای ته ورسېږي او پروسه لا نیمګړې وي، د راتلونکي نوبت لپاره د چمتو کتار شا ته ورزیاتېږي."
+    },
+    {
+     "text": "This technique of sharing the CPU time is termed as time sharing, because, the time of the processor is shared among multiple jobs residing in main memory (RAM). Multiple users access the system simultaneously through their terminals and the operating system interleaves the execution of each program in a short burst of time called time slice or quantum.",
+     "urdu": "CPU کے وقت کی شراکت کی اس تکنیک کو ٹائم شیئرنگ کہا جاتا ہے، کیونکہ پروسیسر کا وقت مین میموری (RAM) میں موجود متعدد جابز کے درمیان بانٹا جاتا ہے۔ متعدد صارفین اپنے ٹرمینلز کے ذریعے بیک وقت سسٹم تک رسائی حاصل کرتے ہیں اور آپریٹنگ سسٹم ہر پروگرام کو وقت کے ایک مختصر حصے میں باری باری چلاتا ہے جسے ٹائم سلائس یا کوانٹم کہتے ہیں۔",
+     "pashto": "د CPU د وخت د شریکولو دې تخنیک ته د وخت شریکول ویل کېږي، ځکه د پروسېسر وخت په اصلي حافظه (RAM) کې د شته ډېرو دندو ترمنځ وېشل کېږي. ډېر کاروونکي د خپلو ټرمینلونو له لارې په یو وخت سیسټم ته لاسرسی لري او عملیاتي سیسټم هر پروګرام د وخت په یوه لنډه برخه کې په نوبت چلوي چې د وخت برخه (time slice) یا کوانټم بلل کېږي."
+    },
+    {
+     "text": "Time sharing operating systems are needed for applications which need quick response time and users interactions such as transactions processing.",
+     "urdu": "ٹائم شیئرنگ آپریٹنگ سسٹم ان ایپلیکیشنز کے لیے ضروری ہیں جنھیں فوری جواب اور صارفین کے تعامل کی ضرورت ہو، جیسے لین دین کی پراسیسنگ۔",
+     "pashto": "د وخت شریکونکي عملیاتي سیسټمونه د هغو کاريالونو لپاره اړین دي چې چټک ځواب او د کاروونکو تعامل ته اړتیا لري، لکه د راکړې ورکړې پروسس."
+    },
+    {
+     "text": "Advantages of Time sharing operating system",
+     "urdu": "ٹائم شیئرنگ آپریٹنگ سسٹم کے فوائد",
+     "pashto": "د وخت شریکونکي عملیاتي سیسټم ګټې"
+    },
+    {
+     "text": "Minimizes response time.",
+     "urdu": "جواب کا وقت کم سے کم کرتا ہے۔",
+     "pashto": "د ځواب وخت لږ تر لږه کوي."
+    },
+    {
+     "text": "Supports user interactivity.",
+     "urdu": "صارف کے تعامل کی معاونت کرتا ہے۔",
+     "pashto": "د کاروونکي تعامل ملاتړ کوي."
+    },
+    {
+     "text": "A process does not wait for a long time if it is preceded by a process of larger execution time.",
+     "urdu": "اگر کسی پراسیس سے پہلے زیادہ وقت لینے والا پراسیس ہو تو اسے زیادہ دیر انتظار نہیں کرنا پڑتا۔",
+     "pashto": "که له یوې پروسې مخکې د اوږدې اجرا پروسه وي، هغه اوږد انتظار نه باسي."
+    },
+    {
+     "text": "All processes get equal chances for execution.",
+     "urdu": "تمام پراسیسز کو چلنے کے مساوی مواقع ملتے ہیں۔",
+     "pashto": "ټولو پروسو ته د اجرا برابر چانسونه ورکول کېږي."
+    },
+    {
+     "text": "Time Sharing Vs Multitasking Operating System",
+     "urdu": "ٹائم شیئرنگ بمقابلہ ملٹی ٹاسکنگ آپریٹنگ سسٹم",
+     "pashto": "د وخت شریکول د څو-دندیز عملیاتي سیسټم په پرتله"
+    },
+    {
+     "text": "There is no universally accepted difference between time sharing and multi-tasking operating systems. Multi-tasking is used in a broad sense and thus Time-sharing operating system can be considered is a kind of multitasking operating system. Time sharing operating systems have a short time slices given to each process whereas in multitasking operating systems there is no time slice assigned to each process. The operating system (multitasking) switches among the processes residing in the main memory, RAM, in such a way that when a process needs input or output operation the operating system is switched to some other process residing in RAM.",
+     "urdu": "ٹائم شیئرنگ اور ملٹی ٹاسکنگ آپریٹنگ سسٹمز میں کوئی عالمی طور پر تسلیم شدہ فرق نہیں ہے۔ ملٹی ٹاسکنگ وسیع معنوں میں استعمال ہوتی ہے، اس لیے ٹائم شیئرنگ آپریٹنگ سسٹم کو ملٹی ٹاسکنگ آپریٹنگ سسٹم کی ایک قسم سمجھا جا سکتا ہے۔ ٹائم شیئرنگ آپریٹنگ سسٹمز میں ہر پراسیس کو مختصر وقتی ٹکڑے دیے جاتے ہیں جبکہ ملٹی ٹاسکنگ آپریٹنگ سسٹمز میں ہر پراسیس کو کوئی وقتی ٹکڑا تفویض نہیں ہوتا۔ آپریٹنگ سسٹم (ملٹی ٹاسکنگ) مین میموری RAM میں موجود پراسیسز کے درمیان اس طرح بدلتا ہے کہ جب کسی پراسیس کو ان پٹ یا آؤٹ پٹ عمل کی ضرورت ہو تو آپریٹنگ سسٹم RAM میں موجود کسی اور پراسیس کی طرف منتقل ہو جاتا ہے۔",
+     "pashto": "د وخت شریکونکي او څو-دندیز عملیاتي سیسټمونو ترمنځ نړیوال منل شوی توپیر نشته. څو-دندیز کار په پراخه معنا کارول کېږي، نو د وخت شریکونکی عملیاتي سیسټم د څو-دندیز عملیاتي سیسټم یو ډول ګڼل کېدای شي. په وخت شریکونکو عملیاتي سیسټمونو کې هرې پروسې ته لنډې وخت برخې ورکول کېږي، په داسې حال کې چې په څو-دندیزو عملیاتي سیسټمونو کې هرې پروسې ته د وخت برخه نه ټاکل کېږي. عملیاتي سیسټم (څو-دندیز) په اصلي حافظه RAM کې د شته پروسو ترمنځ داسې بدلون کوي چې کله یوه پروسه د ننوتو یا وتو عملیې ته اړتیا ولري، عملیاتي سیسټم په RAM کې بلې پروسې ته اوړي."
+    }
+   ],
+   "theory": "Limitation of multi-programming\n\nMultiprogramming requires context switching since several programs (processes) sequentially share the CPU. This typically introduces processing delay compared to a dedicated unshared process.\n\nc. Multi-tasking operating system\n\nMultitasking is the process in which the operating system performs multiple tasks simultaneously on a single processor in such a way that creates the impression of parallel executions. Practically, all modern OS has the ability of multitasking.\n\nMultitasking does not mean that the computer has multiple processors to execute multiple processes simultaneously. It means that the operating system switches the jobs so quickly on a single processor that the user thinks all these processes are executing in parallel.\n\nMultitasking can be either pre-emptive or cooperative. In pre-emptive version, the operating system divides the CPU time and allocates one slot to each of the programs. Operating systems that support preemptive multitasking are: Solaris, UNIX, Windows 2000, Windows XP, Mac OS X and Linux. In cooperative multitasking, processes cooperate with each other to achieve simultaneous execution. Operating system that supports cooperative multitasking is Windows 3.x.\n\nd. Time-Sharing operating system\n\nTime sharing operating systems are those operating systems which slice processor (CPU) time into small fixed time slices and assign the processes to the CPU for that time slice to be executed. If the process is completed in its allotted time slice, it quits the system and CPU is assigned to the new process waiting on the top of the ready queue. If the time slice expires and the process still remains incomplete, it is added at the back of the ready queue for its next turn.\n\nThis technique of sharing the CPU time is termed as time sharing, because, the time of the processor is shared among multiple jobs residing in main memory (RAM). Multiple users access the system simultaneously through their terminals and the operating system interleaves the execution of each program in a short burst of time called time slice or quantum.\n\nTime sharing operating systems are needed for applications which need quick response time and users interactions such as transactions processing.\n\nAdvantages of Time sharing operating system\n\nMinimizes response time.\n\nSupports user interactivity.\n\nA process does not wait for a long time if it is preceded by a process of larger execution time.\n\nAll processes get equal chances for execution.\n\nTime Sharing Vs Multitasking Operating System\n\nThere is no universally accepted difference between time sharing and multi-tasking operating systems. Multi-tasking is used in a broad sense and thus Time-sharing operating system can be considered is a kind of multitasking operating system. Time sharing operating systems have a short time slices given to each process whereas in multitasking operating systems there is no time slice assigned to each process. The operating system (multitasking) switches among the processes residing in the main memory, RAM, in such a way that when a process needs input or output operation the operating system is switched to some other process residing in RAM.",
+   "urdu": "ملٹی پروگرامنگ کی حد\n\nملٹی پروگرامنگ میں کانٹیکسٹ سوئچنگ ضروری ہوتی ہے کیونکہ کئی پروگرام (پراسیسز) باری باری CPU کو استعمال کرتے ہیں۔ اس سے عموماً ایک مخصوص غیر مشترک پراسیس کے مقابلے میں پراسیسنگ میں تاخیر پیدا ہوتی ہے۔\n\nc. ملٹی ٹاسکنگ آپریٹنگ سسٹم\n\nملٹی ٹاسکنگ وہ عمل ہے جس میں آپریٹنگ سسٹم ایک ہی پروسیسر پر بیک وقت متعدد کام اس طرح انجام دیتا ہے کہ متوازی طور پر چلنے کا تاثر پیدا ہوتا ہے۔ عملی طور پر تمام جدید آپریٹنگ سسٹم ملٹی ٹاسکنگ کی صلاحیت رکھتے ہیں۔\n\nملٹی ٹاسکنگ کا مطلب یہ نہیں کہ کمپیوٹر میں بیک وقت متعدد پراسیسز چلانے کے لیے کئی پروسیسر ہیں۔ اس کا مطلب یہ ہے کہ آپریٹنگ سسٹم ایک ہی پروسیسر پر جابز کو اتنی تیزی سے بدلتا ہے کہ صارف سمجھتا ہے کہ یہ تمام پراسیسز متوازی طور پر چل رہے ہیں۔\n\nملٹی ٹاسکنگ یا تو پری ایمپٹیو ہوتی ہے یا کوآپریٹو۔ پری ایمپٹیو ورژن میں آپریٹنگ سسٹم CPU کا وقت تقسیم کرتا ہے اور ہر پروگرام کو ایک حصہ دیتا ہے۔ پری ایمپٹیو ملٹی ٹاسکنگ کو سپورٹ کرنے والے آپریٹنگ سسٹم یہ ہیں: Solaris، UNIX، Windows 2000، Windows XP، Mac OS X اور Linux۔ کوآپریٹو ملٹی ٹاسکنگ میں پراسیسز بیک وقت چلنے کے لیے ایک دوسرے سے تعاون کرتے ہیں۔ کوآپریٹو ملٹی ٹاسکنگ کو سپورٹ کرنے والا آپریٹنگ سسٹم Windows 3.x ہے۔\n\nd. ٹائم شیئرنگ آپریٹنگ سسٹم\n\nٹائم شیئرنگ آپریٹنگ سسٹم وہ آپریٹنگ سسٹم ہیں جو پروسیسر (CPU) کے وقت کو چھوٹے مقررہ ٹکڑوں (time slices) میں تقسیم کرتے ہیں اور پراسیسز کو اس وقتی ٹکڑے میں چلنے کے لیے CPU کو تفویض کرتے ہیں۔ اگر پراسیس اپنے مقررہ وقت میں مکمل ہو جائے تو وہ سسٹم سے نکل جاتا ہے اور CPU ریڈی قطار کے اوپر انتظار کرنے والے نئے پراسیس کو دے دیا جاتا ہے۔ اگر وقتی ٹکڑا ختم ہو جائے اور پراسیس نامکمل رہے تو اسے اگلی باری کے لیے ریڈی قطار کے آخر میں شامل کر دیا جاتا ہے۔\n\nCPU کے وقت کی شراکت کی اس تکنیک کو ٹائم شیئرنگ کہا جاتا ہے، کیونکہ پروسیسر کا وقت مین میموری (RAM) میں موجود متعدد جابز کے درمیان بانٹا جاتا ہے۔ متعدد صارفین اپنے ٹرمینلز کے ذریعے بیک وقت سسٹم تک رسائی حاصل کرتے ہیں اور آپریٹنگ سسٹم ہر پروگرام کو وقت کے ایک مختصر حصے میں باری باری چلاتا ہے جسے ٹائم سلائس یا کوانٹم کہتے ہیں۔\n\nٹائم شیئرنگ آپریٹنگ سسٹم ان ایپلیکیشنز کے لیے ضروری ہیں جنھیں فوری جواب اور صارفین کے تعامل کی ضرورت ہو، جیسے لین دین کی پراسیسنگ۔\n\nٹائم شیئرنگ آپریٹنگ سسٹم کے فوائد\n\nجواب کا وقت کم سے کم کرتا ہے۔\n\nصارف کے تعامل کی معاونت کرتا ہے۔\n\nاگر کسی پراسیس سے پہلے زیادہ وقت لینے والا پراسیس ہو تو اسے زیادہ دیر انتظار نہیں کرنا پڑتا۔\n\nتمام پراسیسز کو چلنے کے مساوی مواقع ملتے ہیں۔\n\nٹائم شیئرنگ بمقابلہ ملٹی ٹاسکنگ آپریٹنگ سسٹم\n\nٹائم شیئرنگ اور ملٹی ٹاسکنگ آپریٹنگ سسٹمز میں کوئی عالمی طور پر تسلیم شدہ فرق نہیں ہے۔ ملٹی ٹاسکنگ وسیع معنوں میں استعمال ہوتی ہے، اس لیے ٹائم شیئرنگ آپریٹنگ سسٹم کو ملٹی ٹاسکنگ آپریٹنگ سسٹم کی ایک قسم سمجھا جا سکتا ہے۔ ٹائم شیئرنگ آپریٹنگ سسٹمز میں ہر پراسیس کو مختصر وقتی ٹکڑے دیے جاتے ہیں جبکہ ملٹی ٹاسکنگ آپریٹنگ سسٹمز میں ہر پراسیس کو کوئی وقتی ٹکڑا تفویض نہیں ہوتا۔ آپریٹنگ سسٹم (ملٹی ٹاسکنگ) مین میموری RAM میں موجود پراسیسز کے درمیان اس طرح بدلتا ہے کہ جب کسی پراسیس کو ان پٹ یا آؤٹ پٹ عمل کی ضرورت ہو تو آپریٹنگ سسٹم RAM میں موجود کسی اور پراسیس کی طرف منتقل ہو جاتا ہے۔",
+   "pashto": "د څو-پروګرامي کار محدودیت\n\nڅو-پروګرامي کار د زمینې بدلون (context switching) ته اړتیا لري، ځکه څو پروګرامونه (پروسې) په ترتیب سره CPU شریکوي. دا عموماً د یوې ځانګړې نه‌شریکې پروسې په پرتله په پروسس کې ځنډ راولي.\n\nc. څو-دندیز عملیاتي سیسټم\n\nڅو-دندیز کار هغه بهیر دی چې پکې عملیاتي سیسټم پر یوه پروسېسر په یو وخت ډېرې دندې داسې ترسره کوي چې د موازي اجرا تاثر پیدا کوي. په عمل کې ټول نوي عملیاتي سیسټمونه د څو-دندیز کار وړتیا لري.\n\nڅو-دندیز کار دا معنا نه لري چې کمپیوټر د ډېرو پروسو د یوځای اجرا لپاره ډېر پروسېسرونه لري. معنا یې دا ده چې عملیاتي سیسټم پر یوه پروسېسر دندې دومره چټکې بدلوي چې کاروونکی فکر کوي دا ټولې پروسې په موازي ډول اجرا کېږي.\n\nڅو-دندیز کار یا مخکې‌نیونکی (pre-emptive) وي یا همکار (cooperative). په مخکې‌نیونکې نسخه کې عملیاتي سیسټم د CPU وخت وېشي او هر پروګرام ته یوه برخه ورکوي. هغه عملیاتي سیسټمونه چې د مخکې‌نیونکي څو-دندیز کار ملاتړ کوي: Solaris، UNIX، Windows 2000، Windows XP، Mac OS X او Linux. په همکار څو-دندیز کار کې پروسې د یوځای اجرا لپاره له یو بل سره همکاري کوي. هغه عملیاتي سیسټم چې د همکار څو-دندیز کار ملاتړ کوي Windows 3.x دی.\n\nd. د وخت شریکونکی عملیاتي سیسټم\n\nد وخت شریکونکي عملیاتي سیسټمونه هغه دي چې د پروسېسر (CPU) وخت په کوچنیو ټاکلو برخو (time slices) وېشي او پروسې د هغې برخې د اجرا لپاره CPU ته سپاري. که پروسه په خپله ټاکلې برخه کې بشپړه شي، له سیسټم وځي او CPU د چمتو کتار پر سر انتظار ایستونکې نوې پروسې ته ورکول کېږي. که د وخت برخه پای ته ورسېږي او پروسه لا نیمګړې وي، د راتلونکي نوبت لپاره د چمتو کتار شا ته ورزیاتېږي.\n\nد CPU د وخت د شریکولو دې تخنیک ته د وخت شریکول ویل کېږي، ځکه د پروسېسر وخت په اصلي حافظه (RAM) کې د شته ډېرو دندو ترمنځ وېشل کېږي. ډېر کاروونکي د خپلو ټرمینلونو له لارې په یو وخت سیسټم ته لاسرسی لري او عملیاتي سیسټم هر پروګرام د وخت په یوه لنډه برخه کې په نوبت چلوي چې د وخت برخه (time slice) یا کوانټم بلل کېږي.\n\nد وخت شریکونکي عملیاتي سیسټمونه د هغو کاريالونو لپاره اړین دي چې چټک ځواب او د کاروونکو تعامل ته اړتیا لري، لکه د راکړې ورکړې پروسس.\n\nد وخت شریکونکي عملیاتي سیسټم ګټې\n\nد ځواب وخت لږ تر لږه کوي.\n\nد کاروونکي تعامل ملاتړ کوي.\n\nکه له یوې پروسې مخکې د اوږدې اجرا پروسه وي، هغه اوږد انتظار نه باسي.\n\nټولو پروسو ته د اجرا برابر چانسونه ورکول کېږي.\n\nد وخت شریکول د څو-دندیز عملیاتي سیسټم په پرتله\n\nد وخت شریکونکي او څو-دندیز عملیاتي سیسټمونو ترمنځ نړیوال منل شوی توپیر نشته. څو-دندیز کار په پراخه معنا کارول کېږي، نو د وخت شریکونکی عملیاتي سیسټم د څو-دندیز عملیاتي سیسټم یو ډول ګڼل کېدای شي. په وخت شریکونکو عملیاتي سیسټمونو کې هرې پروسې ته لنډې وخت برخې ورکول کېږي، په داسې حال کې چې په څو-دندیزو عملیاتي سیسټمونو کې هرې پروسې ته د وخت برخه نه ټاکل کېږي. عملیاتي سیسټم (څو-دندیز) په اصلي حافظه RAM کې د شته پروسو ترمنځ داسې بدلون کوي چې کله یوه پروسه د ننوتو یا وتو عملیې ته اړتیا ولري، عملیاتي سیسټم په RAM کې بلې پروسې ته اوړي.",
+   "theoryUrdu": "ملٹی پروگرامنگ کی حد\n\nملٹی پروگرامنگ میں کانٹیکسٹ سوئچنگ ضروری ہوتی ہے کیونکہ کئی پروگرام (پراسیسز) باری باری CPU کو استعمال کرتے ہیں۔ اس سے عموماً ایک مخصوص غیر مشترک پراسیس کے مقابلے میں پراسیسنگ میں تاخیر پیدا ہوتی ہے۔\n\nc. ملٹی ٹاسکنگ آپریٹنگ سسٹم\n\nملٹی ٹاسکنگ وہ عمل ہے جس میں آپریٹنگ سسٹم ایک ہی پروسیسر پر بیک وقت متعدد کام اس طرح انجام دیتا ہے کہ متوازی طور پر چلنے کا تاثر پیدا ہوتا ہے۔ عملی طور پر تمام جدید آپریٹنگ سسٹم ملٹی ٹاسکنگ کی صلاحیت رکھتے ہیں۔\n\nملٹی ٹاسکنگ کا مطلب یہ نہیں کہ کمپیوٹر میں بیک وقت متعدد پراسیسز چلانے کے لیے کئی پروسیسر ہیں۔ اس کا مطلب یہ ہے کہ آپریٹنگ سسٹم ایک ہی پروسیسر پر جابز کو اتنی تیزی سے بدلتا ہے کہ صارف سمجھتا ہے کہ یہ تمام پراسیسز متوازی طور پر چل رہے ہیں۔\n\nملٹی ٹاسکنگ یا تو پری ایمپٹیو ہوتی ہے یا کوآپریٹو۔ پری ایمپٹیو ورژن میں آپریٹنگ سسٹم CPU کا وقت تقسیم کرتا ہے اور ہر پروگرام کو ایک حصہ دیتا ہے۔ پری ایمپٹیو ملٹی ٹاسکنگ کو سپورٹ کرنے والے آپریٹنگ سسٹم یہ ہیں: Solaris، UNIX، Windows 2000، Windows XP، Mac OS X اور Linux۔ کوآپریٹو ملٹی ٹاسکنگ میں پراسیسز بیک وقت چلنے کے لیے ایک دوسرے سے تعاون کرتے ہیں۔ کوآپریٹو ملٹی ٹاسکنگ کو سپورٹ کرنے والا آپریٹنگ سسٹم Windows 3.x ہے۔\n\nd. ٹائم شیئرنگ آپریٹنگ سسٹم\n\nٹائم شیئرنگ آپریٹنگ سسٹم وہ آپریٹنگ سسٹم ہیں جو پروسیسر (CPU) کے وقت کو چھوٹے مقررہ ٹکڑوں (time slices) میں تقسیم کرتے ہیں اور پراسیسز کو اس وقتی ٹکڑے میں چلنے کے لیے CPU کو تفویض کرتے ہیں۔ اگر پراسیس اپنے مقررہ وقت میں مکمل ہو جائے تو وہ سسٹم سے نکل جاتا ہے اور CPU ریڈی قطار کے اوپر انتظار کرنے والے نئے پراسیس کو دے دیا جاتا ہے۔ اگر وقتی ٹکڑا ختم ہو جائے اور پراسیس نامکمل رہے تو اسے اگلی باری کے لیے ریڈی قطار کے آخر میں شامل کر دیا جاتا ہے۔\n\nCPU کے وقت کی شراکت کی اس تکنیک کو ٹائم شیئرنگ کہا جاتا ہے، کیونکہ پروسیسر کا وقت مین میموری (RAM) میں موجود متعدد جابز کے درمیان بانٹا جاتا ہے۔ متعدد صارفین اپنے ٹرمینلز کے ذریعے بیک وقت سسٹم تک رسائی حاصل کرتے ہیں اور آپریٹنگ سسٹم ہر پروگرام کو وقت کے ایک مختصر حصے میں باری باری چلاتا ہے جسے ٹائم سلائس یا کوانٹم کہتے ہیں۔\n\nٹائم شیئرنگ آپریٹنگ سسٹم ان ایپلیکیشنز کے لیے ضروری ہیں جنھیں فوری جواب اور صارفین کے تعامل کی ضرورت ہو، جیسے لین دین کی پراسیسنگ۔\n\nٹائم شیئرنگ آپریٹنگ سسٹم کے فوائد\n\nجواب کا وقت کم سے کم کرتا ہے۔\n\nصارف کے تعامل کی معاونت کرتا ہے۔\n\nاگر کسی پراسیس سے پہلے زیادہ وقت لینے والا پراسیس ہو تو اسے زیادہ دیر انتظار نہیں کرنا پڑتا۔\n\nتمام پراسیسز کو چلنے کے مساوی مواقع ملتے ہیں۔\n\nٹائم شیئرنگ بمقابلہ ملٹی ٹاسکنگ آپریٹنگ سسٹم\n\nٹائم شیئرنگ اور ملٹی ٹاسکنگ آپریٹنگ سسٹمز میں کوئی عالمی طور پر تسلیم شدہ فرق نہیں ہے۔ ملٹی ٹاسکنگ وسیع معنوں میں استعمال ہوتی ہے، اس لیے ٹائم شیئرنگ آپریٹنگ سسٹم کو ملٹی ٹاسکنگ آپریٹنگ سسٹم کی ایک قسم سمجھا جا سکتا ہے۔ ٹائم شیئرنگ آپریٹنگ سسٹمز میں ہر پراسیس کو مختصر وقتی ٹکڑے دیے جاتے ہیں جبکہ ملٹی ٹاسکنگ آپریٹنگ سسٹمز میں ہر پراسیس کو کوئی وقتی ٹکڑا تفویض نہیں ہوتا۔ آپریٹنگ سسٹم (ملٹی ٹاسکنگ) مین میموری RAM میں موجود پراسیسز کے درمیان اس طرح بدلتا ہے کہ جب کسی پراسیس کو ان پٹ یا آؤٹ پٹ عمل کی ضرورت ہو تو آپریٹنگ سسٹم RAM میں موجود کسی اور پراسیس کی طرف منتقل ہو جاتا ہے۔",
+   "theoryPashto": "د څو-پروګرامي کار محدودیت\n\nڅو-پروګرامي کار د زمینې بدلون (context switching) ته اړتیا لري، ځکه څو پروګرامونه (پروسې) په ترتیب سره CPU شریکوي. دا عموماً د یوې ځانګړې نه‌شریکې پروسې په پرتله په پروسس کې ځنډ راولي.\n\nc. څو-دندیز عملیاتي سیسټم\n\nڅو-دندیز کار هغه بهیر دی چې پکې عملیاتي سیسټم پر یوه پروسېسر په یو وخت ډېرې دندې داسې ترسره کوي چې د موازي اجرا تاثر پیدا کوي. په عمل کې ټول نوي عملیاتي سیسټمونه د څو-دندیز کار وړتیا لري.\n\nڅو-دندیز کار دا معنا نه لري چې کمپیوټر د ډېرو پروسو د یوځای اجرا لپاره ډېر پروسېسرونه لري. معنا یې دا ده چې عملیاتي سیسټم پر یوه پروسېسر دندې دومره چټکې بدلوي چې کاروونکی فکر کوي دا ټولې پروسې په موازي ډول اجرا کېږي.\n\nڅو-دندیز کار یا مخکې‌نیونکی (pre-emptive) وي یا همکار (cooperative). په مخکې‌نیونکې نسخه کې عملیاتي سیسټم د CPU وخت وېشي او هر پروګرام ته یوه برخه ورکوي. هغه عملیاتي سیسټمونه چې د مخکې‌نیونکي څو-دندیز کار ملاتړ کوي: Solaris، UNIX، Windows 2000، Windows XP، Mac OS X او Linux. په همکار څو-دندیز کار کې پروسې د یوځای اجرا لپاره له یو بل سره همکاري کوي. هغه عملیاتي سیسټم چې د همکار څو-دندیز کار ملاتړ کوي Windows 3.x دی.\n\nd. د وخت شریکونکی عملیاتي سیسټم\n\nد وخت شریکونکي عملیاتي سیسټمونه هغه دي چې د پروسېسر (CPU) وخت په کوچنیو ټاکلو برخو (time slices) وېشي او پروسې د هغې برخې د اجرا لپاره CPU ته سپاري. که پروسه په خپله ټاکلې برخه کې بشپړه شي، له سیسټم وځي او CPU د چمتو کتار پر سر انتظار ایستونکې نوې پروسې ته ورکول کېږي. که د وخت برخه پای ته ورسېږي او پروسه لا نیمګړې وي، د راتلونکي نوبت لپاره د چمتو کتار شا ته ورزیاتېږي.\n\nد CPU د وخت د شریکولو دې تخنیک ته د وخت شریکول ویل کېږي، ځکه د پروسېسر وخت په اصلي حافظه (RAM) کې د شته ډېرو دندو ترمنځ وېشل کېږي. ډېر کاروونکي د خپلو ټرمینلونو له لارې په یو وخت سیسټم ته لاسرسی لري او عملیاتي سیسټم هر پروګرام د وخت په یوه لنډه برخه کې په نوبت چلوي چې د وخت برخه (time slice) یا کوانټم بلل کېږي.\n\nد وخت شریکونکي عملیاتي سیسټمونه د هغو کاريالونو لپاره اړین دي چې چټک ځواب او د کاروونکو تعامل ته اړتیا لري، لکه د راکړې ورکړې پروسس.\n\nد وخت شریکونکي عملیاتي سیسټم ګټې\n\nد ځواب وخت لږ تر لږه کوي.\n\nد کاروونکي تعامل ملاتړ کوي.\n\nکه له یوې پروسې مخکې د اوږدې اجرا پروسه وي، هغه اوږد انتظار نه باسي.\n\nټولو پروسو ته د اجرا برابر چانسونه ورکول کېږي.\n\nد وخت شریکول د څو-دندیز عملیاتي سیسټم په پرتله\n\nد وخت شریکونکي او څو-دندیز عملیاتي سیسټمونو ترمنځ نړیوال منل شوی توپیر نشته. څو-دندیز کار په پراخه معنا کارول کېږي، نو د وخت شریکونکی عملیاتي سیسټم د څو-دندیز عملیاتي سیسټم یو ډول ګڼل کېدای شي. په وخت شریکونکو عملیاتي سیسټمونو کې هرې پروسې ته لنډې وخت برخې ورکول کېږي، په داسې حال کې چې په څو-دندیزو عملیاتي سیسټمونو کې هرې پروسې ته د وخت برخه نه ټاکل کېږي. عملیاتي سیسټم (څو-دندیز) په اصلي حافظه RAM کې د شته پروسو ترمنځ داسې بدلون کوي چې کله یوه پروسه د ننوتو یا وتو عملیې ته اړتیا ولري، عملیاتي سیسټم په RAM کې بلې پروسې ته اوړي.",
+   "content": "<p>Limitation of multi-programming</p><p>Multiprogramming requires context switching since several programs (processes) sequentially share the CPU. This typically introduces processing delay compared to a dedicated unshared process.</p><p>c. Multi-tasking operating system</p><p>Multitasking is the process in which the operating system performs multiple tasks simultaneously on a single processor in such a way that creates the impression of parallel executions. Practically, all modern OS has the ability of multitasking.</p><p>Multitasking does not mean that the computer has multiple processors to execute multiple processes simultaneously. It means that the operating system switches the jobs so quickly on a single processor that the user thinks all these processes are executing in parallel.</p><p>Multitasking can be either pre-emptive or cooperative. In pre-emptive version, the operating system divides the CPU time and allocates one slot to each of the programs. Operating systems that support preemptive multitasking are: Solaris, UNIX, Windows 2000, Windows XP, Mac OS X and Linux. In cooperative multitasking, processes cooperate with each other to achieve simultaneous execution. Operating system that supports cooperative multitasking is Windows 3.x.</p><p>d. Time-Sharing operating system</p><p>Time sharing operating systems are those operating systems which slice processor (CPU) time into small fixed time slices and assign the processes to the CPU for that time slice to be executed. If the process is completed in its allotted time slice, it quits the system and CPU is assigned to the new process waiting on the top of the ready queue. If the time slice expires and the process still remains incomplete, it is added at the back of the ready queue for its next turn.</p><p>This technique of sharing the CPU time is termed as time sharing, because, the time of the processor is shared among multiple jobs residing in main memory (RAM). Multiple users access the system simultaneously through their terminals and the operating system interleaves the execution of each program in a short burst of time called time slice or quantum.</p><p>Time sharing operating systems are needed for applications which need quick response time and users interactions such as transactions processing.</p><p>Advantages of Time sharing operating system</p><p>Minimizes response time.</p><p>Supports user interactivity.</p><p>A process does not wait for a long time if it is preceded by a process of larger execution time.</p><p>All processes get equal chances for execution.</p><p>Time Sharing Vs Multitasking Operating System</p><p>There is no universally accepted difference between time sharing and multi-tasking operating systems. Multi-tasking is used in a broad sense and thus Time-sharing operating system can be considered is a kind of multitasking operating system. Time sharing operating systems have a short time slices given to each process whereas in multitasking operating systems there is no time slice assigned to each process. The operating system (multitasking) switches among the processes residing in the main memory, RAM, in such a way that when a process needs input or output operation the operating system is switched to some other process residing in RAM.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 11,
+     "printedPages": [
+      10,
+      11
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 1 text (5)",
+   "sourcePageLabel": "PDF 11 · p. 10–11",
+   "sourceNote": "The time-sharing paragraph runs across the page turn from p.10 to p.11.",
+   "unit": 1
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf011",
+   "unit": 1,
+   "printedPage": 11,
+   "description": "p.11 prints “can be considered is a kind of multitasking operating system” (stray “is”); p.10 “all modern OS has”. Retained as printed. Owner pen circling and an underline on p.11 are excluded."
+  }
+ ],
+ "completeUnits": []
+}

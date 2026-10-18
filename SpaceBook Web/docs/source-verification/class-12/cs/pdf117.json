@@ -1,0 +1,187 @@
+{
+ "pdfPage": 117,
+ "sections": [
+  {
+   "id": "cs12-u7-text-4",
+   "title": "Unit 7 text (4)",
+   "headingUrdu": "یونٹ 7 — متن (4)",
+   "headingPashto": "۷ څپرکی — متن (4)",
+   "paras": [
+    {
+     "text": "Here, PTemperature is a pointer variable to a floating point variable. As this pointer is created with the statement ‘float *PTemperature’, immediately the address of a float variable ‘Temperature’ is assigned to it. The behavior of the above code is being equivalent to the following code.",
+     "urdu": "یہاں PTemperature ایک فلوٹنگ پوائنٹ ویری ایبل کا پوائنٹر ویری ایبل ہے۔ جیسے ہی یہ پوائنٹر بیان ‘float *PTemperature’ سے بنتا ہے، اسے فوراً float ویری ایبل ‘Temperature’ کا پتہ دے دیا جاتا ہے۔ اوپر کے کوڈ کا رویہ درج ذیل کوڈ کے مساوی ہے۔",
+     "pashto": "دلته PTemperature د یوه اعشاري متغیر لپاره د پوائنټر متغیر دی. کله چې دا پوائنټر د ‘float *PTemperature’ بیان سره جوړ شي، سمدستي د float متغیر ‘Temperature’ پته ورکول کېږي. د پورته کوډ چلند د لاندې کوډ سره برابر دی."
+    },
+    {
+     "text": "float Temperature;\nfloat *PTemperature;\nPTemperature = &Temperature;",
+     "urdu": "float Temperature;\nfloat *PTemperature;\nPTemperature = &Temperature;",
+     "pashto": "float Temperature;\nfloat *PTemperature;\nPTemperature = &Temperature;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "It should be considered that at the moment of declaring a pointer, the asterisk * indicates that it is a pointer variable and not the dereference operator.",
+     "urdu": "یہ بات ذہن میں رہنی چاہیے کہ پوائنٹر ڈکلیئر کرتے وقت ستارہ * ظاہر کرتا ہے کہ یہ پوائنٹر ویری ایبل ہے، ڈی ریفرنس آپریٹر نہیں۔",
+     "pashto": "باید په پام کې وي چې د پوائنټر د اعلان پر مهال ستوری * ښيي چې دا د پوائنټر متغیر دی نه د حوالې‌لرې کولو چلونکی."
+    },
+    {
+     "text": "Consider the following program to explain the concept of pointer initialization.",
+     "urdu": "پوائنٹر انیشیلائزیشن کا تصور واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د پوائنټر د لومړني ارزښت ورکولو د مفهوم د تشریح لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "/* pointer initialization program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat Temperature;\nfloat *PTemperature = &Temperature;\ncout << “The address of Temperature is = \"\n<<&Temperature << endl;\ncout<< “The value of *PTemperature is = \"\n<< PTemperature <<endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "/* pointer initialization program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat Temperature;\nfloat *PTemperature = &Temperature;\ncout << “The address of Temperature is = \"\n<<&Temperature << endl;\ncout<< “The value of *PTemperature is = \"\n<< PTemperature <<endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "/* pointer initialization program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat Temperature;\nfloat *PTemperature = &Temperature;\ncout << “The address of Temperature is = \"\n<<&Temperature << endl;\ncout<< “The value of *PTemperature is = \"\n<< PTemperature <<endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the Program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The address of Temperature is = 0x8f98fff2\nThe value of PTemperature is = 0x8f98fff2",
+     "urdu": "The address of Temperature is = 0x8f98fff2\nThe value of PTemperature is = 0x8f98fff2",
+     "pashto": "The address of Temperature is = 0x8f98fff2\nThe value of PTemperature is = 0x8f98fff2",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, the pointer PTemperature is initialized with the address of the variable Temperature.",
+     "urdu": "یہاں پوائنٹر PTemperature کو ویری ایبل Temperature کے پتے سے ابتدائی قدر دی گئی ہے۔",
+     "pashto": "دلته PTemperature پوائنټر ته د Temperature متغیر پته د لومړني ارزښت په توګه ورکړل شوې."
+    },
+    {
+     "text": "Sometimes we need to initialize a pointer to zero. Such pointers are called null pointers and they do not point to anything. Null pointers can be defined by assigning address 0 to them.",
+     "urdu": "بعض اوقات ہمیں پوائنٹر کو صفر ابتدائی قدر دینی ہوتی ہے۔ ایسے پوائنٹرز null پوائنٹرز کہلاتے ہیں اور کسی چیز کی طرف اشارہ نہیں کرتے۔ null پوائنٹرز کو پتہ 0 دے کر بیان کیا جا سکتا ہے۔",
+     "pashto": "کله کله اړتیا لرو چې پوائنټر ته صفر لومړنی ارزښت ورکړو. داسې پوائنټرونه null پوائنټرونه بلل کېږي او هېڅ شي ته اشاره نه کوي. null پوائنټرونه د 0 پتې په ورکولو تعریفېدای شي."
+    },
+    {
+     "text": "Consider the following initialization to demonstrate null pointer:",
+     "urdu": "null پوائنٹر واضح کرنے کے لیے درج ذیل انیشیلائزیشن پر غور کریں:",
+     "pashto": "د null پوائنټر د ښودلو لپاره لاندې لومړني ارزښت ورکولو ته پام وکړئ:"
+    },
+    {
+     "text": "int *NPtr; //defines Null pointer\nNPtr = 0; // this assigns address 0 to NPtr",
+     "urdu": "int *NPtr; //defines Null pointer\nNPtr = 0; // this assigns address 0 to NPtr",
+     "pashto": "int *NPtr; //defines Null pointer\nNPtr = 0; // this assigns address 0 to NPtr",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The use of NULL pointers is mostly done in dynamic memory allocation.",
+     "urdu": "NULL پوائنٹرز کا استعمال زیادہ تر ڈائنامک میموری ایلوکیشن میں ہوتا ہے۔",
+     "pashto": "د NULL پوائنټرونو کارونه ډېری په متحرکه حافظه وېش کې کېږي."
+    }
+   ],
+   "theory": "Here, PTemperature is a pointer variable to a floating point variable. As this pointer is created with the statement ‘float *PTemperature’, immediately the address of a float variable ‘Temperature’ is assigned to it. The behavior of the above code is being equivalent to the following code.\n\nfloat Temperature;\nfloat *PTemperature;\nPTemperature = &Temperature;\n\nIt should be considered that at the moment of declaring a pointer, the asterisk * indicates that it is a pointer variable and not the dereference operator.\n\nConsider the following program to explain the concept of pointer initialization.\n\n/* pointer initialization program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat Temperature;\nfloat *PTemperature = &Temperature;\ncout << “The address of Temperature is = \"\n<<&Temperature << endl;\ncout<< “The value of *PTemperature is = \"\n<< PTemperature <<endl;\ngetch();\nreturn 0;\n}\n\nOutput of the Program\n\nThe address of Temperature is = 0x8f98fff2\nThe value of PTemperature is = 0x8f98fff2\n\nHere, the pointer PTemperature is initialized with the address of the variable Temperature.\n\nSometimes we need to initialize a pointer to zero. Such pointers are called null pointers and they do not point to anything. Null pointers can be defined by assigning address 0 to them.\n\nConsider the following initialization to demonstrate null pointer:\n\nint *NPtr; //defines Null pointer\nNPtr = 0; // this assigns address 0 to NPtr\n\nThe use of NULL pointers is mostly done in dynamic memory allocation.",
+   "urdu": "یہاں PTemperature ایک فلوٹنگ پوائنٹ ویری ایبل کا پوائنٹر ویری ایبل ہے۔ جیسے ہی یہ پوائنٹر بیان ‘float *PTemperature’ سے بنتا ہے، اسے فوراً float ویری ایبل ‘Temperature’ کا پتہ دے دیا جاتا ہے۔ اوپر کے کوڈ کا رویہ درج ذیل کوڈ کے مساوی ہے۔\n\nfloat Temperature;\nfloat *PTemperature;\nPTemperature = &Temperature;\n\nیہ بات ذہن میں رہنی چاہیے کہ پوائنٹر ڈکلیئر کرتے وقت ستارہ * ظاہر کرتا ہے کہ یہ پوائنٹر ویری ایبل ہے، ڈی ریفرنس آپریٹر نہیں۔\n\nپوائنٹر انیشیلائزیشن کا تصور واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n/* pointer initialization program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat Temperature;\nfloat *PTemperature = &Temperature;\ncout << “The address of Temperature is = \"\n<<&Temperature << endl;\ncout<< “The value of *PTemperature is = \"\n<< PTemperature <<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe address of Temperature is = 0x8f98fff2\nThe value of PTemperature is = 0x8f98fff2\n\nیہاں پوائنٹر PTemperature کو ویری ایبل Temperature کے پتے سے ابتدائی قدر دی گئی ہے۔\n\nبعض اوقات ہمیں پوائنٹر کو صفر ابتدائی قدر دینی ہوتی ہے۔ ایسے پوائنٹرز null پوائنٹرز کہلاتے ہیں اور کسی چیز کی طرف اشارہ نہیں کرتے۔ null پوائنٹرز کو پتہ 0 دے کر بیان کیا جا سکتا ہے۔\n\nnull پوائنٹر واضح کرنے کے لیے درج ذیل انیشیلائزیشن پر غور کریں:\n\nint *NPtr; //defines Null pointer\nNPtr = 0; // this assigns address 0 to NPtr\n\nNULL پوائنٹرز کا استعمال زیادہ تر ڈائنامک میموری ایلوکیشن میں ہوتا ہے۔",
+   "pashto": "دلته PTemperature د یوه اعشاري متغیر لپاره د پوائنټر متغیر دی. کله چې دا پوائنټر د ‘float *PTemperature’ بیان سره جوړ شي، سمدستي د float متغیر ‘Temperature’ پته ورکول کېږي. د پورته کوډ چلند د لاندې کوډ سره برابر دی.\n\nfloat Temperature;\nfloat *PTemperature;\nPTemperature = &Temperature;\n\nباید په پام کې وي چې د پوائنټر د اعلان پر مهال ستوری * ښيي چې دا د پوائنټر متغیر دی نه د حوالې‌لرې کولو چلونکی.\n\nد پوائنټر د لومړني ارزښت ورکولو د مفهوم د تشریح لپاره لاندې پروګرام ته پام وکړئ.\n\n/* pointer initialization program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat Temperature;\nfloat *PTemperature = &Temperature;\ncout << “The address of Temperature is = \"\n<<&Temperature << endl;\ncout<< “The value of *PTemperature is = \"\n<< PTemperature <<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe address of Temperature is = 0x8f98fff2\nThe value of PTemperature is = 0x8f98fff2\n\nدلته PTemperature پوائنټر ته د Temperature متغیر پته د لومړني ارزښت په توګه ورکړل شوې.\n\nکله کله اړتیا لرو چې پوائنټر ته صفر لومړنی ارزښت ورکړو. داسې پوائنټرونه null پوائنټرونه بلل کېږي او هېڅ شي ته اشاره نه کوي. null پوائنټرونه د 0 پتې په ورکولو تعریفېدای شي.\n\nد null پوائنټر د ښودلو لپاره لاندې لومړني ارزښت ورکولو ته پام وکړئ:\n\nint *NPtr; //defines Null pointer\nNPtr = 0; // this assigns address 0 to NPtr\n\nد NULL پوائنټرونو کارونه ډېری په متحرکه حافظه وېش کې کېږي.",
+   "theoryUrdu": "یہاں PTemperature ایک فلوٹنگ پوائنٹ ویری ایبل کا پوائنٹر ویری ایبل ہے۔ جیسے ہی یہ پوائنٹر بیان ‘float *PTemperature’ سے بنتا ہے، اسے فوراً float ویری ایبل ‘Temperature’ کا پتہ دے دیا جاتا ہے۔ اوپر کے کوڈ کا رویہ درج ذیل کوڈ کے مساوی ہے۔\n\nfloat Temperature;\nfloat *PTemperature;\nPTemperature = &Temperature;\n\nیہ بات ذہن میں رہنی چاہیے کہ پوائنٹر ڈکلیئر کرتے وقت ستارہ * ظاہر کرتا ہے کہ یہ پوائنٹر ویری ایبل ہے، ڈی ریفرنس آپریٹر نہیں۔\n\nپوائنٹر انیشیلائزیشن کا تصور واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n/* pointer initialization program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat Temperature;\nfloat *PTemperature = &Temperature;\ncout << “The address of Temperature is = \"\n<<&Temperature << endl;\ncout<< “The value of *PTemperature is = \"\n<< PTemperature <<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe address of Temperature is = 0x8f98fff2\nThe value of PTemperature is = 0x8f98fff2\n\nیہاں پوائنٹر PTemperature کو ویری ایبل Temperature کے پتے سے ابتدائی قدر دی گئی ہے۔\n\nبعض اوقات ہمیں پوائنٹر کو صفر ابتدائی قدر دینی ہوتی ہے۔ ایسے پوائنٹرز null پوائنٹرز کہلاتے ہیں اور کسی چیز کی طرف اشارہ نہیں کرتے۔ null پوائنٹرز کو پتہ 0 دے کر بیان کیا جا سکتا ہے۔\n\nnull پوائنٹر واضح کرنے کے لیے درج ذیل انیشیلائزیشن پر غور کریں:\n\nint *NPtr; //defines Null pointer\nNPtr = 0; // this assigns address 0 to NPtr\n\nNULL پوائنٹرز کا استعمال زیادہ تر ڈائنامک میموری ایلوکیشن میں ہوتا ہے۔",
+   "theoryPashto": "دلته PTemperature د یوه اعشاري متغیر لپاره د پوائنټر متغیر دی. کله چې دا پوائنټر د ‘float *PTemperature’ بیان سره جوړ شي، سمدستي د float متغیر ‘Temperature’ پته ورکول کېږي. د پورته کوډ چلند د لاندې کوډ سره برابر دی.\n\nfloat Temperature;\nfloat *PTemperature;\nPTemperature = &Temperature;\n\nباید په پام کې وي چې د پوائنټر د اعلان پر مهال ستوری * ښيي چې دا د پوائنټر متغیر دی نه د حوالې‌لرې کولو چلونکی.\n\nد پوائنټر د لومړني ارزښت ورکولو د مفهوم د تشریح لپاره لاندې پروګرام ته پام وکړئ.\n\n/* pointer initialization program */\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfloat Temperature;\nfloat *PTemperature = &Temperature;\ncout << “The address of Temperature is = \"\n<<&Temperature << endl;\ncout<< “The value of *PTemperature is = \"\n<< PTemperature <<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe address of Temperature is = 0x8f98fff2\nThe value of PTemperature is = 0x8f98fff2\n\nدلته PTemperature پوائنټر ته د Temperature متغیر پته د لومړني ارزښت په توګه ورکړل شوې.\n\nکله کله اړتیا لرو چې پوائنټر ته صفر لومړنی ارزښت ورکړو. داسې پوائنټرونه null پوائنټرونه بلل کېږي او هېڅ شي ته اشاره نه کوي. null پوائنټرونه د 0 پتې په ورکولو تعریفېدای شي.\n\nد null پوائنټر د ښودلو لپاره لاندې لومړني ارزښت ورکولو ته پام وکړئ:\n\nint *NPtr; //defines Null pointer\nNPtr = 0; // this assigns address 0 to NPtr\n\nد NULL پوائنټرونو کارونه ډېری په متحرکه حافظه وېش کې کېږي.",
+   "content": "<p>Here, PTemperature is a pointer variable to a floating point variable. As this pointer is created with the statement ‘float *PTemperature’, immediately the address of a float variable ‘Temperature’ is assigned to it. The behavior of the above code is being equivalent to the following code.</p><p>float Temperature;\nfloat *PTemperature;\nPTemperature = &amp;Temperature;</p><p>It should be considered that at the moment of declaring a pointer, the asterisk * indicates that it is a pointer variable and not the dereference operator.</p><p>Consider the following program to explain the concept of pointer initialization.</p><p>/* pointer initialization program */\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nfloat Temperature;\nfloat *PTemperature = &amp;Temperature;\ncout &lt;&lt; “The address of Temperature is = &quot;\n&lt;&lt;&amp;Temperature &lt;&lt; endl;\ncout&lt;&lt; “The value of *PTemperature is = &quot;\n&lt;&lt; PTemperature &lt;&lt;endl;\ngetch();\nreturn 0;\n}</p><p>Output of the Program</p><p>The address of Temperature is = 0x8f98fff2\nThe value of PTemperature is = 0x8f98fff2</p><p>Here, the pointer PTemperature is initialized with the address of the variable Temperature.</p><p>Sometimes we need to initialize a pointer to zero. Such pointers are called null pointers and they do not point to anything. Null pointers can be defined by assigning address 0 to them.</p><p>Consider the following initialization to demonstrate null pointer:</p><p>int *NPtr; //defines Null pointer\nNPtr = 0; // this assigns address 0 to NPtr</p><p>The use of NULL pointers is mostly done in dynamic memory allocation.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 117,
+     "printedPages": [
+      222,
+      223
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 7 text (4)",
+   "sourcePageLabel": "PDF 117 · p. 222–223",
+   "sourceNote": "The initialization segment at the top of p.222 is recorded with PDF116. The program ends at the top of p.223 and is given whole.",
+   "unit": 7
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf117",
+   "unit": 7,
+   "printedPage": 223,
+   "description": "The program prints the label “The value of *PTemperature is = ” but the output line reads “The value of PTemperature is =”; “is being equivalent to”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

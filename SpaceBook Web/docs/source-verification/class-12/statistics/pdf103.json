@@ -1,0 +1,299 @@
+{
+ "pdfPage": 103,
+ "sections": [
+  {
+   "id": "stat12-p103-unbiasedness",
+   "title": "6.2.3 Unbiasedness — Examples 6.2–6.4",
+   "headingUrdu": "6.2.3 غیر جانبداری — مثالیں 6.2–6.4",
+   "headingPashto": "6.2.3 بې‌پلوي — بېلګې 6.2–6.4",
+   "paras": [
+    {
+     "text": "efficient and sufficient. Only two properties, unbiasedness and efficiency are discussed here in detail.",
+     "urdu": "مؤثر اور کافی ہو۔ یہاں صرف دو خصوصیات، غیر جانبداری اور کارکردگی، پر تفصیل سے بحث کی گئی ہے۔",
+     "pashto": "موثر او کافي وي. دلته یوازې دوه ځانګړنې، بې‌پلوي او موثریت، په تفصیل سره څېړل شوې."
+    },
+    {
+     "text": "6.2.3 Unbiasedness",
+     "urdu": "6.2.3 غیر جانبداری",
+     "pashto": "6.2.3 بې‌پلوي"
+    },
+    {
+     "text": "It is not possible for an estimator to obtain correct estimate from each and every sample, even though if samples are drawn randomly. However, if this estimator on the average (i.e. considering all possible samples), give an estimate equal to the population parameter then this property of the estimator is called unbiasedness.",
+     "urdu": "کسی تخمین کار کے لیے ہر ایک نمونے سے درست تخمینہ حاصل کرنا ممکن نہیں، چاہے نمونے تصادفی طور پر نکالے جائیں۔ تاہم اگر یہ تخمین کار اوسطاً (یعنی تمام ممکنہ نمونوں کو مدِنظر رکھتے ہوئے) آبادی کے پیرامیٹر کے برابر تخمینہ دے تو تخمین کار کی اس خاصیت کو غیر جانبداری کہتے ہیں۔",
+     "pashto": "د یوه اټکلوونکي لپاره ممکنه نه ده چې له هرې نمونې څخه سم اټکل ترلاسه کړي، که څه هم نمونې په تصادفي ډول راایستل شي. خو که دا اټکلوونکی په اوسط ډول (یعنې د ټولو شونو نمونو په پام کې نیولو سره) د نفوس له پارامټر سره برابر اټکل ورکړي، نو د اټکلوونکي دې ځانګړنې ته بې‌پلوي وایي."
+    },
+    {
+     "text": "Definition of unbiased estimator:",
+     "urdu": "غیر جانبدار تخمین کار کی تعریف:",
+     "pashto": "د بې‌پلوه اټکلوونکي تعریف:"
+    },
+    {
+     "text": "An estimator is said to be unbiased if the mean of its sampling distribution is equal to the true value of the parameter, otherwise, the estimator is said to be biased. For example, if $\\hat{\\theta}$ is a point estimator of the parameter θ and $E(\\hat{\\theta})=\\theta$, then $\\hat{\\theta}$ is called an unbiased estimator of θ. If $E(\\hat{\\theta})\\neq\\theta$ means that $\\hat{\\theta}$ is a biased estimator of θ. Further, if $E(\\hat{\\theta})>\\theta$ means $\\hat{\\theta}$ is positively biased. If $E(\\hat{\\theta})<\\theta$ means that $\\hat{\\theta}$ is negatively biased. Remember that in previous unit we have shown in practical examples that $E(\\overline{X})=\\mu_{\\overline{x}}=\\mu$. This implies that $\\overline{X}=\\frac{\\Sigma x}{n}$ is an unbiased estimator for μ. Similarly, $E(\\hat{p})=p$ means that $\\hat{p}=\\frac{X}{n}$ is an unbiased estimator of p. The bias of an estimator $\\hat{\\theta}$ is given by $B(\\hat{\\theta})=[E(\\hat{\\theta})-\\theta]$.",
+     "urdu": "ایک تخمین کار غیر جانبدار کہلاتا ہے اگر اس کی نمونہ جاتی تقسیم کا اوسط پیرامیٹر کی حقیقی قیمت کے برابر ہو، ورنہ تخمین کار جانبدار کہلاتا ہے۔ مثلاً اگر $\\hat{\\theta}$ پیرامیٹر θ کا نقطہ تخمین کار ہو اور $E(\\hat{\\theta})=\\theta$ ہو تو $\\hat{\\theta}$ کو θ کا غیر جانبدار تخمین کار کہتے ہیں۔ اگر $E(\\hat{\\theta})\\neq\\theta$ ہو تو اس کا مطلب ہے کہ $\\hat{\\theta}$، θ کا جانبدار تخمین کار ہے۔ مزید یہ کہ اگر $E(\\hat{\\theta})>\\theta$ ہو تو $\\hat{\\theta}$ مثبت طور پر جانبدار ہے۔ اگر $E(\\hat{\\theta})<\\theta$ ہو تو $\\hat{\\theta}$ منفی طور پر جانبدار ہے۔ یاد رکھیں کہ پچھلے یونٹ میں ہم نے عملی مثالوں میں دکھایا کہ $E(\\overline{X})=\\mu_{\\overline{x}}=\\mu$۔ اس کا مطلب ہے کہ $\\overline{X}=\\frac{\\Sigma x}{n}$، μ کا غیر جانبدار تخمین کار ہے۔ اسی طرح $E(\\hat{p})=p$ کا مطلب ہے کہ $\\hat{p}=\\frac{X}{n}$، p کا غیر جانبدار تخمین کار ہے۔ تخمین کار $\\hat{\\theta}$ کی جانبداری $B(\\hat{\\theta})=[E(\\hat{\\theta})-\\theta]$ ہے۔",
+     "pashto": "یو اټکلوونکی بې‌پلوه بلل کېږي که د هغه د نمونوي وېش منځنی د پارامټر له رښتیني قیمت سره برابر وي، که نه اټکلوونکی پلوي بلل کېږي. د بېلګې په توګه که $\\hat{\\theta}$ د θ پارامټر ټکي‌ییز اټکلوونکی وي او $E(\\hat{\\theta})=\\theta$ وي، نو $\\hat{\\theta}$ د θ بې‌پلوه اټکلوونکی بلل کېږي. که $E(\\hat{\\theta})\\neq\\theta$ وي مانا یې دا ده چې $\\hat{\\theta}$ د θ پلوي اټکلوونکی دی. سربېره پر دې که $E(\\hat{\\theta})>\\theta$ وي مانا یې دا ده چې $\\hat{\\theta}$ مثبت پلوي دی. که $E(\\hat{\\theta})<\\theta$ وي مانا یې دا ده چې $\\hat{\\theta}$ منفي پلوي دی. په یاد ولرئ چې په تېر واحد کې مو په عملي بېلګو کې وښودل چې $E(\\overline{X})=\\mu_{\\overline{x}}=\\mu$. دا ښيي چې $\\overline{X}=\\frac{\\Sigma x}{n}$ د μ بې‌پلوه اټکلوونکی دی. همداراز $E(\\hat{p})=p$ مانا دا ده چې $\\hat{p}=\\frac{X}{n}$ د p بې‌پلوه اټکلوونکی دی. د اټکلوونکي $\\hat{\\theta}$ پلوي $B(\\hat{\\theta})=[E(\\hat{\\theta})-\\theta]$ ده."
+    },
+    {
+     "text": "Example 6.2",
+     "urdu": "مثال 6.2",
+     "pashto": "بېلګه 6.2"
+    },
+    {
+     "text": "Show that sample mean $\\overline{X}$ is an unbiased estimator of the population mean μ.",
+     "urdu": "ثابت کریں کہ نمونے کا اوسط $\\overline{X}$ آبادی کے اوسط μ کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "وښایاست چې د نمونې منځنی $\\overline{X}$ د نفوس د منځني μ بې‌پلوه اټکلوونکی دی."
+    },
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "Consider a random sample $X_1,\\ldots,X_n$ from a normal population having mean μ and variance $\\sigma^2$, then by definition,",
+     "urdu": "μ اوسط اور $\\sigma^2$ تغیر والی نارمل آبادی سے ایک تصادفی نمونہ $X_1,\\ldots,X_n$ لیں، تو تعریف کے مطابق،",
+     "pashto": "د μ منځني او $\\sigma^2$ واریانس لرونکي نورمال نفوس څخه یوه تصادفي نمونه $X_1,\\ldots,X_n$ په پام کې ونیسئ، نو د تعریف له مخې،"
+    },
+    {
+     "text": "$$\\overline{X}=\\frac{1}{n}\\sum_{i=1}^{n}X_i$$",
+     "urdu": "$$\\overline{X}=\\frac{1}{n}\\sum_{i=1}^{n}X_i$$",
+     "pashto": "$$\\overline{X}=\\frac{1}{n}\\sum_{i=1}^{n}X_i$$"
+    },
+    {
+     "text": "Taking expectation on both sides to have",
+     "urdu": "دونوں طرف توقع لینے سے",
+     "pashto": "دواړو خواوو ته تمه اخیستلو سره"
+    },
+    {
+     "text": "$E(\\overline{X})=\\frac{1}{n}E\\left[\\sum_{i=1}^{n}X_i\\right]$",
+     "urdu": "$E(\\overline{X})=\\frac{1}{n}E\\left[\\sum_{i=1}^{n}X_i\\right]$",
+     "pashto": "$E(\\overline{X})=\\frac{1}{n}E\\left[\\sum_{i=1}^{n}X_i\\right]$"
+    },
+    {
+     "text": "$=\\frac{1}{n}[E(X_1)+E(X_2)+\\cdots+E(X_n)]$",
+     "urdu": "$=\\frac{1}{n}[E(X_1)+E(X_2)+\\cdots+E(X_n)]$",
+     "pashto": "$=\\frac{1}{n}[E(X_1)+E(X_2)+\\cdots+E(X_n)]$"
+    },
+    {
+     "text": "$=\\frac{1}{n}(\\mu+\\mu+\\cdots+\\mu)$ (As $X_i$’s are drawn from a population having mean μ)",
+     "urdu": "$=\\frac{1}{n}(\\mu+\\mu+\\cdots+\\mu)$ (کیونکہ $X_i$ ایسی آبادی سے نکالے گئے ہیں جس کا اوسط μ ہے)",
+     "pashto": "$=\\frac{1}{n}(\\mu+\\mu+\\cdots+\\mu)$ (ځکه چې $X_i$ له داسې نفوس څخه راایستل شوي چې منځنی یې μ دی)"
+    },
+    {
+     "text": "$=\\frac{n\\mu}{n}=\\mu$ This implies that $\\overline{X}$ is an unbiased estimator of μ.",
+     "urdu": "$=\\frac{n\\mu}{n}=\\mu$ اس کا مطلب ہے کہ $\\overline{X}$، μ کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "$=\\frac{n\\mu}{n}=\\mu$ دا ښيي چې $\\overline{X}$ د μ بې‌پلوه اټکلوونکی دی."
+    },
+    {
+     "text": "Example 6.3",
+     "urdu": "مثال 6.3",
+     "pashto": "بېلګه 6.3"
+    },
+    {
+     "text": "Show that sample proportion $\\hat{p}$ is an unbiased estimator of population proportion p.",
+     "urdu": "ثابت کریں کہ نمونے کا تناسب $\\hat{p}$ آبادی کے تناسب p کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "وښایاست چې د نمونې تناسب $\\hat{p}$ د نفوس د تناسب p بې‌پلوه اټکلوونکی دی."
+    },
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "By definition $\\hat{p}=\\frac{X}{n}$",
+     "urdu": "تعریف کے مطابق $\\hat{p}=\\frac{X}{n}$",
+     "pashto": "د تعریف له مخې $\\hat{p}=\\frac{X}{n}$"
+    },
+    {
+     "text": "$$E(\\hat{p})=E\\left(\\frac{X}{n}\\right)=\\frac{1}{n}E(X)$$",
+     "urdu": "$$E(\\hat{p})=E\\left(\\frac{X}{n}\\right)=\\frac{1}{n}E(X)$$",
+     "pashto": "$$E(\\hat{p})=E\\left(\\frac{X}{n}\\right)=\\frac{1}{n}E(X)$$"
+    },
+    {
+     "text": "$=\\frac{1}{n}(np)$ (As X is Binomial random variable having mean np)",
+     "urdu": "$=\\frac{1}{n}(np)$ (کیونکہ X دو رقمی تصادفی متغیر ہے جس کا اوسط np ہے)",
+     "pashto": "$=\\frac{1}{n}(np)$ (ځکه چې X بینومیل تصادفي متغیر دی چې منځنی یې np دی)"
+    },
+    {
+     "text": "$=p$. It means that $\\hat{p}$ is an unbiased estimator of p.",
+     "urdu": "$=p$۔ اس کا مطلب ہے کہ $\\hat{p}$، p کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "$=p$. مانا یې دا ده چې $\\hat{p}$ د p بې‌پلوه اټکلوونکی دی."
+    },
+    {
+     "text": "Example 6.4",
+     "urdu": "مثال 6.4",
+     "pashto": "بېلګه 6.4"
+    },
+    {
+     "text": "Show that sample variance $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ is an unbiased estimator of population variance $\\sigma^2$.",
+     "urdu": "ثابت کریں کہ نمونے کا تغیر $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ آبادی کے تغیر $\\sigma^2$ کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "وښایاست چې د نمونې واریانس $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ د نفوس د واریانس $\\sigma^2$ بې‌پلوه اټکلوونکی دی."
+    }
+   ],
+   "theory": "efficient and sufficient. Only two properties, unbiasedness and efficiency are discussed here in detail.\n\n6.2.3 Unbiasedness\n\nIt is not possible for an estimator to obtain correct estimate from each and every sample, even though if samples are drawn randomly. However, if this estimator on the average (i.e. considering all possible samples), give an estimate equal to the population parameter then this property of the estimator is called unbiasedness.\n\nDefinition of unbiased estimator:\n\nAn estimator is said to be unbiased if the mean of its sampling distribution is equal to the true value of the parameter, otherwise, the estimator is said to be biased. For example, if \\hat{\\theta} is a point estimator of the parameter θ and E(\\hat{\\theta})=\\theta, then \\hat{\\theta} is called an unbiased estimator of θ. If E(\\hat{\\theta})\\neq\\theta means that \\hat{\\theta} is a biased estimator of θ. Further, if E(\\hat{\\theta})>\\theta means \\hat{\\theta} is positively biased. If E(\\hat{\\theta})<\\theta means that \\hat{\\theta} is negatively biased. Remember that in previous unit we have shown in practical examples that E(\\overline{X})=\\mu_{\\overline{x}}=\\mu. This implies that \\overline{X}=\\frac{\\Sigma x}{n} is an unbiased estimator for μ. Similarly, E(\\hat{p})=p means that \\hat{p}=\\frac{X}{n} is an unbiased estimator of p. The bias of an estimator \\hat{\\theta} is given by B(\\hat{\\theta})=[E(\\hat{\\theta})-\\theta].\n\nExample 6.2\n\nShow that sample mean \\overline{X} is an unbiased estimator of the population mean μ.\n\nProof:\n\nConsider a random sample X_1,\\ldots,X_n from a normal population having mean μ and variance \\sigma^2, then by definition,\n\n$\\overline{X}=\\frac{1}{n}\\sum_{i=1}^{n}X_i$\n\nTaking expectation on both sides to have\n\nE(\\overline{X})=\\frac{1}{n}E\\left[\\sum_{i=1}^{n}X_i\\right]\n\n=\\frac{1}{n}[E(X_1)+E(X_2)+\\cdots+E(X_n)]\n\n=\\frac{1}{n}(\\mu+\\mu+\\cdots+\\mu) (As X_i’s are drawn from a population having mean μ)\n\n=\\frac{n\\mu}{n}=\\mu This implies that \\overline{X} is an unbiased estimator of μ.\n\nExample 6.3\n\nShow that sample proportion \\hat{p} is an unbiased estimator of population proportion p.\n\nProof:\n\nBy definition \\hat{p}=\\frac{X}{n}\n\n$E(\\hat{p})=E\\left(\\frac{X}{n}\\right)=\\frac{1}{n}E(X)$\n\n=\\frac{1}{n}(np) (As X is Binomial random variable having mean np)\n\n=p. It means that \\hat{p} is an unbiased estimator of p.\n\nExample 6.4\n\nShow that sample variance s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 is an unbiased estimator of population variance \\sigma^2.",
+   "urdu": "مؤثر اور کافی ہو۔ یہاں صرف دو خصوصیات، غیر جانبداری اور کارکردگی، پر تفصیل سے بحث کی گئی ہے۔\n\n6.2.3 غیر جانبداری\n\nکسی تخمین کار کے لیے ہر ایک نمونے سے درست تخمینہ حاصل کرنا ممکن نہیں، چاہے نمونے تصادفی طور پر نکالے جائیں۔ تاہم اگر یہ تخمین کار اوسطاً (یعنی تمام ممکنہ نمونوں کو مدِنظر رکھتے ہوئے) آبادی کے پیرامیٹر کے برابر تخمینہ دے تو تخمین کار کی اس خاصیت کو غیر جانبداری کہتے ہیں۔\n\nغیر جانبدار تخمین کار کی تعریف:\n\nایک تخمین کار غیر جانبدار کہلاتا ہے اگر اس کی نمونہ جاتی تقسیم کا اوسط پیرامیٹر کی حقیقی قیمت کے برابر ہو، ورنہ تخمین کار جانبدار کہلاتا ہے۔ مثلاً اگر \\hat{\\theta} پیرامیٹر θ کا نقطہ تخمین کار ہو اور E(\\hat{\\theta})=\\theta ہو تو \\hat{\\theta} کو θ کا غیر جانبدار تخمین کار کہتے ہیں۔ اگر E(\\hat{\\theta})\\neq\\theta ہو تو اس کا مطلب ہے کہ \\hat{\\theta}، θ کا جانبدار تخمین کار ہے۔ مزید یہ کہ اگر E(\\hat{\\theta})>\\theta ہو تو \\hat{\\theta} مثبت طور پر جانبدار ہے۔ اگر E(\\hat{\\theta})<\\theta ہو تو \\hat{\\theta} منفی طور پر جانبدار ہے۔ یاد رکھیں کہ پچھلے یونٹ میں ہم نے عملی مثالوں میں دکھایا کہ E(\\overline{X})=\\mu_{\\overline{x}}=\\mu۔ اس کا مطلب ہے کہ \\overline{X}=\\frac{\\Sigma x}{n}، μ کا غیر جانبدار تخمین کار ہے۔ اسی طرح E(\\hat{p})=p کا مطلب ہے کہ \\hat{p}=\\frac{X}{n}، p کا غیر جانبدار تخمین کار ہے۔ تخمین کار \\hat{\\theta} کی جانبداری B(\\hat{\\theta})=[E(\\hat{\\theta})-\\theta] ہے۔\n\nمثال 6.2\n\nثابت کریں کہ نمونے کا اوسط \\overline{X} آبادی کے اوسط μ کا غیر جانبدار تخمین کار ہے۔\n\nثبوت:\n\nμ اوسط اور \\sigma^2 تغیر والی نارمل آبادی سے ایک تصادفی نمونہ X_1,\\ldots,X_n لیں، تو تعریف کے مطابق،\n\n$\\overline{X}=\\frac{1}{n}\\sum_{i=1}^{n}X_i$\n\nدونوں طرف توقع لینے سے\n\nE(\\overline{X})=\\frac{1}{n}E\\left[\\sum_{i=1}^{n}X_i\\right]\n\n=\\frac{1}{n}[E(X_1)+E(X_2)+\\cdots+E(X_n)]\n\n=\\frac{1}{n}(\\mu+\\mu+\\cdots+\\mu) (کیونکہ X_i ایسی آبادی سے نکالے گئے ہیں جس کا اوسط μ ہے)\n\n=\\frac{n\\mu}{n}=\\mu اس کا مطلب ہے کہ \\overline{X}، μ کا غیر جانبدار تخمین کار ہے۔\n\nمثال 6.3\n\nثابت کریں کہ نمونے کا تناسب \\hat{p} آبادی کے تناسب p کا غیر جانبدار تخمین کار ہے۔\n\nثبوت:\n\nتعریف کے مطابق \\hat{p}=\\frac{X}{n}\n\n$E(\\hat{p})=E\\left(\\frac{X}{n}\\right)=\\frac{1}{n}E(X)$\n\n=\\frac{1}{n}(np) (کیونکہ X دو رقمی تصادفی متغیر ہے جس کا اوسط np ہے)\n\n=p۔ اس کا مطلب ہے کہ \\hat{p}، p کا غیر جانبدار تخمین کار ہے۔\n\nمثال 6.4\n\nثابت کریں کہ نمونے کا تغیر s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 آبادی کے تغیر \\sigma^2 کا غیر جانبدار تخمین کار ہے۔",
+   "pashto": "موثر او کافي وي. دلته یوازې دوه ځانګړنې، بې‌پلوي او موثریت، په تفصیل سره څېړل شوې.\n\n6.2.3 بې‌پلوي\n\nد یوه اټکلوونکي لپاره ممکنه نه ده چې له هرې نمونې څخه سم اټکل ترلاسه کړي، که څه هم نمونې په تصادفي ډول راایستل شي. خو که دا اټکلوونکی په اوسط ډول (یعنې د ټولو شونو نمونو په پام کې نیولو سره) د نفوس له پارامټر سره برابر اټکل ورکړي، نو د اټکلوونکي دې ځانګړنې ته بې‌پلوي وایي.\n\nد بې‌پلوه اټکلوونکي تعریف:\n\nیو اټکلوونکی بې‌پلوه بلل کېږي که د هغه د نمونوي وېش منځنی د پارامټر له رښتیني قیمت سره برابر وي، که نه اټکلوونکی پلوي بلل کېږي. د بېلګې په توګه که \\hat{\\theta} د θ پارامټر ټکي‌ییز اټکلوونکی وي او E(\\hat{\\theta})=\\theta وي، نو \\hat{\\theta} د θ بې‌پلوه اټکلوونکی بلل کېږي. که E(\\hat{\\theta})\\neq\\theta وي مانا یې دا ده چې \\hat{\\theta} د θ پلوي اټکلوونکی دی. سربېره پر دې که E(\\hat{\\theta})>\\theta وي مانا یې دا ده چې \\hat{\\theta} مثبت پلوي دی. که E(\\hat{\\theta})<\\theta وي مانا یې دا ده چې \\hat{\\theta} منفي پلوي دی. په یاد ولرئ چې په تېر واحد کې مو په عملي بېلګو کې وښودل چې E(\\overline{X})=\\mu_{\\overline{x}}=\\mu. دا ښيي چې \\overline{X}=\\frac{\\Sigma x}{n} د μ بې‌پلوه اټکلوونکی دی. همداراز E(\\hat{p})=p مانا دا ده چې \\hat{p}=\\frac{X}{n} د p بې‌پلوه اټکلوونکی دی. د اټکلوونکي \\hat{\\theta} پلوي B(\\hat{\\theta})=[E(\\hat{\\theta})-\\theta] ده.\n\nبېلګه 6.2\n\nوښایاست چې د نمونې منځنی \\overline{X} د نفوس د منځني μ بې‌پلوه اټکلوونکی دی.\n\nثبوت:\n\nد μ منځني او \\sigma^2 واریانس لرونکي نورمال نفوس څخه یوه تصادفي نمونه X_1,\\ldots,X_n په پام کې ونیسئ، نو د تعریف له مخې،\n\n$\\overline{X}=\\frac{1}{n}\\sum_{i=1}^{n}X_i$\n\nدواړو خواوو ته تمه اخیستلو سره\n\nE(\\overline{X})=\\frac{1}{n}E\\left[\\sum_{i=1}^{n}X_i\\right]\n\n=\\frac{1}{n}[E(X_1)+E(X_2)+\\cdots+E(X_n)]\n\n=\\frac{1}{n}(\\mu+\\mu+\\cdots+\\mu) (ځکه چې X_i له داسې نفوس څخه راایستل شوي چې منځنی یې μ دی)\n\n=\\frac{n\\mu}{n}=\\mu دا ښيي چې \\overline{X} د μ بې‌پلوه اټکلوونکی دی.\n\nبېلګه 6.3\n\nوښایاست چې د نمونې تناسب \\hat{p} د نفوس د تناسب p بې‌پلوه اټکلوونکی دی.\n\nثبوت:\n\nد تعریف له مخې \\hat{p}=\\frac{X}{n}\n\n$E(\\hat{p})=E\\left(\\frac{X}{n}\\right)=\\frac{1}{n}E(X)$\n\n=\\frac{1}{n}(np) (ځکه چې X بینومیل تصادفي متغیر دی چې منځنی یې np دی)\n\n=p. مانا یې دا ده چې \\hat{p} د p بې‌پلوه اټکلوونکی دی.\n\nبېلګه 6.4\n\nوښایاست چې د نمونې واریانس s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 د نفوس د واریانس \\sigma^2 بې‌پلوه اټکلوونکی دی.",
+   "theoryUrdu": "مؤثر اور کافی ہو۔ یہاں صرف دو خصوصیات، غیر جانبداری اور کارکردگی، پر تفصیل سے بحث کی گئی ہے۔\n\n6.2.3 غیر جانبداری\n\nکسی تخمین کار کے لیے ہر ایک نمونے سے درست تخمینہ حاصل کرنا ممکن نہیں، چاہے نمونے تصادفی طور پر نکالے جائیں۔ تاہم اگر یہ تخمین کار اوسطاً (یعنی تمام ممکنہ نمونوں کو مدِنظر رکھتے ہوئے) آبادی کے پیرامیٹر کے برابر تخمینہ دے تو تخمین کار کی اس خاصیت کو غیر جانبداری کہتے ہیں۔\n\nغیر جانبدار تخمین کار کی تعریف:\n\nایک تخمین کار غیر جانبدار کہلاتا ہے اگر اس کی نمونہ جاتی تقسیم کا اوسط پیرامیٹر کی حقیقی قیمت کے برابر ہو، ورنہ تخمین کار جانبدار کہلاتا ہے۔ مثلاً اگر \\hat{\\theta} پیرامیٹر θ کا نقطہ تخمین کار ہو اور E(\\hat{\\theta})=\\theta ہو تو \\hat{\\theta} کو θ کا غیر جانبدار تخمین کار کہتے ہیں۔ اگر E(\\hat{\\theta})\\neq\\theta ہو تو اس کا مطلب ہے کہ \\hat{\\theta}، θ کا جانبدار تخمین کار ہے۔ مزید یہ کہ اگر E(\\hat{\\theta})>\\theta ہو تو \\hat{\\theta} مثبت طور پر جانبدار ہے۔ اگر E(\\hat{\\theta})<\\theta ہو تو \\hat{\\theta} منفی طور پر جانبدار ہے۔ یاد رکھیں کہ پچھلے یونٹ میں ہم نے عملی مثالوں میں دکھایا کہ E(\\overline{X})=\\mu_{\\overline{x}}=\\mu۔ اس کا مطلب ہے کہ \\overline{X}=\\frac{\\Sigma x}{n}، μ کا غیر جانبدار تخمین کار ہے۔ اسی طرح E(\\hat{p})=p کا مطلب ہے کہ \\hat{p}=\\frac{X}{n}، p کا غیر جانبدار تخمین کار ہے۔ تخمین کار \\hat{\\theta} کی جانبداری B(\\hat{\\theta})=[E(\\hat{\\theta})-\\theta] ہے۔\n\nمثال 6.2\n\nثابت کریں کہ نمونے کا اوسط \\overline{X} آبادی کے اوسط μ کا غیر جانبدار تخمین کار ہے۔\n\nثبوت:\n\nμ اوسط اور \\sigma^2 تغیر والی نارمل آبادی سے ایک تصادفی نمونہ X_1,\\ldots,X_n لیں، تو تعریف کے مطابق،\n\n$\\overline{X}=\\frac{1}{n}\\sum_{i=1}^{n}X_i$\n\nدونوں طرف توقع لینے سے\n\nE(\\overline{X})=\\frac{1}{n}E\\left[\\sum_{i=1}^{n}X_i\\right]\n\n=\\frac{1}{n}[E(X_1)+E(X_2)+\\cdots+E(X_n)]\n\n=\\frac{1}{n}(\\mu+\\mu+\\cdots+\\mu) (کیونکہ X_i ایسی آبادی سے نکالے گئے ہیں جس کا اوسط μ ہے)\n\n=\\frac{n\\mu}{n}=\\mu اس کا مطلب ہے کہ \\overline{X}، μ کا غیر جانبدار تخمین کار ہے۔\n\nمثال 6.3\n\nثابت کریں کہ نمونے کا تناسب \\hat{p} آبادی کے تناسب p کا غیر جانبدار تخمین کار ہے۔\n\nثبوت:\n\nتعریف کے مطابق \\hat{p}=\\frac{X}{n}\n\n$E(\\hat{p})=E\\left(\\frac{X}{n}\\right)=\\frac{1}{n}E(X)$\n\n=\\frac{1}{n}(np) (کیونکہ X دو رقمی تصادفی متغیر ہے جس کا اوسط np ہے)\n\n=p۔ اس کا مطلب ہے کہ \\hat{p}، p کا غیر جانبدار تخمین کار ہے۔\n\nمثال 6.4\n\nثابت کریں کہ نمونے کا تغیر s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 آبادی کے تغیر \\sigma^2 کا غیر جانبدار تخمین کار ہے۔",
+   "theoryPashto": "موثر او کافي وي. دلته یوازې دوه ځانګړنې، بې‌پلوي او موثریت، په تفصیل سره څېړل شوې.\n\n6.2.3 بې‌پلوي\n\nد یوه اټکلوونکي لپاره ممکنه نه ده چې له هرې نمونې څخه سم اټکل ترلاسه کړي، که څه هم نمونې په تصادفي ډول راایستل شي. خو که دا اټکلوونکی په اوسط ډول (یعنې د ټولو شونو نمونو په پام کې نیولو سره) د نفوس له پارامټر سره برابر اټکل ورکړي، نو د اټکلوونکي دې ځانګړنې ته بې‌پلوي وایي.\n\nد بې‌پلوه اټکلوونکي تعریف:\n\nیو اټکلوونکی بې‌پلوه بلل کېږي که د هغه د نمونوي وېش منځنی د پارامټر له رښتیني قیمت سره برابر وي، که نه اټکلوونکی پلوي بلل کېږي. د بېلګې په توګه که \\hat{\\theta} د θ پارامټر ټکي‌ییز اټکلوونکی وي او E(\\hat{\\theta})=\\theta وي، نو \\hat{\\theta} د θ بې‌پلوه اټکلوونکی بلل کېږي. که E(\\hat{\\theta})\\neq\\theta وي مانا یې دا ده چې \\hat{\\theta} د θ پلوي اټکلوونکی دی. سربېره پر دې که E(\\hat{\\theta})>\\theta وي مانا یې دا ده چې \\hat{\\theta} مثبت پلوي دی. که E(\\hat{\\theta})<\\theta وي مانا یې دا ده چې \\hat{\\theta} منفي پلوي دی. په یاد ولرئ چې په تېر واحد کې مو په عملي بېلګو کې وښودل چې E(\\overline{X})=\\mu_{\\overline{x}}=\\mu. دا ښيي چې \\overline{X}=\\frac{\\Sigma x}{n} د μ بې‌پلوه اټکلوونکی دی. همداراز E(\\hat{p})=p مانا دا ده چې \\hat{p}=\\frac{X}{n} د p بې‌پلوه اټکلوونکی دی. د اټکلوونکي \\hat{\\theta} پلوي B(\\hat{\\theta})=[E(\\hat{\\theta})-\\theta] ده.\n\nبېلګه 6.2\n\nوښایاست چې د نمونې منځنی \\overline{X} د نفوس د منځني μ بې‌پلوه اټکلوونکی دی.\n\nثبوت:\n\nد μ منځني او \\sigma^2 واریانس لرونکي نورمال نفوس څخه یوه تصادفي نمونه X_1,\\ldots,X_n په پام کې ونیسئ، نو د تعریف له مخې،\n\n$\\overline{X}=\\frac{1}{n}\\sum_{i=1}^{n}X_i$\n\nدواړو خواوو ته تمه اخیستلو سره\n\nE(\\overline{X})=\\frac{1}{n}E\\left[\\sum_{i=1}^{n}X_i\\right]\n\n=\\frac{1}{n}[E(X_1)+E(X_2)+\\cdots+E(X_n)]\n\n=\\frac{1}{n}(\\mu+\\mu+\\cdots+\\mu) (ځکه چې X_i له داسې نفوس څخه راایستل شوي چې منځنی یې μ دی)\n\n=\\frac{n\\mu}{n}=\\mu دا ښيي چې \\overline{X} د μ بې‌پلوه اټکلوونکی دی.\n\nبېلګه 6.3\n\nوښایاست چې د نمونې تناسب \\hat{p} د نفوس د تناسب p بې‌پلوه اټکلوونکی دی.\n\nثبوت:\n\nد تعریف له مخې \\hat{p}=\\frac{X}{n}\n\n$E(\\hat{p})=E\\left(\\frac{X}{n}\\right)=\\frac{1}{n}E(X)$\n\n=\\frac{1}{n}(np) (ځکه چې X بینومیل تصادفي متغیر دی چې منځنی یې np دی)\n\n=p. مانا یې دا ده چې \\hat{p} د p بې‌پلوه اټکلوونکی دی.\n\nبېلګه 6.4\n\nوښایاست چې د نمونې واریانس s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 د نفوس د واریانس \\sigma^2 بې‌پلوه اټکلوونکی دی.",
+   "content": "<p>efficient and sufficient. Only two properties, unbiasedness and efficiency are discussed here in detail.</p><p>6.2.3 Unbiasedness</p><p>It is not possible for an estimator to obtain correct estimate from each and every sample, even though if samples are drawn randomly. However, if this estimator on the average (i.e. considering all possible samples), give an estimate equal to the population parameter then this property of the estimator is called unbiasedness.</p><p>Definition of unbiased estimator:</p><p>An estimator is said to be unbiased if the mean of its sampling distribution is equal to the true value of the parameter, otherwise, the estimator is said to be biased. For example, if \\hat{\\theta} is a point estimator of the parameter θ and E(\\hat{\\theta})=\\theta, then \\hat{\\theta} is called an unbiased estimator of θ. If E(\\hat{\\theta})\\neq\\theta means that \\hat{\\theta} is a biased estimator of θ. Further, if E(\\hat{\\theta})&gt;\\theta means \\hat{\\theta} is positively biased. If E(\\hat{\\theta})&lt;\\theta means that \\hat{\\theta} is negatively biased. Remember that in previous unit we have shown in practical examples that E(\\overline{X})=\\mu_{\\overline{x}}=\\mu. This implies that \\overline{X}=\\frac{\\Sigma x}{n} is an unbiased estimator for μ. Similarly, E(\\hat{p})=p means that \\hat{p}=\\frac{X}{n} is an unbiased estimator of p. The bias of an estimator \\hat{\\theta} is given by B(\\hat{\\theta})=[E(\\hat{\\theta})-\\theta].</p><p>Example 6.2</p><p>Show that sample mean \\overline{X} is an unbiased estimator of the population mean μ.</p><p>Proof:</p><p>Consider a random sample X_1,\\ldots,X_n from a normal population having mean μ and variance \\sigma^2, then by definition,</p><p>$\\overline{X}=\\frac{1}{n}\\sum_{i=1}^{n}X_i$</p><p>Taking expectation on both sides to have</p><p>E(\\overline{X})=\\frac{1}{n}E\\left[\\sum_{i=1}^{n}X_i\\right]</p><p>=\\frac{1}{n}[E(X_1)+E(X_2)+\\cdots+E(X_n)]</p><p>=\\frac{1}{n}(\\mu+\\mu+\\cdots+\\mu) (As X_i’s are drawn from a population having mean μ)</p><p>=\\frac{n\\mu}{n}=\\mu This implies that \\overline{X} is an unbiased estimator of μ.</p><p>Example 6.3</p><p>Show that sample proportion \\hat{p} is an unbiased estimator of population proportion p.</p><p>Proof:</p><p>By definition \\hat{p}=\\frac{X}{n}</p><p>$E(\\hat{p})=E\\left(\\frac{X}{n}\\right)=\\frac{1}{n}E(X)$</p><p>=\\frac{1}{n}(np) (As X is Binomial random variable having mean np)</p><p>=p. It means that \\hat{p} is an unbiased estimator of p.</p><p>Example 6.4</p><p>Show that sample variance s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 is an unbiased estimator of population variance \\sigma^2.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      11,
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      23
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 103,
+     "printedPages": [
+      197,
+      198
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

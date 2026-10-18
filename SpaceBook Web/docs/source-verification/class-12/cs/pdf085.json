@@ -1,0 +1,288 @@
+{
+ "pdfPage": 85,
+ "sections": [
+  {
+   "id": "cs12-u5-text-7",
+   "title": "Unit 5 text (7)",
+   "headingUrdu": "یونٹ 5 — متن (۷)",
+   "headingPashto": "۵ څپرکی — متن (۷)",
+   "paras": [
+    {
+     "text": "Array X consisting of three rows and five columns. It can be represented as:",
+     "urdu": "تین قطاروں اور پانچ کالموں پر مشتمل ایرے X۔ اسے یوں ظاہر کیا جا سکتا ہے:",
+     "pashto": "د درېیو قطارونو او پنځو ستنو لړۍ X. داسې ښودل کېدای شي:"
+    },
+    {
+     "text": "Two dimensional array is also called matrix in mathematics and table in business applications.",
+     "urdu": "دو جہتی ایرے کو ریاضی میں میٹرکس اور کاروباری ایپلیکیشنز میں ٹیبل بھی کہتے ہیں۔",
+     "pashto": "دوه-بعدي لړۍ په ریاضي کې ماتریکس او په سوداګریزو کاريالونو کې جدول هم بلل کېږي."
+    },
+    {
+     "text": "5.2.2 Definition and initialization of two dimensional arrays",
+     "urdu": "5.2.2 دو جہتی ایریز کی تعریف اور ابتدائی قدر",
+     "pashto": "۵.۲.۲ د دوه-بعدي لړیو تعریف او لومړنی ارزښت"
+    },
+    {
+     "text": "Like one-dimensional array, a two-dimensional array is defined and initialized before using it in a program. The following sections describe its definition and initialization with the help of examples.",
+     "urdu": "یک جہتی ایرے کی طرح دو جہتی ایرے کی بھی پروگرام میں استعمال سے پہلے تعریف اور ابتدائی قدر دی جاتی ہے۔ درج ذیل حصے مثالوں کی مدد سے اس کی تعریف اور ابتدائی قدر بیان کرتے ہیں۔",
+     "pashto": "د یو-بعدي لړۍ په څېر دوه-بعدي لړۍ هم په پروګرام کې له کارولو مخکې تعریفېږي او لومړنی ارزښت ورکول کېږي. لاندې برخې د بېلګو په مرسته د هغې تعریف او لومړنی ارزښت بیانوي."
+    },
+    {
+     "text": "a. Defining two dimensional array",
+     "urdu": "a. دو جہتی ایرے کی تعریف",
+     "pashto": "a. د دوه-بعدي لړۍ تعریف"
+    },
+    {
+     "text": "The general syntax for the declaration of two dimensional arrays is given below.",
+     "urdu": "دو جہتی ایریز کی ڈکلیریشن کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔",
+     "pashto": "د دوه-بعدي لړیو د اعلان عمومي بڼه لاندې ورکړل شوې."
+    },
+    {
+     "text": "Data Type Array name [row index] [column index];",
+     "urdu": "Data Type Array name [row index] [column index];",
+     "pashto": "Data Type Array name [row index] [column index];",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In the above syntax, the data type is any valid data type, such as int, float, long etc., which is followed by array name and two indices. The first index is for number of rows and the second index is for number of columns in the array.",
+     "urdu": "اوپر کے طریقۂ تحریر میں data type کوئی بھی درست ڈیٹا ٹائپ ہے، جیسے int، float، long وغیرہ، جس کے بعد ایرے کا نام اور دو انڈیسز آتے ہیں۔ پہلا انڈیکس قطاروں کی تعداد اور دوسرا انڈیکس ایرے میں کالموں کی تعداد کے لیے ہے۔",
+     "pashto": "په پورته بڼه کې data type هر سم ډېټا ډول دی، لکه int، float، long او نور، چې وروسته یې د لړۍ نوم او دوه شاخصونه راځي. لومړی شاخص د قطارونو شمېر او دویم شاخص په لړۍ کې د ستنو شمېر لپاره دی."
+    },
+    {
+     "text": "A float type array, tdArray, consisting of 2 rows and 2 columns can be defined by using the following statement.",
+     "urdu": "float قسم کا ایرے tdArray، جو 2 قطاروں اور 2 کالموں پر مشتمل ہو، درج ذیل بیان سے بیان کیا جا سکتا ہے۔",
+     "pashto": "د float ډول لړۍ tdArray چې ۲ قطارونه او ۲ ستنې ولري، په لاندې بیان تعریفېدای شي."
+    },
+    {
+     "text": "float tdArray [2][2];",
+     "urdu": "float tdArray [2][2];",
+     "pashto": "float tdArray [2][2];",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. Initializing two dimensional arrays",
+     "urdu": "b. دو جہتی ایریز کو ابتدائی قدر دینا",
+     "pashto": "b. دوه-بعدي لړیو ته لومړنی ارزښت ورکول"
+    },
+    {
+     "text": "To initialize a two-dimensional array, it is easiest to use nested braces, with each set of numbers representing a row:",
+     "urdu": "دو جہتی ایرے کو ابتدائی قدر دینے کے لیے نیسٹڈ بریسز استعمال کرنا سب سے آسان ہے، جن میں اعداد کا ہر مجموعہ ایک قطار ظاہر کرتا ہے:",
+     "pashto": "دوه-بعدي لړۍ ته د لومړني ارزښت ورکولو لپاره ځالې لوړ قوسونه کارول تر ټولو اسانه دي، چې د عددونو هره ټولګه یو قطار ښيي:"
+    },
+    {
+     "text": "// two dimensional array initialization\nint anArray[3][5] =\n{\n{ 1, 2, 3, 4, 5 }, // row 0\n{ 6, 7, 8, 9, 10 }, // row 1\n{ 11, 12, 13, 14, 15 } // row 2\n};",
+     "urdu": "// two dimensional array initialization\nint anArray[3][5] =\n{\n{ 1, 2, 3, 4, 5 }, // row 0\n{ 6, 7, 8, 9, 10 }, // row 1\n{ 11, 12, 13, 14, 15 } // row 2\n};",
+     "pashto": "// two dimensional array initialization\nint anArray[3][5] =\n{\n{ 1, 2, 3, 4, 5 }, // row 0\n{ 6, 7, 8, 9, 10 }, // row 1\n{ 11, 12, 13, 14, 15 } // row 2\n};",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "If we want to initialize a two-dimensional array to 0 then it can be done as follows:",
+     "urdu": "اگر ہم دو جہتی ایرے کو 0 ابتدائی قدر دینا چاہیں تو یوں کیا جا سکتا ہے:",
+     "pashto": "که وغواړو دوه-بعدي لړۍ ته 0 لومړنی ارزښت ورکړو، داسې کېدای شي:"
+    },
+    {
+     "text": "int anArray[3][5] = { 0 };",
+     "urdu": "int anArray[3][5] = { 0 };",
+     "pashto": "int anArray[3][5] = { 0 };",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "5.2 .3 Accessing and writing at an index in a two dimensional array",
+     "urdu": "5.2.3 دو جہتی ایرے میں کسی انڈیکس پر رسائی اور لکھنا",
+     "pashto": "۵.۲.۳ په دوه-بعدي لړۍ کې پر یوه شاخص لاسرسی او لیکل"
+    },
+    {
+     "text": "To operate on the elements of two dimensional arrays, the elements should be first accessed and then updated. Writing at an index of an array is also done when a new two dimensional array is declared. Accessing and writing at an index of a two dimensional array is similar to one dimensional array. The following sections discuss them with the help of examples.",
+     "urdu": "دو جہتی ایریز کے عناصر پر عمل کرنے کے لیے پہلے عناصر تک رسائی اور پھر انھیں تازہ کرنا چاہیے۔ نیا دو جہتی ایرے ڈکلیئر کرتے وقت بھی ایرے کے کسی انڈیکس پر لکھا جاتا ہے۔ دو جہتی ایرے کے کسی انڈیکس پر رسائی اور لکھنا یک جہتی ایرے جیسا ہے۔ درج ذیل حصے مثالوں کی مدد سے ان پر بات کرتے ہیں۔",
+     "pashto": "د دوه-بعدي لړیو پر عناصرو د عملیې لپاره، لومړی باید عناصرو ته لاسرسی وشي او بیا تازه شي. د نوې دوه-بعدي لړۍ د اعلان پر مهال هم د لړۍ پر یوه شاخص لیکل کېږي. د دوه-بعدي لړۍ پر یوه شاخص لاسرسی او لیکل د یو-بعدي لړۍ په څېر دي. لاندې برخې د بېلګو په مرسته دا څېړي."
+    },
+    {
+     "text": "a. Accessing two dimensional arrays",
+     "urdu": "a. دو جہتی ایریز تک رسائی",
+     "pashto": "a. دوه-بعدي لړیو ته لاسرسی"
+    },
+    {
+     "text": "Accessing two dimensional arrays need two indices, one for the row and the other for the column. For example, if we have an array anArray[3][5] and want to access an element at second row and third column. Then it can be written as:",
+     "urdu": "دو جہتی ایریز تک رسائی کے لیے دو انڈیسز درکار ہیں، ایک قطار کے لیے اور دوسرا کالم کے لیے۔ مثلاً اگر ہمارے پاس ایرے anArray[3][5] ہو اور ہم دوسری قطار اور تیسرے کالم کے عنصر تک رسائی چاہیں تو اسے یوں لکھا جا سکتا ہے:",
+     "pashto": "دوه-بعدي لړیو ته لاسرسی دوو شاخصونو ته اړتیا لري، یو د قطار لپاره او بل د ستنې لپاره. د بېلګې په توګه که anArray[3][5] لړۍ ولرو او د دویم قطار او درېیمې ستنې عنصر ته لاسرسی وغواړو، داسې لیکل کېدای شي:"
+    },
+    {
+     "text": "anArray[1][2];",
+     "urdu": "anArray[1][2];",
+     "pashto": "anArray[1][2];",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Array X consisting of three rows and five columns. It can be represented as:\n\nTwo dimensional array is also called matrix in mathematics and table in business applications.\n\n5.2.2 Definition and initialization of two dimensional arrays\n\nLike one-dimensional array, a two-dimensional array is defined and initialized before using it in a program. The following sections describe its definition and initialization with the help of examples.\n\na. Defining two dimensional array\n\nThe general syntax for the declaration of two dimensional arrays is given below.\n\nData Type Array name [row index] [column index];\n\nIn the above syntax, the data type is any valid data type, such as int, float, long etc., which is followed by array name and two indices. The first index is for number of rows and the second index is for number of columns in the array.\n\nA float type array, tdArray, consisting of 2 rows and 2 columns can be defined by using the following statement.\n\nfloat tdArray [2][2];\n\nb. Initializing two dimensional arrays\n\nTo initialize a two-dimensional array, it is easiest to use nested braces, with each set of numbers representing a row:\n\n// two dimensional array initialization\nint anArray[3][5] =\n{\n{ 1, 2, 3, 4, 5 }, // row 0\n{ 6, 7, 8, 9, 10 }, // row 1\n{ 11, 12, 13, 14, 15 } // row 2\n};\n\nIf we want to initialize a two-dimensional array to 0 then it can be done as follows:\n\nint anArray[3][5] = { 0 };\n\n5.2 .3 Accessing and writing at an index in a two dimensional array\n\nTo operate on the elements of two dimensional arrays, the elements should be first accessed and then updated. Writing at an index of an array is also done when a new two dimensional array is declared. Accessing and writing at an index of a two dimensional array is similar to one dimensional array. The following sections discuss them with the help of examples.\n\na. Accessing two dimensional arrays\n\nAccessing two dimensional arrays need two indices, one for the row and the other for the column. For example, if we have an array anArray[3][5] and want to access an element at second row and third column. Then it can be written as:\n\nanArray[1][2];",
+   "urdu": "تین قطاروں اور پانچ کالموں پر مشتمل ایرے X۔ اسے یوں ظاہر کیا جا سکتا ہے:\n\nدو جہتی ایرے کو ریاضی میں میٹرکس اور کاروباری ایپلیکیشنز میں ٹیبل بھی کہتے ہیں۔\n\n5.2.2 دو جہتی ایریز کی تعریف اور ابتدائی قدر\n\nیک جہتی ایرے کی طرح دو جہتی ایرے کی بھی پروگرام میں استعمال سے پہلے تعریف اور ابتدائی قدر دی جاتی ہے۔ درج ذیل حصے مثالوں کی مدد سے اس کی تعریف اور ابتدائی قدر بیان کرتے ہیں۔\n\na. دو جہتی ایرے کی تعریف\n\nدو جہتی ایریز کی ڈکلیریشن کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔\n\nData Type Array name [row index] [column index];\n\nاوپر کے طریقۂ تحریر میں data type کوئی بھی درست ڈیٹا ٹائپ ہے، جیسے int، float، long وغیرہ، جس کے بعد ایرے کا نام اور دو انڈیسز آتے ہیں۔ پہلا انڈیکس قطاروں کی تعداد اور دوسرا انڈیکس ایرے میں کالموں کی تعداد کے لیے ہے۔\n\nfloat قسم کا ایرے tdArray، جو 2 قطاروں اور 2 کالموں پر مشتمل ہو، درج ذیل بیان سے بیان کیا جا سکتا ہے۔\n\nfloat tdArray [2][2];\n\nb. دو جہتی ایریز کو ابتدائی قدر دینا\n\nدو جہتی ایرے کو ابتدائی قدر دینے کے لیے نیسٹڈ بریسز استعمال کرنا سب سے آسان ہے، جن میں اعداد کا ہر مجموعہ ایک قطار ظاہر کرتا ہے:\n\n// two dimensional array initialization\nint anArray[3][5] =\n{\n{ 1, 2, 3, 4, 5 }, // row 0\n{ 6, 7, 8, 9, 10 }, // row 1\n{ 11, 12, 13, 14, 15 } // row 2\n};\n\nاگر ہم دو جہتی ایرے کو 0 ابتدائی قدر دینا چاہیں تو یوں کیا جا سکتا ہے:\n\nint anArray[3][5] = { 0 };\n\n5.2.3 دو جہتی ایرے میں کسی انڈیکس پر رسائی اور لکھنا\n\nدو جہتی ایریز کے عناصر پر عمل کرنے کے لیے پہلے عناصر تک رسائی اور پھر انھیں تازہ کرنا چاہیے۔ نیا دو جہتی ایرے ڈکلیئر کرتے وقت بھی ایرے کے کسی انڈیکس پر لکھا جاتا ہے۔ دو جہتی ایرے کے کسی انڈیکس پر رسائی اور لکھنا یک جہتی ایرے جیسا ہے۔ درج ذیل حصے مثالوں کی مدد سے ان پر بات کرتے ہیں۔\n\na. دو جہتی ایریز تک رسائی\n\nدو جہتی ایریز تک رسائی کے لیے دو انڈیسز درکار ہیں، ایک قطار کے لیے اور دوسرا کالم کے لیے۔ مثلاً اگر ہمارے پاس ایرے anArray[3][5] ہو اور ہم دوسری قطار اور تیسرے کالم کے عنصر تک رسائی چاہیں تو اسے یوں لکھا جا سکتا ہے:\n\nanArray[1][2];",
+   "pashto": "د درېیو قطارونو او پنځو ستنو لړۍ X. داسې ښودل کېدای شي:\n\nدوه-بعدي لړۍ په ریاضي کې ماتریکس او په سوداګریزو کاريالونو کې جدول هم بلل کېږي.\n\n۵.۲.۲ د دوه-بعدي لړیو تعریف او لومړنی ارزښت\n\nد یو-بعدي لړۍ په څېر دوه-بعدي لړۍ هم په پروګرام کې له کارولو مخکې تعریفېږي او لومړنی ارزښت ورکول کېږي. لاندې برخې د بېلګو په مرسته د هغې تعریف او لومړنی ارزښت بیانوي.\n\na. د دوه-بعدي لړۍ تعریف\n\nد دوه-بعدي لړیو د اعلان عمومي بڼه لاندې ورکړل شوې.\n\nData Type Array name [row index] [column index];\n\nپه پورته بڼه کې data type هر سم ډېټا ډول دی، لکه int، float، long او نور، چې وروسته یې د لړۍ نوم او دوه شاخصونه راځي. لومړی شاخص د قطارونو شمېر او دویم شاخص په لړۍ کې د ستنو شمېر لپاره دی.\n\nد float ډول لړۍ tdArray چې ۲ قطارونه او ۲ ستنې ولري، په لاندې بیان تعریفېدای شي.\n\nfloat tdArray [2][2];\n\nb. دوه-بعدي لړیو ته لومړنی ارزښت ورکول\n\nدوه-بعدي لړۍ ته د لومړني ارزښت ورکولو لپاره ځالې لوړ قوسونه کارول تر ټولو اسانه دي، چې د عددونو هره ټولګه یو قطار ښيي:\n\n// two dimensional array initialization\nint anArray[3][5] =\n{\n{ 1, 2, 3, 4, 5 }, // row 0\n{ 6, 7, 8, 9, 10 }, // row 1\n{ 11, 12, 13, 14, 15 } // row 2\n};\n\nکه وغواړو دوه-بعدي لړۍ ته 0 لومړنی ارزښت ورکړو، داسې کېدای شي:\n\nint anArray[3][5] = { 0 };\n\n۵.۲.۳ په دوه-بعدي لړۍ کې پر یوه شاخص لاسرسی او لیکل\n\nد دوه-بعدي لړیو پر عناصرو د عملیې لپاره، لومړی باید عناصرو ته لاسرسی وشي او بیا تازه شي. د نوې دوه-بعدي لړۍ د اعلان پر مهال هم د لړۍ پر یوه شاخص لیکل کېږي. د دوه-بعدي لړۍ پر یوه شاخص لاسرسی او لیکل د یو-بعدي لړۍ په څېر دي. لاندې برخې د بېلګو په مرسته دا څېړي.\n\na. دوه-بعدي لړیو ته لاسرسی\n\nدوه-بعدي لړیو ته لاسرسی دوو شاخصونو ته اړتیا لري، یو د قطار لپاره او بل د ستنې لپاره. د بېلګې په توګه که anArray[3][5] لړۍ ولرو او د دویم قطار او درېیمې ستنې عنصر ته لاسرسی وغواړو، داسې لیکل کېدای شي:\n\nanArray[1][2];",
+   "theoryUrdu": "تین قطاروں اور پانچ کالموں پر مشتمل ایرے X۔ اسے یوں ظاہر کیا جا سکتا ہے:\n\nدو جہتی ایرے کو ریاضی میں میٹرکس اور کاروباری ایپلیکیشنز میں ٹیبل بھی کہتے ہیں۔\n\n5.2.2 دو جہتی ایریز کی تعریف اور ابتدائی قدر\n\nیک جہتی ایرے کی طرح دو جہتی ایرے کی بھی پروگرام میں استعمال سے پہلے تعریف اور ابتدائی قدر دی جاتی ہے۔ درج ذیل حصے مثالوں کی مدد سے اس کی تعریف اور ابتدائی قدر بیان کرتے ہیں۔\n\na. دو جہتی ایرے کی تعریف\n\nدو جہتی ایریز کی ڈکلیریشن کا عمومی طریقۂ تحریر ذیل میں دیا گیا ہے۔\n\nData Type Array name [row index] [column index];\n\nاوپر کے طریقۂ تحریر میں data type کوئی بھی درست ڈیٹا ٹائپ ہے، جیسے int، float، long وغیرہ، جس کے بعد ایرے کا نام اور دو انڈیسز آتے ہیں۔ پہلا انڈیکس قطاروں کی تعداد اور دوسرا انڈیکس ایرے میں کالموں کی تعداد کے لیے ہے۔\n\nfloat قسم کا ایرے tdArray، جو 2 قطاروں اور 2 کالموں پر مشتمل ہو، درج ذیل بیان سے بیان کیا جا سکتا ہے۔\n\nfloat tdArray [2][2];\n\nb. دو جہتی ایریز کو ابتدائی قدر دینا\n\nدو جہتی ایرے کو ابتدائی قدر دینے کے لیے نیسٹڈ بریسز استعمال کرنا سب سے آسان ہے، جن میں اعداد کا ہر مجموعہ ایک قطار ظاہر کرتا ہے:\n\n// two dimensional array initialization\nint anArray[3][5] =\n{\n{ 1, 2, 3, 4, 5 }, // row 0\n{ 6, 7, 8, 9, 10 }, // row 1\n{ 11, 12, 13, 14, 15 } // row 2\n};\n\nاگر ہم دو جہتی ایرے کو 0 ابتدائی قدر دینا چاہیں تو یوں کیا جا سکتا ہے:\n\nint anArray[3][5] = { 0 };\n\n5.2.3 دو جہتی ایرے میں کسی انڈیکس پر رسائی اور لکھنا\n\nدو جہتی ایریز کے عناصر پر عمل کرنے کے لیے پہلے عناصر تک رسائی اور پھر انھیں تازہ کرنا چاہیے۔ نیا دو جہتی ایرے ڈکلیئر کرتے وقت بھی ایرے کے کسی انڈیکس پر لکھا جاتا ہے۔ دو جہتی ایرے کے کسی انڈیکس پر رسائی اور لکھنا یک جہتی ایرے جیسا ہے۔ درج ذیل حصے مثالوں کی مدد سے ان پر بات کرتے ہیں۔\n\na. دو جہتی ایریز تک رسائی\n\nدو جہتی ایریز تک رسائی کے لیے دو انڈیسز درکار ہیں، ایک قطار کے لیے اور دوسرا کالم کے لیے۔ مثلاً اگر ہمارے پاس ایرے anArray[3][5] ہو اور ہم دوسری قطار اور تیسرے کالم کے عنصر تک رسائی چاہیں تو اسے یوں لکھا جا سکتا ہے:\n\nanArray[1][2];",
+   "theoryPashto": "د درېیو قطارونو او پنځو ستنو لړۍ X. داسې ښودل کېدای شي:\n\nدوه-بعدي لړۍ په ریاضي کې ماتریکس او په سوداګریزو کاريالونو کې جدول هم بلل کېږي.\n\n۵.۲.۲ د دوه-بعدي لړیو تعریف او لومړنی ارزښت\n\nد یو-بعدي لړۍ په څېر دوه-بعدي لړۍ هم په پروګرام کې له کارولو مخکې تعریفېږي او لومړنی ارزښت ورکول کېږي. لاندې برخې د بېلګو په مرسته د هغې تعریف او لومړنی ارزښت بیانوي.\n\na. د دوه-بعدي لړۍ تعریف\n\nد دوه-بعدي لړیو د اعلان عمومي بڼه لاندې ورکړل شوې.\n\nData Type Array name [row index] [column index];\n\nپه پورته بڼه کې data type هر سم ډېټا ډول دی، لکه int، float، long او نور، چې وروسته یې د لړۍ نوم او دوه شاخصونه راځي. لومړی شاخص د قطارونو شمېر او دویم شاخص په لړۍ کې د ستنو شمېر لپاره دی.\n\nد float ډول لړۍ tdArray چې ۲ قطارونه او ۲ ستنې ولري، په لاندې بیان تعریفېدای شي.\n\nfloat tdArray [2][2];\n\nb. دوه-بعدي لړیو ته لومړنی ارزښت ورکول\n\nدوه-بعدي لړۍ ته د لومړني ارزښت ورکولو لپاره ځالې لوړ قوسونه کارول تر ټولو اسانه دي، چې د عددونو هره ټولګه یو قطار ښيي:\n\n// two dimensional array initialization\nint anArray[3][5] =\n{\n{ 1, 2, 3, 4, 5 }, // row 0\n{ 6, 7, 8, 9, 10 }, // row 1\n{ 11, 12, 13, 14, 15 } // row 2\n};\n\nکه وغواړو دوه-بعدي لړۍ ته 0 لومړنی ارزښت ورکړو، داسې کېدای شي:\n\nint anArray[3][5] = { 0 };\n\n۵.۲.۳ په دوه-بعدي لړۍ کې پر یوه شاخص لاسرسی او لیکل\n\nد دوه-بعدي لړیو پر عناصرو د عملیې لپاره، لومړی باید عناصرو ته لاسرسی وشي او بیا تازه شي. د نوې دوه-بعدي لړۍ د اعلان پر مهال هم د لړۍ پر یوه شاخص لیکل کېږي. د دوه-بعدي لړۍ پر یوه شاخص لاسرسی او لیکل د یو-بعدي لړۍ په څېر دي. لاندې برخې د بېلګو په مرسته دا څېړي.\n\na. دوه-بعدي لړیو ته لاسرسی\n\nدوه-بعدي لړیو ته لاسرسی دوو شاخصونو ته اړتیا لري، یو د قطار لپاره او بل د ستنې لپاره. د بېلګې په توګه که anArray[3][5] لړۍ ولرو او د دویم قطار او درېیمې ستنې عنصر ته لاسرسی وغواړو، داسې لیکل کېدای شي:\n\nanArray[1][2];",
+   "content": "<p>Array X consisting of three rows and five columns. It can be represented as:</p><p>Two dimensional array is also called matrix in mathematics and table in business applications.</p><p>5.2.2 Definition and initialization of two dimensional arrays</p><p>Like one-dimensional array, a two-dimensional array is defined and initialized before using it in a program. The following sections describe its definition and initialization with the help of examples.</p><p>a. Defining two dimensional array</p><p>The general syntax for the declaration of two dimensional arrays is given below.</p><p>Data Type Array name [row index] [column index];</p><p>In the above syntax, the data type is any valid data type, such as int, float, long etc., which is followed by array name and two indices. The first index is for number of rows and the second index is for number of columns in the array.</p><p>A float type array, tdArray, consisting of 2 rows and 2 columns can be defined by using the following statement.</p><p>float tdArray [2][2];</p><p>b. Initializing two dimensional arrays</p><p>To initialize a two-dimensional array, it is easiest to use nested braces, with each set of numbers representing a row:</p><p>// two dimensional array initialization\nint anArray[3][5] =\n{\n{ 1, 2, 3, 4, 5 }, // row 0\n{ 6, 7, 8, 9, 10 }, // row 1\n{ 11, 12, 13, 14, 15 } // row 2\n};</p><p>If we want to initialize a two-dimensional array to 0 then it can be done as follows:</p><p>int anArray[3][5] = { 0 };</p><p>5.2 .3 Accessing and writing at an index in a two dimensional array</p><p>To operate on the elements of two dimensional arrays, the elements should be first accessed and then updated. Writing at an index of an array is also done when a new two dimensional array is declared. Accessing and writing at an index of a two dimensional array is similar to one dimensional array. The following sections discuss them with the help of examples.</p><p>a. Accessing two dimensional arrays</p><p>Accessing two dimensional arrays need two indices, one for the row and the other for the column. For example, if we have an array anArray[3][5] and want to access an element at second row and third column. Then it can be written as:</p><p>anArray[1][2];</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-array-2d"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      19
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-array-2d",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 170\" role=\"img\" aria-label=\"Two-dimensional array X[3][5]\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"380\" height=\"170\" fill=\"#ffffff\"/><text x=\"80.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">0</text><text x=\"140.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">1</text><text x=\"200.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">2</text><text x=\"260.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">3</text><text x=\"320.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">4</text><text x=\"34\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">0</text><rect x=\"50\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"80.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">12</text><rect x=\"110\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"140.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">-123</text><rect x=\"170\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">58</text><rect x=\"230\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"260.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">95</text><rect x=\"290\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"320.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">67</text><text x=\"34\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">1</text><rect x=\"50\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"80.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">56</text><rect x=\"110\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"140.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">45</text><rect x=\"170\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">23</text><rect x=\"230\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"260.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">45</text><rect x=\"290\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"320.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">176</text><text x=\"34\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">2</text><rect x=\"50\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"80.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">78</text><rect x=\"110\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"140.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">-56</text><rect x=\"170\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">90</text><rect x=\"230\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"260.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">55</text><rect x=\"290\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"320.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">74</text><text x=\"190.0\" y=\"162\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Two-dimensional array X[3][5]</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 170\" role=\"img\" aria-label=\"دو جہتی ایرے X[3][5]\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"380\" height=\"170\" fill=\"#ffffff\"/><text x=\"80.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">0</text><text x=\"140.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">1</text><text x=\"200.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">2</text><text x=\"260.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">3</text><text x=\"320.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">4</text><text x=\"34\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">0</text><rect x=\"50\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"80.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">12</text><rect x=\"110\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"140.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">-123</text><rect x=\"170\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">58</text><rect x=\"230\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"260.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">95</text><rect x=\"290\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"320.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">67</text><text x=\"34\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">1</text><rect x=\"50\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"80.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">56</text><rect x=\"110\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"140.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">45</text><rect x=\"170\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">23</text><rect x=\"230\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"260.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">45</text><rect x=\"290\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"320.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">176</text><text x=\"34\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">2</text><rect x=\"50\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"80.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">78</text><rect x=\"110\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"140.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">-56</text><rect x=\"170\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">90</text><rect x=\"230\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"260.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">55</text><rect x=\"290\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"320.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">74</text><text x=\"190.0\" y=\"162\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">دو جہتی ایرے X[3][5]</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 170\" role=\"img\" aria-label=\"دوه-بعدي لړۍ X[3][5]\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"380\" height=\"170\" fill=\"#ffffff\"/><text x=\"80.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">0</text><text x=\"140.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">1</text><text x=\"200.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">2</text><text x=\"260.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">3</text><text x=\"320.0\" y=\"30\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">4</text><text x=\"34\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">0</text><rect x=\"50\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"80.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">12</text><rect x=\"110\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"140.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">-123</text><rect x=\"170\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">58</text><rect x=\"230\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"260.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">95</text><rect x=\"290\" y=\"40\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"320.0\" y=\"60.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">67</text><text x=\"34\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">1</text><rect x=\"50\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"80.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">56</text><rect x=\"110\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"140.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">45</text><rect x=\"170\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">23</text><rect x=\"230\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"260.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">45</text><rect x=\"290\" y=\"70\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"320.0\" y=\"90.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">176</text><text x=\"34\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">2</text><rect x=\"50\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"80.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">78</text><rect x=\"110\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"140.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">-56</text><rect x=\"170\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"200.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">90</text><rect x=\"230\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"260.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">55</text><rect x=\"290\" y=\"100\" width=\"60\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"320.0\" y=\"120.0\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">74</text><text x=\"190.0\" y=\"162\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">دوه-بعدي لړۍ X[3][5]</text></svg>",
+     "sourceWidthRatio": 2.235294117647059
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 85,
+     "printedPages": [
+      158,
+      159
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (7)",
+   "sourcePageLabel": "PDF 85 · p. 158–159",
+   "sourceNote": "The uncaptioned 3×5 array X diagram is reproduced as a coded diagram with a descriptive label; values as printed.",
+   "unit": 5
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf085",
+   "unit": 5,
+   "printedPage": 159,
+   "description": "Heading printed “5.2 .3”; “Accessing two dimensional arrays need two indices”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

@@ -1,0 +1,186 @@
+{
+ "pdfPage": 106,
+ "sections": [
+  {
+   "id": "cs12-u6-text-13",
+   "title": "Unit 6 text (13)",
+   "headingUrdu": "یونٹ 6 — متن (13)",
+   "headingPashto": "۶ څپرکی — متن (13)",
+   "paras": [
+    {
+     "text": "Consider another example having a function named duplicate that receive arguments by reference:",
+     "urdu": "ایک اور مثال پر غور کریں جس میں duplicate نامی فنکشن ہے جو حوالے کے ذریعے آرگیومنٹس لیتا ہے:",
+     "pashto": "بلې بېلګې ته پام وکړئ چې duplicate په نوم فنکشن لري چې د حوالې له لارې دلیلونه اخلي:"
+    },
+    {
+     "text": "#include <iostream.h>\n#include<conio.h>\nvoid duplicate (int& a, int& b, int& c)\n{\na=a*2;\nb=b*2;\nc=c*2;\n}\nint main()\n{\nint x=1, y=3, z=7;\ncout<<\"values of x, y and z in main()before calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z<<endl;\nduplicate (x, y, z);\ncout<<\"values of x, y and z in main() after calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z;\ngetch() ;\nreturn 0;}",
+     "urdu": "#include <iostream.h>\n#include<conio.h>\nvoid duplicate (int& a, int& b, int& c)\n{\na=a*2;\nb=b*2;\nc=c*2;\n}\nint main()\n{\nint x=1, y=3, z=7;\ncout<<\"values of x, y and z in main()before calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z<<endl;\nduplicate (x, y, z);\ncout<<\"values of x, y and z in main() after calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z;\ngetch() ;\nreturn 0;}",
+     "pashto": "#include <iostream.h>\n#include<conio.h>\nvoid duplicate (int& a, int& b, int& c)\n{\na=a*2;\nb=b*2;\nc=c*2;\n}\nint main()\n{\nint x=1, y=3, z=7;\ncout<<\"values of x, y and z in main()before calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z<<endl;\nduplicate (x, y, z);\ncout<<\"values of x, y and z in main() after calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z;\ngetch() ;\nreturn 0;}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "values of x, y and z in main()before calling function\nx=1,y=3,z=7\nvalues of x, y and z in main() after calling function\nx=2, y=6, z=14",
+     "urdu": "values of x, y and z in main()before calling function\nx=1,y=3,z=7\nvalues of x, y and z in main() after calling function\nx=2, y=6, z=14",
+     "pashto": "values of x, y and z in main()before calling function\nx=1,y=3,z=7\nvalues of x, y and z in main() after calling function\nx=2, y=6, z=14",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Sometimes we need a function to return multiple values. However, functions can only return one value. One way to return multiple values is the use of the method of passing arguments by reference.",
+     "urdu": "بعض اوقات ہمیں فنکشن سے متعدد قدریں واپس لینے کی ضرورت ہوتی ہے۔ تاہم فنکشنز صرف ایک قدر واپس کر سکتے ہیں۔ متعدد قدریں واپس کرنے کا ایک طریقہ حوالے کے ذریعے آرگیومنٹس پاس کرنے کا استعمال ہے۔",
+     "pashto": "کله کله موږ اړتیا لرو چې یو فنکشن څو ارزښتونه بېرته ورکړي. خو فنکشنونه یوازې یو ارزښت بېرته ورکولی شي. د څو ارزښتونو د بېرته ورکولو یوه لاره د حوالې له لارې د دلیلونو د لېږدولو کارونه ده."
+    },
+    {
+     "text": "Passing arguments by this method allow programmers to change the value of the arguments, which is sometimes useful. Similarly, it is a fast approach to passing and processing values in a function and also has the facility of returning multiple values from a function.",
+     "urdu": "اس طریقے سے آرگیومنٹس پاس کرنا پروگرامرز کو آرگیومنٹس کی قدر تبدیل کرنے کی اجازت دیتا ہے، جو بعض اوقات مفید ہوتا ہے۔ اسی طرح یہ فنکشن میں قدریں پاس کرنے اور ان پر عمل کرنے کا تیز طریقہ ہے اور فنکشن سے متعدد قدریں واپس کرنے کی سہولت بھی رکھتا ہے۔",
+     "pashto": "په دې لاره د دلیلونو لېږدول پروګرام جوړوونکو ته اجازه ورکوي چې د دلیلونو ارزښت بدل کړي، چې کله کله ګټور وي. همداراز په فنکشن کې د ارزښتونو د لېږدولو او پروسس کولو چټکه لاره ده او له فنکشن د څو ارزښتونو د بېرته ورکولو اسانتیا هم لري."
+    },
+    {
+     "text": "6.2.2 Default arguments",
+     "urdu": "6.2.2 ڈیفالٹ آرگیومنٹس",
+     "pashto": "۶.۲.۲ ډیفالټ دلیلونه"
+    },
+    {
+     "text": "When declaring a function we can specify a default value for each of the last parameters. This value will be used if the corresponding argument is left blank when calling to the function. To do this, we simply have to use the assignment operator and a value for the arguments in the function declaration. If a value for that parameter is not passed when the function is called, the default value is used, but if a value is specified this default value is ignored and the passed value is used instead.",
+     "urdu": "فنکشن ڈکلیئر کرتے وقت ہم آخری پیرامیٹرز میں سے ہر ایک کے لیے ڈیفالٹ قدر مقرر کر سکتے ہیں۔ یہ قدر اس وقت استعمال ہوگی جب فنکشن کال کرتے ہوئے متعلقہ آرگیومنٹ خالی چھوڑ دیا جائے۔ اس کے لیے ہمیں بس فنکشن ڈکلیریشن میں آرگیومنٹس کے لیے اسائنمنٹ آپریٹر اور ایک قدر استعمال کرنی ہوتی ہے۔ اگر فنکشن کال کرتے وقت اس پیرامیٹر کی قدر پاس نہ کی جائے تو ڈیفالٹ قدر استعمال ہوتی ہے، لیکن اگر قدر دی جائے تو یہ ڈیفالٹ قدر نظر انداز ہو جاتی ہے اور پاس کی گئی قدر استعمال ہوتی ہے۔",
+     "pashto": "د فنکشن د اعلان پر مهال کولی شو د وروستیو پاراميټرونو هر یوه ته ډیفالټ ارزښت وټاکو. دا ارزښت به هغه وخت وکارول شي چې د فنکشن د غوښتلو پر مهال اړوند دلیل تش پرېښودل شي. د دې لپاره یوازې باید د فنکشن په اعلان کې د دلیلونو لپاره د ګمارنې چلونکی او یو ارزښت وکاروو. که د فنکشن د غوښتلو پر مهال د هغه پاراميټر ارزښت ونه لېږدول شي، ډیفالټ ارزښت کارېږي، خو که ارزښت وټاکل شي دا ډیفالټ ارزښت له پامه غورځول کېږي او لېږدول شوی ارزښت کارېږي."
+    },
+    {
+     "text": "To demonstrate the concept of default arguments, consider the following general syntax.",
+     "urdu": "ڈیفالٹ آرگیومنٹس کا تصور واضح کرنے کے لیے درج ذیل عمومی طریقۂ تحریر پر غور کریں۔",
+     "pashto": "د ډیفالټ دلیلونو د مفهوم د ښودلو لپاره لاندې عمومي بڼې ته پام وکړئ."
+    },
+    {
+     "text": "Type function_name (parameter1=value, .....);",
+     "urdu": "Type function_name (parameter1=value, .....);",
+     "pashto": "Type function_name (parameter1=value, .....);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here in this line of code, the type is any valid data type, function_name is the name of the function and parameter1 is the parameter having a default value named value assigned to it in the prototype. In the example given below, parameter b has a default value 2 assigned to it in the declaration. Now, if, one value is passed in the function call then the default value of b will be taken as the value of parameter ‘b’.",
+     "urdu": "کوڈ کی اس لائن میں type کوئی بھی درست ڈیٹا ٹائپ ہے، function_name فنکشن کا نام ہے اور parameter1 وہ پیرامیٹر ہے جسے پروٹوٹائپ میں value نامی ڈیفالٹ قدر دی گئی ہے۔ ذیل کی مثال میں پیرامیٹر b کو ڈکلیریشن میں ڈیفالٹ قدر 2 دی گئی ہے۔ اب اگر فنکشن کال میں ایک قدر پاس کی جائے تو b کی ڈیفالٹ قدر پیرامیٹر ‘b’ کی قدر کے طور پر لی جائے گی۔",
+     "pashto": "د کوډ په دې کرښه کې type هر سم ډېټا ډول دی، function_name د فنکشن نوم دی او parameter1 هغه پاراميټر دی چې په نمونه کې د value په نوم ډیفالټ ارزښت ورکړل شوی. په لاندې بېلګه کې b پاراميټر ته په اعلان کې ډیفالټ ارزښت 2 ورکړل شوی. اوس که د فنکشن په غوښتنه کې یو ارزښت ولېږدول شي، د b ډیفالټ ارزښت به د ‘b’ پاراميټر د ارزښت په توګه واخیستل شي."
+    },
+    {
+     "text": "int divide (int a, int b=2)",
+     "urdu": "int divide (int a, int b=2)",
+     "pashto": "int divide (int a, int b=2)",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Consider another example having a function named duplicate that receive arguments by reference:\n\n#include <iostream.h>\n#include<conio.h>\nvoid duplicate (int& a, int& b, int& c)\n{\na=a*2;\nb=b*2;\nc=c*2;\n}\nint main()\n{\nint x=1, y=3, z=7;\ncout<<\"values of x, y and z in main()before calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z<<endl;\nduplicate (x, y, z);\ncout<<\"values of x, y and z in main() after calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z;\ngetch() ;\nreturn 0;}\n\nOutput of the program\n\nvalues of x, y and z in main()before calling function\nx=1,y=3,z=7\nvalues of x, y and z in main() after calling function\nx=2, y=6, z=14\n\nSometimes we need a function to return multiple values. However, functions can only return one value. One way to return multiple values is the use of the method of passing arguments by reference.\n\nPassing arguments by this method allow programmers to change the value of the arguments, which is sometimes useful. Similarly, it is a fast approach to passing and processing values in a function and also has the facility of returning multiple values from a function.\n\n6.2.2 Default arguments\n\nWhen declaring a function we can specify a default value for each of the last parameters. This value will be used if the corresponding argument is left blank when calling to the function. To do this, we simply have to use the assignment operator and a value for the arguments in the function declaration. If a value for that parameter is not passed when the function is called, the default value is used, but if a value is specified this default value is ignored and the passed value is used instead.\n\nTo demonstrate the concept of default arguments, consider the following general syntax.\n\nType function_name (parameter1=value, .....);\n\nHere in this line of code, the type is any valid data type, function_name is the name of the function and parameter1 is the parameter having a default value named value assigned to it in the prototype. In the example given below, parameter b has a default value 2 assigned to it in the declaration. Now, if, one value is passed in the function call then the default value of b will be taken as the value of parameter ‘b’.\n\nint divide (int a, int b=2)",
+   "urdu": "ایک اور مثال پر غور کریں جس میں duplicate نامی فنکشن ہے جو حوالے کے ذریعے آرگیومنٹس لیتا ہے:\n\n#include <iostream.h>\n#include<conio.h>\nvoid duplicate (int& a, int& b, int& c)\n{\na=a*2;\nb=b*2;\nc=c*2;\n}\nint main()\n{\nint x=1, y=3, z=7;\ncout<<\"values of x, y and z in main()before calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z<<endl;\nduplicate (x, y, z);\ncout<<\"values of x, y and z in main() after calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z;\ngetch() ;\nreturn 0;}\n\nپروگرام کا آؤٹ پٹ\n\nvalues of x, y and z in main()before calling function\nx=1,y=3,z=7\nvalues of x, y and z in main() after calling function\nx=2, y=6, z=14\n\nبعض اوقات ہمیں فنکشن سے متعدد قدریں واپس لینے کی ضرورت ہوتی ہے۔ تاہم فنکشنز صرف ایک قدر واپس کر سکتے ہیں۔ متعدد قدریں واپس کرنے کا ایک طریقہ حوالے کے ذریعے آرگیومنٹس پاس کرنے کا استعمال ہے۔\n\nاس طریقے سے آرگیومنٹس پاس کرنا پروگرامرز کو آرگیومنٹس کی قدر تبدیل کرنے کی اجازت دیتا ہے، جو بعض اوقات مفید ہوتا ہے۔ اسی طرح یہ فنکشن میں قدریں پاس کرنے اور ان پر عمل کرنے کا تیز طریقہ ہے اور فنکشن سے متعدد قدریں واپس کرنے کی سہولت بھی رکھتا ہے۔\n\n6.2.2 ڈیفالٹ آرگیومنٹس\n\nفنکشن ڈکلیئر کرتے وقت ہم آخری پیرامیٹرز میں سے ہر ایک کے لیے ڈیفالٹ قدر مقرر کر سکتے ہیں۔ یہ قدر اس وقت استعمال ہوگی جب فنکشن کال کرتے ہوئے متعلقہ آرگیومنٹ خالی چھوڑ دیا جائے۔ اس کے لیے ہمیں بس فنکشن ڈکلیریشن میں آرگیومنٹس کے لیے اسائنمنٹ آپریٹر اور ایک قدر استعمال کرنی ہوتی ہے۔ اگر فنکشن کال کرتے وقت اس پیرامیٹر کی قدر پاس نہ کی جائے تو ڈیفالٹ قدر استعمال ہوتی ہے، لیکن اگر قدر دی جائے تو یہ ڈیفالٹ قدر نظر انداز ہو جاتی ہے اور پاس کی گئی قدر استعمال ہوتی ہے۔\n\nڈیفالٹ آرگیومنٹس کا تصور واضح کرنے کے لیے درج ذیل عمومی طریقۂ تحریر پر غور کریں۔\n\nType function_name (parameter1=value, .....);\n\nکوڈ کی اس لائن میں type کوئی بھی درست ڈیٹا ٹائپ ہے، function_name فنکشن کا نام ہے اور parameter1 وہ پیرامیٹر ہے جسے پروٹوٹائپ میں value نامی ڈیفالٹ قدر دی گئی ہے۔ ذیل کی مثال میں پیرامیٹر b کو ڈکلیریشن میں ڈیفالٹ قدر 2 دی گئی ہے۔ اب اگر فنکشن کال میں ایک قدر پاس کی جائے تو b کی ڈیفالٹ قدر پیرامیٹر ‘b’ کی قدر کے طور پر لی جائے گی۔\n\nint divide (int a, int b=2)",
+   "pashto": "بلې بېلګې ته پام وکړئ چې duplicate په نوم فنکشن لري چې د حوالې له لارې دلیلونه اخلي:\n\n#include <iostream.h>\n#include<conio.h>\nvoid duplicate (int& a, int& b, int& c)\n{\na=a*2;\nb=b*2;\nc=c*2;\n}\nint main()\n{\nint x=1, y=3, z=7;\ncout<<\"values of x, y and z in main()before calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z<<endl;\nduplicate (x, y, z);\ncout<<\"values of x, y and z in main() after calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z;\ngetch() ;\nreturn 0;}\n\nد پروګرام وتنه\n\nvalues of x, y and z in main()before calling function\nx=1,y=3,z=7\nvalues of x, y and z in main() after calling function\nx=2, y=6, z=14\n\nکله کله موږ اړتیا لرو چې یو فنکشن څو ارزښتونه بېرته ورکړي. خو فنکشنونه یوازې یو ارزښت بېرته ورکولی شي. د څو ارزښتونو د بېرته ورکولو یوه لاره د حوالې له لارې د دلیلونو د لېږدولو کارونه ده.\n\nپه دې لاره د دلیلونو لېږدول پروګرام جوړوونکو ته اجازه ورکوي چې د دلیلونو ارزښت بدل کړي، چې کله کله ګټور وي. همداراز په فنکشن کې د ارزښتونو د لېږدولو او پروسس کولو چټکه لاره ده او له فنکشن د څو ارزښتونو د بېرته ورکولو اسانتیا هم لري.\n\n۶.۲.۲ ډیفالټ دلیلونه\n\nد فنکشن د اعلان پر مهال کولی شو د وروستیو پاراميټرونو هر یوه ته ډیفالټ ارزښت وټاکو. دا ارزښت به هغه وخت وکارول شي چې د فنکشن د غوښتلو پر مهال اړوند دلیل تش پرېښودل شي. د دې لپاره یوازې باید د فنکشن په اعلان کې د دلیلونو لپاره د ګمارنې چلونکی او یو ارزښت وکاروو. که د فنکشن د غوښتلو پر مهال د هغه پاراميټر ارزښت ونه لېږدول شي، ډیفالټ ارزښت کارېږي، خو که ارزښت وټاکل شي دا ډیفالټ ارزښت له پامه غورځول کېږي او لېږدول شوی ارزښت کارېږي.\n\nد ډیفالټ دلیلونو د مفهوم د ښودلو لپاره لاندې عمومي بڼې ته پام وکړئ.\n\nType function_name (parameter1=value, .....);\n\nد کوډ په دې کرښه کې type هر سم ډېټا ډول دی، function_name د فنکشن نوم دی او parameter1 هغه پاراميټر دی چې په نمونه کې د value په نوم ډیفالټ ارزښت ورکړل شوی. په لاندې بېلګه کې b پاراميټر ته په اعلان کې ډیفالټ ارزښت 2 ورکړل شوی. اوس که د فنکشن په غوښتنه کې یو ارزښت ولېږدول شي، د b ډیفالټ ارزښت به د ‘b’ پاراميټر د ارزښت په توګه واخیستل شي.\n\nint divide (int a, int b=2)",
+   "theoryUrdu": "ایک اور مثال پر غور کریں جس میں duplicate نامی فنکشن ہے جو حوالے کے ذریعے آرگیومنٹس لیتا ہے:\n\n#include <iostream.h>\n#include<conio.h>\nvoid duplicate (int& a, int& b, int& c)\n{\na=a*2;\nb=b*2;\nc=c*2;\n}\nint main()\n{\nint x=1, y=3, z=7;\ncout<<\"values of x, y and z in main()before calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z<<endl;\nduplicate (x, y, z);\ncout<<\"values of x, y and z in main() after calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z;\ngetch() ;\nreturn 0;}\n\nپروگرام کا آؤٹ پٹ\n\nvalues of x, y and z in main()before calling function\nx=1,y=3,z=7\nvalues of x, y and z in main() after calling function\nx=2, y=6, z=14\n\nبعض اوقات ہمیں فنکشن سے متعدد قدریں واپس لینے کی ضرورت ہوتی ہے۔ تاہم فنکشنز صرف ایک قدر واپس کر سکتے ہیں۔ متعدد قدریں واپس کرنے کا ایک طریقہ حوالے کے ذریعے آرگیومنٹس پاس کرنے کا استعمال ہے۔\n\nاس طریقے سے آرگیومنٹس پاس کرنا پروگرامرز کو آرگیومنٹس کی قدر تبدیل کرنے کی اجازت دیتا ہے، جو بعض اوقات مفید ہوتا ہے۔ اسی طرح یہ فنکشن میں قدریں پاس کرنے اور ان پر عمل کرنے کا تیز طریقہ ہے اور فنکشن سے متعدد قدریں واپس کرنے کی سہولت بھی رکھتا ہے۔\n\n6.2.2 ڈیفالٹ آرگیومنٹس\n\nفنکشن ڈکلیئر کرتے وقت ہم آخری پیرامیٹرز میں سے ہر ایک کے لیے ڈیفالٹ قدر مقرر کر سکتے ہیں۔ یہ قدر اس وقت استعمال ہوگی جب فنکشن کال کرتے ہوئے متعلقہ آرگیومنٹ خالی چھوڑ دیا جائے۔ اس کے لیے ہمیں بس فنکشن ڈکلیریشن میں آرگیومنٹس کے لیے اسائنمنٹ آپریٹر اور ایک قدر استعمال کرنی ہوتی ہے۔ اگر فنکشن کال کرتے وقت اس پیرامیٹر کی قدر پاس نہ کی جائے تو ڈیفالٹ قدر استعمال ہوتی ہے، لیکن اگر قدر دی جائے تو یہ ڈیفالٹ قدر نظر انداز ہو جاتی ہے اور پاس کی گئی قدر استعمال ہوتی ہے۔\n\nڈیفالٹ آرگیومنٹس کا تصور واضح کرنے کے لیے درج ذیل عمومی طریقۂ تحریر پر غور کریں۔\n\nType function_name (parameter1=value, .....);\n\nکوڈ کی اس لائن میں type کوئی بھی درست ڈیٹا ٹائپ ہے، function_name فنکشن کا نام ہے اور parameter1 وہ پیرامیٹر ہے جسے پروٹوٹائپ میں value نامی ڈیفالٹ قدر دی گئی ہے۔ ذیل کی مثال میں پیرامیٹر b کو ڈکلیریشن میں ڈیفالٹ قدر 2 دی گئی ہے۔ اب اگر فنکشن کال میں ایک قدر پاس کی جائے تو b کی ڈیفالٹ قدر پیرامیٹر ‘b’ کی قدر کے طور پر لی جائے گی۔\n\nint divide (int a, int b=2)",
+   "theoryPashto": "بلې بېلګې ته پام وکړئ چې duplicate په نوم فنکشن لري چې د حوالې له لارې دلیلونه اخلي:\n\n#include <iostream.h>\n#include<conio.h>\nvoid duplicate (int& a, int& b, int& c)\n{\na=a*2;\nb=b*2;\nc=c*2;\n}\nint main()\n{\nint x=1, y=3, z=7;\ncout<<\"values of x, y and z in main()before calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z<<endl;\nduplicate (x, y, z);\ncout<<\"values of x, y and z in main() after calling function\\n\";\ncout << \"x=\" << x << \", y=\" << y << \", z=\" << z;\ngetch() ;\nreturn 0;}\n\nد پروګرام وتنه\n\nvalues of x, y and z in main()before calling function\nx=1,y=3,z=7\nvalues of x, y and z in main() after calling function\nx=2, y=6, z=14\n\nکله کله موږ اړتیا لرو چې یو فنکشن څو ارزښتونه بېرته ورکړي. خو فنکشنونه یوازې یو ارزښت بېرته ورکولی شي. د څو ارزښتونو د بېرته ورکولو یوه لاره د حوالې له لارې د دلیلونو د لېږدولو کارونه ده.\n\nپه دې لاره د دلیلونو لېږدول پروګرام جوړوونکو ته اجازه ورکوي چې د دلیلونو ارزښت بدل کړي، چې کله کله ګټور وي. همداراز په فنکشن کې د ارزښتونو د لېږدولو او پروسس کولو چټکه لاره ده او له فنکشن د څو ارزښتونو د بېرته ورکولو اسانتیا هم لري.\n\n۶.۲.۲ ډیفالټ دلیلونه\n\nد فنکشن د اعلان پر مهال کولی شو د وروستیو پاراميټرونو هر یوه ته ډیفالټ ارزښت وټاکو. دا ارزښت به هغه وخت وکارول شي چې د فنکشن د غوښتلو پر مهال اړوند دلیل تش پرېښودل شي. د دې لپاره یوازې باید د فنکشن په اعلان کې د دلیلونو لپاره د ګمارنې چلونکی او یو ارزښت وکاروو. که د فنکشن د غوښتلو پر مهال د هغه پاراميټر ارزښت ونه لېږدول شي، ډیفالټ ارزښت کارېږي، خو که ارزښت وټاکل شي دا ډیفالټ ارزښت له پامه غورځول کېږي او لېږدول شوی ارزښت کارېږي.\n\nد ډیفالټ دلیلونو د مفهوم د ښودلو لپاره لاندې عمومي بڼې ته پام وکړئ.\n\nType function_name (parameter1=value, .....);\n\nد کوډ په دې کرښه کې type هر سم ډېټا ډول دی، function_name د فنکشن نوم دی او parameter1 هغه پاراميټر دی چې په نمونه کې د value په نوم ډیفالټ ارزښت ورکړل شوی. په لاندې بېلګه کې b پاراميټر ته په اعلان کې ډیفالټ ارزښت 2 ورکړل شوی. اوس که د فنکشن په غوښتنه کې یو ارزښت ولېږدول شي، د b ډیفالټ ارزښت به د ‘b’ پاراميټر د ارزښت په توګه واخیستل شي.\n\nint divide (int a, int b=2)",
+   "content": "<p>Consider another example having a function named duplicate that receive arguments by reference:</p><p>#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nvoid duplicate (int&amp; a, int&amp; b, int&amp; c)\n{\na=a*2;\nb=b*2;\nc=c*2;\n}\nint main()\n{\nint x=1, y=3, z=7;\ncout&lt;&lt;&quot;values of x, y and z in main()before calling function\\n&quot;;\ncout &lt;&lt; &quot;x=&quot; &lt;&lt; x &lt;&lt; &quot;, y=&quot; &lt;&lt; y &lt;&lt; &quot;, z=&quot; &lt;&lt; z&lt;&lt;endl;\nduplicate (x, y, z);\ncout&lt;&lt;&quot;values of x, y and z in main() after calling function\\n&quot;;\ncout &lt;&lt; &quot;x=&quot; &lt;&lt; x &lt;&lt; &quot;, y=&quot; &lt;&lt; y &lt;&lt; &quot;, z=&quot; &lt;&lt; z;\ngetch() ;\nreturn 0;}</p><p>Output of the program</p><p>values of x, y and z in main()before calling function\nx=1,y=3,z=7\nvalues of x, y and z in main() after calling function\nx=2, y=6, z=14</p><p>Sometimes we need a function to return multiple values. However, functions can only return one value. One way to return multiple values is the use of the method of passing arguments by reference.</p><p>Passing arguments by this method allow programmers to change the value of the arguments, which is sometimes useful. Similarly, it is a fast approach to passing and processing values in a function and also has the facility of returning multiple values from a function.</p><p>6.2.2 Default arguments</p><p>When declaring a function we can specify a default value for each of the last parameters. This value will be used if the corresponding argument is left blank when calling to the function. To do this, we simply have to use the assignment operator and a value for the arguments in the function declaration. If a value for that parameter is not passed when the function is called, the default value is used, but if a value is specified this default value is ignored and the passed value is used instead.</p><p>To demonstrate the concept of default arguments, consider the following general syntax.</p><p>Type function_name (parameter1=value, .....);</p><p>Here in this line of code, the type is any valid data type, function_name is the name of the function and parameter1 is the parameter having a default value named value assigned to it in the prototype. In the example given below, parameter b has a default value 2 assigned to it in the declaration. Now, if, one value is passed in the function call then the default value of b will be taken as the value of parameter ‘b’.</p><p>int divide (int a, int b=2)</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 106,
+     "printedPages": [
+      200,
+      201
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (13)",
+   "sourcePageLabel": "PDF 106 · p. 200–201",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf106",
+   "unit": 6,
+   "printedPage": 200,
+   "description": "p.200 “a function named duplicate that receive arguments”; the first output line prints “x=1,y=3,z=7” without the spaces the program would print. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

@@ -1,0 +1,533 @@
+{
+ "pdfPage": 35,
+ "sections": [
+  {
+   "id": "cs12-u3-text-1",
+   "title": "Unit 3 text (1)",
+   "headingUrdu": "یونٹ 3 — متن (۱)",
+   "headingPashto": "۳ څپرکی — متن (۱)",
+   "paras": [
+    {
+     "text": "3.1 INTRODUCTION",
+     "urdu": "3.1 تعارف",
+     "pashto": "۳.۱ پېژندنه"
+    },
+    {
+     "text": "This Unit is about the introduction to Object Oriented Programming Language, C++, and covers its basics in detail. The Unit is focused on basic C++ program structure, variables used in C++, input/output statements and the use of operators in the language.",
+     "urdu": "یہ یونٹ آبجیکٹ اورینٹڈ پروگرامنگ زبان C++ کے تعارف کے بارے میں ہے اور اس کی بنیادی باتوں کا تفصیل سے احاطہ کرتا ہے۔ یونٹ بنیادی C++ پروگرام کی ساخت، C++ میں استعمال ہونے والے ویری ایبلز، ان پٹ/آؤٹ پٹ بیانات اور زبان میں آپریٹرز کے استعمال پر مرکوز ہے۔",
+     "pashto": "دا څپرکی د شیانو ته متوجه پروګرامي ژبې C++ د پېژندنې په اړه دی او بنسټونه یې په تفصیل سره رانغاړي. څپرکی د C++ پر بنسټیز پروګرامي جوړښت، په C++ کې کارېدونکو متغیرونو، د ننوتو/وتو بیانونو او په ژبه کې د چلونکو پر کارونې تمرکز لري."
+    },
+    {
+     "text": "Bjarne Stroustrup at Bell Labs initially developed C++ during the early 1980’s. It was designed to support the features of C such as efficiency and low-level support for system level coding. Added to this were features such as classes with inheritance and virtual functions, derived from the Simula language, and operator overloading, derived from Algol. C++ is best described as a superset of C, with full support for object-oriented programming. This language is in wide spread use. The first commercial release of the C++ language was in October of 1985.",
+     "urdu": "بیل لیبز میں بیارنے اسٹراؤسٹرپ نے 1980ء کی دہائی کے اوائل میں ابتدائی طور پر C++ تیار کی۔ اسے C کی خصوصیات جیسے کارکردگی اور سسٹم کی سطح کی کوڈنگ کے لیے نچلی سطح کی معاونت کے لیے بنایا گیا تھا۔ اس میں Simula زبان سے ماخوذ وراثت اور ورچوئل فنکشنز والی کلاسز اور Algol سے ماخوذ آپریٹر اوورلوڈنگ جیسی خصوصیات شامل کی گئیں۔ C++ کو بہترین طور پر C کا ایک وسیع تر مجموعہ (superset) کہا جا سکتا ہے جو آبجیکٹ اورینٹڈ پروگرامنگ کی مکمل معاونت کرتا ہے۔ یہ زبان بڑے پیمانے پر استعمال ہوتی ہے۔ C++ زبان کا پہلا تجارتی اجراء اکتوبر 1985ء میں ہوا۔",
+     "pashto": "په بیل لابز کې بیارنې سټراوسټروپ په لومړي ځل د ۱۹۸۰مو کلونو په پیل کې C++ جوړه کړه. دا د C د ځانګړنو لکه اغېزمنتیا او د سیسټم د کچې کوډ لیکنې لپاره د ټیټې کچې ملاتړ لپاره ډیزاین شوې وه. ورسره داسې ځانګړنې ورزیاتې شوې لکه د میراث او مجازي فنکشنونو لرونکي ټولګي چې له Simula ژبې اخیستل شوي، او د چلونکو ډېرول (operator overloading) چې له Algol اخیستل شوی. C++ په ښه توګه د C پراخه ټولګه (superset) بلل کېدای شي چې د شیانو ته متوجه پروګرام‌سازۍ بشپړ ملاتړ کوي. دا ژبه په پراخه کچه کارېږي. د C++ ژبې لومړنی سوداګریز خپرېدل د ۱۹۸۵ز په اکتوبر کې وو."
+    },
+    {
+     "text": "3.1.1 Computer program",
+     "urdu": "3.1.1 کمپیوٹر پروگرام",
+     "pashto": "۳.۱.۱ کمپیوټري پروګرام"
+    },
+    {
+     "text": "A computer program is a set of instructions written in computer languages to perform a specified task for a computer. A computer program tells the computer that what to do and in which order to do. Different types of programming languages are used to develop programs. Some commonly used programming languages are C++, JAVA, SQL, HTML, etc.",
+     "urdu": "کمپیوٹر پروگرام کمپیوٹر زبانوں میں لکھی گئی ہدایات کا ایک مجموعہ ہے جو کمپیوٹر کے لیے ایک مخصوص کام انجام دیتا ہے۔ کمپیوٹر پروگرام کمپیوٹر کو بتاتا ہے کہ کیا کرنا ہے اور کس ترتیب سے کرنا ہے۔ پروگرام تیار کرنے کے لیے مختلف اقسام کی پروگرامنگ زبانیں استعمال ہوتی ہیں۔ کچھ عام استعمال ہونے والی پروگرامنگ زبانیں C++، JAVA، SQL، HTML وغیرہ ہیں۔",
+     "pashto": "کمپیوټري پروګرام په کمپیوټري ژبو لیکل شویو لارښوونو یوه ټولګه ده چې د کمپیوټر لپاره یوه ټاکلې دنده ترسره کوي. کمپیوټري پروګرام کمپیوټر ته وايي چې څه وکړي او په کوم ترتیب یې وکړي. د پروګرامونو د جوړولو لپاره بېلابېل ډوله پروګرامي ژبې کارول کېږي. ځینې عام کارېدونکې پروګرامي ژبې C++، JAVA، SQL، HTML او نورې دي."
+    },
+    {
+     "text": "3.1.2 Header files and Reserved words",
+     "urdu": "3.1.2 ہیڈر فائلیں اور مخصوص الفاظ",
+     "pashto": "۳.۱.۲ سرلیک فایلونه او ځانګړې کلمې"
+    },
+    {
+     "text": "Header files and reserved words are the two important components of almost every C++ programs.",
+     "urdu": "ہیڈر فائلیں اور مخصوص الفاظ تقریباً ہر C++ پروگرام کے دو اہم اجزاء ہیں۔",
+     "pashto": "سرلیک فایلونه او ځانګړې کلمې د نږدې هر C++ پروګرام دوه مهمې برخې دي."
+    },
+    {
+     "text": "a. Header files",
+     "urdu": "a. ہیڈر فائلیں",
+     "pashto": "a. سرلیک فایلونه"
+    },
+    {
+     "text": "Header files also known as include files, are standard library files that have an extension of (.h) and which are used to hold declarations for other files.",
+     "urdu": "ہیڈر فائلیں، جنھیں انکلوڈ فائلیں بھی کہا جاتا ہے، معیاری لائبریری فائلیں ہیں جن کی ایکسٹینشن (.h) ہوتی ہے اور جو دوسری فائلوں کے اعلانات رکھنے کے لیے استعمال ہوتی ہیں۔",
+     "pashto": "سرلیک فایلونه چې شاملې فایلونه (include files) هم بلل کېږي، معیاري کتابتون فایلونه دي چې (.h) پسوند لري او د نورو فایلونو د اعلانونو ساتلو لپاره کارول کېږي."
+    },
+    {
+     "text": "Consider the following program:",
+     "urdu": "درج ذیل پروگرام پر غور کریں:",
+     "pashto": "لاندې پروګرام ته پام وکړئ:"
+    },
+    {
+     "text": "// header file example\n#include <iostream.h>\nint main()\n{\ncout << \"Hello, world!\" << endl;\nreturn 0;\n}",
+     "urdu": "// header file example\n#include <iostream.h>\nint main()\n{\ncout << \"Hello, world!\" << endl;\nreturn 0;\n}",
+     "pashto": "// header file example\n#include <iostream.h>\nint main()\n{\ncout << \"Hello, world!\" << endl;\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Hello, world!",
+     "urdu": "Hello, world!",
+     "pashto": "Hello, world!",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This program prints the string “Hello, world!” to the screen using cout. However, this program never defines cout, so how does the compiler know about the object cout? The answer for this is that cout has been declared in a header file called “iostream”. When the line #include <iostream.h> is used in the program, the compiler locates and read all the declarations from a header file named “iostream”.",
+     "urdu": "یہ پروگرام cout کے ذریعے اسٹرنگ ’’Hello, world!‘‘ اسکرین پر پرنٹ کرتا ہے۔ تاہم یہ پروگرام کبھی cout کی تعریف نہیں کرتا، تو کمپائلر کو آبجیکٹ cout کا کیسے پتہ چلتا ہے؟ اس کا جواب یہ ہے کہ cout کا اعلان ’’iostream‘‘ نامی ہیڈر فائل میں کیا گیا ہے۔ جب پروگرام میں #include <iostream.h> لائن استعمال ہوتی ہے تو کمپائلر ’’iostream‘‘ نامی ہیڈر فائل کو تلاش کر کے اس کے تمام اعلانات پڑھتا ہے۔",
+     "pashto": "دا پروګرام د cout په مرسته \"Hello, world!\" تار پر پرده چاپوي. خو دا پروګرام هېڅکله cout نه تعریفوي، نو کمپایلر د cout شي څخه څنګه خبرېږي؟ ځواب یې دا دی چې cout په \"iostream\" نومي سرلیک فایل کې اعلان شوی. کله چې په پروګرام کې د #include <iostream.h> کرښه وکارول شي، کمپایلر \"iostream\" نومی سرلیک فایل پیدا کوي او ټول اعلانونه یې لولي."
+    },
+    {
+     "text": "b. Reserved words",
+     "urdu": "b. مخصوص الفاظ",
+     "pashto": "b. ځانګړې کلمې"
+    },
+    {
+     "text": "Reserved words or keywords are those words which have their special meaning within the C++ language and are reserved for some specific purpose. C++ reserved words cannot be used for any other purpose in a C++ program and even cannot be used as variables. Here is a list of C++ keywords shown in Table 3.1.",
+     "urdu": "مخصوص الفاظ یا کی ورڈز وہ الفاظ ہیں جن کا C++ زبان میں خاص مطلب ہوتا ہے اور جو کسی مخصوص مقصد کے لیے مختص ہوتے ہیں۔ C++ کے مخصوص الفاظ کسی C++ پروگرام میں کسی اور مقصد کے لیے استعمال نہیں ہو سکتے، حتیٰ کہ ویری ایبلز کے طور پر بھی نہیں۔ جدول 3.1 میں C++ کی ورڈز کی فہرست دی گئی ہے۔",
+     "pashto": "ځانګړې کلمې یا کلیدي کلمې هغه کلمې دي چې د C++ ژبې دننه ځانګړې معنا لري او د یوې ځانګړې موخې لپاره ساتل شوې دي. د C++ ځانګړې کلمې په C++ پروګرام کې د بلې موخې لپاره نه شي کارول کېدای، حتی د متغیرونو په توګه هم نه. د C++ کلیدي کلمو لېست په ۳.۱ جدول کې ښودل شوی."
+    },
+    {
+     "text": "Table 3.1: List of C++ Keywords",
+     "urdu": "جدول 3.1: C++ کی ورڈز کی فہرست",
+     "pashto": "۳.۱ جدول: د C++ کلیدي کلمو لېست"
+    }
+   ],
+   "theory": "3.1 INTRODUCTION\n\nThis Unit is about the introduction to Object Oriented Programming Language, C++, and covers its basics in detail. The Unit is focused on basic C++ program structure, variables used in C++, input/output statements and the use of operators in the language.\n\nBjarne Stroustrup at Bell Labs initially developed C++ during the early 1980’s. It was designed to support the features of C such as efficiency and low-level support for system level coding. Added to this were features such as classes with inheritance and virtual functions, derived from the Simula language, and operator overloading, derived from Algol. C++ is best described as a superset of C, with full support for object-oriented programming. This language is in wide spread use. The first commercial release of the C++ language was in October of 1985.\n\n3.1.1 Computer program\n\nA computer program is a set of instructions written in computer languages to perform a specified task for a computer. A computer program tells the computer that what to do and in which order to do. Different types of programming languages are used to develop programs. Some commonly used programming languages are C++, JAVA, SQL, HTML, etc.\n\n3.1.2 Header files and Reserved words\n\nHeader files and reserved words are the two important components of almost every C++ programs.\n\na. Header files\n\nHeader files also known as include files, are standard library files that have an extension of (.h) and which are used to hold declarations for other files.\n\nConsider the following program:\n\n// header file example\n#include <iostream.h>\nint main()\n{\ncout << \"Hello, world!\" << endl;\nreturn 0;\n}\n\nOutput of the program\n\nHello, world!\n\nThis program prints the string “Hello, world!” to the screen using cout. However, this program never defines cout, so how does the compiler know about the object cout? The answer for this is that cout has been declared in a header file called “iostream”. When the line #include <iostream.h> is used in the program, the compiler locates and read all the declarations from a header file named “iostream”.\n\nb. Reserved words\n\nReserved words or keywords are those words which have their special meaning within the C++ language and are reserved for some specific purpose. C++ reserved words cannot be used for any other purpose in a C++ program and even cannot be used as variables. Here is a list of C++ keywords shown in Table 3.1.\n\nTable 3.1: List of C++ Keywords",
+   "urdu": "3.1 تعارف\n\nیہ یونٹ آبجیکٹ اورینٹڈ پروگرامنگ زبان C++ کے تعارف کے بارے میں ہے اور اس کی بنیادی باتوں کا تفصیل سے احاطہ کرتا ہے۔ یونٹ بنیادی C++ پروگرام کی ساخت، C++ میں استعمال ہونے والے ویری ایبلز، ان پٹ/آؤٹ پٹ بیانات اور زبان میں آپریٹرز کے استعمال پر مرکوز ہے۔\n\nبیل لیبز میں بیارنے اسٹراؤسٹرپ نے 1980ء کی دہائی کے اوائل میں ابتدائی طور پر C++ تیار کی۔ اسے C کی خصوصیات جیسے کارکردگی اور سسٹم کی سطح کی کوڈنگ کے لیے نچلی سطح کی معاونت کے لیے بنایا گیا تھا۔ اس میں Simula زبان سے ماخوذ وراثت اور ورچوئل فنکشنز والی کلاسز اور Algol سے ماخوذ آپریٹر اوورلوڈنگ جیسی خصوصیات شامل کی گئیں۔ C++ کو بہترین طور پر C کا ایک وسیع تر مجموعہ (superset) کہا جا سکتا ہے جو آبجیکٹ اورینٹڈ پروگرامنگ کی مکمل معاونت کرتا ہے۔ یہ زبان بڑے پیمانے پر استعمال ہوتی ہے۔ C++ زبان کا پہلا تجارتی اجراء اکتوبر 1985ء میں ہوا۔\n\n3.1.1 کمپیوٹر پروگرام\n\nکمپیوٹر پروگرام کمپیوٹر زبانوں میں لکھی گئی ہدایات کا ایک مجموعہ ہے جو کمپیوٹر کے لیے ایک مخصوص کام انجام دیتا ہے۔ کمپیوٹر پروگرام کمپیوٹر کو بتاتا ہے کہ کیا کرنا ہے اور کس ترتیب سے کرنا ہے۔ پروگرام تیار کرنے کے لیے مختلف اقسام کی پروگرامنگ زبانیں استعمال ہوتی ہیں۔ کچھ عام استعمال ہونے والی پروگرامنگ زبانیں C++، JAVA، SQL، HTML وغیرہ ہیں۔\n\n3.1.2 ہیڈر فائلیں اور مخصوص الفاظ\n\nہیڈر فائلیں اور مخصوص الفاظ تقریباً ہر C++ پروگرام کے دو اہم اجزاء ہیں۔\n\na. ہیڈر فائلیں\n\nہیڈر فائلیں، جنھیں انکلوڈ فائلیں بھی کہا جاتا ہے، معیاری لائبریری فائلیں ہیں جن کی ایکسٹینشن (.h) ہوتی ہے اور جو دوسری فائلوں کے اعلانات رکھنے کے لیے استعمال ہوتی ہیں۔\n\nدرج ذیل پروگرام پر غور کریں:\n\n// header file example\n#include <iostream.h>\nint main()\n{\ncout << \"Hello, world!\" << endl;\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nHello, world!\n\nیہ پروگرام cout کے ذریعے اسٹرنگ ’’Hello, world!‘‘ اسکرین پر پرنٹ کرتا ہے۔ تاہم یہ پروگرام کبھی cout کی تعریف نہیں کرتا، تو کمپائلر کو آبجیکٹ cout کا کیسے پتہ چلتا ہے؟ اس کا جواب یہ ہے کہ cout کا اعلان ’’iostream‘‘ نامی ہیڈر فائل میں کیا گیا ہے۔ جب پروگرام میں #include <iostream.h> لائن استعمال ہوتی ہے تو کمپائلر ’’iostream‘‘ نامی ہیڈر فائل کو تلاش کر کے اس کے تمام اعلانات پڑھتا ہے۔\n\nb. مخصوص الفاظ\n\nمخصوص الفاظ یا کی ورڈز وہ الفاظ ہیں جن کا C++ زبان میں خاص مطلب ہوتا ہے اور جو کسی مخصوص مقصد کے لیے مختص ہوتے ہیں۔ C++ کے مخصوص الفاظ کسی C++ پروگرام میں کسی اور مقصد کے لیے استعمال نہیں ہو سکتے، حتیٰ کہ ویری ایبلز کے طور پر بھی نہیں۔ جدول 3.1 میں C++ کی ورڈز کی فہرست دی گئی ہے۔\n\nجدول 3.1: C++ کی ورڈز کی فہرست",
+   "pashto": "۳.۱ پېژندنه\n\nدا څپرکی د شیانو ته متوجه پروګرامي ژبې C++ د پېژندنې په اړه دی او بنسټونه یې په تفصیل سره رانغاړي. څپرکی د C++ پر بنسټیز پروګرامي جوړښت، په C++ کې کارېدونکو متغیرونو، د ننوتو/وتو بیانونو او په ژبه کې د چلونکو پر کارونې تمرکز لري.\n\nپه بیل لابز کې بیارنې سټراوسټروپ په لومړي ځل د ۱۹۸۰مو کلونو په پیل کې C++ جوړه کړه. دا د C د ځانګړنو لکه اغېزمنتیا او د سیسټم د کچې کوډ لیکنې لپاره د ټیټې کچې ملاتړ لپاره ډیزاین شوې وه. ورسره داسې ځانګړنې ورزیاتې شوې لکه د میراث او مجازي فنکشنونو لرونکي ټولګي چې له Simula ژبې اخیستل شوي، او د چلونکو ډېرول (operator overloading) چې له Algol اخیستل شوی. C++ په ښه توګه د C پراخه ټولګه (superset) بلل کېدای شي چې د شیانو ته متوجه پروګرام‌سازۍ بشپړ ملاتړ کوي. دا ژبه په پراخه کچه کارېږي. د C++ ژبې لومړنی سوداګریز خپرېدل د ۱۹۸۵ز په اکتوبر کې وو.\n\n۳.۱.۱ کمپیوټري پروګرام\n\nکمپیوټري پروګرام په کمپیوټري ژبو لیکل شویو لارښوونو یوه ټولګه ده چې د کمپیوټر لپاره یوه ټاکلې دنده ترسره کوي. کمپیوټري پروګرام کمپیوټر ته وايي چې څه وکړي او په کوم ترتیب یې وکړي. د پروګرامونو د جوړولو لپاره بېلابېل ډوله پروګرامي ژبې کارول کېږي. ځینې عام کارېدونکې پروګرامي ژبې C++، JAVA، SQL، HTML او نورې دي.\n\n۳.۱.۲ سرلیک فایلونه او ځانګړې کلمې\n\nسرلیک فایلونه او ځانګړې کلمې د نږدې هر C++ پروګرام دوه مهمې برخې دي.\n\na. سرلیک فایلونه\n\nسرلیک فایلونه چې شاملې فایلونه (include files) هم بلل کېږي، معیاري کتابتون فایلونه دي چې (.h) پسوند لري او د نورو فایلونو د اعلانونو ساتلو لپاره کارول کېږي.\n\nلاندې پروګرام ته پام وکړئ:\n\n// header file example\n#include <iostream.h>\nint main()\n{\ncout << \"Hello, world!\" << endl;\nreturn 0;\n}\n\nد پروګرام وتنه\n\nHello, world!\n\nدا پروګرام د cout په مرسته \"Hello, world!\" تار پر پرده چاپوي. خو دا پروګرام هېڅکله cout نه تعریفوي، نو کمپایلر د cout شي څخه څنګه خبرېږي؟ ځواب یې دا دی چې cout په \"iostream\" نومي سرلیک فایل کې اعلان شوی. کله چې په پروګرام کې د #include <iostream.h> کرښه وکارول شي، کمپایلر \"iostream\" نومی سرلیک فایل پیدا کوي او ټول اعلانونه یې لولي.\n\nb. ځانګړې کلمې\n\nځانګړې کلمې یا کلیدي کلمې هغه کلمې دي چې د C++ ژبې دننه ځانګړې معنا لري او د یوې ځانګړې موخې لپاره ساتل شوې دي. د C++ ځانګړې کلمې په C++ پروګرام کې د بلې موخې لپاره نه شي کارول کېدای، حتی د متغیرونو په توګه هم نه. د C++ کلیدي کلمو لېست په ۳.۱ جدول کې ښودل شوی.\n\n۳.۱ جدول: د C++ کلیدي کلمو لېست",
+   "theoryUrdu": "3.1 تعارف\n\nیہ یونٹ آبجیکٹ اورینٹڈ پروگرامنگ زبان C++ کے تعارف کے بارے میں ہے اور اس کی بنیادی باتوں کا تفصیل سے احاطہ کرتا ہے۔ یونٹ بنیادی C++ پروگرام کی ساخت، C++ میں استعمال ہونے والے ویری ایبلز، ان پٹ/آؤٹ پٹ بیانات اور زبان میں آپریٹرز کے استعمال پر مرکوز ہے۔\n\nبیل لیبز میں بیارنے اسٹراؤسٹرپ نے 1980ء کی دہائی کے اوائل میں ابتدائی طور پر C++ تیار کی۔ اسے C کی خصوصیات جیسے کارکردگی اور سسٹم کی سطح کی کوڈنگ کے لیے نچلی سطح کی معاونت کے لیے بنایا گیا تھا۔ اس میں Simula زبان سے ماخوذ وراثت اور ورچوئل فنکشنز والی کلاسز اور Algol سے ماخوذ آپریٹر اوورلوڈنگ جیسی خصوصیات شامل کی گئیں۔ C++ کو بہترین طور پر C کا ایک وسیع تر مجموعہ (superset) کہا جا سکتا ہے جو آبجیکٹ اورینٹڈ پروگرامنگ کی مکمل معاونت کرتا ہے۔ یہ زبان بڑے پیمانے پر استعمال ہوتی ہے۔ C++ زبان کا پہلا تجارتی اجراء اکتوبر 1985ء میں ہوا۔\n\n3.1.1 کمپیوٹر پروگرام\n\nکمپیوٹر پروگرام کمپیوٹر زبانوں میں لکھی گئی ہدایات کا ایک مجموعہ ہے جو کمپیوٹر کے لیے ایک مخصوص کام انجام دیتا ہے۔ کمپیوٹر پروگرام کمپیوٹر کو بتاتا ہے کہ کیا کرنا ہے اور کس ترتیب سے کرنا ہے۔ پروگرام تیار کرنے کے لیے مختلف اقسام کی پروگرامنگ زبانیں استعمال ہوتی ہیں۔ کچھ عام استعمال ہونے والی پروگرامنگ زبانیں C++، JAVA، SQL، HTML وغیرہ ہیں۔\n\n3.1.2 ہیڈر فائلیں اور مخصوص الفاظ\n\nہیڈر فائلیں اور مخصوص الفاظ تقریباً ہر C++ پروگرام کے دو اہم اجزاء ہیں۔\n\na. ہیڈر فائلیں\n\nہیڈر فائلیں، جنھیں انکلوڈ فائلیں بھی کہا جاتا ہے، معیاری لائبریری فائلیں ہیں جن کی ایکسٹینشن (.h) ہوتی ہے اور جو دوسری فائلوں کے اعلانات رکھنے کے لیے استعمال ہوتی ہیں۔\n\nدرج ذیل پروگرام پر غور کریں:\n\n// header file example\n#include <iostream.h>\nint main()\n{\ncout << \"Hello, world!\" << endl;\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nHello, world!\n\nیہ پروگرام cout کے ذریعے اسٹرنگ ’’Hello, world!‘‘ اسکرین پر پرنٹ کرتا ہے۔ تاہم یہ پروگرام کبھی cout کی تعریف نہیں کرتا، تو کمپائلر کو آبجیکٹ cout کا کیسے پتہ چلتا ہے؟ اس کا جواب یہ ہے کہ cout کا اعلان ’’iostream‘‘ نامی ہیڈر فائل میں کیا گیا ہے۔ جب پروگرام میں #include <iostream.h> لائن استعمال ہوتی ہے تو کمپائلر ’’iostream‘‘ نامی ہیڈر فائل کو تلاش کر کے اس کے تمام اعلانات پڑھتا ہے۔\n\nb. مخصوص الفاظ\n\nمخصوص الفاظ یا کی ورڈز وہ الفاظ ہیں جن کا C++ زبان میں خاص مطلب ہوتا ہے اور جو کسی مخصوص مقصد کے لیے مختص ہوتے ہیں۔ C++ کے مخصوص الفاظ کسی C++ پروگرام میں کسی اور مقصد کے لیے استعمال نہیں ہو سکتے، حتیٰ کہ ویری ایبلز کے طور پر بھی نہیں۔ جدول 3.1 میں C++ کی ورڈز کی فہرست دی گئی ہے۔\n\nجدول 3.1: C++ کی ورڈز کی فہرست",
+   "theoryPashto": "۳.۱ پېژندنه\n\nدا څپرکی د شیانو ته متوجه پروګرامي ژبې C++ د پېژندنې په اړه دی او بنسټونه یې په تفصیل سره رانغاړي. څپرکی د C++ پر بنسټیز پروګرامي جوړښت، په C++ کې کارېدونکو متغیرونو، د ننوتو/وتو بیانونو او په ژبه کې د چلونکو پر کارونې تمرکز لري.\n\nپه بیل لابز کې بیارنې سټراوسټروپ په لومړي ځل د ۱۹۸۰مو کلونو په پیل کې C++ جوړه کړه. دا د C د ځانګړنو لکه اغېزمنتیا او د سیسټم د کچې کوډ لیکنې لپاره د ټیټې کچې ملاتړ لپاره ډیزاین شوې وه. ورسره داسې ځانګړنې ورزیاتې شوې لکه د میراث او مجازي فنکشنونو لرونکي ټولګي چې له Simula ژبې اخیستل شوي، او د چلونکو ډېرول (operator overloading) چې له Algol اخیستل شوی. C++ په ښه توګه د C پراخه ټولګه (superset) بلل کېدای شي چې د شیانو ته متوجه پروګرام‌سازۍ بشپړ ملاتړ کوي. دا ژبه په پراخه کچه کارېږي. د C++ ژبې لومړنی سوداګریز خپرېدل د ۱۹۸۵ز په اکتوبر کې وو.\n\n۳.۱.۱ کمپیوټري پروګرام\n\nکمپیوټري پروګرام په کمپیوټري ژبو لیکل شویو لارښوونو یوه ټولګه ده چې د کمپیوټر لپاره یوه ټاکلې دنده ترسره کوي. کمپیوټري پروګرام کمپیوټر ته وايي چې څه وکړي او په کوم ترتیب یې وکړي. د پروګرامونو د جوړولو لپاره بېلابېل ډوله پروګرامي ژبې کارول کېږي. ځینې عام کارېدونکې پروګرامي ژبې C++، JAVA، SQL، HTML او نورې دي.\n\n۳.۱.۲ سرلیک فایلونه او ځانګړې کلمې\n\nسرلیک فایلونه او ځانګړې کلمې د نږدې هر C++ پروګرام دوه مهمې برخې دي.\n\na. سرلیک فایلونه\n\nسرلیک فایلونه چې شاملې فایلونه (include files) هم بلل کېږي، معیاري کتابتون فایلونه دي چې (.h) پسوند لري او د نورو فایلونو د اعلانونو ساتلو لپاره کارول کېږي.\n\nلاندې پروګرام ته پام وکړئ:\n\n// header file example\n#include <iostream.h>\nint main()\n{\ncout << \"Hello, world!\" << endl;\nreturn 0;\n}\n\nد پروګرام وتنه\n\nHello, world!\n\nدا پروګرام د cout په مرسته \"Hello, world!\" تار پر پرده چاپوي. خو دا پروګرام هېڅکله cout نه تعریفوي، نو کمپایلر د cout شي څخه څنګه خبرېږي؟ ځواب یې دا دی چې cout په \"iostream\" نومي سرلیک فایل کې اعلان شوی. کله چې په پروګرام کې د #include <iostream.h> کرښه وکارول شي، کمپایلر \"iostream\" نومی سرلیک فایل پیدا کوي او ټول اعلانونه یې لولي.\n\nb. ځانګړې کلمې\n\nځانګړې کلمې یا کلیدي کلمې هغه کلمې دي چې د C++ ژبې دننه ځانګړې معنا لري او د یوې ځانګړې موخې لپاره ساتل شوې دي. د C++ ځانګړې کلمې په C++ پروګرام کې د بلې موخې لپاره نه شي کارول کېدای، حتی د متغیرونو په توګه هم نه. د C++ کلیدي کلمو لېست په ۳.۱ جدول کې ښودل شوی.\n\n۳.۱ جدول: د C++ کلیدي کلمو لېست",
+   "content": "<p>3.1 INTRODUCTION</p><p>This Unit is about the introduction to Object Oriented Programming Language, C++, and covers its basics in detail. The Unit is focused on basic C++ program structure, variables used in C++, input/output statements and the use of operators in the language.</p><p>Bjarne Stroustrup at Bell Labs initially developed C++ during the early 1980’s. It was designed to support the features of C such as efficiency and low-level support for system level coding. Added to this were features such as classes with inheritance and virtual functions, derived from the Simula language, and operator overloading, derived from Algol. C++ is best described as a superset of C, with full support for object-oriented programming. This language is in wide spread use. The first commercial release of the C++ language was in October of 1985.</p><p>3.1.1 Computer program</p><p>A computer program is a set of instructions written in computer languages to perform a specified task for a computer. A computer program tells the computer that what to do and in which order to do. Different types of programming languages are used to develop programs. Some commonly used programming languages are C++, JAVA, SQL, HTML, etc.</p><p>3.1.2 Header files and Reserved words</p><p>Header files and reserved words are the two important components of almost every C++ programs.</p><p>a. Header files</p><p>Header files also known as include files, are standard library files that have an extension of (.h) and which are used to hold declarations for other files.</p><p>Consider the following program:</p><p>// header file example\n#include &lt;iostream.h&gt;\nint main()\n{\ncout &lt;&lt; &quot;Hello, world!&quot; &lt;&lt; endl;\nreturn 0;\n}</p><p>Output of the program</p><p>Hello, world!</p><p>This program prints the string “Hello, world!” to the screen using cout. However, this program never defines cout, so how does the compiler know about the object cout? The answer for this is that cout has been declared in a header file called “iostream”. When the line #include &lt;iostream.h&gt; is used in the program, the compiler locates and read all the declarations from a header file named “iostream”.</p><p>b. Reserved words</p><p>Reserved words or keywords are those words which have their special meaning within the C++ language and are reserved for some specific purpose. C++ reserved words cannot be used for any other purpose in a C++ program and even cannot be used as variables. Here is a list of C++ keywords shown in Table 3.1.</p><p>Table 3.1: List of C++ Keywords</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-3-1"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-table-3-1",
+     "headers": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+     ],
+     "rows": [
+      [
+       "asm",
+       "auto",
+       "bool",
+       "break",
+       "case",
+       "catch",
+       "char",
+       "class"
+      ],
+      [
+       "const",
+       "const_cast",
+       "continue",
+       "default",
+       "delete",
+       "do",
+       "double",
+       "dynamic_cast"
+      ],
+      [
+       "else",
+       "enum",
+       "explicit",
+       "export",
+       "extern",
+       "false",
+       "float",
+       "for"
+      ],
+      [
+       "friend",
+       "goto",
+       "if",
+       "inline",
+       "int",
+       "long",
+       "mutable",
+       "namespace"
+      ],
+      [
+       "new",
+       "operator",
+       "private",
+       "protected",
+       "public",
+       "register",
+       "reinterpret_cast",
+       "return"
+      ],
+      [
+       "short",
+       "signed",
+       "sizeof",
+       "static",
+       "static_cast",
+       "struct",
+       "switch",
+       "template"
+      ],
+      [
+       "this",
+       "throw",
+       "true",
+       "try",
+       "typedef",
+       "typeid",
+       "typename",
+       "union"
+      ],
+      [
+       "unsigned",
+       "using",
+       "virtual",
+       "void",
+       "volatile",
+       "wchar_t",
+       "while",
+       ""
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "rows": [
+        [
+         "asm",
+         "auto",
+         "bool",
+         "break",
+         "case",
+         "catch",
+         "char",
+         "class"
+        ],
+        [
+         "const",
+         "const_cast",
+         "continue",
+         "default",
+         "delete",
+         "do",
+         "double",
+         "dynamic_cast"
+        ],
+        [
+         "else",
+         "enum",
+         "explicit",
+         "export",
+         "extern",
+         "false",
+         "float",
+         "for"
+        ],
+        [
+         "friend",
+         "goto",
+         "if",
+         "inline",
+         "int",
+         "long",
+         "mutable",
+         "namespace"
+        ],
+        [
+         "new",
+         "operator",
+         "private",
+         "protected",
+         "public",
+         "register",
+         "reinterpret_cast",
+         "return"
+        ],
+        [
+         "short",
+         "signed",
+         "sizeof",
+         "static",
+         "static_cast",
+         "struct",
+         "switch",
+         "template"
+        ],
+        [
+         "this",
+         "throw",
+         "true",
+         "try",
+         "typedef",
+         "typeid",
+         "typename",
+         "union"
+        ],
+        [
+         "unsigned",
+         "using",
+         "virtual",
+         "void",
+         "volatile",
+         "wchar_t",
+         "while",
+         ""
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "rows": [
+        [
+         "asm",
+         "auto",
+         "bool",
+         "break",
+         "case",
+         "catch",
+         "char",
+         "class"
+        ],
+        [
+         "const",
+         "const_cast",
+         "continue",
+         "default",
+         "delete",
+         "do",
+         "double",
+         "dynamic_cast"
+        ],
+        [
+         "else",
+         "enum",
+         "explicit",
+         "export",
+         "extern",
+         "false",
+         "float",
+         "for"
+        ],
+        [
+         "friend",
+         "goto",
+         "if",
+         "inline",
+         "int",
+         "long",
+         "mutable",
+         "namespace"
+        ],
+        [
+         "new",
+         "operator",
+         "private",
+         "protected",
+         "public",
+         "register",
+         "reinterpret_cast",
+         "return"
+        ],
+        [
+         "short",
+         "signed",
+         "sizeof",
+         "static",
+         "static_cast",
+         "struct",
+         "switch",
+         "template"
+        ],
+        [
+         "this",
+         "throw",
+         "true",
+         "try",
+         "typedef",
+         "typeid",
+         "typename",
+         "union"
+        ],
+        [
+         "unsigned",
+         "using",
+         "virtual",
+         "void",
+         "volatile",
+         "wchar_t",
+         "while",
+         ""
+        ]
+       ]
+      }
+     ],
+     "noHeader": true
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 35,
+     "printedPages": [
+      58,
+      59
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (1)",
+   "sourcePageLabel": "PDF 35 · p. 58–59",
+   "sourceNote": "Program listings and C++ keywords are kept in English in all language views. Table 3.1 is reproduced as an 8-column grid in the printed order (the last cell is empty in print).",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf035",
+   "unit": 3,
+   "printedPage": 59,
+   "description": "p.58 prints “C++programs” and “tells the computer that what to do”; p.59 “the compiler locates and read all the declarations”. Retained as printed. The contents list Unit 3 at p.59 and 3.1 at p.58; the opener is printed on p.57."
+  }
+ ],
+ "completeUnits": []
+}

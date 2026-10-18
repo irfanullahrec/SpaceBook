@@ -1,0 +1,533 @@
+{
+ "pdfPage": 144,
+ "sections": [
+  {
+   "id": "cs12-u9-summary",
+   "title": "Unit 9 summary",
+   "headingUrdu": "یونٹ 9: خلاصہ",
+   "headingPashto": "۹ څپرکی: لنډیز",
+   "paras": [
+    {
+     "text": "Summary",
+     "urdu": "خلاصہ",
+     "pashto": "لنډیز"
+    },
+    {
+     "text": "The combinations of characters, words and records is called files.",
+     "urdu": "حروف، الفاظ اور ریکارڈز کے مجموعے فائلز کہلاتے ہیں۔",
+     "pashto": "د تورو، کلمو او ریکارډونو ترکیبونه دوتنې بلل کېږي."
+    },
+    {
+     "text": "The process of opening, reading from and writing into files is termed as handling files.",
+     "urdu": "فائلز کو کھولنے، ان سے پڑھنے اور ان میں لکھنے کا عمل فائلز ہینڈل کرنا کہلاتا ہے۔",
+     "pashto": "د دوتنو د پرانیستلو، له هغو د لوستلو او پکې د لیکلو بهیر د دوتنو چلول بلل کېږي."
+    },
+    {
+     "text": "There are two types of files: text files and binary files.",
+     "urdu": "فائلز کی دو اقسام ہیں: ٹیکسٹ فائلز اور بائنری فائلز۔",
+     "pashto": "دوتنې دوه ډوله دي: متني دوتنې او باینري دوتنې."
+    },
+    {
+     "text": "Those files that store data in text format and are readable by human are called text file.",
+     "urdu": "وہ فائلز جو ڈیٹا کو ٹیکسٹ شکل میں محفوظ کرتی ہیں اور انسان پڑھ سکتے ہیں، ٹیکسٹ فائل کہلاتی ہیں۔",
+     "pashto": "هغه دوتنې چې ډېټا په متني بڼه ساتي او انسان یې لوستلی شي، متني دوتنه بلل کېږي."
+    },
+    {
+     "text": "Binary files are those files that store data in binary format which is not readable by the human but readable by the computers. Binary files are directly processed by the computers",
+     "urdu": "بائنری فائلز وہ فائلز ہیں جو ڈیٹا کو بائنری شکل میں محفوظ کرتی ہیں جو انسان نہیں بلکہ کمپیوٹر پڑھ سکتے ہیں۔ بائنری فائلز پر کمپیوٹر براہِ راست عمل کرتے ہیں",
+     "pashto": "باینري دوتنې هغه دوتنې دي چې ډېټا په باینري بڼه ساتي چې انسان یې نه شي لوستلی خو کمپیوټرونه یې لوستلی شي. پر باینري دوتنو کمپیوټرونه مستقیم پروسس کوي"
+    },
+    {
+     "text": "To open a file, the function open() is used.",
+     "urdu": "فائل کھولنے کے لیے فنکشن open() استعمال ہوتا ہے۔",
+     "pashto": "د دوتنې د پرانیستلو لپاره open() فنکشن کارېږي."
+    },
+    {
+     "text": "There are different modes of opening files i.e. binary mode, input mode and output mode.",
+     "urdu": "فائلز کھولنے کے مختلف موڈز ہیں یعنی بائنری موڈ، ان پٹ موڈ اور آؤٹ پٹ موڈ۔",
+     "pashto": "د دوتنو د پرانیستلو بېلابېل حالتونه دي، یعنې باینري حالت، د ننوتنې حالت او د وتنې حالت."
+    },
+    {
+     "text": "The bof( ) is a pointer which is true if the current position of the pointer is at the beginning of the input file stream, and false otherwise.",
+     "urdu": "bof( ) ایک پوائنٹر ہے جو true ہوتا ہے اگر پوائنٹر کا موجودہ مقام ان پٹ فائل اسٹریم کے آغاز پر ہو، ورنہ false۔",
+     "pashto": "bof( ) یو پوائنټر دی چې true وي که د پوائنټر اوسنی ځای د ننوتنې دوتنې بهیر په پیل کې وي، او که نه false."
+    },
+    {
+     "text": "The eof( ) is a pointer which returns true when there are no more data to be read from an input file stream, and false otherwise.",
+     "urdu": "eof( ) ایک پوائنٹر ہے جو true واپس کرتا ہے جب ان پٹ فائل اسٹریم سے پڑھنے کے لیے مزید ڈیٹا نہ ہو، ورنہ false۔",
+     "pashto": "eof( ) یو پوائنټر دی چې true بېرته ورکوي کله چې د ننوتنې دوتنې له بهیر د لوستلو لپاره نور ډېټا نه وي، او که نه false."
+    },
+    {
+     "text": "A stream can be thought of a sequence of bytes of varying length that is used as a buffer to hold data that is waiting to be processed",
+     "urdu": "اسٹریم کو مختلف لمبائی کے بائٹس کی ترتیب سمجھا جا سکتا ہے جو عمل کے منتظر ڈیٹا کو رکھنے کے لیے بفر کے طور پر استعمال ہوتی ہے",
+     "pashto": "بهیر د بېلابېل اوږدوالي د بایټونو لړۍ ګڼل کېدای شي چې د پروسس په تمه ډېټا د ساتلو لپاره د بفر په توګه کارېږي"
+    }
+   ],
+   "theory": "Summary\n\nThe combinations of characters, words and records is called files.\n\nThe process of opening, reading from and writing into files is termed as handling files.\n\nThere are two types of files: text files and binary files.\n\nThose files that store data in text format and are readable by human are called text file.\n\nBinary files are those files that store data in binary format which is not readable by the human but readable by the computers. Binary files are directly processed by the computers\n\nTo open a file, the function open() is used.\n\nThere are different modes of opening files i.e. binary mode, input mode and output mode.\n\nThe bof( ) is a pointer which is true if the current position of the pointer is at the beginning of the input file stream, and false otherwise.\n\nThe eof( ) is a pointer which returns true when there are no more data to be read from an input file stream, and false otherwise.\n\nA stream can be thought of a sequence of bytes of varying length that is used as a buffer to hold data that is waiting to be processed",
+   "urdu": "خلاصہ\n\nحروف، الفاظ اور ریکارڈز کے مجموعے فائلز کہلاتے ہیں۔\n\nفائلز کو کھولنے، ان سے پڑھنے اور ان میں لکھنے کا عمل فائلز ہینڈل کرنا کہلاتا ہے۔\n\nفائلز کی دو اقسام ہیں: ٹیکسٹ فائلز اور بائنری فائلز۔\n\nوہ فائلز جو ڈیٹا کو ٹیکسٹ شکل میں محفوظ کرتی ہیں اور انسان پڑھ سکتے ہیں، ٹیکسٹ فائل کہلاتی ہیں۔\n\nبائنری فائلز وہ فائلز ہیں جو ڈیٹا کو بائنری شکل میں محفوظ کرتی ہیں جو انسان نہیں بلکہ کمپیوٹر پڑھ سکتے ہیں۔ بائنری فائلز پر کمپیوٹر براہِ راست عمل کرتے ہیں\n\nفائل کھولنے کے لیے فنکشن open() استعمال ہوتا ہے۔\n\nفائلز کھولنے کے مختلف موڈز ہیں یعنی بائنری موڈ، ان پٹ موڈ اور آؤٹ پٹ موڈ۔\n\nbof( ) ایک پوائنٹر ہے جو true ہوتا ہے اگر پوائنٹر کا موجودہ مقام ان پٹ فائل اسٹریم کے آغاز پر ہو، ورنہ false۔\n\neof( ) ایک پوائنٹر ہے جو true واپس کرتا ہے جب ان پٹ فائل اسٹریم سے پڑھنے کے لیے مزید ڈیٹا نہ ہو، ورنہ false۔\n\nاسٹریم کو مختلف لمبائی کے بائٹس کی ترتیب سمجھا جا سکتا ہے جو عمل کے منتظر ڈیٹا کو رکھنے کے لیے بفر کے طور پر استعمال ہوتی ہے",
+   "pashto": "لنډیز\n\nد تورو، کلمو او ریکارډونو ترکیبونه دوتنې بلل کېږي.\n\nد دوتنو د پرانیستلو، له هغو د لوستلو او پکې د لیکلو بهیر د دوتنو چلول بلل کېږي.\n\nدوتنې دوه ډوله دي: متني دوتنې او باینري دوتنې.\n\nهغه دوتنې چې ډېټا په متني بڼه ساتي او انسان یې لوستلی شي، متني دوتنه بلل کېږي.\n\nباینري دوتنې هغه دوتنې دي چې ډېټا په باینري بڼه ساتي چې انسان یې نه شي لوستلی خو کمپیوټرونه یې لوستلی شي. پر باینري دوتنو کمپیوټرونه مستقیم پروسس کوي\n\nد دوتنې د پرانیستلو لپاره open() فنکشن کارېږي.\n\nد دوتنو د پرانیستلو بېلابېل حالتونه دي، یعنې باینري حالت، د ننوتنې حالت او د وتنې حالت.\n\nbof( ) یو پوائنټر دی چې true وي که د پوائنټر اوسنی ځای د ننوتنې دوتنې بهیر په پیل کې وي، او که نه false.\n\neof( ) یو پوائنټر دی چې true بېرته ورکوي کله چې د ننوتنې دوتنې له بهیر د لوستلو لپاره نور ډېټا نه وي، او که نه false.\n\nبهیر د بېلابېل اوږدوالي د بایټونو لړۍ ګڼل کېدای شي چې د پروسس په تمه ډېټا د ساتلو لپاره د بفر په توګه کارېږي",
+   "theoryUrdu": "خلاصہ\n\nحروف، الفاظ اور ریکارڈز کے مجموعے فائلز کہلاتے ہیں۔\n\nفائلز کو کھولنے، ان سے پڑھنے اور ان میں لکھنے کا عمل فائلز ہینڈل کرنا کہلاتا ہے۔\n\nفائلز کی دو اقسام ہیں: ٹیکسٹ فائلز اور بائنری فائلز۔\n\nوہ فائلز جو ڈیٹا کو ٹیکسٹ شکل میں محفوظ کرتی ہیں اور انسان پڑھ سکتے ہیں، ٹیکسٹ فائل کہلاتی ہیں۔\n\nبائنری فائلز وہ فائلز ہیں جو ڈیٹا کو بائنری شکل میں محفوظ کرتی ہیں جو انسان نہیں بلکہ کمپیوٹر پڑھ سکتے ہیں۔ بائنری فائلز پر کمپیوٹر براہِ راست عمل کرتے ہیں\n\nفائل کھولنے کے لیے فنکشن open() استعمال ہوتا ہے۔\n\nفائلز کھولنے کے مختلف موڈز ہیں یعنی بائنری موڈ، ان پٹ موڈ اور آؤٹ پٹ موڈ۔\n\nbof( ) ایک پوائنٹر ہے جو true ہوتا ہے اگر پوائنٹر کا موجودہ مقام ان پٹ فائل اسٹریم کے آغاز پر ہو، ورنہ false۔\n\neof( ) ایک پوائنٹر ہے جو true واپس کرتا ہے جب ان پٹ فائل اسٹریم سے پڑھنے کے لیے مزید ڈیٹا نہ ہو، ورنہ false۔\n\nاسٹریم کو مختلف لمبائی کے بائٹس کی ترتیب سمجھا جا سکتا ہے جو عمل کے منتظر ڈیٹا کو رکھنے کے لیے بفر کے طور پر استعمال ہوتی ہے",
+   "theoryPashto": "لنډیز\n\nد تورو، کلمو او ریکارډونو ترکیبونه دوتنې بلل کېږي.\n\nد دوتنو د پرانیستلو، له هغو د لوستلو او پکې د لیکلو بهیر د دوتنو چلول بلل کېږي.\n\nدوتنې دوه ډوله دي: متني دوتنې او باینري دوتنې.\n\nهغه دوتنې چې ډېټا په متني بڼه ساتي او انسان یې لوستلی شي، متني دوتنه بلل کېږي.\n\nباینري دوتنې هغه دوتنې دي چې ډېټا په باینري بڼه ساتي چې انسان یې نه شي لوستلی خو کمپیوټرونه یې لوستلی شي. پر باینري دوتنو کمپیوټرونه مستقیم پروسس کوي\n\nد دوتنې د پرانیستلو لپاره open() فنکشن کارېږي.\n\nد دوتنو د پرانیستلو بېلابېل حالتونه دي، یعنې باینري حالت، د ننوتنې حالت او د وتنې حالت.\n\nbof( ) یو پوائنټر دی چې true وي که د پوائنټر اوسنی ځای د ننوتنې دوتنې بهیر په پیل کې وي، او که نه false.\n\neof( ) یو پوائنټر دی چې true بېرته ورکوي کله چې د ننوتنې دوتنې له بهیر د لوستلو لپاره نور ډېټا نه وي، او که نه false.\n\nبهیر د بېلابېل اوږدوالي د بایټونو لړۍ ګڼل کېدای شي چې د پروسس په تمه ډېټا د ساتلو لپاره د بفر په توګه کارېږي",
+   "content": "<p>Summary</p><p>The combinations of characters, words and records is called files.</p><p>The process of opening, reading from and writing into files is termed as handling files.</p><p>There are two types of files: text files and binary files.</p><p>Those files that store data in text format and are readable by human are called text file.</p><p>Binary files are those files that store data in binary format which is not readable by the human but readable by the computers. Binary files are directly processed by the computers</p><p>To open a file, the function open() is used.</p><p>There are different modes of opening files i.e. binary mode, input mode and output mode.</p><p>The bof( ) is a pointer which is true if the current position of the pointer is at the beginning of the input file stream, and false otherwise.</p><p>The eof( ) is a pointer which returns true when there are no more data to be read from an input file stream, and false otherwise.</p><p>A stream can be thought of a sequence of bytes of varying length that is used as a buffer to hold data that is waiting to be processed</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 144,
+     "printedPages": [
+      276
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 9 summary",
+   "sourcePageLabel": "PDF 144 · p. 276",
+   "unit": 9
+  },
+  {
+   "id": "cs12-u9-exercise",
+   "title": "Unit 9 exercise",
+   "headingUrdu": "یونٹ 9: مشق",
+   "headingPashto": "۹ څپرکی: تمرین",
+   "paras": [
+    {
+     "text": "Exercise",
+     "urdu": "مشق",
+     "pashto": "تمرین"
+    },
+    {
+     "text": "Q.1 Fill in the Blanks.",
+     "urdu": "سوال 1: خالی جگہیں پُر کریں۔",
+     "pashto": "پوښتنه ۱: تش ځایونه ډک کړئ."
+    },
+    {
+     "text": "i. In C++ language, for handling of files, the header file ________ is used.",
+     "urdu": "i. C++ زبان میں فائلز ہینڈل کرنے کے لیے ہیڈر فائل ________ استعمال ہوتی ہے۔",
+     "pashto": "i. په C++ ژبه کې د دوتنو د چلولو لپاره ________ سرپاڼه دوتنه کارېږي."
+    },
+    {
+     "text": "ii. The function ________ is used for closing a function.",
+     "urdu": "ii. فنکشن ________ فنکشن بند کرنے کے لیے استعمال ہوتا ہے۔",
+     "pashto": "ii. ________ فنکشن د فنکشن د تړلو لپاره کارېږي."
+    },
+    {
+     "text": "iii. In the statement, open (“xyz.txt”, ios::out); ________ file is opened in output mode.",
+     "urdu": "iii. بیان open (“xyz.txt”, ios::out); میں ________ فائل آؤٹ پٹ موڈ میں کھولی جاتی ہے۔",
+     "pashto": "iii. په open (“xyz.txt”, ios::out); بیان کې ________ دوتنه د وتنې په حالت کې پرانیستل کېږي."
+    },
+    {
+     "text": "iv. If all output operations are to be performed at the end of the file then ________ should be used in the open function.",
+     "urdu": "iv. اگر تمام آؤٹ پٹ عمل فائل کے آخر پر کرنے ہوں تو open فنکشن میں ________ استعمال ہونا چاہیے۔",
+     "pashto": "iv. که ټولې د وتنې عملیې د دوتنې په پای کې ترسره کېږي، نو په open فنکشن کې باید ________ وکارول شي."
+    },
+    {
+     "text": "v. A ________ is “a continuous flow or succession of bytes a stream of characters.”",
+     "urdu": "v. ________ ’’بائٹس کا مسلسل بہاؤ یا تسلسل، حروف کی ایک اسٹریم‘‘ ہے۔",
+     "pashto": "v. ________ \"د بایټونو دوامداره بهیر یا لړۍ، د تورو یو بهیر\" دی."
+    },
+    {
+     "text": "Q.2 Select the correct choice for the following Multiple Choice Questions.",
+     "urdu": "سوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔",
+     "pashto": "پوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ."
+    },
+    {
+     "text": "i. eof stands for ________ .",
+     "urdu": "i. eof کا مطلب ہے ________ ۔",
+     "pashto": "i. eof د ________ لنډون دی."
+    },
+    {
+     "text": "(a) errors-on-files",
+     "urdu": "(a) errors-on-files",
+     "pashto": "(a) errors-on-files"
+    },
+    {
+     "text": "(b) end-of-file",
+     "urdu": "(b) end-of-file",
+     "pashto": "(b) end-of-file"
+    },
+    {
+     "text": "(c) exit-of-file",
+     "urdu": "(c) exit-of-file",
+     "pashto": "(c) exit-of-file"
+    },
+    {
+     "text": "(d) none of the above",
+     "urdu": "(d) ان میں سے کوئی نہیں",
+     "pashto": "(d) له پورته هېڅ یو"
+    },
+    {
+     "text": "ii. In file handling open() function is used ________ .",
+     "urdu": "ii. فائل ہینڈلنگ میں open() فنکشن ________ استعمال ہوتا ہے۔",
+     "pashto": "ii. د دوتنو په چلولو کې open() فنکشن ________ کارېږي."
+    },
+    {
+     "text": "(a) to open C++ compiler",
+     "urdu": "(a) C++ کمپائلر کھولنے کے لیے",
+     "pashto": "(a) د C++ کمپایلر د پرانیستلو لپاره"
+    },
+    {
+     "text": "(b) to open a file",
+     "urdu": "(b) فائل کھولنے کے لیے",
+     "pashto": "(b) د دوتنې د پرانیستلو لپاره"
+    },
+    {
+     "text": "(c) both a and b",
+     "urdu": "(c) a اور b دونوں",
+     "pashto": "(c) a او b دواړه"
+    },
+    {
+     "text": "(d) none of the above",
+     "urdu": "(d) ان میں سے کوئی نہیں",
+     "pashto": "(d) له پورته هېڅ یو"
+    },
+    {
+     "text": "iii. Default mode parameter for ofstream is ________ .",
+     "urdu": "iii. ofstream کا ڈیفالٹ موڈ پیرامیٹر ________ ہے۔",
+     "pashto": "iii. د ofstream ډیفالټ حالت پاراميټر ________ دی."
+    },
+    {
+     "text": "(a) ios::out",
+     "urdu": "(a) ios::out",
+     "pashto": "(a) ios::out"
+    },
+    {
+     "text": "(b) ios::in",
+     "urdu": "(b) ios::in",
+     "pashto": "(b) ios::in"
+    },
+    {
+     "text": "(c) ios::binary",
+     "urdu": "(c) ios::binary",
+     "pashto": "(c) ios::binary"
+    },
+    {
+     "text": "(d) both a and b",
+     "urdu": "(d) a اور b دونوں",
+     "pashto": "(d) a او b دواړه"
+    },
+    {
+     "text": "iv. A text file has the extension ________ .",
+     "urdu": "iv. ٹیکسٹ فائل کی ایکسٹینشن ________ ہوتی ہے۔",
+     "pashto": "iv. متني دوتنه ________ تمدید لري."
+    },
+    {
+     "text": "(a) .doc",
+     "urdu": "(a) .doc",
+     "pashto": "(a) .doc"
+    },
+    {
+     "text": "(b) .docx",
+     "urdu": "(b) .docx",
+     "pashto": "(b) .docx"
+    },
+    {
+     "text": "(c) .txt",
+     "urdu": "(c) .txt",
+     "pashto": "(c) .txt"
+    },
+    {
+     "text": "(d) .bin",
+     "urdu": "(d) .bin",
+     "pashto": "(d) .bin"
+    },
+    {
+     "text": "v. ios::binary is used as an argument to open() function for ________ .",
+     "urdu": "v. ios::binary فنکشن open() کو ________ کے لیے بطور آرگیومنٹ استعمال ہوتا ہے۔",
+     "pashto": "v. ios::binary د open() فنکشن ته د ________ لپاره د دلیل په توګه کارېږي."
+    },
+    {
+     "text": "(a) opening file for input operation.",
+     "urdu": "(a) ان پٹ عمل کے لیے فائل کھولنا",
+     "pashto": "(a) د ننوتنې عملیې لپاره دوتنه پرانیستل"
+    },
+    {
+     "text": "(b) opening file for output operation.",
+     "urdu": "(b) آؤٹ پٹ عمل کے لیے فائل کھولنا",
+     "pashto": "(b) د وتنې عملیې لپاره دوتنه پرانیستل"
+    },
+    {
+     "text": "(c) opening file in binary mode.",
+     "urdu": "(c) بائنری موڈ میں فائل کھولنا",
+     "pashto": "(c) په باینري حالت کې دوتنه پرانیستل"
+    },
+    {
+     "text": "(d) none of the above.",
+     "urdu": "(d) ان میں سے کوئی نہیں",
+     "pashto": "(d) له پورته هېڅ یو"
+    },
+    {
+     "text": "Q.3 Write TRUE/FALSE against the following statements.",
+     "urdu": "سوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔",
+     "pashto": "پوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ."
+    },
+    {
+     "text": "i. A string stream is a stream which reads input from or writes output to an associated string.",
+     "urdu": "i. اسٹرنگ اسٹریم وہ اسٹریم ہے جو کسی وابستہ اسٹرنگ سے ان پٹ پڑھتی یا اس میں آؤٹ پٹ لکھتی ہے۔",
+     "pashto": "i. د تار بهیر هغه بهیر دی چې له یوه تړلي تار ننوتنه لولي یا ورته وتنه لیکي."
+    },
+    {
+     "text": "ii. The eof( )is a pointer which returns false when there are no more data to be read from an input file stream, and true otherwise.",
+     "urdu": "ii. eof( ) ایک پوائنٹر ہے جو false واپس کرتا ہے جب ان پٹ فائل اسٹریم سے پڑھنے کے لیے مزید ڈیٹا نہ ہو، ورنہ true۔",
+     "pashto": "ii. eof( ) یو پوائنټر دی چې false بېرته ورکوي کله چې د ننوتنې دوتنې له بهیر د لوستلو لپاره نور ډېټا نه وي، او که نه true."
+    },
+    {
+     "text": "iii. To open a file in binary mode, we need to set the file mode to ios::binary.",
+     "urdu": "iii. فائل کو بائنری موڈ میں کھولنے کے لیے ہمیں فائل موڈ ios::binary پر سیٹ کرنا ہوتا ہے۔",
+     "pashto": "iii. د دوتنې په باینري حالت کې د پرانیستلو لپاره باید د دوتنې حالت ios::binary ته وټاکو."
+    },
+    {
+     "text": "iv. close() Function is used in C++ file handling for opening a new file.",
+     "urdu": "iv. close() فنکشن C++ فائل ہینڈلنگ میں نئی فائل کھولنے کے لیے استعمال ہوتا ہے۔",
+     "pashto": "iv. close() فنکشن د C++ د دوتنو په چلولو کې د نوې دوتنې د پرانیستلو لپاره کارېږي."
+    },
+    {
+     "text": "v. Those files that store data in text format and are readable by human are called text file",
+     "urdu": "v. وہ فائلز جو ڈیٹا کو ٹیکسٹ شکل میں محفوظ کرتی ہیں اور انسان پڑھ سکتے ہیں، ٹیکسٹ فائل کہلاتی ہیں",
+     "pashto": "v. هغه دوتنې چې ډېټا په متني بڼه ساتي او انسان یې لوستلی شي، متني دوتنه بلل کېږي"
+    },
+    {
+     "text": "Q.4 Define file. Describe different types of file.",
+     "urdu": "Q.4 فائل کی تعریف کریں۔ فائل کی مختلف اقسام بیان کریں۔",
+     "pashto": "Q.4 دوتنه تعریف کړئ. د دوتنې بېلابېل ډولونه بیان کړئ."
+    },
+    {
+     "text": "Q.5 Describe different types of operations performed on the files.",
+     "urdu": "Q.5 فائلز پر کیے جانے والے مختلف قسم کے عمل بیان کریں۔",
+     "pashto": "Q.5 پر دوتنو د ترسره کېدونکو عملیو بېلابېل ډولونه بیان کړئ."
+    },
+    {
+     "text": "Q.6 Define streams. Describe input and output streams in detail.",
+     "urdu": "Q.6 اسٹریمز کی تعریف کریں۔ ان پٹ اور آؤٹ پٹ اسٹریمز تفصیل سے بیان کریں۔",
+     "pashto": "Q.6 بهیرونه تعریف کړئ. د ننوتنې او وتنې بهیرونه په تفصیل بیان کړئ."
+    },
+    {
+     "text": "Q.7 What is meant by the term mode of file opening? Describe different modes of opening file.",
+     "urdu": "Q.7 فائل کھولنے کے موڈ کی اصطلاح سے کیا مراد ہے؟ فائل کھولنے کے مختلف موڈز بیان کریں۔",
+     "pashto": "Q.7 د دوتنې د پرانیستلو د حالت اصطلاح څه معنا لري؟ د دوتنې د پرانیستلو بېلابېل حالتونه بیان کړئ."
+    },
+    {
+     "text": "Q.8 What is file handling? Explain it in detail.",
+     "urdu": "Q.8 فائل ہینڈلنگ کیا ہے؟ تفصیل سے وضاحت کریں۔",
+     "pashto": "Q.8 د دوتنو چلول څه دي؟ په تفصیل یې تشریح کړئ."
+    }
+   ],
+   "theory": "Exercise\n\nQ.1 Fill in the Blanks.\n\ni. In C++ language, for handling of files, the header file ________ is used.\n\nii. The function ________ is used for closing a function.\n\niii. In the statement, open (“xyz.txt”, ios::out); ________ file is opened in output mode.\n\niv. If all output operations are to be performed at the end of the file then ________ should be used in the open function.\n\nv. A ________ is “a continuous flow or succession of bytes a stream of characters.”\n\nQ.2 Select the correct choice for the following Multiple Choice Questions.\n\ni. eof stands for ________ .\n\n(a) errors-on-files\n\n(b) end-of-file\n\n(c) exit-of-file\n\n(d) none of the above\n\nii. In file handling open() function is used ________ .\n\n(a) to open C++ compiler\n\n(b) to open a file\n\n(c) both a and b\n\n(d) none of the above\n\niii. Default mode parameter for ofstream is ________ .\n\n(a) ios::out\n\n(b) ios::in\n\n(c) ios::binary\n\n(d) both a and b\n\niv. A text file has the extension ________ .\n\n(a) .doc\n\n(b) .docx\n\n(c) .txt\n\n(d) .bin\n\nv. ios::binary is used as an argument to open() function for ________ .\n\n(a) opening file for input operation.\n\n(b) opening file for output operation.\n\n(c) opening file in binary mode.\n\n(d) none of the above.\n\nQ.3 Write TRUE/FALSE against the following statements.\n\ni. A string stream is a stream which reads input from or writes output to an associated string.\n\nii. The eof( )is a pointer which returns false when there are no more data to be read from an input file stream, and true otherwise.\n\niii. To open a file in binary mode, we need to set the file mode to ios::binary.\n\niv. close() Function is used in C++ file handling for opening a new file.\n\nv. Those files that store data in text format and are readable by human are called text file\n\nQ.4 Define file. Describe different types of file.\n\nQ.5 Describe different types of operations performed on the files.\n\nQ.6 Define streams. Describe input and output streams in detail.\n\nQ.7 What is meant by the term mode of file opening? Describe different modes of opening file.\n\nQ.8 What is file handling? Explain it in detail.",
+   "urdu": "مشق\n\nسوال 1: خالی جگہیں پُر کریں۔\n\ni. C++ زبان میں فائلز ہینڈل کرنے کے لیے ہیڈر فائل ________ استعمال ہوتی ہے۔\n\nii. فنکشن ________ فنکشن بند کرنے کے لیے استعمال ہوتا ہے۔\n\niii. بیان open (“xyz.txt”, ios::out); میں ________ فائل آؤٹ پٹ موڈ میں کھولی جاتی ہے۔\n\niv. اگر تمام آؤٹ پٹ عمل فائل کے آخر پر کرنے ہوں تو open فنکشن میں ________ استعمال ہونا چاہیے۔\n\nv. ________ ’’بائٹس کا مسلسل بہاؤ یا تسلسل، حروف کی ایک اسٹریم‘‘ ہے۔\n\nسوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔\n\ni. eof کا مطلب ہے ________ ۔\n\n(a) errors-on-files\n\n(b) end-of-file\n\n(c) exit-of-file\n\n(d) ان میں سے کوئی نہیں\n\nii. فائل ہینڈلنگ میں open() فنکشن ________ استعمال ہوتا ہے۔\n\n(a) C++ کمپائلر کھولنے کے لیے\n\n(b) فائل کھولنے کے لیے\n\n(c) a اور b دونوں\n\n(d) ان میں سے کوئی نہیں\n\niii. ofstream کا ڈیفالٹ موڈ پیرامیٹر ________ ہے۔\n\n(a) ios::out\n\n(b) ios::in\n\n(c) ios::binary\n\n(d) a اور b دونوں\n\niv. ٹیکسٹ فائل کی ایکسٹینشن ________ ہوتی ہے۔\n\n(a) .doc\n\n(b) .docx\n\n(c) .txt\n\n(d) .bin\n\nv. ios::binary فنکشن open() کو ________ کے لیے بطور آرگیومنٹ استعمال ہوتا ہے۔\n\n(a) ان پٹ عمل کے لیے فائل کھولنا\n\n(b) آؤٹ پٹ عمل کے لیے فائل کھولنا\n\n(c) بائنری موڈ میں فائل کھولنا\n\n(d) ان میں سے کوئی نہیں\n\nسوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔\n\ni. اسٹرنگ اسٹریم وہ اسٹریم ہے جو کسی وابستہ اسٹرنگ سے ان پٹ پڑھتی یا اس میں آؤٹ پٹ لکھتی ہے۔\n\nii. eof( ) ایک پوائنٹر ہے جو false واپس کرتا ہے جب ان پٹ فائل اسٹریم سے پڑھنے کے لیے مزید ڈیٹا نہ ہو، ورنہ true۔\n\niii. فائل کو بائنری موڈ میں کھولنے کے لیے ہمیں فائل موڈ ios::binary پر سیٹ کرنا ہوتا ہے۔\n\niv. close() فنکشن C++ فائل ہینڈلنگ میں نئی فائل کھولنے کے لیے استعمال ہوتا ہے۔\n\nv. وہ فائلز جو ڈیٹا کو ٹیکسٹ شکل میں محفوظ کرتی ہیں اور انسان پڑھ سکتے ہیں، ٹیکسٹ فائل کہلاتی ہیں\n\nQ.4 فائل کی تعریف کریں۔ فائل کی مختلف اقسام بیان کریں۔\n\nQ.5 فائلز پر کیے جانے والے مختلف قسم کے عمل بیان کریں۔\n\nQ.6 اسٹریمز کی تعریف کریں۔ ان پٹ اور آؤٹ پٹ اسٹریمز تفصیل سے بیان کریں۔\n\nQ.7 فائل کھولنے کے موڈ کی اصطلاح سے کیا مراد ہے؟ فائل کھولنے کے مختلف موڈز بیان کریں۔\n\nQ.8 فائل ہینڈلنگ کیا ہے؟ تفصیل سے وضاحت کریں۔",
+   "pashto": "تمرین\n\nپوښتنه ۱: تش ځایونه ډک کړئ.\n\ni. په C++ ژبه کې د دوتنو د چلولو لپاره ________ سرپاڼه دوتنه کارېږي.\n\nii. ________ فنکشن د فنکشن د تړلو لپاره کارېږي.\n\niii. په open (“xyz.txt”, ios::out); بیان کې ________ دوتنه د وتنې په حالت کې پرانیستل کېږي.\n\niv. که ټولې د وتنې عملیې د دوتنې په پای کې ترسره کېږي، نو په open فنکشن کې باید ________ وکارول شي.\n\nv. ________ \"د بایټونو دوامداره بهیر یا لړۍ، د تورو یو بهیر\" دی.\n\nپوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.\n\ni. eof د ________ لنډون دی.\n\n(a) errors-on-files\n\n(b) end-of-file\n\n(c) exit-of-file\n\n(d) له پورته هېڅ یو\n\nii. د دوتنو په چلولو کې open() فنکشن ________ کارېږي.\n\n(a) د C++ کمپایلر د پرانیستلو لپاره\n\n(b) د دوتنې د پرانیستلو لپاره\n\n(c) a او b دواړه\n\n(d) له پورته هېڅ یو\n\niii. د ofstream ډیفالټ حالت پاراميټر ________ دی.\n\n(a) ios::out\n\n(b) ios::in\n\n(c) ios::binary\n\n(d) a او b دواړه\n\niv. متني دوتنه ________ تمدید لري.\n\n(a) .doc\n\n(b) .docx\n\n(c) .txt\n\n(d) .bin\n\nv. ios::binary د open() فنکشن ته د ________ لپاره د دلیل په توګه کارېږي.\n\n(a) د ننوتنې عملیې لپاره دوتنه پرانیستل\n\n(b) د وتنې عملیې لپاره دوتنه پرانیستل\n\n(c) په باینري حالت کې دوتنه پرانیستل\n\n(d) له پورته هېڅ یو\n\nپوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.\n\ni. د تار بهیر هغه بهیر دی چې له یوه تړلي تار ننوتنه لولي یا ورته وتنه لیکي.\n\nii. eof( ) یو پوائنټر دی چې false بېرته ورکوي کله چې د ننوتنې دوتنې له بهیر د لوستلو لپاره نور ډېټا نه وي، او که نه true.\n\niii. د دوتنې په باینري حالت کې د پرانیستلو لپاره باید د دوتنې حالت ios::binary ته وټاکو.\n\niv. close() فنکشن د C++ د دوتنو په چلولو کې د نوې دوتنې د پرانیستلو لپاره کارېږي.\n\nv. هغه دوتنې چې ډېټا په متني بڼه ساتي او انسان یې لوستلی شي، متني دوتنه بلل کېږي\n\nQ.4 دوتنه تعریف کړئ. د دوتنې بېلابېل ډولونه بیان کړئ.\n\nQ.5 پر دوتنو د ترسره کېدونکو عملیو بېلابېل ډولونه بیان کړئ.\n\nQ.6 بهیرونه تعریف کړئ. د ننوتنې او وتنې بهیرونه په تفصیل بیان کړئ.\n\nQ.7 د دوتنې د پرانیستلو د حالت اصطلاح څه معنا لري؟ د دوتنې د پرانیستلو بېلابېل حالتونه بیان کړئ.\n\nQ.8 د دوتنو چلول څه دي؟ په تفصیل یې تشریح کړئ.",
+   "theoryUrdu": "مشق\n\nسوال 1: خالی جگہیں پُر کریں۔\n\ni. C++ زبان میں فائلز ہینڈل کرنے کے لیے ہیڈر فائل ________ استعمال ہوتی ہے۔\n\nii. فنکشن ________ فنکشن بند کرنے کے لیے استعمال ہوتا ہے۔\n\niii. بیان open (“xyz.txt”, ios::out); میں ________ فائل آؤٹ پٹ موڈ میں کھولی جاتی ہے۔\n\niv. اگر تمام آؤٹ پٹ عمل فائل کے آخر پر کرنے ہوں تو open فنکشن میں ________ استعمال ہونا چاہیے۔\n\nv. ________ ’’بائٹس کا مسلسل بہاؤ یا تسلسل، حروف کی ایک اسٹریم‘‘ ہے۔\n\nسوال 2: درج ذیل کثیر الانتخابی سوالات کا درست انتخاب کریں۔\n\ni. eof کا مطلب ہے ________ ۔\n\n(a) errors-on-files\n\n(b) end-of-file\n\n(c) exit-of-file\n\n(d) ان میں سے کوئی نہیں\n\nii. فائل ہینڈلنگ میں open() فنکشن ________ استعمال ہوتا ہے۔\n\n(a) C++ کمپائلر کھولنے کے لیے\n\n(b) فائل کھولنے کے لیے\n\n(c) a اور b دونوں\n\n(d) ان میں سے کوئی نہیں\n\niii. ofstream کا ڈیفالٹ موڈ پیرامیٹر ________ ہے۔\n\n(a) ios::out\n\n(b) ios::in\n\n(c) ios::binary\n\n(d) a اور b دونوں\n\niv. ٹیکسٹ فائل کی ایکسٹینشن ________ ہوتی ہے۔\n\n(a) .doc\n\n(b) .docx\n\n(c) .txt\n\n(d) .bin\n\nv. ios::binary فنکشن open() کو ________ کے لیے بطور آرگیومنٹ استعمال ہوتا ہے۔\n\n(a) ان پٹ عمل کے لیے فائل کھولنا\n\n(b) آؤٹ پٹ عمل کے لیے فائل کھولنا\n\n(c) بائنری موڈ میں فائل کھولنا\n\n(d) ان میں سے کوئی نہیں\n\nسوال 3: درج ذیل بیانات کے سامنے صحیح/غلط لکھیں۔\n\ni. اسٹرنگ اسٹریم وہ اسٹریم ہے جو کسی وابستہ اسٹرنگ سے ان پٹ پڑھتی یا اس میں آؤٹ پٹ لکھتی ہے۔\n\nii. eof( ) ایک پوائنٹر ہے جو false واپس کرتا ہے جب ان پٹ فائل اسٹریم سے پڑھنے کے لیے مزید ڈیٹا نہ ہو، ورنہ true۔\n\niii. فائل کو بائنری موڈ میں کھولنے کے لیے ہمیں فائل موڈ ios::binary پر سیٹ کرنا ہوتا ہے۔\n\niv. close() فنکشن C++ فائل ہینڈلنگ میں نئی فائل کھولنے کے لیے استعمال ہوتا ہے۔\n\nv. وہ فائلز جو ڈیٹا کو ٹیکسٹ شکل میں محفوظ کرتی ہیں اور انسان پڑھ سکتے ہیں، ٹیکسٹ فائل کہلاتی ہیں\n\nQ.4 فائل کی تعریف کریں۔ فائل کی مختلف اقسام بیان کریں۔\n\nQ.5 فائلز پر کیے جانے والے مختلف قسم کے عمل بیان کریں۔\n\nQ.6 اسٹریمز کی تعریف کریں۔ ان پٹ اور آؤٹ پٹ اسٹریمز تفصیل سے بیان کریں۔\n\nQ.7 فائل کھولنے کے موڈ کی اصطلاح سے کیا مراد ہے؟ فائل کھولنے کے مختلف موڈز بیان کریں۔\n\nQ.8 فائل ہینڈلنگ کیا ہے؟ تفصیل سے وضاحت کریں۔",
+   "theoryPashto": "تمرین\n\nپوښتنه ۱: تش ځایونه ډک کړئ.\n\ni. په C++ ژبه کې د دوتنو د چلولو لپاره ________ سرپاڼه دوتنه کارېږي.\n\nii. ________ فنکشن د فنکشن د تړلو لپاره کارېږي.\n\niii. په open (“xyz.txt”, ios::out); بیان کې ________ دوتنه د وتنې په حالت کې پرانیستل کېږي.\n\niv. که ټولې د وتنې عملیې د دوتنې په پای کې ترسره کېږي، نو په open فنکشن کې باید ________ وکارول شي.\n\nv. ________ \"د بایټونو دوامداره بهیر یا لړۍ، د تورو یو بهیر\" دی.\n\nپوښتنه ۲: د لاندې څو ځوابه پوښتنو سم ځواب وټاکئ.\n\ni. eof د ________ لنډون دی.\n\n(a) errors-on-files\n\n(b) end-of-file\n\n(c) exit-of-file\n\n(d) له پورته هېڅ یو\n\nii. د دوتنو په چلولو کې open() فنکشن ________ کارېږي.\n\n(a) د C++ کمپایلر د پرانیستلو لپاره\n\n(b) د دوتنې د پرانیستلو لپاره\n\n(c) a او b دواړه\n\n(d) له پورته هېڅ یو\n\niii. د ofstream ډیفالټ حالت پاراميټر ________ دی.\n\n(a) ios::out\n\n(b) ios::in\n\n(c) ios::binary\n\n(d) a او b دواړه\n\niv. متني دوتنه ________ تمدید لري.\n\n(a) .doc\n\n(b) .docx\n\n(c) .txt\n\n(d) .bin\n\nv. ios::binary د open() فنکشن ته د ________ لپاره د دلیل په توګه کارېږي.\n\n(a) د ننوتنې عملیې لپاره دوتنه پرانیستل\n\n(b) د وتنې عملیې لپاره دوتنه پرانیستل\n\n(c) په باینري حالت کې دوتنه پرانیستل\n\n(d) له پورته هېڅ یو\n\nپوښتنه ۳: د لاندې بیانونو مخې ته سم/ناسم ولیکئ.\n\ni. د تار بهیر هغه بهیر دی چې له یوه تړلي تار ننوتنه لولي یا ورته وتنه لیکي.\n\nii. eof( ) یو پوائنټر دی چې false بېرته ورکوي کله چې د ننوتنې دوتنې له بهیر د لوستلو لپاره نور ډېټا نه وي، او که نه true.\n\niii. د دوتنې په باینري حالت کې د پرانیستلو لپاره باید د دوتنې حالت ios::binary ته وټاکو.\n\niv. close() فنکشن د C++ د دوتنو په چلولو کې د نوې دوتنې د پرانیستلو لپاره کارېږي.\n\nv. هغه دوتنې چې ډېټا په متني بڼه ساتي او انسان یې لوستلی شي، متني دوتنه بلل کېږي\n\nQ.4 دوتنه تعریف کړئ. د دوتنې بېلابېل ډولونه بیان کړئ.\n\nQ.5 پر دوتنو د ترسره کېدونکو عملیو بېلابېل ډولونه بیان کړئ.\n\nQ.6 بهیرونه تعریف کړئ. د ننوتنې او وتنې بهیرونه په تفصیل بیان کړئ.\n\nQ.7 د دوتنې د پرانیستلو د حالت اصطلاح څه معنا لري؟ د دوتنې د پرانیستلو بېلابېل حالتونه بیان کړئ.\n\nQ.8 د دوتنو چلول څه دي؟ په تفصیل یې تشریح کړئ.",
+   "content": "<p>Exercise</p><p>Q.1 Fill in the Blanks.</p><p>i. In C++ language, for handling of files, the header file ________ is used.</p><p>ii. The function ________ is used for closing a function.</p><p>iii. In the statement, open (“xyz.txt”, ios::out); ________ file is opened in output mode.</p><p>iv. If all output operations are to be performed at the end of the file then ________ should be used in the open function.</p><p>v. A ________ is “a continuous flow or succession of bytes a stream of characters.”</p><p>Q.2 Select the correct choice for the following Multiple Choice Questions.</p><p>i. eof stands for ________ .</p><p>(a) errors-on-files</p><p>(b) end-of-file</p><p>(c) exit-of-file</p><p>(d) none of the above</p><p>ii. In file handling open() function is used ________ .</p><p>(a) to open C++ compiler</p><p>(b) to open a file</p><p>(c) both a and b</p><p>(d) none of the above</p><p>iii. Default mode parameter for ofstream is ________ .</p><p>(a) ios::out</p><p>(b) ios::in</p><p>(c) ios::binary</p><p>(d) both a and b</p><p>iv. A text file has the extension ________ .</p><p>(a) .doc</p><p>(b) .docx</p><p>(c) .txt</p><p>(d) .bin</p><p>v. ios::binary is used as an argument to open() function for ________ .</p><p>(a) opening file for input operation.</p><p>(b) opening file for output operation.</p><p>(c) opening file in binary mode.</p><p>(d) none of the above.</p><p>Q.3 Write TRUE/FALSE against the following statements.</p><p>i. A string stream is a stream which reads input from or writes output to an associated string.</p><p>ii. The eof( )is a pointer which returns false when there are no more data to be read from an input file stream, and true otherwise.</p><p>iii. To open a file in binary mode, we need to set the file mode to ios::binary.</p><p>iv. close() Function is used in C++ file handling for opening a new file.</p><p>v. Those files that store data in text format and are readable by human are called text file</p><p>Q.4 Define file. Describe different types of file.</p><p>Q.5 Describe different types of operations performed on the files.</p><p>Q.6 Define streams. Describe input and output streams in detail.</p><p>Q.7 What is meant by the term mode of file opening? Describe different modes of opening file.</p><p>Q.8 What is file handling? Explain it in detail.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      14,
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      19,
+      20,
+      21,
+      22
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      23
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      24,
+      25,
+      26,
+      27
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      28
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      29,
+      30,
+      31,
+      32
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      33
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      34,
+      35,
+      36,
+      37,
+      38
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      39
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      40
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      41
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      42
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      43
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 144,
+     "printedPages": [
+      277,
+      278
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 9 exercise",
+   "sourcePageLabel": "PDF 144 · p. 277–278",
+   "sourceNote": "The exercise runs from p.277 to p.278 (PDF145) and is recorded here whole.",
+   "unit": 9
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf144",
+   "unit": 9,
+   "printedPage": 277,
+   "description": "Summary: “The combinations … is called files”; Q1(ii) asks for the function used “for closing a function”; Q1(v) “bytes a stream of characters”. Retained as printed."
+  }
+ ],
+ "completeUnits": [
+  9
+ ]
+}

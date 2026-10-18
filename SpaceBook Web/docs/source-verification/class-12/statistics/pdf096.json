@@ -1,0 +1,498 @@
+{
+ "pdfPage": 96,
+ "sections": [
+  {
+   "id": "stat12-p096-example-5-9-dist",
+   "title": "Example 5.9 — sampling distribution of p̂₁ − p̂₂ and verification",
+   "headingUrdu": "مثال 5.9 — p̂₁ − p̂₂ کی نمونہ جاتی تقسیم اور تصدیق",
+   "headingPashto": "بېلګه 5.9 — د p̂₁ − p̂₂ نمونوي وېش او تایید",
+   "paras": [
+    {
+     "text": "The sampling distribution of $\\hat{p}_1-\\hat{p}_2$",
+     "urdu": "$\\hat{p}_1-\\hat{p}_2$ کی نمونہ جاتی تقسیم",
+     "pashto": "د $\\hat{p}_1-\\hat{p}_2$ نمونوي وېش"
+    },
+    {
+     "text": "Mean of sampling distribution is;",
+     "urdu": "نمونہ جاتی تقسیم کا اوسط یہ ہے؛",
+     "pashto": "د نمونوي وېش منځنی دا دی؛"
+    },
+    {
+     "text": "$$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)=-\\frac{27}{81}=-\\frac{1}{3}$$",
+     "urdu": "$$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)=-\\frac{27}{81}=-\\frac{1}{3}$$",
+     "pashto": "$$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)=-\\frac{27}{81}=-\\frac{1}{3}$$"
+    },
+    {
+     "text": "S.E of sampling distribution is;",
+     "urdu": "نمونہ جاتی تقسیم کی معیاری غلطی یہ ہے؛",
+     "pashto": "د نمونوي وېش معیاري تېروتنه دا ده؛"
+    },
+    {
+     "text": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}$",
+     "urdu": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}$",
+     "pashto": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}$"
+    },
+    {
+     "text": "$=\\sqrt{\\frac{1}{3}-\\left(-\\frac{1}{3}\\right)^2}=\\sqrt{\\frac{1}{3}-\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47$",
+     "urdu": "$=\\sqrt{\\frac{1}{3}-\\left(-\\frac{1}{3}\\right)^2}=\\sqrt{\\frac{1}{3}-\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47$",
+     "pashto": "$=\\sqrt{\\frac{1}{3}-\\left(-\\frac{1}{3}\\right)^2}=\\sqrt{\\frac{1}{3}-\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47$"
+    },
+    {
+     "text": "Verification:",
+     "urdu": "تصدیق:",
+     "pashto": "تایید:"
+    },
+    {
+     "text": "There is one even digit in population-1 so $p_1=\\frac{X_1}{N_1}=\\frac{1}{3}$",
+     "urdu": "آبادی-1 میں ایک جفت ہندسہ ہے لہٰذا $p_1=\\frac{X_1}{N_1}=\\frac{1}{3}$",
+     "pashto": "په نفوس-1 کې یو جفت رقم دی نو $p_1=\\frac{X_1}{N_1}=\\frac{1}{3}$"
+    },
+    {
+     "text": "There are two odd digits in population-2 so $p_2=\\frac{X_2}{N_2}=\\frac{2}{3}$",
+     "urdu": "آبادی-2 میں دو طاق ہندسے ہیں لہٰذا $p_2=\\frac{X_2}{N_2}=\\frac{2}{3}$",
+     "pashto": "په نفوس-2 کې دوه طاق رقمونه دي نو $p_2=\\frac{X_2}{N_2}=\\frac{2}{3}$"
+    },
+    {
+     "text": "Now $p_1-p_2=\\frac{1}{3}-\\frac{2}{3}=-\\frac{1}{3}=\\mu_{\\hat{p}_1-\\hat{p}_2}$.",
+     "urdu": "اب $p_1-p_2=\\frac{1}{3}-\\frac{2}{3}=-\\frac{1}{3}=\\mu_{\\hat{p}_1-\\hat{p}_2}$۔",
+     "pashto": "اوس $p_1-p_2=\\frac{1}{3}-\\frac{2}{3}=-\\frac{1}{3}=\\mu_{\\hat{p}_1-\\hat{p}_2}$."
+    },
+    {
+     "text": "Now by property, the S.E in S.W.R case is",
+     "urdu": "اب خاصیت کے مطابق S.W.R کی صورت میں معیاری غلطی یہ ہے",
+     "pashto": "اوس د ځانګړنې له مخې د S.W.R په حالت کې معیاري تېروتنه دا ده"
+    },
+    {
+     "text": "$$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}=\\sqrt{\\frac{\\left(\\frac{1}{3}\\right)\\left(\\frac{2}{3}\\right)}{2}+\\frac{\\left(\\frac{2}{3}\\right)\\left(\\frac{1}{3}\\right)}{2}}=\\sqrt{\\frac{1}{9}+\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47.$$",
+     "urdu": "$$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}=\\sqrt{\\frac{\\left(\\frac{1}{3}\\right)\\left(\\frac{2}{3}\\right)}{2}+\\frac{\\left(\\frac{2}{3}\\right)\\left(\\frac{1}{3}\\right)}{2}}=\\sqrt{\\frac{1}{9}+\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47.$$",
+     "pashto": "$$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}=\\sqrt{\\frac{\\left(\\frac{1}{3}\\right)\\left(\\frac{2}{3}\\right)}{2}+\\frac{\\left(\\frac{2}{3}\\right)\\left(\\frac{1}{3}\\right)}{2}}=\\sqrt{\\frac{1}{9}+\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47.$$"
+    }
+   ],
+   "theory": "The sampling distribution of \\hat{p}_1-\\hat{p}_2\n\nMean of sampling distribution is;\n\n$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)=-\\frac{27}{81}=-\\frac{1}{3}$\n\nS.E of sampling distribution is;\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}\n\n=\\sqrt{\\frac{1}{3}-\\left(-\\frac{1}{3}\\right)^2}=\\sqrt{\\frac{1}{3}-\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47\n\nVerification:\n\nThere is one even digit in population-1 so p_1=\\frac{X_1}{N_1}=\\frac{1}{3}\n\nThere are two odd digits in population-2 so p_2=\\frac{X_2}{N_2}=\\frac{2}{3}\n\nNow p_1-p_2=\\frac{1}{3}-\\frac{2}{3}=-\\frac{1}{3}=\\mu_{\\hat{p}_1-\\hat{p}_2}.\n\nNow by property, the S.E in S.W.R case is\n\n$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}=\\sqrt{\\frac{\\left(\\frac{1}{3}\\right)\\left(\\frac{2}{3}\\right)}{2}+\\frac{\\left(\\frac{2}{3}\\right)\\left(\\frac{1}{3}\\right)}{2}}=\\sqrt{\\frac{1}{9}+\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47.$",
+   "urdu": "\\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم\n\nنمونہ جاتی تقسیم کا اوسط یہ ہے؛\n\n$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)=-\\frac{27}{81}=-\\frac{1}{3}$\n\nنمونہ جاتی تقسیم کی معیاری غلطی یہ ہے؛\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}\n\n=\\sqrt{\\frac{1}{3}-\\left(-\\frac{1}{3}\\right)^2}=\\sqrt{\\frac{1}{3}-\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47\n\nتصدیق:\n\nآبادی-1 میں ایک جفت ہندسہ ہے لہٰذا p_1=\\frac{X_1}{N_1}=\\frac{1}{3}\n\nآبادی-2 میں دو طاق ہندسے ہیں لہٰذا p_2=\\frac{X_2}{N_2}=\\frac{2}{3}\n\nاب p_1-p_2=\\frac{1}{3}-\\frac{2}{3}=-\\frac{1}{3}=\\mu_{\\hat{p}_1-\\hat{p}_2}۔\n\nاب خاصیت کے مطابق S.W.R کی صورت میں معیاری غلطی یہ ہے\n\n$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}=\\sqrt{\\frac{\\left(\\frac{1}{3}\\right)\\left(\\frac{2}{3}\\right)}{2}+\\frac{\\left(\\frac{2}{3}\\right)\\left(\\frac{1}{3}\\right)}{2}}=\\sqrt{\\frac{1}{9}+\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47.$",
+   "pashto": "د \\hat{p}_1-\\hat{p}_2 نمونوي وېش\n\nد نمونوي وېش منځنی دا دی؛\n\n$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)=-\\frac{27}{81}=-\\frac{1}{3}$\n\nد نمونوي وېش معیاري تېروتنه دا ده؛\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}\n\n=\\sqrt{\\frac{1}{3}-\\left(-\\frac{1}{3}\\right)^2}=\\sqrt{\\frac{1}{3}-\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47\n\nتایید:\n\nپه نفوس-1 کې یو جفت رقم دی نو p_1=\\frac{X_1}{N_1}=\\frac{1}{3}\n\nپه نفوس-2 کې دوه طاق رقمونه دي نو p_2=\\frac{X_2}{N_2}=\\frac{2}{3}\n\nاوس p_1-p_2=\\frac{1}{3}-\\frac{2}{3}=-\\frac{1}{3}=\\mu_{\\hat{p}_1-\\hat{p}_2}.\n\nاوس د ځانګړنې له مخې د S.W.R په حالت کې معیاري تېروتنه دا ده\n\n$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}=\\sqrt{\\frac{\\left(\\frac{1}{3}\\right)\\left(\\frac{2}{3}\\right)}{2}+\\frac{\\left(\\frac{2}{3}\\right)\\left(\\frac{1}{3}\\right)}{2}}=\\sqrt{\\frac{1}{9}+\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47.$",
+   "theoryUrdu": "\\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم\n\nنمونہ جاتی تقسیم کا اوسط یہ ہے؛\n\n$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)=-\\frac{27}{81}=-\\frac{1}{3}$\n\nنمونہ جاتی تقسیم کی معیاری غلطی یہ ہے؛\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}\n\n=\\sqrt{\\frac{1}{3}-\\left(-\\frac{1}{3}\\right)^2}=\\sqrt{\\frac{1}{3}-\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47\n\nتصدیق:\n\nآبادی-1 میں ایک جفت ہندسہ ہے لہٰذا p_1=\\frac{X_1}{N_1}=\\frac{1}{3}\n\nآبادی-2 میں دو طاق ہندسے ہیں لہٰذا p_2=\\frac{X_2}{N_2}=\\frac{2}{3}\n\nاب p_1-p_2=\\frac{1}{3}-\\frac{2}{3}=-\\frac{1}{3}=\\mu_{\\hat{p}_1-\\hat{p}_2}۔\n\nاب خاصیت کے مطابق S.W.R کی صورت میں معیاری غلطی یہ ہے\n\n$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}=\\sqrt{\\frac{\\left(\\frac{1}{3}\\right)\\left(\\frac{2}{3}\\right)}{2}+\\frac{\\left(\\frac{2}{3}\\right)\\left(\\frac{1}{3}\\right)}{2}}=\\sqrt{\\frac{1}{9}+\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47.$",
+   "theoryPashto": "د \\hat{p}_1-\\hat{p}_2 نمونوي وېش\n\nد نمونوي وېش منځنی دا دی؛\n\n$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)=-\\frac{27}{81}=-\\frac{1}{3}$\n\nد نمونوي وېش معیاري تېروتنه دا ده؛\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}\n\n=\\sqrt{\\frac{1}{3}-\\left(-\\frac{1}{3}\\right)^2}=\\sqrt{\\frac{1}{3}-\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47\n\nتایید:\n\nپه نفوس-1 کې یو جفت رقم دی نو p_1=\\frac{X_1}{N_1}=\\frac{1}{3}\n\nپه نفوس-2 کې دوه طاق رقمونه دي نو p_2=\\frac{X_2}{N_2}=\\frac{2}{3}\n\nاوس p_1-p_2=\\frac{1}{3}-\\frac{2}{3}=-\\frac{1}{3}=\\mu_{\\hat{p}_1-\\hat{p}_2}.\n\nاوس د ځانګړنې له مخې د S.W.R په حالت کې معیاري تېروتنه دا ده\n\n$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}=\\sqrt{\\frac{\\left(\\frac{1}{3}\\right)\\left(\\frac{2}{3}\\right)}{2}+\\frac{\\left(\\frac{2}{3}\\right)\\left(\\frac{1}{3}\\right)}{2}}=\\sqrt{\\frac{1}{9}+\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47.$",
+   "content": "<p>The sampling distribution of \\hat{p}_1-\\hat{p}_2</p><p>Mean of sampling distribution is;</p><p>$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)=-\\frac{27}{81}=-\\frac{1}{3}$</p><p>S.E of sampling distribution is;</p><p>\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}</p><p>=\\sqrt{\\frac{1}{3}-\\left(-\\frac{1}{3}\\right)^2}=\\sqrt{\\frac{1}{3}-\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47</p><p>Verification:</p><p>There is one even digit in population-1 so p_1=\\frac{X_1}{N_1}=\\frac{1}{3}</p><p>There are two odd digits in population-2 so p_2=\\frac{X_2}{N_2}=\\frac{2}{3}</p><p>Now p_1-p_2=\\frac{1}{3}-\\frac{2}{3}=-\\frac{1}{3}=\\mu_{\\hat{p}_1-\\hat{p}_2}.</p><p>Now by property, the S.E in S.W.R case is</p><p>$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}=\\sqrt{\\frac{\\left(\\frac{1}{3}\\right)\\left(\\frac{2}{3}\\right)}{2}+\\frac{\\left(\\frac{2}{3}\\right)\\left(\\frac{1}{3}\\right)}{2}}=\\sqrt{\\frac{1}{9}+\\frac{1}{9}}=\\sqrt{\\frac{2}{9}}=0.47.$</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex5-9-dist"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      4,
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex5-9-dist",
+     "headers": [
+      "$\\hat{p}_1-\\hat{p}_2$",
+      "$f$",
+      "$f(\\hat{p}_1-\\hat{p}_2)$",
+      "$(\\hat{p}_1-\\hat{p}_2)f(\\hat{p}_1-\\hat{p}_2)$",
+      "$(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)$"
+     ],
+     "rows": [
+      [
+       "−1",
+       "16",
+       "$\\frac{16}{81}$",
+       "$-\\frac{16}{81}$",
+       "$\\frac{16}{81}$"
+      ],
+      [
+       "$-\\frac{1}{2}$",
+       "32",
+       "$\\frac{32}{81}$",
+       "$-\\frac{16}{81}$",
+       "$\\frac{8}{81}$"
+      ],
+      [
+       "0",
+       "24",
+       "$\\frac{24}{81}$",
+       "0",
+       "0"
+      ],
+      [
+       "$\\frac{1}{2}$",
+       "08",
+       "$\\frac{8}{81}$",
+       "$-\\frac{4}{81}$",
+       "$\\frac{2}{81}$"
+      ],
+      [
+       "1",
+       "01",
+       "$\\frac{1}{81}$",
+       "$\\frac{1}{81}$",
+       "$\\frac{1}{81}$"
+      ],
+      [
+       "Total",
+       "81",
+       "1",
+       "$\\frac{-27}{81}=-\\frac{1}{3}$",
+       "$\\frac{27}{81}=\\frac{1}{3}$"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$\\hat{p}_1-\\hat{p}_2$",
+        "$f$",
+        "$f(\\hat{p}_1-\\hat{p}_2)$",
+        "$(\\hat{p}_1-\\hat{p}_2)f(\\hat{p}_1-\\hat{p}_2)$",
+        "$(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)$"
+       ],
+       "rows": [
+        [
+         "−1",
+         "16",
+         "$\\frac{16}{81}$",
+         "$-\\frac{16}{81}$",
+         "$\\frac{16}{81}$"
+        ],
+        [
+         "$-\\frac{1}{2}$",
+         "32",
+         "$\\frac{32}{81}$",
+         "$-\\frac{16}{81}$",
+         "$\\frac{8}{81}$"
+        ],
+        [
+         "0",
+         "24",
+         "$\\frac{24}{81}$",
+         "0",
+         "0"
+        ],
+        [
+         "$\\frac{1}{2}$",
+         "08",
+         "$\\frac{8}{81}$",
+         "$-\\frac{4}{81}$",
+         "$\\frac{2}{81}$"
+        ],
+        [
+         "1",
+         "01",
+         "$\\frac{1}{81}$",
+         "$\\frac{1}{81}$",
+         "$\\frac{1}{81}$"
+        ],
+        [
+         "کل",
+         "81",
+         "1",
+         "$\\frac{-27}{81}=-\\frac{1}{3}$",
+         "$\\frac{27}{81}=\\frac{1}{3}$"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$\\hat{p}_1-\\hat{p}_2$",
+        "$f$",
+        "$f(\\hat{p}_1-\\hat{p}_2)$",
+        "$(\\hat{p}_1-\\hat{p}_2)f(\\hat{p}_1-\\hat{p}_2)$",
+        "$(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)$"
+       ],
+       "rows": [
+        [
+         "−1",
+         "16",
+         "$\\frac{16}{81}$",
+         "$-\\frac{16}{81}$",
+         "$\\frac{16}{81}$"
+        ],
+        [
+         "$-\\frac{1}{2}$",
+         "32",
+         "$\\frac{32}{81}$",
+         "$-\\frac{16}{81}$",
+         "$\\frac{8}{81}$"
+        ],
+        [
+         "0",
+         "24",
+         "$\\frac{24}{81}$",
+         "0",
+         "0"
+        ],
+        [
+         "$\\frac{1}{2}$",
+         "08",
+         "$\\frac{8}{81}$",
+         "$-\\frac{4}{81}$",
+         "$\\frac{2}{81}$"
+        ],
+        [
+         "1",
+         "01",
+         "$\\frac{1}{81}$",
+         "$\\frac{1}{81}$",
+         "$\\frac{1}{81}$"
+        ],
+        [
+         "ټول",
+         "81",
+         "1",
+         "$\\frac{-27}{81}=-\\frac{1}{3}$",
+         "$\\frac{27}{81}=\\frac{1}{3}$"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 96,
+     "printedPages": [
+      183,
+      184
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 5
+  },
+  {
+   "id": "stat12-p096-example-5-10",
+   "title": "Example 5.10 — difference between proportions of men and women",
+   "headingUrdu": "مثال 5.10 — مردوں اور خواتین کے تناسبوں کا فرق",
+   "headingPashto": "بېلګه 5.10 — د نارینه وو او ښځو د تناسبونو توپیر",
+   "paras": [
+    {
+     "text": "Example 5.10",
+     "urdu": "مثال 5.10",
+     "pashto": "بېلګه 5.10"
+    },
+    {
+     "text": "Suppose that 43% of men and 32% of women of a city are in favor of a proposed recreational facility. Describe the sampling distribution of the difference between sample proportions from samples of sizes 350 men and 270 women.",
+     "urdu": "فرض کریں کسی شہر کے 43% مرد اور 32% خواتین ایک مجوزہ تفریحی سہولت کے حق میں ہیں۔ 350 مردوں اور 270 خواتین کے نمونوں سے نمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم بیان کریں۔",
+     "pashto": "فرض کړئ د یوه ښار 43% نارینه او 32% ښځینه د یوې وړاندیز شوې تفریحي اسانتیا په ګټه دي. د 350 نارینه وو او 270 ښځو له نمونو څخه د نمونو د تناسبونو د توپیر نمونوي وېش بیان کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Let proportion of men is denoted by $p_1$ and proportion of women by $p_2$, then given information is symbolized as;",
+     "urdu": "فرض کریں مردوں کے تناسب کو $p_1$ اور خواتین کے تناسب کو $p_2$ سے ظاہر کیا جائے، تو دی گئی معلومات کو علامتی طور پر یوں لکھا جاتا ہے؛",
+     "pashto": "فرض کړئ د نارینه وو تناسب په $p_1$ او د ښځو تناسب په $p_2$ ښودل کېږي، نو ورکړل شوي معلومات په نښو داسې لیکل کېږي؛"
+    },
+    {
+     "text": "$p_1=43\\%=0.43\\qquad p_2=32\\%=0.32$",
+     "urdu": "$p_1=43\\%=0.43\\qquad p_2=32\\%=0.32$",
+     "pashto": "$p_1=43\\%=0.43\\qquad p_2=32\\%=0.32$"
+    },
+    {
+     "text": "$q_1=1-P_1=1-0.43=0.57\\qquad q_2=1-P_2=1-0.32=0.68$",
+     "urdu": "$q_1=1-P_1=1-0.43=0.57\\qquad q_2=1-P_2=1-0.32=0.68$",
+     "pashto": "$q_1=1-P_1=1-0.43=0.57\\qquad q_2=1-P_2=1-0.32=0.68$"
+    },
+    {
+     "text": "$n_1=350\\qquad n_2=270.$",
+     "urdu": "$n_1=350\\qquad n_2=270.$",
+     "pashto": "$n_1=350\\qquad n_2=270.$"
+    },
+    {
+     "text": "Describing the sampling distribution of the difference between sample proportions means to find its mean, S.E and the shape.",
+     "urdu": "نمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم بیان کرنے کا مطلب اس کا اوسط، معیاری غلطی اور شکل معلوم کرنا ہے۔",
+     "pashto": "د نمونو د تناسبونو د توپیر د نمونوي وېش بیانول د هغه د منځني، معیاري تېروتنې او بڼې پیدا کول دي."
+    },
+    {
+     "text": "By property we know that:",
+     "urdu": "خاصیت کے مطابق ہم جانتے ہیں کہ:",
+     "pashto": "د ځانګړنې له مخې پوهېږو چې:"
+    },
+    {
+     "text": "$\\mu_{\\hat{p}_1-\\hat{p}_2}=P_1-P_2=0.43-0.32=0.11$",
+     "urdu": "$\\mu_{\\hat{p}_1-\\hat{p}_2}=P_1-P_2=0.43-0.32=0.11$",
+     "pashto": "$\\mu_{\\hat{p}_1-\\hat{p}_2}=P_1-P_2=0.43-0.32=0.11$"
+    },
+    {
+     "text": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}$",
+     "urdu": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}$",
+     "pashto": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}$"
+    },
+    {
+     "text": "$=\\sqrt{\\frac{(0.43)(0.57)}{350}+\\frac{(0.32)(0.68)}{270}}=\\sqrt{0.0007+0.0008}=\\sqrt{0.00151}=0.04$",
+     "urdu": "$=\\sqrt{\\frac{(0.43)(0.57)}{350}+\\frac{(0.32)(0.68)}{270}}=\\sqrt{0.0007+0.0008}=\\sqrt{0.00151}=0.04$",
+     "pashto": "$=\\sqrt{\\frac{(0.43)(0.57)}{350}+\\frac{(0.32)(0.68)}{270}}=\\sqrt{0.0007+0.0008}=\\sqrt{0.00151}=0.04$"
+    },
+    {
+     "text": "Since the samples are sufficiently large, it means that sampling distribution of $\\hat{p}_1-\\hat{p}_2$ has approximately normal distribution with mean 0.11 and standard deviation 0.04.",
+     "urdu": "چونکہ نمونے کافی بڑے ہیں، اس کا مطلب ہے کہ $\\hat{p}_1-\\hat{p}_2$ کی نمونہ جاتی تقسیم تقریباً نارمل ہے جس کا اوسط 0.11 اور معیاری انحراف 0.04 ہے۔",
+     "pashto": "څرنګه چې نمونې کافي لویې دي، مانا یې دا ده چې د $\\hat{p}_1-\\hat{p}_2$ نمونوي وېش نږدې نورمال دی چې منځنی یې 0.11 او معیاري انحراف یې 0.04 دی."
+    }
+   ],
+   "theory": "Example 5.10\n\nSuppose that 43% of men and 32% of women of a city are in favor of a proposed recreational facility. Describe the sampling distribution of the difference between sample proportions from samples of sizes 350 men and 270 women.\n\nSolution:\n\nLet proportion of men is denoted by p_1 and proportion of women by p_2, then given information is symbolized as;\n\np_1=43\\%=0.43\\qquad p_2=32\\%=0.32\n\nq_1=1-P_1=1-0.43=0.57\\qquad q_2=1-P_2=1-0.32=0.68\n\nn_1=350\\qquad n_2=270.\n\nDescribing the sampling distribution of the difference between sample proportions means to find its mean, S.E and the shape.\n\nBy property we know that:\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=P_1-P_2=0.43-0.32=0.11\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}\n\n=\\sqrt{\\frac{(0.43)(0.57)}{350}+\\frac{(0.32)(0.68)}{270}}=\\sqrt{0.0007+0.0008}=\\sqrt{0.00151}=0.04\n\nSince the samples are sufficiently large, it means that sampling distribution of \\hat{p}_1-\\hat{p}_2 has approximately normal distribution with mean 0.11 and standard deviation 0.04.",
+   "urdu": "مثال 5.10\n\nفرض کریں کسی شہر کے 43% مرد اور 32% خواتین ایک مجوزہ تفریحی سہولت کے حق میں ہیں۔ 350 مردوں اور 270 خواتین کے نمونوں سے نمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم بیان کریں۔\n\nحل:\n\nفرض کریں مردوں کے تناسب کو p_1 اور خواتین کے تناسب کو p_2 سے ظاہر کیا جائے، تو دی گئی معلومات کو علامتی طور پر یوں لکھا جاتا ہے؛\n\np_1=43\\%=0.43\\qquad p_2=32\\%=0.32\n\nq_1=1-P_1=1-0.43=0.57\\qquad q_2=1-P_2=1-0.32=0.68\n\nn_1=350\\qquad n_2=270.\n\nنمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم بیان کرنے کا مطلب اس کا اوسط، معیاری غلطی اور شکل معلوم کرنا ہے۔\n\nخاصیت کے مطابق ہم جانتے ہیں کہ:\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=P_1-P_2=0.43-0.32=0.11\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}\n\n=\\sqrt{\\frac{(0.43)(0.57)}{350}+\\frac{(0.32)(0.68)}{270}}=\\sqrt{0.0007+0.0008}=\\sqrt{0.00151}=0.04\n\nچونکہ نمونے کافی بڑے ہیں، اس کا مطلب ہے کہ \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم تقریباً نارمل ہے جس کا اوسط 0.11 اور معیاری انحراف 0.04 ہے۔",
+   "pashto": "بېلګه 5.10\n\nفرض کړئ د یوه ښار 43% نارینه او 32% ښځینه د یوې وړاندیز شوې تفریحي اسانتیا په ګټه دي. د 350 نارینه وو او 270 ښځو له نمونو څخه د نمونو د تناسبونو د توپیر نمونوي وېش بیان کړئ.\n\nحل:\n\nفرض کړئ د نارینه وو تناسب په p_1 او د ښځو تناسب په p_2 ښودل کېږي، نو ورکړل شوي معلومات په نښو داسې لیکل کېږي؛\n\np_1=43\\%=0.43\\qquad p_2=32\\%=0.32\n\nq_1=1-P_1=1-0.43=0.57\\qquad q_2=1-P_2=1-0.32=0.68\n\nn_1=350\\qquad n_2=270.\n\nد نمونو د تناسبونو د توپیر د نمونوي وېش بیانول د هغه د منځني، معیاري تېروتنې او بڼې پیدا کول دي.\n\nد ځانګړنې له مخې پوهېږو چې:\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=P_1-P_2=0.43-0.32=0.11\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}\n\n=\\sqrt{\\frac{(0.43)(0.57)}{350}+\\frac{(0.32)(0.68)}{270}}=\\sqrt{0.0007+0.0008}=\\sqrt{0.00151}=0.04\n\nڅرنګه چې نمونې کافي لویې دي، مانا یې دا ده چې د \\hat{p}_1-\\hat{p}_2 نمونوي وېش نږدې نورمال دی چې منځنی یې 0.11 او معیاري انحراف یې 0.04 دی.",
+   "theoryUrdu": "مثال 5.10\n\nفرض کریں کسی شہر کے 43% مرد اور 32% خواتین ایک مجوزہ تفریحی سہولت کے حق میں ہیں۔ 350 مردوں اور 270 خواتین کے نمونوں سے نمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم بیان کریں۔\n\nحل:\n\nفرض کریں مردوں کے تناسب کو p_1 اور خواتین کے تناسب کو p_2 سے ظاہر کیا جائے، تو دی گئی معلومات کو علامتی طور پر یوں لکھا جاتا ہے؛\n\np_1=43\\%=0.43\\qquad p_2=32\\%=0.32\n\nq_1=1-P_1=1-0.43=0.57\\qquad q_2=1-P_2=1-0.32=0.68\n\nn_1=350\\qquad n_2=270.\n\nنمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم بیان کرنے کا مطلب اس کا اوسط، معیاری غلطی اور شکل معلوم کرنا ہے۔\n\nخاصیت کے مطابق ہم جانتے ہیں کہ:\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=P_1-P_2=0.43-0.32=0.11\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}\n\n=\\sqrt{\\frac{(0.43)(0.57)}{350}+\\frac{(0.32)(0.68)}{270}}=\\sqrt{0.0007+0.0008}=\\sqrt{0.00151}=0.04\n\nچونکہ نمونے کافی بڑے ہیں، اس کا مطلب ہے کہ \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم تقریباً نارمل ہے جس کا اوسط 0.11 اور معیاری انحراف 0.04 ہے۔",
+   "theoryPashto": "بېلګه 5.10\n\nفرض کړئ د یوه ښار 43% نارینه او 32% ښځینه د یوې وړاندیز شوې تفریحي اسانتیا په ګټه دي. د 350 نارینه وو او 270 ښځو له نمونو څخه د نمونو د تناسبونو د توپیر نمونوي وېش بیان کړئ.\n\nحل:\n\nفرض کړئ د نارینه وو تناسب په p_1 او د ښځو تناسب په p_2 ښودل کېږي، نو ورکړل شوي معلومات په نښو داسې لیکل کېږي؛\n\np_1=43\\%=0.43\\qquad p_2=32\\%=0.32\n\nq_1=1-P_1=1-0.43=0.57\\qquad q_2=1-P_2=1-0.32=0.68\n\nn_1=350\\qquad n_2=270.\n\nد نمونو د تناسبونو د توپیر د نمونوي وېش بیانول د هغه د منځني، معیاري تېروتنې او بڼې پیدا کول دي.\n\nد ځانګړنې له مخې پوهېږو چې:\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=P_1-P_2=0.43-0.32=0.11\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}\n\n=\\sqrt{\\frac{(0.43)(0.57)}{350}+\\frac{(0.32)(0.68)}{270}}=\\sqrt{0.0007+0.0008}=\\sqrt{0.00151}=0.04\n\nڅرنګه چې نمونې کافي لویې دي، مانا یې دا ده چې د \\hat{p}_1-\\hat{p}_2 نمونوي وېش نږدې نورمال دی چې منځنی یې 0.11 او معیاري انحراف یې 0.04 دی.",
+   "content": "<p>Example 5.10</p><p>Suppose that 43% of men and 32% of women of a city are in favor of a proposed recreational facility. Describe the sampling distribution of the difference between sample proportions from samples of sizes 350 men and 270 women.</p><p>Solution:</p><p>Let proportion of men is denoted by p_1 and proportion of women by p_2, then given information is symbolized as;</p><p>p_1=43\\%=0.43\\qquad p_2=32\\%=0.32</p><p>q_1=1-P_1=1-0.43=0.57\\qquad q_2=1-P_2=1-0.32=0.68</p><p>n_1=350\\qquad n_2=270.</p><p>Describing the sampling distribution of the difference between sample proportions means to find its mean, S.E and the shape.</p><p>By property we know that:</p><p>\\mu_{\\hat{p}_1-\\hat{p}_2}=P_1-P_2=0.43-0.32=0.11</p><p>\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}</p><p>=\\sqrt{\\frac{(0.43)(0.57)}{350}+\\frac{(0.32)(0.68)}{270}}=\\sqrt{0.0007+0.0008}=\\sqrt{0.00151}=0.04</p><p>Since the samples are sufficiently large, it means that sampling distribution of \\hat{p}_1-\\hat{p}_2 has approximately normal distribution with mean 0.11 and standard deviation 0.04.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 96,
+     "printedPages": [
+      184
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 5
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p183-ex59-table",
+   "unit": 5,
+   "printedPage": 183,
+   "description": "Example 5.9 sampling-distribution table prints (p̂₁−p̂₂)f entries −16/81 for the −1/2 row and −4/81 for the +1/2 row (expected −16/81 and +4/81); printed values retained."
+  }
+ ],
+ "completeUnits": []
+}

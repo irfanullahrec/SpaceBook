@@ -1,0 +1,466 @@
+{
+ "pdfPage": 9,
+ "sections": [
+  {
+   "id": "stat12-p009-simple-events",
+   "title": "1.2.5 Probability of simple events — Examples 1.5–1.8",
+   "headingUrdu": "1.2.5 سادہ واقعات کا احتمال — مثالیں 1.5–1.8",
+   "headingPashto": "1.2.5 د ساده پېښو احتمال — بېلګې 1.5–1.8",
+   "paras": [
+    {
+     "text": "Note that:",
+     "urdu": "نوٹ کریں کہ:",
+     "pashto": "پام وکړئ چې:"
+    },
+    {
+     "text": "(i) If $P(E)=0$, the event E is said to be null event.",
+     "urdu": "(i) اگر $P(E)=0$ ہو تو واقعہ E خالی واقعہ کہلاتا ہے۔",
+     "pashto": "(i) که $P(E)=0$ وي، نو E پېښه تشه پېښه بلل کېږي."
+    },
+    {
+     "text": "(ii) If $P(E)=1$, the event E is said to be sure event.",
+     "urdu": "(ii) اگر $P(E)=1$ ہو تو واقعہ E یقینی واقعہ کہلاتا ہے۔",
+     "pashto": "(ii) که $P(E)=1$ وي، نو E پېښه حتمي پېښه بلل کېږي."
+    },
+    {
+     "text": "Axiom (II) $\\;P(S)=1$",
+     "urdu": "مسلّمہ (II) $\\;P(S)=1$",
+     "pashto": "اصل (II) $\\;P(S)=1$"
+    },
+    {
+     "text": "Axiom (III) If $E_1$ and $E_2$ are mutually exclusive events, then $P(E_1\\cup E_2)=P(E_1)+P(E_2)$",
+     "urdu": "مسلّمہ (III) اگر $E_1$ اور $E_2$ باہم مانع واقعات ہوں تو $P(E_1\\cup E_2)=P(E_1)+P(E_2)$",
+     "pashto": "اصل (III) که $E_1$ او $E_2$ یو بل منع کوونکې پېښې وي، نو $P(E_1\\cup E_2)=P(E_1)+P(E_2)$"
+    },
+    {
+     "text": "1.2.5 Calculation of probability in case of simple events",
+     "urdu": "1.2.5 سادہ واقعات کی صورت میں احتمال کا حساب",
+     "pashto": "1.2.5 د ساده پېښو په حالت کې د احتمال محاسبه"
+    },
+    {
+     "text": "Example 1.5",
+     "urdu": "مثال 1.5",
+     "pashto": "بېلګه 1.5"
+    },
+    {
+     "text": "If a coin is tossed, what is the chance of a head?",
+     "urdu": "اگر ایک سکہ اچھالا جائے تو چِت آنے کا کیا امکان ہے؟",
+     "pashto": "که یوه سکه واچول شي، د سر د راتلو چانس څومره دی؟"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$n(S)=2^n=2^1=2$",
+     "urdu": "$n(S)=2^n=2^1=2$",
+     "pashto": "$n(S)=2^n=2^1=2$"
+    },
+    {
+     "text": "$S=\\{H,T\\}$",
+     "urdu": "$S=\\{H,T\\}$",
+     "pashto": "$S=\\{H,T\\}$"
+    },
+    {
+     "text": "Let A: head occurs",
+     "urdu": "فرض کریں A: چِت آتا ہے",
+     "pashto": "فرض کړئ A: سر راځي"
+    },
+    {
+     "text": "$A=\\{H\\}$",
+     "urdu": "$A=\\{H\\}$",
+     "pashto": "$A=\\{H\\}$"
+    },
+    {
+     "text": "$n(A)=1$",
+     "urdu": "$n(A)=1$",
+     "pashto": "$n(A)=1$"
+    },
+    {
+     "text": "$\\therefore P(A)=\\frac{n(A)}{n(S)}=\\frac{m}{n}=\\frac{1}{2}=0.5$",
+     "urdu": "$\\therefore P(A)=\\frac{n(A)}{n(S)}=\\frac{m}{n}=\\frac{1}{2}=0.5$",
+     "pashto": "$\\therefore P(A)=\\frac{n(A)}{n(S)}=\\frac{m}{n}=\\frac{1}{2}=0.5$"
+    },
+    {
+     "text": "It will be more suitable for interpretation to express the answer in percentage.",
+     "urdu": "تشریح کے لیے جواب کو فیصد میں ظاہر کرنا زیادہ موزوں ہوگا۔",
+     "pashto": "د تفسیر لپاره به ښه وي چې ځواب په سلنه کې وښودل شي."
+    },
+    {
+     "text": "Example 1.6",
+     "urdu": "مثال 1.6",
+     "pashto": "بېلګه 1.6"
+    },
+    {
+     "text": "A fair coin is tossed twice. What is the probability that exactly one head occurs?",
+     "urdu": "ایک منصفانہ سکہ دو بار اچھالا جاتا ہے۔ ٹھیک ایک چِت آنے کا احتمال کیا ہے؟",
+     "pashto": "یوه عادلانه سکه دوه ځله اچول کېږي. د دقیقاً یو سر د راتلو احتمال څومره دی؟"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$n(S)=2^n=2^2=4$",
+     "urdu": "$n(S)=2^n=2^2=4$",
+     "pashto": "$n(S)=2^n=2^2=4$"
+    },
+    {
+     "text": "$S=\\{HH,HT,TH,TT\\}$",
+     "urdu": "$S=\\{HH,HT,TH,TT\\}$",
+     "pashto": "$S=\\{HH,HT,TH,TT\\}$"
+    },
+    {
+     "text": "Let A: exactly one head",
+     "urdu": "فرض کریں A: ٹھیک ایک چِت",
+     "pashto": "فرض کړئ A: دقیقاً یو سر"
+    },
+    {
+     "text": "$A=\\{HT,TH\\}$",
+     "urdu": "$A=\\{HT,TH\\}$",
+     "pashto": "$A=\\{HT,TH\\}$"
+    },
+    {
+     "text": "$n(A)=2$",
+     "urdu": "$n(A)=2$",
+     "pashto": "$n(A)=2$"
+    },
+    {
+     "text": "$P(A)=\\frac{n(A)}{n(S)}=\\frac{2}{4}=\\frac{1}{2}=0.5$",
+     "urdu": "$P(A)=\\frac{n(A)}{n(S)}=\\frac{2}{4}=\\frac{1}{2}=0.5$",
+     "pashto": "$P(A)=\\frac{n(A)}{n(S)}=\\frac{2}{4}=\\frac{1}{2}=0.5$"
+    },
+    {
+     "text": "Example 1.7",
+     "urdu": "مثال 1.7",
+     "pashto": "بېلګه 1.7"
+    },
+    {
+     "text": "Three fair coins are tossed once. Find the probability of (i) exactly two tails (ii) at least two tails (iii) at most 2 heads.",
+     "urdu": "تین منصفانہ سکے ایک بار اچھالے جاتے ہیں۔ احتمال معلوم کریں: (i) ٹھیک دو پَٹ (ii) کم از کم دو پَٹ (iii) زیادہ سے زیادہ 2 چِت۔",
+     "pashto": "درې عادلانه سکې یو ځل اچول کېږي. احتمال یې پیدا کړئ: (i) دقیقاً دوه لکۍ (ii) لږ تر لږه دوه لکۍ (iii) تر ټولو زیات 2 سرونه."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$n(S)=2^n=2^3=8$",
+     "urdu": "$n(S)=2^n=2^3=8$",
+     "pashto": "$n(S)=2^n=2^3=8$"
+    },
+    {
+     "text": "$S=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\}$",
+     "urdu": "$S=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\}$",
+     "pashto": "$S=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\}$"
+    },
+    {
+     "text": "(i) Let A: exactly two tails",
+     "urdu": "(i) فرض کریں A: ٹھیک دو پَٹ",
+     "pashto": "(i) فرض کړئ A: دقیقاً دوه لکۍ"
+    },
+    {
+     "text": "$A=\\{HTT,THT,TTH\\}$",
+     "urdu": "$A=\\{HTT,THT,TTH\\}$",
+     "pashto": "$A=\\{HTT,THT,TTH\\}$"
+    },
+    {
+     "text": "$n(A)=3$",
+     "urdu": "$n(A)=3$",
+     "pashto": "$n(A)=3$"
+    },
+    {
+     "text": "$P(A)=\\frac{n(A)}{n(S)}=\\frac{3}{8}=0.375$",
+     "urdu": "$P(A)=\\frac{n(A)}{n(S)}=\\frac{3}{8}=0.375$",
+     "pashto": "$P(A)=\\frac{n(A)}{n(S)}=\\frac{3}{8}=0.375$"
+    },
+    {
+     "text": "(ii) Let B: at least two tails",
+     "urdu": "(ii) فرض کریں B: کم از کم دو پَٹ",
+     "pashto": "(ii) فرض کړئ B: لږ تر لږه دوه لکۍ"
+    },
+    {
+     "text": "$B=\\{HTT,THT,TTH,TTT\\}$",
+     "urdu": "$B=\\{HTT,THT,TTH,TTT\\}$",
+     "pashto": "$B=\\{HTT,THT,TTH,TTT\\}$"
+    },
+    {
+     "text": "$n(B)=4$",
+     "urdu": "$n(B)=4$",
+     "pashto": "$n(B)=4$"
+    },
+    {
+     "text": "$P(B)=\\frac{n(B)}{n(S)}=\\frac{4}{8}=\\frac{1}{2}=0.5$",
+     "urdu": "$P(B)=\\frac{n(B)}{n(S)}=\\frac{4}{8}=\\frac{1}{2}=0.5$",
+     "pashto": "$P(B)=\\frac{n(B)}{n(S)}=\\frac{4}{8}=\\frac{1}{2}=0.5$"
+    },
+    {
+     "text": "(iii) Let C: at most 2 heads",
+     "urdu": "(iii) فرض کریں C: زیادہ سے زیادہ 2 چِت",
+     "pashto": "(iii) فرض کړئ C: تر ټولو زیات 2 سرونه"
+    },
+    {
+     "text": "$C=\\{HHT,HTH,HTT,THH,THT,TTH,TTT\\}$",
+     "urdu": "$C=\\{HHT,HTH,HTT,THH,THT,TTH,TTT\\}$",
+     "pashto": "$C=\\{HHT,HTH,HTT,THH,THT,TTH,TTT\\}$"
+    },
+    {
+     "text": "$n(C)=7$",
+     "urdu": "$n(C)=7$",
+     "pashto": "$n(C)=7$"
+    },
+    {
+     "text": "$P(C)=\\frac{n(C)}{n(S)}=\\frac{7}{8}=0.875$",
+     "urdu": "$P(C)=\\frac{n(C)}{n(S)}=\\frac{7}{8}=0.875$",
+     "pashto": "$P(C)=\\frac{n(C)}{n(S)}=\\frac{7}{8}=0.875$"
+    },
+    {
+     "text": "Example 1.8",
+     "urdu": "مثال 1.8",
+     "pashto": "بېلګه 1.8"
+    },
+    {
+     "text": "If a die is rolled, what is the probability that the number appearing on top is (i) an odd number (ii) an even number less than 5.",
+     "urdu": "اگر ایک پانسہ پھینکا جائے تو اوپر آنے والا عدد (i) طاق عدد ہو (ii) 5 سے کم جفت عدد ہو، اس کا احتمال کیا ہے؟",
+     "pashto": "که ډایس واچول شي، احتمال یې څومره دی چې پورته راغلی عدد (i) طاق عدد وي (ii) له 5 څخه کوچنی جفت عدد وي."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "For die $n(S)=6^n$",
+     "urdu": "پانسے کے لیے $n(S)=6^n$",
+     "pashto": "د ډایس لپاره $n(S)=6^n$"
+    }
+   ],
+   "theory": "Note that:\n\n(i) If P(E)=0, the event E is said to be null event.\n\n(ii) If P(E)=1, the event E is said to be sure event.\n\nAxiom (II) \\;P(S)=1\n\nAxiom (III) If E_1 and E_2 are mutually exclusive events, then P(E_1\\cup E_2)=P(E_1)+P(E_2)\n\n1.2.5 Calculation of probability in case of simple events\n\nExample 1.5\n\nIf a coin is tossed, what is the chance of a head?\n\nSolution:\n\nn(S)=2^n=2^1=2\n\nS=\\{H,T\\}\n\nLet A: head occurs\n\nA=\\{H\\}\n\nn(A)=1\n\n\\therefore P(A)=\\frac{n(A)}{n(S)}=\\frac{m}{n}=\\frac{1}{2}=0.5\n\nIt will be more suitable for interpretation to express the answer in percentage.\n\nExample 1.6\n\nA fair coin is tossed twice. What is the probability that exactly one head occurs?\n\nSolution:\n\nn(S)=2^n=2^2=4\n\nS=\\{HH,HT,TH,TT\\}\n\nLet A: exactly one head\n\nA=\\{HT,TH\\}\n\nn(A)=2\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{2}{4}=\\frac{1}{2}=0.5\n\nExample 1.7\n\nThree fair coins are tossed once. Find the probability of (i) exactly two tails (ii) at least two tails (iii) at most 2 heads.\n\nSolution:\n\nn(S)=2^n=2^3=8\n\nS=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\}\n\n(i) Let A: exactly two tails\n\nA=\\{HTT,THT,TTH\\}\n\nn(A)=3\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{3}{8}=0.375\n\n(ii) Let B: at least two tails\n\nB=\\{HTT,THT,TTH,TTT\\}\n\nn(B)=4\n\nP(B)=\\frac{n(B)}{n(S)}=\\frac{4}{8}=\\frac{1}{2}=0.5\n\n(iii) Let C: at most 2 heads\n\nC=\\{HHT,HTH,HTT,THH,THT,TTH,TTT\\}\n\nn(C)=7\n\nP(C)=\\frac{n(C)}{n(S)}=\\frac{7}{8}=0.875\n\nExample 1.8\n\nIf a die is rolled, what is the probability that the number appearing on top is (i) an odd number (ii) an even number less than 5.\n\nSolution:\n\nFor die n(S)=6^n",
+   "urdu": "نوٹ کریں کہ:\n\n(i) اگر P(E)=0 ہو تو واقعہ E خالی واقعہ کہلاتا ہے۔\n\n(ii) اگر P(E)=1 ہو تو واقعہ E یقینی واقعہ کہلاتا ہے۔\n\nمسلّمہ (II) \\;P(S)=1\n\nمسلّمہ (III) اگر E_1 اور E_2 باہم مانع واقعات ہوں تو P(E_1\\cup E_2)=P(E_1)+P(E_2)\n\n1.2.5 سادہ واقعات کی صورت میں احتمال کا حساب\n\nمثال 1.5\n\nاگر ایک سکہ اچھالا جائے تو چِت آنے کا کیا امکان ہے؟\n\nحل:\n\nn(S)=2^n=2^1=2\n\nS=\\{H,T\\}\n\nفرض کریں A: چِت آتا ہے\n\nA=\\{H\\}\n\nn(A)=1\n\n\\therefore P(A)=\\frac{n(A)}{n(S)}=\\frac{m}{n}=\\frac{1}{2}=0.5\n\nتشریح کے لیے جواب کو فیصد میں ظاہر کرنا زیادہ موزوں ہوگا۔\n\nمثال 1.6\n\nایک منصفانہ سکہ دو بار اچھالا جاتا ہے۔ ٹھیک ایک چِت آنے کا احتمال کیا ہے؟\n\nحل:\n\nn(S)=2^n=2^2=4\n\nS=\\{HH,HT,TH,TT\\}\n\nفرض کریں A: ٹھیک ایک چِت\n\nA=\\{HT,TH\\}\n\nn(A)=2\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{2}{4}=\\frac{1}{2}=0.5\n\nمثال 1.7\n\nتین منصفانہ سکے ایک بار اچھالے جاتے ہیں۔ احتمال معلوم کریں: (i) ٹھیک دو پَٹ (ii) کم از کم دو پَٹ (iii) زیادہ سے زیادہ 2 چِت۔\n\nحل:\n\nn(S)=2^n=2^3=8\n\nS=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\}\n\n(i) فرض کریں A: ٹھیک دو پَٹ\n\nA=\\{HTT,THT,TTH\\}\n\nn(A)=3\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{3}{8}=0.375\n\n(ii) فرض کریں B: کم از کم دو پَٹ\n\nB=\\{HTT,THT,TTH,TTT\\}\n\nn(B)=4\n\nP(B)=\\frac{n(B)}{n(S)}=\\frac{4}{8}=\\frac{1}{2}=0.5\n\n(iii) فرض کریں C: زیادہ سے زیادہ 2 چِت\n\nC=\\{HHT,HTH,HTT,THH,THT,TTH,TTT\\}\n\nn(C)=7\n\nP(C)=\\frac{n(C)}{n(S)}=\\frac{7}{8}=0.875\n\nمثال 1.8\n\nاگر ایک پانسہ پھینکا جائے تو اوپر آنے والا عدد (i) طاق عدد ہو (ii) 5 سے کم جفت عدد ہو، اس کا احتمال کیا ہے؟\n\nحل:\n\nپانسے کے لیے n(S)=6^n",
+   "pashto": "پام وکړئ چې:\n\n(i) که P(E)=0 وي، نو E پېښه تشه پېښه بلل کېږي.\n\n(ii) که P(E)=1 وي، نو E پېښه حتمي پېښه بلل کېږي.\n\nاصل (II) \\;P(S)=1\n\nاصل (III) که E_1 او E_2 یو بل منع کوونکې پېښې وي، نو P(E_1\\cup E_2)=P(E_1)+P(E_2)\n\n1.2.5 د ساده پېښو په حالت کې د احتمال محاسبه\n\nبېلګه 1.5\n\nکه یوه سکه واچول شي، د سر د راتلو چانس څومره دی؟\n\nحل:\n\nn(S)=2^n=2^1=2\n\nS=\\{H,T\\}\n\nفرض کړئ A: سر راځي\n\nA=\\{H\\}\n\nn(A)=1\n\n\\therefore P(A)=\\frac{n(A)}{n(S)}=\\frac{m}{n}=\\frac{1}{2}=0.5\n\nد تفسیر لپاره به ښه وي چې ځواب په سلنه کې وښودل شي.\n\nبېلګه 1.6\n\nیوه عادلانه سکه دوه ځله اچول کېږي. د دقیقاً یو سر د راتلو احتمال څومره دی؟\n\nحل:\n\nn(S)=2^n=2^2=4\n\nS=\\{HH,HT,TH,TT\\}\n\nفرض کړئ A: دقیقاً یو سر\n\nA=\\{HT,TH\\}\n\nn(A)=2\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{2}{4}=\\frac{1}{2}=0.5\n\nبېلګه 1.7\n\nدرې عادلانه سکې یو ځل اچول کېږي. احتمال یې پیدا کړئ: (i) دقیقاً دوه لکۍ (ii) لږ تر لږه دوه لکۍ (iii) تر ټولو زیات 2 سرونه.\n\nحل:\n\nn(S)=2^n=2^3=8\n\nS=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\}\n\n(i) فرض کړئ A: دقیقاً دوه لکۍ\n\nA=\\{HTT,THT,TTH\\}\n\nn(A)=3\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{3}{8}=0.375\n\n(ii) فرض کړئ B: لږ تر لږه دوه لکۍ\n\nB=\\{HTT,THT,TTH,TTT\\}\n\nn(B)=4\n\nP(B)=\\frac{n(B)}{n(S)}=\\frac{4}{8}=\\frac{1}{2}=0.5\n\n(iii) فرض کړئ C: تر ټولو زیات 2 سرونه\n\nC=\\{HHT,HTH,HTT,THH,THT,TTH,TTT\\}\n\nn(C)=7\n\nP(C)=\\frac{n(C)}{n(S)}=\\frac{7}{8}=0.875\n\nبېلګه 1.8\n\nکه ډایس واچول شي، احتمال یې څومره دی چې پورته راغلی عدد (i) طاق عدد وي (ii) له 5 څخه کوچنی جفت عدد وي.\n\nحل:\n\nد ډایس لپاره n(S)=6^n",
+   "theoryUrdu": "نوٹ کریں کہ:\n\n(i) اگر P(E)=0 ہو تو واقعہ E خالی واقعہ کہلاتا ہے۔\n\n(ii) اگر P(E)=1 ہو تو واقعہ E یقینی واقعہ کہلاتا ہے۔\n\nمسلّمہ (II) \\;P(S)=1\n\nمسلّمہ (III) اگر E_1 اور E_2 باہم مانع واقعات ہوں تو P(E_1\\cup E_2)=P(E_1)+P(E_2)\n\n1.2.5 سادہ واقعات کی صورت میں احتمال کا حساب\n\nمثال 1.5\n\nاگر ایک سکہ اچھالا جائے تو چِت آنے کا کیا امکان ہے؟\n\nحل:\n\nn(S)=2^n=2^1=2\n\nS=\\{H,T\\}\n\nفرض کریں A: چِت آتا ہے\n\nA=\\{H\\}\n\nn(A)=1\n\n\\therefore P(A)=\\frac{n(A)}{n(S)}=\\frac{m}{n}=\\frac{1}{2}=0.5\n\nتشریح کے لیے جواب کو فیصد میں ظاہر کرنا زیادہ موزوں ہوگا۔\n\nمثال 1.6\n\nایک منصفانہ سکہ دو بار اچھالا جاتا ہے۔ ٹھیک ایک چِت آنے کا احتمال کیا ہے؟\n\nحل:\n\nn(S)=2^n=2^2=4\n\nS=\\{HH,HT,TH,TT\\}\n\nفرض کریں A: ٹھیک ایک چِت\n\nA=\\{HT,TH\\}\n\nn(A)=2\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{2}{4}=\\frac{1}{2}=0.5\n\nمثال 1.7\n\nتین منصفانہ سکے ایک بار اچھالے جاتے ہیں۔ احتمال معلوم کریں: (i) ٹھیک دو پَٹ (ii) کم از کم دو پَٹ (iii) زیادہ سے زیادہ 2 چِت۔\n\nحل:\n\nn(S)=2^n=2^3=8\n\nS=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\}\n\n(i) فرض کریں A: ٹھیک دو پَٹ\n\nA=\\{HTT,THT,TTH\\}\n\nn(A)=3\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{3}{8}=0.375\n\n(ii) فرض کریں B: کم از کم دو پَٹ\n\nB=\\{HTT,THT,TTH,TTT\\}\n\nn(B)=4\n\nP(B)=\\frac{n(B)}{n(S)}=\\frac{4}{8}=\\frac{1}{2}=0.5\n\n(iii) فرض کریں C: زیادہ سے زیادہ 2 چِت\n\nC=\\{HHT,HTH,HTT,THH,THT,TTH,TTT\\}\n\nn(C)=7\n\nP(C)=\\frac{n(C)}{n(S)}=\\frac{7}{8}=0.875\n\nمثال 1.8\n\nاگر ایک پانسہ پھینکا جائے تو اوپر آنے والا عدد (i) طاق عدد ہو (ii) 5 سے کم جفت عدد ہو، اس کا احتمال کیا ہے؟\n\nحل:\n\nپانسے کے لیے n(S)=6^n",
+   "theoryPashto": "پام وکړئ چې:\n\n(i) که P(E)=0 وي، نو E پېښه تشه پېښه بلل کېږي.\n\n(ii) که P(E)=1 وي، نو E پېښه حتمي پېښه بلل کېږي.\n\nاصل (II) \\;P(S)=1\n\nاصل (III) که E_1 او E_2 یو بل منع کوونکې پېښې وي، نو P(E_1\\cup E_2)=P(E_1)+P(E_2)\n\n1.2.5 د ساده پېښو په حالت کې د احتمال محاسبه\n\nبېلګه 1.5\n\nکه یوه سکه واچول شي، د سر د راتلو چانس څومره دی؟\n\nحل:\n\nn(S)=2^n=2^1=2\n\nS=\\{H,T\\}\n\nفرض کړئ A: سر راځي\n\nA=\\{H\\}\n\nn(A)=1\n\n\\therefore P(A)=\\frac{n(A)}{n(S)}=\\frac{m}{n}=\\frac{1}{2}=0.5\n\nد تفسیر لپاره به ښه وي چې ځواب په سلنه کې وښودل شي.\n\nبېلګه 1.6\n\nیوه عادلانه سکه دوه ځله اچول کېږي. د دقیقاً یو سر د راتلو احتمال څومره دی؟\n\nحل:\n\nn(S)=2^n=2^2=4\n\nS=\\{HH,HT,TH,TT\\}\n\nفرض کړئ A: دقیقاً یو سر\n\nA=\\{HT,TH\\}\n\nn(A)=2\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{2}{4}=\\frac{1}{2}=0.5\n\nبېلګه 1.7\n\nدرې عادلانه سکې یو ځل اچول کېږي. احتمال یې پیدا کړئ: (i) دقیقاً دوه لکۍ (ii) لږ تر لږه دوه لکۍ (iii) تر ټولو زیات 2 سرونه.\n\nحل:\n\nn(S)=2^n=2^3=8\n\nS=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\}\n\n(i) فرض کړئ A: دقیقاً دوه لکۍ\n\nA=\\{HTT,THT,TTH\\}\n\nn(A)=3\n\nP(A)=\\frac{n(A)}{n(S)}=\\frac{3}{8}=0.375\n\n(ii) فرض کړئ B: لږ تر لږه دوه لکۍ\n\nB=\\{HTT,THT,TTH,TTT\\}\n\nn(B)=4\n\nP(B)=\\frac{n(B)}{n(S)}=\\frac{4}{8}=\\frac{1}{2}=0.5\n\n(iii) فرض کړئ C: تر ټولو زیات 2 سرونه\n\nC=\\{HHT,HTH,HTT,THH,THT,TTH,TTT\\}\n\nn(C)=7\n\nP(C)=\\frac{n(C)}{n(S)}=\\frac{7}{8}=0.875\n\nبېلګه 1.8\n\nکه ډایس واچول شي، احتمال یې څومره دی چې پورته راغلی عدد (i) طاق عدد وي (ii) له 5 څخه کوچنی جفت عدد وي.\n\nحل:\n\nد ډایس لپاره n(S)=6^n",
+   "content": "<p>Note that:</p><p>(i) If P(E)=0, the event E is said to be null event.</p><p>(ii) If P(E)=1, the event E is said to be sure event.</p><p>Axiom (II) \\;P(S)=1</p><p>Axiom (III) If E_1 and E_2 are mutually exclusive events, then P(E_1\\cup E_2)=P(E_1)+P(E_2)</p><p>1.2.5 Calculation of probability in case of simple events</p><p>Example 1.5</p><p>If a coin is tossed, what is the chance of a head?</p><p>Solution:</p><p>n(S)=2^n=2^1=2</p><p>S=\\{H,T\\}</p><p>Let A: head occurs</p><p>A=\\{H\\}</p><p>n(A)=1</p><p>\\therefore P(A)=\\frac{n(A)}{n(S)}=\\frac{m}{n}=\\frac{1}{2}=0.5</p><p>It will be more suitable for interpretation to express the answer in percentage.</p><p>Example 1.6</p><p>A fair coin is tossed twice. What is the probability that exactly one head occurs?</p><p>Solution:</p><p>n(S)=2^n=2^2=4</p><p>S=\\{HH,HT,TH,TT\\}</p><p>Let A: exactly one head</p><p>A=\\{HT,TH\\}</p><p>n(A)=2</p><p>P(A)=\\frac{n(A)}{n(S)}=\\frac{2}{4}=\\frac{1}{2}=0.5</p><p>Example 1.7</p><p>Three fair coins are tossed once. Find the probability of (i) exactly two tails (ii) at least two tails (iii) at most 2 heads.</p><p>Solution:</p><p>n(S)=2^n=2^3=8</p><p>S=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\}</p><p>(i) Let A: exactly two tails</p><p>A=\\{HTT,THT,TTH\\}</p><p>n(A)=3</p><p>P(A)=\\frac{n(A)}{n(S)}=\\frac{3}{8}=0.375</p><p>(ii) Let B: at least two tails</p><p>B=\\{HTT,THT,TTH,TTT\\}</p><p>n(B)=4</p><p>P(B)=\\frac{n(B)}{n(S)}=\\frac{4}{8}=\\frac{1}{2}=0.5</p><p>(iii) Let C: at most 2 heads</p><p>C=\\{HHT,HTH,HTT,THH,THT,TTH,TTT\\}</p><p>n(C)=7</p><p>P(C)=\\frac{n(C)}{n(S)}=\\frac{7}{8}=0.875</p><p>Example 1.8</p><p>If a die is rolled, what is the probability that the number appearing on top is (i) an odd number (ii) an even number less than 5.</p><p>Solution:</p><p>For die n(S)=6^n</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      19,
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      22,
+      23,
+      24
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      25
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      26
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      27
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      28,
+      29
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      30
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      31,
+      32,
+      33
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      34
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      35,
+      36,
+      37
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      38
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      39,
+      40,
+      41
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      42
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      43
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      44
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      45
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 9,
+     "printedPages": [
+      9,
+      10
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 1
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

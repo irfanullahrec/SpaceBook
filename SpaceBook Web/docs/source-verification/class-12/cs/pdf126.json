@@ -1,0 +1,155 @@
+{
+ "pdfPage": 126,
+ "sections": [
+  {
+   "id": "cs12-u8-text-7",
+   "title": "Unit 8 text (7)",
+   "headingUrdu": "یونٹ 8 — متن (7)",
+   "headingPashto": "۸ څپرکی — متن (7)",
+   "paras": [
+    {
+     "text": "Consider the following simple program to explain the concept of constructor in a class.",
+     "urdu": "کلاس میں کنسٹرکٹر کا تصور واضح کرنے کے لیے درج ذیل سادہ پروگرام پر غور کریں۔",
+     "pashto": "په ټولګي کې د جوړوونکي د مفهوم د تشریح لپاره لاندې ساده پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nclass ConstTest\n{\npublic:\nConstTest () // Constructor\n{\ncout<< “I am Constructor”;\n}\n};\nint main()\n{\nConstTest CT; // CT is an object to the class ConstTest\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nclass ConstTest\n{\npublic:\nConstTest () // Constructor\n{\ncout<< “I am Constructor”;\n}\n};\nint main()\n{\nConstTest CT; // CT is an object to the class ConstTest\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nclass ConstTest\n{\npublic:\nConstTest () // Constructor\n{\ncout<< “I am Constructor”;\n}\n};\nint main()\n{\nConstTest CT; // CT is an object to the class ConstTest\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "I am Constructor",
+     "urdu": "I am Constructor",
+     "pashto": "I am Constructor",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In the above example, a class ConstTest is defined which have the constructor ConstTest() in its public part. In main() program, there is no explicit call to this constructor and it is automatically called when the object CT of this class is created. It should be noted that Constructors are always called at the moment when objects are created. They cannot be called explicitly as member functions are called.",
+     "urdu": "اوپر کی مثال میں کلاس ConstTest بیان کی گئی ہے جس کے public حصے میں کنسٹرکٹر ConstTest() ہے۔ main() پروگرام میں اس کنسٹرکٹر کو واضح طور پر کال نہیں کیا گیا اور یہ اس کلاس کا آبجیکٹ CT بننے پر خود بخود کال ہوتا ہے۔ یاد رہے کہ کنسٹرکٹرز ہمیشہ آبجیکٹس بننے کے لمحے کال ہوتے ہیں۔ انھیں ممبر فنکشنز کی طرح واضح طور پر کال نہیں کیا جا سکتا۔",
+     "pashto": "په پورته بېلګه کې ConstTest ټولګی تعریف شوی چې په public برخه کې یې ConstTest() جوړوونکی دی. په main() پروګرام کې دې جوړوونکي ته ښکاره غوښتنه نشته او د دې ټولګي د CT شي د جوړېدو پر مهال پخپله غوښتل کېږي. باید یاد ولرو چې جوړوونکي تل د شیانو د جوړېدو په شېبه کې غوښتل کېږي. د غړو فنکشنونو په څېر په ښکاره نه شي غوښتل کېدای."
+    },
+    {
+     "text": "Consider another program to implement the class CRectangle including a constructor:",
+     "urdu": "ایک اور پروگرام پر غور کریں جو کنسٹرکٹر سمیت کلاس CRectangle کو نافذ کرتا ہے:",
+     "pashto": "بل پروګرام ته پام وکړئ چې د جوړوونکي په ګډون CRectangle ټولګی پلي کوي:"
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, height;\npublic:\nCRectangle (int a, int b) // constructor\n{\nwidth = a;\nheight = b;\n}\nint area()\n{\nreturn (width*height);\n}\n};\nint main()\n{\nCRectangle r1 (13,14);\nCRectangle r2 (15,16);\ncout << \"Area of Rectangle 1: \" << r1.area() << endl;\ncout << \" Area of Rectangle 2: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, height;\npublic:\nCRectangle (int a, int b) // constructor\n{\nwidth = a;\nheight = b;\n}\nint area()\n{\nreturn (width*height);\n}\n};\nint main()\n{\nCRectangle r1 (13,14);\nCRectangle r2 (15,16);\ncout << \"Area of Rectangle 1: \" << r1.area() << endl;\ncout << \" Area of Rectangle 2: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, height;\npublic:\nCRectangle (int a, int b) // constructor\n{\nwidth = a;\nheight = b;\n}\nint area()\n{\nreturn (width*height);\n}\n};\nint main()\n{\nCRectangle r1 (13,14);\nCRectangle r2 (15,16);\ncout << \"Area of Rectangle 1: \" << r1.area() << endl;\ncout << \" Area of Rectangle 2: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Area of Rectangle 1: 182\nArea of Rectangle 2: 240",
+     "urdu": "Area of Rectangle 1: 182\nArea of Rectangle 2: 240",
+     "pashto": "Area of Rectangle 1: 182\nArea of Rectangle 2: 240",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Consider the following simple program to explain the concept of constructor in a class.\n\n#include <iostream.h>\n#include <conio.h>\nclass ConstTest\n{\npublic:\nConstTest () // Constructor\n{\ncout<< “I am Constructor”;\n}\n};\nint main()\n{\nConstTest CT; // CT is an object to the class ConstTest\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nI am Constructor\n\nIn the above example, a class ConstTest is defined which have the constructor ConstTest() in its public part. In main() program, there is no explicit call to this constructor and it is automatically called when the object CT of this class is created. It should be noted that Constructors are always called at the moment when objects are created. They cannot be called explicitly as member functions are called.\n\nConsider another program to implement the class CRectangle including a constructor:\n\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, height;\npublic:\nCRectangle (int a, int b) // constructor\n{\nwidth = a;\nheight = b;\n}\nint area()\n{\nreturn (width*height);\n}\n};\nint main()\n{\nCRectangle r1 (13,14);\nCRectangle r2 (15,16);\ncout << \"Area of Rectangle 1: \" << r1.area() << endl;\ncout << \" Area of Rectangle 2: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nArea of Rectangle 1: 182\nArea of Rectangle 2: 240",
+   "urdu": "کلاس میں کنسٹرکٹر کا تصور واضح کرنے کے لیے درج ذیل سادہ پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include <conio.h>\nclass ConstTest\n{\npublic:\nConstTest () // Constructor\n{\ncout<< “I am Constructor”;\n}\n};\nint main()\n{\nConstTest CT; // CT is an object to the class ConstTest\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nI am Constructor\n\nاوپر کی مثال میں کلاس ConstTest بیان کی گئی ہے جس کے public حصے میں کنسٹرکٹر ConstTest() ہے۔ main() پروگرام میں اس کنسٹرکٹر کو واضح طور پر کال نہیں کیا گیا اور یہ اس کلاس کا آبجیکٹ CT بننے پر خود بخود کال ہوتا ہے۔ یاد رہے کہ کنسٹرکٹرز ہمیشہ آبجیکٹس بننے کے لمحے کال ہوتے ہیں۔ انھیں ممبر فنکشنز کی طرح واضح طور پر کال نہیں کیا جا سکتا۔\n\nایک اور پروگرام پر غور کریں جو کنسٹرکٹر سمیت کلاس CRectangle کو نافذ کرتا ہے:\n\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, height;\npublic:\nCRectangle (int a, int b) // constructor\n{\nwidth = a;\nheight = b;\n}\nint area()\n{\nreturn (width*height);\n}\n};\nint main()\n{\nCRectangle r1 (13,14);\nCRectangle r2 (15,16);\ncout << \"Area of Rectangle 1: \" << r1.area() << endl;\ncout << \" Area of Rectangle 2: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nArea of Rectangle 1: 182\nArea of Rectangle 2: 240",
+   "pashto": "په ټولګي کې د جوړوونکي د مفهوم د تشریح لپاره لاندې ساده پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include <conio.h>\nclass ConstTest\n{\npublic:\nConstTest () // Constructor\n{\ncout<< “I am Constructor”;\n}\n};\nint main()\n{\nConstTest CT; // CT is an object to the class ConstTest\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nI am Constructor\n\nپه پورته بېلګه کې ConstTest ټولګی تعریف شوی چې په public برخه کې یې ConstTest() جوړوونکی دی. په main() پروګرام کې دې جوړوونکي ته ښکاره غوښتنه نشته او د دې ټولګي د CT شي د جوړېدو پر مهال پخپله غوښتل کېږي. باید یاد ولرو چې جوړوونکي تل د شیانو د جوړېدو په شېبه کې غوښتل کېږي. د غړو فنکشنونو په څېر په ښکاره نه شي غوښتل کېدای.\n\nبل پروګرام ته پام وکړئ چې د جوړوونکي په ګډون CRectangle ټولګی پلي کوي:\n\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, height;\npublic:\nCRectangle (int a, int b) // constructor\n{\nwidth = a;\nheight = b;\n}\nint area()\n{\nreturn (width*height);\n}\n};\nint main()\n{\nCRectangle r1 (13,14);\nCRectangle r2 (15,16);\ncout << \"Area of Rectangle 1: \" << r1.area() << endl;\ncout << \" Area of Rectangle 2: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nArea of Rectangle 1: 182\nArea of Rectangle 2: 240",
+   "theoryUrdu": "کلاس میں کنسٹرکٹر کا تصور واضح کرنے کے لیے درج ذیل سادہ پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include <conio.h>\nclass ConstTest\n{\npublic:\nConstTest () // Constructor\n{\ncout<< “I am Constructor”;\n}\n};\nint main()\n{\nConstTest CT; // CT is an object to the class ConstTest\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nI am Constructor\n\nاوپر کی مثال میں کلاس ConstTest بیان کی گئی ہے جس کے public حصے میں کنسٹرکٹر ConstTest() ہے۔ main() پروگرام میں اس کنسٹرکٹر کو واضح طور پر کال نہیں کیا گیا اور یہ اس کلاس کا آبجیکٹ CT بننے پر خود بخود کال ہوتا ہے۔ یاد رہے کہ کنسٹرکٹرز ہمیشہ آبجیکٹس بننے کے لمحے کال ہوتے ہیں۔ انھیں ممبر فنکشنز کی طرح واضح طور پر کال نہیں کیا جا سکتا۔\n\nایک اور پروگرام پر غور کریں جو کنسٹرکٹر سمیت کلاس CRectangle کو نافذ کرتا ہے:\n\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, height;\npublic:\nCRectangle (int a, int b) // constructor\n{\nwidth = a;\nheight = b;\n}\nint area()\n{\nreturn (width*height);\n}\n};\nint main()\n{\nCRectangle r1 (13,14);\nCRectangle r2 (15,16);\ncout << \"Area of Rectangle 1: \" << r1.area() << endl;\ncout << \" Area of Rectangle 2: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nArea of Rectangle 1: 182\nArea of Rectangle 2: 240",
+   "theoryPashto": "په ټولګي کې د جوړوونکي د مفهوم د تشریح لپاره لاندې ساده پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include <conio.h>\nclass ConstTest\n{\npublic:\nConstTest () // Constructor\n{\ncout<< “I am Constructor”;\n}\n};\nint main()\n{\nConstTest CT; // CT is an object to the class ConstTest\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nI am Constructor\n\nپه پورته بېلګه کې ConstTest ټولګی تعریف شوی چې په public برخه کې یې ConstTest() جوړوونکی دی. په main() پروګرام کې دې جوړوونکي ته ښکاره غوښتنه نشته او د دې ټولګي د CT شي د جوړېدو پر مهال پخپله غوښتل کېږي. باید یاد ولرو چې جوړوونکي تل د شیانو د جوړېدو په شېبه کې غوښتل کېږي. د غړو فنکشنونو په څېر په ښکاره نه شي غوښتل کېدای.\n\nبل پروګرام ته پام وکړئ چې د جوړوونکي په ګډون CRectangle ټولګی پلي کوي:\n\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, height;\npublic:\nCRectangle (int a, int b) // constructor\n{\nwidth = a;\nheight = b;\n}\nint area()\n{\nreturn (width*height);\n}\n};\nint main()\n{\nCRectangle r1 (13,14);\nCRectangle r2 (15,16);\ncout << \"Area of Rectangle 1: \" << r1.area() << endl;\ncout << \" Area of Rectangle 2: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nArea of Rectangle 1: 182\nArea of Rectangle 2: 240",
+   "content": "<p>Consider the following simple program to explain the concept of constructor in a class.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nclass ConstTest\n{\npublic:\nConstTest () // Constructor\n{\ncout&lt;&lt; “I am Constructor”;\n}\n};\nint main()\n{\nConstTest CT; // CT is an object to the class ConstTest\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>I am Constructor</p><p>In the above example, a class ConstTest is defined which have the constructor ConstTest() in its public part. In main() program, there is no explicit call to this constructor and it is automatically called when the object CT of this class is created. It should be noted that Constructors are always called at the moment when objects are created. They cannot be called explicitly as member functions are called.</p><p>Consider another program to implement the class CRectangle including a constructor:</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nclass CRectangle\n{\nint width, height;\npublic:\nCRectangle (int a, int b) // constructor\n{\nwidth = a;\nheight = b;\n}\nint area()\n{\nreturn (width*height);\n}\n};\nint main()\n{\nCRectangle r1 (13,14);\nCRectangle r2 (15,16);\ncout &lt;&lt; &quot;Area of Rectangle 1: &quot; &lt;&lt; r1.area() &lt;&lt; endl;\ncout &lt;&lt; &quot; Area of Rectangle 2: &quot; &lt;&lt; r2.area() &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Area of Rectangle 1: 182\nArea of Rectangle 2: 240</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 126,
+     "printedPages": [
+      240,
+      241,
+      242
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (7)",
+   "sourcePageLabel": "PDF 126 · p. 240–241–242",
+   "sourceNote": "The CRectangle output at the top of p.242 (PDF127) is given here with its program.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf126",
+   "unit": 8,
+   "printedPage": 240,
+   "description": "p.240 “a class ConstTest is defined which have the constructor”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

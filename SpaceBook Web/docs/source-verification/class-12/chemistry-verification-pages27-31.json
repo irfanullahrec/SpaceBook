@@ -1,0 +1,93 @@
+[
+  {
+    "pdfPage": 27,
+    "printedPages": [
+      46,
+      47
+    ],
+    "status": "implemented_pending_final_comparison",
+    "checkedUtc": "2026-10-11T17:46:36.336678+00:00",
+    "artifact": "chemistry-pdf27-repair.json",
+    "artifactSha256": "655759c0b55f3e4f601aac2ee848d5a54d1bcf24262ad33d6c70cdee20044d01",
+    "evidence": [
+      "Source scan directly inspected and compared with headings, paragraphs, translated pairs, table values, formulas and continuation boundaries.",
+      "Focused multi-chapter source reading/formula/hover checks passed.",
+      "Instructional periodic-table SVG parsed and English render inspected; source labels66Td/96Cn/107Bb/113Uut retained. Separate cover-graphic fidelity and translated SVG shaping review pending."
+    ],
+    "retainedSourceIssues": [
+      "chem12-p47-periodic-labels",
+      "chem12-p47-filled-d-claims"
+    ]
+  },
+  {
+    "pdfPage": 28,
+    "printedPages": [
+      48,
+      49
+    ],
+    "status": "implemented_pending_final_comparison",
+    "checkedUtc": "2026-10-11T17:46:36.336678+00:00",
+    "artifact": "chemistry-pdf28-repair.json",
+    "artifactSha256": "f49985e7df0eea5cd1898b20c78856c086f2d211f22537b13038e860105ddef5",
+    "evidence": [
+      "Source scan directly inspected and compared with headings, paragraphs, translated pairs, table values, formulas and continuation boundaries.",
+      "Focused multi-chapter source reading/formula/hover checks passed.",
+      "Orbital counts compared with source; expected Cr3d4/4s2 and Cu3d9/4s2, observed Cr3d5/4s1 and Cu3d10/4s1 retained. Final right-to-left SVG shaping review pending; local SVG renderer does not establish browser typography correctness."
+    ],
+    "retainedSourceIssues": [
+      "chem12-p48-caesium58"
+    ]
+  },
+  {
+    "pdfPage": 29,
+    "printedPages": [
+      50,
+      51
+    ],
+    "status": "corrected_verified",
+    "checkedUtc": "2026-10-11T17:46:36.336678+00:00",
+    "artifact": "chemistry-pdf29-repair.json",
+    "artifactSha256": "6f8a44160e075e337f1e92b99e561c2ba1e31da53e682d1f402138fadb1abb82",
+    "evidence": [
+      "Source scan directly inspected and compared with headings, paragraphs, translated pairs, table values, formulas and continuation boundaries.",
+      "Focused multi-chapter source reading/formula/hover checks passed."
+    ],
+    "retainedSourceIssues": [
+      "chem12-p51-binding-group"
+    ]
+  },
+  {
+    "pdfPage": 30,
+    "printedPages": [
+      52,
+      53
+    ],
+    "status": "corrected_verified",
+    "checkedUtc": "2026-10-11T17:46:36.336678+00:00",
+    "artifact": "chemistry-pdf30-repair.json",
+    "artifactSha256": "943306504bb637a0d4d77e32efc9ab6b00c74afc6ad497b8a2b3e404b3273807",
+    "evidence": [
+      "Source scan directly inspected and compared with headings, paragraphs, translated pairs, table values, formulas and continuation boundaries.",
+      "Focused multi-chapter source reading/formula/hover checks passed."
+    ],
+    "retainedSourceIssues": [
+      "chem12-p53-ferromagnetic-ions"
+    ]
+  },
+  {
+    "pdfPage": 31,
+    "printedPages": [
+      54,
+      55
+    ],
+    "status": "corrected_verified",
+    "checkedUtc": "2026-10-11T17:46:36.336678+00:00",
+    "artifact": "chemistry-pdf31-repair.json",
+    "artifactSha256": "bc78f776636443bc147e61312d12086e5abca649efb03d964586279d4959511f",
+    "evidence": [
+      "Source scan directly inspected and compared with headings, paragraphs, translated pairs, table values, formulas and continuation boundaries.",
+      "Focused multi-chapter source reading/formula/hover checks passed."
+    ],
+    "retainedSourceIssues": []
+  }
+]

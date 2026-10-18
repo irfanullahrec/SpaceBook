@@ -1,0 +1,223 @@
+{
+ "pdfPage": 135,
+ "sections": [
+  {
+   "id": "cs12-u9-outcomes",
+   "title": "Unit 9: learning outcomes and introduction",
+   "headingUrdu": "یونٹ 9: حاصلاتِ تعلم اور تعارف",
+   "headingPashto": "۹ څپرکی: د زده‌کړې پایلې او سریزه",
+   "paras": [
+    {
+     "text": "Unit 9",
+     "urdu": "یونٹ 9",
+     "pashto": "۹ څپرکی"
+    },
+    {
+     "text": "FILE HANDLING",
+     "urdu": "فائل ہینڈلنگ",
+     "pashto": "د دوتنو چلول"
+    },
+    {
+     "text": "After the completion of Unit-9, Students will be able to:",
+     "urdu": "یونٹ 9 مکمل کرنے کے بعد طلبہ اس قابل ہوں گے کہ:",
+     "pashto": "د ۹ څپرکي له بشپړولو وروسته به زده‌کوونکي وکولی شي چې:"
+    },
+    {
+     "text": "Know the binary and text file",
+     "urdu": "بائنری اور ٹیکسٹ فائل جان سکیں",
+     "pashto": "باینري او متني دوتنه وپېژني"
+    },
+    {
+     "text": "Open the file in different modes",
+     "urdu": "فائل کو مختلف موڈز میں کھول سکیں",
+     "pashto": "دوتنه په بېلو حالتونو کې پرانیزي"
+    },
+    {
+     "text": "Know the concept of",
+     "urdu": "درج ذیل کا تصور جان سکیں",
+     "pashto": "د لاندې مفهوم وپېژني"
+    },
+    {
+     "text": "bof()",
+     "urdu": "bof()",
+     "pashto": "bof()"
+    },
+    {
+     "text": "eof()",
+     "urdu": "eof()",
+     "pashto": "eof()"
+    },
+    {
+     "text": "Define stream",
+     "urdu": "اسٹریم کی تعریف کر سکیں",
+     "pashto": "بهیر (stream) تعریف کړي"
+    },
+    {
+     "text": "Use the following stream",
+     "urdu": "درج ذیل اسٹریم استعمال کر سکیں",
+     "pashto": "لاندې بهیر وکاروي"
+    },
+    {
+     "text": "Single character",
+     "urdu": "سنگل کریکٹر",
+     "pashto": "یو توری"
+    },
+    {
+     "text": "String",
+     "urdu": "اسٹرنگ",
+     "pashto": "تار"
+    },
+    {
+     "text": "INTRODUCTION",
+     "urdu": "تعارف",
+     "pashto": "سریزه"
+    },
+    {
+     "text": "A file is a collection of related records that are permanently stored in secondary storage. File handling is an important feature of C++ language. This unit describes different types of files such as text files and binary files and describes how different operations like opening, reading, writing and closing are performed on files.",
+     "urdu": "فائل متعلقہ ریکارڈز کا مجموعہ ہے جو ثانوی اسٹوریج میں مستقل طور پر محفوظ ہوتے ہیں۔ فائل ہینڈلنگ C++ زبان کی اہم خصوصیت ہے۔ یہ یونٹ مختلف اقسام کی فائلز جیسے ٹیکسٹ فائلز اور بائنری فائلز بیان کرتا ہے اور بتاتا ہے کہ فائلز پر کھولنا، پڑھنا، لکھنا اور بند کرنا جیسے مختلف عمل کیسے کیے جاتے ہیں۔",
+     "pashto": "دوتنه د اړوندو ریکارډونو ټولګه ده چې په ثانوي زېرمه کې په دایمي توګه ساتل کېږي. د دوتنو چلول د C++ ژبې مهمه ځانګړتیا ده. دا څپرکی د دوتنو بېلابېل ډولونه لکه متني دوتنې او باینري دوتنې بیانوي او ښيي چې پر دوتنو بېلابېلې عملیې لکه پرانیستل، لوستل، لیکل او تړل څنګه ترسره کېږي."
+    },
+    {
+     "text": "9.1 File handling",
+     "urdu": "9.1 فائل ہینڈلنگ",
+     "pashto": "۹.۱ د دوتنو چلول"
+    },
+    {
+     "text": "The combinations of characters, words and records are called files. The operations on these files are the major focus point of file handling. Suppose we have a file on the disk and want to open it then reading from or writing into the file before closing it will be termed as handling files. The basic steps involved in file handling are:",
+     "urdu": "حروف، الفاظ اور ریکارڈز کے مجموعے فائلز کہلاتے ہیں۔ ان فائلز پر عمل فائل ہینڈلنگ کا بنیادی مرکز ہیں۔ فرض کریں ہمارے پاس ڈسک پر ایک فائل ہے اور ہم اسے کھولنا چاہتے ہیں، پھر بند کرنے سے پہلے فائل سے پڑھنا یا اس میں لکھنا فائلز ہینڈل کرنا کہلائے گا۔ فائل ہینڈلنگ کے بنیادی مراحل یہ ہیں:",
+     "pashto": "د تورو، کلمو او ریکارډونو ترکیبونه دوتنې بلل کېږي. پر دې دوتنو عملیې د دوتنو د چلولو اصلي تمرکز دی. فرض کړئ په ډیسک کې یوه دوتنه لرو او غواړو پرانیزو یې، بیا له تړلو مخکې له دوتنې لوستل یا پکې لیکل د دوتنو چلول بلل کېږي. د دوتنو د چلولو بنسټیز ګامونه دا دي:"
+    },
+    {
+     "text": "Opening file",
+     "urdu": "فائل کھولنا",
+     "pashto": "دوتنه پرانیستل"
+    },
+    {
+     "text": "Reading and writing a file",
+     "urdu": "فائل پڑھنا اور لکھنا",
+     "pashto": "دوتنه لوستل او لیکل"
+    },
+    {
+     "text": "Closing file",
+     "urdu": "فائل بند کرنا",
+     "pashto": "دوتنه تړل"
+    }
+   ],
+   "theory": "Unit 9\n\nFILE HANDLING\n\nAfter the completion of Unit-9, Students will be able to:\n\nKnow the binary and text file\n\nOpen the file in different modes\n\nKnow the concept of\n\nbof()\n\neof()\n\nDefine stream\n\nUse the following stream\n\nSingle character\n\nString\n\nINTRODUCTION\n\nA file is a collection of related records that are permanently stored in secondary storage. File handling is an important feature of C++ language. This unit describes different types of files such as text files and binary files and describes how different operations like opening, reading, writing and closing are performed on files.\n\n9.1 File handling\n\nThe combinations of characters, words and records are called files. The operations on these files are the major focus point of file handling. Suppose we have a file on the disk and want to open it then reading from or writing into the file before closing it will be termed as handling files. The basic steps involved in file handling are:\n\nOpening file\n\nReading and writing a file\n\nClosing file",
+   "urdu": "یونٹ 9\n\nفائل ہینڈلنگ\n\nیونٹ 9 مکمل کرنے کے بعد طلبہ اس قابل ہوں گے کہ:\n\nبائنری اور ٹیکسٹ فائل جان سکیں\n\nفائل کو مختلف موڈز میں کھول سکیں\n\nدرج ذیل کا تصور جان سکیں\n\nbof()\n\neof()\n\nاسٹریم کی تعریف کر سکیں\n\nدرج ذیل اسٹریم استعمال کر سکیں\n\nسنگل کریکٹر\n\nاسٹرنگ\n\nتعارف\n\nفائل متعلقہ ریکارڈز کا مجموعہ ہے جو ثانوی اسٹوریج میں مستقل طور پر محفوظ ہوتے ہیں۔ فائل ہینڈلنگ C++ زبان کی اہم خصوصیت ہے۔ یہ یونٹ مختلف اقسام کی فائلز جیسے ٹیکسٹ فائلز اور بائنری فائلز بیان کرتا ہے اور بتاتا ہے کہ فائلز پر کھولنا، پڑھنا، لکھنا اور بند کرنا جیسے مختلف عمل کیسے کیے جاتے ہیں۔\n\n9.1 فائل ہینڈلنگ\n\nحروف، الفاظ اور ریکارڈز کے مجموعے فائلز کہلاتے ہیں۔ ان فائلز پر عمل فائل ہینڈلنگ کا بنیادی مرکز ہیں۔ فرض کریں ہمارے پاس ڈسک پر ایک فائل ہے اور ہم اسے کھولنا چاہتے ہیں، پھر بند کرنے سے پہلے فائل سے پڑھنا یا اس میں لکھنا فائلز ہینڈل کرنا کہلائے گا۔ فائل ہینڈلنگ کے بنیادی مراحل یہ ہیں:\n\nفائل کھولنا\n\nفائل پڑھنا اور لکھنا\n\nفائل بند کرنا",
+   "pashto": "۹ څپرکی\n\nد دوتنو چلول\n\nد ۹ څپرکي له بشپړولو وروسته به زده‌کوونکي وکولی شي چې:\n\nباینري او متني دوتنه وپېژني\n\nدوتنه په بېلو حالتونو کې پرانیزي\n\nد لاندې مفهوم وپېژني\n\nbof()\n\neof()\n\nبهیر (stream) تعریف کړي\n\nلاندې بهیر وکاروي\n\nیو توری\n\nتار\n\nسریزه\n\nدوتنه د اړوندو ریکارډونو ټولګه ده چې په ثانوي زېرمه کې په دایمي توګه ساتل کېږي. د دوتنو چلول د C++ ژبې مهمه ځانګړتیا ده. دا څپرکی د دوتنو بېلابېل ډولونه لکه متني دوتنې او باینري دوتنې بیانوي او ښيي چې پر دوتنو بېلابېلې عملیې لکه پرانیستل، لوستل، لیکل او تړل څنګه ترسره کېږي.\n\n۹.۱ د دوتنو چلول\n\nد تورو، کلمو او ریکارډونو ترکیبونه دوتنې بلل کېږي. پر دې دوتنو عملیې د دوتنو د چلولو اصلي تمرکز دی. فرض کړئ په ډیسک کې یوه دوتنه لرو او غواړو پرانیزو یې، بیا له تړلو مخکې له دوتنې لوستل یا پکې لیکل د دوتنو چلول بلل کېږي. د دوتنو د چلولو بنسټیز ګامونه دا دي:\n\nدوتنه پرانیستل\n\nدوتنه لوستل او لیکل\n\nدوتنه تړل",
+   "theoryUrdu": "یونٹ 9\n\nفائل ہینڈلنگ\n\nیونٹ 9 مکمل کرنے کے بعد طلبہ اس قابل ہوں گے کہ:\n\nبائنری اور ٹیکسٹ فائل جان سکیں\n\nفائل کو مختلف موڈز میں کھول سکیں\n\nدرج ذیل کا تصور جان سکیں\n\nbof()\n\neof()\n\nاسٹریم کی تعریف کر سکیں\n\nدرج ذیل اسٹریم استعمال کر سکیں\n\nسنگل کریکٹر\n\nاسٹرنگ\n\nتعارف\n\nفائل متعلقہ ریکارڈز کا مجموعہ ہے جو ثانوی اسٹوریج میں مستقل طور پر محفوظ ہوتے ہیں۔ فائل ہینڈلنگ C++ زبان کی اہم خصوصیت ہے۔ یہ یونٹ مختلف اقسام کی فائلز جیسے ٹیکسٹ فائلز اور بائنری فائلز بیان کرتا ہے اور بتاتا ہے کہ فائلز پر کھولنا، پڑھنا، لکھنا اور بند کرنا جیسے مختلف عمل کیسے کیے جاتے ہیں۔\n\n9.1 فائل ہینڈلنگ\n\nحروف، الفاظ اور ریکارڈز کے مجموعے فائلز کہلاتے ہیں۔ ان فائلز پر عمل فائل ہینڈلنگ کا بنیادی مرکز ہیں۔ فرض کریں ہمارے پاس ڈسک پر ایک فائل ہے اور ہم اسے کھولنا چاہتے ہیں، پھر بند کرنے سے پہلے فائل سے پڑھنا یا اس میں لکھنا فائلز ہینڈل کرنا کہلائے گا۔ فائل ہینڈلنگ کے بنیادی مراحل یہ ہیں:\n\nفائل کھولنا\n\nفائل پڑھنا اور لکھنا\n\nفائل بند کرنا",
+   "theoryPashto": "۹ څپرکی\n\nد دوتنو چلول\n\nد ۹ څپرکي له بشپړولو وروسته به زده‌کوونکي وکولی شي چې:\n\nباینري او متني دوتنه وپېژني\n\nدوتنه په بېلو حالتونو کې پرانیزي\n\nد لاندې مفهوم وپېژني\n\nbof()\n\neof()\n\nبهیر (stream) تعریف کړي\n\nلاندې بهیر وکاروي\n\nیو توری\n\nتار\n\nسریزه\n\nدوتنه د اړوندو ریکارډونو ټولګه ده چې په ثانوي زېرمه کې په دایمي توګه ساتل کېږي. د دوتنو چلول د C++ ژبې مهمه ځانګړتیا ده. دا څپرکی د دوتنو بېلابېل ډولونه لکه متني دوتنې او باینري دوتنې بیانوي او ښيي چې پر دوتنو بېلابېلې عملیې لکه پرانیستل، لوستل، لیکل او تړل څنګه ترسره کېږي.\n\n۹.۱ د دوتنو چلول\n\nد تورو، کلمو او ریکارډونو ترکیبونه دوتنې بلل کېږي. پر دې دوتنو عملیې د دوتنو د چلولو اصلي تمرکز دی. فرض کړئ په ډیسک کې یوه دوتنه لرو او غواړو پرانیزو یې، بیا له تړلو مخکې له دوتنې لوستل یا پکې لیکل د دوتنو چلول بلل کېږي. د دوتنو د چلولو بنسټیز ګامونه دا دي:\n\nدوتنه پرانیستل\n\nدوتنه لوستل او لیکل\n\nدوتنه تړل",
+   "content": "<p>Unit 9</p><p>FILE HANDLING</p><p>After the completion of Unit-9, Students will be able to:</p><p>Know the binary and text file</p><p>Open the file in different modes</p><p>Know the concept of</p><p>bof()</p><p>eof()</p><p>Define stream</p><p>Use the following stream</p><p>Single character</p><p>String</p><p>INTRODUCTION</p><p>A file is a collection of related records that are permanently stored in secondary storage. File handling is an important feature of C++ language. This unit describes different types of files such as text files and binary files and describes how different operations like opening, reading, writing and closing are performed on files.</p><p>9.1 File handling</p><p>The combinations of characters, words and records are called files. The operations on these files are the major focus point of file handling. Suppose we have a file on the disk and want to open it then reading from or writing into the file before closing it will be termed as handling files. The basic steps involved in file handling are:</p><p>Opening file</p><p>Reading and writing a file</p><p>Closing file</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      6,
+      7
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      8,
+      9
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      10,
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      16,
+      17,
+      18
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 135,
+     "printedPages": [
+      259,
+      260
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 9: learning outcomes and introduction",
+   "sourcePageLabel": "PDF 135 · p. 259–260",
+   "unitTitle": "File Handling",
+   "unitTitleUrdu": "فائل ہینڈلنگ",
+   "unitTitlePashto": "د دوتنو چلول",
+   "sourceNote": "The list of basic steps at the top of p.260 (PDF136) is given here with its lead-in.",
+   "unit": 9
+  }
+ ],
+ "issues": [],
+ "completeUnits": [
+  8
+ ]
+}

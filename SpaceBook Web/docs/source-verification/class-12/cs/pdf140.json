@@ -1,0 +1,235 @@
+{
+ "pdfPage": 140,
+ "sections": [
+  {
+   "id": "cs12-u9-text-5",
+   "title": "Unit 9 text (5)",
+   "headingUrdu": "یونٹ 9 — متن (5)",
+   "headingPashto": "۹ څپرکی — متن (5)",
+   "paras": [
+    {
+     "text": "9.1.3 bof() and eof()",
+     "urdu": "9.1.3 bof() اور eof()",
+     "pashto": "۹.۱.۳ bof() او eof()"
+    },
+    {
+     "text": "C++ provides special functions bof() and eof() that are used to set the pointers to the beginning of a file and at the end of a file respectively. The following sections explain them with the help of proper examples.",
+     "urdu": "C++ خاص فنکشنز bof() اور eof() فراہم کرتی ہے جو بالترتیب پوائنٹرز کو فائل کے آغاز اور فائل کے اختتام پر سیٹ کرنے کے لیے استعمال ہوتے ہیں۔ درج ذیل حصے مناسب مثالوں کی مدد سے ان کی وضاحت کرتے ہیں۔",
+     "pashto": "C++ ځانګړي فنکشنونه bof() او eof() برابروي چې په ترتیب سره پوائنټرونه د دوتنې پیل او د دوتنې پای ته ټاکي. لاندې برخې د مناسبو بېلګو په مرسته دا تشریح کوي."
+    },
+    {
+     "text": "a. bof() – beginning-of-file",
+     "urdu": "a. bof() – فائل کا آغاز",
+     "pashto": "a. bof() – د دوتنې پیل"
+    },
+    {
+     "text": "The bof() is a pointer which returns true if the current position of the pointer is at the beginning of the input file stream, and false otherwise. It means that it tells the compiler whether the cursor is at the beginning of file or not.",
+     "urdu": "bof() ایک پوائنٹر ہے جو true واپس کرتا ہے اگر پوائنٹر کا موجودہ مقام ان پٹ فائل اسٹریم کے آغاز پر ہو، ورنہ false۔ یعنی یہ کمپائلر کو بتاتا ہے کہ کرسر فائل کے آغاز پر ہے یا نہیں۔",
+     "pashto": "bof() یو پوائنټر دی چې true بېرته ورکوي که د پوائنټر اوسنی ځای د ننوتنې دوتنې بهیر په پیل کې وي، او که نه false. یعنې کمپایلر ته وايي چې کرسر د دوتنې په پیل کې دی که نه."
+    },
+    {
+     "text": "myFile.close();",
+     "urdu": "myFile.close();",
+     "pashto": "myFile.close();",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. eof() – end-of-file",
+     "urdu": "b. eof() – فائل کا اختتام",
+     "pashto": "b. eof() – د دوتنې پای"
+    },
+    {
+     "text": "The eof() is a pointer which returns true when there are no more data to be read from an input file stream, and false otherwise. It means that this function checks whether control has reached to the end of file or not. This function is very useful in the case when we do not know the exact number of records in a file.",
+     "urdu": "eof() ایک پوائنٹر ہے جو true واپس کرتا ہے جب ان پٹ فائل اسٹریم سے پڑھنے کے لیے مزید ڈیٹا نہ ہو، ورنہ false۔ یعنی یہ فنکشن جانچتا ہے کہ کنٹرول فائل کے اختتام تک پہنچ گیا ہے یا نہیں۔ یہ فنکشن اس صورت میں بہت مفید ہے جب ہمیں فائل میں ریکارڈز کی درست تعداد معلوم نہ ہو۔",
+     "pashto": "eof() یو پوائنټر دی چې true بېرته ورکوي کله چې د ننوتنې دوتنې له بهیر د لوستلو لپاره نور ډېټا پاتې نه وي، او که نه false. یعنې دا فنکشن ګوري چې کنټرول د دوتنې پای ته رسېدلی که نه. دا فنکشن هغه وخت ډېر ګټور دی چې په دوتنه کې د ریکارډونو دقیق شمېر ونه پېژنو."
+    },
+    {
+     "text": "Rules for using eof( )",
+     "urdu": "eof( ) کے استعمال کے اصول",
+     "pashto": "د eof( ) د کارونې قواعد"
+    },
+    {
+     "text": "Always test for the end-of-file condition before processing data.",
+     "urdu": "ڈیٹا پر عمل کرنے سے پہلے ہمیشہ فائل کے اختتام کی شرط جانچیں۔",
+     "pashto": "د ډېټا له پروسس مخکې تل د دوتنې د پای شرط وازمویئ."
+    },
+    {
+     "text": "Use a while loop for getting data from an input file stream. A for loop is desirable only when you know the exact number of data items in the file",
+     "urdu": "ان پٹ فائل اسٹریم سے ڈیٹا لینے کے لیے while لوپ استعمال کریں۔ for لوپ صرف اس وقت مناسب ہے جب آپ کو فائل میں ڈیٹا آئٹمز کی درست تعداد معلوم ہو",
+     "pashto": "د ننوتنې دوتنې له بهیر د ډېټا د اخیستلو لپاره while حلقه وکاروئ. for حلقه یوازې هغه وخت غوره ده چې په دوتنه کې د ډېټا توکو دقیق شمېر وپېژنئ"
+    },
+    {
+     "text": "// reading a text file using eof() function\n#include <iostream.h>\n#include <conio.h>\n#include <fstream.h>\nint main()\n{\nchar ch [50];\nifstream flag (\"c:\\\\TestRecord.txt\");\ncout<<\"Output is\"<<endl;\nwhile(!flag.eof())\n{\nflag>>ch;\ncout<<ch<<endl;\n}\nflag.close();\ngetch();\nreturn 0;\n}",
+     "urdu": "// reading a text file using eof() function\n#include <iostream.h>\n#include <conio.h>\n#include <fstream.h>\nint main()\n{\nchar ch [50];\nifstream flag (\"c:\\\\TestRecord.txt\");\ncout<<\"Output is\"<<endl;\nwhile(!flag.eof())\n{\nflag>>ch;\ncout<<ch<<endl;\n}\nflag.close();\ngetch();\nreturn 0;\n}",
+     "pashto": "// reading a text file using eof() function\n#include <iostream.h>\n#include <conio.h>\n#include <fstream.h>\nint main()\n{\nchar ch [50];\nifstream flag (\"c:\\\\TestRecord.txt\");\ncout<<\"Output is\"<<endl;\nwhile(!flag.eof())\n{\nflag>>ch;\ncout<<ch<<endl;\n}\nflag.close();\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Output is\nAli     20\nAnwar 15\nZainab 17\nZonash21",
+     "urdu": "Output is\nAli     20\nAnwar 15\nZainab 17\nZonash21",
+     "pashto": "Output is\nAli     20\nAnwar 15\nZainab 17\nZonash21",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In the above program, the input file TestRecord is loaded and the eof () function detects the end of file. The program reads the file record by record into the string variable ch which is then displayed on the screen.",
+     "urdu": "اوپر کے پروگرام میں ان پٹ فائل TestRecord لوڈ کی جاتی ہے اور eof () فنکشن فائل کا اختتام معلوم کرتا ہے۔ پروگرام فائل کو ریکارڈ بہ ریکارڈ اسٹرنگ ویری ایبل ch میں پڑھتا ہے جسے پھر اسکرین پر دکھایا جاتا ہے۔",
+     "pashto": "په پورته پروګرام کې د ننوتنې دوتنه TestRecord پورته کېږي او eof () فنکشن د دوتنې پای پېژني. پروګرام دوتنه ریکارډ په ریکارډ د ch تار متغیر ته لولي چې بیا پر پرده ښودل کېږي."
+    },
+    {
+     "text": "9.1.4 Stream",
+     "urdu": "9.1.4 اسٹریم",
+     "pashto": "۹.۱.۴ بهیر (Stream)"
+    },
+    {
+     "text": "A stream can be thought of as a sequence of bytes of infinite length that is used as a buffer to hold data to be processed. In C++ a stream is a sequence of bytes associated with a file. Most of the times streams are used to assure a good and secure flow of data between an application and file.",
+     "urdu": "اسٹریم کو لامحدود لمبائی کے بائٹس کی ترتیب سمجھا جا سکتا ہے جو عمل کیے جانے والے ڈیٹا کو رکھنے کے لیے بفر کے طور پر استعمال ہوتی ہے۔ C++ میں اسٹریم فائل سے وابستہ بائٹس کی ترتیب ہے۔ زیادہ تر اسٹریمز ایپلیکیشن اور فائل کے درمیان ڈیٹا کے اچھے اور محفوظ بہاؤ کو یقینی بنانے کے لیے استعمال ہوتی ہیں۔",
+     "pashto": "بهیر (stream) د نامحدود اوږدوالي د بایټونو لړۍ ګڼل کېدای شي چې د پروسس کېدونکي ډېټا د ساتلو لپاره د بفر په توګه کارېږي. په C++ کې بهیر له یوې دوتنې سره تړلې د بایټونو لړۍ ده. ډېری وخت بهیرونه د کاريال او دوتنې ترمنځ د ډېټا د ښه او خوندي بهیر د ډاډ لپاره کارېږي."
+    },
+    {
+     "text": "In C++ there are two types of streams, input stream and output stream.",
+     "urdu": "C++ میں اسٹریمز کی دو اقسام ہیں، ان پٹ اسٹریم اور آؤٹ پٹ اسٹریم۔",
+     "pashto": "په C++ کې دوه ډوله بهیرونه دي، د ننوتنې بهیر او د وتنې بهیر."
+    }
+   ],
+   "theory": "9.1.3 bof() and eof()\n\nC++ provides special functions bof() and eof() that are used to set the pointers to the beginning of a file and at the end of a file respectively. The following sections explain them with the help of proper examples.\n\na. bof() – beginning-of-file\n\nThe bof() is a pointer which returns true if the current position of the pointer is at the beginning of the input file stream, and false otherwise. It means that it tells the compiler whether the cursor is at the beginning of file or not.\n\nmyFile.close();\n\nb. eof() – end-of-file\n\nThe eof() is a pointer which returns true when there are no more data to be read from an input file stream, and false otherwise. It means that this function checks whether control has reached to the end of file or not. This function is very useful in the case when we do not know the exact number of records in a file.\n\nRules for using eof( )\n\nAlways test for the end-of-file condition before processing data.\n\nUse a while loop for getting data from an input file stream. A for loop is desirable only when you know the exact number of data items in the file\n\n// reading a text file using eof() function\n#include <iostream.h>\n#include <conio.h>\n#include <fstream.h>\nint main()\n{\nchar ch [50];\nifstream flag (\"c:\\\\TestRecord.txt\");\ncout<<\"Output is\"<<endl;\nwhile(!flag.eof())\n{\nflag>>ch;\ncout<<ch<<endl;\n}\nflag.close();\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nOutput is\nAli     20\nAnwar 15\nZainab 17\nZonash21\n\nIn the above program, the input file TestRecord is loaded and the eof () function detects the end of file. The program reads the file record by record into the string variable ch which is then displayed on the screen.\n\n9.1.4 Stream\n\nA stream can be thought of as a sequence of bytes of infinite length that is used as a buffer to hold data to be processed. In C++ a stream is a sequence of bytes associated with a file. Most of the times streams are used to assure a good and secure flow of data between an application and file.\n\nIn C++ there are two types of streams, input stream and output stream.",
+   "urdu": "9.1.3 bof() اور eof()\n\nC++ خاص فنکشنز bof() اور eof() فراہم کرتی ہے جو بالترتیب پوائنٹرز کو فائل کے آغاز اور فائل کے اختتام پر سیٹ کرنے کے لیے استعمال ہوتے ہیں۔ درج ذیل حصے مناسب مثالوں کی مدد سے ان کی وضاحت کرتے ہیں۔\n\na. bof() – فائل کا آغاز\n\nbof() ایک پوائنٹر ہے جو true واپس کرتا ہے اگر پوائنٹر کا موجودہ مقام ان پٹ فائل اسٹریم کے آغاز پر ہو، ورنہ false۔ یعنی یہ کمپائلر کو بتاتا ہے کہ کرسر فائل کے آغاز پر ہے یا نہیں۔\n\nmyFile.close();\n\nb. eof() – فائل کا اختتام\n\neof() ایک پوائنٹر ہے جو true واپس کرتا ہے جب ان پٹ فائل اسٹریم سے پڑھنے کے لیے مزید ڈیٹا نہ ہو، ورنہ false۔ یعنی یہ فنکشن جانچتا ہے کہ کنٹرول فائل کے اختتام تک پہنچ گیا ہے یا نہیں۔ یہ فنکشن اس صورت میں بہت مفید ہے جب ہمیں فائل میں ریکارڈز کی درست تعداد معلوم نہ ہو۔\n\neof( ) کے استعمال کے اصول\n\nڈیٹا پر عمل کرنے سے پہلے ہمیشہ فائل کے اختتام کی شرط جانچیں۔\n\nان پٹ فائل اسٹریم سے ڈیٹا لینے کے لیے while لوپ استعمال کریں۔ for لوپ صرف اس وقت مناسب ہے جب آپ کو فائل میں ڈیٹا آئٹمز کی درست تعداد معلوم ہو\n\n// reading a text file using eof() function\n#include <iostream.h>\n#include <conio.h>\n#include <fstream.h>\nint main()\n{\nchar ch [50];\nifstream flag (\"c:\\\\TestRecord.txt\");\ncout<<\"Output is\"<<endl;\nwhile(!flag.eof())\n{\nflag>>ch;\ncout<<ch<<endl;\n}\nflag.close();\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nOutput is\nAli     20\nAnwar 15\nZainab 17\nZonash21\n\nاوپر کے پروگرام میں ان پٹ فائل TestRecord لوڈ کی جاتی ہے اور eof () فنکشن فائل کا اختتام معلوم کرتا ہے۔ پروگرام فائل کو ریکارڈ بہ ریکارڈ اسٹرنگ ویری ایبل ch میں پڑھتا ہے جسے پھر اسکرین پر دکھایا جاتا ہے۔\n\n9.1.4 اسٹریم\n\nاسٹریم کو لامحدود لمبائی کے بائٹس کی ترتیب سمجھا جا سکتا ہے جو عمل کیے جانے والے ڈیٹا کو رکھنے کے لیے بفر کے طور پر استعمال ہوتی ہے۔ C++ میں اسٹریم فائل سے وابستہ بائٹس کی ترتیب ہے۔ زیادہ تر اسٹریمز ایپلیکیشن اور فائل کے درمیان ڈیٹا کے اچھے اور محفوظ بہاؤ کو یقینی بنانے کے لیے استعمال ہوتی ہیں۔\n\nC++ میں اسٹریمز کی دو اقسام ہیں، ان پٹ اسٹریم اور آؤٹ پٹ اسٹریم۔",
+   "pashto": "۹.۱.۳ bof() او eof()\n\nC++ ځانګړي فنکشنونه bof() او eof() برابروي چې په ترتیب سره پوائنټرونه د دوتنې پیل او د دوتنې پای ته ټاکي. لاندې برخې د مناسبو بېلګو په مرسته دا تشریح کوي.\n\na. bof() – د دوتنې پیل\n\nbof() یو پوائنټر دی چې true بېرته ورکوي که د پوائنټر اوسنی ځای د ننوتنې دوتنې بهیر په پیل کې وي، او که نه false. یعنې کمپایلر ته وايي چې کرسر د دوتنې په پیل کې دی که نه.\n\nmyFile.close();\n\nb. eof() – د دوتنې پای\n\neof() یو پوائنټر دی چې true بېرته ورکوي کله چې د ننوتنې دوتنې له بهیر د لوستلو لپاره نور ډېټا پاتې نه وي، او که نه false. یعنې دا فنکشن ګوري چې کنټرول د دوتنې پای ته رسېدلی که نه. دا فنکشن هغه وخت ډېر ګټور دی چې په دوتنه کې د ریکارډونو دقیق شمېر ونه پېژنو.\n\nد eof( ) د کارونې قواعد\n\nد ډېټا له پروسس مخکې تل د دوتنې د پای شرط وازمویئ.\n\nد ننوتنې دوتنې له بهیر د ډېټا د اخیستلو لپاره while حلقه وکاروئ. for حلقه یوازې هغه وخت غوره ده چې په دوتنه کې د ډېټا توکو دقیق شمېر وپېژنئ\n\n// reading a text file using eof() function\n#include <iostream.h>\n#include <conio.h>\n#include <fstream.h>\nint main()\n{\nchar ch [50];\nifstream flag (\"c:\\\\TestRecord.txt\");\ncout<<\"Output is\"<<endl;\nwhile(!flag.eof())\n{\nflag>>ch;\ncout<<ch<<endl;\n}\nflag.close();\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nOutput is\nAli     20\nAnwar 15\nZainab 17\nZonash21\n\nپه پورته پروګرام کې د ننوتنې دوتنه TestRecord پورته کېږي او eof () فنکشن د دوتنې پای پېژني. پروګرام دوتنه ریکارډ په ریکارډ د ch تار متغیر ته لولي چې بیا پر پرده ښودل کېږي.\n\n۹.۱.۴ بهیر (Stream)\n\nبهیر (stream) د نامحدود اوږدوالي د بایټونو لړۍ ګڼل کېدای شي چې د پروسس کېدونکي ډېټا د ساتلو لپاره د بفر په توګه کارېږي. په C++ کې بهیر له یوې دوتنې سره تړلې د بایټونو لړۍ ده. ډېری وخت بهیرونه د کاريال او دوتنې ترمنځ د ډېټا د ښه او خوندي بهیر د ډاډ لپاره کارېږي.\n\nپه C++ کې دوه ډوله بهیرونه دي، د ننوتنې بهیر او د وتنې بهیر.",
+   "theoryUrdu": "9.1.3 bof() اور eof()\n\nC++ خاص فنکشنز bof() اور eof() فراہم کرتی ہے جو بالترتیب پوائنٹرز کو فائل کے آغاز اور فائل کے اختتام پر سیٹ کرنے کے لیے استعمال ہوتے ہیں۔ درج ذیل حصے مناسب مثالوں کی مدد سے ان کی وضاحت کرتے ہیں۔\n\na. bof() – فائل کا آغاز\n\nbof() ایک پوائنٹر ہے جو true واپس کرتا ہے اگر پوائنٹر کا موجودہ مقام ان پٹ فائل اسٹریم کے آغاز پر ہو، ورنہ false۔ یعنی یہ کمپائلر کو بتاتا ہے کہ کرسر فائل کے آغاز پر ہے یا نہیں۔\n\nmyFile.close();\n\nb. eof() – فائل کا اختتام\n\neof() ایک پوائنٹر ہے جو true واپس کرتا ہے جب ان پٹ فائل اسٹریم سے پڑھنے کے لیے مزید ڈیٹا نہ ہو، ورنہ false۔ یعنی یہ فنکشن جانچتا ہے کہ کنٹرول فائل کے اختتام تک پہنچ گیا ہے یا نہیں۔ یہ فنکشن اس صورت میں بہت مفید ہے جب ہمیں فائل میں ریکارڈز کی درست تعداد معلوم نہ ہو۔\n\neof( ) کے استعمال کے اصول\n\nڈیٹا پر عمل کرنے سے پہلے ہمیشہ فائل کے اختتام کی شرط جانچیں۔\n\nان پٹ فائل اسٹریم سے ڈیٹا لینے کے لیے while لوپ استعمال کریں۔ for لوپ صرف اس وقت مناسب ہے جب آپ کو فائل میں ڈیٹا آئٹمز کی درست تعداد معلوم ہو\n\n// reading a text file using eof() function\n#include <iostream.h>\n#include <conio.h>\n#include <fstream.h>\nint main()\n{\nchar ch [50];\nifstream flag (\"c:\\\\TestRecord.txt\");\ncout<<\"Output is\"<<endl;\nwhile(!flag.eof())\n{\nflag>>ch;\ncout<<ch<<endl;\n}\nflag.close();\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nOutput is\nAli     20\nAnwar 15\nZainab 17\nZonash21\n\nاوپر کے پروگرام میں ان پٹ فائل TestRecord لوڈ کی جاتی ہے اور eof () فنکشن فائل کا اختتام معلوم کرتا ہے۔ پروگرام فائل کو ریکارڈ بہ ریکارڈ اسٹرنگ ویری ایبل ch میں پڑھتا ہے جسے پھر اسکرین پر دکھایا جاتا ہے۔\n\n9.1.4 اسٹریم\n\nاسٹریم کو لامحدود لمبائی کے بائٹس کی ترتیب سمجھا جا سکتا ہے جو عمل کیے جانے والے ڈیٹا کو رکھنے کے لیے بفر کے طور پر استعمال ہوتی ہے۔ C++ میں اسٹریم فائل سے وابستہ بائٹس کی ترتیب ہے۔ زیادہ تر اسٹریمز ایپلیکیشن اور فائل کے درمیان ڈیٹا کے اچھے اور محفوظ بہاؤ کو یقینی بنانے کے لیے استعمال ہوتی ہیں۔\n\nC++ میں اسٹریمز کی دو اقسام ہیں، ان پٹ اسٹریم اور آؤٹ پٹ اسٹریم۔",
+   "theoryPashto": "۹.۱.۳ bof() او eof()\n\nC++ ځانګړي فنکشنونه bof() او eof() برابروي چې په ترتیب سره پوائنټرونه د دوتنې پیل او د دوتنې پای ته ټاکي. لاندې برخې د مناسبو بېلګو په مرسته دا تشریح کوي.\n\na. bof() – د دوتنې پیل\n\nbof() یو پوائنټر دی چې true بېرته ورکوي که د پوائنټر اوسنی ځای د ننوتنې دوتنې بهیر په پیل کې وي، او که نه false. یعنې کمپایلر ته وايي چې کرسر د دوتنې په پیل کې دی که نه.\n\nmyFile.close();\n\nb. eof() – د دوتنې پای\n\neof() یو پوائنټر دی چې true بېرته ورکوي کله چې د ننوتنې دوتنې له بهیر د لوستلو لپاره نور ډېټا پاتې نه وي، او که نه false. یعنې دا فنکشن ګوري چې کنټرول د دوتنې پای ته رسېدلی که نه. دا فنکشن هغه وخت ډېر ګټور دی چې په دوتنه کې د ریکارډونو دقیق شمېر ونه پېژنو.\n\nد eof( ) د کارونې قواعد\n\nد ډېټا له پروسس مخکې تل د دوتنې د پای شرط وازمویئ.\n\nد ننوتنې دوتنې له بهیر د ډېټا د اخیستلو لپاره while حلقه وکاروئ. for حلقه یوازې هغه وخت غوره ده چې په دوتنه کې د ډېټا توکو دقیق شمېر وپېژنئ\n\n// reading a text file using eof() function\n#include <iostream.h>\n#include <conio.h>\n#include <fstream.h>\nint main()\n{\nchar ch [50];\nifstream flag (\"c:\\\\TestRecord.txt\");\ncout<<\"Output is\"<<endl;\nwhile(!flag.eof())\n{\nflag>>ch;\ncout<<ch<<endl;\n}\nflag.close();\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nOutput is\nAli     20\nAnwar 15\nZainab 17\nZonash21\n\nپه پورته پروګرام کې د ننوتنې دوتنه TestRecord پورته کېږي او eof () فنکشن د دوتنې پای پېژني. پروګرام دوتنه ریکارډ په ریکارډ د ch تار متغیر ته لولي چې بیا پر پرده ښودل کېږي.\n\n۹.۱.۴ بهیر (Stream)\n\nبهیر (stream) د نامحدود اوږدوالي د بایټونو لړۍ ګڼل کېدای شي چې د پروسس کېدونکي ډېټا د ساتلو لپاره د بفر په توګه کارېږي. په C++ کې بهیر له یوې دوتنې سره تړلې د بایټونو لړۍ ده. ډېری وخت بهیرونه د کاريال او دوتنې ترمنځ د ډېټا د ښه او خوندي بهیر د ډاډ لپاره کارېږي.\n\nپه C++ کې دوه ډوله بهیرونه دي، د ننوتنې بهیر او د وتنې بهیر.",
+   "content": "<p>9.1.3 bof() and eof()</p><p>C++ provides special functions bof() and eof() that are used to set the pointers to the beginning of a file and at the end of a file respectively. The following sections explain them with the help of proper examples.</p><p>a. bof() – beginning-of-file</p><p>The bof() is a pointer which returns true if the current position of the pointer is at the beginning of the input file stream, and false otherwise. It means that it tells the compiler whether the cursor is at the beginning of file or not.</p><p>myFile.close();</p><p>b. eof() – end-of-file</p><p>The eof() is a pointer which returns true when there are no more data to be read from an input file stream, and false otherwise. It means that this function checks whether control has reached to the end of file or not. This function is very useful in the case when we do not know the exact number of records in a file.</p><p>Rules for using eof( )</p><p>Always test for the end-of-file condition before processing data.</p><p>Use a while loop for getting data from an input file stream. A for loop is desirable only when you know the exact number of data items in the file</p><p>// reading a text file using eof() function\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\n#include &lt;fstream.h&gt;\nint main()\n{\nchar ch [50];\nifstream flag (&quot;c:\\\\TestRecord.txt&quot;);\ncout&lt;&lt;&quot;Output is&quot;&lt;&lt;endl;\nwhile(!flag.eof())\n{\nflag&gt;&gt;ch;\ncout&lt;&lt;ch&lt;&lt;endl;\n}\nflag.close();\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Output is\nAli     20\nAnwar 15\nZainab 17\nZonash21</p><p>In the above program, the input file TestRecord is loaded and the eof () function detects the end of file. The program reads the file record by record into the string variable ch which is then displayed on the screen.</p><p>9.1.4 Stream</p><p>A stream can be thought of as a sequence of bytes of infinite length that is used as a buffer to hold data to be processed. In C++ a stream is a sequence of bytes associated with a file. Most of the times streams are used to assure a good and secure flow of data between an application and file.</p><p>In C++ there are two types of streams, input stream and output stream.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      8,
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 140,
+     "printedPages": [
+      268,
+      269
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 9 text (5)",
+   "sourcePageLabel": "PDF 140 · p. 268–269",
+   "unit": 9
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf140",
+   "unit": 9,
+   "printedPage": 268,
+   "description": "Under “a. bof()” the book prints the unrelated statement “myFile.close();”; bof() is not a standard C++ function and both bof()/eof() are called “a pointer”; the output shows “Zonash21” without a space and “Ali 20” pairs although the program prints one word per line. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

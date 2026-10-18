@@ -1,0 +1,218 @@
+{
+ "pdfPage": 141,
+ "sections": [
+  {
+   "id": "cs12-u9-text-6",
+   "title": "Unit 9 text (6)",
+   "headingUrdu": "یونٹ 9 — متن (6)",
+   "headingPashto": "۹ څپرکی — متن (6)",
+   "paras": [
+    {
+     "text": "Input streams take any sequence of bytes from an input device such as a keyboard, a file, or a network, while output streams are used to hold output for a particular data consumer, such as a monitor, a file, or a printer. When writing data to an output device, the device may not be ready to accept that data e.g. the printer may still be warming up when the program writes data to its output stream. The data will reside in the output stream until the printer starts consuming it.",
+     "urdu": "ان پٹ اسٹریمز کسی ان پٹ ڈیوائس جیسے کی بورڈ، فائل یا نیٹ ورک سے بائٹس کی کوئی بھی ترتیب لیتی ہیں، جبکہ آؤٹ پٹ اسٹریمز کسی خاص ڈیٹا صارف جیسے مانیٹر، فائل یا پرنٹر کے لیے آؤٹ پٹ رکھنے کے لیے استعمال ہوتی ہیں۔ آؤٹ پٹ ڈیوائس پر ڈیٹا لکھتے وقت ممکن ہے ڈیوائس ڈیٹا قبول کرنے کے لیے تیار نہ ہو، مثلاً جب پروگرام اپنی آؤٹ پٹ اسٹریم میں ڈیٹا لکھتا ہے تو پرنٹر ابھی گرم ہو رہا ہو۔ ڈیٹا اس وقت تک آؤٹ پٹ اسٹریم میں رہے گا جب تک پرنٹر اسے استعمال کرنا شروع نہ کرے۔",
+     "pashto": "د ننوتنې بهیرونه له یوې د ننوتنې وسیلې لکه کیبورډ، دوتنې یا شبکې د بایټونو هره لړۍ اخلي، په داسې حال کې چې د وتنې بهیرونه د یوه ځانګړي ډېټا مصرفوونکي لکه مانیټر، دوتنې یا چاپګر لپاره د وتنې د ساتلو لپاره کارېږي. د وتنې وسیلې ته د ډېټا د لیکلو پر مهال ښايي وسیله د ډېټا منلو ته چمتو نه وي، د بېلګې په توګه چاپګر لا تودېږي کله چې پروګرام خپل د وتنې بهیر ته ډېټا لیکي. ډېټا به تر هغه په د وتنې بهیر کې پاتې وي چې چاپګر یې مصرف پیل کړي."
+    },
+    {
+     "text": "The act of taking data from the input devices is called extraction and the operator used for this purpose is called stream extraction operator >>. Similarly, the act of displaying data on the screen is called insertion and the operator used for this purpose is called stream insertion operator <<.",
+     "urdu": "ان پٹ ڈیوائسز سے ڈیٹا لینے کا عمل extraction کہلاتا ہے اور اس مقصد کے لیے استعمال ہونے والا آپریٹر stream extraction operator >> کہلاتا ہے۔ اسی طرح اسکرین پر ڈیٹا دکھانے کا عمل insertion کہلاتا ہے اور اس مقصد کے لیے استعمال ہونے والا آپریٹر stream insertion operator << کہلاتا ہے۔",
+     "pashto": "له د ننوتنې وسیلو د ډېټا اخیستل extraction بلل کېږي او د دې موخې لپاره کارېدونکی چلونکی stream extraction operator >> بلل کېږي. همداراز پر پرده د ډېټا ښودل insertion بلل کېږي او د دې موخې لپاره کارېدونکی چلونکی stream insertion operator << بلل کېږي."
+    },
+    {
+     "text": "Sometimes, both operations input/output may need to be used at the same time. Standard streams in C++ consist of four predefined standard stream objects. These are: cin, cout, cerr and clog. C++ language handles files using these streams objects. For this purpose, the header file <fstream.h> is needed to be included.",
+     "urdu": "بعض اوقات ان پٹ/آؤٹ پٹ دونوں عمل ایک ساتھ استعمال کرنے پڑ سکتے ہیں۔ C++ میں معیاری اسٹریمز چار پہلے سے طے شدہ معیاری اسٹریم آبجیکٹس پر مشتمل ہیں۔ یہ ہیں: cin، cout، cerr اور clog۔ C++ زبان ان اسٹریم آبجیکٹس کے ذریعے فائلز ہینڈل کرتی ہے۔ اس مقصد کے لیے ہیڈر فائل <fstream.h> شامل کرنا ضروری ہے۔",
+     "pashto": "کله کله ښايي د ننوتنې/وتنې دواړه عملیې په یوه وخت وکارول شي. په C++ کې معیاري بهیرونه له څلورو مخکې ټاکل شویو معیاري بهیر شیانو جوړ دي. دا دي: cin، cout، cerr او clog. C++ ژبه د دې بهیر شیانو په مرسته دوتنې چلوي. د دې موخې لپاره د <fstream.h> سرپاڼه دوتنې شاملول اړین دي."
+    },
+    {
+     "text": "If the file is only used for reading purpose then the header file ifstream (input file stream) is needed to be included. Similarly, if one wants to write in some file then header file ofstream (output file stream) is needed. One can read, write and manipulate the same file by using the header file fstream.",
+     "urdu": "اگر فائل صرف پڑھنے کے مقصد کے لیے استعمال ہو تو ہیڈر فائل ifstream (ان پٹ فائل اسٹریم) شامل کرنا ضروری ہے۔ اسی طرح اگر کوئی کسی فائل میں لکھنا چاہے تو ہیڈر فائل ofstream (آؤٹ پٹ فائل اسٹریم) درکار ہے۔ ہیڈر فائل fstream کے ذریعے ایک ہی فائل کو پڑھا، لکھا اور تبدیل کیا جا سکتا ہے۔",
+     "pashto": "که دوتنه یوازې د لوستلو لپاره وکارول شي، د ifstream (د ننوتنې دوتنې بهیر) سرپاڼه دوتنه شاملول اړین دي. همداراز که څوک غواړي په کومه دوتنه کې ولیکي، د ofstream (د وتنې دوتنې بهیر) سرپاڼه دوتنې ته اړتیا ده. د fstream سرپاڼه دوتنې په کارولو یوه دوتنه لوستل، لیکل او بدلول کېدای شي."
+    },
+    {
+     "text": "Consider the following example of input and output using the standard streams:",
+     "urdu": "معیاری اسٹریمز کے ذریعے ان پٹ اور آؤٹ پٹ کی درج ذیل مثال پر غور کریں:",
+     "pashto": "د معیاري بهیرونو په مرسته د ننوتنې او وتنې لاندې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "// input/output stream example\n#include <conio.h>\n#include <iostream.h>\n#include <process.h>\nint main()\n{\nfloat height;\ncout<< \"Enter your height: \" <<endl; // output stream\ncin>> height; // input stream\nif (height <= 0)\n{\ncerr<< \"You entered an invalid height!\" <<endl;\nexit(1);\n}\ncout<< \"Your height is \" << height << \" feet\" <<endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "// input/output stream example\n#include <conio.h>\n#include <iostream.h>\n#include <process.h>\nint main()\n{\nfloat height;\ncout<< \"Enter your height: \" <<endl; // output stream\ncin>> height; // input stream\nif (height <= 0)\n{\ncerr<< \"You entered an invalid height!\" <<endl;\nexit(1);\n}\ncout<< \"Your height is \" << height << \" feet\" <<endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "// input/output stream example\n#include <conio.h>\n#include <iostream.h>\n#include <process.h>\nint main()\n{\nfloat height;\ncout<< \"Enter your height: \" <<endl; // output stream\ncin>> height; // input stream\nif (height <= 0)\n{\ncerr<< \"You entered an invalid height!\" <<endl;\nexit(1);\n}\ncout<< \"Your height is \" << height << \" feet\" <<endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter your height:5.8\nYour height is 5.8 feet",
+     "urdu": "Enter your height:5.8\nYour height is 5.8 feet",
+     "pashto": "Enter your height:5.8\nYour height is 5.8 feet",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "9.1.5 Use of the Streams",
+     "urdu": "9.1.5 اسٹریمز کا استعمال",
+     "pashto": "۹.۱.۵ د بهیرونو کارونه"
+    },
+    {
+     "text": "The data can be read from and written to files with the help of single character stream and string stream.",
+     "urdu": "سنگل کریکٹر اسٹریم اور اسٹرنگ اسٹریم کی مدد سے فائلز سے ڈیٹا پڑھا اور ان میں لکھا جا سکتا ہے۔",
+     "pashto": "د یو توري بهیر او د تار بهیر په مرسته له دوتنو ډېټا لوستل او پکې لیکل کېدای شي."
+    },
+    {
+     "text": "a. Single character stream",
+     "urdu": "a. سنگل کریکٹر اسٹریم",
+     "pashto": "a. د یو توري بهیر"
+    },
+    {
+     "text": "Using single character stream, the data can be read from and written to files character by character.",
+     "urdu": "سنگل کریکٹر اسٹریم کے ذریعے فائلز سے ڈیٹا حرف بہ حرف پڑھا اور لکھا جا سکتا ہے۔",
+     "pashto": "د یو توري بهیر په مرسته له دوتنو ډېټا توری په توری لوستل او لیکل کېدای شي."
+    },
+    {
+     "text": "i. Reading files character by character",
+     "urdu": "i. فائلز کو حرف بہ حرف پڑھنا",
+     "pashto": "i. دوتنې توری په توری لوستل"
+    },
+    {
+     "text": "The function get() is used to read data character by character from files.",
+     "urdu": "فنکشن get() فائلز سے ڈیٹا حرف بہ حرف پڑھنے کے لیے استعمال ہوتا ہے۔",
+     "pashto": "get() فنکشن له دوتنو د ډېټا د توري په توري لوستلو لپاره کارېږي."
+    },
+    {
+     "text": "Consider the following program that reads the data one character at a time from the file “characters file.txt”,shown in figure 9.7, and display them on the screen.",
+     "urdu": "درج ذیل پروگرام پر غور کریں جو شکل 9.7 میں دکھائی گئی فائل ’’characters file.txt‘‘ سے ایک وقت میں ایک حرف پڑھ کر اسکرین پر دکھاتا ہے۔",
+     "pashto": "لاندې پروګرام ته پام وکړئ چې په ۹.۷ شکل کې ښودل شوې \"characters file.txt\" دوتنې څخه په یوه وخت کې یو توری لولي او پر پرده یې ښيي."
+    }
+   ],
+   "theory": "Input streams take any sequence of bytes from an input device such as a keyboard, a file, or a network, while output streams are used to hold output for a particular data consumer, such as a monitor, a file, or a printer. When writing data to an output device, the device may not be ready to accept that data e.g. the printer may still be warming up when the program writes data to its output stream. The data will reside in the output stream until the printer starts consuming it.\n\nThe act of taking data from the input devices is called extraction and the operator used for this purpose is called stream extraction operator >>. Similarly, the act of displaying data on the screen is called insertion and the operator used for this purpose is called stream insertion operator <<.\n\nSometimes, both operations input/output may need to be used at the same time. Standard streams in C++ consist of four predefined standard stream objects. These are: cin, cout, cerr and clog. C++ language handles files using these streams objects. For this purpose, the header file <fstream.h> is needed to be included.\n\nIf the file is only used for reading purpose then the header file ifstream (input file stream) is needed to be included. Similarly, if one wants to write in some file then header file ofstream (output file stream) is needed. One can read, write and manipulate the same file by using the header file fstream.\n\nConsider the following example of input and output using the standard streams:\n\n// input/output stream example\n#include <conio.h>\n#include <iostream.h>\n#include <process.h>\nint main()\n{\nfloat height;\ncout<< \"Enter your height: \" <<endl; // output stream\ncin>> height; // input stream\nif (height <= 0)\n{\ncerr<< \"You entered an invalid height!\" <<endl;\nexit(1);\n}\ncout<< \"Your height is \" << height << \" feet\" <<endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nEnter your height:5.8\nYour height is 5.8 feet\n\n9.1.5 Use of the Streams\n\nThe data can be read from and written to files with the help of single character stream and string stream.\n\na. Single character stream\n\nUsing single character stream, the data can be read from and written to files character by character.\n\ni. Reading files character by character\n\nThe function get() is used to read data character by character from files.\n\nConsider the following program that reads the data one character at a time from the file “characters file.txt”,shown in figure 9.7, and display them on the screen.",
+   "urdu": "ان پٹ اسٹریمز کسی ان پٹ ڈیوائس جیسے کی بورڈ، فائل یا نیٹ ورک سے بائٹس کی کوئی بھی ترتیب لیتی ہیں، جبکہ آؤٹ پٹ اسٹریمز کسی خاص ڈیٹا صارف جیسے مانیٹر، فائل یا پرنٹر کے لیے آؤٹ پٹ رکھنے کے لیے استعمال ہوتی ہیں۔ آؤٹ پٹ ڈیوائس پر ڈیٹا لکھتے وقت ممکن ہے ڈیوائس ڈیٹا قبول کرنے کے لیے تیار نہ ہو، مثلاً جب پروگرام اپنی آؤٹ پٹ اسٹریم میں ڈیٹا لکھتا ہے تو پرنٹر ابھی گرم ہو رہا ہو۔ ڈیٹا اس وقت تک آؤٹ پٹ اسٹریم میں رہے گا جب تک پرنٹر اسے استعمال کرنا شروع نہ کرے۔\n\nان پٹ ڈیوائسز سے ڈیٹا لینے کا عمل extraction کہلاتا ہے اور اس مقصد کے لیے استعمال ہونے والا آپریٹر stream extraction operator >> کہلاتا ہے۔ اسی طرح اسکرین پر ڈیٹا دکھانے کا عمل insertion کہلاتا ہے اور اس مقصد کے لیے استعمال ہونے والا آپریٹر stream insertion operator << کہلاتا ہے۔\n\nبعض اوقات ان پٹ/آؤٹ پٹ دونوں عمل ایک ساتھ استعمال کرنے پڑ سکتے ہیں۔ C++ میں معیاری اسٹریمز چار پہلے سے طے شدہ معیاری اسٹریم آبجیکٹس پر مشتمل ہیں۔ یہ ہیں: cin، cout، cerr اور clog۔ C++ زبان ان اسٹریم آبجیکٹس کے ذریعے فائلز ہینڈل کرتی ہے۔ اس مقصد کے لیے ہیڈر فائل <fstream.h> شامل کرنا ضروری ہے۔\n\nاگر فائل صرف پڑھنے کے مقصد کے لیے استعمال ہو تو ہیڈر فائل ifstream (ان پٹ فائل اسٹریم) شامل کرنا ضروری ہے۔ اسی طرح اگر کوئی کسی فائل میں لکھنا چاہے تو ہیڈر فائل ofstream (آؤٹ پٹ فائل اسٹریم) درکار ہے۔ ہیڈر فائل fstream کے ذریعے ایک ہی فائل کو پڑھا، لکھا اور تبدیل کیا جا سکتا ہے۔\n\nمعیاری اسٹریمز کے ذریعے ان پٹ اور آؤٹ پٹ کی درج ذیل مثال پر غور کریں:\n\n// input/output stream example\n#include <conio.h>\n#include <iostream.h>\n#include <process.h>\nint main()\n{\nfloat height;\ncout<< \"Enter your height: \" <<endl; // output stream\ncin>> height; // input stream\nif (height <= 0)\n{\ncerr<< \"You entered an invalid height!\" <<endl;\nexit(1);\n}\ncout<< \"Your height is \" << height << \" feet\" <<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter your height:5.8\nYour height is 5.8 feet\n\n9.1.5 اسٹریمز کا استعمال\n\nسنگل کریکٹر اسٹریم اور اسٹرنگ اسٹریم کی مدد سے فائلز سے ڈیٹا پڑھا اور ان میں لکھا جا سکتا ہے۔\n\na. سنگل کریکٹر اسٹریم\n\nسنگل کریکٹر اسٹریم کے ذریعے فائلز سے ڈیٹا حرف بہ حرف پڑھا اور لکھا جا سکتا ہے۔\n\ni. فائلز کو حرف بہ حرف پڑھنا\n\nفنکشن get() فائلز سے ڈیٹا حرف بہ حرف پڑھنے کے لیے استعمال ہوتا ہے۔\n\nدرج ذیل پروگرام پر غور کریں جو شکل 9.7 میں دکھائی گئی فائل ’’characters file.txt‘‘ سے ایک وقت میں ایک حرف پڑھ کر اسکرین پر دکھاتا ہے۔",
+   "pashto": "د ننوتنې بهیرونه له یوې د ننوتنې وسیلې لکه کیبورډ، دوتنې یا شبکې د بایټونو هره لړۍ اخلي، په داسې حال کې چې د وتنې بهیرونه د یوه ځانګړي ډېټا مصرفوونکي لکه مانیټر، دوتنې یا چاپګر لپاره د وتنې د ساتلو لپاره کارېږي. د وتنې وسیلې ته د ډېټا د لیکلو پر مهال ښايي وسیله د ډېټا منلو ته چمتو نه وي، د بېلګې په توګه چاپګر لا تودېږي کله چې پروګرام خپل د وتنې بهیر ته ډېټا لیکي. ډېټا به تر هغه په د وتنې بهیر کې پاتې وي چې چاپګر یې مصرف پیل کړي.\n\nله د ننوتنې وسیلو د ډېټا اخیستل extraction بلل کېږي او د دې موخې لپاره کارېدونکی چلونکی stream extraction operator >> بلل کېږي. همداراز پر پرده د ډېټا ښودل insertion بلل کېږي او د دې موخې لپاره کارېدونکی چلونکی stream insertion operator << بلل کېږي.\n\nکله کله ښايي د ننوتنې/وتنې دواړه عملیې په یوه وخت وکارول شي. په C++ کې معیاري بهیرونه له څلورو مخکې ټاکل شویو معیاري بهیر شیانو جوړ دي. دا دي: cin، cout، cerr او clog. C++ ژبه د دې بهیر شیانو په مرسته دوتنې چلوي. د دې موخې لپاره د <fstream.h> سرپاڼه دوتنې شاملول اړین دي.\n\nکه دوتنه یوازې د لوستلو لپاره وکارول شي، د ifstream (د ننوتنې دوتنې بهیر) سرپاڼه دوتنه شاملول اړین دي. همداراز که څوک غواړي په کومه دوتنه کې ولیکي، د ofstream (د وتنې دوتنې بهیر) سرپاڼه دوتنې ته اړتیا ده. د fstream سرپاڼه دوتنې په کارولو یوه دوتنه لوستل، لیکل او بدلول کېدای شي.\n\nد معیاري بهیرونو په مرسته د ننوتنې او وتنې لاندې بېلګې ته پام وکړئ:\n\n// input/output stream example\n#include <conio.h>\n#include <iostream.h>\n#include <process.h>\nint main()\n{\nfloat height;\ncout<< \"Enter your height: \" <<endl; // output stream\ncin>> height; // input stream\nif (height <= 0)\n{\ncerr<< \"You entered an invalid height!\" <<endl;\nexit(1);\n}\ncout<< \"Your height is \" << height << \" feet\" <<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter your height:5.8\nYour height is 5.8 feet\n\n۹.۱.۵ د بهیرونو کارونه\n\nد یو توري بهیر او د تار بهیر په مرسته له دوتنو ډېټا لوستل او پکې لیکل کېدای شي.\n\na. د یو توري بهیر\n\nد یو توري بهیر په مرسته له دوتنو ډېټا توری په توری لوستل او لیکل کېدای شي.\n\ni. دوتنې توری په توری لوستل\n\nget() فنکشن له دوتنو د ډېټا د توري په توري لوستلو لپاره کارېږي.\n\nلاندې پروګرام ته پام وکړئ چې په ۹.۷ شکل کې ښودل شوې \"characters file.txt\" دوتنې څخه په یوه وخت کې یو توری لولي او پر پرده یې ښيي.",
+   "theoryUrdu": "ان پٹ اسٹریمز کسی ان پٹ ڈیوائس جیسے کی بورڈ، فائل یا نیٹ ورک سے بائٹس کی کوئی بھی ترتیب لیتی ہیں، جبکہ آؤٹ پٹ اسٹریمز کسی خاص ڈیٹا صارف جیسے مانیٹر، فائل یا پرنٹر کے لیے آؤٹ پٹ رکھنے کے لیے استعمال ہوتی ہیں۔ آؤٹ پٹ ڈیوائس پر ڈیٹا لکھتے وقت ممکن ہے ڈیوائس ڈیٹا قبول کرنے کے لیے تیار نہ ہو، مثلاً جب پروگرام اپنی آؤٹ پٹ اسٹریم میں ڈیٹا لکھتا ہے تو پرنٹر ابھی گرم ہو رہا ہو۔ ڈیٹا اس وقت تک آؤٹ پٹ اسٹریم میں رہے گا جب تک پرنٹر اسے استعمال کرنا شروع نہ کرے۔\n\nان پٹ ڈیوائسز سے ڈیٹا لینے کا عمل extraction کہلاتا ہے اور اس مقصد کے لیے استعمال ہونے والا آپریٹر stream extraction operator >> کہلاتا ہے۔ اسی طرح اسکرین پر ڈیٹا دکھانے کا عمل insertion کہلاتا ہے اور اس مقصد کے لیے استعمال ہونے والا آپریٹر stream insertion operator << کہلاتا ہے۔\n\nبعض اوقات ان پٹ/آؤٹ پٹ دونوں عمل ایک ساتھ استعمال کرنے پڑ سکتے ہیں۔ C++ میں معیاری اسٹریمز چار پہلے سے طے شدہ معیاری اسٹریم آبجیکٹس پر مشتمل ہیں۔ یہ ہیں: cin، cout، cerr اور clog۔ C++ زبان ان اسٹریم آبجیکٹس کے ذریعے فائلز ہینڈل کرتی ہے۔ اس مقصد کے لیے ہیڈر فائل <fstream.h> شامل کرنا ضروری ہے۔\n\nاگر فائل صرف پڑھنے کے مقصد کے لیے استعمال ہو تو ہیڈر فائل ifstream (ان پٹ فائل اسٹریم) شامل کرنا ضروری ہے۔ اسی طرح اگر کوئی کسی فائل میں لکھنا چاہے تو ہیڈر فائل ofstream (آؤٹ پٹ فائل اسٹریم) درکار ہے۔ ہیڈر فائل fstream کے ذریعے ایک ہی فائل کو پڑھا، لکھا اور تبدیل کیا جا سکتا ہے۔\n\nمعیاری اسٹریمز کے ذریعے ان پٹ اور آؤٹ پٹ کی درج ذیل مثال پر غور کریں:\n\n// input/output stream example\n#include <conio.h>\n#include <iostream.h>\n#include <process.h>\nint main()\n{\nfloat height;\ncout<< \"Enter your height: \" <<endl; // output stream\ncin>> height; // input stream\nif (height <= 0)\n{\ncerr<< \"You entered an invalid height!\" <<endl;\nexit(1);\n}\ncout<< \"Your height is \" << height << \" feet\" <<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter your height:5.8\nYour height is 5.8 feet\n\n9.1.5 اسٹریمز کا استعمال\n\nسنگل کریکٹر اسٹریم اور اسٹرنگ اسٹریم کی مدد سے فائلز سے ڈیٹا پڑھا اور ان میں لکھا جا سکتا ہے۔\n\na. سنگل کریکٹر اسٹریم\n\nسنگل کریکٹر اسٹریم کے ذریعے فائلز سے ڈیٹا حرف بہ حرف پڑھا اور لکھا جا سکتا ہے۔\n\ni. فائلز کو حرف بہ حرف پڑھنا\n\nفنکشن get() فائلز سے ڈیٹا حرف بہ حرف پڑھنے کے لیے استعمال ہوتا ہے۔\n\nدرج ذیل پروگرام پر غور کریں جو شکل 9.7 میں دکھائی گئی فائل ’’characters file.txt‘‘ سے ایک وقت میں ایک حرف پڑھ کر اسکرین پر دکھاتا ہے۔",
+   "theoryPashto": "د ننوتنې بهیرونه له یوې د ننوتنې وسیلې لکه کیبورډ، دوتنې یا شبکې د بایټونو هره لړۍ اخلي، په داسې حال کې چې د وتنې بهیرونه د یوه ځانګړي ډېټا مصرفوونکي لکه مانیټر، دوتنې یا چاپګر لپاره د وتنې د ساتلو لپاره کارېږي. د وتنې وسیلې ته د ډېټا د لیکلو پر مهال ښايي وسیله د ډېټا منلو ته چمتو نه وي، د بېلګې په توګه چاپګر لا تودېږي کله چې پروګرام خپل د وتنې بهیر ته ډېټا لیکي. ډېټا به تر هغه په د وتنې بهیر کې پاتې وي چې چاپګر یې مصرف پیل کړي.\n\nله د ننوتنې وسیلو د ډېټا اخیستل extraction بلل کېږي او د دې موخې لپاره کارېدونکی چلونکی stream extraction operator >> بلل کېږي. همداراز پر پرده د ډېټا ښودل insertion بلل کېږي او د دې موخې لپاره کارېدونکی چلونکی stream insertion operator << بلل کېږي.\n\nکله کله ښايي د ننوتنې/وتنې دواړه عملیې په یوه وخت وکارول شي. په C++ کې معیاري بهیرونه له څلورو مخکې ټاکل شویو معیاري بهیر شیانو جوړ دي. دا دي: cin، cout، cerr او clog. C++ ژبه د دې بهیر شیانو په مرسته دوتنې چلوي. د دې موخې لپاره د <fstream.h> سرپاڼه دوتنې شاملول اړین دي.\n\nکه دوتنه یوازې د لوستلو لپاره وکارول شي، د ifstream (د ننوتنې دوتنې بهیر) سرپاڼه دوتنه شاملول اړین دي. همداراز که څوک غواړي په کومه دوتنه کې ولیکي، د ofstream (د وتنې دوتنې بهیر) سرپاڼه دوتنې ته اړتیا ده. د fstream سرپاڼه دوتنې په کارولو یوه دوتنه لوستل، لیکل او بدلول کېدای شي.\n\nد معیاري بهیرونو په مرسته د ننوتنې او وتنې لاندې بېلګې ته پام وکړئ:\n\n// input/output stream example\n#include <conio.h>\n#include <iostream.h>\n#include <process.h>\nint main()\n{\nfloat height;\ncout<< \"Enter your height: \" <<endl; // output stream\ncin>> height; // input stream\nif (height <= 0)\n{\ncerr<< \"You entered an invalid height!\" <<endl;\nexit(1);\n}\ncout<< \"Your height is \" << height << \" feet\" <<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter your height:5.8\nYour height is 5.8 feet\n\n۹.۱.۵ د بهیرونو کارونه\n\nد یو توري بهیر او د تار بهیر په مرسته له دوتنو ډېټا لوستل او پکې لیکل کېدای شي.\n\na. د یو توري بهیر\n\nد یو توري بهیر په مرسته له دوتنو ډېټا توری په توری لوستل او لیکل کېدای شي.\n\ni. دوتنې توری په توری لوستل\n\nget() فنکشن له دوتنو د ډېټا د توري په توري لوستلو لپاره کارېږي.\n\nلاندې پروګرام ته پام وکړئ چې په ۹.۷ شکل کې ښودل شوې \"characters file.txt\" دوتنې څخه په یوه وخت کې یو توری لولي او پر پرده یې ښيي.",
+   "content": "<p>Input streams take any sequence of bytes from an input device such as a keyboard, a file, or a network, while output streams are used to hold output for a particular data consumer, such as a monitor, a file, or a printer. When writing data to an output device, the device may not be ready to accept that data e.g. the printer may still be warming up when the program writes data to its output stream. The data will reside in the output stream until the printer starts consuming it.</p><p>The act of taking data from the input devices is called extraction and the operator used for this purpose is called stream extraction operator &gt;&gt;. Similarly, the act of displaying data on the screen is called insertion and the operator used for this purpose is called stream insertion operator &lt;&lt;.</p><p>Sometimes, both operations input/output may need to be used at the same time. Standard streams in C++ consist of four predefined standard stream objects. These are: cin, cout, cerr and clog. C++ language handles files using these streams objects. For this purpose, the header file &lt;fstream.h&gt; is needed to be included.</p><p>If the file is only used for reading purpose then the header file ifstream (input file stream) is needed to be included. Similarly, if one wants to write in some file then header file ofstream (output file stream) is needed. One can read, write and manipulate the same file by using the header file fstream.</p><p>Consider the following example of input and output using the standard streams:</p><p>// input/output stream example\n#include &lt;conio.h&gt;\n#include &lt;iostream.h&gt;\n#include &lt;process.h&gt;\nint main()\n{\nfloat height;\ncout&lt;&lt; &quot;Enter your height: &quot; &lt;&lt;endl; // output stream\ncin&gt;&gt; height; // input stream\nif (height &lt;= 0)\n{\ncerr&lt;&lt; &quot;You entered an invalid height!&quot; &lt;&lt;endl;\nexit(1);\n}\ncout&lt;&lt; &quot;Your height is &quot; &lt;&lt; height &lt;&lt; &quot; feet&quot; &lt;&lt;endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Enter your height:5.8\nYour height is 5.8 feet</p><p>9.1.5 Use of the Streams</p><p>The data can be read from and written to files with the help of single character stream and string stream.</p><p>a. Single character stream</p><p>Using single character stream, the data can be read from and written to files character by character.</p><p>i. Reading files character by character</p><p>The function get() is used to read data character by character from files.</p><p>Consider the following program that reads the data one character at a time from the file “characters file.txt”,shown in figure 9.7, and display them on the screen.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 141,
+     "printedPages": [
+      270,
+      271
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 9 text (6)",
+   "sourcePageLabel": "PDF 141 · p. 270–271",
+   "sourceNote": "The character-stream (read) program that begins at the foot of p.271 is given whole with PDF142.",
+   "unit": 9
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf141",
+   "unit": 9,
+   "printedPage": 271,
+   "description": "p.271 refers to the file “characters file.txt” (the program opens charactersfile.txt) and to Figure 9.7, though no Figure 9.6 is printed in the unit; p.270 “consumer, such as” printed “consumer; such as”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

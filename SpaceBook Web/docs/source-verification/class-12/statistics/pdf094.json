@@ -1,0 +1,360 @@
+{
+ "pdfPage": 94,
+ "sections": [
+  {
+   "id": "stat12-p094-example-5-8-results",
+   "title": "Example 5.8 — mean, S.E and verification",
+   "headingUrdu": "مثال 5.8 — اوسط، معیاری غلطی اور تصدیق",
+   "headingPashto": "بېلګه 5.8 — منځنی، معیاري تېروتنه او تایید",
+   "paras": [
+    {
+     "text": "$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{10}{20}=0.5$",
+     "urdu": "$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{10}{20}=0.5$",
+     "pashto": "$E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{10}{20}=0.5$"
+    },
+    {
+     "text": "$\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}$",
+     "urdu": "$\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}$",
+     "pashto": "$\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}$"
+    },
+    {
+     "text": "$=\\sqrt{\\frac{6}{20}-\\left(\\frac{10}{20}\\right)^2}=\\sqrt{0.3-0.25}=\\sqrt{0.05}=0.22$",
+     "urdu": "$=\\sqrt{\\frac{6}{20}-\\left(\\frac{10}{20}\\right)^2}=\\sqrt{0.3-0.25}=\\sqrt{0.05}=0.22$",
+     "pashto": "$=\\sqrt{\\frac{6}{20}-\\left(\\frac{10}{20}\\right)^2}=\\sqrt{0.3-0.25}=\\sqrt{0.05}=0.22$"
+    },
+    {
+     "text": "Verification:",
+     "urdu": "تصدیق:",
+     "pashto": "تایید:"
+    },
+    {
+     "text": "(i) As even numbers in the population are 3 therefore,",
+     "urdu": "(i) چونکہ آبادی میں جفت اعداد 3 ہیں، لہٰذا",
+     "pashto": "(i) څرنګه چې په نفوس کې جفت عددونه 3 دي، نو"
+    },
+    {
+     "text": "$p=\\frac{X}{N}=\\frac{3}{6}=\\frac{1}{2}=0.5$, hence proved that $\\mu_{\\hat{p}}=p$",
+     "urdu": "$p=\\frac{X}{N}=\\frac{3}{6}=\\frac{1}{2}=0.5$، لہٰذا ثابت ہوا کہ $\\mu_{\\hat{p}}=p$",
+     "pashto": "$p=\\frac{X}{N}=\\frac{3}{6}=\\frac{1}{2}=0.5$، نو ثابته شوه چې $\\mu_{\\hat{p}}=p$"
+    },
+    {
+     "text": "(ii) S.E in without replacement case by property is",
+     "urdu": "(ii) خاصیت کے مطابق بغیر واپسی کی صورت میں معیاری غلطی یہ ہے",
+     "pashto": "(ii) د ځانګړنې له مخې پرته له بېرته اچولو په حالت کې معیاري تېروتنه دا ده"
+    },
+    {
+     "text": "$$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}=\\sqrt{\\frac{(0.5)(0.5)}{3}\\cdot\\frac{6-3}{6-1}}=\\sqrt{\\frac{0.75}{15}}=\\sqrt{0.05}=0.22$$",
+     "urdu": "$$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}=\\sqrt{\\frac{(0.5)(0.5)}{3}\\cdot\\frac{6-3}{6-1}}=\\sqrt{\\frac{0.75}{15}}=\\sqrt{0.05}=0.22$$",
+     "pashto": "$$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}=\\sqrt{\\frac{(0.5)(0.5)}{3}\\cdot\\frac{6-3}{6-1}}=\\sqrt{\\frac{0.75}{15}}=\\sqrt{0.05}=0.22$$"
+    },
+    {
+     "text": "This is same as computed value of $\\sigma_{\\hat{p}}$",
+     "urdu": "یہ $\\sigma_{\\hat{p}}$ کی معلوم کی گئی قیمت کے برابر ہے",
+     "pashto": "دا د $\\sigma_{\\hat{p}}$ د محاسبه شوي قیمت سره یو شان ده"
+    }
+   ],
+   "theory": "E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{10}{20}=0.5\n\n\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}\n\n=\\sqrt{\\frac{6}{20}-\\left(\\frac{10}{20}\\right)^2}=\\sqrt{0.3-0.25}=\\sqrt{0.05}=0.22\n\nVerification:\n\n(i) As even numbers in the population are 3 therefore,\n\np=\\frac{X}{N}=\\frac{3}{6}=\\frac{1}{2}=0.5, hence proved that \\mu_{\\hat{p}}=p\n\n(ii) S.E in without replacement case by property is\n\n$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}=\\sqrt{\\frac{(0.5)(0.5)}{3}\\cdot\\frac{6-3}{6-1}}=\\sqrt{\\frac{0.75}{15}}=\\sqrt{0.05}=0.22$\n\nThis is same as computed value of \\sigma_{\\hat{p}}",
+   "urdu": "E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{10}{20}=0.5\n\n\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}\n\n=\\sqrt{\\frac{6}{20}-\\left(\\frac{10}{20}\\right)^2}=\\sqrt{0.3-0.25}=\\sqrt{0.05}=0.22\n\nتصدیق:\n\n(i) چونکہ آبادی میں جفت اعداد 3 ہیں، لہٰذا\n\np=\\frac{X}{N}=\\frac{3}{6}=\\frac{1}{2}=0.5، لہٰذا ثابت ہوا کہ \\mu_{\\hat{p}}=p\n\n(ii) خاصیت کے مطابق بغیر واپسی کی صورت میں معیاری غلطی یہ ہے\n\n$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}=\\sqrt{\\frac{(0.5)(0.5)}{3}\\cdot\\frac{6-3}{6-1}}=\\sqrt{\\frac{0.75}{15}}=\\sqrt{0.05}=0.22$\n\nیہ \\sigma_{\\hat{p}} کی معلوم کی گئی قیمت کے برابر ہے",
+   "pashto": "E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{10}{20}=0.5\n\n\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}\n\n=\\sqrt{\\frac{6}{20}-\\left(\\frac{10}{20}\\right)^2}=\\sqrt{0.3-0.25}=\\sqrt{0.05}=0.22\n\nتایید:\n\n(i) څرنګه چې په نفوس کې جفت عددونه 3 دي، نو\n\np=\\frac{X}{N}=\\frac{3}{6}=\\frac{1}{2}=0.5، نو ثابته شوه چې \\mu_{\\hat{p}}=p\n\n(ii) د ځانګړنې له مخې پرته له بېرته اچولو په حالت کې معیاري تېروتنه دا ده\n\n$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}=\\sqrt{\\frac{(0.5)(0.5)}{3}\\cdot\\frac{6-3}{6-1}}=\\sqrt{\\frac{0.75}{15}}=\\sqrt{0.05}=0.22$\n\nدا د \\sigma_{\\hat{p}} د محاسبه شوي قیمت سره یو شان ده",
+   "theoryUrdu": "E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{10}{20}=0.5\n\n\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}\n\n=\\sqrt{\\frac{6}{20}-\\left(\\frac{10}{20}\\right)^2}=\\sqrt{0.3-0.25}=\\sqrt{0.05}=0.22\n\nتصدیق:\n\n(i) چونکہ آبادی میں جفت اعداد 3 ہیں، لہٰذا\n\np=\\frac{X}{N}=\\frac{3}{6}=\\frac{1}{2}=0.5، لہٰذا ثابت ہوا کہ \\mu_{\\hat{p}}=p\n\n(ii) خاصیت کے مطابق بغیر واپسی کی صورت میں معیاری غلطی یہ ہے\n\n$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}=\\sqrt{\\frac{(0.5)(0.5)}{3}\\cdot\\frac{6-3}{6-1}}=\\sqrt{\\frac{0.75}{15}}=\\sqrt{0.05}=0.22$\n\nیہ \\sigma_{\\hat{p}} کی معلوم کی گئی قیمت کے برابر ہے",
+   "theoryPashto": "E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{10}{20}=0.5\n\n\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}\n\n=\\sqrt{\\frac{6}{20}-\\left(\\frac{10}{20}\\right)^2}=\\sqrt{0.3-0.25}=\\sqrt{0.05}=0.22\n\nتایید:\n\n(i) څرنګه چې په نفوس کې جفت عددونه 3 دي، نو\n\np=\\frac{X}{N}=\\frac{3}{6}=\\frac{1}{2}=0.5، نو ثابته شوه چې \\mu_{\\hat{p}}=p\n\n(ii) د ځانګړنې له مخې پرته له بېرته اچولو په حالت کې معیاري تېروتنه دا ده\n\n$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}=\\sqrt{\\frac{(0.5)(0.5)}{3}\\cdot\\frac{6-3}{6-1}}=\\sqrt{\\frac{0.75}{15}}=\\sqrt{0.05}=0.22$\n\nدا د \\sigma_{\\hat{p}} د محاسبه شوي قیمت سره یو شان ده",
+   "content": "<p>E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})=\\frac{10}{20}=0.5</p><p>\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}</p><p>=\\sqrt{\\frac{6}{20}-\\left(\\frac{10}{20}\\right)^2}=\\sqrt{0.3-0.25}=\\sqrt{0.05}=0.22</p><p>Verification:</p><p>(i) As even numbers in the population are 3 therefore,</p><p>p=\\frac{X}{N}=\\frac{3}{6}=\\frac{1}{2}=0.5, hence proved that \\mu_{\\hat{p}}=p</p><p>(ii) S.E in without replacement case by property is</p><p>$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}=\\sqrt{\\frac{(0.5)(0.5)}{3}\\cdot\\frac{6-3}{6-1}}=\\sqrt{\\frac{0.75}{15}}=\\sqrt{0.05}=0.22$</p><p>This is same as computed value of \\sigma_{\\hat{p}}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 94,
+     "printedPages": [
+      179
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 5
+  },
+  {
+   "id": "stat12-p094-difference-proportions",
+   "title": "5.5 Difference between two sample proportions — properties and formulas",
+   "headingUrdu": "5.5 دو نمونوں کے تناسبوں کا فرق — خصوصیات اور فارمولے",
+   "headingPashto": "5.5 د دوو نمونو د تناسبونو توپیر — ځانګړنې او فورمولونه",
+   "paras": [
+    {
+     "text": "5.5 Sampling distribution of difference between two sample proportions",
+     "urdu": "5.5 دو نمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم",
+     "pashto": "5.5 د دوو نمونو د تناسبونو د توپیر نمونوي وېش"
+    },
+    {
+     "text": "The probability distribution of all possible values of $\\hat{p}_1-\\hat{p}_2$ is called sampling distribution of $\\hat{p}_1-\\hat{p}_2$. Its mean is denoted by $E(\\hat{p}_1-\\hat{p}_2)=\\mu_{\\hat{p}_1-\\hat{p}_2}$ and S.E by $\\sigma_{\\hat{p}_1-\\hat{p}_2}$",
+     "urdu": "$\\hat{p}_1-\\hat{p}_2$ کی تمام ممکنہ قیمتوں کی احتمالی تقسیم کو $\\hat{p}_1-\\hat{p}_2$ کی نمونہ جاتی تقسیم کہتے ہیں۔ اس کے اوسط کو $E(\\hat{p}_1-\\hat{p}_2)=\\mu_{\\hat{p}_1-\\hat{p}_2}$ اور معیاری غلطی کو $\\sigma_{\\hat{p}_1-\\hat{p}_2}$ سے ظاہر کرتے ہیں",
+     "pashto": "د $\\hat{p}_1-\\hat{p}_2$ د ټولو شونو قیمتونو احتمالي وېش ته د $\\hat{p}_1-\\hat{p}_2$ نمونوي وېش وایي. منځنی یې په $E(\\hat{p}_1-\\hat{p}_2)=\\mu_{\\hat{p}_1-\\hat{p}_2}$ او معیاري تېروتنه یې په $\\sigma_{\\hat{p}_1-\\hat{p}_2}$ ښودل کېږي"
+    },
+    {
+     "text": "5.5.1 Properties of the sampling distribution of difference between two sample proportions",
+     "urdu": "5.5.1 دو نمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم کی خصوصیات",
+     "pashto": "5.5.1 د دوو نمونو د تناسبونو د توپیر د نمونوي وېش ځانګړنې"
+    },
+    {
+     "text": "(i). Mean of the sampling distribution of $\\hat{p}_1-\\hat{p}_2$ is equal to the difference between the population proportions i.e.",
+     "urdu": "(i). $\\hat{p}_1-\\hat{p}_2$ کی نمونہ جاتی تقسیم کا اوسط آبادیوں کے تناسبوں کے فرق کے برابر ہوتا ہے یعنی",
+     "pashto": "(i). د $\\hat{p}_1-\\hat{p}_2$ د نمونوي وېش منځنی د نفوسونو د تناسبونو له توپیر سره برابر دی یعنې"
+    },
+    {
+     "text": "$\\mu_{\\hat{p}_1-\\hat{p}_2}=p_1-p_2$ (both in S.W.R and S.W.O.R)",
+     "urdu": "$\\mu_{\\hat{p}_1-\\hat{p}_2}=p_1-p_2$ (S.W.R اور S.W.O.R دونوں میں)",
+     "pashto": "$\\mu_{\\hat{p}_1-\\hat{p}_2}=p_1-p_2$ (په دواړو S.W.R او S.W.O.R کې)"
+    },
+    {
+     "text": "(ii). S.E of the sampling distribution of $\\hat{p}_1-\\hat{p}_2$ is",
+     "urdu": "(ii). $\\hat{p}_1-\\hat{p}_2$ کی نمونہ جاتی تقسیم کی معیاری غلطی یہ ہے",
+     "pashto": "(ii). د $\\hat{p}_1-\\hat{p}_2$ د نمونوي وېش معیاري تېروتنه دا ده"
+    },
+    {
+     "text": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}$ (S.W.R case)",
+     "urdu": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}$ (S.W.R کی صورت)",
+     "pashto": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}$ (د S.W.R حالت)"
+    },
+    {
+     "text": "$=\\sqrt{\\frac{p_1q_1}{n_1}\\frac{N_1-n_1}{N_1-1}+\\frac{p_2q_2}{n_2}\\frac{N_2-n_2}{N_2-1}}$ (S.W.O.R case)",
+     "urdu": "$=\\sqrt{\\frac{p_1q_1}{n_1}\\frac{N_1-n_1}{N_1-1}+\\frac{p_2q_2}{n_2}\\frac{N_2-n_2}{N_2-1}}$ (S.W.O.R کی صورت)",
+     "pashto": "$=\\sqrt{\\frac{p_1q_1}{n_1}\\frac{N_1-n_1}{N_1-1}+\\frac{p_2q_2}{n_2}\\frac{N_2-n_2}{N_2-1}}$ (د S.W.O.R حالت)"
+    },
+    {
+     "text": "If $p_1\\neq p_2$ and also unknown, then for large $n_1$, $n_2$ they are replaced with the sample proportions $\\hat{p}_1$ and $\\hat{p}_2$ respectively. The $\\sigma_{\\hat{p}_1-\\hat{p}_2}$ is then estimated by",
+     "urdu": "اگر $p_1\\neq p_2$ اور نامعلوم بھی ہوں تو بڑے $n_1$، $n_2$ کے لیے انہیں بالترتیب نمونوں کے تناسبوں $\\hat{p}_1$ اور $\\hat{p}_2$ سے بدل دیا جاتا ہے۔ پھر $\\sigma_{\\hat{p}_1-\\hat{p}_2}$ کا تخمین اس سے لگایا جاتا ہے",
+     "pashto": "که $p_1\\neq p_2$ او نامعلوم هم وي، نو د لویو $n_1$، $n_2$ لپاره په ترتیب سره د نمونو په تناسبونو $\\hat{p}_1$ او $\\hat{p}_2$ بدلېږي. بیا $\\sigma_{\\hat{p}_1-\\hat{p}_2}$ په دې اټکل کېږي"
+    },
+    {
+     "text": "$$S_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$$",
+     "urdu": "$$S_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$$",
+     "pashto": "$$S_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$$"
+    },
+    {
+     "text": "(iii). Shape of the sampling distribution of $\\hat{p}_1-\\hat{p}_2$.",
+     "urdu": "(iii). $\\hat{p}_1-\\hat{p}_2$ کی نمونہ جاتی تقسیم کی شکل۔",
+     "pashto": "(iii). د $\\hat{p}_1-\\hat{p}_2$ د نمونوي وېش بڼه."
+    },
+    {
+     "text": "For sufficiently large $n_1$ and $n_2$ the sampling distribution of $\\hat{p}_1-\\hat{p}_2$ is approximately normal.",
+     "urdu": "کافی بڑے $n_1$ اور $n_2$ کے لیے $\\hat{p}_1-\\hat{p}_2$ کی نمونہ جاتی تقسیم تقریباً نارمل ہوتی ہے۔",
+     "pashto": "د کافي لویو $n_1$ او $n_2$ لپاره د $\\hat{p}_1-\\hat{p}_2$ نمونوي وېش نږدې نورمال وي."
+    },
+    {
+     "text": "The variable $\\hat{p}_1-\\hat{p}_2$ in standard form is written as",
+     "urdu": "متغیر $\\hat{p}_1-\\hat{p}_2$ معیاری شکل میں یوں لکھا جاتا ہے",
+     "pashto": "متغیر $\\hat{p}_1-\\hat{p}_2$ په معیاري بڼه داسې لیکل کېږي"
+    },
+    {
+     "text": "$Z=\\frac{(\\hat{p}_1-\\hat{p}_2)-\\mu_{\\hat{p}_1-\\hat{p}_2}}{\\sigma_{\\hat{p}_1-\\hat{p}_2}}=\\frac{(\\hat{p}_1-\\hat{p}_2)-(p_1-p_2)}{\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}}$ (in S.W.R case)",
+     "urdu": "$Z=\\frac{(\\hat{p}_1-\\hat{p}_2)-\\mu_{\\hat{p}_1-\\hat{p}_2}}{\\sigma_{\\hat{p}_1-\\hat{p}_2}}=\\frac{(\\hat{p}_1-\\hat{p}_2)-(p_1-p_2)}{\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}}$ (S.W.R کی صورت میں)",
+     "pashto": "$Z=\\frac{(\\hat{p}_1-\\hat{p}_2)-\\mu_{\\hat{p}_1-\\hat{p}_2}}{\\sigma_{\\hat{p}_1-\\hat{p}_2}}=\\frac{(\\hat{p}_1-\\hat{p}_2)-(p_1-p_2)}{\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}}$ (د S.W.R په حالت کې)"
+    },
+    {
+     "text": "5.5.2 Formulas for mean and S.E of the sampling distribution of $\\hat{p}_1-\\hat{p}_2$",
+     "urdu": "5.5.2 $\\hat{p}_1-\\hat{p}_2$ کی نمونہ جاتی تقسیم کے اوسط اور معیاری غلطی کے فارمولے",
+     "pashto": "5.5.2 د $\\hat{p}_1-\\hat{p}_2$ د نمونوي وېش د منځني او معیاري تېروتنې فورمولونه"
+    },
+    {
+     "text": "$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)$",
+     "urdu": "$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)$",
+     "pashto": "$\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)$"
+    },
+    {
+     "text": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}$",
+     "urdu": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}$",
+     "pashto": "$\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}$"
+    },
+    {
+     "text": "Example 5.9",
+     "urdu": "مثال 5.9",
+     "pashto": "بېلګه 5.9"
+    },
+    {
+     "text": "Let $\\hat{p}_1$ represent the proportion of even numbers in samples of size $n_1=2$ drawn with replacement from a finite population consisting units 7, 8, 9. Let $\\hat{p}_2$ represent the proportion of odd numbers in samples of size $n_2=2$ selected with replacement from another finite population having units 4, 5, and 5. Construct the",
+     "urdu": "فرض کریں $\\hat{p}_1$ ایک محدود آبادی (اکائیاں 7، 8، 9) سے واپسی کے ساتھ نکالے گئے $n_1=2$ سائز کے نمونوں میں جفت اعداد کا تناسب ظاہر کرتا ہے۔ فرض کریں $\\hat{p}_2$ ایک اور محدود آبادی (اکائیاں 4، 5 اور 5) سے واپسی کے ساتھ منتخب $n_2=2$ سائز کے نمونوں میں طاق اعداد کا تناسب ظاہر کرتا ہے۔",
+     "pashto": "فرض کړئ $\\hat{p}_1$ له یوه محدود نفوس (واحدونه 7، 8، 9) څخه له بېرته اچولو سره د راایستل شویو $n_1=2$ اندازې نمونو کې د جفت عددونو تناسب ښيي. فرض کړئ $\\hat{p}_2$ له بل محدود نفوس (واحدونه 4، 5 او 5) څخه له بېرته اچولو سره د ټاکل شویو $n_2=2$ اندازې نمونو کې د طاق عددونو تناسب ښيي."
+    }
+   ],
+   "theory": "5.5 Sampling distribution of difference between two sample proportions\n\nThe probability distribution of all possible values of \\hat{p}_1-\\hat{p}_2 is called sampling distribution of \\hat{p}_1-\\hat{p}_2. Its mean is denoted by E(\\hat{p}_1-\\hat{p}_2)=\\mu_{\\hat{p}_1-\\hat{p}_2} and S.E by \\sigma_{\\hat{p}_1-\\hat{p}_2}\n\n5.5.1 Properties of the sampling distribution of difference between two sample proportions\n\n(i). Mean of the sampling distribution of \\hat{p}_1-\\hat{p}_2 is equal to the difference between the population proportions i.e.\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=p_1-p_2 (both in S.W.R and S.W.O.R)\n\n(ii). S.E of the sampling distribution of \\hat{p}_1-\\hat{p}_2 is\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}} (S.W.R case)\n\n=\\sqrt{\\frac{p_1q_1}{n_1}\\frac{N_1-n_1}{N_1-1}+\\frac{p_2q_2}{n_2}\\frac{N_2-n_2}{N_2-1}} (S.W.O.R case)\n\nIf p_1\\neq p_2 and also unknown, then for large n_1, n_2 they are replaced with the sample proportions \\hat{p}_1 and \\hat{p}_2 respectively. The \\sigma_{\\hat{p}_1-\\hat{p}_2} is then estimated by\n\n$S_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$\n\n(iii). Shape of the sampling distribution of \\hat{p}_1-\\hat{p}_2.\n\nFor sufficiently large n_1 and n_2 the sampling distribution of \\hat{p}_1-\\hat{p}_2 is approximately normal.\n\nThe variable \\hat{p}_1-\\hat{p}_2 in standard form is written as\n\nZ=\\frac{(\\hat{p}_1-\\hat{p}_2)-\\mu_{\\hat{p}_1-\\hat{p}_2}}{\\sigma_{\\hat{p}_1-\\hat{p}_2}}=\\frac{(\\hat{p}_1-\\hat{p}_2)-(p_1-p_2)}{\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}} (in S.W.R case)\n\n5.5.2 Formulas for mean and S.E of the sampling distribution of \\hat{p}_1-\\hat{p}_2\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}\n\nExample 5.9\n\nLet \\hat{p}_1 represent the proportion of even numbers in samples of size n_1=2 drawn with replacement from a finite population consisting units 7, 8, 9. Let \\hat{p}_2 represent the proportion of odd numbers in samples of size n_2=2 selected with replacement from another finite population having units 4, 5, and 5. Construct the",
+   "urdu": "5.5 دو نمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم\n\n\\hat{p}_1-\\hat{p}_2 کی تمام ممکنہ قیمتوں کی احتمالی تقسیم کو \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم کہتے ہیں۔ اس کے اوسط کو E(\\hat{p}_1-\\hat{p}_2)=\\mu_{\\hat{p}_1-\\hat{p}_2} اور معیاری غلطی کو \\sigma_{\\hat{p}_1-\\hat{p}_2} سے ظاہر کرتے ہیں\n\n5.5.1 دو نمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم کی خصوصیات\n\n(i). \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم کا اوسط آبادیوں کے تناسبوں کے فرق کے برابر ہوتا ہے یعنی\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=p_1-p_2 (S.W.R اور S.W.O.R دونوں میں)\n\n(ii). \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم کی معیاری غلطی یہ ہے\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}} (S.W.R کی صورت)\n\n=\\sqrt{\\frac{p_1q_1}{n_1}\\frac{N_1-n_1}{N_1-1}+\\frac{p_2q_2}{n_2}\\frac{N_2-n_2}{N_2-1}} (S.W.O.R کی صورت)\n\nاگر p_1\\neq p_2 اور نامعلوم بھی ہوں تو بڑے n_1، n_2 کے لیے انہیں بالترتیب نمونوں کے تناسبوں \\hat{p}_1 اور \\hat{p}_2 سے بدل دیا جاتا ہے۔ پھر \\sigma_{\\hat{p}_1-\\hat{p}_2} کا تخمین اس سے لگایا جاتا ہے\n\n$S_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$\n\n(iii). \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم کی شکل۔\n\nکافی بڑے n_1 اور n_2 کے لیے \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم تقریباً نارمل ہوتی ہے۔\n\nمتغیر \\hat{p}_1-\\hat{p}_2 معیاری شکل میں یوں لکھا جاتا ہے\n\nZ=\\frac{(\\hat{p}_1-\\hat{p}_2)-\\mu_{\\hat{p}_1-\\hat{p}_2}}{\\sigma_{\\hat{p}_1-\\hat{p}_2}}=\\frac{(\\hat{p}_1-\\hat{p}_2)-(p_1-p_2)}{\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}} (S.W.R کی صورت میں)\n\n5.5.2 \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم کے اوسط اور معیاری غلطی کے فارمولے\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}\n\nمثال 5.9\n\nفرض کریں \\hat{p}_1 ایک محدود آبادی (اکائیاں 7، 8، 9) سے واپسی کے ساتھ نکالے گئے n_1=2 سائز کے نمونوں میں جفت اعداد کا تناسب ظاہر کرتا ہے۔ فرض کریں \\hat{p}_2 ایک اور محدود آبادی (اکائیاں 4، 5 اور 5) سے واپسی کے ساتھ منتخب n_2=2 سائز کے نمونوں میں طاق اعداد کا تناسب ظاہر کرتا ہے۔",
+   "pashto": "5.5 د دوو نمونو د تناسبونو د توپیر نمونوي وېش\n\nد \\hat{p}_1-\\hat{p}_2 د ټولو شونو قیمتونو احتمالي وېش ته د \\hat{p}_1-\\hat{p}_2 نمونوي وېش وایي. منځنی یې په E(\\hat{p}_1-\\hat{p}_2)=\\mu_{\\hat{p}_1-\\hat{p}_2} او معیاري تېروتنه یې په \\sigma_{\\hat{p}_1-\\hat{p}_2} ښودل کېږي\n\n5.5.1 د دوو نمونو د تناسبونو د توپیر د نمونوي وېش ځانګړنې\n\n(i). د \\hat{p}_1-\\hat{p}_2 د نمونوي وېش منځنی د نفوسونو د تناسبونو له توپیر سره برابر دی یعنې\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=p_1-p_2 (په دواړو S.W.R او S.W.O.R کې)\n\n(ii). د \\hat{p}_1-\\hat{p}_2 د نمونوي وېش معیاري تېروتنه دا ده\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}} (د S.W.R حالت)\n\n=\\sqrt{\\frac{p_1q_1}{n_1}\\frac{N_1-n_1}{N_1-1}+\\frac{p_2q_2}{n_2}\\frac{N_2-n_2}{N_2-1}} (د S.W.O.R حالت)\n\nکه p_1\\neq p_2 او نامعلوم هم وي، نو د لویو n_1، n_2 لپاره په ترتیب سره د نمونو په تناسبونو \\hat{p}_1 او \\hat{p}_2 بدلېږي. بیا \\sigma_{\\hat{p}_1-\\hat{p}_2} په دې اټکل کېږي\n\n$S_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$\n\n(iii). د \\hat{p}_1-\\hat{p}_2 د نمونوي وېش بڼه.\n\nد کافي لویو n_1 او n_2 لپاره د \\hat{p}_1-\\hat{p}_2 نمونوي وېش نږدې نورمال وي.\n\nمتغیر \\hat{p}_1-\\hat{p}_2 په معیاري بڼه داسې لیکل کېږي\n\nZ=\\frac{(\\hat{p}_1-\\hat{p}_2)-\\mu_{\\hat{p}_1-\\hat{p}_2}}{\\sigma_{\\hat{p}_1-\\hat{p}_2}}=\\frac{(\\hat{p}_1-\\hat{p}_2)-(p_1-p_2)}{\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}} (د S.W.R په حالت کې)\n\n5.5.2 د \\hat{p}_1-\\hat{p}_2 د نمونوي وېش د منځني او معیاري تېروتنې فورمولونه\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}\n\nبېلګه 5.9\n\nفرض کړئ \\hat{p}_1 له یوه محدود نفوس (واحدونه 7، 8، 9) څخه له بېرته اچولو سره د راایستل شویو n_1=2 اندازې نمونو کې د جفت عددونو تناسب ښيي. فرض کړئ \\hat{p}_2 له بل محدود نفوس (واحدونه 4، 5 او 5) څخه له بېرته اچولو سره د ټاکل شویو n_2=2 اندازې نمونو کې د طاق عددونو تناسب ښيي.",
+   "theoryUrdu": "5.5 دو نمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم\n\n\\hat{p}_1-\\hat{p}_2 کی تمام ممکنہ قیمتوں کی احتمالی تقسیم کو \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم کہتے ہیں۔ اس کے اوسط کو E(\\hat{p}_1-\\hat{p}_2)=\\mu_{\\hat{p}_1-\\hat{p}_2} اور معیاری غلطی کو \\sigma_{\\hat{p}_1-\\hat{p}_2} سے ظاہر کرتے ہیں\n\n5.5.1 دو نمونوں کے تناسبوں کے فرق کی نمونہ جاتی تقسیم کی خصوصیات\n\n(i). \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم کا اوسط آبادیوں کے تناسبوں کے فرق کے برابر ہوتا ہے یعنی\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=p_1-p_2 (S.W.R اور S.W.O.R دونوں میں)\n\n(ii). \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم کی معیاری غلطی یہ ہے\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}} (S.W.R کی صورت)\n\n=\\sqrt{\\frac{p_1q_1}{n_1}\\frac{N_1-n_1}{N_1-1}+\\frac{p_2q_2}{n_2}\\frac{N_2-n_2}{N_2-1}} (S.W.O.R کی صورت)\n\nاگر p_1\\neq p_2 اور نامعلوم بھی ہوں تو بڑے n_1، n_2 کے لیے انہیں بالترتیب نمونوں کے تناسبوں \\hat{p}_1 اور \\hat{p}_2 سے بدل دیا جاتا ہے۔ پھر \\sigma_{\\hat{p}_1-\\hat{p}_2} کا تخمین اس سے لگایا جاتا ہے\n\n$S_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$\n\n(iii). \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم کی شکل۔\n\nکافی بڑے n_1 اور n_2 کے لیے \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم تقریباً نارمل ہوتی ہے۔\n\nمتغیر \\hat{p}_1-\\hat{p}_2 معیاری شکل میں یوں لکھا جاتا ہے\n\nZ=\\frac{(\\hat{p}_1-\\hat{p}_2)-\\mu_{\\hat{p}_1-\\hat{p}_2}}{\\sigma_{\\hat{p}_1-\\hat{p}_2}}=\\frac{(\\hat{p}_1-\\hat{p}_2)-(p_1-p_2)}{\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}} (S.W.R کی صورت میں)\n\n5.5.2 \\hat{p}_1-\\hat{p}_2 کی نمونہ جاتی تقسیم کے اوسط اور معیاری غلطی کے فارمولے\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}\n\nمثال 5.9\n\nفرض کریں \\hat{p}_1 ایک محدود آبادی (اکائیاں 7، 8، 9) سے واپسی کے ساتھ نکالے گئے n_1=2 سائز کے نمونوں میں جفت اعداد کا تناسب ظاہر کرتا ہے۔ فرض کریں \\hat{p}_2 ایک اور محدود آبادی (اکائیاں 4، 5 اور 5) سے واپسی کے ساتھ منتخب n_2=2 سائز کے نمونوں میں طاق اعداد کا تناسب ظاہر کرتا ہے۔",
+   "theoryPashto": "5.5 د دوو نمونو د تناسبونو د توپیر نمونوي وېش\n\nد \\hat{p}_1-\\hat{p}_2 د ټولو شونو قیمتونو احتمالي وېش ته د \\hat{p}_1-\\hat{p}_2 نمونوي وېش وایي. منځنی یې په E(\\hat{p}_1-\\hat{p}_2)=\\mu_{\\hat{p}_1-\\hat{p}_2} او معیاري تېروتنه یې په \\sigma_{\\hat{p}_1-\\hat{p}_2} ښودل کېږي\n\n5.5.1 د دوو نمونو د تناسبونو د توپیر د نمونوي وېش ځانګړنې\n\n(i). د \\hat{p}_1-\\hat{p}_2 د نمونوي وېش منځنی د نفوسونو د تناسبونو له توپیر سره برابر دی یعنې\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=p_1-p_2 (په دواړو S.W.R او S.W.O.R کې)\n\n(ii). د \\hat{p}_1-\\hat{p}_2 د نمونوي وېش معیاري تېروتنه دا ده\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}} (د S.W.R حالت)\n\n=\\sqrt{\\frac{p_1q_1}{n_1}\\frac{N_1-n_1}{N_1-1}+\\frac{p_2q_2}{n_2}\\frac{N_2-n_2}{N_2-1}} (د S.W.O.R حالت)\n\nکه p_1\\neq p_2 او نامعلوم هم وي، نو د لویو n_1، n_2 لپاره په ترتیب سره د نمونو په تناسبونو \\hat{p}_1 او \\hat{p}_2 بدلېږي. بیا \\sigma_{\\hat{p}_1-\\hat{p}_2} په دې اټکل کېږي\n\n$S_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$\n\n(iii). د \\hat{p}_1-\\hat{p}_2 د نمونوي وېش بڼه.\n\nد کافي لویو n_1 او n_2 لپاره د \\hat{p}_1-\\hat{p}_2 نمونوي وېش نږدې نورمال وي.\n\nمتغیر \\hat{p}_1-\\hat{p}_2 په معیاري بڼه داسې لیکل کېږي\n\nZ=\\frac{(\\hat{p}_1-\\hat{p}_2)-\\mu_{\\hat{p}_1-\\hat{p}_2}}{\\sigma_{\\hat{p}_1-\\hat{p}_2}}=\\frac{(\\hat{p}_1-\\hat{p}_2)-(p_1-p_2)}{\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}} (د S.W.R په حالت کې)\n\n5.5.2 د \\hat{p}_1-\\hat{p}_2 د نمونوي وېش د منځني او معیاري تېروتنې فورمولونه\n\n\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)\n\n\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}\n\nبېلګه 5.9\n\nفرض کړئ \\hat{p}_1 له یوه محدود نفوس (واحدونه 7، 8، 9) څخه له بېرته اچولو سره د راایستل شویو n_1=2 اندازې نمونو کې د جفت عددونو تناسب ښيي. فرض کړئ \\hat{p}_2 له بل محدود نفوس (واحدونه 4، 5 او 5) څخه له بېرته اچولو سره د ټاکل شویو n_2=2 اندازې نمونو کې د طاق عددونو تناسب ښيي.",
+   "content": "<p>5.5 Sampling distribution of difference between two sample proportions</p><p>The probability distribution of all possible values of \\hat{p}_1-\\hat{p}_2 is called sampling distribution of \\hat{p}_1-\\hat{p}_2. Its mean is denoted by E(\\hat{p}_1-\\hat{p}_2)=\\mu_{\\hat{p}_1-\\hat{p}_2} and S.E by \\sigma_{\\hat{p}_1-\\hat{p}_2}</p><p>5.5.1 Properties of the sampling distribution of difference between two sample proportions</p><p>(i). Mean of the sampling distribution of \\hat{p}_1-\\hat{p}_2 is equal to the difference between the population proportions i.e.</p><p>\\mu_{\\hat{p}_1-\\hat{p}_2}=p_1-p_2 (both in S.W.R and S.W.O.R)</p><p>(ii). S.E of the sampling distribution of \\hat{p}_1-\\hat{p}_2 is</p><p>\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}} (S.W.R case)</p><p>=\\sqrt{\\frac{p_1q_1}{n_1}\\frac{N_1-n_1}{N_1-1}+\\frac{p_2q_2}{n_2}\\frac{N_2-n_2}{N_2-1}} (S.W.O.R case)</p><p>If p_1\\neq p_2 and also unknown, then for large n_1, n_2 they are replaced with the sample proportions \\hat{p}_1 and \\hat{p}_2 respectively. The \\sigma_{\\hat{p}_1-\\hat{p}_2} is then estimated by</p><p>$S_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\frac{\\hat{p}_1\\hat{q}_1}{n_1}+\\frac{\\hat{p}_2\\hat{q}_2}{n_2}}$</p><p>(iii). Shape of the sampling distribution of \\hat{p}_1-\\hat{p}_2.</p><p>For sufficiently large n_1 and n_2 the sampling distribution of \\hat{p}_1-\\hat{p}_2 is approximately normal.</p><p>The variable \\hat{p}_1-\\hat{p}_2 in standard form is written as</p><p>Z=\\frac{(\\hat{p}_1-\\hat{p}_2)-\\mu_{\\hat{p}_1-\\hat{p}_2}}{\\sigma_{\\hat{p}_1-\\hat{p}_2}}=\\frac{(\\hat{p}_1-\\hat{p}_2)-(p_1-p_2)}{\\sqrt{\\frac{p_1q_1}{n_1}+\\frac{p_2q_2}{n_2}}} (in S.W.R case)</p><p>5.5.2 Formulas for mean and S.E of the sampling distribution of \\hat{p}_1-\\hat{p}_2</p><p>\\mu_{\\hat{p}_1-\\hat{p}_2}=\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)</p><p>\\sigma_{\\hat{p}_1-\\hat{p}_2}=\\sqrt{\\Sigma(\\hat{p}_1-\\hat{p}_2)^2f(\\hat{p}_1-\\hat{p}_2)-[\\Sigma(\\hat{p}_1-\\hat{p}_2)\\,f(\\hat{p}_1-\\hat{p}_2)]^2}</p><p>Example 5.9</p><p>Let \\hat{p}_1 represent the proportion of even numbers in samples of size n_1=2 drawn with replacement from a finite population consisting units 7, 8, 9. Let \\hat{p}_2 represent the proportion of odd numbers in samples of size n_2=2 selected with replacement from another finite population having units 4, 5, and 5. Construct the</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      6,
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      15,
+      16
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 94,
+     "printedPages": [
+      179,
+      180
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 5
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

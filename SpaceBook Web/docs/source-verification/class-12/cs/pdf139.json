@@ -1,0 +1,165 @@
+{
+ "pdfPage": 139,
+ "sections": [
+  {
+   "id": "cs12-u9-text-4",
+   "title": "Unit 9 text (4)",
+   "headingUrdu": "یونٹ 9 — متن (4)",
+   "headingPashto": "۹ څپرکی — متن (4)",
+   "paras": [
+    {
+     "text": "#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nmain()\n{\nChar name[50]; // used to read name of employee from file\nChar sal[10]; // used to read salary of employee from file\nChar dept[30]; // used to read dept of employee from file\nIfstream inFile; // Handle for the input file\nCharin putFileName[] = \"myfile.txt\"; // file name, this file is in the current directory\ninFile.open(inputFileName); // Opening the file\n// checking that file is successfully opened or not\nif (!inFile)\n{\ncout<< \"Can't open input file named \" <<inputFileName<<endl;\nexit(1);\n}\n// Reading the complete file word by word and printing on screen\nwhile (!inFile.eof())\n{\ninFile>> name >>sal>>dept;\ncout<< name << \"\\t\" <<sal<< \" \\t\" <<dept<<endl;\n}\ninFile.close();\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nmain()\n{\nChar name[50]; // used to read name of employee from file\nChar sal[10]; // used to read salary of employee from file\nChar dept[30]; // used to read dept of employee from file\nIfstream inFile; // Handle for the input file\nCharin putFileName[] = \"myfile.txt\"; // file name, this file is in the current directory\ninFile.open(inputFileName); // Opening the file\n// checking that file is successfully opened or not\nif (!inFile)\n{\ncout<< \"Can't open input file named \" <<inputFileName<<endl;\nexit(1);\n}\n// Reading the complete file word by word and printing on screen\nwhile (!inFile.eof())\n{\ninFile>> name >>sal>>dept;\ncout<< name << \"\\t\" <<sal<< \" \\t\" <<dept<<endl;\n}\ninFile.close();\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nmain()\n{\nChar name[50]; // used to read name of employee from file\nChar sal[10]; // used to read salary of employee from file\nChar dept[30]; // used to read dept of employee from file\nIfstream inFile; // Handle for the input file\nCharin putFileName[] = \"myfile.txt\"; // file name, this file is in the current directory\ninFile.open(inputFileName); // Opening the file\n// checking that file is successfully opened or not\nif (!inFile)\n{\ncout<< \"Can't open input file named \" <<inputFileName<<endl;\nexit(1);\n}\n// Reading the complete file word by word and printing on screen\nwhile (!inFile.eof())\n{\ninFile>> name >>sal>>dept;\ncout<< name << \"\\t\" <<sal<< \" \\t\" <<dept<<endl;\n}\ninFile.close();\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "c. Closing file",
+     "urdu": "c. فائل بند کرنا",
+     "pashto": "c. دوتنه تړل"
+    },
+    {
+     "text": "Once we have read the file, it must be closed. It is the responsibility of the programmer to close the file. We can close the file by using the following statement:",
+     "urdu": "فائل پڑھنے کے بعد اسے بند کرنا ضروری ہے۔ فائل بند کرنا پروگرامر کی ذمہ داری ہے۔ ہم درج ذیل بیان سے فائل بند کر سکتے ہیں:",
+     "pashto": "کله چې دوتنه مو ولوستله، باید وتړل شي. د دوتنې تړل د پروګرام جوړوونکي مسؤلیت دی. موږ کولی شو د لاندې بیان په مرسته دوتنه وتړو:"
+    },
+    {
+     "text": "myFile.close();",
+     "urdu": "myFile.close();",
+     "pashto": "myFile.close();",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The function close() does not require any argument, as we are going to close the file associated with myFile. Once we close the file, no file will be associated with myfile.",
+     "urdu": "فنکشن close() کو کسی آرگیومنٹ کی ضرورت نہیں کیونکہ ہم myFile سے وابستہ فائل بند کرنے جا رہے ہیں۔ فائل بند کرنے کے بعد myfile سے کوئی فائل وابستہ نہیں رہے گی۔",
+     "pashto": "close() فنکشن هېڅ دلیل ته اړتیا نه لري، ځکه موږ هغه دوتنه تړو چې له myFile سره تړلې ده. کله چې دوتنه وتړو، له myfile سره به هېڅ دوتنه تړلې نه وي."
+    },
+    {
+     "text": "d. Opening files in binary mode",
+     "urdu": "d. بائنری موڈ میں فائلز کھولنا",
+     "pashto": "d. په باینري حالت کې دوتنې پرانیستل"
+    },
+    {
+     "text": "To open a file in binary mode, we need to set the file mode to ios::binary. Suppose we have a binary file named as “test.dat”. To open this file in binary mode, we write the statement as:",
+     "urdu": "فائل کو بائنری موڈ میں کھولنے کے لیے ہمیں فائل موڈ ios::binary پر سیٹ کرنا ہوتا ہے۔ فرض کریں ہمارے پاس ’’test.dat‘‘ نامی بائنری فائل ہے۔ اس فائل کو بائنری موڈ میں کھولنے کے لیے ہم یہ بیان لکھتے ہیں:",
+     "pashto": "د دوتنې په باینري حالت کې د پرانیستلو لپاره باید د دوتنې حالت ios::binary ته وټاکو. فرض کړئ د \"test.dat\" په نوم باینري دوتنه لرو. د دې دوتنې په باینري حالت کې د پرانیستلو لپاره بیان داسې لیکو:"
+    },
+    {
+     "text": "ofstream myFile;\nmyFile.open (“test.dat”, ios::binary);",
+     "urdu": "ofstream myFile;\nmyFile.open (“test.dat”, ios::binary);",
+     "pashto": "ofstream myFile;\nmyFile.open (“test.dat”, ios::binary);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In order to write the data to a binary file, “write” method is used. This method is a member function of ofstream or fstream class.",
+     "urdu": "بائنری فائل میں ڈیٹا لکھنے کے لیے ’’write‘‘ میتھڈ استعمال ہوتا ہے۔ یہ میتھڈ ofstream یا fstream کلاس کا ممبر فنکشن ہے۔",
+     "pashto": "باینري دوتنې ته د ډېټا د لیکلو لپاره \"write\" میتود کارېږي. دا میتود د ofstream یا fstream ټولګي غړی فنکشن دی."
+    }
+   ],
+   "theory": "#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nmain()\n{\nChar name[50]; // used to read name of employee from file\nChar sal[10]; // used to read salary of employee from file\nChar dept[30]; // used to read dept of employee from file\nIfstream inFile; // Handle for the input file\nCharin putFileName[] = \"myfile.txt\"; // file name, this file is in the current directory\ninFile.open(inputFileName); // Opening the file\n// checking that file is successfully opened or not\nif (!inFile)\n{\ncout<< \"Can't open input file named \" <<inputFileName<<endl;\nexit(1);\n}\n// Reading the complete file word by word and printing on screen\nwhile (!inFile.eof())\n{\ninFile>> name >>sal>>dept;\ncout<< name << \"\\t\" <<sal<< \" \\t\" <<dept<<endl;\n}\ninFile.close();\ngetch();\nreturn 0;\n}\n\nc. Closing file\n\nOnce we have read the file, it must be closed. It is the responsibility of the programmer to close the file. We can close the file by using the following statement:\n\nmyFile.close();\n\nThe function close() does not require any argument, as we are going to close the file associated with myFile. Once we close the file, no file will be associated with myfile.\n\nd. Opening files in binary mode\n\nTo open a file in binary mode, we need to set the file mode to ios::binary. Suppose we have a binary file named as “test.dat”. To open this file in binary mode, we write the statement as:\n\nofstream myFile;\nmyFile.open (“test.dat”, ios::binary);\n\nIn order to write the data to a binary file, “write” method is used. This method is a member function of ofstream or fstream class.",
+   "urdu": "#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nmain()\n{\nChar name[50]; // used to read name of employee from file\nChar sal[10]; // used to read salary of employee from file\nChar dept[30]; // used to read dept of employee from file\nIfstream inFile; // Handle for the input file\nCharin putFileName[] = \"myfile.txt\"; // file name, this file is in the current directory\ninFile.open(inputFileName); // Opening the file\n// checking that file is successfully opened or not\nif (!inFile)\n{\ncout<< \"Can't open input file named \" <<inputFileName<<endl;\nexit(1);\n}\n// Reading the complete file word by word and printing on screen\nwhile (!inFile.eof())\n{\ninFile>> name >>sal>>dept;\ncout<< name << \"\\t\" <<sal<< \" \\t\" <<dept<<endl;\n}\ninFile.close();\ngetch();\nreturn 0;\n}\n\nc. فائل بند کرنا\n\nفائل پڑھنے کے بعد اسے بند کرنا ضروری ہے۔ فائل بند کرنا پروگرامر کی ذمہ داری ہے۔ ہم درج ذیل بیان سے فائل بند کر سکتے ہیں:\n\nmyFile.close();\n\nفنکشن close() کو کسی آرگیومنٹ کی ضرورت نہیں کیونکہ ہم myFile سے وابستہ فائل بند کرنے جا رہے ہیں۔ فائل بند کرنے کے بعد myfile سے کوئی فائل وابستہ نہیں رہے گی۔\n\nd. بائنری موڈ میں فائلز کھولنا\n\nفائل کو بائنری موڈ میں کھولنے کے لیے ہمیں فائل موڈ ios::binary پر سیٹ کرنا ہوتا ہے۔ فرض کریں ہمارے پاس ’’test.dat‘‘ نامی بائنری فائل ہے۔ اس فائل کو بائنری موڈ میں کھولنے کے لیے ہم یہ بیان لکھتے ہیں:\n\nofstream myFile;\nmyFile.open (“test.dat”, ios::binary);\n\nبائنری فائل میں ڈیٹا لکھنے کے لیے ’’write‘‘ میتھڈ استعمال ہوتا ہے۔ یہ میتھڈ ofstream یا fstream کلاس کا ممبر فنکشن ہے۔",
+   "pashto": "#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nmain()\n{\nChar name[50]; // used to read name of employee from file\nChar sal[10]; // used to read salary of employee from file\nChar dept[30]; // used to read dept of employee from file\nIfstream inFile; // Handle for the input file\nCharin putFileName[] = \"myfile.txt\"; // file name, this file is in the current directory\ninFile.open(inputFileName); // Opening the file\n// checking that file is successfully opened or not\nif (!inFile)\n{\ncout<< \"Can't open input file named \" <<inputFileName<<endl;\nexit(1);\n}\n// Reading the complete file word by word and printing on screen\nwhile (!inFile.eof())\n{\ninFile>> name >>sal>>dept;\ncout<< name << \"\\t\" <<sal<< \" \\t\" <<dept<<endl;\n}\ninFile.close();\ngetch();\nreturn 0;\n}\n\nc. دوتنه تړل\n\nکله چې دوتنه مو ولوستله، باید وتړل شي. د دوتنې تړل د پروګرام جوړوونکي مسؤلیت دی. موږ کولی شو د لاندې بیان په مرسته دوتنه وتړو:\n\nmyFile.close();\n\nclose() فنکشن هېڅ دلیل ته اړتیا نه لري، ځکه موږ هغه دوتنه تړو چې له myFile سره تړلې ده. کله چې دوتنه وتړو، له myfile سره به هېڅ دوتنه تړلې نه وي.\n\nd. په باینري حالت کې دوتنې پرانیستل\n\nد دوتنې په باینري حالت کې د پرانیستلو لپاره باید د دوتنې حالت ios::binary ته وټاکو. فرض کړئ د \"test.dat\" په نوم باینري دوتنه لرو. د دې دوتنې په باینري حالت کې د پرانیستلو لپاره بیان داسې لیکو:\n\nofstream myFile;\nmyFile.open (“test.dat”, ios::binary);\n\nباینري دوتنې ته د ډېټا د لیکلو لپاره \"write\" میتود کارېږي. دا میتود د ofstream یا fstream ټولګي غړی فنکشن دی.",
+   "theoryUrdu": "#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nmain()\n{\nChar name[50]; // used to read name of employee from file\nChar sal[10]; // used to read salary of employee from file\nChar dept[30]; // used to read dept of employee from file\nIfstream inFile; // Handle for the input file\nCharin putFileName[] = \"myfile.txt\"; // file name, this file is in the current directory\ninFile.open(inputFileName); // Opening the file\n// checking that file is successfully opened or not\nif (!inFile)\n{\ncout<< \"Can't open input file named \" <<inputFileName<<endl;\nexit(1);\n}\n// Reading the complete file word by word and printing on screen\nwhile (!inFile.eof())\n{\ninFile>> name >>sal>>dept;\ncout<< name << \"\\t\" <<sal<< \" \\t\" <<dept<<endl;\n}\ninFile.close();\ngetch();\nreturn 0;\n}\n\nc. فائل بند کرنا\n\nفائل پڑھنے کے بعد اسے بند کرنا ضروری ہے۔ فائل بند کرنا پروگرامر کی ذمہ داری ہے۔ ہم درج ذیل بیان سے فائل بند کر سکتے ہیں:\n\nmyFile.close();\n\nفنکشن close() کو کسی آرگیومنٹ کی ضرورت نہیں کیونکہ ہم myFile سے وابستہ فائل بند کرنے جا رہے ہیں۔ فائل بند کرنے کے بعد myfile سے کوئی فائل وابستہ نہیں رہے گی۔\n\nd. بائنری موڈ میں فائلز کھولنا\n\nفائل کو بائنری موڈ میں کھولنے کے لیے ہمیں فائل موڈ ios::binary پر سیٹ کرنا ہوتا ہے۔ فرض کریں ہمارے پاس ’’test.dat‘‘ نامی بائنری فائل ہے۔ اس فائل کو بائنری موڈ میں کھولنے کے لیے ہم یہ بیان لکھتے ہیں:\n\nofstream myFile;\nmyFile.open (“test.dat”, ios::binary);\n\nبائنری فائل میں ڈیٹا لکھنے کے لیے ’’write‘‘ میتھڈ استعمال ہوتا ہے۔ یہ میتھڈ ofstream یا fstream کلاس کا ممبر فنکشن ہے۔",
+   "theoryPashto": "#include <iostream.h>\n#include <fstream.h>\n#include <conio.h>\nmain()\n{\nChar name[50]; // used to read name of employee from file\nChar sal[10]; // used to read salary of employee from file\nChar dept[30]; // used to read dept of employee from file\nIfstream inFile; // Handle for the input file\nCharin putFileName[] = \"myfile.txt\"; // file name, this file is in the current directory\ninFile.open(inputFileName); // Opening the file\n// checking that file is successfully opened or not\nif (!inFile)\n{\ncout<< \"Can't open input file named \" <<inputFileName<<endl;\nexit(1);\n}\n// Reading the complete file word by word and printing on screen\nwhile (!inFile.eof())\n{\ninFile>> name >>sal>>dept;\ncout<< name << \"\\t\" <<sal<< \" \\t\" <<dept<<endl;\n}\ninFile.close();\ngetch();\nreturn 0;\n}\n\nc. دوتنه تړل\n\nکله چې دوتنه مو ولوستله، باید وتړل شي. د دوتنې تړل د پروګرام جوړوونکي مسؤلیت دی. موږ کولی شو د لاندې بیان په مرسته دوتنه وتړو:\n\nmyFile.close();\n\nclose() فنکشن هېڅ دلیل ته اړتیا نه لري، ځکه موږ هغه دوتنه تړو چې له myFile سره تړلې ده. کله چې دوتنه وتړو، له myfile سره به هېڅ دوتنه تړلې نه وي.\n\nd. په باینري حالت کې دوتنې پرانیستل\n\nد دوتنې په باینري حالت کې د پرانیستلو لپاره باید د دوتنې حالت ios::binary ته وټاکو. فرض کړئ د \"test.dat\" په نوم باینري دوتنه لرو. د دې دوتنې په باینري حالت کې د پرانیستلو لپاره بیان داسې لیکو:\n\nofstream myFile;\nmyFile.open (“test.dat”, ios::binary);\n\nباینري دوتنې ته د ډېټا د لیکلو لپاره \"write\" میتود کارېږي. دا میتود د ofstream یا fstream ټولګي غړی فنکشن دی.",
+   "content": "<p>#include &lt;iostream.h&gt;\n#include &lt;fstream.h&gt;\n#include &lt;conio.h&gt;\nmain()\n{\nChar name[50]; // used to read name of employee from file\nChar sal[10]; // used to read salary of employee from file\nChar dept[30]; // used to read dept of employee from file\nIfstream inFile; // Handle for the input file\nCharin putFileName[] = &quot;myfile.txt&quot;; // file name, this file is in the current directory\ninFile.open(inputFileName); // Opening the file\n// checking that file is successfully opened or not\nif (!inFile)\n{\ncout&lt;&lt; &quot;Can&#x27;t open input file named &quot; &lt;&lt;inputFileName&lt;&lt;endl;\nexit(1);\n}\n// Reading the complete file word by word and printing on screen\nwhile (!inFile.eof())\n{\ninFile&gt;&gt; name &gt;&gt;sal&gt;&gt;dept;\ncout&lt;&lt; name &lt;&lt; &quot;\\t&quot; &lt;&lt;sal&lt;&lt; &quot; \\t&quot; &lt;&lt;dept&lt;&lt;endl;\n}\ninFile.close();\ngetch();\nreturn 0;\n}</p><p>c. Closing file</p><p>Once we have read the file, it must be closed. It is the responsibility of the programmer to close the file. We can close the file by using the following statement:</p><p>myFile.close();</p><p>The function close() does not require any argument, as we are going to close the file associated with myFile. Once we close the file, no file will be associated with myfile.</p><p>d. Opening files in binary mode</p><p>To open a file in binary mode, we need to set the file mode to ios::binary. Suppose we have a binary file named as “test.dat”. To open this file in binary mode, we write the statement as:</p><p>ofstream myFile;\nmyFile.open (“test.dat”, ios::binary);</p><p>In order to write the data to a binary file, “write” method is used. This method is a member function of ofstream or fstream class.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "code",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-9-5"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-9-5",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 172\" role=\"img\" aria-label=\"Figure 9.5: Output of the rogram that is Read from Input File myFile txt\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"172\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"136\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">C:\\Documents and Settings\\shaukat\\My Documents\\C Examples ...</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><rect x=\"14\" y=\"28\" width=\"432\" height=\"98\" fill=\"#111111\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"44\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Name    Salary  Department</text><text x=\"20\" y=\"62\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Hashim  12000   Sales</text><text x=\"20\" y=\"80\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Amara   15000   HR</text><text x=\"20\" y=\"98\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Athar   13000   IT</text><text x=\"20\" y=\"116\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Afzal   11500   Marketing</text><text x=\"230.0\" y=\"164\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Figure 9.5: Output of the rogram that is Read from Input File myFile txt</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 172\" role=\"img\" aria-label=\"شکل 9.5: ان پٹ فائل myFile txt سے پڑھنے والے پروگرام کا آؤٹ پٹ\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"172\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"136\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">C:\\Documents and Settings\\shaukat\\My Documents\\C Examples ...</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><rect x=\"14\" y=\"28\" width=\"432\" height=\"98\" fill=\"#111111\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"44\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Name    Salary  Department</text><text x=\"20\" y=\"62\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Hashim  12000   Sales</text><text x=\"20\" y=\"80\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Amara   15000   HR</text><text x=\"20\" y=\"98\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Athar   13000   IT</text><text x=\"20\" y=\"116\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Afzal   11500   Marketing</text><text x=\"230.0\" y=\"164\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">شکل 9.5: ان پٹ فائل myFile txt سے پڑھنے والے پروگرام کا آؤٹ پٹ</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 172\" role=\"img\" aria-label=\"۹.۵ شکل: د هغه پروګرام وتنه چې د myFile txt له ننوتنې دوتنې لولي\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"172\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"136\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">C:\\Documents and Settings\\shaukat\\My Documents\\C Examples ...</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><rect x=\"14\" y=\"28\" width=\"432\" height=\"98\" fill=\"#111111\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"44\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Name    Salary  Department</text><text x=\"20\" y=\"62\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Hashim  12000   Sales</text><text x=\"20\" y=\"80\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Amara   15000   HR</text><text x=\"20\" y=\"98\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Athar   13000   IT</text><text x=\"20\" y=\"116\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Afzal   11500   Marketing</text><text x=\"230.0\" y=\"164\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۹.۵ شکل: د هغه پروګرام وتنه چې د myFile txt له ننوتنې دوتنې لولي</text></svg>",
+     "sourceWidthRatio": 2.6744186046511627
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 139,
+     "printedPages": [
+      266,
+      267
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 9 text (4)",
+   "sourcePageLabel": "PDF 139 · p. 266–267",
+   "sourceNote": "The program on p.266 belongs to Figure 9.4; Figure 9.5 (console output) is redrawn as a coded mock-up. The partly cut console title is given as far as it is legible.",
+   "unit": 9
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf139",
+   "unit": 9,
+   "printedPage": 266,
+   "description": "The program declares “Charin putFileName[]” (split identifier) and uses “Char”, “Ifstream” and main() without a return type; the Figure 9.5 caption reads “Output of the rogram”. Retained as printed. The heading letter “d.” is lost in the gutter of p.267 and is supplied from the a–c sequence."
+  }
+ ],
+ "completeUnits": []
+}

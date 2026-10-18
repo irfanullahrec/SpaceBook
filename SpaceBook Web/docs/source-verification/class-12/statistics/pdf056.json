@@ -1,0 +1,234 @@
+{
+ "pdfPage": 56,
+ "sections": [
+  {
+   "id": "stat12-p056-hypergeometric-variance",
+   "title": "Hypergeometric mean (nK/N) and variance derivation",
+   "headingUrdu": "ہائپر جیومیٹرک اوسط (nK/N) اور تغیر کا اخذ",
+   "headingPashto": "د هایپرجیومټریک منځنی (nK/N) او د واریانس استخراج",
+   "paras": [
+    {
+     "text": "$E(X)=\\dfrac{k}{\\binom{N}{n}}\\binom{N-1}{n-1}$",
+     "urdu": "$E(X)=\\dfrac{k}{\\binom{N}{n}}\\binom{N-1}{n-1}$",
+     "pashto": "$E(X)=\\dfrac{k}{\\binom{N}{n}}\\binom{N-1}{n-1}$"
+    },
+    {
+     "text": "$=\\dfrac{K}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-1)!}{(N-n)!\\,(n-1)!}=\\frac{K\\,n(n-1)!\\,(N-1)!}{N(N-1)!\\,(n-1)!}$",
+     "urdu": "$=\\dfrac{K}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-1)!}{(N-n)!\\,(n-1)!}=\\frac{K\\,n(n-1)!\\,(N-1)!}{N(N-1)!\\,(n-1)!}$",
+     "pashto": "$=\\dfrac{K}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-1)!}{(N-n)!\\,(n-1)!}=\\frac{K\\,n(n-1)!\\,(N-1)!}{N(N-1)!\\,(n-1)!}$"
+    },
+    {
+     "text": "$=n\\frac{K}{N}$",
+     "urdu": "$=n\\frac{K}{N}$",
+     "pashto": "$=n\\frac{K}{N}$"
+    },
+    {
+     "text": "◆ Variance of hypergeometric probability distribution",
+     "urdu": "◆ ہائپر جیومیٹرک احتمالی تقسیم کا تغیر",
+     "pashto": "◆ د هایپرجیومټریک احتمالي وېش واریانس"
+    },
+    {
+     "text": "By definition",
+     "urdu": "تعریف کے مطابق",
+     "pashto": "د تعریف له مخې"
+    },
+    {
+     "text": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)$",
+     "urdu": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)$",
+     "pashto": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)$"
+    },
+    {
+     "text": "$\\text{As } E(X)=\\frac{nK}{N}\\ldots\\ldots\\ldots(1)$",
+     "urdu": "$\\text{As } E(X)=\\frac{nK}{N}\\ldots\\ldots\\ldots(1)$",
+     "pashto": "$\\text{As } E(X)=\\frac{nK}{N}\\ldots\\ldots\\ldots(1)$"
+    },
+    {
+     "text": "$\\text{Now } E(X^2)=\\sum_x x^2\\,p(x)$",
+     "urdu": "$\\text{Now } E(X^2)=\\sum_x x^2\\,p(x)$",
+     "pashto": "$\\text{Now } E(X^2)=\\sum_x x^2\\,p(x)$"
+    },
+    {
+     "text": "$=\\sum_{x=0}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}=(0)^2\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{N-x}}{\\binom{N}{n}}$",
+     "urdu": "$=\\sum_{x=0}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}=(0)^2\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{N-x}}{\\binom{N}{n}}$",
+     "pashto": "$=\\sum_{x=0}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}=(0)^2\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{N-x}}{\\binom{N}{n}}$"
+    },
+    {
+     "text": "$=\\sum_{x=1}^{n}[x(x-1)+x]\\binom{k}{x}\\binom{N-k}{n-x}\\qquad\\because x^2=x(x-1)+x$",
+     "urdu": "$=\\sum_{x=1}^{n}[x(x-1)+x]\\binom{k}{x}\\binom{N-k}{n-x}\\qquad\\because x^2=x(x-1)+x$",
+     "pashto": "$=\\sum_{x=1}^{n}[x(x-1)+x]\\binom{k}{x}\\binom{N-k}{n-x}\\qquad\\because x^2=x(x-1)+x$"
+    },
+    {
+     "text": "$=\\sum_{x=1}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{x}}=\\left[1(1-1)\\dfrac{\\binom{k}{1}\\binom{N-k}{n-0}}{\\binom{N}{n}}\\right]+\\sum_{x=2}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\frac{nk}{N}$",
+     "urdu": "$=\\sum_{x=1}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{x}}=\\left[1(1-1)\\dfrac{\\binom{k}{1}\\binom{N-k}{n-0}}{\\binom{N}{n}}\\right]+\\sum_{x=2}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\frac{nk}{N}$",
+     "pashto": "$=\\sum_{x=1}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{x}}=\\left[1(1-1)\\dfrac{\\binom{k}{1}\\binom{N-k}{n-0}}{\\binom{N}{n}}\\right]+\\sum_{x=2}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\frac{nk}{N}$"
+    },
+    {
+     "text": "$E(X^2)=\\left[\\dfrac{1}{\\binom{N}{n}}\\sum_{x=2}^{n}x(x-1)\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\\right]+\\left(\\frac{nk}{N}\\right)$",
+     "urdu": "$E(X^2)=\\left[\\dfrac{1}{\\binom{N}{n}}\\sum_{x=2}^{n}x(x-1)\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\\right]+\\left(\\frac{nk}{N}\\right)$",
+     "pashto": "$E(X^2)=\\left[\\dfrac{1}{\\binom{N}{n}}\\sum_{x=2}^{n}x(x-1)\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\\right]+\\left(\\frac{nk}{N}\\right)$"
+    },
+    {
+     "text": "$=\\dfrac{1}{\\binom{N}{x}}\\sum_{x=2}^{n}x(x-1)\\frac{k(k-1)(k-2)!}{(k-x)!\\,x(x-1)(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}$",
+     "urdu": "$=\\dfrac{1}{\\binom{N}{x}}\\sum_{x=2}^{n}x(x-1)\\frac{k(k-1)(k-2)!}{(k-x)!\\,x(x-1)(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}$",
+     "pashto": "$=\\dfrac{1}{\\binom{N}{x}}\\sum_{x=2}^{n}x(x-1)\\frac{k(k-1)(k-2)!}{(k-x)!\\,x(x-1)(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}$"
+    },
+    {
+     "text": "$=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\frac{(k-2)!}{(k-x)!\\,(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}$",
+     "urdu": "$=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\frac{(k-2)!}{(k-x)!\\,(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}$",
+     "pashto": "$=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\frac{(k-2)!}{(k-x)!\\,(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}$"
+    },
+    {
+     "text": "$=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\binom{k-2}{x-2}\\binom{N-k}{n-x}+\\frac{nk}{N}$",
+     "urdu": "$=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\binom{k-2}{x-2}\\binom{N-k}{n-x}+\\frac{nk}{N}$",
+     "pashto": "$=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\binom{k-2}{x-2}\\binom{N-k}{n-x}+\\frac{nk}{N}$"
+    },
+    {
+     "text": "$\\text{Let}\\quad y=x-2,\\qquad x=y+2$",
+     "urdu": "$\\text{Let}\\quad y=x-2,\\qquad x=y+2$",
+     "pashto": "$\\text{Let}\\quad y=x-2,\\qquad x=y+2$"
+    },
+    {
+     "text": "$\\text{If}\\quad x=2,\\qquad y=0$",
+     "urdu": "$\\text{If}\\quad x=2,\\qquad y=0$",
+     "pashto": "$\\text{If}\\quad x=2,\\qquad y=0$"
+    },
+    {
+     "text": "If $x=n$, $y=n-2$, therefore,",
+     "urdu": "اگر $x=n$، $y=n-2$، لہٰذا",
+     "pashto": "که $x=n$، $y=n-2$، نو"
+    },
+    {
+     "text": "$$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{y=0}^{n-2}\\binom{k-2}{y}\\binom{N-k}{n-y-2}+\\frac{nk}{N}$$",
+     "urdu": "$$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{y=0}^{n-2}\\binom{k-2}{y}\\binom{N-k}{n-y-2}+\\frac{nk}{N}$$",
+     "pashto": "$$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{y=0}^{n-2}\\binom{k-2}{y}\\binom{N-k}{n-y-2}+\\frac{nk}{N}$$"
+    },
+    {
+     "text": "Using the hypergeometric identity $\\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k}$",
+     "urdu": "ہائپر جیومیٹرک شناخت $\\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k}$ استعمال کرتے ہوئے",
+     "pashto": "د هایپرجیومټریک پېژندنې $\\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k}$ په کارولو سره"
+    },
+    {
+     "text": "$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\binom{N-2}{n-2}+\\frac{nk}{N}$",
+     "urdu": "$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\binom{N-2}{n-2}+\\frac{nk}{N}$",
+     "pashto": "$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\binom{N-2}{n-2}+\\frac{nk}{N}$"
+    },
+    {
+     "text": "$=\\dfrac{k(k-1)}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-2)!}{(N-n)!\\,(n-2)!}+\\frac{nk}{N}$",
+     "urdu": "$=\\dfrac{k(k-1)}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-2)!}{(N-n)!\\,(n-2)!}+\\frac{nk}{N}$",
+     "pashto": "$=\\dfrac{k(k-1)}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-2)!}{(N-n)!\\,(n-2)!}+\\frac{nk}{N}$"
+    }
+   ],
+   "theory": "E(X)=\\dfrac{k}{\\binom{N}{n}}\\binom{N-1}{n-1}\n\n=\\dfrac{K}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-1)!}{(N-n)!\\,(n-1)!}=\\frac{K\\,n(n-1)!\\,(N-1)!}{N(N-1)!\\,(n-1)!}\n\n=n\\frac{K}{N}\n\n◆ Variance of hypergeometric probability distribution\n\nBy definition\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)\n\n\\text{As } E(X)=\\frac{nK}{N}\\ldots\\ldots\\ldots(1)\n\n\\text{Now } E(X^2)=\\sum_x x^2\\,p(x)\n\n=\\sum_{x=0}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}=(0)^2\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{N-x}}{\\binom{N}{n}}\n\n=\\sum_{x=1}^{n}[x(x-1)+x]\\binom{k}{x}\\binom{N-k}{n-x}\\qquad\\because x^2=x(x-1)+x\n\n=\\sum_{x=1}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{x}}=\\left[1(1-1)\\dfrac{\\binom{k}{1}\\binom{N-k}{n-0}}{\\binom{N}{n}}\\right]+\\sum_{x=2}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\frac{nk}{N}\n\nE(X^2)=\\left[\\dfrac{1}{\\binom{N}{n}}\\sum_{x=2}^{n}x(x-1)\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\\right]+\\left(\\frac{nk}{N}\\right)\n\n=\\dfrac{1}{\\binom{N}{x}}\\sum_{x=2}^{n}x(x-1)\\frac{k(k-1)(k-2)!}{(k-x)!\\,x(x-1)(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\frac{(k-2)!}{(k-x)!\\,(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\binom{k-2}{x-2}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n\\text{Let}\\quad y=x-2,\\qquad x=y+2\n\n\\text{If}\\quad x=2,\\qquad y=0\n\nIf x=n, y=n-2, therefore,\n\n$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{y=0}^{n-2}\\binom{k-2}{y}\\binom{N-k}{n-y-2}+\\frac{nk}{N}$\n\nUsing the hypergeometric identity \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k}\n\nE(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\binom{N-2}{n-2}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-2)!}{(N-n)!\\,(n-2)!}+\\frac{nk}{N}",
+   "urdu": "E(X)=\\dfrac{k}{\\binom{N}{n}}\\binom{N-1}{n-1}\n\n=\\dfrac{K}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-1)!}{(N-n)!\\,(n-1)!}=\\frac{K\\,n(n-1)!\\,(N-1)!}{N(N-1)!\\,(n-1)!}\n\n=n\\frac{K}{N}\n\n◆ ہائپر جیومیٹرک احتمالی تقسیم کا تغیر\n\nتعریف کے مطابق\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)\n\n\\text{As } E(X)=\\frac{nK}{N}\\ldots\\ldots\\ldots(1)\n\n\\text{Now } E(X^2)=\\sum_x x^2\\,p(x)\n\n=\\sum_{x=0}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}=(0)^2\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{N-x}}{\\binom{N}{n}}\n\n=\\sum_{x=1}^{n}[x(x-1)+x]\\binom{k}{x}\\binom{N-k}{n-x}\\qquad\\because x^2=x(x-1)+x\n\n=\\sum_{x=1}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{x}}=\\left[1(1-1)\\dfrac{\\binom{k}{1}\\binom{N-k}{n-0}}{\\binom{N}{n}}\\right]+\\sum_{x=2}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\frac{nk}{N}\n\nE(X^2)=\\left[\\dfrac{1}{\\binom{N}{n}}\\sum_{x=2}^{n}x(x-1)\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\\right]+\\left(\\frac{nk}{N}\\right)\n\n=\\dfrac{1}{\\binom{N}{x}}\\sum_{x=2}^{n}x(x-1)\\frac{k(k-1)(k-2)!}{(k-x)!\\,x(x-1)(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\frac{(k-2)!}{(k-x)!\\,(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\binom{k-2}{x-2}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n\\text{Let}\\quad y=x-2,\\qquad x=y+2\n\n\\text{If}\\quad x=2,\\qquad y=0\n\nاگر x=n، y=n-2، لہٰذا\n\n$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{y=0}^{n-2}\\binom{k-2}{y}\\binom{N-k}{n-y-2}+\\frac{nk}{N}$\n\nہائپر جیومیٹرک شناخت \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k} استعمال کرتے ہوئے\n\nE(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\binom{N-2}{n-2}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-2)!}{(N-n)!\\,(n-2)!}+\\frac{nk}{N}",
+   "pashto": "E(X)=\\dfrac{k}{\\binom{N}{n}}\\binom{N-1}{n-1}\n\n=\\dfrac{K}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-1)!}{(N-n)!\\,(n-1)!}=\\frac{K\\,n(n-1)!\\,(N-1)!}{N(N-1)!\\,(n-1)!}\n\n=n\\frac{K}{N}\n\n◆ د هایپرجیومټریک احتمالي وېش واریانس\n\nد تعریف له مخې\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)\n\n\\text{As } E(X)=\\frac{nK}{N}\\ldots\\ldots\\ldots(1)\n\n\\text{Now } E(X^2)=\\sum_x x^2\\,p(x)\n\n=\\sum_{x=0}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}=(0)^2\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{N-x}}{\\binom{N}{n}}\n\n=\\sum_{x=1}^{n}[x(x-1)+x]\\binom{k}{x}\\binom{N-k}{n-x}\\qquad\\because x^2=x(x-1)+x\n\n=\\sum_{x=1}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{x}}=\\left[1(1-1)\\dfrac{\\binom{k}{1}\\binom{N-k}{n-0}}{\\binom{N}{n}}\\right]+\\sum_{x=2}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\frac{nk}{N}\n\nE(X^2)=\\left[\\dfrac{1}{\\binom{N}{n}}\\sum_{x=2}^{n}x(x-1)\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\\right]+\\left(\\frac{nk}{N}\\right)\n\n=\\dfrac{1}{\\binom{N}{x}}\\sum_{x=2}^{n}x(x-1)\\frac{k(k-1)(k-2)!}{(k-x)!\\,x(x-1)(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\frac{(k-2)!}{(k-x)!\\,(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\binom{k-2}{x-2}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n\\text{Let}\\quad y=x-2,\\qquad x=y+2\n\n\\text{If}\\quad x=2,\\qquad y=0\n\nکه x=n، y=n-2، نو\n\n$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{y=0}^{n-2}\\binom{k-2}{y}\\binom{N-k}{n-y-2}+\\frac{nk}{N}$\n\nد هایپرجیومټریک پېژندنې \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k} په کارولو سره\n\nE(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\binom{N-2}{n-2}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-2)!}{(N-n)!\\,(n-2)!}+\\frac{nk}{N}",
+   "theoryUrdu": "E(X)=\\dfrac{k}{\\binom{N}{n}}\\binom{N-1}{n-1}\n\n=\\dfrac{K}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-1)!}{(N-n)!\\,(n-1)!}=\\frac{K\\,n(n-1)!\\,(N-1)!}{N(N-1)!\\,(n-1)!}\n\n=n\\frac{K}{N}\n\n◆ ہائپر جیومیٹرک احتمالی تقسیم کا تغیر\n\nتعریف کے مطابق\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)\n\n\\text{As } E(X)=\\frac{nK}{N}\\ldots\\ldots\\ldots(1)\n\n\\text{Now } E(X^2)=\\sum_x x^2\\,p(x)\n\n=\\sum_{x=0}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}=(0)^2\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{N-x}}{\\binom{N}{n}}\n\n=\\sum_{x=1}^{n}[x(x-1)+x]\\binom{k}{x}\\binom{N-k}{n-x}\\qquad\\because x^2=x(x-1)+x\n\n=\\sum_{x=1}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{x}}=\\left[1(1-1)\\dfrac{\\binom{k}{1}\\binom{N-k}{n-0}}{\\binom{N}{n}}\\right]+\\sum_{x=2}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\frac{nk}{N}\n\nE(X^2)=\\left[\\dfrac{1}{\\binom{N}{n}}\\sum_{x=2}^{n}x(x-1)\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\\right]+\\left(\\frac{nk}{N}\\right)\n\n=\\dfrac{1}{\\binom{N}{x}}\\sum_{x=2}^{n}x(x-1)\\frac{k(k-1)(k-2)!}{(k-x)!\\,x(x-1)(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\frac{(k-2)!}{(k-x)!\\,(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\binom{k-2}{x-2}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n\\text{Let}\\quad y=x-2,\\qquad x=y+2\n\n\\text{If}\\quad x=2,\\qquad y=0\n\nاگر x=n، y=n-2، لہٰذا\n\n$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{y=0}^{n-2}\\binom{k-2}{y}\\binom{N-k}{n-y-2}+\\frac{nk}{N}$\n\nہائپر جیومیٹرک شناخت \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k} استعمال کرتے ہوئے\n\nE(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\binom{N-2}{n-2}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-2)!}{(N-n)!\\,(n-2)!}+\\frac{nk}{N}",
+   "theoryPashto": "E(X)=\\dfrac{k}{\\binom{N}{n}}\\binom{N-1}{n-1}\n\n=\\dfrac{K}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-1)!}{(N-n)!\\,(n-1)!}=\\frac{K\\,n(n-1)!\\,(N-1)!}{N(N-1)!\\,(n-1)!}\n\n=n\\frac{K}{N}\n\n◆ د هایپرجیومټریک احتمالي وېش واریانس\n\nد تعریف له مخې\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)\n\n\\text{As } E(X)=\\frac{nK}{N}\\ldots\\ldots\\ldots(1)\n\n\\text{Now } E(X^2)=\\sum_x x^2\\,p(x)\n\n=\\sum_{x=0}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}=(0)^2\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{N-x}}{\\binom{N}{n}}\n\n=\\sum_{x=1}^{n}[x(x-1)+x]\\binom{k}{x}\\binom{N-k}{n-x}\\qquad\\because x^2=x(x-1)+x\n\n=\\sum_{x=1}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{x}}=\\left[1(1-1)\\dfrac{\\binom{k}{1}\\binom{N-k}{n-0}}{\\binom{N}{n}}\\right]+\\sum_{x=2}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\frac{nk}{N}\n\nE(X^2)=\\left[\\dfrac{1}{\\binom{N}{n}}\\sum_{x=2}^{n}x(x-1)\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\\right]+\\left(\\frac{nk}{N}\\right)\n\n=\\dfrac{1}{\\binom{N}{x}}\\sum_{x=2}^{n}x(x-1)\\frac{k(k-1)(k-2)!}{(k-x)!\\,x(x-1)(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\frac{(k-2)!}{(k-x)!\\,(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\binom{k-2}{x-2}\\binom{N-k}{n-x}+\\frac{nk}{N}\n\n\\text{Let}\\quad y=x-2,\\qquad x=y+2\n\n\\text{If}\\quad x=2,\\qquad y=0\n\nکه x=n، y=n-2، نو\n\n$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{y=0}^{n-2}\\binom{k-2}{y}\\binom{N-k}{n-y-2}+\\frac{nk}{N}$\n\nد هایپرجیومټریک پېژندنې \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k} په کارولو سره\n\nE(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\binom{N-2}{n-2}+\\frac{nk}{N}\n\n=\\dfrac{k(k-1)}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-2)!}{(N-n)!\\,(n-2)!}+\\frac{nk}{N}",
+   "content": "<p>E(X)=\\dfrac{k}{\\binom{N}{n}}\\binom{N-1}{n-1}</p><p>=\\dfrac{K}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-1)!}{(N-n)!\\,(n-1)!}=\\frac{K\\,n(n-1)!\\,(N-1)!}{N(N-1)!\\,(n-1)!}</p><p>=n\\frac{K}{N}</p><p>◆ Variance of hypergeometric probability distribution</p><p>By definition</p><p>\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\\qquad(A)</p><p>\\text{As } E(X)=\\frac{nK}{N}\\ldots\\ldots\\ldots(1)</p><p>\\text{Now } E(X^2)=\\sum_x x^2\\,p(x)</p><p>=\\sum_{x=0}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}=(0)^2\\dfrac{\\binom{k}{0}\\binom{N-k}{n-0}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x^2\\dfrac{\\binom{k}{x}\\binom{N-k}{N-x}}{\\binom{N}{n}}</p><p>=\\sum_{x=1}^{n}[x(x-1)+x]\\binom{k}{x}\\binom{N-k}{n-x}\\qquad\\because x^2=x(x-1)+x</p><p>=\\sum_{x=1}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\sum_{x=1}^{n}x\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{x}}=\\left[1(1-1)\\dfrac{\\binom{k}{1}\\binom{N-k}{n-0}}{\\binom{N}{n}}\\right]+\\sum_{x=2}^{n}x(x-1)\\dfrac{\\binom{k}{x}\\binom{N-k}{n-x}}{\\binom{N}{n}}+\\frac{nk}{N}</p><p>E(X^2)=\\left[\\dfrac{1}{\\binom{N}{n}}\\sum_{x=2}^{n}x(x-1)\\frac{k!}{(k-x)!\\,x!}\\binom{N-k}{n-x}\\right]+\\left(\\frac{nk}{N}\\right)</p><p>=\\dfrac{1}{\\binom{N}{x}}\\sum_{x=2}^{n}x(x-1)\\frac{k(k-1)(k-2)!}{(k-x)!\\,x(x-1)(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}</p><p>=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\frac{(k-2)!}{(k-x)!\\,(x-2)!}\\binom{N-k}{n-x}+\\frac{nk}{N}</p><p>=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{x=2}^{n}\\binom{k-2}{x-2}\\binom{N-k}{n-x}+\\frac{nk}{N}</p><p>\\text{Let}\\quad y=x-2,\\qquad x=y+2</p><p>\\text{If}\\quad x=2,\\qquad y=0</p><p>If x=n, y=n-2, therefore,</p><p>$E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\sum_{y=0}^{n-2}\\binom{k-2}{y}\\binom{N-k}{n-y-2}+\\frac{nk}{N}$</p><p>Using the hypergeometric identity \\sum_{r=0}^{k}\\binom{m}{r}\\binom{n}{k-r}=\\binom{m+n}{k}</p><p>E(X^2)=\\dfrac{k(k-1)}{\\binom{N}{n}}\\binom{N-2}{n-2}+\\frac{nk}{N}</p><p>=\\dfrac{k(k-1)}{\\dfrac{N!}{(N-n)!\\,n!}}\\;\\frac{(N-2)!}{(N-n)!\\,(n-2)!}+\\frac{nk}{N}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      15,
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      20,
+      21
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 56,
+     "printedPages": [
+      103,
+      104
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p103-104-binom-misprints",
+   "unit": 3,
+   "printedPage": 103,
+   "description": "The E(X²) derivation prints several binomial misprints (C(N−k, N−x), C(N, x) in denominators, C(N−k, n−0) with k choose 1); printed forms retained."
+  }
+ ],
+ "completeUnits": []
+}

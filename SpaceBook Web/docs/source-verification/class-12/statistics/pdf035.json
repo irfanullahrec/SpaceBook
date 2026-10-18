@@ -1,0 +1,545 @@
+{
+ "pdfPage": 35,
+ "sections": [
+  {
+   "id": "stat12-p035-variance-sum",
+   "title": "Example 2.18 solution; 2.4.7 variance of sum/difference — Example 2.19",
+   "headingUrdu": "مثال 2.18 کا حل؛ 2.4.7 مجموعے/فرق کا تغیر — مثال 2.19",
+   "headingPashto": "د بېلګې 2.18 حل؛ 2.4.7 د مجموعې/توپیر واریانس — بېلګه 2.19",
+   "paras": [
+    {
+     "text": "By definition",
+     "urdu": "تعریف کے مطابق",
+     "pashto": "د تعریف له مخې"
+    },
+    {
+     "text": "$E(X)=\\Sigma x\\,p(x)=2\\times 0.40+4\\times 0.60=0.80+2.40=3.2$",
+     "urdu": "$E(X)=\\Sigma x\\,p(x)=2\\times 0.40+4\\times 0.60=0.80+2.40=3.2$",
+     "pashto": "$E(X)=\\Sigma x\\,p(x)=2\\times 0.40+4\\times 0.60=0.80+2.40=3.2$"
+    },
+    {
+     "text": "$E(Y)=\\Sigma y\\,p(y)=1\\times 0.25+3\\times 0.50+5\\times 0.25$",
+     "urdu": "$E(Y)=\\Sigma y\\,p(y)=1\\times 0.25+3\\times 0.50+5\\times 0.25$",
+     "pashto": "$E(Y)=\\Sigma y\\,p(y)=1\\times 0.25+3\\times 0.50+5\\times 0.25$"
+    },
+    {
+     "text": "$=0.25+1.50+1.25=3$",
+     "urdu": "$=0.25+1.50+1.25=3$",
+     "pashto": "$=0.25+1.50+1.25=3$"
+    },
+    {
+     "text": "Now by property",
+     "urdu": "اب خاصیت کے مطابق",
+     "pashto": "اوس د ځانګړنې له مخې"
+    },
+    {
+     "text": "$E(X+Y)=E(X)+E(Y)=3.2+3=6.8$",
+     "urdu": "$E(X+Y)=E(X)+E(Y)=3.2+3=6.8$",
+     "pashto": "$E(X+Y)=E(X)+E(Y)=3.2+3=6.8$"
+    },
+    {
+     "text": "$E(2X-3Y)=E(2X)-E(3Y)$",
+     "urdu": "$E(2X-3Y)=E(2X)-E(3Y)$",
+     "pashto": "$E(2X-3Y)=E(2X)-E(3Y)$"
+    },
+    {
+     "text": "$=2E(X)-3E(Y)$",
+     "urdu": "$=2E(X)-3E(Y)$",
+     "pashto": "$=2E(X)-3E(Y)$"
+    },
+    {
+     "text": "$=2(3.2)-3(3)=6.4-9=-2.6$",
+     "urdu": "$=2(3.2)-3(3)=6.4-9=-2.6$",
+     "pashto": "$=2(3.2)-3(3)=6.4-9=-2.6$"
+    },
+    {
+     "text": "Since X and Y are independent, therefore,",
+     "urdu": "چونکہ X اور Y آزاد ہیں، اس لیے",
+     "pashto": "څرنګه چې X او Y خپلواک دي، نو"
+    },
+    {
+     "text": "$$E(XY)=E(X)\\,E(Y)=(3.2)(3)=9.6$$",
+     "urdu": "$$E(XY)=E(X)\\,E(Y)=(3.2)(3)=9.6$$",
+     "pashto": "$$E(XY)=E(X)\\,E(Y)=(3.2)(3)=9.6$$"
+    },
+    {
+     "text": "2.4.7 Variance of the sum or difference of two independent random variables",
+     "urdu": "2.4.7 دو آزاد تصادفی متغیرات کے مجموعے یا فرق کا تغیر",
+     "pashto": "2.4.7 د دوو خپلواکو تصادفي متغیرونو د مجموعې یا توپیر واریانس"
+    },
+    {
+     "text": "If X and Y are two independent random variables, then variance of their sum is given by the formula:",
+     "urdu": "اگر X اور Y دو آزاد تصادفی متغیرات ہوں تو ان کے مجموعے کا تغیر اس فارمولا سے ملتا ہے:",
+     "pashto": "که X او Y دوه خپلواک تصادفي متغیرونه وي، نو د هغو د مجموعې واریانس له دې فورمول څخه لاسته راځي:"
+    },
+    {
+     "text": "$V(X+Y)=E[X+Y-E(X+Y)]^2$",
+     "urdu": "$V(X+Y)=E[X+Y-E(X+Y)]^2$",
+     "pashto": "$V(X+Y)=E[X+Y-E(X+Y)]^2$"
+    },
+    {
+     "text": "$=E[X+Y-E(X)-E(Y)]^2$",
+     "urdu": "$=E[X+Y-E(X)-E(Y)]^2$",
+     "pashto": "$=E[X+Y-E(X)-E(Y)]^2$"
+    },
+    {
+     "text": "$=E[\\{X-E(X)\\}+\\{Y-E(Y)\\}]^2$",
+     "urdu": "$=E[\\{X-E(X)\\}+\\{Y-E(Y)\\}]^2$",
+     "pashto": "$=E[\\{X-E(X)\\}+\\{Y-E(Y)\\}]^2$"
+    },
+    {
+     "text": "$=E[\\{X-E(X)\\}^2+\\{Y-E(Y)\\}^2+2\\{X-E(X)\\}\\{Y-E(Y)\\}]$",
+     "urdu": "$=E[\\{X-E(X)\\}^2+\\{Y-E(Y)\\}^2+2\\{X-E(X)\\}\\{Y-E(Y)\\}]$",
+     "pashto": "$=E[\\{X-E(X)\\}^2+\\{Y-E(Y)\\}^2+2\\{X-E(X)\\}\\{Y-E(Y)\\}]$"
+    },
+    {
+     "text": "$=E[X-E(X)]^2+E[Y-E(Y)]^2+2E\\{X-E(X)\\}\\{Y-E(Y)\\}$",
+     "urdu": "$=E[X-E(X)]^2+E[Y-E(Y)]^2+2E\\{X-E(X)\\}\\{Y-E(Y)\\}$",
+     "pashto": "$=E[X-E(X)]^2+E[Y-E(Y)]^2+2E\\{X-E(X)\\}\\{Y-E(Y)\\}$"
+    },
+    {
+     "text": "$=V(X)+V(Y)+2\\,\\mathrm{cov}(X,Y)$",
+     "urdu": "$=V(X)+V(Y)+2\\,\\mathrm{cov}(X,Y)$",
+     "pashto": "$=V(X)+V(Y)+2\\,\\mathrm{cov}(X,Y)$"
+    },
+    {
+     "text": "When X and Y are independent then $\\mathrm{cov}(X,Y)=0$",
+     "urdu": "جب X اور Y آزاد ہوں تو $\\mathrm{cov}(X,Y)=0$",
+     "pashto": "کله چې X او Y خپلواک وي، نو $\\mathrm{cov}(X,Y)=0$"
+    },
+    {
+     "text": "$\\therefore\\ V(X+Y)=V(X)+V(Y)$, Similarly",
+     "urdu": "$\\therefore\\ V(X+Y)=V(X)+V(Y)$، اسی طرح",
+     "pashto": "$\\therefore\\ V(X+Y)=V(X)+V(Y)$، همداراز"
+    },
+    {
+     "text": "$$V(X-Y)=V(X)+V(Y)$$",
+     "urdu": "$$V(X-Y)=V(X)+V(Y)$$",
+     "pashto": "$$V(X-Y)=V(X)+V(Y)$$"
+    },
+    {
+     "text": "Example 2.19",
+     "urdu": "مثال 2.19",
+     "pashto": "بېلګه 2.19"
+    },
+    {
+     "text": "Consider the following joint probability distribution of two independent random variables X and Y.",
+     "urdu": "دو آزاد تصادفی متغیرات X اور Y کی درج ذیل مشترکہ احتمالی تقسیم پر غور کریں۔",
+     "pashto": "د دوو خپلواکو تصادفي متغیرونو X او Y لاندې ګډ احتمالي وېش په پام کې ونیسئ."
+    },
+    {
+     "text": "Find: (i) V(X), (ii) V(Y), (iii) V(X+Y), (iv) V(X−Y)",
+     "urdu": "معلوم کریں: (i) V(X)، (ii) V(Y)، (iii) V(X+Y)، (iv) V(X−Y)",
+     "pashto": "پیدا کړئ: (i) V(X)، (ii) V(Y)، (iii) V(X+Y)، (iv) V(X−Y)"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$(i)\\quad V(X)=E(X)^2-[E(X)]^2$",
+     "urdu": "$(i)\\quad V(X)=E(X)^2-[E(X)]^2$",
+     "pashto": "$(i)\\quad V(X)=E(X)^2-[E(X)]^2$"
+    },
+    {
+     "text": "$E(X)=\\Sigma x\\,p(x)=0(.40)+1(.60)=0+.60=0.60$",
+     "urdu": "$E(X)=\\Sigma x\\,p(x)=0(.40)+1(.60)=0+.60=0.60$",
+     "pashto": "$E(X)=\\Sigma x\\,p(x)=0(.40)+1(.60)=0+.60=0.60$"
+    },
+    {
+     "text": "$E(X^2)=\\Sigma x^2p(x)=0^2(.40)+1^2(.60)=0+.60=0.60$",
+     "urdu": "$E(X^2)=\\Sigma x^2p(x)=0^2(.40)+1^2(.60)=0+.60=0.60$",
+     "pashto": "$E(X^2)=\\Sigma x^2p(x)=0^2(.40)+1^2(.60)=0+.60=0.60$"
+    },
+    {
+     "text": "$\\therefore V(X)=0.60-(0.60)^2=0.60-0.36=0.24$",
+     "urdu": "$\\therefore V(X)=0.60-(0.60)^2=0.60-0.36=0.24$",
+     "pashto": "$\\therefore V(X)=0.60-(0.60)^2=0.60-0.36=0.24$"
+    },
+    {
+     "text": "$(ii)\\quad V(Y)=E(Y^2)-[E(Y)]^2$",
+     "urdu": "$(ii)\\quad V(Y)=E(Y^2)-[E(Y)]^2$",
+     "pashto": "$(ii)\\quad V(Y)=E(Y^2)-[E(Y)]^2$"
+    },
+    {
+     "text": "$E(Y)=\\Sigma y\\,p(y)=0(.25)+1(.50)+2(.25)=0+0.50+0.5=1$",
+     "urdu": "$E(Y)=\\Sigma y\\,p(y)=0(.25)+1(.50)+2(.25)=0+0.50+0.5=1$",
+     "pashto": "$E(Y)=\\Sigma y\\,p(y)=0(.25)+1(.50)+2(.25)=0+0.50+0.5=1$"
+    },
+    {
+     "text": "$E(Y^2)=\\Sigma y^2p(y)=0^2(.25)+1^2(.50)+2^2(.25)=0+.50+1=1.50$",
+     "urdu": "$E(Y^2)=\\Sigma y^2p(y)=0^2(.25)+1^2(.50)+2^2(.25)=0+.50+1=1.50$",
+     "pashto": "$E(Y^2)=\\Sigma y^2p(y)=0^2(.25)+1^2(.50)+2^2(.25)=0+.50+1=1.50$"
+    },
+    {
+     "text": "$\\therefore V(Y)=1.50-(1)^2=1.50-1=0.50$",
+     "urdu": "$\\therefore V(Y)=1.50-(1)^2=1.50-1=0.50$",
+     "pashto": "$\\therefore V(Y)=1.50-(1)^2=1.50-1=0.50$"
+    },
+    {
+     "text": "Since X and Y are independent, therefore,",
+     "urdu": "چونکہ X اور Y آزاد ہیں، اس لیے",
+     "pashto": "څرنګه چې X او Y خپلواک دي، نو"
+    },
+    {
+     "text": "$(iii)\\quad V(X+Y)=V(X)+V(Y)=0.24+0.50=0.74$",
+     "urdu": "$(iii)\\quad V(X+Y)=V(X)+V(Y)=0.24+0.50=0.74$",
+     "pashto": "$(iii)\\quad V(X+Y)=V(X)+V(Y)=0.24+0.50=0.74$"
+    },
+    {
+     "text": "$(iv)\\quad V(X-Y)=V(X)+V(Y)=0.24+0.50=0.74$",
+     "urdu": "$(iv)\\quad V(X-Y)=V(X)+V(Y)=0.24+0.50=0.74$",
+     "pashto": "$(iv)\\quad V(X-Y)=V(X)+V(Y)=0.24+0.50=0.74$"
+    }
+   ],
+   "theory": "By definition\n\nE(X)=\\Sigma x\\,p(x)=2\\times 0.40+4\\times 0.60=0.80+2.40=3.2\n\nE(Y)=\\Sigma y\\,p(y)=1\\times 0.25+3\\times 0.50+5\\times 0.25\n\n=0.25+1.50+1.25=3\n\nNow by property\n\nE(X+Y)=E(X)+E(Y)=3.2+3=6.8\n\nE(2X-3Y)=E(2X)-E(3Y)\n\n=2E(X)-3E(Y)\n\n=2(3.2)-3(3)=6.4-9=-2.6\n\nSince X and Y are independent, therefore,\n\n$E(XY)=E(X)\\,E(Y)=(3.2)(3)=9.6$\n\n2.4.7 Variance of the sum or difference of two independent random variables\n\nIf X and Y are two independent random variables, then variance of their sum is given by the formula:\n\nV(X+Y)=E[X+Y-E(X+Y)]^2\n\n=E[X+Y-E(X)-E(Y)]^2\n\n=E[\\{X-E(X)\\}+\\{Y-E(Y)\\}]^2\n\n=E[\\{X-E(X)\\}^2+\\{Y-E(Y)\\}^2+2\\{X-E(X)\\}\\{Y-E(Y)\\}]\n\n=E[X-E(X)]^2+E[Y-E(Y)]^2+2E\\{X-E(X)\\}\\{Y-E(Y)\\}\n\n=V(X)+V(Y)+2\\,\\mathrm{cov}(X,Y)\n\nWhen X and Y are independent then \\mathrm{cov}(X,Y)=0\n\n\\therefore\\ V(X+Y)=V(X)+V(Y), Similarly\n\n$V(X-Y)=V(X)+V(Y)$\n\nExample 2.19\n\nConsider the following joint probability distribution of two independent random variables X and Y.\n\nFind: (i) V(X), (ii) V(Y), (iii) V(X+Y), (iv) V(X−Y)\n\nSolution:\n\n(i)\\quad V(X)=E(X)^2-[E(X)]^2\n\nE(X)=\\Sigma x\\,p(x)=0(.40)+1(.60)=0+.60=0.60\n\nE(X^2)=\\Sigma x^2p(x)=0^2(.40)+1^2(.60)=0+.60=0.60\n\n\\therefore V(X)=0.60-(0.60)^2=0.60-0.36=0.24\n\n(ii)\\quad V(Y)=E(Y^2)-[E(Y)]^2\n\nE(Y)=\\Sigma y\\,p(y)=0(.25)+1(.50)+2(.25)=0+0.50+0.5=1\n\nE(Y^2)=\\Sigma y^2p(y)=0^2(.25)+1^2(.50)+2^2(.25)=0+.50+1=1.50\n\n\\therefore V(Y)=1.50-(1)^2=1.50-1=0.50\n\nSince X and Y are independent, therefore,\n\n(iii)\\quad V(X+Y)=V(X)+V(Y)=0.24+0.50=0.74\n\n(iv)\\quad V(X-Y)=V(X)+V(Y)=0.24+0.50=0.74",
+   "urdu": "تعریف کے مطابق\n\nE(X)=\\Sigma x\\,p(x)=2\\times 0.40+4\\times 0.60=0.80+2.40=3.2\n\nE(Y)=\\Sigma y\\,p(y)=1\\times 0.25+3\\times 0.50+5\\times 0.25\n\n=0.25+1.50+1.25=3\n\nاب خاصیت کے مطابق\n\nE(X+Y)=E(X)+E(Y)=3.2+3=6.8\n\nE(2X-3Y)=E(2X)-E(3Y)\n\n=2E(X)-3E(Y)\n\n=2(3.2)-3(3)=6.4-9=-2.6\n\nچونکہ X اور Y آزاد ہیں، اس لیے\n\n$E(XY)=E(X)\\,E(Y)=(3.2)(3)=9.6$\n\n2.4.7 دو آزاد تصادفی متغیرات کے مجموعے یا فرق کا تغیر\n\nاگر X اور Y دو آزاد تصادفی متغیرات ہوں تو ان کے مجموعے کا تغیر اس فارمولا سے ملتا ہے:\n\nV(X+Y)=E[X+Y-E(X+Y)]^2\n\n=E[X+Y-E(X)-E(Y)]^2\n\n=E[\\{X-E(X)\\}+\\{Y-E(Y)\\}]^2\n\n=E[\\{X-E(X)\\}^2+\\{Y-E(Y)\\}^2+2\\{X-E(X)\\}\\{Y-E(Y)\\}]\n\n=E[X-E(X)]^2+E[Y-E(Y)]^2+2E\\{X-E(X)\\}\\{Y-E(Y)\\}\n\n=V(X)+V(Y)+2\\,\\mathrm{cov}(X,Y)\n\nجب X اور Y آزاد ہوں تو \\mathrm{cov}(X,Y)=0\n\n\\therefore\\ V(X+Y)=V(X)+V(Y)، اسی طرح\n\n$V(X-Y)=V(X)+V(Y)$\n\nمثال 2.19\n\nدو آزاد تصادفی متغیرات X اور Y کی درج ذیل مشترکہ احتمالی تقسیم پر غور کریں۔\n\nمعلوم کریں: (i) V(X)، (ii) V(Y)، (iii) V(X+Y)، (iv) V(X−Y)\n\nحل:\n\n(i)\\quad V(X)=E(X)^2-[E(X)]^2\n\nE(X)=\\Sigma x\\,p(x)=0(.40)+1(.60)=0+.60=0.60\n\nE(X^2)=\\Sigma x^2p(x)=0^2(.40)+1^2(.60)=0+.60=0.60\n\n\\therefore V(X)=0.60-(0.60)^2=0.60-0.36=0.24\n\n(ii)\\quad V(Y)=E(Y^2)-[E(Y)]^2\n\nE(Y)=\\Sigma y\\,p(y)=0(.25)+1(.50)+2(.25)=0+0.50+0.5=1\n\nE(Y^2)=\\Sigma y^2p(y)=0^2(.25)+1^2(.50)+2^2(.25)=0+.50+1=1.50\n\n\\therefore V(Y)=1.50-(1)^2=1.50-1=0.50\n\nچونکہ X اور Y آزاد ہیں، اس لیے\n\n(iii)\\quad V(X+Y)=V(X)+V(Y)=0.24+0.50=0.74\n\n(iv)\\quad V(X-Y)=V(X)+V(Y)=0.24+0.50=0.74",
+   "pashto": "د تعریف له مخې\n\nE(X)=\\Sigma x\\,p(x)=2\\times 0.40+4\\times 0.60=0.80+2.40=3.2\n\nE(Y)=\\Sigma y\\,p(y)=1\\times 0.25+3\\times 0.50+5\\times 0.25\n\n=0.25+1.50+1.25=3\n\nاوس د ځانګړنې له مخې\n\nE(X+Y)=E(X)+E(Y)=3.2+3=6.8\n\nE(2X-3Y)=E(2X)-E(3Y)\n\n=2E(X)-3E(Y)\n\n=2(3.2)-3(3)=6.4-9=-2.6\n\nڅرنګه چې X او Y خپلواک دي، نو\n\n$E(XY)=E(X)\\,E(Y)=(3.2)(3)=9.6$\n\n2.4.7 د دوو خپلواکو تصادفي متغیرونو د مجموعې یا توپیر واریانس\n\nکه X او Y دوه خپلواک تصادفي متغیرونه وي، نو د هغو د مجموعې واریانس له دې فورمول څخه لاسته راځي:\n\nV(X+Y)=E[X+Y-E(X+Y)]^2\n\n=E[X+Y-E(X)-E(Y)]^2\n\n=E[\\{X-E(X)\\}+\\{Y-E(Y)\\}]^2\n\n=E[\\{X-E(X)\\}^2+\\{Y-E(Y)\\}^2+2\\{X-E(X)\\}\\{Y-E(Y)\\}]\n\n=E[X-E(X)]^2+E[Y-E(Y)]^2+2E\\{X-E(X)\\}\\{Y-E(Y)\\}\n\n=V(X)+V(Y)+2\\,\\mathrm{cov}(X,Y)\n\nکله چې X او Y خپلواک وي، نو \\mathrm{cov}(X,Y)=0\n\n\\therefore\\ V(X+Y)=V(X)+V(Y)، همداراز\n\n$V(X-Y)=V(X)+V(Y)$\n\nبېلګه 2.19\n\nد دوو خپلواکو تصادفي متغیرونو X او Y لاندې ګډ احتمالي وېش په پام کې ونیسئ.\n\nپیدا کړئ: (i) V(X)، (ii) V(Y)، (iii) V(X+Y)، (iv) V(X−Y)\n\nحل:\n\n(i)\\quad V(X)=E(X)^2-[E(X)]^2\n\nE(X)=\\Sigma x\\,p(x)=0(.40)+1(.60)=0+.60=0.60\n\nE(X^2)=\\Sigma x^2p(x)=0^2(.40)+1^2(.60)=0+.60=0.60\n\n\\therefore V(X)=0.60-(0.60)^2=0.60-0.36=0.24\n\n(ii)\\quad V(Y)=E(Y^2)-[E(Y)]^2\n\nE(Y)=\\Sigma y\\,p(y)=0(.25)+1(.50)+2(.25)=0+0.50+0.5=1\n\nE(Y^2)=\\Sigma y^2p(y)=0^2(.25)+1^2(.50)+2^2(.25)=0+.50+1=1.50\n\n\\therefore V(Y)=1.50-(1)^2=1.50-1=0.50\n\nڅرنګه چې X او Y خپلواک دي، نو\n\n(iii)\\quad V(X+Y)=V(X)+V(Y)=0.24+0.50=0.74\n\n(iv)\\quad V(X-Y)=V(X)+V(Y)=0.24+0.50=0.74",
+   "theoryUrdu": "تعریف کے مطابق\n\nE(X)=\\Sigma x\\,p(x)=2\\times 0.40+4\\times 0.60=0.80+2.40=3.2\n\nE(Y)=\\Sigma y\\,p(y)=1\\times 0.25+3\\times 0.50+5\\times 0.25\n\n=0.25+1.50+1.25=3\n\nاب خاصیت کے مطابق\n\nE(X+Y)=E(X)+E(Y)=3.2+3=6.8\n\nE(2X-3Y)=E(2X)-E(3Y)\n\n=2E(X)-3E(Y)\n\n=2(3.2)-3(3)=6.4-9=-2.6\n\nچونکہ X اور Y آزاد ہیں، اس لیے\n\n$E(XY)=E(X)\\,E(Y)=(3.2)(3)=9.6$\n\n2.4.7 دو آزاد تصادفی متغیرات کے مجموعے یا فرق کا تغیر\n\nاگر X اور Y دو آزاد تصادفی متغیرات ہوں تو ان کے مجموعے کا تغیر اس فارمولا سے ملتا ہے:\n\nV(X+Y)=E[X+Y-E(X+Y)]^2\n\n=E[X+Y-E(X)-E(Y)]^2\n\n=E[\\{X-E(X)\\}+\\{Y-E(Y)\\}]^2\n\n=E[\\{X-E(X)\\}^2+\\{Y-E(Y)\\}^2+2\\{X-E(X)\\}\\{Y-E(Y)\\}]\n\n=E[X-E(X)]^2+E[Y-E(Y)]^2+2E\\{X-E(X)\\}\\{Y-E(Y)\\}\n\n=V(X)+V(Y)+2\\,\\mathrm{cov}(X,Y)\n\nجب X اور Y آزاد ہوں تو \\mathrm{cov}(X,Y)=0\n\n\\therefore\\ V(X+Y)=V(X)+V(Y)، اسی طرح\n\n$V(X-Y)=V(X)+V(Y)$\n\nمثال 2.19\n\nدو آزاد تصادفی متغیرات X اور Y کی درج ذیل مشترکہ احتمالی تقسیم پر غور کریں۔\n\nمعلوم کریں: (i) V(X)، (ii) V(Y)، (iii) V(X+Y)، (iv) V(X−Y)\n\nحل:\n\n(i)\\quad V(X)=E(X)^2-[E(X)]^2\n\nE(X)=\\Sigma x\\,p(x)=0(.40)+1(.60)=0+.60=0.60\n\nE(X^2)=\\Sigma x^2p(x)=0^2(.40)+1^2(.60)=0+.60=0.60\n\n\\therefore V(X)=0.60-(0.60)^2=0.60-0.36=0.24\n\n(ii)\\quad V(Y)=E(Y^2)-[E(Y)]^2\n\nE(Y)=\\Sigma y\\,p(y)=0(.25)+1(.50)+2(.25)=0+0.50+0.5=1\n\nE(Y^2)=\\Sigma y^2p(y)=0^2(.25)+1^2(.50)+2^2(.25)=0+.50+1=1.50\n\n\\therefore V(Y)=1.50-(1)^2=1.50-1=0.50\n\nچونکہ X اور Y آزاد ہیں، اس لیے\n\n(iii)\\quad V(X+Y)=V(X)+V(Y)=0.24+0.50=0.74\n\n(iv)\\quad V(X-Y)=V(X)+V(Y)=0.24+0.50=0.74",
+   "theoryPashto": "د تعریف له مخې\n\nE(X)=\\Sigma x\\,p(x)=2\\times 0.40+4\\times 0.60=0.80+2.40=3.2\n\nE(Y)=\\Sigma y\\,p(y)=1\\times 0.25+3\\times 0.50+5\\times 0.25\n\n=0.25+1.50+1.25=3\n\nاوس د ځانګړنې له مخې\n\nE(X+Y)=E(X)+E(Y)=3.2+3=6.8\n\nE(2X-3Y)=E(2X)-E(3Y)\n\n=2E(X)-3E(Y)\n\n=2(3.2)-3(3)=6.4-9=-2.6\n\nڅرنګه چې X او Y خپلواک دي، نو\n\n$E(XY)=E(X)\\,E(Y)=(3.2)(3)=9.6$\n\n2.4.7 د دوو خپلواکو تصادفي متغیرونو د مجموعې یا توپیر واریانس\n\nکه X او Y دوه خپلواک تصادفي متغیرونه وي، نو د هغو د مجموعې واریانس له دې فورمول څخه لاسته راځي:\n\nV(X+Y)=E[X+Y-E(X+Y)]^2\n\n=E[X+Y-E(X)-E(Y)]^2\n\n=E[\\{X-E(X)\\}+\\{Y-E(Y)\\}]^2\n\n=E[\\{X-E(X)\\}^2+\\{Y-E(Y)\\}^2+2\\{X-E(X)\\}\\{Y-E(Y)\\}]\n\n=E[X-E(X)]^2+E[Y-E(Y)]^2+2E\\{X-E(X)\\}\\{Y-E(Y)\\}\n\n=V(X)+V(Y)+2\\,\\mathrm{cov}(X,Y)\n\nکله چې X او Y خپلواک وي، نو \\mathrm{cov}(X,Y)=0\n\n\\therefore\\ V(X+Y)=V(X)+V(Y)، همداراز\n\n$V(X-Y)=V(X)+V(Y)$\n\nبېلګه 2.19\n\nد دوو خپلواکو تصادفي متغیرونو X او Y لاندې ګډ احتمالي وېش په پام کې ونیسئ.\n\nپیدا کړئ: (i) V(X)، (ii) V(Y)، (iii) V(X+Y)، (iv) V(X−Y)\n\nحل:\n\n(i)\\quad V(X)=E(X)^2-[E(X)]^2\n\nE(X)=\\Sigma x\\,p(x)=0(.40)+1(.60)=0+.60=0.60\n\nE(X^2)=\\Sigma x^2p(x)=0^2(.40)+1^2(.60)=0+.60=0.60\n\n\\therefore V(X)=0.60-(0.60)^2=0.60-0.36=0.24\n\n(ii)\\quad V(Y)=E(Y^2)-[E(Y)]^2\n\nE(Y)=\\Sigma y\\,p(y)=0(.25)+1(.50)+2(.25)=0+0.50+0.5=1\n\nE(Y^2)=\\Sigma y^2p(y)=0^2(.25)+1^2(.50)+2^2(.25)=0+.50+1=1.50\n\n\\therefore V(Y)=1.50-(1)^2=1.50-1=0.50\n\nڅرنګه چې X او Y خپلواک دي، نو\n\n(iii)\\quad V(X+Y)=V(X)+V(Y)=0.24+0.50=0.74\n\n(iv)\\quad V(X-Y)=V(X)+V(Y)=0.24+0.50=0.74",
+   "content": "<p>By definition</p><p>E(X)=\\Sigma x\\,p(x)=2\\times 0.40+4\\times 0.60=0.80+2.40=3.2</p><p>E(Y)=\\Sigma y\\,p(y)=1\\times 0.25+3\\times 0.50+5\\times 0.25</p><p>=0.25+1.50+1.25=3</p><p>Now by property</p><p>E(X+Y)=E(X)+E(Y)=3.2+3=6.8</p><p>E(2X-3Y)=E(2X)-E(3Y)</p><p>=2E(X)-3E(Y)</p><p>=2(3.2)-3(3)=6.4-9=-2.6</p><p>Since X and Y are independent, therefore,</p><p>$E(XY)=E(X)\\,E(Y)=(3.2)(3)=9.6$</p><p>2.4.7 Variance of the sum or difference of two independent random variables</p><p>If X and Y are two independent random variables, then variance of their sum is given by the formula:</p><p>V(X+Y)=E[X+Y-E(X+Y)]^2</p><p>=E[X+Y-E(X)-E(Y)]^2</p><p>=E[\\{X-E(X)\\}+\\{Y-E(Y)\\}]^2</p><p>=E[\\{X-E(X)\\}^2+\\{Y-E(Y)\\}^2+2\\{X-E(X)\\}\\{Y-E(Y)\\}]</p><p>=E[X-E(X)]^2+E[Y-E(Y)]^2+2E\\{X-E(X)\\}\\{Y-E(Y)\\}</p><p>=V(X)+V(Y)+2\\,\\mathrm{cov}(X,Y)</p><p>When X and Y are independent then \\mathrm{cov}(X,Y)=0</p><p>\\therefore\\ V(X+Y)=V(X)+V(Y), Similarly</p><p>$V(X-Y)=V(X)+V(Y)$</p><p>Example 2.19</p><p>Consider the following joint probability distribution of two independent random variables X and Y.</p><p>Find: (i) V(X), (ii) V(Y), (iii) V(X+Y), (iv) V(X−Y)</p><p>Solution:</p><p>(i)\\quad V(X)=E(X)^2-[E(X)]^2</p><p>E(X)=\\Sigma x\\,p(x)=0(.40)+1(.60)=0+.60=0.60</p><p>E(X^2)=\\Sigma x^2p(x)=0^2(.40)+1^2(.60)=0+.60=0.60</p><p>\\therefore V(X)=0.60-(0.60)^2=0.60-0.36=0.24</p><p>(ii)\\quad V(Y)=E(Y^2)-[E(Y)]^2</p><p>E(Y)=\\Sigma y\\,p(y)=0(.25)+1(.50)+2(.25)=0+0.50+0.5=1</p><p>E(Y^2)=\\Sigma y^2p(y)=0^2(.25)+1^2(.50)+2^2(.25)=0+.50+1=1.50</p><p>\\therefore V(Y)=1.50-(1)^2=1.50-1=0.50</p><p>Since X and Y are independent, therefore,</p><p>(iii)\\quad V(X+Y)=V(X)+V(Y)=0.24+0.50=0.74</p><p>(iv)\\quad V(X-Y)=V(X)+V(Y)=0.24+0.50=0.74</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      23
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-19"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      24
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      25
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-19-marg"
+    },
+    {
+     "type": "lines",
+     "indices": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      34
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      35,
+      36
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex2-19",
+     "headers": [
+      "$X\\backslash Y$",
+      "0",
+      "1",
+      "2"
+     ],
+     "rows": [
+      [
+       "0",
+       "0.10",
+       ".20",
+       ".10"
+      ],
+      [
+       "1",
+       "0.15",
+       ".30",
+       ".15"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X\\backslash Y$",
+        "0",
+        "1",
+        "2"
+       ],
+       "rows": [
+        [
+         "0",
+         "0.10",
+         ".20",
+         ".10"
+        ],
+        [
+         "1",
+         "0.15",
+         ".30",
+         ".15"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X\\backslash Y$",
+        "0",
+        "1",
+        "2"
+       ],
+       "rows": [
+        [
+         "0",
+         "0.10",
+         ".20",
+         ".10"
+        ],
+        [
+         "1",
+         "0.15",
+         ".30",
+         ".15"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex2-19-marg",
+     "headers": [
+      "$X\\backslash Y$",
+      "0",
+      "1",
+      "2",
+      "$p(x)$"
+     ],
+     "rows": [
+      [
+       "0",
+       "0.10",
+       ".20",
+       ".10",
+       ".40"
+      ],
+      [
+       "1",
+       "0.15",
+       ".30",
+       ".15",
+       ".60"
+      ],
+      [
+       "$p(y)$",
+       "0.25",
+       ".50",
+       ".25",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X\\backslash Y$",
+        "0",
+        "1",
+        "2",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "0.10",
+         ".20",
+         ".10",
+         ".40"
+        ],
+        [
+         "1",
+         "0.15",
+         ".30",
+         ".15",
+         ".60"
+        ],
+        [
+         "$p(y)$",
+         "0.25",
+         ".50",
+         ".25",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X\\backslash Y$",
+        "0",
+        "1",
+        "2",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "0.10",
+         ".20",
+         ".10",
+         ".40"
+        ],
+        [
+         "1",
+         "0.15",
+         ".30",
+         ".15",
+         ".60"
+        ],
+        [
+         "$p(y)$",
+         "0.25",
+         ".50",
+         ".25",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 35,
+     "printedPages": [
+      61,
+      62
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p62-vx-notation",
+   "unit": 2,
+   "printedPage": 62,
+   "description": "Example 2.19(i) prints V(X) = E(X)² − [E(X)]²; the intended first term is E(X²) (as used in the next line). Printed form retained."
+  }
+ ],
+ "completeUnits": []
+}

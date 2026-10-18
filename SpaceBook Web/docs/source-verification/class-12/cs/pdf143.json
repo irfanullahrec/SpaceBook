@@ -1,0 +1,141 @@
+{
+ "pdfPage": 143,
+ "sections": [
+  {
+   "id": "cs12-u9-text-8",
+   "title": "Unit 9 text (8)",
+   "headingUrdu": "یونٹ 9 — متن (۸)",
+   "headingPashto": "۹ څپرکی — متن (۸)",
+   "paras": [
+    {
+     "text": "When the above program is executed, characters are entered one by one from the keyboard.The characters entered above are written to the “characterswrite” file stored at secondary storage at location d-drive of the hard disk. The output file generated is shown in figure 9.8.",
+     "urdu": "جب اوپر کا پروگرام چلایا جاتا ہے تو کی بورڈ سے ایک ایک کر کے حروف داخل کیے جاتے ہیں۔ اوپر داخل کیے گئے حروف ہارڈ ڈسک کی d-drive پر ثانوی اسٹوریج میں محفوظ ’’characterswrite‘‘ فائل میں لکھے جاتے ہیں۔ بننے والی آؤٹ پٹ فائل شکل 9.8 میں دکھائی گئی ہے۔",
+     "pashto": "کله چې پورته پروګرام اجرا شي، توري له کیبورډ یو په یو لیکل کېږي. پورته لیکل شوي توري \"characterswrite\" دوتنې ته لیکل کېږي چې د هارډ ډیسک په d-drive کې په ثانوي زېرمه کې ساتل شوې. جوړه شوې د وتنې دوتنه په ۹.۸ شکل کې ښودل شوې."
+    },
+    {
+     "text": "b. String stream",
+     "urdu": "b. اسٹرنگ اسٹریم",
+     "pashto": "b. د تار بهیر"
+    },
+    {
+     "text": "A string stream is a stream which reads input from or writes output to an associated string.Consider the text file “stringread” shown in figure 9.9.",
+     "urdu": "اسٹرنگ اسٹریم وہ اسٹریم ہے جو کسی وابستہ اسٹرنگ سے ان پٹ پڑھتی یا اس میں آؤٹ پٹ لکھتی ہے۔ شکل 9.9 میں دکھائی گئی ٹیکسٹ فائل ’’stringread‘‘ پر غور کریں۔",
+     "pashto": "د تار بهیر هغه بهیر دی چې له یوه تړلي تار ننوتنه لولي یا ورته وتنه لیکي. په ۹.۹ شکل کې ښودل شوې \"stringread\" متني دوتنې ته پام وکړئ."
+    },
+    {
+     "text": "The following program reads this file (stringread.txt) into string (str) using getline() function and display the result on the screen as shown in figure 9.10.",
+     "urdu": "درج ذیل پروگرام getline() فنکشن کے ذریعے اس فائل (stringread.txt) کو اسٹرنگ (str) میں پڑھتا ہے اور نتیجہ اسکرین پر دکھاتا ہے جیسا کہ شکل 9.10 میں دکھایا گیا ہے۔",
+     "pashto": "لاندې پروګرام د getline() فنکشن په مرسته دا دوتنه (stringread.txt) په تار (str) کې لولي او پایله پر پرده ښيي لکه په ۹.۱۰ شکل کې."
+    },
+    {
+     "text": "//string stream (read) program\n#include <conio.h>\n#include <iostream.h>\n#include <fstream.h>\n#include <string>\nint main()\n{\nchar str[20];\nifstream reads(\"d:\\\\stringread.txt\");\nwhile(!reads.eof())\n{\nreads.getline(str,21);\ncout<<str<<endl;\n}\nreads.close();\ngetch();\nreturn 0;\n}",
+     "urdu": "//string stream (read) program\n#include <conio.h>\n#include <iostream.h>\n#include <fstream.h>\n#include <string>\nint main()\n{\nchar str[20];\nifstream reads(\"d:\\\\stringread.txt\");\nwhile(!reads.eof())\n{\nreads.getline(str,21);\ncout<<str<<endl;\n}\nreads.close();\ngetch();\nreturn 0;\n}",
+     "pashto": "//string stream (read) program\n#include <conio.h>\n#include <iostream.h>\n#include <fstream.h>\n#include <string>\nint main()\n{\nchar str[20];\nifstream reads(\"d:\\\\stringread.txt\");\nwhile(!reads.eof())\n{\nreads.getline(str,21);\ncout<<str<<endl;\n}\nreads.close();\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "When the above program is executed, characters are entered one by one from the keyboard.The characters entered above are written to the “characterswrite” file stored at secondary storage at location d-drive of the hard disk. The output file generated is shown in figure 9.8.\n\nb. String stream\n\nA string stream is a stream which reads input from or writes output to an associated string.Consider the text file “stringread” shown in figure 9.9.\n\nThe following program reads this file (stringread.txt) into string (str) using getline() function and display the result on the screen as shown in figure 9.10.\n\n//string stream (read) program\n#include <conio.h>\n#include <iostream.h>\n#include <fstream.h>\n#include <string>\nint main()\n{\nchar str[20];\nifstream reads(\"d:\\\\stringread.txt\");\nwhile(!reads.eof())\n{\nreads.getline(str,21);\ncout<<str<<endl;\n}\nreads.close();\ngetch();\nreturn 0;\n}",
+   "urdu": "جب اوپر کا پروگرام چلایا جاتا ہے تو کی بورڈ سے ایک ایک کر کے حروف داخل کیے جاتے ہیں۔ اوپر داخل کیے گئے حروف ہارڈ ڈسک کی d-drive پر ثانوی اسٹوریج میں محفوظ ’’characterswrite‘‘ فائل میں لکھے جاتے ہیں۔ بننے والی آؤٹ پٹ فائل شکل 9.8 میں دکھائی گئی ہے۔\n\nb. اسٹرنگ اسٹریم\n\nاسٹرنگ اسٹریم وہ اسٹریم ہے جو کسی وابستہ اسٹرنگ سے ان پٹ پڑھتی یا اس میں آؤٹ پٹ لکھتی ہے۔ شکل 9.9 میں دکھائی گئی ٹیکسٹ فائل ’’stringread‘‘ پر غور کریں۔\n\nدرج ذیل پروگرام getline() فنکشن کے ذریعے اس فائل (stringread.txt) کو اسٹرنگ (str) میں پڑھتا ہے اور نتیجہ اسکرین پر دکھاتا ہے جیسا کہ شکل 9.10 میں دکھایا گیا ہے۔\n\n//string stream (read) program\n#include <conio.h>\n#include <iostream.h>\n#include <fstream.h>\n#include <string>\nint main()\n{\nchar str[20];\nifstream reads(\"d:\\\\stringread.txt\");\nwhile(!reads.eof())\n{\nreads.getline(str,21);\ncout<<str<<endl;\n}\nreads.close();\ngetch();\nreturn 0;\n}",
+   "pashto": "کله چې پورته پروګرام اجرا شي، توري له کیبورډ یو په یو لیکل کېږي. پورته لیکل شوي توري \"characterswrite\" دوتنې ته لیکل کېږي چې د هارډ ډیسک په d-drive کې په ثانوي زېرمه کې ساتل شوې. جوړه شوې د وتنې دوتنه په ۹.۸ شکل کې ښودل شوې.\n\nb. د تار بهیر\n\nد تار بهیر هغه بهیر دی چې له یوه تړلي تار ننوتنه لولي یا ورته وتنه لیکي. په ۹.۹ شکل کې ښودل شوې \"stringread\" متني دوتنې ته پام وکړئ.\n\nلاندې پروګرام د getline() فنکشن په مرسته دا دوتنه (stringread.txt) په تار (str) کې لولي او پایله پر پرده ښيي لکه په ۹.۱۰ شکل کې.\n\n//string stream (read) program\n#include <conio.h>\n#include <iostream.h>\n#include <fstream.h>\n#include <string>\nint main()\n{\nchar str[20];\nifstream reads(\"d:\\\\stringread.txt\");\nwhile(!reads.eof())\n{\nreads.getline(str,21);\ncout<<str<<endl;\n}\nreads.close();\ngetch();\nreturn 0;\n}",
+   "theoryUrdu": "جب اوپر کا پروگرام چلایا جاتا ہے تو کی بورڈ سے ایک ایک کر کے حروف داخل کیے جاتے ہیں۔ اوپر داخل کیے گئے حروف ہارڈ ڈسک کی d-drive پر ثانوی اسٹوریج میں محفوظ ’’characterswrite‘‘ فائل میں لکھے جاتے ہیں۔ بننے والی آؤٹ پٹ فائل شکل 9.8 میں دکھائی گئی ہے۔\n\nb. اسٹرنگ اسٹریم\n\nاسٹرنگ اسٹریم وہ اسٹریم ہے جو کسی وابستہ اسٹرنگ سے ان پٹ پڑھتی یا اس میں آؤٹ پٹ لکھتی ہے۔ شکل 9.9 میں دکھائی گئی ٹیکسٹ فائل ’’stringread‘‘ پر غور کریں۔\n\nدرج ذیل پروگرام getline() فنکشن کے ذریعے اس فائل (stringread.txt) کو اسٹرنگ (str) میں پڑھتا ہے اور نتیجہ اسکرین پر دکھاتا ہے جیسا کہ شکل 9.10 میں دکھایا گیا ہے۔\n\n//string stream (read) program\n#include <conio.h>\n#include <iostream.h>\n#include <fstream.h>\n#include <string>\nint main()\n{\nchar str[20];\nifstream reads(\"d:\\\\stringread.txt\");\nwhile(!reads.eof())\n{\nreads.getline(str,21);\ncout<<str<<endl;\n}\nreads.close();\ngetch();\nreturn 0;\n}",
+   "theoryPashto": "کله چې پورته پروګرام اجرا شي، توري له کیبورډ یو په یو لیکل کېږي. پورته لیکل شوي توري \"characterswrite\" دوتنې ته لیکل کېږي چې د هارډ ډیسک په d-drive کې په ثانوي زېرمه کې ساتل شوې. جوړه شوې د وتنې دوتنه په ۹.۸ شکل کې ښودل شوې.\n\nb. د تار بهیر\n\nد تار بهیر هغه بهیر دی چې له یوه تړلي تار ننوتنه لولي یا ورته وتنه لیکي. په ۹.۹ شکل کې ښودل شوې \"stringread\" متني دوتنې ته پام وکړئ.\n\nلاندې پروګرام د getline() فنکشن په مرسته دا دوتنه (stringread.txt) په تار (str) کې لولي او پایله پر پرده ښيي لکه په ۹.۱۰ شکل کې.\n\n//string stream (read) program\n#include <conio.h>\n#include <iostream.h>\n#include <fstream.h>\n#include <string>\nint main()\n{\nchar str[20];\nifstream reads(\"d:\\\\stringread.txt\");\nwhile(!reads.eof())\n{\nreads.getline(str,21);\ncout<<str<<endl;\n}\nreads.close();\ngetch();\nreturn 0;\n}",
+   "content": "<p>When the above program is executed, characters are entered one by one from the keyboard.The characters entered above are written to the “characterswrite” file stored at secondary storage at location d-drive of the hard disk. The output file generated is shown in figure 9.8.</p><p>b. String stream</p><p>A string stream is a stream which reads input from or writes output to an associated string.Consider the text file “stringread” shown in figure 9.9.</p><p>The following program reads this file (stringread.txt) into string (str) using getline() function and display the result on the screen as shown in figure 9.10.</p><p>//string stream (read) program\n#include &lt;conio.h&gt;\n#include &lt;iostream.h&gt;\n#include &lt;fstream.h&gt;\n#include &lt;string&gt;\nint main()\n{\nchar str[20];\nifstream reads(&quot;d:\\\\stringread.txt&quot;);\nwhile(!reads.eof())\n{\nreads.getline(str,21);\ncout&lt;&lt;str&lt;&lt;endl;\n}\nreads.close();\ngetch();\nreturn 0;\n}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-9-8"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-9-9"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-9-12"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-9-8",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 136\" role=\"img\" aria-label=\"Figure 9.8: File Written by Character Stream\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"136\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"100\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">C:\\BC5\\BIN\\NONAME00.exe</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><rect x=\"14\" y=\"28\" width=\"432\" height=\"62\" fill=\"#111111\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"44\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">C++ is a powerful language.</text><text x=\"230.0\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Figure 9.8: File Written by Character Stream</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 136\" role=\"img\" aria-label=\"شکل 9.8: کریکٹر اسٹریم کے ذریعے لکھی گئی فائل\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"136\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"100\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">C:\\BC5\\BIN\\NONAME00.exe</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><rect x=\"14\" y=\"28\" width=\"432\" height=\"62\" fill=\"#111111\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"44\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">C++ is a powerful language.</text><text x=\"230.0\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">شکل 9.8: کریکٹر اسٹریم کے ذریعے لکھی گئی فائل</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 136\" role=\"img\" aria-label=\"۹.۸ شکل: د یو توري بهیر په مرسته لیکل شوې دوتنه\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"136\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"100\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">C:\\BC5\\BIN\\NONAME00.exe</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><rect x=\"14\" y=\"28\" width=\"432\" height=\"62\" fill=\"#111111\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"44\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">C++ is a powerful language.</text><text x=\"230.0\" y=\"128\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۹.۸ شکل: د یو توري بهیر په مرسته لیکل شوې دوتنه</text></svg>",
+     "sourceWidthRatio": 3.3823529411764706
+    },
+    {
+     "id": "cs12-fig-9-9",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 156\" role=\"img\" aria-label=\"Figure 9.9: Input File that will be Read using String Stream\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"156\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"120\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">stringread - Notepad</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><text x=\"20\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">File</text><text x=\"62\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Edit</text><text x=\"104\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Format</text><text x=\"146\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">View</text><text x=\"188\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Help</text><rect x=\"14\" y=\"48\" width=\"432\" height=\"62\" fill=\"#ffffff\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"64\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#111111\" xml:space=\"preserve\">\"Intellectual Growth Should Commence At Birth And Cease Only At Death\"</text><text x=\"230.0\" y=\"148\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Figure 9.9: Input File that will be Read using String Stream</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 156\" role=\"img\" aria-label=\"شکل 9.9: اسٹرنگ اسٹریم کے ذریعے پڑھی جانے والی ان پٹ فائل\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"156\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"120\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">stringread - Notepad</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><text x=\"20\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">File</text><text x=\"62\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Edit</text><text x=\"104\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Format</text><text x=\"146\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">View</text><text x=\"188\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Help</text><rect x=\"14\" y=\"48\" width=\"432\" height=\"62\" fill=\"#ffffff\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"64\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#111111\" xml:space=\"preserve\">\"Intellectual Growth Should Commence At Birth And Cease Only At Death\"</text><text x=\"230.0\" y=\"148\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">شکل 9.9: اسٹرنگ اسٹریم کے ذریعے پڑھی جانے والی ان پٹ فائل</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 156\" role=\"img\" aria-label=\"۹.۹ شکل: د تار بهیر په مرسته د لوستلو وړ د ننوتنې دوتنه\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"156\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"120\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">stringread - Notepad</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><text x=\"20\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">File</text><text x=\"62\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Edit</text><text x=\"104\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Format</text><text x=\"146\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">View</text><text x=\"188\" y=\"43\" text-anchor=\"start\" font-size=\"11\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Help</text><rect x=\"14\" y=\"48\" width=\"432\" height=\"62\" fill=\"#ffffff\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"64\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#111111\" xml:space=\"preserve\">\"Intellectual Growth Should Commence At Birth And Cease Only At Death\"</text><text x=\"230.0\" y=\"148\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۹.۹ شکل: د تار بهیر په مرسته د لوستلو وړ د ننوتنې دوتنه</text></svg>",
+     "sourceWidthRatio": 2.948717948717949
+    },
+    {
+     "id": "cs12-fig-9-12",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 154\" role=\"img\" aria-label=\"Figure 9.12: File Read by String Stream\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"154\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"118\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">C:\\BC5\\BIN\\NONAME0...</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><rect x=\"14\" y=\"28\" width=\"432\" height=\"80\" fill=\"#111111\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"44\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">ôIntellectual Growth</text><text x=\"20\" y=\"62\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\"> Should Commence At</text><text x=\"20\" y=\"80\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Birth And Cease Only</text><text x=\"20\" y=\"98\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\"> At Deathö</text><text x=\"230.0\" y=\"146\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Figure 9.12: File Read by String Stream</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 154\" role=\"img\" aria-label=\"شکل 9.12: اسٹرنگ اسٹریم کے ذریعے پڑھی گئی فائل\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"154\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"118\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">C:\\BC5\\BIN\\NONAME0...</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><rect x=\"14\" y=\"28\" width=\"432\" height=\"80\" fill=\"#111111\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"44\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">ôIntellectual Growth</text><text x=\"20\" y=\"62\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\"> Should Commence At</text><text x=\"20\" y=\"80\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Birth And Cease Only</text><text x=\"20\" y=\"98\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\"> At Deathö</text><text x=\"230.0\" y=\"146\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">شکل 9.12: اسٹرنگ اسٹریم کے ذریعے پڑھی گئی فائل</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 154\" role=\"img\" aria-label=\"۹.۱۲ شکل: د تار بهیر په مرسته لوستل شوې دوتنه\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"154\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"118\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"8\" width=\"440\" height=\"20\" fill=\"#3b5998\"/><text x=\"18\" y=\"23\" text-anchor=\"start\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" font-family=\"sans-serif\">C:\\BC5\\BIN\\NONAME0...</text><rect x=\"394\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"412\" y=\"11\" width=\"14\" height=\"14\" fill=\"#cbd5e1\"/><rect x=\"430\" y=\"11\" width=\"14\" height=\"14\" fill=\"#ef4444\"/><rect x=\"14\" y=\"28\" width=\"432\" height=\"80\" fill=\"#111111\" stroke=\"#94a3b8\"/><text x=\"20\" y=\"44\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">ôIntellectual Growth</text><text x=\"20\" y=\"62\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\"> Should Commence At</text><text x=\"20\" y=\"80\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\">Birth And Cease Only</text><text x=\"20\" y=\"98\" font-size=\"12\" font-family=\"Consolas, monospace\" fill=\"#e5e5e5\" xml:space=\"preserve\"> At Deathö</text><text x=\"230.0\" y=\"146\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۹.۱۲ شکل: د تار بهیر په مرسته لوستل شوې دوتنه</text></svg>",
+     "sourceWidthRatio": 2.987012987012987
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 143,
+     "printedPages": [
+      274,
+      275
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 9 text (8)",
+   "sourcePageLabel": "PDF 143 · p. 274–275",
+   "sourceNote": "Figures 9.8, 9.9 and 9.12 (console and Notepad windows) are redrawn as coded mock-ups with their printed contents, including the stray ô/ö marks the console shows in place of the quotation marks. The string-read program runs from p.274 to p.275 and is given whole.",
+   "unit": 9
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf143",
+   "unit": 9,
+   "printedPage": 275,
+   "description": "The text says the result is “shown in figure 9.10” but the console figure on p.275 is captioned “Figure 9.12”; no Figures 9.6, 9.10 or 9.11 are printed. The program declares char str[20] but reads 21 characters. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

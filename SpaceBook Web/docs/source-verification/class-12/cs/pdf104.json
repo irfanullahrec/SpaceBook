@@ -1,0 +1,186 @@
+{
+ "pdfPage": 104,
+ "sections": [
+  {
+   "id": "cs12-u6-text-11",
+   "title": "Unit 6 text (11)",
+   "headingUrdu": "یونٹ 6 — متن (11)",
+   "headingPashto": "۶ څپرکی — متن (11)",
+   "paras": [
+    {
+     "text": "In the above program, the function call, display (5), passes the constant argument (5) to the function.",
+     "urdu": "اوپر کے پروگرام میں فنکشن کال display (5) مستقل آرگیومنٹ (5) فنکشن کو پاس کرتی ہے۔",
+     "pashto": "په پورته پروګرام کې د display (5) فنکشن غوښتنه ثابت دلیل (5) فنکشن ته لېږدوي."
+    },
+    {
+     "text": "Consider another program defining a function displayGender () that takes a character constant, ‘F’ or ‘M’, as argument from the calling function:",
+     "urdu": "ایک اور پروگرام پر غور کریں جو فنکشن displayGender () بیان کرتا ہے جو کال کرنے والے فنکشن سے حرفی مستقل ‘F’ یا ‘M’ بطور آرگیومنٹ لیتا ہے:",
+     "pashto": "بل پروګرام ته پام وکړئ چې displayGender () فنکشن تعریفوي چې له غوښتونکي فنکشن د تورو ثابت ‘F’ یا ‘M’ د دلیل په توګه اخلي:"
+    },
+    {
+     "text": "// passing character constants as argument\n#include<iostream.h>\n#include<conio.h>\nvoid displayGender(char ch)\n{\ncout << \"The gender marker you passed is : \" << ch << endl;\n}\nint main()\n{\ndisplayGender(‘F’); // function call\ngetch();\nreturn 0;\n}",
+     "urdu": "// passing character constants as argument\n#include<iostream.h>\n#include<conio.h>\nvoid displayGender(char ch)\n{\ncout << \"The gender marker you passed is : \" << ch << endl;\n}\nint main()\n{\ndisplayGender(‘F’); // function call\ngetch();\nreturn 0;\n}",
+     "pashto": "// passing character constants as argument\n#include<iostream.h>\n#include<conio.h>\nvoid displayGender(char ch)\n{\ncout << \"The gender marker you passed is : \" << ch << endl;\n}\nint main()\n{\ndisplayGender(‘F’); // function call\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The gender marker you passed is : F",
+     "urdu": "The gender marker you passed is : F",
+     "pashto": "The gender marker you passed is : F",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. Passing arguments by values",
+     "urdu": "b. قدر کے ذریعے آرگیومنٹس پاس کرنا",
+     "pashto": "b. د ارزښت له لارې د دلیلونو لېږدول"
+    },
+    {
+     "text": "By default, arguments in C++ are passed by value. When arguments are passed by value, a copy of the argument value is passed to the function formal parameter.",
+     "urdu": "بطورِ طے شدہ C++ میں آرگیومنٹس قدر کے ذریعے پاس ہوتے ہیں۔ جب آرگیومنٹس قدر کے ذریعے پاس ہوں تو آرگیومنٹ کی قدر کی نقل فنکشن کے رسمی پیرامیٹر کو پاس کی جاتی ہے۔",
+     "pashto": "په ډیفالټ ډول په C++ کې دلیلونه د ارزښت له لارې لېږدول کېږي. کله چې دلیلونه د ارزښت له لارې ولېږدول شي، د دلیل د ارزښت کاپي د فنکشن رسمي پاراميټر ته لېږدول کېږي."
+    },
+    {
+     "text": "Consider the following program to demonstrate the use of passing arguments by value.",
+     "urdu": "قدر کے ذریعے آرگیومنٹس پاس کرنے کا استعمال واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د ارزښت له لارې د دلیلونو د لېږدولو د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "// passing parameters by value\n#include<iostream.h>\n#include<conio.h>\nvoid foo(int y)\n{\ncout << \"y in foo() = \" << y << endl;\ny = 6;\ncout << \"y in foo() = \" << y << endl;\n} // y is destroyed here\nint main()\n{\nint x = 5;\ncout << \"x in main() before call= \" << x << endl;\nfoo(x); //argument passed by value\ncout << \"x in main() after call= \" << x << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "// passing parameters by value\n#include<iostream.h>\n#include<conio.h>\nvoid foo(int y)\n{\ncout << \"y in foo() = \" << y << endl;\ny = 6;\ncout << \"y in foo() = \" << y << endl;\n} // y is destroyed here\nint main()\n{\nint x = 5;\ncout << \"x in main() before call= \" << x << endl;\nfoo(x); //argument passed by value\ncout << \"x in main() after call= \" << x << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "// passing parameters by value\n#include<iostream.h>\n#include<conio.h>\nvoid foo(int y)\n{\ncout << \"y in foo() = \" << y << endl;\ny = 6;\ncout << \"y in foo() = \" << y << endl;\n} // y is destroyed here\nint main()\n{\nint x = 5;\ncout << \"x in main() before call= \" << x << endl;\nfoo(x); //argument passed by value\ncout << \"x in main() after call= \" << x << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "x in main() before call=5\ny in foo() = 5\ny in foo() = 6\nx in main() after call=5",
+     "urdu": "x in main() before call=5\ny in foo() = 5\ny in foo() = 6\nx in main() after call=5",
+     "pashto": "x in main() before call=5\ny in foo() = 5\ny in foo() = 6\nx in main() after call=5",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In this program, the original value of x is not changed before and after calling the function foo().",
+     "urdu": "اس پروگرام میں فنکشن foo() کو کال کرنے سے پہلے اور بعد x کی اصل قدر تبدیل نہیں ہوتی۔",
+     "pashto": "په دې پروګرام کې د foo() فنکشن له غوښتلو مخکې او وروسته د x اصلي ارزښت نه بدلېږي."
+    }
+   ],
+   "theory": "In the above program, the function call, display (5), passes the constant argument (5) to the function.\n\nConsider another program defining a function displayGender () that takes a character constant, ‘F’ or ‘M’, as argument from the calling function:\n\n// passing character constants as argument\n#include<iostream.h>\n#include<conio.h>\nvoid displayGender(char ch)\n{\ncout << \"The gender marker you passed is : \" << ch << endl;\n}\nint main()\n{\ndisplayGender(‘F’); // function call\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nThe gender marker you passed is : F\n\nb. Passing arguments by values\n\nBy default, arguments in C++ are passed by value. When arguments are passed by value, a copy of the argument value is passed to the function formal parameter.\n\nConsider the following program to demonstrate the use of passing arguments by value.\n\n// passing parameters by value\n#include<iostream.h>\n#include<conio.h>\nvoid foo(int y)\n{\ncout << \"y in foo() = \" << y << endl;\ny = 6;\ncout << \"y in foo() = \" << y << endl;\n} // y is destroyed here\nint main()\n{\nint x = 5;\ncout << \"x in main() before call= \" << x << endl;\nfoo(x); //argument passed by value\ncout << \"x in main() after call= \" << x << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nx in main() before call=5\ny in foo() = 5\ny in foo() = 6\nx in main() after call=5\n\nIn this program, the original value of x is not changed before and after calling the function foo().",
+   "urdu": "اوپر کے پروگرام میں فنکشن کال display (5) مستقل آرگیومنٹ (5) فنکشن کو پاس کرتی ہے۔\n\nایک اور پروگرام پر غور کریں جو فنکشن displayGender () بیان کرتا ہے جو کال کرنے والے فنکشن سے حرفی مستقل ‘F’ یا ‘M’ بطور آرگیومنٹ لیتا ہے:\n\n// passing character constants as argument\n#include<iostream.h>\n#include<conio.h>\nvoid displayGender(char ch)\n{\ncout << \"The gender marker you passed is : \" << ch << endl;\n}\nint main()\n{\ndisplayGender(‘F’); // function call\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe gender marker you passed is : F\n\nb. قدر کے ذریعے آرگیومنٹس پاس کرنا\n\nبطورِ طے شدہ C++ میں آرگیومنٹس قدر کے ذریعے پاس ہوتے ہیں۔ جب آرگیومنٹس قدر کے ذریعے پاس ہوں تو آرگیومنٹ کی قدر کی نقل فنکشن کے رسمی پیرامیٹر کو پاس کی جاتی ہے۔\n\nقدر کے ذریعے آرگیومنٹس پاس کرنے کا استعمال واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n// passing parameters by value\n#include<iostream.h>\n#include<conio.h>\nvoid foo(int y)\n{\ncout << \"y in foo() = \" << y << endl;\ny = 6;\ncout << \"y in foo() = \" << y << endl;\n} // y is destroyed here\nint main()\n{\nint x = 5;\ncout << \"x in main() before call= \" << x << endl;\nfoo(x); //argument passed by value\ncout << \"x in main() after call= \" << x << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nx in main() before call=5\ny in foo() = 5\ny in foo() = 6\nx in main() after call=5\n\nاس پروگرام میں فنکشن foo() کو کال کرنے سے پہلے اور بعد x کی اصل قدر تبدیل نہیں ہوتی۔",
+   "pashto": "په پورته پروګرام کې د display (5) فنکشن غوښتنه ثابت دلیل (5) فنکشن ته لېږدوي.\n\nبل پروګرام ته پام وکړئ چې displayGender () فنکشن تعریفوي چې له غوښتونکي فنکشن د تورو ثابت ‘F’ یا ‘M’ د دلیل په توګه اخلي:\n\n// passing character constants as argument\n#include<iostream.h>\n#include<conio.h>\nvoid displayGender(char ch)\n{\ncout << \"The gender marker you passed is : \" << ch << endl;\n}\nint main()\n{\ndisplayGender(‘F’); // function call\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe gender marker you passed is : F\n\nb. د ارزښت له لارې د دلیلونو لېږدول\n\nپه ډیفالټ ډول په C++ کې دلیلونه د ارزښت له لارې لېږدول کېږي. کله چې دلیلونه د ارزښت له لارې ولېږدول شي، د دلیل د ارزښت کاپي د فنکشن رسمي پاراميټر ته لېږدول کېږي.\n\nد ارزښت له لارې د دلیلونو د لېږدولو د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n// passing parameters by value\n#include<iostream.h>\n#include<conio.h>\nvoid foo(int y)\n{\ncout << \"y in foo() = \" << y << endl;\ny = 6;\ncout << \"y in foo() = \" << y << endl;\n} // y is destroyed here\nint main()\n{\nint x = 5;\ncout << \"x in main() before call= \" << x << endl;\nfoo(x); //argument passed by value\ncout << \"x in main() after call= \" << x << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nx in main() before call=5\ny in foo() = 5\ny in foo() = 6\nx in main() after call=5\n\nپه دې پروګرام کې د foo() فنکشن له غوښتلو مخکې او وروسته د x اصلي ارزښت نه بدلېږي.",
+   "theoryUrdu": "اوپر کے پروگرام میں فنکشن کال display (5) مستقل آرگیومنٹ (5) فنکشن کو پاس کرتی ہے۔\n\nایک اور پروگرام پر غور کریں جو فنکشن displayGender () بیان کرتا ہے جو کال کرنے والے فنکشن سے حرفی مستقل ‘F’ یا ‘M’ بطور آرگیومنٹ لیتا ہے:\n\n// passing character constants as argument\n#include<iostream.h>\n#include<conio.h>\nvoid displayGender(char ch)\n{\ncout << \"The gender marker you passed is : \" << ch << endl;\n}\nint main()\n{\ndisplayGender(‘F’); // function call\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe gender marker you passed is : F\n\nb. قدر کے ذریعے آرگیومنٹس پاس کرنا\n\nبطورِ طے شدہ C++ میں آرگیومنٹس قدر کے ذریعے پاس ہوتے ہیں۔ جب آرگیومنٹس قدر کے ذریعے پاس ہوں تو آرگیومنٹ کی قدر کی نقل فنکشن کے رسمی پیرامیٹر کو پاس کی جاتی ہے۔\n\nقدر کے ذریعے آرگیومنٹس پاس کرنے کا استعمال واضح کرنے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n// passing parameters by value\n#include<iostream.h>\n#include<conio.h>\nvoid foo(int y)\n{\ncout << \"y in foo() = \" << y << endl;\ny = 6;\ncout << \"y in foo() = \" << y << endl;\n} // y is destroyed here\nint main()\n{\nint x = 5;\ncout << \"x in main() before call= \" << x << endl;\nfoo(x); //argument passed by value\ncout << \"x in main() after call= \" << x << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nx in main() before call=5\ny in foo() = 5\ny in foo() = 6\nx in main() after call=5\n\nاس پروگرام میں فنکشن foo() کو کال کرنے سے پہلے اور بعد x کی اصل قدر تبدیل نہیں ہوتی۔",
+   "theoryPashto": "په پورته پروګرام کې د display (5) فنکشن غوښتنه ثابت دلیل (5) فنکشن ته لېږدوي.\n\nبل پروګرام ته پام وکړئ چې displayGender () فنکشن تعریفوي چې له غوښتونکي فنکشن د تورو ثابت ‘F’ یا ‘M’ د دلیل په توګه اخلي:\n\n// passing character constants as argument\n#include<iostream.h>\n#include<conio.h>\nvoid displayGender(char ch)\n{\ncout << \"The gender marker you passed is : \" << ch << endl;\n}\nint main()\n{\ndisplayGender(‘F’); // function call\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe gender marker you passed is : F\n\nb. د ارزښت له لارې د دلیلونو لېږدول\n\nپه ډیفالټ ډول په C++ کې دلیلونه د ارزښت له لارې لېږدول کېږي. کله چې دلیلونه د ارزښت له لارې ولېږدول شي، د دلیل د ارزښت کاپي د فنکشن رسمي پاراميټر ته لېږدول کېږي.\n\nد ارزښت له لارې د دلیلونو د لېږدولو د کارونې د ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n// passing parameters by value\n#include<iostream.h>\n#include<conio.h>\nvoid foo(int y)\n{\ncout << \"y in foo() = \" << y << endl;\ny = 6;\ncout << \"y in foo() = \" << y << endl;\n} // y is destroyed here\nint main()\n{\nint x = 5;\ncout << \"x in main() before call= \" << x << endl;\nfoo(x); //argument passed by value\ncout << \"x in main() after call= \" << x << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nx in main() before call=5\ny in foo() = 5\ny in foo() = 6\nx in main() after call=5\n\nپه دې پروګرام کې د foo() فنکشن له غوښتلو مخکې او وروسته د x اصلي ارزښت نه بدلېږي.",
+   "content": "<p>In the above program, the function call, display (5), passes the constant argument (5) to the function.</p><p>Consider another program defining a function displayGender () that takes a character constant, ‘F’ or ‘M’, as argument from the calling function:</p><p>// passing character constants as argument\n#include&lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nvoid displayGender(char ch)\n{\ncout &lt;&lt; &quot;The gender marker you passed is : &quot; &lt;&lt; ch &lt;&lt; endl;\n}\nint main()\n{\ndisplayGender(‘F’); // function call\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>The gender marker you passed is : F</p><p>b. Passing arguments by values</p><p>By default, arguments in C++ are passed by value. When arguments are passed by value, a copy of the argument value is passed to the function formal parameter.</p><p>Consider the following program to demonstrate the use of passing arguments by value.</p><p>// passing parameters by value\n#include&lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nvoid foo(int y)\n{\ncout &lt;&lt; &quot;y in foo() = &quot; &lt;&lt; y &lt;&lt; endl;\ny = 6;\ncout &lt;&lt; &quot;y in foo() = &quot; &lt;&lt; y &lt;&lt; endl;\n} // y is destroyed here\nint main()\n{\nint x = 5;\ncout &lt;&lt; &quot;x in main() before call= &quot; &lt;&lt; x &lt;&lt; endl;\nfoo(x); //argument passed by value\ncout &lt;&lt; &quot;x in main() after call= &quot; &lt;&lt; x &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>x in main() before call=5\ny in foo() = 5\ny in foo() = 6\nx in main() after call=5</p><p>In this program, the original value of x is not changed before and after calling the function foo().</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 104,
+     "printedPages": [
+      196,
+      197
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (11)",
+   "sourcePageLabel": "PDF 104 · p. 196–197",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf104",
+   "unit": 6,
+   "printedPage": 196,
+   "description": "p.196 refers to “display (5)” and “constant argument (5)” though the preceding program calls display(25); displayGender(‘F’) uses curly quotes. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

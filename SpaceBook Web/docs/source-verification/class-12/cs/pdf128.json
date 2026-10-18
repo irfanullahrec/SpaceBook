@@ -1,0 +1,212 @@
+{
+ "pdfPage": 128,
+ "sections": [
+  {
+   "id": "cs12-u8-text-9",
+   "title": "Unit 8 text (9)",
+   "headingUrdu": "یونٹ 8 — متن (9)",
+   "headingPashto": "۸ څپرکی — متن (9)",
+   "paras": [
+    {
+     "text": "Here, a constructor CExample with two parameters of type int has been declared that initializes private variables a and b. When the object declaration is done as follows:",
+     "urdu": "یہاں int قسم کے دو پیرامیٹرز والا کنسٹرکٹر CExample ڈکلیئر کیا گیا ہے جو private ویری ایبلز a اور b کو ابتدائی قدر دیتا ہے۔ جب آبجیکٹ کی ڈکلیریشن یوں کی جائے:",
+     "pashto": "دلته د int ډول دوه پاراميټرونو سره CExample جوړوونکی اعلان شوی چې private متغیرونو a او b ته لومړنی ارزښت ورکوي. کله چې د شي اعلان داسې وشي:"
+    },
+    {
+     "text": "CExample CObj (5,10);",
+     "urdu": "CExample CObj (5,10);",
+     "pashto": "CExample CObj (5,10);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The following declaration is not correct, because, we have declared the class to have an explicit constructor (user-defined constructor) to which the values should be passed.",
+     "urdu": "درج ذیل ڈکلیریشن درست نہیں، کیونکہ ہم نے کلاس کو واضح کنسٹرکٹر (یوزر ڈیفائنڈ کنسٹرکٹر) کے ساتھ ڈکلیئر کیا ہے جسے قدریں پاس کرنی چاہییں۔",
+     "pashto": "لاندې اعلان سم نه دی، ځکه موږ ټولګی د ښکاره جوړوونکي (د کاروونکي-تعریف شوي جوړوونکي) سره اعلان کړی چې باید ارزښتونه ورته ولېږدول شي."
+    },
+    {
+     "text": "CExample CObj;",
+     "urdu": "CExample CObj;",
+     "pashto": "CExample CObj;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "A user-defined constructor can be either parameterized or non-parameterized. A parameterized constructor is the one which accepts arguments while the object is declared and nonparameterized constructor is the one whose object declaration is done without specifying arguments. The program given above defines parameterized constructor. The following program explains non-parameterized constructor.",
+     "urdu": "یوزر ڈیفائنڈ کنسٹرکٹر پیرامیٹرائزڈ یا نان پیرامیٹرائزڈ ہو سکتا ہے۔ پیرامیٹرائزڈ کنسٹرکٹر وہ ہے جو آبجیکٹ ڈکلیئر ہوتے وقت آرگیومنٹس قبول کرتا ہے اور نان پیرامیٹرائزڈ کنسٹرکٹر وہ ہے جس کے آبجیکٹ کی ڈکلیریشن آرگیومنٹس کے بغیر ہوتی ہے۔ اوپر دیا گیا پروگرام پیرامیٹرائزڈ کنسٹرکٹر بیان کرتا ہے۔ درج ذیل پروگرام نان پیرامیٹرائزڈ کنسٹرکٹر واضح کرتا ہے۔",
+     "pashto": "د کاروونکي-تعریف شوی جوړوونکی کېدای شي پاراميټر لرونکی یا بې‌پاراميټره وي. پاراميټر لرونکی جوړوونکی هغه دی چې د شي د اعلان پر مهال دلیلونه مني او بې‌پاراميټره جوړوونکی هغه دی چې د شي اعلان یې پرته له دلیلونو کېږي. پورته ورکړل شوی پروګرام پاراميټر لرونکی جوړوونکی تعریفوي. لاندې پروګرام بې‌پاراميټره جوړوونکی تشریح کوي."
+    },
+    {
+     "text": "#include <iostream.h>\n#include <conio.h>\nclass CNonParameter\n{\npublic:\nCNonParameter ()\n{\ncout<< “I am non-parameterized constructor”;\n}\n};\nint main()\n{\nCNonParameter NP;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include <conio.h>\nclass CNonParameter\n{\npublic:\nCNonParameter ()\n{\ncout<< “I am non-parameterized constructor”;\n}\n};\nint main()\n{\nCNonParameter NP;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include <conio.h>\nclass CNonParameter\n{\npublic:\nCNonParameter ()\n{\ncout<< “I am non-parameterized constructor”;\n}\n};\nint main()\n{\nCNonParameter NP;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "I am non-parameterized constructor",
+     "urdu": "I am non-parameterized constructor",
+     "pashto": "I am non-parameterized constructor",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In this example, the constructor CNonParameter() has no parameters and thus the object creation statement, CNonParameter NP;, passes no arguments.",
+     "urdu": "اس مثال میں کنسٹرکٹر CNonParameter() کے کوئی پیرامیٹرز نہیں اور اس لیے آبجیکٹ بنانے کا بیان CNonParameter NP; کوئی آرگیومنٹ پاس نہیں کرتا۔",
+     "pashto": "په دې بېلګه کې CNonParameter() جوړوونکی هېڅ پاراميټر نه لري او له دې امله د شي د جوړولو بیان CNonParameter NP; هېڅ دلیل نه لېږدوي."
+    },
+    {
+     "text": "iii. Constructor overloading",
+     "urdu": "iii. کنسٹرکٹر اوورلوڈنگ",
+     "pashto": "iii. د جوړوونکي ډېرول"
+    },
+    {
+     "text": "Using more than one constructors in the same class is called constructor overloading. Like any other function, a constructor can also be overloaded with more than one function that have the same name but different types or number of parameters. For an overloaded function, the compiler calls the function whose parameters match the arguments used in the function call. In the case of constructor overloading, that constructor is executed whose parameters match the arguments passed to the object declaration. Consider the following program.",
+     "urdu": "ایک ہی کلاس میں ایک سے زیادہ کنسٹرکٹرز استعمال کرنا کنسٹرکٹر اوورلوڈنگ کہلاتا ہے۔ کسی بھی دوسرے فنکشن کی طرح کنسٹرکٹر کو بھی ایک سے زیادہ ایسے فنکشنز کے ساتھ اوورلوڈ کیا جا سکتا ہے جن کا نام ایک لیکن پیرامیٹرز کی اقسام یا تعداد مختلف ہو۔ اوورلوڈ فنکشن کے لیے کمپائلر وہ فنکشن کال کرتا ہے جس کے پیرامیٹرز فنکشن کال میں استعمال ہونے والے آرگیومنٹس سے ملتے ہوں۔ کنسٹرکٹر اوورلوڈنگ کی صورت میں وہ کنسٹرکٹر چلتا ہے جس کے پیرامیٹرز آبجیکٹ ڈکلیریشن کو پاس کیے گئے آرگیومنٹس سے ملتے ہوں۔ درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "په یوه ټولګي کې له یوه ډېر جوړوونکي کارول د جوړوونکي ډېرول بلل کېږي. د هر بل فنکشن په څېر جوړوونکی هم له یوه ډېرو داسې فنکشنونو سره ډېرېدای شي چې نوم یې یو خو د پاراميټرونو ډولونه یا شمېر یې بېل وي. د ډېر شوي فنکشن لپاره کمپایلر هغه فنکشن غواړي چې پاراميټرونه یې د فنکشن په غوښتنه کې کارول شویو دلیلونو سره سمون ولري. د جوړوونکي د ډېرولو په حالت کې هغه جوړوونکی اجرا کېږي چې پاراميټرونه یې د شي اعلان ته لېږدول شویو دلیلونو سره سمون ولري. لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "// constructors overloading\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, length;\npublic:\nCRectangle()\n{\nwidth = 5;\nlength = 15;\n}\nCRectangle (int a, int b)\n{\nwidth = a;\nlength = b;\n}\nint area()\n{\nreturn (width*length);\n}\n};\nint main()\n{\nCRectangle r1 (5,14);\nCRectangle r2;\ncout << \"Area of first rectangle: \" << r1.area() << endl;\ncout << \"Area of second rectangle: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "// constructors overloading\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, length;\npublic:\nCRectangle()\n{\nwidth = 5;\nlength = 15;\n}\nCRectangle (int a, int b)\n{\nwidth = a;\nlength = b;\n}\nint area()\n{\nreturn (width*length);\n}\n};\nint main()\n{\nCRectangle r1 (5,14);\nCRectangle r2;\ncout << \"Area of first rectangle: \" << r1.area() << endl;\ncout << \"Area of second rectangle: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "// constructors overloading\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, length;\npublic:\nCRectangle()\n{\nwidth = 5;\nlength = 15;\n}\nCRectangle (int a, int b)\n{\nwidth = a;\nlength = b;\n}\nint area()\n{\nreturn (width*length);\n}\n};\nint main()\n{\nCRectangle r1 (5,14);\nCRectangle r2;\ncout << \"Area of first rectangle: \" << r1.area() << endl;\ncout << \"Area of second rectangle: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Area of first rectangle: 70\nArea of second rectangle: 75",
+     "urdu": "Area of first rectangle: 70\nArea of second rectangle: 75",
+     "pashto": "Area of first rectangle: 70\nArea of second rectangle: 75",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "Here, a constructor CExample with two parameters of type int has been declared that initializes private variables a and b. When the object declaration is done as follows:\n\nCExample CObj (5,10);\n\nThe following declaration is not correct, because, we have declared the class to have an explicit constructor (user-defined constructor) to which the values should be passed.\n\nCExample CObj;\n\nA user-defined constructor can be either parameterized or non-parameterized. A parameterized constructor is the one which accepts arguments while the object is declared and nonparameterized constructor is the one whose object declaration is done without specifying arguments. The program given above defines parameterized constructor. The following program explains non-parameterized constructor.\n\n#include <iostream.h>\n#include <conio.h>\nclass CNonParameter\n{\npublic:\nCNonParameter ()\n{\ncout<< “I am non-parameterized constructor”;\n}\n};\nint main()\n{\nCNonParameter NP;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nI am non-parameterized constructor\n\nIn this example, the constructor CNonParameter() has no parameters and thus the object creation statement, CNonParameter NP;, passes no arguments.\n\niii. Constructor overloading\n\nUsing more than one constructors in the same class is called constructor overloading. Like any other function, a constructor can also be overloaded with more than one function that have the same name but different types or number of parameters. For an overloaded function, the compiler calls the function whose parameters match the arguments used in the function call. In the case of constructor overloading, that constructor is executed whose parameters match the arguments passed to the object declaration. Consider the following program.\n\n// constructors overloading\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, length;\npublic:\nCRectangle()\n{\nwidth = 5;\nlength = 15;\n}\nCRectangle (int a, int b)\n{\nwidth = a;\nlength = b;\n}\nint area()\n{\nreturn (width*length);\n}\n};\nint main()\n{\nCRectangle r1 (5,14);\nCRectangle r2;\ncout << \"Area of first rectangle: \" << r1.area() << endl;\ncout << \"Area of second rectangle: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nArea of first rectangle: 70\nArea of second rectangle: 75",
+   "urdu": "یہاں int قسم کے دو پیرامیٹرز والا کنسٹرکٹر CExample ڈکلیئر کیا گیا ہے جو private ویری ایبلز a اور b کو ابتدائی قدر دیتا ہے۔ جب آبجیکٹ کی ڈکلیریشن یوں کی جائے:\n\nCExample CObj (5,10);\n\nدرج ذیل ڈکلیریشن درست نہیں، کیونکہ ہم نے کلاس کو واضح کنسٹرکٹر (یوزر ڈیفائنڈ کنسٹرکٹر) کے ساتھ ڈکلیئر کیا ہے جسے قدریں پاس کرنی چاہییں۔\n\nCExample CObj;\n\nیوزر ڈیفائنڈ کنسٹرکٹر پیرامیٹرائزڈ یا نان پیرامیٹرائزڈ ہو سکتا ہے۔ پیرامیٹرائزڈ کنسٹرکٹر وہ ہے جو آبجیکٹ ڈکلیئر ہوتے وقت آرگیومنٹس قبول کرتا ہے اور نان پیرامیٹرائزڈ کنسٹرکٹر وہ ہے جس کے آبجیکٹ کی ڈکلیریشن آرگیومنٹس کے بغیر ہوتی ہے۔ اوپر دیا گیا پروگرام پیرامیٹرائزڈ کنسٹرکٹر بیان کرتا ہے۔ درج ذیل پروگرام نان پیرامیٹرائزڈ کنسٹرکٹر واضح کرتا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nclass CNonParameter\n{\npublic:\nCNonParameter ()\n{\ncout<< “I am non-parameterized constructor”;\n}\n};\nint main()\n{\nCNonParameter NP;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nI am non-parameterized constructor\n\nاس مثال میں کنسٹرکٹر CNonParameter() کے کوئی پیرامیٹرز نہیں اور اس لیے آبجیکٹ بنانے کا بیان CNonParameter NP; کوئی آرگیومنٹ پاس نہیں کرتا۔\n\niii. کنسٹرکٹر اوورلوڈنگ\n\nایک ہی کلاس میں ایک سے زیادہ کنسٹرکٹرز استعمال کرنا کنسٹرکٹر اوورلوڈنگ کہلاتا ہے۔ کسی بھی دوسرے فنکشن کی طرح کنسٹرکٹر کو بھی ایک سے زیادہ ایسے فنکشنز کے ساتھ اوورلوڈ کیا جا سکتا ہے جن کا نام ایک لیکن پیرامیٹرز کی اقسام یا تعداد مختلف ہو۔ اوورلوڈ فنکشن کے لیے کمپائلر وہ فنکشن کال کرتا ہے جس کے پیرامیٹرز فنکشن کال میں استعمال ہونے والے آرگیومنٹس سے ملتے ہوں۔ کنسٹرکٹر اوورلوڈنگ کی صورت میں وہ کنسٹرکٹر چلتا ہے جس کے پیرامیٹرز آبجیکٹ ڈکلیریشن کو پاس کیے گئے آرگیومنٹس سے ملتے ہوں۔ درج ذیل پروگرام پر غور کریں۔\n\n// constructors overloading\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, length;\npublic:\nCRectangle()\n{\nwidth = 5;\nlength = 15;\n}\nCRectangle (int a, int b)\n{\nwidth = a;\nlength = b;\n}\nint area()\n{\nreturn (width*length);\n}\n};\nint main()\n{\nCRectangle r1 (5,14);\nCRectangle r2;\ncout << \"Area of first rectangle: \" << r1.area() << endl;\ncout << \"Area of second rectangle: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nArea of first rectangle: 70\nArea of second rectangle: 75",
+   "pashto": "دلته د int ډول دوه پاراميټرونو سره CExample جوړوونکی اعلان شوی چې private متغیرونو a او b ته لومړنی ارزښت ورکوي. کله چې د شي اعلان داسې وشي:\n\nCExample CObj (5,10);\n\nلاندې اعلان سم نه دی، ځکه موږ ټولګی د ښکاره جوړوونکي (د کاروونکي-تعریف شوي جوړوونکي) سره اعلان کړی چې باید ارزښتونه ورته ولېږدول شي.\n\nCExample CObj;\n\nد کاروونکي-تعریف شوی جوړوونکی کېدای شي پاراميټر لرونکی یا بې‌پاراميټره وي. پاراميټر لرونکی جوړوونکی هغه دی چې د شي د اعلان پر مهال دلیلونه مني او بې‌پاراميټره جوړوونکی هغه دی چې د شي اعلان یې پرته له دلیلونو کېږي. پورته ورکړل شوی پروګرام پاراميټر لرونکی جوړوونکی تعریفوي. لاندې پروګرام بې‌پاراميټره جوړوونکی تشریح کوي.\n\n#include <iostream.h>\n#include <conio.h>\nclass CNonParameter\n{\npublic:\nCNonParameter ()\n{\ncout<< “I am non-parameterized constructor”;\n}\n};\nint main()\n{\nCNonParameter NP;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nI am non-parameterized constructor\n\nپه دې بېلګه کې CNonParameter() جوړوونکی هېڅ پاراميټر نه لري او له دې امله د شي د جوړولو بیان CNonParameter NP; هېڅ دلیل نه لېږدوي.\n\niii. د جوړوونکي ډېرول\n\nپه یوه ټولګي کې له یوه ډېر جوړوونکي کارول د جوړوونکي ډېرول بلل کېږي. د هر بل فنکشن په څېر جوړوونکی هم له یوه ډېرو داسې فنکشنونو سره ډېرېدای شي چې نوم یې یو خو د پاراميټرونو ډولونه یا شمېر یې بېل وي. د ډېر شوي فنکشن لپاره کمپایلر هغه فنکشن غواړي چې پاراميټرونه یې د فنکشن په غوښتنه کې کارول شویو دلیلونو سره سمون ولري. د جوړوونکي د ډېرولو په حالت کې هغه جوړوونکی اجرا کېږي چې پاراميټرونه یې د شي اعلان ته لېږدول شویو دلیلونو سره سمون ولري. لاندې پروګرام ته پام وکړئ.\n\n// constructors overloading\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, length;\npublic:\nCRectangle()\n{\nwidth = 5;\nlength = 15;\n}\nCRectangle (int a, int b)\n{\nwidth = a;\nlength = b;\n}\nint area()\n{\nreturn (width*length);\n}\n};\nint main()\n{\nCRectangle r1 (5,14);\nCRectangle r2;\ncout << \"Area of first rectangle: \" << r1.area() << endl;\ncout << \"Area of second rectangle: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nArea of first rectangle: 70\nArea of second rectangle: 75",
+   "theoryUrdu": "یہاں int قسم کے دو پیرامیٹرز والا کنسٹرکٹر CExample ڈکلیئر کیا گیا ہے جو private ویری ایبلز a اور b کو ابتدائی قدر دیتا ہے۔ جب آبجیکٹ کی ڈکلیریشن یوں کی جائے:\n\nCExample CObj (5,10);\n\nدرج ذیل ڈکلیریشن درست نہیں، کیونکہ ہم نے کلاس کو واضح کنسٹرکٹر (یوزر ڈیفائنڈ کنسٹرکٹر) کے ساتھ ڈکلیئر کیا ہے جسے قدریں پاس کرنی چاہییں۔\n\nCExample CObj;\n\nیوزر ڈیفائنڈ کنسٹرکٹر پیرامیٹرائزڈ یا نان پیرامیٹرائزڈ ہو سکتا ہے۔ پیرامیٹرائزڈ کنسٹرکٹر وہ ہے جو آبجیکٹ ڈکلیئر ہوتے وقت آرگیومنٹس قبول کرتا ہے اور نان پیرامیٹرائزڈ کنسٹرکٹر وہ ہے جس کے آبجیکٹ کی ڈکلیریشن آرگیومنٹس کے بغیر ہوتی ہے۔ اوپر دیا گیا پروگرام پیرامیٹرائزڈ کنسٹرکٹر بیان کرتا ہے۔ درج ذیل پروگرام نان پیرامیٹرائزڈ کنسٹرکٹر واضح کرتا ہے۔\n\n#include <iostream.h>\n#include <conio.h>\nclass CNonParameter\n{\npublic:\nCNonParameter ()\n{\ncout<< “I am non-parameterized constructor”;\n}\n};\nint main()\n{\nCNonParameter NP;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nI am non-parameterized constructor\n\nاس مثال میں کنسٹرکٹر CNonParameter() کے کوئی پیرامیٹرز نہیں اور اس لیے آبجیکٹ بنانے کا بیان CNonParameter NP; کوئی آرگیومنٹ پاس نہیں کرتا۔\n\niii. کنسٹرکٹر اوورلوڈنگ\n\nایک ہی کلاس میں ایک سے زیادہ کنسٹرکٹرز استعمال کرنا کنسٹرکٹر اوورلوڈنگ کہلاتا ہے۔ کسی بھی دوسرے فنکشن کی طرح کنسٹرکٹر کو بھی ایک سے زیادہ ایسے فنکشنز کے ساتھ اوورلوڈ کیا جا سکتا ہے جن کا نام ایک لیکن پیرامیٹرز کی اقسام یا تعداد مختلف ہو۔ اوورلوڈ فنکشن کے لیے کمپائلر وہ فنکشن کال کرتا ہے جس کے پیرامیٹرز فنکشن کال میں استعمال ہونے والے آرگیومنٹس سے ملتے ہوں۔ کنسٹرکٹر اوورلوڈنگ کی صورت میں وہ کنسٹرکٹر چلتا ہے جس کے پیرامیٹرز آبجیکٹ ڈکلیریشن کو پاس کیے گئے آرگیومنٹس سے ملتے ہوں۔ درج ذیل پروگرام پر غور کریں۔\n\n// constructors overloading\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, length;\npublic:\nCRectangle()\n{\nwidth = 5;\nlength = 15;\n}\nCRectangle (int a, int b)\n{\nwidth = a;\nlength = b;\n}\nint area()\n{\nreturn (width*length);\n}\n};\nint main()\n{\nCRectangle r1 (5,14);\nCRectangle r2;\ncout << \"Area of first rectangle: \" << r1.area() << endl;\ncout << \"Area of second rectangle: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nArea of first rectangle: 70\nArea of second rectangle: 75",
+   "theoryPashto": "دلته د int ډول دوه پاراميټرونو سره CExample جوړوونکی اعلان شوی چې private متغیرونو a او b ته لومړنی ارزښت ورکوي. کله چې د شي اعلان داسې وشي:\n\nCExample CObj (5,10);\n\nلاندې اعلان سم نه دی، ځکه موږ ټولګی د ښکاره جوړوونکي (د کاروونکي-تعریف شوي جوړوونکي) سره اعلان کړی چې باید ارزښتونه ورته ولېږدول شي.\n\nCExample CObj;\n\nد کاروونکي-تعریف شوی جوړوونکی کېدای شي پاراميټر لرونکی یا بې‌پاراميټره وي. پاراميټر لرونکی جوړوونکی هغه دی چې د شي د اعلان پر مهال دلیلونه مني او بې‌پاراميټره جوړوونکی هغه دی چې د شي اعلان یې پرته له دلیلونو کېږي. پورته ورکړل شوی پروګرام پاراميټر لرونکی جوړوونکی تعریفوي. لاندې پروګرام بې‌پاراميټره جوړوونکی تشریح کوي.\n\n#include <iostream.h>\n#include <conio.h>\nclass CNonParameter\n{\npublic:\nCNonParameter ()\n{\ncout<< “I am non-parameterized constructor”;\n}\n};\nint main()\n{\nCNonParameter NP;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nI am non-parameterized constructor\n\nپه دې بېلګه کې CNonParameter() جوړوونکی هېڅ پاراميټر نه لري او له دې امله د شي د جوړولو بیان CNonParameter NP; هېڅ دلیل نه لېږدوي.\n\niii. د جوړوونکي ډېرول\n\nپه یوه ټولګي کې له یوه ډېر جوړوونکي کارول د جوړوونکي ډېرول بلل کېږي. د هر بل فنکشن په څېر جوړوونکی هم له یوه ډېرو داسې فنکشنونو سره ډېرېدای شي چې نوم یې یو خو د پاراميټرونو ډولونه یا شمېر یې بېل وي. د ډېر شوي فنکشن لپاره کمپایلر هغه فنکشن غواړي چې پاراميټرونه یې د فنکشن په غوښتنه کې کارول شویو دلیلونو سره سمون ولري. د جوړوونکي د ډېرولو په حالت کې هغه جوړوونکی اجرا کېږي چې پاراميټرونه یې د شي اعلان ته لېږدول شویو دلیلونو سره سمون ولري. لاندې پروګرام ته پام وکړئ.\n\n// constructors overloading\n#include <iostream.h>\n#include <conio.h>\nclass CRectangle\n{\nint width, length;\npublic:\nCRectangle()\n{\nwidth = 5;\nlength = 15;\n}\nCRectangle (int a, int b)\n{\nwidth = a;\nlength = b;\n}\nint area()\n{\nreturn (width*length);\n}\n};\nint main()\n{\nCRectangle r1 (5,14);\nCRectangle r2;\ncout << \"Area of first rectangle: \" << r1.area() << endl;\ncout << \"Area of second rectangle: \" << r2.area() << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nArea of first rectangle: 70\nArea of second rectangle: 75",
+   "content": "<p>Here, a constructor CExample with two parameters of type int has been declared that initializes private variables a and b. When the object declaration is done as follows:</p><p>CExample CObj (5,10);</p><p>The following declaration is not correct, because, we have declared the class to have an explicit constructor (user-defined constructor) to which the values should be passed.</p><p>CExample CObj;</p><p>A user-defined constructor can be either parameterized or non-parameterized. A parameterized constructor is the one which accepts arguments while the object is declared and nonparameterized constructor is the one whose object declaration is done without specifying arguments. The program given above defines parameterized constructor. The following program explains non-parameterized constructor.</p><p>#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nclass CNonParameter\n{\npublic:\nCNonParameter ()\n{\ncout&lt;&lt; “I am non-parameterized constructor”;\n}\n};\nint main()\n{\nCNonParameter NP;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>I am non-parameterized constructor</p><p>In this example, the constructor CNonParameter() has no parameters and thus the object creation statement, CNonParameter NP;, passes no arguments.</p><p>iii. Constructor overloading</p><p>Using more than one constructors in the same class is called constructor overloading. Like any other function, a constructor can also be overloaded with more than one function that have the same name but different types or number of parameters. For an overloaded function, the compiler calls the function whose parameters match the arguments used in the function call. In the case of constructor overloading, that constructor is executed whose parameters match the arguments passed to the object declaration. Consider the following program.</p><p>// constructors overloading\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nclass CRectangle\n{\nint width, length;\npublic:\nCRectangle()\n{\nwidth = 5;\nlength = 15;\n}\nCRectangle (int a, int b)\n{\nwidth = a;\nlength = b;\n}\nint area()\n{\nreturn (width*length);\n}\n};\nint main()\n{\nCRectangle r1 (5,14);\nCRectangle r2;\ncout &lt;&lt; &quot;Area of first rectangle: &quot; &lt;&lt; r1.area() &lt;&lt; endl;\ncout &lt;&lt; &quot;Area of second rectangle: &quot; &lt;&lt; r2.area() &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Area of first rectangle: 70\nArea of second rectangle: 75</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      13
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 128,
+     "printedPages": [
+      244,
+      245,
+      246
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 8 text (9)",
+   "sourcePageLabel": "PDF 128 · p. 244–245–246",
+   "sourceNote": "The top of p.244 (end of the CExample program and its output) is recorded with PDF127. The overloading program runs from p.245 to p.246 (PDF129) and is given whole with its output.",
+   "unit": 8
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf128",
+   "unit": 8,
+   "printedPage": 244,
+   "description": "p.244 says CExample “initializes private variables a and b” though they are declared public; the example declaration uses CObj (5,10) while the program uses (50,10); p.245 “more than one constructors”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

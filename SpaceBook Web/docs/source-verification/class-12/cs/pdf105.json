@@ -1,0 +1,168 @@
+{
+ "pdfPage": 105,
+ "sections": [
+  {
+   "id": "cs12-u6-text-12",
+   "title": "Unit 6 text (12)",
+   "headingUrdu": "یونٹ 6 — متن (12)",
+   "headingPashto": "۶ څپرکی — متن (12)",
+   "paras": [
+    {
+     "text": "Consider another example that uses a function addition that gets arguments by values.",
+     "urdu": "ایک اور مثال پر غور کریں جو فنکشن addition استعمال کرتی ہے جو قدر کے ذریعے آرگیومنٹس لیتا ہے۔",
+     "pashto": "بلې بېلګې ته پام وکړئ چې addition فنکشن کاروي چې د ارزښت له لارې دلیلونه اخلي."
+    },
+    {
+     "text": "// passing parameters by value\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint result;\nresult=a+b;\nreturn (result);\n}\nint main()\n{\nint z, x=5, y=3;\nz = addition (x, y); //arguments passed by value\ncout << \"The sum of both the values is =\" << z;\ngetch();\nreturn 0;\n}",
+     "urdu": "// passing parameters by value\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint result;\nresult=a+b;\nreturn (result);\n}\nint main()\n{\nint z, x=5, y=3;\nz = addition (x, y); //arguments passed by value\ncout << \"The sum of both the values is =\" << z;\ngetch();\nreturn 0;\n}",
+     "pashto": "// passing parameters by value\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint result;\nresult=a+b;\nreturn (result);\n}\nint main()\n{\nint z, x=5, y=3;\nz = addition (x, y); //arguments passed by value\ncout << \"The sum of both the values is =\" << z;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "The sum of both the values is =8",
+     "urdu": "The sum of both the values is =8",
+     "pashto": "The sum of both the values is =8",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "c. Passing arguments by reference",
+     "urdu": "c. حوالے کے ذریعے آرگیومنٹس پاس کرنا",
+     "pashto": "c. د حوالې له لارې د دلیلونو لېږدول"
+    },
+    {
+     "text": "In pass by reference, the reference to the function parameters are passed as arguments rather than value of variables. Using pass by reference, the value of arguments can be changed within the function.",
+     "urdu": "حوالے کے ذریعے پاس کرنے میں ویری ایبلز کی قدر کے بجائے فنکشن پیرامیٹرز کا حوالہ آرگیومنٹس کے طور پر پاس کیا جاتا ہے۔ حوالے کے ذریعے پاس کرنے سے آرگیومنٹس کی قدر فنکشن کے اندر تبدیل کی جا سکتی ہے۔",
+     "pashto": "د حوالې له لارې لېږدولو کې د متغیرونو د ارزښت پر ځای د فنکشن پاراميټرونو ته حواله د دلیلونو په توګه لېږدول کېږي. د حوالې له لارې لېږدولو سره د دلیلونو ارزښت د فنکشن دننه بدلېدای شي."
+    },
+    {
+     "text": "In passing arguments by reference, the formal parameters should precede by the ampersand sign &. Consider the following example.",
+     "urdu": "حوالے کے ذریعے آرگیومنٹس پاس کرنے میں رسمی پیرامیٹرز سے پہلے ایمپرسینڈ نشان & ہونا چاہیے۔ درج ذیل مثال پر غور کریں۔",
+     "pashto": "د حوالې له لارې د دلیلونو په لېږدولو کې رسمي پاراميټرونو ته باید د امپرسنډ نښه & مخکې وي. لاندې بېلګې ته پام وکړئ."
+    },
+    {
+     "text": "#include<iostream.h>\n#include<conio.h>\nvoid AddOne(int &y)\n{\ny++; // changing values in function\n}\nint main()\n{\nint x = 55;\ncout<<\"x in main() before call= \" << x << endl;\nAddOne(x); //passing arguments by reference\ncout<<\"x in main() after call = \" << x << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include<iostream.h>\n#include<conio.h>\nvoid AddOne(int &y)\n{\ny++; // changing values in function\n}\nint main()\n{\nint x = 55;\ncout<<\"x in main() before call= \" << x << endl;\nAddOne(x); //passing arguments by reference\ncout<<\"x in main() after call = \" << x << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include<iostream.h>\n#include<conio.h>\nvoid AddOne(int &y)\n{\ny++; // changing values in function\n}\nint main()\n{\nint x = 55;\ncout<<\"x in main() before call= \" << x << endl;\nAddOne(x); //passing arguments by reference\ncout<<\"x in main() after call = \" << x << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "x in main() before call= 55\nx in main() after call = 56",
+     "urdu": "x in main() before call= 55\nx in main() after call = 56",
+     "pashto": "x in main() before call= 55\nx in main() after call = 56",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In the above example, the value of x is passed by reference and changed inside the function AddOne(). This change affects the values of x in main() because the formal argument &y in the function declarator is a reference to x and any change to y results in change in x.",
+     "urdu": "اوپر کی مثال میں x کی قدر حوالے کے ذریعے پاس کی گئی ہے اور فنکشن AddOne() کے اندر تبدیل کی گئی ہے۔ یہ تبدیلی main() میں x کی قدروں کو متاثر کرتی ہے کیونکہ فنکشن ڈکلیریٹر میں رسمی آرگیومنٹ &y، x کا حوالہ ہے اور y میں کوئی بھی تبدیلی x میں تبدیلی کا باعث بنتی ہے۔",
+     "pashto": "په پورته بېلګه کې د x ارزښت د حوالې له لارې لېږدول شوی او د AddOne() فنکشن دننه بدل شوی. دا بدلون په main() کې د x ارزښتونه اغېزمنوي ځکه د فنکشن په اعلانوونکي کې رسمي دلیل &y د x حواله ده او په y کې هر بدلون په x کې بدلون راولي."
+    }
+   ],
+   "theory": "Consider another example that uses a function addition that gets arguments by values.\n\n// passing parameters by value\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint result;\nresult=a+b;\nreturn (result);\n}\nint main()\n{\nint z, x=5, y=3;\nz = addition (x, y); //arguments passed by value\ncout << \"The sum of both the values is =\" << z;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nThe sum of both the values is =8\n\nc. Passing arguments by reference\n\nIn pass by reference, the reference to the function parameters are passed as arguments rather than value of variables. Using pass by reference, the value of arguments can be changed within the function.\n\nIn passing arguments by reference, the formal parameters should precede by the ampersand sign &. Consider the following example.\n\n#include<iostream.h>\n#include<conio.h>\nvoid AddOne(int &y)\n{\ny++; // changing values in function\n}\nint main()\n{\nint x = 55;\ncout<<\"x in main() before call= \" << x << endl;\nAddOne(x); //passing arguments by reference\ncout<<\"x in main() after call = \" << x << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nx in main() before call= 55\nx in main() after call = 56\n\nIn the above example, the value of x is passed by reference and changed inside the function AddOne(). This change affects the values of x in main() because the formal argument &y in the function declarator is a reference to x and any change to y results in change in x.",
+   "urdu": "ایک اور مثال پر غور کریں جو فنکشن addition استعمال کرتی ہے جو قدر کے ذریعے آرگیومنٹس لیتا ہے۔\n\n// passing parameters by value\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint result;\nresult=a+b;\nreturn (result);\n}\nint main()\n{\nint z, x=5, y=3;\nz = addition (x, y); //arguments passed by value\ncout << \"The sum of both the values is =\" << z;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe sum of both the values is =8\n\nc. حوالے کے ذریعے آرگیومنٹس پاس کرنا\n\nحوالے کے ذریعے پاس کرنے میں ویری ایبلز کی قدر کے بجائے فنکشن پیرامیٹرز کا حوالہ آرگیومنٹس کے طور پر پاس کیا جاتا ہے۔ حوالے کے ذریعے پاس کرنے سے آرگیومنٹس کی قدر فنکشن کے اندر تبدیل کی جا سکتی ہے۔\n\nحوالے کے ذریعے آرگیومنٹس پاس کرنے میں رسمی پیرامیٹرز سے پہلے ایمپرسینڈ نشان & ہونا چاہیے۔ درج ذیل مثال پر غور کریں۔\n\n#include<iostream.h>\n#include<conio.h>\nvoid AddOne(int &y)\n{\ny++; // changing values in function\n}\nint main()\n{\nint x = 55;\ncout<<\"x in main() before call= \" << x << endl;\nAddOne(x); //passing arguments by reference\ncout<<\"x in main() after call = \" << x << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nx in main() before call= 55\nx in main() after call = 56\n\nاوپر کی مثال میں x کی قدر حوالے کے ذریعے پاس کی گئی ہے اور فنکشن AddOne() کے اندر تبدیل کی گئی ہے۔ یہ تبدیلی main() میں x کی قدروں کو متاثر کرتی ہے کیونکہ فنکشن ڈکلیریٹر میں رسمی آرگیومنٹ &y، x کا حوالہ ہے اور y میں کوئی بھی تبدیلی x میں تبدیلی کا باعث بنتی ہے۔",
+   "pashto": "بلې بېلګې ته پام وکړئ چې addition فنکشن کاروي چې د ارزښت له لارې دلیلونه اخلي.\n\n// passing parameters by value\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint result;\nresult=a+b;\nreturn (result);\n}\nint main()\n{\nint z, x=5, y=3;\nz = addition (x, y); //arguments passed by value\ncout << \"The sum of both the values is =\" << z;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe sum of both the values is =8\n\nc. د حوالې له لارې د دلیلونو لېږدول\n\nد حوالې له لارې لېږدولو کې د متغیرونو د ارزښت پر ځای د فنکشن پاراميټرونو ته حواله د دلیلونو په توګه لېږدول کېږي. د حوالې له لارې لېږدولو سره د دلیلونو ارزښت د فنکشن دننه بدلېدای شي.\n\nد حوالې له لارې د دلیلونو په لېږدولو کې رسمي پاراميټرونو ته باید د امپرسنډ نښه & مخکې وي. لاندې بېلګې ته پام وکړئ.\n\n#include<iostream.h>\n#include<conio.h>\nvoid AddOne(int &y)\n{\ny++; // changing values in function\n}\nint main()\n{\nint x = 55;\ncout<<\"x in main() before call= \" << x << endl;\nAddOne(x); //passing arguments by reference\ncout<<\"x in main() after call = \" << x << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nx in main() before call= 55\nx in main() after call = 56\n\nپه پورته بېلګه کې د x ارزښت د حوالې له لارې لېږدول شوی او د AddOne() فنکشن دننه بدل شوی. دا بدلون په main() کې د x ارزښتونه اغېزمنوي ځکه د فنکشن په اعلانوونکي کې رسمي دلیل &y د x حواله ده او په y کې هر بدلون په x کې بدلون راولي.",
+   "theoryUrdu": "ایک اور مثال پر غور کریں جو فنکشن addition استعمال کرتی ہے جو قدر کے ذریعے آرگیومنٹس لیتا ہے۔\n\n// passing parameters by value\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint result;\nresult=a+b;\nreturn (result);\n}\nint main()\n{\nint z, x=5, y=3;\nz = addition (x, y); //arguments passed by value\ncout << \"The sum of both the values is =\" << z;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nThe sum of both the values is =8\n\nc. حوالے کے ذریعے آرگیومنٹس پاس کرنا\n\nحوالے کے ذریعے پاس کرنے میں ویری ایبلز کی قدر کے بجائے فنکشن پیرامیٹرز کا حوالہ آرگیومنٹس کے طور پر پاس کیا جاتا ہے۔ حوالے کے ذریعے پاس کرنے سے آرگیومنٹس کی قدر فنکشن کے اندر تبدیل کی جا سکتی ہے۔\n\nحوالے کے ذریعے آرگیومنٹس پاس کرنے میں رسمی پیرامیٹرز سے پہلے ایمپرسینڈ نشان & ہونا چاہیے۔ درج ذیل مثال پر غور کریں۔\n\n#include<iostream.h>\n#include<conio.h>\nvoid AddOne(int &y)\n{\ny++; // changing values in function\n}\nint main()\n{\nint x = 55;\ncout<<\"x in main() before call= \" << x << endl;\nAddOne(x); //passing arguments by reference\ncout<<\"x in main() after call = \" << x << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nx in main() before call= 55\nx in main() after call = 56\n\nاوپر کی مثال میں x کی قدر حوالے کے ذریعے پاس کی گئی ہے اور فنکشن AddOne() کے اندر تبدیل کی گئی ہے۔ یہ تبدیلی main() میں x کی قدروں کو متاثر کرتی ہے کیونکہ فنکشن ڈکلیریٹر میں رسمی آرگیومنٹ &y، x کا حوالہ ہے اور y میں کوئی بھی تبدیلی x میں تبدیلی کا باعث بنتی ہے۔",
+   "theoryPashto": "بلې بېلګې ته پام وکړئ چې addition فنکشن کاروي چې د ارزښت له لارې دلیلونه اخلي.\n\n// passing parameters by value\n#include <iostream.h>\n#include <conio.h>\nint addition (int a, int b)\n{\nint result;\nresult=a+b;\nreturn (result);\n}\nint main()\n{\nint z, x=5, y=3;\nz = addition (x, y); //arguments passed by value\ncout << \"The sum of both the values is =\" << z;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nThe sum of both the values is =8\n\nc. د حوالې له لارې د دلیلونو لېږدول\n\nد حوالې له لارې لېږدولو کې د متغیرونو د ارزښت پر ځای د فنکشن پاراميټرونو ته حواله د دلیلونو په توګه لېږدول کېږي. د حوالې له لارې لېږدولو سره د دلیلونو ارزښت د فنکشن دننه بدلېدای شي.\n\nد حوالې له لارې د دلیلونو په لېږدولو کې رسمي پاراميټرونو ته باید د امپرسنډ نښه & مخکې وي. لاندې بېلګې ته پام وکړئ.\n\n#include<iostream.h>\n#include<conio.h>\nvoid AddOne(int &y)\n{\ny++; // changing values in function\n}\nint main()\n{\nint x = 55;\ncout<<\"x in main() before call= \" << x << endl;\nAddOne(x); //passing arguments by reference\ncout<<\"x in main() after call = \" << x << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nx in main() before call= 55\nx in main() after call = 56\n\nپه پورته بېلګه کې د x ارزښت د حوالې له لارې لېږدول شوی او د AddOne() فنکشن دننه بدل شوی. دا بدلون په main() کې د x ارزښتونه اغېزمنوي ځکه د فنکشن په اعلانوونکي کې رسمي دلیل &y د x حواله ده او په y کې هر بدلون په x کې بدلون راولي.",
+   "content": "<p>Consider another example that uses a function addition that gets arguments by values.</p><p>// passing parameters by value\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint addition (int a, int b)\n{\nint result;\nresult=a+b;\nreturn (result);\n}\nint main()\n{\nint z, x=5, y=3;\nz = addition (x, y); //arguments passed by value\ncout &lt;&lt; &quot;The sum of both the values is =&quot; &lt;&lt; z;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>The sum of both the values is =8</p><p>c. Passing arguments by reference</p><p>In pass by reference, the reference to the function parameters are passed as arguments rather than value of variables. Using pass by reference, the value of arguments can be changed within the function.</p><p>In passing arguments by reference, the formal parameters should precede by the ampersand sign &amp;. Consider the following example.</p><p>#include&lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nvoid AddOne(int &amp;y)\n{\ny++; // changing values in function\n}\nint main()\n{\nint x = 55;\ncout&lt;&lt;&quot;x in main() before call= &quot; &lt;&lt; x &lt;&lt; endl;\nAddOne(x); //passing arguments by reference\ncout&lt;&lt;&quot;x in main() after call = &quot; &lt;&lt; x &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>x in main() before call= 55\nx in main() after call = 56</p><p>In the above example, the value of x is passed by reference and changed inside the function AddOne(). This change affects the values of x in main() because the formal argument &amp;y in the function declarator is a reference to x and any change to y results in change in x.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 105,
+     "printedPages": [
+      198,
+      199
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (12)",
+   "sourcePageLabel": "PDF 105 · p. 198–199",
+   "unit": 6
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

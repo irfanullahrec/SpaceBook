@@ -1,0 +1,457 @@
+{
+ "pdfPage": 44,
+ "sections": [
+  {
+   "id": "cs12-u3-text-10",
+   "title": "Unit 3 text (10)",
+   "headingUrdu": "یونٹ 3 — متن (۱۰)",
+   "headingPashto": "۳ څپرکی — متن (۱۰)",
+   "paras": [
+    {
+     "text": "A summary of the basic fundamental data types in C++, as well as the range of values that can be represented with each one is given in Table 3.2.",
+     "urdu": "C++ میں بنیادی ڈیٹا ٹائپس کا خلاصہ اور ہر ایک سے ظاہر کی جا سکنے والی قدروں کی حد جدول 3.2 میں دی گئی ہے۔",
+     "pashto": "په C++ کې د بنسټیزو ډېټا ډولونو لنډیز او د هر یوه په مرسته د ښودل کېدونکو ارزښتونو حد په ۳.۲ جدول کې ورکړل شوی."
+    },
+    {
+     "text": "Table 3.2: C++ Data Types",
+     "urdu": "جدول 3.2: C++ ڈیٹا ٹائپس",
+     "pashto": "۳.۲ جدول: د C++ ډېټا ډولونه"
+    },
+    {
+     "text": "3.2.5 Constant qualifier",
+     "urdu": "3.2.5 کانسٹنٹ کوالیفائر",
+     "pashto": "۳.۲.۵ ثابت توصیف‌کوونکی"
+    },
+    {
+     "text": "const keyword is used to define constant identifier whose values remain constant during the whole life of the program. Const identifier must be assigned with a value when declared, and then that value cannot be changed. Here is the segment of code used to define constant using const identifier keyword.",
+     "urdu": "const کی ورڈ ایسے کانسٹنٹ شناخت کنندہ کی تعریف کے لیے استعمال ہوتا ہے جس کی قدر پروگرام کی پوری زندگی میں مستقل رہتی ہے۔ const شناخت کنندہ کو اعلان کے وقت قدر دینا لازمی ہے اور پھر وہ قدر تبدیل نہیں کی جا سکتی۔ const کی ورڈ کے ذریعے کانسٹنٹ کی تعریف کے لیے کوڈ کا حصہ یہ ہے۔",
+     "pashto": "د const کلیدي کلمه د داسې ثابت پېژندونکي د تعریف لپاره کارول کېږي چې ارزښت یې د پروګرام په ټول ژوند کې ثابت پاتې کېږي. const پېژندونکي ته باید د اعلان پر وخت ارزښت ورکړل شي، او بیا هغه ارزښت نه شي بدلېدای. د const کلیدي کلمې په مرسته د ثابت د تعریف لپاره د کوډ برخه دا ده."
+    },
+    {
+     "text": "const int DollarRate = 86;",
+     "urdu": "const int DollarRate = 86;",
+     "pashto": "const int DollarRate = 86;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Declaring a variable as const prevents the programmers from unintentionally changing its value. Consider the following lines of code to change the value of variable DollarRate.",
+     "urdu": "کسی ویری ایبل کو const کے طور پر ڈکلیئر کرنا پروگرامرز کو غیر ارادی طور پر اس کی قدر بدلنے سے روکتا ہے۔ ویری ایبل DollarRate کی قدر بدلنے کے لیے کوڈ کی درج ذیل لائنوں پر غور کریں۔",
+     "pashto": "د یوه متغیر د const په توګه اعلانول پروګرام جوړوونکي له ناارادي بدلون څخه منع کوي. د DollarRate متغیر د ارزښت د بدلولو لپاره د کوډ لاندې کرښو ته پام وکړئ."
+    },
+    {
+     "text": "const int DollarRate = 86;\nDollarRate = 123; // compiler error!",
+     "urdu": "const int DollarRate = 86;\nDollarRate = 123; // compiler error!",
+     "pashto": "const int DollarRate = 86;\nDollarRate = 123; // compiler error!",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "A compiler error message will be displayed by the compiler because the code at line 2 tries to change the value of the variable DollarRate from 86 to 123, which is declared as constant. It is an alternative to #define preprocessor directive which is used for defining constants in a program.",
+     "urdu": "کمپائلر غلطی کا پیغام دکھائے گا کیونکہ لائن 2 کا کوڈ ویری ایبل DollarRate کی قدر 86 سے 123 کرنے کی کوشش کرتا ہے جسے کانسٹنٹ کے طور پر ڈکلیئر کیا گیا ہے۔ یہ #define پری پروسیسر ڈائریکٹو کا متبادل ہے جو پروگرام میں کانسٹنٹس کی تعریف کے لیے استعمال ہوتا ہے۔",
+     "pashto": "کمپایلر به د تېروتنې پیغام ښکاره کړي، ځکه چې په ۲مه کرښه کې کوډ هڅه کوي د DollarRate متغیر ارزښت له 86 څخه 123 ته بدل کړي، چې د ثابت په توګه اعلان شوی. دا د #define د مخکې پروسس لارښوونې بدیل دی چې په پروګرام کې د ثابتونو د تعریف لپاره کارول کېږي."
+    },
+    {
+     "text": "3.2.6 Type casting operator",
+     "urdu": "3.2.6 ٹائپ کاسٹنگ آپریٹر",
+     "pashto": "۳.۲.۶ د ډول بدلولو چلونکی"
+    },
+    {
+     "text": "The conversion of data from one type to another is called type casting. It has two types.",
+     "urdu": "ڈیٹا کو ایک قسم سے دوسری قسم میں تبدیل کرنا ٹائپ کاسٹنگ کہلاتا ہے۔ اس کی دو اقسام ہیں۔",
+     "pashto": "له یوه ډوله بل ډول ته د ډېټا اړول د ډول بدلول (type casting) بلل کېږي. دوه ډوله لري."
+    },
+    {
+     "text": "Implicit type casting",
+     "urdu": "ضمنی ٹائپ کاسٹنگ",
+     "pashto": "ضمني ډول بدلول"
+    },
+    {
+     "text": "Explicit type casting",
+     "urdu": "صریح ٹائپ کاسٹنگ",
+     "pashto": "څرګند ډول بدلول"
+    },
+    {
+     "text": "In Implicit type casting, the compiler automatically converts data from one type to another when they are used in expressions. When a value of one type is assigned to another type, the compiler implicitly converts that value into the value of the new type. For example:",
+     "urdu": "ضمنی ٹائپ کاسٹنگ میں کمپائلر ایکسپریشنز میں استعمال ہونے پر ڈیٹا کو خود بخود ایک قسم سے دوسری قسم میں تبدیل کر دیتا ہے۔ جب ایک قسم کی قدر دوسری قسم کو تفویض کی جاتی ہے تو کمپائلر ضمنی طور پر اس قدر کو نئی قسم کی قدر میں تبدیل کر دیتا ہے۔ مثلاً:",
+     "pashto": "په ضمني ډول بدلولو کې کمپایلر ډېټا په افادو کې د کارونې پر وخت په اتوماتیک ډول له یوه ډوله بل ته اړوي. کله چې د یوه ډول ارزښت بل ډول ته وسپارل شي، کمپایلر هغه ارزښت په ضمني ډول د نوي ډول ارزښت ته اړوي. د بېلګې په توګه:"
+    },
+    {
+     "text": "double a= 3; // implicit casting to double value 3.0\nint b= 3.14156; // implicit casting to integer value 3",
+     "urdu": "double a= 3; // implicit casting to double value 3.0\nint b= 3.14156; // implicit casting to integer value 3",
+     "pashto": "double a= 3; // implicit casting to double value 3.0\nint b= 3.14156; // implicit casting to integer value 3",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In C++, there are several ways to convert one type to another but the simplest one is to precede the expression to be converted by the new type enclosed in parentheses ( ). Such type of conversion is called explicit type casting.",
+     "urdu": "C++ میں ایک قسم کو دوسری میں تبدیل کرنے کے کئی طریقے ہیں لیکن سب سے آسان یہ ہے کہ تبدیل کیے جانے والے ایکسپریشن سے پہلے قوسین ( ) میں نئی قسم لکھی جائے۔ اس قسم کی تبدیلی صریح ٹائپ کاسٹنگ کہلاتی ہے۔",
+     "pashto": "په C++ کې له یوه ډوله بل ته د اړولو څو لارې شته، خو تر ټولو ساده یې دا ده چې د اړول کېدونکې افادې مخې ته نوی ډول په قوسونو ( ) کې ولیکل شي. دا ډول اړونه څرګند ډول بدلول بلل کېږي."
+    },
+    {
+     "text": "Consider the following segment of code:",
+     "urdu": "کوڈ کے درج ذیل حصے پر غور کریں:",
+     "pashto": "د کوډ لاندې برخې ته پام وکړئ:"
+    }
+   ],
+   "theory": "A summary of the basic fundamental data types in C++, as well as the range of values that can be represented with each one is given in Table 3.2.\n\nTable 3.2: C++ Data Types\n\n3.2.5 Constant qualifier\n\nconst keyword is used to define constant identifier whose values remain constant during the whole life of the program. Const identifier must be assigned with a value when declared, and then that value cannot be changed. Here is the segment of code used to define constant using const identifier keyword.\n\nconst int DollarRate = 86;\n\nDeclaring a variable as const prevents the programmers from unintentionally changing its value. Consider the following lines of code to change the value of variable DollarRate.\n\nconst int DollarRate = 86;\nDollarRate = 123; // compiler error!\n\nA compiler error message will be displayed by the compiler because the code at line 2 tries to change the value of the variable DollarRate from 86 to 123, which is declared as constant. It is an alternative to #define preprocessor directive which is used for defining constants in a program.\n\n3.2.6 Type casting operator\n\nThe conversion of data from one type to another is called type casting. It has two types.\n\nImplicit type casting\n\nExplicit type casting\n\nIn Implicit type casting, the compiler automatically converts data from one type to another when they are used in expressions. When a value of one type is assigned to another type, the compiler implicitly converts that value into the value of the new type. For example:\n\ndouble a= 3; // implicit casting to double value 3.0\nint b= 3.14156; // implicit casting to integer value 3\n\nIn C++, there are several ways to convert one type to another but the simplest one is to precede the expression to be converted by the new type enclosed in parentheses ( ). Such type of conversion is called explicit type casting.\n\nConsider the following segment of code:",
+   "urdu": "C++ میں بنیادی ڈیٹا ٹائپس کا خلاصہ اور ہر ایک سے ظاہر کی جا سکنے والی قدروں کی حد جدول 3.2 میں دی گئی ہے۔\n\nجدول 3.2: C++ ڈیٹا ٹائپس\n\n3.2.5 کانسٹنٹ کوالیفائر\n\nconst کی ورڈ ایسے کانسٹنٹ شناخت کنندہ کی تعریف کے لیے استعمال ہوتا ہے جس کی قدر پروگرام کی پوری زندگی میں مستقل رہتی ہے۔ const شناخت کنندہ کو اعلان کے وقت قدر دینا لازمی ہے اور پھر وہ قدر تبدیل نہیں کی جا سکتی۔ const کی ورڈ کے ذریعے کانسٹنٹ کی تعریف کے لیے کوڈ کا حصہ یہ ہے۔\n\nconst int DollarRate = 86;\n\nکسی ویری ایبل کو const کے طور پر ڈکلیئر کرنا پروگرامرز کو غیر ارادی طور پر اس کی قدر بدلنے سے روکتا ہے۔ ویری ایبل DollarRate کی قدر بدلنے کے لیے کوڈ کی درج ذیل لائنوں پر غور کریں۔\n\nconst int DollarRate = 86;\nDollarRate = 123; // compiler error!\n\nکمپائلر غلطی کا پیغام دکھائے گا کیونکہ لائن 2 کا کوڈ ویری ایبل DollarRate کی قدر 86 سے 123 کرنے کی کوشش کرتا ہے جسے کانسٹنٹ کے طور پر ڈکلیئر کیا گیا ہے۔ یہ #define پری پروسیسر ڈائریکٹو کا متبادل ہے جو پروگرام میں کانسٹنٹس کی تعریف کے لیے استعمال ہوتا ہے۔\n\n3.2.6 ٹائپ کاسٹنگ آپریٹر\n\nڈیٹا کو ایک قسم سے دوسری قسم میں تبدیل کرنا ٹائپ کاسٹنگ کہلاتا ہے۔ اس کی دو اقسام ہیں۔\n\nضمنی ٹائپ کاسٹنگ\n\nصریح ٹائپ کاسٹنگ\n\nضمنی ٹائپ کاسٹنگ میں کمپائلر ایکسپریشنز میں استعمال ہونے پر ڈیٹا کو خود بخود ایک قسم سے دوسری قسم میں تبدیل کر دیتا ہے۔ جب ایک قسم کی قدر دوسری قسم کو تفویض کی جاتی ہے تو کمپائلر ضمنی طور پر اس قدر کو نئی قسم کی قدر میں تبدیل کر دیتا ہے۔ مثلاً:\n\ndouble a= 3; // implicit casting to double value 3.0\nint b= 3.14156; // implicit casting to integer value 3\n\nC++ میں ایک قسم کو دوسری میں تبدیل کرنے کے کئی طریقے ہیں لیکن سب سے آسان یہ ہے کہ تبدیل کیے جانے والے ایکسپریشن سے پہلے قوسین ( ) میں نئی قسم لکھی جائے۔ اس قسم کی تبدیلی صریح ٹائپ کاسٹنگ کہلاتی ہے۔\n\nکوڈ کے درج ذیل حصے پر غور کریں:",
+   "pashto": "په C++ کې د بنسټیزو ډېټا ډولونو لنډیز او د هر یوه په مرسته د ښودل کېدونکو ارزښتونو حد په ۳.۲ جدول کې ورکړل شوی.\n\n۳.۲ جدول: د C++ ډېټا ډولونه\n\n۳.۲.۵ ثابت توصیف‌کوونکی\n\nد const کلیدي کلمه د داسې ثابت پېژندونکي د تعریف لپاره کارول کېږي چې ارزښت یې د پروګرام په ټول ژوند کې ثابت پاتې کېږي. const پېژندونکي ته باید د اعلان پر وخت ارزښت ورکړل شي، او بیا هغه ارزښت نه شي بدلېدای. د const کلیدي کلمې په مرسته د ثابت د تعریف لپاره د کوډ برخه دا ده.\n\nconst int DollarRate = 86;\n\nد یوه متغیر د const په توګه اعلانول پروګرام جوړوونکي له ناارادي بدلون څخه منع کوي. د DollarRate متغیر د ارزښت د بدلولو لپاره د کوډ لاندې کرښو ته پام وکړئ.\n\nconst int DollarRate = 86;\nDollarRate = 123; // compiler error!\n\nکمپایلر به د تېروتنې پیغام ښکاره کړي، ځکه چې په ۲مه کرښه کې کوډ هڅه کوي د DollarRate متغیر ارزښت له 86 څخه 123 ته بدل کړي، چې د ثابت په توګه اعلان شوی. دا د #define د مخکې پروسس لارښوونې بدیل دی چې په پروګرام کې د ثابتونو د تعریف لپاره کارول کېږي.\n\n۳.۲.۶ د ډول بدلولو چلونکی\n\nله یوه ډوله بل ډول ته د ډېټا اړول د ډول بدلول (type casting) بلل کېږي. دوه ډوله لري.\n\nضمني ډول بدلول\n\nڅرګند ډول بدلول\n\nپه ضمني ډول بدلولو کې کمپایلر ډېټا په افادو کې د کارونې پر وخت په اتوماتیک ډول له یوه ډوله بل ته اړوي. کله چې د یوه ډول ارزښت بل ډول ته وسپارل شي، کمپایلر هغه ارزښت په ضمني ډول د نوي ډول ارزښت ته اړوي. د بېلګې په توګه:\n\ndouble a= 3; // implicit casting to double value 3.0\nint b= 3.14156; // implicit casting to integer value 3\n\nپه C++ کې له یوه ډوله بل ته د اړولو څو لارې شته، خو تر ټولو ساده یې دا ده چې د اړول کېدونکې افادې مخې ته نوی ډول په قوسونو ( ) کې ولیکل شي. دا ډول اړونه څرګند ډول بدلول بلل کېږي.\n\nد کوډ لاندې برخې ته پام وکړئ:",
+   "theoryUrdu": "C++ میں بنیادی ڈیٹا ٹائپس کا خلاصہ اور ہر ایک سے ظاہر کی جا سکنے والی قدروں کی حد جدول 3.2 میں دی گئی ہے۔\n\nجدول 3.2: C++ ڈیٹا ٹائپس\n\n3.2.5 کانسٹنٹ کوالیفائر\n\nconst کی ورڈ ایسے کانسٹنٹ شناخت کنندہ کی تعریف کے لیے استعمال ہوتا ہے جس کی قدر پروگرام کی پوری زندگی میں مستقل رہتی ہے۔ const شناخت کنندہ کو اعلان کے وقت قدر دینا لازمی ہے اور پھر وہ قدر تبدیل نہیں کی جا سکتی۔ const کی ورڈ کے ذریعے کانسٹنٹ کی تعریف کے لیے کوڈ کا حصہ یہ ہے۔\n\nconst int DollarRate = 86;\n\nکسی ویری ایبل کو const کے طور پر ڈکلیئر کرنا پروگرامرز کو غیر ارادی طور پر اس کی قدر بدلنے سے روکتا ہے۔ ویری ایبل DollarRate کی قدر بدلنے کے لیے کوڈ کی درج ذیل لائنوں پر غور کریں۔\n\nconst int DollarRate = 86;\nDollarRate = 123; // compiler error!\n\nکمپائلر غلطی کا پیغام دکھائے گا کیونکہ لائن 2 کا کوڈ ویری ایبل DollarRate کی قدر 86 سے 123 کرنے کی کوشش کرتا ہے جسے کانسٹنٹ کے طور پر ڈکلیئر کیا گیا ہے۔ یہ #define پری پروسیسر ڈائریکٹو کا متبادل ہے جو پروگرام میں کانسٹنٹس کی تعریف کے لیے استعمال ہوتا ہے۔\n\n3.2.6 ٹائپ کاسٹنگ آپریٹر\n\nڈیٹا کو ایک قسم سے دوسری قسم میں تبدیل کرنا ٹائپ کاسٹنگ کہلاتا ہے۔ اس کی دو اقسام ہیں۔\n\nضمنی ٹائپ کاسٹنگ\n\nصریح ٹائپ کاسٹنگ\n\nضمنی ٹائپ کاسٹنگ میں کمپائلر ایکسپریشنز میں استعمال ہونے پر ڈیٹا کو خود بخود ایک قسم سے دوسری قسم میں تبدیل کر دیتا ہے۔ جب ایک قسم کی قدر دوسری قسم کو تفویض کی جاتی ہے تو کمپائلر ضمنی طور پر اس قدر کو نئی قسم کی قدر میں تبدیل کر دیتا ہے۔ مثلاً:\n\ndouble a= 3; // implicit casting to double value 3.0\nint b= 3.14156; // implicit casting to integer value 3\n\nC++ میں ایک قسم کو دوسری میں تبدیل کرنے کے کئی طریقے ہیں لیکن سب سے آسان یہ ہے کہ تبدیل کیے جانے والے ایکسپریشن سے پہلے قوسین ( ) میں نئی قسم لکھی جائے۔ اس قسم کی تبدیلی صریح ٹائپ کاسٹنگ کہلاتی ہے۔\n\nکوڈ کے درج ذیل حصے پر غور کریں:",
+   "theoryPashto": "په C++ کې د بنسټیزو ډېټا ډولونو لنډیز او د هر یوه په مرسته د ښودل کېدونکو ارزښتونو حد په ۳.۲ جدول کې ورکړل شوی.\n\n۳.۲ جدول: د C++ ډېټا ډولونه\n\n۳.۲.۵ ثابت توصیف‌کوونکی\n\nد const کلیدي کلمه د داسې ثابت پېژندونکي د تعریف لپاره کارول کېږي چې ارزښت یې د پروګرام په ټول ژوند کې ثابت پاتې کېږي. const پېژندونکي ته باید د اعلان پر وخت ارزښت ورکړل شي، او بیا هغه ارزښت نه شي بدلېدای. د const کلیدي کلمې په مرسته د ثابت د تعریف لپاره د کوډ برخه دا ده.\n\nconst int DollarRate = 86;\n\nد یوه متغیر د const په توګه اعلانول پروګرام جوړوونکي له ناارادي بدلون څخه منع کوي. د DollarRate متغیر د ارزښت د بدلولو لپاره د کوډ لاندې کرښو ته پام وکړئ.\n\nconst int DollarRate = 86;\nDollarRate = 123; // compiler error!\n\nکمپایلر به د تېروتنې پیغام ښکاره کړي، ځکه چې په ۲مه کرښه کې کوډ هڅه کوي د DollarRate متغیر ارزښت له 86 څخه 123 ته بدل کړي، چې د ثابت په توګه اعلان شوی. دا د #define د مخکې پروسس لارښوونې بدیل دی چې په پروګرام کې د ثابتونو د تعریف لپاره کارول کېږي.\n\n۳.۲.۶ د ډول بدلولو چلونکی\n\nله یوه ډوله بل ډول ته د ډېټا اړول د ډول بدلول (type casting) بلل کېږي. دوه ډوله لري.\n\nضمني ډول بدلول\n\nڅرګند ډول بدلول\n\nپه ضمني ډول بدلولو کې کمپایلر ډېټا په افادو کې د کارونې پر وخت په اتوماتیک ډول له یوه ډوله بل ته اړوي. کله چې د یوه ډول ارزښت بل ډول ته وسپارل شي، کمپایلر هغه ارزښت په ضمني ډول د نوي ډول ارزښت ته اړوي. د بېلګې په توګه:\n\ndouble a= 3; // implicit casting to double value 3.0\nint b= 3.14156; // implicit casting to integer value 3\n\nپه C++ کې له یوه ډوله بل ته د اړولو څو لارې شته، خو تر ټولو ساده یې دا ده چې د اړول کېدونکې افادې مخې ته نوی ډول په قوسونو ( ) کې ولیکل شي. دا ډول اړونه څرګند ډول بدلول بلل کېږي.\n\nد کوډ لاندې برخې ته پام وکړئ:",
+   "content": "<p>A summary of the basic fundamental data types in C++, as well as the range of values that can be represented with each one is given in Table 3.2.</p><p>Table 3.2: C++ Data Types</p><p>3.2.5 Constant qualifier</p><p>const keyword is used to define constant identifier whose values remain constant during the whole life of the program. Const identifier must be assigned with a value when declared, and then that value cannot be changed. Here is the segment of code used to define constant using const identifier keyword.</p><p>const int DollarRate = 86;</p><p>Declaring a variable as const prevents the programmers from unintentionally changing its value. Consider the following lines of code to change the value of variable DollarRate.</p><p>const int DollarRate = 86;\nDollarRate = 123; // compiler error!</p><p>A compiler error message will be displayed by the compiler because the code at line 2 tries to change the value of the variable DollarRate from 86 to 123, which is declared as constant. It is an alternative to #define preprocessor directive which is used for defining constants in a program.</p><p>3.2.6 Type casting operator</p><p>The conversion of data from one type to another is called type casting. It has two types.</p><p>Implicit type casting</p><p>Explicit type casting</p><p>In Implicit type casting, the compiler automatically converts data from one type to another when they are used in expressions. When a value of one type is assigned to another type, the compiler implicitly converts that value into the value of the new type. For example:</p><p>double a= 3; // implicit casting to double value 3.0\nint b= 3.14156; // implicit casting to integer value 3</p><p>In C++, there are several ways to convert one type to another but the simplest one is to precede the expression to be converted by the new type enclosed in parentheses ( ). Such type of conversion is called explicit type casting.</p><p>Consider the following segment of code:</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-3-2"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      10,
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-table-3-2",
+     "headers": [
+      "Data Type",
+      "Name",
+      "Description",
+      "Size",
+      "Range"
+     ],
+     "rows": [
+      [
+       "Character",
+       "char",
+       "Character or small integer",
+       "1byte",
+       "signed: -128 to 127; unsigned: 0 to 255"
+      ],
+      [
+       "Integer",
+       "short int (short)",
+       "Short Integer",
+       "2bytes",
+       "signed: -32768 to 32767; unsigned: 0 to 65535"
+      ],
+      [
+       "Integer",
+       "int",
+       "Integer (16 bit system)",
+       "2bytes",
+       "signed: -32768 to 32767; unsigned: 0 to 65535"
+      ],
+      [
+       "Integer",
+       "int",
+       "Integer (32 bit system)",
+       "4bytes",
+       "signed: -2147483648 to 2147483647; unsigned: 0 to 4294967295"
+      ],
+      [
+       "Integer",
+       "long int (long)",
+       "Long integer",
+       "4bytes",
+       "signed: -2147483648 to 2147483647; unsigned: 0 to 4294967295"
+      ],
+      [
+       "Floating Point",
+       "float",
+       "Floating point number",
+       "4bytes",
+       "3.4 × 10⁻³⁸ to 3.4 × 10³⁸"
+      ],
+      [
+       "Floating Point",
+       "double",
+       "Double precision floating point number",
+       "8bytes",
+       "1.7 × 10⁻³⁰⁸ to 1.7 × 10³⁰⁸"
+      ],
+      [
+       "Floating Point",
+       "long double",
+       "Long double precision floating point number",
+       "10bytes",
+       "1.7 × 10⁻⁴⁹³² to 1.7 × 10⁴⁹³²"
+      ],
+      [
+       "Boolean",
+       "bool",
+       "Boolean value. It can take one of two values: true or false.",
+       "1byte",
+       "true (1) or false (0)"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "ڈیٹا ٹائپ",
+        "نام",
+        "وضاحت",
+        "سائز",
+        "حد"
+       ],
+       "rows": [
+        [
+         "حرف",
+         "char",
+         "حرف یا چھوٹا صحیح عدد",
+         "1byte",
+         "signed: -128 to 127; unsigned: 0 to 255"
+        ],
+        [
+         "انٹیجر",
+         "short int (short)",
+         "شارٹ انٹیجر",
+         "2bytes",
+         "signed: -32768 to 32767; unsigned: 0 to 65535"
+        ],
+        [
+         "انٹیجر",
+         "int",
+         "انٹیجر (16 بٹ نظام)",
+         "2bytes",
+         "signed: -32768 to 32767; unsigned: 0 to 65535"
+        ],
+        [
+         "انٹیجر",
+         "int",
+         "انٹیجر (32 بٹ نظام)",
+         "4bytes",
+         "signed: -2147483648 to 2147483647; unsigned: 0 to 4294967295"
+        ],
+        [
+         "انٹیجر",
+         "long int (long)",
+         "لانگ انٹیجر",
+         "4bytes",
+         "signed: -2147483648 to 2147483647; unsigned: 0 to 4294967295"
+        ],
+        [
+         "فلوٹنگ پوائنٹ",
+         "float",
+         "فلوٹنگ پوائنٹ عدد",
+         "4bytes",
+         "3.4 × 10⁻³⁸ to 3.4 × 10³⁸"
+        ],
+        [
+         "فلوٹنگ پوائنٹ",
+         "double",
+         "ڈبل پریسیژن فلوٹنگ پوائنٹ عدد",
+         "8bytes",
+         "1.7 × 10⁻³⁰⁸ to 1.7 × 10³⁰⁸"
+        ],
+        [
+         "فلوٹنگ پوائنٹ",
+         "long double",
+         "لانگ ڈبل پریسیژن فلوٹنگ پوائنٹ عدد",
+         "10bytes",
+         "1.7 × 10⁻⁴⁹³² to 1.7 × 10⁴⁹³²"
+        ],
+        [
+         "بولین",
+         "bool",
+         "بولین قدر۔ یہ دو قدروں میں سے ایک لے سکتا ہے: true یا false۔",
+         "1byte",
+         "true (1) or false (0)"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "ډېټا ډول",
+        "نوم",
+        "تشریح",
+        "اندازه",
+        "حد"
+       ],
+       "rows": [
+        [
+         "توری",
+         "char",
+         "توری یا کوچنی صحیح عدد",
+         "1byte",
+         "signed: -128 to 127; unsigned: 0 to 255"
+        ],
+        [
+         "صحیح عدد",
+         "short int (short)",
+         "لنډ صحیح عدد",
+         "2bytes",
+         "signed: -32768 to 32767; unsigned: 0 to 65535"
+        ],
+        [
+         "صحیح عدد",
+         "int",
+         "صحیح عدد (۱۶ بټه سیسټم)",
+         "2bytes",
+         "signed: -32768 to 32767; unsigned: 0 to 65535"
+        ],
+        [
+         "صحیح عدد",
+         "int",
+         "صحیح عدد (۳۲ بټه سیسټم)",
+         "4bytes",
+         "signed: -2147483648 to 2147483647; unsigned: 0 to 4294967295"
+        ],
+        [
+         "صحیح عدد",
+         "long int (long)",
+         "اوږد صحیح عدد",
+         "4bytes",
+         "signed: -2147483648 to 2147483647; unsigned: 0 to 4294967295"
+        ],
+        [
+         "اعشاري",
+         "float",
+         "اعشاري عدد",
+         "4bytes",
+         "3.4 × 10⁻³⁸ to 3.4 × 10³⁸"
+        ],
+        [
+         "اعشاري",
+         "double",
+         "دوه‌ګوني دقت اعشاري عدد",
+         "8bytes",
+         "1.7 × 10⁻³⁰⁸ to 1.7 × 10³⁰⁸"
+        ],
+        [
+         "اعشاري",
+         "long double",
+         "اوږد دوه‌ګوني دقت اعشاري عدد",
+         "10bytes",
+         "1.7 × 10⁻⁴⁹³² to 1.7 × 10⁴⁹³²"
+        ],
+        [
+         "بولي",
+         "bool",
+         "بولي ارزښت. له دوو ارزښتونو یو اخیستی شي: true یا false.",
+         "1byte",
+         "true (1) or false (0)"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 44,
+     "printedPages": [
+      76,
+      77
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (10)",
+   "sourcePageLabel": "PDF 44 · p. 76–77",
+   "sourceNote": "Table 3.2 (with merged group cells in print) is flattened into one row per type, repeating the group label; signed/unsigned ranges share one cell. The code segment announced at the foot of p.77 follows on p.78 (PDF45).",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf044",
+   "unit": 3,
+   "printedPage": 76,
+   "description": "p.76 prints “Const identifier must be assigned with a value”, “segment of code used to define constant using const identifier keyword”; Table 3.2 lists the float range lower bound as 3.4×10⁻³⁸ (signed range is ±). Retained as printed. Owner handwriting “Computer Science (XII)” on p.77 excluded."
+  }
+ ],
+ "completeUnits": []
+}

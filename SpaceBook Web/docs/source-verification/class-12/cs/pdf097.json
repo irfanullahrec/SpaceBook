@@ -1,0 +1,332 @@
+{
+ "pdfPage": 97,
+ "sections": [
+  {
+   "id": "cs12-u6-text-4",
+   "title": "Unit 6 text (4)",
+   "headingUrdu": "یونٹ 6 — متن (4)",
+   "headingPashto": "۶ څپرکی — متن (4)",
+   "paras": [
+    {
+     "text": "6.1.3 Function signature",
+     "urdu": "6.1.3 فنکشن سگنیچر",
+     "pashto": "۶.۱.۳ د فنکشن لاسلیک"
+    },
+    {
+     "text": "The signature of a function comprises of the parts given below.",
+     "urdu": "فنکشن کا سگنیچر ذیل میں دیے گئے حصوں پر مشتمل ہوتا ہے۔",
+     "pashto": "د فنکشن لاسلیک له لاندې برخو جوړ دی."
+    },
+    {
+     "text": "Name of the function",
+     "urdu": "فنکشن کا نام",
+     "pashto": "د فنکشن نوم"
+    },
+    {
+     "text": "The number, order and data types of the arguments",
+     "urdu": "آرگیومنٹس کی تعداد، ترتیب اور ڈیٹا ٹائپس",
+     "pashto": "د دلیلونو شمېر، ترتیب او ډېټا ډولونه"
+    },
+    {
+     "text": "Return type of function",
+     "urdu": "فنکشن کی ریٹرن ٹائپ",
+     "pashto": "د فنکشن د بېرته ورکړې ډول"
+    },
+    {
+     "text": "Let us consider the add function to demonstrate function signature",
+     "urdu": "فنکشن سگنیچر واضح کرنے کے لیے add فنکشن پر غور کرتے ہیں",
+     "pashto": "راځئ د فنکشن لاسلیک د ښودلو لپاره add فنکشن ته پام وکړو"
+    },
+    {
+     "text": "double add(int x, double y)\n{\nreturn x+y;\n}",
+     "urdu": "double add(int x, double y)\n{\nreturn x+y;\n}",
+     "pashto": "double add(int x, double y)\n{\nreturn x+y;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The signature of the above mentioned function is:",
+     "urdu": "اوپر بیان کیے گئے فنکشن کا سگنیچر یہ ہے:",
+     "pashto": "د پورته یاد شوي فنکشن لاسلیک دا دی:"
+    },
+    {
+     "text": "double add(int x, double y)",
+     "urdu": "double add(int x, double y)",
+     "pashto": "double add(int x, double y)",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The Signature of this add function comprises of:",
+     "urdu": "اس add فنکشن کا سگنیچر ان پر مشتمل ہے:",
+     "pashto": "د دې add فنکشن لاسلیک له دې جوړ دی:"
+    },
+    {
+     "text": "Name of the function: add",
+     "urdu": "فنکشن کا نام: add",
+     "pashto": "د فنکشن نوم: add"
+    },
+    {
+     "text": "The data types of the arguments: int , double",
+     "urdu": "آرگیومنٹس کی ڈیٹا ٹائپس: int , double",
+     "pashto": "د دلیلونو ډېټا ډولونه: int , double"
+    },
+    {
+     "text": "Return type of the function: double",
+     "urdu": "فنکشن کی ریٹرن ٹائپ: double",
+     "pashto": "د فنکشن د بېرته ورکړې ډول: double"
+    },
+    {
+     "text": "6.1.4 Components of functions",
+     "urdu": "6.1.4 فنکشنز کے اجزا",
+     "pashto": "۶.۱.۴ د فنکشنونو برخې"
+    },
+    {
+     "text": "Each function consists of three components. These are:",
+     "urdu": "ہر فنکشن تین اجزا پر مشتمل ہوتا ہے۔ یہ ہیں:",
+     "pashto": "هر فنکشن درې برخې لري. دا دي:"
+    },
+    {
+     "text": "Function prototype/declaration",
+     "urdu": "فنکشن پروٹوٹائپ/ڈکلیریشن",
+     "pashto": "د فنکشن نمونه/اعلان"
+    },
+    {
+     "text": "Function definition",
+     "urdu": "فنکشن کی تعریف",
+     "pashto": "د فنکشن تعریف"
+    },
+    {
+     "text": "Function call",
+     "urdu": "فنکشن کال",
+     "pashto": "د فنکشن غوښتنه"
+    },
+    {
+     "text": "a. Function prototype",
+     "urdu": "a. فنکشن پروٹوٹائپ",
+     "pashto": "a. د فنکشن نمونه"
+    },
+    {
+     "text": "A function prototype is that part of a function that tells the compiler the name of the function, the type of data returned by the function, the number of parameters the function expects to receive, the types of the parameters, and the order of parameters.",
+     "urdu": "فنکشن پروٹوٹائپ فنکشن کا وہ حصہ ہے جو کمپائلر کو فنکشن کا نام، فنکشن کی طرف سے واپس کیے جانے والے ڈیٹا کی قسم، فنکشن کے متوقع پیرامیٹرز کی تعداد، پیرامیٹرز کی اقسام اور پیرامیٹرز کی ترتیب بتاتا ہے۔",
+     "pashto": "د فنکشن نمونه د فنکشن هغه برخه ده چې کمپایلر ته د فنکشن نوم، د فنکشن له خوا د بېرته ورکړل شوي ډېټا ډول، د هغو پاراميټرونو شمېر چې فنکشن یې د ترلاسه کولو تمه لري، د پاراميټرونو ډولونه او د پاراميټرونو ترتیب ښيي."
+    },
+    {
+     "text": "A function prototype is also called function declaration and is used in situation whenever the function is defined after the main() function. The function prototype ends with a semicolon (;).",
+     "urdu": "فنکشن پروٹوٹائپ کو فنکشن ڈکلیریشن بھی کہتے ہیں اور یہ اس صورت میں استعمال ہوتا ہے جب فنکشن main() فنکشن کے بعد بیان کیا گیا ہو۔ فنکشن پروٹوٹائپ سیمی کولن (;) پر ختم ہوتا ہے۔",
+     "pashto": "د فنکشن نمونه د فنکشن اعلان هم بلل کېږي او هغه وخت کارېږي چې فنکشن د main() فنکشن وروسته تعریف شوی وي. د فنکشن نمونه په سیمي‌کولن (;) پای ته رسېږي."
+    },
+    {
+     "text": "The function prototype for a function named “maximum” to calculate maximum number out of three integers is given below:",
+     "urdu": "تین صحیح اعداد میں سے سب سے بڑا عدد معلوم کرنے والے ’’maximum‘‘ نامی فنکشن کا پروٹوٹائپ ذیل میں دیا گیا ہے:",
+     "pashto": "د \"maximum\" په نوم د هغه فنکشن نمونه چې له درېیو صحیح عددونو تر ټولو لوی عدد حسابوي، لاندې ورکړل شوې:"
+    },
+    {
+     "text": "int maximum( int a, int b, int c);",
+     "urdu": "int maximum( int a, int b, int c);",
+     "pashto": "int maximum( int a, int b, int c);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The compiler use function prototypes to validate function call. In a prototype, argument names are optional; however, the types are necessary as shown below:",
+     "urdu": "کمپائلر فنکشن کال کی توثیق کے لیے فنکشن پروٹوٹائپس استعمال کرتا ہے۔ پروٹوٹائپ میں آرگیومنٹس کے نام اختیاری ہیں؛ تاہم اقسام ضروری ہیں جیسا کہ ذیل میں دکھایا گیا ہے:",
+     "pashto": "کمپایلر د فنکشن غوښتنې د تایید لپاره د فنکشن نمونې کاروي. په نمونه کې د دلیلونو نومونه اختیاري دي؛ خو ډولونه اړین دي لکه لاندې:"
+    },
+    {
+     "text": "int maximum( int , int , int );",
+     "urdu": "int maximum( int , int , int );",
+     "pashto": "int maximum( int , int , int );",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Function prototype is used in C++ program only when the function is defined after the definition of main() function. If the function definition lies before the main() function then there is no need for the function prototype.",
+     "urdu": "C++ پروگرام میں فنکشن پروٹوٹائپ صرف اس وقت استعمال ہوتا ہے جب فنکشن main() فنکشن کی تعریف کے بعد بیان کیا گیا ہو۔ اگر فنکشن کی تعریف main() فنکشن سے پہلے ہو تو فنکشن پروٹوٹائپ کی ضرورت نہیں۔",
+     "pashto": "په C++ پروګرام کې د فنکشن نمونه یوازې هغه وخت کارېږي چې فنکشن د main() فنکشن له تعریف وروسته تعریف شوی وي. که د فنکشن تعریف د main() فنکشن مخکې وي، د فنکشن نمونې ته اړتیا نشته."
+    },
+    {
+     "text": "b. Function definition",
+     "urdu": "b. فنکشن کی تعریف",
+     "pashto": "b. د فنکشن تعریف"
+    },
+    {
+     "text": "A function definition specifies what a function does. It has two parts: a declaration /header and function body enclosed in { }. Function declarator is similar to function prototype with the only difference that it has the variables name for the parameters and without semicolon (;). Consider the following function declarator.",
+     "urdu": "فنکشن کی تعریف بتاتی ہے کہ فنکشن کیا کرتا ہے۔ اس کے دو حصے ہیں: ڈکلیریشن/ہیڈر اور { } میں بند فنکشن کا جسم۔ فنکشن ڈکلیریٹر فنکشن پروٹوٹائپ جیسا ہے، فرق صرف یہ ہے کہ اس میں پیرامیٹرز کے لیے ویری ایبلز کے نام ہوتے ہیں اور سیمی کولن (;) نہیں ہوتا۔ درج ذیل فنکشن ڈکلیریٹر پر غور کریں۔",
+     "pashto": "د فنکشن تعریف ښيي چې فنکشن څه کوي. دوه برخې لري: اعلان/سرلیک او په { } کې تړلې د فنکشن بدنه. د فنکشن اعلانوونکی د فنکشن نمونې ته ورته دی، یوازینی توپیر یې دا دی چې د پاراميټرونو لپاره د متغیرونو نومونه لري او سیمي‌کولن (;) نه لري. لاندې د فنکشن اعلانوونکي ته پام وکړئ."
+    }
+   ],
+   "theory": "6.1.3 Function signature\n\nThe signature of a function comprises of the parts given below.\n\nName of the function\n\nThe number, order and data types of the arguments\n\nReturn type of function\n\nLet us consider the add function to demonstrate function signature\n\ndouble add(int x, double y)\n{\nreturn x+y;\n}\n\nThe signature of the above mentioned function is:\n\ndouble add(int x, double y)\n\nThe Signature of this add function comprises of:\n\nName of the function: add\n\nThe data types of the arguments: int , double\n\nReturn type of the function: double\n\n6.1.4 Components of functions\n\nEach function consists of three components. These are:\n\nFunction prototype/declaration\n\nFunction definition\n\nFunction call\n\na. Function prototype\n\nA function prototype is that part of a function that tells the compiler the name of the function, the type of data returned by the function, the number of parameters the function expects to receive, the types of the parameters, and the order of parameters.\n\nA function prototype is also called function declaration and is used in situation whenever the function is defined after the main() function. The function prototype ends with a semicolon (;).\n\nThe function prototype for a function named “maximum” to calculate maximum number out of three integers is given below:\n\nint maximum( int a, int b, int c);\n\nThe compiler use function prototypes to validate function call. In a prototype, argument names are optional; however, the types are necessary as shown below:\n\nint maximum( int , int , int );\n\nFunction prototype is used in C++ program only when the function is defined after the definition of main() function. If the function definition lies before the main() function then there is no need for the function prototype.\n\nb. Function definition\n\nA function definition specifies what a function does. It has two parts: a declaration /header and function body enclosed in { }. Function declarator is similar to function prototype with the only difference that it has the variables name for the parameters and without semicolon (;). Consider the following function declarator.",
+   "urdu": "6.1.3 فنکشن سگنیچر\n\nفنکشن کا سگنیچر ذیل میں دیے گئے حصوں پر مشتمل ہوتا ہے۔\n\nفنکشن کا نام\n\nآرگیومنٹس کی تعداد، ترتیب اور ڈیٹا ٹائپس\n\nفنکشن کی ریٹرن ٹائپ\n\nفنکشن سگنیچر واضح کرنے کے لیے add فنکشن پر غور کرتے ہیں\n\ndouble add(int x, double y)\n{\nreturn x+y;\n}\n\nاوپر بیان کیے گئے فنکشن کا سگنیچر یہ ہے:\n\ndouble add(int x, double y)\n\nاس add فنکشن کا سگنیچر ان پر مشتمل ہے:\n\nفنکشن کا نام: add\n\nآرگیومنٹس کی ڈیٹا ٹائپس: int , double\n\nفنکشن کی ریٹرن ٹائپ: double\n\n6.1.4 فنکشنز کے اجزا\n\nہر فنکشن تین اجزا پر مشتمل ہوتا ہے۔ یہ ہیں:\n\nفنکشن پروٹوٹائپ/ڈکلیریشن\n\nفنکشن کی تعریف\n\nفنکشن کال\n\na. فنکشن پروٹوٹائپ\n\nفنکشن پروٹوٹائپ فنکشن کا وہ حصہ ہے جو کمپائلر کو فنکشن کا نام، فنکشن کی طرف سے واپس کیے جانے والے ڈیٹا کی قسم، فنکشن کے متوقع پیرامیٹرز کی تعداد، پیرامیٹرز کی اقسام اور پیرامیٹرز کی ترتیب بتاتا ہے۔\n\nفنکشن پروٹوٹائپ کو فنکشن ڈکلیریشن بھی کہتے ہیں اور یہ اس صورت میں استعمال ہوتا ہے جب فنکشن main() فنکشن کے بعد بیان کیا گیا ہو۔ فنکشن پروٹوٹائپ سیمی کولن (;) پر ختم ہوتا ہے۔\n\nتین صحیح اعداد میں سے سب سے بڑا عدد معلوم کرنے والے ’’maximum‘‘ نامی فنکشن کا پروٹوٹائپ ذیل میں دیا گیا ہے:\n\nint maximum( int a, int b, int c);\n\nکمپائلر فنکشن کال کی توثیق کے لیے فنکشن پروٹوٹائپس استعمال کرتا ہے۔ پروٹوٹائپ میں آرگیومنٹس کے نام اختیاری ہیں؛ تاہم اقسام ضروری ہیں جیسا کہ ذیل میں دکھایا گیا ہے:\n\nint maximum( int , int , int );\n\nC++ پروگرام میں فنکشن پروٹوٹائپ صرف اس وقت استعمال ہوتا ہے جب فنکشن main() فنکشن کی تعریف کے بعد بیان کیا گیا ہو۔ اگر فنکشن کی تعریف main() فنکشن سے پہلے ہو تو فنکشن پروٹوٹائپ کی ضرورت نہیں۔\n\nb. فنکشن کی تعریف\n\nفنکشن کی تعریف بتاتی ہے کہ فنکشن کیا کرتا ہے۔ اس کے دو حصے ہیں: ڈکلیریشن/ہیڈر اور { } میں بند فنکشن کا جسم۔ فنکشن ڈکلیریٹر فنکشن پروٹوٹائپ جیسا ہے، فرق صرف یہ ہے کہ اس میں پیرامیٹرز کے لیے ویری ایبلز کے نام ہوتے ہیں اور سیمی کولن (;) نہیں ہوتا۔ درج ذیل فنکشن ڈکلیریٹر پر غور کریں۔",
+   "pashto": "۶.۱.۳ د فنکشن لاسلیک\n\nد فنکشن لاسلیک له لاندې برخو جوړ دی.\n\nد فنکشن نوم\n\nد دلیلونو شمېر، ترتیب او ډېټا ډولونه\n\nد فنکشن د بېرته ورکړې ډول\n\nراځئ د فنکشن لاسلیک د ښودلو لپاره add فنکشن ته پام وکړو\n\ndouble add(int x, double y)\n{\nreturn x+y;\n}\n\nد پورته یاد شوي فنکشن لاسلیک دا دی:\n\ndouble add(int x, double y)\n\nد دې add فنکشن لاسلیک له دې جوړ دی:\n\nد فنکشن نوم: add\n\nد دلیلونو ډېټا ډولونه: int , double\n\nد فنکشن د بېرته ورکړې ډول: double\n\n۶.۱.۴ د فنکشنونو برخې\n\nهر فنکشن درې برخې لري. دا دي:\n\nد فنکشن نمونه/اعلان\n\nد فنکشن تعریف\n\nد فنکشن غوښتنه\n\na. د فنکشن نمونه\n\nد فنکشن نمونه د فنکشن هغه برخه ده چې کمپایلر ته د فنکشن نوم، د فنکشن له خوا د بېرته ورکړل شوي ډېټا ډول، د هغو پاراميټرونو شمېر چې فنکشن یې د ترلاسه کولو تمه لري، د پاراميټرونو ډولونه او د پاراميټرونو ترتیب ښيي.\n\nد فنکشن نمونه د فنکشن اعلان هم بلل کېږي او هغه وخت کارېږي چې فنکشن د main() فنکشن وروسته تعریف شوی وي. د فنکشن نمونه په سیمي‌کولن (;) پای ته رسېږي.\n\nد \"maximum\" په نوم د هغه فنکشن نمونه چې له درېیو صحیح عددونو تر ټولو لوی عدد حسابوي، لاندې ورکړل شوې:\n\nint maximum( int a, int b, int c);\n\nکمپایلر د فنکشن غوښتنې د تایید لپاره د فنکشن نمونې کاروي. په نمونه کې د دلیلونو نومونه اختیاري دي؛ خو ډولونه اړین دي لکه لاندې:\n\nint maximum( int , int , int );\n\nپه C++ پروګرام کې د فنکشن نمونه یوازې هغه وخت کارېږي چې فنکشن د main() فنکشن له تعریف وروسته تعریف شوی وي. که د فنکشن تعریف د main() فنکشن مخکې وي، د فنکشن نمونې ته اړتیا نشته.\n\nb. د فنکشن تعریف\n\nد فنکشن تعریف ښيي چې فنکشن څه کوي. دوه برخې لري: اعلان/سرلیک او په { } کې تړلې د فنکشن بدنه. د فنکشن اعلانوونکی د فنکشن نمونې ته ورته دی، یوازینی توپیر یې دا دی چې د پاراميټرونو لپاره د متغیرونو نومونه لري او سیمي‌کولن (;) نه لري. لاندې د فنکشن اعلانوونکي ته پام وکړئ.",
+   "theoryUrdu": "6.1.3 فنکشن سگنیچر\n\nفنکشن کا سگنیچر ذیل میں دیے گئے حصوں پر مشتمل ہوتا ہے۔\n\nفنکشن کا نام\n\nآرگیومنٹس کی تعداد، ترتیب اور ڈیٹا ٹائپس\n\nفنکشن کی ریٹرن ٹائپ\n\nفنکشن سگنیچر واضح کرنے کے لیے add فنکشن پر غور کرتے ہیں\n\ndouble add(int x, double y)\n{\nreturn x+y;\n}\n\nاوپر بیان کیے گئے فنکشن کا سگنیچر یہ ہے:\n\ndouble add(int x, double y)\n\nاس add فنکشن کا سگنیچر ان پر مشتمل ہے:\n\nفنکشن کا نام: add\n\nآرگیومنٹس کی ڈیٹا ٹائپس: int , double\n\nفنکشن کی ریٹرن ٹائپ: double\n\n6.1.4 فنکشنز کے اجزا\n\nہر فنکشن تین اجزا پر مشتمل ہوتا ہے۔ یہ ہیں:\n\nفنکشن پروٹوٹائپ/ڈکلیریشن\n\nفنکشن کی تعریف\n\nفنکشن کال\n\na. فنکشن پروٹوٹائپ\n\nفنکشن پروٹوٹائپ فنکشن کا وہ حصہ ہے جو کمپائلر کو فنکشن کا نام، فنکشن کی طرف سے واپس کیے جانے والے ڈیٹا کی قسم، فنکشن کے متوقع پیرامیٹرز کی تعداد، پیرامیٹرز کی اقسام اور پیرامیٹرز کی ترتیب بتاتا ہے۔\n\nفنکشن پروٹوٹائپ کو فنکشن ڈکلیریشن بھی کہتے ہیں اور یہ اس صورت میں استعمال ہوتا ہے جب فنکشن main() فنکشن کے بعد بیان کیا گیا ہو۔ فنکشن پروٹوٹائپ سیمی کولن (;) پر ختم ہوتا ہے۔\n\nتین صحیح اعداد میں سے سب سے بڑا عدد معلوم کرنے والے ’’maximum‘‘ نامی فنکشن کا پروٹوٹائپ ذیل میں دیا گیا ہے:\n\nint maximum( int a, int b, int c);\n\nکمپائلر فنکشن کال کی توثیق کے لیے فنکشن پروٹوٹائپس استعمال کرتا ہے۔ پروٹوٹائپ میں آرگیومنٹس کے نام اختیاری ہیں؛ تاہم اقسام ضروری ہیں جیسا کہ ذیل میں دکھایا گیا ہے:\n\nint maximum( int , int , int );\n\nC++ پروگرام میں فنکشن پروٹوٹائپ صرف اس وقت استعمال ہوتا ہے جب فنکشن main() فنکشن کی تعریف کے بعد بیان کیا گیا ہو۔ اگر فنکشن کی تعریف main() فنکشن سے پہلے ہو تو فنکشن پروٹوٹائپ کی ضرورت نہیں۔\n\nb. فنکشن کی تعریف\n\nفنکشن کی تعریف بتاتی ہے کہ فنکشن کیا کرتا ہے۔ اس کے دو حصے ہیں: ڈکلیریشن/ہیڈر اور { } میں بند فنکشن کا جسم۔ فنکشن ڈکلیریٹر فنکشن پروٹوٹائپ جیسا ہے، فرق صرف یہ ہے کہ اس میں پیرامیٹرز کے لیے ویری ایبلز کے نام ہوتے ہیں اور سیمی کولن (;) نہیں ہوتا۔ درج ذیل فنکشن ڈکلیریٹر پر غور کریں۔",
+   "theoryPashto": "۶.۱.۳ د فنکشن لاسلیک\n\nد فنکشن لاسلیک له لاندې برخو جوړ دی.\n\nد فنکشن نوم\n\nد دلیلونو شمېر، ترتیب او ډېټا ډولونه\n\nد فنکشن د بېرته ورکړې ډول\n\nراځئ د فنکشن لاسلیک د ښودلو لپاره add فنکشن ته پام وکړو\n\ndouble add(int x, double y)\n{\nreturn x+y;\n}\n\nد پورته یاد شوي فنکشن لاسلیک دا دی:\n\ndouble add(int x, double y)\n\nد دې add فنکشن لاسلیک له دې جوړ دی:\n\nد فنکشن نوم: add\n\nد دلیلونو ډېټا ډولونه: int , double\n\nد فنکشن د بېرته ورکړې ډول: double\n\n۶.۱.۴ د فنکشنونو برخې\n\nهر فنکشن درې برخې لري. دا دي:\n\nد فنکشن نمونه/اعلان\n\nد فنکشن تعریف\n\nد فنکشن غوښتنه\n\na. د فنکشن نمونه\n\nد فنکشن نمونه د فنکشن هغه برخه ده چې کمپایلر ته د فنکشن نوم، د فنکشن له خوا د بېرته ورکړل شوي ډېټا ډول، د هغو پاراميټرونو شمېر چې فنکشن یې د ترلاسه کولو تمه لري، د پاراميټرونو ډولونه او د پاراميټرونو ترتیب ښيي.\n\nد فنکشن نمونه د فنکشن اعلان هم بلل کېږي او هغه وخت کارېږي چې فنکشن د main() فنکشن وروسته تعریف شوی وي. د فنکشن نمونه په سیمي‌کولن (;) پای ته رسېږي.\n\nد \"maximum\" په نوم د هغه فنکشن نمونه چې له درېیو صحیح عددونو تر ټولو لوی عدد حسابوي، لاندې ورکړل شوې:\n\nint maximum( int a, int b, int c);\n\nکمپایلر د فنکشن غوښتنې د تایید لپاره د فنکشن نمونې کاروي. په نمونه کې د دلیلونو نومونه اختیاري دي؛ خو ډولونه اړین دي لکه لاندې:\n\nint maximum( int , int , int );\n\nپه C++ پروګرام کې د فنکشن نمونه یوازې هغه وخت کارېږي چې فنکشن د main() فنکشن له تعریف وروسته تعریف شوی وي. که د فنکشن تعریف د main() فنکشن مخکې وي، د فنکشن نمونې ته اړتیا نشته.\n\nb. د فنکشن تعریف\n\nد فنکشن تعریف ښيي چې فنکشن څه کوي. دوه برخې لري: اعلان/سرلیک او په { } کې تړلې د فنکشن بدنه. د فنکشن اعلانوونکی د فنکشن نمونې ته ورته دی، یوازینی توپیر یې دا دی چې د پاراميټرونو لپاره د متغیرونو نومونه لري او سیمي‌کولن (;) نه لري. لاندې د فنکشن اعلانوونکي ته پام وکړئ.",
+   "content": "<p>6.1.3 Function signature</p><p>The signature of a function comprises of the parts given below.</p><p>Name of the function</p><p>The number, order and data types of the arguments</p><p>Return type of function</p><p>Let us consider the add function to demonstrate function signature</p><p>double add(int x, double y)\n{\nreturn x+y;\n}</p><p>The signature of the above mentioned function is:</p><p>double add(int x, double y)</p><p>The Signature of this add function comprises of:</p><p>Name of the function: add</p><p>The data types of the arguments: int , double</p><p>Return type of the function: double</p><p>6.1.4 Components of functions</p><p>Each function consists of three components. These are:</p><p>Function prototype/declaration</p><p>Function definition</p><p>Function call</p><p>a. Function prototype</p><p>A function prototype is that part of a function that tells the compiler the name of the function, the type of data returned by the function, the number of parameters the function expects to receive, the types of the parameters, and the order of parameters.</p><p>A function prototype is also called function declaration and is used in situation whenever the function is defined after the main() function. The function prototype ends with a semicolon (;).</p><p>The function prototype for a function named “maximum” to calculate maximum number out of three integers is given below:</p><p>int maximum( int a, int b, int c);</p><p>The compiler use function prototypes to validate function call. In a prototype, argument names are optional; however, the types are necessary as shown below:</p><p>int maximum( int , int , int );</p><p>Function prototype is used in C++ program only when the function is defined after the definition of main() function. If the function definition lies before the main() function then there is no need for the function prototype.</p><p>b. Function definition</p><p>A function definition specifies what a function does. It has two parts: a declaration /header and function body enclosed in { }. Function declarator is similar to function prototype with the only difference that it has the variables name for the parameters and without semicolon (;). Consider the following function declarator.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      23
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      24
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      25
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      26
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      27
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 97,
+     "printedPages": [
+      182,
+      183
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (4)",
+   "sourcePageLabel": "PDF 97 · p. 182–183",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf097",
+   "unit": 6,
+   "printedPage": 183,
+   "description": "p.183 “The compiler use function prototypes”; “used in situation whenever”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

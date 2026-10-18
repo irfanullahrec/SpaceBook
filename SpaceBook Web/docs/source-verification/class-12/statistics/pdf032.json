@@ -1,0 +1,532 @@
+{
+ "pdfPage": 32,
+ "sections": [
+  {
+   "id": "stat12-p032-example-2-17",
+   "title": "Example 2.17 — solution",
+   "headingUrdu": "مثال 2.17 — حل",
+   "headingPashto": "بېلګه 2.17 — حل",
+   "paras": [
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "$(i)\\quad E(X)=\\int_x x\\,f(x)\\,dx=\\int_{0}^{1}x(2-2x)\\,dx=\\int_{0}^{1}(2x-2x^2)\\,dx$",
+     "urdu": "$(i)\\quad E(X)=\\int_x x\\,f(x)\\,dx=\\int_{0}^{1}x(2-2x)\\,dx=\\int_{0}^{1}(2x-2x^2)\\,dx$",
+     "pashto": "$(i)\\quad E(X)=\\int_x x\\,f(x)\\,dx=\\int_{0}^{1}x(2-2x)\\,dx=\\int_{0}^{1}(2x-2x^2)\\,dx$"
+    },
+    {
+     "text": "$=\\int_{0}^{1}2x\\,dx-\\int_{0}^{1}2x^2\\,dx=2\\int_{0}^{1}x\\,dx-2\\int_{0}^{1}x^2dx$",
+     "urdu": "$=\\int_{0}^{1}2x\\,dx-\\int_{0}^{1}2x^2\\,dx=2\\int_{0}^{1}x\\,dx-2\\int_{0}^{1}x^2dx$",
+     "pashto": "$=\\int_{0}^{1}2x\\,dx-\\int_{0}^{1}2x^2\\,dx=2\\int_{0}^{1}x\\,dx-2\\int_{0}^{1}x^2dx$"
+    },
+    {
+     "text": "$=\\left.x^2\\right|_{0}^{1}-2\\left.\\frac{x^3}{3}\\right|_{0}^{1}$",
+     "urdu": "$=\\left.x^2\\right|_{0}^{1}-2\\left.\\frac{x^3}{3}\\right|_{0}^{1}$",
+     "pashto": "$=\\left.x^2\\right|_{0}^{1}-2\\left.\\frac{x^3}{3}\\right|_{0}^{1}$"
+    },
+    {
+     "text": "$=(1-0)-\\left(\\frac{2}{3}-0\\right)=1-\\frac{2}{3}=\\frac{3-2}{3}=\\frac{1}{3}$",
+     "urdu": "$=(1-0)-\\left(\\frac{2}{3}-0\\right)=1-\\frac{2}{3}=\\frac{3-2}{3}=\\frac{1}{3}$",
+     "pashto": "$=(1-0)-\\left(\\frac{2}{3}-0\\right)=1-\\frac{2}{3}=\\frac{3-2}{3}=\\frac{1}{3}$"
+    },
+    {
+     "text": "$(ii)\\quad E(X^2)=\\int_x x^2f(x)\\,dx=\\int_{0}^{1}x^2(2-2x)\\,dx=\\int_{0}^{1}(2x^2-2x^3)\\,dx$",
+     "urdu": "$(ii)\\quad E(X^2)=\\int_x x^2f(x)\\,dx=\\int_{0}^{1}x^2(2-2x)\\,dx=\\int_{0}^{1}(2x^2-2x^3)\\,dx$",
+     "pashto": "$(ii)\\quad E(X^2)=\\int_x x^2f(x)\\,dx=\\int_{0}^{1}x^2(2-2x)\\,dx=\\int_{0}^{1}(2x^2-2x^3)\\,dx$"
+    },
+    {
+     "text": "$=2\\int_{0}^{1}x^2dx-2\\int_{0}^{1}x^3dx=2\\left(\\left.\\frac{x^3}{3}\\right|_{0}^{1}\\right)-2\\left(\\left.\\frac{x^4}{4}\\right|_{0}^{1}\\right)$",
+     "urdu": "$=2\\int_{0}^{1}x^2dx-2\\int_{0}^{1}x^3dx=2\\left(\\left.\\frac{x^3}{3}\\right|_{0}^{1}\\right)-2\\left(\\left.\\frac{x^4}{4}\\right|_{0}^{1}\\right)$",
+     "pashto": "$=2\\int_{0}^{1}x^2dx-2\\int_{0}^{1}x^3dx=2\\left(\\left.\\frac{x^3}{3}\\right|_{0}^{1}\\right)-2\\left(\\left.\\frac{x^4}{4}\\right|_{0}^{1}\\right)$"
+    },
+    {
+     "text": "$=2\\left(\\frac{1}{3}-0\\right)-2\\left(\\frac{1}{4}-0\\right)=\\frac{2}{3}-\\frac{1}{2}=\\frac{4-3}{6}=\\frac{1}{6}$",
+     "urdu": "$=2\\left(\\frac{1}{3}-0\\right)-2\\left(\\frac{1}{4}-0\\right)=\\frac{2}{3}-\\frac{1}{2}=\\frac{4-3}{6}=\\frac{1}{6}$",
+     "pashto": "$=2\\left(\\frac{1}{3}-0\\right)-2\\left(\\frac{1}{4}-0\\right)=\\frac{2}{3}-\\frac{1}{2}=\\frac{4-3}{6}=\\frac{1}{6}$"
+    },
+    {
+     "text": "(iii) $E(2X)=2E(X)$, (By property)",
+     "urdu": "(iii) $E(2X)=2E(X)$، (خاصیت کے مطابق)",
+     "pashto": "(iii) $E(2X)=2E(X)$، (د ځانګړنې له مخې)"
+    },
+    {
+     "text": "$=2(1/3)=2/3$",
+     "urdu": "$=2(1/3)=2/3$",
+     "pashto": "$=2(1/3)=2/3$"
+    },
+    {
+     "text": "$(iv)\\quad E(2X-1)=2E(X)-1=2\\left(\\tfrac{1}{3}\\right)-1=-1/3$",
+     "urdu": "$(iv)\\quad E(2X-1)=2E(X)-1=2\\left(\\tfrac{1}{3}\\right)-1=-1/3$",
+     "pashto": "$(iv)\\quad E(2X-1)=2E(X)-1=2\\left(\\tfrac{1}{3}\\right)-1=-1/3$"
+    },
+    {
+     "text": "$(v)\\quad\\text{Variance}=V(X)=E(X^2)-[E(X)]^2$",
+     "urdu": "$(v)\\quad\\text{Variance}=V(X)=E(X^2)-[E(X)]^2$",
+     "pashto": "$(v)\\quad\\text{Variance}=V(X)=E(X^2)-[E(X)]^2$"
+    },
+    {
+     "text": "$=\\frac{1}{6}-\\left(\\frac{1}{3}\\right)^2=\\frac{1}{6}-\\frac{1}{9}=\\frac{3-2}{18}=\\frac{1}{18}=0.056$",
+     "urdu": "$=\\frac{1}{6}-\\left(\\frac{1}{3}\\right)^2=\\frac{1}{6}-\\frac{1}{9}=\\frac{3-2}{18}=\\frac{1}{18}=0.056$",
+     "pashto": "$=\\frac{1}{6}-\\left(\\frac{1}{3}\\right)^2=\\frac{1}{6}-\\frac{1}{9}=\\frac{3-2}{18}=\\frac{1}{18}=0.056$"
+    },
+    {
+     "text": "$S.D(X)=\\sqrt{0.056}=0.24$",
+     "urdu": "$S.D(X)=\\sqrt{0.056}=0.24$",
+     "pashto": "$S.D(X)=\\sqrt{0.056}=0.24$"
+    }
+   ],
+   "theory": "Solution:\n\n(i)\\quad E(X)=\\int_x x\\,f(x)\\,dx=\\int_{0}^{1}x(2-2x)\\,dx=\\int_{0}^{1}(2x-2x^2)\\,dx\n\n=\\int_{0}^{1}2x\\,dx-\\int_{0}^{1}2x^2\\,dx=2\\int_{0}^{1}x\\,dx-2\\int_{0}^{1}x^2dx\n\n=\\left.x^2\\right|_{0}^{1}-2\\left.\\frac{x^3}{3}\\right|_{0}^{1}\n\n=(1-0)-\\left(\\frac{2}{3}-0\\right)=1-\\frac{2}{3}=\\frac{3-2}{3}=\\frac{1}{3}\n\n(ii)\\quad E(X^2)=\\int_x x^2f(x)\\,dx=\\int_{0}^{1}x^2(2-2x)\\,dx=\\int_{0}^{1}(2x^2-2x^3)\\,dx\n\n=2\\int_{0}^{1}x^2dx-2\\int_{0}^{1}x^3dx=2\\left(\\left.\\frac{x^3}{3}\\right|_{0}^{1}\\right)-2\\left(\\left.\\frac{x^4}{4}\\right|_{0}^{1}\\right)\n\n=2\\left(\\frac{1}{3}-0\\right)-2\\left(\\frac{1}{4}-0\\right)=\\frac{2}{3}-\\frac{1}{2}=\\frac{4-3}{6}=\\frac{1}{6}\n\n(iii) E(2X)=2E(X), (By property)\n\n=2(1/3)=2/3\n\n(iv)\\quad E(2X-1)=2E(X)-1=2\\left(\\tfrac{1}{3}\\right)-1=-1/3\n\n(v)\\quad\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\n\n=\\frac{1}{6}-\\left(\\frac{1}{3}\\right)^2=\\frac{1}{6}-\\frac{1}{9}=\\frac{3-2}{18}=\\frac{1}{18}=0.056\n\nS.D(X)=\\sqrt{0.056}=0.24",
+   "urdu": "حل:\n\n(i)\\quad E(X)=\\int_x x\\,f(x)\\,dx=\\int_{0}^{1}x(2-2x)\\,dx=\\int_{0}^{1}(2x-2x^2)\\,dx\n\n=\\int_{0}^{1}2x\\,dx-\\int_{0}^{1}2x^2\\,dx=2\\int_{0}^{1}x\\,dx-2\\int_{0}^{1}x^2dx\n\n=\\left.x^2\\right|_{0}^{1}-2\\left.\\frac{x^3}{3}\\right|_{0}^{1}\n\n=(1-0)-\\left(\\frac{2}{3}-0\\right)=1-\\frac{2}{3}=\\frac{3-2}{3}=\\frac{1}{3}\n\n(ii)\\quad E(X^2)=\\int_x x^2f(x)\\,dx=\\int_{0}^{1}x^2(2-2x)\\,dx=\\int_{0}^{1}(2x^2-2x^3)\\,dx\n\n=2\\int_{0}^{1}x^2dx-2\\int_{0}^{1}x^3dx=2\\left(\\left.\\frac{x^3}{3}\\right|_{0}^{1}\\right)-2\\left(\\left.\\frac{x^4}{4}\\right|_{0}^{1}\\right)\n\n=2\\left(\\frac{1}{3}-0\\right)-2\\left(\\frac{1}{4}-0\\right)=\\frac{2}{3}-\\frac{1}{2}=\\frac{4-3}{6}=\\frac{1}{6}\n\n(iii) E(2X)=2E(X)، (خاصیت کے مطابق)\n\n=2(1/3)=2/3\n\n(iv)\\quad E(2X-1)=2E(X)-1=2\\left(\\tfrac{1}{3}\\right)-1=-1/3\n\n(v)\\quad\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\n\n=\\frac{1}{6}-\\left(\\frac{1}{3}\\right)^2=\\frac{1}{6}-\\frac{1}{9}=\\frac{3-2}{18}=\\frac{1}{18}=0.056\n\nS.D(X)=\\sqrt{0.056}=0.24",
+   "pashto": "حل:\n\n(i)\\quad E(X)=\\int_x x\\,f(x)\\,dx=\\int_{0}^{1}x(2-2x)\\,dx=\\int_{0}^{1}(2x-2x^2)\\,dx\n\n=\\int_{0}^{1}2x\\,dx-\\int_{0}^{1}2x^2\\,dx=2\\int_{0}^{1}x\\,dx-2\\int_{0}^{1}x^2dx\n\n=\\left.x^2\\right|_{0}^{1}-2\\left.\\frac{x^3}{3}\\right|_{0}^{1}\n\n=(1-0)-\\left(\\frac{2}{3}-0\\right)=1-\\frac{2}{3}=\\frac{3-2}{3}=\\frac{1}{3}\n\n(ii)\\quad E(X^2)=\\int_x x^2f(x)\\,dx=\\int_{0}^{1}x^2(2-2x)\\,dx=\\int_{0}^{1}(2x^2-2x^3)\\,dx\n\n=2\\int_{0}^{1}x^2dx-2\\int_{0}^{1}x^3dx=2\\left(\\left.\\frac{x^3}{3}\\right|_{0}^{1}\\right)-2\\left(\\left.\\frac{x^4}{4}\\right|_{0}^{1}\\right)\n\n=2\\left(\\frac{1}{3}-0\\right)-2\\left(\\frac{1}{4}-0\\right)=\\frac{2}{3}-\\frac{1}{2}=\\frac{4-3}{6}=\\frac{1}{6}\n\n(iii) E(2X)=2E(X)، (د ځانګړنې له مخې)\n\n=2(1/3)=2/3\n\n(iv)\\quad E(2X-1)=2E(X)-1=2\\left(\\tfrac{1}{3}\\right)-1=-1/3\n\n(v)\\quad\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\n\n=\\frac{1}{6}-\\left(\\frac{1}{3}\\right)^2=\\frac{1}{6}-\\frac{1}{9}=\\frac{3-2}{18}=\\frac{1}{18}=0.056\n\nS.D(X)=\\sqrt{0.056}=0.24",
+   "theoryUrdu": "حل:\n\n(i)\\quad E(X)=\\int_x x\\,f(x)\\,dx=\\int_{0}^{1}x(2-2x)\\,dx=\\int_{0}^{1}(2x-2x^2)\\,dx\n\n=\\int_{0}^{1}2x\\,dx-\\int_{0}^{1}2x^2\\,dx=2\\int_{0}^{1}x\\,dx-2\\int_{0}^{1}x^2dx\n\n=\\left.x^2\\right|_{0}^{1}-2\\left.\\frac{x^3}{3}\\right|_{0}^{1}\n\n=(1-0)-\\left(\\frac{2}{3}-0\\right)=1-\\frac{2}{3}=\\frac{3-2}{3}=\\frac{1}{3}\n\n(ii)\\quad E(X^2)=\\int_x x^2f(x)\\,dx=\\int_{0}^{1}x^2(2-2x)\\,dx=\\int_{0}^{1}(2x^2-2x^3)\\,dx\n\n=2\\int_{0}^{1}x^2dx-2\\int_{0}^{1}x^3dx=2\\left(\\left.\\frac{x^3}{3}\\right|_{0}^{1}\\right)-2\\left(\\left.\\frac{x^4}{4}\\right|_{0}^{1}\\right)\n\n=2\\left(\\frac{1}{3}-0\\right)-2\\left(\\frac{1}{4}-0\\right)=\\frac{2}{3}-\\frac{1}{2}=\\frac{4-3}{6}=\\frac{1}{6}\n\n(iii) E(2X)=2E(X)، (خاصیت کے مطابق)\n\n=2(1/3)=2/3\n\n(iv)\\quad E(2X-1)=2E(X)-1=2\\left(\\tfrac{1}{3}\\right)-1=-1/3\n\n(v)\\quad\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\n\n=\\frac{1}{6}-\\left(\\frac{1}{3}\\right)^2=\\frac{1}{6}-\\frac{1}{9}=\\frac{3-2}{18}=\\frac{1}{18}=0.056\n\nS.D(X)=\\sqrt{0.056}=0.24",
+   "theoryPashto": "حل:\n\n(i)\\quad E(X)=\\int_x x\\,f(x)\\,dx=\\int_{0}^{1}x(2-2x)\\,dx=\\int_{0}^{1}(2x-2x^2)\\,dx\n\n=\\int_{0}^{1}2x\\,dx-\\int_{0}^{1}2x^2\\,dx=2\\int_{0}^{1}x\\,dx-2\\int_{0}^{1}x^2dx\n\n=\\left.x^2\\right|_{0}^{1}-2\\left.\\frac{x^3}{3}\\right|_{0}^{1}\n\n=(1-0)-\\left(\\frac{2}{3}-0\\right)=1-\\frac{2}{3}=\\frac{3-2}{3}=\\frac{1}{3}\n\n(ii)\\quad E(X^2)=\\int_x x^2f(x)\\,dx=\\int_{0}^{1}x^2(2-2x)\\,dx=\\int_{0}^{1}(2x^2-2x^3)\\,dx\n\n=2\\int_{0}^{1}x^2dx-2\\int_{0}^{1}x^3dx=2\\left(\\left.\\frac{x^3}{3}\\right|_{0}^{1}\\right)-2\\left(\\left.\\frac{x^4}{4}\\right|_{0}^{1}\\right)\n\n=2\\left(\\frac{1}{3}-0\\right)-2\\left(\\frac{1}{4}-0\\right)=\\frac{2}{3}-\\frac{1}{2}=\\frac{4-3}{6}=\\frac{1}{6}\n\n(iii) E(2X)=2E(X)، (د ځانګړنې له مخې)\n\n=2(1/3)=2/3\n\n(iv)\\quad E(2X-1)=2E(X)-1=2\\left(\\tfrac{1}{3}\\right)-1=-1/3\n\n(v)\\quad\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\n\n=\\frac{1}{6}-\\left(\\frac{1}{3}\\right)^2=\\frac{1}{6}-\\frac{1}{9}=\\frac{3-2}{18}=\\frac{1}{18}=0.056\n\nS.D(X)=\\sqrt{0.056}=0.24",
+   "content": "<p>Solution:</p><p>(i)\\quad E(X)=\\int_x x\\,f(x)\\,dx=\\int_{0}^{1}x(2-2x)\\,dx=\\int_{0}^{1}(2x-2x^2)\\,dx</p><p>=\\int_{0}^{1}2x\\,dx-\\int_{0}^{1}2x^2\\,dx=2\\int_{0}^{1}x\\,dx-2\\int_{0}^{1}x^2dx</p><p>=\\left.x^2\\right|_{0}^{1}-2\\left.\\frac{x^3}{3}\\right|_{0}^{1}</p><p>=(1-0)-\\left(\\frac{2}{3}-0\\right)=1-\\frac{2}{3}=\\frac{3-2}{3}=\\frac{1}{3}</p><p>(ii)\\quad E(X^2)=\\int_x x^2f(x)\\,dx=\\int_{0}^{1}x^2(2-2x)\\,dx=\\int_{0}^{1}(2x^2-2x^3)\\,dx</p><p>=2\\int_{0}^{1}x^2dx-2\\int_{0}^{1}x^3dx=2\\left(\\left.\\frac{x^3}{3}\\right|_{0}^{1}\\right)-2\\left(\\left.\\frac{x^4}{4}\\right|_{0}^{1}\\right)</p><p>=2\\left(\\frac{1}{3}-0\\right)-2\\left(\\frac{1}{4}-0\\right)=\\frac{2}{3}-\\frac{1}{2}=\\frac{4-3}{6}=\\frac{1}{6}</p><p>(iii) E(2X)=2E(X), (By property)</p><p>=2(1/3)=2/3</p><p>(iv)\\quad E(2X-1)=2E(X)-1=2\\left(\\tfrac{1}{3}\\right)-1=-1/3</p><p>(v)\\quad\\text{Variance}=V(X)=E(X^2)-[E(X)]^2</p><p>=\\frac{1}{6}-\\left(\\frac{1}{3}\\right)^2=\\frac{1}{6}-\\frac{1}{9}=\\frac{3-2}{18}=\\frac{1}{18}=0.056</p><p>S.D(X)=\\sqrt{0.056}=0.24</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10,
+      11,
+      12,
+      13
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 32,
+     "printedPages": [
+      55
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  },
+  {
+   "id": "stat12-p032-joint-distributions",
+   "title": "2.4 Two independent random variables — joint and bivariate distributions",
+   "headingUrdu": "2.4 دو آزاد تصادفی متغیرات — مشترکہ اور دو متغیری تقسیمیں",
+   "headingPashto": "2.4 دوه خپلواک تصادفي متغیرونه — ګډ او دوه متغیره وېشونه",
+   "paras": [
+    {
+     "text": "2.4 Two independent random variables",
+     "urdu": "2.4 دو آزاد تصادفی متغیرات",
+     "pashto": "2.4 دوه خپلواک تصادفي متغیرونه"
+    },
+    {
+     "text": "This is an extension of the one random variable case. The problem will be to recognize the old ideas behind the new names.",
+     "urdu": "یہ ایک تصادفی متغیر والی صورت کی توسیع ہے۔ مسئلہ یہ ہوگا کہ نئے ناموں کے پیچھے پرانے تصورات کو پہچانا جائے۔",
+     "pashto": "دا د یوه تصادفي متغیر د حالت پراختیا ده. ستونزه به دا وي چې د نویو نومونو تر شا زاړه مفهومونه وپېژنو."
+    },
+    {
+     "text": "2.4.1 Joint distributions",
+     "urdu": "2.4.1 مشترکہ تقسیمیں",
+     "pashto": "2.4.1 ګډ وېشونه"
+    },
+    {
+     "text": "The distribution of two or more random variables is called joint distribution. Specifically;",
+     "urdu": "دو یا زیادہ تصادفی متغیرات کی تقسیم کو مشترکہ تقسیم کہتے ہیں۔ خاص طور پر؛",
+     "pashto": "د دوو یا ډېرو تصادفي متغیرونو وېش ته ګډ وېش وایي. په ځانګړې توګه؛"
+    },
+    {
+     "text": "The distribution of one random variable is called univariate probability distribution.",
+     "urdu": "ایک تصادفی متغیر کی تقسیم کو یک متغیری احتمالی تقسیم کہتے ہیں۔",
+     "pashto": "د یوه تصادفي متغیر وېش ته یو متغیره احتمالي وېش وایي."
+    },
+    {
+     "text": "The distribution of two random variables is called bivariate probability distribution.",
+     "urdu": "دو تصادفی متغیرات کی تقسیم کو دو متغیری احتمالی تقسیم کہتے ہیں۔",
+     "pashto": "د دوو تصادفي متغیرونو وېش ته دوه متغیره احتمالي وېش وایي."
+    },
+    {
+     "text": "The distribution of three random variables is called trivariate probability distribution.",
+     "urdu": "تین تصادفی متغیرات کی تقسیم کو سہ متغیری احتمالی تقسیم کہتے ہیں۔",
+     "pashto": "د درېیو تصادفي متغیرونو وېش ته درې متغیره احتمالي وېش وایي."
+    },
+    {
+     "text": "The distribution of many random variables is called multivariate probability distribution.",
+     "urdu": "بہت سے تصادفی متغیرات کی تقسیم کو کثیر متغیری احتمالی تقسیم کہتے ہیں۔",
+     "pashto": "د ډېرو تصادفي متغیرونو وېش ته څو متغیره احتمالي وېش وایي."
+    },
+    {
+     "text": "2.4.2 Bivariate probability distribution",
+     "urdu": "2.4.2 دو متغیری احتمالی تقسیم",
+     "pashto": "2.4.2 دوه متغیره احتمالي وېش"
+    },
+    {
+     "text": "If all possible values of two random variables along with their joint probabilities are presented in tabular form then, it is called bivariate probability distribution. Suppose X and Y are two discrete random variables, where X has “m” values and Y has “n” values, then bivariate probability distribution of X and Y is given by",
+     "urdu": "اگر دو تصادفی متغیرات کی تمام ممکنہ قیمتیں ان کے مشترکہ احتمالات کے ساتھ جدولی شکل میں پیش کی جائیں تو اسے دو متغیری احتمالی تقسیم کہتے ہیں۔ فرض کریں X اور Y دو منفصل تصادفی متغیرات ہیں جن میں X کی “m” قیمتیں اور Y کی “n” قیمتیں ہیں، تو X اور Y کی دو متغیری احتمالی تقسیم یہ ہے",
+     "pashto": "که د دوو تصادفي متغیرونو ټول شوني قیمتونه له ګډو احتمالونو سره په جدولي بڼه وړاندې شي، نو دوه متغیره احتمالي وېش بلل کېږي. فرض کړئ X او Y دوه منفصل تصادفي متغیرونه دي، چې X “m” قیمتونه او Y “n” قیمتونه لري، نو د X او Y دوه متغیره احتمالي وېش دا دی"
+    }
+   ],
+   "theory": "2.4 Two independent random variables\n\nThis is an extension of the one random variable case. The problem will be to recognize the old ideas behind the new names.\n\n2.4.1 Joint distributions\n\nThe distribution of two or more random variables is called joint distribution. Specifically;\n\nThe distribution of one random variable is called univariate probability distribution.\n\nThe distribution of two random variables is called bivariate probability distribution.\n\nThe distribution of three random variables is called trivariate probability distribution.\n\nThe distribution of many random variables is called multivariate probability distribution.\n\n2.4.2 Bivariate probability distribution\n\nIf all possible values of two random variables along with their joint probabilities are presented in tabular form then, it is called bivariate probability distribution. Suppose X and Y are two discrete random variables, where X has “m” values and Y has “n” values, then bivariate probability distribution of X and Y is given by",
+   "urdu": "2.4 دو آزاد تصادفی متغیرات\n\nیہ ایک تصادفی متغیر والی صورت کی توسیع ہے۔ مسئلہ یہ ہوگا کہ نئے ناموں کے پیچھے پرانے تصورات کو پہچانا جائے۔\n\n2.4.1 مشترکہ تقسیمیں\n\nدو یا زیادہ تصادفی متغیرات کی تقسیم کو مشترکہ تقسیم کہتے ہیں۔ خاص طور پر؛\n\nایک تصادفی متغیر کی تقسیم کو یک متغیری احتمالی تقسیم کہتے ہیں۔\n\nدو تصادفی متغیرات کی تقسیم کو دو متغیری احتمالی تقسیم کہتے ہیں۔\n\nتین تصادفی متغیرات کی تقسیم کو سہ متغیری احتمالی تقسیم کہتے ہیں۔\n\nبہت سے تصادفی متغیرات کی تقسیم کو کثیر متغیری احتمالی تقسیم کہتے ہیں۔\n\n2.4.2 دو متغیری احتمالی تقسیم\n\nاگر دو تصادفی متغیرات کی تمام ممکنہ قیمتیں ان کے مشترکہ احتمالات کے ساتھ جدولی شکل میں پیش کی جائیں تو اسے دو متغیری احتمالی تقسیم کہتے ہیں۔ فرض کریں X اور Y دو منفصل تصادفی متغیرات ہیں جن میں X کی “m” قیمتیں اور Y کی “n” قیمتیں ہیں، تو X اور Y کی دو متغیری احتمالی تقسیم یہ ہے",
+   "pashto": "2.4 دوه خپلواک تصادفي متغیرونه\n\nدا د یوه تصادفي متغیر د حالت پراختیا ده. ستونزه به دا وي چې د نویو نومونو تر شا زاړه مفهومونه وپېژنو.\n\n2.4.1 ګډ وېشونه\n\nد دوو یا ډېرو تصادفي متغیرونو وېش ته ګډ وېش وایي. په ځانګړې توګه؛\n\nد یوه تصادفي متغیر وېش ته یو متغیره احتمالي وېش وایي.\n\nد دوو تصادفي متغیرونو وېش ته دوه متغیره احتمالي وېش وایي.\n\nد درېیو تصادفي متغیرونو وېش ته درې متغیره احتمالي وېش وایي.\n\nد ډېرو تصادفي متغیرونو وېش ته څو متغیره احتمالي وېش وایي.\n\n2.4.2 دوه متغیره احتمالي وېش\n\nکه د دوو تصادفي متغیرونو ټول شوني قیمتونه له ګډو احتمالونو سره په جدولي بڼه وړاندې شي، نو دوه متغیره احتمالي وېش بلل کېږي. فرض کړئ X او Y دوه منفصل تصادفي متغیرونه دي، چې X “m” قیمتونه او Y “n” قیمتونه لري، نو د X او Y دوه متغیره احتمالي وېش دا دی",
+   "theoryUrdu": "2.4 دو آزاد تصادفی متغیرات\n\nیہ ایک تصادفی متغیر والی صورت کی توسیع ہے۔ مسئلہ یہ ہوگا کہ نئے ناموں کے پیچھے پرانے تصورات کو پہچانا جائے۔\n\n2.4.1 مشترکہ تقسیمیں\n\nدو یا زیادہ تصادفی متغیرات کی تقسیم کو مشترکہ تقسیم کہتے ہیں۔ خاص طور پر؛\n\nایک تصادفی متغیر کی تقسیم کو یک متغیری احتمالی تقسیم کہتے ہیں۔\n\nدو تصادفی متغیرات کی تقسیم کو دو متغیری احتمالی تقسیم کہتے ہیں۔\n\nتین تصادفی متغیرات کی تقسیم کو سہ متغیری احتمالی تقسیم کہتے ہیں۔\n\nبہت سے تصادفی متغیرات کی تقسیم کو کثیر متغیری احتمالی تقسیم کہتے ہیں۔\n\n2.4.2 دو متغیری احتمالی تقسیم\n\nاگر دو تصادفی متغیرات کی تمام ممکنہ قیمتیں ان کے مشترکہ احتمالات کے ساتھ جدولی شکل میں پیش کی جائیں تو اسے دو متغیری احتمالی تقسیم کہتے ہیں۔ فرض کریں X اور Y دو منفصل تصادفی متغیرات ہیں جن میں X کی “m” قیمتیں اور Y کی “n” قیمتیں ہیں، تو X اور Y کی دو متغیری احتمالی تقسیم یہ ہے",
+   "theoryPashto": "2.4 دوه خپلواک تصادفي متغیرونه\n\nدا د یوه تصادفي متغیر د حالت پراختیا ده. ستونزه به دا وي چې د نویو نومونو تر شا زاړه مفهومونه وپېژنو.\n\n2.4.1 ګډ وېشونه\n\nد دوو یا ډېرو تصادفي متغیرونو وېش ته ګډ وېش وایي. په ځانګړې توګه؛\n\nد یوه تصادفي متغیر وېش ته یو متغیره احتمالي وېش وایي.\n\nد دوو تصادفي متغیرونو وېش ته دوه متغیره احتمالي وېش وایي.\n\nد درېیو تصادفي متغیرونو وېش ته درې متغیره احتمالي وېش وایي.\n\nد ډېرو تصادفي متغیرونو وېش ته څو متغیره احتمالي وېش وایي.\n\n2.4.2 دوه متغیره احتمالي وېش\n\nکه د دوو تصادفي متغیرونو ټول شوني قیمتونه له ګډو احتمالونو سره په جدولي بڼه وړاندې شي، نو دوه متغیره احتمالي وېش بلل کېږي. فرض کړئ X او Y دوه منفصل تصادفي متغیرونه دي، چې X “m” قیمتونه او Y “n” قیمتونه لري، نو د X او Y دوه متغیره احتمالي وېش دا دی",
+   "content": "<p>2.4 Two independent random variables</p><p>This is an extension of the one random variable case. The problem will be to recognize the old ideas behind the new names.</p><p>2.4.1 Joint distributions</p><p>The distribution of two or more random variables is called joint distribution. Specifically;</p><p>The distribution of one random variable is called univariate probability distribution.</p><p>The distribution of two random variables is called bivariate probability distribution.</p><p>The distribution of three random variables is called trivariate probability distribution.</p><p>The distribution of many random variables is called multivariate probability distribution.</p><p>2.4.2 Bivariate probability distribution</p><p>If all possible values of two random variables along with their joint probabilities are presented in tabular form then, it is called bivariate probability distribution. Suppose X and Y are two discrete random variables, where X has “m” values and Y has “n” values, then bivariate probability distribution of X and Y is given by</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-bivariate-general"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-bivariate-general",
+     "headers": [
+      "$X\\backslash Y$",
+      "$y_1$",
+      "$y_2$",
+      "$\\cdots$",
+      "$y_j$",
+      "$\\cdots$",
+      "$y_n$",
+      "$p(x)$"
+     ],
+     "rows": [
+      [
+       "$x_1$",
+       "$p(x_1,y_1)$",
+       "$p(x_1,y_2)$",
+       "$\\cdots$",
+       "$p(x_1,y_j)$",
+       "$\\cdots$",
+       "$p(x_1,y_n)$",
+       "$p(x_1)$"
+      ],
+      [
+       "$x_2$",
+       "$p(x_2,y_1)$",
+       "$p(x_2,y_2)$",
+       "$\\cdots$",
+       "$p(x_2,y_j)$",
+       "$\\cdots$",
+       "$p(x_2,y_n)$",
+       "$p(x_2)$"
+      ],
+      [
+       "$\\vdots$",
+       "",
+       "",
+       "$\\vdots$",
+       "",
+       "$\\vdots$",
+       "$\\vdots$",
+       "$\\vdots$"
+      ],
+      [
+       "$x_i$",
+       "$p(x_i,y_1)$",
+       "$p(x_i,y_2)$",
+       "$\\cdots$",
+       "$p(x_i,y_j)$",
+       "$\\cdots$",
+       "$p(x_i,y_n)$",
+       "$p(x_i)$"
+      ],
+      [
+       "$\\vdots$",
+       "",
+       "",
+       "$\\vdots$",
+       "",
+       "$\\vdots$",
+       "$\\vdots$",
+       "$\\vdots$"
+      ],
+      [
+       "$x_m$",
+       "$p(x_m,y_1)$",
+       "$p(x_m,y_2)$",
+       "$\\cdots$",
+       "$p(x_m,y_j)$",
+       "$\\cdots$",
+       "$p(x_m,y_n)$",
+       "$p(x_m)$"
+      ],
+      [
+       "$p(y)$",
+       "$p(y_1)$",
+       "$p(y_2)$",
+       "$\\cdots$",
+       "$p(y_j)$",
+       "$\\cdots$",
+       "$p(y_n)$",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X\\backslash Y$",
+        "$y_1$",
+        "$y_2$",
+        "$\\cdots$",
+        "$y_j$",
+        "$\\cdots$",
+        "$y_n$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "$x_1$",
+         "$p(x_1,y_1)$",
+         "$p(x_1,y_2)$",
+         "$\\cdots$",
+         "$p(x_1,y_j)$",
+         "$\\cdots$",
+         "$p(x_1,y_n)$",
+         "$p(x_1)$"
+        ],
+        [
+         "$x_2$",
+         "$p(x_2,y_1)$",
+         "$p(x_2,y_2)$",
+         "$\\cdots$",
+         "$p(x_2,y_j)$",
+         "$\\cdots$",
+         "$p(x_2,y_n)$",
+         "$p(x_2)$"
+        ],
+        [
+         "$\\vdots$",
+         "",
+         "",
+         "$\\vdots$",
+         "",
+         "$\\vdots$",
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$x_i$",
+         "$p(x_i,y_1)$",
+         "$p(x_i,y_2)$",
+         "$\\cdots$",
+         "$p(x_i,y_j)$",
+         "$\\cdots$",
+         "$p(x_i,y_n)$",
+         "$p(x_i)$"
+        ],
+        [
+         "$\\vdots$",
+         "",
+         "",
+         "$\\vdots$",
+         "",
+         "$\\vdots$",
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$x_m$",
+         "$p(x_m,y_1)$",
+         "$p(x_m,y_2)$",
+         "$\\cdots$",
+         "$p(x_m,y_j)$",
+         "$\\cdots$",
+         "$p(x_m,y_n)$",
+         "$p(x_m)$"
+        ],
+        [
+         "$p(y)$",
+         "$p(y_1)$",
+         "$p(y_2)$",
+         "$\\cdots$",
+         "$p(y_j)$",
+         "$\\cdots$",
+         "$p(y_n)$",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X\\backslash Y$",
+        "$y_1$",
+        "$y_2$",
+        "$\\cdots$",
+        "$y_j$",
+        "$\\cdots$",
+        "$y_n$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "$x_1$",
+         "$p(x_1,y_1)$",
+         "$p(x_1,y_2)$",
+         "$\\cdots$",
+         "$p(x_1,y_j)$",
+         "$\\cdots$",
+         "$p(x_1,y_n)$",
+         "$p(x_1)$"
+        ],
+        [
+         "$x_2$",
+         "$p(x_2,y_1)$",
+         "$p(x_2,y_2)$",
+         "$\\cdots$",
+         "$p(x_2,y_j)$",
+         "$\\cdots$",
+         "$p(x_2,y_n)$",
+         "$p(x_2)$"
+        ],
+        [
+         "$\\vdots$",
+         "",
+         "",
+         "$\\vdots$",
+         "",
+         "$\\vdots$",
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$x_i$",
+         "$p(x_i,y_1)$",
+         "$p(x_i,y_2)$",
+         "$\\cdots$",
+         "$p(x_i,y_j)$",
+         "$\\cdots$",
+         "$p(x_i,y_n)$",
+         "$p(x_i)$"
+        ],
+        [
+         "$\\vdots$",
+         "",
+         "",
+         "$\\vdots$",
+         "",
+         "$\\vdots$",
+         "$\\vdots$",
+         "$\\vdots$"
+        ],
+        [
+         "$x_m$",
+         "$p(x_m,y_1)$",
+         "$p(x_m,y_2)$",
+         "$\\cdots$",
+         "$p(x_m,y_j)$",
+         "$\\cdots$",
+         "$p(x_m,y_n)$",
+         "$p(x_m)$"
+        ],
+        [
+         "$p(y)$",
+         "$p(y_1)$",
+         "$p(y_2)$",
+         "$\\cdots$",
+         "$p(y_j)$",
+         "$\\cdots$",
+         "$p(y_n)$",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 32,
+     "printedPages": [
+      56
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

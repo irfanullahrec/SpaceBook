@@ -1,0 +1,267 @@
+{
+ "pdfPage": 45,
+ "sections": [
+  {
+   "id": "cs12-u3-text-11",
+   "title": "Unit 3 text (11)",
+   "headingUrdu": "یونٹ 3 — متن (۱۱)",
+   "headingPashto": "۳ څپرکی — متن (۱۱)",
+   "paras": [
+    {
+     "text": "int x;\nfloat pi = 3.14;\nx = (int) pi;",
+     "urdu": "int x;\nfloat pi = 3.14;\nx = (int) pi;",
+     "pashto": "int x;\nfloat pi = 3.14;\nx = (int) pi;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In the above code, the float number 3.14 is converted to an integer value 3 and the remainder is discarded. Here, the type casting operator is (int). Another way for explicit type casting is to precede the expression to be converted by the type and enclose the expression in parentheses. Consider the following line of code:",
+     "urdu": "اوپر والے کوڈ میں فلوٹ عدد 3.14 کو صحیح عدد 3 میں تبدیل کیا جاتا ہے اور باقی حصہ ترک کر دیا جاتا ہے۔ یہاں ٹائپ کاسٹنگ آپریٹر (int) ہے۔ صریح ٹائپ کاسٹنگ کا دوسرا طریقہ یہ ہے کہ تبدیل کیے جانے والے ایکسپریشن سے پہلے قسم لکھی جائے اور ایکسپریشن کو قوسین میں بند کیا جائے۔ کوڈ کی درج ذیل لائن پر غور کریں:",
+     "pashto": "په پورته کوډ کې اعشاري عدد 3.14 صحیح عدد 3 ته اړول کېږي او پاتې برخه پرېښودل کېږي. دلته د ډول بدلولو چلونکی (int) دی. د څرګند ډول بدلولو بله لاره دا ده چې د اړول کېدونکې افادې مخې ته ډول ولیکل شي او افاده په قوسونو کې وتړل شي. د کوډ لاندې کرښې ته پام وکړئ:"
+    },
+    {
+     "text": "x = int ( pi );",
+     "urdu": "x = int ( pi );",
+     "pashto": "x = int ( pi );",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "3.3 Input/Output Handling",
+     "urdu": "3.3 ان پٹ/آؤٹ پٹ کا انتظام",
+     "pashto": "۳.۳ د ننوتو/وتو اداره"
+    },
+    {
+     "text": "For input/output operations, C++ uses streams in sequential media such as the screen or the keyboard. A stream is an object where a C++ program inserts characters to or extracts the characters from stream. All the standard input and output stream objects are declared within the header file iostream which is a part of the standard C++ library.",
+     "urdu": "ان پٹ/آؤٹ پٹ کے عمل کے لیے C++ ترتیبی ذرائع جیسے اسکرین یا کی بورڈ میں اسٹریمز استعمال کرتی ہے۔ اسٹریم ایک آبجیکٹ ہے جس میں C++ پروگرام حروف داخل کرتا ہے یا اس سے حروف نکالتا ہے۔ تمام معیاری ان پٹ اور آؤٹ پٹ اسٹریم آبجیکٹس ہیڈر فائل iostream میں ڈکلیئر ہوتے ہیں جو معیاری C++ لائبریری کا حصہ ہے۔",
+     "pashto": "د ننوتو/وتو عملیو لپاره C++ په ترتیبي رسنیو لکه پرده یا کیبورډ کې بهیرونه (streams) کاروي. بهیر یو شی دی چې C++ پروګرام پکې توري ورننباسي یا ترې توري راباسي. ټول معیاري د ننوتو او وتو بهیر شیان په iostream سرلیک فایل کې اعلان شوي چې د معیاري C++ کتابتون برخه ده."
+    },
+    {
+     "text": "3.3.1 Standard output (cout)",
+     "urdu": "3.3.1 معیاری آؤٹ پٹ (cout)",
+     "pashto": "۳.۳.۱ معیاري وتنه (cout)"
+    },
+    {
+     "text": "The default standard output of a C++ program is the screen, and cout is the C++ stream object which defines it. cout is used in conjunction with the insertion operator, which is written as <<. Consider the following segment of code:",
+     "urdu": "C++ پروگرام کا طے شدہ معیاری آؤٹ پٹ اسکرین ہے، اور cout وہ C++ اسٹریم آبجیکٹ ہے جو اسے متعین کرتا ہے۔ cout کو انسرشن آپریٹر کے ساتھ استعمال کیا جاتا ہے جو << لکھا جاتا ہے۔ کوڈ کے درج ذیل حصے پر غور کریں:",
+     "pashto": "د C++ پروګرام ډیفالټ معیاري وتنه پرده ده، او cout د C++ هغه بهیر شی دی چې دا ټاکي. cout د ورننویستلو (insertion) چلونکي سره چې << لیکل کېږي، کارول کېږي. د کوډ لاندې برخې ته پام وکړئ:"
+    },
+    {
+     "text": "cout << \"Output\"; // prints Output on the screen\ncout << 121; // prints number 121 on the screen\ncout << var; // prints the content of 'var' on the screen",
+     "urdu": "cout << \"Output\"; // prints Output on the screen\ncout << 121; // prints number 121 on the screen\ncout << var; // prints the content of 'var' on the screen",
+     "pashto": "cout << \"Output\"; // prints Output on the screen\ncout << 121; // prints number 121 on the screen\ncout << var; // prints the content of 'var' on the screen",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "The insertion operator << inserts the data that follows it into the stream. In the above examples, it inserts the string “Output”, the numerical constant 121 and the value of the variable var into the standard output stream cout.",
+     "urdu": "انسرشن آپریٹر << اپنے بعد آنے والے ڈیٹا کو اسٹریم میں داخل کرتا ہے۔ اوپر کی مثالوں میں یہ اسٹرنگ ’’Output‘‘، عددی کانسٹنٹ 121 اور ویری ایبل var کی قدر کو معیاری آؤٹ پٹ اسٹریم cout میں داخل کرتا ہے۔",
+     "pashto": "د ورننویستلو چلونکی << له ځانه وروسته ډېټا بهیر ته ورننباسي. په پورته بېلګو کې دا \"Output\" تار، شمېریز ثابت 121 او د var متغیر ارزښت معیاري وتنې بهیر cout ته ورننباسي."
+    },
+    {
+     "text": "The insertion operator << may be used more than once in a single statement. Consider the following line of code.",
+     "urdu": "انسرشن آپریٹر << ایک ہی بیان میں ایک سے زیادہ بار استعمال ہو سکتا ہے۔ کوڈ کی درج ذیل لائن پر غور کریں۔",
+     "pashto": "د ورننویستلو چلونکی << په یوه بیان کې له یو ځل زیات کارول کېدای شي. د کوډ لاندې کرښې ته پام وکړئ."
+    },
+    {
+     "text": "cout << \"Welcome \" << \"to \" << \"the first C++ statement\";",
+     "urdu": "cout << \"Welcome \" << \"to \" << \"the first C++ statement\";",
+     "pashto": "cout << \"Welcome \" << \"to \" << \"the first C++ statement\";",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "This statement prints the message “Welcome to the first C++ statement” on the screen as an output. The repetition of the insertion operator << is needed when more than one variables or combination of variables and constants are needed to print. Consider the following line of code.",
+     "urdu": "یہ بیان اسکرین پر آؤٹ پٹ کے طور پر پیغام ’’Welcome to the first C++ statement‘‘ پرنٹ کرتا ہے۔ انسرشن آپریٹر << کی تکرار اس وقت ضروری ہے جب ایک سے زیادہ ویری ایبلز یا ویری ایبلز اور کانسٹنٹس کا مجموعہ پرنٹ کرنا ہو۔ کوڈ کی درج ذیل لائن پر غور کریں۔",
+     "pashto": "دا بیان پر پرده د وتنې په توګه \"Welcome to the first C++ statement\" پیغام چاپوي. د ورننویستلو چلونکي << تکرار هغه وخت اړین دی چې له یوه زیات متغیرونه یا د متغیرونو او ثابتونو ګډون چاپ کړو. د کوډ لاندې کرښې ته پام وکړئ."
+    },
+    {
+     "text": "cout << \"Assalamoalaikum, I am a student of \" << class << \" Class\";",
+     "urdu": "cout << \"Assalamoalaikum, I am a student of \" << class << \" Class\";",
+     "pashto": "cout << \"Assalamoalaikum, I am a student of \" << class << \" Class\";",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "If the value of the variable class1 is 12 then the above statement would be:",
+     "urdu": "اگر ویری ایبل class1 کی قدر 12 ہو تو اوپر والا بیان یوں ہوگا:",
+     "pashto": "که د class1 متغیر ارزښت 12 وي، نو پورته بیان به داسې وي:"
+    },
+    {
+     "text": "Assalamoalaikum, I am a student of 12 Class",
+     "urdu": "Assalamoalaikum, I am a student of 12 Class",
+     "pashto": "Assalamoalaikum, I am a student of 12 Class",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "3.3.2 Standard input (cin)",
+     "urdu": "3.3.2 معیاری ان پٹ (cin)",
+     "pashto": "۳.۳.۲ معیاري ننوتنه (cin)"
+    },
+    {
+     "text": "The standard input device used for entering input to the computer is keyboard. In C++, the stream extraction operator >> and object cin are used to handle the standard input. The operator >> must be followed by the variable that will store the data that is going to be extracted from the stream. Consider the following lines of code:",
+     "urdu": "کمپیوٹر میں ان پٹ داخل کرنے کے لیے استعمال ہونے والا معیاری ان پٹ آلہ کی بورڈ ہے۔ C++ میں اسٹریم ایکسٹریکشن آپریٹر >> اور آبجیکٹ cin معیاری ان پٹ کو سنبھالنے کے لیے استعمال ہوتے ہیں۔ آپریٹر >> کے بعد وہ ویری ایبل ہونا چاہیے جو اسٹریم سے نکالا جانے والا ڈیٹا محفوظ کرے گا۔ کوڈ کی درج ذیل لائنوں پر غور کریں:",
+     "pashto": "کمپیوټر ته د ننوتنې د لیکلو معیاري وسیله کیبورډ دی. په C++ کې د بهیر د راایستلو (extraction) چلونکی >> او cin شی د معیاري ننوتنې د سمبالولو لپاره کارول کېږي. د >> چلونکي وروسته باید هغه متغیر راشي چې له بهیر راایستل کېدونکې ډېټا ساتي. د کوډ لاندې کرښو ته پام وکړئ:"
+    },
+    {
+     "text": "int marks;\ncin >> marks;",
+     "urdu": "int marks;\ncin >> marks;",
+     "pashto": "int marks;\ncin >> marks;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, the first statement, int marks; declares a variable of type int called ‘marks’, and the second statement waits for an input from cin in order to store it in this integer variable.",
+     "urdu": "یہاں پہلا بیان int marks; ایک int قسم کا ویری ایبل ’marks‘ ڈکلیئر کرتا ہے، اور دوسرا بیان cin سے ان پٹ کا انتظار کرتا ہے تاکہ اسے اس انٹیجر ویری ایبل میں محفوظ کیا جائے۔",
+     "pashto": "دلته لومړی بیان int marks; د int ډول یو متغیر چې ‘marks’ نومېږي اعلانوي، او دویم بیان له cin د ننوتنې انتظار کوي څو یې په دې صحیح عددي متغیر کې وساتي."
+    }
+   ],
+   "theory": "int x;\nfloat pi = 3.14;\nx = (int) pi;\n\nIn the above code, the float number 3.14 is converted to an integer value 3 and the remainder is discarded. Here, the type casting operator is (int). Another way for explicit type casting is to precede the expression to be converted by the type and enclose the expression in parentheses. Consider the following line of code:\n\nx = int ( pi );\n\n3.3 Input/Output Handling\n\nFor input/output operations, C++ uses streams in sequential media such as the screen or the keyboard. A stream is an object where a C++ program inserts characters to or extracts the characters from stream. All the standard input and output stream objects are declared within the header file iostream which is a part of the standard C++ library.\n\n3.3.1 Standard output (cout)\n\nThe default standard output of a C++ program is the screen, and cout is the C++ stream object which defines it. cout is used in conjunction with the insertion operator, which is written as <<. Consider the following segment of code:\n\ncout << \"Output\"; // prints Output on the screen\ncout << 121; // prints number 121 on the screen\ncout << var; // prints the content of 'var' on the screen\n\nThe insertion operator << inserts the data that follows it into the stream. In the above examples, it inserts the string “Output”, the numerical constant 121 and the value of the variable var into the standard output stream cout.\n\nThe insertion operator << may be used more than once in a single statement. Consider the following line of code.\n\ncout << \"Welcome \" << \"to \" << \"the first C++ statement\";\n\nThis statement prints the message “Welcome to the first C++ statement” on the screen as an output. The repetition of the insertion operator << is needed when more than one variables or combination of variables and constants are needed to print. Consider the following line of code.\n\ncout << \"Assalamoalaikum, I am a student of \" << class << \" Class\";\n\nIf the value of the variable class1 is 12 then the above statement would be:\n\nAssalamoalaikum, I am a student of 12 Class\n\n3.3.2 Standard input (cin)\n\nThe standard input device used for entering input to the computer is keyboard. In C++, the stream extraction operator >> and object cin are used to handle the standard input. The operator >> must be followed by the variable that will store the data that is going to be extracted from the stream. Consider the following lines of code:\n\nint marks;\ncin >> marks;\n\nHere, the first statement, int marks; declares a variable of type int called ‘marks’, and the second statement waits for an input from cin in order to store it in this integer variable.",
+   "urdu": "int x;\nfloat pi = 3.14;\nx = (int) pi;\n\nاوپر والے کوڈ میں فلوٹ عدد 3.14 کو صحیح عدد 3 میں تبدیل کیا جاتا ہے اور باقی حصہ ترک کر دیا جاتا ہے۔ یہاں ٹائپ کاسٹنگ آپریٹر (int) ہے۔ صریح ٹائپ کاسٹنگ کا دوسرا طریقہ یہ ہے کہ تبدیل کیے جانے والے ایکسپریشن سے پہلے قسم لکھی جائے اور ایکسپریشن کو قوسین میں بند کیا جائے۔ کوڈ کی درج ذیل لائن پر غور کریں:\n\nx = int ( pi );\n\n3.3 ان پٹ/آؤٹ پٹ کا انتظام\n\nان پٹ/آؤٹ پٹ کے عمل کے لیے C++ ترتیبی ذرائع جیسے اسکرین یا کی بورڈ میں اسٹریمز استعمال کرتی ہے۔ اسٹریم ایک آبجیکٹ ہے جس میں C++ پروگرام حروف داخل کرتا ہے یا اس سے حروف نکالتا ہے۔ تمام معیاری ان پٹ اور آؤٹ پٹ اسٹریم آبجیکٹس ہیڈر فائل iostream میں ڈکلیئر ہوتے ہیں جو معیاری C++ لائبریری کا حصہ ہے۔\n\n3.3.1 معیاری آؤٹ پٹ (cout)\n\nC++ پروگرام کا طے شدہ معیاری آؤٹ پٹ اسکرین ہے، اور cout وہ C++ اسٹریم آبجیکٹ ہے جو اسے متعین کرتا ہے۔ cout کو انسرشن آپریٹر کے ساتھ استعمال کیا جاتا ہے جو << لکھا جاتا ہے۔ کوڈ کے درج ذیل حصے پر غور کریں:\n\ncout << \"Output\"; // prints Output on the screen\ncout << 121; // prints number 121 on the screen\ncout << var; // prints the content of 'var' on the screen\n\nانسرشن آپریٹر << اپنے بعد آنے والے ڈیٹا کو اسٹریم میں داخل کرتا ہے۔ اوپر کی مثالوں میں یہ اسٹرنگ ’’Output‘‘، عددی کانسٹنٹ 121 اور ویری ایبل var کی قدر کو معیاری آؤٹ پٹ اسٹریم cout میں داخل کرتا ہے۔\n\nانسرشن آپریٹر << ایک ہی بیان میں ایک سے زیادہ بار استعمال ہو سکتا ہے۔ کوڈ کی درج ذیل لائن پر غور کریں۔\n\ncout << \"Welcome \" << \"to \" << \"the first C++ statement\";\n\nیہ بیان اسکرین پر آؤٹ پٹ کے طور پر پیغام ’’Welcome to the first C++ statement‘‘ پرنٹ کرتا ہے۔ انسرشن آپریٹر << کی تکرار اس وقت ضروری ہے جب ایک سے زیادہ ویری ایبلز یا ویری ایبلز اور کانسٹنٹس کا مجموعہ پرنٹ کرنا ہو۔ کوڈ کی درج ذیل لائن پر غور کریں۔\n\ncout << \"Assalamoalaikum, I am a student of \" << class << \" Class\";\n\nاگر ویری ایبل class1 کی قدر 12 ہو تو اوپر والا بیان یوں ہوگا:\n\nAssalamoalaikum, I am a student of 12 Class\n\n3.3.2 معیاری ان پٹ (cin)\n\nکمپیوٹر میں ان پٹ داخل کرنے کے لیے استعمال ہونے والا معیاری ان پٹ آلہ کی بورڈ ہے۔ C++ میں اسٹریم ایکسٹریکشن آپریٹر >> اور آبجیکٹ cin معیاری ان پٹ کو سنبھالنے کے لیے استعمال ہوتے ہیں۔ آپریٹر >> کے بعد وہ ویری ایبل ہونا چاہیے جو اسٹریم سے نکالا جانے والا ڈیٹا محفوظ کرے گا۔ کوڈ کی درج ذیل لائنوں پر غور کریں:\n\nint marks;\ncin >> marks;\n\nیہاں پہلا بیان int marks; ایک int قسم کا ویری ایبل ’marks‘ ڈکلیئر کرتا ہے، اور دوسرا بیان cin سے ان پٹ کا انتظار کرتا ہے تاکہ اسے اس انٹیجر ویری ایبل میں محفوظ کیا جائے۔",
+   "pashto": "int x;\nfloat pi = 3.14;\nx = (int) pi;\n\nپه پورته کوډ کې اعشاري عدد 3.14 صحیح عدد 3 ته اړول کېږي او پاتې برخه پرېښودل کېږي. دلته د ډول بدلولو چلونکی (int) دی. د څرګند ډول بدلولو بله لاره دا ده چې د اړول کېدونکې افادې مخې ته ډول ولیکل شي او افاده په قوسونو کې وتړل شي. د کوډ لاندې کرښې ته پام وکړئ:\n\nx = int ( pi );\n\n۳.۳ د ننوتو/وتو اداره\n\nد ننوتو/وتو عملیو لپاره C++ په ترتیبي رسنیو لکه پرده یا کیبورډ کې بهیرونه (streams) کاروي. بهیر یو شی دی چې C++ پروګرام پکې توري ورننباسي یا ترې توري راباسي. ټول معیاري د ننوتو او وتو بهیر شیان په iostream سرلیک فایل کې اعلان شوي چې د معیاري C++ کتابتون برخه ده.\n\n۳.۳.۱ معیاري وتنه (cout)\n\nد C++ پروګرام ډیفالټ معیاري وتنه پرده ده، او cout د C++ هغه بهیر شی دی چې دا ټاکي. cout د ورننویستلو (insertion) چلونکي سره چې << لیکل کېږي، کارول کېږي. د کوډ لاندې برخې ته پام وکړئ:\n\ncout << \"Output\"; // prints Output on the screen\ncout << 121; // prints number 121 on the screen\ncout << var; // prints the content of 'var' on the screen\n\nد ورننویستلو چلونکی << له ځانه وروسته ډېټا بهیر ته ورننباسي. په پورته بېلګو کې دا \"Output\" تار، شمېریز ثابت 121 او د var متغیر ارزښت معیاري وتنې بهیر cout ته ورننباسي.\n\nد ورننویستلو چلونکی << په یوه بیان کې له یو ځل زیات کارول کېدای شي. د کوډ لاندې کرښې ته پام وکړئ.\n\ncout << \"Welcome \" << \"to \" << \"the first C++ statement\";\n\nدا بیان پر پرده د وتنې په توګه \"Welcome to the first C++ statement\" پیغام چاپوي. د ورننویستلو چلونکي << تکرار هغه وخت اړین دی چې له یوه زیات متغیرونه یا د متغیرونو او ثابتونو ګډون چاپ کړو. د کوډ لاندې کرښې ته پام وکړئ.\n\ncout << \"Assalamoalaikum, I am a student of \" << class << \" Class\";\n\nکه د class1 متغیر ارزښت 12 وي، نو پورته بیان به داسې وي:\n\nAssalamoalaikum, I am a student of 12 Class\n\n۳.۳.۲ معیاري ننوتنه (cin)\n\nکمپیوټر ته د ننوتنې د لیکلو معیاري وسیله کیبورډ دی. په C++ کې د بهیر د راایستلو (extraction) چلونکی >> او cin شی د معیاري ننوتنې د سمبالولو لپاره کارول کېږي. د >> چلونکي وروسته باید هغه متغیر راشي چې له بهیر راایستل کېدونکې ډېټا ساتي. د کوډ لاندې کرښو ته پام وکړئ:\n\nint marks;\ncin >> marks;\n\nدلته لومړی بیان int marks; د int ډول یو متغیر چې ‘marks’ نومېږي اعلانوي، او دویم بیان له cin د ننوتنې انتظار کوي څو یې په دې صحیح عددي متغیر کې وساتي.",
+   "theoryUrdu": "int x;\nfloat pi = 3.14;\nx = (int) pi;\n\nاوپر والے کوڈ میں فلوٹ عدد 3.14 کو صحیح عدد 3 میں تبدیل کیا جاتا ہے اور باقی حصہ ترک کر دیا جاتا ہے۔ یہاں ٹائپ کاسٹنگ آپریٹر (int) ہے۔ صریح ٹائپ کاسٹنگ کا دوسرا طریقہ یہ ہے کہ تبدیل کیے جانے والے ایکسپریشن سے پہلے قسم لکھی جائے اور ایکسپریشن کو قوسین میں بند کیا جائے۔ کوڈ کی درج ذیل لائن پر غور کریں:\n\nx = int ( pi );\n\n3.3 ان پٹ/آؤٹ پٹ کا انتظام\n\nان پٹ/آؤٹ پٹ کے عمل کے لیے C++ ترتیبی ذرائع جیسے اسکرین یا کی بورڈ میں اسٹریمز استعمال کرتی ہے۔ اسٹریم ایک آبجیکٹ ہے جس میں C++ پروگرام حروف داخل کرتا ہے یا اس سے حروف نکالتا ہے۔ تمام معیاری ان پٹ اور آؤٹ پٹ اسٹریم آبجیکٹس ہیڈر فائل iostream میں ڈکلیئر ہوتے ہیں جو معیاری C++ لائبریری کا حصہ ہے۔\n\n3.3.1 معیاری آؤٹ پٹ (cout)\n\nC++ پروگرام کا طے شدہ معیاری آؤٹ پٹ اسکرین ہے، اور cout وہ C++ اسٹریم آبجیکٹ ہے جو اسے متعین کرتا ہے۔ cout کو انسرشن آپریٹر کے ساتھ استعمال کیا جاتا ہے جو << لکھا جاتا ہے۔ کوڈ کے درج ذیل حصے پر غور کریں:\n\ncout << \"Output\"; // prints Output on the screen\ncout << 121; // prints number 121 on the screen\ncout << var; // prints the content of 'var' on the screen\n\nانسرشن آپریٹر << اپنے بعد آنے والے ڈیٹا کو اسٹریم میں داخل کرتا ہے۔ اوپر کی مثالوں میں یہ اسٹرنگ ’’Output‘‘، عددی کانسٹنٹ 121 اور ویری ایبل var کی قدر کو معیاری آؤٹ پٹ اسٹریم cout میں داخل کرتا ہے۔\n\nانسرشن آپریٹر << ایک ہی بیان میں ایک سے زیادہ بار استعمال ہو سکتا ہے۔ کوڈ کی درج ذیل لائن پر غور کریں۔\n\ncout << \"Welcome \" << \"to \" << \"the first C++ statement\";\n\nیہ بیان اسکرین پر آؤٹ پٹ کے طور پر پیغام ’’Welcome to the first C++ statement‘‘ پرنٹ کرتا ہے۔ انسرشن آپریٹر << کی تکرار اس وقت ضروری ہے جب ایک سے زیادہ ویری ایبلز یا ویری ایبلز اور کانسٹنٹس کا مجموعہ پرنٹ کرنا ہو۔ کوڈ کی درج ذیل لائن پر غور کریں۔\n\ncout << \"Assalamoalaikum, I am a student of \" << class << \" Class\";\n\nاگر ویری ایبل class1 کی قدر 12 ہو تو اوپر والا بیان یوں ہوگا:\n\nAssalamoalaikum, I am a student of 12 Class\n\n3.3.2 معیاری ان پٹ (cin)\n\nکمپیوٹر میں ان پٹ داخل کرنے کے لیے استعمال ہونے والا معیاری ان پٹ آلہ کی بورڈ ہے۔ C++ میں اسٹریم ایکسٹریکشن آپریٹر >> اور آبجیکٹ cin معیاری ان پٹ کو سنبھالنے کے لیے استعمال ہوتے ہیں۔ آپریٹر >> کے بعد وہ ویری ایبل ہونا چاہیے جو اسٹریم سے نکالا جانے والا ڈیٹا محفوظ کرے گا۔ کوڈ کی درج ذیل لائنوں پر غور کریں:\n\nint marks;\ncin >> marks;\n\nیہاں پہلا بیان int marks; ایک int قسم کا ویری ایبل ’marks‘ ڈکلیئر کرتا ہے، اور دوسرا بیان cin سے ان پٹ کا انتظار کرتا ہے تاکہ اسے اس انٹیجر ویری ایبل میں محفوظ کیا جائے۔",
+   "theoryPashto": "int x;\nfloat pi = 3.14;\nx = (int) pi;\n\nپه پورته کوډ کې اعشاري عدد 3.14 صحیح عدد 3 ته اړول کېږي او پاتې برخه پرېښودل کېږي. دلته د ډول بدلولو چلونکی (int) دی. د څرګند ډول بدلولو بله لاره دا ده چې د اړول کېدونکې افادې مخې ته ډول ولیکل شي او افاده په قوسونو کې وتړل شي. د کوډ لاندې کرښې ته پام وکړئ:\n\nx = int ( pi );\n\n۳.۳ د ننوتو/وتو اداره\n\nد ننوتو/وتو عملیو لپاره C++ په ترتیبي رسنیو لکه پرده یا کیبورډ کې بهیرونه (streams) کاروي. بهیر یو شی دی چې C++ پروګرام پکې توري ورننباسي یا ترې توري راباسي. ټول معیاري د ننوتو او وتو بهیر شیان په iostream سرلیک فایل کې اعلان شوي چې د معیاري C++ کتابتون برخه ده.\n\n۳.۳.۱ معیاري وتنه (cout)\n\nد C++ پروګرام ډیفالټ معیاري وتنه پرده ده، او cout د C++ هغه بهیر شی دی چې دا ټاکي. cout د ورننویستلو (insertion) چلونکي سره چې << لیکل کېږي، کارول کېږي. د کوډ لاندې برخې ته پام وکړئ:\n\ncout << \"Output\"; // prints Output on the screen\ncout << 121; // prints number 121 on the screen\ncout << var; // prints the content of 'var' on the screen\n\nد ورننویستلو چلونکی << له ځانه وروسته ډېټا بهیر ته ورننباسي. په پورته بېلګو کې دا \"Output\" تار، شمېریز ثابت 121 او د var متغیر ارزښت معیاري وتنې بهیر cout ته ورننباسي.\n\nد ورننویستلو چلونکی << په یوه بیان کې له یو ځل زیات کارول کېدای شي. د کوډ لاندې کرښې ته پام وکړئ.\n\ncout << \"Welcome \" << \"to \" << \"the first C++ statement\";\n\nدا بیان پر پرده د وتنې په توګه \"Welcome to the first C++ statement\" پیغام چاپوي. د ورننویستلو چلونکي << تکرار هغه وخت اړین دی چې له یوه زیات متغیرونه یا د متغیرونو او ثابتونو ګډون چاپ کړو. د کوډ لاندې کرښې ته پام وکړئ.\n\ncout << \"Assalamoalaikum, I am a student of \" << class << \" Class\";\n\nکه د class1 متغیر ارزښت 12 وي، نو پورته بیان به داسې وي:\n\nAssalamoalaikum, I am a student of 12 Class\n\n۳.۳.۲ معیاري ننوتنه (cin)\n\nکمپیوټر ته د ننوتنې د لیکلو معیاري وسیله کیبورډ دی. په C++ کې د بهیر د راایستلو (extraction) چلونکی >> او cin شی د معیاري ننوتنې د سمبالولو لپاره کارول کېږي. د >> چلونکي وروسته باید هغه متغیر راشي چې له بهیر راایستل کېدونکې ډېټا ساتي. د کوډ لاندې کرښو ته پام وکړئ:\n\nint marks;\ncin >> marks;\n\nدلته لومړی بیان int marks; د int ډول یو متغیر چې ‘marks’ نومېږي اعلانوي، او دویم بیان له cin د ننوتنې انتظار کوي څو یې په دې صحیح عددي متغیر کې وساتي.",
+   "content": "<p>int x;\nfloat pi = 3.14;\nx = (int) pi;</p><p>In the above code, the float number 3.14 is converted to an integer value 3 and the remainder is discarded. Here, the type casting operator is (int). Another way for explicit type casting is to precede the expression to be converted by the type and enclose the expression in parentheses. Consider the following line of code:</p><p>x = int ( pi );</p><p>3.3 Input/Output Handling</p><p>For input/output operations, C++ uses streams in sequential media such as the screen or the keyboard. A stream is an object where a C++ program inserts characters to or extracts the characters from stream. All the standard input and output stream objects are declared within the header file iostream which is a part of the standard C++ library.</p><p>3.3.1 Standard output (cout)</p><p>The default standard output of a C++ program is the screen, and cout is the C++ stream object which defines it. cout is used in conjunction with the insertion operator, which is written as &lt;&lt;. Consider the following segment of code:</p><p>cout &lt;&lt; &quot;Output&quot;; // prints Output on the screen\ncout &lt;&lt; 121; // prints number 121 on the screen\ncout &lt;&lt; var; // prints the content of &#x27;var&#x27; on the screen</p><p>The insertion operator &lt;&lt; inserts the data that follows it into the stream. In the above examples, it inserts the string “Output”, the numerical constant 121 and the value of the variable var into the standard output stream cout.</p><p>The insertion operator &lt;&lt; may be used more than once in a single statement. Consider the following line of code.</p><p>cout &lt;&lt; &quot;Welcome &quot; &lt;&lt; &quot;to &quot; &lt;&lt; &quot;the first C++ statement&quot;;</p><p>This statement prints the message “Welcome to the first C++ statement” on the screen as an output. The repetition of the insertion operator &lt;&lt; is needed when more than one variables or combination of variables and constants are needed to print. Consider the following line of code.</p><p>cout &lt;&lt; &quot;Assalamoalaikum, I am a student of &quot; &lt;&lt; class &lt;&lt; &quot; Class&quot;;</p><p>If the value of the variable class1 is 12 then the above statement would be:</p><p>Assalamoalaikum, I am a student of 12 Class</p><p>3.3.2 Standard input (cin)</p><p>The standard input device used for entering input to the computer is keyboard. In C++, the stream extraction operator &gt;&gt; and object cin are used to handle the standard input. The operator &gt;&gt; must be followed by the variable that will store the data that is going to be extracted from the stream. Consider the following lines of code:</p><p>int marks;\ncin &gt;&gt; marks;</p><p>Here, the first statement, int marks; declares a variable of type int called ‘marks’, and the second statement waits for an input from cin in order to store it in this integer variable.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "code",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 45,
+     "printedPages": [
+      78,
+      79
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (11)",
+   "sourcePageLabel": "PDF 45 · p. 78–79",
+   "sourceNote": "The first listing is the code segment announced at the foot of p.77.",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf045",
+   "unit": 3,
+   "printedPage": 79,
+   "description": "p.79 uses the variable name “class” in the statement but refers to “class1” in the explanation (class is a C++ keyword); retained as printed. Also “when more than one variables … are needed to print”."
+  }
+ ],
+ "completeUnits": []
+}

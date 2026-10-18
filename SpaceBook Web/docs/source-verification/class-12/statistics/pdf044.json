@@ -1,0 +1,409 @@
+{
+ "pdfPage": 44,
+ "sections": [
+  {
+   "id": "stat12-p044-bernoulli",
+   "title": "3.2 Bernoulli distribution — Example 3.5 and properties",
+   "headingUrdu": "3.2 برنولی تقسیم — مثال 3.5 اور خصوصیات",
+   "headingPashto": "3.2 د برنولي وېش — بېلګه 3.5 او ځانګړنې",
+   "paras": [
+    {
+     "text": "3.2 Bernoulli trail",
+     "urdu": "3.2 برنولی آزمائش",
+     "pashto": "3.2 د برنولي ازمېښت"
+    },
+    {
+     "text": "A random experiment which has two possible outcomes classified as success and failure is called a Bernoulli trial. For example, gender of a child (male or female), performance of a student in an examination (pass or fail), result of tossing a coin (head or tail) etc. The random variable is taking only two values i.e. “0” for failure and “1” for success. Further, probability of success is denoted by p and failure by q such that $p+q=1$.",
+     "urdu": "ایسا تصادفی تجربہ جس کے دو ممکنہ نتائج کامیابی اور ناکامی کے طور پر درجہ بند ہوں، برنولی آزمائش کہلاتا ہے۔ مثلاً بچے کی جنس (لڑکا یا لڑکی)، امتحان میں طالب علم کی کارکردگی (پاس یا فیل)، سکہ اچھالنے کا نتیجہ (چِت یا پَٹ) وغیرہ۔ تصادفی متغیر صرف دو قیمتیں لیتا ہے یعنی ناکامی کے لیے “0” اور کامیابی کے لیے “1”۔ مزید یہ کہ کامیابی کے احتمال کو p اور ناکامی کو q سے ظاہر کیا جاتا ہے کہ $p+q=1$۔",
+     "pashto": "هغه تصادفي تجربه چې دوه شونې پایلې ولري چې د بریا او ناکامۍ په توګه ډلبندي شوې وي، د برنولي ازمېښت بلل کېږي. د بېلګې په توګه د ماشوم جنس (هلک یا نجلۍ)، په ازموینه کې د زده کوونکي کړنه (بریالی یا ناکام)، د سکې د اچولو پایله (سر یا لکۍ) او نور. تصادفي متغیر یوازې دوه قیمتونه اخلي یعنې د ناکامۍ لپاره “0” او د بریا لپاره “1”. سربېره پر دې د بریا احتمال په p او د ناکامۍ په q ښودل کېږي داسې چې $p+q=1$."
+    },
+    {
+     "text": "3.2.1 Bernoulli probability distribution",
+     "urdu": "3.2.1 برنولی احتمالی تقسیم",
+     "pashto": "3.2.1 د برنولي احتمالي وېش"
+    },
+    {
+     "text": "A probability distribution of the type:",
+     "urdu": "اس قسم کی احتمالی تقسیم:",
+     "pashto": "د دې ډول احتمالي وېش:"
+    },
+    {
+     "text": "is called Bernoulli probability distribution and the variable X which denotes the results of a Bernoulli trail is called Bernoulli random variable. This distribution was introduced by a Swiss mathematician Jacob Bernoulli (1654–1705). It is also known as point Binomial distribution because it has only two classes of events. Mathematically",
+     "urdu": "برنولی احتمالی تقسیم کہلاتی ہے اور متغیر X جو برنولی آزمائش کے نتائج ظاہر کرتا ہے، برنولی تصادفی متغیر کہلاتا ہے۔ یہ تقسیم سوئس ریاضی دان جیکب برنولی (1654–1705) نے متعارف کرائی۔ اسے نقطہ دو رقمی (point Binomial) تقسیم بھی کہتے ہیں کیونکہ اس میں واقعات کی صرف دو جماعتیں ہیں۔ ریاضیاتی طور پر",
+     "pashto": "د برنولي احتمالي وېش بلل کېږي او متغیر X چې د برنولي ازمېښت پایلې ښيي، د برنولي تصادفي متغیر بلل کېږي. دا وېش سویسي ریاضي پوه جیکب برنولي (1654–1705) معرفي کړ. د ټکي بینومیل (point Binomial) وېش په نوم هم یادېږي ځکه چې یوازې د پېښو دوه ټولګي لري. په ریاضي ډول"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}p^xq^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}p^xq^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}p^xq^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "is called Bernoulli probability mass function. This distribution has only one parameter i.e. p.",
+     "urdu": "برنولی احتمالی کمیتی تفاعل کہلاتا ہے۔ اس تقسیم کا صرف ایک پیرامیٹر ہے یعنی p۔",
+     "pashto": "د برنولي د احتمال کتلوي تابع بلل کېږي. دا وېش یوازې یو پارامټر لري یعنې p."
+    },
+    {
+     "text": "Example 3.5",
+     "urdu": "مثال 3.5",
+     "pashto": "بېلګه 3.5"
+    },
+    {
+     "text": "A fair coin is tossed o ce. What is the probability that (i) no head occurs? (ii) one head occurs?",
+     "urdu": "ایک منصفانہ سکہ ایک بار اچھالا جاتا ہے۔ احتمال کیا ہے کہ (i) کوئی چِت نہ آئے؟ (ii) ایک چِت آئے؟",
+     "pashto": "یوه عادلانه سکه یو ځل اچول کېږي. احتمال یې څومره دی چې (i) هېڅ سر رانه شي؟ (ii) یو سر راشي؟"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Tossing a coin is Bernoulli experiment. Let us define a random variable as",
+     "urdu": "سکہ اچھالنا برنولی تجربہ ہے۔ آئیے ایک تصادفی متغیر یوں متعین کریں",
+     "pashto": "د سکې اچول د برنولي تجربه ده. راځئ یو تصادفي متغیر داسې وټاکو"
+    },
+    {
+     "text": "X: number of heads",
+     "urdu": "X: چِت کی تعداد",
+     "pashto": "X: د سرونو شمېر"
+    },
+    {
+     "text": "$$=0,\\ 1$$",
+     "urdu": "$$=0,\\ 1$$",
+     "pashto": "$$=0,\\ 1$$"
+    },
+    {
+     "text": "$p=$ probability of head $=\\frac{1}{2}$ (as coin is fair).",
+     "urdu": "$p=$ چِت کا احتمال $=\\frac{1}{2}$ (کیونکہ سکہ منصفانہ ہے)۔",
+     "pashto": "$p=$ د سر احتمال $=\\frac{1}{2}$ (ځکه چې سکه عادلانه ده)."
+    },
+    {
+     "text": "$$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$$",
+     "urdu": "$$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$$",
+     "pashto": "$$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$$"
+    },
+    {
+     "text": "The Bernoulli probability function is given by",
+     "urdu": "برنولی احتمالی تفاعل یہ ہے",
+     "pashto": "د برنولي احتمالي تابع دا ده"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "(i) probability of no head $=P(X=0)=\\left(\\frac{1}{2}\\right)^0\\left(\\frac{1}{2}\\right)^{1-0}=(1)\\left(\\frac{1}{2}\\right)=\\left(\\frac{1}{2}\\right)$",
+     "urdu": "(i) کوئی چِت نہ آنے کا احتمال $=P(X=0)=\\left(\\frac{1}{2}\\right)^0\\left(\\frac{1}{2}\\right)^{1-0}=(1)\\left(\\frac{1}{2}\\right)=\\left(\\frac{1}{2}\\right)$",
+     "pashto": "(i) د هېڅ سر نه راتلو احتمال $=P(X=0)=\\left(\\frac{1}{2}\\right)^0\\left(\\frac{1}{2}\\right)^{1-0}=(1)\\left(\\frac{1}{2}\\right)=\\left(\\frac{1}{2}\\right)$"
+    },
+    {
+     "text": "(ii) Probability of one head $=P(X=1)=\\left(\\frac{1}{2}\\right)^1\\left(\\frac{1}{2}\\right)^{1-1}=\\left(\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^0=\\left(\\frac{1}{2}\\right)$",
+     "urdu": "(ii) ایک چِت آنے کا احتمال $=P(X=1)=\\left(\\frac{1}{2}\\right)^1\\left(\\frac{1}{2}\\right)^{1-1}=\\left(\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^0=\\left(\\frac{1}{2}\\right)$",
+     "pashto": "(ii) د یو سر د راتلو احتمال $=P(X=1)=\\left(\\frac{1}{2}\\right)^1\\left(\\frac{1}{2}\\right)^{1-1}=\\left(\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^0=\\left(\\frac{1}{2}\\right)$"
+    },
+    {
+     "text": "3.2.3 Properties of Bernoulli distribution",
+     "urdu": "3.2.3 برنولی تقسیم کی خصوصیات",
+     "pashto": "3.2.3 د برنولي وېش ځانګړنې"
+    },
+    {
+     "text": "◆ Mean of Bernoulli distribution",
+     "urdu": "◆ برنولی تقسیم کا اوسط",
+     "pashto": "◆ د برنولي وېش منځنی"
+    },
+    {
+     "text": "By definition mean $=E(X)=\\sum_x x\\,p(x)$",
+     "urdu": "تعریف کے مطابق اوسط $=E(X)=\\sum_x x\\,p(x)$",
+     "pashto": "د تعریف له مخې منځنی $=E(X)=\\sum_x x\\,p(x)$"
+    },
+    {
+     "text": "$=\\sum_{x=0}^{1}x\\,p^x\\,q^{1-x}$",
+     "urdu": "$=\\sum_{x=0}^{1}x\\,p^x\\,q^{1-x}$",
+     "pashto": "$=\\sum_{x=0}^{1}x\\,p^x\\,q^{1-x}$"
+    },
+    {
+     "text": "$=0p^0q^{1-0}+1p^1q^{1-1}=0+p=p$",
+     "urdu": "$=0p^0q^{1-0}+1p^1q^{1-1}=0+p=p$",
+     "pashto": "$=0p^0q^{1-0}+1p^1q^{1-1}=0+p=p$"
+    },
+    {
+     "text": "◆ Variance of Bernoulli distribution",
+     "urdu": "◆ برنولی تقسیم کا تغیر",
+     "pashto": "◆ د برنولي وېش واریانس"
+    },
+    {
+     "text": "By definition variance $=E(X^2)-[E(X)]^2$",
+     "urdu": "تعریف کے مطابق تغیر $=E(X^2)-[E(X)]^2$",
+     "pashto": "د تعریف له مخې واریانس $=E(X^2)-[E(X)]^2$"
+    },
+    {
+     "text": "$$=\\sum_x x^2p(x)-(p)^2$$",
+     "urdu": "$$=\\sum_x x^2p(x)-(p)^2$$",
+     "pashto": "$$=\\sum_x x^2p(x)-(p)^2$$"
+    }
+   ],
+   "theory": "3.2 Bernoulli trail\n\nA random experiment which has two possible outcomes classified as success and failure is called a Bernoulli trial. For example, gender of a child (male or female), performance of a student in an examination (pass or fail), result of tossing a coin (head or tail) etc. The random variable is taking only two values i.e. “0” for failure and “1” for success. Further, probability of success is denoted by p and failure by q such that p+q=1.\n\n3.2.1 Bernoulli probability distribution\n\nA probability distribution of the type:\n\nis called Bernoulli probability distribution and the variable X which denotes the results of a Bernoulli trail is called Bernoulli random variable. This distribution was introduced by a Swiss mathematician Jacob Bernoulli (1654–1705). It is also known as point Binomial distribution because it has only two classes of events. Mathematically\n\n$p(x)=\\left\\{\\begin{matrix}p^xq^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nis called Bernoulli probability mass function. This distribution has only one parameter i.e. p.\n\nExample 3.5\n\nA fair coin is tossed o ce. What is the probability that (i) no head occurs? (ii) one head occurs?\n\nSolution:\n\nTossing a coin is Bernoulli experiment. Let us define a random variable as\n\nX: number of heads\n\n$=0,\\ 1$\n\np= probability of head =\\frac{1}{2} (as coin is fair).\n\n$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$\n\nThe Bernoulli probability function is given by\n\n$p(x)=\\left\\{\\begin{matrix}\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i) probability of no head =P(X=0)=\\left(\\frac{1}{2}\\right)^0\\left(\\frac{1}{2}\\right)^{1-0}=(1)\\left(\\frac{1}{2}\\right)=\\left(\\frac{1}{2}\\right)\n\n(ii) Probability of one head =P(X=1)=\\left(\\frac{1}{2}\\right)^1\\left(\\frac{1}{2}\\right)^{1-1}=\\left(\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^0=\\left(\\frac{1}{2}\\right)\n\n3.2.3 Properties of Bernoulli distribution\n\n◆ Mean of Bernoulli distribution\n\nBy definition mean =E(X)=\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{1}x\\,p^x\\,q^{1-x}\n\n=0p^0q^{1-0}+1p^1q^{1-1}=0+p=p\n\n◆ Variance of Bernoulli distribution\n\nBy definition variance =E(X^2)-[E(X)]^2\n\n$=\\sum_x x^2p(x)-(p)^2$",
+   "urdu": "3.2 برنولی آزمائش\n\nایسا تصادفی تجربہ جس کے دو ممکنہ نتائج کامیابی اور ناکامی کے طور پر درجہ بند ہوں، برنولی آزمائش کہلاتا ہے۔ مثلاً بچے کی جنس (لڑکا یا لڑکی)، امتحان میں طالب علم کی کارکردگی (پاس یا فیل)، سکہ اچھالنے کا نتیجہ (چِت یا پَٹ) وغیرہ۔ تصادفی متغیر صرف دو قیمتیں لیتا ہے یعنی ناکامی کے لیے “0” اور کامیابی کے لیے “1”۔ مزید یہ کہ کامیابی کے احتمال کو p اور ناکامی کو q سے ظاہر کیا جاتا ہے کہ p+q=1۔\n\n3.2.1 برنولی احتمالی تقسیم\n\nاس قسم کی احتمالی تقسیم:\n\nبرنولی احتمالی تقسیم کہلاتی ہے اور متغیر X جو برنولی آزمائش کے نتائج ظاہر کرتا ہے، برنولی تصادفی متغیر کہلاتا ہے۔ یہ تقسیم سوئس ریاضی دان جیکب برنولی (1654–1705) نے متعارف کرائی۔ اسے نقطہ دو رقمی (point Binomial) تقسیم بھی کہتے ہیں کیونکہ اس میں واقعات کی صرف دو جماعتیں ہیں۔ ریاضیاتی طور پر\n\n$p(x)=\\left\\{\\begin{matrix}p^xq^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nبرنولی احتمالی کمیتی تفاعل کہلاتا ہے۔ اس تقسیم کا صرف ایک پیرامیٹر ہے یعنی p۔\n\nمثال 3.5\n\nایک منصفانہ سکہ ایک بار اچھالا جاتا ہے۔ احتمال کیا ہے کہ (i) کوئی چِت نہ آئے؟ (ii) ایک چِت آئے؟\n\nحل:\n\nسکہ اچھالنا برنولی تجربہ ہے۔ آئیے ایک تصادفی متغیر یوں متعین کریں\n\nX: چِت کی تعداد\n\n$=0,\\ 1$\n\np= چِت کا احتمال =\\frac{1}{2} (کیونکہ سکہ منصفانہ ہے)۔\n\n$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$\n\nبرنولی احتمالی تفاعل یہ ہے\n\n$p(x)=\\left\\{\\begin{matrix}\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i) کوئی چِت نہ آنے کا احتمال =P(X=0)=\\left(\\frac{1}{2}\\right)^0\\left(\\frac{1}{2}\\right)^{1-0}=(1)\\left(\\frac{1}{2}\\right)=\\left(\\frac{1}{2}\\right)\n\n(ii) ایک چِت آنے کا احتمال =P(X=1)=\\left(\\frac{1}{2}\\right)^1\\left(\\frac{1}{2}\\right)^{1-1}=\\left(\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^0=\\left(\\frac{1}{2}\\right)\n\n3.2.3 برنولی تقسیم کی خصوصیات\n\n◆ برنولی تقسیم کا اوسط\n\nتعریف کے مطابق اوسط =E(X)=\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{1}x\\,p^x\\,q^{1-x}\n\n=0p^0q^{1-0}+1p^1q^{1-1}=0+p=p\n\n◆ برنولی تقسیم کا تغیر\n\nتعریف کے مطابق تغیر =E(X^2)-[E(X)]^2\n\n$=\\sum_x x^2p(x)-(p)^2$",
+   "pashto": "3.2 د برنولي ازمېښت\n\nهغه تصادفي تجربه چې دوه شونې پایلې ولري چې د بریا او ناکامۍ په توګه ډلبندي شوې وي، د برنولي ازمېښت بلل کېږي. د بېلګې په توګه د ماشوم جنس (هلک یا نجلۍ)، په ازموینه کې د زده کوونکي کړنه (بریالی یا ناکام)، د سکې د اچولو پایله (سر یا لکۍ) او نور. تصادفي متغیر یوازې دوه قیمتونه اخلي یعنې د ناکامۍ لپاره “0” او د بریا لپاره “1”. سربېره پر دې د بریا احتمال په p او د ناکامۍ په q ښودل کېږي داسې چې p+q=1.\n\n3.2.1 د برنولي احتمالي وېش\n\nد دې ډول احتمالي وېش:\n\nد برنولي احتمالي وېش بلل کېږي او متغیر X چې د برنولي ازمېښت پایلې ښيي، د برنولي تصادفي متغیر بلل کېږي. دا وېش سویسي ریاضي پوه جیکب برنولي (1654–1705) معرفي کړ. د ټکي بینومیل (point Binomial) وېش په نوم هم یادېږي ځکه چې یوازې د پېښو دوه ټولګي لري. په ریاضي ډول\n\n$p(x)=\\left\\{\\begin{matrix}p^xq^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nد برنولي د احتمال کتلوي تابع بلل کېږي. دا وېش یوازې یو پارامټر لري یعنې p.\n\nبېلګه 3.5\n\nیوه عادلانه سکه یو ځل اچول کېږي. احتمال یې څومره دی چې (i) هېڅ سر رانه شي؟ (ii) یو سر راشي؟\n\nحل:\n\nد سکې اچول د برنولي تجربه ده. راځئ یو تصادفي متغیر داسې وټاکو\n\nX: د سرونو شمېر\n\n$=0,\\ 1$\n\np= د سر احتمال =\\frac{1}{2} (ځکه چې سکه عادلانه ده).\n\n$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$\n\nد برنولي احتمالي تابع دا ده\n\n$p(x)=\\left\\{\\begin{matrix}\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i) د هېڅ سر نه راتلو احتمال =P(X=0)=\\left(\\frac{1}{2}\\right)^0\\left(\\frac{1}{2}\\right)^{1-0}=(1)\\left(\\frac{1}{2}\\right)=\\left(\\frac{1}{2}\\right)\n\n(ii) د یو سر د راتلو احتمال =P(X=1)=\\left(\\frac{1}{2}\\right)^1\\left(\\frac{1}{2}\\right)^{1-1}=\\left(\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^0=\\left(\\frac{1}{2}\\right)\n\n3.2.3 د برنولي وېش ځانګړنې\n\n◆ د برنولي وېش منځنی\n\nد تعریف له مخې منځنی =E(X)=\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{1}x\\,p^x\\,q^{1-x}\n\n=0p^0q^{1-0}+1p^1q^{1-1}=0+p=p\n\n◆ د برنولي وېش واریانس\n\nد تعریف له مخې واریانس =E(X^2)-[E(X)]^2\n\n$=\\sum_x x^2p(x)-(p)^2$",
+   "theoryUrdu": "3.2 برنولی آزمائش\n\nایسا تصادفی تجربہ جس کے دو ممکنہ نتائج کامیابی اور ناکامی کے طور پر درجہ بند ہوں، برنولی آزمائش کہلاتا ہے۔ مثلاً بچے کی جنس (لڑکا یا لڑکی)، امتحان میں طالب علم کی کارکردگی (پاس یا فیل)، سکہ اچھالنے کا نتیجہ (چِت یا پَٹ) وغیرہ۔ تصادفی متغیر صرف دو قیمتیں لیتا ہے یعنی ناکامی کے لیے “0” اور کامیابی کے لیے “1”۔ مزید یہ کہ کامیابی کے احتمال کو p اور ناکامی کو q سے ظاہر کیا جاتا ہے کہ p+q=1۔\n\n3.2.1 برنولی احتمالی تقسیم\n\nاس قسم کی احتمالی تقسیم:\n\nبرنولی احتمالی تقسیم کہلاتی ہے اور متغیر X جو برنولی آزمائش کے نتائج ظاہر کرتا ہے، برنولی تصادفی متغیر کہلاتا ہے۔ یہ تقسیم سوئس ریاضی دان جیکب برنولی (1654–1705) نے متعارف کرائی۔ اسے نقطہ دو رقمی (point Binomial) تقسیم بھی کہتے ہیں کیونکہ اس میں واقعات کی صرف دو جماعتیں ہیں۔ ریاضیاتی طور پر\n\n$p(x)=\\left\\{\\begin{matrix}p^xq^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nبرنولی احتمالی کمیتی تفاعل کہلاتا ہے۔ اس تقسیم کا صرف ایک پیرامیٹر ہے یعنی p۔\n\nمثال 3.5\n\nایک منصفانہ سکہ ایک بار اچھالا جاتا ہے۔ احتمال کیا ہے کہ (i) کوئی چِت نہ آئے؟ (ii) ایک چِت آئے؟\n\nحل:\n\nسکہ اچھالنا برنولی تجربہ ہے۔ آئیے ایک تصادفی متغیر یوں متعین کریں\n\nX: چِت کی تعداد\n\n$=0,\\ 1$\n\np= چِت کا احتمال =\\frac{1}{2} (کیونکہ سکہ منصفانہ ہے)۔\n\n$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$\n\nبرنولی احتمالی تفاعل یہ ہے\n\n$p(x)=\\left\\{\\begin{matrix}\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i) کوئی چِت نہ آنے کا احتمال =P(X=0)=\\left(\\frac{1}{2}\\right)^0\\left(\\frac{1}{2}\\right)^{1-0}=(1)\\left(\\frac{1}{2}\\right)=\\left(\\frac{1}{2}\\right)\n\n(ii) ایک چِت آنے کا احتمال =P(X=1)=\\left(\\frac{1}{2}\\right)^1\\left(\\frac{1}{2}\\right)^{1-1}=\\left(\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^0=\\left(\\frac{1}{2}\\right)\n\n3.2.3 برنولی تقسیم کی خصوصیات\n\n◆ برنولی تقسیم کا اوسط\n\nتعریف کے مطابق اوسط =E(X)=\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{1}x\\,p^x\\,q^{1-x}\n\n=0p^0q^{1-0}+1p^1q^{1-1}=0+p=p\n\n◆ برنولی تقسیم کا تغیر\n\nتعریف کے مطابق تغیر =E(X^2)-[E(X)]^2\n\n$=\\sum_x x^2p(x)-(p)^2$",
+   "theoryPashto": "3.2 د برنولي ازمېښت\n\nهغه تصادفي تجربه چې دوه شونې پایلې ولري چې د بریا او ناکامۍ په توګه ډلبندي شوې وي، د برنولي ازمېښت بلل کېږي. د بېلګې په توګه د ماشوم جنس (هلک یا نجلۍ)، په ازموینه کې د زده کوونکي کړنه (بریالی یا ناکام)، د سکې د اچولو پایله (سر یا لکۍ) او نور. تصادفي متغیر یوازې دوه قیمتونه اخلي یعنې د ناکامۍ لپاره “0” او د بریا لپاره “1”. سربېره پر دې د بریا احتمال په p او د ناکامۍ په q ښودل کېږي داسې چې p+q=1.\n\n3.2.1 د برنولي احتمالي وېش\n\nد دې ډول احتمالي وېش:\n\nد برنولي احتمالي وېش بلل کېږي او متغیر X چې د برنولي ازمېښت پایلې ښيي، د برنولي تصادفي متغیر بلل کېږي. دا وېش سویسي ریاضي پوه جیکب برنولي (1654–1705) معرفي کړ. د ټکي بینومیل (point Binomial) وېش په نوم هم یادېږي ځکه چې یوازې د پېښو دوه ټولګي لري. په ریاضي ډول\n\n$p(x)=\\left\\{\\begin{matrix}p^xq^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nد برنولي د احتمال کتلوي تابع بلل کېږي. دا وېش یوازې یو پارامټر لري یعنې p.\n\nبېلګه 3.5\n\nیوه عادلانه سکه یو ځل اچول کېږي. احتمال یې څومره دی چې (i) هېڅ سر رانه شي؟ (ii) یو سر راشي؟\n\nحل:\n\nد سکې اچول د برنولي تجربه ده. راځئ یو تصادفي متغیر داسې وټاکو\n\nX: د سرونو شمېر\n\n$=0,\\ 1$\n\np= د سر احتمال =\\frac{1}{2} (ځکه چې سکه عادلانه ده).\n\n$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$\n\nد برنولي احتمالي تابع دا ده\n\n$p(x)=\\left\\{\\begin{matrix}\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{1-x}, & x=0,1\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\n(i) د هېڅ سر نه راتلو احتمال =P(X=0)=\\left(\\frac{1}{2}\\right)^0\\left(\\frac{1}{2}\\right)^{1-0}=(1)\\left(\\frac{1}{2}\\right)=\\left(\\frac{1}{2}\\right)\n\n(ii) د یو سر د راتلو احتمال =P(X=1)=\\left(\\frac{1}{2}\\right)^1\\left(\\frac{1}{2}\\right)^{1-1}=\\left(\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^0=\\left(\\frac{1}{2}\\right)\n\n3.2.3 د برنولي وېش ځانګړنې\n\n◆ د برنولي وېش منځنی\n\nد تعریف له مخې منځنی =E(X)=\\sum_x x\\,p(x)\n\n=\\sum_{x=0}^{1}x\\,p^x\\,q^{1-x}\n\n=0p^0q^{1-0}+1p^1q^{1-1}=0+p=p\n\n◆ د برنولي وېش واریانس\n\nد تعریف له مخې واریانس =E(X^2)-[E(X)]^2\n\n$=\\sum_x x^2p(x)-(p)^2$",
+   "content": "<p>3.2 Bernoulli trail</p><p>A random experiment which has two possible outcomes classified as success and failure is called a Bernoulli trial. For example, gender of a child (male or female), performance of a student in an examination (pass or fail), result of tossing a coin (head or tail) etc. The random variable is taking only two values i.e. “0” for failure and “1” for success. Further, probability of success is denoted by p and failure by q such that p+q=1.</p><p>3.2.1 Bernoulli probability distribution</p><p>A probability distribution of the type:</p><p>is called Bernoulli probability distribution and the variable X which denotes the results of a Bernoulli trail is called Bernoulli random variable. This distribution was introduced by a Swiss mathematician Jacob Bernoulli (1654–1705). It is also known as point Binomial distribution because it has only two classes of events. Mathematically</p><p>$p(x)=\\left\\{\\begin{matrix}p^xq^{1-x}, &amp; x=0,1\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>is called Bernoulli probability mass function. This distribution has only one parameter i.e. p.</p><p>Example 3.5</p><p>A fair coin is tossed o ce. What is the probability that (i) no head occurs? (ii) one head occurs?</p><p>Solution:</p><p>Tossing a coin is Bernoulli experiment. Let us define a random variable as</p><p>X: number of heads</p><p>$=0,\\ 1$</p><p>p= probability of head =\\frac{1}{2} (as coin is fair).</p><p>$q=1-p=1-\\frac{1}{2}=\\frac{1}{2}$</p><p>The Bernoulli probability function is given by</p><p>$p(x)=\\left\\{\\begin{matrix}\\left(\\frac{1}{2}\\right)^x\\left(\\frac{1}{2}\\right)^{1-x}, &amp; x=0,1\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>(i) probability of no head =P(X=0)=\\left(\\frac{1}{2}\\right)^0\\left(\\frac{1}{2}\\right)^{1-0}=(1)\\left(\\frac{1}{2}\\right)=\\left(\\frac{1}{2}\\right)</p><p>(ii) Probability of one head =P(X=1)=\\left(\\frac{1}{2}\\right)^1\\left(\\frac{1}{2}\\right)^{1-1}=\\left(\\frac{1}{2}\\right)\\left(\\frac{1}{2}\\right)^0=\\left(\\frac{1}{2}\\right)</p><p>3.2.3 Properties of Bernoulli distribution</p><p>◆ Mean of Bernoulli distribution</p><p>By definition mean =E(X)=\\sum_x x\\,p(x)</p><p>=\\sum_{x=0}^{1}x\\,p^x\\,q^{1-x}</p><p>=0p^0q^{1-0}+1p^1q^{1-1}=0+p=p</p><p>◆ Variance of Bernoulli distribution</p><p>By definition variance =E(X^2)-[E(X)]^2</p><p>$=\\sum_x x^2p(x)-(p)^2$</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-bernoulli"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      22,
+      23
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      24
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      25
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      26
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-bernoulli",
+     "headers": [
+      "$X$",
+      "$p(x)$"
+     ],
+     "rows": [
+      [
+       "0",
+       "$q$"
+      ],
+      [
+       "1",
+       "$p$"
+      ],
+      [
+       "Total",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "$q$"
+        ],
+        [
+         "1",
+         "$p$"
+        ],
+        [
+         "کل",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "$q$"
+        ],
+        [
+         "1",
+         "$p$"
+        ],
+        [
+         "ټول",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 44,
+     "printedPages": [
+      79,
+      80
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p79-trail-once",
+   "unit": 3,
+   "printedPage": 79,
+   "description": "Printed “Bernoulli trail” (section 3.2 heading and text) for “trial”, and “tossed o ce” (missing n) in Example 3.5; printed spellings retained. Section numbering jumps from 3.2.1 to 3.2.3 as printed."
+  }
+ ],
+ "completeUnits": []
+}

@@ -1,0 +1,267 @@
+{
+ "pdfPage": 58,
+ "sections": [
+  {
+   "id": "stat12-p058-example-3-22-table",
+   "title": "Example 3.22 — distribution table, mean, variance and verification",
+   "headingUrdu": "مثال 3.22 — تقسیم کا جدول، اوسط، تغیر اور تصدیق",
+   "headingPashto": "بېلګه 3.22 — د وېش جدول، منځنی، واریانس او تایید",
+   "paras": [
+    {
+     "text": "$\\text{Mean}=E(X)=\\sum_{x=0}^{4}x\\,p(x)=\\frac{840}{462}=1.8182$",
+     "urdu": "$\\text{Mean}=E(X)=\\sum_{x=0}^{4}x\\,p(x)=\\frac{840}{462}=1.8182$",
+     "pashto": "$\\text{Mean}=E(X)=\\sum_{x=0}^{4}x\\,p(x)=\\frac{840}{462}=1.8182$"
+    },
+    {
+     "text": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2$",
+     "urdu": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2$",
+     "pashto": "$\\text{Variance}=V(X)=E(X^2)-[E(X)]^2$"
+    },
+    {
+     "text": "$=\\sum_{x=0}^{4}x^2p(x)-(1.8182)^2$",
+     "urdu": "$=\\sum_{x=0}^{4}x^2p(x)-(1.8182)^2$",
+     "pashto": "$=\\sum_{x=0}^{4}x^2p(x)-(1.8182)^2$"
+    },
+    {
+     "text": "$=\\frac{1848}{462}-(1.8182)^2=4-3.3059=0.694$",
+     "urdu": "$=\\frac{1848}{462}-(1.8182)^2=4-3.3059=0.694$",
+     "pashto": "$=\\frac{1848}{462}-(1.8182)^2=4-3.3059=0.694$"
+    },
+    {
+     "text": "• Verification",
+     "urdu": "• تصدیق",
+     "pashto": "• تایید"
+    },
+    {
+     "text": "Mean of hypergeometric distribution $=E(X)=\\frac{nk}{N}=\\frac{5(4)}{11}=\\frac{20}{11}=1.8182$",
+     "urdu": "ہائپر جیومیٹرک تقسیم کا اوسط $=E(X)=\\frac{nk}{N}=\\frac{5(4)}{11}=\\frac{20}{11}=1.8182$",
+     "pashto": "د هایپرجیومټریک وېش منځنی $=E(X)=\\frac{nk}{N}=\\frac{5(4)}{11}=\\frac{20}{11}=1.8182$"
+    },
+    {
+     "text": "Variance of hypergeometric distribution $V(X)=\\frac{nk}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}$",
+     "urdu": "ہائپر جیومیٹرک تقسیم کا تغیر $V(X)=\\frac{nk}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}$",
+     "pashto": "د هایپرجیومټریک وېش واریانس $V(X)=\\frac{nk}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}$"
+    },
+    {
+     "text": "$=1.8182\\frac{(11-4)}{11}\\left(\\frac{11-5}{11-1}\\right)$",
+     "urdu": "$=1.8182\\frac{(11-4)}{11}\\left(\\frac{11-5}{11-1}\\right)$",
+     "pashto": "$=1.8182\\frac{(11-4)}{11}\\left(\\frac{11-5}{11-1}\\right)$"
+    },
+    {
+     "text": "$=0.694$",
+     "urdu": "$=0.694$",
+     "pashto": "$=0.694$"
+    }
+   ],
+   "theory": "\\text{Mean}=E(X)=\\sum_{x=0}^{4}x\\,p(x)=\\frac{840}{462}=1.8182\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\n\n=\\sum_{x=0}^{4}x^2p(x)-(1.8182)^2\n\n=\\frac{1848}{462}-(1.8182)^2=4-3.3059=0.694\n\n• Verification\n\nMean of hypergeometric distribution =E(X)=\\frac{nk}{N}=\\frac{5(4)}{11}=\\frac{20}{11}=1.8182\n\nVariance of hypergeometric distribution V(X)=\\frac{nk}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}\n\n=1.8182\\frac{(11-4)}{11}\\left(\\frac{11-5}{11-1}\\right)\n\n=0.694",
+   "urdu": "\\text{Mean}=E(X)=\\sum_{x=0}^{4}x\\,p(x)=\\frac{840}{462}=1.8182\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\n\n=\\sum_{x=0}^{4}x^2p(x)-(1.8182)^2\n\n=\\frac{1848}{462}-(1.8182)^2=4-3.3059=0.694\n\n• تصدیق\n\nہائپر جیومیٹرک تقسیم کا اوسط =E(X)=\\frac{nk}{N}=\\frac{5(4)}{11}=\\frac{20}{11}=1.8182\n\nہائپر جیومیٹرک تقسیم کا تغیر V(X)=\\frac{nk}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}\n\n=1.8182\\frac{(11-4)}{11}\\left(\\frac{11-5}{11-1}\\right)\n\n=0.694",
+   "pashto": "\\text{Mean}=E(X)=\\sum_{x=0}^{4}x\\,p(x)=\\frac{840}{462}=1.8182\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\n\n=\\sum_{x=0}^{4}x^2p(x)-(1.8182)^2\n\n=\\frac{1848}{462}-(1.8182)^2=4-3.3059=0.694\n\n• تایید\n\nد هایپرجیومټریک وېش منځنی =E(X)=\\frac{nk}{N}=\\frac{5(4)}{11}=\\frac{20}{11}=1.8182\n\nد هایپرجیومټریک وېش واریانس V(X)=\\frac{nk}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}\n\n=1.8182\\frac{(11-4)}{11}\\left(\\frac{11-5}{11-1}\\right)\n\n=0.694",
+   "theoryUrdu": "\\text{Mean}=E(X)=\\sum_{x=0}^{4}x\\,p(x)=\\frac{840}{462}=1.8182\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\n\n=\\sum_{x=0}^{4}x^2p(x)-(1.8182)^2\n\n=\\frac{1848}{462}-(1.8182)^2=4-3.3059=0.694\n\n• تصدیق\n\nہائپر جیومیٹرک تقسیم کا اوسط =E(X)=\\frac{nk}{N}=\\frac{5(4)}{11}=\\frac{20}{11}=1.8182\n\nہائپر جیومیٹرک تقسیم کا تغیر V(X)=\\frac{nk}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}\n\n=1.8182\\frac{(11-4)}{11}\\left(\\frac{11-5}{11-1}\\right)\n\n=0.694",
+   "theoryPashto": "\\text{Mean}=E(X)=\\sum_{x=0}^{4}x\\,p(x)=\\frac{840}{462}=1.8182\n\n\\text{Variance}=V(X)=E(X^2)-[E(X)]^2\n\n=\\sum_{x=0}^{4}x^2p(x)-(1.8182)^2\n\n=\\frac{1848}{462}-(1.8182)^2=4-3.3059=0.694\n\n• تایید\n\nد هایپرجیومټریک وېش منځنی =E(X)=\\frac{nk}{N}=\\frac{5(4)}{11}=\\frac{20}{11}=1.8182\n\nد هایپرجیومټریک وېش واریانس V(X)=\\frac{nk}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}\n\n=1.8182\\frac{(11-4)}{11}\\left(\\frac{11-5}{11-1}\\right)\n\n=0.694",
+   "content": "<p>\\text{Mean}=E(X)=\\sum_{x=0}^{4}x\\,p(x)=\\frac{840}{462}=1.8182</p><p>\\text{Variance}=V(X)=E(X^2)-[E(X)]^2</p><p>=\\sum_{x=0}^{4}x^2p(x)-(1.8182)^2</p><p>=\\frac{1848}{462}-(1.8182)^2=4-3.3059=0.694</p><p>• Verification</p><p>Mean of hypergeometric distribution =E(X)=\\frac{nk}{N}=\\frac{5(4)}{11}=\\frac{20}{11}=1.8182</p><p>Variance of hypergeometric distribution V(X)=\\frac{nk}{N}\\;\\frac{N-k}{N}\\;\\frac{N-n}{N-1}</p><p>=1.8182\\frac{(11-4)}{11}\\left(\\frac{11-5}{11-1}\\right)</p><p>=0.694</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex3-22"
+    },
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      7,
+      8
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex3-22",
+     "headers": [
+      "$X$",
+      "$p(x)=\\dfrac{\\binom{4}{x}\\binom{7}{5-x}}{\\binom{11}{5}}$",
+      "$X\\,p(x)$",
+      "$X^2p(x)$"
+     ],
+     "rows": [
+      [
+       "0",
+       "$\\dfrac{\\binom{4}{0}\\binom{7}{5-0}}{\\binom{11}{5}}=\\frac{21}{462}$",
+       "0",
+       "0"
+      ],
+      [
+       "1",
+       "$\\dfrac{\\binom{4}{1}\\binom{7}{5-1}}{\\binom{11}{5}}=\\frac{140}{462}$",
+       "$\\frac{140}{462}$",
+       "$\\frac{140}{462}$"
+      ],
+      [
+       "2",
+       "$\\dfrac{\\binom{4}{2}\\binom{7}{5-2}}{\\binom{11}{5}}=\\frac{210}{462}$",
+       "$\\frac{420}{462}$",
+       "$\\frac{840}{462}$"
+      ],
+      [
+       "3",
+       "$\\dfrac{\\binom{4}{3}\\binom{7}{5-3}}{\\binom{11}{5}}=\\frac{84}{462}$",
+       "$\\frac{252}{462}$",
+       "$\\frac{756}{462}$"
+      ],
+      [
+       "4",
+       "$\\dfrac{\\binom{4}{4}\\binom{7}{5-4}}{\\binom{11}{5}}=\\frac{7}{462}$",
+       "$\\frac{28}{462}$",
+       "$\\frac{112}{462}$"
+      ],
+      [
+       "Total",
+       "1",
+       "$\\frac{840}{462}$",
+       "$\\frac{1848}{462}$"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)=\\dfrac{\\binom{4}{x}\\binom{7}{5-x}}{\\binom{11}{5}}$",
+        "$X\\,p(x)$",
+        "$X^2p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "$\\dfrac{\\binom{4}{0}\\binom{7}{5-0}}{\\binom{11}{5}}=\\frac{21}{462}$",
+         "0",
+         "0"
+        ],
+        [
+         "1",
+         "$\\dfrac{\\binom{4}{1}\\binom{7}{5-1}}{\\binom{11}{5}}=\\frac{140}{462}$",
+         "$\\frac{140}{462}$",
+         "$\\frac{140}{462}$"
+        ],
+        [
+         "2",
+         "$\\dfrac{\\binom{4}{2}\\binom{7}{5-2}}{\\binom{11}{5}}=\\frac{210}{462}$",
+         "$\\frac{420}{462}$",
+         "$\\frac{840}{462}$"
+        ],
+        [
+         "3",
+         "$\\dfrac{\\binom{4}{3}\\binom{7}{5-3}}{\\binom{11}{5}}=\\frac{84}{462}$",
+         "$\\frac{252}{462}$",
+         "$\\frac{756}{462}$"
+        ],
+        [
+         "4",
+         "$\\dfrac{\\binom{4}{4}\\binom{7}{5-4}}{\\binom{11}{5}}=\\frac{7}{462}$",
+         "$\\frac{28}{462}$",
+         "$\\frac{112}{462}$"
+        ],
+        [
+         "کل",
+         "1",
+         "$\\frac{840}{462}$",
+         "$\\frac{1848}{462}$"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)=\\dfrac{\\binom{4}{x}\\binom{7}{5-x}}{\\binom{11}{5}}$",
+        "$X\\,p(x)$",
+        "$X^2p(x)$"
+       ],
+       "rows": [
+        [
+         "0",
+         "$\\dfrac{\\binom{4}{0}\\binom{7}{5-0}}{\\binom{11}{5}}=\\frac{21}{462}$",
+         "0",
+         "0"
+        ],
+        [
+         "1",
+         "$\\dfrac{\\binom{4}{1}\\binom{7}{5-1}}{\\binom{11}{5}}=\\frac{140}{462}$",
+         "$\\frac{140}{462}$",
+         "$\\frac{140}{462}$"
+        ],
+        [
+         "2",
+         "$\\dfrac{\\binom{4}{2}\\binom{7}{5-2}}{\\binom{11}{5}}=\\frac{210}{462}$",
+         "$\\frac{420}{462}$",
+         "$\\frac{840}{462}$"
+        ],
+        [
+         "3",
+         "$\\dfrac{\\binom{4}{3}\\binom{7}{5-3}}{\\binom{11}{5}}=\\frac{84}{462}$",
+         "$\\frac{252}{462}$",
+         "$\\frac{756}{462}$"
+        ],
+        [
+         "4",
+         "$\\dfrac{\\binom{4}{4}\\binom{7}{5-4}}{\\binom{11}{5}}=\\frac{7}{462}$",
+         "$\\frac{28}{462}$",
+         "$\\frac{112}{462}$"
+        ],
+        [
+         "ټول",
+         "1",
+         "$\\frac{840}{462}$",
+         "$\\frac{1848}{462}$"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 58,
+     "printedPages": [
+      107,
+      108
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

@@ -1,0 +1,1777 @@
+{
+  "formulas": [
+    {
+      "id": "phys19-balmer-formula",
+      "name": "Balmer wavelength formula",
+      "number": "19.1",
+      "expression": "1/λₙ=R_H(1/2²−1/n²), n=3,4,5,…; R_H=1.0974×10⁷ m⁻¹",
+      "sourceReferences": [
+        {
+          "pdfPage": 156,
+          "printedPage": 301,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-rydberg-general-formula",
+      "name": "Rydberg formula for hydrogen spectral series",
+      "number": "19.2",
+      "expression": "1/λₙ=R_H(1/p²−1/n²); p=1,2,3,…; n=p+1,p+2,…; R_H=1.0974×10⁷ m⁻¹",
+      "sourceReferences": [
+        {
+          "pdfPage": 157,
+          "printedPage": 302,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-bohr-postulate1-coulomb-centripetal",
+      "name": "Bohr postulate 1: circular-orbit force balance",
+      "expression": "F_centripetal=F_Coulomb; mv²/r=ke²/r²",
+      "sourceReferences": [
+        {
+          "pdfPage": 157,
+          "printedPage": 303,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-quantized-angular-momentum",
+      "name": "Bohr quantization of angular momentum",
+      "expression": "L=mvr=n h/(2π), n=1,2,3,…",
+      "sourceReferences": [
+        {
+          "pdfPage": 158,
+          "printedPage": 304,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-bohr-photon-transition-energy",
+      "name": "Photon energy in a Bohr transition",
+      "number": "19.3",
+      "expression": "hf=Eₙ−Eₚ",
+      "sourceReferences": [
+        {
+          "pdfPage": 158,
+          "printedPage": 304,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-bohr-orbit-force-balance",
+      "name": "Bohr circular-orbit force balance",
+      "expression": "mv²/rₙ=ke²/rₙ²",
+      "sourceReferences": [
+        {
+          "pdfPage": 158,
+          "printedPage": 305,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-bohr-electron-energy-levels",
+      "name": "Bohr energy levels in hydrogen",
+      "number": "19.6",
+      "expression": "Eₙ=−E₀/n²=−13.6 eV/n²; E₀=2π²mk²e⁴/h²=13.6 eV",
+      "sourceReferences": [
+        {
+          "pdfPage": 159,
+          "printedPage": 306,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 159,
+          "printedPage": 307,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-total-energy-in-orbit",
+      "name": "Electron total energy in a circular orbit",
+      "number": "19.5 derivation",
+      "expression": "Eₙ=K.E.+P.E.=−ke²/(2rₙ)",
+      "sourceReferences": [
+        {
+          "pdfPage": 159,
+          "printedPage": 306,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-emitted-photon-energy",
+      "name": "Photon energy",
+      "expression": "E=hf",
+      "sourceReferences": [
+        {
+          "pdfPage": 159,
+          "printedPage": 307,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-hydrogen-radiative-transition",
+      "name": "Hydrogen photon transition and Rydberg relation",
+      "number": "19.7",
+      "expression": "hf=Eₙ−Eₚ; 1/λ=(E₀/hc)(1/p²−1/n²)=R_H(1/p²−1/n²)",
+      "sourceReferences": [
+        {
+          "pdfPage": 160,
+          "printedPage": 308,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 160,
+          "printedPage": 309,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-first-hydrogen-excitation-energy",
+      "name": "First excitation energy of hydrogen",
+      "expression": "E₂−E₁=3E₀/4=1.62×10⁻¹⁸ J=10.2 eV",
+      "sourceReferences": [
+        {
+          "pdfPage": 160,
+          "printedPage": 309,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-second-hydrogen-excitation-energy",
+      "name": "Second excitation energy as printed",
+      "expression": "E₃−E₁=8E₀/9; source later prints E₃=E₁−12.1 eV and states 12.1 eV required",
+      "sourceReferences": [
+        {
+          "pdfPage": 161,
+          "printedPage": 310,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-hydrogen-ionization-energy",
+      "name": "Hydrogen ionization energy",
+      "expression": "E∞−E₁=E₀=2.17×10⁻¹⁸ J=13.6 eV",
+      "sourceReferences": [
+        {
+          "pdfPage": 161,
+          "printedPage": 310,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-hydrogen-energy-levels",
+      "name": "Hydrogen energy-level equation",
+      "number": "19.7",
+      "expression": "Eₙ=−E₀/n²; E∞=0 eV; E₁=−13.6 eV",
+      "sourceReferences": [
+        {
+          "pdfPage": 161,
+          "printedPage": 311,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-balmer-shortest-wavelength-example",
+      "name": "Shortest Balmer-series wavelength",
+      "expression": "1/λ_s=R_H(1/2²−1/∞²); λ_s=364.5 nm",
+      "sourceReferences": [
+        {
+          "pdfPage": 162,
+          "printedPage": 312,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 162,
+          "printedPage": 313,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-balmer-longest-wavelength-example",
+      "name": "Longest Balmer-series wavelength",
+      "expression": "1/λ_L=R_H(1/2²−1/3²); λ_L=656.1 nm",
+      "sourceReferences": [
+        {
+          "pdfPage": 162,
+          "printedPage": 312,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 162,
+          "printedPage": 313,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-lyman-wavelength-assignment",
+      "name": "Lyman shortest and longest wavelengths (printed answers)",
+      "expression": "91 nm; 121.5 nm",
+      "sourceReferences": [
+        {
+          "pdfPage": 162,
+          "printedPage": 313,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-paschen-second-line-assignment",
+      "name": "Second Paschen-series line (printed answer)",
+      "expression": "1281.43 nm",
+      "sourceReferences": [
+        {
+          "pdfPage": 162,
+          "printedPage": 313,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-debroglie-wavelength",
+      "name": "de Broglie wavelength of a moving particle",
+      "expression": "λ=h/p=h/(mv)",
+      "sourceReferences": [
+        {
+          "pdfPage": 163,
+          "printedPage": 314,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-standing-wave-bohr-quantization",
+      "name": "Standing-wave condition for Bohr orbits",
+      "number": "19.8",
+      "expression": "2πr=nλ; λ=2πr/n; mvr=nh/(2π)",
+      "sourceReferences": [
+        {
+          "pdfPage": 163,
+          "printedPage": 314,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-xray-wavelength-angstorm",
+      "name": "X-ray wavelength scale",
+      "expression": "Å=10⁻¹⁰ m",
+      "sourceReferences": [
+        {
+          "pdfPage": 163,
+          "printedPage": 315,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-characteristic-k-lines",
+      "name": "K-series characteristic X-ray transitions",
+      "expression": "Kα: L→K; Kβ: M→K; subsequent lines from successively higher shells",
+      "sourceReferences": [
+        {
+          "pdfPage": 164,
+          "printedPage": 317,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-characteristic-l-lines",
+      "name": "L-series characteristic X-ray transitions",
+      "expression": "Lα: M→L; Lβ: N→L; subsequent lines from successively higher shells",
+      "sourceReferences": [
+        {
+          "pdfPage": 164,
+          "printedPage": 317,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-bremsstrahlung-energy-conservation",
+      "name": "Bremsstrahlung photon energy",
+      "expression": "KE−KE′=hf",
+      "sourceReferences": [
+        {
+          "pdfPage": 165,
+          "printedPage": 318,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-minimum-xray-wavelength",
+      "name": "Minimum X-ray wavelength",
+      "number": "19.9",
+      "expression": "λ=hc/(qₑV)",
+      "sourceReferences": [
+        {
+          "pdfPage": 165,
+          "printedPage": 319,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-ct-wavelength-example",
+      "name": "Shortest X-ray wavelength at 40.0 kV",
+      "expression": "λ_min=hc/(qₑV)=3.11×10⁻¹¹ m=0.0311 nm",
+      "sourceReferences": [
+        {
+          "pdfPage": 166,
+          "printedPage": 320,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 166,
+          "printedPage": 321,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-xray-assignment-3000v",
+      "name": "Minimum X-ray wavelength assignment (printed answer)",
+      "expression": "V=3000 V; λ_min=0.414 nm",
+      "sourceReferences": [
+        {
+          "pdfPage": 166,
+          "printedPage": 321,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-spontaneous-emission-process",
+      "name": "Spontaneous emission process",
+      "expression": "atom*→atom+photon",
+      "sourceReferences": [
+        {
+          "pdfPage": 167,
+          "printedPage": 322,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-induced-absorption-process",
+      "name": "Induced absorption process",
+      "expression": "atom+photon→atom*",
+      "sourceReferences": [
+        {
+          "pdfPage": 167,
+          "printedPage": 322,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-stimulated-emission-process",
+      "name": "Stimulated emission process",
+      "expression": "atom*+photon→atom+2 photons",
+      "sourceReferences": [
+        {
+          "pdfPage": 167,
+          "printedPage": 322,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-metastable-lifetime-comparison",
+      "name": "Excited-state and meta-stable lifetimes (as printed)",
+      "expression": "short-lived state ≈10⁻⁸ s; meta-stable state ≈10⁻³ s",
+      "sourceReferences": [
+        {
+          "pdfPage": 168,
+          "printedPage": 324,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-helium-neon-mixture",
+      "name": "Helium-neon laser mixture",
+      "expression": "He 85%; Ne 15%; meta-stable energies 20.61 eV (He), 20.66 eV (Ne)",
+      "sourceReferences": [
+        {
+          "pdfPage": 168,
+          "printedPage": 325,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-hene-laser-photon-energy",
+      "name": "Helium-neon stimulated-emission photon energy",
+      "expression": "ΔE=20.66−18.70=1.96 eV≈3.136×10⁻¹⁹ J",
+      "sourceReferences": [
+        {
+          "pdfPage": 169,
+          "printedPage": 326,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-hene-laser-wavelength",
+      "name": "Helium-neon laser wavelength",
+      "expression": "λ=hc/E=6.334×10⁻⁷ m=633.4 nm (red)",
+      "sourceReferences": [
+        {
+          "pdfPage": 169,
+          "printedPage": 326,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-key-points-rydberg-formula",
+      "name": "Rydberg formula (key points)",
+      "expression": "1/λₙ=R_H(1/p²−1/n²); R_H=1.0974×10⁷ m⁻¹",
+      "sourceReferences": [
+        {
+          "pdfPage": 170,
+          "printedPage": 329,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-key-points-bohr-angular-momentum",
+      "name": "Bohr angular momentum condition as printed in key points",
+      "expression": "mvr=nh/2π",
+      "sourceReferences": [
+        {
+          "pdfPage": 170,
+          "printedPage": 329,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "phys19-key-points-transition-energy",
+      "name": "Bohr transition photon energy",
+      "expression": "hf=Eₙ−Eₚ",
+      "sourceReferences": [
+        {
+          "pdfPage": 170,
+          "printedPage": 329,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Atomic spectrum",
+      "definition": "The spectrum of frequencies emitted or absorbed during electron transitions between energy levels in an atom.",
+      "sourceReferences": [
+        {
+          "pdfPage": 155,
+          "printedPage": 298,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Continuous spectrum",
+      "definition": "A spectrum from solids, liquids and very dense gases in which intensity changes continuously rather than in discrete lines.",
+      "sourceReferences": [
+        {
+          "pdfPage": 155,
+          "printedPage": 298,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Line emission spectrum",
+      "definition": "The discrete bright lines emitted by an electrically excited gas, each corresponding to a specific wavelength.",
+      "sourceReferences": [
+        {
+          "pdfPage": 155,
+          "printedPage": 298,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 155,
+          "printedPage": 299,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Line absorption spectrum",
+      "definition": "Dark lines in a continuous spectrum where photons absorbed by atoms are absent from transmitted white light.",
+      "sourceReferences": [
+        {
+          "pdfPage": 155,
+          "printedPage": 299,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Fluorescence",
+      "definition": "Visible emission following ultraviolet-induced excitation; the source notes scorpion-skin proteins glow blue.",
+      "sourceReferences": [
+        {
+          "pdfPage": 155,
+          "printedPage": 298,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Balmer series",
+      "definition": "Visible hydrogen spectral lines predicted for transitions involving n=2, with upper level n=3,4,5,…; wavelengths follow the Balmer formula.",
+      "sourceReferences": [
+        {
+          "pdfPage": 156,
+          "printedPage": 301,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Stationary state (Bohr model)",
+      "definition": "An allowed stable orbit in which the electron does not radiate energy.",
+      "sourceReferences": [
+        {
+          "pdfPage": 158,
+          "printedPage": 304,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Hydrogen spectral series",
+      "definition": "Groups of hydrogen spectral lines classified by the final energy level (including Lyman, Balmer, Paschen and Brackett series).",
+      "sourceReferences": [
+        {
+          "pdfPage": 157,
+          "printedPage": 302,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Ground state (Bohr model)",
+      "definition": "The lowest possible allowed energy level of the electron in the atom.",
+      "sourceReferences": [
+        {
+          "pdfPage": 159,
+          "printedPage": 307,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Emission-line spectrum",
+      "definition": "A spectrum showing that atoms emit photons only at particular frequencies and corresponding energies.",
+      "sourceReferences": [
+        {
+          "pdfPage": 159,
+          "printedPage": 307,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Ground state (hydrogen atom)",
+      "definition": "The hydrogen atom state with principal quantum number n=1 and the lowest allowed energy.",
+      "sourceReferences": [
+        {
+          "pdfPage": 160,
+          "printedPage": 309,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Excited states (hydrogen atom)",
+      "definition": "Allowed hydrogen atom states with principal quantum number n=2,3,4,… above the ground state.",
+      "sourceReferences": [
+        {
+          "pdfPage": 160,
+          "printedPage": 309,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Excitation energy",
+      "definition": "The energy required to move an electron from the ground state to a higher excited state; it equals the difference between the two energy levels.",
+      "sourceReferences": [
+        {
+          "pdfPage": 160,
+          "printedPage": 309,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Excitation potential",
+      "definition": "The potential difference required to move an electron from its ground state to an excited state.",
+      "sourceReferences": [
+        {
+          "pdfPage": 161,
+          "printedPage": 310,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Ionization energy",
+      "definition": "The minimum energy required to remove an electron from an atom in its ground state.",
+      "sourceReferences": [
+        {
+          "pdfPage": 161,
+          "printedPage": 310,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Ionization potential",
+      "definition": "The minimum potential difference required to remove an electron from an atom in its ground state.",
+      "sourceReferences": [
+        {
+          "pdfPage": 161,
+          "printedPage": 311,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Absorption spectrum (continuous-source setup)",
+      "definition": "Dark lines in a continuous spectrum indicate wavelengths removed when light passes through a gas and is analyzed spectroscopically.",
+      "sourceReferences": [
+        {
+          "pdfPage": 162,
+          "printedPage": 312,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Ground state",
+      "definition": "The lowest energy level of an atom, distinguished from its higher excited states.",
+      "sourceReferences": [
+        {
+          "pdfPage": 162,
+          "printedPage": 312,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "de Broglie wavelength",
+      "definition": "The wavelength associated with a moving particle; λ=h/p=h/(mv) for a particle of mass m and speed v.",
+      "sourceReferences": [
+        {
+          "pdfPage": 163,
+          "printedPage": 314,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "X-rays",
+      "definition": "Electromagnetic waves with wavelengths in the region of an angstrom (Å=10⁻¹⁰ m).",
+      "sourceReferences": [
+        {
+          "pdfPage": 163,
+          "printedPage": 315,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Characteristic X-rays",
+      "definition": "Discrete spectral lines produced when an electron from an outer atomic shell fills an inner-shell vacancy, emitting an X-ray photon.",
+      "sourceReferences": [
+        {
+          "pdfPage": 164,
+          "printedPage": 317,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Bremsstrahlung (continuous X-rays)",
+      "definition": "The continuous component of an X-ray tube spectrum, shown with a cutoff wavelength λ₀.",
+      "sourceReferences": [
+        {
+          "pdfPage": 164,
+          "printedPage": 317,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Bremsstrahlung",
+      "definition": "Radiation emitted when an electron slows down through interaction with atoms in an X-ray target; photon energy equals the electron’s kinetic-energy loss.",
+      "sourceReferences": [
+        {
+          "pdfPage": 165,
+          "printedPage": 318,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Minimum X-ray wavelength",
+      "definition": "The shortest wavelength occurs when one electron transfers all its kinetic energy to a single photon in one collision.",
+      "sourceReferences": [
+        {
+          "pdfPage": 165,
+          "printedPage": 319,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Computed tomography (CT)",
+      "definition": "A technique in which an X-ray source and many detectors rotate around a patient to obtain multiple views that a computer combines into cross-sectional and three-dimensional images.",
+      "sourceReferences": [
+        {
+          "pdfPage": 166,
+          "printedPage": 320,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Laser",
+      "definition": "A device that emits an intense, monochromatic and coherent beam by optical amplification based on stimulated emission.",
+      "sourceReferences": [
+        {
+          "pdfPage": 166,
+          "printedPage": 321,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Maser",
+      "definition": "A device using stimulated emission and amplification at microwave or radio frequencies.",
+      "sourceReferences": [
+        {
+          "pdfPage": 166,
+          "printedPage": 321,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Spontaneous emission",
+      "definition": "An excited atom transitions to a lower state and emits a photon without an inducing photon.",
+      "sourceReferences": [
+        {
+          "pdfPage": 167,
+          "printedPage": 322,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Induced absorption",
+      "definition": "A ground-state atom absorbs a photon with the required energy and transitions to an excited state.",
+      "sourceReferences": [
+        {
+          "pdfPage": 167,
+          "printedPage": 322,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Stimulated emission",
+      "definition": "An incoming photon induces an excited atom to emit a second photon of matching energy, direction and phase while dropping to a lower state.",
+      "sourceReferences": [
+        {
+          "pdfPage": 167,
+          "printedPage": 322,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 167,
+          "printedPage": 323,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Meta-stable state",
+      "definition": "An excited atomic state in which electrons remain longer (about 10⁻³ s in the text) before spontaneous decay.",
+      "sourceReferences": [
+        {
+          "pdfPage": 168,
+          "printedPage": 324,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Population inversion",
+      "definition": "A state in a collection of atoms in which more atoms occupy an excited state than the ground state.",
+      "sourceReferences": [
+        {
+          "pdfPage": 168,
+          "printedPage": 324,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Laser pumping",
+      "definition": "Transfer of energy from an external source to produce excited states in the atoms of a laser medium.",
+      "sourceReferences": [
+        {
+          "pdfPage": 168,
+          "printedPage": 325,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Monochromatic laser light",
+      "definition": "Laser light concentrated in a narrow wavelength range, unlike the continuous wavelength range from an incandescent bulb.",
+      "sourceReferences": [
+        {
+          "pdfPage": 169,
+          "printedPage": 327,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Coherent laser light",
+      "definition": "Laser wave trains coordinated in phase; the text says they can be hundreds of kilometres long.",
+      "sourceReferences": [
+        {
+          "pdfPage": 169,
+          "printedPage": 327,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Directional laser beam",
+      "definition": "A beam that spreads very little, with divergence due to diffraction at its exit aperture.",
+      "sourceReferences": [
+        {
+          "pdfPage": 169,
+          "printedPage": 327,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Holography",
+      "definition": "A method that records phase and intensity through interference to reconstruct a three-dimensional representation of an object.",
+      "sourceReferences": [
+        {
+          "pdfPage": 170,
+          "printedPage": 328,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "term": "Spectrum",
+      "definition": "Separation of electromagnetic radiation into component colours or wavelengths.",
+      "sourceReferences": [
+        {
+          "pdfPage": 170,
+          "printedPage": 329,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "workedExamples": [],
+  "exercises": [
+    {
+      "id": "textbook-exercise-19-mcq",
+      "exercise": "Exercise 19",
+      "title": "Unit 19 multiple-choice questions",
+      "problems": [
+        {
+          "id": "textbook-exercise-19-mcq-q1",
+          "qNo": "1",
+          "question": "Which of the following series of hydrogen spectra lies in the visible region of the spectrum?",
+          "options": [
+            "A. Layman",
+            "B. Balmer",
+            "C. Pashen",
+            "D. Brachett"
+          ],
+          "questionUrdu": "ہائیڈروجن کے طیف کا کون سا سلسلہ مرئی خطے میں ہے؟",
+          "optionsUrdu": [
+            "A. Layman",
+            "B. Balmer",
+            "C. Pashen",
+            "D. Brachett"
+          ],
+          "questionPashto": "د هایدروجن د طیف کومه لړۍ د لید وړ سیمه کې ده؟",
+          "optionsPashto": [
+            "A. Layman",
+            "B. Balmer",
+            "C. Pashen",
+            "D. Brachett"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 330,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q2",
+          "qNo": "2",
+          "question": "The longest wavelength in Balmer’s series with wavelength 656.2 nm corresponds to",
+          "options": [
+            "A. n=3",
+            "B. n=4",
+            "C. n=5",
+            "D. n=∞"
+          ],
+          "questionUrdu": "د بالمر په لړۍ کې د 656.2 nm تر ټولو اوږد طولِ موج له کوم n سره سمون لري؟",
+          "optionsUrdu": [
+            "A. n=3",
+            "B. n=4",
+            "C. n=5",
+            "D. n=∞"
+          ],
+          "questionPashto": "د بالمر په لړۍ کې د 656.2 nm تر ټولو اوږده څپې‌اوږدوالی له کوم n سره سمون لري؟",
+          "optionsPashto": [
+            "A. n=3",
+            "B. n=4",
+            "C. n=5",
+            "D. n=∞"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 330,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q3",
+          "qNo": "3",
+          "question": "If 13.6 eV energy is required to ionize the hydrogen atom, then the required energy to remove an electron from n=2 is",
+          "options": [
+            "A. 10.2 eV",
+            "B. 0 eV",
+            "C. 3.4 eV",
+            "D. 6.8 eV"
+          ],
+          "questionUrdu": "اگر ہائیڈروجن ایٹم کو آئنائز کرنے کے لیے 13.6 eV درکار ہوں تو n=2 سے الیکٹران نکالنے کے لیے کتنی توانائی چاہیے؟",
+          "optionsUrdu": [
+            "A. 10.2 eV",
+            "B. 0 eV",
+            "C. 3.4 eV",
+            "D. 6.8 eV"
+          ],
+          "questionPashto": "د هایدروجن اتوم د ایونایز کولو لپاره که 13.6 eV انرژي اړینه وي، له n=2 څخه د الکترون لرې کولو لپاره څومره انرژي پکار ده؟",
+          "optionsPashto": [
+            "A. 10.2 eV",
+            "B. 0 eV",
+            "C. 3.4 eV",
+            "D. 6.8 eV"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 330,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q4",
+          "qNo": "4",
+          "question": "If an atom exists in excited state n=5, the maximum number of transitions that take place is",
+          "options": [
+            "A. 3",
+            "B. 5",
+            "C. 10",
+            "D. 25"
+          ],
+          "questionUrdu": "اگر ایٹم n=5 مثار حالت میں ہو تو زیادہ سے زیادہ کتنی منتقلیاں ہو سکتی ہیں؟",
+          "optionsUrdu": [
+            "A. 3",
+            "B. 5",
+            "C. 10",
+            "D. 25"
+          ],
+          "questionPashto": "که یو اتوم په n=5 مثار حالت کې وي، د لېږدونو تر ټولو ډېر شمېر څومره دی؟",
+          "optionsPashto": [
+            "A. 3",
+            "B. 5",
+            "C. 10",
+            "D. 25"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 330,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q5",
+          "qNo": "5",
+          "question": "The energy of the electron in the excited state n=4 in hydrogen atom is",
+          "options": [
+            "A. −13.6 eV",
+            "B. −3.4 eV",
+            "C. −0.85 eV",
+            "D. −1.5 eV"
+          ],
+          "questionUrdu": "ہائیڈروجن ایٹم میں مثار حالت n=4 کے الیکٹران کی توانائی کیا ہے؟",
+          "optionsUrdu": [
+            "A. −13.6 eV",
+            "B. −3.4 eV",
+            "C. −0.85 eV",
+            "D. −1.5 eV"
+          ],
+          "questionPashto": "په هایدروجن اتوم کې د n=4 مثار حالت د الکترون انرژي څومره ده؟",
+          "optionsPashto": [
+            "A. −13.6 eV",
+            "B. −3.4 eV",
+            "C. −0.85 eV",
+            "D. −1.5 eV"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 330,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q6",
+          "qNo": "6",
+          "question": "The radius of the third Bohr orbit is greater than the radius of the first Bohr orbit (Bohr’s radius) by factor of",
+          "options": [
+            "A. 3",
+            "B. 6",
+            "C. 9",
+            "D. 16"
+          ],
+          "questionUrdu": "د بوہر د درېیم مدار رداس، پہلے مدار (بوہر رداس) سے کتنے گنا زیادہ ہے؟",
+          "optionsUrdu": [
+            "A. 3",
+            "B. 6",
+            "C. 9",
+            "D. 16"
+          ],
+          "questionPashto": "د بوهر د درېیم مدار شعاع د لومړي مدار (د بوهر شعاع) په پرتله څو برابره ده؟",
+          "optionsPashto": [
+            "A. 3",
+            "B. 6",
+            "C. 9",
+            "D. 16"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 330,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q7",
+          "qNo": "7",
+          "question": "The reverse process of X-ray production can be related to",
+          "options": [
+            "A. Compton Effect",
+            "B. photoelectric effect",
+            "C. Pair Production",
+            "D. Pair Annihilation"
+          ],
+          "questionUrdu": "ایکس رے پیداوار کے معکوس عمل کا تعلق کس سے ہو سکتا ہے؟",
+          "optionsUrdu": [
+            "A. Compton Effect",
+            "B. photoelectric effect",
+            "C. Pair Production",
+            "D. Pair Annihilation"
+          ],
+          "questionPashto": "د ایکس وړانګو د تولید معکوس بهیر له کومې پدیدې سره تړاو لري؟",
+          "optionsPashto": [
+            "A. Compton Effect",
+            "B. photoelectric effect",
+            "C. Pair Production",
+            "D. Pair Annihilation"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 330,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q8",
+          "qNo": "8",
+          "question": "The duration of meta-stable state is approximately",
+          "options": [
+            "A. 10⁻³ s",
+            "B. 10⁻⁶ s",
+            "C. 10⁻⁸ s",
+            "D. 10⁻¹⁰ s"
+          ],
+          "questionUrdu": "نیم مستحکم حالت کا دورانیہ تقریباً کتنا ہے؟",
+          "optionsUrdu": [
+            "A. 10⁻³ s",
+            "B. 10⁻⁶ s",
+            "C. 10⁻⁸ s",
+            "D. 10⁻¹⁰ s"
+          ],
+          "questionPashto": "د نیمه‌ثابت حالت موده نږدې څومره ده؟",
+          "optionsPashto": [
+            "A. 10⁻³ s",
+            "B. 10⁻⁶ s",
+            "C. 10⁻⁸ s",
+            "D. 10⁻¹⁰ s"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 330,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q9",
+          "qNo": "9",
+          "question": "Helium-Neon Laser beam emitted from a discharge tube has a color",
+          "options": [
+            "A. Blue",
+            "B. Green",
+            "C. Red",
+            "D. White"
+          ],
+          "questionUrdu": "ڈسچارج ٹیوب سے خارج ہونے والی ہیلیم نیون لیزر شعاع کا رنگ کیا ہے؟",
+          "optionsUrdu": [
+            "A. Blue",
+            "B. Green",
+            "C. Red",
+            "D. White"
+          ],
+          "questionPashto": "د هیلیم-نیون لېزر بیم چې له ټیوب څخه وځي، کوم رنګ لري؟",
+          "optionsPashto": [
+            "A. Blue",
+            "B. Green",
+            "C. Red",
+            "D. White"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 330,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q10",
+          "qNo": "10",
+          "question": "In He-Ne LASER, the discharged tube is filled with",
+          "options": [
+            "A. 50% He & 50% Ne",
+            "B. 15% He & 85% Ne",
+            "C. 85% He & 15% Ne",
+            "D. 99% He & 1% Ne"
+          ],
+          "questionUrdu": "ہیلیم نیون لیزر کی ڈسچارج ٹیوب میں کیا تناسب بھرا جاتا ہے؟",
+          "optionsUrdu": [
+            "A. 50% He & 50% Ne",
+            "B. 15% He & 85% Ne",
+            "C. 85% He & 15% Ne",
+            "D. 99% He & 1% Ne"
+          ],
+          "questionPashto": "د هیلیم-نیون لېزر په ټیوب کې کوم تناسب ګازونه وي؟",
+          "optionsPashto": [
+            "A. 50% He & 50% Ne",
+            "B. 15% He & 85% Ne",
+            "C. 85% He & 15% Ne",
+            "D. 99% He & 1% Ne"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 330,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q11",
+          "qNo": "11",
+          "question": "In neon, the 20.66-eV level can undergo lasing action to the 18.70-eV level. What is the energy of the resulting photons?",
+          "options": [
+            "A. 20.66 eV",
+            "B. 18.70 eV",
+            "C. 39.36 eV",
+            "D. 1.96 eV"
+          ],
+          "questionUrdu": "نیون میں 20.66-eV سطح سے 18.70-eV سطح تک لیزر منتقلی پر بننے والے فوٹونوں کی توانائی کیا ہے؟",
+          "optionsUrdu": [
+            "A. 20.66 eV",
+            "B. 18.70 eV",
+            "C. 39.36 eV",
+            "D. 1.96 eV"
+          ],
+          "questionPashto": "په نیون کې له 20.66-eV کچې څخه 18.70-eV کچې ته د لېزري لېږد په پایله کې د فوټونونو انرژي څومره ده؟",
+          "optionsPashto": [
+            "A. 20.66 eV",
+            "B. 18.70 eV",
+            "C. 39.36 eV",
+            "D. 1.96 eV"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q12",
+          "qNo": "12",
+          "question": "In connection with inner shell transition the symbol Lβ refers to X-ray emission associated with an electron going from",
+          "options": [
+            "A. n=3 to n=1",
+            "B. n=4 to n=1",
+            "C. n=4 to n=2",
+            "D. n=5 to n=3"
+          ],
+          "questionUrdu": "اندرونی خول کی منتقلی میں Lβ نشان کس الیکٹران منتقلی کی ایکس رے اخراج کو ظاہر کرتا ہے؟",
+          "optionsUrdu": [
+            "A. n=3 to n=1",
+            "B. n=4 to n=1",
+            "C. n=4 to n=2",
+            "D. n=5 to n=3"
+          ],
+          "questionPashto": "د داخلي پوټکي لېږد کې Lβ نښه د کوم الکتروني لېږد د ایکس وړانګې خپرېدنه ښيي؟",
+          "optionsPashto": [
+            "A. n=3 to n=1",
+            "B. n=4 to n=1",
+            "C. n=4 to n=2",
+            "D. n=5 to n=3"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q13",
+          "qNo": "13",
+          "question": "In laser the pumping is performed to",
+          "options": [
+            "A. produce meta-stable states",
+            "B. produce stimulated emission",
+            "C. achieve population inversion",
+            "D. achieve coherency in photons"
+          ],
+          "questionUrdu": "لیزر میں پمپنگ کس مقصد کے لیے کی جاتی ہے؟",
+          "optionsUrdu": [
+            "A. produce meta-stable states",
+            "B. produce stimulated emission",
+            "C. achieve population inversion",
+            "D. achieve coherency in photons"
+          ],
+          "questionPashto": "په لېزر کې پمپ کول د څه لپاره ترسره کېږي؟",
+          "optionsPashto": [
+            "A. produce meta-stable states",
+            "B. produce stimulated emission",
+            "C. achieve population inversion",
+            "D. achieve coherency in photons"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-mcq-q14",
+          "qNo": "14",
+          "question": "Linear momentum of an electron in Bohr orbit of H-atom (principal quantum number n) is proportional to",
+          "options": [
+            "A. n",
+            "B. 1/n",
+            "C. n²",
+            "D. 1/n²"
+          ],
+          "questionUrdu": "ہائیڈروجن ایٹم کے بوہر مدار میں الیکٹران کا خطی مومنٹم (اصل کوانٹمی عدد n) کے کس تناسب میں ہے؟",
+          "optionsUrdu": [
+            "A. n",
+            "B. 1/n",
+            "C. n²",
+            "D. 1/n²"
+          ],
+          "questionPashto": "د هایدروجن اتوم په بوهر مدار کې د الکترون خطي مومنټم د اصلي کوانټمي عدد n له کوم تناسب سره برابر دی؟",
+          "optionsPashto": [
+            "A. n",
+            "B. 1/n",
+            "C. n²",
+            "D. 1/n²"
+          ],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "pdfPage": 171,
+          "printedPage": 330,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        },
+        {
+          "pdfPage": 171,
+          "printedPage": 331,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "textbook-exercise-19-conceptual",
+      "exercise": "Exercise 19",
+      "title": "Unit 19 conceptual questions",
+      "problems": [
+        {
+          "id": "textbook-exercise-19-conceptual-q1",
+          "qNo": "1",
+          "question": "Why does the spectrum of hydrogen consist of many lines even though a hydrogen atom has only a single electron?",
+          "questionUrdu": "ہائیڈروجن کا ایٹم صرف ایک الیکٹران رکھنے کے باوجود اس کا طیف کئی لکیروں پر کیوں مشتمل ہے؟",
+          "questionPashto": "د هایدروجن اتوم یوازې یو الکترون لري، خو طیف یې ولې ډېرې کرښې لري؟",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-conceptual-q2",
+          "qNo": "2",
+          "question": "Why do solids give rise to continuous spectrum while hot gases give rise to line spectrum?",
+          "questionUrdu": "ٹھوس مسلسل طیف جبکہ گرم گیسیں خطی طیف کیوں دیتی ہیں؟",
+          "questionPashto": "ولې جامد مواد پرله‌پسې طیف او ګرم ګازونه کرښیز طیف ورکوي؟",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-conceptual-q3",
+          "qNo": "3",
+          "question": "Can the electron in the ground state of hydrogen absorb a photon of energy (a) less than 13.6 eV (b) greater than 13.6 eV?",
+          "questionUrdu": "کیا ہائیڈروجن کی بنیادی حالت کا الیکٹران (الف) 13.6 eV سے کم (ب) 13.6 eV سے زیادہ توانائی کا فوٹون جذب کر سکتا ہے؟",
+          "questionPashto": "ایا د هایدروجن د بنسټیز حالت الکترون (الف) تر 13.6 eV کم (ب) تر 13.6 eV ډېر انرژي لرونکی فوټون جذبولای شي؟",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-conceptual-q4",
+          "qNo": "4",
+          "question": "Why do the spectral lines in the hydrogen atom become closer together farther away from the nucleus?",
+          "questionUrdu": "نیوکلئیس سے دور ہائیڈروجن کے طیفی خطوط ایک دوسرے کے قریب کیوں ہو جاتے ہیں؟",
+          "questionPashto": "ولې د هایدروجن طیفي کرښې له هستې لرې یو بل ته نږدې کېږي؟",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-conceptual-q5",
+          "qNo": "5",
+          "question": "Why was it necessary to quantize angular momentum in Bohr’s model of the atom?",
+          "questionUrdu": "بوہر کے ایٹمی ماڈل میں زاویائی مومنٹم کو مقدار بند کرنا کیوں ضروری تھا؟",
+          "questionPashto": "د بوهر په اتومي ماډل کې د زاویوي مومنټم کوانټایزېشن ولې اړین و؟",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-conceptual-q6",
+          "qNo": "6",
+          "question": "Why do X-rays have different properties from light even though both originate from orbital transition of electrons in excited atoms?",
+          "questionUrdu": "مثار ایٹموں میں الیکٹران کی مداری منتقلی سے پیدا ہونے کے باوجود ایکس ریز کی خصوصیات روشنی سے مختلف کیوں ہیں؟",
+          "questionPashto": "که ایکس وړانګې او رڼا دواړه په مثارو اتومونو کې د الکترون د مداري لېږد څخه پیدا کېږي، نو ځانګړنې یې ولې توپیر لري؟",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-conceptual-q7",
+          "qNo": "7",
+          "question": "If the potential difference in an X-ray tube is increased, how does this affect the wavelengths of (a) bremsstrahlung X-rays and (b) characteristic X-rays?",
+          "questionUrdu": "اگر ایکس رے ٹیوب کا فرقِ پوٹینشل بڑھایا جائے تو (الف) بریمس اشترالونگ ایکس ریز اور (ب) خصوصیتی ایکس ریز کی طولِ موجوں پر کیا اثر ہوگا؟",
+          "questionPashto": "که د ایکس ټیوب پوتنشیال توپیر زیات شي، د (الف) برېمسټرالونګ او (ب) ځانګړو ایکس وړانګو پر څپې‌اوږدوالي څه اغېز کوي؟",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-conceptual-q8",
+          "qNo": "8",
+          "question": "Crystal lattices can be examined with X-rays but not UV. Why?",
+          "questionUrdu": "بلوری جالوں کا ایکس ریز سے معائنہ کیا جا سکتا ہے مگر بالائے بنفشی شعاعوں سے نہیں؛ کیوں؟",
+          "questionPashto": "بلوري شبکې په ایکس وړانګو څېړل کېږي، خو په ماورای بنفش نه؛ ولې؟",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 171,
+              "printedPage": 331,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        }
+      ],
+      "sourceReferences": [
+        {
+          "pdfPage": 171,
+          "printedPage": 331,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "textbook-exercise-19-comprehensive",
+      "exercise": "Exercise19",
+      "title": "COMPREHENSIVE QUESTIONS",
+      "problems": [
+        {
+          "id": "textbook-exercise-19-comprehensive-q1",
+          "qNo": "1",
+          "question": "Describe the spectrum of hydrogen atom in detail.",
+          "questionUrdu": "ہائیڈروجن کے ایٹم کا طیف تفصیل سے بیان کریں۔",
+          "questionPashto": "د هایدروجن د اټوم طیف په تفصیل بیان کړئ.",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-comprehensive-q2",
+          "qNo": "2",
+          "question": "What are Bohr’s postulates about hydrogen atom? Hence derive expression for the (a) radii of electron orbit (b) energy of the electron.",
+          "questionUrdu": "ہائیڈروجن کے ایٹم کے بارے میں بوہر کے مفروضات کیا ہیں؟ ان سے (a) الیکٹران کے مدار کے رداسوں (b) الیکٹران کی توانائی کے لیے ریاضیاتی اظہار اخذ کریں۔",
+          "questionPashto": "د هایدروجن د اټوم په اړه د بوهر فرضیې څه دي؟ له هغو څخه د (a) د الکترون د مدار شعاعوو (b) د الکترون د انرژۍ لپاره ریاضي څرګندونې راوباسئ.",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-comprehensive-q3",
+          "qNo": "3",
+          "question": "Explain the terms Ground state, Excited state, Excitation energy, Ionization energy.",
+          "questionUrdu": "بنیادی حالت، برانگیختہ حالت، برانگیختگی کی توانائی اور آئن سازی کی توانائی کی اصطلاحات سمجھائیں۔",
+          "questionPashto": "د بنسټیز حالت، تحریک شوي حالت، د تحریک انرژۍ او د آیون جوړولو انرژۍ اصطلاحات تشریح کړئ.",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-comprehensive-q4",
+          "qNo": "4",
+          "question": "What are X-rays? How these rays are produced? Differentiate between Characteristic and Continuous X-rays.",
+          "questionUrdu": "ایکس ریز کیا ہیں؟ یہ شعاعیں کیسے پیدا ہوتی ہیں؟ خصوصیتی اور مسلسل ایکس ریز کے درمیان فرق کریں۔",
+          "questionPashto": "اېکس وړانګې څه دي؟ دا وړانګې څنګه تولیدېږي؟ د ځانګړو او پرله پسې اېکس وړانګو ترمنځ توپیر وکړئ.",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        },
+        {
+          "id": "textbook-exercise-19-comprehensive-q5",
+          "qNo": "5",
+          "question": "What is a laser? Explain the principle and operation of a laser.",
+          "questionUrdu": "لیزر کیا ہے؟ لیزر کا اصول اور کام کرنے کا طریقہ سمجھائیں۔",
+          "questionPashto": "لېزر څه دی؟ د لېزر اصل او د کار کولو بهیر تشریح کړئ.",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "not_provided_in_textbook"
+        }
+      ],
+      "sourceSectionId": "phys19-comprehensive-numerical-exercises-332",
+      "sourceIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceReferences": [
+        {
+          "pdfPage": 172,
+          "printedPage": 332,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    },
+    {
+      "id": "textbook-exercise-19-numericals",
+      "exercise": "Exercise19",
+      "title": "NUMERICAL PROBLEMS",
+      "problems": [
+        {
+          "id": "textbook-exercise-19-numerical-q1",
+          "qNo": "1",
+          "question": "Calculate the shortest and longest wavelength of radiation for the Paschen Series.",
+          "questionUrdu": "پاشن سلسلے کی تابکاری کے سب سے چھوٹے اور سب سے بڑے طولِ موج حساب کریں۔",
+          "questionPashto": "د پاشن لړۍ د وړانګو تر ټولو لنډ او اوږد څپې اوږدوالی محاسبه کړئ.",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "printed_answer_only",
+          "answer": "(Answer: 1875 nm, 820 nm)"
+        },
+        {
+          "id": "textbook-exercise-19-numerical-q2",
+          "qNo": "2",
+          "question": "In the fifth energy level determine the radius and energy of electron for hydrogen atom?",
+          "questionUrdu": "ہائیڈروجن کے ایٹم میں پانچویں توانائی سطح پر الیکٹران کا رداس اور توانائی معلوم کریں؟",
+          "questionPashto": "د هایدروجن د اټوم په پنځمه انرژۍ کچه کې د الکترون شعاع او انرژي معلومه کړئ؟",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "printed_answer_only",
+          "answer": "(Answer: 1.323 nm, \\(-8.72\\times10^{-20}\\ \\mathrm{J}\\) or -0.545 eV)"
+        },
+        {
+          "id": "textbook-exercise-19-numerical-q3",
+          "qNo": "3",
+          "question": "An electron drops from the second energy level to the first energy level within an excited hydrogen atom (a) determine the energy of the photon emitted (b) calculate the frequency of the photon emitted (c) calculate the wavelength of the photon emitted.",
+          "questionUrdu": "برانگیختہ ہائیڈروجن ایٹم میں ایک الیکٹران دوسری توانائی سطح سے پہلی توانائی سطح پر آتا ہے (a) خارج ہونے والے فوٹون کی توانائی معلوم کریں (b) خارج ہونے والے فوٹون کی تعدد حساب کریں (c) خارج ہونے والے فوٹون کا طولِ موج حساب کریں۔",
+          "questionPashto": "په یوه تحریک شوي هایدروجن اټوم کې الکترون له دویمې انرژۍ کچې لومړۍ انرژۍ کچې ته راکوزېږي (a) د خپاره شوي فوټون انرژي معلومه کړئ (b) د خپاره شوي فوټون فریکونسي محاسبه کړئ (c) د خپاره شوي فوټون څپې اوږدوالی محاسبه کړئ.",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "printed_answer_only",
+          "answer": "(Answer: (a) 10.2 eV (b) \\(2.5\\times10^{15}\\ \\mathrm{Hz}\\) (c) 120 nm)"
+        },
+        {
+          "id": "textbook-exercise-19-numerical-q4",
+          "qNo": "4",
+          "question": "Find the wavelength associated with an electron in the state n=4 of hydrogen.",
+          "questionUrdu": "ہائیڈروجن کی حالت n=4 میں الیکٹران سے وابستہ طولِ موج معلوم کریں۔",
+          "questionPashto": "د هایدروجن په n=4 حالت کې له الکترون سره تړلی څپې اوږدوالی پیدا کړئ.",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "printed_answer_only",
+          "answer": "(Answer: 1.33 nm)"
+        },
+        {
+          "id": "textbook-exercise-19-numerical-q5",
+          "qNo": "5",
+          "question": "An electron is in the first Bohr orbit of hydrogen atom. (a) Find the speed of electron, and (b) the time required for electron to circle the nucleus.",
+          "questionUrdu": "ایک الیکٹران ہائیڈروجن ایٹم کے پہلے بوہر مدار میں ہے۔ (a) الیکٹران کی رفتار اور (b) نیوکلئیس کے گرد ایک چکر لگانے کے لیے الیکٹران کو درکار وقت معلوم کریں۔",
+          "questionPashto": "یو الکترون د هایدروجن د اټوم په لومړي بوهر مدار کې دی. (a) د الکترون سرعت او (b) د هستې چاپېره د الکترون د یوه چکر لپاره اړین وخت پیدا کړئ.",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "printed_answer_only",
+          "answer": "(Answer: (a) \\(2.19\\times10^{6}\\ \\mathrm{m/s}\\) (b) \\(1.52\\times10^{-16}\\ \\mathrm{s}\\))"
+        },
+        {
+          "id": "textbook-exercise-19-numerical-q6",
+          "qNo": "6",
+          "question": "If the shortest wavelength produced by an X-ray tube is 0.46 nm, what is the voltage applied to the tube?",
+          "questionUrdu": "اگر ایک ایکس رے ٹیوب سے پیدا ہونے والا سب سے چھوٹا طولِ موج0.46 nm ہو تو ٹیوب پر لگایا گیا وولٹیج کیا ہے؟",
+          "questionPashto": "که د یوې اېکس وړانګو نل له خوا تولید شوی تر ټولو لنډ څپې اوږدوالی0.46 nm وي، پر نل لګول شوی ولتاژ څومره دی؟",
+          "options": [],
+          "sourceReferences": [
+            {
+              "pdfPage": 172,
+              "printedPage": 332,
+              "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+            }
+          ],
+          "solutionOrigin": "printed_answer_only",
+          "answer": "(Answer: 2.7 kV)"
+        }
+      ],
+      "sourceSectionId": "phys19-comprehensive-numerical-exercises-332",
+      "sourceIndices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "sourceReferences": [
+        {
+          "pdfPage": 172,
+          "printedPage": 332,
+          "sourcePdf": "Books/12th/12th Physics/PDF/Physics Book for 12 class KPTBB.pdf"
+        }
+      ]
+    }
+  ],
+  "retireSections": [],
+  "trimSections": [],
+  "retireExercises": [],
+  "retireWorkedExamples": []
+}

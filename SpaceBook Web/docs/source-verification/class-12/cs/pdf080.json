@@ -1,0 +1,333 @@
+{
+ "pdfPage": 80,
+ "sections": [
+  {
+   "id": "cs12-u5-text-2",
+   "title": "Unit 5 text (2)",
+   "headingUrdu": "یونٹ 5 — متن (۲)",
+   "headingPashto": "۵ څپرکی — متن (۲)",
+   "paras": [
+    {
+     "text": "a. Name of an array",
+     "urdu": "a. ایرے کا نام",
+     "pashto": "a. د لړۍ نوم"
+    },
+    {
+     "text": "The name of the array can be any valid identifier. Each location of the array has the same name with different index. In the above example, all the 7 locations of the array X has the same name X but different indices, X[0], X[1], X[2], X[3], X[4], X[5], and X[6].",
+     "urdu": "ایرے کا نام کوئی بھی درست شناخت کنندہ ہو سکتا ہے۔ ایرے کے ہر مقام کا نام ایک ہی ہوتا ہے مگر انڈیکس مختلف۔ اوپر کی مثال میں ایرے X کے تمام 7 مقامات کا نام X ہے لیکن انڈیسز مختلف ہیں: X[0]، X[1]، X[2]، X[3]، X[4]، X[5] اور X[6]۔",
+     "pashto": "د لړۍ نوم هر سم پېژندونکی کېدای شي. د لړۍ هر ځای یو نوم لري خو بېل شاخص. په پورته بېلګه کې د لړۍ X ټول ۷ ځایونه یو نوم X لري خو بېل شاخصونه: X[0]، X[1]، X[2]، X[3]، X[4]، X[5] او X[6]."
+    },
+    {
+     "text": "b. Size of the array",
+     "urdu": "b. ایرے کا سائز",
+     "pashto": "b. د لړۍ اندازه"
+    },
+    {
+     "text": "The number of elements that can be stored in an array is called the size or length of that array.",
+     "urdu": "ایرے میں جتنے عناصر محفوظ کیے جا سکتے ہیں ان کی تعداد اس ایرے کا سائز یا لمبائی کہلاتی ہے۔",
+     "pashto": "د هغو عناصرو شمېر چې په یوه لړۍ کې ساتل کېدای شي، د هغې لړۍ اندازه یا اوږدوالی بلل کېږي."
+    },
+    {
+     "text": "For example:",
+     "urdu": "مثال کے طور پر:",
+     "pashto": "د بېلګې په توګه:"
+    },
+    {
+     "text": "float Z [10];",
+     "urdu": "float Z [10];",
+     "pashto": "float Z [10];",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, size of the array Z is 10, which means that we can store 10 floating point values in this array.",
+     "urdu": "یہاں ایرے Z کا سائز 10 ہے، یعنی ہم اس ایرے میں 10 فلوٹنگ پوائنٹ قدریں محفوظ کر سکتے ہیں۔",
+     "pashto": "دلته د Z لړۍ اندازه 10 ده، یعنې موږ کولی شو په دې لړۍ کې ۱۰ اعشاري ارزښتونه وساتو."
+    },
+    {
+     "text": "c. Index",
+     "urdu": "c. انڈیکس",
+     "pashto": "c. شاخص"
+    },
+    {
+     "text": "The location number of an item in an array is called index or subscript of that element. For example 0,1,2,3,4,5 and 6 are the indices of the elements of the array int X[7].",
+     "urdu": "ایرے میں کسی آئٹم کے مقام کا نمبر اس عنصر کا انڈیکس یا سب اسکرپٹ کہلاتا ہے۔ مثلاً 0،1،2،3،4،5 اور 6 ایرے int X[7] کے عناصر کے انڈیسز ہیں۔",
+     "pashto": "په یوه لړۍ کې د یوه توکي د ځای شمېره د هغه عنصر شاخص یا ښکته‌لیک بلل کېږي. د بېلګې په توګه 0،1،2،3،4،5 او 6 د int X[7] لړۍ د عناصرو شاخصونه دي."
+    },
+    {
+     "text": "5.1.4 Definition and initialization of an array",
+     "urdu": "5.1.4 ایرے کی تعریف اور ابتدائی قدر",
+     "pashto": "۵.۱.۴ د لړۍ تعریف او لومړنی ارزښت"
+    },
+    {
+     "text": "As we have two types of arrays, one dimensional and two dimensional, both have their own ways of definition. Here, we are defining and initializing one dimensional array.",
+     "urdu": "چونکہ ہمارے پاس دو قسم کے ایریز ہیں، یک جہتی اور دو جہتی، دونوں کی تعریف کے اپنے طریقے ہیں۔ یہاں ہم یک جہتی ایرے کی تعریف اور ابتدائی قدر دے رہے ہیں۔",
+     "pashto": "څرنګه چې موږ دوه ډوله لړۍ لرو، یو-بعدي او دوه-بعدي، دواړه د تعریف خپلې لارې لري. دلته موږ یو-بعدي لړۍ تعریفوو او لومړنی ارزښت ورکوو."
+    },
+    {
+     "text": "a. One dimensional array",
+     "urdu": "a. یک جہتی ایرے",
+     "pashto": "a. یو-بعدي لړۍ"
+    },
+    {
+     "text": "A one-dimensional array or linear array can be represented as a single row of contiguous memory locations. Accessing of its elements involves a single subscript.",
+     "urdu": "یک جہتی یا لکیری ایرے کو متصل میموری مقامات کی ایک قطار کے طور پر ظاہر کیا جا سکتا ہے۔ اس کے عناصر تک رسائی میں ایک سب اسکرپٹ شامل ہوتا ہے۔",
+     "pashto": "یو-بعدي یا خطي لړۍ د پرله‌پسې حافظه ځایونو د یوې قطار په توګه ښودل کېدای شي. د هغې عناصرو ته لاسرسی یو ښکته‌لیک لري."
+    },
+    {
+     "text": "Like a regular variable, an array must be declared before it is used. A typical declaration for a one dimensional array in C++ is:",
+     "urdu": "عام ویری ایبل کی طرح ایرے کو بھی استعمال سے پہلے ڈکلیئر کرنا ضروری ہے۔ C++ میں یک جہتی ایرے کی ایک عام ڈکلیریشن یہ ہے:",
+     "pashto": "د عادي متغیر په څېر لړۍ هم باید له کارولو مخکې اعلان شي. په C++ کې د یو-بعدي لړۍ یو عادي اعلان دا دی:"
+    },
+    {
+     "text": "data type name [size];",
+     "urdu": "data type name [size];",
+     "pashto": "data type name [size];",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Here, the data type is a valid data type (such as int, float...), name is a valid identifier and enclosed in square brackets [ ] is the size of the array which means that how many elements this array can accommodate.",
+     "urdu": "یہاں data type ایک درست ڈیٹا ٹائپ ہے (جیسے int، float...)، name ایک درست شناخت کنندہ ہے اور مربع بریکٹس [ ] میں ایرے کا سائز ہے یعنی یہ ایرے کتنے عناصر سما سکتا ہے۔",
+     "pashto": "دلته data type یو سم ډېټا ډول دی (لکه int، float...)، name یو سم پېژندونکی دی او په مربع قوسونو [ ] کې د لړۍ اندازه ده، یعنې دا لړۍ څو عناصر ځایولی شي."
+    },
+    {
+     "text": "For Example:",
+     "urdu": "مثال کے طور پر:",
+     "pashto": "د بېلګې په توګه:"
+    },
+    {
+     "text": "int x[7];\nchar vowel[5];\nfloat temperature[7];",
+     "urdu": "int x[7];\nchar vowel[5];\nfloat temperature[7];",
+     "pashto": "int x[7];\nchar vowel[5];\nfloat temperature[7];",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "b. Initializing one dimensional array",
+     "urdu": "b. یک جہتی ایرے کو ابتدائی قدر دینا",
+     "pashto": "b. یو-بعدي لړۍ ته لومړنی ارزښت ورکول"
+    },
+    {
+     "text": "Arrays can be initialized, like variables, when created. C++ provides a convenient way to initialize entire array via use of an initializer list.",
+     "urdu": "ایریز کو ویری ایبلز کی طرح بنتے وقت ابتدائی قدر دی جا سکتی ہے۔ C++ ابتدائی فہرست (initializer list) کے ذریعے پورے ایرے کو ابتدائی قدر دینے کا آسان طریقہ فراہم کرتی ہے۔",
+     "pashto": "لړیو ته د متغیرونو په څېر د جوړېدو پر مهال لومړنی ارزښت ورکول کېدای شي. C++ د لومړني ارزښت لړلیک (initializer list) په کارولو د ټولې لړۍ د لومړني ارزښت ورکولو اسانه لاره برابروي."
+    },
+    {
+     "text": "The following example shows the initialization of an integer array.",
+     "urdu": "درج ذیل مثال ایک integer ایرے کی ابتدائی قدر دکھاتی ہے۔",
+     "pashto": "لاندې بېلګه د integer لړۍ لومړنی ارزښت ښيي."
+    },
+    {
+     "text": "// initializing array using initializer list method\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\ncout << A[0] << endl;\ncout << A [1] << endl;\ncout << A [2] << endl;\ncout << A [3] << endl;\ncout << A [4] << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "// initializing array using initializer list method\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\ncout << A[0] << endl;\ncout << A [1] << endl;\ncout << A [2] << endl;\ncout << A [3] << endl;\ncout << A [4] << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "// initializing array using initializer list method\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\ncout << A[0] << endl;\ncout << A [1] << endl;\ncout << A [2] << endl;\ncout << A [3] << endl;\ncout << A [4] << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "3\n2\n7\n5\n8",
+     "urdu": "3\n2\n7\n5\n8",
+     "pashto": "3\n2\n7\n5\n8",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "a. Name of an array\n\nThe name of the array can be any valid identifier. Each location of the array has the same name with different index. In the above example, all the 7 locations of the array X has the same name X but different indices, X[0], X[1], X[2], X[3], X[4], X[5], and X[6].\n\nb. Size of the array\n\nThe number of elements that can be stored in an array is called the size or length of that array.\n\nFor example:\n\nfloat Z [10];\n\nHere, size of the array Z is 10, which means that we can store 10 floating point values in this array.\n\nc. Index\n\nThe location number of an item in an array is called index or subscript of that element. For example 0,1,2,3,4,5 and 6 are the indices of the elements of the array int X[7].\n\n5.1.4 Definition and initialization of an array\n\nAs we have two types of arrays, one dimensional and two dimensional, both have their own ways of definition. Here, we are defining and initializing one dimensional array.\n\na. One dimensional array\n\nA one-dimensional array or linear array can be represented as a single row of contiguous memory locations. Accessing of its elements involves a single subscript.\n\nLike a regular variable, an array must be declared before it is used. A typical declaration for a one dimensional array in C++ is:\n\ndata type name [size];\n\nHere, the data type is a valid data type (such as int, float...), name is a valid identifier and enclosed in square brackets [ ] is the size of the array which means that how many elements this array can accommodate.\n\nFor Example:\n\nint x[7];\nchar vowel[5];\nfloat temperature[7];\n\nb. Initializing one dimensional array\n\nArrays can be initialized, like variables, when created. C++ provides a convenient way to initialize entire array via use of an initializer list.\n\nThe following example shows the initialization of an integer array.\n\n// initializing array using initializer list method\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\ncout << A[0] << endl;\ncout << A [1] << endl;\ncout << A [2] << endl;\ncout << A [3] << endl;\ncout << A [4] << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\n3\n2\n7\n5\n8",
+   "urdu": "a. ایرے کا نام\n\nایرے کا نام کوئی بھی درست شناخت کنندہ ہو سکتا ہے۔ ایرے کے ہر مقام کا نام ایک ہی ہوتا ہے مگر انڈیکس مختلف۔ اوپر کی مثال میں ایرے X کے تمام 7 مقامات کا نام X ہے لیکن انڈیسز مختلف ہیں: X[0]، X[1]، X[2]، X[3]، X[4]، X[5] اور X[6]۔\n\nb. ایرے کا سائز\n\nایرے میں جتنے عناصر محفوظ کیے جا سکتے ہیں ان کی تعداد اس ایرے کا سائز یا لمبائی کہلاتی ہے۔\n\nمثال کے طور پر:\n\nfloat Z [10];\n\nیہاں ایرے Z کا سائز 10 ہے، یعنی ہم اس ایرے میں 10 فلوٹنگ پوائنٹ قدریں محفوظ کر سکتے ہیں۔\n\nc. انڈیکس\n\nایرے میں کسی آئٹم کے مقام کا نمبر اس عنصر کا انڈیکس یا سب اسکرپٹ کہلاتا ہے۔ مثلاً 0،1،2،3،4،5 اور 6 ایرے int X[7] کے عناصر کے انڈیسز ہیں۔\n\n5.1.4 ایرے کی تعریف اور ابتدائی قدر\n\nچونکہ ہمارے پاس دو قسم کے ایریز ہیں، یک جہتی اور دو جہتی، دونوں کی تعریف کے اپنے طریقے ہیں۔ یہاں ہم یک جہتی ایرے کی تعریف اور ابتدائی قدر دے رہے ہیں۔\n\na. یک جہتی ایرے\n\nیک جہتی یا لکیری ایرے کو متصل میموری مقامات کی ایک قطار کے طور پر ظاہر کیا جا سکتا ہے۔ اس کے عناصر تک رسائی میں ایک سب اسکرپٹ شامل ہوتا ہے۔\n\nعام ویری ایبل کی طرح ایرے کو بھی استعمال سے پہلے ڈکلیئر کرنا ضروری ہے۔ C++ میں یک جہتی ایرے کی ایک عام ڈکلیریشن یہ ہے:\n\ndata type name [size];\n\nیہاں data type ایک درست ڈیٹا ٹائپ ہے (جیسے int، float...)، name ایک درست شناخت کنندہ ہے اور مربع بریکٹس [ ] میں ایرے کا سائز ہے یعنی یہ ایرے کتنے عناصر سما سکتا ہے۔\n\nمثال کے طور پر:\n\nint x[7];\nchar vowel[5];\nfloat temperature[7];\n\nb. یک جہتی ایرے کو ابتدائی قدر دینا\n\nایریز کو ویری ایبلز کی طرح بنتے وقت ابتدائی قدر دی جا سکتی ہے۔ C++ ابتدائی فہرست (initializer list) کے ذریعے پورے ایرے کو ابتدائی قدر دینے کا آسان طریقہ فراہم کرتی ہے۔\n\nدرج ذیل مثال ایک integer ایرے کی ابتدائی قدر دکھاتی ہے۔\n\n// initializing array using initializer list method\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\ncout << A[0] << endl;\ncout << A [1] << endl;\ncout << A [2] << endl;\ncout << A [3] << endl;\ncout << A [4] << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n3\n2\n7\n5\n8",
+   "pashto": "a. د لړۍ نوم\n\nد لړۍ نوم هر سم پېژندونکی کېدای شي. د لړۍ هر ځای یو نوم لري خو بېل شاخص. په پورته بېلګه کې د لړۍ X ټول ۷ ځایونه یو نوم X لري خو بېل شاخصونه: X[0]، X[1]، X[2]، X[3]، X[4]، X[5] او X[6].\n\nb. د لړۍ اندازه\n\nد هغو عناصرو شمېر چې په یوه لړۍ کې ساتل کېدای شي، د هغې لړۍ اندازه یا اوږدوالی بلل کېږي.\n\nد بېلګې په توګه:\n\nfloat Z [10];\n\nدلته د Z لړۍ اندازه 10 ده، یعنې موږ کولی شو په دې لړۍ کې ۱۰ اعشاري ارزښتونه وساتو.\n\nc. شاخص\n\nپه یوه لړۍ کې د یوه توکي د ځای شمېره د هغه عنصر شاخص یا ښکته‌لیک بلل کېږي. د بېلګې په توګه 0،1،2،3،4،5 او 6 د int X[7] لړۍ د عناصرو شاخصونه دي.\n\n۵.۱.۴ د لړۍ تعریف او لومړنی ارزښت\n\nڅرنګه چې موږ دوه ډوله لړۍ لرو، یو-بعدي او دوه-بعدي، دواړه د تعریف خپلې لارې لري. دلته موږ یو-بعدي لړۍ تعریفوو او لومړنی ارزښت ورکوو.\n\na. یو-بعدي لړۍ\n\nیو-بعدي یا خطي لړۍ د پرله‌پسې حافظه ځایونو د یوې قطار په توګه ښودل کېدای شي. د هغې عناصرو ته لاسرسی یو ښکته‌لیک لري.\n\nد عادي متغیر په څېر لړۍ هم باید له کارولو مخکې اعلان شي. په C++ کې د یو-بعدي لړۍ یو عادي اعلان دا دی:\n\ndata type name [size];\n\nدلته data type یو سم ډېټا ډول دی (لکه int، float...)، name یو سم پېژندونکی دی او په مربع قوسونو [ ] کې د لړۍ اندازه ده، یعنې دا لړۍ څو عناصر ځایولی شي.\n\nد بېلګې په توګه:\n\nint x[7];\nchar vowel[5];\nfloat temperature[7];\n\nb. یو-بعدي لړۍ ته لومړنی ارزښت ورکول\n\nلړیو ته د متغیرونو په څېر د جوړېدو پر مهال لومړنی ارزښت ورکول کېدای شي. C++ د لومړني ارزښت لړلیک (initializer list) په کارولو د ټولې لړۍ د لومړني ارزښت ورکولو اسانه لاره برابروي.\n\nلاندې بېلګه د integer لړۍ لومړنی ارزښت ښيي.\n\n// initializing array using initializer list method\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\ncout << A[0] << endl;\ncout << A [1] << endl;\ncout << A [2] << endl;\ncout << A [3] << endl;\ncout << A [4] << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n3\n2\n7\n5\n8",
+   "theoryUrdu": "a. ایرے کا نام\n\nایرے کا نام کوئی بھی درست شناخت کنندہ ہو سکتا ہے۔ ایرے کے ہر مقام کا نام ایک ہی ہوتا ہے مگر انڈیکس مختلف۔ اوپر کی مثال میں ایرے X کے تمام 7 مقامات کا نام X ہے لیکن انڈیسز مختلف ہیں: X[0]، X[1]، X[2]، X[3]، X[4]، X[5] اور X[6]۔\n\nb. ایرے کا سائز\n\nایرے میں جتنے عناصر محفوظ کیے جا سکتے ہیں ان کی تعداد اس ایرے کا سائز یا لمبائی کہلاتی ہے۔\n\nمثال کے طور پر:\n\nfloat Z [10];\n\nیہاں ایرے Z کا سائز 10 ہے، یعنی ہم اس ایرے میں 10 فلوٹنگ پوائنٹ قدریں محفوظ کر سکتے ہیں۔\n\nc. انڈیکس\n\nایرے میں کسی آئٹم کے مقام کا نمبر اس عنصر کا انڈیکس یا سب اسکرپٹ کہلاتا ہے۔ مثلاً 0،1،2،3،4،5 اور 6 ایرے int X[7] کے عناصر کے انڈیسز ہیں۔\n\n5.1.4 ایرے کی تعریف اور ابتدائی قدر\n\nچونکہ ہمارے پاس دو قسم کے ایریز ہیں، یک جہتی اور دو جہتی، دونوں کی تعریف کے اپنے طریقے ہیں۔ یہاں ہم یک جہتی ایرے کی تعریف اور ابتدائی قدر دے رہے ہیں۔\n\na. یک جہتی ایرے\n\nیک جہتی یا لکیری ایرے کو متصل میموری مقامات کی ایک قطار کے طور پر ظاہر کیا جا سکتا ہے۔ اس کے عناصر تک رسائی میں ایک سب اسکرپٹ شامل ہوتا ہے۔\n\nعام ویری ایبل کی طرح ایرے کو بھی استعمال سے پہلے ڈکلیئر کرنا ضروری ہے۔ C++ میں یک جہتی ایرے کی ایک عام ڈکلیریشن یہ ہے:\n\ndata type name [size];\n\nیہاں data type ایک درست ڈیٹا ٹائپ ہے (جیسے int، float...)، name ایک درست شناخت کنندہ ہے اور مربع بریکٹس [ ] میں ایرے کا سائز ہے یعنی یہ ایرے کتنے عناصر سما سکتا ہے۔\n\nمثال کے طور پر:\n\nint x[7];\nchar vowel[5];\nfloat temperature[7];\n\nb. یک جہتی ایرے کو ابتدائی قدر دینا\n\nایریز کو ویری ایبلز کی طرح بنتے وقت ابتدائی قدر دی جا سکتی ہے۔ C++ ابتدائی فہرست (initializer list) کے ذریعے پورے ایرے کو ابتدائی قدر دینے کا آسان طریقہ فراہم کرتی ہے۔\n\nدرج ذیل مثال ایک integer ایرے کی ابتدائی قدر دکھاتی ہے۔\n\n// initializing array using initializer list method\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\ncout << A[0] << endl;\ncout << A [1] << endl;\ncout << A [2] << endl;\ncout << A [3] << endl;\ncout << A [4] << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\n3\n2\n7\n5\n8",
+   "theoryPashto": "a. د لړۍ نوم\n\nد لړۍ نوم هر سم پېژندونکی کېدای شي. د لړۍ هر ځای یو نوم لري خو بېل شاخص. په پورته بېلګه کې د لړۍ X ټول ۷ ځایونه یو نوم X لري خو بېل شاخصونه: X[0]، X[1]، X[2]، X[3]، X[4]، X[5] او X[6].\n\nb. د لړۍ اندازه\n\nد هغو عناصرو شمېر چې په یوه لړۍ کې ساتل کېدای شي، د هغې لړۍ اندازه یا اوږدوالی بلل کېږي.\n\nد بېلګې په توګه:\n\nfloat Z [10];\n\nدلته د Z لړۍ اندازه 10 ده، یعنې موږ کولی شو په دې لړۍ کې ۱۰ اعشاري ارزښتونه وساتو.\n\nc. شاخص\n\nپه یوه لړۍ کې د یوه توکي د ځای شمېره د هغه عنصر شاخص یا ښکته‌لیک بلل کېږي. د بېلګې په توګه 0،1،2،3،4،5 او 6 د int X[7] لړۍ د عناصرو شاخصونه دي.\n\n۵.۱.۴ د لړۍ تعریف او لومړنی ارزښت\n\nڅرنګه چې موږ دوه ډوله لړۍ لرو، یو-بعدي او دوه-بعدي، دواړه د تعریف خپلې لارې لري. دلته موږ یو-بعدي لړۍ تعریفوو او لومړنی ارزښت ورکوو.\n\na. یو-بعدي لړۍ\n\nیو-بعدي یا خطي لړۍ د پرله‌پسې حافظه ځایونو د یوې قطار په توګه ښودل کېدای شي. د هغې عناصرو ته لاسرسی یو ښکته‌لیک لري.\n\nد عادي متغیر په څېر لړۍ هم باید له کارولو مخکې اعلان شي. په C++ کې د یو-بعدي لړۍ یو عادي اعلان دا دی:\n\ndata type name [size];\n\nدلته data type یو سم ډېټا ډول دی (لکه int، float...)، name یو سم پېژندونکی دی او په مربع قوسونو [ ] کې د لړۍ اندازه ده، یعنې دا لړۍ څو عناصر ځایولی شي.\n\nد بېلګې په توګه:\n\nint x[7];\nchar vowel[5];\nfloat temperature[7];\n\nb. یو-بعدي لړۍ ته لومړنی ارزښت ورکول\n\nلړیو ته د متغیرونو په څېر د جوړېدو پر مهال لومړنی ارزښت ورکول کېدای شي. C++ د لومړني ارزښت لړلیک (initializer list) په کارولو د ټولې لړۍ د لومړني ارزښت ورکولو اسانه لاره برابروي.\n\nلاندې بېلګه د integer لړۍ لومړنی ارزښت ښيي.\n\n// initializing array using initializer list method\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\ncout << A[0] << endl;\ncout << A [1] << endl;\ncout << A [2] << endl;\ncout << A [3] << endl;\ncout << A [4] << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\n3\n2\n7\n5\n8",
+   "content": "<p>a. Name of an array</p><p>The name of the array can be any valid identifier. Each location of the array has the same name with different index. In the above example, all the 7 locations of the array X has the same name X but different indices, X[0], X[1], X[2], X[3], X[4], X[5], and X[6].</p><p>b. Size of the array</p><p>The number of elements that can be stored in an array is called the size or length of that array.</p><p>For example:</p><p>float Z [10];</p><p>Here, size of the array Z is 10, which means that we can store 10 floating point values in this array.</p><p>c. Index</p><p>The location number of an item in an array is called index or subscript of that element. For example 0,1,2,3,4,5 and 6 are the indices of the elements of the array int X[7].</p><p>5.1.4 Definition and initialization of an array</p><p>As we have two types of arrays, one dimensional and two dimensional, both have their own ways of definition. Here, we are defining and initializing one dimensional array.</p><p>a. One dimensional array</p><p>A one-dimensional array or linear array can be represented as a single row of contiguous memory locations. Accessing of its elements involves a single subscript.</p><p>Like a regular variable, an array must be declared before it is used. A typical declaration for a one dimensional array in C++ is:</p><p>data type name [size];</p><p>Here, the data type is a valid data type (such as int, float...), name is a valid identifier and enclosed in square brackets [ ] is the size of the array which means that how many elements this array can accommodate.</p><p>For Example:</p><p>int x[7];\nchar vowel[5];\nfloat temperature[7];</p><p>b. Initializing one dimensional array</p><p>Arrays can be initialized, like variables, when created. C++ provides a convenient way to initialize entire array via use of an initializer list.</p><p>The following example shows the initialization of an integer array.</p><p>// initializing array using initializer list method\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint A[5] = { 3, 2, 7, 5, 8 };\ncout &lt;&lt; A[0] &lt;&lt; endl;\ncout &lt;&lt; A [1] &lt;&lt; endl;\ncout &lt;&lt; A [2] &lt;&lt; endl;\ncout &lt;&lt; A [3] &lt;&lt; endl;\ncout &lt;&lt; A [4] &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>3\n2\n7\n5\n8</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-array-vowel"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      23
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-array-vowel",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" role=\"img\" aria-label=\"One-dimensional array Vowel\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"380\" height=\"150\" fill=\"#ffffff\"/><text x=\"56\" y=\"72\" text-anchor=\"end\" font-size=\"15\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Vowel</text><text x=\"98.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">0</text><rect x=\"70\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"98.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">a</text><text x=\"98.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">100</text><text x=\"154.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">1</text><rect x=\"126\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"154.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">e</text><text x=\"154.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">101</text><text x=\"210.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">2</text><rect x=\"182\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"210.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">i</text><text x=\"210.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">102</text><text x=\"266.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">3</text><rect x=\"238\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"266.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">o</text><text x=\"266.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">103</text><text x=\"322.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">4</text><rect x=\"294\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"322.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">u</text><text x=\"322.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">104</text><text x=\"190.0\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">One-dimensional array Vowel</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" role=\"img\" aria-label=\"یک جہتی ایرے Vowel\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"380\" height=\"150\" fill=\"#ffffff\"/><text x=\"56\" y=\"72\" text-anchor=\"end\" font-size=\"15\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Vowel</text><text x=\"98.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">0</text><rect x=\"70\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"98.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">a</text><text x=\"98.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">100</text><text x=\"154.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">1</text><rect x=\"126\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"154.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">e</text><text x=\"154.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">101</text><text x=\"210.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">2</text><rect x=\"182\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"210.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">i</text><text x=\"210.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">102</text><text x=\"266.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">3</text><rect x=\"238\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"266.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">o</text><text x=\"266.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">103</text><text x=\"322.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">4</text><rect x=\"294\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"322.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">u</text><text x=\"322.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">104</text><text x=\"190.0\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">یک جہتی ایرے Vowel</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" role=\"img\" aria-label=\"یو-بعدي لړۍ Vowel\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"380\" height=\"150\" fill=\"#ffffff\"/><text x=\"56\" y=\"72\" text-anchor=\"end\" font-size=\"15\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">Vowel</text><text x=\"98.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">0</text><rect x=\"70\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"98.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">a</text><text x=\"98.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">100</text><text x=\"154.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">1</text><rect x=\"126\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"154.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">e</text><text x=\"154.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">101</text><text x=\"210.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">2</text><rect x=\"182\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"210.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">i</text><text x=\"210.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">102</text><text x=\"266.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">3</text><rect x=\"238\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"266.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">o</text><text x=\"266.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">103</text><text x=\"322.0\" y=\"44\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">4</text><rect x=\"294\" y=\"52\" width=\"56\" height=\"30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"322.0\" y=\"72\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">u</text><text x=\"322.0\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"normal\" fill=\"#1e293b\" font-family=\"sans-serif\">104</text><text x=\"190.0\" y=\"142\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">یو-بعدي لړۍ Vowel</text></svg>",
+     "sourceWidthRatio": 2.533333333333333
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 80,
+     "printedPages": [
+      148,
+      149,
+      150
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 5 text (2)",
+   "sourcePageLabel": "PDF 80 · p. 148–149–150",
+   "sourceNote": "The initializer-list program continues on p.150 (PDF81) and is given whole with its output. The uncaptioned Vowel array diagram is reproduced as a coded diagram with a descriptive label.",
+   "unit": 5
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf080",
+   "unit": 5,
+   "printedPage": 148,
+   "description": "p.148 “all the 7 locations of the array X has the same name”. Retained as printed. Owner handwriting and scribbles in English and Urdu on p.149 excluded."
+  }
+ ],
+ "completeUnits": []
+}

@@ -1,0 +1,486 @@
+{
+ "pdfPage": 57,
+ "sections": [
+  {
+   "id": "cs12-u3-text-23",
+   "title": "Unit 3 text (23)",
+   "headingUrdu": "یونٹ 3 — متن (۲۳)",
+   "headingPashto": "۳ څپرکی — متن (۲۳)",
+   "paras": [
+    {
+     "text": "The expressions are categorized as below:",
+     "urdu": "ایکسپریشنز کی درجہ بندی ذیل کے مطابق ہے:",
+     "pashto": "افادې په لاندې ډول ډلبندي کېږي:"
+    },
+    {
+     "text": "i. Arithmetic Expressions having numeric operands and arithmetic operators and give numeric results. For example",
+     "urdu": "i. حسابی ایکسپریشنز جن میں عددی آپرینڈز اور حسابی آپریٹرز ہوں اور عددی نتائج دیں۔ مثلاً",
+     "pashto": "i. حسابي افادې چې شمېریز عملوندونه او حسابي چلونکي لري او شمېریزې پایلې ورکوي. د بېلګې په توګه"
+    },
+    {
+     "text": "x = y + 25;\nsum = x + y;",
+     "urdu": "x = y + 25;\nsum = x + y;",
+     "pashto": "x = y + 25;\nsum = x + y;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "ii. Relational Expressions having operands and relational operators for comparison of data. For example",
+     "urdu": "ii. ریلیشنل ایکسپریشنز جن میں ڈیٹا کے موازنے کے لیے آپرینڈز اور ریلیشنل آپریٹرز ہوں۔ مثلاً",
+     "pashto": "ii. اړیکه‌ییزې افادې چې د ډېټا د پرتلې لپاره عملوندونه او اړیکه‌ییز چلونکي لري. د بېلګې په توګه"
+    },
+    {
+     "text": "x > y;\nz >=10;",
+     "urdu": "x > y;\nz >=10;",
+     "pashto": "x > y;\nz >=10;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "iii. Logical Expressions for testing of two or more Boolean expressions. For example",
+     "urdu": "iii. منطقی ایکسپریشنز جو دو یا زیادہ بولین ایکسپریشنز کی جانچ کے لیے ہوں۔ مثلاً",
+     "pashto": "iii. منطقي افادې چې د دوو یا ډېرو بولي افادو د ازمویلو لپاره وي. د بېلګې په توګه"
+    },
+    {
+     "text": "(x > y) || (x = 10);\n(n=5) && (m > n);",
+     "urdu": "(x > y) || (x = 10);\n(n=5) && (m > n);",
+     "pashto": "(x > y) || (x = 10);\n(n=5) && (m > n);",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "3.4.4 Precedence of operators",
+     "urdu": "3.4.4 آپریٹرز کی ترجیح",
+     "pashto": "۳.۴.۴ د چلونکو لومړیتوب"
+    },
+    {
+     "text": "Precedence of operator means that which operand will be evaluated first and which one will be evaluated later if the expression is a complex one. For example, in the following expression % will be evaluated first and then addition.",
+     "urdu": "آپریٹر کی ترجیح کا مطلب یہ ہے کہ پیچیدہ ایکسپریشن میں کون سا آپرینڈ پہلے اور کون سا بعد میں قدر نکالا جائے گا۔ مثال کے طور پر درج ذیل ایکسپریشن میں % پہلے اور پھر جمع کی قدر نکالی جائے گی۔",
+     "pashto": "د چلونکي لومړیتوب دا معنا لري چې په پېچلې افاده کې کوم عملوند لومړی او کوم وروسته ارزول کېږي. د بېلګې په توګه په لاندې افاده کې % لومړی او بیا جمع ارزول کېږي."
+    },
+    {
+     "text": "a = 5 + 7 % 2 /",
+     "urdu": "a = 5 + 7 % 2 /",
+     "pashto": "a = 5 + 7 % 2 /",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "From highest to lowest the priority is given below.",
+     "urdu": "سب سے زیادہ سے سب سے کم ترجیح ذیل میں دی گئی ہے۔",
+     "pashto": "له تر ټولو لوړ تر ټولو ټیټ لومړیتوب لاندې ورکړل شوی."
+    },
+    {
+     "text": "1. The parentheses are evaluated first.",
+     "urdu": "1۔ قوسین کی قدر سب سے پہلے نکالی جاتی ہے۔",
+     "pashto": "۱. قوسونه لومړی ارزول کېږي."
+    },
+    {
+     "text": "2. Multiplication, division and modulus operators are performed next, from left to right at same level.",
+     "urdu": "2۔ ضرب، تقسیم اور ماڈیولس آپریٹرز اس کے بعد ایک ہی سطح پر بائیں سے دائیں انجام پاتے ہیں۔",
+     "pashto": "۲. د ضرب، وېش او موډولوس چلونکي ورپسې په یوه کچه له کیڼ څخه ښي ته ترسره کېږي."
+    },
+    {
+     "text": "3. Addition and subtraction operators are resolved last, from left to right with same priority.",
+     "urdu": "3۔ جمع اور تفریق آپریٹرز آخر میں یکساں ترجیح کے ساتھ بائیں سے دائیں حل ہوتے ہیں۔",
+     "pashto": "۳. د جمع او تفریق چلونکي په پای کې په یو شان لومړیتوب له کیڼ څخه ښي ته حلېږي."
+    },
+    {
+     "text": "The following table shows the list of all operators with their precedence level.",
+     "urdu": "درج ذیل جدول تمام آپریٹرز کی فہرست ان کی ترجیحی سطح کے ساتھ دکھاتی ہے۔",
+     "pashto": "لاندې جدول د ټولو چلونکو لېست د هغوی د لومړیتوب کچې سره ښيي."
+    },
+    {
+     "text": "Table 3.13 Operators Precedence",
+     "urdu": "جدول 3.13 آپریٹرز کی ترجیح",
+     "pashto": "۳.۱۳ جدول: د چلونکو لومړیتوب"
+    },
+    {
+     "text": "3.4.5 Compound expression",
+     "urdu": "3.4.5 مرکب ایکسپریشن",
+     "pashto": "۳.۴.۵ مرکبه افاده"
+    },
+    {
+     "text": "Compound expression is an expression that involves more than one sub-expressions linked with operators. Usually two or more relational expressions are linked with logical operators to form compound Boolean expression.",
+     "urdu": "مرکب ایکسپریشن وہ ایکسپریشن ہے جس میں آپریٹرز سے جڑے ایک سے زیادہ ذیلی ایکسپریشنز ہوں۔ عموماً دو یا زیادہ ریلیشنل ایکسپریشنز کو منطقی آپریٹرز سے جوڑ کر مرکب بولین ایکسپریشن بنایا جاتا ہے۔",
+     "pashto": "مرکبه افاده هغه افاده ده چې په چلونکو تړل شوې له یوې زیاتې فرعي افادې لري. عموماً دوه یا ډېرې اړیکه‌ییزې افادې د منطقي چلونکو په مرسته تړل کېږي څو مرکبه بولي افاده جوړه شي."
+    },
+    {
+     "text": "Following are the examples of compound expressions.",
+     "urdu": "مرکب ایکسپریشنز کی مثالیں درج ذیل ہیں۔",
+     "pashto": "د مرکبو افادو بېلګې دا دي."
+    },
+    {
+     "text": "X1= (- B + sqrt( B*B – 4*A*C))/(2*A);\n( (b * b) - 4 * a * c ) > 0\n(age <= 20) && (height >= 5)\n(m > 5) || (j > 0)",
+     "urdu": "X1= (- B + sqrt( B*B – 4*A*C))/(2*A);\n( (b * b) - 4 * a * c ) > 0\n(age <= 20) && (height >= 5)\n(m > 5) || (j > 0)",
+     "pashto": "X1= (- B + sqrt( B*B – 4*A*C))/(2*A);\n( (b * b) - 4 * a * c ) > 0\n(age <= 20) && (height >= 5)\n(m > 5) || (j > 0)",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "The expressions are categorized as below:\n\ni. Arithmetic Expressions having numeric operands and arithmetic operators and give numeric results. For example\n\nx = y + 25;\nsum = x + y;\n\nii. Relational Expressions having operands and relational operators for comparison of data. For example\n\nx > y;\nz >=10;\n\niii. Logical Expressions for testing of two or more Boolean expressions. For example\n\n(x > y) || (x = 10);\n(n=5) && (m > n);\n\n3.4.4 Precedence of operators\n\nPrecedence of operator means that which operand will be evaluated first and which one will be evaluated later if the expression is a complex one. For example, in the following expression % will be evaluated first and then addition.\n\na = 5 + 7 % 2 /\n\nFrom highest to lowest the priority is given below.\n\n1. The parentheses are evaluated first.\n\n2. Multiplication, division and modulus operators are performed next, from left to right at same level.\n\n3. Addition and subtraction operators are resolved last, from left to right with same priority.\n\nThe following table shows the list of all operators with their precedence level.\n\nTable 3.13 Operators Precedence\n\n3.4.5 Compound expression\n\nCompound expression is an expression that involves more than one sub-expressions linked with operators. Usually two or more relational expressions are linked with logical operators to form compound Boolean expression.\n\nFollowing are the examples of compound expressions.\n\nX1= (- B + sqrt( B*B – 4*A*C))/(2*A);\n( (b * b) - 4 * a * c ) > 0\n(age <= 20) && (height >= 5)\n(m > 5) || (j > 0)",
+   "urdu": "ایکسپریشنز کی درجہ بندی ذیل کے مطابق ہے:\n\ni. حسابی ایکسپریشنز جن میں عددی آپرینڈز اور حسابی آپریٹرز ہوں اور عددی نتائج دیں۔ مثلاً\n\nx = y + 25;\nsum = x + y;\n\nii. ریلیشنل ایکسپریشنز جن میں ڈیٹا کے موازنے کے لیے آپرینڈز اور ریلیشنل آپریٹرز ہوں۔ مثلاً\n\nx > y;\nz >=10;\n\niii. منطقی ایکسپریشنز جو دو یا زیادہ بولین ایکسپریشنز کی جانچ کے لیے ہوں۔ مثلاً\n\n(x > y) || (x = 10);\n(n=5) && (m > n);\n\n3.4.4 آپریٹرز کی ترجیح\n\nآپریٹر کی ترجیح کا مطلب یہ ہے کہ پیچیدہ ایکسپریشن میں کون سا آپرینڈ پہلے اور کون سا بعد میں قدر نکالا جائے گا۔ مثال کے طور پر درج ذیل ایکسپریشن میں % پہلے اور پھر جمع کی قدر نکالی جائے گی۔\n\na = 5 + 7 % 2 /\n\nسب سے زیادہ سے سب سے کم ترجیح ذیل میں دی گئی ہے۔\n\n1۔ قوسین کی قدر سب سے پہلے نکالی جاتی ہے۔\n\n2۔ ضرب، تقسیم اور ماڈیولس آپریٹرز اس کے بعد ایک ہی سطح پر بائیں سے دائیں انجام پاتے ہیں۔\n\n3۔ جمع اور تفریق آپریٹرز آخر میں یکساں ترجیح کے ساتھ بائیں سے دائیں حل ہوتے ہیں۔\n\nدرج ذیل جدول تمام آپریٹرز کی فہرست ان کی ترجیحی سطح کے ساتھ دکھاتی ہے۔\n\nجدول 3.13 آپریٹرز کی ترجیح\n\n3.4.5 مرکب ایکسپریشن\n\nمرکب ایکسپریشن وہ ایکسپریشن ہے جس میں آپریٹرز سے جڑے ایک سے زیادہ ذیلی ایکسپریشنز ہوں۔ عموماً دو یا زیادہ ریلیشنل ایکسپریشنز کو منطقی آپریٹرز سے جوڑ کر مرکب بولین ایکسپریشن بنایا جاتا ہے۔\n\nمرکب ایکسپریشنز کی مثالیں درج ذیل ہیں۔\n\nX1= (- B + sqrt( B*B – 4*A*C))/(2*A);\n( (b * b) - 4 * a * c ) > 0\n(age <= 20) && (height >= 5)\n(m > 5) || (j > 0)",
+   "pashto": "افادې په لاندې ډول ډلبندي کېږي:\n\ni. حسابي افادې چې شمېریز عملوندونه او حسابي چلونکي لري او شمېریزې پایلې ورکوي. د بېلګې په توګه\n\nx = y + 25;\nsum = x + y;\n\nii. اړیکه‌ییزې افادې چې د ډېټا د پرتلې لپاره عملوندونه او اړیکه‌ییز چلونکي لري. د بېلګې په توګه\n\nx > y;\nz >=10;\n\niii. منطقي افادې چې د دوو یا ډېرو بولي افادو د ازمویلو لپاره وي. د بېلګې په توګه\n\n(x > y) || (x = 10);\n(n=5) && (m > n);\n\n۳.۴.۴ د چلونکو لومړیتوب\n\nد چلونکي لومړیتوب دا معنا لري چې په پېچلې افاده کې کوم عملوند لومړی او کوم وروسته ارزول کېږي. د بېلګې په توګه په لاندې افاده کې % لومړی او بیا جمع ارزول کېږي.\n\na = 5 + 7 % 2 /\n\nله تر ټولو لوړ تر ټولو ټیټ لومړیتوب لاندې ورکړل شوی.\n\n۱. قوسونه لومړی ارزول کېږي.\n\n۲. د ضرب، وېش او موډولوس چلونکي ورپسې په یوه کچه له کیڼ څخه ښي ته ترسره کېږي.\n\n۳. د جمع او تفریق چلونکي په پای کې په یو شان لومړیتوب له کیڼ څخه ښي ته حلېږي.\n\nلاندې جدول د ټولو چلونکو لېست د هغوی د لومړیتوب کچې سره ښيي.\n\n۳.۱۳ جدول: د چلونکو لومړیتوب\n\n۳.۴.۵ مرکبه افاده\n\nمرکبه افاده هغه افاده ده چې په چلونکو تړل شوې له یوې زیاتې فرعي افادې لري. عموماً دوه یا ډېرې اړیکه‌ییزې افادې د منطقي چلونکو په مرسته تړل کېږي څو مرکبه بولي افاده جوړه شي.\n\nد مرکبو افادو بېلګې دا دي.\n\nX1= (- B + sqrt( B*B – 4*A*C))/(2*A);\n( (b * b) - 4 * a * c ) > 0\n(age <= 20) && (height >= 5)\n(m > 5) || (j > 0)",
+   "theoryUrdu": "ایکسپریشنز کی درجہ بندی ذیل کے مطابق ہے:\n\ni. حسابی ایکسپریشنز جن میں عددی آپرینڈز اور حسابی آپریٹرز ہوں اور عددی نتائج دیں۔ مثلاً\n\nx = y + 25;\nsum = x + y;\n\nii. ریلیشنل ایکسپریشنز جن میں ڈیٹا کے موازنے کے لیے آپرینڈز اور ریلیشنل آپریٹرز ہوں۔ مثلاً\n\nx > y;\nz >=10;\n\niii. منطقی ایکسپریشنز جو دو یا زیادہ بولین ایکسپریشنز کی جانچ کے لیے ہوں۔ مثلاً\n\n(x > y) || (x = 10);\n(n=5) && (m > n);\n\n3.4.4 آپریٹرز کی ترجیح\n\nآپریٹر کی ترجیح کا مطلب یہ ہے کہ پیچیدہ ایکسپریشن میں کون سا آپرینڈ پہلے اور کون سا بعد میں قدر نکالا جائے گا۔ مثال کے طور پر درج ذیل ایکسپریشن میں % پہلے اور پھر جمع کی قدر نکالی جائے گی۔\n\na = 5 + 7 % 2 /\n\nسب سے زیادہ سے سب سے کم ترجیح ذیل میں دی گئی ہے۔\n\n1۔ قوسین کی قدر سب سے پہلے نکالی جاتی ہے۔\n\n2۔ ضرب، تقسیم اور ماڈیولس آپریٹرز اس کے بعد ایک ہی سطح پر بائیں سے دائیں انجام پاتے ہیں۔\n\n3۔ جمع اور تفریق آپریٹرز آخر میں یکساں ترجیح کے ساتھ بائیں سے دائیں حل ہوتے ہیں۔\n\nدرج ذیل جدول تمام آپریٹرز کی فہرست ان کی ترجیحی سطح کے ساتھ دکھاتی ہے۔\n\nجدول 3.13 آپریٹرز کی ترجیح\n\n3.4.5 مرکب ایکسپریشن\n\nمرکب ایکسپریشن وہ ایکسپریشن ہے جس میں آپریٹرز سے جڑے ایک سے زیادہ ذیلی ایکسپریشنز ہوں۔ عموماً دو یا زیادہ ریلیشنل ایکسپریشنز کو منطقی آپریٹرز سے جوڑ کر مرکب بولین ایکسپریشن بنایا جاتا ہے۔\n\nمرکب ایکسپریشنز کی مثالیں درج ذیل ہیں۔\n\nX1= (- B + sqrt( B*B – 4*A*C))/(2*A);\n( (b * b) - 4 * a * c ) > 0\n(age <= 20) && (height >= 5)\n(m > 5) || (j > 0)",
+   "theoryPashto": "افادې په لاندې ډول ډلبندي کېږي:\n\ni. حسابي افادې چې شمېریز عملوندونه او حسابي چلونکي لري او شمېریزې پایلې ورکوي. د بېلګې په توګه\n\nx = y + 25;\nsum = x + y;\n\nii. اړیکه‌ییزې افادې چې د ډېټا د پرتلې لپاره عملوندونه او اړیکه‌ییز چلونکي لري. د بېلګې په توګه\n\nx > y;\nz >=10;\n\niii. منطقي افادې چې د دوو یا ډېرو بولي افادو د ازمویلو لپاره وي. د بېلګې په توګه\n\n(x > y) || (x = 10);\n(n=5) && (m > n);\n\n۳.۴.۴ د چلونکو لومړیتوب\n\nد چلونکي لومړیتوب دا معنا لري چې په پېچلې افاده کې کوم عملوند لومړی او کوم وروسته ارزول کېږي. د بېلګې په توګه په لاندې افاده کې % لومړی او بیا جمع ارزول کېږي.\n\na = 5 + 7 % 2 /\n\nله تر ټولو لوړ تر ټولو ټیټ لومړیتوب لاندې ورکړل شوی.\n\n۱. قوسونه لومړی ارزول کېږي.\n\n۲. د ضرب، وېش او موډولوس چلونکي ورپسې په یوه کچه له کیڼ څخه ښي ته ترسره کېږي.\n\n۳. د جمع او تفریق چلونکي په پای کې په یو شان لومړیتوب له کیڼ څخه ښي ته حلېږي.\n\nلاندې جدول د ټولو چلونکو لېست د هغوی د لومړیتوب کچې سره ښيي.\n\n۳.۱۳ جدول: د چلونکو لومړیتوب\n\n۳.۴.۵ مرکبه افاده\n\nمرکبه افاده هغه افاده ده چې په چلونکو تړل شوې له یوې زیاتې فرعي افادې لري. عموماً دوه یا ډېرې اړیکه‌ییزې افادې د منطقي چلونکو په مرسته تړل کېږي څو مرکبه بولي افاده جوړه شي.\n\nد مرکبو افادو بېلګې دا دي.\n\nX1= (- B + sqrt( B*B – 4*A*C))/(2*A);\n( (b * b) - 4 * a * c ) > 0\n(age <= 20) && (height >= 5)\n(m > 5) || (j > 0)",
+   "content": "<p>The expressions are categorized as below:</p><p>i. Arithmetic Expressions having numeric operands and arithmetic operators and give numeric results. For example</p><p>x = y + 25;\nsum = x + y;</p><p>ii. Relational Expressions having operands and relational operators for comparison of data. For example</p><p>x &gt; y;\nz &gt;=10;</p><p>iii. Logical Expressions for testing of two or more Boolean expressions. For example</p><p>(x &gt; y) || (x = 10);\n(n=5) &amp;&amp; (m &gt; n);</p><p>3.4.4 Precedence of operators</p><p>Precedence of operator means that which operand will be evaluated first and which one will be evaluated later if the expression is a complex one. For example, in the following expression % will be evaluated first and then addition.</p><p>a = 5 + 7 % 2 /</p><p>From highest to lowest the priority is given below.</p><p>1. The parentheses are evaluated first.</p><p>2. Multiplication, division and modulus operators are performed next, from left to right at same level.</p><p>3. Addition and subtraction operators are resolved last, from left to right with same priority.</p><p>The following table shows the list of all operators with their precedence level.</p><p>Table 3.13 Operators Precedence</p><p>3.4.5 Compound expression</p><p>Compound expression is an expression that involves more than one sub-expressions linked with operators. Usually two or more relational expressions are linked with logical operators to form compound Boolean expression.</p><p>Following are the examples of compound expressions.</p><p>X1= (- B + sqrt( B*B – 4*A*C))/(2*A);\n( (b * b) - 4 * a * c ) &gt; 0\n(age &lt;= 20) &amp;&amp; (height &gt;= 5)\n(m &gt; 5) || (j &gt; 0)</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "cs12-table-3-13"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      19
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-table-3-13",
+     "headers": [
+      "Level",
+      "Operator",
+      "Description",
+      "Associativity"
+     ],
+     "rows": [
+      [
+       "1",
+       "++ --",
+       "Postfix increment/decrement",
+       "left-to-right"
+      ],
+      [
+       "2",
+       "++ --  + -  !",
+       "Prefix increment/decrement; Unary plus/minus; Logical negation",
+       "right-to-left"
+      ],
+      [
+       "3",
+       "* / %",
+       "Multiplication/division/modulus",
+       "left-to-right"
+      ],
+      [
+       "4",
+       "+ -",
+       "Addition/subtraction",
+       "left-to-right"
+      ],
+      [
+       "5",
+       "< <=  > >=",
+       "Relational less than/less than or equal to; Relational greater than/greater than or equal to",
+       "left-to-right"
+      ],
+      [
+       "6",
+       "== !=",
+       "Relational is equal to/is not equal to",
+       "left-to-right"
+      ],
+      [
+       "7",
+       "&&",
+       "Logical AND",
+       "left-to-right"
+      ],
+      [
+       "8",
+       "||",
+       "Logical OR",
+       "left-to-right"
+      ],
+      [
+       "9",
+       "?:",
+       "Ternary conditional",
+       "right-to-left"
+      ],
+      [
+       "10",
+       "=  += -=  *= /=  %=",
+       "Assignment; Addition/subtraction assignment; Multiplication/division assignment; Modulus assignment",
+       "right-to-left"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "سطح",
+        "آپریٹر",
+        "وضاحت",
+        "سمت (ایسوسی ایٹیوٹی)"
+       ],
+       "rows": [
+        [
+         "1",
+         "++ --",
+         "پوسٹ فکس انکریمنٹ/ڈیکریمنٹ",
+         "بائیں سے دائیں"
+        ],
+        [
+         "2",
+         "++ --  + -  !",
+         "پری فکس انکریمنٹ/ڈیکریمنٹ؛ یونری جمع/منفی؛ منطقی نفی",
+         "دائیں سے بائیں"
+        ],
+        [
+         "3",
+         "* / %",
+         "ضرب/تقسیم/ماڈیولس",
+         "بائیں سے دائیں"
+        ],
+        [
+         "4",
+         "+ -",
+         "جمع/تفریق",
+         "بائیں سے دائیں"
+        ],
+        [
+         "5",
+         "< <=  > >=",
+         "ریلیشنل چھوٹا/چھوٹا یا برابر؛ ریلیشنل بڑا/بڑا یا برابر",
+         "بائیں سے دائیں"
+        ],
+        [
+         "6",
+         "== !=",
+         "ریلیشنل برابر ہے/برابر نہیں",
+         "بائیں سے دائیں"
+        ],
+        [
+         "7",
+         "&&",
+         "منطقی AND",
+         "بائیں سے دائیں"
+        ],
+        [
+         "8",
+         "||",
+         "منطقی OR",
+         "بائیں سے دائیں"
+        ],
+        [
+         "9",
+         "?:",
+         "ٹرنری شرطیہ",
+         "دائیں سے بائیں"
+        ],
+        [
+         "10",
+         "=  += -=  *= /=  %=",
+         "اسائنمنٹ؛ جمع/تفریق اسائنمنٹ؛ ضرب/تقسیم اسائنمنٹ؛ ماڈیولس اسائنمنٹ",
+         "دائیں سے بائیں"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "کچه",
+        "چلونکی",
+        "تشریح",
+        "تړاو (Associativity)"
+       ],
+       "rows": [
+        [
+         "1",
+         "++ --",
+         "وروستی زیاتول/کمول",
+         "له کیڼ څخه ښي"
+        ],
+        [
+         "2",
+         "++ --  + -  !",
+         "مخکینی زیاتول/کمول؛ یو-عملي جمع/منفي؛ منطقي نفي",
+         "له ښي څخه کیڼ"
+        ],
+        [
+         "3",
+         "* / %",
+         "ضرب/وېش/موډولوس",
+         "له کیڼ څخه ښي"
+        ],
+        [
+         "4",
+         "+ -",
+         "جمع/تفریق",
+         "له کیڼ څخه ښي"
+        ],
+        [
+         "5",
+         "< <=  > >=",
+         "اړیکه‌ییز کوچنی/کوچنی یا برابر؛ اړیکه‌ییز لوی/لوی یا برابر",
+         "له کیڼ څخه ښي"
+        ],
+        [
+         "6",
+         "== !=",
+         "اړیکه‌ییز برابر دی/برابر نه دی",
+         "له کیڼ څخه ښي"
+        ],
+        [
+         "7",
+         "&&",
+         "منطقي AND",
+         "له کیڼ څخه ښي"
+        ],
+        [
+         "8",
+         "||",
+         "منطقي OR",
+         "له کیڼ څخه ښي"
+        ],
+        [
+         "9",
+         "?:",
+         "درې-عملي شرطي",
+         "له ښي څخه کیڼ"
+        ],
+        [
+         "10",
+         "=  += -=  *= /=  %=",
+         "سپارنه؛ د جمع/تفریق سپارنه؛ د ضرب/وېش سپارنه؛ د موډولوس سپارنه",
+         "له ښي څخه کیڼ"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 57,
+     "printedPages": [
+      102,
+      103
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 3 text (23)",
+   "sourcePageLabel": "PDF 57 · p. 102–103",
+   "sourceNote": "Table 3.13 is reproduced as a structured table; operator groups that are stacked in one printed cell are separated by spaces/semicolons.",
+   "unit": 3
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf057",
+   "unit": 3,
+   "printedPage": 102,
+   "description": "p.102 prints the precedence example as “a = 5 + 7 % 2 /” (truncated; probably “a = 5 + 7 % 2;”), and the logical-expression examples use “=” (assignment) inside conditions, e.g. “(x = 10)”, “(n=5)”; the compound example uses an en dash “–” for minus. All retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

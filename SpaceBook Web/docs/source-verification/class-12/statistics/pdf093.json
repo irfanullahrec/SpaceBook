@@ -1,0 +1,698 @@
+{
+ "pdfPage": 93,
+ "sections": [
+  {
+   "id": "stat12-p093-proportion-properties",
+   "title": "5.4.2–5.4.3 Properties and formulas of the sampling distribution of p̂",
+   "headingUrdu": "5.4.2–5.4.3 p̂ کی نمونہ جاتی تقسیم کی خصوصیات اور فارمولے",
+   "headingPashto": "5.4.2–5.4.3 د p̂ د نمونوي وېش ځانګړنې او فورمولونه",
+   "paras": [
+    {
+     "text": "5.4.2 Properties of the sampling distribution of $\\hat{p}$",
+     "urdu": "5.4.2 $\\hat{p}$ کی نمونہ جاتی تقسیم کی خصوصیات",
+     "pashto": "5.4.2 د $\\hat{p}$ د نمونوي وېش ځانګړنې"
+    },
+    {
+     "text": "(i). Mean of the sampling distribution of sample proportion is always equal to the population proportion i.e. $\\mu_{\\hat{p}}=p$ (both in S.W.R and S.W.O.R cases)",
+     "urdu": "(i). نمونے کے تناسب کی نمونہ جاتی تقسیم کا اوسط ہمیشہ آبادی کے تناسب کے برابر ہوتا ہے یعنی $\\mu_{\\hat{p}}=p$ (S.W.R اور S.W.O.R دونوں صورتوں میں)",
+     "pashto": "(i). د نمونې د تناسب د نمونوي وېش منځنی تل د نفوس له تناسب سره برابر دی یعنې $\\mu_{\\hat{p}}=p$ (په دواړو S.W.R او S.W.O.R حالتونو کې)"
+    },
+    {
+     "text": "(ii). S.E of the sampling distribution of $\\hat{p}$ is:",
+     "urdu": "(ii). $\\hat{p}$ کی نمونہ جاتی تقسیم کی معیاری غلطی یہ ہے:",
+     "pashto": "(ii). د $\\hat{p}$ د نمونوي وېش معیاري تېروتنه دا ده:"
+    },
+    {
+     "text": "$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}}$, q=1−p (in case of S.W.R)",
+     "urdu": "$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}}$، q=1−p (S.W.R کی صورت میں)",
+     "pashto": "$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}}$، q=1−p (د S.W.R په حالت کې)"
+    },
+    {
+     "text": "$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}$ (in case S.W.O.R)",
+     "urdu": "$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}$ (S.W.O.R کی صورت میں)",
+     "pashto": "$\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}$ (د S.W.O.R په حالت کې)"
+    },
+    {
+     "text": "Note that if p is unknown and n is large, then $\\sigma_{\\hat{p}}$ can be estimated by $S_{\\hat{p}}=\\sqrt{\\frac{\\hat{p}\\hat{q}}{n}}$.",
+     "urdu": "نوٹ کریں کہ اگر p نامعلوم ہو اور n بڑا ہو تو $\\sigma_{\\hat{p}}$ کا تخمین $S_{\\hat{p}}=\\sqrt{\\frac{\\hat{p}\\hat{q}}{n}}$ سے لگایا جا سکتا ہے۔",
+     "pashto": "پام وکړئ چې که p نامعلوم وي او n لوی وي، نو $\\sigma_{\\hat{p}}$ په $S_{\\hat{p}}=\\sqrt{\\frac{\\hat{p}\\hat{q}}{n}}$ اټکل کېدای شي."
+    },
+    {
+     "text": "(iii). Shape of the sampling distribution of $\\hat{p}$",
+     "urdu": "(iii). $\\hat{p}$ کی نمونہ جاتی تقسیم کی شکل",
+     "pashto": "(iii). د $\\hat{p}$ د نمونوي وېش بڼه"
+    },
+    {
+     "text": "For small n, its shape will be like binomial distribution but for sufficiently large sample sizes, the shape of the sampling distribution of $\\hat{p}$ will be approximately normal.",
+     "urdu": "چھوٹے n کے لیے اس کی شکل دو رقمی تقسیم جیسی ہوگی لیکن کافی بڑے نمونوں کے لیے $\\hat{p}$ کی نمونہ جاتی تقسیم کی شکل تقریباً نارمل ہوگی۔",
+     "pashto": "د کوچني n لپاره به بڼه یې د بینومیل وېش په څېر وي خو د کافي لویو نمونو لپاره به د $\\hat{p}$ د نمونوي وېش بڼه نږدې نورماله وي."
+    },
+    {
+     "text": "The variable $\\hat{p}$ can be standardized as $Z=\\frac{\\hat{p}-\\mu_{\\hat{p}}}{\\sigma_{\\hat{p}}}=\\frac{\\hat{p}-p}{\\sqrt{\\frac{pq}{n}}}$ (in S.W.R case)",
+     "urdu": "متغیر $\\hat{p}$ کو یوں معیاری بنایا جا سکتا ہے $Z=\\frac{\\hat{p}-\\mu_{\\hat{p}}}{\\sigma_{\\hat{p}}}=\\frac{\\hat{p}-p}{\\sqrt{\\frac{pq}{n}}}$ (S.W.R کی صورت میں)",
+     "pashto": "متغیر $\\hat{p}$ داسې معیاري کېدای شي $Z=\\frac{\\hat{p}-\\mu_{\\hat{p}}}{\\sigma_{\\hat{p}}}=\\frac{\\hat{p}-p}{\\sqrt{\\frac{pq}{n}}}$ (د S.W.R په حالت کې)"
+    },
+    {
+     "text": "5.4.3 Formulas for $\\mu_{\\hat{p}}$ and $\\sigma_{\\hat{p}}$.",
+     "urdu": "5.4.3 $\\mu_{\\hat{p}}$ اور $\\sigma_{\\hat{p}}$ کے فارمولے۔",
+     "pashto": "5.4.3 د $\\mu_{\\hat{p}}$ او $\\sigma_{\\hat{p}}$ فورمولونه."
+    },
+    {
+     "text": "Mean $E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})$",
+     "urdu": "اوسط $E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})$",
+     "pashto": "منځنی $E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})$"
+    },
+    {
+     "text": "S.E $\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}$",
+     "urdu": "معیاری غلطی $\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}$",
+     "pashto": "معیاري تېروتنه $\\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}$"
+    }
+   ],
+   "theory": "5.4.2 Properties of the sampling distribution of \\hat{p}\n\n(i). Mean of the sampling distribution of sample proportion is always equal to the population proportion i.e. \\mu_{\\hat{p}}=p (both in S.W.R and S.W.O.R cases)\n\n(ii). S.E of the sampling distribution of \\hat{p} is:\n\n\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}}, q=1−p (in case of S.W.R)\n\n\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}} (in case S.W.O.R)\n\nNote that if p is unknown and n is large, then \\sigma_{\\hat{p}} can be estimated by S_{\\hat{p}}=\\sqrt{\\frac{\\hat{p}\\hat{q}}{n}}.\n\n(iii). Shape of the sampling distribution of \\hat{p}\n\nFor small n, its shape will be like binomial distribution but for sufficiently large sample sizes, the shape of the sampling distribution of \\hat{p} will be approximately normal.\n\nThe variable \\hat{p} can be standardized as Z=\\frac{\\hat{p}-\\mu_{\\hat{p}}}{\\sigma_{\\hat{p}}}=\\frac{\\hat{p}-p}{\\sqrt{\\frac{pq}{n}}} (in S.W.R case)\n\n5.4.3 Formulas for \\mu_{\\hat{p}} and \\sigma_{\\hat{p}}.\n\nMean E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})\n\nS.E \\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}",
+   "urdu": "5.4.2 \\hat{p} کی نمونہ جاتی تقسیم کی خصوصیات\n\n(i). نمونے کے تناسب کی نمونہ جاتی تقسیم کا اوسط ہمیشہ آبادی کے تناسب کے برابر ہوتا ہے یعنی \\mu_{\\hat{p}}=p (S.W.R اور S.W.O.R دونوں صورتوں میں)\n\n(ii). \\hat{p} کی نمونہ جاتی تقسیم کی معیاری غلطی یہ ہے:\n\n\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}}، q=1−p (S.W.R کی صورت میں)\n\n\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}} (S.W.O.R کی صورت میں)\n\nنوٹ کریں کہ اگر p نامعلوم ہو اور n بڑا ہو تو \\sigma_{\\hat{p}} کا تخمین S_{\\hat{p}}=\\sqrt{\\frac{\\hat{p}\\hat{q}}{n}} سے لگایا جا سکتا ہے۔\n\n(iii). \\hat{p} کی نمونہ جاتی تقسیم کی شکل\n\nچھوٹے n کے لیے اس کی شکل دو رقمی تقسیم جیسی ہوگی لیکن کافی بڑے نمونوں کے لیے \\hat{p} کی نمونہ جاتی تقسیم کی شکل تقریباً نارمل ہوگی۔\n\nمتغیر \\hat{p} کو یوں معیاری بنایا جا سکتا ہے Z=\\frac{\\hat{p}-\\mu_{\\hat{p}}}{\\sigma_{\\hat{p}}}=\\frac{\\hat{p}-p}{\\sqrt{\\frac{pq}{n}}} (S.W.R کی صورت میں)\n\n5.4.3 \\mu_{\\hat{p}} اور \\sigma_{\\hat{p}} کے فارمولے۔\n\nاوسط E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})\n\nمعیاری غلطی \\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}",
+   "pashto": "5.4.2 د \\hat{p} د نمونوي وېش ځانګړنې\n\n(i). د نمونې د تناسب د نمونوي وېش منځنی تل د نفوس له تناسب سره برابر دی یعنې \\mu_{\\hat{p}}=p (په دواړو S.W.R او S.W.O.R حالتونو کې)\n\n(ii). د \\hat{p} د نمونوي وېش معیاري تېروتنه دا ده:\n\n\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}}، q=1−p (د S.W.R په حالت کې)\n\n\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}} (د S.W.O.R په حالت کې)\n\nپام وکړئ چې که p نامعلوم وي او n لوی وي، نو \\sigma_{\\hat{p}} په S_{\\hat{p}}=\\sqrt{\\frac{\\hat{p}\\hat{q}}{n}} اټکل کېدای شي.\n\n(iii). د \\hat{p} د نمونوي وېش بڼه\n\nد کوچني n لپاره به بڼه یې د بینومیل وېش په څېر وي خو د کافي لویو نمونو لپاره به د \\hat{p} د نمونوي وېش بڼه نږدې نورماله وي.\n\nمتغیر \\hat{p} داسې معیاري کېدای شي Z=\\frac{\\hat{p}-\\mu_{\\hat{p}}}{\\sigma_{\\hat{p}}}=\\frac{\\hat{p}-p}{\\sqrt{\\frac{pq}{n}}} (د S.W.R په حالت کې)\n\n5.4.3 د \\mu_{\\hat{p}} او \\sigma_{\\hat{p}} فورمولونه.\n\nمنځنی E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})\n\nمعیاري تېروتنه \\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}",
+   "theoryUrdu": "5.4.2 \\hat{p} کی نمونہ جاتی تقسیم کی خصوصیات\n\n(i). نمونے کے تناسب کی نمونہ جاتی تقسیم کا اوسط ہمیشہ آبادی کے تناسب کے برابر ہوتا ہے یعنی \\mu_{\\hat{p}}=p (S.W.R اور S.W.O.R دونوں صورتوں میں)\n\n(ii). \\hat{p} کی نمونہ جاتی تقسیم کی معیاری غلطی یہ ہے:\n\n\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}}، q=1−p (S.W.R کی صورت میں)\n\n\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}} (S.W.O.R کی صورت میں)\n\nنوٹ کریں کہ اگر p نامعلوم ہو اور n بڑا ہو تو \\sigma_{\\hat{p}} کا تخمین S_{\\hat{p}}=\\sqrt{\\frac{\\hat{p}\\hat{q}}{n}} سے لگایا جا سکتا ہے۔\n\n(iii). \\hat{p} کی نمونہ جاتی تقسیم کی شکل\n\nچھوٹے n کے لیے اس کی شکل دو رقمی تقسیم جیسی ہوگی لیکن کافی بڑے نمونوں کے لیے \\hat{p} کی نمونہ جاتی تقسیم کی شکل تقریباً نارمل ہوگی۔\n\nمتغیر \\hat{p} کو یوں معیاری بنایا جا سکتا ہے Z=\\frac{\\hat{p}-\\mu_{\\hat{p}}}{\\sigma_{\\hat{p}}}=\\frac{\\hat{p}-p}{\\sqrt{\\frac{pq}{n}}} (S.W.R کی صورت میں)\n\n5.4.3 \\mu_{\\hat{p}} اور \\sigma_{\\hat{p}} کے فارمولے۔\n\nاوسط E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})\n\nمعیاری غلطی \\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}",
+   "theoryPashto": "5.4.2 د \\hat{p} د نمونوي وېش ځانګړنې\n\n(i). د نمونې د تناسب د نمونوي وېش منځنی تل د نفوس له تناسب سره برابر دی یعنې \\mu_{\\hat{p}}=p (په دواړو S.W.R او S.W.O.R حالتونو کې)\n\n(ii). د \\hat{p} د نمونوي وېش معیاري تېروتنه دا ده:\n\n\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}}، q=1−p (د S.W.R په حالت کې)\n\n\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}} (د S.W.O.R په حالت کې)\n\nپام وکړئ چې که p نامعلوم وي او n لوی وي، نو \\sigma_{\\hat{p}} په S_{\\hat{p}}=\\sqrt{\\frac{\\hat{p}\\hat{q}}{n}} اټکل کېدای شي.\n\n(iii). د \\hat{p} د نمونوي وېش بڼه\n\nد کوچني n لپاره به بڼه یې د بینومیل وېش په څېر وي خو د کافي لویو نمونو لپاره به د \\hat{p} د نمونوي وېش بڼه نږدې نورماله وي.\n\nمتغیر \\hat{p} داسې معیاري کېدای شي Z=\\frac{\\hat{p}-\\mu_{\\hat{p}}}{\\sigma_{\\hat{p}}}=\\frac{\\hat{p}-p}{\\sqrt{\\frac{pq}{n}}} (د S.W.R په حالت کې)\n\n5.4.3 د \\mu_{\\hat{p}} او \\sigma_{\\hat{p}} فورمولونه.\n\nمنځنی E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})\n\nمعیاري تېروتنه \\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}",
+   "content": "<p>5.4.2 Properties of the sampling distribution of \\hat{p}</p><p>(i). Mean of the sampling distribution of sample proportion is always equal to the population proportion i.e. \\mu_{\\hat{p}}=p (both in S.W.R and S.W.O.R cases)</p><p>(ii). S.E of the sampling distribution of \\hat{p} is:</p><p>\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}}, q=1−p (in case of S.W.R)</p><p>\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}} (in case S.W.O.R)</p><p>Note that if p is unknown and n is large, then \\sigma_{\\hat{p}} can be estimated by S_{\\hat{p}}=\\sqrt{\\frac{\\hat{p}\\hat{q}}{n}}.</p><p>(iii). Shape of the sampling distribution of \\hat{p}</p><p>For small n, its shape will be like binomial distribution but for sufficiently large sample sizes, the shape of the sampling distribution of \\hat{p} will be approximately normal.</p><p>The variable \\hat{p} can be standardized as Z=\\frac{\\hat{p}-\\mu_{\\hat{p}}}{\\sigma_{\\hat{p}}}=\\frac{\\hat{p}-p}{\\sqrt{\\frac{pq}{n}}} (in S.W.R case)</p><p>5.4.3 Formulas for \\mu_{\\hat{p}} and \\sigma_{\\hat{p}}.</p><p>Mean E(\\hat{p})=\\mu_{\\hat{p}}=\\Sigma\\hat{p}f(\\hat{p})</p><p>S.E \\sigma_{\\hat{p}}=\\sqrt{\\Sigma\\hat{p}^2f(\\hat{p})-[\\Sigma\\hat{p}f(\\hat{p})]^2}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      3,
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      10,
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 93,
+     "printedPages": [
+      177
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 5
+  },
+  {
+   "id": "stat12-p093-example-5-8",
+   "title": "Example 5.8 — proportion of even numbers in samples of size 3",
+   "headingUrdu": "مثال 5.8 — 3 سائز کے نمونوں میں جفت اعداد کا تناسب",
+   "headingPashto": "بېلګه 5.8 — د 3 اندازې په نمونو کې د جفت عددونو تناسب",
+   "paras": [
+    {
+     "text": "Example 5.8",
+     "urdu": "مثال 5.8",
+     "pashto": "بېلګه 5.8"
+    },
+    {
+     "text": "Draw all possible samples of size n = 3 without replacement from the population consists of six numbers 3, 4, 5, 6, 7, 8 and find the proportion of even numbers in the samples. Construct the sampling distribution of sample proportion and verify that;",
+     "urdu": "چھ اعداد 3، 4، 5، 6، 7، 8 پر مشتمل آبادی سے بغیر واپسی کے n = 3 سائز کے تمام ممکنہ نمونے نکالیں اور نمونوں میں جفت اعداد کا تناسب معلوم کریں۔ نمونے کے تناسب کی نمونہ جاتی تقسیم بنائیں اور تصدیق کریں کہ؛",
+     "pashto": "له شپږو عددونو 3، 4، 5، 6، 7، 8 جوړ نفوس څخه پرته له بېرته اچولو د n = 3 اندازې ټولې شونې نمونې راوباسئ او په نمونو کې د جفت عددونو تناسب پیدا کړئ. د نمونې د تناسب نمونوي وېش جوړ کړئ او تایید کړئ چې؛"
+    },
+    {
+     "text": "(a) $\\mu_{\\hat{p}}=p$",
+     "urdu": "(a) $\\mu_{\\hat{p}}=p$",
+     "pashto": "(a) $\\mu_{\\hat{p}}=p$"
+    },
+    {
+     "text": "(b) $\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}$",
+     "urdu": "(b) $\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}$",
+     "pashto": "(b) $\\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}$"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "The number of possible samples of size 3 in without replacement case are ${}^{6}_{3}C=20$. The samples and the proportion of even numbers in the samples are:",
+     "urdu": "بغیر واپسی کی صورت میں 3 سائز کے ممکنہ نمونوں کی تعداد ${}^{6}_{3}C=20$ ہے۔ نمونے اور ان میں جفت اعداد کا تناسب یہ ہیں:",
+     "pashto": "پرته له بېرته اچولو په حالت کې د 3 اندازې د شونو نمونو شمېر ${}^{6}_{3}C=20$ دی. نمونې او په هغو کې د جفت عددونو تناسب دا دي:"
+    },
+    {
+     "text": "The sampling distribution of $\\hat{p}$",
+     "urdu": "$\\hat{p}$ کی نمونہ جاتی تقسیم",
+     "pashto": "د $\\hat{p}$ نمونوي وېش"
+    }
+   ],
+   "theory": "Example 5.8\n\nDraw all possible samples of size n = 3 without replacement from the population consists of six numbers 3, 4, 5, 6, 7, 8 and find the proportion of even numbers in the samples. Construct the sampling distribution of sample proportion and verify that;\n\n(a) \\mu_{\\hat{p}}=p\n\n(b) \\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}\n\nSolution:\n\nThe number of possible samples of size 3 in without replacement case are {}^{6}_{3}C=20. The samples and the proportion of even numbers in the samples are:\n\nThe sampling distribution of \\hat{p}",
+   "urdu": "مثال 5.8\n\nچھ اعداد 3، 4، 5، 6، 7، 8 پر مشتمل آبادی سے بغیر واپسی کے n = 3 سائز کے تمام ممکنہ نمونے نکالیں اور نمونوں میں جفت اعداد کا تناسب معلوم کریں۔ نمونے کے تناسب کی نمونہ جاتی تقسیم بنائیں اور تصدیق کریں کہ؛\n\n(a) \\mu_{\\hat{p}}=p\n\n(b) \\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}\n\nحل:\n\nبغیر واپسی کی صورت میں 3 سائز کے ممکنہ نمونوں کی تعداد {}^{6}_{3}C=20 ہے۔ نمونے اور ان میں جفت اعداد کا تناسب یہ ہیں:\n\n\\hat{p} کی نمونہ جاتی تقسیم",
+   "pashto": "بېلګه 5.8\n\nله شپږو عددونو 3، 4، 5، 6، 7، 8 جوړ نفوس څخه پرته له بېرته اچولو د n = 3 اندازې ټولې شونې نمونې راوباسئ او په نمونو کې د جفت عددونو تناسب پیدا کړئ. د نمونې د تناسب نمونوي وېش جوړ کړئ او تایید کړئ چې؛\n\n(a) \\mu_{\\hat{p}}=p\n\n(b) \\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}\n\nحل:\n\nپرته له بېرته اچولو په حالت کې د 3 اندازې د شونو نمونو شمېر {}^{6}_{3}C=20 دی. نمونې او په هغو کې د جفت عددونو تناسب دا دي:\n\nد \\hat{p} نمونوي وېش",
+   "theoryUrdu": "مثال 5.8\n\nچھ اعداد 3، 4، 5، 6، 7، 8 پر مشتمل آبادی سے بغیر واپسی کے n = 3 سائز کے تمام ممکنہ نمونے نکالیں اور نمونوں میں جفت اعداد کا تناسب معلوم کریں۔ نمونے کے تناسب کی نمونہ جاتی تقسیم بنائیں اور تصدیق کریں کہ؛\n\n(a) \\mu_{\\hat{p}}=p\n\n(b) \\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}\n\nحل:\n\nبغیر واپسی کی صورت میں 3 سائز کے ممکنہ نمونوں کی تعداد {}^{6}_{3}C=20 ہے۔ نمونے اور ان میں جفت اعداد کا تناسب یہ ہیں:\n\n\\hat{p} کی نمونہ جاتی تقسیم",
+   "theoryPashto": "بېلګه 5.8\n\nله شپږو عددونو 3، 4، 5، 6، 7، 8 جوړ نفوس څخه پرته له بېرته اچولو د n = 3 اندازې ټولې شونې نمونې راوباسئ او په نمونو کې د جفت عددونو تناسب پیدا کړئ. د نمونې د تناسب نمونوي وېش جوړ کړئ او تایید کړئ چې؛\n\n(a) \\mu_{\\hat{p}}=p\n\n(b) \\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}\n\nحل:\n\nپرته له بېرته اچولو په حالت کې د 3 اندازې د شونو نمونو شمېر {}^{6}_{3}C=20 دی. نمونې او په هغو کې د جفت عددونو تناسب دا دي:\n\nد \\hat{p} نمونوي وېش",
+   "content": "<p>Example 5.8</p><p>Draw all possible samples of size n = 3 without replacement from the population consists of six numbers 3, 4, 5, 6, 7, 8 and find the proportion of even numbers in the samples. Construct the sampling distribution of sample proportion and verify that;</p><p>(a) \\mu_{\\hat{p}}=p</p><p>(b) \\sigma_{\\hat{p}}=\\sqrt{\\frac{pq}{n}\\frac{N-n}{N-1}}</p><p>Solution:</p><p>The number of possible samples of size 3 in without replacement case are {}^{6}_{3}C=20. The samples and the proportion of even numbers in the samples are:</p><p>The sampling distribution of \\hat{p}</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex5-8-samples"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex5-8-dist"
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex5-8-samples",
+     "headers": [
+      "S.No.",
+      "Samples",
+      "$\\hat{p}$",
+      "S.No.",
+      "Samples",
+      "$\\hat{p}$",
+      "S.No.",
+      "Samples",
+      "$\\hat{p}$"
+     ],
+     "rows": [
+      [
+       "1",
+       "3, 4, 5",
+       "1/3",
+       "8",
+       "3, 6, 7",
+       "1/3",
+       "15",
+       "4, 6, 8",
+       "1"
+      ],
+      [
+       "2",
+       "3, 4, 6",
+       "2/3",
+       "9",
+       "3, 6, 8",
+       "2/3",
+       "16",
+       "4, 7, 8",
+       "2/3"
+      ],
+      [
+       "3",
+       "3, 4, 7",
+       "1/3",
+       "10",
+       "3, 7, 8",
+       "1/3",
+       "17",
+       "5, 6, 7",
+       "1/3"
+      ],
+      [
+       "4",
+       "3, 4, 8",
+       "2/3",
+       "11",
+       "4, 5, 6",
+       "2/3",
+       "18",
+       "5, 6, 8",
+       "2/3"
+      ],
+      [
+       "5",
+       "3, 5, 6",
+       "1/3",
+       "12",
+       "4, 5, 7",
+       "1/3",
+       "19",
+       "5, 7, 8",
+       "1/3"
+      ],
+      [
+       "6",
+       "3, 5, 7",
+       "0",
+       "13",
+       "4, 5, 8",
+       "2/3",
+       "20",
+       "6, 7, 8",
+       "2/3"
+      ],
+      [
+       "7",
+       "3, 5, 8",
+       "1/3",
+       "14",
+       "4, 6, 7",
+       "2/3",
+       "",
+       "",
+       ""
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "نمبر شمار",
+        "نمونے",
+        "$\\hat{p}$",
+        "نمبر شمار",
+        "نمونے",
+        "$\\hat{p}$",
+        "نمبر شمار",
+        "نمونے",
+        "$\\hat{p}$"
+       ],
+       "rows": [
+        [
+         "1",
+         "3, 4, 5",
+         "1/3",
+         "8",
+         "3, 6, 7",
+         "1/3",
+         "15",
+         "4, 6, 8",
+         "1"
+        ],
+        [
+         "2",
+         "3, 4, 6",
+         "2/3",
+         "9",
+         "3, 6, 8",
+         "2/3",
+         "16",
+         "4, 7, 8",
+         "2/3"
+        ],
+        [
+         "3",
+         "3, 4, 7",
+         "1/3",
+         "10",
+         "3, 7, 8",
+         "1/3",
+         "17",
+         "5, 6, 7",
+         "1/3"
+        ],
+        [
+         "4",
+         "3, 4, 8",
+         "2/3",
+         "11",
+         "4, 5, 6",
+         "2/3",
+         "18",
+         "5, 6, 8",
+         "2/3"
+        ],
+        [
+         "5",
+         "3, 5, 6",
+         "1/3",
+         "12",
+         "4, 5, 7",
+         "1/3",
+         "19",
+         "5, 7, 8",
+         "1/3"
+        ],
+        [
+         "6",
+         "3, 5, 7",
+         "0",
+         "13",
+         "4, 5, 8",
+         "2/3",
+         "20",
+         "6, 7, 8",
+         "2/3"
+        ],
+        [
+         "7",
+         "3, 5, 8",
+         "1/3",
+         "14",
+         "4, 6, 7",
+         "2/3",
+         "",
+         "",
+         ""
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "شمېره",
+        "نمونې",
+        "$\\hat{p}$",
+        "شمېره",
+        "نمونې",
+        "$\\hat{p}$",
+        "شمېره",
+        "نمونې",
+        "$\\hat{p}$"
+       ],
+       "rows": [
+        [
+         "1",
+         "3, 4, 5",
+         "1/3",
+         "8",
+         "3, 6, 7",
+         "1/3",
+         "15",
+         "4, 6, 8",
+         "1"
+        ],
+        [
+         "2",
+         "3, 4, 6",
+         "2/3",
+         "9",
+         "3, 6, 8",
+         "2/3",
+         "16",
+         "4, 7, 8",
+         "2/3"
+        ],
+        [
+         "3",
+         "3, 4, 7",
+         "1/3",
+         "10",
+         "3, 7, 8",
+         "1/3",
+         "17",
+         "5, 6, 7",
+         "1/3"
+        ],
+        [
+         "4",
+         "3, 4, 8",
+         "2/3",
+         "11",
+         "4, 5, 6",
+         "2/3",
+         "18",
+         "5, 6, 8",
+         "2/3"
+        ],
+        [
+         "5",
+         "3, 5, 6",
+         "1/3",
+         "12",
+         "4, 5, 7",
+         "1/3",
+         "19",
+         "5, 7, 8",
+         "1/3"
+        ],
+        [
+         "6",
+         "3, 5, 7",
+         "0",
+         "13",
+         "4, 5, 8",
+         "2/3",
+         "20",
+         "6, 7, 8",
+         "2/3"
+        ],
+        [
+         "7",
+         "3, 5, 8",
+         "1/3",
+         "14",
+         "4, 6, 7",
+         "2/3",
+         "",
+         "",
+         ""
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex5-8-dist",
+     "headers": [
+      "$\\hat{p}$",
+      "$f$",
+      "$f(\\hat{p})$",
+      "$\\hat{p}f(\\hat{p})$",
+      "$\\hat{p}^2f(\\hat{p})$"
+     ],
+     "rows": [
+      [
+       "0",
+       "1",
+       "1/20",
+       "0",
+       "0"
+      ],
+      [
+       "1/3",
+       "9",
+       "9/20",
+       "3/20",
+       "1/20"
+      ],
+      [
+       "2/3",
+       "9",
+       "9/20",
+       "6/20",
+       "4/20"
+      ],
+      [
+       "1",
+       "1",
+       "1/20",
+       "1/20",
+       "1/20"
+      ],
+      [
+       "Total",
+       "20",
+       "1",
+       "10/20",
+       "6/20"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$\\hat{p}$",
+        "$f$",
+        "$f(\\hat{p})$",
+        "$\\hat{p}f(\\hat{p})$",
+        "$\\hat{p}^2f(\\hat{p})$"
+       ],
+       "rows": [
+        [
+         "0",
+         "1",
+         "1/20",
+         "0",
+         "0"
+        ],
+        [
+         "1/3",
+         "9",
+         "9/20",
+         "3/20",
+         "1/20"
+        ],
+        [
+         "2/3",
+         "9",
+         "9/20",
+         "6/20",
+         "4/20"
+        ],
+        [
+         "1",
+         "1",
+         "1/20",
+         "1/20",
+         "1/20"
+        ],
+        [
+         "کل",
+         "20",
+         "1",
+         "10/20",
+         "6/20"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$\\hat{p}$",
+        "$f$",
+        "$f(\\hat{p})$",
+        "$\\hat{p}f(\\hat{p})$",
+        "$\\hat{p}^2f(\\hat{p})$"
+       ],
+       "rows": [
+        [
+         "0",
+         "1",
+         "1/20",
+         "0",
+         "0"
+        ],
+        [
+         "1/3",
+         "9",
+         "9/20",
+         "3/20",
+         "1/20"
+        ],
+        [
+         "2/3",
+         "9",
+         "9/20",
+         "6/20",
+         "4/20"
+        ],
+        [
+         "1",
+         "1",
+         "1/20",
+         "1/20",
+         "1/20"
+        ],
+        [
+         "ټول",
+         "20",
+         "1",
+         "10/20",
+         "6/20"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 93,
+     "printedPages": [
+      178
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 5
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

@@ -1,0 +1,309 @@
+{
+ "pdfPage": 112,
+ "sections": [
+  {
+   "id": "stat12-p112-example-6-12",
+   "title": "Example 6.12 — 99% t-interval for μ",
+   "headingUrdu": "مثال 6.12 — μ کے لیے 99% t-وقفہ",
+   "headingPashto": "بېلګه 6.12 — د μ لپاره 99% t-واټن",
+   "paras": [
+    {
+     "text": "Example 6.12",
+     "urdu": "مثال 6.12",
+     "pashto": "بېلګه 6.12"
+    },
+    {
+     "text": "Find a 99% confidence interval for population mean when a random sample selected from the population gives the values 1.03, 1.01, 0.097, 1.04, 0.99, 0.98, 1.03, 1.01, 0.99.",
+     "urdu": "آبادی کے اوسط کے لیے 99% اعتماد کا وقفہ معلوم کریں جب آبادی سے منتخب کردہ تصادفی نمونہ یہ قیمتیں دے: 1.03، 1.01، 0.097، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99۔",
+     "pashto": "د نفوس منځني لپاره 99% د باور واټن پیدا کړئ کله چې له نفوس څخه ټاکل شوې تصادفي نمونه دا قیمتونه ورکړي: 1.03، 1.01، 0.097، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "A 100(1−α)% confidence interval for μ is $\\overline{X}\\pm t_{\\frac{\\alpha}{2},(n-1)}\\frac{s}{\\sqrt{n}}$",
+     "urdu": "μ کے لیے 100(1−α)% اعتماد کا وقفہ $\\overline{X}\\pm t_{\\frac{\\alpha}{2},(n-1)}\\frac{s}{\\sqrt{n}}$ ہے",
+     "pashto": "د μ لپاره 100(1−α)% د باور واټن $\\overline{X}\\pm t_{\\frac{\\alpha}{2},(n-1)}\\frac{s}{\\sqrt{n}}$ دی"
+    },
+    {
+     "text": "We have values 1.03, 1.01, 0.97, 1.04, 0.99, 0.98, 1.03, 1.01, 0.99.",
+     "urdu": "ہمارے پاس قیمتیں 1.03، 1.01، 0.97، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99 ہیں۔",
+     "pashto": "موږ قیمتونه 1.03، 1.01، 0.97، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99 لرو."
+    },
+    {
+     "text": "Here n = 9, Σx = 9.05, Σx² = 9.1051, therefore,",
+     "urdu": "یہاں n = 9، Σx = 9.05، Σx² = 9.1051، لہٰذا",
+     "pashto": "دلته n = 9، Σx = 9.05، Σx² = 9.1051، نو"
+    },
+    {
+     "text": "$\\overline{x}=\\frac{\\Sigma x}{n}=\\frac{9.05}{9}=1.0056,$",
+     "urdu": "$\\overline{x}=\\frac{\\Sigma x}{n}=\\frac{9.05}{9}=1.0056,$",
+     "pashto": "$\\overline{x}=\\frac{\\Sigma x}{n}=\\frac{9.05}{9}=1.0056,$"
+    },
+    {
+     "text": "$s=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\left(\\frac{\\Sigma x}{n}\\right)^2\\right]}=\\sqrt{\\frac{1}{9-1}\\left[9.1051-\\frac{(9.05)^2}{9}\\right]}=0.02245$",
+     "urdu": "$s=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\left(\\frac{\\Sigma x}{n}\\right)^2\\right]}=\\sqrt{\\frac{1}{9-1}\\left[9.1051-\\frac{(9.05)^2}{9}\\right]}=0.02245$",
+     "pashto": "$s=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\left(\\frac{\\Sigma x}{n}\\right)^2\\right]}=\\sqrt{\\frac{1}{9-1}\\left[9.1051-\\frac{(9.05)^2}{9}\\right]}=0.02245$"
+    },
+    {
+     "text": "$1-\\alpha=0.99\\quad\\text{or}\\quad\\alpha=0.01$",
+     "urdu": "$1-\\alpha=0.99\\quad\\text{or}\\quad\\alpha=0.01$",
+     "pashto": "$1-\\alpha=0.99\\quad\\text{or}\\quad\\alpha=0.01$"
+    },
+    {
+     "text": "Now form t-table 6.1, we have $t_{\\alpha/2,(n-1)}=t_{0.01/2,(9-1)}=t_{0.005,(8)}=3.355$",
+     "urdu": "اب t-جدول 6.1 سے ہمارے پاس $t_{\\alpha/2,(n-1)}=t_{0.01/2,(9-1)}=t_{0.005,(8)}=3.355$ ہے",
+     "pashto": "اوس له t-جدول 6.1 څخه لرو $t_{\\alpha/2,(n-1)}=t_{0.01/2,(9-1)}=t_{0.005,(8)}=3.355$"
+    },
+    {
+     "text": "Putting values in expression for confidence interval, we get 99% confidence interval for μ as",
+     "urdu": "اعتماد کے وقفے کے اظہاریے میں قیمتیں رکھنے سے μ کے لیے 99% اعتماد کا وقفہ یہ ملتا ہے",
+     "pashto": "د باور د واټن په افاده کې قیمتونه ایښودو سره د μ لپاره 99% د باور واټن داسې لاسته راځي"
+    },
+    {
+     "text": "$$1.0056\\pm 3.355\\left(\\frac{0.0245}{\\sqrt{9}}\\right)\\ \\text{or}\\ [1.0056\\pm 0.0274],\\ [0.9782,\\ 1.033]$$",
+     "urdu": "$$1.0056\\pm 3.355\\left(\\frac{0.0245}{\\sqrt{9}}\\right)\\ \\text{or}\\ [1.0056\\pm 0.0274],\\ [0.9782,\\ 1.033]$$",
+     "pashto": "$$1.0056\\pm 3.355\\left(\\frac{0.0245}{\\sqrt{9}}\\right)\\ \\text{or}\\ [1.0056\\pm 0.0274],\\ [0.9782,\\ 1.033]$$"
+    }
+   ],
+   "theory": "Example 6.12\n\nFind a 99% confidence interval for population mean when a random sample selected from the population gives the values 1.03, 1.01, 0.097, 1.04, 0.99, 0.98, 1.03, 1.01, 0.99.\n\nSolution:\n\nA 100(1−α)% confidence interval for μ is \\overline{X}\\pm t_{\\frac{\\alpha}{2},(n-1)}\\frac{s}{\\sqrt{n}}\n\nWe have values 1.03, 1.01, 0.97, 1.04, 0.99, 0.98, 1.03, 1.01, 0.99.\n\nHere n = 9, Σx = 9.05, Σx² = 9.1051, therefore,\n\n\\overline{x}=\\frac{\\Sigma x}{n}=\\frac{9.05}{9}=1.0056,\n\ns=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\left(\\frac{\\Sigma x}{n}\\right)^2\\right]}=\\sqrt{\\frac{1}{9-1}\\left[9.1051-\\frac{(9.05)^2}{9}\\right]}=0.02245\n\n1-\\alpha=0.99\\quad\\text{or}\\quad\\alpha=0.01\n\nNow form t-table 6.1, we have t_{\\alpha/2,(n-1)}=t_{0.01/2,(9-1)}=t_{0.005,(8)}=3.355\n\nPutting values in expression for confidence interval, we get 99% confidence interval for μ as\n\n$1.0056\\pm 3.355\\left(\\frac{0.0245}{\\sqrt{9}}\\right)\\ \\text{or}\\ [1.0056\\pm 0.0274],\\ [0.9782,\\ 1.033]$",
+   "urdu": "مثال 6.12\n\nآبادی کے اوسط کے لیے 99% اعتماد کا وقفہ معلوم کریں جب آبادی سے منتخب کردہ تصادفی نمونہ یہ قیمتیں دے: 1.03، 1.01، 0.097، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99۔\n\nحل:\n\nμ کے لیے 100(1−α)% اعتماد کا وقفہ \\overline{X}\\pm t_{\\frac{\\alpha}{2},(n-1)}\\frac{s}{\\sqrt{n}} ہے\n\nہمارے پاس قیمتیں 1.03، 1.01، 0.97، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99 ہیں۔\n\nیہاں n = 9، Σx = 9.05، Σx² = 9.1051، لہٰذا\n\n\\overline{x}=\\frac{\\Sigma x}{n}=\\frac{9.05}{9}=1.0056,\n\ns=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\left(\\frac{\\Sigma x}{n}\\right)^2\\right]}=\\sqrt{\\frac{1}{9-1}\\left[9.1051-\\frac{(9.05)^2}{9}\\right]}=0.02245\n\n1-\\alpha=0.99\\quad\\text{or}\\quad\\alpha=0.01\n\nاب t-جدول 6.1 سے ہمارے پاس t_{\\alpha/2,(n-1)}=t_{0.01/2,(9-1)}=t_{0.005,(8)}=3.355 ہے\n\nاعتماد کے وقفے کے اظہاریے میں قیمتیں رکھنے سے μ کے لیے 99% اعتماد کا وقفہ یہ ملتا ہے\n\n$1.0056\\pm 3.355\\left(\\frac{0.0245}{\\sqrt{9}}\\right)\\ \\text{or}\\ [1.0056\\pm 0.0274],\\ [0.9782,\\ 1.033]$",
+   "pashto": "بېلګه 6.12\n\nد نفوس منځني لپاره 99% د باور واټن پیدا کړئ کله چې له نفوس څخه ټاکل شوې تصادفي نمونه دا قیمتونه ورکړي: 1.03، 1.01، 0.097، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99.\n\nحل:\n\nد μ لپاره 100(1−α)% د باور واټن \\overline{X}\\pm t_{\\frac{\\alpha}{2},(n-1)}\\frac{s}{\\sqrt{n}} دی\n\nموږ قیمتونه 1.03، 1.01، 0.97، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99 لرو.\n\nدلته n = 9، Σx = 9.05، Σx² = 9.1051، نو\n\n\\overline{x}=\\frac{\\Sigma x}{n}=\\frac{9.05}{9}=1.0056,\n\ns=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\left(\\frac{\\Sigma x}{n}\\right)^2\\right]}=\\sqrt{\\frac{1}{9-1}\\left[9.1051-\\frac{(9.05)^2}{9}\\right]}=0.02245\n\n1-\\alpha=0.99\\quad\\text{or}\\quad\\alpha=0.01\n\nاوس له t-جدول 6.1 څخه لرو t_{\\alpha/2,(n-1)}=t_{0.01/2,(9-1)}=t_{0.005,(8)}=3.355\n\nد باور د واټن په افاده کې قیمتونه ایښودو سره د μ لپاره 99% د باور واټن داسې لاسته راځي\n\n$1.0056\\pm 3.355\\left(\\frac{0.0245}{\\sqrt{9}}\\right)\\ \\text{or}\\ [1.0056\\pm 0.0274],\\ [0.9782,\\ 1.033]$",
+   "theoryUrdu": "مثال 6.12\n\nآبادی کے اوسط کے لیے 99% اعتماد کا وقفہ معلوم کریں جب آبادی سے منتخب کردہ تصادفی نمونہ یہ قیمتیں دے: 1.03، 1.01، 0.097، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99۔\n\nحل:\n\nμ کے لیے 100(1−α)% اعتماد کا وقفہ \\overline{X}\\pm t_{\\frac{\\alpha}{2},(n-1)}\\frac{s}{\\sqrt{n}} ہے\n\nہمارے پاس قیمتیں 1.03، 1.01، 0.97، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99 ہیں۔\n\nیہاں n = 9، Σx = 9.05، Σx² = 9.1051، لہٰذا\n\n\\overline{x}=\\frac{\\Sigma x}{n}=\\frac{9.05}{9}=1.0056,\n\ns=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\left(\\frac{\\Sigma x}{n}\\right)^2\\right]}=\\sqrt{\\frac{1}{9-1}\\left[9.1051-\\frac{(9.05)^2}{9}\\right]}=0.02245\n\n1-\\alpha=0.99\\quad\\text{or}\\quad\\alpha=0.01\n\nاب t-جدول 6.1 سے ہمارے پاس t_{\\alpha/2,(n-1)}=t_{0.01/2,(9-1)}=t_{0.005,(8)}=3.355 ہے\n\nاعتماد کے وقفے کے اظہاریے میں قیمتیں رکھنے سے μ کے لیے 99% اعتماد کا وقفہ یہ ملتا ہے\n\n$1.0056\\pm 3.355\\left(\\frac{0.0245}{\\sqrt{9}}\\right)\\ \\text{or}\\ [1.0056\\pm 0.0274],\\ [0.9782,\\ 1.033]$",
+   "theoryPashto": "بېلګه 6.12\n\nد نفوس منځني لپاره 99% د باور واټن پیدا کړئ کله چې له نفوس څخه ټاکل شوې تصادفي نمونه دا قیمتونه ورکړي: 1.03، 1.01، 0.097، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99.\n\nحل:\n\nد μ لپاره 100(1−α)% د باور واټن \\overline{X}\\pm t_{\\frac{\\alpha}{2},(n-1)}\\frac{s}{\\sqrt{n}} دی\n\nموږ قیمتونه 1.03، 1.01، 0.97، 1.04، 0.99، 0.98، 1.03، 1.01، 0.99 لرو.\n\nدلته n = 9، Σx = 9.05، Σx² = 9.1051، نو\n\n\\overline{x}=\\frac{\\Sigma x}{n}=\\frac{9.05}{9}=1.0056,\n\ns=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\left(\\frac{\\Sigma x}{n}\\right)^2\\right]}=\\sqrt{\\frac{1}{9-1}\\left[9.1051-\\frac{(9.05)^2}{9}\\right]}=0.02245\n\n1-\\alpha=0.99\\quad\\text{or}\\quad\\alpha=0.01\n\nاوس له t-جدول 6.1 څخه لرو t_{\\alpha/2,(n-1)}=t_{0.01/2,(9-1)}=t_{0.005,(8)}=3.355\n\nد باور د واټن په افاده کې قیمتونه ایښودو سره د μ لپاره 99% د باور واټن داسې لاسته راځي\n\n$1.0056\\pm 3.355\\left(\\frac{0.0245}{\\sqrt{9}}\\right)\\ \\text{or}\\ [1.0056\\pm 0.0274],\\ [0.9782,\\ 1.033]$",
+   "content": "<p>Example 6.12</p><p>Find a 99% confidence interval for population mean when a random sample selected from the population gives the values 1.03, 1.01, 0.097, 1.04, 0.99, 0.98, 1.03, 1.01, 0.99.</p><p>Solution:</p><p>A 100(1−α)% confidence interval for μ is \\overline{X}\\pm t_{\\frac{\\alpha}{2},(n-1)}\\frac{s}{\\sqrt{n}}</p><p>We have values 1.03, 1.01, 0.97, 1.04, 0.99, 0.98, 1.03, 1.01, 0.99.</p><p>Here n = 9, Σx = 9.05, Σx² = 9.1051, therefore,</p><p>\\overline{x}=\\frac{\\Sigma x}{n}=\\frac{9.05}{9}=1.0056,</p><p>s=\\sqrt{\\frac{1}{n-1}\\left[\\Sigma x^2-\\left(\\frac{\\Sigma x}{n}\\right)^2\\right]}=\\sqrt{\\frac{1}{9-1}\\left[9.1051-\\frac{(9.05)^2}{9}\\right]}=0.02245</p><p>1-\\alpha=0.99\\quad\\text{or}\\quad\\alpha=0.01</p><p>Now form t-table 6.1, we have t_{\\alpha/2,(n-1)}=t_{0.01/2,(9-1)}=t_{0.005,(8)}=3.355</p><p>Putting values in expression for confidence interval, we get 99% confidence interval for μ as</p><p>$1.0056\\pm 3.355\\left(\\frac{0.0245}{\\sqrt{9}}\\right)\\ \\text{or}\\ [1.0056\\pm 0.0274],\\ [0.9782,\\ 1.033]$</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      11
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 112,
+     "printedPages": [
+      215
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  },
+  {
+   "id": "stat12-p112-interpret-diff-means",
+   "title": "6.3.5 Interpreting a confidence interval; 6.3.6 CI for μ₁ − μ₂ (σ known)",
+   "headingUrdu": "6.3.5 اعتماد کے وقفے کی تشریح؛ 6.3.6 μ₁ − μ₂ کا اعتماد کا وقفہ (σ معلوم)",
+   "headingPashto": "6.3.5 د باور د واټن تفسیر؛ 6.3.6 د μ₁ − μ₂ د باور واټن (σ معلوم)",
+   "paras": [
+    {
+     "text": "6.3.5 Interpreting the confidence interval",
+     "urdu": "6.3.5 اعتماد کے وقفے کی تشریح",
+     "pashto": "6.3.5 د باور د واټن تفسیر"
+    },
+    {
+     "text": "What does it mean to say we are 98% confidant that the true value of the population mean μ is within a given interval? It means that if we construct 100 such intervals for different samples, almost 98 out of 100 will contain the parameter and only 2 out of 100 will not contain the true value of the parameter. It can diagrammatically be shown as given in the Figure. Two of the intervals at serial number 3 and 97 do not contain the parameter μ while remaining 98 intervals contain the parameter. Remember that we cannot be absolutely sure that any one particular interval contains the mean μ.",
+     "urdu": "یہ کہنے کا کیا مطلب ہے کہ ہمیں 98% یقین ہے کہ آبادی کے اوسط μ کی حقیقی قیمت دیے گئے وقفے کے اندر ہے؟ اس کا مطلب ہے کہ اگر ہم مختلف نمونوں کے لیے ایسے 100 وقفے بنائیں تو 100 میں سے تقریباً 98 میں پیرامیٹر شامل ہوگا اور 100 میں سے صرف 2 میں پیرامیٹر کی حقیقی قیمت شامل نہیں ہوگی۔ اسے شکل میں دکھائے گئے خاکے کی طرح ظاہر کیا جا سکتا ہے۔ سیریل نمبر 3 اور 97 والے دو وقفوں میں پیرامیٹر μ شامل نہیں جبکہ باقی 98 وقفوں میں پیرامیٹر شامل ہے۔ یاد رکھیں کہ ہم مکمل طور پر یقین نہیں کر سکتے کہ کسی ایک خاص وقفے میں اوسط μ شامل ہے۔",
+     "pashto": "دا ویلو مانا څه ده چې موږ 98% ډاډه یو چې د نفوس د منځني μ رښتینی قیمت په ورکړل شوي واټن کې دی؟ مانا یې دا ده چې که د بېلابېلو نمونو لپاره داسې 100 واټنونه جوړ کړو، له 100 څخه نږدې 98 به پارامټر ولري او له 100 څخه یوازې 2 به د پارامټر رښتینی قیمت ونه لري. دا په شکل کې ښودل شوي ډیاګرام په څېر ښودل کېدای شي. د 3 او 97 سریال شمېرو دوه واټنونه μ پارامټر نه لري په داسې حال کې چې پاتې 98 واټنونه پارامټر لري. په یاد ولرئ چې موږ بشپړ ډاډه نه شو کېدای چې کوم یو ځانګړی واټن منځنی μ لري."
+    },
+    {
+     "text": "6.3.6 Confidence interval estimate for the difference between two populations means when σ₁ and σ₂ are known",
+     "urdu": "6.3.6 جب σ₁ اور σ₂ معلوم ہوں تو دو آبادیوں کے اوسطوں کے فرق کا اعتماد کا وقفہ",
+     "pashto": "6.3.6 کله چې σ₁ او σ₂ معلوم وي د دوو نفوسونو د منځنیو د توپیر د باور واټن اټکل"
+    },
+    {
+     "text": "In this case $\\overline{X}_1-\\overline{X}_2$ is the point estimator of $(\\mu_1-\\mu_2)$ which in standard form can be written as;",
+     "urdu": "اس صورت میں $\\overline{X}_1-\\overline{X}_2$، $(\\mu_1-\\mu_2)$ کا نقطہ تخمین کار ہے جسے معیاری شکل میں یوں لکھا جا سکتا ہے؛",
+     "pashto": "په دې حالت کې $\\overline{X}_1-\\overline{X}_2$ د $(\\mu_1-\\mu_2)$ ټکي‌ییز اټکلوونکی دی چې په معیاري بڼه داسې لیکل کېدای شي؛"
+    },
+    {
+     "text": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}.$$",
+     "urdu": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}.$$",
+     "pashto": "$$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}.$$"
+    },
+    {
+     "text": "Probability statement for the random variable Z can be made as $P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha$.",
+     "urdu": "تصادفی متغیر Z کے لیے احتمالی بیان یوں بنایا جا سکتا ہے $P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha$۔",
+     "pashto": "د تصادفي متغیر Z لپاره احتمالي بیان داسې جوړېدای شي $P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha$."
+    },
+    {
+     "text": "The 100(1−α)% confidence interval for $(\\mu_1-\\mu_2)$ in this case is given by",
+     "urdu": "اس صورت میں $(\\mu_1-\\mu_2)$ کے لیے 100(1−α)% اعتماد کا وقفہ یہ ہے",
+     "pashto": "په دې حالت کې د $(\\mu_1-\\mu_2)$ لپاره 100(1−α)% د باور واټن دا دی"
+    },
+    {
+     "text": "$$(\\overline{X}_1-\\overline{X}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$$",
+     "urdu": "$$(\\overline{X}_1-\\overline{X}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$$",
+     "pashto": "$$(\\overline{X}_1-\\overline{X}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$$"
+    }
+   ],
+   "theory": "6.3.5 Interpreting the confidence interval\n\nWhat does it mean to say we are 98% confidant that the true value of the population mean μ is within a given interval? It means that if we construct 100 such intervals for different samples, almost 98 out of 100 will contain the parameter and only 2 out of 100 will not contain the true value of the parameter. It can diagrammatically be shown as given in the Figure. Two of the intervals at serial number 3 and 97 do not contain the parameter μ while remaining 98 intervals contain the parameter. Remember that we cannot be absolutely sure that any one particular interval contains the mean μ.\n\n6.3.6 Confidence interval estimate for the difference between two populations means when σ₁ and σ₂ are known\n\nIn this case \\overline{X}_1-\\overline{X}_2 is the point estimator of (\\mu_1-\\mu_2) which in standard form can be written as;\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}.$\n\nProbability statement for the random variable Z can be made as P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha.\n\nThe 100(1−α)% confidence interval for (\\mu_1-\\mu_2) in this case is given by\n\n$(\\overline{X}_1-\\overline{X}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$",
+   "urdu": "6.3.5 اعتماد کے وقفے کی تشریح\n\nیہ کہنے کا کیا مطلب ہے کہ ہمیں 98% یقین ہے کہ آبادی کے اوسط μ کی حقیقی قیمت دیے گئے وقفے کے اندر ہے؟ اس کا مطلب ہے کہ اگر ہم مختلف نمونوں کے لیے ایسے 100 وقفے بنائیں تو 100 میں سے تقریباً 98 میں پیرامیٹر شامل ہوگا اور 100 میں سے صرف 2 میں پیرامیٹر کی حقیقی قیمت شامل نہیں ہوگی۔ اسے شکل میں دکھائے گئے خاکے کی طرح ظاہر کیا جا سکتا ہے۔ سیریل نمبر 3 اور 97 والے دو وقفوں میں پیرامیٹر μ شامل نہیں جبکہ باقی 98 وقفوں میں پیرامیٹر شامل ہے۔ یاد رکھیں کہ ہم مکمل طور پر یقین نہیں کر سکتے کہ کسی ایک خاص وقفے میں اوسط μ شامل ہے۔\n\n6.3.6 جب σ₁ اور σ₂ معلوم ہوں تو دو آبادیوں کے اوسطوں کے فرق کا اعتماد کا وقفہ\n\nاس صورت میں \\overline{X}_1-\\overline{X}_2، (\\mu_1-\\mu_2) کا نقطہ تخمین کار ہے جسے معیاری شکل میں یوں لکھا جا سکتا ہے؛\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}.$\n\nتصادفی متغیر Z کے لیے احتمالی بیان یوں بنایا جا سکتا ہے P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha۔\n\nاس صورت میں (\\mu_1-\\mu_2) کے لیے 100(1−α)% اعتماد کا وقفہ یہ ہے\n\n$(\\overline{X}_1-\\overline{X}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$",
+   "pashto": "6.3.5 د باور د واټن تفسیر\n\nدا ویلو مانا څه ده چې موږ 98% ډاډه یو چې د نفوس د منځني μ رښتینی قیمت په ورکړل شوي واټن کې دی؟ مانا یې دا ده چې که د بېلابېلو نمونو لپاره داسې 100 واټنونه جوړ کړو، له 100 څخه نږدې 98 به پارامټر ولري او له 100 څخه یوازې 2 به د پارامټر رښتینی قیمت ونه لري. دا په شکل کې ښودل شوي ډیاګرام په څېر ښودل کېدای شي. د 3 او 97 سریال شمېرو دوه واټنونه μ پارامټر نه لري په داسې حال کې چې پاتې 98 واټنونه پارامټر لري. په یاد ولرئ چې موږ بشپړ ډاډه نه شو کېدای چې کوم یو ځانګړی واټن منځنی μ لري.\n\n6.3.6 کله چې σ₁ او σ₂ معلوم وي د دوو نفوسونو د منځنیو د توپیر د باور واټن اټکل\n\nپه دې حالت کې \\overline{X}_1-\\overline{X}_2 د (\\mu_1-\\mu_2) ټکي‌ییز اټکلوونکی دی چې په معیاري بڼه داسې لیکل کېدای شي؛\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}.$\n\nد تصادفي متغیر Z لپاره احتمالي بیان داسې جوړېدای شي P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha.\n\nپه دې حالت کې د (\\mu_1-\\mu_2) لپاره 100(1−α)% د باور واټن دا دی\n\n$(\\overline{X}_1-\\overline{X}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$",
+   "theoryUrdu": "6.3.5 اعتماد کے وقفے کی تشریح\n\nیہ کہنے کا کیا مطلب ہے کہ ہمیں 98% یقین ہے کہ آبادی کے اوسط μ کی حقیقی قیمت دیے گئے وقفے کے اندر ہے؟ اس کا مطلب ہے کہ اگر ہم مختلف نمونوں کے لیے ایسے 100 وقفے بنائیں تو 100 میں سے تقریباً 98 میں پیرامیٹر شامل ہوگا اور 100 میں سے صرف 2 میں پیرامیٹر کی حقیقی قیمت شامل نہیں ہوگی۔ اسے شکل میں دکھائے گئے خاکے کی طرح ظاہر کیا جا سکتا ہے۔ سیریل نمبر 3 اور 97 والے دو وقفوں میں پیرامیٹر μ شامل نہیں جبکہ باقی 98 وقفوں میں پیرامیٹر شامل ہے۔ یاد رکھیں کہ ہم مکمل طور پر یقین نہیں کر سکتے کہ کسی ایک خاص وقفے میں اوسط μ شامل ہے۔\n\n6.3.6 جب σ₁ اور σ₂ معلوم ہوں تو دو آبادیوں کے اوسطوں کے فرق کا اعتماد کا وقفہ\n\nاس صورت میں \\overline{X}_1-\\overline{X}_2، (\\mu_1-\\mu_2) کا نقطہ تخمین کار ہے جسے معیاری شکل میں یوں لکھا جا سکتا ہے؛\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}.$\n\nتصادفی متغیر Z کے لیے احتمالی بیان یوں بنایا جا سکتا ہے P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha۔\n\nاس صورت میں (\\mu_1-\\mu_2) کے لیے 100(1−α)% اعتماد کا وقفہ یہ ہے\n\n$(\\overline{X}_1-\\overline{X}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$",
+   "theoryPashto": "6.3.5 د باور د واټن تفسیر\n\nدا ویلو مانا څه ده چې موږ 98% ډاډه یو چې د نفوس د منځني μ رښتینی قیمت په ورکړل شوي واټن کې دی؟ مانا یې دا ده چې که د بېلابېلو نمونو لپاره داسې 100 واټنونه جوړ کړو، له 100 څخه نږدې 98 به پارامټر ولري او له 100 څخه یوازې 2 به د پارامټر رښتینی قیمت ونه لري. دا په شکل کې ښودل شوي ډیاګرام په څېر ښودل کېدای شي. د 3 او 97 سریال شمېرو دوه واټنونه μ پارامټر نه لري په داسې حال کې چې پاتې 98 واټنونه پارامټر لري. په یاد ولرئ چې موږ بشپړ ډاډه نه شو کېدای چې کوم یو ځانګړی واټن منځنی μ لري.\n\n6.3.6 کله چې σ₁ او σ₂ معلوم وي د دوو نفوسونو د منځنیو د توپیر د باور واټن اټکل\n\nپه دې حالت کې \\overline{X}_1-\\overline{X}_2 د (\\mu_1-\\mu_2) ټکي‌ییز اټکلوونکی دی چې په معیاري بڼه داسې لیکل کېدای شي؛\n\n$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}.$\n\nد تصادفي متغیر Z لپاره احتمالي بیان داسې جوړېدای شي P[-Z_{\\alpha/2}<Z<Z_{\\alpha/2}]=1-\\alpha.\n\nپه دې حالت کې د (\\mu_1-\\mu_2) لپاره 100(1−α)% د باور واټن دا دی\n\n$(\\overline{X}_1-\\overline{X}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$",
+   "content": "<p>6.3.5 Interpreting the confidence interval</p><p>What does it mean to say we are 98% confidant that the true value of the population mean μ is within a given interval? It means that if we construct 100 such intervals for different samples, almost 98 out of 100 will contain the parameter and only 2 out of 100 will not contain the true value of the parameter. It can diagrammatically be shown as given in the Figure. Two of the intervals at serial number 3 and 97 do not contain the parameter μ while remaining 98 intervals contain the parameter. Remember that we cannot be absolutely sure that any one particular interval contains the mean μ.</p><p>6.3.6 Confidence interval estimate for the difference between two populations means when σ₁ and σ₂ are known</p><p>In this case \\overline{X}_1-\\overline{X}_2 is the point estimator of (\\mu_1-\\mu_2) which in standard form can be written as;</p><p>$Z=\\frac{(\\overline{X}_1-\\overline{X}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}.$</p><p>Probability statement for the random variable Z can be made as P[-Z_{\\alpha/2}&lt;Z&lt;Z_{\\alpha/2}]=1-\\alpha.</p><p>The 100(1−α)% confidence interval for (\\mu_1-\\mu_2) in this case is given by</p><p>$(\\overline{X}_1-\\overline{X}_2)\\pm Z_{\\alpha/2}\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}$</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "stat12-ci-ladder"
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "visualParagraph",
+     "blockId": "stat12-ci-diff-z",
+     "indices": [
+      5
+     ],
+     "visualFirst": false
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-ci-ladder",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 270\" role=\"img\" aria-label=\"100 confidence intervals stacked around μ; intervals 3 and 97 miss μ\"><rect width=\"300\" height=\"270\" fill=\"white\"/><g stroke=\"#111\" fill=\"none\"><path d=\"M60 236V14M60 236H285\"/><path d=\"M285 236l-8-4v8z\" fill=\"#111\"/><path d=\"M150 228H205\" stroke-width=\"1.6\"/><path d=\"M158 220H196\" stroke-width=\"1.6\"/><path d=\"M112 212H160\" stroke-width=\"1.6\"/><path d=\"M150 204H192\" stroke-width=\"1.6\"/><path d=\"M152 62H192\" stroke-width=\"1.6\"/><path d=\"M182 54H230\" stroke-width=\"1.6\"/><path d=\"M150 46H198\" stroke-width=\"1.6\"/><path d=\"M156 38H206\" stroke-width=\"1.6\"/><path d=\"M148 30H190\" stroke-width=\"1.6\"/><path d=\"M172 66.0H178\"/><path d=\"M172 74.4H178\"/><path d=\"M172 82.8H178\"/><path d=\"M172 91.2H178\"/><path d=\"M172 99.6H178\"/><path d=\"M172 108.0H178\"/><path d=\"M172 116.4H178\"/><path d=\"M172 124.8H178\"/><path d=\"M172 133.2H178\"/><path d=\"M172 141.6H178\"/><path d=\"M172 150.0H178\"/><path d=\"M172 158.4H178\"/><path d=\"M172 166.8H178\"/><path d=\"M172 175.2H178\"/><path d=\"M172 183.6H178\"/><path d=\"M172 192.0H178\"/><path d=\"M172 200.4H178\"/><path d=\"M172 208.8H178\"/><path d=\"M175 236V18\"/></g><g font-family=\"Times New Roman,serif\" font-size=\"12\" fill=\"#111\" text-anchor=\"end\"><text x=\"56\" y=\"198\">20</text><path d=\"M58 194H62\" stroke=\"#111\"/><text x=\"56\" y=\"156\">40</text><path d=\"M58 152H62\" stroke=\"#111\"/><text x=\"56\" y=\"114\">60</text><path d=\"M58 110H62\" stroke=\"#111\"/><text x=\"56\" y=\"72\">80</text><path d=\"M58 68H62\" stroke=\"#111\"/><text x=\"56\" y=\"30\">100</text><path d=\"M58 26H62\" stroke=\"#111\"/><text x=\"217\" y=\"232\" font-size=\"10\" text-anchor=\"middle\">1</text><text x=\"148\" y=\"224\" font-size=\"10\" text-anchor=\"middle\">2</text><text x=\"102\" y=\"216\" font-size=\"10\" text-anchor=\"middle\">3</text><text x=\"140\" y=\"208\" font-size=\"10\" text-anchor=\"middle\">4</text><text x=\"142\" y=\"66\" font-size=\"10\" text-anchor=\"middle\">96</text><text x=\"242\" y=\"58\" font-size=\"10\" text-anchor=\"middle\">97</text><text x=\"140\" y=\"50\" font-size=\"10\" text-anchor=\"middle\">98</text><text x=\"218\" y=\"42\" font-size=\"10\" text-anchor=\"middle\">99</text><text x=\"138\" y=\"34\" font-size=\"10\" text-anchor=\"middle\">100</text><text x=\"175\" y=\"254\" text-anchor=\"middle\" font-style=\"italic\" font-size=\"14\">μ</text><text x=\"18\" y=\"125\" font-size=\"12\" text-anchor=\"middle\" transform=\"rotate(-90 18 125)\">Interval Number</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 270\" role=\"img\" aria-label=\"100 confidence intervals stacked around μ; intervals 3 and 97 miss μ\"><rect width=\"300\" height=\"270\" fill=\"white\"/><g stroke=\"#111\" fill=\"none\"><path d=\"M60 236V14M60 236H285\"/><path d=\"M285 236l-8-4v8z\" fill=\"#111\"/><path d=\"M150 228H205\" stroke-width=\"1.6\"/><path d=\"M158 220H196\" stroke-width=\"1.6\"/><path d=\"M112 212H160\" stroke-width=\"1.6\"/><path d=\"M150 204H192\" stroke-width=\"1.6\"/><path d=\"M152 62H192\" stroke-width=\"1.6\"/><path d=\"M182 54H230\" stroke-width=\"1.6\"/><path d=\"M150 46H198\" stroke-width=\"1.6\"/><path d=\"M156 38H206\" stroke-width=\"1.6\"/><path d=\"M148 30H190\" stroke-width=\"1.6\"/><path d=\"M172 66.0H178\"/><path d=\"M172 74.4H178\"/><path d=\"M172 82.8H178\"/><path d=\"M172 91.2H178\"/><path d=\"M172 99.6H178\"/><path d=\"M172 108.0H178\"/><path d=\"M172 116.4H178\"/><path d=\"M172 124.8H178\"/><path d=\"M172 133.2H178\"/><path d=\"M172 141.6H178\"/><path d=\"M172 150.0H178\"/><path d=\"M172 158.4H178\"/><path d=\"M172 166.8H178\"/><path d=\"M172 175.2H178\"/><path d=\"M172 183.6H178\"/><path d=\"M172 192.0H178\"/><path d=\"M172 200.4H178\"/><path d=\"M172 208.8H178\"/><path d=\"M175 236V18\"/></g><g font-family=\"Times New Roman,serif\" font-size=\"12\" fill=\"#111\" text-anchor=\"end\"><text x=\"56\" y=\"198\">20</text><path d=\"M58 194H62\" stroke=\"#111\"/><text x=\"56\" y=\"156\">40</text><path d=\"M58 152H62\" stroke=\"#111\"/><text x=\"56\" y=\"114\">60</text><path d=\"M58 110H62\" stroke=\"#111\"/><text x=\"56\" y=\"72\">80</text><path d=\"M58 68H62\" stroke=\"#111\"/><text x=\"56\" y=\"30\">100</text><path d=\"M58 26H62\" stroke=\"#111\"/><text x=\"217\" y=\"232\" font-size=\"10\" text-anchor=\"middle\">1</text><text x=\"148\" y=\"224\" font-size=\"10\" text-anchor=\"middle\">2</text><text x=\"102\" y=\"216\" font-size=\"10\" text-anchor=\"middle\">3</text><text x=\"140\" y=\"208\" font-size=\"10\" text-anchor=\"middle\">4</text><text x=\"142\" y=\"66\" font-size=\"10\" text-anchor=\"middle\">96</text><text x=\"242\" y=\"58\" font-size=\"10\" text-anchor=\"middle\">97</text><text x=\"140\" y=\"50\" font-size=\"10\" text-anchor=\"middle\">98</text><text x=\"218\" y=\"42\" font-size=\"10\" text-anchor=\"middle\">99</text><text x=\"138\" y=\"34\" font-size=\"10\" text-anchor=\"middle\">100</text><text x=\"175\" y=\"254\" text-anchor=\"middle\" font-style=\"italic\" font-size=\"14\">μ</text><text x=\"18\" y=\"125\" font-size=\"12\" text-anchor=\"middle\" transform=\"rotate(-90 18 125)\">وقفے کا نمبر</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 270\" role=\"img\" aria-label=\"100 confidence intervals stacked around μ; intervals 3 and 97 miss μ\"><rect width=\"300\" height=\"270\" fill=\"white\"/><g stroke=\"#111\" fill=\"none\"><path d=\"M60 236V14M60 236H285\"/><path d=\"M285 236l-8-4v8z\" fill=\"#111\"/><path d=\"M150 228H205\" stroke-width=\"1.6\"/><path d=\"M158 220H196\" stroke-width=\"1.6\"/><path d=\"M112 212H160\" stroke-width=\"1.6\"/><path d=\"M150 204H192\" stroke-width=\"1.6\"/><path d=\"M152 62H192\" stroke-width=\"1.6\"/><path d=\"M182 54H230\" stroke-width=\"1.6\"/><path d=\"M150 46H198\" stroke-width=\"1.6\"/><path d=\"M156 38H206\" stroke-width=\"1.6\"/><path d=\"M148 30H190\" stroke-width=\"1.6\"/><path d=\"M172 66.0H178\"/><path d=\"M172 74.4H178\"/><path d=\"M172 82.8H178\"/><path d=\"M172 91.2H178\"/><path d=\"M172 99.6H178\"/><path d=\"M172 108.0H178\"/><path d=\"M172 116.4H178\"/><path d=\"M172 124.8H178\"/><path d=\"M172 133.2H178\"/><path d=\"M172 141.6H178\"/><path d=\"M172 150.0H178\"/><path d=\"M172 158.4H178\"/><path d=\"M172 166.8H178\"/><path d=\"M172 175.2H178\"/><path d=\"M172 183.6H178\"/><path d=\"M172 192.0H178\"/><path d=\"M172 200.4H178\"/><path d=\"M172 208.8H178\"/><path d=\"M175 236V18\"/></g><g font-family=\"Times New Roman,serif\" font-size=\"12\" fill=\"#111\" text-anchor=\"end\"><text x=\"56\" y=\"198\">20</text><path d=\"M58 194H62\" stroke=\"#111\"/><text x=\"56\" y=\"156\">40</text><path d=\"M58 152H62\" stroke=\"#111\"/><text x=\"56\" y=\"114\">60</text><path d=\"M58 110H62\" stroke=\"#111\"/><text x=\"56\" y=\"72\">80</text><path d=\"M58 68H62\" stroke=\"#111\"/><text x=\"56\" y=\"30\">100</text><path d=\"M58 26H62\" stroke=\"#111\"/><text x=\"217\" y=\"232\" font-size=\"10\" text-anchor=\"middle\">1</text><text x=\"148\" y=\"224\" font-size=\"10\" text-anchor=\"middle\">2</text><text x=\"102\" y=\"216\" font-size=\"10\" text-anchor=\"middle\">3</text><text x=\"140\" y=\"208\" font-size=\"10\" text-anchor=\"middle\">4</text><text x=\"142\" y=\"66\" font-size=\"10\" text-anchor=\"middle\">96</text><text x=\"242\" y=\"58\" font-size=\"10\" text-anchor=\"middle\">97</text><text x=\"140\" y=\"50\" font-size=\"10\" text-anchor=\"middle\">98</text><text x=\"218\" y=\"42\" font-size=\"10\" text-anchor=\"middle\">99</text><text x=\"138\" y=\"34\" font-size=\"10\" text-anchor=\"middle\">100</text><text x=\"175\" y=\"254\" text-anchor=\"middle\" font-style=\"italic\" font-size=\"14\">μ</text><text x=\"18\" y=\"125\" font-size=\"12\" text-anchor=\"middle\" transform=\"rotate(-90 18 125)\">د واټن شمېره</text></g></svg>",
+     "sourceWidthRatio": 0.45
+    },
+    {
+     "id": "stat12-ci-diff-z",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" role=\"img\" aria-label=\"Standard normal with critical values ±Z(α/2)\"><rect width=\"320\" height=\"130\" fill=\"white\"/><rect width=\"320\" height=\"130\" fill=\"#dbeafe\"/><path d=\"M4.3 98L4.3 97.9L6.1 97.9L7.9 97.8L9.6 97.8L11.4 97.8L13.2 97.7L15.0 97.7L16.7 97.7L18.5 97.6L20.3 97.5L22.1 97.5L23.8 97.4L25.6 97.3L27.4 97.2L29.1 97.1L30.9 97.0L32.7 96.9L34.5 96.8L36.2 96.6L38.0 96.4L39.8 96.2L41.6 96.0L43.3 95.8L45.1 95.5L46.9 95.3L48.6 94.9L50.4 94.6L52.2 94.2L54.0 93.8L55.7 93.4L57.5 92.9L59.3 92.4L61.1 91.9L62.8 91.3L64.6 90.6L66.4 89.9L68.2 89.2L69.9 88.4L71.7 87.6L73.5 86.7L75.2 85.7L75.2 98Z\" fill=\"#fff\"/><path d=\"M244.8 98L244.8 85.7L246.5 86.7L248.3 87.6L250.1 88.4L251.8 89.2L253.6 89.9L255.4 90.6L257.2 91.3L258.9 91.9L260.7 92.4L262.5 92.9L264.3 93.4L266.0 93.8L267.8 94.2L269.6 94.6L271.4 94.9L273.1 95.3L274.9 95.5L276.7 95.8L278.4 96.0L280.2 96.2L282.0 96.4L283.8 96.6L285.5 96.8L287.3 96.9L289.1 97.0L290.9 97.1L292.6 97.2L294.4 97.3L296.2 97.4L297.9 97.5L299.7 97.5L301.5 97.6L303.3 97.7L305.0 97.7L306.8 97.7L308.6 97.8L310.4 97.8L312.1 97.8L313.9 97.9L315.7 97.9L315.7 98Z\" fill=\"#fff\"/><path d=\"M4.3 97.9L6.9 97.8L9.5 97.8L12.1 97.8L14.7 97.7L17.3 97.6L19.9 97.6L22.5 97.5L25.1 97.4L27.7 97.2L30.3 97.1L32.9 96.9L35.5 96.7L38.1 96.4L40.6 96.1L43.2 95.8L45.8 95.4L48.4 95.0L51.0 94.5L53.6 93.9L56.2 93.3L58.8 92.6L61.4 91.8L64.0 90.9L66.6 89.9L69.2 88.7L71.8 87.5L74.4 86.2L77.0 84.7L79.6 83.1L82.2 81.4L84.8 79.5L87.4 77.5L89.9 75.4L92.5 73.1L95.1 70.7L97.7 68.2L100.3 65.6L102.9 62.9L105.5 60.0L108.1 57.1L110.7 54.1L113.3 51.1L115.9 48.1L118.5 45.0L121.1 42.0L123.7 39.0L126.3 36.0L128.9 33.2L131.5 30.4L134.1 27.8L136.6 25.4L139.2 23.1L141.8 21.1L144.4 19.3L147.0 17.7L149.6 16.4L152.2 15.3L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.3L170.4 16.4L173.0 17.7L175.6 19.3L178.2 21.1L180.8 23.1L183.4 25.4L185.9 27.8L188.5 30.4L191.1 33.2L193.7 36.0L196.3 39.0L198.9 42.0L201.5 45.0L204.1 48.1L206.7 51.1L209.3 54.1L211.9 57.1L214.5 60.0L217.1 62.9L219.7 65.6L222.3 68.2L224.9 70.7L227.5 73.1L230.1 75.4L232.6 77.5L235.2 79.5L237.8 81.4L240.4 83.1L243.0 84.7L245.6 86.2L248.2 87.5L250.8 88.7L253.4 89.9L256.0 90.9L258.6 91.8L261.2 92.6L263.8 93.3L266.4 93.9L269.0 94.5L271.6 95.0L274.2 95.4L276.8 95.8L279.4 96.1L281.9 96.4L284.5 96.7L287.1 96.9L289.7 97.1L292.3 97.2L294.9 97.4L297.5 97.5L300.1 97.6L302.7 97.6L305.3 97.7L307.9 97.8L310.5 97.8L313.1 97.8L315.7 97.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 98H314M75.2 98V85.7M244.8 98V85.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"47.6\" y=\"64\">α/2</text><text x=\"160.0\" y=\"50\">1−α</text><text x=\"272.4\" y=\"64\">α/2</text><text x=\"18\" y=\"94\">−∞</text><text x=\"306\" y=\"94\">∞</text><text x=\"75.2\" y=\"116\">−Zα/2</text><text x=\"244.8\" y=\"116\">Zα/2</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" role=\"img\" aria-label=\"Standard normal with critical values ±Z(α/2)\"><rect width=\"320\" height=\"130\" fill=\"white\"/><rect width=\"320\" height=\"130\" fill=\"#dbeafe\"/><path d=\"M4.3 98L4.3 97.9L6.1 97.9L7.9 97.8L9.6 97.8L11.4 97.8L13.2 97.7L15.0 97.7L16.7 97.7L18.5 97.6L20.3 97.5L22.1 97.5L23.8 97.4L25.6 97.3L27.4 97.2L29.1 97.1L30.9 97.0L32.7 96.9L34.5 96.8L36.2 96.6L38.0 96.4L39.8 96.2L41.6 96.0L43.3 95.8L45.1 95.5L46.9 95.3L48.6 94.9L50.4 94.6L52.2 94.2L54.0 93.8L55.7 93.4L57.5 92.9L59.3 92.4L61.1 91.9L62.8 91.3L64.6 90.6L66.4 89.9L68.2 89.2L69.9 88.4L71.7 87.6L73.5 86.7L75.2 85.7L75.2 98Z\" fill=\"#fff\"/><path d=\"M244.8 98L244.8 85.7L246.5 86.7L248.3 87.6L250.1 88.4L251.8 89.2L253.6 89.9L255.4 90.6L257.2 91.3L258.9 91.9L260.7 92.4L262.5 92.9L264.3 93.4L266.0 93.8L267.8 94.2L269.6 94.6L271.4 94.9L273.1 95.3L274.9 95.5L276.7 95.8L278.4 96.0L280.2 96.2L282.0 96.4L283.8 96.6L285.5 96.8L287.3 96.9L289.1 97.0L290.9 97.1L292.6 97.2L294.4 97.3L296.2 97.4L297.9 97.5L299.7 97.5L301.5 97.6L303.3 97.7L305.0 97.7L306.8 97.7L308.6 97.8L310.4 97.8L312.1 97.8L313.9 97.9L315.7 97.9L315.7 98Z\" fill=\"#fff\"/><path d=\"M4.3 97.9L6.9 97.8L9.5 97.8L12.1 97.8L14.7 97.7L17.3 97.6L19.9 97.6L22.5 97.5L25.1 97.4L27.7 97.2L30.3 97.1L32.9 96.9L35.5 96.7L38.1 96.4L40.6 96.1L43.2 95.8L45.8 95.4L48.4 95.0L51.0 94.5L53.6 93.9L56.2 93.3L58.8 92.6L61.4 91.8L64.0 90.9L66.6 89.9L69.2 88.7L71.8 87.5L74.4 86.2L77.0 84.7L79.6 83.1L82.2 81.4L84.8 79.5L87.4 77.5L89.9 75.4L92.5 73.1L95.1 70.7L97.7 68.2L100.3 65.6L102.9 62.9L105.5 60.0L108.1 57.1L110.7 54.1L113.3 51.1L115.9 48.1L118.5 45.0L121.1 42.0L123.7 39.0L126.3 36.0L128.9 33.2L131.5 30.4L134.1 27.8L136.6 25.4L139.2 23.1L141.8 21.1L144.4 19.3L147.0 17.7L149.6 16.4L152.2 15.3L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.3L170.4 16.4L173.0 17.7L175.6 19.3L178.2 21.1L180.8 23.1L183.4 25.4L185.9 27.8L188.5 30.4L191.1 33.2L193.7 36.0L196.3 39.0L198.9 42.0L201.5 45.0L204.1 48.1L206.7 51.1L209.3 54.1L211.9 57.1L214.5 60.0L217.1 62.9L219.7 65.6L222.3 68.2L224.9 70.7L227.5 73.1L230.1 75.4L232.6 77.5L235.2 79.5L237.8 81.4L240.4 83.1L243.0 84.7L245.6 86.2L248.2 87.5L250.8 88.7L253.4 89.9L256.0 90.9L258.6 91.8L261.2 92.6L263.8 93.3L266.4 93.9L269.0 94.5L271.6 95.0L274.2 95.4L276.8 95.8L279.4 96.1L281.9 96.4L284.5 96.7L287.1 96.9L289.7 97.1L292.3 97.2L294.9 97.4L297.5 97.5L300.1 97.6L302.7 97.6L305.3 97.7L307.9 97.8L310.5 97.8L313.1 97.8L315.7 97.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 98H314M75.2 98V85.7M244.8 98V85.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"47.6\" y=\"64\">α/2</text><text x=\"160.0\" y=\"50\">1−α</text><text x=\"272.4\" y=\"64\">α/2</text><text x=\"18\" y=\"94\">−∞</text><text x=\"306\" y=\"94\">∞</text><text x=\"75.2\" y=\"116\">−Zα/2</text><text x=\"244.8\" y=\"116\">Zα/2</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" role=\"img\" aria-label=\"Standard normal with critical values ±Z(α/2)\"><rect width=\"320\" height=\"130\" fill=\"white\"/><rect width=\"320\" height=\"130\" fill=\"#dbeafe\"/><path d=\"M4.3 98L4.3 97.9L6.1 97.9L7.9 97.8L9.6 97.8L11.4 97.8L13.2 97.7L15.0 97.7L16.7 97.7L18.5 97.6L20.3 97.5L22.1 97.5L23.8 97.4L25.6 97.3L27.4 97.2L29.1 97.1L30.9 97.0L32.7 96.9L34.5 96.8L36.2 96.6L38.0 96.4L39.8 96.2L41.6 96.0L43.3 95.8L45.1 95.5L46.9 95.3L48.6 94.9L50.4 94.6L52.2 94.2L54.0 93.8L55.7 93.4L57.5 92.9L59.3 92.4L61.1 91.9L62.8 91.3L64.6 90.6L66.4 89.9L68.2 89.2L69.9 88.4L71.7 87.6L73.5 86.7L75.2 85.7L75.2 98Z\" fill=\"#fff\"/><path d=\"M244.8 98L244.8 85.7L246.5 86.7L248.3 87.6L250.1 88.4L251.8 89.2L253.6 89.9L255.4 90.6L257.2 91.3L258.9 91.9L260.7 92.4L262.5 92.9L264.3 93.4L266.0 93.8L267.8 94.2L269.6 94.6L271.4 94.9L273.1 95.3L274.9 95.5L276.7 95.8L278.4 96.0L280.2 96.2L282.0 96.4L283.8 96.6L285.5 96.8L287.3 96.9L289.1 97.0L290.9 97.1L292.6 97.2L294.4 97.3L296.2 97.4L297.9 97.5L299.7 97.5L301.5 97.6L303.3 97.7L305.0 97.7L306.8 97.7L308.6 97.8L310.4 97.8L312.1 97.8L313.9 97.9L315.7 97.9L315.7 98Z\" fill=\"#fff\"/><path d=\"M4.3 97.9L6.9 97.8L9.5 97.8L12.1 97.8L14.7 97.7L17.3 97.6L19.9 97.6L22.5 97.5L25.1 97.4L27.7 97.2L30.3 97.1L32.9 96.9L35.5 96.7L38.1 96.4L40.6 96.1L43.2 95.8L45.8 95.4L48.4 95.0L51.0 94.5L53.6 93.9L56.2 93.3L58.8 92.6L61.4 91.8L64.0 90.9L66.6 89.9L69.2 88.7L71.8 87.5L74.4 86.2L77.0 84.7L79.6 83.1L82.2 81.4L84.8 79.5L87.4 77.5L89.9 75.4L92.5 73.1L95.1 70.7L97.7 68.2L100.3 65.6L102.9 62.9L105.5 60.0L108.1 57.1L110.7 54.1L113.3 51.1L115.9 48.1L118.5 45.0L121.1 42.0L123.7 39.0L126.3 36.0L128.9 33.2L131.5 30.4L134.1 27.8L136.6 25.4L139.2 23.1L141.8 21.1L144.4 19.3L147.0 17.7L149.6 16.4L152.2 15.3L154.8 14.6L157.4 14.2L160.0 14.0L162.6 14.2L165.2 14.6L167.8 15.3L170.4 16.4L173.0 17.7L175.6 19.3L178.2 21.1L180.8 23.1L183.4 25.4L185.9 27.8L188.5 30.4L191.1 33.2L193.7 36.0L196.3 39.0L198.9 42.0L201.5 45.0L204.1 48.1L206.7 51.1L209.3 54.1L211.9 57.1L214.5 60.0L217.1 62.9L219.7 65.6L222.3 68.2L224.9 70.7L227.5 73.1L230.1 75.4L232.6 77.5L235.2 79.5L237.8 81.4L240.4 83.1L243.0 84.7L245.6 86.2L248.2 87.5L250.8 88.7L253.4 89.9L256.0 90.9L258.6 91.8L261.2 92.6L263.8 93.3L266.4 93.9L269.0 94.5L271.6 95.0L274.2 95.4L276.8 95.8L279.4 96.1L281.9 96.4L284.5 96.7L287.1 96.9L289.7 97.1L292.3 97.2L294.9 97.4L297.5 97.5L300.1 97.6L302.7 97.6L305.3 97.7L307.9 97.8L310.5 97.8L313.1 97.8L315.7 97.9\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.8\"/><path d=\"M6 98H314M75.2 98V85.7M244.8 98V85.7\" stroke=\"#111\"/><g font-family=\"Times New Roman,serif\" font-size=\"14\" fill=\"#111\" text-anchor=\"middle\"><text x=\"47.6\" y=\"64\">α/2</text><text x=\"160.0\" y=\"50\">1−α</text><text x=\"272.4\" y=\"64\">α/2</text><text x=\"18\" y=\"94\">−∞</text><text x=\"306\" y=\"94\">∞</text><text x=\"75.2\" y=\"116\">−Zα/2</text><text x=\"244.8\" y=\"116\">Zα/2</text></g></svg>",
+     "sourceWidthRatio": 0.45
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 112,
+     "printedPages": [
+      216
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p215-ex612-values",
+   "unit": 6,
+   "printedPage": 215,
+   "description": "Example 6.12 question lists 0.097 where the solution uses 0.97; the CI line uses 0.0245 where s = 0.02245 was computed; “form t-table” and “confidant” are printed slips. Printed text retained."
+  }
+ ],
+ "completeUnits": []
+}

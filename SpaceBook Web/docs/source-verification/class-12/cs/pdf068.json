@@ -1,0 +1,274 @@
+{
+ "pdfPage": 68,
+ "sections": [
+  {
+   "id": "cs12-u4-text-8",
+   "title": "Unit 4 text (8)",
+   "headingUrdu": "یونٹ 4 — متن (۸)",
+   "headingPashto": "۴ څپرکی — متن (۸)",
+   "paras": [
+    {
+     "text": "4.2.1 Types of loops",
+     "urdu": "4.2.1 لوپس کی اقسام",
+     "pashto": "۴.۲.۱ د حلقو ډولونه"
+    },
+    {
+     "text": "There are three types of loops.",
+     "urdu": "لوپس کی تین اقسام ہیں۔",
+     "pashto": "د حلقو درې ډولونه دي."
+    },
+    {
+     "text": "for",
+     "urdu": "for",
+     "pashto": "for"
+    },
+    {
+     "text": "while",
+     "urdu": "while",
+     "pashto": "while"
+    },
+    {
+     "text": "do-while",
+     "urdu": "do-while",
+     "pashto": "do-while"
+    },
+    {
+     "text": "a. for loop",
+     "urdu": "a. for لوپ",
+     "pashto": "a. for حلقه"
+    },
+    {
+     "text": "The most commonly used looping structure in C++ is for loop. for loop is ideal in situation when we know in advance the exact number of iteration. Its general syntax is:",
+     "urdu": "C++ میں سب سے زیادہ استعمال ہونے والی لوپنگ ساخت for لوپ ہے۔ for لوپ اس صورت میں مثالی ہے جب ہمیں تکرار کی درست تعداد پہلے سے معلوم ہو۔ اس کا عمومی طریقۂ تحریر یہ ہے:",
+     "pashto": "په C++ کې تر ټولو ډېر کارېدونکی حلقوي جوړښت for حلقه ده. for حلقه هغه وخت غوره ده چې موږ د تکرار دقیق شمېر مخکې له مخکې پېژنو. عمومي بڼه یې دا ده:"
+    },
+    {
+     "text": "Single statement for-loop",
+     "urdu": "ایک بیان والا for لوپ",
+     "pashto": "یو-بیانیزه for حلقه"
+    },
+    {
+     "text": "for (initialization; condition; increment/decrement)\nstatement;",
+     "urdu": "for (initialization; condition; increment/decrement)\nstatement;",
+     "pashto": "for (initialization; condition; increment/decrement)\nstatement;",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Multiple statements for-loop",
+     "urdu": "متعدد بیانات والا for لوپ",
+     "pashto": "څو-بیانیزه for حلقه"
+    },
+    {
+     "text": "for (initialization; condition; increment/decrement)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}",
+     "urdu": "for (initialization; condition; increment/decrement)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}",
+     "pashto": "for (initialization; condition; increment/decrement)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "In the above two general forms of for loop, the first one has only one statement in its body and has no need for braces { } while in the second form multiple statements are used so they are enclosed in the pair of braces { }.",
+     "urdu": "for لوپ کی اوپر کی دو عمومی شکلوں میں پہلی کے جسم میں صرف ایک بیان ہے اور اسے بریسز { } کی ضرورت نہیں، جبکہ دوسری شکل میں متعدد بیانات استعمال ہوتے ہیں اس لیے انھیں بریسز { } کے جوڑے میں بند کیا جاتا ہے۔",
+     "pashto": "د for حلقې په پورته دوو عمومي بڼو کې لومړۍ په بدنه کې یوازې یو بیان لري او لوړو قوسونو { } ته اړتیا نه لري، په داسې حال کې چې په دویمه بڼه کې ډېر بیانونه کارېږي نو د لوړو قوسونو { } په جوړه کې تړل کېږي."
+    },
+    {
+     "text": "The main function of for loop is to repeat statement(s) while condition remains true. It works in the following way shown in Flowchart 4.4.",
+     "urdu": "for لوپ کا بنیادی کام شرط درست رہنے تک بیان (بیانات) دہرانا ہے۔ یہ فلو چارٹ 4.4 میں دکھائے گئے طریقے سے کام کرتا ہے۔",
+     "pashto": "د for حلقې اصلي دنده د بیان (بیانونو) تکرار دی تر هغه چې شرط true پاتې وي. دا په ۴.۴ فلوچارټ کې ښودل شوي ډول کار کوي."
+    },
+    {
+     "text": "1. Initialization: Generally it is an initial value setting for a counter variable. This is executed only once.",
+     "urdu": "1۔ ابتدائی قدر: عموماً یہ کاؤنٹر ویری ایبل کی ابتدائی قدر مقرر کرنا ہے۔ یہ صرف ایک بار چلتا ہے۔",
+     "pashto": "۱. لومړنی ارزښت: عموماً دا د شمېرونکي متغیر لومړنی ارزښت ټاکل دي. دا یوازې یو ځل اجرا کېږي."
+    },
+    {
+     "text": "2. Condition: If it is true the loop continues, otherwise the loop ends and statement is skipped (not executed).",
+     "urdu": "2۔ شرط: اگر یہ درست ہو تو لوپ جاری رہتا ہے، ورنہ لوپ ختم ہو جاتا ہے اور بیان چھوڑ دیا جاتا ہے (نہیں چلتا)۔",
+     "pashto": "۲. شرط: که true وي حلقه دوام کوي، که نه حلقه پای ته رسېږي او بیان پرېښودل کېږي (نه اجرا کېږي)."
+    },
+    {
+     "text": "3. Loop Body: It can either be a single statement or a block enclosed in braces { }, for multiple statements.",
+     "urdu": "3۔ لوپ کا جسم: یہ ایک بیان یا متعدد بیانات کے لیے بریسز { } میں بند بلاک ہو سکتا ہے۔",
+     "pashto": "۳. د حلقې بدنه: کېدای شي یو بیان یا د ډېرو بیانونو لپاره په لوړو قوسونو { } کې تړلی بلاک وي."
+    },
+    {
+     "text": "4. Finally, the loop counter is incremented/decremented and control goes back to step2.",
+     "urdu": "4۔ آخر میں لوپ کاؤنٹر میں اضافہ/کمی ہوتی ہے اور کنٹرول مرحلہ 2 پر واپس جاتا ہے۔",
+     "pashto": "۴. په پای کې د حلقې شمېرونکی زیاتېږي/کمېږي او کنټرول دویم ګام ته ستنېږي."
+    },
+    {
+     "text": "Consider the following program to display the string PAKISTAN five times on the screen.",
+     "urdu": "اسکرین پر اسٹرنگ PAKISTAN پانچ بار دکھانے کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "پر پرده د PAKISTAN تار پنځه ځله ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int i=1; i<6; i++)\ncout << \"PAKISTAN\"<<endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int i=1; i<6; i++)\ncout << \"PAKISTAN\"<<endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int i=1; i<6; i++)\ncout << \"PAKISTAN\"<<endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "PAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+     "urdu": "PAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+     "pashto": "PAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "4.2.1 Types of loops\n\nThere are three types of loops.\n\nfor\n\nwhile\n\ndo-while\n\na. for loop\n\nThe most commonly used looping structure in C++ is for loop. for loop is ideal in situation when we know in advance the exact number of iteration. Its general syntax is:\n\nSingle statement for-loop\n\nfor (initialization; condition; increment/decrement)\nstatement;\n\nMultiple statements for-loop\n\nfor (initialization; condition; increment/decrement)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nIn the above two general forms of for loop, the first one has only one statement in its body and has no need for braces { } while in the second form multiple statements are used so they are enclosed in the pair of braces { }.\n\nThe main function of for loop is to repeat statement(s) while condition remains true. It works in the following way shown in Flowchart 4.4.\n\n1. Initialization: Generally it is an initial value setting for a counter variable. This is executed only once.\n\n2. Condition: If it is true the loop continues, otherwise the loop ends and statement is skipped (not executed).\n\n3. Loop Body: It can either be a single statement or a block enclosed in braces { }, for multiple statements.\n\n4. Finally, the loop counter is incremented/decremented and control goes back to step2.\n\nConsider the following program to display the string PAKISTAN five times on the screen.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int i=1; i<6; i++)\ncout << \"PAKISTAN\"<<endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+   "urdu": "4.2.1 لوپس کی اقسام\n\nلوپس کی تین اقسام ہیں۔\n\nfor\n\nwhile\n\ndo-while\n\na. for لوپ\n\nC++ میں سب سے زیادہ استعمال ہونے والی لوپنگ ساخت for لوپ ہے۔ for لوپ اس صورت میں مثالی ہے جب ہمیں تکرار کی درست تعداد پہلے سے معلوم ہو۔ اس کا عمومی طریقۂ تحریر یہ ہے:\n\nایک بیان والا for لوپ\n\nfor (initialization; condition; increment/decrement)\nstatement;\n\nمتعدد بیانات والا for لوپ\n\nfor (initialization; condition; increment/decrement)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nfor لوپ کی اوپر کی دو عمومی شکلوں میں پہلی کے جسم میں صرف ایک بیان ہے اور اسے بریسز { } کی ضرورت نہیں، جبکہ دوسری شکل میں متعدد بیانات استعمال ہوتے ہیں اس لیے انھیں بریسز { } کے جوڑے میں بند کیا جاتا ہے۔\n\nfor لوپ کا بنیادی کام شرط درست رہنے تک بیان (بیانات) دہرانا ہے۔ یہ فلو چارٹ 4.4 میں دکھائے گئے طریقے سے کام کرتا ہے۔\n\n1۔ ابتدائی قدر: عموماً یہ کاؤنٹر ویری ایبل کی ابتدائی قدر مقرر کرنا ہے۔ یہ صرف ایک بار چلتا ہے۔\n\n2۔ شرط: اگر یہ درست ہو تو لوپ جاری رہتا ہے، ورنہ لوپ ختم ہو جاتا ہے اور بیان چھوڑ دیا جاتا ہے (نہیں چلتا)۔\n\n3۔ لوپ کا جسم: یہ ایک بیان یا متعدد بیانات کے لیے بریسز { } میں بند بلاک ہو سکتا ہے۔\n\n4۔ آخر میں لوپ کاؤنٹر میں اضافہ/کمی ہوتی ہے اور کنٹرول مرحلہ 2 پر واپس جاتا ہے۔\n\nاسکرین پر اسٹرنگ PAKISTAN پانچ بار دکھانے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int i=1; i<6; i++)\ncout << \"PAKISTAN\"<<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+   "pashto": "۴.۲.۱ د حلقو ډولونه\n\nد حلقو درې ډولونه دي.\n\nfor\n\nwhile\n\ndo-while\n\na. for حلقه\n\nپه C++ کې تر ټولو ډېر کارېدونکی حلقوي جوړښت for حلقه ده. for حلقه هغه وخت غوره ده چې موږ د تکرار دقیق شمېر مخکې له مخکې پېژنو. عمومي بڼه یې دا ده:\n\nیو-بیانیزه for حلقه\n\nfor (initialization; condition; increment/decrement)\nstatement;\n\nڅو-بیانیزه for حلقه\n\nfor (initialization; condition; increment/decrement)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nد for حلقې په پورته دوو عمومي بڼو کې لومړۍ په بدنه کې یوازې یو بیان لري او لوړو قوسونو { } ته اړتیا نه لري، په داسې حال کې چې په دویمه بڼه کې ډېر بیانونه کارېږي نو د لوړو قوسونو { } په جوړه کې تړل کېږي.\n\nد for حلقې اصلي دنده د بیان (بیانونو) تکرار دی تر هغه چې شرط true پاتې وي. دا په ۴.۴ فلوچارټ کې ښودل شوي ډول کار کوي.\n\n۱. لومړنی ارزښت: عموماً دا د شمېرونکي متغیر لومړنی ارزښت ټاکل دي. دا یوازې یو ځل اجرا کېږي.\n\n۲. شرط: که true وي حلقه دوام کوي، که نه حلقه پای ته رسېږي او بیان پرېښودل کېږي (نه اجرا کېږي).\n\n۳. د حلقې بدنه: کېدای شي یو بیان یا د ډېرو بیانونو لپاره په لوړو قوسونو { } کې تړلی بلاک وي.\n\n۴. په پای کې د حلقې شمېرونکی زیاتېږي/کمېږي او کنټرول دویم ګام ته ستنېږي.\n\nپر پرده د PAKISTAN تار پنځه ځله ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int i=1; i<6; i++)\ncout << \"PAKISTAN\"<<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+   "theoryUrdu": "4.2.1 لوپس کی اقسام\n\nلوپس کی تین اقسام ہیں۔\n\nfor\n\nwhile\n\ndo-while\n\na. for لوپ\n\nC++ میں سب سے زیادہ استعمال ہونے والی لوپنگ ساخت for لوپ ہے۔ for لوپ اس صورت میں مثالی ہے جب ہمیں تکرار کی درست تعداد پہلے سے معلوم ہو۔ اس کا عمومی طریقۂ تحریر یہ ہے:\n\nایک بیان والا for لوپ\n\nfor (initialization; condition; increment/decrement)\nstatement;\n\nمتعدد بیانات والا for لوپ\n\nfor (initialization; condition; increment/decrement)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nfor لوپ کی اوپر کی دو عمومی شکلوں میں پہلی کے جسم میں صرف ایک بیان ہے اور اسے بریسز { } کی ضرورت نہیں، جبکہ دوسری شکل میں متعدد بیانات استعمال ہوتے ہیں اس لیے انھیں بریسز { } کے جوڑے میں بند کیا جاتا ہے۔\n\nfor لوپ کا بنیادی کام شرط درست رہنے تک بیان (بیانات) دہرانا ہے۔ یہ فلو چارٹ 4.4 میں دکھائے گئے طریقے سے کام کرتا ہے۔\n\n1۔ ابتدائی قدر: عموماً یہ کاؤنٹر ویری ایبل کی ابتدائی قدر مقرر کرنا ہے۔ یہ صرف ایک بار چلتا ہے۔\n\n2۔ شرط: اگر یہ درست ہو تو لوپ جاری رہتا ہے، ورنہ لوپ ختم ہو جاتا ہے اور بیان چھوڑ دیا جاتا ہے (نہیں چلتا)۔\n\n3۔ لوپ کا جسم: یہ ایک بیان یا متعدد بیانات کے لیے بریسز { } میں بند بلاک ہو سکتا ہے۔\n\n4۔ آخر میں لوپ کاؤنٹر میں اضافہ/کمی ہوتی ہے اور کنٹرول مرحلہ 2 پر واپس جاتا ہے۔\n\nاسکرین پر اسٹرنگ PAKISTAN پانچ بار دکھانے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int i=1; i<6; i++)\ncout << \"PAKISTAN\"<<endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+   "theoryPashto": "۴.۲.۱ د حلقو ډولونه\n\nد حلقو درې ډولونه دي.\n\nfor\n\nwhile\n\ndo-while\n\na. for حلقه\n\nپه C++ کې تر ټولو ډېر کارېدونکی حلقوي جوړښت for حلقه ده. for حلقه هغه وخت غوره ده چې موږ د تکرار دقیق شمېر مخکې له مخکې پېژنو. عمومي بڼه یې دا ده:\n\nیو-بیانیزه for حلقه\n\nfor (initialization; condition; increment/decrement)\nstatement;\n\nڅو-بیانیزه for حلقه\n\nfor (initialization; condition; increment/decrement)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nد for حلقې په پورته دوو عمومي بڼو کې لومړۍ په بدنه کې یوازې یو بیان لري او لوړو قوسونو { } ته اړتیا نه لري، په داسې حال کې چې په دویمه بڼه کې ډېر بیانونه کارېږي نو د لوړو قوسونو { } په جوړه کې تړل کېږي.\n\nد for حلقې اصلي دنده د بیان (بیانونو) تکرار دی تر هغه چې شرط true پاتې وي. دا په ۴.۴ فلوچارټ کې ښودل شوي ډول کار کوي.\n\n۱. لومړنی ارزښت: عموماً دا د شمېرونکي متغیر لومړنی ارزښت ټاکل دي. دا یوازې یو ځل اجرا کېږي.\n\n۲. شرط: که true وي حلقه دوام کوي، که نه حلقه پای ته رسېږي او بیان پرېښودل کېږي (نه اجرا کېږي).\n\n۳. د حلقې بدنه: کېدای شي یو بیان یا د ډېرو بیانونو لپاره په لوړو قوسونو { } کې تړلی بلاک وي.\n\n۴. په پای کې د حلقې شمېرونکی زیاتېږي/کمېږي او کنټرول دویم ګام ته ستنېږي.\n\nپر پرده د PAKISTAN تار پنځه ځله ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nfor (int i=1; i<6; i++)\ncout << \"PAKISTAN\"<<endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+   "content": "<p>4.2.1 Types of loops</p><p>There are three types of loops.</p><p>for</p><p>while</p><p>do-while</p><p>a. for loop</p><p>The most commonly used looping structure in C++ is for loop. for loop is ideal in situation when we know in advance the exact number of iteration. Its general syntax is:</p><p>Single statement for-loop</p><p>for (initialization; condition; increment/decrement)\nstatement;</p><p>Multiple statements for-loop</p><p>for (initialization; condition; increment/decrement)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}</p><p>In the above two general forms of for loop, the first one has only one statement in its body and has no need for braces { } while in the second form multiple statements are used so they are enclosed in the pair of braces { }.</p><p>The main function of for loop is to repeat statement(s) while condition remains true. It works in the following way shown in Flowchart 4.4.</p><p>1. Initialization: Generally it is an initial value setting for a counter variable. This is executed only once.</p><p>2. Condition: If it is true the loop continues, otherwise the loop ends and statement is skipped (not executed).</p><p>3. Loop Body: It can either be a single statement or a block enclosed in braces { }, for multiple statements.</p><p>4. Finally, the loop counter is incremented/decremented and control goes back to step2.</p><p>Consider the following program to display the string PAKISTAN five times on the screen.</p><p>#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nfor (int i=1; i&lt;6; i++)\ncout &lt;&lt; &quot;PAKISTAN&quot;&lt;&lt;endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>PAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-4-4"
+    },
+    {
+     "type": "lines",
+     "indices": [
+      13,
+      14,
+      15,
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      20
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-4-4",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 315\" role=\"img\" aria-label=\"Flowchart 4.4: Working of for Loop\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"315\" fill=\"#ffffff\"/><line x1=\"150\" y1=\"6\" x2=\"150\" y2=\"24\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><rect x=\"85.0\" y=\"25.0\" width=\"130\" height=\"38\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"150\" y=\"49.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Initialization</text><line x1=\"150\" y1=\"63\" x2=\"150\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"150,196.0 230.0,222 150,248.0 70.0,222\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"150\" y=\"227.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Condition</text><line x1=\"230\" y1=\"222\" x2=\"320\" y2=\"222\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"275\" y=\"214\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"320.0\" y=\"204.0\" width=\"110\" height=\"36\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"375\" y=\"227.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Loop Body</text><line x1=\"375\" y1=\"204\" x2=\"375\" y2=\"168\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><rect x=\"315.0\" y=\"128.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"375\" y=\"145.5\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Increment/</text><text x=\"375\" y=\"160.5\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Decrement</text><polyline points=\"375,128 375,100 156,100\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"150\" y1=\"248\" x2=\"150\" y2=\"284\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"138\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><text x=\"230.0\" y=\"307\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Flowchart 4.4: Working of for Loop</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 315\" role=\"img\" aria-label=\"فلو چارٹ 4.4: for لوپ کا عمل\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"315\" fill=\"#ffffff\"/><line x1=\"150\" y1=\"6\" x2=\"150\" y2=\"24\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><rect x=\"85.0\" y=\"25.0\" width=\"130\" height=\"38\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"150\" y=\"49.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">ابتدائی قدر</text><line x1=\"150\" y1=\"63\" x2=\"150\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"150,196.0 230.0,222 150,248.0 70.0,222\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"150\" y=\"227.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شرط</text><line x1=\"230\" y1=\"222\" x2=\"320\" y2=\"222\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"275\" y=\"214\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"320.0\" y=\"204.0\" width=\"110\" height=\"36\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"375\" y=\"227.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">لوپ کا جسم</text><line x1=\"375\" y1=\"204\" x2=\"375\" y2=\"168\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><rect x=\"315.0\" y=\"128.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"375\" y=\"145.5\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">اضافہ/</text><text x=\"375\" y=\"160.5\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">کمی</text><polyline points=\"375,128 375,100 156,100\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"150\" y1=\"248\" x2=\"150\" y2=\"284\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"138\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><text x=\"230.0\" y=\"307\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">فلو چارٹ 4.4: for لوپ کا عمل</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 315\" role=\"img\" aria-label=\"۴.۴ فلوچارټ: د for حلقې کار\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"460\" height=\"315\" fill=\"#ffffff\"/><line x1=\"150\" y1=\"6\" x2=\"150\" y2=\"24\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><rect x=\"85.0\" y=\"25.0\" width=\"130\" height=\"38\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"150\" y=\"49.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">لومړنی ارزښت</text><line x1=\"150\" y1=\"63\" x2=\"150\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"150,196.0 230.0,222 150,248.0 70.0,222\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"150\" y=\"227.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شرط</text><line x1=\"230\" y1=\"222\" x2=\"320\" y2=\"222\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"275\" y=\"214\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"320.0\" y=\"204.0\" width=\"110\" height=\"36\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"375\" y=\"227.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">د حلقې بدنه</text><line x1=\"375\" y1=\"204\" x2=\"375\" y2=\"168\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><rect x=\"315.0\" y=\"128.0\" width=\"120\" height=\"40\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"375\" y=\"145.5\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">زیاتول/</text><text x=\"375\" y=\"160.5\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">کمول</text><polyline points=\"375,128 375,100 156,100\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"150\" y1=\"248\" x2=\"150\" y2=\"284\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"138\" y=\"270\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><text x=\"230.0\" y=\"307\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۴.۴ فلوچارټ: د for حلقې کار</text></svg>",
+     "sourceWidthRatio": 1.4603174603174602
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 68,
+     "printedPages": [
+      124,
+      125,
+      126
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (8)",
+   "sourcePageLabel": "PDF 68 · p. 124–125–126",
+   "sourceNote": "Flowchart 4.4 is reproduced as a coded diagram. The PAKISTAN program continues on p.126 (PDF69) and is given whole with its output.",
+   "unit": 4
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf068",
+   "unit": 4,
+   "printedPage": 124,
+   "description": "p.124 prints “for loop is ideal in situation when we know … the exact number of iteration”; p.125 “goes back to step2”. Retained as printed. A tear across the top-left corner of p.125 does not affect the text."
+  }
+ ],
+ "completeUnits": []
+}

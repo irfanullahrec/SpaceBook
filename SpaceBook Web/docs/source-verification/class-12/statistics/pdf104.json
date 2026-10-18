@@ -1,0 +1,317 @@
+{
+ "pdfPage": 104,
+ "sections": [
+  {
+   "id": "stat12-p104-example-6-4-proof",
+   "title": "Example 6.4 — proof that s² is unbiased",
+   "headingUrdu": "مثال 6.4 — s² کے غیر جانبدار ہونے کا ثبوت",
+   "headingPashto": "بېلګه 6.4 — د s² د بې‌پلوه کېدو ثبوت",
+   "paras": [
+    {
+     "text": "Proof:",
+     "urdu": "ثبوت:",
+     "pashto": "ثبوت:"
+    },
+    {
+     "text": "By definition $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$",
+     "urdu": "تعریف کے مطابق $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$",
+     "pashto": "د تعریف له مخې $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$"
+    },
+    {
+     "text": "$$(n-1)\\,s^2=\\sum_{i=1}^{n}(X_i-\\overline{X})^2$$",
+     "urdu": "$$(n-1)\\,s^2=\\sum_{i=1}^{n}(X_i-\\overline{X})^2$$",
+     "pashto": "$$(n-1)\\,s^2=\\sum_{i=1}^{n}(X_i-\\overline{X})^2$$"
+    },
+    {
+     "text": "$=\\sum_{i=1}^{n}(X_i-\\mu+\\mu-\\overline{X})^2$ i.e. μ is added and subtracted",
+     "urdu": "$=\\sum_{i=1}^{n}(X_i-\\mu+\\mu-\\overline{X})^2$ یعنی μ جمع اور تفریق کیا گیا",
+     "pashto": "$=\\sum_{i=1}^{n}(X_i-\\mu+\\mu-\\overline{X})^2$ یعنې μ جمع او تفریق شوی"
+    },
+    {
+     "text": "$=\\sum_{i=1}^{n}[(X_i-\\mu)-(\\overline{X}-\\mu)]^2$",
+     "urdu": "$=\\sum_{i=1}^{n}[(X_i-\\mu)-(\\overline{X}-\\mu)]^2$",
+     "pashto": "$=\\sum_{i=1}^{n}[(X_i-\\mu)-(\\overline{X}-\\mu)]^2$"
+    },
+    {
+     "text": "$=\\sum_{i=1}^{n}[(X_i-\\mu)^2+(\\overline{X}-\\mu)^2-2(X_i-\\mu)(\\overline{X}-\\mu)]$",
+     "urdu": "$=\\sum_{i=1}^{n}[(X_i-\\mu)^2+(\\overline{X}-\\mu)^2-2(X_i-\\mu)(\\overline{X}-\\mu)]$",
+     "pashto": "$=\\sum_{i=1}^{n}[(X_i-\\mu)^2+(\\overline{X}-\\mu)^2-2(X_i-\\mu)(\\overline{X}-\\mu)]$"
+    },
+    {
+     "text": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\sum_{i=1}^{n}(X_i-\\mu)$",
+     "urdu": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\sum_{i=1}^{n}(X_i-\\mu)$",
+     "pashto": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\sum_{i=1}^{n}(X_i-\\mu)$"
+    },
+    {
+     "text": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\,n(\\overline{X}-\\mu)$ As $\\sum_{i=1}^{n}(X_i-\\mu)=n(\\overline{X}-\\mu)$",
+     "urdu": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\,n(\\overline{X}-\\mu)$ کیونکہ $\\sum_{i=1}^{n}(X_i-\\mu)=n(\\overline{X}-\\mu)$",
+     "pashto": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\,n(\\overline{X}-\\mu)$ ځکه چې $\\sum_{i=1}^{n}(X_i-\\mu)=n(\\overline{X}-\\mu)$"
+    },
+    {
+     "text": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2n(\\overline{X}-\\mu)^2$",
+     "urdu": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2n(\\overline{X}-\\mu)^2$",
+     "pashto": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2n(\\overline{X}-\\mu)^2$"
+    },
+    {
+     "text": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2-n(\\overline{X}-\\mu)^2$",
+     "urdu": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2-n(\\overline{X}-\\mu)^2$",
+     "pashto": "$=\\sum_{i=1}^{n}(X_i-\\mu)^2-n(\\overline{X}-\\mu)^2$"
+    },
+    {
+     "text": "Now taking expectation on both sides",
+     "urdu": "اب دونوں طرف توقع لینے سے",
+     "pashto": "اوس دواړو خواوو ته تمه اخیستلو سره"
+    },
+    {
+     "text": "$$(n-1)\\,E(s^2)=n\\,E(X_i-\\mu)^2-n\\,E(\\overline{X}-\\mu)^2$$",
+     "urdu": "$$(n-1)\\,E(s^2)=n\\,E(X_i-\\mu)^2-n\\,E(\\overline{X}-\\mu)^2$$",
+     "pashto": "$$(n-1)\\,E(s^2)=n\\,E(X_i-\\mu)^2-n\\,E(\\overline{X}-\\mu)^2$$"
+    },
+    {
+     "text": "$=n\\sigma^2-n\\sigma_{\\overline{x}}^2$ As $\\sigma_{\\overline{x}}^2=\\frac{\\sigma^2}{n}$",
+     "urdu": "$=n\\sigma^2-n\\sigma_{\\overline{x}}^2$ کیونکہ $\\sigma_{\\overline{x}}^2=\\frac{\\sigma^2}{n}$",
+     "pashto": "$=n\\sigma^2-n\\sigma_{\\overline{x}}^2$ ځکه چې $\\sigma_{\\overline{x}}^2=\\frac{\\sigma^2}{n}$"
+    },
+    {
+     "text": "$=(n-1)\\sigma^2$",
+     "urdu": "$=(n-1)\\sigma^2$",
+     "pashto": "$=(n-1)\\sigma^2$"
+    },
+    {
+     "text": "$E(s^2)=\\sigma^2$",
+     "urdu": "$E(s^2)=\\sigma^2$",
+     "pashto": "$E(s^2)=\\sigma^2$"
+    },
+    {
+     "text": "This implies that $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ is an unbiased estimator of $\\sigma^2$.",
+     "urdu": "اس کا مطلب ہے کہ $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$، $\\sigma^2$ کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "دا ښيي چې $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ د $\\sigma^2$ بې‌پلوه اټکلوونکی دی."
+    }
+   ],
+   "theory": "Proof:\n\nBy definition s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2\n\n$(n-1)\\,s^2=\\sum_{i=1}^{n}(X_i-\\overline{X})^2$\n\n=\\sum_{i=1}^{n}(X_i-\\mu+\\mu-\\overline{X})^2 i.e. μ is added and subtracted\n\n=\\sum_{i=1}^{n}[(X_i-\\mu)-(\\overline{X}-\\mu)]^2\n\n=\\sum_{i=1}^{n}[(X_i-\\mu)^2+(\\overline{X}-\\mu)^2-2(X_i-\\mu)(\\overline{X}-\\mu)]\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\sum_{i=1}^{n}(X_i-\\mu)\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\,n(\\overline{X}-\\mu) As \\sum_{i=1}^{n}(X_i-\\mu)=n(\\overline{X}-\\mu)\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2n(\\overline{X}-\\mu)^2\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2-n(\\overline{X}-\\mu)^2\n\nNow taking expectation on both sides\n\n$(n-1)\\,E(s^2)=n\\,E(X_i-\\mu)^2-n\\,E(\\overline{X}-\\mu)^2$\n\n=n\\sigma^2-n\\sigma_{\\overline{x}}^2 As \\sigma_{\\overline{x}}^2=\\frac{\\sigma^2}{n}\n\n=(n-1)\\sigma^2\n\nE(s^2)=\\sigma^2\n\nThis implies that s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 is an unbiased estimator of \\sigma^2.",
+   "urdu": "ثبوت:\n\nتعریف کے مطابق s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2\n\n$(n-1)\\,s^2=\\sum_{i=1}^{n}(X_i-\\overline{X})^2$\n\n=\\sum_{i=1}^{n}(X_i-\\mu+\\mu-\\overline{X})^2 یعنی μ جمع اور تفریق کیا گیا\n\n=\\sum_{i=1}^{n}[(X_i-\\mu)-(\\overline{X}-\\mu)]^2\n\n=\\sum_{i=1}^{n}[(X_i-\\mu)^2+(\\overline{X}-\\mu)^2-2(X_i-\\mu)(\\overline{X}-\\mu)]\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\sum_{i=1}^{n}(X_i-\\mu)\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\,n(\\overline{X}-\\mu) کیونکہ \\sum_{i=1}^{n}(X_i-\\mu)=n(\\overline{X}-\\mu)\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2n(\\overline{X}-\\mu)^2\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2-n(\\overline{X}-\\mu)^2\n\nاب دونوں طرف توقع لینے سے\n\n$(n-1)\\,E(s^2)=n\\,E(X_i-\\mu)^2-n\\,E(\\overline{X}-\\mu)^2$\n\n=n\\sigma^2-n\\sigma_{\\overline{x}}^2 کیونکہ \\sigma_{\\overline{x}}^2=\\frac{\\sigma^2}{n}\n\n=(n-1)\\sigma^2\n\nE(s^2)=\\sigma^2\n\nاس کا مطلب ہے کہ s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2، \\sigma^2 کا غیر جانبدار تخمین کار ہے۔",
+   "pashto": "ثبوت:\n\nد تعریف له مخې s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2\n\n$(n-1)\\,s^2=\\sum_{i=1}^{n}(X_i-\\overline{X})^2$\n\n=\\sum_{i=1}^{n}(X_i-\\mu+\\mu-\\overline{X})^2 یعنې μ جمع او تفریق شوی\n\n=\\sum_{i=1}^{n}[(X_i-\\mu)-(\\overline{X}-\\mu)]^2\n\n=\\sum_{i=1}^{n}[(X_i-\\mu)^2+(\\overline{X}-\\mu)^2-2(X_i-\\mu)(\\overline{X}-\\mu)]\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\sum_{i=1}^{n}(X_i-\\mu)\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\,n(\\overline{X}-\\mu) ځکه چې \\sum_{i=1}^{n}(X_i-\\mu)=n(\\overline{X}-\\mu)\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2n(\\overline{X}-\\mu)^2\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2-n(\\overline{X}-\\mu)^2\n\nاوس دواړو خواوو ته تمه اخیستلو سره\n\n$(n-1)\\,E(s^2)=n\\,E(X_i-\\mu)^2-n\\,E(\\overline{X}-\\mu)^2$\n\n=n\\sigma^2-n\\sigma_{\\overline{x}}^2 ځکه چې \\sigma_{\\overline{x}}^2=\\frac{\\sigma^2}{n}\n\n=(n-1)\\sigma^2\n\nE(s^2)=\\sigma^2\n\nدا ښيي چې s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 د \\sigma^2 بې‌پلوه اټکلوونکی دی.",
+   "theoryUrdu": "ثبوت:\n\nتعریف کے مطابق s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2\n\n$(n-1)\\,s^2=\\sum_{i=1}^{n}(X_i-\\overline{X})^2$\n\n=\\sum_{i=1}^{n}(X_i-\\mu+\\mu-\\overline{X})^2 یعنی μ جمع اور تفریق کیا گیا\n\n=\\sum_{i=1}^{n}[(X_i-\\mu)-(\\overline{X}-\\mu)]^2\n\n=\\sum_{i=1}^{n}[(X_i-\\mu)^2+(\\overline{X}-\\mu)^2-2(X_i-\\mu)(\\overline{X}-\\mu)]\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\sum_{i=1}^{n}(X_i-\\mu)\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\,n(\\overline{X}-\\mu) کیونکہ \\sum_{i=1}^{n}(X_i-\\mu)=n(\\overline{X}-\\mu)\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2n(\\overline{X}-\\mu)^2\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2-n(\\overline{X}-\\mu)^2\n\nاب دونوں طرف توقع لینے سے\n\n$(n-1)\\,E(s^2)=n\\,E(X_i-\\mu)^2-n\\,E(\\overline{X}-\\mu)^2$\n\n=n\\sigma^2-n\\sigma_{\\overline{x}}^2 کیونکہ \\sigma_{\\overline{x}}^2=\\frac{\\sigma^2}{n}\n\n=(n-1)\\sigma^2\n\nE(s^2)=\\sigma^2\n\nاس کا مطلب ہے کہ s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2، \\sigma^2 کا غیر جانبدار تخمین کار ہے۔",
+   "theoryPashto": "ثبوت:\n\nد تعریف له مخې s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2\n\n$(n-1)\\,s^2=\\sum_{i=1}^{n}(X_i-\\overline{X})^2$\n\n=\\sum_{i=1}^{n}(X_i-\\mu+\\mu-\\overline{X})^2 یعنې μ جمع او تفریق شوی\n\n=\\sum_{i=1}^{n}[(X_i-\\mu)-(\\overline{X}-\\mu)]^2\n\n=\\sum_{i=1}^{n}[(X_i-\\mu)^2+(\\overline{X}-\\mu)^2-2(X_i-\\mu)(\\overline{X}-\\mu)]\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\sum_{i=1}^{n}(X_i-\\mu)\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\,n(\\overline{X}-\\mu) ځکه چې \\sum_{i=1}^{n}(X_i-\\mu)=n(\\overline{X}-\\mu)\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2n(\\overline{X}-\\mu)^2\n\n=\\sum_{i=1}^{n}(X_i-\\mu)^2-n(\\overline{X}-\\mu)^2\n\nاوس دواړو خواوو ته تمه اخیستلو سره\n\n$(n-1)\\,E(s^2)=n\\,E(X_i-\\mu)^2-n\\,E(\\overline{X}-\\mu)^2$\n\n=n\\sigma^2-n\\sigma_{\\overline{x}}^2 ځکه چې \\sigma_{\\overline{x}}^2=\\frac{\\sigma^2}{n}\n\n=(n-1)\\sigma^2\n\nE(s^2)=\\sigma^2\n\nدا ښيي چې s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 د \\sigma^2 بې‌پلوه اټکلوونکی دی.",
+   "content": "<p>Proof:</p><p>By definition s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2</p><p>$(n-1)\\,s^2=\\sum_{i=1}^{n}(X_i-\\overline{X})^2$</p><p>=\\sum_{i=1}^{n}(X_i-\\mu+\\mu-\\overline{X})^2 i.e. μ is added and subtracted</p><p>=\\sum_{i=1}^{n}[(X_i-\\mu)-(\\overline{X}-\\mu)]^2</p><p>=\\sum_{i=1}^{n}[(X_i-\\mu)^2+(\\overline{X}-\\mu)^2-2(X_i-\\mu)(\\overline{X}-\\mu)]</p><p>=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\sum_{i=1}^{n}(X_i-\\mu)</p><p>=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2(\\overline{X}-\\mu)\\,n(\\overline{X}-\\mu) As \\sum_{i=1}^{n}(X_i-\\mu)=n(\\overline{X}-\\mu)</p><p>=\\sum_{i=1}^{n}(X_i-\\mu)^2+n(\\overline{X}-\\mu)^2-2n(\\overline{X}-\\mu)^2</p><p>=\\sum_{i=1}^{n}(X_i-\\mu)^2-n(\\overline{X}-\\mu)^2</p><p>Now taking expectation on both sides</p><p>$(n-1)\\,E(s^2)=n\\,E(X_i-\\mu)^2-n\\,E(\\overline{X}-\\mu)^2$</p><p>=n\\sigma^2-n\\sigma_{\\overline{x}}^2 As \\sigma_{\\overline{x}}^2=\\frac{\\sigma^2}{n}</p><p>=(n-1)\\sigma^2</p><p>E(s^2)=\\sigma^2</p><p>This implies that s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 is an unbiased estimator of \\sigma^2.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      8,
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      13,
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 104,
+     "printedPages": [
+      199,
+      200
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  },
+  {
+   "id": "stat12-p104-example-6-5",
+   "title": "Example 6.5 — unbiasedness check with all samples",
+   "headingUrdu": "مثال 6.5 — تمام نمونوں سے غیر جانبداری کی جانچ",
+   "headingPashto": "بېلګه 6.5 — له ټولو نمونو سره د بې‌پلوي ازموینه",
+   "paras": [
+    {
+     "text": "Example 6.5",
+     "urdu": "مثال 6.5",
+     "pashto": "بېلګه 6.5"
+    },
+    {
+     "text": "Draw all possible samples of size 2 with replacement from a population having elements 4, 8, 12, 16 and show that;",
+     "urdu": "عناصر 4، 8، 12، 16 والی آبادی سے واپسی کے ساتھ 2 سائز کے تمام ممکنہ نمونے نکالیں اور ثابت کریں کہ؛",
+     "pashto": "له 4، 8، 12، 16 عناصرو لرونکي نفوس څخه له بېرته اچولو سره د 2 اندازې ټولې شونې نمونې راوباسئ او وښایاست چې؛"
+    },
+    {
+     "text": "i) $E(\\overline{X})=\\mu$ i.e. $\\overline{X}$ is an unbiased estimator of μ.",
+     "urdu": "i) $E(\\overline{X})=\\mu$ یعنی $\\overline{X}$، μ کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "i) $E(\\overline{X})=\\mu$ یعنې $\\overline{X}$ د μ بې‌پلوه اټکلوونکی دی."
+    },
+    {
+     "text": "ii) $E(s^2)=\\sigma^2$ i.e. $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ is an unbiased estimator of $\\sigma^2$.",
+     "urdu": "ii) $E(s^2)=\\sigma^2$ یعنی $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$، $\\sigma^2$ کا غیر جانبدار تخمین کار ہے۔",
+     "pashto": "ii) $E(s^2)=\\sigma^2$ یعنې $s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ د $\\sigma^2$ بې‌پلوه اټکلوونکی دی."
+    },
+    {
+     "text": "iii) $E(S^2)\\neq\\sigma^2$ i.e $S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ is a biased estimator of $\\sigma^2$.",
+     "urdu": "iii) $E(S^2)\\neq\\sigma^2$ یعنی $S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$، $\\sigma^2$ کا جانبدار تخمین کار ہے۔",
+     "pashto": "iii) $E(S^2)\\neq\\sigma^2$ یعنې $S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2$ د $\\sigma^2$ پلوي اټکلوونکی دی."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Given 4, 8, 12, 16; N = 4; and n = 2",
+     "urdu": "دیا گیا ہے 4، 8، 12، 16؛ N = 4؛ اور n = 2",
+     "pashto": "ورکړل شوي 4، 8، 12، 16؛ N = 4؛ او n = 2"
+    },
+    {
+     "text": "Population mean $\\mu=\\frac{\\Sigma X}{N}=\\frac{4+8+12+16}{4}=\\frac{40}{4}=10$",
+     "urdu": "آبادی کا اوسط $\\mu=\\frac{\\Sigma X}{N}=\\frac{4+8+12+16}{4}=\\frac{40}{4}=10$",
+     "pashto": "د نفوس منځنی $\\mu=\\frac{\\Sigma X}{N}=\\frac{4+8+12+16}{4}=\\frac{40}{4}=10$"
+    },
+    {
+     "text": "Population variance $\\sigma^2=\\frac{\\Sigma X^2}{N}-\\left(\\frac{\\Sigma X}{N}\\right)^2=\\frac{480}{4}-\\left(\\frac{40}{4}\\right)^2=20$",
+     "urdu": "آبادی کا تغیر $\\sigma^2=\\frac{\\Sigma X^2}{N}-\\left(\\frac{\\Sigma X}{N}\\right)^2=\\frac{480}{4}-\\left(\\frac{40}{4}\\right)^2=20$",
+     "pashto": "د نفوس واریانس $\\sigma^2=\\frac{\\Sigma X^2}{N}-\\left(\\frac{\\Sigma X}{N}\\right)^2=\\frac{480}{4}-\\left(\\frac{40}{4}\\right)^2=20$"
+    }
+   ],
+   "theory": "Example 6.5\n\nDraw all possible samples of size 2 with replacement from a population having elements 4, 8, 12, 16 and show that;\n\ni) E(\\overline{X})=\\mu i.e. \\overline{X} is an unbiased estimator of μ.\n\nii) E(s^2)=\\sigma^2 i.e. s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 is an unbiased estimator of \\sigma^2.\n\niii) E(S^2)\\neq\\sigma^2 i.e S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 is a biased estimator of \\sigma^2.\n\nSolution:\n\nGiven 4, 8, 12, 16; N = 4; and n = 2\n\nPopulation mean \\mu=\\frac{\\Sigma X}{N}=\\frac{4+8+12+16}{4}=\\frac{40}{4}=10\n\nPopulation variance \\sigma^2=\\frac{\\Sigma X^2}{N}-\\left(\\frac{\\Sigma X}{N}\\right)^2=\\frac{480}{4}-\\left(\\frac{40}{4}\\right)^2=20",
+   "urdu": "مثال 6.5\n\nعناصر 4، 8، 12، 16 والی آبادی سے واپسی کے ساتھ 2 سائز کے تمام ممکنہ نمونے نکالیں اور ثابت کریں کہ؛\n\ni) E(\\overline{X})=\\mu یعنی \\overline{X}، μ کا غیر جانبدار تخمین کار ہے۔\n\nii) E(s^2)=\\sigma^2 یعنی s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2، \\sigma^2 کا غیر جانبدار تخمین کار ہے۔\n\niii) E(S^2)\\neq\\sigma^2 یعنی S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2، \\sigma^2 کا جانبدار تخمین کار ہے۔\n\nحل:\n\nدیا گیا ہے 4، 8، 12، 16؛ N = 4؛ اور n = 2\n\nآبادی کا اوسط \\mu=\\frac{\\Sigma X}{N}=\\frac{4+8+12+16}{4}=\\frac{40}{4}=10\n\nآبادی کا تغیر \\sigma^2=\\frac{\\Sigma X^2}{N}-\\left(\\frac{\\Sigma X}{N}\\right)^2=\\frac{480}{4}-\\left(\\frac{40}{4}\\right)^2=20",
+   "pashto": "بېلګه 6.5\n\nله 4، 8، 12، 16 عناصرو لرونکي نفوس څخه له بېرته اچولو سره د 2 اندازې ټولې شونې نمونې راوباسئ او وښایاست چې؛\n\ni) E(\\overline{X})=\\mu یعنې \\overline{X} د μ بې‌پلوه اټکلوونکی دی.\n\nii) E(s^2)=\\sigma^2 یعنې s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 د \\sigma^2 بې‌پلوه اټکلوونکی دی.\n\niii) E(S^2)\\neq\\sigma^2 یعنې S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 د \\sigma^2 پلوي اټکلوونکی دی.\n\nحل:\n\nورکړل شوي 4، 8، 12، 16؛ N = 4؛ او n = 2\n\nد نفوس منځنی \\mu=\\frac{\\Sigma X}{N}=\\frac{4+8+12+16}{4}=\\frac{40}{4}=10\n\nد نفوس واریانس \\sigma^2=\\frac{\\Sigma X^2}{N}-\\left(\\frac{\\Sigma X}{N}\\right)^2=\\frac{480}{4}-\\left(\\frac{40}{4}\\right)^2=20",
+   "theoryUrdu": "مثال 6.5\n\nعناصر 4، 8، 12، 16 والی آبادی سے واپسی کے ساتھ 2 سائز کے تمام ممکنہ نمونے نکالیں اور ثابت کریں کہ؛\n\ni) E(\\overline{X})=\\mu یعنی \\overline{X}، μ کا غیر جانبدار تخمین کار ہے۔\n\nii) E(s^2)=\\sigma^2 یعنی s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2، \\sigma^2 کا غیر جانبدار تخمین کار ہے۔\n\niii) E(S^2)\\neq\\sigma^2 یعنی S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2، \\sigma^2 کا جانبدار تخمین کار ہے۔\n\nحل:\n\nدیا گیا ہے 4، 8، 12، 16؛ N = 4؛ اور n = 2\n\nآبادی کا اوسط \\mu=\\frac{\\Sigma X}{N}=\\frac{4+8+12+16}{4}=\\frac{40}{4}=10\n\nآبادی کا تغیر \\sigma^2=\\frac{\\Sigma X^2}{N}-\\left(\\frac{\\Sigma X}{N}\\right)^2=\\frac{480}{4}-\\left(\\frac{40}{4}\\right)^2=20",
+   "theoryPashto": "بېلګه 6.5\n\nله 4، 8، 12، 16 عناصرو لرونکي نفوس څخه له بېرته اچولو سره د 2 اندازې ټولې شونې نمونې راوباسئ او وښایاست چې؛\n\ni) E(\\overline{X})=\\mu یعنې \\overline{X} د μ بې‌پلوه اټکلوونکی دی.\n\nii) E(s^2)=\\sigma^2 یعنې s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 د \\sigma^2 بې‌پلوه اټکلوونکی دی.\n\niii) E(S^2)\\neq\\sigma^2 یعنې S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 د \\sigma^2 پلوي اټکلوونکی دی.\n\nحل:\n\nورکړل شوي 4، 8، 12، 16؛ N = 4؛ او n = 2\n\nد نفوس منځنی \\mu=\\frac{\\Sigma X}{N}=\\frac{4+8+12+16}{4}=\\frac{40}{4}=10\n\nد نفوس واریانس \\sigma^2=\\frac{\\Sigma X^2}{N}-\\left(\\frac{\\Sigma X}{N}\\right)^2=\\frac{480}{4}-\\left(\\frac{40}{4}\\right)^2=20",
+   "content": "<p>Example 6.5</p><p>Draw all possible samples of size 2 with replacement from a population having elements 4, 8, 12, 16 and show that;</p><p>i) E(\\overline{X})=\\mu i.e. \\overline{X} is an unbiased estimator of μ.</p><p>ii) E(s^2)=\\sigma^2 i.e. s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 is an unbiased estimator of \\sigma^2.</p><p>iii) E(S^2)\\neq\\sigma^2 i.e S^2=\\frac{1}{n}\\sum_{i=1}^{n}(X_i-\\overline{X})^2 is a biased estimator of \\sigma^2.</p><p>Solution:</p><p>Given 4, 8, 12, 16; N = 4; and n = 2</p><p>Population mean \\mu=\\frac{\\Sigma X}{N}=\\frac{4+8+12+16}{4}=\\frac{40}{4}=10</p><p>Population variance \\sigma^2=\\frac{\\Sigma X^2}{N}-\\left(\\frac{\\Sigma X}{N}\\right)^2=\\frac{480}{4}-\\left(\\frac{40}{4}\\right)^2=20</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      2,
+      3,
+      4
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 104,
+     "printedPages": [
+      200
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 6
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

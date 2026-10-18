@@ -1,0 +1,1346 @@
+{
+  "generatedAt": "2026-10-18T05:36:01.680Z",
+  "scope": "Class 12 Mathematics only. No content or UI changes.",
+  "auditType": "Evaluated data-schema coverage; not a new mathematical correctness or source-visual verification.",
+  "countingRules": [
+    "Only final evaluated active arrays are counted. Appended repair code supersedes old baseline data.",
+    "An exercise record may contain multiple lettered subparts; counts are question groups, not subpart totals.",
+    "A nonempty answer/solution/steps field proves answer presence, not correctness or source completeness.",
+    "Source review MCQs embedded in exercises are separate from supplemental SLO MCQs.",
+    "unreviewedProblems, unreviewedSolution, unreviewedDuplicateExamples and unreviewedExercises are archival parser/replacement material and are excluded from active question totals.",
+    "Empty arrays in math_12_book_data.js are book metadata scaffolding; do not treat them as missing active answers."
+  ],
+  "inputs": [
+    {
+      "path": "js/math_12_data.js",
+      "bytes": 5857118,
+      "sha256": "0072be0a8d3441d0abb901053f0d9ef1529e1dd3c15be4b6cb5111ce65bc4592"
+    },
+    {
+      "path": "js/math_12_book_data.js",
+      "bytes": 8551,
+      "sha256": "8792eb427a92e92289da1f10ebefea59d92dd71b48885189b0897e3a7f05bce2"
+    },
+    {
+      "path": "docs/source-verification/math12.json",
+      "bytes": 225117,
+      "sha256": "b7e2dbff389f972be2eec0d64b74b430ebe1ecfa8b22945ec931498b893edcbb"
+    }
+  ],
+  "totals": {
+    "units": 12,
+    "workedExamples": 234,
+    "workedExamplesMissingAnswerContent": 0,
+    "exerciseProblemGroups": 347,
+    "exerciseProblemGroupsWithAnswerContent": 347,
+    "exerciseProblemGroupsWithoutAnswerContent": 0,
+    "literalAnswerPlaceholders": 0,
+    "embeddedSourceReviewMcqs": 101,
+    "embeddedSourceReviewMcqsWithAnswer": 101,
+    "embeddedSourceReviewMcqsWithExplanation": 101,
+    "supplementalMcqs": 35,
+    "supplementalMcqsWithValidCorrectIndex": 35,
+    "supplementalMcqsWithExplanation": 35,
+    "supplementalShortQuestions": 20,
+    "supplementalLongQuestions": 14,
+    "explicitPartialRecords": 4,
+    "emptyExerciseContainers": 3,
+    "archivedProblemGroups": 147,
+    "archivedDuplicateWorkedExamples": 9,
+    "archivedExerciseContainers": 2
+  },
+  "firstConcreteGaps": [
+    {
+      "priority": 1,
+      "unit": 1,
+      "area": "Translation coverage",
+      "detail": "Existing progress records only 47 passages, 82 sentences and 418 word meanings across the Unit 1 introduction/environment/basic commands. Remaining source and learning material is pending."
+    },
+    {
+      "priority": 2,
+      "unit": 2,
+      "id": "ex-2-1-q5",
+      "area": "Source-dependent answer",
+      "detail": "Photographic project horizontal endpoints remain uncertified; visible range estimates are supplied but exact domains are unresolved."
+    },
+    {
+      "priority": 3,
+      "unit": 2,
+      "id": "ex-2-3-project",
+      "area": "Source legibility",
+      "detail": "The first photographed roof model coefficients remain unclear. A qualified function-type answer exists; an exact algebraic model cannot be asserted."
+    },
+    {
+      "priority": 4,
+      "unit": 6,
+      "id": "ex-6-5",
+      "area": "Missing source pages",
+      "detail": "Printed pages 142–157 are absent from supplied formats. Source-complete opening, early examples and Exercise 6.1 require an additional source; existing answer-key fragments do not recover exact questions."
+    },
+    {
+      "priority": 5,
+      "unit": 10,
+      "id": "ex-10-1-q2",
+      "area": "Source legibility",
+      "detail": "Part (c) has an uncertified exponent. Its readable function has been differentiated conditionally, and part (d) is explicitly identified as inconsistent."
+    },
+    {
+      "priority": 6,
+      "unit": 12,
+      "id": "ex-12-2-q5",
+      "area": "Under-specified printed question",
+      "detail": "The source omits the integrand. A worked supplemental sample is supplied and labelled; no unique original numerical answer exists."
+    },
+    {
+      "priority": 7,
+      "area": "Quiz presentation",
+      "detail": "101 source review MCQs have prose answers/explanations in exercises but no options/correct index schema. If converting them to interactive quizzes, preserve cases with multiple or no valid printed choices."
+    }
+  ],
+  "bookMetadata": {
+    "units": 12,
+    "workedExamples": 0,
+    "exerciseContainers": 0
+  },
+  "savedSourceProgress": {
+    "bookStatus": "in_revision",
+    "nextSource": "translation: Class 12 Mathematics — Unit 1",
+    "pendingWork": "Urdu/Pashto sentence and word translations, speech checks, and unresolved source defects are pending",
+    "sourceCount": 357,
+    "pageEntries": 357,
+    "completePageEntries": 0,
+    "textStatuses": {
+      "visually_verified": 332,
+      "partial_source_clipping": 1,
+      "partial_source_legibility": 6,
+      "partial: Example 6 final-result endings illegible in JPG and full PDF": 1,
+      "verified source text; five learning solutions and project worked and checked": 1,
+      "visually_verified_duplicate": 16
+    },
+    "translationStatuses": {
+      "pending": 352,
+      "partially_translated": 5
+    },
+    "translationCoverage": {
+      "passages": 47,
+      "sentences": 82,
+      "wordMeanings": 418,
+      "status": "partial",
+      "scope": "Unit 1 introduction, environment and basic commands; remaining source and learning content pending",
+      "speech": "Language-specific device voice selection with visible unavailable-voice feedback; recorded audio not generated"
+    },
+    "sourceGaps": [
+      {
+        "printedPageStart": 142,
+        "printedPageEnd": 157,
+        "status": "unavailable_in_supplied_formats",
+        "verification": "JPG 075_page_2.jpg is printed 174; JPG 083_page_2.jpg is printed 158. Full PDF physical 75 and 83 inspected. Split PDF source mapping agrees. Word parts 2/3 checked for Unit 6 opening; only continuation exists.",
+        "impact": "Unit 6 objectives, introduction, rules, initial substitution material and early exercise/source example content cannot be transcribed as source-complete."
+      }
+    ],
+    "unresolvedIssueDescriptions": [
+      "Title-page diagrams and translations still pending.",
+      "Example 5 repeats x for the second coordinate; original wording retained and SpaceBook clarification added.",
+      "Figure 1.16 partial arcs retained from the scan pending exact digital reconstruction; endpoints are not defined by the printed command.",
+      "Printed pages 142–157 are absent from the supplied JPG sequence, matching split PDF parts and full PDF: physical 75 pairs 141 with 174; physical 83 pairs 189 with 158. Word parts contain the same continuation and no Unit 6 opening. Unit 6 source beginning and Examples 1–8 opening remain unavailable; do not mark them complete.",
+      "Exercise 2.1 photographic project horizontal endpoints remain unverified; its UI and progress record show a partial solution.",
+      "Exercise 2.3 Project (i) coefficients remain unclear in both source copies; source crop and partial learning classification retained.",
+      "Exercise 2.4 Question 7 answer key true contradicts the printed denominator x³ + 2.7; expected false and interior pole explained separately.",
+      "Exercise 3.2 Question 2(a) answer key includes an unrelated extra equality; correct first result retained in learning solution.",
+      "Exercise 3.3 Question 3(b) answer key gives 12t²/a; the printed parametric equations give 4t²/a, explained separately.",
+      "Example 18(b) replaces √(4x²) with 2x; the negative-x branch is corrected separately.",
+      "Printed inverse secant/cosecant rules omit absolute values required on the standard negative principal branches; corrections remain separate from the source formulas.",
+      "Exercise 3.4 Question 3(f) key has a plus sign where differentiation of 1/x requires a minus; Question 5 key repeats t = 3 labels for t = 4 and 5.",
+      "Example 19(c) differentiates ln u as 1/ln u; the correct 1/u solution is separated from the source.",
+      "The printed inverse-coth proof loses a minus sign; the following formula box gives the correct negative derivative.",
+      "Exercise 3.5 Question 1(c) key moves +1 into the exponent; Question 2(a) key replaces source x³ with x⁵; entries 1(h) and 4(a) are exchanged.",
+      "Exercise 3.5 Question 3(d) has no real logarithm domain; the key solves the separately explained logarithm-of-absolute-value alternative.",
+      "Exercise 3.5 unbased log notation and Question 4(a) cube placement remain ambiguous; branch/base interpretations are stated explicitly.",
+      "Review Exercise 3 items (vi) and (vii) each contain two equivalent correct options; both are explained alongside the key-selected answer.",
+      "Unit 4 Example 5 Remember box reverses first derivative; its second-derivative proof loses a chain factor. Correct source and learning results kept separate.",
+      "Unit 4 Example 7 prints a first-derivative command beside a second-derivative output; nested correction is provided with expected, not executed, results.",
+      "Exercise 4.1 key loses polynomial derivative powers, gives a third derivative for a fourth-order request, and changes +7 to +2 in Question 6(a).",
+      "Taylor/Maclaurin finite expressions and offset labels need convergence/approximation qualifications; the source is preserved and limitations explained.",
+      "Figures 4.1 and 4.6 contain inconsistent source annotations retained in their native reconstructions with explicit clarification.",
+      "Unit 4 Example 29 asks for maximum cost after finding the minimum; the stated model has no finite maximum on x > 0.",
+      "Exercise 4.3 Question 3(a) extra = 0 contradicts its prescribed values; Question 3(d) key solves a different cube-root radicand containing an extra x.",
+      "Review 4 (vi) has no fully correct option as written due to a Taylor coefficient typo; (viii) has two equivalent correct normal equations.",
+      "Unit 5 Example 12 uses degree cosine after a radian derivative; consistent radian speed and alternate degree model explained separately.",
+      "Unit 5 Example 13 final direction approximation omits normalization; correct unit direction supplied separately.",
+      "Review 5 (v) printed constant argument has no correct option; intended variable argument matches identical (a)/(d). Review 5 (ix) has no correct acceleration option.",
+      "Unit 7 source calls the incenter a centroid, mixes signed and unsigned external ratios, and supplies a non-collinear dividing point in Exercise 7.1 Q4(b); originals retained with separate checked clarification.",
+      "Unit 7 vertical-line source uses ordinate b and x = −b at distance a; correct abscissa x and x = −a explained separately.",
+      "Unit 6 source opening 142–157 is unavailable across supplied formats; sections 6.1/6.2 and Exercise 6.1 cannot be source-complete. Source substitution continuation belongs in 6.3, with original unreviewed text preserved separately.",
+      "Source definite-area formula mixes signed −A+B with unsigned A+B; original lines preserved and corrected separately.",
+      "Review 6 (iv) uses integrand parameter t with dx and has no correct square-root option; (viii) has equivalent correct options (a) and (c).",
+      "Printed 207 definition (i) remains partially legible across JPG/PDF/Word; exact crop retained, conventional formula labelled as inference only.",
+      "Unit 7 Exercise 7.4 Q2(c) is not concurrent and Review 7 (ix) has no correct area option.",
+      "Unit 8 Example 2 swaps x/y coefficients; Example 6 final center sign, Example 12 off-circle contact and Example 19 tangent constant are corrected separately from the source.",
+      "Unit 8 Exercise 8.2 Q2(a), Exercise 8.3 Q2 and Q6(b) contain off-circle points. Review 8 (ii)/(iii) have no generally correct center/radius option.",
+      "Unit 8 source tangent and angle derivations omit vertical cases or angle branches; original formulas and division-free learning checks retained.",
+      "Printed 265–266 hyperbola opening is motion-blurred across supplied JPG/PDF and garbled in Word; unresolved source fragments retained with a separately labelled learning derivation.",
+      "Exercise 9.1 Q2 has conflicting directrix/coordinate labels; Q4 is a perpendicular-bisector locus and Q5 has two unspecified opening directions.",
+      "Exercise 9.2 Q2(b) left endpoint y sign is wrong; all three Q6 contact points are off their ellipses.",
+      "Printed 263 ellipse summary mixes a<b denominator notation with semimajor-a element formulas; source entries retained with separate consistent corrections.",
+      "Unit 9 hyperbola intersection expansions use a wrong constant sign; Remember box repeats ellipse plus-b² while the correct tangent uses minus-b² and excludes asymptote slopes.",
+      "Unit 9 Examples 26–27 and Exercise 9.3 Q9(b) use off-curve contacts; no at-point tangent/normal is defined.",
+      "Exercise 9.3 Q2(d) has conflicting focus/vertex labels; Q3(c) specifies a family rather than a unique hyperbola.",
+      "Example 28 repeats Y² and reverses translation signs; Example 29 inverse Y sign and Example 30 squared-bracket coefficients are wrong.",
+      "Unit 9 summaries contain an incorrect vertical hyperbola slope and mixed eccentricity/axis statements; originals retained with separate corrected conditions.",
+      "Unit 9 has four source exercises; unsupported baseline extra exercise preserved in unreviewedExercises and excluded from source exercise list.",
+      "Exercise 10.1 Q2(c) has an uncertified smudged exponent; exact source crop retained and conditional verification separated. Exercise 10.1 Q2(d) does not satisfy its printed equation.",
+      "Exercise 10.2 Q4(b) gives initial y=0 where the equation requires a nonzero finite y derivative; no classical differentiable solution meets the condition.",
+      "Unit 11 source homogeneity examples use commas in place of sums; history series has a wrong constant. Original formulas and separate qualifications retained.",
+      "Unit 12 source false-position calculations leave the bracket and contain wrong residuals. Newton Example 3 prints a wrong derivative sign, and Maple examples mix functions or interval counts.",
+      "Exercise 12.1 includes invalid brackets and a function with no real root; Exercise 12.2 Q5 omits its integrand and remains partial with an explicitly chosen sample.",
+      "Printed answer-key omissions, incorrect signs, derivative orders, graph labels and units are preserved alongside separate checked learning explanations. Source translations and TTS remain pending."
+    ]
+  },
+  "perUnit": [
+    {
+      "unit": 1,
+      "title": "Introduction to Symbolic Package, Maple",
+      "sectionCount": 4,
+      "workedExampleCount": 6,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 0,
+      "activeExerciseProblemGroups": 0,
+      "sourceReferencedExerciseProblemGroups": 0,
+      "exerciseProblemGroupsWithAnswerContent": 0,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [],
+      "emptyExerciseContainers": [],
+      "embeddedSourceReviewMcqs": {
+        "count": 0,
+        "withAnswer": 0,
+        "withExplanation": 0,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": []
+      },
+      "supplementalSlo": {
+        "mcqs": 35,
+        "mcqsWithValidCorrectIndex": 35,
+        "mcqsWithExplanation": 35,
+        "shortQuestions": 20,
+        "shortQuestionsWithAnswer": 20,
+        "longQuestions": 14,
+        "longQuestionsWithAnswer": 14
+      },
+      "explicitPartialRecords": [],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 0,
+        "replacedProblemSnapshots": 0,
+        "duplicateWorkedExamples": 0,
+        "unreviewedExerciseContainers": 0,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 2,
+      "title": "Functions and Limits",
+      "sectionCount": 8,
+      "workedExampleCount": 41,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 6,
+      "activeExerciseProblemGroups": 43,
+      "sourceReferencedExerciseProblemGroups": 43,
+      "exerciseProblemGroupsWithAnswerContent": 43,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-2-1",
+          "title": "Exercise 2.1",
+          "problemGroups": 5
+        },
+        {
+          "id": "ex-2-2",
+          "title": "Exercise 2.2",
+          "problemGroups": 8
+        },
+        {
+          "id": "ex-2-3",
+          "title": "Exercise 2.3",
+          "problemGroups": 7
+        },
+        {
+          "id": "ex-2-4",
+          "title": "Exercise 2.4",
+          "problemGroups": 8
+        },
+        {
+          "id": "ex-2-5",
+          "title": "Review Exercise 2",
+          "problemGroups": 15
+        },
+        {
+          "id": "ex-2-6",
+          "title": "Review Exercise 2",
+          "problemGroups": 0
+        }
+      ],
+      "emptyExerciseContainers": [
+        {
+          "id": "ex-2-6",
+          "title": "Review Exercise 2",
+          "classification": "Duplicate empty Review Exercise 2 shell; ex-2-5 contains the 15 active review MCQs."
+        }
+      ],
+      "embeddedSourceReviewMcqs": {
+        "count": 15,
+        "withAnswer": 15,
+        "withExplanation": 15,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": []
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [
+        {
+          "unit": 2,
+          "exercise": "Exercise 2.1",
+          "id": "ex-2-1-q5",
+          "number": "Project",
+          "question": "Observe the following graphs and identify their domain and range.",
+          "answer": "Visible ranges approximately [0, 4] and [0, 3]; exact project domains still require clearer endpoint evidence.",
+          "solutionStatus": "partial: photographic profile endpoints unverified",
+          "sourceReferences": [
+            {
+              "class": 12,
+              "subject": "Mathematics",
+              "page": 31,
+              "jpg": "020_page_1.jpg",
+              "verification": "visually compared with JPG and full PDF"
+            }
+          ]
+        },
+        {
+          "unit": 2,
+          "exercise": "Exercise 2.3",
+          "id": "ex-2-3-project",
+          "number": "Project",
+          "question": "What type of function are represented by the curves drawn on each image?",
+          "answer": "(i) Suggested inverted absolute-value/piecewise affine profile; exact model unverified. (ii) Quadratic, downward-opening parabola.",
+          "solutionStatus": "partial: first project model legibility pending",
+          "sourceReferences": [
+            {
+              "page": 56,
+              "jpg": "032_page_2.jpg",
+              "verification": "visually compared with JPG and full PDF; project coefficient uncertainty separately recorded"
+            }
+          ]
+        }
+      ],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 0,
+        "replacedProblemSnapshots": 37,
+        "duplicateWorkedExamples": 0,
+        "unreviewedExerciseContainers": 0,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 3,
+      "title": "Differentiation",
+      "sectionCount": 8,
+      "workedExampleCount": 23,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 7,
+      "activeExerciseProblemGroups": 46,
+      "sourceReferencedExerciseProblemGroups": 46,
+      "exerciseProblemGroupsWithAnswerContent": 46,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-3-1",
+          "title": "Exercise 3.1",
+          "problemGroups": 8
+        },
+        {
+          "id": "ex-3-2",
+          "title": "Exercise 3.2",
+          "problemGroups": 6
+        },
+        {
+          "id": "ex-3-3",
+          "title": "Exercise 3.3",
+          "problemGroups": 9
+        },
+        {
+          "id": "ex-3-4",
+          "title": "Exercise 3.4",
+          "problemGroups": 5
+        },
+        {
+          "id": "ex-3-5",
+          "title": "Exercise 3.5",
+          "problemGroups": 7
+        },
+        {
+          "id": "ex-3-6",
+          "title": "Project — Spherical Balloon",
+          "problemGroups": 1
+        },
+        {
+          "id": "ex-3-7",
+          "title": "Review Exercise 3",
+          "problemGroups": 10
+        }
+      ],
+      "emptyExerciseContainers": [],
+      "embeddedSourceReviewMcqs": {
+        "count": 10,
+        "withAnswer": 10,
+        "withExplanation": 10,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": [
+          {
+            "unit": 3,
+            "exercise": "Review Exercise 3",
+            "id": "ex-3-review-vi",
+            "number": "vi",
+            "question": "If \\(h(t)=\\sqrt{t^3}\\), then h′(t) is: (a) \\(\\frac32\\sqrt t\\) (b) \\(\\frac23\\sqrt t\\) (c) \\(\\frac{3t}{2\\sqrt{t^2}}\\) (d) \\(\\frac{3t^2}{2\\sqrt{t^3}}\\)",
+            "answer": "Option (d) — also (a) on t > 0",
+            "solutionStatus": "worked and checked",
+            "sourceReferences": [
+              {
+                "page": 99,
+                "jpg": "054_page_1.jpg",
+                "verification": "complete question and all four options visually compared with JPG and full PDF"
+              }
+            ]
+          },
+          {
+            "unit": 3,
+            "exercise": "Review Exercise 3",
+            "id": "ex-3-review-vii",
+            "number": "vii",
+            "question": "If \\(f(x)=x\\tan x\\), then f′(x) = (a) \\(\\tan x+x\\sec^2x\\) (b) \\(x\\tan x-x\\sec^2x\\) (c) \\(\\sec^2x\\) (d) \\(\\tan x+x[1+\\tan^2x]\\)",
+            "answer": "Option (a) — also (d)",
+            "solutionStatus": "worked and checked",
+            "sourceReferences": [
+              {
+                "page": 99,
+                "jpg": "054_page_1.jpg",
+                "verification": "complete question and all four options visually compared with JPG and full PDF"
+              }
+            ]
+          }
+        ]
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 9,
+        "replacedProblemSnapshots": 11,
+        "duplicateWorkedExamples": 1,
+        "unreviewedExerciseContainers": 0,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 4,
+      "title": "Higher Order Derivatives and Applications",
+      "sectionCount": 4,
+      "workedExampleCount": 31,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 5,
+      "activeExerciseProblemGroups": 37,
+      "sourceReferencedExerciseProblemGroups": 37,
+      "exerciseProblemGroupsWithAnswerContent": 37,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-4-4",
+          "title": "Exercise 4.1",
+          "problemGroups": 8
+        },
+        {
+          "id": "ex-4-1",
+          "title": "Exercise 4.2",
+          "problemGroups": 8
+        },
+        {
+          "id": "ex-4-2",
+          "title": "Exercise 4.3",
+          "problemGroups": 10
+        },
+        {
+          "id": "ex-4-3",
+          "title": "Review Exercise 4",
+          "problemGroups": 10
+        },
+        {
+          "id": "ex-4-taylor-challenge",
+          "title": "Challenge — Taylor Series at 3",
+          "problemGroups": 1
+        }
+      ],
+      "emptyExerciseContainers": [],
+      "embeddedSourceReviewMcqs": {
+        "count": 10,
+        "withAnswer": 10,
+        "withExplanation": 10,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": [
+          {
+            "unit": 4,
+            "exercise": "Review Exercise 4",
+            "id": "ex-4-review-vi",
+            "number": "vi",
+            "question": "If f(x) and its derivatives at x = x₀ are f′(x₀), f″(x₀), … fⁿ(x), then the nth order polynomial f(x) will be equal to: (a) \\(f(x)+f(x_0-x)f′(x)+...+\\frac{(x_0-x)^n}{n!}f^n(x)\\) (b) \\(f(x_0)+(x-x_0)f′(x)+...+\\frac{(x-x_0)^n}{n!}f^n(x_0)\\) (c) \\(f(x+h)+(x+h)f′(h)+...+\\frac{x-h}{n!}f^n(h)\\) (d) \\(f(x-h)+(x-h)f′(h)+...+\\frac{x-h}{n!}f^n(h)\\)",
+            "answer": "Option (b — intended, after correcting f′(x) to f′(x₀))",
+            "sourceReferences": [
+              {
+                "page": 128,
+                "jpg": "068_page_2.jpg",
+                "verification": "all source question text and four choices visually compared with JPG/PDF"
+              }
+            ]
+          },
+          {
+            "unit": 4,
+            "exercise": "Review Exercise 4",
+            "id": "ex-4-review-viii",
+            "number": "viii",
+            "question": "The equation of normal at point (x₀,y₀) is (a) \\(x-x_0=\\frac1m(y-y_0)\\) (b) \\(y-y_0=\\frac1m(x_0-x)\\) (c) \\(y-y_0=m(x-x_0)\\) (d) \\(y-y_0=-\\frac1m(x-x_0)\\)",
+            "answer": "Option (d — also b)",
+            "sourceReferences": [
+              {
+                "page": 128,
+                "jpg": "068_page_2.jpg",
+                "verification": "all source question text and four choices visually compared with JPG/PDF"
+              }
+            ]
+          }
+        ]
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 16,
+        "replacedProblemSnapshots": 0,
+        "duplicateWorkedExamples": 0,
+        "unreviewedExerciseContainers": 0,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 5,
+      "title": "Differentiation of Vector Functions",
+      "sectionCount": 4,
+      "workedExampleCount": 13,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 4,
+      "activeExerciseProblemGroups": 20,
+      "sourceReferencedExerciseProblemGroups": 20,
+      "exerciseProblemGroupsWithAnswerContent": 20,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-5-3",
+          "title": "Exercise 5.1",
+          "problemGroups": 4
+        },
+        {
+          "id": "ex-5-1",
+          "title": "Exercise 5.2",
+          "problemGroups": 5
+        },
+        {
+          "id": "ex-5-2",
+          "title": "Review Exercise 5",
+          "problemGroups": 10
+        },
+        {
+          "id": "ex-5-project-source141",
+          "title": "Project — Vector Motion",
+          "problemGroups": 1
+        }
+      ],
+      "emptyExerciseContainers": [],
+      "embeddedSourceReviewMcqs": {
+        "count": 10,
+        "withAnswer": 10,
+        "withExplanation": 10,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": [
+          {
+            "unit": 5,
+            "exercise": "Review Exercise 5",
+            "id": "ex-5-review-v",
+            "number": "v",
+            "question": "If \\(F⃗(t)=(t+3)î+2t^2ĵ-(1-t)k̂\\), then \\(\\lim_{t\\to5}F⃗(-2)\\) is: (a) 8î+50ĵ+4k̂ (b) 8î+10ĵ−4k̂ (c) 8î+60ĵ−4k̂ (d) 8î+50ĵ+4k̂",
+            "answer": "No correct printed option",
+            "sourceReferences": [
+              {
+                "page": 140,
+                "jpg": "074_page_2.jpg",
+                "verification": "all four source options checked; inconsistent questions explained separately"
+              }
+            ]
+          },
+          {
+            "unit": 5,
+            "exercise": "Review Exercise 5",
+            "id": "ex-5-review-ix",
+            "number": "ix",
+            "question": "If velocity v⃗ = sin(t)î−2cos(t)ĵ+4k̂, then acceleration a⃗ = (a) −sin(t)î+2cos(t)ĵ−4k̂ (b) cos(t)î−2sin(t)ĵ+4k̂ (c) −cos(t)î+2sin(t)ĵ (d) cos(t)î−2sin(t)ĵ",
+            "answer": "No correct printed option",
+            "sourceReferences": [
+              {
+                "page": 140,
+                "jpg": "074_page_2.jpg",
+                "verification": "all four source options checked; inconsistent questions explained separately"
+              }
+            ]
+          }
+        ]
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 9,
+        "replacedProblemSnapshots": 0,
+        "duplicateWorkedExamples": 0,
+        "unreviewedExerciseContainers": 0,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 6,
+      "title": "Integration",
+      "sectionCount": 6,
+      "workedExampleCount": 13,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 6,
+      "activeExerciseProblemGroups": 27,
+      "sourceReferencedExerciseProblemGroups": 27,
+      "exerciseProblemGroupsWithAnswerContent": 27,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-6-5",
+          "title": "Exercise 6.1",
+          "problemGroups": 0
+        },
+        {
+          "id": "ex-6-3",
+          "title": "Exercise 6.2",
+          "problemGroups": 3
+        },
+        {
+          "id": "ex-6-4",
+          "title": "Exercise 6.3",
+          "problemGroups": 4
+        },
+        {
+          "id": "ex-6-1",
+          "title": "Exercise 6.4",
+          "problemGroups": 6
+        },
+        {
+          "id": "ex-6-2",
+          "title": "Review Exercise 6",
+          "problemGroups": 10
+        },
+        {
+          "id": "ex-6-integral-property-challenges",
+          "title": "Challenges — Integral Properties",
+          "problemGroups": 4
+        }
+      ],
+      "emptyExerciseContainers": [
+        {
+          "id": "ex-6-5",
+          "title": "Exercise 6.1",
+          "classification": "Real source gap: Exercise 6.1 questions lie in missing printed pages 142–157. Printed answer-key context survives, but does not recover the questions."
+        }
+      ],
+      "embeddedSourceReviewMcqs": {
+        "count": 10,
+        "withAnswer": 10,
+        "withExplanation": 10,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": [
+          {
+            "unit": 6,
+            "exercise": "Review Exercise 6",
+            "id": "ex-6-review-iii",
+            "number": "iii",
+            "question": "\\(\\int dx/\\sqrt{a^2-x^2}\\) = (a) \\(\\ln|x+\\sqrt{x^2+a^2}|+C\\) (b) \\(\\sin^{-1}(a/x)+C\\) (c) \\(\\sin^{-1}(x/a)+C\\) (d) \\(\\cos^{-1}(x/a)+C\\)",
+            "answer": "c, assuming a > 0",
+            "sourceReferences": [
+              {
+                "page": 176,
+                "jpg": "076_page_2.jpg",
+                "verification": "all source choices enlarged and visually checked; invalid and duplicate choices explained"
+              }
+            ]
+          },
+          {
+            "unit": 6,
+            "exercise": "Review Exercise 6",
+            "id": "ex-6-review-iv",
+            "number": "iv",
+            "question": "\\(\\int\\frac1{\\sqrt{t^2-36}}\\,dx\\) = (a) \\(\\frac1{2a}\\ln|\\frac{t-6}{t+6}|+C\\) (b) \\(\\frac12\\ln|\\frac{t-6}{t+6}|+C\\) (c) \\(-\\frac12(\\ln|t/6+1|-\\ln|t/6-1|+C)\\) (d) \\(\\frac16(\\ln|t/6+1|+6)+C\\)",
+            "answer": "No correct printed option",
+            "sourceReferences": [
+              {
+                "page": 176,
+                "jpg": "076_page_2.jpg",
+                "verification": "all source choices enlarged and visually checked; invalid and duplicate choices explained"
+              }
+            ]
+          }
+        ]
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [],
+      "sourceGap": {
+        "pageStart": 142,
+        "pageEnd": 157,
+        "status": "unavailable in supplied JPG, PDF and Word formats",
+        "impact": "Unit opening, objectives, initial rules and examples are not source-complete."
+      },
+      "archivedRecordsExcluded": {
+        "problemGroups": 17,
+        "replacedProblemSnapshots": 0,
+        "duplicateWorkedExamples": 2,
+        "unreviewedExerciseContainers": 0,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 7,
+      "title": "Plane Analytic Geometry: Straight Line",
+      "sectionCount": 10,
+      "workedExampleCount": 30,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 7,
+      "activeExerciseProblemGroups": 40,
+      "sourceReferencedExerciseProblemGroups": 40,
+      "exerciseProblemGroupsWithAnswerContent": 40,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-7-1",
+          "title": "Exercise 7.1",
+          "problemGroups": 5
+        },
+        {
+          "id": "ex-7-2",
+          "title": "Exercise 7.2",
+          "problemGroups": 8
+        },
+        {
+          "id": "ex-7-3",
+          "title": "Exercise",
+          "problemGroups": 0
+        },
+        {
+          "id": "ex-7-4",
+          "title": "Review Exercise 7",
+          "problemGroups": 10
+        },
+        {
+          "id": "ex-7-5",
+          "title": "Exercise 7.3",
+          "problemGroups": 8
+        },
+        {
+          "id": "ex-7-6",
+          "title": "Exercise 7.4",
+          "problemGroups": 8
+        },
+        {
+          "id": "ex-7-midpoint-project",
+          "title": "Project — Home and School Midpoint",
+          "problemGroups": 1
+        }
+      ],
+      "emptyExerciseContainers": [
+        {
+          "id": "ex-7-3",
+          "title": "Exercise",
+          "classification": "Unnumbered empty parser shell titled Exercise. Numbered 7.1–7.4 and Review Exercise 7 are represented elsewhere."
+        }
+      ],
+      "embeddedSourceReviewMcqs": {
+        "count": 10,
+        "withAnswer": 10,
+        "withExplanation": 10,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": [
+          {
+            "unit": 7,
+            "exercise": "Review Exercise 7",
+            "id": "ex-7-review-vii",
+            "number": "vii",
+            "question": "Two given lines are perpendicular if their slopes m₁ and m₂ are: (a) m₁+m₂ = 1 (b) m₂−m₁ = 0 (c) m₁m₂ = 1 (d) m₁m₂ = −1",
+            "answer": "d, when both slopes are finite",
+            "sourceReferences": [
+              {
+                "page": 211,
+                "jpg": "110_page_1.jpg",
+                "verification": "All source choices enlarged and visually checked; incorrect area choices explained"
+              }
+            ]
+          },
+          {
+            "unit": 7,
+            "exercise": "Review Exercise 7",
+            "id": "ex-7-review-ix",
+            "number": "ix",
+            "question": "The area of a triangular region is A(4,5), B(−7,4) and C(3,1) is: (a) 31 (b) −31 (c) 47 (d) −47",
+            "answer": "No correct printed option; 43/2 square units",
+            "sourceReferences": [
+              {
+                "page": 211,
+                "jpg": "110_page_1.jpg",
+                "verification": "All source choices enlarged and visually checked; incorrect area choices explained"
+              }
+            ]
+          }
+        ]
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 17,
+        "replacedProblemSnapshots": 0,
+        "duplicateWorkedExamples": 5,
+        "unreviewedExerciseContainers": 0,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 8,
+      "title": "Conics I",
+      "sectionCount": 5,
+      "workedExampleCount": 19,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 4,
+      "activeExerciseProblemGroups": 36,
+      "sourceReferencedExerciseProblemGroups": 36,
+      "exerciseProblemGroupsWithAnswerContent": 36,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-8-1",
+          "title": "Exercise 8.1",
+          "problemGroups": 8
+        },
+        {
+          "id": "ex-8-2",
+          "title": "Exercise 8.2",
+          "problemGroups": 12
+        },
+        {
+          "id": "ex-8-3",
+          "title": "Exercise 8.3",
+          "problemGroups": 6
+        },
+        {
+          "id": "ex-8-4",
+          "title": "Review Exercise 8",
+          "problemGroups": 10
+        }
+      ],
+      "emptyExerciseContainers": [],
+      "embeddedSourceReviewMcqs": {
+        "count": 10,
+        "withAnswer": 10,
+        "withExplanation": 10,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": [
+          {
+            "unit": 8,
+            "exercise": "Review Exercise 8",
+            "id": "ex-8-review-i",
+            "number": "i",
+            "question": "If radius of a circle is 2cm then its equation will be: (a) x²+y² = 2 (b) x²+y² = √2 (c) x²+y² = 8 (d) x²+y² = 4",
+            "answer": "d, assuming center at the origin",
+            "sourceReferences": [
+              {
+                "page": 239,
+                "jpg": "124_page_1.jpg",
+                "verification": "All source choices visually checked, including missing general center and radius answers"
+              }
+            ]
+          },
+          {
+            "unit": 8,
+            "exercise": "Review Exercise 8",
+            "id": "ex-8-review-ii",
+            "number": "ii",
+            "question": "In the general equation of circle the coordinates of centre are: (a) (x,y) (b) (−x,−y) (c) (f,g) (d) (−f,−g)",
+            "answer": "No generally correct printed option; center (−g,−f)",
+            "sourceReferences": [
+              {
+                "page": 239,
+                "jpg": "124_page_1.jpg",
+                "verification": "All source choices visually checked, including missing general center and radius answers"
+              }
+            ]
+          },
+          {
+            "unit": 8,
+            "exercise": "Review Exercise 8",
+            "id": "ex-8-review-iii",
+            "number": "iii",
+            "question": "For the general equation of the circle the radius can be calculated by r = (a) \\(\\sqrt{x^2+y^2-c^2}\\) (b) \\(\\sqrt{(-x)^2+(-y)^2-c^2}\\) (c) \\(\\sqrt{(-g)^2+(-f)^2-c^2}\\) (d) \\(\\sqrt{(-g)^2+(-f)^2+c^2}\\)",
+            "answer": "No generally correct printed option; r = √(g²+f²−c)",
+            "sourceReferences": [
+              {
+                "page": 239,
+                "jpg": "124_page_1.jpg",
+                "verification": "All source choices visually checked, including missing general center and radius answers"
+              }
+            ]
+          },
+          {
+            "unit": 8,
+            "exercise": "Review Exercise 8",
+            "id": "ex-8-review-x",
+            "number": "x",
+            "question": "A line perpendicular to the contact point to a circle is called: (a) Tangent (b) Normal (c) Chord (d) Diameter",
+            "answer": "b, interpreting “perpendicular to the tangent at the contact point”",
+            "sourceReferences": [
+              {
+                "page": 239,
+                "jpg": "124_page_1.jpg",
+                "verification": "All source choices visually checked, including missing general center and radius answers"
+              }
+            ]
+          }
+        ]
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 13,
+        "replacedProblemSnapshots": 0,
+        "duplicateWorkedExamples": 0,
+        "unreviewedExerciseContainers": 0,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 9,
+      "title": "Conics II",
+      "sectionCount": 5,
+      "workedExampleCount": 31,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 4,
+      "activeExerciseProblemGroups": 30,
+      "sourceReferencedExerciseProblemGroups": 30,
+      "exerciseProblemGroupsWithAnswerContent": 30,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-9-1",
+          "title": "Exercise 9.1",
+          "problemGroups": 10
+        },
+        {
+          "id": "ex-9-2",
+          "title": "Exercise 9.2",
+          "problemGroups": 7
+        },
+        {
+          "id": "ex-9-3",
+          "title": "Exercise 9.3",
+          "problemGroups": 9
+        },
+        {
+          "id": "ex-9-4",
+          "title": "Exercise 9.4",
+          "problemGroups": 4
+        }
+      ],
+      "emptyExerciseContainers": [],
+      "embeddedSourceReviewMcqs": {
+        "count": 0,
+        "withAnswer": 0,
+        "withExplanation": 0,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": []
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 8,
+        "replacedProblemSnapshots": 0,
+        "duplicateWorkedExamples": 0,
+        "unreviewedExerciseContainers": 1,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 10,
+      "title": "Differential Equations",
+      "sectionCount": 5,
+      "workedExampleCount": 12,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 3,
+      "activeExerciseProblemGroups": 23,
+      "sourceReferencedExerciseProblemGroups": 23,
+      "exerciseProblemGroupsWithAnswerContent": 23,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-10-1",
+          "title": "Exercise 10.1",
+          "problemGroups": 5
+        },
+        {
+          "id": "ex-10-2",
+          "title": "Exercise 10.2",
+          "problemGroups": 11
+        },
+        {
+          "id": "ex-10-3",
+          "title": "Review Exercise 10",
+          "problemGroups": 7
+        }
+      ],
+      "emptyExerciseContainers": [],
+      "embeddedSourceReviewMcqs": {
+        "count": 7,
+        "withAnswer": 7,
+        "withExplanation": 7,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": [
+          {
+            "unit": 10,
+            "exercise": "Review Exercise 10",
+            "id": "review-10-vi",
+            "number": "vi",
+            "question": "The differential equation for orthogonal trajectories of x²+y²=c is: (a) dy/dx=cx; (b) y=cx; (c) dy/dx=ct; (d) cy=dy/dθ.",
+            "answer": "No correct differential-equation option; (b) is the finite-slope trajectory family.",
+            "sourceReferences": [
+              {
+                "page": 298,
+                "jpg": "153_page_2.jpg",
+                "verification": "All four source choices checked visually; literal stem mismatch retained"
+              }
+            ]
+          }
+        ]
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [
+        {
+          "unit": 10,
+          "exercise": "Exercise 10.1",
+          "id": "ex-10-1-q2",
+          "number": "2",
+          "question": "Show the indicated function solves the equation: (a) y=e^x+e^(2x), y″−3y′+2y=0; (b) y=x−x ln x, xy′+x−y=0; (c) y=(x+c)e^(−x), y′+y=e raised to a smudged source exponent; (d) y=e^x+e^(−x), y″−3y′+2y=0.",
+          "answer": "(a),(b) verified; (c) gives RHS e^(−x), printed exponent unresolved; (d) fails printed equation with residual 6e^(−x).",
+          "sourceStatus": "partial_source_legibility",
+          "sourceReferences": [
+            {
+              "page": 290,
+              "jpg": "149_page_2.jpg",
+              "verification": "Enlarged source exercise expressions checked; Q2(c) exponent remains explicitly partial"
+            }
+          ]
+        }
+      ],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 15,
+        "replacedProblemSnapshots": 0,
+        "duplicateWorkedExamples": 1,
+        "unreviewedExerciseContainers": 0,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 11,
+      "title": "Partial Differentiation",
+      "sectionCount": 3,
+      "workedExampleCount": 8,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 3,
+      "activeExerciseProblemGroups": 21,
+      "sourceReferencedExerciseProblemGroups": 21,
+      "exerciseProblemGroupsWithAnswerContent": 21,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-11-1",
+          "title": "Exercise 11.1",
+          "problemGroups": 6
+        },
+        {
+          "id": "ex-11-2",
+          "title": "Exercise 11.2",
+          "problemGroups": 6
+        },
+        {
+          "id": "ex-11-3",
+          "title": "Review Exercise 11",
+          "problemGroups": 9
+        }
+      ],
+      "emptyExerciseContainers": [],
+      "embeddedSourceReviewMcqs": {
+        "count": 9,
+        "withAnswer": 9,
+        "withExplanation": 9,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": [
+          {
+            "unit": 11,
+            "exercise": "Review Exercise 11",
+            "id": "review-11-viii",
+            "number": "viii",
+            "question": "If f(x,y)=cos y·e^(3x), then fₓ is: (a) 3cos y·e^(3x)−sin y; (b) 3cos y·e^(3x); (c) 3e^(3x)cos y; (d) 8cos y·e^(3x) [source label (l)].",
+            "answer": "Both (b) and (c): 3cos y·e^(3x).",
+            "sourceReferences": [
+              {
+                "page": 307,
+                "jpg": "158_page_1.jpg",
+                "verification": "All choices and label defects visually checked"
+              }
+            ]
+          }
+        ]
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 20,
+        "replacedProblemSnapshots": 0,
+        "duplicateWorkedExamples": 0,
+        "unreviewedExerciseContainers": 0,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    },
+    {
+      "unit": 12,
+      "title": "Introduction to Numerical Methods",
+      "sectionCount": 4,
+      "workedExampleCount": 7,
+      "workedExamplesMissingAnswerContent": [],
+      "exerciseContainers": 4,
+      "activeExerciseProblemGroups": 24,
+      "sourceReferencedExerciseProblemGroups": 24,
+      "exerciseProblemGroupsWithAnswerContent": 24,
+      "exerciseProblemGroupsWithoutAnswerContent": [],
+      "literalAnswerPlaceholders": [],
+      "exerciseInventory": [
+        {
+          "id": "ex-12-2",
+          "title": "Review Exercise 12",
+          "problemGroups": 10
+        },
+        {
+          "id": "ex-12-3",
+          "title": "Exercise 12.1",
+          "problemGroups": 7
+        },
+        {
+          "id": "ex-12-4",
+          "title": "Exercise 12.2",
+          "problemGroups": 5
+        },
+        {
+          "id": "ex-12-source-project",
+          "title": "Project",
+          "problemGroups": 2
+        }
+      ],
+      "emptyExerciseContainers": [],
+      "embeddedSourceReviewMcqs": {
+        "count": 10,
+        "withAnswer": 10,
+        "withExplanation": 10,
+        "withInteractiveCorrectIndex": 0,
+        "sourceOptionCaveats": [
+          {
+            "unit": 12,
+            "exercise": "Review Exercise 12",
+            "id": "review-12-ii",
+            "number": "ii",
+            "question": "A root of x²+6x−5=0 is: (a) x≈−3.7187…; (b) x≈0.37187…; (c) x≈−0.37187…; (d) x=4.7847….",
+            "answer": "No correct option; roots −3±√14.",
+            "sourceReferences": [
+              {
+                "page": 324,
+                "jpg": "166_page_2.jpg",
+                "verification": "All source choices and wording anomalies checked visually"
+              }
+            ]
+          },
+          {
+            "unit": 12,
+            "exercise": "Review Exercise 12",
+            "id": "review-12-v",
+            "number": "v",
+            "question": "If f(a),f(c) have opposite signs, the root lies in: (a) [a,b]; (b) [a,c]; (c) (a,b); (d) (a,c).",
+            "answer": "Intended retained bracket (b) [a,c]; (d) also contains the interior root if f is continuous.",
+            "sourceReferences": [
+              {
+                "page": 324,
+                "jpg": "166_page_2.jpg",
+                "verification": "All source choices and wording anomalies checked visually"
+              }
+            ]
+          },
+          {
+            "unit": 12,
+            "exercise": "Review Exercise 12",
+            "id": "review-12-ix",
+            "number": "ix",
+            "question": "For x−sin x−1/2=0, bisection between 1 and 2 gives: (a) 1.88; (b) 1.48; (c) 1.49; (d) 1.897.",
+            "answer": "Closest offered (c) 1.49; computed root ≈1.4973003891, rounded to two decimals 1.50.",
+            "sourceReferences": [
+              {
+                "page": 324,
+                "jpg": "166_page_2.jpg",
+                "verification": "All source choices and wording anomalies checked visually"
+              }
+            ]
+          }
+        ]
+      },
+      "supplementalSlo": {
+        "mcqs": 0,
+        "mcqsWithValidCorrectIndex": 0,
+        "mcqsWithExplanation": 0,
+        "shortQuestions": 0,
+        "shortQuestionsWithAnswer": 0,
+        "longQuestions": 0,
+        "longQuestionsWithAnswer": 0
+      },
+      "explicitPartialRecords": [
+        {
+          "unit": 12,
+          "exercise": "Exercise 12.2",
+          "id": "ex-12-2-q5",
+          "number": "5",
+          "question": "Use MAPLE commands to find approximate area on [0,2] by (a) trapezoidal rule and (b) Simpson’s rule. [No integrand is supplied on this source question.]",
+          "answer": "No unique source answer: integrand missing. Supplemental e^(−x), N=10: T₁₀≈0.8675450128, S₁₀≈0.8646723662.",
+          "solutionStatus": "partial: Source omits the integrand; a supplemental sample is shown.",
+          "sourceStatus": "under_specified_source_problem",
+          "sourceReferences": [
+            {
+              "page": 323,
+              "jpg": "166_page_1.jpg",
+              "verification": "All bounds and source wording checked; sums independently calculated"
+            }
+          ]
+        }
+      ],
+      "sourceGap": null,
+      "archivedRecordsExcluded": {
+        "problemGroups": 23,
+        "replacedProblemSnapshots": 0,
+        "duplicateWorkedExamples": 0,
+        "unreviewedExerciseContainers": 1,
+        "unreviewedExerciseProblemGroups": 0
+      }
+    }
+  ]
+}

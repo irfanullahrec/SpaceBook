@@ -1,0 +1,476 @@
+{
+ "pdfPage": 26,
+ "sections": [
+  {
+   "id": "stat12-p026-expectation-function",
+   "title": "2.2.6 Expectation of a function — Examples 2.10–2.11",
+   "headingUrdu": "2.2.6 تفاعل کی توقع — مثالیں 2.10–2.11",
+   "headingPashto": "2.2.6 د تابع تمه — بېلګې 2.10–2.11",
+   "paras": [
+    {
+     "text": "$=3(0.2)+8(0.7)+10(0.1)$",
+     "urdu": "$=3(0.2)+8(0.7)+10(0.1)$",
+     "pashto": "$=3(0.2)+8(0.7)+10(0.1)$"
+    },
+    {
+     "text": "$E(X)=0.6+5.6+1=7.2$",
+     "urdu": "$E(X)=0.6+5.6+1=7.2$",
+     "pashto": "$E(X)=0.6+5.6+1=7.2$"
+    },
+    {
+     "text": "2.2.6 Mathematical expectation of a function of discrete random variable",
+     "urdu": "2.2.6 منفصل تصادفی متغیر کے تفاعل کی ریاضیاتی توقع",
+     "pashto": "2.2.6 د منفصل تصادفي متغیر د تابع ریاضي تمه"
+    },
+    {
+     "text": "If function of a random variable is denoted by H(X), then expected value of the function is denoted by E[H(X)] and its formula is given by $E[H(X)]=\\Sigma H(x_i)p(x_i)$.",
+     "urdu": "اگر تصادفی متغیر کے تفاعل کو H(X) سے ظاہر کیا جائے تو اس تفاعل کی متوقع قیمت کو E[H(X)] سے ظاہر کرتے ہیں اور اس کا فارمولا $E[H(X)]=\\Sigma H(x_i)p(x_i)$ ہے۔",
+     "pashto": "که د تصادفي متغیر تابع په H(X) وښودل شي، نو د تابع تمه شوی قیمت په E[H(X)] ښودل کېږي او فورمول یې $E[H(X)]=\\Sigma H(x_i)p(x_i)$ دی."
+    },
+    {
+     "text": "Example 2.10",
+     "urdu": "مثال 2.10",
+     "pashto": "بېلګه 2.10"
+    },
+    {
+     "text": "A discrete random variable X has the probability distribution:",
+     "urdu": "ایک منفصل تصادفی متغیر X کی احتمالی تقسیم یہ ہے:",
+     "pashto": "یو منفصل تصادفي متغیر X دا احتمالي وېش لري:"
+    },
+    {
+     "text": "Find (i) $E(X^2)$ (ii) $E(2X+5)$",
+     "urdu": "معلوم کریں (i) $E(X^2)$ (ii) $E(2X+5)$",
+     "pashto": "پیدا کړئ (i) $E(X^2)$ (ii) $E(2X+5)$"
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Since $X^2$ and $(2X+5)$ are functions of the given random variable X, therefore, we first find their probability distributions and then the means as follows:",
+     "urdu": "چونکہ $X^2$ اور $(2X+5)$ دیے گئے تصادفی متغیر X کے تفاعل ہیں، اس لیے ہم پہلے ان کی احتمالی تقسیمیں اور پھر اوسط یوں معلوم کرتے ہیں:",
+     "pashto": "څرنګه چې $X^2$ او $(2X+5)$ د ورکړل شوي تصادفي متغیر X تابع ګانې دي، نو لومړی د هغو احتمالي وېشونه او بیا منځني داسې پیدا کوو:"
+    },
+    {
+     "text": "$\\text{Now}\\quad E\\{H(X)\\}=\\Sigma H(x_i)\\,p(x_i)$",
+     "urdu": "$\\text{Now}\\quad E\\{H(X)\\}=\\Sigma H(x_i)\\,p(x_i)$",
+     "pashto": "$\\text{Now}\\quad E\\{H(X)\\}=\\Sigma H(x_i)\\,p(x_i)$"
+    },
+    {
+     "text": "$(i)\\quad E\\{X^2\\}=\\Sigma x_i^2\\,p(x_i)=6$",
+     "urdu": "$(i)\\quad E\\{X^2\\}=\\Sigma x_i^2\\,p(x_i)=6$",
+     "pashto": "$(i)\\quad E\\{X^2\\}=\\Sigma x_i^2\\,p(x_i)=6$"
+    },
+    {
+     "text": "$(ii)\\quad E\\{2X+5\\}=\\Sigma(2x_i+5)\\,p(x_i)=7$",
+     "urdu": "$(ii)\\quad E\\{2X+5\\}=\\Sigma(2x_i+5)\\,p(x_i)=7$",
+     "pashto": "$(ii)\\quad E\\{2X+5\\}=\\Sigma(2x_i+5)\\,p(x_i)=7$"
+    },
+    {
+     "text": "Example 2.11",
+     "urdu": "مثال 2.11",
+     "pashto": "بېلګه 2.11"
+    },
+    {
+     "text": "The probability function of a discrete random variable Y is given by",
+     "urdu": "ایک منفصل تصادفی متغیر Y کا احتمالی تفاعل یہ ہے",
+     "pashto": "د یوه منفصل تصادفي متغیر Y احتمالي تابع دا ده"
+    },
+    {
+     "text": "$$p(y)=\\left\\{\\begin{matrix}{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}, & y=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$",
+     "urdu": "$$p(y)=\\left\\{\\begin{matrix}{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}, & y=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$",
+     "pashto": "$$p(y)=\\left\\{\\begin{matrix}{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}, & y=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$$"
+    },
+    {
+     "text": "Find E(Y) and E(Y²).",
+     "urdu": "E(Y) اور E(Y²) معلوم کریں۔",
+     "pashto": "E(Y) او E(Y²) پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "By definition",
+     "urdu": "تعریف کے مطابق",
+     "pashto": "د تعریف له مخې"
+    },
+    {
+     "text": "$E(Y)=\\sum_{y=0}^{3}y_i\\,p(y_i)$",
+     "urdu": "$E(Y)=\\sum_{y=0}^{3}y_i\\,p(y_i)$",
+     "pashto": "$E(Y)=\\sum_{y=0}^{3}y_i\\,p(y_i)$"
+    },
+    {
+     "text": "$=\\sum_{y=0}^{3}y\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}$",
+     "urdu": "$=\\sum_{y=0}^{3}y\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}$",
+     "pashto": "$=\\sum_{y=0}^{3}y\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}$"
+    },
+    {
+     "text": "$=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+2\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+3\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}$",
+     "urdu": "$=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+2\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+3\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}$",
+     "pashto": "$=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+2\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+3\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}$"
+    },
+    {
+     "text": "$=0+3\\left(\\frac{1}{8}\\right)+6\\left(\\frac{1}{8}\\right)+3\\left(\\frac{1}{8}\\right)=\\frac{12}{8}=1.5$",
+     "urdu": "$=0+3\\left(\\frac{1}{8}\\right)+6\\left(\\frac{1}{8}\\right)+3\\left(\\frac{1}{8}\\right)=\\frac{12}{8}=1.5$",
+     "pashto": "$=0+3\\left(\\frac{1}{8}\\right)+6\\left(\\frac{1}{8}\\right)+3\\left(\\frac{1}{8}\\right)=\\frac{12}{8}=1.5$"
+    },
+    {
+     "text": "$E(Y^2)=\\sum_{y=0}^{3}y^2\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}$",
+     "urdu": "$E(Y^2)=\\sum_{y=0}^{3}y^2\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}$",
+     "pashto": "$E(Y^2)=\\sum_{y=0}^{3}y^2\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}$"
+    },
+    {
+     "text": "$=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+4\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+9\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}$",
+     "urdu": "$=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+4\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+9\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}$",
+     "pashto": "$=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+4\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+9\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}$"
+    },
+    {
+     "text": "$=0+3\\left(\\frac{1}{8}\\right)+12\\left(\\frac{1}{8}\\right)+9\\left(\\frac{1}{8}\\right)=\\frac{24}{8}=3$",
+     "urdu": "$=0+3\\left(\\frac{1}{8}\\right)+12\\left(\\frac{1}{8}\\right)+9\\left(\\frac{1}{8}\\right)=\\frac{24}{8}=3$",
+     "pashto": "$=0+3\\left(\\frac{1}{8}\\right)+12\\left(\\frac{1}{8}\\right)+9\\left(\\frac{1}{8}\\right)=\\frac{24}{8}=3$"
+    }
+   ],
+   "theory": "=3(0.2)+8(0.7)+10(0.1)\n\nE(X)=0.6+5.6+1=7.2\n\n2.2.6 Mathematical expectation of a function of discrete random variable\n\nIf function of a random variable is denoted by H(X), then expected value of the function is denoted by E[H(X)] and its formula is given by E[H(X)]=\\Sigma H(x_i)p(x_i).\n\nExample 2.10\n\nA discrete random variable X has the probability distribution:\n\nFind (i) E(X^2) (ii) E(2X+5)\n\nSolution:\n\nSince X^2 and (2X+5) are functions of the given random variable X, therefore, we first find their probability distributions and then the means as follows:\n\n\\text{Now}\\quad E\\{H(X)\\}=\\Sigma H(x_i)\\,p(x_i)\n\n(i)\\quad E\\{X^2\\}=\\Sigma x_i^2\\,p(x_i)=6\n\n(ii)\\quad E\\{2X+5\\}=\\Sigma(2x_i+5)\\,p(x_i)=7\n\nExample 2.11\n\nThe probability function of a discrete random variable Y is given by\n\n$p(y)=\\left\\{\\begin{matrix}{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}, & y=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\nFind E(Y) and E(Y²).\n\nSolution:\n\nBy definition\n\nE(Y)=\\sum_{y=0}^{3}y_i\\,p(y_i)\n\n=\\sum_{y=0}^{3}y\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}\n\n=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+2\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+3\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}\n\n=0+3\\left(\\frac{1}{8}\\right)+6\\left(\\frac{1}{8}\\right)+3\\left(\\frac{1}{8}\\right)=\\frac{12}{8}=1.5\n\nE(Y^2)=\\sum_{y=0}^{3}y^2\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}\n\n=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+4\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+9\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}\n\n=0+3\\left(\\frac{1}{8}\\right)+12\\left(\\frac{1}{8}\\right)+9\\left(\\frac{1}{8}\\right)=\\frac{24}{8}=3",
+   "urdu": "=3(0.2)+8(0.7)+10(0.1)\n\nE(X)=0.6+5.6+1=7.2\n\n2.2.6 منفصل تصادفی متغیر کے تفاعل کی ریاضیاتی توقع\n\nاگر تصادفی متغیر کے تفاعل کو H(X) سے ظاہر کیا جائے تو اس تفاعل کی متوقع قیمت کو E[H(X)] سے ظاہر کرتے ہیں اور اس کا فارمولا E[H(X)]=\\Sigma H(x_i)p(x_i) ہے۔\n\nمثال 2.10\n\nایک منفصل تصادفی متغیر X کی احتمالی تقسیم یہ ہے:\n\nمعلوم کریں (i) E(X^2) (ii) E(2X+5)\n\nحل:\n\nچونکہ X^2 اور (2X+5) دیے گئے تصادفی متغیر X کے تفاعل ہیں، اس لیے ہم پہلے ان کی احتمالی تقسیمیں اور پھر اوسط یوں معلوم کرتے ہیں:\n\n\\text{Now}\\quad E\\{H(X)\\}=\\Sigma H(x_i)\\,p(x_i)\n\n(i)\\quad E\\{X^2\\}=\\Sigma x_i^2\\,p(x_i)=6\n\n(ii)\\quad E\\{2X+5\\}=\\Sigma(2x_i+5)\\,p(x_i)=7\n\nمثال 2.11\n\nایک منفصل تصادفی متغیر Y کا احتمالی تفاعل یہ ہے\n\n$p(y)=\\left\\{\\begin{matrix}{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}, & y=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\nE(Y) اور E(Y²) معلوم کریں۔\n\nحل:\n\nتعریف کے مطابق\n\nE(Y)=\\sum_{y=0}^{3}y_i\\,p(y_i)\n\n=\\sum_{y=0}^{3}y\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}\n\n=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+2\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+3\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}\n\n=0+3\\left(\\frac{1}{8}\\right)+6\\left(\\frac{1}{8}\\right)+3\\left(\\frac{1}{8}\\right)=\\frac{12}{8}=1.5\n\nE(Y^2)=\\sum_{y=0}^{3}y^2\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}\n\n=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+4\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+9\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}\n\n=0+3\\left(\\frac{1}{8}\\right)+12\\left(\\frac{1}{8}\\right)+9\\left(\\frac{1}{8}\\right)=\\frac{24}{8}=3",
+   "pashto": "=3(0.2)+8(0.7)+10(0.1)\n\nE(X)=0.6+5.6+1=7.2\n\n2.2.6 د منفصل تصادفي متغیر د تابع ریاضي تمه\n\nکه د تصادفي متغیر تابع په H(X) وښودل شي، نو د تابع تمه شوی قیمت په E[H(X)] ښودل کېږي او فورمول یې E[H(X)]=\\Sigma H(x_i)p(x_i) دی.\n\nبېلګه 2.10\n\nیو منفصل تصادفي متغیر X دا احتمالي وېش لري:\n\nپیدا کړئ (i) E(X^2) (ii) E(2X+5)\n\nحل:\n\nڅرنګه چې X^2 او (2X+5) د ورکړل شوي تصادفي متغیر X تابع ګانې دي، نو لومړی د هغو احتمالي وېشونه او بیا منځني داسې پیدا کوو:\n\n\\text{Now}\\quad E\\{H(X)\\}=\\Sigma H(x_i)\\,p(x_i)\n\n(i)\\quad E\\{X^2\\}=\\Sigma x_i^2\\,p(x_i)=6\n\n(ii)\\quad E\\{2X+5\\}=\\Sigma(2x_i+5)\\,p(x_i)=7\n\nبېلګه 2.11\n\nد یوه منفصل تصادفي متغیر Y احتمالي تابع دا ده\n\n$p(y)=\\left\\{\\begin{matrix}{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}, & y=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\nE(Y) او E(Y²) پیدا کړئ.\n\nحل:\n\nد تعریف له مخې\n\nE(Y)=\\sum_{y=0}^{3}y_i\\,p(y_i)\n\n=\\sum_{y=0}^{3}y\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}\n\n=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+2\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+3\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}\n\n=0+3\\left(\\frac{1}{8}\\right)+6\\left(\\frac{1}{8}\\right)+3\\left(\\frac{1}{8}\\right)=\\frac{12}{8}=1.5\n\nE(Y^2)=\\sum_{y=0}^{3}y^2\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}\n\n=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+4\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+9\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}\n\n=0+3\\left(\\frac{1}{8}\\right)+12\\left(\\frac{1}{8}\\right)+9\\left(\\frac{1}{8}\\right)=\\frac{24}{8}=3",
+   "theoryUrdu": "=3(0.2)+8(0.7)+10(0.1)\n\nE(X)=0.6+5.6+1=7.2\n\n2.2.6 منفصل تصادفی متغیر کے تفاعل کی ریاضیاتی توقع\n\nاگر تصادفی متغیر کے تفاعل کو H(X) سے ظاہر کیا جائے تو اس تفاعل کی متوقع قیمت کو E[H(X)] سے ظاہر کرتے ہیں اور اس کا فارمولا E[H(X)]=\\Sigma H(x_i)p(x_i) ہے۔\n\nمثال 2.10\n\nایک منفصل تصادفی متغیر X کی احتمالی تقسیم یہ ہے:\n\nمعلوم کریں (i) E(X^2) (ii) E(2X+5)\n\nحل:\n\nچونکہ X^2 اور (2X+5) دیے گئے تصادفی متغیر X کے تفاعل ہیں، اس لیے ہم پہلے ان کی احتمالی تقسیمیں اور پھر اوسط یوں معلوم کرتے ہیں:\n\n\\text{Now}\\quad E\\{H(X)\\}=\\Sigma H(x_i)\\,p(x_i)\n\n(i)\\quad E\\{X^2\\}=\\Sigma x_i^2\\,p(x_i)=6\n\n(ii)\\quad E\\{2X+5\\}=\\Sigma(2x_i+5)\\,p(x_i)=7\n\nمثال 2.11\n\nایک منفصل تصادفی متغیر Y کا احتمالی تفاعل یہ ہے\n\n$p(y)=\\left\\{\\begin{matrix}{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}, & y=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\nE(Y) اور E(Y²) معلوم کریں۔\n\nحل:\n\nتعریف کے مطابق\n\nE(Y)=\\sum_{y=0}^{3}y_i\\,p(y_i)\n\n=\\sum_{y=0}^{3}y\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}\n\n=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+2\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+3\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}\n\n=0+3\\left(\\frac{1}{8}\\right)+6\\left(\\frac{1}{8}\\right)+3\\left(\\frac{1}{8}\\right)=\\frac{12}{8}=1.5\n\nE(Y^2)=\\sum_{y=0}^{3}y^2\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}\n\n=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+4\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+9\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}\n\n=0+3\\left(\\frac{1}{8}\\right)+12\\left(\\frac{1}{8}\\right)+9\\left(\\frac{1}{8}\\right)=\\frac{24}{8}=3",
+   "theoryPashto": "=3(0.2)+8(0.7)+10(0.1)\n\nE(X)=0.6+5.6+1=7.2\n\n2.2.6 د منفصل تصادفي متغیر د تابع ریاضي تمه\n\nکه د تصادفي متغیر تابع په H(X) وښودل شي، نو د تابع تمه شوی قیمت په E[H(X)] ښودل کېږي او فورمول یې E[H(X)]=\\Sigma H(x_i)p(x_i) دی.\n\nبېلګه 2.10\n\nیو منفصل تصادفي متغیر X دا احتمالي وېش لري:\n\nپیدا کړئ (i) E(X^2) (ii) E(2X+5)\n\nحل:\n\nڅرنګه چې X^2 او (2X+5) د ورکړل شوي تصادفي متغیر X تابع ګانې دي، نو لومړی د هغو احتمالي وېشونه او بیا منځني داسې پیدا کوو:\n\n\\text{Now}\\quad E\\{H(X)\\}=\\Sigma H(x_i)\\,p(x_i)\n\n(i)\\quad E\\{X^2\\}=\\Sigma x_i^2\\,p(x_i)=6\n\n(ii)\\quad E\\{2X+5\\}=\\Sigma(2x_i+5)\\,p(x_i)=7\n\nبېلګه 2.11\n\nد یوه منفصل تصادفي متغیر Y احتمالي تابع دا ده\n\n$p(y)=\\left\\{\\begin{matrix}{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}, & y=0,1,2,3\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right\\}$\n\nE(Y) او E(Y²) پیدا کړئ.\n\nحل:\n\nد تعریف له مخې\n\nE(Y)=\\sum_{y=0}^{3}y_i\\,p(y_i)\n\n=\\sum_{y=0}^{3}y\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}\n\n=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+2\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+3\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}\n\n=0+3\\left(\\frac{1}{8}\\right)+6\\left(\\frac{1}{8}\\right)+3\\left(\\frac{1}{8}\\right)=\\frac{12}{8}=1.5\n\nE(Y^2)=\\sum_{y=0}^{3}y^2\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}\n\n=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+4\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+9\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}\n\n=0+3\\left(\\frac{1}{8}\\right)+12\\left(\\frac{1}{8}\\right)+9\\left(\\frac{1}{8}\\right)=\\frac{24}{8}=3",
+   "content": "<p>=3(0.2)+8(0.7)+10(0.1)</p><p>E(X)=0.6+5.6+1=7.2</p><p>2.2.6 Mathematical expectation of a function of discrete random variable</p><p>If function of a random variable is denoted by H(X), then expected value of the function is denoted by E[H(X)] and its formula is given by E[H(X)]=\\Sigma H(x_i)p(x_i).</p><p>Example 2.10</p><p>A discrete random variable X has the probability distribution:</p><p>Find (i) E(X^2) (ii) E(2X+5)</p><p>Solution:</p><p>Since X^2 and (2X+5) are functions of the given random variable X, therefore, we first find their probability distributions and then the means as follows:</p><p>\\text{Now}\\quad E\\{H(X)\\}=\\Sigma H(x_i)\\,p(x_i)</p><p>(i)\\quad E\\{X^2\\}=\\Sigma x_i^2\\,p(x_i)=6</p><p>(ii)\\quad E\\{2X+5\\}=\\Sigma(2x_i+5)\\,p(x_i)=7</p><p>Example 2.11</p><p>The probability function of a discrete random variable Y is given by</p><p>$p(y)=\\left\\{\\begin{matrix}{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}, &amp; y=0,1,2,3\\\\ 0 &amp; \\textit{otherwise}\\end{matrix}\\right\\}$</p><p>Find E(Y) and E(Y²).</p><p>Solution:</p><p>By definition</p><p>E(Y)=\\sum_{y=0}^{3}y_i\\,p(y_i)</p><p>=\\sum_{y=0}^{3}y\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}</p><p>=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+2\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+3\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}</p><p>=0+3\\left(\\frac{1}{8}\\right)+6\\left(\\frac{1}{8}\\right)+3\\left(\\frac{1}{8}\\right)=\\frac{12}{8}=1.5</p><p>E(Y^2)=\\sum_{y=0}^{3}y^2\\,{}^{3}_{y}C\\left(\\frac{1}{2}\\right)^{y}\\left(\\frac{1}{2}\\right)^{3-y}</p><p>=0\\,{}^{3}_{0}C\\left(\\frac{1}{2}\\right)^{0}\\left(\\frac{1}{2}\\right)^{3-0}+1\\,{}^{3}_{1}C\\left(\\frac{1}{2}\\right)^{1}\\left(\\frac{1}{2}\\right)^{3-1}+4\\,{}^{3}_{2}C\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3-2}+9\\,{}^{3}_{3}C\\left(\\frac{1}{2}\\right)^{3}\\left(\\frac{1}{2}\\right)^{3-3}</p><p>=0+3\\left(\\frac{1}{8}\\right)+12\\left(\\frac{1}{8}\\right)+9\\left(\\frac{1}{8}\\right)=\\frac{24}{8}=3</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "lines",
+     "indices": [
+      0,
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-10"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex2-10-sol"
+    },
+    {
+     "type": "lines",
+     "indices": [
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-ex2-10",
+     "headers": [
+      "$X$",
+      "−2",
+      "1",
+      "3"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "$\\frac{1}{3}$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{2}$"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "−2",
+        "1",
+        "3"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{3}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{2}$"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "−2",
+        "1",
+        "3"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{3}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{2}$"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex2-10-sol",
+     "headers": [
+      "$X$",
+      "$p(x)$",
+      "$H(X)=X^2$",
+      "$H(X)=2X+5$",
+      "$X^2p(x)$",
+      "$(2X+5)p(x)$"
+     ],
+     "rows": [
+      [
+       "−2",
+       "$\\frac{1}{3}$",
+       "4",
+       "1",
+       "$\\frac{4}{3}=1.33$",
+       "$\\frac{1}{3}=0.33$"
+      ],
+      [
+       "1",
+       "$\\frac{1}{6}$",
+       "1",
+       "7",
+       "$\\frac{1}{6}=0.17$",
+       "$\\frac{7}{6}=1.17$"
+      ],
+      [
+       "3",
+       "$\\frac{1}{2}$",
+       "9",
+       "11",
+       "$\\frac{9}{2}=4.5$",
+       "$\\frac{11}{2}=5.5$"
+      ],
+      [
+       "Total",
+       "1",
+       "-",
+       "-",
+       "6",
+       "7"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$p(x)$",
+        "$H(X)=X^2$",
+        "$H(X)=2X+5$",
+        "$X^2p(x)$",
+        "$(2X+5)p(x)$"
+       ],
+       "rows": [
+        [
+         "−2",
+         "$\\frac{1}{3}$",
+         "4",
+         "1",
+         "$\\frac{4}{3}=1.33$",
+         "$\\frac{1}{3}=0.33$"
+        ],
+        [
+         "1",
+         "$\\frac{1}{6}$",
+         "1",
+         "7",
+         "$\\frac{1}{6}=0.17$",
+         "$\\frac{7}{6}=1.17$"
+        ],
+        [
+         "3",
+         "$\\frac{1}{2}$",
+         "9",
+         "11",
+         "$\\frac{9}{2}=4.5$",
+         "$\\frac{11}{2}=5.5$"
+        ],
+        [
+         "کل",
+         "1",
+         "-",
+         "-",
+         "6",
+         "7"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$p(x)$",
+        "$H(X)=X^2$",
+        "$H(X)=2X+5$",
+        "$X^2p(x)$",
+        "$(2X+5)p(x)$"
+       ],
+       "rows": [
+        [
+         "−2",
+         "$\\frac{1}{3}$",
+         "4",
+         "1",
+         "$\\frac{4}{3}=1.33$",
+         "$\\frac{1}{3}=0.33$"
+        ],
+        [
+         "1",
+         "$\\frac{1}{6}$",
+         "1",
+         "7",
+         "$\\frac{1}{6}=0.17$",
+         "$\\frac{7}{6}=1.17$"
+        ],
+        [
+         "3",
+         "$\\frac{1}{2}$",
+         "9",
+         "11",
+         "$\\frac{9}{2}=4.5$",
+         "$\\frac{11}{2}=5.5$"
+        ],
+        [
+         "ټول",
+         "1",
+         "-",
+         "-",
+         "6",
+         "7"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 26,
+     "printedPages": [
+      43,
+      44
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 2
+  }
+ ],
+ "issues": [
+  {
+   "id": "stat12-p44-exponent-scan",
+   "unit": 2,
+   "printedPage": 44,
+   "description": "In the first expanded line of E(Y) the printed exponents are partly blurred in the scan; they are rendered as 3−0, 3−1, 3−2, 3−3 consistent with the E(Y²) line below."
+  }
+ ],
+ "completeUnits": []
+}

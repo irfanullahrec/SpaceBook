@@ -1,0 +1,407 @@
+{
+ "pdfPage": 59,
+ "sections": [
+  {
+   "id": "stat12-u3-key-points",
+   "title": "Unit 3 — Key points",
+   "headingUrdu": "یونٹ 3 — اہم نکات",
+   "headingPashto": "واحد 3 — مهم ټکي",
+   "paras": [
+    {
+     "text": "Key points",
+     "urdu": "اہم نکات",
+     "pashto": "مهم ټکي"
+    },
+    {
+     "text": "■ A probability function defined as",
+     "urdu": "■ اس طرح متعین احتمالی تفاعل",
+     "pashto": "■ هغه احتمالي تابع چې داسې تعریف شوې"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "is called discrete uniform probability function",
+     "urdu": "منفصل یکساں احتمالی تفاعل کہلاتا ہے",
+     "pashto": "منفصل یونیفارم احتمالي تابع بلل کېږي"
+    },
+    {
+     "text": "A random experiment which has two possible outcomes, classified as success and failure, is called a Bernoulli trial.",
+     "urdu": "ایسا تصادفی تجربہ جس کے دو ممکنہ نتائج کامیابی اور ناکامی کے طور پر درجہ بند ہوں، برنولی آزمائش کہلاتا ہے۔",
+     "pashto": "هغه تصادفي تجربه چې دوه شونې پایلې ولري چې د بریا او ناکامۍ په توګه ډلبندي شوې وي، د برنولي ازمېښت بلل کېږي."
+    },
+    {
+     "text": "If a Bernoulli trail is repeated a fixed number of times, say n, then such an experiment is called Binomial experiment.",
+     "urdu": "اگر برنولی آزمائش ایک مقررہ تعداد، مثلاً n، بار دہرائی جائے تو ایسا تجربہ دو رقمی تجربہ کہلاتا ہے۔",
+     "pashto": "که د برنولي ازمېښت یو ټاکلی شمېر ځله، لکه n، تکرار شي، نو داسې تجربه بینومیل تجربه بلل کېږي."
+    },
+    {
+     "text": "The Binomial probability mass function is given by the formula:",
+     "urdu": "دو رقمی احتمالی کمیتی تفاعل اس فارمولا سے دیا جاتا ہے:",
+     "pashto": "د بینومیل د احتمال کتلوي تابع په دې فورمول ورکول کېږي:"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}{}^{n}_{x}C\\,p^xq^{n-x}, & x=0,1,2,\\ldots,n\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}{}^{n}_{x}C\\,p^xq^{n-x}, & x=0,1,2,\\ldots,n\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}{}^{n}_{x}C\\,p^xq^{n-x}, & x=0,1,2,\\ldots,n\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "Mean of Binomial distribution is np",
+     "urdu": "دو رقمی تقسیم کا اوسط np ہے",
+     "pashto": "د بینومیل وېش منځنی np دی"
+    },
+    {
+     "text": "Binomial distribution has two parameters i.e. n and p. Its range is from 0 to n",
+     "urdu": "دو رقمی تقسیم کے دو پیرامیٹر ہیں یعنی n اور p۔ اس کی حد 0 سے n تک ہے",
+     "pashto": "بینومیل وېش دوه پارامټرونه لري یعنې n او p. حد یې له 0 څخه تر n پورې دی"
+    },
+    {
+     "text": "Variance of Binomial distribution is npq",
+     "urdu": "دو رقمی تقسیم کا تغیر npq ہے",
+     "pashto": "د بینومیل وېش واریانس npq دی"
+    },
+    {
+     "text": "The hypergeometric probability distribution is",
+     "urdu": "ہائپر جیومیٹرک احتمالی تقسیم یہ ہے",
+     "pashto": "هایپرجیومټریک احتمالي وېش دا دی"
+    },
+    {
+     "text": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "urdu": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$",
+     "pashto": "$$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$$"
+    },
+    {
+     "text": "Hypergeometric distribution has three parameters and its range is from 0 to min(n,k)",
+     "urdu": "ہائپر جیومیٹرک تقسیم کے تین پیرامیٹر ہیں اور اس کی حد 0 سے min(n,k) تک ہے",
+     "pashto": "هایپرجیومټریک وېش درې پارامټرونه لري او حد یې له 0 څخه تر min(n,k) پورې دی"
+    }
+   ],
+   "theory": "Key points\n\n■ A probability function defined as\n\n$p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nis called discrete uniform probability function\n\nA random experiment which has two possible outcomes, classified as success and failure, is called a Bernoulli trial.\n\nIf a Bernoulli trail is repeated a fixed number of times, say n, then such an experiment is called Binomial experiment.\n\nThe Binomial probability mass function is given by the formula:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{n}_{x}C\\,p^xq^{n-x}, & x=0,1,2,\\ldots,n\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nMean of Binomial distribution is np\n\nBinomial distribution has two parameters i.e. n and p. Its range is from 0 to n\n\nVariance of Binomial distribution is npq\n\nThe hypergeometric probability distribution is\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nHypergeometric distribution has three parameters and its range is from 0 to min(n,k)",
+   "urdu": "اہم نکات\n\n■ اس طرح متعین احتمالی تفاعل\n\n$p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nمنفصل یکساں احتمالی تفاعل کہلاتا ہے\n\nایسا تصادفی تجربہ جس کے دو ممکنہ نتائج کامیابی اور ناکامی کے طور پر درجہ بند ہوں، برنولی آزمائش کہلاتا ہے۔\n\nاگر برنولی آزمائش ایک مقررہ تعداد، مثلاً n، بار دہرائی جائے تو ایسا تجربہ دو رقمی تجربہ کہلاتا ہے۔\n\nدو رقمی احتمالی کمیتی تفاعل اس فارمولا سے دیا جاتا ہے:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{n}_{x}C\\,p^xq^{n-x}, & x=0,1,2,\\ldots,n\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nدو رقمی تقسیم کا اوسط np ہے\n\nدو رقمی تقسیم کے دو پیرامیٹر ہیں یعنی n اور p۔ اس کی حد 0 سے n تک ہے\n\nدو رقمی تقسیم کا تغیر npq ہے\n\nہائپر جیومیٹرک احتمالی تقسیم یہ ہے\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nہائپر جیومیٹرک تقسیم کے تین پیرامیٹر ہیں اور اس کی حد 0 سے min(n,k) تک ہے",
+   "pashto": "مهم ټکي\n\n■ هغه احتمالي تابع چې داسې تعریف شوې\n\n$p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nمنفصل یونیفارم احتمالي تابع بلل کېږي\n\nهغه تصادفي تجربه چې دوه شونې پایلې ولري چې د بریا او ناکامۍ په توګه ډلبندي شوې وي، د برنولي ازمېښت بلل کېږي.\n\nکه د برنولي ازمېښت یو ټاکلی شمېر ځله، لکه n، تکرار شي، نو داسې تجربه بینومیل تجربه بلل کېږي.\n\nد بینومیل د احتمال کتلوي تابع په دې فورمول ورکول کېږي:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{n}_{x}C\\,p^xq^{n-x}, & x=0,1,2,\\ldots,n\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nد بینومیل وېش منځنی np دی\n\nبینومیل وېش دوه پارامټرونه لري یعنې n او p. حد یې له 0 څخه تر n پورې دی\n\nد بینومیل وېش واریانس npq دی\n\nهایپرجیومټریک احتمالي وېش دا دی\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nهایپرجیومټریک وېش درې پارامټرونه لري او حد یې له 0 څخه تر min(n,k) پورې دی",
+   "theoryUrdu": "اہم نکات\n\n■ اس طرح متعین احتمالی تفاعل\n\n$p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nمنفصل یکساں احتمالی تفاعل کہلاتا ہے\n\nایسا تصادفی تجربہ جس کے دو ممکنہ نتائج کامیابی اور ناکامی کے طور پر درجہ بند ہوں، برنولی آزمائش کہلاتا ہے۔\n\nاگر برنولی آزمائش ایک مقررہ تعداد، مثلاً n، بار دہرائی جائے تو ایسا تجربہ دو رقمی تجربہ کہلاتا ہے۔\n\nدو رقمی احتمالی کمیتی تفاعل اس فارمولا سے دیا جاتا ہے:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{n}_{x}C\\,p^xq^{n-x}, & x=0,1,2,\\ldots,n\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nدو رقمی تقسیم کا اوسط np ہے\n\nدو رقمی تقسیم کے دو پیرامیٹر ہیں یعنی n اور p۔ اس کی حد 0 سے n تک ہے\n\nدو رقمی تقسیم کا تغیر npq ہے\n\nہائپر جیومیٹرک احتمالی تقسیم یہ ہے\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nہائپر جیومیٹرک تقسیم کے تین پیرامیٹر ہیں اور اس کی حد 0 سے min(n,k) تک ہے",
+   "theoryPashto": "مهم ټکي\n\n■ هغه احتمالي تابع چې داسې تعریف شوې\n\n$p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nمنفصل یونیفارم احتمالي تابع بلل کېږي\n\nهغه تصادفي تجربه چې دوه شونې پایلې ولري چې د بریا او ناکامۍ په توګه ډلبندي شوې وي، د برنولي ازمېښت بلل کېږي.\n\nکه د برنولي ازمېښت یو ټاکلی شمېر ځله، لکه n، تکرار شي، نو داسې تجربه بینومیل تجربه بلل کېږي.\n\nد بینومیل د احتمال کتلوي تابع په دې فورمول ورکول کېږي:\n\n$p(x)=\\left\\{\\begin{matrix}{}^{n}_{x}C\\,p^xq^{n-x}, & x=0,1,2,\\ldots,n\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$\n\nد بینومیل وېش منځنی np دی\n\nبینومیل وېش دوه پارامټرونه لري یعنې n او p. حد یې له 0 څخه تر n پورې دی\n\nد بینومیل وېش واریانس npq دی\n\nهایپرجیومټریک احتمالي وېش دا دی\n\n$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, & x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 & \\textit{otherwise}\\end{matrix}\\right.$\n\nهایپرجیومټریک وېش درې پارامټرونه لري او حد یې له 0 څخه تر min(n,k) پورې دی",
+   "content": "<p>Key points</p><p>■ A probability function defined as</p><p>$p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, &amp; x=1,2,\\cdots,N\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>is called discrete uniform probability function</p><p>A random experiment which has two possible outcomes, classified as success and failure, is called a Bernoulli trial.</p><p>If a Bernoulli trail is repeated a fixed number of times, say n, then such an experiment is called Binomial experiment.</p><p>The Binomial probability mass function is given by the formula:</p><p>$p(x)=\\left\\{\\begin{matrix}{}^{n}_{x}C\\,p^xq^{n-x}, &amp; x=0,1,2,\\ldots,n\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>Mean of Binomial distribution is np</p><p>Binomial distribution has two parameters i.e. n and p. Its range is from 0 to n</p><p>Variance of Binomial distribution is npq</p><p>The hypergeometric probability distribution is</p><p>$p(x)=\\left\\{\\begin{matrix}\\dfrac{\\binom{K}{x}\\binom{N-K}{n-x}}{\\binom{N}{n}}, &amp; x=0,1,2,\\ldots,\\min(n,K)\\\\ 0 &amp; \\textit{otherwise}\\end{matrix}\\right.$</p><p>Hypergeometric distribution has three parameters and its range is from 0 to min(n,k)</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      8,
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      13
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 59,
+     "printedPages": [
+      109
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  },
+  {
+   "id": "stat12-u3-exercise-a",
+   "title": "Unit 3 Exercise — 3.1 and 3.2 (i)–(vi)",
+   "headingUrdu": "یونٹ 3 مشق — 3.1 اور 3.2 (i)–(vi)",
+   "headingPashto": "واحد 3 تمرین — 3.1 او 3.2 (i)–(vi)",
+   "paras": [
+    {
+     "text": "Exercise",
+     "urdu": "مشق",
+     "pashto": "تمرین"
+    },
+    {
+     "text": "3.1 Write T for true and F for false in the following statement.",
+     "urdu": "3.1 درج ذیل بیانات میں درست کے لیے T اور غلط کے لیے F لکھیں۔",
+     "pashto": "3.1 په لاندې بیانونو کې د سم لپاره T او د ناسم لپاره F ولیکئ."
+    },
+    {
+     "text": "i) If",
+     "urdu": "i) اگر",
+     "pashto": "i) که"
+    },
+    {
+     "text": "then X is not uniform random variable.",
+     "urdu": "تو X یکساں تصادفی متغیر نہیں ہے۔",
+     "pashto": "نو X یونیفارم تصادفي متغیر نه دی."
+    },
+    {
+     "text": "ii. Bernoulli experiment will always give only two results.",
+     "urdu": "ii. برنولی تجربہ ہمیشہ صرف دو نتائج دے گا۔",
+     "pashto": "ii. د برنولي تجربه به تل یوازې دوه پایلې ورکوي."
+    },
+    {
+     "text": "iii. Tossing a fair coin a large number of times is a Binomial experiment",
+     "urdu": "iii. منصفانہ سکہ بہت زیادہ مرتبہ اچھالنا دو رقمی تجربہ ہے",
+     "pashto": "iii. د یوې عادلانه سکې ډېر ځله اچول بینومیل تجربه ده"
+    },
+    {
+     "text": "iv. Binomial probability distribution has only two parameters i.e. n and p.",
+     "urdu": "iv. دو رقمی احتمالی تقسیم کے صرف دو پیرامیٹر ہیں یعنی n اور p۔",
+     "pashto": "iv. بینومیل احتمالي وېش یوازې دوه پارامټرونه لري یعنې n او p."
+    },
+    {
+     "text": "v. A Binomial random variable is discrete.",
+     "urdu": "v. دو رقمی تصادفی متغیر منفصل ہوتا ہے۔",
+     "pashto": "v. بینومیل تصادفي متغیر منفصل دی."
+    },
+    {
+     "text": "vi. Mean and variance of binomial distribution are equal.",
+     "urdu": "vi. دو رقمی تقسیم کا اوسط اور تغیر برابر ہوتے ہیں۔",
+     "pashto": "vi. د بینومیل وېش منځنی او واریانس سره برابر دي."
+    },
+    {
+     "text": "vii. If each digit from 0 to 9 has the same probability i.e. $\\frac{1}{10}$, they are called random digits.",
+     "urdu": "vii. اگر 0 سے 9 تک ہر ہندسے کا احتمال یکساں یعنی $\\frac{1}{10}$ ہو تو انہیں تصادفی ہندسے کہتے ہیں۔",
+     "pashto": "vii. که له 0 څخه تر 9 پورې هر رقم یو شان احتمال یعنې $\\frac{1}{10}$ ولري، تصادفي رقمونه بلل کېږي."
+    },
+    {
+     "text": "viii. The Binomial distribution will be symmetrical if $p=q=\\frac{1}{2}$",
+     "urdu": "viii. دو رقمی تقسیم متشاکل ہوگی اگر $p=q=\\frac{1}{2}$",
+     "pashto": "viii. بینومیل وېش به متناظر وي که $p=q=\\frac{1}{2}$"
+    },
+    {
+     "text": "ix. The hypergeometric random variable cannot assume the negative values.",
+     "urdu": "ix. ہائپر جیومیٹرک تصادفی متغیر منفی قیمتیں نہیں لے سکتا۔",
+     "pashto": "ix. هایپرجیومټریک تصادفي متغیر منفي قیمتونه نه شي اخیستلای."
+    },
+    {
+     "text": "x. Hypergeometric probability distribution has three parameters i.e. N, K, and n.",
+     "urdu": "x. ہائپر جیومیٹرک احتمالی تقسیم کے تین پیرامیٹر ہیں یعنی N، K اور n۔",
+     "pashto": "x. هایپرجیومټریک احتمالي وېش درې پارامټرونه لري یعنې N، K او n."
+    },
+    {
+     "text": "3.2 Fill in the blanks.",
+     "urdu": "3.2 خالی جگہیں پُر کریں۔",
+     "pashto": "3.2 تش ځایونه ډک کړئ."
+    },
+    {
+     "text": "(i) Bernoulli trail has ______ possible outcomes.",
+     "urdu": "(i) برنولی آزمائش کے ______ ممکنہ نتائج ہوتے ہیں۔",
+     "pashto": "(i) د برنولي ازمېښت ______ شونې پایلې لري."
+    },
+    {
+     "text": "(ii) Bernoulli distribution has ______ parameter.",
+     "urdu": "(ii) برنولی تقسیم کا ______ پیرامیٹر ہوتا ہے۔",
+     "pashto": "(ii) د برنولي وېش ______ پارامټر لري."
+    },
+    {
+     "text": "(iii) Range of Binomial random variable is from 0 to ______.",
+     "urdu": "(iii) دو رقمی تصادفی متغیر کی حد 0 سے ______ تک ہے۔",
+     "pashto": "(iii) د بینومیل تصادفي متغیر حد له 0 څخه تر ______ پورې دی."
+    },
+    {
+     "text": "(iv) Parameters of Binomial distribution are ______.",
+     "urdu": "(iv) دو رقمی تقسیم کے پیرامیٹر ______ ہیں۔",
+     "pashto": "(iv) د بینومیل وېش پارامټرونه ______ دي."
+    },
+    {
+     "text": "(v) Mean of Binomial distribution is ______ and variance is ______.",
+     "urdu": "(v) دو رقمی تقسیم کا اوسط ______ اور تغیر ______ ہے۔",
+     "pashto": "(v) د بینومیل وېش منځنی ______ او واریانس یې ______ دی."
+    },
+    {
+     "text": "(vi) The number of trails in hypergeometric distribution is ______.",
+     "urdu": "(vi) ہائپر جیومیٹرک تقسیم میں آزمائشوں کی تعداد ______ ہے۔",
+     "pashto": "(vi) په هایپرجیومټریک وېش کې د ازمېښتونو شمېر ______ دی."
+    }
+   ],
+   "theory": "Exercise\n\n3.1 Write T for true and F for false in the following statement.\n\ni) If\n\nthen X is not uniform random variable.\n\nii. Bernoulli experiment will always give only two results.\n\niii. Tossing a fair coin a large number of times is a Binomial experiment\n\niv. Binomial probability distribution has only two parameters i.e. n and p.\n\nv. A Binomial random variable is discrete.\n\nvi. Mean and variance of binomial distribution are equal.\n\nvii. If each digit from 0 to 9 has the same probability i.e. \\frac{1}{10}, they are called random digits.\n\nviii. The Binomial distribution will be symmetrical if p=q=\\frac{1}{2}\n\nix. The hypergeometric random variable cannot assume the negative values.\n\nx. Hypergeometric probability distribution has three parameters i.e. N, K, and n.\n\n3.2 Fill in the blanks.\n\n(i) Bernoulli trail has ______ possible outcomes.\n\n(ii) Bernoulli distribution has ______ parameter.\n\n(iii) Range of Binomial random variable is from 0 to ______.\n\n(iv) Parameters of Binomial distribution are ______.\n\n(v) Mean of Binomial distribution is ______ and variance is ______.\n\n(vi) The number of trails in hypergeometric distribution is ______.",
+   "urdu": "مشق\n\n3.1 درج ذیل بیانات میں درست کے لیے T اور غلط کے لیے F لکھیں۔\n\ni) اگر\n\nتو X یکساں تصادفی متغیر نہیں ہے۔\n\nii. برنولی تجربہ ہمیشہ صرف دو نتائج دے گا۔\n\niii. منصفانہ سکہ بہت زیادہ مرتبہ اچھالنا دو رقمی تجربہ ہے\n\niv. دو رقمی احتمالی تقسیم کے صرف دو پیرامیٹر ہیں یعنی n اور p۔\n\nv. دو رقمی تصادفی متغیر منفصل ہوتا ہے۔\n\nvi. دو رقمی تقسیم کا اوسط اور تغیر برابر ہوتے ہیں۔\n\nvii. اگر 0 سے 9 تک ہر ہندسے کا احتمال یکساں یعنی \\frac{1}{10} ہو تو انہیں تصادفی ہندسے کہتے ہیں۔\n\nviii. دو رقمی تقسیم متشاکل ہوگی اگر p=q=\\frac{1}{2}\n\nix. ہائپر جیومیٹرک تصادفی متغیر منفی قیمتیں نہیں لے سکتا۔\n\nx. ہائپر جیومیٹرک احتمالی تقسیم کے تین پیرامیٹر ہیں یعنی N، K اور n۔\n\n3.2 خالی جگہیں پُر کریں۔\n\n(i) برنولی آزمائش کے ______ ممکنہ نتائج ہوتے ہیں۔\n\n(ii) برنولی تقسیم کا ______ پیرامیٹر ہوتا ہے۔\n\n(iii) دو رقمی تصادفی متغیر کی حد 0 سے ______ تک ہے۔\n\n(iv) دو رقمی تقسیم کے پیرامیٹر ______ ہیں۔\n\n(v) دو رقمی تقسیم کا اوسط ______ اور تغیر ______ ہے۔\n\n(vi) ہائپر جیومیٹرک تقسیم میں آزمائشوں کی تعداد ______ ہے۔",
+   "pashto": "تمرین\n\n3.1 په لاندې بیانونو کې د سم لپاره T او د ناسم لپاره F ولیکئ.\n\ni) که\n\nنو X یونیفارم تصادفي متغیر نه دی.\n\nii. د برنولي تجربه به تل یوازې دوه پایلې ورکوي.\n\niii. د یوې عادلانه سکې ډېر ځله اچول بینومیل تجربه ده\n\niv. بینومیل احتمالي وېش یوازې دوه پارامټرونه لري یعنې n او p.\n\nv. بینومیل تصادفي متغیر منفصل دی.\n\nvi. د بینومیل وېش منځنی او واریانس سره برابر دي.\n\nvii. که له 0 څخه تر 9 پورې هر رقم یو شان احتمال یعنې \\frac{1}{10} ولري، تصادفي رقمونه بلل کېږي.\n\nviii. بینومیل وېش به متناظر وي که p=q=\\frac{1}{2}\n\nix. هایپرجیومټریک تصادفي متغیر منفي قیمتونه نه شي اخیستلای.\n\nx. هایپرجیومټریک احتمالي وېش درې پارامټرونه لري یعنې N، K او n.\n\n3.2 تش ځایونه ډک کړئ.\n\n(i) د برنولي ازمېښت ______ شونې پایلې لري.\n\n(ii) د برنولي وېش ______ پارامټر لري.\n\n(iii) د بینومیل تصادفي متغیر حد له 0 څخه تر ______ پورې دی.\n\n(iv) د بینومیل وېش پارامټرونه ______ دي.\n\n(v) د بینومیل وېش منځنی ______ او واریانس یې ______ دی.\n\n(vi) په هایپرجیومټریک وېش کې د ازمېښتونو شمېر ______ دی.",
+   "theoryUrdu": "مشق\n\n3.1 درج ذیل بیانات میں درست کے لیے T اور غلط کے لیے F لکھیں۔\n\ni) اگر\n\nتو X یکساں تصادفی متغیر نہیں ہے۔\n\nii. برنولی تجربہ ہمیشہ صرف دو نتائج دے گا۔\n\niii. منصفانہ سکہ بہت زیادہ مرتبہ اچھالنا دو رقمی تجربہ ہے\n\niv. دو رقمی احتمالی تقسیم کے صرف دو پیرامیٹر ہیں یعنی n اور p۔\n\nv. دو رقمی تصادفی متغیر منفصل ہوتا ہے۔\n\nvi. دو رقمی تقسیم کا اوسط اور تغیر برابر ہوتے ہیں۔\n\nvii. اگر 0 سے 9 تک ہر ہندسے کا احتمال یکساں یعنی \\frac{1}{10} ہو تو انہیں تصادفی ہندسے کہتے ہیں۔\n\nviii. دو رقمی تقسیم متشاکل ہوگی اگر p=q=\\frac{1}{2}\n\nix. ہائپر جیومیٹرک تصادفی متغیر منفی قیمتیں نہیں لے سکتا۔\n\nx. ہائپر جیومیٹرک احتمالی تقسیم کے تین پیرامیٹر ہیں یعنی N، K اور n۔\n\n3.2 خالی جگہیں پُر کریں۔\n\n(i) برنولی آزمائش کے ______ ممکنہ نتائج ہوتے ہیں۔\n\n(ii) برنولی تقسیم کا ______ پیرامیٹر ہوتا ہے۔\n\n(iii) دو رقمی تصادفی متغیر کی حد 0 سے ______ تک ہے۔\n\n(iv) دو رقمی تقسیم کے پیرامیٹر ______ ہیں۔\n\n(v) دو رقمی تقسیم کا اوسط ______ اور تغیر ______ ہے۔\n\n(vi) ہائپر جیومیٹرک تقسیم میں آزمائشوں کی تعداد ______ ہے۔",
+   "theoryPashto": "تمرین\n\n3.1 په لاندې بیانونو کې د سم لپاره T او د ناسم لپاره F ولیکئ.\n\ni) که\n\nنو X یونیفارم تصادفي متغیر نه دی.\n\nii. د برنولي تجربه به تل یوازې دوه پایلې ورکوي.\n\niii. د یوې عادلانه سکې ډېر ځله اچول بینومیل تجربه ده\n\niv. بینومیل احتمالي وېش یوازې دوه پارامټرونه لري یعنې n او p.\n\nv. بینومیل تصادفي متغیر منفصل دی.\n\nvi. د بینومیل وېش منځنی او واریانس سره برابر دي.\n\nvii. که له 0 څخه تر 9 پورې هر رقم یو شان احتمال یعنې \\frac{1}{10} ولري، تصادفي رقمونه بلل کېږي.\n\nviii. بینومیل وېش به متناظر وي که p=q=\\frac{1}{2}\n\nix. هایپرجیومټریک تصادفي متغیر منفي قیمتونه نه شي اخیستلای.\n\nx. هایپرجیومټریک احتمالي وېش درې پارامټرونه لري یعنې N، K او n.\n\n3.2 تش ځایونه ډک کړئ.\n\n(i) د برنولي ازمېښت ______ شونې پایلې لري.\n\n(ii) د برنولي وېش ______ پارامټر لري.\n\n(iii) د بینومیل تصادفي متغیر حد له 0 څخه تر ______ پورې دی.\n\n(iv) د بینومیل وېش پارامټرونه ______ دي.\n\n(v) د بینومیل وېش منځنی ______ او واریانس یې ______ دی.\n\n(vi) په هایپرجیومټریک وېش کې د ازمېښتونو شمېر ______ دی.",
+   "content": "<p>Exercise</p><p>3.1 Write T for true and F for false in the following statement.</p><p>i) If</p><p>then X is not uniform random variable.</p><p>ii. Bernoulli experiment will always give only two results.</p><p>iii. Tossing a fair coin a large number of times is a Binomial experiment</p><p>iv. Binomial probability distribution has only two parameters i.e. n and p.</p><p>v. A Binomial random variable is discrete.</p><p>vi. Mean and variance of binomial distribution are equal.</p><p>vii. If each digit from 0 to 9 has the same probability i.e. \\frac{1}{10}, they are called random digits.</p><p>viii. The Binomial distribution will be symmetrical if p=q=\\frac{1}{2}</p><p>ix. The hypergeometric random variable cannot assume the negative values.</p><p>x. Hypergeometric probability distribution has three parameters i.e. N, K, and n.</p><p>3.2 Fill in the blanks.</p><p>(i) Bernoulli trail has ______ possible outcomes.</p><p>(ii) Bernoulli distribution has ______ parameter.</p><p>(iii) Range of Binomial random variable is from 0 to ______.</p><p>(iv) Parameters of Binomial distribution are ______.</p><p>(v) Mean of Binomial distribution is ______ and variance is ______.</p><p>(vi) The number of trails in hypergeometric distribution is ______.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-q3-1-i"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-q3-1-i",
+     "headers": [
+      "$X$",
+      "0",
+      "1"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "$\\frac{1}{2}$",
+       "$\\frac{1}{2}$"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "0",
+        "1"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{2}$",
+         "$\\frac{1}{2}$"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "0",
+        "1"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{2}$",
+         "$\\frac{1}{2}$"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 59,
+     "printedPages": [
+      110
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

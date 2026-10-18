@@ -1,0 +1,211 @@
+{
+ "pdfPage": 109,
+ "sections": [
+  {
+   "id": "cs12-u6-text-16",
+   "title": "Unit 6 text (16)",
+   "headingUrdu": "یونٹ 6 — متن (16)",
+   "headingPashto": "۶ څپرکی — متن (16)",
+   "paras": [
+    {
+     "text": "In this case, we have defined two functions with the same name, multiply, that accept two arguments. One accepts two arguments of type int and the second of type float. The compiler looks at the arguments and calls the respective function. Here, multiply (int a, int b) is called for multiply (5, 33) because the arguments match with the data types of the formal parameters. Similarly, multiply (float a, float b) is called for the call multiply (2.1, 3.0) because the arguments and formal parameters match each other in types.",
+     "urdu": "اس صورت میں ہم نے ایک ہی نام multiply کے دو فنکشنز بیان کیے ہیں جو دو آرگیومنٹس لیتے ہیں۔ ایک int قسم کے دو آرگیومنٹس لیتا ہے اور دوسرا float قسم کے۔ کمپائلر آرگیومنٹس دیکھ کر متعلقہ فنکشن کال کرتا ہے۔ یہاں multiply (5, 33) کے لیے multiply (int a, int b) کال ہوتا ہے کیونکہ آرگیومنٹس رسمی پیرامیٹرز کی ڈیٹا ٹائپس سے ملتے ہیں۔ اسی طرح کال multiply (2.1, 3.0) کے لیے multiply (float a, float b) کال ہوتا ہے کیونکہ آرگیومنٹس اور رسمی پیرامیٹرز کی اقسام آپس میں ملتی ہیں۔",
+     "pashto": "په دې حالت کې موږ د یو نوم multiply دوه فنکشنونه تعریف کړي چې دوه دلیلونه مني. یو د int ډول دوه دلیلونه مني او دویم د float ډول. کمپایلر دلیلونو ته ګوري او اړوند فنکشن غواړي. دلته د multiply (5, 33) لپاره multiply (int a, int b) غوښتل کېږي ځکه دلیلونه د رسمي پاراميټرونو له ډېټا ډولونو سره سمون لري. همداراز د multiply (2.1, 3.0) غوښتنې لپاره multiply (float a, float b) غوښتل کېږي ځکه دلیلونه او رسمي پاراميټرونه په ډولونو کې سره سمون لري."
+    },
+    {
+     "text": "6.3.2 Advantages of function overloading",
+     "urdu": "6.3.2 فنکشن اوورلوڈنگ کے فوائد",
+     "pashto": "۶.۳.۲ د فنکشن ډېرولو ګټې"
+    },
+    {
+     "text": "Function overloading can significantly reduce complexity of programs.",
+     "urdu": "فنکشن اوورلوڈنگ پروگراموں کی پیچیدگی نمایاں طور پر کم کر سکتی ہے۔",
+     "pashto": "د فنکشن ډېرول د پروګرامونو پېچلتیا د پام وړ کمولی شي."
+    },
+    {
+     "text": "Using function overloading, we can declare multiple functions with the same name that have slightly different purposes.",
+     "urdu": "فنکشن اوورلوڈنگ کے ذریعے ہم ایک ہی نام کے متعدد فنکشنز ڈکلیئر کر سکتے ہیں جن کے مقاصد قدرے مختلف ہوں۔",
+     "pashto": "د فنکشن ډېرولو په مرسته کولی شو د یو نوم څو فنکشنونه اعلان کړو چې یو څه بېلې موخې لري."
+    },
+    {
+     "text": "As multiple functions have same name, therefore, remembering them is easier as compared to remembering more names.",
+     "urdu": "چونکہ متعدد فنکشنز کا نام ایک ہے، اس لیے انھیں یاد رکھنا زیادہ ناموں کو یاد رکھنے کے مقابلے میں آسان ہے۔",
+     "pashto": "څرنګه چې څو فنکشنونه یو نوم لري، نو یادول یې د ډېرو نومونو له یادولو اسانه دي."
+    },
+    {
+     "text": "It increases the readability of programs.",
+     "urdu": "یہ پروگراموں کی پڑھنے میں آسانی بڑھاتی ہے۔",
+     "pashto": "دا د پروګرامونو لوستل اسانوي."
+    },
+    {
+     "text": "It exhibits the behavior of polymorphism.",
+     "urdu": "یہ پولی مورفزم کا رویہ ظاہر کرتی ہے۔",
+     "pashto": "دا د پولي‌مورفیزم چلند ښيي."
+    },
+    {
+     "text": "6.3.3 Understanding function overloading concept",
+     "urdu": "6.3.3 فنکشن اوورلوڈنگ کے تصور کو سمجھنا",
+     "pashto": "۶.۳.۳ د فنکشن ډېرولو مفهوم پوهېدل"
+    },
+    {
+     "text": "For the complete understanding of the concept of function overloading, one should know those features of the overloaded functions which disambiguate them and make them unique in a single program. These features are listed below:",
+     "urdu": "فنکشن اوورلوڈنگ کے تصور کو مکمل طور پر سمجھنے کے لیے اوورلوڈ فنکشنز کی وہ خصوصیات جاننی چاہییں جو انھیں ایک دوسرے سے ممیز کرتی ہیں اور ایک پروگرام میں منفرد بناتی ہیں۔ یہ خصوصیات ذیل میں درج ہیں:",
+     "pashto": "د فنکشن ډېرولو د مفهوم د بشپړ پوهېدو لپاره باید د ډېر شویو فنکشنونو هغه ځانګړتیاوې وپېژنو چې یو له بله یې جلا کوي او په یوه پروګرام کې یې ځانګړي کوي. دا ځانګړتیاوې لاندې دي:"
+    },
+    {
+     "text": "Number of arguments",
+     "urdu": "آرگیومنٹس کی تعداد",
+     "pashto": "د دلیلونو شمېر"
+    },
+    {
+     "text": "Data types of arguments",
+     "urdu": "آرگیومنٹس کی ڈیٹا ٹائپس",
+     "pashto": "د دلیلونو ډېټا ډولونه"
+    },
+    {
+     "text": "Return type",
+     "urdu": "ریٹرن ٹائپ",
+     "pashto": "د بېرته ورکړې ډول"
+    },
+    {
+     "text": "a. Number of arguments",
+     "urdu": "a. آرگیومنٹس کی تعداد",
+     "pashto": "a. د دلیلونو شمېر"
+    },
+    {
+     "text": "Functions can be overloaded if they have different numbers of parameters. More than one functions with the same name but different number of parameters can be used in a single program. In the calls to these functions, the compiler disambiguates the calls by looking at the number of arguments and formal parameters in the function decelerators. Consider the following example:",
+     "urdu": "فنکشنز اوورلوڈ کیے جا سکتے ہیں اگر ان کے پیرامیٹرز کی تعداد مختلف ہو۔ ایک ہی نام لیکن مختلف تعداد کے پیرامیٹرز والے ایک سے زیادہ فنکشنز ایک پروگرام میں استعمال ہو سکتے ہیں۔ ان فنکشنز کی کالز میں کمپائلر فنکشن ڈکلیریٹرز میں آرگیومنٹس اور رسمی پیرامیٹرز کی تعداد دیکھ کر کالز میں امتیاز کرتا ہے۔ درج ذیل مثال پر غور کریں:",
+     "pashto": "فنکشنونه ډېرېدای شي که د پاراميټرونو شمېر یې بېل وي. د یو نوم خو د بېل شمېر پاراميټرونو له یوه ډېر فنکشنونه په یوه پروګرام کې کارېدای شي. دې فنکشنونو ته په غوښتنو کې کمپایلر د فنکشن په اعلانوونکو کې د دلیلونو او رسمي پاراميټرونو شمېر ته په کتلو غوښتنې جلا کوي. لاندې بېلګې ته پام وکړئ:"
+    },
+    {
+     "text": "/* overloaded functions with different number of parameters */\n#include <iostream.h>\n#include <conio.h>\nint Addition(int X, int Y)\n{\nreturn (X + Y);\n}\nint Addition(int X, int Y, int Z)\n{\nreturn (X + Y + Z);\n}\nint main()\n{\nint a=55, b=22, c=100;\ncout << “Output of 2 integers=\"<<Addition (a,b);\ncout << endl;\ncout << “Output of 3 integers=\"<<Addition (a,b,c);\ncout << endl;\ngetch();\nreturn 0;\n}",
+     "urdu": "/* overloaded functions with different number of parameters */\n#include <iostream.h>\n#include <conio.h>\nint Addition(int X, int Y)\n{\nreturn (X + Y);\n}\nint Addition(int X, int Y, int Z)\n{\nreturn (X + Y + Z);\n}\nint main()\n{\nint a=55, b=22, c=100;\ncout << “Output of 2 integers=\"<<Addition (a,b);\ncout << endl;\ncout << “Output of 3 integers=\"<<Addition (a,b,c);\ncout << endl;\ngetch();\nreturn 0;\n}",
+     "pashto": "/* overloaded functions with different number of parameters */\n#include <iostream.h>\n#include <conio.h>\nint Addition(int X, int Y)\n{\nreturn (X + Y);\n}\nint Addition(int X, int Y, int Z)\n{\nreturn (X + Y + Z);\n}\nint main()\n{\nint a=55, b=22, c=100;\ncout << “Output of 2 integers=\"<<Addition (a,b);\ncout << endl;\ncout << “Output of 3 integers=\"<<Addition (a,b,c);\ncout << endl;\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Output of 2 integers=77\nOutput of 3 integers=177",
+     "urdu": "Output of 2 integers=77\nOutput of 3 integers=177",
+     "pashto": "Output of 2 integers=77\nOutput of 3 integers=177",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "In this case, we have defined two functions with the same name, multiply, that accept two arguments. One accepts two arguments of type int and the second of type float. The compiler looks at the arguments and calls the respective function. Here, multiply (int a, int b) is called for multiply (5, 33) because the arguments match with the data types of the formal parameters. Similarly, multiply (float a, float b) is called for the call multiply (2.1, 3.0) because the arguments and formal parameters match each other in types.\n\n6.3.2 Advantages of function overloading\n\nFunction overloading can significantly reduce complexity of programs.\n\nUsing function overloading, we can declare multiple functions with the same name that have slightly different purposes.\n\nAs multiple functions have same name, therefore, remembering them is easier as compared to remembering more names.\n\nIt increases the readability of programs.\n\nIt exhibits the behavior of polymorphism.\n\n6.3.3 Understanding function overloading concept\n\nFor the complete understanding of the concept of function overloading, one should know those features of the overloaded functions which disambiguate them and make them unique in a single program. These features are listed below:\n\nNumber of arguments\n\nData types of arguments\n\nReturn type\n\na. Number of arguments\n\nFunctions can be overloaded if they have different numbers of parameters. More than one functions with the same name but different number of parameters can be used in a single program. In the calls to these functions, the compiler disambiguates the calls by looking at the number of arguments and formal parameters in the function decelerators. Consider the following example:\n\n/* overloaded functions with different number of parameters */\n#include <iostream.h>\n#include <conio.h>\nint Addition(int X, int Y)\n{\nreturn (X + Y);\n}\nint Addition(int X, int Y, int Z)\n{\nreturn (X + Y + Z);\n}\nint main()\n{\nint a=55, b=22, c=100;\ncout << “Output of 2 integers=\"<<Addition (a,b);\ncout << endl;\ncout << “Output of 3 integers=\"<<Addition (a,b,c);\ncout << endl;\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nOutput of 2 integers=77\nOutput of 3 integers=177",
+   "urdu": "اس صورت میں ہم نے ایک ہی نام multiply کے دو فنکشنز بیان کیے ہیں جو دو آرگیومنٹس لیتے ہیں۔ ایک int قسم کے دو آرگیومنٹس لیتا ہے اور دوسرا float قسم کے۔ کمپائلر آرگیومنٹس دیکھ کر متعلقہ فنکشن کال کرتا ہے۔ یہاں multiply (5, 33) کے لیے multiply (int a, int b) کال ہوتا ہے کیونکہ آرگیومنٹس رسمی پیرامیٹرز کی ڈیٹا ٹائپس سے ملتے ہیں۔ اسی طرح کال multiply (2.1, 3.0) کے لیے multiply (float a, float b) کال ہوتا ہے کیونکہ آرگیومنٹس اور رسمی پیرامیٹرز کی اقسام آپس میں ملتی ہیں۔\n\n6.3.2 فنکشن اوورلوڈنگ کے فوائد\n\nفنکشن اوورلوڈنگ پروگراموں کی پیچیدگی نمایاں طور پر کم کر سکتی ہے۔\n\nفنکشن اوورلوڈنگ کے ذریعے ہم ایک ہی نام کے متعدد فنکشنز ڈکلیئر کر سکتے ہیں جن کے مقاصد قدرے مختلف ہوں۔\n\nچونکہ متعدد فنکشنز کا نام ایک ہے، اس لیے انھیں یاد رکھنا زیادہ ناموں کو یاد رکھنے کے مقابلے میں آسان ہے۔\n\nیہ پروگراموں کی پڑھنے میں آسانی بڑھاتی ہے۔\n\nیہ پولی مورفزم کا رویہ ظاہر کرتی ہے۔\n\n6.3.3 فنکشن اوورلوڈنگ کے تصور کو سمجھنا\n\nفنکشن اوورلوڈنگ کے تصور کو مکمل طور پر سمجھنے کے لیے اوورلوڈ فنکشنز کی وہ خصوصیات جاننی چاہییں جو انھیں ایک دوسرے سے ممیز کرتی ہیں اور ایک پروگرام میں منفرد بناتی ہیں۔ یہ خصوصیات ذیل میں درج ہیں:\n\nآرگیومنٹس کی تعداد\n\nآرگیومنٹس کی ڈیٹا ٹائپس\n\nریٹرن ٹائپ\n\na. آرگیومنٹس کی تعداد\n\nفنکشنز اوورلوڈ کیے جا سکتے ہیں اگر ان کے پیرامیٹرز کی تعداد مختلف ہو۔ ایک ہی نام لیکن مختلف تعداد کے پیرامیٹرز والے ایک سے زیادہ فنکشنز ایک پروگرام میں استعمال ہو سکتے ہیں۔ ان فنکشنز کی کالز میں کمپائلر فنکشن ڈکلیریٹرز میں آرگیومنٹس اور رسمی پیرامیٹرز کی تعداد دیکھ کر کالز میں امتیاز کرتا ہے۔ درج ذیل مثال پر غور کریں:\n\n/* overloaded functions with different number of parameters */\n#include <iostream.h>\n#include <conio.h>\nint Addition(int X, int Y)\n{\nreturn (X + Y);\n}\nint Addition(int X, int Y, int Z)\n{\nreturn (X + Y + Z);\n}\nint main()\n{\nint a=55, b=22, c=100;\ncout << “Output of 2 integers=\"<<Addition (a,b);\ncout << endl;\ncout << “Output of 3 integers=\"<<Addition (a,b,c);\ncout << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nOutput of 2 integers=77\nOutput of 3 integers=177",
+   "pashto": "په دې حالت کې موږ د یو نوم multiply دوه فنکشنونه تعریف کړي چې دوه دلیلونه مني. یو د int ډول دوه دلیلونه مني او دویم د float ډول. کمپایلر دلیلونو ته ګوري او اړوند فنکشن غواړي. دلته د multiply (5, 33) لپاره multiply (int a, int b) غوښتل کېږي ځکه دلیلونه د رسمي پاراميټرونو له ډېټا ډولونو سره سمون لري. همداراز د multiply (2.1, 3.0) غوښتنې لپاره multiply (float a, float b) غوښتل کېږي ځکه دلیلونه او رسمي پاراميټرونه په ډولونو کې سره سمون لري.\n\n۶.۳.۲ د فنکشن ډېرولو ګټې\n\nد فنکشن ډېرول د پروګرامونو پېچلتیا د پام وړ کمولی شي.\n\nد فنکشن ډېرولو په مرسته کولی شو د یو نوم څو فنکشنونه اعلان کړو چې یو څه بېلې موخې لري.\n\nڅرنګه چې څو فنکشنونه یو نوم لري، نو یادول یې د ډېرو نومونو له یادولو اسانه دي.\n\nدا د پروګرامونو لوستل اسانوي.\n\nدا د پولي‌مورفیزم چلند ښيي.\n\n۶.۳.۳ د فنکشن ډېرولو مفهوم پوهېدل\n\nد فنکشن ډېرولو د مفهوم د بشپړ پوهېدو لپاره باید د ډېر شویو فنکشنونو هغه ځانګړتیاوې وپېژنو چې یو له بله یې جلا کوي او په یوه پروګرام کې یې ځانګړي کوي. دا ځانګړتیاوې لاندې دي:\n\nد دلیلونو شمېر\n\nد دلیلونو ډېټا ډولونه\n\nد بېرته ورکړې ډول\n\na. د دلیلونو شمېر\n\nفنکشنونه ډېرېدای شي که د پاراميټرونو شمېر یې بېل وي. د یو نوم خو د بېل شمېر پاراميټرونو له یوه ډېر فنکشنونه په یوه پروګرام کې کارېدای شي. دې فنکشنونو ته په غوښتنو کې کمپایلر د فنکشن په اعلانوونکو کې د دلیلونو او رسمي پاراميټرونو شمېر ته په کتلو غوښتنې جلا کوي. لاندې بېلګې ته پام وکړئ:\n\n/* overloaded functions with different number of parameters */\n#include <iostream.h>\n#include <conio.h>\nint Addition(int X, int Y)\n{\nreturn (X + Y);\n}\nint Addition(int X, int Y, int Z)\n{\nreturn (X + Y + Z);\n}\nint main()\n{\nint a=55, b=22, c=100;\ncout << “Output of 2 integers=\"<<Addition (a,b);\ncout << endl;\ncout << “Output of 3 integers=\"<<Addition (a,b,c);\ncout << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nOutput of 2 integers=77\nOutput of 3 integers=177",
+   "theoryUrdu": "اس صورت میں ہم نے ایک ہی نام multiply کے دو فنکشنز بیان کیے ہیں جو دو آرگیومنٹس لیتے ہیں۔ ایک int قسم کے دو آرگیومنٹس لیتا ہے اور دوسرا float قسم کے۔ کمپائلر آرگیومنٹس دیکھ کر متعلقہ فنکشن کال کرتا ہے۔ یہاں multiply (5, 33) کے لیے multiply (int a, int b) کال ہوتا ہے کیونکہ آرگیومنٹس رسمی پیرامیٹرز کی ڈیٹا ٹائپس سے ملتے ہیں۔ اسی طرح کال multiply (2.1, 3.0) کے لیے multiply (float a, float b) کال ہوتا ہے کیونکہ آرگیومنٹس اور رسمی پیرامیٹرز کی اقسام آپس میں ملتی ہیں۔\n\n6.3.2 فنکشن اوورلوڈنگ کے فوائد\n\nفنکشن اوورلوڈنگ پروگراموں کی پیچیدگی نمایاں طور پر کم کر سکتی ہے۔\n\nفنکشن اوورلوڈنگ کے ذریعے ہم ایک ہی نام کے متعدد فنکشنز ڈکلیئر کر سکتے ہیں جن کے مقاصد قدرے مختلف ہوں۔\n\nچونکہ متعدد فنکشنز کا نام ایک ہے، اس لیے انھیں یاد رکھنا زیادہ ناموں کو یاد رکھنے کے مقابلے میں آسان ہے۔\n\nیہ پروگراموں کی پڑھنے میں آسانی بڑھاتی ہے۔\n\nیہ پولی مورفزم کا رویہ ظاہر کرتی ہے۔\n\n6.3.3 فنکشن اوورلوڈنگ کے تصور کو سمجھنا\n\nفنکشن اوورلوڈنگ کے تصور کو مکمل طور پر سمجھنے کے لیے اوورلوڈ فنکشنز کی وہ خصوصیات جاننی چاہییں جو انھیں ایک دوسرے سے ممیز کرتی ہیں اور ایک پروگرام میں منفرد بناتی ہیں۔ یہ خصوصیات ذیل میں درج ہیں:\n\nآرگیومنٹس کی تعداد\n\nآرگیومنٹس کی ڈیٹا ٹائپس\n\nریٹرن ٹائپ\n\na. آرگیومنٹس کی تعداد\n\nفنکشنز اوورلوڈ کیے جا سکتے ہیں اگر ان کے پیرامیٹرز کی تعداد مختلف ہو۔ ایک ہی نام لیکن مختلف تعداد کے پیرامیٹرز والے ایک سے زیادہ فنکشنز ایک پروگرام میں استعمال ہو سکتے ہیں۔ ان فنکشنز کی کالز میں کمپائلر فنکشن ڈکلیریٹرز میں آرگیومنٹس اور رسمی پیرامیٹرز کی تعداد دیکھ کر کالز میں امتیاز کرتا ہے۔ درج ذیل مثال پر غور کریں:\n\n/* overloaded functions with different number of parameters */\n#include <iostream.h>\n#include <conio.h>\nint Addition(int X, int Y)\n{\nreturn (X + Y);\n}\nint Addition(int X, int Y, int Z)\n{\nreturn (X + Y + Z);\n}\nint main()\n{\nint a=55, b=22, c=100;\ncout << “Output of 2 integers=\"<<Addition (a,b);\ncout << endl;\ncout << “Output of 3 integers=\"<<Addition (a,b,c);\ncout << endl;\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nOutput of 2 integers=77\nOutput of 3 integers=177",
+   "theoryPashto": "په دې حالت کې موږ د یو نوم multiply دوه فنکشنونه تعریف کړي چې دوه دلیلونه مني. یو د int ډول دوه دلیلونه مني او دویم د float ډول. کمپایلر دلیلونو ته ګوري او اړوند فنکشن غواړي. دلته د multiply (5, 33) لپاره multiply (int a, int b) غوښتل کېږي ځکه دلیلونه د رسمي پاراميټرونو له ډېټا ډولونو سره سمون لري. همداراز د multiply (2.1, 3.0) غوښتنې لپاره multiply (float a, float b) غوښتل کېږي ځکه دلیلونه او رسمي پاراميټرونه په ډولونو کې سره سمون لري.\n\n۶.۳.۲ د فنکشن ډېرولو ګټې\n\nد فنکشن ډېرول د پروګرامونو پېچلتیا د پام وړ کمولی شي.\n\nد فنکشن ډېرولو په مرسته کولی شو د یو نوم څو فنکشنونه اعلان کړو چې یو څه بېلې موخې لري.\n\nڅرنګه چې څو فنکشنونه یو نوم لري، نو یادول یې د ډېرو نومونو له یادولو اسانه دي.\n\nدا د پروګرامونو لوستل اسانوي.\n\nدا د پولي‌مورفیزم چلند ښيي.\n\n۶.۳.۳ د فنکشن ډېرولو مفهوم پوهېدل\n\nد فنکشن ډېرولو د مفهوم د بشپړ پوهېدو لپاره باید د ډېر شویو فنکشنونو هغه ځانګړتیاوې وپېژنو چې یو له بله یې جلا کوي او په یوه پروګرام کې یې ځانګړي کوي. دا ځانګړتیاوې لاندې دي:\n\nد دلیلونو شمېر\n\nد دلیلونو ډېټا ډولونه\n\nد بېرته ورکړې ډول\n\na. د دلیلونو شمېر\n\nفنکشنونه ډېرېدای شي که د پاراميټرونو شمېر یې بېل وي. د یو نوم خو د بېل شمېر پاراميټرونو له یوه ډېر فنکشنونه په یوه پروګرام کې کارېدای شي. دې فنکشنونو ته په غوښتنو کې کمپایلر د فنکشن په اعلانوونکو کې د دلیلونو او رسمي پاراميټرونو شمېر ته په کتلو غوښتنې جلا کوي. لاندې بېلګې ته پام وکړئ:\n\n/* overloaded functions with different number of parameters */\n#include <iostream.h>\n#include <conio.h>\nint Addition(int X, int Y)\n{\nreturn (X + Y);\n}\nint Addition(int X, int Y, int Z)\n{\nreturn (X + Y + Z);\n}\nint main()\n{\nint a=55, b=22, c=100;\ncout << “Output of 2 integers=\"<<Addition (a,b);\ncout << endl;\ncout << “Output of 3 integers=\"<<Addition (a,b,c);\ncout << endl;\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nOutput of 2 integers=77\nOutput of 3 integers=177",
+   "content": "<p>In this case, we have defined two functions with the same name, multiply, that accept two arguments. One accepts two arguments of type int and the second of type float. The compiler looks at the arguments and calls the respective function. Here, multiply (int a, int b) is called for multiply (5, 33) because the arguments match with the data types of the formal parameters. Similarly, multiply (float a, float b) is called for the call multiply (2.1, 3.0) because the arguments and formal parameters match each other in types.</p><p>6.3.2 Advantages of function overloading</p><p>Function overloading can significantly reduce complexity of programs.</p><p>Using function overloading, we can declare multiple functions with the same name that have slightly different purposes.</p><p>As multiple functions have same name, therefore, remembering them is easier as compared to remembering more names.</p><p>It increases the readability of programs.</p><p>It exhibits the behavior of polymorphism.</p><p>6.3.3 Understanding function overloading concept</p><p>For the complete understanding of the concept of function overloading, one should know those features of the overloaded functions which disambiguate them and make them unique in a single program. These features are listed below:</p><p>Number of arguments</p><p>Data types of arguments</p><p>Return type</p><p>a. Number of arguments</p><p>Functions can be overloaded if they have different numbers of parameters. More than one functions with the same name but different number of parameters can be used in a single program. In the calls to these functions, the compiler disambiguates the calls by looking at the number of arguments and formal parameters in the function decelerators. Consider the following example:</p><p>/* overloaded functions with different number of parameters */\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint Addition(int X, int Y)\n{\nreturn (X + Y);\n}\nint Addition(int X, int Y, int Z)\n{\nreturn (X + Y + Z);\n}\nint main()\n{\nint a=55, b=22, c=100;\ncout &lt;&lt; “Output of 2 integers=&quot;&lt;&lt;Addition (a,b);\ncout &lt;&lt; endl;\ncout &lt;&lt; “Output of 3 integers=&quot;&lt;&lt;Addition (a,b,c);\ncout &lt;&lt; endl;\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Output of 2 integers=77\nOutput of 3 integers=177</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "list",
+     "indices": [
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      16
+     ]
+    }
+   ],
+   "sourceBlocks": [],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 109,
+     "printedPages": [
+      206,
+      207,
+      208
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 6 text (16)",
+   "sourcePageLabel": "PDF 109 · p. 206–207–208",
+   "sourceNote": "The top of p.206 (end of the multiply program and its output) is recorded with PDF108. The Addition program ends on p.208 (PDF110) and is given whole with its output.",
+   "unit": 6
+  }
+ ],
+ "issues": [
+  {
+   "id": "cs12-pdf109",
+   "unit": 6,
+   "printedPage": 207,
+   "description": "p.207 “function decelerators” (for declarators); “More than one functions”; p.206 “that accept two arguments”. Retained as printed."
+  }
+ ],
+ "completeUnits": []
+}

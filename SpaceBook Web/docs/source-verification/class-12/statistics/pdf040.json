@@ -1,0 +1,417 @@
+{
+ "pdfPage": 40,
+ "sections": [
+  {
+   "id": "stat12-p040-discrete-uniform",
+   "title": "3.1 Discrete uniform distribution — definition and Examples 3.1–3.2",
+   "headingUrdu": "3.1 منفصل یکساں تقسیم — تعریف اور مثالیں 3.1–3.2",
+   "headingPashto": "3.1 منفصل یونیفارم وېش — تعریف او بېلګې 3.1–3.2",
+   "paras": [
+    {
+     "text": "3.1 When to use discrete probability distributions",
+     "urdu": "3.1 منفصل احتمالی تقسیمیں کب استعمال کی جائیں",
+     "pashto": "3.1 منفصل احتمالي وېشونه کله وکارول شي"
+    },
+    {
+     "text": "Discrete probability distributions are used to compute probabilities for all possible values of discrete random variables, by an easy way. In this unit a few simple and commonly used distributions are given that cover many areas in our surrounding. It is important to know and remember that which probability distribution is suitable for a particular situation.",
+     "urdu": "منفصل احتمالی تقسیمیں منفصل تصادفی متغیرات کی تمام ممکنہ قیمتوں کے احتمالات آسان طریقے سے معلوم کرنے کے لیے استعمال ہوتی ہیں۔ اس یونٹ میں چند سادہ اور عام استعمال ہونے والی تقسیمیں دی گئی ہیں جو ہمارے اردگرد کے بہت سے شعبوں کا احاطہ کرتی ہیں۔ یہ جاننا اور یاد رکھنا اہم ہے کہ کسی خاص صورتِ حال کے لیے کون سی احتمالی تقسیم موزوں ہے۔",
+     "pashto": "منفصل احتمالي وېشونه د منفصلو تصادفي متغیرونو د ټولو شونو قیمتونو د احتمالونو د اسانه محاسبې لپاره کارول کېږي. په دې واحد کې ځینې ساده او عام کارېدونکي وېشونه ورکړل شوي چې زموږ د شاوخوا ډېرې برخې رانغاړي. دا پوهېدل او په یاد ساتل مهم دي چې کوم احتمالي وېش د یوه ځانګړي حالت لپاره مناسب دی."
+    },
+    {
+     "text": "3.1.1 Introduction to discrete uniform distribution",
+     "urdu": "3.1.1 منفصل یکساں تقسیم کا تعارف",
+     "pashto": "3.1.1 د منفصل یونیفارم وېش پېژندنه"
+    },
+    {
+     "text": "This is the simplest probability distribution among the discrete probability distributions. It is used in the experiments/situations where probability at every point remains the same e.g. the outcomes of rolling a fair die, drawing cards from a well shuffled deck of cards, drawing of prize bond number etc. follow uniform distribution. A variable denoting the outcomes of such uniform experiments is called discrete uniform random variable and its probability distribution is called discrete uniform probability distribution. The most important application of the uniform distribution is in the generation of random numbers.",
+     "urdu": "یہ منفصل احتمالی تقسیموں میں سب سے سادہ احتمالی تقسیم ہے۔ یہ ان تجربات/حالات میں استعمال ہوتی ہے جہاں ہر نقطے پر احتمال یکساں رہتا ہے، مثلاً منصفانہ پانسہ پھینکنے کے نتائج، اچھی طرح پھینٹی گئی گڈی سے پتے نکالنا، پرائز بانڈ نمبر کی قرعہ اندازی وغیرہ یکساں تقسیم کی پیروی کرتے ہیں۔ ایسے یکساں تجربات کے نتائج ظاہر کرنے والے متغیر کو منفصل یکساں تصادفی متغیر اور اس کی احتمالی تقسیم کو منفصل یکساں احتمالی تقسیم کہتے ہیں۔ یکساں تقسیم کا سب سے اہم اطلاق تصادفی اعداد پیدا کرنے میں ہے۔",
+     "pashto": "دا د منفصلو احتمالي وېشونو له منځه تر ټولو ساده احتمالي وېش دی. په هغو تجربو/حالتونو کې کارول کېږي چې په هر ټکي کې احتمال یو شان پاتې کېږي، لکه د عادلانه ډایس د اچولو پایلې، له ښه ګډې شوې ګډۍ څخه د کارتونو راایستل، د پرایز بانډ د شمېرې قرعه او نور یونیفارم وېش تعقیبوي. هغه متغیر چې د داسې یونیفارم تجربو پایلې ښيي، منفصل یونیفارم تصادفي متغیر او احتمالي وېش یې منفصل یونیفارم احتمالي وېش بلل کېږي. د یونیفارم وېش تر ټولو مهم کارول د تصادفي عددونو په جوړولو کې دي."
+    },
+    {
+     "text": "3.1.2 Definition",
+     "urdu": "3.1.2 تعریف",
+     "pashto": "3.1.2 تعریف"
+    },
+    {
+     "text": "A probability distribution of the type:",
+     "urdu": "اس قسم کی احتمالی تقسیم:",
+     "pashto": "د دې ډول احتمالي وېش:"
+    },
+    {
+     "text": "is called discrete uniform probability distribution.",
+     "urdu": "منفصل یکساں احتمالی تقسیم کہلاتی ہے۔",
+     "pashto": "منفصل یونیفارم احتمالي وېش بلل کېږي."
+    },
+    {
+     "text": "Example 3.1",
+     "urdu": "مثال 3.1",
+     "pashto": "بېلګه 3.1"
+    },
+    {
+     "text": "Find probability distribution for the outcomes of a fair die when it is rolled once.",
+     "urdu": "منصفانہ پانسہ ایک بار پھینکنے پر نتائج کی احتمالی تقسیم معلوم کریں۔",
+     "pashto": "کله چې یو عادلانه ډایس یو ځل واچول شي، د پایلو احتمالي وېش پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "When a fair die is rolled once, then all outcomes are equally likely, therefore, its probability distribution is given by",
+     "urdu": "جب منصفانہ پانسہ ایک بار پھینکا جائے تو تمام نتائج مساوی امکان والے ہوتے ہیں، لہٰذا اس کی احتمالی تقسیم یہ ہے",
+     "pashto": "کله چې عادلانه ډایس یو ځل واچول شي، ټولې پایلې مساوي امکان لري، نو احتمالي وېش یې دا دی"
+    },
+    {
+     "text": "Note that X follows discrete uniform distribution.",
+     "urdu": "نوٹ کریں کہ X منفصل یکساں تقسیم کی پیروی کرتا ہے۔",
+     "pashto": "پام وکړئ چې X منفصل یونیفارم وېش تعقیبوي."
+    },
+    {
+     "text": "3.1.3 Definition of discrete uniform probability function",
+     "urdu": "3.1.3 منفصل یکساں احتمالی تفاعل کی تعریف",
+     "pashto": "3.1.3 د منفصل یونیفارم احتمالي تابع تعریف"
+    },
+    {
+     "text": "A probability function defined as $p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$ is called discrete uniform probability function and the variable X is called discrete uniform random variable. This distribution has only one parameter “N”, the total number of results /items of a uniform experiment.",
+     "urdu": "اس طرح متعین احتمالی تفاعل $p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$ منفصل یکساں احتمالی تفاعل کہلاتا ہے اور متغیر X کو منفصل یکساں تصادفی متغیر کہتے ہیں۔ اس تقسیم کا صرف ایک پیرامیٹر “N” ہے، یعنی یکساں تجربے کے نتائج/اشیاء کی کل تعداد۔",
+     "pashto": "هغه احتمالي تابع چې داسې تعریف شوې $p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right.$ منفصل یونیفارم احتمالي تابع بلل کېږي او متغیر X ته منفصل یونیفارم تصادفي متغیر وایي. دا وېش یوازې یو پارامټر “N” لري، یعنې د یونیفارم تجربې د پایلو/شیانو ټول شمېر."
+    },
+    {
+     "text": "Example 3.2",
+     "urdu": "مثال 3.2",
+     "pashto": "بېلګه 3.2"
+    },
+    {
+     "text": "Write discrete uniform probability function for the results of a fair die when it is rolled once.",
+     "urdu": "منصفانہ پانسہ ایک بار پھینکنے کے نتائج کے لیے منفصل یکساں احتمالی تفاعل لکھیں۔",
+     "pashto": "د عادلانه ډایس د یو ځل اچولو د پایلو لپاره منفصل یونیفارم احتمالي تابع ولیکئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Here random variable X takes all of its values with equal probability $\\frac{1}{6}$. Thus, discrete uniform probability function will be of the form:",
+     "urdu": "یہاں تصادفی متغیر X اپنی تمام قیمتیں یکساں احتمال $\\frac{1}{6}$ کے ساتھ لیتا ہے۔ لہٰذا منفصل یکساں احتمالی تفاعل اس شکل کا ہوگا:",
+     "pashto": "دلته تصادفي متغیر X خپل ټول قیمتونه په مساوي احتمال $\\frac{1}{6}$ اخلي. نو منفصل یونیفارم احتمالي تابع به دا بڼه ولري:"
+    },
+    {
+     "text": "$$p(x)=\\begin{bmatrix}\\frac{1}{6}, & x=1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{bmatrix}$$",
+     "urdu": "$$p(x)=\\begin{bmatrix}\\frac{1}{6}, & x=1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{bmatrix}$$",
+     "pashto": "$$p(x)=\\begin{bmatrix}\\frac{1}{6}, & x=1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{bmatrix}$$"
+    },
+    {
+     "text": "◆ Graphical representation of discrete uniform distribution by means of a histogram is a set of adjacent rectangles with equal heights i.e.",
+     "urdu": "◆ ہسٹوگرام کے ذریعے منفصل یکساں تقسیم کی ترسیمی نمائندگی مساوی بلندی والے ملحقہ مستطیلوں کا مجموعہ ہے یعنی",
+     "pashto": "◆ د هسټوګرام په واسطه د منفصل یونیفارم وېش ګرافیکي ښودنه د مساوي لوړوالي لرونکو نښتو مستطیلونو ټولګه ده یعنې"
+    }
+   ],
+   "theory": "3.1 When to use discrete probability distributions\n\nDiscrete probability distributions are used to compute probabilities for all possible values of discrete random variables, by an easy way. In this unit a few simple and commonly used distributions are given that cover many areas in our surrounding. It is important to know and remember that which probability distribution is suitable for a particular situation.\n\n3.1.1 Introduction to discrete uniform distribution\n\nThis is the simplest probability distribution among the discrete probability distributions. It is used in the experiments/situations where probability at every point remains the same e.g. the outcomes of rolling a fair die, drawing cards from a well shuffled deck of cards, drawing of prize bond number etc. follow uniform distribution. A variable denoting the outcomes of such uniform experiments is called discrete uniform random variable and its probability distribution is called discrete uniform probability distribution. The most important application of the uniform distribution is in the generation of random numbers.\n\n3.1.2 Definition\n\nA probability distribution of the type:\n\nis called discrete uniform probability distribution.\n\nExample 3.1\n\nFind probability distribution for the outcomes of a fair die when it is rolled once.\n\nSolution:\n\nWhen a fair die is rolled once, then all outcomes are equally likely, therefore, its probability distribution is given by\n\nNote that X follows discrete uniform distribution.\n\n3.1.3 Definition of discrete uniform probability function\n\nA probability function defined as p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right. is called discrete uniform probability function and the variable X is called discrete uniform random variable. This distribution has only one parameter “N”, the total number of results /items of a uniform experiment.\n\nExample 3.2\n\nWrite discrete uniform probability function for the results of a fair die when it is rolled once.\n\nSolution:\n\nHere random variable X takes all of its values with equal probability \\frac{1}{6}. Thus, discrete uniform probability function will be of the form:\n\n$p(x)=\\begin{bmatrix}\\frac{1}{6}, & x=1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{bmatrix}$\n\n◆ Graphical representation of discrete uniform distribution by means of a histogram is a set of adjacent rectangles with equal heights i.e.",
+   "urdu": "3.1 منفصل احتمالی تقسیمیں کب استعمال کی جائیں\n\nمنفصل احتمالی تقسیمیں منفصل تصادفی متغیرات کی تمام ممکنہ قیمتوں کے احتمالات آسان طریقے سے معلوم کرنے کے لیے استعمال ہوتی ہیں۔ اس یونٹ میں چند سادہ اور عام استعمال ہونے والی تقسیمیں دی گئی ہیں جو ہمارے اردگرد کے بہت سے شعبوں کا احاطہ کرتی ہیں۔ یہ جاننا اور یاد رکھنا اہم ہے کہ کسی خاص صورتِ حال کے لیے کون سی احتمالی تقسیم موزوں ہے۔\n\n3.1.1 منفصل یکساں تقسیم کا تعارف\n\nیہ منفصل احتمالی تقسیموں میں سب سے سادہ احتمالی تقسیم ہے۔ یہ ان تجربات/حالات میں استعمال ہوتی ہے جہاں ہر نقطے پر احتمال یکساں رہتا ہے، مثلاً منصفانہ پانسہ پھینکنے کے نتائج، اچھی طرح پھینٹی گئی گڈی سے پتے نکالنا، پرائز بانڈ نمبر کی قرعہ اندازی وغیرہ یکساں تقسیم کی پیروی کرتے ہیں۔ ایسے یکساں تجربات کے نتائج ظاہر کرنے والے متغیر کو منفصل یکساں تصادفی متغیر اور اس کی احتمالی تقسیم کو منفصل یکساں احتمالی تقسیم کہتے ہیں۔ یکساں تقسیم کا سب سے اہم اطلاق تصادفی اعداد پیدا کرنے میں ہے۔\n\n3.1.2 تعریف\n\nاس قسم کی احتمالی تقسیم:\n\nمنفصل یکساں احتمالی تقسیم کہلاتی ہے۔\n\nمثال 3.1\n\nمنصفانہ پانسہ ایک بار پھینکنے پر نتائج کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\nجب منصفانہ پانسہ ایک بار پھینکا جائے تو تمام نتائج مساوی امکان والے ہوتے ہیں، لہٰذا اس کی احتمالی تقسیم یہ ہے\n\nنوٹ کریں کہ X منفصل یکساں تقسیم کی پیروی کرتا ہے۔\n\n3.1.3 منفصل یکساں احتمالی تفاعل کی تعریف\n\nاس طرح متعین احتمالی تفاعل p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right. منفصل یکساں احتمالی تفاعل کہلاتا ہے اور متغیر X کو منفصل یکساں تصادفی متغیر کہتے ہیں۔ اس تقسیم کا صرف ایک پیرامیٹر “N” ہے، یعنی یکساں تجربے کے نتائج/اشیاء کی کل تعداد۔\n\nمثال 3.2\n\nمنصفانہ پانسہ ایک بار پھینکنے کے نتائج کے لیے منفصل یکساں احتمالی تفاعل لکھیں۔\n\nحل:\n\nیہاں تصادفی متغیر X اپنی تمام قیمتیں یکساں احتمال \\frac{1}{6} کے ساتھ لیتا ہے۔ لہٰذا منفصل یکساں احتمالی تفاعل اس شکل کا ہوگا:\n\n$p(x)=\\begin{bmatrix}\\frac{1}{6}, & x=1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{bmatrix}$\n\n◆ ہسٹوگرام کے ذریعے منفصل یکساں تقسیم کی ترسیمی نمائندگی مساوی بلندی والے ملحقہ مستطیلوں کا مجموعہ ہے یعنی",
+   "pashto": "3.1 منفصل احتمالي وېشونه کله وکارول شي\n\nمنفصل احتمالي وېشونه د منفصلو تصادفي متغیرونو د ټولو شونو قیمتونو د احتمالونو د اسانه محاسبې لپاره کارول کېږي. په دې واحد کې ځینې ساده او عام کارېدونکي وېشونه ورکړل شوي چې زموږ د شاوخوا ډېرې برخې رانغاړي. دا پوهېدل او په یاد ساتل مهم دي چې کوم احتمالي وېش د یوه ځانګړي حالت لپاره مناسب دی.\n\n3.1.1 د منفصل یونیفارم وېش پېژندنه\n\nدا د منفصلو احتمالي وېشونو له منځه تر ټولو ساده احتمالي وېش دی. په هغو تجربو/حالتونو کې کارول کېږي چې په هر ټکي کې احتمال یو شان پاتې کېږي، لکه د عادلانه ډایس د اچولو پایلې، له ښه ګډې شوې ګډۍ څخه د کارتونو راایستل، د پرایز بانډ د شمېرې قرعه او نور یونیفارم وېش تعقیبوي. هغه متغیر چې د داسې یونیفارم تجربو پایلې ښيي، منفصل یونیفارم تصادفي متغیر او احتمالي وېش یې منفصل یونیفارم احتمالي وېش بلل کېږي. د یونیفارم وېش تر ټولو مهم کارول د تصادفي عددونو په جوړولو کې دي.\n\n3.1.2 تعریف\n\nد دې ډول احتمالي وېش:\n\nمنفصل یونیفارم احتمالي وېش بلل کېږي.\n\nبېلګه 3.1\n\nکله چې یو عادلانه ډایس یو ځل واچول شي، د پایلو احتمالي وېش پیدا کړئ.\n\nحل:\n\nکله چې عادلانه ډایس یو ځل واچول شي، ټولې پایلې مساوي امکان لري، نو احتمالي وېش یې دا دی\n\nپام وکړئ چې X منفصل یونیفارم وېش تعقیبوي.\n\n3.1.3 د منفصل یونیفارم احتمالي تابع تعریف\n\nهغه احتمالي تابع چې داسې تعریف شوې p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right. منفصل یونیفارم احتمالي تابع بلل کېږي او متغیر X ته منفصل یونیفارم تصادفي متغیر وایي. دا وېش یوازې یو پارامټر “N” لري، یعنې د یونیفارم تجربې د پایلو/شیانو ټول شمېر.\n\nبېلګه 3.2\n\nد عادلانه ډایس د یو ځل اچولو د پایلو لپاره منفصل یونیفارم احتمالي تابع ولیکئ.\n\nحل:\n\nدلته تصادفي متغیر X خپل ټول قیمتونه په مساوي احتمال \\frac{1}{6} اخلي. نو منفصل یونیفارم احتمالي تابع به دا بڼه ولري:\n\n$p(x)=\\begin{bmatrix}\\frac{1}{6}, & x=1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{bmatrix}$\n\n◆ د هسټوګرام په واسطه د منفصل یونیفارم وېش ګرافیکي ښودنه د مساوي لوړوالي لرونکو نښتو مستطیلونو ټولګه ده یعنې",
+   "theoryUrdu": "3.1 منفصل احتمالی تقسیمیں کب استعمال کی جائیں\n\nمنفصل احتمالی تقسیمیں منفصل تصادفی متغیرات کی تمام ممکنہ قیمتوں کے احتمالات آسان طریقے سے معلوم کرنے کے لیے استعمال ہوتی ہیں۔ اس یونٹ میں چند سادہ اور عام استعمال ہونے والی تقسیمیں دی گئی ہیں جو ہمارے اردگرد کے بہت سے شعبوں کا احاطہ کرتی ہیں۔ یہ جاننا اور یاد رکھنا اہم ہے کہ کسی خاص صورتِ حال کے لیے کون سی احتمالی تقسیم موزوں ہے۔\n\n3.1.1 منفصل یکساں تقسیم کا تعارف\n\nیہ منفصل احتمالی تقسیموں میں سب سے سادہ احتمالی تقسیم ہے۔ یہ ان تجربات/حالات میں استعمال ہوتی ہے جہاں ہر نقطے پر احتمال یکساں رہتا ہے، مثلاً منصفانہ پانسہ پھینکنے کے نتائج، اچھی طرح پھینٹی گئی گڈی سے پتے نکالنا، پرائز بانڈ نمبر کی قرعہ اندازی وغیرہ یکساں تقسیم کی پیروی کرتے ہیں۔ ایسے یکساں تجربات کے نتائج ظاہر کرنے والے متغیر کو منفصل یکساں تصادفی متغیر اور اس کی احتمالی تقسیم کو منفصل یکساں احتمالی تقسیم کہتے ہیں۔ یکساں تقسیم کا سب سے اہم اطلاق تصادفی اعداد پیدا کرنے میں ہے۔\n\n3.1.2 تعریف\n\nاس قسم کی احتمالی تقسیم:\n\nمنفصل یکساں احتمالی تقسیم کہلاتی ہے۔\n\nمثال 3.1\n\nمنصفانہ پانسہ ایک بار پھینکنے پر نتائج کی احتمالی تقسیم معلوم کریں۔\n\nحل:\n\nجب منصفانہ پانسہ ایک بار پھینکا جائے تو تمام نتائج مساوی امکان والے ہوتے ہیں، لہٰذا اس کی احتمالی تقسیم یہ ہے\n\nنوٹ کریں کہ X منفصل یکساں تقسیم کی پیروی کرتا ہے۔\n\n3.1.3 منفصل یکساں احتمالی تفاعل کی تعریف\n\nاس طرح متعین احتمالی تفاعل p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right. منفصل یکساں احتمالی تفاعل کہلاتا ہے اور متغیر X کو منفصل یکساں تصادفی متغیر کہتے ہیں۔ اس تقسیم کا صرف ایک پیرامیٹر “N” ہے، یعنی یکساں تجربے کے نتائج/اشیاء کی کل تعداد۔\n\nمثال 3.2\n\nمنصفانہ پانسہ ایک بار پھینکنے کے نتائج کے لیے منفصل یکساں احتمالی تفاعل لکھیں۔\n\nحل:\n\nیہاں تصادفی متغیر X اپنی تمام قیمتیں یکساں احتمال \\frac{1}{6} کے ساتھ لیتا ہے۔ لہٰذا منفصل یکساں احتمالی تفاعل اس شکل کا ہوگا:\n\n$p(x)=\\begin{bmatrix}\\frac{1}{6}, & x=1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{bmatrix}$\n\n◆ ہسٹوگرام کے ذریعے منفصل یکساں تقسیم کی ترسیمی نمائندگی مساوی بلندی والے ملحقہ مستطیلوں کا مجموعہ ہے یعنی",
+   "theoryPashto": "3.1 منفصل احتمالي وېشونه کله وکارول شي\n\nمنفصل احتمالي وېشونه د منفصلو تصادفي متغیرونو د ټولو شونو قیمتونو د احتمالونو د اسانه محاسبې لپاره کارول کېږي. په دې واحد کې ځینې ساده او عام کارېدونکي وېشونه ورکړل شوي چې زموږ د شاوخوا ډېرې برخې رانغاړي. دا پوهېدل او په یاد ساتل مهم دي چې کوم احتمالي وېش د یوه ځانګړي حالت لپاره مناسب دی.\n\n3.1.1 د منفصل یونیفارم وېش پېژندنه\n\nدا د منفصلو احتمالي وېشونو له منځه تر ټولو ساده احتمالي وېش دی. په هغو تجربو/حالتونو کې کارول کېږي چې په هر ټکي کې احتمال یو شان پاتې کېږي، لکه د عادلانه ډایس د اچولو پایلې، له ښه ګډې شوې ګډۍ څخه د کارتونو راایستل، د پرایز بانډ د شمېرې قرعه او نور یونیفارم وېش تعقیبوي. هغه متغیر چې د داسې یونیفارم تجربو پایلې ښيي، منفصل یونیفارم تصادفي متغیر او احتمالي وېش یې منفصل یونیفارم احتمالي وېش بلل کېږي. د یونیفارم وېش تر ټولو مهم کارول د تصادفي عددونو په جوړولو کې دي.\n\n3.1.2 تعریف\n\nد دې ډول احتمالي وېش:\n\nمنفصل یونیفارم احتمالي وېش بلل کېږي.\n\nبېلګه 3.1\n\nکله چې یو عادلانه ډایس یو ځل واچول شي، د پایلو احتمالي وېش پیدا کړئ.\n\nحل:\n\nکله چې عادلانه ډایس یو ځل واچول شي، ټولې پایلې مساوي امکان لري، نو احتمالي وېش یې دا دی\n\nپام وکړئ چې X منفصل یونیفارم وېش تعقیبوي.\n\n3.1.3 د منفصل یونیفارم احتمالي تابع تعریف\n\nهغه احتمالي تابع چې داسې تعریف شوې p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, & x=1,2,\\cdots,N\\\\ 0, & \\textit{otherwise}\\end{matrix}\\right. منفصل یونیفارم احتمالي تابع بلل کېږي او متغیر X ته منفصل یونیفارم تصادفي متغیر وایي. دا وېش یوازې یو پارامټر “N” لري، یعنې د یونیفارم تجربې د پایلو/شیانو ټول شمېر.\n\nبېلګه 3.2\n\nد عادلانه ډایس د یو ځل اچولو د پایلو لپاره منفصل یونیفارم احتمالي تابع ولیکئ.\n\nحل:\n\nدلته تصادفي متغیر X خپل ټول قیمتونه په مساوي احتمال \\frac{1}{6} اخلي. نو منفصل یونیفارم احتمالي تابع به دا بڼه ولري:\n\n$p(x)=\\begin{bmatrix}\\frac{1}{6}, & x=1,2,3,4,5,6\\\\ 0, & \\textit{otherwise}\\end{bmatrix}$\n\n◆ د هسټوګرام په واسطه د منفصل یونیفارم وېش ګرافیکي ښودنه د مساوي لوړوالي لرونکو نښتو مستطیلونو ټولګه ده یعنې",
+   "content": "<p>3.1 When to use discrete probability distributions</p><p>Discrete probability distributions are used to compute probabilities for all possible values of discrete random variables, by an easy way. In this unit a few simple and commonly used distributions are given that cover many areas in our surrounding. It is important to know and remember that which probability distribution is suitable for a particular situation.</p><p>3.1.1 Introduction to discrete uniform distribution</p><p>This is the simplest probability distribution among the discrete probability distributions. It is used in the experiments/situations where probability at every point remains the same e.g. the outcomes of rolling a fair die, drawing cards from a well shuffled deck of cards, drawing of prize bond number etc. follow uniform distribution. A variable denoting the outcomes of such uniform experiments is called discrete uniform random variable and its probability distribution is called discrete uniform probability distribution. The most important application of the uniform distribution is in the generation of random numbers.</p><p>3.1.2 Definition</p><p>A probability distribution of the type:</p><p>is called discrete uniform probability distribution.</p><p>Example 3.1</p><p>Find probability distribution for the outcomes of a fair die when it is rolled once.</p><p>Solution:</p><p>When a fair die is rolled once, then all outcomes are equally likely, therefore, its probability distribution is given by</p><p>Note that X follows discrete uniform distribution.</p><p>3.1.3 Definition of discrete uniform probability function</p><p>A probability function defined as p(x)=\\left\\{\\begin{matrix}\\frac{1}{N}, &amp; x=1,2,\\cdots,N\\\\ 0, &amp; \\textit{otherwise}\\end{matrix}\\right. is called discrete uniform probability function and the variable X is called discrete uniform random variable. This distribution has only one parameter “N”, the total number of results /items of a uniform experiment.</p><p>Example 3.2</p><p>Write discrete uniform probability function for the results of a fair die when it is rolled once.</p><p>Solution:</p><p>Here random variable X takes all of its values with equal probability \\frac{1}{6}. Thus, discrete uniform probability function will be of the form:</p><p>$p(x)=\\begin{bmatrix}\\frac{1}{6}, &amp; x=1,2,3,4,5,6\\\\ 0, &amp; \\textit{otherwise}\\end{bmatrix}$</p><p>◆ Graphical representation of discrete uniform distribution by means of a histogram is a set of adjacent rectangles with equal heights i.e.</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "heading",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-uniform-general"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "sourceDataTable",
+     "tableId": "stat12-t-ex3-1"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      15
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      16
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      17
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-t-uniform-general",
+     "headers": [
+      "$X$",
+      "$x_1$",
+      "$x_2$",
+      "$x_3$",
+      "$\\cdots$",
+      "$x_N$",
+      "Total"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "$\\frac{1}{N}$",
+       "$\\frac{1}{N}$",
+       "$\\frac{1}{N}$",
+       "$\\frac{1}{N}$",
+       "$\\frac{1}{N}$",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "$x_1$",
+        "$x_2$",
+        "$x_3$",
+        "$\\cdots$",
+        "$x_N$",
+        "کل"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{N}$",
+         "$\\frac{1}{N}$",
+         "$\\frac{1}{N}$",
+         "$\\frac{1}{N}$",
+         "$\\frac{1}{N}$",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "$x_1$",
+        "$x_2$",
+        "$x_3$",
+        "$\\cdots$",
+        "$x_N$",
+        "ټول"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{N}$",
+         "$\\frac{1}{N}$",
+         "$\\frac{1}{N}$",
+         "$\\frac{1}{N}$",
+         "$\\frac{1}{N}$",
+         "1"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "stat12-t-ex3-1",
+     "headers": [
+      "$X$",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "Total"
+     ],
+     "rows": [
+      [
+       "$p(x)$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{6}$",
+       "$\\frac{1}{6}$",
+       "1"
+      ]
+     ],
+     "translations": [
+      {
+       "language": "اردو",
+       "headers": [
+        "$X$",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "کل"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "1"
+        ]
+       ]
+      },
+      {
+       "language": "پښتو",
+       "headers": [
+        "$X$",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "ټول"
+       ],
+       "rows": [
+        [
+         "$p(x)$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "$\\frac{1}{6}$",
+         "1"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 40,
+     "printedPages": [
+      71,
+      72
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

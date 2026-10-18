@@ -1,0 +1,184 @@
+{
+ "pdfPage": 70,
+ "sections": [
+  {
+   "id": "cs12-u4-text-10",
+   "title": "Unit 4 text (10)",
+   "headingUrdu": "یونٹ 4 — متن (۱۰)",
+   "headingPashto": "۴ څپرکی — متن (۱۰)",
+   "paras": [
+    {
+     "text": "while (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}",
+     "urdu": "while (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}",
+     "pashto": "while (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Flowchart 4.5 shows working of while loop.",
+     "urdu": "فلو چارٹ 4.5 while لوپ کا عمل دکھاتا ہے۔",
+     "pashto": "۴.۵ فلوچارټ د while حلقې کار ښيي."
+    },
+    {
+     "text": "Consider the following program to display the string PAKISTAN five times on the screen using while loop.",
+     "urdu": "while لوپ کے ذریعے اسکرین پر اسٹرنگ PAKISTAN پانچ بار دکھانے کے لیے درج ذیل پروگرام پر غور کریں۔",
+     "pashto": "د while حلقې په مرسته پر پرده د PAKISTAN تار پنځه ځله ښودلو لپاره لاندې پروګرام ته پام وکړئ."
+    },
+    {
+     "text": "// displaying PAKISTAN 5 times using while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=1;\nwhile (i<6)\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "// displaying PAKISTAN 5 times using while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=1;\nwhile (i<6)\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "// displaying PAKISTAN 5 times using while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=1;\nwhile (i<6)\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "PAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+     "urdu": "PAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+     "pashto": "PAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Like for loop, the while loop has also three parts: initialization, condition and increment/decrement. The difference is that here the initialization is done before the while clause and the increment/decrement is done within the body of the while loop.",
+     "urdu": "for لوپ کی طرح while لوپ کے بھی تین حصے ہیں: ابتدائی قدر، شرط اور اضافہ/کمی۔ فرق یہ ہے کہ یہاں ابتدائی قدر while شق سے پہلے دی جاتی ہے اور اضافہ/کمی while لوپ کے جسم کے اندر کی جاتی ہے۔",
+     "pashto": "د for حلقې په څېر while حلقه هم درې برخې لري: لومړنی ارزښت، شرط او زیاتول/کمول. توپیر دا دی چې دلته لومړنی ارزښت د while برخې مخکې ورکول کېږي او زیاتول/کمول د while حلقې د بدنې دننه کېږي."
+    },
+    {
+     "text": "The second example of countdown using while-loop is given below.",
+     "urdu": "while لوپ کے ذریعے الٹی گنتی کی دوسری مثال ذیل میں دی گئی ہے۔",
+     "pashto": "د while حلقې په مرسته د شاتنۍ شمېرنې دویمه بېلګه لاندې ورکړل شوې."
+    },
+    {
+     "text": "// count down program using while loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n;\ncout << \"Enter the starting number: \";\ncin >> n;\nwhile (n>0)\n{\ncout << n << \", \";\n--n;\n}\ngetch();\nreturn 0;\n}",
+     "urdu": "// count down program using while loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n;\ncout << \"Enter the starting number: \";\ncin >> n;\nwhile (n>0)\n{\ncout << n << \", \";\n--n;\n}\ngetch();\nreturn 0;\n}",
+     "pashto": "// count down program using while loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n;\ncout << \"Enter the starting number: \";\ncin >> n;\nwhile (n>0)\n{\ncout << n << \", \";\n--n;\n}\ngetch();\nreturn 0;\n}",
+     "untranslatedByDesign": true
+    },
+    {
+     "text": "Output of the program",
+     "urdu": "پروگرام کا آؤٹ پٹ",
+     "pashto": "د پروګرام وتنه"
+    },
+    {
+     "text": "Enter the starting number:\n8\n8, 7, 6, 5, 4, 3, 2, 1",
+     "urdu": "Enter the starting number:\n8\n8, 7, 6, 5, 4, 3, 2, 1",
+     "pashto": "Enter the starting number:\n8\n8, 7, 6, 5, 4, 3, 2, 1",
+     "untranslatedByDesign": true
+    }
+   ],
+   "theory": "while (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nFlowchart 4.5 shows working of while loop.\n\nConsider the following program to display the string PAKISTAN five times on the screen using while loop.\n\n// displaying PAKISTAN 5 times using while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=1;\nwhile (i<6)\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n}\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\n\nLike for loop, the while loop has also three parts: initialization, condition and increment/decrement. The difference is that here the initialization is done before the while clause and the increment/decrement is done within the body of the while loop.\n\nThe second example of countdown using while-loop is given below.\n\n// count down program using while loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n;\ncout << \"Enter the starting number: \";\ncin >> n;\nwhile (n>0)\n{\ncout << n << \", \";\n--n;\n}\ngetch();\nreturn 0;\n}\n\nOutput of the program\n\nEnter the starting number:\n8\n8, 7, 6, 5, 4, 3, 2, 1",
+   "urdu": "while (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nفلو چارٹ 4.5 while لوپ کا عمل دکھاتا ہے۔\n\nwhile لوپ کے ذریعے اسکرین پر اسٹرنگ PAKISTAN پانچ بار دکھانے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n// displaying PAKISTAN 5 times using while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=1;\nwhile (i<6)\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\n\nfor لوپ کی طرح while لوپ کے بھی تین حصے ہیں: ابتدائی قدر، شرط اور اضافہ/کمی۔ فرق یہ ہے کہ یہاں ابتدائی قدر while شق سے پہلے دی جاتی ہے اور اضافہ/کمی while لوپ کے جسم کے اندر کی جاتی ہے۔\n\nwhile لوپ کے ذریعے الٹی گنتی کی دوسری مثال ذیل میں دی گئی ہے۔\n\n// count down program using while loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n;\ncout << \"Enter the starting number: \";\ncin >> n;\nwhile (n>0)\n{\ncout << n << \", \";\n--n;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter the starting number:\n8\n8, 7, 6, 5, 4, 3, 2, 1",
+   "pashto": "while (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\n۴.۵ فلوچارټ د while حلقې کار ښيي.\n\nد while حلقې په مرسته پر پرده د PAKISTAN تار پنځه ځله ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n// displaying PAKISTAN 5 times using while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=1;\nwhile (i<6)\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\n\nد for حلقې په څېر while حلقه هم درې برخې لري: لومړنی ارزښت، شرط او زیاتول/کمول. توپیر دا دی چې دلته لومړنی ارزښت د while برخې مخکې ورکول کېږي او زیاتول/کمول د while حلقې د بدنې دننه کېږي.\n\nد while حلقې په مرسته د شاتنۍ شمېرنې دویمه بېلګه لاندې ورکړل شوې.\n\n// count down program using while loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n;\ncout << \"Enter the starting number: \";\ncin >> n;\nwhile (n>0)\n{\ncout << n << \", \";\n--n;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter the starting number:\n8\n8, 7, 6, 5, 4, 3, 2, 1",
+   "theoryUrdu": "while (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\nفلو چارٹ 4.5 while لوپ کا عمل دکھاتا ہے۔\n\nwhile لوپ کے ذریعے اسکرین پر اسٹرنگ PAKISTAN پانچ بار دکھانے کے لیے درج ذیل پروگرام پر غور کریں۔\n\n// displaying PAKISTAN 5 times using while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=1;\nwhile (i<6)\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\n\nfor لوپ کی طرح while لوپ کے بھی تین حصے ہیں: ابتدائی قدر، شرط اور اضافہ/کمی۔ فرق یہ ہے کہ یہاں ابتدائی قدر while شق سے پہلے دی جاتی ہے اور اضافہ/کمی while لوپ کے جسم کے اندر کی جاتی ہے۔\n\nwhile لوپ کے ذریعے الٹی گنتی کی دوسری مثال ذیل میں دی گئی ہے۔\n\n// count down program using while loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n;\ncout << \"Enter the starting number: \";\ncin >> n;\nwhile (n>0)\n{\ncout << n << \", \";\n--n;\n}\ngetch();\nreturn 0;\n}\n\nپروگرام کا آؤٹ پٹ\n\nEnter the starting number:\n8\n8, 7, 6, 5, 4, 3, 2, 1",
+   "theoryPashto": "while (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}\n\n۴.۵ فلوچارټ د while حلقې کار ښيي.\n\nد while حلقې په مرسته پر پرده د PAKISTAN تار پنځه ځله ښودلو لپاره لاندې پروګرام ته پام وکړئ.\n\n// displaying PAKISTAN 5 times using while loop\n#include <iostream.h>\n#include<conio.h>\nint main()\n{\nint i=1;\nwhile (i<6)\n{\ncout << \"PAKISTAN\"<<endl;\n++i;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\n\nد for حلقې په څېر while حلقه هم درې برخې لري: لومړنی ارزښت، شرط او زیاتول/کمول. توپیر دا دی چې دلته لومړنی ارزښت د while برخې مخکې ورکول کېږي او زیاتول/کمول د while حلقې د بدنې دننه کېږي.\n\nد while حلقې په مرسته د شاتنۍ شمېرنې دویمه بېلګه لاندې ورکړل شوې.\n\n// count down program using while loop\n#include <iostream.h>\n#include <conio.h>\nint main()\n{\nint n;\ncout << \"Enter the starting number: \";\ncin >> n;\nwhile (n>0)\n{\ncout << n << \", \";\n--n;\n}\ngetch();\nreturn 0;\n}\n\nد پروګرام وتنه\n\nEnter the starting number:\n8\n8, 7, 6, 5, 4, 3, 2, 1",
+   "content": "<p>while (condition)\n{\nStatement 1;\nStatement 2;\n.\n.\nStatement n;\n}</p><p>Flowchart 4.5 shows working of while loop.</p><p>Consider the following program to display the string PAKISTAN five times on the screen using while loop.</p><p>// displaying PAKISTAN 5 times using while loop\n#include &lt;iostream.h&gt;\n#include&lt;conio.h&gt;\nint main()\n{\nint i=1;\nwhile (i&lt;6)\n{\ncout &lt;&lt; &quot;PAKISTAN&quot;&lt;&lt;endl;\n++i;\n}\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>PAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN\nPAKISTAN</p><p>Like for loop, the while loop has also three parts: initialization, condition and increment/decrement. The difference is that here the initialization is done before the while clause and the increment/decrement is done within the body of the while loop.</p><p>The second example of countdown using while-loop is given below.</p><p>// count down program using while loop\n#include &lt;iostream.h&gt;\n#include &lt;conio.h&gt;\nint main()\n{\nint n;\ncout &lt;&lt; &quot;Enter the starting number: &quot;;\ncin &gt;&gt; n;\nwhile (n&gt;0)\n{\ncout &lt;&lt; n &lt;&lt; &quot;, &quot;;\n--n;\n}\ngetch();\nreturn 0;\n}</p><p>Output of the program</p><p>Enter the starting number:\n8\n8, 7, 6, 5, 4, 3, 2, 1</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceLayout": [
+    {
+     "type": "code",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "visual",
+     "blockId": "cs12-fig-4-5"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "code",
+     "indices": [
+      10
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "cs12-fig-4-5",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 200\" role=\"img\" aria-label=\"Flowchart 4.5: Working of while Loop\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"440\" height=\"200\" fill=\"#ffffff\"/><line x1=\"120\" y1=\"6\" x2=\"120\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"120,78.0 200.0,104 120,130.0 40.0,104\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"120\" y=\"109.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Condition</text><line x1=\"200\" y1=\"104\" x2=\"290\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"245\" y=\"96\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"290.0\" y=\"86.0\" width=\"110\" height=\"36\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"345\" y=\"109.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">Loop Body</text><polyline points=\"345,86 345,40 126,40\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"170\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"108\" y=\"156\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><text x=\"220.0\" y=\"192\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">Flowchart 4.5: Working of while Loop</text></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 200\" role=\"img\" aria-label=\"فلو چارٹ 4.5: while لوپ کا عمل\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"440\" height=\"200\" fill=\"#ffffff\"/><line x1=\"120\" y1=\"6\" x2=\"120\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"120,78.0 200.0,104 120,130.0 40.0,104\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"120\" y=\"109.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شرط</text><line x1=\"200\" y1=\"104\" x2=\"290\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"245\" y=\"96\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"290.0\" y=\"86.0\" width=\"110\" height=\"36\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"345\" y=\"109.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">لوپ کا جسم</text><polyline points=\"345,86 345,40 126,40\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"170\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"108\" y=\"156\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><text x=\"220.0\" y=\"192\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">فلو چارٹ 4.5: while لوپ کا عمل</text></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 200\" role=\"img\" aria-label=\"۴.۵ فلوچارټ: د while حلقې کار\"><defs><marker id=\"fa\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"#1e293b\"/></marker></defs><rect width=\"440\" height=\"200\" fill=\"#ffffff\"/><line x1=\"120\" y1=\"6\" x2=\"120\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><polygon points=\"120,78.0 200.0,104 120,130.0 40.0,104\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"120\" y=\"109.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">شرط</text><line x1=\"200\" y1=\"104\" x2=\"290\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"245\" y=\"96\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">T</text><rect x=\"290.0\" y=\"86.0\" width=\"110\" height=\"36\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"345\" y=\"109.0\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">د حلقې بدنه</text><polyline points=\"345,86 345,40 126,40\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"170\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#fa)\"/><text x=\"108\" y=\"156\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" font-family=\"sans-serif\">F</text><text x=\"220.0\" y=\"192\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"normal\" fill=\"#475569\" font-family=\"sans-serif\">۴.۵ فلوچارټ: د while حلقې کار</text></svg>",
+     "sourceWidthRatio": 2.2
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Computer Science/PDF/Computer-Sc  Book for 12 class KPTBB.pdf",
+     "pdfPage": 70,
+     "printedPages": [
+      127,
+      128,
+      129,
+      130
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "sourceClass12Source": true,
+   "sourceSubject": "Computer Science",
+   "heading": "Unit 4 text (10)",
+   "sourcePageLabel": "PDF 70 · p. 127–128–129–130",
+   "sourceNote": "The while syntax begins at the foot of p.127; the PAKISTAN program ends at the top of p.129; the countdown program continues on p.130 (PDF71); each is given whole. Flowchart 4.5 is reproduced as a coded diagram.",
+   "unit": 4
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}

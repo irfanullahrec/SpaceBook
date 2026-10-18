@@ -1,0 +1,329 @@
+{
+ "pdfPage": 41,
+ "sections": [
+  {
+   "id": "stat12-p041-uniform-properties",
+   "title": "3.1.4 Properties of the discrete uniform distribution — Example 3.3",
+   "headingUrdu": "3.1.4 منفصل یکساں تقسیم کی خصوصیات — مثال 3.3",
+   "headingPashto": "3.1.4 د منفصل یونیفارم وېش ځانګړنې — بېلګه 3.3",
+   "paras": [
+    {
+     "text": "Due to rectangular shape, uniform distribution is also known as rectangular distribution",
+     "urdu": "مستطیلی شکل کی وجہ سے یکساں تقسیم کو مستطیلی تقسیم بھی کہتے ہیں",
+     "pashto": "د مستطیلي بڼې له امله یونیفارم وېش ته مستطیلي وېش هم وایي"
+    },
+    {
+     "text": "3.1.4 Properties of discrete uniform probability distribution",
+     "urdu": "3.1.4 منفصل یکساں احتمالی تقسیم کی خصوصیات",
+     "pashto": "3.1.4 د منفصل یونیفارم احتمالي وېش ځانګړنې"
+    },
+    {
+     "text": "(i) Mean of discrete uniform distribution",
+     "urdu": "(i) منفصل یکساں تقسیم کا اوسط",
+     "pashto": "(i) د منفصل یونیفارم وېش منځنی"
+    },
+    {
+     "text": "By definition mean $=E(X)=\\sum_x x\\,p(x)$",
+     "urdu": "تعریف کے مطابق اوسط $=E(X)=\\sum_x x\\,p(x)$",
+     "pashto": "د تعریف له مخې منځنی $=E(X)=\\sum_x x\\,p(x)$"
+    },
+    {
+     "text": "Put range and formula of discrete uniform distribution, we get",
+     "urdu": "منفصل یکساں تقسیم کی حد اور فارمولا رکھنے سے",
+     "pashto": "د منفصل یونیفارم وېش حد او فورمول ایښودو سره"
+    },
+    {
+     "text": "$$E(X)=\\sum_{x=1}^{N}x\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x=\\frac{1}{N}[1+2+3+\\cdots+N]$$",
+     "urdu": "$$E(X)=\\sum_{x=1}^{N}x\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x=\\frac{1}{N}[1+2+3+\\cdots+N]$$",
+     "pashto": "$$E(X)=\\sum_{x=1}^{N}x\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x=\\frac{1}{N}[1+2+3+\\cdots+N]$$"
+    },
+    {
+     "text": "$=\\frac{1}{N}\\left[\\frac{N(N+1)}{2}\\right]$ as $1+2+3+\\ldots+N=\\frac{N(N+1)}{2}$",
+     "urdu": "$=\\frac{1}{N}\\left[\\frac{N(N+1)}{2}\\right]$ کیونکہ $1+2+3+\\ldots+N=\\frac{N(N+1)}{2}$",
+     "pashto": "$=\\frac{1}{N}\\left[\\frac{N(N+1)}{2}\\right]$ ځکه چې $1+2+3+\\ldots+N=\\frac{N(N+1)}{2}$"
+    },
+    {
+     "text": "$$=\\frac{N+1}{2}$$",
+     "urdu": "$$=\\frac{N+1}{2}$$",
+     "pashto": "$$=\\frac{N+1}{2}$$"
+    },
+    {
+     "text": "(ii) Variance of discrete uniform distribution",
+     "urdu": "(ii) منفصل یکساں تقسیم کا تغیر",
+     "pashto": "(ii) د منفصل یونیفارم وېش واریانس"
+    },
+    {
+     "text": "By definition variance: $V(X)=E(X^2)-[E(X)]^2\\qquad(1)$",
+     "urdu": "تعریف کے مطابق تغیر: $V(X)=E(X^2)-[E(X)]^2\\qquad(1)$",
+     "pashto": "د تعریف له مخې واریانس: $V(X)=E(X^2)-[E(X)]^2\\qquad(1)$"
+    },
+    {
+     "text": "We know that $E(X)=\\frac{N+1}{2}\\qquad(2)$",
+     "urdu": "ہم جانتے ہیں کہ $E(X)=\\frac{N+1}{2}\\qquad(2)$",
+     "pashto": "پوهېږو چې $E(X)=\\frac{N+1}{2}\\qquad(2)$"
+    },
+    {
+     "text": "Now $E(X^2)=\\sum_{x=1}^{N}x^2\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x^2=\\frac{1}{N}[1^2+2^2+\\cdots+N^2]$",
+     "urdu": "اب $E(X^2)=\\sum_{x=1}^{N}x^2\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x^2=\\frac{1}{N}[1^2+2^2+\\cdots+N^2]$",
+     "pashto": "اوس $E(X^2)=\\sum_{x=1}^{N}x^2\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x^2=\\frac{1}{N}[1^2+2^2+\\cdots+N^2]$"
+    },
+    {
+     "text": "$=\\frac{1}{N}\\left[\\frac{N(N+1)(2N+1)}{6}\\right]$, as $1^2+2^2+\\cdots+N^2=\\frac{N(N+1)(2N+1)}{6}$",
+     "urdu": "$=\\frac{1}{N}\\left[\\frac{N(N+1)(2N+1)}{6}\\right]$، کیونکہ $1^2+2^2+\\cdots+N^2=\\frac{N(N+1)(2N+1)}{6}$",
+     "pashto": "$=\\frac{1}{N}\\left[\\frac{N(N+1)(2N+1)}{6}\\right]$، ځکه چې $1^2+2^2+\\cdots+N^2=\\frac{N(N+1)(2N+1)}{6}$"
+    },
+    {
+     "text": "$$=\\frac{(N+1)(2N+1)}{6}\\qquad(3)$$",
+     "urdu": "$$=\\frac{(N+1)(2N+1)}{6}\\qquad(3)$$",
+     "pashto": "$$=\\frac{(N+1)(2N+1)}{6}\\qquad(3)$$"
+    },
+    {
+     "text": "Put equation (2) and (3) in equation (1) we get,",
+     "urdu": "مساوات (2) اور (3) کو مساوات (1) میں رکھنے سے",
+     "pashto": "د (2) او (3) معادلې په (1) کې ایښودو سره"
+    },
+    {
+     "text": "$V(X)=\\frac{(N+1)(2N+1)}{6}-\\left(\\frac{N+1}{2}\\right)^2=\\frac{N+1}{2}\\left[\\frac{2N+1}{3}-\\frac{N+1}{2}\\right]$",
+     "urdu": "$V(X)=\\frac{(N+1)(2N+1)}{6}-\\left(\\frac{N+1}{2}\\right)^2=\\frac{N+1}{2}\\left[\\frac{2N+1}{3}-\\frac{N+1}{2}\\right]$",
+     "pashto": "$V(X)=\\frac{(N+1)(2N+1)}{6}-\\left(\\frac{N+1}{2}\\right)^2=\\frac{N+1}{2}\\left[\\frac{2N+1}{3}-\\frac{N+1}{2}\\right]$"
+    },
+    {
+     "text": "$=\\frac{N+1}{2}\\left[\\frac{4N+2-3N-3}{6}\\right]=\\frac{N+1}{2}\\left[\\frac{N-1}{6}\\right]$",
+     "urdu": "$=\\frac{N+1}{2}\\left[\\frac{4N+2-3N-3}{6}\\right]=\\frac{N+1}{2}\\left[\\frac{N-1}{6}\\right]$",
+     "pashto": "$=\\frac{N+1}{2}\\left[\\frac{4N+2-3N-3}{6}\\right]=\\frac{N+1}{2}\\left[\\frac{N-1}{6}\\right]$"
+    },
+    {
+     "text": "$=\\frac{N^2-1}{12}$",
+     "urdu": "$=\\frac{N^2-1}{12}$",
+     "pashto": "$=\\frac{N^2-1}{12}$"
+    },
+    {
+     "text": "(iii) Standard deviation of uniform distribution",
+     "urdu": "(iii) یکساں تقسیم کا معیاری انحراف",
+     "pashto": "(iii) د یونیفارم وېش معیاري انحراف"
+    },
+    {
+     "text": "By definition $S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{N^2-1}{12}}$",
+     "urdu": "تعریف کے مطابق $S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{N^2-1}{12}}$",
+     "pashto": "د تعریف له مخې $S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{N^2-1}{12}}$"
+    },
+    {
+     "text": "Example 3.3",
+     "urdu": "مثال 3.3",
+     "pashto": "بېلګه 3.3"
+    },
+    {
+     "text": "If X is a discrete uniform random variable taking values 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10 each with probability equal to $\\frac{1}{10}$. Find its mean, variance and standard deviation.",
+     "urdu": "اگر X ایک منفصل یکساں تصادفی متغیر ہو جو قیمتیں 1، 2، 3، 4، 5، 6، 7، 8، 9 اور 10 لیتا ہو اور ہر ایک کا احتمال $\\frac{1}{10}$ ہو۔ اس کا اوسط، تغیر اور معیاری انحراف معلوم کریں۔",
+     "pashto": "که X یو منفصل یونیفارم تصادفي متغیر وي چې قیمتونه 1، 2، 3، 4، 5، 6، 7، 8، 9 او 10 اخلي او د هر یوه احتمال $\\frac{1}{10}$ وي. منځنی، واریانس او معیاري انحراف یې پیدا کړئ."
+    },
+    {
+     "text": "Solution:",
+     "urdu": "حل:",
+     "pashto": "حل:"
+    },
+    {
+     "text": "Here total number of observations $=N=10$",
+     "urdu": "یہاں مشاہدات کی کل تعداد $=N=10$",
+     "pashto": "دلته د مشاهدو ټول شمېر $=N=10$"
+    },
+    {
+     "text": "$\\therefore\\text{Mean}=\\frac{N+1}{2}=\\frac{10+1}{2}=\\frac{11}{2}=5.5$",
+     "urdu": "$\\therefore\\text{Mean}=\\frac{N+1}{2}=\\frac{10+1}{2}=\\frac{11}{2}=5.5$",
+     "pashto": "$\\therefore\\text{Mean}=\\frac{N+1}{2}=\\frac{10+1}{2}=\\frac{11}{2}=5.5$"
+    },
+    {
+     "text": "$\\text{Variance}=\\frac{N^2-1}{12}=\\frac{10^2-1}{12}=\\frac{100-1}{12}=\\frac{99}{12}=8.25$",
+     "urdu": "$\\text{Variance}=\\frac{N^2-1}{12}=\\frac{10^2-1}{12}=\\frac{100-1}{12}=\\frac{99}{12}=8.25$",
+     "pashto": "$\\text{Variance}=\\frac{N^2-1}{12}=\\frac{10^2-1}{12}=\\frac{100-1}{12}=\\frac{99}{12}=8.25$"
+    },
+    {
+     "text": "$\\text{Standard deviation}=\\sqrt{8.25}=2.87$",
+     "urdu": "$\\text{Standard deviation}=\\sqrt{8.25}=2.87$",
+     "pashto": "$\\text{Standard deviation}=\\sqrt{8.25}=2.87$"
+    }
+   ],
+   "theory": "Due to rectangular shape, uniform distribution is also known as rectangular distribution\n\n3.1.4 Properties of discrete uniform probability distribution\n\n(i) Mean of discrete uniform distribution\n\nBy definition mean =E(X)=\\sum_x x\\,p(x)\n\nPut range and formula of discrete uniform distribution, we get\n\n$E(X)=\\sum_{x=1}^{N}x\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x=\\frac{1}{N}[1+2+3+\\cdots+N]$\n\n=\\frac{1}{N}\\left[\\frac{N(N+1)}{2}\\right] as 1+2+3+\\ldots+N=\\frac{N(N+1)}{2}\n\n$=\\frac{N+1}{2}$\n\n(ii) Variance of discrete uniform distribution\n\nBy definition variance: V(X)=E(X^2)-[E(X)]^2\\qquad(1)\n\nWe know that E(X)=\\frac{N+1}{2}\\qquad(2)\n\nNow E(X^2)=\\sum_{x=1}^{N}x^2\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x^2=\\frac{1}{N}[1^2+2^2+\\cdots+N^2]\n\n=\\frac{1}{N}\\left[\\frac{N(N+1)(2N+1)}{6}\\right], as 1^2+2^2+\\cdots+N^2=\\frac{N(N+1)(2N+1)}{6}\n\n$=\\frac{(N+1)(2N+1)}{6}\\qquad(3)$\n\nPut equation (2) and (3) in equation (1) we get,\n\nV(X)=\\frac{(N+1)(2N+1)}{6}-\\left(\\frac{N+1}{2}\\right)^2=\\frac{N+1}{2}\\left[\\frac{2N+1}{3}-\\frac{N+1}{2}\\right]\n\n=\\frac{N+1}{2}\\left[\\frac{4N+2-3N-3}{6}\\right]=\\frac{N+1}{2}\\left[\\frac{N-1}{6}\\right]\n\n=\\frac{N^2-1}{12}\n\n(iii) Standard deviation of uniform distribution\n\nBy definition S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{N^2-1}{12}}\n\nExample 3.3\n\nIf X is a discrete uniform random variable taking values 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10 each with probability equal to \\frac{1}{10}. Find its mean, variance and standard deviation.\n\nSolution:\n\nHere total number of observations =N=10\n\n\\therefore\\text{Mean}=\\frac{N+1}{2}=\\frac{10+1}{2}=\\frac{11}{2}=5.5\n\n\\text{Variance}=\\frac{N^2-1}{12}=\\frac{10^2-1}{12}=\\frac{100-1}{12}=\\frac{99}{12}=8.25\n\n\\text{Standard deviation}=\\sqrt{8.25}=2.87",
+   "urdu": "مستطیلی شکل کی وجہ سے یکساں تقسیم کو مستطیلی تقسیم بھی کہتے ہیں\n\n3.1.4 منفصل یکساں احتمالی تقسیم کی خصوصیات\n\n(i) منفصل یکساں تقسیم کا اوسط\n\nتعریف کے مطابق اوسط =E(X)=\\sum_x x\\,p(x)\n\nمنفصل یکساں تقسیم کی حد اور فارمولا رکھنے سے\n\n$E(X)=\\sum_{x=1}^{N}x\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x=\\frac{1}{N}[1+2+3+\\cdots+N]$\n\n=\\frac{1}{N}\\left[\\frac{N(N+1)}{2}\\right] کیونکہ 1+2+3+\\ldots+N=\\frac{N(N+1)}{2}\n\n$=\\frac{N+1}{2}$\n\n(ii) منفصل یکساں تقسیم کا تغیر\n\nتعریف کے مطابق تغیر: V(X)=E(X^2)-[E(X)]^2\\qquad(1)\n\nہم جانتے ہیں کہ E(X)=\\frac{N+1}{2}\\qquad(2)\n\nاب E(X^2)=\\sum_{x=1}^{N}x^2\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x^2=\\frac{1}{N}[1^2+2^2+\\cdots+N^2]\n\n=\\frac{1}{N}\\left[\\frac{N(N+1)(2N+1)}{6}\\right]، کیونکہ 1^2+2^2+\\cdots+N^2=\\frac{N(N+1)(2N+1)}{6}\n\n$=\\frac{(N+1)(2N+1)}{6}\\qquad(3)$\n\nمساوات (2) اور (3) کو مساوات (1) میں رکھنے سے\n\nV(X)=\\frac{(N+1)(2N+1)}{6}-\\left(\\frac{N+1}{2}\\right)^2=\\frac{N+1}{2}\\left[\\frac{2N+1}{3}-\\frac{N+1}{2}\\right]\n\n=\\frac{N+1}{2}\\left[\\frac{4N+2-3N-3}{6}\\right]=\\frac{N+1}{2}\\left[\\frac{N-1}{6}\\right]\n\n=\\frac{N^2-1}{12}\n\n(iii) یکساں تقسیم کا معیاری انحراف\n\nتعریف کے مطابق S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{N^2-1}{12}}\n\nمثال 3.3\n\nاگر X ایک منفصل یکساں تصادفی متغیر ہو جو قیمتیں 1، 2، 3، 4، 5، 6، 7، 8، 9 اور 10 لیتا ہو اور ہر ایک کا احتمال \\frac{1}{10} ہو۔ اس کا اوسط، تغیر اور معیاری انحراف معلوم کریں۔\n\nحل:\n\nیہاں مشاہدات کی کل تعداد =N=10\n\n\\therefore\\text{Mean}=\\frac{N+1}{2}=\\frac{10+1}{2}=\\frac{11}{2}=5.5\n\n\\text{Variance}=\\frac{N^2-1}{12}=\\frac{10^2-1}{12}=\\frac{100-1}{12}=\\frac{99}{12}=8.25\n\n\\text{Standard deviation}=\\sqrt{8.25}=2.87",
+   "pashto": "د مستطیلي بڼې له امله یونیفارم وېش ته مستطیلي وېش هم وایي\n\n3.1.4 د منفصل یونیفارم احتمالي وېش ځانګړنې\n\n(i) د منفصل یونیفارم وېش منځنی\n\nد تعریف له مخې منځنی =E(X)=\\sum_x x\\,p(x)\n\nد منفصل یونیفارم وېش حد او فورمول ایښودو سره\n\n$E(X)=\\sum_{x=1}^{N}x\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x=\\frac{1}{N}[1+2+3+\\cdots+N]$\n\n=\\frac{1}{N}\\left[\\frac{N(N+1)}{2}\\right] ځکه چې 1+2+3+\\ldots+N=\\frac{N(N+1)}{2}\n\n$=\\frac{N+1}{2}$\n\n(ii) د منفصل یونیفارم وېش واریانس\n\nد تعریف له مخې واریانس: V(X)=E(X^2)-[E(X)]^2\\qquad(1)\n\nپوهېږو چې E(X)=\\frac{N+1}{2}\\qquad(2)\n\nاوس E(X^2)=\\sum_{x=1}^{N}x^2\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x^2=\\frac{1}{N}[1^2+2^2+\\cdots+N^2]\n\n=\\frac{1}{N}\\left[\\frac{N(N+1)(2N+1)}{6}\\right]، ځکه چې 1^2+2^2+\\cdots+N^2=\\frac{N(N+1)(2N+1)}{6}\n\n$=\\frac{(N+1)(2N+1)}{6}\\qquad(3)$\n\nد (2) او (3) معادلې په (1) کې ایښودو سره\n\nV(X)=\\frac{(N+1)(2N+1)}{6}-\\left(\\frac{N+1}{2}\\right)^2=\\frac{N+1}{2}\\left[\\frac{2N+1}{3}-\\frac{N+1}{2}\\right]\n\n=\\frac{N+1}{2}\\left[\\frac{4N+2-3N-3}{6}\\right]=\\frac{N+1}{2}\\left[\\frac{N-1}{6}\\right]\n\n=\\frac{N^2-1}{12}\n\n(iii) د یونیفارم وېش معیاري انحراف\n\nد تعریف له مخې S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{N^2-1}{12}}\n\nبېلګه 3.3\n\nکه X یو منفصل یونیفارم تصادفي متغیر وي چې قیمتونه 1، 2، 3، 4، 5، 6، 7، 8، 9 او 10 اخلي او د هر یوه احتمال \\frac{1}{10} وي. منځنی، واریانس او معیاري انحراف یې پیدا کړئ.\n\nحل:\n\nدلته د مشاهدو ټول شمېر =N=10\n\n\\therefore\\text{Mean}=\\frac{N+1}{2}=\\frac{10+1}{2}=\\frac{11}{2}=5.5\n\n\\text{Variance}=\\frac{N^2-1}{12}=\\frac{10^2-1}{12}=\\frac{100-1}{12}=\\frac{99}{12}=8.25\n\n\\text{Standard deviation}=\\sqrt{8.25}=2.87",
+   "theoryUrdu": "مستطیلی شکل کی وجہ سے یکساں تقسیم کو مستطیلی تقسیم بھی کہتے ہیں\n\n3.1.4 منفصل یکساں احتمالی تقسیم کی خصوصیات\n\n(i) منفصل یکساں تقسیم کا اوسط\n\nتعریف کے مطابق اوسط =E(X)=\\sum_x x\\,p(x)\n\nمنفصل یکساں تقسیم کی حد اور فارمولا رکھنے سے\n\n$E(X)=\\sum_{x=1}^{N}x\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x=\\frac{1}{N}[1+2+3+\\cdots+N]$\n\n=\\frac{1}{N}\\left[\\frac{N(N+1)}{2}\\right] کیونکہ 1+2+3+\\ldots+N=\\frac{N(N+1)}{2}\n\n$=\\frac{N+1}{2}$\n\n(ii) منفصل یکساں تقسیم کا تغیر\n\nتعریف کے مطابق تغیر: V(X)=E(X^2)-[E(X)]^2\\qquad(1)\n\nہم جانتے ہیں کہ E(X)=\\frac{N+1}{2}\\qquad(2)\n\nاب E(X^2)=\\sum_{x=1}^{N}x^2\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x^2=\\frac{1}{N}[1^2+2^2+\\cdots+N^2]\n\n=\\frac{1}{N}\\left[\\frac{N(N+1)(2N+1)}{6}\\right]، کیونکہ 1^2+2^2+\\cdots+N^2=\\frac{N(N+1)(2N+1)}{6}\n\n$=\\frac{(N+1)(2N+1)}{6}\\qquad(3)$\n\nمساوات (2) اور (3) کو مساوات (1) میں رکھنے سے\n\nV(X)=\\frac{(N+1)(2N+1)}{6}-\\left(\\frac{N+1}{2}\\right)^2=\\frac{N+1}{2}\\left[\\frac{2N+1}{3}-\\frac{N+1}{2}\\right]\n\n=\\frac{N+1}{2}\\left[\\frac{4N+2-3N-3}{6}\\right]=\\frac{N+1}{2}\\left[\\frac{N-1}{6}\\right]\n\n=\\frac{N^2-1}{12}\n\n(iii) یکساں تقسیم کا معیاری انحراف\n\nتعریف کے مطابق S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{N^2-1}{12}}\n\nمثال 3.3\n\nاگر X ایک منفصل یکساں تصادفی متغیر ہو جو قیمتیں 1، 2، 3، 4، 5، 6، 7، 8، 9 اور 10 لیتا ہو اور ہر ایک کا احتمال \\frac{1}{10} ہو۔ اس کا اوسط، تغیر اور معیاری انحراف معلوم کریں۔\n\nحل:\n\nیہاں مشاہدات کی کل تعداد =N=10\n\n\\therefore\\text{Mean}=\\frac{N+1}{2}=\\frac{10+1}{2}=\\frac{11}{2}=5.5\n\n\\text{Variance}=\\frac{N^2-1}{12}=\\frac{10^2-1}{12}=\\frac{100-1}{12}=\\frac{99}{12}=8.25\n\n\\text{Standard deviation}=\\sqrt{8.25}=2.87",
+   "theoryPashto": "د مستطیلي بڼې له امله یونیفارم وېش ته مستطیلي وېش هم وایي\n\n3.1.4 د منفصل یونیفارم احتمالي وېش ځانګړنې\n\n(i) د منفصل یونیفارم وېش منځنی\n\nد تعریف له مخې منځنی =E(X)=\\sum_x x\\,p(x)\n\nد منفصل یونیفارم وېش حد او فورمول ایښودو سره\n\n$E(X)=\\sum_{x=1}^{N}x\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x=\\frac{1}{N}[1+2+3+\\cdots+N]$\n\n=\\frac{1}{N}\\left[\\frac{N(N+1)}{2}\\right] ځکه چې 1+2+3+\\ldots+N=\\frac{N(N+1)}{2}\n\n$=\\frac{N+1}{2}$\n\n(ii) د منفصل یونیفارم وېش واریانس\n\nد تعریف له مخې واریانس: V(X)=E(X^2)-[E(X)]^2\\qquad(1)\n\nپوهېږو چې E(X)=\\frac{N+1}{2}\\qquad(2)\n\nاوس E(X^2)=\\sum_{x=1}^{N}x^2\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x^2=\\frac{1}{N}[1^2+2^2+\\cdots+N^2]\n\n=\\frac{1}{N}\\left[\\frac{N(N+1)(2N+1)}{6}\\right]، ځکه چې 1^2+2^2+\\cdots+N^2=\\frac{N(N+1)(2N+1)}{6}\n\n$=\\frac{(N+1)(2N+1)}{6}\\qquad(3)$\n\nد (2) او (3) معادلې په (1) کې ایښودو سره\n\nV(X)=\\frac{(N+1)(2N+1)}{6}-\\left(\\frac{N+1}{2}\\right)^2=\\frac{N+1}{2}\\left[\\frac{2N+1}{3}-\\frac{N+1}{2}\\right]\n\n=\\frac{N+1}{2}\\left[\\frac{4N+2-3N-3}{6}\\right]=\\frac{N+1}{2}\\left[\\frac{N-1}{6}\\right]\n\n=\\frac{N^2-1}{12}\n\n(iii) د یونیفارم وېش معیاري انحراف\n\nد تعریف له مخې S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{N^2-1}{12}}\n\nبېلګه 3.3\n\nکه X یو منفصل یونیفارم تصادفي متغیر وي چې قیمتونه 1، 2، 3، 4، 5، 6، 7، 8، 9 او 10 اخلي او د هر یوه احتمال \\frac{1}{10} وي. منځنی، واریانس او معیاري انحراف یې پیدا کړئ.\n\nحل:\n\nدلته د مشاهدو ټول شمېر =N=10\n\n\\therefore\\text{Mean}=\\frac{N+1}{2}=\\frac{10+1}{2}=\\frac{11}{2}=5.5\n\n\\text{Variance}=\\frac{N^2-1}{12}=\\frac{10^2-1}{12}=\\frac{100-1}{12}=\\frac{99}{12}=8.25\n\n\\text{Standard deviation}=\\sqrt{8.25}=2.87",
+   "content": "<p>Due to rectangular shape, uniform distribution is also known as rectangular distribution</p><p>3.1.4 Properties of discrete uniform probability distribution</p><p>(i) Mean of discrete uniform distribution</p><p>By definition mean =E(X)=\\sum_x x\\,p(x)</p><p>Put range and formula of discrete uniform distribution, we get</p><p>$E(X)=\\sum_{x=1}^{N}x\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x=\\frac{1}{N}[1+2+3+\\cdots+N]$</p><p>=\\frac{1}{N}\\left[\\frac{N(N+1)}{2}\\right] as 1+2+3+\\ldots+N=\\frac{N(N+1)}{2}</p><p>$=\\frac{N+1}{2}$</p><p>(ii) Variance of discrete uniform distribution</p><p>By definition variance: V(X)=E(X^2)-[E(X)]^2\\qquad(1)</p><p>We know that E(X)=\\frac{N+1}{2}\\qquad(2)</p><p>Now E(X^2)=\\sum_{x=1}^{N}x^2\\frac{1}{N}=\\frac{1}{N}\\sum_{x=1}^{N}x^2=\\frac{1}{N}[1^2+2^2+\\cdots+N^2]</p><p>=\\frac{1}{N}\\left[\\frac{N(N+1)(2N+1)}{6}\\right], as 1^2+2^2+\\cdots+N^2=\\frac{N(N+1)(2N+1)}{6}</p><p>$=\\frac{(N+1)(2N+1)}{6}\\qquad(3)$</p><p>Put equation (2) and (3) in equation (1) we get,</p><p>V(X)=\\frac{(N+1)(2N+1)}{6}-\\left(\\frac{N+1}{2}\\right)^2=\\frac{N+1}{2}\\left[\\frac{2N+1}{3}-\\frac{N+1}{2}\\right]</p><p>=\\frac{N+1}{2}\\left[\\frac{4N+2-3N-3}{6}\\right]=\\frac{N+1}{2}\\left[\\frac{N-1}{6}\\right]</p><p>=\\frac{N^2-1}{12}</p><p>(iii) Standard deviation of uniform distribution</p><p>By definition S.D(X)=\\sqrt{V(X)}=\\sqrt{\\frac{N^2-1}{12}}</p><p>Example 3.3</p><p>If X is a discrete uniform random variable taking values 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10 each with probability equal to \\frac{1}{10}. Find its mean, variance and standard deviation.</p><p>Solution:</p><p>Here total number of observations =N=10</p><p>\\therefore\\text{Mean}=\\frac{N+1}{2}=\\frac{10+1}{2}=\\frac{11}{2}=5.5</p><p>\\text{Variance}=\\frac{N^2-1}{12}=\\frac{10^2-1}{12}=\\frac{100-1}{12}=\\frac{99}{12}=8.25</p><p>\\text{Standard deviation}=\\sqrt{8.25}=2.87</p>",
+   "translationStatus": "authored_aligned_paragraphs",
+   "sourceClass12Statistics": true,
+   "sourceLayout": [
+    {
+     "type": "visual",
+     "blockId": "stat12-uniform-histogram"
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      0
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      1
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      2
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      3
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      4
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      5
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      6
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      7
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      8
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      9
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      10
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      11
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      12
+     ]
+    },
+    {
+     "type": "equation",
+     "indices": [
+      13
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      14
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      18
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      19
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      20
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      21
+     ]
+    },
+    {
+     "type": "heading",
+     "indices": [
+      22
+     ]
+    },
+    {
+     "type": "paragraph",
+     "indices": [
+      23
+     ]
+    },
+    {
+     "type": "lines",
+     "indices": [
+      24,
+      25,
+      26
+     ]
+    }
+   ],
+   "sourceBlocks": [
+    {
+     "id": "stat12-uniform-histogram",
+     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 200\" role=\"img\" aria-label=\"Histogram of the discrete uniform distribution\"><rect width=\"340\" height=\"200\" fill=\"white\"/><g stroke=\"#111\" fill=\"none\" stroke-width=\"1.6\"><path d=\"M80 165V20M80 165H300\"/><path d=\"M80 14l-4 9h8z\" fill=\"#111\"/><path d=\"M306 165l-9-4v8z\" fill=\"#111\"/><rect x=\"95\" y=\"38\" width=\"190\" height=\"127\"/><path d=\"M128 38V165M157 38V165M235 38V165\"/></g><g font-family=\"Times New Roman,serif\" font-size=\"15\" fill=\"#111\" text-anchor=\"middle\"><text x=\"40\" y=\"44\" font-size=\"13\">P(x)=1/N</text><text x=\"196\" y=\"96\">…</text><text x=\"111\" y=\"186\">1</text><text x=\"142\" y=\"186\">2</text><text x=\"260\" y=\"186\">N</text><text x=\"318\" y=\"170\">x</text></g></svg>",
+     "svgUrdu": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 200\" role=\"img\" aria-label=\"Histogram of the discrete uniform distribution\"><rect width=\"340\" height=\"200\" fill=\"white\"/><g stroke=\"#111\" fill=\"none\" stroke-width=\"1.6\"><path d=\"M80 165V20M80 165H300\"/><path d=\"M80 14l-4 9h8z\" fill=\"#111\"/><path d=\"M306 165l-9-4v8z\" fill=\"#111\"/><rect x=\"95\" y=\"38\" width=\"190\" height=\"127\"/><path d=\"M128 38V165M157 38V165M235 38V165\"/></g><g font-family=\"Times New Roman,serif\" font-size=\"15\" fill=\"#111\" text-anchor=\"middle\"><text x=\"40\" y=\"44\" font-size=\"13\">P(x)=1/N</text><text x=\"196\" y=\"96\">…</text><text x=\"111\" y=\"186\">1</text><text x=\"142\" y=\"186\">2</text><text x=\"260\" y=\"186\">N</text><text x=\"318\" y=\"170\">x</text></g></svg>",
+     "svgPashto": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 200\" role=\"img\" aria-label=\"Histogram of the discrete uniform distribution\"><rect width=\"340\" height=\"200\" fill=\"white\"/><g stroke=\"#111\" fill=\"none\" stroke-width=\"1.6\"><path d=\"M80 165V20M80 165H300\"/><path d=\"M80 14l-4 9h8z\" fill=\"#111\"/><path d=\"M306 165l-9-4v8z\" fill=\"#111\"/><rect x=\"95\" y=\"38\" width=\"190\" height=\"127\"/><path d=\"M128 38V165M157 38V165M235 38V165\"/></g><g font-family=\"Times New Roman,serif\" font-size=\"15\" fill=\"#111\" text-anchor=\"middle\"><text x=\"40\" y=\"44\" font-size=\"13\">P(x)=1/N</text><text x=\"196\" y=\"96\">…</text><text x=\"111\" y=\"186\">1</text><text x=\"142\" y=\"186\">2</text><text x=\"260\" y=\"186\">N</text><text x=\"318\" y=\"170\">x</text></g></svg>",
+     "sourceWidthRatio": 0.55
+    }
+   ],
+   "sourceReferences": [
+    {
+     "sourcePdf": "D:/SpaceBook/Books/12th/12th Statistics/PDF/Statistics Book for 12 class KPTBB.pdf",
+     "pdfPage": 41,
+     "printedPages": [
+      73,
+      74
+     ]
+    }
+   ],
+   "sourceReviewStatus": "source_compared",
+   "rules": [],
+   "sciNote": "",
+   "unit": 3
+  }
+ ],
+ "issues": [],
+ "completeUnits": []
+}
