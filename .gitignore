@@ -1,7 +1,7 @@
 # SpaceBook Root .gitignore
 
 # Raw textbooks and large binary media (3.3+ GB)
-Books/
+/Books/
 backup/
 Other-Users-Work/
 SpaceBook App/
@@ -24,3 +24,50 @@ Thumbs.db
 *.pyc
 __pycache__/
 *_aux.txt
+
+# Local caches, other projects and page renders (not part of SpaceBook)
+.android/
+.claude/
+.gradle_user_home/
+POS-Local/
+Recovered-POS-Backup-*/
+/_cls*_jpg/
+/_c9render/
+/_qcache/
+/tmp/
+/deploy/
+/*.jpg
+/xampp-installer-help*.txt
+
+# Web app scratch output
+SpaceBook Web/tmp/
+SpaceBook Web/.claude/
+
+# Pipeline folders keep their scripts and transcriptions; scans and renders stay local
+SpaceBook Web/docs/**/*.png
+SpaceBook Web/docs/**/*.jpg
+SpaceBook Web/docs/**/*.jpeg
+SpaceBook Web/docs/**/*.jfif
+SpaceBook Web/docs/**/*.webp
+SpaceBook Web/docs/**/*.gif
+SpaceBook Web/docs/**/*.bmp
+SpaceBook Web/docs/**/*.tif
+SpaceBook Web/docs/**/*.tiff
+SpaceBook Web/docs/**/*.pdf
+SpaceBook Web/docs/**/*.docx
+SpaceBook Web/docs/**/*.doc
+SpaceBook Web/docs/**/*.pptx
+SpaceBook Web/docs/**/*.xlsx
+SpaceBook Web/docs/**/*.zip
+SpaceBook Web/docs/**/*.7z
+SpaceBook Web/docs/**/*.rar
+SpaceBook Web/docs/**/*.mp4
+SpaceBook Web/docs/**/*.bin
+SpaceBook Web/docs/**/*.pkl
+SpaceBook Web/docs/**/*.npy
+SpaceBook Web/tools/**/*.png
+SpaceBook Web/tools/**/*.jpg
+SpaceBook Web/tools/**/*.jpeg
+SpaceBook Web/tools/**/*.pdf
+SpaceBook Web/tools/**/*.zip
+SpaceBook Web/tools/**/*.docx

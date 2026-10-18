@@ -8,9 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=20261007_1">
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
   <link rel="stylesheet" href="css/universal_translate.css?v=20261014_ut10">
+  <link rel="stylesheet" href="css/word_stats.css?v=20261014_ws3">
+  <link rel="stylesheet" href="css/test_prep.css?v=20261018_tp4">
   <link rel="stylesheet" href="css/continue_learning.css?v=20261013_cl5">
   <link rel="stylesheet" href="css/reader_tools.css?v=20261013_rt4">
+  <link rel="stylesheet" href="css/auth.css?v=20261013_auth1">
+  <link rel="stylesheet" href="css/math12_class9_view.css?v=20261018_1">
+  <link rel="stylesheet" href="css/class12_study_views.css?v=20261018_2">
 </head>
 <body>
 
@@ -169,102 +175,233 @@
        Load order matters: the core registry (js/data.js) first, then every
        per-subject data file. Each subject file only mutates DATA, so each
        contributor works in exactly one file (see CONTRIBUTING.md). -->
-  <script src="js/data.js?v=20261004_2"></script>
+  <script src="js/data.js?v=20261013_isl10"></script>
   <script src="js/drawing_1_data.js?v=20261004_5"></script>
-  <script src="js/drawing_2_data.js?v=20261004_1"></script>
-  <script src="js/drawing_3_data.js?v=20261004_1"></script>
+  <script src="js/drawing_1_book.js?v=20261013_c1ug"></script>
+  <script src="js/urdu_1_book.js?v=20261013_c1ug"></script>
+  <script src="js/gk_1_book.js?v=20261013_c1ug"></script>
+  <script src="js/drawing_2_data.js?v=c2d34"></script>
+  <script src="js/drawing_3_data.js?v=20261013_c3slo"></script>
   <script src="js/data_chem.js?v=20261003_7"></script>
+  <script src="js/chemistry_10_source_data.js?v=20261010_1"></script>
+  <script src="js/chemistry_10_book_data.js?v=20261013_c10b"></script>
   <script src="js/data_phys.js?v=20261003_7"></script>
+  <script src="js/physics_10_source_data.js?v=20261009_1"></script>
+  <script src="js/physics_10_book_data.js?v=20261013_p10d"></script>
   <script src="js/data_eng.js"></script>
   <script src="js/data_bio.js?v=20261003_7"></script>
+  <script src="js/biology_10_front_source.js?v=20261012_1"></script>
+  <script src="js/biology_10_unit10_source.js?v=20261012_2"></script>
+  <script src="js/biology_10_unit11_source.js?v=20261012_3"></script>
+  <script src="js/biology_10_unit12_source.js?v=20261012_4"></script>
+  <script src="js/biology_10_unit13_source.js?v=20261012_1"></script>
+  <script src="js/biology_10_unit14_source.js?v=20261012_5"></script>
+  <script src="js/biology_10_unit15_source.js?v=20261012_2"></script>
+  <script src="js/biology_10_unit16_source.js?v=20261012_6"></script>
+  <script src="js/biology_10_unit17_source.js?v=20261012_8"></script>
+  <script src="js/biology_10_unit18_source.js?v=20261012_9"></script>
+  <script src="js/biology_10_back_source.js?v=20261012_11"></script>
   <script src="js/data_comp.js?v=20261003_7"></script>
   <script src="js/dictionary_data.js?v=20261002_6"></script>
   <script src="js/urdu_data.js?v=20261003_7"></script>
-  <script src="js/urdu_10_data.js?v=20261003_1"></script>
+  <script src="js/urdu_10_data.js?v=20261012_u10"></script>
   <script src="js/english_data.js"></script>
   <script src="js/english_10_data.js?v=20261003_1"></script>
+  <script src="js/english_10_source_review.js?v=20261012_p77b"></script>
   <script src="js/english_1_data.js?v=20261004_1"></script>
+  <script src="js/english_1_book.js?v=20261013_c1ug"></script>
+  <script src="js/primary_page_art.js?v=20261009_1"></script>
+  <script src="js/english_1_pages.js?v=20261009_1"></script>
+  <script src="js/primary_page_learning.js?v=20261009_1"></script>
   <script src="js/math_data.js"></script>
   <script src="js/math_10_data.js?v=20261005_2"></script>
   <script src="js/math_1_data.js?v=20261004_1"></script>
-  <script src="js/math_2_data.js?v=20261004_1"></script>
+  <script src="js/math_1_book.js?v=20261013_c1ug"></script>
+  <script src="js/math_2_data.js?v=20261013_c2m168"></script>
   <script src="js/math_3_book_text.js?v=20261004_1"></script>
-  <script src="js/math_3_data.js?v=20261004_1"></script>
+  <script src="js/math_3_data.js?v=20261013_c3slo"></script>
   <script src="js/math_primary_visuals.js?v=20261004_1"></script>
   <script src="js/pakstudy_data.js"></script>
   <script src="js/general_science_9_data.js?v=20261007_1"></script>
-  <script src="js/hpe_9_data.js?v=20261007_1"></script>
-  <script src="js/drawing_9_data.js?v=20261007_1"></script>
+  <script src="js/hpe_9_data.js?v=20261012_5"></script>
+<script src="js/english_9_book.js?v=20261013_en9b1"></script>
+<script src="js/pakstudy_9_book.js?v=20261013_pk9b1"></script>
+<script src="js/general_science_9_book.js?v=20261013_gs9b2"></script>
+<script src="js/computer_9_data.js?v=20261013_c9comp4"></script>
+<script src="js/islamiat_9_data.js?v=20261012_4"></script>
+  <script src="js/drawing_9_data.js?v=20261012_3"></script>
   <script src="js/islamiat_ikhtiari_9_data.js?v=20261007_1"></script>
-  <script src="js/mutalia_quran_9_data.js?v=20261007_1"></script>
-  <script src="js/pakstudy_10_data.js?v=20261003_1"></script>
-  <script src="js/computer_10_data.js?v=20261007_1"></script>
-  <script src="js/general_science_10_data.js?v=20261007_1"></script>
-  <script src="js/hpe_10_data.js?v=20261007_1"></script>
-  <script src="js/drawing_10_data.js?v=20261007_1"></script>
-  <script src="js/islamiat_ikhtiari_10_data.js?v=20261007_1"></script>
-  <script src="js/mutalia_quran_10_data.js?v=20261007_1"></script>
+  <script src="js/mutalia_quran_9_data.js?v=20261012_6"></script>
+  <script src="js/pakstudy_10_data.js?v=20261012_p10"></script>
+  <script src="js/computer_10_data.js?v=20261012_c10"></script>
+  <script src="js/general_science_10_data.js?v=20261012_s10"></script>
+  <script src="js/hpe_10_data.js?v=20261012_h10"></script>
+  <script src="js/drawing_10_data.js?v=20261012_d10"></script>
+  <script src="js/islamiat_ikhtiari_10_data.js?v=20261013_i10"></script>
+  <script src="js/mutalia_quran_10_data.js?v=20261013_q10"></script>
   <script src="js/bio_data.js"></script>
   <script src="js/islamyat_data.js?v=20261003_7"></script>
   <script src="js/islamyat_10_data.js?v=20261003_7"></script>
   <script src="js/islamyat_1_data.js?v=20261004_1"></script>
+  <script src="js/islamyat_1_book.js?v=20261013_c1ug"></script>
   <script src="js/nazira_1_data.js?v=20261004_1"></script>
+  <script src="js/nazira_1_book.js?v=20261013_c1ug"></script>
   <script src="js/pashto_1_data.js?v=20261004_1"></script>
-  <script src="js/english_2_data.js?v=20261004_1"></script>
-  <script src="js/urdu_2_data.js?v=20261004_1"></script>
-  <script src="js/islamyat_2_data.js?v=20261004_1"></script>
-  <script src="js/nazira_2_data.js?v=20261004_1"></script>
-  <script src="js/gk_2_data.js?v=20261004_1"></script>
-  <script src="js/pashto_2_data.js?v=20261004_1"></script>
-  <script src="js/islamyat_3_data.js?v=20261004_1"></script>
-  <script src="js/nazira_3_data.js?v=20261004_1"></script>
-  <script src="js/english_3_data.js?v=20261004_1"></script>
-  <script src="js/gk_3_data.js?v=20261004_1"></script>
-  <script src="js/pashto_3_data.js?v=20261004_1"></script>
+  <script src="js/pashto_1_book.js?v=20261013_c1ug"></script>
+  <script src="js/english_2_data.js?v=20261013_c2e138q"></script>
+  <script src="js/urdu_2_data.js?v=20261013_c2u117b"></script>
+  <script src="js/islamyat_2_data.js?v=20261013_c2i58"></script>
+  <script src="js/nazira_2_data.js?v=20261013_c2n91"></script>
+  <script src="js/gk_2_data.js?v=20261013_c2g103"></script>
+  <script src="js/pashto_2_data.js?v=c2p64"></script>
+  <script src="js/islamyat_3_data.js?v=20261013_c3slo"></script>
+  <script src="js/nazira_3_data.js?v=20261013_c3slo"></script>
+  <script src="js/english_3_data.js?v=20261013_c3slo"></script>
+  <script src="js/gk_3_data.js?v=20261013_c3slo"></script>
+  <script src="js/pashto_3_data.js?v=20261013_c3slo"></script>
   <script src="js/urdu_3_book.js?v=20261013_u3na"></script>
   <script src="js/math_12_data.js?v=20261007_7"></script>
+  <script src="js/phys_11_data.js?v=20261009_1"></script>
+  <script src="js/chem_11_data.js?v=20261011_class11"></script>
+  <script src="js/bio_11_data.js?v=20261012_1"></script>
+  <script src="js/stat_11_data.js?v=20261012_1"></script>
+  <script src="js/eng_11_data.js?v=20261012_1"></script>
+  <script src="js/ishist_11_data.js?v=20261012_1"></script>
+  <script src="js/cs_11_data.js?v=20261012_1"></script>
+  <script src="js/ikhtiari_11_data.js?v=20261012_1"></script>
+  <script src="js/civics_11_data.js?v=20261012_1"></script>
+  <script src="js/urdu_11_data.js?v=20261012_1"></script>
+  <script src="js/mq_11_data.js?v=20261012_1"></script>
+  <script src="js/hpe_11_data.js?v=20261012_1"></script>
+  <script src="js/isl_11_data.js?v=20261012_1"></script>
   <script src="js/phys_12_data.js?v=20261005_1"></script>
-  <script src="js/chem_12_data.js?v=20261005_1"></script>
-  <script src="js/stat_12_data.js?v=20261005_1"></script>
-  <script src="js/english_12_data.js?v=20261005_1"></script>
-  <script src="js/pakstudy_12_data.js?v=20261005_1"></script>
-  <script src="js/urdu_12_data.js?v=20261005_1"></script>
+  <script src="js/chem_12_data.js?v=20261011_chem12_source64"></script>
+  <script src="js/stat_12_data.js?v=20261013_stat12_complete"></script>
+  <script src="js/english_12_data.js?v=20261013_eng12_complete"></script>
+  <script src="js/pakstudy_12_data.js?v=20261013_pak12_complete"></script>
+  <script src="js/urdu_12_data.js?v=20261013_urdu12_complete"></script>
   <script src="js/biology_12_data.js?v=20261005_1"></script>
-  <script src="js/computer_12_data.js?v=20261005_1"></script>
-  <script src="js/civics_12_data.js?v=20261005_1"></script>
-  <script src="js/economics_12_data.js?v=20261005_1"></script>
-  <script src="js/hpe_12_data.js?v=20261005_1"></script>
-  <script src="js/islamiat_ikhtiari_12_data.js?v=20261005_1"></script>
-  <script src="js/islamic_history_12_data.js?v=20261005_1"></script>
-  <script src="js/quran_12_data.js?v=20261005_1"></script>
-  <script src="js/math_5_data.js?v=20261007_1"></script>
-  <script src="js/general_science_5_data.js?v=20261007_1"></script>
-  <script src="js/english_5_data.js?v=20261007_1"></script>
-  <script src="js/urdu_5_data.js?v=20261007_1"></script>
-  <script src="js/islamiat_5_data.js?v=20261007_1"></script>
-  <script src="js/social_studies_5_data.js?v=20261007_1"></script>
-  <script src="js/social_studies_um_5_data.js?v=20261007_1"></script>
-  <script src="js/pashto_5_data.js?v=20261007_1"></script>
-  <script src="js/math_6_data.js?v=20261007_1"></script>
-  <script src="js/math_7_data.js?v=20261007_1"></script>
-  <script src="js/general_science_6_data.js?v=20261007_1"></script>
-  <script src="js/english_6_data.js?v=20261007_1"></script>
-  <script src="js/urdu_6_data.js?v=20261007_1"></script>
-  <script src="js/islamiat_6_data.js?v=20261007_1"></script>
-  <script src="js/computer_6_data.js?v=20261007_1"></script>
-  <script src="js/geography_6_data.js?v=20261007_1"></script>
-  <script src="js/history_6_data.js?v=20261007_1"></script>
-  <script src="js/hpe_6_data.js?v=20261007_1"></script>
-  <script src="js/drawing_6_data.js?v=20261007_1"></script>
-  <script src="js/arabic_6_data.js?v=20261007_1"></script>
-  <script src="js/mutalia_quran_6_data.js?v=20261007_1"></script>
-  <script src="js/pashto_6_data.js?v=20261007_1"></script>
-  <script src="js/app.js?v=20261005_2"></script>
-  <script src="js/math_11_data.js?v=20261013_m11b"></script>
-  <script src="js/math11_reader.js?v=20261014_ar1"></script>
-  <script src="js/universal_translate.js?v=20261014_ut10"></script>
+  <script src="js/computer_12_data.js?v=20261013_cs12_complete"></script>
+  <script src="js/civics_12_data.js?v=20261013_civ12_complete"></script>
+  <script src="js/economics_12_data.js?v=20261013_eco_complete"></script>
+  <script src="js/hpe_12_data.js?v=20261013_hpe12_complete"></script>
+  <script src="js/islamiat_ikhtiari_12_data.js?v=20261013_iski_complete"></script>
+  <script src="js/islamic_history_12_data.js?v=20261014_ihist_complete"></script>
+  <script src="js/quran_12_data.js?v=20261014_quran_complete"></script>
+  <script src="js/math_4_data.js?v=20261011_c4m188"></script>
+  <script src="js/english_4_data.js?v=20261012_e152"></script>
+  <script src="js/urdu_4_data.js?v=20261013_u166"></script>
+  <script src="js/general_science_4_data.js?v=20261013_s149"></script>
+  <script src="js/social_studies_4_data.js?v=20261013_s131"></script>
+  <script src="js/social_studies_um_4_data.js?v=20261013_u136"></script>
+  <script src="js/islamiat_4_data.js?v=20261013_i117"></script>
+  <script src="js/pashto_4_data.js?v=20261013_p148"></script>
+  <script src="js/math_5_data.js?v=20261012_1"></script>
+  <script src="js/general_science_5_data.js?v=20261012_2"></script>
+  <script src="js/english_5_data.js?v=20261012_1"></script>
+  <script src="js/urdu_5_data.js?v=20261013_1"></script>
+  <script src="js/islamiat_5_data.js?v=20261013_1"></script>
+  <script src="js/social_studies_5_data.js?v=20261013_2"></script>
+  <script src="js/social_studies_um_5_data.js?v=20261013_1"></script>
+  <script src="js/pashto_5_data.js?v=20261013_1"></script>
+  <script src="js/math_6_data.js?v=20261011_40"></script>
+  <script src="js/math_7_data.js?v=20261010_1200"></script>
+  <script src="js/english_7_data.js?v=c7done"></script>
+  <script src="js/general_science_7_data.js?v=20261011_0932"></script>
+  <script src="js/computer_7_data.js?v=20261011_1717"></script>
+  <script src="js/geography_7_data.js?v=20261011_1800"></script>
+  <script src="js/history_7_data.js?v=20261011_1902"></script>
+  <script src="js/urdu_7_data.js?v=20261011_1626"></script>
+  <script src="js/islamiat_7_data.js?v=20261011_2024"></script>
+  <script src="js/mutalia_quran_7_data.js?v=20261011_2159"></script>
+  <script src="js/arabic_7_data.js?v=20261011_2251"></script>
+  <script src="js/drawing_7_data.js?v=20261011_2325"></script>
+  <script src="js/hpe_7_data.js?v=20261012_0749"></script>
+  <script src="js/general_science_6_data.js?v=20261011_40"></script>
+  <script src="js/english_6_data.js?v=20261011_40"></script>
+  <script src="js/urdu_6_data.js?v=20261011_40"></script>
+  <script src="js/islamiat_6_data.js?v=20261011_40"></script>
+  <script src="js/computer_6_data.js?v=20261011_40"></script>
+  <script src="js/geography_6_data.js?v=20261011_40"></script>
+  <script src="js/history_6_data.js?v=20261011_40"></script>
+  <script src="js/hpe_6_data.js?v=20261011_40"></script>
+  <script src="js/drawing_6_data.js?v=20261011_40"></script>
+  <script src="js/arabic_6_data.js?v=20261011_40"></script>
+  <script src="js/mutalia_quran_6_data.js?v=20261011_40"></script>
+  <script src="js/pashto_6_data.js?v=20261011_40"></script>
+  <script src="js/english_8_data.js?v=20261012_1"></script>
+  <script src="js/math_8_data.js?v=20261010_1"></script>
+  <script src="js/general_science_8_data.js?v=20261012_1"></script>
+  <script src="js/computer_8_data.js?v=20261012_1"></script>
+  <script src="js/geography_8_data.js?v=20261012_1"></script>
+  <script src="js/history_8_data.js?v=20261012_1"></script>
+  <script src="js/urdu_8_data.js?v=20261012_2"></script>
+  <script src="js/islamiat_8_data.js?v=20261012_3"></script>
+  <script src="js/mutalia_quran_8_data.js?v=20261012_2"></script>
+  <script src="js/pashto_8_data.js"></script>
+  <script src="js/arabic_8_data.js?v=20261013_a121"></script>
+  <script src="js/drawing_8_data.js"></script>
+  <script src="js/hpe_8_data.js"></script>
+  <script src="js/app.js?v=20261018_covers"></script>
+  <script src="js/biology_10_reader.js?v=20261012_6"></script>
+  <script src="js/english_10_reader.js?v=20261012_1"></script>
+  <script src="assets/vendor/katex/katex.min.js"></script>
+  <script src="js/lesson_math_reader.js?v=20261009_1"></script>
+  <script src="js/math12_unit6_source_recovery.js?v=20261018_1"></script>
+  <script src="js/math12_translation_completions.js?v=20261018_1"></script>
+  <script src="js/math12_unit2_translations.js?v=20261018_1"></script>
+  <script src="js/math12_unit5_translations.js?v=20261018_1"></script>
+  <script src="js/math12_unit3_translations.js?v=20261018_1"></script>
+  <script src="js/math12_unit7_translations.js?v=20261018_1"></script>
+  <script src="js/math12_unit11_translations.js?v=20261018_1"></script>
+  <script src="js/math12_unit4_translations.js?v=20261018_1"></script>
+  <script src="js/math12_unit10_translations.js?v=20261018_1"></script>
+  <script src="js/math12_unit8_translations.js?v=20261018_1"></script>
+  <script src="js/math12_unit12_translations.js?v=20261018_1"></script>
+  <script src="js/math12_unit6_translations.js?v=20261018_1"></script>
+  <script src="js/math12_unit9_translations.js?v=20261018_1"></script>
+  <script src="js/math12_remaining_translations.js?v=20261018_1"></script>
+  <script src="js/math12_translation_reader.js?v=20261008_1"></script>
+  <script src="js/math12_answer_repairs.js?v=20261018_1"></script>
+  <script src="js/math12_legibility_recovery.js?v=20261018_1"></script>
+  <script src="js/math12_unit9_practice.js?v=20261018_1"></script>
+  <script src="js/math12_unit6_exercise61_recovery.js?v=20261018_1"></script>
+  <script src="js/math12_study_views.js?v=20261018_1"></script>
+  <script src="js/math12_class9_view.js?v=20261018_1"></script>
+  <script src="js/chem12_unit13_study.js?v=20261018_1"></script>
+  <script src="js/phys12_unit11_study.js?v=20261018_1"></script>
+  <script src="js/class12_exercise_banks.js?v=20261018_1"></script>
+  <script src="js/phys12_exercise_banks.js?v=20261018_1"></script>
+  <script src="js/chem12_exercise_banks.js?v=20261018_1"></script>
+  <script src="js/class12_study_views.js?v=20261018_1"></script>
+  <script src="js/math6_reader.js?v=20261018_ans1"></script>
+  <script src="js/math5_reader.js?v=20261018_ans1"></script>
+  <script src="js/cls5_book_reader.js?v=20261012_1"></script>
+  <script src="js/cls2_book_reader.js?v=20261011_1"></script>
+  <script src="js/cls4_book_reader.js?v=20261011_c4m188"></script>
+  <script src="js/cls1_book_reader.js?v=20261013_c1ug"></script>
+  <script src="js/sb_solve.js?v=20261018_ans1"></script>
+  <script src="js/sb_book_skin.js?v=20261018_ans1"></script>
+  <script src="js/sb_rewards.js?v=20261018_r1"></script>
+  <script src="js/sb_trace.js?v=20261018_t2"></script>
+  <script src="js/cls3_book_reader.js?v=20261013_c3open"></script>
+  <script src="js/cls2_page_reader.js?v=c2d34"></script>
+  <script src="js/cls6_book_reader.js?v=20261013_en9b1_c9"></script>
+  <script src="js/math7_reader.js?v=20261018_ans1"></script>
+  <script src="js/math8_reader.js?v=20261018_ans1"></script>
+  <script src="js/math_11_data.js?v=20261018_answers1"></script>
+  <script src="js/math11_reader.js?v=20261018_ans1"></script>
+  <script src="js/offline_lexicon.js?v=20261018_l1"></script>
+  <script src="js/universal_translate.js?v=20261018_off1"></script>
   <script src="js/continue_learning.js?v=20261013_cl6"></script>
   <script src="js/reader_tools.js?v=20261013_rt1"></script>
-  <script src="js/structure_harmonizer.js?v=20261013_sh5"></script>
+  <script src="js/structure_harmonizer.js?v=20261018_click1"></script>
+  <script src="js/auth.js?v=20261013_auth1"></script>
+  <script src="js/word_stats_summary.js?v=20261014_ws2"></script>
+  <script src="js/word_stats.js?v=20261014_ws3"></script>
+  <script src="js/test_prep.js?v=20261018_tp4"></script>
+  <script src="js/study_plan_index.js?v=20261018_i1"></script>
+  <script src="js/sb_study_plan.js?v=20261018_p3"></script>
+  <script src="js/sb_global_ui.js?v=20261018_g1"></script>
 </body>
 </html>

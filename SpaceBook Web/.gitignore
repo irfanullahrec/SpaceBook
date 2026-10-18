@@ -7,3 +7,20 @@ assets/books/
 # Operating System files
 .DS_Store
 Thumbs.db
+
+# Local source inspection and browser review images (never shipped as book pages)
+tools/source-review/
+
+# Database credentials (see api/config.sample.php)
+api/config.php
+
+
+# Scratch output and source scans (never shipped)
+/tmp/
+/backup/
+/cover-replacement-staging/
+/*.png
+!/logo_tuitionhub_trans.png
+!/banner_kpk_academic.png
+# schema-applied marker written by api/db.php on the server
+api/.schema-*

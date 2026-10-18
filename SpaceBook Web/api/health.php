@@ -1,0 +1,25 @@
+<?php
+// Deployment check: GET api/health.php -> {"ok":true,"db":true,"tables":[...]}.
+// Reports whether the database is reachable; never prints credentials.
+
+require __DIR__ . '/db.php';
+
+header('Content-Type: application/json; charset=utf-8');
+header('Cache-Control: no-store');
+
+$out = ['ok' => true, 'php' => PHP_VERSION, 'db' => false];
+try {
+    $pdo = db();
+    $out['db'] = true;
+    $out['tables'] = $pdo->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN);
+} catch (Throwable $e) {
+    $out['ok'] = false;
+    $msg = $e->getMessage();
+    // say which kind of failure without echoing hosts or user names
+    $out['error'] = str_contains($msg, 'config.php') ? 'config.php missing'
+        : (preg_match('/Access denied/i', $msg) ? 'access denied (user, password, or Remote MySQL host not allowed)'
+        : (preg_match('/timed out|Connection refused|getaddrinfo|No route|2002/i', $msg) ? 'cannot reach the database server'
+        : (preg_match('/Unknown database/i', $msg) ? 'database does not exist' : 'database error')));
+    http_response_code(500);
+}
+echo json_encode($out);

@@ -1,0 +1,92 @@
+# Deploys "SpaceBook Web" to https://wantuch.pk/spacebook on every push to main (or by hand from the Actions tab).
+#
+# Repository secrets (GitHub > Settings > Secrets and variables > Actions > New repository secret):
+#   FTP_USERNAME   FTP account on wantuch.pk whose folder is public_html/spacebook (e.g. spacebook@wantuch.pk)
+#   FTP_PASSWORD   its password
+#   DB_PASSWORD    password of MySQL user ameencon_Irfan on ameenconsultancy.com
+# Optional repository variables (same page, "Variables" tab) only if your setup differs:
+#   FTP_SERVER (default wantuch.pk)  FTP_DIR (default ./)  FTP_PROTOCOL (default ftps)
+#   DB_HOST (default ameenconsultancy.com)  DB_NAME (default ameencon_spacebook)  DB_USER (default ameencon_Irfan)
+#   SITE_URL (default https://wantuch.pk/spacebook)
+name: Deploy SpaceBook
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'SpaceBook Web/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-spacebook
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      SITE_URL: ${{ vars.SITE_URL || 'https://wantuch.pk/spacebook' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check secrets
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        run: |
+          missing=""
+          for s in FTP_USERNAME FTP_PASSWORD DB_PASSWORD; do [ -n "${!s}" ] || missing="$missing $s"; done
+          if [ -n "$missing" ]; then
+            echo "::error::Add these repository secrets (Settings > Secrets and variables > Actions):$missing"
+            exit 1
+          fi
+
+      - name: Write api/config.php
+        env:
+          DB_HOST: ${{ vars.DB_HOST || 'ameenconsultancy.com' }}
+          DB_NAME: ${{ vars.DB_NAME || 'ameencon_spacebook' }}
+          DB_USER: ${{ vars.DB_USER || 'ameencon_Irfan' }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        run: |
+          php -r 'echo "<?php\n// Written by .github/workflows/deploy.yml from repository secrets.\nreturn " . var_export([
+            "db_host" => getenv("DB_HOST"), "db_name" => getenv("DB_NAME"), "db_user" => getenv("DB_USER"),
+            "db_pass" => getenv("DB_PASSWORD"), "db_port" => 3306], true) . ";\n";' > "SpaceBook Web/api/config.php"
+          php -l "SpaceBook Web/api/config.php"
+
+      - name: Upload to wantuch.pk
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ vars.FTP_SERVER || 'wantuch.pk' }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ${{ vars.FTP_PROTOCOL || 'ftps' }}
+          security: loose
+          local-dir: ./SpaceBook Web/
+          server-dir: ${{ vars.FTP_DIR || './' }}
+          timeout: 600000
+          # only the site goes up: pipelines, docs and dev files stay in the repository
+          exclude: |
+            **/.git*
+            **/.git*/**
+            docs/**
+            tools/**
+            kotlin/**
+            .claude/**
+            CONTRIBUTING.md
+            exercise-pages.json
+            biology-progress.json
+            test_*.js
+            banner_kpk_academic.png
+
+      - name: Check the live site
+        run: |
+          for i in 1 2 3 4 5; do curl -fsS -o /dev/null "$SITE_URL/" && break; sleep 6; done
+          curl -sS "$SITE_URL/api/health.php" | tee health.json; echo
+          if ! grep -q '"db":true' health.json; then
+            echo "::error::The site is uploaded, but the database is not reachable: $(cat health.json). On ameenconsultancy.com cPanel > Remote MySQL, add wantuch.pk's server IP (64.31.31.90), and check DB_PASSWORD."
+            exit 1
+          fi
+          echo "Live: $SITE_URL"

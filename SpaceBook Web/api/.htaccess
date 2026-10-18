@@ -1,0 +1,5 @@
+# Only the public endpoints may be requested directly.
+<FilesMatch "^(config|config\.sample|db|session)\.php$|\.sql$|^\.schema-">
+    Require all denied
+</FilesMatch>
+Options -Indexes
