@@ -3,9 +3,9 @@
 // cPanel database works without a manual import.
 //
 // Credentials come from api/config.php (gitignored; on the live site it is written by
-// .github/workflows/deploy.yml from GitHub secrets). The live database is on a different
-// server (ameenconsultancy.com) from the code (wantuch.pk), so connections time out fast
-// and the schema is applied once per schema version, not on every request.
+// .github/workflows/deploy.yml from GitHub secrets). The live database is on wantuch.pk
+// itself (localhost); connections time out fast and the schema is applied once per
+// schema version, not on every request.
 
 function db_config(): array
 {

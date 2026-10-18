@@ -3,10 +3,10 @@
 # Repository secrets (GitHub > Settings > Secrets and variables > Actions > New repository secret):
 #   FTP_USERNAME   FTP account on wantuch.pk whose folder is public_html/spacebook (e.g. spacebook@wantuch.pk)
 #   FTP_PASSWORD   its password
-#   DB_PASSWORD    password of MySQL user ameencon_Irfan on ameenconsultancy.com
+#   DB_PASSWORD    password of MySQL user tafseelk_spacebook on wantuch.pk
 # Optional repository variables (same page, "Variables" tab) only if your setup differs:
 #   FTP_SERVER (default wantuch.pk)  FTP_DIR (default ./)  FTP_PROTOCOL (default ftps)
-#   DB_HOST (default ameenconsultancy.com)  DB_NAME (default ameencon_spacebook)  DB_USER (default ameencon_Irfan)
+#   DB_HOST (default localhost)  DB_NAME (default tafseelk_spacebook)  DB_USER (default tafseelk_spacebook)
 #   SITE_URL (default https://wantuch.pk/spacebook)
 name: Deploy SpaceBook
 
@@ -46,9 +46,9 @@ jobs:
 
       - name: Write api/config.php
         env:
-          DB_HOST: ${{ vars.DB_HOST || 'ameenconsultancy.com' }}
-          DB_NAME: ${{ vars.DB_NAME || 'ameencon_spacebook' }}
-          DB_USER: ${{ vars.DB_USER || 'ameencon_Irfan' }}
+          DB_HOST: ${{ vars.DB_HOST || 'localhost' }}
+          DB_NAME: ${{ vars.DB_NAME || 'tafseelk_spacebook' }}
+          DB_USER: ${{ vars.DB_USER || 'tafseelk_spacebook' }}
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         run: |
           php -r 'echo "<?php\n// Written by .github/workflows/deploy.yml from repository secrets.\nreturn " . var_export([
@@ -86,7 +86,7 @@ jobs:
           for i in 1 2 3 4 5; do curl -fsS -o /dev/null "$SITE_URL/" && break; sleep 6; done
           curl -sS "$SITE_URL/api/health.php" | tee health.json; echo
           if ! grep -q '"db":true' health.json; then
-            echo "::error::The site is uploaded, but the database is not reachable: $(cat health.json). On ameenconsultancy.com cPanel > Remote MySQL, add wantuch.pk's server IP (64.31.31.90), and check DB_PASSWORD."
+            echo "::error::The site is uploaded, but the database is not reachable: $(cat health.json). On wantuch.pk cPanel > MySQL Databases, check that user tafseelk_spacebook has ALL PRIVILEGES on tafseelk_spacebook, and check DB_PASSWORD."
             exit 1
           fi
           echo "Live: $SITE_URL"
