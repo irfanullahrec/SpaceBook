@@ -297,15 +297,18 @@ function renderHome() {
   pageContent().innerHTML = `
     <div class="home-compact-universe">
 
-      <!-- 1. Header Bar -->
+      <!-- 1. Header Bar: My Stats / Project Stats tabs -->
       <div class="home-compact-bar">
-        <div class="hcb-left">
-          <span class="hcb-icon">📊</span>
-          <span class="hcb-title">My Study Statistics &amp; Performance Dashboard</span>
+        <div class="hcb-left hcb-tabs" role="tablist" aria-label="Statistics">
+          <button type="button" class="hcb-tab active" role="tab" aria-selected="true" data-home-tab="mine" onclick="switchHomeStatsTab('mine')">📊 My Stats</button>
+          <button type="button" class="hcb-tab" role="tab" aria-selected="false" data-home-tab="project" onclick="switchHomeStatsTab('project')">📚 Project Stats</button>
         </div>
-        <span class="hcb-pill">⚡ Auto-saved Live Metrics</span>
+        <span class="hcb-pill" id="hcbPill">⚡ Auto-saved Live Metrics</span>
       </div>
 
+      <div id="homeProjectStats" class="home-project-stats" hidden></div>
+
+      <div id="homeMyStats" class="home-my-stats">
       <!-- 2. The 6 Performance Metrics in One Single Row -->
       <div class="compact-analytics-grid">
         <!-- Studied Questions -->
@@ -411,7 +414,31 @@ function renderHome() {
         </div>
       </div>
 
+      <!-- 4. Words learnt from the word lists (js/word_stats.js) -->
+      <div id="homeMyWords"></div>
+      </div>
+
     </div>`;
+  if (window.SBWordStats) window.SBWordStats.renderMyWords($("homeMyWords"));
+  let savedTab = 'mine';
+  try { savedTab = localStorage.getItem('sbHomeStatsTab') || 'mine'; } catch (e) { /* storage unavailable */ }
+  if (savedTab === 'project') switchHomeStatsTab('project');
+}
+
+// Home header tabs: "My Stats" (study metrics) and "Project Stats" (vocabulary of all books)
+function switchHomeStatsTab(tab) {
+  const mine = $("homeMyStats"), project = $("homeProjectStats"), pill = $("hcbPill");
+  if (!mine || !project) return;
+  document.querySelectorAll('.hcb-tab').forEach(b => {
+    const on = b.dataset.homeTab === tab;
+    b.classList.toggle('active', on);
+    b.setAttribute('aria-selected', on ? 'true' : 'false');
+  });
+  mine.hidden = tab !== 'mine';
+  project.hidden = tab !== 'project';
+  if (pill) pill.textContent = tab === 'project' ? '📖 Words in every book' : '⚡ Auto-saved Live Metrics';
+  if (tab === 'project' && window.SBWordStats) window.SBWordStats.renderPanel(project, 'project');
+  try { localStorage.setItem('sbHomeStatsTab', tab); } catch (e) { /* storage unavailable */ }
 }
 
 // ─── QUICK DRILL & REVIEW MODALS ──────────
@@ -617,12 +644,8 @@ function renderClasses() {
 
   pageContent().innerHTML = `
     <div class="classes-universe-wrapper">
-      <!-- 1. Joyful Academic Levels Stage Bar -->
-      <div class="classes-stage-bar">
-        <img class="classes-stage-banner-img" src="banner_kpk_academic.png" alt="KPK Academic Levels · Choose Your Grade to Explore">
-      </div>
 
-      <!-- 2. Full-cover class cards -->
+      <!-- Full-cover class cards -->
       <div class="classes-jewel-grid">
         ${(() => {
           const clsCardCoverMap = {
@@ -647,7 +670,7 @@ function renderClasses() {
             if (!clsCoverFile) return '';
             return `
             <button type="button" class="class-jewel-card" onclick="goToSubjects('${c.id}')" aria-label="Open ${c.name}">
-              <img class="cjc-cover-bg" src="../Books/Cover Pages/Classes Cards/Another-Look/${clsCoverFile}" alt="${c.name} textbook cover" loading="lazy">
+              <img class="cjc-cover-bg" src="covers/Classes Cards/Another-Look/${clsCoverFile}" alt="${c.name} textbook cover" loading="lazy">
             </button>`;
           }).join("");
         })()}
@@ -676,7 +699,8 @@ function goToSubjects(classId) {
   ];
 
   // Classes with subject book grids and integrated study content.
-  if (!['cls1', 'cls2', 'cls3', 'cls5', 'cls6', 'cls7', 'cls9', 'cls10', 'cls12'].includes(classId)) {
+  const hasClass11Reader = classId === 'cls11' && (Object.keys(window.CLASS11_BOOKS || {}).length > 0 || typeof CHEM_11_DATA !== 'undefined' || typeof PHYS_11_DATA !== 'undefined' || typeof BIO_11_DATA !== 'undefined' || typeof STAT_11_DATA !== 'undefined' || typeof ENG_11_DATA !== 'undefined');
+  if (!['cls1', 'cls2', 'cls3', 'cls4', 'cls5', 'cls6', 'cls7', 'cls8', 'cls9', 'cls10', 'cls12'].includes(classId) && !hasClass11Reader) {
     pageContent().innerHTML = `
       <!-- 1. Single-Line Consolidated Header Bar -->
       <div class="subjects-single-line-bar">
@@ -746,13 +770,212 @@ function goToSubjects(classId) {
 
   // Calculate totals for class overview
   let totalUnits = 0;
-  const displaySubs = subs;
+  const displaySubs = classId === 'cls11'
+    ? subs.filter(s => (s.id === 'cls11-math' && typeof MATH_11_DATA !== 'undefined') || (s.id === 'cls11-chem' && typeof CHEM_11_DATA !== 'undefined') || (s.id === 'cls11-phy' && typeof PHYS_11_DATA !== 'undefined') || (s.id === 'cls11-bio' && typeof BIO_11_DATA !== 'undefined') || (s.id === 'cls11-stat' && typeof STAT_11_DATA !== 'undefined') || (s.id === 'cls11-eng' && typeof ENG_11_DATA !== 'undefined') || (window.CLASS11_BOOKS && Object.values(window.CLASS11_BOOKS).some(b => b.subjectId === s.id)))
+    : subs;
   displaySubs.forEach(s => { totalUnits += (s.chapters || 0); });
   const isCls9 = (classId === "cls9");
   const isCls10 = (classId === "cls10");
 
   // Rich metadata helper for subject statistical cards
   const getSubjectMeta = (s) => {
+    if (classId === "cls8" || (s.id && s.id.startsWith("cls8-"))) {
+      if (s.id === "cls8-math" || s.hasMath) {
+        return {
+          headerColor: "#2563eb",
+          urduName: "ریاضی (آٹھویں جماعت)",
+          badgeText: "✓ 100% Solved KPK Textbook",
+          badgeClass: "badge-blue",
+          metric1Val: "11 Units",
+          metric1Lbl: "Approximation to Probability",
+          metric2Val: "3,200+ Solved Qs",
+          metric2Lbl: "Step-by-Step Teacher Player",
+          metric3Val: "Complete MCQs",
+          metric3Lbl: "Trilingual Concepts & Solutions",
+          topics: ["Approximation & Estimation", "Real Numbers", "Financial Arithmetic", "Square & Cube Roots", "Sets", "Sequences & Algebra", "Exponents", "Simultaneous Linear Equations", "Surface Area & Volume", "Geometry", "Probability"]
+        };
+      }
+      if (s.id === "cls8-sci" || s.hasGenSci) {
+        return {
+          headerColor: "#059669",
+          urduName: "جنرل سائنس (آٹھویں جماعت)",
+          badgeText: "✓ 100% Verbatim KPK Textbook",
+          badgeClass: "badge-green",
+          metric1Val: "12 Units",
+          metric1Lbl: "Ecology to Space & Technology",
+          metric2Val: "150+ Solved Qs",
+          metric2Lbl: "Step-by-Step Exercise Bank",
+          metric3Val: "Scientific Concepts",
+          metric3Lbl: "Trilingual Translations & Words",
+          topics: ["Ecology", "Human Nervous System", "Variations, Heredity & Cell Division", "Biotechnology", "Periodic Table", "Chemical Reactions", "Acids, Bases & Salts", "Force & Pressure", "Reflection & Refraction", "Electricity & Magnetism", "Technology in Everyday Life", "Our Universe"]
+        };
+      }
+      if (s.id === "cls8-eng" || s.hasEng) {
+        return {
+          headerColor: "#4f46e5",
+          urduName: "انگریزی (آٹھویں جماعت)",
+          badgeText: "✓ 100% Verbatim KPK Textbook",
+          badgeClass: "badge-indigo",
+          metric1Val: "8 Units",
+          metric1Lbl: "Complete Textbook Syllabus",
+          metric2Val: "Trilingual Translations",
+          metric2Lbl: "English, Urdu & Pashto",
+          metric3Val: "SLO & Grammar Suite",
+          metric3Lbl: "Step-by-Step Solved Exercises",
+          topics: ["The Justice of Rasoolullah (ﷺ)", "Living Together", "Environment", "A Tourist's Guide", "Fiction and Poetry", "We Are All One", "Robotics", "Diet and Fitness"]
+        };
+      }
+      if (s.id === "cls8-urdu" || s.hasUrdu) {
+        return {
+          headerColor: "#16a34a",
+          urduName: "اردو لازمی (آٹھویں جماعت)",
+          badgeText: "✓ 100% درسی متن و مشقیں",
+          badgeClass: "badge-green",
+          metric1Val: "23 اسباق",
+          metric1Lbl: "حمد، نعت، اسباق و نظمیں",
+          metric2Val: "180+ حل شدہ سوالات",
+          metric2Lbl: "مشقی سوالات و جوابات",
+          metric3Val: "قواعد و تشریح",
+          metric3Lbl: "الفاظ معنی، گرامر و سہ لسانی ترجمہ",
+          topics: ["حمد باری تعالیٰ", "نعت رسول مقبول ﷺ", "دردِ دل کے واسطے پیدا کیا انسان کو", "ملکوتی صفات", "ہمارے وطن کا نشان", "معمارِ وطن", "شہری دفاع", "سیرتِ طیبہ ﷺ"]
+        };
+      }
+      if (s.id === "cls8-isl" || s.hasIsl) {
+        return {
+          headerColor: "#0d9488",
+          urduName: "اسلامیات لازمی (آٹھویں جماعت)",
+          badgeText: "✓ مستند قرآنی و نبوی تعلیمات",
+          badgeClass: "badge-teal",
+          metric1Val: "7 ابواب",
+          metric1Lbl: "قرآن، ایمانیات، سیرت و اخلاق",
+          metric2Val: "90+ حل شدہ سوالات",
+          metric2Lbl: "مشقی و موضوعاتی سوالات",
+          metric3Val: "ایمان و عمل",
+          metric3Lbl: "احادیث، عبادات و مشاہیر اسلام",
+          topics: ["قرآن مجید و حدیث نبوی ﷺ", "ایمانیات و عبادات", "سیرت طیبہ ﷺ", "اخلاق و آداب", "حسنِ معاملات و معاشرت", "ہدایت کے سرچشمے اور مشاہیر اسلام", "اسلامی تعلیمات اور عصرِ حاضر کے تقاضے"]
+        };
+      }
+      if (s.id === "cls8-comp" || s.hasComp) {
+        return {
+          headerColor: "#0284c7",
+          urduName: "کمپیوٹر ایجوکیشن (آٹھویں جماعت)",
+          badgeText: "✓ ICT, Networks & Python Coding",
+          badgeClass: "badge-cyan",
+          metric1Val: "6 Units",
+          metric1Lbl: "Emerging Tech to Python & AI",
+          metric2Val: "80+ Solved Qs",
+          metric2Lbl: "Step-by-Step Exercise Bank",
+          metric3Val: "Digital Skills",
+          metric3Lbl: "Trilingual Explanations",
+          topics: ["Emerging Technologies", "Computer Networks", "Spreadsheet (Excel)", "Algorithmic Thinking", "Python Programming", "Digital Citizenship & Entrepreneurship"]
+        };
+      }
+      if (s.id === "cls8-geo" || s.hasGeo) {
+        return {
+          headerColor: "#d97706",
+          urduName: "جغرافیہ (آٹھویں جماعت)",
+          badgeText: "✓ Oceans, Climate & Economy",
+          badgeClass: "badge-amber",
+          metric1Val: "6 Units",
+          metric1Lbl: "Oceans & Glaciers to Trade",
+          metric2Val: "75+ Solved Qs",
+          metric2Lbl: "Step-by-Step Exercise Bank",
+          metric3Val: "Environmental Geo",
+          metric3Lbl: "Trilingual Translations & Words",
+          topics: ["Oceans and Seas", "Living with the Climate", "Environmental Pollution", "Industrialization & International Trade", "Transport and Its Importance", "Social and Economic Development"]
+        };
+      }
+      if (s.id === "cls8-hist" || s.hasHist) {
+        return {
+          headerColor: "#b45309",
+          urduName: "تاریخ (آٹھویں جماعت)",
+          badgeText: "✓ Modern History & Pakistan Movement",
+          badgeClass: "badge-orange",
+          metric1Val: "5 Units",
+          metric1Lbl: "British Arrival to Pakistan since 1947",
+          metric2Val: "75+ Solved Qs",
+          metric2Lbl: "Historical Analysis & Timelines",
+          metric3Val: "Freedom Movement",
+          metric3Lbl: "Complete MCQs, SQs & LQs",
+          topics: ["Arrival of the British in the Subcontinent", "Reform Movements in India", "World Wars I & II", "Political Awakening in British India", "Pakistan since Creation (1947–Present)"]
+        };
+      }
+      if (s.id === "cls8-hpe" || s.hasHpe) {
+        return {
+          headerColor: "#ea580c",
+          urduName: "صحت و جسمانی تعلیم (آٹھویں جماعت)",
+          badgeText: "✓ صحت، تندرستی اور کھیل",
+          badgeClass: "badge-orange",
+          metric1Val: "8 ابواب",
+          metric1Lbl: "جسمانی تعلیم تا ابتدائی طبی امداد",
+          metric2Val: "65+ حل شدہ سوالات",
+          metric2Lbl: "ابتدائی طبی امداد و قوانین",
+          metric3Val: "کھیل و جسمانی لچک",
+          metric3Lbl: "ایتھلیٹکس، جمناسٹک و اصول",
+          topics: ["جسمانی تعلیم کی اہمیت", "اللعاب و کھیل (والی بال، ہاکی، فٹ بال)", "ایتھلیٹکس اور دوڑیں", "جمناسٹکس و جسمانی توازن", "صحت، غذا اور صفائی", "ابتدائی طبی امداد و حفاظتی تدابیر"]
+        };
+      }
+      if (s.id === "cls8-drawing" || s.hasDrawing) {
+        return {
+          headerColor: "#ec4899",
+          urduName: "ڈرائنگ / فنونِ لطیفہ (آٹھویں جماعت)",
+          badgeText: "✓ Visual Arts, Geometry & Design",
+          badgeClass: "badge-pink",
+          metric1Val: "6 Chapters",
+          metric1Lbl: "Elements of Art to Graphic Design",
+          metric2Val: "60+ Solved Qs",
+          metric2Lbl: "Step-by-Step Techniques & Concepts",
+          metric3Val: "Color & Perspective",
+          metric3Lbl: "Practical Geometry, Still Life & Crafts",
+          topics: ["Elements & Principles of Art", "Practical Geometry (Polygons & Circles)", "Perspective & Still Life Shading", "Nature & Landscape Painting", "Islamic Geometric Patterns & Calligraphy", "Poster & Graphic Design"]
+        };
+      }
+      if (s.id === "cls8-arabic" || s.hasArabic) {
+        return {
+          headerColor: "#047857",
+          urduName: "عربی (آٹھویں جماعت)",
+          badgeText: "✓ لغت، مکالمہ اور آسان قواعد",
+          badgeClass: "badge-green",
+          metric1Val: "10 اسباق",
+          metric1Lbl: "دعا تا اخلاق اور حب الوطن",
+          metric2Val: "75+ حل شدہ سوالات",
+          metric2Lbl: "عربی گفتگو اور مشقیں",
+          metric3Val: "قواعد و تراجم",
+          metric3Lbl: "کثیر الانتخابی و سہ لسانی مفردات",
+          topics: ["الدعاء والحمد", "النعت الشريف", "القرآن الكريم والحديث", "وطننا باكستان", "العلم والعمل", "البيئة والنظافة", "الحوار في المدرسة والسوق", "القواعد العربية الأساسية"]
+        };
+      }
+      if (s.id === "cls8-quran" || s.hasQuran) {
+        return {
+          headerColor: "#065f46",
+          urduName: "مطالعہ قرآن حکیم (آٹھویں جماعت)",
+          badgeText: "✓ فہم قرآن، ترجمہ و تفسیر",
+          badgeClass: "badge-emerald",
+          metric1Val: "8 ابواب",
+          metric1Lbl: "سورۃ التوبہ تا سورۃ الحج و المومنون",
+          metric2Val: "80+ حل شدہ سوالات",
+          metric2Lbl: "ترجمہ، تفسیر و مضامین",
+          metric3Val: "ہدایت و عمل",
+          metric3Lbl: "قصصِ انبیاء و قرآنی الفاظ معنی",
+          topics: ["سورۃ التوبہ و سورۃ یونس", "سورۃ ہود و سورۃ یوسفؑ", "سورۃ الرعد و سورۃ ابراہیمؑ", "سورۃ الحجر و سورۃ النحل", "سورۃ بنی اسرائیل و سورۃ الکہف", "سورۃ مریم و سورۃ طہٰ", "سورۃ الانبیاء و سورۃ الحج"]
+        };
+      }
+      if (s.id === "cls8-pashto" || s.hasPashto) {
+        return {
+          headerColor: "#0f766e",
+          urduName: "پښتو لازمي (اتم ټولګی)",
+          badgeText: "✓ 100% درسي متن او مشقونه",
+          badgeClass: "badge-teal",
+          metric1Val: "14 اسباق",
+          metric1Lbl: "حمد، نعت، لوستونه او نظمونه",
+          metric2Val: "95+ حل شوي سوالونه",
+          metric2Lbl: "مشغولتیاوې او درسي پوښتنې",
+          metric3Val: "ادب او ګرامر",
+          metric3Lbl: "رحمان بابا، خوشحال بابا او اخلاق",
+          topics: ["حمد او نعت شریف", "سیرت طیبہ ﷺ", "خوږ وطن پاکستان", "خوشحال خان خټک او رحمان بابا", "د علم او محنت ارزښت", "پښتني دود او کلتور", "چاپېریال او روغتیا", "پښتو ګرامر او متلونه"]
+        };
+      }
+    }
     if (classId === "cls7" && s.id === "cls7-math") {
       return {
         headerColor: "#2563eb",
@@ -1091,14 +1314,14 @@ function goToSubjects(classId) {
       return {
         headerColor: "#4f46e5",
         urduName: "انگریزی (پہلی جماعت)",
-        badgeText: "✓ 100% Verbatim KPK Textbook",
+        badgeText: "Source audit in progress",
         badgeClass: "badge-indigo",
         metric1Val: "11 Units",
-        metric1Lbl: "Phonics, Stories & 4 Reviews",
-        metric2Val: "85+ Solved Qs",
-        metric2Lbl: "Comprehension & MCQs",
-        metric3Val: "120+ Sight Words",
-        metric3Lbl: "Vocabulary & Rhyming Sounds",
+        metric1Lbl: "Book structure; audit underway",
+        metric2Val: "117 Pages",
+        metric2Lbl: "Printed pages 2–118 scanned and reconciled",
+        metric3Val: "Units 1–11",
+        metric3Lbl: "Text and exercise answers source-checked",
         topics: ["Time to Recall", "My Family & I", "Cobbler Cobbler", "Let's have Fun", "Sharing is Caring", "Blessings of Allah", "Classroom Manners", "Nature is Beautiful", "A Greeting Card", "The Hare & Tortoise", "Love Animals"]
       };
     }
@@ -1534,9 +1757,19 @@ function goToSubjects(classId) {
     "cls7-eng": "7th English.jpg", "cls7-urdu": "7th Urdu.jpg", "cls7-math": "7th MAths.jpg",
     "cls7-sci": "7th General Science.jpg", "cls7-hg": "7th History.jpg", "cls7-comp": "7th CS.jpg",
     "cls7-isl": "7th Islamiat.jpg", "cls7-pashto": "7th PAshto.jpg",
-    "cls8-eng": "8th English.jpg", "cls8-urdu": "Urdu.jpg", "cls8-math": "8th MAths.jpg",
-    "cls8-sci": "8th General Science.jpg", "cls8-hg": "8th History.jpg", "cls8-comp": "8th CS.jpg",
-    "cls8-isl": "8th Islamiat.jpg", "cls8-pashto": "8th PAshto.jpg",
+    "cls8-eng": "Books/8th/8 English.png",
+    "cls8-urdu": "Books/8th/8 Urdu.png",
+    "cls8-math": "Books/8th/8 Maths.png",
+    "cls8-sci": "Books/8th/8 General Science.png",
+    "cls8-comp": "Books/8th/8 Computer Science.png",
+    "cls8-geo": "Books/8th/8 Geography.png",
+    "cls8-hist": "8th History.jpg",
+    "cls8-isl": "Books/8th/8 Islamyat.png",
+    "cls8-quran": "Books/8th/8 Motalia Quaran.png",
+    "cls8-pashto": "8th PAshto.jpg",
+    "cls8-arabic": "Books/8th/8 Arabi.png",
+    "cls8-drawing": "Books/8th/8 Drawing.png",
+    "cls8-hpe": "Books/8th/HPE.png",
     "cls9-math": "Books/9th/Gemini_Generated_Image_w8lq8vw8lq8vw8lq.jfif",
     "cls9-phy": "Books/9th/Gemini_Generated_Image_pw7qnrpw7qnrpw7q.jfif",
     "cls9-chem": "Books/9th/Gemini_Generated_Image_30qsex30qsex30qs.jfif",
@@ -1570,6 +1803,7 @@ function goToSubjects(classId) {
     "cls11-chem": "Books/11th/Gemini_Generated_Image_lmncvllmncvllmnc.jfif",
     "cls11-bio": "Books/11th/Gemini_Generated_Image_jw91ygjw91ygjw91.jfif",
     "cls11-eng": "Books/11th/Gemini_Generated_Image_ol8qruol8qruol8q.jfif",
+    "cls11-stat": "Books/12th/Statistics.jpg",
     "cls12-math": "Books/12th/Mathematics.jpg",
     "cls12-phy": "Books/12th/Physics.jpg",
     "cls12-chem": "Books/12th/Chemistry.jpg",
@@ -1590,7 +1824,7 @@ function goToSubjects(classId) {
   const getCoverPage = (subjId) => {
     const filename = coverPageMap[subjId];
     if (!filename) return null;
-    return `../Books/Cover Pages/${filename}`;
+    return `covers/${filename}`;
   };
 
   const getGridColsClass = (count) => {
@@ -1603,6 +1837,21 @@ function goToSubjects(classId) {
   };
 
   const gridColsClass = getGridColsClass(displaySubs.length);
+
+if (classId === 'cls1') {
+    pageContent().innerHTML = `
+      <div class="cls1-cover-stage-grid">
+        ${displaySubs.map(s => {
+          const coverSrc = getCoverPage(s.id);
+          const imgHtml = coverSrc ? `<img class="cls1-cover-img" src="${coverSrc}" alt="${s.name} cover" loading="lazy">` : `<div class="scc-placeholder">${s.emoji}</div>`;
+          return `
+          <button type="button" class="cls1-cover-card" onclick="openSubject('${classId}','${s.id}')" title="Explore ${s.name} units & solved notes" aria-label="${s.name}">
+            ${imgHtml}
+          </button>`;
+        }).join("")}
+      </div>`;
+    return;
+  }
 
 pageContent().innerHTML = `
     <div class="subjects-compact-grid ${gridColsClass}">
@@ -1646,7 +1895,7 @@ function openSubject(classId, subjId) {
     renderDrawingView();
     return;
   }
-  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls5' && classId !== 'cls6' && classId !== 'cls7' && classId !== 'cls1' && classId !== 'cls2' && classId !== 'cls3' && classId !== 'cls12') {
+  if (classId !== 'cls9' && classId !== 'cls10' && classId !== 'cls4' && classId !== 'cls5' && classId !== 'cls6' && classId !== 'cls7' && classId !== 'cls8' && !(classId === 'cls11' && (subjId === 'cls11-math' || subjId === 'cls11-phy' || subjId === 'cls11-chem' || subjId === 'cls11-bio' || subjId === 'cls11-stat' || subjId === 'cls11-eng' || (window.CLASS11_BOOKS && Object.values(window.CLASS11_BOOKS).some(b => b.subjectId === subjId)))) && classId !== 'cls1' && classId !== 'cls2' && classId !== 'cls3' && classId !== 'cls12') {
     goToSubjects(classId);
     return;
   }
@@ -1732,16 +1981,119 @@ function openSubject(classId, subjId) {
     }
     return;
   }
-  if (subj.hasBio || subjId === 'cls9-bio' || subjId === 'cls10-bio' || subjId === 'cls12-bio') {
+  if (classId === 'cls7') {
+    if (subjId === 'cls7-eng' || subj.hasEng) {
+      state.activeSubject = "eng";
+      openSubjectWorkspace(classId, "eng", subj);
+    } else if (subjId === 'cls7-urdu' || subj.hasUrdu) {
+      state.activeSubject = "urdu";
+      openSubjectWorkspace(classId, "urdu", subj);
+    } else if (subjId === 'cls7-math' || subj.hasMath) {
+      state.activeSubject = "math";
+      openMathView(classId, subj);
+    } else if (subjId === 'cls7-sci' || subj.hasGenSci) {
+      state.activeSubject = "sci";
+      openSubjectWorkspace(classId, "sci", subj);
+    } else if (subjId === 'cls7-geo' || subj.hasGeo) {
+      state.activeSubject = "geo";
+      openSubjectWorkspace(classId, "geo", subj);
+    } else if (subjId === 'cls7-hist' || subj.hasHist) {
+      state.activeSubject = "hist";
+      openSubjectWorkspace(classId, "hist", subj);
+    } else if (subjId === 'cls7-hg' || subj.hasHg) {
+      state.activeSubject = "hg";
+      openSubjectWorkspace(classId, "hg", subj);
+    } else if (subjId === 'cls7-comp' || subj.hasComp) {
+      state.activeSubject = "comp";
+      openSubjectWorkspace(classId, "comp", subj);
+    } else if (subjId === 'cls7-isl' || subj.hasIsl) {
+      state.activeSubject = "isl";
+      openSubjectWorkspace(classId, "isl", subj);
+    } else if (subjId === 'cls7-quran' || subj.hasQuran) {
+      state.activeSubject = "quran";
+      openSubjectWorkspace(classId, "quran", subj);
+    } else if (subjId === 'cls7-pashto' || subj.hasPashto) {
+      state.activeSubject = "pashto";
+      openSubjectWorkspace(classId, "pashto", subj);
+    } else if (subjId === 'cls7-arabic' || subj.hasArabic) {
+      state.activeSubject = "arabic";
+      openSubjectWorkspace(classId, "arabic", subj);
+    } else if (subjId === 'cls7-drawing' || subj.hasDrawing) {
+      state.activeSubject = "drawing";
+      openSubjectWorkspace(classId, "drawing", subj);
+    } else if (subjId === 'cls7-hpe' || subj.hasHpe) {
+      state.activeSubject = "hpe";
+      openSubjectWorkspace(classId, "hpe", subj);
+    } else {
+      state.activeSubject = subj.id;
+      openSubjectWorkspace(classId, subj.id.replace('cls7-', ''), subj);
+    }
+    return;
+  }
+  if (classId === 'cls8') {
+    if (subjId === 'cls8-eng' || subj.hasEng) {
+      state.activeSubject = "eng";
+      openSubjectWorkspace(classId, "eng", subj);
+    } else if (subjId === 'cls8-urdu' || subj.hasUrdu) {
+      state.activeSubject = "urdu";
+      openSubjectWorkspace(classId, "urdu", subj);
+    } else if (subjId === 'cls8-math' || subj.hasMath) {
+      state.activeSubject = "math";
+      openSubjectWorkspace(classId, "math", subj);
+    } else if (subjId === 'cls8-sci' || subj.hasGenSci) {
+      state.activeSubject = "sci";
+      openSubjectWorkspace(classId, "sci", subj);
+    } else if (subjId === 'cls8-geo' || (subj.id === 'cls8-geo') || (subj.hasGeo && classId === 'cls8')) {
+      state.activeSubject = "geo";
+      openSubjectWorkspace(classId, "geo", subj);
+    } else if (subjId === 'cls8-hist' || (subj.id === 'cls8-hist') || (subj.hasHist && classId === 'cls8')) {
+      state.activeSubject = "hist";
+      openSubjectWorkspace(classId, "hist", subj);
+    } else if (subjId === 'cls8-hg' || subj.hasHg) {
+      state.activeSubject = "hg";
+      openSubjectWorkspace(classId, "hg", subj);
+    } else if (subjId === 'cls8-comp' || subj.hasComp) {
+      state.activeSubject = "comp";
+      openSubjectWorkspace(classId, "comp", subj);
+    } else if (subjId === 'cls8-isl' || subj.hasIsl) {
+      state.activeSubject = "isl";
+      openSubjectWorkspace(classId, "isl", subj);
+    } else if (subjId === 'cls8-quran' || subj.hasQuran) {
+      state.activeSubject = "quran";
+      openSubjectWorkspace(classId, "quran", subj);
+    } else if (subjId === 'cls8-pashto' || subj.hasPashto) {
+      state.activeSubject = "pashto";
+      openSubjectWorkspace(classId, "pashto", subj);
+    } else if (subjId === 'cls8-arabic' || subj.hasArabic) {
+      state.activeSubject = "arabic";
+      openSubjectWorkspace(classId, "arabic", subj);
+    } else if (subjId === 'cls8-drawing' || subj.hasDrawing) {
+      state.activeSubject = "drawing";
+      openSubjectWorkspace(classId, "drawing", subj);
+    } else if (subjId === 'cls8-hpe' || subj.hasHpe) {
+      state.activeSubject = "hpe";
+      openSubjectWorkspace(classId, "hpe", subj);
+    } else {
+      state.activeSubject = subj.id;
+      openSubjectWorkspace(classId, subj.id.replace('cls8-', ''), subj);
+    }
+    return;
+  }
+  if (classId === 'cls11' && class11BookBySubject(subjId)) {
+    state.activeSubject = subj.id;
+    openSubjectWorkspace(classId, class11BookBySubject(subjId).key, subj);
+    return;
+  }
+  if (subj.hasBio || subjId === 'cls9-bio' || subjId === 'cls10-bio' || subjId === 'cls11-bio' || subjId === 'cls12-bio') {
     state.activeSubject = "bio";
     openSubjectWorkspace(classId, "bio", subj);
-  } else if (subj.hasChem || subjId === 'cls9-chem' || subjId === 'cls10-chem' || subjId === 'cls12-chem') {
+  } else if (subj.hasChem || subjId === 'cls9-chem' || subjId === 'cls10-chem' || subjId === 'cls12-chem' || subjId === 'cls11-chem') {
     state.activeSubject = "chem";
     openSubjectWorkspace(classId, "chem", subj);
-  } else if (subj.hasPhys || subjId === 'cls9-phy' || subjId === 'cls10-phy' || subjId === 'cls12-phy') {
+  } else if (subj.hasPhys || subjId === 'cls9-phy' || subjId === 'cls10-phy' || subjId === 'cls11-phy' || subjId === 'cls12-phy') {
     state.activeSubject = "phys";
     openSubjectWorkspace(classId, "phys", subj);
-  } else if (subj.hasEng || subjId === 'cls9-eng' || subjId === 'cls10-eng' || subjId === 'cls1-eng' || subjId === 'cls2-eng' || subjId === 'cls3-eng' || subjId === 'cls12-eng') {
+  } else if (subj.hasEng || subjId === 'cls9-eng' || subjId === 'cls10-eng' || subjId === 'cls1-eng' || subjId === 'cls2-eng' || subjId === 'cls3-eng' || subjId === 'cls12-eng' || subjId === 'cls11-eng') {
     state.activeSubject = "eng";
     openSubjectWorkspace(classId, "eng", subj);
   } else if (subj.hasUrdu || subjId === 'cls9-urdu' || subjId === 'cls10-urdu' || subjId === 'cls2-urdu' || subjId === 'cls12-urdu') {
@@ -1768,7 +2120,7 @@ function openSubject(classId, subjId) {
   } else if (subj.hasComp || subjId === 'cls9-comp' || subjId === 'cls10-comp' || subjId === 'cls12-comp') {
     state.activeSubject = "comp";
     openSubjectWorkspace(classId, "comp", subj);
-  } else if (subjId === 'cls12-stat') {
+  } else if (subjId === 'cls12-stat' || subjId === 'cls11-stat') {
     state.activeSubject = "stat";
     openSubjectWorkspace(classId, "stat", subj);
   } else if (subj.hasCivics || subjId === 'cls12-civics') {
@@ -1807,43 +2159,92 @@ function renderDrawingArtwork(kind, title) {
     "shape-person": '<polygon points="290,45 245,105 335,105" fill="#fde68a" stroke="#334155" stroke-width="7"/><circle cx="290" cy="145" r="35" fill="#fbcfe8" stroke="#334155" stroke-width="7"/><path d="M290 180v95m0-55-60 50m60-50 60 50m-60 5-45 70m45-70 45 70" ' + common + '/>',
     "shape-friends": '<rect x="115" y="110" width="120" height="120" rx="12" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><circle cx="420" cy="170" r="62" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M145 145h12m35 0h12M160 175q20 20 40 0M388 158h12m35 0h12M400 190q20 18 40 0" ' + common + '/>',
     "shape-faces": '<rect x="95" y="100" width="115" height="115" rx="12" fill="#bbf7d0" stroke="#334155" stroke-width="7"/><circle cx="390" cy="155" r="65" fill="#bae6fd" stroke="#334155" stroke-width="7"/><path d="M120 135h12m38 0h12M127 170q24 22 48 0M354 142h12m42 0h12M360 178q30 24 60 0" ' + common + '/>',
-    rainbow: '<path d="M70 285a230 230 0 0 1 460 0M120 285a180 180 0 0 1 360 0M170 285a130 130 0 0 1 260 0M220 285a80 80 0 0 1 160 0" stroke="#475569" stroke-width="12" fill="none"/><circle cx="490" cy="95" r="38" fill="#fde68a" stroke="#334155" stroke-width="6"/>',
-    bird: '<ellipse cx="300" cy="205" rx="115" ry="82" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><circle cx="360" cy="125" r="57" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><path d="M410 120l75 24-72 26M215 205q65-80 100 0-45 50-100 0M215 277v25m45-25v25m-57 0h30m12 0h30M312 112h10m40 0h10" ' + common + '/><circle cx="326" cy="130" r="7" fill="#334155"/><circle cx="371" cy="130" r="7" fill="#334155"/>',
-    ship: '<path d="M115 250h370l-55 65H175z" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><path d="M295 70v180m-8-165-112 130h112m16-125 105 125H303" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M85 330q30-20 60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0" ' + common + '/>',
-    "angry-bird": '<circle cx="300" cy="190" r="120" fill="#fca5a5" stroke="#334155" stroke-width="7"/><path d="M210 90l45 35m135-35-45 35M250 145l65 18m35-18-65 18M290 195l70 18-70 24zM250 275l-30 42m100-42 30 42" fill="#fbbf24" stroke="#334155" stroke-width="8"/><circle cx="270" cy="155" r="9" fill="#334155"/><circle cx="350" cy="155" r="9" fill="#334155"/>',
-    bee: '<ellipse cx="300" cy="200" rx="120" ry="78" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M235 132v136m65-148v156m65-145v133M245 130q-65-100-100-20t80 65m130-45q70-95 100-10t-85 60M420 190l50-28m-50 50 50 28" fill="#fbbf24" stroke="#334155" stroke-width="7"/><circle cx="190" cy="188" r="6" fill="#334155"/><circle cx="220" cy="188" r="6" fill="#334155"/>',
-    cap: '<path d="M145 235q25-145 155-145t155 145z" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><path d="M145 235q180-18 355 0-30 68-190 60-125-5-165-60z" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M250 150h100" ' + common + '/>',
-    tulip: '<path d="M300 170v165m0-85q-115-95-130 5 80 50 130-5m0 0q100-125 145-35-50 85-145 35" fill="#bbf7d0" stroke="#334155" stroke-width="7"/><path d="M225 170q-35-35-10-95 35 25 40 62 25-70 45-100 25 40 5 90 55-55 90-45 0 60-50 87-65 35-120 1z" fill="#f9a8d4" stroke="#334155" stroke-width="7"/>',
-    ant: '<circle cx="190" cy="205" r="46" fill="#fca5a5" stroke="#334155" stroke-width="7"/><ellipse cx="300" cy="205" rx="42" ry="50" fill="#fdba74" stroke="#334155" stroke-width="7"/><ellipse cx="415" cy="205" rx="70" ry="60" fill="#fca5a5" stroke="#334155" stroke-width="7"/><path d="M170 160q-10-55-55-48m90 48q15-55 50-58m-20 100-65-60m65 68-80 0m80 15-60 70m125-70-80-55m80 55-80 5m80 5-65 65m130-65 5 70" ' + common + '/><circle cx="180" cy="198" r="6" fill="#334155"/>',
-    goat: '<ellipse cx="280" cy="210" rx="145" ry="70" fill="#f1f5f9" stroke="#334155" stroke-width="7"/><path d="M380 185q25-100 90-65l20 65-55 45-60-15M445 122q-40-35-45-70m75 68q40-38 45-68M170 265v70m80-67v67m120-68v68m55-78v78M480 185l30 5" ' + common + '/><circle cx="455" cy="165" r="7" fill="#334155"/>',
+    "shape-cat": '<polygon points="105,165 145,65 205,150 265,65 305,165 250,185 160,185" fill="#f472b6" stroke="#334155" stroke-width="7"/><polygon points="130,170 205,90 280,170 245,220 165,220" fill="#4ade80" stroke="#334155" stroke-width="7"/><circle cx="180" cy="155" r="11" fill="#fde047" stroke="#334155" stroke-width="4"/><circle cx="230" cy="155" r="11" fill="#fde047" stroke="#334155" stroke-width="4"/><polygon points="200,195 85,400 315,400" fill="#f04438" stroke="#334155" stroke-width="7"/><polygon points="110,360 150,400 90,400" fill="#fde047" stroke="#334155" stroke-width="5"/><polygon points="250,360 290,400 230,400" fill="#fde047" stroke="#334155" stroke-width="5"/><path d="M300 320h110l-42 42 54 38H300" fill="#38bdf8" stroke="#334155" stroke-width="7"/>',
+    "shape-characters": '<g stroke="#334155" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><polygon points="85,75 35,205 135,205" fill="#fb923c"/><circle cx="300" cy="145" r="58" fill="#f04438"/><ellipse cx="505" cy="145" rx="52" ry="75" fill="#fb923c"/><path d="M60 150 20 170m95-45 35-45m-85 155-20 55m55-55 25 55M255 125l-55-35m150 35 55 35m-90 40-15 60m55-60 25 60M465 125l-50-35m125 35 45-30m-88 120-5 60m55-60 15 60M5 280h35l-8 18H0zm105 0h35l8 18h-42zm70-28h38l-6 18h-40zm110 0h38l9 18h-44zm78 28h38l-6 18h-40zm115 0h38l9 18h-44z" fill="none"/><circle cx="20" cy="170" r="9" fill="#65a30d"/><circle cx="165" cy="80" r="9" fill="#65a30d"/><circle cx="200" cy="90" r="9" fill="#65a30d"/><circle cx="405" cy="160" r="9" fill="#65a30d"/><circle cx="570" cy="95" r="9" fill="#65a30d"/><circle cx="300" cy="130" r="6"/><circle cx="323" cy="130" r="6"/><path d="M290 155q15 15 30 0" fill="none"/></g>',
+    "shape-expression": '<g stroke="#334155" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><rect x="45" y="75" width="175" height="160" fill="#65a30d"/><path d="M85 130h25m65 0h25M90 170q35 30 75 0" fill="none"/><path d="M120 170q10 62 35 0" fill="#fb7185"/><polygon points="390,60 455,90 480,155 455,220 390,250 325,220 300,155 325,90" fill="#38bdf8"/><ellipse cx="365" cy="135" rx="14" ry="17" fill="white"/><ellipse cx="415" cy="135" rx="14" ry="17" fill="white"/><circle cx="368" cy="138" r="7"/><circle cx="418" cy="138" r="7"/><path d="M355 178q35 42 75 0" fill="none"/></g>',
+    rainbow: '<path d="M70 285a230 230 0 0 1 460 0" fill="none" stroke="#ef4444" stroke-width="12"/><path d="M95 285a205 205 0 0 1 410 0" fill="none" stroke="#f97316" stroke-width="12"/><path d="M120 285a180 180 0 0 1 360 0" fill="none" stroke="#facc15" stroke-width="12"/><path d="M145 285a155 155 0 0 1 310 0" fill="none" stroke="#22c55e" stroke-width="12"/><path d="M170 285a130 130 0 0 1 260 0" fill="none" stroke="#3b82f6" stroke-width="12"/><path d="M195 285a105 105 0 0 1 210 0" fill="none" stroke="#6366f1" stroke-width="12"/><path d="M220 285a80 80 0 0 1 160 0" fill="none" stroke="#a855f7" stroke-width="12"/><circle cx="490" cy="95" r="38" fill="#fde047" stroke="#334155" stroke-width="6"/><path d="M490 38v-18m0 150v-18m-57-57h-18m150 0h-18m-98-40-14-14m110 110-14-14m0-82 14-14m-110 110 14-14" ' + common + '/>',
+    bird: '<path d="M145 280q15-65 75-85 10-105 120-110 100 10 125 105l-42 95-110 55-95-30z" fill="#a16207" stroke="#334155" stroke-width="7"/><path d="M315 115q100-10 142 78l-80 30-85-42z" fill="#b45309" stroke="#334155" stroke-width="6"/><path d="m420 168 100 35-95 28" fill="#f59e0b" stroke="#334155" stroke-width="6"/><circle cx="375" cy="145" r="17" fill="white" stroke="#334155" stroke-width="4"/><circle cx="380" cy="145" r="7" fill="#111827"/><path d="M210 270q90-85 125 10-40 70-125-10zm-8 74 0 45m50-55v55m-60 0h35m10 0h35M165 230q-35-55-65-40m68 75q-45 15-70 0" fill="#f8fafc" stroke="#334155" stroke-width="6"/><path d="M220 270q65-62 98 7" fill="none" stroke="#facc15" stroke-width="8"/>',
+    ship: '<path d="M95 265h390l-55 65H155z" fill="#38bdf8" stroke="#334155" stroke-width="7"/><path d="M300 65v200m-8-180-135 150h135z" fill="#f8fafc" stroke="#334155" stroke-width="7"/><path d="M312 110v150h120z" fill="#f59e0b" stroke="#334155" stroke-width="7"/><path d="M110 345q35-22 70 0t70 0t70 0t70 0t70 0t70 0t70 0" fill="none" stroke="#2563eb" stroke-width="8"/>',
+    "angry-bird": '<path d="M175 135q10-80 85-85 35 10 45 36 45-42 95-10 60 20 75 90v125q-80 95-190 50-100-15-110-105z" fill="#ef4444" stroke="#334155" stroke-width="7"/><path d="M190 155l100 22m110-22-95 22" stroke="#111827" stroke-width="18" stroke-linecap="round"/><ellipse cx="270" cy="190" rx="25" ry="30" fill="white" stroke="#334155" stroke-width="4"/><ellipse cx="355" cy="190" rx="25" ry="30" fill="white" stroke="#334155" stroke-width="4"/><circle cx="278" cy="195" r="9"/><circle cx="348" cy="195" r="9"/><path d="M292 230l85 10-45 55-50-42z" fill="#facc15" stroke="#334155" stroke-width="6"/><path d="M180 170l-35-30m25 75-40 5m65 115-25 35m150-32 20 32" ' + common + '/>',
+    bee: '<g stroke="#334155" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M225 150q-100-125-125-20 20 75 120 45m165-25q110-110 125-10-35 75-125 45" fill="#bfdbfe"/><ellipse cx="305" cy="220" rx="100" ry="72" fill="#facc15"/><path d="M250 160q-30 60 0 120m55-132q-28 70 0 144m55-132q-30 60 0 120" fill="none" stroke="#334155" stroke-width="18"/><circle cx="270" cy="195" r="8"/><circle cx="320" cy="195" r="8"/><path d="M290 220q18 18 36 0M280 148q-55-55-75-30m110 28q55-55 75-28" fill="none"/><path d="M305 292v45m-25 0h50" fill="none"/></g>',
+    cap: '<path d="M105 195q25-120 150-130 125 0 155 120l-20 62H115z" fill="#65a30d" stroke="#334155" stroke-width="7"/><path d="M110 220q145-40 320-15 5 42-160 70-110 18-160-55z" fill="#16a34a" stroke="#334155" stroke-width="7"/><polygon points="250,105 263,138 300,140 272,162 280,198 250,178 220,198 228,162 200,140 237,138" fill="#facc15" stroke="#334155" stroke-width="4"/><path d="M150 138q30-35 65-42m-42 64 40-12" ' + common + '/>',
+    tulip: '<path d="M120 285v70m0-45q-55-45-70 5 42 28 70-5m0 0q52-60 85-20-30 48-85 20M310 270v95m0-55q-78-55-95 6 58 32 95-6m0 0q70-80 110-22-38 56-110 22M500 285v70m0-45q-55-45-70 5 42 28 70-5m0 0q52-60 85-20-30 48-85 20" fill="#22c55e" stroke="#334155" stroke-width="5"/><path d="M80 275q-28-33-14-85l42 35 12-65 42 65 40-35q14 52-14 85-48 30-108 0zM252 260q-34-38-16-100l56 45 18-80 50 80 52-40q18 58-20 95-60 38-140 0z" fill="#ef4444" stroke="#334155" stroke-width="6"/><path d="M272 250q-12-24 10-42 20-22 42 0 20 18 10 42-16 28-32 8-16 20-30-8z" fill="#fb7185" stroke="#334155" stroke-width="4"/><circle cx="292" cy="228" r="3"/><circle cx="316" cy="228" r="3"/><path d="M294 238q10 9 20 0" ' + common + '/>',
+    ant: '<g stroke="#334155" stroke-width="5" stroke-linecap="round"><path d="M195 190q-30-72-65-50m75 40q10-70 45-73m-30 119-75-45m75 57-92 0m92 13-66 64m136-66-70-54m70 54-78 5m78 5-65 60m118-60 12 70" fill="none"/><circle cx="210" cy="200" r="45" fill="#ef4444"/><ellipse cx="325" cy="200" rx="45" ry="52" fill="#f97316"/><ellipse cx="445" cy="200" rx="72" ry="58" fill="#dc2626"/><circle cx="195" cy="188" r="8" fill="white"/><circle cx="220" cy="188" r="8" fill="white"/><circle cx="197" cy="189" r="4"/><circle cx="222" cy="189" r="4"/><path d="M50 340q70-65 145-12 65-80 135-12 65-50 130-5 55-30 90 28z" fill="#a16207"/><path d="M70 325v-30m0 0q-25-35-48-12 12 30 48 12m70 8v-25m0 0q-24-30-42-10 12 25 42 10m200 17v-30m0 0q-20-32-40-10 15 26 40 10" fill="#22c55e"/></g>',
+    goat: '<g stroke="#334155" stroke-width="6" stroke-linejoin="round"><path d="M110 145q35-75 115-58 45 10 55 70l-28 54-90 20-55-35z" fill="#a16207"/><path d="M245 160q45-75 105-40l20 65-48 38-78-12m42-87q-30-40-10-70m35 72q36-48 60-32" fill="#a16207"/><circle cx="320" cy="154" r="6"/><path d="M145 220v75m45-70v70m42-78v78m45-85v85m40-108 40 10" fill="none"/><path d="M70 325q70-20 140 0t140 0" fill="none" stroke="#22c55e" stroke-width="12"/><path d="M390 215q25-48 80-35 38 10 45 52l-20 40-66 12-45-30z" fill="#f8fafc"/><path d="M485 227q32-55 72-27l10 42-35 30-58-10m30-62q-22-34-5-55m25 56q28-40 48-24" fill="#f8fafc"/><circle cx="515" cy="224" r="5"/><path d="M410 270v55m38-52v52m40-55v55m34-66v66" fill="none"/></g>',
     umbrella: '<path d="M90 175q210-235 420 0-55-28-105 0-50-32-105 0-55-30-105 0-55-30-105 0z" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><path d="M300 175v130q0 45 40 45t40-38" ' + common + '/><path d="M195 175v30m105-30v25m105-25v30" ' + common + '/>',
+    "umbrella-face": '<path d="M55 185q245-230 490 0-65-35-125 0-60-38-125 0-60-38-120 0-60-35-120 0z" fill="#65a30d" stroke="#334155" stroke-width="7"/><circle cx="250" cy="135" r="9" fill="#111827"/><circle cx="325" cy="135" r="9" fill="#111827"/><path d="M245 160q40 38 82 0M300 185v130q0 45 42 45t42-38" fill="none" stroke="#334155" stroke-width="7"/><path d="M130 320q35-55 75-8l20 68-38 20-40-18zm25 65v48m39-48 14 42m-70 5h36m20 0h34" fill="#facc15" stroke="#334155" stroke-width="6"/><path d="M208 321l54-55 45 54" fill="#ef4444" stroke="#334155" stroke-width="6"/>',
+    "school-bags": '<g stroke="#334155" stroke-width="7" stroke-linejoin="round"><path d="M80 135q5-65 65-65t65 65v185H80z" fill="#ef4444"/><path d="M105 175h80v92h-80z" fill="#f87171"/><path d="M110 70q5-42 35-42t35 42" fill="none"/><path d="M340 130q5-55 65-55t65 55v190H340z" fill="#38bdf8"/><path d="M365 175h82v90h-82z" fill="#60a5fa"/><path d="M370 75q5-42 35-42t35 42" fill="none"/><path d="M80 170q-40 15-25 100m200-100q40 15 25 100m60-100q-38 15-22 100m200-100q38 15 22 100" fill="none"/></g>',
+    "pineapple-characters": '<path d="M180 120q-65-15-55-80 45 8 68 55 0-70 48-90 25 52-6 105 70-45 112-12-30 55-112 67" fill="#22c55e" stroke="#334155" stroke-width="6"/><path d="M200 145q-95-5-88 110 6 115 90 115 90 0 96-115 6-110-98-110z" fill="#fb923c" stroke="#334155" stroke-width="7"/><path d="M145 190l105 120m-130-55 95 105m5-160 90 105m-135-120 105 120m-100 0 100-115m-110 160 105-125" ' + common + '/><path d="M390 120q-55-10-45-65 40 8 52 47 5-65 47-82 20 45-8 88 60-40 92-12-25 48-90 55" fill="#22c55e" stroke="#334155" stroke-width="6"/><path d="M415 165q-68-5-65 82 5 90 68 90 65 0 70-90 5-85-73-82z" fill="#fb923c" stroke="#334155" stroke-width="7"/><circle cx="402" cy="210" r="8"/><circle cx="433" cy="210" r="8"/><path d="M400 235q22 22 42 0m-22 103v35m-32 0h64" ' + common + '/><path d="M395 185l-18-20m75 20 18-20m-67 175-20 28m60-28 20 28" ' + common + '/>',
     purse: '<path d="M170 160h260l28 175H142z" fill="#fbcfe8" stroke="#334155" stroke-width="7"/><path d="M225 160q0-105 75-105t75 105" ' + common + '/><rect x="272" y="220" width="55" height="45" rx="8" fill="#fde68a" stroke="#334155" stroke-width="6"/>',
     pineapple: '<path d="M300 120q-115 0-105 130 10 115 105 115t105-115q10-130-105-130z" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M300 125q-85-45-75-100 50 10 75 55 5-65 45-90 22 52-7 100 62-50 100-25-24 55-103 67" fill="#bbf7d0" stroke="#334155" stroke-width="7"/><path d="M220 180l160 150m-180-90 120 115m-95-155 145 130m-100-180 125 115m-165 0 130-120m-110 175 145-135m-110 185 105-100" ' + common + '/>',
-    parrot: '<ellipse cx="300" cy="220" rx="90" ry="120" fill="#bbf7d0" stroke="#334155" stroke-width="7"/><circle cx="300" cy="105" r="62" fill="#fca5a5" stroke="#334155" stroke-width="7"/><path d="M350 100l95 25-88 40m-62 160q-80 60-115 25m175-20q60 50 100 25M230 190q-70 20-20 90" fill="#fde68a" stroke="#334155" stroke-width="7"/><circle cx="317" cy="101" r="8" fill="#334155"/>',
-    watermelon: '<path d="M110 255a190 155 0 0 0 380 0z" fill="#fca5a5" stroke="#334155" stroke-width="7"/><path d="M110 255a190 155 0 0 0 380 0" fill="none" stroke="#86efac" stroke-width="24"/><path d="M180 268l10 25m65-40 5 30m75-30-5 30m70-45-10 25" ' + common + '/>',
-    frock: '<path d="M245 70h110l35 72-50 30 90 150H170l90-150-50-30z" fill="#fbcfe8" stroke="#334155" stroke-width="7"/><path d="M260 72q40 65 80 0M260 170h80m-40-75v75" ' + common + '/>',
-    grapes: '<g fill="#c4b5fd" stroke="#334155" stroke-width="5"><circle cx="260" cy="130" r="38"/><circle cx="330" cy="130" r="38"/><circle cx="225" cy="195" r="38"/><circle cx="295" cy="195" r="38"/><circle cx="365" cy="195" r="38"/><circle cx="260" cy="260" r="38"/><circle cx="330" cy="260" r="38"/><circle cx="295" cy="320" r="38"/></g><path d="M300 95q-5-45 35-65m-30 33q-65-40-90 10 60 35 90-10m20-4q60-55 95-5-50 48-95 5" fill="#bbf7d0" stroke="#334155" stroke-width="6"/>',
-    camel: '<path d="M125 250q10-100 80-100 35-80 100 0 35-80 100 0 80 5 85 100z" fill="#fdba74" stroke="#334155" stroke-width="7"/><path d="M450 180q5-75 60-65l25 45-45 35m-290 55v75m90-75v75m120-75v75m70-75v75m40-150q35-20 45 10" ' + common + '/><circle cx="500" cy="142" r="6" fill="#334155"/>',
-    duck: '<ellipse cx="290" cy="220" rx="150" ry="90" fill="#fde68a" stroke="#334155" stroke-width="7"/><circle cx="400" cy="145" r="62" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M455 140l75 20-75 20m-210 25q70-85 110 0-45 50-110 0m60 120v30m65-30v30m-95 0h60m35 0h60M75 325q45-20 90 0t90 0t90 0t90 0t90 0" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><circle cx="415" cy="137" r="7" fill="#334155"/>',
-    scissors: '<circle cx="205" cy="250" r="60" fill="#fbcfe8" stroke="#334155" stroke-width="7"/><circle cx="290" cy="285" r="60" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><circle cx="300" cy="220" r="13" fill="#334155"/><path d="M245 220 470 80 320 232m-30 0L100 90l190 170" ' + common + '/>',
-    donkey: '<ellipse cx="280" cy="230" rx="145" ry="72" fill="#cbd5e1" stroke="#334155" stroke-width="7"/><path d="M380 205q30-90 100-80l35 65-55 60-75-10m-10-90-5-80 28 10 17 70m20-5 25-70 25 7-12 80M170 290v65m80-65v65m120-65v65m45-65v65m40-150q35 10 45-20" ' + common + '/><circle cx="468" cy="180" r="7" fill="#334155"/>',
-    ladybug: '<circle cx="300" cy="205" r="128" fill="#fca5a5" stroke="#334155" stroke-width="7"/><path d="M300 80v250m-45-230q45 45 45 105m0 0q0-60 55-105" ' + common + '/><circle cx="245" cy="160" r="15" fill="#334155"/><circle cx="350" cy="155" r="15" fill="#334155"/><circle cx="230" cy="230" r="15" fill="#334155"/><circle cx="365" cy="230" r="15" fill="#334155"/><circle cx="270" cy="285" r="15" fill="#334155"/><circle cx="330" cy="285" r="15" fill="#334155"/>',
-    scenery: '<circle cx="485" cy="75" r="42" fill="#fde68a" stroke="#334155" stroke-width="6"/><path d="M40 275 165 150l120 125 90-100 165 100v60H40z" fill="#bbf7d0" stroke="#334155" stroke-width="7"/><path d="M205 245v-95l85-70 90 70v95m-175-95h175m-115 95v-65h45v65m55-45h30v35h-30" fill="#fde68a" stroke="#334155" stroke-width="7"/><path d="M100 290v-70m0 0q-60 0-48-58 48-15 48 58 0-68 58-68 15 60-58 68" fill="#bbf7d0" stroke="#334155" stroke-width="7"/>',
-    puppy: '<ellipse cx="285" cy="250" rx="135" ry="72" fill="#fdba74" stroke="#334155" stroke-width="7"/><circle cx="390" cy="160" r="65" fill="#fdba74" stroke="#334155" stroke-width="7"/><path d="M355 120q-80-50-70 50l55 25m105-68q80-40 53 45l-48 25m-215 100v55m75-55v55m105-55v55m55-55v55m45-145q65 15 50-25" fill="#fdba74" stroke="#334155" stroke-width="7"/><circle cx="370" cy="150" r="7" fill="#334155"/><circle cx="415" cy="150" r="7" fill="#334155"/><ellipse cx="392" cy="180" rx="15" ry="10" fill="#334155"/>',
-    sunglasses: '<path d="M70 135h80m300 0h80M145 150q0-45 50-45h80q30 0 30 40v80q0 38-40 38h-80q-40 0-40-40zm150-5q0-40 35-40h80q50 0 50 45v73q0 40-40 40h-80q-45 0-45-40" fill="#bfdbfe" stroke="#334155" stroke-width="7"/><path d="M275 155q25-20 45 0" ' + common + '/>',
-    flower: '<g fill="#fbcfe8" stroke="#334155" stroke-width="6"><ellipse cx="300" cy="110" rx="38" ry="65"/><ellipse cx="300" cy="230" rx="38" ry="65"/><ellipse cx="240" cy="170" rx="65" ry="38"/><ellipse cx="360" cy="170" rx="65" ry="38"/><ellipse cx="258" cy="128" rx="38" ry="62" transform="rotate(-45 258 128)"/><ellipse cx="342" cy="128" rx="38" ry="62" transform="rotate(45 342 128)"/><ellipse cx="258" cy="212" rx="38" ry="62" transform="rotate(45 258 212)"/><ellipse cx="342" cy="212" rx="38" ry="62" transform="rotate(-45 342 212)"/></g><circle cx="300" cy="170" r="35" fill="#fde68a" stroke="#334155" stroke-width="6"/><path d="M300 205v135m0-75q-90-70-100 5 60 35 100-5m0 0q75-90 112-30-35 65-112 30" fill="#bbf7d0" stroke="#334155" stroke-width="7"/>',
-    bananas: '<path d="M155 115q40 180 250 185 80-5 90-55-160 35-270-145-35-50-70 15zm80-30q60 180 235 145 55-12 65-55-150 40-250-135-30-45-50 45zm-100 70q30 150 190 190 70 10 90-35-150 5-225-145-30-50-55-10" fill="#fde68a" stroke="#334155" stroke-width="7"/>',
-    "bear-steps": '<g stroke="#334155" stroke-width="5" fill="#fde68a"><circle cx="100" cy="165" r="62"/><circle cx="255" cy="165" r="62"/><circle cx="410" cy="165" r="62"/><circle cx="550" cy="165" r="62"/><circle cx="75" cy="105" r="22"/><circle cx="125" cy="105" r="22"/><circle cx="230" cy="105" r="22"/><circle cx="280" cy="105" r="22"/><circle cx="385" cy="105" r="22"/><circle cx="435" cy="105" r="22"/><circle cx="525" cy="105" r="22"/><circle cx="575" cy="105" r="22"/></g><g fill="#334155"><circle cx="88" cy="155" r="5"/><circle cx="110" cy="155" r="5"/><circle cx="243" cy="155" r="5"/><circle cx="267" cy="155" r="5"/><circle cx="398" cy="155" r="5"/><circle cx="422" cy="155" r="5"/><circle cx="538" cy="155" r="5"/><circle cx="562" cy="155" r="5"/></g><g fill="none" stroke="#334155" stroke-width="5"><path d="M85 185q15 15 30 0m112 0q15 15 30 0m112 0q15 15 30 0m112 0q15 15 30 0"/><path d="M245 183q10-14 20 0"/><path d="M400 183q10-14 20 0"/><path d="M540 183q10-14 20 0"/></g><text x="100" y="290" text-anchor="middle">1</text><text x="255" y="290" text-anchor="middle">2</text><text x="410" y="290" text-anchor="middle">3</text><text x="550" y="290" text-anchor="middle">4</text>',
-    "house-steps": '<g stroke="#334155" stroke-width="5" fill="#fde68a"><path d="M25 190 85 120l60 70v85H25z"/><path d="M180 190 250 115l70 75v85H180z"/><path d="M350 190 425 105l75 85v85H350z"/><path d="M490 190 545 130l45 60v85h-100z"/></g><g stroke="#334155" stroke-width="4" fill="#bfdbfe"><rect x="55" y="215" width="28" height="32"/><rect x="100" y="215" width="28" height="32"/><rect x="210" y="215" width="32" height="60"/><rect x="265" y="215" width="30" height="32"/><rect x="390" y="215" width="30" height="32"/><rect x="450" y="215" width="30" height="32"/><rect x="515" y="215" width="22" height="32"/></g><text x="85" y="325" text-anchor="middle">1</text><text x="250" y="325" text-anchor="middle">2</text><text x="425" y="325" text-anchor="middle">3</text><text x="545" y="325" text-anchor="middle">4</text>',
-    "cat-origami": '<g stroke="#334155" stroke-width="5" fill="#fde68a"><path d="M65 170 165 70l100 100-100 110z"/><path d="M255 170 355 70l100 100-100 110z"/><path d="M445 170 545 70l45 80-45 130z"/></g><g fill="#334155"><circle cx="145" cy="165" r="5"/><circle cx="185" cy="165" r="5"/><circle cx="335" cy="165" r="5"/><circle cx="375" cy="165" r="5"/><circle cx="520" cy="165" r="5"/><circle cx="560" cy="165" r="5"/></g><path d="M150 195q15 10 30 0m150 0q15 10 30 0m150 0q15 10 30 0" ' + common + '/><text x="165" y="320" text-anchor="middle">1</text><text x="355" y="320" text-anchor="middle">2</text><text x="535" y="320" text-anchor="middle">3</text>'
+    parrot: '<g stroke="#334155" stroke-width="6" stroke-linejoin="round"><path d="M55 300q80-35 155 0m165 0q75-35 160 0" fill="none" stroke="#65a30d" stroke-width="12"/><ellipse cx="145" cy="205" rx="65" ry="90" fill="#ef4444"/><circle cx="155" cy="110" r="48" fill="#ef4444"/><path d="M185 100l62 18-58 25m-70 62q45-60 85 0-38 55-85 0" fill="#38bdf8"/><circle cx="170" cy="105" r="7" fill="#111827"/><path d="M115 280v45m55-45v45m-78 0h45m38 0h45" fill="none"/><ellipse cx="420" cy="205" rx="65" ry="90" fill="#ef4444"/><circle cx="430" cy="110" r="48" fill="#f97316"/><path d="M460 100l62 18-58 25m-70 62q45-60 85 0-38 55-85 0" fill="#facc15"/><path d="M380 200q30-70 80 0" fill="#38bdf8"/><circle cx="445" cy="105" r="7" fill="#111827"/><path d="M390 280v45m55-45v45m-78 0h45m38 0h45" fill="none"/></g>',
+    watermelon: '<circle cx="145" cy="135" r="88" fill="#65a30d" stroke="#334155" stroke-width="6"/><path d="M85 190a72 62 0 0 0 145 0z" fill="#ef4444" stroke="#334155" stroke-width="6"/><path d="M85 190a72 62 0 0 0 145 0" fill="none" stroke="#22c55e" stroke-width="14"/><path d="M320 90a135 130 0 0 0 0 260m0-260q60 35 100 0m-100 130q60-35 100 0m-100 130q60-35 100 0m-100-195q60 35 100 0m-100 130q60 35 100 0" fill="none" stroke="#334155" stroke-width="6"/><path d="M305 355h190l-90-90h-90z" fill="#ef4444" stroke="#334155" stroke-width="6"/><path d="M305 355h190" stroke="#22c55e" stroke-width="15"/><ellipse cx="355" cy="335" rx="6" ry="12" fill="#111827"/><ellipse cx="390" cy="335" rx="6" ry="12" fill="#111827"/><ellipse cx="425" cy="335" rx="6" ry="12" fill="#111827"/>',
+    frock: '<path d="M225 95h150l35 70-55 34 100 150H145l100-150-55-34z" fill="#ef4444" stroke="#334155" stroke-width="7"/><path d="M260 98q40 60 80 0M255 197h90m-45-95v95" fill="none" stroke="#334155" stroke-width="6"/><polygon points="300,220 312,244 340,246 319,264 325,291 300,276 275,291 281,264 260,246 288,244" fill="#facc15" stroke="#334155" stroke-width="4"/><path d="M175 300h250m-205-65-25 45m180-45 25 45" fill="none" stroke="#f8fafc" stroke-width="7"/>',
+    grapes: '<g fill="#84cc16" stroke="#334155" stroke-width="4"><circle cx="100" cy="125" r="24"/><circle cx="145" cy="125" r="24"/><circle cx="78" cy="168" r="24"/><circle cx="123" cy="168" r="24"/><circle cx="168" cy="168" r="24"/><circle cx="100" cy="210" r="24"/><circle cx="145" cy="210" r="24"/><circle cx="123" cy="252" r="24"/></g><path d="M123 100V65m0 10q-45-40-65 0 38 20 65 0m5 0q45-40 65 0-38 20-65 0" fill="#22c55e" stroke="#334155" stroke-width="5"/><g fill="#7e22ce" stroke="#334155" stroke-width="4"><circle cx="360" cy="150" r="27"/><circle cx="405" cy="150" r="27"/><circle cx="338" cy="195" r="27"/><circle cx="383" cy="195" r="27"/><circle cx="428" cy="195" r="27"/><circle cx="360" cy="240" r="27"/><circle cx="405" cy="240" r="27"/><circle cx="383" cy="285" r="27"/></g><path d="M383 124v-35m0 8q-35-28-55-2 30 22 55 2m0 0q35-28 55-2-30 22-55 2" fill="#22c55e" stroke="#334155" stroke-width="4"/><circle cx="370" cy="180" r="5"/><circle cx="397" cy="180" r="5"/><path d="M370 205q14 12 28 0" ' + common + '/><path d="M500 200h70l-8 120h-54z" fill="#a78bfa" stroke="#334155" stroke-width="5"/><path d="M496 195h78v12h-78z" fill="#e2e8f0" stroke="#334155" stroke-width="5"/>',
+    camel: '<path d="M90 245q5-75 70-78 10-125 95-42 54-138 134-18 95-5 120 138l-48 44H130z" fill="#f97316" stroke="#334155" stroke-width="7"/><path d="M440 180q-12-85 54-103l44 40-25 70-50 30m-285 20v87m60-85v85m100-80v80m55-80v80m65-88v88m-185-212q-55-38-38-70m60 78q55-45 84-13" fill="none" stroke="#334155" stroke-width="7"/><path d="M445 210q35-45 65-10-20 40-65 10" fill="#a16207" stroke="#334155" stroke-width="5"/><circle cx="485" cy="147" r="6" fill="#111827"/><path d="M125 255q130 60 355 0" fill="none" stroke="#a16207" stroke-width="8"/>',
+    duck: '<path d="M130 280q5-60 55-95 0-115 100-135 100 15 120 120l-28 105-90 58-110-18z" fill="#38bdf8" stroke="#334155" stroke-width="7"/><path d="M377 170l100 25-98 28" fill="#f472b6" stroke="#334155" stroke-width="6"/><circle cx="335" cy="130" r="18" fill="white" stroke="#334155" stroke-width="4"/><circle cx="340" cy="130" r="8" fill="#111827"/><path d="M215 260q60-65 120 0-55 35-120 0m-75 30v55m70-45v45m-85 0h42m25 0h42" fill="#2563eb" stroke="#334155" stroke-width="6"/><path d="M100 365q40-22 80 0t80 0t80 0t80 0t80 0" fill="none" stroke="#60a5fa" stroke-width="7"/>',
+    scissors: '<g stroke="#334155" stroke-width="6" stroke-linejoin="round"><circle cx="115" cy="300" r="38" fill="#a855f7"/><circle cx="175" cy="320" r="38" fill="#a855f7"/><path d="M145 292 305 100 175 310m-20 0L65 120l135 188" fill="none"/><circle cx="370" cy="300" r="38" fill="#ef4444"/><circle cx="430" cy="320" r="38" fill="#38bdf8"/><path d="M400 292 555 100 430 310m-20 0L320 120l135 188" fill="none"/></g>',
+    donkey: '<g stroke="#334155" stroke-width="6" stroke-linejoin="round"><path d="M55 205q25-62 90-50 38 10 48 65l-25 48-72 20-48-30z" fill="#cbd5e1"/><path d="M165 210q30-70 82-35l16 55-35 34-56-10m27-78-5-75 24 8 15 68m12-5 25-65 22 8-14 70M85 270v55m42-50v50m40-58v58m52-60v60" fill="none"/><circle cx="185" cy="190" r="5" fill="#111827"/><path d="M310 210q25-62 90-50 38 10 48 65l-25 48-72 20-48-30z" fill="#78350f"/><path d="M420 215q30-70 82-35l16 55-35 34-56-10m27-78-5-75 24 8 15 68m12-5 25-65 22 8-14 70M340 270v55m42-50v50m40-58v58m52-60v60" fill="none"/><circle cx="440" cy="195" r="5" fill="#111827"/></g>',
+    ladybug: '<path d="M100 145q120-115 300 0-55 15-80 55-70-40-140 0-25-40-80-55z" fill="#22c55e" stroke="#334155" stroke-width="6"/><g fill="#f8fafc" stroke="#334155" stroke-width="3"><circle cx="175" cy="95" r="22"/><circle cx="215" cy="70" r="22"/><circle cx="255" cy="95" r="22"/></g><g fill="#facc15"><circle cx="175" cy="95" r="8"/><circle cx="215" cy="70" r="8"/><circle cx="255" cy="95" r="8"/></g><ellipse cx="300" cy="235" rx="95" ry="105" fill="#ef4444" stroke="#334155" stroke-width="7"/><path d="M300 132v205" ' + common + '/><circle cx="250" cy="200" r="12" fill="#111827"/><circle cx="350" cy="200" r="12" fill="#111827"/><circle cx="240" cy="260" r="13" fill="#111827"/><circle cx="355" cy="265" r="13" fill="#111827"/><path d="M260 290q40 28 80 0M230 140q-35-48-65-30m205 30q35-48 65-30" ' + common + '/>',
+    scenery: '<path d="M175 215 280 125l105 90v130H175z" fill="#facc15" stroke="#334155" stroke-width="7"/><path d="m155 220 125-110 125 110H155z" fill="#ef4444" stroke="#334155" stroke-width="7"/><rect x="225" y="250" width="45" height="95" fill="#38bdf8" stroke="#334155" stroke-width="5"/><rect x="300" y="245" width="48" height="42" fill="#bfdbfe" stroke="#334155" stroke-width="5"/><path d="M90 345q80-25 160 0t160 0 120 0" fill="none" stroke="#a16207" stroke-width="8"/><path d="M465 225V95m0 0q-70-5-55-65 55-15 55 65 0-70 60-70 10 60-60 70" fill="#22c55e" stroke="#334155" stroke-width="6"/><g fill="#65a30d" stroke="#334155" stroke-width="4"><path d="M70 340q20-55 55-25 20-50 55 25z"/><path d="M390 345q15-50 50-22 20-55 58 22z"/></g>',
+    puppy: '<g stroke="#334155" stroke-width="6" stroke-linejoin="round"><path d="M70 240q10-58 68-65 35-100 106-32l25 78-35 75-112 0z" fill="#ef4444"/><path d="M195 220q45-55 83-15l25 50-42 38-66-10m-64 20v48m45-45v45m50-48v48" fill="none"/><circle cx="205" cy="210" r="6"/><path d="M300 245q10-58 68-65 35-100 106-32l25 78-35 75-112 0z" fill="#a16207"/><path d="M425 225q45-55 83-15l25 50-42 38-66-10m-64 20v48m45-45v45m50-48v48" fill="none"/><circle cx="435" cy="215" r="6"/><circle cx="355" cy="250" r="9" fill="#f8fafc"/><circle cx="395" cy="275" r="8" fill="#f8fafc"/><circle cx="470" cy="265" r="10" fill="#f8fafc"/><path d="M435 245q15 15 30 0" fill="none"/></g>',
+    sunglasses: '<path d="M60 135h80m325 0h75M140 150q0-45 50-45h72q32 0 32 40v80q0 38-40 38h-72q-42 0-42-40zm155-5q0-40 38-40h72q48 0 48 45v73q0 40-40 40h-72q-46 0-46-40" fill="#a855f7" stroke="#334155" stroke-width="7"/><path d="M295 155q22-18 42 0" fill="none" stroke="#334155" stroke-width="7"/><path d="M105 300h60m-50 10q0-22 23-22h30q18 0 18 20v30q0 20-22 20h-28q-21 0-21-20zm57-2q0-20 20-20h28q22 0 22 22v28q0 20-20 20h-28q-22 0-22-20" fill="#ec4899" stroke="#334155" stroke-width="5"/>',
+    flower: '<g fill="#ef4444" stroke="#334155" stroke-width="5"><ellipse cx="300" cy="105" rx="34" ry="72"/><ellipse cx="362" cy="151" rx="34" ry="72" transform="rotate(72 362 151)"/><ellipse cx="338" cy="222" rx="34" ry="72" transform="rotate(144 338 222)"/><ellipse cx="262" cy="222" rx="34" ry="72" transform="rotate(216 262 222)"/><ellipse cx="238" cy="151" rx="34" ry="72" transform="rotate(288 238 151)"/></g><circle cx="300" cy="170" r="35" fill="#facc15" stroke="#334155" stroke-width="5"/><path d="M300 205v140m0-70q-85-65-100 5 55 35 100-5m0 0q80-80 112-25-30 60-112 25" fill="#22c55e" stroke="#334155" stroke-width="7"/><g fill="#fb7185" stroke="#334155" stroke-width="3"><circle cx="100" cy="90" r="20"/><circle cx="135" cy="75" r="20"/><circle cx="170" cy="90" r="20"/><circle cx="465" cy="100" r="20"/><circle cx="500" cy="82" r="20"/><circle cx="535" cy="100" r="20"/></g>',
+    bananas: '<path d="M80 110q38 150 185 170 85 17 120-28-145 0-230-155-37-50-75 13zm32-45q60 170 210 150 75-8 95-52-160 25-245-125-35-45-60 27zm-25 83q33 145 175 184 65 18 102-20-120-4-215-138-35-48-62-26" fill="#facc15" stroke="#334155" stroke-width="6"/><circle cx="430" cy="245" r="42" fill="#a16207" stroke="#334155" stroke-width="6"/><circle cx="414" cy="238" r="5"/><circle cx="445" cy="238" r="5"/><path d="M416 260q15 14 30 0M390 225q-34-40-42-15l48 54m74-40q36-42 48-12l-55 55M405 286l-25 50m55-50 22 50m-92 0h50m28 0h52" ' + common + '/><path d="M425 198q-15-28 5-42 27 16 23 46" fill="#facc15" stroke="#334155" stroke-width="5"/>',
+    "bear-steps": '<g stroke="#334155" stroke-width="5"><circle cx="90" cy="170" r="55" fill="none"/><circle cx="235" cy="170" r="55" fill="#f8fafc"/><circle cx="210" cy="120" r="20" fill="#f8fafc"/><circle cx="260" cy="120" r="20" fill="#f8fafc"/><circle cx="380" cy="170" r="55" fill="#f8fafc"/><circle cx="355" cy="120" r="20" fill="#f8fafc"/><circle cx="405" cy="120" r="20" fill="#f8fafc"/><circle cx="355" cy="160" r="5"/><circle cx="405" cy="160" r="5"/><ellipse cx="380" cy="188" rx="20" ry="15" fill="#f8fafc"/><circle cx="380" cy="184" r="6"/><circle cx="535" cy="170" r="55" fill="#a16207"/><circle cx="510" cy="120" r="20" fill="#a16207"/><circle cx="560" cy="120" r="20" fill="#a16207"/><circle cx="510" cy="160" r="5"/><circle cx="560" cy="160" r="5"/><ellipse cx="535" cy="188" rx="20" ry="15" fill="#fde68a"/><circle cx="535" cy="184" r="6" fill="#111827"/></g><g fill="none" stroke="#334155" stroke-width="4"><path d="M70 195q20 15 40 0m105 15q20 15 40 0m105 15q20 15 40 0m105 15q20 15 40 0"/></g><g font-size="22" text-anchor="middle"><text x="90" y="280">1</text><text x="235" y="280">2</text><text x="380" y="280">3</text><text x="535" y="280">4</text></g>',
+    "house-steps": '<g stroke="#334155" stroke-width="5" stroke-linejoin="round"><path d="M25 165 85 85l60 80z" fill="none"/><path d="M180 165 250 85l70 80h-140z" fill="none"/><rect x="190" y="165" width="120" height="120" fill="none"/><path d="M350 165 425 80l75 85H350z" fill="none"/><rect x="365" y="165" width="120" height="120" fill="none"/><rect x="390" y="220" width="35" height="65" fill="none"/><rect x="440" y="190" width="28" height="28" fill="none"/><path d="M490 165 545 95l55 70h-110z" fill="#7c3f18"/><rect x="500" y="165" width="90" height="120" fill="#facc15"/><rect x="516" y="220" width="30" height="65" fill="#38bdf8"/><rect x="555" y="190" width="23" height="25" fill="#38bdf8"/><path d="M560 95V55h18v50" fill="#ef4444"/></g><g font-size="22" text-anchor="middle"><text x="85" y="325">1</text><text x="250" y="325">2</text><text x="425" y="325">3</text><text x="545" y="325">4</text></g>',
+    "cat-origami": '<g fill="none" stroke="#334155" stroke-width="5" stroke-linejoin="round"><path d="M45 100 100 45l55 55-55 55z"/><path d="M80 100h40m-20-20v40m-28-28q25-50 55-5" stroke-dasharray="5 5"/><path d="M245 60 300 170l55-110z" fill="#fde68a"/><path d="M245 60v110h110V60" stroke-dasharray="5 5"/><path d="M420 60 475 170l55-110z" fill="#fde68a"/><path d="M420 60 475 115 530 60m-55 55v55" stroke-dasharray="5 5"/><path d="M45 240 100 185l55 55-55 55z" fill="#fde68a"/><path d="M45 240h110m-55-55v110" stroke-dasharray="5 5"/><path d="M245 240 300 185l55 55-55 55z" fill="#fde68a"/><path d="M245 240h110m-55-55v110" stroke-dasharray="5 5"/><path d="M405 220 460 170l55 50-20 76-35 24-35-24z" fill="#fde68a"/><path d="M420 220 460 185l40 35m-75 40q35 25 70 0"/></g><g fill="#334155"><circle cx="447" cy="230" r="5"/><circle cx="475" cy="230" r="5"/></g><path d="M440 245q24 15 48 0m-60-35-24-27m88 27 24-27" fill="none" stroke="#334155" stroke-width="4"/><g font-size="20" font-weight="700" text-anchor="middle"><text x="100" y="195">1</text><text x="300" y="195">2</text><text x="475" y="195">3</text><text x="100" y="355">4</text><text x="300" y="355">5</text><text x="460" y="355">6</text></g>'
   };
-  const labels = { "shape-person":"Shapes make a picture", "shape-friends":"Square and circle friends", "shape-faces":"Happy shape faces", rainbow:"Rainbow and sun", bird:"Bird", ship:"Sailing boat", "angry-bird":"Bird with a bold face", bee:"Honey bee", cap:"Cap", tulip:"Tulip", ant:"Ant", goat:"Goat", umbrella:"Umbrella", purse:"Purse", pineapple:"Pineapple", parrot:"Parrot", watermelon:"Watermelon", frock:"Frock", grapes:"Grapes", camel:"Camel", duck:"Duck", scissors:"Scissors", donkey:"Donkey", ladybug:"Ladybug", scenery:"House and scenery", puppy:"Puppy", sunglasses:"Sunglasses", flower:"Flower", bananas:"Bananas", "bear-steps":"Bear face steps", "house-steps":"House drawing steps", "cat-origami":"Folded cat face" };
+  const labels = { "shape-person":"Shapes make a picture", "shape-friends":"Square and circle friends", "shape-faces":"Happy shape faces", "shape-cat":"Cat made from shapes", "shape-characters":"Triangle, circle and oval characters", "shape-expression":"Rectangle and octagon characters", rainbow:"Rainbow and sun", bird:"Bird", ship:"Sailing boat", "angry-bird":"Bird with a bold face", bee:"Honey bee", cap:"Cap", tulip:"Tulip", ant:"Ant", goat:"Goat", umbrella:"Umbrella", "umbrella-face":"Umbrella character", purse:"Purse", "school-bags":"School bags", pineapple:"Pineapple", "pineapple-characters":"Pineapple plants and character", parrot:"Parrot", watermelon:"Watermelon", frock:"Frock", grapes:"Grapes", camel:"Camel", duck:"Duck", scissors:"Scissors", donkey:"Donkey", ladybug:"Ladybug", scenery:"House and scenery", puppy:"Puppy", sunglasses:"Sunglasses", flower:"Flower", bananas:"Bananas", "bear-steps":"Bear face steps", "house-steps":"House drawing steps", "cat-origami":"Folded cat face" };
   const illustration = state.selectedClass === 'cls3' && typeof DRAWING_3_ART !== 'undefined'
     ? (DRAWING_3_ART[kind] || '')
     : state.selectedClass === 'cls2' && typeof DRAWING_2_ART !== 'undefined'
       ? (DRAWING_2_ART[kind] || '')
       : (svg[kind] || '');
-  return `<figure class="drawing-vector-card"><svg viewBox="0 0 600 760" role="img" aria-label="${sanitize(labels[kind] || title)}: coloured example and dotted tracing practice"><title>${sanitize(title)}</title><rect class="drawing-example-panel" x="3" y="3" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="27" text-anchor="middle">LOOK · COLOUR IDEA</text><g class="drawing-sample" transform="translate(15 30) scale(.95)">${illustration}</g><path d="M28 380h544" class="drawing-panel-divider"/><rect class="drawing-trace-panel" x="3" y="390" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="415" text-anchor="middle">YOUR TURN · TRACE AND COLOUR</text><g class="drawing-trace" transform="translate(15 415) scale(.95)">${illustration}</g></svg></figure>`;
+  if (state.selectedClass === 'cls1' && ['bear-steps', 'house-steps', 'cat-origami'].includes(kind)) {
+    return `<figure class="drawing-vector-card drawing-step-sequence"><svg viewBox="0 0 600 380" role="img" aria-label="${sanitize(labels[kind] || title)}: source-matched numbered steps"><title>${sanitize(title)}</title>${illustration}</svg></figure>`;
+  }
+  const traceIllustration = kind === 'shape-cat'
+    ? '<g fill="none" stroke="#1f2937" stroke-width="7" stroke-dasharray="2 11" stroke-linecap="round" stroke-linejoin="round"><path d="M100 155 145 65 205 150 265 65 310 155 250 195H160Z"/><path d="m125 170 80-80 80 80-40 55h-80z"/><path d="m205 225-105 190h210z"/><path d="m108 360 40 55h-72zM262 360l40 55h-72z"/><path d="M300 320h110l-42 42 54 38H300"/></g>'
+    : kind === 'shape-characters'
+      ? '<g stroke="#1f2937" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M85 75 35 205h100z" stroke-dasharray="2 10" fill="none"/><circle cx="300" cy="145" r="58" stroke-dasharray="2 10" fill="none"/><ellipse cx="505" cy="145" rx="52" ry="75" stroke-dasharray="2 10" fill="none"/><path d="M60 150 20 170m95-45 35-45m-85 155-20 55m55-55 25 55M255 125l-55-35m150 35 55 35m-90 40-15 60m55-60 25 60M465 125l-50-35m125 35 45-30m-88 120-5 60m55-60 15 60M5 280h35l-8 18H0zm105 0h35l8 18h-42zm70-28h38l-6 18h-40zm110 0h38l9 18h-44zm78 28h38l-6 18h-40zm115 0h38l9 18h-44z" fill="none"/><circle cx="300" cy="130" r="6"/><circle cx="323" cy="130" r="6"/><path d="M290 155q15 15 30 0M495 125h7m18 0h7m-30 25q10 12 20 0" fill="none"/></g>'
+      : kind === 'shape-expression'
+        ? '<g stroke="#1f2937" stroke-width="6" stroke-linejoin="round"><polygon points="300,95 385,120 420,205 385,290 300,325 215,290 180,205 215,120" fill="none" stroke-dasharray="2 11"/><path d="M240 175h20m80 0h20m-110 55q50 45 100 0" fill="none"/><path d="M270 230q20 85 42 0" fill="#fb7185" stroke-dasharray="none"/></g>'
+        : kind === 'umbrella-face'
+          ? '<path d="M55 185q245-230 490 0-65-35-125 0-60-38-125 0-60-38-120 0-60-35-120 0z" fill="none" stroke="#1f2937" stroke-width="7" stroke-dasharray="2 11"/><circle cx="250" cy="135" r="9"/><circle cx="325" cy="135" r="9"/><path d="M245 160q40 38 82 0M300 185v130q0 45 42 45t42-38" fill="none" stroke="#1f2937" stroke-width="7"/>'
+          : kind === 'school-bags'
+            ? '<g fill="none" stroke="#1f2937" stroke-width="7" stroke-dasharray="2 11" stroke-linejoin="round"><path d="M160 100q5-60 65-60t65 60v240H160z"/><path d="M185 180h80v90h-80z"/><path d="M190 40q5-42 35-42t35 42"/><path d="M160 150q-40 15-25 100m160-100q40 15 25 100"/></g>'
+            : kind === 'pineapple-characters'
+              ? '<g fill="none" stroke="#1f2937" stroke-width="7" stroke-dasharray="2 11" stroke-linejoin="round"><path d="M295 120q-65-15-55-80 45 8 68 55 0-70 48-90 25 52-6 105 70-45 112-12-30 55-112 67M300 145q-95-5-88 110 6 115 90 115 90 0 96-115 6-110-98-110z"/><path d="M245 190l105 120m-130-55 95 105m5-160 90 105m-135-120 105 120m-100 0 100-115m-110 160 105-125"/></g>'
+              : kind === 'watermelon'
+                ? '<g fill="none" stroke="#1f2937" stroke-width="6" stroke-dasharray="2 10"><circle cx="300" cy="190" r="125"/><path d="M220 125q-35 65 0 130m55-180q-35 115 0 230m55-230q-35 115 0 230m55-180q-35 65 0 130"/><path d="M340 285h180l-90-90h-90z"/><path d="M340 285h180" stroke="#22c55e" stroke-width="12"/></g>'
+                : kind === 'frock'
+                  ? '<g fill="none" stroke="#1f2937" stroke-width="7" stroke-dasharray="2 11" stroke-linejoin="round"><path d="M225 95h150l35 70-55 34 100 150H145l100-150-55-34zM260 98q40 60 80 0M255 197h90"/><polygon points="300,220 312,244 340,246 319,264 325,291 300,276 275,291 281,264 260,246 288,244"/></g>'
+                  : kind === 'grapes'
+                    ? '<g fill="none" stroke="#1f2937" stroke-width="5" stroke-dasharray="2 9"><circle cx="270" cy="120" r="35"/><circle cx="335" cy="120" r="35"/><circle cx="235" cy="180" r="35"/><circle cx="300" cy="180" r="35"/><circle cx="365" cy="180" r="35"/><circle cx="270" cy="240" r="35"/><circle cx="335" cy="240" r="35"/><circle cx="300" cy="300" r="35"/><path d="M300 85V50m0 12q-55-40-80 0 50 25 80 0m0 0q55-40 80 0-50 25-80 0"/></g>'
+                    : kind === 'duck'
+                      ? '<g fill="none" stroke="#1f2937" stroke-width="6" stroke-dasharray="2 10" stroke-linecap="round"><path d="M145 280q5-60 55-95 0-115 100-135 100 15 120 120l-28 105-90 58-110-18z"/><path d="M377 170l100 25-98 28m-164 37q60-65 120 0-55 35-120 0m-75 30v55m70-45v45m-85 0h42m25 0h42"/><circle cx="335" cy="130" r="18" fill="white" stroke-dasharray="none"/><circle cx="340" cy="130" r="8" fill="#111827" stroke-dasharray="none"/></g>'
+                      : kind === 'ladybug'
+                        ? '<g fill="none" stroke="#1f2937" stroke-width="6" stroke-dasharray="2 10"><path d="M100 145q120-115 300 0-55 15-80 55-70-40-140 0-25-40-80-55z"/><ellipse cx="300" cy="235" rx="95" ry="105"/><path d="M300 132v205M230 140q-35-48-65-30m205 30q35-48 65-30"/><circle cx="250" cy="200" r="12"/><circle cx="350" cy="200" r="12"/><circle cx="240" cy="260" r="13"/><circle cx="355" cy="265" r="13"/><path d="M260 290q40 28 80 0"/></g>'
+                        : kind === 'tulip'
+                          ? '<g fill="none" stroke="#1f2937" stroke-width="6" stroke-dasharray="2 10"><path d="M300 300V125q-45-35-24-95 28 18 34 48 20-56 50-68 22 55-3 95 50-35 80-8-15 62-70 70-38 5-67-42v175m0-110q-90-70-115 6 70 45 115-6m0 0q78-92 128-27-40 74-128 27"/></g>'
+                          : kind === 'ant'
+                            ? '<g fill="none" stroke="#1f2937" stroke-width="6" stroke-dasharray="2 10" stroke-linecap="round"><path d="M185 185q-30-70-65-50m75 40q10-70 45-73m-30 119-75-45m75 57-92 0m92 13-66 64m136-66-70-54m70 54-78 5m78 5-65 60m118-60 12 70"/><circle cx="210" cy="200" r="45"/><ellipse cx="325" cy="200" rx="45" ry="52"/><ellipse cx="445" cy="200" rx="72" ry="58"/><path d="M50 340q70-65 145-12 65-80 135-12 65-50 130-5 55-30 90 28z"/></g>'
+                            : kind === 'goat'
+                              ? '<g fill="none" stroke="#1f2937" stroke-width="6" stroke-dasharray="2 10" stroke-linejoin="round"><path d="M100 165q35-75 115-58 45 10 55 70l-28 54-90 20-55-35zM235 180q45-75 105-40l20 65-48 38-78-12m42-87q-30-40-10-70m35 72q36-48 60-32M145 220v75m45-70v70m42-78v78m45-85v85m40-108 40 10"/></g>'
+                              : kind === 'scissors'
+                                ? '<g fill="none" stroke="#1f2937" stroke-width="6" stroke-dasharray="2 10" stroke-linejoin="round"><circle cx="115" cy="300" r="38"/><circle cx="175" cy="320" r="38"/><path d="M145 292 305 100 175 310m-20 0L65 120l135 188"/><circle cx="370" cy="300" r="38"/><circle cx="430" cy="320" r="38"/><path d="M400 292 555 100 430 310m-20 0L320 120l135 188"/></g>'
+                                : kind === 'sunglasses'
+                                  ? '<g fill="none" stroke="#1f2937" stroke-width="7" stroke-dasharray="2 10" stroke-linejoin="round"><path d="M60 135h80m325 0h75M140 150q0-45 50-45h72q32 0 32 40v80q0 38-40 38h-72q-42 0-42-40zm155-5q0-40 38-40h72q48 0 48 45v73q0 40-40 40h-72q-46 0-46-40"/><path d="M295 155q22-18 42 0"/></g>'
+                                  : kind === 'flower'
+                                    ? '<g fill="none" stroke="#1f2937" stroke-width="6" stroke-dasharray="2 10"><ellipse cx="300" cy="105" rx="34" ry="72"/><ellipse cx="362" cy="151" rx="34" ry="72" transform="rotate(72 362 151)"/><ellipse cx="338" cy="222" rx="34" ry="72" transform="rotate(144 338 222)"/><ellipse cx="262" cy="222" rx="34" ry="72" transform="rotate(216 262 222)"/><ellipse cx="238" cy="151" rx="34" ry="72" transform="rotate(288 238 151)"/><circle cx="300" cy="170" r="35"/><path d="M300 205v140m0-70q-85-65-100 5 55 35 100-5m0 0q80-80 112-25-30 60-112 25"/></g>'
+                                    : kind === 'bananas'
+                                      ? '<g fill="none" stroke="#1f2937" stroke-width="6" stroke-dasharray="2 10"><path d="M80 110q38 150 185 170 85 17 120-28-145 0-230-155-37-50-75 13zm32-45q60 170 210 150 75-8 95-52-160 25-245-125-35-45-60 27zm-25 83q33 145 175 184 65 18 102-20-120-4-215-138-35-48-62-26"/></g>'
+                                      : kind === 'scenery'
+                                        ? '<g fill="none" stroke="#1f2937" stroke-width="6" stroke-dasharray="2 10"><path d="M175 215 280 125l105 90v130H175zM155 220l125-110 125 110H155zM225 250v95h45v-95m30-5h48v42h-48"/><path d="M465 225V95m0 0q-70-5-55-65 55-15 55 65 0-70 60-70 10 60-60 70"/><path d="M90 345q80-25 160 0t160 0 120 0"/></g>'
+    : illustration;
+  const fitArtwork = (art) => kind === 'shape-cat' ? `<g transform="translate(110 0) scale(.8)">${art}</g>` : art;
+  return `<figure class="drawing-vector-card"><svg viewBox="0 0 600 760" role="img" aria-label="${sanitize(labels[kind] || title)}: coloured example and dotted tracing practice"><title>${sanitize(title)}</title><rect class="drawing-example-panel" x="3" y="3" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="27" text-anchor="middle">LOOK · COLOUR IDEA</text><g class="drawing-sample" transform="translate(15 30) scale(.95)">${fitArtwork(illustration)}</g><path d="M28 380h544" class="drawing-panel-divider"/><rect class="drawing-trace-panel" x="3" y="390" width="594" height="365" rx="18"/><text class="drawing-panel-label" x="300" y="415" text-anchor="middle">YOUR TURN · TRACE AND COLOUR</text><g class="drawing-trace" transform="translate(15 415) scale(.95)">${fitArtwork(traceIllustration)}</g></svg></figure>`;
 }
 
 function renderDrawingPractice() {
@@ -1875,7 +2276,10 @@ function renderDrawingPractice() {
     const prefix = active === 'sqs' ? 'SQ' : 'LQ';
     content = `<div class="drawing-exam-list">${questions.map((item, i) => `<details class="drawing-question"><summary><span class="drawing-question-number">${prefix} ${i + 1}</span>${languages(item.q, item.qUr, item.qPs, 'drawing-question-text')}</summary><div class="drawing-suggested-answer"><h4>Suggested answer</h4>${languages(item.a, item.aUr, item.aPs, 'drawing-answer-text')}</div></details>`).join('')}</div>`;
   }
-  return `<div class="drawing-practice-tabs" role="tablist" aria-label="Drawing exam question types">${tabs}</div><div class="drawing-practice-content">${content}</div>`;
+  const sourceNote = state.selectedClass === 'cls1'
+    ? '<p class="drawing-teacher-note"><strong>About this practice:</strong> this question set is additional guided practice. The textbook itself is an activity workbook; use the 32 source-page activities as its exercises.</p>'
+    : '';
+  return `${sourceNote}<div class="drawing-practice-tabs" role="tablist" aria-label="Drawing exam question types">${tabs}</div><div class="drawing-practice-content">${content}</div>`;
 }
 
 function selectDrawingExamTab(tab) {
@@ -4065,6 +4469,8 @@ function renderEngLesson(ch) {
         <div class="urdu-section-body" style="direction:ltr;text-align:left;">
           <div>
             ${secData.html}
+            ${Array.isArray(sec.sourcePages) && sec.sourcePages.length ? `<div class="math-badge" style="display:inline-block;margin-top:.8rem;background:#eff6ff;color:#1d4ed8;">Source scan: printed page${sec.sourcePages.length === 1 ? '' : 's'} ${sec.sourcePages.join(', ')}</div>` : ''}
+            ${sec.diagramSvg || ''}
             ${sec.analysis ? `
               <div style="margin-top:1rem;background:#f0f9ff;border-left:3px solid #0284c7;border-radius:4px;padding:0.75rem 1rem;font-size:0.9rem;color:#0369a1;white-space:pre-line;line-height:1.7;">
                 ${sec.analysis}
@@ -4189,7 +4595,7 @@ function renderEngPashtoTranslation(ch) {
 
 // ─── 4. VIDEO LECTURES VIEW ───
 function renderEngVideo(ch) {
-  const videoBasePath = "Books/Cover Pages/Videos/";
+  const videoBasePath = "covers/Videos/";
   const tabs = [
     { id: "eng-vid-english",   label: "📺 English Video",    file: videoBasePath + "English.mp4" },
     { id: "eng-vid-urdu",      label: "🎬 Urdu Video",       file: videoBasePath + "URdu.mp4" },
@@ -6667,6 +7073,7 @@ function renderUrduSloLQs(ch) {
 // ─────────────────────────────────────────
 // ─── 1. TOPICS ACCORDION VIEW (Exact Textbook Hierarchy) ─────────────
 function renderTopicsAccordion(ch) {
+  if (state.selectedClass === 'cls9' && DATA.physChapters?.includes(ch)) return renderScienceLessonSubContent('phys', ch, 'translations');
   const accordions = ch.topics.map((topic, ti) => {
     const subtopics = topic.subtopics || [];
 
@@ -6990,27 +7397,46 @@ function renderTopicsAccordion(ch) {
 
 // ─── 2. TEXTBOOK EXERCISES VIEW ───────────
 // ─── 2. TEXTBOOK EXERCISES VIEW ───────────
+function renderExerciseSourceTables(tables) {
+  if (!Array.isArray(tables) || tables.length === 0) return '';
+  return tables.map(table => {
+    const headers = (table.headers || []).map(value => '<th scope="col">' + value + '</th>').join('');
+    const rows = (table.rows || []).map(row => '<tr>' + row.map(value => '<td>' + value + '</td>').join('') + '</tr>').join('');
+    return '<div style="overflow-x:auto;margin:.75rem 0;"><table class="diff-table" aria-label="' + (table.ariaLabel || 'Textbook exercise data') + '"><thead><tr>' + headers + '</tr></thead><tbody>' + rows + '</tbody></table></div>';
+  }).join('');
+}
+
 function renderTextbookExercises(ch) {
   const ex = ch.textbookExercise || { mcqs: [], sq: [], lq: [] };
   const mcqs = ex.mcqs || [];
   const sq = ex.sq || [];
   const lq = ex.lq || [];
 
+  const sourcePromptHtml = (pair, fallback, key) => pair && pair.text
+    ? renderInteractiveParagraphHtml(pair.text, pair.urdu, pair.pashto, key, true)
+    : fallback;
+
   const mcqHtml = mcqs.map((m, mi) => {
     const opts = m.opts || m.options || [];
     const ansIdx = m.ans !== undefined ? m.ans : (m.correct !== undefined ? m.correct : 0);
     const exp = m.exp || m.explanation || "";
+    const questionHtml = sourcePromptHtml(m.sourceQuestionPair, m.q, `tb-ex-mcq-${mi}-q`);
+    const optionHtml = (opt, oi, disabled = false) => {
+      const pair = m.sourceOptionPairs?.[oi];
+      const content = sourcePromptHtml(pair, opt, `tb-ex-mcq-${mi}-opt-${oi}`);
+      return disabled
+        ? `<div class="tb-opt-btn"><span class="tb-opt-letter">${String.fromCharCode(65 + oi)}</span><span>${content}</span></div>`
+        : `<button class="tb-opt-btn" onclick="checkTbMcq(${mi}, ${oi}, ${ansIdx}, '${encodeURIComponent(exp)}')"><span class="tb-opt-letter">${String.fromCharCode(65 + oi)}</span><span>${content}</span></button>`;
+    };
+    if (m.sourceAnswerIssue) return `<div class="tb-mcq-card" id="tb-mcq-${mi}"><div class="tb-mcq-title"><span class="tb-badge">Q${mi + 1}</span> ${questionHtml}</div><div class="tb-opts-grid">${opts.map((opt, oi) => optionHtml(opt, oi, true)).join("")}</div><div class="tb-feedback" style="display:block;"><strong>Source question needs clarification:</strong> ${exp}</div></div>`;
+
     return `
       <div class="tb-mcq-card" id="tb-mcq-${mi}">
         <div class="tb-mcq-title">
-          <span class="tb-badge">Q${mi + 1}</span> ${m.q}
+          <span class="tb-badge">Q${mi + 1}</span> ${questionHtml}
         </div>
         <div class="tb-opts-grid">
-          ${opts.map((opt, oi) => `
-            <button class="tb-opt-btn" onclick="checkTbMcq(${mi}, ${oi}, ${ansIdx}, '${encodeURIComponent(exp)}')">
-              <span class="tb-opt-letter">${String.fromCharCode(65 + oi)}</span>
-              <span>${opt}</span>
-            </button>`).join("")}
+          ${opts.map((opt, oi) => optionHtml(opt, oi)).join("")}
         </div>
         <div class="tb-feedback" id="tb-fb-${mi}" style="display:none;"></div>
       </div>`;
@@ -7020,10 +7446,11 @@ function renderTextbookExercises(ch) {
     <div class="tb-qa-card">
       <div class="tb-qa-q">
         <span class="tb-badge-sq">SQ ${si + 1}</span>
-        <strong>${s.q}</strong>
+        <strong>${sourcePromptHtml(s.sourceQuestionPair, s.q, `tb-ex-sq-${si}-q`)}</strong>
       </div>
+      ${renderExerciseSourceTables(s.sourceTables)}
       <div class="tb-qa-a">
-        <div class="tb-qa-label">Exam-Ready Answer:</div>
+        <div class="tb-qa-label">${s.answerOrigin ? (s.answerOrigin.startsWith('The final answer is printed') ? 'Textbook final answer; SpaceBook-authored working' : 'SpaceBook-authored answer (not printed in source)') : 'Exam-Ready Answer'}:</div>
         <p>${(s.ans || "").replace(/\n/g, '<br>')}</p>
       </div>
     </div>`).join("");
@@ -7032,19 +7459,24 @@ function renderTextbookExercises(ch) {
     <div class="tb-qa-card">
       <div class="tb-qa-q">
         <span class="tb-badge-lq">Detailed Q ${li + 1}</span>
-        <strong>${l.q}</strong>
+        <strong>${sourcePromptHtml(l.sourceQuestionPair, l.q, `tb-ex-lq-${li}-q`)}</strong>
       </div>
+      ${renderExerciseSourceTables(l.sourceTables)}
       <div class="tb-qa-a">
-        <div class="tb-qa-label">Structured Exam Answer & Outline:</div>
+        <div class="tb-qa-label">${l.answerOrigin ? 'SpaceBook-authored answer (not printed in source)' : 'Structured Exam Answer & Outline:'}</div>
         <p>${(l.ans || "").replace(/\n/g, '<br>')}</p>
       </div>
     </div>`).join("");
+
+  const projectItems = Array.isArray(ex.projectWork) ? ex.projectWork : (ex.projectWork ? [ex.projectWork] : []);
+  const projectWorkHtml = projectItems.map((item, pi) => "<div class=\"tb-qa-card\" data-source-project=\"" + (pi + 1) + "\"><div class=\"tb-qa-q\"><strong>" + (item.title || "Project Work") + "</strong></div><p>" + sourcePromptHtml(item.sourcePromptPair, item.prompt || item.q || item.procedure || item, `tb-ex-project-${pi}`) + "</p></div>").join("");
 
   return `
     <div class="ex-wrap">
       <div class="ex-header-bar">
         <h4>📕 Official Textbook Exercises — Unit ${ch.num}: ${ch.name}</h4>
         <p>Extracted directly from textbook exercise pages. Click options to test your knowledge.</p>
+        ${mcqs.some(m => m.answerOrigin) ? '<p style="font-size:.8rem;color:#475569;">This source prints the questions and options without a marked answer key. Correct options and explanations shown after selection are SpaceBook-authored.</p>' : ''}
       </div>
 
       <!-- MCQs Section -->
@@ -7064,6 +7496,7 @@ function renderTextbookExercises(ch) {
         <h5>C. Write Detailed / Long Answers (${lq.length} Textbook LQs)</h5>
       </div>
       <div class="tb-qa-list">${lqHtml}</div>
+      ${projectWorkHtml ? `<div class="ex-sub-header" style="margin-top:2rem;"><h5>D. Project Work</h5></div><div class="tb-qa-list">${projectWorkHtml}</div>` : ""}
     </div>`;
 }
 
@@ -7143,32 +7576,25 @@ function renderSLOsAndConcepts(ch) {
     </div>`).join("") : `<div style="padding:1rem;color:var(--text-muted);font-style:italic;">Key definitions are integrated directly within the Topics &amp; Notes study view.</div>`;
 
   const diffs = ch.differences || [];
-  const diffHtml = diffs.length > 0 ? diffs.map(diff => `
-    <div style="margin-bottom:1.5rem;">
-      <h5 style="margin-bottom:0.5rem;color:var(--navy);font-weight:700;">${diff.title}</h5>
-      <table class="diff-table">
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>${diff.colA}</th>
-            <th>${diff.colB}</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${(diff.rows || []).map(r => `
-            <tr>
-              <td><strong>${r[0]}</strong></td>
-              <td>${r[1]}</td>
-              <td>${r[2]}</td>
-            </tr>`).join("")}
-        </tbody>
-      </table>
-    </div>`).join("") : `<div style="padding:1rem;color:var(--text-muted);font-style:italic;">See Activities &amp; Tables tab for comparative tables.</div>`;
+  const class9Chemistry = state.selectedClass === 'cls9' && state.activeSubject === 'chem';
+  const renderDiffPair = pair => pair ? renderInteractiveParagraphHtml(pair.text, pair.urdu, pair.pashto, pair.id, true) : '';
+  const diffHtml = diffs.length > 0 ? diffs.map((diff, diffIndex) => {
+    const sourceTable = class9Chemistry && diff.sourceInteractiveTable;
+    if (sourceTable) {
+      const title = renderDiffPair(sourceTable.title);
+      const headers = (sourceTable.headers || []).map(cell => '<th scope="col">' + renderDiffPair(cell) + '</th>').join('');
+      const rows = (sourceTable.rows || []).map((row, rowIndex) => '<tr>' + row.map((cell, column) => '<td>' + (cell ? renderDiffPair(cell) : '<strong>' + (diff.rows?.[rowIndex]?.[column] || '') + '</strong>') + '</td>').join('') + '</tr>').join('');
+      return '<div style="margin-bottom:1.5rem;max-width:' + Math.round(520 * (diff.sourceWidthRatio || 1)) + 'px;margin-left:auto;margin-right:auto;"><h5 style="margin-bottom:0.5rem;color:var(--navy);font-weight:700;">' + title + '</h5><div style="overflow-x:auto"><table class="diff-table"><thead><tr>' + headers + '</tr></thead><tbody>' + rows + '</tbody></table></div></div>';
+    }
+    return '<div style="margin-bottom:1.5rem;"><h5 style="margin-bottom:0.5rem;color:var(--navy);font-weight:700;">' + diff.title + '</h5><table class="diff-table"><thead><tr><th>Feature</th><th>' + diff.colA + '</th><th>' + diff.colB + '</th></tr></thead><tbody>' + (diff.rows || []).map(r => '<tr><td><strong>' + r[0] + '</strong></td><td>' + r[1] + '</td><td>' + r[2] + '</td></tr>').join('') + '</tbody></table></div>';
+  }).join('') : '<div style="padding:1rem;color:var(--text-muted);font-style:italic;">See Activities &amp; Tables tab for comparative tables.</div>';
+
 
   const diags = ch.diagrams || [];
   const diagHtml = diags.length > 0 ? diags.map(d => `
     <div class="diag-card">
       <div class="diag-title">🖼️ ${d.name}</div>
+      ${renderChemistryCodedFigure(d)}
       <div class="diag-topic"><strong>Topic:</strong> ${d.topic}</div>
       <div class="diag-note"><strong>Study Guide:</strong> ${d.note}</div>
     </div>`).join("") : `<div style="padding:1rem;color:var(--text-muted);font-style:italic;">Diagrams and figures are located within the Topics &amp; Notes and Activities &amp; Tables views.</div>`;
@@ -7277,11 +7703,89 @@ function checkSloMcq(qIndex, selectedOpt, correctOpt, encodedExp) {
   }
 }
 
-// ─── 4. ACTIVITIES, TABLES & FIGURES VIEW ───────────────
+function renderChemistryCodedFigure(figure) {
+  if (!figure?.svg && !figure?.portraitSvg) return '';
+  const render = (svg, ratio) => {
+    if (!svg) return '';
+    const maxWidth = Math.max(1, Math.round(520 * Math.min(1, ratio || 0.5)));
+    return '<div style="max-width:' + maxWidth + 'px;margin:.5rem auto;">' + svg.replace(/<svg\b/, '<svg style="display:block;width:100%;height:auto;"') + '</div>';
+  };
+  return '<div class="chemistry-coded-figure">' + render(figure.svg, figure.sourceWidthRatio) + render(figure.portraitSvg, figure.portraitSourceWidthRatio) + '</div>';
+}
+
+function renderClass9ChemistryAppendixText(record) {
+  if (!record || typeof record !== 'object') return sanitize(record || '');
+  if (record.type !== 'pairedText') return '';
+  if (record.sourceLanguage === 'ur') {
+    return '<details class="source-paragraph-translation"><summary lang="ur" dir="rtl" style="white-space:pre-line;line-height:1.9;cursor:pointer;">' + sanitize(record.text) + '</summary><div lang="en" dir="ltr"><strong>English translation</strong><p style="white-space:pre-line;">' + sanitize(record.english) + '</p></div><div lang="ps" dir="rtl"><strong>پښتو ژباړه</strong><p style="white-space:pre-line;">' + sanitize(record.pashto) + '</p></div></details>';
+  }
+  return renderInteractiveParagraphHtml(record.text, record.urdu, record.pashto, record.id, true);
+}
+
+function renderClass9ChemistryAppendixHeading(record, tag) {
+  let text = sanitize(record.title || '');
+  if (record.sourceLanguage === 'ur' && record.titleEnglish && record.titlePashto) return '<div role="heading" aria-level="' + tag.slice(1) + '">' + renderClass9ChemistryAppendixText({type:'pairedText',sourceLanguage:'ur',text:record.title,english:record.titleEnglish,pashto:record.titlePashto}) + '</div>';
+  else if (record.titleUrdu && record.titlePashto) text = renderInteractiveParagraphHtml(record.title, record.titleUrdu, record.titlePashto, record.id + '-title', true);
+  return '<' + tag + '>' + text + '</' + tag + '>';
+}
+
+function renderClass9ChemistryAppendixTable(table) {
+  if (table?.sourceTwoColumnIndex && Array.isArray(table.rows)) {
+    const split = table.rows.findIndex(row => row[0] === table.sourceColumnBreakAt);
+    if (split < 1) return '';
+    const renderColumn = rows => {
+      const groups = [];
+      rows.forEach(row => {
+        let group = groups[groups.length - 1];
+        if (!group || group.letter !== row[0]) {
+          group = { letter: row[0], rows: [] };
+          groups.push(group);
+        }
+        group.rows.push(row);
+      });
+      return '<table class="diff-table chemistry-index-column"><tbody>' + groups.map(group =>
+        '<tr><th class="chemistry-index-letter" colspan="2" scope="colgroup">' + sanitize(group.letter) + '</th></tr>' +
+        group.rows.map(row => {
+          const entry = row[1];
+          const rawLabel = typeof entry === 'object' ? entry.text : String(entry || '');
+          const nested = rawLabel.includes(' — ');
+          const label = nested ? rawLabel.split(' — ').slice(1).join(' — ') : rawLabel;
+          const paired = entry && typeof entry === 'object' ? { ...entry, text: label } : label;
+          return '<tr><td' + (nested ? ' class="chemistry-index-subentry"' : '') + '>' + renderClass9ChemistryAppendixText(paired) + '</td><td class="chemistry-index-page">' + sanitize(row[2]) + '</td></tr>';
+        }).join('')
+      ).join('') + '</tbody></table>';
+    };
+    const width = Math.max(1, Math.min(100, (table.sourceWidthRatio || 1) * 100));
+    return '<div class="chemistry-index-spread" style="width:' + width + '%;max-width:min(100%,' + Math.round(520 * width / 100) + 'px);margin:.75rem auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;align-items:start;">' + renderColumn(table.rows.slice(0, split)) + renderColumn(table.rows.slice(split)) + '</div>';
+  }
+  const widthStyle = table?.sourceWidthRatio ? 'max-width:min(100%,' + Math.round(520 * table.sourceWidthRatio) + 'px);margin:.5rem auto;' : '';
+  return '<div style="overflow-x:auto;' + widthStyle + '"><table class="diff-table"><thead><tr>' + (table.headers || []).map(h => '<th scope="col">' + renderClass9ChemistryAppendixText(h) + '</th>').join('') + '</tr></thead><tbody>' + (table.rows || []).map(row => '<tr>' + row.map(cell => '<td>' + renderClass9ChemistryAppendixText(cell) + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
+}
+
+function renderClass9ChemistryBookAppendix(ch) {
+  if (!Array.isArray(ch.sourceBookAppendix)) return '';
+  return '<details style="margin-bottom:1.5rem;"><summary>' + sanitize(ch.sourceBookAppendixLabel || 'Textbook back matter / کتاب کا اختتامی حصہ / د کتاب وروستۍ برخه') + '</summary>' + ch.sourceBookAppendix.map(page => {
+    const width = Math.max(1, Math.min(100, (page.sourceWidthRatio || 1) * 100));
+    const pageStyle = 'padding:1rem;border-bottom:1px solid #cbd5e1;' + (page.sourceWidthRatio ? 'width:' + width + '%;max-width:min(100%,' + Math.round(520 * width / 100) + 'px);margin:0 auto;' : '');
+    return '<section style="' + pageStyle + '">' + renderClass9ChemistryAppendixHeading(page,'h3') + '<p>' + sanitize(page.sourceRef) + '</p>' + (page.sections || []).map(section => '<div dir="' + (section.sourceLanguage === 'ur' || section.sourceLanguage === 'ps' ? 'rtl' : 'ltr') + '">' + (section.title ? renderClass9ChemistryAppendixHeading(section,'h4') : '') + (section.paragraphs || []).map(text => '<div style="white-space:pre-line;line-height:1.8;margin:.6rem 0;">' + renderClass9ChemistryAppendixText(text) + '</div>').join('') + (section.list ? '<ul>' + section.list.map(text => '<li style="white-space:pre-line;line-height:1.8;">' + renderClass9ChemistryAppendixText(text) + '</li>').join('') + '</ul>' : '') + '</div>').join('') + (page.tables || []).map(renderClass9ChemistryAppendixTable).join('') + (page.fields || []).map(field => '<p>' + renderClass9ChemistryAppendixText(field) + ' ____________________</p>').join('') + (page.sourceNote ? '<p>' + sanitize(page.sourceNote) + '</p>' : '') + '</section>';
+  }).join('') + '</details>';
+}
+
 function renderActivitiesAndTables(ch) {
+  const bookAppendixHtml = renderClass9ChemistryBookAppendix(ch);
   const acts = ch.activities || [];
   const tbls = ch.tables || [];
   const diags = ch.diagrams || [];
+
+  const renderActivityResponseTable = (table) => {
+    if (!table || !Array.isArray(table.headers) || !Array.isArray(table.rows)) return '';
+    const responseCellHtml = cell => state.selectedClass === 'cls9' && state.activeSubject === 'chem' && cell?.type === 'pairedText' ? renderInteractiveParagraphHtml(cell.text,cell.urdu,cell.pashto,'chem9-response-cell-'+cell.id,true) : sanitize(cell);
+    return `<div class="activity-response-table" style="overflow-x:auto;margin:.8rem 0;">
+      ${table.title ? `<p style="margin:.25rem 0;font-size:.85rem;color:#475569;">${sanitize(table.title)}</p>` : ''}
+      <table class="diff-table"><thead><tr>${table.headers.map(cell => `<th>${responseCellHtml(cell)}</th>`).join('')}</tr></thead>
+      <tbody>${table.rows.map(row => `<tr>${row.map(cell => `<td>${responseCellHtml(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table>
+    </div>`;
+  };
 
   const actsHtml = acts.length > 0 ? acts.map((act, i) => `
     <div class="activity-card-full">
@@ -7290,29 +7794,53 @@ function renderActivitiesAndTables(ch) {
         <h4 style="margin:0;font-size:1.05rem;color:var(--navy);">${act.name}</h4>
       </div>
       <div class="act-card-body">
-        <div class="act-proc-label">🔬 Experimental Procedure &amp; Practical Investigation:</div>
-        <p style="margin:0;font-size:0.9rem;line-height:1.6;color:#334155;">${(act.procedure || act.desc || "").replace(/\n/g, '<br>')}</p>
+        <div class="act-proc-label">${act.num === 'Project Work' ? '🧩 Project tasks:' : '🔬 Experimental Procedure &amp; Practical Investigation:'}</div>
+        <p style="margin:0;font-size:0.9rem;line-height:1.6;color:#334155;">${state.selectedClass === 'cls9' && state.activeSubject === 'chem' && act.sourcePromptPairs ? act.sourcePromptPairs.map((pair,j)=>renderInteractiveParagraphHtml(pair.text,pair.urdu,pair.pashto,'chem9-activity-source-pair-'+i+'-'+j,true)).join('<br>') : state.selectedClass === 'cls9' && state.activeSubject === 'chem' && act.sourcePromptPair ? renderInteractiveParagraphHtml(act.sourcePromptPair.text,act.sourcePromptPair.urdu,act.sourcePromptPair.pashto,'chem9-activity-source-'+i,true) : (act.procedure || act.desc || '').replace(/\n/g,'<br>')}</p>
+        ${state.selectedClass === 'cls9' && state.activeSubject === 'chem' && act.sourceOrigin ? `<small style="display:block;margin:.5rem 0;">${sanitize(act.sourceOrigin)}</small>` : ''}
+        ${renderActivityResponseTable(act.responseTable)}
       </div>
     </div>
   `).join("") : `<div style="padding:1rem;color:var(--text-muted);font-style:italic;">Official textbook investigations are integrated inside the Topics &amp; Notes view.</div>`;
 
+  const sourceReferenceCell = (cell, table, pair) => {
+    if (cell && cell.type === 'pairedText' && cell.text && cell.urdu && cell.pashto) return renderInteractiveParagraphHtml(cell.text, cell.urdu, cell.pashto, cell.id, true);
+    if (typeof cell === 'string' && pair?.urdu && pair?.pashto) return renderInteractiveParagraphHtml(cell, pair.urdu, pair.pashto, pair.id, true);
+    if (!cell || typeof cell !== 'object' || !cell.blockId) return cell;
+    const block = [...(ch.sections || []).flatMap(section => section.sourceBlocks || []), ...(table?.sourceBlocks || [])].find(block => block.id === cell.blockId);
+    return `<div style="max-width:${Math.round(520 * (block?.sourceWidthRatio || .2))}px;">${(block?.svg || '').replace(/<svg\b/, '<svg style="display:block;width:100%;height:auto;"')}</div>`;
+  };
+  const renderChemistryTableHeaders = tbl => {
+    if (tbl.noHeader && state.selectedClass === 'cls9' && state.activeSubject === 'chem') return ''; 
+    if (!Array.isArray(tbl.headerRows)) return '<tr>' + (tbl.headers || []).map((h, column) => '<th scope="col">' + sourceReferenceCell(h, tbl, tbl.interactiveTranslations?.headers?.[column]) + '</th>').join('') + '</tr>';
+    return tbl.headerRows.map(row => '<tr>' + row.map(cell => {
+      const item = typeof cell === 'string' ? {text: cell} : cell;
+      const spans = (item.colspan ? ' colspan="' + item.colspan + '"' : '') + (item.rowspan ? ' rowspan="' + item.rowspan + '"' : '');
+      return '<th scope="' + (item.scope || 'col') + '"' + spans + '>' + (item.text && item.text.type === 'pairedText' ? sourceReferenceCell(item.text, tbl) : sanitize(item.text)) + '</th>';
+    }).join('') + '</tr>').join('');
+  };
+  const renderChemistryIndexTable = tbl => renderClass9ChemistryAppendixTable(tbl);
+
   const tblsHtml = tbls.length > 0 ? tbls.map(tbl => `
-    <div class="tbl-card-full" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:1.25rem;margin-bottom:1.5rem;box-shadow:var(--shadow);">
+    <div class="tbl-card-full" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:1.25rem;margin:0 auto 1.5rem;box-shadow:var(--shadow);${tbl.sourceWidthRatio ? `max-width:${Math.round(520 * tbl.sourceWidthRatio)}px;` : ''}">
       <h5 style="color:var(--navy);font-weight:700;margin-bottom:0.75rem;font-size:0.95rem;">📊 ${tbl.title}</h5>
-      <table class="diff-table">
+      ${tbl.titleUrdu ? `<p lang="ur" dir="rtl">${sanitize(tbl.titleUrdu)}</p>` : ''}
+      ${tbl.titlePashto ? `<p lang="ps" dir="rtl">${sanitize(tbl.titlePashto)}</p>` : ''}
+      ${tbl.sourceNote ? `<p style="font-size:.82rem;color:#475569;line-height:1.5;">${sanitize(tbl.sourceNote)}</p>` : ''}
+      ${tbl.sourceTwoColumnIndex ? renderChemistryIndexTable(tbl) : `<table class="diff-table">
         <thead>
-          <tr>${(tbl.headers || []).map(h => `<th>${h}</th>`).join("")}</tr>
+          ${tbl.noHeader ? '' : renderChemistryTableHeaders(tbl)}
         </thead>
         <tbody>
-          ${(tbl.rows || []).map(r => `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}
+          ${(tbl.rows || []).map((r, row) => `<tr>${r.map((c, column) => `<td${c && typeof c === 'object' && c.rowspan ? ` rowspan="${c.rowspan}"` : ''}>${sourceReferenceCell(c, tbl, tbl.interactiveTranslations?.rows?.[row]?.[column])}</td>`).join("")}</tr>`).join("")}
         </tbody>
-      </table>
+      </table>`}
     </div>
   `).join("") : `<div style="padding:1rem;color:var(--text-muted);font-style:italic;">No standalone reference tables listed for this unit.</div>`;
 
   const diagsHtml = diags.length > 0 ? diags.map(d => `
     <div class="diag-card">
       <div class="diag-title">🖼️ ${d.name}</div>
+      ${renderChemistryCodedFigure(d)}
       <div class="diag-topic"><strong>Topic:</strong> ${d.topic}</div>
       <div class="diag-note"><strong>Study Guide:</strong> ${d.note}</div>
     </div>
@@ -7320,6 +7848,7 @@ function renderActivitiesAndTables(ch) {
 
   return `
     <div style="padding:1.25rem;">
+      ${bookAppendixHtml}
       <div class="section-title">🧪 Official Laboratory Activities &amp; Investigations (${acts.length})</div>
       <div class="acts-list" style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;">${actsHtml}</div>
 
@@ -7334,6 +7863,10 @@ function renderActivitiesAndTables(ch) {
 
 // ─── 5. REVISION CHECKLIST VIEW ───────────
 function renderChapterChecklist(ch) {
+  const sourceKeyPoints = Array.isArray(ch.sourceKeyPoints) ? ch.sourceKeyPoints : [];
+  const sourceKeyPointsHtml = sourceKeyPoints.length ? '<section style="margin-bottom:1.5rem;padding:1rem;background:#fff;border:1px solid #cbd5e1;border-radius:10px;"><div class="section-title">📘 Source Textbook Key Points</div>' + (ch.sourceKeyPointsLabel ? '<p style="font-size:.8rem;color:#64748b;">' + sanitize(ch.sourceKeyPointsLabel) + '</p>' : '') + '<ul style="line-height:1.7;">' + sourceKeyPoints.map((point, i) => { const pair = ch.sourceKeyPointPairs?.[i]; return '<li>' + (pair ? renderInteractiveParagraphHtml(pair.text, pair.urdu, pair.pashto, 'chem9-key-point-' + i, true) : sanitize(point.text || point)) + '</li>'; }).join('') + '</ul></section>' : '';
+  const sourceLearningOutcomes = Array.isArray(ch.sourceLearningOutcomes) ? ch.sourceLearningOutcomes : [];
+  const sourceLearningOutcomesHtml = sourceLearningOutcomes.length ? '<section style="margin-bottom:1.5rem;padding:1rem;background:#fff;border:1px solid #cbd5e1;border-radius:10px;"><div class="section-title">📗 Printed Unit Learning Outcomes</div>' + (ch.sourceLearningOutcomesLabel ? '<p style="font-size:.8rem;color:#64748b;">' + sanitize(ch.sourceLearningOutcomesLabel) + '</p>' : '') + '<ul style="line-height:1.7;">' + sourceLearningOutcomes.map(point => '<li>' + sanitize(point) + '</li>').join('') + '</ul></section>' : '';
   const items = ch.checklist || (ch.slos || []).map(s => `Mastery of: ${s}`);
   const itemsHtml = items.map((item, idx) => `
     <label class="check-item">
@@ -7343,6 +7876,8 @@ function renderChapterChecklist(ch) {
 
   return `
     <div style="padding:1.5rem;">
+      ${sourceKeyPointsHtml}
+      ${Array.isArray(ch.sourceLearningOutcomePairs) ? '<section><h4>After studying this unit, the students will be able to / تعلیمی نتائج / د زده کړې پایلې</h4><ul>' + ch.sourceLearningOutcomePairs.map((record, index) => '<li>' + renderInteractiveParagraphHtml(record.text, record.urdu, record.pashto, record.id, true) + '</li>').join('') + '</ul></section>' : ''}
       <div class="section-title">✅ Unit ${ch.num} Mastery Checklist</div>
       <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.25rem;">Check off items as you complete your revision for this unit.</p>
       <div class="checklist-box">${itemsHtml}</div>
@@ -7907,12 +8442,9 @@ function _getIslChapters() {
            (typeof window !== 'undefined' && window.ISLAMYAT_1_DATA) || 
            (typeof ISLAMYAT_1_DATA !== 'undefined' ? ISLAMYAT_1_DATA : []);
   }
-  if (isCls10) {
-    return (typeof DATA !== 'undefined' && DATA.islamyat10Chapters) || 
-           (typeof window !== 'undefined' && window.ISLAMYAT_10_DATA) || 
-           (typeof ISLAMYAT_10_DATA !== 'undefined' ? ISLAMYAT_10_DATA : []);
-  }
-  return (typeof DATA !== 'undefined' && DATA.islamyatChapters) || 
+  // Class 10 uses the same Islamiat (lazmi) book as Class 9, so it falls through to the Class 9 data below.
+  void isCls10;
+  return (typeof DATA !== 'undefined' && DATA.islamyatChapters) ||
          (typeof window !== 'undefined' && window.ISLAMYAT_DATA) || 
          (typeof ISLAMYAT_DATA !== 'undefined' ? ISLAMYAT_DATA : []);
 }
@@ -8100,6 +8632,7 @@ function renderIslChapter(index) {
   const ch = chList[index];
   const area = $("islTopicArea");
   if (!area || !ch) return;
+  const isNazeraRecitation = ch.type === 'tajweed';
 
   const sqCount = (ch.exercise && ch.exercise.shortQuestions ? ch.exercise.shortQuestions.length : 0) + (ch.sloQuestions && ch.sloQuestions.shortQuestions ? ch.sloQuestions.shortQuestions.length : 0);
   const mcqCount = (ch.sloQuestions && ch.sloQuestions.mcqs ? ch.sloQuestions.mcqs.length : 0);
@@ -8158,7 +8691,7 @@ function renderIslChapter(index) {
     <div id="islTabContent" style="margin-top: 1.25rem;"></div>
 
     <!-- Bottom SLO Questions Section -->
-    <div class="slo-bottom-section">
+    <div class="slo-bottom-section" style="${isNazeraRecitation ? 'display:none;' : ''}">
       <div class="slo-bottom-header" style="border-top-color:#0d9488;">
         <div class="slo-bottom-title">
           <span>🕌</span>
@@ -8502,6 +9035,30 @@ function renderIslPashtoSummary(ch) {
 }
 
 function renderIslExercise(ch) {
+  if (ch && ch.type === 'tajweed') {
+    const drills = (ch.exercise && ch.exercise.readingPractice) || [];
+    const pageText = (ch.sourcePages || []).join(', ');
+    return `
+      <div class="urdu-container">
+        <div class="urdu-ctrl-bar" style="border-left:4px solid #0d9488;background:#f0fdf4;">
+          <div>
+            <strong style="color:#0f766e;font-size:1.05rem;">📖 زبانی قرأت کی مشق: ${ch.title}</strong>
+            <span style="font-size:0.85rem;color:#047857;margin-left:0.5rem;">اصل کتاب میں اس سبق کی سرگرمی حرفوں اور قرآنی الفاظ کو پڑھنا ہے؛ الگ تحریری سوالات نہیں ہیں۔</span>
+          </div>
+        </div>
+        <div class="urdu-section-card" style="background:#fffbeb;border-color:#fcd34d;padding:1rem;margin-bottom:1rem;direction:rtl;text-align:right;line-height:2;">
+          ماخذ: درسی کتاب کے صفحات ${pageText || '—'}۔ نیچے موجود عربی سطریں ڈیجیٹل سبق کے موجودہ نمونے ہیں؛ مکمل صفحہ وار لفظی نقل کی جانچ جاری ہے۔
+        </div>
+        ${drills.map((item, index) => `
+          <div class="urdu-section-card open" style="margin-bottom:1rem;">
+            <div class="urdu-section-header" style="background:#f0fdf4;">
+              <span class="urdu-sec-title" style="color:#0f766e;">${item.heading || `مشق ${index + 1}`}</span>
+            </div>
+            <div class="urdu-section-body" dir="rtl" style="text-align:center;padding:1.25rem;font-family:'Amiri','Traditional Arabic',serif;font-size:1.8rem;line-height:2.2;color:#0f172a;">${item.arabic}</div>
+            <div style="padding:0 1.25rem 1rem;color:#475569;direction:rtl;text-align:right;">حل: استاد/سرپرست کے سامنے آہستہ پڑھیں، ہر حرکت اور حرف کا مخرج درست رکھیں؛ یہ زبانی قرأت ہے، تحریری جواب نہیں۔</div>
+          </div>`).join('')}
+      </div>`;
+  }
   const ex = ch.exercise || {};
   const vocabList = ex.vocabulary || [];
   const sqList = ex.shortQuestions || [];
@@ -8788,7 +9345,9 @@ function handleGlobalSearch(query) {
   const clearBtn    = $("clearSearchBtn");
   if (!dropdown) return;
 
-  const q = (query || "").trim().toLowerCase();
+  const q = String(query || "").trim().toLowerCase();
+  const searchText = value => String(value ?? "").toLowerCase();
+  window.spaceBookSearchActions = [];
   if (clearBtn) clearBtn.style.display = q ? "block" : "none";
 
   if (!q || q.length < 2) {
@@ -8804,9 +9363,9 @@ function handleGlobalSearch(query) {
   // 0. Search Textbooks (PDFs)
   if (DATA.books) {
     DATA.books.forEach(b => {
-      const matchTitle = b.title.toLowerCase().includes(q);
-      const matchSubj = b.subject.toLowerCase().includes(q);
-      const matchCls = b.className.toLowerCase().includes(q);
+      const matchTitle = searchText(b.title).includes(q);
+      const matchSubj = searchText(b.subject).includes(q);
+      const matchCls = searchText(b.className).includes(q);
       if (matchTitle || matchSubj || matchCls || "book".includes(q) || "pdf".includes(q) || "textbook".includes(q)) {
         results.push({
           type: "Textbook",
@@ -8859,8 +9418,8 @@ function handleGlobalSearch(query) {
   // 3. Search Biology Chapters (Class 9)
   if (DATA.bioChapters) {
     DATA.bioChapters.forEach((ch, idx) => {
-      const matchName = ch.name.toLowerCase().includes(q);
-      const matchTopic = ch.topics && ch.topics.some(t => t.title.toLowerCase().includes(q));
+      const matchName = searchText(ch.name || ch.title).includes(q);
+      const matchTopic = ch.topics && ch.topics.some(t => searchText(typeof t === "string" ? t : t.title || t.name).includes(q));
       if (matchName || matchTopic || "biology".includes(q)) {
         results.push({
           type: "Chapter",
@@ -8893,8 +9452,8 @@ function handleGlobalSearch(query) {
   // 4. Search Chemistry Chapters (Class 9)
   if (DATA.chemChapters) {
     DATA.chemChapters.forEach((ch, idx) => {
-      const matchName = ch.name.toLowerCase().includes(q);
-      const matchTopic = ch.topics && ch.topics.some(t => t.title.toLowerCase().includes(q));
+      const matchName = searchText(ch.name || ch.title).includes(q);
+      const matchTopic = ch.topics && ch.topics.some(t => searchText(typeof t === "string" ? t : t.title || t.name).includes(q));
       if (matchName || matchTopic || "chemistry".includes(q)) {
         results.push({
           type: "Chapter",
@@ -8910,8 +9469,8 @@ function handleGlobalSearch(query) {
     // 4c. Search Class 10 Biology Units
   if (DATA.bio10Chapters) {
     DATA.bio10Chapters.forEach((ch, idx) => {
-      const matchName = ch.name.toLowerCase().includes(q);
-      const matchTopic = ch.topics && ch.topics.some(t => t.title.toLowerCase().includes(q));
+      const matchName = searchText(ch.name || ch.title).includes(q);
+      const matchTopic = ch.topics && ch.topics.some(t => searchText(typeof t === "string" ? t : t.title || t.name).includes(q));
       if (matchName || matchTopic || "biology".includes(q) || "class 10".includes(q)) {
         results.push({
           type: "Unit",
@@ -8927,7 +9486,7 @@ function handleGlobalSearch(query) {
   // 4c. Search English Units (Class 10)
   if (DATA.eng10Chapters) {
     DATA.eng10Chapters.forEach((ch, idx) => {
-      const matchName = (ch.title && ch.title.toLowerCase().includes(q)) || (ch.name && ch.name.toLowerCase().includes(q));
+      const matchName = (ch.title && searchText(ch.title || ch.name).includes(q)) || (ch.name && searchText(ch.name || ch.title).includes(q));
       const matchTheme = ch.theme && ch.theme.toLowerCase().includes(q);
       if (matchName || matchTheme || "english".includes(q)) {
         results.push({
@@ -8944,7 +9503,7 @@ function handleGlobalSearch(query) {
   // 4b. Search English Units (Class 9)
   if (DATA.engChapters) {
     DATA.engChapters.forEach((ch, idx) => {
-      const matchName = ch.title.toLowerCase().includes(q);
+      const matchName = searchText(ch.title || ch.name).includes(q);
       const matchTheme = ch.theme && ch.theme.toLowerCase().includes(q);
       if (matchName || matchTheme || "english".includes(q)) {
         results.push({
@@ -8962,7 +9521,7 @@ function handleGlobalSearch(query) {
   const urduChaps = getUrduChapterList();
   if (urduChaps && urduChaps.length > 0) {
     urduChaps.forEach((ch, idx) => {
-      const matchTitle = (ch.title && ch.title.toLowerCase().includes(q)) || (ch.titleEn && ch.titleEn.toLowerCase().includes(q)) || (ch.titlePs && ch.titlePs.toLowerCase().includes(q));
+      const matchTitle = (ch.title && searchText(ch.title || ch.name).includes(q)) || (ch.titleEn && ch.titleEn.toLowerCase().includes(q)) || (ch.titlePs && ch.titlePs.toLowerCase().includes(q));
       const matchAuthor = ch.author && ch.author.toLowerCase().includes(q);
       if (matchTitle || matchAuthor || "urdu".includes(q) || "اردو".includes(q) || "سبق".includes(q) || "نظم".includes(q)) {
         results.push({
@@ -8980,7 +9539,7 @@ function handleGlobalSearch(query) {
   const islChaps = (typeof DATA !== 'undefined' && DATA.islamyatChapters) || (typeof window !== 'undefined' && window.ISLAMYAT_DATA) || (typeof ISLAMYAT_DATA !== 'undefined' ? ISLAMYAT_DATA : []);
   if (islChaps && islChaps.length > 0) {
     islChaps.forEach((ch, idx) => {
-      const matchTitle = (ch.title && ch.title.toLowerCase().includes(q)) || (ch.titleEn && ch.titleEn.toLowerCase().includes(q)) || (ch.titlePs && ch.titlePs.toLowerCase().includes(q));
+      const matchTitle = (ch.title && searchText(ch.title || ch.name).includes(q)) || (ch.titleEn && ch.titleEn.toLowerCase().includes(q)) || (ch.titlePs && ch.titlePs.toLowerCase().includes(q));
       const matchAuthor = ch.author && ch.author.toLowerCase().includes(q);
       if (matchTitle || matchAuthor || "islamyat".includes(q) || "اسلامیات".includes(q) || "انفال".includes(q) || "حدیث".includes(q) || "قرآن".includes(q) || "طہارت".includes(q) || "علم".includes(q) || "ختم نبوت".includes(q)) {
         results.push({
@@ -8996,8 +9555,8 @@ function handleGlobalSearch(query) {
   // 5. Search Physics Chapters (Class 9)
   if (DATA.physChapters) {
     DATA.physChapters.forEach((ch, idx) => {
-      const matchName = ch.name.toLowerCase().includes(q);
-      const matchTopic = ch.topics && ch.topics.some(t => t.title.toLowerCase().includes(q));
+      const matchName = searchText(ch.name || ch.title).includes(q);
+      const matchTopic = ch.topics && ch.topics.some(t => searchText(typeof t === "string" ? t : t.title || t.name).includes(q));
       if (matchName || matchTopic || "physics".includes(q)) {
         results.push({
           type: "Chapter",
@@ -9010,20 +9569,80 @@ function handleGlobalSearch(query) {
     });
   }
 
+  // Class 10 Physics: search visually reviewed source records.
+  (DATA.phys10Chapters || []).forEach((ch, idx) => {
+    if (typeof physics10SourceSearchText !== 'function' || !physics10SourceSearchText(ch).toLowerCase().includes(q)) return;
+    results.push({type: "Chapter", badge: "⚛️ Class 10 Physics", title: `Chapter ${ch.num}: ${ch.name}`,
+      sub: "Textbook text, worked examples and aligned translations",
+      action: () => { clearGlobalSearch(); openSubject("cls10", "cls10-phy"); selectSubjectChapter('phys', idx, 'cls10'); }});
+  });
+
+  // Class 11 Physics: use the same source records as the active lesson.
+  if (typeof PHYS_11_DATA !== 'undefined') {
+    PHYS_11_DATA.forEach((ch, idx) => {
+      if (!physics11SourceSearchText(ch).toLowerCase().includes(q)) return;
+      results.push({ type: 'Chapter', badge: '⚛️ Class 11 Physics', title: `${ch.number}: ${ch.title}`,
+        sub: 'Source-reviewed pages and aligned translations · review in progress',
+        action: () => { clearGlobalSearch(); openSubject('cls11', 'cls11-phy'); selectSubjectChapter('phys', idx, 'cls11'); } });
+    });
+  }
+
+  // Class 11 registry books (Islamiat, HPE, Urdu, ...): search their source records.
+  Object.values(window.CLASS11_BOOKS || {}).forEach(book => {
+    (book.data || []).forEach((ch, idx) => {
+      if (!book.searchText(ch).toLowerCase().includes(q)) return;
+      results.push({ type: 'Chapter', badge: book.badge, title: `${ch.number}: ${ch.title}`,
+        sub: 'Source-reviewed pages and aligned translations · review in progress',
+        action: () => { clearGlobalSearch(); openSubject('cls11', book.subjectId); selectSubjectChapter(book.key, idx, 'cls11'); } });
+    });
+  });
+
+  // Class 11 English: search the same source records as the active lesson.
+  if (typeof ENG_11_DATA !== 'undefined') {
+    ENG_11_DATA.forEach((ch, idx) => {
+      if (!english11SourceSearchText(ch).toLowerCase().includes(q)) return;
+      results.push({ type: 'Chapter', badge: '📖 Class 11 English', title: `${ch.number}: ${ch.title}`,
+        sub: 'Source-reviewed pages and aligned translations · review in progress',
+        action: () => { clearGlobalSearch(); openSubject('cls11', 'cls11-eng'); selectSubjectChapter('eng', idx, 'cls11'); } });
+    });
+  }
+
+  // Class 11 Statistics: search the same source records as the active lesson.
+  if (typeof STAT_11_DATA !== 'undefined') {
+    STAT_11_DATA.forEach((ch, idx) => {
+      if (!statistics11SourceSearchText(ch).toLowerCase().includes(q)) return;
+      results.push({ type: 'Chapter', badge: '📊 Class 11 Statistics', title: `${ch.number}: ${ch.title}`,
+        sub: 'Source-reviewed pages and aligned translations · review in progress',
+        action: () => { clearGlobalSearch(); openSubject('cls11', 'cls11-stat'); selectSubjectChapter('stat', idx, 'cls11'); } });
+    });
+  }
+
+  // Class 11 Biology: search the same source records as the active lesson.
+  if (typeof BIO_11_DATA !== 'undefined') {
+    BIO_11_DATA.forEach((ch, idx) => {
+      if (!biology11SourceSearchText(ch).toLowerCase().includes(q)) return;
+      results.push({ type: 'Chapter', badge: '🧬 Class 11 Biology', title: `${ch.number}: ${ch.title}`,
+        sub: 'Source-reviewed pages and aligned translations · review in progress',
+        action: () => { clearGlobalSearch(); openSubject('cls11', 'cls11-bio'); selectSubjectChapter('bio', idx, 'cls11'); } });
+    });
+  }
+
   // 6. Search Class 12 Chapters
   if (DATA.chapters) {
     Object.keys(DATA.chapters).forEach(subjKey => {
       if (subjKey.startsWith("cls12-")) {
         const parts = subjKey.split("-");
         const subName = parts[1].toUpperCase();
-        DATA.chapters[subjKey].forEach(ch => {
-          if (ch.name.toLowerCase().includes(q) || "class 12".includes(q) || subName.toLowerCase().includes(q)) {
+        DATA.chapters[subjKey].forEach((ch, chapterIndex) => {
+          const chapterNumber = ch.num ?? ch.number ?? chapterIndex + 1;
+          const chapterName = ch.name || ch.title || "Untitled unit";
+          if (searchText(ch.name || ch.title).includes(q) || "class 12".includes(q) || subName.toLowerCase().includes(q)) {
             results.push({
               type: "Chapter",
               badge: "🏫 Class 12",
-              title: `${subName} · Ch ${ch.num}: ${ch.name}`,
-              sub: `${ch.topics} · Class 12 KPK Syllabus`,
-              action: () => { clearGlobalSearch(); openSubject("cls12", subjKey); openGenericChapterDetails("cls12", subjKey, subName, ch.num); }
+              title: `${subName} · Ch ${chapterNumber}: ${chapterName}`,
+              sub: `${Array.isArray(ch.topics) ? ch.topics.length + " topics" : ch.topics || "Textbook content"} · Class 12 KPK Syllabus`,
+              action: () => { clearGlobalSearch(); openSubject("cls12", subjKey); openGenericChapterDetails("cls12", subjKey, subName, chapterNumber); }
             });
           }
         });
@@ -9041,6 +9660,7 @@ function handleGlobalSearch(query) {
     return;
   }
 
+  window.spaceBookSearchActions = results.slice(0, 15).map(result => result.action);
   dropdown.innerHTML = `
     <div style="padding:0.4rem 0.6rem;font-size:0.75rem;font-weight:700;color:#94a3b8;border-bottom:1px solid #f1f5f9;display:flex;justify-content:space-between;">
       <span>MATCHING RESULTS (${results.length})</span>
@@ -9049,7 +9669,7 @@ function handleGlobalSearch(query) {
     ${results.slice(0, 15).map((r, i) => `
       <div class="search-result-item" style="padding:0.6rem 0.75rem;border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:0.75rem;transition:background 0.15s;"
            onmouseover="this.style.background='#f1f5f9'" onmouseout="this.style.background='transparent'"
-           onclick="(${r.action.toString()})()">
+           onclick="runGlobalSearchResult(${i})">
         <div>
           <div style="font-weight:600;font-size:0.9rem;color:#0f172a;">${r.title}</div>
           <div style="font-size:0.78rem;color:#64748b;">${r.sub}</div>
@@ -9059,7 +9679,13 @@ function handleGlobalSearch(query) {
   dropdown.style.display = "block";
 }
 
+function runGlobalSearchResult(index) {
+  const action = (window.spaceBookSearchActions || [])[index];
+  if (typeof action === "function") action();
+}
+
 function clearGlobalSearch() {
+  window.spaceBookSearchActions = [];
   const searchInput = $("globalHubSearch");
   const dropdown    = $("searchResultsDropdown");
   const clearBtn    = $("clearSearchBtn");
@@ -11295,7 +11921,9 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
 
   // 1. MATHEMATICS
   if (sid.includes("math")) {
-    const mathDataset = (sid === 'cls7-math' || classId === 'cls7')
+    const mathDataset = (sid === 'cls8-math' || classId === 'cls8')
+      ? ((typeof MATH_8_DATA !== 'undefined' && Array.isArray(MATH_8_DATA)) ? MATH_8_DATA : [])
+      : (sid === 'cls7-math' || classId === 'cls7')
       ? ((typeof MATH_7_DATA !== 'undefined' && Array.isArray(MATH_7_DATA)) ? MATH_7_DATA : [])
       : (sid === 'cls10-math' || classId === 'cls10')
       ? ((typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) ? MATH_10_DATA : ((typeof DATA !== 'undefined' && DATA.math10Chapters) ? DATA.math10Chapters : []))
@@ -11456,9 +12084,12 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
   // 2. ENGLISH
   else if (sid.includes("eng")) {
     const isCls10 = (classId === 'cls10' || sid === 'cls10-eng');
+    const isCls8 = (classId === 'cls8' || sid === 'cls8-eng');
     const isCls1 = (classId === 'cls1' || sid === 'cls1-eng');
     const engDataset = isCls10
       ? ((typeof ENGLISH_10_DATA !== 'undefined' && Array.isArray(ENGLISH_10_DATA)) ? ENGLISH_10_DATA : ((typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA)) ? ENGLISH_DATA : []))
+      : isCls8
+      ? ((typeof ENGLISH_8_DATA !== 'undefined' && Array.isArray(ENGLISH_8_DATA)) ? ENGLISH_8_DATA : [])
       : isCls1
       ? ((typeof ENGLISH_1_DATA !== 'undefined' && Array.isArray(ENGLISH_1_DATA)) ? ENGLISH_1_DATA : [])
       : ((typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA)) ? ENGLISH_DATA : []);
@@ -11976,7 +12607,8 @@ function getCurriculumQuestionsForCategory(classId, subjectId, catId) {
   }
   else if (sid.includes("isl") || sid.includes("nazira")) {
     const isNazira = (sid.includes("nazira") || sid === 'cls1-nazira');
-    const isCls10 = (classId === 'cls10' || sid === 'cls10-isl');
+    // Class 10 studies the Class 9 Islamiat (lazmi) book, so its test bank is the Class 9 one (ISLAMYAT_DATA below).
+    const isCls10 = false;
     const isCls1 = (classId === 'cls1' || sid === 'cls1-isl');
     const islDataset = isNazira
       ? ((typeof NAZIRA_1_DATA !== 'undefined' && Array.isArray(NAZIRA_1_DATA)) ? NAZIRA_1_DATA : ((typeof DATA !== 'undefined' && DATA.nazira1Chapters) ? DATA.nazira1Chapters : []))
@@ -13571,6 +14203,13 @@ const SUBJECT_THEMES = {
     pillColor: '#064e3b',
     accentColor: '#059669',
     tag: 'باب'
+  },
+  hg: {
+    gradient: 'linear-gradient(135deg, #78350f 0%, #451a03 100%)',
+    pillBg: '#fed7aa',
+    pillColor: '#431407',
+    accentColor: '#b45309',
+    tag: 'Unit'
   }
 };
 
@@ -14180,7 +14819,12 @@ function renderTextbookLessonBody(text) {
 }
 
 function renderMathTopicSubContent(sec, ch, subTab, topicIdx) {
+  if (state.selectedClass === 'cls12' && typeof renderMath12TopicContent === 'function') {
+    const content = renderMath12TopicContent(sec, ch, subTab);
+    if (content !== null) return content;
+  }
   if (subTab === 'english') {
+    if (sec.sourceBlocks) return renderMathSourceBlocks(sec.sourceBlocks) + (sec.unreviewedTheory ? '<p class="math-book-paragraph" style="padding:.7rem;background:#fffbeb;"><strong>Continuation awaiting source review</strong></p>' + renderTextbookLessonBody(sec.unreviewedTheory) : '');
     if (sec.construction && Array.isArray(sec.construction.steps)) {
       const construction = sec.construction;
       return `
@@ -14345,6 +14989,7 @@ function switchMathTopicSubTab(topicId, subTab, btn) {
   const topicIdx = ch.sections.findIndex(s => s.id === topicId);
   const sec = ch.sections[topicIdx] || ch.sections[0];
   target.innerHTML = renderMathTopicSubContent(sec, ch, subTab, topicIdx >= 0 ? topicIdx : 0);
+  if (state.selectedClass === 'cls12') typesetChapterMath(target);
 }
 
 function filterTopicExCategory(topicId, category, btn) {
@@ -14385,6 +15030,7 @@ function getMathChapterList(classId) {
     if (typeof DATA !== 'undefined' && DATA.math6Chapters) return DATA.math6Chapters;
   }
   if (cid === 'cls7' && typeof MATH_7_DATA !== 'undefined' && Array.isArray(MATH_7_DATA)) return MATH_7_DATA;
+  if (cid === 'cls8' && typeof MATH_8_DATA !== 'undefined' && Array.isArray(MATH_8_DATA)) return MATH_8_DATA;
   if (cid === 'cls10') {
     if (typeof MATH_10_DATA !== 'undefined' && Array.isArray(MATH_10_DATA)) return MATH_10_DATA;
     if (typeof DATA !== 'undefined' && DATA.math10Chapters) return DATA.math10Chapters;
@@ -14412,7 +15058,7 @@ function openMathView(classId, subj) {
   state.activeMathEx = state.activeMathEx || '1.1';
   state.selectedClass = classId;
   setActiveNav('subjects');
-  const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls1' ? 'Class 1' : (classId === 'cls2' ? 'Class 2' : (classId === 'cls3' ? 'Class 3' : (classId === 'cls10' ? 'Class 10' : 'Class 9')))) };
+  const cls = DATA.classes.find(c => c.id === classId) || { name: (classId === 'cls1' ? 'Class 1' : (classId === 'cls2' ? 'Class 2' : (classId === 'cls3' ? 'Class 3' : (classId === 'cls8' ? 'Class 8' : (classId === 'cls10' ? 'Class 10' : 'Class 9'))))) };
   const chList = getMathChapterList(classId);
   const pdfFile = (classId === 'cls1')
     ? 'file:///D:/SpaceBook/Books/1st/1st%20Maths/PDF/Math%20book%201%20KPTBB.pdf'
@@ -14426,6 +15072,8 @@ function openMathView(classId, subj) {
       ? 'file:///D:/SpaceBook/Books/6th/Math/pdf/Math%20Book%20for%206%20class%20KPTBB.pdf'
     : (classId === 'cls7')
       ? 'file:///D:/SpaceBook/Books/7th/7th%20MAths/PDF/Math%20Book%20for%207%20class%20KPTBB.pdf'
+    : (classId === 'cls8')
+      ? 'file:///D:/SpaceBook/Books/8th/8th%20MAths/PDF/Math%20Book%20for%208%20class%20KPTBB.pdf'
     : ((classId === 'cls10')
       ? 'file://DESKTOP-R2HQSAV/SpaceBook/10th Maths/PDF/10th Maths.pdf'
       : null);
@@ -14453,21 +15101,21 @@ function openMathView(classId, subj) {
     </button>`).join('');
 
   pageContent().innerHTML = `
-    <div class="math-unified-view">
+    <div class="math-unified-view" data-math-class="${sanitize(classId)}">
       <div class="math-ch-sidebar">
         <div class="math-ch-sidebar-header">
           <button onclick="goToSubjects('${classId}')" class="math-sidebar-back-btn" title="Back to Subjects">←</button>
           <div class="math-sidebar-title-wrap">
             <span class="math-sidebar-title">CHAPTERS</span>
-          <span class="math-sidebar-sub">${classId === 'cls12' || classId === 'cls7' ? `${chList.length} textbook units` : `${chList.length} Complete Solved Units`}</span>
+          <span class="math-sidebar-sub">${classId === 'cls12' || classId === 'cls7' || classId === 'cls11' ? `${chList.length} textbook units` : `${chList.length} Complete Solved Units`}</span>
           </div>
         </div>
         <div class="math-ch-list">${chapBtns}</div>
         <div class="math-sidebar-footer">
           ${classId === 'cls12'
             ? `<div class="math-pdf-btn" aria-label="Class 12 mathematics lessons use typeset equations"><span>∑</span> Interactive lessons with typeset math</div>`
-            : classId === 'cls9'
-              ? `<div class="math-pdf-btn" aria-label="Class 9 mathematics lessons use typeset equations"><span>∑</span> Interactive lessons with typeset math</div>`
+            : classId === 'cls9' || classId === 'cls11'
+              ? `<div class="math-pdf-btn" aria-label="Mathematics lessons use typeset equations"><span>∑</span> Interactive lessons with typeset math</div>`
               : `<a href="${pdfFile}" target="_blank" class="math-pdf-btn"><span>📥</span> Official Math Book PDF${classId === 'cls3' ? ' · Part 1 of 5' : ''}</a>`}
         </div>
       </div>
@@ -14490,13 +15138,14 @@ function selectMathChapter(index) {
 }
 
 function appendMathInlineText(fragment, text) {
+  text = String(text || '').replaceAll('\\(', '').replaceAll('\\)', '').replaceAll('\\[', '').replaceAll('\\]', '');
   const symbols = {
     times: "×", cdot: "·", pm: "±", div: "÷", leq: "≤", le: "≤", geq: "≥", ge: "≥",
-    neq: "≠", ne: "≠", in: "∈", notin: "∉", approx: "≈", implies: "⇒", iff: "⇔",
-    pi: "π", infty: "∞", int: "∫", sum: "∑", prod: "∏", angle: "∠", triangle: "△", cong: "≅", parallel: "∥",
-    perp: "⟂", ell: "ℓ", gcd: "gcd", circ: "°", to: "→", gets: "←"
+    neq: "≠", ne: "≠", in: "∈", notin: "∉", cup: "∪", cap: "∩", approx: "≈", simeq: "≃", Rightarrow: "⇒", implies: "⇒", iff: "⇔",
+    pi: "π", theta: "θ", alpha: "α", beta: "β", lambda: "λ", epsilon: "ε", varepsilon: "ε", delta: "δ", Delta: "Δ", infty: "∞", int: "∫", sum: "∑", prod: "∏", angle: "∠", triangle: "△", cong: "≅", parallel: "∥",
+    perp: "⟂", ell: "ℓ", gcd: "gcd", circ: "°", to: "→", gets: "←", cdots: "⋯", ldots: "…"
   };
-  const operators = new Set(["sin", "cos", "tan", "sec", "csc", "cot", "arcsin", "arccos", "arctan", "ln", "log", "lim", "max", "min", "exp"]);
+  const operators = new Set(["sin", "cos", "tan", "sec", "csc", "cot", "sinh", "cosh", "tanh", "coth", "arcsin", "arccos", "arctan", "ln", "log", "lim", "max", "min", "exp"]);
   const groups = (value, index, open, close) => {
     if (value[index] !== open) return null;
     let depth = 0;
@@ -14546,6 +15195,23 @@ function appendMathInlineText(fragment, text) {
       const command = text.slice(cursor + 1, nameEnd);
       let argStart = nameEnd;
       while (/\s/.test(text[argStart] || "")) argStart++;
+      if (command === "binom") {
+        const top = argument(text, argStart);
+        const bottom = top && argument(text, top.end);
+        if (top && bottom) {
+          flush();
+          const coefficient = document.createElement("span");
+          coefficient.className = "math-binomial";
+          for (const value of [top.value, bottom.value]) {
+            const row = document.createElement("span");
+            appendMathInlineText(row, value);
+            coefficient.appendChild(row);
+          }
+          fragment.appendChild(coefficient);
+          cursor = bottom.end;
+          continue;
+        }
+      }
       if (command === "frac") {
         const numerator = argument(text, argStart);
         const denominator = numerator && argument(text, numerator.end);
@@ -14591,6 +15257,25 @@ function appendMathInlineText(fragment, text) {
           root.append(sign, radicandNode);
           fragment.appendChild(root);
           cursor = radicand.end;
+          continue;
+        }
+      }
+      if (command === "vec" || command === "overrightarrow") {
+        const contents = argument(text, argStart);
+        if (contents) {
+          flush();
+          const vector = document.createElement("span");
+          vector.style.cssText = "display:inline-flex;flex-direction:column;align-items:stretch;vertical-align:middle;line-height:1;";
+          const arrow = document.createElement("span");
+          arrow.textContent = "→";
+          arrow.style.cssText = "text-align:center;font-size:.85em;line-height:.6;";
+          arrow.setAttribute("aria-hidden", "true");
+          const label = document.createElement("span");
+          appendMathInlineText(label, contents.value);
+          vector.append(arrow, label);
+          vector.setAttribute("aria-label", "vector " + contents.value);
+          fragment.appendChild(vector);
+          cursor = contents.end;
           continue;
         }
       }
@@ -14687,7 +15372,10 @@ function typesetMathTextNode(node) {
   // Word transcriptions commonly flatten superscripts (for example x2 for
   // x²). Restore the textbook exponent form when a letter or closing
   // parenthesis is immediately followed by digits in an expression.
-  const text = node.nodeValue.replace(/([A-Za-z\)])(\d{1,3})(?=\s*(?:[+\-*/=),.;\]}]|$))/g, "$1^{$2}");
+  const raw = node.nodeValue;
+  // Explicitly delimited equations already encode their exponents. Applying
+  // legacy OCR repairs to them would turn log 10 or log_b 1 into powers.
+  const text = raw.includes('\\(') || raw.includes('\\[') ? raw : raw.replace(/([A-Za-z\)])(\d{1,3})(?=\s*(?:[+\-*/=),.;\]}]|$))/g, "$1^{$2}");
   const fragment = document.createDocumentFragment();
   let cursor = 0;
   let found = false;
@@ -14728,7 +15416,7 @@ function typesetMathTextNode(node) {
   if (!found) {
     const inline = document.createDocumentFragment();
     appendMathInlineText(inline, text);
-    if (inline.childNodes.length === 1 && inline.firstChild.nodeType === Node.TEXT_NODE) return;
+    if (inline.childNodes.length === 1 && inline.firstChild.nodeType === Node.TEXT_NODE && inline.firstChild.nodeValue === node.nodeValue) return;
     node.parentNode.replaceChild(inline, node);
     return;
   }
@@ -14747,7 +15435,7 @@ function typesetChapterMath(container) {
       acceptNode(node) {
         const parent = node.parentElement;
         if (!parent || parent.closest(".math-proper-matrix,script,style,textarea")) return NodeFilter.FILTER_REJECT;
-        return node.nodeValue.includes("[[") || /[\^_$]/.test(node.nodeValue) || /\\[A-Za-z]+/.test(node.nodeValue) || /[A-Za-z\)]\d{1,3}(?=\s*(?:[+\-*/=),.;\]}]|$))/.test(node.nodeValue)
+        return node.nodeValue.includes("[[") || node.nodeValue.includes('\\(') || node.nodeValue.includes('\\[') || /[\^_$]/.test(node.nodeValue) || /\\[A-Za-z]+/.test(node.nodeValue) || /[A-Za-z\)]\d{1,3}(?=\s*(?:[+\-*/=),.;\]}]|$))/.test(node.nodeValue)
           ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
       }
     });
@@ -14772,6 +15460,737 @@ function renderMathDiagram(item, chapterNumber) {
   const prompt = String(item.problem || item.question || item.q || item.statement || item.theory || "");
   const detail = [item.title, prompt, item.given, item.method, item.solution, item.theory, (item.steps || []).join(" ")].join(" ");
   const textbookDiagram = item.diagram;
+  if (textbookDiagram && textbookDiagram.type === 'diagram-group') {
+    return (textbookDiagram.items || []).map(diagram => renderMathDiagram({diagram}, chapterNumber)).join('');
+  }
+  if (textbookDiagram && textbookDiagram.type === 'circle-construction') {
+    const g=textbookDiagram, cx=220,cy=150,r=95;
+    const label=(x,y,t)=>`<text x="${x}" y="${y}" text-anchor="middle" font-size="13">${sanitize(t)}</text>`;
+    let svg=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="#f0f9ff" stroke="#0369a1" stroke-width="2"/>`;
+    if(g.mode==='semicircles') {
+      svg+=`<path d="M125 150 A95 95 0 0 1 315 150Z" fill="#bbf7d0" stroke="#0369a1"/><line x1="125" y1="150" x2="315" y2="150" stroke="#0f172a"/>`;
+      svg+=label(110,155,'A')+label(330,155,'B')+label(220,110,'Semicircle')+label(220,200,'Semicircle');
+    } else if(g.mode==='radii') {
+      [[315,150,'A'],[220,55,'B'],[144,207,'C']].forEach(([x,y,name])=>{svg+=`<line x1="220" y1="150" x2="${x}" y2="${y}" stroke="#0369a1" stroke-width="2"/>`+label(x+(x-220)*.15,y+(y-150)*.15+4,name);});
+    } else {
+      const h=55, half=Math.sqrt(r*r-h*h);
+      [cy-h,cy+h].forEach((y,i)=>{
+        const x1=cx-half,x2=cx+half;
+        if(g.mode==='segments') svg+=`<path d="M${x1} ${y} A95 95 0 0 ${i?0:1} ${x2} ${y}Z" fill="${i?'#fde68a':'#bbf7d0'}"/>`;
+        svg+=`<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" stroke="#0369a1" stroke-width="2"/>`+label(x1-12,y+4,i?'C':'A')+label(x2+12,y+4,i?'D':'B');
+      });
+    }
+    svg+='<circle cx="220" cy="150" r="3" fill="#0f172a"/>'+label(232,168,'O');
+    if(g.radius) svg+=label(220,283,'Radius = '+g.radius+' cm');
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 440 310" role="img" aria-label="${sanitize(g.title)}"><title>${sanitize(g.title)}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'angle-network') {
+    const g=textbookDiagram; let svg='';
+    g.edges.forEach(([a,b])=>{const p=g.points[a],q=g.points[b];svg+=`<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="#334155" stroke-width="3"/>`;});
+    (g.angleMarks || []).forEach(([a,vertex,b])=>{
+      const p=g.points[a],o=g.points[vertex],q=g.points[b],r=36;
+      const start=Math.atan2(p[1]-o[1],p[0]-o[0]),end=Math.atan2(q[1]-o[1],q[0]-o[0]);
+      const delta=((end-start+3*Math.PI)%(2*Math.PI))-Math.PI;
+      const x1=o[0]+r*Math.cos(start),y1=o[1]+r*Math.sin(start),x2=o[0]+r*Math.cos(end),y2=o[1]+r*Math.sin(end);
+      svg+=`<path d="M${x1} ${y1} A${r} ${r} 0 0 ${delta>0?1:0} ${x2} ${y2}" fill="none" stroke="#0369a1" stroke-width="3"/>`;
+    });
+    (g.ticks || []).forEach(([a,b])=>{const p=g.points[a],q=g.points[b],dx=q[0]-p[0],dy=q[1]-p[1],len=Math.hypot(dx,dy),x=(p[0]+q[0])/2,y=(p[1]+q[1])/2;svg+=`<line x1="${x-12*dy/len}" y1="${y+12*dx/len}" x2="${x+12*dy/len}" y2="${y-12*dx/len}" stroke="#0f172a" stroke-width="4"/>`;});
+    (g.rightMarks || []).forEach(points=>{svg+=`<polyline points="${points.map(p=>p.join(',')).join(' ')}" fill="none" stroke="#0f172a" stroke-width="3"/>`;});
+    g.labels.forEach(([x,y,label])=>{svg+=`<text x="${x}" y="${y}" text-anchor="middle" font-size="24" fill="#0f172a" paint-order="stroke" stroke="white" stroke-width="3">${sanitize(label)}</text>`;});
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 900 1000" role="img" aria-label="${sanitize(g.title)}"><title>${sanitize(g.title)}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'rotation-sequence') {
+    const flower=textbookDiagram.shape==='flower';
+    const shape=flower
+      ? [0,90,180,270].map(a=>`<ellipse cx="0" cy="-28" rx="10" ry="24" transform="rotate(${a})" fill="#f9a8d4" stroke="#be185d"/>`).join('')
+      : `<polygon points="${Array.from({length:6},(_,i)=>[52*Math.cos(i*Math.PI/3),52*Math.sin(i*Math.PI/3)].join(',')).join(' ')}" fill="#d9f99d" stroke="#3f6212" stroke-width="2"/><circle cy="-34" r="4" fill="#db2777"/><circle cy="34" r="4" fill="#db2777"/>`;
+    const svg=[0,90,180,270,360].map((angle,i)=>{
+      const match=angle>0 && (flower || angle%180===0);
+      return `<g transform="translate(${75+145*i},100)"><text y="-70" text-anchor="middle" font-size="16">${angle}°</text><g transform="rotate(${angle})">${shape}</g><circle r="2" fill="#334155"/><text y="78" text-anchor="middle" font-size="13">${angle===0?'Start':match?'Matches start':'Does not match'}</text></g>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title)}</figcaption><svg viewBox="0 0 750 200" role="img" aria-label="${sanitize(textbookDiagram.title)}"><title>${sanitize(textbookDiagram.title)}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-labelled-circle') {
+    const g=textbookDiagram,cx=210,cy=150,r=100;
+    const point=name=>name===g.centre?[cx,cy]:[cx+r*Math.cos(g.points[name]*Math.PI/180),cy+r*Math.sin(g.points[name]*Math.PI/180)];
+    let svg=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="#f8fafc" stroke="#334155" stroke-width="2"/>`;
+    if(g.segment) {
+      const p=point(g.segment[0]),q=point(g.segment[1]);
+      svg+=`<path d="M${p[0]} ${p[1]} A${r} ${r} 0 0 1 ${q[0]} ${q[1]} Z" fill="#6ee7b7" stroke="#059669" stroke-width="2"/>`;
+    }
+    (g.lines || []).forEach(([a,b])=>{const p=point(a),q=point(b);svg+=`<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="#0369a1" stroke-width="2"/>`;});
+    Object.keys(g.points).forEach(name=>{const p=point(name),x=cx+(p[0]-cx)*1.15,y=cy+(p[1]-cy)*1.15;svg+=`<circle cx="${p[0]}" cy="${p[1]}" r="2.5" fill="#334155"/><text x="${x}" y="${y+5}" font-size="16" text-anchor="middle">${sanitize((g.hiddenLabels || []).includes(name) ? "" : name)}</text>`;});
+    svg+=`<circle cx="${cx}" cy="${cy}" r="3" fill="#0f172a"/><text x="${cx+12}" y="${cy+18}" font-size="16">${sanitize(g.centre)}</text>`;
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 420 300" role="img" aria-label="${sanitize(g.title)}"><title>${sanitize(g.title)}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'annotated-angle-figure') {
+    const g=textbookDiagram;
+    let svg=`<polygon points="${g.points.map(p=>p.join(',')).join(' ')}" fill="#f0f9ff" stroke="#334155" stroke-width="2"/>`;
+    (g.extensions || []).forEach(([x1,y1,x2,y2])=>{svg+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#334155" stroke-width="2"/>`;});
+    (g.arcs || []).forEach(a=>{
+      const [cx,cy,r,start,end]=a, x1=cx+r*Math.cos(start*Math.PI/180),y1=cy+r*Math.sin(start*Math.PI/180),x2=cx+r*Math.cos(end*Math.PI/180),y2=cy+r*Math.sin(end*Math.PI/180);
+      svg+=`<path d="M${x1} ${y1} A${r} ${r} 0 ${end-start>180?1:0} 1 ${x2} ${y2}" fill="none" stroke="#0284c7" stroke-width="2"/>`;
+    });
+    (g.labels || []).forEach(([x,y,label])=>{svg+=`<text x="${x}" y="${y}" text-anchor="middle" font-size="16" fill="#0f172a">${sanitize(label)}</text>`;});
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 440 310" role="img" aria-label="${sanitize(g.title)}"><title>${sanitize(g.title)}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'exterior-angle-proof') {
+    const triangle=textbookDiagram.mode==='triangle';
+    const points=triangle?[[155,55],[80,215],[310,215]]:Array.from({length:5},(_,i)=>[220+95*Math.cos(-Math.PI/2+i*2*Math.PI/5),155+95*Math.sin(-Math.PI/2+i*2*Math.PI/5)]);
+    let svg=`<polygon points="${points.map(p=>p.join(',')).join(' ')}" fill="#cffafe" stroke="#155e75" stroke-width="2"/>`;
+    const label=(x,y,t)=>`<text x="${x}" y="${y}" text-anchor="middle" font-size="16">${sanitize(t)}</text>`;
+    points.forEach((p,i)=>{
+      const previous=points[(i+points.length-1)%points.length],dx=p[0]-previous[0],dy=p[1]-previous[1],len=Math.hypot(dx,dy);
+      if(!triangle || i===2) {
+        svg+=`<line x1="${p[0]}" y1="${p[1]}" x2="${p[0]+60*dx/len}" y2="${p[1]+60*dy/len}" stroke="#be123c" stroke-width="2"/>`;
+      }
+      if(!triangle) svg+=label(220+(p[0]-220)*.73,155+(p[1]-155)*.73+5,'abcde'[i]);
+    });
+    if(triangle) svg+=label(155,40,'P')+label(67,232,'Q')+label(308,236,'R')+label(371,236,'S')+label(220,282,'∠PRS = ∠QPR + ∠PQR');
+    else svg+=label(220,292,'Exterior angle at a = 180° − a');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title)}</figcaption><svg viewBox="0 0 440 310" role="img" aria-label="${sanitize(textbookDiagram.title)}"><title>${sanitize(textbookDiagram.title)}; red lines extend the sides</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'polygon-gallery') {
+    return `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px">${(textbookDiagram.panels || []).map(panel => {
+      const xs=panel.points.map(p=>p[0]),ys=panel.points.map(p=>p[1]);
+      const minX=Math.min(...xs),minY=Math.min(...ys),width=Math.max(...xs)-minX,height=Math.max(...ys)-minY;
+      const scale=Math.min(180/Math.max(width,1),150/Math.max(height,1));
+      const points=panel.points.map(([x,y])=>[120+(x-minX-width/2)*scale,105+(y-minY-height/2)*scale]);
+      return `<figure class="math-diagram" style="margin:0"><figcaption>${sanitize(panel.title)}</figcaption><svg viewBox="0 0 240 220" role="img" aria-label="${sanitize(panel.title)}"><title>${sanitize(panel.title)}</title><polygon points="${points.map(p=>p.join(',')).join(' ')}" fill="${sanitize(panel.fill || '#bbf7d0')}" stroke="#334155" stroke-width="2"/><text x="120" y="210" text-anchor="middle" font-size="15">${points.length} sides</text></svg></figure>`;
+    }).join('')}</div>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'symmetry-panels') {
+    return (textbookDiagram.panels || []).map(panel => {
+      let svg=panel.path ? `<path d="${sanitize(panel.path)}" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>` : panel.shape === 'semicircle'
+        ? '<path d="M50 170 A100 100 0 0 1 250 170 Z" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>'
+        : `<polygon points="${panel.points.map(p=>p.join(',')).join(' ')}" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>`;
+      (panel.axes || []).forEach(axis=>{svg+=`<line x1="${axis[0]}" y1="${axis[1]}" x2="${axis[2]}" y2="${axis[3]}" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>`;});
+      const axisCaption=panel.proposed ? 'Is the dotted line a symmetry line?' : `${panel.axes.length} symmetry ${panel.axes.length===1?'line':'lines'}`;
+      return `<figure class="math-diagram"><figcaption>${sanitize(panel.title)} — ${axisCaption}</figcaption><svg viewBox="0 0 300 240" role="img" aria-label="${sanitize(panel.title)}: ${axisCaption}"><title>${sanitize(panel.title)}: ${panel.proposed?'test the proposed dotted line':'dashed red lines mark symmetry axes'}</title>${svg}</svg></figure>`;
+    }).join('');
+  }
+  if (textbookDiagram && textbookDiagram.type === 'polygon-triangulations') {
+    return (textbookDiagram.sides || []).map(n => {
+      const points = Array.from({length:n}, (_,i) => [150+100*Math.cos(-Math.PI/2+i*2*Math.PI/n),140+100*Math.sin(-Math.PI/2+i*2*Math.PI/n)]);
+      let content = `<polygon points="${points.map(p=>p.join(',')).join(' ')}" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>`;
+      for(let i=2;i<n-1;i++) content += `<line x1="${points[0][0]}" y1="${points[0][1]}" x2="${points[i][0]}" y2="${points[i][1]}" stroke="#0369a1" stroke-dasharray="5 3"/>`;
+      return `<figure class="math-diagram"><figcaption>${n} sides: ${n-2} triangles × 180° = ${(n-2)*180}°</figcaption><svg viewBox="0 0 300 280" role="img" aria-label="${n}-sided polygon divided into ${n-2} triangles">${content}</svg></figure>`;
+    }).join('');
+  }
+  if (textbookDiagram && textbookDiagram.type === 'construction-triangle') {
+    const g = textbookDiagram, points = g.points;
+    const xs = points.map(p => p[0]), ys = points.map(p => p[1]);
+    const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
+    const scale = Math.min(330/(maxX-minX || 1), 190/(maxY-minY || 1));
+    const px = x => 240 + (x-(minX+maxX)/2)*scale, py = y => 155 - (y-(minY+maxY)/2)*scale;
+    const mapped = points.map(p => [px(p[0]),py(p[1])]);
+    const cx = mapped.reduce((a,p)=>a+p[0],0)/3, cy = mapped.reduce((a,p)=>a+p[1],0)/3;
+    let content = `<polygon points="${mapped.map(p=>p.join(',')).join(' ')}" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>`;
+    (g.compassArcs || []).forEach(arc => {
+      const centre=points[arc.centre],target=points[arc.through],radius=Math.hypot(target[0]-centre[0],target[1]-centre[1]);
+      const angle=Math.atan2(target[1]-centre[1],target[0]-centre[0]),spread=.14;
+      const a=[px(centre[0]+radius*Math.cos(angle-spread)),py(centre[1]+radius*Math.sin(angle-spread))];
+      const b=[px(centre[0]+radius*Math.cos(angle+spread)),py(centre[1]+radius*Math.sin(angle+spread))];
+      content+=`<path d="M${a[0]} ${a[1]} A${radius*scale} ${radius*scale} 0 0 0 ${b[0]} ${b[1]}" fill="none" stroke="#a21caf" stroke-width="2" stroke-dasharray="4 3"/>`;
+      const end=[px(centre[0]+1.1*(target[0]-centre[0])),py(centre[1]+1.1*(target[1]-centre[1]))];
+      content+=`<line x1="${px(centre[0])}" y1="${py(centre[1])}" x2="${end[0]}" y2="${end[1]}" stroke="#a21caf" stroke-width="1" stroke-dasharray="4 3"/>`;
+    });
+    mapped.forEach((p,i) => {
+      const length = Math.hypot(p[0]-cx,p[1]-cy) || 1;
+      content += `<text x="${p[0]+18*(p[0]-cx)/length}" y="${p[1]+18*(p[1]-cy)/length+4}" text-anchor="middle" font-size="14">${sanitize(g.names[i])}</text>`;
+      const next = mapped[(i+1)%3], mx=(p[0]+next[0])/2, my=(p[1]+next[1])/2;
+      const d=Math.hypot(mx-cx,my-cy)||1;
+      if (g.sideLabels[i]) content += `<text x="${mx+22*(mx-cx)/d}" y="${my+22*(my-cy)/d+4}" text-anchor="middle" font-size="12">${sanitize(g.sideLabels[i])}</text>`;
+      if (g.angleLabels && g.angleLabels[i]) content += `<text x="${p[0]+.23*(cx-p[0])}" y="${p[1]+.23*(cy-p[1])+4}" text-anchor="middle" font-size="11">${sanitize(g.angleLabels[i])}</text>`;
+    });
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 480 320" role="img" aria-label="${sanitize(g.title)}"><title>${sanitize(g.title)}</title>${content}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'coordinate-panels') {
+    return (textbookDiagram.panels || []).map(panel => {
+      const shapes = panel.shapes || [];
+      const points = shapes.flatMap(shape => shape.points || []);
+      const extent = Math.max(6, ...points.flatMap(point => point.map(value => Math.ceil(Math.abs(Number(value))) + 1)));
+      const scale = 400 / (2 * extent), px = x => 250 + x * scale, py = y => 250 - y * scale;
+      const safe = value => sanitize(String(value));
+      let svg = '';
+      for (let n = -extent; n <= extent; n++) {
+        svg += `<path d="M${px(n)} 50V450M50 ${py(n)}H450" stroke="${n === 0 ? '#334155' : '#dbe3ed'}" stroke-width="${n === 0 ? 1.8 : .7}"/>`;
+        if (n !== 0 && (extent <= 12 || n % 2 === 0)) svg += `<text x="${px(n)}" y="466" text-anchor="middle" font-size="10">${n}</text><text x="40" y="${py(n)+3}" text-anchor="end" font-size="10">${n}</text>`;
+      }
+      shapes.forEach((shape, index) => {
+        const color = index ? '#dc2626' : '#2563eb';
+        if (shape.kind !== "points") svg += `<polygon points="${shape.points.map(point => `${px(point[0])},${py(point[1])}`).join(' ')}" fill="${color}" fill-opacity=".08" stroke="${color}" stroke-width="2" ${index ? 'stroke-dasharray="6 3"' : ''}/>`;
+        shape.points.forEach((point, pointIndex) => {
+          const name=shape.labels && shape.labels[pointIndex];
+          svg += `<circle cx="${px(point[0])}" cy="${py(point[1])}" r="3" fill="${color}"><title>${safe(name || shape.name)}: (${point[0]}, ${point[1]})</title></circle>`;
+          if(name) svg+=`<text x="${px(point[0])+7}" y="${py(point[1])+(index?17:-8)}" font-size="12" fill="${color}" paint-order="stroke" stroke="white" stroke-width="3">${safe(name)}</text>`;
+        });
+        svg += `<text x="${60 + index*210}" y="28" fill="${color}" font-size="13">${safe(shape.name)}</text>`;
+      });
+      svg += '<text x="480" y="245" font-size="13">x</text><text x="258" y="43" font-size="13">y</text><text x="257" y="265" font-size="11">O</text>';
+      return `<figure class="math-diagram"><figcaption>${safe(panel.title)}</figcaption><svg viewBox="0 0 500 490" role="img" aria-label="${safe(panel.title)}"><title>${safe(panel.title)} — blue solid original, red dashed image</title>${svg}</svg></figure>`;
+    }).join('');
+  }
+  if (textbookDiagram && textbookDiagram.type === 'circle-parts') {
+    const title = sanitize(textbookDiagram.title);
+    return `<figure class="math-diagram"><figcaption>${title}</figcaption><svg viewBox="0 0 640 330" role="img" aria-label="${title}"><title>${title}: centre O, diameter AB, radius OC, chord DE and shaded minor segment</title><circle cx="170" cy="160" r="110" fill="#eff6ff" stroke="#155e75" stroke-width="2"/><path d="M82 94 A110 110 0 0 1 258 94 Z" fill="#fde68a"/><path d="M82 94 A110 110 0 0 1 258 94" fill="none" stroke="#d97706" stroke-width="4"/><path d="M60 160H280 M170 160V270 M82 94H258" fill="none" stroke="#155e75" stroke-width="2"/><circle cx="170" cy="160" r="4" fill="#0f172a"/><g font-size="15" fill="#0f172a"><text x="43" y="165">A</text><text x="286" y="165">B</text><text x="176" y="180">O</text><text x="164" y="289">C</text><text x="65" y="91">D</text><text x="266" y="91">E</text><text x="145" y="72">minor</text><text x="136" y="88">segment</text></g><g font-size="14" fill="#334155"><text x="325" y="65">O: centre</text><text x="325" y="96">OC: radius</text><text x="325" y="127">AB: diameter (also a chord)</text><text x="325" y="158">DE: non-diameter chord</text><text x="325" y="189">Orange curve: minor arc DE</text><text x="325" y="220">Long arc through C: major arc DCE</text><text x="325" y="251">Lower half: semicircle ACB</text><text x="325" y="282">Yellow region: minor segment</text></g></svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'labelled-polygon') {
+    const g = textbookDiagram, points = g.points;
+    const cx = points.reduce((sum,p)=>sum+p[0],0)/points.length;
+    const cy = points.reduce((sum,p)=>sum+p[1],0)/points.length;
+    let svg = `<polygon points="${points.map(p=>p.join(',')).join(' ')}" fill="#cffafe" stroke="#155e75" stroke-width="2"/>`;
+    points.forEach((p,i)=>{
+      const dx=p[0]-cx,dy=p[1]-cy,len=Math.hypot(dx,dy)||1;
+      svg += `<text x="${p[0]+17*dx/len}" y="${p[1]+17*dy/len+4}" text-anchor="middle" font-size="15">${sanitize(g.names[i])}</text>`;
+      if(g.angles && g.angles[i]) svg += `<text x="${p[0]-32*dx/len}" y="${p[1]-32*dy/len+4}" text-anchor="middle" font-size="13">${sanitize(g.angles[i])}</text>`;
+    });
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 420 300" role="img" aria-label="${sanitize(g.title)}"><title>${sanitize(g.title)}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'colour-symmetry-grid') {
+    const g = textbookDiagram, palette = {G:'#059669',Y:'#fde047',R:'#f43f5e',C:'#06b6d4',B:'#4338ca','':'#ffffff'};
+    let svg = '';
+    g.rows.forEach((row,r) => row.forEach((value,c) => {
+      svg += `<rect x="${40+c*40}" y="${35+r*40}" width="40" height="40" fill="${palette[value] || '#fff'}" stroke="#334155" stroke-width="2"><title>Row ${r+1}, column ${c+1}: ${({G:'green',Y:'yellow',R:'red',C:'cyan',B:'blue'})[value] || 'blank'}</title></rect>`;
+    }));
+    svg += '<path d="M160 15V295 M20 155H300" fill="none" stroke="#9f1239" stroke-width="3" stroke-dasharray="7 5"/>';
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 320 310" role="img" aria-label="${sanitize(g.title)}"><title>${sanitize(g.title)}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'number-spinner') {
+    const labels = textbookDiagram.labels, count = labels.length, cx = 150, cy = 145, r = 108;
+    let svg = '';
+    labels.forEach((label, i) => {
+      const a = -Math.PI / 2 + i * 2 * Math.PI / count, b = a + 2 * Math.PI / count;
+      const mid = (a + b) / 2;
+      svg += `<path d="M${cx} ${cy}L${cx+r*Math.cos(a)} ${cy+r*Math.sin(a)}A${r} ${r} 0 0 1 ${cx+r*Math.cos(b)} ${cy+r*Math.sin(b)}Z" fill="${i % 2 ? '#fbcfe8' : '#f9a8d4'}" stroke="#334155"/><text x="${cx+78*Math.cos(mid)}" y="${cy+78*Math.sin(mid)+6}" text-anchor="middle" font-size="20">${sanitize(String(label))}</text>`;
+    });
+    svg += `<path d="M150 145 L191 110 L184 126 M191 110 L173 116" fill="none" stroke="#0f172a" stroke-width="3"/><circle cx="150" cy="145" r="5" fill="#0f172a"/>`;
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title)}</figcaption><svg viewBox="0 0 300 285" role="img" aria-label="${sanitize(textbookDiagram.title)}"><title>Eight equal sectors, clockwise from the top: ${labels.join(', ')}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'pie-sectors') {
+    const g=textbookDiagram, total=g.values.reduce((a,b)=>a+b,0), colors=['#38bdf8','#fbbf24','#a78bfa','#34d399','#fb7185','#fb923c'];
+    let start=-Math.PI/2, svg='';
+    g.values.forEach((value,i)=>{
+      const sweep=value/total*2*Math.PI,end=start+sweep;
+      const x1=150+110*Math.cos(start),y1=150+110*Math.sin(start),x2=150+110*Math.cos(end),y2=150+110*Math.sin(end);
+      svg+=`<path d="M150 150 L${x1} ${y1} A110 110 0 ${sweep>Math.PI?1:0} 1 ${x2} ${y2} Z" fill="${colors[i%colors.length]}" stroke="#fff" stroke-width="2"><title>${sanitize(g.labels[i])}: ${value} (${(value/total*100).toFixed(2)}%)</title></path>`;
+      const angle=value/total*360;
+      svg+=`<rect x="295" y="${55+i*34}" width="12" height="12" fill="${colors[i%colors.length]}"/><text x="315" y="${66+i*34}" font-size="12">${sanitize(g.labels[i])}: ${value} (${angle.toFixed(2)}°)</text>`;
+      start=end;
+    });
+    svg+=`<text x="150" y="287" text-anchor="middle" font-size="12">Total: ${total}</text>`;
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 650 310" role="img" aria-label="${sanitize(g.title)}"><title>${sanitize(g.title)}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'horizontal-grouped-bars') {
+    const g = textbookDiagram, left = 100, right = 550, top = 60;
+    const rowHeight = 62, bottom = top + rowHeight * g.labels.length;
+    const colors = ['#db2777', '#0891b2', '#65a30d'];
+    const px = value => left + (right - left) * value / g.xMax;
+    let svg = '';
+    for (let value = 0; value <= g.xMax; value += g.step || 5) {
+      svg += `<line x1="${px(value)}" y1="${top}" x2="${px(value)}" y2="${bottom}" stroke="#cbd5e1"/><text x="${px(value)}" y="${bottom + 19}" text-anchor="middle" font-size="12">${value}</text>`;
+    }
+    g.labels.forEach((label, i) => {
+      const centre = top + rowHeight * (i + .5), barHeight = Math.min(20, 44 / g.series.length);
+      svg += `<text x="${left - 12}" y="${centre + 4}" text-anchor="end" font-size="13">${sanitize(label)}</text>`;
+      g.series.forEach((series, j) => {
+        const value = series.values[i], y = centre - g.series.length * barHeight / 2 + j * barHeight;
+        svg += `<rect x="${left}" y="${y}" width="${px(value) - left}" height="${barHeight - 2}" fill="${colors[j % colors.length]}"><title>${sanitize(label)} — ${sanitize(series.name)}: ${value}</title></rect><text x="${px(value) + 5}" y="${y + barHeight - 6}" font-size="11">${value}</text>`;
+      });
+    });
+    g.series.forEach((series, j) => {
+      svg += `<rect x="${left + j * 150}" y="22" width="12" height="12" fill="${colors[j % colors.length]}"/><text x="${left + 18 + j * 150}" y="33" font-size="12">${sanitize(series.name)}</text>`;
+    });
+    svg += `<path d="M${left} ${top}V${bottom}H${right}" fill="none" stroke="#334155" stroke-width="2"/><text x="${(left + right) / 2}" y="${bottom + 44}" text-anchor="middle" font-size="13">${sanitize(g.xLabel)}</text>`;
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 590 ${bottom + 60}" role="img" aria-label="${sanitize(g.title)}"><title>${sanitize(g.title)}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && ['grouped-bars','category-line'].includes(textbookDiagram.type)) {
+    const g=textbookDiagram, left=65, bottom=285, top=60, width=480;
+    const max=g.yMax, step=g.step || 5, colors=['#db2777','#0891b2','#65a30d'];
+    const py=value=>bottom-(bottom-top)*value/max;
+    let svg='';
+    for(let value=0;value<=max;value+=step) svg+=`<line x1="${left}" y1="${py(value)}" x2="545" y2="${py(value)}" stroke="#cbd5e1"/><text x="55" y="${py(value)+4}" text-anchor="end" font-size="11">${value}</text>`;
+    svg+=`<path d="M${left} ${top}V${bottom}H545" fill="none" stroke="#334155" stroke-width="2"/>`;
+    const slot=width/g.labels.length, bw=Math.min(25,slot*.7/g.series.length);
+    g.labels.forEach((name,i)=>{
+      const centre=left+slot*(i+.5);
+      svg+=`<text x="${centre}" y="306" text-anchor="middle" font-size="11">${sanitize(name)}</text>`;
+      g.series.forEach((series,j)=>{
+        const value=series.values[i],x=centre-g.series.length*bw/2+j*bw;
+        if(g.type==='category-line') {
+          if(i>0) svg+=`<line x1="${left+slot*(i-.5)}" y1="${py(series.values[i-1])}" x2="${centre}" y2="${py(value)}" stroke="${colors[j%colors.length]}" stroke-width="2"/>`;
+          svg+=`<circle cx="${centre}" cy="${py(value)}" r="4" fill="${colors[j%colors.length]}"><title>${sanitize(name)}: ${value}</title></circle>`;
+        } else svg+=`<rect x="${x}" y="${py(value)}" width="${bw}" height="${bottom-py(value)}" fill="${colors[j%colors.length]}"><title>${sanitize(name)} — ${sanitize(series.name)}: ${value}</title></rect>`;
+      });
+    });
+    g.series.forEach((series,j)=>{svg+=`<rect x="${80+j*170}" y="22" width="12" height="12" fill="${colors[j%colors.length]}"/><text x="${97+j*170}" y="33" font-size="12">${sanitize(series.name)}</text>`;});
+    svg+=`<text x="305" y="335" text-anchor="middle" font-size="12">${sanitize(g.xLabel)}</text><text x="18" y="173" transform="rotate(-90 18 173)" text-anchor="middle" font-size="12">${sanitize(g.yLabel)}</text>`;
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 580 350" role="img" aria-label="${sanitize(g.title)}"><title>${sanitize(g.title)}</title>${svg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-comparisons') {
+    const rows = textbookDiagram.rows || [];
+    const cards = rows.map((row, rowIndex) => {
+      const objects = row.objects || [];
+      const top = 30 + rowIndex * 112;
+      const barWidth = Math.min(420, 400 / Math.max(1, objects.length));
+      const bars = objects.map((object, index) => {
+        const x = 150 + index * (barWidth + 12);
+        const rank = Math.max(1, Number(object.rank) || 1);
+        const length = row.measure === 'height' ? 20 + rank * 15 : 24 + rank * 22;
+        const y = row.measure === 'height' ? top + 62 - length : top + 62 - 28;
+        const width = row.measure === 'height' ? Math.max(28, barWidth * .65) : length;
+        const height = row.measure === 'height' ? length : 28;
+        return `<g><rect x="${x}" y="${y}" width="${width}" height="${height}" rx="5" fill="${['#bfdbfe','#fde68a','#bbf7d0'][index % 3]}" stroke="#475569"/><text x="${x + width/2}" y="${top + 78}" text-anchor="middle" font-size="11" font-weight="700">${sanitize(object.name)}</text><text x="${x + width/2}" y="${top + 91}" text-anchor="middle" font-size="10" fill="#334155">${sanitize(object.label || '')}</text></g>`;
+      }).join('');
+      return `<g><rect x="4" y="${top - 18}" width="592" height="112" rx="8" fill="#f8fafc" stroke="#cbd5e1"/><text x="16" y="${top}" font-size="12" font-weight="700">${sanitize(row.title || '')}</text><path d="M140 ${top + 64}H580" stroke="#64748b"/>${bars}</g>`;
+    }).join('');
+    const height = Math.max(105, 30 + rows.length * 112);
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Compare the objects')}</figcaption><svg viewBox="0 0 600 ${height}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Objects shown in relative order for comparison')}">${cards}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-clock') {
+    const clocks = textbookDiagram.clocks || [];
+    const cols = Math.min(3, Math.max(1, clocks.length));
+    const rows = Math.ceil(clocks.length / cols);
+    const clockSvg = clocks.map((clock, index) => {
+      const cx = 90 + (index % cols) * 190;
+      const cy = 78 + Math.floor(index / cols) * 150;
+      const hour = Math.max(1, Math.min(12, Number(clock.hour) || 12));
+      const ticks = Array.from({ length: 12 }, (_, i) => {
+        const a = (i * 30 - 90) * Math.PI / 180;
+        return `<text x="${cx + Math.cos(a) * 48}" y="${cy + Math.sin(a) * 48 + 4}" text-anchor="middle" font-size="10" fill="#334155">${i || 12}</text>`;
+      }).join('');
+      const hourAngle = ((hour % 12) * 30 - 90) * Math.PI / 180;
+      return `<g><circle cx="${cx}" cy="${cy}" r="62" fill="#fff" stroke="#db2777" stroke-width="3"/><circle cx="${cx}" cy="${cy}" r="3" fill="#be123c"/>${ticks}<path d="M${cx} ${cy} L${cx} ${cy - 39}" stroke="#475569" stroke-width="3" stroke-linecap="round"/><path d="M${cx} ${cy} L${cx + Math.cos(hourAngle) * 29} ${cy + Math.sin(hourAngle) * 29}" stroke="#111827" stroke-width="5" stroke-linecap="round"/><text x="${cx}" y="${cy + 84}" text-anchor="middle" font-size="13" font-weight="700">${sanitize(clock.label || `${hour}:00`)}</text></g>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Exact-hour clock faces')}</figcaption><svg viewBox="0 0 ${cols * 190} ${rows * 150 + 20}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Clock faces with exact-hour times')}">${clockSvg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-weekday-order') {
+    const days = (textbookDiagram.days || []).map(String);
+    const cellWidth = 108;
+    const columns = Math.min(4, days.length);
+    const cells = days.map((day, index) => {
+      const row = Math.floor(index / columns);
+      const col = index % columns;
+      const x = 8 + col * (cellWidth + 8);
+      const y = 12 + row * 68;
+      return `<g><rect x="${x}" y="${y}" width="${cellWidth}" height="52" rx="10" fill="${row % 2 ? '#dbeafe' : '#fef3c7'}" stroke="#0f766e" stroke-width="2"/><text x="${x + cellWidth / 2}" y="${y + 22}" text-anchor="middle" font-size="12" font-weight="700">${sanitize(day)}</text><text x="${x + cellWidth / 2}" y="${y + 41}" text-anchor="middle" font-size="11" fill="#334155">${index + 1}${['st','nd','rd'][index] || 'th'}</text></g>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Weekday order')}</figcaption><svg viewBox="0 0 ${columns * (cellWidth + 8) + 8} ${Math.ceil(days.length / columns) * 68}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Days of the week in order')}">${cells}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-money-match') {
+    const matches = textbookDiagram.matches || [];
+    const rows = matches.map((match, index) => {
+      const y = 36 + index * 48;
+      return `<g><rect x="4" y="${y - 22}" width="592" height="42" rx="8" fill="#f8fafc" stroke="#cbd5e1"/><text x="22" y="${y + 4}" font-size="12" font-weight="700">Left box ${Number(match.left)}</text><text x="300" y="${y + 4}" text-anchor="middle" font-size="16" fill="#0369a1">Rs ${Number(match.total)}</text><text x="578" y="${y + 4}" text-anchor="end" font-size="12" font-weight="700">Right box ${Number(match.right)}</text></g>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Money group matches')}</figcaption><svg viewBox="0 0 600 ${Math.max(70, 24 + matches.length * 48)}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Matching money groups by equal totals')}">${rows}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-shape-properties') {
+    const shapes = textbookDiagram.shapes || [];
+    const cellW = 142;
+    const cellH = 112;
+    const cards = shapes.map((shape, index) => {
+      const x = 6 + index * cellW;
+      const cx = x + cellW / 2;
+      let mark = '';
+      if (shape.name === 'circle') mark = `<circle cx="${cx}" cy="38" r="23" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>`;
+      else if (shape.name === 'triangle') mark = `<polygon points="${cx},13 ${cx - 27},60 ${cx + 27},60" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>`;
+      else {
+        const w = shape.name === 'square' ? 46 : 58;
+        mark = `<rect x="${cx - w/2}" y="16" width="${w}" height="44" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>`;
+      }
+      return `<g><rect x="${x}" y="4" width="132" height="104" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>${mark}<text x="${cx}" y="78" text-anchor="middle" font-size="12" font-weight="700">${sanitize(shape.name)}</text><text x="${cx}" y="96" text-anchor="middle" font-size="10" fill="#334155">${Number(shape.sides)} sides · ${Number(shape.corners)} corners</text></g>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Shape sides and corners')}</figcaption><svg viewBox="0 0 ${Math.max(cellW, shapes.length * cellW)} 116" role="img" aria-label="${sanitize(textbookDiagram.title || 'Four shapes and their sides and corners')}">${cards}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-object-shape-match') {
+    const pairs = textbookDiagram.pairs || [];
+    const rows = pairs.map((pair, index) => {
+      const y = 12 + index * 48;
+      return `<g><rect x="4" y="${y}" width="592" height="40" rx="8" fill="#f8fafc" stroke="#cbd5e1"/><text x="18" y="${y + 25}" font-size="12" font-weight="700">${sanitize(pair.left)}</text><text x="300" y="${y + 26}" text-anchor="middle" font-size="17" fill="#0369a1">↔</text><text x="582" y="${y + 25}" text-anchor="end" font-size="12" font-weight="700">${sanitize(pair.right)}</text></g>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Objects matched by shape')}</figcaption><svg viewBox="0 0 600 ${Math.max(68, 20 + pairs.length * 48)}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Objects matched to objects with the same shape')}">${rows}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-shape-maze') {
+    const cells = textbookDiagram.cells || [];
+    const shapes = cells.map(cell => {
+      const x = Number(cell.x), y = Number(cell.y), size = Number(cell.size) || 36;
+      const fill = sanitize(cell.fill || '#fff');
+      if (cell.shape === 'circle') return `<circle cx="${x + size / 2}" cy="${y + size / 2}" r="${size / 2 - 2}" fill="${fill}" stroke="#334155" stroke-width="2"/>`;
+      if (cell.shape === 'triangle') return `<polygon points="${x + size/2},${y+2} ${x+size-2},${y+size-2} ${x+2},${y+size-2}" fill="${fill}" stroke="#334155" stroke-width="2"/>`;
+      const w = Number(cell.width) || size, h = Number(cell.height) || size;
+      return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="2" fill="${fill}" stroke="#334155" stroke-width="2"/>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Square path activity')}</figcaption><svg viewBox="0 0 600 300" role="img" aria-label="${sanitize(textbookDiagram.title || 'Square tiles in a path are coloured green; other shapes remain uncoloured')}"><text x="12" y="26" font-size="13" font-weight="700">Tortoise</text><text x="510" y="284" font-size="13" font-weight="700">Pond</text>${shapes}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-number-sequences') {
+    const rows = textbookDiagram.rows || [];
+    const cells = rows.map((row, rowIndex) => {
+      const y = 10 + rowIndex * 54;
+      const label = `<text x="8" y="${y + 30}" font-size="11" font-weight="700">${sanitize(row.label || '')}</text>`;
+      const values = (row.values || []).map((value, index) => {
+        const x = 90 + index * 48;
+        return `<g><rect x="${x}" y="${y}" width="42" height="40" rx="5" fill="#eff6ff" stroke="#2563eb"/><text x="${x + 21}" y="${y + 26}" text-anchor="middle" font-size="14" font-weight="700">${sanitize(value)}</text></g>`;
+      }).join('');
+      return label + values;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Number sequences')}</figcaption><svg viewBox="0 0 590 ${Math.max(60, 20 + rows.length * 54)}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Completed counting sequences')}">${cells}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-patterns') {
+    const rows = textbookDiagram.rows || [];
+    const maxMarks = Math.max(1, ...rows.map(row => (row.marks || []).length));
+    const step = Math.min(80, 510 / Math.max(1, maxMarks - 1));
+    const renderMark = (mark, x, y) => {
+      const size = Math.max(12, Math.min(34, Number(mark.size) || 26));
+      const fill = sanitize(mark.color || '#f59e0b');
+      if (mark.shape === 'circle') return `<circle cx="${x}" cy="${y}" r="${size / 2}" fill="${fill}"/>`;
+      if (mark.shape === 'triangle') return `<polygon points="${x},${y - size/2} ${x - size/2},${y + size/2} ${x + size/2},${y + size/2}" fill="${fill}"/>`;
+      if (mark.shape === 'rectangle') return `<rect x="${x - size * .38}" y="${y - size * .6}" width="${size * .76}" height="${size * 1.2}" fill="${fill}"/>`;
+      return `<rect x="${x - size/2}" y="${y - size/2}" width="${size}" height="${size}" fill="${fill}"/>`;
+    };
+    const rowsSvg = rows.map((row, rowIndex) => {
+      const y = 38 + rowIndex * 66;
+      const marks = (row.marks || []).map((mark, index) => renderMark(mark, 42 + index * step, y)).join('');
+      return `<g><rect x="4" y="${y - 28}" width="592" height="56" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>${marks}<text x="584" y="${y + 4}" font-size="10" text-anchor="end" fill="#334155">${sanitize(row.rule || '')}</text></g>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Textbook repeating patterns')}</figcaption><svg viewBox="0 0 600 ${48 + rows.length * 66}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Repeating patterns of shapes, colours and sizes')}">${rowsSvg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-money-exchange') {
+    const rows = textbookDiagram.rows || [];
+    const currencyItems = value => {
+      const match = String(value).match(/Rs\s*(\d+)\s*(coin|note)s?/i);
+      return match ? [{ count: 1, value: Number(match[1]), kind: match[2].toLowerCase() }] : [];
+    };
+    const replacementItems = value => [...String(value).matchAll(/(\d+)\s*[×x]\s*Rs\s*(\d+)\s*(coins|notes)/gi)].map(match => ({ count: Number(match[1]), value: Number(match[2]), kind: match[3].slice(0, -1).toLowerCase() }));
+    const drawItems = (items, start, y) => {
+      let cursor = start;
+      return items.map(item => Array.from({ length: item.count }, () => {
+        const x = cursor;
+        cursor += item.kind === 'coin' ? 36 : 72;
+        return item.kind === 'coin'
+          ? `<circle cx="${x + 14}" cy="${y}" r="13" fill="#fde68a" stroke="#92400e" stroke-width="2"/><text x="${x + 14}" y="${y + 4}" text-anchor="middle" font-size="9" font-weight="700">${item.value}</text>`
+          : `<rect x="${x}" y="${y - 11}" width="58" height="22" rx="3" fill="#dcfce7" stroke="#166534" stroke-width="2"/><text x="${x + 29}" y="${y + 4}" text-anchor="middle" font-size="11" font-weight="700">Rs ${item.value}</text>`;
+      }).join('')).join('');
+    };
+    const rowsSvg = rows.map((row, index) => {
+      const y = 48 + index * 62;
+      const from = currencyItems(row.from);
+      const to = replacementItems(row.to);
+      return `<g><rect x="4" y="${y - 27}" width="592" height="54" rx="9" fill="#f8fafc" stroke="#cbd5e1"/><text x="16" y="${y - 7}" font-size="10" fill="#475569">SOURCE</text>${drawItems(from, 16, y + 8)}<text x="172" y="${y + 7}" font-size="22" fill="#0369a1">→</text><text x="218" y="${y - 7}" font-size="10" fill="#475569">EQUIVALENT VALUE</text>${drawItems(to, 218, y + 8)}</g>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Source exchange examples')}</figcaption><svg viewBox="0 0 600 ${Math.max(90, 28 + rows.length * 62)}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Textbook money exchange examples')}">${rowsSvg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-money-composition') {
+    const rows = textbookDiagram.rows || [];
+    const rowsSvg = rows.map((row, index) => {
+      const y = 45 + index * 64;
+      const notes = (row.notes || []).map((value, i) => `<rect x="${105 + i * 68}" y="${y - 12}" width="58" height="24" rx="3" fill="#dcfce7" stroke="#166534" stroke-width="2"/><text x="${134 + i * 68}" y="${y + 4}" text-anchor="middle" font-size="11" font-weight="700">Rs ${Number(value)}</text>`).join('');
+      const coinsStart = 105 + (row.notes || []).length * 68;
+      const coins = (row.coins || []).map((value, i) => `<circle cx="${coinsStart + i * 38 + 14}" cy="${y}" r="13" fill="#fde68a" stroke="#92400e" stroke-width="2"/><text x="${coinsStart + i * 38 + 14}" y="${y + 4}" text-anchor="middle" font-size="9" font-weight="700">${Number(value)}</text>`).join('');
+      return `<g><rect x="4" y="${y - 28}" width="592" height="56" rx="9" fill="#f8fafc" stroke="#cbd5e1"/><text x="12" y="${y + 4}" font-size="12" font-weight="700">Target Rs ${Number(row.target)}</text>${notes}${coins}<text x="${Math.max(430, 105 + (row.notes || []).length * 68 + (row.coins || []).length * 38 + 8)}" y="${y + 5}" font-size="17" fill="#0369a1">= Rs ${Number(row.target)}</text></g>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Source money groups — correct choices')}</figcaption><svg viewBox="0 0 600 ${Math.max(100, 24 + rows.length * 64)}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Correct textbook money groups')}">${rowsSvg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-money-composition') {
+    const rows = textbookDiagram.rows || [];
+    const rowsSvg = rows.map((row, index) => {
+      const y = 45 + index * 64;
+      const notes = (row.notes || []).map((value, i) => `<rect x="${16 + i * 68}" y="${y - 12}" width="58" height="24" rx="3" fill="#dcfce7" stroke="#166534" stroke-width="2"/><text x="${45 + i * 68}" y="${y + 4}" text-anchor="middle" font-size="11" font-weight="700">Rs ${Number(value)}</text>`).join('');
+      const coinsStart = 16 + (row.notes || []).length * 68;
+      const coins = (row.coins || []).map((value, i) => `<circle cx="${coinsStart + i * 38 + 14}" cy="${y}" r="13" fill="#fde68a" stroke="#92400e" stroke-width="2"/><text x="${coinsStart + i * 38 + 14}" y="${y + 4}" text-anchor="middle" font-size="9" font-weight="700">${Number(value)}</text>`).join('');
+      return `<g><rect x="4" y="${y - 28}" width="592" height="56" rx="9" fill="#f8fafc" stroke="#cbd5e1"/><text x="12" y="${y + 4}" font-size="12" font-weight="700">Target Rs ${Number(row.target)}</text>${notes}${coins}<text x="${Math.max(430, 16 + (row.notes || []).length * 68 + (row.coins || []).length * 38 + 8)}" y="${y + 5}" font-size="17" fill="#0369a1">= Rs ${Number(row.target)}</text></g>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Source money groups — correct choices')}</figcaption><svg viewBox="0 0 600 ${Math.max(100, 24 + rows.length * 64)}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Correct textbook money groups')}">${rowsSvg}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-money-exchange') {
+    const rows = textbookDiagram.rows || [];
+    const labels = rows.map((row, index) => {
+      const y = 42 + index * 52;
+      return `<text x="12" y="${y + 5}" font-size="15" font-weight="700">${sanitize(row.from)}</text><text x="176" y="${y + 5}" font-size="18">→</text><text x="210" y="${y + 5}" font-size="15">${sanitize(row.to)}</text>`;
+    }).join('');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title || 'Source exchange examples')}</figcaption><svg viewBox="0 0 500 ${Math.max(90, 30 + rows.length * 52)}" role="img" aria-label="${sanitize(textbookDiagram.title || 'Textbook money exchange examples')}">${labels}</svg></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-labelled-geometry') {
+    const g = textbookDiagram;
+    const paths = (g.paths||[]).map(p=>`<polyline points="${p.points.map(v=>v.map(Number).join(',')).join(' ')}" fill="${sanitize(p.fill||'none')}" stroke="${sanitize(p.stroke||'#334155')}" stroke-width="2"${p.dash?' stroke-dasharray="4 3"':''}/>`).join('');
+    const labels = (g.labels||[]).map(t=>`<text x="${Number(t.x)}" y="${Number(t.y)}">${sanitize(t.text)}</text>`).join('');
+    const points = (g.points||[]).map(p=>`<circle cx="${Number(p[0])}" cy="${Number(p[1])}" r="3" fill="#334155"/>`).join('');
+    return `<figure class="math-diagram"><svg class="math-source-graph" viewBox="0 0 ${Number(g.width)} ${Number(g.height)}" role="img" aria-label="${sanitize(g.title)}" style="width:100%;max-width:${Number(g.width)}px;font-size:18px">${paths}${points}${labels}</svg><figcaption>${sanitize(item.caption||'')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-line-slope') {
+    const kind = textbookDiagram.kind;
+    const axes = '<path d="M90 270V30 M45 230H460" fill="none" stroke="#334155" stroke-width="2"/><text x="87" y="22">y</text><text x="466" y="236">x</text><text x="66" y="255">O</text>';
+    const shapes = {
+      steepness: '<path d="M45 220L225 70V220Z M275 70V220H455Z" fill="none" stroke="#334155" stroke-width="2"/><path d="M45 220L225 70 M275 70L455 220" stroke="#334155" stroke-width="2"/><text x="25" y="241">A</text><text x="217" y="55">B</text><text x="270" y="55">C</text><text x="454" y="241">D</text>',
+      'rise-run': '<path d="M45 220L225 70V220Z M275 70H455V220Z" fill="#f9a8d4" stroke="#334155" stroke-width="2"/><text x="25" y="241">A</text><text x="217" y="55">B</text><text x="270" y="55">C</text><text x="454" y="241">D</text><text x="103" y="250">RUN →</text><text x="323" y="55">RUN →</text><text x="232" y="155">RISE ↑</text><text x="445" y="155">RISE ↓</text>',
+      'two-points': axes+'<path d="M70 245L420 45 M210 164V230 M365 75V230 M210 164H365" fill="none" stroke="#334155" stroke-width="2"/><circle cx="210" cy="164" r="3"/><circle cx="365" cy="75" r="3"/><path d="M145 230A55 55 0 0 0 137 202 M235 164A25 25 0 0 0 232 151" fill="none" stroke="#334155"/><text x="140" y="217">θ</text><text x="239" y="157">θ</text><text x="186" y="157">A</text><text x="350" y="65">B</text><text x="370" y="169">L</text><text x="202" y="253">M</text><text x="359" y="253">N</text><text x="421" y="43">L</text>',
+      perpendicular: axes+'<path d="M75 252L420 75 M175 55L300 298" fill="none" stroke="#334155" stroke-width="2"/><path d="M245 164L254 182L272 173" fill="none" stroke="#334155"/><path d="M185 230A60 60 0 0 0 179 206" fill="none" stroke="#334155"/><text x="169" y="219">α</text><text x="262" y="220">β</text><text x="245" y="150">90°</text><text x="421" y="74">L₁</text><text x="306" y="285">L₂</text>',
+      vertical: axes+'<path d="M300 45V280" stroke="#be123c" stroke-width="2"/><path d="M90 145H300" stroke="#334155" stroke-dasharray="4 3"/><text x="180" y="136">← a →</text><text x="305" y="46">P</text><text x="305" y="283">Q</text>'
+    };
+    return `<figure class="math-diagram"><svg class="math-source-graph" viewBox="0 0 530 320" role="img" aria-label="${sanitize(textbookDiagram.title)}" style="width:100%;max-width:530px;font-size:18px">${shapes[kind]||''}</svg><figcaption>${sanitize(item.caption||'')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-incenter-length') {
+    const ln = 12 + Math.sqrt(39), slopeL = Math.tan(2*Math.atan(5/12)), slopeN = Math.tan(Math.PI-2*Math.asin(5/8));
+    const mx = -slopeN*ln/(slopeL-slopeN);
+    const local = {L:[0,0],M:[mx,slopeL*mx],N:[ln,0],O:[12,5],H:[12,0]};
+    const foot = (a,b) => {const v=[b[0]-a[0],b[1]-a[1]],t=((12-a[0])*v[0]+(5-a[1])*v[1])/(v[0]*v[0]+v[1]*v[1]);return [a[0]+t*v[0],a[1]+t*v[1]];};
+    local.I=foot(local.L,local.M);local.J=foot(local.M,local.N);
+    const angle=40*Math.PI/180,project=p=>[60+18*(p[0]*Math.cos(angle)+p[1]*Math.sin(angle)),100+18*(p[0]*Math.sin(angle)-p[1]*Math.cos(angle))];
+    const pts=Object.fromEntries(Object.entries(local).map(([k,v])=>[k,project(v)])),xy=k=>pts[k].join(' ');
+    const right=(f,a)=>{const base=local[f],v=[local[a][0]-base[0],local[a][1]-base[1]],w=[12-base[0],5-base[1]],nv=Math.hypot(...v),nw=Math.hypot(...w);const q=[base[0]+.45*v[0]/nv,base[1]+.45*v[1]/nv],r=[q[0]+.45*w[0]/nw,q[1]+.45*w[1]/nw],t=[base[0]+.45*w[0]/nw,base[1]+.45*w[1]/nw];return `<path d="M${project(q).join(' ')}L${project(r).join(' ')}L${project(t).join(' ')}" fill="none" stroke="#334155"/>`;};
+    const labels=Object.entries(pts).map(([k,v])=>`<text x="${v[0]+(k==='H'?-22:7)}" y="${v[1]+(k==='O'?-8:k==='N'?22:-8)}">${k}</text>`).join('');
+    const mid=(a,b,t,dx,dy)=>{const p=project([local[a][0]*(1-t)+local[b][0]*t,local[a][1]*(1-t)+local[b][1]*t]);return [p[0]+dx,p[1]+dy];};
+    const label=(p,t)=>`<text x="${p[0]}" y="${p[1]}">${t}</text>`;
+    return `<figure class="math-diagram"><svg class="math-source-graph" viewBox="0 0 500 360" role="img" aria-label="${sanitize(textbookDiagram.title)}" style="width:100%;max-width:500px;font-size:18px"><path d="M${xy('L')}L${xy('M')}L${xy('N')}Z" fill="none" stroke="#334155" stroke-width="2"/><path d="M${xy('L')}L${xy('O')}L${xy('M')} M${xy('N')}L${xy('O')}L${xy('I')} M${xy('O')}L${xy('J')} M${xy('O')}L${xy('H')}" fill="none" stroke="#334155" stroke-width="2"/>${right('H','L')}${right('I','L')}${right('J','N')}<circle cx="${pts.O[0]}" cy="${pts.O[1]}" r="4" fill="#334155"/>${labels}${label(mid('L','O',.55,0,-12),'13')}${label(mid('L','H',.55,-12,18),'12')}${label(mid('O','N',.55,10,0),'8')}</svg><figcaption>${sanitize(item.caption||'')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-triangle-concurrency') {
+    const median = textbookDiagram.kind === 'medians';
+    const a = [250,45], b = [130,235], c = [430,235];
+    // The bisector diagram uses actual side-length weights to place its incenter.
+    const sideA = 300, sideB = Math.hypot(180,190), sideC = Math.hypot(120,190);
+    const d = median ? [280,235] : [(sideB*b[0]+sideC*c[0])/(sideB+sideC),235];
+    const e = median ? [340,140] : [(sideC*a[0]+sideA*c[0])/(sideC+sideA),(sideC*a[1]+sideA*c[1])/(sideC+sideA)];
+    const f = median ? [190,140] : [(sideB*a[0]+sideA*b[0])/(sideB+sideA),(sideB*a[1]+sideA*b[1])/(sideB+sideA)];
+    const g = median ? [270,515/3] : [(sideA*a[0]+sideB*b[0]+sideC*c[0])/(sideA+sideB+sideC),(sideA*a[1]+sideB*b[1]+sideC*c[1])/(sideA+sideB+sideC)];
+    return `<figure class="math-diagram"><svg class="math-source-graph" viewBox="0 0 520 310" role="img" aria-label="${sanitize(textbookDiagram.title)}" style="width:100%;max-width:520px;font-size:18px"><path d="M80 280V25 M55 260H495" fill="none" stroke="#334155" stroke-width="2"/><text x="78" y="18">y</text><text x="498" y="267">x</text><text x="58" y="286">O</text><path d="M${a.join(' ')}L${b.join(' ')}L${c.join(' ')}Z" fill="${median?'#bae6fd':'#fbcfe8'}" stroke="#334155" stroke-width="2"/><path d="M${a.join(' ')}L${d.join(' ')} M${b.join(' ')}L${e.join(' ')} M${c.join(' ')}L${f.join(' ')}" fill="none" stroke="#334155" stroke-width="2"/><circle cx="${g[0]}" cy="${g[1]}" r="3" fill="#334155"/><text x="${g[0]+6}" y="${g[1]-6}">G</text><text x="210" y="33">A(x₁,y₁)</text><text x="100" y="254">B(x₂,y₂)</text><text x="410" y="254">C(x₃,y₃)</text><text x="${d[0]-8}" y="253">${median?'Q':'D'}</text><text x="${e[0]+7}" y="${e[1]}">${median?'R':'E'}</text><text x="${f[0]-20}" y="${f[1]}">${median?'P':'F'}</text></svg><figcaption>${sanitize(item.caption||'')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-line-vector-geometry') {
+    const division = textbookDiagram.kind === 'division';
+    const points = division ? '<path d="M100 240L190 70L375 160Z" fill="#fce7f3" stroke="#9d174d" stroke-width="2"/><path d="M100 240L283 115" stroke="#9d174d" stroke-width="2" marker-end="url(#line-vector-arrow)"/><text x="155" y="48">P(x₁,y₁)</text><text x="285" y="98">R(x,y)</text><text x="365" y="143">Q(x₂,y₂)</text><text x="233" y="76">m₁</text><text x="335" y="122">m₂</text><text x="130" y="155">r₁</text><text x="186" y="177">r</text><text x="260" y="219">r₂</text>' : '<path d="M100 240L180 85L365 110Z" fill="none" stroke="#be123c" stroke-width="2"/><path d="M180 85V240 M365 110V240 M100 85H180 M100 110H365" stroke="#64748b" stroke-dasharray="3 3"/><path d="M180 110H365" stroke="#64748b" stroke-dasharray="3 3"/><path d="M100 240L180 85 M100 240L365 110" stroke="#be123c" stroke-width="2" marker-end="url(#line-vector-arrow)"/><path d="M125 240A25 25 0 0 0 100 215" fill="none" stroke="#334155"/><text x="115" y="270">θ</text><text x="160" y="63">P(x₁,y₁)</text><text x="350" y="88">Q(x₂,y₂)</text><text x="165" y="265">x₁</text><text x="350" y="265">x₂</text><text x="60" y="93">y₁</text><text x="60" y="118">y₂</text><text x="173" y="133">r</text>';
+    return `<figure class="math-diagram"><svg class="math-source-graph" viewBox="0 0 490 300" role="img" aria-label="${sanitize(textbookDiagram.title)}" style="width:100%;max-width:490px;font-size:18px"><defs><marker id="line-vector-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#be123c"/></marker></defs><path d="M100 280V25 M65 240H455" fill="none" stroke="#334155" stroke-width="2"/><path d="M95 35L100 20L105 35 M445 235L460 240L445 245" fill="#334155"/><text x="467" y="245">x</text><text x="96" y="16">y</text><text x="76" y="264">O</text><text x="127" y="233">î</text><text x="108" y="207">ĵ</text>${points}</svg><figcaption>${sanitize(item.caption || '')}</figcaption></figure>`;
+  }
+  if(textbookDiagram && textbookDiagram.type==='source-sine-limit-geometry') {
+    const g=textbookDiagram,angle=g.angleRad,r=110,ox=210,oy=175,qx=ox+r*Math.cos(angle),qy=oy-r*Math.sin(angle),rx=ox+r,sy=oy-r*Math.tan(angle),ax=ox+26*Math.cos(angle),ay=oy-26*Math.sin(angle);
+    const svg=`<path d="M${ox} ${oy}L${rx} ${oy}L${rx} ${sy}Z" fill="#bae6fd"/>
+      <path d="M${ox} ${oy}L${rx} ${oy}A${r} ${r} 0 0 0 ${qx} ${qy}Z" fill="#7dd3fc"/>
+      <path d="M${ox} ${oy}L${rx} ${oy}L${qx} ${qy}Z" fill="#38bdf8" fill-opacity=".55"/>
+      <circle cx="${ox}" cy="${oy}" r="${r}" fill="none" stroke="#166534" stroke-width="1.5"/>
+      <path d="M${ox} ${oy}H${rx}V${sy}L${ox} ${oy} M${qx} ${qy}V${oy} M${qx} ${qy}L${rx} ${oy}" fill="none" stroke="#111827" stroke-width="1.5"/>
+      <path d="M${ox+26} ${oy}A26 26 0 0 0 ${ax} ${ay}" fill="none" stroke="#111827"/>
+      <text x="${ox+31}" y="${oy-9}" font-size="14">x</text>
+      <text x="${ox-16}" y="${oy+20}" font-size="14">O</text><text x="${qx}" y="${oy+20}" text-anchor="middle" font-size="14">P</text>
+      <text x="${rx+9}" y="${oy+16}" font-size="14">R</text><text x="${qx-10}" y="${qy-9}" font-size="14">Q</text><text x="${rx+8}" y="${sy-3}" font-size="14">S</text>
+      <text x="${ox+r*.36*Math.cos(angle)}" y="${oy-r*.36*Math.sin(angle)-8}" transform="rotate(${-angle*180/Math.PI} ${ox+r*.36*Math.cos(angle)} ${oy-r*.36*Math.sin(angle)-8})" font-size="13">r = 1</text>`;
+    return `<figure class="math-diagram"><svg viewBox="0 0 480 310" role="img" aria-label="${sanitize(g.title)}">${svg}</svg><figcaption>${sanitize(item.caption||g.title)}</figcaption></figure>`;
+  }
+  if(textbookDiagram && textbookDiagram.type==='source-number-line') {
+    const g=textbookDiagram,px=x=>40+(x-g.xMin)*400/(g.xMax-g.xMin);
+    let svg='<path d="M40 75H440" stroke="#111827" stroke-width="1.4"/><path d="M32 75L42 70V80Z M448 75L438 70V80Z" fill="#111827"/>';
+    g.ticks.forEach(tick=>svg+=`<path d="M${px(tick)} 69V81" stroke="#111827"/><text x="${px(tick)}" y="101" font-size="12" text-anchor="middle">${tick}</text>`);
+    if('left' in g) {
+      svg+=`<path d="M${g.left==null?40:px(g.left)} 75H${g.right==null?440:px(g.right)}" stroke="#b91c1c" stroke-width="3"/>`;
+      if(g.left==null) svg+='<path d="M32 75L43 69V81Z" fill="#b91c1c"/>';
+      else svg+=`<circle cx="${px(g.left)}" cy="75" r="4.5" fill="${g.leftClosed?'#111827':'white'}" stroke="#111827" stroke-width="1.5"/>`;
+      if(g.right==null) svg+='<path d="M448 75L437 69V81Z" fill="#b91c1c"/>';
+      else svg+=`<circle cx="${px(g.right)}" cy="75" r="4.5" fill="${g.rightClosed?'#111827':'white'}" stroke="#111827" stroke-width="1.5"/>`;
+    }
+    (g.extraPoints||[]).forEach(x=>svg+=`<circle cx="${px(x)}" cy="75" r="4" fill="#111827"/>`);
+    (g.points||[]).forEach(p=>{
+      svg+=`<circle cx="${px(p.x)}" cy="75" r="4" fill="#111827"/>`;
+      if(p.denominator) svg+=`<text x="${px(p.x)}" y="32" font-size="13" text-anchor="middle">${sanitize(p.numerator)}</text><path d="M${px(p.x)-10} 38H${px(p.x)+10}" stroke="#111827"/><text x="${px(p.x)}" y="53" font-size="13" text-anchor="middle">${sanitize(p.denominator)}</text>`;
+      else svg+=`<text x="${px(p.x)}" y="${p.labelY||53}" font-size="14" text-anchor="middle">${sanitize(p.label)}</text>`;
+    });
+    return `<figure class="math-diagram"><svg viewBox="0 0 480 120" role="img" aria-label="${sanitize(g.title)}">${svg}</svg><figcaption>${sanitize(item.caption||g.title)}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-surface-frame') {
+    const t=textbookDiagram.parameter, project=(x,y,z)=>[240+30*(x-y),145+12*(x+y)-55*z], surface=(x,y)=>Math.cos(t*x)*Math.sin(t*y), cells=[];
+    const point=p=>p.map(value=>value.toFixed(2)).join(',');
+    for(let i=0;i<28;i++) for(let j=0;j<28;j++) {
+      const x=-Math.PI+i*Math.PI/14,y=-Math.PI+j*Math.PI/14,step=Math.PI/14;
+      const corners=[[x,y],[x+step,y],[x+step,y+step],[x,y+step]],z=corners.reduce((sum,p)=>sum+surface(...p),0)/4;
+      cells.push({depth:x+y,points:corners.map(p=>point(project(...p,surface(...p)))).join(' '),z});
+    }
+    let svg=cells.sort((a,b)=>a.depth-b.depth).map(cell=>`<polygon points="${cell.points}" fill="hsl(${210-65*(cell.z+1)/2} 45% ${40+20*(cell.z+1)/2}%)" stroke="#17324d" stroke-width=".35"/>`).join('');
+    const edge=(a,b)=>`<path d="M${project(...a).join(' ')}L${project(...b).join(' ')}" fill="none" stroke="#111827" stroke-width="1"/>`;
+    const pi=Math.PI;
+    svg+=edge([-pi,pi,-1],[pi,pi,-1])+edge([pi,-pi,-1],[pi,pi,-1])+edge([pi,pi,-1],[pi,pi,1]);
+    const label=(p,text)=>`<text x="${project(...p)[0]}" y="${project(...p)[1]+13}" font-size="11" text-anchor="middle">${text}</text>`;
+    [-pi,-pi/2,0,pi/2,pi].forEach((value,index)=>{const text=['−π','−π/2','0','π/2','π'][index];svg+=label([value,pi,-1],text)+label([pi,value,-1],text);});
+    [-1,-.5,0,.5,1].forEach(z=>{const p=project(pi,pi,z);svg+=`<text x="${p[0]+8}" y="${p[1]+4}" font-size="11">${z}</text>`;});
+    svg+=label([0,pi+1,-1],'x')+label([pi+1,0,-1],'y');
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title)}</figcaption><svg viewBox="0 0 480 320" role="img" aria-label="Surface z equals cos x times sin y over minus pi to pi, printed parameter frame t equals one">${svg}</svg><figcaption>${sanitize(item.caption||'')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-exponential-log-pair') {
+    const px=x=>240+x*10, py=y=>180-y*10, base=textbookDiagram.base;
+    let svg='';
+    for(let tick=-7;tick<=15;tick++) svg+=`<path d="M${px(tick)} 30V250 M170 ${py(tick)}H390" fill="none" stroke="#cbd5e1" stroke-width=".5"/>`;
+    svg+='<path d="M170 180H390 M240 30V250" stroke="#111827" fill="none"/>';
+    for(const tick of [-5,5,10,15]) svg+=`<text x="${px(tick)}" y="194" text-anchor="middle" font-size="10">${tick}</text><text x="234" y="${py(tick)+4}" text-anchor="end" font-size="10">${tick}</text>`;
+    const curve = fn => {let path='',drawing=false;for(let i=0;i<=1500;i++){const x=-7+22*i/1500,y=fn(x);if(!Number.isFinite(y)||y<-7||y>15){drawing=false;continue;}path+=`${drawing?'L':'M'}${px(x)} ${py(y)} `;drawing=true;}return path;};
+    svg+=`<path d="M170 250L390 30" stroke="#4d7c0f" stroke-dasharray="6 4" fill="none"/><path d="${curve(x=>base**x)}" stroke="#9f1239" fill="none" stroke-width="1.7"/><path d="${curve(x=>Math.log(x)/Math.log(base))}" stroke="#b45309" fill="none" stroke-width="1.7"/>`;
+    const baseLabel=textbookDiagram.specificBase ? sanitize(String(base)) : 'b';
+    svg+=`<text x="280" y="51" font-size="12">y = ${baseLabel}ˣ</text><text x="322" y="93" font-size="12">y = x</text><text x="321" y="${textbookDiagram.specificBase?172:146}" font-size="12">y = log<tspan baseline-shift="sub" font-size="9">${baseLabel}</tspan> x</text>`;
+    if(!textbookDiagram.specificBase) svg+='<text x="310" y="233" font-size="12">base b &gt; 1</text>';
+    (textbookDiagram.points||[]).forEach(point=>svg+=`<circle cx="${px(point[0])}" cy="${py(point[1])}" r="2.5" fill="#111827"/><text x="${px(point[0])+5}" y="${py(point[1])-5}" font-size="10">${sanitize(point[2])}</text>`);
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title)}</figcaption><svg viewBox="0 0 480 280" role="img" aria-label="Exponential and logarithmic curves reflected across y equals x; representative base two">${svg}</svg><figcaption>${sanitize(item.caption||'')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && (textbookDiagram.type === 'source-integral-polynomial' || textbookDiagram.type === 'source-integral-function')) {
+    const g=textbookDiagram,px=x=>65+(x-g.xMin)*365/(g.xMax-g.xMin),py=y=>300-(y-g.yMin)*270/(g.yMax-g.yMin),f=x=>(g.polynomial||[]).reduce((sum,c,i)=>sum+c*x**i,0)+(g.expMultiplier||0)*Math.exp(x),axisX=px(Math.max(g.xMin,Math.min(0,g.xMax))),axisY=py(Math.max(g.yMin,Math.min(0,g.yMax)));let svg='';
+    (g.regions||[]).forEach(([a,b])=>{let path=`M${px(a)} ${axisY}`;for(let i=0;i<=80;i++){const x=a+(b-a)*i/80;path+=`L${px(x)} ${py(f(x))}`;}path+=`L${px(b)} ${axisY}Z`;svg+=`<path d="${path}" fill="#06b6d4" opacity=".7"/>`;});
+    svg+=`<path d="M48 ${axisY}H449M${axisX} 322V14" stroke="#111827" fill="none"/><path d="M449 ${axisY}l-7 -4v8zM${axisX} 14l-4 7h8z" fill="#111827"/><text x="452" y="${axisY+5}">x</text><text x="${axisX+8}" y="17">y</text>`;
+    (g.xTicks||[]).forEach(x=>svg+=`<path d="M${px(x)} ${axisY-4}V${axisY+4}" stroke="#111827"/><text x="${px(x)}" y="${axisY+20}" font-size="18" text-anchor="middle">${x}</text>`);
+    (g.yTicks||[]).forEach(y=>svg+=`<path d="M${axisX-4} ${py(y)}H${axisX+4}" stroke="#111827"/><text x="${axisX-9}" y="${py(y)+4}" font-size="18" text-anchor="end">${y}</text>`);
+    let path='';for(let i=0;i<=200;i++){const x=g.xMin+(g.xMax-g.xMin)*i/200,y=f(x);if(y<g.yMin||y>g.yMax){path+=' ';continue;}path+=`${!path.trim()||path.endsWith(' ')?'M':'L'}${px(x)} ${py(y)} `;path=path.trimEnd();}svg+=`<path d="${path}" stroke="#9f1239" stroke-width="2" fill="none"/><text x="${g.labelX||90}" y="${g.labelY||46}" font-size="20">${sanitize(g.equation||'f(x)')}</text>`;
+    (g.points||[]).forEach(([x,y,label])=>svg+=`<circle cx="${px(x)}" cy="${py(y)}" r="3"/><text x="${px(x)+5}" y="${py(y)-8}" font-size="18">${sanitize(label)}</text>`);
+    (g.regions||[]).forEach(([a,b])=>svg+=`<path d="M${px(a)} ${axisY}V${py(f(a))}M${px(b)} ${axisY}V${py(f(b))}" stroke="#111827"/>`);
+    return `<figure class="math-diagram"><svg viewBox="0 0 490 345" role="img" aria-label="${sanitize(g.title)}">${svg}</svg><figcaption>${sanitize(item.caption||g.title)}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-integral-schematic') {
+    const g=textbookDiagram,kind=g.kind,axes='<path d="M38 230H420M65 270V30" stroke="#111827" fill="none"/><path d="M420 230l-7 -4v8zM65 30l-4 7h8z" fill="#111827"/><text x="425" y="235">x</text><text x="54" y="26">y</text><text x="48" y="250">x′</text><text x="51" y="268">y′</text>';let svg=axes;
+    if(kind==='hump'||kind==='bounded-hump'){
+      const curve='M65 230C110 220 146 75 215 70C275 63 267 211 320 210';
+      svg+=`<path d="${kind==='hump'?curve+'L320 230Z':'M148 130C170 86 188 72 215 70C242 67 259 111 266 160L266 230H148Z'}" fill="${kind==='hump'?'#06b6d4':'#fb923c'}" opacity=".75"/><path d="${curve}Q350 217 380 214" stroke="#111827" stroke-width="2" fill="none"/><text x="277" y="112" font-size="15">f(x)</text>`;
+      if(kind==='bounded-hump')svg+='<path d="M148 230V130M266 230V160" stroke="#111827"/><text x="143" y="250">a</text><text x="262" y="250">b</text>';
+    }else if(kind==='area'||kind==='increment'){
+      svg+='<path d="M90 230V158L300 90V230Z" fill="#06b6d4" opacity=".7"/><path d="M65 168L350 74" stroke="#111827" stroke-width="2"/><path d="M90 230V158M300 230V90" stroke="#111827"/><text x="85" y="252">x = a</text><text x="272" y="252">x = b</text><text x="351" y="82">y = f(x)</text>';
+      if(kind==='increment')svg+='<path d="M90 230V158L300 90V230Z" fill="#f59e0b" opacity=".8"/><path d="M300 230V90L335 78V230Z" fill="#fbbf24" opacity=".7"/><path d="M335 230V78" stroke="#111827"/><text x="175" y="191">A(x)</text><text x="304" y="175">ΔA</text><text x="269" y="277">b + Δx</text>';
+    }else if(kind==='bounds'){
+      svg='<path d="M55 246H414M75 267V25" stroke="#111827"/><path d="M95 246V123H330V246Z" fill="#ec4899" opacity=".65"/><path d="M95 246V60H330V246Z" stroke="#111827" fill="none"/><path d="M95 123Q215 127 330 60" stroke="#be123c" stroke-width="2" fill="none"/><text x="80" y="271">x</text><text x="312" y="271">x + Δx</text><text x="203" y="198">ΔA</text><text x="44" y="113">(m, f(m))</text><text x="296" y="43">(M, f(M))</text><path d="M127 109L97 121M320 48L330 60" stroke="#111827"/>';
+    }else if(kind==='signed'){
+      svg='<path d="M45 175H415M90 266V28" stroke="#111827"/><path d="M127 175V232Q219 219 255 175Z" fill="#06b6d4" opacity=".7"/><path d="M255 175Q283 131 311 63V175Z" fill="#06b6d4" opacity=".7"/><path d="M127 232Q220 217 255 175Q297 118 330 43" stroke="#9f1239" stroke-width="2" fill="none"/><path d="M127 175V232M311 175V63" stroke="#111827"/><text x="120" y="167">a</text><text x="249" y="196">c</text><text x="307" y="196">b</text><text x="174" y="210">A</text><text x="288" y="150">B</text><text x="323" y="36">f(x)</text><text x="416" y="181">x</text><text x="82" y="23">y</text>';
+    }
+    return `<figure class="math-diagram"><svg viewBox="0 0 460 290" role="img" aria-label="${sanitize(g.title)}">${svg}</svg><figcaption>${sanitize(item.caption||g.title)}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-derivative-graph-pair') {
+    const base={type:'source-function-graph',xMin:-5,xMax:6,yMin:-35,yMax:20,xTicks:[-4,-3,-2,-1,0,1,2,3,4,5],yTicks:[-30,-20,-10,0,10],title:'f(x) = x³ − 3x² − 9x + 1',polynomial:textbookDiagram.poly,points:textbookDiagram.points};
+    return `<div class="math-source-figure-pair">${renderMathDiagram({caption:'Figure 4.8 — f(x)',diagram:base},chapterNumber)}${renderMathDiagram({caption:'Figure 4.8 — f′(x)',diagram:{...base,title:'f′(x) = 3x² − 6x − 9',polynomial:textbookDiagram.derivative,yMin:-15,yMax:20,yTicks:[-10,0,10],points:[[-1,0,'x = −1'],[3,0,'x = 3']]}},chapterNumber)}</div>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-derivative-sign') {
+    const g=textbookDiagram,left=g.ticks[0]-1,right=g.ticks[g.ticks.length-1]+1,px=x=>35+(x-left)*410/(right-left),[a,b]=g.critical;let svg='<path d="M35 102H445" stroke="#111827" fill="none"/>';
+    g.ticks.forEach(x=>svg+=`<circle cx="${px(x)}" cy="102" r="2.5"/><text x="${px(x)}" y="123" text-anchor="middle" font-size="12">${x}</text>`);
+    [a,b].forEach(x=>svg+=`<path d="M${px(x)} 30V110" stroke="#0284c7"/><text x="${px(x)}" y="147" text-anchor="middle" font-size="13">x = ${x}</text>`);
+    [[left,a,'&gt;',true],[a,b,'&lt;',false],[b,right,'&gt;',true]].forEach(([l,r,sign,up])=>{const x1=px(l)+17,x2=px(r)-17;svg+=`<path d="M${x1} ${up?78:36}L${x2} ${up?36:78}" stroke="#9f1239" stroke-width="2"/><text x="${(x1+x2)/2}" y="24" text-anchor="middle" font-size="14">f′ ${sign} 0</text>`;});return `<figure class="math-diagram"><svg viewBox="0 0 480 165" role="img" aria-label="${sanitize(item.caption||g.title)} derivative signs positive, negative, positive around ${a} and ${b}">${svg}</svg><figcaption>${sanitize(item.caption||g.title)}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-inflection-schematic') {
+    return `<figure class="math-diagram"><svg viewBox="0 0 440 300" role="img" aria-label="Figure 4.10 schematic curve with a maximum near one, inflection at two, and minimum near three"><path d="M50 250H395M80 279V30" stroke="#111827" fill="none"/><path d="M80 190Q110 80 140 80C180 80 260 210 300 210Q337 210 360 70" stroke="#111827" stroke-width="2" fill="none"/><circle cx="220" cy="145" r="3"/><text x="232" y="129" font-size="14">inflection</text><text x="232" y="146" font-size="14">point</text><text x="138" y="272">1</text><text x="218" y="272">2</text><text x="298" y="272">3</text><text x="357" y="272">4</text><text x="398" y="254">x</text><text x="70" y="26">f(x)</text></svg><figcaption>${sanitize(item.caption||'Figure 4.10')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-second-test-pair') {
+    let panels='';for(const [offset,min] of [[0,true],[240,false]]){const y=min?185:90;panels+=`<g transform="translate(${offset},0)"><path d="M25 250H211" stroke="#111827"/><path d="${min?'M50 80Q115 290 180 80':'M50 195Q115 -15 180 195'}" stroke="#111827" stroke-width="2" fill="none"/><path d="M115 ${y}V250" stroke="#64748b" stroke-dasharray="2 3"/><path d="M98 ${y}H133" stroke="#111827"/><circle cx="115" cy="${y}" r="3"/><text x="111" y="${y+17}" font-size="13">P</text><text x="112" y="267">c</text><text x="41" y="267">m</text><text x="177" y="267">n</text><text x="22" y="${min?170:138}" font-size="12">f′(x) ${min?'&lt;':'&gt;'} 0</text><text x="147" y="${min?170:138}" font-size="12">f′(x) ${min?'&gt;':'&lt;'} 0</text><text x="86" y="${min?221:67}" font-size="12">f′(c) = 0</text><text x="30" y="291" font-size="12">f″(c) ${min?'&gt;':'&lt;'} 0: relative ${min?'minimum':'maximum'}</text><text x="83" y="313" font-size="13">Figure ${min?'4.11':'4.12'}</text></g>`;}return `<figure class="math-diagram"><svg viewBox="0 0 490 333" role="img" aria-label="Figures 4.11 and 4.12: concave upward minimum and concave downward maximum at stationary point P">${panels}</svg><figcaption>${sanitize(item.caption||'Figures 4.11 and 4.12')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-pipeline-cable') {
+    let hangers='';for(let x=95;x<=395;x+=25){const y=68+80*(1-((x-245)/150)**2);hangers+=`<path d="M${x} ${y}V184" stroke="#9f1239" stroke-width="1.5"/>`;}return `<figure class="math-diagram"><svg viewBox="0 0 490 300" role="img" aria-label="Figure 4.13 source pipeline suspension system with parabolic supporting cables, vertical hangers, towers and pipe across a valley"><path d="M45 170L72 247L111 224L159 267L231 278L299 257L347 230L421 187L445 137" stroke="#9f1239" stroke-width="2" fill="none"/><path d="M80 195L72 247M95 198L111 224M111 202L72 247M137 206L159 267M162 208L111 224M191 211L231 278M219 211L159 267M250 210L299 257M281 208L231 278M313 203L347 230M347 196L299 257M379 188L421 187" stroke="#9f1239" stroke-width=".8"/><path d="M90 184V54H101V190M389 184V54H401V190" stroke="#111827" stroke-width="2" fill="none"/><path d="M95 68Q245 228 395 68M95 80Q245 240 395 80" stroke="#9f1239" stroke-width="2" fill="none"/>${hangers}<path d="M81 184H409V196H81Z" stroke="#111827" stroke-width="2" fill="#e2e8f0"/><path d="M45 170L80 184M409 184L445 137" stroke="#111827" fill="none"/></svg><figcaption>${sanitize(item.caption||'Figure 4.13')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-population-curve') {
+    return `<figure class="math-diagram"><svg viewBox="0 0 440 270" role="img" aria-label="Figure 4.3 population increases to a maximum at month 12 and decreases toward month 20"><path d="M65 220H370M95 240V30" stroke="#111827" fill="none"/><path d="M95 144Q138 96 190 63Q235 74 272 151Q310 184 332 203" stroke="#111827" stroke-width="2" fill="none"/><path d="M190 63V220M272 151V220" stroke="#475569" fill="none"/><circle cx="190" cy="63" r="3"/><circle cx="272" cy="151" r="3"/><text x="182" y="241">12</text><text x="264" y="241">20</text><text x="367" y="229">t</text><text x="99" y="28">f(t)</text><text x="289" y="164" font-size="13">Population curve</text></svg><figcaption>${sanitize(item.caption||'Figure 4.3')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-monotone-pair') {
+    let panels='';for(const [offset,increasing] of [[0,true],[240,false]]){const y1=increasing?165:62,y2=increasing?65:164;panels+=`<g transform="translate(${offset},0)"><path d="M20 220H214M48 239V24" stroke="#111827" fill="none"/><path d="${increasing?'M27 221Q50 180 80 165Q130 116 164 65Q171 41 175 25':'M24 27Q50 40 80 62Q120 90 164 164Q178 200 185 224'}" stroke="#111827" stroke-width="2" fill="none"/><path d="M48 ${y1}H80V220M48 ${y2}H164V220" stroke="#475569" stroke-dasharray="2 2" fill="none"/><circle cx="80" cy="${y1}" r="3"/><circle cx="164" cy="${y2}" r="3"/><text x="5" y="${y1+4}" font-size="13">f(x₁)</text><text x="5" y="${y2+4}" font-size="13">f(x₂)</text><text x="73" y="239">x₁</text><text x="156" y="239">x₂</text><text x="215" y="224">x</text><text x="47" y="20">y</text><text x="170" y="${increasing?58:86}" font-size="13">y = f(x)</text></g>`;}return `<figure class="math-diagram"><svg viewBox="0 0 490 260" role="img" aria-label="Figure 4.4 separate increasing and decreasing curves with x one less than x two and corresponding function values">${panels}</svg><figcaption>${sanitize(item.caption||'Figure 4.4')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-roller-extrema') {
+    const pts=[[60,181,'A','a'],[110,115,'B','c₁'],[205,245,'C','c₂'],[315,62,'D','c₃'],[365,145,'E','c₄'],[445,42,'F','b']];let labels='';pts.forEach(([x,y,name,tick])=>labels+=`<circle cx="${x}" cy="${y}" r="3"/><path d="M${x} ${y}V220" stroke="#64748b" stroke-dasharray="2 3"/><text x="${x-6}" y="${y-8}" font-size="14">${name}</text><text x="${x-7}" y="${name==='C'?214:239}" font-size="13">${tick}</text>`);return `<figure class="math-diagram"><svg viewBox="0 0 500 290" role="img" aria-label="Figure 4.6 source roller-coaster curve with peaks B and D, valleys C and E, endpoints A and F, and printed No tangent labels"><path d="M35 220H474M42 254V29" stroke="#111827" fill="none"/><path d="M60 181Q80 115 110 115C145 115 161 245 205 245Q253 245 315 62Q324 156 365 145Q408 150 445 42" stroke="#9f1239" stroke-width="2" fill="none"/>${labels}<text x="118" y="111" font-size="12">No tangent</text><text x="50" y="205" font-size="12">No tangent</text><text x="327" y="62" font-size="12">No tangent</text><text x="369" y="168" font-size="12">No tangent</text><text x="26" y="238">O</text><text x="44" y="25">f(x)</text><text x="479" y="223">x</text></svg><figcaption>${sanitize(item.caption||'Figure 4.6')} — original labels retained; see source clarification.</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-critical-sign-pair') {
+    const curve=renderMathDiagram({caption:'Figure 4.7 — function graph',diagram:{type:'source-function-graph',title:'f(x) = x³ − 3x² − 9x + 1',polynomial:[1,-9,-3,1],xMin:-3,xMax:6,yMin:-35,yMax:35,xTicks:[-2,0,1,2,3,4,5],yTicks:[-30,-20,-10,0,10,20,30],points:textbookDiagram.points||[[-1,6,'(−1,6)'],[0,1,'(0,1)'],[3,-26,'(3,−26)']]}},chapterNumber);
+    return `<div class="math-source-figure-pair"><figure class="math-diagram"><svg viewBox="0 0 480 160" role="img" aria-label="Figure 4.7 derivative sign chart: positive before minus one, negative between minus one and three, positive after three"><path d="M35 105H440M170 36V118M305 36V118" stroke="#111827" fill="none"/><path d="M58 78L131 34M202 34L268 78M337 78L410 34" stroke="#9f1239" stroke-width="2" fill="none"/><text x="65" y="23" font-size="15">f′ &gt; 0</text><text x="213" y="23" font-size="15">f′ &lt; 0</text><text x="348" y="23" font-size="15">f′ &gt; 0</text><text x="155" y="142">x = −1</text><text x="289" y="142">x = 3</text><text x="91" y="124">−2</text><text x="228" y="124">0</text><text x="367" y="124">4</text><circle cx="97" cy="105" r="3"/><circle cx="234" cy="105" r="3"/><circle cx="372" cy="105" r="3"/></svg><figcaption>Figure 4.7 — derivative sign chart</figcaption></figure>${curve}</div>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-tangent-normal-increment') {
+    return `<figure class="math-diagram"><svg class="math-source-graph" viewBox="0 0 500 330" role="img" aria-label="Figure 4.2: secant PQ, tangent and perpendicular normal at P, showing delta x, delta y, dx and dy separately" style="width:100%;max-width:500px;background:#fff"><path d="M85 282H425M112 306V44" stroke="#111827" fill="none"/><path d="M112 253Q225 261 310 182Q348 139 369 65" stroke="#111827" stroke-width="2" fill="none"/><path d="M164 266L414 166" stroke="#475569" fill="none"/><path d="M225 242L156 69" stroke="#475569" fill="none"/><path d="M225 242L351 148" stroke="#334155" fill="none"/><path d="M112 242H351V148H112M225 242V282" stroke="#475569" stroke-dasharray="3 3" fill="none"/><path d="M351 242V192H374M225 263H351M225 275H351M95 148V242" stroke="#334155" fill="none"/><circle cx="225" cy="242" r="3"/><circle cx="351" cy="148" r="3"/><text x="179" y="232" font-size="13">P(x₀,y₀)</text><text x="282" y="199" font-size="13" transform="rotate(-37 282 199)">Secant line</text><text x="158" y="62" font-size="13">Normal line</text><text x="376" y="94" font-size="13">y = f(x)</text><text x="358" y="158" font-size="13">Tangent line</text><text x="72" y="245" font-size="13">y₀</text><text x="46" y="152" font-size="13">y₀ + Δy</text><text x="59" y="202" font-size="14">Δy</text><text x="362" y="221" font-size="14">dy</text><text x="273" y="260" font-size="13">Δx</text><text x="275" y="290" font-size="13">dx</text><text x="217" y="305" font-size="13">x₀</text><text x="326" y="305" font-size="13">x₀ + Δx</text><text x="95" y="303" font-size="13">O</text><text x="119" y="45">y</text><text x="432" y="286">x</text><path d="M268 242A43 43 0 0 0 264 226" stroke="#111827" fill="none"/><text x="270" y="236" font-size="14">θ</text></svg><figcaption>${sanitize(item.caption||'Figure 4.2')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-taylor-offset') {
+    return `<figure class="math-diagram"><svg class="math-source-graph" viewBox="0 0 480 310" role="img" aria-label="Figure 4.1: schematic increasing curve y equals f(x), with x zero minus h, x zero and x zero plus h and their function values" style="width:100%;max-width:480px;background:#fff"><path d="M125 260H405M160 284V28" stroke="#111827" fill="none"/><path d="M160 255Q207 255 254 195Q289 147 316 47" stroke="#111827" stroke-width="2" fill="none"/><path d="M204 235V260M160 195H254V260M160 75H310V260" stroke="#334155" stroke-dasharray="3 3" fill="none"/><circle cx="204" cy="235" r="3"/><circle cx="254" cy="195" r="3"/><circle cx="310" cy="75" r="3"/><path d="M205 247H253M207 243L204 247L207 251M250 243L254 247L250 251M255 247H309M258 243L254 247L258 251M307 243L310 247L307 251" stroke="#111827" fill="none"/><text x="221" y="242" font-size="13">h</text><text x="278" y="242" font-size="13">h</text><text x="181" y="280" font-size="13">x₀ − h</text><text x="249" y="280" font-size="13">x₀</text><text x="294" y="280" font-size="13">x₀ + h</text><text x="78" y="200" font-size="14">f(x₀)</text><text x="66" y="80" font-size="14">f(x₀ + h)</text><text x="320" y="150" font-size="14">f(x₀ + h)</text><text x="324" y="78" font-size="14">y = f(x)</text><text x="147" y="278" font-size="13">O</text><text x="163" y="25">y</text><text x="410" y="263">x</text><path d="M147 75V195" stroke="#475569" fill="none"/><text x="130" y="140" font-size="14">h</text></svg><figcaption>${sanitize(item.caption||'Figure 4.1')} — schematic source curve; no numerical scale.</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-circle-tangent') {
+    let ticks='';for(const t of [2,4,6,8])ticks+=`<text x="${70+26*t}" y="357" font-size="12" text-anchor="middle">${t}</text><text x="62" y="${344-26*t}" font-size="12" text-anchor="end">${t}</text>`;
+    return `<figure class="math-diagram"><svg class="math-source-graph" viewBox="0 0 420 400" role="img" aria-label="Circle x squared plus y squared equals 5x plus 4y, and tangent at P(5,4)" style="width:100%;max-width:420px;background:#fff"><circle cx="135" cy="288" r="${26*Math.sqrt(41)/2}" fill="#a5f3fc" stroke="#111827" stroke-width="2"/><path d="M35 340H360M70 385V28" fill="none" stroke="#111827"/><path d="M70 73.5L304 366" stroke="#9f1239" stroke-width="2"/><circle cx="200" cy="236" r="4" fill="#111827"/><text x="210" y="231" font-size="14">P(5,4)</text><text x="364" y="350">x</text><text x="78" y="28">y</text><text x="53" y="357">O</text>${ticks}</svg><figcaption>${sanitize(item.caption||'')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-motor-boats') {
+    return `<figure class="math-diagram"><svg class="math-source-graph" viewBox="0 0 440 300" role="img" aria-label="Right triangle showing northbound boat, eastbound boat and their separation" style="width:100%;max-width:440px"><path d="M90 60V260H370Z" fill="none" stroke="#334155" stroke-width="2"/><path d="M90 244H106V260" fill="none" stroke="#334155"/><path d="M84 65L90 45L96 65Z M365 254L385 260L365 266Z" fill="#0284c7"/><text x="81" y="34">N</text><text x="389" y="268">E</text><text x="214" y="282">x</text><text x="66" y="165">y</text><text x="238" y="150">z</text></svg><figcaption>${sanitize(item.caption||'')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-ladder-rates') {
+    return `<svg class="math-source-graph" viewBox="0 0 480 320" role="img" aria-label="Ladder leaning against a wall, horizontal distance x, height y, base moving away at 6 feet per minute" style="width:100%;max-width:480px;background:#fff"><path d="M55 270H405V45" fill="none" stroke="#0284c7" stroke-width="8"/><path d="M145 265L400 65" stroke="#334155" stroke-width="12"/><path d="M393 80L155 265" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 5"/><path d="M378 270V248H400" fill="none" stroke="#334155"/><path d="M145 289H85L96 283M85 289L96 295M425 90V155L419 145M425 155L431 145" fill="none" stroke="#dc2626" stroke-width="2"/><text x="210" y="302" font-size="18">x</text><text x="439" y="173" font-size="18">y</text><text x="51" y="312" font-size="14">6 ft/min</text><text x="274" y="132" font-size="14">Ladder</text></svg>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-secant-increment') {
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title)}</figcaption><svg viewBox="0 0 480 320" role="img" aria-label="Secant PQ with horizontal increment delta x and vertical increment delta y"><path d="M100 250H420 M100 270V20" stroke="#111827" fill="none"/><path d="M100 250Q210 250 320 66Q338 35 345 20" stroke="#111827" fill="none" stroke-width="2"/><path d="M160 255L350 31" stroke="#475569" fill="none"/><path d="M100 219H320V66H100 M190 219V250 M320 219V250" stroke="#64748b" stroke-dasharray="4 3" fill="none"/><path d="M190 239H320 M82 66V219" stroke="#111827"/>${textbookDiagram.tangent?'<path d="M145 250L365 99" stroke="#0369a1" fill="none" stroke-width="1.5"/><text x="340" y="142" font-size="12">Tangent line</text><text x="342" y="164" font-size="11">Δy ≠ dy</text><text x="342" y="180" font-size="11">Δx ≠ dx</text>':''}<circle cx="190" cy="219" r="3"/><circle cx="320" cy="66" r="3"/><text x="179" y="207">P</text><text x="306" y="58">Q</text><text x="326" y="222">R</text><text x="174" y="270">x</text><text x="294" y="289">x + Δx</text><text x="234" y="235">Δx</text><text x="50" y="147">Δy</text><text x="107" y="29">y = f(x)</text><text x="350" y="61">f(x)</text><text x="337" y="106">secant PQ</text><text x="427" y="254">x</text></svg><figcaption>${sanitize(item.caption||'')}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-function-graph') {
+    const g = textbookDiagram, plotLeft=g.equalAspect?135:100, plotRight=g.equalAspect?345:380, px = x => plotLeft + (x-g.xMin)*(plotRight-plotLeft)/(g.xMax-g.xMin), py = y => 240-(y-g.yMin)*210/(g.yMax-g.yMin);
+    let svg = '';
+    const xGridStep = g.xGridStep || 1;
+    for (let x=Math.ceil(g.xMin/xGridStep)*xGridStep; x<=g.xMax; x+=xGridStep) svg += `<path d="M${px(x)} 30V240" stroke="#cbd5e1" stroke-width=".5"/>`;
+    const yGridStep = g.yGridStep || 1;
+    for (let y=Math.ceil(g.yMin/yGridStep)*yGridStep; y<=g.yMax; y+=yGridStep) svg += `<path d="M${plotLeft} ${py(y)}H${plotRight}" stroke="#cbd5e1" stroke-width=".5"/>`;
+    const hasXAxis=g.yMin<=0 && g.yMax>=0, hasYAxis=g.xMin<=0 && g.xMax>=0;
+    if(hasXAxis) svg+=`<path d="M${plotLeft} ${py(0)}H${plotRight}" stroke="#111827" fill="none"/>`;
+    if(hasYAxis) svg+=`<path d="M${px(0)} 30V240" stroke="#111827" fill="none"/>`;
+    g.xTicks.forEach(x => svg += `<text x="${px(x)}" y="${(hasXAxis?py(0):240)+14}" font-size="11" text-anchor="middle">${x}</text>`);
+    g.yTicks.forEach(y => svg += `<text x="${(hasYAxis?px(0):plotLeft)-6}" y="${py(y)+4}" font-size="11" text-anchor="end">${y}</text>`);
+    let d = '';
+    if(g.logarithm) {
+      const signs=g.logarithm.power===2?[-1,1]:[1];
+      signs.forEach(sign=>{let drawing=false;for(let i=0;i<=1000;i++){const y=g.yMin+(g.yMax-g.yMin)*i/1000,exponent=(y-(g.logarithm.offset||0))/(g.logarithm.scale||1),x=g.logarithm.shift+sign*g.logarithm.base**(exponent/(g.logarithm.power||1))/(g.logarithm.inputFactor||1);if(x<g.xMin||x>g.xMax){drawing=false;continue;}d+=`${drawing?'L':'M'}${px(x)} ${py(y)} `;drawing=true;}});
+    }
+    if(g.ellipse) {
+      for(let i=0;i<=720;i++){const angle=i*Math.PI/360,x=g.ellipse.a*Math.cos(angle),y=g.ellipse.b*Math.sin(angle);d+=`${i?'L':'M'}${px(x)} ${py(y)} `;}d+='Z';
+    }
+    if(g.hyperbola) {
+      [-1,1].forEach(sign=>{let drawing=false;for(let i=0;i<=1000;i++){const y=g.yMin+(g.yMax-g.yMin)*i/1000,x=sign*Math.sqrt(1+y*y);if(x<g.xMin||x>g.xMax){drawing=false;continue;}d+=`${drawing?'L':'M'}${px(x)} ${py(y)} `;drawing=true;}});
+    }
+    if(g.diagonalAsymptotes) svg+=`<path d="M${px(g.xMin)} ${py(g.yMin)}L${px(g.xMax)} ${py(g.yMax)} M${px(g.xMin)} ${py(g.yMax)}L${px(g.xMax)} ${py(g.yMin)}" fill="none" stroke="#4d7c0f" stroke-width=".8" stroke-dasharray="4 3"/>`;
+    if(g.sidewaysParabola) {
+      let drawing=false;
+      for(let i=0;i<=1000;i++){const y=g.yMin+(g.yMax-g.yMin)*i/1000,x=g.sidewaysParabola.coefficient*(y-g.sidewaysParabola.center)**2;if(x<g.xMin||x>g.xMax){drawing=false;continue;}d+=`${drawing?'L':'M'}${px(x)} ${py(y)} `;drawing=true;}
+    }
+    (g.linearSegments||[]).forEach(segment=>d+=`M${px(segment[0])} ${py(segment[1])}L${px(segment[2])} ${py(segment[3])} `);
+    if (g.asymptote != null) svg += `<path d="M${px(g.asymptote)} 30V240" stroke="#b91c6b" fill="none"/>`;
+    if (g.xLabel) svg += `<text x="240" y="267" font-size="11" text-anchor="middle">${sanitize(g.xLabel)}</text>`;
+    if (g.yLabel) svg += `<text x="85" y="140" font-size="11" text-anchor="middle">${sanitize(g.yLabel)}</text>`;
+    if (g.exponentialPair) {
+      g.exponentialPair.forEach(rate=>{let drawing=false;for(let i=0;i<=800;i++){const x=g.xMin+(g.xMax-g.xMin)*i/800,y=Math.exp(rate*x);if(y<g.yMin||y>g.yMax){drawing=false;continue;}d+=`${drawing?'L':'M'}${px(x)} ${py(y)} `;drawing=true;}});
+    } else if (g.functionSpec) {
+      let drawing=false;
+      for(let i=0;i<=1000;i++){const x=g.xMin+(g.xMax-g.xMin)*i/1000,kind=g.functionSpec.kind,y=kind==='sin-squared-plus-x'?Math.sin(x)**2+x:kind==='arctan-offset'?Math.atan(x)-7:kind==='coth-three-x'?1/Math.tanh(3*x):Math.sqrt(x-8);if(!Number.isFinite(y)||y<g.yMin||y>g.yMax){drawing=false;continue;}d+=`${drawing?'L':'M'}${px(x)} ${py(y)} `;drawing=true;}
+    } else if (g.absolute || g.polynomial || g.exponential || g.reciprocalShift != null) {
+      let drawing = false;
+      for (let i=0;i<=800;i++) { const x=g.xMin+(g.xMax-g.xMin)*i/800, y=g.absolute ? Math.abs(g.absolute.a*x+g.absolute.b) : g.polynomial ? g.polynomial.reduce((sum,coefficient,power)=>sum+coefficient*x**power,0) : g.exponential ? g.exponential.initial*Math.exp(g.exponential.rate*x) : 1/(x+g.reciprocalShift); if(!Number.isFinite(y) || y<g.yMin || y>g.yMax) {drawing=false;continue;} d += `${drawing?'L':'M'}${px(x)} ${py(y)} `; drawing=true; }
+    } else if (g.trace) {
+      g.trace.forEach(points => {d += `M${px(points[0][0])} ${py(points[0][1])} C${points.slice(1).map(point=>`${px(point[0])} ${py(point[1])}`).join(' ')} `;});
+    }
+    svg += `<path d="${d}" fill="none" stroke="#111827" stroke-width="1.7"/>`;
+    (g.extraPolynomials||[]).forEach(coefficients=>{let extra='',drawing=false;for(let i=0;i<=800;i++){const x=g.xMin+(g.xMax-g.xMin)*i/800,y=coefficients.reduce((sum,c,p)=>sum+c*x**p,0);if(y<g.yMin||y>g.yMax){drawing=false;continue;}extra+=`${drawing?'L':'M'}${px(x)} ${py(y)} `;drawing=true;}svg+=`<path d="${extra}" fill="none" stroke="#475569" stroke-width="1.2"/>`;});
+    if(g.ellipse && g.ellipse.clockwise) {
+      const motionMarker='math-motion-'+String(item.id||'source').replace(/[^A-Za-z0-9_-]/g,'');
+      svg+=`<defs><marker id="${motionMarker}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#9f1239"/></marker></defs>`;
+      [0,Math.PI/2,Math.PI,3*Math.PI/2].forEach(angle=>svg+=`<path d="M${px(g.ellipse.a*Math.cos(angle+.12))} ${py(g.ellipse.b*Math.sin(angle+.12))}L${px(g.ellipse.a*Math.cos(angle-.12))} ${py(g.ellipse.b*Math.sin(angle-.12))}" fill="none" stroke="#9f1239" marker-end="url(#${motionMarker})"/>`);
+    }
+    if(g.rays) {
+      const rayMarker='math-ray-'+String(item.id||'source').replace(/[^A-Za-z0-9_-]/g,'');
+      svg+=`<defs><marker id="${rayMarker}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#111827"/></marker></defs>`;
+      g.rays.forEach(segment=>svg+=`<path d="M${px(segment[0])} ${py(segment[1])}L${px(segment[2])} ${py(segment[3])}" fill="none" stroke="#111827" marker-end="url(#${rayMarker})"/>`);
+    }
+    (g.openPoints||[]).forEach(point=>svg+=`<circle cx="${px(point[0])}" cy="${py(point[1])}" r="3.5" fill="white" stroke="#111827" stroke-width="1.5"/>`);
+    (g.closedPoints||[]).forEach(point=>svg+=`<circle cx="${px(point[0])}" cy="${py(point[1])}" r="3.5" fill="#111827"/>`);
+    if(g.positionVectors) {
+      const markerId='math-vector-'+String(item.id||'source').replace(/[^A-Za-z0-9_-]/g,'');
+      svg+=`<defs><marker id="${markerId}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#9f1239"/></marker></defs>`;
+      g.positionVectors.forEach(point=>svg+=`<path d="M${px(0)} ${py(0)}L${px(point[0])} ${py(point[1])}" stroke="#9f1239" fill="none" marker-end="url(#${markerId})"/>`);
+      svg+=`<path d="M${px(0)} ${py(0)}L${px(-1)} ${py(2)}" stroke="#15803d" fill="none" marker-end="url(#${markerId})"/><text x="${px(-1)-6}" y="${py(2)-5}" font-size="11">u</text>`;
+    }
+    (g.points||[]).forEach(point=>svg+=`<circle cx="${px(point[0])}" cy="${py(point[1])}" r="2.5" fill="#111827"/><text x="${px(point[0])+(point[0]<0?-6:6)}" y="${py(point[1])-6}" text-anchor="${point[0]<0?'end':'start'}" font-size="11">${sanitize(point[2])}</text>`);
+    (g.annotations||[]).forEach(label=>svg+=`<text x="${px(label[0])}" y="${py(label[1])}" font-size="11">${sanitize(label[2])}</text>`);
+    (g.endpoints || []).forEach(point => svg += `<circle cx="${px(point[0])}" cy="${py(point[1])}" r="3" fill="#111827"/>`);
+    if(g.domainRange) svg += `<path d="M${px(-6)} ${py(-1.3)}H${px(2)} M${px(4.3)} ${py(0)}V${py(4)}" stroke="#9f1239" stroke-width="1.8"/><text x="${px(-2)}" y="${py(-1.3)+13}" font-size="11" text-anchor="middle">Domain</text><text x="${px(4.3)+12}" y="${py(2)}" font-size="11" transform="rotate(-90 ${px(4.3)+12} ${py(2)})" text-anchor="middle">Range</text>`;
+    return `<figure class="math-diagram"><figcaption>${sanitize(g.title)}</figcaption><svg viewBox="0 0 480 280" role="img" aria-label="${sanitize(item.caption+' '+g.title)}">${svg}</svg><figcaption>${sanitize(item.caption)}</figcaption></figure>`;
+  }
+  if (textbookDiagram && textbookDiagram.type === 'source-reciprocal-graph') {
+    const px = x => 240 + 11 * x, py = y => 140 - 11 * y;
+    let svg = '';
+    for (let tick = -10; tick <= 10; tick++) {
+      svg += `<path d="M${px(tick)} 30V250 M130 ${py(tick)}H350" stroke="${tick % 5 === 0 ? '#256b8c' : '#8fc5d3'}" stroke-width="${tick % 5 === 0 ? .9 : .5}" fill="none"/>`;
+    }
+    svg += `<path d="M130 140H350 M240 30V250" stroke="#111827" fill="none"/><path d="M218 30V250" stroke="#b91c6b" stroke-width="1.4" fill="none"/>`;
+    for (const tick of [-10,-5,0,5,10]) {
+      svg += `<text x="${px(tick)}" y="154" text-anchor="middle" font-size="10">${tick}</text>`;
+      if (tick) svg += `<text x="246" y="${py(tick)+4}" font-size="10">${tick}</text>`;
+    }
+    let path = '', drawing = false;
+    for (let i = 0; i <= 2000; i++) {
+      const x = -10 + i / 100, y = 1 / (x + 2);
+      if (!Number.isFinite(y) || Math.abs(y) > 10) { drawing = false; continue; }
+      path += `${drawing ? 'L' : 'M'}${px(x)} ${py(y)} `; drawing = true;
+    }
+    svg += `<path d="${path}" stroke="#111827" stroke-width="1.6" fill="none"/>`;
+    return `<figure class="math-diagram"><figcaption>${sanitize(textbookDiagram.title)}</figcaption><svg viewBox="0 0 480 280" role="img" aria-label="Figure 2.1: reciprocal function one over x plus two, undefined at x equals minus two">${svg}</svg><figcaption>${sanitize(item.caption)}</figcaption></figure>`;
+  }
   if (unit === 1 && textbookDiagram) {
     const safe = value => sanitize(String(value == null ? "" : value));
     const diagramId = "md-" + String(item.id || item.title || "figure").replace(/[^A-Za-z0-9_-]/g, "");
@@ -14780,18 +16199,29 @@ function renderMathDiagram(item, chapterNumber) {
     if (textbookDiagram.type === "quadratic-graph") {
       const g = textbookDiagram, x0 = Number(g.xMin), x1 = Number(g.xMax), y0 = Number(g.yMin), y1 = Number(g.yMax);
       const px = x => 72 + (x - x0) * 336 / (x1 - x0), py = y => 238 - (y - y0) * 202 / (y1 - y0);
+      const axisY = g.axisY == null ? 0 : Number(g.axisY);
       let svg = "";
-      for (let x = Math.ceil(x0); x <= x1; x++) { svg += '<line class="math-diagram-grid" x1="' + px(x) + '" y1="36" x2="' + px(x) + '" y2="238"/>'; svg += label(px(x), py(0) + 17, x); }
-      for (let y = Math.ceil(y0 / 2) * 2; y <= y1; y += 2) { svg += '<line class="math-diagram-grid" x1="72" y1="' + py(y) + '" x2="408" y2="' + py(y) + '"/>'; if (y !== 0) svg += label(61, py(y) + 4, y, "end"); }
-      svg += '<line class="math-diagram-axis" x1="72" y1="' + py(0) + '" x2="412" y2="' + py(0) + '"/><line class="math-diagram-axis" x1="' + px(0) + '" y1="238" x2="' + px(0) + '" y2="32"/>';
-      svg += label(420, py(0) - 7, g.xLabel || "x", "start") + label(px(0) + 10, 31, g.yLabel || "y", "start");
+      const xTicks = g.xTicks || Array.from({length:Math.floor(x1)-Math.ceil(x0)+1}, (_,i) => Math.ceil(x0)+i);
+      const yTicks = g.yTicks || Array.from({length:Math.floor((y1-Math.ceil(y0/2)*2)/2)+1}, (_,i) => Math.ceil(y0/2)*2+i*2);
+      xTicks.forEach(x => { svg += g.grid === false ? '<line class="math-diagram-axis" x1="'+px(x)+'" y1="'+(py(axisY)-3)+'" x2="'+px(x)+'" y2="'+(py(axisY)+3)+'"/>' : '<line class="math-diagram-grid" x1="' + px(x) + '" y1="36" x2="' + px(x) + '" y2="238"/>'; svg += label(px(x), py(axisY) + 17, x); });
+      yTicks.forEach(y => { svg += g.grid === false ? '<line class="math-diagram-axis" x1="'+(px(0)-3)+'" y1="'+py(y)+'" x2="'+(px(0)+3)+'" y2="'+py(y)+'"/>' : '<line class="math-diagram-grid" x1="72" y1="' + py(y) + '" x2="408" y2="' + py(y) + '"/>'; if (y !== 0) svg += label(px(0)-11, py(y) + 4, y, "end"); });
+      svg += '<line class="math-diagram-axis" x1="72" y1="' + py(axisY) + '" x2="412" y2="' + py(axisY) + '"/><line class="math-diagram-axis" x1="' + px(0) + '" y1="238" x2="' + px(0) + '" y2="32"/>';
+      svg += label(420, py(axisY) - 7, g.xLabel == null ? 'x' : g.xLabel, "start") + label(px(0) + 10, 31, g.yLabel == null ? 'y' : g.yLabel, "start");
       let d = "";
       for (let i = 0; i <= 100; i++) { const x = x0 + (x1 - x0) * i / 100, y = g.a * x * x + g.b * x + g.c; d += (i ? " L" : "M") + px(x) + " " + py(y); }
-      svg += '<path class="math-diagram-graphline" d="' + d + '"/>';
+      svg += '<path class="math-diagram-graphline" style="'+(g.colour ? 'stroke:'+safe(g.colour) : '')+'" d="' + d + '"/>';
       (g.points || []).forEach(point => { svg += '<circle class="math-diagram-point" cx="' + px(point.x) + '" cy="' + py(point.y) + '" r="4"/>' + label(px(point.x) + 8, py(point.y) - 9, point.label, "start"); });
       return caption(g.title || "Graph of a quadratic function") + svg + '</svg></figure>';
     }
     if (textbookDiagram.type === "unit-circle") {
+      if (textbookDiagram.xTicks) {
+        const g = textbookDiagram, scale = 202 / (g.yMax-g.yMin), px = x => 240 + x*scale, py = y => 140-y*scale;
+        let svg = '<line class="math-diagram-axis" x1="'+px(g.xMin)+'" y1="140" x2="'+px(g.xMax)+'" y2="140"/><line class="math-diagram-axis" x1="240" y1="'+py(g.yMin)+'" x2="240" y2="'+py(g.yMax)+'"/>';
+        g.xTicks.forEach(x => { svg += '<line class="math-diagram-axis" x1="'+px(x)+'" y1="137" x2="'+px(x)+'" y2="143"/>'+label(px(x),157,x); });
+        g.yTicks.forEach(y => { svg += '<line class="math-diagram-axis" x1="237" y1="'+py(y)+'" x2="243" y2="'+py(y)+'"/>'+label(229,py(y)+4,y,'end'); });
+        svg += '<circle class="math-diagram-graphline" style="stroke:'+safe(g.colour || '#075985')+'" cx="240" cy="140" r="'+scale+'" fill="none"/>';
+        return caption(g.title || 'Unit circle')+svg+'</svg></figure>';
+      }
       const cx = 240, cy = 140, r = 82;
       let svg = '<line class="math-diagram-axis" x1="75" y1="' + cy + '" x2="405" y2="' + cy + '"/><line class="math-diagram-axis" x1="' + cx + '" y1="32" x2="' + cx + '" y2="248"/>';
       svg += '<circle class="math-diagram-graphline" cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none"/><circle class="math-diagram-point" cx="' + (cx + r) + '" cy="' + cy + '" r="4"/>';
@@ -14799,21 +16229,29 @@ function renderMathDiagram(item, chapterNumber) {
       return caption(textbookDiagram.title || "Unit circle") + svg + '</svg></figure>';
     }
     if (textbookDiagram.type === "secant-graph") {
-      const x0 = -2 * Math.PI, x1 = 2 * Math.PI, y0 = -4, y1 = 4;
+      const g = textbookDiagram;
+      const x0 = -2 * Math.PI, x1 = 2 * Math.PI, y0 = g.yMin == null ? -4 : g.yMin, y1 = g.yMax == null ? 4 : g.yMax;
       const px = x => 66 + (x - x0) * 348 / (x1 - x0), py = y => 238 - (y - y0) * 198 / (y1 - y0);
       let svg = '<line class="math-diagram-axis" x1="60" y1="' + py(0) + '" x2="420" y2="' + py(0) + '"/><line class="math-diagram-axis" x1="' + px(0) + '" y1="30" x2="' + px(0) + '" y2="244"/>';
       const ticks = [[-2*Math.PI,"−2π"],[-1.5*Math.PI,"−3π/2"],[-Math.PI,"−π"],[-.5*Math.PI,"−π/2"],[0,"0"],[.5*Math.PI,"π/2"],[Math.PI,"π"],[1.5*Math.PI,"3π/2"],[2*Math.PI,"2π"]];
-      ticks.forEach(([x,t]) => { svg += '<line class="math-diagram-grid" x1="' + px(x) + '" y1="34" x2="' + px(x) + '" y2="238"/>' + label(px(x), py(0) + 17, t); });
+      ticks.forEach(([x,t]) => {
+        svg += g.yTicks ? '<line class="math-diagram-axis" x1="'+px(x)+'" y1="'+(py(0)-3)+'" x2="'+px(x)+'" y2="'+(py(0)+3)+'"/>' : '<line class="math-diagram-grid" x1="' + px(x) + '" y1="34" x2="' + px(x) + '" y2="238"/>';
+        if (g.yTicks && t.includes('/')) {
+          const [numerator,denominator] = t.split('/');
+          svg += '<text class="math-diagram-label" style="font-size:11px;" x="'+px(x)+'" y="'+(py(0)+15)+'" text-anchor="middle">'+safe(numerator)+'</text><line class="math-diagram-axis" x1="'+(px(x)-11)+'" y1="'+(py(0)+18)+'" x2="'+(px(x)+11)+'" y2="'+(py(0)+18)+'"/><text class="math-diagram-label" style="font-size:11px;" x="'+px(x)+'" y="'+(py(0)+30)+'" text-anchor="middle">'+safe(denominator)+'</text>';
+        } else svg += label(px(x),py(0)+17,t);
+      });
+      (g.yTicks || []).forEach(y => { svg += '<line class="math-diagram-axis" x1="'+(px(0)-3)+'" y1="'+py(y)+'" x2="'+(px(0)+3)+'" y2="'+py(y)+'"/>'+label(px(0)-10,py(y)+4,y,'end'); });
       let d = "", drawing = false;
       for (let i = 0; i <= 900; i++) {
         const x = x0 + (x1 - x0) * i / 900, y = 1 / Math.cos(x);
-        if (Math.abs(y) > 4) { drawing = false; continue; }
+        if (y < y0 || y > y1) { drawing = false; continue; }
         d += (drawing ? " L" : " M") + px(x) + " " + py(y); drawing = true;
       }
-      svg += '<path class="math-diagram-graphline" d="' + d + '"/>' + label(424, 37, "y=sec(x)", "start");
+      svg += '<path class="math-diagram-graphline" style="'+(g.colour ? 'stroke:'+safe(g.colour) : '')+'" d="' + d + '"/>' + (g.yTicks ? label(240,22,g.plotTitle || 'Graph of Secant Function') + label(px(Math.PI),py(0)+45,'x') : label(424, 37, "y=sec(x)", "start"));
       for (let k = -3; k <= 3; k += 2) {
         const x = k * Math.PI / 2;
-        svg += '<line class="math-diagram-construction" x1="' + px(x) + '" y1="34" x2="' + px(x) + '" y2="238" stroke-dasharray="5 4"/>';
+        svg += '<line class="math-diagram-construction" style="'+(g.asymptoteColour ? 'stroke:'+safe(g.asymptoteColour) : '')+'" x1="' + px(x) + '" y1="34" x2="' + px(x) + '" y2="238" stroke-dasharray="'+(g.asymptoteDashed === false ? '' : '5 4')+'"/>';
       }
       return caption(textbookDiagram.title || "Graph of the secant function") + svg + '</svg></figure>';
     }
@@ -14894,7 +16332,7 @@ function renderMathDiagram(item, chapterNumber) {
     return svg;
   }
 
-  if (unit === 6 && textbookDiagram) {
+  if (textbookDiagram && (unit === 6 || unit === 13 || textbookDiagram.type === "frequency-table")) {
     const safe = value => sanitize(String(value == null ? "" : value));
     const id = "m6-" + String(item.id || item.num || item.title || "chart").replace(/[^A-Za-z0-9_-]/g, "") + "-" + Math.random().toString(36).slice(2, 8);
     const fig = (content, caption) => '<figure class="math-diagram"><figcaption>' + safe(caption || textbookDiagram.title || "Statistics diagram") + '</figcaption>' + content + '</figure>';
@@ -14902,7 +16340,7 @@ function renderMathDiagram(item, chapterNumber) {
     const chartSvg = (g, suffix) => {
       if (g.type === "frequency-table") {
         const rows = g.rows || [];
-        let headers = g.headers;
+        let headers = g.headers || g.columns;
         if (!headers) {
           const n = rows[0] ? rows[0].length : 0, title = String(g.title || "").toLowerCase();
           if (/quiz marks/.test(title)) headers = ["Class interval", "Class mark", "Frequency"];
@@ -16180,7 +17618,7 @@ function renderMathChapter(index) {
   const area = $("mathTopicArea");
   if (!area || !ch) return;
 
-  const totalExercises = ch.exercises ? ch.exercises.length : 0;
+  const totalExercises = ch.exercises ? (state.selectedClass === 'cls12' ? ch.exercises.filter(ex => ex.problems?.length || ex.sourceContextBlocks?.length).length : ch.exercises.length) : 0;
   const totalExamples = ch.workedExamples ? ch.workedExamples.length : 0;
   const totalSections = ch.sections ? ch.sections.length : 0;
   const comprehensiveSLOs = (typeof getComprehensiveChapterSLOBank === 'function')
@@ -16188,7 +17626,7 @@ function renderMathChapter(index) {
     : (ch.slos || {});
   const totalSLOs = ((comprehensiveSLOs.mcqs ? comprehensiveSLOs.mcqs.length : 0) +
                      (comprehensiveSLOs.shortQuestions ? comprehensiveSLOs.shortQuestions.length : 0) +
-                     (comprehensiveSLOs.longQuestions ? comprehensiveSLOs.longQuestions.length : 0)) || ((state.selectedClass === 'cls12' || state.selectedClass === 'cls7') ? 0 : 63);
+                     (comprehensiveSLOs.longQuestions ? comprehensiveSLOs.longQuestions.length : 0)) || ((state.selectedClass === 'cls12' || state.selectedClass === 'cls7' || state.selectedClass === 'cls11') ? 0 : 63);
   if (state.selectedClass === 'cls12' && !['lesson', 'examples', 'exercises', 'slos', 'formulas'].includes(state.activeMathTab)) {
     state.activeMathTab = 'lesson';
   }
@@ -16223,6 +17661,44 @@ function renderMathChapter(index) {
   switchMathTab(state.activeMathTab || 'lesson', true);
 }
 
+function renderMathSourceBlocks(blocks) {
+  const matrixTable = rows => `<table class="math-source-matrix" aria-label="Matrix" style="border-left:2px solid currentColor;border-right:2px solid currentColor;border-radius:3px;border-spacing:.65rem .2rem;text-align:center;">${rows.map(row => `<tr>${row.map(value => `<td>${sanitize(String(value))}</td>`).join('')}</tr>`).join('')}</table>`;
+  return `<div class="math-book-body">${blocks.map(block => {
+    if (block.type === 'matrixProduct') return `<div role="group" aria-label="${sanitize(block.caption||'Source matrix equation')}" style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin:1rem 0;">${block.prefix?`<span>${sanitize(block.prefix)}</span>`:''}${block.matrices.map((rows,index)=>`${index?`<span>${sanitize((block.operators||[])[index-1]||'')}</span>`:''}${matrixTable(rows)}`).join('')}<span>${sanitize(block.suffix||'')}</span></div>`;
+    if (block.type === 'dataTable') return `<div style="overflow-x:auto;margin:1rem 0;"><table style="border-collapse:collapse;text-align:center;width:100%;white-space:nowrap;"><thead><tr>${block.headers.map(value=>`<th scope="col" style="border:1px solid #94a3b8;padding:.5rem;background:#e0f2fe;">${sanitize(value)}</th>`).join('')}</tr></thead><tbody>${block.rows.map(row=>`<tr>${row.map(value=>`<td style="border:1px solid #94a3b8;padding:.4rem;">${sanitize(String(value))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+    if (block.type === 'determinant') return `<div class="math-source-determinant" style="display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:1rem 0;line-height:1.6;"><span>${sanitize(block.prefix || '')}</span><table role="img" aria-label="${sanitize(block.caption || 'Source determinant')}" style="border-collapse:collapse;border-left:2px solid #334155;border-right:2px solid #334155;text-align:center;">${block.rows.map(row=>`<tr>${row.map(cell=>`<td style="padding:.25rem .65rem;">${sanitize(String(cell))}</td>`).join('')}</tr>`).join('')}</table><span>${sanitize(block.suffix || '')}</span></div>`;
+    if (block.type === 'table') return `<div style="overflow-x:auto;margin:1rem 0;"><table style="border-collapse:collapse;text-align:center;min-width:100%;">${block.caption ? `<caption style="margin-bottom:.4rem;">${sanitize(block.caption)}</caption>` : ''}<tbody>${block.rows.map(row=>`<tr>${row.map((value,index)=> index===0 ? `<th scope="row" style="border:1px solid #94a3b8;padding:.4rem;">${sanitize(String(value))}</th>` : `<td style="border:1px solid #94a3b8;padding:.4rem;">${sanitize(String(value))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+    if (block.type === 'piecewise') return `<div style="display:flex;align-items:center;justify-content:center;gap:.5rem;margin:1rem 0;"><span>${sanitize(block.label)}</span><span aria-hidden="true" style="font-size:3rem;">{</span><table aria-label="Piecewise function">${block.rows.map(row=>`<tr>${row.map(value=>`<td style="padding:.25rem .5rem;">${sanitize(value)}</td>`).join('')}</tr>`).join('')}</table></div>`;
+    if (block.type === 'clarification') return `<p class="math-book-paragraph" style="padding:.75rem;background:#eff6ff;border-left:3px solid #2563eb;"><strong>SpaceBook clarification:</strong> ${sanitize(String(block.text).replace(/^SpaceBook clarification:\s*/i,''))}</p>`;
+    if (block.type === 'matrixExpression') return `<div class="math-source-command" style="margin:.75rem 0;padding:.75rem;background:#fffbeb;border-left:3px solid #d97706;"><div style="display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;"><span aria-label="Maple prompt">&gt; </span>${block.operands.map(matrixTable).join(`<span>${sanitize(block.operator)}</span>`)}</div><div style="display:flex;justify-content:center;margin:.6rem 0;">${matrixTable(block.rows)}</div><div style="text-align:right;">(${sanitize(String(block.number))})</div></div>`;
+    if (block.type === 'heading') return `<h4 class="math-book-subheading">${sanitize(block.text)}</h4>`;
+    if (block.type === 'list') return `<ul class="math-book-list">${block.items.map(item => `<li>${sanitize(item)}</li>`).join('')}</ul>`;
+    if (block.type === 'figure') return `<figure style="margin:1rem 0;"><img src="${sanitize(block.src)}" alt="${sanitize(block.alt)}" loading="lazy" style="${Number.isFinite(block.displayWidth)?'width:'+Math.max(1,Math.min(2560,block.displayWidth))+'px;':''}max-width:100%;height:auto;border:1px solid #cbd5e1;border-radius:6px;"><figcaption class="math-book-caption">${sanitize(block.caption)}</figcaption></figure>`;
+    if (block.type === 'diagram') return `<div class="math-source-diagram">${renderMathDiagram(block, 1)}</div>`;
+    if (block.type === 'matrix') return `<div class="math-source-command" style="margin:.75rem 0;padding:.75rem;background:#fffbeb;border-left:3px solid #d97706;overflow-wrap:anywhere;overflow-x:auto;max-width:100%;min-width:0;">${block.text ? `<div style="font-family:monospace;white-space:pre-wrap;"><span aria-label="Maple prompt">&gt; </span>${sanitize(block.text)}</div>` : ''}<div style="display:flex;align-items:center;justify-content:center;gap:.5rem;margin:.6rem 0;"><span>${sanitize(block.label || '')}</span><table class="math-source-matrix" aria-label="Matrix result" style="border-left:2px solid currentColor;border-right:2px solid currentColor;border-radius:3px;border-spacing:.65rem .2rem;text-align:center;">${block.rows.map(row => `<tr>${row.map(value => `<td>${sanitize(String(value))}</td>`).join('')}</tr>`).join('')}</table></div>${block.number != null ? `<div style="text-align:right;">(${sanitize(String(block.number))})</div>` : ''}</div>`;
+    if (block.type === 'command') return `<div class="math-source-command" style="margin:.75rem 0;padding:.75rem;background:#fffbeb;border-left:3px solid #d97706;overflow-wrap:anywhere;overflow-x:auto;max-width:100%;min-width:0;"><div style="font-family:${block.prompt===false?'inherit':'monospace'};white-space:pre-wrap;">${block.text ? `${block.prompt===false?'':'<span aria-label="Maple prompt">&gt; </span>'}${sanitize(block.text)}` : ''}</div>${block.result != null ? `<div style="text-align:center;font-weight:700;white-space:pre-wrap;margin:.35rem 0;">${sanitize(block.result)}</div>` : ''}${block.number != null ? `<div style="text-align:right;">(${sanitize(String(block.number))})</div>` : ''}</div>`;
+    return `<p class="math-book-paragraph">${sanitize(block.text)}</p>`;
+  }).join('')}</div>`;
+}
+
+function renderMathSourceOpening(ch) {
+  if (state.selectedClass !== 'cls12' || !ch.sourcePages) return '';
+  const paragraph = text => `<p style="line-height:1.8;white-space:pre-wrap;">${sanitize(text)}</p>`;
+  const front = ch.sourcePages.filter(page => typeof page.page === 'string').map(page => `
+    <section style="padding:1rem 0;border-bottom:1px solid #e2e8f0;">
+      <h3>${sanitize(page.title)}</h3>
+      ${page.paragraphs.map(paragraph).join('')}
+      ${page.contents ? `<div style="overflow-x:auto;"><table style="width:100%;text-align:left;line-height:1.8;"><thead><tr><th scope="col">Unit #</th><th scope="col">Unit Name</th><th scope="col">Page #</th></tr></thead><tbody>${page.contents.map(row => `<tr>${row.map(value => `<td style="padding:.35rem;">${sanitize(String(value))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : ''}
+    </section>`).join('');
+  const objectives = ch.sourcePages.filter(page => page.objectives).map(page => `
+    <section class="math-topic-card" style="margin-bottom:1rem;">
+      <h3>${sanitize(page.title)}</h3><h4>By the end of this unit, the students will be able to:</h4>
+      ${page.sourceDefects && page.sourceDefects.length ? `<p style="padding:.5rem;background:#fffbeb;"><strong>Source note:</strong> ${page.sourceDefects.map(sanitize).join(' ')}</p>` : ''}
+      ${page.objectives.map(group => `<h4>${sanitize(group[0])}</h4><ul>${group[1].map(item => `<li style="line-height:1.7;">${sanitize(item)}</li>`).join('')}</ul>`).join('')}
+    </section>`).join('');
+  return `${front ? `<details class="math-topic-card" style="margin-bottom:1rem;"><summary style="cursor:pointer;font-weight:700;">Book title, publication information and contents</summary>${front}</details>` : ''}${objectives}`;
+}
+
 function renderMathLesson(ch) {
   if (!ch.sections || ch.sections.length === 0) {
     return `<div style="padding:2.5rem;text-align:center;background:#fff;border-radius:12px;border:1px solid var(--border);">Detailed lesson reading for Unit ${ch.number} will be available soon.</div>`;
@@ -16232,7 +17708,7 @@ function renderMathLesson(ch) {
     <div class="math-topic-card math-accordion-card" id="math-topic-${sec.id || idx}">
       <div class="math-acc-header" onclick="toggleMathAccordion(this)">
         <div style="display:flex;align-items:center;gap:0.75rem;">
-          <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">${state.selectedClass === 'cls7' ? (String(sec.id).match(/^\d/) ? `Lesson ${sec.id}` : sec.title) : `Topic ${sec.id}`}</span>
+          <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">${state.selectedClass === 'cls7' ? (String(sec.id).match(/^\d/) ? `Lesson ${sec.id}` : sec.title) : state.selectedClass === 'cls12' ? `Topic ${(String(sec.title).match(/^\d+(?:\.\d+)*/) || [idx + 1])[0]}` : `Topic ${sec.id}`}</span>
           <h3 style="color:#0f172a;font-size:1.1rem;font-weight:700;margin:0;">
             ${sec.title}
           </h3>
@@ -16245,7 +17721,9 @@ function renderMathLesson(ch) {
       <div class="math-accordion-body" style="display:none;margin-top:1rem;border-top:1px solid #e2e8f0;padding-top:1rem;">
         <!-- Horizontal Sub-Tabs immediately below topic title -->
         <div class="topic-sub-tabs-bar" data-topic="${sec.id}">
-          ${state.selectedClass === 'cls12' || state.selectedClass === 'cls7'
+          ${state.selectedClass === 'cls12' && typeof renderMath12TopicTabs === 'function'
+            ? renderMath12TopicTabs(sec)
+            : state.selectedClass === 'cls7'
             ? `<button class="topic-sub-tab-btn active" data-subtab="english" onclick="switchMathTopicSubTab('${sec.id}', 'english', this)">📖 Lesson</button>`
             : `<button class="topic-sub-tab-btn active" data-subtab="english" onclick="switchMathTopicSubTab('${sec.id}', 'english', this)">📖 English</button>
               <button class="topic-sub-tab-btn" data-subtab="urdu" onclick="switchMathTopicSubTab('${sec.id}', 'urdu', this)">🌐 Urdu</button>
@@ -16253,7 +17731,7 @@ function renderMathLesson(ch) {
               <button class="topic-sub-tab-btn" data-subtab="exercise" onclick="switchMathTopicSubTab('${sec.id}', 'exercise', this)">✍️ Topic Exercise</button>
               <button class="topic-sub-tab-btn" data-subtab="slos" onclick="switchMathTopicSubTab('${sec.id}', 'slos', this)">🎯 Topic SLOs</button>`}
         </div>
-        ${(state.selectedClass === 'cls3' && typeof renderClass3MathDiagram === 'function' ? renderClass3MathDiagram(sec) : '') || renderMathDiagram(sec, ch.number) || renderPrimaryMathDiagram(state.selectedClass, ch.number, sec.id, sec)}
+        ${(state.selectedClass === 'cls3' && typeof renderClass3MathDiagram === 'function' ? renderClass3MathDiagram(sec) : '') || renderMathDiagram(sec, ch.number) || (state.selectedClass === 'cls2' ? renderPrimaryMathDiagram(state.selectedClass, ch.number, sec.id, sec) : '')}
         <div id="math-topic-sub-content-${sec.id}" class="topic-sub-content">
           ${renderMathTopicSubContent(sec, ch, 'english', idx)}
         </div>
@@ -16263,6 +17741,7 @@ function renderMathLesson(ch) {
 
   return `
     <div id="mathLessonList" class="math-cards-grid-target">
+      ${renderMathSourceOpening(ch)}
       ${sectionsHtml}
     </div>
   `;
@@ -16321,6 +17800,8 @@ function renderMathExamples(ch) {
         <div style="font-weight:700;font-size:1.02rem;color:#0f172a;margin-bottom:0.75rem;background:#f8fafc;padding:0.75rem 1rem;border-radius:8px;white-space:pre-line;line-height:1.6;">
           ${ex.problem}
         </div>
+        ${ex.sourceClarification ? `<p class="math-book-paragraph" style="padding:.7rem;background:#eff6ff;"><strong>SpaceBook clarification:</strong> ${sanitize(ex.sourceClarification)}</p>` : ''}
+        ${ex.sourceQuestionBlocks ? renderMathSourceBlocks(ex.sourceQuestionBlocks) : ''}
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0.75rem;margin-bottom:1rem;font-size:0.88rem;">
           <div style="background:#f1f5f9;padding:0.65rem 0.9rem;border-radius:6px;">
             <strong>Given:</strong> ${ex.given}
@@ -16329,14 +17810,16 @@ function renderMathExamples(ch) {
             <strong>Method:</strong> ${ex.method}
           </div>
         </div>
-        ${renderMathDiagram(ex, ch.number) || ((state.selectedClass === 'cls1' || state.selectedClass === 'cls2') && ch.sections && ch.sections.length ? renderPrimaryMathDiagram(state.selectedClass, ch.number, ch.sections[idx % ch.sections.length].id, ex) : '')}
+        ${renderMathDiagram(ex, ch.number) || (state.selectedClass === 'cls2' && ch.sections && ch.sections.length ? renderPrimaryMathDiagram(state.selectedClass, ch.number, ch.sections[idx % ch.sections.length].id, ex) : '')}
         <div class="math-step-box">
-          <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">Detailed Step-by-Step Execution:</div>
+          <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">${ex.solutionOrigin ? sanitize(ex.solutionOrigin) + ': ' : ''}Detailed Step-by-Step Execution:</div>
           <ol style="margin:0;padding-left:1.25rem;line-height:1.8;">
-            ${(ex.steps || (ex.solution ? [ex.solution] : [])).map(s => `<li style="margin-bottom:0.45rem;white-space:pre-line;">${s}</li>`).join('')}
+            ${(ex.steps || (ex.solution ? [ex.solution] : [])).map((s, stepIdx) => `<li ${ex.progressiveSolution ? `data-example-step="${stepIdx}"` : ''} style="margin-bottom:0.45rem;white-space:pre-line;${ex.progressiveSolution && stepIdx > 0 ? 'display:none;' : ''}">${s}</li>`).join('')}
           </ol>
+          ${ex.progressiveSolution && ex.steps && ex.steps.length > 1 ? `<button type="button" class="math-toolbar-btn" data-revealed="1" onclick="revealMathExampleStep(this)">Next step</button> <button type="button" class="math-toolbar-btn" onclick="resetMathExampleSteps(this)">Start again</button>` : ''}
         </div>
-        <div class="math-result-pill" style="margin-top:0.75rem;">
+        <div class="math-result-pill${ex.solutionBlocks ? ' math-result-with-graphs' : ''}" ${ex.progressiveSolution ? 'data-example-answer' : ''} style="margin-top:0.75rem;${ex.progressiveSolution && ex.steps && ex.steps.length > 1 ? 'display:none;' : ''}">
+          ${ex.solutionBlocks ? renderMathSourceBlocks(ex.solutionBlocks) : ''}
           <strong>Answer:</strong> ${ex.answer || 'Proved.'}
         </div>
       </div>
@@ -16348,6 +17831,44 @@ function renderMathExamples(ch) {
       ${examplesHtml}
     </div>
   `;
+}
+
+function revealMathExampleStep(button) {
+  const body = button.closest('.math-accordion-body');
+  const steps = body.querySelectorAll('[data-example-step]');
+  const revealed = Math.min(Number(button.dataset.revealed || 1) + 1, steps.length);
+  steps.forEach((step, index) => { step.style.display = index < revealed ? '' : 'none'; });
+  button.dataset.revealed = String(revealed);
+  if (revealed === steps.length) {
+    body.querySelector('[data-example-answer]').style.display = '';
+    button.disabled = true;
+    button.textContent = 'Solution complete';
+  }
+}
+
+function resetMathExampleSteps(button) {
+  const body = button.closest('.math-accordion-body');
+  body.querySelectorAll('[data-example-step]').forEach((step, index) => { step.style.display = index ? 'none' : ''; });
+  body.querySelector('[data-example-answer]').style.display = 'none';
+  const next = body.querySelector('[data-revealed]');
+  next.dataset.revealed = '1';
+  next.disabled = false;
+  next.textContent = 'Next step';
+}
+
+function renderMathQuestionPreview(question) {
+  const value = String(question || '');
+  const firstLine = value.split('\n')[0];
+  let end = Math.min(95, firstLine.length);
+  // A preview must not split a fraction, root or another inline equation.
+  const equations = /\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\]|\$[^$]*\$/g;
+  for (const match of firstLine.matchAll(equations)) {
+    if (match.index < end && match.index + match[0].length > end) {
+      end = match.index > 0 ? match.index : match[0].length;
+      break;
+    }
+  }
+  return renderMathEscapedText(firstLine.slice(0, end).trimEnd()) + (value.length > end ? '...' : '');
 }
 
 function switchMathEx(exKey, activeCat) {
@@ -16416,11 +17937,11 @@ function switchMathEx(exKey, activeCat) {
             <div style="display:flex;align-items:center;gap:0.6rem;flex-wrap:wrap;">
               <span class="math-badge" style="background:#0284c7;color:#fff;">${p.qNo || ('Q' + (pIdx + 1))}</span>
               <span style="font-weight:700;color:#0f172a;font-size:0.96rem;">
-                ${renderMathEscapedText(p.question.split('\n')[0].slice(0, 95))}${p.question.length > 95 ? '...' : ''}
+                ${renderMathQuestionPreview(p.question)}
               </span>
             </div>
             <div style="display:flex;align-items:center;gap:0.55rem;">
-                  <span style="font-size:0.78rem;color:#15803d;font-weight:700;background:#dcfce7;padding:0.2rem 0.55rem;border-radius:4px;">${p.solution || p.answer ? 'Solution' : 'Textbook source'}</span>
+                  <span style="font-size:0.78rem;color:${p.solutionStatus && p.solutionStatus.startsWith('partial') ? '#a16207' : p.solution || p.answer ? '#15803d' : '#a16207'};font-weight:700;background:${p.solutionStatus && p.solutionStatus.startsWith('partial') ? '#fef3c7' : p.solution || p.answer ? '#dcfce7' : '#fef3c7'};padding:0.2rem 0.55rem;border-radius:4px;">${p.solutionStatus && p.solutionStatus.startsWith('partial') ? 'Partial solution' : p.solution || p.answer ? 'Solved' : (state.selectedClass === 'cls7' ? 'Question' : 'Textbook source')}</span>
               <span class="math-acc-icon">+</span>
             </div>
           </div>
@@ -16429,13 +17950,18 @@ function switchMathEx(exKey, activeCat) {
               ${state.selectedClass === 'cls7' ? renderTextbookLessonBody(p.question) : p.question}
             </div>
             ${Array.isArray(p.options) && p.options.length ? `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.45rem;margin:0 0 .85rem;padding:.65rem .8rem;background:#fff;border:1px solid #cbd5e1;border-radius:8px;">${p.options.map(option => `<div style="display:flex;align-items:flex-start;gap:.55rem;padding:.3rem .2rem;line-height:1.5;"><span aria-hidden="true" style="width:14px;height:14px;flex:0 0 14px;border:1.5px solid #475569;border-radius:50%;margin-top:3px;"></span><span>${option}</span></div>`).join('')}</div>` : ''}
-            ${renderMathDiagram(p, ch.number) || (visualSection && (state.selectedClass === 'cls1' || state.selectedClass === 'cls2') ? renderPrimaryMathDiagram(state.selectedClass, ch.number, visualSection.id, p) : '')}
-            <div class="math-step-box" style="white-space:pre-line;line-height:1.8;margin-bottom:0.85rem;">
-              <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">${p.solution || p.answer ? 'Solution:' : 'Source solution not included:'}</div>
-              ${p.solution || p.answer ? (p.solution || p.answer) : 'This source transcription contains the question only.'}
-            </div>
-            <div class="math-result-pill">
+            ${p.sourceQuestionBlocks ? renderMathSourceBlocks(p.sourceQuestionBlocks) : ''}
+            ${p.solutionStatus && p.solutionStatus.startsWith('partial') ? `<p class="math-book-paragraph" style="padding:.7rem;background:#fffbeb;"><strong>Verification note:</strong> ${sanitize(p.solutionStatus.slice(9))}</p>` : ''}
+            ${p.sourceClarification ? `<p class="math-book-paragraph" style="padding:.7rem;background:#eff6ff;"><strong>SpaceBook clarification:</strong> ${sanitize(p.sourceClarification)}</p>` : ''}
+            ${renderMathDiagram(p, ch.number) || (state.selectedClass === 'cls2' && visualSection ? renderPrimaryMathDiagram(state.selectedClass, ch.number, visualSection.id, p) : '')}
+            ${p.solution || p.answer ? `<div class="math-step-box" style="white-space:pre-line;line-height:1.8;margin-bottom:0.85rem;overflow-wrap:anywhere;">
+              <div style="font-weight:700;color:#0369a1;margin-bottom:0.4rem;">${p.solutionOrigin ? sanitize(p.solutionOrigin) + ': ' : ''}Worked answer</div>
+              ${p.progressiveSolution && p.steps ? `<ol style="padding-left:1.25rem;">${p.steps.map((step,index)=>`<li data-example-step="${index}" style="margin-bottom:.5rem;${index ? 'display:none;' : ''}">${sanitize(step)}</li>`).join('')}</ol><button type="button" class="math-toolbar-btn" data-revealed="1" onclick="revealMathExampleStep(this)">Next step</button> <button type="button" class="math-toolbar-btn" onclick="resetMathExampleSteps(this)">Start again</button>` : state.selectedClass === 'cls7' ? renderTextbookLessonBody(p.solution || p.answer) : (p.solution || p.answer)}
+            </div>` : (state.selectedClass === 'cls7' ? '<div class="math-step-box" style="color:#92400e;margin-bottom:.85rem;">Answer needs a scan check.</div>' : '')}
+            <div class="math-result-pill${p.solutionBlocks ? ' math-result-with-graphs' : ''}" ${p.progressiveSolution ? 'data-example-answer style="display:none;overflow-wrap:anywhere;"' : ''}>
               ${p.answer ? `<strong>Answer:</strong> ${p.answer}` : ''}
+              ${p.solutionDiagram ? renderMathDiagram({...p, diagram:p.solutionDiagram}, ch.number) : ''}
+              ${p.solutionBlocks ? renderMathSourceBlocks(p.solutionBlocks) : ''}
             </div>
           </div>
         </div>
@@ -16444,9 +17970,13 @@ function switchMathEx(exKey, activeCat) {
   `;
 
   const activeExBtn = document.querySelector(`.math-sub-tab-btn[data-ex="${exKey}"]`);
+  if (currentEx.sourceContextBlocks) {
+    container.insertAdjacentHTML('beforeend', renderMathSourceBlocks(currentEx.sourceContextBlocks));
+  }
   if (activeExBtn) {
     autoScrollToActiveTab(activeExBtn);
   }
+  typesetChapterMath(container);
 }
 
 function renderMathExercises(ch) {
@@ -16621,12 +18151,14 @@ function renderMathSloCategoryContent(category, slos) {
 // ─── COMPREHENSIVE CHAPTER-WIDE BOARD SLO ENGINE ─────────
 // Provides logically ordered, high-yield board questions with easy-to-understand explanations
 function getComprehensiveChapterSLOBank(ch) {
+  if (state.selectedClass === 'cls11') return typeof window.getMath11QuestionBank === 'function' ? window.getMath11QuestionBank(ch) : {};
   const chNum = (ch && ch.number) ? ch.number : 1;
 
   // Class 12 uses textbook-specific question data. Do not reuse the legacy
   // Class 9 matrix bank merely because both chapters are numbered Unit 1.
-  if (state.selectedClass === 'cls12') return (ch && ch.slos) || {};
+  if (state.selectedClass === 'cls12') return typeof getMath12StudyBank === 'function' ? getMath12StudyBank(ch) : (ch && ch.slos) || {};
   if (state.selectedClass === 'cls7') return (ch && ch.slos) || {};
+  if (state.selectedClass === 'cls8') return (ch && ch.slos) || {};
 
   if ((state.selectedClass === 'cls1' || state.selectedClass === 'cls2') && ch && ch.slos) return ch.slos;
 
@@ -17261,7 +18793,49 @@ function renderMathSLOs(ch) {
 }
 
 function renderMathFormulaSheet(ch) {
-  const formulas = ch.formulaSheet || [];
+  if (ch.sourceSummaryBlocks) {
+    return `<div class="math-reviewed-summary"><p class="math-book-paragraph"><strong>Textbook summary — printed page ${sanitize(String(ch.sourceSummaryReferences[0].page))}</strong></p>${renderMathSourceBlocks(ch.sourceSummaryBlocks)}</div>`;
+  }
+  const formulas = ch.formulaSheet || ch.formulas || [];
+
+  const definitionsHtml = (ch.definitions && ch.definitions.length > 0)
+    ? ch.definitions.map(d => `
+        <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f172a;">${sanitize(d.term || d.title || '')}:</strong> ${sanitize(d.definition || d.text || '')}
+        </div>
+      `).join('')
+    : `
+        <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f172a;">Matrix:</strong> A rectangular array or arrangement of real numbers enclosed within square brackets [ ].
+        </div>
+        <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f172a;">Order of Matrix (m × n):</strong> The dimension determined by m rows and n columns. Written as Rows-by-Columns.
+        </div>
+        <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f172a;">Square Matrix:</strong> A matrix where number of rows equals number of columns (m = n).
+        </div>
+        <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f172a;">Transpose of Matrix:</strong> Formed by interchanging rows into columns or columns into rows. Denoted Aᵗ.
+        </div>
+        <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f172a;">Symmetric Matrix:</strong> A square matrix where Aᵗ = A. Skew-Symmetric if Aᵗ = -A.
+        </div>
+        <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f172a;">Singular Matrix:</strong> A matrix whose determinant is 0 (|A| = 0). Non-singular if |A| ≠ 0.
+        </div>`;
+
+  const rulesHtml = (ch.rules && ch.rules.length > 0)
+    ? ch.rules.map(r => `<li>${typeof r === 'string' ? sanitize(r) : `<strong>${sanitize(r.title || '')}:</strong> ${sanitize(r.text || '')}`}</li>`).join('')
+    : `
+        <li><strong>Arthur Cayley (1860):</strong> Introduced matrix theory to simplify systems of linear algebraic equations.</li>
+        <li><strong>Commutative Law:</strong> Addition is commutative (A + B = B + A), but matrix multiplication is generally <em>not commutative</em> (AB ≠ BA).</li>
+        <li><strong>Transpose Product Rule:</strong> (AB)ᵗ = Bᵗ Aᵗ (the order of matrices is reversed!).</li>
+        <li><strong>Inverse Product Rule:</strong> (AB)⁻¹ = B⁻¹ A⁻¹ (order of matrices reversed).</li>
+        <li><strong>Existence of Multiplicative Inverse:</strong> Inverse A⁻¹ exists if and only if matrix A is <em>non-singular</em> (|A| ≠ 0).</li>
+        <li><strong>Linear Systems:</strong> Can be solved either by the Matrix Inversion Method (X = A⁻¹B) or Cramer's Rule. Both methods produce identical answers.</li>`;
+
+  const summaryText = ch.englishSummary || ch.summary || 'Mastery of fundamental definitions, formulas, and step-by-step methods in this unit ensures comprehensive preparation for KPK Board examinations.';
+  const urduSummaryText = ch.urduSummary ? `<div dir="rtl" style="font-family:'Jameel Noori Nastaleeq','Urdu Typesetting',serif;margin-top:0.6rem;color:#14532d;line-height:1.8;">${sanitize(ch.urduSummary)}</div>` : '';
 
   return `
     <div>
@@ -17281,13 +18855,13 @@ function renderMathFormulaSheet(ch) {
           ${formulas.map(f => `
             <div class="math-formula-card">
               <div style="font-size:0.82rem;font-weight:700;color:#0284c7;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.35rem;">
-                ${f.name}
+                ${sanitize(f.name || '')}
               </div>
               <div style="font-family:'Consolas','Courier New',monospace;font-size:1.15rem;font-weight:700;color:#0f172a;margin-bottom:0.5rem;background:#ffffff;padding:0.5rem 0.75rem;border-radius:6px;border:1px solid #cbd5e1;display:inline-block;">
-                ${f.formula}
+                ${sanitize(f.formula || '')}
               </div>
               <div style="font-size:0.86rem;color:#475569;line-height:1.5;">
-                ${f.note}
+                ${sanitize(f.note || '')}
               </div>
             </div>
           `).join('')}
@@ -17300,24 +18874,7 @@ function renderMathFormulaSheet(ch) {
           <span>📖</span> Core Definitions
         </h4>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0.75rem;font-size:0.88rem;color:#334155;">
-          <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
-            <strong style="color:#0f172a;">Matrix:</strong> A rectangular array or arrangement of real numbers enclosed within square brackets [ ].
-          </div>
-          <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
-            <strong style="color:#0f172a;">Order of Matrix (m × n):</strong> The dimension determined by m rows and n columns. Written as Rows-by-Columns.
-          </div>
-          <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
-            <strong style="color:#0f172a;">Square Matrix:</strong> A matrix where number of rows equals number of columns (m = n).
-          </div>
-          <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
-            <strong style="color:#0f172a;">Transpose of Matrix:</strong> Formed by interchanging rows into columns or columns into rows. Denoted Aᵗ.
-          </div>
-          <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
-            <strong style="color:#0f172a;">Symmetric Matrix:</strong> A square matrix where Aᵗ = A. Skew-Symmetric if Aᵗ = -A.
-          </div>
-          <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border:1px solid #e2e8f0;">
-            <strong style="color:#0f172a;">Singular Matrix:</strong> A matrix whose determinant is 0 (|A| = 0). Non-singular if |A| ≠ 0.
-          </div>
+          ${definitionsHtml}
         </div>
       </div>
 
@@ -17327,12 +18884,7 @@ function renderMathFormulaSheet(ch) {
           <span>📌</span> Rules, Laws &amp; Mathematical Facts
         </h4>
         <ul style="margin:0;padding-left:1.25rem;color:#334155;font-size:0.9rem;line-height:1.75;">
-          <li><strong>Arthur Cayley (1860):</strong> Introduced matrix theory to simplify systems of linear algebraic equations.</li>
-          <li><strong>Commutative Law:</strong> Addition is commutative (A + B = B + A), but matrix multiplication is generally <em>not commutative</em> (AB ≠ BA).</li>
-          <li><strong>Transpose Product Rule:</strong> (AB)ᵗ = Bᵗ Aᵗ (the order of matrices is reversed!).</li>
-          <li><strong>Inverse Product Rule:</strong> (AB)⁻¹ = B⁻¹ A⁻¹ (order of matrices reversed).</li>
-          <li><strong>Existence of Multiplicative Inverse:</strong> Inverse A⁻¹ exists if and only if matrix A is <em>non-singular</em> (|A| ≠ 0).</li>
-          <li><strong>Linear Systems:</strong> Can be solved either by the Matrix Inversion Method (X = A⁻¹B) or Cramer's Rule. Both methods produce identical answers.</li>
+          ${rulesHtml}
         </ul>
       </div>
 
@@ -17342,7 +18894,8 @@ function renderMathFormulaSheet(ch) {
           <span>📋</span> Chapter Summary &amp; Rapid Revision Points
         </h4>
         <div style="font-size:0.9rem;color:#166534;line-height:1.7;">
-          Unit 1 establishes foundational linear algebra for Class 9 KPK Board students. Mastery of matrix operations (addition, scalar multiplication, matrix multiplication, determinant evaluation, adjoint computation, and solving 2-variable systems) ensures high marks on compulsory Board Section A, B, and C questions.
+          ${sanitize(summaryText)}
+          ${urduSummaryText}
         </div>
       </div>
     </div>
@@ -17463,11 +19016,14 @@ function showWordHoverTooltip(wordEl) {
   const cleanWord = word.toLowerCase().replace(/[^a-z0-9'-]/g, '');
   if (!cleanWord || cleanWord.length < 2) return;
 
-  const lookup = (typeof lookupEngWord === 'function') 
+  const chemistrySourceMeaning = state.activeSubject === 'chem'
+    ? (state.selectedClass === 'cls9' ? DATA.chemChapters?.[state.selectedSubjChapter || 0]?.sourceWordMeanings?.[cleanWord]
+      : state.selectedClass === 'cls12' && typeof CHEM_12_DATA !== 'undefined' ? CHEM_12_DATA[state.selectedSubjChapter || 0]?.sourceWordMeanings?.[cleanWord] : null) : null;
+  const lookup = chemistrySourceMeaning || ((typeof lookupEngWord === 'function') 
     ? lookupEngWord(cleanWord) 
     : ((typeof window !== 'undefined' && window.ENG_URDU_DICT && window.ENG_URDU_DICT[cleanWord]) 
         ? window.ENG_URDU_DICT[cleanWord] 
-        : ((typeof ENG_URDU_DICT !== 'undefined' && ENG_URDU_DICT[cleanWord]) ? ENG_URDU_DICT[cleanWord] : null));
+        : ((typeof ENG_URDU_DICT !== 'undefined' && ENG_URDU_DICT[cleanWord]) ? ENG_URDU_DICT[cleanWord] : null)));
 
   let urdu = (lookup && lookup.u && lookup.u !== 'اردو معنی' && lookup.u !== 'اردو معنی / مفہوم' && lookup.u.toLowerCase() !== cleanWord) ? lookup.u : '';
   const pashto = (lookup && lookup.p && lookup.p.toLowerCase() !== cleanWord) ? lookup.p : '';
@@ -17540,6 +19096,7 @@ if (typeof window !== 'undefined' && window.addEventListener) {
 }
 
 function toggleSentenceTranslation(el, event) {
+  if (event) event.stopPropagation();
   hideWordHoverTooltip();
   if (!el) return;
   const paraIdx = el.dataset.para;
@@ -17708,12 +19265,12 @@ function getSectionParagraphsWithTranslations(sec, ch) {
 }
 
 // ─── INTERACTIVE PARAGRAPH TOKENIZER ─────────────────────
-function renderInteractiveParagraphHtml(text, urduText, pashtoText, paraIdx) {
+function renderInteractiveParagraphHtml(text, urduText, pashtoText, paraIdx, preserveAlignedParagraph = false) {
   if (!text) return '';
 
-  const enSentences = splitSentenceText(text, false);
-  const urSentences = urduText ? splitSentenceText(urduText, true) : [];
-  const psSentences = pashtoText ? splitSentenceText(pashtoText, true) : [];
+  const enSentences = preserveAlignedParagraph ? [text.trim()] : splitSentenceText(text, false);
+  const urSentences = urduText ? (preserveAlignedParagraph ? [urduText.trim()] : splitSentenceText(urduText, true)) : [];
+  const psSentences = pashtoText ? (preserveAlignedParagraph ? [pashtoText.trim()] : splitSentenceText(pashtoText, true)) : [];
 
   if (enSentences.length === 0) enSentences.push(text.trim());
 
@@ -17780,9 +19337,14 @@ function playParaTTSFromBtn(btn, lang) {
   if (box) playParagraphWithRealtimeTTS(box, lang);
 }
 
+function class11BookByKey(key) { const r = window.CLASS11_BOOKS || {}; return r[key] || null; }
+function class11BookBySubject(id) { const r = window.CLASS11_BOOKS || {}; return Object.values(r).find(b => b.subjectId === id) || null; }
+
 function getSubjectChapterList(subjKey, classId) {
   if (subjKey === 'math') return getMathChapterList(classId);
+  { const _b11 = class11BookByKey(subjKey); if (_b11 && (classId === 'cls11' || state.selectedClass === 'cls11')) return _b11.data; }
   if (subjKey === 'eng') {
+    if ((classId === 'cls11' || state.selectedClass === 'cls11') && typeof ENG_11_DATA !== 'undefined') return ENG_11_DATA;
     const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
     if (isCls5 && typeof ENGLISH_5_DATA !== 'undefined' && Array.isArray(ENGLISH_5_DATA)) {
       return ENGLISH_5_DATA;
@@ -17790,6 +19352,14 @@ function getSubjectChapterList(subjKey, classId) {
     const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
     if (isCls6 && typeof ENGLISH_6_DATA !== 'undefined' && Array.isArray(ENGLISH_6_DATA)) {
       return ENGLISH_6_DATA;
+    }
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof ENGLISH_7_DATA !== 'undefined' && Array.isArray(ENGLISH_7_DATA)) {
+      return ENGLISH_7_DATA;
+    }
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof ENGLISH_8_DATA !== 'undefined' && Array.isArray(ENGLISH_8_DATA)) {
+      return ENGLISH_8_DATA;
     }
     const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
     if (isCls12 && typeof ENGLISH_12_DATA !== 'undefined' && Array.isArray(ENGLISH_12_DATA)) {
@@ -17811,11 +19381,21 @@ function getSubjectChapterList(subjKey, classId) {
     if (isCls1 && typeof ENGLISH_1_DATA !== 'undefined' && Array.isArray(ENGLISH_1_DATA)) {
       return ENGLISH_1_DATA;
     }
+    // Class 9 English: page-by-page textbook (ENGLISH_DATA stays as the older data and the cls10 fallback).
+    if ((classId === 'cls9' || state.selectedClass === 'cls9') && typeof ENGLISH_9_BOOK !== 'undefined' && Array.isArray(ENGLISH_9_BOOK)) return ENGLISH_9_BOOK;
     return (typeof ENGLISH_DATA !== 'undefined' && Array.isArray(ENGLISH_DATA))
       ? ENGLISH_DATA
       : ((typeof DATA !== "undefined" && DATA && (DATA.englishChapters || DATA.engChapters)) ? (DATA.englishChapters || DATA.engChapters) : []);
   }
   if (subjKey === 'urdu') {
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof URDU_7_DATA !== 'undefined' && Array.isArray(URDU_7_DATA)) {
+      return URDU_7_DATA;
+    }
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof URDU_8_DATA !== 'undefined' && Array.isArray(URDU_8_DATA)) {
+      return URDU_8_DATA;
+    }
     const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
     if (isCls5 && typeof URDU_5_DATA !== 'undefined' && Array.isArray(URDU_5_DATA)) {
       return URDU_5_DATA;
@@ -17841,19 +19421,23 @@ function getSubjectChapterList(subjKey, classId) {
       : ((typeof DATA !== "undefined" && DATA && (DATA.urduChapters || DATA.urduLessons)) ? (DATA.urduChapters || DATA.urduLessons) : []);
   }
   if (subjKey === 'phys') {
+    if (classId === 'cls11' && typeof PHYS_11_DATA !== 'undefined') return PHYS_11_DATA;
     if (classId === 'cls12' && typeof PHYS_12_DATA !== 'undefined') return PHYS_12_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && DATA && DATA.phys10Chapters) return DATA.phys10Chapters;
     return (DATA && DATA.physChapters) ? DATA.physChapters : [];
   }
   if (subjKey === 'chem') {
-    if (classId === 'cls12' && typeof CHEM_12_DATA !== 'undefined') return CHEM_12_DATA;
+    if (classId === 'cls11' && typeof CHEM_11_DATA !== 'undefined') return CHEM_11_DATA;
+      if (classId === 'cls12' && typeof CHEM_12_DATA !== 'undefined') return CHEM_12_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && DATA && DATA.chem10Chapters) return DATA.chem10Chapters;
     return (DATA && DATA.chemChapters) ? DATA.chemChapters : [];
   }
+  if (subjKey === 'stat' && classId === 'cls11' && typeof STAT_11_DATA !== 'undefined') return STAT_11_DATA;
   if (subjKey === 'stat' && classId === 'cls12' && typeof STAT_12_DATA !== 'undefined') return STAT_12_DATA;
   if (subjKey === 'bio') {
+    if (classId === 'cls11' && typeof BIO_11_DATA !== 'undefined') return BIO_11_DATA;
     const isCls12 = (classId === 'cls12' || state.selectedClass === 'cls12');
     if (isCls12 && typeof BIOLOGY_12_DATA !== 'undefined' && Array.isArray(BIOLOGY_12_DATA)) {
       return BIOLOGY_12_DATA;
@@ -17873,11 +19457,23 @@ function getSubjectChapterList(subjKey, classId) {
     if (isCls10 && typeof PAKSTUDY_10_DATA !== 'undefined' && Array.isArray(PAKSTUDY_10_DATA)) {
       return PAKSTUDY_10_DATA;
     }
+    // Class 9 Pakistan Studies: page-by-page textbook (PAKSTUDY_DATA stays as the older data and the cls10 fallback).
+    if ((classId === 'cls9' || state.selectedClass === 'cls9') && typeof PAKSTUDY_9_BOOK !== 'undefined' && Array.isArray(PAKSTUDY_9_BOOK)) return PAKSTUDY_9_BOOK;
     return (typeof PAKSTUDY_DATA !== 'undefined' && Array.isArray(PAKSTUDY_DATA))
       ? PAKSTUDY_DATA
       : ((typeof DATA !== "undefined" && DATA && DATA.pakstudyChapters) ? DATA.pakstudyChapters : []);
   }
   if (subjKey === 'isl') {
+    // Class 10 studies the same Islamiat (lazmi) book as Class 9, so both classes open the Class 9 book.
+    if ((classId === 'cls9' || state.selectedClass === 'cls9' || classId === 'cls10' || state.selectedClass === 'cls10') && typeof ISLAMIAT_9_DATA !== 'undefined' && Array.isArray(ISLAMIAT_9_DATA)) return ISLAMIAT_9_DATA;
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof ISLAMIAT_7_DATA !== 'undefined' && Array.isArray(ISLAMIAT_7_DATA)) {
+      return ISLAMIAT_7_DATA;
+    }
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof ISLAMIAT_8_DATA !== 'undefined' && Array.isArray(ISLAMIAT_8_DATA)) {
+      return ISLAMIAT_8_DATA;
+    }
     const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
     if (isCls5 && typeof ISLAMIAT_5_DATA !== 'undefined' && Array.isArray(ISLAMIAT_5_DATA)) {
       return ISLAMIAT_5_DATA;
@@ -17921,6 +19517,10 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.nazira1Chapters) ? DATA.nazira1Chapters : [];
   }
   if (subjKey === 'pashto') {
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof PASHTO_8_DATA !== 'undefined' && Array.isArray(PASHTO_8_DATA)) {
+      return PASHTO_8_DATA;
+    }
     const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
     if (isCls5 && typeof PASHTO_5_DATA !== 'undefined' && Array.isArray(PASHTO_5_DATA)) {
       return PASHTO_5_DATA;
@@ -17954,6 +19554,14 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.gk2Chapters) ? DATA.gk2Chapters : [];
   }
   if (subjKey === 'comp') {
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof COMPUTER_7_DATA !== 'undefined' && Array.isArray(COMPUTER_7_DATA)) {
+      return COMPUTER_7_DATA;
+    }
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof COMPUTER_8_DATA !== 'undefined' && Array.isArray(COMPUTER_8_DATA)) {
+      return COMPUTER_8_DATA;
+    }
     const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
     if (isCls6 && typeof COMPUTER_6_DATA !== 'undefined' && Array.isArray(COMPUTER_6_DATA)) {
       return COMPUTER_6_DATA;
@@ -17962,6 +19570,7 @@ function getSubjectChapterList(subjKey, classId) {
     if (isCls12 && typeof COMP_12_DATA !== 'undefined' && Array.isArray(COMP_12_DATA)) {
       return COMP_12_DATA;
     }
+    if ((classId === 'cls9' || state.selectedClass === 'cls9') && typeof COMPUTER_9_DATA !== 'undefined' && Array.isArray(COMPUTER_9_DATA)) return COMPUTER_9_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof COMPUTER_10_DATA !== 'undefined' && Array.isArray(COMPUTER_10_DATA)) {
       return COMPUTER_10_DATA;
@@ -17969,23 +19578,48 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.compChapters) ? DATA.compChapters : [];
   }
   if (subjKey === 'sci') {
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof GENERAL_SCIENCE_7_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_7_DATA)) return GENERAL_SCIENCE_7_DATA;
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof GENERAL_SCIENCE_8_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_8_DATA)) return GENERAL_SCIENCE_8_DATA;
     const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
     if (isCls6 && typeof GENERAL_SCIENCE_6_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_6_DATA)) return GENERAL_SCIENCE_6_DATA;
+    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    if (isCls5 && typeof GENERAL_SCIENCE_5_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_5_DATA)) return GENERAL_SCIENCE_5_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof GENERAL_SCIENCE_10_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_10_DATA)) return GENERAL_SCIENCE_10_DATA;
     const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    if (isCls9 && typeof GENERAL_SCIENCE_9_BOOK !== 'undefined' && Array.isArray(GENERAL_SCIENCE_9_BOOK)) return GENERAL_SCIENCE_9_BOOK;
     if (isCls9 && typeof GENERAL_SCIENCE_9_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_9_DATA)) return GENERAL_SCIENCE_9_DATA;
     if (typeof GENERAL_SCIENCE_10_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_10_DATA)) return GENERAL_SCIENCE_10_DATA;
     if (typeof GENERAL_SCIENCE_9_DATA !== 'undefined' && Array.isArray(GENERAL_SCIENCE_9_DATA)) return GENERAL_SCIENCE_9_DATA;
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.genSci10Chapters : DATA.genSci9Chapters)) ? (isCls10 ? DATA.genSci10Chapters : DATA.genSci9Chapters) : [];
   }
   if (subjKey === 'geo') {
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof GEOGRAPHY_7_DATA !== 'undefined' && Array.isArray(GEOGRAPHY_7_DATA)) return GEOGRAPHY_7_DATA;
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof GEOGRAPHY_8_DATA !== 'undefined' && Array.isArray(GEOGRAPHY_8_DATA)) return GEOGRAPHY_8_DATA;
     if (typeof GEOGRAPHY_6_DATA !== 'undefined' && Array.isArray(GEOGRAPHY_6_DATA)) return GEOGRAPHY_6_DATA;
     return (typeof DATA !== 'undefined' && DATA && DATA.geo6Chapters) ? DATA.geo6Chapters : [];
   }
   if (subjKey === 'hist') {
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof HISTORY_7_DATA !== 'undefined' && Array.isArray(HISTORY_7_DATA)) return HISTORY_7_DATA;
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof HISTORY_8_DATA !== 'undefined' && Array.isArray(HISTORY_8_DATA)) return HISTORY_8_DATA;
     if (typeof HISTORY_6_DATA !== 'undefined' && Array.isArray(HISTORY_6_DATA)) return HISTORY_6_DATA;
     return (typeof DATA !== 'undefined' && DATA && DATA.hist6Chapters) ? DATA.hist6Chapters : [];
+  }
+  if (subjKey === 'hg') {
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof GEOGRAPHY_7_DATA !== 'undefined' && typeof HISTORY_7_DATA !== 'undefined') {
+      return GEOGRAPHY_7_DATA.concat(HISTORY_7_DATA);
+    }
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof GEOGRAPHY_8_DATA !== 'undefined' && typeof HISTORY_8_DATA !== 'undefined') {
+      return GEOGRAPHY_8_DATA.concat(HISTORY_8_DATA);
+    }
   }
   if (subjKey === 'civics') {
     if (typeof CIVICS_12_DATA !== 'undefined') return CIVICS_12_DATA;
@@ -17996,6 +19630,10 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.econ12Chapters) ? DATA.econ12Chapters : [];
   }
   if (subjKey === 'hpe') {
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof HPE_7_DATA !== 'undefined' && Array.isArray(HPE_7_DATA)) return HPE_7_DATA;
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof HPE_8_DATA !== 'undefined' && Array.isArray(HPE_8_DATA)) return HPE_8_DATA;
     const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
     if (isCls6 && typeof HPE_6_DATA !== 'undefined' && Array.isArray(HPE_6_DATA)) return HPE_6_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
@@ -18006,22 +19644,35 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.hpe10Chapters : (isCls9 ? DATA.hpe9Chapters : DATA.hpe12Chapters))) ? (isCls10 ? DATA.hpe10Chapters : (isCls9 ? DATA.hpe9Chapters : DATA.hpe12Chapters)) : [];
   }
   if (subjKey === 'drawing') {
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof DRAWING_7_DATA !== 'undefined' && Array.isArray(DRAWING_7_DATA)) return DRAWING_7_DATA;
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof DRAWING_8_DATA !== 'undefined' && Array.isArray(DRAWING_8_DATA)) return DRAWING_8_DATA;
     const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
     if (isCls6 && typeof DRAWING_6_DATA !== 'undefined' && Array.isArray(DRAWING_6_DATA)) return DRAWING_6_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof DRAWING_10_DATA !== 'undefined' && Array.isArray(DRAWING_10_DATA)) return DRAWING_10_DATA;
     const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
     if (isCls9 && typeof DRAWING_9_DATA !== 'undefined' && Array.isArray(DRAWING_9_DATA)) return DRAWING_9_DATA;
+    const isCls2 = (classId === 'cls2' || state.selectedClass === 'cls2');
+    if (isCls2 && typeof DRAWING_2_DATA !== 'undefined' && Array.isArray(DRAWING_2_DATA)) return DRAWING_2_DATA;
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.drawing10Chapters : DATA.drawing9Chapters)) ? (isCls10 ? DATA.drawing10Chapters : DATA.drawing9Chapters) : [];
   }
   if (subjKey === 'arabic') {
-    if (typeof ARABIC_6_DATA !== 'undefined' && Array.isArray(ARABIC_6_DATA)) return ARABIC_6_DATA;
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof ARABIC_7_DATA !== 'undefined' && Array.isArray(ARABIC_7_DATA)) return ARABIC_7_DATA;
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof ARABIC_8_DATA !== 'undefined' && Array.isArray(ARABIC_8_DATA)) return ARABIC_8_DATA;
+    const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
+    if (isCls6 && typeof ARABIC_6_DATA !== 'undefined' && Array.isArray(ARABIC_6_DATA)) return ARABIC_6_DATA;
     return (typeof DATA !== 'undefined' && DATA && DATA.arabic6Chapters) ? DATA.arabic6Chapters : [];
   }
   if (subjKey === 'islopt') {
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
     if (isCls10 && typeof ISLAMIAT_IKHTIARI_10_DATA !== 'undefined' && Array.isArray(ISLAMIAT_IKHTIARI_10_DATA)) return ISLAMIAT_IKHTIARI_10_DATA;
     const isCls9 = (classId === 'cls9' || state.selectedClass === 'cls9');
+    // Class 9 and Class 10 study the same Islamiat Ikhtiari book: Class 9 shows the source-reviewed Class 10 book.
+    if (isCls9 && typeof ISLAMIAT_IKHTIARI_10_DATA !== 'undefined' && Array.isArray(ISLAMIAT_IKHTIARI_10_DATA)) return ISLAMIAT_IKHTIARI_10_DATA;
     if (isCls9 && typeof ISLAMIAT_IKHTIARI_9_DATA !== 'undefined' && Array.isArray(ISLAMIAT_IKHTIARI_9_DATA)) return ISLAMIAT_IKHTIARI_9_DATA;
     if (typeof ISLAMIAT_OPT_12_DATA !== 'undefined') return ISLAMIAT_OPT_12_DATA;
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.islopt10Chapters : (isCls9 ? DATA.islopt9Chapters : DATA.islamiatOpt12Chapters))) ? (isCls10 ? DATA.islopt10Chapters : (isCls9 ? DATA.islopt9Chapters : DATA.islamiatOpt12Chapters)) : [];
@@ -18031,6 +19682,10 @@ function getSubjectChapterList(subjKey, classId) {
     return (typeof DATA !== 'undefined' && DATA && DATA.islHist12Chapters) ? DATA.islHist12Chapters : [];
   }
   if (subjKey === 'quran') {
+    const isCls7 = (classId === 'cls7' || state.selectedClass === 'cls7');
+    if (isCls7 && typeof MUTALIA_QURAN_7_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_7_DATA)) return MUTALIA_QURAN_7_DATA;
+    const isCls8 = (classId === 'cls8' || state.selectedClass === 'cls8');
+    if (isCls8 && typeof MUTALIA_QURAN_8_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_8_DATA)) return MUTALIA_QURAN_8_DATA;
     const isCls6 = (classId === 'cls6' || state.selectedClass === 'cls6');
     if (isCls6 && typeof MUTALIA_QURAN_6_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_6_DATA)) return MUTALIA_QURAN_6_DATA;
     const isCls10 = (classId === 'cls10' || state.selectedClass === 'cls10');
@@ -18039,6 +19694,18 @@ function getSubjectChapterList(subjKey, classId) {
     if (isCls9 && typeof MUTALIA_QURAN_9_DATA !== 'undefined' && Array.isArray(MUTALIA_QURAN_9_DATA)) return MUTALIA_QURAN_9_DATA;
     if (typeof QURAN_12_DATA !== 'undefined') return QURAN_12_DATA;
     return (typeof DATA !== 'undefined' && DATA && (isCls10 ? DATA.quran10Chapters : (isCls9 ? DATA.quran9Chapters : DATA.quran12Chapters))) ? (isCls10 ? DATA.quran10Chapters : (isCls9 ? DATA.quran9Chapters : DATA.quran12Chapters)) : [];
+  }
+  if (subjKey === 'sst') {
+    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    if (isCls5 && typeof SOCIAL_STUDIES_5_DATA !== 'undefined' && Array.isArray(SOCIAL_STUDIES_5_DATA)) return SOCIAL_STUDIES_5_DATA;
+    if (typeof SOCIAL_STUDIES_DATA !== 'undefined' && Array.isArray(SOCIAL_STUDIES_DATA)) return SOCIAL_STUDIES_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.sst5Chapters) ? DATA.sst5Chapters : [];
+  }
+  if (subjKey === 'sstum') {
+    const isCls5 = (classId === 'cls5' || state.selectedClass === 'cls5');
+    if (isCls5 && typeof SOCIAL_STUDIES_UM_5_DATA !== 'undefined' && Array.isArray(SOCIAL_STUDIES_UM_5_DATA)) return SOCIAL_STUDIES_UM_5_DATA;
+    if (typeof SOCIAL_STUDIES_UM_DATA !== 'undefined' && Array.isArray(SOCIAL_STUDIES_UM_DATA)) return SOCIAL_STUDIES_UM_DATA;
+    return (typeof DATA !== 'undefined' && DATA && DATA.sstUm5Chapters) ? DATA.sstUm5Chapters : [];
   }
   return [];
 }
@@ -18056,9 +19723,19 @@ function openSubjectWorkspace(classId, subjKey, subjObj) {
   const cls = DATA.classes.find(c => c.id === classId) || { name: 'Class 9' };
   const theme = SUBJECT_THEMES[subjKey] || SUBJECT_THEMES.math;
   const chList = getSubjectChapterList(subjKey, classId);
+  if (classId === 'cls11' && (subjKey === 'phys' || subjKey === 'bio' || subjKey === 'stat' || subjKey === 'eng' || class11BookByKey(subjKey)) && !chList[state.selectedSubjChapter]) state.selectedSubjChapter = 0;
   const subjName = (subjObj && subjObj.name) ? subjObj.name : (subjKey.toUpperCase());
   const matchedBook = (typeof DATA !== 'undefined' && DATA.books) ? DATA.books.find(b => (b.action === (subjObj ? subjObj.id : '') || b.id === `b-${subjObj ? subjObj.id : ''}`)) : null;
-  const pdfFile = (subjObj && subjObj.pdf) ? subjObj.pdf : (matchedBook && matchedBook.pdfPath ? matchedBook.pdfPath : `assets/books/${cls.name.replace(' ', '-')}-${subjName}-KPK.pdf`);
+  const pdfFile = classId === 'cls11' && subjKey === 'phys'
+    ? 'file:///D:/SpaceBook/Books/11th/11th%20physics/pdf/physicsfull.pdf'
+    : classId === 'cls11' && subjKey === 'bio'
+    ? 'file:///D:/SpaceBook/Books/11th/11th%20bio/pdf/bio1.pdf'
+    : classId === 'cls11' && subjKey === 'stat'
+    ? 'file:///D:/SpaceBook/Books/11th/11th%20stastic/pdf/Statistics%20book%2011th%20KPK_part_01_of_08.pdf'
+    : classId === 'cls11' && subjKey === 'eng'
+    ? 'file:///D:/SpaceBook/Books/11th/11english/pdf/english1.pdf'
+    : (classId === 'cls11' && class11BookByKey(subjKey) && class11BookByKey(subjKey).pdf) ? class11BookByKey(subjKey).pdf
+    : (subjObj && subjObj.pdf) ? subjObj.pdf : (matchedBook && matchedBook.pdfPath ? matchedBook.pdfPath : `assets/books/${cls.name.replace(' ', '-')}-${subjName}-KPK.pdf`);
 
   // Explicitly hide any breadcrumb/dashboard banners to keep exact layout
   const subNavBar = $("subpage-nav-bar");
@@ -18090,7 +19767,7 @@ function openSubjectWorkspace(classId, subjKey, subjObj) {
           <button onclick="goToSubjects('${classId}')" class="math-sidebar-back-btn" title="Back to Subjects">←</button>
           <div class="math-sidebar-title-wrap">
             <span class="math-sidebar-title">CHAPTERS</span>
-            <span class="math-sidebar-sub">${chList.length} Complete Units</span>
+            <span class="math-sidebar-sub">${classId === 'cls11' && (subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'stat' || subjKey === 'eng' || class11BookByKey(subjKey)) ? 'Source review in progress' : `${chList.length} Complete Units`}</span>
           </div>
         </div>
         <div class="math-ch-list">${chapBtns}</div>
@@ -18111,7 +19788,7 @@ function selectSubjectChapter(subjKey, index, classId) {
   document.querySelectorAll(".bio-ch-btn, .math-ch-btn").forEach((btn, i) =>
     btn.classList.toggle("active", i === index));
   const subs = DATA.subjects[classId] || [];
-  const subjObj = subs.find(s => s.id === state.activeSubject || s.id === 'cls12-' + subjKey || (subjKey === 'pakstudy' && (s.id === 'cls12-pak' || s.id === 'cls12-pakstudy')) || (subjKey === 'phys' && s.id === 'cls12-phy') || s.hasEng || s.hasUrdu || s.hasBio || s.hasChem || s.hasPhys || s.hasPakStudy || s.hasIsl || s.hasNazira || s.hasPashto || s.hasStat || s.hasComp || s.hasCivics || s.hasEcon || s.hasHpe || s.hasIslopt || s.hasIslhist || s.hasQuran);
+  const subjObj = subs.find(s => (classId === 'cls11' && subjKey === 'phys' && s.id === 'cls11-phy') || (classId === 'cls11' && subjKey === 'bio' && s.id === 'cls11-bio') || (classId === 'cls11' && subjKey === 'stat' && s.id === 'cls11-stat') || (classId === 'cls11' && subjKey === 'eng' && s.id === 'cls11-eng') || s.id === state.activeSubject || s.id === 'cls12-' + subjKey || (subjKey === 'pakstudy' && (s.id === 'cls12-pak' || s.id === 'cls12-pakstudy')) || (subjKey === 'phys' && s.id === 'cls12-phy') || s.hasEng || s.hasUrdu || s.hasBio || s.hasChem || s.hasPhys || s.hasPakStudy || s.hasIsl || s.hasNazira || s.hasPashto || s.hasStat || s.hasComp || s.hasCivics || s.hasEcon || s.hasHpe || s.hasIslopt || s.hasIslhist || s.hasQuran);
   renderSubjectChapterView(subjKey, index, classId, subjObj);
 }
 
@@ -18125,17 +19802,22 @@ function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
   const isEng = (subjKey === 'eng');
   const isUrdu = (subjKey === 'urdu');
   const isPashto = (subjKey === 'pashto');
-  const isScience = (subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp' || subjKey === 'stat');
+  const isScience = (subjKey === 'sci' || subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp' || subjKey === 'stat');
 
   // Define Subject-Specific Main Tabs according to requirements
   let tabs = [];
-  if (isEng) {
+  if (classId === 'cls11' && class11BookByKey(subjKey)) {
+    tabs = class11BookByKey(subjKey).tabs;
+  } else if (isEng) {
     tabs = [
       { id: 'lesson', label: '📖 Lesson' },
+      { id: 'glossary', label: '📚 Glossary' },
       { id: 'exercise', label: '✍️ Exercise' },
-      { id: 'slos', label: '🎯 SLOs' },
-      { id: 'words', label: '🔤 Words' },
-      { id: 'grammar', label: '📐 Grammar' }
+      { id: 'vocabulary', label: '🔤 Vocabulary' },
+      { id: 'language', label: '🗣️ Use of Language' },
+      { id: 'grammar', label: '📐 Grammar' },
+      { id: 'writing', label: '📝 Writing' },
+      { id: 'slos', label: '🎯 SLOs' }
     ];
   } else if (isUrdu) {
     tabs = [
@@ -18160,6 +19842,7 @@ function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
       { id: 'exercise', label: '✍️ Solved Exercises' },
       { id: 'slos', label: '🎯 Board SLO Based & MCQs, SQs, LQs' },
       { id: 'formulas', label: subjKey === 'bio' ? '🔬 Diagrams & Summary' : '📐 Summary & Formulas' },
+      ...((ch.glossary && ch.glossary.length > 0) ? [{ id: 'glossary', label: '📚 Glossary' }] : []),
       ...(classId === 'cls12' ? [{ id: 'booktext', label: '📚 Complete Book Text' }] : [])
     ];
   } else {
@@ -18169,9 +19852,12 @@ function renderSubjectChapterView(subjKey, chIdx, classId, subjObj) {
       { id: 'concepts', label: '💡 Important Concepts' },
       { id: 'exercise', label: '✍️ Solved Exercises' },
       { id: 'slos', label: '🎯 Board SLO Based & MCQs, SQs, LQs' },
-      { id: 'formulas', label: '📋 Summary & Key Points' }
+      { id: 'formulas', label: '📋 Summary & Key Points' },
+      ...((ch.glossary && ch.glossary.length > 0) ? [{ id: 'glossary', label: '📚 Glossary' }] : [])
     ];
   }
+
+  if (classId === 'cls12' && typeof getClass12SubjectTabs === 'function') tabs = getClass12SubjectTabs(subjKey, tabs);
 
   const activeTab = state.activeSubjTab || tabs[0].id;
   state.activeSubjTab = activeTab;
@@ -18228,9 +19914,27 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
   const isEng = (subjKey === 'eng');
   const isUrdu = (subjKey === 'urdu');
   const isPashto = (subjKey === 'pashto');
-  const isScience = (subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp' || subjKey === 'stat');
+  const isScience = (subjKey === 'sci' || subjKey === 'phys' || subjKey === 'chem' || subjKey === 'bio' || subjKey === 'comp' || subjKey === 'stat');
 
-  if (tabId === 'booktext' && classId === 'cls12') {
+  if (classId === 'cls11' && class11BookByKey(subjKey)) {
+    if (subBar) { subBar.style.display = 'none'; subBar.innerHTML = ''; }
+    container.innerHTML = class11BookByKey(subjKey).render(ch, tabId);
+  } else if (classId === 'cls11' && subjKey === 'phys') {
+    if (subBar) { subBar.style.display = 'none'; subBar.innerHTML = ''; }
+    container.innerHTML = renderPhysics11Tab(ch, tabId);
+  } else if (classId === 'cls11' && subjKey === 'chem') {
+    if (subBar) { subBar.style.display = 'none'; subBar.innerHTML = ''; }
+    container.innerHTML = renderChemistry11Tab(ch, tabId);
+  } else if (classId === 'cls11' && subjKey === 'bio') {
+    if (subBar) { subBar.style.display = 'none'; subBar.innerHTML = ''; }
+    container.innerHTML = renderBiology11Tab(ch, tabId);
+  } else if (classId === 'cls11' && subjKey === 'stat') {
+    if (subBar) { subBar.style.display = 'none'; subBar.innerHTML = ''; }
+    container.innerHTML = renderStatistics11Tab(ch, tabId);
+  } else if (classId === 'cls11' && subjKey === 'eng') {
+    if (subBar) { subBar.style.display = 'none'; subBar.innerHTML = ''; }
+    container.innerHTML = renderEnglish11Tab(ch, tabId);
+  } else if (tabId === 'booktext' && classId === 'cls12') {
     if (subBar) { subBar.style.display = 'none'; subBar.innerHTML = ''; }
     container.innerHTML = renderMath3Textbook(ch);
   } else if (tabId === 'lesson') {
@@ -18242,6 +19946,10 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
           <button class="topic-sub-tab-btn ${activeLessonSubTab === 'paragraphs' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'paragraphs')">
             ${isPashto ? '📄 درسي عبارت او شعرونه' : isUrdu ? '📄 پیراگراف و تحریر' : '📄 Paragraphs'}
           </button>
+          ${(isEng && classId === 'cls1') ? `
+          <button class="topic-sub-tab-btn ${activeLessonSubTab === 'pages' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'pages')">
+            🖼️ Page by Page (Vector)
+          </button>` : ''}
           <button class="topic-sub-tab-btn ${activeLessonSubTab === 'translations' ? 'active' : ''}" onclick="switchLangLessonSubTab('${subjKey}', 'translations')">
             ${isPashto ? '🌐 ژباړې (اردو، انګلیسي)' : isUrdu ? '🌐 تراجم (انگریزی، اردو، پشتو)' : '🌐 Translations (Eng, Ur, Ps)'}
           </button>
@@ -18342,6 +20050,14 @@ function switchSubjectTab(subjKey, tabId, chIdx, classId) {
     }
     if (tabId === 'exercise') {
       container.innerHTML = renderSubjectExerciseTab(subjKey, ch);
+    } else if (tabId === 'glossary') {
+      container.innerHTML = renderEnglishGlossaryTab(ch);
+    } else if (tabId === 'vocabulary') {
+      container.innerHTML = renderEnglishVocabularyTab(ch);
+    } else if (tabId === 'language') {
+      container.innerHTML = renderEnglishUseOfLanguageTab(ch);
+    } else if (tabId === 'writing') {
+      container.innerHTML = renderEnglishWritingTab(ch);
     } else if (tabId === 'slos') {
       container.innerHTML = renderSubjectSLOsTab(subjKey, ch);
     } else if (tabId === 'grammar') {
@@ -18372,7 +20088,7 @@ function renderClass9EnglishVideoTabs(ch, activeTab) {
     <article class="class9-english-video-card">
       <h3>${video.title}</h3>
       <video controls playsinline preload="metadata" aria-label="${video.title} for ${ch.title}">
-        <source src="../Books/Cover Pages/Videos/${video.file}" type="video/mp4">
+        <source src="covers/Videos/${video.file}" type="video/mp4">
         Your browser does not support local MP4 playback.
       </video>
     </article>`;
@@ -18419,16 +20135,35 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
   const isPashto = (subjKey === 'pashto');
   const sections = ch.sections || ch.urduSections || [];
 
+  if (subTab === 'pages') {
+    return renderPrimaryPageView(state.selectedClass, subjKey);
+  }
+
+  if (subTab === 'paragraphs' && sections.some(s => s && s.sourceClass12Source === true && s.sourceLayout)) { /* CLASS12-SOURCE-LAYOUT */
+    const srcLang = (sec) => (sec.sourceLanguage === 'ur' || isUrdu) ? 'ur' : (sec.sourceLanguage === 'ps' || isPashto) ? 'ps' : 'en';
+    return `<div id="langParasGrid" class="math-cards-grid-target">${sections.map((sec, sIdx) => `
+      <div class="para-card" id="para-item-${sIdx}">
+        <div class="para-card-header"><div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+          <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">${sanitize(String(sec.sourcePageLabel || ('Part ' + (sIdx + 1))))}</span>
+          <span style="font-weight:700;font-size:0.88rem;color:#0f172a;">${sanitize(sec.title || sec.heading || '')}</span></div></div>
+        <div class="para-text-box" style="line-height:1.8;${srcLang(sec) !== 'en' ? 'direction:rtl;text-align:right;font-family:&quot;Jameel Noori Nastaleeq&quot;,&quot;Noto Naskh Arabic&quot;,serif;font-size:1.15rem;line-height:2.1;' : ''}">
+          ${sec.sourceLayout ? renderScienceSourceLayout(sec, getScienceSectionParagraphsWithTranslations(sec, ch, subjKey), srcLang(sec), sIdx) : getSectionParagraphsWithTranslations(sec, ch).map(p => sanitize(p.text || '')).join('<br><br>')}
+        </div>
+      </div>`).join('')}</div>`;
+  }
+
   if (subTab === 'paragraphs') {
     // Flatten paragraphs from sections
     const paras = [];
     sections.forEach((sec, sIdx) => {
       const heading = sec.heading || sec.title || `Section ${sIdx + 1}`;
       const paraItems = getSectionParagraphsWithTranslations(sec, ch);
+      // Poem/ghazal sections keep their couplets in sec.urdu / sec.pashto / sec.english instead of paras
+      const secOwnText = isUrdu ? sec.urdu : isPashto ? sec.pashto : sec.english;
       paraItems.forEach((pi, pIdx) => {
-        paras.push({ 
-          secHeading: heading, 
-          text: pi.text, 
+        paras.push({
+          secHeading: heading,
+          text: pi.text || (secOwnText ? sanitize(secOwnText).replace(/\n/g, '<br>') : ''),
           urdu: pi.urdu, 
           pashto: pi.pashto, 
           num: paras.length + 1, 
@@ -18486,8 +20221,10 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
           🌐 <strong>Line-by-Line Verified Translations:</strong> English, Urdu and Pashto corresponding directly to textbook lessons. Use the horizontal tabs above each paragraph to switch translations.
         </div>
         ${sections.map((sec, idx) => {
-          const secUrdu = sec.urdu || sec.urduTranslation || ch.urduSummary || 'اردو ترجمہ مکمل شامل ہے۔';
-          const secPashto = sec.pashto || ch.pashtoTranslation || 'د پښتو ژباړه متن کم برابر شوې ده.';
+          const srcLayout = sec.sourceClass12Source === true && sec.sourceLayout; /* CLASS12-SOURCE-LAYOUT */
+          const srcParas = srcLayout ? getScienceSectionParagraphsWithTranslations(sec, ch, subjKey) : null;
+          const secUrdu = srcLayout ? renderScienceSourceLayout(sec, srcParas, 'ur', idx) : (sec.urdu || sec.urduTranslation || ch.urduSummary || 'اردو ترجمہ مکمل شامل ہے۔');
+          const secPashto = srcLayout ? renderScienceSourceLayout(sec, srcParas, 'ps', idx) : (sec.pashto || ch.pashtoTranslation || 'د پښتو ژباړه متن کم برابر شوې ده.');
 
           return `
             <div class="math-topic-card" style="margin-bottom:1.25rem;" id="trans-card-${idx}">
@@ -18512,7 +20249,7 @@ function renderLangLessonSubContent(subjKey, ch, subTab) {
               <div id="para-lang-en-${idx}" style="margin-bottom:0.75rem;display:block;">
                 <span style="font-size:0.75rem;font-weight:700;color:#0284c7;text-transform:uppercase;">English Original:</span>
                 <div class="para-text-box" style="font-size:0.95rem;color:#1e293b;line-height:1.8;margin-top:0.3rem;">
-                  ${getSectionParagraphsWithTranslations(sec, ch).map((pi, pSubIdx) => 
+                  ${srcLayout ? renderScienceSourceLayout(sec, srcParas, 'en', idx) : getSectionParagraphsWithTranslations(sec, ch).map((pi, pSubIdx) => 
                     renderInteractiveParagraphHtml(pi.text, pi.urdu, pi.pashto, `trans-${idx}-${pSubIdx}`)
                   ).join('<div style="height:0.85rem;"></div>')}
                 </div>
@@ -19371,20 +21108,36 @@ function renderLanguageGrammarTab(subjKey, ch) {
 }
 
 // ─── EXERCISES & SLOS TAB RENDERERS FOR ALL SUBJECTS ─────────────
+function renderClass12PhysicsSourceExercises(ch) {
+  return (ch.exercises || []).filter(item => item.sourceSectionId || ['assignment-11-1','quiz-printers-11','project-gaussian-11','assignment-11-2','assignment-11-3'].includes(item.id)).map((item,index) => {
+    const section = ch.sections.find(section => section.id === (item.sourceSectionId || ({'assignment-11-1':'phys12-front-assignment111','quiz-printers-11':'phys12-front-inkjet13','project-gaussian-11':'phys12-front-project25','assignment-11-2':'phys12-front-assignment112','assignment-11-3':'phys12-front-assignment113'})[item.id]));
+    if (!section) return '';
+    const source = item.sourceSectionId ? {...section,sourceLayout: section.sourceLayout.flatMap(block => {
+      const indices = (block.indices || []).filter(index => !item.sourceIndices || item.sourceIndices.includes(index));
+      return indices.length ? [{...block,indices}] : [];
+    })} : item.id !== 'quiz-printers-11' ? section : {...section,sourceLayout: [{type:'paragraph',indices:[2]}],diagramSvg:''};
+    return `<details class="physics-source-exercise" style="margin:1rem 0;padding:1rem;border:1px solid #cbd5e1;border-radius:8px;" open><summary>${sanitize(item.title)}</summary>${renderScienceSourceLayout(source,getScienceSectionParagraphsWithTranslations(section,ch,'phys'),'en',`exercise-${index}`)}</details>`;
+  }).join('');
+}
+
 function renderSubjectExerciseTab(subjKey, ch) {
+  const reviewedPhysics = subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch);
   const ex = ch.exercise || ch.textbookExercise || {};
   const isUrdu = (subjKey === 'urdu');
+  const class9Chemistry = subjKey === 'chem' && state.selectedClass === 'cls9';
 
   // Gather all exercise categories
   const categories = [];
   const mcqs = ex.textbookMcqs || ex.mcqs || [];
-  const sqs = ex.comprehension || ex.shortQuestions || ex.sqs || ex.crqs || [];
-  const lqs = ex.detailedQuestions || ex.longQuestions || ex.essayQuestions || ex.erqs || ch.longQuestions || [];
+  const sqs = ex.comprehension || ex.shortQuestions || ex.sqs || ex.crqs || (class9Chemistry ? ex.sq : null) || [];
+  const lqs = ex.detailedQuestions || ex.longQuestions || ex.essayQuestions || ex.erqs || ch.longQuestions || (class9Chemistry ? ex.lq : null) || [];
   const numericals = ch.numericals || ex.numericals || [];
   const activities = ex.activities || ex.practicalActivities || [];
 
+  const agreeDisagree = ex.agreeDisagree || [];
+  if (sqs.length > 0) categories.push({ key: 'sqs', name: isUrdu ? `📝 مختصر سوالات (${sqs.length})` : `📝 Part A: Comprehension (${sqs.length})` });
+  if (agreeDisagree.length > 0) categories.push({ key: 'agreeDisagree', name: `🤝 Part B: Agree / Disagree (${agreeDisagree.length})` });
   if (mcqs.length > 0) categories.push({ key: 'mcqs', name: `🎯 MCQs (${mcqs.length})` });
-  if (sqs.length > 0) categories.push({ key: 'sqs', name: isUrdu ? `📝 مختصر سوالات (${sqs.length})` : `📝 Short Questions (${sqs.length})` });
   if (lqs.length > 0) categories.push({ key: 'lqs', name: isUrdu ? `📚 تفصیلی سوالات (${lqs.length})` : `📚 Long Questions (${lqs.length})` });
   if (numericals.length > 0) categories.push({ key: 'num', name: `🔢 Numericals (${numericals.length})` });
   if (activities.length > 0) categories.push({ key: 'activities', name: `🔬 Practical Activities (${activities.length})` });
@@ -19401,12 +21154,13 @@ function renderSubjectExerciseTab(subjKey, ch) {
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:0.5rem;">
         <div>
           <h3 style="color:#0f172a;font-size:1.15rem;font-weight:800;margin:0 0 0.2rem 0;">
-            ✍️ Solved Textbook Exercises
+            ✍️ ${reviewedPhysics || class9Chemistry ? 'Textbook Exercises — Source Review' : 'Solved Textbook Exercises'}
           </h3>
-          <span style="color:#64748b;font-size:0.84rem;">100% Verbatim Textbook Matched Solved Solutions for KPK Board</span>
+          <span style="color:#64748b;font-size:0.84rem;">${reviewedPhysics || class9Chemistry ? 'Source review and translations are in progress. Printed answers and SpaceBook-authored working are identified separately.' : '100% Verbatim Textbook Matched Solved Solutions for KPK Board'}</span>
         </div>
       </div>
 
+      ${reviewedPhysics ? renderClass12PhysicsSourceExercises(ch) : ''}
       ${categories.length > 1 ? `
         <div class="category-sub-tabs-bar" style="margin-bottom:1.25rem;">
           ${categories.map(c => `
@@ -19450,6 +21204,7 @@ function switchSubjectExCategory(subjKey, catKey) {
 function renderSubjectExProblems(subjKey, ch, catKey) {
   const ex = ch.exercise || ch.textbookExercise || {};
   let res = '';
+  const class9Chemistry = subjKey === 'chem' && state.selectedClass === 'cls9';
 
   if (catKey === 'mcqs' || catKey === 'all') {
     const mcqs = ex.textbookMcqs || ex.mcqs || [];
@@ -19483,7 +21238,7 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
                 <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
                   <span class="math-badge" style="background:#e0f2fe;color:#0369a1;">MCQ ${idx + 1}</span>
                 </div>
-                <div style="font-weight:700;color:#0f172a;font-size:0.98rem;margin-bottom:0.65rem;">${m.q || m.question}</div>
+                <div style="font-weight:700;color:#0f172a;font-size:0.98rem;margin-bottom:0.65rem;">${class9Chemistry && m.sourceQuestionPair ? renderInteractiveParagraphHtml(m.sourceQuestionPair.text, m.sourceQuestionPair.urdu, m.sourceQuestionPair.pashto, 'chem9-exercise-mcq-' + idx, true) : (m.q || m.question)}</div>
                 ${options.length ? `
                   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.5rem;margin-bottom:0.65rem;">
                     ${options.map((opt, oIdx) => `
@@ -19491,10 +21246,11 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
                               onclick="checkInteractiveUniversalMcq('${qId}', ${oIdx}, ${correctIdx}, '${expEnc}')"
                               style="background:#f8fafc;border:1.5px solid #cbd5e1;padding:0.55rem 0.75rem;border-radius:6px;font-size:0.88rem;cursor:pointer;text-align:left;display:flex;align-items:center;gap:0.5rem;transition:all 0.15s;">
                         <span style="font-weight:800;color:#0284c7;background:#e0f2fe;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:0.75rem;flex-shrink:0;">${['A','B','C','D'][oIdx] || (oIdx + 1)}</span>
-                        <span>${opt}</span>
+                        <span>${opt}${class9Chemistry && m.sourceOptionPairs?.[oIdx] ? `<span lang="ur" dir="rtl" style="display:block;margin-top:.3rem;">${sanitize(m.sourceOptionPairs[oIdx].urdu)}</span><span lang="ps" dir="rtl" style="display:block;margin-top:.2rem;">${sanitize(m.sourceOptionPairs[oIdx].pashto)}</span>` : ''}</span>
                       </button>
                     `).join('')}
                   </div>` : ''}
+                ${class9Chemistry && m.answerOrigin ? `<small style="display:block;margin:.4rem 0;">${sanitize(m.answerOrigin)}</small>` : ''}
                 <div class="universal-mcq-exp-box" style="display:none;padding:0.6rem 0.85rem;border-radius:6px;font-size:0.88rem;"></div>
               </div>
             `;
@@ -19505,8 +21261,50 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
     }
   }
 
+  if (catKey === 'agreeDisagree' || catKey === 'all') {
+    const adList = ex.agreeDisagree || [];
+    if (adList.length > 0) {
+      const adChunk = `
+        <div style="margin-bottom:1.5rem;">
+          <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:0.75rem 1rem;margin-bottom:1rem;">
+            <strong style="color:#166534;font-size:0.95rem;">🤝 B) Respond to each statement by writing an explanation as to why you agree or disagree:</strong>
+            <div style="font-size:0.84rem;color:#374151;margin-top:0.2rem;">KPK Textbook Board Grade 8 English Exercise Part B — Reasoned personal responses and reflections.</div>
+          </div>
+          ${adList.map((ad, idx) => `
+            <div class="math-topic-card" style="margin-bottom:1rem;border-left:4px solid #16a34a;padding:1rem;">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;margin-bottom:0.5rem;flex-wrap:wrap;">
+                <span class="math-badge" style="background:#dcfce7;color:#15803d;font-weight:700;">Statement ${ad.statementNo || (idx + 1)}</span>
+                <span style="background:${ad.position && ad.position.toLowerCase().includes('disagree') ? '#fee2e2' : '#ecfdf5'};color:${ad.position && ad.position.toLowerCase().includes('disagree') ? '#b91c1c' : '#047857'};font-weight:800;font-size:0.8rem;padding:0.25rem 0.65rem;border-radius:99px;">
+                  ${ad.position || 'Reasoned Response'}
+                </span>
+              </div>
+              <div style="font-weight:700;color:#0f172a;font-size:1rem;margin-bottom:0.6rem;">
+                ${ad.statement}
+              </div>
+              <div style="color:#64748b;font-size:0.84rem;font-style:italic;margin-bottom:0.6rem;">
+                ${ad.prompt || 'I agree / disagree because:'}
+              </div>
+              <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:0.85rem;line-height:1.7;color:#1e293b;font-size:0.9rem;margin-bottom:0.6rem;">
+                <strong>Explanation:</strong> ${ad.explanation}
+              </div>
+              ${ad.urduExplanation ? `
+                <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:6px;padding:0.75rem;direction:rtl;text-align:right;font-family:'Jameel Noori Nastaleeq',serif;font-size:1.05rem;line-height:2;color:#92400e;margin-bottom:0.4rem;">
+                  <strong>اردو تشریح:</strong> ${ad.urduExplanation}
+                </div>` : ''}
+              ${ad.pashtoExplanation ? `
+                <div style="background:#f0fdfa;border:1px solid #ccfbf1;border-radius:6px;padding:0.75rem;direction:rtl;text-align:right;font-family:'Pashto Kror Asmat',serif;font-size:1.02rem;line-height:2;color:#115e59;">
+                  <strong>پښتو وضاحت:</strong> ${ad.pashtoExplanation}
+                </div>` : ''}
+            </div>
+          `).join('')}
+        </div>`;
+      if (catKey === 'agreeDisagree') return adChunk;
+      res += adChunk;
+    }
+  }
+
   if (catKey === 'sqs' || catKey === 'all') {
-    const sqs = ex.comprehension || ex.shortQuestions || ex.sqs || ex.crqs || [];
+    const sqs = ex.comprehension || ex.shortQuestions || ex.sqs || ex.crqs || (class9Chemistry ? ex.sq : null) || [];
     if (sqs.length > 0) {
       const chunk = `
         <div>
@@ -19524,6 +21322,7 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
               </div>
               <div class="math-accordion-body" style="display:none;margin-top:0.85rem;border-top:1px solid #e2e8f0;padding-top:0.85rem;">
                 <div class="math-step-box" style="white-space:pre-line;line-height:1.75;font-size:0.92rem;color:#1e293b;">
+                  ${class9Chemistry && s.sourceQuestionPair ? `<div style="margin-bottom:.7rem;">${renderInteractiveParagraphHtml(s.sourceQuestionPair.text, s.sourceQuestionPair.urdu, s.sourceQuestionPair.pashto, 'chem9-exercise-sq-' + idx, true)}</div>${s.sourceTables ? ['en','ur','ps'].map(lang => `<div lang="${lang}" dir="${lang === 'en' ? 'ltr' : 'rtl'}">${renderScienceSourceLayout({sourceBlocks:s.sourceTables,sourceLayout:s.sourceTables.map(t=>({type:'sourceDataTable',tableId:t.id}))},[],lang,'chem9-question-table-'+idx)}</div>`).join('') : ''}${s.sourceFinalAnswerPair ? renderInteractiveParagraphHtml(s.sourceFinalAnswerPair.text,s.sourceFinalAnswerPair.urdu,s.sourceFinalAnswerPair.pashto,'chem9-sq-final-'+idx,true) : ''}<small style="display:block;margin:.4rem 0;">${sanitize(s.answerOrigin || '')}</small>` : ''}
                   ${s.answer || s.solution || s.ans || 'Answer verified from textbook.'}
                 </div>
               </div>
@@ -19536,12 +21335,12 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
   }
 
   if (catKey === 'lqs' || catKey === 'all') {
-    const lqs = ex.detailedQuestions || ex.longQuestions || ex.essayQuestions || ex.erqs || ch.longQuestions || [];
+    const lqs = ex.detailedQuestions || ex.longQuestions || ex.essayQuestions || ex.erqs || ch.longQuestions || (class9Chemistry ? ex.lq : null) || [];
     if (lqs.length > 0) {
       const chunk = `
         <div>
           <div style="font-weight:700;color:#0f172a;margin-bottom:0.75rem;font-size:0.95rem;">
-            Textbook Detailed &amp; Long Questions (${lqs.length}) — Click to view complete textbook solution:
+            Textbook Detailed &amp; Long Questions (${lqs.length}) — ${class9Chemistry ? 'Source questions and supplementary answers' : 'Click to view complete textbook solution'}:
           </div>
           ${lqs.map((l, idx) => `
             <div class="math-topic-card math-accordion-card" style="margin-bottom:1rem;">
@@ -19555,6 +21354,7 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
               <div class="math-accordion-body" style="display:none;margin-top:0.85rem;border-top:1px solid #e2e8f0;padding-top:0.85rem;">
                 ${l.rubric ? `<div style="font-size:0.8rem;color:#0369a1;background:#f0f9ff;padding:0.4rem 0.6rem;border-radius:4px;margin-bottom:0.6rem;">📋 Marking Scheme: ${l.rubric}</div>` : ''}
                 <div class="math-step-box" style="white-space:pre-line;line-height:1.8;font-size:0.92rem;color:#1e293b;">
+                  ${class9Chemistry && l.sourceQuestionPair ? renderInteractiveParagraphHtml(l.sourceQuestionPair.text,l.sourceQuestionPair.urdu,l.sourceQuestionPair.pashto,'chem9-exercise-lq-'+idx,true) + (l.sourceTables ? ['en','ur','ps'].map(lang=>`<div lang="${lang}" dir="${lang==='en'?'ltr':'rtl'}">${renderScienceSourceLayout({sourceBlocks:l.sourceTables,sourceLayout:l.sourceTables.map(t=>({type:'sourceDataTable',tableId:t.id}))},[],lang,'chem9-lq-table-'+idx)}</div>`).join('') : '') + `<small style="display:block;margin:.5rem 0;">${sanitize(l.answerOrigin || '')}</small>` : ''}
                   ${l.answer || l.solution || l.ans || l.sol || 'Detailed textbook proof and comprehensive answer.'}
                 </div>
               </div>
@@ -19567,6 +21367,7 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
   }
 
   if (catKey === 'num' || catKey === 'all') {
+    if (subjKey === 'phys' && state.selectedClass === 'cls10') res += renderClass10PhysicsWorkedExamples(ch);
     const numericals = ch.numericals || ex.numericals || [];
     if (numericals.length > 0) {
       const chunk = `
@@ -19584,7 +21385,8 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
                 <span class="math-acc-icon">+</span>
               </div>
               <div class="math-accordion-body" style="display:none;margin-top:0.85rem;border-top:1px solid #e2e8f0;padding-top:0.85rem;">
-                <div style="font-weight:600;color:#0f172a;margin-bottom:0.6rem;font-size:0.92rem;">${num.problem || num.q}</div>
+                <div style="font-weight:600;color:#0f172a;margin-bottom:0.6rem;font-size:0.92rem;">${class9Chemistry && num.sourceQuestionPair ? renderInteractiveParagraphHtml(num.sourceQuestionPair.text,num.sourceQuestionPair.urdu,num.sourceQuestionPair.pashto,'chem9-numerical-question-'+idx,true) : (num.problem || num.q)}</div>
+                ${class9Chemistry && num.sourceFinalAnswerPair ? renderInteractiveParagraphHtml(num.sourceFinalAnswerPair.text,num.sourceFinalAnswerPair.urdu,num.sourceFinalAnswerPair.pashto,'chem9-numerical-printed-answer-'+idx,true)+'<small style="display:block;margin:.5rem 0;">'+sanitize(num.answerOrigin || '')+'</small>' : ''}
                 <div class="math-step-box" style="white-space:pre-line;line-height:1.75;font-size:0.9rem;color:#1e293b;">
                   ${num.solution || num.sol || 'Numerical step-by-step solution verified.'}
                 </div>
@@ -19592,7 +21394,7 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
             </div>
           `).join('')}
         </div>`;
-      if (catKey === 'num') return chunk;
+      if (catKey === 'num') return res + chunk;
       res += chunk;
     }
   }
@@ -19612,7 +21414,7 @@ function renderSubjectExProblems(subjKey, ch, catKey) {
                 <h4 style="margin:0;color:#0f172a;font-size:1rem;font-weight:700;">${act.title || act.name}</h4>
               </div>
               <div style="font-size:0.92rem;color:#334155;line-height:1.75;white-space:pre-line;">
-                ${act.desc || act.procedure || act.content}
+                ${class9Chemistry && act.sourcePromptPair ? renderInteractiveParagraphHtml(act.sourcePromptPair.text,act.sourcePromptPair.urdu,act.sourcePromptPair.pashto,'chem9-project-'+idx,true) : (act.desc || act.procedure || act.content)}
               </div>
             </div>
           `).join('')}
@@ -20024,7 +21826,8 @@ function getScienceSectionParagraphsWithTranslations(sec, ch, subjKey) {
     return sec.paras.map(p => ({
       text: p.text || p.en || '',
       urdu: p.urdu || p.ur || '',
-      pashto: p.pashto || p.ps || ''
+      pashto: p.pashto || p.ps || '',
+      ...(p.sourceLanguage ? {sourceLanguage: p.sourceLanguage, english: p.english || p.en || ''} : {})
     }));
   }
 
@@ -20046,9 +21849,32 @@ function getScienceSectionParagraphsWithTranslations(sec, ch, subjKey) {
     rawParas = [sec.title || sec.name || sec.heading || 'Science textbook lesson topic.'];
   }
 
+  // Class 12 Physics legacy extracts contain HTML; the interactive reader needs prose.
+  const isPhysics12 = subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch);
+  if (isPhysics12) {
+    rawParas = rawParas.flatMap(raw => {
+      const holder = document.createElement('div');
+      holder.innerHTML = String(raw).replace(/<svg\b[^>]*>[\s\S]*?<\/svg>/gi, '')
+        .replace(/<br\s*\/?>|<\/p\s*>|<\/div\s*>/gi, '\n\n');
+      const decoded = holder.textContent || '';
+      holder.innerHTML = decoded.replace(/<svg\b[^>]*>[\s\S]*?<\/svg>/gi, '')
+        .replace(/<br\s*\/?>|<\/p\s*>|<\/div\s*>/gi, '\n\n');
+      return (holder.textContent || '').split(/\n\s*\n/).map(value => value.trim()).filter(Boolean);
+    });
+  }
+
+  if (sec.sourceClass9Chemistry) {
+    return rawParas.map(text => {
+      const pair = (sec.sourceTranslationPairs || []).find(record => record.text === text);
+      return {text, urdu: pair ? pair.urdu : 'اس اصل متن کا اردو ترجمہ ابھی مکمل نہیں ہوا۔', pashto: pair ? pair.pashto : 'د دې اصلي متن پښتو ژباړه لا بشپړه شوې نه ده.'};
+    });
+  }
+
   // 3. For each paragraph, map authentic Urdu and Pashto translations
   return rawParas.map((paraText, pIdx) => {
-    const translations = getScienceParagraphTranslation(paraText, sec, ch, pIdx, subjKey);
+    const translations = isPhysics12 && !sec.urdu
+      ? { urdu: 'اس حصے کا اردو ترجمہ ابھی مکمل نہیں ہوا۔', pashto: 'د دې برخې پښتو ژباړه لا بشپړه شوې نه ده.' }
+      : getScienceParagraphTranslation(paraText, sec, ch, pIdx, subjKey);
     return {
       text: paraText,
       urdu: translations.urdu,
@@ -20101,11 +21927,147 @@ function switchIslLessonSubTab(subjKey, subTab) {
   container.scrollTop = 0;
 }
 
+function renderScienceSourceLayout(sec, paras, lang, sectionIndex) {
+  const field = lang === 'ur' ? 'urdu' : lang === 'ps' ? 'pashto' : 'text';
+  const sourceCellValue = (index, language, cellIndex) => cellIndex === undefined ? (paras[index]?.[language] || '') : String(paras[index]?.[language] || '').split(' — ')[cellIndex] || '';
+  const reading = (indices, key, cellIndex) => {
+    const text = indices.map(index => sourceCellValue(index, field, cellIndex)).join(' ');
+    const isPhysics12Source = ((sec.sourceClass12Physics === true || sec.id?.startsWith('phys12-')) &&
+      sec.sourceReferences?.some(ref => ref.sourcePdf?.includes('12th/12th Physics/'))) || sec.sourceClass12Statistics === true;
+    const equationReader = isPhysics12Source && typeof SpaceBookLessonMath !== 'undefined'
+      ? SpaceBookLessonMath : null;
+    if (lang !== 'en') return equationReader
+      ? equationReader.mathParts(text).map(part => part.latex === undefined ? sanitize(part.text) : equationReader.renderMath(part)).join('')
+      : sanitize(text);
+    const parts = equationReader ? equationReader.mathParts(text) : [];
+    const equations = parts.filter(part => part.latex !== undefined);
+    let equationIndex = 0;
+    const protectedText = equations.length
+      ? parts.map(part => part.latex === undefined ? part.text : `SPACEBOOKPHYSICS${equationIndex++}TOKEN`).join('') : text;
+    let result = renderInteractiveParagraphHtml(protectedText,
+      indices.map(index => sourceCellValue(index, 'urdu', cellIndex)).join(' '),
+      indices.map(index => sourceCellValue(index, 'pashto', cellIndex)).join(' '),
+      `sci-source-${sectionIndex}-${key}`, true);
+    if (equations.length) {
+      result = result.replace(/<span\b[^>]*data-word="SPACEBOOKPHYSICS(\d+)TOKEN"[^>]*>([^<]*)<\/span>/g,
+        (_, number, content) => content.replace(`SPACEBOOKPHYSICS${number}TOKEN`, equationReader.renderMath(equations[Number(number)])));
+      result = result.replace(/SPACEBOOKPHYSICS(\d+)TOKEN/g, (_, number) => sanitize(equations[Number(number)].original));
+    }
+    const sourceLanguage = paras[indices[0]]?.sourceLanguage;
+    if ((sourceLanguage === 'ar' || sourceLanguage === 'ur') && indices.length === 1) {
+      const english = paras[indices[0]]?.english;
+      if (english) result = result.replace(/data-en="[^"]*"/g, () => `data-en="${sanitize(english)}" data-source-language="${sourceLanguage}"`);
+      return `<span lang="${sourceLanguage}" dir="rtl" style="display:block;text-align:right;">${result}</span>`;
+    }
+    return result;
+  };
+  return sec.sourceLayout.map((block, blockIndex) => {
+    const indices = block.indices || [];
+    if (block.type === 'visual' && block.blockId && sec.sourceBlocks && !(sec.sourceClass12Physics === true || sec.id?.startsWith('phys12-'))) {
+      const visual = sec.sourceBlocks.find(item => item.id === block.blockId);
+      const markup = lang === 'en' ? (visual?.svg || '') : (lang === 'ur' ? visual?.svgUrdu || '' : visual?.svgPashto || '');
+      if (!visual?.sourceWidthRatio) return markup;
+      const width = Math.max(1, Math.min(100, visual.sourceWidthRatio * 100));
+      return `<div class="class9-source-object" style="width:${width}%;max-width:min(100%,${Math.round(520 * width / 100)}px);margin:.5rem auto;">${markup.replace(/<svg\b/, '<svg style="display:block;width:100%;height:auto;max-width:100%;"')}</div>`;
+    }
+    if (block.type === 'visual') {
+      let visual = lang === 'en' ? (block.blockId && sec.sourceBlocks ? (sec.sourceBlocks.find(item => item.id === block.blockId)?.svg || '') : (sec.diagramSvg || '')) : ((sec.sourceClass12Physics === true || sec.id?.startsWith('phys12-')) ? (lang === 'ur' ? sec.diagramSvgUrdu || '' : sec.diagramSvgPashto || '') : '');
+      if ((sec.sourceClass12Physics === true || sec.id?.startsWith('phys12-')) && block.blockId && sec.sourceBlocks && lang !== 'en') { const item = sec.sourceBlocks.find(item => item.id === block.blockId); visual = lang === 'ur' ? item?.svgUrdu || '' : item?.svgPashto || ''; }
+      if ((sec.sourceClass12Physics === true || sec.id?.startsWith('phys12-'))) {
+        const ids = [...visual.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+        for (const id of ids) {
+          const unique = `${id}-${sectionIndex}-${lang}-${blockIndex}`;
+          visual = visual.replaceAll(`id="${id}"`, `id="${unique}"`).replaceAll(`#${id})`, `#${unique})`).replaceAll(`aria-labelledby="${id}"`, `aria-labelledby="${unique}"`);
+        }
+      }
+      return visual;
+    }
+    if (block.type === 'visualParagraph' && block.blockId) {
+      const item = sec.sourceBlocks?.find(item => item.id === block.blockId);
+      const svg = lang === 'en' ? item?.svg || '' : lang === 'ur' ? item?.svgUrdu || '' : item?.svgPashto || '';
+      const figure = `<div style="max-width:${Math.round(520 * (item?.sourceWidthRatio || .3))}px;">${svg.replace(/<svg\b/, '<svg style="display:block;width:100%;height:auto;"')}</div>`;
+      const text = `<div>${reading(indices,blockIndex)}</div>`;
+      return `<div style="display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin:.7rem 0;"><div style="flex:${block.visualFirst === false ? '1 1 230px' : '0 1 180px'};">${block.visualFirst === false ? text : figure}</div><div style="flex:${block.visualFirst === false ? '0 1 180px' : '1 1 230px'};">${block.visualFirst === false ? figure : text}</div></div>`;
+    }
+    if (block.type === 'sourceDataTable') {
+      const table = sec.sourceBlocks?.find(item => item.id === block.tableId);
+      if (!table) return '';
+      const translation = lang === 'en' ? table : table.translations?.find(item => item.language === (lang === 'ur' ? 'اردو' : 'پښتو'));
+      if (!translation) return '';
+      const grouped = translation.headerGroups && translation.subHeaders;
+      const sourceCell = cell => {
+        if (!cell || typeof cell !== 'object' || !cell.blockId) return sanitize(cell);
+        const item = sec.sourceBlocks?.find(item => item.id === cell.blockId);
+        const svg = lang === 'en' ? item?.svg || '' : lang === 'ur' ? item?.svgUrdu || '' : item?.svgPashto || '';
+        return `<div style="max-width:${Math.round(520 * (item?.sourceWidthRatio || .2))}px;">${svg.replace(/<svg\b/, '<svg style="display:block;width:100%;height:auto;"')}</div>`;
+      };
+      const headers = table.noHeader ? '' : translation.headerRows ? translation.headerRows.map(row => `<tr>${row.map(cell => `<th scope="col"${cell.rowspan ? ` rowspan="${cell.rowspan}"` : ''}${cell.colspan ? ` colspan="${cell.colspan}"` : ''}>${sanitize(cell.title)}</th>`).join('')}</tr>`).join('') : (grouped ? `<tr>${translation.headerGroups.map(group => `<th scope="colgroup" colspan="${group.columns.length}">${sanitize(group.title)}</th>`).join('')}</tr>` : '') + `<tr>${(translation.subHeaders || translation.headers).map(header => `<th scope="col">${sanitize(header)}</th>`).join('')}</tr>`;
+      return `<div style="overflow-x:auto;margin:1rem 0;${table.sourceWidthRatio ? `max-width:${Math.round(520 * table.sourceWidthRatio)}px;` : ''}"><table class="diff-table"><thead>${headers}</thead><tbody>${translation.rows.map((row, rowIndex) => `<tr>${translation.fullWidthRows?.includes(rowIndex) ? `<td colspan="${translation.headers.length}">${sanitize(row[0])}</td>` : row.map(cell => `<td${cell && typeof cell === 'object' && cell.rowspan ? ` rowspan="${cell.rowspan}"` : ''}>${sourceCell(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+    }
+    if (block.type === 'table' && sec.sourceClass12Physics === true) {
+      const row = (index, rowIndex, header) => {
+        const cells = sec.sourceTableRows[index];
+        return `<tr>${cells.map((_, column) => header
+          ? `<th scope="col" style="border:1px solid #94a3b8;padding:.45rem;text-align:start;">${reading([index], `${blockIndex}-${rowIndex}-${column}`, column)}</th>`
+          : `<td style="border:1px solid #94a3b8;padding:.45rem;">${reading([index], `${blockIndex}-${rowIndex}-${column}`, column)}</td>`).join('')}</tr>`;
+      };
+      return `<div style="overflow-x:auto;margin:1rem 0;"><table style="border-collapse:collapse;width:100%;"><thead>${row(indices[0],0,true)}</thead><tbody>${indices.slice(1).map((index,rowIndex)=>row(index,rowIndex+1,false)).join('')}</tbody></table></div>`;
+    }
+    if (block.type === 'table') {
+      const rows = indices.map(index => lang === 'en'
+        ? sec.sourceTableRows[index].map(String)
+        : String(paras[index]?.[field] || '').split(' — '));
+      return `<div style="overflow-x:auto;margin:1rem 0;"><table style="border-collapse:collapse;width:100%;"><thead><tr>${rows[0].map(cell => `<th scope="col" style="border:1px solid #94a3b8;padding:.45rem;text-align:start;">${sanitize(cell)}</th>`).join('')}</tr></thead><tbody>${rows.slice(1).map(row => `<tr>${row.map(cell => `<td style="border:1px solid #94a3b8;padding:.45rem;">${sanitize(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+    }
+    if (block.type === 'quotation') return `<blockquote style="border:1px solid #9f1239;border-radius:8px;padding:.8rem;margin:1rem 0;">${indices.map(index => `<p>${reading([index], `${blockIndex}-${index}`)}</p>`).join('')}</blockquote>`;
+    if (block.type === 'parallelPhrases') return `<div style="display:grid;grid-template-columns:repeat(${block.columns.length},minmax(0,1fr));gap:.6rem;border:1px solid #9f1239;border-radius:8px;padding:.6rem;">${block.columns.map((column, col) => `<div>${column.map(index => `<p>${reading([index], `${blockIndex}-${col}-${index}`)}</p>`).join('')}</div>`).join('')}</div>`;
+    if (block.type === 'orderedList' && (sec.sourceClass12Physics === true || sec.id?.startsWith('phys12-'))) return `<ol style="list-style:none;padding-inline-start:1.5rem;">${indices.map(index => `<li>${reading([index],`${blockIndex}-${index}`)}</li>`).join('')}</ol>`;
+    if (block.type === 'numberedList') return `<ol style="list-style:none;margin:.6rem 0 1rem;padding-inline-start:.5rem;">${indices.map(index => `<li style="margin:.3rem 0;">${reading([index], `${blockIndex}-${index}`)}</li>`).join('')}</ol>`;
+    if (block.type === 'list') return `<ul style="margin:.6rem 0 1rem;padding-inline-start:1.5rem;">${indices.map(index => `<li style="margin:.3rem 0;">${reading([index],`${blockIndex}-${index}`)}</li>`).join('')}</ul>`;
+    if (block.type === 'lines') return `<div style="margin:.8rem 0;">${indices.map(index => `<div>${reading([index],`${blockIndex}-${index}`)}</div>`).join('')}</div>`;
+    if (block.type === 'code') return `<pre dir="ltr" lang="en" style="direction:ltr;text-align:left;unicode-bidi:isolate;font-family:Consolas,'Courier New',monospace;font-size:.9em;line-height:1.45;background:#f8fafc;color:#0f172a;border:1px solid #cbd5e1;border-radius:6px;padding:.7rem .9rem;margin:.8rem 0;overflow-x:auto;white-space:pre;">${indices.map(index => sanitize(paras[index]?.text || '')).join('\n')}</pre>`;
+    if (block.type === 'heading') return `<h5 style="font-size:1.05em;font-weight:700;margin:1rem 0 .4rem;">${reading(indices,blockIndex)}</h5>`;
+    if (block.type === 'equation') return `<div class="physics-source-equation" style="margin:.7rem 0;text-align:center;">${reading(indices,blockIndex)}</div>`;
+    return `<p style="margin:.65rem 0;text-align:start;">${reading(indices,blockIndex)}</p>`;
+  }).join('');
+}
+
+function renderClass9PhysicsFrontMatterBlocks(page) {
+  const render = index => {
+    const para = page.pairedParagraphs[index];
+    return renderInteractiveParagraphHtml(para.text, para.urdu, para.pashto, `${page.id}-${index}`, true);
+  };
+  if (!page.sourceStructure) return page.pairedParagraphs.map((_, index) => render(index)).join('<div style="height:.75rem"></div>');
+  return page.sourceStructure.map(block => {
+    if (block.type === 'contentsTable') return `<div style="overflow-x:auto"><table class="diff-table"><caption>${sanitize(page.title)}</caption><thead><tr>${block.headers.map(header => `<th scope="col">${sanitize(header.text)}<br><span lang="ur" dir="rtl">${sanitize(header.urdu)}</span><br><span lang="ps" dir="rtl">${sanitize(header.pashto)}</span></th>`).join('')}</tr></thead><tbody>${block.entries.map(unit => `${unit.titleIndex === undefined ? '' : `<tr><th scope="row">${unit.number ? unit.number + '.' : ''}</th><td>${render(unit.titleIndex)}</td><td>${unit.printedStartPage}</td></tr>`}${unit.topics.length ? `<tr><td></td><td>${unit.topics.map(topic => `<div style="display:flex;gap:.5rem;margin:.3rem 0;"><span>${sanitize(topic.code)}</span><div>${render(topic.index)}</div></div>`).join('')}</td><td></td></tr>` : ''}`).join('')}</tbody></table></div>`;
+    if (block.type === 'heading') return `<div role="heading" aria-level="4" style="font-weight:700;margin-top:1rem;">${block.indices.map(render).join('')}</div>`;
+    if (block.type === 'list') return `<ul>${block.indices.map(index => `<li>${render(index)}</li>`).join('')}</ul>`;
+    return block.indices.map(render).join('<div style="height:.5rem"></div>');
+  }).join('');
+}
+
+function renderClass9PhysicsFrontMatter(ch) {
+  if (state.selectedClass !== 'cls9') return '';
+  return (ch.sourceFrontMatter || []).filter(page => page.pairedParagraphs).map(page => `
+    <details class="physics-front-matter" data-source-pdf-page="${page.pdfPage}" style="margin-bottom:1rem;padding:1rem;border:1px solid #e2e8f0;border-radius:8px;">
+      <summary><strong>${sanitize(page.title)}</strong> · PDF page ${page.pdfPage}</summary>
+      <h4>${sanitize(page.headingUrdu || '')} / ${sanitize(page.headingPashto || '')}</h4>
+      ${renderClass9PhysicsFrontMatterBlocks(page)}
+    </details>`).join('');
+}
+
+function renderClass10PhysicsFrontMatter(ch) {
+  if (state.selectedClass !== 'cls10' || !ch.sourceFrontMatter) return '';
+  const front = `<details class="physics10-front-matter" style="margin-bottom:1rem;"><summary>Textbook front matter / کتاب کا ابتدائی حصہ / د کتاب لومړنۍ برخه</summary>${ch.sourceFrontMatter.map(renderPhysics10SourcePage).join('')}</details>`;
+  return front + (ch.sourceOpening ? renderPhysics10SourcePage(ch.sourceOpening) : '') + (ch.sourceIntroduction ? renderPhysics10SourcePage(ch.sourceIntroduction) : '');
+}
+
 function renderScienceLessonSubContent(subjKey, ch, subTab) {
   if (subTab === 'translations') {
-    const sections = ch.sections || ch.topics || [];
+    const sections = state.selectedClass === 'cls9' && subjKey === 'chem' && Array.isArray(ch.topics) ? ch.topics.flatMap(topic => (topic.subtopics || []).map(sub => ({...sub, sectionNum: sub.num, title: sub.name, content: sub.desc || sub.content || '', sourceClass9Chemistry: true}))) : ch.sections || ch.topics || [];
     return `
       <div>
+        ${subjKey === 'phys' ? renderClass9PhysicsFrontMatter(ch) : ''}
         <div style="margin-bottom:1.25rem;">
           <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;">
             <div>
@@ -20119,11 +22081,12 @@ function renderScienceLessonSubContent(subjKey, ch, subTab) {
           </div>
         </div>
 
+        ${subjKey === 'phys' ? renderClass10PhysicsFrontMatter(ch) : ''}
         <div class="science-lesson-cards-list">
           ${sections.map((sec, idx) => {
             const paras = getScienceSectionParagraphsWithTranslations(sec, ch, subjKey);
-            const secUrdu = paras.map(p => p.urdu).filter(Boolean).join('<br><br>') || (sec.urduTitle || sec.headingUrdu || '');
-            const secPashto = paras.map(p => p.pashto).filter(Boolean).join('<br><br>') || (sec.headingPashto || sec.pashtoTitle || '');
+            const secUrdu = sec.sourceClass10Physics ? renderPhysics10SourceSection(sec, 'ur', idx) : sec.sourceLayout ? renderScienceSourceLayout(sec, paras, 'ur', idx) : paras.map(p => p.urdu).filter(Boolean).join('<br><br>') || (sec.urduTitle || sec.headingUrdu || '');
+            const secPashto = sec.sourceClass10Physics ? renderPhysics10SourceSection(sec, 'ps', idx) : sec.sourceLayout ? renderScienceSourceLayout(sec, paras, 'ps', idx) : paras.map(p => p.pashto).filter(Boolean).join('<br><br>') || (sec.headingPashto || sec.pashtoTitle || '');
 
             return `
               <div class="para-card math-topic-card" style="margin-bottom:1.5rem;padding:1.25rem;border:1px solid #e2e8f0;border-radius:10px;background:#ffffff;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
@@ -20138,7 +22101,7 @@ function renderScienceLessonSubContent(subjKey, ch, subTab) {
                   <!-- Horizontal Language Sub-Tabs: English, Urdu, Pashto, All -->
                   <div id="para-lang-tabs-${idx}" class="para-lang-tabs-bar" style="display:flex;gap:0.3rem;">
                     <button class="para-lang-tab-btn active" onclick="switchParaLangTab(${idx}, 'en', this)">
-                      🇬🇧 English
+                      ${sec.paras?.some(para => para.sourceLanguage && para.sourceLanguage !== 'en') ? '📖 Original' : '🇬🇧 English'}
                     </button>
                     <button class="para-lang-tab-btn" onclick="switchParaLangTab(${idx}, 'ur', this)">
                       🇵🇰 اردو (Urdu)
@@ -20154,17 +22117,17 @@ function renderScienceLessonSubContent(subjKey, ch, subTab) {
 
                 <!-- English Container -->
                 <div id="para-lang-en-${idx}" style="margin-bottom:0.75rem;display:block;">
-                  <span style="font-size:0.74rem;font-weight:700;color:#0284c7;text-transform:uppercase;letter-spacing:0.5px;">English Original (Hover for Word Meaning • Click Sentence for Translation):</span>
+                  <span style="font-size:0.74rem;font-weight:700;color:#0284c7;text-transform:uppercase;letter-spacing:0.5px;">${subjKey === 'phys' && sec.sourceOriginalLabel ? sanitize(sec.sourceOriginalLabel) : (state.selectedClass === 'cls9' && subjKey === 'phys' && sec.paras?.some(para => para.sourceLanguage && para.sourceLanguage !== 'en') ? 'Original Textbook Text (English • اردو • العربية) (Click Paragraph for Translation):' : 'English Original (Hover for Word Meaning • Click Sentence for Translation):')}</span>
                   <div class="para-text-box" style="font-size:0.95rem;color:#1e293b;line-height:1.85;margin-top:0.35rem;">
-                    ${paras.map((pi, pSubIdx) => 
-                      renderInteractiveParagraphHtml(pi.text, pi.urdu, pi.pashto, `sci-trans-${idx}-${pSubIdx}`)
+                    ${sec.sourceClass10Physics ? renderPhysics10SourceSection(sec, 'en', idx) : sec.sourceLayout ? renderScienceSourceLayout(sec, paras, 'en', idx) : paras.map((pi, pSubIdx) => 
+                      renderInteractiveParagraphHtml(pi.text, pi.urdu, pi.pashto, `sci-trans-${idx}-${pSubIdx}`, sec.sourceClass9Chemistry || sec.translationStatus === 'authored_aligned_paragraphs')
                     ).join('<div style="height:0.85rem;"></div>')}
                   </div>
                 </div>
 
                 <!-- Urdu Translation Container -->
                 <div id="para-lang-ur-${idx}" style="margin-bottom:0.75rem;display:none;">
-                  <span style="font-size:0.74rem;font-weight:700;color:#166534;text-transform:uppercase;letter-spacing:0.5px;">Urdu Translation (اردو ترجمہ):</span>
+                  <span style="font-size:0.74rem;font-weight:700;color:#166534;text-transform:uppercase;letter-spacing:0.5px;">${subjKey === 'phys' && sec.sourceUrduLabel ? sanitize(sec.sourceUrduLabel) : 'Urdu Translation (اردو ترجمہ):'}</span>
                   <div style="font-family:'Jameel Noori Nastaleeq',serif;direction:rtl;text-align:right;font-size:1.25rem;color:#166534;line-height:2.2;margin-top:0.35rem;background:#f0fdf4;padding:0.75rem 1rem;border-radius:8px;border:1px solid #bbf7d0;">
                     ${secUrdu}
                   </div>
@@ -20188,7 +22151,7 @@ function renderScienceLessonSubContent(subjKey, ch, subTab) {
                     `).join('')}
                   </div>
                 ` : ''}
-                ${sec.diagramSvg || ''}
+                ${sec.sourceLayout ? '' : sec.diagramSvg || ''}
               </div>
             `;
           }).join('')}
@@ -20226,7 +22189,7 @@ function renderScienceOrHumanitiesLessons(subjKey, ch) {
     <div id="scienceLessonsList" class="math-cards-grid-target">
       ${topics.map((t, idx) => {
         const titleStr = t.title || t.name || t.heading || t.titleUrdu || t.titleEn || (t.ayahNo ? ('آیت نمبر ' + t.ayahNo) : '') || (t.hadithNo ? ('حدیث نمبر ' + t.hadithNo) : '') || (t.exerciseNo ? ('Exercise ' + t.exerciseNo) : '') || ('Topic ' + (t.num || t.sectionNum || (idx + 1)));
-        const contentStr = t.content || t.text || t.theory || t.urduTranslation || t.arabic || (Array.isArray(t.paras) ? t.paras.join('\n\n') : '') || 'Detailed textbook theory and explanation.';
+        const contentStr = ((subjKey === 'phys' && (t.sourceClass12Physics === true || t.id?.startsWith('phys12-'))) || (subjKey === 'chem' && t.sourceClass12Chemistry === true) || (subjKey === 'stat' && t.sourceClass12Statistics === true) || t.sourceClass12Source === true) && t.sourceLayout ? renderScienceSourceLayout(t, getScienceSectionParagraphsWithTranslations(t,ch,subjKey), 'en', idx) : (t.content || t.text || t.theory || t.urduTranslation || t.arabic || (Array.isArray(t.paras) ? t.paras.join('\n\n') : '') || 'Detailed textbook theory and explanation.');
         const numBadge = t.num || t.sectionNum || t.ayahNo || t.hadithNo || (idx + 1);
         return `
         <div class="math-topic-card math-accordion-card" style="margin-bottom:1rem;">
@@ -20252,6 +22215,31 @@ function renderScienceOrHumanitiesLessons(subjKey, ch) {
       }).join('')}
     </div>
   `;
+}
+
+function renderClass12PhysicsWorkedExamples(ch) {
+  const sourceLessons = {
+    'textbook-example-1': ['phys12-front-example111','phys12-front-solution111'],
+    'textbook-example-2': ['phys12-front-example112-start','phys12-front-example112-solution'],
+    'textbook-example-3': ['phys12-front-example113'],
+    'textbook-example-5': ['phys12-front-example115'],
+    'textbook-example-6': ['phys12-front-example116'],
+    'textbook-example-6-electronvolt': ['phys12-front-example116-ev']
+  };
+  return (ch.workedExamples || []).filter(example => example.sourceParts?.length || example.sourceSectionId || sourceLessons[example.id]?.some(id => ch.sections.some(section => section.id === id))).map((example, index) =>
+    `<details class="physics-source-worked-example" style="margin:1rem 0;padding:1rem;border:1px solid #cbd5e1;border-radius:8px;">
+      <summary>${sanitize(example.title)} — textbook worked example</summary>
+      ${(example.sourceParts || (example.sourceSectionId ? [{sectionId:example.sourceSectionId,indices:example.sourceIndices}] : sourceLessons[example.id])).map((sourcePart, part) => {
+        const id = typeof sourcePart === 'string' ? sourcePart : sourcePart.sectionId;
+        const section = ch.sections.find(section => section.id === id);
+        if (!section) return '';
+        const source = typeof sourcePart !== 'string' ? {...section,sourceLayout: section.sourceLayout.flatMap(block => {
+          const indices = (block.indices || []).filter(index => !sourcePart.indices || sourcePart.indices.includes(index));
+          return indices.length ? [{...block,indices}] : [];
+        })} : section;
+        return renderScienceSourceLayout(source, getScienceSectionParagraphsWithTranslations(section,ch,'phys'),'en',`example-${index}-${part}`);
+      }).join('')}
+    </details>`).join('');
 }
 
 function renderScienceConceptsTab(subjKey, ch) {
@@ -20298,13 +22286,15 @@ function renderScienceConceptsTab(subjKey, ch) {
 
   return `
     <div>
+      ${subjKey === 'phys' ? renderClass10PhysicsWorkedExamples(ch) : ''}
+      ${subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch) ? renderClass12PhysicsWorkedExamples(ch) : ''}
       <div style="margin-bottom:1.5rem;">
         <h4 style="color:#0f172a;font-size:1.05rem;font-weight:800;margin-bottom:0.75rem;">📖 Essential Laws &amp; Definitions:</h4>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0.75rem;">
           ${definitions.length > 0 ? definitions.map(d => `
             <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:0.85rem;">
-              <strong style="color:#0284c7;font-size:0.95rem;">${d.term || d.title || ''}:</strong>
-              <div style="font-size:0.88rem;color:#334155;line-height:1.6;margin-top:0.35rem;">${d.def || d.definition || d.desc || d.content || ''}</div>
+              <strong style="color:#0284c7;font-size:0.95rem;">${d.sourceClass12Physics && d.termUrdu && d.termPashto ? renderInteractiveParagraphHtml(d.term,d.termUrdu,d.termPashto,d.interactiveId+'-term',true) : (d.term || d.title || '')}:</strong>
+              <div style="font-size:0.88rem;color:#334155;line-height:1.6;margin-top:0.35rem;">${d.sourceClass12Physics && d.urdu && d.pashto ? renderInteractiveParagraphHtml(d.definition,d.urdu,d.pashto,d.interactiveId,true) : subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch) && typeof SpaceBookLessonMath !== 'undefined' ? SpaceBookLessonMath.mathParts(d.def || d.definition || d.desc || d.content || '').map(part => part.latex === undefined ? sanitize(part.text) : SpaceBookLessonMath.renderMath(part)).join('') : (d.def || d.definition || d.desc || d.content || '')}</div>
             </div>
           `).join('') : `
             <div style="padding:1rem;color:#64748b;">Textbook concepts and definitions loaded.</div>
@@ -20332,10 +22322,40 @@ function renderScienceConceptsTab(subjKey, ch) {
   `;
 }
 
+function renderClass12PhysicsSourceFormulas(ch) {
+  const formulas = (ch.formulas || []).filter(item => item.sourceClass12Physics === true || item.id?.startsWith('phys12-'));
+  if (!formulas.length) return '';
+  return `<section class="physics-source-formulas" style="margin-bottom:1.5rem;">
+    <h4>Textbook equations from reviewed source pages</h4>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.75rem;">
+      ${formulas.map(item => `<article style="padding:.8rem;border:1px solid #cbd5e1;border-radius:8px;">
+        <h5>${item.urduName && item.pashtoName ? renderInteractiveParagraphHtml(item.name,item.urduName,item.pashtoName,item.id+'-name',true) : sanitize(item.name)}${item.number ? ' ('+sanitize(item.number)+')' : ''}</h5>
+        <div style="overflow-x:auto;">${typeof SpaceBookLessonMath !== 'undefined' ? SpaceBookLessonMath.renderMath({latex:item.latex,display:false}) : sanitize(item.formula)}</div>
+        <small>PDF page ${sanitize(String(item.sourceReferences?.[0]?.pdfPage || ''))}; printed ${sanitize(String(item.sourceReferences?.[0]?.printedPage || ''))}</small>
+      </article>`).join('')}
+    </div>
+  </section>`;
+}
+
 function renderScienceOrHumanitiesSummaryTab(subjKey, ch) {
+  if (subjKey === 'chem' && state.selectedClass === 'cls9') {
+    const source = ch.topics?.find(topic => topic.id === 'chem9-ch1-source-key-points' || topic.sourceKeyPoints === true)?.subtopics?.[0];
+    if (source) return '<div class="chemistry9-source-summary">' + ['en','ur','ps'].map(lang => '<section lang="' + lang + '" dir="' + (lang === 'en' ? 'ltr' : 'rtl') + '">' + renderScienceSourceLayout(source, source.paras, lang, 'chemistry-summary') + '</section>').join('') + '</div>';
+  }
+
+  if (subjKey === 'phys' && state.selectedClass === 'cls9') {
+    const keySections = (ch.sections || []).filter(section => /^source-u\d+-key-points$/.test(section.code));
+    if (keySections.length) {
+      return `<div class="physics9-source-summary"><h3>Textbook Key Points &amp; Formulas</h3>${keySections.map((section, index) => {
+        const pairs = getScienceSectionParagraphsWithTranslations(section, ch, subjKey);
+        return `<section>${renderScienceSourceLayout(section,pairs,'en',300+index)}<details><summary>اردو</summary><div dir="rtl">${renderScienceSourceLayout(section,pairs,'ur',300+index)}</div></details><details><summary>پښتو</summary><div dir="rtl">${renderScienceSourceLayout(section,pairs,'ps',300+index)}</div></details></section>`;
+      }).join('')}<div>${(ch.formulas || []).map(formula => `<article style="margin:1rem 0;padding:.7rem;border:1px solid #cbd5e1;border-radius:8px;"><h4>${sanitize(formula.name || formula.title || '')}</h4>${formula.formula || ''}<small>${sanitize(formula.note || '')}</small></article>`).join('')}</div></div>`;
+    }
+  }
   if (subjKey === 'isl' || subjKey === 'nazira' || ch.urduSummary || ch.englishSummary || ch.pashtoSummary) {
     return `
       <div>
+        ${subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch) ? renderClass12PhysicsSourceFormulas(ch) : ''}
         <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;">
           <span style="font-weight:800;color:#1e40af;font-size:1.05rem;">📋 سبق کا خلاصہ و مرکزی خیال (Summary &amp; Key Points)</span>
           <div style="font-size:0.88rem;color:#334155;margin-top:0.35rem;">${ch.title || ch.name || ''}</div>
@@ -20367,7 +22387,8 @@ function renderScienceOrHumanitiesSummaryTab(subjKey, ch) {
       </div>
     `;
   }
-  const formulas = ch.formulas || [];
+  const isPhysics12 = subjKey === 'phys' && typeof PHYS_12_DATA !== 'undefined' && PHYS_12_DATA.includes(ch);
+  const formulas = isPhysics12 ? (ch.formulas || []).filter(item => item.sourceClass12Physics === true || item.id?.startsWith('phys12-')) : (ch.formulas || []);
   return `
     <div>
       <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;">
@@ -20380,8 +22401,8 @@ function renderScienceOrHumanitiesSummaryTab(subjKey, ch) {
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0.75rem;">
             ${formulas.map(f => `
               <div class="math-formula-card">
-                <div style="font-size:0.82rem;font-weight:700;color:#0284c7;margin-bottom:0.25rem;">${f.name || f.title}</div>
-                <div style="font-family:'Consolas',monospace;font-size:1.1rem;font-weight:700;color:#0f172a;margin-bottom:0.35rem;">${f.formula}</div>
+                <div style="font-size:0.82rem;font-weight:700;color:#0284c7;margin-bottom:0.25rem;">${isPhysics12 && f.urduName && f.pashtoName ? renderInteractiveParagraphHtml(f.name,f.urduName,f.pashtoName,f.id+'-name',true) : (f.name || f.title)}</div>
+                <div style="font-family:'Consolas',monospace;font-size:1.1rem;font-weight:700;color:#0f172a;margin-bottom:0.35rem;">${subjKey === 'phys' && (f.sourceClass12Physics === true || f.id?.startsWith('phys12-')) && f.latex && typeof SpaceBookLessonMath !== 'undefined' ? SpaceBookLessonMath.renderMath({latex:f.latex,display:false}) : f.formula}</div>
                 <div style="font-size:0.84rem;color:#64748b;">${f.note || ''}</div>
               </div>
             `).join('')}
@@ -21097,4 +23118,473 @@ function renderPakStudyTimeline(ch) {
         ${timelineHtml}
       </div>
     </div>`;
+}
+
+
+
+// ─── DEDICATED ENGLISH TABS RENDERERS (GLOSSARY, VOCABULARY, USE OF LANGUAGE, WRITING) ─────
+function renderEnglishGlossaryTab(ch) {
+  const glossary = ch.glossary || ch.words || [];
+  return `
+    <div>
+      <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:0.9rem 1.1rem;margin-bottom:1.25rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;">
+        <div>
+          <span style="font-weight:800;color:#1e40af;font-size:1.05rem;">📚 Textbook Glossary — ${ch.title}</span>
+          <div style="font-size:0.86rem;color:#334155;margin-top:0.25rem;">100% Verbatim Glossary Table directly matched to KPTBB Grade 8 Textbook pages.</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.5rem;">
+          <span style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:0.8rem;padding:0.3rem 0.75rem;border-radius:99px;">
+            ${glossary.length} Glossary Terms
+          </span>
+        </div>
+      </div>
+
+      <div style="margin-bottom:1rem;">
+        <input type="text" class="pcs-input" placeholder="🔍 Search Glossary words, meanings, Urdu, or Pashto..." 
+               oninput="filterEnglishGlossaryTable(this.value)" 
+               style="width:100%;max-width:420px;padding:0.5rem 0.85rem;font-size:0.88rem;border:1px solid #cbd5e1;border-radius:6px;background:#ffffff;">
+      </div>
+
+      <div class="words-table-wrap" style="overflow-x:auto;">
+        <table class="words-grid-table" id="englishGlossaryTable" style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr style="background:#f1f5f9;">
+              <th style="width:16%;padding:0.65rem 0.85rem;text-align:left;border:1px solid #cbd5e1;">Word &amp; POS</th>
+              <th style="width:28%;padding:0.65rem 0.85rem;text-align:left;border:1px solid #cbd5e1;">Textbook Meaning</th>
+              <th style="width:20%;padding:0.65rem 0.85rem;text-align:right;border:1px solid #cbd5e1;direction:rtl;">اردو معنی</th>
+              <th style="width:18%;padding:0.65rem 0.85rem;text-align:right;border:1px solid #cbd5e1;direction:rtl;">پښتو معنی</th>
+              <th style="width:18%;padding:0.65rem 0.85rem;text-align:left;border:1px solid #cbd5e1;">Contextual Sentence</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${glossary.map((w, idx) => `
+              <tr class="glossary-row" style="background:${idx % 2 === 0 ? '#ffffff' : '#f8fafc'};">
+                <td style="padding:0.75rem 0.85rem;border:1px solid #e2e8f0;font-weight:700;color:#0f172a;">
+                  <div>${w.word || w.term}</div>
+                  <span style="font-size:0.75rem;color:#64748b;font-weight:600;text-transform:lowercase;">(${w.pos || 'noun'})</span>
+                </td>
+                <td style="padding:0.75rem 0.85rem;border:1px solid #e2e8f0;color:#334155;line-height:1.5;">${w.meaning || w.def}</td>
+                <td style="padding:0.75rem 0.85rem;border:1px solid #e2e8f0;direction:rtl;text-align:right;font-family:'Jameel Noori Nastaleeq',serif;font-size:1.05rem;color:#0f766e;">${w.urdu || ''}</td>
+                <td style="padding:0.75rem 0.85rem;border:1px solid #e2e8f0;direction:rtl;text-align:right;font-family:'Pashto Kror Asmat',serif;font-size:1.02rem;color:#0369a1;">${w.pashto || ''}</td>
+                <td style="padding:0.75rem 0.85rem;border:1px solid #e2e8f0;font-size:0.85rem;color:#475569;font-style:italic;">${w.sentence || ''}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
+}
+
+function filterEnglishGlossaryTable(val) {
+  const query = (val || '').toLowerCase().trim();
+  const rows = document.querySelectorAll('#englishGlossaryTable tbody tr');
+  rows.forEach(r => {
+    const text = r.textContent.toLowerCase();
+    r.style.display = text.includes(query) ? '' : 'none';
+  });
+}
+
+function renderEnglishVocabularyTab(ch) {
+  const vs = ch.vocabularySection || {};
+  const partA = vs.partA_dictionary || [];
+  const partB = vs.partB_silentLetters || [];
+  const partC = vs.partC_syllabification || [];
+  const activeSubTab = state.activeEngVocabSubTab || 'partA';
+
+  return `
+    <div>
+      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:0.85rem 1.1rem;margin-bottom:1.25rem;">
+        <span style="font-weight:800;color:#0f172a;font-size:1rem;">🔤 Textbook Vocabulary Suite — ${ch.title}</span>
+        <div style="font-size:0.85rem;color:#64748b;margin-top:0.2rem;">Parts of Speech Abbreviations, Silent Letters, and Syllable Demarcation directly from KPTBB Grade 8.</div>
+      </div>
+
+      <div class="category-sub-tabs-bar" style="margin-bottom:1.25rem;">
+        <button class="category-sub-tab-btn ${activeSubTab === 'partA' ? 'active' : ''}" onclick="switchEnglishVocabSubTab('partA')">
+          📖 A. Dictionary &amp; Parts of Speech (${partA.length})
+        </button>
+        <button class="category-sub-tab-btn ${activeSubTab === 'partB' ? 'active' : ''}" onclick="switchEnglishVocabSubTab('partB')">
+          🔇 B. Silent Letters (${partB.length})
+        </button>
+        <button class="category-sub-tab-btn ${activeSubTab === 'partC' ? 'active' : ''}" onclick="switchEnglishVocabSubTab('partC')">
+          ✂️ C. Syllable Demarcation (${partC.length})
+        </button>
+      </div>
+
+      <div id="engVocabContent">
+        ${renderEnglishVocabSubContent(ch, activeSubTab)}
+      </div>
+    </div>
+  `;
+}
+
+function switchEnglishVocabSubTab(subTab) {
+  state.activeEngVocabSubTab = subTab;
+  const chList = getSubjectChapterList('eng', state.selectedClass);
+  const ch = chList[state.selectedSubjChapter || 0];
+  const container = document.getElementById('engVocabContent');
+  if (container && ch) {
+    document.querySelectorAll('.category-sub-tabs-bar .category-sub-tab-btn').forEach(b => {
+      b.classList.toggle('active', b.getAttribute('onclick') && b.getAttribute('onclick').includes("'" + subTab + "'"));
+    });
+    container.innerHTML = renderEnglishVocabSubContent(ch, subTab);
+  }
+}
+
+function renderEnglishVocabSubContent(ch, subTab) {
+  const vs = ch.vocabularySection || {};
+  if (subTab === 'partA') {
+    const partA = vs.partA_dictionary || [];
+    return `
+      <div>
+        <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:6px;padding:0.75rem 1rem;margin-bottom:1rem;font-size:0.88rem;color:#1e40af;">
+          <strong>A. Find the meaning of the following words from the dictionary and identify the parts of speech of the word through abbreviation used:</strong>
+        </div>
+        <div class="words-table-wrap" style="overflow-x:auto;">
+          <table class="words-grid-table" style="width:100%;border-collapse:collapse;">
+            <thead>
+              <tr style="background:#f1f5f9;">
+                <th style="width:18%;padding:0.65rem 0.85rem;border:1px solid #cbd5e1;text-align:left;">Word</th>
+                <th style="width:18%;padding:0.65rem 0.85rem;border:1px solid #cbd5e1;text-align:left;">Part of Speech &amp; Abbr.</th>
+                <th style="width:34%;padding:0.65rem 0.85rem;border:1px solid #cbd5e1;text-align:left;">Dictionary Definition</th>
+                <th style="width:15%;padding:0.65rem 0.85rem;border:1px solid #cbd5e1;direction:rtl;text-align:right;">اردو معنی</th>
+                <th style="width:15%;padding:0.65rem 0.85rem;border:1px solid #cbd5e1;text-align:left;">Example Sentence</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${partA.map(item => `
+                <tr>
+                  <td style="padding:0.75rem;border:1px solid #e2e8f0;font-weight:700;color:#0f172a;">${item.word}</td>
+                  <td style="padding:0.75rem;border:1px solid #e2e8f0;">
+                    <span style="background:#e0f2fe;color:#0369a1;font-weight:700;font-size:0.78rem;padding:0.2rem 0.5rem;border-radius:4px;">${item.abbr || 'n.'}</span>
+                    <span style="font-size:0.82rem;color:#64748b;margin-left:0.3rem;">${item.pos}</span>
+                  </td>
+                  <td style="padding:0.75rem;border:1px solid #e2e8f0;color:#334155;font-size:0.88rem;">${item.meaning}</td>
+                  <td style="padding:0.75rem;border:1px solid #e2e8f0;direction:rtl;text-align:right;font-family:'Jameel Noori Nastaleeq',serif;font-size:1.05rem;color:#0f766e;">${item.urdu || ''}</td>
+                  <td style="padding:0.75rem;border:1px solid #e2e8f0;font-size:0.84rem;color:#475569;font-style:italic;">${item.sentence || ''}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>`;
+  } else if (subTab === 'partB') {
+    const partB = vs.partB_silentLetters || [];
+    return `
+      <div>
+        <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:6px;padding:0.75rem 1rem;margin-bottom:1.25rem;font-size:0.88rem;color:#9a3412;">
+          <strong>B. Underline and identify the silent letters in the following words:</strong>
+          <div style="font-size:0.82rem;margin-top:0.2rem;color:#7c2d12;">Textbook silent letter identification drills with phonetic rules.</div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:0.85rem;">
+          ${partB.map(item => `
+            <div class="math-topic-card" style="padding:0.9rem;border-left:4px solid #ea580c;display:flex;flex-direction:column;justify-content:space-between;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.4rem;">
+                <span style="font-size:1.15rem;font-weight:800;color:#0f172a;letter-spacing:0.02em;">
+                  ${item.word.split('').map(ch => ch.toLowerCase() === item.silentLetter.toLowerCase() 
+                    ? `<span style="color:#dc2626;text-decoration:underline;text-decoration-color:#dc2626;text-underline-offset:4px;font-weight:900;background:#fee2e2;padding:0 2px;border-radius:2px;">${ch}</span>` 
+                    : ch).join('')}
+                </span>
+                <span style="background:#fee2e2;color:#b91c1c;font-weight:800;font-size:0.75rem;padding:0.2rem 0.5rem;border-radius:99px;">
+                  Silent '${item.silentLetter}'
+                </span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;">
+                <span style="font-family:monospace;font-size:0.86rem;color:#0284c7;background:#f0f9ff;padding:0.15rem 0.4rem;border-radius:4px;">${item.phonetic || ''}</span>
+              </div>
+              <div style="font-size:0.82rem;color:#475569;line-height:1.4;">${item.rule || 'Silent in standard pronunciation.'}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>`;
+  } else {
+    const partC = vs.partC_syllabification || [];
+    return `
+      <div>
+        <div style="background:#f5f3ff;border:1px solid #ddd6fe;border-radius:6px;padding:0.75rem 1rem;margin-bottom:1.25rem;font-size:0.88rem;color:#5b21b6;">
+          <strong>C. Use a dictionary to demarcate the following words into syllables:</strong>
+          <div style="font-size:0.82rem;margin-top:0.2rem;color:#6d28d9;">Syllable demarcations with dot breaks (·), stress marks, and count metrics.</div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:0.85rem;">
+          ${partC.map(item => `
+            <div class="math-topic-card" style="padding:0.9rem;border-left:4px solid #7c3aed;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.4rem;">
+                <span style="font-size:1.05rem;font-weight:800;color:#0f172a;">${item.word}</span>
+                <span style="background:#ede9fe;color:#6d28d9;font-weight:800;font-size:0.75rem;padding:0.2rem 0.5rem;border-radius:99px;">
+                  ${item.count} Syllables
+                </span>
+              </div>
+              <div style="background:#faf5ff;border:1px solid #e9d5ff;border-radius:4px;padding:0.4rem 0.6rem;font-family:monospace;font-size:0.92rem;color:#5b21b6;font-weight:700;margin-bottom:0.4rem;letter-spacing:0.04em;">
+                ${item.demarcation}
+              </div>
+              <div style="font-size:0.8rem;color:#64748b;font-family:monospace;">${item.phonetic || ''}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>`;
+  }
+}
+
+function renderEnglishUseOfLanguageTab(ch) {
+  const lang = ch.useOfLanguage || {};
+  const shorts = lang.shortVowels || [];
+  const longs = lang.longVowels || [];
+  const drills = lang.practiceDrills || [];
+
+  return `
+    <div>
+      <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:0.9rem 1.1rem;margin-bottom:1.25rem;">
+        <span style="font-weight:800;color:#1e40af;font-size:1.05rem;">🗣️ Use of Language: ${lang.title || 'Long and Short Vowel Sounds'}</span>
+        <div style="font-size:0.86rem;color:#334155;margin-top:0.35rem;line-height:1.6;">
+          ${lang.overview || 'When a vowel sounds like its name, this is called a long sound. A vowel letter can also have short sounds. Whether a vowel has a long sound, a short sound, or remains silent, depends on its position in a word and the letters around it.'}
+        </div>
+      </div>
+
+      <!-- Short Vowels Table -->
+      <div class="math-topic-card" style="margin-bottom:1.25rem;padding:1rem;">
+        <h4 style="color:#0284c7;font-size:1rem;font-weight:800;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.4rem;">
+          <span>🔊</span> Short Vowels (The most common sound for each vowel)
+        </h4>
+        <div class="words-table-wrap" style="overflow-x:auto;">
+          <table class="words-grid-table" style="width:100%;border-collapse:collapse;">
+            <thead>
+              <tr style="background:#f1f5f9;">
+                <th style="width:12%;padding:0.6rem 0.8rem;border:1px solid #cbd5e1;text-align:center;">Vowel</th>
+                <th style="width:18%;padding:0.6rem 0.8rem;border:1px solid #cbd5e1;text-align:center;">Phonetic IPA</th>
+                <th style="width:40%;padding:0.6rem 0.8rem;border:1px solid #cbd5e1;text-align:left;">Textbook Example Words</th>
+                <th style="width:30%;padding:0.6rem 0.8rem;border:1px solid #cbd5e1;text-align:left;">Pronunciation Guide</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${shorts.map(v => `
+                <tr>
+                  <td style="padding:0.7rem;border:1px solid #e2e8f0;text-align:center;font-weight:900;font-size:1.2rem;color:#0284c7;">${v.vowel}</td>
+                  <td style="padding:0.7rem;border:1px solid #e2e8f0;text-align:center;font-family:monospace;font-weight:700;font-size:1.05rem;color:#0f766e;">${v.ipa}</td>
+                  <td style="padding:0.7rem;border:1px solid #e2e8f0;">
+                    ${(v.examples || []).map(ex => `<span style="background:#e0f2fe;color:#0369a1;font-weight:700;font-size:0.85rem;padding:0.2rem 0.55rem;border-radius:4px;margin-right:0.35rem;display:inline-block;margin-bottom:0.2rem;">${ex}</span>`).join('')}
+                  </td>
+                  <td style="padding:0.7rem;border:1px solid #e2e8f0;font-size:0.85rem;color:#475569;">${v.note || ''}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Long Vowels Table -->
+      ${longs.length > 0 ? `
+        <div class="math-topic-card" style="margin-bottom:1.25rem;padding:1rem;">
+          <h4 style="color:#7c3aed;font-size:1rem;font-weight:800;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.4rem;">
+            <span>🎵</span> Long Vowels (Vowel sounds like its alphabet name)
+          </h4>
+          <div class="words-table-wrap" style="overflow-x:auto;">
+            <table class="words-grid-table" style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr style="background:#f1f5f9;">
+                  <th style="width:12%;padding:0.6rem 0.8rem;border:1px solid #cbd5e1;text-align:center;">Vowel</th>
+                  <th style="width:18%;padding:0.6rem 0.8rem;border:1px solid #cbd5e1;text-align:center;">Phonetic IPA</th>
+                  <th style="width:40%;padding:0.6rem 0.8rem;border:1px solid #cbd5e1;text-align:left;">Example Words</th>
+                  <th style="width:30%;padding:0.6rem 0.8rem;border:1px solid #cbd5e1;text-align:left;">Spelling Rule</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${longs.map(v => `
+                  <tr>
+                    <td style="padding:0.7rem;border:1px solid #e2e8f0;text-align:center;font-weight:900;font-size:1.2rem;color:#7c3aed;">${v.vowel}</td>
+                    <td style="padding:0.7rem;border:1px solid #e2e8f0;text-align:center;font-family:monospace;font-weight:700;font-size:1.05rem;color:#5b21b6;">${v.ipa}</td>
+                    <td style="padding:0.7rem;border:1px solid #e2e8f0;">
+                      ${(v.examples || []).map(ex => `<span style="background:#ede9fe;color:#5b21b6;font-weight:700;font-size:0.85rem;padding:0.2rem 0.55rem;border-radius:4px;margin-right:0.35rem;display:inline-block;margin-bottom:0.2rem;">${ex}</span>`).join('')}
+                    </td>
+                    <td style="padding:0.7rem;border:1px solid #e2e8f0;font-size:0.85rem;color:#475569;">${v.rule || ''}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+        </div>` : ''}
+
+      <!-- Sound Contrast Drills -->
+      ${drills.length > 0 ? `
+        <div class="math-topic-card" style="padding:1rem;">
+          <h4 style="color:#0f172a;font-size:0.98rem;font-weight:800;margin-bottom:0.65rem;">Contrast Drills:</h4>
+          ${drills.map(d => `
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;color:#0369a1;margin-bottom:0.4rem;">${d.drill}</div>
+              <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.6rem;">
+                ${(d.items || []).map(it => `
+                  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:0.6rem 0.8rem;font-size:0.85rem;">
+                    <strong>${it.word}</strong>: <span style="color:#0f766e;font-weight:700;">${it.sound}</span>
+                    <div style="font-size:0.78rem;color:#64748b;margin-top:0.2rem;">${it.contrast}</div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>` : ''}
+    </div>
+  `;
+}
+
+function renderEnglishWritingTab(ch) {
+  const w = ch.writing || {};
+  const activeSubTab = state.activeEngWritingSubTab || 'partA';
+
+  return `
+    <div>
+      <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:0.85rem 1.1rem;margin-bottom:1.25rem;">
+        <span style="font-weight:800;color:#0f172a;font-size:1rem;">📝 Textbook Writing Suite — ${ch.title}</span>
+        <div style="font-size:0.85rem;color:#64748b;margin-top:0.2rem;">Mind Mapping, Formal Summaries, Textual Analysis, and Unified Model Paragraphs from KPTBB Grade 8.</div>
+      </div>
+
+      <div class="category-sub-tabs-bar" style="margin-bottom:1.25rem;">
+        <button class="category-sub-tab-btn ${activeSubTab === 'partA' ? 'active' : ''}" onclick="switchEnglishWritingSubTab('partA')">
+          🗺️ A. Mind Map &amp; Summary
+        </button>
+        <button class="category-sub-tab-btn ${activeSubTab === 'partB' ? 'active' : ''}" onclick="switchEnglishWritingSubTab('partB')">
+          🔍 B. Textual Analysis (Verbs &amp; Modifiers)
+        </button>
+        <button class="category-sub-tab-btn ${activeSubTab === 'partC' ? 'active' : ''}" onclick="switchEnglishWritingSubTab('partC')">
+          ✍️ C. Model Paragraph Writing
+        </button>
+      </div>
+
+      <div id="engWritingContent">
+        ${renderEnglishWritingSubContent(ch, activeSubTab)}
+      </div>
+    </div>
+  `;
+}
+
+function switchEnglishWritingSubTab(subTab) {
+  state.activeEngWritingSubTab = subTab;
+  const chList = getSubjectChapterList('eng', state.selectedClass);
+  const ch = chList[state.selectedSubjChapter || 0];
+  const container = document.getElementById('engWritingContent');
+  if (container && ch) {
+    document.querySelectorAll('.category-sub-tabs-bar .category-sub-tab-btn').forEach(b => {
+      b.classList.toggle('active', b.getAttribute('onclick') && b.getAttribute('onclick').includes("'" + subTab + "'"));
+    });
+    container.innerHTML = renderEnglishWritingSubContent(ch, subTab);
+  }
+}
+
+function renderEnglishWritingSubContent(ch, subTab) {
+  const w = ch.writing || {};
+  if (subTab === 'partA') {
+    const mm = w.mindMap || { branches: [] };
+    return `
+      <div>
+        <!-- Interactive Visual Mind Map Diagram -->
+        <div class="math-topic-card" style="margin-bottom:1.25rem;padding:1.25rem;background:#faf5ff;border:1.5px solid #e9d5ff;">
+          <h4 style="color:#6b21a8;font-size:1.05rem;font-weight:800;margin-bottom:1rem;display:flex;align-items:center;gap:0.4rem;">
+            <span>🗺️</span> ${mm.title || 'Mind Map'}
+          </h4>
+          
+          <div style="display:flex;flex-direction:column;align-items:center;gap:1.5rem;margin:1rem 0;">
+            <!-- Central Bubble -->
+            <div style="background:#7c3aed;color:#ffffff;font-weight:800;font-size:1.05rem;padding:0.9rem 1.75rem;border-radius:99px;box-shadow:0 4px 6px -1px rgba(124,58,237,0.3);text-align:center;max-width:380px;">
+              ⭐ ${mm.centralTheme || ch.title}
+            </div>
+
+            <!-- Branches Grid -->
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;width:100%;">
+              ${(mm.branches || []).map((br, bIdx) => `
+                <div style="background:#ffffff;border:1.5px solid #d8b4fe;border-radius:8px;padding:0.9rem;box-shadow:0 2px 4px rgba(0,0,0,0.03);">
+                  <div style="font-weight:800;color:#6b21a8;font-size:0.94rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.35rem;">
+                    <span style="background:#f3e8ff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:0.75rem;">${bIdx + 1}</span>
+                    <span>${br.branchName}</span>
+                  </div>
+                  <ul style="margin:0;padding-left:1.1rem;font-size:0.85rem;color:#4b5563;line-height:1.6;">
+                    ${(br.subIdeas || []).map(si => `<li style="margin-bottom:0.3rem;">${si}</li>`).join('')}
+                  </ul>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+
+        <!-- Full Model Summary Card -->
+        <div class="math-topic-card" style="padding:1.25rem;">
+          <h4 style="color:#0f172a;font-size:1rem;font-weight:800;margin-bottom:0.65rem;display:flex;align-items:center;gap:0.4rem;">
+            <span>📄</span> Comprehensive Lesson Summary
+          </h4>
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem 1.25rem;line-height:1.8;color:#1e293b;font-size:0.92rem;text-align:justify;">
+            ${w.summary || ch.englishSummary || 'Complete textbook summary.'}
+          </div>
+        </div>
+      </div>`;
+  } else if (subTab === 'partB') {
+    const ta = w.textAnalysis || {};
+    return `
+      <div>
+        <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:6px;padding:0.75rem 1rem;margin-bottom:1.25rem;font-size:0.88rem;color:#166534;">
+          <strong>B. Read the first paragraph of the lesson carefully. Underline the specific words, vivid verbs and modifiers:</strong>
+          <div style="font-size:0.82rem;margin-top:0.2rem;color:#15803d;">Analysis of descriptive linguistic devices used in the opening paragraph.</div>
+        </div>
+
+        ${ta.paragraphExcerpt ? `
+          <div class="math-topic-card" style="margin-bottom:1.25rem;padding:1rem;">
+            <div style="font-weight:700;color:#0f172a;margin-bottom:0.4rem;font-size:0.92rem;">Target Paragraph Excerpt:</div>
+            <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:0.9rem;font-style:italic;color:#334155;line-height:1.7;">
+              "${ta.paragraphExcerpt}"
+            </div>
+          </div>` : ''}
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
+          <div class="math-topic-card" style="padding:1rem;border-top:4px solid #0284c7;">
+            <h5 style="color:#0369a1;font-weight:800;margin-bottom:0.6rem;font-size:0.94rem;">1. Specific Words:</h5>
+            <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+              ${(ta.specificWords || []).map(word => `
+                <span style="background:#e0f2fe;color:#0369a1;font-weight:700;font-size:0.84rem;padding:0.25rem 0.6rem;border-radius:4px;">${word}</span>
+              `).join('')}
+            </div>
+          </div>
+
+          <div class="math-topic-card" style="padding:1rem;border-top:4px solid #16a34a;">
+            <h5 style="color:#15803d;font-weight:800;margin-bottom:0.6rem;font-size:0.94rem;">2. Vivid Verbs:</h5>
+            <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+              ${(ta.vividVerbs || []).map(verb => `
+                <span style="background:#dcfce7;color:#15803d;font-weight:700;font-size:0.84rem;padding:0.25rem 0.6rem;border-radius:4px;">${verb}</span>
+              `).join('')}
+            </div>
+          </div>
+
+          <div class="math-topic-card" style="padding:1rem;border-top:4px solid #9333ea;">
+            <h5 style="color:#7e22ce;font-weight:800;margin-bottom:0.6rem;font-size:0.94rem;">3. Modifiers (Adjectives &amp; Adverbs):</h5>
+            <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+              ${(ta.modifiers || []).map(mod => `
+                <span style="background:#f3e8ff;color:#7e22ce;font-weight:700;font-size:0.84rem;padding:0.25rem 0.6rem;border-radius:4px;">${mod}</span>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      </div>`;
+  } else {
+    const mp = w.modelParagraph || {};
+    return `
+      <div>
+        <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:6px;padding:0.75rem 1rem;margin-bottom:1.25rem;font-size:0.88rem;color:#1e40af;">
+          <strong>C. Write a simple and unified paragraph of about 50 to 60 words using a clear topic sentence, specific words, vivid verbs and modifiers:</strong>
+        </div>
+
+        <div class="math-topic-card" style="padding:1.25rem;border-left:4px solid #2563eb;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.65rem;flex-wrap:wrap;gap:0.5rem;">
+            <h4 style="color:#0f172a;font-size:1.05rem;font-weight:800;margin:0;">
+              ${mp.title || 'Model Unified Paragraph'}
+            </h4>
+            <span style="background:#dbeafe;color:#1e40af;font-weight:800;font-size:0.8rem;padding:0.25rem 0.65rem;border-radius:99px;">
+              ${mp.wordCount || 60} Words (Target: 50–60 words)
+            </span>
+          </div>
+
+          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem 1.25rem;line-height:1.9;color:#1e293b;font-size:0.95rem;text-align:justify;margin-bottom:1rem;">
+            ${mp.text || 'Paragraph text.'}
+          </div>
+
+          <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:6px;padding:0.75rem 1rem;font-size:0.84rem;color:#475569;line-height:1.6;">
+            <strong>Structural Features:</strong> Contains a clear topic sentence introducing the virtue, body sentences loaded with vivid verbs and historical specifics, and a concluding synthesis.
+          </div>
+        </div>
+      </div>`;
+  }
 }

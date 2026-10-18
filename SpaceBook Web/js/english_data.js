@@ -180,24 +180,39 @@ const ENGLISH_DATA = [
       ],
       "comprehension": [
         {
-          "question": "What is the definition of 'tolerance' according to the text?",
-          "answer": "According to the text, tolerance means a fair and objective attitude towards those whose lifestyle differs from ours. It is the virtue which enables a person to forebear the attitude, negative remarks, and actions of others with patience and calmness."
+          "question": "1. What does the Quran say about tolerance?",
+          "answer": "SpaceBook answer (the textbook prints no answers): The Holy Quran says: \"O you who have believed, seek help through patience and prayer. Indeed, Allah is with the patient.\" (Al-Baqarah 2:153). It also calls the Holy Prophet Rahmatul-lil-Alameen, a mercy unto the whole mankind and universe.",
+          "answerOrigin": "SpaceBook"
         },
         {
-          "question": "How did Hazrat Muhammad (PBUH) and Banu-Hashim spend the three years in Shab-Abi-Talib?",
-          "answer": "During the three years in Shab-Abi-Talib, Hazrat Muhammad (PBUH) and Banu-Hashim were ostracised by the Quraish. There was severe scarcity of food and water, the believers had no means of income, and they led a very tough life. Despite this, Hazrat Muhammad (PBUH) remained calm, patient, and never thought about taking revenge."
+          "question": "2. Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) was a man of extraordinary endurance? Explain.",
+          "answer": "SpaceBook answer (the textbook prints no answers): When the Quraish ostracised him and Banu-Hashim, they lived for three years in the valley of Shab-Abi-Talib with scarcity of food and water and no means of income. He remained calm and tolerant and never thought of revenge. He also bore the rough behaviour of Rabbi Zaid with patience.",
+          "answerOrigin": "SpaceBook"
         },
         {
-          "question": "What forgiving words did Hazrat Muhammad (PBUH) say at the Conquest of Makkah?",
-          "answer": "At the Conquest of Makkah, Hazrat Muhammad (PBUH) repeated the forgiving words of Prophet Yousuf (AS): 'Have no fear this day, May Allah forgive you, and He is the Most Merciful of those who show mercy.' He then granted a general amnesty to the entire population."
+          "question": "3. How did Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) treat the people of Makkah after victory?",
+          "answer": "SpaceBook answer (the textbook prints no answers): The Muslim army entered Makkah humbly and peacefully; no house was robbed and no one was insulted. He granted a general amnesty to the whole population, repeated Hazrat Yousuf's words \"Have no fear this day, May Allah forgive you\", and even forgave Abu Sufyan and his wife.",
+          "answerOrigin": "SpaceBook"
         },
         {
-          "question": "Why did Rabbi Zaid ibn Sanah demand the repayment of his loan before it was due?",
-          "answer": "Rabbi Zaid demanded repayment days before the loan was due because he wanted to test Hazrat Muhammad's (PBUH) tolerance and confirm whether his forbearance and perseverance took precedence over anger, and whether harsh treatment was repaid with kindness."
+          "question": "4. Why was the Rabbi asking for the repayment days before the loan was due?",
+          "answer": "SpaceBook answer (the textbook prints no answers): He wanted to test Hazrat Muhammad's tolerance.",
+          "answerOrigin": "SpaceBook"
         },
         {
-          "question": "Why did Hazrat Muhammad (PBUH) instruct Hazrat Umar to give twenty Sa'a extra of dates to Rabbi Zaid?",
-          "answer": "Hazrat Muhammad (PBUH) instructed Hazrat Umar to give twenty Sa'a extra of dates because Hazrat Umar had spoken harshly and frightened the Rabbi, demonstrating that any unintended harshness should be compensated with goodwill and generosity."
+          "question": "5. What does the tolerance of Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) teach us?",
+          "answer": "SpaceBook answer (the textbook prints no answers): It teaches us to be patient in adversity, to forgive even our worst enemies, to answer harsh treatment with kindness and to stay calm instead of seeking revenge.",
+          "answerOrigin": "SpaceBook"
+        },
+        {
+          "question": "6. What was the effect of Hazrat Muhammad's (رسول اللہ خاتم النبیین ﷺ) kindness on the Rabbi?",
+          "answer": "SpaceBook answer (the textbook prints no answers): The Rabbi saw that tolerance and perseverance took precedence over anger and that harsh treatment was repaid with kindness. He immediately renounced his religion and testified that there is none worthy of worship but Allah and that Hazrat Muhammad is His Rasool.",
+          "answerOrigin": "SpaceBook"
+        },
+        {
+          "question": "7. What is the main idea of the lesson?",
+          "answer": "SpaceBook answer (the textbook prints no answers): The life of Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) is a superb example of tolerance, forgiveness, patience and compassion, and we should follow it in our own lives.",
+          "answerOrigin": "SpaceBook"
         }
       ],
       "dictionaryWords": [
@@ -869,6 +884,213 @@ const ENGLISH_DATA = [
           "answer": "In English morphology, certain nouns undergo radical semantic shifts when converted from singular to plural forms.\n\n1. Arm vs. Arms:\n- Arm (singular): Human upper limb extending from shoulder to wrist.\n- Arms (plural): Weapons, munitions, or military hardware.\n\n2. Good vs. Goods:\n- Good (singular/abstract): Moral virtue, benefit, or righteousness.\n- Goods (plural): Commercial merchandise, freight, or portable property.\n\n3. Force vs. Forces:\n- Force (singular): Physical strength, power, or momentum.\n- Forces (plural): Military, naval, or air army contingents.\n\n4. Compass vs. Compasses:\n- Compass (singular): Navigational instrument indicating magnetic direction.\n- Compasses (plural): Two-legged drafting tool used to draw circles.\n\n5. Respect vs. Respects:\n- Respect (singular): Esteem, admiration, or polite consideration.\n- Respects (plural): Formal polite greetings or condolences ('Pay one's respects')."
         }
       ]
+    },
+    "sourceSlos": [
+      "use pre-reading strategies to predict the content of a text from topic / picture / title / headings, key words and visuals etc. by using prior knowledge, asking questions and contextual clues.",
+      "analyze passages in the text to identify the theme / general subject, key idea / central thought (a statement about general subject), and supporting details.",
+      "apply critical thinking to interact with text and use intensive reading strategies to scan to answer short questions.",
+      "use summary skills to extract salient points and develop a mind map to summarize a text.",
+      "use dictionary to: choose appropriate word definition; identify part of speech; recognize abbreviation used in a dictionary; locate synonyms in a thesaurus.",
+      "translate passages from English to Urdu: use the knowledge of literal and figurative meaning, grammatical gender and syntax to translate passage from English to Urdu; understand that most phrases and idioms do not translate literally from one language to another.",
+      "demonstrate use of more collective, countable and uncountable nouns, material and abstract nouns.",
+      "apply the rules of change of number of nouns learnt earlier.",
+      "recognize and demonstrate use of some nouns that change meaning in the plural form e.g. arm-arms – arm (a part of body), arms (weapons)."
+    ],
+    "preReading": [
+      {
+        "q": "Look at the mind map below to predict the content of the lesson.",
+        "a": "Mind map: Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) — Rahmatul-lil-Alameen · Justice · Humanity · Patience · Sadiq and Ameen"
+      }
+    ],
+    "glossary": [
+      {
+        "word": "compassion",
+        "pos": "",
+        "meaning": "a strong feeling of sympathy for people who are suffering and a desire to help them",
+        "urdu": "ہمدردی، رحم دلی",
+        "pashto": "زړه سوی، خواخوږي",
+        "sourceMeaning": true
+      },
+      {
+        "word": "debt",
+        "pos": "",
+        "meaning": "a sum of money that somebody owes",
+        "urdu": "قرض",
+        "pashto": "پور",
+        "sourceMeaning": true
+      },
+      {
+        "word": "epitome",
+        "pos": "",
+        "meaning": "a perfect example of something",
+        "urdu": "کامل نمونہ",
+        "pashto": "بشپړه بېلګه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "dreadful",
+        "pos": "",
+        "meaning": "very bad or unpleasant",
+        "urdu": "خوفناک، بہت برا",
+        "pashto": "ډېر بد، وېرونکی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "restraining",
+        "pos": "",
+        "meaning": "to stop somebody/something from doing something",
+        "urdu": "روکنا",
+        "pashto": "منع کول، مخه نیول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "amnesty",
+        "pos": "",
+        "meaning": "a period of time during which people can admit to a crime or give up weapons without being punished",
+        "urdu": "عام معافی",
+        "pashto": "عمومي بښنه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "counselling",
+        "pos": "",
+        "meaning": "professional advice about a problem",
+        "urdu": "مشاورت، نصیحت",
+        "pashto": "مشوره، لارښوونه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "perseverance",
+        "pos": "",
+        "meaning": "the quality of continuing to try to achieve a particular aim despite difficulties",
+        "urdu": "ثابت قدمی، استقامت",
+        "pashto": "استقامت، ټینګار",
+        "sourceMeaning": true
+      },
+      {
+        "word": "debate",
+        "pos": "",
+        "meaning": "a formal discussion on an issue at a public meeting. In a debate two or more speakers express opposing views",
+        "urdu": "مباحثہ",
+        "pashto": "مناظره، بحث",
+        "sourceMeaning": true
+      },
+      {
+        "word": "precedence",
+        "pos": "",
+        "meaning": "the condition of being more important than somebody else and therefore coming or being dealt with first",
+        "urdu": "فوقیت، ترجیح",
+        "pashto": "لومړیتوب، غوره والی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "adversity",
+        "pos": "",
+        "meaning": "a difficult or unpleasant situation",
+        "urdu": "مصیبت، مشکل حالات",
+        "pashto": "سختي، کړاو",
+        "sourceMeaning": true
+      },
+      {
+        "word": "renounced",
+        "pos": "",
+        "meaning": "to state publicly that you no longer have a particular belief or that you will no longer behave in a particular way",
+        "urdu": "ترک کر دیا",
+        "pashto": "پرېښود، لاس ترې واخیست",
+        "sourceMeaning": true
+      },
+      {
+        "word": "testified",
+        "pos": "",
+        "meaning": "to say that you believe something is true because you have evidence of it",
+        "urdu": "گواہی دی",
+        "pashto": "شاهدي یې ورکړه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "Rabbi",
+        "pos": "",
+        "meaning": "Jewish religious scholar",
+        "urdu": "یہودی عالم (ربی)",
+        "pashto": "یهودي عالم (ربي)",
+        "sourceMeaning": true
+      },
+      {
+        "word": "ostracised",
+        "pos": "",
+        "meaning": "to refuse to let somebody be a member of a social group; to refuse to meet or talk to somebody",
+        "urdu": "سماجی بائیکاٹ کیا",
+        "pashto": "ټولنیز بایکاټ یې کړ",
+        "sourceMeaning": true
+      },
+      {
+        "word": "opponent",
+        "pos": "",
+        "meaning": "a person that you are playing or fighting against in a game, competition, argument, etc.",
+        "urdu": "مخالف، حریف",
+        "pashto": "مخالف، سیال",
+        "sourceMeaning": true
+      },
+      {
+        "word": "scarcity",
+        "pos": "",
+        "meaning": "if there is a scarcity of something, there is not enough of it and it is difficult to obtain it",
+        "urdu": "قلت، کمی",
+        "pashto": "کمښت، قلت",
+        "sourceMeaning": true
+      },
+      {
+        "word": "gracious",
+        "pos": "",
+        "meaning": "kind, polite and generous, especially to somebody of a lower social position",
+        "urdu": "مہربان، شفیق",
+        "pashto": "مهربان، لوی زړه لرونکی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "revenge",
+        "pos": "",
+        "meaning": "something that you do in order to make somebody suffer because they have made you suffer",
+        "urdu": "انتقام، بدلہ",
+        "pashto": "غچ، بدل",
+        "sourceMeaning": true
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "printedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "notes": [
+        "Comprehension A was replaced with the seven questions printed on PDF 15 (printed 6).",
+        "Glossary (PDF 14, printed 5) added: 19 words with the book meanings; Urdu/Pashto meanings are SpaceBook translations.",
+        "Pre-reading mind map (PDF 11, printed 2) added.",
+        "The book prints the honorific (رسول اللہ خاتم النبیین ﷺ) after the name; the stored MCQs use (PBUH) and are left as they were."
+      ],
+      "reviewedAt": "2026-10-12"
     }
   },
   {
@@ -877,8 +1099,8 @@ const ENGLISH_DATA = [
     "titleUrdu": "علامہ اقبال کا نوجوانوں کے نام پیغام",
     "titlePashto": "ځوانانو ته د علامه اقبال پیغام",
     "type": "prose",
-    "author": "Allama Muhammad Iqbal (KPK Textbook Board Peshawar)",
-    "authorInfo": "Pre-Reading & Thematic Mind Map:\nQualities of the Eagle (Shaheen) in Iqbal's Philosophy:\n• Soaring High: Ambition to reach beyond the stars (عزم و ہمت).\n• Self-Reliance: Seeking no nest, living independently on mountain rocks (خود داری و استغنا).\n• Sharp Vision: Sagacity and foresight to discover the pearl of future (دور اندیشی).\n• Perpetual Struggle: Boundless exploration and active pursuit of Ishq & Khudi (مسلسل جدوجہد).\n\nKey Competencies & SLOs:\n• Comprehend central themes of Khudi (Selfhood), Ishq (Dynamic Creative Energy), and Mard-e-Momin.\n• Master Pronouns: Relative pronouns, indefinite pronouns, pronoun-antecedent agreement, and anaphoric/cataphoric references.\n• Understand common prefixes (un-, in-, dis-, mis-, pre-) and suffixes (-less, -able, -ful, -ness, -ment).\n• Translate literary philosophical prose from English into Urdu with contextual fidelity.",
+    "author": "Waheedullah",
+    "authorInfo": "The lesson \"Iqbal's Message to Youth\" is written by Waheedullah (printed under the unit title, PDF 21). The front matter lists Waheedullah, SS (English), KP Textbook Board, Peshawar, among the reviewers.",
     "sections": [
       {
         "heading": "1. Intellectual Genius of Iqbal & Islamic Awakening",
@@ -908,10 +1130,10 @@ const ENGLISH_DATA = [
         "heading": "3. Mard-e-Momin, Shaheen & Concept of Khudi",
         "headingUrdu": "مردِ مومن، شاہین اور خودی کا فلسفہ",
         "headingPashto": "مردِ مومن، شاهین او د خودۍ فلسفه",
-        "text": "Iqbal's Naujawan is Mard-e-Momin, Mujahid, Shaheen, an explorer, an adventurer, and seer, whose aim is going higher and deeper like eagle (Shaheen) to explore new world in uncharted waters of creativity and intellectual pursuit. The youth of Iqbal is a strong believer in Ishq, a creative and dynamic energy that helps the youth to discover and subdue new stars of originality and individuality. Moreover, Iqbal's Naujawan is a Man of Khudi. The absolute Khudi is infinitely creative, \"Know thyself and success shall be thine\". Iqbal expresses if man becomes emperor of himself then he can lead the world in his own direction. And such a person can find out with his sagacity the pearl of future for the coming generation.\n\nوہی ہے صاحبِ امروز جس نے اپنی ہمت سے\nزمانے کے سمندر سے نکالا گوہرِ فردا",
+        "text": "Iqbal's Naujawan is Mard-e-Momin, Mujahid, Shaheen, an explorer, an adventurer, and seer, whose aim is going higher and deeper like eagle (Shaheen) to explore new world in uncharted waters of creativity and intellectual pursuit. The youth of Iqbal is a strong believer in Ishq, a creative and dynamic energy that helps the youth to discover and subdue new stars of originality and individuality. Moreover, Iqbal's Noujawan is a Man of Khudi. The absolute Khudi is infinitely creative, \"Know thyself and success shall be thine\". Iqbal expresses if man becomes emperor of himself then he can lead the world in his own direction. And such a person can find out with his sagacity the pearl of future for the coming generation.\n\nوہی ہے صاحبِ امروز جس نے اپنی ہمت سے\nزمانے کے سمندر سے نکالا گوہرِ فردا",
         "paras": [
           "Iqbal's Naujawan is Mard-e-Momin, Mujahid, Shaheen, an explorer, an adventurer, and seer, whose aim is going higher and deeper like eagle (Shaheen) to explore new world in uncharted waters of creativity and intellectual pursuit. The youth of Iqbal is a strong believer in Ishq, a creative and dynamic energy that helps the youth to discover and subdue new stars of originality and individuality.",
-          "Moreover, Iqbal's Naujawan is a Man of Khudi. The absolute Khudi is infinitely creative, \"Know thyself and success shall be thine\". Iqbal expresses if man becomes emperor of himself then he can lead the world in his own direction. And such a person can find out with his sagacity the pearl of future for the coming generation.",
+          "Moreover, Iqbal's Noujawan is a Man of Khudi. The absolute Khudi is infinitely creative, \"Know thyself and success shall be thine\". Iqbal expresses if man becomes emperor of himself then he can lead the world in his own direction. And such a person can find out with his sagacity the pearl of future for the coming generation.",
           "وہی ہے صاحبِ امروز جس نے اپنی ہمت سے\nزمانے کے سمندر سے نکالا گوہرِ فردا"
         ],
         "urdu": "اقبال کا نوجوان مردِ مومن، مجاہد، شاہین، ایک کھوجی، مہم جو اور صاحبِ بصیرت ہے، جس کا مقصد شاہین کی طرح بلندیوں اور گہرائیوں میں پرواز کر کے تخلیقی اور فکری جستجو کی غیر دریافت شدہ دنیاؤں کو مسخر کرنا ہے۔ اقبال کا نوجوان 'عشق' پر پختہ یقین رکھتا ہے، جو ایک ایسی تخلیقی اور متحرک توانائی ہے جو نوجوانوں کو جدت اور انفرادیت کے نئے ستارے مسخر کرنے میں مدد دیتی ہے۔ مزید برآں، اقبال کا نوجوان 'مردِ خودی' ہے۔ مطلق خودی لامتناہی تخلیقی صلاحیت رکھتی ہے: ”اپنے آپ کو پہچانو تو کامیابی تمہاری ہوگی۔“ اقبال کا فرمان ہے کہ اگر انسان اپنی ذات کا بادشاہ بن جائے تو وہ دنیا کو اپنی مرضی کی سمت میں چلا سکتا ہے، اور ایسا ہی شخص اپنی فراست سے آنے والی نسل کے لیے مستقبل کا گوہر تلاش کر سکتا ہے:\n\nوہی ہے صاحبِ امروز جس نے اپنی ہمت سے\nزمانے کے سمندر سے نکالا گوہرِ فردا",
@@ -921,13 +1143,13 @@ const ENGLISH_DATA = [
         "heading": "4. The Spirit of Ishq & Perpetual Struggle",
         "headingUrdu": "جذبہ عشق اور مسلسل جدوجہد کا سفر",
         "headingPashto": "د عشق روحیه او د تلپاتې هڅې سفر",
-        "text": "But the youth of Iqbal is not contented with what he has created or invented. The spirit of \"Ishq\", another name for perpetual struggle, spurs him to go beyond the star that he has discovered with his foresight. The motive of Iqbal's youth is to pursue his intellectual and spiritual goals and then continue his journey beyond these goals.\n\nاک مقام سے آگے مقام ہے تیرا\nحیات ذوقِ سفر کے سوا کچھ اور نہیں",
+        "text": "But the youth of Iqbal is not contented with what he has created or invented. The spirit of \"Ishq\", another name for perpetual struggle, spurs him to go beyond the star that he has discovered with his foresight. The motive of Iqbal's youth is to pursue his intellectual and spiritual goals and then continue his journey beyond these goals.\n\nہر اک مقام سے آگے مقام ہے تیرا\nحیات ذوقِ سفر کے سوا کچھ اور نہیں",
         "paras": [
           "But the youth of Iqbal is not contented with what he has created or invented. The spirit of \"Ishq\", another name for perpetual struggle, spurs him to go beyond the star that he has discovered with his foresight. The motive of Iqbal's youth is to pursue his intellectual and spiritual goals and then continue his journey beyond these goals.",
-          "اک مقام سے آگے مقام ہے تیرا\nحیات ذوقِ سفر کے سوا کچھ اور نہیں"
+          "ہر اک مقام سے آگے مقام ہے تیرا\nحیات ذوقِ سفر کے سوا کچھ اور نہیں"
         ],
-        "urdu": "لیکن اقبال کا نوجوان صرف اس پر قناعت نہیں کرتا جو اس نے تخلیق یا ایجاد کیا ہے۔ 'عشق' کا جذبہ، جو کہ مسلسل جدوجہد کا دوسرا نام ہے، اسے اس ستارے سے بھی آگے بڑھنے پر آمادہ کرتا ہے جسے اس نے اپنی دور اندیشی سے دریافت کیا تھا۔ اقبال کے نوجوان کا مقصد اپنے فکری اور روحانی اہداف کو حاصل کرنا اور پھر ان اہداف سے بھی آگے اپنے سفر کو جاری رکھنا ہے:\n\nاک مقام سے آگے مقام ہے تیرا\nحیات ذوقِ سفر کے سوا کچھ اور نہیں",
-        "pashto": "خو د اقبال ځوان یوازې په هغه څه قناعت نه کوي چې اختراع کړي یې دي. د 'عشق' جذبه، چې د دوامداره مبارزې بل نوم دی، هغه هڅوي چې د خپل بصیرت په مرسته له موندل شوي ستوري څخه هم وړاندې لاړ شي. د اقبال د ځوان موخه دا ده چې خپل فکري او روحاني اهداف تعقیب کړي او سفر ته دوام ورکړي:\n\nاک مقام سے آگے مقام ہے تیرا\nحیات ذوقِ سفر کے سوا کچھ اور نہیں"
+        "urdu": "لیکن اقبال کا نوجوان صرف اس پر قناعت نہیں کرتا جو اس نے تخلیق یا ایجاد کیا ہے۔ 'عشق' کا جذبہ، جو کہ مسلسل جدوجہد کا دوسرا نام ہے، اسے اس ستارے سے بھی آگے بڑھنے پر آمادہ کرتا ہے جسے اس نے اپنی دور اندیشی سے دریافت کیا تھا۔ اقبال کے نوجوان کا مقصد اپنے فکری اور روحانی اہداف کو حاصل کرنا اور پھر ان اہداف سے بھی آگے اپنے سفر کو جاری رکھنا ہے:\n\nہر اک مقام سے آگے مقام ہے تیرا\nحیات ذوقِ سفر کے سوا کچھ اور نہیں",
+        "pashto": "خو د اقبال ځوان یوازې په هغه څه قناعت نه کوي چې اختراع کړي یې دي. د 'عشق' جذبه، چې د دوامداره مبارزې بل نوم دی، هغه هڅوي چې د خپل بصیرت په مرسته له موندل شوي ستوري څخه هم وړاندې لاړ شي. د اقبال د ځوان موخه دا ده چې خپل فکري او روحاني اهداف تعقیب کړي او سفر ته دوام ورکړي:\n\nہر اک مقام سے آگے مقام ہے تیرا\nحیات ذوقِ سفر کے سوا کچھ اور نہیں"
       },
       {
         "heading": "5. Dynamic Life of Exploration & Innovation",
@@ -947,12 +1169,12 @@ const ENGLISH_DATA = [
         "heading": "6. A Man of Action, Not a Thinking Hamlet",
         "headingUrdu": "مردِ میدان و عمل، نہ کہ شش و پنج کا شکار ہیملیٹ",
         "headingPashto": "د عمل سړی، نه بې پرېکړې هیملیټ",
-        "text": "These are the views of Iqbal about the youth of the nation. Iqbal wants to set higher benchmark for the new generation. He wants to inculcate in them the spirit of innovation and discovery, because youth are to lead and take the nation to the height of self-sufficiency and independence. The youth of Iqbal is not a thinking Hamlet but a man of action, mild in speech but enthusiastic in action, whether he is in the battlefield or in the company of friend, he is pure in head and heart.\n\nنرم دمِ گفتگو، گرم دمِ جستجو\nرزم ہو یا بزم ہو، پاک دل و پاکباز\n\nIt can be concluded that youth was the main focus of Iqbal. He declares youth a symbol of hope and future of the nation. If young generation is ready to contribute to the progress and prosperity of the Ummah, the day is not far off when the whole Muslim community will rise as mighty power which no nation of the world will be able to subdue.",
+        "text": "These are the views of Iqbal about the youth of the nation. Iqbal wants to set higher benchmark for the new generation. He wants to inculcate in them the spirit of innovation and discovery, because youth are to lead and take the nation to the height of self-sufficiency and independence. The youth of Iqbal is not a thinking Hamlet but a man of action, mild in speech but enthusiastic in action, whether he is in the battlefield or in the company of friend, he is pure in head and heart.\n\nنرم دمِ گفتگو، گرم دمِ جستجو\nرزم ہو یا بزم ہو، پاک دل و پاکباز\n\nIt can be concluded that youth was the main focus of Iqbal. He declares youth a symbol of hope and future of the nation. If young generation is ready to contribute to the progress and prosperity of the Umma, the day is not far off when the whole Muslim community will rise as mighty power which no nation of the world will be able to subdue.",
         "paras": [
           "These are the views of Iqbal about the youth of the nation. Iqbal wants to set higher benchmark for the new generation. He wants to inculcate in them the spirit of innovation and discovery, because youth are to lead and take the nation to the height of self-sufficiency and independence.",
           "The youth of Iqbal is not a thinking Hamlet but a man of action, mild in speech but enthusiastic in action, whether he is in the battlefield or in the company of friend, he is pure in head and heart.",
           "نرم دمِ گفتگو، گرم دمِ جستجو\nرزم ہو یا بزم ہو، پاک دل و پاکباز",
-          "It can be concluded that youth was the main focus of Iqbal. He declares youth a symbol of hope and future of the nation. If young generation is ready to contribute to the progress and prosperity of the Ummah, the day is not far off when the whole Muslim community will rise as mighty power which no nation of the world will be able to subdue."
+          "It can be concluded that youth was the main focus of Iqbal. He declares youth a symbol of hope and future of the nation. If young generation is ready to contribute to the progress and prosperity of the Umma, the day is not far off when the whole Muslim community will rise as mighty power which no nation of the world will be able to subdue."
         ],
         "urdu": "یہ قوم کے نوجوانوں کے بارے میں علامہ اقبال کے خیالات ہیں۔ اقبال نئی نسل کے لیے اعلیٰ معیار قائم کرنا چاہتے ہیں۔ وہ ان میں جدت اور دریافت کا جذبہ پیدا کرنا چاہتے ہیں، کیونکہ نوجوانوں ہی کو قوم کی قیادت کرنی ہے اور اسے خود انحصاری اور آزادی کی بلندیوں تک لے جانا ہے۔ اقبال کا نوجوان محض سوچنے والا شیکسپیئر کا 'ہیملیٹ' نہیں بلکہ عمل کا دھنی مردِ مجاہد ہے، جو گفتگو میں نرم لیکن عمل میں پرجوش ہے، چاہے وہ میدانِ جنگ میں ہو یا دوستوں کی محفل میں، وہ دل و دماغ کا پاکیزہ ہے:\n\nنرم دمِ گفتگو، گرم دمِ جستجو\nرزم ہو یا بزم ہو، پاک دل و پاکباز\n\nحاصلِ کلام یہ ہے کہ نوجوان اقبال کا بنیادی مرکزِ نگاہ تھے۔ انہوں نے نوجوانوں کو قوم کی امید اور مستقبل کی علامت قرار دیا۔ اگر نوجوان نسل امت مسلمہ کی ترقی اور خوشحالی میں اپنا حصہ ڈالنے کے لیے تیار ہو جائے تو وہ دن دور نہیں جب پوری مسلم برادری ایک ایسی عظیم طاقت کے طور پر ابھرے گی جسے دنیا کی کوئی قوم مغلوب نہیں کر سکے گی۔",
         "pashto": "دا د قوم د ځوانانو په اړه د علامه اقبال نظریات دي. اقبال غواړي نوي نسل ته لوړ معیارونه وټاکي او په دوی کې د نوښت او سپړنې جذبه راپیدا کړي. د اقبال ځوان یو بې عمله هیملیټ نه دی بلکې د عمل سړی دی؛ په خبرو کې نرم خو په عمل کې تود دی، په زړه او دماغ دواړو پاک دی:\n\nنرم دمِ گفتگو، گرم دمِ جستجو\nرزم ہو یا بزم ہو، پاک دل و پاکباز\n\nپایله دا چې ځوانان د اقبال د فکر مرکزي ټکی و او د قوم امید او راتلونکی دی. که ځوانان د امت د سوکالۍ لپاره هڅه وکړي، نو هغه ورځ لرې نه ده چې اسلامي امت به داسې یو ځواک شي چې هیڅوک به یې مات نکړي."
@@ -985,7 +1207,7 @@ const ENGLISH_DATA = [
             "beautiful",
             "inspiring",
             "uplifting",
-            "irrational / ordinary"
+            "irrational"
           ],
           "correct": 3,
           "explanation": "'Sublime' means grand, noble, and elevated. Its antonym is irrational, ordinary, or inferior."
@@ -1026,24 +1248,29 @@ const ENGLISH_DATA = [
       ],
       "comprehension": [
         {
-          "question": "How is the youth the standard bearer of a nation?",
-          "answer": "Youth are the standard bearers because they possess dynamic energy, creative idealism, and physical vigor. If their energy is channelized in the right direction, it brings a transformative change in the social, political, and economic fabric of the nation."
+          "question": "1. How is the youth standard bearer of a nation?",
+          "answer": "SpaceBook answer (the textbook prints no answers): Young people carry the nation forward. If their energy is channelized in the proper direction, it can bring a sea change in the social, political and economic fabric of the nation.",
+          "answerOrigin": "SpaceBook"
         },
         {
-          "question": "According to Iqbal, how can the youth change themselves?",
-          "answer": "According to Iqbal, youth can change themselves by awakening their 'Khudi' (Selfhood), having firm faith in 'Ishq' (creative struggle), avoiding passive over-thinking, and becoming men of action who are mild in speech but enthusiastic in action."
+          "question": "2. According to Iqbal how can the youth change themselves?",
+          "answer": "SpaceBook answer (the textbook prints no answers): By becoming men of Khudi: knowing themselves (\"Know thyself and success shall be thine\"), developing the spirit of Ishq and perpetual struggle, and living like the Shaheen, aiming higher and exploring new worlds of creativity and knowledge.",
+          "answerOrigin": "SpaceBook"
         },
         {
-          "question": "Read the 3rd paragraph and write down its key idea.",
-          "answer": "The key idea of the 3rd paragraph is that Iqbal's youth is a Mard-e-Momin and Shaheen endowed with Khudi. By mastering himself ('Know thyself'), he becomes emperor of his own destiny and discovers the pearl of the future for coming generations."
+          "question": "3. Read the 3rd paragraph and write down its key idea.",
+          "answer": "SpaceBook answer (the textbook prints no answers): Iqbal's young man is a Mard-e-Momin and Shaheen: a believer, explorer and adventurer whose strong belief in Ishq gives him creative energy to discover new stars of originality and individuality.",
+          "answerOrigin": "SpaceBook"
         },
         {
-          "question": "What is the main idea of the lesson?",
-          "answer": "The main idea of the lesson is that youth are the hope and future of the Muslim Ummah. Iqbal motivates them to soar like a Shaheen, pursue endless exploration beyond material limits, and lead the nation toward self-sufficiency and honor through continuous action."
+          "question": "4. What is the main idea of the lesson?",
+          "answer": "SpaceBook answer (the textbook prints no answers): Youth was the main focus of Iqbal. He saw them as the symbol of hope and the future of the nation, and wanted them to be self-aware, active, creative and pure in heart so that the Muslim community could rise as a mighty power.",
+          "answerOrigin": "SpaceBook"
         },
         {
-          "question": "According to Iqbal, the youth shouldn't confine themselves to material achievement. Express your view on this statement.",
-          "answer": "I agree with Iqbal because material wealth is temporary and limited. True human fulfillment lies in spiritual enlightenment, scientific discovery, moral integrity, and selfless service to humanity, which ensures eternal success."
+          "question": "5. According to Iqbal, the youth shouldn't confine to material achievement? Express your view on this statement.",
+          "answer": "SpaceBook answer (the textbook prints no answers): Iqbal's youth is not satisfied with material achievement and its enjoyment; he enjoys the journey of exploration and discovery and always moves to the next goal. Material success alone makes a person content and lazy, while higher intellectual and spiritual goals keep a nation progressing.",
+          "answerOrigin": "SpaceBook"
         }
       ],
       "vocabularyWords": [
@@ -1179,13 +1406,13 @@ const ENGLISH_DATA = [
           "base": "correct",
           "prefix": "in-",
           "word": "incorrect",
-          "sentence": "No, that answer is not correct. It is <b>incorrect</b>."
+          "sentence": "No, that answer is <b>incorrect</b>. It is wrong."
         },
         {
           "base": "view",
-          "prefix": "pre-",
-          "word": "preview",
-          "sentence": "Let's look at this information again. We should <b>preview</b> it before the test."
+          "prefix": "re-",
+          "word": "review",
+          "sentence": "Let's look at this information again. We should <b>review</b> it before the test."
         },
         {
           "base": "appeared",
@@ -1807,6 +2034,171 @@ const ENGLISH_DATA = [
           "answer": "Affixation is the primary morphological process of word formation in English.\n\n1. Prefixes (Morphemes added to the front of a base root):\n- 'un-' (reversal/negation): predictable -> unpredictable, certain -> uncertain.\n- 'dis-' (negation/separation): honest -> dishonest, courage -> discourage.\n- 'im-' / 'in-' (negation): possible -> impossible, active -> inactive.\n- 'mis-' (wrongly): guide -> misguide, lead -> mislead.\n\n2. Suffixes (Morphemes added to the end of a base root):\n- '-ful' (full of -> forms adjectives): hope -> hopeful, beauty -> beautiful.\n- '-less' (without -> forms adjectives): hope -> hopeless, harm -> harmless.\n- '-ment' (action/state -> forms nouns): achieve -> achievement, develop -> development.\n- '-ness' (state/quality -> forms abstract nouns): bright -> brightness, dark -> darkness.\n\nMastery of affixes expands vocabulary exponentially and ensures syntactic versatility."
         }
       ]
+    },
+    "sourceSlos": [
+      "analyze passages in the text to identify the theme / general subject, key idea / central thought (a statement about general subject), and supporting details.",
+      "apply critical thinking to interact with text and use intensive reading strategies to scan to answer short questions.",
+      "illustrate use of pronouns learned earlier.",
+      "identify and demonstrate use of relative pronouns.",
+      "recognize the rules of using indefinite pronouns.",
+      "illustrate the use of pronouns antecedent agreement.",
+      "illustrate the use of anaphoric and cataphoric references.",
+      "translate passages from English to Urdu: use the knowledge of literal and figurative meaning, grammatical gender and syntax to translate passage from English to Urdu; understand that most phrases and idioms do not translate literally from one language to another.",
+      "identify and recognize the functions of: pronoun – antecedent relationships; anaphoric and cataphoric references; transitional devices used for coherence and cohesion at discourse level.",
+      "analyze and understand common prefixes and suffixes and use that knowledge to determine the meaning of the unfamiliar words."
+    ],
+    "preReading": [
+      {
+        "q": "Iqbal wants to see the qualities of an eagle (shaheen) in his young nation. What are the qualities of an eagle that makes it superior to other birds?",
+        "a": "Picture: an eagle in flight"
+      }
+    ],
+    "glossary": [
+      {
+        "word": "exploration",
+        "pos": "",
+        "meaning": "the act of travelling through a place in order to find out something about it or look for something in it",
+        "urdu": "کھوج، دریافت کا سفر",
+        "pashto": "سپړنه، لټون",
+        "sourceMeaning": true
+      },
+      {
+        "word": "Invention",
+        "pos": "",
+        "meaning": "the introduction of new things, ideas or ways of doing something",
+        "urdu": "ایجاد",
+        "pashto": "اختراع",
+        "sourceMeaning": true
+      },
+      {
+        "word": "Innovation",
+        "pos": "",
+        "meaning": "the ability to have new and interesting ideas",
+        "urdu": "جدت، نیا پن",
+        "pashto": "نوښت",
+        "sourceMeaning": true
+      },
+      {
+        "word": "Hamlet",
+        "pos": "",
+        "meaning": "a character from Shakespearian play who would take too much time in thinking before taking an action",
+        "urdu": "ہیملٹ (شیکسپیئر کا کردار جو عمل سے پہلے بہت سوچتا ہے)",
+        "pashto": "هېملټ (د شکسپیر کرکټر چې له عمل مخکې ډېر فکر کوي)",
+        "sourceMeaning": true
+      },
+      {
+        "word": "perpetual",
+        "pos": "",
+        "meaning": "continuing for a long period of time without interruption",
+        "urdu": "مسلسل، دائمی",
+        "pashto": "دوامداره، تل پاتې",
+        "sourceMeaning": true
+      },
+      {
+        "word": "foresight",
+        "pos": "",
+        "meaning": "the ability to predict what is likely to happen and to use this to prepare for the future",
+        "urdu": "دور اندیشی",
+        "pashto": "لرلید، مخکینی فکر",
+        "sourceMeaning": true
+      },
+      {
+        "word": "enthusiastic",
+        "pos": "",
+        "meaning": "feeling or showing a lot of excitement and interest about somebody/something",
+        "urdu": "پرجوش",
+        "pashto": "په جوش، لېواله",
+        "sourceMeaning": true
+      },
+      {
+        "word": "emperor",
+        "pos": "",
+        "meaning": "the ruler of an empire",
+        "urdu": "شہنشاہ",
+        "pashto": "امپراتور، شهنشاه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "thy",
+        "pos": "",
+        "meaning": "an English word that means \"your\"",
+        "urdu": "تیرا",
+        "pashto": "ستا",
+        "sourceMeaning": true
+      },
+      {
+        "word": "forge",
+        "pos": "",
+        "meaning": "to put a lot of effort into making something successful or strong so that it will last",
+        "urdu": "محنت سے بنانا، ڈھالنا",
+        "pashto": "په زیار جوړول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "brilliance",
+        "pos": "",
+        "meaning": "intense brightness of light/exceptional talent or intelligence",
+        "urdu": "چمک، ذہانت",
+        "pashto": "ځلا، استعداد",
+        "sourceMeaning": true
+      },
+      {
+        "word": "nova",
+        "pos": "",
+        "meaning": "a star showing a sudden large increase in brightness and then suddenly returning to its original state.",
+        "urdu": "نووا (اچانک چمکنے والا ستارہ)",
+        "pashto": "نووا (ناڅاپه ځلېدونکی ستوری)",
+        "sourceMeaning": true
+      },
+      {
+        "word": "inspiration",
+        "pos": "",
+        "meaning": "a sudden brilliant or timely idea.",
+        "urdu": "الہام، تحریک",
+        "pashto": "الهام، هڅونه",
+        "sourceMeaning": true
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "printedPages": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "notes": [
+        "Author corrected to Waheedullah as printed on PDF 21 (was \"Allama Muhammad Iqbal\").",
+        "Pre-reading question (PDF 22) and verbatim learning outcomes (PDF 21) added.",
+        "Glossary (PDF 25, printed 16) added: 13 words with book meanings; Urdu/Pashto meanings are SpaceBook translations.",
+        "Comprehension questions re-worded exactly as printed on PDF 25; answers labelled SpaceBook.",
+        "MCQ 1 option d corrected to \"irrational\" as printed (was \"irrational / ordinary\").",
+        "Last paragraph keeps the printed spelling \"Umma\"; second \"Noujawan\" kept as printed (PDF 23); Urdu verse corrected to begin \"ہر اک مقام\" as printed.",
+        "Prefix exercise A (PDF 28): item 2 restored to the printed sentence; item 3 answer corrected to \"review\" (the printed prefix list is dis-, in-, mis-, re-, un-; \"pre-\" is not offered)."
+      ],
+      "reviewedAt": "2026-10-12"
     }
   },
   {
@@ -1816,15 +2208,15 @@ const ENGLISH_DATA = [
     "titlePashto": "قائدِ اعظم — یو ستر لارښود",
     "type": "prose",
     "author": "KPK Textbook Board Peshawar",
-    "authorInfo": "Pre-Reading Questions & Thematic Focus:\n• Who do you think a leader is? A visionary guide who unites, inspires, and steers a nation toward liberty and justice with unflinching integrity.\n• Why do you think Quaid-e-Azam is a great leader? Because through sheer determination, constitutional genius, and moral steadfastness, he transformed a divided group of seventy million people into the fifth-largest nation and the greatest Muslim state in the world without firing a single bullet.\n\nKey Competencies & SLOs:\n• Comprehend historical milestones: The landing at Mauripur Karachi (August 7, 1947), refugee plight, and the historic August 11 address on equality and religious freedom.\n• Grammar Mastery: Articles (a/an/the/X), modal auxiliary verbs, regular vs. irregular verbs, and transitive vs. intransitive verbs.\n• Vocabulary: Dictionary definitions with parts of speech abbreviations, thesaurus antonyms, and figurative phrase analysis.\n• Writing: Comprehensive essay on Favourite Personality, paragraph analysis (cause/effect & opinion), summary, and English-to-Urdu translation.",
+    "authorInfo": "The book prints no author name for this unit (PDF 33).",
     "sections": [
       {
         "heading": "1. The Historic Landing at Mauripur, Karachi (August 7, 1947)",
         "headingUrdu": "ماڑی پور کراچی کے ہوائی اڈے پر تاریخی آمد (۷ اگست ۱۹۴۷ء)",
         "headingPashto": "د ماړي پور کراچۍ په هوایي ډګر کې تاریخي راکوزېدل (۷ اګست ۱۹۴۷)",
-        "text": "It was August 7, 1947, when a silver aircraft circled over the airport at Mauripur, Karachi. It was watched by a vast, excited crowd while smoothly landing. First to step out of the aeroplane was a tall and dignified man wearing a pure white Sherwani. As soon as he appeared, the whole crowd roared with one voice, \"Pakistan Zindabad! Pakistan Zindabad!\" And every one pushed forward to welcome him, to get as close to him as possible in order to see him clearly. For here was their great leader, Quaid-e-Azam, the founder and first Governor General of their new country. Here was their leader who had won Pakistan for them—Muhammad Ali Jinnah.",
+        "text": "It was August 7th, 1947, when a silver aircraft circled over the airport at Mauripur, Karachi. It was watched by a vast, excited crowd while smoothly landing. First to step out of the aeroplane was a tall and dignified man wearing a pure white Sherwani. As soon as he appeared, the whole crowd roared with one voice, \"Pakistan Zindabad! Pakistan Zindabad!\" And every one pushed forward to welcome him, to get as close to him as possible in order to see him clearly. For here was their great leader, Quaid-e-Azam, the founder and first Governor General of their new country. Here was their leader who had won Pakistan for them—Muhammad Ali Jinnah.",
         "paras": [
-          "It was August 7, 1947, when a silver aircraft circled over the airport at Mauripur, Karachi. It was watched by a vast, excited crowd while smoothly landing.",
+          "It was August 7th, 1947, when a silver aircraft circled over the airport at Mauripur, Karachi. It was watched by a vast, excited crowd while smoothly landing.",
           "First to step out of the aeroplane was a tall and dignified man wearing a pure white Sherwani. As soon as he appeared, the whole crowd roared with one voice, \"Pakistan Zindabad! Pakistan Zindabad!\" And every one pushed forward to welcome him, to get as close to him as possible in order to see him clearly.",
           "For here was their great leader, Quaid-e-Azam, the founder and first Governor General of their new country. Here was their leader who had won Pakistan for them—Muhammad Ali Jinnah."
         ],
@@ -1904,7 +2296,7 @@ const ENGLISH_DATA = [
           "question": "2. \"As soon as he appeared the whole crowd roared with one voice, 'Pakistan Zindabad!'\" Using the comparison clue, the word 'roared' in this sentence means:",
           "options": [
             "an angry voice",
-            "a long, deep voice / loud thunderous shout",
+            "a long, deep voice",
             "an irritated voice",
             "an annoyed voice"
           ],
@@ -1914,9 +2306,9 @@ const ENGLISH_DATA = [
         {
           "question": "3. \"Through all the excitement of those first days in the life of the young nation...\" In this sentence the phrase 'young nation' represents:",
           "options": [
-            "a newly developed / newly born country",
-            "an undeveloped country",
-            "a not fully formed country",
+            "newly developed country",
+            "undeveloped country",
+            "not fully formed country",
             "an advanced country"
           ],
           "correct": 0,
@@ -2638,6 +3030,175 @@ const ENGLISH_DATA = [
           "answer": "Unit 3 develops core foundations in noun taxonomy and sentence syntax.\n\n1. Concrete Nouns: Entities perceived directly through the five senses (sight, touch, smell, hearing, taste)—e.g., 'Quaid', 'aeroplane', 'mansion', 'crowd'.\n\n2. Abstract Nouns: Intangible concepts, moral virtues, emotions, and states of being—e.g., 'integrity', 'courage', 'determination', 'patriotism', 'freedom'.\n\n3. Compound Sentence Architecture:\nA compound sentence joins two or more independent clauses of equal grammatical rank using:\n- Coordinating Conjunctions: For, And, Nor, But, Or, Yet, So (FANBOYS): 'Quaid worked tirelessly, and he achieved Pakistan.'\n- Semicolons: 'The struggle was formidable; the Quaid remained resolute.'"
         }
       ]
+    },
+    "sourceSlos": [
+      "use pre-reading strategies to predict the content of a text from topic / picture / title / headings, key words and visuals etc. by using prior knowledge, asking questions and contextual clues.",
+      "analyze passages in the text to identify the theme / general subject, key idea / central thought (a statement about general subject), and supporting details.",
+      "apply critical thinking to interact with text and use intensive reading strategies to scan to answer short questions.",
+      "use summary skills to extract salient points and develop a mind map to summarize a text.",
+      "apply rules for use of articles (a / an / the) wherever applicable in speech and writing.",
+      "illustrate use and functions of all modal verbs.",
+      "illustrate use of regular and irregular verbs in speech and writing.",
+      "illustrate use of transitive and intransitive verbs.",
+      "use dictionary to: choose appropriate word definition; identify part of speech; locate synonyms in a thesaurus.",
+      "translate passages from English to Urdu: use the knowledge of literal and figurative meaning, grammatical gender and syntax to translate passage from English to Urdu; understand that most phrases and idioms do not translate literally from one language to another."
+    ],
+    "preReading": [
+      {
+        "q": "Who do you think a leader is?",
+        "a": "Pre-reading question (PDF 34)"
+      },
+      {
+        "q": "Why do you think Quaid-e-Azam is a great leader?",
+        "a": "Pre-reading question (PDF 34)"
+      }
+    ],
+    "glossary": [
+      {
+        "word": "dignified",
+        "pos": "",
+        "meaning": "calm and serious and deserving respect",
+        "urdu": "باوقار",
+        "pashto": "باوقاره",
+        "sourceMeaning": true
+      },
+      {
+        "word": "empire",
+        "pos": "",
+        "meaning": "a group of countries or states that are controlled by one ruler or government",
+        "urdu": "سلطنت",
+        "pashto": "امپراتوري، سلطنت",
+        "sourceMeaning": true
+      },
+      {
+        "word": "stern",
+        "pos": "",
+        "meaning": "serious and often disapproving; expecting somebody to obey you",
+        "urdu": "سخت گیر، سنجیدہ",
+        "pashto": "سخت، جدي",
+        "sourceMeaning": true
+      },
+      {
+        "word": "stretched",
+        "pos": "",
+        "meaning": "being longer",
+        "urdu": "پھیلا ہوا",
+        "pashto": "غځېدلی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "slogan",
+        "pos": "",
+        "meaning": "a word or phrase that is easy to remember, used for example by a political party or in advertising to attract people's attention or to suggest an idea quickly",
+        "urdu": "نعرہ",
+        "pashto": "شعار",
+        "sourceMeaning": true
+      },
+      {
+        "word": "vast",
+        "pos": "",
+        "meaning": "extremely large in area, size, amount, etc.",
+        "urdu": "وسیع",
+        "pashto": "پراخ",
+        "sourceMeaning": true
+      },
+      {
+        "word": "cheering",
+        "pos": "",
+        "meaning": "loud shouting that shows support, praise or encouragement for somebody",
+        "urdu": "خوشی کے نعرے، داد",
+        "pashto": "د خوښۍ چیغې، هرکلی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "foreign",
+        "pos": "",
+        "meaning": "in or from a country that is not your own",
+        "urdu": "غیر ملکی",
+        "pashto": "بهرنی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "leadership",
+        "pos": "",
+        "meaning": "the state or position of being a person who leads a group of people, especially the head of a country, an organization, etc.",
+        "urdu": "قیادت",
+        "pashto": "مشري",
+        "sourceMeaning": true
+      },
+      {
+        "word": "homeless",
+        "pos": "",
+        "meaning": "people who have no home",
+        "urdu": "بے گھر",
+        "pashto": "بې کوره",
+        "sourceMeaning": true
+      },
+      {
+        "word": "excitement",
+        "pos": "",
+        "meaning": "a feeling of great enthusiasm and eagerness",
+        "urdu": "جوش و خروش",
+        "pashto": "جوش او لېوالتیا",
+        "sourceMeaning": true
+      },
+      {
+        "word": "refuge",
+        "pos": "",
+        "meaning": "the state of being safe or sheltered",
+        "urdu": "پناہ",
+        "pashto": "پناه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "violence",
+        "pos": "",
+        "meaning": "behaviour involving physical force intended to hurt, damage",
+        "urdu": "تشدد",
+        "pashto": "تاوتریخوالی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "determination",
+        "pos": "",
+        "meaning": "firmness of purpose.",
+        "urdu": "عزم، پختہ ارادہ",
+        "pashto": "هوډ، ټینګ اراده",
+        "sourceMeaning": true
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "printedPages": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "notes": [
+        "Pre-reading questions (PDF 34) and verbatim learning outcomes (PDF 33) added; the earlier invented pre-reading text in authorInfo was replaced.",
+        "Glossary (PDF 36, printed 27) added: 14 words with book meanings; Urdu/Pashto meanings are SpaceBook translations.",
+        "Opening date restored to \"August 7th, 1947\" as printed (PDF 34).",
+        "MCQ 2 and 3 options restored to the printed wording (PDF 37).",
+        "Comprehension, phrases, vocabulary, antonyms, grammar (articles, modals, regular verbs, transitive/intransitive), writing G-J and role play match the book."
+      ],
+      "reviewedAt": "2026-10-12"
     }
   },
   {
@@ -2646,22 +3207,22 @@ const ENGLISH_DATA = [
     "preReading": [
       {
         "q": "What is nature?",
-        "a": "The physical world and its living creation, mountains, lakes, flowers, and open landscapes."
+        "a": "Pre-reading question (PDF 43)"
       },
       {
         "q": "How do you enjoy the beauty of nature?",
-        "a": "By observing scenic landscapes, feeling the breeze, and finding spiritual tranquility."
+        "a": "Pre-reading question (PDF 43)"
       },
       {
         "q": "Would you like to visit a place of natural beauty?",
-        "a": "Yes, visiting scenic spots like Swat or the Lake District refreshes the human soul."
+        "a": "Pre-reading question (PDF 43)"
       }
     ],
     "titleUrdu": "نرگس کے پھول (ڈیفوڈلز) — ولیم ورڈزورتھ",
     "titlePashto": "د نرګس ګلان — وليم ورډزورتهـ",
     "type": "poetry",
-    "author": "William Wordsworth (1770–1850)",
-    "authorInfo": "Pre-Reading Questions & Thematic Exploration:\n• What is nature? Nature encompasses the physical world, its living organisms, landscapes, mountains, water bodies, flora, and fauna, governed by natural laws and filled with inherent harmony.\n• How do you enjoy the beauty of nature? By observing scenic landscapes, feeling the cool breeze, listening to birdsong, watching blooming flowers, and experiencing peace and spiritual elevation away from urban noise.\n• Would you like to visit a place of natural beauty? Yes, visiting picturesque valleys, tranquil lakes, and verdant meadows revitalizes the mind and restores emotional balance.\n\nAbout the Poet (William Wordsworth):\nWilliam Wordsworth was born on 7 April 1770 at Cockermouth in Cumbria. He was a major English poet and one of the central figures of the Romantic Movement in English Literature. In 1799, Wordsworth settled at Dove Cottage in Grasmere in the Lake District. Wordsworth's well-known poem, 'The Daffodils' (also titled 'I Wandered Lonely as a Cloud') was written at Dove Cottage, inspired by an actual walk he took with his sister Dorothy along Ullswater in April 1802. Wordsworth died on 23 April 1850.\n\nCore Thematic SLOs:\n• Identify line, stanza structure, and the ABABCC rhyme scheme.\n• Analyze sensory language and figurative devices including similes and personification.\n• Master grammatical structures: Participles (present & past), Infinitives & Infinitive phrases, Gerunds & Gerund phrases.\n• Develop paraphrasing and summarizing skills for poetic stanzas.",
+    "author": "William Wordsworth",
+    "authorInfo": "About the Poet: William Wordsworth was born on 7 April 1770 at Cockermouth in Cambria. He was a major English poet. In 1799, Wordsworth settled at Dove Cottage in Grasmere in the Lake District. Wordsworth's well-known poem, The Daffodils was written at Dove Cottage. Wordsworth died on 23 April 1850.",
     "sections": [
       {
         "heading": "Stanza 1: The Golden Host beside the Lake",
@@ -2941,99 +3502,131 @@ const ENGLISH_DATA = [
       "glossaryTable": [
         {
           "word": "wandered",
-          "pos": "v.",
-          "meaning": "To walk slowly around without a fixed purpose or direction.",
-          "example": "He wandered alone through the peaceful countryside."
+          "pos": "",
+          "meaning": "to walk slowly around or to a place, often without any particular sense of purpose or direction",
+          "urdu": "آوارہ گردی کی، بلا مقصد گھوما",
+          "pashto": "بې موخې وګرځېد",
+          "sourceMeaning": true
         },
         {
           "word": "vales",
-          "pos": "n.",
-          "meaning": "Valleys.",
-          "example": "Mist settled over the deep green vales of the highlands."
+          "pos": "",
+          "meaning": "valleys",
+          "urdu": "وادیاں",
+          "pashto": "درې",
+          "sourceMeaning": true
         },
         {
           "word": "host",
-          "pos": "n.",
-          "meaning": "A great number or vast group.",
-          "example": "A host of golden blossoms greeted the morning travelers."
+          "pos": "",
+          "meaning": "great number or groups",
+          "urdu": "بڑی تعداد، جھنڈ",
+          "pashto": "ډېر شمېر، ګڼه",
+          "sourceMeaning": true
         },
         {
           "word": "fluttering",
-          "pos": "v.",
-          "meaning": "To move lightly, quickly, and softly in the air.",
-          "example": "Autumn leaves were fluttering gently in the breeze."
+          "pos": "",
+          "meaning": "to move lightly and quickly; to make something move in this way",
+          "urdu": "لہرانا، پھڑپھڑانا",
+          "pashto": "رپېدل، ښورېدل",
+          "sourceMeaning": true
         },
         {
           "word": "stretched",
-          "pos": "v.",
-          "meaning": "Extended or spread out across a wide area.",
-          "example": "The coastline stretched for miles beneath the cliffs."
+          "pos": "",
+          "meaning": "to make something longer, wider or looser, for example by pulling it; to become longer, etc. in this way",
+          "urdu": "پھیلا ہوا",
+          "pashto": "غځېدلی",
+          "sourceMeaning": true
         },
         {
           "word": "margin",
-          "pos": "n.",
-          "meaning": "The edge, border, or boundary of something.",
-          "example": "Wildflowers grew abundantly along the margin of the stream."
+          "pos": "",
+          "meaning": "The edge ar border of something line",
+          "urdu": "کنارہ",
+          "pashto": "غاړه، څنډه",
+          "sourceMeaning": true
         },
         {
           "word": "sprightly",
-          "pos": "adj. / adv.",
-          "meaning": "Full of life, vitality, and energetic cheerfulness.",
-          "example": "The elderly gentleman took a sprightly morning walk."
+          "pos": "",
+          "meaning": "full of life and energy",
+          "urdu": "چست، زندہ دل",
+          "pashto": "چست، ژوندی",
+          "sourceMeaning": true
         },
         {
           "word": "gay",
-          "pos": "adj.",
-          "meaning": "Light-hearted, carefree, happy, and cheerful.",
-          "example": "The cheerful morning songs of birds made everyone feel gay and optimistic."
+          "pos": "",
+          "meaning": "light-hearted and carefree / happy and cheerful",
+          "urdu": "خوش و خرم",
+          "pashto": "خوشحاله، بې غمه",
+          "sourceMeaning": true
         },
         {
           "word": "jocund",
-          "pos": "adj.",
-          "meaning": "Cheerful, jovial, and light-hearted.",
-          "example": "They spent a memorable evening in jocund company."
+          "pos": "",
+          "meaning": "cheerful and light-hearted",
+          "urdu": "خوش مزاج، شاداں",
+          "pashto": "خوشحاله، زړه ور",
+          "sourceMeaning": true
         },
         {
           "word": "gazed",
-          "pos": "v.",
-          "meaning": "To look steadily and intently with admiration or wonder.",
-          "example": "She gazed at the magnificent mountain peaks in awe."
+          "pos": "",
+          "meaning": "to look steadily at somebody/something for a long time, either because you are very interested or surprised, or because you are thinking of something else",
+          "urdu": "ٹکٹکی باندھ کر دیکھا",
+          "pashto": "په غور یې وکتل",
+          "sourceMeaning": true
         },
         {
           "word": "couch",
-          "pos": "n.",
-          "meaning": "A long comfortable seat or sofa for resting.",
-          "example": "After a tiring day, he rested quietly on the couch."
+          "pos": "",
+          "meaning": "a long comfortable seat for two or more people to sit on",
+          "urdu": "صوفہ، پلنگ",
+          "pashto": "کوچ، اوږده څوکۍ",
+          "sourceMeaning": true
         },
         {
           "word": "pensive",
-          "pos": "adj.",
-          "meaning": "Thinking deeply about something, often with serious or thoughtful reflection.",
-          "example": "His pensive expression showed he was pondering an important decision."
+          "pos": "",
+          "meaning": "thinking deeply about something, especially because you are sad or worried",
+          "urdu": "فکرمند، سوچ میں ڈوبا",
+          "pashto": "په فکر کې ډوب",
+          "sourceMeaning": true
         },
         {
           "word": "vacant",
-          "pos": "adj.",
-          "meaning": "Empty; free from thoughts or active occupation.",
-          "example": "In vacant moments, quiet contemplation brings mental clarity."
+          "pos": "",
+          "meaning": "empty; not being used",
+          "urdu": "خالی",
+          "pashto": "تش",
+          "sourceMeaning": true
         },
         {
           "word": "bay",
-          "pos": "n.",
-          "meaning": "A broad inlet of the sea or lake where the land curves inward.",
-          "example": "Fishing boats anchored safely inside the calm bay."
+          "pos": "",
+          "meaning": "a part of the sea, or of a large lake, partly surrounded by a wide curve of the land",
+          "urdu": "خلیج",
+          "pashto": "خلیج",
+          "sourceMeaning": true
         },
         {
           "word": "solitude",
-          "pos": "n.",
-          "meaning": "The state of being alone, especially when peaceful and pleasant.",
-          "example": "He enjoyed the peaceful solitude of the library."
+          "pos": "",
+          "meaning": "the state of being alone, especially when you find this pleasant",
+          "urdu": "تنہائی",
+          "pashto": "یوازیتوب",
+          "sourceMeaning": true
         },
         {
           "word": "tossing",
-          "pos": "v.",
-          "meaning": "To move or shake from side to side or up and down.",
-          "example": "The tall trees were tossing their branches in the storm."
+          "pos": "",
+          "meaning": "to move or make somebody/something move from side to side or up and down",
+          "urdu": "اچھالنا، جھومنا",
+          "pashto": "ښورول، پورته ښکته کول",
+          "sourceMeaning": true
         }
       ],
       "grammarActivities": {
@@ -3264,7 +3857,7 @@ const ENGLISH_DATA = [
       ],
       "speakingActivity": {
         "title": "Listening & Speaking: Classroom Dialogue with Conventions of Interruption",
-        "prompt": "Develop and practice a dialogue in groups to exhibit appropriate conventions of polite interruption during an academic discussion on nature poetry.",
+        "prompt": "Develop and practice a dialogue in group to exhibit appropriate convention of interruption.",
         "modelResponse": "Student A (Ali): In my analysis, Wordsworth is emphasizing that human beings are deeply connected to the natural world and that solitude can be transformed into joy.\n\nStudent B (Hamza): *Excuse me, Ali, may I interrupt for a brief second?* I completely agree with your point, but I'd like to add that this transformation happens specifically through the power of memory and the 'inward eye'.\n\nStudent A (Ali): *Certainly, Hamza, thank you for pointing that out.* The inward eye represents the human imagination reviving the past.\n\nStudent C (Bilal): *Pardon the interruption, but could you please clarify* how Wordsworth uses personification to make this memory so vivid?\n\nStudent B (Hamza): *Thank you for asking, Bilal.* By describing the flowers as 'tossing their heads' and forming a 'jocund company', Wordsworth treats nature as a living, friendly companion rather than just a lifeless backdrop."
       },
       "vocabulary": [
@@ -3946,7 +4539,181 @@ const ENGLISH_DATA = [
     },
     "englishSummary": "'The Daffodils' by William Wordsworth is a celebrated Romantic lyric that illustrates nature's profound capacity to heal and uplift the human spirit. The poet, walking alone in a melancholic mood, encounters a vibrant host of golden daffodils dancing along the lakeside. The sheer exuberance of the flowers surpasses the glittering lake waves. Wordsworth emphasizes that nature's beauty is not merely a fleeting sensory pleasure; it leaves an enduring imprint on the 'inward eye' (the imagination), bringing joyful solace during moments of solitude and contemplation.",
     "urduSummary": "نظم 'ڈیفوڈلز' ولیم ورڈز ورتھ کی ایک شہرہ آفاق رومانی نظم ہے جس میں فطرت کی روح پرور خوبصورتی کو خراجِ تحسین پیش کیا گیا ہے۔ شاعر جو تنہائی اور اداسی کے عالم میں گھوم رہا تھا، جھیل کے کنارے ہزاروں سنہری نرگس کے پھولوں کو بادِ نسیم میں رقص کرتے دیکھتا ہے۔ یہ مسرت انگیز نظارہ اس کے دل کو بے پایاں خوشی بخشتا ہے۔ سب سے اہم بات یہ ہے کہ یہ خوبصورتی صرف اس لمحے تک محدود نہیں رہتی، بلکہ جب بھی شاعر تنہا اور اداس ہوتا ہے، چشمِ باطن میں وہ منظر دوبارہ زندہ ہو جاتا ہے اور اس کا دل پھولوں کے ساتھ رقص کرنے لگتا ہے۔",
-    "pashtoSummary": "د نرګس ګلونه د انګلیسي ژبې یوه خورا مشهوره نظم دی چې د طبیعت ښکلا او معنوي ځواک بیانوي. شاعر چې کله خفه او یوازې و، د جهیل تر څنګ یې زرګونه نرګس ګلان ولیدل چې په خورا خوښۍ سره نڅیدل. دا ښکلی منظر د ده په حافظه او خیال کې د تل لپاره ثبت شو او هر کله چې دی یوازې وي، دا یاد د ده زړه بیا له خوشحاله کوي."
+    "pashtoSummary": "د نرګس ګلونه د انګلیسي ژبې یوه خورا مشهوره نظم دی چې د طبیعت ښکلا او معنوي ځواک بیانوي. شاعر چې کله خفه او یوازې و، د جهیل تر څنګ یې زرګونه نرګس ګلان ولیدل چې په خورا خوښۍ سره نڅیدل. دا ښکلی منظر د ده په حافظه او خیال کې د تل لپاره ثبت شو او هر کله چې دی یوازې وي، دا یاد د ده زړه بیا له خوشحاله کوي.",
+    "sourceSlos": [
+      "identify line and stanza.",
+      "read poem and give orally or in writing: main idea; theme and its development; summary; personal response with justification; paraphrase",
+      "use paraphrasing skills to paraphrase stanzas: mark thought groups in the stanza; restate the message in simple prose; replace poetic words with simple ones",
+      "analyze how the poet uses language to appeal to the senses through use of figurative language including similes.",
+      "recognize literary technique such as personification.",
+      "describe the object being personified.",
+      "deduce meaning of difficult words from context.",
+      "demonstrate use of question words.",
+      "make and use present and past participles.",
+      "illustrate use of infinitive and infinitive phrases.",
+      "illustrate use of gerund and gerund phrases."
+    ],
+    "glossary": [
+      {
+        "word": "wandered",
+        "pos": "",
+        "meaning": "to walk slowly around or to a place, often without any particular sense of purpose or direction",
+        "urdu": "آوارہ گردی کی، بلا مقصد گھوما",
+        "pashto": "بې موخې وګرځېد",
+        "sourceMeaning": true
+      },
+      {
+        "word": "vales",
+        "pos": "",
+        "meaning": "valleys",
+        "urdu": "وادیاں",
+        "pashto": "درې",
+        "sourceMeaning": true
+      },
+      {
+        "word": "host",
+        "pos": "",
+        "meaning": "great number or groups",
+        "urdu": "بڑی تعداد، جھنڈ",
+        "pashto": "ډېر شمېر، ګڼه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "fluttering",
+        "pos": "",
+        "meaning": "to move lightly and quickly; to make something move in this way",
+        "urdu": "لہرانا، پھڑپھڑانا",
+        "pashto": "رپېدل، ښورېدل",
+        "sourceMeaning": true
+      },
+      {
+        "word": "stretched",
+        "pos": "",
+        "meaning": "to make something longer, wider or looser, for example by pulling it; to become longer, etc. in this way",
+        "urdu": "پھیلا ہوا",
+        "pashto": "غځېدلی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "margin",
+        "pos": "",
+        "meaning": "The edge ar border of something line",
+        "urdu": "کنارہ",
+        "pashto": "غاړه، څنډه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "sprightly",
+        "pos": "",
+        "meaning": "full of life and energy",
+        "urdu": "چست، زندہ دل",
+        "pashto": "چست، ژوندی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "gay",
+        "pos": "",
+        "meaning": "light-hearted and carefree / happy and cheerful",
+        "urdu": "خوش و خرم",
+        "pashto": "خوشحاله، بې غمه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "jocund",
+        "pos": "",
+        "meaning": "cheerful and light-hearted",
+        "urdu": "خوش مزاج، شاداں",
+        "pashto": "خوشحاله، زړه ور",
+        "sourceMeaning": true
+      },
+      {
+        "word": "gazed",
+        "pos": "",
+        "meaning": "to look steadily at somebody/something for a long time, either because you are very interested or surprised, or because you are thinking of something else",
+        "urdu": "ٹکٹکی باندھ کر دیکھا",
+        "pashto": "په غور یې وکتل",
+        "sourceMeaning": true
+      },
+      {
+        "word": "couch",
+        "pos": "",
+        "meaning": "a long comfortable seat for two or more people to sit on",
+        "urdu": "صوفہ، پلنگ",
+        "pashto": "کوچ، اوږده څوکۍ",
+        "sourceMeaning": true
+      },
+      {
+        "word": "pensive",
+        "pos": "",
+        "meaning": "thinking deeply about something, especially because you are sad or worried",
+        "urdu": "فکرمند، سوچ میں ڈوبا",
+        "pashto": "په فکر کې ډوب",
+        "sourceMeaning": true
+      },
+      {
+        "word": "vacant",
+        "pos": "",
+        "meaning": "empty; not being used",
+        "urdu": "خالی",
+        "pashto": "تش",
+        "sourceMeaning": true
+      },
+      {
+        "word": "bay",
+        "pos": "",
+        "meaning": "a part of the sea, or of a large lake, partly surrounded by a wide curve of the land",
+        "urdu": "خلیج",
+        "pashto": "خلیج",
+        "sourceMeaning": true
+      },
+      {
+        "word": "solitude",
+        "pos": "",
+        "meaning": "the state of being alone, especially when you find this pleasant",
+        "urdu": "تنہائی",
+        "pashto": "یوازیتوب",
+        "sourceMeaning": true
+      },
+      {
+        "word": "tossing",
+        "pos": "",
+        "meaning": "to move or make somebody/something move from side to side or up and down",
+        "urdu": "اچھالنا، جھومنا",
+        "pashto": "ښورول، پورته ښکته کول",
+        "sourceMeaning": true
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "printedPages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "notes": [
+        "About the Poet (PDF 44, printed 35) restored verbatim in authorInfo; the earlier invented pre-reading answers there were removed.",
+        "Pre-reading questions (PDF 43) and verbatim learning outcomes (PDF 42) added.",
+        "Glossary replaced with the book glossary (PDF 44): 16 words with printed meanings (\"ar border\", \"Cambria\" kept as printed); Urdu/Pashto are SpaceBook translations.",
+        "Listening & speaking prompt restored to the printed wording (PDF 48).",
+        "Poem text, comprehension A, MCQs B, vocabulary A-C, writing A-B and grammar A-D match the book."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   },
   {
     "number": 5,
@@ -3955,17 +4722,17 @@ const ENGLISH_DATA = [
     "titlePashto": "د مدينې تړون (میثاق مدینه)",
     "type": "prose",
     "author": "KPK Textbook Board Peshawar",
-    "authorInfo": "Pre-Reading & Thematic Mind Map:\nFreedom and safety (آزادی اور تحفظ), Peaceful Co-existence (پرامن بقائے باہمی), Religious harmony (مذہبی ہم آہنگی), Love and peace (محبت اور امن), Humanity and justice (انسانیت اور عدل), Patience and tolerance (صبر اور رواداری).\n\nKey Competencies & Student Learning Outcomes (SLOs):\n• Use pre-reading strategies to predict the content of a text from topic/picture/title/headings, key words and visuals.\n• Analyze passages in the text to identify the theme/general subject, key idea/central thought, and supporting details.\n• Identify, change the form of, and use Present and Past Perfect Continuous tenses.\n• Apply critical thinking to interact with text and use intensive reading strategies to scan to answer short questions.\n• Use summary skills to extract salient points and develop a mind map to summarize a text.\n• Identify cataphoric and anaphoric references, transitive and intransitive verbs, and tense of a passage.\n• Master comprehensive Grammar Revision Exercises 1 to 16.",
+    "authorInfo": "The book prints no author name for this unit (PDF 50).",
     "sections": [
       {
         "heading": "1. Migration to Medina & Unification under Ansar",
         "headingUrdu": "مدینہ منورہ کی طرف ہجرت اور انصار کے نام تلے اتحاد",
         "headingPashto": "مدینې ته هجرت او د انصارو تر نوم لاندې پیوستون",
-        "text": "When Hazrat Muhammad (migrated to Medina, this city was inhabited by different sections of people. They were the faithful followers of Hazrat Muhammad (who had abandoned the ties of kith and kin and followed him (). They were known as Muhajireen or \"Refugees\". The new converts of Medina who had helped the Rasool () through thick and thin were known as Ansar or \"Helpers\". The other communities living in Medina were the idol worshippers and the Jews. In order to create harmony and co-operation, the Rasool () first abolished the tribal distinction and grouped the inhabitants of Medina under one general name, Ansar or Helpers. He () knew that goodwill and support of all the sections of people were necessary for the creation of an Islamic state. He () knew that tolerance was necessary when different communities lived together. With these objectives in mind, the Rasool () drafted a charter which is generally known as the Medina Charter.",
+        "text": "When Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) migrated to Medina, this city was inhabited by different sections of people. They were the faithful followers of Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) who had abandoned the ties of kith and kin and followed him (ﷺ). They were known as Muhajireen or \"Refugees\". The new converts of Medina who had helped the Rasool (ﷺ) through thick and thin were known as Ansar or \"Helpers\". The other communities living in Medina were the idol worshippers and the Jews. In order to create harmony and co-operation, the Rasool (ﷺ) first abolished the tribal distinction and grouped the inhabitants of Medina under one general name, Ansar or Helpers. He (ﷺ) knew that goodwill and support of all the sections of people were necessary for the creation of an Islamic state. He (ﷺ) knew that tolerance was necessary when different communities lived together. With these objectives in mind, the Rasool (ﷺ) drafted a charter which is generally known as the Medina Charter.",
         "paras": [
-          "When Hazrat Muhammad (migrated to Medina, this city was inhabited by different sections of people. They were the faithful followers of Hazrat Muhammad (who had abandoned the ties of kith and kin and followed him (). They were known as Muhajireen or \"Refugees\". The new converts of Medina who had helped the Rasool () through thick and thin were known as Ansar or \"Helpers\".",
-          "The other communities living in Medina were the idol worshippers and the Jews. In order to create harmony and co-operation, the Rasool () first abolished the tribal distinction and grouped the inhabitants of Medina under one general name, Ansar or Helpers.",
-          "He () knew that goodwill and support of all the sections of people were necessary for the creation of an Islamic state. He () knew that tolerance was necessary when different communities lived together. With these objectives in mind, the Rasool () drafted a charter which is generally known as the Medina Charter."
+          "When Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) migrated to Medina, this city was inhabited by different sections of people. They were the faithful followers of Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) who had abandoned the ties of kith and kin and followed him (ﷺ). They were known as Muhajireen or \"Refugees\". The new converts of Medina who had helped the Rasool (ﷺ) through thick and thin were known as Ansar or \"Helpers\".",
+          "The other communities living in Medina were the idol worshippers and the Jews. In order to create harmony and co-operation, the Rasool (ﷺ) first abolished the tribal distinction and grouped the inhabitants of Medina under one general name, Ansar or Helpers.",
+          "He (ﷺ) knew that goodwill and support of all the sections of people were necessary for the creation of an Islamic state. He (ﷺ) knew that tolerance was necessary when different communities lived together. With these objectives in mind, the Rasool (ﷺ) drafted a charter which is generally known as the Medina Charter."
         ],
         "urdu": "جب حضرت محمد (رسول اللہ خاتم النبیین ﷺ) نے مدینہ منورہ کی طرف ہجرت فرمائی، تو یہ شہر لوگوں کے مختلف طبقات سے آباد تھا۔ وہ حضرت محمد (رسول اللہ خاتم النبیین ﷺ) کے وفادار پیروکار تھے جنہوں نے اپنے عزیز و اقارب کے ناطے اور رشتہ داریاں چھوڑ دی تھیں اور آپ ﷺ کے پیچھے چلے آئے تھے۔ وہ مہاجرین کہلاتے تھے۔ مدینہ کے نو مسلم جنہوں نے ہر اچھے برے وقت (ہر مشکل گھڑی) میں رسول اللہ ﷺ کی مدد کی تھی، وہ انصار یا ”مددگار“ کے نام سے جانے جاتے تھے۔\n\nمدینہ میں رہنے والی دیگر برادریاں بت پرست اور یہودی تھے۔ ہم آہنگی اور باہمی تعاون پیدا کرنے کے لیے، رسول اللہ ﷺ نے سب سے پہلے قبائلی امتیازات کو ختم کیا اور مدینہ کے باشندوں کو ایک عمومی نام ”انصار یا مددگار“ کے تحت منظم کیا۔\n\nآپ ﷺ جانتے تھے کہ ایک اسلامی ریاست کے قیام کے لیے تمام طبقات کی خیر سگالی اور حمایت ناگزیر ہے۔ آپ ﷺ جانتے تھے کہ جب مختلف برادریاں ایک ساتھ رہتی ہوں تو رواداری ازحد ضروری ہے۔ انہی مقاصد کو پیشِ نظر رکھتے ہوئے، رسول اللہ ﷺ نے ایک معاہدہ (منشور) تیار کیا جو عام طور پر میثاقِ مدینہ کے نام سے جانا جاتا ہے۔",
         "pashto": "کله چې حضرت محمد (رسول الله خاتم النبیین ﷺ) مدینې منورې ته هجرت وکړ، نو دا ښار د مختلفو پرګنو او ډلو خلکو اباد کړی و. هغوی د حضرت محمد ﷺ وفاداره پیروان وو چې د خپلو خپلوانو ټولې اړیکې یې شاته پرېښودې او د هغه ﷺ پسې راغلل. هغوی د مهاجرینو په نوم یادېدل. د مدینې نوي مسلمانان چې په هر سخت او اسانه وخت کې یې د رسول الله ﷺ مرسته کړې وه، د انصارو یا ”مرستندویانو“ په نوم وپېژندل شول.\n\nپه مدینه کې نورې مېشتې ټولنې بت پرستان او یهودان وو. د همغږۍ او ګډې همکارۍ د رامنځته کولو لپاره، رسول الله ﷺ لومړی قبیلوي توپیرونه له منځه یووړل او د مدینې ټول اوسیدونکي یې تر یوه عمومي نوم ”انصار یا مرستندویان“ لاندې راټول کړل.\n\nهغه ﷺ پوهېده چې د یوه اسلامي دولت د جوړولو لپاره د ټولو خلکو نیک نیت او ملاتړ اړین دی. هغه ﷺ پوهېده چې کله مختلفې ټولنې یوځای ژوند کوي، نو زغم او رواداري حتمي ده. د همدې اهدافو په پام کې نیولو سره، رسول الله ﷺ یو تړون ولیکه چې عموماً د مدینې تړون (میثاق مدینه) په نوم یادیږي."
@@ -3974,7 +4741,7 @@ const ENGLISH_DATA = [
         "heading": "2. The Main Clauses of the Medina Charter",
         "headingUrdu": "میثاقِ مدینہ کی بنیادی دفعات اور شرائط",
         "headingPashto": "د مدینې د تړون بنسټیزې مادې او شرایط",
-        "text": "The main points of the charter are:\nAll the communities signing the charter would form the common nationality. If any signatory of the charter was attacked by an enemy, others would defend him collectively. The Muslims, the Jews and other communities of this republic should be free to profess their own respective religion and perform religious ceremonies. Individual and personal offences of trivial nature of any non-Muslim would be treated as such and no general liability would fall on the community to which the offender belonged. The oppressed should be protected. Henceforth, bloodshed, murder and violence should be Haram (abominable) in Medina. All disputes should be referred for decision to Hazrat Muhammad ( the Rasool of Allah.",
+        "text": "The main points of the charter are:\nAll the communities signing the charter would form the common nationality. If any signatory of the charter was attacked by an enemy, others would defend him collectively. The Muslims, the Jews and other communities of this republic should be free to profess their own respective religion and perform religious ceremonies. Individual and personal offences of trivial nature of any non-Muslim would be treated as such and no general liability would fall on the community to which the offender belonged. The oppressed should be protected. Henceforth, bloodshed, murder and violence should be Haram (abominable) in Medina. All disputes should be referred for decision to Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) the Rasool of Allah.",
         "paras": [
           "The main points of the charter are:",
           "All the communities signing the charter would form the common nationality.",
@@ -4007,7 +4774,7 @@ const ENGLISH_DATA = [
         "paras": [
           "In 1948, the General Assembly of the United Nations unanimously adopted the Universal Declaration of Human Rights. The declaration proclaims the religious, personal, civic, political, economic, social and cultural rights of human beings. The incorporation of the clauses of Medina Charter in the Universal Declaration of Human Rights by the UN shows that Islam is the greatest protector of Human Rights.",
           "Teacher's guideline:\nMake students recall the use of colon. Ask them to find examples of the use of colon. Revise with the students that parenthesis are used to mark off explanatory or supplementary material e.g. Haram (abominable). Ask students to find more examples of the use of parenthesis, to enclose numbers or letters in enumeration from newspaper or a magazine.",
-          "The Universal declaration of Human Rights:\nThis Charter was approved on 10th December, 1948 and made public. There are thirty points in all. A few are being mentioned here:\n• We are all free and equal. We are all born free. We all have our own thoughts and ideas. We should all be treated in the same way.\n• Don't discriminate. These rights belong to everybody, whatever our differences are.\n• We all have the right to live, and to live in freedom and safety.\n• Nobody has any right to hurt us or to torture us.\n• We are all protected by the law. The law is the same for everybody. It must treat us all fairly.\n• We all have the right to take part in the government of our country.\n• We all have a right to lead a good life. Mothers and children, people who are old, unemployed or disabled, and all other people have the right to be cared for.\n• Education is a right, primary education should be free.\n• We have a duty to other people and we should protect their rights and freedoms."
+          "The Universal declaration of Human Rights:\nThis Charter was approved on 10th December, 1948 and made public. There are thirty points in all. A few are being mentioned here.\n• We are all free and equal. We are all born free. We all have our own thoughts and ideas. We should all be treated in the same way.\n• Don't discriminate. These rights belong to everybody, whatever our differences are.\n• We all have the right to live, and to live in freedom and safety.\n• Nobody has any right to hurt us or to torture us.\n• We are all protected by the law. The law is the same for everybody. It must treat us all fairly.\n• We all have the right to take part in the government of our country.\n• We all have a right to lead a good life. Mothers and children, people who are old, unemployed or disabled, and all other people have the right to be cared for.\n• Education is a right, primary education should be free.\n• We have a duty to other people and we should protect their rights and freedoms."
         ],
         "urdu": "1948ء میں اقوامِ متحدہ کی جنرل اسمبلی نے متفقہ طور پر انسانی حقوق کا عالمی اعلامیہ منظور کیا۔ یہ اعلامیہ انسانوں کے مذہبی، ذاتی، شہری، سیاسی، معاشی، سماجی اور ثقافتی حقوق کا اعلان کرتا ہے۔ اقوامِ متحدہ کے انسانی حقوق کے عالمی اعلامیے میں میثاقِ مدینہ کی شقوں کی شمولیت یہ ثابت کرتی ہے کہ اسلام انسانی حقوق کا سب سے بڑا محافظ ہے۔\n\nاساتذہ کے لیے رہنمائی:\nکولن (:) وضاحتوں، فہرستوں یا براہِ راست اقوال کے آغاز کے لیے استعمال ہوتا ہے۔ قوسین ( ) وضاحتی یا اضافی مواد کے لیے استعمال ہوتے ہیں جیسے حرام (ناپسندیدہ و ممنوع)۔\n\nانسانی حقوق کا عالمی اعلامیہ (10 دسمبر 1948ء):\nاس چارٹر کی کل 30 شقیں ہیں جن میں سے چند اہم نکات درج ذیل ہیں:\n• ہم سب آزاد اور برابر ہیں۔ ہم سب آزاد پیدا ہوئے ہیں۔ ہم سب کے اپنے خیالات اور نظریات ہیں۔ ہمارے ساتھ یکساں سلوک ہونا چاہیے۔\n• امتیاز مت برتو۔ یہ حقوق ہر کسی کے ہیں، چاہے ہمارے اختلافات کچھ بھی ہوں۔\n• ہم سب کو زندہ رہنے، اور آزادی و تحفظ کے ساتھ جینے کا حق حاصل ہے۔\n• کسی کو ہمیں نقصان پہنچانے یا تشدد کا نشانہ بنانے کا کوئی حق نہیں ہے۔\n• ہم سب کو قانون کا تحفظ حاصل ہے۔ قانون سب کے لیے برابر ہے اور اس کا سلوک سب کے ساتھ منصفانہ ہونا چاہیے۔\n• ہم سب کو اپنے ملک کی حکومت میں حصہ لینے کا حق حاصل ہے۔\n• ہم سب کو ایک اچھی زندگی گزارنے کا حق ہے۔ ماؤں، بچوں، بزرگوں، بے روزگاروں اور معذوروں سمیت تمام لوگوں کی دیکھ بھال کا حق ہے۔\n• تعلیم ایک بنیادی حق ہے، اور پرائمری تعلیم مفت ہونی چاہیے۔\n• دوسرے لوگوں کے لیے ہمارے فرائض ہیں اور ہمیں ان کے حقوق اور آزادیوں کا تحفظ کرنا چاہیے۔",
         "pashto": "په ۱۹۴۸ کال کې د ملګرو ملتونو عمومي اسامبلې په متفقه توګه د بشري حقونو نړیواله اعلامیه تصویب کړه. دا اعلامیه د انسانانو مذهبي، شخصي، مدني، سیاسي، اقتصادي، ټولنیز او کلتوري حقونه اعلانوي. د ملګرو ملتونو لخوا د بشري حقونو په نړیواله اعلامیه کې د مدینې د تړون د مادو شاملول دا ښیي چې اسلام د بشري حقونو تر ټولو لوی ساتونکی او محافظ دی.\n\nد ښوونکي لارښود:\nکولن (:) د تشریحاتو او لستونو لپاره کارول کیږي. قوسین ( ) د اضافي تشریح لپاره کارول کیږي لکه حرام (ناوړه او منع).\n\nد بشري حقونو نړیواله اعلامیه (۱۰ دسمبر ۱۹۴۸):\n• موږ ټول ازاد او مساوي یو. موږ ټول ازاد زېږېدلي یو. موږ ټول خپل فکرونه او نظرونه لرو. له موږ ټولو سره باید یو شان چلند وشي.\n• توپیر مه کوئ. دا حقونه د هر چا دي، که زموږ ترمنځ هر ډول توپیرونه وي.\n• موږ ټول د ژوند کولو، او په ازادۍ او امن کې د ژوند کولو حق لرو.\n• هیڅوک حق نه لري چې موږ ته زیان ورسوي یا موږ شکنجه کړي.\n• موږ ټول د قانون تر محافظت لاندې یو. قانون د هر چا لپاره یو شان دی.\n• موږ ټول حق لرو چې د خپل هېواد په حکومت کې برخه واخلو.\n• موږ ټول حق لرو چې یو ښه ژوند ولرو. میندې او ماشومان، زاړه، وزګار او معذوران د پاملرنې حق لري.\n• زده کړه یو حق دی، لومړنۍ زده کړې باید وړیا وي.\n• موږ د نورو خلکو په وړاندې مسؤلیت لرو او باید د هغوی د حقونو او ازادیو ساتنه وکړو."
@@ -4048,75 +4815,99 @@ const ENGLISH_DATA = [
       "glossaryTable": [
         {
           "word": "abolish",
-          "pos": "verb",
-          "meaning": "To officially end a law, a system or an institution.",
-          "example": "Hazrat Muhammad (ﷺ) abolished tribal distinctions in Medina to establish unity."
+          "pos": "",
+          "meaning": "to officially end a law, a system or an institution",
+          "urdu": "منسوخ کرنا، ختم کرنا",
+          "pashto": "لغوه کول، پای ته رسول",
+          "sourceMeaning": true
         },
         {
           "word": "abandon",
-          "pos": "verb",
-          "meaning": "To leave somebody or something, especially somebody you are responsible for, with no intention of returning.",
-          "example": "The Muhajireen abandoned their ancestral homes and properties in Makkah."
+          "pos": "",
+          "meaning": "to leave somebody, especially somebody you are responsible for, with no intention of returning",
+          "urdu": "چھوڑ دینا",
+          "pashto": "پرېښودل",
+          "sourceMeaning": true
         },
         {
           "word": "charter",
-          "pos": "noun",
-          "meaning": "A written statement describing the rights and principles that a particular group of people should have.",
-          "example": "The Medina Charter is the first written constitution in human history."
+          "pos": "",
+          "meaning": "a written statement describing the rights that a particular group of people should have",
+          "urdu": "منشور",
+          "pashto": "منشور",
+          "sourceMeaning": true
         },
         {
           "word": "community",
-          "pos": "noun",
-          "meaning": "All the people who live in a particular area, country, etc. when talked about as a group.",
-          "example": "Various religious communities lived peacefully under the Medina Charter."
+          "pos": "",
+          "meaning": "all the people who live in a particular area, country, etc. when talked about as a group",
+          "urdu": "برادری، معاشرہ",
+          "pashto": "ټولنه",
+          "sourceMeaning": true
         },
         {
           "word": "converts",
-          "pos": "noun / verb",
-          "meaning": "People who have changed their religion or beliefs (or the act of changing).",
-          "example": "The new converts of Medina wholeheartedly supported the holy cause of Islam."
+          "pos": "",
+          "meaning": "to change or make somebody change their religion or beliefs",
+          "urdu": "نو مسلم، مذہب بدلنے والے",
+          "pashto": "نوي مسلمانان، دین بدلوونکي",
+          "sourceMeaning": true
         },
         {
           "word": "harmony",
-          "pos": "noun",
-          "meaning": "A state of peaceful existence, agreement, and mutual co-operation.",
-          "example": "Interfaith harmony is vital for peace and prosperity in any modern nation."
+          "pos": "",
+          "meaning": "a state of peaceful existence and agreement",
+          "urdu": "ہم آہنگی",
+          "pashto": "همغږي",
+          "sourceMeaning": true
         },
         {
           "word": "inhabited",
-          "pos": "adjective / verb",
-          "meaning": "With people or animals living in a specific place.",
-          "example": "Medina was inhabited by Muslims, Jewish tribes, and idol worshippers."
+          "pos": "",
+          "meaning": "with people or animals living there",
+          "urdu": "آباد",
+          "pashto": "اباد، مېشت",
+          "sourceMeaning": true
         },
         {
           "word": "kith and kin",
-          "pos": "idiom / noun",
-          "meaning": "Friends and relatives / family relations.",
-          "example": "The Muhajireen sacrificed their ties of kith and kin for their devotion to Allah and His Rasool (ﷺ)."
+          "pos": "",
+          "meaning": "friends and relatives",
+          "urdu": "عزیز و اقارب",
+          "pashto": "خپلوان او دوستان",
+          "sourceMeaning": true
         },
         {
           "word": "liability",
-          "pos": "noun",
-          "meaning": "The state of being legally responsible for something.",
-          "example": "Under the Charter, no general liability would fall upon an entire tribe for an individual's petty offence."
+          "pos": "",
+          "meaning": "the state of being legally responsible for something",
+          "urdu": "ذمہ داری",
+          "pashto": "مسؤلیت",
+          "sourceMeaning": true
         },
         {
           "word": "migrated",
-          "pos": "verb",
-          "meaning": "Moved from one part of the world/country to another to settle.",
-          "example": "In 622 CE, the holy Prophet (ﷺ) migrated from Makkah to Medina."
+          "pos": "",
+          "meaning": "to move from one part of the world to another",
+          "urdu": "ہجرت کی",
+          "pashto": "هجرت یې وکړ",
+          "sourceMeaning": true
         },
         {
           "word": "thick and thin",
-          "pos": "idiom",
-          "meaning": "Even when there are problems or difficulties; in good and bad times.",
-          "example": "The Ansar stood loyally by the Holy Prophet (ﷺ) through thick and thin."
+          "pos": "",
+          "meaning": "even when there are problems or difficulties",
+          "urdu": "ہر حال میں، اچھے برے وقت میں",
+          "pashto": "په ښه او بد وخت کې",
+          "sourceMeaning": true
         },
         {
           "word": "signatory",
-          "pos": "noun",
-          "meaning": "A person, country, or organization that has signed an official treaty or agreement.",
-          "example": "Every signatory to the Medina Charter pledged to defend the state against foreign aggression."
+          "pos": "",
+          "meaning": "a person, a country or an organization that has signed an official agreement",
+          "urdu": "دستخط کنندہ",
+          "pashto": "لاسلیک کوونکی",
+          "sourceMeaning": true
         }
       ],
       "comprehension": [
@@ -4916,7 +5707,7 @@ const ENGLISH_DATA = [
         {
           "exerciseNum": 14,
           "title": "Exercise 14: Form Gerunds & Complete Sentences",
-          "instruction": "Form gerunds from the verbs in the box (steal, cycle, surf, race, skip, make, hike, paint, cheat, bake) and use them to complete the sentences below.",
+          "instruction": "Form gerunds from the verbs in the box and use them to complete the sentences below. Box (as printed): steel, cycle, skip, hike, paint, surf, race, make, cheat, bake. SpaceBook note: \"steel\" is printed for \"steal\".",
           "items": [
             {
               "num": "i",
@@ -5461,7 +6252,163 @@ const ENGLISH_DATA = [
       "Identify, classify, and use various types of adverbs and adverbial clauses.",
       "Construct complex sentences using adverb clauses of reason, condition, and concession.",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "use pre-reading strategies to predict the content of a text from topic / picture / title / headings, key words and visuals etc. by using prior knowledge, asking questions and contextual clues.",
+      "analyze passages in the text to identify the theme / general subject, key idea / central thought (a statement about the general subject), and supporting details.",
+      "identify, change the form of, and use present and past perfect continuous tenses.",
+      "apply critical thinking to interact with text and use intensive reading strategies to scan to answer short questions.",
+      "use summary skills to extract salient points and develop a mind map to summarize a text.",
+      "identify: cataphoric and anaphoric references in a given passage; transitive and intransitive verbs in a given passage; tense of the passage."
+    ],
+    "preReading": [
+      {
+        "q": "Look at the mind map below to predict the content of the lesson.",
+        "a": "Mind map: Peaceful Co-existance — Freedom and safety · Religious harmony · Love and peace · Patience and tolerance · Humanity and justice"
+      }
+    ],
+    "glossary": [
+      {
+        "word": "abolish",
+        "pos": "",
+        "meaning": "to officially end a law, a system or an institution",
+        "urdu": "منسوخ کرنا، ختم کرنا",
+        "pashto": "لغوه کول، پای ته رسول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "abandon",
+        "pos": "",
+        "meaning": "to leave somebody, especially somebody you are responsible for, with no intention of returning",
+        "urdu": "چھوڑ دینا",
+        "pashto": "پرېښودل",
+        "sourceMeaning": true
+      },
+      {
+        "word": "charter",
+        "pos": "",
+        "meaning": "a written statement describing the rights that a particular group of people should have",
+        "urdu": "منشور",
+        "pashto": "منشور",
+        "sourceMeaning": true
+      },
+      {
+        "word": "community",
+        "pos": "",
+        "meaning": "all the people who live in a particular area, country, etc. when talked about as a group",
+        "urdu": "برادری، معاشرہ",
+        "pashto": "ټولنه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "converts",
+        "pos": "",
+        "meaning": "to change or make somebody change their religion or beliefs",
+        "urdu": "نو مسلم، مذہب بدلنے والے",
+        "pashto": "نوي مسلمانان، دین بدلوونکي",
+        "sourceMeaning": true
+      },
+      {
+        "word": "harmony",
+        "pos": "",
+        "meaning": "a state of peaceful existence and agreement",
+        "urdu": "ہم آہنگی",
+        "pashto": "همغږي",
+        "sourceMeaning": true
+      },
+      {
+        "word": "inhabited",
+        "pos": "",
+        "meaning": "with people or animals living there",
+        "urdu": "آباد",
+        "pashto": "اباد، مېشت",
+        "sourceMeaning": true
+      },
+      {
+        "word": "kith and kin",
+        "pos": "",
+        "meaning": "friends and relatives",
+        "urdu": "عزیز و اقارب",
+        "pashto": "خپلوان او دوستان",
+        "sourceMeaning": true
+      },
+      {
+        "word": "liability",
+        "pos": "",
+        "meaning": "the state of being legally responsible for something",
+        "urdu": "ذمہ داری",
+        "pashto": "مسؤلیت",
+        "sourceMeaning": true
+      },
+      {
+        "word": "migrated",
+        "pos": "",
+        "meaning": "to move from one part of the world to another",
+        "urdu": "ہجرت کی",
+        "pashto": "هجرت یې وکړ",
+        "sourceMeaning": true
+      },
+      {
+        "word": "thick and thin",
+        "pos": "",
+        "meaning": "even when there are problems or difficulties",
+        "urdu": "ہر حال میں، اچھے برے وقت میں",
+        "pashto": "په ښه او بد وخت کې",
+        "sourceMeaning": true
+      },
+      {
+        "word": "signatory",
+        "pos": "",
+        "meaning": "a person, a country or an organization that has signed an official agreement",
+        "urdu": "دستخط کنندہ",
+        "pashto": "لاسلیک کوونکی",
+        "sourceMeaning": true
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "printedPages": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "notes": [
+        "Learning outcomes (PDF 50) and pre-reading mind map (PDF 51, \"Co-existance\" as printed) added.",
+        "Glossary meanings replaced with the printed meanings (PDF 54); Urdu/Pashto are SpaceBook translations; the SpaceBook example sentences were dropped from the book glossary.",
+        "Revision Exercise 14 box prints \"steel\" (for steal); kept as printed with a note.",
+        "UDHR list keeps the printed full stop after \"mentioned here\".",
+        "Reading text, comprehension, MCQs, vocabulary, writing A-C, speaking, tense exercises and Revision Exercises 1-16 match the book.",
+        "Empty honorific brackets in the stored text (\"Hazrat Muhammad (migrated\", \"Rasool ()\") restored to the printed honorific."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   },
   {
     "number": 6,
@@ -5470,7 +6417,7 @@ const ENGLISH_DATA = [
     "titlePashto": "نصیرالدین (ملا نصیرالدین)",
     "type": "prose",
     "author": "KPK Textbook Board Peshawar",
-    "authorInfo": "Pre-Reading Questions & Thematic Context:\n• Do you like humorous stories? (Yes, humorous stories lighten the human spirit, provoke critical thought, and deliver profound wisdom wrapped in wit and laughter).\n• Have you ever heard about Nasiruddin? (Mullah Nasiruddin is an immortal folk figure celebrated across Turkey, Iran, Central Asia, Russia, and the Subcontinent for his clever, satirical, and eccentric anecdotes).\n\nKey Competencies & Student Learning Outcomes (SLOs):\n• Predict text content and interact critically using intensive reading strategies.\n• Make connections between personal life and literary characters, events, and motives.\n• Classify adjectives into categories: quality, color, size, shape, origin, material.\n• Master the degrees of adjectives (positive, comparative, superlative).\n• Apply the correct order of adjectives in English syntax.\n• Form adjectives from nouns and verbs using suffixes (-al, -ous, -ly, -able, -y, -ed, -ing, -ful, -less, -ive, -ic).\n• Identify and substitute adjective phrases in sentences.",
+    "authorInfo": "The book prints no author name for this unit (PDF 64).",
     "sections": [
       {
         "heading": "1. Global Popularity & The Borrowed Cloak (Anecdote 1)",
@@ -5588,105 +6535,139 @@ const ENGLISH_DATA = [
       "glossaryTable": [
         {
           "word": "pomp",
-          "pos": "noun",
-          "meaning": "The impressive clothes, decorations, music, etc. and traditional customs that are part of an official occasion or ceremony.",
-          "example": "Nasiruddin Day is celebrated in Turkey with great pomp and show."
+          "pos": "",
+          "meaning": "the impressive clothes, decorations, music, etc. and traditional customs that are part of an official occasion or ceremony",
+          "urdu": "شان و شوکت",
+          "pashto": "شان او شوکت",
+          "sourceMeaning": true
         },
         {
           "word": "claim",
-          "pos": "verb / noun",
-          "meaning": "To state that something is true although it has not been proved and others may dispute it.",
-          "example": "Several nations claim that Nasiruddin was born in their country."
+          "pos": "",
+          "meaning": "to say that something is true although it has not been proved and other people may not believe it",
+          "urdu": "دعویٰ کرنا",
+          "pashto": "ادعا کول",
+          "sourceMeaning": true
         },
         {
           "word": "anecdote",
-          "pos": "noun",
-          "meaning": "A short, interesting or amusing story about a real person or event.",
-          "example": "The anecdotes of Nasiruddin provide valuable moral wisdom through humor."
+          "pos": "",
+          "meaning": "a short, interesting or amusing story about a real person or event",
+          "urdu": "حکایت، لطیفہ",
+          "pashto": "حکایت، کیسه",
+          "sourceMeaning": true
         },
         {
           "word": "merchant",
-          "pos": "noun",
-          "meaning": "A person who buys and sells goods in large quantities, especially for international trade.",
-          "example": "Nasiruddin had lived a varied life and once worked as a merchant."
+          "pos": "",
+          "meaning": "a person who buys and sells goods in large quantities, especially one who imports and exports goods",
+          "urdu": "سوداگر، تاجر",
+          "pashto": "سوداګر",
+          "sourceMeaning": true
         },
         {
           "word": "cloak",
-          "pos": "noun",
-          "meaning": "A type of sleeveless outer coat that fastens at the neck and hangs loosely from shoulders.",
-          "example": "Nasiruddin lent his fine new cloak to his friend Jalal for their journey."
+          "pos": "",
+          "meaning": "a type of coat that has no sleeves, fastens at the neck and hangs loosely from the shoulders, worn especially in the past",
+          "urdu": "چغہ، لبادہ",
+          "pashto": "چپن، څادر ډوله کوټ",
+          "sourceMeaning": true
         },
         {
           "word": "worn out",
-          "pos": "adjective",
-          "meaning": "Badly damaged and no longer usable because of prolonged or heavy usage.",
-          "example": "Jalal refused to travel because his old coat was completely worn out."
+          "pos": "",
+          "meaning": "badly damaged and/or no longer useful because it has been used a lot",
+          "urdu": "پرانا، بوسیدہ",
+          "pashto": "زوړ، شلېدلی",
+          "sourceMeaning": true
         },
         {
           "word": "furious",
-          "pos": "adjective",
-          "meaning": "Extremely angry; full of fury.",
-          "example": "Jalal became furious when Nasiruddin repeatedly mentioned the borrowed cloak."
+          "pos": "",
+          "meaning": "very angry",
+          "urdu": "سخت غصے میں",
+          "pashto": "ډېر په غوسه",
+          "sourceMeaning": true
         },
         {
           "word": "turban",
-          "pos": "noun",
-          "meaning": "A head covering made by winding a long piece of cloth around the head.",
-          "example": "The farmer thought anyone wearing a large scholar's turban must know how to read."
+          "pos": "",
+          "meaning": "a long piece of cloth wound tightly around the head, worn, for example, by Muslim or Sikh men",
+          "urdu": "پگڑی، عمامہ",
+          "pashto": "پټکی",
+          "sourceMeaning": true
         },
         {
           "word": "ornament",
-          "pos": "noun",
-          "meaning": "An object used as a decorative accessory or piece of jewelry.",
-          "example": "Both daughters hoped to receive a beautiful gold ornament from their husbands."
+          "pos": "",
+          "meaning": "an object that is used as decoration in a room, garden/yard, etc. rather than for a particular purpose",
+          "urdu": "زیور، آرائشی چیز",
+          "pashto": "ګاڼه، د سینګار توکی",
+          "sourceMeaning": true
         },
         {
           "word": "ransacking",
-          "pos": "verb (participle)",
-          "meaning": "Searching through a place thoroughly, causing disorder and damage.",
-          "example": "The thieves left the house in ruins after ransacking every room for valuables."
+          "pos": "",
+          "meaning": "to make a place untidy, causing damage, because you are looking for something",
+          "urdu": "تلاشی میں تہس نہس کرنا",
+          "pashto": "لټول او ګډوډول",
+          "sourceMeaning": true
         },
         {
           "word": "fright",
-          "pos": "noun",
-          "meaning": "A sudden intense feeling of fear or terror.",
-          "example": "The horse took fright at a sudden noise and began to gallop wildly."
+          "pos": "",
+          "meaning": "a feeling of fear",
+          "urdu": "خوف، ڈر",
+          "pashto": "وېره",
+          "sourceMeaning": true
         },
         {
           "word": "gallop",
-          "pos": "verb / noun",
-          "meaning": "To run at the fastest pace, where all four hooves leave the ground simultaneously.",
-          "example": "The startled horse began to gallop down the rocky path."
+          "pos": "",
+          "meaning": "to move very fast and each step includes a stage when all four feet are off the ground together",
+          "urdu": "سرپٹ دوڑنا",
+          "pashto": "په ټوپ منډه وهل",
+          "sourceMeaning": true
         },
         {
           "word": "blown",
-          "pos": "verb (past participle)",
-          "meaning": "Carried or moved along by the force of the wind.",
-          "example": "Nasiruddin jokingly claimed that a strong gust of wind had blown him into the garden."
+          "pos": "",
+          "meaning": "to be moved by the wind",
+          "urdu": "ہوا سے اڑایا گیا",
+          "pashto": "د باد په واسطه وړل شوی",
+          "sourceMeaning": true
         },
         {
           "word": "uproot",
-          "pos": "verb",
-          "meaning": "To pull a plant, tree, or vegetable completely out of the ground.",
-          "example": "The angry gardener asked Nasiruddin who had uprooted his fresh carrots."
+          "pos": "",
+          "meaning": "to pull a tree, plant, etc. out of the ground",
+          "urdu": "جڑ سے اکھاڑنا",
+          "pashto": "له ریښې ایستل",
+          "sourceMeaning": true
         },
         {
           "word": "interrupt",
-          "pos": "verb",
-          "meaning": "To break the continuous progress of something or stop someone while speaking/acting.",
-          "example": "Nasiruddin claimed he was deep in thought when the gardener interrupted him."
+          "pos": "",
+          "meaning": "to say or do something that makes somebody stop what they are saying or doing",
+          "urdu": "بات کاٹنا، روکنا",
+          "pashto": "خبره پرې کول",
+          "sourceMeaning": true
         },
         {
           "word": "bray",
-          "pos": "verb / noun",
-          "meaning": "The loud, harsh cry made by a donkey.",
-          "example": "The donkey brayed loudly from the stable, exposing Nasiruddin's excuse."
+          "pos": "",
+          "meaning": "loud unpleasant sound of a donkey",
+          "urdu": "گدھے کی آواز، ڈھینچوں",
+          "pashto": "د خره هڼا",
+          "sourceMeaning": true
         },
         {
           "word": "preference",
-          "pos": "noun",
-          "meaning": "A greater liking or priority given to one thing or person over another.",
-          "example": "Nasiruddin rebuked the neighbor for trusting a donkey's bray in preference to his word."
+          "pos": "",
+          "meaning": "a greater interest in or desire for somebody/something than somebody/something else",
+          "urdu": "ترجیح",
+          "pashto": "غوره والی",
+          "sourceMeaning": true
         }
       ],
       "comprehension": [
@@ -5721,7 +6702,7 @@ const ENGLISH_DATA = [
       ],
       "textbookMcqs": [
         {
-          "question": "1. In which country is Nasiruddin Day celebrated annually with great pomp and show?",
+          "question": "[SpaceBook practice question — not in the textbook] 1. In which country is Nasiruddin Day celebrated annually with great pomp and show?",
           "options": [
             "Iran",
             "Turkey",
@@ -5729,10 +6710,11 @@ const ENGLISH_DATA = [
             "England"
           ],
           "correct": 1,
-          "explanation": "The text states: 'Every year Nasiruddin Day is celebrated in Turkey with great pomp and show.'"
+          "explanation": "The text states: 'Every year Nasiruddin Day is celebrated in Turkey with great pomp and show.'",
+          "origin": "SpaceBook practice"
         },
         {
-          "question": "2. Nasiruddin's stories are universally popular mainly because they:",
+          "question": "[SpaceBook practice question — not in the textbook] 2. Nasiruddin's stories are universally popular mainly because they:",
           "options": [
             "deal with mythological creatures",
             "deal with experiences of day-to-day life",
@@ -5740,10 +6722,11 @@ const ENGLISH_DATA = [
             "only focus on kings and queens"
           ],
           "correct": 1,
-          "explanation": "His stories reflect common, universal human situations and everyday life experiences."
+          "explanation": "His stories reflect common, universal human situations and everyday life experiences.",
+          "origin": "SpaceBook practice"
         },
         {
-          "question": "3. When the farmer complained that Nasiruddin could not read despite wearing a big turban, Nasiruddin:",
+          "question": "[SpaceBook practice question — not in the textbook] 3. When the farmer complained that Nasiruddin could not read despite wearing a big turban, Nasiruddin:",
           "options": [
             "tore the letter into pieces",
             "placed his turban on the farmer's head and told him to read it",
@@ -5751,10 +6734,11 @@ const ENGLISH_DATA = [
             "went to a school"
           ],
           "correct": 1,
-          "explanation": "He satirized the farmer's assumption by putting the turban on the farmer's head."
+          "explanation": "He satirized the farmer's assumption by putting the turban on the farmer's head.",
+          "origin": "SpaceBook practice"
         },
         {
-          "question": "4. Why did Nasiruddin tell the rich man: 'I came here to get money, not advice'?",
+          "question": "[SpaceBook practice question — not in the textbook] 4. Why did Nasiruddin tell the rich man: 'I came here to get money, not advice'?",
           "options": [
             "Because the rich man refused to sell him an elephant",
             "Because the rich man lectured him on the expenses of keeping an elephant instead of lending money",
@@ -5762,10 +6746,11 @@ const ENGLISH_DATA = [
             "Because the rich man called the police"
           ],
           "correct": 1,
-          "explanation": "Nasiruddin witty retort highlighted that unsolicited advice is no substitute for requested financial aid."
+          "explanation": "Nasiruddin witty retort highlighted that unsolicited advice is no substitute for requested financial aid.",
+          "origin": "SpaceBook practice"
         },
         {
-          "question": "5. What is the meaning of the word 'anecdote' as defined in the lesson?",
+          "question": "[SpaceBook practice question — not in the textbook] 5. What is the meaning of the word 'anecdote' as defined in the lesson?",
           "options": [
             "A lengthy scientific report",
             "A short amusing or interesting story about a real person or incident",
@@ -5773,7 +6758,8 @@ const ENGLISH_DATA = [
             "A formal contract between nations"
           ],
           "correct": 1,
-          "explanation": "An anecdote is a short, entertaining narrative illustrating a real event or character trait."
+          "explanation": "An anecdote is a short, entertaining narrative illustrating a real event or character trait.",
+          "origin": "SpaceBook practice"
         }
       ],
       "vocabularyWords": [
@@ -6145,7 +7131,7 @@ const ENGLISH_DATA = [
       ],
       "speakingActivity": {
         "title": "Classroom Interview & Reviewer Role Play",
-        "prompt": "In a group of two, carry out an interview in which the interviewer asks questions about the lesson from the book reviewer.",
+        "prompt": "Role play: In a group of two carry out an interview in which the interviewer asks questions about the lesson from reviewer.",
         "modelResponse": "Interviewer: Welcome! Today we have our student literary reviewer with us. Could you tell us why Nasiruddin's anecdotes remain so popular centuries after his life?\n\nReviewer: Thank you! Nasiruddin's stories are timeless because they hold a mirror up to human nature. Instead of giving dry moral lectures, he uses harmless wit, unexpected punchlines, and relatable daily situations—like borrowing clothes, dealing with difficult neighbors, and handling thieves—to teach humility and common sense.\n\nInterviewer: Which anecdote did you find the most insightful?\n\nReviewer: Anecdote 10, where the neighbor believes a donkey's bray over Nasiruddin's word. It brilliantly exposes how people often trust superficial noise rather than human integrity!"
       },
       "vocabulary": [
@@ -6532,7 +7518,198 @@ const ENGLISH_DATA = [
       "Convert direct speech dialogues into reported indirect speech correctly.",
       "Write a structured literary review evaluating theme, character, and tone.",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "use pre-reading strategies to predict the content of a text from topic / picture / title / headings, key words and visuals etc. by using prior knowledge, asking questions and contextual clues.",
+      "apply critical thinking to interact with text and use intensive reading strategies to scan to answer short questions.",
+      "read a text to: make connections between their own lives and the characters, events, motives and causes of conflict in texts; make inferences and draw conclusion about character using supportive evidence from the text; compare characters in the literary selection to near similar ones in real life.",
+      "classify adjectives into different types.",
+      "change and use degrees of adjectives.",
+      "follow orders of adjective in sentences.",
+      "form adjective from nouns and verbs.",
+      "translate passages from English to Urdu: use the knowledge of literal and figurative meaning, grammatical gender and syntax to translate passage from English to Urdu; understand that most phrases and idioms do not translate literally from one language to another."
+    ],
+    "preReading": [
+      {
+        "q": "Do you like humorous stories?",
+        "a": "Pre-reading question (PDF 65)"
+      },
+      {
+        "q": "Have you ever heard about Nasiruddin?",
+        "a": "Pre-reading question (PDF 65)"
+      }
+    ],
+    "glossary": [
+      {
+        "word": "pomp",
+        "pos": "",
+        "meaning": "the impressive clothes, decorations, music, etc. and traditional customs that are part of an official occasion or ceremony",
+        "urdu": "شان و شوکت",
+        "pashto": "شان او شوکت",
+        "sourceMeaning": true
+      },
+      {
+        "word": "claim",
+        "pos": "",
+        "meaning": "to say that something is true although it has not been proved and other people may not believe it",
+        "urdu": "دعویٰ کرنا",
+        "pashto": "ادعا کول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "anecdote",
+        "pos": "",
+        "meaning": "a short, interesting or amusing story about a real person or event",
+        "urdu": "حکایت، لطیفہ",
+        "pashto": "حکایت، کیسه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "merchant",
+        "pos": "",
+        "meaning": "a person who buys and sells goods in large quantities, especially one who imports and exports goods",
+        "urdu": "سوداگر، تاجر",
+        "pashto": "سوداګر",
+        "sourceMeaning": true
+      },
+      {
+        "word": "cloak",
+        "pos": "",
+        "meaning": "a type of coat that has no sleeves, fastens at the neck and hangs loosely from the shoulders, worn especially in the past",
+        "urdu": "چغہ، لبادہ",
+        "pashto": "چپن، څادر ډوله کوټ",
+        "sourceMeaning": true
+      },
+      {
+        "word": "worn out",
+        "pos": "",
+        "meaning": "badly damaged and/or no longer useful because it has been used a lot",
+        "urdu": "پرانا، بوسیدہ",
+        "pashto": "زوړ، شلېدلی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "furious",
+        "pos": "",
+        "meaning": "very angry",
+        "urdu": "سخت غصے میں",
+        "pashto": "ډېر په غوسه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "turban",
+        "pos": "",
+        "meaning": "a long piece of cloth wound tightly around the head, worn, for example, by Muslim or Sikh men",
+        "urdu": "پگڑی، عمامہ",
+        "pashto": "پټکی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "ornament",
+        "pos": "",
+        "meaning": "an object that is used as decoration in a room, garden/yard, etc. rather than for a particular purpose",
+        "urdu": "زیور، آرائشی چیز",
+        "pashto": "ګاڼه، د سینګار توکی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "ransacking",
+        "pos": "",
+        "meaning": "to make a place untidy, causing damage, because you are looking for something",
+        "urdu": "تلاشی میں تہس نہس کرنا",
+        "pashto": "لټول او ګډوډول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "fright",
+        "pos": "",
+        "meaning": "a feeling of fear",
+        "urdu": "خوف، ڈر",
+        "pashto": "وېره",
+        "sourceMeaning": true
+      },
+      {
+        "word": "gallop",
+        "pos": "",
+        "meaning": "to move very fast and each step includes a stage when all four feet are off the ground together",
+        "urdu": "سرپٹ دوڑنا",
+        "pashto": "په ټوپ منډه وهل",
+        "sourceMeaning": true
+      },
+      {
+        "word": "blown",
+        "pos": "",
+        "meaning": "to be moved by the wind",
+        "urdu": "ہوا سے اڑایا گیا",
+        "pashto": "د باد په واسطه وړل شوی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "uproot",
+        "pos": "",
+        "meaning": "to pull a tree, plant, etc. out of the ground",
+        "urdu": "جڑ سے اکھاڑنا",
+        "pashto": "له ریښې ایستل",
+        "sourceMeaning": true
+      },
+      {
+        "word": "interrupt",
+        "pos": "",
+        "meaning": "to say or do something that makes somebody stop what they are saying or doing",
+        "urdu": "بات کاٹنا، روکنا",
+        "pashto": "خبره پرې کول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "bray",
+        "pos": "",
+        "meaning": "loud unpleasant sound of a donkey",
+        "urdu": "گدھے کی آواز، ڈھینچوں",
+        "pashto": "د خره هڼا",
+        "sourceMeaning": true
+      },
+      {
+        "word": "preference",
+        "pos": "",
+        "meaning": "a greater interest in or desire for somebody/something than somebody/something else",
+        "urdu": "ترجیح",
+        "pashto": "غوره والی",
+        "sourceMeaning": true
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "printedPages": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "notes": [
+        "The textbook prints no multiple-choice questions for Unit 6; the five stored MCQs are now labelled as SpaceBook practice questions.",
+        "Learning outcomes (PDF 64) and pre-reading questions (PDF 65) added; invented pre-reading answers removed from authorInfo.",
+        "Glossary replaced with printed meanings (PDF 68); Urdu/Pashto are SpaceBook translations.",
+        "Listening & speaking prompt restored to the printed wording (PDF 70).",
+        "Reading text (ten anecdotes), comprehension, vocabulary A-B, writing A-B and grammar A-G match the book."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   },
   {
     "number": 7,
@@ -6541,17 +7718,17 @@ const ENGLISH_DATA = [
     "titlePashto": "دوه تاریخي معاملې (د حضرت عثمان رضي الله عنه سخاوت)",
     "type": "prose",
     "author": "KPK Textbook Board Peshawar",
-    "authorInfo": "Pre-Reading Context & Thematic Reflection:\n• Look at the picture and predict what the lesson is about: The unit narrates the exemplary generosity and philanthropic spirit of Hazrat Usman Ghani (رضی اللہ عنہ) through two historic bargains: the purchase of the Bair-e-Roma well to secure free drinking water for the citizens of Medina, and the charitable distribution of a thousand camel-loads of food grains during the severe famine in the Caliphate of Hazrat Umar (رضی اللہ عنہ).\n\nKey Competencies & Student Learning Outcomes (SLOs):\n• Predict text content and analyze passages for central theme and supporting details.\n• Illustrate the correct use of adverbs (manner, time, place, frequency, degree).\n• Recognize varying positions of adverbs in sentences according to kind and emphasis.\n• Identify and apply comparative and superlative degrees of adverbs.\n• Master adverbial phrases (answering how, when, where, how much) and adverbial clauses.\n• Use dictionary skills to distinguish between closely related word pairs (fetch/bring, famous/notorious, crime/sin, desert/barren).",
+    "authorInfo": "The book prints no author name for this unit (PDF 73).",
     "sections": [
       {
         "heading": "1. The Water Crisis in Medina & Bair-e-Roma",
         "headingUrdu": "مدینہ منورہ میں پانی کا بحران اور بئرِ رومہ",
         "headingPashto": "په مدینه کې د اوبو کمی او د بئر رومه څاه",
-        "text": "Arabia is a desert land where water is scarce. Even if water is found it is not always suitable for drinking. In olden days people had to travel long distances to fetch water and sometimes they had to remain without it for a day or even more. When Hazrat Muhammad (migrated to Medina, there was only one well of sweet water in town. It was called Bair-e-Roma. The well was owned by a Jew who sold its water at a high price. The companions of Rasool () were generally poor and found it hard to get water. One day they came to Hazrat Muhammad (and apprised him about their condition. Hazrat Muhammad () was sitting in Masjid at that time and many of His () companions were there too. He looked around and said, \"Is there anyone here who would like to purchase paradise for himself in return for Baire Roma?\" Hazrat Usman () stood up and went out quietly.",
+        "text": "Arabia is a desert land where water is scare. Even if water is found it is not always suitable for drinking. In olden days people had to travel long distances to fetch water and sometimes they had to remain without it for a day or even more. When Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) migrated to Medina, there was only one well of sweet water in town. It was called Bair-e-Roma. The well was owned by a Jew who sold its water at a high price. The companions of Rasool (ﷺ) were generally poor and found it hard to get water. One day they came to Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) and apprised him about their condition. Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) was sitting in Masjid at that time and many of His (ﷺ) companions were there too. He looked around and said, \"Is there anyone here who would like to purchase paradise for himself in return for Baire Roma?\" Hazrat Usman () stood up and went out quietly.",
         "paras": [
-          "Arabia is a desert land where water is scarce. Even if water is found it is not always suitable for drinking. In olden days people had to travel long distances to fetch water and sometimes they had to remain without it for a day or even more.",
-          "When Hazrat Muhammad (migrated to Medina, there was only one well of sweet water in town. It was called Bair-e-Roma. The well was owned by a Jew who sold its water at a high price. The companions of Rasool () were generally poor and found it hard to get water.",
-          "One day they came to Hazrat Muhammad (and apprised him about their condition. Hazrat Muhammad () was sitting in Masjid at that time and many of His () companions were there too. He looked around and said, \"Is there anyone here who would like to purchase paradise for himself in return for Baire Roma?\" Hazrat Usman () stood up and went out quietly."
+          "Arabia is a desert land where water is scare. Even if water is found it is not always suitable for drinking. In olden days people had to travel long distances to fetch water and sometimes they had to remain without it for a day or even more.",
+          "When Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) migrated to Medina, there was only one well of sweet water in town. It was called Bair-e-Roma. The well was owned by a Jew who sold its water at a high price. The companions of Rasool (ﷺ) were generally poor and found it hard to get water.",
+          "One day they came to Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) and apprised him about their condition. Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ) was sitting in Masjid at that time and many of His (ﷺ) companions were there too. He looked around and said, \"Is there anyone here who would like to purchase paradise for himself in return for Baire Roma?\" Hazrat Usman () stood up and went out quietly."
         ],
         "urdu": "عرب ایک ریگستانی خطہ ہے جہاں پانی کی شدید قلت ہے۔ اگر کہیں پانی مل بھی جائے تو وہ ہمیشہ پینے کے لائق نہیں ہوتا۔ پرانے زمانے میں لوگوں کو پانی لانے کے لیے لمبا سفر طے کرنا پڑتا تھا اور بعض اوقات انہیں ایک دن یا اس سے بھی زیادہ وقت بغیر پانی کے رہنا پڑتا تھا۔\n\nجب حضرت محمد (رسول اللہ خاتم النبیین ﷺ) نے مدینہ منورہ کی طرف ہجرت فرمائی، تو اس وقت شہر میں میٹھے پانی کا صرف ایک ہی کنواں تھا۔ اسے ”بئرِ رومہ“ کہا جاتا تھا۔ اس کنویں کا مالک ایک یہودی تھا جو اس کا پانی انتہائی مہنگے داموں فروخت کرتا تھا۔ رسول اللہ ﷺ کے صحابہ کرام عام طور پر غریب و نادار تھے اور ان کے لیے پانی خریدنا بہت مشکل تھا۔\n\nایک دن صحابہ کرام حضرت محمد (رسول اللہ خاتم النبیین ﷺ) کی خدمت میں حاضر ہوئے اور آپ ﷺ کو اپنی اس کٹھن حالت سے آگاہ کیا۔ اس وقت حضرت محمد (رسول اللہ خاتم النبیین ﷺ) مسجدِ نبوی میں تشریف فرما تھے اور بہت سے صحابہ بھی وہاں موجود تھے۔ آپ ﷺ نے چاروں طرف دیکھا اور فرمایا: ”کیا یہاں کوئی ایسا شخص ہے جو بئرِ رومہ کے بدلے اپنے لیے جنت خریدنا پسند کرے؟“ یہ سن کر حضرت عثمان (رضی اللہ عنہ) کھڑے ہوئے اور خاموشی سے باہر تشریف لے گئے۔",
         "pashto": "عرب یوه صحرايي او وچه ځمکه ده چیرته چې اوبه ډېرې کمې دي. حتی که اوبه پیدا هم شي، نو تل د څښلو وړ نه وي. په پخوانیو وختونو کې خلکو د اوبو راوړلو لپاره اوږدې لارې وهلې او کله به د یوې یا څو ورځو لپاره بې اوبو پاتې کېدل.\n\nکله چې حضرت محمد (رسول الله خاتم النبیین ﷺ) مدینې ته هجرت وکړ، نو په ښار کې د خوږو اوبو یوازې یوه څاه وه. د دې څاه نوم ”بئرِ رومه“ و. د دې څاه مالک یو یهودي و چې اوبه به یې په ډېره لوړه بیه پلورلې. د رسول الله ﷺ صحابه کرام تر ډېره غریبان وو او د اوبو اخیستل ورته ډېر سخت وو.\n\nیوه ورځ هغوی حضرت محمد (رسول الله خاتم النبیین ﷺ) ته راغلل او د خپل بد حالت څخه یې خبر کړ. په هغه وخت کې رسول الله ﷺ په جومات کې ناست و او ډېر صحابه هم ورسره ناست وو. هغه ﷺ شاوخوا وکتل او ویې فرمایل: ”آیا دلته داسې څوک شته چې د بئر رومه په بدل کې د ځان لپاره جنت وپېري؟“ حضرت عثمان (رضي الله عنه) سمدستي پاڅېد او په پټه او خاموشۍ سره بهر ووت."
@@ -6560,10 +7737,10 @@ const ENGLISH_DATA = [
         "heading": "2. The Purchase of the Well & Public Endowment",
         "headingUrdu": "کنویں کی خریداری اور عام وقف کا اعلان",
         "headingPashto": "د څاه پېرودل او د عام ولس لپاره وقف کول",
-        "text": "He went to the Jew and offered to buy the well from him. The Jew did not agree to sell it at first but then he thought it to be more profitable to make Hazrat Usman a partner as he was a rich businessman. He, therefore, agreed to sell half of his share in the well to Hazrat Usman for twelve thousand dirhams (silver coins). It was agreed that Hazrat Usman would receive all the income from the well for one day and the Jew for the next. Hazrat Usman returned to the Masjid and offered his share in the well to Hazrat Muhammad (). It was proclaimed in Medina that everyone could carry as much water, free of cost, as he/she liked, on the day appointed for Hazrat Usman. The Muslims as well as the Jews made full use of Hazrat Usman's generosity and carried enough water to last for the next day as well.\n\nThe Jew learnt a bitter lesson. Whereas he had hoped to make more money, he made none at all. He went to Hazrat Usman and offered to sell the other half of the well also. Hazrat Usman could have refused to buy it, for the Muslims had no longer any difficulty, but such was his generosity that he paid the Jew whatever he asked for his share. The well was dedicated as an endowment to the people of Madina. The well exists in Medina to this day and is known as Baire Usman or Usman's well.\n\nTeacher's guideline:\nEncourage the students to narrate any other incident from the lives of any of the four Caliphs highlighting their humanity. The text is an excellent example of love for humanity and generosity. Discuss with the students that generosity is not only giving money but your time and energy too.",
+        "text": "He went to the Jew and offered to buy the well from him. The Jew did agree to sell it at first but then he thought it to be more profitable to make Hazrat Usman a partner as he was a rich businessman. He, therefore, agreed to sell half of his share in the well to Hazrat Usman for twelve thousand dirhams (silver coins). It was agreed that Hazrat Usman would receive all the income from the well for one day and the Jew for the next. Hazrat Usman returned to the Masjid and offered his share in the well to Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ). It was proclaimed in Medina that everyone could carry as much water, free of cost, as he/she liked, on the day appointed for Hazrat Usman. The Muslims as well as the Jews made full use of Hazrat Usman's generosity and carried enough water to last for the next day as well.\n\nThe Jew learnt a bitter lesson. Whereas he had hoped to make more money, he made none at all. He went to Hazrat Usman and offered to sell the other half of the well also. Hazrat Usman could have refused to buy it, for the Muslims had no longer any difficulty, but such was his generosity that he paid the Jew whatever he asked for his share. The well was dedicated as an endowment to the people of Madina. The well exists in Medina to this day and is known as Baire Usman or Usman's well.\n\nTeacher's guideline:\nEncourage the students to narrate any other incident from the lives of any of the four Caliphs highlighting their humanity. The text is an excellent example of love for humanity and generosity. Discuss with the students that generosity is not only giving money but your time and energy too.",
         "paras": [
-          "He went to the Jew and offered to buy the well from him. The Jew did not agree to sell it at first but then he thought it to be more profitable to make Hazrat Usman a partner as he was a rich businessman. He, therefore, agreed to sell half of his share in the well to Hazrat Usman for twelve thousand dirhams (silver coins).",
-          "It was agreed that Hazrat Usman would receive all the income from the well for one day and the Jew for the next. Hazrat Usman returned to the Masjid and offered his share in the well to Hazrat Muhammad (). It was proclaimed in Medina that everyone could carry as much water, free of cost, as he/she liked, on the day appointed for Hazrat Usman. The Muslims as well as the Jews made full use of Hazrat Usman's generosity and carried enough water to last for the next day as well.",
+          "He went to the Jew and offered to buy the well from him. The Jew did agree to sell it at first but then he thought it to be more profitable to make Hazrat Usman a partner as he was a rich businessman. He, therefore, agreed to sell half of his share in the well to Hazrat Usman for twelve thousand dirhams (silver coins).",
+          "It was agreed that Hazrat Usman would receive all the income from the well for one day and the Jew for the next. Hazrat Usman returned to the Masjid and offered his share in the well to Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ). It was proclaimed in Medina that everyone could carry as much water, free of cost, as he/she liked, on the day appointed for Hazrat Usman. The Muslims as well as the Jews made full use of Hazrat Usman's generosity and carried enough water to last for the next day as well.",
           "The Jew learnt a bitter lesson. Whereas he had hoped to make more money, he made none at all. He went to Hazrat Usman and offered to sell the other half of the well also. Hazrat Usman could have refused to buy it, for the Muslims had no longer any difficulty, but such was his generosity that he paid the Jew whatever he asked for his share.",
           "The well was dedicated as an endowment to the people of Madina. The well exists in Medina to this day and is known as Baire Usman or Usman's well.",
           "Teacher's guideline: Encourage the students to narrate any other incident from the lives of any of the four Caliphs highlighting their humanity. The text is an excellent example of love for humanity and generosity. Discuss with the students that generosity is not only giving money but your time and energy too."
@@ -6587,10 +7764,10 @@ const ENGLISH_DATA = [
         "heading": "4. The Highest Bidder & Trade with Allah",
         "headingUrdu": "سب سے بڑا خریدار اور اللہ تعالیٰ کے ساتھ منافع بخش تجارت",
         "headingPashto": "تر ټولو ستر پیرودونکی او له الله تعالی سره تجارت",
-        "text": "Hazrat Usman, however turned down the offer and said, \"I have another buyer who is offering me much more\". The Caliph said, \"I can offer you 50% profit\". Hazrat Usman still declined. Hazrat Umar raised his offer to 100% but Hazrat Usman did not agree and said, \"I have a buyer who is offering me even more.\" The Caliph offered to pay three times the price of the flour, then four times and even five times. Hazrat Usman rejected all these offers. Hazrat Umar got up angrily and said, \"Usman, why have you become so hard hearted now, whereas you used to be generous in the days of Hazrat Muhammad ()\". He answered, \"I am only doing business and I would sell my goods to the one who would give me the greatest profit.\" The Caliph raised his offer higher and higher until he was willing to pay nine times the price of the flour as profit.\n\nHazrat Usman then stood up calmly and said, \"Umar, I have already sold my stock. The buyer is Allah who has promised to pay me at least ten times the price as profit and may raise it to seventy or even seven hundred times. Go and distribute the flour among the people in the name of Allah.\" The Caliph was so touched by the generosity of Hazrat Usman that he wept. He then embraced him and begged forgiveness for the harsh words he had used earlier. Then it was distributed among the people happily and generously.",
+        "text": "Hazrat Usman, however turned down the offer and said, \"I have another buyer who is offering me much more\". The Caliph said, \"I can offer you 50% profit\". Hazrat Usman still declined. Hazrat Umar raised his offer to 100% but Hazrat Usman did not agree and said, \"I have a buyer who is offering me even more.\" The Caliph offered to pay three times the price of the flour, then four times and even five times. Hazrat Usman rejected all these offers. Hazrat Umar got up angrily and said, \"Usman, why have you become so hard hearted now, whereas you used to be generous in the days of Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ)\". He answered, \"I am only doing business and I would sell my goods to the one who would give me the greatest profit.\" The Caliph raised his offer higher and higher until he was willing to pay nine times the price of the flour as profit.\n\nHazrat Usman then stood up calmly and said, \"Umar, I have already sold my stock. The buyer is Allah who has promised to pay me at least ten times the price as profit and may raise it to seventy or even seven hundred times. Go and distribute the flour among the people in the name of Allah.\" The Caliph was so touched by the generosity of Hazrat Usman that he wept. He then embraced him and begged forgiveness for the harsh words he had used earlier. Then it was distributed among the people happily and generously.",
         "paras": [
           "Hazrat Usman, however turned down the offer and said, \"I have another buyer who is offering me much more\". The Caliph said, \"I can offer you 50% profit\". Hazrat Usman still declined. Hazrat Umar raised his offer to 100% but Hazrat Usman did not agree and said, \"I have a buyer who is offering me even more.\"",
-          "The Caliph offered to pay three times the price of the flour, then four times and even five times. Hazrat Usman rejected all these offers. Hazrat Umar got up angrily and said, \"Usman, why have you become so hard hearted now, whereas you used to be generous in the days of Hazrat Muhammad ()\".",
+          "The Caliph offered to pay three times the price of the flour, then four times and even five times. Hazrat Usman rejected all these offers. Hazrat Umar got up angrily and said, \"Usman, why have you become so hard hearted now, whereas you used to be generous in the days of Hazrat Muhammad (رسول اللہ خاتم النبیین ﷺ)\".",
           "He answered, \"I am only doing business and I would sell my goods to the one who would give me the greatest profit.\" The Caliph raised his offer higher and higher until he was willing to pay nine times the price of the flour as profit.",
           "Hazrat Usman then stood up calmly and said, \"Umar, I have already sold my stock. The buyer is Allah who has promised to pay me at least ten times the price as profit and may raise it to seventy or even seven hundred times. Go and distribute the flour among the people in the name of Allah.\"",
           "The Caliph was so touched by the generosity of Hazrat Usman that he wept. He then embraced him and begged forgiveness for the harsh words he had used earlier. Then it was distributed among the people happily and generously."
@@ -6634,69 +7811,91 @@ const ENGLISH_DATA = [
       "glossaryTable": [
         {
           "word": "bitter",
-          "pos": "adjective",
-          "meaning": "Making you feel very unhappy; caused by great unhappiness or harsh disappointment.",
-          "example": "The selfish Jew learnt a bitter lesson when his profits vanished."
+          "pos": "",
+          "meaning": "making you feel very unhappy; caused by great unhappiness",
+          "urdu": "تلخ",
+          "pashto": "تریخ",
+          "sourceMeaning": true
         },
         {
           "word": "broke out",
-          "pos": "phrasal verb",
-          "meaning": "Started suddenly (used for wars, epidemics, fires, or famines).",
-          "example": "A devastating famine broke out across the Arabian peninsula."
+          "pos": "",
+          "meaning": "to start suddenly",
+          "urdu": "اچانک شروع ہوا، پھوٹ پڑا",
+          "pashto": "ناڅاپه پیل شو",
+          "sourceMeaning": true
         },
         {
           "word": "decline",
-          "pos": "verb",
-          "meaning": "To politely refuse or say that you will not accept an offer or request.",
-          "example": "Hazrat Usman declined the commercial offers made by local merchants."
+          "pos": "",
+          "meaning": "to say that you will not do something that somebody has asked you to do",
+          "urdu": "انکار کرنا",
+          "pashto": "انکار کول",
+          "sourceMeaning": true
         },
         {
           "word": "famine",
-          "pos": "noun",
-          "meaning": "An extreme scarcity of food across a region for a prolonged period.",
-          "example": "During the famine, Caliph Umar worked day and night to feed the starving people."
+          "pos": "",
+          "meaning": "a lack of food during a long period of time in a region",
+          "urdu": "قحط",
+          "pashto": "قحطي",
+          "sourceMeaning": true
         },
         {
           "word": "generosity",
-          "pos": "noun",
-          "meaning": "The quality of being kind and willing to share money, resources, or time freely.",
-          "example": "Hazrat Usman's boundless generosity earned him the title of 'Ghani' (The Generous)."
+          "pos": "",
+          "meaning": "willing to give somebody money, gifts, time or kindness freely",
+          "urdu": "سخاوت",
+          "pashto": "سخاوت",
+          "sourceMeaning": true
         },
         {
           "word": "proclaim",
-          "pos": "verb",
-          "meaning": "To publicly and officially announce something of great importance.",
-          "example": "It was proclaimed throughout Medina that water from the well was free for all."
+          "pos": "",
+          "meaning": "to publicly and officially tell people about something important",
+          "urdu": "اعلان کرنا",
+          "pashto": "اعلانول",
+          "sourceMeaning": true
         },
         {
           "word": "scarce",
-          "pos": "adjective",
-          "meaning": "Available in very small quantities; rare and difficult to obtain.",
-          "example": "Fresh drinking water was scarce in the arid desert landscape."
+          "pos": "",
+          "meaning": "there is not enough of it and it is only available in small quantities",
+          "urdu": "کم یاب",
+          "pashto": "کمیاب",
+          "sourceMeaning": true
         },
         {
-          "word": "touched by",
-          "pos": "idiom / phrase",
-          "meaning": "Feeling deeply emotional, grateful, or moved by an act of kindness.",
-          "example": "Hazrat Umar was so touched by Hazrat Usman's charity that tears filled his eyes."
+          "word": "touch",
+          "pos": "",
+          "meaning": "feeling happy and grateful because of something kind that somebody has done; feeling emotional about something",
+          "urdu": "متاثر ہونا",
+          "pashto": "اغېزمن کېدل",
+          "sourceMeaning": true
         },
         {
           "word": "turn down",
-          "pos": "phrasal verb",
-          "meaning": "To reject or refuse an offer, proposal, or price bid.",
-          "example": "Hazrat Usman turned down huge worldly profits to seek the pleasure of Allah."
+          "pos": "",
+          "meaning": "reject or refuse to consider an offer, a proposal, etc. or the person who makes it",
+          "urdu": "ٹھکرانا، رد کرنا",
+          "pashto": "ردول",
+          "sourceMeaning": true
         },
         {
           "word": "apprise",
-          "pos": "verb",
-          "meaning": "To inform, notify, or tell somebody about a situation.",
-          "example": "The companions came to the Holy Prophet (ﷺ) to apprise him of their severe water shortage."
+          "pos": "",
+          "meaning": "to tell or inform somebody of something",
+          "urdu": "آگاہ کرنا",
+          "pashto": "خبرول",
+          "sourceMeaning": true
         },
         {
           "word": "endowment",
-          "pos": "noun",
-          "meaning": "Property or funds bequeathed/given permanently to an institution or public welfare (Waqf).",
-          "example": "Bair-e-Usman was established as a perpetual public endowment for all citizens."
+          "pos": "",
+          "meaning": "give or bequeath an income or property to a person or institution",
+          "urdu": "وقف",
+          "pashto": "وقف",
+          "sourceMeaning": true
         }
       ],
       "comprehension": [
@@ -7099,7 +8298,7 @@ const ENGLISH_DATA = [
       ],
       "speakingActivity": {
         "title": "Classroom Discussion: Economic Inequality in Society & Remedies",
-        "prompt": "Work in pairs and express your personal ideas, feelings, and emotions on economic inequality in society and how it can be minimized.",
+        "prompt": "Work in pairs and express your personal ideas / feelings / emotions on economic inequality in society and how can it be minimized. Share your views in front of the class.",
         "modelResponse": "Partner A: Economic inequality is one of the most pressing crises of modern times. While a small minority accumulates vast fortunes, millions lack basic necessities like clean water, healthcare, and quality schooling.\n\nPartner B: I completely agree. The lesson 'The Two Bargains' offers a timeless solution. When wealthy individuals step forward to establish public endowments (Waqf) and share their surplus wealth with society, social friction vanishes.\n\nPartner A: Exactly! In our country, if the government ensures progressive taxation, transparent Zakat distribution, and free quality education, we can eliminate the wealth gap and create a fair, dignified society for all citizens."
       },
       "vocabulary": [
@@ -7486,7 +8685,153 @@ const ENGLISH_DATA = [
       "Form correct regular and irregular past tense verbal structures in continuous writing.",
       "Evaluate the character traits and historical contributions of Hazrat Usman Ghani (RA).",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "use pre-reading strategies to predict the content of a text from topic / picture / title / headings, key words and visuals etc. by using prior knowledge, asking questions and contextual clues.",
+      "analyze passages in the text to identify the theme / general subject, key idea / central thought (a statement about general subject), and supporting details.",
+      "apply critical thinking to interact with text and use intensive reading strategies to scan to answer short questions.",
+      "use summary skills to extract salient points and develop a mind map to summarize a text.",
+      "illustrate use of adverbs learnt earlier.",
+      "recognize varying positions of adverbs in sentence according to their kind and importance.",
+      "identify and use degrees of comparison of adverbs.",
+      "use adverbials phrases and clauses.",
+      "use dictionary to: choose appropriate word definition; identify part of speech; recognize abbreviation used in a dictionary.",
+      "comprehend a text and answer questions on it."
+    ],
+    "preReading": [
+      {
+        "q": "Look at the picture and predict what the lesson is about?",
+        "a": "Picture: the walled well of Bair-e-Roma (PDF 74)"
+      }
+    ],
+    "glossary": [
+      {
+        "word": "bitter",
+        "pos": "",
+        "meaning": "making you feel very unhappy; caused by great unhappiness",
+        "urdu": "تلخ",
+        "pashto": "تریخ",
+        "sourceMeaning": true
+      },
+      {
+        "word": "broke out",
+        "pos": "",
+        "meaning": "to start suddenly",
+        "urdu": "اچانک شروع ہوا، پھوٹ پڑا",
+        "pashto": "ناڅاپه پیل شو",
+        "sourceMeaning": true
+      },
+      {
+        "word": "decline",
+        "pos": "",
+        "meaning": "to say that you will not do something that somebody has asked you to do",
+        "urdu": "انکار کرنا",
+        "pashto": "انکار کول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "famine",
+        "pos": "",
+        "meaning": "a lack of food during a long period of time in a region",
+        "urdu": "قحط",
+        "pashto": "قحطي",
+        "sourceMeaning": true
+      },
+      {
+        "word": "generosity",
+        "pos": "",
+        "meaning": "willing to give somebody money, gifts, time or kindness freely",
+        "urdu": "سخاوت",
+        "pashto": "سخاوت",
+        "sourceMeaning": true
+      },
+      {
+        "word": "proclaim",
+        "pos": "",
+        "meaning": "to publicly and officially tell people about something important",
+        "urdu": "اعلان کرنا",
+        "pashto": "اعلانول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "scarce",
+        "pos": "",
+        "meaning": "there is not enough of it and it is only available in small quantities",
+        "urdu": "کم یاب",
+        "pashto": "کمیاب",
+        "sourceMeaning": true
+      },
+      {
+        "word": "touch",
+        "pos": "",
+        "meaning": "feeling happy and grateful because of something kind that somebody has done; feeling emotional about something",
+        "urdu": "متاثر ہونا",
+        "pashto": "اغېزمن کېدل",
+        "sourceMeaning": true
+      },
+      {
+        "word": "turn down",
+        "pos": "",
+        "meaning": "reject or refuse to consider an offer, a proposal, etc. or the person who makes it",
+        "urdu": "ٹھکرانا، رد کرنا",
+        "pashto": "ردول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "apprise",
+        "pos": "",
+        "meaning": "to tell or inform somebody of something",
+        "urdu": "آگاہ کرنا",
+        "pashto": "خبرول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "endowment",
+        "pos": "",
+        "meaning": "give or bequeath an income or property to a person or institution",
+        "urdu": "وقف",
+        "pashto": "وقف",
+        "sourceMeaning": true
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "printedPages": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "notes": [
+        "Empty honorific brackets in the stored text restored to the printed honorific.",
+        "Two printed readings restored with this note: \"water is scare\" (scarce) and \"The Jew did agree to sell it at first\" (the sense requires \"did not agree\").",
+        "Learning outcomes (PDF 73), pre-reading (PDF 74) and printed glossary meanings (PDF 77) added; Urdu/Pashto glossary meanings are SpaceBook translations.",
+        "Contextual-meaning word \"loaa\" is printed this way (load).",
+        "Listening & speaking prompt restored to the printed wording (PDF 81).",
+        "Comprehension A1-9, MCQ B1-5, vocabulary A-B, writing A-D and adverb grammar A-E match the book."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   },
   {
     "number": 8,
@@ -7495,7 +8840,7 @@ const ENGLISH_DATA = [
     "titlePashto": "امید د بڼکو لرونکی یو شی (مرغۍ) دی",
     "type": "poetry",
     "author": "Emily Dickinson",
-    "authorInfo": "Emily Dickinson (1830–1886) is considered one of the most original 19th-century American poets. She was born in Amherst, Massachusetts, to a family well known for educational and political activity. Her father was a lawyer and treasurer of the local college. Her mother was a religious, hardworking housewife. Emily was educated at Amherst Academy. She lived a secluded life. Her works have been a source of much comfort to distressed hearts. 'Hope is the Thing with Feathers' is such an example. She died at the age of fifty-five.",
+    "authorInfo": "About the Poet: Emily Dickinson is considered as one of the most original 19th century American poet. She was born in Amherst, Massachusetts, to a family, well known for educational and political activity. Her father was a lawyer and treasurer of the local college. Her mother was a religious, hardworking housewife. Emily was educated at Amherst Academy. She lived a secluded life. Her works have been a source of much comfort to the distressed hearts. Hope is such an example. She died at the age of fifty five.",
     "sections": [
       {
         "heading": "Stanza 1: The Bird of Hope in the Soul (Lines 1–4)",
@@ -7671,51 +9016,67 @@ const ENGLISH_DATA = [
       "glossaryTable": [
         {
           "word": "abash",
-          "pos": "verb",
-          "meaning": "embarrassed and ashamed because of something that you have done; to make uneasy or silence",
-          "example": "Nothing could abash the confident young speaker."
+          "pos": "",
+          "meaning": "embarrassed and ashamed because of something that you have done",
+          "urdu": "شرمندہ کرنا",
+          "pashto": "شرمول",
+          "sourceMeaning": true
         },
         {
           "word": "crumb",
-          "pos": "noun",
+          "pos": "",
           "meaning": "very small piece of food, especially of bread or cake, that has fallen off a larger piece",
-          "example": "The hungry bird pecked at every crumb on the pavement."
+          "urdu": "ٹکڑا، ریزہ",
+          "pashto": "ټوټه، ذره",
+          "sourceMeaning": true
         },
         {
           "word": "gale",
-          "pos": "noun",
-          "meaning": "an extremely strong wind; intense storm",
-          "example": "The ship weathered the violent gale safely."
+          "pos": "",
+          "meaning": "an extremely strong wind",
+          "urdu": "آندھی، تیز ہوا",
+          "pashto": "توند باد",
+          "sourceMeaning": true
         },
         {
           "word": "perches",
-          "pos": "verb",
+          "pos": "",
           "meaning": "(of a bird) to land and stay on a branch, etc.",
-          "example": "A robin perches on the fence every morning."
+          "urdu": "بسیرا کرتی ہے",
+          "pashto": "کېني، ځای نیسي",
+          "sourceMeaning": true
         },
         {
           "word": "sore",
-          "pos": "adjective",
-          "meaning": "severe, harsh, painful; causing great distress",
-          "example": "It must be a sore trial that breaks a brave man's courage."
+          "pos": "",
+          "meaning": "part of body that is painful, and often red, especially because of infection or because a muscle has been used too much",
+          "urdu": "دکھتا ہوا، شدید",
+          "pashto": "دردناک، سخت",
+          "sourceMeaning": true
         },
         {
           "word": "tune",
-          "pos": "noun",
-          "meaning": "a series of musical notes sung or played in a particular order to form a melody",
-          "example": "The flute player played a cheerful tune."
+          "pos": "",
+          "meaning": "a series of musical notes that are sung or played in a particular order to form a piece of music",
+          "urdu": "دھن، نغمہ",
+          "pashto": "سندره، غږ",
+          "sourceMeaning": true
         },
         {
           "word": "extremity",
-          "pos": "noun",
-          "meaning": "the furthest point, end or limit of something; greatest hardship",
-          "example": "He retained his faith even in the extremity of illness."
+          "pos": "",
+          "meaning": "the furthest point, end or limit of something",
+          "urdu": "انتہا",
+          "pashto": "انتها",
+          "sourceMeaning": true
         },
         {
           "word": "strangest",
-          "pos": "adjective",
+          "pos": "",
           "meaning": "unusual or surprising, especially in a way that is difficult to understand",
-          "example": "We sailed into the strangest waters unexplored by sailors."
+          "urdu": "سب سے عجیب",
+          "pashto": "تر ټولو عجیب",
+          "sourceMeaning": true
         }
       ],
       "comprehension": [
@@ -8134,7 +9495,8 @@ const ENGLISH_DATA = [
           "3. Losing hope leads to stagnation and depression, whereas holding onto hope empowers us to find constructive solutions and maintain inner peace.",
           "4. Hope is a free, divine gift nestled within our souls that requires no wealth or cost—only our willingness to listen to its song."
         ],
-        "sampleDialogue": "Respected teacher and dear fellows,\nHope is the light that guides our ships through the darkest storms of existence. As Emily Dickinson beautifully expressed, hope never demands anything in return; it merely sings in our souls to remind us that after every dark night, a glorious dawn awaits. Therefore, no matter how severe our trials may seem, we must never lose hope!"
+        "sampleDialogue": "Respected teacher and dear fellows,\nHope is the light that guides our ships through the darkest storms of existence. As Emily Dickinson beautifully expressed, hope never demands anything in return; it merely sings in our souls to remind us that after every dark night, a glorious dawn awaits. Therefore, no matter how severe our trials may seem, we must never lose hope!",
+        "prompt": "Share 'Why We Shouldn't Lose Hope.' Express your ideas in front of the class."
       },
       "vocabulary": [
         {
@@ -8523,7 +9885,115 @@ const ENGLISH_DATA = [
       "Identify the stylistic function of dashes, pauses, and capitalization in Dickinson's poetry.",
       "Paraphrase poetic stanzas with precision and clarity.",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "identify line and stanza.",
+      "read poem and give orally or in writing: main idea; theme and its development; summary; personal response with justification; paraphrase.",
+      "use paraphrasing skills to paraphrase stanzas: mark thought groups in the stanza; restate the message in simple prose; replace poetic words with simple ones.",
+      "read and analyze how the poet uses language to: appeal to the senses through use of figurative language including similes and metaphors; affect meaning through use of synonyms with different connotation and denotation; create imagery.",
+      "describe the object being personified.",
+      "deduce meaning of difficult words from context.",
+      "Illustrate use of prepositions of position, time, movement and direction.",
+      "Use prepositional phrases and clauses."
+    ],
+    "glossary": [
+      {
+        "word": "abash",
+        "pos": "",
+        "meaning": "embarrassed and ashamed because of something that you have done",
+        "urdu": "شرمندہ کرنا",
+        "pashto": "شرمول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "crumb",
+        "pos": "",
+        "meaning": "very small piece of food, especially of bread or cake, that has fallen off a larger piece",
+        "urdu": "ٹکڑا، ریزہ",
+        "pashto": "ټوټه، ذره",
+        "sourceMeaning": true
+      },
+      {
+        "word": "gale",
+        "pos": "",
+        "meaning": "an extremely strong wind",
+        "urdu": "آندھی، تیز ہوا",
+        "pashto": "توند باد",
+        "sourceMeaning": true
+      },
+      {
+        "word": "perches",
+        "pos": "",
+        "meaning": "(of a bird) to land and stay on a branch, etc.",
+        "urdu": "بسیرا کرتی ہے",
+        "pashto": "کېني، ځای نیسي",
+        "sourceMeaning": true
+      },
+      {
+        "word": "sore",
+        "pos": "",
+        "meaning": "part of body that is painful, and often red, especially because of infection or because a muscle has been used too much",
+        "urdu": "دکھتا ہوا، شدید",
+        "pashto": "دردناک، سخت",
+        "sourceMeaning": true
+      },
+      {
+        "word": "tune",
+        "pos": "",
+        "meaning": "a series of musical notes that are sung or played in a particular order to form a piece of music",
+        "urdu": "دھن، نغمہ",
+        "pashto": "سندره، غږ",
+        "sourceMeaning": true
+      },
+      {
+        "word": "extremity",
+        "pos": "",
+        "meaning": "the furthest point, end or limit of something",
+        "urdu": "انتہا",
+        "pashto": "انتها",
+        "sourceMeaning": true
+      },
+      {
+        "word": "strangest",
+        "pos": "",
+        "meaning": "unusual or surprising, especially in a way that is difficult to understand",
+        "urdu": "سب سے عجیب",
+        "pashto": "تر ټولو عجیب",
+        "sourceMeaning": true
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "printedPages": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "notes": [
+        "About the Poet restored verbatim from PDF 85 (the stored version had added dates and reworded sentences).",
+        "Learning outcomes (PDF 84) added; glossary meanings replaced with the printed ones (PDF 86); Urdu/Pashto glossary meanings are SpaceBook translations.",
+        "Listening & speaking prompt was empty; restored from PDF 91.",
+        "Poem, comprehension A1-7, MCQ B1-5, vocabulary A-D, writing A-B and preposition grammar A-D match the book."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   },
   {
     "number": 9,
@@ -8542,12 +10012,10 @@ const ENGLISH_DATA = [
         "urduTranslation": "میری ان سے پہلی ملاقات میری جوانی کے ایام میں ماہِ رمضان کے مبارک مہینے میں ہوئی، جب میرے والد صاحب مجھے آنے والی عید کے لیے نئے جوتے کا جوڑا بنوانے کے لیے ان کی دکان پر لے گئے۔ ان کی دکان قصہ خوانی بازار کی ایک چھوٹی مگر مصروف گلی میں واقع تھی۔ دکان کے مدھم رنگ والے لکڑی کے دروازے پر غیر معمولی طور پر بڑے سائز کی سیاہ 'پشاوری چپل' لٹک رہی تھی۔ دکان کا اندرونی حصہ اتنا پرسکون اور پروقار تھا جیسے کوئی مقدس عبادت گاہ ہو۔ وہاں لکڑی کے چند پرانے اسٹول رکھے تھے اور کھڑکی میں جوتوں کے چند جوڑے دکھائی دے رہے تھے۔ دکان کی دائیں جانب ایک بڑا ہموار چوکور پتھر، لکڑی کی بھاری ہتھوڑی (موگری)، چمڑے میں سوراخ کرنے والا سوا (آل) اور تین ٹانگوں والی نہائی (لوہے کی سندان) دیکھی جا سکتی تھی۔ دکان کا بقیہ حصہ صحرا کی طرح بالکل خالی اور ویران تھا کیونکہ وہ صرف وہی جوتے بناتے تھے جن کا گاہک پیشگی آرڈر دیتا تھا۔ دکان کی عقبی دیوار پر ایک چھوٹا سا سائن بورڈ آویزاں تھا جس پر لکھا تھا: 'زرین گل اینڈ برادرز'۔",
         "pashtoTranslation": "زما لومړۍ لیدنه له هغه سره زما د ځوانۍ په ورځو کې د روژې په مبارکه میاشت کې وشوه، کله چې زما پلار زه د راتلونکي اختر لپاره د نویو پښو بوټانو (څپلکو) د جوړولو په خاطر د هغه دوکان ته بوتلم. د هغه دوکان د قصه خوانۍ بازار په یوه کوچنۍ خو ګڼه ګوڼې لرونکې کوڅه کې و. د دوکان په پیکه رنګ لرونکې لرګینې دروازې باندې د خورا لوی اندازې تورې 'پېښورۍ څپلۍ' راځوړنده وه. د دوکان دننه برخه دومره ارامه او سپېڅلې وه لکه یو مقدس ځای. هلته څو زاړه د لرګیو سټولونه پراته وو او په کړکۍ کې د بوټانو څو جوړې ښکارېدې. د دوکان ښي لور ته یو لوی هوار څلورکونجه ډبره، یو دروند د لرګي درموند (مګټه)، د چرم سوري کولو سووا، او درې پښې لرونکې اوسپنیزه سندان لیدل کېده. د دوکان پاتې برخه د صحرا په څېر خالي وه ځکه چې هغه یوازې هغه بوټان جوړول چې فرمایش به ورته شوی و. د دیوال په پای کې یوه کوچنۍ تخته راځوړنده وه چې پرې لیکل شوي وو: 'زرین ګل او وروڼه'.",
         "paras": [
-          "I knew him from the days of my extreme youth, because he made my father's boots. He lived with his elder brother in his shop, which was in a small by-street of the famous and fashionable Qissa Khwani Bazaar in Peshawar.",
-          "The shop had a certain quiet distinction; there was no sign upon its face other than the name of 'Zarin Gul Brothers', and in the window a few pairs of boots.",
-          "He made only what was ordered, and what he made never failed to fit. To make boots—such boots as he made—seemed to me then, and still seems to me, mysterious and wonderful. He was a passionate artist whose sole religion was the perfection of leather craftsmanship."
+          "I first met him in my youthful days in the holy month of Ramazan, when my father took me to his shop for ordering a pair of new shoes for the coming Eid. His shop was in a small but busy street of Qisa Khawani Bazar. A monstrous size black \"Peshawari Chappal\" overhung on the faint coloured wooden door of his shop. The inside of the shop was as quiet and serene as that of a sacred holy place. There were some old wooden stools and in the window some pairs of shoes were visible. A big smooth square shaped stone, a heavy wooden mallet, an awl and three legged anvil, can be observed in the right side of the shop. The rest of the shop was as barren as desert because he made only those pairs of shoes that were ordered. At the far end of wall of the shop was hanging a small signboard, showing Zarin Gul & Brothers."
         ],
-        "urdu": "میں انہیں اپنے بچپن کے زمانے سے جانتا تھا کیونکہ وہ میرے والد صاحب کے جوتے بنایا کرتے تھے۔ وہ پشاور کے مشہور اور تاریخی قصہ خوانی بازار کی ایک چھوٹی سی گلی میں واقع اپنی دکان میں اپنے بڑے بھائی کے ساتھ رہتے تھے۔ اس دکان کا اپنا ایک پروقار اور پرسکون وقار تھا؛ دکان کے ماتھے پر 'زرین گل برادرز' کے سادہ بورڈ کے سوا کچھ نہ تھا، اور کھڑکی میں محض نمائش کے لیے چند جوڑے جوتے رکھے رہتے تھے۔ وہ صرف آرڈر پر جوتے بناتے تھے، اور جو جوتا وہ بناتے وہ ناپ میں کبھی غلط نہ ہوتا تھا۔ ایسے لاجواب جوتے بنانا مجھے تب بھی اور اب بھی ایک پُراسرار اور حیرت انگیز فن محسوس ہوتا ہے۔ وہ ایک سچے فنکار تھے جن کا واحد مقصد چمڑے کے کام میں کمال اور معیار حاصل کرنا تھا۔",
-        "pashto": "ما هغه له خپل ماشومتوب راهیسې پیژانده ځکه هغه به زما د پلار بوټان جوړول. هغه له خپل مشر ورور سره په پیښور کې د قصه خوانۍ بازار په یوه تنګه کوڅه کې په خپل دوکان کې اوسیده. دغه دوکان یو ځانګړی وقار درلود؛ په دوکان یوازې د 'زرین ګل برادرز' بورډ لګیدلی و او په کړکۍ کې څو جوړې بوټان ایښودل شوي وو. هغه یوازې د فرمایش بوټان جوړول او جوړ کړي بوټان به یې هیڅکله بې اندازې نه وو. هغه یو ریښتینی هنرمند و چې اصلي موخه یې د چرم په کار کې غوره معیار و."
+        "urdu": "میری ان سے پہلی ملاقات میری جوانی کے ایام میں ماہِ رمضان کے مبارک مہینے میں ہوئی، جب میرے والد صاحب مجھے آنے والی عید کے لیے نئے جوتے کا جوڑا بنوانے کے لیے ان کی دکان پر لے گئے۔ ان کی دکان قصہ خوانی بازار کی ایک چھوٹی مگر مصروف گلی میں واقع تھی۔ دکان کے مدھم رنگ والے لکڑی کے دروازے پر غیر معمولی طور پر بڑے سائز کی سیاہ 'پشاوری چپل' لٹک رہی تھی۔ دکان کا اندرونی حصہ اتنا پرسکون اور پروقار تھا جیسے کوئی مقدس عبادت گاہ ہو۔ وہاں لکڑی کے چند پرانے اسٹول رکھے تھے اور کھڑکی میں جوتوں کے چند جوڑے دکھائی دے رہے تھے۔ دکان کی دائیں جانب ایک بڑا ہموار چوکور پتھر، لکڑی کی بھاری ہتھوڑی (موگری)، چمڑے میں سوراخ کرنے والا سوا (آل) اور تین ٹانگوں والی نہائی (لوہے کی سندان) دیکھی جا سکتی تھی۔ دکان کا بقیہ حصہ صحرا کی طرح بالکل خالی اور ویران تھا کیونکہ وہ صرف وہی جوتے بناتے تھے جن کا گاہک پیشگی آرڈر دیتا تھا۔ دکان کی عقبی دیوار پر ایک چھوٹا سا سائن بورڈ آویزاں تھا جس پر لکھا تھا: 'زرین گل اینڈ برادرز'۔",
+        "pashto": "زما لومړۍ لیدنه له هغه سره زما د ځوانۍ په ورځو کې د روژې په مبارکه میاشت کې وشوه، کله چې زما پلار زه د راتلونکي اختر لپاره د نویو پښو بوټانو (څپلکو) د جوړولو په خاطر د هغه دوکان ته بوتلم. د هغه دوکان د قصه خوانۍ بازار په یوه کوچنۍ خو ګڼه ګوڼې لرونکې کوڅه کې و. د دوکان په پیکه رنګ لرونکې لرګینې دروازې باندې د خورا لوی اندازې تورې 'پېښورۍ څپلۍ' راځوړنده وه. د دوکان دننه برخه دومره ارامه او سپېڅلې وه لکه یو مقدس ځای. هلته څو زاړه د لرګیو سټولونه پراته وو او په کړکۍ کې د بوټانو څو جوړې ښکارېدې. د دوکان ښي لور ته یو لوی هوار څلورکونجه ډبره، یو دروند د لرګي درموند (مګټه)، د چرم سوري کولو سووا، او درې پښې لرونکې اوسپنیزه سندان لیدل کېده. د دوکان پاتې برخه د صحرا په څېر خالي وه ځکه چې هغه یوازې هغه بوټان جوړول چې فرمایش به ورته شوی و. د دیوال په پای کې یوه کوچنۍ تخته راځوړنده وه چې پرې لیکل شوي وو: 'زرین ګل او وروڼه'."
       },
       {
         "heading": "Section 2: The Art and Stitched Durability of Zarin Gul's Craft",
@@ -8557,13 +10025,12 @@ const ENGLISH_DATA = [
         "urduTranslation": "زرین گل کے بنائے ہوئے جوتے پاؤں میں بالکل درست بیٹھتے تھے اور معمول سے کہیں زیادہ غیر معمولی طور پر دیرپا اور پائیدار ثابت ہوتے تھے۔ جوتے بنانا—ایسے شاندار جوتے جیسے وہ بناتے تھے—مجھے تب بھی اور اب بھی پراسرار اور حیرت انگیز معلوم ہوتا ہے۔ مجھے اب بھی اپنے جھجک بھرے الفاظ یاد ہیں جب میں نے اپنا نوجوان پاؤں ان کی طرف بڑھایا تھا: \"کیا ایسے کٹھن حالات میں جوتے بنانا انتہائی مشکل کام نہیں ہے؟\" ان کے مسکراتے چہرے پر سانپ کی طرح بل کھاتی جھریاں نمودار ہوئیں اور انہوں نے جواب دیا: \"یہ ایک فن ہے!\"\n\nجوتے سازی اور مختلف لوگوں کے لیے ان کے موزوں ہونے کے بارے میں زرین گل کی رائے اتنی حتمی اور مستند ہوتی تھی کہ کسی میں اسے رد کرنے کی ہمت نہ تھی۔ میرے والد، اگرچہ علاقے کے بااثر سردار (چیفٹین) تھے، ایک خاص جوڑے کے بارے میں ان کے موقف کو سر کے فوری اشارے کے ساتھ تسلیم کر لیتے تھے۔\n\nان کی دکان پر بار بار جانا ممکن ہی نہیں تھا کیونکہ ان کے جوتوں میں وقتی پن سے بالا تر کوئی خاص بات تھی۔ یہ کہنا غلط نہ ہوگا کہ پائیداری ان کے ہر ٹانکے میں سلی ہوئی تھی۔",
         "pashtoTranslation": "هغه بوټان چې زرین ګل به جوړول هیڅکله په پښو کې بې اندازې نه وو او د معمول خلاف خورا زیات اوږد مهال پاتې کېدل. بوټان جوړول—هغه ډول بوټان لکه ده چې جوړول—ماته هغه وخت هم او اوس هم ډېر حیرانونکی او مرموز ښکارېده. ما ته لا هم خپلې شرمناکې خبرې یادې دي کله چې ما خپله ځوانه پښه د هغه لور ته اوږده کړه: \"ایا په داسې سختو شرایطو کې د بوټانو جوړول ډېر سخت کار نه دی؟\" د هغه په موسکا لرونکي مخ باندې د مار په څېر ګونځې تاو شوې او ویې ویل: \"دا یو هنر دی!\"\n\nد بوټانو د جوړولو او د هغوی د مناسبت په اړه د زرین ګل خبرې دومره غوڅې او مستندې وې چې چا یې د ردولو جرئت نه شو کولی. زما پلار، که څه هم د سیمې خان او مشر و، د ځانګړو بوټانو په اړه د ده رایه په سمدستي سر خوځولو منله.\n\nد هغه دوکان ته ژر ژر تلل ممکن نه و، ځکه چې د هغه په بوټانو کې داسې ځانګړتیا وه چې تر لنډمهاله وخت ډېره لوړه وه. که ووایو چې پیاوړتیا او کلکوالی د هغه په هر تار او ګنډلو کې نغښتی و، نو ناسمه به نه وي.",
         "paras": [
-          "Zarin Gul was a man of few words, with a lean, weathered face, graying hair, and hands calloused from years of stitching the finest Russian and local leather.",
-          "Whenever I stepped into his quiet, dimly lit shop, he would examine my feet with reverent concentration, feeling the contours with his thumbs as if conversing with the living hide.",
-          "Once, when I remarked that a previous pair had creaked, he looked at me with sorrowful eyes and whispered: 'Id shouldn'd 'ave greaked. Send id bag, I will look ad id. If I gannod mend id, I will dake id off your bill.'",
-          "He never compromised on the quality of his raw materials or craftsmanship, using the strongest thread and seasoned calf-leather."
+          "The shoes that Zarin Gul made never failed to fit in the feet and they lasted extraordinarily longer than usual. To make shoes - such shoes as he made - seemed to me then and seems to me now, mysterious and wonderful. I still remember my hesitant remarks, while stretching out to him my youthful foot. \"Isn't it awfully hard to make shoes in such tough conditions?\" The serpentine wrinkles wriggled on his smiling face and he answered, \"It is an art\".",
+          "Zarin Gul remarks about shoes making and their suitability to different people were so authoritative and final that nobody dared reject them. My father, though chieftain of the area, would accept his views about a particular pair of shoes with brisk nod.",
+          "It was not possible to go to him often because there was something in his shoes that was beyond the temporary. It would not be wrong to say that durability was stitched into them."
         ],
-        "urdu": "زرین گل کم گو اور سنجیدہ انسان تھے جن کا چہرہ برسوں کی محنت سے جھلس چکا تھا، بال چاندی ہو رہے تھے اور ہاتھ عمدہ ترین چمڑے کو سیتے سیتے کھردرے ہو چکے تھے۔ جب بھی میں ان کی پرسکون دکان میں قدم رکھتا، وہ انتہائی عقیدت اور توجہ سے میرے پاؤں کا ناپ لیتے جیسے چمڑے سے ہمکلام ہو رہے ہوں۔ ایک بار جب میں نے شکایت کی کہ پچھلا جوتا چلتے ہوئے چرچراتا تھا، تو انہوں نے دکھ بھری نظروں سے دیکھا اور اپنے مخصوص لہجے میں بولے: 'اسے چرچرانا نہیں چاہیے تھا۔ واپس بھیج دینا، میں دیکھ لوں گا۔ اگر ٹھیک نہ کر سکا تو تمہارے بل سے پیسے کاٹ لوں گا۔' انہوں نے کبھی خام مال کے معیار پر سمجھوتہ نہ کیا اور ہمیشہ بہترین چمڑا اور مضبوط دھاگہ استعمال کیا۔",
-        "pashto": "زرین ګل ډیرې کمې خبرې کولې. د هغه مخ خوار او لاسونه د څرمنې د ګنډلو له امله سخت شوي وو. کله چې به زه د هغه دوکان ته لاړم، هغه به په ډیر دقت زما د پښو اندازه اخیستله. یو ځل ما ورته وویل چې پخواني بوټان غږ کوي، هغه په خفه سترګو وکتل او ویې ویل: 'باید غږ یې نه وای کړی. بیرته یې راوړه، که مې جوړ نه کړل، پیسې به یې درکم.' هغه هیڅکله په کیفیت کې جوړجاړی نه کاوه او تل به یې تر ټولو غوره څرمنه کاروله."
+        "urdu": "زرین گل کے بنائے ہوئے جوتے پاؤں میں بالکل درست بیٹھتے تھے اور معمول سے کہیں زیادہ غیر معمولی طور پر دیرپا اور پائیدار ثابت ہوتے تھے۔ جوتے بنانا—ایسے شاندار جوتے جیسے وہ بناتے تھے—مجھے تب بھی اور اب بھی پراسرار اور حیرت انگیز معلوم ہوتا ہے۔ مجھے اب بھی اپنے جھجک بھرے الفاظ یاد ہیں جب میں نے اپنا نوجوان پاؤں ان کی طرف بڑھایا تھا: \"کیا ایسے کٹھن حالات میں جوتے بنانا انتہائی مشکل کام نہیں ہے؟\" ان کے مسکراتے چہرے پر سانپ کی طرح بل کھاتی جھریاں نمودار ہوئیں اور انہوں نے جواب دیا: \"یہ ایک فن ہے!\"\n\nجوتے سازی اور مختلف لوگوں کے لیے ان کے موزوں ہونے کے بارے میں زرین گل کی رائے اتنی حتمی اور مستند ہوتی تھی کہ کسی میں اسے رد کرنے کی ہمت نہ تھی۔ میرے والد، اگرچہ علاقے کے بااثر سردار (چیفٹین) تھے، ایک خاص جوڑے کے بارے میں ان کے موقف کو سر کے فوری اشارے کے ساتھ تسلیم کر لیتے تھے۔\n\nان کی دکان پر بار بار جانا ممکن ہی نہیں تھا کیونکہ ان کے جوتوں میں وقتی پن سے بالا تر کوئی خاص بات تھی۔ یہ کہنا غلط نہ ہوگا کہ پائیداری ان کے ہر ٹانکے میں سلی ہوئی تھی۔",
+        "pashto": "هغه بوټان چې زرین ګل به جوړول هیڅکله په پښو کې بې اندازې نه وو او د معمول خلاف خورا زیات اوږد مهال پاتې کېدل. بوټان جوړول—هغه ډول بوټان لکه ده چې جوړول—ماته هغه وخت هم او اوس هم ډېر حیرانونکی او مرموز ښکارېده. ما ته لا هم خپلې شرمناکې خبرې یادې دي کله چې ما خپله ځوانه پښه د هغه لور ته اوږده کړه: \"ایا په داسې سختو شرایطو کې د بوټانو جوړول ډېر سخت کار نه دی؟\" د هغه په موسکا لرونکي مخ باندې د مار په څېر ګونځې تاو شوې او ویې ویل: \"دا یو هنر دی!\"\n\nد بوټانو د جوړولو او د هغوی د مناسبت په اړه د زرین ګل خبرې دومره غوڅې او مستندې وې چې چا یې د ردولو جرئت نه شو کولی. زما پلار، که څه هم د سیمې خان او مشر و، د ځانګړو بوټانو په اړه د ده رایه په سمدستي سر خوځولو منله.\n\nد هغه دوکان ته ژر ژر تلل ممکن نه و، ځکه چې د هغه په بوټانو کې داسې ځانګړتیا وه چې تر لنډمهاله وخت ډېره لوړه وه. که ووایو چې پیاوړتیا او کلکوالی د هغه په هر تار او ګنډلو کې نغښتی و، نو ناسمه به نه وي."
       },
       {
         "heading": "Section 3: The Creaking Shoe and Absolute Professional Conscience",
@@ -8573,13 +10040,10 @@ const ENGLISH_DATA = [
         "urduTranslation": "میں وہ دن کبھی نہیں بھول سکتا جب مجھے ان سے کہنا پڑا: \"زرین گل کاکا! آپ کو معلوم ہے، میرے پچھلے جوڑے میں سے چرچراہٹ کی آواز آتی ہے\"۔ انہوں نے مجھے عجیب نظروں سے دیکھا جیسے وہ مجھ سے اپنے الفاظ واپس لینے کی امید کر رہے ہوں، اور پھر کہا: \"اس میں سے چرچراہٹ نہیں آنی چاہیے تھی\"۔ میں نے لرزتی آواز میں کہا: \"مجھے افسوس ہے، لیکن آواز آتی تھی\"۔ اس پر انہوں نے اپنی آنکھیں جھکا لیں، گویا وہ اپنے ذہن میں اس خاص جوڑے کی یاد تلاش کر رہے ہوں۔ مجھے دلی طور پر پچھتاوا ہوا کہ میں نے یہ معمولی بات کیوں چھیڑی، جو ان کے نزدیک اتنی سنگین اور سنجیدہ تھی۔ انہوں نے کہا: \"وہ جوتے مجھے واپس بھیج دیں، میں انہیں خود دیکھوں گا۔ کچھ جوتے پیدائشی طور پر ہی خراب نکلتے ہیں۔ اگر میں انہیں ٹھیک نہ کر سکا، تو میں آپ کی ادا کردہ پوری رقم واپس لوٹا دوں گا۔\"",
         "pashtoTranslation": "زه هغه ورځ هیڅکله نه شم هېرولی کله چې ما اړ شوم ورته ووایم: \"زرین ګل کاکا، زما وروستۍ جوړه بوټان چڼ چڼ (آواز) کوي، پوهېږې!\" هغه ماته په عجیبه سترګو وکتل لکه تمه یې چې درلوده زه به خپله خبره بېرته واخلم، او بیا یې وویل: \"هغه باید غږ نه وای کړی\". ما په رپېدونکي غږ وویل: \"خو له بدمرغه هغوی غږ کاوه\". په دې سره هغه خپلې سترګې ښکته کړې، لکه د هغې جوړې په حافظه پسې چې ګرځي. زه ډېر پښېمانه شوم چې ما دا کوچنۍ خبره یاده کړه، چې ده ته خورا لویه او جدي ښکاره شوه. هغه وویل: \"هغه بوټان ماته راولېږه، زه به یې وګورم. ځینې بوټان له پيله خراب وي. که ما پرې څه ونه کړای شول، زه به ستا ټولې پیسې بېرته درکړم.\"",
         "paras": [
-          "Over the years, massive industrial boot companies and mass-market shoe firms invaded the market. With flashy neon signs and aggressive advertisements, they captured the public's attention.",
-          "When I visited the shop after a long absence, Zarin Gul looked aged and broken. He lamented bitterly: 'Dose big virms 'ave no self-resbect. Dey ged id all by adverdisement, nod by work! Dey dake id away vrom us, who lof our boods. Soon I will 'ave no work.'",
-          "His elder brother died of heartbreak and poverty. Eventually, Zarin Gul sacrificed everything to buy the finest leather, working day and night without eating to fulfill remaining orders.",
-          "When I returned to Peshawar and visited the shop, a young English merchant stood inside. 'Ah!' the young man said, 'poor old Zarin Gul starved himself to death. Slow starvation, the doctor called it! He never gave himself time to eat; never had a penny in the house. He made the finest boots in Peshawar, but the big firms and high rents finished him.'"
+          "I cannot forget that day on which I had to say to him, \"Zarin Gul Kaka, my last pair of shoes makes a creaking sound, you know\". He looked at me with strange looks as if expecting me to withdraw the statement and then said, \"It shouldn't have creaked\". \"It did, I am afraid,\" I said with quivering tone. At that he lowered his eyes, as if hunting for the memory of those pair of shoes. I really felt sorry that I mentioned this petty thing, which looked to him so serious and grave. \"Send them back,\" he said, \"I will look at them\". \"Some shoes are bad from birth. If I can do nothing with them, I will give back the amount you paid for them.\""
         ],
-        "urdu": "برسوں گزرنے کے ساتھ ساتھ بڑی جوتا ساز فیکٹریوں اور کمپنیوں نے اشتہارات کی چمک دمک کے زور پر مارکیٹ پر قبضہ کر لیا۔ جب میں ایک طویل عرصے بعد دکان پر گیا تو زرین گل بوڑھے اور ٹوٹے ہوئے دکھائی دیے۔ انہوں نے تلخی سے کہا: 'ان بڑی کمپنیوں کی کوئی عزتِ نفس نہیں۔ وہ سارا کام اشتہارات کے زور پر ہتھیا لیتی ہیں، محنت سے نہیں! وہ ہم جیسے سچے کاریگروں سے روزی چھین رہی ہیں۔ جلد میرے پاس کوئی کام نہیں رہے گا۔' ان کے بڑے بھائی صدمے اور غربت سے انتقال کر گئے۔ زرین گل نے اپنے فن کی لاج رکھنے کے لیے تمام جمع پونجی بہترین چمڑے کی خریداری پر لگا دی اور فاقوں کے باوجود دن رات جوتے بناتے رہے۔ جب میں دوبارہ پشاور گیا اور دکان پر پہنچا تو بورڈ بدل چکا تھا اور ایک نوجوان موجود تھا۔ نوجوان نے بتایا: 'افسوس! بوڑھے زرین گل بھوک اور فاقہ کشی سے فوت ہو گئے۔ ڈاکٹر نے اسے سست فاقہ کشی کہا! وہ کھانے کے لیے وقت نہیں نکالتے تھے اور گھر میں ایک کوڑی نہ تھی۔ وہ پشاور کے بہترین جوتے بناتے تھے، لیکن بڑی کمپنیوں کے مقابلے اور دکان کے کرائے نے ان کی جان لے لی۔'",
-        "pashto": "کلونه وروسته لویو فابریکو په خپلو ځلیدونکو اعلانونو سره بازار ونیو. کله چې زه له ډیرې مودې وروسته دوکان ته لاړم، زرین ګل ډیر زوړ او کمزوری شوی و. هغه په ډیر خفګان وویل چې لوی شرکتونه د اعلانونو له لارې کار اخلي نه د کیفیت له لارې. د ده مشر ورور له غمه او بې وزلۍ مړ شو. زرین ګل به ټوله ورځ او شپه کار کاوه او د ښې څرمنې د اخیستلو لپاره به یې پخپله لوږه زغمله. کله چې زه بیا دوکان ته لاړم، یو بل ځوان هلته و او ویې ویل چې زرین ګل د پرله پسې لوږې (فاسټینګ/ستاروشن) له امله وفات شو. هغه په پیښور کې تر ټولو غوره بوټان جوړول خو د ماشینونو او اعلانونو مقابله یې ونشو کړای."
+        "urdu": "میں وہ دن کبھی نہیں بھول سکتا جب مجھے ان سے کہنا پڑا: \"زرین گل کاکا! آپ کو معلوم ہے، میرے پچھلے جوڑے میں سے چرچراہٹ کی آواز آتی ہے\"۔ انہوں نے مجھے عجیب نظروں سے دیکھا جیسے وہ مجھ سے اپنے الفاظ واپس لینے کی امید کر رہے ہوں، اور پھر کہا: \"اس میں سے چرچراہٹ نہیں آنی چاہیے تھی\"۔ میں نے لرزتی آواز میں کہا: \"مجھے افسوس ہے، لیکن آواز آتی تھی\"۔ اس پر انہوں نے اپنی آنکھیں جھکا لیں، گویا وہ اپنے ذہن میں اس خاص جوڑے کی یاد تلاش کر رہے ہوں۔ مجھے دلی طور پر پچھتاوا ہوا کہ میں نے یہ معمولی بات کیوں چھیڑی، جو ان کے نزدیک اتنی سنگین اور سنجیدہ تھی۔ انہوں نے کہا: \"وہ جوتے مجھے واپس بھیج دیں، میں انہیں خود دیکھوں گا۔ کچھ جوتے پیدائشی طور پر ہی خراب نکلتے ہیں۔ اگر میں انہیں ٹھیک نہ کر سکا، تو میں آپ کی ادا کردہ پوری رقم واپس لوٹا دوں گا۔\"",
+        "pashto": "زه هغه ورځ هیڅکله نه شم هېرولی کله چې ما اړ شوم ورته ووایم: \"زرین ګل کاکا، زما وروستۍ جوړه بوټان چڼ چڼ (آواز) کوي، پوهېږې!\" هغه ماته په عجیبه سترګو وکتل لکه تمه یې چې درلوده زه به خپله خبره بېرته واخلم، او بیا یې وویل: \"هغه باید غږ نه وای کړی\". ما په رپېدونکي غږ وویل: \"خو له بدمرغه هغوی غږ کاوه\". په دې سره هغه خپلې سترګې ښکته کړې، لکه د هغې جوړې په حافظه پسې چې ګرځي. زه ډېر پښېمانه شوم چې ما دا کوچنۍ خبره یاده کړه، چې ده ته خورا لویه او جدي ښکاره شوه. هغه وویل: \"هغه بوټان ماته راولېږه، زه به یې وګورم. ځینې بوټان له پيله خراب وي. که ما پرې څه ونه کړای شول، زه به ستا ټولې پیسې بېرته درکړم.\""
       },
       {
         "heading": "Section 4: The Author's Return and Confrontation with Corporate Monopoly",
@@ -8587,7 +10051,12 @@ const ENGLISH_DATA = [
         "headingPashto": "څلورمه برخه: د لیکوال بېرته راستنېدل او د لویو شرکتونو له استثمار سره مخامخ کېدل",
         "text": "Then I went abroad to pursue my higher studies and career and could not have the opportunity to meet Zarin Gul, the fantastic shoe-maker for several years. After several years I returned to Peshawar. And the first shop I went to was my old friend, Zarin Gul's. I had left a man of fifty; I came back to one of sixty-five, worn and torn like an overused pair of shoes. He shook his bony hand with me, but the grip of his hand was as tight as it was many years ago. At first, he did not know me. But when I got myself introduced, his brooded eyes sparkled with smile. \"Do you want any shoes?\" he asked. \"I can make them quickly, because I have plenty of free time.\" Then he looked at my 'branded shoes' and said, \"Those are not my shoes.\" His tone was not one of anger, or of sorrow, not even of contempt, but there was in it something quiet that froze my blood. He put his hand down and pressed a finger on the place where my left shoes was not quite comfortable. \"It hurts you there,\" he said, \"Do the big shoe-making companies have no self-respect?\"",
         "urduTranslation": "اس کے بعد میں اعلیٰ تعلیم اور پیشہ ورانہ کیریئر کے سلسلے میں بیرونِ ملک چلا گیا اور کئی سالوں تک مجھے اس حیرت انگیز جوتا ساز زرین گل سے ملنے کا موقع نہ مل سکا۔ کئی سال بعد جب میں پشاور واپس آیا، تو سب سے پہلی دکان جس پر میں گیا وہ میرے پرانے دوست زرین گل کی تھی۔ میں پچاس سال کے ایک شخص کو چھوڑ کر گیا تھا، اور اب پینسٹھ سال کے ضعیف العمر انسان کے پاس لوٹا تھا جو خود کثرتِ استعمال سے گھسے ہوئے پرانے جوتے کی طرح خستہ حال ہو چکا تھا۔ انہوں نے مجھ سے اپنا ہڈیوں والا ہاتھ ملایا، لیکن ان کے ہاتھ کی گرفت اب بھی اتنی ہی مضبوط تھی جتنی برسوں پہلے تھی۔ پہلے تو وہ مجھے پہچان نہ سکے، لیکن جب میں نے اپنا تعارف کروایا تو ان کی اداس آنکھیں مسکراہٹ سے چمک اٹھیں۔ انہوں نے پوچھا: \"کیا آپ کو جوتے بنوانے ہیں؟ میں انہیں جلدی بنا سکتا ہوں، کیونکہ اب میرے پاس فراغت کا بہت وقت ہے۔\" پھر انہوں نے میرے پہنے ہوئے 'برانڈڈ جوتوں' پر نگاہ ڈالی اور کہا: \"یہ میرے بنائے ہوئے جوتے نہیں ہیں\"۔ ان کے لہجے میں نہ غصہ تھا، نہ غم اور نہ ہی حقارت، لیکن اس میں ایک ایسی خاموش گہرائی تھی جس نے میرا خون جما دیا۔ انہوں نے اپنا ہاتھ نیچے بڑھایا اور میری بائیں جوتی کے اس حصے پر انگلی دبائی جہاں وہ مجھے چبھ رہی تھی۔ انہوں نے کہا: \"یہاں آپ کو تکلیف ہو رہی ہے، کیا ان جوتے بنانے والی بڑی کمپنیوں کی کوئی عزتِ نفس نہیں ہے؟\"",
-        "pashtoTranslation": "بیا زه د لوړو زده کړو او دندې لپاره بهر هیواد ته لاړم او د څو کلونو لپاره مې له دې حیرانوونکي موچي زرین ګل سره د لیدو موقع ترلاسه نه کړه. له کلونو وروسته چې بېرته پېښور ته راغلم، لومړنی دوکان چې زه ورغلم زما د زاړه ملګري زرین ګل دوکان و. ما یو پنځوس کلن سړی پرېښی و، خو اوس یو پنځه شپېته کلن مات او ګوډ انسان ته راغلی وم چې پخپله د ډېرو کارول شویو زړو بوټانو په څېر ستړی ښکارېده. هغه له ما سره خپل هډوکی لرونکی لاس روغبړ کړ، خو د لاس منګول یې هماغومره کلکه وه لکه کلونه وړاندې. په لومړي سر کې هغه ونه پېژندلم، خو کله چې ما ځان ور وپېژانده، د هغه فکرمنو سترګو کې د موسکا ځلا راغله. ویې پوښتل: \"ایا ته کوم بوټان غواړې؟ زه یې ژر جوړولی شم، ځکه زما سره اوس ډېر وزګار وخت شته.\" بیا یې زما 'برانډي بوټانو' ته وکتل او ویې ویل: \"دا زما بوټان نه دي.\" د هغه په غږ کې نه غوسه وه، نه غم او نه سپکاوی، خو په هغې کې یو داسې خاموشه حالت و چې زما وینه یې وچه کړه. هغه خپل لاس کښته کړ او زما د کیڼ بوټ هغه ځای باندې یې خپله ګوته کېښوده چې زه یې ناارامه کړی وم. ویې ویل: \"دلته ستا پښه خوږوي، ایا دا د بوټانو لوی شرکتونه هېڅ غیرت او عزتِ نفس نه لري؟\""
+        "pashtoTranslation": "بیا زه د لوړو زده کړو او دندې لپاره بهر هیواد ته لاړم او د څو کلونو لپاره مې له دې حیرانوونکي موچي زرین ګل سره د لیدو موقع ترلاسه نه کړه. له کلونو وروسته چې بېرته پېښور ته راغلم، لومړنی دوکان چې زه ورغلم زما د زاړه ملګري زرین ګل دوکان و. ما یو پنځوس کلن سړی پرېښی و، خو اوس یو پنځه شپېته کلن مات او ګوډ انسان ته راغلی وم چې پخپله د ډېرو کارول شویو زړو بوټانو په څېر ستړی ښکارېده. هغه له ما سره خپل هډوکی لرونکی لاس روغبړ کړ، خو د لاس منګول یې هماغومره کلکه وه لکه کلونه وړاندې. په لومړي سر کې هغه ونه پېژندلم، خو کله چې ما ځان ور وپېژانده، د هغه فکرمنو سترګو کې د موسکا ځلا راغله. ویې پوښتل: \"ایا ته کوم بوټان غواړې؟ زه یې ژر جوړولی شم، ځکه زما سره اوس ډېر وزګار وخت شته.\" بیا یې زما 'برانډي بوټانو' ته وکتل او ویې ویل: \"دا زما بوټان نه دي.\" د هغه په غږ کې نه غوسه وه، نه غم او نه سپکاوی، خو په هغې کې یو داسې خاموشه حالت و چې زما وینه یې وچه کړه. هغه خپل لاس کښته کړ او زما د کیڼ بوټ هغه ځای باندې یې خپله ګوته کېښوده چې زه یې ناارامه کړی وم. ویې ویل: \"دلته ستا پښه خوږوي، ایا دا د بوټانو لوی شرکتونه هېڅ غیرت او عزتِ نفس نه لري؟\"",
+        "paras": [
+          "Then I went abroad to pursue my higher studies and career and could not have the opportunity to meet Zarin Gul, the fantastic shoe-maker for several years. After several years I returned to Peshawar. And the first shop I went to was my old friend, Zarin Gul's. I had left a man of fifty; I came back to one of sixty-five, worn and torn like an overused pair of shoes. He shook his bony hand with me, but the grip of his hand was as tight as it was many years ago. At first, he did not know me. But when I got myself introduced, his brooded eyes sparkled with smile. \"Do you want any shoes?\" he asked. \"I can make them quickly, because I have plenty of free time.\" Then he looked at my 'branded shoes' and said, \"Those are not my shoes.\" His tone was not one of anger, or of sorrow, not even of contempt, but there was in it something quiet that froze my blood. He put his hand down and pressed a finger on the place where my left shoes was not quite comfortable. \"It hurts you there,\" he said, \"Do the big shoe-making companies have no self-respect?\""
+        ],
+        "urdu": "اس کے بعد میں اعلیٰ تعلیم اور پیشہ ورانہ کیریئر کے سلسلے میں بیرونِ ملک چلا گیا اور کئی سالوں تک مجھے اس حیرت انگیز جوتا ساز زرین گل سے ملنے کا موقع نہ مل سکا۔ کئی سال بعد جب میں پشاور واپس آیا، تو سب سے پہلی دکان جس پر میں گیا وہ میرے پرانے دوست زرین گل کی تھی۔ میں پچاس سال کے ایک شخص کو چھوڑ کر گیا تھا، اور اب پینسٹھ سال کے ضعیف العمر انسان کے پاس لوٹا تھا جو خود کثرتِ استعمال سے گھسے ہوئے پرانے جوتے کی طرح خستہ حال ہو چکا تھا۔ انہوں نے مجھ سے اپنا ہڈیوں والا ہاتھ ملایا، لیکن ان کے ہاتھ کی گرفت اب بھی اتنی ہی مضبوط تھی جتنی برسوں پہلے تھی۔ پہلے تو وہ مجھے پہچان نہ سکے، لیکن جب میں نے اپنا تعارف کروایا تو ان کی اداس آنکھیں مسکراہٹ سے چمک اٹھیں۔ انہوں نے پوچھا: \"کیا آپ کو جوتے بنوانے ہیں؟ میں انہیں جلدی بنا سکتا ہوں، کیونکہ اب میرے پاس فراغت کا بہت وقت ہے۔\" پھر انہوں نے میرے پہنے ہوئے 'برانڈڈ جوتوں' پر نگاہ ڈالی اور کہا: \"یہ میرے بنائے ہوئے جوتے نہیں ہیں\"۔ ان کے لہجے میں نہ غصہ تھا، نہ غم اور نہ ہی حقارت، لیکن اس میں ایک ایسی خاموش گہرائی تھی جس نے میرا خون جما دیا۔ انہوں نے اپنا ہاتھ نیچے بڑھایا اور میری بائیں جوتی کے اس حصے پر انگلی دبائی جہاں وہ مجھے چبھ رہی تھی۔ انہوں نے کہا: \"یہاں آپ کو تکلیف ہو رہی ہے، کیا ان جوتے بنانے والی بڑی کمپنیوں کی کوئی عزتِ نفس نہیں ہے؟\"",
+        "pashto": "بیا زه د لوړو زده کړو او دندې لپاره بهر هیواد ته لاړم او د څو کلونو لپاره مې له دې حیرانوونکي موچي زرین ګل سره د لیدو موقع ترلاسه نه کړه. له کلونو وروسته چې بېرته پېښور ته راغلم، لومړنی دوکان چې زه ورغلم زما د زاړه ملګري زرین ګل دوکان و. ما یو پنځوس کلن سړی پرېښی و، خو اوس یو پنځه شپېته کلن مات او ګوډ انسان ته راغلی وم چې پخپله د ډېرو کارول شویو زړو بوټانو په څېر ستړی ښکارېده. هغه له ما سره خپل هډوکی لرونکی لاس روغبړ کړ، خو د لاس منګول یې هماغومره کلکه وه لکه کلونه وړاندې. په لومړي سر کې هغه ونه پېژندلم، خو کله چې ما ځان ور وپېژانده، د هغه فکرمنو سترګو کې د موسکا ځلا راغله. ویې پوښتل: \"ایا ته کوم بوټان غواړې؟ زه یې ژر جوړولی شم، ځکه زما سره اوس ډېر وزګار وخت شته.\" بیا یې زما 'برانډي بوټانو' ته وکتل او ویې ویل: \"دا زما بوټان نه دي.\" د هغه په غږ کې نه غوسه وه، نه غم او نه سپکاوی، خو په هغې کې یو داسې خاموشه حالت و چې زما وینه یې وچه کړه. هغه خپل لاس کښته کړ او زما د کیڼ بوټ هغه ځای باندې یې خپله ګوته کېښوده چې زه یې ناارامه کړی وم. ویې ویل: \"دلته ستا پښه خوږوي، ایا دا د بوټانو لوی شرکتونه هېڅ غیرت او عزتِ نفس نه لري؟\""
       },
       {
         "heading": "Section 5: The Artist vs. The Machine (Advertisements vs. True Craftsmanship)",
@@ -8595,7 +10064,12 @@ const ENGLISH_DATA = [
         "headingPashto": "پنځمه برخه: هنرمند د ماشین په وړاندې (د اعلاناتو درواغ او اصلي لاسي هنر)",
         "text": "And then he spoke bitterly against the big multi-nationals that have extended their tentacles to the shoe-making trade. He told me how these companies had hired the craftsman of shoemaking trade. \"These big firms use their hands not their brain or experience.\" I asked Zarin Gul Kaka why he didn't join these big firms if his trade was not doing well. His reply was crisp and blunt, \"I am an artist not machine who will blindly follow their irrational and stupid dictations.\" \"They get it all,\" he continued, \"by advertisement, not by work.\" \"They took it away from us and presently we have no work.\" Looking at his crumpled leathered face, I saw things I had not noticed before, bitter thing and bitter struggle. His face and voice made so deep an impression on me that during the next few minutes I ordered many pairs. I wanted to make him advance payment but he refused, though he badly needed money, by saying, \"pay it when the shoes are ready to deliver.\"",
         "urduTranslation": "اور پھر وہ ان بڑی ملٹی نیشنل کمپنیوں کے خلاف تلخی سے بولے جنہوں نے جوتا سازی کے کاروبار میں اپنے لالچی پنجے پھیلا رکھے تھے۔ انہوں نے مجھے بتایا کہ ان کمپنیوں نے کس طرح جوتا سازی کے کاریگروں کو محض مزدور بنا لیا ہے۔ \"یہ بڑی کمپنیاں کاریگروں کے ہاتھ استعمال کرتی ہیں، ان کا دماغ یا برسوں کا تجربہ نہیں۔\" میں نے زرین گل کاکا سے پوچھا کہ اگر ان کا کاروبار مندا چل رہا تھا تو وہ خود ان بڑی کمپنیوں میں کیوں شامل نہ ہو گئے۔ ان کا جواب دو ٹوک اور غیر مبہم تھا: \"میں ایک فنکار ہوں، کوئی مشین نہیں جو ان کی غیر منطقی اور احمقانہ ہدایات کی آنکھیں بند کر کے پیروی کرے۔\" انہوں نے بات جاری رکھی: \"وہ سارا کاروبار اور گاہک محض اشتہارات کے زور پر حاصل کرتے ہیں، معیاری کام کے بل بوتے پر نہیں۔ انہوں نے ہم سے ہمارا روزگار چھین لیا ہے اور اس وقت ہمارے پاس کوئی کام نہیں ہے۔\" ان کے جھریوں زدہ چمڑے جیسے چہرے کو دیکھ کر مجھے وہ تلخ حقائق اور شدید جدوجہد نظر آئی جو میں نے پہلے کبھی محسوس نہیں کی تھی۔ ان کے چہرے اور درد بھری آواز نے مجھ پر اتنا گہرا اثر ڈالا کہ میں نے اگلے چند منٹوں میں جوتوں کے کئی جوڑوں کا آرڈر دے دیا۔ میں انہیں ایڈوانس رقم دینا چاہتا تھا لیکن شدید ضرورت کے باوجود انہوں نے انکار کر دیا اور کہا: \"رقم تب ادا کیجیے گا جب جوتے بن کر تیار ہو جائیں گے\"۔",
-        "pashtoTranslation": "او بیا هغه د هغو لویو ملټي نېشنل شرکتونو په خلاف په خورا ترخوالي خبرې وکړې چې د بوټانو په سوداګرۍ کې یې خپلې منګولې ښخې کړې وې. هغه راته وویل چې دغو شرکتونو څنګه د بوټانو اصلي ماهر کسبګر اجیر کړي دي. \"دا لوی شرکتونه یوازې د هغوی لاسونه کاروي، نه د هغوی عقل او تجربه.\" ما له زرین ګل کاکا وپوښتل چې که د ده کار ښه نه و، نو ولې پخپله په دې لویو شرکتونو کې شامل نه شو؟ د ده ځواب ډېر روښانه او پرېکنده و: \"زه یو هنرمند یم، نه یو بې روحه ماشین چې د هغوی د غیر منطقي او احمقانه فرمانونو ړنده پیروي وکړم.\" ده زیاته کړه: \"هغوی هر څه یوازې په اعلاناتو او اشتهار بازۍ ګټي، نه په ریښتیني او ښه کار. هغوی هر څه له موږ واخیستل او دا مهال موږ سره هېڅ کار نشته.\" د هغه ګونځې لرونکي مخ ته په کتلو سره، ما هغه ترخه شیان او مبارزه ولیده چې پخوا مې کله هم نه وه لیدلې. د هغه مخ او غږ پر ما دومره ژور اغېز وکړ چې په راتلونکو څو دقیقو کې ما د ډېرو بوټانو فرمایش ورکړ. ما غوښتل چې مخکې له مخکې پیسې ورکړم، خو د سختې بې وسۍ سره سره یې انکار وکړ او ویې ویل: \"پیسې هغه وخت راکړه کله چې بوټان چمتو شي.\""
+        "pashtoTranslation": "او بیا هغه د هغو لویو ملټي نېشنل شرکتونو په خلاف په خورا ترخوالي خبرې وکړې چې د بوټانو په سوداګرۍ کې یې خپلې منګولې ښخې کړې وې. هغه راته وویل چې دغو شرکتونو څنګه د بوټانو اصلي ماهر کسبګر اجیر کړي دي. \"دا لوی شرکتونه یوازې د هغوی لاسونه کاروي، نه د هغوی عقل او تجربه.\" ما له زرین ګل کاکا وپوښتل چې که د ده کار ښه نه و، نو ولې پخپله په دې لویو شرکتونو کې شامل نه شو؟ د ده ځواب ډېر روښانه او پرېکنده و: \"زه یو هنرمند یم، نه یو بې روحه ماشین چې د هغوی د غیر منطقي او احمقانه فرمانونو ړنده پیروي وکړم.\" ده زیاته کړه: \"هغوی هر څه یوازې په اعلاناتو او اشتهار بازۍ ګټي، نه په ریښتیني او ښه کار. هغوی هر څه له موږ واخیستل او دا مهال موږ سره هېڅ کار نشته.\" د هغه ګونځې لرونکي مخ ته په کتلو سره، ما هغه ترخه شیان او مبارزه ولیده چې پخوا مې کله هم نه وه لیدلې. د هغه مخ او غږ پر ما دومره ژور اغېز وکړ چې په راتلونکو څو دقیقو کې ما د ډېرو بوټانو فرمایش ورکړ. ما غوښتل چې مخکې له مخکې پیسې ورکړم، خو د سختې بې وسۍ سره سره یې انکار وکړ او ویې ویل: \"پیسې هغه وخت راکړه کله چې بوټان چمتو شي.\"",
+        "paras": [
+          "And then he spoke bitterly against the big multi-nationals that have extended their tentacles to the shoe-making trade. He told me how these companies had hired the craftsman of shoemaking trade. \"These big firms use their hands not their brain or experience.\" I asked Zarin Gul Kaka why he didn't join these big firms if his trade was not doing well. His reply was crisp and blunt, \"I am an artist not machine who will blindly follow their irrational and stupid dictations.\" \"They get it all,\" he continued, \"by advertisement, not by work.\" \"They took it away from us and presently we have no work.\" Looking at his crumpled leathered face, I saw things I had not noticed before, bitter thing and bitter struggle. His face and voice made so deep an impression on me that during the next few minutes I ordered many pairs. I wanted to make him advance payment but he refused, though he badly needed money, by saying, \"pay it when the shoes are ready to deliver.\""
+        ],
+        "urdu": "اور پھر وہ ان بڑی ملٹی نیشنل کمپنیوں کے خلاف تلخی سے بولے جنہوں نے جوتا سازی کے کاروبار میں اپنے لالچی پنجے پھیلا رکھے تھے۔ انہوں نے مجھے بتایا کہ ان کمپنیوں نے کس طرح جوتا سازی کے کاریگروں کو محض مزدور بنا لیا ہے۔ \"یہ بڑی کمپنیاں کاریگروں کے ہاتھ استعمال کرتی ہیں، ان کا دماغ یا برسوں کا تجربہ نہیں۔\" میں نے زرین گل کاکا سے پوچھا کہ اگر ان کا کاروبار مندا چل رہا تھا تو وہ خود ان بڑی کمپنیوں میں کیوں شامل نہ ہو گئے۔ ان کا جواب دو ٹوک اور غیر مبہم تھا: \"میں ایک فنکار ہوں، کوئی مشین نہیں جو ان کی غیر منطقی اور احمقانہ ہدایات کی آنکھیں بند کر کے پیروی کرے۔\" انہوں نے بات جاری رکھی: \"وہ سارا کاروبار اور گاہک محض اشتہارات کے زور پر حاصل کرتے ہیں، معیاری کام کے بل بوتے پر نہیں۔ انہوں نے ہم سے ہمارا روزگار چھین لیا ہے اور اس وقت ہمارے پاس کوئی کام نہیں ہے۔\" ان کے جھریوں زدہ چمڑے جیسے چہرے کو دیکھ کر مجھے وہ تلخ حقائق اور شدید جدوجہد نظر آئی جو میں نے پہلے کبھی محسوس نہیں کی تھی۔ ان کے چہرے اور درد بھری آواز نے مجھ پر اتنا گہرا اثر ڈالا کہ میں نے اگلے چند منٹوں میں جوتوں کے کئی جوڑوں کا آرڈر دے دیا۔ میں انہیں ایڈوانس رقم دینا چاہتا تھا لیکن شدید ضرورت کے باوجود انہوں نے انکار کر دیا اور کہا: \"رقم تب ادا کیجیے گا جب جوتے بن کر تیار ہو جائیں گے\"۔",
+        "pashto": "او بیا هغه د هغو لویو ملټي نېشنل شرکتونو په خلاف په خورا ترخوالي خبرې وکړې چې د بوټانو په سوداګرۍ کې یې خپلې منګولې ښخې کړې وې. هغه راته وویل چې دغو شرکتونو څنګه د بوټانو اصلي ماهر کسبګر اجیر کړي دي. \"دا لوی شرکتونه یوازې د هغوی لاسونه کاروي، نه د هغوی عقل او تجربه.\" ما له زرین ګل کاکا وپوښتل چې که د ده کار ښه نه و، نو ولې پخپله په دې لویو شرکتونو کې شامل نه شو؟ د ده ځواب ډېر روښانه او پرېکنده و: \"زه یو هنرمند یم، نه یو بې روحه ماشین چې د هغوی د غیر منطقي او احمقانه فرمانونو ړنده پیروي وکړم.\" ده زیاته کړه: \"هغوی هر څه یوازې په اعلاناتو او اشتهار بازۍ ګټي، نه په ریښتیني او ښه کار. هغوی هر څه له موږ واخیستل او دا مهال موږ سره هېڅ کار نشته.\" د هغه ګونځې لرونکي مخ ته په کتلو سره، ما هغه ترخه شیان او مبارزه ولیده چې پخوا مې کله هم نه وه لیدلې. د هغه مخ او غږ پر ما دومره ژور اغېز وکړ چې په راتلونکو څو دقیقو کې ما د ډېرو بوټانو فرمایش ورکړ. ما غوښتل چې مخکې له مخکې پیسې ورکړم، خو د سختې بې وسۍ سره سره یې انکار وکړ او ویې ویل: \"پیسې هغه وخت راکړه کله چې بوټان چمتو شي.\""
       },
       {
         "heading": "Section 6: The Tragic Martyrdom of a True Artist (Slow Starvation)",
@@ -8603,7 +10077,15 @@ const ENGLISH_DATA = [
         "headingPashto": "شپږمه برخه: د یو ریښتیني هنرمند ویرونکې مړینه او له لوږې شهادت",
         "text": "A week later, I came to where his shop had been, I was surprised to see that the monstrous size black 'Peshawari Chappal' was no more hanging on the wooden door of his shop. A big size signboard, displaying the name of a famous shoe-brand was hanging on his shop. I went in and said, \"Zarin Gul Kaka.\" \"No sir,\" a smartly dressed young man replied, \"No, but we can attend to anything with pleasure, we've taken the shop over.\" \"Yes, yes,\" I said, \"but where is Zarin Gul Kaka?\"\n\n\"Oh!\" he answered, \"dead.\"\n\n\"Dead! But I have to receive the shoes that I ordered last week.\"\n\n\"Ah!\" he said, \"poor old man starved himself. Slow starvation, the doctor called it! He never gave himself time to eat; never had a penny in the house. All went in rent and leather.\" As I was coming back with heavy heart, the words of Zarin Gul, the fantastic shoemaker was tinkling in my mind, \"Do the big shoe-making companies have no self-respect?\".",
         "urduTranslation": "ایک ہفتے بعد، جب میں اسی جگہ آیا جہاں ان کی دکان تھی، تو یہ دیکھ کر دنگ رہ گیا کہ وہ دیو قامت سیاہ 'پشاوری چپل' اب دکان کے لکڑی کے دروازے پر موجود نہیں تھی۔ دکان پر جوتے کے ایک مشہور برانڈ کا بڑا سا چمکدار سائن بورڈ لٹک رہا تھا۔ میں اندر داخل ہوا اور کہا: \"زرین گل کاکا؟\" ایک خوبصورت سوٹ میں ملبوس نوجوان نے جواب دیا: \"نہیں جناب، لیکن ہم خوشی سے آپ کی ہر ضرورت پوری کر سکتے ہیں، ہم نے یہ دکان خرید لی ہے۔\" میں نے کہا: \"ہاں ہاں، لیکن زرین گل کاکا کہاں ہیں؟\"\n\nاس نے جواب دیا: \"اوہ! وہ انتقال کر گئے ہیں\"۔\n\n\"انتقال کر گئے! لیکن مجھے تو وہ جوتے وصول کرنے تھے جن کا آرڈر میں نے پچھلے ہفتے دیا تھا۔\"\n\n\"افسوس!\" اس نے کہا، \"اس بے چارے بوڑھے نے خود کو فاقوں سے مار ڈالا۔ ڈاکٹر نے اسے 'آہستہ آہستہ فاقہ کشی' (Slow Starvation) قرار دیا! وہ کبھی کھانے کے لیے وقت نہیں نکالتا تھا، اور گھر میں ایک کوڑی تک نہیں تھی۔ جو کچھ کمائی تھی سب دکان کے کرائے اور اعلیٰ چمڑے کی خریداری میں چلی جاتی تھی۔\" جب میں بوجھل دل کے ساتھ واپس آ رہا تھا، تو اس حیرت انگیز جوتا ساز زرین گل کے الفاظ میرے کانوں میں گونج رہے تھے: \"کیا ان جوتے بنانے والی بڑی کمپنیوں کی کوئی عزتِ نفس نہیں ہے؟\"",
-        "pashtoTranslation": "یوه اونۍ وروسته، کله چې زه د هغه پخواني دوکان ته راغلم، حیران شوم چې هغه لویه توره پېښورۍ څپلۍ نوره د دوکان په لرګینه دروازه نه وه راځوړنده. د هغې پر ځای د بوټانو د یو مشهور برانډ لویه او ځلېدونکې لوحه لګېدلې وه. زه دننه لاړم او مې ویل: \"زرین ګل کاکا؟\" یو ښکلي کالي اغوستي ځوان وویل: \"نه صاحب، خو موږ کولی شو په خوښۍ سره ستاسو خدمت وکړو، موږ دا دوکان اخیستی دی.\" ما وویل: \"هو، خو زرین ګل کاکا چرته دی؟\"\n\nهغه ځواب ورکړ: \"اووه! هغه مړ شو.\"\n\n\"مړ شو! خو ما خو هغه بوټان اخیستل چې تېره اونۍ مې فرمایش ورکړی و.\"\n\nهغه وویل: \"افسوس! هغه غریب بوډا سړي ځان په لوږه وواژه. ډاکټر ورته د 'ورو ورو لوږې' (Slow Starvation) نوم ورکړ! هغه هیڅکله د خوړلو لپاره وخت نه کاوه؛ په کور کې یې یوه روپۍ هم نه وه پاتې. هر څه د دوکان په کرایه او د ښه چرم په اخیستلو لګېدل.\" کله چې زه په خورا دروند او غمجن زړه بېرته راستنېدم، د زرین ګل، د هغه حیرانوونکي موچي دا ټکي زما په ذهن کې راګرځېدل: \"ایا دا د بوټانو لوی شرکتونه هېڅ غیرت او عزتِ نفس نه لري؟\""
+        "pashtoTranslation": "یوه اونۍ وروسته، کله چې زه د هغه پخواني دوکان ته راغلم، حیران شوم چې هغه لویه توره پېښورۍ څپلۍ نوره د دوکان په لرګینه دروازه نه وه راځوړنده. د هغې پر ځای د بوټانو د یو مشهور برانډ لویه او ځلېدونکې لوحه لګېدلې وه. زه دننه لاړم او مې ویل: \"زرین ګل کاکا؟\" یو ښکلي کالي اغوستي ځوان وویل: \"نه صاحب، خو موږ کولی شو په خوښۍ سره ستاسو خدمت وکړو، موږ دا دوکان اخیستی دی.\" ما وویل: \"هو، خو زرین ګل کاکا چرته دی؟\"\n\nهغه ځواب ورکړ: \"اووه! هغه مړ شو.\"\n\n\"مړ شو! خو ما خو هغه بوټان اخیستل چې تېره اونۍ مې فرمایش ورکړی و.\"\n\nهغه وویل: \"افسوس! هغه غریب بوډا سړي ځان په لوږه وواژه. ډاکټر ورته د 'ورو ورو لوږې' (Slow Starvation) نوم ورکړ! هغه هیڅکله د خوړلو لپاره وخت نه کاوه؛ په کور کې یې یوه روپۍ هم نه وه پاتې. هر څه د دوکان په کرایه او د ښه چرم په اخیستلو لګېدل.\" کله چې زه په خورا دروند او غمجن زړه بېرته راستنېدم، د زرین ګل، د هغه حیرانوونکي موچي دا ټکي زما په ذهن کې راګرځېدل: \"ایا دا د بوټانو لوی شرکتونه هېڅ غیرت او عزتِ نفس نه لري؟\"",
+        "paras": [
+          "A week later, I came to where his shop had been, I was surprised to see that the monstrous size black 'Peshawari Chappal' was no more hanging on the wooden door of his shop. A big size signboard, displaying the name of a famous shoe-brand was hanging on his shop. I went in and said, \"Zarin Gul Kaka.\" \"No sir,\" a smartly dressed young man replied, \"No, but we can attend to anything with pleasure, we've taken the shop over.\" \"Yes, yes,\" I said, \"but where is Zarin Gul Kaka?\"",
+          "\"Oh!\" he answered, \"dead.\"",
+          "\"Dead! But I have to receive the shoes that I ordered last week.\"",
+          "\"Ah!\" he said, \"poor old man starved himself. Slow starvation, the doctor called it! He never gave himself time to eat; never had a penny in the house. All went in rent and leather.\" As I was coming back with heavy heart, the words of Zarin Gul, the fantastic shoemaker was tinkling in my mind, \"Do the big shoe-making companies have no self-respect?\"."
+        ],
+        "urdu": "ایک ہفتے بعد، جب میں اسی جگہ آیا جہاں ان کی دکان تھی، تو یہ دیکھ کر دنگ رہ گیا کہ وہ دیو قامت سیاہ 'پشاوری چپل' اب دکان کے لکڑی کے دروازے پر موجود نہیں تھی۔ دکان پر جوتے کے ایک مشہور برانڈ کا بڑا سا چمکدار سائن بورڈ لٹک رہا تھا۔ میں اندر داخل ہوا اور کہا: \"زرین گل کاکا؟\" ایک خوبصورت سوٹ میں ملبوس نوجوان نے جواب دیا: \"نہیں جناب، لیکن ہم خوشی سے آپ کی ہر ضرورت پوری کر سکتے ہیں، ہم نے یہ دکان خرید لی ہے۔\" میں نے کہا: \"ہاں ہاں، لیکن زرین گل کاکا کہاں ہیں؟\"\n\nاس نے جواب دیا: \"اوہ! وہ انتقال کر گئے ہیں\"۔\n\n\"انتقال کر گئے! لیکن مجھے تو وہ جوتے وصول کرنے تھے جن کا آرڈر میں نے پچھلے ہفتے دیا تھا۔\"\n\n\"افسوس!\" اس نے کہا، \"اس بے چارے بوڑھے نے خود کو فاقوں سے مار ڈالا۔ ڈاکٹر نے اسے 'آہستہ آہستہ فاقہ کشی' (Slow Starvation) قرار دیا! وہ کبھی کھانے کے لیے وقت نہیں نکالتا تھا، اور گھر میں ایک کوڑی تک نہیں تھی۔ جو کچھ کمائی تھی سب دکان کے کرائے اور اعلیٰ چمڑے کی خریداری میں چلی جاتی تھی۔\" جب میں بوجھل دل کے ساتھ واپس آ رہا تھا، تو اس حیرت انگیز جوتا ساز زرین گل کے الفاظ میرے کانوں میں گونج رہے تھے: \"کیا ان جوتے بنانے والی بڑی کمپنیوں کی کوئی عزتِ نفس نہیں ہے؟\"",
+        "pashto": "یوه اونۍ وروسته، کله چې زه د هغه پخواني دوکان ته راغلم، حیران شوم چې هغه لویه توره پېښورۍ څپلۍ نوره د دوکان په لرګینه دروازه نه وه راځوړنده. د هغې پر ځای د بوټانو د یو مشهور برانډ لویه او ځلېدونکې لوحه لګېدلې وه. زه دننه لاړم او مې ویل: \"زرین ګل کاکا؟\" یو ښکلي کالي اغوستي ځوان وویل: \"نه صاحب، خو موږ کولی شو په خوښۍ سره ستاسو خدمت وکړو، موږ دا دوکان اخیستی دی.\" ما وویل: \"هو، خو زرین ګل کاکا چرته دی؟\"\n\nهغه ځواب ورکړ: \"اووه! هغه مړ شو.\"\n\n\"مړ شو! خو ما خو هغه بوټان اخیستل چې تېره اونۍ مې فرمایش ورکړی و.\"\n\nهغه وویل: \"افسوس! هغه غریب بوډا سړي ځان په لوږه وواژه. ډاکټر ورته د 'ورو ورو لوږې' (Slow Starvation) نوم ورکړ! هغه هیڅکله د خوړلو لپاره وخت نه کاوه؛ په کور کې یې یوه روپۍ هم نه وه پاتې. هر څه د دوکان په کرایه او د ښه چرم په اخیستلو لګېدل.\" کله چې زه په خورا دروند او غمجن زړه بېرته راستنېدم، د زرین ګل، د هغه حیرانوونکي موچي دا ټکي زما په ذهن کې راګرځېدل: \"ایا دا د بوټانو لوی شرکتونه هېڅ غیرت او عزتِ نفس نه لري؟\""
       }
     ],
     "urduSummary": "یہ کہانی پشاور کے قصہ خوانی بازار کے ایک روایتی اور کھرے موچی زرین گل کی ہے جو جوتا سازی کو محض تجارت نہیں بلکہ ایک مقدس فن سمجھتا تھا۔ وہ اعلیٰ ترین چمڑے اور بے مثال مہارت سے پائیدار جوتے بناتا تھا۔ جب کثیر القومی کمپنیوں نے پرفریب اشتہار بازی اور کم معیار کے بل پر مارکیٹ پر قبضہ کر لیا، تو زرین گل نے اپنے اصولوں پر سمجھوتہ کرنے یا فیکٹریوں کا غلام بننے سے انکار کر دیا۔ غربت اور فاقہ کشی کے باوجود اس نے اپنے فن کی عزت بچائی اور بالاخر آہستہ آہستہ بھوک کی وجہ سے جان کی بازی ہار گیا۔ یہ کہانی روایتی دستکاری اور بے رحم کارپوریٹ لالچ کے تصادم کا نوحہ ہے۔",
@@ -8614,135 +10096,179 @@ const ENGLISH_DATA = [
       "glossaryTable": [
         {
           "word": "crisp",
-          "pos": "adjective",
-          "meaning": "fresh and clean; firm, clear, decisive and blunt",
-          "example": "His crisp reply left no room for further argument."
+          "pos": "",
+          "meaning": "fresh and clean; new and slightly stiff without any folds in it",
+          "urdu": "کرارا، دو ٹوک",
+          "pashto": "کلک، لنډ او روښانه",
+          "sourceMeaning": true
         },
         {
           "word": "grave",
-          "pos": "adjective",
-          "meaning": "a dignified seriousness due to heavy responsibilities or cares; serious",
-          "example": "The doctor had a grave expression when discussing the illness."
+          "pos": "",
+          "meaning": "a dignified seriousness due to heavy responsibilities or cares",
+          "urdu": "سنجیدہ، سنگین",
+          "pashto": "جدي",
+          "sourceMeaning": true
         },
         {
           "word": "contempt",
-          "pos": "noun",
+          "pos": "",
           "meaning": "the feeling that somebody/something is without value and deserves no respect at all",
-          "example": "He looked at the counterfeit product with utter contempt."
+          "urdu": "حقارت",
+          "pashto": "کرکه، سپکاوی",
+          "sourceMeaning": true
         },
         {
           "word": "bitterly",
-          "pos": "adverb",
-          "meaning": "in a way that shows feelings of deep sadness, hurt, or anger",
-          "example": "He spoke bitterly about the betrayal by his former partners."
+          "pos": "",
+          "meaning": "a way that shows feelings of sadness or anger",
+          "urdu": "تلخی سے",
+          "pashto": "په ترخه توګه",
+          "sourceMeaning": true
         },
         {
           "word": "dictations",
-          "pos": "noun",
-          "meaning": "authoritative orders or instructions that must be followed blindly",
-          "example": "The independent artist refused to submit to corporate dictations."
+          "pos": "",
+          "meaning": "the act of speaking or reading so that somebody can write down the words",
+          "urdu": "املا، حکم",
+          "pashto": "املا، امر",
+          "sourceMeaning": true
         },
         {
           "word": "irrational",
-          "pos": "adjective",
-          "meaning": "not based on, or not using, clear logical thought or reason",
-          "example": "It is irrational to buy low quality shoes merely for their brand logo."
+          "pos": "",
+          "meaning": "not based on, or not using, clear logical thought",
+          "urdu": "غیر منطقی",
+          "pashto": "غیر منطقي",
+          "sourceMeaning": true
         },
         {
           "word": "starvation",
-          "pos": "noun",
+          "pos": "",
           "meaning": "the state of suffering and death caused by having no food",
-          "example": "The noble artisan suffered slow starvation rather than compromising his art."
+          "urdu": "فاقہ کشی",
+          "pashto": "لوږه",
+          "sourceMeaning": true
         },
         {
           "word": "tinkling",
-          "pos": "verb / adjective",
-          "meaning": "a light, persistent, high ringing sound echoing in the mind",
-          "example": "The old shoemaker's words were tinkling in his mind all night."
+          "pos": "",
+          "meaning": "a light high ringing sound",
+          "urdu": "جھنکار",
+          "pashto": "شرنګ",
+          "sourceMeaning": true
         },
         {
           "word": "brooded",
-          "pos": "adjective / verb",
-          "meaning": "to think deeply and somberly about something that causes distress or worry",
-          "example": "His brooded eyes sparkled when an old customer arrived."
+          "pos": "",
+          "meaning": "to think a lot about something that makes you annoyed, anxious or upset",
+          "urdu": "غمگین، فکرمند",
+          "pashto": "خپه، په فکر کې ډوب",
+          "sourceMeaning": true
         },
         {
           "word": "brisk",
-          "pos": "adjective",
-          "meaning": "showing a desire to get things done quickly, lively and prompt",
-          "example": "The chieftain agreed with a brisk nod of his head."
+          "pos": "",
+          "meaning": "showing a desire to get things done quickly",
+          "urdu": "تیز، چست",
+          "pashto": "چټک",
+          "sourceMeaning": true
         },
         {
           "word": "nod",
-          "pos": "noun / verb",
+          "pos": "",
           "meaning": "to move your head up and down to show agreement, understanding, etc.",
-          "example": "He gave a polite nod to confirm the transaction."
+          "urdu": "سر ہلانا",
+          "pashto": "سر ښورول",
+          "sourceMeaning": true
         },
         {
           "word": "wriggle",
-          "pos": "verb",
+          "pos": "",
           "meaning": "twist and turn with quick movements",
-          "example": "The wrinkles on his tanned forehead seemed to wriggle as he smiled."
+          "urdu": "بل کھانا",
+          "pashto": "تاوېدل",
+          "sourceMeaning": true
         },
         {
           "word": "serpentine",
-          "pos": "adjective",
-          "meaning": "like a serpent or snake; winding, twisting",
-          "example": "The serpentine alleys of the old bazaar were full of history."
+          "pos": "",
+          "meaning": "like a serpent or snake",
+          "urdu": "سانپ کی طرح بل کھاتا",
+          "pashto": "د مار په څېر کوږ وږ",
+          "sourceMeaning": true
         },
         {
           "word": "impression",
-          "pos": "noun",
-          "meaning": "an idea, a feeling or an opinion that you get about somebody/something",
-          "example": "His sincere devotion made an indelible impression on the young boy."
+          "pos": "",
+          "meaning": "an idea, a feeling or an opinion that you get about somebody/something, or that somebody/something gives you",
+          "urdu": "تاثر",
+          "pashto": "اغېز، تاثر",
+          "sourceMeaning": true
         },
         {
           "word": "craftsman",
-          "pos": "noun",
+          "pos": "",
           "meaning": "a skilled person, especially one who makes beautiful things by hand",
-          "example": "Zarin Gul was a master craftsman of Peshawari chappals."
+          "urdu": "کاریگر، دستکار",
+          "pashto": "لاسي کسبګر",
+          "sourceMeaning": true
         },
         {
           "word": "overused",
-          "pos": "adjective",
-          "meaning": "used too much, worn out through excessive usage",
-          "example": "The overused boots showed tear along the seams."
+          "pos": "",
+          "meaning": "to use something too much or too often",
+          "urdu": "ضرورت سے زیادہ استعمال شدہ",
+          "pashto": "ډېر کارول شوی",
+          "sourceMeaning": true
         },
         {
           "word": "mysterious",
-          "pos": "adjective",
-          "meaning": "difficult to understand or explain; strange, magical",
-          "example": "His ability to craft perfect fits remained mysterious and wonderful."
+          "pos": "",
+          "meaning": "difficult to understand or explain; strange",
+          "urdu": "پراسرار",
+          "pashto": "پراسرار",
+          "sourceMeaning": true
         },
         {
           "word": "hesitant",
-          "pos": "adjective",
+          "pos": "",
           "meaning": "slow to speak or act because you feel uncertain, embarrassed or unwilling",
-          "example": "The boy made a hesitant query about the difficulty of the craft."
+          "urdu": "ہچکچاتا ہوا",
+          "pashto": "زړه نا زړه",
+          "sourceMeaning": true
         },
         {
           "word": "mallet",
-          "pos": "noun",
-          "meaning": "a hammer with a large wooden head used for pounding leather",
-          "example": "He smoothed the thick leather sole with a wooden mallet."
+          "pos": "",
+          "meaning": "a hammer with a large wooden head",
+          "urdu": "لکڑی کا ہتھوڑا، موگری",
+          "pashto": "لرګین څټک",
+          "sourceMeaning": true
         },
         {
           "word": "awl",
-          "pos": "noun",
+          "pos": "",
           "meaning": "a small pointed tool used for making holes, especially in leather",
-          "example": "The craftsman pierced the tough hide using a sharp awl."
+          "urdu": "سوا (چمڑے میں سوراخ کا آلہ)",
+          "pashto": "سوژن، د څرمنې سوري کوونکی",
+          "sourceMeaning": true
         },
         {
           "word": "anvil",
-          "pos": "noun",
-          "meaning": "a heavy iron block on which hot metal or tough leather is shaped",
-          "example": "A three-legged anvil stood firmly in the corner of his workshop."
+          "pos": "",
+          "meaning": "an iron block on which a blacksmith puts hot pieces of metal before shaping them with a hammer",
+          "urdu": "نہائی، سندان",
+          "pashto": "سندان",
+          "sourceMeaning": true
         },
         {
           "word": "barren",
-          "pos": "adjective",
-          "meaning": "empty, devoid of excess stock, like a desert",
-          "example": "The shop was barren of ready-made stock because he worked solely on order."
+          "pos": "",
+          "meaning": "not good enough for plants to grow on it",
+          "urdu": "بنجر",
+          "pashto": "شاړ",
+          "sourceMeaning": true
         }
       ],
       "comprehension": [
@@ -8998,7 +10524,8 @@ const ENGLISH_DATA = [
           "3. Mechanization should support human laborers, not displace or exploit their dignity and livelihood.",
           "4. True national progress is measured by the welfare, health, and dignity accorded to the working class."
         ],
-        "sampleDialogue": "Respected teacher and classmates,\nBehind every towering skyscraper, paved highway, and handcrafted shoe lies the sweat and blood of an honest laborer. As depicted in the life of Zarin Gul, manual craftsmen are artists who infuse life into inert raw materials. It is our moral obligation to uphold their dignity, demand fair wages for their labor, and ensure they are protected from corporate exploitation."
+        "sampleDialogue": "Respected teacher and classmates,\nBehind every towering skyscraper, paved highway, and handcrafted shoe lies the sweat and blood of an honest laborer. As depicted in the life of Zarin Gul, manual craftsmen are artists who infuse life into inert raw materials. It is our moral obligation to uphold their dignity, demand fair wages for their labor, and ensure they are protected from corporate exploitation.",
+        "prompt": "Share with the class your point of view about 'Contribution of Labourers'. Ask and express preferences, emotions, wishes, needs and requirements by giving reasons."
       },
       "vocabulary": [
         {
@@ -9376,7 +10903,245 @@ const ENGLISH_DATA = [
       "Transform sentences accurately between Active and Passive voice across various tenses.",
       "Write a critical literary analysis evaluating the socioeconomic themes of the text.",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "read text to make predictions about story knowledge line / content, characters, using contextual clues and prior knowledge.",
+      "analyze story elements: characters, events, setting, plot, theme, tone, point of view.",
+      "recognize the author's purpose and point of view.",
+      "classify use convert and make declarative (affirmative and negative), interrogative, exclamatory and imperative sentences.",
+      "identify and differentiate between simple, compound and complex sentences.",
+      "use summary skills to extract salient points and develop a mind map to summarize a text.",
+      "use dictionary to: choose appropriate word definition; identify part of speech; recognize abbreviation used in a dictionary; locate synonyms in a thesaurus; translate passages from English to Urdu.",
+      "identify the speaker or narrator in a selection.",
+      "analyze to use in their own writing features of an expository composition showing comparison and contrast between things, events, situations, places, action, idea or a problem.",
+      "select and use appropriate expression for various functions to ask and express preferences, emotions, wishes needs and requirements by giving reasons."
+    ],
+    "preReading": [
+      {
+        "q": "What are the things that you should keep in mind before buying shoes?",
+        "a": "Pre-reading question (PDF 94)"
+      },
+      {
+        "q": "What kind of shoes do you like?",
+        "a": "Pre-reading question (PDF 94)"
+      },
+      {
+        "q": "Where do you buy your shoes from?",
+        "a": "Pre-reading question (PDF 94)"
+      }
+    ],
+    "glossary": [
+      {
+        "word": "crisp",
+        "pos": "",
+        "meaning": "fresh and clean; new and slightly stiff without any folds in it",
+        "urdu": "کرارا، دو ٹوک",
+        "pashto": "کلک، لنډ او روښانه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "grave",
+        "pos": "",
+        "meaning": "a dignified seriousness due to heavy responsibilities or cares",
+        "urdu": "سنجیدہ، سنگین",
+        "pashto": "جدي",
+        "sourceMeaning": true
+      },
+      {
+        "word": "contempt",
+        "pos": "",
+        "meaning": "the feeling that somebody/something is without value and deserves no respect at all",
+        "urdu": "حقارت",
+        "pashto": "کرکه، سپکاوی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "bitterly",
+        "pos": "",
+        "meaning": "a way that shows feelings of sadness or anger",
+        "urdu": "تلخی سے",
+        "pashto": "په ترخه توګه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "dictations",
+        "pos": "",
+        "meaning": "the act of speaking or reading so that somebody can write down the words",
+        "urdu": "املا، حکم",
+        "pashto": "املا، امر",
+        "sourceMeaning": true
+      },
+      {
+        "word": "irrational",
+        "pos": "",
+        "meaning": "not based on, or not using, clear logical thought",
+        "urdu": "غیر منطقی",
+        "pashto": "غیر منطقي",
+        "sourceMeaning": true
+      },
+      {
+        "word": "starvation",
+        "pos": "",
+        "meaning": "the state of suffering and death caused by having no food",
+        "urdu": "فاقہ کشی",
+        "pashto": "لوږه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "tinkling",
+        "pos": "",
+        "meaning": "a light high ringing sound",
+        "urdu": "جھنکار",
+        "pashto": "شرنګ",
+        "sourceMeaning": true
+      },
+      {
+        "word": "brooded",
+        "pos": "",
+        "meaning": "to think a lot about something that makes you annoyed, anxious or upset",
+        "urdu": "غمگین، فکرمند",
+        "pashto": "خپه، په فکر کې ډوب",
+        "sourceMeaning": true
+      },
+      {
+        "word": "brisk",
+        "pos": "",
+        "meaning": "showing a desire to get things done quickly",
+        "urdu": "تیز، چست",
+        "pashto": "چټک",
+        "sourceMeaning": true
+      },
+      {
+        "word": "nod",
+        "pos": "",
+        "meaning": "to move your head up and down to show agreement, understanding, etc.",
+        "urdu": "سر ہلانا",
+        "pashto": "سر ښورول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "wriggle",
+        "pos": "",
+        "meaning": "twist and turn with quick movements",
+        "urdu": "بل کھانا",
+        "pashto": "تاوېدل",
+        "sourceMeaning": true
+      },
+      {
+        "word": "serpentine",
+        "pos": "",
+        "meaning": "like a serpent or snake",
+        "urdu": "سانپ کی طرح بل کھاتا",
+        "pashto": "د مار په څېر کوږ وږ",
+        "sourceMeaning": true
+      },
+      {
+        "word": "impression",
+        "pos": "",
+        "meaning": "an idea, a feeling or an opinion that you get about somebody/something, or that somebody/something gives you",
+        "urdu": "تاثر",
+        "pashto": "اغېز، تاثر",
+        "sourceMeaning": true
+      },
+      {
+        "word": "craftsman",
+        "pos": "",
+        "meaning": "a skilled person, especially one who makes beautiful things by hand",
+        "urdu": "کاریگر، دستکار",
+        "pashto": "لاسي کسبګر",
+        "sourceMeaning": true
+      },
+      {
+        "word": "overused",
+        "pos": "",
+        "meaning": "to use something too much or too often",
+        "urdu": "ضرورت سے زیادہ استعمال شدہ",
+        "pashto": "ډېر کارول شوی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "mysterious",
+        "pos": "",
+        "meaning": "difficult to understand or explain; strange",
+        "urdu": "پراسرار",
+        "pashto": "پراسرار",
+        "sourceMeaning": true
+      },
+      {
+        "word": "hesitant",
+        "pos": "",
+        "meaning": "slow to speak or act because you feel uncertain, embarrassed or unwilling",
+        "urdu": "ہچکچاتا ہوا",
+        "pashto": "زړه نا زړه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "mallet",
+        "pos": "",
+        "meaning": "a hammer with a large wooden head",
+        "urdu": "لکڑی کا ہتھوڑا، موگری",
+        "pashto": "لرګین څټک",
+        "sourceMeaning": true
+      },
+      {
+        "word": "awl",
+        "pos": "",
+        "meaning": "a small pointed tool used for making holes, especially in leather",
+        "urdu": "سوا (چمڑے میں سوراخ کا آلہ)",
+        "pashto": "سوژن، د څرمنې سوري کوونکی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "anvil",
+        "pos": "",
+        "meaning": "an iron block on which a blacksmith puts hot pieces of metal before shaping them with a hammer",
+        "urdu": "نہائی، سندان",
+        "pashto": "سندان",
+        "sourceMeaning": true
+      },
+      {
+        "word": "barren",
+        "pos": "",
+        "meaning": "not good enough for plants to grow on it",
+        "urdu": "بنجر",
+        "pashto": "شاړ",
+        "sourceMeaning": true
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "printedPages": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93
+      ],
+      "notes": [
+        "Sections 1-3 displayed invented text (partly adapted from Galsworthy's \"Quality\", including dialect lines such as \"Id shouldn'd 'ave greaked\"); the displayed paragraphs are replaced with the book text already stored in the \"text\" field, and the Urdu/Pashto fields are aligned with the stored translations of that text.",
+        "Learning outcomes (PDF 93), pre-reading questions (PDF 94) and printed glossary meanings (PDF 97) added; Urdu/Pashto glossary meanings are SpaceBook translations.",
+        "Listening & speaking prompt was empty; restored from PDF 100.",
+        "Story text, comprehension A1-10, MCQ B1-4, vocabulary A-C, writing A-C and sentence-structure grammar match the book."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   },
   {
     "number": 10,
@@ -9384,8 +11149,8 @@ const ENGLISH_DATA = [
     "titleUrdu": "روزمرہ زندگی میں ٹیکنالوجی",
     "titlePashto": "په ورځني ژوند کې ټیکنالوژي",
     "type": "Prose",
-    "author": "Textbook Compilation (KPK Board)",
-    "authorInfo": "A comprehensive expository lesson highlighting the transformative impact of modern science, communication technologies, biotechnology, agricultural innovation, renewable energy, and rapid transportation systems on everyday human life and global economic development.",
+    "author": "",
+    "authorInfo": "The book prints no author name for this unit (PDF 103).",
     "sections": [
       {
         "heading": "Section 1: The Pervasive Presence of Technology in Modern Life",
@@ -9395,12 +11160,10 @@ const ENGLISH_DATA = [
         "urduTranslation": "ہماری روزمرہ کی زندگی میں ٹیکنالوجی کی اہمیت ناقابلِ انکار ہے۔ ٹیکنالوجی ہماری زندگی میں انتہائی اہم کردار ادا کرتی ہے اور اس نے ہمارے معیارِ زندگی کو بہتر اور آسان بنا دیا ہے۔ باورچی خانے، سونے کے کمرے، بیٹھک، غسل خانے سے لے کر گھر یا دفتر کے کسی بھی حصے تک، تکنیکی آلات مختلف شکلوں اور صورتوں میں موجود ہیں۔ آج کی متحرک دنیا میں ٹیکنالوجی کے بغیر زندگی اگر ناممکن نہیں تو انتہائی مشقت طلب ضرور ہے۔ تکنیکی ترقی کی شاخیں صحت، مواصلات، زراعت، تعمیرات، انجینئرنگ اور نقل و حمل (ٹرانسپورٹ) کے متنوع شعبوں تک پھیل چکی ہیں۔ اگر ہم ان شعبوں پر قدرے تفصیل سے غور کریں تو ٹیکنالوجی کی اہمیت مزید واضح اور قابلِ فہم ہو جائے گی۔",
         "pashtoTranslation": "زموږ په ورځني ژوند کې د ټیکنالوژۍ ارزښت د انکار وړ نه دی. ټیکنالوژي زموږ په ژوند کې یو بنسټیز رول لوبوي او زموږ ژوند ته یې اسانتیاوې بښلې دي. له پخلنځي، د خوب له کوټې، د ناستې له کوټې، تشناب څخه نیولې د کور یا دفتر تر هرې بلې برخې پورې، تخنیکي وسایل په بېلابېلو بڼو او څرګندونو کې شتون لري. د نن ورځې په متحرکه نړۍ کې، بې له ټیکنالوژۍ ژوند که ناممکن نه وي، خورا ستونزمن او دروند دی. د تخنیکي پرمختګ څانګې د روغتیا، مخابراتو، کرنې، معمارۍ، انجینرۍ او ترانسپورت مختلفو برخو ته غځېدلې دي. که موږ په دې برخو لږ تفصیل سره بحث وکړو، نو د ټیکنالوژۍ ارزښت به نور هم روښانه شي.",
         "paras": [
-          "We live in the golden age of science and technology. From the moment our digital alarm wakes us in the morning until we switch off our smartphones at night, technology surrounds every aspect of our daily routine.",
-          "The advent of high-speed internet, smartphones, cloud computing, and smart home appliances has transformed the world into an interconnected global village.",
-          "Tasks that previously required days of grueling physical labor or weeks of postal correspondence are now executed in fractions of a second with the touch of a touchscreen."
+          "The importance of technology in our daily lives is undeniable. Technology plays a vital role in our life and it has added to our lives. From kitchen, bedroom, living room, bathroom, to any other place of your home or office, technological equipment is present in different form and manifestation. In today's dynamic world, life without technology is very strenuous if not impossible. The offshoots of technological development have stretched out to diverse fields of health science, communication, agriculture, architectural, engineering and transportation systems. The significance of technology will get more intelligible if we dwell on these fields in some detail."
         ],
-        "urdu": "ہم سائنس اور ٹیکنالوجی کے سنہری دور میں جی رہے ہیں۔ صبح کے وقت ڈیجیٹل الارم بجنے سے لے کر رات کو اسمارٹ فون بند کرنے تک، ٹیکنالوجی ہماری روزمرہ زندگی کے ہر پہلو کا احاطہ کیے ہوئے ہے۔ تیز رفتار انٹرنیٹ، اسمارٹ فونز، کلاؤڈ کمپیوٹنگ اور گھریلو برقی آلات کی آمد نے دنیا کو ایک باہم جڑے ہوئے 'عالمی گاؤں' (گلوبل ولیج) میں تبدیل کر دیا ہے۔ وہ کام جن کے لیے پہلے دنوں کی سخت جسمانی محنت یا خط و کتابت کے لیے ہفتوں کا انتظار درکار ہوتا تھا، اب ٹچ اسکرین کے ایک اشارے پر سیکنڈوں کے ہزارویں حصے میں مکمل ہو جاتے ہیں۔",
-        "pashto": "مونږ د ساینس او ټیکنالوژۍ په زرین دور کې ژوند کوو. له سهاره چې ډیجیټل الارم غږیږي تر هغې چې د شپې سمارټ فون بندوو، ټیکنالوژي زمونږ د ژوند په هر ډګر واکمنه ده. د تیز رفتار انټرنیټ، سمارټ فونونو او نویو وسایلو په راتګ سره نړۍ په یو کوچني کلي بدله شوې ده. هغه کارونه چې پخوا به پکې ورځې او اونۍ لګیدلې، اوس په یوه شیبه کې د ګوتې په یو لمس ترسره کیږي."
+        "urdu": "ہماری روزمرہ کی زندگی میں ٹیکنالوجی کی اہمیت ناقابلِ انکار ہے۔ ٹیکنالوجی ہماری زندگی میں انتہائی اہم کردار ادا کرتی ہے اور اس نے ہمارے معیارِ زندگی کو بہتر اور آسان بنا دیا ہے۔ باورچی خانے، سونے کے کمرے، بیٹھک، غسل خانے سے لے کر گھر یا دفتر کے کسی بھی حصے تک، تکنیکی آلات مختلف شکلوں اور صورتوں میں موجود ہیں۔ آج کی متحرک دنیا میں ٹیکنالوجی کے بغیر زندگی اگر ناممکن نہیں تو انتہائی مشقت طلب ضرور ہے۔ تکنیکی ترقی کی شاخیں صحت، مواصلات، زراعت، تعمیرات، انجینئرنگ اور نقل و حمل (ٹرانسپورٹ) کے متنوع شعبوں تک پھیل چکی ہیں۔ اگر ہم ان شعبوں پر قدرے تفصیل سے غور کریں تو ٹیکنالوجی کی اہمیت مزید واضح اور قابلِ فہم ہو جائے گی۔",
+        "pashto": "زموږ په ورځني ژوند کې د ټیکنالوژۍ ارزښت د انکار وړ نه دی. ټیکنالوژي زموږ په ژوند کې یو بنسټیز رول لوبوي او زموږ ژوند ته یې اسانتیاوې بښلې دي. له پخلنځي، د خوب له کوټې، د ناستې له کوټې، تشناب څخه نیولې د کور یا دفتر تر هرې بلې برخې پورې، تخنیکي وسایل په بېلابېلو بڼو او څرګندونو کې شتون لري. د نن ورځې په متحرکه نړۍ کې، بې له ټیکنالوژۍ ژوند که ناممکن نه وي، خورا ستونزمن او دروند دی. د تخنیکي پرمختګ څانګې د روغتیا، مخابراتو، کرنې، معمارۍ، انجینرۍ او ترانسپورت مختلفو برخو ته غځېدلې دي. که موږ په دې برخو لږ تفصیل سره بحث وکړو، نو د ټیکنالوژۍ ارزښت به نور هم روښانه شي."
       },
       {
         "heading": "Section 2: Breakthroughs in Health Sciences and Medical Diagnosis",
@@ -9410,13 +11173,10 @@ const ENGLISH_DATA = [
         "urduTranslation": "1. شعبہ صحت اور طبی سائنس میں ٹیکنالوجی کا استعمال انتہائی مفید اور انقلابی ثابت ہوا ہے۔ ایسے جدید الیکٹرانک آلات اور مشینیں ایجاد کی گئی ہیں جنہوں نے ہسپتالوں اور طبی مراکز میں مریضوں کو ملنے والے علاج کے معیار کو غیر معمولی حد تک بہتر بنا دیا ہے اور مختلف مہلک بیماریوں سے بچاؤ اور زندہ رہنے کے امکانات میں خاطر خواہ اضافہ کر دیا ہے۔ ٹیکنالوجی کا ایک اور نمایاں فائدہ یہ ہے کہ اس نے ڈاکٹروں کو اس قابل بنا دیا ہے کہ وہ زیادہ تر بیماریوں کو ان کے ابتدائی مراحل میں ہی تشخیص کر لیتے ہیں اور ان کے خطرناک یا آخری مراحل تک پہنچنے سے پہلے ہی ان کا بروقت علاج شروع کر دیتے ہیں۔",
         "pashtoTranslation": "۱. په روغتیایي علومو او طب کې ټیکنالوژي خورا زیاته ګټوره ثابته شوې ده. عصري برېښنایي وسایل او ماشینونه جوړ شوي چې په روغتونونو کې د خلکو د درملنې کیفیت یې خورا لوړ کړی او د بېلابېلو ناروغیو پر وړاندې د هغوی د ژوندي پاتې کېدو چانسونه یې زیات کړي دي. د ټیکنالوژۍ بله لویه ګټه دا ده چې ډاکټرانو ته یې دا وړتیا ورکړې چې د روغتیا ډېری ستونزې په لومړیو مرحلو کې وپېژني او مخکې له دې چې پرمختللي او خطرناک حالت ته ورسیږي، د هغوی درملنه وکړي.",
         "paras": [
-          "The impact of technology on fundamental human sectors is extraordinary.",
-          "In education, online learning platforms, digital libraries, and virtual classrooms have democratized knowledge, enabling students in remote villages of Khyber Pakhtunkhwa to access world-class lectures and textbooks.",
-          "In healthcare, cutting-edge diagnostic tools, robotic surgery, telemedicine, and computerized tomography (CT scans) save millions of lives daily.",
-          "In commerce, electronic banking, online marketplaces, and digital payment systems have created a seamless 24/7 global economy."
+          "1. Technology has been of great use in the health sciences industry. Modern electronic equipment have been discovered which have improved the quality of treatment people receive at the health institutions as well as increasing their survival chances from various ailments. Another notable benefit of technology is that it has enabled doctors to discover most health problems while they are still in the developing stages, and treat them before they develop into advance stages."
         ],
-        "urdu": "بنیادی شعبہ ہائے زندگی پر ٹیکنالوجی کے اثرات حیرت انگیز ہیں۔ تعلیم کے میدان میں آن لائن تدریسی پلیٹ فارمز، ڈیجیٹل لائبریریوں اور ورچوئل کلاس رومز نے علم کو ہر خاص و عام تک پہنچا دیا ہے، جس کے ذریعے خیبر پختونخوا کے دور دراز دیہاتوں کے طلبہ بھی عالمی معیار کے لیکچرز اور کتب تک رسائی حاصل کر سکتے ہیں۔ شعبہ صحت میں جدید ترین تشخیصی آلات، روبوٹک سرجری، ٹیلی میڈیسن اور سی ٹی اسکین روزانہ لاکھوں زندگیاں بچاتے ہیں۔ تجارت میں ای بینکنگ، آن لائن شاپنگ اور ڈیجیٹل ادائیگیوں نے ۲۴ گھنٹے متحرک معیشت کو جنم دیا ہے۔",
-        "pashto": "د انسان په بنسټیزو برخو د ټیکنالوژۍ اغیز خورا لوړ دی. په تعلیم کې انلاین زده کړو او ډیجیټل کتابتونونو د پوهې دروازې پرانیستې چې حتی د خیبر پښتونخوا د لرو پرتو سیمو زده کوونکي هم لوړ درسونه ترلاسه کولی شي. په روغتیا کې پرمختللو تشخیصی وسایلو او روبوټیک جراحیو د بې شمیره خلکو ژوند ژغورلی دی. په سوداګرۍ کې انلاین بانکدارۍ او ډیجیټل مارکیټونو د نړۍ اقتصاد خورا ګړندی کړی دی."
+        "urdu": "1. شعبہ صحت اور طبی سائنس میں ٹیکنالوجی کا استعمال انتہائی مفید اور انقلابی ثابت ہوا ہے۔ ایسے جدید الیکٹرانک آلات اور مشینیں ایجاد کی گئی ہیں جنہوں نے ہسپتالوں اور طبی مراکز میں مریضوں کو ملنے والے علاج کے معیار کو غیر معمولی حد تک بہتر بنا دیا ہے اور مختلف مہلک بیماریوں سے بچاؤ اور زندہ رہنے کے امکانات میں خاطر خواہ اضافہ کر دیا ہے۔ ٹیکنالوجی کا ایک اور نمایاں فائدہ یہ ہے کہ اس نے ڈاکٹروں کو اس قابل بنا دیا ہے کہ وہ زیادہ تر بیماریوں کو ان کے ابتدائی مراحل میں ہی تشخیص کر لیتے ہیں اور ان کے خطرناک یا آخری مراحل تک پہنچنے سے پہلے ہی ان کا بروقت علاج شروع کر دیتے ہیں۔",
+        "pashto": "۱. په روغتیایي علومو او طب کې ټیکنالوژي خورا زیاته ګټوره ثابته شوې ده. عصري برېښنایي وسایل او ماشینونه جوړ شوي چې په روغتونونو کې د خلکو د درملنې کیفیت یې خورا لوړ کړی او د بېلابېلو ناروغیو پر وړاندې د هغوی د ژوندي پاتې کېدو چانسونه یې زیات کړي دي. د ټیکنالوژۍ بله لویه ګټه دا ده چې ډاکټرانو ته یې دا وړتیا ورکړې چې د روغتیا ډېری ستونزې په لومړیو مرحلو کې وپېژني او مخکې له دې چې پرمختللي او خطرناک حالت ته ورسیږي، د هغوی درملنه وکړي."
       },
       {
         "heading": "Section 3: Revolution in Global Communication and Digital Commerce",
@@ -9426,13 +11186,10 @@ const ENGLISH_DATA = [
         "urduTranslation": "2. دنیا بھر میں مواصلات اور رابطے اب انتہائی آسان ہو چکے ہیں۔ انٹرنیٹ کی ایجاد اور استعمال نے پوری دنیا کو ایک 'عالمی گاؤں' (گلوبل ولیج) میں تبدیل کر دیا ہے۔ دنیا کے مختلف جغرافیائی خطوں سے تعلق رکھنے والے افراد ویڈیو کالز، ای میلز اور سوشل میڈیا کے بے شمار پلیٹ فارمز کے ذریعے فوری رابطہ قائم کر سکتے ہیں۔ کاروباری اداروں نے اپنی مصنوعات کے لیے زیادہ سے زیادہ گاہک حاصل کرنے میں انٹرنیٹ کی زبردست طاقت کو پہچان لیا ہے؛ وہ کاروباری ویب سائٹس بنا رہے ہیں جہاں گاہک گھر بیٹھے صرف ایک کلک کے ذریعے اپنی پسندیدہ اشیاء خرید سکتے ہیں۔ ماضی میں رابطہ محض خط لکھنے اور ڈاک کے ذریعے پہنچنے کے طویل انتظار تک محدود تھا۔ آج ٹیکنالوجی نے پیغامات کا تبادلہ پلک جھپکتے میں ممکن بنا دیا ہے۔ اب آپ چند سیکنڈ میں کاروباری پیغام ای میل یا فیکس کر سکتے ہیں اور وصول کنندہ فوراً جواب دے سکتا ہے۔ اسی طرح دہائیوں کے دوران ٹیلی فون نے ترقی کی ہے اور پورٹیبل موبائل فونز نے مواصلات کو نئی بلندیوں تک پہنچا دیا ہے، جس میں رابطے کے ساتھ ساتھ گیمز اور تفریح کی سہولیات بھی شامل ہیں۔",
         "pashtoTranslation": "۲. په ټوله نړۍ کې اړیکې او مخابرات اوس خورا اسانه شوي دي. د انټرنیټ اختراع او کارونې نړۍ په یو 'نړیوال کلي' (ګلوبل ولیج) بدله کړې ده. د بېلابېلو جغرافیایي سیمو خلک کولی شي د ویډیو زنګونو، بریښنالیکونو او ټولنیزو رسنیو له لارې سمدستي اړیکه ونیسي. سوداګرو د خپلو محصولاتو لپاره د ډېرو پیرودونکو د راجلبولو په برخه کې د انټرنیټ ځواک درک کړی دی او داسې ویبپاڼې جوړوي چې پیرودونکي له خپلو کورونو په ارامه توګه شیان واخلي. په پخوا وختونو کې اړیکه یوازې د لیک په لیکلو او د پوستې د خدمتونو په انتظار پورې محدوده وه. نن تاسو کولی شئ په یوه ثانیه کې بریښنالیک ولېږئ او سمدستي ځواب ترلاسه کړئ. دغه راز ګرځنده ګرځنده ټیلیفونونو (موبایلونو) اړیکې خورا اسانه او په تفریحي اسانتیاوو لکه لوبو سمبال کړي دي.",
         "paras": [
-          "However, technology is a double-edged sword. Excessive screen time leads to physical ailments such as obesity, eye strain, insomnia, and sedentary lifestyle diseases.",
-          "Mentally, constant social media usage often induces anxiety, depression, cyberbullying, and diminished attention spans.",
-          "Furthermore, cybersecurity threats, data theft, online fraud, and loss of privacy pose grave risks.",
-          "To harness technology fruitfully, society must practice digital hygiene—balancing screen usage with physical outdoor activity, safeguarding personal data, and using digital tools as constructive servants rather than destructive masters."
+          "2. Communication across the globe is now easy. The invention and use of internet has changed the world into a global village. People hailing from different geographical regions can virtually communicate through video calls, e-mails as well as many social media platforms. Business owners have realized the power of using internet to achieve more customers for their products easily by creating business websites where customers click on the items to buy them in the comfort of their homes. In the past communication was limited to letter writing and waiting for postal services to deliver your message. Today technology has made communications easy. Now you can draft a business message and email it or fax in a second without any delays. The recipient will get the message and will reply you instantly. Similarly, telephone has evolved over the decades in terms of technology as the scientists have realized the need for people to communicate at anytime, anywhere. This necessity has led to invention of portable cellular phones which have taken communication a notch higher as people can network easily. The device is also fun to use as they are coupled with extraordinary entertainment features such as games."
         ],
-        "urdu": "تاہم ٹیکنالوجی دو دھاری تلوار ہے۔ اسکرین کا بے جا استعمال جسمانی بیماریوں مثلاً موٹاپے، نظر کی کمزوری، بے خوابی اور سست طرزِ زندگی کو جنم دیتا ہے۔ ذہنی طور پر سوشل میڈیا کا مسلسل استعمال اضطراب، مایوسی، آن لائن غنڈہ گردی (سائبر بلنگ) اور ارتکازِ توجہ کی کمی کا سبب بنتا ہے۔ اس کے علاوہ سائبر کرائم، ڈیٹا چوری، آن لائن فراڈ اور رازداری کا خاتمہ سنگین خطرات ہیں۔ ٹیکنالوجی سے حقیقی فائدہ اٹھانے کے لیے ہمیں ڈیجیٹل نظم و ضبط اپنانا ہوگا—اسکرین کے استعمال اور بیرونی جسمانی کھیلوں میں توازن قائم رکھنا ہوگا، اور ٹیکنالوجی کو اپنا آقا بنانے کے بجائے ایک مفید خادم کے طور پر استعمال کرنا ہوگا۔",
-        "pashto": "خو ټیکنالوژي دوه مخی توره ده. د سکرین ډیر کارول د سترګو د کمزورۍ، چاغوالي او بې خوبۍ لامل کیږي. په ذهني توګه د ټولنیزو رسنیو ډیر کارول د خفګان او ذهني فشار سبب ګرځي. انټرنیټي غلا او د معلوماتو پټول هم لوی ګواښونه دي. د ټیکنالوژۍ څخه د سمې ګټې اخیستنې لپاره باید اعتدال وساتو، ورزش وکړو او ټیکنالوژي د یو ګټور خادم په توګه وکاروو نه د خپل بادار په توګه."
+        "urdu": "2. دنیا بھر میں مواصلات اور رابطے اب انتہائی آسان ہو چکے ہیں۔ انٹرنیٹ کی ایجاد اور استعمال نے پوری دنیا کو ایک 'عالمی گاؤں' (گلوبل ولیج) میں تبدیل کر دیا ہے۔ دنیا کے مختلف جغرافیائی خطوں سے تعلق رکھنے والے افراد ویڈیو کالز، ای میلز اور سوشل میڈیا کے بے شمار پلیٹ فارمز کے ذریعے فوری رابطہ قائم کر سکتے ہیں۔ کاروباری اداروں نے اپنی مصنوعات کے لیے زیادہ سے زیادہ گاہک حاصل کرنے میں انٹرنیٹ کی زبردست طاقت کو پہچان لیا ہے؛ وہ کاروباری ویب سائٹس بنا رہے ہیں جہاں گاہک گھر بیٹھے صرف ایک کلک کے ذریعے اپنی پسندیدہ اشیاء خرید سکتے ہیں۔ ماضی میں رابطہ محض خط لکھنے اور ڈاک کے ذریعے پہنچنے کے طویل انتظار تک محدود تھا۔ آج ٹیکنالوجی نے پیغامات کا تبادلہ پلک جھپکتے میں ممکن بنا دیا ہے۔ اب آپ چند سیکنڈ میں کاروباری پیغام ای میل یا فیکس کر سکتے ہیں اور وصول کنندہ فوراً جواب دے سکتا ہے۔ اسی طرح دہائیوں کے دوران ٹیلی فون نے ترقی کی ہے اور پورٹیبل موبائل فونز نے مواصلات کو نئی بلندیوں تک پہنچا دیا ہے، جس میں رابطے کے ساتھ ساتھ گیمز اور تفریح کی سہولیات بھی شامل ہیں۔",
+        "pashto": "۲. په ټوله نړۍ کې اړیکې او مخابرات اوس خورا اسانه شوي دي. د انټرنیټ اختراع او کارونې نړۍ په یو 'نړیوال کلي' (ګلوبل ولیج) بدله کړې ده. د بېلابېلو جغرافیایي سیمو خلک کولی شي د ویډیو زنګونو، بریښنالیکونو او ټولنیزو رسنیو له لارې سمدستي اړیکه ونیسي. سوداګرو د خپلو محصولاتو لپاره د ډېرو پیرودونکو د راجلبولو په برخه کې د انټرنیټ ځواک درک کړی دی او داسې ویبپاڼې جوړوي چې پیرودونکي له خپلو کورونو په ارامه توګه شیان واخلي. په پخوا وختونو کې اړیکه یوازې د لیک په لیکلو او د پوستې د خدمتونو په انتظار پورې محدوده وه. نن تاسو کولی شئ په یوه ثانیه کې بریښنالیک ولېږئ او سمدستي ځواب ترلاسه کړئ. دغه راز ګرځنده ګرځنده ټیلیفونونو (موبایلونو) اړیکې خورا اسانه او په تفریحي اسانتیاوو لکه لوبو سمبال کړي دي."
       },
       {
         "heading": "Section 4: Paperless Data Storage, Cloud Security and Confidentiality",
@@ -9440,7 +11197,12 @@ const ENGLISH_DATA = [
         "headingPashto": "څلورمه برخه: د کاغذي اسنادو د بوج ختمول، ډیجیټل معلومات او د معلوماتو خوندیتوب",
         "text": "3. Another importance of technology in our daily lives is that it has eliminated the bulkiness associated with paperwork. With technology, information can now be stored virtually in various storage devices such as compact disks and microchips. More so, the information stored in these technological devices is secured with passwords and codes which are only known to the proprietors of the information, making it a better way of storing confidential information.",
         "urduTranslation": "3. ہماری روزمرہ زندگی میں ٹیکنالوجی کی ایک اور بڑی اہمیت یہ ہے کہ اس نے دفتری کاغذات اور فائلوں کے بوجھل پن کو ختم کر دیا ہے۔ ٹیکنالوجی کی بدولت معلومات اب کمپیکٹ ڈسکس (CDs)، مائیکرو چپس، ہارڈ ڈرائیوز اور کلاؤڈ میں ورچوئل طور پر محفوظ کی جا سکتی ہیں۔ اس کے علاوہ، ان تکنیکی آلات میں محفوظ شدہ ڈیٹا پاس ورڈز اور انکرپٹڈ کوڈز کے ذریعے محفوظ ہوتا ہے جو صرف معلومات کے مالکان کو معلوم ہوتے ہیں، جس سے خفیہ اور اہم دستاویزات کو محفوظ رکھنے کا یہ بہترین اور محفوظ ترین طریقہ بن چکا ہے۔",
-        "pashtoTranslation": "۳. زموږ په ورځني ژوند کې د ټیکنالوژۍ بل لوی اهمیت دا دی چې د کاغذونو او درنو دفتري دوسیو بوج یې له منځه وړی دی. د ټیکنالوژۍ په مرسته، معلومات اوس په مختلفو ډیجیټل وسیلو لکه کمپیکټ ډیسکونو او مایکرو چپسونو کې خوندي کیدی شي. سربېره پر دې، دا معلومات د پټو نومونو (پاسورډونو) او کوډونو له لارې خوندي کیږي چې یوازې د معلوماتو خاوندانو ته معلوم وي، چې دا د محرمو او راز لرونکو معلوماتو د ساتنې غوره لاره ده."
+        "pashtoTranslation": "۳. زموږ په ورځني ژوند کې د ټیکنالوژۍ بل لوی اهمیت دا دی چې د کاغذونو او درنو دفتري دوسیو بوج یې له منځه وړی دی. د ټیکنالوژۍ په مرسته، معلومات اوس په مختلفو ډیجیټل وسیلو لکه کمپیکټ ډیسکونو او مایکرو چپسونو کې خوندي کیدی شي. سربېره پر دې، دا معلومات د پټو نومونو (پاسورډونو) او کوډونو له لارې خوندي کیږي چې یوازې د معلوماتو خاوندانو ته معلوم وي، چې دا د محرمو او راز لرونکو معلوماتو د ساتنې غوره لاره ده.",
+        "paras": [
+          "3. Another importance of technology in our daily lives is that it has eliminated the bulkiness associated with paperwork. With technology, information can now be stored virtually in various storage devices such as compact disks and microchips. More so, the information stored in these technological devices is secured with passwords and codes which are only known to the proprietors of the information, making it a better way of storing confidential information."
+        ],
+        "urdu": "3. ہماری روزمرہ زندگی میں ٹیکنالوجی کی ایک اور بڑی اہمیت یہ ہے کہ اس نے دفتری کاغذات اور فائلوں کے بوجھل پن کو ختم کر دیا ہے۔ ٹیکنالوجی کی بدولت معلومات اب کمپیکٹ ڈسکس (CDs)، مائیکرو چپس، ہارڈ ڈرائیوز اور کلاؤڈ میں ورچوئل طور پر محفوظ کی جا سکتی ہیں۔ اس کے علاوہ، ان تکنیکی آلات میں محفوظ شدہ ڈیٹا پاس ورڈز اور انکرپٹڈ کوڈز کے ذریعے محفوظ ہوتا ہے جو صرف معلومات کے مالکان کو معلوم ہوتے ہیں، جس سے خفیہ اور اہم دستاویزات کو محفوظ رکھنے کا یہ بہترین اور محفوظ ترین طریقہ بن چکا ہے۔",
+        "pashto": "۳. زموږ په ورځني ژوند کې د ټیکنالوژۍ بل لوی اهمیت دا دی چې د کاغذونو او درنو دفتري دوسیو بوج یې له منځه وړی دی. د ټیکنالوژۍ په مرسته، معلومات اوس په مختلفو ډیجیټل وسیلو لکه کمپیکټ ډیسکونو او مایکرو چپسونو کې خوندي کیدی شي. سربېره پر دې، دا معلومات د پټو نومونو (پاسورډونو) او کوډونو له لارې خوندي کیږي چې یوازې د معلوماتو خاوندانو ته معلوم وي، چې دا د محرمو او راز لرونکو معلوماتو د ساتنې غوره لاره ده."
       },
       {
         "heading": "Section 5: Agricultural Biotechnology, Genetic Engineering and Crop Resilience",
@@ -9448,7 +11210,12 @@ const ENGLISH_DATA = [
         "headingPashto": "پنځمه برخه: کرهنیزه بایوټیکنالوژي، جینیتیکي انجینري او په دښتو کې کښتونه",
         "text": "4. We cannot fail to mention that technology has been of great benefit to agricultural industry. It's now possible to determine the climatic changes as well as climatic conditions that favour various plants. Likewise, today it is possible to grow crops in a desert by use of agricultural biotechnology. With biotechnology, plants have been engineered to survive in drought conditions. Through genetic engineering scientists have managed to introduce traits into existing genes with a goal of making crops resistant to droughts and pests.",
         "urduTranslation": "4. ہم اس بات کا ذکر کیے بغیر نہیں رہ سکتے کہ ٹیکنالوجی نے زرعی صنعت کو بے پناہ فائدہ پہنچایا ہے۔ اب موسمیاتی تبدیلیوں اور مختلف پودوں کے لیے موافق موسمی حالات کا پہلے سے درست اندازہ لگانا ممکن ہو چکا ہے۔ اسی طرح آج زرعی بائیو ٹیکنالوجی کے استعمال سے صحرا اور بنجر زمینوں میں بھی فصلیں اگانا ممکن ہو گیا ہے۔ بائیو ٹیکنالوجی کی مدد سے پودوں کی ایسی اقسام تیار کی گئی ہیں جو شدید خشک سالی میں بھی زندہ رہ سکتی ہیں۔ جینیاتی انجینئرنگ (Genetic Engineering) کے ذریعے سائنسدان پودوں کے جینز میں ایسی خصوصیات شامل کرنے میں کامیاب ہو چکے ہیں جن کا مقصد فصلوں کو خشک سالی اور کیڑوں مکوڑوں کے خلاف مزاحم بنانا ہے۔",
-        "pashtoTranslation": "۴. موږ نشو کولی د کرنې په صنعت کې د ټیکنالوژۍ سترې ګټې هېرې کړو. اوس د اقلیمي بدلونونو او د هغو شرایطو ټاکل ممکن شوي چې د بېلابېلو نباتاتو لپاره ګټور دي. دغه راز، نن د کرنیزې بایوټیکنالوژۍ په کارولو سره په دښتو کې هم د فصلونو کرل ممکن شوي دي. د بایوټیکنالوژۍ له لارې نباتات داسې جوړ شوي چې په سخته وچکالۍ کې ژوندي پاتې شي. د جینیتیکي انجینرۍ له لارې، ساینس پوهان توانیدلي چې په جینونو کې داسې ځانګړتیاوې داخل کړي چې فصلونه د وچکالۍ او ناروغیو په وړاندې مقاومت ولري."
+        "pashtoTranslation": "۴. موږ نشو کولی د کرنې په صنعت کې د ټیکنالوژۍ سترې ګټې هېرې کړو. اوس د اقلیمي بدلونونو او د هغو شرایطو ټاکل ممکن شوي چې د بېلابېلو نباتاتو لپاره ګټور دي. دغه راز، نن د کرنیزې بایوټیکنالوژۍ په کارولو سره په دښتو کې هم د فصلونو کرل ممکن شوي دي. د بایوټیکنالوژۍ له لارې نباتات داسې جوړ شوي چې په سخته وچکالۍ کې ژوندي پاتې شي. د جینیتیکي انجینرۍ له لارې، ساینس پوهان توانیدلي چې په جینونو کې داسې ځانګړتیاوې داخل کړي چې فصلونه د وچکالۍ او ناروغیو په وړاندې مقاومت ولري.",
+        "paras": [
+          "4. We cannot fail to mention that technology has been of great benefit to agricultural industry. It's now possible to determine the climatic changes as well as climatic conditions that favour various plants. Likewise, today it is possible to grow crops in a desert by use of agricultural biotechnology. With biotechnology, plants have been engineered to survive in drought conditions. Through genetic engineering scientists have managed to introduce traits into existing genes with a goal of making crops resistant to droughts and pests."
+        ],
+        "urdu": "4. ہم اس بات کا ذکر کیے بغیر نہیں رہ سکتے کہ ٹیکنالوجی نے زرعی صنعت کو بے پناہ فائدہ پہنچایا ہے۔ اب موسمیاتی تبدیلیوں اور مختلف پودوں کے لیے موافق موسمی حالات کا پہلے سے درست اندازہ لگانا ممکن ہو چکا ہے۔ اسی طرح آج زرعی بائیو ٹیکنالوجی کے استعمال سے صحرا اور بنجر زمینوں میں بھی فصلیں اگانا ممکن ہو گیا ہے۔ بائیو ٹیکنالوجی کی مدد سے پودوں کی ایسی اقسام تیار کی گئی ہیں جو شدید خشک سالی میں بھی زندہ رہ سکتی ہیں۔ جینیاتی انجینئرنگ (Genetic Engineering) کے ذریعے سائنسدان پودوں کے جینز میں ایسی خصوصیات شامل کرنے میں کامیاب ہو چکے ہیں جن کا مقصد فصلوں کو خشک سالی اور کیڑوں مکوڑوں کے خلاف مزاحم بنانا ہے۔",
+        "pashto": "۴. موږ نشو کولی د کرنې په صنعت کې د ټیکنالوژۍ سترې ګټې هېرې کړو. اوس د اقلیمي بدلونونو او د هغو شرایطو ټاکل ممکن شوي چې د بېلابېلو نباتاتو لپاره ګټور دي. دغه راز، نن د کرنیزې بایوټیکنالوژۍ په کارولو سره په دښتو کې هم د فصلونو کرل ممکن شوي دي. د بایوټیکنالوژۍ له لارې نباتات داسې جوړ شوي چې په سخته وچکالۍ کې ژوندي پاتې شي. د جینیتیکي انجینرۍ له لارې، ساینس پوهان توانیدلي چې په جینونو کې داسې ځانګړتیاوې داخل کړي چې فصلونه د وچکالۍ او ناروغیو په وړاندې مقاومت ولري."
       },
       {
         "heading": "Section 6: Harnessing Renewable Energy and Modern Rapid Transportation",
@@ -9456,7 +11223,14 @@ const ENGLISH_DATA = [
         "headingPashto": "شپږمه برخه: د طبیعي ځواکونو کابو کول، نوې کېدونکې انرژي او چټک ترانسپورت",
         "text": "5. Natural forces affect and disrupt human life and daily economic activities. For example floods wash away farmland and homes, they carry out fertile top soil and disrupt the growth of crops. Also fires burn buildings, crops and forests which affect human life. However, technology has enabled humans to build large dams which can harbor excess water and use that water to generate power. Also fire is tamed to heat our homes and process industrial materials. Wind is being used to generate electricity. We have converted solar energy to power which is being used in homes and businesses.\n\n6. Transportation is one of the basic areas of technological activity. Both businesses and individuals have benefitted from the new technologies in the travel industry. Time is money, so we must have fast and efficient means of transport. Try to imagine life without well-developed transportation systems. I think of transportation in the same light as food, clothing and shelter. It has become a basic need, because we use advanced transport means like cars, trains and airplanes to go to work, to transport goods, to go shopping, to visit friends and families and so much more. However, in recent times the transportation technology has become very fast and efficient.\n\nThe positive effects of technology on society has brought progress and allowed us to reach new heights that were never conceived of before. Without science and technology we are left stagnant.",
         "urduTranslation": "5. قدرتی قوتیں اور آفات انسانی زندگی اور روزمرہ کی معاشی سرگرمیوں کو شدید متاثر اور درہم برہم کرتی ہیں۔ مثلاً سیلاب زرعی زمینوں اور گھروں کو بہا لے جاتے ہیں، زرخیز مٹی کی اوپری تہہ کو تباہ کرتے ہیں اور فصلوں کی پیداوار روک دیتے ہیں۔ اسی طرح آگ عمارتوں، فصلوں اور جنگلات کو جلا دیتی ہے۔ تاہم ٹیکنالوجی نے انسان کو بڑے ڈیم بنانے کے قابل بنایا ہے جو اضافی پانی کو ذخیرہ کرتے ہیں اور پن بجلی پیدا کرنے کے لیے استعمال ہوتے ہیں۔ آگ کو گھروں کو گرم رکھنے اور صنعتی اشیاء تیار کرنے کے لیے قابو کیا گیا ہے۔ ہوا (Wind Energy) سے بجلی پیدا کی جا رہی ہے اور شمسی توانائی (Solar Energy) کو بجلی میں تبدیل کر کے گھروں اور کاروباروں میں استعمال کیا جا رہا ہے۔\n\n6. ٹرانسپورٹیشن ٹیکنالوجی کے بنیادی ترین شعبوں میں سے ایک ہے۔ سفری صنعت میں نئی ایجادات سے کاروباری اداروں اور عام شہریوں دونوں کو زبردست فائدہ ہوا ہے۔ وقت ہی دولت ہے، اس لیے ہمارے پاس تیز رفتار اور موثر ذرائع نقل و حمل ہونے چاہئیں۔ ایک لمحے کے لیے جدید ٹرانسپورٹ کے بغیر زندگی کا تصور کریں۔ ٹرانسپورٹ اب خوراک، لباس اور مکان کی طرح ایک بنیادی ضرورت بن چکی ہے، کیونکہ ہم کام پر جانے، سامان کی ترسیل، خریداری اور عزیز و اقارب سے ملنے کے لیے کاروں، ٹرینوں اور ہوائی جہازوں کا استعمال کرتے ہیں۔\n\nمعاشرے پر ٹیکنالوجی کے مثبت اثرات نے شاندار ترقی کی راہیں کھولی ہیں اور ہمیں ان بلندیوں تک پہنچایا ہے جن کا تصور ماضی میں ممکن نہیں تھا۔ سائنس اور ٹیکنالوجی کے بغیر انسانیت جمود کا شکار ہو کر رہ جائے گی۔",
-        "pashtoTranslation": "۵. طبیعي آفتونه د انسان ژوند او ورځني اقتصادي فعالیتونه زیانمنوي. د بېلګې په توګه سیلابونه کرنیزې ځمکې او کورونه ویجاړوي، زرخیزه خاوره وړي او د فصلونو وده دروي. همدارنګه اورونه ودانۍ او ځنګلونه سوځوي. خو ټیکنالوژۍ انسانانو ته دا توان ورکړی چې لوی بندونه جوړ کړي چې اضافي اوبه وساتي او برېښنا ترې تولید کړي. دغه راز باد او لمریزه انرژي (سولر) په برېښنا بدله شوې او په کورونو او فابریکو کې کارول کیږي.\n\n۶. ترانسپورت د ټیکنالوژۍ یو له بنسټیزو برخو څخه دی. سوداګرۍ او عام خلک دواړه د سفر له نویو اسانتیاوو ګټه اخلي. وخت پیسې او ارزښت لري، نو موږ باید چټک او اغیزمن ترانسپورت ولرو. د ترانسپورت پرته د ژوند تصور وکړئ؛ دا اوس د خوړو، جامو او سرپناه په څېر یوه اساسي اړتیا ګرځېدلې ده. موږ د کار ځای ته د تګ، د توکو د انتقال، پیرودلو او د کورنیو لیدو لپاره له موټرو، ریل ګاډو او الوتکو ګټه اخلو.\n\nپه ټولنه د ټیکنالوژۍ مثبتو اغیزو ستر پرمختګ راوړی او موږ یې هغو لوړو پوړونو ته رسولي یو چې پخوا یې تصور هم نه کېده. بې له ساینس او ټیکنالوژۍ موږ به بې حرکته او وروسته پاتې یو."
+        "pashtoTranslation": "۵. طبیعي آفتونه د انسان ژوند او ورځني اقتصادي فعالیتونه زیانمنوي. د بېلګې په توګه سیلابونه کرنیزې ځمکې او کورونه ویجاړوي، زرخیزه خاوره وړي او د فصلونو وده دروي. همدارنګه اورونه ودانۍ او ځنګلونه سوځوي. خو ټیکنالوژۍ انسانانو ته دا توان ورکړی چې لوی بندونه جوړ کړي چې اضافي اوبه وساتي او برېښنا ترې تولید کړي. دغه راز باد او لمریزه انرژي (سولر) په برېښنا بدله شوې او په کورونو او فابریکو کې کارول کیږي.\n\n۶. ترانسپورت د ټیکنالوژۍ یو له بنسټیزو برخو څخه دی. سوداګرۍ او عام خلک دواړه د سفر له نویو اسانتیاوو ګټه اخلي. وخت پیسې او ارزښت لري، نو موږ باید چټک او اغیزمن ترانسپورت ولرو. د ترانسپورت پرته د ژوند تصور وکړئ؛ دا اوس د خوړو، جامو او سرپناه په څېر یوه اساسي اړتیا ګرځېدلې ده. موږ د کار ځای ته د تګ، د توکو د انتقال، پیرودلو او د کورنیو لیدو لپاره له موټرو، ریل ګاډو او الوتکو ګټه اخلو.\n\nپه ټولنه د ټیکنالوژۍ مثبتو اغیزو ستر پرمختګ راوړی او موږ یې هغو لوړو پوړونو ته رسولي یو چې پخوا یې تصور هم نه کېده. بې له ساینس او ټیکنالوژۍ موږ به بې حرکته او وروسته پاتې یو.",
+        "paras": [
+          "5. Natural forces affect and disrupt human life and daily economic activities. For example floods wash away farmland and homes, they carry out fertile top soil and disrupt the growth of crops. Also fires burn buildings, crops and forests which affect human life. However, technology has enabled humans to build large dams which can harbor excess water and use that water to generate power. Also fire is tamed to heat our homes and process industrial materials. Wind is being used to generate electricity. We have converted solar energy to power which is being used in homes and businesses.",
+          "6. Transportation is one of the basic areas of technological activity. Both businesses and individuals have benefitted from the new technologies in the travel industry. Time is money, so we must have fast and efficient means of transport. Try to imagine life without well-developed transportation systems. I think of transportation in the same light as food, clothing and shelter. It has become a basic need, because we use advanced transport means like cars, trains and airplanes to go to work, to transport goods, to go shopping, to visit friends and families and so much more. However, in recent times the transportation technology has become very fast and efficient.",
+          "The positive effects of technology on society has brought progress and allowed us to reach new heights that were never conceived of before. Without science and technology we are left stagnant."
+        ],
+        "urdu": "5. قدرتی قوتیں اور آفات انسانی زندگی اور روزمرہ کی معاشی سرگرمیوں کو شدید متاثر اور درہم برہم کرتی ہیں۔ مثلاً سیلاب زرعی زمینوں اور گھروں کو بہا لے جاتے ہیں، زرخیز مٹی کی اوپری تہہ کو تباہ کرتے ہیں اور فصلوں کی پیداوار روک دیتے ہیں۔ اسی طرح آگ عمارتوں، فصلوں اور جنگلات کو جلا دیتی ہے۔ تاہم ٹیکنالوجی نے انسان کو بڑے ڈیم بنانے کے قابل بنایا ہے جو اضافی پانی کو ذخیرہ کرتے ہیں اور پن بجلی پیدا کرنے کے لیے استعمال ہوتے ہیں۔ آگ کو گھروں کو گرم رکھنے اور صنعتی اشیاء تیار کرنے کے لیے قابو کیا گیا ہے۔ ہوا (Wind Energy) سے بجلی پیدا کی جا رہی ہے اور شمسی توانائی (Solar Energy) کو بجلی میں تبدیل کر کے گھروں اور کاروباروں میں استعمال کیا جا رہا ہے۔\n\n6. ٹرانسپورٹیشن ٹیکنالوجی کے بنیادی ترین شعبوں میں سے ایک ہے۔ سفری صنعت میں نئی ایجادات سے کاروباری اداروں اور عام شہریوں دونوں کو زبردست فائدہ ہوا ہے۔ وقت ہی دولت ہے، اس لیے ہمارے پاس تیز رفتار اور موثر ذرائع نقل و حمل ہونے چاہئیں۔ ایک لمحے کے لیے جدید ٹرانسپورٹ کے بغیر زندگی کا تصور کریں۔ ٹرانسپورٹ اب خوراک، لباس اور مکان کی طرح ایک بنیادی ضرورت بن چکی ہے، کیونکہ ہم کام پر جانے، سامان کی ترسیل، خریداری اور عزیز و اقارب سے ملنے کے لیے کاروں، ٹرینوں اور ہوائی جہازوں کا استعمال کرتے ہیں۔\n\nمعاشرے پر ٹیکنالوجی کے مثبت اثرات نے شاندار ترقی کی راہیں کھولی ہیں اور ہمیں ان بلندیوں تک پہنچایا ہے جن کا تصور ماضی میں ممکن نہیں تھا۔ سائنس اور ٹیکنالوجی کے بغیر انسانیت جمود کا شکار ہو کر رہ جائے گی۔",
+        "pashto": "۵. طبیعي آفتونه د انسان ژوند او ورځني اقتصادي فعالیتونه زیانمنوي. د بېلګې په توګه سیلابونه کرنیزې ځمکې او کورونه ویجاړوي، زرخیزه خاوره وړي او د فصلونو وده دروي. همدارنګه اورونه ودانۍ او ځنګلونه سوځوي. خو ټیکنالوژۍ انسانانو ته دا توان ورکړی چې لوی بندونه جوړ کړي چې اضافي اوبه وساتي او برېښنا ترې تولید کړي. دغه راز باد او لمریزه انرژي (سولر) په برېښنا بدله شوې او په کورونو او فابریکو کې کارول کیږي.\n\n۶. ترانسپورت د ټیکنالوژۍ یو له بنسټیزو برخو څخه دی. سوداګرۍ او عام خلک دواړه د سفر له نویو اسانتیاوو ګټه اخلي. وخت پیسې او ارزښت لري، نو موږ باید چټک او اغیزمن ترانسپورت ولرو. د ترانسپورت پرته د ژوند تصور وکړئ؛ دا اوس د خوړو، جامو او سرپناه په څېر یوه اساسي اړتیا ګرځېدلې ده. موږ د کار ځای ته د تګ، د توکو د انتقال، پیرودلو او د کورنیو لیدو لپاره له موټرو، ریل ګاډو او الوتکو ګټه اخلو.\n\nپه ټولنه د ټیکنالوژۍ مثبتو اغیزو ستر پرمختګ راوړی او موږ یې هغو لوړو پوړونو ته رسولي یو چې پخوا یې تصور هم نه کېده. بې له ساینس او ټیکنالوژۍ موږ به بې حرکته او وروسته پاتې یو."
       }
     ],
     "urduSummary": "یہ سبق روزمرہ زندگی کے تمام اہم شعبوں میں جدید ٹیکنالوجی کے انقلابی اثرات کا احاطہ کرتا ہے۔ طبی شعبے میں جدید مشینوں اور کمپیوٹرائزڈ تشخیصی نظام نے بیماریوں کا قبل از وقت سراغ لگا کر انسانی جانیں بچائی ہیں۔ مواصلات میں انٹرنیٹ اور اسمارٹ فونز نے دنیا کو ایک گلوبل ولیج بنا دیا ہے جبکہ کاغذی فائلوں کی جگہ محفوظ ڈیجیٹل ڈیٹا اور کلاؤڈ اسٹوریج نے لے لی ہے۔ زرعی بائیو ٹیکنالوجی اور جینیاتی انجینئرنگ نے خشک سالی اور کیڑوں کے خلاف مزاحم فصلیں پیدا کر کے صحراؤں کو زرخیز بنا دیا ہے۔ انسان نے ڈیموں، پن بجلی، شمسی اور ہوائی توانائی کے ذریعے قدرتی آفات پر قابو پایا ہے جبکہ تیز رفتار ٹرانسپورٹ نے وقت اور فاصلے سمیٹ دیے ہیں۔ سائنس اور ٹیکنالوجی ہی جدید دور میں انسانی ترقی اور بقا کی بنیادی ضامن ہے۔",
@@ -9467,69 +11241,91 @@ const ENGLISH_DATA = [
       "glossaryTable": [
         {
           "word": "disrupt",
-          "pos": "verb",
-          "meaning": "to make it difficult for something to continue in the normal way; interrupt or disorder",
-          "example": "Severe floods can disrupt daily economic activities."
+          "pos": "",
+          "meaning": "to make it difficult for something to continue in the normal way",
+          "urdu": "خلل ڈالنا",
+          "pashto": "ګډوډول",
+          "sourceMeaning": true
         },
         {
           "word": "benefit",
-          "pos": "noun / verb",
-          "meaning": "an advantage that something gives you; a helpful and useful effect",
-          "example": "Farmers reaped great benefit from modern irrigation technology."
+          "pos": "",
+          "meaning": "an advantage that something gives you; a helpful and useful effect that something has",
+          "urdu": "فائدہ",
+          "pashto": "ګټه",
+          "sourceMeaning": true
         },
         {
           "word": "drought",
-          "pos": "noun",
+          "pos": "",
           "meaning": "a long period of time when there is little or no rain",
-          "example": "The genetically modified seeds survived the prolonged drought."
+          "urdu": "خشک سالی",
+          "pashto": "وچکالي",
+          "sourceMeaning": true
         },
         {
           "word": "proprietors",
-          "pos": "noun",
-          "meaning": "the owner of a business, information, hotel, or property",
-          "example": "Only the authorized proprietors possess the encryption passwords."
+          "pos": "",
+          "meaning": "the owner of a business, a hotel, etc.",
+          "urdu": "مالکان",
+          "pashto": "مالکان",
+          "sourceMeaning": true
         },
         {
           "word": "traits",
-          "pos": "noun",
-          "meaning": "a particular distinguishing quality or characteristic in living things",
-          "example": "Scientists introduced pest-resistant traits into wheat genes."
+          "pos": "",
+          "meaning": "a particular quality in your personality",
+          "urdu": "خصوصیات",
+          "pashto": "ځانګړتیاوې",
+          "sourceMeaning": true
         },
         {
           "word": "genes",
-          "pos": "noun",
-          "meaning": "a unit inside a cell which controls hereditary characteristics passed from parents",
-          "example": "Gene editing allows scientists to enhance crop vitality."
+          "pos": "",
+          "meaning": "a unit inside a cell which controls a particular quality in a living thing that has been passed on from its parents",
+          "urdu": "جین (موروثی اکائیاں)",
+          "pashto": "جینونه",
+          "sourceMeaning": true
         },
         {
           "word": "notch",
-          "pos": "noun",
-          "meaning": "a level on a scale, often marking higher quality, achievement, or degree",
-          "example": "Smartphones took global telecommunication a notch higher."
+          "pos": "",
+          "meaning": "a level on a scale, often marking quality or achievement",
+          "urdu": "درجہ",
+          "pashto": "درجه",
+          "sourceMeaning": true
         },
         {
           "word": "ailments",
-          "pos": "noun",
-          "meaning": "an illness or medical disorder that affects health",
-          "example": "Early diagnostic scans protect patients from chronic ailments."
+          "pos": "",
+          "meaning": "an illness that is not very serious",
+          "urdu": "بیماریاں، عارضے",
+          "pashto": "ناروغۍ",
+          "sourceMeaning": true
         },
         {
           "word": "bulkiness",
-          "pos": "noun",
-          "meaning": "the quality of being large, heavy, and difficult to move, store, or carry",
-          "example": "Microchips eliminated the bulkiness of maintaining paper records."
+          "pos": "",
+          "meaning": "large and difficult to move or carry",
+          "urdu": "بھاری پن، ضخامت",
+          "pashto": "درنوالی، غټوالی",
+          "sourceMeaning": true
         },
         {
           "word": "conceive",
-          "pos": "verb",
-          "meaning": "to form an idea, concept, or plan in your mind; to imagine",
-          "example": "Modern aviation reached speeds that were never conceived before."
+          "pos": "",
+          "meaning": "to form an idea, a plan, etc. in your mind; to imagine something",
+          "urdu": "تصور کرنا",
+          "pashto": "تصور کول",
+          "sourceMeaning": true
         },
         {
           "word": "stagnant",
-          "pos": "adjective",
-          "meaning": "not developing, growing, moving, or changing; inactive",
-          "example": "Without scientific innovation, nations remain economically stagnant."
+          "pos": "",
+          "meaning": "not developing, growing or changing",
+          "urdu": "جامد، ٹھہرا ہوا",
+          "pashto": "ولاړ، نه پرمختلونکی",
+          "sourceMeaning": true
         }
       ],
       "comprehension": [
@@ -10380,7 +12176,8 @@ const ENGLISH_DATA = [
           "2. Expressing Constructive Concern: Excessive screen time and social media addiction can diminish face-to-face family bonding.",
           "3. Expressing Polite Agreement / Disagreement: 'I completely agree that technology saves time, but we must use it responsibly without neglecting our health.'"
         ],
-        "sampleDialogue": "Student A: 'Technology has made student life remarkably easier through online research and digital libraries.'\nStudent B: 'I agree with you to a great extent. However, we must also be cautious about cyber distractions and ensure we maintain a healthy balance between screen time and outdoor physical activities.'"
+        "sampleDialogue": "Student A: 'Technology has made student life remarkably easier through online research and digital libraries.'\nStudent B: 'I agree with you to a great extent. However, we must also be cautious about cyber distractions and ensure we maintain a healthy balance between screen time and outdoor physical activities.'",
+        "prompt": "Share with the class your point of view about 'Contribution of Technology in our Daily Life'. Express satisfaction/ dissatisfaction, approval/ disapproval, and agreement/ disagreement (fully and partially) politely."
       },
       "grammar": [
         {
@@ -10709,7 +12506,164 @@ const ENGLISH_DATA = [
       "Develop cybersecurity awareness and practical guidelines for digital hygiene.",
       "Write a formal argumentative essay on technology and educational ethics.",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "use pre-reading strategies to predict the content of a text from topic / picture / title / headings, key words and visuals etc. by using prior knowledge, asking questions and contextual clues.",
+      "translate passages from English to Urdu: use the knowledge of literal and figurative meaning, grammatical gender and syntax to translate passage from English to Urdu; understand that most phrases and idioms do not translate literally from one language to another.",
+      "apply critical thinking to interact with text and use intensive reading strategies to scan to answer short questions.",
+      "use summary skills to extract salient points and develop a mind map to summarize a text.",
+      "analyze sentences for clauses and phrases.",
+      "identify and differentiate between main, subordinate and relative clauses.",
+      "use dictionary to: choose appropriate word definition; identify part of speech; recognize abbreviation used in a dictionary; locate antonyms in a thesaurus.",
+      "demonstrate use of phrases and clauses."
+    ],
+    "preReading": [
+      {
+        "q": "What comes in your mind when you hear the word technology?",
+        "a": "Pre-reading question (PDF 104)"
+      },
+      {
+        "q": "When do you think technology began?",
+        "a": "Pre-reading question (PDF 104)"
+      },
+      {
+        "q": "Name a few technological things that we use in our daily life.",
+        "a": "Pre-reading question (PDF 104)"
+      }
+    ],
+    "glossary": [
+      {
+        "word": "disrupt",
+        "pos": "",
+        "meaning": "to make it difficult for something to continue in the normal way",
+        "urdu": "خلل ڈالنا",
+        "pashto": "ګډوډول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "benefit",
+        "pos": "",
+        "meaning": "an advantage that something gives you; a helpful and useful effect that something has",
+        "urdu": "فائدہ",
+        "pashto": "ګټه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "drought",
+        "pos": "",
+        "meaning": "a long period of time when there is little or no rain",
+        "urdu": "خشک سالی",
+        "pashto": "وچکالي",
+        "sourceMeaning": true
+      },
+      {
+        "word": "proprietors",
+        "pos": "",
+        "meaning": "the owner of a business, a hotel, etc.",
+        "urdu": "مالکان",
+        "pashto": "مالکان",
+        "sourceMeaning": true
+      },
+      {
+        "word": "traits",
+        "pos": "",
+        "meaning": "a particular quality in your personality",
+        "urdu": "خصوصیات",
+        "pashto": "ځانګړتیاوې",
+        "sourceMeaning": true
+      },
+      {
+        "word": "genes",
+        "pos": "",
+        "meaning": "a unit inside a cell which controls a particular quality in a living thing that has been passed on from its parents",
+        "urdu": "جین (موروثی اکائیاں)",
+        "pashto": "جینونه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "notch",
+        "pos": "",
+        "meaning": "a level on a scale, often marking quality or achievement",
+        "urdu": "درجہ",
+        "pashto": "درجه",
+        "sourceMeaning": true
+      },
+      {
+        "word": "ailments",
+        "pos": "",
+        "meaning": "an illness that is not very serious",
+        "urdu": "بیماریاں، عارضے",
+        "pashto": "ناروغۍ",
+        "sourceMeaning": true
+      },
+      {
+        "word": "bulkiness",
+        "pos": "",
+        "meaning": "large and difficult to move or carry",
+        "urdu": "بھاری پن، ضخامت",
+        "pashto": "درنوالی، غټوالی",
+        "sourceMeaning": true
+      },
+      {
+        "word": "conceive",
+        "pos": "",
+        "meaning": "to form an idea, a plan, etc. in your mind; to imagine something",
+        "urdu": "تصور کرنا",
+        "pashto": "تصور کول",
+        "sourceMeaning": true
+      },
+      {
+        "word": "stagnant",
+        "pos": "",
+        "meaning": "not developing, growing or changing",
+        "urdu": "جامد، ٹھہرا ہوا",
+        "pashto": "ولاړ، نه پرمختلونکی",
+        "sourceMeaning": true
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116
+      ],
+      "printedPages": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "notes": [
+        "Sections 1-3 displayed invented text (digital-age essay, double-edged-sword paragraph) that is not in the book; the displayed paragraphs are replaced with the book text already stored in the \"text\" field, and Urdu/Pashto fields aligned with its stored translations.",
+        "authorInfo described an invented lesson summary; the book prints no author name (PDF 103).",
+        "Learning outcomes (PDF 103), pre-reading questions (PDF 104) and printed glossary meanings (PDF 107) added; Urdu/Pashto glossary meanings are SpaceBook translations.",
+        "Listening & speaking prompt was empty; restored from PDF 110.",
+        "Comprehension A1-7, MCQ B1-5, C, vocabulary A-B, writing A-C, phrase/clause grammar and Revision Exercises 1-13 match the book."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   },
   {
     "number": 11,
@@ -10717,8 +12671,8 @@ const ENGLISH_DATA = [
     "titleUrdu": "حفاظت سب سے پہلے (ابتدائی طبی امداد)",
     "titlePashto": "لومړی خوندیتوب (لومړنۍ مرستې)",
     "type": "dialogue",
-    "author": "Prof. Hamidullah Khan & Aamna Aamad (KPK Textbook Board Peshawar)",
-    "authorInfo": "Pre-Reading & Conceptual Background:\nFirst Aid represents the immediate assistance provided to any person suffering from either a minor or serious illness or injury, with care provided to preserve life, prevent the condition from worsening, or to promote recovery. This dialogue between Asim and Babar imparts essential emergency life-saving skills, household First Aid Kit preparation, and critical protocols for burns, choking, severe bleeding, heart attack, and nosebleeds.\n\nKey Competencies & SLOs:\n• Understand and apply first-aid procedures for household and school emergencies.\n• Identify and correctly use punctuation marks: comma (subordinate/coordinate clauses), colon (antithesis/lists), semicolon (compound sentences/conjunctive adverbs).\n• Master capitalization rules and rectify faulty punctuation in text.\n• Distinguish fine semantic shades between word pairs (look/search, buy/purchase, hide/conceal, learn/educate, reward/award).\n• Translate unseen passages accurately between Urdu and English.",
+    "author": "",
+    "authorInfo": "The book prints no author name for this unit (PDF 117).",
     "sections": [
       {
         "heading": "1. Introduction to First Aid & The First Aider's Role",
@@ -10809,73 +12763,83 @@ const ENGLISH_DATA = [
     "glossary": [
       {
         "word": "collapses",
-        "pos": "verb",
-        "meaning": "to fall down or fall in suddenly, often after breaking apart or becoming unconscious",
-        "urdu": "اچانک گر جانا / بے ہوش ہو کر ڈھ جانا",
-        "pashto": "ناڅاپه رالویدل / بې هوښه کیدل"
+        "pos": "",
+        "meaning": "to fall down or fall in suddenly, often after breaking apart",
+        "urdu": "گر پڑتا ہے",
+        "pashto": "پرځېږي",
+        "sourceMeaning": true
       },
       {
         "word": "choking",
-        "pos": "verb / noun",
+        "pos": "",
         "meaning": "to be unable to breathe because the passage to your lungs is blocked or you cannot get enough air; to make somebody unable to breathe",
-        "urdu": "دم گھٹنا / سانس رک جانا / گلے میں لقمہ پھنسنا",
-        "pashto": "ساه بندیدل / په ستوني کې د شی نښتل"
+        "urdu": "دم گھٹنا",
+        "pashto": "ساه بندېدل",
+        "sourceMeaning": true
       },
       {
         "word": "thrust",
-        "pos": "noun / verb",
+        "pos": "",
         "meaning": "to push something/somebody suddenly or violently in a particular direction; to move quickly and suddenly in a particular direction",
-        "urdu": "زور دار جھٹکا / اچانک اور زور سے آگے یا اوپر کی طرف دھکیلنا",
-        "pashto": "زورور ټکان / په چټکۍ سره مخکې یا پورته ټیله کول"
+        "urdu": "زور سے دھکیلنا",
+        "pashto": "په زور ټېلول",
+        "sourceMeaning": true
       },
       {
         "word": "elevate",
-        "pos": "verb",
-        "meaning": "to give somebody/something a higher position or rank; to raise up above the level of the heart",
-        "urdu": "اوپر اٹھانا / بلند کرنا",
-        "pashto": "پورته کول / لوړ ساتل"
+        "pos": "",
+        "meaning": "to give somebody/something a higher position or rank, often more important than they deserve - raise",
+        "urdu": "اونچا کرنا",
+        "pashto": "لوړول",
+        "sourceMeaning": true
       },
       {
         "word": "wound",
-        "pos": "noun",
-        "meaning": "an injury to part of the body, especially one in which a hole or cut is made in the skin using a weapon or sharp object",
-        "urdu": "زخم / گھاؤ",
-        "pashto": "ټپ / زخم"
+        "pos": "",
+        "meaning": "an injury to part of the body, especially one in which a hole is made in the skin using a weapon",
+        "urdu": "زخم",
+        "pashto": "ټپ",
+        "sourceMeaning": true
       },
       {
         "word": "dislodge",
-        "pos": "verb",
+        "pos": "",
         "meaning": "to force or knock something out of its position",
-        "urdu": "اپنی جگہ سے ہٹانا / نکال باہر کرنا",
-        "pashto": "له خپل ځای څخه ایستل / لرې کول"
+        "urdu": "اپنی جگہ سے ہٹانا",
+        "pashto": "له ځایه ایستل",
+        "sourceMeaning": true
       },
       {
         "word": "emergency",
-        "pos": "noun",
+        "pos": "",
         "meaning": "a sudden serious and dangerous event or situation which needs immediate action to deal with it",
-        "urdu": "ہنگامی حالت / ناگہانی صورتحال",
-        "pashto": "بیړنی حالت / ناڅاپي پیښه"
+        "urdu": "ہنگامی حالت",
+        "pashto": "بیړني حالت",
+        "sourceMeaning": true
       },
       {
         "word": "adhesive",
-        "pos": "adjective / noun",
-        "meaning": "a substance that you use to make things stick together; sticky",
-        "urdu": "چپکنے والی (پٹی یا مادہ)",
-        "pashto": "نښلېدونکی / چپکیدونکی"
+        "pos": "",
+        "meaning": "a substance that you use to make things stick together",
+        "urdu": "چپکنے والا مادہ",
+        "pashto": "نښلوونکې ماده",
+        "sourceMeaning": true
       },
       {
         "word": "lodge",
-        "pos": "verb",
+        "pos": "",
         "meaning": "make or become firmly fixed or stuck in a place",
-        "urdu": "پھنس جانا / اٹک جانا",
-        "pashto": "بند پاتې کیدل / نښتل"
+        "urdu": "پھنس جانا",
+        "pashto": "نښلېدل، بندېدل",
+        "sourceMeaning": true
       },
       {
         "word": "nostrils",
-        "pos": "noun (plural)",
+        "pos": "",
         "meaning": "either of the two openings at the end of the nose that you breathe through",
-        "urdu": "نتھنے (ناک کے دونوں سوراخ)",
-        "pashto": "د پوزې سوري"
+        "urdu": "نتھنے",
+        "pashto": "د پوزې سوري",
+        "sourceMeaning": true
       }
     ],
     "exercise": {
@@ -11554,7 +13518,60 @@ const ENGLISH_DATA = [
       "Formulate clear, concise imperative sentences for safety guidelines and emergency instructions.",
       "Identify the life-saving significance of the 'Golden Hour' in trauma medicine.",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "analyze passages in the text to identify the theme / general subject, key idea / central thought (a statement about general subject), and supporting details.",
+      "apply critical thinking to interact with text and use intensive reading strategies to scan to answer short questions.",
+      "use summary skills to extract salient points and develop a mind map to summarize a text.",
+      "use dictionary to choose appropriate word definition, identify part of speech and recognize abbreviation used in a dictionary.",
+      "translate passages from Urdu to English.",
+      "apply rule of capitalization wherever applicable.",
+      "illustrate use of punctuation marks learned earlier.",
+      "recognize and rectify faulty punctuation marks in given passages and own work.",
+      "recognize and use comma to separate: subordinate clause which precedes a main clause; a non-defining relatives clause; coordinate clauses joined by one of the pure conjunction.",
+      "recognize and use colon to separate indefinite clauses when there is a sharp antithesis.",
+      "recognize and use semi colon between: parts of a compound sentence when no conjunction is used; the clauses of a compound sentence before conjunctive adverbs."
+    ],
+    "preReading": [
+      {
+        "q": "Look at the picture and predict what the lesson is about?",
+        "a": "Pictures: an injured man on the ground and a road accident (PDF 118)"
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ],
+      "printedPages": [
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116
+      ],
+      "notes": [
+        "Author corrected: the book prints no author for this unit (PDF 117); the stored \"Prof. Hamidullah Khan & Aamna Aamad\" are the textbook authors listed in the front matter.",
+        "Learning outcomes (PDF 117), pre-reading (PDF 118) and the printed glossary (PDF 121) added; Urdu/Pashto glossary meanings are SpaceBook translations.",
+        "Dialogue text, comprehension A1-5, MCQ B1-4, vocabulary A-B, writing A-C (including the Urdu sentences for translation), speaking and punctuation grammar match the book."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   },
   {
     "number": 12,
@@ -11563,7 +13580,7 @@ const ENGLISH_DATA = [
     "titlePashto": "بوډۍ ښځه",
     "type": "poetry",
     "author": "Joseph Campbell (1906–1987)",
-    "authorInfo": "About the Poet & Thematic Background:\nThe poet Joseph Campbell was born in 1906 in White Plains, New York. He won name and fame as a writer, poet, and athlete. As an athlete, he was among the fastest half-mile runners in the world. His first published work was 'Where the Two Came to Their Father'. The poem, 'The Old Woman', is taken from his collection of poems. In this touching lyric, Campbell pays profound homage to the sacred dignity, serene spiritual beauty, and quiet wisdom of an aged mother whose lifelong domestic labors are complete.\n\nKey Competencies & SLOs:\n• Identify line, stanza structure, and rhyme scheme in classical poetry.\n• Paraphrase poetic stanzas into clear, coherent standard prose.\n• Analyze figurative language: similes, visual imagery, symbolism, and metaphors.\n• Formulate critical responses on the universal theme of veneration and respect for elderly family members.",
+    "authorInfo": "About the Poet: The poet Joseph Campbell was born in 1906 in White Plains, New York. He won name and fame as a writer, poet and athlete. As an athlete, he was among the fastest half-mile runners in the world. His first published work was, \"Where the Two Came to Their Father\". The poem, \"The Old Woman\" has been taken from his collection of poems. He describes the old age of a woman. The beauty of a woman vanishes and she looks like a white candle in her old age.\n\nSpaceBook note: this biography, printed in the book (PDF 130), describes the American writer Joseph Campbell (1904-1987). \"The Old Woman\" was written by the Irish poet Joseph Campbell (1879-1944). The printed text is kept as it appears in the book.",
     "sections": [
       {
         "heading": "Stanza 1: The Sacred Purity of Old Age",
@@ -11605,31 +13622,35 @@ const ENGLISH_DATA = [
     "glossary": [
       {
         "word": "radiance",
-        "pos": "noun",
-        "meaning": "a special bright quality that shows in somebody's face, for example because they are very happy or healthy; glowing light",
-        "urdu": "چمک / دمک / روشن ضیا / نورانیت",
-        "pashto": "ځلا / رڼا / ځلیدونکی نور"
+        "pos": "",
+        "meaning": "a special bright quality that shows in somebody's face, for example because they are very happy or healthy",
+        "urdu": "چمک، نور",
+        "pashto": "ځلا",
+        "sourceMeaning": true
       },
       {
         "word": "travail",
-        "pos": "noun",
-        "meaning": "an unpleasant experience or situation that involves a lot of hard work, difficulties and suffering; laborious toil",
-        "urdu": "سخت مشقت / جانفشانی / کٹھن محنت",
-        "pashto": "سخت کار / کړاو / د ژوند درنې ستونزې"
+        "pos": "",
+        "meaning": "an unpleasant experience or situation that involves a lot of hard work, difficulties and suffering",
+        "urdu": "مشقت، محنت",
+        "pashto": "زحمت، کړاو",
+        "sourceMeaning": true
       },
       {
         "word": "brood",
-        "pos": "noun",
-        "meaning": "a person's child or children; a family of young animals or offspring",
-        "urdu": "اولاد / بچے / نسل",
-        "pashto": "اولاد / بچي / زامن او لوڼې"
+        "pos": "",
+        "meaning": "a person's child or children",
+        "urdu": "اولاد",
+        "pashto": "اولاد",
+        "sourceMeaning": true
       },
       {
         "word": "ruined",
-        "pos": "adjective / verb",
-        "meaning": "destroyed or severely damaged so that only parts remain; abandoned",
-        "urdu": "کھنڈر / ویران / شکستہ",
-        "pashto": "وران شوی / زوړ / کنډواله"
+        "pos": "",
+        "meaning": "destroyed or severely damaged so that only parts remain",
+        "urdu": "تباہ شدہ، کھنڈر",
+        "pashto": "ویجاړ",
+        "sourceMeaning": true
       }
     ],
     "exercise": {
@@ -11643,18 +13664,18 @@ const ENGLISH_DATA = [
             "d. metaphor"
           ],
           "answer": "b. simile",
-          "explanation": "The explicit comparison using the word 'As' ('As a white candle in a holy place...') represents a textbook simile."
+          "explanation": "SpaceBook answer (the textbook prints no answer key): The explicit comparison using the word 'As' ('As a white candle in a holy place...') represents a textbook simile."
         },
         {
           "question": "2. The poet compares the old woman with 'the spent radiance of the winter's sun'. What does it mean?",
           "options": [
-            "a. The old woman is strong and with wide experience of life.",
-            "b. The old woman is weak but with rich experience of life.",
+            "a. The old woman is weak but with rich experience of life.",
+            "b. The old woman is strong and with wide experience of life.",
             "c. The old woman is symbol of beauty and sunshine.",
             "d. The old woman is symbol of success and growth."
           ],
-          "answer": "b. The old woman is weak but with rich experience of life.",
-          "explanation": "'Spent radiance' signifies physically depleted vitality mellowed by vast wisdom, maturity, and rich life experiences."
+          "answer": "a. The old woman is weak but with rich experience of life.",
+          "explanation": "SpaceBook answer (the textbook prints no answer key): 'Spent radiance' signifies physically depleted vitality mellowed by vast wisdom, maturity, and rich life experiences."
         },
         {
           "question": "3. \"Her brood gone from her\" means",
@@ -11665,7 +13686,7 @@ const ENGLISH_DATA = [
             "d. her wealth gone"
           ],
           "answer": "b. her children gone",
-          "explanation": "'Brood' literally and contextually refers to a mother's children who have grown up and moved away."
+          "explanation": "SpaceBook answer (the textbook prints no answer key): 'Brood' literally and contextually refers to a mother's children who have grown up and moved away."
         },
         {
           "question": "4. The poet says that 'As the waters under a ruined mill'. What does it mean?",
@@ -11676,18 +13697,18 @@ const ENGLISH_DATA = [
             "d. To indicate that wide range of experience is an extra ornaments in the life of old lady."
           ],
           "answer": "a. To emphasize that there is steadiness and maturity in the life of an old woman.",
-          "explanation": "The still water beneath a retired watermill symbolizes complete emotional calm, steadiness, and contemplative peace after active years of work."
+          "explanation": "SpaceBook answer (the textbook prints no answer key): The still water beneath a retired watermill symbolizes complete emotional calm, steadiness, and contemplative peace after active years of work."
         },
         {
           "question": "5. What does 'travail done' mean based on the poem?",
           "options": [
             "a. Difficulties of an old woman neither vanished nor runs away",
-            "b. Calmness and wisdom in the life of an old woman",
-            "c. Laborious life of an old woman",
+            "b. Laborious life of an old woman",
+            "c. Calmness and wisdom in the life of an old woman",
             "d. Natural beauty vanished in an old woman"
           ],
-          "answer": "b. Calmness and wisdom in the life of an old woman",
-          "explanation": "'Travail done' indicates that her painful struggles and life's laborious duties are complete, leaving behind serene calmness and wisdom."
+          "answer": "c. Calmness and wisdom in the life of an old woman",
+          "explanation": "SpaceBook answer (the textbook prints no answer key): 'Travail done' indicates that her painful struggles and life's laborious duties are complete, leaving behind serene calmness and wisdom."
         }
       ],
       "comprehension": [
@@ -11798,7 +13819,8 @@ const ENGLISH_DATA = [
       },
       "speakingActivity": {
         "title": "Listening & Speaking: Expressing Hopes and Fears Regarding English Test Results",
-        "dialogue": "Pair Dialogue Framework:\n\nStudent A: I am really anxious about our English literature test result that was held yesterday.\nStudent B: Why? What are your fears?\nStudent A: I found the poetry analysis section quite tricky, especially explaining the metaphor of the 'ruined mill'. I hope I don't lose marks on the critical response.\nStudent B: Don't worry! You prepared the similes and themes thoroughly. I hope both of us secure top grades. Let's stay positive and wait for the teacher's feedback!"
+        "dialogue": "Pair Dialogue Framework:\n\nStudent A: I am really anxious about our English literature test result that was held yesterday.\nStudent B: Why? What are your fears?\nStudent A: I found the poetry analysis section quite tricky, especially explaining the metaphor of the 'ruined mill'. I hope I don't lose marks on the critical response.\nStudent B: Don't worry! You prepared the similes and themes thoroughly. I hope both of us secure top grades. Let's stay positive and wait for the teacher's feedback!",
+        "prompt": "Imagine you recently had an English test. In pairs express hopes and fears regarding your performance/result in the test."
       },
       "grammar": [
         {
@@ -11823,7 +13845,85 @@ const ENGLISH_DATA = [
           "title": "Paraphrase of 'The Old Woman' by Joseph Campbell",
           "content": "Stanza 1: Just as a pure white candle burning inside a sacred sanctuary spreads a calm and spiritual glow, so too is the holy and peaceful beauty seen upon the face of an elderly woman.\n\nStanza 2: Just as the gentle, fading sunlight of a winter afternoon provides a soft and comforting warmth after the blazing heat of summer, so too is an elderly woman whose lifelong hard labor, maternal struggles, and family duties are peacefully completed.\n\nStanza 3: Her grown-up children have now departed to build their own independent lives, leaving her alone in quiet reflection. Her thoughts and memories are now as deep, motionless, and completely undisturbed as the calm, clear pool of water resting beneath an old, abandoned watermill."
         }
-      ]
+      ],
+      "grammarActivities": {
+        "activeToPassive": [
+          {
+            "sentence": "1. I have finished the job.",
+            "answer": "SpaceBook answer (the textbook prints no answers): The job has been finished by me."
+          },
+          {
+            "sentence": "2. They built this house in 1990.",
+            "answer": "SpaceBook answer (the textbook prints no answers): This house was built (by them) in 1990."
+          },
+          {
+            "sentence": "3. He has bought a new car.",
+            "answer": "SpaceBook answer (the textbook prints no answers): A new car has been bought by him."
+          },
+          {
+            "sentence": "4. I wrote a letter.",
+            "answer": "SpaceBook answer (the textbook prints no answers): A letter was written by me."
+          },
+          {
+            "sentence": "5. They sent the parcel on Monday.",
+            "answer": "SpaceBook answer (the textbook prints no answers): The parcel was sent (by them) on Monday."
+          },
+          {
+            "sentence": "6. The police caught the thief yesterday.",
+            "answer": "SpaceBook answer (the textbook prints no answers): The thief was caught by the police yesterday."
+          },
+          {
+            "sentence": "7. She baked a cake.",
+            "answer": "SpaceBook answer (the textbook prints no answers): A cake was baked by her."
+          },
+          {
+            "sentence": "8. I read a book.",
+            "answer": "SpaceBook answer (the textbook prints no answers): A book was read by me."
+          },
+          {
+            "sentence": "9. She gave the beggar a five rupee coin.",
+            "answer": "SpaceBook answer (the textbook prints no answers): The beggar was given a five rupee coin by her. / A five rupee coin was given to the beggar by her."
+          }
+        ],
+        "voiceChange": [
+          {
+            "sentence": "1. The thieves have been arrested by the police.",
+            "answer": "SpaceBook answer (the textbook prints no answers): The police have arrested the thieves."
+          },
+          {
+            "sentence": "2. The marvelous performance delivered by the children enthralled us.",
+            "answer": "SpaceBook answer (the textbook prints no answers): We were enthralled by the marvelous performance delivered by the children."
+          },
+          {
+            "sentence": "3. He has been invited to their party.",
+            "answer": "SpaceBook answer (the textbook prints no answers): They have invited him to their party."
+          },
+          {
+            "sentence": "4. We have shipped your order.",
+            "answer": "SpaceBook answer (the textbook prints no answers): Your order has been shipped (by us)."
+          },
+          {
+            "sentence": "5. The girl recited the poem beautifully.",
+            "answer": "SpaceBook answer (the textbook prints no answers): The poem was recited beautifully by the girl."
+          },
+          {
+            "sentence": "6. The guests enjoyed the party.",
+            "answer": "SpaceBook answer (the textbook prints no answers): The party was enjoyed by the guests."
+          },
+          {
+            "sentence": "7. The child impressed everyone with his polite manners.",
+            "answer": "SpaceBook answer (the textbook prints no answers): Everyone was impressed by the child with his polite manners."
+          },
+          {
+            "sentence": "8. A girl from Bannu won the first prize.",
+            "answer": "SpaceBook answer (the textbook prints no answers): The first prize was won by a girl from Bannu."
+          },
+          {
+            "sentence": "9. The readers like the latest book of the writer.",
+            "answer": "SpaceBook answer (the textbook prints no answers): The latest book of the writer is liked by the readers."
+          }
+        ]
+      }
     },
     "sloQuestions": {
       "mcqs": [
@@ -12135,16 +14235,16 @@ const ENGLISH_DATA = [
     },
     "preReading": [
       {
-        "q": "What does the phrase 'respect your elders' mean?",
-        "a": "It means to treat older generations, especially parents and grandparents, with reverence, patience, affection, and gratitude for their lifelong sacrifices."
+        "q": "What do the pictures below have in common?",
+        "a": "Pictures: three elderly women (PDF 129)"
+      },
+      {
+        "q": "What does the phrase \"respect your elders\" mean?",
+        "a": "Pre-reading question (PDF 129)"
       },
       {
         "q": "How do you show respect to your elders?",
-        "a": "By listening to their advice, speaking with humility, helping them with daily tasks, and spending quality time in their company."
-      },
-      {
-        "q": "How does old age transform a person's inner and outer beauty?",
-        "a": "While youthful physical charm fades, it is replaced by a profound spiritual dignity, gentle wisdom, and serene peacefulness."
+        "a": "Pre-reading question (PDF 129)"
       }
     ],
     "pashtoTranslation": "د بوډۍ ښځې د نظم بشپړه پښتو ژباړه: شاعر جوزف کیمبل په دې لنډ خو خورا ژور نظم کې د یوې بوډۍ مور د ژوند د زحمتونو او د هغې د مخ سپیڅلې او ارامه ښکلا ستاینه کوي. هغه بوډۍ ښځه د سپینې شمعې، د ژمي د لمر او د ارامو اوبو سره تشبیه کوي.",
@@ -12170,7 +14270,43 @@ const ENGLISH_DATA = [
       "Identify sensory, kinetic, and visual imagery in lyric poetry.",
       "Paraphrase stanzas with grammatical accuracy and emotional sensitivity.",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "identify line and stanza.",
+      "read poem and give orally or in writing: main idea; theme and its development; summary; personal response with justification; paraphrase.",
+      "use paraphrasing skills to paraphrase stanzas: mark thought groups in the stanza; restate the message in simple prose; replace poetic words with simple ones.",
+      "read and analyze how the poet uses language to: appeal to the senses through use of figurative language including similes and metaphors; affect meaning through use of synonyms with different connotation and denotation; create imagery.",
+      "describe the object being personified.",
+      "deduce meaning of difficult words from context.",
+      "use active and passive voice appropriately in speech and writing according to required communicative function."
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        128,
+        129,
+        130,
+        131,
+        132,
+        133
+      ],
+      "printedPages": [
+        117,
+        118,
+        119,
+        120,
+        121,
+        122
+      ],
+      "notes": [
+        "About the Poet restored verbatim (PDF 130) with a SpaceBook note: the printed biography is of the American Joseph Campbell, while the poem is by the Irish poet of the same name.",
+        "MCQ 2 and 5 options restored to the printed order (PDF 131-132); the SpaceBook answers keep the same option text with the new letters.",
+        "Grammar A and B (Active and Passive Voice, PDF 133) were missing; added with SpaceBook answers.",
+        "Learning outcomes (PDF 128), pre-reading (PDF 129) and the printed glossary (PDF 130) added; Urdu/Pashto glossary meanings are SpaceBook translations.",
+        "Poem, comprehension A1-7, MCQ 1/3/4, vocabulary A-C, writing a-c and the speaking task match the book."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   },
   {
     "number": 13,
@@ -12178,8 +14314,8 @@ const ENGLISH_DATA = [
     "titleUrdu": "اخبار کے مدیر کے نام خط (میڈیا کے اثرات)",
     "titlePashto": "د ورځپاڼې مدیر ته لیک (د رسنیو اغیزې)",
     "type": "prose",
-    "author": "Prof. Hamidullah Khan & Aamna Aamad (KPK Textbook Board Peshawar)",
-    "authorInfo": "Pre-Reading & Functional Writing Competencies:\nFormal letter and email writing constitute vital communication skills in academic, professional, and civic environments. Through Abrar Khan's letter to the Editor of 'The Frontier Post', Peshawar, this unit examines the profound socio-cultural, political, and educational influence of mass media. It also equips students to compose formal applications, draft structured emails, master transitional devices, and apply advanced punctuation (quotation marks, hyphens, and dashes).\n\nKey Competencies & SLOs:\n• Write and revise formal letters, official applications, and formal/informal emails using correct layout, address conventions, and polite tone.\n• Analyze arguments regarding media literacy, fake news, commercial sensationalism, and civic responsibility.\n• Master transitional devices (cohesive conjunctions/adverbs) to ensure flow in essay writing.\n• Correctly use quotation marks, dashes (em/en-dash), and hyphens in compound words/numbers.",
+    "author": "",
+    "authorInfo": "The book prints no author name for this unit (PDF 134). The letter is signed \"Abrar Khan\".",
     "sections": [
       {
         "heading": "1. Opening & The Dual Nature of Media",
@@ -12247,73 +14383,83 @@ const ENGLISH_DATA = [
     "glossary": [
       {
         "word": "actualities",
-        "pos": "noun (plural)",
-        "meaning": "the state of something existing in reality; actual facts and conditions",
-        "urdu": "حقائق / واقعی حالات",
-        "pashto": "واقعیتونه / ریښتیني حقایق"
+        "pos": "",
+        "meaning": "the state of something existing in reality",
+        "urdu": "حقائق",
+        "pashto": "حقیقتونه",
+        "sourceMeaning": true
       },
       {
         "word": "influence",
-        "pos": "noun / verb",
-        "meaning": "the effect that somebody/something has on the way a person thinks or behaves or on the way that something works",
-        "urdu": "اثر و رسوخ / تاثر",
-        "pashto": "اغیزه / نفوذ"
+        "pos": "",
+        "meaning": "the effect that somebody/something has on the way a person thinks or behaves or on the way that something works or develops",
+        "urdu": "اثر و رسوخ",
+        "pashto": "اغېز",
+        "sourceMeaning": true
       },
       {
         "word": "distortion",
-        "pos": "noun",
-        "meaning": "a change in the shape, appearance or sound of something so that it is strange, false or not clear; misrepresentation",
-        "urdu": "تحریف / بگاڑ / سچ کو مسخ کرنا",
-        "pashto": "تحریف / اړول / د حقیقت بدلول"
+        "pos": "",
+        "meaning": "a change in the shape, appearance or sound of something so that it is strange or not clear",
+        "urdu": "بگاڑ، تحریف",
+        "pashto": "تحریف، کږوالی",
+        "sourceMeaning": true
       },
       {
         "word": "tender",
-        "pos": "noun",
-        "meaning": "a formal offer to carry out work, supply goods, or buy land/shares at a stated fixed price",
-        "urdu": "ٹینڈر / سرکاری نرخ نامہ / پیشکش",
-        "pashto": "ټینډر / د نرخ وړاندیز"
+        "pos": "",
+        "meaning": "an offer to carry out work, supply goods, or buy land, shares, or another asset at a stated fixed price",
+        "urdu": "ٹینڈر، بولی",
+        "pashto": "ټنډر، داوطلبي",
+        "sourceMeaning": true
       },
       {
         "word": "epidemic",
-        "pos": "noun",
-        "meaning": "a widespread occurrence of an infectious disease in a community at a particular time",
-        "urdu": "وبائی مرض / وبا",
-        "pashto": "وبا / ساري ناروغي"
+        "pos": "",
+        "meaning": "(of something bad) occurring more and more frequently in a particular place",
+        "urdu": "وبا",
+        "pashto": "وبا",
+        "sourceMeaning": true
       },
       {
         "word": "sectarian",
-        "pos": "adjective",
-        "meaning": "connected with the differences and prejudices between groups with different religious views",
+        "pos": "",
+        "meaning": "connected with the differences that exist between groups of people who have different religious views",
         "urdu": "فرقہ وارانہ",
-        "pashto": "فرقه ییز / مذهبي تعصب"
+        "pashto": "فرقه یي",
+        "sourceMeaning": true
       },
       {
         "word": "communal",
-        "pos": "adjective",
-        "meaning": "shared by or for the use of a community; involving different social groups",
-        "urdu": "اجتماعی / گروہی / مشترکہ",
-        "pashto": "ټولنیز / ګډ / ډله ییز"
+        "pos": "",
+        "meaning": "shared by, or for the use of, a number of people, especially people who live together",
+        "urdu": "اجتماعی، گروہی",
+        "pashto": "ګډ، ټولنیز",
+        "sourceMeaning": true
       },
       {
         "word": "divisive",
-        "pos": "adjective",
+        "pos": "",
         "meaning": "causing people to be split into groups that disagree with or oppose each other",
-        "urdu": "انتشار پھیلانے والا / پھوٹ ڈالنے والا",
-        "pashto": "تفرقه اچوونکی / بې اتفاقي پیدا کوونکی"
+        "urdu": "تفرقہ انگیز",
+        "pashto": "وېشونکی",
+        "sourceMeaning": true
       },
       {
         "word": "esteemed",
-        "pos": "adjective",
-        "meaning": "held in great respect and admiration; highly regarded",
-        "urdu": "معزز / باوقار / قابلِ احترام",
-        "pashto": "محترم / د قدر وړ / باوقاره"
+        "pos": "",
+        "meaning": "great respect and admiration; a good opinion of somebody",
+        "urdu": "معزز، قابلِ احترام",
+        "pashto": "درناوی لرونکی",
+        "sourceMeaning": true
       },
       {
         "word": "overseer",
-        "pos": "noun",
-        "meaning": "a person whose job is to supervise, monitor, and make sure that workers do their duty correctly",
-        "urdu": "نگران / نگہبان / چوکیدار",
-        "pashto": "څارونکی / نګران"
+        "pos": "",
+        "meaning": "a person whose job is to make sure that other workers do their work",
+        "urdu": "نگران",
+        "pashto": "څارونکی",
+        "sourceMeaning": true
       }
     ],
     "exercise": {
@@ -12917,7 +15063,60 @@ const ENGLISH_DATA = [
       "Construct persuasive civic arguments proposing actionable solutions to municipal challenges.",
       "Apply rules of formal salutation, subscription, and subject line drafting.",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "write and revise formal letters to people in extended social and academic environment for various purposes. Write the address on the envelope clearly and in proper format.",
+      "write and revise application to people in extended environment using correct format, layout and tone.",
+      "analyze letters to editor to recognize effective ways of explaining and presenting an idea, a point or an opinion.",
+      "write and revise letters to editor expressing ideas, points or opinions by supporting it with anecdotes, quotations, examples, analogies etc.",
+      "analyze and compare various informal and formal emails to note differences of conventions, vocabulary, style and tone.",
+      "write informal and formal e-mail in extended social and academic environment.",
+      "recognize and use quotation marks to enclose: both parts of an interrupted quotation; usual or peculiar terms to which attention is directed to make the meaning clear.",
+      "recognize and use hyphen to indicate the division of a word at the end of the line.",
+      "recognize and use dash as a separator to indicate that a sentence has been broken off, or to indicate a new direction of thought.",
+      "express agreement (fully and partially) politely."
+    ],
+    "preReading": [
+      {
+        "q": "Letter Writing: Letter can be formal or informal. There is a specific format for formal letter. The formal letters are written for various purposes: to ask for information; to offer thanks, congratulations or condolences; to ask advice or express a view; to give reference.",
+        "a": "Format of a Formal Letter: Your address · Date · Recipient's address · Dear (Greetings) · Your letter · Yours (Closing farewell) (PDF 135)"
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144
+      ],
+      "printedPages": [
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133
+      ],
+      "notes": [
+        "Author corrected: the letter is signed by Abrar Khan and the book prints no unit author (PDF 134, 138); the stored names are the textbook authors from the front matter.",
+        "Learning outcomes (PDF 134), the pre-reading formal-letter format (PDF 135) and the printed glossary (PDF 138) added; Urdu/Pashto glossary meanings are SpaceBook translations.",
+        "Letter text, comprehension A1-6, vocabulary A-B, writing (application model, email table, exercises A-D), speaking dialogue and punctuation grammar match the book."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   },
   {
     "number": 14,
@@ -12925,8 +15124,8 @@ const ENGLISH_DATA = [
     "titleUrdu": "پاکستان میں حیاتیاتی تنوع",
     "titlePashto": "په پاکستان کې بیولوژیکي تنوع",
     "type": "prose",
-    "author": "Prof. Hamidullah Khan & Aamna Aamad (KPK Textbook Board Peshawar)",
-    "authorInfo": "Pre-Reading & Ecological Background:\nPakistan possesses exceptionally diverse topography and climatic zones, ranging from the glaciated peaks of the Himalayas, Karakoram, and Hindu Kush to the arid plains of Thar and Cholistan, lush riverine basins, and coastal mangrove belts. However, rapid population expansion, deforestation, habitat fragmentation, and industrial pollution pose catastrophic threats to its indigenous flora and fauna. This unit provides an in-depth ecological survey of endangered species (such as the snow leopard, Markhor, and Indus River dolphin) while teaching scientific report writing, interview techniques, persuasive essay structure, and advanced punctuation (parentheses and ellipsis).\n\nKey Competencies & SLOs:\n• Comprehend ecological concepts: biodiversity, ecosystem equilibria, endangered vs. endemic species, and habitat preservation.\n• Structure and write formal persuasive/argumentative essays with counter-arguments and factual evidence.\n• Apply interview protocols: active listening, formulating targeted questions, note-taking, and compiling transcripts.\n• Master punctuation: Parentheses (round brackets) for supplementary data/enumerations and Ellipses (...) for textual omissions and dramatic pauses.",
+    "author": "",
+    "authorInfo": "The book prints no author name for this unit (PDF 145).",
     "sections": [
       {
         "heading": "1. Pakistan's Natural Splendor & Ecological Strains",
@@ -12965,100 +15164,110 @@ const ENGLISH_DATA = [
         "pashto": "په پاکستان کې د له منځه تلو تر ټولو لوړ خطر لرونکی مرغه 'سور سر لرونکی ټپوس' (ګیدړ ډوله مرغه) دی. په دې سیمه کې د ټپوس بل ډول، مصري ټپوس هم په نړیواله کچه له ګواښ سره مخ دی. بله مرغۍ، سپین سر لرونکې هیلۍ ده چې په پاکستان کې یې نفوس شته. همدارنګه، د اباسین سیند ډالفین د تازه اوبو یو تي لرونکی ژوی دی چې په اباسین سیند کې ژوند کوي. د اوبو د بندونو او بیراجونو جوړیدو له امله دغه ژوی له جدي ګواښ سره مخ دی. د کرهڼې لپاره د اوبو کچه کمیدل او بل لور ته اړول د ډالفین د استوګنځایونو د ویجاړیدو لامل شوی. د کبانو په جالونو کې نښتل او د صنعتي ناپاکو اوبو ورګډیدل د دغه نادر ژوي ژوند له تباهۍ سره مخ کړی دی."
       },
       {
-        "heading": "4. Forestry Resources & Pressures on Ecosystems",
+        "heading": "4. Forestry Resources (printed page 137 missing)",
         "headingUrdu": "جنگلاتی وسائل اور ماحولیاتی نظام پر دباؤ",
         "headingPashto": "د ځنګلونو سرچینې او په ایکوسیستم فشار",
-        "text": "Likewise, Balochistan's forests are precious resources for the local communities and the country. Juniper forests in Ziarat are considered among the oldest in the world. Similarly, the mangrove forests along the coastal belt of Sindh and Balochistan serve as vital breeding grounds for marine life, protect coastlines from tsunamis and cyclonic surges, and support coastal livelihoods. However, these unique woodlands face severe degradation from excessive commercial logging, firewood collection by impoverished rural populations, overgrazing by livestock, and reduced freshwater flows down the Indus Delta.",
+        "text": "Likewise, Balochistan's forests are ...\n\n[Source gap: printed page 137 is missing from every available copy of the textbook (PDF, JPG scans and Word file). The text between \"Likewise, Balochistan's forests are\" and \"resource, lack of awareness\" could not be checked and is not shown.]",
         "paras": [
-          "Likewise, Balochistan's forests are precious resources for the local communities and the country. Juniper forests in Ziarat are considered among the oldest in the world.",
-          "Similarly, the mangrove forests along the coastal belt of Sindh and Balochistan serve as vital breeding grounds for marine life, protect coastlines from tsunamis and cyclonic surges, and support coastal livelihoods. However, these unique woodlands face severe degradation from excessive commercial logging, firewood collection by impoverished rural populations, overgrazing by livestock, and reduced freshwater flows down the Indus Delta."
+          "Likewise, Balochistan's forests are ...",
+          "[Source gap: printed page 137 is missing from every available copy of the textbook (PDF, JPG scans and Word file). The text between \"Likewise, Balochistan's forests are\" and \"resource, lack of awareness\" could not be checked and is not shown.]"
         ],
-        "urdu": "اسی طرح بلوچستان کے جنگلات مقامی آبادی اور پورے ملک کے لیے انتہائی قیمتی وسائل ہیں۔ زیارت کے صنوبر (جونیپر) کے جنگلات دنیا کے قدیم ترین جنگلات میں شمار ہوتے ہیں۔\n\nاسی طرح سندھ اور بلوچستان کی ساحلی پٹی کے ساتھ تمر (مینگرووز) کے جنگلات سمندری حیات کی افزائش کے لیے اہم نرسری کا کام کرتے ہیں، ساحلوں کو سونامی اور سمندری طوفانوں کے کٹاؤ سے بچاتے ہیں اور ساحلی آبادیوں کی روزی روٹی کو سہارا دیتے ہیں۔ تاہم یہ منفرد جنگلات ضرورت سے زیادہ تجارتی کٹائی، دیہی آبادی کی جانب سے ایندھن کے لیے لکڑی جلانے، مویشیوں کے بے دریغ چرنے اور دریائے سندھ کے ڈیلٹا میں میٹھے پانی کی کمی کی وجہ سے شدید تنزلی کا شکار ہو رہے ہیں۔",
-        "pashto": "همدارنګه، د بلوچستان ځنګلونه د ځایی خلکو او هیواد لپاره ارزښتناکې سرچینې دي. په زیارت کې د جونیپر (صنوبر) ځنګلونه په نړۍ کې ترټولو زاړه ګڼل کیږي. د سند او بلوچستان په ساحلي سیمو کې د منګروو ځنګلونه د سمندري ژوند لپاره خورا مهم دي او ساحلونه له طوفانونو ژغوري. خو دغه ځنګلونه د ډیرو لرګیو وهلو، د سونګ لپاره د کارولو او د څارویو د بې حده څړ له امله له سخت زوال سره مخ دي."
+        "urdu": "اسی طرح بلوچستان کے جنگلات ...\n\n[ماخذ میں خلا: درسی کتاب کا صفحہ 137 کسی بھی دستیاب نسخے (PDF، JPG اسکین اور ورڈ فائل) میں موجود نہیں۔ \"Likewise, Balochistan's forests are\" اور \"resource, lack of awareness\" کے درمیان کا متن جانچا نہیں جا سکا، اس لیے نہیں دکھایا گیا۔]",
+        "pashto": "همدارنګه د بلوچستان ځنګلونه ...\n\n[د سرچینې تشه: د درسي کتاب 137 مخ په هېڅ موجوده نسخه (PDF، JPG سکنونه او ورډ فایل) کې نشته. د \"Likewise, Balochistan's forests are\" او \"resource, lack of awareness\" ترمنځ متن ونه ازمویل شو، نو نه دی ښودل شوی.]"
       },
       {
         "heading": "5. Challenges in Conservation & A Call to Action",
         "headingUrdu": "تحفظ میں درپیش چیلنجز اور عملی اقدام کی پکار",
         "headingPashto": "د ساتنې په وړاندې ننګونې او د عمل بلنه",
-        "text": "The main challenges faced by Pakistan in preserving its biodiversity include: lack of financial resources, lack of awareness, insufficient access to local knowledge, legal impediments, limited public and stakeholder participation, lack of mainstreaming of biodiversity with other sectors, lack of transfer of technology and expertise, inadequate engagement of scientific community, poverty, increasing population, climate change and natural disasters. It is high time that we act now otherwise the biodiversity will vanish and the next generation would see only pictures, movies and stuffed toys of biodiversity.",
+        "text": "... resource, lack of awareness, insufficient access to local knowledge, legal impediments, limited public and stakeholder participation, lack of mainstreaming of biodiversity with other sectors, lack of transfer of technology and expertise, inadequate engagement of scientific community, poverty, increasing population, climate change and natural disasters.\n\nIt is high time that we act now otherwise the biodiversity will vanish and the next generation would see only pictures, movies and stuffed toys of biodiversity.",
         "paras": [
-          "The main challenges faced by Pakistan in preserving its biodiversity include: lack of financial resources, lack of awareness, insufficient access to local knowledge, legal impediments, limited public and stakeholder participation, lack of mainstreaming of biodiversity with other sectors, lack of transfer of technology and expertise, inadequate engagement of scientific community, poverty, increasing population, climate change and natural disasters.",
+          "... resource, lack of awareness, insufficient access to local knowledge, legal impediments, limited public and stakeholder participation, lack of mainstreaming of biodiversity with other sectors, lack of transfer of technology and expertise, inadequate engagement of scientific community, poverty, increasing population, climate change and natural disasters.",
           "It is high time that we act now otherwise the biodiversity will vanish and the next generation would see only pictures, movies and stuffed toys of biodiversity."
         ],
-        "urdu": "پاکستان کو اپنے حیاتیاتی تنوع کے تحفظ میں جن بڑے چیلنجوں کا سامنا ہے ان میں شامل ہیں: مالی وسائل کی کمی، عوامی شعور کا فقدان، مقامی روایتی علم تک ناکافی رسائی، قانونی رکاوٹیں، عوام اور اسٹیک ہولڈرز کی محدود شمولیت، دیگر شعبوں کے ساتھ حیاتیاتی تنوع کے انضمام (مین اسٹریمنگ) کا فقدان، ٹیکنالوجی اور مہارت کی منتقلی کی کمی، سائنسی برادری کی ناکافی شمولیت، غربت، بڑھتی ہوئی آبادی، موسمیاتی تبدیلیاں اور قدرتی آفات۔\n\nاب وقت آ گیا ہے کہ ہم فوری عملی اقدام کریں، ورنہ ہمارا حیاتیاتی تنوع صفحۂ ہستی سے مٹ جائے گا اور ہماری آنے والی نسلیں حیاتیاتی تنوع کو صرف تصویروں، فلموں اور کپڑے کے بھرے ہوئے کھلونوں (سٹفڈ ٹوائز) میں ہی دیکھ سکیں گی!",
-        "pashto": "هغه مهمې ننګونې چې پاکستان ورسره د خپل بیولوژیکي تنوع په ساتنه کې مخ دی عبارت دي له: د مالي سرچینو کمښت، د عامه پوهاوي نشتوالی، سیمه ایزو معلوماتو ته محدود لاسرسی، قانوني خنډونه، د خلکو او شریکانو کمه برخه اخیستنه، د نورو برخو سره د بیولوژیکي تنوع د نه مدغم کیدو ستونزه، د ټکنالوژۍ کمښت، د ساینسي ټولنې ناکافي ونډه، بې وزلي، د نفوسو زیاتوالی او د اقلیم بدلون. دا د عمل وخت دی کنه راتلونکي نسلونه به ژوي او بوټي یوازې په تصویرونو، فلمونو او د لوبو په توکو کې ګوري!"
+        "urdu": "... وسائل، شعور کی کمی، مقامی علم تک ناکافی رسائی، قانونی رکاوٹیں، عوام اور اسٹیک ہولڈرز کی محدود شمولیت، دیگر شعبوں کے ساتھ حیاتیاتی تنوع کو مرکزی دھارے میں نہ لانا، ٹیکنالوجی اور مہارت کی منتقلی کی کمی، سائنسی برادری کی ناکافی شمولیت، غربت، بڑھتی آبادی، موسمیاتی تبدیلی اور قدرتی آفات۔\n\nاب وقت آ گیا ہے کہ ہم فوراً عمل کریں ورنہ حیاتیاتی تنوع ختم ہو جائے گا اور آنے والی نسل حیاتیاتی تنوع کو صرف تصویروں، فلموں اور بھرے ہوئے کھلونوں میں دیکھے گی۔",
+        "pashto": "... سرچینه، د پوهاوي کمښت، سیمه ییزې پوهې ته ناکافي لاسرسی، قانوني خنډونه، د خلکو او ونډه والو محدود ګډون، له نورو برخو سره د ژوندي تنوع نه یوځای کول، د ټکنالوژۍ او مهارت د لېږد کمښت، د ساینسي ټولنې ناکافي ګډون، بېوزلي، مخ په زیاتېدونکی نفوس، د اقلیم بدلون او طبیعي پېښې.\n\nدا د عمل وخت دی، کنه ژوندي تنوع به له منځه ولاړ شي او راتلونکی نسل به ژوندي تنوع یوازې په انځورونو، فلمونو او ډک شویو لوبو کې ویني."
       }
     ],
     "glossary": [
       {
         "word": "inadequate",
-        "pos": "adjective",
-        "meaning": "not enough; not good enough or sufficient in quantity or quality",
-        "urdu": "ناکافی / نامکمل / غیر تسلی بخش",
-        "pashto": "ناکافي / لږ / بسنه نه کوونکی"
+        "pos": "",
+        "meaning": "not enough; not good enough",
+        "urdu": "ناکافی",
+        "pashto": "ناکافي",
+        "sourceMeaning": true
       },
       {
         "word": "engagement",
-        "pos": "noun",
-        "meaning": "an arrangement to do something; active participation and involvement in a shared endeavor",
-        "urdu": "شمولیت / مصروفیت / عملی شرکت",
-        "pashto": "ونډه اخیستل / بوختیا / ګډون"
+        "pos": "",
+        "meaning": "an arrangement to do something at a particular time, especially something official or something connected with your job",
+        "urdu": "شمولیت، مصروفیت",
+        "pashto": "ګډون، بوختیا",
+        "sourceMeaning": true
       },
       {
         "word": "mainstreaming",
-        "pos": "noun / verb",
-        "meaning": "to make a particular idea, practice or policy accepted and integrated by most people across all sectors",
-        "urdu": "قومی دھارے میں لانا / ہم آہنگ و مدغم کرنا",
-        "pashto": "په اصلي جریان کې شاملول / مدغم کول"
+        "pos": "",
+        "meaning": "o make a particular idea or opinion accepted by most people",
+        "urdu": "مرکزی دھارے میں لانا",
+        "pashto": "اصلي بهیر ته راوستل",
+        "sourceMeaning": true
       },
       {
         "word": "preserving",
-        "pos": "verb",
-        "meaning": "to keep a particular quality, feature, species or environment safe; to make sure that something is protected from harm",
-        "urdu": "محفوظ رکھنا / تحفظ فراہم کرنا",
-        "pashto": "ساتل / ژغورل / حفاظت کول"
+        "pos": "",
+        "meaning": "to keep a particular quality, feature, etc.; to make sure that something is kept",
+        "urdu": "تحفظ کرنا",
+        "pashto": "ساتل",
+        "sourceMeaning": true
       },
       {
         "word": "endemic",
-        "pos": "adjective",
-        "meaning": "regularly found in and restricted to a particular geographic area, habitat, or country",
-        "urdu": "مقامی نوع (کسی مخصوص خطے تک محدود)",
-        "pashto": "ځانګړی سیمه ایز / بومي"
+        "pos": "",
+        "meaning": "regularly found in a particular place or among a particular group of people and difficult to get rid of",
+        "urdu": "مقامی، کسی خاص علاقے کا",
+        "pashto": "سیمه ییز، ځای ځانګړی",
+        "sourceMeaning": true
       },
       {
         "word": "woodland",
-        "pos": "noun",
-        "meaning": "an area of land that is covered with trees and shrubs; a forest area",
-        "urdu": "جنگلاتی زمین / درختوں والا خطہ",
-        "pashto": "ځنګلي ځمکه / ځنګل"
+        "pos": "",
+        "meaning": "an area of land that is covered with trees",
+        "urdu": "جنگلاتی علاقہ",
+        "pashto": "ځنګلي سیمه",
+        "sourceMeaning": true
       },
       {
         "word": "potential",
-        "pos": "adjective / noun",
-        "meaning": "that can develop into something or be developed in the future; latent possibility",
-        "urdu": "امکانی / پوشیدہ صلاحیت رکھنے والا",
-        "pashto": "احتمالي / د ودې وړتیا لرونکی"
+        "pos": "",
+        "meaning": "that can develop into something or be developed in the future",
+        "urdu": "ممکنہ، امکانی",
+        "pashto": "احتمالي، شونی",
+        "sourceMeaning": true
       },
       {
         "word": "diversion",
-        "pos": "noun",
-        "meaning": "the act of changing the natural course or direction somebody/something is following, or what something is used for",
-        "urdu": "رخ موڑنا / بہاؤ کی تبدیلی",
-        "pashto": "لوری بدلول / د جریان اړول"
+        "pos": "",
+        "meaning": "the act of changing the direction that somebody/something is following, or what something is used for",
+        "urdu": "رخ موڑنا",
+        "pashto": "لوری بدلول",
+        "sourceMeaning": true
       },
       {
         "word": "cetacean",
-        "pos": "noun",
-        "meaning": "a marine or freshwater mammal of the Order Cetacea, including whales, dolphins, and porpoises",
-        "urdu": "سیٹیشین (ممالیہ آبی جاندار جیسے ڈولفن یا وہیل)",
-        "pashto": "د اوبو تي لرونکی ژوی (لکه سیند ډالفین)"
+        "pos": "",
+        "meaning": "a marine mammal of the Order of Cetacea e.g. a whale, a dolphin etc",
+        "urdu": "وہیل نما سمندری ممالیہ",
+        "pashto": "د وېل ډوله بحري تی لرونکی",
+        "sourceMeaning": true
       },
       {
         "word": "extirpation",
-        "pos": "noun",
-        "meaning": "the total removal, destruction, or localized extinction of a species from a specific geographic area",
-        "urdu": "جڑ سے اکھاڑنا / مکمل صفایا / علاقائی معدومیت",
-        "pashto": "له ریښې ایستل / بیخي له منځه وړل"
+        "pos": "",
+        "meaning": "to remove or destroy totally",
+        "urdu": "مکمل خاتمہ",
+        "pashto": "بشپړ له منځه وړل",
+        "sourceMeaning": true
       }
     ],
     "exercise": {
@@ -13581,7 +15790,73 @@ const ENGLISH_DATA = [
       "Identify, construct, and punctuate Defining and Non-Defining Relative Clauses accurately.",
       "Form and apply compound adjectives in technical and environmental prose.",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "use pre-reading strategies to predict the content of a text from topic / picture / title / headings, key words and visuals etc., by using prior knowledge, asking questions and contextual clues.",
+      "identify and analyze appropriate expressions and interviewing techniques to conduct and give short interviews of a friend or relative on specific topics.",
+      "write a persuasive / argumentative essay on a given topic.",
+      "anticipate and respond to opposing arguments by defending point of view with factual evidence, quotations, expert opinion, logical reasoning and commonly held beliefs.",
+      "interpret the situation in a visual cue and with the help of mind map giving vocabulary, structure and sensory details to write a short description.",
+      "use dictionary to: choose appropriate word definition; identify part of speech; recognize abbreviation used in a dictionary; locate synonyms in a thesaurus.",
+      "translate passages from English to Urdu: use the knowledge of literal and figurative meaning, grammatical gender and syntax to translate passage from English to Urdu; understand that most phrases and idioms do not translate literally from one language to another.",
+      "recognize and use parenthesis (Round Brackets) to: enclose numbers or letters in enumerations in the text; express an amount in numbers previously expressed in words; mark off explanatory or supplementary material.",
+      "recognize and use omission marks or ellipses to signify the omission or deletion of letters or words in sentences."
+    ],
+    "preReading": [
+      {
+        "q": "What is biodiversity?",
+        "a": "Pre-reading question (PDF 146)"
+      },
+      {
+        "q": "What is ecosystem?",
+        "a": "Pre-reading question (PDF 146)"
+      },
+      {
+        "q": "What do you mean by endangered species?",
+        "a": "Pre-reading question (PDF 146)"
+      }
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "printedPages": [
+        134,
+        135,
+        136,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143
+      ],
+      "notes": [
+        "Printed page 137 is missing from the PDF, the JPG scans and the Word file; the stored text for that page (Juniper/mangrove paragraphs and the start of the challenges list) could not be verified and was replaced with a visible source-gap note. The removed text is kept in sourceReview.removedUnverifiedText.",
+        "PDF 150 is a second scan of printed page 139 and is recorded as a duplicate.",
+        "Author corrected: the book prints no unit author (PDF 145).",
+        "Learning outcomes (PDF 145), pre-reading (PDF 146) and the printed glossary (PDF 148) added; Urdu/Pashto glossary meanings are SpaceBook translations; \"o make\" is printed this way.",
+        "Reading text on printed 135-136 and 138, comprehension 1-6, vocabulary A-B, interview role play, writing A-C and parentheses/ellipsis grammar match the book."
+      ],
+      "reviewedAt": "2026-10-12",
+      "removedUnverifiedText": {
+        "section4": [
+          "Likewise, Balochistan's forests are precious resources for the local communities and the country. Juniper forests in Ziarat are considered among the oldest in the world.",
+          "Similarly, the mangrove forests along the coastal belt of Sindh and Balochistan serve as vital breeding grounds for marine life, protect coastlines from tsunamis and cyclonic surges, and support coastal livelihoods. However, these unique woodlands face severe degradation from excessive commercial logging, firewood collection by impoverished rural populations, overgrazing by livestock, and reduced freshwater flows down the Indus Delta."
+        ],
+        "section5First": "The main challenges faced by Pakistan in preserving its biodiversity include: lack of financial resources, lack of awareness, insufficient access to local knowledge, legal impediments, limited public and stakeholder participation, lack of mainstreaming of biodiversity with other sectors, lack of transfer of technology and expertise, inadequate engagement of scientific community, poverty, increasing population, climate change and natural disasters."
+      }
+    }
   },
   {
     "number": 15,
@@ -13589,8 +15864,8 @@ const ENGLISH_DATA = [
     "titleUrdu": "ابو بن ادہم",
     "titlePashto": "ابو بن ادهم",
     "type": "poetry",
-    "author": "James Henry Leigh Hunt (1784–1859)",
-    "authorInfo": "About the Poet & Philosophical Background:\nJames Henry Leigh Hunt was born on 19 October 1784 in Southgate, Middlesex, and passed away on 28 August 1859 in London. As a versatile literary figure, Hunt was an essayist, poet, critic, and journalist who edited influential periodicals. 'Abou Ben Adhem' is universally regarded as his most famous and celebrated poem. Inspired by the historical Sufi saint Ibrahim Ibn Adham, the poem conveys the profound Islamic and humanitarian truth that genuine love of Almighty Allah is demonstrated through selfless love and service to fellow human beings (Haqooq-ul-Ebad).\n\nKey Competencies & SLOs:\n• Understand and analyze heroic couplets, meter, rhyme scheme (AABB...), and archaic diction (thou, writest, blest).\n• Paraphrase narrative poetry accurately and derive moral/explicit themes.\n• Master Direct and Indirect Narration across statements, interrogatives, imperatives, exclamations, and universal truths.\n• Solve comprehensive Final Revision exercises covering punctuation, capitalization, active/passive voice, direct/indirect speech, hyphens, and parentheses.",
+    "author": "J. H. Leigh Hunt",
+    "authorInfo": "About the Poet: James Henry Leigh Hunt was born 19 October 1784 in Southgate, Middlesex and died on 28 August 1859 in London. As a writer, Hunt was a jack-of-all-trades, achieving early success as a critic, essayist, journalist, and poet, and establishing himself as an editor of influential journals in an age when the periodical was at the height of its cultural influence. \"Abou Ben Adhem\" is probably the best known poem of Leigh Hunt.",
     "sections": [
       {
         "heading": "Stanza 1: The Angelic Encounter in Moonlight",
@@ -13632,52 +15907,59 @@ const ENGLISH_DATA = [
     "glossary": [
       {
         "word": "peace",
-        "pos": "noun",
-        "meaning": "serenity; profound mental solace and freedom from disturbance",
-        "urdu": "سکونِ قلب / امن / طمانیت",
-        "pashto": "ارامتیا / سکون / ذهني تسکین"
+        "pos": "",
+        "meaning": "serenity/ mental solace",
+        "urdu": "سکون، ذہنی اطمینان",
+        "pashto": "سکون، ذهني ارامي",
+        "sourceMeaning": true
       },
       {
         "word": "writest",
-        "pos": "verb (archaic)",
-        "meaning": "archaic second-person singular of write (you write / writing)",
-        "urdu": "لکھ رہا ہے (قدیم انگریزی)",
-        "pashto": "ته لیکې (پخوانۍ انګلیسي)"
+        "pos": "",
+        "meaning": "writes/ writing",
+        "urdu": "لکھتا ہے",
+        "pashto": "لیکي",
+        "sourceMeaning": true
       },
       {
         "word": "thou",
-        "pos": "pronoun (archaic)",
-        "meaning": "archaic word meaning 'you' (singular nominative pronoun)",
-        "urdu": "تو / تم",
-        "pashto": "ته"
+        "pos": "",
+        "meaning": "a word meaning 'you', used when talking to only one person who is the subject of the verb",
+        "urdu": "تو",
+        "pashto": "ته",
+        "sourceMeaning": true
       },
       {
         "word": "blest",
-        "pos": "verb / adjective (archaic)",
-        "meaning": "blessed; conferred with divine grace and protection",
-        "urdu": "بابرکت / فیض یافتہ / نوازا گیا",
-        "pashto": "بختور / مبارک شوی / رحمت پرې شوی"
+        "pos": "",
+        "meaning": "to ask God to protect somebody/something/ 2nd form of bless",
+        "urdu": "برکت دی گئی",
+        "pashto": "برکت ورکړل شوی",
+        "sourceMeaning": true
       },
       {
         "word": "vanish",
-        "pos": "verb",
-        "meaning": "to disappear suddenly and completely in a mysterious manner",
-        "urdu": "غائب ہو جانا / ناپدید ہو جانا",
-        "pashto": "ناڅاپه ورکیدل / ناپدید کیدل"
+        "pos": "",
+        "meaning": "to disappear suddenly and/or in a way that you cannot explain",
+        "urdu": "غائب ہو جانا",
+        "pashto": "ورکېدل",
+        "sourceMeaning": true
       },
       {
         "word": "raised",
-        "pos": "verb",
-        "meaning": "lifted up; brought to a higher position",
-        "urdu": "اٹھایا / بلند کیا",
-        "pashto": "پورته کړ / لوړ کړ"
+        "pos": "",
+        "meaning": "at a higher level than normal",
+        "urdu": "اٹھایا ہوا، بلند",
+        "pashto": "پورته شوی",
+        "sourceMeaning": true
       },
       {
         "word": "bloom",
-        "pos": "noun / verb",
-        "meaning": "the state or period of blooming; a freshly opened, radiant flower",
-        "urdu": "کھلنا / شگوفہ بننا / عروج پر ہونا",
-        "pashto": "غوړیدل / غوړیدلی ګل"
+        "pos": "",
+        "meaning": "the state, time, or period when flowers open; freshly opened flower",
+        "urdu": "کھلنا، کھلا ہوا پھول",
+        "pashto": "غوړېدل، غوړېدلی ګل",
+        "sourceMeaning": true
       }
     ],
     "exercise": {
@@ -14526,15 +16808,7 @@ const ENGLISH_DATA = [
     "preReading": [
       {
         "q": "Who was Abou Ben Adhem?",
-        "a": "Abou Ben Adhem (historically Ibrahim Ibn Adham) was a renowned early Sufi saint celebrated for renouncing worldly wealth to dedicate his life to selfless humanitarian service and divine contemplation."
-      },
-      {
-        "q": "What is the relationship between love of God and love of humanity?",
-        "a": "True love of Almighty Allah is demonstrated through compassionate service to His creation (Haqooq-ul-Ebad). Serving suffering humans is the highest manifestation of faith."
-      },
-      {
-        "q": "How does good character make a person bold before heavenly visions?",
-        "a": "A pure conscience, inner peace, and a life dedicated to kindness remove all superstitious fear, bestowing serene confidence upon the soul."
+        "a": "Pre-reading question (PDF 156)"
       }
     ],
     "pashtoTranslation": "د ابو بن ادهم د نظم بشپړه پښتو ژباړه: دا نظم د یو صوفي کیسه بیانوي چې کله یې نوم د الله سره د مینه والو په لومړي لیست کې نه و، نو فرښتې ته یې وویل چې زما نوم د انسانانو سره د مینه والو په لیست کې ولیکه. په بله شپه کله چې فرښته راغله، نو د الله د خوښو بندګانو په سر کې د ابو نوم ځلیده، ځکه چې د انسانانو خدمت د الله تعالی د رضا تر ټولو غوره لار ده.",
@@ -14560,6 +16834,47 @@ const ENGLISH_DATA = [
       "Paraphrase narrative poetry into cohesive and expressive prose.",
       "Evaluate the relationship between formal ritual worship and active service to humanity.",
       "Solve 20+ Board-aligned SLO MCQs, 10+ SQs, and 5+ comprehensive LQs."
-    ]
+    ],
+    "sourceSlos": [
+      "identify line and stanza.",
+      "read poem and give orally or in writing: main idea; theme and its development; summary; personal response with justification; paraphrase.",
+      "analyze how the poet uses language to appeal to the senses through use of figurative language including similes.",
+      "recognize literary technique such as personification, metaphor and imagery.",
+      "deduce meaning of difficult words from context.",
+      "demonstrate use of question words.",
+      "recognize the rules of and change the narration of statements, request / orders and questions."
+    ],
+    "sourceReview": {
+      "sourcePdf": "D:/SpaceBook/Books/9th/9th English/PDF/9th English.pdf",
+      "pdfPages": [
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "printedPages": [
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152
+      ],
+      "notes": [
+        "About the Poet restored verbatim from PDF 157 (the stored version had added Sufi background not in the book).",
+        "Learning outcomes (PDF 155), pre-reading (PDF 156) and the printed glossary (PDF 157) added; Urdu/Pashto glossary meanings are SpaceBook translations.",
+        "Comprehension question 5 is printed \"Mentioned the other words...\"; kept as stored (\"Mention\") with this note.",
+        "Poem, comprehension A1-6, MCQ B1-5, vocabulary A-C, writing A-D, speaking, narration grammar A-B, Revision Exercises 1-8 (PDF 161-162) and About the Authors (PDF 163) match the book."
+      ],
+      "reviewedAt": "2026-10-12"
+    }
   }
 ];
